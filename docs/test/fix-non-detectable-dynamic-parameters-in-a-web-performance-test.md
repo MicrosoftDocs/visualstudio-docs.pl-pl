@@ -10,22 +10,22 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 148ec42a7c0a0f8c040eabb75991b54c78f511ab
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b02be3e0ed5cb59e57e4aec28b3d7979d77f7652
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955118"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045217"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Naprawa niewykrywalnych parametrów dynamicznych w teście wydajności sieci Web
 
 Niektóre witryny sieci Web używają parametrów dynamicznych do przetwarzania niektórych swoich żądań sieci web. Parametr dynamiczny to parametr, którego wartość jest generowana za każdym razem, gdy użytkownik uruchamia aplikację. Przykładem parametru dynamicznego jest identyfikator sesji. Identyfikator sesji zazwyczaj zmienia się co 5 – 30 minut. Web wydajności testów Rejestrator i aparat odtwarzania automatycznie obsługuje najbardziej powszechne typy parametrów dynamicznych:
 
--   Wartości parametrów dynamicznych ustawione w wartościach plików cookie. Aparat testu wydajności sieci web automatycznie obsługuje je podczas odtwarzania.
+- Wartości parametrów dynamicznych ustawione w wartościach plików cookie. Aparat testu wydajności sieci web automatycznie obsługuje je podczas odtwarzania.
 
--   Wartości parametrów dynamicznych, które są ustawione w ukrytych polach na stronach HTML, takich jak ASP.NET, wyświetlić stan. Są one automatycznie obsługiwane przez rejestrator, który dodaje reguły wyodrębniania pól ukrytych do testu.
+- Wartości parametrów dynamicznych, które są ustawione w ukrytych polach na stronach HTML, takich jak ASP.NET, wyświetlić stan. Są one automatycznie obsługiwane przez rejestrator, który dodaje reguły wyodrębniania pól ukrytych do testu.
 
--   Wartości parametrów dynamicznych ustawione jako ciąg zapytania lub formularza Parametry księgowania. Są one obsługiwane za pomocą wykrywania parametrów dynamicznych po zarejestrowaniu testu wydajności sieci web.
+- Wartości parametrów dynamicznych ustawione jako ciąg zapytania lub formularza Parametry księgowania. Są one obsługiwane za pomocą wykrywania parametrów dynamicznych po zarejestrowaniu testu wydajności sieci web.
 
 Niektóre typy parametrów dynamicznych nie są wykrywane. Parametr dynamiczny niewykryte spowoduje, że test wydajności sieci web niepowodzenie podczas uruchamiania, ponieważ wartość dynamiczna będzie prawdopodobnie inny ilekroć dany test jest uruchomiony. Aby prawidłowo obsługiwać te parametry, można dodać reguły wyodrębniania do parametrów dynamicznych w testach wydajności sieci web ręcznie.
 
@@ -35,17 +35,17 @@ Niektóre typy parametrów dynamicznych nie są wykrywane. Parametr dynamiczny n
 
 Aby wykazać wykrywalny i niewykrywalny parametr dynamiczny, utworzymy prostą aplikację sieci web platformy ASP.NET, która ma trzy formularze sieci web z kilkoma formantami i kodem niestandardowym. Firma Microsoft następnie dowiesz się, jak izolować parametry dynamiczne i jak je obsłużyć.
 
-1.  Utwórz nowy projekt ASP.NET o nazwie **DynamicParameterSample**.
+1. Utwórz nowy projekt ASP.NET o nazwie **DynamicParameterSample**.
 
      ![Utwórz pusty projekt aplikacji sieci web ASP.NET](../test/media/web_test_dynamicparameter_aspproject.png)
 
-2.  Dodaj formularz sieci web o nazwie *Querystring.aspx*.
+2. Dodaj formularz sieci web o nazwie *Querystring.aspx*.
 
-3.  W widoku projektu przeciągnij formant HiddenField na stronę, a w następnie zmień wartość właściwości (ID) na HiddenFieldSessionID.
+3. W widoku projektu przeciągnij formant HiddenField na stronę, a w następnie zmień wartość właściwości (ID) na HiddenFieldSessionID.
 
      ![Dodaj formant HiddenField](../test/media/web_test_dynamicparameter_hiddenfield.png)
 
-4.  Zmień na widok źródła dla strony Querystring i Dodaj następujący wyróżniony kod ASP.NET i JavaScript używany do generowania parametrów dynamicznych Identyfikatora sesji makiety:
+4. Zmień na widok źródła dla strony Querystring i Dodaj następujący wyróżniony kod ASP.NET i JavaScript używany do generowania parametrów dynamicznych Identyfikatora sesji makiety:
 
     ```html
     <head runat="server">
@@ -62,7 +62,7 @@ Aby wykazać wykrywalny i niewykrywalny parametr dynamiczny, utworzymy prostą a
     </html>
     ```
 
-5.  Otwórz *Querystring.aspx.cs* pliku i Dodaj następujący wyróżniony kod do metody Page_Load:
+5. Otwórz *Querystring.aspx.cs* pliku i Dodaj następujący wyróżniony kod do metody Page_Load:
 
     ```csharp
     public partial class Querystring : System.Web.UI.Page
@@ -74,13 +74,13 @@ Aby wykazać wykrywalny i niewykrywalny parametr dynamiczny, utworzymy prostą a
     }
     ```
 
-6.  Dodaj drugi formularz sieci web o nazwie *ASPQuery.aspx*.
+6. Dodaj drugi formularz sieci web o nazwie *ASPQuery.aspx*.
 
-7.  W widoku projektu przeciągnij **etykiety** na stronę i zmień wartość jego **(ID)** właściwości **IndexLabel**.
+7. W widoku projektu przeciągnij **etykiety** na stronę i zmień wartość jego **(ID)** właściwości **IndexLabel**.
 
      ![Dodaj etykietę do formularza sieci web](../test/media/web_test_dynamicparameter_label.png)
 
-8.  Przeciągnij **hiperłącze** na stronę i zmień back jego **tekstu** właściwości **ponownie**.
+8. Przeciągnij **hiperłącze** na stronę i zmień back jego **tekstu** właściwości **ponownie**.
 
      ![Dodawanie hiperlinku do formularza sieci web](../test/media/web_test_dynamicparameter_hyperlink.png)
 
@@ -132,31 +132,31 @@ Aby wykazać wykrywalny i niewykrywalny parametr dynamiczny, utworzymy prostą a
 
 ## <a name="create-a-web-performance-test"></a>Utwórz test wydajności sieci web
 
-1.  Dodaj projekt testu obciążenia i wydajności sieci web do rozwiązania.
+1. Dodaj projekt testu obciążenia i wydajności sieci web do rozwiązania.
 
      ![Dodaj projekt testu wydajności i obciążenia sieci web](../test/media/web_test_dynamicparameter_addtestproject.png)
 
-2.  Zmień nazwę WebTest1.webtest na DynamicParameterSampleApp.webtest.
+2. Zmień nazwę WebTest1.webtest na DynamicParameterSampleApp.webtest.
 
      ![Zmień nazwę testu wydajności sieci web](../test/media/web_test_dynamicparameter_renametest.png)
 
-3.  Rejestruj badanie.
+3. Rejestruj badanie.
 
      ![Rejestrowanie testu wydajności sieci web](../test/media/web_test_dynamicparameter_recordtest.png)
 
-4.  Skopiuj i wklej adres URL z testowanej witryny sieci Web do przeglądarki.
+4. Skopiuj i wklej adres URL z testowanej witryny sieci Web do przeglądarki.
 
      ![Wklej adres URL z witryny sieci Web poddawana testom](../test/media/web_test_dynamicparameter_recordtest2.png)
 
-5.  Przeglądaj aplikację sieci web. Wybierz łącze programu ASP.NET, łącze Wstecz, a następnie łącze javascript, a następnie łącze Wstecz.
+5. Przeglądaj aplikację sieci web. Wybierz łącze programu ASP.NET, łącze Wstecz, a następnie łącze javascript, a następnie łącze Wstecz.
 
      Rejestrator testu sieci web wyświetla adresów URL żądań i odpowiedzi HTTP podczas nawigowania przez aplikację sieci web.
 
-6.  Wybierz **zatrzymać** przycisku na rejestratorze testu.
+6. Wybierz **zatrzymać** przycisku na rejestratorze testu.
 
      Okno dialogowe dla wykrywania parametrów dynamicznych Wyświetla pasek postępu pokazujący stan wykrywania parametrów w odpowiedziach HTTP, które zostały odebrane.
 
-7.  Dynamiczny parametr obiektu CustomQueryString na stronie ASPQuery jest wykrywany automatycznie. Jednakże dynamiczny parametr obiektu CustomQueryString na stronie JScriptQuery nie zostanie wykryty.
+7. Dynamiczny parametr obiektu CustomQueryString na stronie ASPQuery jest wykrywany automatycznie. Jednakże dynamiczny parametr obiektu CustomQueryString na stronie JScriptQuery nie zostanie wykryty.
 
      Wybierz **OK** można dodać regułę ekstrakcji *Querystring.aspx*, wiążące go do strony ASPQuery.
 
@@ -170,15 +170,15 @@ Aby wykazać wykrywalny i niewykrywalny parametr dynamiczny, utworzymy prostą a
 
      ![CustomQueryString powiązany z reguły wyodrębniania](../test/media/web_test_dynamicparameter_autoextractionrule2.png)
 
-8.  Zapisz test.
+8. Zapisz test.
 
 ## <a name="run-the-test-to-isolate-the-non-detected-dynamic-parameter"></a>Uruchom test, aby odizolować niewykryty parametr dynamiczny
 
-1.  Uruchom test.
+1. Uruchom test.
 
      ![Uruchamianie testu wydajności sieci web](../test/media/web_test_dynamicparameter_runtest.png)
 
-2.  Czwarty żądanie dla *JScriptQuery.aspx* stronie kończy się niepowodzeniem. Przejdź do testu sieci web.
+2. Czwarty żądanie dla *JScriptQuery.aspx* stronie kończy się niepowodzeniem. Przejdź do testu sieci web.
 
      ![Błąd parametrów dynamicznych w wynikach testu](../test/media/web_test_dynamicparameter_runresults.png)
 
@@ -186,11 +186,11 @@ Aby wykazać wykrywalny i niewykrywalny parametr dynamiczny, utworzymy prostą a
 
      ![Podejrzane dynamiczny parametr dla CustomQueryString](../test/media/web_test_dynamicparameter_runresults2.png)
 
-3.  Wróć do podglądu wyników testu wydajności sieci Web i wybierz *JScriptQuery.aspx* strona kodowa nie powiodło się. Następnie wybierz kartę żądanie, sprawdź, czy jest wyczyszczone pole wyboru Pokaż dane surowe, przewiń w dół i wybierz Szybkie szukanie na CustomQueryString.
+3. Wróć do podglądu wyników testu wydajności sieci Web i wybierz *JScriptQuery.aspx* strona kodowa nie powiodło się. Następnie wybierz kartę żądanie, sprawdź, czy jest wyczyszczone pole wyboru Pokaż dane surowe, przewiń w dół i wybierz Szybkie szukanie na CustomQueryString.
 
      ![Zastosowanie szybkiego wyszukiwania do izolowania parametrów dynamicznych](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
-4.  Zdajemy sobie sprawę patrząc Edytor testów, który *JScriptQuery.aspx* CustomQueryString żądania została przypisana wartość: `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl`, i że podejrzana część dynamiczna to "1v0yhyiyr0raa2w4j4pwf5zl". W polu Znajdź rozwijanej listy, Usuń podejrzaną część ciągu wyszukiwania. Ciąg powinien być "CustomQueryString = jScriptQueryString___".
+4. Zdajemy sobie sprawę patrząc Edytor testów, który *JScriptQuery.aspx* CustomQueryString żądania została przypisana wartość: `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl`, i że podejrzana część dynamiczna to "1v0yhyiyr0raa2w4j4pwf5zl". W polu Znajdź rozwijanej listy, Usuń podejrzaną część ciągu wyszukiwania. Ciąg powinien być "CustomQueryString = jScriptQueryString___".
 
      Parametry dynamiczne są przypisywane ich wartości w jednym z żądań, które poprzedza żądanie, w którym występuje błąd. W związku z tym, zaznacz pole wyboru wyszukiwania i wybieraj Znajdź następny dopóki nie zobaczysz poprzedzającego żądanie *Querystring.aspx* wyróżnionego w panelu żądania. To powinno nastąpić, po dokonaniu wyboru Znajdź następny trzy razy.
 
@@ -205,17 +205,17 @@ Aby wykazać wykrywalny i niewykrywalny parametr dynamiczny, utworzymy prostą a
 
      Teraz, gdy wiemy, gdzie występuje błąd oraz że musimy wyodrębnić wartość dla identyfikatora sesji. Jednakże wartością wyodrębniania jest tylko tekst, więc trzeba dodatkowo wyizolować błąd przez próbę zlokalizowania ciągu, na którym jest wyświetlana rzeczywista wartość identyfikatora sesji. Patrząc na kod, możesz zobaczyć, że zmienna sessionId jest równa wartości zwracanej przez HiddenFieldSessionID.
 
-5.  Użyj funkcji szybkiego znajdowania na HiddenFieldSessionID, czyszcząc pole wyboru wyszukiwania i wybierając bieżące żądanie.
+5. Użyj funkcji szybkiego znajdowania na HiddenFieldSessionID, czyszcząc pole wyboru wyszukiwania i wybierając bieżące żądanie.
 
      ![Zastosowanie szybkiego wyszukiwania na HiddenFieldSession](../test/media/web_test_dynamicparameter_runresultsquckfindhiddensession.png)
 
      Należy zauważyć, że wartość zwracana jest nagrywania nie tym samym ciągiem jak oryginalne testu wydajności sieci web. Dla tego przebiegu testu wartość zwracana jest "5w4v3yrse4wa4axrafykqksq", a w oryginalnym nagraniu wartość to "1v0yhyiyr0raa2w4j4pwf5zl". Ponieważ wartość jest niezgodna z oryginalnym nagraniu, zostanie wygenerowany błąd.
 
-6.  Ponieważ trzeba naprawić parametr dynamiczny w oryginalnym nagraniu, wybierz zarejestrowany wynik na pasku narzędzi.
+6. Ponieważ trzeba naprawić parametr dynamiczny w oryginalnym nagraniu, wybierz zarejestrowany wynik na pasku narzędzi.
 
      ![Wybierz zarejestrowany wynik](../test/media/web_test_dynamicparameter_recordedresult.png)
 
-7.  W zarejestrowanych wynikach wybierz trzecie żądanie, która jest taka sama *Querystringrequest.aspx* żądaniem w wynikach testu.
+7. W zarejestrowanych wynikach wybierz trzecie żądanie, która jest taka sama *Querystringrequest.aspx* żądaniem w wynikach testu.
 
      ![Wybierz tego samego żądania w zarejestrowanych wynikach](../test/media/web_test_dynamicparameter_recordedresultsselectnode.png)
 
@@ -229,7 +229,7 @@ Aby wykazać wykrywalny i niewykrywalny parametr dynamiczny, utworzymy prostą a
 
      ![Reguła wyodrębniania utworzona](../test/media/web_test_dynamicparameter_addextractiondialog.png)
 
-8.  Wybierz **Znajdź następny**. Pierwsze dopasowanie jest ten, który trzeba zmienić, czyli parametrem dla CustomQueryString dla strony JScriptQuery.
+8. Wybierz **Znajdź następny**. Pierwsze dopasowanie jest ten, który trzeba zmienić, czyli parametrem dla CustomQueryString dla strony JScriptQuery.
 
      ![Znajdowanie i zastępowanie tekstu dla parametru](../test/media/web_test_dynamicparameter_addextractionfindreplace.png)
 
@@ -253,7 +253,7 @@ Aby wykazać wykrywalny i niewykrywalny parametr dynamiczny, utworzymy prostą a
 
  **ODP.:** Tak, użyj następującej procedury:
 
-1.  Na pasku narzędzi wybierz **Przekształć dynamiczne parametry na parametry testu sieci Web** przycisku.
+1. Na pasku narzędzi wybierz **Przekształć dynamiczne parametry na parametry testu sieci Web** przycisku.
 
      Po zakończeniu procesu wykrywania, jeśli wszystkie parametry dynamiczne są wykrywane, **parametry testu Przekształć dynamiczne parametry na sieci web** pojawi się okno dialogowe.
 
@@ -261,7 +261,7 @@ Aby wykazać wykrywalny i niewykrywalny parametr dynamiczny, utworzymy prostą a
 
      Jeśli wybierzesz parametr dynamiczny w **parametry testu Przekształć dynamiczne parametry na sieci web** okno dialogowe, dwa żądania zostaną wyróżnione w drzewie żądań edytora testów wydajności sieci Web. Pierwsze żądanie będzie reguły wyodrębniania zostaną dodane do żądania. Drugie żądanie dotyczy, gdzie będą powiązane wyodrębniona wartość.
 
-2.  Zaznacz lub wyczyść pole wyboru obok parametrów dynamicznych, które chcesz automatycznie skorelować. Domyślnie sprawdzane są wszystkie parametry dynamiczne.
+2. Zaznacz lub wyczyść pole wyboru obok parametrów dynamicznych, które chcesz automatycznie skorelować. Domyślnie sprawdzane są wszystkie parametry dynamiczne.
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>PYT.: Należy skonfigurować program Visual Studio do wykrywania parametrów dynamicznych?
 

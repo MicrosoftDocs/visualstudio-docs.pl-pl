@@ -9,12 +9,12 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f56491a8268e939f7bd455c4afef6813116ef9f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c22d9327deb0c04790a3adfc809d9ae5da483916
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950607"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059893"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Dodawanie źródła danych do testu wydajności sieci Web
 
@@ -34,7 +34,9 @@ Twoje rozwiązanie powinien również zawierać test wydajności sieci web, któ
 
 ## <a name="create-a-sql-database"></a>Tworzenie bazy danych SQL
 
-1. Jeśli nie masz programu Visual Studio Enterprise, możesz pobrać go z [pobieranie Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony.
+::: moniker range="vs-2017"
+
+1. Jeśli nie masz programu Visual Studio Enterprise, możesz pobrać go z [pobieranie Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony.
 
 2. Utwórz bazę danych SQL.
 
@@ -59,6 +61,38 @@ Twoje rozwiązanie powinien również zawierać test wydajności sieci web, któ
 7. Dodawanie danych do pola.
 
      ![Dodawanie danych do pola](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Jeśli nie masz programu Visual Studio Enterprise, możesz pobrać go z [pobieranie Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) strony.
+
+2. Utwórz bazę danych SQL.
+
+     ![Dodawanie nowej bazy danych SQL](../test/media/web_test_databinding_sql_addnewdb.png)
+
+3. Utwórz projekt bazy danych.
+
+     ![Utwórz nowy projekt z bazy danych](../test/media/web_test_databinding_sql_addnewdbproject.png)
+
+4. Dodaj tabelę do projektu bazy danych.
+
+     ![Dodaj nową tabelę do projektu bazy danych](../test/media/web_test_databinding_sql_addnewdbtablename.png)
+
+5. Dodaj pola do tabeli.
+
+     ![Dodawanie pól do tabeli](../test/media/web_test_databinding_sql_addnewdbaddfields.png)
+
+6. Opublikuj projekt bazy danych.
+
+     ![Opublikuj projekt bazy danych za pomocą Eksploratora rozwiązań](../test/media/web_test_databinding_sql_addnewdbpublish.png)
+
+7. Dodawanie danych do pola.
+
+     ![Dodawanie danych do pola](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+
+::: moniker-end
 
 ## <a name="add-the-data-source"></a>Dodawanie źródła danych
 

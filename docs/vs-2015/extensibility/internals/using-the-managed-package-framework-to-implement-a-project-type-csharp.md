@@ -12,12 +12,12 @@ ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d83f26183c422d39e69dfe106443dae54f576899
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 86e250c5a5922df52acea7445c97862a00cdc826
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799885"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066838"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Implementowanie typu projektu przy użyciu środowiska pakietu zarządzanego (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Framework pakietu zarządzanego (MPF) udostępnia klasy C#, możesz użyć lub d
   
  Aby dodać ten projekt do rozwiązania pakietu VSPackage, wykonaj następujące czynności:  
   
-1.  Pobierz pliki MPFProj do *MPFProjectDir*.  
+1. Pobierz pliki MPFProj do *MPFProjectDir*.  
   
-2.  W *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file, zmień następujący blok:  
+2. W *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file, zmień następujący blok:  
   
 ```  
 <!-- Provide a default value for $(ProjectBasePath) -->  
@@ -40,11 +40,11 @@ Framework pakietu zarządzanego (MPF) udostępnia klasy C#, możesz użyć lub d
   </PropertyGroup>  
 ```  
   
-1.  Tworzenie projektu pakietu VSPackage.  
+1. Tworzenie projektu pakietu VSPackage.  
   
-2.  Cofnij ładowanie projektu pakietu VSPackage.  
+2. Cofnij ładowanie projektu pakietu VSPackage.  
   
-3.  Edytuj plik csproj pakietu VSPackage, dodając następujący blok przed innymi `<Import>` bloków:  
+3. Edytuj plik csproj pakietu VSPackage, dodając następujący blok przed innymi `<Import>` bloków:  
   
 ```  
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />  
@@ -56,17 +56,17 @@ Framework pakietu zarządzanego (MPF) udostępnia klasy C#, możesz użyć lub d
   </PropertyGroup>  
 ```  
   
-1.  Zapisz projekt.  
+1. Zapisz projekt.  
   
-2.  Zamknij i ponownie otwórz rozwiązanie pakietu VSPackage.  
+2. Zamknij i ponownie otwórz rozwiązanie pakietu VSPackage.  
   
-3.  Otwórz projekt pakietu VSPackage. Powinien zostać wyświetlony nowy katalog o nazwie ProjectBase.  
+3. Otwórz projekt pakietu VSPackage. Powinien zostać wyświetlony nowy katalog o nazwie ProjectBase.  
   
-4.  Dodaj następujące odwołanie do projektu pakietu VSPackage:  
+4. Dodaj następujące odwołanie do projektu pakietu VSPackage:  
   
      Microsoft.Build.Tasks.4.0  
   
-5.  Skompiluj projekt.  
+5. Skompiluj projekt.  
   
 ## <a name="hierarchy-classes"></a>Hierarchia klas  
  Poniższa tabela zawiera podsumowanie klas w MPFProj, które obsługują hierarchii projektu. Aby uzyskać więcej informacji, zobacz [hierarchie i wybór](../../extensibility/internals/hierarchies-and-selection.md).  

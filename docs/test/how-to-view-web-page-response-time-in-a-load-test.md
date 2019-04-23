@@ -10,12 +10,12 @@ ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d835660995e92df1f6aca94ae9b9b3ccebb5d87
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ed1bd922b390d5b6e90c68b08683e1b9bdb46f32
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970767"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059581"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Instrukcje: Czas odpowiedzi strony sieci web widoku w teście obciążenia za pomocą analizatora testu obciążenia
 
@@ -25,15 +25,15 @@ Czas potrzebny na każdej stronie sieci web załadować jest znany jako *czas od
 
 Po uruchomieniu testu wydajności sieci web przy dużym obciążeniu w teście obciążeniowym, możliwe będzie analizowanie następujących informacji dla każdej strony:
 
--   Średni czas odpowiedzi dla strony.
+- Średni czas odpowiedzi dla strony.
 
--   Procent iteracji testowych, które spełniają docelowy czas odpowiedzi dla strony.
+- Procent iteracji testowych, które spełniają docelowy czas odpowiedzi dla strony.
 
--   Czasy reakcji stron sieci web można analizować za pomocą widoku tabeli lub widoku wykresu w **analizatora testu obciążenia**:
+- Czasy reakcji stron sieci web można analizować za pomocą widoku tabeli lub widoku wykresu w **analizatora testu obciążenia**:
 
--   Analizowanie czasy reakcji stron sieci web w widoku tabeli
+- Analizowanie czasy reakcji stron sieci web w widoku tabeli
 
--   Analizowanie czasy reakcji stron sieci web w widoku wykresu
+- Analizowanie czasy reakcji stron sieci web w widoku wykresu
 
 ## <a name="view-response-time-data-in-a-table"></a>Wyświetl dane czasu odpowiedzi w tabeli
 

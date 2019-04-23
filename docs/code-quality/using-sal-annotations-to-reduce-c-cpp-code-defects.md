@@ -12,47 +12,47 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: becbf24e8f957925584e9049b38b41cb6c511683
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab90a2e03aae60f3027b61d1f3358c05f490ebdf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919706"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045099"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Korzystanie z adnotacji SAL w celu redukowanie defektów kodu C/C++
 SAL jest język adnotacji kodu źródłowego firmy Microsoft. Za pomocą funkcji adnotacje kodu źródłowego, możesz wprowadzać zamiar za kod jawnego. Narzędzia do analizy statycznej automatycznych dokładniej analizować kod znacznie mniejszej liczby wyników fałszywie dodatnich i fałszywych wyników negatywnych można również włączyć w tych adnotacji.
 
  Artykuły w tej sekcji dokumentacji aspektów SAL, zapewniają odwołanie SAL składni i przykłady jego użycia.
 
--   [Informacje o języku SAL](../code-quality/understanding-sal.md)
+- [Informacje o języku SAL](../code-quality/understanding-sal.md)
 
      Zawiera informacje i przykłady pokazujące podstawowe adnotacji SAL.
 
--   [Dodawanie adnotacji do parametrów funkcji i zwracanych wartości](../code-quality/annotating-function-parameters-and-return-values.md)
+- [Dodawanie adnotacji do parametrów funkcji i zwracanych wartości](../code-quality/annotating-function-parameters-and-return-values.md)
 
      Wyświetla listę adnotacji SAL dla funkcji i parametrów funkcji.
 
--   [Zachowanie funkcji dodawania adnotacji](../code-quality/annotating-function-behavior.md)
+- [Zachowanie funkcji dodawania adnotacji](../code-quality/annotating-function-behavior.md)
 
      Wyświetla listę adnotacji SAL dla funkcji i zachowanie funkcji.
 
--   [Dodawanie adnotacji do struktur i klas](../code-quality/annotating-structs-and-classes.md)
+- [Dodawanie adnotacji do struktur i klas](../code-quality/annotating-structs-and-classes.md)
 
      Wyświetla listę adnotacji SAL, struktur i klas.
 
--   [Dodawanie adnotacji do zachowania blokującego](../code-quality/annotating-locking-behavior.md)
+- [Dodawanie adnotacji do zachowania blokującego](../code-quality/annotating-locking-behavior.md)
 
      Wyjaśnia, jak korzystanie z adnotacji SAL mechanizmy blokady.
 
--   [Określanie miejsca i warunków stosowania adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+- [Określanie miejsca i warunków stosowania adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md)
 
      Wyświetla listę adnotacji SAL, które określają warunek lub inne adnotacje SAL zakresu (umieszczania).
 
--   [Funkcje wewnętrzne](../code-quality/intrinsic-functions.md)
+- [Funkcje wewnętrzne](../code-quality/intrinsic-functions.md)
 
      Wyświetla listę wewnętrznych adnotacji SAL.
 
--   [Najlepsze rozwiązania i przykłady](../code-quality/best-practices-and-examples-sal.md)
+- [Najlepsze rozwiązania i przykłady](../code-quality/best-practices-and-examples-sal.md)
 
      Przykłady, które pokazują, jak korzystanie z adnotacji SAL. Wyjaśniono również typowych pułapek.
 

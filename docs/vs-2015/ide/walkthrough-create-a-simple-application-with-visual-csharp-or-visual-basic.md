@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5286f79f55f2a09122fb551911162bd609ce3bb2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802619"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040562"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Przewodnik: Tworzenie prostej aplikacji z wizualizacją C# lub Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Wykonując polecenia tego instruktażu, zapoznasz się z wieloma narzędziami, o
 > [!NOTE]
 >  Ten instruktaż jest oparty na programie Visual Studio Professional. Oferuje on szablon aplikacji WPF, na którym będziesz tworzył projekt z tego instruktażu. Wersja Visual Studio Express for Windows Desktop również oferuje ten szablon, ale wersje Visual Studio Express for Windows i Visual Studio Express for Web go nie mają. Aby uzyskać wprowadzające informacje o sposobie używania programu Visual Studio Express for Windows, zobacz [Centrum rozwoju aplikacji Windows Store](http://msdn.microsoft.com/windows/apps/br229519). Aby uzyskać wprowadzające informacje o sposobie używania programu Visual Studio Express for Web, zobacz [wprowadzenie do programu ASP.NET](http://www.asp.net/get-started). Ponadto, wersja programu Visual Studio i ustawienia, których używasz, określają nazwy i lokalizacje niektórych elementów interfejsu użytkownika. Zobacz [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-##  <a name="BKMK_ConfigureIDE"></a> Konfigurowanie IDE  
+## <a name="BKMK_ConfigureIDE"></a> Konfigurowanie IDE  
  Po uruchomieniu programu Visual Studio po raz pierwszy, Visual Studio wyświetli monit do logowania się przy użyciu konta usługi Microsoft (MSA), [Zaloguj się do programu Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx). Nie trzeba logować się i można później.  
   
  Na uruchamiania programu Visual Studio następnie należy wybrać kombinację ustawień, która wprowadza zestaw predefiniowanych dostosowań do IDE. Każda kombinacja ustawień została zaprojektowana w celu ułatwienia tworzenia aplikacji.  
@@ -69,7 +69,7 @@ Wykonując polecenia tego instruktażu, zapoznasz się z wieloma narzędziami, o
   
    Motywem kolorów używanym dla obrazów w pozostałej części tego instruktażu jest jasny motyw. Aby uzyskać więcej informacji o dostosowywaniu środowiska IDE, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-##  <a name="BKMK_CreateApp"></a> Tworzenie prostej aplikacji  
+## <a name="BKMK_CreateApp"></a> Tworzenie prostej aplikacji  
   
 ### <a name="create-the-project"></a>Utwórz projekt  
  Podczas tworzenia aplikacji w programie Visual Studio, należy najpierw utworzyć projekt i rozwiązanie. W tym przykładzie utworzysz projekt Windows Presentation Foundation (WPF).  
@@ -199,7 +199,7 @@ Wykonując polecenia tego instruktażu, zapoznasz się z wieloma narzędziami, o
   
 ##### <a name="add-code-to-display-message-boxes"></a>Dodaj kod do wyświetlania okien komunikatów  
   
-1.  Na powierzchni projektowej kliknij dwukrotnie **wyświetlania** przycisku.  
+1. Na powierzchni projektowej kliknij dwukrotnie **wyświetlania** przycisku.  
   
      Greetings.xaml.vb lub Greetings.xaml.cs otworzy się, kursor będzie się znajdował w zdarzeniu Button_Click. Można również dodać obsługę zdarzeń kliknięcia w następujący sposób (jeśli wklejonego kodu ma czerwona fala dowolnej nazwy, należy prawdopodobnie nie wybrać formantów RadioButton na powierzchni projektowej i zmień ich nazwy):  
   
@@ -220,7 +220,7 @@ Wykonując polecenia tego instruktażu, zapoznasz się z wieloma narzędziami, o
     }  
     ```  
   
-2.  Dla języka Visual Basic wprowadź następujący kod:  
+2. Dla języka Visual Basic wprowadź następujący kod:  
   
     ```vb  
     If RadioButton1.IsChecked = True Then  
@@ -245,9 +245,9 @@ Wykonując polecenia tego instruktażu, zapoznasz się z wieloma narzędziami, o
     }  
     ```  
   
-3.  Zapisz aplikację.  
+3. Zapisz aplikację.  
   
-##  <a name="BKMK_DebugTest"></a> Debugowanie i testowanie aplikacji  
+## <a name="BKMK_DebugTest"></a> Debugowanie i testowanie aplikacji  
  Następnie należy debugować aplikację, aby wyszukać błędy i przetestować, czy oba okna komunikatów wyświetlają się poprawnie. Poniższe instrukcje informujące, jak utworzyć i uruchomić debugera, ale później mogą odczytać [Kompilowanie aplikacji WPF (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c) i [debugowanie WPF](../debugger/debugging-wpf.md) Aby uzyskać więcej informacji.  
   
 ### <a name="find-and-fix-errors"></a>Znajdowanie i naprawianie błędów  
@@ -280,29 +280,29 @@ Wykonując polecenia tego instruktażu, zapoznasz się z wieloma narzędziami, o
   
 ##### <a name="to-add-breakpoints"></a>Aby dodać punkty przerwania  
   
-1.  Otwórz Greetings.xaml.vb lub Greetings.xaml.cs i zaznacz następujący wiersz: `MessageBox.Show("Hello.")`  
+1. Otwórz Greetings.xaml.vb lub Greetings.xaml.cs i zaznacz następujący wiersz: `MessageBox.Show("Hello.")`  
   
-2.  Dodaj punkt przerwania z menu, wybierając **debugowania**, następnie **Przełącz punkt przerwania**.  
+2. Dodaj punkt przerwania z menu, wybierając **debugowania**, następnie **Przełącz punkt przerwania**.  
   
      ![Przełącz punkt przerwania — polecenie w menu Debugowanie](../ide/media/exploreide-togglebreakpoint.png "togglebreakpoint — ExploreIDE")  
   
      Obok wiersza kodu na marginesie po lewej stronie okna edytora jest wyświetlane czerwone koło.  
   
-3.  Zaznacz następujący wiersz: `MessageBox.Show("Goodbye.")`.  
+3. Zaznacz następujący wiersz: `MessageBox.Show("Goodbye.")`.  
   
-4.  Naciśnij klawisz F9, aby dodać punkt przerwania, a następnie naciśnij klawisz F5, aby rozpocząć debugowanie.  
+4. Naciśnij klawisz F9, aby dodać punkt przerwania, a następnie naciśnij klawisz F5, aby rozpocząć debugowanie.  
   
-5.  W **Greetings** oknie Wybierz **Hello** przycisk radiowy, a następnie wybierz **wyświetlania** przycisku.  
+5. W **Greetings** oknie Wybierz **Hello** przycisk radiowy, a następnie wybierz **wyświetlania** przycisku.  
   
      Wiersz `MessageBox.Show("Hello.")` jest wyróżniony na żółto. W dolnej części IDE, zmiennych automatycznych, zmienne lokalne i obejrzyj są zadokowane razem po lewej stronie, a stos wywołań, punkty przerwania, polecenia, bezpośrednie i dane wyjściowe są zadokowane razem po prawej stronie.  
   
-6.  Na pasku menu wybierz **debugowania**, **Step Out**.  
+6. Na pasku menu wybierz **debugowania**, **Step Out**.  
   
      Aplikacja wznawia działanie i pojawia się okno komunikatu z napisem „Hello”.  
   
-7.  Wybierz **OK** przycisk w oknie komunikatu, aby je zamknąć.  
+7. Wybierz **OK** przycisk w oknie komunikatu, aby je zamknąć.  
   
-8.  W **Greetings** oknie Wybierz **Goodbye** przycisk radiowy, a następnie wybierz **wyświetlania** przycisku.  
+8. W **Greetings** oknie Wybierz **Goodbye** przycisk radiowy, a następnie wybierz **wyświetlania** przycisku.  
   
      Wiersz `MessageBox.Show("Goodbye.")` jest wyróżniony na żółto.  
   

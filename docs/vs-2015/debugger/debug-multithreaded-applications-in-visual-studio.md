@@ -22,12 +22,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 821396989a2de9444fdbf3499709588d00e66b45
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 8315a797aec5fcedbf33df6ca96f41879b57d971
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834821"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054303"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debuguj aplikacje wielowątkowe w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,8 +77,9 @@ Przewodnik po funkcjach debugowania wątku, z naciskiem na funkcje jak do [!INCL
  [Instrukcje: Korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md) Sprawdź i Praca z wątkami, które są uruchomione w procesorze GPU podczas debugowania.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
- [Używanie punktów przerwania](../debugger/using-breakpoints.md)
- -   Filtry punktów przerwania należy użyć, gdy chcesz umieścić punkt przerwania na jednym z wątków.
+
+[Używanie punktów przerwania](../debugger/using-breakpoints.md)
+- Filtry punktów przerwania należy użyć, gdy chcesz umieścić punkt przerwania na jednym z wątków.
 
 - Punkty śledzenia pozwalają na wykonywanie śledzenia programu bez przerywania. Może to być przydatne do badania problemów, takich jak zakleszczenia.
 

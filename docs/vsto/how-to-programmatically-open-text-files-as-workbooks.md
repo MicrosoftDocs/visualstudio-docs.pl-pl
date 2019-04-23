@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d53c21247e18f198fdac1c22a3b38c0bc5348b6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 61e51f6274bc22ed0d34d33f5ff85bfbfbd927bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633918"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060141"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Instrukcje: Programowe otwieranie plików tekstowych jako skoroszytu
   Można otworzyć pliku tekstowego jako skoroszyt. Należy podać nazwę pliku tekstowego, który chcesz otworzyć. Można określić kilka opcjonalnych parametrów, takich jak numer wiersza, w jaki do analizowania na początku i format kolumn danych w pliku.
@@ -33,9 +33,9 @@ ms.locfileid: "56633918"
 ## <a name="compile-the-code"></a>Skompilować kod
  W tym przykładzie wymaga następujących składników:
 
--   Tekst rozdzielany przecinkami plik o nazwie `Test.txt` zawierający co najmniej trzy wiersze tekstu.
+- Tekst rozdzielany przecinkami plik o nazwie `Test.txt` zawierający co najmniej trzy wiersze tekstu.
 
--   Plik tekstowy `Test.txt` mają być przechowywane na dysku C.
+- Plik tekstowy `Test.txt` mają być przechowywane na dysku C.
 
 ## <a name="see-also"></a>Zobacz także
 - [Praca ze skoroszytami](../vsto/working-with-workbooks.md)

@@ -7,12 +7,12 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 description: Logowanie może zakończyć się niepowodzeniem, jeśli są używane aliasy lub przyjazne nazwy
 searchscope: VS Subscription
-ms.openlocfilehash: cef5c71a62088fdef410dccb22b93eb0d7ad025d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ac3f9df365e0b7924b615c2ae8cbb70d93d04948
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668538"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041388"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Logowanie do subskrypcji programu Visual Studio może zakończyć się niepowodzeniem przy użyciu aliasów
 
@@ -81,21 +81,23 @@ Wykonaj poniższe kroki, aby zaktualizować istniejący subskrybent przy użyciu
 
 Ponieważ powitalną wiadomość E-mail nie dotrze pomyślnie subskrybenta, skopiuj i wklej poniższe wiadomość na adres e-mail i Wyślij do subskrybenta. Zastąp słowo % odpowiednimi informacjami dla każdego subskrybenta.
 
----Kopiowania poniżej (Ctrl + C)---
+```
+----------- Copy Below (Ctrl+C) -----------
 
-Witaj % SUBSKRYBENTA NAME %
+Hello %SUBSCRIBER NAME%
 
-Przypisano Ci subskrypcję programu Visual Studio. Odwiedź stronę https://my.visualstudio.comi zaloguj się przy użyciu adresu % adres katalogu %, tak aby uaktywnić i Uzyskaj dostęp do Twojej subskrypcji.
+You have been assigned a Visual Studio subscription. Please visit https://my.visualstudio.com, and log in with your %DIRECTORY ADDRESS% address to activate and access your subscription.
 
-Jeśli występują problemy, skontaktuj się z zespołem pomocy technicznej (https://visualstudio.microsoft.com/subscriptions/support/).
+If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
 
-W dolnej części strony wybierz następujące opcje:
-   - Konta, subskrypcji i pomoc techniczna dotycząca rozliczeń
-   - Od problemu wybierz znak subskrypcji pomocy technicznej
-   - Wybierz odpowiedni kraj
-   - Wybierz odpowiednią opcję asystowaną pomocą techniczną
+At the bottom of the page, select the following:
+   - Accounts, Subscriptions, and Billing Support
+   - From Issue, choose Subscription sign in support
+   - Choose the appropriate Country
+   - Select the desired Assisted Support option
 
----Koniec kopiowania---
+----------- End Copy -----------
+```
 
 ## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Definiowanie konto służbowe jako konto osobiste
 
@@ -126,35 +128,37 @@ Po przypisaniu subskrypcji do subskrybenta, otrzymają one wiadomość e-mail z 
 
 W tym scenariuszu opisanych powyżej subskrybenta będą otrzymywać "Powitalną wiadomość E-mail", ale z powodu aliasów one może się okazać, że nie można się zalogować.  Możesz użyć poniżej tekstu w celu otrzymywania powiadomień o subskrybenta z powyższych kroków, zaleca się opcje pomocy technicznej, jeśli jest to wymagane.  Zastąp słowo % odpowiednimi informacjami dla każdego subskrybenta.
 
----Kopiowania poniżej (Ctrl + C)---
+```
+----------- Copy Below (Ctrl+C) -----------
 
-Witaj % SUBSKRYBENTA NAME %
+Hello %SUBSCRIBER NAME%
 
-Przypisano subskrypcji programu Visual Studio i może być kierowane do zalogowania się do https://my.visualstudio.com oparte na powitalnej wiadomości e-mail.  Podczas, gdy jest to poprawny witryny internetowej, co umożliwia korzystanie z korzyści, naszej organizacji wymaga podjęcia kilku dodatkowych czynności, zanim można uzyskać dostęp do witryny.  Wykonaj poniższe instrukcje, aby pomóc w tworzeniu "Account Microsoft" jest powiązany z naszych adres firmowej poczty e-mail.  Po wykonaniu tych kroków spowoduje umożliwia dostęp do korzyści z subskrypcji swój adres e-mail.
-1. Odwiedź stronę https://my.visualstudio.com
+You have been assigned a Visual Studio subscription, and may have been directed to log into https://my.visualstudio.com based on your Welcome email.  While this is the correct website for consuming benefits, our organization requires you to take a few extra steps before you can access the site.  Please follow the below instructions to help you create a “Microsoft Account” that is tied to our corporate email address.  Once these steps are completed, you will use your email address to access the Subscription benefits.
+1. Visit https://my.visualstudio.com
 
-2. Kliknij przycisk Utwórz nowy Account firmy Microsoft po prawej stronie
+2. Click Create new Microsoft Account on the right hand side
 
-3. Wypełnij formularz:
-   - Użyj swojego adresu e-mail firmy w someone@example.com okno
-   - Wprowadź hasło
-   - Wybierz preferencje promocyjna
-   - Kliknij przycisk Dalej
+3. Complete the Form:
+   - Use your corporate email address in the someone@example.com box
+   - Enter a password
+   - Select your promotional preference
+   - Click Next
 
-4. Wykonaj kroki weryfikacji konta
+4. Complete the account validation steps
 
-5. Jeśli to konieczne, należy utworzyć profil programu Visual Studio
+5. If necessary, complete the Visual Studio profile
 
-6. Teraz można zobaczyć swoje korzyści
+6. You should now see your benefits
 
-Uwaga:  Gdy użytkownik odwiedzi https://my.visualstudio.com w przyszłości, może pojawić się prośba o wybranie konta chcesz użyć (np. "Konto służbowe" lub "Konto osobiste").  Po wykonaniu powyższych czynności, należy korzystać z opcji "Konto osobiste".
+Note:  When visiting https://my.visualstudio.com in the future, you may be prompted to select which account you’d like to use (e.g. “Work or School Account” or “Personal Account”).  After following the steps above, you will need to leverage the “Personal Account” option.
 
-Jeśli występują problemy, skontaktuj się z zespołem pomocy technicznej (https://visualstudio.microsoft.com/subscriptions/support/).
+If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
 
-W dolnej części strony wybierz następujące opcje:
-   - Konta, subskrypcji i pomoc techniczna dotycząca rozliczeń
-   - Od problemu wybierz znak subskrypcji pomocy technicznej
-   - Wybierz odpowiedni kraj
-   - Wybierz odpowiednią opcję asystowaną pomocą techniczną
+At the bottom of the page, select the following:
+   - Accounts, Subscriptions, and Billing Support
+   - From Issue, choose Subscription sign in support
+   - Choose the appropriate Country
+   - Select the desired Assisted Support option
 
----Koniec kopiowania---
+----------- End Copy -----------
+```

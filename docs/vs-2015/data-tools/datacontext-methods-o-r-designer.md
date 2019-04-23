@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a57f94758d4289981740ed9c1a8a463a8a97887d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 97a36c38eb0c4a96cb7182300c2f9aca6da68e8a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661597"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042756"
 ---
 # <a name="datacontext-methods-or-designer"></a>Metody DataContext (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Element DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=Fals
 ## <a name="two-types-of-datacontext-methods"></a>Dwa typy metod DataContext  
  Metody DataContext są tych metod, które mapują do procedur przechowywanych i funkcji w bazie danych. Można tworzyć i Dodawanie metody DataContext w okienku metody [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Istnieją dwa odrębne rodzaje <xref:System.Data.Linq.DataContext> metod; te, które zwracają jeden lub więcej zestawów wyników i te, które nie obsługują:  
   
--   <xref:System.Data.Linq.DataContext> metody, które zwracają jeden lub więcej zestawów wyników:  
+- <xref:System.Data.Linq.DataContext> metody, które zwracają jeden lub więcej zestawów wyników:  
   
      Utworzyć ten rodzaju <xref:System.Data.Linq.DataContext> metody, gdy tylko wymaganych przez aplikację do uruchamiania procedur składowanych i funkcji w bazie danych i zwracają wyniki. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie metod DataContext zamapowanych na procedury składowane i funkcje (O/R Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md), System.Data.Linq.ISingleResult\<T >, a <xref:System.Data.Linq.IMultipleResults>.  
   
--   <xref:System.Data.Linq.DataContext> metody, które nie zwracają zestaw wyników: takich jak wstawia, aktualizacji i usuwania dla klasy określonej jednostki.  
+- <xref:System.Data.Linq.DataContext> metody, które nie zwracają zestaw wyników: takich jak wstawia, aktualizacji i usuwania dla klasy określonej jednostki.  
   
      Utworzyć ten rodzaju <xref:System.Data.Linq.DataContext> metody, gdy aplikacja ma do uruchamiania procedur składowanych, zamiast przy użyciu domyślnego [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] zachowanie zapisywanie zmodyfikowanych danych między klasami jednostki oraz bazy danych. Aby uzyskać więcej informacji, zobacz [jak: Przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).  
   

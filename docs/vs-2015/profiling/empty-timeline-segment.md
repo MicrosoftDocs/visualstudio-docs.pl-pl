@@ -13,25 +13,25 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ac39a776cb7e6c2c9cbce648c0b3ca3ebc86783
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0291cfe93492c357401ce371d58683c6815aa12b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770748"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052821"
 ---
 # <a name="empty-timeline-segment"></a>Pusty segment osi czasu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W Wizualizatorze współbieżności, przyczyna, dla której części osi czasu jest pusty (ma białe tło) jest zależna od typu kanału.  
   
--   Dla kanału wątku procesora CPU oznacza to, że wątek nie istniał w tej części osi czasu. Jeśli interesuje Cię wątku, można znaleźć sekcji wykonywanie używający kontroli powiększenia lub przewijanie w poziomie.  
+- Dla kanału wątku procesora CPU oznacza to, że wątek nie istniał w tej części osi czasu. Jeśli interesuje Cię wątku, można znaleźć sekcji wykonywanie używający kontroli powiększenia lub przewijanie w poziomie.  
   
--   W przypadku kanałem we/wy oznacza to, nie dostępu do dysku wystąpił w danym momencie imieniu procesu docelowego.  
+- W przypadku kanałem we/wy oznacza to, nie dostępu do dysku wystąpił w danym momencie imieniu procesu docelowego.  
   
--   Dla kanału DirectX oznacza to, że nie działanie procesora GPU zostało wykonane imieniu procesu docelowego podczas tej części osi czasu.  
+- Dla kanału DirectX oznacza to, że nie działanie procesora GPU zostało wykonane imieniu procesu docelowego podczas tej części osi czasu.  
   
--   Kanału znacznika oznacza to, czy nie wygenerowano żadnych znaczników.  
+- Kanału znacznika oznacza to, czy nie wygenerowano żadnych znaczników.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)   

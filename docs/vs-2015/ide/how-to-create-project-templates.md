@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9a7a48039699c5bb35e07a21e5c5c3be8ae8585f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 918462bff3c2ac8dc57cb9c2c55a7d901707683c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785916"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051547"
 ---
 # <a name="how-to-create-project-templates"></a>Instrukcje: Tworzenie szablonów projektów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,24 +31,24 @@ Ta procedura umożliwia utworzenie szablonu przy użyciu **Eksportuj szablon** k
   
 ### <a name="to-create-a-custom-project-template-with-the-standard-export-template-wizard"></a>Tworzenie szablonu niestandardowego projektu przy użyciu standardowego kreatora Eksportuj szablon  
   
-1.  Utwórz projekt.  
+1. Utwórz projekt.  
   
     > [!NOTE]
     >  Gdy nazwy projektu, który będzie źródło szablonu, należy używać tylko znaków prawidłowego identyfikatora. Szablon wyeksportowany z projektu o nazwie nieprawidłowe znaki może spowodować błędy kompilacji w przyszłości projekty na podstawie szablonu. Aby uzyskać więcej informacji na prawidłowy identyfikator znaków, zobacz [zadeklarowane nazwy elementów](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66).  
   
-2.  Edytuj projekt, dopóki nie jest gotowy do wyeksportowania jako szablon.  
+2. Edytuj projekt, dopóki nie jest gotowy do wyeksportowania jako szablon.  
   
-3.  Zgodnie z potrzebami edytować pliki kodu, aby wskazać, gdzie wymiany parametru powinny zostać wykonane. Aby uzyskać więcej informacji na temat zastępowania parametrów, zobacz [jak: Zastępowanie parametrów w szablonie](../ide/how-to-substitute-parameters-in-a-template.md).  
+3. Zgodnie z potrzebami edytować pliki kodu, aby wskazać, gdzie wymiany parametru powinny zostać wykonane. Aby uzyskać więcej informacji na temat zastępowania parametrów, zobacz [jak: Zastępowanie parametrów w szablonie](../ide/how-to-substitute-parameters-in-a-template.md).  
   
-4.  Na **pliku** menu, kliknij przycisk **Eksportuj szablon**. **Eksportuj szablon** zostanie otwarty Kreator.  
+4. Na **pliku** menu, kliknij przycisk **Eksportuj szablon**. **Eksportuj szablon** zostanie otwarty Kreator.  
   
-5.  Kliknij przycisk **projektu szablonu**.  
+5. Kliknij przycisk **projektu szablonu**.  
   
-6.  Jeśli masz więcej niż jeden projekt w bieżącym rozwiązaniu, wybierz projekty, do których mają zostać wyeksportowane do szablonu.  
+6. Jeśli masz więcej niż jeden projekt w bieżącym rozwiązaniu, wybierz projekty, do których mają zostać wyeksportowane do szablonu.  
   
-7.  Kliknij przycisk **Dalej**.  
+7. Kliknij przycisk **Dalej**.  
   
-8.  Wybierz ikonę i obrazu podglądu dla szablonu. Będą one wyświetlane na **nowy projekt** okno dialogowe.  
+8. Wybierz ikonę i obrazu podglądu dla szablonu. Będą one wyświetlane na **nowy projekt** okno dialogowe.  
   
 9. Wprowadź nazwę i opis szablonu.  
   
@@ -58,4 +58,4 @@ Ta procedura umożliwia utworzenie szablonu przy użyciu **Eksportuj szablon** k
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Instrukcje: Tworzenie szablonów elementu](../ide/how-to-create-item-templates.md)
+ [Instrukcje: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md)

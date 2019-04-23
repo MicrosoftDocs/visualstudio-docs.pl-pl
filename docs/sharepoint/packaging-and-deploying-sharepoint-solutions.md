@@ -14,25 +14,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 297fefddd45b080af236da0b4fe53649e7d630cf
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 4c187865518c9556d63d9e5e632ec5c658fc3e0f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867567"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040847"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Pakowanie i wdrażanie rozwiązań SharePoint
   Zwykle rozwiązania programu SharePoint jest wdrażana na serwerze programu SharePoint przy użyciu pliku pakietu (wsp) rozwiązania. Można użyć programu Visual Studio, aby organizowanie elementów projektu programu SharePoint w funkcji i utworzyć pakiet do wdrożenia funkcji programu SharePoint.
 
  Ten temat zawiera następujące informacje:
 
--   [Tworzenie pakietów i funkcji](#create-features-and-packages)
+- [Tworzenie pakietów i funkcji](#create-features-and-packages)
 
--   [Funkcja i Obsługa narzędzia pakowania](#feature-and-packaging-tool-support)
+- [Funkcja i Obsługa narzędzia pakowania](#feature-and-packaging-tool-support)
 
--   [Wdrażanie rozwiązań SharePoint](#deploy-sharepoint-solutions)
+- [Wdrażanie rozwiązań SharePoint](#deploy-sharepoint-solutions)
 
--   [Wdrażanie plików w rozwiązaniach programu SharePoint](#deploy-files-in-sharepoint-solutions)
+- [Wdrażanie plików w rozwiązaniach programu SharePoint](#deploy-files-in-sharepoint-solutions)
 
 ## <a name="create-features-and-packages"></a>Tworzenie pakietów i funkcji
  Używasz programu Visual Studio do grupowania powiązanych elementów programu SharePoint do *funkcji*. Na przykład funkcję dla definicji listy kontaktów może obejmować wystąpienie listy i definicji listy. Te dwa elementy można łączyć w pojedynczej funkcji do celów wdrożenia. Aby uzyskać więcej informacji o funkcjach, zobacz [bloków konstrukcyjnych: Funkcje](http://go.microsoft.com/fwlink/?LinkID=169183).
@@ -42,11 +42,11 @@ ms.locfileid: "57867567"
 ## <a name="feature-and-packaging-tool-support"></a>Funkcja i Obsługa narzędzia pakowania
  Narzędzia programistyczne programu SharePoint w programie Visual Studio umożliwia szybkie organizowanie plików programu SharePoint do funkcji i pakietów rozwiązań ułatwia wdrożenia. Aby skonfigurować pakiet funkcji i rozwiązania, można użyć następujących narzędzi.
 
--   Projektant funkcji i projektancie pakietu.
+- Projektant funkcji i projektancie pakietu.
 
--   Eksploratora pakietów jest oknem narzędzi.
+- Eksploratora pakietów jest oknem narzędzi.
 
--   Eksplorator rozwiązań.
+- Eksplorator rozwiązań.
 
 ### <a name="feature-designer-and-package-designer"></a>Funkcja projektanta i projektanta pakietów
  Możesz tworzyć funkcje, ustaw zakresy i inne funkcje należy oznaczyć jako zależności za pomocą projektanta funkcji. Projektant wyświetla również końcowego pliku XML, który opisuje każdej funkcji. Aby uzyskać więcej informacji, zobacz [funkcji SharePoint Utwórz](../sharepoint/creating-sharepoint-features.md).

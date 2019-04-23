@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c13d30b1657917d55e5d3218c70aa8f2a69ec67
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 917c88056709cfbeb89ce3f19d9c8da9866feb4e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844037"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054615"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Rozszerzanie modeli i diagramów UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Ten temat zawiera podsumowanie różnych sposobów, w którym można rozszerzyć
   
  Aby uzyskać więcej informacji, zobacz ten film wideo: ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo")[MSDN jak mogę serii: Narzędzia UML i rozszerzalność](http://go.microsoft.com/fwlink/?LinkId=214467).  
   
-##  <a name="Requirements"></a> Wymagania  
+## <a name="Requirements"></a> Wymagania  
   
--   [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
--   [Modeling SDK for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148).  
+- [Modeling SDK for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148).  
   
 ## <a name="profiles"></a>Profile  
  Profile umożliwiają definiowanie stereotypów i dodatkowe właściwości dla elementów UML.  

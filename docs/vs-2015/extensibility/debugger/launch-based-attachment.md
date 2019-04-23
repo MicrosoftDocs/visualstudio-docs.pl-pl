@@ -11,12 +11,12 @@ ms.assetid: 362f00ac-1909-4a3a-bacb-c0ceb5549816
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 015443968350b63f804858166860ce34d47991af
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 09a6b39bef9ba6af098bf92d779a490e22492209
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834274"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044866"
 ---
 # <a name="launch-based-attachment"></a>Dołączanie na podstawie uruchamiania
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ Na podstawie uruchamiania załącznika do programu odbywa się automatycznie. Po
 ## <a name="the-attaching-process"></a>Dołączanie procesu  
  Główna różnica polega na sekwencję zdarzeń po **Dołącz** wywołań w następujący sposób:  
   
-1.  Wyślij **IDebugEngineCreateEvent2** obiekt zdarzenia do SDM. Aby uzyskać więcej informacji, zobacz [wysyłanie zdarzeń](../../extensibility/debugger/sending-events.md).  
+1. Wyślij **IDebugEngineCreateEvent2** obiekt zdarzenia do SDM. Aby uzyskać więcej informacji, zobacz [wysyłanie zdarzeń](../../extensibility/debugger/sending-events.md).  
   
-2.  Wywołania `IDebugProgram2::GetProgramId` metody **IDebugProgram2** interfejsu przekazany do **Dołącz** metody.  
+2. Wywołania `IDebugProgram2::GetProgramId` metody **IDebugProgram2** interfejsu przekazany do **Dołącz** metody.  
   
-3.  Wyślij **IDebugProgramCreateEvent2** zdarzeń obiektowi powiadomić SDM, lokalnej **IDebugProgram2** do reprezentowania program DE został utworzony obiekt.  
+3. Wyślij **IDebugProgramCreateEvent2** zdarzeń obiektowi powiadomić SDM, lokalnej **IDebugProgram2** do reprezentowania program DE został utworzony obiekt.  
   
-4.  Wyślij [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) obiektu zdarzenia, aby powiadomić SDM, utworzenia nowego wątku dla procesu, który uruchomił.  
+4. Wyślij [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) obiektu zdarzenia, aby powiadomić SDM, utworzenia nowego wątku dla procesu, który uruchomił.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wysyłanie wymaganych zdarzeń](../../extensibility/debugger/sending-the-required-events.md)   

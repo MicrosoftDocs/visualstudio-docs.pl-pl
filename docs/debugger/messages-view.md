@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db9d64119a94e2358a6f52e6e1269fca8d726cbb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694403"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049132"
 ---
 # <a name="messages-view"></a>Widok komunikatów
 Każde okno ma strumienia skojarzonych komunikatów. Okno widoku komunikatów wyświetla ten strumień komunikatu. Uchwyt okna, kod komunikatu i wiadomości są wyświetlane. Można utworzyć widoku komunikatów dla wątku lub również proces. Dzięki temu można wyświetlić komunikaty wysyłane do wszystkich okien należące do określonego proces lub wątek, który jest szczególnie przydatne w przypadku przechwytywania komunikaty inicjowania okna.
@@ -30,21 +30,21 @@ Każde okno ma strumienia skojarzonych komunikatów. Okno widoku komunikatów wy
 
 #### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Aby otworzyć widok wiadomości dla okna, proces lub wątek
 
-1.  Przenieś fokus do [widoku Windows](../debugger/windows-view.md), [widok procesy](../debugger/processes-view.md), lub [Widok wątków](../debugger/threads-view.md) okna.
+1. Przenieś fokus do [widoku Windows](../debugger/windows-view.md), [widok procesy](../debugger/processes-view.md), lub [Widok wątków](../debugger/threads-view.md) okna.
 
-2.  Znajdź węzeł dla elementu, dla których wiadomości, które chcesz zbadać i zaznacz go.
+2. Znajdź węzeł dla elementu, dla których wiadomości, które chcesz zbadać i zaznacz go.
 
-3.  Z **Spy** menu, wybierz **komunikaty w dzienniku**.
+3. Z **Spy** menu, wybierz **komunikaty w dzienniku**.
 
      [Okno dialogowe opcji komunikatów](../debugger/message-options-dialog-box.md) zostanie otwarty.
 
-4.  Wybierz opcje dla komunikatu, który chcesz wyświetlić.
+4. Wybierz opcje dla komunikatu, który chcesz wyświetlić.
 
-5.  Naciśnij klawisz **OK** aby rozpocząć rejestrowanie komunikatów.
+5. Naciśnij klawisz **OK** aby rozpocząć rejestrowanie komunikatów.
 
      Zostanie otwarte okno Widok wiadomości oraz w **wiadomości** menu jest dodawany do programu Spy ++ — pasek narzędzi. W zależności od opcji wybranych wiadomości było rozpocząć przesyłanie strumieniowe do aktywnego okna widoku komunikatów.
 
-6.  Jeśli masz wystarczającej liczby wiadomości, wybierz **Zatrzymaj rejestrowanie** z **wiadomości** menu.
+6. Jeśli masz wystarczającej liczby wiadomości, wybierz **Zatrzymaj rejestrowanie** z **wiadomości** menu.
 
 ## <a name="in-this-section"></a>W tej sekcji
  [Kontrolowanie widoku komunikatów](../debugger/how-to-control-messages-view.md) wyjaśnia, jak zarządzać widoku komunikatów.

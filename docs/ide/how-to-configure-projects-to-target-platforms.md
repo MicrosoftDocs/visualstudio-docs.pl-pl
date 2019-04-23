@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee7c0ee30ebe5a424439aab8e06c18c10fc679bf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e9f605e761380b3dc856926dff5bd1712753a8ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942118"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045684"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Instrukcje: Konfigurowanie projektów pod kątem platform docelowych
 
@@ -35,20 +35,20 @@ Program Visual Studio umożliwia ustawianie aplikacji przeznaczonych dla różny
 
 ### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Aby skonfigurować projekt przeznaczony dla platformy 64-bitowej
 
-1.  Na pasku menu wybierz **kompilacji** > **programu Configuration Manager**.
+1. Na pasku menu wybierz **kompilacji** > **programu Configuration Manager**.
 
-2.  W **aktywną platformą rozwiązania** listy, wybierz platformę 64-bitowych dla rozwiązania do obiektu docelowego, a następnie wybierz **Zamknij** przycisku.
+2. W **aktywną platformą rozwiązania** listy, wybierz platformę 64-bitowych dla rozwiązania do obiektu docelowego, a następnie wybierz **Zamknij** przycisku.
 
-    1.  Jeśli nie ma platformy, która ma **aktywną platformą rozwiązania** wybierz **New**.
+    1. Jeśli nie ma platformy, która ma **aktywną platformą rozwiązania** wybierz **New**.
 
          **Nowa platforma rozwiązania** pojawi się okno dialogowe.
 
-    2.  W **wpisz lub wybierz nową platformę** wybierz **x64**.
+    2. W **wpisz lub wybierz nową platformę** wybierz **x64**.
 
         > [!NOTE]
         >  Jeśli nadasz konfiguracji nową nazwę, może być konieczne zmodyfikować ustawienia w **projektanta projektu** pod kątem odpowiedniej platformy.
 
-    3.  Jeśli chcesz skopiować ustawienia z bieżącej konfiguracji platformy, wybierz go, a następnie wybierz **OK** przycisku.
+    3. Jeśli chcesz skopiować ustawienia z bieżącej konfiguracji platformy, wybierz go, a następnie wybierz **OK** przycisku.
 
 Właściwości dla wszystkich projektów przeznaczonych dla platformy 64-bitowe są aktualizowane i następnej kompilacji projektu będzie optymalizowany dla platform 64-bitowych.
 

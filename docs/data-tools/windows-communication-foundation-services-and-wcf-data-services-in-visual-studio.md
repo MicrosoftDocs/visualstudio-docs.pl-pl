@@ -35,12 +35,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b253c4e3447b8d7cd76dcef010adf99addb7bf9d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57b66473333bfe5e22c3f5aca47764bb789a33cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933668"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045191"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio
 
@@ -139,9 +139,9 @@ W takim przypadku można określić `endpointConfigurationName` jako parametr do
 
 ### <a name="to-select-a-service-endpoint"></a>Aby wybrać punkt końcowy usługi
 
-1.  Dodaj odwołanie do usługi WCF, klikając prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierając pozycję **Dodaj odwołanie do usługi**.
+1. Dodaj odwołanie do usługi WCF, klikając prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierając pozycję **Dodaj odwołanie do usługi**.
 
-2.  W edytorze kodu Dodaj Konstruktor dla odwołania do usługi:
+2. W edytorze kodu Dodaj Konstruktor dla odwołania do usługi:
 
     ```vb
     Dim proxy As New ServiceReference.Service1Client(
@@ -154,24 +154,24 @@ W takim przypadku można określić `endpointConfigurationName` jako parametr do
     > [!NOTE]
     > Zastąp *ServiceReference* z przestrzenią nazw dla odwołania do usługi i Zastąp *Service1Client* przy użyciu nazwy usługi.
 
-3.  Lista IntelliSense wyświetla obejmującą przeciążenia dla konstruktora. Wybierz `endpointConfigurationName As String` przeciążenia.
+3. Lista IntelliSense wyświetla obejmującą przeciążenia dla konstruktora. Wybierz `endpointConfigurationName As String` przeciążenia.
 
-4.  Następujące przeciążenia, wpisz `=` *ConfigurationName*, gdzie *ConfigurationName* to nazwa punktu końcowego, który chcesz użyć.
+4. Następujące przeciążenia, wpisz `=` *ConfigurationName*, gdzie *ConfigurationName* to nazwa punktu końcowego, który chcesz użyć.
 
     > [!NOTE]
     > Jeśli nie znasz nazwy dostępnych punktów końcowych, możesz je znaleźć w *app.config* pliku.
 
 ### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>Aby znaleźć dostępne punkty końcowe dla usługi WCF
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **app.config** pliku projektu, który zawiera odwołanie do usługi, a następnie kliknij przycisk **Otwórz**. Plik zostanie wyświetlony w edytorze kodu.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **app.config** pliku projektu, który zawiera odwołanie do usługi, a następnie kliknij przycisk **Otwórz**. Plik zostanie wyświetlony w edytorze kodu.
 
-2.  Wyszukaj `<Client>` tagu w pliku.
+2. Wyszukaj `<Client>` tagu w pliku.
 
-3.  Wyszukiwanie poniżej `<Client>` tag w przypadku znaczników, który zaczyna się od `<Endpoint>`.
+3. Wyszukiwanie poniżej `<Client>` tag w przypadku znaczników, który zaczyna się od `<Endpoint>`.
 
      Jeśli odwołanie do usługi zawiera wiele punktów końcowych, będzie co najmniej dwóch `<Endpoint` tagów.
 
-4.  Wewnątrz `<EndPoint>` tagu, można znaleźć `name="` *SomeService* `"` parametru (gdzie *SomeService* reprezentuje nazwę punktu końcowego). Jest to nazwa punktu końcowego, który może być przekazywany do `endpointConfigurationName As String` przeciążenia konstruktora odwołania do usługi.
+4. Wewnątrz `<EndPoint>` tagu, można znaleźć `name="` *SomeService* `"` parametru (gdzie *SomeService* reprezentuje nazwę punktu końcowego). Jest to nazwa punktu końcowego, który może być przekazywany do `endpointConfigurationName As String` przeciążenia konstruktora odwołania do usługi.
 
 ## <a name="how-to-call-a-service-method-asynchronously"></a>Instrukcje: Asynchroniczne wywoływanie metody usługi
 
@@ -186,11 +186,11 @@ Domyślnie gdy odwołanie do usługi zostanie dodany do projektu, go jest skonfi
 
 ### <a name="to-call-a-service-method-asynchronously"></a>Do wywołania metody usługi asynchronicznie
 
-1.  W **Eksploratora rozwiązań**, wybierz odwołanie do usługi.
+1. W **Eksploratora rozwiązań**, wybierz odwołanie do usługi.
 
-2.  Na **projektu** menu, kliknij przycisk **Konfiguruj odwołanie do usługi**.
+2. Na **projektu** menu, kliknij przycisk **Konfiguruj odwołanie do usługi**.
 
-3.  W **Konfiguruj odwołanie do usługi** okno dialogowe, wybierz opcję **Eneruj operacje asynchroniczne** pole wyboru.
+3. W **Konfiguruj odwołanie do usługi** okno dialogowe, wybierz opcję **Eneruj operacje asynchroniczne** pole wyboru.
 
 ## <a name="how-to-bind-data-returned-by-a-service"></a>Instrukcje: Powiązanie danych zwracanych przez usługę
 
@@ -198,33 +198,33 @@ Można powiązać danych zwracanych przez usługę Windows Communication Foundat
 
 ### <a name="to-bind-a-control-to-single-data-field-returned-by-a-wcf-service"></a>Aby powiązać formant jedno pole danych zwracane przez usługę WCF
 
-1.  Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
+1. Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
 
    **Źródeł danych** zostanie wyświetlone okno.
 
-2.  W **źródeł danych** okna, rozwiń węzeł odwołania do usługi. Złożone typy zwracane przez wyświetlanie usługi.
+2. W **źródeł danych** okna, rozwiń węzeł odwołania do usługi. Złożone typy zwracane przez wyświetlanie usługi.
 
-3.  Rozwiń węzeł dla typu. Pola danych dla tego typu są wyświetlane.
+3. Rozwiń węzeł dla typu. Pola danych dla tego typu są wyświetlane.
 
-4.  Wybierz pole i kliknij strzałkę listy rozwijanej, aby wyświetlić listę elementów sterujących, które są dostępne dla typu danych.
+4. Wybierz pole i kliknij strzałkę listy rozwijanej, aby wyświetlić listę elementów sterujących, które są dostępne dla typu danych.
 
-5.  Kliknij formant, z którą chcesz powiązać.
+5. Kliknij formant, z którą chcesz powiązać.
 
-6.  Przeciągnij pole do formularza. Formant został dodany do formularza, wraz z <xref:System.Windows.Forms.BindingSource> składnika i <xref:System.Windows.Forms.BindingNavigator> składnika.
+6. Przeciągnij pole do formularza. Formant został dodany do formularza, wraz z <xref:System.Windows.Forms.BindingSource> składnika i <xref:System.Windows.Forms.BindingNavigator> składnika.
 
-7.  Powtórz kroki od 4, chociaż 6 dla innych pól, które chcesz powiązać.
+7. Powtórz kroki od 4, chociaż 6 dla innych pól, które chcesz powiązać.
 
 ### <a name="to-bind-a-control-to-composite-type-returned-by-a-wcf-service"></a>Aby powiązać formant typu złożonego, zwracane przez usługę WCF
 
-1.  Na **danych** menu, wybierz opcję **Pokaż źródła danych**. **Źródeł danych** zostanie wyświetlone okno.
+1. Na **danych** menu, wybierz opcję **Pokaż źródła danych**. **Źródeł danych** zostanie wyświetlone okno.
 
-2.  W **źródeł danych** okna, rozwiń węzeł odwołania do usługi. Złożone typy zwracane przez wyświetlanie usługi.
+2. W **źródeł danych** okna, rozwiń węzeł odwołania do usługi. Złożone typy zwracane przez wyświetlanie usługi.
 
-3.  Wybierz węzeł dla typu, a następnie kliknij strzałkę listy rozwijanej, aby wyświetlić listę dostępnych opcji.
+3. Wybierz węzeł dla typu, a następnie kliknij strzałkę listy rozwijanej, aby wyświetlić listę dostępnych opcji.
 
-4.  Kliknij opcję **DataGridView** do wyświetlania danych w siatce lub **szczegóły** do wyświetlania danych w poszczególnych formantów.
+4. Kliknij opcję **DataGridView** do wyświetlania danych w siatce lub **szczegóły** do wyświetlania danych w poszczególnych formantów.
 
-5.  Przeciągnij węzeł na formularzu. Formanty są dodawane do formularza, wraz z <xref:System.Windows.Forms.BindingSource> składnika i <xref:System.Windows.Forms.BindingNavigator> składnika.
+5. Przeciągnij węzeł na formularzu. Formanty są dodawane do formularza, wraz z <xref:System.Windows.Forms.BindingSource> składnika i <xref:System.Windows.Forms.BindingNavigator> składnika.
 
 ## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Instrukcje: Konfigurowanie usługi do ponownego użycia istniejących typów
 
@@ -234,21 +234,21 @@ Aby uniknąć tego problemu, typów w przywoływanych zestawach są udostępnion
 
 ### <a name="to-disable-type-sharing-in-a-single-assembly"></a>Aby wyłączyć udostępnianie typu w jednym zestawie
 
-1.  W **Eksploratora rozwiązań**, wybierz odwołanie do usługi.
+1. W **Eksploratora rozwiązań**, wybierz odwołanie do usługi.
 
-2.  Na **projektu** menu, kliknij przycisk **Konfiguruj odwołanie do usługi**.
+2. Na **projektu** menu, kliknij przycisk **Konfiguruj odwołanie do usługi**.
 
-3.  W **Konfigurowanie odwołania do usług** okno dialogowe, wybierz opcję **ponownie użyj typów w określonych przywoływanych zestawach**.
+3. W **Konfigurowanie odwołania do usług** okno dialogowe, wybierz opcję **ponownie użyj typów w określonych przywoływanych zestawach**.
 
-4.  Zaznacz pole wyboru dla każdego zestawu, w której chcesz włączyć udostępnianie typu. Aby wyłączyć udostępnianie dla zestawu typu, to pole wyboru zostanie wyczyszczone.
+4. Zaznacz pole wyboru dla każdego zestawu, w której chcesz włączyć udostępnianie typu. Aby wyłączyć udostępnianie dla zestawu typu, to pole wyboru zostanie wyczyszczone.
 
 ### <a name="to-disable-type-sharing-in-all-assemblies"></a>Aby wyłączyć udostępnianie typu w wszystkie zestawy
 
-1.  W **Eksploratora rozwiązań**, wybierz odwołanie do usługi.
+1. W **Eksploratora rozwiązań**, wybierz odwołanie do usługi.
 
-2.  Na **projektu** menu, kliknij przycisk **Konfiguruj odwołanie do usługi**.
+2. Na **projektu** menu, kliknij przycisk **Konfiguruj odwołanie do usługi**.
 
-3.  W **Konfigurowanie odwołania do usług** okno dialogowe wyczyść **ponownie użyj typów w przywoływanych zestawach** pole wyboru.
+3. W **Konfigurowanie odwołania do usług** okno dialogowe wyczyść **ponownie użyj typów w przywoływanych zestawach** pole wyboru.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

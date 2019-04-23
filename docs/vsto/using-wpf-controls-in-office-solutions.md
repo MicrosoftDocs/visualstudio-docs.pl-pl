@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 70c77e3b093947703680ab7253fdee0a6c3d60cd
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: c8c447ce6b202fc3ccca65c6725e9eb3e5f13ecf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869765"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041536"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Użyj kontrolek WPF w rozwiązaniach pakietu Office
 
@@ -27,13 +27,13 @@ Mimo że rozwiązań utworzonych przy użyciu narzędzi programistycznych pakiet
 
 Dowolnego elementu interfejsu użytkownika, który może obsługiwać formantów formularzy Windows w rozwiązaniach pakietu Office może również obsługiwać kontrolek WPF. W tym następujące elementy:
 
--   Dokumenty i arkusze w dostosowaniach na poziomie dokumentu.
+- Dokumenty i arkusze w dostosowaniach na poziomie dokumentu.
 
--   Okienka akcji w dostosowaniach na poziomie dokumentu.
+- Okienka akcji w dostosowaniach na poziomie dokumentu.
 
--   Niestandardowe okienka zadań w dodatkach VSTO.
+- Niestandardowe okienka zadań w dodatkach VSTO.
 
--   Regionów formularzy w dodatków narzędzi VSTO dla programu Outlook.
+- Regionów formularzy w dodatków narzędzi VSTO dla programu Outlook.
 
 ## <a name="add-wpf-controls-to-office-projects-at-design-time"></a>Dodawanie formantów WPF do projektów pakietu Office w czasie projektowania
 
@@ -41,49 +41,49 @@ Nie można dodać kontrolki WPF bezpośrednio do elementów interfejsu użytkown
 
 ### <a name="to-add-wpf-controls-to-an-actions-pane-custom-task-pane-or-form-region"></a>Aby dodać formanty WPF do okienka akcji, region formularza lub niestandardowego okienka zadań
 
-1.  Otwórz projekt, do której chcesz dodać niestandardowego okienka zadań, okienka akcji lub regionu formularza.
+1. Otwórz projekt, do której chcesz dodać niestandardowego okienka zadań, okienka akcji lub regionu formularza.
 
-2.  Dodaj **kontrolki użytkownika (WPF)** elementu do projektu.
+2. Dodaj **kontrolki użytkownika (WPF)** elementu do projektu.
 
-3.  Z **przybornika**, dodawanie formantów WPF do powierzchni projektowej kontrolki użytkownika WPF.
+3. Z **przybornika**, dodawanie formantów WPF do powierzchni projektowej kontrolki użytkownika WPF.
 
      Domyślnie, gdy projektant kontrolki użytkownika WPF jest otwarty **przybornika** zawiera tylko formanty WPF.
 
-4.  Skompiluj projekt.
+4. Skompiluj projekt.
 
-5.  Dodaj okienko akcji, region formularza lub niestandardowego okienka zadań do projektu:
+5. Dodaj okienko akcji, region formularza lub niestandardowego okienka zadań do projektu:
 
-    -   Dla regionów formularza należy dodać **Region formularza programu Outlook** do projektu. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie regionu formularza do projektu dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
+    - Dla regionów formularza należy dodać **Region formularza programu Outlook** do projektu. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie regionu formularza do projektu dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-    -   Okienka akcji można dodać **kontrolki okienka akcji** lub **kontrolki użytkownika** do projektu. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie okienek akcji do dokumentów programu Word i skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) i [jak: Dodawanie okienek akcji do dokumentów programu Word i skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
+    - Okienka akcji można dodać **kontrolki okienka akcji** lub **kontrolki użytkownika** do projektu. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie okienek akcji do dokumentów programu Word i skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) i [jak: Dodawanie okienek akcji do dokumentów programu Word i skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
-    -   Niestandardowe okienka zadań, można dodać **kontrolki użytkownika** do projektu. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
+    - Niestandardowe okienka zadań, można dodać **kontrolki użytkownika** do projektu. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
-6.  Z *ProjectName* **kontrolek użytkownika WPF** karcie **przybornika**, przeciągnij formanty użytkownika WPF designer okienko akcji, region formularza lub niestandardowego okienka zadań.
+6. Z *ProjectName* **kontrolek użytkownika WPF** karcie **przybornika**, przeciągnij formanty użytkownika WPF designer okienko akcji, region formularza lub niestandardowego okienka zadań.
 
      Program Visual Studio automatycznie tworzy <xref:System.Windows.Forms.Integration.ElementHost> obiektu, który obsługuje formanty użytkownika WPF w elemencie interfejsu użytkownika.
 
-7.  Skompiluj ponownie projekt.
+7. Skompiluj ponownie projekt.
 
 #### <a name="to-add-wpf-controls-to-a-document-or-worksheet-in-a-document-level-project"></a>Aby dodać formanty WPF do dokumentu lub arkusza w projekcie na poziomie dokumentu
 
-1.  Otwórz projekt poziomie dokumentu dla programu Word lub Excel.
+1. Otwórz projekt poziomie dokumentu dla programu Word lub Excel.
 
-2.  Dodaj **kontrolki użytkownika (WPF)** elementu do projektu.
+2. Dodaj **kontrolki użytkownika (WPF)** elementu do projektu.
 
-3.  Z **przybornika**, dodawanie formantów WPF do powierzchni projektowej kontrolki użytkownika WPF.
+3. Z **przybornika**, dodawanie formantów WPF do powierzchni projektowej kontrolki użytkownika WPF.
 
-4.  Skompiluj projekt.
+4. Skompiluj projekt.
 
-5.  Dodaj **kontrolki użytkownika** elementu (oznacza to, że formant użytkownika interfejsu Windows Forms) do projektu.
+5. Dodaj **kontrolki użytkownika** elementu (oznacza to, że formant użytkownika interfejsu Windows Forms) do projektu.
 
-6.  Otwórz projektanta dla kontrolki użytkownika Windows Forms.
+6. Otwórz projektanta dla kontrolki użytkownika Windows Forms.
 
-7.  Z *ProjectName* **kontrolek użytkownika WPF** karcie **przybornika**, przeciągnij formanty użytkownika WPF do projektanta.
+7. Z *ProjectName* **kontrolek użytkownika WPF** karcie **przybornika**, przeciągnij formanty użytkownika WPF do projektanta.
 
      Program Visual Studio automatycznie tworzy <xref:System.Windows.Forms.Integration.ElementHost> obiektu, który obsługuje formanty użytkownika WPF w kontrolce użytkownika Windows Forms.
 
-8.  Napisz kod, który programowo dodaje kontrolki użytkownika Windows Forms do dokumentów lub skoroszycie. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w środowisku uruchomieniowym](../vsto/adding-controls-to-office-documents-at-run-time.md).
+8. Napisz kod, który programowo dodaje kontrolki użytkownika Windows Forms do dokumentów lub skoroszycie. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w środowisku uruchomieniowym](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
     > [!NOTE]
     > Nie można przeciągnąć kontrolki użytkownika Windows Forms do dokumentu lub arkusza w projektancie.
@@ -100,21 +100,21 @@ WPF steruje użyciem <xref:System.Windows.Forms.Integration.ElementHost> klasy j
 
 Aby uzyskać więcej informacji na temat architektury i zagadnienia dotyczące projektowania dla hostingu kontrolek WPF w formularzach i kontrolek formularzy Windows Forms zobacz następujące tematy:
 
--   [Windows Forms i WPF wejścia ze zdolnością](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-interoperability-input-architecture)
+- [Windows Forms i WPF wejścia ze zdolnością](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-interoperability-input-architecture)
 
--   [Mapowanie właściwości Windows Forms i WPF](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-property-mapping)
+- [Mapowanie właściwości Windows Forms i WPF](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-property-mapping)
 
--   [Współdziałanie WPF i Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)
+- [Współdziałanie WPF i Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)
 
--   [Kontroluje kontrolek formularzy Windows Forms i równoważne WPF](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)
+- [Kontroluje kontrolek formularzy Windows Forms i równoważne WPF](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)
 
 Aby uzyskać więcej informacji na temat dodawania formantów WPF do kontrolek formularzy Windows Forms i formularzy w programie Visual Studio w czasie projektowania zobacz następujące tematy:
 
--   [Przewodnik: Tworzenie nowej zawartości WPF na formularzach Windows Forms w czasie projektowania](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
+- [Przewodnik: Tworzenie nowej zawartości WPF na formularzach Windows Forms w czasie projektowania](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
 
--   [Przewodnik: Rozmieszczanie zawartości WPF na formularzach Windows Forms w czasie projektowania](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
+- [Przewodnik: Rozmieszczanie zawartości WPF na formularzach Windows Forms w czasie projektowania](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
 
--   [Przewodnik: Stylu zawartości WPF](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
+- [Przewodnik: Stylu zawartości WPF](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 
 ## <a name="see-also"></a>Zobacz także
 

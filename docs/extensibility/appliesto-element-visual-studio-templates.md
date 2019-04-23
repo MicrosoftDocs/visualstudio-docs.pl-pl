@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 348ddd00d6f6db0ac4080030d2ecaa5b73c57f18
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f14924ac9464cc6239564f775a122551a9d94c15
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335197"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055200"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo, element (szablony Visual Studio)
 
@@ -60,19 +60,19 @@ Wartość tekstowa jest wymagana. Tekst określa funkcje projektu.
 
 Prawidłową składnię wyrażeń definiuje się następująco:
 
--   Wyrażenie funkcji, takich jak "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".
+- Wyrażenie funkcji, takich jak "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".
 
--   "&#124;" Jest operatorem lub.
+- "&#124;" Jest operatorem lub.
 
--   "&" I "+" znaki są operatorami i.
+- "&" I "+" znaki są operatorami i.
 
--   Znak „!” jest operatorem NIE.
+- Znak „!” jest operatorem NIE.
 
--   Nawiasy wymuszają kolejność pierwszeństwa w ocenie.
+- Nawiasy wymuszają kolejność pierwszeństwa w ocenie.
 
--   Wyrażenie o wartości null lub puste jest interpretowane jako zgodność.
+- Wyrażenie o wartości null lub puste jest interpretowane jako zgodność.
 
--   Możliwości projektu może być dowolny znak z wyjątkiem następujących znaków zastrzeżonych: "'' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r
+- Możliwości projektu może być dowolny znak z wyjątkiem następujących znaków zastrzeżonych: "'' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r
 
 ## <a name="example"></a>Przykład
 

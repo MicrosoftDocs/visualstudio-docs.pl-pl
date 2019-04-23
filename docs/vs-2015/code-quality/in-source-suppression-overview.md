@@ -12,19 +12,19 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b7f0b3ef2b680dbe4675ef6e8875ef30a1f210bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 046ae576880c6749c6bb033f66124c0085dfab16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793667"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057163"
 ---
 # <a name="in-source-suppression-overview"></a>Ograniczanie w kodzie źródłowym - Omówienie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pomijanie w źródła jest możliwość pominąć lub zignorować naruszeń analizy kodu w kodzie zarządzanym przez dodanie **SuppressMessage** atrybutu segmenty kodu, które powodują naruszenia. **SuppressMessage** atrybutu jest atrybut conditional, który jest dostępny w metadanych IL zestawu kodu zarządzanego, tylko wtedy, gdy zdefiniowano symbol kompilacji CODE_ANALYSIS w czasie kompilacji.  
   
- W języku C + +/ CLI, użyj makra CA_SUPPRESS_MESSAGE lub CA_GLOBAL_SUPPRESS_MESSAGE w pliku nagłówkowym dodać atrybut.  
+ W C++sposób niezamierzony, użyj makra CA_SUPPRESS_MESSAGE lub CA_GLOBAL_SUPPRESS_MESSAGE w pliku nagłówkowym dodać atrybut.  
   
  Nie należy używać w źródłowej pominięcia kompilacji do wydania aby zapobiec przypadkowo wysyłania metadanych pomijanie w źródła. Ze względu na koszt przetwarzania pomijanie-source wydajność aplikacji może być znacznie umieszczając metadanych pomijanie w źródła.  
   
@@ -54,27 +54,27 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
  Gdzie:  
   
--   **Reguła kategorii** -kategorii, w którym zdefiniowano reguły. Aby uzyskać więcej informacji na temat kategorie reguł analizy kodu, zobacz [analiza kodu dla zarządzanego kodu ostrzeżenia](../code-quality/code-analysis-for-managed-code-warnings.md).  
+- **Reguła kategorii** -kategorii, w którym zdefiniowano reguły. Aby uzyskać więcej informacji na temat kategorie reguł analizy kodu, zobacz [analiza kodu dla zarządzanego kodu ostrzeżenia](../code-quality/code-analysis-for-managed-code-warnings.md).  
   
--   **Identyfikator reguły** — identyfikator reguły. Obsługa obejmuje zarówno krótko- i nazwę dla identyfikatora reguły. Krótka nazwa jest CAXXXX; długa nazwa jest CAXXXX:FriendlyTypeName.  
+- **Identyfikator reguły** — identyfikator reguły. Obsługa obejmuje zarówno krótko- i nazwę dla identyfikatora reguły. Krótka nazwa jest CAXXXX; długa nazwa jest CAXXXX:FriendlyTypeName.  
   
--   **Uzasadnienie** — tekst, który umożliwia dokumentowanie przyczyny pomijanie komunikatu.  
+- **Uzasadnienie** — tekst, który umożliwia dokumentowanie przyczyny pomijanie komunikatu.  
   
--   **Identyfikator komunikatu** — Unikatowy identyfikator problemu dla każdego komunikatu.  
+- **Identyfikator komunikatu** — Unikatowy identyfikator problemu dla każdego komunikatu.  
   
--   **Zakres** — element docelowy, na którym pomijane jest ostrzeżenie. Jeśli element docelowy nie zostanie określony, ustawiono element docelowy atrybutu. Zakresy obsługiwane są następujące:  
+- **Zakres** — element docelowy, na którym pomijane jest ostrzeżenie. Jeśli element docelowy nie zostanie określony, ustawiono element docelowy atrybutu. Zakresy obsługiwane są następujące:  
   
-    -   Moduł  
+    - Moduł  
   
-    -   Przestrzeń nazw  
+    - Przestrzeń nazw  
   
-    -   Zasób  
+    - Zasób  
   
-    -   Typ  
+    - Typ  
   
-    -   Element członkowski  
+    - Element członkowski  
   
--   **Docelowy** — identyfikator, który służy do określania docelowych, na którym pomijane jest ostrzeżenie. Musi zawierać element w pełni kwalifikowaną nazwę.  
+- **Docelowy** — identyfikator, który służy do określania docelowych, na którym pomijane jest ostrzeżenie. Musi zawierać element w pełni kwalifikowaną nazwę.  
   
 ## <a name="suppressmessage-usage"></a>Użycie SuppressMessage  
  Ostrzeżenia analizy kodu są pomijane w poziomie, do którego wystąpienia **SuppressMessage** atrybut jest stosowany. Celem tego jest ściśle Połącz informacji pomijanie w kodzie realizowana naruszenia.  

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb764b453caa0a6230929fdc5fd002eb56550d67
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 62af216c2c748aafd5128a861fec5033f0ba5d37
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609085"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051989"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Instrukcje: Rejestrowanie biblioteki przy użyciu Menedżera obiektów
 Symbole, przeglądania narzędzia, takie jak **Widok klas**, **przeglądarki obiektów**, **przeglądarce wywołań** i **wyniki wyszukiwania symboli**, można wyświetlać symbole w projekcie lub w składnikach zewnętrznych. Symbole obejmują przestrzenie nazw, klasy, interfejsy, metod i inne elementy języka. Biblioteki śledzenie tych symboli i udostępnić je do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów, która wypełnia narzędzia z danymi.
@@ -38,7 +38,7 @@ Symbole, przeglądania narzędzia, takie jak **Widok klas**, **przeglądarki obi
 
 ### <a name="to-register-a-library-with-the-object-manager"></a>Aby zarejestrować bibliotekę z Menedżera obiektów
 
-1.  Utwórz bibliotekę.
+1. Utwórz bibliotekę.
 
     ```vb
     Private m_CallBrowserLibrary As CallBrowser.Library = Nothing
@@ -55,7 +55,7 @@ Symbole, przeglądania narzędzia, takie jak **Widok klas**, **przeglądarki obi
 
     ```
 
-2.  Uzyskaj odwołanie do obiektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> wpisz i wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> metody.
+2. Uzyskaj odwołanie do obiektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> wpisz i wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> metody.
 
     ```vb
     Private Sub RegisterLibrary()
@@ -111,7 +111,7 @@ Symbole, przeglądania narzędzia, takie jak **Widok klas**, **przeglądarki obi
 
 ### <a name="to-unregister-a-library-with-the-object-manager"></a>Aby wyrejestrować bibliotekę z Menedżera obiektów
 
-1.  Uzyskaj odwołanie do obiektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> wpisz i wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> metody.
+1. Uzyskaj odwołanie do obiektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> wpisz i wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> metody.
 
     ```vb
     Private Sub UnregisterLibrary()

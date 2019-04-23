@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cdc2a15db53c8cddb815342a7b6d291c503cdd7f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f65f6de7cfb336eb001de47fb6562b7200391419
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620346"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050104"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>Instrukcje: Wypełnianie formantów ListObject danymi
   Powiązanie danych można użyć jako sposób, aby szybko dodać dane do dokumentu. Po powiązaniu danych na obiekt listy, możesz odłączyć na obiekt listy, wyświetla dane, ale nie jest już powiązany ze źródłem danych.
@@ -33,24 +33,24 @@ ms.locfileid: "56620346"
 
 ### <a name="to-bind-data-to-a-listobject-control"></a>Aby powiązać dane do formantu ListObject
 
-1.  Utwórz <xref:System.Data.DataTable> na poziomie klasy.
+1. Utwórz <xref:System.Data.DataTable> na poziomie klasy.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#20)]
      [!code-vb[Trin_VstcoreHostControlsExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#20)]
 
-2.  Dodawanie przykładowe kolumny i dane w `Startup` program obsługi zdarzeń `Sheet1` klasy (w projekcie poziomie dokumentu) lub `ThisAddIn` klasy (w projekcie dodatku poziomu aplikacji).
+2. Dodawanie przykładowe kolumny i dane w `Startup` program obsługi zdarzeń `Sheet1` klasy (w projekcie poziomie dokumentu) lub `ThisAddIn` klasy (w projekcie dodatku poziomu aplikacji).
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#21)]
      [!code-vb[Trin_VstcoreHostControlsExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#21)]
 
-3.  Wywołaj <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> metody i przekazać w nazwach kolumn w kolejności, powinny one zostać wyświetlone. Kolejność kolumn w obiekcie listy mogą różnić się od kolejności, w jakiej występują w <xref:System.Data.DataTable>.
+3. Wywołaj <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> metody i przekazać w nazwach kolumn w kolejności, powinny one zostać wyświetlone. Kolejność kolumn w obiekcie listy mogą różnić się od kolejności, w jakiej występują w <xref:System.Data.DataTable>.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#22](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#22)]
      [!code-vb[Trin_VstcoreHostControlsExcel#22](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#22)]
 
 ### <a name="to-disconnect-the-listobject-control-from-the-data-source"></a>Aby odłączyć kontrolki ListObject ze źródła danych
 
-1.  Wywołaj <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> metody `List1`.
+1. Wywołaj <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> metody `List1`.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#23](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#23)]
      [!code-vb[Trin_VstcoreHostControlsExcel#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#23)]

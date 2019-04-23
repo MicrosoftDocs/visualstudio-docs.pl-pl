@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 982a2387ae0e21304fb9726fabdf05554c982fd5
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 31bcd41dc1a6fd7f314c7d701f52c3728dd2ee8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54862945"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040457"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Zabezpieczenia dla rozwiązań SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] obejmuje następujące funkcje, aby pomóc zwiększyć bezpieczeństwo aplikacji programu SharePoint.
@@ -46,42 +46,42 @@ ms.locfileid: "54862945"
 ## <a name="sharepoint-permissions-considerations"></a>Uwagi dotyczące uprawnień programu SharePoint
  Tworzenie rozwiązań programu SharePoint, musi mieć wystarczające uprawnienia do uruchamiania i debugowania rozwiązań programu SharePoint. Przed przetestowaniem rozwiązania programu SharePoint, wykonaj następujące kroki, aby upewnić się, że masz odpowiednie uprawnienia:
 
-1.  Dodaj konto użytkownika z uprawnieniami administracyjnymi w systemie.
+1. Dodaj konto użytkownika z uprawnieniami administracyjnymi w systemie.
 
-2.  Dodaj konto użytkownika jako administratora farmy programu SharePoint server.
+2. Dodaj konto użytkownika jako administratora farmy programu SharePoint server.
 
-    1.  W administracji centralnej programu SharePoint 2010, wybrać **Zarządzaj grupą administratorów farmy** łącza.
+    1. W administracji centralnej programu SharePoint 2010, wybrać **Zarządzaj grupą administratorów farmy** łącza.
 
-    2.  Na **administratorzy farmy** wybierz **New** opcji menu
+    2. Na **administratorzy farmy** wybierz **New** opcji menu
 
-3.  Dodaj konto użytkownika do grupie WSS_ADMIN_WPG uprawnienia.
+3. Dodaj konto użytkownika do grupie WSS_ADMIN_WPG uprawnienia.
 
 ## <a name="additional-security-resources"></a>Zasoby dodatkowe zabezpieczenia
  Aby uzyskać więcej informacji na temat problemów z zabezpieczeniami zobacz następujące tematy.
 
 ### <a name="visual-studio-security"></a>Zabezpieczenia Visual Studio
 
--   [Zabezpieczenia i uprawnienia użytkownika](http://go.microsoft.com/fwlink/?LinkId=177503)
+- [Zabezpieczenia i uprawnienia użytkownika](http://go.microsoft.com/fwlink/?LinkId=177503)
 
--   [Zabezpieczenia w kodzie natywnym i kodzie .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177504)
+- [Zabezpieczenia w kodzie natywnym i kodzie .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177504)
 
--   [Zabezpieczenia w programie .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177502)
+- [Zabezpieczenia w programie .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177502)
 
 ### <a name="sharepoint-security"></a>Zabezpieczenia programu SharePoint
 
--   [Administracja programu SharePoint Foundation i zabezpieczenia](http://go.microsoft.com/fwlink/?LinkId=177501)
+- [Administracja programu SharePoint Foundation i zabezpieczenia](http://go.microsoft.com/fwlink/?LinkId=177501)
 
--   [Centrum zasobów zabezpieczeń programu SharePoint](http://go.microsoft.com/fwlink/?LinkId=177498)
+- [Centrum zasobów zabezpieczeń programu SharePoint](http://go.microsoft.com/fwlink/?LinkId=177498)
 
--   [Zabezpieczanie składników Web Part w SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177511)
+- [Zabezpieczanie składników Web Part w SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177511)
 
--   [Zwiększenie zabezpieczenia aplikacji sieci Web: Zagrożenia i przeciwdziałanie](http://go.microsoft.com/fwlink/?LinkID=140080)
+- [Zwiększenie zabezpieczenia aplikacji sieci Web: Zagrożenia i przeciwdziałanie](http://go.microsoft.com/fwlink/?LinkID=140080)
 
 ### <a name="general-security"></a>Zabezpieczenia ogólne
 
--   [Cykl projektowania zabezpieczeń sieci MSDN](http://go.microsoft.com/fwlink/?LinkID=147149)
+- [Cykl projektowania zabezpieczeń sieci MSDN](http://go.microsoft.com/fwlink/?LinkID=147149)
 
--   [Tworzenie aplikacji ASP.NET bezpiecznego: Uwierzytelniania, autoryzacji i bezpiecznej komunikacji](http://go.microsoft.com/fwlink/?LinkId=177494)
+- [Tworzenie aplikacji ASP.NET bezpiecznego: Uwierzytelniania, autoryzacji i bezpiecznej komunikacji](http://go.microsoft.com/fwlink/?LinkId=177494)
 
 ## <a name="see-also"></a>Zobacz także
 

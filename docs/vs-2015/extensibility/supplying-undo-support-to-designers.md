@@ -10,12 +10,12 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e0ee2059c6a2bc1c5456cc949cf05b921c874cd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9118cbe3f4a8dcee443eca8b3fa5fb9a7664fd41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755273"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049311"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Dostarczanie obsługi polecenia Cofnij do projektantów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ Projektanci, takie jak edytory, zazwyczaj należy do obsługi operacji cofania, 
 ## <a name="obtaining-undo-support-automatically"></a>Uzyskiwanie Obsługa polecenia Cofnij automatycznie  
  Projektanta utworzone w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] obsługuje automatyczne i pełne cofania if, Projektant:  
   
--   Sprawia, że użycie <xref:System.Windows.Forms.Control> na podstawie klasy interfejs użytkownika.  
+- Sprawia, że użycie <xref:System.Windows.Forms.Control> na podstawie klasy interfejs użytkownika.  
   
--   Stosuje systemu podczas analizowania i generowanie kodu na podstawie CodeDOM standardowego dla generowania kodu i trwałości.  
+- Stosuje systemu podczas analizowania i generowanie kodu na podstawie CodeDOM standardowego dla generowania kodu i trwałości.  
   
      Aby uzyskać więcej informacji na temat pracy z obsługą programu Visual Studio CodeDOM, zobacz [dynamiczne generowanie kodu źródłowego i kompilacja](http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
   
@@ -80,15 +80,15 @@ Projektanci, takie jak edytory, zazwyczaj należy do obsługi operacji cofania, 
   
 - To <xref:System.IServiceProvider> klasy należy podać następujące usługi:  
   
-  -   <xref:System.ComponentModel.Design.IDesignerHost>.  
+  - <xref:System.ComponentModel.Design.IDesignerHost>.  
   
-  -   <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+  - <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
        Za pomocą projektantów [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] serializacji CodeDOM może wybrać <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> dołączonym [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] jako jego implementacja obiektu <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>.  
   
        W tym przypadku <xref:System.IServiceProvider> klasy udostępniane <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> konstruktora powinna zwrócić implementację tego obiektu <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> klasy.  
   
-  -   <xref:System.ComponentModel.Design.IComponentChangeService>  
+  - <xref:System.ComponentModel.Design.IComponentChangeService>  
   
        Projektanci przy użyciu domyślnego <xref:System.ComponentModel.Design.DesignSurface> dostarczone przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] hostów projektu jest gwarantowane mają domyślną implementację elementu <xref:System.ComponentModel.Design.IComponentChangeService> klasy.  
   

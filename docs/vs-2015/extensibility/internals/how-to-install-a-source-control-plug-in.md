@@ -11,23 +11,23 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c9c93c83a6385ad45b3f402867b7f7e734447f98
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fe03499200d3528a1aed286550191fd9dfcc1451
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777410"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039845"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Instrukcje: Instalowanie wtyczki kontroli kodu źródłowego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:  
   
-1.  Utworzyć bibliotekę DLL przy użyciu funkcji zdefiniowanych w sekcji odwołanie interfejsu API wtyczki kontroli źródła w niniejszej dokumentacji.  
+1. Utworzyć bibliotekę DLL przy użyciu funkcji zdefiniowanych w sekcji odwołanie interfejsu API wtyczki kontroli źródła w niniejszej dokumentacji.  
   
-2.  Zaimplementuj funkcje zdefiniowane przez interfejs API wtyczki kontroli źródła. Gdy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] wywołań, Udostępnij interfejsy i okien dialogowych z wtyczki.  
+2. Zaimplementuj funkcje zdefiniowane przez interfejs API wtyczki kontroli źródła. Gdy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] wywołań, Udostępnij interfejsy i okien dialogowych z wtyczki.  
   
-3.  Zarejestruj plik DLL, wprowadzając wpisy rejestru odpowiednie.  
+3. Zarejestruj plik DLL, wprowadzając wpisy rejestru odpowiednie.  
   
 ## <a name="integration-with-visual-studio"></a>Integracja z programem Visual Studio  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] obsługuje źródła wtyczek kontroli, które są zgodne z interfejsem API wtyczki kontroli źródła.  
@@ -37,7 +37,7 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
   
 ##### <a name="to-register-the-source-control-plug-in-dll"></a>Aby zarejestrować biblioteki DLL dodatku plug-in kontroli źródła  
   
-1.  Dodaj dwa wpisy w kluczu HKEY_LOCAL_MACHINE w podkluczu oprogramowania określający swoje podklucz nazwa firmy następuje podklucz nazwa Twojego produktu. Wzorzec jest HKEY_LOCAL_MACHINE\SOFTWARE\\ *[nazwa firmy]*\\ *[nazwa produktu]*\\ *[entry]* = wartość. Dwa wpisy zawsze są nazywane SCCServerName i SCCServerPath. Każdy jest regularne ciągu.  
+1. Dodaj dwa wpisy w kluczu HKEY_LOCAL_MACHINE w podkluczu oprogramowania określający swoje podklucz nazwa firmy następuje podklucz nazwa Twojego produktu. Wzorzec jest HKEY_LOCAL_MACHINE\SOFTWARE\\ *[nazwa firmy]*\\ *[nazwa produktu]*\\ *[entry]* = wartość. Dwa wpisy zawsze są nazywane SCCServerName i SCCServerPath. Każdy jest regularne ciągu.  
   
      Na przykład jeśli nazwą firmy jest firma Microsoft i produktu kontroli źródła jest o nazwie SourceSafe, ta ścieżka rejestru wyniósłby HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe. W tym podkluczu pierwszy wpis SCCServerName, jest ciąg czytelny dla użytkownika nazwy produktu. Drugi wpis SCCServerPath, jest pełna ścieżka do źródła kontrolować IDE powinny łączyć się z biblioteki DLL dodatku plug-in. Poniżej przedstawiono przykładowe wpisy rejestru:  
   
@@ -49,13 +49,13 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
     > [!NOTE]
     >  SCCServerPath jest pełną ścieżką do we wtyczce programu SourceSafe. Wtyczka do kontroli źródła użyje różne nazwy firmy i produkt, ale tej samej ścieżki wpisu rejestru.  
   
-2.  Następujące wpisy rejestru opcjonalnie może służyć do modyfikowania zachowania wtyczka do kontroli źródła. Te wpisy go w tym samym podkluczu SccServerName oraz SccServerPath.  
+2. Następujące wpisy rejestru opcjonalnie może służyć do modyfikowania zachowania wtyczka do kontroli źródła. Te wpisy go w tym samym podkluczu SccServerName oraz SccServerPath.  
   
-    -   Wpis HideInVisualStudioregistry może być używany, jeśli nie chcesz źródła kontrolki plug w celu pojawiają się na liście wybór wtyczki [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Ten wpis wpłynie również na automatyczne przełączanie do wtyczka do kontroli źródła. Jedno możliwe użycie dla tego wpisu jest, jeśli podasz pakiet do kontroli źródła, który zastępuje wtyczka do kontroli źródła, ale aby ułatwić użytkownikowi migrację za pomocą wtyczka do kontroli źródła do pakietu kontroli źródła. Po zainstalowaniu pakietu kontroli źródła, ustawia ten wpis rejestru i ukrywa dodatku typu plug-in.  
+    - Wpis HideInVisualStudioregistry może być używany, jeśli nie chcesz źródła kontrolki plug w celu pojawiają się na liście wybór wtyczki [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Ten wpis wpłynie również na automatyczne przełączanie do wtyczka do kontroli źródła. Jedno możliwe użycie dla tego wpisu jest, jeśli podasz pakiet do kontroli źródła, który zastępuje wtyczka do kontroli źródła, ale aby ułatwić użytkownikowi migrację za pomocą wtyczka do kontroli źródła do pakietu kontroli źródła. Po zainstalowaniu pakietu kontroli źródła, ustawia ten wpis rejestru i ukrywa dodatku typu plug-in.  
   
          HideInVisualStudio jest wartość DWORD i jest ustawiona na 1, aby ukryć wtyczki lub 0, aby wyświetlić dodatek typu plug-in. Jeśli wpis rejestru nie jest wyświetlany, zachowanie domyślne jest do wyświetlenia dodatku typu plug-in.  
   
-    -   Wpis rejestru DisableSccManager, umożliwia wyłączenie lub ukrycie **Uruchom \<serwera kontroli źródła >** opcję menu, który zwykle pojawia się w obszarze **pliku**  ->   **Kontrola źródła** podmenu. Wybranie tego menu opcji wywołania [SccRunScc](../../extensibility/sccrunscc-function.md) funkcji. Wtyczka do kontroli źródła może nie obsługuje programu zewnętrznego i dlatego może być wyłączenie lub ukrycie nawet **Uruchom** opcji menu.  
+    - Wpis rejestru DisableSccManager, umożliwia wyłączenie lub ukrycie **Uruchom \<serwera kontroli źródła >** opcję menu, który zwykle pojawia się w obszarze **pliku**  ->   **Kontrola źródła** podmenu. Wybranie tego menu opcji wywołania [SccRunScc](../../extensibility/sccrunscc-function.md) funkcji. Wtyczka do kontroli źródła może nie obsługuje programu zewnętrznego i dlatego może być wyłączenie lub ukrycie nawet **Uruchom** opcji menu.  
   
          DisableSccManager jest wartość DWORD jest ustawiona na 0 Aby włączyć **Uruchom \<serwera kontroli źródła >** ustawiona na 1, aby wyłączyć opcję menu, a wartość 2 Ukryj opcję menu opcji menu. Jeśli nie ma tego wpisu rejestru, zachowanie domyślne jest do wyświetlenia opcji menu.  
   
@@ -64,7 +64,7 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
     |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\HideInVisualStudio|1|  
     |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\DisableSccManager|1|  
   
-3.  Dodaj podklucz, SourceCodeControlProvider, w kluczu HKEY_LOCAL_MACHINE w podkluczu oprogramowania.  
+3. Dodaj podklucz, SourceCodeControlProvider, w kluczu HKEY_LOCAL_MACHINE w podkluczu oprogramowania.  
   
      W podkluczu ten wpis rejestru ProviderRegKey ustawiono na ciąg, który reprezentuje podklucza, który można umieścić w rejestrze, w kroku 1. Wzorzec jest HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey = oprogramowania\\ *[nazwa firmy]*\\ *[nazwa produktu]*.  
   
@@ -77,7 +77,7 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
     > [!NOTE]
     >  Wtyczka do kontroli źródła będzie używać tego samego podklucz i nazwy wpisów, ale wartość będzie inny.  
   
-4.  Utwórz podklucz o nazwie InstalledSCCProviders w podkluczu SourceCodeControlProvider, a następnie umieścić jednego wpisu tego podklucza.  
+4. Utwórz podklucz o nazwie InstalledSCCProviders w podkluczu SourceCodeControlProvider, a następnie umieścić jednego wpisu tego podklucza.  
   
      Nazwa tego wpisu jest czytelny dla użytkownika nazwa dostawcy, (taka sama jak wartość określona dla wpisu SCCServerName), a wartość jest jeszcze raz podklucza, który został utworzony w kroku 1. Wzorzec jest HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\ *[Nazwa wyświetlana]* = oprogramowania\\ *[nazwa firmy]* \\ *[nazwa produktu]*.  
   

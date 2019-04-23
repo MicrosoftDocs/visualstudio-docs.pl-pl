@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a2cb9757c0a9683a00768d8947dfe33749e4bb9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 7f8f1ad24660401d575af2724b788387fd546af8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58147946"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064921"
 ---
 # <a name="iscriptentrygetbody"></a>IScriptEntry::GetBody
 Zwraca tekst, który odnosi się do treści `IScriptEntry` blok skryptu, bloku funkcji lub scriptlet.  
@@ -39,11 +39,11 @@ HRESULT GetBody(
  `pbstr`  
  [out] Tekst, który znajduje się w treści w jednej z następujących czynności:  
   
--   `IScriptEntry` Blok skryptu  
+- `IScriptEntry` Blok skryptu  
   
--   `IScriptEntry` Funkcji w bloku funkcji  
+- `IScriptEntry` Funkcji w bloku funkcji  
   
--   `IScriptEntry` Scriptlet obsługi zdarzeń  
+- `IScriptEntry` Scriptlet obsługi zdarzeń  
   
 ## <a name="return-value"></a>Wartość zwracana  
  `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  

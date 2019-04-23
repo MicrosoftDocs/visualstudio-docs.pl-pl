@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00bebd0a08acb9eeab369f5aa80b94e6805277b0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a792bc7b0c64b7e509e6d426c8b4f33c9f816276
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599002"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062051"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Powiązane usługi i interfejsy (pakiet VSPackage kontroli kodu źródłowego)
 W tej sekcji przedstawiono wszystkie interfejsy dotyczące pakietu VSPackage kontroli źródła [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Kontrola źródła pakietu VSPackage implementuje niektóre z tych interfejsów i używa innych użytkowników do wykonywania zadań kontroli źródła.
@@ -30,11 +30,11 @@ W tej sekcji przedstawiono wszystkie interfejsy dotyczące pakietu VSPackage kon
 
  Interfejsy są:
 
--   Wymagane: Odpowiednie jednostki (projektu kontroli źródła pakietu VSPackage, wycinka kontroli źródła,) musi implementować interfejs.
+- Wymagane: Odpowiednie jednostki (projektu kontroli źródła pakietu VSPackage, wycinka kontroli źródła,) musi implementować interfejs.
 
--   Zalecane: Jednostka powinna implementować ten interfejs; w przeciwnym razie funkcji kontroli źródła może być ograniczona.
+- Zalecane: Jednostka powinna implementować ten interfejs; w przeciwnym razie funkcji kontroli źródła może być ograniczona.
 
--   Opcjonalnie: jednostki można zaimplementować ten interfejs umożliwia korzystanie z bogatszego zestawu funkcji.
+- Opcjonalnie: jednostki można zaimplementować ten interfejs umożliwia korzystanie z bogatszego zestawu funkcji.
 
 | Interface | Cel | Zaimplementowane przez | Implementowanie? |
 | - | - |--------------------------|-------------|

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 387ec5814e0b5a2a8c2169198a3ceebad47e10d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c2d06098d1643f4c9b5e64206cdf94362a2c97b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599483"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040149"
 ---
 # <a name="ribbon-overview"></a>Wstążka — omówienie
   Wstążka jest sposób organizowania powiązane polecenia, aby były one łatwiej znaleźć. Polecenia są wyświetlane jako formanty na Wstążce. Formanty są zorganizowane w *grup* wzdłuż poziomy pasek do górnej krawędzi okna aplikacji. Powiązane grupy są zorganizowane na kartach.
@@ -93,12 +93,12 @@ ms.locfileid: "56599483"
 ## <a name="add-multiple-ribbon-items-to-a-project"></a>Dodawanie wielu elementów wstążki do projektu
  Możesz dodać więcej niż jeden element wstążki do pojedynczego projektu. Jest to przydatne, jeśli chcesz wykonać jedną z poniższych czynności:
 
--   Tworzenie Wstążki programu Outlook *inspektorzy*. Aby uzyskać więcej informacji, zobacz [Dostosuj Wstążkę dla programu Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+- Tworzenie Wstążki programu Outlook *inspektorzy*. Aby uzyskać więcej informacji, zobacz [Dostosuj Wstążkę dla programu Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
     > [!NOTE]
     >  Inspektor jest oknem, która zostanie otwarta, gdy użytkownicy wykonają pewnych zadań, takich jak tworzenie wiadomości e-mail.
 
--   Wybierz, które wstążki do wyświetlenia w czasie wykonywania.
+- Wybierz, które wstążki do wyświetlenia w czasie wykonywania.
 
 ### <a name="select-which-ribbons-to-display-at-runtime"></a>Wybierz, które taśmy do wyświetlenia w czasie wykonywania
  Projekt może zawierać więcej niż jeden wstążki, można wybrać, które wstążki do wyświetlenia w czasie wykonywania.

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1bf4f23ffc6d06313c39f0ffe25b9f1a6ffe595
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5958eb6fb8fd14dd510fa87d900efa76cb6f6a87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601039"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040719"
 ---
 # <a name="ribbon-object-model-overview"></a>Model obiektu Wstążka ― omówienie
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Udostępnia model silnie typizowany obiekt, który służy do pobierania i ustawiania właściwości formantów wstążki w czasie wykonywania. Na przykład użytkownik może dynamicznie wypełnianie kontrolek menu lub wyświetlania i ukrywania kontrolek kontekstowe. Na Wstążce, ale tylko w przypadku, przed załadowaniem wstążki według aplikacji pakietu Office, można dodać karty, grupy i formanty. Aby uzyskać informacje, zobacz [Ustaw właściwości, które stają się tylko do odczytu](#SettingReadOnlyProperties).
@@ -26,12 +26,12 @@ ms.locfileid: "56601039"
 
  Ten model obiektu Wstążka składa się przede wszystkim [wstążki klasy](#RibbonClass), [wstążki zdarzenia](#RibbonEvents), i [klasy kontrolek wstążki](#RibbonControlClasses).
 
-##  <a name="RibbonClass"></a> Klasa wstążki
+## <a name="RibbonClass"></a> Klasa wstążki
  Po dodaniu nowego **Wstążka (Projektant graficzny)** elementu do projektu, program Visual Studio dodaje **wstążki** klasy do projektu. **Wstążki** klasa dziedziczy <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> klasy.
 
  Ta klasa jest wyświetlany jako częściowe klasy, który jest podzielony między plik kodu Wstążki i plik kodu projektanta wstążki.
 
-##  <a name="RibbonEvents"></a> Zdarzeń wstążki
+## <a name="RibbonEvents"></a> Zdarzeń wstążki
  **Wstążki** klasa zawiera trzy następujące zdarzenia:
 
 |Zdarzenie|Opis|
@@ -40,7 +40,7 @@ ms.locfileid: "56601039"
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Włącza pamięć podręczną obrazów w dostosowaniu na Wstążce, po załadowaniu wstążki. Możesz uzyskać nieznaczne są bardziej wydajne, jeśli piszesz kod w pamięci podręcznej obrazów wstążki w tej obsługi zdarzeń. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Wywoływane, gdy zamyka wystąpienie wstążki.|
 
-##  <a name="RibbonControlClasses"></a> Formanty Wstążki
+## <a name="RibbonControlClasses"></a> Formanty Wstążki
  <xref:Microsoft.Office.Tools.Ribbon> Przestrzeń nazw zawiera typ dla każdego formantu, który zostanie wyświetlony w **formanty wstążki Office** grupy **przybornika**.
 
  W poniższej tabeli przedstawiono typ dla każdego `Ribbon` kontroli. Aby uzyskać opis każdego formantu, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md).
@@ -89,7 +89,7 @@ ms.locfileid: "56601039"
 |Pobieranie grup <xref:Microsoft.Office.Tools.Ribbon.RibbonTab>.|Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A> właściwości.|
 |Określ liczbę wierszy i kolumn, które pojawiają się w <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> i <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> właściwości.|
 
-##  <a name="SettingReadOnlyProperties"></a> Ustaw właściwości, które stają się tylko do odczytu
+## <a name="SettingReadOnlyProperties"></a> Ustaw właściwości, które stają się tylko do odczytu
  Niektóre właściwości można ustawić tylko przed ładuje wstążki. Istnieją trzy miejsca, aby ustawić te właściwości:
 
 - W programie Visual Studio **właściwości** okna.
@@ -126,7 +126,7 @@ ms.locfileid: "56601039"
  [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
  [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]
 
-###  <a name="ReadOnlyProperties"></a> Właściwości, które stają się tylko do odczytu
+### <a name="ReadOnlyProperties"></a> Właściwości, które stają się tylko do odczytu
  W poniższej tabeli przedstawiono właściwości, które można ustawić tylko przed ładuje wstążki.
 
 > [!NOTE]

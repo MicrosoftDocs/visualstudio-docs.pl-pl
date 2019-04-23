@@ -8,30 +8,30 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad05083fa8cb1310e9be0b0dabb8333cb840a466
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 46ce6f92acb7ed6e92af07729a14720d3a8421a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941494"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043254"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Samouczek 1: Tworzenie przeglądarki obrazów
 
 W tym samouczku kompilujesz program, który ładuje obraz z pliku i wyświetla go w oknie. Dowiesz się, jak używać **Windows Forms Designer** przeciągać formanty, takie jak przyciski i pola obrazu w formularzu, ustawiać ich właściwości i używać kontenerów, aby sprawnie zmieniać rozmiar formularza. Można również rozpocząć pisanie kodu. Dowiesz się, jak:
 
--   Utwórz nowy projekt.
+- Utwórz nowy projekt.
 
--   Testuj (Debuguj) aplikację.
+- Testuj (Debuguj) aplikację.
 
--   Dodaj podstawowe formanty, takie jak pola wyboru i przyciski do formularza.
+- Dodaj podstawowe formanty, takie jak pola wyboru i przyciski do formularza.
 
--   Położenie formantów w formularzu za pomocą układów.
+- Położenie formantów w formularzu za pomocą układów.
 
--   Dodaj **Otwórz plik** i **kolor** do formularza przy użyciu okna dialogowego.
+- Dodaj **Otwórz plik** i **kolor** do formularza przy użyciu okna dialogowego.
 
--   Pisz kod, używając funkcji IntelliSense i fragmentów kodu.
+- Pisz kod, używając funkcji IntelliSense i fragmentów kodu.
 
--   Opisz metody obsługi zdarzeń.
+- Opisz metody obsługi zdarzeń.
 
 Po zakończeniu program będzie wyglądać jak na poniższym obrazie:
 
@@ -54,14 +54,14 @@ Aby pobrać pełną wersję przykładu, zobacz [przykładowy samouczek podglądu
 
 |Tytuł|Opis|
 |-----------|-----------------|
-|[Krok 1: Utwórz projekt aplikacji Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Rozpocznij od utworzenia projektu aplikacji Windows Forms.|
-|[Krok 2: Uruchom program](../ide/step-2-run-your-program.md)|Uruchom program aplikacji Windows Forms, który został utworzony w poprzednim kroku.|
-|[Krok 3: Ustawianie właściwości formularza](../ide/step-3-set-your-form-properties.md)|Zmień wygląd formularz za pomocą **właściwości** okna.|
-|[Krok 4: Określić układ formularza z formantem TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|Dodaj `TableLayoutPanel` formantu do formularza.|
-|[Krok 5: Dodawanie formantów do formularza](../ide/step-5-add-controls-to-your-form.md)|Dodaj formanty, takie jak `PictureBox` kontroli i `CheckBox` formantu do formularza. Dodaj do formularza przyciski.|
-|[Krok 6: Nazw kontrolkom przycisków](../ide/step-6-name-your-button-controls.md)|Zmień nazwy przycisków na nieco bardziej opisowe.|
-|[Krok 7: Dodawanie składników okna dialogowego do formularza](../ide/step-7-add-dialog-components-to-your-form.md)|Dodaj `OpenFileDialog` składnika i `ColorDialog` składnika do formularza.|
-|[Krok 8: Pisanie kodu dla programu obsługi zdarzeń przycisku obrazu](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Pisz kod, używając funkcji IntelliSense.|
-|[Krok 9: Przejrzyj, komentowanie i testowanie kodu](../ide/step-9-review-comment-and-test-your-code.md)|Przejrzyj i przetestuj swój kod. W razie potrzeby dodaj komentarze.|
-|[Krok 10: Pisanie kodu dla dodatkowych przycisków i pola wyboru](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Napisz kod, aby inne przyciski i pole wyboru będą działać przy użyciu technologii IntelliSense.|
-|[Krok 11: Uruchamianie programu i próbowanie innych funkcji](../ide/step-11-run-your-program-and-try-other-features.md)|Uruchom program i ustawić kolor tła. Spróbuj innych funkcji, takich jak zmienianie kolorów, czcionek i obramowania.|
+|[Krok 1. Utwórz projekt aplikacji Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Rozpocznij od utworzenia projektu aplikacji Windows Forms.|
+|[Krok 2. Uruchom program](../ide/step-2-run-your-program.md)|Uruchom program aplikacji Windows Forms, który został utworzony w poprzednim kroku.|
+|[Krok 3. Ustawianie właściwości formularza](../ide/step-3-set-your-form-properties.md)|Zmień wygląd formularz za pomocą **właściwości** okna.|
+|[Krok 4. Określić układ formularza z formantem TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|Dodaj `TableLayoutPanel` formantu do formularza.|
+|[Krok 5. Dodawanie formantów do formularza](../ide/step-5-add-controls-to-your-form.md)|Dodaj formanty, takie jak `PictureBox` kontroli i `CheckBox` formantu do formularza. Dodaj do formularza przyciski.|
+|[Krok 6. Nazw kontrolkom przycisków](../ide/step-6-name-your-button-controls.md)|Zmień nazwy przycisków na nieco bardziej opisowe.|
+|[Krok 7. Dodawanie składników okna dialogowego do formularza](../ide/step-7-add-dialog-components-to-your-form.md)|Dodaj `OpenFileDialog` składnika i `ColorDialog` składnika do formularza.|
+|[Krok 8. Pisanie kodu dla programu obsługi zdarzeń przycisku obrazu](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Pisz kod, używając funkcji IntelliSense.|
+|[Krok 9. Przejrzyj, komentowanie i testowanie kodu](../ide/step-9-review-comment-and-test-your-code.md)|Przejrzyj i przetestuj swój kod. W razie potrzeby dodaj komentarze.|
+|[Krok 10. Pisanie kodu dla dodatkowych przycisków i pola wyboru](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Napisz kod, aby inne przyciski i pole wyboru będą działać przy użyciu technologii IntelliSense.|
+|[Krok 11. Uruchamianie programu i próbowanie innych funkcji](../ide/step-11-run-your-program-and-try-other-features.md)|Uruchom program i ustawić kolor tła. Spróbuj innych funkcji, takich jak zmienianie kolorów, czcionek i obramowania.|

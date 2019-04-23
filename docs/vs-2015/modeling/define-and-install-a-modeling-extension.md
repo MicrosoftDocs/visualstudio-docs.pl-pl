@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 415d63717e5702b0faa1b49d1d0d18ebbf773b8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cf370b4ca0e0a4d14c482c6ece46b79d2d224d34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770690"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049740"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definiowanie i instalowanie rozszerzenia modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,35 +42,35 @@ W programie Visual Studio można zdefiniować rozszerzenia do diagramów modelow
   
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Aby utworzyć projekt biblioteki klas dla polecenia menu, programy obsługi gestu lub sprawdzania poprawności  
   
-1.  Na **pliku** menu, wybierz **New**, **projektu**.  
+1. Na **pliku** menu, wybierz **New**, **projektu**.  
   
-2.  W obszarze **zainstalowane szablony**, wybierz opcję **Visual C#** lub **języka Visual Basic**, następnie wybierz **biblioteki klas**.  
+2. W obszarze **zainstalowane szablony**, wybierz opcję **Visual C#** lub **języka Visual Basic**, następnie wybierz **biblioteki klas**.  
   
 #### <a name="to-create-a-vsix-project"></a>Aby utworzyć projekt VSIX  
   
-1.  W przypadku tworzenia składnika z kodem najłatwiej najpierw Utwórz projekt biblioteki klas. Dodasz kod do tego projektu.  
+1. W przypadku tworzenia składnika z kodem najłatwiej najpierw Utwórz projekt biblioteki klas. Dodasz kod do tego projektu.  
   
-2.  Utwórz projekt VSIX.  
+2. Utwórz projekt VSIX.  
   
-    1.  W **Eksploratora rozwiązań**, w menu skrótów rozwiązania wybierz **Dodaj**, **nowy projekt**.  
+    1. W **Eksploratora rozwiązań**, w menu skrótów rozwiązania wybierz **Dodaj**, **nowy projekt**.  
   
-    2.  W obszarze **zainstalowane szablony**, rozwiń węzeł **Visual C#** lub **języka Visual Basic**, a następnie wybierz **rozszerzalności**. W środkowej kolumnie Wybierz **projekt VSIX**.  
+    2. W obszarze **zainstalowane szablony**, rozwiń węzeł **Visual C#** lub **języka Visual Basic**, a następnie wybierz **rozszerzalności**. W środkowej kolumnie Wybierz **projekt VSIX**.  
   
-3.  Ustaw projekt VSIX jako projekt startowy rozwiązania.  
+3. Ustaw projekt VSIX jako projekt startowy rozwiązania.  
   
-    -   W Eksploratorze rozwiązań w menu skrótów projektu VSIX wybierz **Ustaw jako projekt startowy**.  
+    - W Eksploratorze rozwiązań w menu skrótów projektu VSIX wybierz **Ustaw jako projekt startowy**.  
   
-4.  Otwórz **source.extension.vsixmanifest**. Plik zostanie otwarty w edytorze manifestu.  
+4. Otwórz **source.extension.vsixmanifest**. Plik zostanie otwarty w edytorze manifestu.  
   
-5.  Na **metadanych** kartę, należy ustawić pola nazwy i opisu VSIX.  
+5. Na **metadanych** kartę, należy ustawić pola nazwy i opisu VSIX.  
   
-6.  Na **Instaluj obiekty docelowe** kartę, wybrać **New** i ustaw wersje programu Visual Studio jako obiekty docelowe.  
+6. Na **Instaluj obiekty docelowe** kartę, wybrać **New** i ustaw wersje programu Visual Studio jako obiekty docelowe.  
   
-7.  Na **zasoby** kartę, Dodaj składniki do rozszerzenia programu Visual Studio.  
+7. Na **zasoby** kartę, Dodaj składniki do rozszerzenia programu Visual Studio.  
   
-    1.  Wybierz **nowe**.  
+    1. Wybierz **nowe**.  
   
-    2.  Składnik z kodem, ustaw dla tych pól w **Dodaj nowy zasób** okno dialogowe:  
+    2. Składnik z kodem, ustaw dla tych pól w **Dodaj nowy zasób** okno dialogowe:  
   
         |||  
         |-|-|  
@@ -97,36 +97,36 @@ W programie Visual Studio można zdefiniować rozszerzenia do diagramów modelow
   
 #### <a name="to-run-an-extension-during-its-development"></a>Aby uruchomić rozszerzenia podczas jego tworzenia.  
   
-1.  W [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **debugowania** menu, wybierz **Rozpocznij debugowanie**.  
+1. W [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **debugowania** menu, wybierz **Rozpocznij debugowanie**.  
   
      Kompilacje projektu, a nowe wystąpienie klasy [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] jest uruchamiany w trybie doświadczalnym.  
   
-    -   Alternatywnie można wybrać **Rozpocznij bez debugowania**. Zmniejsza to czas potrzebny do uruchomienia programu.  
+    - Alternatywnie można wybrać **Rozpocznij bez debugowania**. Zmniejsza to czas potrzebny do uruchomienia programu.  
   
-2.  Utwórz lub Otwórz projekt modelowania w doświadczalnym wystąpieniu programu Visual Studio i Utwórz lub Otwórz diagram.  
+2. Utwórz lub Otwórz projekt modelowania w doświadczalnym wystąpieniu programu Visual Studio i Utwórz lub Otwórz diagram.  
   
      Rozszerzenie zostanie obciążenia i uruchom.  
   
-3.  Jeśli użyto **Rozpocznij bez debugowania** , ale chcesz użyć debugera, wróć do głównego wystąpienia programu Visual Studio. Na **debugowania** menu, kliknij przycisk **dołączyć do procesu**. W oknie dialogowym Wybierz doświadczalnym wystąpieniu programu Visual Studio, która zawiera nazwę programu **devenv**.  
+3. Jeśli użyto **Rozpocznij bez debugowania** , ale chcesz użyć debugera, wróć do głównego wystąpienia programu Visual Studio. Na **debugowania** menu, kliknij przycisk **dołączyć do procesu**. W oknie dialogowym Wybierz doświadczalnym wystąpieniu programu Visual Studio, która zawiera nazwę programu **devenv**.  
   
-##  <a name="Installing"></a> Instalowanie i odinstalowywanie rozszerzenia  
+## <a name="Installing"></a> Instalowanie i odinstalowywanie rozszerzenia  
  Wykonaj poniższe kroki, aby uruchomić rozszerzenia w głównym wystąpieniu programu Visual Studio na komputerze lokalnym lub na innych komputerach.  
   
-1.  Na komputerze, należy znaleźć **.vsix** pliku, który został zbudowany przez projekt rozszerzenia.  
+1. Na komputerze, należy znaleźć **.vsix** pliku, który został zbudowany przez projekt rozszerzenia.  
   
-    1.  W **Eksploratora rozwiązań**, w menu skrótów projektu, a następnie wybierz **Otwórz Folder w Eksploratorze Windows**.  
+    1. W **Eksploratora rozwiązań**, w menu skrótów projektu, a następnie wybierz **Otwórz Folder w Eksploratorze Windows**.  
   
-    2.  Zlokalizuj plik **bin\\\*\\**_YourProject_**.vsix**  
+    2. Zlokalizuj plik **bin\\\*\\**_YourProject_**.vsix**  
   
-2.  Kopiuj **.vsix** plik na komputer docelowy, na którym chcesz zainstalować rozszerzenie. Może to być Twój własny komputer lub innej.  
+2. Kopiuj **.vsix** plik na komputer docelowy, na którym chcesz zainstalować rozszerzenie. Może to być Twój własny komputer lub innej.  
   
-    -   Komputer docelowy musi mieć jedną z wersji programu Visual Studio, którą podano na **elementy docelowe instalacji** karcie **source.extension.vsixmanifest**.  
+    - Komputer docelowy musi mieć jedną z wersji programu Visual Studio, którą podano na **elementy docelowe instalacji** karcie **source.extension.vsixmanifest**.  
   
-3.  Na komputerze docelowym, otwórz **.vsix** pliku, na przykład, klikając go dwukrotnie.  
+3. Na komputerze docelowym, otwórz **.vsix** pliku, na przykład, klikając go dwukrotnie.  
   
      **Instalator rozszerzenia programu Visual Studio** otwiera i instaluje rozszerzenia.  
   
-4.  Uruchom lub uruchom ponownie program Visual Studio.  
+4. Uruchom lub uruchom ponownie program Visual Studio.  
   
 #### <a name="to-uninstall-an-extension"></a>Aby odinstalować rozszerzenie  
   

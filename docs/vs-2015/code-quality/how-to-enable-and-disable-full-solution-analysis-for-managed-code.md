@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6b9efdb5ea3e7ccbee9aefb724e847db6a37c2a0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fddc41d264f30f6de5a2f69b098865cf3d997147
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755789"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044827"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Instrukcje: Włączanie i wyłączanie pełnej analizy rozwiązania dla kodu zarządzanego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ UWAGA]
   
 #### <a name="to-toggle-full-solution-analysis"></a>Aby przełączyć pełnej analizy rozwiązania  
   
-1.  W menu głównym w programie Visual Studio wybierz **narzędzia** &#124; **opcje** do wyświetlania **opcje** okno dialogowe.  
+1. W menu głównym w programie Visual Studio wybierz **narzędzia** &#124; **opcje** do wyświetlania **opcje** okno dialogowe.  
   
-2.  W **opcje** okna dialogowego wybierz **edytora tekstów** &#124; **C#** lub **podstawowe** &#124; **zaawansowane**.  
+2. W **opcje** okna dialogowego wybierz **edytora tekstów** &#124; **C#** lub **podstawowe** &#124; **zaawansowane**.  
   
-3.  Wybierz **Włączanie pełnej analizy rozwiązania** pole wyboru, aby włączyć pełnej analizy rozwiązania, lub wyczyść pole, aby je wyłączyć. Wybierz **OK** przycisk po wykonaniu tych czynności.  
+3. Wybierz **Włączanie pełnej analizy rozwiązania** pole wyboru, aby włączyć pełnej analizy rozwiązania, lub wyczyść pole, aby je wyłączyć. Wybierz **OK** przycisk po wykonaniu tych czynności.  
   
      ![Zaznacz pole wyboru analizy pełne rozwiązanie. ](../code-quality/media/fsa-toolsoptions.png "FSA_ToolsOptions")  
   

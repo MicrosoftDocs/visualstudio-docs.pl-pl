@@ -18,11 +18,11 @@ author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5bf42ec3c706282adf2752d21c0c121f89c2ed5f
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866640"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052220"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Możliwości programu Dotfuscator
 

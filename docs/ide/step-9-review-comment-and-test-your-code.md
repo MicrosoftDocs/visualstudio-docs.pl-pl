@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cddb92e57a501fb8ea5eeda9b2c6ec60b95c45c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2ff907289233bf0a7bea8321df35c8f755f16fe5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934318"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049753"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Krok 9. Przejrzyj, komentowanie i testowanie kodu
 Następnie dodaj komentarz do kodu. Należy zauważyć, że nie zmienia sposób, w jaki program zachowuje się jest komentarz. To ułatwia komuś, kto czyta swój kod, aby zrozumieć, jak działa. Dodawanie komentarzy do kodu to dobry sposób na. W języku Visual C# dwie kreski ułamkowe (/ /) oznaczają wiersz jako komentarz. W języku Visual Basic pojedynczy cudzysłów (') służy do oznaczania wiersza jako komentarz. Po dodaniu komentarza, przetestuj swój program. Jest dobrą praktyką, aby uruchomić i przetestować kod często podczas pracy nad swoimi projektami, aby można było wyłapać i rozwiązać wszelkie problemy wcześnie, zanim kod stanie się bardziej skomplikowane. Jest to nazywane *iteracyjne testowanie*.
@@ -46,7 +46,7 @@ Następnie dodaj komentarz do kodu. Należy zauważyć, że nie zmienia sposób,
 
 ## <a name="to-add-comments"></a>Aby dodać komentarze
 
-1.  Dodaj poniższy komentarz do kodu.
+1. Dodaj poniższy komentarz do kodu.
 
      [!code-vb[VbExpressTutorial1Step9_10#1](../ide/codesnippet/VisualBasic/step-9-review-comment-and-test-your-code_1.vb)]
      [!code-csharp[VbExpressTutorial1Step9_10#1](../ide/codesnippet/CSharp/step-9-review-comment-and-test-your-code_1.cs)]
@@ -61,7 +61,7 @@ Następnie dodaj komentarz do kodu. Należy zauważyć, że nie zmienia sposób,
     >
     >  Aby uaktywnić wstawkę podczas wpisywania kod, wpisz ją, a następnie wybierz **kartę** klucza. Wiele fragmentów są wyświetlane w **IntelliSense** okna, dlatego możesz wybrać **kartę** dwa razy: najpierw do wybrania wstawki z **IntelliSense** okna, a następnie poinformowania Środowisko IDE przeznaczone do użycia do fragmentu kodu. (Technologia IntelliSense obsługuje `if` fragment kodu, ale nie `ifelse` fragmentu kodu.)
 
-2.  Przed uruchomieniem programu należy zapisać program, wybierając **Zapisz wszystko** przycisku paska narzędzi, który wygląda następująco.
+2. Przed uruchomieniem programu należy zapisać program, wybierając **Zapisz wszystko** przycisku paska narzędzi, który wygląda następująco.
 
      ![Zapisz wszystkie przyciski paska narzędzi](../ide/media/express_iconsaveall.png)
 **Zapisz wszystko** przycisku
@@ -75,19 +75,19 @@ Następnie dodaj komentarz do kodu. Należy zauważyć, że nie zmienia sposób,
 
 ## <a name="to-test-your-program"></a>Aby przetestować swój program
 
-1.  Wybierz **F5** klucza, lub wybierz **Rozpocznij debugowanie** przycisku paska narzędzi.
+1. Wybierz **F5** klucza, lub wybierz **Rozpocznij debugowanie** przycisku paska narzędzi.
 
-2.  Wybierz **Pokaż obraz** przycisk, aby uruchomić napisany właśnie kod. Najpierw program otworzy **Otwórz plik** okno dialogowe. Sprawdź, czy filtry są widoczne w **pliki typu** listy rozwijanej w dolnej części okna dialogowego. Następnie przejdź do obrazu i otwórz go. Zwykle można znaleźć przykładowe obrazy, które są dostarczane z systemem operacyjnym Windows w Twojej *Moje dokumenty* folderu, wewnątrz *My Pictures\Sample Pictures* folderu.
+2. Wybierz **Pokaż obraz** przycisk, aby uruchomić napisany właśnie kod. Najpierw program otworzy **Otwórz plik** okno dialogowe. Sprawdź, czy filtry są widoczne w **pliki typu** listy rozwijanej w dolnej części okna dialogowego. Następnie przejdź do obrazu i otwórz go. Zwykle można znaleźć przykładowe obrazy, które są dostarczane z systemem operacyjnym Windows w Twojej *Moje dokumenty* folderu, wewnątrz *My Pictures\Sample Pictures* folderu.
 
     > [!NOTE]
     >  Jeśli nie widzisz żadnych obrazów w **wybierz plik obrazu** okno dialogowe, upewnij się, że **wszystkie pliki (*.\*)**  filtr jest zaznaczony na liście rozwijanej u dołu po prawej stronie okna dialogowego.
 
-3.  Zdjęcia i pojawia się w obiekcie PictureBox. Spróbuj zmienić rozmiar formularza przeciągając jego obramowania. Ponieważ Twoje PictureBox zadokowano wewnątrz elementu TableLayoutPanel, który sam jest zadokowany wewnątrz formularza, Twój obszar obrazu będzie zmieniany tak jak szerokość całego formularza i wypełni najważniejsze 90 procent firm z formularza. Dlatego możesz używać <xref:System.Windows.Forms.TableLayoutPanel> i <xref:System.Windows.Forms.FlowLayoutPanel> kontenerów: Prowadzą użyłeś pojemników, gdy użytkownik zmienia jego rozmiar formularza.
+3. Zdjęcia i pojawia się w obiekcie PictureBox. Spróbuj zmienić rozmiar formularza przeciągając jego obramowania. Ponieważ Twoje PictureBox zadokowano wewnątrz elementu TableLayoutPanel, który sam jest zadokowany wewnątrz formularza, Twój obszar obrazu będzie zmieniany tak jak szerokość całego formularza i wypełni najważniejsze 90 procent firm z formularza. Dlatego możesz używać <xref:System.Windows.Forms.TableLayoutPanel> i <xref:System.Windows.Forms.FlowLayoutPanel> kontenerów: Prowadzą użyłeś pojemników, gdy użytkownik zmienia jego rozmiar formularza.
 
      Teraz większe zdjęcia wykraczają poza granice przeglądarki obrazów. W następnym kroku dodasz kod, aby obrazy mieściły się w oknie.
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
--   Aby przejść do następnego kroku samouczka, zobacz [krok 10: Pisanie kodu dla dodatkowych przycisków i pola wyboru](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+- Aby przejść do następnego kroku samouczka, zobacz [krok 10: Pisanie kodu dla dodatkowych przycisków i pola wyboru](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
 
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 8: Pisanie kodu dla programu obsługi zdarzeń przycisku Obraz](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 8: Pisanie kodu dla programu obsługi zdarzeń przycisku Obraz](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).

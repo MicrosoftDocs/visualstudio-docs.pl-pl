@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 14f67aee6bba5f0cafc67a4a16184f3b769a2bae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da7b1f1bda7fac222d0d47c6bf2a15eaf3a8396f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780103"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052067"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Przewodnik: Konfigurowanie niestandardowego zestawu reguł i korzystanie z niego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,21 +26,21 @@ Ten poradnik pokazuje jak używać narzędzi analizy kodu, które zostały skonf
   
  W tym przewodniku przechodzi przez te procesy:  
   
--   Utwórz bibliotekę klas.  
+- Utwórz bibliotekę klas.  
   
--   Wybierz **podstawowe reguły wskazówek dotyczących projektowania firmy Microsoft** zestawu reguł analizy kodu.  
+- Wybierz **podstawowe reguły wskazówek dotyczących projektowania firmy Microsoft** zestawu reguł analizy kodu.  
   
--   Dodaj własny kod do klasy.  
+- Dodaj własny kod do klasy.  
   
--   Przeprowadź analizę kodu.  
+- Przeprowadź analizę kodu.  
   
--   Dostosuj zestaw reguł.  
+- Dostosuj zestaw reguł.  
   
--   Uruchom analizę kodu i zobacz, jak reguły ustawić dostosowywania zachowania działa.  
+- Uruchom analizę kodu i zobacz, jak reguły ustawić dostosowywania zachowania działa.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], lub [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], lub [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ## <a name="using-rule-sets-with-code-analysis"></a>Korzystanie z zestawów reguł analizy kodu  
  Najpierw Utwórz bibliotekę klas proste.  
@@ -148,9 +148,9 @@ Ten poradnik pokazuje jak używać narzędzi analizy kodu, które zostały skonf
   
 #### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>Przeprowadź analizę kodu w projekcie RuleSetSample po raz drugi  
   
-1.  Na **analizy** menu, kliknij przycisk **Uruchom analizę kodu dla RuleSetSample**.  
+1. Na **analizy** menu, kliknij przycisk **Uruchom analizę kodu dla RuleSetSample**.  
   
-2.  W oknie Lista błędów, należy zauważyć, że po kliknięciu **ostrzeżenia**, nie są już wyświetlane CA1704 ostrzeżenie naruszenia reguły "Identyfikatory powinny być zapisane poprawnie".  
+2. W oknie Lista błędów, należy zauważyć, że po kliknięciu **ostrzeżenia**, nie są już wyświetlane CA1704 ostrzeżenie naruszenia reguły "Identyfikatory powinny być zapisane poprawnie".  
   
 ## <a name="see-also"></a>Zobacz też  
  [Instrukcje: Konfigurowanie analizy kodu dla projektu kodu zarządzanego](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   

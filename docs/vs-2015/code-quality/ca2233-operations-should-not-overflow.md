@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a260f046c33b2afdcf4df0b456069cf0d518b865
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 52950f138354a72f7c0e781d761aa466760e3ca0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770575"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054797"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: Operacje nie powinny powodować przepełnienia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,11 +107,11 @@ End Sub
 
  **Aby włączyć zaznaczone arytmetyczne przepełnienie/niedopełnienie w języku C#**
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt i wybierz polecenie **właściwości**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt i wybierz polecenie **właściwości**.
 
-2.  Wybierz **kompilacji** kartę, a następnie kliknij przycisk **zaawansowane**.
+2. Wybierz **kompilacji** kartę, a następnie kliknij przycisk **zaawansowane**.
 
-3.  Wybierz **sprawdzaj przepełnienie/niedopełnienie arytmetyczne** i kliknij przycisk **OK**.
+3. Wybierz **sprawdzaj przepełnienie/niedopełnienie arytmetyczne** i kliknij przycisk **OK**.
 
 ## <a name="see-also"></a>Zobacz też
  <xref:System.OverflowException?displayProperty=fullName> [Operatory języka C#](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked i Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)

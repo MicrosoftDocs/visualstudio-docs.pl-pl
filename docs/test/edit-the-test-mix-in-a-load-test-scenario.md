@@ -11,12 +11,12 @@ ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1aa698c2c152b33d111ffe893ec22fbf9eec4316
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e1c58cae9983cc14878ba548177bf9ba6ad44255
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652179"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044660"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Edytuj test mieszany, aby określić, które wydajności sieci web, jednostki i kodowane testy interfejsu użytkownika można uwzględnić w scenariuszu testu obciążenia
 
@@ -41,37 +41,37 @@ Można dodać więcej web wydajności i testy jednostkowe do mieszanki tekstu sc
 
 ### <a name="to-add-more-tests-to-an-existing-scenario"></a>Aby dodać więcej testów do istniejącego scenariusza
 
-1.  Otwórz test obciążenia.
+1. Otwórz test obciążenia.
 
-2.  W **edytora testu obciążenia**, kliknij prawym przyciskiem myszy istniejący scenariusz, a następnie wybierz **Dodaj testy**.
+2. W **edytora testu obciążenia**, kliknij prawym przyciskiem myszy istniejący scenariusz, a następnie wybierz **Dodaj testy**.
 
      **Dodaj testy** zostanie wyświetlone okno dialogowe. Wydajności sieci web, jednostki i kodowane testy interfejsu użytkownika w rozwiązaniu, które nie są już w tym scenariuszu są dostępne dodać do scenariusza.
 
-3.  W **dostępne testy** okienku zaznacz wydajności sieci web, jednostki i kodowane testy interfejsu użytkownika, które chcesz dodać. Wybierz strzałkę w prawo, aby dodać testy **wybrane testy** okienka.
+3. W **dostępne testy** okienku zaznacz wydajności sieci web, jednostki i kodowane testy interfejsu użytkownika, które chcesz dodać. Wybierz strzałkę w prawo, aby dodać testy **wybrane testy** okienka.
 
-4.  Po dodaniu testów wybierz **OK**.
+4. Po dodaniu testów wybierz **OK**.
 
      Testy zostaną dodane do testu mieszanego. Nowe dystrybucji jest automatycznie przypisywany do testy w asortymencie test.
 
-5.  (Opcjonalnie) Dostosuj kontroli mieszany, aby określić rozkład testu. Aby uzyskać więcej informacji, zobacz [informacje o formancie mieszanego](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+5. (Opcjonalnie) Dostosuj kontroli mieszany, aby określić rozkład testu. Aby uzyskać więcej informacji, zobacz [informacje o formancie mieszanego](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
-##  <a name="remove-tests-from-a-scenario"></a>Usuń testy ze scenariusza
+## <a name="remove-tests-from-a-scenario"></a>Usuń testy ze scenariusza
  ![Usuwanie testu z istniejącego testu obciążenia](../test/media/ltest_removetest.png)
 
 ### <a name="to-remove-tests-from-a-scenario"></a>Aby usunąć testy ze scenariusza
 
-1.  Otwórz test obciążenia.
+1. Otwórz test obciążenia.
 
-2.  W **edytora testu obciążenia**, obciążenia test drzewa, kliknij prawym przyciskiem myszy scenariusza, z którego chcesz usunąć test i wybierz pozycję **Edytuj Test mieszany**. **Edytuj Test mieszany** zostanie wyświetlone okno dialogowe.
+2. W **edytora testu obciążenia**, obciążenia test drzewa, kliknij prawym przyciskiem myszy scenariusza, z którego chcesz usunąć test i wybierz pozycję **Edytuj Test mieszany**. **Edytuj Test mieszany** zostanie wyświetlone okno dialogowe.
 
-3.  Wybierz wydajność sieci web, jednostki lub kodowany test interfejsu użytkownika w siatce, a następnie wybierz **Usuń**.
+3. Wybierz wydajność sieci web, jednostki lub kodowany test interfejsu użytkownika w siatce, a następnie wybierz **Usuń**.
 
     > [!NOTE]
     > Po usunięciu testu dopasować test mieszany do Twojej dystrybucji.
 
-4.  Aby zakończyć usuwanie testów, wybierz **OK**.
+4. Aby zakończyć usuwanie testów, wybierz **OK**.
 
-##  <a name="EditingTestMixAboutMixControl"></a> Informacje o formancie mieszany
+## <a name="EditingTestMixAboutMixControl"></a> Informacje o formancie mieszany
  Sterowanie mieszany umożliwia dostosowanie procent obciążenia, który jest rozproszona w ramach testów, typy przeglądarek i typy sieci w scenariuszu testu obciążenia. Wartości procentowe można dostosować, przenosząc suwaki. Dostosowywanie mieszanki testów określa prawdopodobieństwo, że użytkownik wirtualny uruchomi określony test w scenariuszu testu obciążenia.
 
  Podczas przesuwania suwaka, zmień wartości procentowe wszystkich dostępnych elementów. Jeśli masz więcej niż dwa elementy, kwota, dodawanie lub usuwanie jest rozłożona równomiernie innych elementów. Istnieje możliwość zastąpienia tego zachowania. Jeśli zaznaczysz pole wyboru w kolumnie blokady dla określonego elementu, można zablokować określoną wartość procentową wartość dla tego elementu. Następnie podczas przesuwania suwaka, kwota, dodawanie lub usuwanie są stosowane tylko do wszystkie pozostałe elementy odblokowane.

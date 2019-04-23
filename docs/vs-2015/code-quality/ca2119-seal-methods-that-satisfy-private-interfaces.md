@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6768bb0100b3bb0052898efc6a57017fca3702b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a120bb5eaab49e2652715c2583f898949b506a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754765"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061505"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Pieczętuj metody, które spełniają wymagania interfejsów prywatnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ ms.locfileid: "54754765"
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, zapobiegania metody zastępowaniu spoza zestawu przy użyciu jednej z następujących czynności:
 
--   Zmień typ deklarujący `sealed` (`NotInheritable` w języku Visual Basic).
+- Zmień typ deklarujący `sealed` (`NotInheritable` w języku Visual Basic).
 
--   Zmień dostępność elementu typ deklarujący `internal` (`Friend` w języku Visual Basic).
+- Zmień dostępność elementu typ deklarujący `internal` (`Friend` w języku Visual Basic).
 
--   Usuń wszystkich konstruktorów publicznych z typ deklarujący.
+- Usuń wszystkich konstruktorów publicznych z typ deklarujący.
 
--   Implementuje metody bez używania `virtual` modyfikator.
+- Implementuje metody bez używania `virtual` modyfikator.
 
--   Jawnie implementować metody.
+- Jawnie implementować metody.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Bezpiecznie ostrzeżenia z tej reguły, jeśli po dokładnej przeglądu żadnych problemów z zabezpieczeniami istnieją, które może być możliwe, jeśli metoda zostanie przesłonięta spoza zestawu.

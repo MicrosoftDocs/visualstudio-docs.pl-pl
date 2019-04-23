@@ -11,32 +11,32 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c68089615fd38276e428df6ffaa906d0b3f6742
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 31181cd3dd70d3767bce65fe338d8dc152ec311c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770665"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042356"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Wyświetlanie modelu UML na diagramach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W kodzie programu do rozszerzenia programu Visual Studio można kontrolować sposób wyświetlania elementów modelu na diagramach. Aby dowiedzieć się, które wersje programu Visual Studio obsługują modeli UML, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
- W tym temacie:  
- -   [Do wyświetlania elementu na diagramie](#Display)  
+W tym temacie:  
+- [Do wyświetlania elementu na diagramie](#Display)  
   
--   [Uzyskiwanie dostępu do kształtów, reprezentujących element](#GetShapes)  
+- [Uzyskiwanie dostępu do kształtów, reprezentujących element](#GetShapes)  
   
--   [Przenoszenie i zmienianie rozmiaru kształtów](#Moving)  
+- [Przenoszenie i zmienianie rozmiaru kształtów](#Moving)  
   
--   [Aby usunąć kształtu z diagramu](#Removing)  
+- [Aby usunąć kształtu z diagramu](#Removing)  
   
--   [Otwierania i tworzenia diagramów](#Opening)  
+- [Otwierania i tworzenia diagramów](#Opening)  
   
--   [Przykład: Polecenia wyrównywania kształtów](#AlignCommand)  
+- [Przykład: Polecenia wyrównywania kształtów](#AlignCommand)  
   
-##  <a name="Display"></a> Do wyświetlania elementu na diagramie  
+## <a name="Display"></a> Do wyświetlania elementu na diagramie  
  Podczas tworzenia elementu, takiego jak przypadek użycia lub akcję, użytkownik może go wyświetlić w Eksploratorze modelu UML, ale nie zawsze są automatycznie wyświetlane na diagramie. W niektórych przypadkach należy napisać kod, aby go wyświetlić. Poniższa tabela zawiera podsumowanie alternatyw.  
   
 |Typ elementu|Na przykład|Do wyświetlenia w tym, kod musi|  
@@ -47,7 +47,7 @@ W kodzie programu do rozszerzenia programu Visual Studio można kontrolować spo
 |Element podrzędny elementu zachowanie|Linie życia, wiadomości, akcje, węzłów obiektowych|Automatyczne — kod nie jest wymagany.<br /><br /> Jest on wyświetlany, jeśli element nadrzędny jest powiązany z diagramu.|  
 |Relacja|Skojarzenie, Generalizacja, przepływ i zależności|Automatyczne — kod nie jest wymagany.<br /><br /> Jest on wyświetlany na każdy diagram, na którym są wyświetlane obu końcach.|  
   
-##  <a name="GetShapes"></a> Uzyskiwanie dostępu do kształtów, reprezentujących element  
+## <a name="GetShapes"></a> Uzyskiwanie dostępu do kształtów, reprezentujących element  
  Kształt, który reprezentuje element należy do typów:  
   
  `IShape`  
@@ -68,7 +68,7 @@ W kodzie programu do rozszerzenia programu Visual Studio można kontrolować spo
 |`IShape iShape = ...;`<br /><br /> `IShape<IClass> classShape = iShape.ToIShape<IClass>();`<br /><br /> `IClass aClass = classShape.Element;`|Rzutowanie ogólnego `IShape` na silnie typizowaną `IShape<IElement>`.|  
 |`IShape<IClassifier> classifierShape;`<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `classifierShape.ToIShape<IUseCase>();`|Rzutowanie kształtu z typu jeden kształt parametryczne do innego.|  
   
-##  <a name="Moving"></a> Przenoszenie i zmienianie rozmiaru kształtów  
+## <a name="Moving"></a> Przenoszenie i zmienianie rozmiaru kształtów  
   
 |||  
 |-|-|  
@@ -77,7 +77,7 @@ W kodzie programu do rozszerzenia programu Visual Studio można kontrolować spo
   
  Aby uzyskać przykład, zobacz [Definiowanie polecenia wyrównanie](#AlignCommand).  
   
-##  <a name="Removing"></a> Aby usunąć kształtu z diagramu  
+## <a name="Removing"></a> Aby usunąć kształtu z diagramu  
  Możesz usunąć kształty niektóre typy elementu, bez usuwania elementu.  
   
 |Element modelu|Aby usunąć kształt|  
@@ -86,7 +86,7 @@ W kodzie programu do rozszerzenia programu Visual Studio można kontrolować spo
 |Działanie: działanie i interakcji|Usuń z diagramu, z projektu. Użyj `IDiagram.FileName` uzyskać ścieżki.<br /><br /> To zachowanie nie powoduje usunięcia z modelu.|  
 |Inne kształtu|Nie można jawnie usunąć inne kształty z diagramu. Kształt znikną automatycznie, czy element został usunięty z modelu, czy kształt nadrzędny zostanie usunięty z diagramu.|  
   
-##  <a name="Opening"></a> Otwierania i tworzenia diagramów  
+## <a name="Opening"></a> Otwierania i tworzenia diagramów  
   
 ### <a name="to-access-the-users-current-diagram-from-a-command-or-gesture-extension"></a>Dostęp do bieżącego diagramu użytkownika z poziomu rozszerzenia poleceń lub gest  
  Zadeklaruj właściwość ta importowanych w klasie:  
@@ -162,7 +162,7 @@ foreach (ProjectItem item in project.ProjectItems)
 IModelStore modelStore = (project as IModelingProject).Store;  
 ```  
   
-##  <a name="AlignCommand"></a> Przykład: Polecenia wyrównywania kształtów  
+## <a name="AlignCommand"></a> Przykład: Polecenia wyrównywania kształtów  
  Poniższy kod implementuje polecenie menu, pasującą starannego kształtów. Użytkownik wcześniej umieścić dwóch lub więcej kształtów w przybliżony wyrównanie poziomo lub pionowo. Następnie polecenia Wyrównaj może służyć do wyrównania ich centrów.  
   
  Aby udostępnić polecenie, Dodaj następujący kod, aby projekt polecenia menu, a następnie wdrożyć wynikowy rozszerzenia dla użytkowników. Aby uzyskać więcej informacji, zobacz [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  

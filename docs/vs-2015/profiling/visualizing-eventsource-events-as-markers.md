@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b638bb1e300fd03d358c338c10dec4844f4e4adc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: edce61d7f5cf8f84c021b759fdaee1c06bf68ccb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801495"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044925"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Wizualizowanie zdarzeń i znaczników EventSource
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,11 +26,11 @@ Narzędzie Concurrency Visualizer można wyświetlać zdarzeń EventSource w pos
   
 ### <a name="marker-type"></a>Typ znacznika  
   
-1.  Zdarzenia, które mają [Opcode](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win: uruchamianie lub win: zatrzymywanie są traktowane jako początek lub koniec zakresu, odpowiednio.  Zagnieżdżone lub nakładające się zakresy nie mogą być wyświetlane. Nie można wyświetlić pary zdarzeń, które zaczynają się w jednym wątku i kończyć się na innym.  
+1. Zdarzenia, które mają [Opcode](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win: uruchamianie lub win: zatrzymywanie są traktowane jako początek lub koniec zakresu, odpowiednio.  Zagnieżdżone lub nakładające się zakresy nie mogą być wyświetlane. Nie można wyświetlić pary zdarzeń, które zaczynają się w jednym wątku i kończyć się na innym.  
   
-2.  Zdarzenie, którego kod operacji nie jest win: Start ani win: Stop jest traktowany jako flagi znacznika, chyba że jego [poziom](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (pole EVENT_RECORD. EVENT_HEADER. EVENT_DESCRIPTOR) jest win: pełne lub nowszej.  
+2. Zdarzenie, którego kod operacji nie jest win: Start ani win: Stop jest traktowany jako flagi znacznika, chyba że jego [poziom](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (pole EVENT_RECORD. EVENT_HEADER. EVENT_DESCRIPTOR) jest win: pełne lub nowszej.  
   
-3.  We wszystkich innych przypadkach zdarzenia jest traktowany jak jeden komunikat.  
+3. We wszystkich innych przypadkach zdarzenia jest traktowany jak jeden komunikat.  
   
 ### <a name="importance"></a>Znaczenie  
  W poniższej tabeli opisano, jak poziom zdarzenia mapuje znaczenie znacznika.  

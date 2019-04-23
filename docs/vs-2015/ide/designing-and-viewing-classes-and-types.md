@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4d9636a29485430be92ab622ae8ce56712f22aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c41dc9df835cc3799a35620730927b338224ea14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756862"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045047"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>Projektowanie i tworzenie klas i typów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Projektowanie oraz ich wizualizowanie i Refaktoryzacja klas i innych typów w ko
   
  Poniżej przedstawiono więcej informacji na temat co można zrobić z diagramami klas:  
   
--   **Projekt**: Edytowanie kodu projektu poprzez edycję diagramu klas. Dodawanie nowych elementów i usuń niepożądane. Zmiany są odzwierciedlane w kodzie.  
+- **Projekt**: Edytowanie kodu projektu poprzez edycję diagramu klas. Dodawanie nowych elementów i usuń niepożądane. Zmiany są odzwierciedlane w kodzie.  
   
--   **Wizualizuj**: Zrozumienie struktury projektu, wyświetlając klasy w projekcie na diagramie. Dostosuj do diagramu, dzięki czemu można skupić się na potrzeby szczegółów projektu, które najbardziej interesujących Cię. Zapisz diagramu do późniejszego użycia w celu wykazania lub dokumentacji.  
+- **Wizualizuj**: Zrozumienie struktury projektu, wyświetlając klasy w projekcie na diagramie. Dostosuj do diagramu, dzięki czemu można skupić się na potrzeby szczegółów projektu, które najbardziej interesujących Cię. Zapisz diagramu do późniejszego użycia w celu wykazania lub dokumentacji.  
   
--   **Refaktoryzuj**: Przesłaniaj metody i zmiana nazw identyfikatorów, Refaktoryzacja parametrów, implementowanie interfejsów i klas abstrakcyjnych.  
+- **Refaktoryzuj**: Przesłaniaj metody i zmiana nazw identyfikatorów, Refaktoryzacja parametrów, implementowanie interfejsów i klas abstrakcyjnych.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Praca z klasami i innymi typami (Projektant klas)](../ide/working-with-classes-and-other-types-class-designer.md)  

@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c52540c8e639adcd8ceec6b4da79fb87cff18386
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3095bccd25548e55f750ee11f26d20fdc9fe603d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775001"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042782"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Instrukcje: Korzystanie z funkcji Edytuj i kontynuuj [C#]
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,19 +35,19 @@ Z funkcją Edytuj i Kontynuuj dla języka C# można wprowadzić zmiany do kodu w
   
 ### <a name="to-invoke-edit-and-continue-automatically"></a>Aby wywołać Edytuj i Kontynuuj automatycznie  
   
-1.  W trybie przerwy wprowadź zmiany do kodu źródłowego.  
+1. W trybie przerwy wprowadź zmiany do kodu źródłowego.  
   
-2.  Z **debugowania** menu, kliknij przycisk **Kontynuuj**, **kroku**, lub **Ustaw następną instrukcję** lub oceń funkcję w oknie debugera.  
+2. Z **debugowania** menu, kliknij przycisk **Kontynuuj**, **kroku**, lub **Ustaw następną instrukcję** lub oceń funkcję w oknie debugera.  
   
      Nowy kod jest skompilowany i debugowanie nadal stanowi nowy kod. Niektóre zmiany nie są obsługiwane przez Edytuj i Kontynuuj. Aby uzyskać więcej informacji, zobacz [obsługiwane zmiany kodu (C#)](../debugger/supported-code-changes-csharp.md).  
   
 ### <a name="to-enabledisable-edit-and-continue"></a>Aby włączyć lub wyłączyć Edytuj i Kontynuuj  
   
-1.  Na **narzędzia** menu, kliknij przycisk **opcje**.  
+1. Na **narzędzia** menu, kliknij przycisk **opcje**.  
   
-2.  W **opcje** okna dialogowego rozwiń **debugowanie** , a następnie wybierz węzeł **Edytuj i Kontynuuj**.  
+2. W **opcje** okna dialogowego rozwiń **debugowanie** , a następnie wybierz węzeł **Edytuj i Kontynuuj**.  
   
-3.  W **opcje** okno dialogowe **Edytuj i Kontynuuj** , zaznacz lub wyczyść **Włącz edytowanie i kontynuowanie** pole wyboru.  
+3. W **opcje** okno dialogowe **Edytuj i Kontynuuj** , zaznacz lub wyczyść **Włącz edytowanie i kontynuowanie** pole wyboru.  
   
      Ustawienie zostanie uwzględnione po ponownym uruchomieniu sesji debugowania.  
   

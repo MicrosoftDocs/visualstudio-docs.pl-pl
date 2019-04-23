@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60ef24f91d7b450de4ed4779a6d128032bd8b564
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: aa331fea595c2143dd3ab47aa562fbd61277f81f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661701"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043623"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Options, Text Editor, Basic (Visual Basic), Advanced
 **VB określonych** stronie właściwości, **podstawowe** folderu **edytora tekstów** folderu **opcje** (**narzędzia** menu) okno dialogowe zawiera następujące właściwości:
@@ -81,19 +81,19 @@ Po wybraniu wyświetlane pionowe linie w edytorze tego wiersza się przy użyciu
 
 **Formatowania kodu (ponowne formatowanie) kodu** Edytor tekstu formatuje kodu zgodnie z potrzebami. Gdy ta opcja jest zaznaczona, Edytor kodu wykonują następujące czynności:
 
--   Wyrównaj kod do położenia odpowiedniej karcie
+- Wyrównaj kod do położenia odpowiedniej karcie
 
--   Recase słów kluczowych, zmienne i obiekty do odpowiedniej wielkości liter
+- Recase słów kluczowych, zmienne i obiekty do odpowiedniej wielkości liter
 
--   Dodaj brakujące `Then` do `If...Then` — instrukcja
+- Dodaj brakujące `Then` do `If...Then` — instrukcja
 
--   Dodaj nawiasy do wywołania funkcji
+- Dodaj nawiasy do wywołania funkcji
 
--   Dodaj brakujące nawiasy zakończenia na ciągi
+- Dodaj brakujące nawiasy zakończenia na ciągi
 
--   Zapis wykładniczy formatowania
+- Zapis wykładniczy formatowania
 
--   Ponowne formatowanie dat
+- Ponowne formatowanie dat
 
 **Automatyczne wstawianie konstrukcji końcowych**
 

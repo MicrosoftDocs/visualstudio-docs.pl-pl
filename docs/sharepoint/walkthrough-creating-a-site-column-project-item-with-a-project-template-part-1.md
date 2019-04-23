@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9edaadff5fd1e4f180f38b7609c90c031656792
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: d4dec78b368991da18c5bc0f5a673c1dca91fbfc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54864608"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059997"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Przewodnik: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 1
   Projekty programu SharePoint są kontenerami dla jednego lub więcej elementów projektu programu SharePoint. System projektu programu SharePoint w programie Visual Studio można rozszerzyć przez utworzenie własnych typów elementów projektu programu SharePoint i kojarzenie ich z szablonem projektu. W tym przewodniku określi typ elementu projektu programu do tworzenia kolumny witryny, a następnie zostanie utworzony szablon projektu, który może służyć do tworzenia nowego projektu, który zawiera elementu projektu kolumn witryny.
@@ -66,86 +66,86 @@ ms.locfileid: "54864608"
 
 #### <a name="to-create-the-vsix-project"></a>Aby utworzyć projekt VSIX
 
-1.  Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  Na pasku menu wybierz **pliku** > **New** > **projektu**.
+2. Na pasku menu wybierz **pliku** > **New** > **projektu**.
 
-3.  W górnej części **nowy projekt** okna dialogowego pole, upewnij się, że **.NET Framework 4.5** jest wybierany w listę wersji programu .NET Framework.
+3. W górnej części **nowy projekt** okna dialogowego pole, upewnij się, że **.NET Framework 4.5** jest wybierany w listę wersji programu .NET Framework.
 
-4.  Rozwiń **języka Visual Basic** lub **Visual C#** węzłów, a następnie wybierz **rozszerzalności** węzła.
+4. Rozwiń **języka Visual Basic** lub **Visual C#** węzłów, a następnie wybierz **rozszerzalności** węzła.
 
     > [!NOTE]
     >  **Rozszerzalności** węzeł jest dostępny tylko w przypadku instalowania programu Visual Studio SDK. Aby uzyskać więcej informacji zobacz sekcję wymagania wstępne niniejszego tematu.
 
-5.  Na liście szablonów projektu wybierz **projekt VSIX**.
+5. Na liście szablonów projektu wybierz **projekt VSIX**.
 
-6.  W **nazwa** wprowadź **SiteColumnProjectItem**, a następnie wybierz **OK** przycisku.
+6. W **nazwa** wprowadź **SiteColumnProjectItem**, a następnie wybierz **OK** przycisku.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **SiteColumnProjectItem** projekt **Eksploratora rozwiązań**.
 
 #### <a name="to-create-the-project-template-project"></a>Aby utworzyć projekt szablonu projektu
 
-1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla węzła rozwiązanie, wybierz pozycję **Dodaj**, a następnie wybierz **nowy projekt**.
+1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla węzła rozwiązanie, wybierz pozycję **Dodaj**, a następnie wybierz **nowy projekt**.
 
-2.  W górnej części **nowy projekt** okna dialogowego pole, upewnij się, że **.NET Framework 4.5** jest wybierany w listę wersji programu .NET Framework.
+2. W górnej części **nowy projekt** okna dialogowego pole, upewnij się, że **.NET Framework 4.5** jest wybierany w listę wersji programu .NET Framework.
 
-3.  Rozwiń **Visual C#** lub **języka Visual Basic** węzła, a następnie wybierz **rozszerzalności** węzła.
+3. Rozwiń **Visual C#** lub **języka Visual Basic** węzła, a następnie wybierz **rozszerzalności** węzła.
 
-4.  Na liście szablonów projektu wybierz **szablonu projektu C#** lub **szablon projektu Visual Basic** szablonu.
+4. Na liście szablonów projektu wybierz **szablonu projektu C#** lub **szablon projektu Visual Basic** szablonu.
 
-5.  W **nazwa** wprowadź **SiteColumnProjectTemplate**, a następnie wybierz **OK** przycisku.
+5. W **nazwa** wprowadź **SiteColumnProjectTemplate**, a następnie wybierz **OK** przycisku.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **SiteColumnProjectTemplate** projektu do rozwiązania.
 
-6.  Usuń plik kodu Class1 z projektu.
+6. Usuń plik kodu Class1 z projektu.
 
-7.  Jeśli utworzono projekt języka Visual Basic, także Usuń następujące pliki z projektu:
+7. Jeśli utworzono projekt języka Visual Basic, także Usuń następujące pliki z projektu:
 
-    -   *MyApplication.Designer.vb*
+    - *MyApplication.Designer.vb*
 
-    -   MyApplication.myapp
+    - MyApplication.myapp
 
-    -   *Resources.Designer.vb*
+    - *Resources.Designer.vb*
 
-    -   *Resources.resx*
+    - *Resources.resx*
 
-    -   *Settings.Designer.vb*
+    - *Settings.Designer.vb*
 
-    -   Settings.settings
+    - Settings.settings
 
 #### <a name="to-create-the-extension-project"></a>Aby utworzyć projekt rozszerzenia
 
-1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla węzła rozwiązanie, wybierz pozycję **Dodaj**, a następnie wybierz **nowy projekt**.
+1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla węzła rozwiązanie, wybierz pozycję **Dodaj**, a następnie wybierz **nowy projekt**.
 
-2.  W górnej części **nowy projekt** okna dialogowego pole, upewnij się, że **.NET Framework 4.5** jest wybierany w listę wersji programu .NET Framework.
+2. W górnej części **nowy projekt** okna dialogowego pole, upewnij się, że **.NET Framework 4.5** jest wybierany w listę wersji programu .NET Framework.
 
-3.  Rozwiń **Visual C#** lub **języka Visual Basic** Wybierz węzły, **Windows** węzła, a następnie wybierz **biblioteki klas** szablonu.
+3. Rozwiń **Visual C#** lub **języka Visual Basic** Wybierz węzły, **Windows** węzła, a następnie wybierz **biblioteki klas** szablonu.
 
-4.  W **nazwa** wprowadź **ProjectItemTypeDefinition** , a następnie wybierz **OK** przycisku.
+4. W **nazwa** wprowadź **ProjectItemTypeDefinition** , a następnie wybierz **OK** przycisku.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **ProjectItemTypeDefinition** projektu do rozwiązania i otwiera plik domyślny kodu Class1.
 
-5.  Usuń plik kodu Class1 z projektu.
+5. Usuń plik kodu Class1 z projektu.
 
 ## <a name="configure-the-extension-project"></a>Konfigurowanie projektu rozszerzenia
  Dodaj pliki kodu i odwołania do zestawów, aby skonfigurować projekt rozszerzenia.
 
 #### <a name="to-configure-the-project"></a>Aby skonfigurować projekt
 
-1.  W projekcie ProjectItemTypeDefinition, należy dodać plik kodu, który nosi nazwę **SiteColumnProjectItemTypeProvider**.
+1. W projekcie ProjectItemTypeDefinition, należy dodać plik kodu, który nosi nazwę **SiteColumnProjectItemTypeProvider**.
 
-2.  Na pasku menu wybierz **projektu** > **Dodaj odwołanie**.
+2. Na pasku menu wybierz **projektu** > **Dodaj odwołanie**.
 
-3.  W **Menadżer odwołań - ProjectItemTypeDefinition** okna dialogowego rozwiń **zestawy** węzła, wybierz **Framework** węzłem, a następnie wybierz pozycję Elementy System.ComponentModel.Composition pole wyboru.
+3. W **Menadżer odwołań - ProjectItemTypeDefinition** okna dialogowego rozwiń **zestawy** węzła, wybierz **Framework** węzłem, a następnie wybierz pozycję Elementy System.ComponentModel.Composition pole wyboru.
 
-4.  Wybierz **rozszerzenia** węzeł, zaznacz pole wyboru obok zestawu Microsoft.VisualStudio.SharePoint, a następnie wybierz **OK** przycisku.
+4. Wybierz **rozszerzenia** węzeł, zaznacz pole wyboru obok zestawu Microsoft.VisualStudio.SharePoint, a następnie wybierz **OK** przycisku.
 
 ## <a name="define-the-new-sharepoint-project-item-type"></a>Definiowanie nowego typu elementu projektu SharePoint
  Utwórz klasę, która implementuje <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> interfejsu do określania zachowania nowym typem elementu projektu. Zawsze, gdy chcesz zdefiniować nowy typ elementu projektu, należy zaimplementować ten interfejs.
 
 #### <a name="to-define-the-new-sharepoint-project-item-type"></a>Aby zdefiniować nowym typem elementu projektu SharePoint
 
-1.  W **SiteColumnProjectItemTypeProvider** plik kodu, Zastąp domyślny kod następującym kodem, a następnie zapisz plik.
+1. W **SiteColumnProjectItemTypeProvider** plik kodu, Zastąp domyślny kod następującym kodem, a następnie zapisz plik.
 
      [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.cs#1)]
      [!code-vb[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.vb#1)]
@@ -195,17 +195,17 @@ ms.locfileid: "54864608"
 
 #### <a name="to-configure-how-developers-discover-the-project-template-in-the-new-project-dialog-box"></a>Aby skonfigurować, jak deweloperzy odnaleźć szablonu projektu w oknie dialogowym Nowy projekt
 
-1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla **SiteColumnProjectTemplate** węzła projektu, a następnie wybierz **Zwolnij projekt**. Jeśli zostanie wyświetlony monit, aby zapisać zmiany do wszystkich plików, wybierz opcję **tak** przycisku.
+1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **SiteColumnProjectTemplate** węzła projektu, a następnie wybierz **Zwolnij projekt**. Jeśli zostanie wyświetlony monit, aby zapisać zmiany do wszystkich plików, wybierz opcję **tak** przycisku.
 
-2.  Otwórz menu skrótów dla **SiteColumnProjectTemplate** węzła ponownie, a następnie wybierz **Edytuj SiteColumnProjectTemplate.csproj** lub **Edytuj SiteColumnProjectTemplate.vbproj**.
+2. Otwórz menu skrótów dla **SiteColumnProjectTemplate** węzła ponownie, a następnie wybierz **Edytuj SiteColumnProjectTemplate.csproj** lub **Edytuj SiteColumnProjectTemplate.vbproj**.
 
-3.  W pliku projektu zlokalizuj następujące `VSTemplate` elementu.
+3. W pliku projektu zlokalizuj następujące `VSTemplate` elementu.
 
     ```xml
     <VSTemplate Include="SiteColumnProjectTemplate.vstemplate">
     ```
 
-4.  Zamień ten element na następujący kod XML.
+4. Zamień ten element na następujący kod XML.
 
     ```xml
     <VSTemplate Include="SiteColumnProjectTemplate.vstemplate">
@@ -215,9 +215,9 @@ ms.locfileid: "54864608"
 
      `OutputSubPath` Element określa dodatkowe foldery w ścieżce, w którym tworzony jest szablon projektu podczas kompilowania projektu. Foldery określone w tym miejscu, upewnij się, że szablon projektu będą dostępne tylko wtedy, gdy klienci otworzyć **nowy projekt** okna dialogowego rozwiń **SharePoint** węzła, a następnie wybierz **2010**  węzła.
 
-5.  Zapisz i zamknij plik.
+5. Zapisz i zamknij plik.
 
-6.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla **SiteColumnProjectTemplate** projektu, a następnie wybierz **Załaduj ponownie projekt**.
+6. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **SiteColumnProjectTemplate** projektu, a następnie wybierz **Załaduj ponownie projekt**.
 
 ## <a name="edit-the-project-template-files"></a>Edytuj pliki szablonu projektu
  W projekcie SiteColumnProjectTemplate edytować następujące pliki do określania zachowania szablonu projektu:
@@ -240,7 +240,7 @@ ms.locfileid: "54864608"
 
 #### <a name="to-edit-the-assemblyinfocs-or-assemblyinfovb-file"></a>Aby edytować plik AssemblyInfo.cs lub AssemblyInfo.vb
 
-1.  W projekcie SiteColumnProjectTemplate Otwórz *AssemblyInfo.cs* lub *AssemblyInfo.vb* pliku, a następnie dodaj następującą instrukcję na początku:
+1. W projekcie SiteColumnProjectTemplate Otwórz *AssemblyInfo.cs* lub *AssemblyInfo.vb* pliku, a następnie dodaj następującą instrukcję na początku:
 
     ```vb
     Imports System.Security
@@ -252,11 +252,11 @@ ms.locfileid: "54864608"
 
      Gdy **rozwiązanie w trybie piaskownicy** projektu programu SharePoint zostaje ustalona **True**, Visual Studio dodaje <xref:System.Security.AllowPartiallyTrustedCallersAttribute> do pliku kodu AssemblyInfo. Jednak nie importuje pliku AssemblyInfo kodu w szablonie projektu <xref:System.Security> przestrzeni nazw, domyślnie. Należy dodać to **przy użyciu** lub **Importy** instrukcję, aby uniemożliwić błędy kompilacji.
 
-2.  Zapisz i zamknij plik.
+2. Zapisz i zamknij plik.
 
 #### <a name="to-edit-the-elementsxml-file"></a>Aby edytować plik Elements.xml
 
-1.  W projekcie SiteColumnProjectTemplate, Zastąp zawartość *Elements.xml* pliku następujący kod XML.
+1. W projekcie SiteColumnProjectTemplate, Zastąp zawartość *Elements.xml* pliku następujący kod XML.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -272,7 +272,7 @@ ms.locfileid: "54864608"
 
      Dodaje nowy plik XML `Field` element, który definiuje nazwę kolumny witryny, jego typ podstawowy i grupy, w której chcesz wyświetlić listę kolumny witryny w galerii. Aby uzyskać więcej informacji o zawartości tego pliku, zobacz [schematu definicji pola](http://go.microsoft.com/fwlink/?LinkId=184290).
 
-2.  Zapisz i zamknij plik.
+2. Zapisz i zamknij plik.
 
 #### <a name="to-edit-the-sharepointprojectitemspdata-file"></a>Aby edytować plik SharePointProjectItem.spdata
 
@@ -353,7 +353,7 @@ ms.locfileid: "54864608"
 
 1. W projekcie SiteColumnProjectTemplate Zastąp zawartość pliku SiteColumnProjectTemplate.vstemplate przy użyciu jednego z poniższych sekcji w pliku XML.
 
-   -   Jeśli tworzysz szablon projektu Visual C#, należy użyć następujący kod XML.
+   - Jeśli tworzysz szablon projektu Visual C#, należy użyć następujący kod XML.
 
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
@@ -389,7 +389,7 @@ ms.locfileid: "54864608"
    </VSTemplate>
    ```
 
-   -   Jeśli tworzysz szablon projektu Visual Basic, należy użyć następujący kod XML.
+   - Jeśli tworzysz szablon projektu Visual Basic, należy użyć następujący kod XML.
 
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
@@ -439,9 +439,9 @@ ms.locfileid: "54864608"
 
 #### <a name="to-edit-the-projecttemplatecsproj-or-projecttemplatevbproj-file"></a>Aby edytować plik projecttemplate.csproj lub projecttemplate.vbproj
 
-1.  W projekcie SiteColumnProjectTemplate, Zastąp zawartość *ProjectTemplate.csproj* pliku lub *ProjectTemplate.vbproj* plik z jednym z następujących sekcji w pliku XML.
+1. W projekcie SiteColumnProjectTemplate, Zastąp zawartość *ProjectTemplate.csproj* pliku lub *ProjectTemplate.vbproj* plik z jednym z następujących sekcji w pliku XML.
 
-    -   Jeśli tworzysz szablon projektu Visual C#, należy użyć następujący kod XML.
+    - Jeśli tworzysz szablon projektu Visual C#, należy użyć następujący kod XML.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -521,7 +521,7 @@ ms.locfileid: "54864608"
     </Project>
     ```
 
-    1.  Jeśli tworzysz szablon projektu Visual Basic, należy użyć następujący kod XML.
+    1. Jeśli tworzysz szablon projektu Visual Basic, należy użyć następujący kod XML.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -622,43 +622,43 @@ ms.locfileid: "54864608"
 
      Nowy plik XML wprowadza następujące zmiany w pliku:
 
-    -   Używa `TargetFrameworkVersion` elementu, aby określić .NET Framework 3.5, nie 4.5.
+    - Używa `TargetFrameworkVersion` elementu, aby określić .NET Framework 3.5, nie 4.5.
 
-    -   Dodaje `SignAssembly` i `AssemblyOriginatorKeyFile` elementy do podpisywania wyniku projektu.
+    - Dodaje `SignAssembly` i `AssemblyOriginatorKeyFile` elementy do podpisywania wyniku projektu.
 
-    -   Dodaje `Reference` elementy dla zestawu odwołuje się do projektów używających programu SharePoint.
+    - Dodaje `Reference` elementy dla zestawu odwołuje się do projektów używających programu SharePoint.
 
-    -   Dodaje elementy dla każdego domyślnego pliku w projekcie, takie jak *Elements.xml* i *SharePointProjectItem.spdata*.
+    - Dodaje elementy dla każdego domyślnego pliku w projekcie, takie jak *Elements.xml* i *SharePointProjectItem.spdata*.
 
-2.  Zapisz i zamknij plik.
+2. Zapisz i zamknij plik.
 
 ## <a name="create-a-vsix-package-to-deploy-the-project-template"></a>Utwórz pakiet VSIX do wdrożenia szablonu projektu
  Aby wdrożyć rozszerzenie, należy użyć projektu VSIX w **SiteColumnProjectItem** rozwiązania, aby utworzyć pakiet VSIX. Najpierw należy skonfigurować pakiet VSIX modyfikując plik source.extension.vsixmanifest, który znajduje się w projekcie VSIX. Następnie należy utworzyć pakiet VSIX przez utworzenie rozwiązania.
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>Aby skonfigurować i utworzyć pakiet VSIX
 
-1.  W **Eksploratora rozwiązań**w **SiteColumnProjectItem** projektu, otwórz plik source.extension.vsixmanifest w edytorze manifestu.
+1. W **Eksploratora rozwiązań**w **SiteColumnProjectItem** projektu, otwórz plik source.extension.vsixmanifest w edytorze manifestu.
 
      Plik source.extension.vsixmanifest jest podstawą dla pliku extension.vsixmanifest, które wymagają wszystkie pakiety VSIX. Aby uzyskać więcej informacji na temat tego pliku, zobacz [odwołania 1.0 schematu rozszerzenia VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
 
-2.  W **nazwa produktu** wprowadź **kolumny witryny**.
+2. W **nazwa produktu** wprowadź **kolumny witryny**.
 
-3.  W **Autor** wprowadź **Contoso**.
+3. W **Autor** wprowadź **Contoso**.
 
-4.  W **opis** wprowadź **projekt programu SharePoint do tworzenia kolumny witryny**.
+4. W **opis** wprowadź **projekt programu SharePoint do tworzenia kolumny witryny**.
 
-5.  Wybierz **zasoby** kartę, a następnie wybierz **New** przycisku.
+5. Wybierz **zasoby** kartę, a następnie wybierz **New** przycisku.
 
      **Dodaj nowy zasób** zostanie otwarte okno dialogowe.
 
-6.  W **typu** wybierz **Microsoft.VisualStudio.ProjectTemplate**.
+6. W **typu** wybierz **Microsoft.VisualStudio.ProjectTemplate**.
 
     > [!NOTE]
     >  Ta wartość odpowiada `ProjectTemplate` elementu w pliku extension.vsixmanifest. Ten element umożliwia określenie podfolderu w pakiecie VSIX, który zawiera szablon projektu. Aby uzyskać więcej informacji, zobacz [ProjectTemplate — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)).
 
-7.  W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.
+7. W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.
 
-8.  W **projektu** i wybierz polecenie **SiteColumnProjectTemplate**, a następnie wybierz **OK** przycisku.
+8. W **projektu** i wybierz polecenie **SiteColumnProjectTemplate**, a następnie wybierz **OK** przycisku.
 
 9. Wybierz **New** ponownie przycisk.
 
@@ -680,76 +680,74 @@ ms.locfileid: "54864608"
 
 #### <a name="to-start-debugging-the-solution"></a>Aby rozpocząć debugowanie rozwiązania
 
-1.  Uruchom program Visual Studio przy użyciu poświadczeń administracyjnych, a następnie otwórz rozwiązanie SiteColumnProjectItem.
+1. Uruchom program Visual Studio przy użyciu poświadczeń administracyjnych, a następnie otwórz rozwiązanie SiteColumnProjectItem.
 
-2.
-
-3.  W pliku kodu SiteColumnProjectItemTypeProvider, Dodaj punkt przerwania do pierwszego wiersza kodu w `InitializeType` metody, a następnie wybierz **F5** klawisz, aby rozpocząć debugowanie.
+2. W pliku kodu SiteColumnProjectItemTypeProvider, Dodaj punkt przerwania do pierwszego wiersza kodu w `InitializeType` metody, a następnie wybierz **F5** klawisz, aby rozpocząć debugowanie.
 
      Visual Studio instaluje rozszerzenia do %UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\Site Column\1.0 i uruchamia doświadczalne wystąpienie programu Visual Studio. Element projektu spowoduje przetestowanie w tym wystąpieniu programu Visual Studio.
 
 #### <a name="to-test-the-project-in-visual-studio"></a>Aby przetestować projekt w programie Visual Studio
 
-1.  W doświadczalnym wystąpieniu programu Visual Studio, na pasku menu wybierz **pliku** > **New** > **projektu**.
+1. W doświadczalnym wystąpieniu programu Visual Studio, na pasku menu wybierz **pliku** > **New** > **projektu**.
 
-2.  Rozwiń **Visual C#** lub **języka Visual Basic** węzeł (w zależności od języka obsługującego przez szablon projektu), rozwiń węzeł **SharePoint** węzła, a następnie wybierz polecenie **2010** węzła.
+2. Rozwiń **Visual C#** lub **języka Visual Basic** węzeł (w zależności od języka obsługującego przez szablon projektu), rozwiń węzeł **SharePoint** węzła, a następnie wybierz polecenie **2010** węzła.
 
-3.  Na liście szablonów projektu wybierz **kolumny witryny** szablonu.
+3. Na liście szablonów projektu wybierz **kolumny witryny** szablonu.
 
-4.  W **nazwa** wprowadź **SiteColumnTest** , a następnie wybierz **OK** przycisku.
+4. W **nazwa** wprowadź **SiteColumnTest** , a następnie wybierz **OK** przycisku.
 
      W **Eksploratora rozwiązań**, pojawi się nowy projekt z elementem projektu, który nosi nazwę **pole1**.
 
-5.  Sprawdź, czy kod w innym wystąpieniu programu Visual Studio zatrzymuje się na punkcie przerwania, który wcześniej w ustawieniu `InitializeType` metody, a następnie wybierz **F5** klawisz, aby kontynuować debugowanie projektu.
+5. Sprawdź, czy kod w innym wystąpieniu programu Visual Studio zatrzymuje się na punkcie przerwania, który wcześniej w ustawieniu `InitializeType` metody, a następnie wybierz **F5** klawisz, aby kontynuować debugowanie projektu.
 
-6.  W **Eksploratora rozwiązań**, wybierz **pole1** węzła, a następnie wybierz **F4** klucza.
+6. W **Eksploratora rozwiązań**, wybierz **pole1** węzła, a następnie wybierz **F4** klucza.
 
      **Właściwości** zostanie otwarte okno.
 
-7.  Na liście właściwości, upewnij się, że właściwość **właściwość przykład** pojawia się.
+7. Na liście właściwości, upewnij się, że właściwość **właściwość przykład** pojawia się.
 
 #### <a name="to-test-the-site-column-in-sharepoint"></a>Aby przetestować kolumny witryny w programie SharePoint
 
-1.  W **Eksploratora rozwiązań**, wybierz **SiteColumnTest** węzła.
+1. W **Eksploratora rozwiązań**, wybierz **SiteColumnTest** węzła.
 
-2.  W **właściwości** okna, w polu tekstowym, koło **adres URL witryny** właściwości wprowadź **http://localhost**.
+2. W **właściwości** okna, w polu tekstowym, koło **adres URL witryny** właściwości wprowadź **http://localhost**.
 
      Ten krok określa lokalnej witryny programu SharePoint na komputerze programisty, który ma być używane do debugowania.
 
     > [!NOTE]
     >  **Adres URL witryny** właściwość jest domyślnie puste, ponieważ szablon projektu kolumn witryny nie udostępnia kreatora pobierania tej wartości podczas tworzenia projektu. Aby dowiedzieć się, jak dodać kreatora, który pyta dewelopera dla tej wartości, a następnie konfiguruje tę właściwość w nowym projekcie, zobacz [instruktażu: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
 
-3.  Wybierz **F5** klucza.
+3. Wybierz **F5** klucza.
 
      Kolumny witryny zostaje spakowany i wdrożyć w witrynie programu SharePoint, który jest określony w **adres URL witryny** właściwość projektu. Przeglądarka sieci web zostanie otwarta domyślna strona tej lokacji.
 
     > [!NOTE]
     >  Jeśli **wyłączenia debugowania skryptu** pojawi się okno dialogowe, wybierz **tak** przycisk, aby kontynuować debugowanie projektu.
 
-4.  Na **Akcje witryny** menu, wybierz **ustawienia lokacji**.
+4. Na **Akcje witryny** menu, wybierz **ustawienia lokacji**.
 
-5.  Na **ustawienia lokacji** w obszarze **galerie** wybierz **kolumny witryny** łącza.
+5. Na **ustawienia lokacji** w obszarze **galerie** wybierz **kolumny witryny** łącza.
 
-6.  Na liście kolumn witryn, upewnij się, że **kolumn niestandardowych** grupa zawiera kolumnę o nazwie **SiteColumnTest**.
+6. Na liście kolumn witryn, upewnij się, że **kolumn niestandardowych** grupa zawiera kolumnę o nazwie **SiteColumnTest**.
 
-7.  Zamknij przeglądarkę sieci web.
+7. Zamknij przeglądarkę sieci web.
 
 ## <a name="clean-up-the-development-computer"></a>Czyszczenie na komputerze deweloperskim
  Po zakończeniu testowania projektu, należy usunąć szablon projektu w doświadczalnym wystąpieniu programu Visual Studio.
 
 #### <a name="to-clean-up-the-development-computer"></a>Aby wyczyścić komputerze deweloperskim
 
-1.  W doświadczalnym wystąpieniu programu Visual Studio, na pasku menu wybierz **narzędzia** > **rozszerzenia i aktualizacje**.
+1. W doświadczalnym wystąpieniu programu Visual Studio, na pasku menu wybierz **narzędzia** > **rozszerzenia i aktualizacje**.
 
      **Rozszerzenia i aktualizacje** zostanie otwarte okno dialogowe.
 
-2.  Na liście rozszerzeń wybierz **kolumny witryny** rozszerzenie, a następnie wybierz **Odinstaluj** przycisku.
+2. Na liście rozszerzeń wybierz **kolumny witryny** rozszerzenie, a następnie wybierz **Odinstaluj** przycisku.
 
-3.  W oknie dialogowym wybierz **tak** przycisk, aby upewnić się, że chcesz odinstalować rozszerzenie.
+3. W oknie dialogowym wybierz **tak** przycisk, aby upewnić się, że chcesz odinstalować rozszerzenie.
 
-4.  Wybierz **Zamknij** przycisk, aby ukończyć dezinstalację.
+4. Wybierz **Zamknij** przycisk, aby ukończyć dezinstalację.
 
-5.  Zamknij oba wystąpienia programu Visual Studio (wystąpienie doświadczalne i wystąpienie programu Visual Studio, w którym rozwiązanie SiteColumnProjectItem jest otwarty).
+5. Zamknij oba wystąpienia programu Visual Studio (wystąpienie doświadczalne i wystąpienie programu Visual Studio, w którym rozwiązanie SiteColumnProjectItem jest otwarty).
 
 ## <a name="next-steps"></a>Następne kroki
  Po ukończeniu tego przewodnika kreatora można dodać do szablonu projektu. Gdy użytkownik tworzy projekt kolumny witryny, Kreator zapyta użytkownika o adres URL witryny na potrzeby debugowania i nowe rozwiązanie jest w trybie piaskownicy, a Kreator konfiguruje nowy projekt z tymi informacjami. Kreator również zbiera informacje o kolumnie (na przykład typ podstawowy i grupy, w której ma na liście kolumn w galerii kolumny) i dodaje te informacje do *Elements.xml* plik w nowym projekcie. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).

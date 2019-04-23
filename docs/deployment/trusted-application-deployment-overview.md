@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59ed3b8e62bbb2086581d89016d4609ab215f0de
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 65b06ada96387ac4bff022c92e4025718b0291d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604954"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064300"
 ---
 # <a name="trusted-application-deployment-overview"></a>Zaufane wdrożenie aplikacji — omówienie
 Ten temat zawiera omówienie sposobu wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, które mają podwyższony poziom uprawnień przy użyciu technologii zaufanego wdrożenia aplikacji.
@@ -75,9 +75,9 @@ Należy wykonać następujące kroki, aby móc korzystać z zaufanego wdrożenia
 
  Nie wymaga wdrażania aplikacji w środowisku zarządzanym pulpitu, masz następujące opcje umożliwiające dodawanie certyfikatu do magazynu zaufanego wydawcy:
 
--   <xref:System.Security.Cryptography?displayProperty=fullName> Przestrzeni nazw.
+- <xref:System.Security.Cryptography?displayProperty=fullName> Przestrzeni nazw.
 
--   *CertMgr.exe*, który jest składnikiem programu Internet Explorer i w związku z tym istnieje w systemach Windows 98 i wszystkich nowszych wersji. Aby uzyskać więcej informacji, zobacz [Certmgr.exe (Menedżer certyfikatów narzędzie)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
+- *CertMgr.exe*, który jest składnikiem programu Internet Explorer i w związku z tym istnieje w systemach Windows 98 i wszystkich nowszych wersji. Aby uzyskać więcej informacji, zobacz [Certmgr.exe (Menedżer certyfikatów narzędzie)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
 
 ### <a name="create-a-clickonce-application"></a>Tworzenie aplikacji ClickOnce
  A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja jest [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] aplikacja kliencka w połączeniu z plików manifestu, które opisują aplikacji, a następnie podaj parametry instalacji. Można włączyć program do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikację za pomocą **Publikuj** polecenia w pliku [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Alternatywnie można wygenerować wszystkie pliki, które są wymagane do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia za pomocą narzędzi, które są dołączone [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Aby uzyskać szczegółowe instrukcje dotyczące [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrażania, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).

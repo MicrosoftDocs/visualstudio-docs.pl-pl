@@ -27,12 +27,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a9c68709c1a06a84fe624bee726da5a12920dbd
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: e60f9b3c9acf1377139fee27486bb10251d8804a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834086"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059595"
 ---
 # <a name="memory-windows"></a>Okno pamięci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ ms.locfileid: "54834086"
   
 #### <a name="to-open-a-memory-window"></a>Aby otworzyć okno pamięci  
   
-1.  Uruchom profilowanie, jeśli nie jesteś już w trybie debugowania.  
+1. Uruchom profilowanie, jeśli nie jesteś już w trybie debugowania.  
   
-2.  W **debugowania** menu wskaż **Windows**. Następnie wskaż **pamięci** a następnie kliknij przycisk **pamięci 1**, **pamięci 2**, **3 pamięci**, lub **pamięci 4**. (Niższe wersje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mieć tylko jeden **pamięci** okna. Jeśli używasz jednego z tych wersji, wystarczy kliknąć **pamięci**.)  
+2. W **debugowania** menu wskaż **Windows**. Następnie wskaż **pamięci** a następnie kliknij przycisk **pamięci 1**, **pamięci 2**, **3 pamięci**, lub **pamięci 4**. (Niższe wersje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mieć tylko jeden **pamięci** okna. Jeśli używasz jednego z tych wersji, wystarczy kliknąć **pamięci**.)  
   
 ## <a name="paging-in-the-memory-window"></a>Stronicowanie w oknie pamięci  
  **Pamięci** okno ma pionowy pasek przewijania, który działa w sposób niestandardowy. Przestrzeń adresowa nowoczesnych komputera jest bardzo duże, a użytkownik może łatwo giną Przechwytywanie przycisku przewijania suwaka, a następnie przeciągając go do losowo wybranej lokalizacji. Z tego powodu uchwytu jest "obciążony" i zawsze pozostaje w środkowej części paska przewijania. W aplikacjach kodu macierzystego można stronę w górę lub w dół, ale nie można swobodnie Przewiń o.  
@@ -56,33 +56,33 @@ ms.locfileid: "54834086"
   
 #### <a name="to-page-up-or-down-in-memory"></a>Stronę w górę lub w dół w pamięci  
   
-1.  Na stronie szczegółów (przeniesienie na wyższe adresu pamięci), kliknij w obszarze przycisku przewijania w pionowy pasek przewijania.  
+1. Na stronie szczegółów (przeniesienie na wyższe adresu pamięci), kliknij w obszarze przycisku przewijania w pionowy pasek przewijania.  
   
-2.  Stronę w górę (przeniesienie na niższym adresu pamięci), kliknij powyżej przycisku suwaka pionowy pasek przewijania.  
+2. Stronę w górę (przeniesienie na niższym adresu pamięci), kliknij powyżej przycisku suwaka pionowy pasek przewijania.  
   
 ## <a name="selecting-a-memory-location"></a>Wybieranie lokalizacji w pamięci  
  Jeśli chcesz przechodzić bezpośrednio do wybranej lokalizacji w pamięci, możesz to zrobić przy użyciu operacji przeciągania i upuszczania lub też edytując wartość **adres** pole. **Adres** w polu można nie tylko wartości liczbowe, ale także wyrażeń, które dają adresów. Domyślnie **pamięci** traktuje okna **adres** wyrażenia jako wyrażenia na żywo jest ponownie oceniane, gdy program jest wykonywana. Wyrażenia na żywo mogą być bardzo przydatne. Na przykład umożliwia im wyświetlanie pamięci, która jest korzystały wskaźnik.  
   
 #### <a name="to-select-a-memory-location-by-dragging-and-dropping"></a>Aby wybrać lokalizację pamięci przez przeciąganie i upuszczanie  
   
-1.  W dowolnym oknie Wybierz pamięci adres lub wskaźnik zmienna, która zawiera adres pamięci.  
+1. W dowolnym oknie Wybierz pamięci adres lub wskaźnik zmienna, która zawiera adres pamięci.  
   
-2.  Przeciągnij adres lub wskaźnik do **pamięci** okna.  
+2. Przeciągnij adres lub wskaźnik do **pamięci** okna.  
   
 #### <a name="to-select-a-memory-location-by-editing"></a>Aby wybrać lokalizację pamięci, edytując  
   
-1.  W **pamięci** wybierz **adres** pole.  
+1. W **pamięci** wybierz **adres** pole.  
   
-2.  Wpisz lub wklej adres, aby zobaczyć, a następnie naciśnij klawisz **ENTER**.  
+2. Wpisz lub wklej adres, aby zobaczyć, a następnie naciśnij klawisz **ENTER**.  
   
 ## <a name="changing-the-way-the-memory-window-displays-information"></a>Zmienia sposób Wyświetla informacje okna pamięci  
  Można dostosować sposób **pamięci** okno wyświetla zawartość pamięci. Domyślnie zawartość pamięci są wyświetlane jako jedna bajtowe liczby całkowite w formacie szesnastkowym, a liczba kolumn jest określana automatycznie przez bieżący szerokość okna.  
   
 #### <a name="to-change-the-format-of-the-memory-contents"></a>Aby zmienić format zawartość pamięci  
   
-1.  Kliknij prawym przyciskiem myszy **pamięci** okna.  
+1. Kliknij prawym przyciskiem myszy **pamięci** okna.  
   
-2.  Wybierz żądany format.  
+2. Wybierz żądany format.  
   
 #### <a name="to-change-the-number-of-columns-in-the-memory-window"></a>Aby zmienić liczbę kolumn w oknie pamięci  
   
@@ -104,9 +104,9 @@ ms.locfileid: "54834086"
   
 #### <a name="to-toggle-the-toolbar"></a>Aby przełączyć na pasku narzędzi  
   
-1.  Kliknij prawym przyciskiem myszy **pamięci** okna.  
+1. Kliknij prawym przyciskiem myszy **pamięci** okna.  
   
-2.  W menu skrótów kliknij **Pokaż pasek narzędzi**.  
+2. W menu skrótów kliknij **Pokaż pasek narzędzi**.  
   
      Pasek narzędzi pojawi się lub znika, w zależności od poprzedniego stanu.  
   
@@ -115,9 +115,9 @@ ms.locfileid: "54834086"
   
 #### <a name="to-follow-a-pointer-through-memory"></a>Aby podążał za wskaźnikiem za pośrednictwem pamięci  
   
-1.  W **pamięci** okna **adres** wpisz wyrażenie wskaźnika. Zmienna wskaźnika musi być w bieżącym zakresie. W zależności od języka może być konieczne odwołania do niego.  
+1. W **pamięci** okna **adres** wpisz wyrażenie wskaźnika. Zmienna wskaźnika musi być w bieżącym zakresie. W zależności od języka może być konieczne odwołania do niego.  
   
-2.  Naciśnij klawisz **ENTER**.  
+2. Naciśnij klawisz **ENTER**.  
   
      Teraz, kiedy używasz polecenia wykonywania takich jak **kroku**, adres pamięci, która jest wyświetlana automatycznie zmieni się zgodnie ze zmianami wskaźnika.  
   

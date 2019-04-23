@@ -8,12 +8,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cc43a90941cef8efe1e4cb87a9d411ada5cfe7b2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a0907c2c73a175d9ec0d1e502e8f14f1ac0604fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793649"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049805"
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: Niezabezpieczone przetwarzanie w elemencie Design interfejsu API, dokumencie XML i czytniku tekstu dla kodu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ ms.locfileid: "54793649"
 ## <a name="rule-description"></a>Opis reguły
  A [definicji typu dokumentu (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) jest jeden z dwóch sposobów analizatora XML można określić ważności dokumentu, zgodnie z definicją [World Wide Web Consortium (W3C) XML Extensible Markup Language () 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Ta reguła szuka właściwości i wystąpienia, gdzie niezaufanych danych jest akceptowany w celu otrzymania deweloperów o potencjalnych [ujawnienie informacji](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) zagrożenia, które mogą prowadzić do [przeprowadzenie ataku typu "odmowa usługi" (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) ataków. Ta zasada wyzwala, gdy:
 
--   <xref:System.Xml.XmlDocument> lub <xref:System.Xml.XmlTextReader> klasy używać domyślnego programu rozpoznawania nazw wartości przetwarzanie elementu DTD.
+- <xref:System.Xml.XmlDocument> lub <xref:System.Xml.XmlTextReader> klasy używać domyślnego programu rozpoznawania nazw wartości przetwarzanie elementu DTD.
 
--   Żaden konstruktor nie jest zdefiniowany dla obiektu XmlDocument klasy pochodne klasy XmlTextReader lub nie bezpieczne jest wykorzystywana do <xref:System.Xml.XmlResolver>.
+- Żaden konstruktor nie jest zdefiniowany dla obiektu XmlDocument klasy pochodne klasy XmlTextReader lub nie bezpieczne jest wykorzystywana do <xref:System.Xml.XmlResolver>.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
--   CATCH i przetwórz wszystkie wyjątki klasy XmlTextReader poprawnie, aby uniknąć ujawnienia informacji ścieżki.
+- CATCH i przetwórz wszystkie wyjątki klasy XmlTextReader poprawnie, aby uniknąć ujawnienia informacji ścieżki.
 
--   Użyj <xref:System.Xml.XmlSecureResolver>zamiast element XmlResolver do ograniczania zasobów, mogą uzyskiwać dostęp do klasy XmlTextReader.
+- Użyj <xref:System.Xml.XmlSecureResolver>zamiast element XmlResolver do ograniczania zasobów, mogą uzyskiwać dostęp do klasy XmlTextReader.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Jeśli nie masz pewności, że dane wejściowe jest znany jako z zaufanego źródła, nie Pomijaj reguły z tego ostrzeżenia.

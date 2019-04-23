@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2093db67a97bcd913773feebe0a4f10bf6ac9180
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b308fb97a55f61645d038c9a81445f4561415e9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659504"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047883"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Obszar testowy 8: przełączanie wtyczki
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zintegrowanego środowiska programistycznego (IDE) ma interfejs użytkownika (UI), aby zmienić bieżącą wtyczką kontroli źródła. Ten obszar testowy zawiera przypadki testowe dla procesu pobrania, który wtyczki do użycia rozwiązania kontroli źródła.
@@ -24,9 +24,9 @@ ms.locfileid: "59659504"
 ## <a name="command-menu-access"></a>Dostęp do Menu polecenia
  Następujące [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ścieżki menu środowiska zintegrowanego rozwoju są używane w przypadkach testowych.
 
--   Bieżącą wtyczką kontroli źródła: **Narzędzia** -> **opcje** -> **kontroli źródła** -> **wybór wtyczki**.
+- Bieżącą wtyczką kontroli źródła: **Narzędzia** -> **opcje** -> **kontroli źródła** -> **wybór wtyczki**.
 
--   Zmień źródło powiązaniu kontroli: **Plik** -> **kontroli źródła** -> **Zmień kontrolę źródła**...
+- Zmień źródło powiązaniu kontroli: **Plik** -> **kontroli źródła** -> **Zmień kontrolę źródła**...
 
 ## <a name="common-expected-behavior"></a>Typowe oczekiwane zachowanie.
  Zmiana wtyczka do kontroli źródła dla rozwiązania jest możliwa bez zamykania programu Visual Studio lub ponowne załadowanie rozwiązania. Ponadto bieżącą wtyczką kontroli źródła automatycznie zmieni się używaną przez rozwiązanie po załadowaniu tego rozwiązania.

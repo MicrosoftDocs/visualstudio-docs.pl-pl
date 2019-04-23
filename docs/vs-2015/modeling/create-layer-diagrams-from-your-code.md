@@ -14,12 +14,12 @@ caps.latest.revision: 64
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1597d71ac0eef5d044e0378cc71a9f109b2fc99e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a3ff96a68d66c95d4f1302ba2f419c873e8f077d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762342"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050215"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Tworzenie diagramów warstw z kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Aby zwizualizować systemu oprogramowania logiczną architekturę wysokiego, Utw
   
  Diagram warstwowy pozwala organizować elementy rozwiązania Visual Studio w logiczne, abstrakcyjne grupy o nazwie *warstwy*. Można użyć warstw do opisania głównych zadań wykonywanych przez te artefakty lub główne składniki systemu. Każda warstwa może zawierać innych warstwy opisujące bardziej szczegółowe zadania. Można również określić zamierzone lub istniejące *zależności* między warstwami. Te zależności, które są reprezentowane jako strzałki, wskazują, które warstwy mogą używać lub obecnie używają funkcje reprezentowane przez inne warstwy. Aby utrzymać kontrolę architektury kodu, wyświetl zamierzone zależności na diagramie i przeprowadź walidację kodu na podstawie diagramu.  
   
-##  <a name="CreateDiagram"></a> Tworzenie diagramu warstwowego  
+## <a name="CreateDiagram"></a> Tworzenie diagramu warstwowego  
  Przed utworzeniem diagramu warstwowego upewnij się, że rozwiązanie ma projektu modelowania. Zobacz [UML tworzenie projektów i diagramów modelowania](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
 > [!IMPORTANT]
@@ -40,13 +40,13 @@ Aby zwizualizować systemu oprogramowania logiczną architekturę wysokiego, Utw
   
 #### <a name="to-add-a-new-layer-diagram-to-a-modeling-project"></a>Aby dodać nowy diagram warstwowy do projektu modelowania  
   
-1.  Na **architektury** menu, wybierz **nowe UML lub diagramu warstwowego**.  
+1. Na **architektury** menu, wybierz **nowe UML lub diagramu warstwowego**.  
   
-2.  W obszarze **szablony**, wybierz **diagramu warstwowego**.  
+2. W obszarze **szablony**, wybierz **diagramu warstwowego**.  
   
-3.  Nadaj nazwę diagramowi.  
+3. Nadaj nazwę diagramowi.  
   
-4.  W **Dodaj do projektu modelowania**, wyszukaj i wybierz istniejący projekt modelowania w rozwiązaniu.  
+4. W **Dodaj do projektu modelowania**, wyszukaj i wybierz istniejący projekt modelowania w rozwiązaniu.  
   
      —lub—  
   
@@ -55,9 +55,9 @@ Aby zwizualizować systemu oprogramowania logiczną architekturę wysokiego, Utw
     > [!NOTE]
     >  Diagram warstwowy musi istnieć w projekcie modelowania. Możesz jednak połączyć elementy w innym miejscu rozwiązania.  
   
-5.  Pamiętaj, aby zapisać zarówno projekt modelowania, jak i diagram warstwowy.  
+5. Pamiętaj, aby zapisać zarówno projekt modelowania, jak i diagram warstwowy.  
   
-##  <a name="CreateLayers"></a> Tworzenie warstw z artefaktów  
+## <a name="CreateLayers"></a> Tworzenie warstw z artefaktów  
  Warstwy możesz tworzyć z elementów rozwiązania Visual Studio, takich jak projekty, pliki kodu, przestrzenie nazw, klasy i metody. Powoduje to automatyczne tworzenie łączy między warstwami i elementami, uwzględniając je w procesie walidacji warstwy.  
   
  Możesz również połączyć warstwy z elementami, które nie obsługują walidacji, takimi jak dokumenty programu Word lub prezentacji programu PowerPoint, tak aby można było skojarzyć warstwy ze specyfikacjami lub planami. Możesz również połączyć warstwy z plikami projektów współużytkowanymi przez wiele aplikacji, ale proces walidacji nie uwzględni warstw wyświetlanych z nazwami rodzajowymi, takimi jak „Warstwa 1” i „Warstwa 2”.  
@@ -80,19 +80,19 @@ Aby zwizualizować systemu oprogramowania logiczną architekturę wysokiego, Utw
   
  Liczba na warstwie oznacza liczbę artefaktów, które są połączone z warstwą. Jednak odczytując tę liczbę, należy pamiętać, że:  
   
--   Jeśli warstwa jest połączona z artefaktem zawierającym inne artefakty, ale warstwy nie łączy się bezpośrednio z innymi artefaktami, wówczas liczba uwzględnia tylko połączony artefakt. Jednak inne artefakty są uwzględniane w analizie podczas walidacji warstwy.  
+- Jeśli warstwa jest połączona z artefaktem zawierającym inne artefakty, ale warstwy nie łączy się bezpośrednio z innymi artefaktami, wówczas liczba uwzględnia tylko połączony artefakt. Jednak inne artefakty są uwzględniane w analizie podczas walidacji warstwy.  
   
      Na przykład, jeżeli warstwa jest połączona z pojedynczą przestrzenią nazw, liczba połączonych artefaktów wynosi 1, nawet jeśli przestrzeń nazw zawiera klasy. Jeśli warstwa zawiera także łącza do każdej klasy w przestrzeni nazw, liczba będzie uwzględniać połączone klasy.  
   
--   Jeśli warstwa zawiera inne warstwy, które są połączone z artefaktami, warstwa kontenerów jest także połączona z tymi artefaktami, mimo że liczba na warstwie kontenerów nie uwzględnia tych artefaktów.  
+- Jeśli warstwa zawiera inne warstwy, które są połączone z artefaktami, warstwa kontenerów jest także połączona z tymi artefaktami, mimo że liczba na warstwie kontenerów nie uwzględnia tych artefaktów.  
   
-##  <a name="Managing"></a> Zarządzanie połączeniami między warstwami i artefaktami  
+## <a name="Managing"></a> Zarządzanie połączeniami między warstwami i artefaktami  
   
-1.  Na diagramie warstwowym Otwórz menu skrótów dla warstwy, a następnie wybierz **Wyświetl łącza**.  
+1. Na diagramie warstwowym Otwórz menu skrótów dla warstwy, a następnie wybierz **Wyświetl łącza**.  
   
      **Eksplorator warstw** Wyświetla łącza artefaktów dla zaznaczonej warstwy.  
   
-2.  Wykonaj następujące zadania, aby zarządzać tymi łączami:  
+2. Wykonaj następujące zadania, aby zarządzać tymi łączami:  
   
 |**To**|**W Eksploratorze warstw**|  
 |------------|---------------------------|  
@@ -102,7 +102,7 @@ Aby zwizualizować systemu oprogramowania logiczną architekturę wysokiego, Utw
 |Tworzenie nowej warstwy z istniejącego łącza artefaktu|Przeciągnij łącze artefaktu do pustego obszaru na diagramie.|  
 |Sprawdź, czy połączony artefakt obsługuje walidację na podstawie diagramu warstwowego.|Przyjrzyj się **obsługuje walidację** kolumny dla łącza artefaktu.|  
   
-##  <a name="Discovering"></a> Odtwarzanie istniejących zależności  
+## <a name="Discovering"></a> Odtwarzanie istniejących zależności  
  Zależność istnieje wszędzie tam, gdzie artefakt, który jest skojarzony z jedną warstwą zawiera odwołanie do artefaktu skojarzonego z inną warstwą. Na przykład klasa w jednej warstwie deklaruje zmienną, która zawiera klasę w innej warstwie. Możesz odtwarzać istniejące zależności dla artefaktów, które są połączone z warstwami na diagramie.  
   
 > [!NOTE]
@@ -112,7 +112,7 @@ Aby zwizualizować systemu oprogramowania logiczną architekturę wysokiego, Utw
   
   Zazwyczaj zobaczysz niektóre zależności, które nie powinny istnieć. Możesz edytować te zależności, aby dopasować je do zamierzonego projektu.  
   
-##  <a name="EditDependencies"></a> Edytowanie warstw i zależności w celu przedstawienia zamierzonego projektu  
+## <a name="EditDependencies"></a> Edytowanie warstw i zależności w celu przedstawienia zamierzonego projektu  
  Do opisania zmian, które planujesz wprowadzić do systemu lub zamierzonej architektury, przeprowadź edycję diagramu warstwowego:  
   
 |**To**|**Wykonaj następujące kroki**|  
@@ -123,17 +123,17 @@ Aby zwizualizować systemu oprogramowania logiczną architekturę wysokiego, Utw
 |Określanie, że artefakty skojarzone z warstwą nie mogą należeć do określonych przestrzeni nazw|Wpisz przestrzenie nazw w warstwie **zabronione przestrzenie nazw** właściwości. Użyj średnika (**;**) do oddzielenia przestrzeni nazw.|  
 |Określanie, że artefakty skojarzone z warstwą muszą należeć do jednej z określonych przestrzeni nazw|Wpisz przestrzeń nazw w warstwie **wymagane przestrzenie nazw** właściwości. Użyj średnika (**;**) do oddzielenia przestrzeni nazw.|  
   
-##  <a name="EditLayout"></a> Zmienianie sposobu wyświetlania elementów na diagramie  
+## <a name="EditLayout"></a> Zmienianie sposobu wyświetlania elementów na diagramie  
  Możesz zmieniać rozmiar, kształt, kolor i położenie warstw lub kolor zależności, edytując ich właściwości.  
   
-##  <a name="Codemaps"></a> Odnajdowanie wzorców i zależności na mapie kodu  
+## <a name="Codemaps"></a> Odnajdowanie wzorców i zależności na mapie kodu  
  Podczas tworzenia diagramów warstwowych, mogą również utworzyć **map kodu**. Te diagramy ułatwia odnajdowanie wzorców i zależności, chociaż możesz zapoznać się z kodu. Użyj Eksploratora rozwiązań, widoku klas lub przeglądarki obiektów, aby zapoznać się z zestawów, przestrzeni nazw i klas — które często dobrze odpowiadają istniejącym warstwom. Aby uzyskać więcej informacji na temat map kodu zobacz:  
   
--   [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)  
+- [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)  
   
--   [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)  
+- [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)  
   
--   [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)  
+- [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wideo Channel 9: Projektowanie i Walidacja architektury za pomocą diagramów warstwowych](http://go.microsoft.com/fwlink/?LinkID=252073)   

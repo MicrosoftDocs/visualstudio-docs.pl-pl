@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5535228f8e070128cfa2479d8017d3a88dc0915c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f07791a02c5e84722e8193f21b7ed2fe37bdd7f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790254"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064287"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Rozpoczynanie debugowania aplikacji wielowątkowych (C#, Visual Basic, C++)
 
@@ -234,17 +234,17 @@ Musisz mieć projekt aplikacji wielowątkowych. Poniżej przedstawiono przykład
 
 ### <a name="ShowThreadsInSource"></a>Odkryj znacznika wątku  
 
-1.  Na pasku narzędzi debugowania, wybierz **Pokaż wątki w źródle** przycisk ![Pokaż wątki w źródle](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
+1. Na pasku narzędzi debugowania, wybierz **Pokaż wątki w źródle** przycisk ![Pokaż wątki w źródle](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
 
 2. Naciśnij klawisz **F11** raz, aby awansować debugera jednego wiersza kodu.
 
-3.  Spójrz na oprawę w lewej części okna. W tym wierszu, zostanie wyświetlony *znacznika wątku* ikonę ![znacznika wątku](../debugger/media/dbg-thread-marker.png "ThreadMarker") o podobny dwoma wątkami skręconych. Znacznika wątku wskazuje, że wątek został zatrzymany w tej lokalizacji.
+3. Spójrz na oprawę w lewej części okna. W tym wierszu, zostanie wyświetlony *znacznika wątku* ikonę ![znacznika wątku](../debugger/media/dbg-thread-marker.png "ThreadMarker") o podobny dwoma wątkami skręconych. Znacznika wątku wskazuje, że wątek został zatrzymany w tej lokalizacji.
 
     Znacznika wątku może być częściowo zasłonięte przez punkt przerwania.
 
-4.  Umieść wskaźnik myszy nad znacznika wątku. Etykietki danych pojawi się numer identyfikacyjny nazwy i wątku dla każdego wątku zatrzymania. W takim przypadku nazwa jest prawdopodobnie `<noname>`.
+4. Umieść wskaźnik myszy nad znacznika wątku. Etykietki danych pojawi się numer identyfikacyjny nazwy i wątku dla każdego wątku zatrzymania. W takim przypadku nazwa jest prawdopodobnie `<noname>`.
 
-5.  Wybierz znacznik wątku, aby wyświetlić dostępne opcje w menu skrótów.
+5. Wybierz znacznik wątku, aby wyświetlić dostępne opcje w menu skrótów.
 
 ### <a name="ParallelStacks"></a>Wyświetlanie lokalizacji wątku
 
@@ -260,7 +260,7 @@ W **stosów równoległych** okna, można przełączać się między widokiem w�
     - Wprowadzono dwa wątki `ServerClass.InstanceMethod`, z których jedna jest bieżący wątek (żółta strzałka), podczas gdy inne wątku została zatrzymana w `Thread.Sleep`.
     - Nowy wątek (po prawej stronie) jest również uruchamiana, ale jest zatrzymana na `ThreadHelper.ThreadStart`.
 
-2.  Kliknij prawym przyciskiem myszy wpisy w **stosów równoległych** okna, aby wyświetlić dostępne opcje w menu skrótów.
+2. Kliknij prawym przyciskiem myszy wpisy w **stosów równoległych** okna, aby wyświetlić dostępne opcje w menu skrótów.
 
     Możesz wykonywać różne akcje te menu kliknij prawym przyciskiem myszy, ale w tym samouczku pokazano, jeden z tych szczegółów w **równoległego wyrażenia kontrolnego** okna (w kolejnych sekcjach).
 
@@ -292,14 +292,14 @@ Może Flaga wątków, aby śledzić ważne wątków i Ignoruj inne wątki.
 
     Wybrane wątki są oflagowane. Teraz możesz filtrować Pokaż tylko oflagowane wątki.
 
-3.  W **równoległego wyrażenia kontrolnego** wybierz **Pokaż tylko oflagowane wątki** przycisk ![Pokaż oflagowane wątki](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").
+3. W **równoległego wyrażenia kontrolnego** wybierz **Pokaż tylko oflagowane wątki** przycisk ![Pokaż oflagowane wątki](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").
 
     Tylko oflagowane wątki są wyświetlane na liście.
 
     > [!TIP]
     > Po flagą wątków, można kliknąć prawym przyciskiem myszy linię kodu w edytorze kodu i wybierz **Uruchom oflagowane wątki do kursora**. Upewnij się, że wybierz kod wszystkich wątków oflagowanych skontaktuje. Program Visual Studio spowoduje wstrzymanie wątków na wybrany wiersz kodu, dzięki czemu łatwiej jest kontrolować kolejność wykonywania przez [zawiesza się i odblokowania wątków](#bkmk_freeze).
 
-4.  Wybierz **Pokaż tylko oflagowane wątki** przycisk ponownie, aby powrócić do **Pokaż wszystkie wątki** trybu.
+4. Wybierz **Pokaż tylko oflagowane wątki** przycisk ponownie, aby powrócić do **Pokaż wszystkie wątki** trybu.
 
 5. Usuwanie oflagowania wątków, kliknij prawym przyciskiem myszy jeden lub więcej wątków oflagowanych w **równoległego wyrażenia kontrolnego** okna, a następnie wybierz pozycję **Unflag**.
 
@@ -308,17 +308,17 @@ Może Flaga wątków, aby śledzić ważne wątków i Ignoruj inne wątki.
 > [!TIP]
 > Można blokowanie i odblokowywanie (Wstrzymanie i wznowienie) wątków, aby kontrolować kolejność, w którym wątków wykonywania pracy. Może to pomóc Ci rozwiązać problemy ze współbieżnością, takich jak zakleszczenia i wyścigu.
 
-1.  W **równoległego wyrażenia kontrolnego** okna z wszystkich wybranych wierszy, kliknij prawym przyciskiem myszy i wybierz pozycję **Freeze**.
+1. W **równoległego wyrażenia kontrolnego** okna z wszystkich wybranych wierszy, kliknij prawym przyciskiem myszy i wybierz pozycję **Freeze**.
 
     W drugiej kolumnie ikona Wstrzymaj pojawia się dla każdego wiersza. Ikona Wstrzymaj wskazuje, że wątek jest zablokowane.
 
-2.  Usuń zaznaczenie wszystkich innych wierszy, wybierając tylko jeden wiersz.
+2. Usuń zaznaczenie wszystkich innych wierszy, wybierając tylko jeden wiersz.
 
-3.  Kliknij prawym przyciskiem myszy wiersz, a następnie wybierz pozycję **Odblokuj**.
+3. Kliknij prawym przyciskiem myszy wiersz, a następnie wybierz pozycję **Odblokuj**.
 
     Ikona Wstrzymaj stanie się niepotrzebna ten wiersz, wskazujący, że wątek nie jest już jest zamrożona.
 
-4.  Przejdź do edytora kodu i naciśnij klawisz **F11**. Uruchamia odblokowanej wątku.
+4. Przejdź do edytora kodu i naciśnij klawisz **F11**. Uruchamia odblokowanej wątku.
 
     Aplikacja może również tworzy kilka nowych wątków. Wszystkie nowe wątki są bez flagi i nie są zablokowane.
 

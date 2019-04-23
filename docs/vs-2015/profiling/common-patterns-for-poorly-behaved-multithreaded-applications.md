@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc126d8283562f84cabfaae7df1001c832553568
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f2c1a799663d33e61977c5416ad199bce8bce545
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778957"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050118"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Typowe nieprawidłowo działające wzorce dla aplikacji wielowątkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,9 +52,9 @@ Narzędzie Concurrency Visualizer pomaga deweloperom do wizualizacji zachowania 
   
  Podczas oceny tego problemu, należy wziąć pod uwagę następujące czynności:  
   
--   Może być oversubscribed całego systemu. Należy wziąć pod uwagę, że inne procesy w systemie może wywłaszczanie wątki. W przypadku wstrzymania przez segment wywłaszczania w widoku wątków etykietka narzędzia będzie identyfikować wątku i procesu, który wątek przerywane. Ten proces niekoniecznie jest ten, który jest wykonywany podczas procesu została przeniesiona przez cały czas, ale stanowi wskazówkę o tym, co tworzone wykorzystanie wywłaszczania względem procesu.  
+- Może być oversubscribed całego systemu. Należy wziąć pod uwagę, że inne procesy w systemie może wywłaszczanie wątki. W przypadku wstrzymania przez segment wywłaszczania w widoku wątków etykietka narzędzia będzie identyfikować wątku i procesu, który wątek przerywane. Ten proces niekoniecznie jest ten, który jest wykonywany podczas procesu została przeniesiona przez cały czas, ale stanowi wskazówkę o tym, co tworzone wykorzystanie wywłaszczania względem procesu.  
   
--   Należy ocenić, jak proces określa odpowiedniej liczby wątków do wykonania w tej fazie pracy. Jeśli proces bezpośrednio oblicza liczbę aktywnych wątków równoległych, należy rozważyć zmodyfikowanie tego algorytmu do lepszego konta liczbę dostępnych rdzeni logicznych w systemie. Jeśli używasz środowiska uruchomieniowego współbieżności, biblioteka zadań równoległych lub PLINQ tych bibliotek wykonywania pracy obliczającej liczbę wątków.  
+- Należy ocenić, jak proces określa odpowiedniej liczby wątków do wykonania w tej fazie pracy. Jeśli proces bezpośrednio oblicza liczbę aktywnych wątków równoległych, należy rozważyć zmodyfikowanie tego algorytmu do lepszego konta liczbę dostępnych rdzeni logicznych w systemie. Jeśli używasz środowiska uruchomieniowego współbieżności, biblioteka zadań równoległych lub PLINQ tych bibliotek wykonywania pracy obliczającej liczbę wątków.  
   
 ## <a name="inefficient-io"></a>Nieefektywne operacji We/Wy  
  ![Inefficient I&#47;O](../profiling/media/inefficient-io.png "Inefficient_IO")  

@@ -9,12 +9,12 @@ ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: add516e9a8f5cb31b85429b1bf41cfa438e8a438
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab103b11659ee1e73537f6f41ff1fe0e6ed32076
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949918"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059048"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Instrukcje: Użyj interfejsu API testu wydajności sieci web
 
@@ -31,34 +31,34 @@ Można również utworzyć wtyczek dla testów obciążenia. Aby uzyskać więce
 
 ## <a name="to-use-the-webtesting-namespace"></a>Użycie tej przestrzeni nazw WebTesting
 
-1.  Otwórz wydajności sieci web i obciążenia projektu testowego, który zawiera test wydajności sieci web.
+1. Otwórz wydajności sieci web i obciążenia projektu testowego, który zawiera test wydajności sieci web.
 
-2.  Dodaj Visual C# lub projekt biblioteki klas języka Visual Basic do rozwiązania testu.
+2. Dodaj Visual C# lub projekt biblioteki klas języka Visual Basic do rozwiązania testu.
 
-3.  Dodaj odwołanie w projekcie testu wydajności i obciążenia sieci web do projektu biblioteki klas.
+3. Dodaj odwołanie w projekcie testu wydajności i obciążenia sieci web do projektu biblioteki klas.
 
-4.  Dodaj odwołanie do biblioteki DLL Microsoft.VisualStudio.QualityTools.WebTestFramework w projekcie biblioteki klas.
+4. Dodaj odwołanie do biblioteki DLL Microsoft.VisualStudio.QualityTools.WebTestFramework w projekcie biblioteki klas.
 
-5.  W pliku klasy, który znajduje się w projekcie biblioteki klas, Dodaj `using` poufności informacji dotyczące <xref:Microsoft.VisualStudio.TestTools.WebTesting> przestrzeni nazw.
+5. W pliku klasy, który znajduje się w projekcie biblioteki klas, Dodaj `using` poufności informacji dotyczące <xref:Microsoft.VisualStudio.TestTools.WebTesting> przestrzeni nazw.
 
-6.  Utwórz klasę, która implementuje <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> interfejsu.
+6. Utwórz klasę, która implementuje <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> interfejsu.
 
-7.  Skompiluj projekt.
+7. Skompiluj projekt.
 
-8.  Dodaj nowy test wydajności sieci web wtyczki za pomocą edytora testu wydajności sieci Web:
+8. Dodaj nowy test wydajności sieci web wtyczki za pomocą edytora testu wydajności sieci Web:
 
-    1.  Wybierz **Dodaj wtyczkę testu sieci Web** na pasku narzędzi.
+    1. Wybierz **Dodaj wtyczkę testu sieci Web** na pasku narzędzi.
 
          **Dodaj wtyczkę testu sieci Web** zostanie wyświetlone okno dialogowe.
 
-    2.  W obszarze **Wybierz wtyczkę**, zaznacz klasę wtyczki testu wydajności sieci web.
+    2. W obszarze **Wybierz wtyczkę**, zaznacz klasę wtyczki testu wydajności sieci web.
 
-    3.  W **właściwości wybranych wtyczek** okienko, ustaw wartości początkowe dla wtyczki do użycia w czasie wykonywania.
+    3. W **właściwości wybranych wtyczek** okienko, ustaw wartości początkowe dla wtyczki do użycia w czasie wykonywania.
 
         > [!NOTE]
         > Można udostępnić dowolną liczbę właściwości każdej wtyczki. Wystarczy tylko ustawić je jako publiczne, możliwe do konfigurowania i mające typ podstawowy, np. Integer, Boolean lub String. Właściwości wtyczki testu wydajności sieci web można również edytować później za pomocą okna właściwości.
 
-    4.  Wybierz **OK**.
+    4. Wybierz **OK**.
 
 9. Uruchom test wydajności sieci web.
 

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91e0bc21f328823ccf8c956d85d921de3f3ae75b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8f083e97427b44256ac565e2fc6822586825aef4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627834"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061947"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Korzystanie z zestawów międzyoperacyjnych programu Visual Studio
 Visual Studio, zestawy międzyoperacyjne Zezwalaj na dostęp do interfejsów COM, które przewiduje rozszerzalności programu Visual Studio zarządzanych aplikacji. Istnieją pewne różnice między proste interfejsy COM i ich wersje międzyoperacyjnego. Na przykład wartości HRESULT zazwyczaj są reprezentowane jako wartości int i muszą być obsługiwani w taki sam sposób jak wyjątki i parametry (szczególnie parametrów out) są traktowane inaczej.
@@ -87,17 +87,17 @@ else
 > [!NOTE]
 >  Wiadomo, że następujące metody przekazywania `IUnknown` obiektu wskaźników jako typ <xref:System.IntPtr>. Je obsłużyć zgodnie z opisem w tej sekcji.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>
 
 ## <a name="optional-out-parameters"></a>Opcjonalne [parametry out]
  Wyszukaj parametry, które są zdefiniowane jako [out] — Typ danych (`int`, `object`i tak dalej) w COM interfejs, ale są definiowane jako tablice tego samego typu danych w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zestawu międzyoperacyjnego metody prototypu.

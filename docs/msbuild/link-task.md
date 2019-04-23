@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55d84dc8aed00cf037efc8b35efa13fa712092c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 58691d5c6a7f44361d40a50898395ed1200a06c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627158"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064371"
 ---
 # <a name="link-task"></a>Link — Zadanie
 Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsolidatora łączy pliki obiektu Common Object File Format (COFF) i biblioteki, aby utworzyć plik wykonywalny (*.exe*) pliku lub biblioteki dołączanej (dynamicznie DLL). Aby uzyskać więcej informacji, zobacz [opcje konsolidatora](/cpp/build/reference/linker-options).
@@ -43,7 +43,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 ## <a name="parameters"></a>Parametry
  Poniżej opisano parametry **łącze** zadania. Większość parametrów zadania oraz kilka zestawów parametrów, odpowiada opcji wiersza polecenia.
 
--   **AdditionalDependencies**
+- **AdditionalDependencies**
 
      Opcjonalnie **String []** parametru.
 
@@ -51,7 +51,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [pliki wejściowe LINK](/cpp/build/reference/link-input-files).
 
--   **AdditionalLibraryDirectories**
+- **AdditionalLibraryDirectories**
 
      Opcjonalnie **String []** parametru.
 
@@ -59,7 +59,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/libpath — (dodatkowa Libpath)](/cpp/build/reference/libpath-additional-libpath).
 
--   **AdditionalManifestDependencies**
+- **AdditionalManifestDependencies**
 
      Opcjonalnie **String []** parametru.
 
@@ -67,7 +67,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/MANIFESTDEPENDENCY (Określ zależności manifestu)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Zobacz też [pliki konfiguracyjne wydawcy](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files).
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -75,7 +75,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [opcje konsolidatora](/cpp/build/reference/linker-options).
 
--   **AddModuleNamesToAssembly**
+- **AddModuleNamesToAssembly**
 
      Opcjonalnie **String []** parametru.
 
@@ -83,7 +83,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [assemblymodule (Dodaj moduł MSIL do zestawu)](/cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly).
 
--   **AllowIsolation**
+- **AllowIsolation**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -91,7 +91,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/ALLOWISOLATION (wyszukiwania plików manifestu)](/cpp/build/reference/allowisolation-manifest-lookup).
 
--   **AssemblyDebug**
+- **AssemblyDebug**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -99,7 +99,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/assemblydebug (Dodaj DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).
 
--   **AssemblyLinkResource**
+- **AssemblyLinkResource**
 
      Opcjonalnie **String []** parametru.
 
@@ -107,13 +107,13 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [assemblylinkresource (Link do zasobów .NET Framework)](/cpp/build/reference/assemblylinkresource-link-to-dotnet-framework-resource).
 
--   **AttributeFileTracking**
+- **AttributeFileTracking**
 
      Niejawne **logiczna** parametru.
 
      Umożliwia bardziej plik śledzenia do przechwytywania zachowanie łącza przyrostowe firmy. Zawsze zwraca `true`.
 
--   **BaseAddress**
+- **BaseAddress**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -121,7 +121,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [uwzględniają (adres podstawowy)](/cpp/build/reference/base-base-address).
 
--   **BuildingInIDE**
+- **BuildingInIDE**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -129,7 +129,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Ten parametr nie ma żadnej opcji równoważne konsolidatora.
 
--   **CLRImageType**
+- **CLRImageType**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -137,17 +137,17 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Określ jedną z następujących wartości, z których każdy odpowiada opcji konsolidatora.
 
-    -   **Domyślne** - *\<Brak >*
+    - **Domyślne** - *\<Brak >*
 
-    -   **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
+    - **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
 
-    -   **ForcePureILImage** - **/CLRIMAGETYPE:PURE**
+    - **ForcePureILImage** - **/CLRIMAGETYPE:PURE**
 
-    -   **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**
+    - **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**
 
     Aby uzyskać więcej informacji, zobacz [/clrimagetype (określenie typu obrazu CLR)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image).
 
--   **CLRSupportLastError**
+- **CLRSupportLastError**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -155,15 +155,15 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Określ jedną z następujących wartości, z których każdy odpowiada opcji konsolidatora.
 
-    -   **Włączone** - **/CLRSupportLastError**
+    - **Włączone** - **/CLRSupportLastError**
 
-    -   **Wyłączone** - **/CLRSupportLastError:NO**
+    - **Wyłączone** - **/CLRSupportLastError:NO**
 
-    -   **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
+    - **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
 
     Aby uzyskać więcej informacji, zobacz [/CLRSUPPORTLASTERROR (Zachowaj kod ostatniego błędu dla wywołań PInvoke)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).
 
--   **CLRThreadAttribute**
+- **CLRThreadAttribute**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -171,15 +171,15 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Określ jedną z następujących wartości, z których każdy odpowiada opcji konsolidatora.
 
-    -   **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE: Brak**
+    - **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE: Brak**
 
-    -   **MTAThreadingAttribute** - **: MTA**
+    - **MTAThreadingAttribute** - **: MTA**
 
-    -   **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
+    - **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
 
     Aby uzyskać więcej informacji, zobacz [/CLRTHREADATTRIBUTE (atrybut wątku CLR Ustaw)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute).
 
--   **CLRUnmanagedCodeCheck**
+- **CLRUnmanagedCodeCheck**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -187,7 +187,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
     Aby uzyskać więcej informacji, zobacz [opcji/clrunmanagedcodecheck (Dodaj atrybut SuppressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute).
 
--   **CreateHotPatchableImage**
+- **CreateHotPatchableImage**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -195,17 +195,17 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Określ jedną z następujących wartości, które odpowiada opcji konsolidatora.
 
-    -   **Enabled** - **/FUNCTIONPADMIN**
+    - **Enabled** - **/FUNCTIONPADMIN**
 
-    -   **X86Image** - **/FUNCTIONPADMIN:5**
+    - **X86Image** - **/FUNCTIONPADMIN:5**
 
-    -   **X64Image** - **/FUNCTIONPADMIN:6**
+    - **X64Image** - **/FUNCTIONPADMIN:6**
 
-    -   **ItaniumImage** - **/FUNCTIONPADMIN:16**
+    - **ItaniumImage** - **/FUNCTIONPADMIN:16**
 
     Aby uzyskać więcej informacji, zobacz [/FUNCTIONPADMIN (Utwórz obraz hotpatchable)](/cpp/build/reference/functionpadmin-create-hotpatchable-image).
 
--   **DataExecutionPrevention**
+- **DataExecutionPrevention**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -213,7 +213,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/NXCOMPAT (zgodny z zapobieganiem wykonywaniu danych)](/cpp/build/reference/nxcompat-compatible-with-data-execution-prevention).
 
--   **DelayLoadDLLs**
+- **DelayLoadDLLs**
 
      Opcjonalnie **String []** parametru.
 
@@ -221,7 +221,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/delayload (Opóźnij importowanie ładowania)](/cpp/build/reference/delayload-delay-load-import).
 
--   **DelaySign**
+- **DelaySign**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -229,7 +229,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/DelaySign (częściowo podpisać zestaw)](/cpp/build/reference/delaysign-partially-sign-an-assembly).
 
--   **Sterownik**
+- **Sterownik**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -237,17 +237,17 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Określ jedną z następujących wartości, z których każdy odpowiada opcji konsolidatora.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **Driver** - **/Driver**
+    - **Driver** - **/Driver**
 
-    -   **UpOnly** - **/DRIVER:UPONLY**
+    - **UpOnly** - **/DRIVER:UPONLY**
 
-    -   **WDM** - **/DRIVER:WDM**
+    - **WDM** - **/DRIVER:WDM**
 
     Aby uzyskać więcej informacji, zobacz [Driver/Driver (sterownik trybu jądra Windows NT)](/cpp/build/reference/driver-windows-nt-kernel-mode-driver).
 
--   **EmbedManagedResourceFile**
+- **EmbedManagedResourceFile**
 
      Opcjonalnie **String []** parametru.
 
@@ -255,7 +255,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [linkowany (Osadź zarządzany zasób)](/cpp/build/reference/assemblyresource-embed-a-managed-resource).
 
--   **EnableCOMDATFolding**
+- **EnableCOMDATFolding**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -263,7 +263,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz `ICF[= iterations]` argument [od (optymalizacje)](/cpp/build/reference/opt-optimizations).
 
--   **EnableUAC**
+- **EnableUAC**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -271,7 +271,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/MANIFESTUAC (osadza informacje UAC w manifeście)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **EntryPointSymbol**
+- **EntryPointSymbol**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -279,7 +279,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/Entry (symbol punktu wejścia)](/cpp/build/reference/entry-entry-point-symbol).
 
--   **FixedBaseAddress**
+- **FixedBaseAddress**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -287,7 +287,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/Fixed (stały adres podstawowy)](/cpp/build/reference/fixed-fixed-base-address).
 
--   **ForceFileOutput**
+- **ForceFileOutput**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -295,15 +295,15 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-    -   **Włączone** -   **/FORCE**
+    - **Włączone** -   **/FORCE**
 
-    -   **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**
+    - **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**
 
-    -   **UndefinedSymbolOnly** -   **/FORCE: NIEROZPOZNANA**
+    - **UndefinedSymbolOnly** -   **/FORCE: NIEROZPOZNANA**
 
     Aby uzyskać więcej informacji, zobacz [/Force (Wymuszaj produkt wyjściowy pliku)](/cpp/build/reference/force-force-file-output).
 
--   **ForceSymbolReferences**
+- **ForceSymbolReferences**
 
      Opcjonalnie **String []** parametru.
 
@@ -311,7 +311,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/include (Wymuszaj odwołania do symboli)](/cpp/build/reference/include-force-symbol-references).
 
--   **FunctionOrder**
+- **FunctionOrder**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -319,7 +319,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/order (Put funkcje w kolejności)](/cpp/build/reference/order-put-functions-in-order).
 
--   **GenerateDebugInformation**
+- **GenerateDebugInformation**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -327,7 +327,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/Debug (generowanie informacji o debugowaniu)](/cpp/build/reference/debug-generate-debug-info).
 
--   **GenerateManifest**
+- **GenerateManifest**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -335,7 +335,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/MANIFEST (Tworzenie manifestu zestawu side-by-side)](/cpp/build/reference/manifest-create-side-by-side-assembly-manifest).
 
--   **GenerateMapFile**
+- **GenerateMapFile**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -343,7 +343,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/map (Generuj plik mapy)](/cpp/build/reference/map-generate-mapfile).
 
--   **HeapCommitSize**
+- **HeapCommitSize**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -351,7 +351,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz `commit` argument [/HEAP (Ustaw rozmiar sterty)](/cpp/build/reference/heap-set-heap-size). Zobacz też **HeapReserveSize** parametru.
 
--   **HeapReserveSize**
+- **HeapReserveSize**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -359,7 +359,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz `reserve` argument [/HEAP (Ustaw rozmiar sterty)](/cpp/build/reference/heap-set-heap-size). Zobacz też **HeapCommitSize** parametru w tej tabeli.
 
--   **IgnoreAllDefaultLibraries**
+- **IgnoreAllDefaultLibraries**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -367,7 +367,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/nodefaultlib (Ignoruj biblioteki)](/cpp/build/reference/nodefaultlib-ignore-libraries).
 
--   **IgnoreEmbeddedIDL**
+- **IgnoreEmbeddedIDL**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -375,7 +375,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/IGNOREIDL (nie Przetwarzaj atrybutów w MIDL)](/cpp/build/reference/ignoreidl-don-t-process-attributes-into-midl).
 
--   **IgnoreImportLibrary**
+- **IgnoreImportLibrary**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -383,7 +383,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Ten parametr nie odpowiada — opcja konsolidatora.
 
--   **IgnoreSpecificDefaultLibraries**
+- **IgnoreSpecificDefaultLibraries**
 
      Opcjonalnie **String []** parametru.
 
@@ -391,7 +391,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/nodefaultlib (Ignoruj biblioteki)](/cpp/build/reference/nodefaultlib-ignore-libraries).
 
--   **ImageHasSafeExceptionHandlers**
+- **ImageHasSafeExceptionHandlers**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -399,13 +399,13 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [opcja/SAFESEH (obraz ma obsługi bezpiecznych wyjątków)](/cpp/build/reference/safeseh-image-has-safe-exception-handlers).
 
--   **ImportLibrary**
+- **ImportLibrary**
 
      Nazwa biblioteki importu określonych przez użytkownika, która zastępuje domyślną nazwę biblioteki.
 
      Aby uzyskać więcej informacji, zobacz [/IMPLIB (Nazwij bibliotekę importowaną)](/cpp/build/reference/implib-name-import-library).
 
--   **KeyContainer**
+- **KeyContainer**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -413,7 +413,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/KeyContainer (Określ kontener klucza do podpisywania zestawu)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly). Zobacz też **KeyFile** parametru w tej tabeli.
 
--   **KeyFile**
+- **KeyFile**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -421,7 +421,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/KeyFile (Określ klucz lub parę kluczy, aby podpisać zestaw)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Zobacz też **KeyContainer** parametru.
 
--   **LargeAddressAware**
+- **LargeAddressAware**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -429,7 +429,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/largeaddressaware (Obsługa dużych adresów)](/cpp/build/reference/largeaddressaware-handle-large-addresses).
 
--   **LinkDLL**
+- **LinkDLL**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -437,7 +437,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/dll (kompilowanie biblioteki DLL)](/cpp/build/reference/dll-build-a-dll).
 
--   **LinkErrorReporting**
+- **LinkErrorReporting**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -445,17 +445,17 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-    -   **NoErrorReport** -   **/errorreport: Brak**
+    - **NoErrorReport** -   **/errorreport: Brak**
 
-    -   **PromptImmediately** - **/ERRORREPORT:PROMPT**
+    - **PromptImmediately** - **/ERRORREPORT:PROMPT**
 
-    -   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**
+    - **QueueForNextLogin** - **/ERRORREPORT:QUEUE**
 
-    -   **SendErrorReport** - **/ERRORREPORT:SEND**
+    - **SendErrorReport** - **/ERRORREPORT:SEND**
 
     Aby uzyskać więcej informacji, zobacz [/errorreport (zgłaszaj wewnętrzne błędy konsolidatora)](/cpp/build/reference/errorreport-report-internal-linker-errors).
 
--   **LinkIncremental**
+- **LinkIncremental**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -463,7 +463,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/INCREMENTAL (łącz stopniowo)](/cpp/build/reference/incremental-link-incrementally).
 
--   **LinkLibraryDependencies**
+- **LinkLibraryDependencies**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -471,7 +471,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Ten parametr nie odpowiada — opcja konsolidatora.
 
--   **LinkStatus**
+- **LinkStatus**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -479,7 +479,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz `STATUS` argument [opcję/LTCG (Generowanie kodu Link-time)](/cpp/build/reference/ltcg-link-time-code-generation).
 
--   **LinkTimeCodeGeneration**
+- **LinkTimeCodeGeneration**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -487,21 +487,21 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-    -   **Domyślne** - *\<Brak >*
+    - **Domyślne** - *\<Brak >*
 
-    -   **UseLinkTimeCodeGeneration** - **/LTCG**
+    - **UseLinkTimeCodeGeneration** - **/LTCG**
 
-    -   **PGInstrument** - **/LTCG:PGInstrument**
+    - **PGInstrument** - **/LTCG:PGInstrument**
 
-    -   **PGOptimization** - **/LTCG:PGOptimize**
+    - **PGOptimization** - **/LTCG:PGOptimize**
 
-    -   **PGUpdate**
+    - **PGUpdate**
 
          \- **/LTCG:PGUpdate**
 
     Aby uzyskać więcej informacji, zobacz [opcję/LTCG (Generowanie kodu Link-time)](/cpp/build/reference/ltcg-link-time-code-generation).
 
--   **ManifestFile**
+- **ManifestFile**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -509,7 +509,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/MANIFESTFILE (nazwa pliku manifestu)](/cpp/build/reference/manifestfile-name-manifest-file).
 
--   **MapExports**
+- **MapExports**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -517,13 +517,13 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz `EXPORTS` argument [/MapInfo (Dołącz informacje mapfile)](/cpp/build/reference/mapinfo-include-information-in-mapfile).
 
--   **MapFileName**
+- **MapFileName**
 
      Opcjonalnie **ciąg** parametru.
 
      Zmienia domyślna nazwa pliku mapy z określoną nazwą pliku.
 
--   **MergedIDLBaseFileName**
+- **MergedIDLBaseFileName**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -531,7 +531,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/idlout (pliki wyjściowe Name MIDL)](/cpp/build/reference/idlout-name-midl-output-files).
 
--   **MergeSections**
+- **MergeSections**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -539,7 +539,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/merge (Połącz sekcje)](/cpp/build/reference/merge-combine-sections).
 
--   **MidlCommandFile**
+- **MidlCommandFile**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -547,13 +547,13 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/MIDL (Opcje wiersza polecenia MIDL określić)](/cpp/build/reference/midl-specify-midl-command-line-options).
 
--   **MinimumRequiredVersion**
+- **MinimumRequiredVersion**
 
      Opcjonalnie **ciąg** parametru.
 
      Określa minimalną wymaganą wersję podsystemu. Argumenty są liczbami dziesiętnymi z zakresu od 0 do 65535.
 
--   **ModuleDefinitionFile**
+- **ModuleDefinitionFile**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -561,7 +561,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/DEF (Określ plik definicji modułu)](/cpp/build/reference/def-specify-module-definition-file).
 
--   **MSDOSStubFileName**
+- **MSDOSStubFileName**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -569,7 +569,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/stub (nazwa pliku klasy zastępczej MS-DOS)](/cpp/build/reference/stub-ms-dos-stub-file-name).
 
--   **NoEntryPoint**
+- **NoEntryPoint**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -577,13 +577,13 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/noentry (Brak punktu wejścia)](/cpp/build/reference/noentry-no-entry-point).
 
--   **ObjectFiles**
+- **ObjectFiles**
 
      Niejawne **String []** parametru.
 
      Określa pliki obiektów, które są połączone.
 
--   **OptimizeReferences**
+- **OptimizeReferences**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -591,7 +591,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz `REF` argument [od (optymalizacje)](/cpp/build/reference/opt-optimizations).
 
--   **OutputFile**
+- **OutputFile**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -599,19 +599,19 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/OUT (nazwa pliku wyjściowego)](/cpp/build/reference/out-output-file-name).
 
--   **PerUserRedirection**
+- **PerUserRedirection**
 
      Opcjonalnie **logiczna** parametru.
 
      Jeśli `true` i włączono rejestrowanie wyników rejestru wymusza zapisuje **HKEY_CLASSES_ROOT** do **HKEY_CURRENT_USER**.
 
--   **PreprocessOutput**
+- **PreprocessOutput**
 
      Opcjonalnie `ITaskItem[]` parametru.
 
      Określa tablicę elementów dane wyjściowe preprocesora, które może być używany i wyemitowane przez zadania.
 
--   **PreventDllBinding**
+- **PreventDllBinding**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -619,7 +619,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/ALLOWBIND (Zapobiegaj powiązaniu biblioteki DLL)](/cpp/build/reference/allowbind-prevent-dll-binding).
 
--   **Profil**
+- **Profil**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -627,7 +627,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/profile (profiler narzędzi wydajności)](/cpp/build/reference/profile-performance-tools-profiler).
 
--   **ProfileGuidedDatabase**
+- **ProfileGuidedDatabase**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -635,7 +635,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/PGD (Określ bazę danych dla optymalizacji sterowanej profilem)](/cpp/build/reference/pgd-specify-database-for-profile-guided-optimizations).
 
--   **ProgramDatabaseFile**
+- **ProgramDatabaseFile**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -643,7 +643,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/PDB (Użyj bazy danych programu)](/cpp/build/reference/pdb-use-program-database).
 
--   **RandomizedBaseAddress**
+- **RandomizedBaseAddress**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -651,13 +651,13 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [opcja/DynamicBase (randomizacji układu przestrzeni adresowej Użyj)](/cpp/build/reference/dynamicbase-use-address-space-layout-randomization).
 
--   **RegisterOutput**
+- **RegisterOutput**
 
      Opcjonalnie **logiczna** parametru.
 
      Jeśli `true`, rejestruje główny wynik tej kompilacji.
 
--   **SectionAlignment**
+- **SectionAlignment**
 
      Opcjonalnie **całkowitą** parametru.
 
@@ -665,7 +665,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/align (wyrównanie sekcji)](/cpp/build/reference/align-section-alignment).
 
--   **SetChecksum**
+- **SetChecksum**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -673,7 +673,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/Release (Ustaw sumę kontrolną)](/cpp/build/reference/release-set-the-checksum).
 
--   **ShowProgress**
+- **ShowProgress**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -681,29 +681,29 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **LinkVerbose** - **/VERBOSE**
+    - **LinkVerbose** - **/VERBOSE**
 
-    -   **LinkVerboseLib** - **/VERBOSE:Lib**
+    - **LinkVerboseLib** - **/VERBOSE:Lib**
 
-    -   **LinkVerboseICF** - **/VERBOSE:ICF**
+    - **LinkVerboseICF** - **/VERBOSE:ICF**
 
-    -   **LinkVerboseREF** - **/VERBOSE:REF**
+    - **LinkVerboseREF** - **/VERBOSE:REF**
 
-    -   **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
+    - **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
 
-    -   **LinkVerboseCLR** - **/VERBOSE:CLR**
+    - **LinkVerboseCLR** - **/VERBOSE:CLR**
 
     Aby uzyskać więcej informacji, zobacz [opcjami/verbose (Drukuj komunikaty o postępie)](/cpp/build/reference/verbose-print-progress-messages).
 
--   **Źródła**
+- **Źródła**
 
      Wymagane `ITaskItem[]` parametru.
 
      Określa tablicę elementów pliku źródłowego programu MSBuild, które mogą być używane i wyemitowane przez zadania.
 
--   **SpecifySectionAttributes**
+- **SpecifySectionAttributes**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -711,7 +711,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/Section (Określ atrybuty sekcji)](/cpp/build/reference/section-specify-section-attributes).
 
--   **StackCommitSize**
+- **StackCommitSize**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -719,7 +719,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz `commit` argument [/STACK (twórz stos z alokacji)](/cpp/build/reference/stack-stack-allocations).
 
--   **StackReserveSize**
+- **StackReserveSize**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -727,7 +727,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz `reserve` argument [/STACK (twórz stos z alokacji)](/cpp/build/reference/stack-stack-allocations).
 
--   **StripPrivateSymbols**
+- **StripPrivateSymbols**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -735,7 +735,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/pdbstripped (Usuń symboli prywatnych)](/cpp/build/reference/pdbstripped-strip-private-symbols).
 
--   **SubSystem**
+- **SubSystem**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -743,29 +743,29 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **Konsola** - **opcji**
+    - **Konsola** - **opcji**
 
-    -   **Windows** - **/SUBSYSTEM:WINDOWS**
+    - **Windows** - **/SUBSYSTEM:WINDOWS**
 
-    -   **Native** - **/SUBSYSTEM:NATIVE**
+    - **Native** - **/SUBSYSTEM:NATIVE**
 
-    -   **Aplikacja EFI** - **/SUBSYSTEM:EFI_APPLICATION**
+    - **Aplikacja EFI** - **/SUBSYSTEM:EFI_APPLICATION**
 
-    -   **Sterownik usługi rozruchu interfejsu EFI** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
+    - **Sterownik usługi rozruchu interfejsu EFI** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
 
-    -   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**
+    - **EFI ROM** - **/SUBSYSTEM:EFI_ROM**
 
-    -   **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
+    - **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
 
-    -   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**
+    - **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**
 
-    -   **POSIX** - **/SUBSYSTEM:POSIX**
+    - **POSIX** - **/SUBSYSTEM:POSIX**
 
     Aby uzyskać więcej informacji, zobacz [/Subsystem (Określ podsystem)](/cpp/build/reference/subsystem-specify-subsystem).
 
--   **SupportNobindOfDelayLoadedDLL**
+- **SupportNobindOfDelayLoadedDLL**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -773,7 +773,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz `NOBIND` argument [przełącznik/DELAY (ustawienia opóźnienia importowania ładowania)](/cpp/build/reference/delay-delay-load-import-settings).
 
--   **SupportUnloadOfDelayLoadedDLL**
+- **SupportUnloadOfDelayLoadedDLL**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -781,7 +781,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz `UNLOAD` argument [przełącznik/DELAY (ustawienia opóźnienia importowania ładowania)](/cpp/build/reference/delay-delay-load-import-settings).
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -789,7 +789,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/nologo (Pomijaj transparent startowy) (konsolidator)](/cpp/build/reference/nologo-suppress-startup-banner-linker).
 
--   **SwapRunFromCD**
+- **SwapRunFromCD**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -797,7 +797,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz `CD` argument [swaprun (Załaduj dane wyjściowe konsolidatora do pliku swap)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Zobacz też **SwapRunFromNET** parametru.
 
--   **SwapRunFromNET**
+- **SwapRunFromNET**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -805,7 +805,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz `NET` argument [swaprun (Załaduj dane wyjściowe konsolidatora do pliku swap)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Zobacz też **SwapRunFromCD** parametru w tej tabeli.
 
--   **TargetMachine**
+- **TargetMachine**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -813,33 +813,33 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **MachineARM** - **/MACHINE:ARM**
+    - **MachineARM** - **/MACHINE:ARM**
 
-    -   **MachineEBC** - **/MACHINE:EBC**
+    - **MachineEBC** - **/MACHINE:EBC**
 
-    -   **MachineIA64** - **/MACHINE:IA64**
+    - **MachineIA64** - **/MACHINE:IA64**
 
-    -   **MachineMIPS** - **/MACHINE:MIPS**
+    - **MachineMIPS** - **/MACHINE:MIPS**
 
-    -   **MachineMIPS16** - **/MACHINE:MIPS16**
+    - **MachineMIPS16** - **/MACHINE:MIPS16**
 
-    -   **MachineMIPSFPU** - **/MACHINE:MIPSFPU**
+    - **MachineMIPSFPU** - **/MACHINE:MIPSFPU**
 
-    -   **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**
+    - **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**
 
-    -   **MachineSH4** - **/MACHINE:SH4**
+    - **MachineSH4** - **/MACHINE:SH4**
 
-    -   **MachineTHUMB** - **/MACHINE:THUMB**
+    - **MachineTHUMB** - **/MACHINE:THUMB**
 
-    -   **MachineX64** - **/MACHINE:X64**
+    - **MachineX64** - **/MACHINE:X64**
 
-    -   **MachineX86** - **/MACHINE:X86**
+    - **MachineX86** - **/MACHINE:X86**
 
     Aby uzyskać więcej informacji, zobacz [/Machine (Określ platformę docelową)](/cpp/build/reference/machine-specify-target-platform).
 
--   **TerminalServerAware**
+- **TerminalServerAware**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -847,13 +847,13 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/tsaware (Utwórz serwer terminali pamiętać aplikacji)](/cpp/build/reference/tsaware-create-terminal-server-aware-application).
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      Opcjonalnie **ciąg** parametru.
 
      Określa katalog dziennika śledzenia.
 
--   **TreatLinkerWarningAsErrors**
+- **TreatLinkerWarningAsErrors**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -861,7 +861,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/WX (Traktuj ostrzeżenia konsolidatora jako błędy)](/cpp/build/reference/wx-treat-linker-warnings-as-errors).
 
--   **TurnOffAssemblyGeneration**
+- **TurnOffAssemblyGeneration**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -869,7 +869,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/noassembly (Utwórz moduł MSIL)](/cpp/build/reference/noassembly-create-a-msil-module).
 
--   **TypeLibraryFile**
+- **TypeLibraryFile**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -877,7 +877,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/tlbout (Nazywanie pliku .tlb)](/cpp/build/reference/tlbout-name-dot-tlb-file).
 
--   **TypeLibraryResourceID**
+- **TypeLibraryResourceID**
 
      Opcjonalnie **całkowitą** parametru.
 
@@ -885,7 +885,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz [/TLBID (Określ identyfikator zasobu dla TypeLib)](/cpp/build/reference/tlbid-specify-resource-id-for-typelib).
 
--   **UACExecutionLevel**
+- **UACExecutionLevel**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -893,15 +893,15 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-    -   **AsInvoker** - `level='asInvoker'`
+    - **AsInvoker** - `level='asInvoker'`
 
-    -   **HighestAvailable** - `level='highestAvailable'`
+    - **HighestAvailable** - `level='highestAvailable'`
 
-    -   **RequireAdministrator** - `level='requireAdministrator'`
+    - **RequireAdministrator** - `level='requireAdministrator'`
 
     Aby uzyskać więcej informacji, zobacz `level` argument [/MANIFESTUAC (osadza informacje UAC w manifeście)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **UACUIAccess**
+- **UACUIAccess**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -909,13 +909,13 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
 
      Aby uzyskać więcej informacji, zobacz `uiAccess` argument [/MANIFESTUAC (osadza informacje UAC w manifeście)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **UseLibraryDependencyInputs**
+- **UseLibraryDependencyInputs**
 
      Opcjonalnie **logiczna** parametru.
 
      Jeśli `true`i wejścia do narzędzia bibliotekarza są używane zamiast pliku biblioteki samego w sobie podczas produktów wyjściowych biblioteki zależności projektów są dołączane.
 
--   **Wersja**
+- **Wersja**
 
      Opcjonalnie **ciąg** parametru.
 

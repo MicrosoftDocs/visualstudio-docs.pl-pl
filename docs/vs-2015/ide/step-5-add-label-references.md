@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: baae597f606b6333f15ba114d31af2cb0cf28836
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 3f062b48edfbe87fb97d94b3ea852486f66a19d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833668"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041876"
 ---
 # <a name="step-5-add-label-references"></a>Krok 5. Dodawanie odwołań do etykiet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Program musi śledzić, które formanty etykiet wybiera gracz. W tej chwili prog
   
 ### <a name="to-add-label-references"></a>Aby dodać odwołania do etykiet  
   
-1.  Dodaj odwołania do etykiet do formularza przy użyciu następującego kodu.  
+1. Dodaj odwołania do etykiet do formularza przy użyciu następującego kodu.  
   
      [!code-csharp[VbExpressTutorial4Step5#5](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step5/cs/form1.cs#5)]
      [!code-vb[VbExpressTutorial4Step5#5](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step5/vb/form1.vb#5)]  
@@ -32,14 +32,14 @@ Program musi śledzić, które formanty etykiet wybiera gracz. W tej chwili prog
   
      Jeśli zmienna nie jest rejestrowanie informacji o obiekcie, jest ustawiona na specjalną zarezerwowaną wartość: `null` w języku Visual C# i `Nothing` w języku Visual Basic. Tak, po uruchomieniu programu, zarówno `firstClicked` i `secondClicked` są ustawione na `null` lub `Nothing`, co oznacza, że zmienne nie są utrzymywanie o wszystkim.  
   
-2.  Zmodyfikuj obsługę zdarzenia Click, aby używała nowej `firstClicked` zmienną odwołania. Usuń ostatnią instrukcję w `label_Click()` metody obsługi zdarzeń (`clickedLabel.ForeColor = Color.Black;`) i zastąp go wartością `if` kolejnej instrukcji. (Należy dołączyć komentarz oraz całą `if` instrukcja.)  
+2. Zmodyfikuj obsługę zdarzenia Click, aby używała nowej `firstClicked` zmienną odwołania. Usuń ostatnią instrukcję w `label_Click()` metody obsługi zdarzeń (`clickedLabel.ForeColor = Color.Black;`) i zastąp go wartością `if` kolejnej instrukcji. (Należy dołączyć komentarz oraz całą `if` instrukcja.)  
   
      [!code-csharp[VbExpressTutorial4Step5#6](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step5/cs/form1.cs#6)]
      [!code-vb[VbExpressTutorial4Step5#6](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step5/vb/form1.vb#6)]  
   
-3.  Zapisz i uruchom program. Wybierz jeden z formantów etykiet, pojawi się jego ikona.  
+3. Zapisz i uruchom program. Wybierz jeden z formantów etykiet, pojawi się jego ikona.  
   
-4.  Wybierz następny formant etykiety i zauważ, że nic się nie dzieje. Program jest już rejestrowanie informacji o pierwszą etykietę, którą wybrał gracz, więc `firstClicked` nie jest równa `null` w języku Visual C# lub `Nothing` w języku Visual Basic. Gdy Twoje `if` instrukcji kontroli `firstClicked` do określenia, czy jest równa `null` lub `Nothing`, stwierdzi, że nie jest, a więc nie wykonuje instrukcji w `if` instrukcji. Tak więc, tylko pierwsza wybrana ikona zmienia kolor na czarny, a inne ikony są niewidoczne, jak pokazano na poniższej ilustracji.  
+4. Wybierz następny formant etykiety i zauważ, że nic się nie dzieje. Program jest już rejestrowanie informacji o pierwszą etykietę, którą wybrał gracz, więc `firstClicked` nie jest równa `null` w języku Visual C# lub `Nothing` w języku Visual Basic. Gdy Twoje `if` instrukcji kontroli `firstClicked` do określenia, czy jest równa `null` lub `Nothing`, stwierdzi, że nie jest, a więc nie wykonuje instrukcji w `if` instrukcji. Tak więc, tylko pierwsza wybrana ikona zmienia kolor na czarny, a inne ikony są niewidoczne, jak pokazano na poniższej ilustracji.  
   
      ![Gra w dopasowywanie pokazująca jedną ikonę](../ide/media/express-tut4step5.png "Express_Tut4Step5")  
 Gra w dopasowywanie pokazująca jedną ikonę  
@@ -48,6 +48,6 @@ Gra w dopasowywanie pokazująca jedną ikonę
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   
--   Aby przejść do następnego kroku samouczka, zobacz [krok 6: Dodaj czasomierz](../ide/step-6-add-a-timer.md).  
+- Aby przejść do następnego kroku samouczka, zobacz [krok 6: Dodaj czasomierz](../ide/step-6-add-a-timer.md).  
   
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 4: Dodawanie obsługi zdarzeń kliknięcia do każdej etykiety](../ide/step-4-add-a-click-event-handler-to-each-label.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 4: Dodawanie obsługi zdarzeń kliknięcia do każdej etykiety](../ide/step-4-add-a-click-event-handler-to-each-label.md).

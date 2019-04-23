@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae72a9f8ed20840da958c3c9314c8f25aada801f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7dfe8a6b3e4c84fd97a159f6ac43e0de47536f0b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625625"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064274"
 ---
 # <a name="command-availability"></a>Dostępność poleceń
 
@@ -44,11 +44,11 @@ Następujących kontekstów się polecenia są najbardziej rozpowszechnione:
 
 Jeśli kontekst odpowiednie polecenia, identyfikator GUID nie jest już zdefiniowany, możesz zdefiniować w swojej pakietu VSPackage i Zaprogramuj się być aktywne lub nieaktywne zgodnie z potrzebami można kontrolować widoczność poleceń:
 
-1.  Rejestrowanie identyfikatorów GUID w kontekście przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> metody.
+1. Rejestrowanie identyfikatorów GUID w kontekście przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> metody.
 
-2.  Pobieranie stanu kontekstu identyfikatora GUID, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> metody.
+2. Pobieranie stanu kontekstu identyfikatora GUID, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> metody.
 
-3.  Włączanie i wyłączanie identyfikatorów GUID w kontekście przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> metody.
+3. Włączanie i wyłączanie identyfikatorów GUID w kontekście przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> metody.
 
 > [!CAUTION]
 > Upewnij się, że Twoje pakietu VSPackage nie wpływa na wszystkich kontekstach istniejące identyfikatory GUID ponieważ innych pakietów VSPackage może zależeć od ich.

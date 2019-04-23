@@ -13,37 +13,37 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 053904df9a4930385d25c90c310c3199ce1d664f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d5b7e8dbe12f9c57c101c8f877dfcb0c6ee3196f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755436"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064696"
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Przewodnik: Wiersza polecenia, profilowania przy użyciu metody Instrumentacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ten przewodnik przeprowadzi Cię przez profilowanie [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] aplikacji autonomicznej zbierać szczegółowe informacje o czasach i wywoływać dane dotyczące liczby przy użyciu metody instrumentacji dla narzędzi profilowania. W tym przewodniku będzie wykonywać następujące zadania:  
   
--   Użyj [VSInstr](../profiling/vsinstr.md) narzędzia wiersza polecenia, aby wygenerować instrumentowanych danych binarnych.  
+- Użyj [VSInstr](../profiling/vsinstr.md) narzędzia wiersza polecenia, aby wygenerować instrumentowanych danych binarnych.  
   
--   Użyj [VSPerfCLREnv](../profiling/vsperfclrenv.md) narzędzie do ustawiania zmiennych środowiskowych w celu zbierania danych profilowania dla programu .NET.  
+- Użyj [VSPerfCLREnv](../profiling/vsperfclrenv.md) narzędzie do ustawiania zmiennych środowiskowych w celu zbierania danych profilowania dla programu .NET.  
   
--   Użyj [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia do zbierania danych profilowania.  
+- Użyj [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia do zbierania danych profilowania.  
   
--   Użyj [VSPerfReport](../profiling/vsperfreport.md) narzędzie do generowania raportów na podstawie pliku danych profilowania.  
+- Użyj [VSPerfReport](../profiling/vsperfreport.md) narzędzie do generowania raportów na podstawie pliku danych profilowania.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
   
--   [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]  
+- [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]  
   
--   Pośredni znajomości języka C#  
+- Pośredni znajomości języka C#  
   
--   Pośredni, informacje o pracy z narzędzi wiersza polecenia  
+- Pośredni, informacje o pracy z narzędzi wiersza polecenia  
   
--   Kopię [peopletrax — przykład](../profiling/peopletrax-sample-profiling-tools.md)  
+- Kopię [peopletrax — przykład](../profiling/peopletrax-sample-profiling-tools.md)  
   
--   Aby pracować z danymi dostarczonych przez profilowanie, najlepiej jest mieć debugowania dostępnych informacji o symbolach. Aby uzyskać więcej informacji, zobacz [jak: Informacje o symbolach Windows odwołanie](../profiling/how-to-reference-windows-symbol-information.md).  
+- Aby pracować z danymi dostarczonych przez profilowanie, najlepiej jest mieć debugowania dostępnych informacji o symbolach. Aby uzyskać więcej informacji, zobacz [jak: Informacje o symbolach Windows odwołanie](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ## <a name="command-line-profiling-using-the-instrumentation-method"></a>Polecenie wiersza profilowania przy użyciu metody Instrumentacji  
  Instrumentacja jest metody profilowania za pomocą którego specjalnie utworzone wersje profilowanych danych binarnych zawiera funkcje sondy, które zbierają informacje o czasie na wejścia i wyjścia funkcji w moduł instrumentowany. Ponieważ ta metoda profilowania jest bardziej inwazyjne niż próbkowanie, spowoduje naliczenie większej ilości obciążenia. Instrumentowane pliki binarne są również większych niż Debuguj lub zwolnij pliki binarne i nie są przeznaczone do wdrożenia.  
@@ -53,19 +53,19 @@ Ten przewodnik przeprowadzi Cię przez profilowanie [!INCLUDE[dnprdnshort](../in
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-instrumentation-method"></a>Aplikacja ma być profilowana peopletrax — przy użyciu metody Instrumentacji  
   
-1.  Zainstaluj Przykładowa aplikacja peopletrax — i Utwórz pełnej wersji.  
+1. Zainstaluj Przykładowa aplikacja peopletrax — i Utwórz pełnej wersji.  
   
-2.  Otwórz okno wiersza polecenia i Dodaj **Profiling Tools** katalogu do lokalnej zmiennej środowiskowej Path.  
+2. Otwórz okno wiersza polecenia i Dodaj **Profiling Tools** katalogu do lokalnej zmiennej środowiskowej Path.  
   
-3.  Zmień katalog roboczy na katalog zawierający pliki binarne peopletrax —.  
+3. Zmień katalog roboczy na katalog zawierający pliki binarne peopletrax —.  
   
-4.  Utwórz katalog zawiera raporty na podstawie plików. Wpisz następujące polecenie:  
+4. Utwórz katalog zawiera raporty na podstawie plików. Wpisz następujące polecenie:  
   
     ```  
     md Reports  
     ```  
   
-5.  Użyj narzędzia wiersza polecenia VSInstr do Instrumentacji danych binarnych w aplikacji. Wpisz następujące polecenia w osobnych wierszach polecenia:  
+5. Użyj narzędzia wiersza polecenia VSInstr do Instrumentacji danych binarnych w aplikacji. Wpisz następujące polecenia w osobnych wierszach polecenia:  
   
     ```  
     VSInstr PeopleTrax.exe  
@@ -77,19 +77,19 @@ Ten przewodnik przeprowadzi Cię przez profilowanie [!INCLUDE[dnprdnshort](../in
   
      **Uwaga** Domyślnie narzędzie VSInstr zapisuje nieinstrumentowanego kopii zapasowej oryginalnego pliku. Nazwa pliku kopii zapasowej ma rozszerzenie. orig. Na przykład oryginalną wersję "MyApp.exe" zostaną zapisane jako "MyApp.exe.orig."  
   
-6.  Wpisz następujące polecenie, aby ustawić odpowiednie zmienne środowiskowe:  
+6. Wpisz następujące polecenie, aby ustawić odpowiednie zmienne środowiskowe:  
   
     ```  
     VsPerfCLREnv /traceon  
     ```  
   
-7.  Aby uruchomić program profilujący, wpisz następujące polecenie:  
+7. Aby uruchomić program profilujący, wpisz następujące polecenie:  
   
     ```  
     VsPerfCmd /start:trace /output:Reports\Report.vsp  
     ```  
   
-8.  Po uruchomieniu programu profilującego w trybie śledzenia z wersją instrumentowaną PeopleTrax.exe procesu zbierania danych.  
+8. Po uruchomieniu programu profilującego w trybie śledzenia z wersją instrumentowaną PeopleTrax.exe procesu zbierania danych.  
   
      **Peopletrax —** pojawi się okno aplikacji.  
   

@@ -12,12 +12,12 @@ ms.assetid: 0047aa90-1ed4-40d3-8772-622b2719a4b1
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1a4ad8b128ea614ba60a19c3526d20af80aab937
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 377a7eceff134211371c17ac14903cba0fb8daa6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785579"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042143"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Obsługiwanie wielu wersji programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ Termin *side-by-side* oznacza, że można zainstalować i zarządzać wieloma we
 
  Przed wprowadzeniem Twojego pakietu VSPackage, mogą być ładowane do side-by-side wersji programu Visual Studio, należy rozważyć następujące kwestie:
 
--   Należy ustalić strategię wdrażania side-by-side, w jakiej chcesz obserwować.
+- Należy ustalić strategię wdrażania side-by-side, w jakiej chcesz obserwować.
 
      Aby uzyskać więcej informacji, zobacz [wybór między udostępnionych i kontrolą wersji pakietów VSPackage](../extensibility/choosing-between-shared-and-versioned-vspackages.md).
 
--   Formaty plików rozwiązania i projektu należy dopasować strategii wdrażania.
+- Formaty plików rozwiązania i projektu należy dopasować strategii wdrażania.
 
      Aby uzyskać więcej informacji, zobacz [Uaktualnianie projektów niestandardowych](../misc/upgrading-custom-projects.md) i [rejestrowanie rozszerzeń nazw plików dla wdrożeń Side-By-Side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).
 
--   Instalatora musi obsługiwać swoją strategię wdrażania, aby składniki numerów wersji, a także składniki współużytkowane przez wszystkie wersje, są poprawnie zainstalowane i zarejestrowane.
+- Instalatora musi obsługiwać swoją strategię wdrażania, aby składniki numerów wersji, a także składniki współużytkowane przez wszystkie wersje, są poprawnie zainstalowane i zarejestrowane.
 
      Aby uzyskać więcej informacji, zobacz [instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md) , a także [Zarządzanie składnikami](../extensibility/internals/component-management.md).
 

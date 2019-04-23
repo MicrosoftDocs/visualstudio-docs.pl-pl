@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ba42ca1a4fefa337e488f3bb3e2879a0446aea
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: b9822dda92a096e3c497d468865d3ed9fd56e16d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223237"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046920"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Tworzenie diagramów zależności z kodu
 
@@ -43,13 +43,13 @@ Przed utworzeniem diagram zależności, upewnij się, że rozwiązanie ma projek
 > [!NOTE]
 > Diagramy zależności nie są obsługiwane dla projektów .NET Core w programie Visual Studio.
 
-1.  Na **architektury** menu, wybierz **nowy Diagram zależności**.
+1. Na **architektury** menu, wybierz **nowy Diagram zależności**.
 
-2.  W obszarze **szablony**, wybierz **diagram zależności**.
+2. W obszarze **szablony**, wybierz **diagram zależności**.
 
-3.  Nadaj nazwę diagramowi.
+3. Nadaj nazwę diagramowi.
 
-4.  W **Dodaj do projektu modelowania**, wyszukaj i wybierz istniejący projekt modelowania w rozwiązaniu.
+4. W **Dodaj do projektu modelowania**, wyszukaj i wybierz istniejący projekt modelowania w rozwiązaniu.
 
      —lub—
 
@@ -58,7 +58,7 @@ Przed utworzeniem diagram zależności, upewnij się, że rozwiązanie ma projek
     > [!NOTE]
     > Diagram zależności musi istnieć w projekcie modelowania. Możesz jednak połączyć elementy w innym miejscu rozwiązania.
 
-5.  Upewnij się zapisać zarówno projekt modelowania i diagram zależności.
+5. Upewnij się zapisać zarówno projekt modelowania i diagram zależności.
 
 ## <a name="drag-and-drop-or-copy-and-paste-from-a-code-map"></a>Przeciągnij i upuść, lub skopiuj i Wklej, z mapy kodu
 
@@ -101,19 +101,19 @@ Przed utworzeniem diagram zależności, upewnij się, że rozwiązanie ma projek
 
  Liczba na warstwie oznacza liczbę artefaktów, które są połączone z warstwą. Jednak odczytując tę liczbę, należy pamiętać, że:
 
--   Jeśli warstwa jest połączona z artefaktem zawierającym inne artefakty, ale warstwy nie łączy się bezpośrednio z innymi artefaktami, wówczas liczba uwzględnia tylko połączony artefakt. Jednak inne artefakty są uwzględniane w analizie podczas walidacji warstwy.
+- Jeśli warstwa jest połączona z artefaktem zawierającym inne artefakty, ale warstwy nie łączy się bezpośrednio z innymi artefaktami, wówczas liczba uwzględnia tylko połączony artefakt. Jednak inne artefakty są uwzględniane w analizie podczas walidacji warstwy.
 
      Na przykład, jeżeli warstwa jest połączona z pojedynczą przestrzenią nazw, liczba połączonych artefaktów wynosi 1, nawet jeśli przestrzeń nazw zawiera klasy. Jeśli warstwa zawiera także łącza do każdej klasy w przestrzeni nazw, liczba będzie uwzględniać połączone klasy.
 
--   Jeśli warstwa zawiera inne warstwy, które są połączone z artefaktami, warstwa kontenerów jest także połączona z tymi artefaktami, mimo że liczba na warstwie kontenerów nie uwzględnia tych artefaktów.
+- Jeśli warstwa zawiera inne warstwy, które są połączone z artefaktami, warstwa kontenerów jest także połączona z tymi artefaktami, mimo że liczba na warstwie kontenerów nie uwzględnia tych artefaktów.
 
 ## <a name="Managing"></a> Zarządzanie połączeniami między warstwami i artefaktami
 
-1.  Na diagramie zależności, otwórz menu skrótów dla warstwy, a następnie wybierz **Wyświetl łącza**.
+1. Na diagramie zależności, otwórz menu skrótów dla warstwy, a następnie wybierz **Wyświetl łącza**.
 
      **Eksplorator warstw** Wyświetla łącza artefaktów dla zaznaczonej warstwy.
 
-2.  Wykonaj następujące zadania, aby zarządzać tymi łączami:
+2. Wykonaj następujące zadania, aby zarządzać tymi łączami:
 
 |**To**|**W Eksploratorze warstw**|
 |-|-|
@@ -150,17 +150,17 @@ Przed utworzeniem diagram zależności, upewnij się, że rozwiązanie ma projek
 ## <a name="Codemaps"></a> Odnajdowanie wzorców i zależności na mapie kodu
  Podczas tworzenia diagramów zależności, można również tworzyć **map kodu**. Te diagramy ułatwia odnajdowanie wzorców i zależności, chociaż możesz zapoznać się z kodu. Użyj Eksploratora rozwiązań, widoku klas lub przeglądarki obiektów, aby zapoznać się z zestawów, przestrzeni nazw i klas — które często dobrze odpowiadają istniejącym warstwom. Aby uzyskać więcej informacji na temat map kodu zobacz:
 
--   [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)
+- [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)
 
--   [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)
+- [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)
 
--   [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)
+- [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Obsługa wersji narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [Wideo: Sprawdzanie poprawności zależności architektury w czasie rzeczywistym](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
-- [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)
-- [Diagramy zależności: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)
+- [Diagramy zależności: informacje](../modeling/layer-diagrams-reference.md)
+- [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)
 - [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)
 - [Tworzenie wizualizacji kodu](../modeling/visualize-code.md)

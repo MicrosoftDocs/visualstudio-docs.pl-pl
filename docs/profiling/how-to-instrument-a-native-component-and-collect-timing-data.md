@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89b8a9821fb9e02821d0a0a3b752fd92d46058ca
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 7a4f721f8e6f2faeca1a1d430534f802c719bf43
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647038"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047868"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Instrukcje: Instrumentowanie autonomicznego składnika natywnego i zbieranie danych o chronometrażu przy użyciu profilera z wiersza polecenia
 W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia narzędzi Profilujących do Instrumentacji natywnych składnika, takiego jak C++. *plik exe* lub. *Biblioteka DLL* pliku oraz w celu zbierania danych o chronometrażu.
@@ -60,7 +60,7 @@ Aby zebrać szczegółowe dane czasowe ze składnika za pomocą metody instrumen
 
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych
 
--   Następujące pary opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
+- Następujące pary opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
 
     |Opcja|Opis|
     |------------|-----------------|
@@ -73,9 +73,9 @@ Aby zebrać szczegółowe dane czasowe ze składnika za pomocą metody instrumen
 
 #### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania
 
-1.  Zamknij aplikację docelową.
+1. Zamknij aplikację docelową.
 
-2.  Zamknij program profilujący. Wpisz:
+2. Zamknij program profilujący. Wpisz:
 
      **Narzędzia VSPerfCmd/shutdown**
 

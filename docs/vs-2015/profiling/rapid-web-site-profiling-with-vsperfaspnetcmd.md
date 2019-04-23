@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b269ef28218fd51e3a87f331c44096cd80773f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dbfe242434cdc953ec29fdd10a318c435abadc1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760300"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049832"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Szybkie profilowanie witryny sieci Web za pomocą VSPerfASPNETCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ ms.locfileid: "54760300"
   
  **polecenie vsperfaspnetcmd/Memory**[**: okres istnienia**] **/Porada**_podanym adresem URL_  
   
-##  <a name="UsingNoWait"></a> Przy użyciu opcji flagi/nowait  
+## <a name="UsingNoWait"></a> Przy użyciu opcji flagi/nowait  
  Domyślnie, wiersz polecenia nie może zwracać po **vsperfaspnetcmd** polecenia. Następująca opcja składni umożliwia wymuszenie wiersza polecenia, aby zwrócić. W oknie wiersza polecenia można wykonywać inne operacje. Aby zakończyć profilowania, należy użyć **/shutdown** opcję w oddzielnym **vsperfaspnetcmd** polecenia.  
   
  Aby rozpocząć profilowanie:  

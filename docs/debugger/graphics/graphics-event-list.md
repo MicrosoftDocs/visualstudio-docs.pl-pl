@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e71239755cf7cf5d38f6e71568a0cd7be0f0d98
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6af97740302d5e7053323b54ef11cbf1a279dd94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649995"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066783"
 ---
 # <a name="graphics-event-list"></a>Lista zdarzeń grafiki
 Umożliwia Lista zdarzeń graficznych w analizatora grafiki programu Visual Studio Eksploruj zdarzenia Direct3D, które zostały zarejestrowane podczas renderowania ramki grach i aplikacjach.
@@ -49,7 +49,7 @@ Umożliwia Lista zdarzeń graficznych w analizatora grafiki programu Visual Stud
 
 ##### <a name="to-change-the-event-list-view-mode"></a>Aby zmienić tryb widoku listy zdarzeń
 
--   W **Lista zdarzeń graficznych** Znajdź okno powyżej listy zdarzeń, **widoku** listy rozwijanej i wybierz **osi czasu** widoku lub **działanie procesora GPU** widoku.
+- W **Lista zdarzeń graficznych** Znajdź okno powyżej listy zdarzeń, **widoku** listy rozwijanej i wybierz **osi czasu** widoku lub **działanie procesora GPU** widoku.
 
 ### <a name="filtering-events"></a>Filtrowanie zdarzeń
  Można użyć pola wyszukiwania — znajdującego się w prawym górnym rogu **Lista zdarzeń graficznych** okna — Aby filtrować listę zdarzeń, aby uwzględnić tylko zdarzenia, których nazwy zawierają konkretnych słów kluczowych. Można określić pojedynczy słów kluczowych, takich jak `Vertex`— jak pokazano na poprzedniej ilustracji — lub wiele słów kluczowych, korzystając z rozdzielaną średnikami listę `Draw;Primitive`— który dopasowuje zdarzenia, które mają jedną `Draw` lub `Primitive` w nazwach. Wyszukiwania są wrażliwe na białe znaki — na przykład `VSSet` i `VS Set` są różne wyszukiwania — więc upewnij się, że formularz wyszukiwania ostrożnie.

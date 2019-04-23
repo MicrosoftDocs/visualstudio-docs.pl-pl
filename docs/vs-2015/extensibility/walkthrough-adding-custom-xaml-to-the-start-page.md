@@ -11,12 +11,12 @@ ms.assetid: 9af4d5f9-1cfc-4221-aea7-c8cd3f7571a6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 193cea35fb7aa852b996aead6a26fd4e26b7b331
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 5d41c68adc544806acc7a6abc02229e00f216f39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873267"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048583"
 ---
 # <a name="walkthrough-adding-custom-xaml-to-the-start-page"></a>Przewodnik: Dodawanie niestandardowych elementów XAML do strony początkowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ W tym instruktażu przedstawiono sposób tworzenia niestandardowej programu Visu
   
 ## <a name="adding-custom-xaml"></a>Dodawanie niestandardowego XAML  
   
-1.  Tworzenie strony początkowej, postępując zgodnie z instrukcjami w [tworzenie niestandardowe strony początkowej](../extensibility/creating-a-custom-start-page.md).  
+1. Tworzenie strony początkowej, postępując zgodnie z instrukcjami w [tworzenie niestandardowe strony początkowej](../extensibility/creating-a-custom-start-page.md).  
   
-2.  W pliku MainWindow.xaml Znajdź \<siatki > sekcji.  
+2. W pliku MainWindow.xaml Znajdź \<siatki > sekcji.  
   
-3.  Dodaj \<TabControl > element i \<TabItem > wewnątrz \< siatki > elementu, jak pokazano w poniższym przykładzie.  
+3. Dodaj \<TabControl > element i \<TabItem > wewnątrz \< siatki > elementu, jak pokazano w poniższym przykładzie.  
   
     ```xml  
     <Grid>  
@@ -41,7 +41,7 @@ W tym instruktażu przedstawiono sposób tworzenia niestandardowej programu Visu
     </Grid>  
     ```  
   
-4.  Dodaj drugą \<TabItem >, za pomocą \<przycisk > element, który zostanie otwarty nowy projekt:  
+4. Dodaj drugą \<TabItem >, za pomocą \<przycisk > element, który zostanie otwarty nowy projekt:  
   
     ```xml  
     <Grid>  
@@ -61,31 +61,31 @@ W tym instruktażu przedstawiono sposób tworzenia niestandardowej programu Visu
   
 ## <a name="testing-the-custom-start-page"></a>Testowanie niestandardową stronę początkową  
   
-1.  Naciśnij F5.  
+1. Naciśnij F5.  
   
      Zostanie otwarty doświadczalnym wystąpieniu programu Visual Studio za pomocą niestandardowej strony początkowej zainstalowany, ale nie są wybrane.  
   
-2.  W doświadczalnym wystąpieniu programu Visual Studio, otwórz **/Options narzędzia / środowisko** strony.  
+2. W doświadczalnym wystąpieniu programu Visual Studio, otwórz **/Options narzędzia / środowisko** strony.  
   
-3.  Wybierz **uruchamiania**. Na **Dostosuj stronę początkową** listy, wybierz swój plik .xaml, a następnie kliknij przycisk **OK**.  
+3. Wybierz **uruchamiania**. Na **Dostosuj stronę początkową** listy, wybierz swój plik .xaml, a następnie kliknij przycisk **OK**.  
   
-4.  Na **widoku** menu, kliknij przycisk **strona startowa**.  
+4. Na **widoku** menu, kliknij przycisk **strona startowa**.  
   
-5.  Kliknij przycisk **Bing** kartę.  
+5. Kliknij przycisk **Bing** kartę.  
   
      Powinna zostać wyświetlona strona sieci web Bing.  
   
-6.  Kliknij przycisk **MyButton** kartę.  
+6. Kliknij przycisk **MyButton** kartę.  
   
      Powinien zostać wyświetlony **MyProject** przycisk, co spowoduje otwarcie **nowy projekt** okna dialogowego.  
   
-7.  Zamknij wystąpienie doświadczalne.  
+7. Zamknij wystąpienie doświadczalne.  
   
 ## <a name="applying-the-custom-start-page"></a>Stosowanie niestandardową stronę początkową  
   
 #### <a name="to-test-the-custom-start-page"></a>Aby przetestować niestandardowej strony początkowej  
   
-1.  W **narzędzia / Opcje / środowisko**, wybierz opcję **uruchamiania**. Na **Dostosuj stronę początkową** listy, wybierz swój plik .xaml, a następnie kliknij przycisk **OK**.  
+1. W **narzędzia / Opcje / środowisko**, wybierz opcję **uruchamiania**. Na **Dostosuj stronę początkową** listy, wybierz swój plik .xaml, a następnie kliknij przycisk **OK**.  
   
 ## <a name="next-steps"></a>Następne kroki  
  Visual Studio strona początkowa zawiera teraz karta, która wyświetla kartę przeglądarki sieci Web i na karcie MyButton. Można tworzyć niestandardowe strony Start, mają inne funkcje za pomocą *związanym z kodem* model, aby dodać niestandardowy plik .dll, jak pokazano na [Dodawanie kontrolki użytkownika do strony początkowej](../extensibility/adding-user-control-to-the-start-page.md). Niestandardowe strony Start można udostępniać innym użytkownikom, publikując wynikowy plik .vsix do [Visual Studio Marketplace](https://marketplace.visualstudio.com/) witrynę sieci Web lub do innej witryny sieci Web lub udostępnianie. Aby uzyskać więcej informacji, zobacz [wdrażanie niestandardowych stron Start](../extensibility/deploying-custom-start-pages.md).  

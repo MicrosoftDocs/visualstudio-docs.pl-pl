@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47eed859b0969289a78f4eb13314241e89982f5d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c2c1591e3d859bd768e39d0db461cc0402c57258
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919307"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042513"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Przewodnik: Pobieranie zestawów na żądanie z wdrożeniem ClickOnce interfejsu API przy użyciu narzędzia Projektant
 Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji zostaną pobrane po pierwszym uruchomieniu aplikacji. Jednak może być częścią aplikacji, które są używane w małej grupie użytkowników. W tym przypadku chcesz pobrać zestaw tylko wtedy, gdy tworzysz w jednym z jej typów. Następujące Instruktaż pokazuje, jak oznaczyć określone zestawy w aplikacji jako "opcjonalny", jak je pobrać za pomocą klasy i w <xref:System.Deployment.Application> przestrzenią nazw, gdy wymagane przez środowisko uruchomieniowe języka wspólnego.
@@ -71,15 +71,15 @@ Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/incl
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-visual-studio"></a>Aby oznaczyć zestawów jako opcjonalne w aplikacji ClickOnce za pomocą programu Visual Studio
 
-1.  Kliknij prawym przyciskiem myszy projekt Windows Forms w **Eksploratora rozwiązań** i kliknij przycisk **właściwości**. Wybierz **Publikuj** kartę.
+1. Kliknij prawym przyciskiem myszy projekt Windows Forms w **Eksploratora rozwiązań** i kliknij przycisk **właściwości**. Wybierz **Publikuj** kartę.
 
-2.  Kliknij przycisk **pliki aplikacji** przycisku.
+2. Kliknij przycisk **pliki aplikacji** przycisku.
 
-3.  Znajdź listę dla *ClickOnceLibrary.dll*. Ustaw **stan publikowania** pole listy rozwijanej, aby **Include**.
+3. Znajdź listę dla *ClickOnceLibrary.dll*. Ustaw **stan publikowania** pole listy rozwijanej, aby **Include**.
 
-4.  Rozwiń **grupy** pole listy rozwijanej i wybierz pozycję **New**. Wprowadź nazwę `ClickOnceLibrary` jako nazwę nowej grupy.
+4. Rozwiń **grupy** pole listy rozwijanej i wybierz pozycję **New**. Wprowadź nazwę `ClickOnceLibrary` jako nazwę nowej grupy.
 
-5.  Kontynuować publikowanie aplikacji, zgodnie z opisem w [jak: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+5. Kontynuować publikowanie aplikacji, zgodnie z opisem w [jak: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>Aby oznaczyć zestawów jako opcjonalne w aplikacji ClickOnce przy użyciu Manifest Generation i narzędzia do edytowania — graficzny klient (MageUI.exe)
 

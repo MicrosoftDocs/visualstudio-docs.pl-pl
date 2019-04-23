@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f913a5981e16f067dd10836c78485d635a35052
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4072cef2a47db1177a8ee7b630bd8febccc5e0b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636934"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049586"
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Instrukcje: Debugowanie aplikacji ClickOnce z ograniczonymi uprawnieniami
 Deweloperzy najprawdopodobniej używasz komputer deweloperski przy użyciu uprawnień pełnego zaufania, dzięki czemu nie będą widzieć same wyjątki zabezpieczeń podczas debugowania aplikacji ClickOnce, które użytkownik końcowy może zostać wyświetlony po uruchomieniu z ograniczonymi uprawnieniami.
@@ -32,31 +32,31 @@ Deweloperzy najprawdopodobniej używasz komputer deweloperski przy użyciu upraw
 
 ### <a name="to-enable-debugging-with-restricted-permissions"></a>Aby włączyć debugowanie z ograniczonymi uprawnieniami
 
-1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
+1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
 
-2.  W **projektanta projektu**, kliknij przycisk **zabezpieczeń** kartę.
+2. W **projektanta projektu**, kliknij przycisk **zabezpieczeń** kartę.
 
-3.  Wybierz **Włącz ustawienie zabezpieczeń ClickOnce** pole wyboru, a następnie kliknij przycisk **to częściowo zaufanych aplikacji** przycisku opcji.
+3. Wybierz **Włącz ustawienie zabezpieczeń ClickOnce** pole wyboru, a następnie kliknij przycisk **to częściowo zaufanych aplikacji** przycisku opcji.
 
-4.  Kliknij przycisk **zaawansowane** przycisku.
+4. Kliknij przycisk **zaawansowane** przycisku.
 
-5.  Wybierz **Debuguj aplikację z wybranym zestawem uprawnień** pole wyboru, a następnie kliknij przycisk **OK**.
+5. Wybierz **Debuguj aplikację z wybranym zestawem uprawnień** pole wyboru, a następnie kliknij przycisk **OK**.
 
      Podczas debugowania aplikacji, wszelkie próby uprawnienie, które nie jest częścią zestawu uprawnień dostępu zgłosi wyjątek zabezpieczeń.
 
 ### <a name="to-specify-a-url-for-debugging"></a>Aby określić adres URL do debugowania
 
-1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
+1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
 
-2.  W **projektanta projektu**, kliknij przycisk **zabezpieczeń** kartę.
+2. W **projektanta projektu**, kliknij przycisk **zabezpieczeń** kartę.
 
-3.  Wybierz **Włącz ustawienie zabezpieczeń ClickOnce** pole wyboru, a następnie kliknij przycisk **to częściowo zaufanych aplikacji** przycisku opcji.
+3. Wybierz **Włącz ustawienie zabezpieczeń ClickOnce** pole wyboru, a następnie kliknij przycisk **to częściowo zaufanych aplikacji** przycisku opcji.
 
-4.  Kliknij przycisk **zaawansowane** przycisku.
+4. Kliknij przycisk **zaawansowane** przycisku.
 
-5.  Wybierz **Debuguj aplikację z wybranym zestawem uprawnień** pole wyboru, a następnie kliknij przycisk **OK**.
+5. Wybierz **Debuguj aplikację z wybranym zestawem uprawnień** pole wyboru, a następnie kliknij przycisk **OK**.
 
-6.  W **Debuguj aplikację tak, jakby zostały pobrane z następującego adresu URL** polu tekstowym wprowadź adres URL lub ścieżka sieciowa.
+6. W **Debuguj aplikację tak, jakby zostały pobrane z następującego adresu URL** polu tekstowym wprowadź adres URL lub ścieżka sieciowa.
 
 ## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Ustawienie uprawnień niestandardowych dla aplikacji ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)

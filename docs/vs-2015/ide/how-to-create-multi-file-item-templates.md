@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4616cb2f0e908b3228061288da05ce01543afdc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c6c6dde1880881bfb236909fde6ce6deb6bf596f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785903"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056910"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Instrukcje: Tworzenie szablonów elementów wielu plików
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ Szablony elementów może określić tylko jeden element, ale czasami element sk
   
 ### <a name="to-manually-create-a-multi-file-item-template"></a>Ręczne tworzenie szablonów elementów wielu plików  
   
-1.  Utwórz szablon elementu, jak należy utworzyć szablon elementu pojedynczego pliku. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie szablonów elementu](../ide/how-to-create-item-templates.md).  
+1. Utwórz szablon elementu, jak należy utworzyć szablon elementu pojedynczego pliku. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie szablonów elementu](../ide/how-to-create-item-templates.md).  
   
-2.  Dodaj `TargetFileName` atrybuty do każdego `ProjectItem` elementu. Ustaw wartości `TargetFileName` atrybuty $fileinputname $. *FileExtension*, gdzie *FileExtension* jest rozszerzeniem nazwy pliku w pliku, który jest uwzględniane w szablonie. Na przykład:  
+2. Dodaj `TargetFileName` atrybuty do każdego `ProjectItem` elementu. Ustaw wartości `TargetFileName` atrybuty $fileinputname $. *FileExtension*, gdzie *FileExtension* jest rozszerzeniem nazwy pliku w pliku, który jest uwzględniane w szablonie. Na przykład:  
   
     ```  
     <ProjectItem TargetFileName="$fileinputname$.vb">  
@@ -53,9 +53,9 @@ Szablony elementów może określić tylko jeden element, ale czasami element sk
   
      Gdy element pochodzące z tego szablonu zostanie dodany do projektu, nazwy plików będzie zależeć od nazwy, wpisany przez użytkownika w **Dodaj nowy element** okno dialogowe.  
   
-3.  Wybierz pliki do uwzględnienia w szablonie, kliknij prawym przyciskiem myszy zaznaczenie, kliknij przycisk **Wyślij do**, a następnie kliknij przycisk **skompresowany Folder (zip)**. Wybrane pliki są kompresowane w pliku zip.  
+3. Wybierz pliki do uwzględnienia w szablonie, kliknij prawym przyciskiem myszy zaznaczenie, kliknij przycisk **Wyślij do**, a następnie kliknij przycisk **skompresowany Folder (zip)**. Wybrane pliki są kompresowane w pliku zip.  
   
-4.  Umieść plik zip w lokalizacji szablonów elementów użytkownika. Domyślnie katalog jest \My Studio *wersji*\Templates\ItemTemplates\\. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie i organizacja szablonów](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+4. Umieść plik zip w lokalizacji szablonów elementów użytkownika. Domyślnie katalog jest \My Studio *wersji*\Templates\ItemTemplates\\. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie i organizacja szablonów](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie przedstawiono [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablonu Windows Forms. Gdy element zostanie utworzony na podstawie tego szablonu, nazwy trzy utworzone pliki będą zgodne nazwy wprowadzone w **Dodaj nowy element** okno dialogowe.  

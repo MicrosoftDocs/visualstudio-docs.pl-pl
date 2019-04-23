@@ -8,12 +8,12 @@ ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7cbb66d47eb261c0b25f382370bb6590af351edd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e23e242060eea31ae79fd8a3998fb4ee5d734647
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796049"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048678"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ: Konwertowanie dodatków na rozszerzenia pakietu VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,22 +39,22 @@ Dodatki są one przestarzałe. Aby wprowadzić nowe rozszerzenie programu Visual
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>Czy mogę przekonwertować mój projekt dodatku do projektu VSIX?  
  Nie można przekonwertować projekt dodatku bezpośrednio do projektu VSIX, ponieważ mechanizm używany w projektów VSIX nie są takie same jak te w projektach dodatku. Szablon projektu VSIX, a także szablony elementów projektu mają duże ilości kodu, który sprawia, że stosunkowo łatwe rozpoczęcie korzystania i uruchomiony jako rozszerzenia VSIX.  
   
-##  <a name="BKMK_StartDeveloping"></a> Jak rozpocząć tworzenie rozszerzenia VSIX  
+## <a name="BKMK_StartDeveloping"></a> Jak rozpocząć tworzenie rozszerzenia VSIX  
  Poniżej przedstawiono, jak wprowadzić VSIX, który zawiera polecenie menu:  
   
 #### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Aby utworzyć rozszerzenie VSIX, który zawiera polecenie menu  
   
-1.  Utwórz projekt VSIX. (**Pliku**, **New**, **projektu**, lub typu **projektu** w **Szybkie uruchamianie** okno). W **nowy projekt** okna dialogowego rozwiń **Visual C# / rozszerzalności** lub **języka Visual Basic / rozszerzalności** i wybierz **projekt VSIX**.) Nadaj projektowi nazwę **TestExtension** i określ lokalizację dla niego.  
+1. Utwórz projekt VSIX. (**Pliku**, **New**, **projektu**, lub typu **projektu** w **Szybkie uruchamianie** okno). W **nowy projekt** okna dialogowego rozwiń **Visual C# / rozszerzalności** lub **języka Visual Basic / rozszerzalności** i wybierz **projekt VSIX**.) Nadaj projektowi nazwę **TestExtension** i określ lokalizację dla niego.  
   
-2.  Dodaj **polecenia niestandardowego** szablonu elementu projektu. (Kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz **Add / nowy element**. W **nowy projekt** okno dialogowe dla programu Visual C# lub Visual Basic, wybierz **rozszerzalności** a następnie wybierz węzeł **polecenia niestandardowego**.)  
+2. Dodaj **polecenia niestandardowego** szablonu elementu projektu. (Kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz **Add / nowy element**. W **nowy projekt** okno dialogowe dla programu Visual C# lub Visual Basic, wybierz **rozszerzalności** a następnie wybierz węzeł **polecenia niestandardowego**.)  
   
-3.  Naciśnij klawisz F5, aby skompilować i uruchomić projekt w trybie debugowania.  
+3. Naciśnij klawisz F5, aby skompilować i uruchomić projekt w trybie debugowania.  
   
      Zostanie wyświetlone drugie wystąpienie programu Visual Studio. To drugie wystąpienie jest nazywany wystąpienie doświadczalne i może nie mieć tych samych ustawień co wystąpienie programu Visual Studio za pomocą pisania kodu. Podczas pierwszego uruchomienia wystąpienia eksperymentalnego użytkownik jest proszony logować się do usługi VS Online i określ motywu i profilu.  
   
      Na **narzędzia** menu (w doświadczalnym wystąpieniu) powinien zostać wyświetlony przycisk o nazwie **nazwa polecenia Moje**. Po wybraniu tego przycisku, powinien pojawić się komunikat: **Inside TestVSPackagePackage.MenuItemCallback()**.  
   
-##  <a name="BKMK_RunAddin"></a> Jak mogę uruchomić Moje kodu dodatku w VSPackage  
+## <a name="BKMK_RunAddin"></a> Jak mogę uruchomić Moje kodu dodatku w VSPackage  
  Kodu dodatku jest zwykle uruchamiane w jednym z dwóch sposobów:  
   
 - Wyzwalane za pomocą polecenia menu (kod znajduje się w `IDTCommandTarget.Exec` metoda)  

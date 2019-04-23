@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b16b8e4e15c304f6e349d2f831ca879a4f7a183
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7b709012dafe0db3dcc0959908a1e6b4d9e07e21
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618838"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061996"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Wprowadzenie do programowania dodatków narzędzi VSTO
   Za pomocą dodatków narzędzi VSTO automatyzację aplikacji Microsoft Office, Rozszerz funkcje aplikacji i dostosowywanie interfejsu użytkownika (UI) aplikacji. Aby uzyskać informacji na temat jak dodatków narzędzi VSTO wypadają w porównaniu do innych typów rozwiązań dla pakietu Office, można utworzyć przy użyciu programu Visual Studio, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -40,19 +40,19 @@ ms.locfileid: "56618838"
 
  Aby uzyskać więcej informacji na temat modeli obiektów określonych aplikacji pakietu Microsoft Office zobacz następujące tematy:
 
--   [Model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md)
+- [Model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md)
 
--   [Model obiektu Word — omówienie](../vsto/word-object-model-overview.md)
+- [Model obiektu Word — omówienie](../vsto/word-object-model-overview.md)
 
--   [Model obiektu Outlook ― omówienie](../vsto/outlook-object-model-overview.md)
+- [Model obiektu Outlook ― omówienie](../vsto/outlook-object-model-overview.md)
 
--   [Rozwiązania InfoPath](../vsto/infopath-solutions.md)
+- [Rozwiązania InfoPath](../vsto/infopath-solutions.md)
 
--   [PowerPoint — rozwiązania](../vsto/powerpoint-solutions.md)
+- [PowerPoint — rozwiązania](../vsto/powerpoint-solutions.md)
 
--   [Rozwiązania projektu](../vsto/project-solutions.md)
+- [Rozwiązania projektu](../vsto/project-solutions.md)
 
--   [Model obiektu Visio ― omówienie](../vsto/visio-object-model-overview.md)
+- [Model obiektu Visio ― omówienie](../vsto/visio-object-model-overview.md)
 
 ## <a name="customize-the-user-interface-of-applications"></a>Dostosowywanie interfejsu użytkownika aplikacji
  Istnieje kilka różnych sposobów dostosowania interfejsu użytkownika aplikacji hosta przy użyciu dodatku VSTO:

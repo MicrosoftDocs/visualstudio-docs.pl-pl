@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f5d66a2baada5841dc6a0edefb6fa759168bcb5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1f6e55c99d874bd18f0045746bbab4ac96370bc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924087"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042410"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Uzyskaj informacje czcionek i kolorów tekstu kolorowania
 Proces, który renderuje lub wyświetla wyróżnione kolorem tekstu w elementach interfejsu użytkownika zależy od typu projektu, jego technologii i dla deweloperów preferencji. **Czcionki i kolory** strona właściwości są przechowywane ustawienia.
@@ -31,11 +31,11 @@ Proces, który renderuje lub wyświetla wyróżnione kolorem tekstu w elementach
 
 Kolorować, pakietu VSPackage musi uzyskać bieżące **czcionki i kolory** ustawienia. Pakietu VSPackage mogą uzyskać bieżące ustawienia w następujący sposób, w zależności od jego potrzeb:
 
--   Użyj mechanizmu stanu trwałego czcionek i kolorów do pobrania przechowywanych lub bieżącego stanu. Aby uzyskać więcej informacji, zobacz [dostępu przechowywane ustawienia czcionek i kolorów](../extensibility/accessing-stored-font-and-color-settings.md).
+- Użyj mechanizmu stanu trwałego czcionek i kolorów do pobrania przechowywanych lub bieżącego stanu. Aby uzyskać więcej informacji, zobacz [dostępu przechowywane ustawienia czcionek i kolorów](../extensibility/accessing-stored-font-and-color-settings.md).
 
--   Użyj <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interfejsu usługi, która udostępnia dane czcionek i kolorów, aby pobrać wystąpienie obiektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, jeśli pakietu VSPackage nie jest również dostawcy czcionek i kolorów.
+- Użyj <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interfejsu usługi, która udostępnia dane czcionek i kolorów, aby pobrać wystąpienie obiektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, jeśli pakietu VSPackage nie jest również dostawcy czcionek i kolorów.
 
--   Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> interfejsu.
+- Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> interfejsu.
 
 Aby upewnić się, że wyniki uzyskane za pomocą sondowania znajdują się w górę do daty, warto użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interfejs do określenia, czy aktualizacja jest wymagana przed wywołaniem metody pobierania <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu.
 

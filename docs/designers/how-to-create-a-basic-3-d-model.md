@@ -8,26 +8,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45944afe3c5ebd1baa307f6063b021c09fd6bfa6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1be8af11dd9b03b8c63d34b60e6af3c3c8147b48
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970273"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059191"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Instrukcje: Tworzenie podstawowego modelu 3D
 
 W tym artykule przedstawiono sposób używania edytora modelu do tworzenia podstawowego modelu 3D. Omówione są następujące działania:
 
--   Dodawanie obiektów do sceny
+- Dodawanie obiektów do sceny
 
--   Wybieranie powierzchni i krawędzi
+- Wybieranie powierzchni i krawędzi
 
--   Opcje przekształcania
+- Opcje przekształcania
 
--   Za pomocą **Podziel pierwszy plan** i **wyciągnij** narzędzia
+- Za pomocą **Podziel pierwszy plan** i **wyciągnij** narzędzia
 
--   Za pomocą **triangulacja** polecenia
+- Za pomocą **triangulacja** polecenia
 
 ## <a name="create-a-basic-3d-model"></a>Tworzenie podstawowego modelu 3D
  Edytor modelu do tworzenia i modyfikowania modeli 3D i sceny gry lub aplikacji. Poniższe kroki pokazują jak utworzyć uproszczony model 3D w domu za pomocą edytora modelu. Uproszczony model może służyć jako elementu zastępczego dla końcowego artystycznych, które są nadal tworzone, jako siatkę wykrywanie kolizji lub niska Szczegóły modelu ma być używany, gdy obiekt, który reprezentuje jest zbyt daleko do korzystania z renderowania bardziej szczegółowe.

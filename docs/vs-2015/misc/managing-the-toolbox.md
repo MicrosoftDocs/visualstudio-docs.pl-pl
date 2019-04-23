@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: e0e4c47ebeece4720a80b50a4f95921e204dbca6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba4b166cc409dd2c50c258a9b82ee34c22e9b084
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772112"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054771"
 ---
 # <a name="managing-the-toolbox"></a>Zarządzanie przybornika
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Umożliwia pakietu VSPackage, przykład edytora lub projektanta, do zarządzania członkostwa i wygląd **przybornika**.  
@@ -27,9 +27,9 @@ ms.locfileid: "54772112"
   
  Ta obsługa jest ograniczona do edytorach i projektantach wymaganie:  
   
-1.  Implementacja obiekt fabryki, aby zapewnić wystąpienia edytora lub projektanta. Aby uzyskać więcej informacji dotyczących implementowania projektancie lub edytorze obiekt fabryki, zobacz [fabryki edytora](../extensibility/editor-factories.md).  
+1. Implementacja obiekt fabryki, aby zapewnić wystąpienia edytora lub projektanta. Aby uzyskać więcej informacji dotyczących implementowania projektancie lub edytorze obiekt fabryki, zobacz [fabryki edytora](../extensibility/editor-factories.md).  
   
-2.  Rejestracja na karcie przybornika, który automatycznie jest aktywowany, jeśli występuje edytora lub projektanta.  
+2. Rejestracja na karcie przybornika, który automatycznie jest aktywowany, jeśli występuje edytora lub projektanta.  
   
 ## <a name="controlling-the-toolbox"></a>Kontrolowanie przybornika  
  Uzupełniające Obsługa automatyzacji [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] udostępnia następujące interfejsy zapewnienie pakietów VSPackage większą kontrolę nad jak **przybornika** jest zarządzana.  

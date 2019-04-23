@@ -42,12 +42,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8b1b7c4ea16151c94c825b6e5467e40e3e6099b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2ef04af4fda717d3f2fa6a90ba6b9ffdc681d5a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929339"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052431"
 ---
 # <a name="options-text-editor-all-languages"></a>Opcje, edytor tekstu, wszystkie języki
 
@@ -115,9 +115,9 @@ Po wybraniu Wyświetla **pasek nawigacyjny** w górnej części edytora kodu. Je
 
 Ta opcja ustawia zachowanie edytora, gdy umieścisz kursor w pustym wierszu, wybierz nothing, a następnie skopiować lub wyciąć.
 
--   Po wybraniu tej opcji pusty wiersz jest skopiować lub wyciąć. Jeśli następnie wkleić, jest wstawiany nowy, pusty wiersz.
+- Po wybraniu tej opcji pusty wiersz jest skopiować lub wyciąć. Jeśli następnie wkleić, jest wstawiany nowy, pusty wiersz.
 
--   Gdy ta opcja jest wyczyszczone, polecenie Cut usuwa pustych wierszy. Jednak dane w Schowku jest zachowywana. W związku z tym Jeśli następnie użyć polecenia Wklej, zostanie wklejony zawartości ostatnio skopiowana do Schowka. Jeśli nic nie został skopiowany wcześniej, nic nie zostanie wklejony.
+- Gdy ta opcja jest wyczyszczone, polecenie Cut usuwa pustych wierszy. Jednak dane w Schowku jest zachowywana. W związku z tym Jeśli następnie użyć polecenia Wklej, zostanie wklejony zawartości ostatnio skopiowana do Schowka. Jeśli nic nie został skopiowany wcześniej, nic nie zostanie wklejony.
 
 To ustawienie nie ma wpływu na Kopiuj lub Wytnij gdy wiersz nie jest pusty. Jeśli nic nie jest zaznaczone, cały wiersz jest skopiować lub wyciąć. Jeśli następnie wkleić, tekst cały wiersz i jej znak endline zostaną wklejone.
 

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4e16d6dc3eb7529e2e13ed333cacaf93e36d728
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a3c38701ce222090f14b6880489eea4d22f053d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653882"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061765"
 ---
 # <a name="command-window"></a>Okno polecenia
 **Polecenia** okna jest używana do wykonywania poleceń ani aliasów bezpośrednio w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE). Można wykonać polecenia menu i poleceń, które nie są wyświetlane w żadnym menu. Aby wyświetlić **polecenia** okna, wybierz **Windows inne** z **widoku** menu, a następnie wybierz **okna polecenia**.
@@ -80,13 +80,13 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 
  W tym przykładzie
 
--   `Edit.ReplaceInFiles` polecenie
+- `Edit.ReplaceInFiles` polecenie
 
--   `/case` i `/pattern:regex` parametry (poprzedzony znakiem ukośnika [/])
+- `/case` i `/pattern:regex` parametry (poprzedzony znakiem ukośnika [/])
 
--   `regex` jest to wartość `/pattern` przełączyć; `/case` przełącznik nie ma wartości
+- `regex` jest to wartość `/pattern` przełączyć; `/case` przełącznik nie ma wartości
 
--   `var[1-3]+` i `oldpar` parametrów
+- `var[1-3]+` i `oldpar` parametrów
 
     > [!NOTE]
     >  Polecenia, parametr, przełącznika lub wartość, która zawiera spacje, musi mieć podwójny cudzysłów po obu stronach.

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4243bcedea1699ba02b3c3715cab7f61ba62281
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 026b670deb5beff42c927894ee9851ddb3ccc3ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950022"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042814"
 ---
 # <a name="create-and-configure-tableadapters"></a>Tworzenie i konfigurowanie adapterów TableAdapter
 
@@ -80,16 +80,16 @@ Poniższy przykład pokazuje sposób wywoływania dodatkowych kwerendę o nazwie
 
 ### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>Aby uruchomić Kreatora konfiguracji zapytania TableAdapter za pomocą nowego zapytania
 
-1.  Otwórz swój zestaw danych w **Projektanta obiektów Dataset**.
+1. Otwórz swój zestaw danych w **Projektanta obiektów Dataset**.
 
-2.  W przypadku tworzenia nowego zapytania, przeciągnij **zapytania** obiektu z **DataSet** karcie **przybornika** na <xref:System.Data.DataTable>, lub wybierz **Dodaj zapytanie**z menu skrótów TableAdapter. Możesz również przeciągnąć **zapytania** obiektu w pustym obszarem **Projektanta obiektów Dataset**, co powoduje utworzenie TableAdapter bez skojarzonego <xref:System.Data.DataTable>. Te zapytania można tylko zwraca pojedyncze wartości (skalarne) lub wykonywania UPDATE, INSERT lub usunąć poleceń w bazie danych.
+2. W przypadku tworzenia nowego zapytania, przeciągnij **zapytania** obiektu z **DataSet** karcie **przybornika** na <xref:System.Data.DataTable>, lub wybierz **Dodaj zapytanie**z menu skrótów TableAdapter. Możesz również przeciągnąć **zapytania** obiektu w pustym obszarem **Projektanta obiektów Dataset**, co powoduje utworzenie TableAdapter bez skojarzonego <xref:System.Data.DataTable>. Te zapytania można tylko zwraca pojedyncze wartości (skalarne) lub wykonywania UPDATE, INSERT lub usunąć poleceń w bazie danych.
 
-3.  Na **wybierz połączenie danych** ekranu, wybierz lub Utwórz połączenie, które będą używane zapytanie.
+3. Na **wybierz połączenie danych** ekranu, wybierz lub Utwórz połączenie, które będą używane zapytanie.
 
     > [!NOTE]
     > Ten ekran jest wyświetlany tylko wtedy, gdy projektant nie może określić odpowiednie połączenie lub gdy będzie dostępnych żadnych połączeń.
 
-4.  Na **wybierz typ polecenia** ekranu, wybierz jedną z następujących metod pobierania danych z bazy danych:
+4. Na **wybierz typ polecenia** ekranu, wybierz jedną z następujących metod pobierania danych z bazy danych:
 
     - **Użyj instrukcji SQL** umożliwia wpisanie instrukcję SQL, aby wybrać dane z bazy danych.
 

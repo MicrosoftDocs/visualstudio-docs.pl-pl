@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40a8901b60c25e29f038aee634ed54519501a925
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1c9ea6398ca02291bb9dc11693c98336cd33b14b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803837"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061995"
 ---
 # <a name="layer-diagrams-reference"></a>Diagramy warstw: Tematy pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ W programie Visual Studio, można użyć *diagramu warstwowego* aby zwizualizowa
 |4|**Komentarz**|Służy do dodawania notatek do diagramu lub elementy na diagramie.|  
 |5|**Link komentarza**|Usługa umożliwia łączenie komentarze do elementów na diagramie.|  
   
-##  <a name="Explorer"></a> Eksplorator warstw  
+## <a name="Explorer"></a> Eksplorator warstw  
  Możesz połączyć każdą warstwę artefakty w rozwiązaniu, takich jak projekty, klasy, przestrzeni nazw, pliki projektu i innymi częściami oprogramowania. Liczba na warstwie pokazuje liczbę artefaktów, które są połączone z warstwą. Jednak podczas odczytywania liczbę artefaktów na warstwie, pamiętaj o następujących kwestiach:  
   
 - Jeśli warstwa jest połączona z artefaktem zawierającym inne artefakty, ale warstwy nie łączy się bezpośrednio z innymi artefaktami, wówczas liczba uwzględnia tylko połączony artefakt. Jednak inne artefakty są uwzględniane w analizie podczas walidacji warstwy.  
@@ -74,13 +74,13 @@ W programie Visual Studio, można użyć *diagramu warstwowego* aby zwizualizowa
   
   Aby uzyskać więcej informacji na temat łączenia warstwami i artefaktami zobacz:  
   
-- [Diagramy warstw: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)  
+- [Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)  
   
 - [Tworzenie diagramów warstw z kodu](../modeling/create-layer-diagrams-from-your-code.md)  
   
 #### <a name="to-examine-the-linked-artifacts"></a>Aby zbadać połączonych artefaktów  
   
--   Na diagramie warstwowym Otwórz menu skrótów dla jednej lub kilku warstw, a następnie wybierz **Wyświetl łącza**.  
+- Na diagramie warstwowym Otwórz menu skrótów dla jednej lub kilku warstw, a następnie wybierz **Wyświetl łącza**.  
   
      **Eksplorator warstw** otwiera się i pokazuje artefaktów, które są połączone z wybranej warstwy. **Eksplorator warstw** zawiera kolumnę, który pokazuje poszczególne właściwości łącza artefaktu.  
   

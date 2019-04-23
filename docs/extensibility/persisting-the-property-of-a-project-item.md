@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d2a359d49102daf4c221632fd275f9ef06e324
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 58b2495adf66f6c83bc631650e2a0f06f5b7cdd0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963986"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047388"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>Utrwalanie właściwości elementu projektu
 Można utrwalić właściwości dodawane do elementu projektu, takich jak tworzenie pliku źródłowego. Można to zrobić, umieszczając właściwość w pliku projektu.
@@ -27,7 +27,7 @@ Można utrwalić właściwości dodawane do elementu projektu, takich jak tworze
 
 ## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Aby uzyskać hierarchii projektu obiektu DTE
 
-1.  Dodaj następujący kod do Twojego pakietu VSPackage:
+1. Dodaj następujący kod do Twojego pakietu VSPackage:
 
     ```csharp
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
@@ -41,7 +41,7 @@ Można utrwalić właściwości dodawane do elementu projektu, takich jak tworze
 
 ## <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Aby zachować właściwości elementu projektu obiektu DTE
 
-1.  Dodaj następujący kod do kodu podanego w metodzie w poprzedniej procedurze:
+1. Dodaj następujący kod do kodu podanego w metodzie w poprzedniej procedurze:
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -58,7 +58,7 @@ Można utrwalić właściwości dodawane do elementu projektu, takich jak tworze
 
 ## <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>Aby uzyskać hierarchii projektu przy użyciu IVsMonitorSelection
 
-1.  Dodaj następujący kod do Twojego pakietu VSPackage:
+1. Dodaj następujący kod do Twojego pakietu VSPackage:
 
     ```csharp
     IVsHierarchy hierarchy = null;
@@ -102,7 +102,7 @@ Można utrwalić właściwości dodawane do elementu projektu, takich jak tworze
 
 ## <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>Można utrwalić właściwość elementu wybranego projektu, biorąc pod uwagę hierarchii projektu
 
-1.  Dodaj następujący kod do kodu podanego w metodzie w poprzedniej procedurze:
+1. Dodaj następujący kod do kodu podanego w metodzie w poprzedniej procedurze:
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =

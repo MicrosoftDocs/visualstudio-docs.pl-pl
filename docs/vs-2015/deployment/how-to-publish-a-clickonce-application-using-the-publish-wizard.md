@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45ca2bd23c6da7d86b65cc05c0b0dee670e2718f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 48b5d8406f5b5c6d43afadf9e544914e6133090c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774951"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046941"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Instrukcje: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Aby udostępnić aplikację ClickOnce użytkownikom, możesz opublikować go do 
   
 4. W **sposób będą użytkownicy instalować aplikację?** stronie, wybierz lokalizację, gdzie użytkownicy mają zainstalować aplikację:  
   
-   -   Jeśli użytkownicy będą instalować z witryny sieci Web, kliknij przycisk **z witryny sieci Web** i wprowadź adres URL, który odnosi się do ścieżki pliku wprowadzonej w poprzednim kroku. Kliknij przycisk **Dalej**. (Ta opcja jest zazwyczaj używana podczas określania adresu FTP jako lokalizacji publikowania. Bezpośrednie pobieranie z FTP nie jest obsługiwane. W związku z tym musisz wpisać URL tutaj.)  
+   - Jeśli użytkownicy będą instalować z witryny sieci Web, kliknij przycisk **z witryny sieci Web** i wprowadź adres URL, który odnosi się do ścieżki pliku wprowadzonej w poprzednim kroku. Kliknij przycisk **Dalej**. (Ta opcja jest zazwyczaj używana podczas określania adresu FTP jako lokalizacji publikowania. Bezpośrednie pobieranie z FTP nie jest obsługiwane. W związku z tym musisz wpisać URL tutaj.)  
   
-   -   Jeśli użytkownicy będą instalować aplikację bezpośrednio z udziału plików, kliknij przycisk **z UNC udziału pliku lub ścieżki**, a następnie kliknij przycisk **dalej**. (To jest do publikowania lokalizacji formularza c:\deploy\myapp lub \\\server\myapp.)  
+   - Jeśli użytkownicy będą instalować aplikację bezpośrednio z udziału plików, kliknij przycisk **z UNC udziału pliku lub ścieżki**, a następnie kliknij przycisk **dalej**. (To jest do publikowania lokalizacji formularza c:\deploy\myapp lub \\\server\myapp.)  
   
-   -   Jeśli użytkownicy będą instalować z nośników wymiennych, kliknij przycisk **z dysku CD-ROM lub DVD-ROM**, a następnie kliknij przycisk **dalej**.  
+   - Jeśli użytkownicy będą instalować z nośników wymiennych, kliknij przycisk **z dysku CD-ROM lub DVD-ROM**, a następnie kliknij przycisk **dalej**.  
   
 5. Na **aplikacja będzie dostępna w trybie offline?** kliknij odpowiednią opcję:  
   

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81c85adc3aaa3bedb92709ce59dd2192a6756473
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 93acd8466ae90a6db4d1f25d93460e501335af50
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601242"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062220"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Instrukcje: Programowe Włączanie ochrony arkuszy
   Funkcja ochrony w programie Microsoft Office Excel uniemożliwia użytkownikom i kod modyfikowanie obiektów w arkuszu. Domyślnie wszystkie komórki są blokowane po włączeniu ochrony.
@@ -44,7 +44,7 @@ ms.locfileid: "56601242"
 
 ### <a name="to-allow-editing-in-specific-ranges"></a>Aby umożliwić edycję w określonych zakresach
 
-1.  W **zmiany** grupy **przeglądu** kliknij pozycję **Zezwalanie użytkownikom na edycję zakresów**.
+1. W **zmiany** grupy **przeglądu** kliknij pozycję **Zezwalanie użytkownikom na edycję zakresów**.
 
      **Zezwalanie użytkownikom na edycję zakresów** pojawi się okno dialogowe. Można określić zakresy, które są odblokowane, przy użyciu hasła i użytkowników, którzy mogą edytować zakresów, bez użycia hasła.
 
@@ -53,14 +53,14 @@ ms.locfileid: "56601242"
 
 ### <a name="to-protect-a-worksheet-by-using-code-in-a-document-level-customization"></a>Aby chronić arkusz przy użyciu kodu w dostosowaniu na poziomie dokumentu
 
-1.  Wywołaj <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> metoda arkusza. W tym przykładzie założono, że pracujesz z arkusza o nazwie `Sheet1`.
+1. Wywołaj <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> metoda arkusza. W tym przykładzie założono, że pracujesz z arkusza o nazwie `Sheet1`.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#27)]
      [!code-vb[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#27)]
 
 ### <a name="to-protect-a-worksheet-by-using-code-in-a-vsto-add-in"></a>Aby chronić arkusz przy użyciu kodu w dodatku narzędzi VSTO
 
-1.  Wywołaj <xref:Microsoft.Office.Interop.Excel._Worksheet.Protect%2A> metoda aktywnego arkusza.
+1. Wywołaj <xref:Microsoft.Office.Interop.Excel._Worksheet.Protect%2A> metoda aktywnego arkusza.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#17)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#17)]

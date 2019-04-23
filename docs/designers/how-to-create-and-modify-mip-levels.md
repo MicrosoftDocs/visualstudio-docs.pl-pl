@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee24cd3dac57f3daca340eabacdbf05f20d35156
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c65b2be057836811c8b91ef5ee0d1f1743b24ea9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923047"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045417"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Instrukcje: Tworzenie i modyfikacja poziomów MIP
 W tym dokumencie przedstawiono sposób użycia **edytora obrazów** do generowania i modyfikowania *poziomów MIP* dla przestrzeni tekstury poziomu z Detail (poziomu).
@@ -23,9 +23,9 @@ W tym dokumencie przedstawiono sposób użycia **edytora obrazów** do generowan
 
 #### <a name="to-generate-mip-levels"></a>Aby wygenerować poziomy MIP
 
-1.  Rozpocznij od podstawowej tekstury, zgodnie z opisem w [jak: Tworzenie tekstury podstawowej](../designers/how-to-create-a-basic-texture.md). Aby uzyskać najlepsze wyniki, należy określić teksturę, która ma szerokość i wysokość, które są wartością potęgi liczby dwa, na przykład 256, 512, 1024 itd.
+1. Rozpocznij od podstawowej tekstury, zgodnie z opisem w [jak: Tworzenie tekstury podstawowej](../designers/how-to-create-a-basic-texture.md). Aby uzyskać najlepsze wyniki, należy określić teksturę, która ma szerokość i wysokość, które są wartością potęgi liczby dwa, na przykład 256, 512, 1024 itd.
 
-2.  Generuj poziomy MIP. Na **tryb edytora obrazów** narzędzi, wybierz **zaawansowane** > **narzędzia** > **Generuj Mips**.
+2. Generuj poziomy MIP. Na **tryb edytora obrazów** narzędzi, wybierz **zaawansowane** > **narzędzia** > **Generuj Mips**.
 
      Należy zauważyć, że **przejdź do następnego poziomu Mip** i **przejdź do poprzedniego poziomu Mip** przyciski będą teraz wyświetlane na **tryb edytora obrazów** paska narzędzi. Jeśli **właściwości** okno jest wyświetlane, należy również zauważyć, że właściwości tylko do odczytu **poziom Mip** i **liczba poziomów Mip** pojawiają się w oknie właściwości obrazu.
 
@@ -34,9 +34,9 @@ W tym dokumencie przedstawiono sposób użycia **edytora obrazów** do generowan
 
 #### <a name="to-modify-an-individual-mip-level"></a>Aby zmodyfikować jeden poziom MCI
 
-1.  Zaznacz poziom MIP, który chcesz zmodyfikować. Na **tryb edytora obrazów** narzędzi, użyj **przejdź do następnego poziomu MIP** i **przejdź do poprzedniego poziomu MIP** przycisków, aby przenieść między poziomami MIP.
+1. Zaznacz poziom MIP, który chcesz zmodyfikować. Na **tryb edytora obrazów** narzędzi, użyj **przejdź do następnego poziomu MIP** i **przejdź do poprzedniego poziomu MIP** przycisków, aby przenieść między poziomami MIP.
 
-2.  Po wybraniu poziom MIP, który chcesz zmodyfikować, można użyć narzędzi do rysowania go zmodyfikować bez zmiany zawartości innych poziomów MCI. Narzędzia do rysowania są dostępne na **edytora obrazów** paska narzędzi. Po wybraniu narzędzia, możesz zmienić jego właściwości w **właściwości** okna. Aby uzyskać informacji na temat narzędzi do rysowania i ich właściwości, zobacz [edytora obrazów](../designers/image-editor.md).
+2. Po wybraniu poziom MIP, który chcesz zmodyfikować, można użyć narzędzi do rysowania go zmodyfikować bez zmiany zawartości innych poziomów MCI. Narzędzia do rysowania są dostępne na **edytora obrazów** paska narzędzi. Po wybraniu narzędzia, możesz zmienić jego właściwości w **właściwości** okna. Aby uzyskać informacji na temat narzędzi do rysowania i ich właściwości, zobacz [edytora obrazów](../designers/image-editor.md).
 
 > [!NOTE]
 >  Jeśli nie trzeba modyfikować zawartość poszczególnych poziomów MIP — co możesz zrobić, aby uzyskać pewne efekty — firma Microsoft zaleca generowanie mipmap z tekstury źródłowej w czasie kompilacji. Pomaga to zapewnić, że poziomy MCI pozostają zsynchronizowane z teksturą źródła, ponieważ modyfikacje poziomu MIP nie są propagowane do innych poziomów automatycznie. Aby uzyskać więcej informacji na temat generowania mipmap w czasie kompilacji, zobacz [jak: Eksportowanie tekstury zawierającej mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md).

@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e0290fa7c83b36c19663aef85c0179fb9458ddcf
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 88644f3bf768f1b3467467a31edbd83e8e5f151c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58193910"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039880"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Instrukcje: Debugowanie przy użyciu źródła Code Center Premium
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,21 +78,21 @@ Za pomocą [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] debugera, 
   
 ### <a name="to-debug-your-source-code-using-attach-to-process"></a>Debugowanie kodu źródłowego za pomocą Dołącz do procesu  
   
-1.  Połącz czytnika kart inteligentnych i Wstaw karty, która pochodzi z Shared Source Initiative.  
+1. Połącz czytnika kart inteligentnych i Wstaw karty, która pochodzi z Shared Source Initiative.  
   
-2.  Uruchom program Visual Studio.  
+2. Uruchom program Visual Studio.  
   
-3.  Otwórz swój projekt programu Visual Studio.  
+3. Otwórz swój projekt programu Visual Studio.  
   
-4.  Na **narzędzia** menu, kliknij przycisk **dołączyć do procesu**.  
+4. Na **narzędzia** menu, kliknij przycisk **dołączyć do procesu**.  
   
-5.  W **dołączyć do procesu** okno dialogowe, kliknij przycisk **wybierz**.  
+5. W **dołączyć do procesu** okno dialogowe, kliknij przycisk **wybierz**.  
   
-6.  W **Wybieranie typu kodu** okno dialogowe, w obszarze **wykryć tych typów kodu**, wybierz opcję **natywnych**, **zarządzane**, i **zarządzane ( w wersji 4.0)**.  
+6. W **Wybieranie typu kodu** okno dialogowe, w obszarze **wykryć tych typów kodu**, wybierz opcję **natywnych**, **zarządzane**, i **zarządzane ( w wersji 4.0)**.  
   
-7.  Kliknij przycisk **OK** odrzucać **Wybieranie typu kodu** okno dialogowe.  
+7. Kliknij przycisk **OK** odrzucać **Wybieranie typu kodu** okno dialogowe.  
   
-8.  W **dostępne procesy** wybierz proces, który chcesz debugować.  
+8. W **dostępne procesy** wybierz proces, który chcesz debugować.  
   
 9. Kliknij przycisk **dołączyć**.  
   
@@ -117,27 +117,27 @@ Za pomocą [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] debugera, 
   
 4. Dla każdego zarządzanego projektu w rozwiązaniu wykonaj następujące czynności  
   
-   1.  W Eksploratorze rozwiązań Otwórz menu skrótów dla projektu, a następnie wybierz **właściwości**.  
+   1. W Eksploratorze rozwiązań Otwórz menu skrótów dla projektu, a następnie wybierz **właściwości**.  
   
-   2.  Wybierz **debugowania** , a następnie wybierz **Włącz debugowanie kodu unmanged**.  
+   2. Wybierz **debugowania** , a następnie wybierz **Włącz debugowanie kodu unmanged**.  
   
 ### <a name="to-debug-your-solution-with-code-center-premium-source"></a>Aby debugować swoje rozwiązanie przy użyciu źródła Code Center Premium  
   
-1.  W swojej `Package` klasy, należy ustawić punkt przerwania w Konstruktorze pakietu.  
+1. W swojej `Package` klasy, należy ustawić punkt przerwania w Konstruktorze pakietu.  
   
-2.  W `Debug` menu, kliknij przycisk **Rozpocznij debugowanie**.  
+2. W `Debug` menu, kliknij przycisk **Rozpocznij debugowanie**.  
   
-3.  Po osiągnięciu punktu przerwania w Konstruktorze pakietu przejdź do **stos wywołań** oknie i kliknij prawym przyciskiem myszy ramkę stosu zestawu, który chcesz załadować symbole, następnie kliknij przycisk **załadować symbole**.  
+3. Po osiągnięciu punktu przerwania w Konstruktorze pakietu przejdź do **stos wywołań** oknie i kliknij prawym przyciskiem myszy ramkę stosu zestawu, który chcesz załadować symbole, następnie kliknij przycisk **załadować symbole**.  
   
      Kliknij dwukrotnie ramki wywołań, aby załadować źródła.  
   
 ### <a name="to-browse-source-code-on-code-center-premium"></a>Aby przeglądać kod źródłowy w Code Center Premium  
   
-1.  Połącz czytnika kart inteligentnych i Wstaw karty, która pochodzi z Shared Source Initiative.  
+1. Połącz czytnika kart inteligentnych i Wstaw karty, która pochodzi z Shared Source Initiative.  
   
-2.  Uruchomienie Internet Explorer wprowadź następujący adres URL: `https://codepremium.msdn.microsoft.com`  
+2. Uruchomienie Internet Explorer wprowadź następujący adres URL: `https://codepremium.msdn.microsoft.com`  
   
-3.  Wyszukaj żądane źródło.  
+3. Wyszukaj żądane źródło.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)   

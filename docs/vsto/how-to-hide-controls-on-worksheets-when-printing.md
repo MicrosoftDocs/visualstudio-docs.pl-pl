@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c3c582696dfba5abdcf132308477e586575777a6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a236b30552007112663ad9f985ddc94995fe1ef8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612624"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050027"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Instrukcje: Ukrywanie formantów w arkuszu podczas drukowania
   Podczas drukowania dokument programu Microsoft Office Excel, który zawiera formanty Windows Forms, formanty są widoczne na drukowanego arkusza. Można ukryć formantów podczas drukowania arkusza.
@@ -35,11 +35,11 @@ ms.locfileid: "56612624"
 
 ## <a name="to-hide-controls-when-a-worksheet-is-printed"></a>Ukrywanie formantów podczas arkusz zostanie wydrukowany
 
-1.  Utwórz lub Otwórz projekt programu Excel w programie Visual Studio i upewnij się, że **Arkusz1** jest widoczne w projektancie. Aby dowiedzieć się, jak tworzenie projektów, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Utwórz lub Otwórz projekt programu Excel w programie Visual Studio i upewnij się, że **Arkusz1** jest widoczne w projektancie. Aby dowiedzieć się, jak tworzenie projektów, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2.  Z **wspólnych formantów** karcie **przybornika**, przeciągnij <xref:Microsoft.Office.Tools.Excel.Controls.Button> kontrolować do komórki na `Sheet1`.
+2. Z **wspólnych formantów** karcie **przybornika**, przeciągnij <xref:Microsoft.Office.Tools.Excel.Controls.Button> kontrolować do komórki na `Sheet1`.
 
-3.  W **właściwości** oknie <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> właściwości **False**.
+3. W **właściwości** oknie <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> właściwości **False**.
 
 ## <a name="see-also"></a>Zobacz także
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)

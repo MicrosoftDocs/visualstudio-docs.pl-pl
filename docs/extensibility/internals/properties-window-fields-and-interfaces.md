@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a252a719e800e828275b8f3575c5073ae185e10b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 03f3c9ca624f0cccae5f9a21573fdcf01b7e9143
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335444"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060231"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Pola i interfejsy okna właściwości
 Model do wyboru ustalić, jakie informacje są wyświetlane w **właściwości** okna opiera się na okno, które ma fokus w środowisku IDE. Każdego okna, a obiekt w obrębie wybranego okna może mieć jego obiekt kontekstu wyboru wypchnięte do kontekst zaznaczenia globalnego. Środowisko aktualizuje kontekst zaznaczenia globalnych z wartościami z ramki okna, gdy to okno ma fokus. Po zmianie fokusu kończy kontekst zaznaczenia.
@@ -50,26 +50,26 @@ Istnieją dwa sposoby, aby zachować **właściwości** okna zsynchronizowane ze
 
 #### <a name="to-update-property-values-using-the-ivsuishell-interface"></a>Aby zaktualizować wartości właściwości, za pomocą interfejsu elementu
 
-1.  Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> (za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> usługi) dowolnym momencie tego pakietów VSPackage, projektów, lub edytorów muszą tworzyć lub wyliczenia narzędzia lub dokumentu.
+1. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> (za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> usługi) dowolnym momencie tego pakietów VSPackage, projektów, lub edytorów muszą tworzyć lub wyliczenia narzędzia lub dokumentu.
 
-2.  Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> zapewnienie **właściwości** okna zsynchronizowany ze zmianami właściwości projektu (lub innego wybranego obiektu, przeglądanie przez **właściwości** okna) bez implementacji <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> i wyzwalania <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> zdarzenia.
+2. Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> zapewnienie **właściwości** okna zsynchronizowany ze zmianami właściwości projektu (lub innego wybranego obiektu, przeglądanie przez **właściwości** okna) bez implementacji <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> i wyzwalania <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> zdarzenia.
 
-3.  Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A> i wyłączyć, odpowiednio, powiadomienie klienta zdarzeń hierarchii bez konieczności hierarchii do zaimplementowania <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>.
+3. Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A> i wyłączyć, odpowiednio, powiadomienie klienta zdarzeń hierarchii bez konieczności hierarchii do zaimplementowania <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>.
 
 ### <a name="updating-property-values-using-iconnection"></a>Aktualizowanie wartości właściwości, za pomocą elementu IConnection
  Drugim sposobem utrzymywania **właściwości** okna zsynchronizowane ze zmian wartości właściwości jest zaimplementowanie `IConnection` na składnika obiektu, aby wskazać istnienie wychodzących interfejsów. Jeśli chcesz zlokalizować nazwę właściwości, pochodzi z obiektu <xref:System.ComponentModel.ICustomTypeDescriptor>. <xref:System.ComponentModel.ICustomTypeDescriptor> Wdrożenia można modyfikować deskryptorów właściwości zwraca i Zmień nazwę właściwości. Aby zlokalizować opis, Utwórz atrybut pochodzący od <xref:System.ComponentModel.DescriptionAttribute> i zastąpić właściwość Description.
 
 #### <a name="considerations-in-implementing-the-iconnection-interface"></a>Zagadnienia dotyczące implementowania interfejsu element IConnection
 
-1.  `IConnection` zapewnia dostęp do obiektu podrzędnego modułu wyliczającego z <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> interfejsu. Umożliwia również dostęp do wszystkich połączeń punktu podrzędnych obiektów, każdy który implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interfejsu.
+1. `IConnection` zapewnia dostęp do obiektu podrzędnego modułu wyliczającego z <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> interfejsu. Umożliwia również dostęp do wszystkich połączeń punktu podrzędnych obiektów, każdy który implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interfejsu.
 
-2.  Dowolny obiekt przeglądania jest odpowiedzialny za wdrażanie <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink> zdarzeń. **Właściwości** okna poinformuję dla zdarzenia ustawione za pośrednictwem `IConnection`.
+2. Dowolny obiekt przeglądania jest odpowiedzialny za wdrażanie <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink> zdarzeń. **Właściwości** okna poinformuję dla zdarzenia ustawione za pośrednictwem `IConnection`.
 
-3.  Punkt połączenia kontroluje liczbę połączeń (jeden lub więcej) pozwala ono jego implementacja obiektu <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A>. Punkt połączenia, który zezwala na tylko jeden interfejs może zwracać <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> z <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.EnumConnections%2A> metody.
+3. Punkt połączenia kontroluje liczbę połączeń (jeden lub więcej) pozwala ono jego implementacja obiektu <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A>. Punkt połączenia, który zezwala na tylko jeden interfejs może zwracać <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> z <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.EnumConnections%2A> metody.
 
-4.  Klient może wywołać `IConnection` interfejs do uzyskiwania dostępu do obiektu podrzędnego modułu wyliczającego z <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> interfejsu. <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> Interfejsu może być wywoływany w celu wyliczenia punkty połączenia dla każdego interfejsu wychodzącego identyfikator (IID).
+4. Klient może wywołać `IConnection` interfejs do uzyskiwania dostępu do obiektu podrzędnego modułu wyliczającego z <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> interfejsu. <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> Interfejsu może być wywoływany w celu wyliczenia punkty połączenia dla każdego interfejsu wychodzącego identyfikator (IID).
 
-5.  `IConnection` również można wywołać w celu uzyskania dostępu do obiektów podrzędnych punktów połączenia za pomocą <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interfejs dla każdego IID wychodzących. Za pomocą <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interfejsu, klient rozpoczyna się lub kończy pętlę doradztwa technicznego dotyczącego z obiektu umożliwiający nawiązywanie połączeń i synchronizacją firmy klienta. Klienta można również wywołać <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interfejsu, aby uzyskać obiekt modułu wyliczającego z <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> interfejsu wyliczyć połączeń, które dysponuje informacjami.
+5. `IConnection` również można wywołać w celu uzyskania dostępu do obiektów podrzędnych punktów połączenia za pomocą <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interfejs dla każdego IID wychodzących. Za pomocą <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interfejsu, klient rozpoczyna się lub kończy pętlę doradztwa technicznego dotyczącego z obiektu umożliwiający nawiązywanie połączeń i synchronizacją firmy klienta. Klienta można również wywołać <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interfejsu, aby uzyskać obiekt modułu wyliczającego z <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> interfejsu wyliczyć połączeń, które dysponuje informacjami.
 
 ## <a name="getting-field-descriptions-from-the-properties-window"></a> Wprowadzenie opisy pól z okna właściwości
 W dolnej części **właściwości** , obszar opisu wyświetlane są informacje związane z pól wybranych właściwości. Ta funkcja jest włączona domyślnie. Jeśli chcesz ukryć pole opisu, kliknij prawym przyciskiem myszy **właściwości** oknie i kliknij przycisk **opis**. Ten sposób spowoduje również usunięcie znacznik wyboru obok pozycji **opis** tytuł w oknie menu. Wyświetlanie pola ponownie, wykonując te same kroki, aby przełączyć **opis** ponownie.

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7e32ba1641b084f1240e2a3f872a07e410b6c507
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bb386a2d80931ece415b0b3939f2947678808261
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641523"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041224"
 ---
 # <a name="guidelines-for-importing-reusable-workflows"></a>Wytyczne dotyczące importowania wielokrotnych przepływów danych
   Aby zaimportować przepływów danych wielokrotnego użytku, utworzone w programie SharePoint Designer, należy użyć szablonu projektu Importowanie programu SharePoint 2010 przepływu pracy wielokrotnego użytku w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Ten szablon importuje *deklaratywne* *przepływu pracy* ([!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]— tylko) i konwertuje ją na *kodu przepływu pracy*, czyli przepływu pracy, które mogą poprawić z oboma [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] lub [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] kodu. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Wskazówki: Importowanie przepływu pracy wielokrotnego użytku programu SharePoint Designer do Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md).
@@ -36,13 +36,13 @@ ms.locfileid: "56641523"
 ## <a name="import-reusable-workflows-by-using-the-import-sharepoint-2010-solution-package-template"></a>Importowanie przepływów danych wielokrotnego użytku, za pomocą szablonu Importowanie pakietu rozwiązań programu SharePoint 2010
  Jeśli importujesz wielokrotny przepływ przy użyciu szablonu Importowanie pakietu rozwiązania programu SharePoint 2010, należy wziąć pod uwagę następujące kwestie:
 
--   Po zaimportowaniu przepływu pracy, można natychmiast wdrożyć i uruchomić go w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , wybierając **F5** klucza. Jednak jeśli zmienisz niczego w przepływie pracy w rozwiązaniu importowanych, może być konieczne ręcznie rozwiązać elementy w projekcie, zanim można wdrożyć i uruchomić przepływ pracy.
+- Po zaimportowaniu przepływu pracy, można natychmiast wdrożyć i uruchomić go w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , wybierając **F5** klucza. Jednak jeśli zmienisz niczego w przepływie pracy w rozwiązaniu importowanych, może być konieczne ręcznie rozwiązać elementy w projekcie, zanim można wdrożyć i uruchomić przepływ pracy.
 
--   Ponieważ przepływ pracy jest deklaratywnym, kod nie można dodać do niego. Aby przekonwertować przepływu pracy do przepływu pracy kodu, należy zaimportować go do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] przy użyciu szablonu importowania programu SharePoint 2010 przepływu pracy wielokrotnego użytku.
+- Ponieważ przepływ pracy jest deklaratywnym, kod nie można dodać do niego. Aby przekonwertować przepływu pracy do przepływu pracy kodu, należy zaimportować go do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] przy użyciu szablonu importowania programu SharePoint 2010 przepływu pracy wielokrotnego użytku.
 
--   Chociaż można edytować plik projektanta (xoml) przepływu pracy w widoku Projekt, zaleca się edytować ją w widoku źródła ponieważ projektanta przepływów pracy wyświetla fałszywe błędy.
+- Chociaż można edytować plik projektanta (xoml) przepływu pracy w widoku Projekt, zaleca się edytować ją w widoku źródła ponieważ projektanta przepływów pracy wyświetla fałszywe błędy.
 
--   Debugowanie w przepływie pracy nie działa w przypadku deklaratywne zawartości. Punkty przerwania ustawione w [!INCLUDE[wfd2](../sharepoint/includes/wfd2-md.md)] nie są osiągane.
+- Debugowanie w przepływie pracy nie działa w przypadku deklaratywne zawartości. Punkty przerwania ustawione w [!INCLUDE[wfd2](../sharepoint/includes/wfd2-md.md)] nie są osiągane.
 
 ## <a name="import-globally-reusable-workflow-solutions"></a>Importowanie rozwiązania globalnie wielokrotny przepływ danych
  Nie można zaimportować globalnie wielokrotnych przepływów danych przy użyciu szablonu przepływu pracy importowania wielokrotnego użytku programu SharePoint 2010. Aby zaimportować globalny wielokrotny przepływ danych programu, należy je przekształcić w skali globalnej wielokrotny przepływ danych programu, lub należy użyć szablonu Importowanie pakietu rozwiązania programu SharePoint 2010.

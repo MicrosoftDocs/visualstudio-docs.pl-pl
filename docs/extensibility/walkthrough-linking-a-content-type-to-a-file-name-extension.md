@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e55c06ab5ae07c9b84f9d6462d1a535537e5f69b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 16f3a33ff273b62c701eae66d8fda1ff7178c5c9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692843"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042397"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Przewodnik: Połączyć typu zawartości z rozszerzeniem nazwy pliku
 Można zdefiniować typu zawartości i połączyć rozszerzenie nazwy pliku przy użyciu rozszerzenia Managed Extensibility Framework (MEF) edytora. W niektórych przypadkach rozszerzenie nazwy pliku jest już zdefiniowany przez usługę języka. Jednak aby używać go z MEF, nadal należy połączyć go z typem zawartości.
@@ -25,23 +25,23 @@ Można zdefiniować typu zawartości i połączyć rozszerzenie nazwy pliku przy
 
 ## <a name="create-a-mef-project"></a>Utwórz projekt MEF
 
-1.  Utwórz projekt VSIX języka C#. (W **nowy projekt** okno dialogowe, wybierz opcję **Visual C# / rozszerzalności**, następnie **projekt VSIX**.) Nazwij rozwiązanie `ContentTypeTest`.
+1. Utwórz projekt VSIX języka C#. (W **nowy projekt** okno dialogowe, wybierz opcję **Visual C# / rozszerzalności**, następnie **projekt VSIX**.) Nazwij rozwiązanie `ContentTypeTest`.
 
-2.  W **source.extension.vsixmanifest** pliku, przejdź do **zasoby** , a następnie ustaw **typu** pole **Microsoft.VisualStudio.MefComponent**, **źródła** pole **projekt w bieżącym rozwiązaniu**i **projektu** pola Nazwa projektu.
+2. W **source.extension.vsixmanifest** pliku, przejdź do **zasoby** , a następnie ustaw **typu** pole **Microsoft.VisualStudio.MefComponent**, **źródła** pole **projekt w bieżącym rozwiązaniu**i **projektu** pola Nazwa projektu.
 
 ## <a name="define-the-content-type"></a>Zdefiniowanie typu zawartości
 
-1.  Dodaj plik klasy i nadaj mu nazwę `FileAndContentTypes`.
+1. Dodaj plik klasy i nadaj mu nazwę `FileAndContentTypes`.
 
-2.  Dodaj odwołania do następujących zestawów:
+2. Dodaj odwołania do następujących zestawów:
 
-    1.  System.ComponentModel.Composition
+    1. System.ComponentModel.Composition
 
-    2.  Microsoft.VisualStudio.Text.Logic
+    2. Microsoft.VisualStudio.Text.Logic
 
-    3.  Microsoft.VisualStudio.CoreUtility
+    3. Microsoft.VisualStudio.CoreUtility
 
-3.  Dodaj następujący kod `using` dyrektywy.
+3. Dodaj następujący kod `using` dyrektywy.
 
     ```csharp
     using System.ComponentModel.Composition;
@@ -50,14 +50,14 @@ Można zdefiniować typu zawartości i połączyć rozszerzenie nazwy pliku przy
 
     ```
 
-4.  Deklarowanie klasy statycznej, który zawiera definicje.
+4. Deklarowanie klasy statycznej, który zawiera definicje.
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
     {. . .}
     ```
 
-5.  W tej klasie wyeksportować <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> o nazwie "hid" i deklarujemy jego podstawową definicję jako "text".
+5. W tej klasie wyeksportować <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> o nazwie "hid" i deklarujemy jego podstawową definicję jako "text".
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
@@ -71,7 +71,7 @@ Można zdefiniować typu zawartości i połączyć rozszerzenie nazwy pliku przy
 
 ## <a name="link-a-file-name-extension-to-a-content-type"></a>Łączenie z rozszerzeniem nazwy pliku do typu zawartości
 
--   Aby zamapować tego typu zawartości na rozszerzenie nazwy pliku, należy wyeksportować <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> zawierający rozszerzenia *HID* i typu zawartości "hid".
+- Aby zamapować tego typu zawartości na rozszerzenie nazwy pliku, należy wyeksportować <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> zawierający rozszerzenia *HID* i typu zawartości "hid".
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
@@ -90,11 +90,11 @@ Można zdefiniować typu zawartości i połączyć rozszerzenie nazwy pliku przy
 
 ## <a name="add-the-content-type-to-an-editor-export"></a>Dodaj typ zawartości do edytora eksportowanie
 
-1.  Tworzenie rozszerzenia edytora. Na przykład, można użyć rozszerzenia symbol margines opisanego w [instruktażu: Utwórz marginesie](../extensibility/walkthrough-creating-a-margin-glyph.md).
+1. Tworzenie rozszerzenia edytora. Na przykład, można użyć rozszerzenia symbol margines opisanego w [instruktażu: Utwórz marginesie](../extensibility/walkthrough-creating-a-margin-glyph.md).
 
-2.  Dodaj klasę, które zostały zdefiniowane w tej procedurze.
+2. Dodaj klasę, które zostały zdefiniowane w tej procedurze.
 
-3.  Podczas eksportowania klasy rozszerzenia, Dodaj <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> typu "hid" do niego.
+3. Podczas eksportowania klasy rozszerzenia, Dodaj <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> typu "hid" do niego.
 
     ```csharp
     [Export]

@@ -18,12 +18,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 64527c784cf61c02ad3031e9ba922ebf707e7e6f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b85efc44b39485476154d0f41f3261b2aeb1ea7c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771638"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047205"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Błąd: Serwer sieci Web został zablokowany i blokuje czasownik DEBUG
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,21 +36,21 @@ Przechodzenie do aplikacji sieci Web lub usługi sieci Web XML nie powiodło si�
   
 ### <a name="to-enable-debugging-on-a-web-server-with-urlscan-installed"></a>Aby włączyć debugowanie na serwerze sieci Web za pomocą narzędzia URLScan zainstalowany  
   
-1.  Zlokalizuj plik Urlscan.ini. Zwykle znajduje się on w katalogu, który wygląda następująco:  
+1. Zlokalizuj plik Urlscan.ini. Zwykle znajduje się on w katalogu, który wygląda następująco:  
   
      C:\WINNT\System32\Inetsrv\urlscan  
   
-2.  Tworzenie kopii pliku i nadaj mu nazwę **Urlscan.old**.  
+2. Tworzenie kopii pliku i nadaj mu nazwę **Urlscan.old**.  
   
-3.  Otwórz oryginalną kopię pliku Urlscan.ini za pomocą Notatnika lub ulubionego edytora tekstu.  
+3. Otwórz oryginalną kopię pliku Urlscan.ini za pomocą Notatnika lub ulubionego edytora tekstu.  
   
-4.  W Urlscan.ini Zlokalizuj sekcję [AllowVerbs]. Dodaj debugowania do sekcji [AllowVerbs]. Jeśli widzisz; debugowanie w sekcji [AllowVerbs], Usuń średnik do usuń znaczniki komentarza zlecenie.  
+4. W Urlscan.ini Zlokalizuj sekcję [AllowVerbs]. Dodaj debugowania do sekcji [AllowVerbs]. Jeśli widzisz; debugowanie w sekcji [AllowVerbs], Usuń średnik do usuń znaczniki komentarza zlecenie.  
   
-5.  Zlokalizuj sekcję [DenyVerbs]. Jeśli debugowania pojawia się w sekcji [DenyVerbs], należy go usunąć.  
+5. Zlokalizuj sekcję [DenyVerbs]. Jeśli debugowania pojawia się w sekcji [DenyVerbs], należy go usunąć.  
   
-6.  Zapisz plik.  
+6. Zapisz plik.  
   
-7.  Uruchom ponownie serwer lub ponownego uruchomienia usług IIS.  
+7. Uruchom ponownie serwer lub ponownego uruchomienia usług IIS.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   

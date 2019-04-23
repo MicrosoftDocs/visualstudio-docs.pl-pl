@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: b5f74512d0c035a82845d77f4b3df12633036f03
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: fdf7417364d834b00369e211f584caa2ab4cbdf5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756363"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054472"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>Instrukcje: Instalowanie określonej wersji programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,18 +46,18 @@ Firma Microsoft aktualizuje Instalatora programu Visual Studio często tak, aby 
 >  W zależności od języka, którego chcesz używać Zastąp "tekst enu" (w języku angielskim) przy użyciu jednego z następujących wartości:
 >
 > - (CHS) (dla języka chińskiego (uproszczonego))
->   -   (CHT) (w przypadku chiński tradycyjny)
->   -   CSY (w przypadku czeski)
->   -   DEU (dla języka niemieckiego)
->   -   Hiszpański (dla języka hiszpańskiego)
->   -   (FRA) (w przypadku francuski)
->   -   (ITA) (w przypadku włoska)
->   -   rozwiązaniami jpa (w języku japońskim)
->   -   koreański (w przypadku koreański)
->   -   PLK (w przypadku Polski)
->   -   PTB (w przypadku portugalski)
->   -   jednostki zarezerwowane (w przypadku rosyjski)
->   -   TRK (w przypadku turecki)
+>   - (CHT) (w przypadku chiński tradycyjny)
+>   - CSY (w przypadku czeski)
+>   - DEU (dla języka niemieckiego)
+>   - Hiszpański (dla języka hiszpańskiego)
+>   - (FRA) (w przypadku francuski)
+>   - (ITA) (w przypadku włoska)
+>   - rozwiązaniami jpa (w języku japońskim)
+>   - koreański (w przypadku koreański)
+>   - PLK (w przypadku Polski)
+>   - PTB (w przypadku portugalski)
+>   - jednostki zarezerwowane (w przypadku rosyjski)
+>   - TRK (w przypadku turecki)
 
 ## <a name="see-also"></a>Zobacz też
  [Podręcznik administratora programu Visual Studio](../install/visual-studio-administrator-guide.md)

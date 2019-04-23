@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6268f9bb6bb739d09b16a580d2923df4c7926e46
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c0cc2a47fc505364ce5c693b496af2d14ecefcd1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654793"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064717"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Instrukcje: Dołączanie profilera do autonomicznej aplikacji natywnej i zbieranie statystyk aplikacji przy użyciu wiersza polecenia
 W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia narzędzi Profilujących do dołączenia programu profilującego do uruchomionej natywnej autonomicznej aplikacji (klient) i zbierania statystyk wydajności przy użyciu metody próbkowania.
@@ -71,7 +71,7 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
 
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych
 
--   Następujące pary **VSPerfCmd** opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
+- Następujące pary **VSPerfCmd** opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
 
     |Opcja|Opis|
     |------------|-----------------|
@@ -84,19 +84,19 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
 
 #### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania
 
-1.  Wykonaj jedną z następujących czynności, aby odłączyć profiler od aplikacji docelowej.
+1. Wykonaj jedną z następujących czynności, aby odłączyć profiler od aplikacji docelowej.
 
-    -   Typ **VSPerfCmd / Odłącz**
+    - Typ **VSPerfCmd / Odłącz**
 
          —lub—
 
-    -   Zamknij aplikację docelową.
+    - Zamknij aplikację docelową.
 
-2.  Zamknij program profilujący. Wpisz:
+2. Zamknij program profilujący. Wpisz:
 
      **Narzędzia VSPerfCmd** [ /shutdown](../profiling/shutdown.md)
 
-3.  (Opcjonalnie) Wyczyść zmienne środowiskowe profilowania. Wpisz:
+3. (Opcjonalnie) Wyczyść zmienne środowiskowe profilowania. Wpisz:
 
      **VSPerfClrEnv / off**
 

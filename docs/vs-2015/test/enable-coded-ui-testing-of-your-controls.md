@@ -8,12 +8,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e24e9e405dfeab18ca0e55a617857d73ba4234e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 332926de13053339c4e98f2d533d9e39213be4d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766974"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040293"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Włącz testowanie kodowanego interfejsu użytkownika dla Twoich kontrolek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Kontrolki można łatwo przetestować w przypadku zastosowania pomocy techniczne
   
    ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")  
   
-##  <a name="recordandplayback"></a> Obsługuje rekordu i odtwarzania oraz właściwości sprawdzania poprawności poprzez implementację ułatwień dostępu  
+## <a name="recordandplayback"></a> Obsługuje rekordu i odtwarzania oraz właściwości sprawdzania poprawności poprzez implementację ułatwień dostępu  
  Konstruktor kodowanego testu interfejsu użytkownika przechwytuje informacji na temat formantów napotka podczas rejestrowania i następnie generuje kod w celu odtworzenia tej sesji. Jeśli formant nie obsługuje ułatwień dostępu, kodowanego testu interfejsu użytkownika będzie przechwytywać akcje (takie jak kliknięcia myszą), za pomocą współrzędnych ekranu. Podczas odtwarzania testu wygenerowany kod będzie wystawiać tych kliknięć myszą, w tym samym współrzędne ekranu. Jeśli formant znajduje się w innym miejscu na ekranie, podczas odtwarzania testu, wygenerowany kod nie będzie można wykonać tę akcję dla formantu. Może to spowodować błędy, jeśli test jest odtwarzany na ekranach o różnych konfiguracjach, w różnych środowiskach lub po została zmieniona na układ interfejsu użytkownika.  
   
  ![CUIT&#95;RecordNoSupport](../test/media/cuit-recordnosupport.png "CUIT_RecordNoSupport")  
@@ -46,7 +46,7 @@ Kontrolki można łatwo przetestować w przypadku zastosowania pomocy techniczne
   
  ![CUIT&#95;Accessible](../test/media/cuit-accessible.png "CUIT_Accessible")  
   
-1.  Implementowanie klasy, która pochodzi od klasy <xref:System.Windows.Forms.Control.ControlAccessibleObject>i zastępowania <xref:System.Windows.Forms.Control.AccessibilityObject%2A> właściwości, aby zwrócić obiekt klasy.  
+1. Implementowanie klasy, która pochodzi od klasy <xref:System.Windows.Forms.Control.ControlAccessibleObject>i zastępowania <xref:System.Windows.Forms.Control.AccessibilityObject%2A> właściwości, aby zwrócić obiekt klasy.  
   
     ```csharp  
     public partial class ChartControl : UserControl  
@@ -71,16 +71,16 @@ Kontrolki można łatwo przetestować w przypadku zastosowania pomocy techniczne
     }  
     ```  
   
-2.  Zastąp dostępnego obiektu <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> i <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> właściwości i metody.  
+2. Zastąp dostępnego obiektu <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> i <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> właściwości i metody.  
   
-3.  Implementowanie innego obiektu ułatwień dostępu dla kontrolki podrzędnej i przesłonić kontrolki podrzędnej <xref:System.Windows.Forms.Control.AccessibilityObject%2A> właściwości, aby przywrócić ten obiekt ułatwień dostępu.  
+3. Implementowanie innego obiektu ułatwień dostępu dla kontrolki podrzędnej i przesłonić kontrolki podrzędnej <xref:System.Windows.Forms.Control.AccessibilityObject%2A> właściwości, aby przywrócić ten obiekt ułatwień dostępu.  
   
-4.  Zastąp <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A>, i <xref:System.Windows.Forms.AccessibleObject.Select%2A> właściwości i metody dla obiektu ułatwień dostępu kontrolki podrzędnej.  
+4. Zastąp <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A>, i <xref:System.Windows.Forms.AccessibleObject.Select%2A> właściwości i metody dla obiektu ułatwień dostępu kontrolki podrzędnej.  
   
 > [!NOTE]
 >  W tym temacie, który rozpoczyna się od przykładu ułatwień dostępu w <xref:System.Windows.Forms.AccessibleObject> w tej procedury i następnie kompilacje na tym pozostałe procedur. Jeśli chcesz utworzyć działającą wersją próbki ułatwień dostępu, Utwórz aplikację konsolową i następnie Zastąp kod w pliku Program.cs z przykładowym kodem. Należy dodać odwołania do ułatwień dostępu, System.Drawing i przestrzeń nazw System.Windows.Forms. Należy zmienić **Osadź typy współdziałania** ułatwień dostępu do **False** , aby wyeliminować ostrzeżenia kompilacji. Można zmienić typu danych wyjściowych projektu na z **aplikację Konsolową** do **aplikacji Windows** okno konsoli nie będą wyświetlane po uruchomieniu aplikacji.  
   
-##  <a name="customproprties"></a> Obsługuje sprawdzanie poprawności właściwości niestandardowe poprzez implementację dostawcy właściwości  
+## <a name="customproprties"></a> Obsługuje sprawdzanie poprawności właściwości niestandardowe poprzez implementację dostawcy właściwości  
  Po zastało zaimplementowane podstawowa pomoc techniczna dla rekordu i odtwarzania oraz właściwości sprawdzania poprawności, można udostępnić kontroli nad właściwości niestandardowych do zakodowanych testów interfejsu użytkownika poprzez implementację <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> wtyczki. Na przykład poniższa procedura tworzy dostawcy właściwości, który umożliwia kodowane testy interfejsu użytkownika do dostępu do właściwości stanu formantów podrzędnych CurveLegend formantu wykresu.  
   
  ![CUIT&#95;CustomProps](../test/media/cuit-customprops.png "CUIT_CustomProps")  
@@ -88,7 +88,7 @@ Kontrolki można łatwo przetestować w przypadku zastosowania pomocy techniczne
 ### <a name="to-support-custom-property-validation"></a>Do obsługi sprawdzania poprawności właściwości niestandardowej  
  ![CUIT&#95;Props](../test/media/cuit-props.png "CUIT_Props")  
   
-1.  Zastąpienie krzywej legendy dostępne obiektu <xref:System.Windows.Forms.AccessibleObject.Description%2A> właściwości, aby przekazać wartości właściwości sformatowanego ciągu opisu oddzielona od opis elementu głównego (i siebie nawzajem w przypadku wdrażania wielu właściwości) średnikami (;).  
+1. Zastąpienie krzywej legendy dostępne obiektu <xref:System.Windows.Forms.AccessibleObject.Description%2A> właściwości, aby przekazać wartości właściwości sformatowanego ciągu opisu oddzielona od opis elementu głównego (i siebie nawzajem w przypadku wdrażania wielu właściwości) średnikami (;).  
   
     ```csharp  
     public class CurveLegendAccessibleObject : AccessibleObject  
@@ -106,9 +106,9 @@ Kontrolki można łatwo przetestować w przypadku zastosowania pomocy techniczne
     }  
     ```  
   
-2.  Utwórz pakiet rozszerzenia testów interfejsu użytkownika dla kontrolki przez tworzenie projektu biblioteki klas i dodaj odwołania do ułatwień dostępu, Microsoft.VisualStudio.TestTools.UITesting, Microsoft.VisualStudio.TestTools.UITest.Common, i Microsoft.VisualStudio.TestTools.Extension. Zmiana **Osadź typy współdziałania** ułatwień dostępu do **False**.  
+2. Utwórz pakiet rozszerzenia testów interfejsu użytkownika dla kontrolki przez tworzenie projektu biblioteki klas i dodaj odwołania do ułatwień dostępu, Microsoft.VisualStudio.TestTools.UITesting, Microsoft.VisualStudio.TestTools.UITest.Common, i Microsoft.VisualStudio.TestTools.Extension. Zmiana **Osadź typy współdziałania** ułatwień dostępu do **False**.  
   
-3.  Dodaj klasę dostawcy właściwość, która jest pochodną <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>.  
+3. Dodaj klasę dostawcy właściwość, która jest pochodną <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>.  
   
     ```csharp  
     using System;  
@@ -127,7 +127,7 @@ Kontrolki można łatwo przetestować w przypadku zastosowania pomocy techniczne
     }  
     ```  
   
-4.  Implementowanie dostawcy właściwości przez umieszczenie nazwy i właściwości deskryptorów właściwości w <xref:System.Collections.Generic.Dictionary%602>.  
+4. Implementowanie dostawcy właściwości przez umieszczenie nazwy i właściwości deskryptorów właściwości w <xref:System.Collections.Generic.Dictionary%602>.  
   
     ```csharp  
     // Define a map of property descriptors for CurveLegend  
@@ -187,7 +187,7 @@ Kontrolki można łatwo przetestować w przypadku zastosowania pomocy techniczne
     }  
     ```  
   
-5.  Zastąp <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetControlSupportLevel%2A?displayProperty=fullName> do wskazania, że zestaw obsługuje specyficznej dla kontroli formantu i jego elementy podrzędne.  
+5. Zastąp <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetControlSupportLevel%2A?displayProperty=fullName> do wskazania, że zestaw obsługuje specyficznej dla kontroli formantu i jego elementy podrzędne.  
   
     ```csharp  
     public override int GetControlSupportLevel(UITestControl uiTestControl)  
@@ -205,7 +205,7 @@ Kontrolki można łatwo przetestować w przypadku zastosowania pomocy techniczne
     }  
     ```  
   
-6.  Zastąp pozostałe metody abstrakcyjne klasy <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider?displayProperty=fullName>.  
+6. Zastąp pozostałe metody abstrakcyjne klasy <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider?displayProperty=fullName>.  
   
     ```csharp  
     public override string[] GetPredefinedSearchProperties(Type specializedClass)  
@@ -240,7 +240,7 @@ Kontrolki można łatwo przetestować w przypadku zastosowania pomocy techniczne
   
     ```  
   
-7.  Dodaj klasę pakietu rozszerzenia, która jest pochodną <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>.  
+7. Dodaj klasę pakietu rozszerzenia, która jest pochodną <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>.  
   
     ```csharp  
     using System;  
@@ -256,7 +256,7 @@ Kontrolki można łatwo przetestować w przypadku zastosowania pomocy techniczne
     }  
     ```  
   
-8.  Zdefiniuj `UITestExtensionPackage` atrybutu dla zestawu.  
+8. Zdefiniuj `UITestExtensionPackage` atrybutu dla zestawu.  
   
     ```csharp  
     [assembly: Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage(  
@@ -326,7 +326,7 @@ Kontrolki można łatwo przetestować w przypadku zastosowania pomocy techniczne
 > [!NOTE]
 >  Ten pakiet rozszerzenia zostaną zastosowane do żadnego formantu, który jest typu "Text". Jeśli testujesz wielu formantów tego samego typu, należy przetestować je oddzielnie i zarządzać pakietów rozszerzeń, które są wdrażane po zarejestrowaniu testów.  
   
-##  <a name="codegeneration"></a> Obsługuje generowanie kodu poprzez implementację klasę umożliwiającą dostęp do właściwości niestandardowe  
+## <a name="codegeneration"></a> Obsługuje generowanie kodu poprzez implementację klasę umożliwiającą dostęp do właściwości niestandardowe  
  Gdy kodowanego testu interfejsu użytkownika generuje kod z nagrania sesji, używa <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> klasy, aby dostęp do kontrolek.  
   
 ```csharp  
@@ -346,7 +346,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>Aby dodać klas wyspecjalizowanych do usługi kontroli dostępu  
  ![CUIT&#95;CodeGen](../test/media/cuit-codegen.png "CUIT_CodeGen")  
   
-1.  Implementuje klasę, która jest pochodną <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> i dodać do kolekcji właściwości wyszukiwania w Konstruktorze typ formantu.  
+1. Implementuje klasę, która jest pochodną <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> i dodać do kolekcji właściwości wyszukiwania w Konstruktorze typ formantu.  
   
     ```csharp  
     public class CurveLegend:WinControl   
@@ -360,7 +360,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }  
     ```  
   
-2.  Implementuje właściwości niestandardowe kontroli nad jako właściwości klasy.  
+2. Implementuje właściwości niestandardowe kontroli nad jako właściwości klasy.  
   
     ```csharp  
     public virtual string State  
@@ -372,7 +372,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }  
     ```  
   
-3.  Twój dostawca właściwości zastąpienia <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetSpecializedClass%2A?displayProperty=fullName> metodę, aby zwracany typ nową klasę dla krzywej z formantów podrzędnych legendy.  
+3. Twój dostawca właściwości zastąpienia <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetSpecializedClass%2A?displayProperty=fullName> metodę, aby zwracany typ nową klasę dla krzywej z formantów podrzędnych legendy.  
   
     ```csharp  
     public override Type GetSpecializedClass(UITestControl uiTestControl)   
@@ -389,7 +389,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }  
     ```  
   
-4.  Twój dostawca właściwości zastąpienia <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetPropertyNamesClassType%2A> metodę, aby zwracany typ metody PropertyNames nowej klasy.  
+4. Twój dostawca właściwości zastąpienia <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetPropertyNamesClassType%2A> metodę, aby zwracany typ metody PropertyNames nowej klasy.  
   
     ```csharp  
     public override Type GetPropertyNamesClassType(UITestControl uiTestControl)  
@@ -406,13 +406,13 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }  
     ```  
   
-##  <a name="intentawareactions"></a> Obsługuje świadomie akcji przez zaimplementowanie filtr akcji  
+## <a name="intentawareactions"></a> Obsługuje świadomie akcji przez zaimplementowanie filtr akcji  
  Visual Studio zapisuje testu, umożliwia przechwytywanie każdego zdarzenia myszy i klawiatury. Jednak w niektórych przypadkach celem akcji mogą zostać utracone w serii zdarzeń klawiatury oraz myszy. Na przykład jeśli formant obsługuje autouzupełniania, ten sam zestaw zdarzeń klawiatury oraz myszy może spowodować naliczenie inną wartość, gdy test jest odtwarzany w innym środowisku. Możesz dodać filtr akcji z wtyczki zastępuje serii zdarzeń klawiatury oraz myszy przy użyciu jednej akcji. W ten sposób można zastąpić serii zdarzeń klawiatury oraz myszy skutkuje wybór wartości za pomocą jednej akcji, która ustawia wartości. Tą operacją chroni kodowane testy interfejsu użytkownika z różnic w funkcji autouzupełniania z jednego środowiska do innego.  
   
 ### <a name="to-support-intent-aware-actions"></a>Aby obsługiwać świadomie akcje  
  ![CUIT&#95;Actions](../test/media/cuit-actions.png "CUIT_Actions")  
   
-1.  Implementowanie klasy filtru akcji, która jest pochodną <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>, zastępowanie właściwości <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> i <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>.  
+1. Implementowanie klasy filtru akcji, która jest pochodną <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>, zastępowanie właściwości <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> i <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>.  
   
     ```csharp  
     internal class MyActionFilter : UITestActionFilter  
@@ -457,7 +457,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
        }  
     ```  
   
-2.  Zastąp <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ProcessRule%2A>. Przykład tutaj realpces akcji kliknij dwukrotnie plik, za pomocą pojedynczej, kliknij akcję.  
+2. Zastąp <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ProcessRule%2A>. Przykład tutaj realpces akcji kliknij dwukrotnie plik, za pomocą pojedynczej, kliknij akcję.  
   
     ```csharp  
     public override bool ProcessRule(IUITestActionStack actionStack)  
@@ -484,7 +484,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }  
     ```  
   
-3.  Dodawanie filtru akcji <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> metoda pakietu rozszerzenia.  
+3. Dodawanie filtru akcji <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> metoda pakietu rozszerzenia.  
   
     ```csharp  
     public override object GetService(Type serviceType)   
@@ -509,7 +509,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }  
     ```  
   
-4.  Tworzenie plików binarnych, a następnie skopiuj je do %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.  
+4. Tworzenie plików binarnych, a następnie skopiuj je do %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.  
   
 > [!NOTE]
 >  Filtr akcji zależy od implementacji dostępności lub Dostawca właściwości.  
@@ -519,19 +519,19 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
   
 #### <a name="to-debug-your-property-provider-or-action-filter"></a>Aby debugować filtru akcji lub dostawcy właściwości  
   
-1.  Tworzenie wersji debugowania kopii pakietu rozszerzenia pliku .dll i pliki .pdb katalog na %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.  
+1. Tworzenie wersji debugowania kopii pakietu rozszerzenia pliku .dll i pliki .pdb katalog na %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.  
   
-2.  Uruchom aplikację (nie w debugerze).  
+2. Uruchom aplikację (nie w debugerze).  
   
-3.  Uruchamianie kodowanego testu interfejsu użytkownika.  
+3. Uruchamianie kodowanego testu interfejsu użytkownika.  
   
      `codedUITestBuilder.exe  /standalone`  
   
-4.  Dołącz debuger do procesu codedUITestBuilder.  
+4. Dołącz debuger do procesu codedUITestBuilder.  
   
-5.  Ustaw punkty przerwania w kodzie.  
+5. Ustaw punkty przerwania w kodzie.  
   
-6.  Konstruktor kodowanego testu interfejsu użytkownika tworzenia potwierdza wykonywania dostawcy właściwości i Rejestruj akcje do wykonywania filtrów akcji.  
+6. Konstruktor kodowanego testu interfejsu użytkownika tworzenia potwierdza wykonywania dostawcy właściwości i Rejestruj akcje do wykonywania filtrów akcji.  
   
 ## <a name="external-resources"></a>Zasoby zewnętrzne  
   

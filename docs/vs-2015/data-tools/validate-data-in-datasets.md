@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73eb1162411800a951566c9eb14928875966cfb7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 67c9b9aed677e83cd8012b53530b4c474922108e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661324"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047140"
 ---
 # <a name="validate-data-in-datasets"></a>Weryfikowanie danych w zestawach danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,9 +103,9 @@ Sprawdzanie poprawności danych jest procesem potwierdzania, że wartości wprow
   
 #### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>Do sprawdzania poprawności danych, gdy wiersz zmieni (Visual Basic)  
   
-1.  Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [jak: Otwórz zestaw danych w Projektancie obiektów Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [jak: Otwórz zestaw danych w Projektancie obiektów Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Kliknij dwukrotnie pasek tytułu tabeli, którą chcesz zweryfikować. Ta akcja powoduje automatyczne utworzenie <xref:System.Data.DataTable.RowChanging> program obsługi zdarzeń <xref:System.Data.DataTable> w pliku częściowej klasy zestawu danych.  
+2. Kliknij dwukrotnie pasek tytułu tabeli, którą chcesz zweryfikować. Ta akcja powoduje automatyczne utworzenie <xref:System.Data.DataTable.RowChanging> program obsługi zdarzeń <xref:System.Data.DataTable> w pliku częściowej klasy zestawu danych.  
   
     > [!TIP]
     >  Kliknij dwukrotnie po lewej stronie nazwy tabeli, aby utworzyć procedury obsługi zdarzeń zmiany wiersza. Jeśli klikniesz dwukrotnie nazwę tabeli, można go edytować.  
@@ -114,14 +114,14 @@ Sprawdzanie poprawności danych jest procesem potwierdzania, że wartości wprow
   
 #### <a name="to-validate-data-when-a-row-changes-c"></a>Aby sprawdzić poprawność danych, gdy wiersz zmieni (C#)  
   
-1.  Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [jak: Otwórz zestaw danych w Projektancie obiektów Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [jak: Otwórz zestaw danych w Projektancie obiektów Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Kliknij dwukrotnie pasek tytułu tabeli, którą chcesz zweryfikować. Ta akcja tworzy plik częściowy klasy dla <xref:System.Data.DataTable>.  
+2. Kliknij dwukrotnie pasek tytułu tabeli, którą chcesz zweryfikować. Ta akcja tworzy plik częściowy klasy dla <xref:System.Data.DataTable>.  
   
     > [!NOTE]
     >  **Projektanta obiektów Dataset** nie tworzy automatycznie zdarzenia obsługi dla <xref:System.Data.DataTable.RowChanging> zdarzeń. Należy utworzyć metody, aby obsłużyć <xref:System.Data.DataTable.RowChanging> zdarzeń i wykonywania kodu, aby zaczepić zdarzenie w metodzie inicjalizacji tabeli.  
   
-3.  Skopiuj następujący kod do klasy częściowej:  
+3. Skopiuj następujący kod do klasy częściowej:  
   
     ```  
     public override void EndInit()  
@@ -155,7 +155,7 @@ Sprawdzanie poprawności danych jest procesem potwierdzania, że wartości wprow
   
 #### <a name="to-get-all-changed-records-from-a-dataset"></a>Aby uzyskać wszystkie zmienionych rekordów z zestawu danych  
   
--   Wywołaj <xref:System.Data.DataSet.GetChanges%2A> metoda zestawu danych.  
+- Wywołaj <xref:System.Data.DataSet.GetChanges%2A> metoda zestawu danych.  
   
      Poniższy przykład tworzy nowy zestaw danych o nazwie `changedRecords` i wypełnia zmienionych rekordów z innego zestawu danych o nazwie `dataSet1`.  
   
@@ -164,7 +164,7 @@ Sprawdzanie poprawności danych jest procesem potwierdzania, że wartości wprow
   
 #### <a name="to-get-all-changed-records-from-a-data-table"></a>Aby uzyskać wszystkie zmienionych rekordów z tabeli danych  
   
--   Wywołaj <xref:System.Data.DataTable.GetChanges%2A> metoda DataTable.  
+- Wywołaj <xref:System.Data.DataTable.GetChanges%2A> metoda DataTable.  
   
      Poniższy przykład tworzy nową tabelę danych o nazwie `changedRecordsTable` i wypełnia zmienionych rekordów z innej tabeli danych o nazwie `dataTable1`.  
   
@@ -173,14 +173,14 @@ Sprawdzanie poprawności danych jest procesem potwierdzania, że wartości wprow
   
 #### <a name="to-get-all-records-that-have-a-specific-row-state"></a>Aby uzyskać wszystkie rekordy, które mają stan konkretnego wiersza  
   
--   Wywołaj `GetChanges` metoda zestawu danych lub tabela danych i przekazać <xref:System.Data.DataRowState> wartość wyliczenia jako argument.  
+- Wywołaj `GetChanges` metoda zestawu danych lub tabela danych i przekazać <xref:System.Data.DataRowState> wartość wyliczenia jako argument.  
   
      Poniższy przykład pokazuje, jak utworzyć nowy zestaw danych o nazwie `addedRecords` i wypełnić je tylko w przypadku rekordów, które zostały dodane do `dataSet1` zestawu danych.  
   
      [!code-csharp[VbRaddataEditing#16](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#16)]
      [!code-vb[VbRaddataEditing#16](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#16)]  
   
--   Poniższy przykład pokazuje, jak i zwracać wszystkie rekordy, które zostały ostatnio dodane do `Customers` tabeli:  
+- Poniższy przykład pokazuje, jak i zwracać wszystkie rekordy, które zostały ostatnio dodane do `Customers` tabeli:  
   
      [!code-csharp[VbRaddataEditing#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#17)]
      [!code-vb[VbRaddataEditing#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#17)]  
@@ -195,7 +195,7 @@ Sprawdzanie poprawności danych jest procesem potwierdzania, że wartości wprow
   
 #### <a name="to-get-the-original-version-of-a-record"></a>Aby uzyskać oryginalną wersję rekordu  
   
--   Dostęp do wartości kolumny, przekazując <xref:System.Data.DataRowVersion> wiersza mają być zwracane.  
+- Dostęp do wartości kolumny, przekazując <xref:System.Data.DataRowVersion> wiersza mają być zwracane.  
   
      Poniższy przykład pokazuje, jak używać <xref:System.Data.DataRowVersion> wartości, aby uzyskać oryginalnej wartości elementu `CompanyName` pole <xref:System.Data.DataRow>:  
   
@@ -206,7 +206,7 @@ Sprawdzanie poprawności danych jest procesem potwierdzania, że wartości wprow
   
 #### <a name="to-get-the-current-version-of-a-record"></a>Aby uzyskać bieżącą wersję rekordu  
   
--   Dostęp do wartości kolumny, a następnie dodaj parametr do indeksu, który wskazuje na to, którą wersję wiersza należy zwrócić.  
+- Dostęp do wartości kolumny, a następnie dodaj parametr do indeksu, który wskazuje na to, którą wersję wiersza należy zwrócić.  
   
      Poniższy przykład pokazuje, jak używać <xref:System.Data.DataRowVersion> wartości, aby uzyskać bieżącą wartość `CompanyName` pole <xref:System.Data.DataRow>:  
   

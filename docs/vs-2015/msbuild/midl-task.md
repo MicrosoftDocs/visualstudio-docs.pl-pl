@@ -27,12 +27,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 883c56ce2bd272e508bc79d1d0c07db02350862d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657431"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062038"
 ---
 # <a name="midl-task"></a>MIDL — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
 ## <a name="parameters"></a>Parametry  
  W poniższej tabeli opisano parametry **MIDL** zadania. Większość parametrów zadania oraz kilka zestawów parametrów, odpowiada opcji wiersza polecenia.  
   
--   **AdditionalIncludeDirectories**  
+- **AdditionalIncludeDirectories**  
   
      Opcjonalnie **String []** parametru.  
   
@@ -50,7 +50,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/I** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **AdditionalOptions**  
+- **AdditionalOptions**  
   
      Opcjonalnie **ciąg** parametru.  
   
@@ -58,7 +58,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz "Odwołanie do wiersza polecenia MIDL" w [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **ApplicationConfigurationMode**  
+- **ApplicationConfigurationMode**  
   
      Opcjonalnie **logiczna** parametru.  
   
@@ -66,7 +66,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/app_config** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **ClientStubFile**  
+- **ClientStubFile**  
   
      Opcjonalnie **ciąg** parametru.  
   
@@ -74,7 +74,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/cstub** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web. Zobacz też **ServerStubFile** parametru w tej tabeli.  
   
--   **CPreprocessOptions**  
+- **CPreprocessOptions**  
   
      Opcjonalnie **ciąg** parametru.  
   
@@ -82,7 +82,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/cpp_opt** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **DefaultCharType**  
+- **DefaultCharType**  
   
      Opcjonalnie **ciąg** parametru.  
   
@@ -98,7 +98,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/char** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **DllDataFileName**  
+- **DllDataFileName**  
   
      Opcjonalnie **ciąg** parametru.  
   
@@ -106,7 +106,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/dlldata** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **EnableErrorChecks**  
+- **EnableErrorChecks**  
   
      Opcjonalnie **ciąg** parametru.  
   
@@ -122,7 +122,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/Error** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **ErrorCheckAllocations**  
+- **ErrorCheckAllocations**  
   
      Opcjonalnie **logiczna** parametru.  
   
@@ -130,7 +130,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **alokacji/Error** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **ErrorCheckBounds**  
+- **ErrorCheckBounds**  
   
      Opcjonalnie **logiczna** parametru.  
   
@@ -138,7 +138,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/Error bounds_check** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **ErrorCheckEnumRange**  
+- **ErrorCheckEnumRange**  
   
      Opcjonalnie **logiczna** parametru.  
   
@@ -146,7 +146,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/Error enum** opcji w wierszu polecenia Pomoc (**/?**) dla midl.exe.  
   
--   **ErrorCheckRefPointers**  
+- **ErrorCheckRefPointers**  
   
      Opcjonalnie **logiczna** parametru.  
   
@@ -154,7 +154,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/Error ref** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **ErrorCheckStubData**  
+- **ErrorCheckStubData**  
   
      Opcjonalnie **logiczna** parametru.  
   
@@ -162,7 +162,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/Error stub_data** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **GenerateClientFiles**  
+- **GenerateClientFiles**  
   
      Opcjonalnie **ciąg** parametru.  
   
@@ -177,7 +177,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/Client** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **GenerateServerFiles**  
+- **GenerateServerFiles**  
   
      Opcjonalnie **ciąg** parametru.  
   
@@ -192,7 +192,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/Server** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **GenerateStublessProxies**  
+- **GenerateStublessProxies**  
   
      Opcjonalnie **logiczna** parametru.  
   
@@ -200,7 +200,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/Oicf** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **GenerateTypeLibrary**  
+- **GenerateTypeLibrary**  
   
      Opcjonalnie **logiczna** parametru.  
   
@@ -208,7 +208,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **notlb** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **HeaderFileName**  
+- **HeaderFileName**  
   
      Opcjonalnie **ciąg** parametru.  
   
@@ -216,7 +216,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/h** lub **/header** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **IgnoreStandardIncludePath**  
+- **IgnoreStandardIncludePath**  
   
      Opcjonalnie **logiczna** parametru.  
   
@@ -224,7 +224,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/no_def_idir** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **InterfaceIdentifierFileName**  
+- **InterfaceIdentifierFileName**  
   
      Opcjonalnie **ciąg** parametru.  
   
@@ -232,7 +232,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/iid** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **Identyfikator ustawień regionalnych**  
+- **Identyfikator ustawień regionalnych**  
   
      Opcjonalnie **int** parametru.  
   
@@ -240,7 +240,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/LCID** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web. Zobacz też "Ustawienia regionalne identyfikatory przypisane przez Microsoft" w witrynie MSDN.  
   
--   **MkTypLibCompatible**  
+- **MkTypLibCompatible**  
   
      Opcjonalnie **logiczna** parametru.  
   
@@ -248,7 +248,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/mktyplib203** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web. Zobacz też "ODL składni pliku" w witrynie MSDN w sieci Web.  
   
--   **OutputDirectory**  
+- **OutputDirectory**  
   
      Opcjonalnie **ciąg** parametru.  
   
@@ -256,7 +256,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/out** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **PreprocessorDefinitions**  
+- **PreprocessorDefinitions**  
   
      Opcjonalnie **String []** parametru.  
   
@@ -264,7 +264,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/D** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web. Zobacz też **UndefinePreprocessorDefinitions** parametru w tej tabeli.  
   
--   **ProxyFileName**  
+- **ProxyFileName**  
   
      Opcjonalnie **ciąg** parametru.  
   
@@ -272,7 +272,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/proxy** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **RedirectOutputAndErrors**  
+- **RedirectOutputAndErrors**  
   
      Opcjonalnie **ciąg** parametru.  
   
@@ -280,7 +280,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/o** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **ServerStubFile**  
+- **ServerStubFile**  
   
      Opcjonalnie **ciąg** parametru.  
   
@@ -288,13 +288,13 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/sstub** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web. Zobacz też **ClientStubFile** parametru w tej tabeli.  
   
--   **Element źródłowy**  
+- **Element źródłowy**  
   
      Wymagane `ITaskItem[]` parametru.  
   
      Określa listę plików źródłowych, rozdzielone spacjami.  
   
--   **StructMemberAlignment**  
+- **StructMemberAlignment**  
   
      Opcjonalnie **ciąg** parametru.  
   
@@ -312,7 +312,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/ZP** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web. **/ZP** opcja jest równoznaczna z **/pakiet** opcja i starszej wersji **/ align** opcji.  
   
--   **SuppressCompilerWarnings**  
+- **SuppressCompilerWarnings**  
   
      Opcjonalnie **logiczna** parametru.  
   
@@ -320,7 +320,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/no_warn** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **SuppressStartupBanner**  
+- **SuppressStartupBanner**  
   
      Opcjonalnie `Boolean` parametru.  
   
@@ -328,7 +328,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/nologo** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **TargetEnvironment**  
+- **TargetEnvironment**  
   
      Opcjonalnie **ciąg** parametru.  
   
@@ -345,13 +345,13 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/ENV** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **TrackerLogDirectory**  
+- **TrackerLogDirectory**  
   
      Opcjonalnie `String` parametru.  
   
      Określa katalog pośredni, w którym są przechowywane dzienniki śledzenia dla tego zadania.  
   
--   **TypeLibFormat**  
+- **TypeLibFormat**  
   
      Opcjonalnie **ciąg** parametru.  
   
@@ -366,7 +366,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/newtlb** i **/oldtlb** opcji na liście "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **TypeLibraryName**  
+- **TypeLibraryName**  
   
      Opcjonalnie **ciąg** parametru.  
   
@@ -374,7 +374,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/TLB** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **UndefinePreprocessorDefinitions**  
+- **UndefinePreprocessorDefinitions**  
   
      Opcjonalnie **String []** parametru.  
   
@@ -382,7 +382,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/U** opcji "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web. Zobacz też **PreprocessorDefinitions** parametru w tej tabeli.  
   
--   **ValidateAllParameters**  
+- **ValidateAllParameters**  
   
      Opcjonalnie `Boolean` parametru.  
   
@@ -390,7 +390,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/ robust** i **/no_robust** opcji na liście "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **Warnaserror —**  
+- **Warnaserror —**  
   
      Opcjonalnie `Boolean` parametru.  
   
@@ -400,7 +400,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Aby uzyskać więcej informacji, zobacz **/WX** opcji na liście "Odwołanie do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web. Zobacz też **Poziom_ostrzeżeń** parametru w tej tabeli.  
   
--   **Poziom_ostrzeżeń**  
+- **Poziom_ostrzeżeń**  
   
      Opcjonalnie **ciąg** parametru.  
   

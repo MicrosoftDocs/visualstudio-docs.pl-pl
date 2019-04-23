@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c64fac3e69a1b7678b9583f8529dd7b94201932e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 49cb0af47f34abbda5bd212d8ce535e98c44d6b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614691"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054576"
 ---
 # <a name="office-project-templates-overview"></a>Omówienie szablonów projektu pakietu Office
   Microsoft Office developer tools w programie Visual Studio obejmują szablony projektów umożliwiające tworzenie następujących typów rozwiązań dla pakietu Office:
@@ -53,7 +53,7 @@ ms.locfileid: "56614691"
 > [!NOTE]
 > Narzędzia programistyczne pakietu Office są dołączane do niektórych wydań programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
-##  <a name="DocLevel"></a> Dostosowania na poziomie dokumentu
+## <a name="DocLevel"></a> Dostosowania na poziomie dokumentu
  **Office** w węźle **nowy projekt** okno dialogowe zawiera następujące szablony projektów w ułatwią Ci rozpoczęcie tworzenia dostosowań poziomie dokumentu dla programów Word i Excel:
 
 - **Word 2013 i 2016 VSTO dokumentu**
@@ -81,17 +81,17 @@ ms.locfileid: "56614691"
 
  Informacje na temat rozpoczynania pracy z tego typu projektami znajdują się w następujących tematach:
 
--   [Program dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)
+- [Program dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)
 
--   [Rozwiązania programu Word](../vsto/word-solutions.md)
+- [Rozwiązania programu Word](../vsto/word-solutions.md)
 
--   [Rozwiązania programu Excel](../vsto/excel-solutions.md)
+- [Rozwiązania programu Excel](../vsto/excel-solutions.md)
 
--   [Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
+- [Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
 
--   [Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
+- [Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
 
-##  <a name="AppLevel"></a> Dodatków narzędzi VSTO
+## <a name="AppLevel"></a> Dodatków narzędzi VSTO
  **Office/SharePoint** w węźle **nowy projekt** okno dialogowe zawiera następujące szablony projektów pomagające w pracy, tworzenie dodatków narzędzi VSTO.
 
 - **Dodatek narzędzi VSTO dla programów Excel 2013 i 2016**
@@ -157,7 +157,7 @@ ms.locfileid: "56614691"
 |Użytkownicy mogą otwierać i modyfikować dokument, chyba że ma on ustawiony atrybut tylko do odczytu. Wszelkie zapisane zmiany są przechowywane w oryginale.|Użytkownicy mogą otworzyć szablon, aby utworzyć kopię lokalną jako nowy dokument. Nie mogą oni modyfikować oryginału, chyba że otrzymają specjalne uprawnienia.|
 |Po otwarciu dokumentu zgłasza <xref:Microsoft.Office.Tools.Word.Document.Open> zdarzeń.|Po otwarciu szablonu zgłasza <xref:Microsoft.Office.Tools.Word.Document.New> zdarzeń.|
 
-##  <a name="Limitations"></a> Ograniczenia szablonów globalnych i dodatków programu Excel (plików .xla)
+## <a name="Limitations"></a> Ograniczenia szablonów globalnych i dodatków programu Excel (plików .xla)
  Dokumenty, skoroszyty i szablony mogą nie działać poprawnie jako szablony globalne lub dodatków narzędzi VSTO programu Excel (plików .xla).
 
 ## <a name="word-templates"></a>Szablony programu Word

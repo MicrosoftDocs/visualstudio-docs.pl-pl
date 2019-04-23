@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f6a4ea19013aefa1b3d078ce5993d48b4694989c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b5b8d24f01f7882e8c760918119a03a1c489c727
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773356"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059880"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Nawigowanie po sesji debugowania w programie Visual Studio (Xaml i C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ Ten przewodnik Szybki start pokazuje, jak nawigować po sesji debugowania progra
 ## <a name="in-this-topic"></a>W tym temacie:
  Możesz dowiedzieć się jak:
 
--   [Tworzenie przykładowej aplikacji](#BKMK_CreateTheApplication)
+- [Tworzenie przykładowej aplikacji](#BKMK_CreateTheApplication)
 
--   [Ustaw i uruchom do punktu przerwania, krok po kroku do metody i zbadaj dane do programu](#BKMK_StepInto)
+- [Ustaw i uruchom do punktu przerwania, krok po kroku do metody i zbadaj dane do programu](#BKMK_StepInto)
 
--   [Krok do, przez niego lub poza metody](#BKMK_StepIntoOverOut)
+- [Krok do, przez niego lub poza metody](#BKMK_StepIntoOverOut)
 
--   [Ustawianie warunkowego punktu przerwania, uruchom do kursora i wizualizować zmienną](#BKMK_ConditionCursorVisualize)
+- [Ustawianie warunkowego punktu przerwania, uruchom do kursora i wizualizować zmienną](#BKMK_ConditionCursorVisualize)
 
--   [Edytuj i Kontynuuj, odzyskanie wyjątek](#BKMK_EditContinueRecoverExceptions)
+- [Edytuj i Kontynuuj, odzyskanie wyjątek](#BKMK_EditContinueRecoverExceptions)
 
-##  <a name="BKMK_CreateTheApplication"></a> Tworzenie przykładowej aplikacji
+## <a name="BKMK_CreateTheApplication"></a> Tworzenie przykładowej aplikacji
  Debugowanie jest dotyczące kodu, więc Przykładowa aplikacja używa strukturę aplikacji Windows Store, tylko w celu utworzenia pliku źródłowego, w którym widać, jak działa nawigowanie sesji debugowania i jak sprawdzić i zmienić stan programu. Cały kod, który będzie wywoływał jest wywoływana z konstruktora strona główna; Brak kontrolek są dodawane, a żadne zdarzenia nie są obsługiwane.
 
  **Utwórz domyślną aplikację w języku C# Windows Store.** Otwórz program Visual Studio. Na stronie głównej wybierz **nowy projekt** łącza. W oknie dialogowym Nowy projekt, wybierz **Visual C#** w **zainstalowane** listy, a następnie wybierz **Windows Store**. Na liście szablonów projektu wybierz **aplikacji**. Visual Studio tworzy nowe rozwiązanie i projekt i wyświetla MainPage.xaml projektanta i edytora kodu XAML.
@@ -56,7 +56,7 @@ Ten przewodnik Szybki start pokazuje, jak nawigować po sesji debugowania progra
 
  Teraz można wykonać wraz z przykładami w tym temacie.
 
-##  <a name="BKMK_StepInto"></a> Ustaw i uruchom do punktu przerwania, krok po kroku do metody i zbadaj dane do programu
+## <a name="BKMK_StepInto"></a> Ustaw i uruchom do punktu przerwania, krok po kroku do metody i zbadaj dane do programu
  Najbardziej popularny sposób, że możesz rozpocząć sesję debugowania jest wybranie **Rozpocznij debugowanie** z **debugowania** menu (klawiatury: F5). Wykonanie rozpoczyna się i jest powtarzany do momentu punkt przerwania zostanie osiągnięty, ręcznie zawieszenie wykonywania, wystąpi wyjątek, lub kończy się w aplikacji.
 
  Zawieszenia wykonania w debugerze, ustawiając kursor myszy nad zmienną można wyświetlić wartość zmiennej active w oknie z poradami danych. Można również otworzyć okna zmiennych lokalnych i automatycznych, aby wyświetlić listę aktywnych zmienne oraz ich bieżących wartości. Dodanie co najmniej jednej zmiennej, do umożliwia okno czujki, skoncentrować się na wartości zmiennych, jak aplikacja kontynuuje wykonywanie.
@@ -112,7 +112,7 @@ Ten przewodnik Szybki start pokazuje, jak nawigować po sesji debugowania progra
 
   Możesz obejrzeć wiele zmiennych w oknie czujki. Wartości zmiennych obserwowana, takie jak wartości zmiennych lokalnych i okien Porada danych, są aktualizowane, zawsze wtedy, gdy wykonanie programu jest zawieszone. Zmienne można również dodać do okna czujki, z poziomu edytora kodu. Wybierz zmienną, aby obejrzeć, kliknij prawym przyciskiem myszy, a następnie wybierz **Dodaj czujkę**.
 
-##  <a name="BKMK_StepIntoOverOut"></a> Krok do, przez niego lub poza metody
+## <a name="BKMK_StepIntoOverOut"></a> Krok do, przez niego lub poza metody
  W przeciwieństwie do przechodzenie krok po kroku, do metody wywoływane przez metody nadrzędnego, pominięcie metody wykonuje metodę podrzędnej, a następnie zawieszenie wykonywania w przypadku wywoływania metody jako element nadrzędny wznawia działanie. Jeśli znasz sposób metoda działa i pewności, czy jego wykonanie nie ma wpływu na problem, który badania, może przekraczanie metody.
 
  Pominięcie wiersza kodu, który nie zawiera wywołania metody wykonuje wiersza, podobnie jak przechodzenie do wiersza.
@@ -144,7 +144,7 @@ Ten przewodnik Szybki start pokazuje, jak nawigować po sesji debugowania progra
 
  **Zatrzymaj debugowanie.** W menu debugowanie, wybierz polecenie Zatrzymaj debugowanie (klawiatury: Shift+F5). Kończy sesję debugowania.
 
-##  <a name="BKMK_ConditionCursorVisualize"></a> Ustawianie warunkowego punktu przerwania, uruchom do kursora i wizualizować zmienną
+## <a name="BKMK_ConditionCursorVisualize"></a> Ustawianie warunkowego punktu przerwania, uruchom do kursora i wizualizować zmienną
  Warunkowego punktu przerwania określa warunek, który powoduje, że debuger w celu wstrzymania wykonywania. Warunek jest określona przez dowolne wyrażenie kodu, które mogą być obliczane jako wartość true lub false. Może na przykład użyć warunkowego punktu przerwania, aby sprawdzić stan programu w przypadku często wywołanej metody tylko wtedy, gdy zmienna osiągnie określoną wartość.
 
  Wykonywanie do kursora działa jak ustawienie jednorazowe punktu przerwania. Gdy wykonanie programu jest zawieszone, można zaznacz wiersz w źródle i wznowić wykonywanie aż do osiągnięcia wybrany wiersz. Na przykład możesz może być krokowe wykonywanie pętli w metodzie i określić, że kod w pętli działa prawidłowo. Zamiast krokowe wykonywanie każdej iteracji pętli, można uruchomić do kursora, który jest umieszczony po wykonaniu pętli.
@@ -180,7 +180,7 @@ Ten przewodnik Szybki start pokazuje, jak nawigować po sesji debugowania progra
 
  **Zatrzymaj debugowanie.** W menu debugowanie, wybierz polecenie Zatrzymaj debugowanie (klawiatury: Shift+F5). Kończy sesję debugowania.
 
-##  <a name="BKMK_EditContinueRecoverExceptions"></a> Edytuj i Kontynuuj, odzyskanie wyjątek
+## <a name="BKMK_EditContinueRecoverExceptions"></a> Edytuj i Kontynuuj, odzyskanie wyjątek
  W niektórych sytuacjach po wejściu do kodu w debugerze programu Visual Studio masz możliwość zmiany wartości zmiennych i nawet warunki logiczne instrukcji. Ta funkcja nosi nazwę Edytuj i Kontynuuj.
 
  Edytuj i Kontynuuj może być szczególnie przydatne po przerwaniu wyjątek. Nie trzeba zatrzymać i ponownie uruchomić debugowanie długich i zaangażowane procedury w celu uniknięcia wyjątek, możesz mogą "Odwiń" wyjątku, który można przenieść wykonania do punktu, bezpośrednio przed wykonaniem Wystąpił wyjątek, a następnie zmień naruszającym zmiennej lub instrukcji i Przejdź do bieżącej sesji debugowania w stanie, który nie zgłasza wyjątku.

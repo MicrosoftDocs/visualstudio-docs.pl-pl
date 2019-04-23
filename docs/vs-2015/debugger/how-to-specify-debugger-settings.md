@@ -23,12 +23,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ad4e95f9032c3182da3fe59cee16e4ccc3066c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54cb1f67aa1738126fd78e2406c076a4fefa8823
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799128"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051459"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Instrukcje: Określanie ustawień debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], można określić różne ustawi
   
 ### <a name="to-set-debugger-options"></a>Aby ustawić opcje debugera  
   
-1.  Na **narzędzia** menu, kliknij przycisk **opcje**.  
+1. Na **narzędzia** menu, kliknij przycisk **opcje**.  
   
-2.  W **opcje** po otwarciu okna dialogowego **debugowanie** folderu.  
+2. W **opcje** po otwarciu okna dialogowego **debugowanie** folderu.  
   
-3.  W **debugowanie** folderu, wybierz kategorię odpowiednie opcje.  
+3. W **debugowanie** folderu, wybierz kategorię odpowiednie opcje.  
   
      Najbardziej typowe opcje znajdują się w **ogólne** kategorii. Aby uzyskać więcej informacji, zobacz [ogólne, debugowanie, okno dialogowe Opcje](../debugger/general-debugging-options-dialog-box.md).  
   
-4.  Zaznacz lub usuń zaznaczenie opcji lub odpowiednią opcję. Naciśnij klawisz F1, aby uzyskać pomoc dotyczącą opcji.  
+4. Zaznacz lub usuń zaznaczenie opcji lub odpowiednią opcję. Naciśnij klawisz F1, aby uzyskać pomoc dotyczącą opcji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Ogólne, debugowanie, okno dialogowe Opcje](../debugger/general-debugging-options-dialog-box.md)   

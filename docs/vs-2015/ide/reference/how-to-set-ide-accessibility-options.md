@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e01d73457a0b6bf6da2114a4ae967c25f9953a9a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 18f03e2bd37d8275685f34a65c9ab96740ed80a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670332"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051625"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Instrukcje: Ustawianie opcji ułatwień dostępu IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ ms.locfileid: "59670332"
   
 ##### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>Aby zmienić rozmiar tekstu w oknach narzędzi tekstowych i edytory  
   
-1.  Z **narzędzia** menu, wybierz **opcje**.  
+1. Z **narzędzia** menu, wybierz **opcje**.  
   
-2.  Wybierz **czcionki i kolory** na **środowiska** folderu.  
+2. Wybierz **czcionki i kolory** na **środowiska** folderu.  
   
-3.  Wybierz jedną z opcji na **Pokaż ustawienia dla** menu rozwijanego.  
+3. Wybierz jedną z opcji na **Pokaż ustawienia dla** menu rozwijanego.  
   
      Aby zmienić rozmiar czcionki dla tekstu w edytorze, wybierz **edytora tekstów**.  
   
@@ -56,16 +56,16 @@ ms.locfileid: "59670332"
   
      Aby zmienić rozmiar czcionki dla tekstu w wyskakujące okienka uzupełniania instrukcji, wybierz **uzupełniania instrukcji**.  
   
-4.  Z **wyświetlania elementów**, wybierz opcję **zwykły tekst**.  
+4. Z **wyświetlania elementów**, wybierz opcję **zwykły tekst**.  
   
-5.  W **czcionki**, wybierz nowy typ czcionki.  
+5. W **czcionki**, wybierz nowy typ czcionki.  
   
-6.  W **rozmiar**, wybierz nowy rozmiar czcionki.  
+6. W **rozmiar**, wybierz nowy rozmiar czcionki.  
   
     > [!NOTE]
     >  Aby zresetować rozmiar okna narzędzi tekstowych i edytorów, wybierz **Użyj ustawień domyślnych**.  
   
-7.  Wybierz **OK**.  
+7. Wybierz **OK**.  
   
 ### <a name="changing-the-colors-used-in-the-ide"></a>Zmienianie kolorów używanych w środowisku IDE  
  Możesz również zmienić kolory domyślne tekstu, wskaźniki margines, biały i elementy kodu w edytorze.  
@@ -75,40 +75,40 @@ ms.locfileid: "59670332"
   
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>Aby zmienić kolor elementów w edytorze  
   
-1.  Z **narzędzia** menu, wybierz **opcje**.  
+1. Z **narzędzia** menu, wybierz **opcje**.  
   
-2.  Wybierz **czcionki i kolory** z **środowiska** folderu.  
+2. Wybierz **czcionki i kolory** z **środowiska** folderu.  
   
-3.  W **Pokaż ustawienia dla**, wybierz **edytora tekstów**.  
+3. W **Pokaż ustawienia dla**, wybierz **edytora tekstów**.  
   
-4.  Z **wyświetlania elementów**, wybierz element, którego ekran zachodzi potrzeba zmiany, takie jak **zwykły tekst**, **margines wskaźnika**, **pokazuj biały znak**, **Nazwa atrybutu HTML**, lub **atrybutu XML**.  
+4. Z **wyświetlania elementów**, wybierz element, którego ekran zachodzi potrzeba zmiany, takie jak **zwykły tekst**, **margines wskaźnika**, **pokazuj biały znak**, **Nazwa atrybutu HTML**, lub **atrybutu XML**.  
   
-5.  Wybierz ustawienia wyświetlania spośród następujących opcji: **Pierwszy plan elementu**, **tła elementu**, i **Bold**.  
+5. Wybierz ustawienia wyświetlania spośród następujących opcji: **Pierwszy plan elementu**, **tła elementu**, i **Bold**.  
   
-6.  Wybierz **OK**.  
+6. Wybierz **OK**.  
   
 ## <a name="toolbars"></a>Paski narzędzi  
  Aby zwiększyć użyteczność paska narzędzi i dostępność, można dodać tekstu do przycisków paska narzędzi.  
   
 #### <a name="to-assign-text-to-toolbar-buttons"></a>Aby przypisać tekstu do przycisków paska narzędzi  
   
-1.  Z **narzędzia** menu, wybierz **Dostosuj**.  
+1. Z **narzędzia** menu, wybierz **Dostosuj**.  
   
-2.  W **Dostosuj** okno dialogowe, wybierz opcję **polecenia** kartę.  
+2. W **Dostosuj** okno dialogowe, wybierz opcję **polecenia** kartę.  
   
-3.  Wybierz **narzędzi** , a następnie wybierz nazwę paska narzędzi, zawierający przycisk, mają do wyświetlania tekstu.  
+3. Wybierz **narzędzi** , a następnie wybierz nazwę paska narzędzi, zawierający przycisk, mają do wyświetlania tekstu.  
   
-4.  Na liście wybierz polecenie, które chcesz zmienić.  
+4. Na liście wybierz polecenie, które chcesz zmienić.  
   
-5.  Wybierz **Modyfikuj zaznaczenie**.  
+5. Wybierz **Modyfikuj zaznaczenie**.  
   
-6.  Wybierz **tekstowych i obrazów**.  
+6. Wybierz **tekstowych i obrazów**.  
   
 #### <a name="to-modify-the-buttons-displayed-text"></a>Aby zmodyfikować go w wyświetlanym tekstem  
   
-1.  Wybierz ponownie **Modyfikuj zaznaczenie**.  
+1. Wybierz ponownie **Modyfikuj zaznaczenie**.  
   
-2.  Sąsiadujące w **nazwa**, Wstaw Podaj nowy podpis dla przycisku.  
+2. Sąsiadujące w **nazwa**, Wstaw Podaj nowy podpis dla przycisku.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje ułatwień dostępu programu Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)   

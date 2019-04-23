@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba7e6a97e3ee04f43eb7509e77f2e6972042473c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5f16385452fa0fa0f4e706da1856185355aa95a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603655"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047192"
 ---
 # <a name="registering-single-file-generators"></a>Rejestrowanie generatorów jednoplikowych
 Aby udostępnić niestandardowego narzędzia w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], musisz się zarejestrować go tak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tworzenia jego instancji i kojarzy ją z określonego typu projektu.
@@ -38,15 +38,15 @@ Aby udostępnić niestandardowego narzędzia w [!INCLUDE[vsprvs](../../code-qual
 
 2. Utwórz klucz rejestru w żądany [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gałęzi w obszarze generatorów\\*GUID* gdzie *GUID* jest identyfikator GUID jest definiowany przez system projektu określonego języka lub usługi. Nazwa klucza staje się nazwą programową Twojego niestandardowego narzędzia. Klucz niestandardowe narzędzie ma następujące wartości:
 
-   -   (Domyślnie)
+   - (Domyślnie)
 
         Opcjonalna. Zawiera przyjazny dla użytkownika opis niestandardowego narzędzia. Ten parametr jest opcjonalny, ale zalecane.
 
-   -   CLSID
+   - CLSID
 
         Wymagana. Określa identyfikator biblioteki klas składnika modelu COM, który implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.
 
-   -   GeneratesDesignTimeSource
+   - GeneratesDesignTimeSource
 
         Wymagana. Wskazuje, czy typy plikom, które są generowane przez niestandardowe narzędzie były dostępne dla projektantów wizualnych. Wartość tego parametru musi być 0 (zero) typy nie są dostępne do projektantów wizualnych lub 1 (co) dla typów dostępnych projektantów wizualnych.
 

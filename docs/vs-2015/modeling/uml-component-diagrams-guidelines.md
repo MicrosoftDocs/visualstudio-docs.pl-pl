@@ -15,12 +15,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 13dc2eda358e86cd324bc154b856028b3db8979b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b4a5e7e626e7cf9510047f0b016ff80ea8203e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787388"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056786"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>Diagramy składników UML: Wytyczne dotyczące
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ W programie Visual Studio, można narysować *diagram składników* Aby wyświet
   
   Można użyć diagramu składników do reprezentowania projektu niezależnie od tego, jaki język lub platforma projektowania są lub będą używane.  
   
-##  <a name="OtherDiagrams"></a> Relacja z innymi diagramami  
+## <a name="OtherDiagrams"></a> Relacja z innymi diagramami  
  Diagramów składników możesz używać w połączeniu z innymi diagramami.  
   
 |Inny diagram|Pomaga w omawianiu i komunikowaniu tych aspektów projektu|  
@@ -51,7 +51,7 @@ W programie Visual Studio, można narysować *diagram składników* Aby wyświet
 |Diagramy aktywności|-Przetwarzanie wewnętrzne wykonywane przez składnik w odpowiedzi na wiadomości przychodzące.<br /><br /> Aby uzyskać więcej informacji, zobacz [diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md).|  
 |Diagramy warstw|-Logiczne warstw architektury dla składników.<br /><br /> Aby uzyskać więcej informacji, zobacz [diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md).|  
   
-##  <a name="Basics"></a> Podstawowe kroki rysowania diagramów składników  
+## <a name="Basics"></a> Podstawowe kroki rysowania diagramów składników  
  Aby uzyskać informacje na temat elementów na diagramach składników, zobacz [diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md).  
   
  Aby uzyskać więcej informacji o sposobie używania diagramów składników w procesie projektowania, zobacz [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md).  
@@ -61,13 +61,13 @@ W programie Visual Studio, można narysować *diagram składników* Aby wyświet
   
 #### <a name="to-create-a-component-diagram"></a>Aby utworzyć diagram składników  
   
-1.  Na **architektury** menu, kliknij przycisk **nowe UML lub diagramu warstwowego**.  
+1. Na **architektury** menu, kliknij przycisk **nowe UML lub diagramu warstwowego**.  
   
-2.  W obszarze **szablony**, kliknij przycisk **Diagram składników UML**.  
+2. W obszarze **szablony**, kliknij przycisk **Diagram składników UML**.  
   
-3.  Nadaj nazwę diagramowi.  
+3. Nadaj nazwę diagramowi.  
   
-4.  W **Dodaj do projektu modelowania**, wybierz istniejący projekt modelowania w rozwiązaniu, lub **Utwórz nowy projekt modelowania**, a następnie kliknij przycisk **OK**...  
+4. W **Dodaj do projektu modelowania**, wybierz istniejący projekt modelowania w rozwiązaniu, lub **Utwórz nowy projekt modelowania**, a następnie kliknij przycisk **OK**...  
   
      Pojawi się nowy diagram składników z UML **Diagram składników** przybornika. Przybornik zawiera wymagane elementy i relacje.  
   
@@ -80,25 +80,25 @@ W programie Visual Studio, można narysować *diagram składników* Aby wyświet
   
 ##### <a name="to-create-components"></a>Aby utworzyć składniki  
   
-1.  Kliknij przycisk **składnika** w przyborniku, a następnie kliknij pustą część diagramu.  
+1. Kliknij przycisk **składnika** w przyborniku, a następnie kliknij pustą część diagramu.  
   
      \- lub —  
   
      Skopiuj i wklej istniejący składnik.  
   
-    1.  Znajdź istniejący składnik na diagramie lub w **Eksploratora modelu UML**.  
+    1. Znajdź istniejący składnik na diagramie lub w **Eksploratora modelu UML**.  
   
-    2.  Kliknij prawym przyciskiem myszy składnik, a następnie kliknij przycisk **kopiowania**.  
+    2. Kliknij prawym przyciskiem myszy składnik, a następnie kliknij przycisk **kopiowania**.  
   
-    3.  Otwórz diagram, w którym ma się pojawić skopiowany składnik.  
+    3. Otwórz diagram, w którym ma się pojawić skopiowany składnik.  
   
-    4.  Kliknij prawym przyciskiem myszy pustą część diagramu, a następnie kliknij przycisk **Wklej**.  
+    4. Kliknij prawym przyciskiem myszy pustą część diagramu, a następnie kliknij przycisk **Wklej**.  
   
          Kopia składnika pojawi się z nową nazwą.  
   
-2.  Kliknij nazwę składnika, aby ją zmienić.  
+2. Kliknij nazwę składnika, aby ją zmienić.  
   
-3.  Jeśli chcesz zobaczyć tylko nagłówek składnika, kliknij podwójną strzałkę (5).  
+3. Jeśli chcesz zobaczyć tylko nagłówek składnika, kliknij podwójną strzałkę (5).  
   
 ### <a name="showing-the-ports-of-a-component"></a>Wyświetlanie portów składnika  
  A *portu* (2, 3) reprezentuje grupę wiadomości lub wywołania operacji, które przekazać do lub z składnika. Grupa jest opisana przez interfejs, który definiuje typ portu. Port może dostarczać interfejs lub wymagać interfejsu.  
@@ -144,24 +144,24 @@ W programie Visual Studio, można narysować *diagram składników* Aby wyświet
   
 ##### <a name="to-add-a-port-for-an-existing-interface-to-a-component"></a>Aby dodać port dla istniejącego interfejsu do składnika  
   
--   Znajdź interfejs w **Eksploratora modelu UML** i przeciągnij go stamtąd do składnika.  
+- Znajdź interfejs w **Eksploratora modelu UML** i przeciągnij go stamtąd do składnika.  
   
      —lub—  
   
--   Skopiuj i wklej odwołanie do interfejsu z diagramu.  
+- Skopiuj i wklej odwołanie do interfejsu z diagramu.  
   
-    1.  Na diagramie klasy lub diagramie składników kliknij prawym przyciskiem myszy interfejs, a następnie kliknij przycisk **kopiowania**.  
+    1. Na diagramie klasy lub diagramie składników kliknij prawym przyciskiem myszy interfejs, a następnie kliknij przycisk **kopiowania**.  
   
-    2.  Na diagramie składników kliknij prawym przyciskiem myszy składnik, a następnie kliknij przycisk **Wklej odwołanie**.  
+    2. Na diagramie składników kliknij prawym przyciskiem myszy składnik, a następnie kliknij przycisk **Wklej odwołanie**.  
   
          Podany interfejs pojawi się w składniku. W pobliżu pojawi się Tag akcji.  
   
         > [!NOTE]
         >  Jeśli używasz **Wklej** zamiast **Wklej odwołanie**, zostanie utworzony nowy interfejs z nową nazwą.  
   
-    3.  Jeśli chcesz utworzyć interfejs wymagany, kliknij tag akcja, a następnie kliknij przycisk **przekonwertuj na interfejs wymagany**.  
+    3. Jeśli chcesz utworzyć interfejs wymagany, kliknij tag akcja, a następnie kliknij przycisk **przekonwertuj na interfejs wymagany**.  
   
-##  <a name="Parts"></a> Wyświetlanie wewnętrznych części składnika  
+## <a name="Parts"></a> Wyświetlanie wewnętrznych części składnika  
  ![Diagram składników wyświetlanie wewnętrznych części](../modeling/media/uml-compshowing.png "UML_CompShowing")  
   
  Części (3) możesz umieścić w składniku (1), aby pokazać, jak jest zbudowany z mniejszych składników współdziałających ze sobą.  
@@ -180,9 +180,9 @@ W programie Visual Studio, można narysować *diagram składników* Aby wyświet
   
 #### <a name="to-add-parts-to-a-component"></a>Aby dodać części do składnika  
   
-1.  Utwórz część dla wszystkich głównych jednostek funkcjonalnych, które uważasz za część składnika nadrzędnego.  
+1. Utwórz część dla wszystkich głównych jednostek funkcjonalnych, które uważasz za część składnika nadrzędnego.  
   
-    1.  Kliknij przycisk **składnika** w przyborniku, a następnie kliknij wewnątrz składnika nadrzędnego (1).  
+    1. Kliknij przycisk **składnika** w przyborniku, a następnie kliknij wewnątrz składnika nadrzędnego (1).  
   
          Nowa część (3) pojawia się wewnątrz składnika nadrzędnego.  
   
@@ -202,9 +202,9 @@ W programie Visual Studio, można narysować *diagram składników* Aby wyświet
   
          Nowa część (3) pojawia się wewnątrz składnika nadrzędnego. Jego typem jest składnik, który został skopiowany.  
   
-    2.  Kliknij nazwę nowej części, aby ją zmienić. Nie możesz zmienić jego typu.  
+    2. Kliknij nazwę nowej części, aby ją zmienić. Nie możesz zmienić jego typu.  
   
-    3.  Do nowej części możesz dodać interfejsy dostarczany i wymagany (4, 5). Kliknij przycisk **interfejs dostarczany** lub **interfejs wymagany** narzędzia, a następnie kliknij przycisk w części.  
+    3. Do nowej części możesz dodać interfejsy dostarczany i wymagany (4, 5). Kliknij przycisk **interfejs dostarczany** lub **interfejs wymagany** narzędzia, a następnie kliknij przycisk w części.  
   
          \- lub —  
   
@@ -212,15 +212,15 @@ W programie Visual Studio, można narysować *diagram składników* Aby wyświet
   
          Interfejsy są dodawane do typu części i pojawiają się w samej części. Składnik nadrzędny dostosowuje jego rozmiar w razie potrzeby.  
   
-2.  Połącz części ze sobą.  
+2. Połącz części ze sobą.  
   
-    -   Użyj **zależności** narzędzie, aby połączyć porty różnych części (6).  
+    - Użyj **zależności** narzędzie, aby połączyć porty różnych części (6).  
   
-3.  Połącz części z portami składnika nadrzędnego:  
+3. Połącz części z portami składnika nadrzędnego:  
   
-    1.  Utwórz co najmniej jeden port (7) w składniku nadrzędnym. Kliknij przycisk **interfejs wymagany** lub **interfejs dostarczany** w przyborniku, a następnie kliknij składnik nadrzędny.  
+    1. Utwórz co najmniej jeden port (7) w składniku nadrzędnym. Kliknij przycisk **interfejs wymagany** lub **interfejs dostarczany** w przyborniku, a następnie kliknij składnik nadrzędny.  
   
-    2.  Oddeleguj (9) port do jednej lub kilku części (9). Kliknij przycisk **delegowania** narzędzia, a następnie port w składniku nadrzędnym, a następnie port w części. W taki sam sposób możesz połączyć porty, które dostarczają interfejsy lub wymagają interfejsów.  
+    2. Oddeleguj (9) port do jednej lub kilku części (9). Kliknij przycisk **delegowania** narzędzia, a następnie port w składniku nadrzędnym, a następnie port w części. W taki sam sposób możesz połączyć porty, które dostarczają interfejsy lub wymagają interfejsów.  
   
 ### <a name="showing-the-parts-of-a-part"></a>Wyświetlanie części części  
  Po rozłożeniu składnika na części, możesz rozłożyć części każdego typu na wewnętrzne części.  
@@ -229,13 +229,13 @@ W programie Visual Studio, można narysować *diagram składników* Aby wyświet
   
 ##### <a name="to-place-a-parts-type-on-a-diagram"></a>Aby umieścić typ części na diagramie  
   
-1.  Określ w pełni kwalifikowaną nazwę typu części.  
+1. Określ w pełni kwalifikowaną nazwę typu części.  
   
      Kliknij część prawym przyciskiem myszy, a następnie kliknij przycisk **właściwości**.  
   
      Nazwa typu jest wyświetlana w **typu** pola w oknie właściwości.  
   
-2.  Zlokalizuj typ części w **Eksploratora modelu UML**.  
+2. Zlokalizuj typ części w **Eksploratora modelu UML**.  
   
      Kliknij przycisk **widoku**, wskaż polecenie **Windows inne**, a następnie kliknij przycisk **Eksploratora modelu UML**.  
   
@@ -245,9 +245,9 @@ W programie Visual Studio, można narysować *diagram składników* Aby wyświet
   
      Jeśli chcesz, możesz tutaj zmienić jego nazwę.  
   
-3.  Otwórz lub utwórz inny diagram składników.  
+3. Otwórz lub utwórz inny diagram składników.  
   
-4.  Przeciągnij typ z Eksploratora modelu UML do diagramu.  
+4. Przeciągnij typ z Eksploratora modelu UML do diagramu.  
   
      Widok typu pojawi się jako składnik na diagramie.  
   
@@ -255,7 +255,7 @@ W programie Visual Studio, można narysować *diagram składników* Aby wyświet
   
      Możesz teraz dodać części wewnątrz niego.  
   
-##  <a name="Designing"></a> Projektowanie składnika  
+## <a name="Designing"></a> Projektowanie składnika  
   
 ### <a name="describing-how-the-parts-collaborate"></a>Opisywanie, jak współpracują części  
  Możesz narysować diagram sekwencji, aby pokazać, jak części współpracują ze sobą w odpowiedzi na komunikat docierający do składnika nadrzędnego.  
@@ -274,23 +274,23 @@ W programie Visual Studio, można narysować *diagram składników* Aby wyświet
   
 ##### <a name="to-draw-a-sequence-diagram-that-shows-collaboration-between-parts"></a>Aby narysować diagram sekwencji pokazujący współpracę pomiędzy częściami  
   
-1.  Utwórz nowy diagram sekwencji.  
+1. Utwórz nowy diagram sekwencji.  
   
      Aby uzyskać więcej informacji, zobacz [UML Sequence Diagrams: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
   
-2.  Utwórz linię życia dla zewnętrznego składnika, użytkownika, urządzenia lub innego aktora (1), który wysyła wiadomości do tego składnika.  
+2. Utwórz linię życia dla zewnętrznego składnika, użytkownika, urządzenia lub innego aktora (1), który wysyła wiadomości do tego składnika.  
   
      Możesz ustawić **aktora** właściwości tej linii życia na wartość true, aby wskazać, że jest zewnętrzna dla rozważanego. Nad linią życia pojawi się kreska.  
   
-3.  Utwórz linię życia dla interfejsu dostarczanego (2) tego składnika, do której wybrany aktor wysyła wiadomości.  
+3. Utwórz linię życia dla interfejsu dostarczanego (2) tego składnika, do której wybrany aktor wysyła wiadomości.  
   
-4.  Utwórz linię życia dla każdej części (3) składnika.  
+4. Utwórz linię życia dla każdej części (3) składnika.  
   
-5.  Utwórz linię życia dla każdego interfejsu wymaganego (4) składnika.  
+5. Utwórz linię życia dla każdego interfejsu wymaganego (4) składnika.  
   
-6.  Narysuj wiadomości od zewnętrznego aktora (5). Pokaż, jak wiadomości są przekazywane do części i jak części współpracują w odpowiedzieć na wiadomość.  
+6. Narysuj wiadomości od zewnętrznego aktora (5). Pokaż, jak wiadomości są przekazywane do części i jak części współpracują w odpowiedzieć na wiadomość.  
   
-7.  Gdy jest to konieczne, pokaż wiadomości wysyłane do wymaganego interfejsu [6]. Nie pokazuj żadnych szczegółów w ramach przetwarzania wiadomości.  
+7. Gdy jest to konieczne, pokaż wiadomości wysyłane do wymaganego interfejsu [6]. Nie pokazuj żadnych szczegółów w ramach przetwarzania wiadomości.  
   
 ### <a name="is-the-component-more-than-its-parts"></a>Czy składnik jest czymś więcej niż częścią?  
  W niektórych przypadkach składnik nie jest niczym więcej niż nazwą nadaną kolekcji części. Wszystkie prace wykonywane przez części, a w czasie wykonywania nie ma kodu ani innego artefaktu reprezentującego składnik.  
@@ -309,11 +309,11 @@ W programie Visual Studio, można narysować *diagram składników* Aby wyświet
 ### <a name="defining-data-and-classes"></a>Definiowanie klas i danych  
  Możesz użyć diagramu klas UML do opisania szczegółowej treści:  
   
--   Interfejsów składnika. Podczas dodawania portu dostarczania lub wymagania do składnika, w Eksploratorze modelu UML pojawia się interfejs. Możesz je przeciągać lub kopiować to do diagramu klas UML, aby pokazać jego atrybuty i operacje, i relacje z innymi interfejsami.  
+- Interfejsów składnika. Podczas dodawania portu dostarczania lub wymagania do składnika, w Eksploratorze modelu UML pojawia się interfejs. Możesz je przeciągać lub kopiować to do diagramu klas UML, aby pokazać jego atrybuty i operacje, i relacje z innymi interfejsami.  
   
--   Dane przekazywane w parametrach operacji w interfejsach.  
+- Dane przekazywane w parametrach operacji w interfejsach.  
   
--   Dane przechowywane w składnikach, na przykład, jak pokazano w przepływach obiektu w diagramie aktywności.  
+- Dane przechowywane w składnikach, na przykład, jak pokazano w przepływach obiektu w diagramie aktywności.  
   
 ### <a name="general-dependencies-between-components"></a>Ogólne zależności między składnikami  
  Możesz użyć diagramu składników tylko po to, by pokazać główne części projektu i ich współzależności.  

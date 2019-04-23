@@ -18,12 +18,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0dbedf6f2bc0832fa3ba54f691cbf713ccb533a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a229111a2aa4dd633d0728d3a1156c6a8048094
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757548"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059958"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>Instrukcje: Włącz debugowanie aplikacji ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,32 +35,32 @@ Aby włączyć debugowanie, należy włączyć go w obu **właściwości projekt
   
 ### <a name="to-enable-aspnet-debugging-in-the-project-properties-visual-basicc"></a>Aby włączyć debugowanie ASP.NET we właściwościach projektu (Visual Basic / C#)  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy nazwę projektu sieci Web i wybierz **właściwości**.  
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy nazwę projektu sieci Web i wybierz **właściwości**.  
   
-2.  Na stronie właściwości projektu kliknij **Web** kartę.  
+2. Na stronie właściwości projektu kliknij **Web** kartę.  
   
-3.  W obszarze **debugery**, wybierz opcję **ASP.NET** pole wyboru.  
+3. W obszarze **debugery**, wybierz opcję **ASP.NET** pole wyboru.  
   
 ### <a name="to-enable-debugging-in-the-webconfig-file"></a>Aby włączyć debugowanie w pliku web.config  
   
-1.  Otwórz plik web.config, za pomocą dowolnego edytora tekstu lub analizatora XML.  
+1. Otwórz plik web.config, za pomocą dowolnego edytora tekstu lub analizatora XML.  
   
     > [!NOTE]  
     > Nie masz dostępu do pliku zdalnego przy użyciu przeglądarki sieci Web, jednak. Ze względów bezpieczeństwa [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] umożliwia skonfigurowanie programu Microsoft IIS, aby zapobiec bezpośredni dostęp z przeglądarki w plikach Web.config. Jeśli próbujesz uzyskać dostęp do pliku konfiguracji, za pomocą przeglądarki, zostanie wyświetlony błąd dostępu HTTP 403 (zabronione).  
   
-2.  Plik Web.config jest plikiem XML, a więc zawiera zagnieżdżone sekcje oznaczone według tagów. Znajdź `configuration/system.web/compilation` elementu. Jeśli element kompilacji nie istnieje, należy go utworzyć.  
+2. Plik Web.config jest plikiem XML, a więc zawiera zagnieżdżone sekcje oznaczone według tagów. Znajdź `configuration/system.web/compilation` elementu. Jeśli element kompilacji nie istnieje, należy go utworzyć.  
   
-3.  Jeśli `compilation` nie zawiera elementu `debug` atrybutu, Dodaj atrybut do elementu.  
+3. Jeśli `compilation` nie zawiera elementu `debug` atrybutu, Dodaj atrybut do elementu.  
   
-4.  Upewnij się, że `debug` wartość atrybutu jest równa `true`.  
+4. Upewnij się, że `debug` wartość atrybutu jest równa `true`.  
   
 Plik web.config powinien wyglądać podobnie jak w poniższym przykładzie. Należy pamiętać, że może być sekcje między konfiguracji i elementami system.web  
   
--   Element sekcje między konfiguracji i elementami system.web  
+- Element sekcje między konfiguracji i elementami system.web  
   
--   Element sekcje między elementami system.web i kompilacja  
+- Element sekcje między elementami system.web i kompilacja  
   
--   Element kompilacji może zawierać inne atrybuty i elementy  
+- Element kompilacji może zawierać inne atrybuty i elementy  
   
 ## <a name="example"></a>Przykład  
   

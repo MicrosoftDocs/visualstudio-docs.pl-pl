@@ -38,12 +38,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 69ad44cefad48199efdb70bd88c1ed3b117d48ad
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cca58ec0c9f493cd418cbb5aabca7a8d2c1939b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630863"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062181"
 ---
 # <a name="content-controls"></a>Formanty zawartości
   Formanty zawartości umożliwiają dla Ciebie dokumentów projektów i szablonów, które mają następujące funkcje:
@@ -125,7 +125,7 @@ ms.locfileid: "56630863"
 |Uruchomienia kodu po wykonaniu zawartości formant jest dodawany do dokumentu w wyniku ponawiania lub cofnąć operację.|Obsługa <xref:Microsoft.Office.Tools.Word.ContentControlBase.Added> zdarzeń formantu.|
 |Uruchom kod tuż przed formantu zawartości zostanie usunięty z dokumentu.|Obsługa <xref:Microsoft.Office.Tools.Word.ContentControlBase.Deleting> zdarzeń formantu.|
 
-##  <a name="Protection"></a> Ochrona części dokumentów za pomocą formantów zawartości
+## <a name="Protection"></a> Ochrona części dokumentów za pomocą formantów zawartości
  W przypadku ochrony części dokumentu, można uniemożliwić użytkownikom zmienianie lub usuwanie zawartości w tej części dokumentu. Istnieje kilka sposobów, w części dokumentu można chronić za pomocą formantów zawartości.
 
  Jeśli obszar, który ma być chroniony, znajduje się wewnątrz formantu zawartości, można użyć właściwości formantu zawartości, aby uniemożliwić użytkownikom edytowanie lub usuwanie kontrolki:
@@ -141,7 +141,7 @@ ms.locfileid: "56630863"
 
  Aby uzyskać więcej informacji o jak ochrona części dokumentów za pomocą formantów zawartości, zobacz [jak: Ochrona części dokumentów za pomocą formantów zawartości](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
 
-##  <a name="DataBinding"></a> Wiązanie danych z kontrolkami zawartości
+## <a name="DataBinding"></a> Wiązanie danych z kontrolkami zawartości
  Aby wyświetlić dane w dokumentach, powiązania kontrolki zawartości ze źródłem danych. Po zaktualizowaniu źródło danych zmiany zostały uwzględnione formantu zawartości. Można także zapisać zmiany do źródła danych.
 
  Formanty zawartości zapewniają następujące opcje powiązania danych:
@@ -191,15 +191,15 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 
  Można powiązać następujące typy kontrolek zawartości do niestandardowych części XML:
 
--   <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>
+- <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>
 
--   <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>
+- <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>
 
--   <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>
+- <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>
 
--   <xref:Microsoft.Office.Tools.Word.PictureContentControl>
+- <xref:Microsoft.Office.Tools.Word.PictureContentControl>
 
--   <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>
+- <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>
 
 ### <a name="data-bind-events-for-content-controls"></a>Powiązanie danych zdarzeń dla formantów zawartości
  Wszystkie formanty zawartości zapewniają zestaw zdarzeń, które może obsłużyć do wykonywania zadań związanych z danymi, takich jak sprawdzanie poprawności tekstu w kontrolce spełnia określone kryteria, zanim źródło danych zostanie zaktualizowane. W poniższej tabeli wymieniono zdarzenia kontroli zawartości, that are related to powiązanie danych.
@@ -228,7 +228,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 
  Aby określić, gdy użytkownik edytuje zawartość formantu zawartości, można powiązać kontrolkę z niestandardowym elementem XML i następnie obsłużyć <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> zdarzeń. To zdarzenie jest wywoływane, gdy użytkownik zmieni zawartości formantu, który jest powiązany z niestandardowym elementem XML. Aby uzyskać przewodnik pokazuje, jak powiązać kontrolkę zawartości do niestandardowych części XML, zobacz [instruktażu: Powiązywanie kontrolek zawartości do niestandardowych części XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
 
-###  <a name="checkbox"></a> Formanty zawartości pól wyboru w projektach programu Word
+### <a name="checkbox"></a> Formanty zawartości pól wyboru w projektach programu Word
  Word 2010 wprowadzono nowy typ formantu zawartości, który reprezentuje pole wyboru. Jednak [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nie zapewnia odpowiedni typ CheckBoxContentControl można ich używać w projektach pakietu Office. Aby utworzyć kontrolkę zawartości pola wyboru w [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] lub w projekcie programu Word 2010, użyj <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> metodę w celu utworzenia <xref:Microsoft.Office.Tools.Word.ContentControl> obiektu i przekaż <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> wartości do metody, aby określić kontrolkę zawartości pola wyboru. Poniższy przykład kodu pokazuje, jak to zrobić.
 
  [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]

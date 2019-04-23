@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6f59af23f25fee628ec20b77e10e0a48afdd564d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6971da256d638b8248e49235a4d8d3ded71dc10e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669058"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056773"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Instrukcje: Utwórz skojarzenie (Relacja) między LINQ to SQL klas (Projektant O/R)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Skojarzenia między klasami jednostki w [!INCLUDE[vbtecdlinq](../includes/vbtecd
   
 ### <a name="to-create-an-association-between-entity-classes"></a>Aby utworzyć skojarzenie między klasami jednostki  
   
-1.  Kliknij prawym przyciskiem myszy klasę jednostki, która reprezentuje klasa nadrzędna do skojarzenia, wskaż opcję **Dodaj**, a następnie kliknij przycisk **skojarzenie**.  
+1. Kliknij prawym przyciskiem myszy klasę jednostki, która reprezentuje klasa nadrzędna do skojarzenia, wskaż opcję **Dodaj**, a następnie kliknij przycisk **skojarzenie**.  
   
-2.  Sprawdź, czy poprawny **klasy nadrzędnej** wybrano **Edytor skojarzeń** okno dialogowe.  
+2. Sprawdź, czy poprawny **klasy nadrzędnej** wybrano **Edytor skojarzeń** okno dialogowe.  
   
-3.  Wybierz **klasy podrzędnej** w polu kombi.  
+3. Wybierz **klasy podrzędnej** w polu kombi.  
   
-4.  Wybierz **właściwości skojarzenia** powiązanych klas. Zwykle to mapuje relacji klucza obcego w bazie danych. Na przykład w powiązaniu klienci i zamówienia **właściwości skojarzenia** są CustomerID dla każdej klasy.  
+4. Wybierz **właściwości skojarzenia** powiązanych klas. Zwykle to mapuje relacji klucza obcego w bazie danych. Na przykład w powiązaniu klienci i zamówienia **właściwości skojarzenia** są CustomerID dla każdej klasy.  
   
-5.  Kliknij przycisk **OK** utworzyć skojarzenie.  
+5. Kliknij przycisk **OK** utworzyć skojarzenie.  
   
 ## <a name="see-also"></a>Zobacz też  
  [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

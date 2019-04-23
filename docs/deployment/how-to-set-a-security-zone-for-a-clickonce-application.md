@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb89fea3e364c5933a4b1cfeaf90b44dc14e83d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 31a61dd337fce614c1271f994a42ec90f3be8acb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606843"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054082"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Instrukcje: Ustawienie strefy zabezpieczeń dla aplikacji ClickOnce
 Podczas ustawiania dostępu kodu uprawnień zabezpieczeń dla aplikacji ClickOnce, należy uruchomić podstawowy zestaw uprawnień na **zabezpieczeń** strony **projektanta projektu**.
@@ -30,17 +30,17 @@ Podczas ustawiania dostępu kodu uprawnień zabezpieczeń dla aplikacji ClickOnc
 
 ### <a name="to-set-a-security-zone"></a>Aby ustawienie strefy zabezpieczeń
 
-1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** kliknij menu **właściwości**.
+1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** kliknij menu **właściwości**.
 
-2.  Kliknij przycisk **zabezpieczeń** kartę.
+2. Kliknij przycisk **zabezpieczeń** kartę.
 
-3.  Wybierz **włączenia ustawień zabezpieczeń technologii ClickOnce** pole wyboru.
+3. Wybierz **włączenia ustawień zabezpieczeń technologii ClickOnce** pole wyboru.
 
-4.  Wybierz **to częściowo zaufanych aplikacji** przycisku opcji.
+4. Wybierz **to częściowo zaufanych aplikacji** przycisku opcji.
 
      Formanty w **uprawnienia zabezpieczeń aplikacji ClickOnce** sekcji są włączone.
 
-5.  W **strefy, aplikacja zostanie zainstalowana z** listy rozwijanej wybierz strefę zabezpieczeń.
+5. W **strefy, aplikacja zostanie zainstalowana z** listy rozwijanej wybierz strefę zabezpieczeń.
 
 ## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Ustawienie uprawnień niestandardowych dla aplikacji ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)

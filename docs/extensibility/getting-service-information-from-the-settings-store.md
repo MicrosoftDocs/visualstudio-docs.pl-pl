@@ -8,21 +8,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ed137354ee43b923c5d1508a8c2d5ebe4f754f4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe38bf84510ea247c737477e421db8dbb15f63c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699421"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042652"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>Uzyskaj informacje o usłudze z magazynu ustawień
 Można użyć magazynu ustawień, aby znaleźć wszystkie dostępne usługi lub aby określić, czy określona usługa jest zainstalowana. Musisz znać typ klasy usługi.
 
 ## <a name="to-list-the-available-services"></a>Aby wyświetlić listę dostępnych usług
 
-1.  Utwórz projekt VSIX, o nazwie `FindServicesExtension` , a następnie dodaj polecenie niestandardowe o nazwie `FindServicesCommand`. Aby uzyskać więcej informacji na temat tworzenia niestandardowych poleceń, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+1. Utwórz projekt VSIX, o nazwie `FindServicesExtension` , a następnie dodaj polecenie niestandardowe o nazwie `FindServicesCommand`. Aby uzyskać więcej informacji na temat tworzenia niestandardowych poleceń, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-2.  W *FindServicesCommand.cs*, Dodaj następujące instrukcje using:
+2. W *FindServicesCommand.cs*, Dodaj następujące instrukcje using:
 
     ```vb
     using System.Collections.Generic;
@@ -31,7 +31,7 @@ Można użyć magazynu ustawień, aby znaleźć wszystkie dostępne usługi lub 
     using System.Windows.Forms;
     ```
 
-3.  Pobierz magazyn ustawień konfiguracji, a następnie znajdź podkolekcję o nazwie usługi. Ta kolekcja zawiera wszystkie dostępne usługi. W `MenuItemCommand` metody, usuń istniejący kod i zastąp go następującym kodem:
+3. Pobierz magazyn ustawień konfiguracji, a następnie znajdź podkolekcję o nazwie usługi. Ta kolekcja zawiera wszystkie dostępne usługi. W `MenuItemCommand` metody, usuń istniejący kod i zastąp go następującym kodem:
 
     ```
     private void MenuItemCallback(object sender, EventArgs e)
@@ -50,9 +50,9 @@ Można użyć magazynu ustawień, aby znaleźć wszystkie dostępne usługi lub 
     }
     ```
 
-4.  Skompiluj projekt, a następnie rozpocząć debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.
+4. Skompiluj projekt, a następnie rozpocząć debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.
 
-5.  W doświadczalnym wystąpieniu na **narzędzia** menu, kliknij przycisk **wywołania FindServicesCommand**.
+5. W doświadczalnym wystąpieniu na **narzędzia** menu, kliknij przycisk **wywołania FindServicesCommand**.
 
      Okno komunikatu, wyświetlanie listy wszystkich usług powinny być widoczne.
 
@@ -61,7 +61,7 @@ Można użyć magazynu ustawień, aby znaleźć wszystkie dostępne usługi lub 
 ## <a name="find-a-specific-service"></a>Znajdź określonej usługi
  Można również użyć <xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A> metodę pozwala ustalić, czy określona usługa jest zainstalowana. Musisz znać typ klasy usługi.
 
-1.  Wyszukaj w sklepie ustawień konfiguracji w MenuItemCallback projekt utworzony w poprzedniej procedurze, `Services` kolekcja, która ma podkolekcję o nazwie określonej przez identyfikator GUID usługi. W takim przypadku firma Microsoft będzie szukał usługi pomocy.
+1. Wyszukaj w sklepie ustawień konfiguracji w MenuItemCallback projekt utworzony w poprzedniej procedurze, `Services` kolekcja, która ma podkolekcję o nazwie określonej przez identyfikator GUID usługi. W takim przypadku firma Microsoft będzie szukał usługi pomocy.
 
     ```
     private void MenuItemCallback(object sender, EventArgs e)
@@ -76,8 +76,8 @@ Można użyć magazynu ustawień, aby znaleźć wszystkie dostępne usługi lub 
     }
     ```
 
-2.  Skompiluj projekt, a następnie rozpocząć debugowanie.
+2. Skompiluj projekt, a następnie rozpocząć debugowanie.
 
-3.  W doświadczalnym wystąpieniu na **narzędzia** menu, kliknij przycisk **wywołania FindServicesCommand**.
+3. W doświadczalnym wystąpieniu na **narzędzia** menu, kliknij przycisk **wywołania FindServicesCommand**.
 
      Powinien zostać wyświetlony komunikat z tekstem **pomocy dostępne usługi:** następuje **True** lub **False**. Aby sprawdzić to ustawienie, służy Edytor rejestru, jak pokazano w poprzednich krokach.

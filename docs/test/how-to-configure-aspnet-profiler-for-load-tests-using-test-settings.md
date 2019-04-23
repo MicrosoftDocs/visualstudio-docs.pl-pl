@@ -8,12 +8,12 @@ ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c8142e8d08cc34d3574539c195eab3443717f55a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fc0e9c9a8983d58b7b672be6c1cafb7360e25d28
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935995"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062343"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Instrukcje: Konfiguracja profilera ASP.NET do testów obciążenia za pomocą ustawień testów w programie Visual Studio
 
@@ -35,26 +35,26 @@ Aby uzyskać więcej informacji, zobacz [jak: Utwórz ustawienie testu dla testu
 
 Przed wykonaniem kroków w tej procedurze należy otworzyć Ustawienia testu z programu Visual Studio i wybrać **dane i Diagnostyka** strony.
 
-1.  Wybierz rolę, która ma zbierać dane profilera platformy ASP.NET.
+1. Wybierz rolę, która ma zbierać dane profilera platformy ASP.NET.
 
     > [!WARNING]
     > Ta rola musi być serwerem sieci web.
 
-2.  Wybierz **ASP.NET Profiler** włączy zbieranie danych profilowania ASP.NET, a następnie wybierz polecenie **Konfiguruj**.
+2. Wybierz **ASP.NET Profiler** włączy zbieranie danych profilowania ASP.NET, a następnie wybierz polecenie **Konfiguruj**.
 
      Wyświetlane jest okno dialogowe, aby skonfigurować zbieranie danych z profilowania ASP.NET.
 
-3.  W **interwał próbkowania Profiler**, wpisz wartość, która wskazuje, ile niewstrzymanych Procesora zegara cykle oczekiwania między pobieraniem próbek profilowania ASP.NET.
+3. W **interwał próbkowania Profiler**, wpisz wartość, która wskazuje, ile niewstrzymanych Procesora zegara cykle oczekiwania między pobieraniem próbek profilowania ASP.NET.
 
-4.  Aby włączyć profilowanie interakcji pomiędzy warstwami, zaznacz **Włącz profilowanie interakcji pomiędzy warstwami**.
+4. Aby włączyć profilowanie interakcji pomiędzy warstwami, zaznacz **Włącz profilowanie interakcji pomiędzy warstwami**.
 
      Profilowanie interakcji pomiędzy warstwami zlicza liczbę żądań wysyłanych do serwera sieci web dla każdego artefaktu (na przykład *MyPage.aspx* lub *CompanyLogo.gif*) i czas, jaki zajęła Obsługa każdego żądania. Ponadto są zbierane informacje o tym, które połączenia środowiska ADO.NET były używane w ramach żądania o stronę oraz jak wiele zapytań i wywołań procedur przechowywanych zostało wykonanych w ramach obsługi tego żądania.
 
      Mechanizm zbiera dwa różne zestawy informacji o czasie:
 
-    -   Informacje o czasie (Min., Maks., Średnia i Suma) obsługi każdego żądania sieci web.
+    - Informacje o czasie (Min., Maks., Średnia i Suma) obsługi każdego żądania sieci web.
 
-    -   Informacje o czasie (Min., Maks., Średnia i Suma) wykonania każdego zapytania.
+    - Informacje o czasie (Min., Maks., Średnia i Suma) wykonania każdego zapytania.
 
 Adapter danych diagnostycznych profilera ASP.NET skonfigurowany w ustawieniach testu można teraz zbierać dane na aplikację sieci web platformy ASP.NET profilowania ASP.NET.
 

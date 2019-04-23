@@ -8,12 +8,12 @@ ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f349308a1f4877a79a933e32269f262e1a58dc40
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1e94bb6da2786b989208ea1104d509883bc0724
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939453"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042200"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Instrukcje: Określ częstotliwość próbkowania dla testu obciążenia, ustawienia uruchamiania
 
@@ -36,19 +36,19 @@ Oto niektóre wytyczne dotyczące częstotliwości próbkowania:
 
 ## <a name="to-specify-performance-counter-sampling-rate-in-a-run-setting"></a>Aby określić częstotliwość próbkowania licznika wydajności w ustawieniach testu
 
-1.  Otwórz test obciążenia.
+1. Otwórz test obciążenia.
 
      **Edytora testu obciążenia** pojawia się. Zostanie wyświetlone drzewo testu obciążenia.
 
-2.  Obciążenia testowanie drzewie w **parametrów uruchomieniowych** folderu, wybierz parametr uruchomieniowy, które chcesz określić częstotliwość próbkowania dla.
+2. Obciążenia testowanie drzewie w **parametrów uruchomieniowych** folderu, wybierz parametr uruchomieniowy, które chcesz określić częstotliwość próbkowania dla.
 
-3.  Na **widoku** menu, wybierz opcję **okno właściwości**.
+3. Na **widoku** menu, wybierz opcję **okno właściwości**.
 
      Uruchom ustawienie obciążenia użytkownika kategorii i właściwości są wyświetlane w **właściwości** okna.
 
-4.  W **częstotliwość próbkowania** właściwości wprowadź wartość czasu, która wskazuje częstotliwość, jaką testu obciążeniowego będzie zbierać dane licznika wydajności.
+4. W **częstotliwość próbkowania** właściwości wprowadź wartość czasu, która wskazuje częstotliwość, jaką testu obciążeniowego będzie zbierać dane licznika wydajności.
 
-5.  Po zakończeniu, zmiana wartości właściwości, wybierz **Zapisz** na **pliku** menu. Następnie możesz uruchomić test obciążenia za pomocą nowego **częstotliwość próbkowania** wartość.
+5. Po zakończeniu, zmiana wartości właściwości, wybierz **Zapisz** na **pliku** menu. Następnie możesz uruchomić test obciążenia za pomocą nowego **częstotliwość próbkowania** wartość.
 
 ## <a name="see-also"></a>Zobacz także
 

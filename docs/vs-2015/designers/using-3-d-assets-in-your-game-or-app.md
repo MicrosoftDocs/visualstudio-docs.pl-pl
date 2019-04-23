@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ca0150b44bbed9f411af25c5ce3805e553e8272
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c475366c190e5ac008394f8642f64da022532a0a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775114"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064742"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Korzystanie z obiektów 3-D w grach i aplikacjach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ W tym artykule opisano, jak można użyć [!INCLUDE[vsprvs](../includes/vsprvs-m
   
 #### <a name="to-add-the-build-customizations-to-your-project"></a>Aby dodać dostosowania kompilacji do projektu  
   
-1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **zależności kompilacji**, **dostosowania kompilacji**. **Pliki z dostosowywania kompilacji Visual C++** zostanie wyświetlone okno dialogowe.  
+1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **zależności kompilacji**, **dostosowania kompilacji**. **Pliki z dostosowywania kompilacji Visual C++** zostanie wyświetlone okno dialogowe.  
   
-2.  W obszarze **dostępne pliki dostosowania kompilacji**, zaznacz pole wyboru, które odpowiadają typom zasobów, które chcesz użyć w projekcie, zgodnie z opisem w poniższej tabeli:  
+2. W obszarze **dostępne pliki dostosowania kompilacji**, zaznacz pole wyboru, które odpowiadają typom zasobów, które chcesz użyć w projekcie, zgodnie z opisem w poniższej tabeli:  
   
     |Typ zasobu|Nazwa dostosowania kompilacji|  
     |----------------|------------------------------|  
@@ -45,7 +45,7 @@ W tym artykule opisano, jak można użyć [!INCLUDE[vsprvs](../includes/vsprvs-m
     |Modele 3-D|**MeshContentTask (.targets, .props)**|  
     |Programy do cieniowania|**ShaderGraphContentTask(.targets, .props)**|  
   
-3.  Wybierz **OK** przycisku.  
+3. Wybierz **OK** przycisku.  
   
 ## <a name="including-assets-in-your-build"></a>Dołączanie zasobów w kompilacji  
  Teraz, gdy projektu wie o różnych rodzajów zasobów 3-D, których chcesz użyć, następnym krokiem jest stwierdzenie, pliki, które są zasobów 3-D, i jakie typy zasobów są.  
@@ -76,13 +76,13 @@ W tym artykule opisano, jak można użyć [!INCLUDE[vsprvs](../includes/vsprvs-m
   
 #### <a name="to-configure-content-pipeline-properties"></a>Aby skonfigurować właściwości potoku zawartości  
   
-1.  W **Eksploratora rozwiązań**w swoim projekcie Otwórz menu skrótów dla pliku zasobów, a następnie wybierz **właściwości**. Zasób **strona właściwości** zostanie wyświetlone okno dialogowe.  
+1. W **Eksploratora rozwiązań**w swoim projekcie Otwórz menu skrótów dla pliku zasobów, a następnie wybierz **właściwości**. Zasób **strona właściwości** zostanie wyświetlone okno dialogowe.  
   
-2.  Upewnij się, że **konfiguracji** i **platformy** właściwości są ustawione na wartości, które mają zostać zastosowane do zmiany.  
+2. Upewnij się, że **konfiguracji** i **platformy** właściwości są ustawione na wartości, które mają zostać zastosowane do zmiany.  
   
-3.  W obszarze **właściwości konfiguracji**, wybierz węzeł potoku zawartości — na przykład **potok zawartości obrazu** dla tekstur i obrazów — a następnie w siatce właściwości ustaw właściwości odpowiednie wartości. Na przykład, aby wygenerować mapy MIP dla trwałego tekstura w czasie kompilacji, należy ustawić **Generuj Mips** właściwości **tak**.  
+3. W obszarze **właściwości konfiguracji**, wybierz węzeł potoku zawartości — na przykład **potok zawartości obrazu** dla tekstur i obrazów — a następnie w siatce właściwości ustaw właściwości odpowiednie wartości. Na przykład, aby wygenerować mapy MIP dla trwałego tekstura w czasie kompilacji, należy ustawić **Generuj Mips** właściwości **tak**.  
   
-4.  Wybierz **OK** przycisku.  
+4. Wybierz **OK** przycisku.  
   
 ### <a name="image-content-pipeline-configuration"></a>Konfiguracja potoku zawartości obrazów  
  Korzystając z narzędzia potoku zawartości obrazu do tworzenia zasobów tekstury, można kompresować tekstury na różne sposoby, wskazywać, czy poziomy MCI powinny być generowane w czasie kompilacji, a następnie zmień nazwę pliku wyjściowego.  

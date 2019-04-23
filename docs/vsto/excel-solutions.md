@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f96543c3f2cca5c067eea4af4b14bc67d7d129c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 69616c4406e6a608e406e479e5fc2de2dcbc2844
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600543"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041530"
 ---
 # <a name="excel-solutions"></a>rozwiązania programu Excel
   Program Visual Studio udostępnia szablony projektów, których można użyć do utworzenia dostosowań poziomu dokumentu i dodatków narzędzi VSTO dla programu Microsoft Office Excel. Automatyzowanie programu Excel, rozszerzania funkcji programu Excel i dostosowywanie interfejsu użytkownika (UI) programu Excel, można użyć tych rozwiązań. Aby uzyskać więcej informacji na temat różnic między dostosowań na poziomie dokumentu i dodatków narzędzi VSTO dla programów, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -43,20 +43,20 @@ ms.locfileid: "56600543"
 
  Ten temat zawiera następujące informacje:
 
--   [Automatyzowanie programu Excel](#automating).
+- [Automatyzowanie programu Excel](#automating).
 
--   [Opracowywanie dostosowań poziomu dokumentu dla programu Excel](#doclevel).
+- [Opracowywanie dostosowań poziomu dokumentu dla programu Excel](#doclevel).
 
--   [Tworzenie dodatków narzędzi VSTO dla programu Excel](#applevel).
+- [Tworzenie dodatków narzędzi VSTO dla programu Excel](#applevel).
 
--   [Dostosowywanie interfejsu użytkownika programu Excel](#UI).
+- [Dostosowywanie interfejsu użytkownika programu Excel](#UI).
 
-##  <a name="automating"></a> Automatyzowanie programu Excel
+## <a name="automating"></a> Automatyzowanie programu Excel
  Model obiektów programu Excel uwidacznia wiele typów, których można użyć do zautomatyzowania programu Excel. Na przykład możesz można programowo tworzyć wykresy, sformatuj arkuszy i ustaw wartości zakresów i komórek. Aby uzyskać więcej informacji, zobacz [model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md).
 
  Podczas opracowywania rozwiązania programu Excel w programie Visual Studio, możesz również użyć *hostować elementy* i *hostowania kontrolek* w posiadanych rozwiązaniach. Są to obiekty, które rozszerzają niektóre powszechnie używane obiekty w modelu obiektów programu Excel, takich jak <xref:Microsoft.Office.Interop.Excel.Worksheet> i <xref:Microsoft.Office.Interop.Excel.Range> obiektów. Obiekty rozszerzone zachowują się jak obiekty programu Excel, które są one oparte na, ale dodają dodatkowe zdarzenia i możliwości wiązania danych do obiektów. Aby uzyskać więcej informacji, zobacz [automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md).
 
-##  <a name="doclevel"></a> Opracowywanie dostosowań poziomu dokumentu dla programu Excel
+## <a name="doclevel"></a> Opracowywanie dostosowań poziomu dokumentu dla programu Excel
  Dostosowania poziomu dokumentu dla programu Microsoft Office Excel składa się z zestawu, który jest skojarzony z określonym skoroszycie. Zestaw zazwyczaj rozszerza skoroszyt przez dostosowanie interfejsu użytkownika i automatyzowanie programu Excel. W przeciwieństwie do dodatku narzędzi VSTO, który jest skojarzony z programem Excel, samego, funkcja implementowana w dostosowaniu jest dostępna tylko wtedy, gdy skojarzony skoroszyt jest otwarty w programie Excel.
 
  Aby utworzyć projekt dostosowania poziomu dokumentu dla programu Excel, należy użyć skoroszyt programu Excel lub szablonów projektu szablon programu Excel w **nowy projekt** okno dialogowe programu Visual Studio. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
@@ -68,7 +68,7 @@ ms.locfileid: "56600543"
 
  Aby uzyskać więcej informacji na temat tych wygenerowanych klas i innych funkcji, można użyć w projekcie na poziomie dokumentu, zobacz [Program dostosowań poziomu dokumentu](../vsto/programming-document-level-customizations.md).
 
-##  <a name="applevel"></a> Tworzenie dodatków narzędzi VSTO dla programu Excel
+## <a name="applevel"></a> Tworzenie dodatków narzędzi VSTO dla programu Excel
  Dodatek narzędzi VSTO dla programu Microsoft Office Excel składa się z zestawu, który jest ładowany przez program Excel. Zestaw zazwyczaj rozszerza program Excel przez dostosowanie interfejsu użytkownika i automatyzowanie programu Excel. W przeciwieństwie do dostosowywania poziomie dokumentu, który jest skojarzony z określonym skoroszycie, funkcje implementowane w dodatku narzędzi VSTO dla programów nie jest ograniczona do dowolnego pojedynczego skoroszytu.
 
  Aby utworzyć projekt dodatku narzędzi VSTO dla programu Excel, należy użyć skoroszyt programu Excel lub szablonów projektu szablon programu Excel w **nowy projekt** okno dialogowe programu Visual Studio. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
@@ -80,7 +80,7 @@ ms.locfileid: "56600543"
 
  Aby uzyskać więcej informacji na temat `ThisAddIn` klasy i inne funkcje programu Visual Studio można używać w dodatku narzędzi VSTO dla programów, zobacz [dodatków narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md).
 
-##  <a name="UI"></a> Dostosowywanie interfejsu użytkownika programu Excel
+## <a name="UI"></a> Dostosowywanie interfejsu użytkownika programu Excel
  Istnieje kilka różnych sposobów dostosowania interfejsu użytkownika programu Excel. Niektóre opcje są dostępne dla wszystkich typów projektów, a inne opcje są dostępne tylko dla dodatków narzędzi VSTO dla programów lub dostosowań na poziomie dokumentu.
 
 ### <a name="options-for-all-project-types"></a>Opcje dla wszystkich typów projektów

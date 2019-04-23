@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4390632dc9c1ce0cb47d5733145739719ae87c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6ad0bd131251259b375a4300807825205da2c6ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617356"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042681"
 ---
 # <a name="msbuild-best-practices"></a>Najlepsze rozwiązania programu MSBuild
 Zalecamy następujące najlepsze rozwiązania dotyczące pisania skryptów programu MSBuild:
 
--   Domyślne wartości właściwości najlepiej są obsługiwane przy użyciu `Condition` atrybutu, a nie przez zadeklarowanie właściwość, której domyślna wartość może zostać przesłonięta w wierszu polecenia. Na przykład użyć
+- Domyślne wartości właściwości najlepiej są obsługiwane przy użyciu `Condition` atrybutu, a nie przez zadeklarowanie właściwość, której domyślna wartość może zostać przesłonięta w wierszu polecenia. Na przykład użyć
 
 ```xml
 <MyProperty Condition="'$(MyProperty)' == ''">
@@ -29,7 +29,7 @@ Zalecamy następujące najlepsze rozwiązania dotyczące pisania skryptów progr
 </MyProperty>
 ```
 
--   Po zaznaczeniu elementów, należy unikać symboli wieloznacznych. Zamiast tego należy jawnie określić pliki. Ta funkcja ułatwia śledzenie błędów, które mogą wystąpić podczas dodawania i usuwania plików.
+- Po zaznaczeniu elementów, należy unikać symboli wieloznacznych. Zamiast tego należy jawnie określić pliki. Ta funkcja ułatwia śledzenie błędów, które mogą wystąpić podczas dodawania i usuwania plików.
 
 ## <a name="see-also"></a>Zobacz także
 - [Pojęcia zaawansowane](../msbuild/msbuild-advanced-concepts.md)

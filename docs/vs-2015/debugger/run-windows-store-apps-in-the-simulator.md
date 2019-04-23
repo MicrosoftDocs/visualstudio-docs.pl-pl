@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9ceda4b04d5a029066d5594cac7e0a0701b1b4ca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 61c56636eec92f28468533b7c4d9a51e6f120363
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766539"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054500"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Uruchamianie Windows Store apps w symulatorze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ Symulatorze programu Visual Studio dla aplikacji Windows Store to aplikacja komp
 > [!IMPORTANT]
 >  Symulator programu Visual Studio 2015 nie ma przycisku geolokalizacji. Jest to spowodowane symulator systemu Windows 10 nie zawiera geograficzną symulacji. Jeśli zachodzi potrzeba zrobić tego rodzaju symulacji, można użyć symulatora programu Visual Studio 2013 na Windows 8.1 lub starszymi systemami operacyjnymi.  
   
-##  <a name="BKMK_Set_the_simulator_as_the_target"></a> Ustaw symulator jako element docelowy  
+## <a name="BKMK_Set_the_simulator_as_the_target"></a> Ustaw symulator jako element docelowy  
  Aby uruchomić aplikację Windows Store w symulatorze, zaznacz **symulator** z listy rozwijanej obok listy **Rozpocznij debugowanie** przycisku w debugerze **standardowa** narzędzi.  
   
  ![Działających w symulatorze](../debugger/media/vsrun-f5-simulator.png "VSRUN_F5_Simulator")  
   
-##  <a name="BKMK_Choose_an_interaction_mode"></a> Wybierz tryb interakcji  
+## <a name="BKMK_Choose_an_interaction_mode"></a> Wybierz tryb interakcji  
  Możesz wybrać następujące tryby interakcji  
   
--   ![Tryb myszy](../debugger/media/simulator-mousemodebtn.png "SIMULATOR_MouseModeBtn") tryb myszy: Ustawia tryb interakcji gesty myszy. Gesty myszy obejmują kliknięć, kliknie dwukrotnie i drags.  
+- ![Tryb myszy](../debugger/media/simulator-mousemodebtn.png "SIMULATOR_MouseModeBtn") tryb myszy: Ustawia tryb interakcji gesty myszy. Gesty myszy obejmują kliknięć, kliknie dwukrotnie i drags.  
   
--   ![Przycisk emulacji dotykowej Start](../debugger/media/simulator-starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") emulacji dotykowej rozpoczęcia: Ustawia tryb interakcji na gesty pojedynczej linii papilarnych touch. Finger pojedynczego zdarzenia obejmują, naciskając, przeciągając i szybko przesuwając.  
+- ![Przycisk emulacji dotykowej Start](../debugger/media/simulator-starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") emulacji dotykowej rozpoczęcia: Ustawia tryb interakcji na gesty pojedynczej linii papilarnych touch. Finger pojedynczego zdarzenia obejmują, naciskając, przeciągając i szybko przesuwając.  
   
      ![Cel jednym palcem symulatora](../debugger/media/simulator-onefinger.png "SIMULATOR_OneFinger") ikona pojedynczy element docelowy wskazuje lokalizację zdarzenia w symulatorze. Umieść wskaźnik za pomocą myszy.  
   
@@ -54,35 +54,35 @@ Symulatorze programu Visual Studio dla aplikacji Windows Store to aplikacja komp
 ## <a name="pinch-and-zoom"></a>Ściśnięcie i powiększenia  
  Ustawia tryb interakcji do ściśnięcie i powiększania gestów dwóch palców.  
   
--   ![Cel finger symulatora dwóch](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
+- ![Cel finger symulatora dwóch](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
   
-     Ikonę docelową double wskazuje lokalizację, z dwoma palcami na ekranie urządzenia.  
+    - Ikonę docelową double wskazuje lokalizację, z dwoma palcami na ekranie urządzenia.  
   
-    -   Przesuń mysz, aby umieścić ikony na obiekcie na ekranie urządzenia.  
+    - Przesuń mysz, aby umieścić ikony na obiekcie na ekranie urządzenia.  
   
-    -   Obrót kółkiem myszy do tyłu lub do przodu, aby zmienić symulowane odległość między dwoma palcami przed ściśnięcie lub powiększenia.  
+    - Obrót kółkiem myszy do tyłu lub do przodu, aby zmienić symulowane odległość między dwoma palcami przed ściśnięcie lub powiększenia.  
   
--   -   ![Ściśnięcie, powiększania i obracania elementów docelowych](../debugger/media/simulator-twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
+- ![Ściśnięcie, powiększania i obracania elementów docelowych](../debugger/media/simulator-twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
   
-         Naciśnij przycisk z lewej strony i Obróć koło z poprzednimi wersjami (w stronę ty) aby powiększyć (uszczypnięcia).  
+    - Naciśnij przycisk z lewej strony i Obróć koło z poprzednimi wersjami (w stronę ty) aby powiększyć (uszczypnięcia).  
   
-    -   Naciśnij przycisk z lewej strony i obrót kółkiem myszy do przodu (od siebie), aby pomniejszyć (Powiększenie).  
+    - Naciśnij przycisk z lewej strony i obrót kółkiem myszy do przodu (od siebie), aby pomniejszyć (Powiększenie).  
   
 ## <a name="object-rotation"></a>Obracanie obiektu  
  **Obróć emulacji dotykowej** przycisk ustawia tryb interakcji gestów obrotu, używając dwóch palców.  
   
--   -   Przesuń mysz, aby umieścić ikony na obiekcie na ekranie urządzenia.  
+- Przesuń mysz, aby umieścić ikony na obiekcie na ekranie urządzenia.  
   
-    -   Obrót kółkiem myszy do tyłu lub do przodu, aby zmienić orientację symulowane dwóch palców przed obracania obiektu.  
+    - Obrót kółkiem myszy do tyłu lub do przodu, aby zmienić orientację symulowane dwóch palców przed obracania obiektu.  
   
--   -   Naciśnij przycisk z lewej strony i Obróć koło z poprzednimi wersjami (w stronę ty) aby obrócić obiekt przeciwnie do ruchu wskazówek zegara. Obracając kółkiem myszy jedną z ikon dwóch docelowej obraca się wokół drugiego, aby wskazać względne obrotu.  
+- Naciśnij przycisk z lewej strony i Obróć koło z poprzednimi wersjami (w stronę ty) aby obrócić obiekt przeciwnie do ruchu wskazówek zegara. Obracając kółkiem myszy jedną z ikon dwóch docelowej obraca się wokół drugiego, aby wskazać względne obrotu.  
   
-    -   Naciśnij przycisk z lewej strony i obrót kółkiem myszy do przodu (od siebie), aby obrócić obiekt z ruchem wskazówek zegara.  
+    - Naciśnij przycisk z lewej strony i obrót kółkiem myszy do przodu (od siebie), aby obrócić obiekt z ruchem wskazówek zegara.  
   
-##  <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Włączanie lub wyłączanie zawsze najważniejsze tryb  
+## <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Włączanie lub wyłączanie zawsze najważniejsze tryb  
  Możesz ustawić okno symulatora, aby być zawsze na wierzchu. **Oknie Przełącz** przycisku Włącza lub wyłącza **zawsze na wierzchu** tryb okno symulatora.  
   
-##  <a name="BKMK_Change_the_device_orientation"></a> Zmiana orientacji urządzenia  
+## <a name="BKMK_Change_the_device_orientation"></a> Zmiana orientacji urządzenia  
  Możesz przełączać orientacji urządzenia między pionowa i pozioma obracając symulatora w dowolnym kierunku o 90 stopni.  
   
 > [!NOTE]
@@ -91,7 +91,7 @@ Symulatorze programu Visual Studio dla aplikacji Windows Store to aplikacja komp
 > [!NOTE]
 >  Symulator jest obracania, tak aby jednej krawędzi symulator jest większy niż ekranu, na którym jest wyświetlany na, symulator jest automatycznie dopasowane do ekranu. Symulator nie jest rozmiar oryginalnego rozmiaru obrócenie go ponownie.  
   
-##  <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Zmienianie rozmiaru ekranu symulowanego i rozwiązania  
+## <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Zmienianie rozmiaru ekranu symulowanego i rozwiązania  
  Aby zmienić rozmiar ekranu symulowanego i rozwiązanie, wybierz **zmiana rozdzielczości** znajdujący się na palecie kolorów i wybierz z listy nowy rozmiar i rozwiązanie.  
   
  Rozmiar ekranu i rozwiązanie, które są wyświetlane jako *cali szerokość ekranu, piksel szerokość i wysokość pikseli*. Należy pamiętać, symulowane rozmiar ekranu i rozwiązania. Współrzędne lokalizacji w symulatorze są tłumaczone na współrzędne rozmiaru wybranego urządzenia i rozdzielczości.  
@@ -99,19 +99,19 @@ Symulatorze programu Visual Studio dla aplikacji Windows Store to aplikacja komp
 > [!NOTE]
 >  Może zapisywać skalowanych wersje obrazy mapy bitowej w swojej aplikacji i Windows będzie ładować prawidłowy obraz dla bieżącego skalowania. Aby uzyskać więcej informacji, zobacz [dynamiczny projekt 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). Jednakże jeśli zmienisz rozwiązania symulatora, tak że Windows wybierze inny obraz, aby dopasować rozwiązanie, należy zatrzymać i ponownie uruchomić sesję debugowania, aby wyświetlić nowy obraz.  
   
-##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Przechwycić zrzut ekranu aplikacji do przesłania do Windows Store  
+## <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Przechwycić zrzut ekranu aplikacji do przesłania do Windows Store  
  Podczas przesyłania aplikacji do Sklepu Windows, musi zawierać zrzuty ekranu aplikacji.  
   
 > [!NOTE]
 >  Zrzut ekranu zostanie zapisany w bieżącym rozdzielczości symulatora. Aby zmienić rozwiązanie, wybierz **zmiana rozdzielczości** przycisku.  
   
--   Aby utworzyć zrzuty ekranu aplikacji w symulatorze, wybierz **Przechwyć zrzut ekranu do Schowka** przycisku.  
+- Aby utworzyć zrzuty ekranu aplikacji w symulatorze, wybierz **Przechwyć zrzut ekranu do Schowka** przycisku.  
   
--   Do ustawiania lokalizacji, w którym znajdują się zrzuty ekranu, wybierz **ustawienia zrzutu ekranu** przycisk, a następnie wybierz lokalizację, z menu skrótów.  
+- Do ustawiania lokalizacji, w którym znajdują się zrzuty ekranu, wybierz **ustawienia zrzutu ekranu** przycisk, a następnie wybierz lokalizację, z menu skrótów.  
   
      ![Menu kontekstowe ustawienia zrzut ekranu](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
-##  <a name="BKMK_Simulate_network_connection_properties"></a> Symulowanie właściwości połączenia sieciowego  
+## <a name="BKMK_Simulate_network_connection_properties"></a> Symulowanie właściwości połączenia sieciowego  
  Możesz pomóc użytkownikom aplikacji zarządzania kosztami mierzonych połączeń sieciowych, utrzymywanie rozpoznawanie sieci połączenia kosztów ani danych plan zmian stanu i włączając aplikację do używania tych informacji, aby uniknąć ponoszenia dodatkowych kosztów dla mobilnych lub przekroczenie limit transferu określone dane. [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) interfejsów API pozwala reagować na [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) i [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) zdarzenia, które podpisują. Zobacz [Szybki Start: Zarządzanie ograniczenia kosztów sieci taryfowej](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Debugowanie lub testowanie kodu uwzględnieniem kosztów sieci, symulator może naśladują właściwości sieci, które są udostępniane za pośrednictwem [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) obiektu zwróconego przez [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)...  
@@ -148,7 +148,7 @@ Symulatorze programu Visual Studio dla aplikacji Windows Store to aplikacja komp
   
    [Porady: wyzwalanie wstrzymania, wznowienia i zdarzeń w aplikacjach Windows Store w tle](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
-##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Przejdź symulator za pomocą klawiatury  
+## <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Przejdź symulator za pomocą klawiatury  
  Możesz przejść na pasku narzędzi w symulatorze, naciskając klawisz **strzałkę CTRL + ALT + Strzałka w górę** można przełączać fokus z okna simulator do paska narzędzi symulatora. Użyj **Strzałka w górę** i **strzałkę w dół** przenoszenia między przyciskami na pasku narzędzi.  
   
  Symulator można zamknąć, naciskając klawisz **CTRL + ALT + F4**.  

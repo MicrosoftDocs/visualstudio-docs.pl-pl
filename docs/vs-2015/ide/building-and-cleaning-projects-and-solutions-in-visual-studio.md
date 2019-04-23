@@ -23,12 +23,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba3a7c26f56b923b9286a5e2f290502f2765e2b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0183e17da3eacad4fbcb3eed256396ab68249099
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753196"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054550"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Kompilowanie oraz oczyszczanie projektów i rozwiązań w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,28 +40,28 @@ Korzystając z procedur opisanych w tym temacie, można utworzyć, odbudować lu
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Do kompilacji, odbudować lub Wyczyść całe rozwiązanie
 
-1.  W **Eksploratora rozwiązań**, wybierz lub Otwórz rozwiązanie.
+1. W **Eksploratora rozwiązań**, wybierz lub Otwórz rozwiązanie.
 
-2.  Na pasku menu wybierz **kompilacji**, a następnie wybierz jedno z następujących poleceń:
+2. Na pasku menu wybierz **kompilacji**, a następnie wybierz jedno z następujących poleceń:
 
-    -   Wybierz **kompilacji** lub **Kompiluj rozwiązanie** skompilować tylko tych projektów, plików i składników, które zmieniły się od najnowszej kompilacji.
+    - Wybierz **kompilacji** lub **Kompiluj rozwiązanie** skompilować tylko tych projektów, plików i składników, które zmieniły się od najnowszej kompilacji.
 
         > [!NOTE]
         >  **Kompilacji** staje się polecenia **Kompiluj rozwiązanie** gdy rozwiązanie zawiera więcej niż jeden projekt.
 
-    -   Wybierz **Kompiluj rozwiązanie** do rozwiązania "Wyczyść", a następnie skompilowanie wszystkich plików projektu i składników.
+    - Wybierz **Kompiluj rozwiązanie** do rozwiązania "Wyczyść", a następnie skompilowanie wszystkich plików projektu i składników.
 
-    -   Wybierz **czyste rozwiązanie** można usunąć wszystkich plików pośrednich i wynikowych. Za pomocą tylko projektu, jak i składnika pliki po lewej nowe wystąpienia pośrednich i pliki wyjściowe może następnie być skompilowana.
+    - Wybierz **czyste rozwiązanie** można usunąć wszystkich plików pośrednich i wynikowych. Za pomocą tylko projektu, jak i składnika pliki po lewej nowe wystąpienia pośrednich i pliki wyjściowe może następnie być skompilowana.
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>Aby skompilować lub ponownie skompilować pojedynczego projektu
 
-1.  W **Eksploratora rozwiązań**, wybrać lub otworzyć projektu.
+1. W **Eksploratora rozwiązań**, wybrać lub otworzyć projektu.
 
-2.  Na pasku menu wybierz **kompilacji**, a następnie wybierz **kompilacji** _ProjectName_ lub **odbudować** _ProjectName_.
+2. Na pasku menu wybierz **kompilacji**, a następnie wybierz **kompilacji** _ProjectName_ lub **odbudować** _ProjectName_.
 
-    -   Wybierz **kompilacji** _ProjectName_ tworzenie tylko tych projektów składników, które zmieniły się od najnowszej kompilacji.
+    - Wybierz **kompilacji** _ProjectName_ tworzenie tylko tych projektów składników, które zmieniły się od najnowszej kompilacji.
 
-    -   Wybierz **odbudować** _ProjectName_ do projektu "Wyczyść", a następnie skompiluj pliki projektu i wszystkich składników projektów.
+    - Wybierz **odbudować** _ProjectName_ do projektu "Wyczyść", a następnie skompiluj pliki projektu i wszystkich składników projektów.
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Aby skompilować tylko projekt startowy i jego zależności
 
@@ -97,17 +97,17 @@ Korzystając z procedur opisanych w tym temacie, można utworzyć, odbudować lu
 
 ## <a name="to-compile-multiple-c-project-items"></a>Aby skompilować wiele elementów projektu C++
 
-1.  W **Eksploratora rozwiązań**, wybierz wiele plików, które mają może być skompilowany akcji, otwórz menu skrótów dla jednego z tych plików, a następnie wybierz **skompilować**.
+1. W **Eksploratora rozwiązań**, wybierz wiele plików, które mają może być skompilowany akcji, otwórz menu skrótów dla jednego z tych plików, a następnie wybierz **skompilować**.
 
      Jeśli pliki mają zależności, pliki zostanie skompilowany w kolejności wg zależności. Operacja kompilacji zakończy się niepowodzeniem, jeśli pliki wymagają prekompilowanego nagłówka, który nie jest dostępny podczas kompilacji. Operacja kompilacji używa bieżącej aktywnej konfiguracji rozwiązania.
 
 ## <a name="to-stop-a-build"></a>Aby zatrzymać kompilację
 
-1.  Wykonaj jedną z następujących czynności:
+1. Wykonaj jedną z następujących czynności:
 
-    -   Na pasku menu wybierz **kompilacji**, **anulować**.
+    - Na pasku menu wybierz **kompilacji**, **anulować**.
 
-    -   Wybierz kombinację klawiszy Ctrl + Break kluczy.
+    - Wybierz kombinację klawiszy Ctrl + Break kluczy.
 
 ## <a name="see-also"></a>Zobacz także
  [Instrukcje: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md) [uzyskiwanie dzienniki kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md) [kompilowanie i tworzenie](../ide/compiling-and-building-in-visual-studio.md) [opis konfiguracji kompilacji](../ide/understanding-build-configurations.md) [Debuguj i zwolnij konfiguracje projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [odwołanie kompilacji C/C++](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [przełączników wiersza polecenia Devenv](../ide/reference/devenv-command-line-switches.md) [rozwiązań i projektów](../ide/solutions-and-projects-in-visual-studio.md)

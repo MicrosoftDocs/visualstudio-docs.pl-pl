@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c5693a2edca0d81e21e73215e00f25aae939eb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c79dfa33af5e0e80db682f272c5673856dbbcd8d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603874"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044634"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Instrukcje: Użycie znaków zarezerwowanych XML w plikach projektu
 Podczas tworzenia plików projektu, może być konieczne użycie zarezerwowanych znaków XML w przypadku, na przykład w wartości właściwości lub wartości parametrów zadania. Jednak niektóre zastrzeżone znaki muszą zostać zastąpione nazwanych jednostek, dzięki czemu można przeanalizować pliku projektu.
@@ -34,7 +34,7 @@ Podczas tworzenia plików projektu, może być konieczne użycie zarezerwowanych
 
 #### <a name="to-use-double-quotes-in-a-project-file"></a>Aby używać cudzysłowów w pliku projektu
 
--   Zamień podwójnych cudzysłowów odpowiadającą nazwie podmiotu, &amp;quot;. Na przykład, aby umieścić podwójnego cudzysłowu wokół `EXEFile` listy elementów, wpisz:
+- Zamień podwójnych cudzysłowów odpowiadającą nazwie podmiotu, &amp;quot;. Na przykład, aby umieścić podwójnego cudzysłowu wokół `EXEFile` listy elementów, wpisz:
 
     ```xml
     <Message Text="The output file is &quot;@(EXEFile)&quot;."/>

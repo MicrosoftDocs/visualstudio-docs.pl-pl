@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 07212350ab95c3f9ee3d00fb2ac33768964555e8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8721d85c7fb3aba513a15fe276adbb2b17496351
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935605"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041211"
 ---
 # <a name="troubleshoot-code-coverage"></a>Rozwiązywanie problemów z pokryciem kodu
 
@@ -43,9 +43,9 @@ Rozpoznawanie&mdash;w Eksploratorze testów wybierz **Uruchom wszystkie** Aby sp
 
 Podczas modyfikowania i ponownego przeprowadzania testów poprzedni wynik pokrycia kodu może nadal być widoczny, włącznie z kolorowaniem kodu z tego starego uruchamiania.
 
-1.  Uruchom analizę pokrycia kodu.
+1. Uruchom analizę pokrycia kodu.
 
-2.  Upewnij się, czy wybrano najbardziej aktualnych wyników w **wyniki pokrycia kodu** okna.
+2. Upewnij się, czy wybrano najbardziej aktualnych wyników w **wyniki pokrycia kodu** okna.
 
 ### <a name="pdb-symbol-files-are-unavailable"></a>Pliki .pdb (symbol) są niedostępne
 
@@ -91,17 +91,17 @@ Wyjaśnienie&mdash;można uruchomić testy jednostkowe z niestandardowego *.runs
 
 Rozpoznawanie&mdash;istnieją dwa typy możliwych błędów:
 
--   **Błąd XML**
+- **Błąd XML**
 
      Otwórz *.runsettings* plik w edytorze programu Visual Studio XML. Poszukaj oznak błędów.
 
--   **Błąd w wyrażeniu regularnym**
+- **Błąd w wyrażeniu regularnym**
 
      Każdy ciąg znaków w pliku jest wyrażeniem regularnym. Przejrzyj każdy z nich błędy, a w szczególności zwróć uwagę na:
 
-    -   Niedopasowane nawiasy (...) lub nawiasy \\(...) \\). Jeśli chcesz dopasować nawiasy w ciągu wyszukiwania, musisz dodać przed nimi znak ucieczki. Na przykład, aby dopasować użycie funkcji: `.*MyFunction\(double\)`
+    - Niedopasowane nawiasy (...) lub nawiasy \\(...) \\). Jeśli chcesz dopasować nawiasy w ciągu wyszukiwania, musisz dodać przed nimi znak ucieczki. Na przykład, aby dopasować użycie funkcji: `.*MyFunction\(double\)`
 
-    -   Gwiazdka lub plus na początku wyrażenia. Aby dopasować dowolny ciąg znaków, należy użyć kropki poprzedzającej gwiazdkę: `.*`
+    - Gwiazdka lub plus na początku wyrażenia. Aby dopasować dowolny ciąg znaków, należy użyć kropki poprzedzającej gwiazdkę: `.*`
 
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Niestandardowy plik .runsettings z niepoprawnymi wykluczeniami
 

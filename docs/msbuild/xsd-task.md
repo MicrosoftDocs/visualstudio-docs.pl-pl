@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78fe110ee6abf70d091f9d7c1f67b56608f82c27
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 742b2b1660b5a1776edca0a4b64c56222cd1c163
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982990"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038267"
 ---
 # <a name="xsd-task"></a>XSD — Zadanie
 Opakowuje narzędzie definicji schematu XML (*xsd.exe*), które generuje pliki schematu lub klasa ze źródła.
@@ -36,13 +36,13 @@ Opakowuje narzędzie definicji schematu XML (*xsd.exe*), które generuje pliki s
 ## <a name="parameters"></a>Parametry
  W poniższej tabeli opisano parametry **XSD** zadania.
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      Opcjonalnie **ciąg** parametru.
 
      Lista opcji określonych w wierszu polecenia. Na przykład /\<opcja1 > /\<opcja2 > /\<opcja #>. Użyj tego parametru, aby określić opcje, które nie są reprezentowane przez inne **XSD** parametru zadania.
 
--   **GenerateFromSchema**
+- **GenerateFromSchema**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -50,11 +50,11 @@ Opakowuje narzędzie definicji schematu XML (*xsd.exe*), które generuje pliki s
 
      Określ jedną z następujących wartości, z których każdy odpowiada opcji XSD.
 
-    -   **classes** - **/classes**
+    - **classes** - **/classes**
 
-    -   **dataset** - **/dataset**
+    - **dataset** - **/dataset**
 
--   **Język**
+- **Język**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -62,25 +62,25 @@ Opakowuje narzędzie definicji schematu XML (*xsd.exe*), które generuje pliki s
 
      Wybierz z **CS** (C#, co jest ustawieniem domyślnym), **VB** (Visual Basic) lub **JS** (JScript). Można również określić w pełni kwalifikowaną nazwę klasy, która implementuje `System.CodeDom.Compiler.CodeDomProvider Class`.
 
--   **Namespace**
+- **Namespace**
 
      Opcjonalnie **ciąg** parametru.
 
      Określa przestrzeń nazw czasu wykonywania wygenerowany typów.
 
--   **Źródła**
+- **Źródła**
 
      Wymagane `ITaskItem[]` parametru.
 
      Określa tablicę elementów pliku źródłowego programu MSBuild, które mogą być używane i wyemitowane przez zadania.
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      Opcjonalnie **logiczna** parametru.
 
      Jeśli `true`, uniemożliwia wyświetlanie wiadomości praw autorskich i wersji, podczas uruchamiania zadania.
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      Opcjonalnie **ciąg** parametru.
 

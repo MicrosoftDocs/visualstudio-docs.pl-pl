@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1e3c479e7e5ae706121e0513d825d57d1cb540c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d1a1e161c0559013571a2ceaa775cfe428c1345c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939635"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060426"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Obliczone i niestandardowe właściwości przechowywania
 Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą być wyświetlane użytkownikowi na diagramie, a w Eksploratorze języka i są dostępne dla kodu programu. Jednak właściwości różnią się w taki sposób, że ich wartości są przechowywane.
@@ -33,30 +33,30 @@ Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą by
 
 #### <a name="to-define-a-calculated-or-custom-storage-property"></a>Aby zdefiniować obliczeniowe lub właściwość magazynu niestandardowego
 
-1.  W DslDefinition.dsl, wybierz właściwość domeny na diagramie lub w **Eksplorator DSL**.
+1. W DslDefinition.dsl, wybierz właściwość domeny na diagramie lub w **Eksplorator DSL**.
 
-2.  W **właściwości** oknie **rodzaj** pole **obliczona** lub **magazynu niestandardowego**.
+2. W **właściwości** oknie **rodzaj** pole **obliczona** lub **magazynu niestandardowego**.
 
      Upewnij się, czy też ustawienie jego **typu** odpowiednią.
 
-3.  Kliknij przycisk **Przekształć wszystkie szablony** na pasku narzędzi **Eksploratora rozwiązań**.
+3. Kliknij przycisk **Przekształć wszystkie szablony** na pasku narzędzi **Eksploratora rozwiązań**.
 
-4.  Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+4. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
      Zostanie zgłoszony następujący komunikat o błędzie: "*YourClass* nie zawiera definicji Get*YourProperty*."
 
-5.  Kliknij dwukrotnie komunikat o błędzie.
+5. Kliknij dwukrotnie komunikat o błędzie.
 
      Zostanie otwarty Dsl\GeneratedCode\DomainClasses.CS lub DomainRelationships.cs. Powyżej wywołanie metody wyróżnione komentarz wyświetli monit o podanie implementację Get*YourProperty*().
 
     > [!NOTE]
     >  Ten plik jest generowany na podstawie DslDefinition.dsl. Jeśli możesz edytować ten plik, zmiany zostaną utracone przy następnym kliknięciu **Przekształć wszystkie szablony**. Zamiast tego dodać wymaganej metody w oddzielnym pliku.
 
-6.  Utwórz lub Otwórz plik klasy w oddzielnym folderze, na przykład atrybut CustomCode\\*YourDomainClass*. cs.
+6. Utwórz lub Otwórz plik klasy w oddzielnym folderze, na przykład atrybut CustomCode\\*YourDomainClass*. cs.
 
      Upewnij się, że przestrzeń nazw jest taki sam jak w wygenerowanym kodzie.
 
-7.  W pliku klasy Napisz częściową implementację klasy domeny. W tej klasy, napisz definicji w celu znalezienia brakujących `Get` metodę, która przypomina poniższy przykład:
+7. W pliku klasy Napisz częściową implementację klasy domeny. W tej klasy, napisz definicji w celu znalezienia brakujących `Get` metodę, która przypomina poniższy przykład:
 
     ```
     namespace Company.FamilyTree
@@ -66,7 +66,7 @@ Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą by
     }  }
     ```
 
-8.  Jeśli ustawisz **rodzaj** do **magazynu niestandardowego**, również będzie musiał podać `Set` metody. Na przykład:
+8. Jeśli ustawisz **rodzaj** do **magazynu niestandardowego**, również będzie musiał podać `Set` metody. Na przykład:
 
     ```
     void SetAgeValue(int value)
@@ -81,7 +81,7 @@ Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą by
 
 10. Testowanie właściwości. Upewnij się, że próbujesz **Cofnij** i **wykonaj ponownie**.
 
-##  <a name="setters"></a> Transakcje i niestandardowych metod ustawiających.
+## <a name="setters"></a> Transakcje i niestandardowych metod ustawiających.
  W metodzie zestaw właściwości niestandardowych magazynowania nie masz do otwarcia transakcji, ponieważ metoda jest zazwyczaj wywoływana w aktywnej transakcji.
 
  Jednak metody Set może być również wywoływane, jeśli użytkownik wywoła cofania i ponawiania lub jeśli transakcja jest wycofywana. Gdy <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> ma wartość true, metoda zestaw powinny zachowywać się w następujący sposób:

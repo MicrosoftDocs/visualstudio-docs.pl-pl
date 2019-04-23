@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8bcb8aadc2fb2a2f836fccde56e283b38cbc213d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 85fb100e09dd61e836404ecf98f8f7292ff2ee86
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649241"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065185"
 ---
 # <a name="property-functions"></a>Funkcje właściwości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,45 +27,45 @@ W wersjach programu .NET Framework 4 i 4.5 funkcji właściwości może służy�
   
  **W tym temacie:**  
   
--   [Składnia funkcji właściwości](#BKMK_Syntax)  
+- [Składnia funkcji właściwości](#BKMK_Syntax)  
   
-    -   [Funkcje właściwości ciągu](#BKMK_String)  
+    - [Funkcje właściwości ciągu](#BKMK_String)  
   
-    -   [Funkcje statyczne właściwości](#BKMK_Static)  
+    - [Funkcje statyczne właściwości](#BKMK_Static)  
   
-    -   [Wywołanie metody wystąpienia właściwości statyczne](#BKMK_InstanceMethods)  
+    - [Wywołanie metody wystąpienia właściwości statyczne](#BKMK_InstanceMethods)  
   
-    -   [Funkcje właściwości programu MSBuild](#BKMK_PropertyFunctions)  
+    - [Funkcje właściwości programu MSBuild](#BKMK_PropertyFunctions)  
   
--   [Funkcje zagnieżdżonych właściwości](#BKMK_Nested)  
+- [Funkcje zagnieżdżonych właściwości](#BKMK_Nested)  
   
--   [MSBuild DoesTaskHostExist](#BKMK_DoesTaskHostExist)  
+- [MSBuild DoesTaskHostExist](#BKMK_DoesTaskHostExist)  
   
--   [MSBuild GetDirectoryNameOfFileAbove](#BKMK_GetDirectoryNameOfFileAbove)  
+- [MSBuild GetDirectoryNameOfFileAbove](#BKMK_GetDirectoryNameOfFileAbove)  
   
--   [MSBuild GetRegistryValue](#BKMK_GetRegistryValue)  
+- [MSBuild GetRegistryValue](#BKMK_GetRegistryValue)  
   
--   [MSBuild GetRegistryValueFromView](#BKMK_GetRegistryValueFromView)  
+- [MSBuild GetRegistryValueFromView](#BKMK_GetRegistryValueFromView)  
   
--   [MSBuild MakeRelative](#BKMK_MakeRelative)  
+- [MSBuild MakeRelative](#BKMK_MakeRelative)  
   
--   [MSBuild ValueOrDefault](#BKMK_ValueOrDefault)  
+- [MSBuild ValueOrDefault](#BKMK_ValueOrDefault)  
   
-##  <a name="BKMK_Syntax"></a> Składnia funkcji właściwości  
+## <a name="BKMK_Syntax"></a> Składnia funkcji właściwości  
  Oto trzy rodzaje funkcji właściwości; Każda funkcja ma inną składnię:  
   
--   Funkcje właściwości ciągów (tekstowych wystąpień)  
+- Funkcje właściwości ciągów (tekstowych wystąpień)  
   
--   Funkcje statyczne właściwości  
+- Funkcje statyczne właściwości  
   
--   Funkcje właściwości programu MSBuild  
+- Funkcje właściwości programu MSBuild  
   
-###  <a name="BKMK_String"></a> Funkcje właściwości ciągu  
+### <a name="BKMK_String"></a> Funkcje właściwości ciągu  
  Wszystkie wartości właściwości kompilacji są tylko ciągi. Za pomocą metod ciągów (tekstowych wystąpień) do działania na dowolnych wartościach właściwości. Na przykład można wyodrębnić nazwy dysku (pierwsze trzy znaki) z właściwości kompilacji, który reprezentuje pełną ścieżkę przy użyciu tego kodu:  
   
  `$(ProjectOutputFolder.Substring(0,3))`  
   
-###  <a name="BKMK_Static"></a> Funkcje statyczne właściwości  
+### <a name="BKMK_Static"></a> Funkcje statyczne właściwości  
  W skrypcie kompilacji można uzyskać dostęp do właściwości i metod statycznych wielu klas systemowych. Można pobrać wartości właściwości statycznej, należy użyć następującej składni, gdzie *klasy* jest nazwą klasa systemu i *właściwość* jest nazwą właściwości.  
   
  `$([Class]::Property)`  
@@ -166,7 +166,7 @@ W wersjach programu .NET Framework 4 i 4.5 funkcji właściwości może służy�
   
 - System.IO.File::ReadAllText  
   
-###  <a name="BKMK_InstanceMethods"></a> Wywołanie metody wystąpienia właściwości statyczne  
+### <a name="BKMK_InstanceMethods"></a> Wywołanie metody wystąpienia właściwości statyczne  
  Jeśli uzyskujesz dostęp do właściwości statycznej, która zwraca wystąpienie obiektu, można wywołać metody wystąpienia tego obiektu. Wywołania metody wystąpienia, należy użyć następującej składni, gdzie *klasy* jest nazwą klasa systemu *właściwości* jest nazwą właściwości, *metoda* nazywa się metody i *(parametry)* jest lista parametrów dla metody:  
   
  `$([Class]::Property.Method(Parameters))`  
@@ -177,7 +177,7 @@ W wersjach programu .NET Framework 4 i 4.5 funkcji właściwości może służy�
   
  `<Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>`  
   
-###  <a name="BKMK_PropertyFunctions"></a> Funkcje właściwości programu MSBuild  
+### <a name="BKMK_PropertyFunctions"></a> Funkcje właściwości programu MSBuild  
  Kilka metod statycznych w kompilacji możliwy jest zapewnienie operacje arytmetyczne, bitowe logicznej i obsługi znaków ucieczki. Możesz uzyskać dostęp do tych metod przy użyciu następującej składni, gdzie *metoda* jest nazwą metody i *parametry* jest lista parametrów dla metody.  
   
  `$([MSBuild]::Method(Parameters))`  
@@ -207,7 +207,7 @@ W wersjach programu .NET Framework 4 i 4.5 funkcji właściwości może służy�
 |int BitwiseXor (int, int pierwszego, drugiego)|Wykonania bitowej `XOR` pierwszego i drugiego (pierwszy ^ drugiego).|  
 |int BitwiseNot(int first)|Wykonaj bitowej `NOT` (~ pierwszy).|  
   
-##  <a name="BKMK_Nested"></a> Funkcje zagnieżdżonych właściwości  
+## <a name="BKMK_Nested"></a> Funkcje zagnieżdżonych właściwości  
  Można łączyć funkcje właściwości formularza bardziej złożone funkcje, co ilustruje poniższy przykład.  
   
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`  
@@ -216,7 +216,7 @@ W wersjach programu .NET Framework 4 i 4.5 funkcji właściwości może służy�
   
  Metadane mogą również zostać wyświetlony w funkcjach zagnieżdżonych właściwości. Aby uzyskać więcej informacji, zobacz [przetwarzania wsadowego](../msbuild/msbuild-batching.md).  
   
-##  <a name="BKMK_DoesTaskHostExist"></a> MSBuild DoesTaskHostExist  
+## <a name="BKMK_DoesTaskHostExist"></a> MSBuild DoesTaskHostExist  
  `DoesTaskHostExist` Właściwości w programie MSBuild:: gettotalsize() zwróciło czy hosta zadań jest obecnie zainstalowany dla określonych wartości środowiska uruchomieniowego i architektura.  
   
  Funkcja ta właściwość ma następującą składnię:  
@@ -225,7 +225,7 @@ W wersjach programu .NET Framework 4 i 4.5 funkcji właściwości może służy�
 $[MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture)  
 ```  
   
-##  <a name="BKMK_GetDirectoryNameOfFileAbove"></a> MSBuild GetDirectoryNameOfFileAbove  
+## <a name="BKMK_GetDirectoryNameOfFileAbove"></a> MSBuild GetDirectoryNameOfFileAbove  
  MSBuild `GetDirectoryNameOfFileAbove` funkcji właściwości szuka plików w katalogach powyżej bieżącego katalogu w ścieżce.  
   
  Funkcja ta właściwość ma następującą składnię:  
@@ -240,7 +240,7 @@ $[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))\EnlistmentInfo.props" Condition=" '$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))' != '' " />  
 ```  
   
-##  <a name="BKMK_GetRegistryValue"></a> MSBuild GetRegistryValue  
+## <a name="BKMK_GetRegistryValue"></a> MSBuild GetRegistryValue  
  MSBuild `GetRegistryValue` właściwość:: gettotalsize() zwróciło wartość klucza rejestru. Ta funkcja przyjmuje dwa argumenty, nazwę klucza i nazwę wartości i zwraca wartość z rejestru. Jeśli nie określisz nazwy wartości jest zwracana wartość domyślna.  
   
  W poniższych przykładach pokazano, jak ta funkcja jest używana:  
@@ -252,7 +252,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
   
 ```  
   
-##  <a name="BKMK_GetRegistryValueFromView"></a> MSBuild GetRegistryValueFromView  
+## <a name="BKMK_GetRegistryValueFromView"></a> MSBuild GetRegistryValueFromView  
  MSBuild `GetRegistryValueFromView` właściwość funkcja pobiera dane rejestru systemu podanej w kluczu rejestru, wartości oraz jeden lub więcej uporządkowane widoków rejestru. Klucz i wartość są przeszukiwane w każdym widoku rejestru w kolejności dopóki nie zostały znalezione.  
   
  Składnia dla tej funkcji właściwości jest następująca:  
@@ -277,7 +277,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
   
  pobiera dane SLRuntimeInstallPath klucza ReferenceAssemblies, wyszukiwanie pierwsze, w widoku 64-bitowego rejestru, a następnie w widoku rejestrów 32-bitowych.  
   
-##  <a name="BKMK_MakeRelative"></a> MSBuild MakeRelative  
+## <a name="BKMK_MakeRelative"></a> MSBuild MakeRelative  
  MSBuild `MakeRelative` właściwość funkcja zwraca ścieżkę względną ścieżkę drugiego względem ścieżki pierwszego. Każda ścieżka może być pliku lub folderu.  
   
  Funkcja ta właściwość ma następującą składnię:  
@@ -306,7 +306,7 @@ Output:
 -->  
 ```  
   
-##  <a name="BKMK_ValueOrDefault"></a> MSBuild ValueOrDefault  
+## <a name="BKMK_ValueOrDefault"></a> MSBuild ValueOrDefault  
  MSBuild `ValueOrDefault` właściwość funkcja zwraca pierwszy argument, chyba że jest to wartość null lub jest pusty. Jeśli pierwszy argument ma wartość null lub pusty, funkcja zwraca wartość drugiego argumentu.  
   
  Poniższy przykład pokazuje, jak ta funkcja jest używana.  

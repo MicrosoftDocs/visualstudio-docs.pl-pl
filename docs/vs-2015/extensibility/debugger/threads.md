@@ -11,23 +11,23 @@ ms.assetid: 2243d24a-c3d2-41d1-abbb-6db21a2db9ee
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c59ef3bdbbd96db82c8e865379907d95227628ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 028ad25495ba01d9763c8bec3bbb9c4480d72ff8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791037"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054589"
 ---
 # <a name="threads"></a>Wątki
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Pod względem architektury debugera **wątku**:  
   
--   Jest podstawową jednostką obliczeń. Wątek sekwencyjnie wykonuje instrukcji w ramach pojedynczego wywołania stosu, przechodzenia z jednego kodu kontekstu do następnego.  
+- Jest podstawową jednostką obliczeń. Wątek sekwencyjnie wykonuje instrukcji w ramach pojedynczego wywołania stosu, przechodzenia z jednego kodu kontekstu do następnego.  
   
--   Można zidentyfikować sam, jak i program go jest uruchomiona i można o nazwie, wstrzymana, a wznowione. Wątek również wyliczyć jego ramek stosu skojarzone oraz w niektórych warunkach mogą zostać przeniesione do innej ramki stosu. Podany kontekst ramkę stosu, wątek może zwrócić skojarzony wątek logiczne ewentualne. Wątek ma właściwości, takie jak liczba Wstrzymaj, mogą być wyświetlane w oknie wątki w IDE.  
+- Można zidentyfikować sam, jak i program go jest uruchomiona i można o nazwie, wstrzymana, a wznowione. Wątek również wyliczyć jego ramek stosu skojarzone oraz w niektórych warunkach mogą zostać przeniesione do innej ramki stosu. Podany kontekst ramkę stosu, wątek może zwrócić skojarzony wątek logiczne ewentualne. Wątek ma właściwości, takie jak liczba Wstrzymaj, mogą być wyświetlane w oknie wątki w IDE.  
   
--   Jest reprezentowany przez [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) interfejsu, zazwyczaj tworzone przez aparat debugowania (DE) lub maszyny wirtualnej w wyniku wykonywania programu.  
+- Jest reprezentowany przez [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) interfejsu, zazwyczaj tworzone przez aparat debugowania (DE) lub maszyny wirtualnej w wyniku wykonywania programu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Programy](../../extensibility/debugger/programs.md)   

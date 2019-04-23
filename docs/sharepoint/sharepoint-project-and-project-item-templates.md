@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6250577a5a1b6793001b1d4b732c3b3101690aad
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: b457bf6491a9b82fc981c66722f4c6e19a517065
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867877"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040341"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Projekt SharePoint oraz szablony elementów projektu
   W poniższych sekcjach opisano dostępnych projektów programu SharePoint i elementu projektu, szablonów i sposobu ich używania.
@@ -41,17 +41,17 @@ ms.locfileid: "57867877"
 ### <a name="sharepoint-2010-project"></a>Projekt programu SharePoint 2010
  Zawartość *projekt programu SharePoint 2010* znajdują się w każdym szablonie projektu programu SharePoint. Projekt programu SharePoint 2010 zawiera:
 
--   Plik projektu.
+- Plik projektu.
 
--   Strony właściwości projektu.
+- Strony właściwości projektu.
 
--   A **odwołania** folder wyświetlania listy wszystkich odwołań do zestawów w projekcie.
+- A **odwołania** folder wyświetlania listy wszystkich odwołań do zestawów w projekcie.
 
--   A **funkcji** folder, który zawiera *.feature* plik konfiguracji, używany do wdrażania funkcji na serwerze programu SharePoint.
+- A **funkcji** folder, który zawiera *.feature* plik konfiguracji, używany do wdrażania funkcji na serwerze programu SharePoint.
 
--   A **pakietu** folder, który zawiera *Package.package* plik, używany do wdrażania rozwiązania programu SharePoint.
+- A **pakietu** folder, który zawiera *Package.package* plik, używany do wdrażania rozwiązania programu SharePoint.
 
--   Plik key.snk (klucz silnej nazwy), który jest używany do podpisywania zestawu z mocną nazwą dla podnoszą poziom zabezpieczeń.
+- Plik key.snk (klucz silnej nazwy), który jest używany do podpisywania zestawu z mocną nazwą dla podnoszą poziom zabezpieczeń.
 
 ### <a name="sharepoint-2010-silverlight-web-part"></a>Składnik web part programu SharePoint 2010 Silverlight
  *Składnik Web Part Silverlight programu SharePoint 2010* projektów umożliwiają tworzenie części sieci web programu SharePoint do wyświetlania aplikacji Silverlight. Podczas tworzenia tego projektu, można określić, czy należy dodać do niej nową aplikację Silverlight lub odwołaj się do istniejącego. Aby uzyskać więcej informacji, zobacz [utworzyć składniki web Part programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) i [instruktażu: Tworzenie składnika web part programu Silverlight, na który wyświetlającego dane OData dla programu SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md).

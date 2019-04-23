@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 719ced495580bd8ec16eec7e3f422e3ae1f1ccc3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4232a057c97d3d457a60d97fa000090c18428f66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643590"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050509"
 ---
 # <a name="detect-system-requirements"></a>Wykrywanie wymagań systemowych
 Pakietu VSPackage nie może działać, jeśli nie zainstalowano programu Visual Studio. Gdy Instalator systemu Microsoft Windows umożliwia zarządzanie instalacjami Twojego pakietu VSPackage, można skonfigurować Instalatora aby wykryć, czy jest zainstalowany program Visual Studio. Można również skonfigurować ją do sprawdzania systemu pod kątem innych wymagań, na przykład konkretnej wersji systemu Windows lub określoną ilość pamięci RAM.
@@ -24,11 +24,11 @@ Pakietu VSPackage nie może działać, jeśli nie zainstalowano programu Visual 
 ## <a name="detect-visual-studio-editions"></a>Wykryć wersji programu Visual Studio
  Aby ustalić, czy jest zainstalowana wersja programu Visual Studio, upewnij się, że wartość **zainstalować** klucz rejestru jest *(REG_DWORD) 1* w odpowiednim folderze, wymienione w poniższej tabeli. Zwróć uwagę, że hierarchia wersje programu Visual Studio:
 
-1.  Enterprise
+1. Enterprise
 
-2.  Professional Edition
+2. Professional Edition
 
-3.  Społeczność
+3. Społeczność
 
 Nowsza wersja jest zainstalowana, klucze rejestru, w przypadku tej wersji są dodawane również jak w przypadku starszych wersji. Oznacza to, jeśli jest zainstalowany w wersji Enterprise, **zainstalować** jest ustawiona na *1* dla przedsiębiorstw, a także wersje Professional i społeczności. W związku z tym należy sprawdzić tylko w przypadku najnowszej wersji, których potrzebujesz.
 

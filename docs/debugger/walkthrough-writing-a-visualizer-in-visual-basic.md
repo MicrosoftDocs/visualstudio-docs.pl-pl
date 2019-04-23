@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d30e789d0ae3fa3e717be9739b94439a7d6a31a2
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: be3fb721fd058f127b4d361c769d4cdfdc1e4b92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584548"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050892"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Przewodnik: Pisanie wizualizatora w języku Visual Basic
 W tym przewodniku pokazano, jak pisanie prostego wizualizatora przy użyciu [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Wizualizator, która zostanie utworzona w tym przewodniku Wyświetla zawartość ciągu przy użyciu Windows Forms okno komunikatu. Ten Wizualizator prostego ciągu jest prosty przykład, aby pokazać, jak utworzyć wizualizatorów dla innych typów danych bardziej odpowiednie do swoich projektów.
@@ -106,15 +106,15 @@ Wizualizator kodu muszą być umieszczone w pliku DLL, który będzie odczytywan
 
 ### <a name="to-add-systemwindowsforms"></a>Aby dodać przestrzeń nazw System.Windows.Forms
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania**, a następnie w menu skrótów kliknij **Dodaj odwołanie**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania**, a następnie w menu skrótów kliknij **Dodaj odwołanie**.
 
 2. W **Dodaj odwołanie** dialogowym **Przeglądaj** zaznacz **Przeglądaj**i Znajdź System.Windows.Forms.DLL.
 
     Można znaleźć biblioteki DLL w *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
 
-3.  Kliknij przycisk **OK**.
+3. Kliknij przycisk **OK**.
 
-4.  W DebuggerSide.cs, dodaj następującą instrukcję, aby `Imports` instrukcji:
+4. W DebuggerSide.cs, dodaj następującą instrukcję, aby `Imports` instrukcji:
 
     ```vb
     Imports System.Windows.Forms
@@ -125,7 +125,7 @@ Wizualizator kodu muszą być umieszczone w pliku DLL, który będzie odczytywan
 
 ### <a name="to-show-the-visualizer-output-in-a-dialog-box"></a>Aby wyświetlić dane wyjściowe wizualizatora w oknie dialogowym
 
-1.  W `Show` metody, Dodaj następujący wiersz kodu:
+1. W `Show` metody, Dodaj następujący wiersz kodu:
 
     ```vb
     MessageBox.Show(objectProvider.GetObject().ToString())
@@ -133,20 +133,20 @@ Wizualizator kodu muszą być umieszczone w pliku DLL, który będzie odczytywan
 
      Ten przykładowy kod nie ma obsługi błędów. Powinien zawierać obsługę błędów w rzeczywistych Wizualizator lub dowolny inny rodzaj aplikacji.
 
-2.  Na **kompilacji** menu, kliknij przycisk **kompilacji MyFirstVisualizer**. Projekt powinien być kompilowany pomyślnie. Usuń wszelkie błędy kompilacji, aby kontynuować.
+2. Na **kompilacji** menu, kliknij przycisk **kompilacji MyFirstVisualizer**. Projekt powinien być kompilowany pomyślnie. Usuń wszelkie błędy kompilacji, aby kontynuować.
 
 ## <a name="add-the-necessary-attribute"></a>Dodaj atrybut niezbędne
  To już koniec kodu po stronie debugera. Istnieje jeszcze jeden krok, jednak: atrybut, który informuje po stronie debugowanego obiektu, która kolekcja klas składa się z wizualizatora.
 
 ### <a name="to-add-the-debugee-side-code"></a>Aby dodać kod po stronie debugee
 
-1.  Dodaj następujący kod atrybutu do DebuggerSide.vb, po `Imports` instrukcji lecz przed `namespace MyFirstVisualizer`:
+1. Dodaj następujący kod atrybutu do DebuggerSide.vb, po `Imports` instrukcji lecz przed `namespace MyFirstVisualizer`:
 
     ```vb
     <Assembly: System.Diagnostics.DebuggerVisualizer(GetType(MyFirstVisualizer.DebuggerSide), GetType(VisualizerObjectSource), Target:=GetType(System.String), Description:="My First Visualizer")>
     ```
 
-2.  Na **kompilacji** menu, kliknij przycisk **kompilacji MyFirstVisualizer**. Projekt powinien być kompilowany pomyślnie. Usuń wszelkie błędy kompilacji, aby kontynuować.
+2. Na **kompilacji** menu, kliknij przycisk **kompilacji MyFirstVisualizer**. Projekt powinien być kompilowany pomyślnie. Usuń wszelkie błędy kompilacji, aby kontynuować.
 
 ## <a name="create-a-test-harness"></a>Utwórz kontroler testu
  W tym momencie Twojego pierwszego Wizualizator jest zakończony. Jeśli kroki zostały wykonane poprawnie, można utworzyć wizualizatora i zainstalować go do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Przed zainstalowaniem wizualizatora do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], jednak należy go przetestować, aby upewnić się, że działa poprawnie. Teraz możesz utworzyć kontroler testów do uruchomienia wizualizatora bez konieczności instalowania go do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
@@ -183,17 +183,17 @@ Wizualizator kodu muszą być umieszczone w pliku DLL, który będzie odczytywan
 
 ### <a name="to-add-necessary-references-to-mytestconsole"></a>Aby dodać niezbędne odwołania do MyTestConsole
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **MyTestConsole**, a następnie w menu skrótów kliknij **Dodaj odwołanie**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **MyTestConsole**, a następnie w menu skrótów kliknij **Dodaj odwołanie**.
 
-2.  W **Dodaj odwołanie** dialogowym **Przeglądaj** Microsoft.VisualStudio.DebuggerVisualizers kliknij pozycję.
+2. W **Dodaj odwołanie** dialogowym **Przeglądaj** Microsoft.VisualStudio.DebuggerVisualizers kliknij pozycję.
 
-3.  Kliknij przycisk **OK**.
+3. Kliknij przycisk **OK**.
 
-4.  Kliknij prawym przyciskiem myszy **MyTestConsole**, a następnie kliknij przycisk **Dodaj odwołanie** ponownie.
+4. Kliknij prawym przyciskiem myszy **MyTestConsole**, a następnie kliknij przycisk **Dodaj odwołanie** ponownie.
 
-5.  W **Dodaj odwołanie** okno dialogowe, kliknij przycisk **projektów** , a następnie wybierz pozycję MyFirstVisualizer.
+5. W **Dodaj odwołanie** okno dialogowe, kliknij przycisk **projektów** , a następnie wybierz pozycję MyFirstVisualizer.
 
-6.  Kliknij przycisk **OK**.
+6. Kliknij przycisk **OK**.
 
 ## <a name="finish-your-test-harness-and-test-your-visualizer"></a>Zakończenie swoje kontroler testów i przetestowanie usługi wizualizatora
  Teraz dodasz kod, aby zakończyć kontroler testów.

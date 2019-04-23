@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 520843ee596e67de5d4e804e90302f931a1d3b57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 17d18a485e57b896aaf3f40b0cfdab63e10dce2c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803407"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062233"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>Właściwości typów w diagramach klas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ Na diagramie klas UML *typu* jest klasą, interfejsem lub wyliczenia.
 > [!NOTE]
 >  Ten temat dotyczy właściwościom typów w diagramach przypadków UML. Więcej informacji znajduje się w następujących tematach:  
   
--   [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)  
+- [Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)  
   
--   [Diagramy klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md)  
+- [Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)  
   
--   [Właściwości atrybutów w diagramach klas UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+- [Właściwości atrybutów w diagramach klas UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [Właściwości operacji w diagramach klas UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+- [Właściwości operacji w diagramach klas UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
--   [Właściwości skojarzeń w diagramach klas UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
+- [Właściwości skojarzeń w diagramach klas UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
   
 ## <a name="properties"></a>Właściwości  
  Są to właściwości klasą, interfejsem lub wyliczenia.  
@@ -61,4 +61,4 @@ Na diagramie klas UML *typu* jest klasą, interfejsem lub wyliczenia.
  [Właściwości atrybutów w diagramach przypadków UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [Właściwości operacji w diagramach przypadków UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [Właściwości skojarzeń w diagramach przypadków UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)   
- [Diagramy klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md)
+ [Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: b7fdf45fedece028a0bf5d62ccd60951754b9064
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: deabd34896b327f7cbbb35c7af75f5810dcfbf17
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803565"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040549"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Instrukcje: Utworzyć i uruchomić nienadzorowaną instalację programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ Można uruchomić aplikację instalacji dla [!INCLUDE[vsprvs](../includes/vsprvs
 
 #### <a name="to-create-a-network-image"></a>Aby utworzyć obraz sieciowy
 
-1.  Utwórz folder na serwerze (na przykład *dysku*: \IDEinstall\\).
+1. Utwórz folder na serwerze (na przykład *dysku*: \IDEinstall\\).
 
-2.  Pobierz Instalatora z [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015), a następnie uruchom *produktu*.exe/Layout *dysku*: \IDEinstall\
+2. Pobierz Instalatora z [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015), a następnie uruchom *produktu*.exe/Layout *dysku*: \IDEinstall\
 
-3.  Udostępnij folder IDEinstall w sieci, a następnie ustaw odpowiednie ustawienia zabezpieczeń.
+3. Udostępnij folder IDEinstall w sieci, a następnie ustaw odpowiednie ustawienia zabezpieczeń.
 
      Ścieżka sieciowa aplikacji instalacyjnej dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] przypomina \\ \\ *ServerName*\IDEinstall\\*produktu*.exe.
 
@@ -75,11 +75,11 @@ Można uruchomić aplikację instalacji dla [!INCLUDE[vsprvs](../includes/vsprvs
 
 #### <a name="to-create-an-unattended-installation-of-visual-studio"></a>Aby utworzyć instalację nienadzorowaną programu Visual Studio
 
-1.  W *dysku*: \IDEinstall\AdminDeployment.xml plik, zmień wartość atrybutu NoWeb na element dostosowania pakietu z "domyślne" na "tak", co ilustruje poniższy przykład:
+1. W *dysku*: \IDEinstall\AdminDeployment.xml plik, zmień wartość atrybutu NoWeb na element dostosowania pakietu z "domyślne" na "tak", co ilustruje poniższy przykład:
 
      Zmiana `<BundleCustomizations TargetDir="default" NoWeb="default"/>` do `<BundleCustomizations TargetDir="default" NoWeb="yes"/>`
 
-2.  Zmień atrybut selectableitemcustomization, zależnie od potrzeb dla składników opcjonalnych, a następnie zapisz plik.
+2. Zmień atrybut selectableitemcustomization, zależnie od potrzeb dla składników opcjonalnych, a następnie zapisz plik.
 
 ## <a name="running-unattended-setup"></a>Uruchamianie instalacji nienadzorowanej
  Instalacja nienadzorowana można uruchomić albo przez automatyczne uruchomienie aplikacji instalacyjnej dla programu Visual Studio na komputerach klienckich, pozwalając użytkownikom na uruchamianie aplikacji samodzielnie przy użyciu ustawień zdefiniowanych przez użytkownika.
@@ -92,9 +92,9 @@ Można uruchomić aplikację instalacji dla [!INCLUDE[vsprvs](../includes/vsprvs
 
 #### <a name="to-enable-clients-to-manually-install-visual-studio-with-pre-defined-settings"></a>Aby umożliwić klientom ręczną instalację programu Visual Studio ze wstępnie zdefiniowanymi ustawieniami
 
-1.  Skopiuj dostosowany plik AdminDeployment.xml do udziału sieciowego, który jest tylko do odczytu (na przykład \\ \\ *ServerName*\IDEinstall\packages\AdminDeployment.xml).
+1. Skopiuj dostosowany plik AdminDeployment.xml do udziału sieciowego, który jest tylko do odczytu (na przykład \\ \\ *ServerName*\IDEinstall\packages\AdminDeployment.xml).
 
-2.  Pozwalają użytkownikom na instalowanie z tego folderu wspólnego.
+2. Pozwalają użytkownikom na instalowanie z tego folderu wspólnego.
 
 ## <a name="maintaining-an-installation"></a>Obsługiwanie instalacji
  Jeśli otworzysz **Panelu sterowania** i ponownie uruchom instalację aplikacji, można zmodyfikować funkcje programu Visual Studio, odinstalować języki programowania, a także naprawić lub odinstalować program Visual Studio.
@@ -104,9 +104,9 @@ Można uruchomić aplikację instalacji dla [!INCLUDE[vsprvs](../includes/vsprvs
 
 #### <a name="to-maintain-an-installation-on-a-client-computer"></a>Aby prowadzić instalację na komputerze klienckim
 
--   Otwórz **Panelu sterowania**, a następnie wybierz **programy i funkcje**.
+- Otwórz **Panelu sterowania**, a następnie wybierz **programy i funkcje**.
 
--   Wybierz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], a następnie wybierz **zmiany**.
+- Wybierz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], a następnie wybierz **zmiany**.
 
 #### <a name="to-change-admindeployment-settings-on-a-client-computer-after-visual-studio-has-been-installed"></a>Aby zmienić ustawienia AdminDeployment na komputerze klienckim po zainstalowaniu programu Visual Studio
 
@@ -134,44 +134,43 @@ Można uruchomić aplikację instalacji dla [!INCLUDE[vsprvs](../includes/vsprvs
     ![Przykład okno dialogowe właściwości w przypadku instalacji nienadzorowanej programu Visual Studio](../install/media/unattended-install-properties-dialog-box.PNG "instalacji nienadzorowanej — okno dialogowe właściwości")
 
 3. ###### <a name="if-the-product-version-is-140247200-or-140247201-follow-these-steps"></a>W przypadku 14.0.24720.0 lub 14.0.24720.1 wersję produktu, wykonaj następujące kroki:
-4. 1.  Uruchom *Product.exe* /Layout *dysków:* \IDEinstall na komputerze, który ma dostęp do Internetu. (Na przykład uruchomić: `vs_enterprise.exe /Layout d:\IDEinstall`.)
+   1. Uruchom *Product.exe* /Layout *dysków:* \IDEinstall na komputerze, który ma dostęp do Internetu. (Na przykład uruchomić: `vs_enterprise.exe /Layout d:\IDEinstall`.)
 
-   2.  Po zakończeniu / Layout, skopiuj nowy obraz do nowej lokalizacji.
+   2. Po zakończeniu / Layout, skopiuj nowy obraz do nowej lokalizacji.
 
-   3.  Utworzyć i zmodyfikować plik AdminDeployment.xml. Aby to zrobić, należy użyć `/CreateAdminFile`  *\<lokalizacja pliku >* parametru wiersza polecenia. (Aby uzyskać więcej informacji, zobacz sekcję "Wdrażanie Visual Studio w trybie nienadzorowanym" tego artykułu).
+   3. Utworzyć i zmodyfikować plik AdminDeployment.xml. Aby to zrobić, należy użyć `/CreateAdminFile`  *\<lokalizacja pliku >* parametru wiersza polecenia. (Aby uzyskać więcej informacji, zobacz sekcję "Wdrażanie Visual Studio w trybie nienadzorowanym" tego artykułu).
 
-   4.  Na komputerze klienckim, uruchom następujące polecenie, aby zaktualizować kopię programu Visual Studio, który został wcześniej zainstalowany: "\\\\*serwer1*\IDEinstall_Updated_1\\*Product.exe*  parametrem/adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart ".
+   4. Na komputerze klienckim, uruchom następujące polecenie, aby zaktualizować kopię programu Visual Studio, który został wcześniej zainstalowany: "\\\\*serwer1*\IDEinstall_Updated_1\\*Product.exe*  parametrem/adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart ".
 
         Na przykład uruchomić: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`
 5. ###### <a name="for-other-product-version-values-follow-these-steps"></a>Dla innych wartości wersji produktu wykonaj następujące kroki:
-6. 1.  Uruchom *Product.exe* /Layout *dysków:* \IDEinstall na komputerze, który ma dostęp do Internetu. (Na przykład uruchomić `vs-enterprise.exe /Layout d:\IDEinstall`.)
+   1. Uruchom *Product.exe* /Layout *dysków:* \IDEinstall na komputerze, który ma dostęp do Internetu. (Na przykład uruchomić `vs-enterprise.exe /Layout d:\IDEinstall`.)
 
-   2.  Po zakończeniu / Layout, skopiuj nowy obraz do nowej lokalizacji. (Lub, możesz zamiast tego zastąpić istniejący obraz sieci.)
+   2. Po zakończeniu / Layout, skopiuj nowy obraz do nowej lokalizacji. (Lub, możesz zamiast tego zastąpić istniejący obraz sieci.)
 
-   3.  Utwórz, a następnie zmodyfikować plik AdminDeployment.xml. Aby to zrobić, należy użyć `/CreateAdminFile`  *\<lokalizacja pliku >* parametru wiersza polecenia. (Aby uzyskać więcej informacji, zobacz sekcję "Wdrażanie Visual Studio w trybie nienadzorowanym" tego artykułu).
+   3. Utwórz, a następnie zmodyfikować plik AdminDeployment.xml. Aby to zrobić, należy użyć `/CreateAdminFile`  *\<lokalizacja pliku >* parametru wiersza polecenia. (Aby uzyskać więcej informacji, zobacz sekcję "Wdrażanie Visual Studio w trybie nienadzorowanym" tego artykułu).
 
-   4.  Jeśli kopiujesz obrazu do nowej lokalizacji na komputerze klienckim, aby zaktualizować kopię programu Visual Studio, który został wcześniej zainstalowany, musi uruchom następujące polecenie: "\\\\*serwer1*\IDEinstall_Updated_1\\ *Product.exe* parametrem/adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart ".
+   4. Jeśli kopiujesz obrazu do nowej lokalizacji na komputerze klienckim, aby zaktualizować kopię programu Visual Studio, który został wcześniej zainstalowany, musi uruchom następujące polecenie: "\\\\*serwer1*\IDEinstall_Updated_1\\ *Product.exe* parametrem/adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart ".
 
         Na przykład uruchomić: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`
 
-   5.  Możesz zastąpić istniejący obraz sieci, można uruchomić polecenie, zgodnie z opisem w poprzednim kroku, czy można wykonać następujące czynności:
+   5. Możesz zastąpić istniejący obraz sieci, można uruchomić polecenie, zgodnie z opisem w poprzednim kroku, czy można wykonać następujące czynności:
+       1. Otwórz **Panelu sterowania**, a następnie wybierz **programy i funkcje**.
 
-   6.  1.  Otwórz **Panelu sterowania**, a następnie wybierz **programy i funkcje**.
+       2. Wybierz **programu Visual Studio**, a następnie wybierz **zmiany**.
 
-       2.  Wybierz **programu Visual Studio**, a następnie wybierz **zmiany**.
+       3. Po uruchomieniu programu Visual Studio w trybie konserwacji, kliknij przycisk **Modyfikuj**.
 
-       3.  Po uruchomieniu programu Visual Studio w trybie konserwacji, kliknij przycisk **Modyfikuj**.
-
-       4.  Najnowsza aktualizacja powinna zostać wyświetlona na stronie funkcji. Wybierz funkcje, które chcesz zainstalować, kliknij przycisk **dalej**, a następnie kliknij przycisk **aktualizacji** do zainstalowania aktualizacji i nowych funkcji.
+       4. Najnowsza aktualizacja powinna zostać wyświetlona na stronie funkcji. Wybierz funkcje, które chcesz zainstalować, kliknij przycisk **dalej**, a następnie kliknij przycisk **aktualizacji** do zainstalowania aktualizacji i nowych funkcji.
 
 ## <a name="registering-the-product"></a>Rejestrowanie produktu
  Po zakończeniu instalacji możesz zarejestrować swoją kopię [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] z poziomu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 #### <a name="to-register"></a>Aby zarejestrować
 
-1.  Otwórz **pomocy** menu, a następnie wybierz **Zarejestruj produkt**.
+1. Otwórz **pomocy** menu, a następnie wybierz **Zarejestruj produkt**.
 
-2.  Wprowadź klucz produktu.
+2. Wprowadź klucz produktu.
 
      (Aby uzyskać więcej informacji, zobacz [jak: Znajdź klucz produktu programu Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) i [jak: Automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) tematy.)
 

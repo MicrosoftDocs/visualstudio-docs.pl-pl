@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: db95754fd27820e0686f65a22393f51510467fb6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6f5c285e71179c5dd59fad0357dbf71ee4b32f9d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631188"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049191"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>Instrukcje: Wykonywanie polecenia SharePoint
   Jeśli chcesz użyć modelu obiektów serwera w rozszerzenia narzędzi programu SharePoint, należy utworzyć niestandardowy *polecenia SharePoint* wywołać interfejs API. Po zdefiniowaniu polecenia i wdrażania go przy użyciu rozszerzenia narzędzi programu SharePoint, rozszerzenia można wykonać polecenie do wywołania w modelu obiektów serwera SharePoint. Można wykonać polecenia, użyj jednej z metod ExecuteCommand <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> obiektu.
@@ -26,21 +26,21 @@ ms.locfileid: "56631188"
 
 ### <a name="to-execute-a-sharepoint-command"></a>Wykonywanie polecenia SharePoint
 
-1.  Rozszerzenia narzędzi programu SharePoint, na uzyskanie <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> obiektu. Sposób uzyskasz <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> obiektu zależy od typu rozszerzenia tworzenia:
+1. Rozszerzenia narzędzi programu SharePoint, na uzyskanie <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> obiektu. Sposób uzyskasz <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> obiektu zależy od typu rozszerzenia tworzenia:
 
-    -   W rozszerzeniach systemu projektu programu SharePoint, należy użyć <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.SharePointConnection%2A> właściwości.
+    - W rozszerzeniach systemu projektu programu SharePoint, należy użyć <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.SharePointConnection%2A> właściwości.
 
          Aby uzyskać więcej informacji na temat rozszerzeń systemu projektu, zobacz [rozszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
 
-    -   W rozszerzeniu **połączeń SharePoint** w węźle **Eksploratora serwera**, użyj <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext.SharePointConnection%2A> właściwości. Aby uzyskać <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext> obiektu, należy użyć <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.Context%2A> właściwości.
+    - W rozszerzeniu **połączeń SharePoint** w węźle **Eksploratora serwera**, użyj <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext.SharePointConnection%2A> właściwości. Aby uzyskać <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext> obiektu, należy użyć <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.Context%2A> właściwości.
 
          Aby uzyskać więcej informacji na temat **Eksploratora serwera** rozszerzenia, zobacz [rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
-    -   W kodzie, który nie jest częścią rozszerzenia narzędzi programu SharePoint, takich jak Kreator szablonu projektu, należy użyć <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A> właściwości.
+    - W kodzie, który nie jest częścią rozszerzenia narzędzi programu SharePoint, takich jak Kreator szablonu projektu, należy użyć <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A> właściwości.
 
          Aby uzyskać więcej informacji na temat pobierania z usługi projektu, zobacz [korzystania z usługi projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md).
 
-2.  Wywołanie jednej z metod ExecuteCommand <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> obiektu. Przekaż nazwę polecenia, które chcesz wykonać, aby pierwszy argument metody ExecuteCommand. Jeśli polecenie ma parametru niestandardowego, przekaż ten parametru drugiego argumentu metody ExecuteCommand.
+2. Wywołanie jednej z metod ExecuteCommand <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> obiektu. Przekaż nazwę polecenia, które chcesz wykonać, aby pierwszy argument metody ExecuteCommand. Jeśli polecenie ma parametru niestandardowego, przekaż ten parametru drugiego argumentu metody ExecuteCommand.
 
      Ma innego przeciążenia ExecuteCommand dla sygnatur obsługiwanych poleceń. W poniższej tabeli wymieniono obsługiwane podpisów i który przeciążenia do użycia dla każdego podpisu.
 
@@ -61,11 +61,11 @@ ms.locfileid: "56631188"
 
  Należy zauważyć następujące szczegółowe informacje o wywołaniu <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A> metody:
 
--   Pierwszy parametr określa polecenie, które ma zostać wywołana. Ten ciąg pasuje do wartości, który jest przekazywany do <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> w definicji polecenia.
+- Pierwszy parametr określa polecenie, które ma zostać wywołana. Ten ciąg pasuje do wartości, który jest przekazywany do <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> w definicji polecenia.
 
--   Drugi parametr jest wartością, który chcesz przekazać do parametru niestandardowego drugiego polecenia. W tym przypadku jest pełna ścieżka *.wsp* pliku, który jest uaktualniany do witryny programu SharePoint.
+- Drugi parametr jest wartością, który chcesz przekazać do parametru niestandardowego drugiego polecenia. W tym przypadku jest pełna ścieżka *.wsp* pliku, który jest uaktualniany do witryny programu SharePoint.
 
--   Kod nie zostały spełnione niejawny <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> do polecenia. Ten parametr jest przekazywany do polecenia automatycznie podczas wywoływania polecenia rozszerzenia systemu projektu programu SharePoint lub rozszerzenie **połączeń SharePoint** w węźle **Eksploratora serwera**. W przypadku innych typów rozwiązań, takich jak Kreator szablonu projektu, który implementuje <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejsu, ten parametr jest **null**.
+- Kod nie zostały spełnione niejawny <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> do polecenia. Ten parametr jest przekazywany do polecenia automatycznie podczas wywoływania polecenia rozszerzenia systemu projektu programu SharePoint lub rozszerzenie **połączeń SharePoint** w węźle **Eksploratora serwera**. W przypadku innych typów rozwiązań, takich jak Kreator szablonu projektu, który implementuje <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejsu, ten parametr jest **null**.
 
 ## <a name="compile-the-code"></a>Skompilować kod
  W tym przykładzie wymaga to dodania odwołania do zestawu Microsoft.VisualStudio.SharePoint.

@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dcd465ebef68a6627935b00438f6c218938eb3de
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2ec9dcc6f5458e33e5ea215d65aacd48c622f111
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629472"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052003"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architektura dostosowywania na poziomie dokumentu
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] zawiera projekty do tworzenia dostosowań poziomie dokumentu dla programu Microsoft Office Word i Microsoft Office Excel. W tym temacie opisano następujące aspekty dostosowań poziomu dokumentu:
@@ -39,7 +39,7 @@ ms.locfileid: "56629472"
 
   Aby uzyskać ogólne informacje dotyczące tworzenia dostosowań poziomie dokumentu, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Word](../vsto/getting-started-programming-document-level-customizations-for-word.md), i [wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).
 
-##  <a name="UnderstandingCustomizations"></a> Omówienie dostosowywania
+## <a name="UnderstandingCustomizations"></a> Omówienie dostosowywania
  Korzystając z narzędzia Office developer tools w programie Visual Studio do tworzenia dostosowań poziomie dokumentu, możesz utworzyć zestawu kodu zarządzanego, który jest skojarzony z określonym dokumentem. Dokument lub skoroszyt z połączonego zestawu jest nazywany ma rozszerzenia kodu zarządzanego. Aby uzyskać więcej informacji, zobacz [projektowania i tworzenia rozwiązań dla pakietu Office](../vsto/designing-and-creating-office-solutions.md).
 
  Gdy użytkownik otwiera dokument, zestaw jest ładowany przez aplikację Microsoft Office. Po załadowaniu zestawu dostosowań mogą reagować na zdarzenia, gdy dokument jest otwarty. Dostosowania można również wywołać modelu obiektów automatyzacji i rozszerzania aplikacji, gdy dokument jest otwarty i może używać dowolnej klasy w [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].
@@ -57,18 +57,18 @@ ms.locfileid: "56629472"
 #### <a name="design-time"></a>Czas projektowania
  Środowisko czasu projektowania obejmuje następujące kroki:
 
-1.  Deweloper tworzy projekt poziomu dokumentu w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Projekt zawiera dokument i zestawu, który uruchamia się w dokumencie. Dokument może już istnieć (utworzone przez projektanta) lub można utworzyć nowy dokument wraz z projektu.
+1. Deweloper tworzy projekt poziomu dokumentu w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Projekt zawiera dokument i zestawu, który uruchamia się w dokumencie. Dokument może już istnieć (utworzone przez projektanta) lub można utworzyć nowy dokument wraz z projektu.
 
-2.  Projektant — albo Deweloper, który tworzy projekt, czy ktoś — tworzy końcowy wygląd i działanie dokumentu dla użytkownika końcowego.
+2. Projektant — albo Deweloper, który tworzy projekt, czy ktoś — tworzy końcowy wygląd i działanie dokumentu dla użytkownika końcowego.
 
 #### <a name="runtime"></a>Środowisko uruchomieniowe
  Środowisko wykonawcze — obejmuje następujące kroki:
 
-1.  Użytkownik końcowy otworzy dokument lub skoroszyt, który zawiera rozszerzenia kodu zarządzanego.
+1. Użytkownik końcowy otworzy dokument lub skoroszyt, który zawiera rozszerzenia kodu zarządzanego.
 
-2.  Dokument lub skoroszyt ładuje skompilowanym zestawie.
+2. Dokument lub skoroszyt ładuje skompilowanym zestawie.
 
-3.  Zestaw reaguje na zdarzenia, ponieważ użytkownik pracuje w dokumencie lub skoroszycie.
+3. Zestaw reaguje na zdarzenia, ponieważ użytkownik pracuje w dokumencie lub skoroszycie.
 
 #### <a name="developer-and-end-user-perspective-compared"></a>Perspektywa programistów i użytkowników końcowych w porównaniu
  Ponieważ Deweloper pracuje się głównie w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]i użytkownika końcowego działa w programie Word lub Excel, istnieją dwa sposoby zrozumienia dostosowań na poziomie dokumentu.
@@ -97,7 +97,7 @@ ms.locfileid: "56629472"
 
   Chcąc użytkownikom końcowym, użyj opcji dostosowania w tych formatach plików, tworzenie i wdrażanie dostosowania, które korzysta z jednego z obsługiwanych formatów plików określone w powyższej tabeli. Po zainstalowaniu dostosowania, użytkownicy końcowi można zapisać dokument w dokumencie programu Word XML (*\*xml*) format lub dokument programu Word 2003 XML (*\*xml*) format, a Dostosowywanie będą w dalszym ciągu działać zgodnie z oczekiwaniami.
 
-##  <a name="Components"></a> Składniki dostosowania
+## <a name="Components"></a> Składniki dostosowania
  Główne składniki dostosowania są dokumentu i zestawu. Oprócz tych składników istnieje kilka elementów, które odgrywa ważną rolę w sposób aplikacje Microsoft Office wykrycie i załadowanie dostosowań.
 
 ### <a name="deployment-manifest-and-application-manifest"></a>Manifesty wdrożenia i manifest aplikacji
@@ -108,7 +108,7 @@ ms.locfileid: "56629472"
 
  Aby uzyskać więcej informacji, zobacz [Visual Studio tools dla pakietu Office runtime ― omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
-##  <a name="HowCustomizationsWork"></a> Jak działają dostosowania przy użyciu aplikacji Microsoft Office
+## <a name="HowCustomizationsWork"></a> Jak działają dostosowania przy użyciu aplikacji Microsoft Office
  Gdy użytkownik otwiera dokument, który jest częścią dostosowywania programu Microsoft Office, aplikacja korzysta z pliku manifestu wdrożenia, połączonego z dokumentu do lokalizowania i ładowania najbardziej aktualną wersję zestawu dostosowywania. Lokalizacja manifestu wdrażania jest przechowywana w niestandardową właściwość dokumentu o nazwie **AssemblyLocation**. Ciąg, który identyfikuje tej lokalizacji są wstawiane do właściwości, podczas kompilowania rozwiązania.
 
  Wskazuje manifestu wdrożenia do manifestu aplikacji, które następnie wskazuje do najbardziej bieżącego zestawu. Aby uzyskać więcej informacji, zobacz [stosowania i wdrażania manifestów w rozwiązaniach pakietu Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
@@ -123,21 +123,21 @@ ms.locfileid: "56629472"
 ### <a name="loading-process"></a>Proces ładowania
  Gdy użytkownik otwiera dokument, który jest częścią rozwiązania Microsoft Office, wykonywane są następujące kroki.
 
-1.  Aplikacja Microsoft Office sprawdza właściwości niestandardowego dokumentu, aby sprawdzić, czy rozszerzenia kodu zarządzanego, powiązany z dokumentem. Aby uzyskać więcej informacji, zobacz [właściwości niestandardowego dokumentu ― omówienie](../vsto/custom-document-properties-overview.md).
+1. Aplikacja Microsoft Office sprawdza właściwości niestandardowego dokumentu, aby sprawdzić, czy rozszerzenia kodu zarządzanego, powiązany z dokumentem. Aby uzyskać więcej informacji, zobacz [właściwości niestandardowego dokumentu ― omówienie](../vsto/custom-document-properties-overview.md).
 
-2.  W przypadku rozszerzenia kodu zarządzanego, ładowania aplikacji *VSTOEE.dll*, których ładunki *VSTOLoader.dll*. Są to niezarządzanych bibliotek DLL, które są składnikami programu ładującego dla Visual Studio 2010 Tools dla pakietu Office runtime. Aby uzyskać więcej informacji, zobacz [Visual Studio Tools dla pakietu Office runtime ― omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+2. W przypadku rozszerzenia kodu zarządzanego, ładowania aplikacji *VSTOEE.dll*, których ładunki *VSTOLoader.dll*. Są to niezarządzanych bibliotek DLL, które są składnikami programu ładującego dla Visual Studio 2010 Tools dla pakietu Office runtime. Aby uzyskać więcej informacji, zobacz [Visual Studio Tools dla pakietu Office runtime ― omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
-3.  *VSTOLoader.dll* ładuje [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] i uruchomienie zarządzanego część [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+3. *VSTOLoader.dll* ładuje [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] i uruchomienie zarządzanego część [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
-4.  Jeśli dokument zostanie otwarty z lokalizacji innych niż komputer lokalny, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] sprawdza, czy lokalizacja dokumentu w **zaufane lokalizacje** listy w **ustawienia Centrum zaufania** dla działania konkretnej aplikacji pakietu Office. Jeśli lokalizację dokumentu nie jest w zaufanej lokalizacji, dostosowanie nie jest zaufany, a proces ładowania zatrzymuje się na nim.
+4. Jeśli dokument zostanie otwarty z lokalizacji innych niż komputer lokalny, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] sprawdza, czy lokalizacja dokumentu w **zaufane lokalizacje** listy w **ustawienia Centrum zaufania** dla działania konkretnej aplikacji pakietu Office. Jeśli lokalizację dokumentu nie jest w zaufanej lokalizacji, dostosowanie nie jest zaufany, a proces ładowania zatrzymuje się na nim.
 
-5.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Instaluje rozwiązanie, jeśli nie został jeszcze zainstalowany, pobiera najbardziej aktualną manifestów aplikacji i wdrożenia i wykonuje szereg kontroli zabezpieczeń. Aby uzyskać więcej informacji, zobacz [rozwiązań Secure Office](../vsto/securing-office-solutions.md).
+5. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Instaluje rozwiązanie, jeśli nie został jeszcze zainstalowany, pobiera najbardziej aktualną manifestów aplikacji i wdrożenia i wykonuje szereg kontroli zabezpieczeń. Aby uzyskać więcej informacji, zobacz [rozwiązań Secure Office](../vsto/securing-office-solutions.md).
 
-6.  W przypadku dostosowania zaufane do uruchamiania, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] używa manifest wdrożenia i manifest aplikacji, aby sprawdzać dostępność aktualizacji zestawu. Jeśli dostępna jest nowa wersja zestawu, środowisko uruchomieniowe pobiera nową wersję zestawu do [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] pamięci podręcznej na komputerze klienckim. Aby uzyskać więcej informacji, zobacz [wdrożyć rozwiązanie Office](../vsto/deploying-an-office-solution.md).
+6. W przypadku dostosowania zaufane do uruchamiania, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] używa manifest wdrożenia i manifest aplikacji, aby sprawdzać dostępność aktualizacji zestawu. Jeśli dostępna jest nowa wersja zestawu, środowisko uruchomieniowe pobiera nową wersję zestawu do [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] pamięci podręcznej na komputerze klienckim. Aby uzyskać więcej informacji, zobacz [wdrożyć rozwiązanie Office](../vsto/deploying-an-office-solution.md).
 
-7.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Tworzy nową domenę aplikacji, w którym można załadować zestawu dostosowywania.
+7. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Tworzy nową domenę aplikacji, w którym można załadować zestawu dostosowywania.
 
-8.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Ładuje zestaw dostosowania do domeny aplikacji.
+8. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Ładuje zestaw dostosowania do domeny aplikacji.
 
 9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Wywołania **uruchamiania** programu obsługi zdarzeń w swoim zestawie dostosowywania. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md)
 

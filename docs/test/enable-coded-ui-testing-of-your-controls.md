@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c1a2d2a60b6875cf4257c0b5bfb3e09c27865c17
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6f4ec35c79bd71351d830428cce39b41b7308cf7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943392"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040488"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Włącz testowanie kodowanego interfejsu użytkownika dla kontrolek
 
@@ -37,7 +37,7 @@ Konstruktor kodowanego testu interfejsu użytkownika przechwytuje informacji na 
 
  ![CUIT&#95;Accessible](../test/media/cuit_accessible.png)
 
-1.  Implementowanie klasy, która pochodzi od klasy <xref:System.Windows.Forms.Control.ControlAccessibleObject>i zastępowania <xref:System.Windows.Forms.Control.AccessibilityObject%2A> właściwości, aby zwrócić obiekt klasy.
+1. Implementowanie klasy, która pochodzi od klasy <xref:System.Windows.Forms.Control.ControlAccessibleObject>i zastępowania <xref:System.Windows.Forms.Control.AccessibilityObject%2A> właściwości, aby zwrócić obiekt klasy.
 
     ```csharp
     public partial class ChartControl : UserControl
@@ -62,11 +62,11 @@ Konstruktor kodowanego testu interfejsu użytkownika przechwytuje informacji na 
     }
     ```
 
-2.  Zastąp dostępnego obiektu <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> i <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> właściwości i metody.
+2. Zastąp dostępnego obiektu <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> i <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> właściwości i metody.
 
-3.  Implementowanie innego obiektu ułatwień dostępu dla kontrolki podrzędnej i przesłonić kontrolki podrzędnej <xref:System.Windows.Forms.Control.AccessibilityObject%2A> właściwość zwracaj obiekt w ułatwienia dostępu.
+3. Implementowanie innego obiektu ułatwień dostępu dla kontrolki podrzędnej i przesłonić kontrolki podrzędnej <xref:System.Windows.Forms.Control.AccessibilityObject%2A> właściwość zwracaj obiekt w ułatwienia dostępu.
 
-4.  Zastąp <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A>, i <xref:System.Windows.Forms.AccessibleObject.Select%2A> właściwości i metody dla obiektu ułatwień dostępu kontrolki podrzędnej.
+4. Zastąp <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A>, i <xref:System.Windows.Forms.AccessibleObject.Select%2A> właściwości i metody dla obiektu ułatwień dostępu kontrolki podrzędnej.
 
 > [!NOTE]
 > W tym temacie, który rozpoczyna się od przykładu ułatwień dostępu w <xref:System.Windows.Forms.AccessibleObject>i następnie opiera się na tym przykładzie pozostały procedur. Jeśli chcesz utworzyć działającą wersją próbki ułatwień dostępu, tworzenie aplikacji konsolowej, a następnie Zastąp kod w *Program.cs* z przykładowym kodem. Dodaj odwołania do ułatwień dostępu, System.Drawing i przestrzeń nazw System.Windows.Forms. Zmiana **Osadź typy współdziałania** ułatwień dostępu do **False** , aby wyeliminować ostrzeżenia kompilacji. Można zmienić typu danych wyjściowych projektu z **aplikację Konsolową** do **aplikacji Windows** okno konsoli nie będą wyświetlane po uruchomieniu aplikacji.
@@ -182,19 +182,19 @@ Właściwości filtru akcji i dostawcy są implementowane w pakiecie rozszerzeni
 
 ### <a name="to-debug-your-property-provider-or-action-filter"></a>Aby debugować filtru akcji lub dostawcy właściwości
 
-1.  Tworzenie wersji debugowania kopii pakietu rozszerzenia *.dll* i *.pdb* plików *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
+1. Tworzenie wersji debugowania kopii pakietu rozszerzenia *.dll* i *.pdb* plików *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
-2.  Uruchom aplikację (nie w debugerze).
+2. Uruchom aplikację (nie w debugerze).
 
-3.  Uruchamianie kodowanego testu interfejsu użytkownika.
+3. Uruchamianie kodowanego testu interfejsu użytkownika.
 
      `codedUITestBuilder.exe  /standalone`
 
-4.  Dołącz debuger do procesu codedUITestBuilder.
+4. Dołącz debuger do procesu codedUITestBuilder.
 
-5.  Ustaw punkty przerwania w kodzie.
+5. Ustaw punkty przerwania w kodzie.
 
-6.  Konstruktor kodowanego testu interfejsu użytkownika tworzenia potwierdza wykonywania dostawcy właściwości i Rejestruj akcje do wykonywania filtrów akcji.
+6. Konstruktor kodowanego testu interfejsu użytkownika tworzenia potwierdza wykonywania dostawcy właściwości i Rejestruj akcje do wykonywania filtrów akcji.
 
 ## <a name="see-also"></a>Zobacz także
 

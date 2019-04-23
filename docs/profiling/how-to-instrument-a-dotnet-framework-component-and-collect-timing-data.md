@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 141c1a045a5d1f668fdedf9477dfa2b7ceffbd56
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a19c30e043a663e7cb7b6a910f67278a1d3172bf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664193"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046907"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Instrukcje: Instrumentowanie składnika autonomicznego .NET Framework i zbieranie danych o chronometrażu przy użyciu profilera z wiersza polecenia
 W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia narzędzi Profilujących do Instrumentacji składnik .NET Framework, takich jak. *plik exe* lub. *Biblioteka DLL* pliku oraz w celu zbierania danych o chronometrażu.
@@ -70,7 +70,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
 
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych
 
--   Następujące pary opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
+- Następujące pary opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
 
     |Opcja|Opis|
     |------------|-----------------|
@@ -83,13 +83,13 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
 
 #### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania
 
-1.  Zamknij aplikację docelową.
+1. Zamknij aplikację docelową.
 
-2.  Zamknij program profilujący. Wpisz:
+2. Zamknij program profilujący. Wpisz:
 
      **Narzędzia VSPerfCmd/shutdown**
 
-3.  (Opcjonalnie) Wyczyść zmienne środowiskowe profilowania. Wpisz:
+3. (Opcjonalnie) Wyczyść zmienne środowiskowe profilowania. Wpisz:
 
      **VSPerfClrEnv / off**
 

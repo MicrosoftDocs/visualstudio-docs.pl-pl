@@ -8,26 +8,26 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 168c86ace7fde9a2d354b4e9089b386f5cd876c6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2e4ecd650b931fe5d79ca4617022fba8577fbd39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970052"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052301"
 ---
 # <a name="step-8-customize-the-quiz"></a>Krok 8. Dostosowywanie kwizu
 W ostatniej części tego samouczka dowiesz się o kilka sposobów na dostosowywanie kwizu i rozszerzają co już znasz. Na przykład zastanów się, jak program stwarza problemy dzielenia losowych, w których odpowiedź jest nigdy nie ułamek. Aby dowiedzieć się więcej, należy wyłączyć `timeLabel` kontrolować różne kolory i przypisz quizu wskazówką.
 
 ## <a name="to-customize-the-quiz"></a>Dostosowywanie kwizu
 
--   Kiedy tylko pięć sekund pozostają w quizie, Włącz **timeLabel** kontrolować red przez ustawienie jego **BackColor** właściwości (`timeLabel.BackColor = Color.Red;`). Resetuj kolor po umieszczeniu quizu.
+- Kiedy tylko pięć sekund pozostają w quizie, Włącz **timeLabel** kontrolować red przez ustawienie jego **BackColor** właściwości (`timeLabel.BackColor = Color.Red;`). Resetuj kolor po umieszczeniu quizu.
 
--   Daj quizu wskazówkę, odtwarzanie dźwięku w momencie poprawną odpowiedź do <xref:System.Windows.Forms.NumericUpDown> kontroli. (Należy napisać program obsługi zdarzeń dla każdego formantu <xref:System.Windows.Forms.NumericUpDown.ValueChanged> zdarzenie, które są generowane w każdym przypadku, gdy osoba wypełniająca quiz zmienia wartość kontrolki.)
+- Daj quizu wskazówkę, odtwarzanie dźwięku w momencie poprawną odpowiedź do <xref:System.Windows.Forms.NumericUpDown> kontroli. (Należy napisać program obsługi zdarzeń dla każdego formantu <xref:System.Windows.Forms.NumericUpDown.ValueChanged> zdarzenie, które są generowane w każdym przypadku, gdy osoba wypełniająca quiz zmienia wartość kontrolki.)
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
--   Aby pobrać pełną wersję quizu, zobacz [przykładowy samouczek quiz matematyczny pełną](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+- Aby pobrać pełną wersję quizu, zobacz [przykładowy samouczek quiz matematyczny pełną](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
--   Aby przejść do następnego samouczka, zobacz [Tutorial 3: Utwórz pasujący obiekt typu gier](../ide/tutorial-3-create-a-matching-game.md).
+- Aby przejść do następnego samouczka, zobacz [Tutorial 3: Utwórz pasujący obiekt typu gier](../ide/tutorial-3-create-a-matching-game.md).
 
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [kroku 7: Dodawanie problemów mnożenia i dzielenia](../ide/step-7-add-multiplication-and-division-problems.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [kroku 7: Dodawanie problemów mnożenia i dzielenia](../ide/step-7-add-multiplication-and-division-problems.md).

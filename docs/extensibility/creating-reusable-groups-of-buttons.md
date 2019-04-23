@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89b4f55e5e5de564db6cb7a1217b79a15283fb93
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe0d5c3dd55380587f8f5f1c6477ee8c53bf1156
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712323"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051664"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>Tworzenie grup do ponownego użycia przycisków
 Grupy poleceń jest kolekcją poleceń, które są zawsze wyświetlane razem na menu lub paska narzędzi. Wszystkie grupy poleceń, które może być ponownie wykorzystana, przypisując go do innego elementu nadrzędnego menu w sekcji CommandPlacements *vsct* pliku.
@@ -26,13 +26,13 @@ Grupy poleceń jest kolekcją poleceń, które są zawsze wyświetlane razem na 
 
 ## <a name="to-create-a-reusable-group-of-buttons"></a>Aby utworzyć grupę wielokrotnego użytku przycisków
 
-1.  Utwórz projekt VSIX, o nazwie `ReusableButtons`. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Utwórz projekt VSIX, o nazwie `ReusableButtons`. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Po otwarciu projektu, Dodaj polecenie niestandardowe szablon elementu o nazwie **ReusableCommand**. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** > **nowy element**. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C#** > **rozszerzalności** i wybierz **polecenia niestandardowego**. W **nazwa** u dołu okna, Zmień nazwę pliku polecenia, aby *ReusableCommand.cs*.
+2. Po otwarciu projektu, Dodaj polecenie niestandardowe szablon elementu o nazwie **ReusableCommand**. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** > **nowy element**. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C#** > **rozszerzalności** i wybierz **polecenia niestandardowego**. W **nazwa** u dołu okna, Zmień nazwę pliku polecenia, aby *ReusableCommand.cs*.
 
-3.  W *vsct* pliku, przejdź do sekcji symboli i Znajdź GuidSymbol, element zawiera grupy i polecenia do projektu. Połączenie powinno miało guidReusableCommandPackageCmdSet.
+3. W *vsct* pliku, przejdź do sekcji symboli i Znajdź GuidSymbol, element zawiera grupy i polecenia do projektu. Połączenie powinno miało guidReusableCommandPackageCmdSet.
 
-4.  Dodaj IDSymbol dla każdego przycisku, który zostanie dodany do grupy, jak w poniższym przykładzie.
+4. Dodaj IDSymbol dla każdego przycisku, który zostanie dodany do grupy, jak w poniższym przykładzie.
 
     ```xml
     <GuidSymbol name="guidReusableCommandPackageCmdSet" value="{7f383b2a-c6b9-4c1d-b4b8-a26dc5b60ca1}">
@@ -44,7 +44,7 @@ Grupy poleceń jest kolekcją poleceń, które są zawsze wyświetlane razem na 
 
      Domyślnie szablon elementu polecenie tworzy grupę o nazwie **MyMenuGroup** i przycisk, który zawiera nazwę która została podana, wraz z IDSymbol wpis dla każdego.
 
-5.  W sekcji grupy należy utworzyć element grupy, która ma takie same atrybuty identyfikator GUID i identyfikator, jak te podane w sekcji symboli. Możesz również użyć istniejącej grupy lub użyć wpis, który znajduje się w szablonie polecenia jak w poniższym przykładzie. Ta grupa pojawia się na **narzędzia** menu
+5. W sekcji grupy należy utworzyć element grupy, która ma takie same atrybuty identyfikator GUID i identyfikator, jak te podane w sekcji symboli. Możesz również użyć istniejącej grupy lub użyć wpis, który znajduje się w szablonie polecenia jak w poniższym przykładzie. Ta grupa pojawia się na **narzędzia** menu
 
     ```xml
     <Groups>
@@ -56,7 +56,7 @@ Grupy poleceń jest kolekcją poleceń, które są zawsze wyświetlane razem na 
 
 ## <a name="to-create-a-group-of-buttons-for-reuse"></a>Aby utworzyć grupę przycisków do ponownego wykorzystania
 
-1.  Polecenie lub menu można umieścić w grupie przy użyciu grupy jako element nadrzędny w definicji polecenia lub menu lub poprzez umieszczenie polecenia lub menu w grupie za pomocą sekcji CommandPlacements.
+1. Polecenie lub menu można umieścić w grupie przy użyciu grupy jako element nadrzędny w definicji polecenia lub menu lub poprzez umieszczenie polecenia lub menu w grupie za pomocą sekcji CommandPlacements.
 
      W sekcji przyciski zdefiniowanie przycisku, który zawiera grupy jako klasy nadrzędnej, lub użyj przycisku, który jest dostarczany przez szablon pakietu, jak pokazano w poniższym przykładzie.
 
@@ -70,7 +70,7 @@ Grupy poleceń jest kolekcją poleceń, które są zawsze wyświetlane razem na 
     </Button>
     ```
 
-2.  Jeśli przycisk musi znajdować się w więcej niż jednej grupy, Utwórz wpis dla niego w sekcji CommandPlacements, która musi być umieszczone po sekcji poleceń. Ustawianie atrybutów identyfikator GUID i identyfikator CommandPlacement, element na odpowiednie dla przycisku który ma zostać ustawiony, a następnie ustaw identyfikator GUID i identyfikator odpowiedniego elementu nadrzędnego z tymi grupy docelowej, jak pokazano w poniższym przykładzie.
+2. Jeśli przycisk musi znajdować się w więcej niż jednej grupy, Utwórz wpis dla niego w sekcji CommandPlacements, która musi być umieszczone po sekcji poleceń. Ustawianie atrybutów identyfikator GUID i identyfikator CommandPlacement, element na odpowiednie dla przycisku który ma zostać ustawiony, a następnie ustaw identyfikator GUID i identyfikator odpowiedniego elementu nadrzędnego z tymi grupy docelowej, jak pokazano w poniższym przykładzie.
 
     ```xml
     <CommandPlacements>

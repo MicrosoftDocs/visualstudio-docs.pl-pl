@@ -26,12 +26,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a38b84c5b45ba8111977701d9026f22f90abf50
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ebcb793a0fc653931e1ea271340294aea532e02
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761113"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055369"
 ---
 # <a name="how-to-debug-injected-code"></a>Instrukcje: Debugowanie wprowadzonego kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,25 +49,25 @@ UWAGA]
   
 ### <a name="to-turn-on-source-annotation"></a>Aby włączyć funkcję adnotacji źródła  
   
--   Kliknij prawym przyciskiem myszy **dezasemblacji** oknie i wybierz polecenie **Pokaż kod źródłowy** z menu skrótów.  
+- Kliknij prawym przyciskiem myszy **dezasemblacji** oknie i wybierz polecenie **Pokaż kod źródłowy** z menu skrótów.  
   
      Jeśli znasz lokalizację atrybutu w oknie źródła, można użyć menu skrótów, można znaleźć wprowadzonego kodu w **dezasemblacji** okna.  
   
 ### <a name="to-view-injected-code"></a>Aby wyświetlić wprowadzonego kodu  
   
-1.  Debuger musi być w trybie przerwania.  
+1. Debuger musi być w trybie przerwania.  
   
-2.  W oknie kodu źródłowego umieść kursor w miejscu dostępnym dla atrybutu, którego wprowadzonego kodu, którą chcesz wyświetlić.  
+2. W oknie kodu źródłowego umieść kursor w miejscu dostępnym dla atrybutu, którego wprowadzonego kodu, którą chcesz wyświetlić.  
   
-3.  Kliknij prawym przyciskiem myszy, a następnie wybierz pozycję **przejdź do demontażu** z menu skrótów.  
+3. Kliknij prawym przyciskiem myszy, a następnie wybierz pozycję **przejdź do demontażu** z menu skrótów.  
   
      Jeśli lokalizacja atrybutu zbliża się bieżący punkt wykonania, możesz wybrać **dezasemblacji** w oknie **debugowania** menu.  
   
 ### <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>Aby wyświetlić kod dezasemblacji w bieżącym punkcie Wykonywanie  
   
-1.  Debuger musi być w trybie przerwania.  
+1. Debuger musi być w trybie przerwania.  
   
-2.  Z **debugowania** menu, wybierz **Windows**i kliknij przycisk **dezasemblacji**.  
+2. Z **debugowania** menu, wybierz **Windows**i kliknij przycisk **dezasemblacji**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   

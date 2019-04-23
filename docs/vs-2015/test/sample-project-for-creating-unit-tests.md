@@ -11,23 +11,23 @@ ms.assetid: db80aaf2-0652-4d3f-a8c5-2a98fd8502a2
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c2516a204151267f6d4686811fe6a7ecba5fe43
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c00023c7b8e624d5b97726720f0f7642a38c5a4f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791899"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048778"
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>Przykładowy projekt dotyczący tworzenia testów jednostkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ten przykładowy kod znajduje się do użytku w poniższych instruktażach:  
   
--   [Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Ten instruktaż poprowadzi Cię przez kroki, aby utworzyć i dostosować testy jednostkowe, uruchamiać je i sprawdź wyniki testu.  
+- [Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Ten instruktaż poprowadzi Cię przez kroki, aby utworzyć i dostosować testy jednostkowe, uruchamiać je i sprawdź wyniki testu.  
   
--   [Przewodnik: Uruchom testy, aby wyświetlić pokrycia kodu](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). W tym instruktażu przedstawiono sposób wyświetlania danych pokrycia kodu, który zawiera część kodu projektu, który jest poddawana testom.  
+- [Przewodnik: Uruchom testy, aby wyświetlić pokrycia kodu](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). W tym instruktażu przedstawiono sposób wyświetlania danych pokrycia kodu, który zawiera część kodu projektu, który jest poddawana testom.  
   
--   [Wskazówki: Korzystanie z narzędzia testu wiersza polecenia](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867). W tym przewodniku umożliwia narzędzie wiersza polecenia MSTest.exe przeprowadzać testy i przeglądać wyniki.  
+- [Wskazówki: Korzystanie z narzędzia testu wiersza polecenia](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867). W tym przewodniku umożliwia narzędzie wiersza polecenia MSTest.exe przeprowadzać testy i przeglądać wyniki.  
   
 ## <a name="sample-code"></a>Przykładowy kod  
  Tylko celowy błąd, w tym przykładzie jest w metody Debet "m_balance += amount" powinien minus nie znakiem plus, zaloguj się przed równości.  

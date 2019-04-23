@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3e155b33c501326be3d3dcc89fb6b73d501556be
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 2e4331b59c532e681c7e10ab8e43b953e9f72b18
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657850"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059698"
 ---
 # <a name="save-a-dataset-as-xml"></a>Zapisywanie zestawu danych jako kodu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,14 +37,14 @@ Przez wywołanie metody dostępne metody XML zestawu danych można uzyskać dost
   
 ### <a name="to-save-the-data-in-a-dataset-as-xml-to-a-variable"></a>Aby zapisać dane w zestawie danych jako XML do zmiennej  
   
--   <xref:System.Data.DataSet.GetXml%2A> Metoda zwraca <xref:System.String>. Oznacza to, że Deklarujesz zmienną typu <xref:System.String> i przypisać jej wyniki <xref:System.Data.DataSet.GetXml%2A> metody.  
+- <xref:System.Data.DataSet.GetXml%2A> Metoda zwraca <xref:System.String>. Oznacza to, że Deklarujesz zmienną typu <xref:System.String> i przypisać jej wyniki <xref:System.Data.DataSet.GetXml%2A> metody.  
   
      [!code-csharp[VbRaddataSaving#12](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#12)]
      [!code-vb[VbRaddataSaving#12](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#12)]  
   
 ### <a name="to-save-the-data-in-a-dataset-as-xml-to-a-file"></a>Aby zapisać dane w zestawie danych jako XML do pliku  
   
--   <xref:System.Data.DataSet.WriteXml%2A> Metoda ma kilka przeciążeń. Poniższy kod przedstawia sposób zapisywania danych do pliku. Zadeklaruj zmienną i przypisać ją prawidłową ścieżkę, aby zapisać plik.  
+- <xref:System.Data.DataSet.WriteXml%2A> Metoda ma kilka przeciążeń. Poniższy kod przedstawia sposób zapisywania danych do pliku. Zadeklaruj zmienną i przypisać ją prawidłową ścieżkę, aby zapisać plik.  
   
      [!code-csharp[VbRaddataSaving#13](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#13)]
      [!code-vb[VbRaddataSaving#13](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#13)]  

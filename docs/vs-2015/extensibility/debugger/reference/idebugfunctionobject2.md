@@ -10,12 +10,12 @@ ms.assetid: 56b2fdff-146d-4138-a34c-59a9c65a3ddd
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9aa191d36c057e2d5cdcd1c551ac96f6804738b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba0ec3092943c0e0cb5593f020926c705cc0eb0a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796018"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037964"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -37,11 +37,11 @@ IDebugFunctionObject2 : IUnknown
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
  Odrocz metody tego interfejsu, udostępnianych przez **IDebugFunctionObject** w następujący sposób:  
   
--   **IDebugEvaluate** metoda pobiera flagi.  
+- **IDebugEvaluate** metoda pobiera flagi.  
   
--   **CreateObject** metoda przyjmuje flag i limit czasu.  
+- **CreateObject** metoda przyjmuje flag i limit czasu.  
   
--   **CreateStringObjectWithLength** metoda przyjmuje o długości.  
+- **CreateStringObjectWithLength** metoda przyjmuje o długości.  
   
 ## <a name="methods"></a>Metody  
  Ten interfejs implementuje następujących metod:  

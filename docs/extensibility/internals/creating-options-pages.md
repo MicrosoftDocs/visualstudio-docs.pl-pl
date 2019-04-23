@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d05b64f2245e4710f501ed8a24f7052cc310b30
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d87e4002bd920a3b189886ae29bc7cf3a6ccf61f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633086"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044508"
 ---
 # <a name="create-options-pages"></a>Tworzenie stron opcji
 W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska pakietu zarządzanego klasy pochodne klasy <xref:Microsoft.VisualStudio.Shell.DialogPage> rozszerzyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, dodając **opcje** strony w obszarze **narzędzia** menu.
@@ -25,9 +25,9 @@ W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska pakie
 
  Ponieważ środowisko tworzy obiekt implementujący określonego **opcje narzędzi** strony po wyświetleniu danej strony IDE:
 
--   A **opcji narzędzia** strony powinny zostać wdrożone na jego własnej obiektu, a nie na obiekt implementujący pakietu VSPackage.
+- A **opcji narzędzia** strony powinny zostać wdrożone na jego własnej obiektu, a nie na obiekt implementujący pakietu VSPackage.
 
--   Obiekt nie może implementować wiele **opcje narzędzi** stron.
+- Obiekt nie może implementować wiele **opcje narzędzi** stron.
 
 ## <a name="register-as-a-tools-options-page-provider"></a>Zarejestruj się jako dostawca strony opcji narzędzi
  Pakietu VSPackage pomocniczych konfiguracji użytkownika za pośrednictwem **opcje narzędzi** stron wskazuje obiektów zapewnia **opcje narzędzi** stron, stosując wystąpień <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> dotyczą <xref:Microsoft.VisualStudio.Shell.Package>implementacji.

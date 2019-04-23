@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11a8f649256c9c25f045f4417d293e7b6ff842a7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 77f57eeda2f193170f4cd4f8b09d92989962e7fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655390"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061596"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Przewodnik: Tworzenie zadania wbudowanego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,15 +47,15 @@ Zadania programu MSBuild są zwykle tworzone przez skompilowanie klasy, która i
   
 #### <a name="to-create-and-modify-a-project-file"></a>Do tworzenia i modyfikowania pliku projektu  
   
-1.  W programie Visual Studio na **pliku** menu, kliknij przycisk **New** a następnie kliknij przycisk **projektu**.  
+1. W programie Visual Studio na **pliku** menu, kliknij przycisk **New** a następnie kliknij przycisk **projektu**.  
   
-2.  W **nowy projekt** okno dialogowe, wybierz opcję języka Visual C# typ projektu, a następnie wybierz **aplikacja interfejsu Windows Forms** szablonu. W **nazwa** wpisz `InlineTasks`. Wpisz **lokalizacji** dla rozwiązania, na przykład `D:\`. Upewnij się, że **Utwórz katalog rozwiązania** jest zaznaczone, **Dodaj do kontroli źródła** jest wyczyszczone, a **Nazwa rozwiązania** jest `InlineTasks`.  
+2. W **nowy projekt** okno dialogowe, wybierz opcję języka Visual C# typ projektu, a następnie wybierz **aplikacja interfejsu Windows Forms** szablonu. W **nazwa** wpisz `InlineTasks`. Wpisz **lokalizacji** dla rozwiązania, na przykład `D:\`. Upewnij się, że **Utwórz katalog rozwiązania** jest zaznaczone, **Dodaj do kontroli źródła** jest wyczyszczone, a **Nazwa rozwiązania** jest `InlineTasks`.  
   
      Kliknij przycisk **OK** do tworzenia pliku projektu.  
   
-3.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu InlineTasks, a następnie kliknij przycisk **Zwolnij projekt**.  
+3. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu InlineTasks, a następnie kliknij przycisk **Zwolnij projekt**.  
   
-4.  Ponownie kliknij prawym przyciskiem myszy węzeł projektu, a następnie kliknij przycisk **Edytuj InlineTasks.csproj**.  
+4. Ponownie kliknij prawym przyciskiem myszy węzeł projektu, a następnie kliknij przycisk **Edytuj InlineTasks.csproj**.  
   
      Plik projektu zostanie wyświetlony w edytorze kodu.  
   

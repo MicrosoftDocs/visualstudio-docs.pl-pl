@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5b02d831093173b28cfd6c004e16c4514977a044
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7dce10c2bc44eb4fde6a6e38417d136ea5e9ba41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617408"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061609"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>Rozszerzanie systemu projektu SharePoint
   Możesz tworzyć rozwiązania programu SharePoint przy użyciu zestawu szablonów elementów i szablonów projektu w programie Visual Studio. Te szablony wymagań wiele scenariuszy programowania, ale można wykryć niektórych przypadkach, gdy nie zapewniają funkcji, która jest wymagana. W takich przypadkach można rozszerzyć systemu projektu programu SharePoint.
@@ -33,20 +33,20 @@ ms.locfileid: "56617408"
 ## <a name="how-to-extend-the-sharepoint-project-system"></a>Jak rozszerzyć systemu projektu SharePoint
  Możesz rozszerzyć systemu projektu programu SharePoint w następujący sposób:
 
--   Definiowanie własnych typów elementów projektu programu SharePoint i skojarzyć je z nowych szablonów elementów i szablonów projektu w programie Visual Studio. Na przykład można zdefiniować typ elementu projektu programu SharePoint do tworzenia akcji niestandardowej lub pola. Aby uzyskać więcej informacji, zobacz [Definiowanie niestandardowych typów elementów projektu SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md).
+- Definiowanie własnych typów elementów projektu programu SharePoint i skojarzyć je z nowych szablonów elementów i szablonów projektu w programie Visual Studio. Na przykład można zdefiniować typ elementu projektu programu SharePoint do tworzenia akcji niestandardowej lub pola. Aby uzyskać więcej informacji, zobacz [Definiowanie niestandardowych typów elementów projektu SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md).
 
--   Rozszerz typów elementów projektu SharePoint, które są już zainstalowane w programie Visual Studio. Na przykład można dodać element menu skrótów do elementu projektu w **Eksploratora rozwiązań** i dostosowywanie elementu projektu, gdy deweloper wybierze element menu. Aby uzyskać więcej informacji, zobacz [elementów projektu programu SharePoint z rozszerzenia](../sharepoint/extending-sharepoint-project-items.md).
+- Rozszerz typów elementów projektu SharePoint, które są już zainstalowane w programie Visual Studio. Na przykład można dodać element menu skrótów do elementu projektu w **Eksploratora rozwiązań** i dostosowywanie elementu projektu, gdy deweloper wybierze element menu. Aby uzyskać więcej informacji, zobacz [elementów projektu programu SharePoint z rozszerzenia](../sharepoint/extending-sharepoint-project-items.md).
 
--   Rozszerzanie projektów SharePoint. Na przykład można dodać procedury obsługi zdarzeń do wykonywania określonych zadań, gdy elementy są dodawane lub usuwane z projektów programu SharePoint. Aby uzyskać więcej informacji, zobacz [projektów SharePoint rozszerzyć](../sharepoint/extending-sharepoint-projects.md).
+- Rozszerzanie projektów SharePoint. Na przykład można dodać procedury obsługi zdarzeń do wykonywania określonych zadań, gdy elementy są dodawane lub usuwane z projektów programu SharePoint. Aby uzyskać więcej informacji, zobacz [projektów SharePoint rozszerzyć](../sharepoint/extending-sharepoint-projects.md).
 
--   Rozszerzanie pakowania i wdrażania zachowanie elementów projektu programu SharePoint i projektów programu SharePoint. Na przykład można utworzyć własne kroki wdrażania do wykonania podczas wdrażania lub wycofać projektu lub można wykonywać dodatkowe zadania niestandardowe podczas Visual Studio wykonuje pewne kroki wdrażania. Aby uzyskać więcej informacji, zobacz [pakowaniem i wdrażaniem SharePoint rozszerzyć](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
+- Rozszerzanie pakowania i wdrażania zachowanie elementów projektu programu SharePoint i projektów programu SharePoint. Na przykład można utworzyć własne kroki wdrażania do wykonania podczas wdrażania lub wycofać projektu lub można wykonywać dodatkowe zadania niestandardowe podczas Visual Studio wykonuje pewne kroki wdrażania. Aby uzyskać więcej informacji, zobacz [pakowaniem i wdrażaniem SharePoint rozszerzyć](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
 
 ## <a name="common-development-tasks"></a>Typowe zadania rozwoju
  W rozszerzeniach systemu projektu programu SharePoint, można wykonywać następujące typowe zadania:
 
--   Zapisz niestandardowy ciąg danych, z elementami projektu i w kilku różnych typach plików projektu. Aby uzyskać więcej informacji, zobacz [zapisywać danych w rozszerzeniach systemu projektu SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
+- Zapisz niestandardowy ciąg danych, z elementami projektu i w kilku różnych typach plików projektu. Aby uzyskać więcej informacji, zobacz [zapisywać danych w rozszerzeniach systemu projektu SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
 
--   Konwertowanie obiektu w systemie projektu programu SharePoint do odpowiedniego obiektu w modelu obiektu automatyzacji programu Visual Studio lub model obiektów integracji, lub na odwrót. Aby uzyskać więcej informacji, zobacz [Konwertowanie pomiędzy typami systemu projektu SharePoint a innymi typami projektu Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
+- Konwertowanie obiektu w systemie projektu programu SharePoint do odpowiedniego obiektu w modelu obiektu automatyzacji programu Visual Studio lub model obiektów integracji, lub na odwrót. Aby uzyskać więcej informacji, zobacz [Konwertowanie pomiędzy typami systemu projektu SharePoint a innymi typami projektu Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
 
 ## <a name="see-also"></a>Zobacz także
 - [Definiowanie niestandardowych typów elementów projektu SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)

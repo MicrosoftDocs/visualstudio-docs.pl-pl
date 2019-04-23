@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a97dfc6e7f93602b50102da51127fff6169ac3dc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d2f2a70df72f6dfcdc8946ca2f5afec9efa21a65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771171"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059243"
 ---
 # <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>Ostrzeżenie: zależność &#39;pliku&#39; w projekcie &#39;projektu&#39; nie można skopiować do katalogu uruchomienia, ponieważ zastąpiłaby ona odwołanie &#39;pliku.&#39;
 Istnieje konflikt między zależności więcej niż jeden plik distinct zestawu o takiej samej nazwie, zostaną skopiowane do katalogu bin do uruchomienia aplikacji. Katalogu uruchamiania jest w stanie rozwiązać konfliktu, ponieważ jednej z zależności jest odwołanie podstawowe.  
@@ -31,7 +31,7 @@ Istnieje konflikt między zależności więcej niż jeden plik distinct zestawu 
   
  **Aby naprawić ten błąd**  
   
--   Do katalogu bin, co można zrobić poprzez umieszczenie plików zestawu do globalnej pamięci podręcznej, należy skopiować pliki zestawu jednej (lub zero). Global assembly cache rozwiązuje konflikty nazw plików. Ponieważ środowisko uruchomieniowe języka wspólnego wie, jak znaleźć zestawy w globalnej pamięci podręcznej, zostaną wprowadzone nie lokalne kopie pliku zestawu. Aby uzyskać więcej informacji, zobacz [Praca z zestawami i Global Assembly Cache](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433) i [błąd: nie można skopiować zależności 'Plik' w projekcie 'projekt' do katalogu uruchomienia, ponieważ spowodowałoby to konflikt z zależnością ' Plik "](/visualstudio/misc/error-dependency-file?view=vs-2015).  
+- Do katalogu bin, co można zrobić poprzez umieszczenie plików zestawu do globalnej pamięci podręcznej, należy skopiować pliki zestawu jednej (lub zero). Global assembly cache rozwiązuje konflikty nazw plików. Ponieważ środowisko uruchomieniowe języka wspólnego wie, jak znaleźć zestawy w globalnej pamięci podręcznej, zostaną wprowadzone nie lokalne kopie pliku zestawu. Aby uzyskać więcej informacji, zobacz [Praca z zestawami i Global Assembly Cache](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433) i [błąd: nie można skopiować zależności 'Plik' w projekcie 'projekt' do katalogu uruchomienia, ponieważ spowodowałoby to konflikt z zależnością ' Plik "](/visualstudio/misc/error-dependency-file?view=vs-2015).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md)   

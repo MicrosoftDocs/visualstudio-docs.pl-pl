@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: bd488230fc6b88feb60ceeb0556385b99e823de9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 71b72b677e9735edb3254290055815885e543fa9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951595"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055026"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Przewodnik: Tworzenie niestandardowego hosta szablonu tekstowego
 
@@ -31,17 +31,17 @@ Jeśli chcesz użyć można napisać niestandardowego hosta *przekształcenia sz
 
 W instruktażu przedstawiono następujące zagadnienia:
 
--   Tworzenie niestandardowego hosta szablonu tekstu.
+- Tworzenie niestandardowego hosta szablonu tekstu.
 
--   Testowanie niestandardowego hosta.
+- Testowanie niestandardowego hosta.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 Aby wykonać instrukcje w tym przewodniku, musisz mieć następujące elementy:
 
--   Visual Studio 2010 lub w nowszej wersji
+- Visual Studio 2010 lub w nowszej wersji
 
--   Visual Studio SDK
+- Visual Studio SDK
 
 ## <a name="create-a-custom-text-template-host"></a>Tworzenie niestandardowego hosta szablonu tekstowego
 
@@ -51,9 +51,9 @@ W tym przewodniku utworzysz niestandardowego hosta w wykonywalnej aplikacji, kt�
 
 2. Dodaj odwołania do następujących zestawów:
 
-   -   **Microsoft.VisualStudio.TextTemplating.\*.0**
+   - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
-   -   **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 i nowsze wersje**
+   - **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 i nowsze wersje**
 
 3. Zastąp kod w pliku Program.cs lub Module1.vb następującym kodem:
 
@@ -726,11 +726,11 @@ Aby przetestować niestandardowego hosta, napisz szablon tekstowy, a następnie 
 
 ### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Aby utworzyć szablon tekstowy w celu przetestowania niestandardowego hosta
 
-1.  Utwórz plik tekstowy i nadaj mu nazwę `TestTemplate.tt`.
+1. Utwórz plik tekstowy i nadaj mu nazwę `TestTemplate.tt`.
 
      Do utworzenia pliku możesz użyć dowolnego edytora tekstów (na przykład Notatnika).
 
-2.  Dodaj następującą zawartość do pliku:
+2. Dodaj następującą zawartość do pliku:
 
     > [!NOTE]
     > Język programowania szablonu tekstu nie musi odpowiadać językowi niestandardowego hosta.
@@ -773,13 +773,13 @@ Aby przetestować niestandardowego hosta, napisz szablon tekstowy, a następnie 
 
     ```
 
-3.  Zapisz i zamknij plik.
+3. Zapisz i zamknij plik.
 
 ### <a name="to-test-the-custom-host"></a>Aby przetestować niestandardowego hosta
 
-1.  Otwórz okno wiersza polecenia.
+1. Otwórz okno wiersza polecenia.
 
-2.  Wpisz ścieżkę pliku wykonywalnego dla niestandardowego hosta, ale nie naciskaj jeszcze ENTER.
+2. Wpisz ścieżkę pliku wykonywalnego dla niestandardowego hosta, ale nie naciskaj jeszcze ENTER.
 
      Na przykład wpisz:
 
@@ -788,9 +788,9 @@ Aby przetestować niestandardowego hosta, napisz szablon tekstowy, a następnie 
     > [!NOTE]
     > Zamiast wpisywać adres, możesz przejść do pliku CustomHost.exe w **Eksplorator Windows** i przeciągnąć plik do okna wiersza polecenia.
 
-3.  Wpisz spację.
+3. Wpisz spację.
 
-4.  Wpisz ścieżkę do pliku szablonu tekstu, a następnie naciśnij ENTER.
+4. Wpisz ścieżkę do pliku szablonu tekstu, a następnie naciśnij ENTER.
 
      Na przykład wpisz:
 
@@ -801,11 +801,11 @@ Aby przetestować niestandardowego hosta, napisz szablon tekstowy, a następnie 
 
      Aplikacja niestandardowego hosta uruchamia się i wykonuje proces przekształcania szablonu tekstu.
 
-5.  W **Eksplorator Windows**, przejdź do folderu, w którym znajduje się plik TestTemplate.tt.
+5. W **Eksplorator Windows**, przejdź do folderu, w którym znajduje się plik TestTemplate.tt.
 
      Ten folder zawiera także plik TestTemplate1.txt.
 
-6.  Otwórz ten plik, aby zobaczyć wyniki przekształcenia szablonu tekstu.
+6. Otwórz ten plik, aby zobaczyć wyniki przekształcenia szablonu tekstu.
 
      Pojawia się wygenerowany tekst wyjściowy o następującej zawartości:
 

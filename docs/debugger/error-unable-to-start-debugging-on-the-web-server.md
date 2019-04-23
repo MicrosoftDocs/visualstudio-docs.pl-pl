@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 908500a333303857ac88d27c76b285464913ff1c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 53ffc893b63447ab75a439ea1e093ddaf4b75645
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526298"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067134"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Błąd: Nie można rozpocząć debugowania na serwerze sieci Web
 
@@ -104,7 +104,7 @@ Jeśli używasz pliku HOSTS, upewnij się, że został on poprawnie skonfigurowa
 
 - Jeśli to nie pomoże, lub debugujesz zdalnie, wykonaj czynności opisane w [Sprawdź konfigurację usług IIS](#vxtbshttpservererrorsthingstocheck).
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> Sprawdź konfigurację usług IIS
+## <a name="vxtbshttpservererrorsthingstocheck"></a> Sprawdź konfigurację usług IIS
 
 Po wykonaniu czynności przedstawione w tym miejscu w celu rozwiązania problemu i przed podjęciem ponownej próby debugowania konieczne może być Zresetuj usługi IIS. Możesz to zrobić, otwierając wiersz polecenia i wpisując `iisreset`.
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bf82bc6fce4e6bf429faebc6b6f24497cbe76b0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9b2ed12175e986178d43ffe5e3da8b85e2ab22e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944471"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044696"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>Osadzanie diagramu w formularzu systemu Windows
 
@@ -20,15 +20,15 @@ DSL diagram można osadzić w kontrolce Windows, która jest wyświetlana w okni
 
 ## <a name="embed-a-dsl-diagram-in-a-windows-control"></a>Osadzanie diagramu DSL w kontrolce Windows
 
-1.  Dodaj nową **kontrolki użytkownika** pliku do projektu DslPackage.
+1. Dodaj nową **kontrolki użytkownika** pliku do projektu DslPackage.
 
-2.  Dodaj kontrolkę panelu do kontrolki użytkownika. Ten panel będzie zawierać DSL Diagram.
+2. Dodaj kontrolkę panelu do kontrolki użytkownika. Ten panel będzie zawierać DSL Diagram.
 
      Dodaj inne kontrolki, których potrzebujesz.
 
      Ustaw właściwości zakotwiczenia formantów.
 
-3.  W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy plik kontrolki użytkownika, a następnie kliknij przycisk **Wyświetl kod**. Dodaj ten konstruktor i zmiennej w kodzie:
+3. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy plik kontrolki użytkownika, a następnie kliknij przycisk **Wyświetl kod**. Dodaj ten konstruktor i zmiennej w kodzie:
 
     ```csharp
     internal UserControl1(MyDSLDocView docView, Control content)
@@ -40,7 +40,7 @@ DSL diagram można osadzić w kontrolce Windows, która jest wyświetlana w okni
     private MyDSLDocView docView;
     ```
 
-4.  Dodaj nowy plik do projektu DslPackage, o następującej zawartości:
+4. Dodaj nowy plik do projektu DslPackage, o następującej zawartości:
 
     ```csharp
     using System.Windows.Forms;
@@ -63,13 +63,13 @@ DSL diagram można osadzić w kontrolce Windows, która jest wyświetlana w okni
     } } } }
     ```
 
-5.  Aby przetestować język DSL, naciśnij klawisz **F5** , a następnie otwórz przykładowy plik modelu. Diagram pojawia się wewnątrz formantu. Przybornik i inne funkcje działają normalnie.
+5. Aby przetestować język DSL, naciśnij klawisz **F5** , a następnie otwórz przykładowy plik modelu. Diagram pojawia się wewnątrz formantu. Przybornik i inne funkcje działają normalnie.
 
 ## <a name="update-the-form-using-store-events"></a>Aktualizowanie formularza przy użyciu magazynu zdarzeń
 
-1.  W Projektancie formularza należy dodać **ListBox** o nazwie `listBox1`. Spowoduje to wyświetlenie listy elementów w modelu. Jest zsynchronizowany z modelu przy użyciu *przechowywania zdarzeń*. Aby uzyskać więcej informacji, zobacz [obsługi propagowanie zmian poza Model zdarzeń](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+1. W Projektancie formularza należy dodać **ListBox** o nazwie `listBox1`. Spowoduje to wyświetlenie listy elementów w modelu. Jest zsynchronizowany z modelu przy użyciu *przechowywania zdarzeń*. Aby uzyskać więcej informacji, zobacz [obsługi propagowanie zmian poza Model zdarzeń](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
-2.  W pliku kodu niestandardowego zastąpić dalsze metody do klasy DocView:
+2. W pliku kodu niestandardowego zastąpić dalsze metody do klasy DocView:
 
     ```csharp
     partial class MyDSLDocView
@@ -110,7 +110,7 @@ DSL diagram można osadzić w kontrolce Windows, która jest wyświetlana w okni
      }
     ```
 
-3.  W kodzie kontrolki użytkownika należy wstawić metody do nasłuchiwania pod kątem elementów dodawane lub usuwane:
+3. W kodzie kontrolki użytkownika należy wstawić metody do nasłuchiwania pod kątem elementów dodawane lub usuwane:
 
     ```csharp
     public partial class UserControl1 : UserControl { ...
@@ -137,7 +137,7 @@ DSL diagram można osadzić w kontrolce Windows, która jest wyświetlana w okni
     }
     ```
 
-4.  Aby przetestować język DSL, naciśnij klawisz **F5** i jest w doświadczalnym wystąpieniu programu Visual Studio, Otwórz przykładowy plik modelu.
+4. Aby przetestować język DSL, naciśnij klawisz **F5** i jest w doświadczalnym wystąpieniu programu Visual Studio, Otwórz przykładowy plik modelu.
 
      Należy zauważyć, że pole listy to lista elementów w modelu, i że jest on poprawny po albo i po Cofnij i ponów.
 

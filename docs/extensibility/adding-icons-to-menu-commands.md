@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 353d56d941cb3fbb4eeac1c5c78137ac2f01a0db
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a0d6a6cfeb3cb222d2ef58233b072f80e50c8d9e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056435"
 ---
 # <a name="add-icons-to-menu-commands"></a>Dodawanie ikon do poleceń menu
 Polecenia może znajdować się w menu i na paskach narzędzi. Na paskach narzędzi jest typowe dla polecenia będą wyświetlane tylko ikony (tak, aby zaoszczędzić miejsce na) podczas w menu, że polecenia pojawi się zazwyczaj z zarówno ikonę i tekst.
@@ -27,24 +27,24 @@ Polecenia może znajdować się w menu i na paskach narzędzi. Na paskach narzę
 ## <a name="add-an-icon-to-a-command"></a>Dodaj ikonę do polecenia
  W poniższej procedurze przyjęto, że masz istniejący projekt pakietu VSPackage przy użyciu polecenia menu. Aby dowiedzieć się, jak to zrobić, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-1.  Tworzenie mapy bitowej o głębi kolorów 32 bity. Ikona jest zawsze 16 x 16, więc tej mapy bitowej muszą być 16 pikseli i wielokrotnością liczby 16 pikseli szerokości.
+1. Tworzenie mapy bitowej o głębi kolorów 32 bity. Ikona jest zawsze 16 x 16, więc tej mapy bitowej muszą być 16 pikseli i wielokrotnością liczby 16 pikseli szerokości.
 
      Każda ikona jest umieszczany na mapę bitową obok siebie w jednym wierszu. Kanał alfa umożliwia wskazanie miejsc przejrzystości każda ikona.
 
      Jeśli korzystasz z 8-bitowej głębi kolorów, użyj amarantowy, `RGB(255,0,255)`, jako przejrzystości. Jednak ikon koloru 32-bitowe są preferowane.
 
-2.  Skopiuj plik ikony *zasobów* katalogu projektu pakietu VSPackage. W **Eksploratora rozwiązań**, Dodaj ikonę do projektu. (Wybierz **zasobów**i na kliknięcie menu kontekstowe **Dodaj**, następnie **istniejący element**i wybierz swój plik ikony.)
+2. Skopiuj plik ikony *zasobów* katalogu projektu pakietu VSPackage. W **Eksploratora rozwiązań**, Dodaj ikonę do projektu. (Wybierz **zasobów**i na kliknięcie menu kontekstowe **Dodaj**, następnie **istniejący element**i wybierz swój plik ikony.)
 
-3.  Otwórz *vsct* plik w edytorze.
+3. Otwórz *vsct* plik w edytorze.
 
-4.  Dodaj `GuidSymbol` elementu o nazwie **testIcon**. Utwórz identyfikator GUID (**narzędzia** > **Utwórz GUID**, a następnie wybierz **Format rejestru** i kliknij przycisk **kopiowania**) i wklej go do `value` atrybutu. Wynik powinien wyglądać następująco:
+4. Dodaj `GuidSymbol` elementu o nazwie **testIcon**. Utwórz identyfikator GUID (**narzędzia** > **Utwórz GUID**, a następnie wybierz **Format rejestru** i kliknij przycisk **kopiowania**) i wklej go do `value` atrybutu. Wynik powinien wyglądać następująco:
 
     ```xml
     <!-- Create your own GUID -->
     <GuidSymbol name="testIcon" value="{00000000-0000-0000-0000-0000}">
     ```
 
-5.  Dodaj `<IDSymbol>` ikony. `name` Atrybut jest identyfikator ikony i `value` wskazuje swoją pozycję na taśmy, jeśli istnieje. Jeśli istnieje tylko jedna ikona, należy dodać 1. Wynik powinien wyglądać następująco:
+5. Dodaj `<IDSymbol>` ikony. `name` Atrybut jest identyfikator ikony i `value` wskazuje swoją pozycję na taśmy, jeśli istnieje. Jeśli istnieje tylko jedna ikona, należy dodać 1. Wynik powinien wyglądać następująco:
 
     ```xml
     <!-- Create your own GUID -->
@@ -53,13 +53,13 @@ Polecenia może znajdować się w menu i na paskach narzędzi. Na paskach narzę
     </GuidSymbol>
     ```
 
-6.  Tworzenie `<Bitmap>` w `<Bitmaps>` części *vsct* pliku do reprezentowania mapy bitowej zawierający ikony.
+6. Tworzenie `<Bitmap>` w `<Bitmaps>` części *vsct* pliku do reprezentowania mapy bitowej zawierający ikony.
 
-    -   Ustaw `guid` wartość odpowiadającą nazwie `<GuidSymbol>` elementu utworzonego w poprzednim kroku.
+    - Ustaw `guid` wartość odpowiadającą nazwie `<GuidSymbol>` elementu utworzonego w poprzednim kroku.
 
-    -   Ustaw `href` wartość względną ścieżką pliku mapy bitowej (w tym przypadku **zasobów\\< nazwa pliku ikony\>**.
+    - Ustaw `href` wartość względną ścieżką pliku mapy bitowej (w tym przypadku **zasobów\\< nazwa pliku ikony\>**.
 
-    -   Ustaw `usedList` wartość IDSymbol, została utworzona wcześniej. Ten atrybut określa rozdzielana przecinkami lista ikon, które zostaną użyte w pakietu VSPackage. Ikony nie ma na liście są wykluczone formularza kompilacji.
+    - Ustaw `usedList` wartość IDSymbol, została utworzona wcześniej. Ten atrybut określa rozdzielana przecinkami lista ikon, które zostaną użyte w pakietu VSPackage. Ikony nie ma na liście są wykluczone formularza kompilacji.
 
          Blok mapy bitowej powinien wyglądać następująco:
 
@@ -67,7 +67,7 @@ Polecenia może znajdować się w menu i na paskach narzędzi. Na paskach narzę
         <Bitmap guid="testIcon" href="Resources\<icon file name>" usedList="testIcon1"/>
         ```
 
-7.  W istniejącym `<Button>` elementu, ustaw `Icon` elementu GUIDSymbol i IDSymbol utworzonych wcześniej wartości. Poniżej przedstawiono przykład elementu przycisk z tych wartości:
+7. W istniejącym `<Button>` elementu, ustaw `Icon` elementu GUIDSymbol i IDSymbol utworzonych wcześniej wartości. Poniżej przedstawiono przykład elementu przycisk z tych wartości:
 
     ```xml
     <Button guid="guidAddIconCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
@@ -79,7 +79,7 @@ Polecenia może znajdować się w menu i na paskach narzędzi. Na paskach narzę
     </Button>
     ```
 
-8.  Przetestuj ikona. Skompiluj projekt, a następnie rozpocząć debugowanie. W doświadczalnym wystąpieniu znaleźć polecenia. Należy widoczna ikona została dodana.
+8. Przetestuj ikona. Skompiluj projekt, a następnie rozpocząć debugowanie. W doświadczalnym wystąpieniu znaleźć polecenia. Należy widoczna ikona została dodana.
 
 ## <a name="see-also"></a>Zobacz także
 - [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)

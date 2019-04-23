@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dfbaf72f39bd4a61458abc1e2f75572e210c6cfe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4a06ad526cd16335a664ae833f61cb0052a215fc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786008"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054942"
 ---
 # <a name="customizing-copy-behavior"></a>Dostosowywanie zachowania dotyczącego kopiowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -217,7 +217,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  **Umożliwia użytkownikowi na przeciąganie i upuszczanie elementów.**  
  Zobacz [jak: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
-##  <a name="customizeLinks"></a> Dostosowywanie zachowania dotyczącego kopiowania łącza  
+## <a name="customizeLinks"></a> Dostosowywanie zachowania dotyczącego kopiowania łącza  
  Po użytkownik kopiuje element, standardowe zachowanie jest dowolnym osadzone elementy są również kopiowane. Standardowe zachowanie kopiowania można modyfikować. W definicji DSL, wybierz rolę po jednej stronie relacji i w zestawie okna właściwości **propaguje kopiowania** wartość.  
   
  ![Propaguje właściwości kopiowania roli domeny](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")  
@@ -291,9 +291,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
   
  Zdefiniuj dwie metody w klasie ElementOperations:  
   
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` który określa, czy element źródła można przeciągać docelowej kształtu, łącznika lub diagramu.  
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` który określa, czy element źródła można przeciągać docelowej kształtu, łącznika lub diagramu.  
   
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` które łączy elementu źródłowego do docelowego.  
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` które łączy elementu źródłowego do docelowego.  
   
 ### <a name="canmerge"></a>CanMerge()  
  `CanMerge()` jest wywoływana, aby określić opinie, które należy nadać użytkownikowi, jako wskaźnik myszy porusza się na diagramie. Parametry metody są elementu, nad którym znajduje się kursor i dane dotyczące źródła, z którego została wykonana operacja przeciągania. Użytkownik można przeciągnąć z dowolnego miejsca na ekranie. W związku z obiektem źródłowym może mieć wiele różnych typów i może być serializowany w różnych formatach. Jeśli źródło jest modelu DSL lub UML, parametr danych jest serializacji <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Operacje przeciągania, kopiowanie i przybornika używają ElementGroupPrototypes do reprezentowania fragmenty modeli.  

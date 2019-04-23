@@ -15,12 +15,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bae12b01a8fc1c879526bbf5df568c9ec40041c9
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 2070c9c68719e51357f3cd5fed4bee3cfbc35fcf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867764"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051911"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Znajdowanie rozszerzeń programu Visual Studio i korzystanie z nich
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,9 +54,9 @@ Rozszerzenia programu Visual Studio są pakiety kodu, które są uruchamiane w p
 
  Jeśli chcesz wyłączyć automatyczne aktualizacje, można wyłączyć funkcję dla wszystkich rozszerzeń lub tylko określone rozszerzenia.
 
--   Aby wyłączyć aktualizacje automatyczne dla wszystkich rozszerzeń, kliknij przycisk **zmiany ustawień rozszerzenia i aktualizacje** link **rozszerzenia i aktualizacje** okna dialogowego i usuń zaznaczenie pola wyboru **automatycznego aktualizowania rozszerzenia**.
+- Aby wyłączyć aktualizacje automatyczne dla wszystkich rozszerzeń, kliknij przycisk **zmiany ustawień rozszerzenia i aktualizacje** link **rozszerzenia i aktualizacje** okna dialogowego i usuń zaznaczenie pola wyboru **automatycznego aktualizowania rozszerzenia**.
 
--   Aby wyłączyć automatyczne aktualizacje dla określonego rozszerzenia, usuń zaznaczenie pola wyboru **automatycznie Aktualizuj to rozszerzenie** opcji w okienku szczegółów rozszerzenia na prawej krawędzi **rozszerzenia i aktualizacje** okna dialogowego.
+- Aby wyłączyć automatyczne aktualizacje dla określonego rozszerzenia, usuń zaznaczenie pola wyboru **automatycznie Aktualizuj to rozszerzenie** opcji w okienku szczegółów rozszerzenia na prawej krawędzi **rozszerzenia i aktualizacje** okna dialogowego.
 
 > [!NOTE]
 >  Począwszy od programu Visual Studio 2015 Update 2, można określić (w **narzędzia / Opcje / środowisko / rozszerzenia i aktualizacje**) czy będzie automatyczne aktualizacje dla rozszerzenia dla poszczególnych użytkowników, wszystkie rozszerzenia użytkowników lub obie (ustawienie domyślne).

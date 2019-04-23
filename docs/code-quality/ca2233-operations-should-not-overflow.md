@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 013571a948c6c3fdca5da3c5c9278ca21e1f3698
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 7c07dde4c3b992db30c9fc72a0dfa01f0f13b31e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869112"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045540"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: Operacje nie powinny powodować przepełnienia
 
@@ -102,11 +102,11 @@ Jeśli włączysz zaznaczone arytmetyczne przepełnienie/niedopełnienie w języ
 
 Aby włączyć funkcję kontroli arytmetyczne przepełnienie/niedopełnienie w języku C#:
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt i wybierz polecenie **właściwości**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt i wybierz polecenie **właściwości**.
 
-2.  Wybierz **kompilacji** kartę, a następnie kliknij przycisk **zaawansowane**.
+2. Wybierz **kompilacji** kartę, a następnie kliknij przycisk **zaawansowane**.
 
-3.  Wybierz **sprawdzaj przepełnienie/niedopełnienie arytmetyczne** i kliknij przycisk **OK**.
+3. Wybierz **sprawdzaj przepełnienie/niedopełnienie arytmetyczne** i kliknij przycisk **OK**.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -12,12 +12,12 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f0a9faa2d9dd09156c2e1a37e776381270f480af
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 234f8ffbb3fdde48ca844386d5e5a716f74e8969
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764102"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054733"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Dodawanie polecenia do paska narzędzi Eksploratora rozwiązań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ W tym instruktażu pokazano, jak dodać przycisk, aby **Eksploratora rozwiązań
 ## <a name="adding-a-button-to-the-solution-explorer-toolbar"></a>Dodawanie przycisku do paska narzędzi Eksploratora rozwiązań  
  Tej części instruktażu pokazano, jak dodać przycisk, aby **Eksploratora rozwiązań** paska narzędzi. Po kliknięciu przycisku uruchamiania kodu w metodzie wywołania zwrotnego.  
   
-1.  W pliku ToolbarButtonPackage.vsct, przejdź do `<Symbols>` sekcji. `<GuidSymbol>` Węzeł zawiera grupy menu i poleceń, który został wygenerowany przez szablon pakietu. Dodaj `<IDSymbol>` elementu do tego węzła do deklarowania grupy, w którym będą przechowywane do swojej dyspozycji.  
+1. W pliku ToolbarButtonPackage.vsct, przejdź do `<Symbols>` sekcji. `<GuidSymbol>` Węzeł zawiera grupy menu i poleceń, który został wygenerowany przez szablon pakietu. Dodaj `<IDSymbol>` elementu do tego węzła do deklarowania grupy, w którym będą przechowywane do swojej dyspozycji.  
   
     ```xml  
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>  
     ```  
   
-2.  W `<Groups>` sekcji po istniejący wpis grupy zdefiniować nową grupę, zadeklarowanej w poprzednim kroku.  
+2. W `<Groups>` sekcji po istniejący wpis grupy zdefiniować nową grupę, zadeklarowanej w poprzednim kroku.  
   
     ```xml  
     <Group guid="guidToolbarButtonPackageCmdSet"  
@@ -57,7 +57,7 @@ W tym instruktażu pokazano, jak dodać przycisk, aby **Eksploratora rozwiązań
   
      Ustawienie nadrzędnego pary GUID:ID `guidSHLMainMenu` i `IDM_VS_TOOL_PROJWIN` umieszcza tę grupę na **Eksploratora rozwiązań** narzędzi i ustawienie wartości o wysokim priorytecie umieszcza go od innych grup poleceń.  
   
-3.  W `<Buttons>` sekcji, zmień identyfikator elementu nadrzędnego w wygenerowanym `<Button>` wpis w celu uwzględnienia grupy, które są zdefiniowane w poprzednim kroku. Zmodyfikowanego `<Button>` element powinien wyglądać następująco:  
+3. W `<Buttons>` sekcji, zmień identyfikator elementu nadrzędnego w wygenerowanym `<Button>` wpis w celu uwzględnienia grupy, które są zdefiniowane w poprzednim kroku. Zmodyfikowanego `<Button>` element powinien wyglądać następująco:  
   
     ```xml  
     <Button guid="guidToolbarButtonPackageCmdSet" id="ToolbarButtonId" priority="0x0100" type="Button">  
@@ -69,11 +69,11 @@ W tym instruktażu pokazano, jak dodać przycisk, aby **Eksploratora rozwiązań
     </Button>  
     ```  
   
-4.  Skompiluj projekt, a następnie rozpocząć debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.  
+4. Skompiluj projekt, a następnie rozpocząć debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.  
   
      **Eksploratora rozwiązań** na prawo od istniejących przycisków paska narzędzi powinien być wyświetlany nowy przycisk polecenia. Ikona przycisku jest przekreślenie.  
   
-5.  Kliknij przycisk Nowy.  
+5. Kliknij przycisk Nowy.  
   
      Okno dialogowe z komunikatu **ToolbarButtonPackage wewnątrz SolutionToolbar.ToolbarButton.MenuItemCallback()** powinien być wyświetlany.  
   

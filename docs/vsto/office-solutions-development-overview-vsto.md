@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c9c834d3fbb49775d9462ac5e6ce3d27127f793
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 45b9dba16a0a8ebf6baaf2f1d7660035294fd80d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628783"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061960"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Omówienie programowania rozwiązań pakietu Office (VSTO)
   Za pomocą programu Microsoft Office jako fronton dla rozwiązania, możesz korzystać z zalet dobrze znanych interfejsów użytkownika Microsoft Office i narzędzi, takich jak funkcje przetwarzania tekstu w programach Word, funkcje analizy danych programu Excel i funkcje zarządzania pocztą e-mail programu Outlook . Można opracować rozwiązania w programie Visual Studio, aby dostosować aplikacje pakietu Office, a następnie dodaj określonych funkcji, czego potrzebujesz do procesów biznesowych. Na przykład można przekształcić w programie Word generator kontraktu, który składa umów się istniejące elementy, które mogą być wykonane edytowalne i nieedytowalne. Za pomocą programu Excel można utworzyć arkusz automatycznych budżetu dostosowane do różnych projektów. Użytkownicy mogą skorzystać z rozwiązań pakietu office w trybie offline, co sprawia, że złożonych rozwiązań jest praktyczniejsze w taki sposób, niż byłoby ich, jeśli używasz architektury opartej na sieci web.
@@ -43,11 +43,11 @@ ms.locfileid: "56628783"
 
  Aby uzyskać więcej informacji na temat dostosowywania zobacz następujące tematy:
 
--   [Wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
+- [Wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
 
--   [Wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)
+- [Wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)
 
--   [Architektura dostosowywania na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md)
+- [Architektura dostosowywania na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md)
 
 ### <a name="vsto-add-ins"></a>Dodatków narzędzi VSTO
  Dodatki narzędzi VSTO dla programów składają się z zestawu, który jest skojarzony z aplikacją Microsoft Office. Zazwyczaj dodatku narzędzi VSTO jest uruchamiany, gdy skojarzona aplikacja jest uruchomiona, chociaż użytkownicy mogą także ładować dodatków narzędzi VSTO po aplikacja jest już uruchomiona. Funkcje dodatków narzędzi VSTO dla programów, które tworzysz są dostępne dla aplikacji, niezależnie od tego, które są otwarte dokumenty.
@@ -56,9 +56,9 @@ ms.locfileid: "56628783"
 
  Aby uzyskać więcej informacji na temat dodatków narzędzi VSTO dla programów zobacz następujące tematy:
 
--   [Wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
 
--   [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)
+- [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)
 
 ## <a name="automate-office-applications-by-using-primary-interop-assemblies"></a>Automatyzowanie aplikacji pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych
  Programowe funkcje aplikacji pakietu Office można zastosować do rozwiązania, przez napisanie kodu, który uzyskuje dostęp do aplikacji w modelu obiektów. Modele obiektów są układ klas, które udostępniają funkcje za pośrednictwem różnych właściwości i metody. Model obiektów dla każdej aplikacji pakietu Office jest inny.
@@ -69,9 +69,9 @@ ms.locfileid: "56628783"
 
  Aby uzyskać więcej informacji o używaniu zestawów PIA w rozwiązaniach pakietu Office narzędzi VSTO dla programów zobacz następujące tematy:
 
--   [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)
+- [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)
 
--   [Podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md)
+- [Podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md)
 
 ## <a name="run-microsoft-vsto-office-solutions-on-end-user-computers"></a>Uruchom rozwiązania Microsoft narzędzi VSTO dla programów na komputerach użytkowników końcowych
  Podczas tworzenia rozwiązania narzędzi VSTO dla pakietu Office, należy wziąć pod uwagę sposób wymagań związanych z wdrażaniem mogą mieć wpływ na rozwój wybrane opcje.

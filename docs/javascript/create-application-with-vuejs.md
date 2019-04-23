@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 451d7a735116d7b181263eebe76751fd49900ce3
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: ff323547135d4c0d57900ac4e871cf053dedf096
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584418"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047686"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Tworzenie aplikacji Vue.js przy użyciu narzędzia Node.js dla programu Visual Studio
 
@@ -31,12 +31,17 @@ Następujące nowe funkcje obsługi opracowywania aplikacji Vue.js w programie V
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Konieczne jest posiadanie programu Visual Studio 2017 wersji Preview należy zachować 15,8 3 lub nowszym i **programowania Node.js** obciążenia.
+* Konieczne jest posiadanie programu Visual Studio 2017 w wersji 15.8 lub nowszy i **programowania Node.js** obciążenia.
 
     > [!IMPORTANT]
-    > W tym artykule wymaga funkcji, które są tylko dostępne począwszy od programu Visual Studio 2017 w wersji Preview należy zachować 15,8 3.
+    > W tym artykule wymaga funkcji, które są dostępne, począwszy od programu Visual Studio 2017 w wersji 15.8 tylko.
 
-    Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+    ::: moniker range=">=vs-2019"
+    Jeśli wymagana wersja nie jest już zainstalowana, zainstaluj [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019).
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
+    ::: moniker-end
 
     Jeśli musisz zainstalować obciążenie, ale już program Visual Studio, przejdź do strony **narzędzia** > **Pobierz narzędzia i funkcje...** , która otwiera Instalatora programu Visual Studio. Wybierz **programowania Node.js** obciążenia, wybierz **Modyfikuj**.
 

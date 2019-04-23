@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f6b3b1ebf4f25f1f37d2094a0e53447a4418044a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 29d4ee5455a05bfac98debc2f6ebdbb06b813f31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870601"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059854"
 ---
 # <a name="model-user-requirements"></a>Wymagania modelu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Program Visual Studio pozwala zrozumieć, omówienia i komunikują się potrzeby
   
  Należy zauważyć, że większość typów diagram może służyć do innych celów. Omówienie typów na diagramie, zobacz [tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md). Aby uzyskać podstawowe informacje na temat rysowania diagramów zobacz [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
   
-##  <a name="UseCases"></a> Opisujący sposób użycia systemu  
+## <a name="UseCases"></a> Opisujący sposób użycia systemu  
  Utwórz diagramy przypadków użycia do opisywania, który korzysta z systemu i rzeczywiste użycie go do. Przypadek użycia przedstawia cel użytkownika systemu i procedury działają do osiągnięcia celu.  
   
  Na przykład online posiłku sprzedaży systemu muszą zezwalać na klienci mogą wybierać elementy menu i muszą zezwalać na udostępnianie restauracji na aktualizowanie menu. Umożliwia to podsumowanie na diagramie przypadków użycia:  
@@ -93,7 +93,7 @@ Program Visual Studio pozwala zrozumieć, omówienia i komunikują się potrzeby
 |Elementy na diagramie przypadków użycia|[Diagramy przypadków użycia UML: informacje](../modeling/uml-use-case-diagrams-reference.md)|  
 |Jak tworzyć kod z przypadków użycia|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="RequirementsClasses"></a> Definiowanie terminy używane do opisu wymagań  
+## <a name="RequirementsClasses"></a> Definiowanie terminy używane do opisu wymagań  
  Diagramów klas UML można użyć, które pomogą Ci tworzyć spójne słownictwa koncepcji biznesowych używanych do następujących celów:  
   
 - Przez samych użytkowników w celu omówienia ich firm, w którym działa system.  
@@ -140,7 +140,7 @@ Program Visual Studio pozwala zrozumieć, omówienia i komunikują się potrzeby
   
  Na diagramie klasy koncepcyjny zwykle nie jest przydatne do umieszczenia strzałki na skojarzenia znacząca. Jest to spowodowane diagramu nie reprezentuje implementację. Asocjacje reprezentują relacje między obiektami w świecie rzeczywistym. Następujące [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenia Ustaw strzałki niekierunkowa jako domyślny: [Przykład: Modelowanie domeny UML funkcji](http://go.microsoft.com/fwlink/?LinkId=213849).  
   
-##  <a name="BusinessRules"></a> Wyświetlanie reguły biznesowe  
+## <a name="BusinessRules"></a> Wyświetlanie reguły biznesowe  
  Reguły biznesowej jest wymagana, która nie jest skojarzony z konkretnego przypadku użycia, należy przestrzegać w całym systemie.  
   
  Wiele reguł biznesowych są ograniczenia relacje klas pojęć. Można napisać te *reguły biznesowe statyczne* jako komentarze skojarzone z odpowiednich klas na diagramie klasy pojęć. Na przykład:  
@@ -161,7 +161,7 @@ Program Visual Studio pozwala zrozumieć, omówienia i komunikują się potrzeby
 |Elementy na diagramie klasy koncepcyjne|[Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)|  
 |Jak tworzyć kod, który działa zgodnie z regułami biznesowymi|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="QoSRequirements"></a> Opisujące jakości wymagań  
+## <a name="QoSRequirements"></a> Opisujące jakości wymagań  
  Istnieje kilka kategorii wymagań dotyczących jakości usługi. Ulepszenia obejmują następujące czynności:  
   
 - Wydajność  
@@ -185,7 +185,7 @@ Program Visual Studio pozwala zrozumieć, omówienia i komunikują się potrzeby
 |Dołączanie dodatkowych dokumentów z przypadkami użycia|[Łączenie przypadków użycia z dokumentami i diagramami](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
 |Jak tworzyć kod, który działa zgodnie z jakości wymagań|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Workflow"></a> Przepływ pracy przedstawiający między użytkownikami a systemem  
+## <a name="Workflow"></a> Przepływ pracy przedstawiający między użytkownikami a systemem  
  Diagram aktywności można użyć, aby pokazać przepływ pracy między różnych przypadków użycia. Jest często przydatny rozpocząć modelu wymagań za pomocą rysowania na diagramie aktywności przedstawiający głównych zadań, które użytkownicy wykonują — zarówno w systemie, jak i poza nim.  
   
  Na przykład:  
@@ -206,7 +206,7 @@ Program Visual Studio pozwala zrozumieć, omówienia i komunikują się potrzeby
 |Elementy na diagramie aktywności|[Diagramy aktywności UML: informacje](../modeling/uml-activity-diagrams-reference.md)|  
 |Jak tworzyć kodu z diagramów aktywności|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Sequences"></a> Wyświetlanie interakcje między użytkownikami a systemem  
+## <a name="Sequences"></a> Wyświetlanie interakcje między użytkownikami a systemem  
  Diagram sekwencji służy do pokazywania wymiana wiadomości między systemem i aktorów lub między częściami systemu. Dzięki temu widok czynności w przypadku użycia, które wykazują, bardzo sekwencja interakcji. Diagramy sekwencji są szczególnie przydatne w przypadku, gdy istnieją interakcję na kilka stron w przypadku użycia, której system ma również interfejs API.  
   
  Na przykład:  

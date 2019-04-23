@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a99cdc4e8c9a4b7551574c93ad6ccdb8c44479df
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f0d1a9e24c965af9513b3c2645bcee35f916f436
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927049"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048596"
 ---
 # <a name="troubleshoot-service-references"></a>Rozwiązywanie problemów z odwołaniami usługi
 
@@ -33,9 +33,9 @@ Po powrocie `DataSet` lub `DataTable` z usługi, może pojawić się wyjątek "p
 
 Aby naprawić ten błąd:
 
-1.  W **Eksploratora rozwiązań**, kliknij dwukrotnie *app.config* plik, aby go otworzyć.
+1. W **Eksploratora rozwiązań**, kliknij dwukrotnie *app.config* plik, aby go otworzyć.
 
-2.  Znajdź `MaxReceivedMessageSize` właściwości i zmień ją na większą wartość.
+2. Znajdź `MaxReceivedMessageSize` właściwości i zmień ją na większą wartość.
 
 ## <a name="cannot-find-a-service-in-my-solution"></a>Nie można odnaleźć usługi w Moje rozwiązanie
 
@@ -43,7 +43,7 @@ Po kliknięciu **odnajdź** znajdujący się w **Dodawanie odwołań do usług**
 
 Aby naprawić ten błąd:
 
--   W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt biblioteki usługi WCF i kliknij przycisk **kompilacji**.
+- W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt biblioteki usługi WCF i kliknij przycisk **kompilacji**.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Błąd podczas uzyskiwania dostępu do usługi za pośrednictwem pulpitu zdalnego
 
@@ -51,9 +51,9 @@ Gdy użytkownik uzyskuje dostęp do usługi WCF hostowanej w sieci Web za pośre
 
 Aby naprawić ten błąd:
 
-1.  W projekcie witryny sieci Web otwórz **właściwości** stron.
+1. W projekcie witryny sieci Web otwórz **właściwości** stron.
 
-2.  Na **opcje uruchamiania** kartę, usuń zaznaczenie **uwierzytelniania NTLM** pole wyboru.
+2. Na **opcje uruchamiania** kartę, usuń zaznaczenie **uwierzytelniania NTLM** pole wyboru.
 
     > [!NOTE]
     > Należy wyłączyć uwierzytelnianie NTLM tylko w przypadku witryn sieci Web, zawierające wyłącznie usługi WCF. Zabezpieczenia usług WCF jest zarządzana przy użyciu konfiguracji w *web.config* pliku. To sprawia, że uwierzytelnianie NTLM niepotrzebne.
@@ -74,19 +74,19 @@ Jeśli projekt usługi zostanie usunięty z rozwiązania, zostaje unieważniony 
 
 Aby naprawić ten błąd, należy ręcznie ponownie skompilować projekt usługi:
 
-1.  Na **narzędzia** menu, kliknij przycisk **opcje**.
+1. Na **narzędzia** menu, kliknij przycisk **opcje**.
 
-2.  W **opcje** okna dialogowego rozwiń **projekty i rozwiązania**, a następnie wybierz pozycję **ogólne**.
+2. W **opcje** okna dialogowego rozwiń **projekty i rozwiązania**, a następnie wybierz pozycję **ogólne**.
 
-3.  Upewnij się, że **Pokaż zaawansowane konfiguracje kompilacji** pole wyboru jest zaznaczone, a następnie kliknij przycisk **OK**.
+3. Upewnij się, że **Pokaż zaawansowane konfiguracje kompilacji** pole wyboru jest zaznaczone, a następnie kliknij przycisk **OK**.
 
-4.  Załaduj projekt usługi WCF.
+4. Załaduj projekt usługi WCF.
 
-5.  W **programu Configuration Manager** okno dialogowe, zestaw **Konfiguracja rozwiązania aktywnego** do **debugowania**. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md).
+5. W **programu Configuration Manager** okno dialogowe, zestaw **Konfiguracja rozwiązania aktywnego** do **debugowania**. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md).
 
-6.  W **Eksploratora rozwiązań**, wybierz projekt usługi WCF.
+6. W **Eksploratora rozwiązań**, wybierz projekt usługi WCF.
 
-7.  Na **kompilacji** menu, kliknij przycisk **odbudować** Aby ponownie skompilować projekt usługi WCF.
+7. Na **kompilacji** menu, kliknij przycisk **odbudować** Aby ponownie skompilować projekt usługi WCF.
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>Usługi danych WCF nie są wyświetlane w przeglądarce
 
@@ -94,13 +94,13 @@ Podczas próby wyświetlenia Reprezentacja XML danych w [!INCLUDE[ss_data_servic
 
 Aby naprawić ten błąd, należy wyłączyć źródła danych RSS:
 
-1.  W programie Internet Explorer na **narzędzia** menu, kliknij przycisk **Opcje internetowe**.
+1. W programie Internet Explorer na **narzędzia** menu, kliknij przycisk **Opcje internetowe**.
 
-2.  Na **zawartości** na karcie **źródła** kliknij **ustawienia**.
+2. Na **zawartości** na karcie **źródła** kliknij **ustawienia**.
 
-3.  W **ustawienia źródła danych** okno dialogowe wyczyść **Włączanie źródła danych w widoku do czytania** pole wyboru, a następnie kliknij przycisk **OK**.
+3. W **ustawienia źródła danych** okno dialogowe wyczyść **Włączanie źródła danych w widoku do czytania** pole wyboru, a następnie kliknij przycisk **OK**.
 
-4.  Kliknij przycisk **OK** zamknąć **Opcje internetowe** okno dialogowe.
+4. Kliknij przycisk **OK** zamknąć **Opcje internetowe** okno dialogowe.
 
 ## <a name="see-also"></a>Zobacz także
 

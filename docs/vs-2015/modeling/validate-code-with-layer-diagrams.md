@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74c61beeae78fbf76ffee76ff930171ddbe8089a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 143daa7f54179867325206f62a852fd685852a6f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792897"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051820"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Weryfikacja kodu przy użyciu diagramów warstw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,50 +58,50 @@ Aby upewnić się, że kod jest zgodny z projektem, Przeprowadź walidację kodu
 > [!IMPORTANT]
 >  Jeśli chcesz uruchomić walidację warstwy za pomocą programu Team Foundation Build, należy również zainstalować tę samą wersję programu Visual Studio na serwerze kompilacji.  
   
--   [Zobacz, czy element obsługuje walidację](#SupportsValidation)  
+- [Zobacz, czy element obsługuje walidację](#SupportsValidation)  
   
--   [Dołączyć inne projekty, do weryfikacji i zestawy .NET](#IncludeReferences)  
+- [Dołączyć inne projekty, do weryfikacji i zestawy .NET](#IncludeReferences)  
   
--   [Ręczna Walidacja kodu](#ValidateManually)  
+- [Ręczna Walidacja kodu](#ValidateManually)  
   
--   [Automatycznie Walidacja kodu](#ValidateAuto)  
+- [Automatycznie Walidacja kodu](#ValidateAuto)  
   
--   [Rozwiązywanie problemów z problemy ze sprawdzaniem poprawności warstwy](#TroubleshootingValidation)  
+- [Rozwiązywanie problemów z problemy ze sprawdzaniem poprawności warstwy](#TroubleshootingValidation)  
   
--   [Omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors)  
+- [Omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors)  
   
-##  <a name="SupportsValidation"></a> Zobacz, czy element obsługuje walidację  
+## <a name="SupportsValidation"></a> Zobacz, czy element obsługuje walidację  
  Możesz połączyć warstwy z witryn sieci Web, dokumentów pakietu Office, plikami ze zwykłym tekstem i plikami w projektach, które są współużytkowane przez wiele aplikacji, ale proces walidacji nie uwzględni je. Błędy walidacji nie będą widoczne w przypadku odwołań do projektów lub zestawów połączonych z oddzielnymi warstwami, jeżeli między tymi warstwami nie ma żadnych zależności. Odwołania te nie są uważane za zależności, chyba że w kodzie wykorzystano te odwołania.  
   
-1.  Na diagramie warstwowym zaznacz jedną lub więcej warstw, kliknij prawym przyciskiem myszy zaznaczenie, a następnie kliknij **Wyświetl łącza**.  
+1. Na diagramie warstwowym zaznacz jedną lub więcej warstw, kliknij prawym przyciskiem myszy zaznaczenie, a następnie kliknij **Wyświetl łącza**.  
   
-2.  W **Eksplorator warstw**, Przyjrzyj się **obsługuje walidację** kolumny. Jeśli wartością jest false, element nie obsługuje walidacji.  
+2. W **Eksplorator warstw**, Przyjrzyj się **obsługuje walidację** kolumny. Jeśli wartością jest false, element nie obsługuje walidacji.  
   
-##  <a name="IncludeReferences"></a> Dołączyć inne projekty, do weryfikacji i zestawy .NET  
+## <a name="IncludeReferences"></a> Dołączyć inne projekty, do weryfikacji i zestawy .NET  
  Podczas przeciągania elementów do diagramu warstwowego odwołania do projektów lub odpowiednich zestawów .NET są dodawane automatycznie do **odwołania do warstwy** folderu w projekcie modelowania. Folder ten zawiera odwołania do zestawów i projektów, które są analizowane podczas walidacji. Możesz dołączyć inne projekty i zestawy .NET do walidacji bez ręcznego przeciągania ich do diagramu warstwowego.  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt modelowania lub **odwołania do warstwy** folder, a następnie kliknij **Dodaj odwołanie**.  
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt modelowania lub **odwołania do warstwy** folder, a następnie kliknij **Dodaj odwołanie**.  
   
-2.  W **Dodaj odwołanie** okno dialogowe, zaznacz zestawy lub projekty, a następnie kliknij przycisk **OK**.  
+2. W **Dodaj odwołanie** okno dialogowe, zaznacz zestawy lub projekty, a następnie kliknij przycisk **OK**.  
   
-##  <a name="ValidateManually"></a> Ręczna Walidacja kodu  
+## <a name="ValidateManually"></a> Ręczna Walidacja kodu  
  Jeśli masz otwarty diagram warstwowy jest połączony z elementami rozwiązania, możesz uruchomić **weryfikacji** polecenie skrótu z diagramu. Można również użyć wiersza polecenia do uruchomienia **msbuild** polecenia **validatearchitecture** wartość właściwości niestandardowej **True**. Na przykład, po wprowadzeniu dowolnych zmian w kodzie należy regularnie wykonywać walidację warstwy tak, aby można było wcześnie wychwycić konflikty zależności.  
   
 #### <a name="to-validate-code-from-an-open-layer-diagram"></a>Aby walidować kod z otwartego diagramu warstwowego  
   
-1.  Kliknij prawym przyciskiem myszy powierzchnię diagramu, a następnie kliknij przycisk **sprawdzanie poprawności architektury**.  
+1. Kliknij prawym przyciskiem myszy powierzchnię diagramu, a następnie kliknij przycisk **sprawdzanie poprawności architektury**.  
   
     > [!NOTE]
     >  Domyślnie **Build Action** właściwość warstwy plik diagramu (.layerdiagram) jest ustawiona na **weryfikacji** tak, aby diagram znajduje się w trakcie procesu walidacji.  
   
      **Lista błędów** okna raporty o błędach. Aby uzyskać więcej informacji na temat błędów sprawdzania poprawności, zobacz [omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors).  
   
-2.  Aby wyświetlić źródło każdego błędu, klikaj dwukrotnie poszczególne błędy w **lista błędów** okna.  
+2. Aby wyświetlić źródło każdego błędu, klikaj dwukrotnie poszczególne błędy w **lista błędów** okna.  
   
     > [!NOTE]
     >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] może wyświetlać mapę kodu, zamiast źródła błędu. Dzieje się tak, gdy kod ma zależność z zestawem, która nie jest określona przez diagram warstwowy, lub gdy w kodzie brakuje zależności, która jest określona przez diagram warstwowy. Przejrzyj mapy kodu lub kod w celu określenia, czy powinna istnieć zależność. Aby uzyskać więcej informacji na temat map kodu, zobacz [mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).  
   
-3.  Aby zarządzać błędami, zobacz [zarządzanie błędami walidacji](#ManageErrors).  
+3. Aby zarządzać błędami, zobacz [zarządzanie błędami walidacji](#ManageErrors).  
   
 #### <a name="to-validate-code-at-the-command-prompt"></a>Aby walidować kod z wiersza polecenia  
   
@@ -141,7 +141,7 @@ Aby upewnić się, że kod jest zgodny z projektem, Przeprowadź walidację kodu
   
    Aby uzyskać więcej informacji na temat błędów sprawdzania poprawności, zobacz [omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors).  
   
-###  <a name="ManageErrors"></a> Zarządzanie błędami walidacji  
+### <a name="ManageErrors"></a> Zarządzanie błędami walidacji  
  Podczas procesu projektowania możesz pominąć niektóre konflikty zgłoszone podczas walidacji. Na przykład możesz pominąć błędy, które są już poprawiane lub które nie są istotne w konkretnym scenariuszu. Błąd zostanie pominięty, jest dobrym rozwiązaniem do dziennika element roboczy [!INCLUDE[esprfound](../includes/esprfound-md.md)].  
   
 > [!WARNING]
@@ -160,12 +160,12 @@ Aby upewnić się, że kod jest zgodny z projektem, Przeprowadź walidację kodu
 |Przywracanie wszystkich pominiętych błędów w **lista błędów** okna|Kliknij prawym przyciskiem myszy w dowolnym miejscu w **lista błędów** okna, wskaż **zarządzanie błędami walidacji**, a następnie kliknij przycisk **Pokaż wszystkie pominięte błędy**.|  
 |Ukrywanie wszystkich pominiętych błędów w **lista błędów** okna|Kliknij prawym przyciskiem myszy w dowolnym miejscu w **lista błędów** okna, wskaż **zarządzanie błędami walidacji**, a następnie kliknij przycisk **Pokaż wszystkie pominięte błędy**.|  
   
-##  <a name="ValidateAuto"></a> Automatycznie Walidacja kodu  
+## <a name="ValidateAuto"></a> Automatycznie Walidacja kodu  
  Walidację warstwy możesz wykonać przy każdym uruchomieniu lokalnej kompilacji. Jeśli Twój zespół używa programu Team Foundation Build, możesz wykonać walidację warstwy z bramkowanymi ewidencjonowaniami, którą można określić, tworząc niestandardowe zadanie MSBuild, a następnie używając raportów kompilacji do zbierania błędów walidacji. Aby utworzyć kompilacje z bramkowanym ewidencjonowaniem, zobacz [używać procesu kompilacji ewidencjonowanej warunkowo w celu sprawdzenia poprawności zmian](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).  
   
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>Aby walidować kod automatycznie podczas lokalnej kompilacji  
   
--   Użyj edytora tekstów, aby otworzyć plik projektu modelowania (.modelproj), a następnie dołącz następującą właściwość:  
+- Użyj edytora tekstów, aby otworzyć plik projektu modelowania (.modelproj), a następnie dołącz następującą właściwość:  
   
 ```  
 <ValidateArchitecture>true</ValidateArchitecture>  
@@ -197,24 +197,24 @@ Aby upewnić się, że kod jest zgodny z projektem, Przeprowadź walidację kodu
   
    Aby uzyskać więcej informacji na temat błędów sprawdzania poprawności, zobacz [omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors). Aby uzyskać więcej informacji na temat [!INCLUDE[esprbuild](../includes/esprbuild-md.md)], zobacz:  
   
--   [Kompiluj aplikację](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [Kompiluj aplikację](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
--   [Użyj domyślnego szablonu procesu kompilacji](http://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)  
+- [Użyj domyślnego szablonu procesu kompilacji](http://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)  
   
--   [Modyfikowanie starszej kompilacji oparty na UpgradeTemplate.xaml](http://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)  
+- [Modyfikowanie starszej kompilacji oparty na UpgradeTemplate.xaml](http://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)  
   
--   [Dostosowywanie szablonu procesu kompilacji](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [Dostosowywanie szablonu procesu kompilacji](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
--   [Monitoruj postęp kompilacji uruchomiony](http://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
+- [Monitoruj postęp kompilacji uruchomiony](http://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
   
-##  <a name="TroubleshootingValidation"></a> Rozwiązywanie problemów z problemy ze sprawdzaniem poprawności warstwy  
+## <a name="TroubleshootingValidation"></a> Rozwiązywanie problemów z problemy ze sprawdzaniem poprawności warstwy  
  W poniższej tabeli opisano problemy związane z walidacją warstwy i ich rozwiązania. Problemy te różnią się od błędów, które wynikają z konfliktów między kodem i projektem. Aby uzyskać więcej informacji na temat tych błędów, zobacz [omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors).  
   
 |**Problem**|**Możliwa przyczyna**|**Rozdzielczość**|  
 |---------------|------------------------|--------------------|  
 |Błędy walidacji nie występują w oczekiwany sposób.|Walidacja nie działa na diagramach warstwowych, które są kopiowane z innych diagramów warstwowych w Eksploratorze rozwiązań i które są w tym samym projekcie modelowania. Diagramy warstwowe kopiowane w ten sposób zawierają te same odwołania, co oryginalny diagram warstwowe.|Dodaj nowy diagram warstwowy do projektu modelowania.<br /><br /> Skopiuj elementy ze źródłowego diagramu warstwowego do nowego diagramu.|  
   
-##  <a name="UnderstandingValidationErrors"></a> Zrozumienie i rozwiązywanie błędów walidacji warstwy  
+## <a name="UnderstandingValidationErrors"></a> Zrozumienie i rozwiązywanie błędów walidacji warstwy  
  Podczas walidacji kodu na podstawie diagramu warstwowego błędy walidacji występują, gdy kod jest niezgodny z projektem. Na przykład następujące warunki mogą powodować występowanie błędów walidacji:  
   
 - Artefakt jest przypisany do niewłaściwej warstwy. W takim przypadku przenieś artefakt.  

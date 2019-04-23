@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ce859a1fd6ee491ecf22003f5ef99936136496a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3bce742d4ce0374cb7270b964354d65a03e917d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663148"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045606"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Instrukcje: Kompilacja tych samych plików źródłowych przy użyciu różnych opcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Podczas kompilowania projektów kompilacji są często te same składniki z opcj
   
 #### <a name="to-set-a-group-of-properties-based-on-another-property"></a>Aby ustawić grupę na podstawie właściwości innej właściwości  
   
--   Użyj `Condition` atrybutu w `PropertyGroup` podobny do następującego elementu:  
+- Użyj `Condition` atrybutu w `PropertyGroup` podobny do następującego elementu:  
   
     ```  
     <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">  
@@ -44,7 +44,7 @@ Podczas kompilowania projektów kompilacji są często te same składniki z opcj
   
 #### <a name="to-define-a-property-based-on-another-property"></a>Aby zdefiniować właściwość, na podstawie innej właściwości  
   
--   Użyj `Condition` atrybutu w `Property` podobny do następującego elementu:  
+- Użyj `Condition` atrybutu w `Property` podobny do następującego elementu:  
   
     ```  
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
@@ -55,7 +55,7 @@ Podczas kompilowania projektów kompilacji są często te same składniki z opcj
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>Aby ustawić właściwości projektu w wierszu polecenia  
   
--   Użyj **/property** przełącznik z właściwości i wartości właściwości. Na przykład:  
+- Użyj **/property** przełącznik z właściwości i wartości właściwości. Na przykład:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  

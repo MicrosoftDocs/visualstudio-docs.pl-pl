@@ -10,12 +10,12 @@ ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4310dadc1e4e1d601b5e1e7401749d44b132174e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 46ef86b8cde506aad3e00aa6b5dbc6470c0087de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779669"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052184"
 ---
 # <a name="how-to-get-a-service"></a>Instrukcje: Uzyskiwanie usługi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ Często muszą uzyskać dostęp do różnych funkcji usług Visual Studio. Ogól
   
 ## <a name="getting-a-service-from-an-initialized-vspackage"></a>Pobieranie usługi z zainicjowane pakietu VSPackage  
   
-1.  Każde rozszerzenie programu Visual Studio rozpoczyna się od Projekt wdrożenia VSIX, który będzie zawierać zasoby rozszerzenia. Tworzenie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu VSIX, o nazwie `GetServiceExtension`. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C# / rozszerzalności**.  
+1. Każde rozszerzenie programu Visual Studio rozpoczyna się od Projekt wdrożenia VSIX, który będzie zawierać zasoby rozszerzenia. Tworzenie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu VSIX, o nazwie `GetServiceExtension`. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C# / rozszerzalności**.  
   
-2.  Teraz Dodaj polecenie niestandardowe szablon elementu o nazwie **GetServiceCommand**. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C# / rozszerzalności** i wybierz **polecenia niestandardowego**. W **nazwa** u dołu okna, Zmień nazwę pliku polecenia, aby **GetServiceCommand.cs**. Aby uzyskać więcej informacji o sposobie tworzenia niestandardowych poleceń [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2. Teraz Dodaj polecenie niestandardowe szablon elementu o nazwie **GetServiceCommand**. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C# / rozszerzalności** i wybierz **polecenia niestandardowego**. W **nazwa** u dołu okna, Zmień nazwę pliku polecenia, aby **GetServiceCommand.cs**. Aby uzyskać więcej informacji o sposobie tworzenia niestandardowych poleceń [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-3.  W GetServiceCommand.cs Usuń treść metody MenuItemCommand i Dodaj następujący kod:  
+3. W GetServiceCommand.cs Usuń treść metody MenuItemCommand i Dodaj następujący kod:  
   
     ```csharp  
     IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
@@ -43,9 +43,9 @@ Często muszą uzyskać dostęp do różnych funkcji usług Visual Studio. Ogól
   
      Ten kod pobiera usługi SVsActivityLog i rzutuje je na <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfejs, który może służyć do zapisu w dzienniku aktywności. Aby uzyskać przykład, zobacz [jak: Korzystanie z dziennika aktywności](../extensibility/how-to-use-the-activity-log.md).  
   
-4.  Skompiluj projekt, a następnie rozpocząć debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.  
+4. Skompiluj projekt, a następnie rozpocząć debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.  
   
-5.  W menu Narzędzia w eksperymentalnym wystąpieniu znaleźć **wywołania GetServiceCommand** przycisku. Po kliknięciu tego przycisku, powinien zostać wyświetlony komunikat informujący, że **znaleziono działanie usługi rejestrowania.**  
+5. W menu Narzędzia w eksperymentalnym wystąpieniu znaleźć **wywołania GetServiceCommand** przycisku. Po kliknięciu tego przycisku, powinien zostać wyświetlony komunikat informujący, że **znaleziono działanie usługi rejestrowania.**  
   
 ## <a name="getting-a-service-from-a-tool-window-or-control-container"></a>Wprowadzenie usługi z kontenera narzędzia okna lub kontrolki  
  Czasami może być konieczne uzyskiwanie usługi okno narzędzia lub kontroli kontenera, które nie zostały zlokalizowane; w przeciwnym razie ma zostały umieszczone u dostawcy usług, które nie wie o usługę, którą chcesz. Na przykład można zapisywać w dzienniku aktywności ze znajdujących się pod kontrolą.  

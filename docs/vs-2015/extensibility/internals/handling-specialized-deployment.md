@@ -11,12 +11,12 @@ ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f5913a8b269d767bf7f406c38761c3a56695256e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c69c7732079b5cb85932d6d71cd797166b744d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761016"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054810"
 ---
 # <a name="handling-specialized-deployment"></a>Obsługa wdrożeń specjalistycznych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Wdrożenie jest operacją opcjonalne dla projektów. Projekt sieci Web, na przyk
   
 #### <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>Do obsługi wdrożenia specjalistycznych przez projekt podtyp  
   
--   Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A> metody do rejestrowania środowiska, aby otrzymywać powiadomienia o zdarzeń stanu wdrożenia.  
+- Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A> metody do rejestrowania środowiska, aby otrzymywać powiadomienia o zdarzeń stanu wdrożenia.  
   
     ```vb  
     Private adviseSink As Microsoft.VisualStudio.Shell.EventSinkCollection = New Microsoft.VisualStudio.Shell.EventSinkCollection()  
@@ -78,7 +78,7 @@ Wdrożenie jest operacją opcjonalne dla projektów. Projekt sieci Web, na przyk
   
     ```  
   
--   Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A> metodę, aby anulować rejestrację środowiska, aby otrzymywać powiadomienia o zdarzeń stanu wdrożenia.  
+- Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A> metodę, aby anulować rejestrację środowiska, aby otrzymywać powiadomienia o zdarzeń stanu wdrożenia.  
   
     ```vb  
     Public Function UnadviseDeployStatusCallback(ByVal dwCookie As UInteger) As Integer  
@@ -96,7 +96,7 @@ Wdrożenie jest operacją opcjonalne dla projektów. Projekt sieci Web, na przyk
   
     ```  
   
--   Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> metody, które można wykonać operacji zatwierdzania specyficzne dla aplikacji.  Ta metoda jest używana głównie do wdrożenia bazy danych.  
+- Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> metody, które można wykonać operacji zatwierdzania specyficzne dla aplikacji.  Ta metoda jest używana głównie do wdrożenia bazy danych.  
   
     ```vb  
     Public Function Commit(ByVal dwReserved As UInteger) As Integer  
@@ -114,7 +114,7 @@ Wdrożenie jest operacją opcjonalne dla projektów. Projekt sieci Web, na przyk
   
     ```  
   
--   Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> metody, które można wykonać operacji wycofywania. Gdy ta metoda jest wywoływana, Projekt wdrożenia należy wykonać niezależnie od rodzaju przydaje się, aby wycofać zmian i przywrócenia stanu projektu. Ta metoda jest używana głównie do wdrożenia bazy danych.  
+- Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> metody, które można wykonać operacji wycofywania. Gdy ta metoda jest wywoływana, Projekt wdrożenia należy wykonać niezależnie od rodzaju przydaje się, aby wycofać zmian i przywrócenia stanu projektu. Ta metoda jest używana głównie do wdrożenia bazy danych.  
   
     ```vb  
     Public Function Commit(ByVal dwReserved As UInteger) As Integer  
@@ -132,7 +132,7 @@ Wdrożenie jest operacją opcjonalne dla projektów. Projekt sieci Web, na przyk
   
     ```  
   
--   Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> metodę pozwala ustalić, czy projekt jest w stanie uruchomić operacji wdrażania.  
+- Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> metodę pozwala ustalić, czy projekt jest w stanie uruchomić operacji wdrażania.  
   
     ```vb  
     Public Function QueryStartDeploy(ByVal dwOptions As UInteger, ByVal pfSupported As Integer(), ByVal pfReady As Integer()) As Integer  
@@ -165,7 +165,7 @@ Wdrożenie jest operacją opcjonalne dla projektów. Projekt sieci Web, na przyk
   
     ```  
   
--   Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> metodę pozwala ustalić, czy operacja wdrażania została ukończona pomyślnie.  
+- Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> metodę pozwala ustalić, czy operacja wdrażania została ukończona pomyślnie.  
   
     ```vb  
     Public Function QueryStatusDeploy(ByRef pfDeployDone As Integer) As Integer  
@@ -188,7 +188,7 @@ Wdrożenie jest operacją opcjonalne dla projektów. Projekt sieci Web, na przyk
   
     ```  
   
--   Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A> metodę, aby rozpocząć operację wdrażania w oddzielnym wątku. Umieść kod specyficzne dla wdrożenia aplikacji wewnątrz `Deploy` metody.  
+- Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A> metodę, aby rozpocząć operację wdrażania w oddzielnym wątku. Umieść kod specyficzne dla wdrożenia aplikacji wewnątrz `Deploy` metody.  
   
     ```vb  
     Public Function StartDeploy(ByVal pIVsOutputWindowPane As IVsOutputWindowPane, ByVal dwOptions As UInteger) As Integer  
@@ -245,7 +245,7 @@ Wdrożenie jest operacją opcjonalne dla projektów. Projekt sieci Web, na przyk
   
     ```  
   
--   Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A> metodę, aby zatrzymać operację wdrożenia. Ta metoda jest wywoływana, gdy użytkownik naciśnie **anulować** przycisku w procesie wdrażania.  
+- Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A> metodę, aby zatrzymać operację wdrożenia. Ta metoda jest wywoływana, gdy użytkownik naciśnie **anulować** przycisku w procesie wdrażania.  
   
     ```vb  
     Public Function StopDeploy(ByVal fSync As Integer) As Integer  

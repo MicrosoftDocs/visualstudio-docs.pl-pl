@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da7b755c5b0ec72a9e1b906bdc1cd27a6dca7c0a
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: 2bb6b2d6e7ae3504415f59aeef1fddb8d9f98865
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584314"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052405"
 ---
 # <a name="customize-your-build"></a>Dostosowywanie kompilacji
 
@@ -51,6 +51,7 @@ Na przykład, jeśli chcesz włączyć wszystkie Twoje projekty dostęp do nowyc
     </PropertyGroup>
    </Project>
    ```
+
 3. Uruchom program MSBuild. Importy istniejącego projektu *Microsoft.Common.props* i *Microsoft.Common.targets* znaleźć pliku i zaimportuj go.
 
 ### <a name="search-scope"></a>Zakres wyszukiwania

@@ -11,29 +11,29 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e4d28305f8ccd1a6b212b520a7501164be2cc0ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6f26c093f09cd5b7b99f00ee69a81be99c769e2e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777633"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054241"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>Generowanie nowego projektu: Kulisami część pierwsza
+# <a name="new-project-generation-under-the-hood-part-one"></a>Generowanie nowego projektu: szczegółowe informacje (część pierwsza)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Nigdy nie myśl o tym, jak utworzyć swój własny typ projektu? Zastanawiasz się, co rzeczywiście się dzieje po utworzeniu nowego projektu? Teraz wykonać podglądu pod maską i zobacz, co naprawdę dzieje.  
   
  Istnieje kilka zadań, które współrzędne programu Visual Studio:  
   
--   Wyświetla drzewo wszystkich typów dostępnych projektów.  
+- Wyświetla drzewo wszystkich typów dostępnych projektów.  
   
--   On Wyświetla listę szablonów aplikacji dla każdego typu projektu i umożliwia wybranie jednej.  
+- On Wyświetla listę szablonów aplikacji dla każdego typu projektu i umożliwia wybranie jednej.  
   
--   Zbiera informacje o projekcie dla aplikacji, na przykład nazwę i ścieżkę projektu.  
+- Zbiera informacje o projekcie dla aplikacji, na przykład nazwę i ścieżkę projektu.  
   
--   Przekazuje te informacje do fabryki projektu.  
+- Przekazuje te informacje do fabryki projektu.  
   
--   Generuje on elementy projektu i foldery w bieżącym rozwiązaniu.  
+- Generuje on elementy projektu i foldery w bieżącym rozwiązaniu.  
   
 ## <a name="the-new-project-dialog-box"></a>Okno dialogowe Nowy projekt  
  Wszystko zaczyna się po wybraniu typu projektu dla nowego projektu. Zacznijmy od kliknięcie **nowy projekt** na **pliku** menu. **Nowy projekt** pojawi się okno dialogowe, wyglądające podobnie do następującej:  
@@ -116,11 +116,11 @@ devenv /installvstemplates
   
  Gdy **nowy projekt** zostanie otwarte okno dialogowe [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] przechodzi przez ProjectTemplates folder i zostaje odtworzony strukturę w **typów projektów** drzewa z niektórych zmian:  
   
--   Węzeł główny na **typów projektów** drzewa jest określana przez szablon aplikacji.  
+- Węzeł główny na **typów projektów** drzewa jest określana przez szablon aplikacji.  
   
--   Nazwa węzła może być lokalizowana i może zawierać znaków specjalnych.  
+- Nazwa węzła może być lokalizowana i może zawierać znaków specjalnych.  
   
--   Można zmienić kolejność sortowania.  
+- Można zmienić kolejność sortowania.  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>Znajdowanie węzeł główny dla typu projektu  
  Gdy program Visual Studio przechodzi przez foldery ProjectTemplates, otworzy wszystkie pliki zip i wyodrębnia pliki vstemplate. Plik .vstemplate używa XML do opisu szablonu aplikacji. Aby uzyskać więcej informacji, zobacz [Generowanie nowego projektu: Za kulisami, część dwóch](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  

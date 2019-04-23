@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae318a4fbfe7e452ab995ad53d961d288c0cbcf5
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: fadc901ce09c6e85541956d800201a53b6d73490
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584405"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054968"
 ---
 # <a name="walkthrough-use-msbuild"></a>Przewodnik: Użyj programu MSBuild
 
@@ -56,13 +56,13 @@ Można uruchomić program MSBuild z programu Visual Studio lub **okna polecenia*
 
 **Aby zbadać pliku projektu**
 
-1.  W **Eksploratora rozwiązań**, kliknij węzeł projektu **BuildApp**.
+1. W **Eksploratora rozwiązań**, kliknij węzeł projektu **BuildApp**.
 
-2.  W **właściwości** przeglądarki, zwróć uwagę, że **pliku projektu** właściwość *BuildApp.csproj*. Wszystkie pliki projektu są nazywane z sufiksem *proj*. Jeśli została utworzona projekt języka Visual Basic, nazwa pliku projektu będzie *BuildApp.vbproj*.
+2. W **właściwości** przeglądarki, zwróć uwagę, że **pliku projektu** właściwość *BuildApp.csproj*. Wszystkie pliki projektu są nazywane z sufiksem *proj*. Jeśli została utworzona projekt języka Visual Basic, nazwa pliku projektu będzie *BuildApp.vbproj*.
 
-3.  Kliknij prawym przyciskiem myszy węzeł projektu, a następnie kliknij przycisk **Zwolnij projekt**.
+3. Kliknij prawym przyciskiem myszy węzeł projektu, a następnie kliknij przycisk **Zwolnij projekt**.
 
-4.  Ponownie kliknij prawym przyciskiem myszy węzeł projektu, a następnie kliknij przycisk **Edytuj BuildApp.csproj**.
+4. Ponownie kliknij prawym przyciskiem myszy węzeł projektu, a następnie kliknij przycisk **Edytuj BuildApp.csproj**.
 
      Plik projektu zostanie wyświetlony w edytorze kodu.
 
@@ -222,16 +222,20 @@ $(PropertyName)
 4. Zbadaj dane wyjściowe. Powinny zostać wyświetlone następujące dwa wiersze (.NET Framework w wersji mogą się różnić):
 
     ::: moniker range=">=vs-2019"
+
     ```
     Configuration is Debug
     MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2019\<Visual Studio SKU>\MSBuild\15.0\Bin
     ```
+
     ::: moniker-end
     ::: moniker range="vs-2017"
+
     ```
     Configuration is Debug
     MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2017\<Visual Studio SKU>\MSBuild\15.0\Bin
     ```
+
     ::: moniker-end
 
 > [!NOTE]
@@ -263,13 +267,13 @@ $(PropertyName)
 
 **Aby ustawić wartość właściwości z wiersza polecenia**
 
-1.  Z **okna polecenia**, wprowadź i wykonuje ten wiersz:
+1. Z **okna polecenia**, wprowadź i wykonuje ten wiersz:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
     ```
 
-2.  Zbadaj dane wyjściowe. Powinien zostać wyświetlony ten wiersz:
+2. Zbadaj dane wyjściowe. Powinien zostać wyświetlony ten wiersz:
 
     ```
     Configuration is Release.
@@ -381,21 +385,21 @@ Zmień zadanie komunikatu do używania znaki powrotu karetki i wiersz źródła 
 
 **Aby wyświetlić typ elementu wartości jeden na wiersz**
 
-1.  W edytorze kodu Zastąp zadanie komunikatu ten wiersz:
+1. W edytorze kodu Zastąp zadanie komunikatu ten wiersz:
 
     ```xml
     <Message Text="Compile item type contains @(Compile, '%0A%0D')" />
     ```
 
-2.  Zapisz plik projektu.
+2. Zapisz plik projektu.
 
-3.  Z **okna polecenia**, wprowadź i wykonuje ten wiersz:
+3. Z **okna polecenia**, wprowadź i wykonuje ten wiersz:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4.  Zbadaj dane wyjściowe. Powinny zostać wyświetlone następujące wiersze:
+4. Zbadaj dane wyjściowe. Powinny zostać wyświetlone następujące wiersze:
 
     ```
     Compile item type contains Form1.cs

@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b78e70ae790a39cb761eca34dcdc2b9b32b5bbfd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fd0bf5c0e95b4c859dc2d6470ab6f922041b20ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653635"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049883"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Tworzenie bazy danych SQL za pomocą skryptu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,30 +28,30 @@ W tym przewodniku używasz programu Visual Studio do tworzenia małej bazy danyc
   
  **W tym temacie**  
   
--   [Utwórz skrypt, który zawiera schemat bazy danych](../data-tools/create-a-sql-database-by-using-a-script.md#CreateScript)  
+- [Utwórz skrypt, który zawiera schemat bazy danych](../data-tools/create-a-sql-database-by-using-a-script.md#CreateScript)  
   
--   [Utwórz projekt bazy danych i importowanie schematu](../data-tools/create-a-sql-database-by-using-a-script.md#CreateProject)  
+- [Utwórz projekt bazy danych i importowanie schematu](../data-tools/create-a-sql-database-by-using-a-script.md#CreateProject)  
   
--   [Wdrażanie bazy danych](../data-tools/create-a-sql-database-by-using-a-script.md#DeployDatabase)  
+- [Wdrażanie bazy danych](../data-tools/create-a-sql-database-by-using-a-script.md#DeployDatabase)  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Do przeprowadzenia tego instruktażu, musi mieć programu SQL Server Express LocalDB lub innej bazy danych SQL zainstalowana.  
   
-##  <a name="CreateScript"></a> Utwórz skrypt, który zawiera schemat bazy danych  
+## <a name="CreateScript"></a> Utwórz skrypt, który zawiera schemat bazy danych  
   
 #### <a name="to-create-a-script-from-which-you-can-import-a-schema"></a>Aby utworzyć skrypt, z którego można importować schematy  
   
-1.  W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], na pasku menu wybierz **pliku** > **New** > **pliku**.  
+1. W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], na pasku menu wybierz **pliku** > **New** > **pliku**.  
   
      **Nowy plik** pojawi się okno dialogowe.  
   
-2.  W **kategorie** listy wybierz **ogólne**.  
+2. W **kategorie** listy wybierz **ogólne**.  
   
-3.  W **szablony** listy wybierz **plik Sql**, a następnie wybierz pozycję **Otwórz** przycisku.  
+3. W **szablony** listy wybierz **plik Sql**, a następnie wybierz pozycję **Otwórz** przycisku.  
   
      Zostanie otwarty Edytor Transact-SQL.  
   
-4.  Skopiuj poniższy kod języka Transact-SQL, a następnie wklej go do edytora języka Transact-SQL.  
+4. Skopiuj poniższy kod języka Transact-SQL, a następnie wklej go do edytora języka Transact-SQL.  
   
     ```  
     PRINT N'Creating Sales...';  
@@ -213,34 +213,34 @@ W tym przewodniku używasz programu Visual Studio do tworzenia małej bazy danyc
     GO  
     ```  
   
-5.  Na pasku menu wybierz **pliku** > **Zapisz SqlQuery_1.sql jako**.  
+5. Na pasku menu wybierz **pliku** > **Zapisz SqlQuery_1.sql jako**.  
   
      **Zapisz plik jako** pojawi się okno dialogowe.  
   
-6.  W **nazwy pliku** wprowadź `SampleImportScript.sql`, zanotuj lokalizację, w którym będzie zapisać plik, a następnie wybierz **Zapisz** przycisku.  
+6. W **nazwy pliku** wprowadź `SampleImportScript.sql`, zanotuj lokalizację, w którym będzie zapisać plik, a następnie wybierz **Zapisz** przycisku.  
   
-7.  Na pasku menu wybierz **pliku** > **Zamknij rozwiązanie**.  
+7. Na pasku menu wybierz **pliku** > **Zamknij rozwiązanie**.  
   
      Następnie utwórz projekt bazy danych, a następnie zaimportuj schemat ze skryptu, który został utworzony.  
   
-##  <a name="CreateProject"></a> Utwórz projekt bazy danych i importowanie schematu  
+## <a name="CreateProject"></a> Utwórz projekt bazy danych i importowanie schematu  
   
 #### <a name="to-create-a-database-project"></a>Aby utworzyć projekt bazy danych  
   
-1.  Na pasku menu wybierz **pliku** > **New** > **projektu**.  
+1. Na pasku menu wybierz **pliku** > **New** > **projektu**.  
   
      **Nowy projekt** pojawi się okno dialogowe.  
   
-2.  W obszarze **zainstalowane**, rozwiń węzeł **szablony** węzła, rozwiń węzeł **inne języki** węzeł **programu SQL Server** kategorii, a następnie Wybierz **projekt bazy danych programu SQL Server** szablonu.  
+2. W obszarze **zainstalowane**, rozwiń węzeł **szablony** węzła, rozwiń węzeł **inne języki** węzeł **programu SQL Server** kategorii, a następnie Wybierz **projekt bazy danych programu SQL Server** szablonu.  
   
     > [!NOTE]
     >  **Inne języki** węzeł nie jest wyświetlane we wszystkich instalacjach programu Visual Studio.  
   
-3.  W **nazwa** wprowadź `Small Database`.  
+3. W **nazwa** wprowadź `Small Database`.  
   
-4.  Wybierz **Utwórz katalog rozwiązania** pole wyboru, jeśli nie została jeszcze wybrana.  
+4. Wybierz **Utwórz katalog rozwiązania** pole wyboru, jeśli nie została jeszcze wybrana.  
   
-5.  Wyczyść **Dodaj do kontroli źródła** pole wyboru, jeśli nie jest już wyczyszczone, a następnie wybierz **OK** przycisku.  
+5. Wyczyść **Dodaj do kontroli źródła** pole wyboru, jeśli nie jest już wyczyszczone, a następnie wybierz **OK** przycisku.  
   
      Projekt bazy danych jest tworzony i wyświetlany w **Eksploratora rozwiązań**.  
   
@@ -248,27 +248,27 @@ W tym przewodniku używasz programu Visual Studio do tworzenia małej bazy danyc
   
 #### <a name="to-import-a-database-schema-from-a-script"></a>Aby importować schemat bazy danych ze skryptu  
   
-1.  Na pasku menu wybierz **projektu** > **importu** > **skryptu**.  
+1. Na pasku menu wybierz **projektu** > **importu** > **skryptu**.  
   
-2.  Na **powitalnej** strony, Przejrzyj tekst, a następnie wybierz pozycję **dalej** przycisku.  
+2. Na **powitalnej** strony, Przejrzyj tekst, a następnie wybierz pozycję **dalej** przycisku.  
   
-3.  Wybierz **pojedynczy plik** przycisk opcji, a następnie wybierz **Przeglądaj** przycisku.  
+3. Wybierz **pojedynczy plik** przycisk opcji, a następnie wybierz **Przeglądaj** przycisku.  
   
      **Importuj skrypt SQL** pojawi się okno dialogowe.  
   
-4.  Otwórz folder, w której zapisano plik SampleImportScript.sql, wybierz plik, a następnie wybierz **Otwórz** przycisku.  
+4. Otwórz folder, w której zapisano plik SampleImportScript.sql, wybierz plik, a następnie wybierz **Otwórz** przycisku.  
   
-5.  Wybierz **Zakończ** przycisk, aby zamknąć **Importuj skrypt SQL** okno dialogowe.  
+5. Wybierz **Zakończ** przycisk, aby zamknąć **Importuj skrypt SQL** okno dialogowe.  
   
      Skrypt jest importowany, a obiekty definiowane przez skrypt są dodane do projektu bazy danych.  
   
-6.  Przejrzyj podsumowanie, a następnie kliknij przycisk **Zakończ** przycisk, aby zamknąć **Import pliku skryptu SQL** okno dialogowe.  
+6. Przejrzyj podsumowanie, a następnie kliknij przycisk **Zakończ** przycisk, aby zamknąć **Import pliku skryptu SQL** okno dialogowe.  
   
-7.  W **Eksploratora rozwiązań**, rozwiń węzeł sprzedaży, skryptów i zabezpieczeń folderów projektu i sprawdź, czy zawierają one pliki .sql.  
+7. W **Eksploratora rozwiązań**, rozwiń węzeł sprzedaży, skryptów i zabezpieczeń folderów projektu i sprawdź, czy zawierają one pliki .sql.  
   
-8.  W **Eksplorator obiektów SQL Server**, sprawdź, czy baza danych jest wyświetlana w obszarze **projektów** węzła.  
+8. W **Eksplorator obiektów SQL Server**, sprawdź, czy baza danych jest wyświetlana w obszarze **projektów** węzła.  
   
      W tym momencie baza danych zawiera tylko obiekty systemowe, takie jak tabele i procedury składowane. Po wdrożeniu bazy danych będzie zawierać tabele użytkownika i procedur składowanych, które definiują skrypty.  
   
-##  <a name="DeployDatabase"></a> Wdrażanie bazy danych  
+## <a name="DeployDatabase"></a> Wdrażanie bazy danych  
  Po naciśnięciu klawisza **F5** klucza, Wdróż (lub opublikować) bazę danych do bazy danych LocalDB, domyślnie. Można wdrożyć bazy danych do innej lokalizacji otwierając stronę właściwości dla projektu, wybierając **debugowania** kartę, a następnie zmieniając ciąg połączenia.

@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 48d6849a6656f5914d11250e26681e208cdb7487
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: e344fa63a9778d0db45ceeb0e313faa4c6448241
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567218"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057099"
 ---
 # <a name="managing-references-in-a-project"></a>Zarządzanie odwołaniami w projekcie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,19 +41,19 @@ Pisanie kodu w stosunku do składnika zewnętrznego lub połączone usługi, pro
   
  Można zrobić odnośnik do następujących typów składników i usług:  
   
--   Odwołania aplikacji Windows Store  
+- Odwołania aplikacji Windows Store  
   
--   Biblioteki klas .NET framework lub zestawy  
+- Biblioteki klas .NET framework lub zestawy  
   
--   COM — Składniki  
+- COM — Składniki  
   
--   Inne zespoły lub biblioteki klas projektów w tym samym rozwiązaniu  
+- Inne zespoły lub biblioteki klas projektów w tym samym rozwiązaniu  
   
--   Usługi sieci Web XML  
+- Usługi sieci Web XML  
   
 ## <a name="windows-store-app-references"></a>Odwołania aplikacji Windows Store  
   
-### <a name="project-references"></a>Odwołania do projektu  
+### <a name="project-references"></a>Informacje o projekcie  
  Uniwersalne projekty platformy Windows (UWP), przeznaczonych dla systemu Windows 10 można utworzyć odwołania do innych projektów platformy uniwersalnej systemu Windows w rozwiązaniu lub do projektów Windows Store lub plików binarnych, których platformą docelową [!INCLUDE[win81](../includes/win81-md.md)]pod warunkiem, że te projekty nie należy używać interfejsów API, które zostały wycofane w systemie Windows 10. Aby uzyskać więcej informacji, zobacz [przenieść z 8 środowiska uruchomieniowego Windows do platformy uniwersalnej systemu Windows](https://msdn.microsoft.com/library/windows/apps/dn954974.aspx).  
   
  Jeśli chcesz przekierować [!INCLUDE[win81](../includes/win81-md.md)] projektów dla systemu Windows 10, zobacz [przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)  
@@ -63,9 +63,9 @@ Pisanie kodu w stosunku do składnika zewnętrznego lub połączone usługi, pro
   
  Jeśli stwierdzisz, że nie jest obsługiwany przez zestaw SDK rozszerzeń, do którego nastąpiło odwołanie przez aplikację, a następnie należy wykonać następujące czynności:  
   
-1.  Sprawdź nazwę projektu, który jest przyczyną błędu. Platformy, dla której projekt jest adresowany jest podana w nawiasie obok nazwy projektu. Na przykład **Nazwamojegoprojektu (Windows 8.1)** oznacza, że projekt **Nazwamojegoprojektu** jest przeznaczony dla wersji platformy [!INCLUDE[win81](../includes/win81-md.md)].  
+1. Sprawdź nazwę projektu, który jest przyczyną błędu. Platformy, dla której projekt jest adresowany jest podana w nawiasie obok nazwy projektu. Na przykład **Nazwamojegoprojektu (Windows 8.1)** oznacza, że projekt **Nazwamojegoprojektu** jest przeznaczony dla wersji platformy [!INCLUDE[win81](../includes/win81-md.md)].  
   
-2.  Przejdź do witryny dostawcy, który jest właścicielem nieobsługiwanego zestawu SDK rozszerzeń i zainstaluj wersję zestawu SDK rozszerzeń z zależnościami, które są zgodne z wersją platformy, dla której projekt jest adresowany.  
+2. Przejdź do witryny dostawcy, który jest właścicielem nieobsługiwanego zestawu SDK rozszerzeń i zainstaluj wersję zestawu SDK rozszerzeń z zależnościami, które są zgodne z wersją platformy, dla której projekt jest adresowany.  
   
     > [!NOTE]
     >  Jednym ze sposobów, aby dowiedzieć się, czy zestaw SDK rozszerzeń ma zależności od innych zestawów SDK rozszerzeń jest ponownie program Visual Studio, Utwórz nowy projekt C# Windows Store, kliknij prawym przyciskiem myszy nad projektem i wybierz **Dodaj odwołanie**, przejdź do  **Windows** karty, wróć do **rozszerzenia** podkartę, zaznacz SDK rozszerzeń i przyjrzyj się okienku po prawej stronie w **Menadżer odwołań**. Jeśli ma zależności, zostaną wyświetlone istnieje.  
@@ -73,20 +73,20 @@ Pisanie kodu w stosunku do składnika zewnętrznego lub połączone usługi, pro
     > [!IMPORTANT]
     >  Jeśli projekt jest przeznaczony dla systemu Windows 10 oraz zestaw SDK rozszerzeń zainstalowany w poprzednim kroku ma zależność od pakietu Microsoft Visual C++ Runtime wersja pakietu Microsoft Visual C++ Runtime zgodnego z systemem Windows 10 jest v14.0 i jest zainstalowany za pomocą programu Visual Studio 2015.  
   
-3.  Jeśli zestaw SDK rozszerzeń zainstalowany w poprzednim kroku ma zależności od innych zestawów SDK rozszerzeń, przejdź do witryn dostawców, którzy są właścicielami zależności i zainstaluj wersje tych zależności, które są zgodne z wersją platformy, usługi Projekt jest adresowany.  
+3. Jeśli zestaw SDK rozszerzeń zainstalowany w poprzednim kroku ma zależności od innych zestawów SDK rozszerzeń, przejdź do witryn dostawców, którzy są właścicielami zależności i zainstaluj wersje tych zależności, które są zgodne z wersją platformy, usługi Projekt jest adresowany.  
   
-4.  Uruchom ponownie program Visual Studio i Otwórz swoją aplikację.  
+4. Uruchom ponownie program Visual Studio i Otwórz swoją aplikację.  
   
-5.  Kliknij prawym przyciskiem myszy **odwołania** węzeł w projekcie, który spowodował błąd, a następnie wybierz **Dodaj odwołanie**  
+5. Kliknij prawym przyciskiem myszy **odwołania** węzeł w projekcie, który spowodował błąd, a następnie wybierz **Dodaj odwołanie**  
   
-6.  Kliknij przycisk **Windows** kartę i następnie **rozszerzenia** podkartę, a następnie usuń zaznaczenie pola wyboru dla starego rozszerzenie SDK i zaznacz pola wyboru dla nowego rozszerzenie SDK. Kliknij przycisk **OK**.  
+6. Kliknij przycisk **Windows** kartę i następnie **rozszerzenia** podkartę, a następnie usuń zaznaczenie pola wyboru dla starego rozszerzenie SDK i zaznacz pola wyboru dla nowego rozszerzenie SDK. Kliknij przycisk **OK**.  
   
 ## <a name="adding-a-reference-at-design-time"></a>Dodawanie odwołania w czasie projektowania  
  Po wprowadzeniu odwołania do zestawu w projekcie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wyszukuje zestaw w następujących lokalizacjach:  
   
--   Katalog aktualnego projektu. (Zestawy te można znaleźć przy użyciu **Przeglądaj** karty.)  
+- Katalog aktualnego projektu. (Zestawy te można znaleźć przy użyciu **Przeglądaj** karty.)  
   
--   Inne katalogi projektu w tym samym rozwiązaniu. (Zestawy te można znaleźć na **projektów** karty.)  
+- Inne katalogi projektu w tym samym rozwiązaniu. (Zestawy te można znaleźć na **projektów** karty.)  
   
 > [!NOTE]
 >  Wszystkie projekty zawierają odwołanie domniemane do mscorlib. Projekty języka Visual Basic zawierają odwołanie domniemane do `Microsoft.VisualBasic`.  

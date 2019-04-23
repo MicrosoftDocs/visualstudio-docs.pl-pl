@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2dba61d53bdb0007eb2a4f0acff734613e320ab9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f8ef28b453ba6c754c337c5d42581bd658be5f04
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649644"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045553"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger"></a>Tworzenie niestandardowych widoków C++ obiektów w debugerze
 
@@ -40,7 +40,7 @@ Taki sam `TextBox` wygląda dużo prostsze w oknie zmiennej, po zastosowaniu reg
 
 ![Pole tekstowe danych za pomocą wizualizatora](../debugger/media/dbg_natvis_textbox_visualizer.png "pola tekstowego danych za pomocą wizualizatora")
 
-##  <a name="BKMK_Using_Natvis_files"></a>Użyj plikami .natvis dostępnymi w projektach C++
+## <a name="BKMK_Using_Natvis_files"></a>Użyj plikami .natvis dostępnymi w projektach C++
 
 Używa Natvis *.natvis* pliki do określania reguł wizualizacji. A *.natvis* plik jest plikiem XML z *.natvis* rozszerzenia. Schemat Natvis jest zdefiniowany w *%VSINSTALLDIR%\Xml\Schemas\natvis.xsd*.
 
@@ -103,17 +103,17 @@ Możesz dodać *.natvis* pliki do katalogu użytkownika lub w katalogu systemu, 
 
 ::: moniker range="vs-2017"
 
-3.  Katalog Natvis specyficzne dla użytkownika (na przykład *%USERPROFILE%\Documents\Visual Studio 2017\Visualizers*).
+3. Katalog Natvis specyficzne dla użytkownika (na przykład *%USERPROFILE%\Documents\Visual Studio 2017\Visualizers*).
 
 ::: moniker-end
 
 ::: moniker range=">= vs-2019"
 
-3.  Katalog Natvis specyficzne dla użytkownika (na przykład *%USERPROFILE%\Documents\Visual Studio 2019\Visualizers*).
+3. Katalog Natvis specyficzne dla użytkownika (na przykład *%USERPROFILE%\Documents\Visual Studio 2019\Visualizers*).
 
 ::: moniker-end
 
-4.  Katalog Natvis systemowe (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*). Ten katalog ma *.natvis* pliki, które są instalowane z programem Visual Studio. Jeśli masz uprawnienia administratora, możesz dodawać pliki do tego katalogu.
+4. Katalog Natvis systemowe (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*). Ten katalog ma *.natvis* pliki, które są instalowane z programem Visual Studio. Jeśli masz uprawnienia administratora, możesz dodawać pliki do tego katalogu.
 
 ## <a name="modify-natvis-files-while-debugging"></a>Zmodyfikuj pliki .natvis podczas debugowania
 
@@ -127,7 +127,7 @@ Jeśli zmodyfikujesz *.natvis* pliku poza programem Visual Studio, zmiany nie zo
 
 Również użyć **.natvisreload** polecenie, aby uaktualnić *.natvis* pliku do nowszej wersji. Na przykład *.natvis* plików może zostać sprawdzone w formancie źródła i chcesz wczytać najnowsze zmiany tej osobie inne wprowadzone.
 
-##  <a name="BKMK_Expressions_and_formatting"></a> Wyrażenia i formatowanie
+## <a name="BKMK_Expressions_and_formatting"></a> Wyrażenia i formatowanie
 Wizualizacje Natvis umożliwia określenie elementów danych do wyświetlenia wyrażeń języka C++. Oprócz ulepszeń i ograniczeń związanych z wyrażeniami języka C++ w debugerze, które są opisane w [operator kontekstu (C++)](../debugger/context-operator-cpp.md), należy pamiętać o następujących kwestiach:
 
 - Wyrażenia Natvis są oceniane w kontekście wizualizowanego obiektu, nie bieżącej ramki stosu. Na przykład `x` w Natvis wyrażenie odwołuje się do pola o nazwie **x** w wizualizowanym obiekcie, nie do zmiennej lokalnej o nazwie **x** w bieżącej funkcji. Nie masz dostępu do zmiennych lokalnych w wyrażenia Natvis, mimo że zmienne globalne są dostępne.
@@ -158,7 +158,7 @@ W **Obejrzyj** oknie, użyj **, widok** specyfikatora, aby określić alternatyw
 
 ![Okno czujki z widokiem prostym](../debugger/media/watch-simpleview.png "okno czujki z widokiem prostym")
 
-##  <a name="BKMK_Diagnosing_Natvis_errors"></a> Błędów Natvis
+## <a name="BKMK_Diagnosing_Natvis_errors"></a> Błędów Natvis
 
 Gdy debuger napotka błędy we wpisie wizualizacji, ignoruje je. Jego Wyświetla typ w postaci pierwotnej, albo pobiera inną odpowiednią wizualizację. Diagnostyka Natvis można użyć, aby zrozumieć, dlaczego debuger ignorowany wpis wizualizacji, a także zobaczyć podstawowej składni i błędy analizy.
 
@@ -168,9 +168,9 @@ Gdy debuger napotka błędy we wpisie wizualizacji, ignoruje je. Jego Wyświetla
 
 Błędy są wyświetlane w **dane wyjściowe** okna.
 
-##  <a name="BKMK_Syntax_reference"></a> Dokumentacja składni Natvis
+## <a name="BKMK_Syntax_reference"></a> Dokumentacja składni Natvis
 
-###  <a name="BKMK_AutoVisualizer"></a> AutoVisualizer element
+### <a name="BKMK_AutoVisualizer"></a> AutoVisualizer element
 `AutoVisualizer` Element jest węzeł główny *.natvis* plik i zawiera przestrzeń nazw `xmlns:` atrybutu.
 
 ```xml
@@ -183,7 +183,7 @@ Błędy są wyświetlane w **dane wyjściowe** okna.
 
 `AutoVisualizer` Element może mieć [typu](#BKMK_Type), [HResult](#BKMK_HResult), [UIVisualizer](#BKMK_UIVisualizer), i [CustomVisualizer](#BKMK_CustomVisualizer) elementów podrzędnych.
 
-###  <a name="BKMK_Type"></a> Typ elementu
+### <a name="BKMK_Type"></a> Typ elementu
 
 Podstawowy `Type` wygląda następująco:
 
@@ -217,7 +217,7 @@ W poniższym przykładzie jest używany tej samej wizualizacji, czy obiekt jest 
 
 Można odwoływać się do parametrów szablonu we wpisie wizualizacji przy użyciu makr $t1, $t2 i tak dalej. Aby znaleźć przykłady tych makr, zobacz *.natvis* pliki dostarczane z programem Visual Studio.
 
-####  <a name="BKMK_Visualizer_type_matching"></a> Dopasowanie typu wizualizatora
+#### <a name="BKMK_Visualizer_type_matching"></a> Dopasowanie typu wizualizatora
 Jeśli wpis wizualizacji nie powiedzie się sprawdzić poprawność, jest używana następna dostępna wizualizacja.
 
 #### <a name="inheritable-attribute"></a>Atrybut dziedziczne
@@ -267,7 +267,7 @@ Możesz umieścić `Optional` atrybutu w każdym węźle. Jeśli podwyrażenia w
 </Type>
 ```
 
-###  <a name="BKMK_Condition_attribute"></a> Atrybut warunek
+### <a name="BKMK_Condition_attribute"></a> Atrybut warunek
 
 Opcjonalny `Condition` atrybut jest dostępny dla wielu elementów wizualizacji i określa, kiedy należy używać reguły wizualizacji. Jeśli wyrażenie wewnątrz atrybutu warunku jest rozpoznawany jako `false`, reguła wizualizacji nie ma zastosowania. Jeśli daje w wyniku `true`, lub nie `Condition` atrybutu, dotyczy wizualizacji. Ten atrybut służy do logiki if else we wpisach wizualizacji.
 
@@ -303,7 +303,7 @@ Na przykład poniższa wizualizacja ma dwa `DisplayString` elementy dla typu int
 
 Możesz użyć `IncludeView` i `ExcludeView` atrybuty dla typów i na poszczególnych elementów członkowskich.
 
-###  <a name="BKMK_Versioning"></a> Wersja elementu
+### <a name="BKMK_Versioning"></a> Wersja elementu
 `Version` Element zakresów wpis wizualizacji do określonego modułu i wersji. `Version` Element pomaga uniknąć konfliktów nazw, zmniejsza przypadkowego niezgodności i umożliwia różne wizualizacje dla wersji innego typu.
 
 Jeśli wspólnego pliku nagłówka, który jest używany przez różne moduły definiuje typ, numerów wersji wizualizacji jest wyświetlana tylko wtedy, gdy typ jest w wersji określonego modułu.
@@ -320,7 +320,7 @@ W poniższym przykładzie wizualizacja dotyczy to tylko `DirectUI::Border` typ o
 </Type>
 ```
 
-###  <a name="BKMK_DisplayString"></a> Klasa DisplayString — element
+### <a name="BKMK_DisplayString"></a> Klasa DisplayString — element
 `DisplayString` Element określa ciąg wyświetlany jako wartość zmiennej. Akceptuje dowolny łańcuchów mieszanych wyrażeń. Wszystko wewnątrz nawiasów klamrowych jest interpretowane jako wyrażenie. Na przykład następujące `DisplayString` wpis:
 
 ```xml
@@ -338,7 +338,7 @@ W `DisplayString` wyrażenie `x` i `y`, które są członkami `CPoint`, są umie
 > [!NOTE]
 > `DisplayString` Element jest jedynym elementem, który akceptuje dowolne ciągi i składnię nawiasu klamrowego. Wszystkie inne elementy wizualizacji akceptują tylko wyrażenia, które można ocenić debugera.
 
-###  <a name="BKMK_StringView"></a> StringView element
+### <a name="BKMK_StringView"></a> StringView element
 
 `StringView` Element definiuje wartość, która jest debugera można wysyłać do wbudowanego wizualizatora tekstu. Na przykład, biorąc pod uwagę następującą wizualizację dla `ATL::CStringT` typu:
 
@@ -367,7 +367,7 @@ Podczas debugowania, użytkownik może wybrać ikonę szkła powiększającego o
 
 Wyrażenie `{m_pszData,su}` specyfikator formatu języka C++ **su**, aby wyświetlić wartość jako ciąg Unicode. Aby uzyskać więcej informacji, zobacz [Specyfikatory w języku C++ formatu](../debugger/format-specifiers-in-cpp.md).
 
-###  <a name="BKMK_Expand"></a> Rozwiń element
+### <a name="BKMK_Expand"></a> Rozwiń element
 
 Opcjonalny `Expand` węzła dostosowuje elementów podrzędnych typu zwizualizowanego, po rozwinięciu typu w oknie zmiennej. `Expand` Węzła akceptuje listę węzłów podrzędnych, które definiują elementy podrzędne.
 
@@ -375,7 +375,7 @@ Opcjonalny `Expand` węzła dostosowuje elementów podrzędnych typu zwizualizow
 
 - Jeśli `Expand` węzeł został określony bez węzłów podrzędnych pod nim, typu nie można rozwijać w oknach debugera.
 
-####  <a name="BKMK_Item_expansion"></a> Rozszerzenie elementu
+#### <a name="BKMK_Item_expansion"></a> Rozszerzenie elementu
 
  `Item` Element jest najbardziej podstawowa i wspólne elementem w `Expand` węzła. `Item` definiuje jeden typ elementów podrzędnych. Na przykład `CRect` klasy z polami `top`, `left`, `right`, i `bottom` ma następującym wpisem wizualizacji:
 
@@ -400,7 +400,7 @@ Debuger automatycznie tworzy **[widok nieprzetworzony]** węzła dla każdego ro
 > [!NOTE]
 > Jeśli wyrażenie elementu wskazuje typ złożony, **elementu** sam węzeł jest rozwijany.
 
-####  <a name="BKMK_ArrayItems_expansion"></a> Rozszerzenie elementów arrayitems
+#### <a name="BKMK_ArrayItems_expansion"></a> Rozszerzenie elementów arrayitems
 Użyj `ArrayItems` węzeł, aby debuger programu Visual Studio interpretował typ jako tablicę i wyświetlał jego poszczególne elementy. Wizualizacja dla `std::vector` jest dobrym przykładem:
 
 ```xml
@@ -456,7 +456,7 @@ Oto jak dwuwymiarowy `Concurrency::array` obiektu wygląda w oknie debugera:
 
 ![Dwuwymiarową tablicę z elementów arrayitems](../debugger/media/dbg_natvis_expand_arrayitems_2d.png "dwuwymiarową tablicę z elementów arrayitems")
 
-####  <a name="BKMK_IndexListItems_expansion"></a> Rozszerzenie indexlistitems
+#### <a name="BKMK_IndexListItems_expansion"></a> Rozszerzenie indexlistitems
 
 Możesz użyć `ArrayItems` rozszerzenia tylko wtedy, gdy elementy tablicy są ułożone w sposób ciągły w pamięci. Debuger pobiera następny element po prostu przez zwiększenie swojego wskaźnika. Jeśli zachodzi potrzeba manipulowania indeksem w węźle wartości, użyj `IndexListItems` węzłów. Poniżej przedstawiono wizualizację z `IndexListItems` węzła:
 
@@ -478,7 +478,7 @@ Jedyną różnicą między `ArrayItems` i `IndexListItems` jest `ValueNode`, kt�
 >[!NOTE]
 >Możesz użyć `[]` operatora, na przykład `vector[i]`, przy użyciu dowolnej wizualizacji Jednowymiarowa tablica, która używa `IndexListItems`, nawet jeśli samego typu (na przykład `CATLArray`) nie zezwala na tego operatora.
 
-####  <a name="BKMK_LinkedListItems_expansion"></a> Rozszerzenie linkedlistitems
+#### <a name="BKMK_LinkedListItems_expansion"></a> Rozszerzenie linkedlistitems
 
 Jeśli typ wizualizowany reprezentuje listę połączoną, debuger może wyświetlić jego elementy podrzędne przy użyciu `LinkedListItems` węzła. Poniższa wizualizacja dla `CAtlList` typu używa `LinkedListItems`:
 
@@ -555,7 +555,7 @@ Możesz użyć `Exec` na wykonanie kodu wewnątrz `CustomListItems` rozszerzenia
 - `TreeTraverse_Next // Returns nodes in a tree`
 - `TreeTraverse_Skip // Skips nodes in a pending tree traversal`
 
-####  <a name="BKMK_TreeItems_expansion"></a> Rozszerzenie elementów treeitems
+#### <a name="BKMK_TreeItems_expansion"></a> Rozszerzenie elementów treeitems
  Jeśli typ wizualizowany reprezentuje drzewo, debuger może przejść przez drzewo i wyświetlić jego elementy podrzędne przy użyciu `TreeItems` węzła. Oto wizualizacja dla `std::map` typu przy użyciu `TreeItems` węzła:
 
 ```xml
@@ -577,7 +577,7 @@ Możesz użyć `Exec` na wykonanie kodu wewnątrz `CustomListItems` rozszerzenia
 
 Składnia jest podobne do `LinkedListItems` węzła. `LeftPointer`, `RightPointer`, i `ValueNode` są oceniane w kontekście klasy węzła drzewa. `ValueNode` może być puste lub użyj `this` do odwoływania się do `TreeItems` sam węzeł.
 
-####  <a name="BKMK_ExpandedItem_expansion"></a> Rozszerzenie expandeditem
+#### <a name="BKMK_ExpandedItem_expansion"></a> Rozszerzenie expandeditem
  `ExpandedItem` Element generuje zagregowanego widoku podrzędnego, wyświetlając właściwości podstawowej klasy lub elementów członkowskich danych tak, jakby były elementami podrzędnymi typu zwizualizowanego. Oblicza określone wyrażenie debugera i dołącza węzły podrzędne wyniku do listy podrzędnej typu zwizualizowanego.
 
 Na przykład typ inteligentnego wskaźnika `auto_ptr<vector<int>>` zwykle wyświetla się jako:
@@ -611,7 +611,7 @@ Poniższy przykład pokazuje sposób agregacji właściwości z klasy podstawowe
 
 **Nd** specyfikatora formatu, który wyłącza dopasowywanie dla klasy pochodnej wizualizacja, w tym miejscu jest konieczne. W przeciwnym wypadku wyrażenie `*(CFrameworkElement*)this` spowodowałoby `CPanel` wizualizację można zastosować ponownie, ponieważ wizualizacji domyślnej wpisania typu reguł dopasowania uważają to za najbardziej odpowiednie. Użyj **nd** specyfikatora w celu poinstruowania debugerowi użycie wizualizacji klasy podstawowej lub rozszerzenia domyślnej, jeśli klasa bazowa nie ma żadnych wizualizacji formatu.
 
-####  <a name="BKMK_Synthetic_Item_expansion"></a> Rozszerzenie elementu syntetycznego
+#### <a name="BKMK_Synthetic_Item_expansion"></a> Rozszerzenie elementu syntetycznego
  Gdy `ExpandedItem` element zapewnia bardziej płaski widok danych poprzez wyeliminowanie hierarchii, `Synthetic` węzeł ma odwrotne. Umożliwia ona tworzenie elementu podrzędnego sztuczne, który nie jest wynikiem wyrażenia. Sztuczne element może mieć elementów podrzędnych swój własny. W poniższym przykładzie, wizualizacji dla `Concurrency::array` typu używa `Synthetic` węzeł, aby wyświetlić komunikat diagnostyczny dla użytkownika:
 
 ```xml
@@ -633,7 +633,7 @@ Poniższy przykład pokazuje sposób agregacji właściwości z klasy podstawowe
 
  ![CONCURRENCY::Array przy użyciu elementu syntetyczne rozszerzenie](../debugger/media/dbg_natvis_expand_synthetic.png "Concurrency::Array przy użyciu syntetycznych element rozszerzenia")
 
-###  <a name="BKMK_HResult"></a> HResult element
+### <a name="BKMK_HResult"></a> HResult element
  `HResult` Element umożliwia dostosowanie informacji wyświetlanych dla **HRESULT** w oknach debugera. `HRValue` Element musi zawierać 32-bitową wartość **HRESULT** który ma zostać dostosowana. `HRDescription` Element zawiera informacje, które mają być wyświetlane w oknie debugera.
 
 ```xml
@@ -644,7 +644,7 @@ Poniższy przykład pokazuje sposób agregacji właściwości z klasy podstawowe
 </HResult>
 ```
 
-###  <a name="BKMK_UIVisualizer"></a> UIVisualizer element
+### <a name="BKMK_UIVisualizer"></a> UIVisualizer element
 Element `UIVisualizer` elementu rejestruje wtyczkę wizualizatora graficznego z debugerem. Wizualizatora graficznego tworzy okno dialogowe lub innego interfejsu, który pokazuje zmiennej lub obiektu w sposób zgodny z jego typu danych. Wtyczka wizualizatora musi zostać utworzona jako [pakietu VSPackage](../extensibility/internals/vspackages.md)i musi uwidaczniać usługę, którą może wykorzystać debugera. *.Natvis* plik zawiera informacje rejestracyjne dodatku typu plug-in, takie jak jego nazwa, identyfikator GUID narażonych usługi oraz typy, może ona wizualizować.
 
 Poniżej przedstawiono przykładowy element UIVisualizer:

@@ -8,12 +8,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74d86998657a380e4cef1f3ee6ca0d87bccb3507
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2514454f1aa1c1899c45edac80f7990d8208fdd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765102"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052093"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testowanie aplikacji platformy UWP i 8.1 Phone systemu Windows za pomocą kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,23 +22,23 @@ Użyj tego przewodnika dotyczący tworzenia testów interfejsu użytkownika dla 
   
 ## <a name="create-a-simple-windows-phone-app"></a>Utwórz prostą aplikację Windows Phone  
   
-1.  Utwórz nowy projekt dla pustej aplikacji Windows Phone przy użyciu szablonu programu Visual C# lub Visual Basic.  
+1. Utwórz nowy projekt dla pustej aplikacji Windows Phone przy użyciu szablonu programu Visual C# lub Visual Basic.  
   
      ![Utwórz nową aplikację Windows Phone](../test/media/cuit-phone-app-newproject.png "CUIT_Phone_App_NewProject")  
   
-2.  W Eksploratorze rozwiązań Otwórz plik MainPage.xaml. Z przybornika przeciągnij formant przycisku i formant pola tekstowego na powierzchnię projektową.  
+2. W Eksploratorze rozwiązań Otwórz plik MainPage.xaml. Z przybornika przeciągnij formant przycisku i formant pola tekstowego na powierzchnię projektową.  
   
      ![Dodawanie i kształty do pliku MainPage.xaml](../test/media/cuit-phone-app-addcontrols.png "CUIT_Phone_App_AddControls")  
   
-3.  W oknie dialogowym właściwości nazwę kontrolki przycisku.  
+3. W oknie dialogowym właściwości nazwę kontrolki przycisku.  
   
      ![Nazwij kontrolkę przycisku](../test/media/cuit-phone-namebutton.png "CUIT_Phone_NameButton")  
   
-4.  Nazwij formant pola tekstowego.  
+4. Nazwij formant pola tekstowego.  
   
      ![Nazwij formant pola tekstowego](../test/media/cuit-phone-nametesxtbox.png "CUIT_Phone_NameTesxtBox")  
   
-5.  Na powierzchni projektowej kliknij dwukrotnie formant przycisku, a następnie dodaj następujący kod:  
+5. Na powierzchni projektowej kliknij dwukrotnie formant przycisku, a następnie dodaj następujący kod:  
   
     ```csharp  
     private void button_Click_1(object sender, RoutedEventArgs e)  
@@ -58,15 +58,15 @@ Użyj tego przewodnika dotyczący tworzenia testów interfejsu użytkownika dla 
     End Class  
     ```  
   
-6.  Naciśnij klawisz F5, aby uruchomić aplikację Windows Phone w emulatorze i sprawdź, czy działa.  
+6. Naciśnij klawisz F5, aby uruchomić aplikację Windows Phone w emulatorze i sprawdź, czy działa.  
   
      ![Uruchom Windows Phone app](../test/media/cuit-phone-runapp.png "CUIt_Phone_RunApp")  
   
-7.  Zamknij emulatora.  
+7. Zamknij emulatora.  
   
 ## <a name="deploy-the-windows-phone-app"></a>Windows Phone wdrażanie aplikacji  
   
-1.  Przed kodowanego testu interfejsu użytkownika można mapować kontrolki aplikacji, musisz wdrożyć tę aplikację.  
+1. Przed kodowanego testu interfejsu użytkownika można mapować kontrolki aplikacji, musisz wdrożyć tę aplikację.  
   
      ![Wdrażanie Windows Phone app](../test/media/cuit-phone-deploy.png "CUIT_Phone_Deploy")  
   
@@ -287,7 +287,7 @@ Użyj tego przewodnika dotyczący tworzenia testów interfejsu użytkownika dla 
   
 ## <a name="run-the-coded-ui-test"></a>Uruchom kodowany test interfejsu użytkownika  
   
-1.  Skompiluj test, a następnie uruchom test za pomocą narzędzia Eksplorator testów.  
+1. Skompiluj test, a następnie uruchom test za pomocą narzędzia Eksplorator testów.  
   
      ![Skompiluj i uruchom test za pomocą Eksploratora testów](../test/media/cuit-phone-runtestexplorer.png "CUIT_Phone_RunTestExplorer")  
   
@@ -299,7 +299,7 @@ Użyj tego przewodnika dotyczący tworzenia testów interfejsu użytkownika dla 
   
      ![Wyniki w Eksploratorze testów](../test/media/cuit-phone-runtestexplorerresults.png "CUIT_Phone_RunTestExplorerResults")  
   
-##  <a name="TestingPhoneAppsCodedUI_DataDriven"></a> Opartych na danych kodowanych testów interfejsu użytkownika dla aplikacji Windows Phone  
+## <a name="TestingPhoneAppsCodedUI_DataDriven"></a> Opartych na danych kodowanych testów interfejsu użytkownika dla aplikacji Windows Phone  
  Na potrzeby testowania różnych warunków, kodowany test interfejsu użytkownika można uruchamiać wiele razy z różnymi zestawami danych.  
   
  Oparte na danych kodowanych testów interfejsu użytkownika dla Windows Phone są definiowane dla metody testowej przy użyciu atrybutu wiersza danych. W poniższym przykładzie, x i y Użyj wartości 1 i 2 dla pierwszej iteracji i -1 -2 dla drugiego iteracji testu.  
@@ -317,7 +317,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-do-i-have-to-deploy-the-windows-phone-app-in-the-emulator-in-order-to-map-ui-controls"></a>PYT.: Trzeba wdrożyć aplikację Windows Phone w emulatorze do mapy formantów interfejsu użytkownika?  
  **A**: Tak, kodowanego testu interfejsu użytkownika wymaga, aby być uruchomiony emulator, a aplikacji można wdrożyć do niego. W przeciwnym razie zgłosi komunikat o błędzie informujący o tym, nie uruchomionego emulatora został odnaleziony.  
   
-###  <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> Q: Testy można wykonać na tylko emulator, czy też korzystać urządzenia fizycznego?  
+### <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> Q: Testy można wykonać na tylko emulator, czy też korzystać urządzenia fizycznego?  
  **A**: Jedną z opcji jest obsługiwane. Element docelowy dla wykonywania testów jest zaznaczone, zmieniając typ emulatora lub wybierając urządzenie, na pasku narzędzi urządzenia. Jeśli urządzenie jest wybrane, niebieski Phone urządzenie musi być podłączone do jednego z portów USB komputera.  
   
  ![Wybierz dla wersji emulatora lub urządzenia fizyczne](../test/media/cuit-phone-testtarget.png "CUIT_Phone_TestTarget")  

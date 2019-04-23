@@ -9,12 +9,12 @@ ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dfd565deb8336346e127e084b720f391440dc6e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a82479fabda0cd64e977af01f87492563a02853f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928806"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037845"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Instrukcje: Ręczne tworzenie raportu wydajności testu obciążenia przy użyciu programu Microsoft Word
 
@@ -30,27 +30,27 @@ Można ręcznie utworzyć raporty testu obciążenia w programie Microsoft Word 
 
 ## <a name="copy-summary-view-data"></a>Skopiuj dane widoku podsumowania
 
-1.  W **wyniki testu obciążeniowego**, jeśli widok podsumowania nie jest aktualnie wyświetlany, kliknij przycisk **podsumowania** na pasku narzędzi.
+1. W **wyniki testu obciążeniowego**, jeśli widok podsumowania nie jest aktualnie wyświetlany, kliknij przycisk **podsumowania** na pasku narzędzi.
 
-2.  W widoku podsumowania, kliknij prawym przyciskiem myszy i wybierz **Zaznacz wszystko**.
+2. W widoku podsumowania, kliknij prawym przyciskiem myszy i wybierz **Zaznacz wszystko**.
 
-3.  W widoku podsumowania, kliknij prawym przyciskiem myszy i wybierz **kopiowania**. Renderuje to do schowka dane widoku podsumowania w formacie HTML.
+3. W widoku podsumowania, kliknij prawym przyciskiem myszy i wybierz **kopiowania**. Renderuje to do schowka dane widoku podsumowania w formacie HTML.
 
-4.  W programie Microsoft Word wklej dane widoku podsumowania w pożądanej lokalizacji.
+4. W programie Microsoft Word wklej dane widoku podsumowania w pożądanej lokalizacji.
 
-5.  Można teraz modyfikować, formatować i usuwać aspekty kopiowanej zawartości zgodnie z własnymi potrzebami raportowania.
+5. Można teraz modyfikować, formatować i usuwać aspekty kopiowanej zawartości zgodnie z własnymi potrzebami raportowania.
 
 ## <a name="copy-graph-view-data"></a>Kopiowanie danych widoku wykresu
 
-1.  W **wyniki testu obciążeniowego**, jeśli wykresy widok nie jest aktualnie wyświetlany, wybierz **wykresów** na pasku narzędzi.
+1. W **wyniki testu obciążeniowego**, jeśli wykresy widok nie jest aktualnie wyświetlany, wybierz **wykresów** na pasku narzędzi.
 
-2.  (Opcjonalnie) Powiększ określony wykres, który chcesz skopiować do dokumentu programu Microsoft Word, jak pokazano na poniższej ilustracji. Aby uzyskać więcej informacji, zobacz [jak: Powiększanie obszaru wykresu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+2. (Opcjonalnie) Powiększ określony wykres, który chcesz skopiować do dokumentu programu Microsoft Word, jak pokazano na poniższej ilustracji. Aby uzyskać więcej informacji, zobacz [jak: Powiększanie obszaru wykresu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
      ![Kontrolka powiększenia widoku wykresu](../test/media/ltest_zoomcontrol.png)
 
-3.  Na wykresie, który chcesz skopiować do dokumentu programu Microsoft Word, kliknij prawym przyciskiem myszy i wybierz **kopiowania**.
+3. Na wykresie, który chcesz skopiować do dokumentu programu Microsoft Word, kliknij prawym przyciskiem myszy i wybierz **kopiowania**.
 
-4.  W programie Microsoft Word Wklej wykres i skojarzonej tabeli danych w dowolnym miejscu.
+4. W programie Microsoft Word Wklej wykres i skojarzonej tabeli danych w dowolnym miejscu.
 
     > [!WARNING]
     > Nie można skopiować wykresu z pulpitu zdalnego i wkleić go do innej maszyny, ponieważ zostaną skopiowane jedynie informacje tabeli, która jest skojarzona z wykresem, a nie obraz wykresu. Obraz wykresu jest przechowywany w katalogu tymczasowym na maszynie, z której został skopiowany, a druga maszyna nie może wyłuskać tego katalogu.

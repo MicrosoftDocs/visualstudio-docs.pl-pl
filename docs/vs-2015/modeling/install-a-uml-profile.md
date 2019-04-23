@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ae3ee33f47a60a74148698424ad58397e0cb577
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0187f7dede25900cdf3a78fdbfe2899e5f318472
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790179"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043448"
 ---
 # <a name="install-a-uml-profile"></a>Instalowanie profilu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ Za pomocą profilu UML, można rozszerzyć Visual Studio. Profil, który umożli
   
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>Aby zainstalować profil UML na komputerze  
   
-1.  Profil powinien mieć dla Ciebie w formie rozszerzenia programu Visual Studio (`.vsix`) pliku. W tym samym pliku może być inne funkcje.  
+1. Profil powinien mieć dla Ciebie w formie rozszerzenia programu Visual Studio (`.vsix`) pliku. W tym samym pliku może być inne funkcje.  
   
      Przenieś `.vsix` pliku w wybranej lokalizacji na komputerze.  
   
-2.  Kliknij dwukrotnie `.vsix` plików w Eksploratorze Windows (lub Eksploratora plików), lub otworzyć go w ramach [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+2. Kliknij dwukrotnie `.vsix` plików w Eksploratorze Windows (lub Eksploratora plików), lub otworzyć go w ramach [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
-3.  Kliknij przycisk **zainstalować** w zostanie wyświetlone okno dialogowe.  
+3. Kliknij przycisk **zainstalować** w zostanie wyświetlone okno dialogowe.  
   
-4.  Aby odinstalować lub tymczasowo wyłączyć rozszerzenie, otwórz **Menedżera rozszerzeń** z **narzędzia** menu.  
+4. Aby odinstalować lub tymczasowo wyłączyć rozszerzenie, otwórz **Menedżera rozszerzeń** z **narzędzia** menu.  
   
 ### <a name="to-uninstall-or-disable-a-profile-extension"></a>Aby odinstalować lub wyłączyć rozszerzenie profilu  
   
-1.  W programie Visual Studio **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.  
+1. W programie Visual Studio **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.  
   
-2.  Kliknij rozszerzenie, które chcesz usunąć, a następnie kliknij przycisk **wyłączyć** lub **Odinstaluj**.  
+2. Kliknij rozszerzenie, które chcesz usunąć, a następnie kliknij przycisk **wyłączyć** lub **Odinstaluj**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowywanie modelu z profilami i stereotypami](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   

@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 276d3306d908fa8af4e58f38c965b73c1fff9284
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5a45720c739087c2caf43314cbcbc8aea162534c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659819"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064846"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Instrukcje: Wybieranie plików do kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Podczas kompilowania projektu, zawiera kilka plików, możesz wyświetlić list�
   
 #### <a name="to-declare-items-individually"></a>Aby zadeklarować elementy pojedynczo  
   
--   Użyj `Include` atrybuty podobne do następujących:  
+- Użyj `Include` atrybuty podobne do następujących:  
   
      `<CSFile Include="form1.cs"/>`  
   
@@ -45,7 +45,7 @@ Podczas kompilowania projektu, zawiera kilka plików, możesz wyświetlić list�
   
 #### <a name="to-declare-multiple-items"></a>Aby zadeklarować wiele elementów  
   
--   Użyj `Include` atrybuty podobne do następujących:  
+- Użyj `Include` atrybuty podobne do następujących:  
   
      `<CSFile Include="form1.cs;form2.cs"/>`  
   
@@ -66,19 +66,19 @@ Podczas kompilowania projektu, zawiera kilka plików, możesz wyświetlić list�
   
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Aby objąć wszystkie pliki jpg obrazów katalogu i podkatalogach  
   
--   Należy użyć następującego `Include` atrybutu:  
+- Należy użyć następującego `Include` atrybutu:  
   
      `Include="Images\**\*.jpg"`  
   
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>Aby włączyć wszystkie pliki jpg, rozpoczynając od "img"  
   
--   Należy użyć następującego `Include` atrybutu:  
+- Należy użyć następującego `Include` atrybutu:  
   
      `Include="Images\**\img*.jpg"`  
   
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>Aby włączyć wszystkie pliki w katalogach przy użyciu nazwy kończące się na "jpg"  
   
--   Użyj jednej z następujących `Include` atrybuty:  
+- Użyj jednej z następujących `Include` atrybuty:  
   
      `Include="Images\**\*jpgs\*.*"`  
   
@@ -91,7 +91,7 @@ Podczas kompilowania projektu, zawiera kilka plików, możesz wyświetlić list�
   
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Aby używać wszystkich Visual C# lub Visual Basic plików jako dane wejściowe  
   
--   Użyj `Include` atrybuty podobny do następującego:  
+- Użyj `Include` atrybuty podobny do następującego:  
   
      `<CSC Sources="@(CSFile)">...</CSC>`  
   

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddc6849aa5c0dec07fc7dbdd08a950809624015d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e9882fd89e149a8b24813ec9edb53e86b0e72b59
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661223"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052080"
 ---
 # <a name="create-a-software-development-kit"></a>Utwórz zestaw software development kit
 Zestaw software development kit (SDK) to zbiór interfejsów API, którego można się odwoływać jako pojedynczy element w programie Visual Studio. **Menadżer odwołań** okno dialogowe wyświetla listę wszystkich zestawów SDK, które mają zastosowanie do projektu. Po dodaniu zestawu SDK do projektu interfejsach API dostępnych w programie Visual Studio.
@@ -30,7 +30,7 @@ Zestaw software development kit (SDK) to zbiór interfejsów API, którego możn
 
 - [Zestawów SDK rozszerzeń](#ExtensionSDKs)
 
-##  <a name="PlatformSDKs"></a> Zestawy SDK platformy
+## <a name="PlatformSDKs"></a> Zestawy SDK platformy
  Zestawy SDK platformy są wymagane do tworzenia aplikacji dla platformy. Na przykład [!INCLUDE[win81](../debugger/includes/win81_md.md)] zestawu SDK jest wymagany do tworzenia aplikacji dla [!INCLUDE[win81](../debugger/includes/win81_md.md)].
 
 ### <a name="installation"></a>Instalacja
@@ -58,7 +58,7 @@ Zestaw software development kit (SDK) to zbiór interfejsów API, którego możn
 | *Architektura* folderu | Dowolny obsługiwany *architektury* może istnieć folder. Program Visual Studio obsługuje następujące architektury: x86, x64, ARM i neutral. Uwaga: Mapuje Win32 x86 oraz AnyCPU mapuje neutralne.<br /><br /> Program MSBuild będzie wyglądać tylko *\CommonConfiguration\neutral* dla zestawów SDK platformy. |
 | *SDKManifest.xml* | W tym pliku opisano, jak Visual Studio należy używać zestawu SDK. Przyjrzyj się manifestu SDK dla [!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **Właściwość DisplayName:** Wartość, która wyświetla przeglądarki obiektów na liście przeglądania.<br /><br /> **PlatformIdentity:** Istnienie tego atrybutu informuje program Visual Studio i MSBuild, zestaw SDK jest zestaw SDK platformy, a nie można skopiować odwołania dodane z niego lokalnie.<br /><br /> **TargetFramework:** Ten atrybut jest używany przez program Visual Studio, aby upewnić się, że tylko projekty tej samej struktury jako określoną przez wartość tego atrybutu mogą używać zestawu SDK.<br /><br /> **Brakuje MinVSVersion:** Ten atrybut jest używany przez program Visual Studio korzystać tylko zestawy SDK, które go dotyczą.<br /><br /> **Odwołanie:** Ten atrybut musi być określona dla te odwołania, które zawierają formanty. Informacje o sposobie określania, czy odwołanie zawiera kontrolki można znaleźć poniżej. |
 
-##  <a name="ExtensionSDKs"></a> Zestawów SDK rozszerzeń
+## <a name="ExtensionSDKs"></a> Zestawów SDK rozszerzeń
  W poniższych sekcjach opisano, co należy zrobić, aby wdrożyć zestawu SDK rozszerzenia.
 
 ### <a name="installation"></a>Instalacja
@@ -72,13 +72,13 @@ Zestaw software development kit (SDK) to zbiór interfejsów API, którego możn
 
  Jeśli chcesz użyć innej lokalizacji, należy wykonać jedną z dwóch kwestii:
 
-1.  Określ ją w kluczu rejestru:
+1. Określ ją w kluczu rejestru:
 
      **HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number\>\ExtensionSDKs\<SDKName>\<SDKVersion>**\
 
      i dodaj podklucz (ustawienie domyślne), który ma wartość `<path to SDK><SDKName><SDKVersion>`.
 
-2.  Dodaj właściwość MSBuild `SDKReferenceDirectoryRoot` do pliku projektu. Wartość tej właściwości jest rozdzielaną średnikami listę katalogów, w których znajdują się zestawów SDK rozszerzeń ma dotyczyć odwołanie.
+2. Dodaj właściwość MSBuild `SDKReferenceDirectoryRoot` do pliku projektu. Wartość tej właściwości jest rozdzielaną średnikami listę katalogów, w których znajdują się zestawów SDK rozszerzeń ma dotyczyć odwołanie.
 
 ### <a name="installation-layout"></a>Układ instalacyjny
  Zestawów SDK rozszerzeń ma następujące układ instalacyjny:
@@ -191,10 +191,10 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 16. Odwołanie do pliku: Określone dla tych odwołań, które zawierają kontrolki lub natywnych plików Winmd. Aby uzyskać informacje o sposobie określania, czy odwołanie zawiera formanty, zobacz [Określ lokalizację elementów przybornika](#ToolboxItems) poniżej.
 
-##  <a name="ToolboxItems"></a> Określ lokalizację elementów przybornika
+## <a name="ToolboxItems"></a> Określ lokalizację elementów przybornika
  ToolBoxItems element *SDKManifest.xml* schemat określa kategorię i lokalizację elementów przybornika w zestawy SDK platformy i rozszerzenia. Następujące przykłady przedstawiają sposób określania różnych lokalizacjach. Ma to zastosowanie do odwołania WinMD i bibliotek DLL.
 
-1.  Umieść formanty w kategorii domyślnego przybornika.
+1. Umieść formanty w kategorii domyślnego przybornika.
 
     ```
     <File Reference = "sample.winmd">
@@ -202,7 +202,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-2.  Umieść formanty w obszarze nazwy określonej kategorii.
+2. Umieść formanty w obszarze nazwy określonej kategorii.
 
     ```
     <File Reference = "sample.winmd">
@@ -210,7 +210,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-3.  Umieść formanty w obszarze nazwy określonej kategorii.
+3. Umieść formanty w obszarze nazwy określonej kategorii.
 
     ```
     <File Reference = "sample.winmd">
@@ -221,7 +221,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-4.  Umieść formanty w obszarze nazwy inną kategorię w Blend i Visual Studio.
+4. Umieść formanty w obszarze nazwy inną kategorię w Blend i Visual Studio.
 
     ```
     // Blend accepts a slightly different structure for the category name because it allows a path rather than a single category.
@@ -231,7 +231,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-5.  Wyliczanie określonych kontrolek inaczej w programie Blend i Visual Studio.
+5. Wyliczanie określonych kontrolek inaczej w programie Blend i Visual Studio.
 
     ```
     <File Reference = "sample.winmd">
@@ -242,7 +242,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-6.  Wyliczanie określonych kontrolek i umieść je w ścieżce wspólnej Visual Studio lub tylko grupy wszystkich kontrolek.
+6. Wyliczanie określonych kontrolek i umieść je w ścieżce wspólnej Visual Studio lub tylko grupy wszystkich kontrolek.
 
     ```
     <File Reference = "sample.winmd">
@@ -253,7 +253,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-7.  Wyliczanie określonych kontrolek i wyświetlić tylko określone w ChooseItems bez nich w przyborniku.
+7. Wyliczanie określonych kontrolek i wyświetlić tylko określone w ChooseItems bez nich w przyborniku.
 
     ```
     <File Reference = "sample.winmd">

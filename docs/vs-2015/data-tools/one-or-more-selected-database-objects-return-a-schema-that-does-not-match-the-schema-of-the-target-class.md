@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df23a6e2a4288c6370a339d37d151283fe3afa8f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 79e7b2a406338e5ecfacf41f9c0485a35c2d97d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655559"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043032"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Co najmniej jeden wybrany obiekt bazy danych zwraca schemat, który nie jest zgodny ze schematem klasy docelowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Co najmniej jeden wybrany obiekt bazy danych zwraca schemat, który nie jest zgo
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-1.  Kliknij przycisk **OK** aby zamknąć okno dialogowe.  
+1. Kliknij przycisk **OK** aby zamknąć okno dialogowe.  
   
-2.  Wybierz obiekt bazy danych, która zwraca dane zgodne ze schematem klasy docelowej (klasy, która obiektu bazy danych jest porzucana na projektanta O/R).  
+2. Wybierz obiekt bazy danych, która zwraca dane zgodne ze schematem klasy docelowej (klasy, która obiektu bazy danych jest porzucana na projektanta O/R).  
   
 ## <a name="see-also"></a>Zobacz też  
  [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

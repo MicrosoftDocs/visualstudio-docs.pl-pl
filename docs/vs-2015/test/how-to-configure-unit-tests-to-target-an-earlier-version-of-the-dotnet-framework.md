@@ -8,12 +8,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 68a0c1b707011026d4fe58d86fc187b0152dae3e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e31f0170d10e3b8088ec9860a6bb9a3ad5306b0f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795863"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042667"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Instrukcje: Konfigurowanie testów jednostkowych pod kątem starszej wersji programu .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,64 +50,64 @@ Po utworzeniu projektu testu w programie Microsoft Visual Studio najnowszą wers
   
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-basic-unit-test-projects"></a>Ponowne Ustawianie elementów docelowych do określonej wersji programu .NET Framework dla projektów testów jednostkowych w Visual Basic  
   
-1.  Utwórz nowy projekt testu jednostkowego języka Visual Basic. Na **pliku** menu, wybierz **New** , a następnie wybierz **projektu**.  
+1. Utwórz nowy projekt testu jednostkowego języka Visual Basic. Na **pliku** menu, wybierz **New** , a następnie wybierz **projektu**.  
   
      **Nowy projekt** zostanie wyświetlone okno dialogowe.  
   
-2.  W obszarze **zainstalowane szablony**, rozwiń węzeł **języka Visual Basic**. Wybierz **testu** , a następnie wybierz **projekt testowy** szablonu.  
+2. W obszarze **zainstalowane szablony**, rozwiń węzeł **języka Visual Basic**. Wybierz **testu** , a następnie wybierz **projekt testowy** szablonu.  
   
-3.  W **nazwa** pole tekstowe, wpisz nazwę dla języka Visual Basic, Projekt testowy, a następnie wybierz **OK**.  
+3. W **nazwa** pole tekstowe, wpisz nazwę dla języka Visual Basic, Projekt testowy, a następnie wybierz **OK**.  
   
-4.  W Eksploratorze rozwiązań wybierz **właściwości** przejdź do menu skrótów w nowy projekt testowy Visual Basic.  
+4. W Eksploratorze rozwiązań wybierz **właściwości** przejdź do menu skrótów w nowy projekt testowy Visual Basic.  
   
      Wyświetlane są właściwości dla projektu testowego programu Visual Basic.  
   
-5.  Na **skompilować** wybierz kartę **zaawansowane opcje kompilacji** jak pokazano na poniższej ilustracji.  
+5. Na **skompilować** wybierz kartę **zaawansowane opcje kompilacji** jak pokazano na poniższej ilustracji.  
   
      ![Advanced Compile Options](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")  
   
-6.  Użyj **platformy docelowej (wszystkie konfiguracje)** listy rozwijanej, aby zmienić platformę docelową, aby **.NET Framework 3.5** lub nowszy, zgodnie z objaśnieniem B na poniższej ilustracji. Nie należy określać wersję klienta.  
+6. Użyj **platformy docelowej (wszystkie konfiguracje)** listy rozwijanej, aby zmienić platformę docelową, aby **.NET Framework 3.5** lub nowszy, zgodnie z objaśnieniem B na poniższej ilustracji. Nie należy określać wersję klienta.  
   
      ![TARGET framework listy&#45;listy rozwijanej](../test/media/howtoconfigureunitest35frameworkstepb.png "HowToConfigureUniTest35FrameworkStepB")  
   
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Ponowne Ustawianie elementów docelowych do określonej wersji programu .NET Framework dla programu Visual C# projektów testów jednostkowych  
   
-1.  Utwórz nowy projekt testu jednostkowego języka Visual C#. Na **pliku** menu, wybierz **New** , a następnie wybierz **projektu**.  
+1. Utwórz nowy projekt testu jednostkowego języka Visual C#. Na **pliku** menu, wybierz **New** , a następnie wybierz **projektu**.  
   
      **Nowy projekt** zostanie wyświetlone okno dialogowe.  
   
-2.  W obszarze **zainstalowane szablony**, rozwiń węzeł **Visual C#**. Wybierz **testu** , a następnie wybierz **projekt testowy** szablonu.  
+2. W obszarze **zainstalowane szablony**, rozwiń węzeł **Visual C#**. Wybierz **testu** , a następnie wybierz **projekt testowy** szablonu.  
   
-3.  W **nazwa** pole tekstowe, wpisz nazwę dla usługi Visual C# projekt testowy, a następnie wybierz **OK**.  
+3. W **nazwa** pole tekstowe, wpisz nazwę dla usługi Visual C# projekt testowy, a następnie wybierz **OK**.  
   
-4.  W Eksploratorze rozwiązań wybierz **właściwości** z menu skrótów dla nowego projektu testu Visual C#.  
+4. W Eksploratorze rozwiązań wybierz **właściwości** z menu skrótów dla nowego projektu testu Visual C#.  
   
      Wyświetlane są właściwości dla projektu testowego programu Visual C#.  
   
-5.  Na **aplikacji** wybierz kartę **platformę docelową** , a następnie wybierz **.NET Framework 3.5** lub nowsza wersja, z listy rozwijanej, aby zmienić framework.as docelowej pokazano na poniższej ilustracji. Nie należy określać wersję klienta.  
+5. Na **aplikacji** wybierz kartę **platformę docelową** , a następnie wybierz **.NET Framework 3.5** lub nowsza wersja, z listy rozwijanej, aby zmienić framework.as docelowej pokazano na poniższej ilustracji. Nie należy określać wersję klienta.  
   
      ![TARGET framework listy&#45;listy rozwijanej](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")  
   
-### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>Ponowne Ustawianie elementów docelowych do określonej wersji programu .NET Framework dla C + +/ projektów testów jednostkowych interfejsu wiersza polecenia  
+### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>Ponownego określenia wartości docelowej do określonej wersji programu .NET Framework dla C++projektów testów jednostkowych interfejsu wiersza polecenia  
   
-1.  Utwórz nowy projekt testu jednostkowego języka C++. Na **pliku** menu, wybierz opcję **New** a następnie kliknij przycisk **projektu**.  
+1. Utwórz nowy projekt testu jednostkowego języka C++. Na **pliku** menu, wybierz opcję **New** a następnie kliknij przycisk **projektu**.  
   
      **Nowy projekt** zostanie wyświetlone okno dialogowe.  
   
     > [!WARNING]
     >  Aby zbudować C + +/ testów jednostkowych interfejsu wiersza polecenia dla wcześniejszych wersji programu .NET framework dla Visual C++, należy użyć odpowiedniej wersji programu Visual Studio. Na przykład, aby skierować je do programu .NET Framework 3.5, należy zainstalować [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] i [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] dodatku Service Pack 1.  
   
-2.  W obszarze **zainstalowane szablony**, rozwiń węzeł **Visual C ++**. Wybierz **testu** , a następnie wybierz **projekt testowy** szablonu.  
+2. W obszarze **zainstalowane szablony**, rozwiń węzeł **Visual C ++**. Wybierz **testu** , a następnie wybierz **projekt testowy** szablonu.  
   
-3.  W **nazwa** pole tekstowe, wpisz nazwę usługi w języka Visual C++, Projekt testowy, a następnie kliknij przycisk **OK**.  
+3. W **nazwa** pole tekstowe, wpisz nazwę usługi w języka Visual C++, Projekt testowy, a następnie kliknij przycisk **OK**.  
   
-4.  W Eksploratorze rozwiązań wybierz **Zwolnij projekt** z projektu testu Visual C++.  
+4. W Eksploratorze rozwiązań wybierz **Zwolnij projekt** z projektu testu Visual C++.  
   
-5.  W Eksploratorze rozwiązań wybierz zwolnione projekt testowy Visual C++, a następnie wybierz **Edytuj \<Nazwa projektu > .vcxproj**.  
+5. W Eksploratorze rozwiązań wybierz zwolnione projekt testowy Visual C++, a następnie wybierz **Edytuj \<Nazwa projektu > .vcxproj**.  
   
      Plik .vcxproj zostanie otwarty w edytorze.  
   
-6.  Ustaw `TargetFrameworkVersion` w wersji 3.5 lub nowszej wersji w `PropertyGroup` etykietą `"Globals"`. Nie należy określać wersja klienta:  
+6. Ustaw `TargetFrameworkVersion` w wersji 3.5 lub nowszej wersji w `PropertyGroup` etykietą `"Globals"`. Nie należy określać wersja klienta:  
   
     ```  
     <PropertyGroup Label="Globals">  
@@ -121,9 +121,9 @@ Po utworzeniu projektu testu w programie Microsoft Visual Studio najnowszą wers
   
     ```  
   
-7.  Zapisz i zamknij plik .vcxproj.  
+7. Zapisz i zamknij plik .vcxproj.  
   
-8.  W Eksploratorze rozwiązań wybierz Zaznacz **Załaduj ponownie projekt** z menu skrótów projektu testów Visual C++.  
+8. W Eksploratorze rozwiązań wybierz Zaznacz **Załaduj ponownie projekt** z menu skrótów projektu testów Visual C++.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie i Uruchamianie testów jednostkowych dla istniejącego kodu](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   

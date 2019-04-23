@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 260fbaa15f7880e604985fca50e8d99ac0e0fd39
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ef9439d9cebfa8b80b214e52d077ab1f770d4750
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683106"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047323"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>Rozszerzanie filtru Eksploratora rozwiązań
 Możesz rozszerzyć **Eksploratora rozwiązań** filtrowania funkcji, aby pokazać lub ukryć poszczególne pliki. Na przykład można utworzyć filtr, który zawiera tylko pliki C# klasy fabryki w **Eksploratora rozwiązań**, tak jak pokazano w tym przewodniku.
@@ -26,13 +26,13 @@ Możesz rozszerzyć **Eksploratora rozwiązań** filtrowania funkcji, aby pokaza
 
 ### <a name="create-a-visual-studio-package-project"></a>Tworzenie projektu pakietu Visual Studio
 
-1.  Utwórz projekt VSIX, o nazwie `FileFilter`. Dodawanie polecenia niestandardowego szablonu elementu o nazwie **obiektu FileFilter**. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Utwórz projekt VSIX, o nazwie `FileFilter`. Dodawanie polecenia niestandardowego szablonu elementu o nazwie **obiektu FileFilter**. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Dodaj odwołanie do `System.ComponentModel.Composition` i `Microsoft.VisualStudio.Utilities`.
+2. Dodaj odwołanie do `System.ComponentModel.Composition` i `Microsoft.VisualStudio.Utilities`.
 
-3.  Polecenie menu są wyświetlane na **Eksploratora rozwiązań** paska narzędzi. Otwórz *FileFilterPackage.vsct* pliku.
+3. Polecenie menu są wyświetlane na **Eksploratora rozwiązań** paska narzędzi. Otwórz *FileFilterPackage.vsct* pliku.
 
-4.  Zmiana `<Button>` bloku do następującego:
+4. Zmiana `<Button>` bloku do następującego:
 
     ```xml
     <Button guid="guidFileFilterPackageCmdSet" id="FileFilterId" priority="0x0400" type="Button">
@@ -46,28 +46,28 @@ Możesz rozszerzyć **Eksploratora rozwiązań** filtrowania funkcji, aby pokaza
 
 ### <a name="update-the-manifest-file"></a>Aktualizacja pliku manifestu
 
-1.  W *source.extension.vsixmanifest* plików, Dodaj element zawartości, która jest składnik MEF.
+1. W *source.extension.vsixmanifest* plików, Dodaj element zawartości, która jest składnik MEF.
 
-2.  Na **zasoby** kartę, wybrać **New** przycisku.
+2. Na **zasoby** kartę, wybrać **New** przycisku.
 
-3.  W **typu** wybierz opcję **Microsoft.VisualStudio.MefComponent**.
+3. W **typu** wybierz opcję **Microsoft.VisualStudio.MefComponent**.
 
-4.  W **źródła** wybierz opcję **projekt w bieżącym rozwiązaniu**.
+4. W **źródła** wybierz opcję **projekt w bieżącym rozwiązaniu**.
 
-5.  W **projektu** wybierz opcję **obiektu FileFilter**, a następnie wybierz **OK** przycisku.
+5. W **projektu** wybierz opcję **obiektu FileFilter**, a następnie wybierz **OK** przycisku.
 
 ### <a name="add-the-filter-code"></a>Dodaj kod filtru
 
-1.  Dodaj niektóre identyfikatorów GUID *FileFilterPackageGuids.cs* pliku:
+1. Dodaj niektóre identyfikatorów GUID *FileFilterPackageGuids.cs* pliku:
 
     ```csharp
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file
     public const int FileFilterId = 0x100;
     ```
 
-2.  Dodaj plik klasy do obiektu FileFilter projektu o nazwie *FileNameFilter.cs*.
+2. Dodaj plik klasy do obiektu FileFilter projektu o nazwie *FileNameFilter.cs*.
 
-3.  Zamień pustej przestrzeni nazw i pusta klasa poniższy kod.
+3. Zamień pustej przestrzeni nazw i pusta klasa poniższy kod.
 
      `Task<IReadOnlyObservableSet> GetIncludedItemsAsync(IEnumerable<IVsHierarchyItem rootItems)` Metoda przyjmuje kolekcji, która zawiera katalog główny rozwiązania (`rootItems`) i zwraca kolekcję elementów, które mają zostać uwzględnione w filtrze.
 
@@ -158,7 +158,7 @@ Możesz rozszerzyć **Eksploratora rozwiązań** filtrowania funkcji, aby pokaza
 
     ```
 
-4.  W *FileFilter.cs*, Usuń położenie polecenia i obsługę kodu z konstruktora obiektu FileFilter. Wynik powinien wyglądać następująco:
+4. W *FileFilter.cs*, Usuń położenie polecenia i obsługę kodu z konstruktora obiektu FileFilter. Wynik powinien wyglądać następująco:
 
     ```csharp
     private FileFilter(Package package)
@@ -174,7 +174,7 @@ Możesz rozszerzyć **Eksploratora rozwiązań** filtrowania funkcji, aby pokaza
 
      Usuń `ShowMessageBox()` również metody.
 
-5.  W *FileFilterPackage.cs*, Zastąp kod w `Initialize()` metoda następującym kodem:
+5. W *FileFilterPackage.cs*, Zastąp kod w `Initialize()` metoda następującym kodem:
 
     ```csharp
     protected override void Initialize()
@@ -186,10 +186,10 @@ Możesz rozszerzyć **Eksploratora rozwiązań** filtrowania funkcji, aby pokaza
 
 ### <a name="test-your-code"></a>Testowanie kodu
 
-1.  Skompiluj i uruchom projekt. Zostanie wyświetlone drugie wystąpienie programu Visual Studio. Jest to wystąpienie eksperymentalne.
+1. Skompiluj i uruchom projekt. Zostanie wyświetlone drugie wystąpienie programu Visual Studio. Jest to wystąpienie eksperymentalne.
 
-2.  W doświadczalnym wystąpieniu programu Visual Studio Otwórz projekt C#.
+2. W doświadczalnym wystąpieniu programu Visual Studio Otwórz projekt C#.
 
-3.  Poszukaj przycisku można dodać na **Eksploratora rozwiązań** paska narzędzi. Powinna to być czwarty przycisk z lewej strony.
+3. Poszukaj przycisku można dodać na **Eksploratora rozwiązań** paska narzędzi. Powinna to być czwarty przycisk z lewej strony.
 
-4.  Kliknij przycisk, powinny być odfiltrowane wszystkie pliki i powinien zostać wyświetlony **wszystkie elementy zostały wyfiltrowane z widoku.** w **Eksploratora rozwiązań**.
+4. Kliknij przycisk, powinny być odfiltrowane wszystkie pliki i powinien zostać wyświetlony **wszystkie elementy zostały wyfiltrowane z widoku.** w **Eksploratora rozwiązań**.

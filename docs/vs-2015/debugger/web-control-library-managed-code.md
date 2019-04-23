@@ -17,12 +17,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 17be48435dd8251d1269c7a95195d794f750d534
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 18f6e72d18154f11866671a3e448d88c91768c7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797345"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047101"
 ---
 # <a name="web-control-library-managed-code"></a>Biblioteka formantów sieci Web (zarządzany kod)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,25 +31,25 @@ Szablon projektu Biblioteka formantów sieci Web tworzy bibliotekę DLL. Poniewa
   
 ### <a name="to-debug-a-web-control-library-method-1"></a>Aby debugować Biblioteka formantów sieci Web (metoda 1)  
   
-1.  Otwórz istniejący projekt Biblioteka formantów sieci Web, lub Utwórz nową.  
+1. Otwórz istniejący projekt Biblioteka formantów sieci Web, lub Utwórz nową.  
   
-2.  Utwórz [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] strona, która osadza formantu.  
+2. Utwórz [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] strona, która osadza formantu.  
   
-3.  W witrynie sieci Web, który jest hostem [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] kontroler testu, Utwórz podkatalog o nazwie `/Code`.  
+3. W witrynie sieci Web, który jest hostem [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] kontroler testu, Utwórz podkatalog o nazwie `/Code`.  
   
-4.  Skopiuj kod źródłowy dla formantu do `/Code` podkatalogu.  
+4. Skopiuj kod źródłowy dla formantu do `/Code` podkatalogu.  
   
-5.  Otwórz kod źródłowy w `/Code` podkatalogu i ustawiania punktów przerwania.  
+5. Otwórz kod źródłowy w `/Code` podkatalogu i ustawiania punktów przerwania.  
   
-6.  Otwórz okno przeglądarki z adresem URL, który wskazuje na kontroler testów. Punkt przerwania w kontrolce spowoduje osiągnięcie i uruchomić debugowanie.  
+6. Otwórz okno przeglądarki z adresem URL, który wskazuje na kontroler testów. Punkt przerwania w kontrolce spowoduje osiągnięcie i uruchomić debugowanie.  
   
 ### <a name="to-debug-a-web-control-library-method-2"></a>Aby debugować Biblioteka formantów sieci Web (metoda 2)  
   
-1.  Utwórz projekt aplikacji hosta i projektu kontrolki sieci Web, w tym samym rozwiązaniu.  
+1. Utwórz projekt aplikacji hosta i projektu kontrolki sieci Web, w tym samym rozwiązaniu.  
   
-2.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy aplikację hosta i wybierz polecenie **Dodaj odwołanie**.  
+2. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy aplikację hosta i wybierz polecenie **Dodaj odwołanie**.  
   
-3.  Dodaj odwołanie do projektu sieci web kontroli.  
+3. Dodaj odwołanie do projektu sieci web kontroli.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Aplikacje internetowe ASP.NET](../debugger/debugging-preparation-aspnet-web-applications.md)

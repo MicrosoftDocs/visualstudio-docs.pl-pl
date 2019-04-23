@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8245c8a3decdd9e9576d3a24b37df4971dbb9284
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d6b5df5e8b8dba85ae26d0c606f4ed3f0b343d7b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633710"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042747"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Szybki start: Analizowanie danych użycia procesora CPU w Visual Studio (C++)
 
@@ -115,26 +115,26 @@ Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debu
 
 ## <a name="step-1-collect-profiling-data"></a>Krok 1. Zbieranie danych profilowania
 
-1.  Najpierw ustaw punkt przerwania w swojej aplikacji, w tym wierszu kodu w `main` funkcji:
+1. Najpierw ustaw punkt przerwania w swojej aplikacji, w tym wierszu kodu w `main` funkcji:
 
     `for (int i = 0; i < 10; ++i) {`
 
     Ustaw punkt przerwania, klikając na marginesie po lewej stronie wiersza kodu.
 
-2.  Następnym etapem jest skonfigurowanie drugiego punktu przerwania na zamykającego nawiasu klamrowego na końcu `main` funkcji:
+2. Następnym etapem jest skonfigurowanie drugiego punktu przerwania na zamykającego nawiasu klamrowego na końcu `main` funkcji:
 
      ![Ustaw punkty przerwania dla profilowania](../profiling/media/quickstart-cpu-usage-breakpoints-cplusplus.png "ustawiać punkty przerwania dla profilowania")
 
     > [!TIP]
     > Ustawiając dwa punkty przerwania, można ograniczyć zbieranie danych do części kodu, który chcesz analizować.
 
-3.  **Narzędzia diagnostyczne** okna jest jeszcze widoczny, o ile nie została ona wyłączona. Aby wyświetlić okno ponownie, kliknij przycisk **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.
+3. **Narzędzia diagnostyczne** okna jest jeszcze widoczny, o ile nie została ona wyłączona. Aby wyświetlić okno ponownie, kliknij przycisk **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.
 
-4.  Kliknij przycisk **debugowania** > **Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).
+4. Kliknij przycisk **debugowania** > **Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).
 
      Gdy aplikacja zakończy ładowanie, **Podsumowanie** zostanie wyświetlony widok narzędzia diagnostyczne.
 
-5.  Gdy debuger jest wstrzymany, Włącz zbieranie danych użycia procesora CPU, wybierając **profil procesora CPU rekordu**, a następnie otwórz **użycie procesora CPU** kartę.
+5. Gdy debuger jest wstrzymany, Włącz zbieranie danych użycia procesora CPU, wybierając **profil procesora CPU rekordu**, a następnie otwórz **użycie procesora CPU** kartę.
 
      ![Narzędzia diagnostyczne Włącz profilowanie procesora CPU](../profiling/media/quickstart-cpu-usage-summary.png "narzędzia diagnostyczne Włącz profilowanie procesora CPU")
 
@@ -142,7 +142,7 @@ Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debu
 
      Po wybraniu **profil procesora CPU rekordu**, Visual Studio spowoduje rozpoczęcie rejestrowania funkcji i czas, jaki przyjmują do wykonania, a także zawiera wykres osi czasu, można użyć, aby skoncentrować się na poszczególnych segmentach sesji pobierania próbek. Ta zebrane dane może wyświetlać tylko w przypadku, gdy aplikacja jest zatrzymywane w punkcie przerwania.
 
-6.  Naciśnij klawisz F5, aby uruchomić aplikację na drugi punkt przerwania.
+6. Naciśnij klawisz F5, aby uruchomić aplikację na drugi punkt przerwania.
 
      Teraz masz teraz dane wydajności dla twojej aplikacji specjalnie dla regionu kodu wykonywanego między dwoma punktami przerwania.
 

@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2290ec08ea64a2775b3e4ced171dbf14399219cb
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 37fa7bafb77c67d29ff9625fa04388f9dd826f8e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867670"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059269"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,16 +53,16 @@ This report is Company Confidential.
   
 #### <a name="to-create-a-run-time-text-template"></a>Aby utworzyć szablon tekstowy czasu wykonywania  
   
-1.  W Eksploratorze rozwiązań w menu skrótów projektu wybierz **Dodaj**, **nowy element**.  
+1. W Eksploratorze rozwiązań w menu skrótów projektu wybierz **Dodaj**, **nowy element**.  
   
-2.  W **Dodaj nowy element** okno dialogowe, wybierz opcję **szablonie tekstowym czasu wykonywania**. (W [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Sprawdź w obszarze **typowe Items\General**.)  
+2. W **Dodaj nowy element** okno dialogowe, wybierz opcję **szablonie tekstowym czasu wykonywania**. (W [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Sprawdź w obszarze **typowe Items\General**.)  
   
-3.  Wpisz nazwę dla pliku szablonu.  
+3. Wpisz nazwę dla pliku szablonu.  
   
     > [!NOTE]
     >  Nazwa pliku szablonu będzie służyć jako nazwy klasy w wygenerowanym kodzie. W związku z tym nie powinna ona mieć spacji i znaków przestankowych.  
   
-4.  Wybierz **Dodaj**.  
+4. Wybierz **Dodaj**.  
   
      Tworzony jest nowy plik, który ma rozszerzenie **.tt**. Jego **narzędzie niestandardowe** właściwość jest ustawiona na **TextTemplatingFilePreprocessor**. Zawiera następujące wiersze:  
   
@@ -79,18 +79,18 @@ This report is Company Confidential.
   
 #### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Aby przekonwertować istniejącego pliku tekstowego szablon czasu wykonywania  
   
-1.  Dołącz plik do usługi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu. W Eksploratorze rozwiązań w menu skrótów projektu, wybierz **Dodaj**, **istniejący element**.  
+1. Dołącz plik do usługi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu. W Eksploratorze rozwiązań w menu skrótów projektu, wybierz **Dodaj**, **istniejący element**.  
   
-2.  Ustaw plik **narzędzia niestandardowe** właściwości **TextTemplatingFilePreprocessor**. W Eksploratorze rozwiązań w menu skrótów pliku, wybierz **właściwości**.  
+2. Ustaw plik **narzędzia niestandardowe** właściwości **TextTemplatingFilePreprocessor**. W Eksploratorze rozwiązań w menu skrótów pliku, wybierz **właściwości**.  
   
     > [!NOTE]
     >  Jeśli właściwość została już ustawiona, upewnij się, że jest **TextTemplatingFilePreprocessor** i nie **TextTemplatingFileGenerator**. Może się to zdarzyć, jeśli dołączyć plik, który ma już rozszerzenie **.tt**.  
   
-3.  Zmień rozszerzenie nazwy pliku **.tt**. Mimo że ten krok jest opcjonalny, pomaga uniknąć, otwierając plik w edytorze niepoprawne.  
+3. Zmień rozszerzenie nazwy pliku **.tt**. Mimo że ten krok jest opcjonalny, pomaga uniknąć, otwierając plik w edytorze niepoprawne.  
   
-4.  Usuń wszelkie spacje lub znaki interpunkcyjne z głównej części nazwy pliku. Na przykład "Moje Page.tt sieci Web" jest nieprawidłowa, ale "MyWebPage.tt" jest prawidłowa. Nazwa pliku będzie służyć jako nazwy klasy w wygenerowanym kodzie.  
+4. Usuń wszelkie spacje lub znaki interpunkcyjne z głównej części nazwy pliku. Na przykład "Moje Page.tt sieci Web" jest nieprawidłowa, ale "MyWebPage.tt" jest prawidłowa. Nazwa pliku będzie służyć jako nazwy klasy w wygenerowanym kodzie.  
   
-5.  Wstaw następujący wiersz na początku pliku. Jeśli pracujesz w projekcie Visual Basic, zastąp "C#" z "VB".  
+5. Wstaw następujący wiersz na początku pliku. Jeśli pracujesz w projekcie Visual Basic, zastąp "C#" z "VB".  
   
      `<#@ template language="C#" #>`  
   

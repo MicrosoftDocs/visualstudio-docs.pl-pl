@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 173ab11e85853324089f1dee66cd047e0afb7f13
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8757b04423037d821d7b74293e508f567975da57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767374"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047935"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304: Określ argument CultureInfo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "54767374"
 ## <a name="cause"></a>Przyczyna
  Metoda lub Konstruktor wywołuje członka mającego przeciążenie, które akceptuje <xref:System.Globalization.CultureInfo?displayProperty=fullName> parametru, a metoda lub Konstruktor niewywołujący przeciążenia, które przyjmuje <xref:System.Globalization.CultureInfo> parametru. Ta zasada powoduje ignorowanie wywołania następujących metod:
 
--   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
+- <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Opis reguły
  Gdy <xref:System.Globalization.CultureInfo> lub <xref:System.IFormatProvider?displayProperty=fullName> obiektu nie jest podany, wartość domyślna, która jest dostarczana przez członka przeciążonego może nie wywoływać oczekiwanego efektu we wszystkich ustawieniach regionalnych. Ponadto [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] członków wybierz domyślną kulturę i formatowanie na podstawie założeń, które mogą być niepoprawne w kodzie. Aby upewnić się, że kod działa zgodnie z oczekiwaniami dla scenariuszy, należy podać charakterystyczne dla kultury informacje zgodnie z następującymi wytycznymi:

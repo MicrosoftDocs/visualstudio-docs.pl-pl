@@ -12,21 +12,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce7b6705fcbafaf713faed6f937fcfa29bd013d6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 75caa29d90b41dc696ce586d50928b2adb0875f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597378"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067524"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>Instrukcje: Pobieranie usługi projektu SharePoint
   Aby uzyskać dostęp z usługi projektu programu SharePoint w następujących rozwiązań:
 
--   Rozszerzenie systemu projektu programu SharePoint, takich jak rozszerzenie projektu, rozszerzenie elementu projektu lub definicji typu elementu projektu. Aby uzyskać więcej informacji na temat tych typów rozszerzeń zobacz [rozszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
+- Rozszerzenie systemu projektu programu SharePoint, takich jak rozszerzenie projektu, rozszerzenie elementu projektu lub definicji typu elementu projektu. Aby uzyskać więcej informacji na temat tych typów rozszerzeń zobacz [rozszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
 
--   Rozszerzenie **połączeń SharePoint** w węźle **Eksploratora serwera**. Aby uzyskać więcej informacji na temat tych typów rozszerzeń zobacz [rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+- Rozszerzenie **połączeń SharePoint** w węźle **Eksploratora serwera**. Aby uzyskać więcej informacji na temat tych typów rozszerzeń zobacz [rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
--   Inny typ rozszerzenia programu Visual Studio, takie jak pakietu VSPackage.
+- Inny typ rozszerzenia programu Visual Studio, takie jak pakietu VSPackage.
 
 ## <a name="retrieve-the-service-in-project-system-extensions"></a>Pobieranie usługi w rozszerzeniach systemu projektu
  Wszystkie rozszerzenia systemu projektu programu SharePoint, mieli dostęp do usługi projektu za pomocą <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectService%2A> właściwość <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> obiektu.
@@ -35,9 +35,9 @@ ms.locfileid: "56597378"
 
 #### <a name="to-retrieve-the-service-in-a-project-extension"></a>Można pobrać usługi w rozszerzeniu projektu
 
-1.  W danej implementacji <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> interfejsu, odszukaj <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> metody.
+1. W danej implementacji <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> interfejsu, odszukaj <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> metody.
 
-2.  Użyj *projectService* parametru, aby uzyskać dostęp do usługi.
+2. Użyj *projectService* parametru, aby uzyskać dostęp do usługi.
 
      Poniższy przykład kodu pokazuje, jak korzystać z usługi projektu do zapisywania komunikatów **dane wyjściowe** okna i **lista błędów** okna w rozszerzeniu prostego projektu.
 
@@ -48,9 +48,9 @@ ms.locfileid: "56597378"
 
 #### <a name="to-retrieve-the-service-in-a-project-item-extension"></a>Aby pobrać usługę w rozszerzenia elementu projektu
 
-1.  W danej implementacji <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> interfejsu, odszukaj <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> metody.
+1. W danej implementacji <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> interfejsu, odszukaj <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> metody.
 
-2.  Użyj <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType.ProjectService%2A> właściwość *projectItemType* parametru, aby pobrać usługę.
+2. Użyj <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType.ProjectService%2A> właściwość *projectItemType* parametru, aby pobrać usługę.
 
      Poniższy przykład kodu pokazuje, jak korzystać z usługi projektu do zapisywania komunikatów **dane wyjściowe** okna i **lista błędów** okna proste rozszerzenie **definicji listy** elementu projektu.
 
@@ -61,9 +61,9 @@ ms.locfileid: "56597378"
 
 #### <a name="to-retrieve-the-service-in-a-project-item-type-definition"></a>Aby pobrać usługę w definicji typu elementu projektu
 
-1.  W danej implementacji <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> interfejsu, odszukaj <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> metody.
+1. W danej implementacji <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> interfejsu, odszukaj <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> metody.
 
-2.  Użyj <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.ProjectService%2A> właściwość *typeDefinition* parametru, aby pobrać usługę.
+2. Użyj <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.ProjectService%2A> właściwość *typeDefinition* parametru, aby pobrać usługę.
 
      Poniższy przykład kodu pokazuje, jak korzystać z usługi projektu do zapisywania komunikatów **dane wyjściowe** okna i **lista błędów** okna w definicji typu elementu prostego projektu.
 
@@ -77,9 +77,9 @@ ms.locfileid: "56597378"
 
 #### <a name="to-retrieve-the-service-in-a-server-explorer-extension"></a>Można pobrać usługi w rozszerzeniu Eksploratora serwera
 
-1.  Pobierz <xref:System.IServiceProvider> obiektu z <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A> właściwość <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> obiektu w rozszerzeniu.
+1. Pobierz <xref:System.IServiceProvider> obiektu z <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A> właściwość <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> obiektu w rozszerzeniu.
 
-2.  Użyj <xref:System.IServiceProvider.GetService%2A> metodę, aby zażądać <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> obiektu.
+2. Użyj <xref:System.IServiceProvider.GetService%2A> metodę, aby zażądać <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> obiektu.
 
      Poniższy przykład kodu pokazuje, jak korzystać z usługi projektu do zapisywania komunikatów **dane wyjściowe** okna i **lista błędów** okna w menu skrótów, które rozszerzenie dodaje do listy węzłów w **Eksploratora serwera**.
 

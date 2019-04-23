@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f5c2d39ce4652b6c41d80e919cca93c83c38fb2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 59f26e4e8972f02740db45760e5b2e876c300bd1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685004"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045404"
 ---
 # <a name="using-the-settings-store"></a>Korzystanie z magazynu ustawień
 Istnieją dwa rodzaje ustawień magazynów:
@@ -77,11 +77,11 @@ Istnieją dwa rodzaje ustawień magazynów:
 
 #### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Aby sprawdzić ustawienia konfiguracji za pomocą Edytora rejestru
 
-1.  Open Regedit.exe.
+1. Open Regedit.exe.
 
-2.  Przejdź do HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.
+2. Przejdź do HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.
 
     > [!NOTE]
     >  Upewnij się, że przeglądasz klucz, który zawiera \14.0Exp_Config\ i nie \14.0_Config\\. Po uruchomieniu doświadczalnym wystąpieniu programu Visual Studio, ustawienia konfiguracyjne znajdują się w gałęzi rejestru "14.0Exp_Config".
 
-3.  Rozwiń węzeł \Installed Products\. Jeśli komunikat w poprzednich krokach jest **zainstalowane narzędzia dla deweloperów do programu Microsoft Windows Phone: Wartość true,**, a następnie \Installed Products\ powinien zawierać węzeł Microsoft Windows Phone Developer Tools. Jeśli komunikat jest **zainstalowane narzędzia dla deweloperów do programu Microsoft Windows Phone: FALSE**, a następnie \Installed Products\ nie może zawierać węzeł Microsoft Windows Phone Developer Tools.
+3. Rozwiń węzeł \Installed Products\. Jeśli komunikat w poprzednich krokach jest **zainstalowane narzędzia dla deweloperów do programu Microsoft Windows Phone: Wartość true,**, a następnie \Installed Products\ powinien zawierać węzeł Microsoft Windows Phone Developer Tools. Jeśli komunikat jest **zainstalowane narzędzia dla deweloperów do programu Microsoft Windows Phone: FALSE**, a następnie \Installed Products\ nie może zawierać węzeł Microsoft Windows Phone Developer Tools.

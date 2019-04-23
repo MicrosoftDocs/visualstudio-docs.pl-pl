@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c18c9537358cd40d574bed47e9a7d357ee3dacb7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b473dc706cd7183835c5d84091fb53e45337c013
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955209"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040228"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Dokumentacja języka DGML (Directed Graph Markup Language)
 
@@ -23,7 +23,7 @@ Należy pamiętać, że niektóre wersje programu Visual Studio obsługuje tylko
 > [!NOTE]
 > Podczas edycji pliku .dgml technologia IntelliSense pomaga identyfikować atrybuty, które są dostępne dla każdego elementu i ich wartości. Aby określić kolor w atrybucie, użyj nazw dla pospolitych kolorów, takich jak „Niebieski” lub wartości szesnastkowych ARGB, takich jak „#ffa0b1c3”. DGML używa małego podzbioru formatów definicji koloru Windows Presentation Foundation (WPF). Aby uzyskać więcej informacji, zobacz [klasa kolory](http://go.microsoft.com/fwlink/?LinkId=182345).
 
-##  <a name="DGML"></a> Składnia DGML
+## <a name="DGML"></a> Składnia DGML
 
 W poniższej tabeli opisano rodzaje elementów, które są używane w DGML:
 
@@ -300,7 +300,7 @@ W poniższej tabeli opisano rodzaje elementów, które są używane w DGML:
   </DirectedGraph>
   ```
 
-###  <a name="AddAlias"></a> Aliasy dla najczęściej używanych ścieżek
+### <a name="AddAlias"></a> Aliasy dla najczęściej używanych ścieżek
 
 Zamienianie najczęściej używanych ścieżek na aliasy pomaga zredukować rozmiar pliku .dgml i czas wymagany do załadowania lub zapisania pliku. Aby utworzyć alias, należy dodać `<Paths></Paths>` sekcji na końcu pliku .dgml. W tej sekcji Dodaj `<Path/>` element, aby zdefiniować alias dla ścieżki:
 

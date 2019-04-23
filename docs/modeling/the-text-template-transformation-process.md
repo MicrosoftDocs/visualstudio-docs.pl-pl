@@ -1,5 +1,5 @@
 ---
-title: Proces przekształcania szablonu tekstowego
+title: Proces transformacji szablonu tekstowego
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29495fb297670b6b297e17d40bfb2bcdc0025862
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 271d9625ba5c41599af6c92504b3f17a166a2ee7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929326"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061779"
 ---
-# <a name="the-text-template-transformation-process"></a>Proces przekształcania szablonu tekstowego
+# <a name="the-text-template-transformation-process"></a>Proces transformacji szablonu tekstowego
 Proces przekształcania szablonu tekstowego przyjmuje plik szablonu tekstu jako dane wejściowe i generuje nowy plik tekstowy jako dane wyjściowe. Na przykład można użyć szablonów tekstowych do generowania kodu Visual Basic lub C# lub możesz wygenerować raport HTML.
 
  Trzy składniki wzięcia udziału w ramach tego procesu: silnik, hosta i procesorów dyrektyw. Aparat kontroluje proces; współpracuje z usługą hosta oraz procesor dyrektywy, aby wygenerować plik wyjściowy. Host zawiera wszystkie interakcje ze środowiskiem, takich jak lokalizowanie plików i zestawów. Procesor dyrektywy dodaje funkcje, takie jak odczytywanie danych z pliku XML lub bazy danych.
@@ -37,19 +37,19 @@ Proces przekształcania szablonu tekstowego przyjmuje plik szablonu tekstu jako 
 ## <a name="the-host"></a>Host
  Host jest odpowiedzialny za nic, które odnoszą się do środowiska poza procesem przekształcania, takie jak następujące:
 
--   Wyszukiwanie tekstowe i pliki binarne, żądane przez aparat lub procesor dyrektywy. Host może przeszukiwać katalogi i globalnej pamięci podręcznej do lokalizowania zestawów. Hosta można zlokalizować kod niestandardowy procesor dyrektywy dla aparatu. Hosta można zlokalizować i odczytywać pliki tekstowe i zwróć ich zawartość jako ciągi.
+- Wyszukiwanie tekstowe i pliki binarne, żądane przez aparat lub procesor dyrektywy. Host może przeszukiwać katalogi i globalnej pamięci podręcznej do lokalizowania zestawów. Hosta można zlokalizować kod niestandardowy procesor dyrektywy dla aparatu. Hosta można zlokalizować i odczytywać pliki tekstowe i zwróć ich zawartość jako ciągi.
 
--   Dostarczanie listy standardowe zestawy i przestrzenie nazw, które są używane przez aparat do tworzenia wygenerowanej klasy przekształcenia.
+- Dostarczanie listy standardowe zestawy i przestrzenie nazw, które są używane przez aparat do tworzenia wygenerowanej klasy przekształcenia.
 
--   Zapewnianie domenie aplikacji, która jest używana, gdy aparat zostanie skompilowany i wykonany wygenerowanej klasy przekształcenia. Oddzielna domena aplikacji jest używana w celu ochrony aplikacji hosta z błędów w kodzie szablonu.
+- Zapewnianie domenie aplikacji, która jest używana, gdy aparat zostanie skompilowany i wykonany wygenerowanej klasy przekształcenia. Oddzielna domena aplikacji jest używana w celu ochrony aplikacji hosta z błędów w kodzie szablonu.
 
--   Zapisywanie pliku wygenerowanych danych wyjściowych.
+- Zapisywanie pliku wygenerowanych danych wyjściowych.
 
--   Ustawienie domyślne rozszerzenie pliku wygenerowanych danych wyjściowych.
+- Ustawienie domyślne rozszerzenie pliku wygenerowanych danych wyjściowych.
 
--   Obsługa błędów przekształcania szablonu tekstu. Na przykład host może wyświetlić błędy w interfejsie użytkownika lub zostaną zapisane do pliku. (W programie Visual Studio, błędy są wyświetlane w oknie komunikat o błędzie.)
+- Obsługa błędów przekształcania szablonu tekstu. Na przykład host może wyświetlić błędy w interfejsie użytkownika lub zostaną zapisane do pliku. (W programie Visual Studio, błędy są wyświetlane w oknie komunikat o błędzie.)
 
--   Podanie wartości wymaganego parametru, jeśli użytkownik wywołał dyrektywy bez podawania wartości. Procesor dyrektywy można określić nazwy dyrektywy i parametru i poproś hosta, aby podać wartość domyślną, jeśli taki istnieje.
+- Podanie wartości wymaganego parametru, jeśli użytkownik wywołał dyrektywy bez podawania wartości. Procesor dyrektywy można określić nazwy dyrektywy i parametru i poproś hosta, aby podać wartość domyślną, jeśli taki istnieje.
 
 ## <a name="directives-and-directive-processors"></a>Dyrektywy i procesorów dyrektyw
  Dyrektywy to polecenie w szablonie tekstowym. Zawiera parametry procesu tworzenia. Zwykle dyrektywy określają źródło i typu modelu i inne dane wejściowe i rozszerzenie nazwy pliku wyjściowego pliku.

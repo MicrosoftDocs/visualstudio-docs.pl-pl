@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01f229e3763777784fab193034eb79a643f5da13
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 9b1799ac2e7124f79d10dcc8860a994e2f182ea7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416194"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051352"
 ---
-# <a name="how-to-create-a-domain-specific-language-solution"></a>Porady: Tworzenie rozwiązania języka specyficznego dla domeny
+# <a name="how-to-create-a-domain-specific-language-solution"></a>Instrukcje: Tworzenie rozwiązania języka specyficznego dla domeny
 Języka specyficznego dla domeny (DSL) jest tworzony przy użyciu specjalnych rozwiązania programu Visual Studio.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
@@ -54,9 +54,9 @@ Przed rozpoczęciem tej procedury należy zainstalować następujące składniki
 
 3. Wprowadź rozszerzenie nazwy pliku na **rozszerzenie pliku** strony. Powinien on być unikatowy w komputerze i w każdym komputerze, na którym chcesz zainstalować język DSL. Powinien zostać wyświetlony komunikat **Brak aplikacji lub edytorów programu Visual Studio za pomocą tego rozszerzenia**.
 
-   -   Jeśli rozszerzenie nazwy pliku jest używany, poprzednie eksperymentalne językami DSL, które nie zostały w pełni zainstalowane, można wyczyścić je na zewnątrz przy użyciu **Zresetuj wystąpienie eksperymentalne** narzędzia, które znajdują się w menu programu Visual Studio SDK.
+   - Jeśli rozszerzenie nazwy pliku jest używany, poprzednie eksperymentalne językami DSL, które nie zostały w pełni zainstalowane, można wyczyścić je na zewnątrz przy użyciu **Zresetuj wystąpienie eksperymentalne** narzędzia, które znajdują się w menu programu Visual Studio SDK.
 
-   -   Jeśli inny rozszerzenie programu Visual Studio, która używa tego rozszerzenia pliku pełni zainstalowaną na komputerze, należy rozważyć odinstalowanie go. Na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.
+   - Jeśli inny rozszerzenie programu Visual Studio, która używa tego rozszerzenia pliku pełni zainstalowaną na komputerze, należy rozważyć odinstalowanie go. Na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.
 
 4. Zbadaj i w razie potrzeby dostosować, pola na pozostałych stronach kreatora. Gdy jesteś zadowolony z ustawień, kliknij przycisk **Zakończ**. Aby uzyskać więcej informacji na temat ustawień, zobacz [stron kreatora Projektant DSL](#settings).
 
@@ -85,15 +85,15 @@ Wpisz nowe rozszerzenie pliku.
 
  Jeśli zobaczysz listę narzędzi lub pakietów, należy wykonać jedną z następujących czynności:
 
--   Wpisz rozszerzenie inny plik.
+- Wpisz rozszerzenie inny plik.
 
      \- lub —
 
--   Zresetuj wystąpienie eksperymentalne programu Visual Studio. To wyrejestruje wszystkich języków DSL, które zostały wcześniej utworzone. Na **Start** menu, kliknij przycisk **wszystkie programy**, **Microsoft Visual Studio 2010 SDK**, **narzędzia**, a następnie **resetowania Microsoft Visual Studio 2010 doświadczalne wystąpienie**. Można odtworzyć innych języków, które chcesz ponownie użyć DSL.
+- Zresetuj wystąpienie eksperymentalne programu Visual Studio. To wyrejestruje wszystkich języków DSL, które zostały wcześniej utworzone. Na **Start** menu, kliknij przycisk **wszystkie programy**, **Microsoft Visual Studio 2010 SDK**, **narzędzia**, a następnie **resetowania Microsoft Visual Studio 2010 doświadczalne wystąpienie**. Można odtworzyć innych języków, które chcesz ponownie użyć DSL.
 
      \- lub —
 
--   Jeśli rozszerzenia Visual Studio, która używa tego rozszerzenia pliku została w pełni zainstalowana na komputerze, należy ją odinstalować. Na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.
+- Jeśli rozszerzenia Visual Studio, która używa tego rozszerzenia pliku została w pełni zainstalowana na komputerze, należy ją odinstalować. Na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.
 
 ### <a name="product-settings-page"></a>Strona ustawień produktu
  **Co to jest nazwa produktu, którego należy nowy język specyficznego dla domeny?**

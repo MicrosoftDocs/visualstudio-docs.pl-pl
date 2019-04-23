@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 4cdf5ab5-9f09-4caf-9011-2dcb2c62f1b7
 caps.latest.revision: 14
 manager: jillfra
-ms.openlocfilehash: 0161b3e44b44567166a337d94101778074561e80
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 1c1fb48e4bb354ef403b39b0f1320ead92f43967
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833751"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054370"
 ---
 # <a name="how-to-use-getglobalservice"></a>Instrukcje: Use GetGlobalService
 Czasami może być konieczne uzyskiwanie usługi okno narzędzia lub kontroli kontenera, które nie zostały zlokalizowane; w przeciwnym razie ma zostały umieszczone u dostawcy usług, które nie wie o usługę, którą chcesz. Na przykład można zapisywać w dzienniku aktywności ze znajdujących się pod kontrolą. Aby uzyskać więcej informacji na temat tych i innych scenariuszy, zobacz [jak: Rozwiązywanie problemów z usługami](../extensibility/how-to-troubleshoot-services.md).  
@@ -25,15 +25,15 @@ Czasami może być konieczne uzyskiwanie usługi okno narzędzia lub kontroli ko
   
  Na szczęście <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> działa prawidłowo w większości przypadków.  
   
--   Jeśli pakietu VSPackage udostępnia usługę znanego tylko innego pakietu VSPackage, pakietu VSPackage żądania usługi jest ulokowany przed pakietu VSPackage warunkiem, że usługa jest ładowany.  
+- Jeśli pakietu VSPackage udostępnia usługę znanego tylko innego pakietu VSPackage, pakietu VSPackage żądania usługi jest ulokowany przed pakietu VSPackage warunkiem, że usługa jest ładowany.  
   
--   Jeśli okno narzędzia jest tworzony przez pakietu VSPackage, pakietu VSPackage jest ulokowany przed utworzeniem okna narzędzia.  
+- Jeśli okno narzędzia jest tworzony przez pakietu VSPackage, pakietu VSPackage jest ulokowany przed utworzeniem okna narzędzia.  
   
--   Jeśli formant kontenera jest hostowana przez okna narzędzia utworzonego przez pakietu VSPackage, pakietu VSPackage jest ulokowany przed utworzeniem kontenera kontrolki.  
+- Jeśli formant kontenera jest hostowana przez okna narzędzia utworzonego przez pakietu VSPackage, pakietu VSPackage jest ulokowany przed utworzeniem kontenera kontrolki.  
   
 ### <a name="to-get-a-service-from-within-a-tool-window-or-control-container"></a>Aby uzyskać to usługa firmy znajdujące się w kontenerze okna lub kontroli narzędzi  
   
--   Wstaw ten kod w konstruktorze, okno narzędzia lub kontroli kontenera:  
+- Wstaw ten kod w konstruktorze, okno narzędzia lub kontroli kontenera:  
   
      [!code-csharp[UseGetGlobalService#1](../snippets/csharp/VS_Snippets_VSSDK/usegetglobalservice/cs/getglobalservicepackage.cs#1)]
      [!code-vb[UseGetGlobalService#1](../snippets/visualbasic/VS_Snippets_VSSDK/usegetglobalservice/vb/getglobalservicepackage.vb#1)]  

@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b2358e177f049d9eda17bcb54baf6a547605419c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b0489dec1c2d6cb3d7559a2bdd029ccab6c3ce5f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653102"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056812"
 ---
 # <a name="save-data-back-to-the-database"></a>Zapisywanie danych z powrotem w bazie danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -249,11 +249,11 @@ Aktualizacja dwuetapowego procesu i roli DataRowVersion w Pomyślna aktualizacja
   
  Dla drugiego wiersza, jednak `Update` metoda automatycznie wywołuje polecenie poprawne dane i przekazuje go do bazy danych. Określonej składni instrukcji SQL, zależy od dialekt programu SQL Server, która jest obsługiwana przez źródłowy magazyn danych. Ale następujące cechy ogólne przesyłane instrukcji SQL warte zauważenia:  
   
--   Przesyłane instrukcja SQL jest instrukcji UPDATE. Karta wie, że ma używać instrukcji UPDATE, ponieważ wartość <xref:System.Data.DataRow.RowState%2A> właściwość <xref:System.Data.DataRowState>.  
+- Przesyłane instrukcja SQL jest instrukcji UPDATE. Karta wie, że ma używać instrukcji UPDATE, ponieważ wartość <xref:System.Data.DataRow.RowState%2A> właściwość <xref:System.Data.DataRowState>.  
   
--   Przesyłane instrukcja SQL zawiera klauzulę WHERE, co oznacza, że obiekt docelowy instrukcji UPDATE wiersz gdzie `CustomerID = 'c400'`. Ta część instrukcji SELECT odróżnia wiersz docelowy od wszystkich innych, ponieważ `CustomerID` jest klucz podstawowy w tabeli docelowej. Informacje o klauzuli WHERE jest tworzony na podstawie oryginalną wersję rekordu (`DataRowVersion.Original`), w przypadku, gdy zmieniono wartości, które są wymagane do identyfikowania wiersza.  
+- Przesyłane instrukcja SQL zawiera klauzulę WHERE, co oznacza, że obiekt docelowy instrukcji UPDATE wiersz gdzie `CustomerID = 'c400'`. Ta część instrukcji SELECT odróżnia wiersz docelowy od wszystkich innych, ponieważ `CustomerID` jest klucz podstawowy w tabeli docelowej. Informacje o klauzuli WHERE jest tworzony na podstawie oryginalną wersję rekordu (`DataRowVersion.Original`), w przypadku, gdy zmieniono wartości, które są wymagane do identyfikowania wiersza.  
   
--   Przesyłane instrukcja SQL zawiera klauzuli SET do ustawiania nowych wartości kolumn zmodyfikowane.  
+- Przesyłane instrukcja SQL zawiera klauzuli SET do ustawiania nowych wartości kolumn zmodyfikowane.  
   
     > [!NOTE]
     >  Jeśli TableAdapter `UpdateCommand` właściwość została ustawiona na nazwę procedury składowanej, karta nie konstruowania instrukcji SQL. Zamiast tego wywołuje procedurę składowaną z odpowiednimi parametrami, które są przekazywane w.  

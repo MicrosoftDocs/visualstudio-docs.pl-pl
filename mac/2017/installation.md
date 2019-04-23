@@ -7,18 +7,22 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 117dfbe2d9d97dadd02388b7d4f88a047fcb69fa
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3fe365b56d35202e7755e93219eeaf45f51509d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659062"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057423"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Install Visual Studio 2017 for Mac
 
 > [!NOTE]
-> Visual Studio 2019 r dla komputerów Mac jest [udostępniono](installation.md?view=vsmac-2019). Dla starszych wersji programu Visual Studio dla komputerów Mac, zobacz Visual Studio [strony plików do pobrania](https://visualstudio.microsoft.com/vs/older-downloads/).
+> Visual Studio 2019 r dla komputerów Mac jest [udostępniono](installation.md?view=vsmac-2019). Dla starszych wersji programu Visual Studio dla komputerów Mac, zobacz Visual Studio [strony plików do pobrania](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac).
 
+## <a name="downgrading-from-visual-studio-2019-for-mac"></a>Obniżenie wersji programu Visual Studio 2019 dla komputerów Mac?
+
+Aby uzyskać najlepsze wyniki, zanim obniżanie poziomu należy upewnić się, że [odinstalować](uninstall.md) Visual Studio 2019 r dla komputerów Mac. Jeśli masz problemy, które powodują do pobrania, upewnij się dać nam znać [zgłoszenie problemu](report-a-problem.md).
+ 
 ## <a name="requirements"></a>Wymagania
 
 Do rozpoczęcia tworzenia natywnych, aplikacje dla wielu platform, po pobraniu programu Visual Studio dla komputerów Mac istnieje kilka rzeczy, które należy zainstalować i skonfigurować w ramach przygotowań.
@@ -31,7 +35,7 @@ Do pracy z systemem iOS w programie Visual Studio potrzebne są następujące el
 
 ## <a name="install"></a>Zainstaluj
 
-1. Pobierz program Visual Studio dla komputerów Mac z [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/)
+1. Pobierz program Visual Studio dla komputerów Mac z [my.visualstudio.com](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)
 
 2. Po pobraniu pakietu Instalatora kliknij przycisk **VisualStudioForMacInstaller.dmg** pliku, aby zainstalować Instalatora i uruchom go, klikając dwukrotnie plik logo, jak pokazano na poniższej ilustracji:
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63d7e895f0a7e57160e10c4b6020b2bf73ae477d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4684a0256e01cafe79fc90ae1ae97dfc2be047d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939492"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046824"
 ---
 # <a name="about-domain-specific-languages"></a>Języki specyficzne dla domeny — informacje
 
@@ -24,11 +24,11 @@ Dobrze znanych języków DSL obejmują wyrażeń regularnych i SQL. Każdy języ
 
 Firmy, a projekt także dotyczyć specjalne rodzaje pojęcia, które można opisać za pomocą języka DSL. Na przykład można zdefiniować DSL dla jednego z tych aplikacji:
 
--   Plan ścieżki nawigacji w witrynie sieci Web.
+- Plan ścieżki nawigacji w witrynie sieci Web.
 
--   Diagramy połączeń dla komponentów elektronicznych.
+- Diagramy połączeń dla komponentów elektronicznych.
 
--   Sieci taśmy przenoszące i obsługi sprzętu na lotnisku bagażu.
+- Sieci taśmy przenoszące i obsługi sprzętu na lotnisku bagażu.
 
 Podczas projektowania DSL, należy zdefiniować *klasy domeny* dla każdego ważnych pojęć w domenie, np. strony sieci web, lamp lub port lotniczy biurku ewidencjonowania. Należy zdefiniować *relacje domeny* takie jak hiperłącza, o komunikacji sieciowej lub pas taśmy połączyć ze sobą pojęcia.
 
@@ -114,12 +114,12 @@ Języka specyficznego dla domeny zapewnia następujące korzyści:
 
 Większość zespołów programistycznych korzystających z języków specyficznych dla domeny, wykonaj następujące kroki, tworzenie i używanie ich modeli:
 
--   Zespół odróżnia zmiennej części domeny od elementów, które nigdy nie ulegną zmianie.
+- Zespół odróżnia zmiennej części domeny od elementów, które nigdy nie ulegną zmianie.
 
--   Deweloperzy pisanie kodu dla części stały i pozostawić punktów rozszerzeń dla zmiennej części.
+- Deweloperzy pisanie kodu dla części stały i pozostawić punktów rozszerzeń dla zmiennej części.
 
--   Główny deweloper oprogramowania lub architekta tworzy uwzględniająca wzorce projektowe stałej części domeny oraz punkty rozszerzenia dla części zmiennej języka specyficznego dla domeny.
+- Główny deweloper oprogramowania lub architekta tworzy uwzględniająca wzorce projektowe stałej części domeny oraz punkty rozszerzenia dla części zmiennej języka specyficznego dla domeny.
 
--   Główny deweloper oprogramowania lub architekta wdraża deweloperzy różne aplikacje, które zespół tworzy języka specyficznego dla domeny.
+- Główny deweloper oprogramowania lub architekta wdraża deweloperzy różne aplikacje, które zespół tworzy języka specyficznego dla domeny.
 
--   Każdy deweloper tworzy model, który ma zastosowanie do konkretnej aplikacji.
+- Każdy deweloper tworzy model, który ma zastosowanie do konkretnej aplikacji.

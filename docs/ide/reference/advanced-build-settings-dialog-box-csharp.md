@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a668e64f6b8a10cf22e08575ca9c2df385131666
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d42087b023718cd31528a2e5d60e2a43e34097c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930467"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039973"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Zaawansowane ustawienia kompilacji (C#) — Okno dialogowe
 
@@ -75,7 +75,7 @@ Określa typ informacji o debugowaniu generowanych przez kompilator. Aby uzyska�
 
    Umożliwia kodu źródłowego, debugowanie, gdy program jest uruchomiony w debugerze, ale będą wyświetlane tylko asemblera, gdy uruchomiony program jest dołączony do debugera.
 
--  **Przenośna**
+- **Przenośna**
 
    Tworzy. Plik PDB, plik symboli nie określonej platformy, przenośną, który zawiera inne narzędzia, szczególnie debugery, informacje o tym, co znajduje się w głównym pliku wykonywalnego i jak został utworzony. Zobacz [przenośnego pliku PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) Aby uzyskać więcej informacji.
 

@@ -11,12 +11,12 @@ ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 50ef738826a9eb85a081a7063c1ca55280bed3a8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 812862c3eaf99b7459bb422e174f8fe155ea384a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786457"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042590"
 ---
 # <a name="how-to-use-the-activity-log"></a>Instrukcje: Korzystanie z dziennika aktywności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Pakietów VSPackage może zapisywać komunikaty w dzienniku aktywności. Ta funk
   
 ### <a name="to-write-an-entry-to-the-activity-log"></a>Aby zapisać wpis w dzienniku aktywności  
   
-1.  Wstaw ten kod w <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody lub innej metody, z wyjątkiem Konstruktor pakietu VSPackage:  
+1. Wstaw ten kod w <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody lub innej metody, z wyjątkiem Konstruktor pakietu VSPackage:  
   
     ```csharp  
     IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
@@ -42,13 +42,13 @@ Pakietów VSPackage może zapisywać komunikaty w dzienniku aktywności. Ta funk
   
      Ten kod pobiera <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> usługi i rzutuje je na <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfejsu. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> zapisuje wpis informacyjny w dzienniku aktywności w kontekście bieżącej kultury.  
   
-2.  Podczas ładowania pakietu VSPackage (zazwyczaj podczas wywoływania polecenia lub okno jest otwarty), tekst został napisany z dziennikiem aktywności.  
+2. Podczas ładowania pakietu VSPackage (zazwyczaj podczas wywoływania polecenia lub okno jest otwarty), tekst został napisany z dziennikiem aktywności.  
   
 ### <a name="to-examine-the-activity-log"></a>Aby sprawdzić dziennik aktywności  
   
-1.  Znajdowanie dziennika aktywności w podfolderze dla danych programu Visual Studio: *% AppData %* \Microsoft\VisualStudio\14.0\ActivityLog.XML...  
+1. Znajdowanie dziennika aktywności w podfolderze dla danych programu Visual Studio: *% AppData %* \Microsoft\VisualStudio\14.0\ActivityLog.XML...  
   
-2.  Otwórz dziennik aktywności, za pomocą dowolnego edytora tekstów. Poniżej przedstawiono typowe wpis:  
+2. Otwórz dziennik aktywności, za pomocą dowolnego edytora tekstów. Poniżej przedstawiono typowe wpis:  
   
     ```  
     Called for: Company.MyApp.MyAppPackage ...  

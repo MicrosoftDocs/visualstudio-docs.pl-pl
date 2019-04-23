@@ -11,27 +11,27 @@ ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bc4a8de9f93a04fb062954703a1c14b4c4447308
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 484aa854a8e0987bf034e829a3acf02d6d637870
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775161"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042659"
 ---
 # <a name="registering-the-program"></a>Rejestrowanie programu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Po aparat debugowania uzyskała portu, reprezentowane przez [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfejsu, następnym krokiem podczas włączania debugowania programu jest zarejestrowanie go za pomocą portu. Po zarejestrowaniu programu jest dostępna do debugowania za pomocą jednej z następujących sposobów:  
   
--   Proces dołączania, która pozwala debugerowi na przejęcie kontroli debugowania z działającej aplikacji.  
+- Proces dołączania, która pozwala debugerowi na przejęcie kontroli debugowania z działającej aplikacji.  
   
--   Just-in-time (JIT) debugowania, który pozwala na debugowanie po fakcie program, który działa niezależnie od debugera. Architektura środowiska wykonawczego przechwytuje usterki, Debuger jest powiadamiany przed systemu operacyjnego lub środowisko uruchomieniowe zwalnia pamięć i zasoby programu łagodne.  
+- Just-in-time (JIT) debugowania, który pozwala na debugowanie po fakcie program, który działa niezależnie od debugera. Architektura środowiska wykonawczego przechwytuje usterki, Debuger jest powiadamiany przed systemu operacyjnego lub środowisko uruchomieniowe zwalnia pamięć i zasoby programu łagodne.  
   
 ## <a name="registering-procedure"></a>Rejestrowanie procedury  
   
 #### <a name="to-register-your-program"></a>Aby zarejestrować program  
   
-1.  Wywołaj [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) metody implementowane przez port.  
+1. Wywołaj [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) metody implementowane przez port.  
   
      `IDebugPortNotify2::AddProgramNode` wymaga aby wskazywał [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interfejsu.  
   

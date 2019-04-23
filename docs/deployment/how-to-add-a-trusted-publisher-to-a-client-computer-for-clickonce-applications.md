@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ed282ba7f3c26aafe9cd2c97be0bfa843cb0103
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 071077c54abe3126febdc098b6860a65ce0fd792
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601489"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041715"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Instrukcje: Dodawanie zaufanego wydawcy do komputera klienckiego dla aplikacji ClickOnce
 Za pomocą zaufanego wdrożenia aplikacji można skonfigurować komputery klienckie tak, aby Twoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje są uruchamiane na wyższym poziomie zaufania bez monitowania użytkownika. Poniższe procedury pokazują, jak używać narzędzia wiersza polecenia CertMgr.exe można dodać certyfikatu wydawcy do magazynu zaufanych wydawców na komputerze klienckim.
@@ -36,21 +36,21 @@ Za pomocą zaufanego wdrożenia aplikacji można skonfigurować komputery klienc
 
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-the-trusted-root"></a>Aby dodać certyfikat do magazynu zaufanych wydawców w obszarze zaufanego głównego
 
-1.  Uzyskaj certyfikat z urzędu certyfikacji.
+1. Uzyskaj certyfikat z urzędu certyfikacji.
 
-2.  Wyeksportuj certyfikat w formacie Base64 X.509 (*cer*) format. Aby uzyskać więcej informacji na temat formatów certyfikatów Zobacz [eksportowania certyfikatu](http://go.microsoft.com/fwlink/?LinkId=164793).
+2. Wyeksportuj certyfikat w formacie Base64 X.509 (*cer*) format. Aby uzyskać więcej informacji na temat formatów certyfikatów Zobacz [eksportowania certyfikatu](http://go.microsoft.com/fwlink/?LinkId=164793).
 
-3.  W wierszu polecenia na komputerach klienckich uruchom następujące polecenie:
+3. W wierszu polecenia na komputerach klienckich uruchom następujące polecenie:
 
      **certmgr.exe — Dodaj certificate.cer - c -s - r localMachine TrustedPublisher**
 
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-a-different-root"></a>Aby dodać certyfikat do magazynu zaufanych wydawców w ramach różnych głównych
 
-1.  Uzyskaj certyfikat z urzędu certyfikacji.
+1. Uzyskaj certyfikat z urzędu certyfikacji.
 
-2.  Wyeksportuj certyfikat w formacie Base64 X.509 (*cer*) format. Aby uzyskać więcej informacji na temat formatów certyfikatów Zobacz [eksportowania certyfikatu](http://go.microsoft.com/fwlink/?LinkId=164793).
+2. Wyeksportuj certyfikat w formacie Base64 X.509 (*cer*) format. Aby uzyskać więcej informacji na temat formatów certyfikatów Zobacz [eksportowania certyfikatu](http://go.microsoft.com/fwlink/?LinkId=164793).
 
-3.  W wierszu polecenia na komputerach klienckich uruchom następujące polecenie:
+3. W wierszu polecenia na komputerach klienckich uruchom następujące polecenie:
 
      **certmgr.exe — Dodaj good.cer - c -s - r localMachine głównego**
 

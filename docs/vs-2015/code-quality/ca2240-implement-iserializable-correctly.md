@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a00a980f5984b05bd1f77a83d4c95d4da0f3ff03
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 37f84bff4802c703bb61b36e9c1933a31cd6c5e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784155"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045450"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240: Poprawnie zaimplementuj interfejs ISerializable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "54784155"
 ## <a name="cause"></a>Przyczyna
  Typ widoczny na zewnątrz jest można przypisać do <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfejsu i jeden z następujących warunków jest spełniony:
 
--   Typ dziedziczy, ale nie przesłania <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> metoda i typ deklaruje pola wystąpienia, które nie są oznaczone przez <xref:System.NonSerializedAttribute?displayProperty=fullName> atrybutu.
+- Typ dziedziczy, ale nie przesłania <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> metoda i typ deklaruje pola wystąpienia, które nie są oznaczone przez <xref:System.NonSerializedAttribute?displayProperty=fullName> atrybutu.
 
--   Typ nie jest zapieczętowany i typ implementuje <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metodę, która jest zewnętrznie niewidoczny i którą można przesłonić.
+- Typ nie jest zapieczętowany i typ implementuje <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metodę, która jest zewnętrznie niewidoczny i którą można przesłonić.
 
 ## <a name="rule-description"></a>Opis reguły
  Wystąpienia pól, które są zadeklarowane w typie, który dziedziczy <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfejsu nie są automatycznie uwzględnione w procesie serializacji. Aby dołączyć pola, typ musi zawierać implementację <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metod i konstruktorów serializacji. Jeśli pola nie powinien podlegać serializacji, zastosuj <xref:System.NonSerializedAttribute> atrybutu do pola, aby jawnie wskazać decyzji.
@@ -58,7 +58,7 @@ ms.locfileid: "54784155"
  [!code-vb[FxCop.Usage.ImplementISerializableCorrectly#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly/vb/FxCop.Usage.ImplementISerializableCorrectly.vb#1)]
 
 ## <a name="example"></a>Przykład
- Poniższy przykład naprawia dwóch poprzednich naruszenia, zapewniając implementację zastąpienie [ISerializable.GetObjectData] (<!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  -->) w klasie książki i udostępnienie implementację <!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  --> klasy biblioteki.
+ Poniższy przykład rozwiązuje dwa poprzednie naruszenia, zapewniając zastąpienie implementacji () [ISerializable.GetObjectData]<!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  -->) w klasie książki i udostępnienie implementacja interfejsu <!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  --> w klasie biblioteki.
 
  [!code-cpp[FxCop.Usage.ImplementISerializableCorrectly2#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly2/cpp/FxCop.Usage.ImplementISerializableCorrectly2.cpp#1)]
  [!code-csharp[FxCop.Usage.ImplementISerializableCorrectly2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly2/cs/FxCop.Usage.ImplementISerializableCorrectly2.cs#1)]

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c34bd47dc3909fd165db265eb5a5a79920a03f9
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 4e5f7f21206953b8d99306a9b1da6935604c88b8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869073"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042902"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Wymagania systemowe dotyczące emulatora programu Visual Studio dla systemu Android
 
@@ -26,7 +26,7 @@ Program instalacyjny próbuje dyskretnie konfigurowanie wymagań wstępnych dla 
 > [!IMPORTANT]
 > Program instalacyjny dla emulatora sprawdza wymagania wstępne dotyczące uruchamiania programu Visual Studio Emulator dla systemu Android. Wyświetla ostrzeżenia, jeśli wymagania wstępne nie są obecne, ale go nie wymaga.
 
-##  <a name="Checklist"></a> Szybka lista kontrolna
+## <a name="Checklist"></a> Szybka lista kontrolna
 
 Poniżej przedstawiono listę kontrolną szybkiego wymagań dotyczących uruchamiania emulatora programu Visual Studio dla systemu Android. Aby uzyskać więcej szczegółowych informacji zobacz kolejnych sekcjach tego tematu.
 
@@ -50,11 +50,11 @@ Wymagania funkcji Hyper-V
 
 - W systemie BIOS muszą być obsługiwane następujące funkcje:
 
-  -   Wirtualizacja sprzętowa
+  - Wirtualizacja sprzętowa
 
-  -   Drugi adres poziomu Translation (SLAT)
+  - Drugi adres poziomu Translation (SLAT)
 
-  -   Zapobieganie wykonywaniu danych oparte na sprzęcie (DEP)
+  - Zapobieganie wykonywaniu danych oparte na sprzęcie (DEP)
 
 - W Windows funkcji Hyper-V musi być włączona i uruchomiona.
 

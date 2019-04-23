@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3c583ee2dd652a81410a756a5297e570afb20f76
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9f4c165f3e882cea71ee4aaff9f2358c27ce6a2b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366448"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053445"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Krok 4. Pełny szablon projektu sieci Web Flask
 
@@ -169,6 +169,7 @@ Aplikacja  *\_ \_init\_\_PY* pliku zawiera wiersz do
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 ```
+
 W *szablony* folderów, zobacz *jade* plików zamiast *.html* szablonów i widoków w *views.py* odnoszą się do tych plików w ich wywołania `flask.render_template`. W przeciwnym razie kod widoków jest taki sam.
 
 Otwarcie jednej z *jade* pliki, możesz zobaczyć bardziej zwięzłą wyrażenie szablonu. Na przykład poniżej przedstawiono zawartość *templates/layout.jade* utworzona przez szablon "Projekt sieci Web Flask/Jade":

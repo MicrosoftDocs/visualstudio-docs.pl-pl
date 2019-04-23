@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fad2851be48c0b3dfc3546794d5b9907f55918a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ae63dd41e18b9226967b77b8adec2f45d05d9447
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637376"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057176"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Instrukcje: Mapowanie schematów z arkuszami w programie Visual Studio
   Gdy arkusz jest otwarty w programie Visual Studio, możesz zamapować schematu XML do arkusza. Możesz użyć tych samych narzędzi Microsoft Office Excel, których używasz, gdy skoroszyt jest otwarty poza programem Visual Studio. Office project tworzy te same obiekty, czy mapowanie schematu na arkusz, przed lub po utworzeniu rozwiązania programu Excel.
@@ -34,28 +34,28 @@ ms.locfileid: "56637376"
 
 ## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Aby zamapować schematu XML do arkusza programu Excel w programie Visual Studio
 
-1.  Otwórz projekt skoroszytem lub szablonem programu Excel w programie Visual Studio.
+1. Otwórz projekt skoroszytem lub szablonem programu Excel w programie Visual Studio.
 
-2.  Kliknij arkusz, aby przenieść fokus do projektanta.
+2. Kliknij arkusz, aby przenieść fokus do projektanta.
 
-3.  Na wstążce kliknij **Developer** kartę.
+3. Na wstążce kliknij **Developer** kartę.
 
     > [!NOTE]
     >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-4.  W **XML** grupy, kliknij przycisk **źródła**.
+4. W **XML** grupy, kliknij przycisk **źródła**.
 
      **Źródła XML** zostanie otwarte okno.
 
-5.  W **źródła XML** okna, kliknij przycisk **mapy XML**.
+5. W **źródła XML** okna, kliknij przycisk **mapy XML**.
 
      **Mapy XML** zostanie otwarte okno dialogowe.
 
-6.  W **mapy XML** okno dialogowe, kliknij przycisk **Dodaj**.
+6. W **mapy XML** okno dialogowe, kliknij przycisk **Dodaj**.
 
-7.  Przejdź do pliku schematu, zaznacz go, a następnie kliknij **Otwórz**.
+7. Przejdź do pliku schematu, zaznacz go, a następnie kliknij **Otwórz**.
 
-8.  Kliknij przycisk **OK**.
+8. Kliknij przycisk **OK**.
 
      Schemat jest reprezentowana w **źródła XML** okna. W projekcie wpisane <xref:System.Data.DataSet> jest generowany na podstawie schematu, a <xref:System.Windows.Forms.BindingSource> zostanie utworzony.
 

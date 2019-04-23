@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0eb8ef209e1fc55fabf37c0c4469fd390f5a478
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b28f07318a89e0944bf23e937f174c50c1e8a82d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58146334"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045005"
 ---
 # <a name="iactivescriptprofilercallback-interface"></a>Interfejs IActiveScriptProfilerCallback
 Udostępnia metody, które są używane przez silnik wykonywania skryptów, aby powiadomić obiekt profiler, po wystąpieniu zdarzenia. Ten interfejs jest implementowany przez obiekt profiler.  
@@ -39,7 +39,7 @@ Udostępnia metody, które są używane przez silnik wykonywania skryptów, aby 
 >  Dodanie możliwości do uruchamiania i zatrzymywania profilowania, gdy skrypt jest uruchamiany, wywołaj następujące metody. Korzystając z tych metod, można uzyskać pełny stos wywołań, jeśli [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] jest uruchomiona, uruchomienie lub zatrzymanie profilowania.  
 > 
 > - Wywołaj [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md) powiadomić profiler rozpoczęto profilowanie.  
->   -   Wywołaj [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md) powiadomić profiler zostanie wkrótce zatrzymania profilowania.  
+>   - Wywołaj [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md) powiadomić profiler zostanie wkrótce zatrzymania profilowania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy profilera aktywnego skryptu](../../winscript/reference/active-script-profiler-interfaces.md)

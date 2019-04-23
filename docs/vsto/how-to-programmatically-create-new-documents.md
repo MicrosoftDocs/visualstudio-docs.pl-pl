@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e05d6f5dd334e2c18f0f99fbe6c3ef21758a2de5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4940b5f5064fdb47439ad6b38b855785ae06c781
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623596"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053458"
 ---
 # <a name="how-to-programmatically-create-new-documents"></a>Instrukcje: Programowe tworzenie nowych dokumentów
   Po utworzeniu dokumentu programowo nowy dokument jest natywny <xref:Microsoft.Office.Interop.Word.Document> obiektu. Ten obiekt nie ma dodatkowych zdarzeń i możliwości wiązania danych <xref:Microsoft.Office.Tools.Word.Document> element hosta. Aby uzyskać więcej informacji, zobacz [ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
@@ -30,7 +30,7 @@ ms.locfileid: "56623596"
 
 ## <a name="to-create-a-new-document-based-on-the-normal-template"></a>Aby utworzyć nowy dokument oparty na szablonie normalnego
 
--   Użyj <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> metody <xref:Microsoft.Office.Interop.Word.Documents> kolekcję, aby utworzyć nowy dokument oparty na szablonie normalny. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisDocument` lub `ThisAddIn` klasy w projekcie.
+- Użyj <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> metody <xref:Microsoft.Office.Interop.Word.Documents> kolekcję, aby utworzyć nowy dokument oparty na szablonie normalny. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisDocument` lub `ThisAddIn` klasy w projekcie.
 
      [!code-vb[Trin_VstcoreWordAutomation#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#1)]
      [!code-csharp[Trin_VstcoreWordAutomation#1](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#1)]
@@ -40,7 +40,7 @@ ms.locfileid: "56623596"
 
 ### <a name="to-create-a-new-document-based-on-a-custom-template"></a>Aby utworzyć nowy dokument oparty na szablonie niestandardowym
 
--   Wywołaj <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> metody <xref:Microsoft.Office.Interop.Word.Documents> kolekcji i określ ścieżkę do szablonu. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisDocument` lub `ThisAddIn` klasy w projekcie.
+- Wywołaj <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> metody <xref:Microsoft.Office.Interop.Word.Documents> kolekcji i określ ścieżkę do szablonu. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisDocument` lub `ThisAddIn` klasy w projekcie.
 
      [!code-vb[Trin_VstcoreWordAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#2)]
      [!code-csharp[Trin_VstcoreWordAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#2)]

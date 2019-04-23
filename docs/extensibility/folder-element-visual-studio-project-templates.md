@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa788fafd7b07f1224bb4abf6bfe527109b3bc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a6ad2051212a943cea805579f0f1ab083af60602
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692660"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057254"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder — element (szablony projektu Visual Studio)
 Określa folder, który zostanie dodany do projektu.
@@ -62,7 +62,7 @@ Określa folder, który zostanie dodany do projektu.
 
  Do organizowania elementów projektu w foldery w szablonie, można użyć dowolnej z następujących metod:
 
--   Dołącz foldery w szablonie *zip* plik i dodać je do projektu w *.vstemplate* pliku, określając ścieżkę do pliku w `ProjectItem` elementów, na których nie `Folder` elementów. Jest to zalecana metoda. Na przykład:
+- Dołącz foldery w szablonie *zip* plik i dodać je do projektu w *.vstemplate* pliku, określając ścieżkę do pliku w `ProjectItem` elementów, na których nie `Folder` elementów. Jest to zalecana metoda. Na przykład:
 
      `...`
 
@@ -72,7 +72,7 @@ Określa folder, który zostanie dodany do projektu.
 
      `...`
 
--   Dołącz foldery w szablonie *zip* plik i dodać je do projektu w *.vstemplate* plik z `Folder` elementów. Na przykład:
+- Dołącz foldery w szablonie *zip* plik i dodać je do projektu w *.vstemplate* plik z `Folder` elementów. Na przykład:
 
      `...`
 
@@ -86,7 +86,7 @@ Określa folder, który zostanie dodany do projektu.
 
      `...`
 
--   Nie dołączaj folderów w szablonie *zip* plików, ale Dodaj folderów za pomocą `TargetFileName` atrybutu `ProjectItem` elementu. Na przykład:
+- Nie dołączaj folderów w szablonie *zip* plików, ale Dodaj folderów za pomocą `TargetFileName` atrybutu `ProjectItem` elementu. Na przykład:
 
      `...`
 

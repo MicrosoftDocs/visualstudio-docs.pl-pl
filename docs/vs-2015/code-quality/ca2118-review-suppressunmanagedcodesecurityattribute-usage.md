@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ebe26e81bdee6be1b2e3a795f50c753d9bb66814
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eb76233e968ad8212d15fbcc815c31ffd0f1838a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770557"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059178"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Przejrzyj przypadki użycia atrybutu SuppressUnmanagedCodeSecurityAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "54770557"
 
  Domyślne zasady zabezpieczeń nie powoduje przyznania uprawnień kodu niezarządzanego do zestawu, chyba że jest wykonywane z komputera lokalnego, lub jest ono członkiem jednej z następujących grup:
 
--   Moja grupa kodu strefy
+- Moja grupa kodu strefy
 
--   Grupy kodu programu Microsoft silnej nazwy
+- Grupy kodu programu Microsoft silnej nazwy
 
--   Grupy kodu programu ECMA silnej nazwy
+- Grupy kodu programu ECMA silnej nazwy
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Należy dokładnie przejrzeć swój kod, aby upewnić się, że ten atrybut jest to absolutnie konieczne. Jeśli znasz zakresu zabezpieczeń dla kodu zarządzanego lub ich nie zrozumieć implikacje zabezpieczeń korzystające z tego atrybutu, należy go usunąć z kodu. Jeśli ten atrybut jest wymagany, upewnij się, że obiekty wywołujące nie mogą używać złośliwie swój kod. Jeśli Twój kod nie ma uprawnienia do wykonywania kodu niezarządzanego, ten atrybut nie ma wpływu i powinny zostać usunięte.

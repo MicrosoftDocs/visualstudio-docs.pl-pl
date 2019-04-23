@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62b952d604ce095ef24ef427c98a74e60f25ba4e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7f7218324e643355e7c6554f3a1cf6c74e8349d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643824"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049473"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania
   Dodatku narzędzi VSTO służy do dostosowywania dokumentów programu Word i skoroszytów programu Excel w następujący sposób:
@@ -54,21 +54,21 @@ ms.locfileid: "56643824"
 
 #### <a name="to-generate-a-host-item-for-a-word-document"></a>Aby wygenerować element hosta dokumentu programu Word
 
--   Poniższy przykład kodu demonstruje sposób generowania elementu hosta dla aktywnego dokumentu.
+- Poniższy przykład kodu demonstruje sposób generowania elementu hosta dla aktywnego dokumentu.
 
      [!code-vb[Trin_WordAddInDynamicControls#8](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#8)]
      [!code-csharp[Trin_WordAddInDynamicControls#8](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#8)]
 
 #### <a name="to-generate-a-host-item-for-an-excel-workbook"></a>Aby wygenerować element hosta skoroszytu programu Excel
 
--   Poniższy przykład kodu demonstruje sposób generowania elementu hosta dla aktywnego skoroszytu.
+- Poniższy przykład kodu demonstruje sposób generowania elementu hosta dla aktywnego skoroszytu.
 
      [!code-vb[Trin_ExcelAddInDynamicControls#2](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#2)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#2](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#2)]
 
 #### <a name="to-generate-a-host-item-for-an-excel-worksheet"></a>Aby wygenerować element hosta arkusza programu Excel
 
--   Poniższy przykład kodu demonstruje sposób generowania elementu hosta dla aktywnego arkusza w projekcie.
+- Poniższy przykład kodu demonstruje sposób generowania elementu hosta dla aktywnego arkusza w projekcie.
 
      [!code-vb[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#1)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#1)]
@@ -78,12 +78,12 @@ ms.locfileid: "56643824"
 
 #### <a name="to-generate-a-host-control-for-a-listobject"></a>W celu wygenerowania kontrolki hosta dla ListObject
 
--   Poniższy przykład kodu demonstruje sposób generowania <xref:Microsoft.Office.Tools.Excel.ListObject> pierwszy <xref:Microsoft.Office.Interop.Excel.ListObject> w aktywnym arkuszu w projekcie.
+- Poniższy przykład kodu demonstruje sposób generowania <xref:Microsoft.Office.Tools.Excel.ListObject> pierwszy <xref:Microsoft.Office.Interop.Excel.ListObject> w aktywnym arkuszu w projekcie.
 
      [!code-vb[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#3)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#3)]
 
-###  <a name="AddControls"></a> Dodawanie formantów zarządzanego do dokumentów i arkuszy
+### <a name="AddControls"></a> Dodawanie formantów zarządzanego do dokumentów i arkuszy
  Po wygenerowaniu <xref:Microsoft.Office.Tools.Word.Document> lub <xref:Microsoft.Office.Tools.Excel.Worksheet>, można dodać kontrolki do dokumentu lub arkusz kalkulacyjny, który rozszerzone te obiekty reprezentują. Aby dodać formanty, należy użyć `Controls` właściwość <xref:Microsoft.Office.Tools.Word.Document> lub <xref:Microsoft.Office.Tools.Excel.Worksheet>. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w środowisku uruchomieniowym](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
  Można dodać kontrolek formularzy Windows Forms lub *hostowania kontrolek*. Kontrolki hosta jest formantem, dostarczone przez [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] to opakowuje odpowiedni formant w programie Word lub Excel podstawowego zestawu międzyoperacyjnego. Kontrolki hosta uwidacznia wszystkie zachowania obiektu bazowego natywnych pakietu Office. Ponadto wywołuje zdarzenia i może być powiązana z danymi za pomocą modelu powiązanie danych formularzy Windows. Aby uzyskać więcej informacji, zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md).
@@ -113,7 +113,7 @@ ms.locfileid: "56643824"
  [!code-vb[Trin_WordAddInDynamicControls #13](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#13)]
  [!code-csharp[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#13)]
 
-##  <a name="HasVstoObject"></a> Określić, czy obiekt pakietu Office został rozszerzony
+## <a name="HasVstoObject"></a> Określić, czy obiekt pakietu Office został rozszerzony
  Aby ustalić, czy obiekt rozszerzonych został już wygenerowany dla danego obiektu macierzystego pakietu Office, należy użyć `HasVstoObject` metody. Ta metoda zwraca **true** Jeśli rozszerzonej obiekt został już wygenerowany.
 
  Użyj `Globals.Factory.HasVstoMethod` metody. Przekaż w natywnych obiektów programu Word lub Excel, takich jak <xref:Microsoft.Office.Interop.Word.Document> lub <xref:Microsoft.Office.Interop.Excel.Worksheet>, który chcesz przetestować rozszerzonego obiektu.

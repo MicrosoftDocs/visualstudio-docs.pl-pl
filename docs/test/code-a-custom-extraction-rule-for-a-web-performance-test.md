@@ -13,12 +13,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 14dce2ee3ea073e8ef3db6956af0eb56daa94fe0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1111b659e1c88f219258b73045d0ce0d0f420ae7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923450"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041716"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Kod niestandardowej reguły wyodrębniania dla testów wydajności sieci web
 
@@ -31,24 +31,24 @@ Użytkownicy mogą tworzyć własne reguły wyodrębniania. W tym celu należy u
 
 ## <a name="to-create-a-custom-extraction-rule"></a>Aby utworzyć niestandardową regułę wyodrębniania
 
-1.  Otwórz projekt Test zawierający test wydajności sieci web.
+1. Otwórz projekt Test zawierający test wydajności sieci web.
 
-2.  (Opcjonalnie) Utwórz oddzielny projekt Biblioteka klas, w którym będzie przechowywana reguła wyodrębniania.
+2. (Opcjonalnie) Utwórz oddzielny projekt Biblioteka klas, w którym będzie przechowywana reguła wyodrębniania.
 
     > [!IMPORTANT]
     > Klasę można utworzyć w tym samym projekcie, w którym znajdują się testy. Jednak chcąc używać zdefiniowanej reguły do różnych testów, najlepiej utworzyć oddzielny projekt Biblioteki klas i w nim przechowywać regułę. W przypadku utworzenia oddzielnego projektu należy wykonać opcjonalne kroki podane w tej procedurze.
 
-3.  (Opcjonalnie) W projekcie Biblioteka klas dodaj odwołanie do biblioteki dll Microsoft.VisualStudio.QualityTools.WebTestFramework.
+3. (Opcjonalnie) W projekcie Biblioteka klas dodaj odwołanie do biblioteki dll Microsoft.VisualStudio.QualityTools.WebTestFramework.
 
-4.  Utwórz klasę pochodną od klasy <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>. Zaimplementuj elementy członkowskie <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> i <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.RuleName*>.
+4. Utwórz klasę pochodną od klasy <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>. Zaimplementuj elementy członkowskie <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> i <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.RuleName*>.
 
-5.  (Opcjonalnie) Skompiluj nowy projekt Biblioteka klas.
+5. (Opcjonalnie) Skompiluj nowy projekt Biblioteka klas.
 
-6.  (Opcjonalnie) W projekcie testowym Dodaj odwołanie do projektu Biblioteka klas zawierającego niestandardową regułę wyodrębniania.
+6. (Opcjonalnie) W projekcie testowym Dodaj odwołanie do projektu Biblioteka klas zawierającego niestandardową regułę wyodrębniania.
 
-7.  W projekcie Test Otwórz test wydajności sieci web, w **edytora testów wydajności sieci Web**.
+7. W projekcie Test Otwórz test wydajności sieci web, w **edytora testów wydajności sieci Web**.
 
-8.  Aby dodać niestandardową regułę wyodrębniania, kliknij prawym przyciskiem myszy żądanie testu wydajności sieci web i wybierz pozycję **Dodaj regułę wyodrębniania**.
+8. Aby dodać niestandardową regułę wyodrębniania, kliknij prawym przyciskiem myszy żądanie testu wydajności sieci web i wybierz pozycję **Dodaj regułę wyodrębniania**.
 
      **Dodaj regułę wyodrębniania** pojawi się okno dialogowe. Zostanie wyświetlony swojej niestandardowej reguły walidacji w **wybierz regułę** listy wraz z reguł sprawdzania poprawności wstępnie zdefiniowane. Zaznacz swoją niestandardową regułę wyodrębniania, a następnie wybierz **OK**.
 

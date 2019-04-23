@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ec6063f859333b54adaabea0c68af9fd884845b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aeba6a777dd060f310f9cbb8801b2405cd76f6b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768699"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045632"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Instrukcje: Generowanie danych metryk kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ Można zdecydować wygenerować wyniki metryki kodu dla całego rozwiązania lub
   
 ### <a name="to-generate-code-metrics-results-for-an-entire-solution"></a>Aby wygenerować wyniki metryki kodu dla całego rozwiązania  
   
--   Kliknij przycisk **menu Analizuj**, a następnie kliknij przycisk **CalculateCode metryki dla rozwiązania**.  
+- Kliknij przycisk **menu Analizuj**, a następnie kliknij przycisk **CalculateCode metryki dla rozwiązania**.  
   
      \- lub —  
   
--   W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie, a następnie kliknij przycisk **metryki CalculateCode**.  
+- W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie, a następnie kliknij przycisk **metryki CalculateCode**.  
   
      \- lub —  
   
--   W **wyników metryk kodów** okna, kliknij przycisk **CalculateCode metryki dla rozwiązania** przycisku.  
+- W **wyników metryk kodów** okna, kliknij przycisk **CalculateCode metryki dla rozwiązania** przycisku.  
   
      Wyniki są generowane i **wyników metryk kodów** zostanie wyświetlone okno.  
   
@@ -57,7 +57,7 @@ Można zdecydować wygenerować wyniki metryki kodu dla całego rozwiązania lub
   
 ### <a name="to-view-the-results-details"></a>Aby wyświetlić szczegółowe wyniki wyszukiwania  
   
--   Rozwiń drzewo w **hierarchii** kolumny.  
+- Rozwiń drzewo w **hierarchii** kolumny.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Mierzenie złożoności i poziomu łatwości konserwacji kodu zarządzanego](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

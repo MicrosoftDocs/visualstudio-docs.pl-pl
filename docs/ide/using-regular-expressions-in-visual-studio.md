@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5421599d2ffa006a445e0410088671d8897cc52
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d62f999f485acaba168a50d404f2b5cbb272ef14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923255"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047569"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Używanie wyrażeń regularnych w programie Visual Studio
 
@@ -61,12 +61,12 @@ Oto kilka przykładów:
 |Dopasuj granicę wyrazu|\b (poza klasą znak `\b` określa granicy słowa i wewnątrz znak klasy `\b` określa backspace.)|`\bin` pasuje do "w" w "wewnątrz" ale nie "pinto".|
 |Dopasowuje znak końca wiersza (czyli znak powrotu karetki następuje nowy wiersz).|\r?\n|`End\r?\nBegin` pasuje do "Koniec" i "Początek" tylko wtedy, gdy "Koniec" jest ostatnim ciągiem w wierszu a "Początek" jest pierwszym ciągiem w następnym wierszu.|
 |Pasuje do dowolnego znaku alfanumerycznego|\w|`a\wd` Dopasowuje "add" i "a1d" ale nie "d".|
-|Dopasowuje dowolny biały znak.|(? ([^ \r\n])\s)|`Public\sInterface` pasuje do frazy "Interfejs publiczny".|
+|Dopasowuje dowolny biały znak.|\s|`Public\sInterface` pasuje do frazy "Interfejs publiczny".|
 |Dopasuj dowolną cyfrę|\d|`\d` pasuje i "3" w "3456", "2" w 23" i"1"w"1".|
 |Dopasowuje znak Unicode|\uXXXX gdzie XXXX określa wartość znaku Unicode.|`\u0065` Dopasowuje znak "e".|
 |Dopasuj identyfikator|\b [\_\w-[0-9]] [\_\w]*\b|Dopasowuje "type1", ale nie "& type1" lub "#define".|
 |Dopasuj ciąg w cudzysłowie|((\\".+?\\")&#124;('.+?'))|Dopasowuje dowolny ciąg w pojedynczym lub podwójnym cudzysłowie.|
-|Dopasuj liczbę szesnastkową|\b0[xX]([0-9a-fA-F]\)\b|Dopasowuje "0xc67f", ale nie "0xc67fc67f".|
+|Dopasuj liczbę szesnastkową|\b0[xX]([0-9a-fA-F]+\)\b|Dopasowuje "0xc67f", ale nie "0xc67g".|
 |Dopasuj liczby całkowite i miejsca dziesiętne|\b[0-9]*\\.\*[0-9]+\b|Dopasowuje "1,333".|
 
 > [!TIP]

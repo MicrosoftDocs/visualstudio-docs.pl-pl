@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a5c5ae2abeea1e1e6b5a2fe360ff8515e5096341
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 43f13ebc6a3f7a430b3608eba37284a85c3c5eab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759789"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049545"
 ---
 # <a name="addressing-dpi-issues"></a>Rozwiązywanie problemów z technologią DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,15 +120,15 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
  Dostęp do funkcji pomocnika DPI z kodu zarządzanego, który będzie uruchamiany w środowisku Visual Studio:  
   
--   Projekt konsumencki musi odwoływać się najnowszą wersję MPF powłoki. Na przykład:  
+- Projekt konsumencki musi odwoływać się najnowszą wersję MPF powłoki. Na przykład:  
   
     ```csharp  
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />  
     ```  
   
--   Upewnij się, projekt zawiera odwołania do **System.Windows.Forms**, **PresentationCore**, i **PresentationUI**.  
+- Upewnij się, projekt zawiera odwołania do **System.Windows.Forms**, **PresentationCore**, i **PresentationUI**.  
   
--   W kodzie, należy użyć **Microsoft.VisualStudio.PlatformUI** przestrzeni nazw i wywołanie statyczne funkcje DpiHelper klasy. Dla obsługiwanych typów (punkty, rozmiary, prostokąty i tak dalej) są dostarczane skalowana w funkcji rozszerzenia, które zwracają nowe obiekty. Na przykład:  
+- W kodzie, należy użyć **Microsoft.VisualStudio.PlatformUI** przestrzeni nazw i wywołanie statyczne funkcje DpiHelper klasy. Dla obsługiwanych typów (punkty, rozmiary, prostokąty i tak dalej) są dostarczane skalowana w funkcji rozszerzenia, które zwracają nowe obiekty. Na przykład:  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
@@ -147,7 +147,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
 - Elementy menu i obrazy nadruków <xref:System.Windows.Media.BitmapScalingMode> należy używać, gdy nie powoduje innych artefaktów zakłócenia wyeliminować rozmycia (w 200% i 300%).  
   
-- • Dla dużych powiększenia poziomy nie wielokrotność 100% (na przykład 250% lub 350%), skalowanie obrazów nadruków z wynikami dwusześcienne rozmyte, rozmycia interfejsu użytkownika. Lepszych wyników można uzyskać przez pierwszy skalowanie obrazu z NearestNeighbor do największych wielokrotność 100%, (na przykład 200% lub 300%) i skalowanie przy użyciu dwusześcienne z tego miejsca. Zobacz szczególny przypadek: prescaling obrazów WPF dla dużych DPI poziomy, aby uzyskać więcej informacji.  
+- • Dla dużych powiększenia poziomy nie wielokrotność 100% (na przykład 250% lub 350%), skalowanie obrazów nadruków z wynikami dwusześcienne rozmyte, rozmycia interfejsu użytkownika. Lepszy wynik uzyskany przez pierwszy skalowanie obrazu z NearestNeighbor do największych wielokrotność 100%, (na przykład 200% lub 300%) i skalowanie przy użyciu dwusześcienne z tego miejsca. Zobacz szczególny przypadek: prescaling obrazów WPF dla dużych DPI poziomy, aby uzyskać więcej informacji.  
   
   Klasa DpiHelper w przestrzeni nazw Microsoft.VisualStudio.PlatformUI oferuje członka <xref:System.Windows.Media.BitmapScalingMode> które mogą być używane dla wiązania. Umożliwia powłoki programu Visual Studio do kontrolowania mapy bitowej tryb skalowania w produkcie jednolicie, w zależności od współczynnik skalowania DPI.  
   
@@ -165,7 +165,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
  Niektóre interfejsu użytkownika można skalować niezależnie od poziom powiększenia DPI zestaw systemu, takich jak edytor tekstu Visual Studio i opartego na podsystemie WPF Designer (pulpitu WPF i Windows Store). W takich przypadkach DpiHelper.BitmapScalingMode nie można używać. Aby rozwiązać ten problem w edytorze, zespół IDE, utworzono właściwość niestandardowa o nazwie RenderOptions.BitmapScalingMode. Wartość tej właściwości HighQuality lub NearestNeighbor w zależności od poziomu powiększenia połączonego systemu i interfejs użytkownika.  
   
 ## <a name="special-case-prescaling-wpf-images-for-large-dpi-levels"></a>Szczególny przypadek: prescaling obrazów WPF dla dużych poziomów DPI  
- Poziomy powiększenia bardzo duże, które nie są wielokrotnością 100%, (na przykład 250%, 350% i tak dalej) skalowanie w nadruków obrazów z wynikami dwusześcienne rozmyte, rozmycia interfejsu użytkownika. Wrażenie obrazy te, wraz z wyraźny tekst prawie jest podobne do metody iluzji optycznego. Obrazy wydają się być bliżej okiem i poza fokus w odniesieniu do tekstu. Wynik skalowania w tym rozmiarze powiększony można zwiększyć przez pierwszy skalowanie obrazu z NearestNeighbor do największych wielokrotność 100%, (na przykład 200% lub 300%) i skalowanie przy użyciu dwusześcienne do pozostałej (dodatkowe 50%).  
+ Poziomy powiększenia bardzo duże, które nie są wielokrotnością 100%, (na przykład 250%, 350% i tak dalej) skalowanie w nadruków obrazów z wynikami dwusześcienne rozmyte, rozmycia interfejsu użytkownika. Wrażenie obrazy te, wraz z wyraźny tekst prawie jest podobne do metody iluzji optycznego. Obrazy wydają się być bliżej okiem i poza fokus w odniesieniu do tekstu. Można zwiększyć skalowania wynik, w tym rozmiarze powiększony skalując pierwsze obraz z NearestNeighbor największych wielokrotności 100%, (na przykład 200% lub 300%) i skalowanie przy użyciu dwusześcienne do pozostałej (dodatkowe 50%).  
   
  Oto przykład różnice w wynikach, gdzie pierwszy obraz jest skalowany przy użyciu ulepszone algorytmu skalowania double-> 100% 200% -> 250% i drugi tylko z dwusześcienne 100% -> 250%.  
   
@@ -207,13 +207,13 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  Ponieważ WPF będzie się skalować interfejsu użytkownika dla bieżącego DPI, przy użyciu właściwości BitmapScalingMode nastavit UIElement kontrolkę typu obraz przy użyciu obrazu prescaled, zgodnie z jej źródła będzie wyglądać dwa lub trzy razy większy niż powinien. Poniżej przedstawiono kilka sposobów na licznika w tym celu:  
   
--   Jeśli znasz wymiaru oryginalny obraz w skali 100%, można określić dokładny rozmiar kontrolka obrazu. Te rozmiary zostanie naliczona, że rozmiar interfejsu użytkownika przed skalowaniem jest stosowany.  
+- Jeśli znasz wymiaru oryginalny obraz w skali 100%, można określić dokładny rozmiar kontrolka obrazu. Te rozmiary zostanie naliczona, że rozmiar interfejsu użytkownika przed skalowaniem jest stosowany.  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />  
     ```  
   
--   Jeśli rozmiar oryginalny obraz nie jest znany, LayoutTransform można skalować w dół końcowego obiektu obrazu. Na przykład:  
+- Jeśli rozmiar oryginalny obraz nie jest znany, LayoutTransform można skalować w dół końcowego obiektu obrazu. Na przykład:  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >  
@@ -344,9 +344,9 @@ public int GetHostInfo(DOCHOSTUIINFO info)
   
 ## <a name="tips"></a>Porady  
   
-1.  Zmiana właściwości dokumentu w kontrolce obiektu może być konieczne ponowne kojarzenie dokumentu przy użyciu klasy IDocHostUIHandler.  
+1. Zmiana właściwości dokumentu w kontrolce obiektu może być konieczne ponowne kojarzenie dokumentu przy użyciu klasy IDocHostUIHandler.  
   
-2.  Jeśli powyższe czynności zakończą się niepowodzeniem, jest to znany problem, za pomocą obiektu nie pobieranie zmiany flagi DPI. Jest najbardziej niezawodnym sposobem ustalenia, to aby przełączyć optyczne powiększenia obiektu, wywołań dwóch znaczenie w przypadku dwóch różnych wartości powiększenia. Ponadto jeśli to rozwiązanie jest wymagane, może być konieczne to wykonać w przypadku każdego wywołania Nawigacja.  
+2. Jeśli powyższe czynności zakończą się niepowodzeniem, jest to znany problem, za pomocą obiektu nie pobieranie zmiany flagi DPI. Jest najbardziej niezawodnym sposobem ustalenia, to aby przełączyć optyczne powiększenia obiektu, wywołań dwóch znaczenie w przypadku dwóch różnych wartości powiększenia. Ponadto jeśli to rozwiązanie jest wymagane, może być konieczne to wykonać w przypadku każdego wywołania Nawigacja.  
   
     ```csharp  
     // browser2 is a SHDocVw.IWebBrowser2 in this case  

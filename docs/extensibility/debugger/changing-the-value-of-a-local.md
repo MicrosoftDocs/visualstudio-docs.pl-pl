@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9abd8a08fc8e9dfbf23ad96e1087d4a8d5105ce9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf90a2c03112cb2d3a935a9721f455ec976803c7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702697"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041746"
 ---
 # <a name="change-the-value-of-a-local"></a>Zmień wartość zmiennej lokalnej
 > [!IMPORTANT]
@@ -30,13 +30,13 @@ ms.locfileid: "56702697"
 
 2. `IDebugProperty2::SetValueAsString` wykonuje następujące zadania:
 
-   1.  Wylicza wartość ciągu do uzyskiwania wartości.
+   1. Wylicza wartość ciągu do uzyskiwania wartości.
 
-   2.  Wiąże skojarzonego [IDebugField](../../extensibility/debugger/reference/idebugfield.md) obiektu w celu uzyskania [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) obiektu.
+   2. Wiąże skojarzonego [IDebugField](../../extensibility/debugger/reference/idebugfield.md) obiektu w celu uzyskania [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) obiektu.
 
-   3.  Konwertuje wartość na serię bajtów.
+   3. Konwertuje wartość na serię bajtów.
 
-   4.  Wywołania [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) można umieścić wartości bajtów do pamięci, aby program poddawany mają do nich dostęp.
+   4. Wywołania [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) można umieścić wartości bajtów do pamięci, aby program poddawany mają do nich dostęp.
 
 3. Odświeża programu Visual Studio **zmiennych lokalnych** wyświetlania (patrz [wyświetlanie zmiennych lokalnych](../../extensibility/debugger/displaying-locals.md) Aby uzyskać szczegółowe informacje).
 

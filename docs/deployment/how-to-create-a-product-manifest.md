@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48bed4a357809a672b1fc80063ca6743670cbb42
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 68f3006104b50876f6d2716ff4eb1efe0a705284
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568104"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057410"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Instrukcje: Tworzenie manifestu produktu
 Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakietu programu inicjującego. Pakiet programu inicjującego zawiera pojedynczy plik manifestu produktu ale manifest pakietu dla poszczególnych ustawień regionalnych. Manifest pakietu zawiera aspekty specyficzne dla lokalizacji pakietu. W tym ciągi, Umowa licencyjna użytkownika oprogramowania i pakietów językowych.
@@ -34,11 +34,11 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakietu 
 
 #### <a name="to-create-the-product-manifest"></a>Aby utworzyć manifest produktu
 
-1.  Utwórz katalog dla pakietu programu inicjującego. W tym przykładzie użyto C:\package.
+1. Utwórz katalog dla pakietu programu inicjującego. W tym przykładzie użyto C:\package.
 
-2.  W programie Visual Studio Utwórz nowy plik XML o nazwie *product.xml*i zapisać go w celu *C:\package* folderu.
+2. W programie Visual Studio Utwórz nowy plik XML o nazwie *product.xml*i zapisać go w celu *C:\package* folderu.
 
-3.  Dodaj następujący kod XML opisujący przestrzeni nazw i produktu kod XML dla pakietu. Zastąp kod produktu o unikatowym identyfikatorze dla pakietu.
+3. Dodaj następujący kod XML opisujący przestrzeni nazw i produktu kod XML dla pakietu. Zastąp kod produktu o unikatowym identyfikatorze dla pakietu.
 
     ```xml
     <Product
@@ -46,7 +46,7 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakietu 
     ProductCode="Custom.Bootstrapper.Package">
     ```
 
-4.  Dodaj kod XML, aby określić, czy pakiet ma zależność. W tym przykładzie użyto zależność w systemie Microsoft Windows Installer 3.1.
+4. Dodaj kod XML, aby określić, czy pakiet ma zależność. W tym przykładzie użyto zależność w systemie Microsoft Windows Installer 3.1.
 
     ```xml
     <RelatedProducts>
@@ -54,7 +54,7 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakietu 
       </RelatedProducts>
     ```
 
-5.  Dodaj kod XML, aby wyświetlić listę wszystkich plików, które należą do pakietu programu inicjującego. W tym przykładzie użyto nazwa pliku pakietu *CorePackage.msi*.
+5. Dodaj kod XML, aby wyświetlić listę wszystkich plików, które należą do pakietu programu inicjującego. W tym przykładzie użyto nazwa pliku pakietu *CorePackage.msi*.
 
     ```xml
     <PackageFiles>
@@ -62,16 +62,16 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakietu 
     </PackageFiles>
     ```
 
-6.  Kopiowanie lub przenoszenie *CorePackage.msi* plik *C:\package* folderu.
+6. Kopiowanie lub przenoszenie *CorePackage.msi* plik *C:\package* folderu.
 
-7.  Dodaj kod XML, aby zainstalować pakiet przy użyciu poleceń programu inicjującego. Program inicjujący automatycznie dodaje **/qn** flaga *.msi* pliku, który zostanie zainstalowany w trybie dyskretnym. Jeśli plik jest *.exe*, uruchamia program inicjujący *.exe* plików przy użyciu powłoki. Następujący kody XML pokazuje bez argumentów do *CorePackage.msi*, ale można umieścić argument wiersza polecenia do `Arguments` atrybutu.
+7. Dodaj kod XML, aby zainstalować pakiet przy użyciu poleceń programu inicjującego. Program inicjujący automatycznie dodaje **/qn** flaga *.msi* pliku, który zostanie zainstalowany w trybie dyskretnym. Jeśli plik jest *.exe*, uruchamia program inicjujący *.exe* plików przy użyciu powłoki. Następujący kody XML pokazuje bez argumentów do *CorePackage.msi*, ale można umieścić argument wiersza polecenia do `Arguments` atrybutu.
 
     ```xml
     <Commands>
         <Command PackageFile="CorePackage.msi" Arguments="">
     ```
 
-8.  Dodaj następujący kod XML, aby sprawdzić, czy zainstalowano ten pakiet programu inicjującego. Zastąp kod produktu o identyfikatorze GUID dla składnik redystrybucyjny.
+8. Dodaj następujący kod XML, aby sprawdzić, czy zainstalowano ten pakiet programu inicjującego. Zastąp kod produktu o identyfikatorze GUID dla składnik redystrybucyjny.
 
     ```xml
     <InstallChecks>

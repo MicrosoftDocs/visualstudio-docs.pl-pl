@@ -10,12 +10,12 @@ ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 682fc88fb616fbe2617fe6d336a35bf6fbc30e9f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1744801b7efe591c449e74796c3c7d297dc3f982
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755683"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061713"
 ---
 # <a name="when-to-create-project-types"></a>Kiedy należy tworzyć typy projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,26 +25,26 @@ Tworzenie nowych typów projektów stanowi podstawę do dostosowywania [!INCLUDE
 ## <a name="create-a-new-project-type"></a>Utwórz nowy typ projektu  
  Należy utworzyć typ projektu, jeśli chcesz dostosować [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] do działania w co najmniej jednej z następujących sposobów:  
   
--   Uczestniczy w kompilacji, wdrażania, konfiguracji i kontroli źródła.  
+- Uczestniczy w kompilacji, wdrażania, konfiguracji i kontroli źródła.  
   
--   Oferuje obsługę debugowania.  
+- Oferuje obsługę debugowania.  
   
--   Wyświetl elementy projektu w **Eksploratora rozwiązań**.  
+- Wyświetl elementy projektu w **Eksploratora rozwiązań**.  
   
--   Użyj **Otwórz projekt** lub **nowy projekt** okno dialogowe.  
+- Użyj **Otwórz projekt** lub **nowy projekt** okno dialogowe.  
   
--   Zagnieżdżanie projektów pomocy technicznej.  
+- Zagnieżdżanie projektów pomocy technicznej.  
   
 ## <a name="extend-an-existing-project-type"></a>Rozszerzyć istniejący typ projektu  
  Należy utworzyć nowy typ projektu, można użyć [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pod następującymi względami do modyfikowania lub rozszerzania działania istniejącego typu projektu, na przykład, modyfikując procesem kompilacji dla [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projektów:  
   
--   Praca z wieloma plikami jako pojedyncza jednostka.  
+- Praca z wieloma plikami jako pojedyncza jednostka.  
   
--   Wyświetl pojedynczy plik jako hierarchię elementów podrzędnych.  
+- Wyświetl pojedynczy plik jako hierarchię elementów podrzędnych.  
   
--   Wyświetlanie w kontekście polecenia wokół edytorów.  
+- Wyświetlanie w kontekście polecenia wokół edytorów.  
   
--   Wyświetl kontekstu usługi dla edytorów.  
+- Wyświetl kontekstu usługi dla edytorów.  
   
 ## <a name="use-an-existing-project-type"></a>Użyj istniejącego typu projektu  
  Tworzenie nowego projektu Czasami nie jest konieczne. W poniższej tabeli przedstawiono zadania, które jest konieczne tworzenie typu projektu.  

@@ -11,12 +11,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e50fbbc3c834fc33f77f3aecef6b51ef9037ecb7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7d1bfcfc3176e14900553504a66307ff6e8dcf5a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757033"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049260"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Inicjowanie projektanta i konfiguracja metadanych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ Manipulowanie atrybutów metadanych i filtrów skojarzonych z projektanta lub sk
 ### <a name="customizing-initialization"></a>Dostosowywanie inicjowania  
  Dostosowywanie projektanta, składnika lub powierzchni projektanta, obejmuje:  
   
-1.  Modyfikowanie metadane projektanta i efektywnie zmieniając jak określony <xref:System.Type> jest dostępny lub przekonwertować.  
+1. Modyfikowanie metadane projektanta i efektywnie zmieniając jak określony <xref:System.Type> jest dostępny lub przekonwertować.  
   
      Jest to zazwyczaj wykonywane za pośrednictwem <xref:System.Drawing.Design.UITypeEditor> lub <xref:System.ComponentModel.TypeConverter> mechanizmów.  
   
      Na przykład, gdy <xref:System.Windows.Forms>— są inicjowane na podstawie projektantów, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modyfikuje środowiska <xref:System.Drawing.Design.UITypeEditor> dla <xref:System.Web.UI.WebControls.Image> obiekty używane przy użyciu projektanta do używania usługi resource manager w celu uzyskania, mapy bitowe, a nie w systemie plików.  
   
-2.  Integracja ze środowiskiem, na przykład przez subskrybowanie zdarzeń i uzyskiwanie informacji o konfiguracji projektu. Możesz uzyskać informacje o konfiguracji projektu i subskrybowanie zdarzeń, uzyskując <xref:System.ComponentModel.Design.ITypeResolutionService> interfejsu.  
+2. Integracja ze środowiskiem, na przykład przez subskrybowanie zdarzeń i uzyskiwanie informacji o konfiguracji projektu. Możesz uzyskać informacje o konfiguracji projektu i subskrybowanie zdarzeń, uzyskując <xref:System.ComponentModel.Design.ITypeResolutionService> interfejsu.  
   
-3.  Modyfikowanie środowiska użytkownika, aktywując odpowiednie **przybornika** kategorii lub przez ograniczenie możliwości zastosowania projektanta, stosując wystąpienie <xref:System.ComponentModel.ToolboxItemFilterAttribute> klasy do projektanta.  
+3. Modyfikowanie środowiska użytkownika, aktywując odpowiednie **przybornika** kategorii lub przez ograniczenie możliwości zastosowania projektanta, stosując wystąpienie <xref:System.ComponentModel.ToolboxItemFilterAttribute> klasy do projektanta.  
   
 ### <a name="designer-initialization-by-a-vspackage"></a>Inicjowanie projektanta przez pakietu VSPackage  
  Pakietu VSPackage powinna obsługiwać Inicjowanie projektanta przez:  

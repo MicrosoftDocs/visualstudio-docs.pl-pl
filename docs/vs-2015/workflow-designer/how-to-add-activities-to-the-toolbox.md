@@ -9,23 +9,23 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 52f9fabec46fb04f2cc936c7bf76d67bd2dabcd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c5edf728df10d2418c4a3341fd54e4115439cc4a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799981"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055174"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Instrukcje: Dodawanie działań do przybornika
 Działania mogą być dodawane do **przybornika** w rozwiązaniu na kilka różnych sposobów. Możesz dodać je z w obrębie bieżącego projektu, odwoływać się do nich z innego projektu lub odwoływać się do nich z innego zestawu.  
   
 ### <a name="to-add-an-activity-from-within-your-current-project"></a>Aby dodać działanie z w obrębie bieżącego projektu  
   
-1.  Dodaj nowe niestandardowe działanie bieżącego projektu przepływu pracy. [!INCLUDE[crabout](../includes/crabout-md.md)] Dodawanie nowego niestandardowego działania do projektu, zobacz [jak: Dodaj nowy element do projektu przepływu pracy](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).  
+1. Dodaj nowe niestandardowe działanie bieżącego projektu przepływu pracy. [!INCLUDE[crabout](../includes/crabout-md.md)] Dodawanie nowego niestandardowego działania do projektu, zobacz [jak: Dodaj nowy element do projektu przepływu pracy](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).  
   
-2.  Dodawanie logiki niestandardowej do działania.  
+2. Dodawanie logiki niestandardowej do działania.  
   
-3.  Skompiluj projekt. Jeśli kompilacja zakończyła się pomyślnie, Nowa kategoria **przybornika** o nazwie "\<*Nazwa projektu*>" jest wyświetlana przy użyciu niestandardowego działania zawarte w tej kategorii.  
+3. Skompiluj projekt. Jeśli kompilacja zakończyła się pomyślnie, Nowa kategoria **przybornika** o nazwie "\<*Nazwa projektu*>" jest wyświetlana przy użyciu niestandardowego działania zawarte w tej kategorii.  
   
     > [!NOTE]
     >  W przypadku zresetowania przybornika działań niestandardowych zostaną usunięte, nawet wtedy, gdy rozwiązanie jest stworzone ponownie. Ponowne wypełnienie przybornika działań niestandardowych po został zresetowany, uruchom ponownie [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
@@ -38,25 +38,25 @@ Działania mogą być dodawane do **przybornika** w rozwiązaniu na kilka różn
   
 ### <a name="to-add-an-activity-from-within-a-different-project"></a>Aby dodać działania z innego projektu  
   
-1.  Otwórz rozwiązanie, które zawiera co najmniej jeden projekt przepływu pracy i działania niestandardowego projektu biblioteki lub innego projektu przepływu pracy, który definiuje niestandardowe działanie.  
+1. Otwórz rozwiązanie, które zawiera co najmniej jeden projekt przepływu pracy i działania niestandardowego projektu biblioteki lub innego projektu przepływu pracy, który definiuje niestandardowe działanie.  
   
-2.  Twórz oba projekty. Jeśli kompilacje zakończyły się pomyślnie Nowa kategoria **przybornika** o nazwie "\<*Nazwa projektu*>" jest wyświetlana przy użyciu niestandardowego działania zawarte w tej kategorii.  
+2. Twórz oba projekty. Jeśli kompilacje zakończyły się pomyślnie Nowa kategoria **przybornika** o nazwie "\<*Nazwa projektu*>" jest wyświetlana przy użyciu niestandardowego działania zawarte w tej kategorii.  
   
 ### <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>Aby dodać działanie do przybornika z zestawu  
   
-1.  Otwórz rozwiązanie, przepływ pracy.  
+1. Otwórz rozwiązanie, przepływ pracy.  
   
-2.  Z **narzędzia** menu, wybierz opcję **wybierz elementy przybornika...** .  
+2. Z **narzędzia** menu, wybierz opcję **wybierz elementy przybornika...** .  
   
-3.  W **wybierz elementy przybornika** okno dialogowe, wybierz opcję **karty składniki elementu System.Activities** kartę, a następnie kliknij przycisk **Przeglądaj...** Aby przejść do zestawu, który zawiera niestandardowe działanie, które chcesz dodać.  
+3. W **wybierz elementy przybornika** okno dialogowe, wybierz opcję **karty składniki elementu System.Activities** kartę, a następnie kliknij przycisk **Przeglądaj...** Aby przejść do zestawu, który zawiera niestandardowe działanie, które chcesz dodać.  
   
-4.  Wybierz zestaw, a następnie kliknij przycisk **OK**. Składnik niestandardowe działanie zostanie dodany do listy składników i to opcja wybrana automatycznie.  
+4. Wybierz zestaw, a następnie kliknij przycisk **OK**. Składnik niestandardowe działanie zostanie dodany do listy składników i to opcja wybrana automatycznie.  
   
-    1.  Kliknij przycisk **OK** aby zamknąć okno dialogowe.  
+    1. Kliknij przycisk **OK** aby zamknąć okno dialogowe.  
   
-5.  Aby wyświetlić przybornik, wybierz pozycję **przybornika** z **widoku** menu.  
+5. Aby wyświetlić przybornik, wybierz pozycję **przybornika** z **widoku** menu.  
   
-6.  Niestandardowe działanie jest wyświetlana w **przybornika** kategorii, która była w trybie koncentracji uwagi, zanim element został dodany. Na przykład jeśli **ogólne** kategorii zostało wybrane w **przybornika** przed dodaniem elementu przybornika, działanie pojawiło się w obszarze **ogólne** kategorii.  
+6. Niestandardowe działanie jest wyświetlana w **przybornika** kategorii, która była w trybie koncentracji uwagi, zanim element został dodany. Na przykład jeśli **ogólne** kategorii zostało wybrane w **przybornika** przed dodaniem elementu przybornika, działanie pojawiło się w obszarze **ogólne** kategorii.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Używanie projektanta przepływu pracy](../workflow-designer/using-the-workflow-designer.md)

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3608f516eb9206bc5b4c232c227d3e49c2414be7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5566538b428502c8e63e752463b0271daeac2918
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599756"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052509"
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Instrukcje: Programowe wyznaczanie bieżącego elementu programu Outlook
   W tym przykładzie użyto `Explorer.SelectionChange` zdarzenie, aby wyświetlić nazwę bieżącego folderu i niektóre informacje na temat wybranego elementu. Ten kod wyświetla wybrany element.
@@ -34,7 +34,7 @@ ms.locfileid: "56599756"
 ## <a name="compile-the-code"></a>Skompilować kod
  Ten przykład wymaga:
 
--   Termin, skontaktuj się z pomocą i elementów poczty e-mail w programie Microsoft Office Outlook.
+- Termin, skontaktuj się z pomocą i elementów poczty e-mail w programie Microsoft Office Outlook.
 
 ## <a name="see-also"></a>Zobacz także
 - [Model obiektu Outlook ― omówienie](../vsto/outlook-object-model-overview.md)

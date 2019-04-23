@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2322b787327b4c0abf7c8a1010d52ef49a54f945
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f90cbb58406df2410361bf9409c843b5c35b4331
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944588"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051475"
 ---
 # <a name="how-to-use-the-variable-designer"></a>Instrukcje: Używanie projektanta zmiennych
 
@@ -25,13 +25,13 @@ Projektanta zmiennych służy do tworzenia zmiennych do użytku w scenariuszach 
 
 ## <a name="to-create-a-new-variable"></a>Aby utworzyć nową zmienną
 
-1.  Otwórz rozwiązanie, przepływ pracy lub działania w programie Visual Studio.
+1. Otwórz rozwiązanie, przepływ pracy lub działania w programie Visual Studio.
 
-2.  W obszarze roboczym projektu wybierz działanie w przepływie pracy.
+2. W obszarze roboczym projektu wybierz działanie w przepływie pracy.
 
-3.  Otwórz projektanta zmiennych, klikając pozycję **zmienne** przycisku w lewym dolnym rogu obszaru roboczego projektowania. Pojawi się projektanta zmiennych.
+3. Otwórz projektanta zmiennych, klikając pozycję **zmienne** przycisku w lewym dolnym rogu obszaru roboczego projektowania. Pojawi się projektanta zmiennych.
 
-4.  Kliknij pusty wiersz etykietą **Tworzenie zmiennej**. Spowoduje to dodanie nowego wiersza przy użyciu nowej zmiennej, używając następujących wartości domyślne: variablex dla **nazwa** gdzie x jest liczbą całkowitą o początkowej wartości 1, który jest automatycznie zwiększany w celu tworzenia unikatowych nazw zmiennych,  **Ciąg** dla **typ zmiennej**, i **sekwencji** dla **zakres**. Wartość nie jest dodawany do **domyślne**. Wartości te można zmienić w dowolnym momencie podczas procesu projektowania przepływu pracy.
+4. Kliknij pusty wiersz etykietą **Tworzenie zmiennej**. Spowoduje to dodanie nowego wiersza przy użyciu nowej zmiennej, używając następujących wartości domyślne: variablex dla **nazwa** gdzie x jest liczbą całkowitą o początkowej wartości 1, który jest automatycznie zwiększany w celu tworzenia unikatowych nazw zmiennych,  **Ciąg** dla **typ zmiennej**, i **sekwencji** dla **zakres**. Wartość nie jest dodawany do **domyślne**. Wartości te można zmienić w dowolnym momencie podczas procesu projektowania przepływu pracy.
 
     > [!NOTE]
     > Aby usunąć zmienną, wybierz zmienną, klikając go, a następnie naciśnij klawisz **Usuń** klucza.

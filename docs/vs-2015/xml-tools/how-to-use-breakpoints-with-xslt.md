@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5590d9f33d2c34b7d3d86aaf00307419685ca8da
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 76729bd44d196028fd88bd13718a34518b1fbde4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773273"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052327"
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>Instrukcje: Używanie punktów przerwania w kodzie XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,34 +28,34 @@ Możesz ustawić punkty przerwania w arkuszu stylów XSLT lub w dokumencie źró
   
 #### <a name="to-set-a-breakpoint-in-a-style-sheet"></a>Aby ustawić punkt przerwania w arkuszu stylów  
   
-1.  Otworzyć arkusz stylów w edytorze XML.  
+1. Otworzyć arkusz stylów w edytorze XML.  
   
-2.  Umieść kursor w miejscu punktu przerwania, kliknij prawym przyciskiem myszy, wskaż **punktu przerwania**i kliknij przycisk **Wstaw punkt przerwania**.  
+2. Umieść kursor w miejscu punktu przerwania, kliknij prawym przyciskiem myszy, wskaż **punktu przerwania**i kliknij przycisk **Wstaw punkt przerwania**.  
   
-3.  Kliknij przycisk Przeglądaj, przycisk przeglądania (**...** ) na **dane wejściowe** pola w oknie właściwości dokumentu.  
+3. Kliknij przycisk Przeglądaj, przycisk przeglądania (**...** ) na **dane wejściowe** pola w oknie właściwości dokumentu.  
   
-4.  Znajdź w dokumencie źródłowym XML, a następnie kliknij przycisk **Otwórz**.  
+4. Znajdź w dokumencie źródłowym XML, a następnie kliknij przycisk **Otwórz**.  
   
      Spowoduje to ustawienie pliku dokumentu źródłowego, który jest używany do transformacji XSLT.  
   
-5.  Kliknij przycisk **debugowania XSL** na listwie narzędziowej edytora XML.  
+5. Kliknij przycisk **debugowania XSL** na listwie narzędziowej edytora XML.  
   
 ## <a name="set-a-breakpoint-in-an-xml-source-document"></a>Ustaw punkt przerwania w dokumencie źródłowym XML  
  Można ustawić punktów przerwania na elementy, atrybuty, węzeł przestrzeni nazw, komentarzy, instrukcji przetwarzania i węzły tekstowe w dokumencie źródłowym XML. Nie można ustawić punktu przerwania, w węźle dokumentu lub węzła obszaru nazw, który jest dziedziczony z elementu nadrzędnego.  
   
 #### <a name="to-set-a-breakpoint-in-an-xml-source-document"></a>Aby ustawić punkt przerwania w dokumencie źródłowym XML  
   
-1.  Otwórz dokument XML w edytorze XML.  
+1. Otwórz dokument XML w edytorze XML.  
   
-2.  Umieść kursor w miejscu punktu przerwania, kliknij prawym przyciskiem myszy, wskaż **punktu przerwania**i kliknij przycisk **Wstaw punkt przerwania**.  
+2. Umieść kursor w miejscu punktu przerwania, kliknij prawym przyciskiem myszy, wskaż **punktu przerwania**i kliknij przycisk **Wstaw punkt przerwania**.  
   
-3.  Kliknij przycisk Przeglądaj, przycisk przeglądania (**...** ) na **arkusza stylów** pola w oknie właściwości dokumentu.  
+3. Kliknij przycisk Przeglądaj, przycisk przeglądania (**...** ) na **arkusza stylów** pola w oknie właściwości dokumentu.  
   
-4.  Znajdź w dokumencie źródłowym XML, a następnie kliknij przycisk **Otwórz**.  
+4. Znajdź w dokumencie źródłowym XML, a następnie kliknij przycisk **Otwórz**.  
   
      Spowoduje to ustawienie pliku dokumentu źródłowego, który jest używany do transformacji XSLT.  
   
-5.  Kliknij przycisk **debugowania XSL** na listwie narzędziowej edytora XML.  
+5. Kliknij przycisk **debugowania XSL** na listwie narzędziowej edytora XML.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik: Debugowanie arkusza stylów XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)

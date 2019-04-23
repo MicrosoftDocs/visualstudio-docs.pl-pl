@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 147bb56e0d8759ece67ea1454f496b23b770cebf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8f7afee863d36796bb481f9aca2c24a9ba891ae7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604733"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049948"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Tworzenie pakietów rozwiązania SharePoint
   Przy użyciu projektanta pakietów, można tworzyć i dostosowywać pakiety wdrożeniowe. Na przykład można dodać elementów projektu programu SharePoint i funkcji, resetowanie na serwerze usług IIS, ustaw zakresy aktywacji funkcji i zidentyfikować zależności funkcji. Projektant generuje również manifest pliku XML, który zawiera opis każdego pakietu.
@@ -56,17 +56,17 @@ ms.locfileid: "56604733"
 ## <a name="packaging-architecture"></a>Architektura pakietu
  Wykonane następujące kroki podczas tworzenia pakietu programu SharePoint (*.wsp*) w programie Visual Studio.
 
-1.  Funkcji i pakietów są weryfikowane, aby upewnić się, że struktury fizyczne i semantyczne pakietu jest poprawna.
+1. Funkcji i pakietów są weryfikowane, aby upewnić się, że struktury fizyczne i semantyczne pakietu jest poprawna.
 
-2.  Funkcje, elementy projektów i plików pakietu w pakiecie są wyliczane. Pliki manifestu pakietów i funkcje są przekształcane obejmujący wszystkie niezbędne informacje dotyczące wdrażania i aktywacji. Tokeny są zastępowane pełną wartość.
+2. Funkcje, elementy projektów i plików pakietu w pakiecie są wyliczane. Pliki manifestu pakietów i funkcje są przekształcane obejmujący wszystkie niezbędne informacje dotyczące wdrażania i aktywacji. Tokeny są zastępowane pełną wartość.
 
-3.  Można dostosować element docelowy programu BeforeLayout MSBuild jest wykonywane. Możesz utworzyć ten krok, aby wprowadzać żadnych zmian niestandardowy pakiet przed *.wsp* zostanie utworzony plik.
+3. Można dostosować element docelowy programu BeforeLayout MSBuild jest wykonywane. Możesz utworzyć ten krok, aby wprowadzać żadnych zmian niestandardowy pakiet przed *.wsp* zostanie utworzony plik.
 
-4.  Wyliczany pliki są kopiowane do katalogu, pośrednich.
+4. Wyliczany pliki są kopiowane do katalogu, pośrednich.
 
-5.  Można dostosować element docelowy programu MSBuild AfterLayout jest wykonywane. Możesz utworzyć ten krok, aby wprowadzać żadnych zmian niestandardowy pakiet przed *.wsp* zostanie utworzony plik.
+5. Można dostosować element docelowy programu MSBuild AfterLayout jest wykonywane. Możesz utworzyć ten krok, aby wprowadzać żadnych zmian niestandardowy pakiet przed *.wsp* zostanie utworzony plik.
 
-6.  Pliki w katalogu pośrednim zostaną dodane do *.wsp* pliku.
+6. Pliki w katalogu pośrednim zostaną dodane do *.wsp* pliku.
 
 ## <a name="package-folder-structure"></a>Struktura folderów pakietu
  Podczas pakowania projektu programu SharePoint *.wsp* plik zostanie utworzony w *SolutionFolder\bin\\\<BuildConfiguration >* folderu. Na przykład, jeśli Twoje rozwiązanie jest w *2013\Projects\ListDefinition1 C:\Visual Studio* i konfiguracji kompilacji jest ustawiona na wersji *.wsp* plik znajduje się w *2013\ C:\Visual Studio Projects\ListDefinition1\bin\Release*.

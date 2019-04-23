@@ -11,12 +11,12 @@ ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1c949d4668089a2cc06543169a1c3ce6619409d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f40c523c058bf215cc4574b3aa4a2e038c833beb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776400"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044673"
 ---
 # <a name="exposing-project-objects"></a>Udostępnianie obiektów projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Typy projektów niestandardowych można podać obiektów automatyzacji, aby zezw
   
 ### <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>Aby współtworzyć obiekt pakietu VSPackage specyficzne dla projektu  
   
-1.  Dodaj odpowiednie klucze do Twojego pakietu VSPackage plik .pkgdef.  
+1. Dodaj odpowiednie klucze do Twojego pakietu VSPackage plik .pkgdef.  
   
      Na przykład poniżej przedstawiono ustawienia .pkgdef dla projektów języka C++:  
   
@@ -40,7 +40,7 @@ Typy projektów niestandardowych można podać obiektów automatyzacji, aby zezw
     "VCProjectEngineEventsObject"=""  
     ```  
   
-2.  Wdrożyć kod w <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metody, jak w poniższym przykładzie.  
+2. Wdrożyć kod w <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metody, jak w poniższym przykładzie.  
   
     ```cpp  
     STDMETHODIMP CVsPackage::GetAutomationObject(  

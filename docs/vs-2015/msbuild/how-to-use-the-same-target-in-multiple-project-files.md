@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 66a916203f008aee84010bcc910f1a35dc39e5d9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d388d32b288e47a7e92f5d0f727230ffa00a2621
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654870"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056838"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Instrukcje: Użycie tej samej wartości docelowej w wielu plikach projektów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Jeśli jesteś autorem kilku [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md
   
 #### <a name="to-import-a-project"></a>Aby zaimportować projekt  
   
-1.  Zdefiniuj w importowania pliku projektu, wszystkie właściwości i elementy, które są używane jako parametry dla właściwości i elementy w projekcie zaimportowane.  
+1. Zdefiniuj w importowania pliku projektu, wszystkie właściwości i elementy, które są używane jako parametry dla właściwości i elementy w projekcie zaimportowane.  
   
-2.  Użyj `Import` element Importowanie projektu. Na przykład:  
+2. Użyj `Import` element Importowanie projektu. Na przykład:  
   
      `<Import Project="MyCommon.targets"/>`  
   
-3.  Następujące `Import` elementu zdefiniować wszystkie właściwości i elementy, które musisz przesłonić domyślny definicji właściwości i elementy w projekcie zaimportowane.  
+3. Następujące `Import` elementu zdefiniować wszystkie właściwości i elementy, które musisz przesłonić domyślny definicji właściwości i elementy w projekcie zaimportowane.  
   
 ## <a name="order-of-evaluation"></a>Kolejność obliczania  
  Gdy [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] osiągnie `Import` elementu zaimportowanego projektu skutecznie są wstawiane do importowania projektu w lokalizacji `Import` elementu. W związku z tym, lokalizacja `Import` element może mieć wpływ na wartości właściwości i elementów. Należy zapoznać się z właściwości i elementy, które są skonfigurowane przy importowany projekt i właściwości i elementy, których używa zaimportowanego projektu.  
@@ -77,11 +77,11 @@ Jeśli jesteś autorem kilku [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md
   
 #### <a name="use-the-following-approach-when-importing-projects"></a>Podczas importowania projektów, zastosuj następujące podejście  
   
-1.  Zdefiniuj w pliku projektu, wszystkie właściwości i elementy, które są używane jako parametry dla właściwości i elementy w projekcie zaimportowane.  
+1. Zdefiniuj w pliku projektu, wszystkie właściwości i elementy, które są używane jako parametry dla właściwości i elementy w projekcie zaimportowane.  
   
-2.  Importowanie projektu.  
+2. Importowanie projektu.  
   
-3.  Wszystkie właściwości i elementów, które musisz przesłonić domyślny definicji właściwości i elementów w zaimportowanego projektu, należy zdefiniować w pliku projektu.  
+3. Wszystkie właściwości i elementów, które musisz przesłonić domyślny definicji właściwości i elementów w zaimportowanego projektu, należy zdefiniować w pliku projektu.  
   
 ## <a name="example"></a>Przykład  
  Poniższy przykład kodu pokazuje MyCommon.targets pliku, który importuje drugi przykład kodu. W pliku .targets ocenia właściwości z importowania projektu do konfigurowania kompilacji.  

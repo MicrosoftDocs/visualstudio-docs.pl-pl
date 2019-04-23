@@ -9,18 +9,18 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e1b60c67cab2ed624d00b0c34ddcb01c213a3806
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 41757f4bf9054199584ead564edb3c2942877d5f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775231"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060036"
 ---
 # <a name="all-rules-rule-set"></a>Zestaw reguł All Rules
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Zestaw reguł wszystkie reguły zawiera wszystkie reguły dla kodu zarządzanego i natywnego. Zestaw reguł zawiera wszystkie reguły, które są opisane w następujących tematach:  
   
-1.  [Analiza kodu C/C++ — ostrzeżenia](../code-quality/code-analysis-for-c-cpp-warnings.md)  
+1. [Analiza kodu C/C++ — ostrzeżenia](../code-quality/code-analysis-for-c-cpp-warnings.md)  
   
-2.  [Analiza kodu zarządzanego — ostrzeżenia](../code-quality/code-analysis-for-managed-code-warnings.md)
+2. [Analiza kodu zarządzanego — ostrzeżenia](../code-quality/code-analysis-for-managed-code-warnings.md)

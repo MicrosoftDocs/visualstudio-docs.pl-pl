@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d039de309e1e9d5ec80d469d4d1329aad7118e71
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b51f26a4ea2dec50c5ee90c38f49412866b6f866
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625468"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041905"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Instrukcje: Zmiana rozmiaru formantów w komórkach arkusza
   Podczas zmiany rozmiaru kolumn lub wierszy w arkuszu, wszystkie kontrolki hosta w komórkach automatycznie Zmień rozmiar na wysokość lub szerokość komórki, który został zmieniony. Kontrolek formularzy Windows Forms nie rozmiar zmienia się automatycznie domyślnie.
@@ -35,13 +35,13 @@ ms.locfileid: "56625468"
 
 ### <a name="to-make-controls-resize-with-cells-at-design-time"></a>Aby wyświetlić zmiany rozmiaru komórek w czasie projektowania formanty
 
-1.  Z **przybornika**, przeciągnij formant programu Windows Forms do arkusza.
+1. Z **przybornika**, przeciągnij formant programu Windows Forms do arkusza.
 
-2.  Kliknij prawym przyciskiem myszy formant, a następnie kliknij przycisk **kontroli formatu**.
+2. Kliknij prawym przyciskiem myszy formant, a następnie kliknij przycisk **kontroli formatu**.
 
-3.  W **kontroli formatu** okno dialogowe, kliknij przycisk **właściwości** kartę.
+3. W **kontroli formatu** okno dialogowe, kliknij przycisk **właściwości** kartę.
 
-4.  W obszarze **Pozycjonowanie obiektu**, wybierz opcję **wraz z komórkami jej rozmiaru i przenoszenie** opcji, a następnie kliknij przycisk **OK**.
+4. W obszarze **Pozycjonowanie obiektu**, wybierz opcję **wraz z komórkami jej rozmiaru i przenoszenie** opcji, a następnie kliknij przycisk **OK**.
 
      Podczas zmiany rozmiaru komórkę zawierającą formant do rozmiaru komórki zmienia rozmiar kontrolki.
 
@@ -50,7 +50,7 @@ ms.locfileid: "56625468"
 
 ### <a name="to-make-controls-resize-with-cells-at-run-time"></a>Aby wyświetlić formanty, zmiana rozmiaru komórek w czasie wykonywania
 
-1.  Dodawanie kontrolki do zakresu A1.
+1. Dodawanie kontrolki do zakresu A1.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#5)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#5)]
@@ -60,15 +60,15 @@ ms.locfileid: "56625468"
 ## <a name="reset-control-placement"></a>Resetuj położenie formantu
  Można przywrócić położenia i rozmiaru formantu przez ustawienie `Placement` jedną z następujących właściwości <xref:Microsoft.Office.Interop.Excel.XlPlacement> wartości:
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMove>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMove>
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMoveAndSize>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMoveAndSize>
 
 ### <a name="to-change-the-behavior-of-a-control-so-that-it-does-not-resize-or-move-with-the-cell"></a>Aby zmienić zachowanie kontrolki tak, aby zmienić rozmiar lub nie przenieść przy użyciu komórki
 
-1.  Wywoływanie w właściwości umieszczania formantu, a następnie ustaw wartość <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>.
+1. Wywoływanie w właściwości umieszczania formantu, a następnie ustaw wartość <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]

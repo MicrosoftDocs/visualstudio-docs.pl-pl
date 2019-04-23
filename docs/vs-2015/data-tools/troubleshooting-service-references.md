@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8af0f56d75d231cdde2dc156519e08d580ad4f5f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cff1677ab9209ce2a51b7587c410731a71e27eb0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804667"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056722"
 ---
 # <a name="troubleshooting-service-references"></a>Rozwiązywanie problemów z odwołaniami usługi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,25 +33,25 @@ Ten temat zawiera listę typowych problemów, które mogą wystąpić podczas pr
 
  Aby naprawić ten błąd:
 
-1.  W **Eksploratora rozwiązań**, kliknij dwukrotnie plik app.config, aby go otworzyć.
+1. W **Eksploratora rozwiązań**, kliknij dwukrotnie plik app.config, aby go otworzyć.
 
-2.  Znajdź `MaxReceivedMessageSize` właściwości i zmień ją na większą wartość.
+2. Znajdź `MaxReceivedMessageSize` właściwości i zmień ją na większą wartość.
 
 ## <a name="cannot-find-a-service-in-my-solution"></a>Nie można odnaleźć usługi w Moje rozwiązanie
  Po kliknięciu **odnajdź** znajdujący się w **Dodawanie odwołań do usług** okno dialogowe, co najmniej jeden projekt biblioteki usługi WCF w rozwiązaniu nie są wyświetlane na liście usług. Może to występować, jeśli biblioteka usług został dodany do rozwiązania, ale jeszcze nie został skompilowany.
 
  Aby naprawić ten błąd:
 
--   W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt biblioteki usługi WCF i kliknij przycisk **kompilacji**.
+- W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt biblioteki usługi WCF i kliknij przycisk **kompilacji**.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Błąd podczas uzyskiwania dostępu do usługi za pośrednictwem pulpitu zdalnego
  Gdy użytkownik uzyskuje dostęp do usługi WCF hostowanej w sieci Web za pośrednictwem połączenia pulpitu zdalnego i użytkownik nie ma uprawnienia administracyjne, zostanie użyte uwierzytelnianie NTLM. Jeśli użytkownik nie ma uprawnienia administracyjne, użytkownik może pojawić się następujący komunikat o błędzie: "Żądanie HTTP nie ma autoryzacji przez schemat uwierzytelniania klienta"Anonymous". Nagłówek uwierzytelnienia otrzymany z serwera była "NTLM"."
 
  Aby naprawić ten błąd:
 
-1.  Projekt witryny sieci Web otwórz **właściwości** stron.
+1. Projekt witryny sieci Web otwórz **właściwości** stron.
 
-2.  Na **opcje uruchamiania** kartę, usuń zaznaczenie **uwierzytelniania NTLM** pole wyboru.
+2. Na **opcje uruchamiania** kartę, usuń zaznaczenie **uwierzytelniania NTLM** pole wyboru.
 
     > [!NOTE]
     > Należy wyłączyć uwierzytelnianie NTLM tylko w przypadku witryn sieci Web, zawierające wyłącznie usługi WCF. Zabezpieczenia usług WCF odbywa się za pośrednictwem konfiguracji w pliku web.config. To sprawia, że uwierzytelnianie NTLM niepotrzebne.
@@ -70,32 +70,32 @@ Ten temat zawiera listę typowych problemów, które mogą wystąpić podczas pr
 
  Aby naprawić ten błąd, należy ręcznie ponownie skompilować projekt usługi:
 
-1.  Na **narzędzia** menu, kliknij przycisk **opcje**.
+1. Na **narzędzia** menu, kliknij przycisk **opcje**.
 
-2.  W **opcje** okna dialogowego rozwiń **projekty i rozwiązania**, a następnie wybierz pozycję **ogólne**.
+2. W **opcje** okna dialogowego rozwiń **projekty i rozwiązania**, a następnie wybierz pozycję **ogólne**.
 
-3.  Upewnij się, że **Pokaż zaawansowane konfiguracje kompilacji** pole wyboru jest zaznaczone, a następnie kliknij przycisk **OK**.
+3. Upewnij się, że **Pokaż zaawansowane konfiguracje kompilacji** pole wyboru jest zaznaczone, a następnie kliknij przycisk **OK**.
 
-4.  Załaduj projekt usługi WCF. Aby uzyskać więcej informacji, zobacz [NIB jak: Tworzenie rozwiązań dotyczących wielu projektów](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
+4. Załaduj projekt usługi WCF. Aby uzyskać więcej informacji, zobacz [NIB jak: Tworzenie rozwiązań dotyczących wielu projektów](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
 
-5.  W **programu Configuration Manager** okno dialogowe, zestaw **Konfiguracja rozwiązania aktywnego** do **debugowania**. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md).
+5. W **programu Configuration Manager** okno dialogowe, zestaw **Konfiguracja rozwiązania aktywnego** do **debugowania**. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md).
 
-6.  W **Eksploratora rozwiązań**, wybierz projekt usługi WCF.
+6. W **Eksploratora rozwiązań**, wybierz projekt usługi WCF.
 
-7.  Na **kompilacji** menu, kliknij przycisk **odbudować** Aby ponownie skompilować projekt usługi WCF.
+7. Na **kompilacji** menu, kliknij przycisk **odbudować** Aby ponownie skompilować projekt usługi WCF.
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>Usługi danych WCF nie są wyświetlane w przeglądarce
  Podczas próby wyświetlenia Reprezentacja XML danych w [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], Internet Explorer mogą błędnie interpretuje dane jako źródła danych RSS. Należy się upewnić, że opcja wyświetlania źródeł danych RSS jest wyłączona.
 
  Aby naprawić ten błąd, należy wyłączyć źródła danych RSS:
 
-1.  W programie Internet Explorer na **narzędzia** menu, kliknij przycisk **Opcje internetowe**.
+1. W programie Internet Explorer na **narzędzia** menu, kliknij przycisk **Opcje internetowe**.
 
-2.  Na **zawartości** na karcie **źródła** kliknij **ustawienia**.
+2. Na **zawartości** na karcie **źródła** kliknij **ustawienia**.
 
-3.  W **ustawienia źródła danych** okno dialogowe wyczyść **Włączanie źródła danych w widoku do czytania** pole wyboru, a następnie kliknij przycisk **OK**.
+3. W **ustawienia źródła danych** okno dialogowe wyczyść **Włączanie źródła danych w widoku do czytania** pole wyboru, a następnie kliknij przycisk **OK**.
 
-4.  Kliknij przycisk **OK** zamknąć **Opcje internetowe** okno dialogowe.
+4. Kliknij przycisk **OK** zamknąć **Opcje internetowe** okno dialogowe.
 
 ## <a name="see-also"></a>Zobacz także
 

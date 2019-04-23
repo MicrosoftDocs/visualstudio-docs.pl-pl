@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34175d2e53e897160e601f29bc2279f226fb5d11
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8ae3d06b2f031ed2deede1a80bec356a0abd939e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601255"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040237"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint — rozwiązania
   Program Visual Studio udostępnia szablony projektów, służących do tworzenia dodatków narzędzi VSTO dla programu Microsoft PowerPoint pakietu Office. Za pomocą dodatków narzędzi VSTO dla programów Automatyzacja programu PowerPoint, Rozszerz funkcje programu PowerPoint lub dostosowywanie interfejsu użytkownika (UI) programu PowerPoint.
@@ -49,7 +49,7 @@ ms.locfileid: "56601255"
 
   Gdy wywołujesz modelu obiektów programu PowerPoint, należy użyć typów, które są dostarczane w podstawowy zestaw międzyoperacyjny dla programu PowerPoint. Podstawowy zestaw międzyoperacyjny działa jako Most między kodu zarządzanego w dodatku narzędzi VSTO dla programów i model obiektów COM w programie PowerPoint. Wszystkie typy w programie PowerPoint podstawowy zestaw międzyoperacyjny są zdefiniowane w <xref:Microsoft.Office.Interop.PowerPoint> przestrzeni nazw. Aby uzyskać więcej informacji na temat podstawowych usług międzyoperacyjnych, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) i [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md).
 
-##  <a name="WordOMDocumentation"></a> Zapoznaj się z dokumentacją modelu obiektu programu PowerPoint
+## <a name="WordOMDocumentation"></a> Zapoznaj się z dokumentacją modelu obiektu programu PowerPoint
  Aby uzyskać pełne informacje o modelu obiektów programu PowerPoint mogą odwoływać się do programu PowerPoint odwołanie do zestawu podstawowej usługi międzyoperacyjnej (PIA) i dokumentacja modelu obiektów języka VBA.
 
 ### <a name="primary-interop-assembly-reference"></a>Odwołanie do zestawu podstawowej usługi międzyoperacyjnej

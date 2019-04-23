@@ -11,12 +11,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 640217b9ee9a8cb51ed11931d0d66b2c98e0a165
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f938e08d2bc9363be5e3f9e1ac247dea36f25a80
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803409"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064833"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>Łączenie aktualizacji modelu UML za pomocą transakcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,15 +62,15 @@ Po zdefiniowaniu rozszerzenia projektantów UML w programie Visual Studio można
   
  Zapamiętaj poniższe:  
   
--   Musisz zawsze dołączać `Commit()` na końcu transakcji. Jeśli transakcja jest usuwana bez zatwierdzenia, transakcja zostanie wycofana. Oznacza to, że model zostanie przywrócony do jego stanu na początku transakcji.  
+- Musisz zawsze dołączać `Commit()` na końcu transakcji. Jeśli transakcja jest usuwana bez zatwierdzenia, transakcja zostanie wycofana. Oznacza to, że model zostanie przywrócony do jego stanu na początku transakcji.  
   
--   Jeśli wystąpi wyjątek, który nie jest wyłapywany wewnątrz transakcji, transakcja zostanie wycofana. To częsty wzór, aby ująć `using` transakcji wewnątrz bloku `try…catch` bloku.  
+- Jeśli wystąpi wyjątek, który nie jest wyłapywany wewnątrz transakcji, transakcja zostanie wycofana. To częsty wzór, aby ująć `using` transakcji wewnątrz bloku `try…catch` bloku.  
   
--   Transakcje można zagnieżdżać.  
+- Transakcje można zagnieżdżać.  
   
--   Możesz podać dowolną nazwę niepustych `BeginTransaction()`.  
+- Możesz podać dowolną nazwę niepustych `BeginTransaction()`.  
   
--   Tylko Store modelu UML ma wpływ tych transakcje. Nie wpływają na transakcje modelowania: zmienne, zewnętrzne magazyny takie jak pliki i baz danych, diagramy warstw, a kod modeli.  
+- Tylko Store modelu UML ma wpływ tych transakcje. Nie wpływają na transakcje modelowania: zmienne, zewnętrzne magazyny takie jak pliki i baz danych, diagramy warstw, a kod modeli.  
   
 ## <a name="example"></a>Przykład  
   

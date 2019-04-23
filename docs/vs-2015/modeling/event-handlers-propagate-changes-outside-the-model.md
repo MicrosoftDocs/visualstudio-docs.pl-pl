@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c723e0a2cc76b6432fc6f209a7edf4a988a0b3fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 24ef57b545360cccbf75039b5f64a0f53e636dd8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796302"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059906"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Programy obsługi zdarzeń propagujące zmiany poza modelem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ W wizualizacji i modelowania SDK, można zdefiniować programy obsługi zdarzeń
   
 1. Wybierz typ zdarzenia, które chcesz monitorować. Aby uzyskać pełną listę, Przyjrzyj się właściwości <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Każda właściwość odnosi się do typu zdarzenia. Najczęściej używane zdarzenia, które typy to:  
   
-   -   `ElementAdded` — wyzwalane, gdy element modelu, relacji łączy, kształtu lub połączenia jest tworzony.  
+   - `ElementAdded` — wyzwalane, gdy element modelu, relacji łączy, kształtu lub połączenia jest tworzony.  
   
-   -   ElementPropertyChanged — wyzwalane, gdy wartość `Normal` właściwość domeny zostanie zmieniony. Zdarzenie jest wyzwalane tylko wtedy, gdy wartości nowym i starym nie są równe. Nie można zastosować zdarzenie do obliczone i niestandardowe właściwości przechowywania.  
+   - ElementPropertyChanged — wyzwalane, gdy wartość `Normal` właściwość domeny zostanie zmieniony. Zdarzenie jest wyzwalane tylko wtedy, gdy wartości nowym i starym nie są równe. Nie można zastosować zdarzenie do obliczone i niestandardowe właściwości przechowywania.  
   
         Nie można zastosować do właściwości roli, które odnoszą się do relacji łączy. Zamiast tego należy użyć `ElementAdded` do monitorowania relacji domeny.  
   
-   -   `ElementDeleted` — wyzwalane po elementu modelu, relacji, kształtu lub łącznik został usunięty. Nadal możesz uzyskać dostępu do wartości właściwości elementu, ale będzie mieć żadnych relacji z innymi elementami.  
+   - `ElementDeleted` — wyzwalane po elementu modelu, relacji, kształtu lub łącznik został usunięty. Nadal możesz uzyskać dostępu do wartości właściwości elementu, ale będzie mieć żadnych relacji z innymi elementami.  
   
 2. Dodaj definicję klasy częściowej _YourDsl_**DocData** w osobnym pliku kodu w **DslPackage** projektu.  
   
@@ -166,11 +166,11 @@ private static void AlbumTitleAdjuster(object sender,
   
  Jeśli piszesz zdarzenie, które aktualizuje magazynu:  
   
--   Użyj `store.InUndoRedoOrRollback` Aby uniknąć wprowadzania zmian do elementów modelu w cofania. Menedżer transakcji ustawi wszystko w magazynie do stanu pierwotnego.  
+- Użyj `store.InUndoRedoOrRollback` Aby uniknąć wprowadzania zmian do elementów modelu w cofania. Menedżer transakcji ustawi wszystko w magazynie do stanu pierwotnego.  
   
--   Użyj `store.InSerializationTransaction` Aby uniknąć wprowadzania zmian, gdy model jest ładowany z pliku.  
+- Użyj `store.InSerializationTransaction` Aby uniknąć wprowadzania zmian, gdy model jest ładowany z pliku.  
   
--   Zmiany spowoduje dalsze zdarzenia wyzwolone. Upewnij się, że należy unikać wejścia w nieskończoną pętlę.  
+- Zmiany spowoduje dalsze zdarzenia wyzwolone. Upewnij się, że należy unikać wejścia w nieskończoną pętlę.  
   
 ## <a name="store-event-types"></a>Typy zdarzeń Store  
  Każdy typ zdarzenia odpowiada kolekcji w Store.EventManagerDirectory. Można dodawać lub usuwać procedury obsługi zdarzeń w dowolnym czasie, ale jest zwykle, aby dodać je, gdy jest ładowany dokument.  

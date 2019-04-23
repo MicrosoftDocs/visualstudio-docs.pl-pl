@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de77349ec3e8ddc4fd0b4716bc39bd84024d981c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e75a732ddc9c56e7305e4ebbfec6a188fb6df2bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942105"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062077"
 ---
 # Instrukcje: Znajdowanie tematów w spisie treści
 
@@ -33,9 +33,9 @@ W **zawartość** karcie, można użyć spisu treści (TOC) można znaleźć inf
 
 Można filtrować TOC w celu zwężenia zakresu tematów, które pojawiają się w **zawartość** kartę. Tytuły pojawiają się na liście, tylko wtedy, gdy zawierają katalog główny składnika, który określono. Na przykład jeśli określisz "Rozwiązywanie problemów" jako filtr, tylko tytuły zawierające "Rozwiązywanie problemów" lub "Rozwiązywanie problemów" są wyświetlane. Węzły, których tytuły nie zawierają wyrażenia są zwinięte do pojedynczego węzła z wielokropkiem (**...** ).
 
-1.  Wybierz **zawartość** kartę.
+1. Wybierz **zawartość** kartę.
 
-2.  W **zawartość filtra** tekstu wprowadź termin.
+2. W **zawartość filtra** tekstu wprowadź termin.
 
 > [!NOTE]
 > Jeśli filtr potrzebuje dużo czasu do uruchomienia, można wyświetlić wyniki szybciej przy użyciu `title:` operatora wyszukiwania zaawansowanego.
@@ -44,9 +44,9 @@ Można filtrować TOC w celu zwężenia zakresu tematów, które pojawiają się
 
 Po otwarciu tematu przy użyciu indeksu lub funkcji przeszukiwania całego tekstu można określić, gdzie jest ten temat w spisie treści, synchronizując spis treści z oknem tematu.
 
-1.  Wyświetl temat.
+1. Wyświetl temat.
 
-2.  Kliknij przycisk **Pokaż temat w spisie treści** przycisk na pasku narzędzi lub naciśnij **Ctrl**+**S**.
+2. Kliknij przycisk **Pokaż temat w spisie treści** przycisk na pasku narzędzi lub naciśnij **Ctrl**+**S**.
 
      **Zawartość** kartę otwiera i wyświetla lokalizację tematu w spisie treści.
 

@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe18719e55a59abfcbde35195ed499fe9882c6c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 623aa21e94ff25b8190bae82ca836ed16f64bcaa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58146074"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049371"
 ---
 # <a name="installation"></a>Instalacja
 
@@ -87,6 +87,7 @@ Platformy uczenia głębokiego, zależą od narzędzie pip dla ich własnych ins
 Następnie należy sprawdzić, czy prawidłowo zainstalowano język Python 3.5 i uaktualnić pakiet pip do najnowszej wersji, wykonując następujące polecenia w terminalu:
 
 - **Windows**
+
     ```cmd
     C:\Users\test>python -V
     Python 3.5.4
@@ -98,6 +99,7 @@ Następnie należy sprawdzić, czy prawidłowo zainstalowano język Python 3.5 i
     ```
 
 - **macOS**
+
     ```bash
     MyMac:~ test$ python3.5 -V
     Python 3.5.4
@@ -159,10 +161,13 @@ Odwiedź stronę [tutaj](https://caffe2.ai/docs/getting-started.html) tworzenie 
 Aby zainstalować MXNet, uruchom następujące polecenie w terminalu:
 
 - Przy użyciu procesora GPU
+
     ```bash
     pip3.5 install mxnet-cu80==0.12.0
     ```
+
 - Bez procesora GPU
+
     ```bash
     pip3.5 install mxnet==0.12.0
     ```

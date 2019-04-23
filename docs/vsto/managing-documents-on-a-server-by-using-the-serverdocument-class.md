@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 83f23bb04c9080b75d2a8e93252d981c0833d69d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 595c9127aad71cac6f446f356c309809b7172d94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630083"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045490"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>Zarządzanie dokumentami na serwerze za pomocą klasy ServerDocument
   Możesz użyć `ServerDocument` klasy w [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Zarządzanie kilka aspektów dostosowywania poziomie dokumentu, nawet jeśli nie zainstalowano programu Microsoft Office Word i Microsoft Office Excel. Można wykonać następujące zadania:
@@ -40,7 +40,7 @@ ms.locfileid: "56630083"
 > [!NOTE]
 >  Jeśli masz starszą aplikację, która używa `ServerDocument` klasy w `Visual Studio Tools for Office` system (w wersji 3.0 Runtime), `Visual Studio Tools for Office` system (wersja 3.0 runtime) musi być zainstalowany na komputerach z pakietem aplikacji. `Visual Studio 2010 Tools for Office runtime` Nie mogą uruchamiać tych aplikacji.
 
-##  <a name="CachedData"></a> Praca z pamięci podręcznej danych w dokumencie
+## <a name="CachedData"></a> Praca z pamięci podręcznej danych w dokumencie
  `ServerDocument` Klasa oferuje elementy członkowskie, można użyć do pracy z pamięcią podręczną danych w dokumentach dostosowane. Aby uzyskać więcej informacji dotyczących buforowanych danych, zobacz [dane z pamięci podręcznej](../vsto/caching-data.md) i [dostęp do danych w dokumentach na serwerze](../vsto/accessing-data-in-documents-on-the-server.md).
 
  W poniższej tabeli wymieniono elementy członkowskie, które można użyć do pracy z danymi w pamięci podręcznej.
@@ -50,7 +50,7 @@ ms.locfileid: "56630083"
 |Aby określić, czy dokument ma pamięci podręcznej danych.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A> Metody.|
 |Aby uzyskać dostęp do pamięci podręcznej danych w dokumencie.<br /><br /> Aby uzyskać więcej informacji, zobacz [dostęp do danych w dokumentach na serwerze](../vsto/accessing-data-in-documents-on-the-server.md).|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> Właściwości.|
 
-##  <a name="CustomizationInfo"></a> Zarządzanie dostosowywania dokumentu
+## <a name="CustomizationInfo"></a> Zarządzanie dostosowywania dokumentu
  Można użyć elementów członkowskich `ServerDocument` klasy do zarządzania zestaw dostosowania, który jest skojarzony z dokumentem. Na przykład można programowo usunąć dostosowania z dokumentu, aby dokument nie jest już częścią dostosowania.
 
  W poniższej tabeli wymieniono elementy członkowskie, których można użyć do zarządzania zestaw dostosowania.

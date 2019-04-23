@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90f0c73abb33a2da9c2735bcbc16b5559437bc65
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 836f3485eb923476271d6a2bae7899d66bd67db7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54765015"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054628"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Praca z kodem Visual C++ (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ Projektant klasy Wyświetla powierzchni projektowej o nazwie *diagram klas* zape
   
  Projektant klas obsługuje następujące elementy kodu C++:  
   
--   Klasy (przypomina kształt klasy zarządzanej, z tą różnicą, że może mieć wiele relacji dziedziczenia)  
+- Klasy (przypomina kształt klasy zarządzanej, z tą różnicą, że może mieć wiele relacji dziedziczenia)  
   
--   Klasa anonimowa (wyświetla wygenerowaną nazwę widoku klasy dla typu anonimowego)  
+- Klasa anonimowa (wyświetla wygenerowaną nazwę widoku klasy dla typu anonimowego)  
   
--   Klasa szablonu  
+- Klasa szablonu  
   
--   Struct  
+- Struct  
   
--   Wyliczenie  
+- Wyliczenie  
   
--   Makra (wyświetla przetworzone po widoku makro)  
+- Makra (wyświetla przetworzone po widoku makro)  
   
--   Element TypeDef  
+- Element TypeDef  
   
 > [!NOTE]
 >  Nie jest taka sama jak diagram klas UML, który można utworzyć w projekcie modelowania. Aby uzyskać więcej informacji, zobacz [diagramów klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md).  
@@ -84,27 +84,27 @@ Projektant klasy Wyświetla powierzchni projektowej o nazwie *diagram klas* zape
 ### <a name="troubleshooting-other-error-messages"></a>Rozwiązywanie problemów z inne komunikaty o błędach  
  Pomoc dotyczącą rozwiązywania problemów z błędów i ostrzeżeń można znaleźć w publiczne fora Microsoft Developer Network (MSDN). Zobacz [Forum projektanta klas programu Visual Studio](http://go.microsoft.com/fwlink/?linkid=160754).  
   
-##  <a name="limitations"></a> Ograniczenia dotyczące elementów kodu w języku C++  
+## <a name="limitations"></a> Ograniczenia dotyczące elementów kodu w języku C++  
   
--   Gdy projekt Visual C++ jest ładowany, funkcje projektanta klas w sposób tylko do odczytu. Można zmienić na diagramie klasy, ale nie można zapisać zmian z diagramu klasy do kodu źródłowego.  
+- Gdy projekt Visual C++ jest ładowany, funkcje projektanta klas w sposób tylko do odczytu. Można zmienić na diagramie klasy, ale nie można zapisać zmian z diagramu klasy do kodu źródłowego.  
   
--   Projektant klasy obsługuje tylko natywny semantyki C++. Dla projektów Visual C++, które są kompilowane do kodu zarządzanego Projektant klas tylko wizualizować elementy kodu, które są typami natywnymi. W związku z tym, można dodać diagram klas do projektu, ale Projektant klas nie zezwoli na wizualizowanie elementów, w którym `IsManaged` właściwość jest ustawiona na `true` (oznacza to typy wartości i typy referencyjne).  
+- Projektant klasy obsługuje tylko natywny semantyki C++. Dla projektów Visual C++, które są kompilowane do kodu zarządzanego Projektant klas tylko wizualizować elementy kodu, które są typami natywnymi. W związku z tym, można dodać diagram klas do projektu, ale Projektant klas nie zezwoli na wizualizowanie elementów, w którym `IsManaged` właściwość jest ustawiona na `true` (oznacza to typy wartości i typy referencyjne).  
   
--   Dla projektów Visual C++ Projektant klas odczytuje tylko definicji typu. Załóżmy na przykład, możesz zdefiniować typu w pliku nagłówka (.h) i zdefiniować jej elementów członkowskich w pliku implementacji (.cpp). Jeśli wywołujesz "Pokaż Diagram klas" w pliku implementacji (.cpp), Projektant klas nie powoduje wyświetlenia żadnych danych Inny przykład, jeśli wywołujesz "Pokaż Diagram klas" w pliku .cpp, który używa `#include` instrukcję, aby dołączyć inne pliki, ale nie zawiera żadnych definicji klas rzeczywiste, nic nie wyświetla ponownie projektanta klas.  
+- Dla projektów Visual C++ Projektant klas odczytuje tylko definicji typu. Załóżmy na przykład, możesz zdefiniować typu w pliku nagłówka (.h) i zdefiniować jej elementów członkowskich w pliku implementacji (.cpp). Jeśli wywołujesz "Pokaż Diagram klas" w pliku implementacji (.cpp), Projektant klas nie powoduje wyświetlenia żadnych danych Inny przykład, jeśli wywołujesz "Pokaż Diagram klas" w pliku .cpp, który używa `#include` instrukcję, aby dołączyć inne pliki, ale nie zawiera żadnych definicji klas rzeczywiste, nic nie wyświetla ponownie projektanta klas.  
   
--   Pliki IDL (.idl), które definiowanie interfejsów COM i bibliotek typów, nie są wyświetlane na diagramach, chyba że są one kompilowane do kodu natywnego języka C++.  
+- Pliki IDL (.idl), które definiowanie interfejsów COM i bibliotek typów, nie są wyświetlane na diagramach, chyba że są one kompilowane do kodu natywnego języka C++.  
   
--   Projektant klas nie obsługuje funkcje i zmienne globalne.  
+- Projektant klas nie obsługuje funkcje i zmienne globalne.  
   
--   Projektant klas nie obsługuje Unii. Jest to specjalny typ klasy, w którym pamięci przydzielonej jest niezbędne dla Unii zajmuje największy element członkowski danych kwoty.  
+- Projektant klas nie obsługuje Unii. Jest to specjalny typ klasy, w którym pamięci przydzielonej jest niezbędne dla Unii zajmuje największy element członkowski danych kwoty.  
   
--   Projektant klas nie są wyświetlane typy danych podstawowych takich jak `int` i `char`.  
+- Projektant klas nie są wyświetlane typy danych podstawowych takich jak `int` i `char`.  
   
--   Projektant klas nie są wyświetlane typy, które są zdefiniowane poza bieżącym projekcie, jeśli projekt nie ma poprawne odwołania do tych typów.  
+- Projektant klas nie są wyświetlane typy, które są zdefiniowane poza bieżącym projekcie, jeśli projekt nie ma poprawne odwołania do tych typów.  
   
--   Projektant klas umożliwia wyświetlanie typów zagnieżdżonych, ale nie relacje między typem zagnieżdżonym i innych typów.  
+- Projektant klas umożliwia wyświetlanie typów zagnieżdżonych, ale nie relacje między typem zagnieżdżonym i innych typów.  
   
--   Projektant klas nie może wyświetlić typy, które są nieważne lub który pochodzi od typu void.  
+- Projektant klas nie może wyświetlić typy, które są nieważne lub który pochodzi od typu void.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Projektowanie i wyświetlanie klas i typów](../ide/designing-and-viewing-classes-and-types.md)   

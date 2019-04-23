@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 822ce0a2f0e8632706a4a1551cc53aafb23563ed
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 2e397d587032bb6a8c125d38c10000e6a496c2d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983037"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060335"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Użyj innej przeglądarki za pomocą kodowanych testów interfejsu użytkownika
 
@@ -24,13 +24,13 @@ Najpierw zainstaluj [Selenium components for coded UI cross testowania przegląd
 
 ## <a name="whats-supported-across-all-web-browsers"></a>Co jest obsługiwane we wszystkich przeglądarkach sieci web?
 
--   [Dodawanie kodu niestandardowego w celu kontrolowania funkcji](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) takie jak obiekty właściwości, wyszukiwanie i odtwarzania.
+- [Dodawanie kodu niestandardowego w celu kontrolowania funkcji](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) takie jak obiekty właściwości, wyszukiwanie i odtwarzania.
 
--   Wyskakujące okienka i okna dialogowe
+- Wyskakujące okienka i okna dialogowe
 
--   [Wykonaj podstawowy kod JavaScript bez zwrotu typu](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
+- [Wykonaj podstawowy kod JavaScript bez zwrotu typu](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   Wyszukaj tolerancję (za pomocą inteligentnego dopasowania) i [ulepszenia wydajności](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
+- Wyszukaj tolerancję (za pomocą inteligentnego dopasowania) i [ulepszenia wydajności](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Dlaczego należy używać zakodowanych testów interfejsu użytkownika w kilku przeglądarkach sieci Web?
 
@@ -78,17 +78,17 @@ Aby uzyskać więcej informacji na temat tworzenia i używania kodowanego interf
 
 Aby włączyć debugowanie aplikacji internetowej, należy zastosować następujące opcje konfiguracji:
 
-1.  Włączyć funkcję Tylko mój kod:
+1. Włączyć funkcję Tylko mój kod:
 
-    1.  Na **narzędzia** menu, wybierz **opcje** , a następnie wybierz **debugowanie**.
+    1. Na **narzędzia** menu, wybierz **opcje** , a następnie wybierz **debugowanie**.
 
-    2.  Wybierz **Włącz tylko mój kod**.
+    2. Wybierz **Włącz tylko mój kod**.
 
-2.  Wyłączyć wyjątki CLR:
+2. Wyłączyć wyjątki CLR:
 
-    1.  Na **debugowania** menu, wybierz **wyjątki**.
+    1. Na **debugowania** menu, wybierz **wyjątki**.
 
-    2.  Aby uzyskać **wyjątki środowiska uruchomieniowego języka wspólnego**, usuń zaznaczenie pola wyboru **User-unhandled**.
+    2. Aby uzyskać **wyjątki środowiska uruchomieniowego języka wspólnego**, usuń zaznaczenie pola wyboru **User-unhandled**.
 
 Jeśli nie jest widoczna opcja zmiany `BrowserWindow.CurrentBrowser` w kodowanym teście interfejsu użytkownika, być może używasz wersji programu Visual Studio, który nie obsługuje kodowanych testów interfejsu użytkownika za pomocą różnych przeglądarek sieci web. Aby używać takich kodowanych testów interfejsu użytkownika, należy użyć programu Visual Studio Enterprise edition.
 

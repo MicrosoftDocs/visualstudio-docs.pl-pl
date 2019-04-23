@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46b7a159fb2d15f817cad47817262202397d3981
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c2d337a1ed97524dc04c8154fe2b074baf0921ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654324"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042384"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce
 W tym artykule przedstawiono następujące typowe błędy, które mogą wystąpić podczas wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji oraz przedstawiono kroki, aby rozwiązać każdy problem.
@@ -81,9 +81,9 @@ W tym artykule przedstawiono następujące typowe błędy, które mogą wystąpi
 
  Należy wykonać następujące czynności:
 
--   Sprawdź, czy tożsamość manifestu wdrażania, tożsamość manifest aplikacji i tożsamość aplikacji głównej EXE są unikatowe.
+- Sprawdź, czy tożsamość manifestu wdrażania, tożsamość manifest aplikacji i tożsamość aplikacji głównej EXE są unikatowe.
 
--   Sprawdź, czy ścieżki do plików nie są dłuższe niż 100 znaków. Jeśli aplikacja zawiera ścieżki plików, które są zbyt długie, może przekroczyć ograniczenia dotyczące maksymalnego ścieżki, które można przechowywać. Spróbuj skrócić ścieżki i ponownie zainstalować.
+- Sprawdź, czy ścieżki do plików nie są dłuższe niż 100 znaków. Jeśli aplikacja zawiera ścieżki plików, które są zbyt długie, może przekroczyć ograniczenia dotyczące maksymalnego ścieżki, które można przechowywać. Spróbuj skrócić ścieżki i ponownie zainstalować.
 
 #### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>Ustawienia PrivatePath w pliku konfiguracji aplikacji nie są uznawane.
  Aby użyć PrivatePath (ścieżkach sondowania Fusion), aplikacja musi żądać uprawnienia pełnego zaufania. Spróbuj zmienić manifest aplikacji, aby zażądać pełnego zaufania, a następnie spróbuj ponownie.
@@ -112,9 +112,9 @@ W tym artykule przedstawiono następujące typowe błędy, które mogą wystąpi
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Próbowano zalogować się przy użyciu certyfikatu w magazynie certyfikatów i odebranego komunikatu puste pola
  W **podpisywanie** okno dialogowe, należy:
 
--   Wybierz **logowania przechowywanym certyfikatem**, i
+- Wybierz **logowania przechowywanym certyfikatem**, i
 
--   Wybierz certyfikat z listy; pierwszy certyfikat nie jest ustawieniem domyślnym.
+- Wybierz certyfikat z listy; pierwszy certyfikat nie jest ustawieniem domyślnym.
 
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>Klikając przycisk "Zaloguj nie" powoduje, że wyjątek
  Ten problem, jest to znana usterka. Wszystkie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestów są wymagane, aby były podpisane. Wystarczy wybrać jedną z opcji podpisywania, a następnie kliknij przycisk **OK**.

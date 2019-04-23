@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5366e33da9af7a845a7f5e5a5e3a901b7d091fa3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9685d1621f0e81adbbb034c250974b7bc9b36993
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947345"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064586"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Konwencje dotyczące generowania, kompilowania i nazywania w Microsoft Fakes
 
@@ -20,8 +20,8 @@ W tym artykule omówiono opcje i kwestie w substytuty Generowanie i kompilacja k
 
 **Wymagania**
 
--   Visual Studio Enterprise
--   Projekt programu .NET Framework
+- Visual Studio Enterprise
+- Projekt programu .NET Framework
 
 > [!NOTE]
 > Projekty .NET standard nie są obsługiwane.
@@ -62,23 +62,23 @@ Na przykład następująca *.fakes* pliku generuje namiastki dla typów w przest
 
 Ciągi filtrów używają prostej gramatyki do zdefiniowania, jak dopasowywania powinna być podejmowana:
 
--   Filtry domyślnie wielkość liter; filtry dopasowują podciąg:
+- Filtry domyślnie wielkość liter; filtry dopasowują podciąg:
 
      `el` pasuje do "hello"
 
--   Dodawanie `!` do końca filtru sprawia, że dokładne dopasowanie uwzględniające:
+- Dodawanie `!` do końca filtru sprawia, że dokładne dopasowanie uwzględniające:
 
      `el!` nie pasuje do "hello"
 
      `hello!` pasuje do "hello"
 
--   Dodawanie `*` do końca filtru sprawia, że pasującym do przedrostka ciągu:
+- Dodawanie `*` do końca filtru sprawia, że pasującym do przedrostka ciągu:
 
      `el*` nie pasuje do "hello"
 
      `he*` pasuje do "hello"
 
--   Wiele filtrów na rozdzielonej średnikami liście zostanie połączonych jako alternatywa:
+- Wiele filtrów na rozdzielonej średnikami liście zostanie połączonych jako alternatywa:
 
      `el;wo` pasuje do "hello" i "world"
 
@@ -114,9 +114,9 @@ Generator kodu pozornego wygeneruje typy zastępcze i typy namiastki dla typów,
 
  Jeśli zestawu typu shim ma silnej nazwy, i chcesz uzyskać dostęp do wewnętrznych typów zestawu:
 
--   Zarówno zestaw testowy i zestaw Pozorowany muszą posiadać silne nazwy.
+- Zarówno zestaw testowy i zestaw Pozorowany muszą posiadać silne nazwy.
 
--   Dodaj klucze publiczne testu i podrobionego zestawu do **InternalsVisibleToAttribute** atrybutów w zestawach typu shim. Poniżej przedstawiono, jak będzie wyglądać przykładowe atrybuty w kodzie zestawu shimmed zestawu typu shim ma silnej nazwy:
+- Dodaj klucze publiczne testu i podrobionego zestawu do **InternalsVisibleToAttribute** atrybutów w zestawach typu shim. Poniżej przedstawiono, jak będzie wyglądać przykładowe atrybuty w kodzie zestawu shimmed zestawu typu shim ma silnej nazwy:
 
     ```csharp
     // FileSystem\AssemblyInfo.cs
@@ -161,19 +161,19 @@ Kompilacja zestawów pozornych może znacznie zwiększyć czas kompilacji. Gener
 
 Z projektów testów jednostkowych Dodaj odwołanie do skompilowanych zestawów pozornych, które są umieszczone w FakesAssemblies w folderze projektu.
 
-1.  Utwórz nową bibliotekę klas z wersją środowiska uruchomieniowego .NET dopasowania Twoich projektów testów. Nazwijmy ją Fakes.Prebuild. Usuń *class1.cs* pliku z projektem, nie jest wymagane.
+1. Utwórz nową bibliotekę klas z wersją środowiska uruchomieniowego .NET dopasowania Twoich projektów testów. Nazwijmy ją Fakes.Prebuild. Usuń *class1.cs* pliku z projektem, nie jest wymagane.
 
-2.  Dodaj odwołanie do wszystkich systemowych i zestawów innych firm, których potrzebujesz substytutów.
+2. Dodaj odwołanie do wszystkich systemowych i zestawów innych firm, których potrzebujesz substytutów.
 
-3.  Dodaj *.fakes* pliku dla wszystkich zestawów i kompilacji.
+3. Dodaj *.fakes* pliku dla wszystkich zestawów i kompilacji.
 
-4.  Z projektu testów
+4. Z projektu testów
 
-    -   Upewnij się, że masz odwołanie do środowiska uruchomieniowego podrobionych DLL:
+    - Upewnij się, że masz odwołanie do środowiska uruchomieniowego podrobionych DLL:
 
          *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 
-    -   Dla każdego zestawu, który utworzono substytuty, Dodaj odwołanie do odpowiedniego pliku DLL w *Fakes.Prebuild\FakesAssemblies* folderze projektu.
+    - Dla każdego zestawu, który utworzono substytuty, Dodaj odwołanie do odpowiedniego pliku DLL w *Fakes.Prebuild\FakesAssemblies* folderze projektu.
 
 ### <a name="avoid-assembly-name-clashing"></a>Uniknąć konfliktu nazw zestawów
 
@@ -270,9 +270,9 @@ attribute of the Assembly element in the .fakes:
 
 Następujące reguły są stosowane cyklicznie:
 
--   Ponieważ substytuty używają C# wygenerować zestawy pozorne, dowolny znak, który skutkowałby nieprawidłowym C# token jest zmieniany na "_" (podkreślenie).
+- Ponieważ substytuty używają C# wygenerować zestawy pozorne, dowolny znak, który skutkowałby nieprawidłowym C# token jest zmieniany na "_" (podkreślenie).
 
--   Jeśli nazwa wynikowa jest niezgodna z dowolnym elementem członkowskim typu deklarującego, schemat numerowania jest używany przez dołączenie dwóch cyfr licznika, począwszy od 01.
+- Jeśli nazwa wynikowa jest niezgodna z dowolnym elementem członkowskim typu deklarującego, schemat numerowania jest używany przez dołączenie dwóch cyfr licznika, począwszy od 01.
 
 ## <a name="see-also"></a>Zobacz także
 

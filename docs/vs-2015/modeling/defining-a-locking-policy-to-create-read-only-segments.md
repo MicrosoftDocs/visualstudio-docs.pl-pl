@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3e882818471014df66ef160521a6e9111a47a27
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ed3eeb8e2907eb71a75884a19f174774055783c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773209"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062246"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definiowanie zasad blokowania na potrzeby tworzenia segmentów tylko do odczytu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ partition.SetLocks(Locks.Delete);
 ### <a name="using-locks"></a>Użycie blokad  
  Można użyć blokady wdrożenie systemów, takich jak następujące przykłady:  
   
--   Nie zezwalaj na zmiany do wszystkich elementów i relacji z wyjątkiem tych, które reprezentują komentarze. Dzięki temu użytkownicy mogą dodawać adnotacje do modelu, nie zmieniając go.  
+- Nie zezwalaj na zmiany do wszystkich elementów i relacji z wyjątkiem tych, które reprezentują komentarze. Dzięki temu użytkownicy mogą dodawać adnotacje do modelu, nie zmieniając go.  
   
--   Nie zezwalaj na zmiany w domyślnej partycji, ale zezwalaj na zmiany w partycji diagramu. Użytkownik może zmienić układ diagramu, ale nie można zmienić modelu źródłowym.  
+- Nie zezwalaj na zmiany w domyślnej partycji, ale zezwalaj na zmiany w partycji diagramu. Użytkownik może zmienić układ diagramu, ale nie można zmienić modelu źródłowym.  
   
--   Nie zezwalaj na zmienianie Store, z wyjątkiem grupy użytkowników, którzy są rejestrowane w oddzielnej bazy danych. Dla innych użytkowników diagramu i modelu są przeznaczone tylko do odczytu.  
+- Nie zezwalaj na zmienianie Store, z wyjątkiem grupy użytkowników, którzy są rejestrowane w oddzielnej bazy danych. Dla innych użytkowników diagramu i modelu są przeznaczone tylko do odczytu.  
   
--   Nie zezwalaj na zmiany w modelu, jeśli ustawiono właściwość typu Boolean diagramu na wartość true. Podaj polecenie menu, aby zmienić tę właściwość. Dzięki temu użytkownicy, którzy nie należy wprowadzać zmian przypadkowo.  
+- Nie zezwalaj na zmiany w modelu, jeśli ustawiono właściwość typu Boolean diagramu na wartość true. Podaj polecenie menu, aby zmienić tę właściwość. Dzięki temu użytkownicy, którzy nie należy wprowadzać zmian przypadkowo.  
   
--   Nie zezwalaj na dodawanie i usuwanie elementów i relacji z określonymi klasami, ale zezwalaj na zmiany właściwości. Zapewnia to użytkownikom stały formularza, w którym można wypełnić właściwości.  
+- Nie zezwalaj na dodawanie i usuwanie elementów i relacji z określonymi klasami, ale zezwalaj na zmiany właściwości. Zapewnia to użytkownikom stały formularza, w którym można wypełnić właściwości.  
   
 ## <a name="lock-values"></a>Blokady wartości  
  Można ustawić blokady na Store, partycji lub poszczególnych ModelElement. Blokady jest `Flags` wyliczenia: można połączyć wartości za pomocą "&#124;".  
@@ -97,9 +97,9 @@ partition.SetLocks(Locks.Delete);
   
  Aby zdefiniować zasad blokowania, należy:  
   
--   Utwórz klasę, która implementuje <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>.  
+- Utwórz klasę, która implementuje <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>.  
   
--   Dodaj tę klasę do usług, które są dostępne za pośrednictwem DocData DSL.  
+- Dodaj tę klasę do usług, które są dostępne za pośrednictwem DocData DSL.  
   
 ### <a name="to-define-a-locking-policy"></a>Do definiowania zasad blokowania  
  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> ma następującą definicję:  

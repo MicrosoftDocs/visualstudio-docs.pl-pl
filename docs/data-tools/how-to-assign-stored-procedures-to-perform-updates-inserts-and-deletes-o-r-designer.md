@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aefe5037120636c02b8d3fa73e4ec1fc4bc02a48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 05dd21bbb423d75cd175f13ca945516024db01eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920447"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049845"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Instrukcje: Przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)
 
@@ -33,23 +33,23 @@ Domyślnie logika aktualizacji bazy danych (operacje wstawiania, aktualizacji i 
 
 ### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>Aby przypisać procedur składowanych, aby zastąpić domyślne zachowanie klasę jednostki
 
-1.  Otwórz **LINQ to SQL** pliku w projektancie. (Kliknij dwukrotnie **dbml** w pliku **Eksploratora rozwiązań**.)
+1. Otwórz **LINQ to SQL** pliku w projektancie. (Kliknij dwukrotnie **dbml** w pliku **Eksploratora rozwiązań**.)
 
-2.  W **Eksploratora serwera** lub **Eksplorator bazy danych**, rozwiń węzeł **procedur składowanych** i Znajdź procedur przechowywanych, które chcesz na użytek Insert, Update i/lub usuwania polecenia Klasa jednostki.
+2. W **Eksploratora serwera** lub **Eksplorator bazy danych**, rozwiń węzeł **procedur składowanych** i Znajdź procedur przechowywanych, które chcesz na użytek Insert, Update i/lub usuwania polecenia Klasa jednostki.
 
-3.  Przeciągnij procedurę składowaną do **O/R Designer**.
+3. Przeciągnij procedurę składowaną do **O/R Designer**.
 
      Procedura składowana jest dodawany do okienka metod jako <xref:System.Data.Linq.DataContext> metody. Aby uzyskać więcej informacji, zobacz [metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
-4.  Wybierz klasę jednostki, dla którego chcesz użyć procedury składowanej do wykonywania aktualizacji.
+4. Wybierz klasę jednostki, dla którego chcesz użyć procedury składowanej do wykonywania aktualizacji.
 
-5.  W **właściwości** okna, wybierz polecenie, aby zastąpić (**Wstaw**, **aktualizacji**, lub **Usuń**).
+5. W **właściwości** okna, wybierz polecenie, aby zastąpić (**Wstaw**, **aktualizacji**, lub **Usuń**).
 
-6.  Kliknij przycisk wielokropka (...) obok wyrazy **Użyj środowiska uruchomieniowego** otworzyć **Konfigurowanie zachowania** okno dialogowe.
+6. Kliknij przycisk wielokropka (...) obok wyrazy **Użyj środowiska uruchomieniowego** otworzyć **Konfigurowanie zachowania** okno dialogowe.
 
-7.  Wybierz **dostosować**.
+7. Wybierz **dostosować**.
 
-8.  Wybierz odpowiednią procedurę składowaną w **Dostosuj** listy.
+8. Wybierz odpowiednią procedurę składowaną w **Dostosuj** listy.
 
 9. Sprawdź listę **argumenty metody** i **właściwości klasy** do sprawdzenia, czy **argumenty metody** mapy do odpowiedniego **właściwości klasy**. Mapowanie oryginalnego argumenty metody (`Original_<ArgumentName>`) do oryginalne właściwości (`<PropertyName> (Original)`) dla `Update` i `Delete` poleceń.
 

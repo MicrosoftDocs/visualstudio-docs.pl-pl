@@ -2,7 +2,7 @@
 title: Co&#39;s nowego w dziedzinie projektowania
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-devops-techdebt
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - what's new [VIsual Studio], architecture and modeling
@@ -13,12 +13,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d1a6f89f8fe99895bd445e0ec7f248c2cc83a7ca
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 148da7602d8198a4c85e2a7fbee2107b4e9662d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873657"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039062"
 ---
 # <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Co to jest nowego w dziedzinie projektowania w programie Visual Studio w programie Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Ta wersja programu Visual Studio obejmuje następujące ulepszenia ułatwiające
 
 - **Eksplorator architektury**. Do tworzenia diagramów nie jest już służy Eksploratora architektury. Ale nadal można korzystać z Eksploratora rozwiązań.
 
-##  <a name="VersionSupport"></a> Obsługa wersji narzędzia architektury i modelowania
+## <a name="VersionSupport"></a> Obsługa wersji narzędzia architektury i modelowania
 
 Program Visual Studio 2015 jest dostępna w wielu wersjach. Nie wszystkie te zapewniają obsługę architekturę i narzędzia do modelowania. W poniższej tabeli przedstawiono Dostępność poszczególnych narzędzi.
 

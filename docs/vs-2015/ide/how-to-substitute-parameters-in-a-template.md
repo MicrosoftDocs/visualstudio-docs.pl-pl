@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97a8a99e160e4d488e44cc9e084789fe3a005eb1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: be004820967f85de41b11c38031722b87a5af375
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780294"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039417"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Instrukcje: Zastępowanie parametrów w szablonie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Można zastąpić parametry szablonu, takich jak nazwy klasy, a przestrzenie naz
   
 #### <a name="to-use-a-parameter-to-replace-namespace-name-with-the-project-name"></a>Aby użyć parametru zastąpić nazwę przestrzeni nazw nazwa projektu  
   
-1.  Wstaw parametr w co najmniej jeden z plików kodu w szablonie. Na przykład:  
+1. Wstaw parametr w co najmniej jeden z plików kodu w szablonie. Na przykład:  
   
     ```  
     namespace $safeprojectname$  
@@ -38,9 +38,9 @@ Można zastąpić parametry szablonu, takich jak nazwy klasy, a przestrzenie naz
     > [!NOTE]
     >  Parametry szablonu są zapisywane w formacie $*parametru*$.  
   
-2.  W pliku .vstemplate szablonu zlokalizuj `ProjectItem` element, który zawiera ten plik.  
+2. W pliku .vstemplate szablonu zlokalizuj `ProjectItem` element, który zawiera ten plik.  
   
-3.  Ustaw `ReplaceParameters` atrybutu `true` dla `ProjectItem` elementu. Na przykład:  
+3. Ustaw `ReplaceParameters` atrybutu `true` dla `ProjectItem` elementu. Na przykład:  
   
     ```  
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>  

@@ -19,12 +19,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f5a1174f96e34773aac524562d6f62514e92ba5e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 58e5f0e9154137097a94637799966ee94818fca4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705578"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047050"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Instrukcje: Konfigurowanie funkcji zaufanego monitowania technologii ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,19 +56,19 @@ Monit o udzielenie zaufania ClickOnce do kontroli można skonfigurować, czy uż
   
 #### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Aby włączyć monit o udzielenie zaufania ClickOnce za pomocą Edytora rejestru  
   
-1.  Otwórz Edytor rejestru:  
+1. Otwórz Edytor rejestru:  
   
-    1.  Kliknij przycisk **Start**, a następnie kliknij przycisk **Uruchom**.  
+    1. Kliknij przycisk **Start**, a następnie kliknij przycisk **Uruchom**.  
   
-    2.  W **Otwórz** wpisz `regedit` (lub `regedit32` na Windows 32-bitowy), a następnie kliknij przycisk **OK**.  
+    2. W **Otwórz** wpisz `regedit` (lub `regedit32` na Windows 32-bitowy), a następnie kliknij przycisk **OK**.  
   
-2.  Znajdź następujący klucz rejestru:  
+2. Znajdź następujący klucz rejestru:  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      Jeśli klucz nie istnieje, należy go utworzyć.  
   
-3.  Dodaj poniższe podklucze jako **wartość ciągu**, jeśli ich jeszcze nie istnieje, z powiązanymi wartościami, które są wyświetlane w poniższej tabeli.  
+3. Dodaj poniższe podklucze jako **wartość ciągu**, jeśli ich jeszcze nie istnieje, z powiązanymi wartościami, które są wyświetlane w poniższej tabeli.  
   
     |Ciąg wartość podklucza|Wartość|  
     |-------------------------|-----------|  
@@ -82,9 +82,9 @@ Monit o udzielenie zaufania ClickOnce do kontroli można skonfigurować, czy uż
   
 #### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>Aby programowo włączyć monit o udzielenie zaufania ClickOnce  
   
-1.  Utwórz aplikację konsoli języka Visual Basic lub Visual C# w programie Visual Studio.  
+1. Utwórz aplikację konsoli języka Visual Basic lub Visual C# w programie Visual Studio.  
   
-2.  Otwórz plik Program.vb lub pliku Program.cs do edycji i Dodaj następujący kod.  
+2. Otwórz plik Program.vb lub pliku Program.cs do edycji i Dodaj następujący kod.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -108,26 +108,26 @@ Monit o udzielenie zaufania ClickOnce do kontroli można skonfigurować, czy uż
     key.Close();  
     ```  
   
-3.  Skompiluj i uruchom aplikację.  
+3. Skompiluj i uruchom aplikację.  
   
 ## <a name="restricting-the-clickonce-trust-prompt"></a>Ograniczanie monit o udzielenie zaufania ClickOnce  
  Ograniczyć monit o udzielenie zaufania rozwiązania muszą być podpisane za pomocą jeszcze opracowywana tożsamość, zanim użytkownicy będą monitowani o decyzji dotyczącej zaufania certyfikatom Authenticode.  
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Aby ograniczyć monit o udzielenie zaufania ClickOnce za pomocą Edytora rejestru  
   
-1.  Otwórz Edytor rejestru:  
+1. Otwórz Edytor rejestru:  
   
-    1.  Kliknij przycisk **Start**, a następnie kliknij przycisk **Uruchom**.  
+    1. Kliknij przycisk **Start**, a następnie kliknij przycisk **Uruchom**.  
   
-    2.  W **Otwórz** wpisz `regedit` (lub `regedit32` na Windows 32-bitowy), a następnie kliknij przycisk **OK**.  
+    2. W **Otwórz** wpisz `regedit` (lub `regedit32` na Windows 32-bitowy), a następnie kliknij przycisk **OK**.  
   
-2.  Znajdź następujący klucz rejestru:  
+2. Znajdź następujący klucz rejestru:  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      Jeśli klucz nie istnieje, należy go utworzyć.  
   
-3.  Dodaj poniższe podklucze jako **wartość ciągu**, jeśli ich jeszcze nie istnieje, z powiązanymi wartościami, które są wyświetlane w poniższej tabeli.  
+3. Dodaj poniższe podklucze jako **wartość ciągu**, jeśli ich jeszcze nie istnieje, z powiązanymi wartościami, które są wyświetlane w poniższej tabeli.  
   
     |Ciąg wartość podklucza|Wartość|  
     |-------------------------|-----------|  
@@ -139,9 +139,9 @@ Monit o udzielenie zaufania ClickOnce do kontroli można skonfigurować, czy uż
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>Aby ograniczyć programowo monit o udzielenie zaufania ClickOnce  
   
-1.  Utwórz aplikację konsoli języka Visual Basic lub Visual C# w programie Visual Studio.  
+1. Utwórz aplikację konsoli języka Visual Basic lub Visual C# w programie Visual Studio.  
   
-2.  Otwórz plik Program.vb lub pliku Program.cs do edycji i Dodaj następujący kod.  
+2. Otwórz plik Program.vb lub pliku Program.cs do edycji i Dodaj następujący kod.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -165,26 +165,26 @@ Monit o udzielenie zaufania ClickOnce do kontroli można skonfigurować, czy uż
     key.Close();  
     ```  
   
-3.  Skompiluj i uruchom aplikację.  
+3. Skompiluj i uruchom aplikację.  
   
 ## <a name="disabling-the-clickonce-trust-prompt"></a>Wyłączenie wiersza zaufania ClickOnce  
  Monit o udzielenie zaufania można wyłączyć, tak aby użytkownicy końcowi nie otrzymują możliwość zainstalowania rozwiązania, które nie są już zaufane w swoich zasad zabezpieczeń.  
   
 #### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Aby wyłączyć monit o udzielenie zaufania ClickOnce za pomocą Edytora rejestru  
   
-1.  Otwórz Edytor rejestru:  
+1. Otwórz Edytor rejestru:  
   
-    1.  Kliknij przycisk **Start**, a następnie kliknij przycisk **Uruchom**.  
+    1. Kliknij przycisk **Start**, a następnie kliknij przycisk **Uruchom**.  
   
-    2.  W **Otwórz** wpisz `regedit` (lub `regedit32` na Windows 32-bitowy), a następnie kliknij przycisk **OK**.  
+    2. W **Otwórz** wpisz `regedit` (lub `regedit32` na Windows 32-bitowy), a następnie kliknij przycisk **OK**.  
   
-2.  Znajdź następujący klucz rejestru:  
+2. Znajdź następujący klucz rejestru:  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      Jeśli klucz nie istnieje, należy go utworzyć.  
   
-3.  Dodaj poniższe podklucze jako **wartość ciągu**, jeśli ich jeszcze nie istnieje, z powiązanymi wartościami, które są wyświetlane w poniższej tabeli.  
+3. Dodaj poniższe podklucze jako **wartość ciągu**, jeśli ich jeszcze nie istnieje, z powiązanymi wartościami, które są wyświetlane w poniższej tabeli.  
   
     |Ciąg wartość podklucza|Wartość|  
     |-------------------------|-----------|  
@@ -196,9 +196,9 @@ Monit o udzielenie zaufania ClickOnce do kontroli można skonfigurować, czy uż
   
 #### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>Aby wyłączyć programowo monit o udzielenie zaufania ClickOnce  
   
-1.  Utwórz aplikację konsoli języka Visual Basic lub Visual C# w programie Visual Studio.  
+1. Utwórz aplikację konsoli języka Visual Basic lub Visual C# w programie Visual Studio.  
   
-2.  Otwórz plik Program.vb lub pliku Program.cs do edycji i Dodaj następujący kod.  
+2. Otwórz plik Program.vb lub pliku Program.cs do edycji i Dodaj następujący kod.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -223,7 +223,7 @@ Monit o udzielenie zaufania ClickOnce do kontroli można skonfigurować, czy uż
   
     ```  
   
-3.  Skompiluj i uruchom aplikację.  
+3. Skompiluj i uruchom aplikację.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)   

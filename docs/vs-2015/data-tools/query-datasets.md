@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1626c9c027b12d6a8df8d3169e7d79cefba66006
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c392323905676706835a94bd86fcd53e3f6b8cc7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659626"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054784"
 ---
 # <a name="query-datasets"></a>Tworzenie zapytań względem zestawów danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Aby wyszukać konkretne rekordy w zestawie danych, użyj metody FindBy DataTable
   
 #### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>Aby znaleźć wiersza w zestawie danych wpisywanych za pomocą wartości klucza podstawowego  
   
--   Aby zlokalizować wiersza, należy wywołać silnie typizowaną `FindBy` metody, która używa klucza podstawowego tabeli.  
+- Aby zlokalizować wiersza, należy wywołać silnie typizowaną `FindBy` metody, która używa klucza podstawowego tabeli.  
   
      W poniższym przykładzie `CustomerID` kolumna jest klucz podstawowy `Customers` tabeli. Oznacza to, że wygenerowany `FindBy` metodą jest `FindByCustomerID`. W przykładzie pokazano, jak przypisać określonego <xref:System.Data.DataRow> do zmiennej za pomocą wygenerowany `FindBy` metody.  
   
@@ -42,7 +42,7 @@ Aby wyszukać konkretne rekordy w zestawie danych, użyj metody FindBy DataTable
   
 #### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>Aby odnaleźć wiersza nietypizowany zestaw danych o wartości klucza podstawowego  
   
--   Wywołaj <xref:System.Data.DataRowCollection.Find%2A> metody <xref:System.Data.DataRowCollection> kolekcji, przekazując klucz podstawowy, jako parametr.  
+- Wywołaj <xref:System.Data.DataRowCollection.Find%2A> metody <xref:System.Data.DataRowCollection> kolekcji, przekazując klucz podstawowy, jako parametr.  
   
      Poniższy przykład pokazuje sposób deklarowania nowego wiersza, o nazwie `foundRow` i przypisz mu wartość zwracaną przez <xref:System.Data.DataRowCollection.Find%2A> metody. Jeśli zostanie znaleziony klucza podstawowego, zawartość 1. indeks kolumny są wyświetlane w oknie komunikatu.  
   
@@ -53,7 +53,7 @@ Aby wyszukać konkretne rekordy w zestawie danych, użyj metody FindBy DataTable
   
 #### <a name="to-find-rows-based-on-the-values-in-any-column"></a>Aby znaleźć wiersze na podstawie wartości w dowolnej kolumnie  
   
--   Tabele danych są tworzone za pomocą<xref:System.Data.DataTable.Select%2A> metody, która zwraca tablicę <xref:System.Data.DataRow>s oparte na wyrażeniu przekazany do <xref:System.Data.DataTable.Select%2A> metody. Aby uzyskać więcej informacji na temat tworzenia prawidłowych wyrażeń, zobacz sekcję "Składni wyrażenia" strony <xref:System.Data.DataColumn.Expression%2A> właściwości.  
+- Tabele danych są tworzone za pomocą<xref:System.Data.DataTable.Select%2A> metody, która zwraca tablicę <xref:System.Data.DataRow>s oparte na wyrażeniu przekazany do <xref:System.Data.DataTable.Select%2A> metody. Aby uzyskać więcej informacji na temat tworzenia prawidłowych wyrażeń, zobacz sekcję "Składni wyrażenia" strony <xref:System.Data.DataColumn.Expression%2A> właściwości.  
   
      Poniższy przykład pokazuje, jak używać <xref:System.Data.DataTable.Select%2A> metody <xref:System.Data.DataTable> zlokalizować określonych wierszy.  
   
@@ -82,14 +82,14 @@ Ponadto obie tabele muszą zostać wypełnione danymi dla rekordów do zwróceni
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Aby powrócić podrzędne rekordy wybrany rekord nadrzędny  
   
--   Wywołaj <xref:System.Data.DataRow.GetChildRows%2A> metody określonej `Customers` danych wiersza, a następnie zwraca tablicę wiersze z `Orders` tabeli:  
+- Wywołaj <xref:System.Data.DataRow.GetChildRows%2A> metody określonej `Customers` danych wiersza, a następnie zwraca tablicę wiersze z `Orders` tabeli:  
   
      [!code-csharp[VbRaddataDatasets#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#6)]
      [!code-vb[VbRaddataDatasets#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#6)]  
   
 #### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>Aby przywrócić rekord nadrzędny wybranego podrzędnego rekordu  
   
--   Wywołaj <xref:System.Data.DataRow.GetParentRow%2A> metody określonej `Orders` wiersz danych i zwrócenia pojedynczy wiersz z tabeli `Customers` tabeli:  
+- Wywołaj <xref:System.Data.DataRow.GetParentRow%2A> metody określonej `Orders` wiersz danych i zwrócenia pojedynczy wiersz z tabeli `Customers` tabeli:  
   
      [!code-csharp[VbRaddataDatasets#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#7)]
      [!code-vb[VbRaddataDatasets#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#7)]

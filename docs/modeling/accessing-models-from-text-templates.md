@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a145907ad76016802e0547fc251b929b913253d5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: afb835c883050064d96c32c80de75d58299892f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945680"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040693"
 ---
 # <a name="accessing-models-from-text-templates"></a>Uzyskiwanie dostępu do modeli z poziomu szablonów tekstu
 Przy użyciu szablonów tekstowych, można utworzyć raport plików, pliki kodu źródłowego i inne pliki tekstowe, które są oparte na modelach języka specyficznego dla domeny. Aby uzyskać podstawowe informacje na temat szablonów tekstu, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md). Szablonów tekstowych będzie działać w trybie doświadczalnym podczas debugowania DSL, a także będą działać na komputerze, na którym wdrożono język DSL.
@@ -75,9 +75,9 @@ Here is a list of elements in the model:
 
  Procesor dyrektywy DSL wykonuje dwa główne zadania:
 
--   Wstawia skutecznie dyrektywach zestawu i importowania do szablonu, który odwołuje się do DSL. Dzięki temu można użyć klasy usługi domeny w kod szablonu.
+- Wstawia skutecznie dyrektywach zestawu i importowania do szablonu, który odwołuje się do DSL. Dzięki temu można użyć klasy usługi domeny w kod szablonu.
 
--   Ładuje plik który określisz w `requires` parametru i ustawia właściwość `this` odwołujący się do elementu głównego załadować modelu.
+- Ładuje plik który określisz w `requires` parametru i ustawia właściwość `this` odwołujący się do elementu głównego załadować modelu.
 
 ## <a name="validating-the-model-before-running-the-template"></a>Sprawdzanie poprawności modelu przed uruchomieniem tego szablonu
  Może spowodować modelu zostanie wykonane sprawdzanie poprawności, zanim zostanie wykonany szablonu.

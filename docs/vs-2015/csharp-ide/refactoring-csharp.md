@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78ac19ac0e992b51affdbf6a0e6e3268ddfa52d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca7a85bf7ace1f9aeb0e47e031cda5f793df2331
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785467"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046321"
 ---
 # <a name="refactoring-c"></a>Refaktoryzacja (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ Refaktoryzacja to proces po została zapisana przez zmianę wewnętrznej struktu
   
  Visual C# zawiera następujące polecenia refaktoryzacji **Refactoring** menu:  
   
--   [Refaktoryzacja wyodrębniania metody (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
+- [Refaktoryzacja wyodrębniania metody (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
   
--   [Refaktoryzacja zmiany nazwy (C#)](../csharp-ide/rename-refactoring-csharp.md)  
+- [Refaktoryzacja zmiany nazwy (C#)](../csharp-ide/rename-refactoring-csharp.md)  
   
--   [Refaktoryzacja hermetyzowania pola (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
+- [Refaktoryzacja hermetyzowania pola (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
   
--   [Refaktoryzacja wyodrębniania interfejsu (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
+- [Refaktoryzacja wyodrębniania interfejsu (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
   
--   [Refaktoryzacja usuwania parametrów (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
+- [Refaktoryzacja usuwania parametrów (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
   
--   [Refaktoryzacja zmiany kolejności parametrów (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
+- [Refaktoryzacja zmiany kolejności parametrów (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
   
 ## <a name="multi-project-refactoring"></a>Refaktoryzacja wielu projektów  
  Program Visual Studio obsługuje wielu projektów, Refaktoryzacja dla projektów, które znajdują się w tym samym rozwiązaniu. Wszystkie operacje refaktoryzacji, które poprawić odwołań między plikami Popraw te odwołania we wszystkich projektach tego samego języka. Działa to w przypadku dowolnego odwołania projekt projekt. Na przykład, jeśli masz aplikację konsolową, która odwołuje się do biblioteki klas, po zmianie nazwy typu klasy biblioteki (przy użyciu `Rename` operacja refaktoryzacji), odwołania do typu biblioteki klas w aplikacji konsolowej również są aktualizowane.  
@@ -108,4 +108,4 @@ class Example
   
 ## <a name="see-also"></a>Zobacz też  
  [Używanie środowiska programistycznego Visual Studio dla języka C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
- [Instrukcje: Przywróć C# Refaktoryzowanych wstawek kodu](../ide/how-to-restore-csharp-refactoring-snippets.md)
+ [Instrukcje: Przywracanie refaktoryzowanych fragmentów kodu C#](../ide/how-to-restore-csharp-refactoring-snippets.md)

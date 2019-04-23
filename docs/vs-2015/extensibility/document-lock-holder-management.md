@@ -10,12 +10,12 @@ ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 260f82822c575ba2476541c889608e9cdcba8ed0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73c6151b5c02cb81a10c2725091c16457db70e33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779656"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056825"
 ---
 # <a name="document-lock-holder-management"></a>Zarządzanie właścicielem blokady dokumentu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ Tabela systemem dokumentu (Normalizacją) przechowuje liczbę otwartych dokument
 ### <a name="file-b-is-opened-by-a-different-editor"></a>Plik "b" jest otwarty przez inny edytor  
  W przypadku, gdy plik "b" jest już otwarty przez Edytor "B", gdy spróbuje go otworzyć w edytorze "A", istnieją dwa scenariusze oddzielnych do obsługi:  
   
--   Jeśli plik "b" jest otwarty w edytorze zgodne, konieczne jest posiadanie edytora "A" Zarejestruj blokadę edycji dokumentów na temat korzystania z pliku "b" <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.RegisterDocumentLockHolder%2A> metody. Po wykonaniu czynności modyfikowania pliku "b" w edytorze "A", dokument wyrejestrować Edytuj przy użyciu blokady <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnregisterDocumentLockHolder%2A> metody.  
+- Jeśli plik "b" jest otwarty w edytorze zgodne, konieczne jest posiadanie edytora "A" Zarejestruj blokadę edycji dokumentów na temat korzystania z pliku "b" <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.RegisterDocumentLockHolder%2A> metody. Po wykonaniu czynności modyfikowania pliku "b" w edytorze "A", dokument wyrejestrować Edytuj przy użyciu blokady <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnregisterDocumentLockHolder%2A> metody.  
   
--   Jeśli plik "b" jest otwarty w sposób niezgodny, można albo pozwolić próba otwarcia pliku "b", przez Edytor "" Niepowodzenie, lub można pozwolić, aby widok skojarzone z edytorem "A" częściowo otworzyć i wyświetlić odpowiedni komunikat o błędzie. Komunikat o błędzie powinien Poinstruuj użytkownika, aby zamknąć pliku "b" w niezgodnym edytorze, a następnie ponownie otwórz plik "a" przy użyciu edytora "A". Możesz również wdrożyć [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] metoda <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable2.QueryCloseRunningDocument%2A> na monitowanie użytkownika można zamknąć pliku "b", który jest otwarty w niezgodnym edytorze. Jeśli użytkownik zamknie pliku "b", otwierania pliku "" w edytorze "A" nadal normalnie.  
+- Jeśli plik "b" jest otwarty w sposób niezgodny, można albo pozwolić próba otwarcia pliku "b", przez Edytor "" Niepowodzenie, lub można pozwolić, aby widok skojarzone z edytorem "A" częściowo otworzyć i wyświetlić odpowiedni komunikat o błędzie. Komunikat o błędzie powinien Poinstruuj użytkownika, aby zamknąć pliku "b" w niezgodnym edytorze, a następnie ponownie otwórz plik "a" przy użyciu edytora "A". Możesz również wdrożyć [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] metoda <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable2.QueryCloseRunningDocument%2A> na monitowanie użytkownika można zamknąć pliku "b", który jest otwarty w niezgodnym edytorze. Jeśli użytkownik zamknie pliku "b", otwierania pliku "" w edytorze "A" nadal normalnie.  
   
 ## <a name="additional-document-edit-lock-considerations"></a>Zagadnienia dotyczące blokowania edycji dodatkową dokumentów  
  Możesz uzyskać różne zachowanie, jeśli edytor "A" jest tylko edytor, który zawiera dokument, Edytuj blokadę dla pliku "b", niż w przypadku, jeśli edytor "B" również zawiera dokument Edytuj blokadę dla pliku "b". W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], **projektanta klas** jest przykładem projektanta wizualnego, który nie posiada blokady edycji w pliku skojarzonego kodu. Oznacza to jeśli użytkownik ma diagramu klas, Otwórz w widoku Projekt, a jednocześnie można otworzyć pliku skojarzonego kodu, a użytkownik modyfikuje plik kodu, ale nie do zapisania zmian, zmiany są również utraci plik diagramu klasy (.cd). Jeśli **projektanta klas** ma tylko dokumentu edytować blokady o plik kodu, użytkownik nie będzie monitowany zapisanie zmian podczas zamykania pliku kodu. Środowisko IDE z monitem o zapisanie zmian tylko w przypadku, gdy użytkownik zamknie **projektanta klas**. Zapisano zmiany są odzwierciedlane w obu plikach. Jeśli oba **projektanta klas** i Edytor kodu w pliku posiadanych blokad edycji dokumentu w pliku kodu, a następnie użytkownik jest monitowany zapisywane podczas zamykania pliku z kodem lub formularzu. W tym momencie zapisane zmiany są odzwierciedlane w formularzu i pliku kodu. Aby uzyskać więcej informacji dotyczących diagramów klas, zobacz [Praca z diagramami klas (Projektant klas)](../ide/working-with-class-diagrams-class-designer.md).  

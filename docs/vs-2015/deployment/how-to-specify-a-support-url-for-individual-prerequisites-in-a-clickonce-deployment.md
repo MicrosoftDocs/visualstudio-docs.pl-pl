@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12d85a05e8210e292369f4c3a97fbb85dc48d821
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f272f1b7a8fc970ab616ba1c02e815cbb6ecb568
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772741"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059139"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Instrukcje: Określ adres URL pomocy technicznej dla indywidualnych wstępnie wymaganych składników wdrożenia ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pewne wymagania wstępn
   
 ### <a name="specifying-a-support-url-for-an-individual-prerequisite"></a>Określanie adresu URL pomocy technicznej dla indywidualnych wstępnie wymaganego składnika  
   
-1.  Otwórz manifest aplikacji (plik .manifest) dla Twojego [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji w edytorze tekstów.  
+1. Otwórz manifest aplikacji (plik .manifest) dla Twojego [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji w edytorze tekstów.  
   
-2.  Wstępnie wymaganego składnika systemu operacyjnego można dodać `supportUrl` atrybutu `dependentOS` elementu:  
+2. Wstępnie wymaganego składnika systemu operacyjnego można dodać `supportUrl` atrybutu `dependentOS` elementu:  
   
     ```  
      <dependency>  
@@ -48,7 +48,7 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pewne wymagania wstępn
       </dependency>  
     ```  
   
-3.  Wymaganiem wstępnym dla określonej wersji środowiska uruchomieniowego języka wspólnego, Dodaj `supportUrl` atrybutu `dependentAssembly` wpis, który określa wspólne zależności środowiska uruchomieniowego języka:  
+3. Wymaganiem wstępnym dla określonej wersji środowiska uruchomieniowego języka wspólnego, Dodaj `supportUrl` atrybutu `dependentAssembly` wpis, który określa wspólne zależności środowiska uruchomieniowego języka:  
   
     ```  
       <dependency>  
@@ -58,7 +58,7 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pewne wymagania wstępn
       </dependency>  
     ```  
   
-4.  Wymaganiem wstępnym dla zestawu, który musi być wstępnie zainstalowane w globalnej pamięci podręcznej, można ustawić `supportUrl` dla `dependentAssembly` element, który określa wymagany zestaw:  
+4. Wymaganiem wstępnym dla zestawu, który musi być wstępnie zainstalowane w globalnej pamięci podręcznej, można ustawić `supportUrl` dla `dependentAssembly` element, który określa wymagany zestaw:  
   
     ```  
       <dependency>  
@@ -68,9 +68,9 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pewne wymagania wstępn
       </dependency>  
     ```  
   
-5.  Opcjonalna. Dla aplikacji przeznaczonych dla środowiska .NET Framework 4, otwarcie manifestu wdrażania (pliku .application) dla Twojego [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji w edytorze tekstów.  
+5. Opcjonalna. Dla aplikacji przeznaczonych dla środowiska .NET Framework 4, otwarcie manifestu wdrażania (pliku .application) dla Twojego [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji w edytorze tekstów.  
   
-6.  Wymaganie wstępne platformy .NET Framework 4, można dodać `supportUrl` atrybutu `compatibleFrameworks` elementu:  
+6. Wymaganie wstępne platformy .NET Framework 4, można dodać `supportUrl` atrybutu `compatibleFrameworks` elementu:  
   
     ```  
     <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">  
@@ -79,7 +79,7 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pewne wymagania wstępn
     </compatibleFrameworks>  
     ```  
   
-7.  Po ręcznie zmienione manifest aplikacji należy ponownie podpisać manifest aplikacji za pomocą certyfikatu cyfrowego, a następnie aktualizacji i ponowne podpisanie pliku manifestu wdrożenia. Należy użyć Mage.exe lub MageUI.exe SDK narzędzi do wykonywania tego zadania, jak ponownie wygenerować te pliki przy użyciu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Usuwa ręczne zmiany. Aby uzyskać więcej informacji na temat korzystania z Mage.exe w celu ponownego podpisania manifestów, zobacz [jak: Ponowne podpisywanie aplikacji i manifestów wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+7. Po ręcznie zmienione manifest aplikacji należy ponownie podpisać manifest aplikacji za pomocą certyfikatu cyfrowego, a następnie aktualizacji i ponowne podpisanie pliku manifestu wdrożenia. Należy użyć Mage.exe lub MageUI.exe SDK narzędzi do wykonywania tego zadania, jak ponownie wygenerować te pliki przy użyciu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Usuwa ręczne zmiany. Aby uzyskać więcej informacji na temat korzystania z Mage.exe w celu ponownego podpisania manifestów, zobacz [jak: Ponowne podpisywanie aplikacji i manifestów wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="net-framework-security"></a>Zabezpieczenia.NET Framework  
  Adres URL pomocy technicznej nie jest wyświetlana w oknie dialogowym, jeśli aplikacja jest oznaczony do uruchamiania w trybie częściowego zaufania.  

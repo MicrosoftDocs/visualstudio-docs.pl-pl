@@ -21,12 +21,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1a75386844e3653a4dbf791980737f8d339072c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2e223831b30f784094a2affa5cebb314cc6e997f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756932"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059711"
 ---
 # <a name="how-to-install-a-visualizer"></a>Instrukcje: Instalacja programu Visualizer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Po utworzeniu wizualizatora, należy zainstalować wizualizatora tak, że będzi
   
 ### <a name="to-install-a-visualizer"></a>Aby instalacja programu visualizer  
   
-1.  Znajdź bibliotekę DLL, która zawiera visualizer, który został wcześniej utworzony.  
+1. Znajdź bibliotekę DLL, która zawiera visualizer, który został wcześniej utworzony.  
   
-2.  Kopiuj bibliotekę DLL do jednej z następujących lokalizacji:  
+2. Kopiuj bibliotekę DLL do jednej z następujących lokalizacji:  
   
-    -   *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`  
+    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`  
   
-    -   `My Documents\` *VisualStudioVersion* `\Visualizers`  
+    - `My Documents\` *VisualStudioVersion* `\Visualizers`  
   
-3.  Jeśli chcesz użyć zarządzany Wizualizator dla zdalnego debugowania, należy skopiować bibliotekę DLL do tej samej ścieżki na komputerze zdalnym.  
+3. Jeśli chcesz użyć zarządzany Wizualizator dla zdalnego debugowania, należy skopiować bibliotekę DLL do tej samej ścieżki na komputerze zdalnym.  
   
-4.  Uruchom ponownie sesję debugowania.  
+4. Uruchom ponownie sesję debugowania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie niestandardowych Wizualizatorów](../debugger/create-custom-visualizers-of-data.md)   

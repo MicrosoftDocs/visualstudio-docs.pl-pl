@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6002ed1748a5848e43628c88ec0395a0d4053ed
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 829ceea8f4acf0f884e3345e05053d368489d9ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712024"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049025"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Wprowadzenie do usługi i Edytor rozszerzenia językowe
 Rozszerzenia edytora służy do dodawania funkcji języka, np. Tworzenie konspektu, parowanie nawiasów klamrowych, funkcja IntelliSense i żarówki, język programowania lub dowolnego typu zawartości. Można również dostosować wygląd i zachowanie edytora programu Visual Studio, na przykład tekst kolorowanie, marginesy, zakończeń i inne elementy wizualne. Można również zdefiniować własny typ zawartości i określ wygląd i zachowanie widoki tekstowe, w których zawartość zostanie wyświetlona.
@@ -82,9 +82,9 @@ Rozszerzenia edytora służy do dodawania funkcji języka, np. Tworzenie konspek
 
  Można również utworzyć edytora składników MEF z rozszerzeniem pakiet rozszerzeń Visual Studio. Zobacz poniższe poradniki, aby uzyskać szczegółowe informacje:
 
--   [Przewodnik: Używanie polecenia programu PowerShell z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)
+- [Przewodnik: Używanie polecenia programu PowerShell z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)
 
--   [Przewodnik: Używanie klawisza skrótu z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)
+- [Przewodnik: Używanie klawisza skrótu z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)
 
 ## <a name="see-also"></a>Zobacz także
 - [Punkty rozszerzenia usługi oraz edytora języka](../extensibility/language-service-and-editor-extension-points.md)

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4d912b508e6b34ddf4220ce29e4041554b4f998
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 87165389e1b5ef6c697b59c0b7542e4f577f49fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659660"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060010"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Instrukcje: Instrument statycznie skompilowanej aplikacji sieci web ASP.NET i pamięci zbierania danych przy użyciu wiersza polecenia profilera
 W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia narzędzi Profilujących do Instrumentacji wstępnie skompilowanych [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] składnika sieci web lub witryny sieci web i zbieranie alokacji pamięci .NET, okres istnienia obiektów i szczegółowych danych o chronometrażu.
@@ -43,9 +43,9 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
 
     **VSPerfClrEnv /globaltracegclife**
 
-   -   **/globaltracegc** zbiera dane alokacji pamięci .NET i chronometrażu.
+   - **/globaltracegc** zbiera dane alokacji pamięci .NET i chronometrażu.
 
-   -   **/globaltracegclife** zbiera dane alokacji pamięci .NET, okresu istnienia obiektu i szczegółowych danych o chronometrażu.
+   - **/globaltracegclife** zbiera dane alokacji pamięci .NET, okresu istnienia obiektu i szczegółowych danych o chronometrażu.
 
 4. Uruchom ponownie komputer.
 
@@ -80,7 +80,7 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
 
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych
 
--   Następujące pary opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
+- Następujące pary opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
 
     |Opcja|Opis|
     |------------|-----------------|

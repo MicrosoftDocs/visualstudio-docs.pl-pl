@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66a25c56e50db0caecf4aa7a314be529e2caba12
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9dda948921c702367859afe32ad75a7998460587
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793437"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048570"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Instrukcje: Tworzenie cieniowania tekstury podstawowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ W tym dokumencie przedstawiono sposób umożliwia tworzenie cieniowania tekstury
   
  Ten dokument przedstawia te działania:  
   
--   Usuwanie węzłów z wykresu programu do cieniowania  
+- Usuwanie węzłów z wykresu programu do cieniowania  
   
--   Dodawanie węzłów do wykresu  
+- Dodawanie węzłów do wykresu  
   
--   Ustawianie parametrów programu do cieniowania  
+- Ustawianie parametrów programu do cieniowania  
   
--   Ustawienie parametru widoczności  
+- Ustawienie parametru widoczności  
   
--   Łączenie z węzłami  
+- Łączenie z węzłami  
   
 ## <a name="creating-a-basic-texture-shader"></a>Tworzenie cieniowania tekstury podstawowej  
  Podstawowa, jednego tekstury modułu cieniującego można zaimplementować, pisząc wartości kolorów i alfa próbki tekstury bezpośrednio na kolor końcowych danych wyjściowych.  

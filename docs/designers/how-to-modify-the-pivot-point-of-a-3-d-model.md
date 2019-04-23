@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ad14241f5247e7ce16e84cfe26675bde45cb0de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1b1baa6a42d0874cdefaa8cfb781f66e864d82b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945485"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055278"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Instrukcje: Modyfikowanie punktu obrotu modelu 3D
 
@@ -25,11 +25,11 @@ Pochodzenie modelu 3D można zmienić, modyfikując jego punktu obrotu.
 
 Upewnij się, że **właściwości** okna i **przybornika** są wyświetlane.
 
-1.  Zacznij od istniejącego modelu 3D, takiego jak opisany w [jak: Tworzenie podstawowego modelu 3D](../designers/how-to-create-a-basic-3-d-model.md).
+1. Zacznij od istniejącego modelu 3D, takiego jak opisany w [jak: Tworzenie podstawowego modelu 3D](../designers/how-to-create-a-basic-3-d-model.md).
 
-2.  Wprowadź tryb obrotu. Na **tryb edytora modelu** narzędzi, wybierz **tryb obrotu** przycisk, aby uaktywnić tryb obrotu. Zostanie wyświetlone okno z całym **tryb obrotu** przycisk, aby wskazać, że edytor modelu jest teraz tryb obrotu. W tryb obrotu operacji, takich jak tłumaczenia wpływają na punkt obrotu obiektu zamiast struktury obiektów w przestrzeni świata.
+2. Wprowadź tryb obrotu. Na **tryb edytora modelu** narzędzi, wybierz **tryb obrotu** przycisk, aby uaktywnić tryb obrotu. Zostanie wyświetlone okno z całym **tryb obrotu** przycisk, aby wskazać, że edytor modelu jest teraz tryb obrotu. W tryb obrotu operacji, takich jak tłumaczenia wpływają na punkt obrotu obiektu zamiast struktury obiektów w przestrzeni świata.
 
-3.  Modyfikowanie punktu obrotu obiektu. W **wybierz** tryb, wybierz obiekt, a następnie na **przeglądarka modelu** narzędzi, wybierz **Translate** narzędzia. Pole, który reprezentuje punkt obrotu jest wyświetlany na powierzchni projektowej. Przenieś pole, aby zmodyfikować punkt obrotu obiektu.
+3. Modyfikowanie punktu obrotu obiektu. W **wybierz** tryb, wybierz obiekt, a następnie na **przeglądarka modelu** narzędzi, wybierz **Translate** narzędzia. Pole, który reprezentuje punkt obrotu jest wyświetlany na powierzchni projektowej. Przenieś pole, aby zmodyfikować punkt obrotu obiektu.
 
      Przenosząc pole, możesz przenieść punkt obrotu we wszystkich trzech wymiarach. Do translacji punktu obrotu wzdłuż osi, Przenieś strzałkę, która odnosi się do tej osi. Strzałki i pole Zmień kolor żółty, aby wskazać osi, który jest zależna od tłumaczenia.
 

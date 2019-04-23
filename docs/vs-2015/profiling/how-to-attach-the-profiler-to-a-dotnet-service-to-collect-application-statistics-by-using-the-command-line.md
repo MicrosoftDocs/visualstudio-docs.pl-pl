@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7dac95cd91e6dd2ba20b9cdee216aeedb8d8c39a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ca0b64b112e149404b2ee8861103b25fd6780ccc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668421"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040253"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Instrukcje: Dołącz Profiler do usługi .NET w celu zbierania statystyk aplikacji przy użyciu wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
     **VSPerfClrEnv /globalsampleon** [**/samplelineoff**]  
 
-   -   **/globalsampleon** umożliwia pobieranie próbek.  
+   - **/globalsampleon** umożliwia pobieranie próbek.  
 
-   -   **/samplelineoff** wyłącza przypisanie zebranych danych do określonego źródła wierszy kodu. Gdy ta opcja jest określona, dane są przypisane tylko do funkcji.  
+   - **/samplelineoff** wyłącza przypisanie zebranych danych do określonego źródła wierszy kodu. Gdy ta opcja jest określona, dane są przypisane tylko do funkcji.  
 
 4. Uruchom ponownie komputer.  
 
@@ -90,14 +90,14 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md
    |[/ sys](../profiling/sys-vsperfcmd.md)[`:``Interval`]|Zamienia zdarzenie próbkowania na wywołania systemowe z procesu do jądra systemu operacyjnego (syscalls). Jeśli `Interval` zostanie określona, ustawia liczbę wywołań pomiędzy próbkami. Domyślna to 10.|  
    |[/ Licznik](../profiling/counter.md) **:** `Config`|Zamienia zdarzenie próbkowania i interwał licznik wydajności procesora oraz interwał określony w `Config`.|  
 
-   -   **targetclr:** `Version` Określa wersję środowiska uruchomieniowego języka wspólnego (CLR) do profilu, gdy więcej niż jedna wersja środowiska wykonawczego jest załadowana w aplikacji. Opcjonalna.  
+   - **targetclr:** `Version` Określa wersję środowiska uruchomieniowego języka wspólnego (CLR) do profilu, gdy więcej niż jedna wersja środowiska wykonawczego jest załadowana w aplikacji. Opcjonalna.  
 
 ## <a name="controlling-data-collection"></a>Kontrolowanie zbierania danych  
  Gdy usługa jest uruchomiona, można użyć **VSPerfCmd.exe** umożliwiające uruchamianie i zatrzymywanie zapisywania danych do pliku danych profilera. Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonywania programu, takiej jak uruchamianie lub zamykanie aplikacji.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych  
 
--   Następujące pary **VSPerfCmd** opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.  
+- Następujące pary **VSPerfCmd** opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.  
 
     |Opcja|Opis|  
     |------------|-----------------|  
@@ -112,23 +112,23 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
 #### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania  
 
-1.  Wykonaj jedną z następujących czynności, aby odłączyć program profiler od aplikacji docelowej:  
+1. Wykonaj jedną z następujących czynności, aby odłączyć program profiler od aplikacji docelowej:  
 
-    -   Zatrzymaj usługę.  
+    - Zatrzymaj usługę.  
 
          —lub—  
 
-    -   Typ **VSPerfCmd / Odłącz**  
+    - Typ **VSPerfCmd / Odłącz**  
 
-2.  Zamknij program profilujący. Wpisz:  
+2. Zamknij program profilujący. Wpisz:  
 
      **Narzędzia VSPerfCmd/shutdown**  
 
-3.  (Opcjonalnie) Wyczyść zmienne środowiskowe profilowania. Wpisz:  
+3. (Opcjonalnie) Wyczyść zmienne środowiskowe profilowania. Wpisz:  
 
      **VSPerfClrEnv /globaloff**  
 
-4.  Uruchom ponownie komputer.  
+4. Uruchom ponownie komputer.  
 
 ## <a name="see-also"></a>Zobacz też  
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)   

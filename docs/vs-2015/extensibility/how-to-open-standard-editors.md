@@ -11,12 +11,12 @@ ms.assetid: d5ce10f9-047a-4b74-aa1d-295128898b89
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f75a64929074be45645de529ccb05f52f9d04ef9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 792ac8a0859481fd97b2eaee4bd66753f0460a37
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781875"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042539"
 ---
 # <a name="how-to-open-standard-editors"></a>Instrukcje: Otwieranie standardowych edytorów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,25 +27,25 @@ Po otwarciu edytora standardowego, możesz zezwolić IDE określić Edytor stand
   
 ### <a name="to-implement-the-openitem-method-with-a-standard-editor"></a>Aby wdrożyć metodę OpenItem za pomocą edytora standardowego  
   
-1.  Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> (`RDT_EditLock`) do określenia, czy plik obiektu danych dokumentu jest już otwarty.  
+1. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> (`RDT_EditLock`) do określenia, czy plik obiektu danych dokumentu jest już otwarty.  
   
-2.  Jeśli plik jest już otwarty, można go resurface przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> metody, określając wartość `IDO_ActivateIfOpen` dla `grfIDO` parametru.  
+2. Jeśli plik jest już otwarty, można go resurface przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> metody, określając wartość `IDO_ActivateIfOpen` dla `grfIDO` parametru.  
   
      Jeśli plik jest otwarty dokument jest własnością innego projektu niż projektu wywołującego, Twój projekt otrzymuje ostrzeżenie, że edytor otwierana pochodzi z innego projektu. Okno w pliku jest następnie udostępniane.  
   
-3.  Jeśli dokument nie jest otwarty lub nie w uruchomionej tabeli dokumentu, należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> — metoda (`OSE_ChooseBestStdEditor`) aby otworzyć Edytor standardowy w pliku.  
+3. Jeśli dokument nie jest otwarty lub nie w uruchomionej tabeli dokumentu, należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> — metoda (`OSE_ChooseBestStdEditor`) aby otworzyć Edytor standardowy w pliku.  
   
      Po wywołaniu metody, IDE wykonuje następujące zadania:  
   
-    1.  IDE skanuje edytory / {guidEditorType} / rozszerzenia podkluczu w rejestrze, aby określić, edytor, którego można otworzyć ten plik i ma najwyższy priorytet tego zrobić.  
+    1. IDE skanuje edytory / {guidEditorType} / rozszerzenia podkluczu w rejestrze, aby określić, edytor, którego można otworzyć ten plik i ma najwyższy priorytet tego zrobić.  
   
-    2.  Po IDE stwierdził, edytor, którego można otworzyć plik, IDE wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>. Edytor implementacja tej metody zwraca informacje, które są wymagane dla środowiska IDE wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> i lokacji nowo otwartego dokumentu.  
+    2. Po IDE stwierdził, edytor, którego można otworzyć plik, IDE wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>. Edytor implementacja tej metody zwraca informacje, które są wymagane dla środowiska IDE wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> i lokacji nowo otwartego dokumentu.  
   
-    3.  Na koniec IDE ładuje dokumentu przy użyciu interfejsu zwykle trwałości, takich jak <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>.  
+    3. Na koniec IDE ładuje dokumentu przy użyciu interfejsu zwykle trwałości, takich jak <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>.  
   
-    4.  Jeśli IDE wcześniej stwierdził, że hierarchia lub hierarchia elementów jest dostępny, IDE wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A> metody na projekt, aby pobrać kontekstu na poziomie projektu <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> wskaźnik, aby przekazać ponownie przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> wywołania metody.  
+    4. Jeśli IDE wcześniej stwierdził, że hierarchia lub hierarchia elementów jest dostępny, IDE wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A> metody na projekt, aby pobrać kontekstu na poziomie projektu <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> wskaźnik, aby przekazać ponownie przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> wywołania metody.  
   
-4.  Zwróć <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> wskaźnik do IDE, gdy wywołuje IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A> nad projektem, jeśli chcesz umożliwić kontekstu get edytora z projektu.  
+4. Zwróć <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> wskaźnik do IDE, gdy wywołuje IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A> nad projektem, jeśli chcesz umożliwić kontekstu get edytora z projektu.  
   
      Wykonanie tego kroku umożliwia oferta projektu dodatkowych usług do edytora.  
   

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aa6e2fdcbca0a434af044b842cf2b4ece10c8ef
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 28a533fff657e9e6cf426124bf65068f15190e7a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667342"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046568"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Instrukcje: Określ, która docelowa do tworzenia najpierw
 Plik projektu może zawierać jeden lub więcej `Target` elementy, które określają jak projekt jest kompilowany. [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) Aparatu kompilacji pierwszego projektu go odnajduje i wszelkie zależności, chyba, że plik projektu zawiera `DefaultTargets` atrybutu `InitialTargets` atrybutu lub elementu docelowego jest określony w wierszu polecenia za pomocą **— docelowy** przełącznika.
@@ -35,7 +35,7 @@ Plik projektu może zawierać jeden lub więcej `Target` elementy, które okreś
 
 #### <a name="to-specify-more-than-one-initial-target"></a>Aby określić więcej niż jeden element docelowy początkowej
 
--   Cele początkowe, oddzielone średnikami w liście `InitialTargets` atrybutu `Project` elementu. Na przykład, aby uruchomić `Clean` docelowego i następnie `Compile` obiekt docelowy, wpisz:
+- Cele początkowe, oddzielone średnikami w liście `InitialTargets` atrybutu `Project` elementu. Na przykład, aby uruchomić `Clean` docelowego i następnie `Compile` obiekt docelowy, wpisz:
 
      `<Project InitialTargets="Clean;Compile">`
 
@@ -52,7 +52,7 @@ Plik projektu może zawierać jeden lub więcej `Target` elementy, które okreś
 
 #### <a name="to-specify-more-than-one-default-target"></a>Aby określić więcej niż jeden domyślny element docelowy.
 
--   Lista domyślnych elementów docelowych, oddzielonych średnikami, w `DefaultTargets` atrybutu `Project` elementu. Na przykład, aby uruchomić `Clean` docelowego i następnie `Compile` obiekt docelowy, wpisz:
+- Lista domyślnych elementów docelowych, oddzielonych średnikami, w `DefaultTargets` atrybutu `Project` elementu. Na przykład, aby uruchomić `Clean` docelowego i następnie `Compile` obiekt docelowy, wpisz:
 
      `<Project DefaultTargets="Clean;Compile">`
 
@@ -61,13 +61,13 @@ Plik projektu może zawierać jeden lub więcej `Target` elementy, które okreś
 
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Aby użyć pierwszy element docelowy inny niż domyślny element docelowy
 
--   Określ element docelowy jako pierwszy przy użyciu docelowej **-target** przełącznik wiersza polecenia. Na przykład:
+- Określ element docelowy jako pierwszy przy użyciu docelowej **-target** przełącznik wiersza polecenia. Na przykład:
 
      `msbuild file.proj -target:Clean`
 
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Aby korzystać z kilku jest przeznaczony dla innych niż domyślne elementy docelowe najpierw
 
--   Lista obiektów docelowych, rozdzielone średnikami lub przecinkami, za pomocą **-target** przełącznik wiersza polecenia. Na przykład:
+- Lista obiektów docelowych, rozdzielone średnikami lub przecinkami, za pomocą **-target** przełącznik wiersza polecenia. Na przykład:
 
      `msbuild <file name>.proj -t:Clean;Compile`
 

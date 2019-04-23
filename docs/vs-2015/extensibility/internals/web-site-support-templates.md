@@ -10,12 +10,12 @@ ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fce793b077460f2c141de0a75d612bb9254f7b3b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dca7768f31219328648d457d188086e0185e2ffc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801981"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044378"
 ---
 # <a name="web-site-support-templates"></a>Szablony pomocy technicznej dotyczącej witryn internetowych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,66 +35,66 @@ ms.locfileid: "54801981"
 ## <a name="project-templates"></a>Project Templates  
  Szablony projektów witryny sieci Web są używane do tworzenia nowych witryn sieci Web w odpowiedzi na **nową witrynę sieci Web** polecenie **pliku** menu. Obecnie obsługiwane są trzy typy projektu witryny sieci Web:  
   
--   Pusta witryna internetowa projektów  
+- Pusta witryna internetowa projektów  
   
--   Projektów witryny sieci Web  
+- Projektów witryny sieci Web  
   
--   Projekty usługi w sieci Web  
+- Projekty usługi w sieci Web  
   
 ### <a name="empty-web-site-projects"></a>Pusta witryna internetowa projektów  
  Te pliki, Utwórz kopię zapasową witryny sieci Web w odpowiedzi na **pusta witryna internetowa** polecenia, które jest dostępne po wskazaniu **nową witrynę sieci Web** na **pliku** menu:  
   
--   EmptyWeb.vstemplate  
+- EmptyWeb.vstemplate  
   
      Plik szablonu, który zawiera informacje na temat tworzenia nowych pusta witryna sieci Web.  
   
--   EmptyWeb.webproj  
+- EmptyWeb.webproj  
   
      Ten plik jest pozostałością system szablonu projektu. Spełnia odwołanie do pliku projektu w pliku EmptyWeb.vstemplate.  
   
 ### <a name="web-site-projects"></a>Projektów witryny sieci Web  
  Te pliki, Utwórz nową witrynę sieci Web w odpowiedzi na **witryny sieci Web platformy ASP.NET** polecenia, które jest dostępne po wskazaniu **nową witrynę sieci Web** na **pliku** menu:  
   
--   Default.aspx  
+- Default.aspx  
   
      Domyślną stronę główną dla nowej witryny sieci Web. Atrybut Language określa język plik codebehind i atrybut CodeFile określa pliku zależnego zawierające kod codebehind skojarzony z tą stroną.  
   
--   Default.aspx.*extension*  
+- Default.aspx.*extension*  
   
      Plik zależny zawiera kod codebehind domyślną stronę główną. Określa język codebehind *rozszerzenia* tego pliku.  
   
--   web.config  
+- web.config  
   
      Główny plik konfiguracji web.site.  
   
--   WebApplication.vstemplate  
+- WebApplication.vstemplate  
   
      Plik szablonu, który określa zawartości rozwiązania witryny sieci Web i wymuszenie utworzenia w folderze App_Data.  
   
--   WebApplication.webproj  
+- WebApplication.webproj  
   
      Ten plik jest pozostałością system szablonu projektu. Spełnia odwołanie do pliku projektu w pliku WebApplication.vstemplate.  
   
 ### <a name="web-service-projects"></a>Projekty usługi w sieci Web  
  Te pliki, Utwórz nową witrynę sieci Web w odpowiedzi na **usługi sieci Web ASP.NET** polecenia, który jest dostępny po wskazaniu **nową witrynę sieci Web** na **pliku** menu:  
   
--   Service.asmx  
+- Service.asmx  
   
      Strona HTML dla nowej usługi sieci Web. Atrybut Language określa język codebehind, a atrybut CodeBehind określa pliku zależnego zawierające kod codebehind skojarzonego z tą usługą.  
   
--   Usługa. *extension*  
+- Usługa. *extension*  
   
      Plik zależny, który implementuje klasa usługi. Określa język codebehind *rozszerzenia* tego pliku.  
   
--   web.config  
+- web.config  
   
--   Główny plik konfiguracji web.site.  
+- Główny plik konfiguracji web.site.  
   
--   WebService.vstemplate  
+- WebService.vstemplate  
   
      Plik szablonu, który określa zawartości rozwiązania witryny sieci Web i wymuszenie utworzenia App_Data i App_Code folderów. Usługa. *rozszerzenia* plik jest kopiowany do folderu App_Code.  
   
--   WebService.webproj  
+- WebService.webproj  
   
      Ten plik jest pozostałością system szablonu projektu. Spełnia odwołanie do pliku projektu w pliku WebService.vstemplate.  
   
@@ -104,33 +104,33 @@ ms.locfileid: "54801981"
 ## <a name="project-item-templates"></a>Szablony elementów projektu  
  Szablony elementów projektu witryny sieci Web są używane do dodawania nowych stron sieci Web do witryny sieci Web w taki sposób, w odpowiedzi na **Dodaj istniejący element** polecenia. Tego rodzaju strony sieci Web są obecnie obsługiwane:  
   
--   Nowa klasa  
+- Nowa klasa  
   
--   Nowa strona HTML  
+- Nowa strona HTML  
   
--   Nowy formularz sieci Web  
+- Nowy formularz sieci Web  
   
--   Nową stronę wzorcową  
+- Nową stronę wzorcową  
   
 ### <a name="new-class"></a>Nowa klasa  
  Ten szablon tworzy nowy plik źródłowy, który definiuje pustą klasę w odpowiedzi na **Dodaj nową klasę** polecenia.  
   
--   Klasa. *extension*  
+- Klasa. *extension*  
   
      Plik źródłowy, który implementuje pustą klasę. Określa język codebehind *rozszerzenia* tego pliku.  
   
--   Class.vstemplate  
+- Class.vstemplate  
   
      Plik szablonu, tworzy plik źródłowy, który określa jego zawartość.  
   
 ### <a name="new-html-page"></a>Nowa strona HTML  
  Ten szablon umożliwia utworzenie nowej strony sieci Web w odpowiedzi na **Dodaj nową stronę HTML** polecenia.  
   
--   HTMLPage.htm  
+- HTMLPage.htm  
   
      Począwszy od zawartość strony sieci Web. Ta strona sieci Web zwykle nie ma skojarzonego pliku codebehind zależne pliku. Aby utworzyć stronę inteligentnych przy użyciu pliku codebehind skojarzony, należy użyć szablonu formularza sieci Web.  
   
--   HTMLPage.vstemplate  
+- HTMLPage.vstemplate  
   
      Plik szablonu, tworzy stronę sieci Web, która określa jego zawartość.  
   
@@ -141,27 +141,27 @@ ms.locfileid: "54801981"
   
  Aby utworzyć stronę zawartości dla wybranej strony wzorcowej, wybierz **wybierz stronę wzorcową**.  
   
--   WebForm.aspx  
+- WebForm.aspx  
   
      Począwszy od zawartość strony sieci Web. Ta strona sieci Web nie ma skojarzonego pliku codebehind zależne pliku.  
   
--   WebForm_cb.aspx  
+- WebForm_cb.aspx  
   
      Począwszy od zawartość strony sieci Web. Ta strona sieci Web ma skojarzony plik codebehind plik zależne.  
   
--   Plik CodeBehind. *extension*  
+- Plik CodeBehind. *extension*  
   
      Plik zależny, który implementuje klasa formularz sieci Web. Określa język codebehind *rozszerzenia* tego pliku.  
   
--   ContentPage.aspx  
+- ContentPage.aspx  
   
      Począwszy od zawartość strony sieci Web jako strony zawartości. Ta strona sieci Web nie ma skojarzonego pliku codebehind zależne pliku.  
   
--   ContentPage_cb.aspx  
+- ContentPage_cb.aspx  
   
      Począwszy od zawartość strony sieci Web jako strony zawartości. Ta strona sieci Web ma skojarzony plik codebehind plik zależne.  
   
--   WebForm.vstemplate  
+- WebForm.vstemplate  
   
      Plik szablonu, określająca zawartość nowej strony sieci web i jego plików zależnych, jeśli istnieje.  
   
@@ -170,19 +170,19 @@ ms.locfileid: "54801981"
   
  Aby utworzyć plik codebehind zależne źródła, wybierz **umieść kod w oddzielnym pliku**. W przeciwnym razie pojedynczej strony sieci Web jest utworzony z blokiem skryptu pusta i nie \<% strony % > dyrektywy można dołączyć pliku zależnego.  
   
--   MasterPage.master  
+- MasterPage.master  
   
      Począwszy od zawartość strony wzorcowej. Ta strona wzorcowa nie ma skojarzonego pliku codebehind zależne pliku.  
   
--   MasterPage_cb.master  
+- MasterPage_cb.master  
   
      Począwszy od zawartość strony wzorcowej. Ta strona wzorcowa ma skojarzony plik codebehind pliku zależnego.  
   
--   Plik CodeBehind. *rozszerzenia*  
+- Plik CodeBehind. *rozszerzenia*  
   
      Plik zależny, który implementuje klasa strony wzorcowej. Określa język codebehind *rozszerzenia* tego pliku.  
   
--   MasterPage.vstemplate  
+- MasterPage.vstemplate  
   
      Plik szablonu, określająca zawartość nowej strony wzorcowej i jego plików zależnych, jeśli istnieje.  
   

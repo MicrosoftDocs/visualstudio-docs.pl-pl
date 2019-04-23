@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 19c20241914001f7095e63e0cc25f91b2ab5c35e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 234c289cd039485163aa201516c418bacaed590b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664219"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047428"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Tworzenie prostej aplikacji danych przy użyciu pakietu ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Gdy tworzysz aplikację, która manipuluje danymi w bazie danych, wykonujesz pod
   
  **W tym temacie**  
   
--   [Konfigurowanie przykładowej bazy danych](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
+- [Konfigurowanie przykładowej bazy danych](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
   
--   [Tworzenie formularzy i dodawanie formantów](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
+- [Tworzenie formularzy i dodawanie formantów](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
   
--   [Store parametry połączenia](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
+- [Store parametry połączenia](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
   
--   [Pobieranie parametrów połączenia](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
+- [Pobieranie parametrów połączenia](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
   
--   [Pisanie kodu dla formularzy](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
+- [Pisanie kodu dla formularzy](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
   
--   [Testowanie aplikacji](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
+- [Testowanie aplikacji](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby utworzyć aplikację, będą potrzebne:  
@@ -58,10 +58,10 @@ Gdy tworzysz aplikację, która manipuluje danymi w bazie danych, wykonujesz pod
   
   W tym temacie założono, że znasz podstawowe funkcje środowiska IDE programu Visual Studio i można utworzyć aplikacji Windows Forms, dodawać formularze do tego projektu, umieszczać przyciski i inne kontrolki na tych formularzach, ustawiać właściwości tych kontrolek i kodować proste zdarzenia . Jeśli nie masz doświadczenia z tych zadań, zalecamy wykonanie [wprowadzenie do języka Visual C# i Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) przed rozpoczęciem tego tematu.  
   
-##  <a name="BKMK_setupthesampledatabase"></a> Konfigurowanie przykładowej bazy danych  
+## <a name="BKMK_setupthesampledatabase"></a> Konfigurowanie przykładowej bazy danych  
  Przykładowa baza danych, w tym przewodniku składa się z tabel klienta i zamówień. Tabele nie zawierają początkowo żadnych danych, ale zostaną one dodane po uruchomieniu aplikacji, który utworzysz. Baza danych zawiera także pięć prostych przechowywanych procedur. [Tworzenie bazy danych SQL za pomocą skryptu](../data-tools/create-a-sql-database-by-using-a-script.md) zawiera skrypt języka Transact-SQL, który tworzy tabele, główne i obce klucze, ograniczenia i procedur składowanych.  
   
-##  <a name="BKMK_createtheformsandaddcontrols"></a> Tworzenie formularzy i dodawanie formantów  
+## <a name="BKMK_createtheformsandaddcontrols"></a> Tworzenie formularzy i dodawanie formantów  
   
 1. Utwórz projekt dla aplikacji Windows Forms, a następnie nadaj mu nazwę SimpleDataApp.  
   
@@ -69,11 +69,11 @@ Gdy tworzysz aplikację, która manipuluje danymi w bazie danych, wykonujesz pod
   
 2. Dodaj dwie formy Windows do projektu tak, że ma trzy formy, a następnie nadaj im następujące nazwy:  
   
-   -   Nawigacja  
+   - Nawigacja  
   
-   -   NewCustomer  
+   - NewCustomer  
   
-   -   FillOrCancel  
+   - FillOrCancel  
   
 3. Dla każdego formularza należy dodać pola tekstowe, przyciski i inne formanty, które pojawiają się na poniższych ilustracjach. Dla każdego formantu należy ustawić właściwości opisywane przez tabele.  
   
@@ -119,33 +119,33 @@ Gdy tworzysz aplikację, która manipuluje danymi w bazie danych, wykonujesz pod
 |Przycisk|Nazwa = btnFillOrder|  
 |Przycisk|Nazwa = btnFinishUpdates|  
   
-##  <a name="BKMK_storetheconnectionstring"></a> Store parametry połączenia  
+## <a name="BKMK_storetheconnectionstring"></a> Store parametry połączenia  
  Gdy Twoja aplikacja próbuje otworzyć połączenie z bazą danych, aplikacja musi mieć dostęp do parametrów połączenia. Aby uniknąć wpisywania ciągu ręcznie w każdym formularzu, Przechowaj ciąg w pliku konfiguracji aplikacji w projekcie i Utwórz metodę, która zwraca ciąg, gdy metoda jest wywoływana z jakiegokolwiek formularza w aplikacji.  
   
  Można znaleźć w ciągu połączenia **Eksplorator obiektów SQL Server** przez kliknięcie prawym przyciskiem myszy bazę danych, wybierając **właściwości**, a następnie wyszukiwanie właściwości ConnectionString. Użyj klawiszy Ctrl + A, aby wybrać ten ciąg.  
   
-1.  W **Eksploratora rozwiązań**, wybierz opcję **właściwości** węzeł w węźle projektu, a następnie wybierz **Settings.settings**.  
+1. W **Eksploratora rozwiązań**, wybierz opcję **właściwości** węzeł w węźle projektu, a następnie wybierz **Settings.settings**.  
   
-2.  W **nazwa** kolumny, wprowadź `connString`.  
+2. W **nazwa** kolumny, wprowadź `connString`.  
   
-3.  W **typu** listy wybierz **(parametry połączenia)**.  
+3. W **typu** listy wybierz **(parametry połączenia)**.  
   
-4.  W **zakres** listy wybierz **aplikacji**.  
+4. W **zakres** listy wybierz **aplikacji**.  
   
-5.  W **wartość** kolumny, wprowadź parametry połączenia (bez żadnego poza cudzysłowy), a następnie zapisz zmiany.  
+5. W **wartość** kolumny, wprowadź parametry połączenia (bez żadnego poza cudzysłowy), a następnie zapisz zmiany.  
   
 > [!NOTE]
 >  W rzeczywistej aplikacji, należy przechowywać parametry połączenia bezpieczne, zgodnie z opisem w [parametry połączenia i pliki konfiguracyjne](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
   
-##  <a name="BKMK_retrievetheconnectionstring"></a> Pobieranie parametrów połączenia  
+## <a name="BKMK_retrievetheconnectionstring"></a> Pobieranie parametrów połączenia  
   
-1.  Na pasku menu wybierz **projektu** > **Dodaj odwołanie**, a następnie dodaj odwołanie do System.Configuration.dll.  
+1. Na pasku menu wybierz **projektu** > **Dodaj odwołanie**, a następnie dodaj odwołanie do System.Configuration.dll.  
   
-2.  Na pasku menu wybierz **projektu** > **Dodaj klasę** można dodać plik klasy do projektu, a następnie Nazwij plik `Utility`.  
+2. Na pasku menu wybierz **projektu** > **Dodaj klasę** można dodać plik klasy do projektu, a następnie Nazwij plik `Utility`.  
   
      Visual Studio tworzy plik i wyświetla go w **Eksploratora rozwiązań**.  
   
-3.  W pliku narzędzie Zastąp kod symbolu zastępczego następującym kodem. Należy zauważyć ponumerowane komentarze (z prefiksem Util-), które identyfikują sekcje kodu. Tabela poniżej kod wywołuje punkty kluczowe.  
+3. W pliku narzędzie Zastąp kod symbolu zastępczego następującym kodem. Należy zauważyć ponumerowane komentarze (z prefiksem Util-), które identyfikują sekcje kodu. Tabela poniżej kod wywołuje punkty kluczowe.  
   
     ```csharp  
     using System;  
@@ -219,7 +219,7 @@ Gdy tworzysz aplikację, która manipuluje danymi w bazie danych, wykonujesz pod
     |Util-2|Definiowanie zmiennej, `returnValue`i zainicjować jej do `null` (C#) lub `Nothing` (Visual Basic).|  
     |Util-3|Nawet po wprowadzeniu `connString` jako nazwę parametrów połączenia w **właściwości** okna, należy określić `"SimpleDataApp.Properties.Settings.connString"` (C#) lub `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) w kodzie.|  
   
-##  <a name="BKMK_writethecodefortheforms"></a> Pisanie kodu dla formularzy  
+## <a name="BKMK_writethecodefortheforms"></a> Pisanie kodu dla formularzy  
  Ta sekcja zawiera krótkie przeglądy tego co wykonuje każdy formularz oraz pokazuje kod tworzący formularze. Ponumerowane komentarze identyfikują sekcje kodu.  
   
 ### <a name="navigation-form"></a>Formularz nawigacji  
@@ -1139,5 +1139,5 @@ End Namespace
 |FC-8|Dodaj kod do obsługi zdarzeń kliknij `btnFillOrder`. Ten kod uruchamia `Sales.uspFillOrder` procedury składowanej.|  
 |FC-9|Utwórz metodę, aby sprawdzić, czy `OrderID` jest gotowy do przesłania jako parametr do `SqlCommand` obiektu.<br /><br /> -Upewnij się, że identyfikator został wprowadzony w `txtOrderID`.<br />-Użyj `Regex.IsMatch` Aby zdefiniować prostą kontrolę wykrywającą znaki nie będące.<br />— Można zadeklarować `parsedOrderID` zmiennej w FC-2.<br />— Jeśli dane wejściowe są prawidłowe, Konwertuj tekst na liczbę całkowitą, a wartość jest przechowywana w `parsedOrderID` zmiennej.<br />-Opakować `isOrderID` metoda wokół `btnFindByOrderID`, `btnCancelOrder`, i `btnFillOrder` kliknij obsługi zdarzeń.|  
   
-##  <a name="BKMK_testyourapplication"></a> Testowanie aplikacji  
+## <a name="BKMK_testyourapplication"></a> Testowanie aplikacji  
  Wybierz klawisz F5, aby skompilować i przetestować aplikację po zakodowaniu każdej obsługi zdarzenia Click, a następnie po zakończenia kodowania.

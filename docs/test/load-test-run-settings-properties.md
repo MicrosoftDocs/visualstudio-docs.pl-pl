@@ -8,12 +8,12 @@ ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 555b3714dffa69e79d0c0e57effaa3e294905709
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 094402a8d3951b329385a27d6524452570183244
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932584"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062376"
 ---
 # <a name="load-test-run-settings-properties"></a>Właściwości ustawień przebiegu testu obciążeniowego
 
@@ -88,27 +88,27 @@ Aby uzyskać więcej informacji, zobacz [parametrów uruchomieniowych testu obci
 |**Model połączenia WebTest**|Ta opcja kontroluje użycie połączenia z agent testu obciążeniowego, aby serwer sieci web testów wydajności sieci web działających w teście obciążeniowym. Dostępne są trzy opcje model połączenia testu sieci web wydajności:<br /><br /> **Connection Per User** modelu symuluje działanie użytkownika, który używa rzeczywista przeglądarka. Gdy program Internet Explorer 6 lub Internet Explorer 7 jest symulowane, każdy użytkownik wirtualny, który uruchamia test wydajności sieci web używa co najmniej dwa dedykowane połączenia z serwerem sieci web. Pierwsze połączenie zostanie nawiązane, po wygenerowaniu pierwszego żądania w teście wydajności sieci web. Drugie połączenie mogą być używane, gdy strona zawiera więcej niż jedno żądanie zależne. Te żądania są wysyłane równolegle za pomocą dwóch połączeń. Te połączenia są używane do obsługi kolejnych żądań w teście wydajności sieci web. Połączenia zostaną zamknięte po zakończeniu testu wydajności sieci web. Wadą tego modelu jest, że liczba połączeń jest otwarte na komputerze agenta może być wysoki (maksymalnie dwa razy obciążenie użytkownikami). W związku z tym zasoby, które są wymagane do obsługi to liczba połączeń wysokiej może ograniczyć obciążenie użytkownikami, które mogą być napędzane z agenta testu obciążenia. Gdy jest symulowane programu Internet Explorer 8, sześciu równoczesnych połączeń są obsługiwane.<br />**Puli połączeń** modelu oszczędza zasoby na agent testu obciążeniowego za pomocą udostępniania połączenia z serwerem sieci web przez wielu użytkowników testu wydajności sieci web wirtualne. Jeśli obciążenie użytkownikami jest większy niż rozmiar puli połączeń, testy wydajności sieci web, które są uruchamiane przez różnych użytkowników wirtualnych współużytkują połączenia. Może to oznaczać, że ten test wydajności sieci web w jeden może być konieczne poczekanie przed generuje żądanie, korzystając z innego testu wydajności sieci web jest połączenie. Średni czas testu wydajności sieci web czeka przed prześle powiadomienie, że żądania są śledzone przez licznik wydajności testu obciążeniowego Średni czas oczekiwania połączenia. Liczba ta powinna być mniejsza niż średni czas odpowiedzi dla strony. Jeśli nie jest, prawdopodobnie jest za mały rozmiar puli połączeń.<br />**Połączenia na Test iteracji** modelu Określa użycie dedykowanego połączenia dla każdej iteracji testu.|
 |**Rozmiar puli połączeń WebTest**|Określa maksymalną liczbę połączeń między agent testu obciążeniowego i serwer sieci Web. Dotyczy to tylko **puli połączeń** modelu.|
 
-##  <a name="change-run-setting-properties"></a>Zmiana właściwości ustawienia przebiegu
+## <a name="change-run-setting-properties"></a>Zmiana właściwości ustawienia przebiegu
  Do testu obciążeniowego można dodać więcej parametrów uruchomieniowych z różnymi ustawieniami właściwości, co pozwoli wykonywać te testy w różnych warunkach. Na przykład można dodać nowe ustawienie testu określające inną częstotliwość próbkowania albo dłuższy czas trwania. Można używać tylko jednego naraz, a następnie należy określić, które uruchomieniowego do użycia, oznaczając je jako aktywny. Aby uzyskać przykład, zobacz [jak: Wybierz aktywne ustawienia uruchamiania dla testu obciążeniowego](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
 ### <a name="to-change-run-settings"></a>Aby zmienić ustawienia uruchamiania
 
-1.  Otwórz test obciążenia.
+1. Otwórz test obciążenia.
 
-2.  Rozwiń **parametrów uruchomieniowych** folderu.
+2. Rozwiń **parametrów uruchomieniowych** folderu.
 
-3.  Wybierz **parametrów uruchomieniowych** węzła.
+3. Wybierz **parametrów uruchomieniowych** węzła.
 
-4.  Na **widoku** menu, wybierz **okno właściwości**.
+4. Na **widoku** menu, wybierz **okno właściwości**.
 
      **Okno właściwości** jest wyświetlany i wyświetlane są właściwości dla wybranego parametru uruchomieniowego.
 
-5.  Użyj **okno właściwości** do zmiany parametrów uruchomieniowych. Na przykład zmienić czas trwania testu na **00:05:00** Aby uruchomić test na pięć minut.
+5. Użyj **okno właściwości** do zmiany parametrów uruchomieniowych. Na przykład zmienić czas trwania testu na **00:05:00** Aby uruchomić test na pięć minut.
 
     > [!NOTE]
     > Aby uzyskać pełną listę właściwości parametrów uruchomieniowych i ich opisów, zobacz [właściwości ustawienia przebiegu testu obciążeniowego](../test/load-test-run-settings-properties.md).
 
-6.  Po zakończeniu zmiany właściwości, należy zapisać testu obciążenia. Na **pliku** menu, wybierz **Zapisz**.
+6. Po zakończeniu zmiany właściwości, należy zapisać testu obciążenia. Na **pliku** menu, wybierz **Zapisz**.
 
 > [!NOTE]
 > Mapowania zestawów liczników są również częścią parametrów uruchomieniowych. Aby uzyskać więcej informacji, zobacz [Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążeniowym](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).

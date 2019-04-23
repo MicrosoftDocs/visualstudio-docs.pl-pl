@@ -22,12 +22,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 83a685b0dfc9b4f260d082230a5b58dcb025eff4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a882a1523d89f547f98389e6ad3e6baf32cbb01c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779509"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039361"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Instrukcje: Przywracanie ukrytych poleceń debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,19 +38,19 @@ Podczas konfigurowania programu Visual Studio zostanie wyświetlony monit o wybr
   
 ### <a name="to-restore-hidden-debugger-commands"></a>Aby Przywracanie ukrytych poleceń debugera  
   
-1.  W projekcie, które są otwarte, w **narzędzia** menu, kliknij przycisk **Dostosuj**.  
+1. W projekcie, które są otwarte, w **narzędzia** menu, kliknij przycisk **Dostosuj**.  
   
-2.  W **Dostosuj** okno dialogowe, kliknij przycisk **polecenia** kartę.  
+2. W **Dostosuj** okno dialogowe, kliknij przycisk **polecenia** kartę.  
   
-3.  W **pasek Menu:** listę rozwijaną, wybierz opcję **debugowania** menu, które ma zawierać przywróconej polecenia.  
+3. W **pasek Menu:** listę rozwijaną, wybierz opcję **debugowania** menu, które ma zawierać przywróconej polecenia.  
   
-4.  Kliknij przycisk **Dodaj polecenie...** przycisk.  
+4. Kliknij przycisk **Dodaj polecenie...** przycisk.  
   
-5.  W **Dodaj polecenie** wybierz polecenie, które chcesz dodać, a następnie kliknij przycisk **OK**.  
+5. W **Dodaj polecenie** wybierz polecenie, które chcesz dodać, a następnie kliknij przycisk **OK**.  
   
-6.  Powtórz poprzedni krok, aby dodać inne polecenie.  
+6. Powtórz poprzedni krok, aby dodać inne polecenie.  
   
-7.  Kliknij przycisk **Zamknij** Kiedy zakończysz dodawanie poleceń do menu.  
+7. Kliknij przycisk **Zamknij** Kiedy zakończysz dodawanie poleceń do menu.  
   
     > [!WARNING]
     >  Niektóre elementy menu są wyświetlane, gdy debuger jest w trybach określonych, takie jak tryb uruchamiania lub trybie przerwania. W związku z tym nie może być od razu widoczne element, który został dodany, po wykonaniu tych kroków.  
@@ -60,21 +60,21 @@ Podczas konfigurowania programu Visual Studio zostanie wyświetlony monit o wybr
   
 #### <a name="to-import-new-ide-settings"></a>Aby zaimportować nowe ustawienia środowiska IDE  
   
-1.  Na **narzędzia** menu, kliknij przycisk **Import i eksport ustawień**.  
+1. Na **narzędzia** menu, kliknij przycisk **Import i eksport ustawień**.  
   
-2.  Na **Kreatora importowania i eksportowania ustawień-Zapraszamy** kliknij **Importuj ustawienia wybranego środowiska**, a następnie kliknij przycisk **dalej**.  
+2. Na **Kreatora importowania i eksportowania ustawień-Zapraszamy** kliknij **Importuj ustawienia wybranego środowiska**, a następnie kliknij przycisk **dalej**.  
   
-3.  Na **zapisać bieżące ustawienia** strony, zdecyduj, czy chcesz zapisać Twoje istniejące ustawienia, a następnie kliknij przycisk **dalej**.  
+3. Na **zapisać bieżące ustawienia** strony, zdecyduj, czy chcesz zapisać Twoje istniejące ustawienia, a następnie kliknij przycisk **dalej**.  
   
-4.  Na **wybierz kolekcję ustawień do zaimportowania** w obszarze **ustawienia domyślne** folderu, wybierz kolekcję ustawień środowiska deweloperskiego, zawierający polecenia, którego chcesz użyć. Jeśli nie wiadomo, którą kolekcję, aby wybrać, spróbuj **ogólnych ustawieniach projektowych** lub **ustawienia środowiska deweloperskiego Visual C++**, które zawierają najbardziej poleceń debugera.  
+4. Na **wybierz kolekcję ustawień do zaimportowania** w obszarze **ustawienia domyślne** folderu, wybierz kolekcję ustawień środowiska deweloperskiego, zawierający polecenia, którego chcesz użyć. Jeśli nie wiadomo, którą kolekcję, aby wybrać, spróbuj **ogólnych ustawieniach projektowych** lub **ustawienia środowiska deweloperskiego Visual C++**, które zawierają najbardziej poleceń debugera.  
   
-5.  Kliknij przycisk **Dalej**.  
+5. Kliknij przycisk **Dalej**.  
   
-6.  Na **wybierz ustawienia do importowania** w obszarze **opcje**, upewnij się, że **debugowanie** jest zaznaczone. Wyczyść pozostałe pola wyboru, chyba że chcesz zaimportować te ustawienia, a także.  
+6. Na **wybierz ustawienia do importowania** w obszarze **opcje**, upewnij się, że **debugowanie** jest zaznaczone. Wyczyść pozostałe pola wyboru, chyba że chcesz zaimportować te ustawienia, a także.  
   
-7.  Kliknij przycisk **Zakończ**.  
+7. Kliknij przycisk **Zakończ**.  
   
-8.  Na **pełny Import** przejrzyj wszelkie błędy skojarzone z Resetowanie ustawień w obszarze **szczegóły**.  
+8. Na **pełny Import** przejrzyj wszelkie błędy skojarzone z Resetowanie ustawień w obszarze **szczegóły**.  
   
 9. Kliknij przycisk **Zamknij**.  
   

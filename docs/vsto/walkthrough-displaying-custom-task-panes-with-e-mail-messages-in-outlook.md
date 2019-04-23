@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 69c68397c8695fd0d9c3c1ef48a38e316c537641
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 583c15a5b605671e09ac47a42d49b068393ffe2e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606449"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062559"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Przewodnik: Wyświetlanie niestandardowych okienek zadań z wiadomościami e-mail w programie Outlook
   W tym instruktażu przedstawiono sposób wyświetlania unikatowego wystąpienia niestandardowego okienka zadań z każdej wiadomości e-mail, który został utworzony lub otwarty. Użytkowników można wyświetlić lub ukryć niestandardowego okienka zadań, za pomocą przycisku na Wstążce każdej wiadomości e-mail.
@@ -35,17 +35,17 @@ ms.locfileid: "56606449"
 
  W instruktażu przedstawiono następujące zagadnienia:
 
--   Projektowanie interfejsu użytkownika (UI) z niestandardowego okienka zadań.
+- Projektowanie interfejsu użytkownika (UI) z niestandardowego okienka zadań.
 
--   Tworzenie niestandardowego interfejsu użytkownika wstążki.
+- Tworzenie niestandardowego interfejsu użytkownika wstążki.
 
--   Wyświetlanie niestandardowego interfejsu użytkownika wstążki, za pomocą wiadomości e-mail.
+- Wyświetlanie niestandardowego interfejsu użytkownika wstążki, za pomocą wiadomości e-mail.
 
--   Tworzenie klasy do zarządzania windows Inspektor i niestandardowe okienka zadań.
+- Tworzenie klasy do zarządzania windows Inspektor i niestandardowe okienka zadań.
 
--   Inicjowanie i oczyszczanie zasobów używanych przez dodatku narzędzi VSTO.
+- Inicjowanie i oczyszczanie zasobów używanych przez dodatku narzędzi VSTO.
 
--   Synchronizowanie przycisk przełączania wstążki z niestandardowego okienka zadań.
+- Synchronizowanie przycisk przełączania wstążki z niestandardowego okienka zadań.
 
 > [!NOTE]
 >  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -64,7 +64,7 @@ ms.locfileid: "56606449"
 
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt
 
-1.  Tworzenie **dodatku programu Outlook** projekt o nazwie **OutlookMailItemTaskPane**. Użyj **dodatku programu Outlook** szablonu projektu. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Tworzenie **dodatku programu Outlook** projekt o nazwie **OutlookMailItemTaskPane**. Użyj **dodatku programu Outlook** szablonu projektu. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otwiera *ThisAddIn.cs* lub *ThisAddIn.vb* plik kodu i dodaje **OutlookMailItemTaskPane** projekt **Eksploratora rozwiązań**.
 
@@ -73,47 +73,47 @@ ms.locfileid: "56606449"
 
 ### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>Projekt interfejsu użytkownika niestandardowego okienka zadań
 
-1.  W **Eksploratora rozwiązań**, kliknij przycisk **OutlookMailItemTaskPane** projektu.
+1. W **Eksploratora rozwiązań**, kliknij przycisk **OutlookMailItemTaskPane** projektu.
 
-2.  Na **projektu** menu, kliknij przycisk **Dodaj kontrolkę użytkownika**.
+2. Na **projektu** menu, kliknij przycisk **Dodaj kontrolkę użytkownika**.
 
-3.  W **Dodaj nowy element** okna dialogowego pole, Zmień nazwę kontrolki użytkownika do **TaskPaneControl**, a następnie kliknij przycisk **Dodaj**.
+3. W **Dodaj nowy element** okna dialogowego pole, Zmień nazwę kontrolki użytkownika do **TaskPaneControl**, a następnie kliknij przycisk **Dodaj**.
 
      Formant użytkownika zostanie otwarty w projektancie.
 
-4.  Z **wspólnych formantów** karcie **przybornika**, przeciągnij **TextBox** kontrolki do kontrolki użytkownika.
+4. Z **wspólnych formantów** karcie **przybornika**, przeciągnij **TextBox** kontrolki do kontrolki użytkownika.
 
 ## <a name="design-the-user-interface-of-the-ribbon"></a>Projektowanie interfejsu użytkownika wstążki
  Jest jednym z celów dla tego dodatku narzędzi VSTO dla programów pozwala użytkownikom sposób, aby ukryć lub wyświetlić niestandardowego okienka zadań z poziomu wstążki każdej wiadomości e-mail. Aby zapewnić interfejsu użytkownika, należy utworzyć niestandardowy interfejs użytkownika wstążki, który wyświetla przycisk przełącznika, który użytkownicy mogą kliknąć, aby wyświetlić lub ukryć niestandardowego okienka zadań.
 
 ### <a name="to-create-a-custom-ribbon-ui"></a>Aby utworzyć niestandardowego interfejsu użytkownika wstążki
 
-1.  Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.
+1. Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.
 
-2.  W **Dodaj nowy element** okno dialogowe, wybierz opcję **Wstążka (Projektant graficzny)**.
+2. W **Dodaj nowy element** okno dialogowe, wybierz opcję **Wstążka (Projektant graficzny)**.
 
-3.  Zmień nazwę nowego wstążki do **ManageTaskPaneRibbon**i kliknij przycisk **Dodaj**.
+3. Zmień nazwę nowego wstążki do **ManageTaskPaneRibbon**i kliknij przycisk **Dodaj**.
 
      *ManageTaskPaneRibbon.cs* lub *ManageTaskPaneRibbon.vb* plik zostanie otwarty w Projektancie Wstążki i wyświetla domyślną kartę i grupę.
 
-4.  W Projektancie Wstążki kliknij **grupa1**.
+4. W Projektancie Wstążki kliknij **grupa1**.
 
-5.  W **właściwości** oknie **etykiety** właściwości **Menedżera okienka zadań**.
+5. W **właściwości** oknie **etykiety** właściwości **Menedżera okienka zadań**.
 
-6.  Z **formanty wstążki Office** karcie **przybornika**, przeciągnij formant ToggleButton na **Menedżera okienka zadań** grupy.
+6. Z **formanty wstążki Office** karcie **przybornika**, przeciągnij formant ToggleButton na **Menedżera okienka zadań** grupy.
 
-7.  Click **toggleButton1**.
+7. Click **toggleButton1**.
 
-8.  W **właściwości** oknie **etykiety** właściwości **Pokaż okienko zadań**.
+8. W **właściwości** oknie **etykiety** właściwości **Pokaż okienko zadań**.
 
 ## <a name="display-the-custom-ribbon-user-interface-with-email-messages"></a>Wyświetl niestandardowy interfejs użytkownika wstążki za pomocą wiadomości e-mail
  Niestandardowego okienka zadań utworzoną w tym przewodniku zaprojektowano w celu są wyświetlane tylko w przypadku systemu windows Inspector, zawierających wiadomości e-mail. W związku z tym Ustaw właściwości, aby wyświetlić niestandardowy interfejs użytkownika wstążki tylko z tych okien.
 
 ### <a name="to-display-the-custom-ribbon-ui-with-email-messages"></a>Aby wyświetlić niestandardowy interfejs użytkownika wstążki, za pomocą wiadomości e-mail
 
-1.  W Projektancie Wstążki kliknij **ManageTaskPaneRibbon** wstążki.
+1. W Projektancie Wstążki kliknij **ManageTaskPaneRibbon** wstążki.
 
-2.  W **właściwości** , kliknij listę rozwijaną listę obok **RibbonType**i wybierz **Microsoft.Outlook.Mail.Compose** i  **Microsoft.Outlook.Mail.Read**.
+2. W **właściwości** , kliknij listę rozwijaną listę obok **RibbonType**i wybierz **Microsoft.Outlook.Mail.Compose** i  **Microsoft.Outlook.Mail.Read**.
 
 ## <a name="create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Utwórz klasę do zarządzania windows Inspektor i niestandardowych okienek zadań
  Istnieje kilka przypadków, w których dodatku narzędzi VSTO dla programów należy określić które niestandardowego okienka zadań jest skojarzony z określoną wiadomością e-mail. Te przypadki są następujące:
@@ -128,34 +128,34 @@ ms.locfileid: "56606449"
 
 ### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Aby utworzyć klasę do zarządzania windows Inspektor i niestandardowych okienek zadań
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy *ThisAddIn.cs* lub *ThisAddIn.vb* pliku, a następnie kliknij przycisk **Wyświetl kod**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy *ThisAddIn.cs* lub *ThisAddIn.vb* pliku, a następnie kliknij przycisk **Wyświetl kod**.
 
-2.  Dodaj następujące instrukcje na górze pliku.
+2. Dodaj następujące instrukcje na górze pliku.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#2)]
      [!code-vb[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#2)]
 
-3.  Dodaj następujący kod do *ThisAddIn.cs* lub *ThisAddIn.vb* plików poza `ThisAddIn` klasy (dla języka Visual C#, Dodaj następujący kod wewnątrz `OutlookMailItemTaskPane` przestrzeni nazw). `InspectorWrapper` Klasa zarządza parę <xref:Microsoft.Office.Interop.Outlook.Inspector> i <xref:Microsoft.Office.Tools.CustomTaskPane> obiektów. Zostanie ukończona definicja tej klasy w poniższych krokach.
+3. Dodaj następujący kod do *ThisAddIn.cs* lub *ThisAddIn.vb* plików poza `ThisAddIn` klasy (dla języka Visual C#, Dodaj następujący kod wewnątrz `OutlookMailItemTaskPane` przestrzeni nazw). `InspectorWrapper` Klasa zarządza parę <xref:Microsoft.Office.Interop.Outlook.Inspector> i <xref:Microsoft.Office.Tools.CustomTaskPane> obiektów. Zostanie ukończona definicja tej klasy w poniższych krokach.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#3)]
      [!code-vb[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#3)]
 
-4.  Dodaj następujący Konstruktor po kodzie dodanym w poprzednim kroku. Ten konstruktor tworzy i inicjuje nowego niestandardowego okienka zadań skojarzonym z <xref:Microsoft.Office.Interop.Outlook.Inspector> obiekt, który jest przekazywany w. W języku C#, Konstruktor dołącza również programów obsługi zdarzeń do <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> zdarzenia <xref:Microsoft.Office.Interop.Outlook.Inspector> obiektu i <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> zdarzenia <xref:Microsoft.Office.Tools.CustomTaskPane> obiektu.
+4. Dodaj następujący Konstruktor po kodzie dodanym w poprzednim kroku. Ten konstruktor tworzy i inicjuje nowego niestandardowego okienka zadań skojarzonym z <xref:Microsoft.Office.Interop.Outlook.Inspector> obiekt, który jest przekazywany w. W języku C#, Konstruktor dołącza również programów obsługi zdarzeń do <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> zdarzenia <xref:Microsoft.Office.Interop.Outlook.Inspector> obiektu i <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> zdarzenia <xref:Microsoft.Office.Tools.CustomTaskPane> obiektu.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#4](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#4)]
      [!code-vb[Trin_OutlookMailItemTaskPane#4](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#4)]
 
-5.  Dodaj następującą metodę po kodzie dodanym w poprzednim kroku. Ta metoda jest program obsługi zdarzeń dla <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> zdarzenia <xref:Microsoft.Office.Tools.CustomTaskPane> obiekt, który jest zawarty w `InspectorWrapper` klasy. Ten kod aktualizuje stan przycisku przełącznika zawsze wtedy, gdy użytkownik otwiera lub zamyka niestandardowego okienka zadań.
+5. Dodaj następującą metodę po kodzie dodanym w poprzednim kroku. Ta metoda jest program obsługi zdarzeń dla <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> zdarzenia <xref:Microsoft.Office.Tools.CustomTaskPane> obiekt, który jest zawarty w `InspectorWrapper` klasy. Ten kod aktualizuje stan przycisku przełącznika zawsze wtedy, gdy użytkownik otwiera lub zamyka niestandardowego okienka zadań.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#5)]
      [!code-vb[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#5)]
 
-6.  Dodaj następującą metodę po kodzie dodanym w poprzednim kroku. Ta metoda jest program obsługi zdarzeń dla <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> zdarzenia <xref:Microsoft.Office.Interop.Outlook.Inspector> obiekt, który zawiera bieżącą wiadomość e-mail. Program obsługi zdarzeń zwalnia zasoby, gdy wiadomość e-mail jest zamknięty. Program obsługi zdarzeń spowoduje również usunięcie bieżącego niestandardowego okienka zadań z `CustomTaskPanes` kolekcji. Pozwala to zapobiec wiele wystąpień niestandardowego okienka zadań, po otwarciu dalej wiadomości e-mail.
+6. Dodaj następującą metodę po kodzie dodanym w poprzednim kroku. Ta metoda jest program obsługi zdarzeń dla <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> zdarzenia <xref:Microsoft.Office.Interop.Outlook.Inspector> obiekt, który zawiera bieżącą wiadomość e-mail. Program obsługi zdarzeń zwalnia zasoby, gdy wiadomość e-mail jest zamknięty. Program obsługi zdarzeń spowoduje również usunięcie bieżącego niestandardowego okienka zadań z `CustomTaskPanes` kolekcji. Pozwala to zapobiec wiele wystąpień niestandardowego okienka zadań, po otwarciu dalej wiadomości e-mail.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#6)]
      [!code-vb[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#6)]
 
-7.  Dodaj następujący kod po kodzie dodanym w poprzednim kroku. W dalszej części tego przewodnika ta właściwość wywoła metodę niestandardowego interfejsu użytkownika wstążki, aby wyświetlić lub ukryć niestandardowego okienka zadań.
+7. Dodaj następujący kod po kodzie dodanym w poprzednim kroku. W dalszej części tego przewodnika ta właściwość wywoła metodę niestandardowego interfejsu użytkownika wstążki, aby wyświetlić lub ukryć niestandardowego okienka zadań.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#7)]
      [!code-vb[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#7)]
@@ -201,23 +201,23 @@ ms.locfileid: "56606449"
 
 ### <a name="to-build-your-project"></a>Do kompilowania projektu
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **OutlookMailItemTaskPane** projektu, a następnie kliknij przycisk **kompilacji**. Upewnij się, że projekt kompiluje bez błędów.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **OutlookMailItemTaskPane** projektu, a następnie kliknij przycisk **kompilacji**. Upewnij się, że projekt kompiluje bez błędów.
 
 ## <a name="synchronize-the-ribbon-toggle-button-with-the-custom-task-pane"></a>Synchronizowanie przycisk przełączania wstążki z niestandardowego okienka zadań
  Przycisk przełączania, zostanie wyświetlony jako nacisnąć okienko zadań jest widoczne, gdy pojawi się nie naciśnięcia w przypadku okienka zadań jest ukryta. Aby zsynchronizować stan przycisku z niestandardowego okienka zadań, należy zmodyfikować <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> program obsługi zdarzeń przycisku przełączania.
 
 ### <a name="to-synchronize-the-custom-task-pane-with-the-toggle-button"></a>Aby zsynchronizować niestandardowego okienka zadań z przyciskiem przełączania
 
-1.  W Projektancie wstążki, kliknij dwukrotnie **Pokaż okienko zadań** przycisku przełączania.
+1. W Projektancie wstążki, kliknij dwukrotnie **Pokaż okienko zadań** przycisku przełączania.
 
      Program Visual Studio automatycznie generuje moduł obsługi zdarzeń o nazwie `toggleButton1_Click`, która obsługuje <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> zdarzenia przycisku przełącznika. Program Visual Studio otwiera również *ManageTaskPaneRibbon.cs* lub *ManageTaskPaneRibbon.vb* plik w edytorze kodu.
 
-2.  Dodaj następujące instrukcje na górze *ManageTaskPaneRibbon.cs* lub *ManageTaskPaneRibbon.vb* pliku.
+2. Dodaj następujące instrukcje na górze *ManageTaskPaneRibbon.cs* lub *ManageTaskPaneRibbon.vb* pliku.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#14)]
      [!code-vb[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#14)]
 
-3.  Zastąp `toggleButton1_Click` programu obsługi zdarzeń z następującym kodem. Gdy użytkownik kliknie przycisk przełączania, ta metoda ukrywa lub wyświetla niestandardowego okienka zadań skojarzony z bieżącym oknem Inspector.
+3. Zastąp `toggleButton1_Click` programu obsługi zdarzeń z następującym kodem. Gdy użytkownik kliknie przycisk przełączania, ta metoda ukrywa lub wyświetla niestandardowego okienka zadań skojarzony z bieżącym oknem Inspector.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#15)]
      [!code-vb[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#15)]
@@ -262,11 +262,11 @@ ms.locfileid: "56606449"
 ## <a name="next-steps"></a>Następne kroki
  Możesz dowiedzieć się więcej na temat sposobu tworzenia niestandardowych okienek zadań z tych tematów:
 
--   Tworzenie niestandardowego okienka zadań w dodatku narzędzi VSTO dla różnych aplikacji. Aby uzyskać więcej informacji na temat aplikacji, które obsługują niestandardowe okienka zadań, zobacz [niestandardowych okienek zadań](../vsto/custom-task-panes.md).
+- Tworzenie niestandardowego okienka zadań w dodatku narzędzi VSTO dla różnych aplikacji. Aby uzyskać więcej informacji na temat aplikacji, które obsługują niestandardowe okienka zadań, zobacz [niestandardowych okienek zadań](../vsto/custom-task-panes.md).
 
--   Automatyzowanie aplikacji pakietu Microsoft Office, korzystając z niestandardowego okienka zadań. Aby uzyskać więcej informacji, zobacz [instruktażu: Automatyzacja aplikacji z niestandardowego okienka zadań](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).
+- Automatyzowanie aplikacji pakietu Microsoft Office, korzystając z niestandardowego okienka zadań. Aby uzyskać więcej informacji, zobacz [instruktażu: Automatyzacja aplikacji z niestandardowego okienka zadań](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).
 
--   Utwórz przycisk na wstążce programu Excel, która pozwala ukryć lub wyświetlić niestandardowego okienka zadań. Aby uzyskać więcej informacji, zobacz [instruktażu: Synchronizuj niestandardowego okienka zadań z przyciskiem wstążki](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
+- Utwórz przycisk na wstążce programu Excel, która pozwala ukryć lub wyświetlić niestandardowego okienka zadań. Aby uzyskać więcej informacji, zobacz [instruktażu: Synchronizuj niestandardowego okienka zadań z przyciskiem wstążki](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
 
 ## <a name="see-also"></a>Zobacz także
 - [Niestandardowe okienka zadań](../vsto/custom-task-panes.md)

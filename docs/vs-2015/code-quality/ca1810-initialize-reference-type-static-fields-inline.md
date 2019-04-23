@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2722286af0d4c95fec30593047bedf1fe0ba4d2d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dd0372ca3264bedd6fbb17ef3c8326471cb6e99f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785412"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037871"
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Inicjuj pola statyczne typu referencyjnego śródwierszowo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "54785412"
 
  Sprawdzenia konstruktora statycznego mogą obniżyć wydajność. Często statyczny Konstruktor jest używana tylko do zainicjowania pola statyczne, w których przypadku musisz tylko upewnić się, że inicjowanie statycznych występuje przed pierwszym dostępie pole statyczne. `beforefieldinit` Zachowanie jest odpowiednia dla tych i innych typów. Jest tylko nieodpowiednie, gdy statyczne inicjowanie ma wpływ na stan globalny jest spełniony jeden z następujących czynności:
 
--   Wpływ na stan globalny jest kosztowne, a nie jest wymagane, jeśli typ nie jest używany.
+- Wpływ na stan globalny jest kosztowne, a nie jest wymagane, jeśli typ nie jest używany.
 
--   Efekty stan globalny jest możliwy bez uzyskiwania dostępu do dowolnego pola statyczne typu.
+- Efekty stan globalny jest możliwy bez uzyskiwania dostępu do dowolnego pola statyczne typu.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, zainicjuj wszystkie dane statyczne, gdy jest on zadeklarowany, i usuń konstruktor statyczny.

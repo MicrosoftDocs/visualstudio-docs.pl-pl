@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e42e1ce4cc1ccc0a01905046b33e4587964f8ce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0e85aa8fc5af3f32f117b112e8624962a49d90c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712076"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047455"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Przewodnik: Brak obiektów spowodowany stanem urządzenia
 W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostyki grafiki do zbadania obiekt, który nie istnieje ze względu na nieprawidłowo skonfigurowany stan urządzenia.
 
  W tym instruktażu przedstawiono sposób:
 
--   Użyj **Lista zdarzeń graficznych** do lokalizowania potencjalnych źródeł problemu.
+- Użyj **Lista zdarzeń graficznych** do lokalizowania potencjalnych źródeł problemu.
 
--   Użyj **etapy potoku grafiki** okna, aby sprawdzić efekt skonfigurowania `DrawIndexed` wywołań interfejsu API Direct3D.
+- Użyj **etapy potoku grafiki** okna, aby sprawdzić efekt skonfigurowania `DrawIndexed` wywołań interfejsu API Direct3D.
 
--   Użyj **Historia pikseli grafiki** okna, aby dokładniej zlokalizowania problemu.
+- Użyj **Historia pikseli grafiki** okna, aby dokładniej zlokalizowania problemu.
 
--   Sprawdzanie stanu urządzenia dla potencjalnych problemów i błędów konfiguracji.
+- Sprawdzanie stanu urządzenia dla potencjalnych problemów i błędów konfiguracji.
 
 ## <a name="scenario"></a>Scenariusz
  Jednym z powodów obiektów może nie być widoczna gdy dana osoba w 3-app to błędnej konfiguracji urządzenia grafiki, który powoduje, że obiekty, które mają być wykluczone z renderowaniem — na przykład, gdy kolejność zakręcania powoduje trójkąty uboju, w wyniku błędu , lub kiedy funkcja test głębi powoduje, że wszystkie piksele w obiekcie odrzucona.

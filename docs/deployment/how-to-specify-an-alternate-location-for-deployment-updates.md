@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d44750783ecc7253480750fce10b65e07b2f5fd2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 14a1c072cb8415e8e0a20615c0c963e683f48b56
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630681"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041357"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Instrukcje: Określanie alternatywnej lokalizacji aktualizacji wdrażania
 Można zainstalować usługi [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja początkowo z dysku CD lub udział plików, ale aplikacja musi sprawdzić okresowe aktualizacje w sieci Web. Tak, aby aplikacja może automatycznie zaktualizowana z sieci Web po jego wstępnej instalacji, można określić alternatywną lokalizację aktualizacji w manifeście wdrożenia.
@@ -30,17 +30,17 @@ Można zainstalować usługi [!INCLUDE[ndptecclick](../deployment/includes/ndpte
 
 ### <a name="specify-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Określanie alternatywnej lokalizacji aktualizacji za pomocą MageUI.exe (narzędzie oparte na formularzach Windows)
 
-1.  Otwórz wiersz polecenia w programie .NET Framework i wpisz:
+1. Otwórz wiersz polecenia w programie .NET Framework i wpisz:
 
      **mageui.exe**
 
-2.  Na **pliku** menu, wybierz **Otwórz** na otwarcie manifestu wdrażania aplikacji.
+2. Na **pliku** menu, wybierz **Otwórz** na otwarcie manifestu wdrażania aplikacji.
 
-3.  Wybierz **opcje wdrażania** kartę.
+3. Wybierz **opcje wdrażania** kartę.
 
-4.  W polu tekstowym o nazwie **Uruchom lokalizacji**, wprowadź adres URL do katalogu, który będzie zawierać manifest wdrażania aktualizacji aplikacji.
+4. W polu tekstowym o nazwie **Uruchom lokalizacji**, wprowadź adres URL do katalogu, który będzie zawierać manifest wdrażania aktualizacji aplikacji.
 
-5.  Zapisywanie pliku manifestu wdrożenia.
+5. Zapisywanie pliku manifestu wdrożenia.
 
 ### <a name="specify-an-alternate-location-for-updates-by-using-mageexe"></a>Określanie alternatywnej lokalizacji aktualizacji za pomocą Mage.exe
 

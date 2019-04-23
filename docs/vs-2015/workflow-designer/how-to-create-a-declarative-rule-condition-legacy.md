@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba2db8f1accafab1bdb20eacab73b2a963391075
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dbdcc268b71f2926307b500126840391dd5308fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758876"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039533"
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Instrukcje: Tworzenie warunku reguły deklaratywnej (starsza wersja)
 W tym temacie opisano sposób deklarowania warunku reguły, za pomocą starszego [!INCLUDE[wfd1](../includes/wfd1-md.md)] przeznaczonego [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -27,37 +27,37 @@ W tym temacie opisano sposób deklarowania warunku reguły, za pomocą starszego
   
  Warunki reguły deklaratywnej są używane w następujących działaniach out-of-box Windows Workflow Foundation:  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
--   [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
+- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
   
--   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
+- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
   
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Aby utworzyć warunku reguły deklaratywnej przy użyciu Edytor warunku reguły  
   
-1.  W ramach działania **właściwości** okna, kliknij przycisk **warunek** właściwości lub **UntilCondition** właściwości, w zależności od działania.  
+1. W ramach działania **właściwości** okna, kliknij przycisk **warunek** właściwości lub **UntilCondition** właściwości, w zależności od działania.  
   
-2.  Wybierz **deklaratywne warunku reguły** z listy właściwości.  
+2. Wybierz **deklaratywne warunku reguły** z listy właściwości.  
   
-3.  Rozwiń **warunek** lub **UntilCondition** właściwości.  
+3. Rozwiń **warunek** lub **UntilCondition** właściwości.  
   
-4.  Kliknij przycisk **ConditionName** właściwości.  
+4. Kliknij przycisk **ConditionName** właściwości.  
   
-5.  Kliknij przycisk **ConditionName** wielokropek **[...]**  otworzyć **wybierz warunek** okno dialogowe.  
+5. Kliknij przycisk **ConditionName** wielokropek **[...]**  otworzyć **wybierz warunek** okno dialogowe.  
   
-6.  Kliknij przycisk **nowy warunek** otworzyć **Edytor warunku reguły** okno dialogowe.  
+6. Kliknij przycisk **nowy warunek** otworzyć **Edytor warunku reguły** okno dialogowe.  
   
-7.  Wpisz wyrażenie dla warunku w **warunek** pola tekstowego.  
+7. Wpisz wyrażenie dla warunku w **warunek** pola tekstowego.  
   
      Aby uzyskać informacje o sposobie tworzenia wyrażenia warunku, zobacz [(starsza wersja) okno dialogowe Edytor warunku reguły](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).  
   
-8.  Po zakończeniu tworzenia wyrażenia warunku kliknij **OK** aby zamknąć okno dialogowe i utworzyć warunek reguły z przypisaną nazwę.  
+8. Po zakończeniu tworzenia wyrażenia warunku kliknij **OK** aby zamknąć okno dialogowe i utworzyć warunek reguły z przypisaną nazwę.  
   
      **Wybierz warunek** zostanie otwarte okno dialogowe.  
   

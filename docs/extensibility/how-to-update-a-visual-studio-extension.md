@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be5140fda673b85991d2a9247cff5bd53329944d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 04af0f7a24cc4fc50cb65ac75f085ebf3385eeca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042122"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Instrukcje: Aktualizacja rozszerzenia programu Visual Studio
 Można zaktualizować rozszerzenia programu Visual Studio w systemie przy użyciu **rozszerzenia i aktualizacje** zainstalować zaktualizowaną wersję. Jeśli tworzysz zaktualizowaną wersję rozszerzenia, oznaczyć go jako zaktualizowany przez zwiększenie numeru wersji manifestu VSIX.
@@ -28,30 +28,30 @@ Można zaktualizować rozszerzenia programu Visual Studio w systemie przy użyci
 
 ## <a name="to-update-an-extension-on-your-system"></a>Można zaktualizować rozszerzenia w systemie
 
-1.  Na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.
+1. Na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.
 
-2.  W okienku po lewej stronie kliknij **aktualizacje**.
+2. W okienku po lewej stronie kliknij **aktualizacje**.
 
-3.  W środkowym okienku kliknij aktualizacji, którą chcesz zainstalować.
+3. W środkowym okienku kliknij aktualizacji, którą chcesz zainstalować.
 
      Numer wersji zaktualizowane rozszerzenie jest wyświetlana w okienku po prawej stronie, oraz inne informacje.
 
-4.  W dolnym okienku po prawej stronie, kliknij **aktualizacji**.
+4. W dolnym okienku po prawej stronie, kliknij **aktualizacji**.
 
 ## <a name="to-publish-an-update-of-an-extension"></a>Aby opublikować aktualizację rozszerzenia
 
-1.  W programie Visual Studio Otwórz rozwiązanie dla rozszerzenia, które chcesz zaktualizować. Wprowadź zmiany.
+1. W programie Visual Studio Otwórz rozwiązanie dla rozszerzenia, które chcesz zaktualizować. Wprowadź zmiany.
 
     > [!IMPORTANT]
     >  Niepodpisane wszystkie rozszerzenia użytkowników nie zostaje zaktualizowana automatycznie. Należy zawsze utworzyć rozszerzeń.
 
-2.  W **Eksploratora rozwiązań**, otwórz *source.extension.manifest*.
+2. W **Eksploratora rozwiązań**, otwórz *source.extension.manifest*.
 
-3.  W Projektancie manifestu, należy zwiększyć wartość liczby w parametrze **wersji** pola.
+3. W Projektancie manifestu, należy zwiększyć wartość liczby w parametrze **wersji** pola.
 
-4.  Zapisywanie rozwiązania i skompiluj je.
+4. Zapisywanie rozwiązania i skompiluj je.
 
-5.  Przekaż nowy *.vsix* pliku (w * \bin\Debug\* folder projektu) do [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) witryny sieci Web.
+5. Przekaż nowy *.vsix* pliku (w * \bin\Debug\* folder projektu) do [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) witryny sieci Web.
 
      Po otwarciu użytkownik, który ma wcześniejszą wersję rozszerzenia **rozszerzenia i aktualizacje**, nowa wersja pojawi się w **aktualizacje** listy, pod warunkiem, że narzędzie ma wartość automatycznie wyszukać aktualizacje.
 

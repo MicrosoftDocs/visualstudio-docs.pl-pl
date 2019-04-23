@@ -22,12 +22,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 281ce4ed9f56121ab607aeb49c3ee5b20d5ebe02
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c22989b48c05884bc92eeb017f3a5e124fbc1fec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755499"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039867"
 ---
 # <a name="localizing-clickonce-applications"></a>Lokalizowanie aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Lokalizacja jest procesem tworzenia aplikacji odpowiednie dla określonej kultur
   
  W tym temacie opisano trzy sposoby wdrożenia [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji dla innych języków:  
   
--   Dołącz wszystkie zestawy satelickie pojedynczego wdrożenia.  
+- Dołącz wszystkie zestawy satelickie pojedynczego wdrożenia.  
   
--   Generowanie jedno wdrożenie dla każdej kultury za pomocą zestawu satelickiego pojedynczego uwzględnione w każdej.  
+- Generowanie jedno wdrożenie dla każdej kultury za pomocą zestawu satelickiego pojedynczego uwzględnione w każdej.  
   
--   Pobieranie zestawów satelickich na żądanie.  
+- Pobieranie zestawów satelickich na żądanie.  
   
 ## <a name="including-all-satellite-assemblies-in-a-deployment"></a>W przypadku wdrożenia w tym wszystkie zestawy satelickie  
  Zamiast publikowanie wielu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia, możesz opublikować jeden [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia, który zawiera wszystkie zestawy satelickie.  
@@ -77,9 +77,9 @@ Lokalizacja jest procesem tworzenia aplikacji odpowiednie dla określonej kultur
   
  Masz trzy opcje do testowania wdrożenia zlokalizowane przed udostępnieniem aplikacji dla klientów:  
   
--   Można uruchomić usługi [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji odpowiednie zlokalizowane wersje systemu Windows.  
+- Można uruchomić usługi [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji odpowiednie zlokalizowane wersje systemu Windows.  
   
--   Możesz ustawić <xref:System.Threading.Thread.CurrentUICulture%2A> właściwość programowo w aplikacji. (Ta właściwość musi być ustawiona, zanim wywołasz <xref:System.Windows.Forms.Application.Run%2A> metody.)  
+- Możesz ustawić <xref:System.Threading.Thread.CurrentUICulture%2A> właściwość programowo w aplikacji. (Ta właściwość musi być ustawiona, zanim wywołasz <xref:System.Windows.Forms.Application.Run%2A> metody.)  
   
 ## <a name="see-also"></a>Zobacz też  
  [\<assemblyIdentity> Element](../deployment/assemblyidentity-element-clickonce-deployment.md)   

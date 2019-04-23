@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: eea14ebd5e4c56b62054a982aef83c1b8964b662
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f9aa586f5036c4aa2c321f2dda8333ad4342e165
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650336"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049819"
 ---
 # <a name="build-page-project-designer-c"></a>Strona kompilacji, Projektant projektu (C#)
 Użyj **kompilacji** strony **projektanta projektu** do określania właściwości konfiguracji kompilacji projektu. Ten temat dotyczy [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] wyłącznie dla projektów.
@@ -56,11 +56,11 @@ W przypadku uruchomienia aplikacji jako aplikacji 64-bitowej podwaja się rozmia
 
 To pole wyboru jest dostępne tylko wtedy, gdy spełnione są wszystkie następujące warunki:
 
--   Na **Stroka kompilacji**, **platformę docelową** listy jest ustawiona na **dowolny Procesor**.
+- Na **Stroka kompilacji**, **platformę docelową** listy jest ustawiona na **dowolny Procesor**.
 
--   Na **strony aplikacji**, **typ danych wyjściowych** lista określa, że projekt jest aplikacją.
+- Na **strony aplikacji**, **typ danych wyjściowych** lista określa, że projekt jest aplikacją.
 
--   Na **strony aplikacji**, **platformę docelową** lista określa .NET Framework 4.5.
+- Na **strony aplikacji**, **platformę docelową** lista określa .NET Framework 4.5.
 
 **Zezwalaj na niebezpieczny kod** umożliwia kod, który używa [niebezpieczne](/dotnet/csharp/language-reference/keywords/unsafe) — słowo kluczowe, aby skompilować. Aby uzyskać więcej informacji, zobacz [/ unsafe (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
 

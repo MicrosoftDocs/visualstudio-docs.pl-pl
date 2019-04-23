@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05360ca6e557ae0153715497b85792bc2fb6e2fc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fbf9c2f914bbe0bed741a407faf1d0055a4b43a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693038"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043723"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ.SCC file
 Po umieszczeniu rozwiązania Visual Studio lub projektu objętego kontrolą źródła przy użyciu IDE, IDE otrzymuje dwa ważnych informacji. Informacje pochodzą z wtyczka do kontroli źródła w postaci ciągów. Te ciągi "AuxPath" i "ProjName" są nieprzezroczyste IDE, ale są używane przez wtyczkę do zlokalizowania rozwiązania lub projektu w kontroli wersji. IDE zazwyczaj pobiera te ciągi po raz pierwszy, wywołując [SccGetProjPath](../extensibility/sccgetprojpath-function.md), a następnie zapisuje je w pliku rozwiązania lub projektu w przyszłych wywołaniach do [SccOpenProject](../extensibility/sccopenproject-function.md). Po osadzeniu w plikach rozwiązania i projektu, ciągi "AuxPath" i "ProjName" nie są automatycznie aktualizowane po użytkownik gałęzi, rozwidleń, lub kopiuje pliki rozwiązań i projektów, które znajdują się w kontroli wersji. Aby upewnić się, że pliki rozwiązań i projektów wskazują ich poprawnej lokalizacji w kontroli wersji, należy ręcznie zaktualizować ciągi. Ponieważ ciągi mają być nieprzezroczyste, jego mogą nie być jasne jak powinny być aktualizowane.
@@ -25,19 +25,19 @@ Po umieszczeniu rozwiązania Visual Studio lub projektu objętego kontrolą źr�
 
  Wtyczka do kontroli źródła obsługującego *MSSCCPRJ.SCC* pliku muszą być zgodne z następującymi zasadami:
 
--   Może istnieć tylko jeden *MSSCCPRJ.SCC* plików dla katalogu.
+- Może istnieć tylko jeden *MSSCCPRJ.SCC* plików dla katalogu.
 
--   *MSSCCPRJ.SCC* plik może zawierać "AuxPath" i "ProjName" dla wielu plików, które są pod kontrolą źródła w danym katalogu.
+- *MSSCCPRJ.SCC* plik może zawierać "AuxPath" i "ProjName" dla wielu plików, które są pod kontrolą źródła w danym katalogu.
 
--   Ciąg "AuxPath" nie może mieć cudzysłowy wewnątrz niego. Może on być ma ją w cudzysłowie jako ograniczników (na przykład para podwójnych cudzysłowów służy do wskazania ciągiem pustym). Środowisko IDE będzie paska wszystkich ofert z ciągu "AuxPath", gdy są odczytywane z *MSSCCPRJ.SCC* pliku.
+- Ciąg "AuxPath" nie może mieć cudzysłowy wewnątrz niego. Może on być ma ją w cudzysłowie jako ograniczników (na przykład para podwójnych cudzysłowów służy do wskazania ciągiem pustym). Środowisko IDE będzie paska wszystkich ofert z ciągu "AuxPath", gdy są odczytywane z *MSSCCPRJ.SCC* pliku.
 
--   "ProjName" ciągu w *MSSCCPRJ. Plik SCC* musi być zgodna dokładnie ciąg zwracany z `SccGetProjPath` funkcji. Jeśli ciąg zwracany przez funkcję ma ją ciąg w cudzysłowie *MSSCCPRJ.SCC* plik musi mieć cudzysłowów wokół niej i na odwrót.
+- "ProjName" ciągu w *MSSCCPRJ. Plik SCC* musi być zgodna dokładnie ciąg zwracany z `SccGetProjPath` funkcji. Jeśli ciąg zwracany przez funkcję ma ją ciąg w cudzysłowie *MSSCCPRJ.SCC* plik musi mieć cudzysłowów wokół niej i na odwrót.
 
--   *MSSCCPRJ.SCC* pliku jest tworzony lub aktualizowany zawsze wtedy, gdy plik zostanie umieszczony pod kontrolą źródła.
+- *MSSCCPRJ.SCC* pliku jest tworzony lub aktualizowany zawsze wtedy, gdy plik zostanie umieszczony pod kontrolą źródła.
 
--   Jeśli *MSSCCPRJ.SCC* plik zostaje usunięte, dostawcy należy ponownie wygenerować go następnym razem wykonuje operacja kontroli źródła, dotyczących tego katalogu.
+- Jeśli *MSSCCPRJ.SCC* plik zostaje usunięte, dostawcy należy ponownie wygenerować go następnym razem wykonuje operacja kontroli źródła, dotyczących tego katalogu.
 
--   *MSSCCPRJ.SCC* pliku musi ścisłe zdefiniowanym formacie.
+- *MSSCCPRJ.SCC* pliku musi ścisłe zdefiniowanym formacie.
 
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Ilustracja MSSCCPRJ. Format pliku SCC
  Poniżej przedstawiono przykładowe *MSSCCPRJ.SCC* format pliku (numery wierszy są podane tylko jako wskazówki i nie powinny znajdować się w treści pliku):

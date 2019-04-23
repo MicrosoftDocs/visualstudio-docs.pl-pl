@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f62318da0fc60a0fa9200d8ec11bdc4bb567ad86
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: f6cd0ac349d332f7e07d4f0ce6e5567cb5deb63c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954390"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067069"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Zarządzaj skojarzeniami plików side-by-side
 
@@ -51,7 +51,7 @@ Jeśli chcesz, aby wiele VSPackages side-by-side, aby użyć tego samego rozszer
 
   **Akcja niestandardowa wiersze tabeli, które określają najnowszą wersję programu Visual Studio**
 
-  |Akcja|Typ|Źródło|Cel|
+  |Akcja|Typ|Source|Cel|
   |------------|----------|------------|------------|
   |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|
@@ -81,9 +81,9 @@ Odinstalowywanie pakietów VSPackage, który zapisuje wpisy rejestru dla skojarz
 
 - Poinstruuj użytkownika, aby uruchomić naprawę wersję pakietu VSPackage, które użytkownik chce do kojarzenia plików.
 
--   Podaj oddzielny program wykonywalny, który ponownie zapisuje wpisy rejestru odpowiednie.
+- Podaj oddzielny program wykonywalny, który ponownie zapisuje wpisy rejestru odpowiednie.
 
--   Podaj konfiguracji opcje strony lub okna dialogowego pole, które umożliwia użytkownikom wybieranie skojarzenia plików i odzyskać utracone skojarzenia. Poinstruować użytkowników, aby uruchomić go po dezinstalacji.
+- Podaj konfiguracji opcje strony lub okna dialogowego pole, które umożliwia użytkownikom wybieranie skojarzenia plików i odzyskać utracone skojarzenia. Poinstruować użytkowników, aby uruchomić go po dezinstalacji.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -16,12 +16,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: abe38162f20fb73de04301e97974dc348d704b6f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a20266c870316be9b6be67e661d13eb4e6fdbaee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770894"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047228"
 ---
 # <a name="collecting-tier-interaction-data"></a>Zbieranie danych o interakcji między warstwami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Profilowanie interakcji pomiędzy warstwami zawiera dodatkowe informacje na tema
   
 ### <a name="to-add-tier-interaction-data-to-a-profiling-run-by-using-the-performance-session-property-pages"></a>Aby dodać dane interakcji między warstwami do profilowania za pomocą stron właściwości sesji wydajności  
   
-1.  W Eksploratorze wydajności, wybierz **właściwości** z menu kontekstowego.  
+1. W Eksploratorze wydajności, wybierz **właściwości** z menu kontekstowego.  
   
-2.  Wybierz **interakcje warstw** strony, a następnie sprawdź **Włącz profilowanie interakcji pomiędzy warstwami** pole wyboru.  
+2. Wybierz **interakcje warstw** strony, a następnie sprawdź **Włącz profilowanie interakcji pomiędzy warstwami** pole wyboru.  
   
-3.  W Eksploratorze wydajności wybierz **cele** węzła, a następnie określ project, plik wykonywalny lub witryny sieci web, które powinny być profilowane.  
+3. W Eksploratorze wydajności wybierz **cele** węzła, a następnie określ project, plik wykonywalny lub witryny sieci web, które powinny być profilowane.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok interakcji między warstwami](../profiling/tier-interactions-view.md)

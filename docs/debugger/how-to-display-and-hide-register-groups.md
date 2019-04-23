@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be702dcd19506e6da8fb1e291aa5262dbf4399b2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a904bfcf147d72dde16ffe0fbf9e754c2c356bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018452"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037823"
 ---
 # <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Instrukcje: Wyświetlanie i ukrywanie grup rejestru (C#, C++, Visual Basic F#)
 
@@ -37,9 +37,9 @@ Aby zwiększyć czytelność, **rejestruje** okna organizuje rejestrów w grupac
 
 ## <a name="display-or-hide-register-groups"></a>Wyświetlanie i ukrywanie grup rejestru
 
-1.  Kliknij prawym przyciskiem myszy **rejestruje** okna.
+1. Kliknij prawym przyciskiem myszy **rejestruje** okna.
 
-2.  W menu skrótów wybierz grup rejestru, który chcesz pokazać lub ukryć.
+2. W menu skrótów wybierz grup rejestru, który chcesz pokazać lub ukryć.
 
      Grupy rejestru, które nie są obsługiwane przez sprzęt, który debugujesz na są wyłączone w menu skrótów, więc nie można je wybrać.
 

@@ -9,12 +9,12 @@ ms.assetid: 0f6ba8e4-1343-419c-8a9f-240cf50efed7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 432688aba2d9d965e83988e62624df317308cb2d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4c29620cad3333144d65386e509339e2f5eccddf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957864"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051573"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Korzystanie z legendy wykresu przeprowadzania analizy testów obciążenia
 
@@ -26,18 +26,18 @@ Widok wykresów analizatora testu obciążenia, zawierają panel legendy, który
 
 Następujące informacje są zawarte wewnątrz legendy:
 
--   **Pokaż na wykresie:** Użyj pól wyboru, aby określić, czy wiersz dla określonego licznika, takich jak **obciążenie użytkownikami** lub **błędy na sekundę**, jest wykreślany na wykresie. Zaznacz pole wyboru, jeśli chcesz, aby wiersz, który ma być oznaczane na wykresach na wykresie. Wyczyść pole wyboru, aby usunąć wiersz z wykresu. Jeśli linia podziału zostanie usunięta, statystyki licznika będą nadal wyświetlane w legendzie.
+- **Pokaż na wykresie:** Użyj pól wyboru, aby określić, czy wiersz dla określonego licznika, takich jak **obciążenie użytkownikami** lub **błędy na sekundę**, jest wykreślany na wykresie. Zaznacz pole wyboru, jeśli chcesz, aby wiersz, który ma być oznaczane na wykresach na wykresie. Wyczyść pole wyboru, aby usunąć wiersz z wykresu. Jeśli linia podziału zostanie usunięta, statystyki licznika będą nadal wyświetlane w legendzie.
 
--   **Zakres:** Ta kolumna zawiera zakres osi y licznika wydajności. Domyślnie ta wartość będzie automatycznie dopasowywać jako zakres zmiany danych przykładowych. Automatycznie skorygowany zakres, zawsze będzie następną potęgą liczby 10, większą niż maksymalna wartość. Obejmuje to negatywne potęgi dziesięciu. Wykres może zawierać wiele liczników, każdy z innym zakresem. Z tego powodu, oś y nie jest oznaczona żadnym określonym zakresem, ale zamiast tego, jest oznaczona wartościami z zakresu 0-100, które reprezentują procent całkowitego zakresu, dla każdego licznika. Na przykład dla licznika o zakresie 1000 punkt danych 60 na osi y będzie odpowiadać wartości 600 dla tego licznika.
+- **Zakres:** Ta kolumna zawiera zakres osi y licznika wydajności. Domyślnie ta wartość będzie automatycznie dopasowywać jako zakres zmiany danych przykładowych. Automatycznie skorygowany zakres, zawsze będzie następną potęgą liczby 10, większą niż maksymalna wartość. Obejmuje to negatywne potęgi dziesięciu. Wykres może zawierać wiele liczników, każdy z innym zakresem. Z tego powodu, oś y nie jest oznaczona żadnym określonym zakresem, ale zamiast tego, jest oznaczona wartościami z zakresu 0-100, które reprezentują procent całkowitego zakresu, dla każdego licznika. Na przykład dla licznika o zakresie 1000 punkt danych 60 na osi y będzie odpowiadać wartości 600 dla tego licznika.
 
     > [!NOTE]
     > Blokowanie zakresu do określonej wartości, można wyłączyć automatyczne zakresu dopasowania wartości. Gdy zakres jest zablokowany, wszystkie wartości przekraczające zakres, są wyświetlane jako maksymalna wartość, określona w górnej części wykresu. Użyj **Opcje wykresu** okno dialogowe, aby zablokować zakresu w określonej wartości.
 
--   **Licznik:** Cztery kolumny o nazwie **licznika**, **wystąpienia**, **kategorii**, i **komputera** razem jednoznacznie identyfikują licznik wydajności.
+- **Licznik:** Cztery kolumny o nazwie **licznika**, **wystąpienia**, **kategorii**, i **komputera** razem jednoznacznie identyfikują licznik wydajności.
 
--   **Kolor:** **Kolor** kolumna pokazuje styl linii linii wykreślona licznika wydajności. Użyj **Opcje wykresu** okno dialogowe, aby zmienić kolor lub wiersza stylu licznika wydajności na wykresie. **Opcje wykresu** okno dialogowe jest dostępne z menu skrótów legendy.
+- **Kolor:** **Kolor** kolumna pokazuje styl linii linii wykreślona licznika wydajności. Użyj **Opcje wykresu** okno dialogowe, aby zmienić kolor lub wiersza stylu licznika wydajności na wykresie. **Opcje wykresu** okno dialogowe jest dostępne z menu skrótów legendy.
 
--   **Statystyki:** **Min**, **Max**, **Avg** i **ostatniego** kolumn pokazują odpowiednie statystyki dotyczące licznika wydajności. Te wartości odpowiadają danych, który jest wyświetlany na widocznych obszaru wykresu. Na przykład jeśli powiększysz region przebiegu, statystyki legendy będą odzwierciedlać wartości, tylko dla powiększonego obszaru. Kolumna "Last" jest wartość licznika wydajności z ostatnio wykonanych interwałem próbkowania.
+- **Statystyki:** **Min**, **Max**, **Avg** i **ostatniego** kolumn pokazują odpowiednie statystyki dotyczące licznika wydajności. Te wartości odpowiadają danych, który jest wyświetlany na widocznych obszaru wykresu. Na przykład jeśli powiększysz region przebiegu, statystyki legendy będą odzwierciedlać wartości, tylko dla powiększonego obszaru. Kolumna "Last" jest wartość licznika wydajności z ostatnio wykonanych interwałem próbkowania.
 
     > [!NOTE]
     > Ostatnia kolumna wyświetla się tylko w legendzie analizatora testu obciążeniowego podczas uruchomienia testu obciążeniowego.
@@ -46,13 +46,13 @@ Następujące informacje są zawarte wewnątrz legendy:
 
 Zaznaczenie elementu w legendzie, wykonuje następujące czynności:
 
--   Umożliwia elementu do usunięcia z wykresu i legenda. Albo kliknij prawym przyciskiem myszy element i wybierz **Usuń**, lub naciśnij **Usuń** klucza.
+- Umożliwia elementu do usunięcia z wykresu i legenda. Albo kliknij prawym przyciskiem myszy element i wybierz **Usuń**, lub naciśnij **Usuń** klucza.
 
--   Wyróżnia wykreślona linii na wykresie.
+- Wyróżnia wykreślona linii na wykresie.
 
--   Powoduje, że siatce danych wyświetlić dane dla wybranego elementu.
+- Powoduje, że siatce danych wyświetlić dane dla wybranego elementu.
 
--   Zapewnia dostęp do **Opcje wykresu** okno dialogowe licznika.
+- Zapewnia dostęp do **Opcje wykresu** okno dialogowe licznika.
 
 > [!TIP]
 > Możesz użyć **menu rozwijane Opcje wykresu** znajdujący się w **analizatora testu obciążenia** narzędzi i wybierz pozycję **Pokaż legendę** pokazać lub ukryć **legendy** Panel, który jest skojarzony z widokiem wykresu.

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd92f2c87d1f9541d0b5fc7c812c2a096ee0615a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9c09e8eeed3ba5b7e2a348982444ad8faa0884e9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948951"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047816"
 ---
 # <a name="model-your-app39s-architecture"></a>Model aplikacji&#39;architektury s
 Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytkowników potrzebuje, możesz tworzyć modele w programie Visual Studio, jako część opisie ogólną strukturę i zachowanie systemu oprogramowania lub aplikacji. Przy użyciu modeli, może również opisywać wzorców, które są używane w całym projekcie. Modele te ułatwiają zrozumienie istniejącej architektury, omówiono zmiany i wyraźnie komunikacji zamiaru.
@@ -28,9 +28,9 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
 
  Architektura systemu można podzielić na dwóch obszarach:
 
--   [Projektowania wysokiego poziomu](#Structure). Opisuje główne składniki i jak współdziałają ze sobą w celu spełnienia poszczególnych wymagań. Jeśli system jest duża, każdy składnik może mieć własną projektowania wysokiego poziomu, który pokazuje, jak jest zbudowany z mniejszych składników.
+- [Projektowania wysokiego poziomu](#Structure). Opisuje główne składniki i jak współdziałają ze sobą w celu spełnienia poszczególnych wymagań. Jeśli system jest duża, każdy składnik może mieć własną projektowania wysokiego poziomu, który pokazuje, jak jest zbudowany z mniejszych składników.
 
--   [Wzorce projektowe](#Patterns) i Konwencji używanych w całym projekty składników. Wzorzec opisuje sposób postępowania w osiąganiu celu programowania. Za pomocą tych samych wzorców w całym projekcie, Twój zespół może zmniejszyć kosztów wprowadzania zmian i tworzenie nowego oprogramowania.
+- [Wzorce projektowe](#Patterns) i Konwencji używanych w całym projekty składników. Wzorzec opisuje sposób postępowania w osiąganiu celu programowania. Za pomocą tych samych wzorców w całym projekcie, Twój zespół może zmniejszyć kosztów wprowadzania zmian i tworzenie nowego oprogramowania.
 
 ## <a name="Structure"></a> Projektowania wysokiego poziomu
  Projektowania wysokiego poziomu w tym artykule opisano główne składniki systemu i jak współdziałają ze sobą w celu osiągnięcia celów projektowania. Działania na poniższej liście są zaangażowane w opracowywaniu projektowania wysokiego poziomu, ale niekoniecznie w określonej kolejności.
@@ -39,11 +39,11 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
 
  W każdym przypadku jest przydatne do tworzenia różnych działań równoległych i tworzenie kodu i testów na wczesnym etapie. Należy unikać próby wykonaj jedną z tych aspektów, przed rozpoczęciem korzystania z innej. Zazwyczaj wymagania i zrozumieć, najlepszym sposobem na projektowanie systemu zmieni się podczas pisania i testowania kodu. W związku z tym należy rozpocząć poprzez zrozumienie i kodowania najważniejszych funkcji, wymagań i projektu. Wypełnij szczegóły w późniejszej iteracji projektu.
 
--   [Opis wymagań](#Requirements). Punkt początkowy dowolnego projektu jest jasne zrozumienie potrzeb użytkowników.
+- [Opis wymagań](#Requirements). Punkt początkowy dowolnego projektu jest jasne zrozumienie potrzeb użytkowników.
 
--   [Wzorce architektury](#BigDecisions). Opcje wprowadzone o podstawowych technologii i architektury elementów systemu.
+- [Wzorce architektury](#BigDecisions). Opcje wprowadzone o podstawowych technologii i architektury elementów systemu.
 
--   Model danych składników i interfejsy. Możesz narysować diagramy klas do opisania informacje, które jest przekazywane między składnikami, a następnie przechowywane wewnątrz składników.
+- Model danych składników i interfejsy. Możesz narysować diagramy klas do opisania informacje, które jest przekazywane między składnikami, a następnie przechowywane wewnątrz składników.
 
 ## <a name="Requirements"></a> Omówienie wymagań
  Ogólny projekt kompletnej aplikacji jest najbardziej efektywne opracowany wraz z modelem wymagania lub innych opis potrzeb użytkowników. Aby uzyskać więcej informacji na temat modeli wymagania, zobacz [modelowanie wymagań użytkowników](../modeling/model-user-requirements.md).
@@ -88,19 +88,19 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
 
  Wzorzec projektowy jest opisane w dokumencie i zwykle obejmuje następujące elementy:
 
--   Nazwa.
+- Nazwa.
 
--   Opis kontekst, w której ma zastosowanie. Jakie kryteria należy upewnić się deweloperem, należy rozważyć stosowanie tego wzorca?
+- Opis kontekst, w której ma zastosowanie. Jakie kryteria należy upewnić się deweloperem, należy rozważyć stosowanie tego wzorca?
 
--   Krótki opis problemów, które ona rozwiązuje.
+- Krótki opis problemów, które ona rozwiązuje.
 
--   Model głównych składników oraz ich wzajemne relacje. Może to być klasy lub składniki i interfejsy, za pomocą skojarzeń i zależności między nimi. Elementy zazwyczaj można podzielić na dwie kategorie:
+- Model głównych składników oraz ich wzajemne relacje. Może to być klasy lub składniki i interfejsy, za pomocą skojarzeń i zależności między nimi. Elementy zazwyczaj można podzielić na dwie kategorie:
 
--   Konwencje nazewnictwa.
+- Konwencje nazewnictwa.
 
--   Opis sposobu wzorzec rozwiązuje problem.
+- Opis sposobu wzorzec rozwiązuje problem.
 
--   Opis zmian, które deweloperzy mogą mieć możliwość przyjęcia.
+- Opis zmian, które deweloperzy mogą mieć możliwość przyjęcia.
 
 ## <a name="see-also"></a>Zobacz też
 

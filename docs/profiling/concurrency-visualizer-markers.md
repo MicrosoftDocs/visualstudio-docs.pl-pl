@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64b602b5c00380449eb1c296ccde98a88bdc1abc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ab5e4b65db5c3d96b16a68a7b8e21a2786b9110b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600236"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047244"
 ---
 # <a name="concurrency-visualizer-markers"></a>Znaczniki CONCURRENCY Visualizer
 W Wizualizatorze współbieżności znaczniki są ikon reprezentujących zdarzenia w aplikacji.  Zazwyczaj aplikacja wygeneruje tych zdarzeń do wyznaczenia fazy lub wystąpień w aplikacji.  Zdarzenia mogą być generowane przez aplikację lub bibliotek i środowisk wykonawczych, przez aplikację.
@@ -23,11 +23,11 @@ W Wizualizatorze współbieżności znaczniki są ikon reprezentujących zdarzen
 ## <a name="kinds-of-markers"></a>Rodzaje znaczników
  Narzędzie Concurrency Visualizer używa trzy rodzaje znaczników, który reprezentuje zdarzenia aplikacji: flaguje wiadomości i obejmuje.
 
-1.  Użyj *flagi* do wskazania interesujące punktu w czasie w swojej aplikacji.  Na przykład może użyć flagi do reprezentowania, że wartość zmiennej osiągnęła określony próg lub został zgłoszony wyjątek.
+1. Użyj *flagi* do wskazania interesujące punktu w czasie w swojej aplikacji.  Na przykład może użyć flagi do reprezentowania, że wartość zmiennej osiągnęła określony próg lub został zgłoszony wyjątek.
 
-2.  A *komunikat* również znaczniki punktu w czasie, ale możesz go używać stylu dziennika śledzenia.  Na przykład co może mieć zostały zrzucone do pliku dziennika, który teraz można opakować wywołanie wiadomości, aby można ją śledzić i wyświetlać go w Wizualizatorze współbieżności. Narzędzie Concurrency Visualizer umożliwia również wyeksportować te dane do pliku CSV.
+2. A *komunikat* również znaczniki punktu w czasie, ale możesz go używać stylu dziennika śledzenia.  Na przykład co może mieć zostały zrzucone do pliku dziennika, który teraz można opakować wywołanie wiadomości, aby można ją śledzić i wyświetlać go w Wizualizatorze współbieżności. Narzędzie Concurrency Visualizer umożliwia również wyeksportować te dane do pliku CSV.
 
-3.  A *span* reprezentuje przedział czasu w swojej aplikacji, na przykład jeden z jego faz.
+3. A *span* reprezentuje przedział czasu w swojej aplikacji, na przykład jeden z jego faz.
 
 ## <a name="marker-linkage-to-threads"></a>Powiązania znacznika dla wątków
  Każdy wątek, który generuje znaczniki ma kanału oddzielne osi czasu.  Identyfikator wątku, który jest odpowiedzialny za wygenerowanie zdarzenia znacznik jest wyświetlany obok opis kanału znacznika.  Identyfikator, który jest wyświetlany po lewej stronie kanału znaczników zgodny z Identyfikatorem inny wątek w bieżącym procesie.

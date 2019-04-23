@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 476e72e50ac796412fbeef1c180a3340764fb121
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 14c31acc336818a8846d2ddf7981f64e045f68e8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907663"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062155"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Instrukcje: Tworzenie i usuwanie zależności projektu
 
@@ -47,18 +47,18 @@ Podczas kompilowania rozwiązania, które zawiera wiele projektów, może być k
 
 ## <a name="to-remove-dependencies-from-projects"></a>Aby usunąć zależności z projektów
 
-1.  W **Eksploratora rozwiązań**, wybierz projekt.
+1. W **Eksploratora rozwiązań**, wybierz projekt.
 
-2.  Na **projektu** menu, wybierz **zależności projektu**.
+2. Na **projektu** menu, wybierz **zależności projektu**.
 
      **Zależności projektu** zostanie otwarte okno dialogowe.
 
     > [!NOTE]
     > **Zależności projektu** opcja jest dostępna tylko w rozwiązaniu z więcej niż jeden projekt.
 
-3.  Na **zależności** , a następnie wybierz projekt z **projektu** menu rozwijanego.
+3. Na **zależności** , a następnie wybierz projekt z **projektu** menu rozwijanego.
 
-4.  W **zależy od** pola, wyczyść pole wyboru obok pozycji inne projekty, które nie są już zależności dla tego projektu.
+4. W **zależy od** pola, wyczyść pole wyboru obok pozycji inne projekty, które nie są już zależności dla tego projektu.
 
 ## <a name="see-also"></a>Zobacz także
 

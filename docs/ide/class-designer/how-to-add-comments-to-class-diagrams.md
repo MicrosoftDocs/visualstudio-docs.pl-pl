@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b220ddc42857040a51b2308c6d4a83d931de09
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ad54dc716e02eabcc064d87213d01491f43eae82
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970546"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052314"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>Instrukcje: Dodawanie komentarzy do diagramów klas
 
@@ -31,9 +31,9 @@ Możesz zmienić rozmiar kształtu komentarza, ale nie można zmienić inne aspe
 
 ## <a name="to-add-a-comment"></a>Aby dodać komentarz
 
-1.  Przeciągnij komentarz z **przybornika projektanta klas** na diagram klas.
+1. Przeciągnij komentarz z **przybornika projektanta klas** na diagram klas.
 
-2.  Kliknij nowy komentarz kształt na diagramie, a następnie wpisz tekst, który ma.
+2. Kliknij nowy komentarz kształt na diagramie, a następnie wpisz tekst, który ma.
 
 ## <a name="see-also"></a>Zobacz także
 

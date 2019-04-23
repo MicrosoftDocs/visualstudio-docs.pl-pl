@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a5df1eebed8e59c994af88a0e3b21e02009c3f1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c4bd2a688e2a10bf0b931851b0d4366684820bf1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614886"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049922"
 ---
 # <a name="source-control-integration-overview"></a>Omówienie integracji kontroli kodu źródłowego
 W tej sekcji porównuje dwa sposoby integracji kontroli źródła programu Visual Studio; kontroli źródła wtyczek i pakietu VSPackage, który zapewnia rozwiązanie do kontroli źródła i wyróżnienie nowej funkcji kontroli źródła. Program Visual Studio umożliwia ręczne przełączanie między kontroli źródła pakietów VSPackage i wtyczek kontroli kodu źródłowego, a także automatyczne przełączanie oparte na rozwiązaniach.
@@ -40,19 +40,19 @@ W tej sekcji porównuje dwa sposoby integracji kontroli źródła programu Visua
 
 ### <a name="drawbacks-to-implementing-a-source-control-plug-in"></a>Wady do wdrażania wtyczki kontroli źródła
 
--   Zaawansowane funkcje użytkownik może uzyskać dwa różne style interfejsów, prowadzące do potencjalne problemy.
+- Zaawansowane funkcje użytkownik może uzyskać dwa różne style interfejsów, prowadzące do potencjalne problemy.
 
--   Wtyczka do kontroli źródła jest ograniczona do model kontroli źródła, dorozumianych przez interfejs API wtyczki kontroli źródła.
+- Wtyczka do kontroli źródła jest ograniczona do model kontroli źródła, dorozumianych przez interfejs API wtyczki kontroli źródła.
 
--   Interfejs API wtyczki kontroli źródła może być zbyt restrykcyjna dla niektórych scenariuszy kontroli źródła.
+- Interfejs API wtyczki kontroli źródła może być zbyt restrykcyjna dla niektórych scenariuszy kontroli źródła.
 
 ### <a name="advantages-to-implementing-a-source-control-plug-in"></a>Zalety do wdrażania wtyczki kontroli źródła
 
--   Program Visual Studio dostarcza wszystkich w interfejsie użytkownika dla wszystkich operacji kontroli źródła podstawowe tak, aby wtyczka do kontroli źródła nie trzeba implementować złożonych interfejsu użytkownika.
+- Program Visual Studio dostarcza wszystkich w interfejsie użytkownika dla wszystkich operacji kontroli źródła podstawowe tak, aby wtyczka do kontroli źródła nie trzeba implementować złożonych interfejsu użytkownika.
 
--   Ze względu na ścisłym interfejsu API wtyczka do kontroli źródła można łatwo interakcję z programami kontroli zewnętrznego źródła, aby zapewnić bardziej rozległe funkcjonalności. Program Visual Studio nie się zbyt dużo jak funkcji kontroli źródła jest realizowane, tylko że odbywa się zgodnie z interfejsu API wtyczki kontroli źródła.
+- Ze względu na ścisłym interfejsu API wtyczka do kontroli źródła można łatwo interakcję z programami kontroli zewnętrznego źródła, aby zapewnić bardziej rozległe funkcjonalności. Program Visual Studio nie się zbyt dużo jak funkcji kontroli źródła jest realizowane, tylko że odbywa się zgodnie z interfejsu API wtyczki kontroli źródła.
 
--   Jest to łatwiejsze do wdrożenia wtyczka do kontroli źródła niż pakietu VSPackage kontroli źródła.
+- Jest to łatwiejsze do wdrożenia wtyczka do kontroli źródła niż pakietu VSPackage kontroli źródła.
 
 ## <a name="source-control-vspackage"></a>Pakiet VSPackage kontroli
  [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Umożliwia ścisłą integrację do programu Visual Studio z pełną kontrolę nad funkcji kontroli źródła i całkowite zastąpienie interfejsu użytkownika kontroli źródła dostarczone do programu Visual Studio. Pakietu VSPackage kontroli źródła jest zarejestrowany w programie Visual Studio i zapewnia funkcji kontroli źródła. Chociaż kilka kontroli źródła pakietów VSPackage można zarejestrować za pomocą programu Visual Studio, tylko jeden z nich może być aktywny w dowolnym momencie. Kontroli źródła pakietu VSPackage ma pełną kontrolę nad funkcji kontroli źródła i wyglądu w programie Visual Studio, gdy jest aktywny. Wszystkie inne kontroli źródła pakietów VSPackage, który może zostać zarejestrowana w systemie nie są aktywne i nie będą wyświetlane wszelkich elementów interfejsu użytkownika na wszystkich.
@@ -61,17 +61,17 @@ W tej sekcji porównuje dwa sposoby integracji kontroli źródła programu Visua
 
 ### <a name="drawbacks-to-implementing-a-source-control-vspackage"></a>Wady do wdrażania pakietu VSPackage kontroli źródła
 
--   Pakietu VSPackage musi implementować liczby złożone interfejsy pomyślnie integracji z programem Visual Studio.
+- Pakietu VSPackage musi implementować liczby złożone interfejsy pomyślnie integracji z programem Visual Studio.
 
--   Pakietu VSPackage należy podać wszystkie wymagane do kontroli źródła; interfejsu użytkownika Program Visual Studio zapewnia nie pomocy, w tym obszarze.
+- Pakietu VSPackage należy podać wszystkie wymagane do kontroli źródła; interfejsu użytkownika Program Visual Studio zapewnia nie pomocy, w tym obszarze.
 
--   Pakietu VSPackage kontroli źródła jest ściśle powiązany z programu Visual Studio i nie może działać przy użyciu programów autonomicznych, dzięki funkcji nie można łatwo udostępniać zewnętrznych wersji programu kontroli źródła.
+- Pakietu VSPackage kontroli źródła jest ściśle powiązany z programu Visual Studio i nie może działać przy użyciu programów autonomicznych, dzięki funkcji nie można łatwo udostępniać zewnętrznych wersji programu kontroli źródła.
 
 ### <a name="advantages-to-implementing-a-source-control-vspackage"></a>Zalety do wdrażania pakietu VSPackage kontroli źródła
 
--   Ponieważ pakietu VSPackage ma pełną kontrolę nad interfejsu użytkownika do kontroli źródła i funkcji, użytkownik zostanie wyświetlony interfejs do kontroli źródła.
+- Ponieważ pakietu VSPackage ma pełną kontrolę nad interfejsu użytkownika do kontroli źródła i funkcji, użytkownik zostanie wyświetlony interfejs do kontroli źródła.
 
--   Pakietu VSPackage nie jest ograniczona do modelu kontroli określonego źródła.
+- Pakietu VSPackage nie jest ograniczona do modelu kontroli określonego źródła.
 
 ## <a name="see-also"></a>Zobacz też
 - [Kontrola kodu źródłowego](../../extensibility/internals/source-control.md)

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e74de898bb9e7810729a0895834f7cdfe5ee5984
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6b773fc52da702f2563276b4a8e51b6c3651f596
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691309"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044498"
 ---
 # <a name="sccget-function"></a>Funkcja SccGet
 Ta funkcja pobiera kopię jeden lub więcej plików do przeglądania i kompilacji, ale nie do edycji. W większości systemów pliki są oznaczone jako tylko do odczytu.
@@ -90,21 +90,21 @@ SCCRTN SccGet(
 
  Istnieją dwa sposoby, aby rozwiązać ten problem, gdzie w lokalnej pamięci podręcznej wersji kontroli źródła staje się zsynchronizowany z bazy danych kontroli źródła:
 
-1.  Nie zezwalaj na zmianę nazwy pliku w bazie danych kontroli źródła, która jest obecnie wyewidencjonowany.
+1. Nie zezwalaj na zmianę nazwy pliku w bazie danych kontroli źródła, która jest obecnie wyewidencjonowany.
 
-2.  Czy wielokrotność "Usuń stare" następuje "Dodaj nowe". Następującego algorytmu jest jednym ze sposobów osiągnięcia tego.
+2. Czy wielokrotność "Usuń stare" następuje "Dodaj nowe". Następującego algorytmu jest jednym ze sposobów osiągnięcia tego.
 
-    1.  Wywołaj [SccQueryChanges](../extensibility/sccquerychanges-function.md) funkcji, aby dowiedzieć się więcej na temat zmiany nazwy elementu *a.txt* do *b.txt* w bazie danych kontroli źródła.
+    1. Wywołaj [SccQueryChanges](../extensibility/sccquerychanges-function.md) funkcji, aby dowiedzieć się więcej na temat zmiany nazwy elementu *a.txt* do *b.txt* w bazie danych kontroli źródła.
 
-    2.  Zmień nazwę lokalnej *a.txt* do *b.txt*.
+    2. Zmień nazwę lokalnej *a.txt* do *b.txt*.
 
-    3.  Wywołaj `SccGet` funkcji dla obu *a.txt* i *b.txt*.
+    3. Wywołaj `SccGet` funkcji dla obu *a.txt* i *b.txt*.
 
-    4.  Ponieważ *a.txt* nie istnieje w bazie danych kontroli źródła, wersja lokalna pamięć podręczna są przeczyszczane brakujących *a.txt* informacje o wersji.
+    4. Ponieważ *a.txt* nie istnieje w bazie danych kontroli źródła, wersja lokalna pamięć podręczna są przeczyszczane brakujących *a.txt* informacje o wersji.
 
-    5.  *B.txt* plik jest wyewidencjonowany jest scalany z zawartości lokalnej *b.txt* pliku.
+    5. *B.txt* plik jest wyewidencjonowany jest scalany z zawartości lokalnej *b.txt* pliku.
 
-    6.  Zaktualizowany interfejs *b.txt* pliku mogą teraz zostać zaewidencjonowane.
+    6. Zaktualizowany interfejs *b.txt* pliku mogą teraz zostać zaewidencjonowane.
 
 ## <a name="see-also"></a>Zobacz także
 - [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)

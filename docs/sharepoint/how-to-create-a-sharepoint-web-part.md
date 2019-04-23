@@ -13,37 +13,37 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3328c8900a202dd28eb2cab7c9651de8f45aa35e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 304e9f29d317a5258467e4ff45248d0dd2066d4f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636921"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041124"
 ---
 # <a name="how-to-create-a-sharepoint-web-part"></a>Instrukcje: Tworzenie składnika web part programu SharePoint
   Można tworzyć i dostosowywać składnika web part, dodając **składnika Web Part** element do każdego projektu programu SharePoint, a następnie edytując plik kodu dla składnika web part lub za pomocą projektanta. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie części sieciowej SharePoint za pomocą projektanta](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).
 
 ### <a name="to-create-a-sharepoint-web-part"></a>Aby utworzyć składnik web part programu SharePoint
 
-1.  Utwórz lub Otwórz projekt programu SharePoint.
+1. Utwórz lub Otwórz projekt programu SharePoint.
 
      Aby uzyskać więcej informacji, zobacz [SharePoint szablony elementu projektu i projektu](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2.  Wybierz węzeł projektu programu SharePoint w **Eksploratora rozwiązań** , a następnie wybierz **projektu** > **Dodaj nowy element**.
+2. Wybierz węzeł projektu programu SharePoint w **Eksploratora rozwiązań** , a następnie wybierz **projektu** > **Dodaj nowy element**.
 
-3.  W **Dodaj nowy element** okna dialogowego rozwiń **SharePoint** węzła, a następnie wybierz **2010** węzła.
+3. W **Dodaj nowy element** okna dialogowego rozwiń **SharePoint** węzła, a następnie wybierz **2010** węzła.
 
-4.  Na liście szablonów programu SharePoint, wybierz opcję **składnika Web Part**.
+4. Na liście szablonów programu SharePoint, wybierz opcję **składnika Web Part**.
 
-5.  W **nazwa** , określ nazwę dla składnika web part, a następnie wybierz **Dodaj** przycisku.
+5. W **nazwa** , określ nazwę dla składnika web part, a następnie wybierz **Dodaj** przycisku.
 
      Składnik web part, który pojawia się w **Eksploratora rozwiązań**. Aby uzyskać więcej informacji o plikach, które zawiera składnik web part, zobacz [utworzyć składniki web Part programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
 
-6.  W **Eksploratora rozwiązań**, otwórz plik kodu dla składnika web part, który został utworzony.
+6. W **Eksploratora rozwiązań**, otwórz plik kodu dla składnika web part, który został utworzony.
 
      Na przykład, jeśli nazwa składnika web part jest *WebPart1*, otwórz *WebPart1.vb* (w języku Visual Basic) lub *WebPart1.cs* (w C#).
 
-7.  W pliku kodu, należy dodać formanty do <xref:System.Web.UI.Control.CreateChildControls%2A> metody.
+7. W pliku kodu, należy dodać formanty do <xref:System.Web.UI.Control.CreateChildControls%2A> metody.
 
      Aby uzyskać przykład, zobacz [instruktażu: Tworzenie składnika web part programu SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md).
 

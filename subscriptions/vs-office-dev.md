@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat korzyści Office 365 dla deweloperów, zawarte w Twojej subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: a655a731533bcf9952265cd3697956c278eeae6b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 31dae1adaaa4fd500357988471718f6ea074a40c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659085"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052106"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Korzyści z subskrypcji dewelopera Office 365 w ramach subskrypcji programu Visual Studio
 
@@ -66,7 +66,7 @@ Aby dowiedzieć się więcej na temat subskrypcji dewelopera Office 365, zapozna
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dołączono      |  Yes          |
+| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dołączono      |  Tak          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Niedostępne                                                            |Nie dotyczy         |
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  Nie dotyczy         |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                              | Nie dotyczy         |
@@ -82,6 +82,6 @@ Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://m
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 
--  Potrzebujesz pomocy dotyczącej subskrypcji dewelopera pakietu Office? Zapoznaj się z [obsługuje](https://developer.microsoft.com/office/support) zasobów na [Centrum deweloperów pakietu Office](https://developer.microsoft.com/office).
--  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+- Potrzebujesz pomocy dotyczącej subskrypcji dewelopera pakietu Office? Zapoznaj się z [obsługuje](https://developer.microsoft.com/office/support) zasobów na [Centrum deweloperów pakietu Office](https://developer.microsoft.com/office).
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
+- Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

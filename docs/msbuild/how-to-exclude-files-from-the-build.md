@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a798f200734dd4db885aee4a25258bfdb49c69c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f30454cb88b9310e78af70997949d970a161027a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668889"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044892"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Instrukcje: Wykluczanie plików z kompilacji
 W pliku projektu można używać symboli wieloznacznych, aby uwzględnić wszystkie pliki w jednym katalogu lub zagnieżdżone zestawu katalogów jako dane wejściowe dla kompilacji. Jednak może być jeden plik w katalogu lub w katalogu w zestawie zagnieżdżonych katalogów, których nie chcesz dodać jako dane wejściowe dla kompilacji. Można jawnie wykluczone tego pliku lub katalogu, z listy danych wejściowych. W projekcie, który chcesz uwzględnić w pewnych okolicznościach również może być plikiem. Można jawnie zadeklarować warunków, w których plik jest uwzględniony w kompilacji.
@@ -36,7 +36,7 @@ W pliku projektu można używać symboli wieloznacznych, aby uwzględnić wszyst
 
 #### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Aby uwzględnić wszystkie *.cs* lub *.vb* plików z wyjątkiem *formularz2*
 
--   Użyj jednej z następujących `Include` i `Exclude` atrybuty:
+- Użyj jednej z następujących `Include` i `Exclude` atrybuty:
 
     ```xml
     <CSFile Include="*.cs" Exclude="Form2.cs"/>
@@ -50,7 +50,7 @@ W pliku projektu można używać symboli wieloznacznych, aby uwzględnić wszyst
 
 #### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Aby uwzględnić wszystkie *.cs* lub *.vb* plików z wyjątkiem *formularz2* i *Form3*
 
--   Użyj jednej z następujących `Include` i `Exclude` atrybuty:
+- Użyj jednej z następujących `Include` i `Exclude` atrybuty:
 
     ```xml
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>
@@ -64,7 +64,7 @@ W pliku projektu można używać symboli wieloznacznych, aby uwzględnić wszyst
 
 #### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Aby uwzględnić wszystkie *.jpg* pliki w podfolderach *obrazów* katalogu, z wyjątkiem tych *Version2* katalogu
 
--   Należy użyć następującego `Include` i `Exclude` atrybuty:
+- Należy użyć następującego `Include` i `Exclude` atrybuty:
 
     ```xml
     <JPGFile
@@ -80,7 +80,7 @@ W pliku projektu można używać symboli wieloznacznych, aby uwzględnić wszyst
 
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Aby dołączyć plik *Formula.vb* tylko w kompilacjach wydania
 
--   Użyj `Condition` atrybut podobny do następującego:
+- Użyj `Condition` atrybut podobny do następującego:
 
     ```xml
     <Compile

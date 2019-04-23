@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: ad83886b6545aa8f498f0304dc172f68976e9c72
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a37ef652fa91cf4412f27bf03d9d62f9d83f880f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652737"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057270"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Instrukcje: Instrument dynamicznie skompilowanej aplikacji sieci web ASP.NET i pamięci zbierania danych przy użyciu wiersza polecenia profilera
 W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza poleceń Profiling Tools do zbierania szczegółowych danych pamięci .NET alokacji i obiekt okresu istnienia dla dynamicznie skompilowanej [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci web przy użyciu Instrumentacji, metoda profilowania.
@@ -31,11 +31,11 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
 
 #### <a name="to-configure-the-aspnet-web-application-and-the-web-server"></a>Aby skonfigurować serwer sieci web i aplikacji sieci web platformy ASP.NET
 
-1.  Modyfikowanie *web.config* pliku aplikacji docelowej. Zobacz [jak: Modyfikowanie plików web.config w celu instrumentowania i profilowania dynamicznie skompilowanych aplikacji sieci web ASP.NET](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
+1. Modyfikowanie *web.config* pliku aplikacji docelowej. Zobacz [jak: Modyfikowanie plików web.config w celu instrumentowania i profilowania dynamicznie skompilowanych aplikacji sieci web ASP.NET](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
 
-2.  Otwórz okno wiersza polecenia na komputerze, który jest hostem aplikacji sieci web.
+2. Otwórz okno wiersza polecenia na komputerze, który jest hostem aplikacji sieci web.
 
-3.  Należy zainicjować zmienne środowiskowe profilowania. Wpisz:
+3. Należy zainicjować zmienne środowiskowe profilowania. Wpisz:
 
      **VSPerfClrEnv /globaltracegc**
 
@@ -43,11 +43,11 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
 
      **VSPerfClrEnv /globaltracegclife**
 
-    -   **/globaltracegc** umożliwia zbieranie danych alokacji pamięci.
+    - **/globaltracegc** umożliwia zbieranie danych alokacji pamięci.
 
-    -   **/globaltracegclife** umożliwia zbieranie danych alokacji pamięci i danych o okresie istnienia obiektu.
+    - **/globaltracegclife** umożliwia zbieranie danych alokacji pamięci i danych o okresie istnienia obiektu.
 
-4.  Uruchom ponownie komputer.
+4. Uruchom ponownie komputer.
 
 ## <a name="run-the-profiling-session"></a>Uruchom sesję profilowania
 
@@ -83,7 +83,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
 
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych
 
--   Następujące pary opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
+- Następujące pary opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
 
     |Opcja|Opis|
     |------------|-----------------|
@@ -91,7 +91,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Uruchamia (**/processon**) lub zatrzymuje (**/processoff**) zbieranie danych dla procesu określonego przez identyfikator procesu (`PID`).|
     |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Uruchamia (**/threadon**) lub zatrzymuje (**/threadoff**) zbieranie danych dla wątku określonego przez identyfikator wątku (`TID`).|
 
--   Można również użyć **VSPerfCmd.exe**[/mark](../profiling/mark.md) opcję, aby wstawić znacznik programu profilującego do pliku danych. **/Mark** polecenie dodaje identyfikator, sygnaturę czasową i opcjonalny tekst zdefiniowany przez użytkownika ciągu. Znaczniki może służyć do filtrowania danych w raportach profilera i widoków danych.
+- Można również użyć **VSPerfCmd.exe**[/mark](../profiling/mark.md) opcję, aby wstawić znacznik programu profilującego do pliku danych. **/Mark** polecenie dodaje identyfikator, sygnaturę czasową i opcjonalny tekst zdefiniowany przez użytkownika ciągu. Znaczniki może służyć do filtrowania danych w raportach profilera i widoków danych.
 
 ## <a name="end-the-profiling-session"></a>Kończenie sesji profilowania
  Aby zakończyć sesję profilowania, Zamknij element docelowy [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci web, Zatrzymaj Internet Information Services (IIS) do Zatrzymaj PROFILOWANEGO procesu, a następnie zamknij program profilujący. Następnie uruchom ponownie usługi IIS.
@@ -117,13 +117,13 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
 
 #### <a name="to-restore-the-application-and-computer-configuration"></a>Aby przywrócić konfigurację aplikacji i komputera
 
-1.  Zastąp *web.config* plik z kopią oryginalnego pliku.
+1. Zastąp *web.config* plik z kopią oryginalnego pliku.
 
-2.  (Opcjonalnie). Wyczyść zmienne środowiskowe profilowania. Wpisz:
+2. (Opcjonalnie). Wyczyść zmienne środowiskowe profilowania. Wpisz:
 
      **Narzędzia VSPerfCmd /globaloff**
 
-3.  Uruchom ponownie komputer.
+3. Uruchom ponownie komputer.
 
 ## <a name="see-also"></a>Zobacz także
 - [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)

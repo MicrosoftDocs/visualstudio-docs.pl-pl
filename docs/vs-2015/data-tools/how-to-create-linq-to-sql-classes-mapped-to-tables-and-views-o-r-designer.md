@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2be46e61438c555fc7ee7d523b3ff9b758c0a15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b6e661a79f190e5befdbcf5c28ec0f4bd29ebf4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782995"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061583"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Instrukcje: Tworzenie typu LINQ do klas SQL zamapowanych na tabele i widoki (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Klasy LINQ do SQL, które są mapowane na bazę danych, tabele i widoki są nazy
 
 #### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Aby tworzyć LINQ do klas SQL, które są mapowane do bazy danych tabel lub widoków
 
-1.  W **serwera**/**Eksplorator bazy danych**, rozwiń węzeł **tabel** lub **widoków** i Znajdź w tabeli bazy danych lub widok Aby użyć w aplikacji.
+1. W **serwera**/**Eksplorator bazy danych**, rozwiń węzeł **tabel** lub **widoków** i Znajdź w tabeli bazy danych lub widok Aby użyć w aplikacji.
 
-2.  Przeciągnij tabelę lub wyświetlić na [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
+2. Przeciągnij tabelę lub wyświetlić na [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
 
      Klasa jednostki zostanie utworzony i wyświetlony na powierzchni projektowej. Klasa jednostki ma właściwości, które mapują do kolumn w wybranej tabeli lub widoku.
 
@@ -43,22 +43,22 @@ Klasy LINQ do SQL, które są mapowane na bazę danych, tabele i widoki są nazy
 
 #### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>Aby utworzyć źródło danych obiektu opartego na LINQ do SQL klas jednostek
 
-1.  Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie** do kompilowania projektu.
+1. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie** do kompilowania projektu.
 
-2.  Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
+2. Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
 
-3.  W **źródeł danych** okna, kliknij przycisk **Dodaj nowe źródło danych**.
+3. W **źródeł danych** okna, kliknij przycisk **Dodaj nowe źródło danych**.
 
-4.  Kliknij przycisk **obiektu** na **wybierz typ źródła danych** strony, a następnie kliknij przycisk **dalej**.
+4. Kliknij przycisk **obiektu** na **wybierz typ źródła danych** strony, a następnie kliknij przycisk **dalej**.
 
-5.  Rozwiń węzły, a następnie znajdź i wybierz klasy.
+5. Rozwiń węzły, a następnie znajdź i wybierz klasy.
 
     > [!NOTE]
     > Jeśli **klienta** klasy nie jest dostępna, Anuluj kreatora, skompiluj projekt i uruchom ponownie kreatora.
 
-6.  Kliknij przycisk **Zakończ** Utwórz źródło danych i dodać **klienta** klasy jednostki **źródeł danych** okna.
+6. Kliknij przycisk **Zakończ** Utwórz źródło danych i dodać **klienta** klasy jednostki **źródeł danych** okna.
 
-7.  Przeciągnij elementy z **źródeł danych** okna w formularzu.
+7. Przeciągnij elementy z **źródeł danych** okna w formularzu.
 
 ## <a name="see-also"></a>Zobacz także
 

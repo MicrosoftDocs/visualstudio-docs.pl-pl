@@ -11,14 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c29b5c5e80f8a0381a2c42704d14a8ea9fc3cae5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a806e434bebb5a561534fb8aec19d16dc9e28ffd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721072"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057436"
 ---
 # <a name="create-custom-editors-and-designers"></a>Tworzenie niestandardowych edytorów i projektantów
+
 Visual Studio zintegrowane środowisko programistyczne (IDE) mogą obsługiwać różne rodzaje Edytor:
 
 - Podstawowy edytor programu Visual Studio
@@ -29,10 +30,11 @@ Visual Studio zintegrowane środowisko programistyczne (IDE) mogą obsługiwać 
 
 - Projektanci
 
-  Poniższe informacje pomaga wybrać typu edytora, których potrzebujesz.
+Poniższe informacje pomaga wybrać typu edytora, których potrzebujesz.
 
 ## <a name="types-of-editor"></a>Typy edytora
- Aby uzyskać informacji na temat podstawowy edytor programu Visual Studio, zobacz [rozszerzanie usług edytora i języka](../extensibility/extending-the-editor-and-language-services.md).
+
+Aby uzyskać informacji na temat podstawowy edytor programu Visual Studio, zobacz [rozszerzanie usług edytora i języka](../extensibility/extending-the-editor-and-language-services.md).
 
 ### <a name="custom-editors"></a>Edytorach niestandardowych
  Niestandardowego edytora jest taki, który jest przeznaczony do pracy w specjalne okoliczności. Na przykład może utworzyć edytor, którego funkcja jest do odczytu i zapisu danych do określonego repozytorium, takich jak Microsoft Exchange server. Wybierz niestandardowy edytor, jeśli chcesz, aby Edytor który współdziała z danego typu projektu, lub jeśli chcesz, aby edytor, który ma kilka konkretnych poleceń. Należy jednak pamiętać, że użytkownicy nie będą mogli używać niestandardowego edytora do edycji standard [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektów.
@@ -70,24 +72,36 @@ Visual Studio zintegrowane środowisko programistyczne (IDE) mogą obsługiwać 
    Jeśli mogą być osadzone, należy utworzyć okno hosta zewnętrznego edytora, a następnie wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> metody i ustaw <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> wartość wyliczenia do `DP_External`. Jeśli Edytor nie może zostać osadzony, IDE automatycznie utworzy oddzielne okno dla niego.
 
 ## <a name="in-this-section"></a>W tej sekcji
-- [Przewodnik: Tworzenie niestandardowego edytora](../extensibility/walkthrough-creating-a-custom-editor.md) wyjaśnia, jak utworzyć niestandardowy Edytor.
 
-- [Przewodnik: Dodawanie funkcji do edytora niestandardowego](../extensibility/walkthrough-adding-features-to-a-custom-editor.md) wyjaśnia, jak dodać funkcje do edytora niestandardowego.
+[Przewodnik: Tworzenie niestandardowego edytora](../extensibility/walkthrough-creating-a-custom-editor.md)\
+Wyjaśnia, jak utworzyć niestandardowy Edytor.
 
-- [Projektanta konfiguracji inicjowania i metadane](../extensibility/designer-initialization-and-metadata-configuration.md) wyjaśnia, jak zainicjować projektanta.
+[Przewodnik: Dodawanie funkcji do edytora niestandardowego](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)\
+Opis sposobu dodawania funkcji do edytora niestandardowego.
 
-- [Podaj Obsługa polecenia Cofnij do projektantów](../extensibility/supplying-undo-support-to-designers.md) wyjaśnia sposób zapewnienia Obsługa polecenia Cofnij do projektantów.
+[Projektanta konfiguracji inicjowania i metadane](../extensibility/designer-initialization-and-metadata-configuration.md)\
+Wyjaśnia, jak zainicjować projektanta.
 
-- [Kolorowanie składni w edytorach niestandardowych](../extensibility/syntax-coloring-in-custom-editors.md) wyjaśnia różnicę pomiędzy kolorowania w edytorze podstawowych i w edytorach niestandardowych.
+[Podaj Obsługa polecenia Cofnij do projektantów](../extensibility/supplying-undo-support-to-designers.md)\
+Wyjaśnia sposób zapewnienia Obsługa polecenia Cofnij do projektantów.
 
-- [Widok danych i dokumentu w edytorach niestandardowych dokumentu](../extensibility/document-data-and-document-view-in-custom-editors.md) wyjaśnia, jak wdrażać danych dokumentów i widoków dokumentu w edytorach niestandardowych.
+[Kolorowanie składni w edytorach niestandardowych](../extensibility/syntax-coloring-in-custom-editors.md)\
+Wyjaśnia różnicę pomiędzy kolorowania w edytorze podstawowych i w edytorach niestandardowych.
+
+[Dane dokumentu i Widok dokumentu w edytorach niestandardowych](../extensibility/document-data-and-document-view-in-custom-editors.md)\
+Wyjaśnia, jak wdrażać danych dokumentów i widoków dokumentu w edytorach niestandardowych.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
-- [Interfejsy starszej wersji w edytorze](../extensibility/legacy-interfaces-in-the-editor.md) wyjaśnia, jak uzyskać dostęp podstawowy edytor za pomocą starszej wersji interfejsu API.
 
-- [Tworzenie starszej wersji usługi językowej](../extensibility/internals/developing-a-legacy-language-service.md) wyjaśnia, jak zaimplementować usługę języka.
+[Interfejsy starszej wersji w edytorze](../extensibility/legacy-interfaces-in-the-editor.md)\
+Wyjaśnia, jak uzyskać dostęp podstawowy edytor za pomocą starszej wersji interfejsu API.
 
-- [Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md) wyjaśnia, jak utworzyć elementy interfejsu użytkownika, zgodne z pozostałą część [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+[Tworzenie starszej wersji usługi językowej](../extensibility/internals/developing-a-legacy-language-service.md)\
+Wyjaśnia, jak zaimplementować usługę języka.
+
+[Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)\
+Wyjaśnia, jak utworzyć elementy interfejsu użytkownika, zgodne z pozostałą część [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="see-also"></a>Zobacz także
+
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

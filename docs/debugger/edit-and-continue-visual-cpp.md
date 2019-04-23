@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1122e59d804387172d14f5ac9b24b6fad42213f9
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 9ff67be52c36050f513fc3ef6530a6bd81d8988d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526534"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046673"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edytuj i kontynuuj (Visual C++)
 W projektach języka Visual C++ można użyć Edytuj i Kontynuuj. Zobacz [obsługiwane zmiany kodu (C++, Distributed File System)](../debugger/supported-code-changes-cpp.md) informacji o ograniczeniach operacji Edytuj i Kontynuuj.
@@ -33,7 +33,7 @@ Aby uzyskać więcej informacji na temat ulepszenia programu Visual Studio 2015 
 
  **/ZO** wyłącza Edytuj i Kontynuuj. Zobacz [jak: Debugowanie zoptymalizowanego kodu](../debugger/how-to-debug-optimized-code.md).
 
-##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Włączanie lub wyłączanie funkcji Edytuj i Kontynuuj
+## <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Włączanie lub wyłączanie funkcji Edytuj i Kontynuuj
  Można wyłączyć automatycznego wywołania opcji Edytuj i Kontynuuj, jeśli jest wprowadzanie zmian do kodu, który ma zostać zastosowane podczas bieżącej sesji debugowania. Możesz też ponownie włączyć automatyczne Edytuj i Kontynuuj.
 
 > [!IMPORTANT]
@@ -51,14 +51,14 @@ Aby uzyskać więcej informacji na temat ulepszenia programu Visual Studio 2015 
 
    Zmieniając to ustawienie ma wpływ na wszystkie projekty, którą pracujesz. Nie trzeba ponownie skompiluj aplikację po zmianie tego ustawienia. Jeśli kompilujesz aplikację z poziomu wiersza polecenia lub pliku reguł programu make, ale debugowanie w środowisku Visual Studio, nadal można Edytuj i Kontynuuj po ustawieniu **/zi** opcji.
 
-##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Jak jawne stosowanie zmian kodu
+## <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Jak jawne stosowanie zmian kodu
  W programie Visual C++ Edytuj i Kontynuuj można zastosować zmian w kodzie na dwa sposoby. Kod można zastosować zmian niejawnie, wybierając polecenie wykonania, lub jawnie przy użyciu **zastosowanie zmian kodu** polecenia.
 
  Gdy jawne stosowanie zmian kodu programu pozostaje w trybie przerwania — nie jest wykonywany.
 
--   Aby zastosować zmiany w kodzie jawnie, na **debugowania** menu, wybierz **zastosowanie zmian kodu**.
+- Aby zastosować zmiany w kodzie jawnie, na **debugowania** menu, wybierz **zastosowanie zmian kodu**.
 
-##  <a name="BKMK_How_to_stop_code_changes"></a> Jak zatrzymywanie zmian kodu
+## <a name="BKMK_How_to_stop_code_changes"></a> Jak zatrzymywanie zmian kodu
  Gdy Edytuj i Kontynuuj Trwa stosowanie zmian kodu, można zatrzymać operacji.
 
  Aby zatrzymać, stosowanie zmian kodu:
@@ -69,12 +69,12 @@ Aby uzyskać więcej informacji na temat ulepszenia programu Visual Studio 2015 
 
   Jeśli ta opcja jest wybrana, żadne zmiany kodu są zatwierdzone.
 
-##  <a name="BKMK_How_to_reset_the_point_of_execution"></a> Jak zresetować punkty wykonywania
+## <a name="BKMK_How_to_reset_the_point_of_execution"></a> Jak zresetować punkty wykonywania
  Niektóre zmiany kodu mogą spowodować punkt wykonywania, aby przejść do nowej lokalizacji, gdy Edytuj i Kontynuuj stosuje te zmiany. Edytuj i Kontynuuj umieszcza punkt wykonania jak to możliwe, ale wyniki mogą być niepoprawne we wszystkich przypadkach.
 
  W programie Visual C++ okno dialogowe informuje użytkownika, podczas zmiany punktów wykonywania. Należy sprawdzić czy lokalizacja jest poprawna, przed kontynuowaniem debugowania. Jeśli nie jest poprawny, należy użyć **Ustaw następną instrukcję** polecenia. Aby uzyskać więcej informacji, zobacz [Ustaw następną instrukcję do wykonania](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).
 
-##  <a name="BKMK_How_to_work_with_stale_code"></a> Jak pracować z kodem nieodświeżonym
+## <a name="BKMK_How_to_work_with_stale_code"></a> Jak pracować z kodem nieodświeżonym
  W niektórych przypadkach Edytuj i Kontynuuj nie można od razu zastosować zmiany kodu do pliku wykonywalnego, ale można zastosować zmian w kodzie później, jeśli będziesz kontynuować debugowanie. Dzieje się tak w przypadku edycji funkcji wywołującej bieżącą funkcję, lub jeśli dodasz więcej niż 64 bajtów zmiennych nowych funkcji w stosie wywołań
 
  W takich przypadkach Debuger kontynuuje wykonywanie oryginalny kod, dopóki nie można zastosować zmiany. Nieodświeżony kod jest wyświetlany jako okno pliku tymczasowego źródła, w oknie oddzielne źródło, z tytułem takich jak `enc25.tmp`. Źródło edytowanych w dalszym ciągu są wyświetlane w oknie oryginalnego źródła. Jeśli spróbujesz edytować nieodświeżonego kodu, zostanie wyświetlony komunikat ostrzegawczy.

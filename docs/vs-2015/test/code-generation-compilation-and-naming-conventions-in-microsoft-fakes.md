@@ -8,12 +8,12 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70392f50ecd13539012672bf71900c30845af734
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4977a6394a5732d92391c3405519345484a6629f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54783374"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056929"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Konwencje dotyczące generowania, kompilowania i nazywania w Microsoft Fakes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,9 +22,9 @@ W tym temacie omówiono opcje i kwestie w substytuty Generowanie i kompilacja ko
   
  **Wymagania**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
-##  <a name="BKMK_In_this_topic"></a> W tym temacie  
+## <a name="BKMK_In_this_topic"></a> W tym temacie  
  [Generowanie i kompilacja kodu](#BKMK_Code_generation_and_compilation)  
   
 - [Konfigurowanie generowania kodu odcinków](#BKMK_Configuring_code_generation_of_stubs) • [Filtrowanie typów](#BKMK_Type_filtering) • [tworzenie namiastek dla klas konkretnych i metod wirtualnych](#BKMK_Stubbing_concrete_classes_and_virtual_methods) • [typy wewnętrzne](#BKMK_Internal_types) • [ Optymalizacja tworzenia razy](#BKMK_Optimizing_build_times) • [unikanie konfliktu nazw zestawów](#BKMK_Avoiding_assembly_name_clashing)  
@@ -37,9 +37,9 @@ W tym temacie omówiono opcje i kwestie w substytuty Generowanie i kompilacja ko
   
 - [Wskazówki](#BKMK_Guidance)  
   
-##  <a name="BKMK_Code_generation_and_compilation"></a> Generowanie i kompilacja kodu  
+## <a name="BKMK_Code_generation_and_compilation"></a> Generowanie i kompilacja kodu  
   
-###  <a name="BKMK_Configuring_code_generation_of_stubs"></a> Konfigurowanie generowania kodu odcinków  
+### <a name="BKMK_Configuring_code_generation_of_stubs"></a> Konfigurowanie generowania kodu odcinków  
  Generowanie typów namiastek jest skonfigurowany w pliku XML, który ma rozszerzenie pliku .fakes. Fakes framework integruje się w procesie kompilacji przez własne zadania MSBuild i wykrywa te pliki w czasie kompilacji. Generator kodu pozornego kompiluje typy namiastek w zestaw i dodaje odwołanie do projektu.  
   
  Poniższy przykład ilustruje typy namiastki zdefiniowane w FileSystem.dll:  
@@ -51,7 +51,7 @@ W tym temacie omówiono opcje i kwestie w substytuty Generowanie i kompilacja ko
   
 ```  
   
-###  <a name="BKMK_Type_filtering"></a> Filtrowanie typów  
+### <a name="BKMK_Type_filtering"></a> Filtrowanie typów  
  W pliku .fakes można ustawić filtry w celu ograniczenia typów, które mają być generowane namiastki. Możesz dodać nieograniczoną liczbę elementów Clear, Add, Remove elementów elementu StubGeneration, aby zbudować listę wybranych typów.  
   
  Na przykład ten plik .fakes generuje namiastki dla typów w przestrzeni nazw System i System.IO, ale nie obejmuje wszystkich typów zawierających "Handle" w systemie:  
@@ -72,27 +72,27 @@ W tym temacie omówiono opcje i kwestie w substytuty Generowanie i kompilacja ko
   
  Ciągi filtrów używają prostej gramatyki do zdefiniowania, jak dopasowywania powinna być podejmowana:  
   
--   Filtry domyślnie wielkość liter; filtry dopasowują podciąg:  
+- Filtry domyślnie wielkość liter; filtry dopasowują podciąg:  
   
      `el` pasuje do "hello"  
   
--   Dodawanie `!` do końca filtru uczyni go dokładne dopasowanie uwzględniające:  
+- Dodawanie `!` do końca filtru uczyni go dokładne dopasowanie uwzględniające:  
   
      `el!` nie pasuje do "hello"  
   
      `hello!` pasuje do "hello"  
   
--   Dodawanie `*` do końca filtru uczyni go pasującym do przedrostka ciągu:  
+- Dodawanie `*` do końca filtru uczyni go pasującym do przedrostka ciągu:  
   
      `el*` nie pasuje do "hello"  
   
      `he*` pasuje do "hello"  
   
--   Wiele filtrów na rozdzielonej średnikami liście zostanie połączonych jako alternatywa:  
+- Wiele filtrów na rozdzielonej średnikami liście zostanie połączonych jako alternatywa:  
   
      `el;wo` pasuje do "hello" i "world"  
   
-###  <a name="BKMK_Stubbing_concrete_classes_and_virtual_methods"></a> Tworzenie namiastek dla klas konkretnych i metod wirtualnych  
+### <a name="BKMK_Stubbing_concrete_classes_and_virtual_methods"></a> Tworzenie namiastek dla klas konkretnych i metod wirtualnych  
  Domyślnie typy namiastki są generowane dla wszystkich niezamkniętych klas. Istnieje możliwość ograniczenie typów namiastki do konkretnych klas abstrakcyjnych za pomocą pliku konfiguracji .fakes:  
   
 ```xml  
@@ -109,7 +109,7 @@ W tym temacie omówiono opcje i kwestie w substytuty Generowanie i kompilacja ko
 </Fakes>  
 ```  
   
-###  <a name="BKMK_Internal_types"></a> Typy wewnętrzne  
+### <a name="BKMK_Internal_types"></a> Typy wewnętrzne  
  Generator kodu pozornego wygeneruje typy zastępcze i typy namiastki dla typów, które są widoczne dla wygenerowanego zestawu pozornego. Aby typy wewnętrzne zestawu typu shim były widoczne dla elementów sztucznych i zestaw testowy, należy dodać <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atrybuty do kodu zestawu typu shim, który zwiększa widoczność w wygenerowanych zestawach fakes i zestawu testowego. Oto przykład:  
   
 ```csharp  
@@ -164,26 +164,26 @@ W tym temacie omówiono opcje i kwestie w substytuty Generowanie i kompilacja ko
   
  W przykładzie powyżej wartości `Alternate_public_key` i `Test_assembly_public_key` może być taki sam.  
   
-###  <a name="BKMK_Optimizing_build_times"></a> Optymalizacja czasów kompilacji  
+### <a name="BKMK_Optimizing_build_times"></a> Optymalizacja czasów kompilacji  
  Kompilacja zestawów pozornych może znacznie zwiększyć czas kompilacji. Generując zestawy pozorne dla zestawów .NET System i zestawów innych firm w osobnym scentralizowanym projekcie, można zminimalizować czas kompilacji. Ponieważ takie zestawy rzadko się zmieniają, można użyć ponownie wygenerowanych zestawów pozornych w innych projektach.  
   
  Z projektów testów jednostkowych można po prostu wziąć referencję do skompilowanych zestawów pozornych, które są umieszczone w FakesAssemblies w folderze projektu.  
   
-1.  Utwórz nową bibliotekę klas z wersją środowiska uruchomieniowego .NET dopasowania Twoich projektów testów. Nazwijmy ją Fakes.Prebuild. Usuń plik class1.cs z projektu, nie jest wymagane.  
+1. Utwórz nową bibliotekę klas z wersją środowiska uruchomieniowego .NET dopasowania Twoich projektów testów. Nazwijmy ją Fakes.Prebuild. Usuń plik class1.cs z projektu, nie jest wymagane.  
   
-2.  Dodaj odwołanie do wszystkich systemowych i zestawów innych firm, których potrzebujesz substytutów.  
+2. Dodaj odwołanie do wszystkich systemowych i zestawów innych firm, których potrzebujesz substytutów.  
   
-3.  Dodaj plik .fakes do każdego zestawu i kompilacji.  
+3. Dodaj plik .fakes do każdego zestawu i kompilacji.  
   
-4.  Z projektu testów  
+4. Z projektu testów  
   
-    -   Upewnij się, że masz odwołanie do środowiska uruchomieniowego podrobionych DLL:  
+    - Upewnij się, że masz odwołanie do środowiska uruchomieniowego podrobionych DLL:  
   
          C:\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll  
   
-    -   Dla każdego zestawu, utworzono substytuty, Dodaj odwołanie do odpowiedniego pliku DLL w folderze Fakes.Prebuild\FakesAssemblies projektu.  
+    - Dla każdego zestawu, utworzono substytuty, Dodaj odwołanie do odpowiedniego pliku DLL w folderze Fakes.Prebuild\FakesAssemblies projektu.  
   
-###  <a name="BKMK_Avoiding_assembly_name_clashing"></a> Unikanie konfliktu nazw zestawów  
+### <a name="BKMK_Avoiding_assembly_name_clashing"></a> Unikanie konfliktu nazw zestawów  
  W środowisku kompilacji zespołowej wszystkie dane wyjściowe kompilacji są scalane w jednym katalogu. W przypadku wielu projektów używa substytutów może się zdarzyć, że zestawy pozorne z różnych wersji nadpiszą. Na przykład TestProject1 elementów sztucznych mscorlib.dll z testproject1 z .NET Framework 2.0 i TestProject2 elementów sztucznych mscorlib.dll dla programu .NET Framework 4 zarówno dałaby do mscorlib. Zestaw Substytuowany Fakes.dll.  
   
  Aby uniknąć tego problemu, substytuty powinny automatycznie tworzyć nazwy zestawów pozorowanych z wersją kwalifikowaną dla odwołań do projektu bez podczas dodawania plików .fakes. Nazwa zestawu Pozorowanego wersją kwalifikowaną dołącza numer wersji, podczas tworzenia nazwy zestawu elementów sztucznych:  
@@ -201,9 +201,9 @@ attribute of the Assembly element in the .fakes:
   
 ```  
   
-##  <a name="BKMK_Fakes_naming_conventions"></a> Konwencje nazewnictwa substytutów  
+## <a name="BKMK_Fakes_naming_conventions"></a> Konwencje nazewnictwa substytutów  
   
-###  <a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a> Typ podkładek i klas zastępczych wpisz konwencje nazewnictwa  
+### <a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a> Typ podkładek i klas zastępczych wpisz konwencje nazewnictwa  
  **Przestrzenie nazw**  
   
 - . Substytuty sufiks jest dodawany do przestrzeni nazw.  
@@ -228,7 +228,7 @@ attribute of the Assembly element in the .fakes:
   
 - Struktura typów zagnieżdżonych jest kopiowana dla typów zastępczych.  
   
-###  <a name="BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions"></a> Właściwości delegata zastępczego lub konwencji nazewnictwa pól delegata namiastki  
+### <a name="BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions"></a> Właściwości delegata zastępczego lub konwencji nazewnictwa pól delegata namiastki  
  **Podstawowe zasady** dla nazewnictwa pól, zaczynając od pustej nazwy:  
   
 - Nazwa metody jest dołączana.  
@@ -254,13 +254,13 @@ attribute of the Assembly element in the .fakes:
   
  **Uwagi**  
   
--   **Gettery i settery indeksatorów** traktuje się podobnie do właściwości. Domyślna nazwa indeksatora to `Item`.  
+- **Gettery i settery indeksatorów** traktuje się podobnie do właściwości. Domyślna nazwa indeksatora to `Item`.  
   
--   **Typ parametru** nazwy są przekształcane i łączone.  
+- **Typ parametru** nazwy są przekształcane i łączone.  
   
--   **Zwracany typ** jest ignorowana, chyba że istnieje dwuznaczność przeciążenia. Jeśli jest to możliwe, typ zwracany jest dołączany na końcu nazwy  
+- **Zwracany typ** jest ignorowana, chyba że istnieje dwuznaczność przeciążenia. Jeśli jest to możliwe, typ zwracany jest dołączany na końcu nazwy  
   
-###  <a name="BKMK_Parameter_type_naming_conventions"></a> Konwencje nazewnictwa typu parametru  
+### <a name="BKMK_Parameter_type_naming_conventions"></a> Konwencje nazewnictwa typu parametru  
   
 |Biorąc pod uwagę|Dołączany ciąg to...|  
 |-----------|-------------------------|  
@@ -275,16 +275,16 @@ attribute of the Assembly element in the .fakes:
 |A **argument metody ogólnej** `!!i` metody `M<MMethod>`|`Mi`|  
 |A **zagnieżdżony typ**`N.T`|`N` jest dołączany, następnie `T`|  
   
-###  <a name="BKMK_Recursive_rules"></a> Zasady cykliczne  
+### <a name="BKMK_Recursive_rules"></a> Zasady cykliczne  
  Następujące reguły są stosowane cyklicznie:  
   
--   Ponieważ substytuty używają C# wygenerować zestawy pozorne, dowolny znak, który skutkowałby nieprawidłowym C# token jest zmieniany na "_" (podkreślenie).  
+- Ponieważ substytuty używają C# wygenerować zestawy pozorne, dowolny znak, który skutkowałby nieprawidłowym C# token jest zmieniany na "_" (podkreślenie).  
   
--   Jeśli nazwa wynikowa jest niezgodna z dowolnym elementem członkowskim typu deklarującego, schemat numerowania jest używany przez dołączenie dwóch cyfr licznika, począwszy od 01.  
+- Jeśli nazwa wynikowa jest niezgodna z dowolnym elementem członkowskim typu deklarującego, schemat numerowania jest używany przez dołączenie dwóch cyfr licznika, począwszy od 01.  
   
-##  <a name="BKMK_External_resources"></a> Zasoby zewnętrzne  
+## <a name="BKMK_External_resources"></a> Zasoby zewnętrzne  
   
-###  <a name="BKMK_Guidance"></a> Wskazówki dotyczące  
+### <a name="BKMK_Guidance"></a> Wskazówki dotyczące  
  [Testowanie dostarczania ciągłego w programie Visual Studio 2012 — rozdział 2: Testy jednostkowe: Testowanie wnętrza](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Zobacz też  

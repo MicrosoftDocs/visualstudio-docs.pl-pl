@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eef9744e5d5b66d39eee9e9332f3ed49616c6067
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 517cd2230430bf0758b729f50b1d947685aaf6be
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616225"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052782"
 ---
 # <a name="custom-xml-parts-overview"></a>Niestandardowe części XML ― omówienie
   Dane XML można osadzić w dokumentach niektórych aplikacji pakietu Microsoft Office. Osadzenie danych XML w dokumencie, dane o nazwie *niestandardowym elementem XML*.
@@ -47,13 +47,13 @@ ms.locfileid: "56616225"
 
  Aby uzyskać więcej informacji na temat struktury Open XML i niestandardowe elementy XML zobacz następujące artykuły:
 
--   [Wprowadzenie do formatów pakietu Office (2007) Open XML](/previous-versions/office/developer/office-2007/aa338205(v=office.12))
+- [Wprowadzenie do formatów pakietu Office (2007) Open XML](/previous-versions/office/developer/office-2007/aa338205(v=office.12))
 
--   [Instrukcje: Manipulowanie dokumentów formatów Open XML](/previous-versions/office/developer/office-2007/aa982683(v=office.12))
+- [Instrukcje: Manipulowanie dokumentów formatów Open XML](/previous-versions/office/developer/office-2007/aa982683(v=office.12))
 
--   [Przewodnik: Format programu Word 2007 XML](/previous-versions/office/developer/office-2007/bb266220(v=office.12))
+- [Przewodnik: Format programu Word 2007 XML](/previous-versions/office/developer/office-2007/bb266220(v=office.12))
 
--   [Tworzenie dokumentów programu Word 2007 za pomocą formatów Open XML](/previous-versions/office/developer/office-2007/bb264572(v=office.12))
+- [Tworzenie dokumentów programu Word 2007 za pomocą formatów Open XML](/previous-versions/office/developer/office-2007/bb264572(v=office.12))
 
 > [!NOTE]
 >  Program Excel, Word i PowerPoint również włączyć przy użyciu niestandardowych części XML w dokumentach, które są zapisane w formacie plików binarnych. Jednak jeśli dokument zostanie zapisany w formacie binarnym, nie możesz dodawać ani modyfikować niestandardowe elementy XML bez uruchamiania aplikacji programu Microsoft Office.
@@ -66,9 +66,9 @@ ms.locfileid: "56616225"
 
  Aby utworzyć z niestandardowym elementem XML przy użyciu programu Visual Studio, Dodaj nowy <xref:Microsoft.Office.Core.CustomXMLPart> do <xref:Microsoft.Office.Core.CustomXMLParts> kolekcji w dokumencie. Więcej informacji znajduje się w następujących tematach:
 
--   [Instrukcje: Dodawanie niestandardowych części XML do dostosowywania na poziomie dokumentu](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
+- [Instrukcje: Dodawanie niestandardowych części XML do dostosowywania na poziomie dokumentu](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
 
--   [Instrukcje: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)
+- [Instrukcje: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)
 
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>Zmodyfikuj elementy XML bez uruchamiania aplikacji pakietu Office
  Można dodawania lub modyfikowania z niestandardowym elementem XML bez konieczności uruchamiania programu Excel, PowerPoint lub Word. Jest to przydatne, jeśli chcesz pracować z danymi XML w dokumencie programu na komputerze, który nie ma aplikacji Microsoft Office, zainstalowane, takim jak serwer.

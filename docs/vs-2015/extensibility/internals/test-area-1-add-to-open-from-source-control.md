@@ -11,12 +11,12 @@ ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 14bf97822957088f704ffbfefe24ea20b55f14ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71ead1b49c9bcefc193f8e1c896b35a478a771a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789691"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064859"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Obszar testowy 1: Dodaj / Otwórz z kontroli źródła
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,32 +26,32 @@ Ta-wtyczka do kontroli źródła testów obszar obejmuje umieszczenie rozwiąza�
 ## <a name="command-menu-access"></a>Dostęp do Menu polecenia  
  Następujące [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ścieżki menu środowiska zintegrowanego rozwoju są używane w przypadki testowe:  
   
--   Aby uzyskać [!INCLUDE[vsvss](../../includes/vsvss-md.md)], Otwórz z kontroli źródła: **Plik**, **Otwórz**, **projektu**/**rozwiązania**; Szukaj w [!INCLUDE[vsvss](../../includes/vsvss-md.md)] lokalizacji.  
+- Aby uzyskać [!INCLUDE[vsvss](../../includes/vsvss-md.md)], Otwórz z kontroli źródła: **Plik**, **Otwórz**, **projektu**/**rozwiązania**; Szukaj w [!INCLUDE[vsvss](../../includes/vsvss-md.md)] lokalizacji.  
   
--   Dla innych źródła wtyczek kontroli Otwórz z kontroli źródła: **Plik**, **kontroli źródła**, **Otwórz z kontroli źródła**.  
+- Dla innych źródła wtyczek kontroli Otwórz z kontroli źródła: **Plik**, **kontroli źródła**, **Otwórz z kontroli źródła**.  
   
--   Dodaj do kontroli źródła: **Plik**, **kontroli źródła**, **Dodaj rozwiązanie do pliku kontroli źródła**, **kontroli źródła**, **Dodaj wybrane projekty do kontroli źródła**.  
+- Dodaj do kontroli źródła: **Plik**, **kontroli źródła**, **Dodaj rozwiązanie do pliku kontroli źródła**, **kontroli źródła**, **Dodaj wybrane projekty do kontroli źródła**.  
   
--   Menu skrótów (projekt/rozwiązanie) **Dodaj rozwiązanie do kontroli źródła**.  
+- Menu skrótów (projekt/rozwiązanie) **Dodaj rozwiązanie do kontroli źródła**.  
   
--   Dodaj z kontroli źródła: **Plik**, **kontroli źródła**, **Dodaj projekt z kontroli źródła**.  
+- Dodaj z kontroli źródła: **Plik**, **kontroli źródła**, **Dodaj projekt z kontroli źródła**.  
   
--   Dla [!INCLUDE[vsvss](../../includes/vsvss-md.md)], Dodaj ze źródła kontrolki jest również dostępna z **pliku**, **Dodaj**, **istniejący projekt**; Szukaj w [!INCLUDE[vsvss](../../includes/vsvss-md.md)] lokalizacji.  
+- Dla [!INCLUDE[vsvss](../../includes/vsvss-md.md)], Dodaj ze źródła kontrolki jest również dostępna z **pliku**, **Dodaj**, **istniejący projekt**; Szukaj w [!INCLUDE[vsvss](../../includes/vsvss-md.md)] lokalizacji.  
   
     > [!NOTE]
     >  Ścieżka pliku lokalnego lub lokalnych usług IIS (serwer sieci web) może służyć w tym teście.  
   
 ## <a name="expected-behavior"></a>Oczekiwane zachowanie  
   
--   Dla każdego typu obsługiwanych projektu użytkownik powinien móc "Dodawanie do" i "Otwórz w" kontroli źródła.  
+- Dla każdego typu obsługiwanych projektu użytkownik powinien móc "Dodawanie do" i "Otwórz w" kontroli źródła.  
   
--   Gdy projekt jest dodawany do kontroli źródła, odpowiedni \< *ProjectName*> .vspscc (plik projektu wskazówka) jest tworzony. Zawiera on wykluczenia pliku listy oraz informacje o połączeniu. Nie usuwaj tego pliku, ponieważ zawiera on informacje specyficzne dla projektu.  
+- Gdy projekt jest dodawany do kontroli źródła, odpowiedni \< *ProjectName*> .vspscc (plik projektu wskazówka) jest tworzony. Zawiera on wykluczenia pliku listy oraz informacje o połączeniu. Nie usuwaj tego pliku, ponieważ zawiera on informacje specyficzne dla projektu.  
   
--   Po dodaniu rozwiązania do kontroli źródła, odpowiedni \< *SolutionName*> zostanie utworzony plik .vssscc (triple S). Plik tekstowy zawiera informacje o połączeniu i pliku listy wykluczeń, podobne do pliku podpowiedzi projektu. Ten plik jest tymczasowe i istnieje tylko w bazie danych kontroli źródła.  
+- Po dodaniu rozwiązania do kontroli źródła, odpowiedni \< *SolutionName*> zostanie utworzony plik .vssscc (triple S). Plik tekstowy zawiera informacje o połączeniu i pliku listy wykluczeń, podobne do pliku podpowiedzi projektu. Ten plik jest tymczasowe i istnieje tylko w bazie danych kontroli źródła.  
   
--   Po otwarciu rozwiązania z kontroli źródła, \< *SolutionName*> plik .vsscc (podwójny S), który istnieje tylko w bazie danych kontroli źródła, jest tworzony lokalnie w pliku tymczasowym. Ten plik zawiera ścieżkę folderu połączenia rozwiązania do pliku rozwiązania. Ten plik jest tymczasowe i lokalna kopia jest usuwany po zakończeniu operacji "Otwórz z kontroli źródła".  
+- Po otwarciu rozwiązania z kontroli źródła, \< *SolutionName*> plik .vsscc (podwójny S), który istnieje tylko w bazie danych kontroli źródła, jest tworzony lokalnie w pliku tymczasowym. Ten plik zawiera ścieżkę folderu połączenia rozwiązania do pliku rozwiązania. Ten plik jest tymczasowe i lokalna kopia jest usuwany po zakończeniu operacji "Otwórz z kontroli źródła".  
   
--   Po projekt jest dodawany do kontroli źródła, można wykonać akcje kontroli źródła na nim (wyewidencjonowania, Pobierz i tak dalej).  
+- Po projekt jest dodawany do kontroli źródła, można wykonać akcje kontroli źródła na nim (wyewidencjonowania, Pobierz i tak dalej).  
   
 ## <a name="test-cases"></a>Przypadki testowe  
  Poniżej przedstawiono określonych przypadków testowych do dodawania / Otwórz z kontroli źródła obszar testowy.  
