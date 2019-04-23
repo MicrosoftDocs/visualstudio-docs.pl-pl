@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3ae815bb0f9a11b19c711a3a860f8734701cc39
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 3fc21eb85c46d74fabc777147b14575babd9be8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775830"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113017"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Skróty przy użyciu klawiatury i myszy w oknie Diagram klas i Szczegóły klasy (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ Można użyć klawiatury, oprócz myszy do wykonania akcji nawigacji w Projektan
   
  **W tym temacie**  
   
--   [Za pomocą myszy w Projektancie klas](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
+- [Za pomocą myszy w Projektancie klas](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
   
--   [Za pomocą myszy w oknie Szczegóły klasy](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
+- [Za pomocą myszy w oknie Szczegóły klasy](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
   
--   [Za pomocą klawiatury w Projektancie klas](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
+- [Za pomocą klawiatury w Projektancie klas](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
   
--   [Za pomocą klawiatury w oknie Szczegóły klasy](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
+- [Za pomocą klawiatury w oknie Szczegóły klasy](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
   
-##  <a name="MouseClassDesigner"></a> Za pomocą myszy w Projektancie klas  
+## <a name="MouseClassDesigner"></a> Za pomocą myszy w Projektancie klas  
  W diagramach są obsługiwane następujące akcje myszy:  
   
 |Kombinacja myszy|Kontekst|Opis|  
@@ -49,20 +49,20 @@ Można użyć klawiatury, oprócz myszy do wykonania akcji nawigacji w Projektan
 |CTRL + obrót kółkiem myszy|Diagram klas|Powiększenia.|  
 |CTRL + Shift + kliknięcie|Diagram klas|Powiększenia.|  
   
-##  <a name="MouseClassDetails"></a> Za pomocą myszy w oknie Szczegóły klasy  
+## <a name="MouseClassDetails"></a> Za pomocą myszy w oknie Szczegóły klasy  
  Za pomocą myszy, możesz zmienić wygląd okna Szczegóły klasy i danych, które są wyświetlane, w następujący sposób:  
   
--   Kliknięcie dowolnej komórki edytowalne pozwala edytować zawartość tej komórki. Zmiany są odzwierciedlane we wszystkich miejscach, że dane są przechowywane lub wyświetlane, w tym w oknie dialogowym właściwości i w kodzie źródłowym.  
+- Kliknięcie dowolnej komórki edytowalne pozwala edytować zawartość tej komórki. Zmiany są odzwierciedlane we wszystkich miejscach, że dane są przechowywane lub wyświetlane, w tym w oknie dialogowym właściwości i w kodzie źródłowym.  
   
--   Kliknij dowolną komórkę wiersza powoduje, że okno właściwości, aby wyświetlić właściwości dla elementu reprezentowanego przez ten wiersz.  
+- Kliknij dowolną komórkę wiersza powoduje, że okno właściwości, aby wyświetlić właściwości dla elementu reprezentowanego przez ten wiersz.  
   
--   Aby zmienić szerokość kolumny, przeciągnij granicę po prawej stronie nagłówka kolumny kolumna jest szerokość, która ma.  
+- Aby zmienić szerokość kolumny, przeciągnij granicę po prawej stronie nagłówka kolumny kolumna jest szerokość, która ma.  
   
--   Można rozwinąć lub Zwiń przedział albo przez węzły, właściwość, klikając symbole strzałkę po lewej stronie wiersza.  
+- Można rozwinąć lub Zwiń przedział albo przez węzły, właściwość, klikając symbole strzałkę po lewej stronie wiersza.  
   
--   W oknie Szczegóły klasy oferuje kilka przyciski do tworzenia nowych elementów członkowskich w bieżącej klasie i nawigacja pomiędzy przedziały członków w siatce okna Szczegóły klasy. Aby uzyskać więcej informacji zobacz przycisków w oknie Szczegóły klasy.  
+- W oknie Szczegóły klasy oferuje kilka przyciski do tworzenia nowych elementów członkowskich w bieżącej klasie i nawigacja pomiędzy przedziały członków w siatce okna Szczegóły klasy. Aby uzyskać więcej informacji zobacz przycisków w oknie Szczegóły klasy.  
   
-##  <a name="KeyboardClassDesigner"></a> Za pomocą klawiatury w Projektancie klas  
+## <a name="KeyboardClassDesigner"></a> Za pomocą klawiatury w Projektancie klas  
  Obsługiwane są następujące akcje klawiatury w diagramach klas:  
   
 |Key|Kontekst|Opis|  
@@ -89,7 +89,7 @@ Można użyć klawiatury, oprócz myszy do wykonania akcji nawigacji w Projektan
 |SHIFT+TAB|Wszystkie konteksty|Powoduje przejście do poprzedniego elementu podrzędnego w obrębie tego samego nadrzędnego (obsługuje zawijania).|  
 |SPACE|Wszystkie konteksty|Włącza lub wyłącza zaznaczenie dla bieżącego elementu.|  
   
-##  <a name="KeyboardClassDetails"></a> Za pomocą klawiatury w oknie Szczegóły klasy  
+## <a name="KeyboardClassDetails"></a> Za pomocą klawiatury w oknie Szczegóły klasy  
   
 > [!NOTE]
 >  Następujących klawiszy dobrano w celu specjalnie, aby używane środowisko przypominało środowisko pisania kodu.  

@@ -23,12 +23,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 25021f0c3daffdaf59633fdb9bff0e2659f43d2e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1efe109741c306d45ce7f7749193f5b638b76949
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043028"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112874"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Instrukcje: Wychodzenie z kodu zarządzanego, gdy ramek natywnych brakuje oknie stosu wywołań
 
@@ -39,9 +39,9 @@ Jeśli kod ma ramek natywnych, które są niewidoczne w **stos wywołań** oknie
 
 ## <a name="step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-display"></a>Wychodzenie z kodu zarządzanego, gdy wyświetlanie stosu wywołań brakuje ramek natywnych
 
-1.  W kodzie natywnym Ustaw punkt przerwania po wywołaniu kodu zarządzanego.
+1. W kodzie natywnym Ustaw punkt przerwania po wywołaniu kodu zarządzanego.
 
-2.  Na **debugowania** menu, wybierz **Kontynuuj**.
+2. Na **debugowania** menu, wybierz **Kontynuuj**.
 
      Po ukończeniu wywołania zarządzanego, wykonanie zostanie zatrzymane w punkcie przerwania w kodzie natywnym.
 

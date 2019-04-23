@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 232707cd8fa51b8b69c67e1e66cb0790f4938031
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c40c2f824518ed00dacc41094c1b567f5de248ae
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794218"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112822"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Zbieranie alokacji pamięci .NET i okres istnienia obiektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ ms.locfileid: "54794218"
   
  Za pomocą pobierania próbek lub metoda profilowania Instrumentacja może zbierać dane.  
   
--   Przy użyciu metody próbkowania profilera śledzi wszystkie alokacje pamięci .NET i obiekty, które są generowane przez proces, który został uruchomiony lub dołączone do.  
+- Przy użyciu metody próbkowania profilera śledzi wszystkie alokacje pamięci .NET i obiekty, które są generowane przez proces, który został uruchomiony lub dołączone do.  
   
--   Przy użyciu metody Instrumentacji profilera umożliwia śledzenie tylko alokacji pamięci .NET i obiekty, które są generowane przez moduły instrumentowanych.  
+- Przy użyciu metody Instrumentacji profilera umożliwia śledzenie tylko alokacji pamięci .NET i obiekty, które są generowane przez moduły instrumentowanych.  
   
 > [!IMPORTANT]
 >  Zbierając dane pamięci platformy .NET (alokacji, czasów istnienia obiektów lub obie) przy użyciu metody próbkowania, wszystkie zdarzenia próbkowania określone przez użytkownika są ignorowane, a zdarzenia alokacji odpowiedniej ilości pamięci są używane do zbierania danych.  
@@ -50,11 +50,11 @@ ms.locfileid: "54794218"
   
 ### <a name="to-collect-net-memory-data"></a>Do zbierania danych pamięci .NET  
   
-1.  W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij **właściwości**.  
+1. W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij **właściwości**.  
   
-2.  Na _sesji wydajności_**stron właściwości** okno dialogowe, kliknij przycisk **ogólne** , a następnie wybierz pozycję **.NET zbierać informacje dotyczące alokacji obiektów** pole wyboru.  
+2. Na _sesji wydajności_**stron właściwości** okno dialogowe, kliknij przycisk **ogólne** , a następnie wybierz pozycję **.NET zbierać informacje dotyczące alokacji obiektów** pole wyboru.  
   
-3.  Do zbierania danych o okresie istnienia obiektu platformy .NET, wybierz **również zbierać informacje dotyczące okresu istnienia obiektu platformy .NET** pole wyboru.  
+3. Do zbierania danych o okresie istnienia obiektu platformy .NET, wybierz **również zbierać informacje dotyczące okresu istnienia obiektu platformy .NET** pole wyboru.  
   
 ## <a name="common-tasks"></a>Typowe zadania  
  Można określić dodatkowe opcje w _sesji wydajności_**stron właściwości** okna dialogowego sesji wydajności. Aby otworzyć to okno dialogowe:  
