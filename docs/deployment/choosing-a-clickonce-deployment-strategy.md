@@ -15,21 +15,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0198c9e9e6238547bb8a9ea1a49c9f8a2a611cbc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 52e0dc775e5e9413fb251261a319e529f36393eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603980"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102188"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>Wybieranie strategii wdrażania ClickOnce
 Istnieją trzy różne strategie wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, a wybrana strategia zależy głównie od typu aplikacji, w której przeprowadzasz wdrożenie. Poniżej przedstawiono wszystkie trzy strategie wdrażania:
 
--   Instalacja z sieci Web lub udziału sieciowego
+- Instalacja z sieci Web lub udziału sieciowego
 
--   Instalacja z dysku CD
+- Instalacja z dysku CD
 
--   Uruchamianie aplikacji z sieci Web lub udziału sieciowego
+- Uruchamianie aplikacji z sieci Web lub udziału sieciowego
 
     > [!NOTE]
     >  Oprócz wybrania strategii wdrażania, warto również wybrać strategię dostarczania aktualizacji aplikacji. Aby uzyskać więcej informacji, zobacz [Wybieranie strategii aktualizacji ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).

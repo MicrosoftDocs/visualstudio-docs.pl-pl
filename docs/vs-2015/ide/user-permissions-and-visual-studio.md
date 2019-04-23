@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d37e20154b3471e26f170c8437369493764935fc
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6e30fd7500c0f9dd216b630ea79ebfb79c964fab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775875"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101889"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uprawnienia użytkownika i program Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,17 +56,17 @@ Ze względów bezpieczeństwa należy uruchamiać Visual Studio jako zwykły uż
 
 #### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8includeswin8-mdmd-includewin81includeswin81-mdmd-includewinserver8includeswinserver8-mdmd-or-includewinblueserver2includeswinblue-server-2-mdmd"></a>Aby uruchomić program Visual Studio z uprawnieniami administracyjnymi [!INCLUDE[win8](../includes/win8-md.md)], [!INCLUDE[win81](../includes/win81-md.md)], [!INCLUDE[winserver8](../includes/winserver8-md.md)], lub [!INCLUDE[winblue_server_2](../includes/winblue-server-2-md.md)]
 
-1.  Na **Start** ekranu, wpisz **programu Visual Studio**. Powinna się pojawić wersja lub wersje programu Visual Studio, które zostały zainstalowane.
+1. Na **Start** ekranu, wpisz **programu Visual Studio**. Powinna się pojawić wersja lub wersje programu Visual Studio, które zostały zainstalowane.
 
-2.  Wybierz wersję programu Visual Studio, którą chcesz uruchomić, a następnie wywołaj menu podręczne (wyświetla się u dołu ekranu). Wybierz **Uruchom jako administrator**.
+2. Wybierz wersję programu Visual Studio, którą chcesz uruchomić, a następnie wywołaj menu podręczne (wyświetla się u dołu ekranu). Wybierz **Uruchom jako administrator**.
 
      Po uruchomieniu programu Visual Studio **(Administrator)** pojawia się po nazwie produktu na pasku tytułu.
 
 #### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7includeswin7-mdmd-or-includewinsvr08r2includeswinsvr08-r2-mdmd"></a>Aby uruchomić program Visual Studio z uprawnieniami administracyjnymi [!INCLUDE[win7](../includes/win7-md.md)] lub [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)]
 
-1.  Na **Start** menu, wybierz **wszystkie programy**.
+1. Na **Start** menu, wybierz **wszystkie programy**.
 
-2.  W **programu Microsoft Visual Studio** *wersji* wybierz folder **programu Visual Studio** *wersji* Otwórz menu skrótów, a następnie wybierz  **Uruchom jako administrator**.
+2. W **programu Microsoft Visual Studio** *wersji* wybierz folder **programu Visual Studio** *wersji* Otwórz menu skrótów, a następnie wybierz  **Uruchom jako administrator**.
 
      Po uruchomieniu programu Visual Studio **(Administrator)** pojawia się po nazwie produktu na pasku tytułu.
 

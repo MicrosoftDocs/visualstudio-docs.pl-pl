@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 220f3aad7e46310ec347418c25d866d03ecc2f15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d49d0cb43e4d93c5981aa9000c8ae539bc84879
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760366"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099562"
 ---
 # <a name="how-to-implement-an-interface-class-designer"></a>Instrukcje: Implementowanie interfejsu (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,14 +39,14 @@ W Projektancie klas można zaimplementować interfejsu na diagramie klas, łącz
   
 ### <a name="to-implement-an-interface-from-the-class-view-window"></a>Aby zaimplementować interfejs w oknie widoku klas  
   
-1.  Na diagramie klasy można wyświetlić klasę, która ma zostać zaimplementowany interfejs.  
+1. Na diagramie klasy można wyświetlić klasę, która ma zostać zaimplementowany interfejs.  
   
-2.  Otwórz widok klas i wyszukaj interfejs.  
+2. Otwórz widok klas i wyszukaj interfejs.  
   
     > [!TIP]
     >  Jeśli widok klas nie jest otwarty, otwórz widok klas z **widoku** menu. Aby uzyskać więcej informacji dotyczących widoku klas, zobacz [Viewing Classes and Their Members](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
   
-3.  Przeciągnij węzeł interfejsu klasa kształt na diagramie.  
+3. Przeciągnij węzeł interfejsu klasa kształt na diagramie.  
   
      Lizak pojawia się dołączony do klasy i etykietę o nazwie interfejsu identyfikuje relacji dziedziczenia. Program Visual Studio generuje namiastki dla wszystkich członków interfejsu; w tym momencie interfejs jest implementowany.  
   

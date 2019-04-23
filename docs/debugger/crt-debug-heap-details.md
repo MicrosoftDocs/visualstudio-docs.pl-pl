@@ -73,12 +73,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45562119158faad0d596b74faecd786668abf8dd
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: f55bd71b2174a03fb44b4512f04997e48d636d12
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227751"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103280"
 ---
 # <a name="crt-debug-heap-details"></a>Szczegóły dotyczące sterty debugowania CRT
 Ten temat zawiera szczegółowy widok sterty debugowania CRT.
@@ -92,7 +92,7 @@ Ten temat zawiera szczegółowy widok sterty debugowania CRT.
 
 [Skonfiguruj debugowanie sterty](#BKMK_Configure_the_debug_heap)
 
-[New, delete i _CLIENT_BLOCKs w języku C++ sterta debugowania](#BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap)
+[Nowy Usuń i _CLIENT_BLOCKs w C++ sterty debugowania](#BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap)
 
 [Funkcje raportowania stanu stosu](#BKMK_Heap_State_Reporting_Functions)
 
@@ -223,7 +223,7 @@ _CrtSetDbgFlag( tmpFlag );
 
 ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)
 
-## <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> New, delete i _CLIENT_BLOCKs w języku C++ sterta debugowania
+## <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> Nowy Usuń i _CLIENT_BLOCKs w C++ sterty debugowania
 Wersje do debugowania biblioteki wykonawczej języka C zawierają wersje do debugowania języka C++ `new` i `delete` operatorów. Jeśli używasz `_CLIENT_BLOCK` typu alokacji, należy wywołać wersję debugowania `new` operator bezpośrednio lub utworzyć makra, które zastępują `new` operatora w trybie debugowania, jak pokazano w poniższym przykładzie:
 
 ```cpp
@@ -261,7 +261,7 @@ Wersja debugowania `delete` operator współpracuje z bloku wszystkich typów i 
 
 ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)
 
-##  <a name="BKMK_Heap_State_Reporting_Functions"></a> Funkcje raportowania stanu stosu
+## <a name="BKMK_Heap_State_Reporting_Functions"></a> Funkcje raportowania stanu stosu
  **_CrtMemState**
 
  Aby przechwycić migawkę podsumowania stanu stosu w danym momencie, użyj struktury _CrtMemState zdefiniowanej w CRTDBG. GODZ.:

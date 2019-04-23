@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 7fc08e4896965e87315466ef6acd7d015eb98174
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 257d60d87a743d5c5e1099ee443c7bdb38055cca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648193"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056738"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Wprowadzenie do platformy ASP.NET Core
 
@@ -63,6 +63,7 @@ Otwórz i sprawdź **Program.cs** plik w projekcie. Należy zauważyć, że kilk
                 .UseStartup<Startup>();
     }
 ```
+
 Aplikacji ASP.NET Core tworzy serwer sieci web w jego głównej metody, konfigurowania i uruchamiania hosta za pośrednictwem wystąpienia [ `WebHostBuilder` ](/aspnet/core/fundamentals/hosting). Ten konstruktor zapewnia metody do Zezwalaj na hoście należy skonfigurować. W szablonie aplikacji są używane następujące konfiguracje:
 
 * `.UseStartup<Startup>()`: Określa klasę uruchamiania.
@@ -106,8 +107,8 @@ Otwórz i sprawdź **Startup.cs** plik w projekcie:
 
 Ta klasa uruchamiania zawsze muszą stosować się do następujących reguł:
 
- - Zawsze muszą być publiczne
- - Musi ona zawierać dwóch metod publicznych: `ConfigureServices` i `Configure`
+- Zawsze muszą być publiczne
+- Musi ona zawierać dwóch metod publicznych: `ConfigureServices` i `Configure`
 
 `ConfigureServices` Metoda definiuje usług, które będą używane przez aplikację.
 

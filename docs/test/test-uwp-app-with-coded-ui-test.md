@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 11fc95978690e98d496f539d4e98acf58104be3b
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: d50972ccb68ba43e8ebefa0d69fdfff8f7fc5be4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416126"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103263"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Tworzenie kodowanego interfejsu użytkownika testu do testowania aplikacji platformy uniwersalnej systemu Windows
 
@@ -136,6 +136,7 @@ Pierwszym krokiem jest, aby utworzyć prostą aplikację platformy uniwersalnej 
         Assert.AreEqual(Me.AssertMethod1ExpectedValues.UITextBoxEditText, uITextBoxEdit.Text, "Textbox value is unexpected.")
     End Sub
     ```
+
 1. Następnie należy uzyskać **AutomationId** dla platformy UWP [aplikacji](#create-a-uwp-app-to-test) który chcemy przetestować. Otwórz Windows **Start** menu, aby wyświetlić na kafelku aplikacji. Następnie przeciągnij narzędzie krzyżyka ![ikonę docelową](media/target-icon.png) z **kodowanego testu interfejsu użytkownika** okno dialogowe, aby Kafelek aplikacji. Gdy niebieski prostokąt otacza kafelka, zwolnij myszy.
 
    ![Narzędzia krzyżyk](media/cross-hair-tool.png)

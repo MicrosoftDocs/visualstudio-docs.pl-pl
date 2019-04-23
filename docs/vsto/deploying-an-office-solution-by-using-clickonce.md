@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7eb266eda25198f6d270ebcf48086141a73dcb9c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 940cf70047437c8aa3182121e8b1585b448018f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665457"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060744"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Wdrażanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce
   Można wdrożyć rozwiązania pakietu Office w mniejszej liczby czynności, jeśli użycie technologii ClickOnce. Podczas publikowania aktualizacji rozwiązanie automatycznie je wykryje i zainstaluje. Niedogodność polega na tym, że w technologii ClickOnce rozwiązanie trzeba zainstalować osobno dla każdego użytkownika komputera. W związku z tym, należy rozważyć użycie Instalatora Windows (*.msi*) Jeśli więcej niż jeden użytkownik uruchomi swoje rozwiązanie na tym samym komputerze.
@@ -45,7 +45,7 @@ ms.locfileid: "59665457"
 
   Aby uzyskać więcej informacji na temat wdrażania rozwiązania do pakietu Office przez utworzenie pliku Instalatora Windows, zobacz [wdrażania rozwiązania pakietu Office przy użyciu Instalatora Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
-##  <a name="Publish"></a> Publikowanie rozwiązania
+## <a name="Publish"></a> Publikowanie rozwiązania
  Rozwiązanie można opublikować za pomocą **Kreatora publikacji** lub **projektanta projektu**. W tej procedurze użyjesz **projektanta projektu** ponieważ zapewnia kompletny zestaw opcji publikowania. Zobacz [Kreator publikowania &#40;programowanie Office w Visual Studio&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).
 
 #### <a name="to-publish-the-solution"></a>Aby opublikować rozwiązanie
@@ -62,11 +62,11 @@ ms.locfileid: "59665457"
 
     Możesz użyć dowolnego z następujących typów ścieżek.
 
-   -   Ścieżka lokalna (na przykład *C:\FolderName\FolderName*).
+   - Ścieżka lokalna (na przykład *C:\FolderName\FolderName*).
 
-   -   Ścieżkę Uniform Naming Convention (UNC) do folderu w sieci (na przykład  *\\\ServerName\FolderName*).
+   - Ścieżkę Uniform Naming Convention (UNC) do folderu w sieci (na przykład  *\\\ServerName\FolderName*).
 
-   -   Ścieżka względna (na przykład *PublishFolder\\*, czyli do folderu, w którym projekt zostanie opublikowany domyślnie).
+   - Ścieżka względna (na przykład *PublishFolder\\*, czyli do folderu, w którym projekt zostanie opublikowany domyślnie).
 
 5. W **adres URL folderu instalacyjnego** wprowadź pełną ścieżkę lokalizacji, w którym użytkownicy końcowi znajdą rozwiązanie.
 
@@ -133,12 +133,12 @@ ms.locfileid: "59665457"
 
 14. Skopiuj pliki rozwiązania do lokalizacji instalacji określonej wcześniej w tej procedurze.
 
-##  <a name="Trust"></a> Decyzja w sprawie sposobu udzielenia zaufania rozwiązaniu
+## <a name="Trust"></a> Decyzja w sprawie sposobu udzielenia zaufania rozwiązaniu
  Zanim rozwiązanie będzie można uruchomić na komputerach użytkowników, administrator musi udzielić zaufania albo użytkownicy muszą odpowiedzieć na monit o udzielenie zaufania podczas instalacjo rozwiązania. Aby administrator przyznał zaufanie rozwiązaniu, musi podpisać manifest za pomocą certyfikatu identyfikującego znanego i zaufanego wydawcę. Zobacz [zaufania rozwiązania przez podpisanie manifestów aplikacji i wdrożenia](../vsto/granting-trust-to-office-solutions.md#Signing).
 
  Jeśli wdrażasz dostosowywania poziomie dokumentu i chcesz umieścić dokument do folderu na komputerze użytkownika lub udostępnić dokument w witrynie programu SharePoint, upewnij się, że pakiet Office ufa lokalizacji dokumentu. Zobacz [udzielenia zaufania do dokumentów](../vsto/granting-trust-to-documents.md).
 
-##  <a name="Helping"></a> Pomaganie użytkownikom w instalowaniu rozwiązania
+## <a name="Helping"></a> Pomaganie użytkownikom w instalowaniu rozwiązania
  Użytkownicy mogą zainstalować rozwiązanie przez uruchomienie programu instalacyjnego, otwarcie manifestu wdrażania lub podczas dostosowywania poziomie dokumentu, bezpośrednie otwarcie dokumentu. Według najlepszych praktyk rozwiązanie należy instalować przy użyciu programu instalacyjnego. Pozostałe dwie metody nie gwarantują, że wstępnie wymagane oprogramowanie jest zainstalowane. Jeśli użytkownicy chcą otwierać dokument z lokalizacji instalacji, muszą ją dodać do listy zaufanych lokalizacji w Centrum zaufania w aplikacji pakietu Office.
 
 ### <a name="opening-the-document-of-a-document-level-customization"></a>Otwieranie dokumentu z dostosowaniem na poziomie dokumentu
@@ -151,34 +151,34 @@ ms.locfileid: "59665457"
 
 ##### <a name="to-add-the-vsto-mime-type-to-iis-60"></a>Aby dodać typ MIME .vsto do usług IIS 6.0
 
-1.  Na serwerze, na którym działa program IIS 6.0 wybierz **Start** > **wszystkie programy** > **narzędzia administracyjne**  >   **Internetowych usług informacyjnych (IIS) Manager**.
+1. Na serwerze, na którym działa program IIS 6.0 wybierz **Start** > **wszystkie programy** > **narzędzia administracyjne**  >   **Internetowych usług informacyjnych (IIS) Manager**.
 
-2.  Wybierz nazwę komputera **witryn sieci Web** folderu lub witryny sieci web, którą konfigurujesz.
+2. Wybierz nazwę komputera **witryn sieci Web** folderu lub witryny sieci web, którą konfigurujesz.
 
-3.  Na pasku menu wybierz **akcji** > **właściwości**.
+3. Na pasku menu wybierz **akcji** > **właściwości**.
 
-4.  Na **nagłówków HTTP** kartę, wybrać **typy MIME** przycisku.
+4. Na **nagłówków HTTP** kartę, wybrać **typy MIME** przycisku.
 
-5.  W **typy MIME** oknie Wybierz **New** przycisku.
+5. W **typy MIME** oknie Wybierz **New** przycisku.
 
-6.  W **typ MIME** oknie wprowadź **.vsto** jako rozszerzenie wprowadź **application/x-ms-vsto** jako MIME typu, a następnie Zastosuj nowe ustawienia.
+6. W **typ MIME** oknie wprowadź **.vsto** jako rozszerzenie wprowadź **application/x-ms-vsto** jako MIME typu, a następnie Zastosuj nowe ustawienia.
 
     > [!NOTE]
     >  Aby zmiany zaczęły obowiązywać, należy ponownie uruchomić usługę publikowania w sieci World Wide Web lub poczekać na wykonanie cyklu odświeżania w procesie roboczym. Należy następnie opróżnić pamięć podręczną dysku w przeglądarce i spróbuj otworzyć *.vsto* plik ponownie.
 
 ##### <a name="to-add-the-vsto-mime-type-to-iis-70"></a>Aby dodać typ MIME .vsto do usług IIS 7.0
 
-1.  Na serwerze, na którym jest uruchomiony usług IIS 7.0, wybierz **Start** > **wszystkie programy** > **Akcesoria**.
+1. Na serwerze, na którym jest uruchomiony usług IIS 7.0, wybierz **Start** > **wszystkie programy** > **Akcesoria**.
 
-2.  Otwórz menu skrótów dla **polecenia**, a następnie wybierz **Uruchom jako administrator.**
+2. Otwórz menu skrótów dla **polecenia**, a następnie wybierz **Uruchom jako administrator.**
 
-3.  W **Otwórz** wprowadź następującą ścieżkę, a następnie wybierz **OK** przycisku.
+3. W **Otwórz** wprowadź następującą ścieżkę, a następnie wybierz **OK** przycisku.
 
     ```cmd
     %windir%\system32\inetsrv
     ```
 
-4.  Wprowadź następujące polecenie, a następnie zastosuj nowe ustawienia.
+4. Wprowadź następujące polecenie, a następnie zastosuj nowe ustawienia.
 
     ```cmd
     set config /section:staticContent /+[fileExtension='.vsto',mimeType='application/x-ms-vsto']
@@ -187,7 +187,7 @@ ms.locfileid: "59665457"
     > [!NOTE]
     >  Aby zmiany zaczęły obowiązywać, należy ponownie uruchomić usługę publikowania w sieci World Wide Web lub poczekać na wykonanie cyklu odświeżania w procesie roboczym. Należy następnie opróżnić pamięć podręczną dysku w przeglądarce i spróbuj otworzyć *.vsto* plik ponownie.
 
-##  <a name="Put"></a> Umieszczanie dokumentu rozwiązania na komputerze użytkownika końcowego (tylko dostosowania na poziomie dokumentu)
+## <a name="Put"></a> Umieszczanie dokumentu rozwiązania na komputerze użytkownika końcowego (tylko dostosowania na poziomie dokumentu)
  Tworząc akcję powdrożeniową, możesz skopiować dokumentu rozwiązania na komputerze użytkownika końcowego dla nich. Dzięki temu użytkownik nie musi ręcznie kopiować dokumentu z lokalizacji instalacji do swojego komputera po zainstalowaniu rozwiązania. Należy utworzyć klasę definiującą akcję powdrożeniową, kompilacji i opublikować rozwiązanie, zmodyfikować manifest aplikacji i ponownie podpisać manifesty aplikacji i wdrażania.
 
  W poniższych procedurach założono, że nazwa projektu jest **ExcelWorkbook** i opublikować rozwiązanie do utworzonego folderu o nazwie **C:\publish** na tym komputerze.
@@ -221,21 +221,21 @@ ms.locfileid: "59665457"
 
 ### <a name="build-and-publish-the-solution"></a>Kompilowanie i publikowanie rozwiązania
 
-1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla **FileCopyPDA** projektu, a następnie wybierz **kompilacji**.
+1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **FileCopyPDA** projektu, a następnie wybierz **kompilacji**.
 
-2.  Otwórz menu skrótów dla **ExcelWorkbook** projektu, a następnie wybierz **kompilacji**.
+2. Otwórz menu skrótów dla **ExcelWorkbook** projektu, a następnie wybierz **kompilacji**.
 
-3.  Otwórz menu skrótów dla **ExcelWorkbook** projektu, a następnie wybierz **Dodaj odwołanie**.
+3. Otwórz menu skrótów dla **ExcelWorkbook** projektu, a następnie wybierz **Dodaj odwołanie**.
 
-4.  W **Dodaj odwołanie** okna dialogowego wybierz **projektów** karty, wybierz polecenie **FileCopyPDA**, a następnie wybierz **OK** przycisk.
+4. W **Dodaj odwołanie** okna dialogowego wybierz **projektów** karty, wybierz polecenie **FileCopyPDA**, a następnie wybierz **OK** przycisk.
 
-5.  W **Eksploratora rozwiązań**, wybierz **ExcelWorkbook** projektu.
+5. W **Eksploratora rozwiązań**, wybierz **ExcelWorkbook** projektu.
 
-6.  Na pasku menu wybierz **projektu** > **nowy Folder**.
+6. Na pasku menu wybierz **projektu** > **nowy Folder**.
 
-7.  Wprowadź **danych**, a następnie wybierz **Enter** klucza.
+7. Wprowadź **danych**, a następnie wybierz **Enter** klucza.
 
-8.  W **Eksploratora rozwiązań**, wybierz **danych** folderu.
+8. W **Eksploratora rozwiązań**, wybierz **danych** folderu.
 
 9. Na pasku menu wybierz **projektu** > **Dodaj istniejący element**.
 
@@ -253,13 +253,13 @@ ms.locfileid: "59665457"
 
 ### <a name="modify-the-application-manifest"></a>Modyfikowanie manifestu aplikacji
 
-1.  Otwórz katalog rozwiązania **c:\publish**, za pomocą **Eksploratora plików**.
+1. Otwórz katalog rozwiązania **c:\publish**, za pomocą **Eksploratora plików**.
 
-2.  Otwórz **pliki aplikacji** folder, a następnie otwórz folder odpowiadający najnowszej opublikowanej wersji rozwiązania.
+2. Otwórz **pliki aplikacji** folder, a następnie otwórz folder odpowiadający najnowszej opublikowanej wersji rozwiązania.
 
-3.  Otwórz **ExcelWorkbook.dll.manifest** plik w edytorze tekstów, takiego jak Notatnik.
+3. Otwórz **ExcelWorkbook.dll.manifest** plik w edytorze tekstów, takiego jak Notatnik.
 
-4.  Po `</vstav3:update>` elementu, Dodaj następujący kod. Dla atrybutu klasy elementu `<vstav3:entryPoint>` elementu, należy użyć następującej składni: *NamespaceName.ClassName*. W poniższym przykładzie nazwy przestrzeni nazw i klasy są takie same, dzięki czemu wynikowy nazwy punktu wejścia jest `FileCopyPDA.FileCopyPDA`.
+4. Po `</vstav3:update>` elementu, Dodaj następujący kod. Dla atrybutu klasy elementu `<vstav3:entryPoint>` elementu, należy użyć następującej składni: *NamespaceName.ClassName*. W poniższym przykładzie nazwy przestrzeni nazw i klasy są takie same, dzięki czemu wynikowy nazwy punktu wejścia jest `FileCopyPDA.FileCopyPDA`.
 
     ```xml
     <vstav3:postActions>
@@ -280,11 +280,11 @@ ms.locfileid: "59665457"
 
 ### <a name="re-sign-the-application-and-deployment-manifests"></a>Ponowne podpisywanie manifestów aplikacji i wdrażania
 
-1.  W **%USERPROFILE%\Documents\Visual Studio 2013\Projects\ExcelWorkbook\ExcelWorkbook** folderu, kopiowanie **ExcelWorkbook_TemporaryKey.pfx** plik certyfikatu, a następnie wklej ją do  *PublishFolder* **\Application Files\ExcelWorkbook**\__MostRecentPublishedVersion_ folderu.
+1. W **%USERPROFILE%\Documents\Visual Studio 2013\Projects\ExcelWorkbook\ExcelWorkbook** folderu, kopiowanie **ExcelWorkbook_TemporaryKey.pfx** plik certyfikatu, a następnie wklej ją do  *PublishFolder* **\Application Files\ExcelWorkbook**\__MostRecentPublishedVersion_ folderu.
 
-2.  Otwórz wiersz polecenia programu Visual Studio, a następnie zmień katalogi na **c:\publish\Application Files\ExcelWorkbook**\__MostRecentPublishedVersion_ folderu (na przykład **c:\publish\Application Files\ExcelWorkbook_1_0_0_4**).
+2. Otwórz wiersz polecenia programu Visual Studio, a następnie zmień katalogi na **c:\publish\Application Files\ExcelWorkbook**\__MostRecentPublishedVersion_ folderu (na przykład **c:\publish\Application Files\ExcelWorkbook_1_0_0_4**).
 
-3.  Podpisz zmodyfikowany manifest aplikacji, wykonując następujące polecenie:
+3. Podpisz zmodyfikowany manifest aplikacji, wykonując następujące polecenie:
 
     ```cmd
     mage -sign ExcelWorkbook.dll.manifest -certfile ExcelWorkbook_TemporaryKey.pfx
@@ -292,7 +292,7 @@ ms.locfileid: "59665457"
 
      Zostanie wyświetlony komunikat „Plik ExcelWorkbook.dll.manifest został pomyślnie podpisany”.
 
-4.  Zmień **c:\publish** folder, a następnie aktualizacji i zaloguj wdrożenia manifestu, uruchamiając następujące polecenie:
+4. Zmień **c:\publish** folder, a następnie aktualizacji i zaloguj wdrożenia manifestu, uruchamiając następujące polecenie:
 
     ```cmd
     mage -update ExcelWorkbook.vsto -appmanifest "Application Files\Ex
@@ -304,38 +304,38 @@ ms.locfileid: "59665457"
 
      Zostanie wyświetlony komunikat „Plik ExcelWorkbook.dll.vsto został pomyślnie podpisany”.
 
-5.  Kopiuj *plik excelworkbook.dll.VSTO został* plik **c:\publish\Application Files\ExcelWorkbook**\__wartość elementu MostRecentVersionNumber_ katalogu.
+5. Kopiuj *plik excelworkbook.dll.VSTO został* plik **c:\publish\Application Files\ExcelWorkbook**\__wartość elementu MostRecentVersionNumber_ katalogu.
 
-##  <a name="SharePoint"></a> Umieszczanie dokumentu rozwiązania na serwerze, na którym uruchomiony jest SharePoint (tylko dostosowania na poziomie dokumentu)
+## <a name="SharePoint"></a> Umieszczanie dokumentu rozwiązania na serwerze, na którym uruchomiony jest SharePoint (tylko dostosowania na poziomie dokumentu)
  Dostosowanie na poziomie dokumentu można opublikować użytkownikom końcowym za pomocą programu SharePoint. Gdy użytkownicy przejdą do witryny programu SharePoint i otworzą dokument, środowisko uruchomieniowe automatycznie zainstaluje rozwiązanie z udostępnionego folderu sieciowego na komputerze lokalnym. Po lokalnym zainstalowaniu rozwiązania dostosowanie nadal będzie działać, nawet, jeśli dokument skopiowano w inne miejsce, na przykład na pulpit.
 
 #### <a name="to-put-the-document-on-a-server-thats-running-sharepoint"></a>Aby umieścić dokument na serwerze z programem SharePoint
 
-1.  Dodaj dokument z rozwiązania do biblioteki dokumentów w witrynie programu SharePoint.
+1. Dodaj dokument z rozwiązania do biblioteki dokumentów w witrynie programu SharePoint.
 
-2.  Wykonaj czynności dla jednej z poniższych metod:
+2. Wykonaj czynności dla jednej z poniższych metod:
 
-    -   Za pomocą narzędzia konfiguracji pakietu Office dodaj serwer z programem do Centrum zaufania w programie Word lub Excel na komputerach wszystkich użytkowników.
+    - Za pomocą narzędzia konfiguracji pakietu Office dodaj serwer z programem do Centrum zaufania w programie Word lub Excel na komputerach wszystkich użytkowników.
 
          Zobacz [zasady zabezpieczeń i ustawienia w pakiecie Office 2010](http://go.microsoft.com/fwlink/?LinkId=99227).
 
-    -   Upewnij się, że każdy użytkownik wykona następujące czynności.
+    - Upewnij się, że każdy użytkownik wykona następujące czynności.
 
-        1.  Na komputerze lokalnym, Otwórz program Word lub Excel, wybierz **pliku** kartę, a następnie wybierz **opcje** przycisku.
+        1. Na komputerze lokalnym, Otwórz program Word lub Excel, wybierz **pliku** kartę, a następnie wybierz **opcje** przycisku.
 
-        2.  W **Centrum zaufania** okna dialogowego wybierz **zaufane lokalizacje** przycisku.
+        2. W **Centrum zaufania** okna dialogowego wybierz **zaufane lokalizacje** przycisku.
 
-        3.  Wybierz **Zezwalaj na zaufane lokalizacje w mojej sieci (niezalecane)** pole wyboru, a następnie wybierz **Dodaj nową lokalizację** przycisku.
+        3. Wybierz **Zezwalaj na zaufane lokalizacje w mojej sieci (niezalecane)** pole wyboru, a następnie wybierz **Dodaj nową lokalizację** przycisku.
 
-        4.  W **ścieżki** wprowadź adres URL biblioteki dokumentów programu SharePoint, która zawiera dokument, który został przekazany (na przykład *http://SharePointServerName/TeamName/ProjectName/DocumentLibraryName*).
+        4. W **ścieżki** wprowadź adres URL biblioteki dokumentów programu SharePoint, która zawiera dokument, który został przekazany (na przykład *http://SharePointServerName/TeamName/ProjectName/DocumentLibraryName*).
 
              Nie dodawaj nazwy domyślnej strony sieci Web, takich jak *default.aspx* lub *AllItems.aspx*.
 
-        5.  Wybierz **podfoldery tej lokalizacji są także zaufane** pole wyboru, a następnie wybierz **OK** przycisku.
+        5. Wybierz **podfoldery tej lokalizacji są także zaufane** pole wyboru, a następnie wybierz **OK** przycisku.
 
              Gdy użytkownicy otwierają dokument z poziomu witryny programu SharePoint, następuje otwarcie dokumentu i zainstalowanie dostosowania. Użytkownicy mogą wtedy skopiować dokument na swoje komputery. Dostosowanie będzie nadal działać, ponieważ właściwości w dokumencie wskazują jego lokalizację sieciową.
 
-##  <a name="Custom"></a> Tworzenie niestandardowego Instalatora
+## <a name="Custom"></a> Tworzenie niestandardowego Instalatora
  Można utworzyć niestandardowego Instalatora dla rozwiązania pakietu Office, a nie za pomocą programu instalacyjnego, który jest tworzony automatycznie podczas publikowania rozwiązania. Na przykład można użyć znaku w skrypcie aby rozpocząć instalację lub wystarczą plik wsadowy może instalować rozwiązanie bez udziału użytkownika. Scenariusze te działają najlepiej, jeśli na komputerach użytkowników końcowych są już zainstalowane wstępnie wymagane składniki.
 
  W ramach procesu niestandardowej instalacji, należy wywołać narzędzie Instalatora dla rozwiązań pakietu Office (*VSTOInstaller.exe*), która jest domyślnie instalowana w następującej lokalizacji:
@@ -369,12 +369,12 @@ ms.locfileid: "59665457"
 |-401|Nie można odinstalować rozwiązania.|
 |-500|Operacja została anulowana, ponieważ nie można zainstalować lub odinstalować rozwiązania albo nie można pobrać manifestu wdrażania.|
 
-##  <a name="Update"></a> Publikowanie aktualizacji
+## <a name="Update"></a> Publikowanie aktualizacji
  Aby zaktualizować to rozwiązanie, należy je opublikować ponownie przy użyciu **projektanta projektu** lub **Kreatora publikacji**, a następnie skopiować zaktualizowane rozwiązanie do lokalizacji instalacji. Podczas kopiowania plików do lokalizacji instalacji trzeba koniecznie zaznaczyć opcję zastąpienia poprzednich plików.
 
  Gdy następnym razem rozwiązanie będzie sprawdzać dostępność aktualizacji, znajdzie i automatycznie zainstaluje nową wersję.
 
-##  <a name="Location"></a> Zmiana lokalizacji instalacji rozwiązania
+## <a name="Location"></a> Zmiana lokalizacji instalacji rozwiązania
  Po opublikowaniu rozwiązania można dodać lub zmienić ścieżkę instalacji. Często powody takiej zmiany są następujące:
 
 - Program instalacyjny został skompilowany przed ustaleniem ścieżki instalacji.
@@ -410,40 +410,40 @@ ms.locfileid: "59665457"
 
 #### <a name="to-update-the-assemblylocation-property-in-a-document"></a>Aby zaktualizować właściwość _AssemblyLocation w dokumencie
 
-1.  Na **pliku** karty, wybierz polecenie **informacje**, który przedstawiono na poniższej ilustracji.
+1. Na **pliku** karty, wybierz polecenie **informacje**, który przedstawiono na poniższej ilustracji.
 
      ![Karta informacje w programie Excel](../vsto/media/vsto-infotab.png "karta informacje w programie Excel")
 
-2.  W **właściwości** wybierz **zaawansowane właściwości**, który przedstawiono na poniższej ilustracji.
+2. W **właściwości** wybierz **zaawansowane właściwości**, który przedstawiono na poniższej ilustracji.
 
      ![Zaawansowane właściwości w programie Excel. ](../vsto/media/vsto-advanceddocumentproperties.png "Zaawansowane właściwości w programie Excel.")
 
-3.  Na **niestandardowe** karcie **właściwości** wybierz _AssemblyLocation, jak pokazano na następującym rysunku.
+3. Na **niestandardowe** karcie **właściwości** wybierz _AssemblyLocation, jak pokazano na następującym rysunku.
 
      ![Właściwość AssemblyLocation. ](../vsto/media/vsto-assemblylocationproperty.png "AssemblyLocation właściwości.")
 
      **Wartość** pole zawiera identyfikator manifestu wdrażania.
 
-4.  Przed identyfikatorem wprowadź w pełni kwalifikowaną ścieżkę dokumentu, następuje pasku w formacie *ścieżki*|*identyfikator* (na przykład *File://ServerName/ Nazwa folderu/FileName | 74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.
+4. Przed identyfikatorem wprowadź w pełni kwalifikowaną ścieżkę dokumentu, następuje pasku w formacie *ścieżki*|*identyfikator* (na przykład *File://ServerName/ Nazwa folderu/FileName | 74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.
 
      Aby uzyskać więcej informacji na temat formatowania tego identyfikatora, zobacz [właściwości niestandardowego dokumentu ― omówienie](../vsto/custom-document-properties-overview.md).
 
-5.  Wybierz **OK** przycisk, a następnie zapisz i zamknij dokument.
+5. Wybierz **OK** przycisk, a następnie zapisz i zamknij dokument.
 
-6.  Uruchom program instalacyjny bez parametru /url. Rozwiązanie zostanie zainstalowane w podanej lokalizacji.
+6. Uruchom program instalacyjny bez parametru /url. Rozwiązanie zostanie zainstalowane w podanej lokalizacji.
 
-##  <a name="Roll"></a> Wycofywanie rozwiązania do wcześniejszej wersji
+## <a name="Roll"></a> Wycofywanie rozwiązania do wcześniejszej wersji
  Wycofanie rozwiązania powoduje, że użytkownicy wrócą do korzystania z jego starszej wersji.
 
 #### <a name="to-roll-back-a-solution"></a>Aby wycofać rozwiązanie
 
-1.  Otwórz lokalizację instalacji rozwiązania.
+1. Otwórz lokalizację instalacji rozwiązania.
 
-2.  W najwyższego poziomu folderu publikowania, Usuń manifest wdrażania ( *.vsto* pliku).
+2. W najwyższego poziomu folderu publikowania, Usuń manifest wdrażania ( *.vsto* pliku).
 
-3.  Znajdź podfolder wersji, do której chcesz wycofać rozwiązanie.
+3. Znajdź podfolder wersji, do której chcesz wycofać rozwiązanie.
 
-4.  Skopiuj manifest wdrażania z tego podfolderu do folderu publikowania najwyższego poziomu.
+4. Skopiuj manifest wdrażania z tego podfolderu do folderu publikowania najwyższego poziomu.
 
      Na przykład, aby wycofać rozwiązanie, która jest wywoływana **OutlookAddIn1** z wersji 1.0.0.1 do wersji 1.0.0.0, skopiuj plik **OutlookAddIn1.vsto** z **OutlookAddIn1_1_0_0_0** folderu. Wklej plik do najwyższego poziomu publikowanie folderu, zastępując manifest wdrażania wersji **OutlookAddIn1_1_0_0_1** było już istnieje.
 

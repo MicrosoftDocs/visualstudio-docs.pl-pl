@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 732180c026f1620fe0bc1d7b5c8363a524da7171
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ccd234f30c6a9d4d6a0672875b5daf04bab4cb68
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662962"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101759"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Instrukcje: Uruchamianie aplikacji autonomicznej .NET Framework z profilerem do zbierania danych współbieżności przy użyciu wiersza polecenia
 W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza poleceń Profiling Tools uruchamianie aplikacji autonomicznej (klienta) .NET Framework i zbieranie danych współbieżności procesu i wątku
@@ -71,7 +71,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
 
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych
 
-1.  Następujące pary *VSPerfCmd.exe* opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
+1. Następujące pary *VSPerfCmd.exe* opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
 
     |Opcja|Opis|
     |------------|-----------------|
@@ -84,15 +84,15 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
 
 #### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania
 
-1.  Wykonaj jedną z następujących czynności, aby odłączyć program profiler od aplikacji docelowej.
+1. Wykonaj jedną z następujących czynności, aby odłączyć program profiler od aplikacji docelowej.
 
-    -   Zamknij aplikację docelową.
+    - Zamknij aplikację docelową.
 
          —lub—
 
-    -   Typ **VSPerfCmd / Odłącz**
+    - Typ **VSPerfCmd / Odłącz**
 
-2.  Zamknij program profilujący
+2. Zamknij program profilujący
 
      **Narzędzia VSPerfCmd** [ /shutdown](../profiling/shutdown.md)
 

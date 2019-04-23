@@ -8,12 +8,12 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 361e382149d15c4721f5707e06ec2e2d8fdbe3ad
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 26cd34583f28c19770675b185f986149b23fdf6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867903"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100452"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Korzystanie z formantów HTML5 w kodowanych testach interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Kodowane testy interfejsu użytkownika obsługują niektóre formanty języka HT
   
  **Wymagania**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 > [!WARNING]
 >  W wersjach wcześniejszych niż Internet Explorer 10 było możliwe do uruchomienia kodowanych testów interfejsu użytkownika w porównaniu do programu proces programu Internet Explorer wyższym poziomie uprawnień. Podczas uruchamiania kodowanych testów interfejsu użytkownika w programie Internet Explorer 10, proces programu Internet Explorer i kodowany test interfejsu użytkownika musi być na tym samym poziomie uprawnień. Jest to ze względu na bardziej bezpieczne funkcje kontenera aplikacji w programie Internet Explorer 10.  
@@ -33,18 +33,18 @@ Kodowane testy interfejsu użytkownika obsługują niektóre formanty języka HT
 ## <a name="supported-html5-controls"></a>Formanty HTML5 obsługiwane  
  Kodowane testy interfejsu użytkownika obsługują rekordu, odtwarzanie i sposób sprawdzania poprawności formantów HTML5, następujące:  
   
--   [Audio Control](#UsingHTML5ControlsCodedUITestsAudio)  
+- [Audio Control](#audio-control)  
   
--   [Kontrolki wideo](#UsingHTML5ControlsCodedUITestsVideo)  
+- [Kontrolki wideo](#video-control)  
   
--   [Slider](#UsingHTML5ControlsCodedUITestsSlider)  
+- [Slider](#slider)  
   
--   [ProgressBar](#UsingHTML5ControlsCodedUITestsProgressBar)  
+- [ProgressBar](#progressbar)  
   
-###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Audio Control  
+### <a name="audio-control"></a>Kontrolki dźwięku  
  **Kontrolki dźwięku:** Akcje w kontrolce dźwięk HTML5 poprawnie są rejestrowane i odtwarzać.  
   
- ![Dźwięk HTML5 kontroli](../test/media/codedui-html5-audio.png "CodedUI_HTML5_Audio")  
+ ![Dźwięk HTML5 kontroli](../test/media/codedui-html5-audio.png)  
   
 |Akcja|Rejestrowanie|Wygenerowany kod|  
 |------------|---------------|--------------------|  
@@ -74,7 +74,6 @@ string ReadyState
 string Seeking  
 string Src  
 string Volume  
-  
 ```  
   
  **Właściwości wyszukiwania:** Właściwości wyszukiwania `HtmlAudio` są `Id`, `Name` i `Title`.  
@@ -84,10 +83,10 @@ string Volume
 > [!NOTE]
 >  Ilość czasu, która umożliwia wyszukiwanie i wstrzymywanie działania mogą być znaczące. Podczas odtwarzania kodowanego testu interfejsu użytkownika będzie czekać aż do określonej w `(TimeSpan)` przed wstrzymaniem audio. Jeśli przez kilka specjalnych okoliczności określonego czasu minęło przed osiągnięcia polecenie wstrzymania, zostanie zgłoszony wyjątek.  
   
-###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Kontrolki wideo  
+### <a name="video-control"></a>Kontrolki wideo  
  **Kontrolki wideo:** Poprawnie zarejestrowane i odtwarzać akcji dla kontrolki wideo HTML5.  
   
- ![Kontrolki wideo HTML5](../test/media/codedui-html5-video.png "CodedUI_HTML5_Video")  
+ ![Kontrolki wideo HTML5](../test/media/codedui-html5-video.png)  
   
 |Akcja|Rejestrowanie|Wygenerowany kod|  
 |------------|---------------|--------------------|  
@@ -114,10 +113,10 @@ string VideoWidth
 > [!NOTE]
 >  Jeśli przewinąć do tyłu lub szybkie przewijanie do przodu wideo przy użyciu etykiet-30s lub +30s, to zostaną zagregowane się w odpowiednim czasie.  
   
-###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Suwak  
+### <a name="slider"></a>Suwak  
  **Kontrolka suwaka:** Akcje w kontrolce suwaka HTML5 poprawnie są rejestrowane i odtwarzać.  
   
- ![Kontrolka suwaka HTML5](../test/media/codedui-html5-slider.png "CodedUI_HTML5_Slider")  
+ ![Kontrolka suwaka HTML5](../test/media/codedui-html5-slider.png)  
   
 |Akcja|Rejestrowanie|Wygenerowany kod|  
 |------------|---------------|--------------------|  
@@ -134,14 +133,15 @@ string Step
 string ValueAsNumber  
 ```  
   
-###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> ProgressBar  
+### <a name="progressbar"></a>ProgressBar  
  **ProgressBar — formant:** ProgressBar jest-interactable kontroli. Można dodać asercje `Value` i `Max` właściwości tej kontrolki.  
   
- ![HTML5 ProgressBar, kontrolka](../test/media/codedui-html5-progressbar.png "CodedUI_HTML5_ProgressBar")  
+ ![HTML5 ProgressBar, kontrolka](../test/media/codedui-html5-progressbar.png)  
   
-## <a name="see-also"></a>Zobacz też  
- [Elementy HTML](https://www.w3schools.com/HTML/html_elements.asp)   
- [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)   
- [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Dostosowywanie kodowanego testu interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
- [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i rejestrowania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+## <a name="see-also"></a>Zobacz także
+
+- [Elementy HTML](https://www.w3schools.com/HTML/html_elements.asp)   
+- [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)   
+- [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
+- [Dostosowywanie kodowanego testu interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
+- [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i rejestrowania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

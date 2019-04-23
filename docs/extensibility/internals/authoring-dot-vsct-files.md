@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 442d78f494381021bd480f5649dbb6957bec5ae1
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 84c7a5194e48e73fbabf60b7c9ef89e6cb04d855
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954053"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053086"
 ---
 # <a name="author-vsct-files"></a>Tworzenie plików vsct
 W tym dokumencie pokazano, jak tworzyć *vsct* plik, aby dodać elementy menu, paski narzędzi i inne elementy interfejsu użytkownika do programu Visual Studio zintegrowane środowisko programistyczne (IDE). Wykonaj następujące czynności, po dodaniu elementów interfejsu użytkownika do pakietu Visual Studio (pakietu VSPackage), który nie ma jeszcze *vsct* pliku.
@@ -30,7 +30,7 @@ W tym dokumencie pokazano, jak tworzyć *vsct* plik, aby dodać elementy menu, p
 
 #### <a name="to-create-the-file-structure"></a>Tworzenie struktury pliku
 
-1.  Dodaj *vsct* plik do projektu, wykonując kroki opisane w [jak: Tworzenie pliku vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).
+1. Dodaj *vsct* plik do projektu, wykonując kroki opisane w [jak: Tworzenie pliku vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).
 
 2. Dodaj wymagane przestrzenie nazw do `CommandTable` elementu, jak pokazano w poniższym przykładzie:
 
@@ -40,7 +40,7 @@ W tym dokumencie pokazano, jak tworzyć *vsct* plik, aby dodać elementy menu, p
 
     ```
 
-3.  W `CommandTable` elementu Dodawanie `Commands` element do obsługi wszystkich niestandardowych menu, paski narzędzi, grup poleceń i polecenia. Tak, aby załadować niestandardowe elementy interfejsu użytkownika, `Commands` element musi mieć jej `Package` atrybut ustawiony na nazwę pakietu.
+3. W `CommandTable` elementu Dodawanie `Commands` element do obsługi wszystkich niestandardowych menu, paski narzędzi, grup poleceń i polecenia. Tak, aby załadować niestandardowe elementy interfejsu użytkownika, `Commands` element musi mieć jej `Package` atrybut ustawiony na nazwę pakietu.
 
      Po `Commands` elementu Dodawanie `Symbols` element, aby zdefiniować identyfikatorów GUID dla pakietu i nazwy i identyfikatory poleceń Twoje elementów interfejsu użytkownika.
 
@@ -51,9 +51,9 @@ W tym dokumencie pokazano, jak tworzyć *vsct* plik, aby dodać elementy menu, p
 
 1. W górnej części `CommandTable` elementu, dodaj je `Extern` elementu dla każdego pliku zewnętrznego, odwołania i ustawiania `href` atrybut nazwy pliku. Możesz odwołać się następujące pliki nagłówków, aby uzyskać dostęp do zasobów programu Visual Studio:
 
-   -   *Stdidcmd.h*: Definiuje identyfikatorów dla wszystkich poleceń udostępnianych przez program Visual Studio.
+   - *Stdidcmd.h*: Definiuje identyfikatorów dla wszystkich poleceń udostępnianych przez program Visual Studio.
 
-   -   *Vsshlids.h*: Zawiera identyfikatory poleceń menu programu Visual Studio.
+   - *Vsshlids.h*: Zawiera identyfikatory poleceń menu programu Visual Studio.
 
 2. Jeśli pakiet wymaga dowolne polecenia, które zostały zdefiniowane przez program Visual Studio lub innych pakietów, należy dodać `UsedCommands` elementu po `Commands` elementu. Wypełnij ten element z [UsedCommand](../../extensibility/usedcommand-element.md) elementu dla każdego polecenia, oznacza to wywołanie nie jest częścią pakietu. Ustaw `guid` i `id` atrybuty `UsedCommand` elementy do wartości Identyfikator GUID i identyfikator polecenia do wywołania.
 
@@ -64,15 +64,15 @@ W tym dokumencie pokazano, jak tworzyć *vsct* plik, aby dodać elementy menu, p
 
 #### <a name="to-declare-ui-elements"></a>Aby zadeklarować elementy interfejsu użytkownika
 
-1.  W `Symbols` elementu, Dodaj trzy [GuidSymbol](../../extensibility/guidsymbol-element.md) elementów. Każdy `GuidSymbol` element ma `name` atrybutu i `value` atrybutu. Ustaw `name` atrybutu, aby odzwierciedlały celem elementu. `value` Atrybut przyjmuje postać identyfikatora GUID. (Można wygenerować identyfikatora GUID na **narzędzia** menu, wybierz opcję **Utwórz GUID**, a następnie wybierz pozycję **Format rejestru**.)
+1. W `Symbols` elementu, Dodaj trzy [GuidSymbol](../../extensibility/guidsymbol-element.md) elementów. Każdy `GuidSymbol` element ma `name` atrybutu i `value` atrybutu. Ustaw `name` atrybutu, aby odzwierciedlały celem elementu. `value` Atrybut przyjmuje postać identyfikatora GUID. (Można wygenerować identyfikatora GUID na **narzędzia** menu, wybierz opcję **Utwórz GUID**, a następnie wybierz pozycję **Format rejestru**.)
 
      Pierwszy `GuidSymbol` element, który reprezentuje pakiet, a zwykle nie ma elementów podrzędnych. Drugi `GuidSymbol` element reprezentuje polecenie Ustaw i będzie zawierać wszystkie symbole, które definiują menu, grup i poleceń. Trzeci `GuidSymbol` element reprezentuje swoje magazynu obrazów i zawiera symbole dla wszystkich ikony dla poleceń. Jeśli nie masz żadnych poleceń korzystających z ikon, można pominąć trzeci `GuidSymbol` elementu.
 
-2.  W `GuidSymbol` elementu, który reprezentuje zestaw poleceń, Dodaj jeden lub kilka [IDSymbol](../../extensibility/idsymbol-element.md) elementów. Każdy z nich reprezentuje menu, pasek narzędzi, grupy lub polecenia, które dodajesz do Interfejsu użytkownika.
+2. W `GuidSymbol` elementu, który reprezentuje zestaw poleceń, Dodaj jeden lub kilka [IDSymbol](../../extensibility/idsymbol-element.md) elementów. Każdy z nich reprezentuje menu, pasek narzędzi, grupy lub polecenia, które dodajesz do Interfejsu użytkownika.
 
      Dla każdego `IDSymbol` elementu, ustaw `name` atrybutu nazwa będzie używana do odwoływania się do odpowiedniego menu, grupy lub polecenia, a następnie ustaw `value` elementu liczbę szesnastkową, która będzie reprezentowała jego identyfikator polecenia. Nie dwóch `IDSymbol` elementy, które mają ten sam nadrzędny element może mieć taką samą wartość.
 
-3.  Jeśli dowolne elementy interfejsu użytkownika wymaga ikony, należy dodać `IDSymbol` elementu dla każdego ikonę, aby `GuidSymbol` elementu, który reprezentuje magazynu w obrazie.
+3. Jeśli dowolne elementy interfejsu użytkownika wymaga ikony, należy dodać `IDSymbol` elementu dla każdego ikonę, aby `GuidSymbol` elementu, który reprezentuje magazynu w obrazie.
 
 ### <a name="put-ui-elements-in-the-ide"></a>Umieść elementy interfejsu użytkownika w środowisku IDE
  [Menu](../../extensibility/menus-element.md), [grup](../../extensibility/groups-element.md), i [przyciski](../../extensibility/buttons-element.md) elementy zawierają definicje dla wszystkich menu, grup i poleceń, które są zdefiniowane w pakiecie. Umieść następujące menu, grupy i polecenia w środowisku IDE, za pomocą [nadrzędnego](../../extensibility/parent-element.md) elementu, który jest częścią definicji elementu interfejsu użytkownika lub za pomocą [CommandPlacement](../../extensibility/commandplacement-element.md) element, który jest zdefiniowany w innym miejscu.
@@ -96,14 +96,14 @@ W tym dokumencie pokazano, jak tworzyć *vsct* plik, aby dodać elementy menu, p
 
 3. Jeśli dodajesz nowe polecenia do IDE, Dodaj `Buttons` elementu `Commands` elementu. Następnie dla każdego polecenia, należy dodać [przycisk](../../extensibility/button-element.md) elementu `Buttons` elementu.
 
-   1.  Ustaw `guid` i `id` atrybuty każdego `Button` elementu, a następnie ustaw `type` atrybutu z rodzajem przycisku. Możesz też ustawić opcję `priority` atrybutu, aby ustanowić względne położenie polecenia w grupie nadrzędnej.
+   1. Ustaw `guid` i `id` atrybuty każdego `Button` elementu, a następnie ustaw `type` atrybutu z rodzajem przycisku. Możesz też ustawić opcję `priority` atrybutu, aby ustanowić względne położenie polecenia w grupie nadrzędnej.
 
        > [!NOTE]
        >  Użyj `type="button"` polecenia standardowe menu i przycisków na paskach narzędzi.
 
-   2.  W `Button` elementu Dodawanie [ciągi](../../extensibility/strings-element.md) element, który zawiera [ButtonText](../../extensibility/buttontext-element.md) elementu i [CommandName](../../extensibility/commandname-element.md) elementu. `ButtonText` Element udostępnia etykietę tekstową dla elementu menu lub etykietkę narzędzia dla przycisku paska narzędzi. `CommandName` Element zawiera nazwę polecenia można również użyć w poleceniu.
+   2. W `Button` elementu Dodawanie [ciągi](../../extensibility/strings-element.md) element, który zawiera [ButtonText](../../extensibility/buttontext-element.md) elementu i [CommandName](../../extensibility/commandname-element.md) elementu. `ButtonText` Element udostępnia etykietę tekstową dla elementu menu lub etykietkę narzędzia dla przycisku paska narzędzi. `CommandName` Element zawiera nazwę polecenia można również użyć w poleceniu.
 
-   3.  Jeśli polecenie będzie miał ikony, należy utworzyć [ikonę](../../extensibility/icon-element.md) elementu w `Button` elementu, a następnie ustaw jego `guid` i `id` atrybuty do `Bitmap` element ikony.
+   3. Jeśli polecenie będzie miał ikony, należy utworzyć [ikonę](../../extensibility/icon-element.md) elementu w `Button` elementu, a następnie ustaw jego `guid` i `id` atrybuty do `Bitmap` element ikony.
 
        > [!NOTE]
        >  Przyciski paska narzędzi muszą mieć ikon.
@@ -120,9 +120,9 @@ W tym dokumencie pokazano, jak tworzyć *vsct* plik, aby dodać elementy menu, p
 
     Celem `Parent` element jest menu lub grupy, która będzie zawierać menu, grupy lub polecenia.
 
-   1.  Ustaw `guid` atrybutu nazwy `GuidSymbol` element, który definiuje zestaw poleceń. Jeśli element docelowy nie jest częścią pakietu, użyj identyfikatora guid dla tego zestawu poleceń zgodnie z definicją w odpowiednich *vsct* pliku.
+   1. Ustaw `guid` atrybutu nazwy `GuidSymbol` element, który definiuje zestaw poleceń. Jeśli element docelowy nie jest częścią pakietu, użyj identyfikatora guid dla tego zestawu poleceń zgodnie z definicją w odpowiednich *vsct* pliku.
 
-   2.  Ustaw `id` atrybutu do dopasowania `id` atrybut menu docelowego lub grupy. Aby uzyskać listę menu i grup, które są dostępne w programie Visual Studio, zobacz [menu identyfikatory GUID i identyfikatory programu Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) lub [pasków narzędzi identyfikatory GUID i identyfikatory programu Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md).
+   2. Ustaw `id` atrybutu do dopasowania `id` atrybut menu docelowego lub grupy. Aby uzyskać listę menu i grup, które są dostępne w programie Visual Studio, zobacz [menu identyfikatory GUID i identyfikatory programu Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) lub [pasków narzędzi identyfikatory GUID i identyfikatory programu Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md).
 
    Jeśli masz dużą liczbę elementów interfejsu użytkownika można umieścić w IDE lub w przypadku elementów, które powinny się wyświetlać w wielu miejscach, zdefiniuj ich rozmieszczenia w [CommandPlacements](../../extensibility/commandplacements-element.md) elementu, jak pokazano w poniższych krokach.
 
@@ -145,79 +145,79 @@ W tym dokumencie pokazano, jak tworzyć *vsct* plik, aby dodać elementy menu, p
 
 1. Aby element interfejsu użytkownika było widoczne tylko w określonych kontekstach interfejsu użytkownika, na przykład po załadowaniu rozwiązania, użyj ograniczeń widoczność.
 
-   1.  Po `Commands` elementu Dodawanie `VisibilityConstraints` elementu.
+   1. Po `Commands` elementu Dodawanie `VisibilityConstraints` elementu.
 
-   2.  Dla każdego elementu interfejsu użytkownika w celu ograniczenia Dodaj [VisibilityItem](../../extensibility/visibilityitem-element.md) elementu.
+   2. Dla każdego elementu interfejsu użytkownika w celu ograniczenia Dodaj [VisibilityItem](../../extensibility/visibilityitem-element.md) elementu.
 
-   3.  Dla każdego `VisibilityItem` elementu, ustaw `guid` i `id` atrybutów, które mają menu, grupy lub polecenia, a następnie ustaw `context` atrybutu kontekstu interfejsu użytkownika, należy zgodnie z definicją w <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> klasy.
+   3. Dla każdego `VisibilityItem` elementu, ustaw `guid` i `id` atrybutów, które mają menu, grupy lub polecenia, a następnie ustaw `context` atrybutu kontekstu interfejsu użytkownika, należy zgodnie z definicją w <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> klasy.
 
 2. Aby ustawić widoczność i dostępność elementów interfejsu użytkownika w kodzie, należy użyć co najmniej jeden z następujących flag poleceń:
 
-   -   `DefaultDisabled`
+   - `DefaultDisabled`
 
-   -   `DefaultInvisible`
+   - `DefaultInvisible`
 
-   -   `DynamicItemStart`
+   - `DynamicItemStart`
 
-   -   `DynamicVisibility`
+   - `DynamicVisibility`
 
-   -   `NoShowOnMenuController`
+   - `NoShowOnMenuController`
 
-   -   `NotInTBList`
+   - `NotInTBList`
 
    Aby uzyskać więcej informacji, zobacz [CommandFlag](../../extensibility/command-flag-element.md) elementu.
 
 3. Aby zmienić sposób element jest wyświetlany lub dynamicznie zmieniać jego wygląd, należy użyć co najmniej jeden z następujących flag poleceń:
 
-   -   `AlwaysCreate`
+   - `AlwaysCreate`
 
-   -   `CommandWellOnly`
+   - `CommandWellOnly`
 
-   -   `DefaultDocked`
+   - `DefaultDocked`
 
-   -   `DontCache`
+   - `DontCache`
 
-   -   `DynamicItemStart`
+   - `DynamicItemStart`
 
-   -   `FixMenuController`
+   - `FixMenuController`
 
-   -   `IconAndText`
+   - `IconAndText`
 
-   -   `Pict`
+   - `Pict`
 
-   -   `StretchHorizontally`
+   - `StretchHorizontally`
 
-   -   `TextMenuUseButton`
+   - `TextMenuUseButton`
 
-   -   `TextChanges`
+   - `TextChanges`
 
-   -   `TextOnly`
+   - `TextOnly`
 
    Aby uzyskać więcej informacji, zobacz [CommandFlag](../../extensibility/command-flag-element.md) elementu.
 
 4. Aby zmienić, jak element reaguje, gdy otrzyma poleceń, należy użyć co najmniej jeden z następujących flag poleceń:
 
-   -   `AllowParams`
+   - `AllowParams`
 
-   -   `CaseSensitive`
+   - `CaseSensitive`
 
-   -   `CommandWellOnly`
+   - `CommandWellOnly`
 
-   -   `FilterKeys`
+   - `FilterKeys`
 
-   -   `NoAutoComplete`
+   - `NoAutoComplete`
 
-   -   `NoButtonCustomize`
+   - `NoButtonCustomize`
 
-   -   `NoKeyCustomize`
+   - `NoKeyCustomize`
 
-   -   `NoToolbarClose`
+   - `NoToolbarClose`
 
-   -   `PostExec`
+   - `PostExec`
 
-   -   `RouteToDocs`
+   - `RouteToDocs`
 
-   -   `TextIsAnchorCommand`
+   - `TextIsAnchorCommand`
 
    Aby uzyskać więcej informacji, zobacz [CommandFlag](../../extensibility/command-flag-element.md) elementu.
 

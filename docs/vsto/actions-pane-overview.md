@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f6ca07ebf8489dd62d6cfbe232f2522ac0f448a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 628620005c43ae465107e43572684cb74c8d1aa9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608815"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099744"
 ---
 # <a name="actions-pane-overview"></a>Okienko akcji ― omówienie
   Okienka akcji jest dostosowywany **akcji dla dokumentów** okienka zadań, który jest dołączony do określonego dokumentu Microsoft Office Word lub skoroszytu programu Microsoft Office Excel. W okienku Akcje znajduje się wewnątrz okienka zadań pakietu Office oraz inne okienka wbudowanego zadania, takie jak **źródła XML** okienka zadań w programie Excel lub **style i formatowanie** okienka zadań w programie Word. Formanty Windows Forms lub kontrolek WPF umożliwia projektowanie interfejsu użytkownika w okienku Akcje.
@@ -61,17 +61,17 @@ ms.locfileid: "56608815"
 
  Aby ukryć okienka zadań w Twoim rozwiązaniu, masz kilka opcji:
 
--   Dla programu Word, ustaw <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> właściwość <xref:Microsoft.Office.Interop.Word.TaskPane> obiekt, który reprezentuje Akcje dokumentu okienku zadań w celu **false**. Poniższy przykład kodu jest przeznaczona do uruchamiania z `ThisDocument` klasy w projekcie.
+- Dla programu Word, ustaw <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> właściwość <xref:Microsoft.Office.Interop.Word.TaskPane> obiekt, który reprezentuje Akcje dokumentu okienku zadań w celu **false**. Poniższy przykład kodu jest przeznaczona do uruchamiania z `ThisDocument` klasy w projekcie.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
      [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]
 
--   Dla programu Excel, należy ustawić <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> właściwość <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> obiekt **false**. Poniższy przykład kodu jest przeznaczona do uruchamiania z `ThisWorkbook` klasy w projekcie.
+- Dla programu Excel, należy ustawić <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> właściwość <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> obiekt **false**. Poniższy przykład kodu jest przeznaczona do uruchamiania z `ThisWorkbook` klasy w projekcie.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]
 
--   Dla programu Word lub Excel, można również ustawić <xref:Microsoft.Office.Core.CommandBar.Visible%2A> właściwości paska poleceń, reprezentujący w okienku zadań w celu **false**. Poniższy przykład kodu jest przeznaczona do uruchamiania z `ThisDocument` lub `ThisWorkbook` klasy w projekcie.
+- Dla programu Word lub Excel, można również ustawić <xref:Microsoft.Office.Core.CommandBar.Visible%2A> właściwości paska poleceń, reprezentujący w okienku zadań w celu **false**. Poniższy przykład kodu jest przeznaczona do uruchamiania z `ThisDocument` lub `ThisWorkbook` klasy w projekcie.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]
@@ -86,9 +86,9 @@ ms.locfileid: "56608815"
 
 ##### <a name="to-display-the-actions-pane-by-using-the-ui-of-word-or-excel"></a>Aby wyświetlić okienko akcji przy użyciu interfejsu użytkownika programu Word lub Excel
 
-1.  Na wstążce kliknij **widoku** kartę.
+1. Na wstążce kliknij **widoku** kartę.
 
-2.  W **Pokaż/Ukryj** grupy, kliknij przycisk **akcji dla dokumentów** przycisku przełączania.
+2. W **Pokaż/Ukryj** grupy, kliknij przycisk **akcji dla dokumentów** przycisku przełączania.
 
 ## <a name="program-actions-pane-events"></a>Zdarzenia w okienku akcji programu
  Można dodać wiele kontrolek użytkownika w okienku Akcje, a następnie napisać kod, aby reagować na zdarzenia w dokumencie przez pokazywania i ukrywania kontrolek użytkownika. Jeśli mapujesz elementy schematu XML w dokumencie, zawsze wtedy, gdy punkt wstawiania znajduje się w jednym z elementów XML można wyświetlić niektórych kontrolek użytkownika w okienku Akcje. Aby uzyskać więcej informacji, zobacz [jak: Mapowanie schematów z dokumentami programu Word w programie Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) i [jak: Mapowanie schematów z arkuszami w programie Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md).

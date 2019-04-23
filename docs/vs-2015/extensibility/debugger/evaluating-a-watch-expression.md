@@ -11,12 +11,12 @@ ms.assetid: 8317cd52-6fea-4e8f-a739-774dc06bd44b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c4eb1ee2048a5e5580cbeb8320ba573c85b92183
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eed1a1b3da59d6d5e76c9157fc0a2cb37420c797
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770047"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104359"
 ---
 # <a name="evaluating-a-watch-expression"></a>Ocenianie wyrażenia kontrolnego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ ms.locfileid: "54770047"
   
  W tej implementacji `IDebugParsedExpression::EvaluateSync`, wyrażenie jest analizowany i oceniane w tym samym czasie. Ta implementacja wykonuje następujące zadania:  
   
-1.  Analizuje i oblicza wyrażenie w celu wygenerowania ogólnego obiekt, który przechowuje wartości i typ. W języku C#, jest reprezentowane jako `object` podczas w języku C++ jest reprezentowane jako `VARIANT`.  
+1. Analizuje i oblicza wyrażenie w celu wygenerowania ogólnego obiekt, który przechowuje wartości i typ. W języku C#, jest reprezentowane jako `object` podczas w języku C++ jest reprezentowane jako `VARIANT`.  
   
-2.  Tworzy klasę (o nazwie `CValueProperty` w tym przykładzie), który zawiera `IDebugProperty2` interfejs i są przechowywane w klasie wartość zwracaną.  
+2. Tworzy klasę (o nazwie `CValueProperty` w tym przykładzie), który zawiera `IDebugProperty2` interfejs i są przechowywane w klasie wartość zwracaną.  
   
-3.  Zwraca `IDebugProperty2` interfejs z `CValueProperty` obiektu.  
+3. Zwraca `IDebugProperty2` interfejs z `CValueProperty` obiektu.  
   
 ## <a name="managed-code"></a>Kod zarządzany  
  Jest to implementacja `IDebugParsedExpression::EvaluateSync` w kodzie zarządzanym. Metoda pomocnika `Tokenize` analizuje wyrażenia w drzewie analizy. Funkcja Pomocnika `EvalToken` konwertuje wartość tokenu. Funkcja Pomocnika `FindTerm` rekursywnie przechodzi w drzewie analizy wywoływania `EvalToken` dla każdego węzła reprezentujący wartość i stosując wszystkie operacje (dodawania lub odejmowania) w wyrażeniu.  

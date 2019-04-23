@@ -14,12 +14,12 @@ ms.assetid: f6bb8398-4fd6-4312-b4be-9617a2834cc4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b902795ef2cd273c937067771505a1b3b4f60af
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: a3bd991a1d8beb355456e3b8cf7f864975b499cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842460"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103488"
 ---
 # <a name="expected-identifier-string-or-number"></a>Oczekiwano identyfikatora, ciągu lub numeru
 Błędna składnia literału jest używane do deklarowania obiektu jako literału. Właściwości literału obiektu musi być identyfikatora, ciągu lub liczby. Literał obiektu (zwane również "inicjatora obiektów") składa się lista rozdzielonych przecinkami pary właściwość: wartość, wszystkie ujęty w nawiasy kwadratowe. Na przykład:  
@@ -30,7 +30,7 @@ var point = {x:1.2, y:-3.4};
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Upewnij się, że używasz poprawnej składni literału.  
+- Upewnij się, że używasz poprawnej składni literału.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Operator przecinkowy (,)](../../javascript/reference/comma-operator-decrement-javascript.md)

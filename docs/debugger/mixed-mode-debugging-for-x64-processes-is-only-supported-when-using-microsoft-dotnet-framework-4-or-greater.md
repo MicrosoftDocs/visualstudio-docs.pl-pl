@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ba8186114fd976ec7e4704d97acb91ee0c97824
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 821efec0beb26cea150fe0cfac20f0dc4c45d5f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719538"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057813"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>Debugowanie w trybie mieszanym dla procesów x64 jest obsługiwane tylko w przypadku korzystania z programu Microsoft .NET Framework 4 lub nowszej wersji
 .NET framework, które wersje starsze niż 4 nie zapewniają obsługę debugowanie w trybie mieszanym x64 procesów. Oznacza to, że nie możesz wejść z kodu zarządzanego do kodu macierzystego lub kodu natywnego do zarządzanego kodu podczas debugowania.
 
 ### <a name="workarounds"></a>Rozwiązania
 
--   Zaktualizuj projekt, aby użyć programu Microsoft .NET Framework 4 lub nowszej.
+- Zaktualizuj projekt, aby użyć programu Microsoft .NET Framework 4 lub nowszej.
 
      —lub—
 
@@ -39,23 +39,23 @@ ms.locfileid: "56719538"
 
 ### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>Aby zmienić platformy 32-bitowe (Visual Basic lub C#)
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **właściwości**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **właściwości**.
 
-2.  Na stronach właściwości kliknij przycisk **skompilować** lub **debugowania** kartę.
+2. Na stronach właściwości kliknij przycisk **skompilować** lub **debugowania** kartę.
 
-3.  Kliknij przycisk **platformy** i wybierać x86 listę platform.
+3. Kliknij przycisk **platformy** i wybierać x86 listę platform.
 
      Domyślnie domyślne Kompilatory języka Visual Basic i C# generuje kod wymagany do uruchomienia na dowolny procesor CPU. Na komputerze 64-bitowych te pliki binarne Uruchom jako procesów 64-bitowych. Aby uruchomić proces 32-bitowy, należy wybrać **Win32**, a nie **AnyCPU**.
 
 ### <a name="to-change-the-platform-to-32-bit-cc"></a>Aby zmienić platformy 32-bitowych (C/C++)
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **właściwości**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **właściwości**.
 
-2.  Na stronach właściwości kliknij przycisk **platformy** i wybierz listę platform systemu Win32.
+2. Na stronach właściwości kliknij przycisk **platformy** i wybierz listę platform systemu Win32.
 
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd
 
--   Zobacz [Konfigurowanie debugowania SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
+- Zobacz [Konfigurowanie debugowania SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
 
 ## <a name="see-also"></a>Zobacz też
 - [Debugowanie aplikacji 64-bitowych](../debugger/debug-64-bit-applications.md)

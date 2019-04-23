@@ -10,19 +10,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b47db7802a6e174d8efff054fe9a6454fa6ef73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 06844e8723cc118d6cc10c44c5c788e48c206684
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643681"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101031"
 ---
 # <a name="properties-window-overview"></a>Omówienie okna właściwości
 **Właściwości** okno służy do wyświetlania właściwości obiektów wybranych w dwa główne typy dostępnych w systemie windows [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE). Te dwa rodzaje systemu windows są:
 
--   Okna narzędzi, takich jak przeglądarki w Eksploratorze rozwiązań, widoku klas i obiektów
+- Okna narzędzi, takich jak przeglądarki w Eksploratorze rozwiązań, widoku klas i obiektów
 
--   Okna dokumentów zawierających takie edytorach i projektantach jako projektant formularzy, edytora XML i edytora HTML
+- Okna dokumentów zawierających takie edytorach i projektantach jako projektant formularzy, edytora XML i edytora HTML
 
 ## <a name="using-the-properties-window"></a>W oknie właściwości
  **Właściwości** oknie zostaną wyświetlone właściwości jednego lub wielu wybranych elementów. Jeśli zaznaczono wiele elementów jest wyświetlany przecięcia wszystkie właściwości dla wszystkich wybranych obiektów.

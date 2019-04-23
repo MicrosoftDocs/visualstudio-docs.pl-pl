@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 141bf63a3cf64cfb1e3576f76512351b496a2778
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8572deb32ea5fab2ce8ad831deeaba783496cbc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755041"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104333"
 ---
 # <a name="microsoft-help-viewer"></a>Podgląd Pomocy firmy Microsoft
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ Można zainstalować i wyświetlić zawartość dla różnych produktów i techn
   
  Możesz wykonać następujące czynności:  
   
--   Znajdowanie i pobieranie zestawów zawartości, które są również określane jako książki.  
+- Znajdowanie i pobieranie zestawów zawartości, które są również określane jako książki.  
   
--   Przeglądaj i Przeszukuj spis treści, aby znaleźć tematy według tytułów.  
+- Przeglądaj i Przeszukuj spis treści, aby znaleźć tematy według tytułów.  
   
--   Wyszukuj przedmioty w indeksie.  
+- Wyszukuj przedmioty w indeksie.  
   
--   Znajdowanie informacji przy użyciu wyszukiwania pełnotekstowego.  
+- Znajdowanie informacji przy użyciu wyszukiwania pełnotekstowego.  
   
--   Wyświetl zakładki i Drukuj tematy.  
+- Wyświetl zakładki i Drukuj tematy.  
   
 ## <a name="navigating-the-help-viewer"></a>Nawigowanie w Podglądzie pomocy  
  Informacje w zainstalowanej treści, używając zakładek nawigacji, oglądać zainstalowaną treść w zakładce lub zakładkach tematów i zarządzać zawartością za pomocą **Zarządzaj zawartością** kartę. Można również wykonywać zadania dodatkowe za pomocą przycisków na pasku narzędzi i dodatkowe informacje można znaleźć w prawym dolnym rogu okna.  

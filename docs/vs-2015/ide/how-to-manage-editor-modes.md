@@ -25,12 +25,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fde858615894967dea83239388925851f342c3aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 193afeddd553dfda54de568c92b4697e3f1a2a93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781037"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095545"
 ---
 # <a name="how-to-manage-editor-modes"></a>Instrukcje: Zarządzanie trybami edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,22 +45,22 @@ Edytor kodu programu Visual Studio można wyświetlić w różnych trybów wyśw
   
 #### <a name="to-enable-full-screen-mode"></a>Aby włączyć tryb pełnoekranowy  
   
--   Naciśnij klawisze ALT + SHIFT + ENTER, aby wprowadzić lub zamknąć **pełny ekran** trybu.  
+- Naciśnij klawisze ALT + SHIFT + ENTER, aby wprowadzić lub zamknąć **pełny ekran** trybu.  
   
      --lub--  
   
--   Należy wydać polecenie `View.Fullscreen` w **polecenia** okna.  
+- Należy wydać polecenie `View.Fullscreen` w **polecenia** okna.  
   
 ## <a name="enabling-virtual-space-mode"></a>Włączanie tryb obszaru wirtualnego  
  W **wirtualną przestrzenią** tryb, spacje są dodawane na końcu każdego wiersza kodu. Wybierz tę opcję, aby umieść komentarze w momencie spójne obok kodu.  
   
 #### <a name="to-enable-virtual-space-mode"></a>Aby włączyć tryb obszaru wirtualnego  
   
-1.  Wybierz **opcje** z **narzędzia** menu.  
+1. Wybierz **opcje** z **narzędzia** menu.  
   
-2.  Rozwiń **edytora tekstów** folderu i wybierz polecenie **wszystkie języki** globalnie Ustaw tę opcję, lub wybierz folder, do określonego języka. (Na przykład, aby włączyć numery wierszy tylko w języku Visual Basic, wybierz podstawowe, Opcje edytora tekstowego.)  
+2. Rozwiń **edytora tekstów** folderu i wybierz polecenie **wszystkie języki** globalnie Ustaw tę opcję, lub wybierz folder, do określonego języka. (Na przykład, aby włączyć numery wierszy tylko w języku Visual Basic, wybierz podstawowe, Opcje edytora tekstowego.)  
   
-3.  Wybierz **ogólne** opcje, a następnie w obszarze **ustawienia**, wybierz opcję **włączyć wirtualną przestrzenią**.  
+3. Wybierz **ogólne** opcje, a następnie w obszarze **ustawienia**, wybierz opcję **włączyć wirtualną przestrzenią**.  
   
     > [!NOTE]
     >  **Wirtualna przestrzeń** jest włączone w **wybór kolumn** trybu. Gdy **wirtualną przestrzenią** nie jest włączony tryb punkt wstawiania przenoszony z końca jeden wiersz bezpośrednio do pierwszego znaku w następnym.  

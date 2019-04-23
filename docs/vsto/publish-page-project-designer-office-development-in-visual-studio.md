@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f27e388c0b7670e8af7d6a97954485ef90d01f9e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 55a27a8d0c5c119870e92bfbf7cff4b85f90cf99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869674"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103533"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Strona publikowania, Projektant projektu (Office development w programie Visual Studio)
   **Publikuj** strony **projektanta projektu** służy do konfigurowania właściwości dla wdrożenia.
@@ -84,9 +84,9 @@ ms.locfileid: "54869674"
 
 - Zachowanie ładowania dodatku narzędzi VSTO dla programów.
 
-  -   Ładowania przy uruchamianiu: Określa, czy dodatku narzędzi VSTO ładuje podczas uruchamiania aplikacji Office.
+  - Ładowania przy uruchamianiu: Określa, czy dodatku narzędzi VSTO ładuje podczas uruchamiania aplikacji Office.
 
-  -   Załaduj na żądanie: Określa, że dodatku narzędzi VSTO ładuje, kiedy aplikacja wymaga, np. kiedy użytkownik kliknie element interfejsu użytkownika, który korzysta z funkcji w dodatku VSTO.
+  - Załaduj na żądanie: Określa, że dodatku narzędzi VSTO ładuje, kiedy aplikacja wymaga, np. kiedy użytkownik kliknie element interfejsu użytkownika, który korzysta z funkcji w dodatku VSTO.
 
   **Język publikacji** ta opcja określa język postanowienia licencyjne dotyczące oprogramowania firmy Microsoft i zawiera pakietów językowych w listę wymagań wstępnych. Nie ma ona wpływu na język dostosowania. Język w programie instalacyjnym jest określany przez zainstalowane języki programu Visual Studio.
 

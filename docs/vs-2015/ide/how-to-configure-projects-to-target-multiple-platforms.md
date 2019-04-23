@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e67d4a5df03f128285de45473c933761d6c7eb04
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7457b5be3a6c1cbf2c2b6a1c6f66f9fb89e8d225
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785829"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100303"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Instrukcje: Konfigurowanie projektów pod kątem wielu platform docelowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,31 +29,31 @@ ms.locfileid: "54785829"
   
 #### <a name="to-set-your-configuration-to-target-a-different-platform"></a>Aby ustawić konfigurację pod kątem różnych platform  
   
-1.  Na **kompilacji** menu, kliknij przycisk **programu Configuration Manager**.  
+1. Na **kompilacji** menu, kliknij przycisk **programu Configuration Manager**.  
   
-2.  W **pole platforma rozwiązania aktywnego**, wybierz platformę rozwiązania do obiektu docelowego, lub wybierz  **\<nowy >** do utworzenia nowej platformie. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] będzie kompilować aplikację pod kątem platformy, który jest ustawiony jako aktywnej platformy w **programu Configuration Manager** okno dialogowe.  
+2. W **pole platforma rozwiązania aktywnego**, wybierz platformę rozwiązania do obiektu docelowego, lub wybierz  **\<nowy >** do utworzenia nowej platformie. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] będzie kompilować aplikację pod kątem platformy, który jest ustawiony jako aktywnej platformy w **programu Configuration Manager** okno dialogowe.  
   
 ## <a name="removing-a-platform"></a>Usuwanie platformy  
  Jeśli okazuje się, że użytkownik nie ma potrzeby dla platformy, możesz usunąć ją za pomocą okna dialogowego programu Configuration Manager. Spowoduje to usunięcie wszystkich ustawień rozwiązania i projektu, skonfigurowane dla tej kombinacji konfiguracji i docelowej.  
   
 #### <a name="to-remove-a-platform"></a>Aby usunąć to platforma  
   
-1.  Na **kompilacji** menu, kliknij przycisk **programu Configuration Manager**.  
+1. Na **kompilacji** menu, kliknij przycisk **programu Configuration Manager**.  
   
-2.  W **pole platforma rozwiązania aktywnego**, wybierz opcję  **\<Edytuj >**. **Edytuj platformy rozwiązań** zostanie otwarte okno dialogowe.  
+2. W **pole platforma rozwiązania aktywnego**, wybierz opcję  **\<Edytuj >**. **Edytuj platformy rozwiązań** zostanie otwarte okno dialogowe.  
   
-3.  Kliknij platformy, aby usunąć, a następnie kliknij przycisk **Usuń**.  
+3. Kliknij platformy, aby usunąć, a następnie kliknij przycisk **Usuń**.  
   
 ## <a name="targeting-multiple-platforms-with-one-solution"></a>Przeznaczone dla wielu platform za pomocą jednego rozwiązania  
  Ponieważ istnieje możliwość zmiany ustawień, oparte na kombinacji konfiguracji i ustawień platformy, można skonfigurować rozwiązanie, które mogą kierować więcej niż jedną platformę.  
   
 #### <a name="to-target-multiple-platforms"></a>Do wielu platform docelowych  
   
-1.  Użyj **programu Configuration Manager** można dodać co najmniej dwóch platform dla rozwiązania.  
+1. Użyj **programu Configuration Manager** można dodać co najmniej dwóch platform dla rozwiązania.  
   
-2.  Wybierz platformę docelową z **aktywną platformą rozwiązania** listy.  
+2. Wybierz platformę docelową z **aktywną platformą rozwiązania** listy.  
   
-3.  Skompiluj rozwiązanie.  
+3. Skompiluj rozwiązanie.  
   
 #### <a name="to-build-multiple-solution-configurations-at-once"></a>Aby od razu kompilowanie wielu konfiguracji rozwiązania  
   

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 765072cea77a23ca63a176555832bbc95f0ab4b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab2cb4562f816b254b658cfdc152dc38033fbe03
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950035"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104548"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Komunikaty o błędach w Projektancie przepływu pracy
 
@@ -27,13 +27,13 @@ W tym temacie opisano rodzaje komunikatów o błędach, które można napotkać 
 
 W Projektancie przepływu pracy błędów w następujących sytuacjach:
 
-1.  Istnieje błąd w wyrażeniu.
+1. Istnieje błąd w wyrażeniu.
 
-2.  Ograniczenia sprawdzania poprawności działania nie zostały spełnione.
+2. Ograniczenia sprawdzania poprawności działania nie zostały spełnione.
 
-3.  Wystąpiły błędy w pliku XAML, które powodują działania nie można załadować.
+3. Wystąpiły błędy w pliku XAML, które powodują działania nie można załadować.
 
-4.  Wystąpiły błędy w pliku XAML, które powodują nie można załadować przepływu pracy.
+4. Wystąpiły błędy w pliku XAML, które powodują nie można załadować przepływu pracy.
 
 Nieprawidłowa wyrażeń i ograniczeń walidacji niezadowolony nie powodują przepływ pracy, aby kompilacja się nie powieść. Tworzenie przepływu pracy zakończy się powodzeniem, ale <xref:System.Activities.InvalidWorkflowException> jest generowany w czasie wykonywania. Jeśli występują błędy w pliku XAML, kompilacja kończy się niepowodzeniem.
 

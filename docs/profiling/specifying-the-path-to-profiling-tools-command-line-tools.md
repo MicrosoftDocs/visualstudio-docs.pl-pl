@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03b11b478ef441dc7a09902a7185bfdf45e20dc3
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 48ac65ef8fb7a67783a3c9c5a9652accf86821fc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868953"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051043"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Określ ścieżkę do narzędzia wiersza polecenia narzędzia profilowania
 
@@ -34,21 +34,21 @@ ms.locfileid: "57868953"
 Na komputerach 64-bitowych Określ ścieżkę zależnie od platformy docelowej profilowanej aplikacji.
 
 ::: moniker range=">=vs-2019"
--   Dla 32-bitowych aplikacji domyślny katalog narzędzia profiler jest:
+- Dla 32-bitowych aplikacji domyślny katalog narzędzia profiler jest:
 
      (native) *Microsoft Visual Studio\2019\Team Tools\Performance Tools\PerfSDK* (managed) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
--   Dla aplikacji 64-bitowych jest domyślny katalog narzędzi profilera:
+- Dla aplikacji 64-bitowych jest domyślny katalog narzędzi profilera:
 
      (natywna) *Programu Microsoft Visual Studio\2019\Team narzędzia Tools\x64\PerfSDK* (zarządzane) *Studio\Shared\Common\VSPerfCollectionTools\x64 Visual firmy Microsoft*
 ::: moniker-end
 
 ::: moniker range="vs-2017"
--   Dla 32-bitowych aplikacji domyślny katalog narzędzia profiler jest:
+- Dla 32-bitowych aplikacji domyślny katalog narzędzia profiler jest:
 
      (natywna) *Programu Microsoft Visual Studio\2017\Team narzędzia Tools\PerfSDK* (zarządzane) *Studio\Shared\Common\VSPerfCollectionTools Visual firmy Microsoft*
 
--   Dla aplikacji 64-bitowych jest domyślny katalog narzędzi profilera:
+- Dla aplikacji 64-bitowych jest domyślny katalog narzędzi profilera:
 
      (natywna) *Programu Microsoft Visual Studio\2017\Team narzędzia Tools\x64\PerfSDK* (zarządzane) *Studio\Shared\Common\VSPerfCollectionTools\x64 Visual firmy Microsoft*
 ::: moniker-end

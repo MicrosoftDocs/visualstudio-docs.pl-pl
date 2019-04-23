@@ -15,27 +15,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 57133b97ede20c0ed28eecbec6e3cea964f9558a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: cffed1a3905ca1a1aceb9d2cfdcf4abc89f83574
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873113"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060803"
 ---
 # <a name="debug-sharepoint-solutions"></a>Debugowanie rozwiązań SharePoint
   Można debugować rozwiązania programu SharePoint przy użyciu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugera. Podczas uruchamiania debugowania, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wdraża pliki projektu na serwerze programu SharePoint, a następnie powoduje otwarcie witryny programu SharePoint w przeglądarce sieci Web. W poniższych sekcjach opisano sposób debugowania aplikacji programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
--   [Włącz debugowanie](#enable-debugging)
+- [Włącz debugowanie](#enable-debugging)
 
--   [Proces debugowania, jak i wdrożenie F5](#f5-debug-and-deployment-process)
+- [Proces debugowania, jak i wdrożenie F5](#f5-debug-and-deployment-process)
 
--   [Funkcji projektu SharePoint](#sharepoint-project-features)
+- [Funkcji projektu SharePoint](#sharepoint-project-features)
 
--   [Debugowanie przepływów pracy](#debug-workflows)
+- [Debugowanie przepływów pracy](#debug-workflows)
 
--   [Debugowanie funkcji odbiorcy zdarzeń](#debug-feature-event-receivers)
+- [Debugowanie funkcji odbiorcy zdarzeń](#debug-feature-event-receivers)
 
--   [Włącz ehanced informacje o debugowaniu](#enable-enhanced-debugging-information)
+- [Włącz ehanced informacje o debugowaniu](#enable-enhanced-debugging-information)
 
 ## <a name="enable-debugging"></a>Włączanie debugowania
  Kiedy najpierw debugować rozwiązania programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], okno dialogowe ostrzega, że plik web.config nie jest skonfigurowana by włączyć debugowanie. (Plik web.config jest tworzony podczas instalacji serwera programu SharePoint. Aby uzyskać więcej informacji, zobacz [Praca z plikami Web.config](http://go.microsoft.com/fwlink/?LinkID=149266).) Okno dialogowe zapewnia możliwość włączenia debugowania działających projekt bez debugowania lub zmodyfikowanie pliku web.config. Wybranie opcji pierwszy projekt działa normalnie. Jeśli zdecydujesz się druga opcja, plik web.config jest skonfigurowany do:
@@ -77,11 +77,11 @@ ms.locfileid: "57873113"
 
  Aby wycofać zmiany i wyłączyć debugowanie, Zmień następujące [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] w pliku web.config:
 
--   Wyłącz stos wywołań (`CallStack="false"`)
+- Wyłącz stos wywołań (`CallStack="false"`)
 
--   Włącz błędy niestandardowe w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="On" />`)
+- Włącz błędy niestandardowe w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="On" />`)
 
--   Należy wyłączyć debugowanie kompilacji (`<compilation debug="false">`)
+- Należy wyłączyć debugowanie kompilacji (`<compilation debug="false">`)
 
 ## <a name="f5-debug-and-deployment-process"></a>Proces debugowania, jak i wdrożenie F5
  Po uruchomieniu projektu programu SharePoint w trybie debugowania procesu wdrażania programu SharePoint wykonuje następujące zadania:

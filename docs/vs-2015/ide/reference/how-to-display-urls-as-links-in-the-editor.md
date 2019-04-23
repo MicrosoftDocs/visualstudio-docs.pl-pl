@@ -13,23 +13,23 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae57c63b9ec97d72d7da7b7ed7de54028c3e32e3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9f7b463721b840847bf609ec70f8818e904fdd0b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658841"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058307"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Instrukcje: Wyświetlanie adresów URL jako linków w edytorze
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Istnieje możliwość mają Edytor kodu, Traktuj Uniform Resource Locator (URL) w kodzie jako aktywnych łączy. Podczas korzystania z tej funkcji, adresy URL:  
   
--   Podkreślone.  
+- Podkreślone.  
   
--   Wyświetlanie **etykietki narzędzia** po umieszczeniu na nich.  
+- Wyświetlanie **etykietki narzędzia** po umieszczeniu na nich.  
   
--   Próba otwarcia witryny sieci Web, gdy wskazane możesz **CTRL** + kliknij lewym przyciskiem myszy łącze. Domyślna witryna sieci Web jest wyświetlany w wewnętrznej przeglądarki sieci Web.  
+- Próba otwarcia witryny sieci Web, gdy wskazane możesz **CTRL** + kliknij lewym przyciskiem myszy łącze. Domyślna witryna sieci Web jest wyświetlany w wewnętrznej przeglądarki sieci Web.  
   
 > [!NOTE]
 >  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -38,17 +38,17 @@ Istnieje możliwość mają Edytor kodu, Traktuj Uniform Resource Locator (URL) 
   
 #### <a name="to-display-urls-as-links"></a>Aby wyświetlić adresy URL jako linków  
   
-1.  Na **narzędzia** menu, kliknij przycisk **opcje**.  
+1. Na **narzędzia** menu, kliknij przycisk **opcje**.  
   
-2.  Kliknij przycisk **edytora tekstów**.  
+2. Kliknij przycisk **edytora tekstów**.  
   
-3.  Aby zmienić opcję dla tylko jednego języka, rozwiń folder dla danego języka, a następnie wybierz **ogólne**.  
+3. Aby zmienić opcję dla tylko jednego języka, rozwiń folder dla danego języka, a następnie wybierz **ogólne**.  
   
      —lub—  
   
      Aby zmienić opcję dla wszystkich języków, rozwiń węzeł **wszystkie języki** folder i wybierz polecenie **ogólne**.  
   
-4.  W obszarze **wyświetlania**, wybierz opcję **Włącz nawigację adresów URL jednym kliknięciem**.  
+4. W obszarze **wyświetlania**, wybierz opcję **Włącz nawigację adresów URL jednym kliknięciem**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dopasowywanie edytora](../../ide/customizing-the-editor.md)   

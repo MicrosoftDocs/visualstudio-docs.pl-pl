@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 26dbe873d1552136c36748e638085bf39e5e530c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab8744e84e035501ba9bb8d531d982f4c17e206e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785168"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103239"
 ---
 # <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Instrukcje: Tworzenie elementu roboczego dla błędu kodu zarządzanego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,16 +26,16 @@ Można użyć elementu roboczego funkcji dziennika element roboczy z poziomu śl
   
 ### <a name="to-create-a-work-item-for-managed-code-defect"></a>Aby utworzyć element roboczy dla błędu kodu zarządzanego  
   
-1.  W **analizy kodu** oknie Wybierz ostrzeżenie.  
+1. W **analizy kodu** oknie Wybierz ostrzeżenie.  
   
-2.  Wybierz **akcje**, następnie wybierz **Utwórz element pracy** i wybierz typ elementu roboczego do utworzenia.  
+2. Wybierz **akcje**, następnie wybierz **Utwórz element pracy** i wybierz typ elementu roboczego do utworzenia.  
   
      Nowy element roboczy jest tworzony w celu określenia informacje o usterkach.  
   
 ### <a name="to-create-a-work-item-for-multiple-managed-code-defects"></a>Aby utworzyć element roboczy dla wielu defektów kodu zarządzanego  
   
-1.  W **lista błędów**, wybierz wiele ostrzeżeń i kliknij prawym przyciskiem myszy ostrzeżenia.  
+1. W **lista błędów**, wybierz wiele ostrzeżeń i kliknij prawym przyciskiem myszy ostrzeżenia.  
   
-2.  Wskaż **Utwórz element pracy** i kliknij typ elementu roboczego do utworzenia.  
+2. Wskaż **Utwórz element pracy** i kliknij typ elementu roboczego do utworzenia.  
   
      Pojedynczym elemencie roboczym jest tworzony dla wszystkich wybranych ostrzeżeń, należy określić informacje o usterkach.

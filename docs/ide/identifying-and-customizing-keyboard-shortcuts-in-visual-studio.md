@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dc65b29bafd67fa8265feb75b533d66504d33c8
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: e166e28af02e3e9497b94cdf75a05bd9bf534629
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222064"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104372"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identyfikowanie i dostosowywanie skrótów klawiaturowych w programie Visual Studio
 
@@ -134,7 +134,7 @@ Domyślnie skróty są zapisywane w pliku w *%USERPROFILE%\Documents\Visual Stud
 
 5. Wybierz **dalej** przycisku.
 
-6.  W obszarze **ustawienia, które chcesz zaimportować?**, wyczyść **wszystkie ustawienia** pole wyboru, rozwiń **opcje**, a następnie rozwiń węzeł **środowiska**.
+6. W obszarze **ustawienia, które chcesz zaimportować?**, wyczyść **wszystkie ustawienia** pole wyboru, rozwiń **opcje**, a następnie rozwiń węzeł **środowiska**.
 
 7. Wybierz **klawiatury** pole wyboru, a następnie wybierz **Zakończ** przycisku.
 

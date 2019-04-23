@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a1289f6eeb802aa53db5f9e43dc3725b8c65f884
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 81020496c1e80718d1aa0995791762d55ef70a76
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622881"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104502"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel
   Ten Przewodnik wprowadzający dowiesz się, jak utworzyć dostosowywania poziomie dokumentu dla programu Microsoft Office Excel. Funkcje, które tworzysz w tego rodzaju rozwiązania są dostępne tylko wtedy, gdy wybrany skoroszyt jest otwarty. Nie możesz użyć dostosowywania poziomie dokumentu do zmiany całej aplikacji, na przykład wyświetlanie Nowa karta wstążki, gdy dowolny skoroszyt jest otwarty.
@@ -43,9 +43,9 @@ ms.locfileid: "56622881"
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] lub [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] lub [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 ## <a name="create-the-project"></a>Utwórz projekt
 
@@ -88,9 +88,9 @@ ms.locfileid: "56622881"
 
 ### <a name="to-close-and-reopen-a-worksheet-in-the-designer"></a>Aby zamknąć i ponownie otwórz arkusz w Projektancie
 
-1.  Zamknij skoroszyt, klikając przycisk **Zamknij** przycisku (X) dla okna projektanta.
+1. Zamknij skoroszyt, klikając przycisk **Zamknij** przycisku (X) dla okna projektanta.
 
-2.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Arkusz1** plik kodu, a następnie kliknij przycisk **Projektant widoków**.
+2. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Arkusz1** plik kodu, a następnie kliknij przycisk **Projektant widoków**.
 
      \- lub —
 
@@ -101,7 +101,7 @@ ms.locfileid: "56622881"
 
 ### <a name="to-add-text-to-a-worksheet-by-using-the-designer"></a>Aby dodać tekst do arkusza za pomocą projektanta
 
-1.  W arkuszu, które jest otwarty w projektancie, zaznacz komórkę **A1**, a następnie wpisz następujący tekst.
+1. W arkuszu, które jest otwarty w projektancie, zaznacz komórkę **A1**, a następnie wpisz następujący tekst.
 
      **Ten tekst został dodany za pomocą projektanta.**
 
@@ -111,17 +111,17 @@ ms.locfileid: "56622881"
 ## <a name="add-text-to-a-worksheet-programmatically"></a>Programowe Dodawanie tekstu do arkusza
  Następnie dodaj kod do pliku kodu Arkusz1. Nowy kod używa modelu obiektów programu Excel, można dodać drugi wiersz tekstu w skoroszycie. Domyślnie plik kodu Arkusz1 zawiera następujące wygenerowanego kodu:
 
--   Częściową definicję `Sheet1` klasy, która reprezentuje model programowania arkusza i zapewnia dostęp do modelu obiektów programu Excel. Aby uzyskać więcej informacji [element hosta arkusza](../vsto/worksheet-host-item.md) i [model obiektu Word — omówienie](../vsto/word-object-model-overview.md). W pozostałej części `Sheet1` klasa jest zdefiniowana w pliku ukryty kod, który nie należy modyfikować.
+- Częściową definicję `Sheet1` klasy, która reprezentuje model programowania arkusza i zapewnia dostęp do modelu obiektów programu Excel. Aby uzyskać więcej informacji [element hosta arkusza](../vsto/worksheet-host-item.md) i [model obiektu Word — omówienie](../vsto/word-object-model-overview.md). W pozostałej części `Sheet1` klasa jest zdefiniowana w pliku ukryty kod, który nie należy modyfikować.
 
--   `Sheet1_Startup` i `Sheet1_Shutdown` procedury obsługi zdarzeń. Te procedury obsługi zdarzeń są wywoływane, gdy program Excel ładuje i zwalnia dostosowanie. Użyj tych programów obsługi zdarzeń, zainicjować dostosowanie podczas jego ładowania oraz aby wyczyścić zasoby używane przez dostosowanie, gdy jest zwolniony. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
+- `Sheet1_Startup` i `Sheet1_Shutdown` procedury obsługi zdarzeń. Te procedury obsługi zdarzeń są wywoływane, gdy program Excel ładuje i zwalnia dostosowanie. Użyj tych programów obsługi zdarzeń, zainicjować dostosowanie podczas jego ładowania oraz aby wyczyścić zasoby używane przez dostosowanie, gdy jest zwolniony. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
 
 ### <a name="to-add-a-second-line-of-text-to-the-worksheet-by-using-code"></a>Aby dodać drugi wiersz tekstu w arkuszu za pomocą kodu
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Arkusz1**, a następnie kliknij przycisk **Wyświetl kod**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Arkusz1**, a następnie kliknij przycisk **Wyświetl kod**.
 
      Otwiera plik kodu w programie Visual Studio.
 
-2.  Zastąp `Sheet1_Startup` programu obsługi zdarzeń z następującym kodem. Po otwarciu Arkusz1 ten kod dodaje drugi wiersz tekstu do arkusza.
+2. Zastąp `Sheet1_Startup` programu obsługi zdarzeń z następującym kodem. Po otwarciu Arkusz1 ten kod dodaje drugi wiersz tekstu do arkusza.
 
      [!code-csharp[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelWorkbookTutorial/Sheet1.cs#1)]
      [!code-vb[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelWorkbookTutorial/Sheet1.vb#1)]
@@ -130,41 +130,41 @@ ms.locfileid: "56622881"
 
 ### <a name="to-test-your-workbook"></a>Aby przetestować skoroszytu
 
-1.  Naciśnij klawisz **F5** Aby skompilować i uruchomić projekt.
+1. Naciśnij klawisz **F5** Aby skompilować i uruchomić projekt.
 
      Gdy tworzysz projekt, kod jest kompilowany do zestawu, który jest skojarzony z skoroszytu. Program Visual Studio umieszcza kopię skoroszytu i zestawu w folderze danych wyjściowych kompilacji dla projektu i konfiguruje ustawienia zabezpieczeń na komputerze deweloperskim, aby włączyć dostosowywanie do uruchomienia. Aby uzyskać więcej informacji, zobacz [rozwiązań kompilacji pakietu Office](../vsto/building-office-solutions.md).
 
-2.  W skoroszycie Sprawdź, czy zostanie wyświetlony następujący tekst.
+2. W skoroszycie Sprawdź, czy zostanie wyświetlony następujący tekst.
 
      **Ten tekst został dodany za pomocą projektanta.**
 
      **Ten tekst został dodany przy użyciu kodu.**
 
-3.  Zamknij skoroszyt.
+3. Zamknij skoroszyt.
 
 ## <a name="clean-up-the-project"></a>Czyszczenie projektu
  Po zakończeniu tworzenia projektu, należy usunąć pliki w folderze wyjściowym kompilacji i ustawienia zabezpieczeń utworzone w procesie kompilacji.
 
 ### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>Aby wyczyścić ukończone projektu na komputerze deweloperskim
 
-1.  W programie Visual Studio na **kompilacji** menu, kliknij przycisk **czyste rozwiązanie**.
+1. W programie Visual Studio na **kompilacji** menu, kliknij przycisk **czyste rozwiązanie**.
 
 ## <a name="next-steps"></a>Następne kroki
  Teraz, po utworzeniu podstawowego dostosowywania poziomie dokumentu dla programu Excel, można dowiedzieć się więcej o sposobie tworzenia dostosowań w tych tematach:
 
--   Ogólne zadania programowania, które można wykonywać w dostosowaniach na poziomie dokumentu: [Program dostosowań poziomu dokumentu](../vsto/programming-document-level-customizations.md).
+- Ogólne zadania programowania, które można wykonywać w dostosowaniach na poziomie dokumentu: [Program dostosowań poziomu dokumentu](../vsto/programming-document-level-customizations.md).
 
--   Zadania związane z programowaniem, które są specyficzne dla dostosowywania poziomie dokumentu dla programu Excel: [Rozwiązania w programie Excel](../vsto/excel-solutions.md).
+- Zadania związane z programowaniem, które są specyficzne dla dostosowywania poziomie dokumentu dla programu Excel: [Rozwiązania w programie Excel](../vsto/excel-solutions.md).
 
--   Za pomocą modelu obiektów programu Excel: [Model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md).
+- Za pomocą modelu obiektów programu Excel: [Model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md).
 
--   Dostosowywanie interfejsu użytkownika programu Excel, na przykład dodawania niestandardowej karty do Wstążki lub tworząc własne okienko akcji: [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).
+- Dostosowywanie interfejsu użytkownika programu Excel, na przykład dodawania niestandardowej karty do Wstążki lub tworząc własne okienko akcji: [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).
 
--   Do wykonywania zadań, która nie jest możliwa za pomocą modelu obiektów programu Excel (na przykład hostingu zarządzane formanty w dokumentach i powiązanie kontrolki programu Excel z danymi za pomocą formularzy Windows przy użyciu rozszerzonych obiektów programu Excel, udostępniane przez narzędzia programistyczne pakietu Office w programie Visual Studio model powiązania danych): [Automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md).
+- Do wykonywania zadań, która nie jest możliwa za pomocą modelu obiektów programu Excel (na przykład hostingu zarządzane formanty w dokumentach i powiązanie kontrolki programu Excel z danymi za pomocą formularzy Windows przy użyciu rozszerzonych obiektów programu Excel, udostępniane przez narzędzia programistyczne pakietu Office w programie Visual Studio model powiązania danych): [Automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md).
 
--   Kompilowanie i debugowanie dostosowań poziomu dokumentu dla programu Excel: [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md).
+- Kompilowanie i debugowanie dostosowań poziomu dokumentu dla programu Excel: [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md).
 
--   Wdrażanie dostosowań poziomu dokumentu dla programu Excel: [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md).
+- Wdrażanie dostosowań poziomu dokumentu dla programu Excel: [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md).
 
 ## <a name="see-also"></a>Zobacz także
 - [Rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

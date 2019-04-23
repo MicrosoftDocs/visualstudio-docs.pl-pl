@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f18c88e72a40d3070d9a366e0c6c4e0f3888565
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4bb98e2b1c83ff06570a77dc84ce6a7bf690f81d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628393"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097001"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>Rozszerzanie pakowania i wdrażania SharePoint
   Możesz rozszerzyć pakowania i proces wdrażania dla projektów programu SharePoint.
@@ -35,9 +35,9 @@ ms.locfileid: "56628393"
 ## <a name="run-code-when-a-sharepoint-solution-is-deployed-or-retracted"></a>Uruchamianie kodu, gdy rozwiązania programu SharePoint jest wdrożony lub wycofany
  Możesz obsłużyć zdarzenia na wykonywanie dodatkowych zadań, gdy rozwiązania programu SharePoint jest wdrożony lub wycofany. Program Visual Studio wywołuje zdarzenia, które może obsłużyć w następujących scenariuszach:
 
--   Przed i po każdym wdrożeniu krok jest wykonywany dla elementu projektu programu SharePoint. Aby uzyskać więcej informacji, zobacz [jak: Uruchamianie kodu, gdy są wykonywane kroki związane z wdrażaniem](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md).
+- Przed i po każdym wdrożeniu krok jest wykonywany dla elementu projektu programu SharePoint. Aby uzyskać więcej informacji, zobacz [jak: Uruchamianie kodu, gdy są wykonywane kroki związane z wdrażaniem](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md).
 
--   Przed i po projektu programu SharePoint jest wdrożony lub wycofany. Aby uzyskać więcej informacji, zobacz [jak: Uruchamianie kodu, podczas projektu programu SharePoint jest wdrożony lub wycofany](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md).
+- Przed i po projektu programu SharePoint jest wdrożony lub wycofany. Aby uzyskać więcej informacji, zobacz [jak: Uruchamianie kodu, podczas projektu programu SharePoint jest wdrożony lub wycofany](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md).
 
 ## <a name="handle-deployment-conflicts"></a>Obsługa konfliktów wdrożenia
  Niektóre typy elementów projektu programu SharePoint, w tym moduły, części sieci Web, przejrzenia listy wystąpień i typów zawartości, podaj Rozwiązywanie konfliktów wdrażania wbudowanych. Podczas wdrażania rozwiązania, który zawiera jeden z tych elementów projektu programu Visual Studio najpierw sprawdza, czy plik istnieje już w witrynie programu SharePoint przy użyciu tej samej nazwie, adres URL lub identyfikator jako plik na element, który jest wdrażany. W przypadku konfliktu, program Visual Studio może automatycznie rozwiązać konfliktu lub monitować umożliwia ustalenie, czy zainstalowano oprogramowania Visual Studio rozwiązać konflikt, lub przycisk Anuluj, wdrożenie. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z pakowaniem i wdrażaniem SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).

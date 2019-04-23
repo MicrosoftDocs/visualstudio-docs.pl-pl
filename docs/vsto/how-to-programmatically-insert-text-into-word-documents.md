@@ -16,21 +16,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2c81a0da3c60bc9b3cfaec357dab0fe2bb33706
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a24fde5f04a88de7eec34836df38bc1cca8669ab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654025"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060635"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Instrukcje: Programowe Wstawianie tekstu w dokumentach programu Word
   Istnieją trzy podstawowe sposoby Wstawianie tekstu w dokumentach programu Microsoft Office Word:
 
--   Wstawianie tekstu w zakresie.
+- Wstawianie tekstu w zakresie.
 
--   Zastąp tekst w zakresie nowego tekstu.
+- Zastąp tekst w zakresie nowego tekstu.
 
--   Użyj <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> metody <xref:Microsoft.Office.Interop.Word.Selection> obiektu, aby wstawić tekst na kursora lub zaznaczenia.
+- Użyj <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> metody <xref:Microsoft.Office.Interop.Word.Selection> obiektu, aby wstawić tekst na kursora lub zaznaczenia.
 
 > [!NOTE]
 >  Można także wstawianie tekstu w formantach zawartości i zakładki. Aby uzyskać więcej informacji, zobacz [udostępnia mechanizmy kontroli zawartości](../vsto/content-controls.md) i [Bookmark, formant](../vsto/bookmark-control.md).
@@ -42,7 +42,7 @@ ms.locfileid: "56654025"
 
 ### <a name="to-insert-text-in-a-range"></a>Umożliwia wstawianie tekstu w zakresie
 
-1.  Określ zakres na początku dokumentu, a następnie wstawianie tekstu **nowy tekst**.
+1. Określ zakres na początku dokumentu, a następnie wstawianie tekstu **nowy tekst**.
 
      Poniższy przykład kodu może służyć w dostosowaniu na poziomie dokumentu.
 
@@ -54,7 +54,7 @@ ms.locfileid: "56654025"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#51)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#51)]
 
-2.  Wybierz <xref:Microsoft.Office.Interop.Word.Range> obiektu, który zostały rozwinięte z jednego znaku i długość wstawionego tekstu.
+2. Wybierz <xref:Microsoft.Office.Interop.Word.Range> obiektu, który zostały rozwinięte z jednego znaku i długość wstawionego tekstu.
 
      [!code-vb[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#52)]
      [!code-csharp[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#52)]
@@ -64,7 +64,7 @@ ms.locfileid: "56654025"
 
 ### <a name="to-replace-text-in-a-range"></a>Aby zamienić tekst w zakresie
 
-1.  Utwórz <xref:Microsoft.Office.Interop.Word.Range> obiekt, który składa się z pierwszych 12 znaków w dokumencie.
+1. Utwórz <xref:Microsoft.Office.Interop.Word.Range> obiekt, który składa się z pierwszych 12 znaków w dokumencie.
 
      Poniższy przykład kodu może służyć w dostosowaniu na poziomie dokumentu.
 
@@ -76,12 +76,12 @@ ms.locfileid: "56654025"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#53)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#53)]
 
-2.  Zastąp te znaki ciągu **nowy tekst**.
+2. Zastąp te znaki ciągu **nowy tekst**.
 
      [!code-vb[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#54)]
      [!code-csharp[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#54)]
 
-3.  Wybierz zakres.
+3. Wybierz zakres.
 
      [!code-vb[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#55)]
      [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]

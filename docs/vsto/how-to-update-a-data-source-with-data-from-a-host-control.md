@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67e98f7d9f8e1e8914508d8a2e3c63c5dc55b8a5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4d1e7bfd074b0ed7f6f1bcef99acf28f478a9c51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637597"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097495"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Instrukcje: Aktualizowanie źródła danych danymi z kontrolki hosta
   Można powiązać kontrolki hosta ze źródłem danych i zaktualizować źródło danych ze zmianami, które zostały wprowadzone do danych w formancie. Istnieją dwa podstawowe kroki w ramach tego procesu:
@@ -42,7 +42,7 @@ ms.locfileid: "56637597"
 
 ### <a name="to-update-the-in-memory-data-source-at-runtime"></a>Aby zaktualizować źródło danych w pamięci w czasie wykonywania
 
--   Wywołaj <xref:System.Windows.Forms.Binding.WriteValue%2A> metody <xref:System.Windows.Forms.Binding> obiekt, który wiąże formant ze źródłem danych.
+- Wywołaj <xref:System.Windows.Forms.Binding.WriteValue%2A> metody <xref:System.Windows.Forms.Binding> obiekt, który wiąże formant ze źródłem danych.
 
      Poniższy przykład zapisuje zmiany wprowadzone do <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki w arkuszu programu Excel do źródła danych. W tym przykładzie przyjęto założenie, iż <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu o nazwie `namedRange1` z jego <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> właściwości powiązany z polem w źródle danych.
 
@@ -70,31 +70,31 @@ ms.locfileid: "56637597"
 
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-the-designer"></a>Aby ustawić kontroli można automatycznie zaktualizować źródło danych w pamięci przy użyciu narzędzia Projektant
 
-1.  W programie Visual Studio Otwórz dokument programu Word lub skoroszyt programu Excel w projektancie.
+1. W programie Visual Studio Otwórz dokument programu Word lub skoroszyt programu Excel w projektancie.
 
-2.  Kliknij formant, który ma być automatycznie zaktualizować źródło danych.
+2. Kliknij formant, który ma być automatycznie zaktualizować źródło danych.
 
-3.  W **właściwości** okna, rozwiń węzeł **(powiązania danych)** właściwości.
+3. W **właściwości** okna, rozwiń węzeł **(powiązania danych)** właściwości.
 
-4.  Obok pozycji **(zaawansowane)** właściwości, kliknij przycisk oznaczony wielokropkiem (![VisualStudioEllipsesButton — zrzut ekranu](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton — zrzut ekranu")).
+4. Obok pozycji **(zaawansowane)** właściwości, kliknij przycisk oznaczony wielokropkiem (![VisualStudioEllipsesButton — zrzut ekranu](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton — zrzut ekranu")).
 
-5.  W **formatowanie i powiązywanie zaawansowane** okno dialogowe, kliknij przycisk **tryb aktualizacji źródła danych** listy rozwijanej i wybierz jedną z następujących wartości:
+5. W **formatowanie i powiązywanie zaawansowane** okno dialogowe, kliknij przycisk **tryb aktualizacji źródła danych** listy rozwijanej i wybierz jedną z następujących wartości:
 
-    -   Aby zaktualizować źródła danych, gdy kontrolka jest weryfikowana, wybierz pozycję **OnValidation**.
+    - Aby zaktualizować źródła danych, gdy kontrolka jest weryfikowana, wybierz pozycję **OnValidation**.
 
-    -   Aby zaktualizować źródło danych, po zmianie wartości właściwości powiązanych z danymi formantu, wybierz **onpropertychanged —**.
+    - Aby zaktualizować źródło danych, po zmianie wartości właściwości powiązanych z danymi formantu, wybierz **onpropertychanged —**.
 
         > [!NOTE]
         >  **Onpropertychanged —** opcji nie ma zastosowania do kontrolki hosta programu Word, ponieważ program Word jest nie oferty dokumentu zmian lub zmiana sterowania powiadomień. Jednak ta opcja może służyć dla formantów Windows Forms w dokumentach programu Word.
 
-6.  Zamknij **formatowanie i powiązywanie zaawansowane** okno dialogowe.
+6. Zamknij **formatowanie i powiązywanie zaawansowane** okno dialogowe.
 
 ## <a name="update-the-database"></a>Aktualizowanie bazy danych
  Jeśli źródło danych w pamięci jest skojarzona z bazą danych, należy zaktualizować bazy danych zmian w źródle danych. Aby uzyskać więcej informacji na temat aktualizowania bazy danych, zobacz [zapisać dane w bazie danych](../data-tools/save-data-back-to-the-database.md) i [aktualizowanie danych za pomocą adaptera TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .
 
 ### <a name="to-update-the-database"></a>Aby zaktualizować bazę danych
 
-1.  Wywołaj <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metody <xref:System.Windows.Forms.BindingSource> dla formantu.
+1. Wywołaj <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metody <xref:System.Windows.Forms.BindingSource> dla formantu.
 
      <xref:System.Windows.Forms.BindingSource> Jest generowany automatycznie po dodaniu kontrolki powiązania danych na dokument lub skoroszyt w czasie projektowania. <xref:System.Windows.Forms.BindingSource> Łączy kontrolki do zestawu danych w projekcie. Aby uzyskać więcej informacji, zobacz [— informacje o składniku BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
@@ -103,7 +103,7 @@ ms.locfileid: "56637597"
      [!code-csharp[Trin_VstcoreDataExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#20)]
      [!code-vb[Trin_VstcoreDataExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#20)]
 
-2.  Wywołaj `Update` metody TableAdapter wygenerowany w projekcie.
+2. Wywołaj `Update` metody TableAdapter wygenerowany w projekcie.
 
      TableAdapter jest generowany automatycznie po dodaniu kontrolki powiązania danych na dokument lub skoroszyt w czasie projektowania. TableAdapter łączy z zestawu danych w projekcie w bazie danych. Aby uzyskać więcej informacji, zobacz [TableAdapter — Przegląd](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 

@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2ed16962a417f53569e7fd6e5364ac0a7f11d9a8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ee6e163bd6587d93c970a56ac1c08383084ddc0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659803"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095571"
 ---
 # <a name="formatversion-task"></a>FormatVersion — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dołącza numer wersji do numeru wersji.  
   
--   Przypadek #1: Dane wejściowe: Wersja =\<niezdefiniowana >;  Poprawka =\<nieważne >;   Dane wyjściowe: OutputVersion = "1.0.0.0"  
+- Przypadek #1: Dane wejściowe: Wersja =\<niezdefiniowana >;  Poprawka =\<nieważne >;   Dane wyjściowe: OutputVersion = "1.0.0.0"  
   
--   Przypadek #2: Dane wejściowe: Wersja = poprawkę "1.0.0.*" = "5" w danych wyjściowych: OutputVersion = "1.0.0.5"  
+- Przypadek #2: Dane wejściowe: Wersja = poprawkę "1.0.0.*" = "5" w danych wyjściowych: OutputVersion = "1.0.0.5"  
   
--   W przypadku #3: Dane wejściowe: Wersja = "1.0.0.0" poprawki =\<nieważne >;  Dane wyjściowe: OutputVersion = "1.0.0.0"  
+- W przypadku #3: Dane wejściowe: Wersja = "1.0.0.0" poprawki =\<nieważne >;  Dane wyjściowe: OutputVersion = "1.0.0.0"  
   
 ## <a name="parameters"></a>Parametry  
  W poniższej tabeli opisano parametry `FormatVersion` zadania.  

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52ff98f15afb95bda4d69770b84764db21171425
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: be8a17496788b0f4fe8abc9859b46cbfa11a6ed7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599665"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053016"
 ---
 # <a name="grant-trust-to-documents"></a>Udzielanie zaufania do dokumentów
   Projektów dokumentów ma takie same wymagania dotyczące zabezpieczeń, jako projektów na poziomie aplikacji: podpisywanie manifestów za pomocą certyfikatu lub klikając monit o udzielenie zaufania. Ponadto dokument lub skoroszyt musi znajdować się w katalogu, który jest wyznaczone jako zaufaną lokalizację.
@@ -35,13 +35,13 @@ ms.locfileid: "56599665"
 ## <a name="security-considerations-for-office-solutions"></a>Zagadnienia dotyczące zabezpieczeń rozwiązań pakietu Office
  Istnieje kilka obawy związane z bezpieczeństwem, po zastanowieniu się nad foldery, które można dodać do zaufanych lokalizacji:
 
--   Foldery lokalne są traktowane jako więcej bezpieczna i są niejawnie zaufane. Lokalizacjach zdalnych, takich jak udziały plików muszą być wyznaczone jako zaufanych lokalizacji.
+- Foldery lokalne są traktowane jako więcej bezpieczna i są niejawnie zaufane. Lokalizacjach zdalnych, takich jak udziały plików muszą być wyznaczone jako zaufanych lokalizacji.
 
--   Po dodaniu katalogu do zaufanej lokalizacji, ta akcja spowoduje przyznanie pełnego zaufania nie tylko do rozwiązań pakietu Office, ale do kodu VBA i ActiveX. Z tego powodu, katalog główny i *Moje dokumenty* folderów nie powinno być wyznaczone jako zaufane.
+- Po dodaniu katalogu do zaufanej lokalizacji, ta akcja spowoduje przyznanie pełnego zaufania nie tylko do rozwiązań pakietu Office, ale do kodu VBA i ActiveX. Z tego powodu, katalog główny i *Moje dokumenty* folderów nie powinno być wyznaczone jako zaufane.
 
--   Mimo że samego dokumentu jest zaufany, korzystając z zaufanej lokalizacji, ufać dostosowania są wymagane dodatkowe uprawnienia. Można przyznać pełne zaufanie do dostosowania przy użyciu podpisywanie manifestów za pomocą certyfikatu, klikając monit o udzielenie zaufania lub instalowanie rozwiązania dla pakietu Office do *Program Files* katalogu.
+- Mimo że samego dokumentu jest zaufany, korzystając z zaufanej lokalizacji, ufać dostosowania są wymagane dodatkowe uprawnienia. Można przyznać pełne zaufanie do dostosowania przy użyciu podpisywanie manifestów za pomocą certyfikatu, klikając monit o udzielenie zaufania lub instalowanie rozwiązania dla pakietu Office do *Program Files* katalogu.
 
--   W tym samym katalogu co zestaw lub w innym katalogu może przechowywać na dokument lub skoroszyt to rozwiązanie na poziomie dokumentu. Na przykład dokument może znajdować się na serwerze programu SharePoint i zestaw może znajdować się w sieciowym udziale plików. Aby uzyskać więcej informacji, zobacz [jak: Publikowanie rozwiązań Office poziomu dokumentu na serwerze programu SharePoint przy użyciu technologii ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).
+- W tym samym katalogu co zestaw lub w innym katalogu może przechowywać na dokument lub skoroszyt to rozwiązanie na poziomie dokumentu. Na przykład dokument może znajdować się na serwerze programu SharePoint i zestaw może znajdować się w sieciowym udziale plików. Aby uzyskać więcej informacji, zobacz [jak: Publikowanie rozwiązań Office poziomu dokumentu na serwerze programu SharePoint przy użyciu technologii ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).
 
 ## <a name="see-also"></a>Zobacz także
 - [Udzielanie zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md)

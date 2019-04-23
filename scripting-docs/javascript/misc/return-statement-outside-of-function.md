@@ -14,12 +14,12 @@ ms.assetid: 03568f9f-5f4f-4a10-a738-9a73f3832b9e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e23a3b7f4c1979132cf9ec6285c2f60c89341540
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 01ef96385d5fe3dccf14a7491e67983d39913280
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843081"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100394"
 ---
 # <a name="return-statement-outside-of-function"></a>Instrukcja „return" poza funkcją
 Użyte `return` instrukcji w zakresie globalnym kodu. `return` Instrukcji powinna występować tylko w treści funkcji.  
@@ -39,7 +39,7 @@ return [ expression ];
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Usuń `return` instrukcji od głównej części kodu (globalny zasięg).  
+- Usuń `return` instrukcji od głównej części kodu (globalny zasięg).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Return — instrukcja](../../javascript/reference/return-statement-javascript.md)   

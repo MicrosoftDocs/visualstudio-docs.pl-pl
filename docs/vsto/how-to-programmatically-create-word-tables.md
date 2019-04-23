@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10683f2bd740a92b41c0063da15d093248396bd5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 24a365ba239e4d87e179bfecd664aa31aef0f359
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619397"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050828"
 ---
 # <a name="how-to-programmatically-create-word-tables"></a>Instrukcje: Programowe tworzenie tabel programu Word
   <xref:Microsoft.Office.Interop.Word.Tables> Kolekcji jest elementem członkowskim <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, i <xref:Microsoft.Office.Interop.Word.Range> klasy, które oznacza, że można utworzyć tabelę w dowolnym z tych kontekstach. Możesz użyć <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> metody <xref:Microsoft.Office.Interop.Word.Tables> kolekcji, aby dodać tabelę w określonym zakresie.
@@ -51,7 +51,7 @@ ms.locfileid: "56619397"
 
 ### <a name="to-apply-a-style-to-a-table"></a>Aby zastosować styl do tabeli
 
-1.  Użyj <xref:Microsoft.Office.Interop.Word.Table.Style%2A> właściwość, aby zastosować jedną z wbudowanych stylów programu Word do tabeli.
+1. Użyj <xref:Microsoft.Office.Interop.Word.Table.Style%2A> właściwość, aby zastosować jedną z wbudowanych stylów programu Word do tabeli.
 
      Aby użyć w poniższym przykładzie kodu, należy uruchomić go z `ThisDocument` klasy w projekcie.
 
@@ -84,7 +84,7 @@ ms.locfileid: "56619397"
 
 ### <a name="to-apply-a-style-to-a-table"></a>Aby zastosować styl do tabeli
 
-1.  Użyj <xref:Microsoft.Office.Interop.Word.Table.Style%2A> właściwość, aby zastosować jedną z wbudowanych stylów programu Word do tabeli.
+1. Użyj <xref:Microsoft.Office.Interop.Word.Table.Style%2A> właściwość, aby zastosować jedną z wbudowanych stylów programu Word do tabeli.
 
      Poniższy przykład kodu wykorzystuje aktywnego dokumentu. Aby użyć tego przykładu, należy uruchomić go z `ThisAddIn` klasy w projekcie.
 

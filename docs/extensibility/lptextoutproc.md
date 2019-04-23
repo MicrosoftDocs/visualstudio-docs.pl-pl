@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cdfcec130897fc7014cb820e7efdcc4f3dcacb1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ab1a2dcbf39be6f8e0366dcdccdaea168ad37c87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679882"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102604"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
@@ -73,7 +73,7 @@ Typ komunikatu. W poniższej tabeli wymieniono obsługiwane wartości tego param
 
 ## <a name="structures"></a>Struktury
 
-###  <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled
+### <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled
 
 ```cpp
 typedef struct {
@@ -83,7 +83,7 @@ typedef struct {
 
  Ta struktura jest wysyłany z `SCC_MSG_BACKGROUND_IS_CANCELLED` wiadomości. Jest on używany do komunikowania się identyfikator operacji w tle, które zostało anulowane.
 
-###  <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile
+### <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile
 
 ```cpp
 typedef struct {
@@ -94,7 +94,7 @@ typedef struct {
 
  Ta struktura jest wysyłany z `SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE` wiadomości. Jest on używany do komunikowania się nazwę pliku do pobrania i Identyfikatorem operacji w tle, który wykonuje pobierania.
 
-###  <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile
+### <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile
 
 ```cpp
 typedef struct {
@@ -106,7 +106,7 @@ typedef struct {
 
  Ta struktura jest wysyłany z `SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE` wiadomości. Jest on używany do komunikowania się wynikiem pobieranie określonego pliku, a także identyfikator operacji w tle, czy podczas pobierania. Zobacz wartości zwracane dla [SccGet](../extensibility/sccget-function.md) dla co można podać w wyniku.
 
-###  <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage
+### <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage
 
 ```cpp
 typedef struct {

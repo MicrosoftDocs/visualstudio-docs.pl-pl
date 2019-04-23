@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9159ccec69bd6e8cad0290b092f38434b495fc6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8bdc4c106ff8d6f1740fb53e0e3552f64b069fb5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954575"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100381"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Krok 4. Dodawanie obsługi zdarzeń kliknięcia do każdej etykiety
 
@@ -29,17 +29,17 @@ Gra w dopasowywanie działa w następujący sposób:
 
 ## <a name="to-add-a-click-event-handler-to-each-label"></a>Aby dodać obsługę zdarzeń kliknięcia do każdej etykiety
 
-1.  Otwórz formularz w **Windows Forms Designer**. W **Eksploratora rozwiązań**, wybierz *Form1.cs* lub *Form1.vb*. Na pasku menu wybierz **widoku** > **projektanta**.
+1. Otwórz formularz w **Windows Forms Designer**. W **Eksploratora rozwiązań**, wybierz *Form1.cs* lub *Form1.vb*. Na pasku menu wybierz **widoku** > **projektanta**.
 
-2.  Wybierz pierwszy formant etykiety, aby go zaznaczyć. Następnie przytrzymaj naciśnięty **Ctrl** klucza wciśnięty pozostałe etykiety, aby je wybrać. Pamiętaj, że każda etykieta jest zaznaczona.
+2. Wybierz pierwszy formant etykiety, aby go zaznaczyć. Następnie przytrzymaj naciśnięty **Ctrl** klucza wciśnięty pozostałe etykiety, aby je wybrać. Pamiętaj, że każda etykieta jest zaznaczona.
 
-3.  Wybierz **zdarzenia** przycisk na pasku narzędzi w **właściwości** okna, aby wyświetlić **zdarzenia** strony w **właściwości** okna. Przewiń w dół do **kliknij** zdarzeń, a następnie wprowadź **label_Click** w polu, jak pokazano na poniższej ilustracji.
+3. Wybierz **zdarzenia** przycisk na pasku narzędzi w **właściwości** okna, aby wyświetlić **zdarzenia** strony w **właściwości** okna. Przewiń w dół do **kliknij** zdarzeń, a następnie wprowadź **label_Click** w polu, jak pokazano na poniższej ilustracji.
 
      ![Okno Właściwości pokazujące zdarzenie Kliknij](../ide/media/express_labelclick.png)
 
-4.  Wybierz **Enter** klucza. IDE dodaje `Click` wywołuje program obsługi zdarzeń `label_Click()` z kodem i przyczepia go do każdej etykiety w formularzu.
+4. Wybierz **Enter** klucza. IDE dodaje `Click` wywołuje program obsługi zdarzeń `label_Click()` z kodem i przyczepia go do każdej etykiety w formularzu.
 
-5.  Wypełnij resztę kodu w następujący sposób:
+5. Wypełnij resztę kodu w następujący sposób:
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/CSharp/step-4-add-a-click-event-handler-to-each-label_1.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/VisualBasic/step-4-add-a-click-event-handler-to-each-label_1.vb)]
@@ -52,10 +52,10 @@ Gra w dopasowywanie działa w następujący sposób:
 
      Metoda ta najpierw sprawdza, czy `clickedLabel` został pomyślnie przekonwertowany (rzutowany) z obiektu na formant etykiety. Jeśli nie, ma wartość `null` (C#) lub `Nothing` (Visual Basic), a nie chcesz wykonać pozostałej części kodu w metodzie. Następnie metoda sprawdza kolor tekstu wybranej etykiety za pomocą etykiety **ForeColor** właściwości. Jeśli kolor tekstu etykiety jest czarny, oznacza to, że ikona jest już wybrana, a metoda jest wykonana. (Właśnie to `return` wykonuje instrukcja: Mówi programowi, aby zatrzymał wykonywanie metody.) W przeciwnym razie ikona nie została wybrana, więc program zmienia kolor tekstu etykiety na czarny.
 
-6.  Na pasku menu wybierz **pliku** > **Zapisz wszystko** Aby zapisać postęp, a następnie na pasku menu wybierz **debugowania** > **Start Debugowanie** Aby uruchomić program. Powinien zostać wyświetlony pusty formularz z niebieskim tłem. Wybierz którąś komórkę w formularzu, jedna z ikon powinna się stać widoczna. Kontynuuj wybieranie różnych miejsc w formularzu. Ikony powinny się pojawiać w miarę wybierania.
+6. Na pasku menu wybierz **pliku** > **Zapisz wszystko** Aby zapisać postęp, a następnie na pasku menu wybierz **debugowania** > **Start Debugowanie** Aby uruchomić program. Powinien zostać wyświetlony pusty formularz z niebieskim tłem. Wybierz którąś komórkę w formularzu, jedna z ikon powinna się stać widoczna. Kontynuuj wybieranie różnych miejsc w formularzu. Ikony powinny się pojawiać w miarę wybierania.
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
--   Aby przejść do następnego kroku samouczka, zobacz [krok 5: Dodawanie odwołań do etykiet](../ide/step-5-add-label-references.md).
+- Aby przejść do następnego kroku samouczka, zobacz [krok 5: Dodawanie odwołań do etykiet](../ide/step-5-add-label-references.md).
 
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 3: Przypisanie losowej ikony do każdej etykiety](../ide/step-3-assign-a-random-icon-to-each-label.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 3: Przypisanie losowej ikony do każdej etykiety](../ide/step-3-assign-a-random-icon-to-each-label.md).

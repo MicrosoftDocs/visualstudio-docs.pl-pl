@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b392cf5eddaab877af56ee952074cff646e10a59
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8ff4cc9501552b0a482e93aa1917a175680d6d78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693454"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099993"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Pliki zrzutu debugera programu Visual Studio
 
@@ -39,27 +39,27 @@ Zrzuty są głównie używane do debugowania problemów z komputerów, które de
 
 Debuger programu Visual Studio może zapisywać pliki zrzutu dla kodu zarządzanego lub natywnego. Można go debugować pliki zrzutu utworzone przez program Visual Studio lub przez inne aplikacje, które zapisują pliki w *minizrzutu* formatu.
 
-##  <a name="BKMK_Requirements_and_limitations"></a> Wymagania i ograniczenia
+## <a name="BKMK_Requirements_and_limitations"></a> Wymagania i ograniczenia
 
--   Aby debugować pliki zrzutu z komputerów 64-bitowych, Visual Studio musi działać na komputerze 64-bitowym.
+- Aby debugować pliki zrzutu z komputerów 64-bitowych, Visual Studio musi działać na komputerze 64-bitowym.
 
--   Program Visual Studio umożliwia debugowanie plików zrzutu macierzystych aplikacji z urządzeń ARM. Mogą ponadto debugować zrzutów zarządzanych aplikacji z urządzeń ARM, ale tylko w macierzystym debugerze.
+- Program Visual Studio umożliwia debugowanie plików zrzutu macierzystych aplikacji z urządzeń ARM. Mogą ponadto debugować zrzutów zarządzanych aplikacji z urządzeń ARM, ale tylko w macierzystym debugerze.
 
--   Aby debugować [trybu jądra](/windows-hardware/drivers/debugger/kernel-mode-dump-files) pliki zrzutu, lub użyj [SOS.dll](/dotnet/framework/tools/sos-dll-sos-debugging-extension) Debugowanie rozszerzeń w programie Visual Studio, Pobierz narzędzia do debugowania dla Windows w [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
+- Aby debugować [trybu jądra](/windows-hardware/drivers/debugger/kernel-mode-dump-files) pliki zrzutu, lub użyj [SOS.dll](/dotnet/framework/tools/sos-dll-sos-debugging-extension) Debugowanie rozszerzeń w programie Visual Studio, Pobierz narzędzia do debugowania dla Windows w [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
 
--   Visual Studio nie może debugować plików zrzutu zapisanych w starszym formatem, [zrzut trybu użytkownika pełnego](/windows/desktop/wer/collecting-user-mode-dumps) formatu. Zrzut trybu użytkownika pełnego nie jest taka sama jak zrzut ze stertą.
+- Visual Studio nie może debugować plików zrzutu zapisanych w starszym formatem, [zrzut trybu użytkownika pełnego](/windows/desktop/wer/collecting-user-mode-dumps) formatu. Zrzut trybu użytkownika pełnego nie jest taka sama jak zrzut ze stertą.
 
--   Debugowanie plików zrzutu zoptymalizowanego kodu może być mylące. Na przykład Wbudowywanie funkcji przez kompilator może spowodować nieoczekiwane stosy wywołań, a inne optymalizacje mogą zmienić okres istnienia zmiennych.
+- Debugowanie plików zrzutu zoptymalizowanego kodu może być mylące. Na przykład Wbudowywanie funkcji przez kompilator może spowodować nieoczekiwane stosy wywołań, a inne optymalizacje mogą zmienić okres istnienia zmiennych.
 
-##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> Pliki zrzutu ze stertami lub bez
+## <a name="BKMK_Dump_files__with_or_without_heaps"></a> Pliki zrzutu ze stertami lub bez
 
 Pliki zrzutu może lub nie może mieć informacje o stercie.
 
--   **Pliki zrzutu ze stertami** zawierają migawkę pamięci aplikacji, w tym wartości zmiennych, w momencie zrzutu. Program Visual Studio zapisuje także pliki binarne załadowanych modułów macierzystych w pliku zrzutu ze stertą, co znacznie ułatwia debugowanie. Program Visual Studio załadować symbole z pliku zrzutu ze stertą, nawet wtedy, gdy nie można odnaleźć binarnych aplikacji.
+- **Pliki zrzutu ze stertami** zawierają migawkę pamięci aplikacji, w tym wartości zmiennych, w momencie zrzutu. Program Visual Studio zapisuje także pliki binarne załadowanych modułów macierzystych w pliku zrzutu ze stertą, co znacznie ułatwia debugowanie. Program Visual Studio załadować symbole z pliku zrzutu ze stertą, nawet wtedy, gdy nie można odnaleźć binarnych aplikacji.
 
--   **Zrzuć pliki bez stert** są znacznie mniejsze niż przy użyciu sterty, ale debuger musi załadować pliki binarne aplikacji, aby znaleźć informacje o symbolach. Załadowane dane binarne muszą dokładnie odpowiadać te działania podczas tworzenia zrzutu. Pliki zrzutu bez stert zapisać wartości tylko w zmiennych stosu.
+- **Zrzuć pliki bez stert** są znacznie mniejsze niż przy użyciu sterty, ale debuger musi załadować pliki binarne aplikacji, aby znaleźć informacje o symbolach. Załadowane dane binarne muszą dokładnie odpowiadać te działania podczas tworzenia zrzutu. Pliki zrzutu bez stert zapisać wartości tylko w zmiennych stosu.
 
-##  <a name="BKMK_Create_a_dump_file"></a> Tworzenie pliku zrzutu
+## <a name="BKMK_Create_a_dump_file"></a> Tworzenie pliku zrzutu
 
 Podczas debugowania procesu w programie Visual Studio, można zapisać zrzutu po zatrzymaniu debugera w punkt przerwania lub wyjątku.
 
@@ -76,7 +76,7 @@ Za pomocą [debugowanie just in Time](../debugger/just-in-time-debugging-in-visu
 >[!NOTE]
 >Można tworzyć pliki zrzutu za pomocą dowolnego programu, który obsługuje format minizrzutu Windows. Na przykład **Procdump** narzędzie wiersza polecenia z [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) można tworzyć pliki zrzutu awaryjnego procesów na podstawie wyzwalaczy lub na żądanie. Zobacz [wymagania i ograniczenia](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) uzyskać informacji na temat korzystania z innych narzędzi do tworzenia plików zrzutu.
 
-##  <a name="BKMK_Open_a_dump_file"></a> Otwieranie pliku zrzutu
+## <a name="BKMK_Open_a_dump_file"></a> Otwieranie pliku zrzutu
 
 1. W programie Visual Studio, wybierz **pliku** > **Otwórz** > **pliku**.
 
@@ -90,7 +90,7 @@ Za pomocą [debugowanie just in Time](../debugger/just-in-time-debugging-in-visu
    - Aby ustawić lokalizacje ładowania symboli, wybierz **Ustaw ścieżki symboli**.
    - Aby rozpocząć debugowanie, wybierz **debugowanie zarządzane tylko za pomocą**, **Debuguj tylko kod natywny**, **debugowanie za pomocą mieszanego**, lub **debugowanie za pomocą pamięć zarządzaną**.
 
-##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Znajdowanie .exe, .pdb i plików źródłowych
+## <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Znajdowanie .exe, .pdb i plików źródłowych
 
 Aby użyć funkcji w pliku zrzutu do debugowania programu Visual Studio wymaga:
 

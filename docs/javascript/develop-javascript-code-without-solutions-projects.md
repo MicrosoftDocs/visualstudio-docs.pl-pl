@@ -14,11 +14,11 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 3d6e3479fe27c5d88b58f096ab5405d75c6c98e3
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857843"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102773"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Tworzenie kodu JavaScript i TypeScript w programie Visual Studio bez rozwiązań lub projektów
 

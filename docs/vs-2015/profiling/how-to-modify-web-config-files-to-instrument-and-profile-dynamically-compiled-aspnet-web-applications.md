@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 53c55987c22104a8951976890812d90f6bb838d4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a16ad46722213a703785d08209d68b3c4ee6b04f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774996"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099596"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Instrukcje: Modyfikowanie plików Web.Config do Instrumentowania i profilowania dynamicznie skompilowanych aplikacji sieci Web ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,27 +38,27 @@ Możesz użyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] metody Instrumentacj
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Aby dodać zestaw ASPNetHelper jako element konfiguracji/środowiska uruchomieniowego/assemblyBinding/dependentAssembly  
   
-1.  W razie potrzeby dodaj **środowiska uruchomieniowego** element jako element podrzędny **konfiguracji** element; w przeciwnym razie przejdź do następnego kroku.  
+1. W razie potrzeby dodaj **środowiska uruchomieniowego** element jako element podrzędny **konfiguracji** element; w przeciwnym razie przejdź do następnego kroku.  
   
      **Środowiska uruchomieniowego** element nie ma żadnych atrybutów. **Konfiguracji** element może mieć tylko jeden **środowiska uruchomieniowego** elementu podrzędnego.  
   
-2.  W razie potrzeby dodaj **assemblyBinding** element jako element podrzędny **środowiska uruchomieniowego** element; w przeciwnym razie przejdź do następnego kroku.  
+2. W razie potrzeby dodaj **assemblyBinding** element jako element podrzędny **środowiska uruchomieniowego** element; w przeciwnym razie przejdź do następnego kroku.  
   
      **Środowiska uruchomieniowego** element może mieć tylko jeden **assemblyBinding** elementu.  
   
-3.  Dodaj następujące nazwy atrybutu i wartość, która **assemblyBinding** elementu:  
+3. Dodaj następujące nazwy atrybutu i wartość, która **assemblyBinding** elementu:  
   
     |Nazwa atrybutu|Wartość atrybutu|  
     |--------------------|---------------------|  
     |**Xmlns**|**urn:schemas-microsoft-com:asm.v1**|  
   
-4.  Dodaj **dependentAssembly** element jako element podrzędny **assemblyBinding** elementu.  
+4. Dodaj **dependentAssembly** element jako element podrzędny **assemblyBinding** elementu.  
   
      **DependentAssembly** element nie ma żadnych atrybutów.  
   
-5.  Dodaj **assemblyIdentity** element jako element podrzędny elementu **dependentAssembly** elementu.  
+5. Dodaj **assemblyIdentity** element jako element podrzędny elementu **dependentAssembly** elementu.  
   
-6.  Dodaj następujące nazwy atrybutów i wartości do **assemblyIdentity** elementu:  
+6. Dodaj następujące nazwy atrybutów i wartości do **assemblyIdentity** elementu:  
   
     |Nazwa atrybutu|Wartość atrybutu|  
     |--------------------|---------------------|  
@@ -66,9 +66,9 @@ Możesz użyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] metody Instrumentacj
     |**PublicKeyToken**|**b03f5f7f11d50a3a**|  
     |**Kultury**|**Neutral**|  
   
-7.  Dodaj **codeBase** element jako element podrzędny elementu **dependentAssembly** elementu.  
+7. Dodaj **codeBase** element jako element podrzędny elementu **dependentAssembly** elementu.  
   
-8.  Dodaj następujące nazwy atrybutów i wartości do **codeBase** elementu:  
+8. Dodaj następujące nazwy atrybutów i wartości do **codeBase** elementu:  
   
     |Nazwa atrybutu|Wartość atrybutu|  
     |--------------------|---------------------|  
@@ -98,15 +98,15 @@ Możesz użyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] metody Instrumentacj
   
 ### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>Aby dodać krok po przetwarzaniu Profiler do elementu configuration/system.web/compilation  
   
-1.  W razie potrzeby dodaj **system.web** element jako element podrzędny **konfiguracji** element; w przeciwnym razie przejdź do następnego kroku.  
+1. W razie potrzeby dodaj **system.web** element jako element podrzędny **konfiguracji** element; w przeciwnym razie przejdź do następnego kroku.  
   
      **System.web** element nie ma żadnych atrybutów. **Konfiguracji** element może mieć tylko jeden **system.web** elementu podrzędnego.  
   
-2.  W razie potrzeby dodaj **kompilacji** element jako element podrzędny **system.web** element; w przeciwnym razie przejdź do następnego kroku.  
+2. W razie potrzeby dodaj **kompilacji** element jako element podrzędny **system.web** element; w przeciwnym razie przejdź do następnego kroku.  
   
      **System.web** element może mieć tylko jeden **kompilacji** elementu podrzędnego.  
   
-3.  Usuń wszystkie istniejące atrybuty z **kompilacji** element i Dodaj następujący atrybut nazwy i wartości:  
+3. Usuń wszystkie istniejące atrybuty z **kompilacji** element i Dodaj następujący atrybut nazwy i wartości:  
   
     |Nazwa atrybutu|Wartość atrybutu|  
     |--------------------|---------------------|  
@@ -130,22 +130,22 @@ Możesz użyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] metody Instrumentacj
   
 ### <a name="to-add-profiler-location-settings-to-the-configurationappsettings-element"></a>Aby dodać ustawienia lokalizacji Profiler do elementu konfiguracji/appSettings  
   
-1.  W razie potrzeby dodaj **appSettings** element jako element podrzędny **konfiguracji** element; w przeciwnym razie przejdź do następnego kroku.  
+1. W razie potrzeby dodaj **appSettings** element jako element podrzędny **konfiguracji** element; w przeciwnym razie przejdź do następnego kroku.  
   
      **AppSettings** element nie ma żadnych atrybutów. **Konfiguracji** element może mieć tylko jeden **appSettings** elementu podrzędnego.  
   
-2.  Dodaj **Dodaj** element jako element podrzędny elementu **appSettings** elementu.  
+2. Dodaj **Dodaj** element jako element podrzędny elementu **appSettings** elementu.  
   
-3.  Dodaj następujące nazwy atrybutów i wartości do **Dodaj** elementu:  
+3. Dodaj następujące nazwy atrybutów i wartości do **Dodaj** elementu:  
   
     |Nazwa atrybutu|Wartość atrybutu|  
     |--------------------|---------------------|  
     |**Klucz**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
     |**value**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
-4.  Dodaj kolejną **Dodaj** element jako element podrzędny elementu **appSettings** elementu.  
+4. Dodaj kolejną **Dodaj** element jako element podrzędny elementu **appSettings** elementu.  
   
-5.  Dodaj następujący atrybut nazwy i wartości do tego **Dodaj** elementu:  
+5. Dodaj następujący atrybut nazwy i wartości do tego **Dodaj** elementu:  
   
     |Nazwa atrybutu|Wartość atrybutu|  
     |--------------------|---------------------|  

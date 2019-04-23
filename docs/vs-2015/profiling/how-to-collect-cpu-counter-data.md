@@ -14,12 +14,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a774ce8b36ceddb4d4b53f90c63bec30acc0273
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b197bbc434ecf01ad5b6df332530ad719575aede
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762935"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104086"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Instrukcje: Zbieranie danych licznika Procesora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,13 +54,13 @@ Licznik zdarzeń procesora CPU jest używane do zbierania danych wydajności spe
   
 ### <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Do zbierania danych licznika wydajności procesora CPU podczas profilowania za pomocą Instrumentacji  
   
-1.  W sesji wydajności **stron właściwości**, kliknij przycisk **liczniki procesora CPU.**  
+1. W sesji wydajności **stron właściwości**, kliknij przycisk **liczniki procesora CPU.**  
   
-2.  Wybierz **zbierania liczników Procesora** pole wyboru.  
+2. Wybierz **zbierania liczników Procesora** pole wyboru.  
   
-3.  Rozwiń **dostępnych liczników wydajności** drzewa, aż znajdziesz próbkowane zdarzenia, które mają być zbierane.  
+3. Rozwiń **dostępnych liczników wydajności** drzewa, aż znajdziesz próbkowane zdarzenia, które mają być zbierane.  
   
-4.  Dla każdego zdarzenia, które mają być zbierane, wybierz zdarzenie, a następnie kliknij strzałkę w prawo, aby dodać wydarzenie do **wybrane liczniki** listy.  
+4. Dla każdego zdarzenia, które mają być zbierane, wybierz zdarzenie, a następnie kliknij strzałkę w prawo, aby dodać wydarzenie do **wybrane liczniki** listy.  
   
     > [!NOTE]
     >  **Dostępne liczniki wydajności** jest włączona, tylko jeśli wybierzesz **liczniki CPU zbieranie** pole wyboru.  

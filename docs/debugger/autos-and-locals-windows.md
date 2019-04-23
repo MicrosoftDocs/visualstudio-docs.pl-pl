@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d270b14a0dda18a037eb74181c2eec69cf26dc8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 60bb98644c1905b030176b28b97575b379bed38d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366552"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103098"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Sprawdzanie zmiennych w oknach zmiennych automatycznych i zmiennych lokalnych
 
@@ -56,9 +56,9 @@ W kodzie natywnym języku C++ masz może być zakwalifikowanie kontekstu nazwy z
 >[!CAUTION]
 >Upewnij się, że rozumiesz konsekwencje, zanim będzie można zmienić wartości i wyrażeń. Niektóre problemy są:
 >
->-   Obliczenie niektórych wyrażeń może zmienić wartość zmiennej lub inaczej wpłynąć na stan programu. Na przykład oceny `var1 = ++var2` zmienia wartość obu `var1` i `var2`. Wyrażenia te są określane jako mają [efekty uboczne](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Efekty uboczne może spowodować nieoczekiwane wyniki, jeśli nie masz pewności, z nich.
+>- Obliczenie niektórych wyrażeń może zmienić wartość zmiennej lub inaczej wpłynąć na stan programu. Na przykład oceny `var1 = ++var2` zmienia wartość obu `var1` i `var2`. Wyrażenia te są określane jako mają [efekty uboczne](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Efekty uboczne może spowodować nieoczekiwane wyniki, jeśli nie masz pewności, z nich.
 >
->-   Edytowanie wartości zmiennoprzecinkowych może spowodować pomocnicza niezgodnościami z powodu konwersji dziesiętnych do pliku binarnego części ułamkowe. Nawet pozornie nieszkodliwe edycji może spowodować zmiany do niektórych bitów w zmiennej zmiennoprzecinkowych.
+>- Edytowanie wartości zmiennoprzecinkowych może spowodować pomocnicza niezgodnościami z powodu konwersji dziesiętnych do pliku binarnego części ułamkowe. Nawet pozornie nieszkodliwe edycji może spowodować zmiany do niektórych bitów w zmiennej zmiennoprzecinkowych.
 
 ::: moniker range=">= vs-2019" 
 ## <a name="search-in-the-autos-or-locals-window"></a>Wyszukiwanie w oknie Autos lub zmiennych lokalnych
@@ -85,9 +85,9 @@ Ustaw punkt przerwania, a następnie rozpocząć debugowanie. Po osiągnięciu p
 
 ## <a name="bkmk_whatvariables"></a> Zmienne w oknie Autos (C#, języka Python w języku C++, Visual Basic)
 
- Inny kod języków wyświetlać różne zmienne w **Autos** okna.
+Inny kod języków wyświetlać różne zmienne w **Autos** okna.
 
- - W C# i Visual Basic **Autos** dowolnej zmiennej w wierszu bieżącej lub poprzedniej stosowany jest wyświetlana w oknie. Na przykład w C# lub Visual Basic kod, Zadeklaruj cztery następujące zmienne:
+- W C# i Visual Basic **Autos** dowolnej zmiennej w wierszu bieżącej lub poprzedniej stosowany jest wyświetlana w oknie. Na przykład w C# lub Visual Basic kod, Zadeklaruj cztery następujące zmienne:
 
    ```csharp
        public static void Main()
@@ -106,7 +106,7 @@ Ustaw punkt przerwania, a następnie rozpocząć debugowanie. Po osiągnięciu p
 
    Wartość `c` ma wartość 0, ponieważ wiersz `c = 3` nie zostało jeszcze wykonane.
 
- - W języku C++ **Autos** jest wyświetlana w oknie zmiennych używanych w co najmniej trzy wiersze przed bieżącego wiersza, w której wykonywanie jest wstrzymane. Na przykład w przypadku kodu C++ należy deklarować zmienne sześć:
+- W języku C++ **Autos** jest wyświetlana w oknie zmiennych używanych w co najmniej trzy wiersze przed bieżącego wiersza, w której wykonywanie jest wstrzymane. Na przykład w przypadku kodu C++ należy deklarować zmienne sześć:
 
    ```C++
        void main() {
@@ -126,7 +126,7 @@ Ustaw punkt przerwania, a następnie rozpocząć debugowanie. Po osiągnięciu p
 
     Zmienna `e` została zainicjowana, ponieważ wiersz `e = 5` nie zostało jeszcze wykonane.
 
-##  <a name="bkmk_returnValue"></a> Wyświetl wartości zwracane wywołania metody
+## <a name="bkmk_returnValue"></a> Wyświetl wartości zwracane wywołania metody
  W kodzie .NET i C++, można zbadać wartości zwracane w **Autos** okna, gdy wychodzisz nad lub poza wywołanie metody. Wywołanie metody wyświetlania zwracanych wartości mogą być przydatne, gdy nie są przechowywane w zmiennych lokalnych. Metoda może służyć jako parametr lub jako wartość zwracaną przez inną metodę.
 
  Na przykład następująca C# kod dodaje wartości zwrócone przez dwie funkcje:

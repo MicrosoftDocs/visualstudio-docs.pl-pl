@@ -11,12 +11,12 @@ ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a0d656aea42fff774e5e9c58068eff7039cfe79
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 54f9c7b982f1774c79d7cd1e7c0affa29dfbb65d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936957"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058216"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analizowanie aktywności wirtualnego użytkownika testów obciążenia w widoku szczegółów analizatora testu obciążenia
 
@@ -45,11 +45,11 @@ ms.locfileid: "55936957"
 
  Panel wyników filtru jest widoczny w **wykres aktywności wirtualnych użytkowników**. Panel wyników filtrowania można filtrować od następujących czynników:
 
--   **Pokaż tylko wyniki z dziennikami** wyświetla tylko wyniki, które mają dzienniki testów skojarzonych z nimi.
+- **Pokaż tylko wyniki z dziennikami** wyświetla tylko wyniki, które mają dzienniki testów skojarzonych z nimi.
 
--   **Pokaż pomyślne wyniki** Wyświetla pomyślne wyniki.
+- **Pokaż pomyślne wyniki** Wyświetla pomyślne wyniki.
 
--   **Pokaż wyniki z błędami** wyświetla wyniki z błędami, które mogą pomóc w debugowaniu.
+- **Pokaż wyniki z błędami** wyświetla wyniki z błędami, które mogą pomóc w debugowaniu.
 
 ## <a name="tasks"></a>Zadania
 

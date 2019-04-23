@@ -14,12 +14,12 @@ ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7cc4cc2af5fb78c181be94863176914c17481e95
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66789cdf50c06648b2d973d9c62a14c113aeaa0e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928729"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102850"
 ---
 # <a name="load-test-results-summary-overview"></a>Przegląd podsumowania wyników testu obciążenia
 
@@ -107,9 +107,9 @@ Sekcja wyniki transakcji zawiera listę wszystkich transakcji w teście obciąż
 
 Wartości percentyla raportu następujące informacje o transakcji:
 
--   Zakończono 90% łącznej liczby transakcji w mniej niż \<czas > sekund.
+- Zakończono 90% łącznej liczby transakcji w mniej niż \<czas > sekund.
 
--   Zakończono 95% łącznej liczby transakcji w mniej niż \<czas > sekund.
+- Zakończono 95% łącznej liczby transakcji w mniej niż \<czas > sekund.
 
 ## <a name="system-under-test-resources"></a>System w trakcie zasobów testowych
 

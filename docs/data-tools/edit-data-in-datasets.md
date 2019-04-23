@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5adc9574fa36fd77c1d30d6045795953c37349bc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d693113db28acc456625f7c22b671006ed17038b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928676"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096988"
 ---
 # <a name="edit-data-in-datasets"></a>Edytowanie danych w zestawach danych
 Możesz edytować dane w tabelach danych tak, jak edytować dane w tabeli w dowolnej bazie danych. Ten proces może zawierać Wstawianie, aktualizowanie i usuwanie rekordów w tabeli. W formie powiązanych z danymi można określić pola, które są można edytować użytkownika. W takich przypadkach infrastruktura powiązań danych obsługuje wszystkie śledzenia zmian, aby zmiany mogą zostać odesłany do bazy danych później. Jeśli programowo wprowadzisz zmiany danych, a ma zostać wysłany tych zmian w bazie danych, należy użyć obiektów i metod, które wykonują śledzenia zmian dla Ciebie.
@@ -53,7 +53,7 @@ Jeśli aplikacja nie potrzebuje do wysyłania aktualizacji do źródła danych, 
 
 #### <a name="to-delete-records-from-a-data-table"></a>Do usuwania rekordów z tabeli danych
 
--   Wywołaj <xref:System.Data.DataRow.Delete%2A> metody <xref:System.Data.DataRow>.
+- Wywołaj <xref:System.Data.DataRow.Delete%2A> metody <xref:System.Data.DataRow>.
 
      Ta metoda nie usuwa fizycznie rekordu. Zamiast tego oznacza rekord do usunięcia.
 
@@ -70,15 +70,15 @@ Gdy zostaną wprowadzone zmiany do rekordów w zestawie danych, informacje o tyc
 
 Zmiany są śledzone dwa sposoby, w każdym wierszu danych:
 
--   Każdy wiersz danych zawiera informacje dotyczące jego <xref:System.Data.DataRow.RowState%2A> (na przykład <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>, lub <xref:System.Data.DataRowState.Unchanged>).
+- Każdy wiersz danych zawiera informacje dotyczące jego <xref:System.Data.DataRow.RowState%2A> (na przykład <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>, lub <xref:System.Data.DataRowState.Unchanged>).
 
--   Każdy zmieniony wiersz danych zawiera wiele wersji tego wiersza (<xref:System.Data.DataRowVersion>), wersja oryginalna (przed zmianami) i bieżącej wersji (po zmianach). W okresie, gdy zmiany oczekujące (czas, kiedy, pozwalające reagować na <xref:System.Data.DataTable.RowChanging> zdarzeń), trzecia wersja — wersja proponowana — jest także dostępna.
+- Każdy zmieniony wiersz danych zawiera wiele wersji tego wiersza (<xref:System.Data.DataRowVersion>), wersja oryginalna (przed zmianami) i bieżącej wersji (po zmianach). W okresie, gdy zmiany oczekujące (czas, kiedy, pozwalające reagować na <xref:System.Data.DataTable.RowChanging> zdarzeń), trzecia wersja — wersja proponowana — jest także dostępna.
 
 <xref:System.Data.DataSet.HasChanges%2A> Metoda zestawu danych zwraca `true` Jeśli wprowadzono zmiany w zestawie danych. Po ustaleniu, że istnieją zmienione wiersze, można wywołać `GetChanges` metody <xref:System.Data.DataSet> lub <xref:System.Data.DataTable> zwrócić zestaw zmienionych wierszy.
 
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Aby ustalić, czy wprowadzono zmiany do wszystkich wierszy
 
--   Wywołaj <xref:System.Data.DataSet.HasChanges%2A> metoda zestawu danych, aby sprawdzić zmienione wiersze.
+- Wywołaj <xref:System.Data.DataSet.HasChanges%2A> metoda zestawu danych, aby sprawdzić zmienione wiersze.
 
 Poniższy przykład pokazuje, jak sprawdzić wartość zwrotną z elementu <xref:System.Data.DataSet.HasChanges%2A> metody wykrywania, czy istnieją jakiekolwiek zmienione wiersze w zestawie danych o nazwie `NorthwindDataset1`:
 
@@ -90,7 +90,7 @@ Możesz również sprawdzić, aby zobaczyć, jaki typ zmiany wprowadzono w zesta
 
 #### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>Aby określić, jakie zmiany zostały wprowadzone, aby wiersz
 
--   Przekaż <xref:System.Data.DataRowState> wartość <xref:System.Data.DataSet.HasChanges%2A> metody.
+- Przekaż <xref:System.Data.DataRowState> wartość <xref:System.Data.DataSet.HasChanges%2A> metody.
 
 Poniższy przykład pokazuje, jak sprawdzić zestaw danych o nazwie `NorthwindDataset1` ustalenie, jeśli jakieś nowe wiersze zostały dodane do niego:
 
@@ -100,9 +100,9 @@ Poniższy przykład pokazuje, jak sprawdzić zestaw danych o nazwie `NorthwindDa
 ## <a name="to-locate-rows-that-have-errors"></a>Aby zlokalizować wierszy zawierających błędy
 Podczas pracy z poszczególnych kolumn i wierszy danych, mogą wystąpić błędy. Możesz sprawdzić `HasErrors` właściwości w celu określenia, jeśli istnieją błędy w <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, lub <xref:System.Data.DataRow>.
 
-1.  Sprawdź `HasErrors` właściwości, aby zobaczyć, czy istnieją błędy w zestawie danych.
+1. Sprawdź `HasErrors` właściwości, aby zobaczyć, czy istnieją błędy w zestawie danych.
 
-2.  Jeśli `HasErrors` właściwość `true`, iterowania przez kolekcje tabel, a następnie za pomocą wierszy, aby znaleźć wiersza z powodu błędu.
+2. Jeśli `HasErrors` właściwość `true`, iterowania przez kolekcje tabel, a następnie za pomocą wierszy, aby znaleźć wiersza z powodu błędu.
 
 [!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
 [!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]

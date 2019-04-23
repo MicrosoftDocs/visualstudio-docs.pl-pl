@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f923c4762a78f43d2d9b1ba3df990c148a074e68
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8cc47445f9d2024f5d8a83c8f376bc0299b8ea4e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867263"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103644"
 ---
 # <a name="ribbon-designer"></a>Projektant wstążki
   Projektant wstążki jest wizualną kanwą. Za pomocą projektanta wstążki można dodać niestandardowe karty, grupy i formanty do Wstążki aplikacji pakietu Microsoft Office.
@@ -40,11 +40,11 @@ ms.locfileid: "54867263"
 
  Aby otworzyć projektanta wstążki, Dodaj **Wstążka (Projektant graficzny)** elementu do projektu. Można następnie użyć narzędzia do projektowania dla następujących zadań:
 
--   [Zaprojektuj układ wstążki](#DesigningRibbonLayout)
+- [Zaprojektuj układ wstążki](#DesigningRibbonLayout)
 
--   [Obsługa zdarzeń i ustawianie właściwości formantu](#HandleEventsSetProperties)
+- [Obsługa zdarzeń i ustawianie właściwości formantu](#HandleEventsSetProperties)
 
--   [Dodawanie formantów do widoku Backstage](#CustomizingMicrosoftOfficeButton)
+- [Dodawanie formantów do widoku Backstage](#CustomizingMicrosoftOfficeButton)
 
 > [!NOTE]
 >  Istnieją pewne zadania, których nie można wykonać przy użyciu projektanta wstążki. Aby uzyskać więcej informacji na temat tych zadań i jak można je wykonać, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md).
@@ -64,7 +64,7 @@ ms.locfileid: "54867263"
 
   Jeśli masz już **Wstążka (Projektant graficzny)** elementu z innego projektu, można ponownie użyć go w bieżącym projekcie za pomocą **Dodaj istniejący element** okno dialogowe.
 
-##  <a name="DesigningRibbonLayout"></a> Projektowanie wstążki
+## <a name="DesigningRibbonLayout"></a> Projektowanie wstążki
  Istnieją trzy sposoby otwierania projektanta wstążki:
 
 - W **Eksploratora rozwiązań**, kliknij dwukrotnie plik kodu wstążki.
@@ -98,7 +98,7 @@ ms.locfileid: "54867263"
 
    Nie można przeciągać formantów z jednej karty do innej na Wstążce. Jeśli chcesz przenieść formant do innej karty, należy użyć **Wytnij** polecenie, aby usunąć formant z jednej karty, a następnie wkleić formant na inną kartę. Jeśli wytniesz formant i wkleisz go, program obsługi zdarzeń przestanie działać. Można ponownie połączyć program obsługi zdarzeń w **właściwości** okna. Aby uzyskać więcej informacji, zobacz [okno właściwości](../ide/reference/properties-window.md).
 
-###  <a name="AddTabToRibbon"></a> Dodaj niestandardowe karty do wstążki
+### <a name="AddTabToRibbon"></a> Dodaj niestandardowe karty do wstążki
  Istnieją trzy sposoby dodania niestandardowej karty do wstążki:
 
 - Dodaj kartę z **przybornika**.
@@ -114,11 +114,11 @@ ms.locfileid: "54867263"
 #### <a name="remove-custom-tabs-from-the-ribbon"></a>Usuwanie niestandardowych kart ze Wstążki
  Istnieją trzy sposoby usuwania karty niestandardowej ze Wstążki:
 
--   Kliknij prawym przyciskiem myszy projektanta, a następnie kliknij przycisk **Usuń kartę Wstążki**.
+- Kliknij prawym przyciskiem myszy projektanta, a następnie kliknij przycisk **Usuń kartę Wstążki**.
 
--   W **polecenia** okienku **właściwości** okna, kliknij przycisk **Usuń kartę Wstążki**.
+- W **polecenia** okienku **właściwości** okna, kliknij przycisk **Usuń kartę Wstążki**.
 
--   Otwórz **Edotor kolekcji zakładek**, wybierz kartę, a następnie kliknij przycisk **Usuń**.
+- Otwórz **Edotor kolekcji zakładek**, wybierz kartę, a następnie kliknij przycisk **Usuń**.
 
 #### <a name="change-the-position-of-a-tab-on-the-ribbon"></a>Zmiana położenia zakładki na Wstążce
  Możesz zmienić kolejność niestandardowych kart na Wstążce. Można także określić położenie niestandardowych kart przed lub po wbudowanej karcie na Wstążce. Aby uzyskać więcej informacji, zobacz [jak: Zmiana położenia zakładki na wstążce](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md).
@@ -132,13 +132,13 @@ ms.locfileid: "54867263"
 
  Aby uzyskać szczegółowe informacje na temat sposobu dostosowywania karty wbudowanej, zobacz [jak: Dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md).
 
-###  <a name="AddGroupsToTab"></a> Dodawanie grup do karty
+### <a name="AddGroupsToTab"></a> Dodawanie grup do karty
  Grupy logicznie organizują formanty na Wstążce. Dodawanie grup do kart. Dodaj wszystkie inne formanty do grupy.
 
-###  <a name="AddControlsToGroups"></a> Dodawanie formantów do grup
+### <a name="AddControlsToGroups"></a> Dodawanie formantów do grup
  Dodaj jeden lub kilka formantów do grupy. W poniższej tabeli opisano każdy formant.
 
-|Formant|Opis|
+|formant|Opis|
 |-------------|-----------------|
 |**Box**|Kontener, który organizuje formanty w grupie. Możesz dodać dowolną kontrolkę, do pola z wyjątkiem separatora, grupy lub karty. Pole może mieć poziomej lub pionowej.|
 |**Przycisk**|Przycisk, który uruchamia akcję. Można dodać przycisk do grupy, grupy przycisków, listy rozwijanej, galerii, menu lub przycisku podziału.|
@@ -154,7 +154,7 @@ ms.locfileid: "54867263"
 |**SplitButton**|Przycisk z dołączonym menu. Przycisk podziału może zawierać żadnego z następujących formantów:<br /><br /> — Przycisk<br />— Pole<br />— Galeria<br />— Menu<br />-Przycisk podziału<br />-Przycisk przełączania<br />-Separatora<br /><br /> Podobnie jak menu przycisk podziału ma swoją własną powierzchnię projektową. Jednak w przeciwieństwie do menu, można tylko aktualizować elementy w przycisku podziału przed załadowaniem wstążki do aplikacji pakietu Office. Aby uzyskać informacje o sposobie aktualizowania elementów w przycisku podziału, zobacz [model obiektu Wstążka ― omówienie](../vsto/ribbon-object-model-overview.md).|
 |**ToggleButton**|Pojawiający się przycisk jest wciśnięty lub nie.|
 
-##  <a name="HandleEventsSetProperties"></a> Obsługa zdarzeń i ustawianie właściwości
+## <a name="HandleEventsSetProperties"></a> Obsługa zdarzeń i ustawianie właściwości
  Projektant wstążki umożliwia ustawianie właściwości formantu w czasie projektowania za pomocą **właściwości** okna. Ponadto Wstążka udostępnia model silnie typizowany obiekt, który służy do pobierania i ustawiania właściwości formantów wstążki w czasie wykonywania.
 
  Możesz kliknąć dwukrotnie dowolny kontroler na elemencie projektanta aby otworzyć program obsługi zdarzeń dla zdarzenia domyślne formantu. Programy obsługi zdarzeń dla wszystkich innych zdarzeń formantów można utworzyć za pomocą **właściwości** okna.
@@ -163,7 +163,7 @@ ms.locfileid: "54867263"
 
  Aby uzyskać informacje na temat obsługi zdarzeń Wstążki i ustawiania właściwości formantów wstążki w czasie wykonywania, zobacz [model obiektu Wstążka ― omówienie](../vsto/ribbon-object-model-overview.md).
 
-##  <a name="CustomizingMicrosoftOfficeButton"></a> Dostosowywanie widoku Backstage
+## <a name="CustomizingMicrosoftOfficeButton"></a> Dostosowywanie widoku Backstage
  Można użyć projektanta wstążki, aby dodać formanty do menu otwieranego po kliknięciu **pliku** kartę. To menu jest nazywane widokiem Backstage.
 
  Nie możesz umieścić formantów przed ani po wbudowanych formantach przy użyciu projektanta wstążki. Wbudowany formant jest formant, który już występuje w widoku Backstage. Jeśli chcesz umieścić formanty przed lub po formantach wbudowanych, należy użyć składni XML wstążki. Aby uzyskać więcej informacji na temat **wstążki (XML)**, zobacz [kodu XML wstążki](../vsto/ribbon-xml.md). Aby uzyskać więcej informacji na temat dostosowywania widoku Backstage, zobacz [wprowadzenie do widoku widoku Backstage programu Office 2010 dla programistów](http://go.microsoft.com/fwlink/?LinkId=182189) i [dostosować widok widoku Backstage programu Office 2010 dla programistów](http://go.microsoft.com/fwlink/?LinkId=182188).
@@ -172,7 +172,7 @@ ms.locfileid: "54867263"
 
  Aby uzyskać informacje o sposobie dodawania formantów do widoku Backstage, zobacz [jak: Dodawanie formantów do widoku Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md).
 
-##  <a name="Accessibility"></a> Dostępność w Projektancie wstążki
+## <a name="Accessibility"></a> Dostępność w Projektancie wstążki
  Skróty klawiaturowe umożliwia przenoszenie formantów w Projektancie wstążki. Niektóre skróty klawiaturowe mają zastosowanie do wszystkich formantów, a niektóre są stosowane wyłącznie do formantów, które mają menu.
 
  W poniższej tabeli przedstawiono skróty klawiaturowe, które mają zastosowanie do wszystkich formantów.

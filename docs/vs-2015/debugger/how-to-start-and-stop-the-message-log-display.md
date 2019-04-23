@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc3619136b103230efae183b49d4c7d3ba00880d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d2e31fc094b777b328347bdcd783b69f1539f246
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767874"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102201"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>Instrukcje: Uruchamianie i zatrzymywanie wyświetlania dziennika komunikatów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,8 +27,8 @@ Gdy [widoku komunikatów](../debugger/messages-view.md) okno jest aktywne, **Roz
   
 ### <a name="to-start-the-message-log-display"></a>Aby rozpocząć wyświetlania dziennika komunikatów  
   
-1.  Z **wiadomości** menu, wybierz **Rozpocznij rejestrowanie**.  
+1. Z **wiadomości** menu, wybierz **Rozpocznij rejestrowanie**.  
   
 ### <a name="to-stop-the-message-log-display"></a>Aby zatrzymać wyświetlania dziennika komunikatów  
   
-1.  Z **wiadomości** menu, wybierz **Zatrzymaj rejestrowanie**.
+1. Z **wiadomości** menu, wybierz **Zatrzymaj rejestrowanie**.

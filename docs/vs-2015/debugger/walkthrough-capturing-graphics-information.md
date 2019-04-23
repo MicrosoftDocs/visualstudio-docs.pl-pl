@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ad2f63bdbbad7d4427454e69806b06937b259b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9ebd0453347084d1662c6bc7837fc1e96f498fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775059"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053887"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Przewodnik: Przechwytywanie informacji graficznych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,18 +23,18 @@ W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../includes/v
   
  Ten instruktaż ilustruje następujące zadania:  
   
--   Przechwytywanie diagnostyki grafiki do aplikacji  
+- Przechwytywanie diagnostyki grafiki do aplikacji  
   
--   Przechwytywanie informacji graficznych  
+- Przechwytywanie informacji graficznych  
   
 ## <a name="capturing-graphics-information"></a>Przechwytywanie informacji graficznych  
  Aby korzystać z narzędzi programu Graphics Diagnostics, najpierw musisz przechwytywanie informacji graficznych, która opiera się na. Aby włączyć funkcję przechwytywania, należy użyć **Rozpocznij diagnostykę** polecenie, aby podłączyć Graphics Diagnostics do aplikacji podczas jej uruchamiania.  
   
 #### <a name="to-enable-the-capture-of-graphics-information-after-a-project-or-solution-is-loaded"></a>Aby włączyć funkcję przechwytywania informacji graficznych po projekt lub rozwiązanie jest ładowany  
   
-1.  W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], załaduj plik projektu lub rozwiązania, którą chcesz przechwytywać informacje graficzne z aplikacji.  
+1. W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], załaduj plik projektu lub rozwiązania, którą chcesz przechwytywać informacje graficzne z aplikacji.  
   
-2.  Na pasku narzędzi diagnostyki grafiki, wybierz **Rozpocznij diagnostykę**.  
+2. Na pasku narzędzi diagnostyki grafiki, wybierz **Rozpocznij diagnostykę**.  
   
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>Aby włączyć przechwytywanie informacji graficznych bez ładowania projektu lub rozwiązania  
   
@@ -59,7 +59,7 @@ W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../includes/v
 ## <a name="next-steps"></a>Następne kroki  
  W tym instruktażu zademonstrowano, jak przechwytywać informacje graficzne ręcznie. Kolejnym krokiem Rozważ użycie tej opcji:  
   
--   Dowiedz się, jak analizować przechwycone informacje graficzne przy użyciu narzędzi programu Graphics Diagnostics. Zobacz [Przegląd](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
+- Dowiedz się, jak analizować przechwycone informacje graficzne przy użyciu narzędzi programu Graphics Diagnostics. Zobacz [Przegląd](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przechwytywanie informacji graficznych](../debugger/capturing-graphics-information.md)

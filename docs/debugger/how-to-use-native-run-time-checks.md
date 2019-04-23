@@ -37,15 +37,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1979757aa249569ddf5ce2f83f2e457e5066cee0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4ccf0fea80ddfcc7db0921512391f5063a8f2dad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712505"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100212"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Instrukcje: Korzystanie z macierzystego sprawdzania w czasie wykonywania
-W programie Visual C++ można użyć natywny [runtime_checks](/cpp/preprocessor/runtime-checks) do przechwytywania typowych błędów czasu wykonywania, takich jak:
+W elemencie wizualnym C++, możesz użyć natywnych [runtime_checks](/cpp/preprocessor/runtime-checks) do przechwytywania typowych błędów czasu wykonywania, takich jak:
 
 - Uszkodzenie wskaźnika stosu.
 
@@ -71,11 +71,11 @@ W programie Visual C++ można użyć natywny [runtime_checks](/cpp/preprocessor/
 
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Aby włączyć macierzyste sprawdzanie w czasie wykonywania w kompilacji debugowania
 
--   Użyj **usunęliśmy** opcji i łącze z wersji debugowania biblioteki wykonawczej języka C (/ MDd, na przykład).
+- Użyj **usunęliśmy** opcji i łącze z wersji debugowania biblioteki wykonawczej języka C (/ MDd, na przykład).
 
 ### <a name="to-modify-native-run-time-check-behavior"></a>Aby zmodyfikować zachowanie natywnych sprawdzenie czasu wykonywania
 
--   Użyj `runtime_checks` pragmy.
+- Użyj `runtime_checks` pragmy.
 
 ## <a name="see-also"></a>Zobacz też
 - [Debugowanie w programie Visual Studio](../debugger/index.md)

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25c5388c1b1d14efad9e76b2494f8da423d28979
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 1fff7555c17f4fdac43de2690f8e133cc32881db
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871666"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101233"
 ---
 # <a name="how-to-sign-office-solutions"></a>Instrukcje: Podpisywanie rozwiązań pakietu Office
   Jeśli utworzysz rozwiązanie, możesz udzielić zaufania do rozwiązania przy użyciu certyfikatu jako dowód. Możesz użyć tego samego certyfikatu dla wielu rozwiązań, a wszystkie rozwiązania pozostaną zaufane, nie dodatkowe aktualizacje zasad.
@@ -35,15 +35,15 @@ ms.locfileid: "54871666"
 
 ### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>Do podpisania rozwiązania do pakietu Office przy użyciu certyfikatu
 
-1.  Na **projektu** menu, kliknij przycisk _SolutionName_**właściwości**.
+1. Na **projektu** menu, kliknij przycisk _SolutionName_**właściwości**.
 
-2.  Kliknij przycisk **podpisywanie** kartę.
+2. Kliknij przycisk **podpisywanie** kartę.
 
-3.  Wybierz **Podpisz manifesty ClickOnce**.
+3. Wybierz **Podpisz manifesty ClickOnce**.
 
-4.  Znajdź certyfikat, klikając **wybierać Store** lub **wybierz z pliku** i przejdź do certyfikatu.
+4. Znajdź certyfikat, klikając **wybierać Store** lub **wybierz z pliku** i przejdź do certyfikatu.
 
-5.  Aby zweryfikować, że używany jest poprawny certyfikat, kliknij przycisk **więcej szczegółów** do wyświetlania informacji o certyfikacie.
+5. Aby zweryfikować, że używany jest poprawny certyfikat, kliknij przycisk **więcej szczegółów** do wyświetlania informacji o certyfikacie.
 
 ## <a name="see-also"></a>Zobacz także
 

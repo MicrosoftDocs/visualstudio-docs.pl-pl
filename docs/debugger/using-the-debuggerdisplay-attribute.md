@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b9c98411e378601280d36dbe4720864177d4019
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: af666497deb20f3c2d9125b4beb452f24cabbbd2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537640"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099896"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Polecić debugerowi, co pokazano przy użyciu atrybutu DebuggerDisplay (C#, Visual Basic F#, C++sposób niezamierzony)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> Kontroluje sposób wyświetlania obiektu, właściwość lub pole w oknach zmiennych debugera. Ten atrybut może dotyczyć typy delegatów, właściwości, pola i zestawy.
@@ -89,6 +89,7 @@ public sealed class MyClass
     }
 }
 ```
+
 ", Nq" sufiks informuje ewaluatora wyrażenia, aby usunąć znaki cudzysłowu, podczas wyświetlania wartości końcowej (nq = nie cudzysłowów).
 
 ## <a name="example"></a>Przykład
@@ -147,7 +148,7 @@ class MyHashtable
         hashtable = new Hashtable();
     }
 
-    private string DebuggerDisplay { get { return "Count = " + hashtable.Count); } }
+    private string DebuggerDisplay { get { return "Count = " + hashtable.Count; } }
 
     private class HashtableDebugView
     {

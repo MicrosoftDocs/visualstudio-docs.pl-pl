@@ -8,12 +8,12 @@ ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 52f9732bda3bf7ae6628ad834ee49210f739efca
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c4738caa4fac8596db5b92c6cafa1c0f370e0363
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946681"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102474"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Instrukcje: Konfiguracja funkcji emulacji sieci za pomocą ustawień testów w programie Visual Studio
 
@@ -60,25 +60,25 @@ Przed wykonaniem kroków w tej procedurze należy otworzyć Ustawienia testu z p
 
 ### <a name="to-configure-network-emulation-for-your-test-settings"></a>Aby skonfigurować emulację sieci ustawień testu
 
-1.  Wybierz rolę Aby używać do emulowania konkretnej sieci.
+1. Wybierz rolę Aby używać do emulowania konkretnej sieci.
 
     > [!NOTE]
     > Musisz skonfigurować kartę emulacji sieci tylko dla roli klienta lub roli serwera. Nie trzeba korzystać z karty dla obu ról. Adapter emuluje hałas sieci, który ma wpływ na komunikację między obiema rolami, tak aby nie trzeba go używać na obu. Jeśli nie jest konieczne, należy wybrać rolę klienta dla karty emulacji sieci, aby uniknąć dodatkowych obciążeń roli serwera.
 
-2.  Wybierz **emulacji sieci** , a następnie wybierz **Konfiguruj**.
+2. Wybierz **emulacji sieci** , a następnie wybierz **Konfiguruj**.
 
      Zostanie wyświetlone okno dialogowe konfigurowania emulacji sieci.
 
-3.  Wybierz strzałkę obok **wybierz profil sieci**i wybierz typ sieci, który chcesz emulować po uruchomieniu testu (na przykład **Cable-DSL 768Kps**).
+3. Wybierz strzałkę obok **wybierz profil sieci**i wybierz typ sieci, który chcesz emulować po uruchomieniu testu (na przykład **Cable-DSL 768Kps**).
 
     > [!WARNING]
     > Po uruchomieniu testów w prawdziwej sieci, która jest typu wolniejszego niż sieć, którą emulujesz, testy będą nadal działać w niższej szybkości sieci. Emulacja może tylko spowolnić środowisko sieciowe, nie go przyśpieszyć.
 
-4.  Jeśli dołączysz adapter danych diagnostycznych emulacji sieci w ustawieniach testu i zamierzasz używać go na komputerze lokalnym, następnie należy również powiązać sterownik emulacji sieci do jednej z kart sieciowych na komputerze. Sterownik emulacji sieci jest wymagana dla adaptera danych diagnostycznych emulacji sieciowej do funkcji. Sterownik emulacji sieci jest zainstalowany i powiązany z kartą sieciową na dwa sposoby:
+4. Jeśli dołączysz adapter danych diagnostycznych emulacji sieci w ustawieniach testu i zamierzasz używać go na komputerze lokalnym, następnie należy również powiązać sterownik emulacji sieci do jednej z kart sieciowych na komputerze. Sterownik emulacji sieci jest wymagana dla adaptera danych diagnostycznych emulacji sieciowej do funkcji. Sterownik emulacji sieci jest zainstalowany i powiązany z kartą sieciową na dwa sposoby:
 
-    -   **Sterownik emulacji sieci instalowany z programu Microsoft Visual Studio Test Agent:** Microsoft Visual Studio Test Agent może służyć zarówno komputerów zdalnych, jak i komputerze lokalnym. Po zainstalowaniu programu Visual Studio Test Agent, proces instalacji obejmuje krok konfiguracji, który wiąże sterownik emulacji sieci z kartą sieciową. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
+    - **Sterownik emulacji sieci instalowany z programu Microsoft Visual Studio Test Agent:** Microsoft Visual Studio Test Agent może służyć zarówno komputerów zdalnych, jak i komputerze lokalnym. Po zainstalowaniu programu Visual Studio Test Agent, proces instalacji obejmuje krok konfiguracji, który wiąże sterownik emulacji sieci z kartą sieciową. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
 
-    -   **Sterownik emulacji sieci instalowany z programu Microsoft Visual Studio Test Professional:** Podczas korzystania z emulacji sieci po raz pierwszy monit powiązanie sterownika emulacji sieci z kartą sieciową.
+    - **Sterownik emulacji sieci instalowany z programu Microsoft Visual Studio Test Professional:** Podczas korzystania z emulacji sieci po raz pierwszy monit powiązanie sterownika emulacji sieci z kartą sieciową.
 
     > [!TIP]
     > Można również zainstalować sterownik emulacji sieci z poziomu wiersza polecenia na komputerze lokalnym bez konieczności instalowania agenta testowego programu Visual Studio przy użyciu następującego polecenia: **VSTestConfig NETWORKEMULATION/Install**

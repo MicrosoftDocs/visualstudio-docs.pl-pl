@@ -9,12 +9,12 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fb820ccc72e0070f947e362def1da137d19d8494
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c884fd11c4c633164ed3283ca8d2830729e9250
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955599"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104346"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Instrukcje: Tworzenie raportów wydajności testu obciążenia przy użyciu programu Microsoft Excel
 
@@ -24,9 +24,9 @@ Można generować raporty testu obciążenia programu Microsoft Excel, które op
 
 Dostępne są dwa typy raportów testów obciążenia:
 
--   **Uruchom porównanie** tworzy zestaw raportów, który porównuje dane z dwóch wyniki testu obciążenia za pomocą tabel i wykresów słupkowych.
+- **Uruchom porównanie** tworzy zestaw raportów, który porównuje dane z dwóch wyniki testu obciążenia za pomocą tabel i wykresów słupkowych.
 
--   **Trend** możesz wygenerować analizy trendu na podstawie dwóch lub więcej wyników testu obciążenia. Wyniki są wyświetlane przy użyciu wykresów liniowych, ale dane są dostępne w raportach tabeli przestawnej.
+- **Trend** możesz wygenerować analizy trendu na podstawie dwóch lub więcej wyników testu obciążenia. Wyniki są wyświetlane przy użyciu wykresów liniowych, ale dane są dostępne w raportach tabeli przestawnej.
 
 > [!TIP]
 > Można również ręcznie utworzyć raporty w programie Microsoft Word przez kopiowanie i wklejanie danych z widoku podsumowania, widoku wykresów i widoku tabel. Zobacz [jak: Ręczne tworzenie raportu wydajności testu obciążenia przy użyciu programu Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).

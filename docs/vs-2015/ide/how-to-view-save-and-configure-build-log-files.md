@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6826a2f2618ee77944102245781a8df3b2a4596b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 496fcdf28f8ce9b0809988949d435c064734b508
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760060"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053573"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Instrukcje: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,23 +25,23 @@ Po skompilowaniu projektu w środowisku IDE programu Visual Studio można wyświ
   
 ### <a name="to-view-the-build-log-file-for-a-c-project"></a>Aby wyświetlić plik dziennika kompilacji dla projektu w języku C++  
   
-1.  W **Eksplorator Windows** lub **Eksploratora plików**, otwórz następujący plik: \\...\Visual Studio *wersji*\Projects\\  *ProjectName*\\*ProjectName*\Debug\\*ProjectName*txt  
+1. W **Eksplorator Windows** lub **Eksploratora plików**, otwórz następujący plik: \\...\Visual Studio *wersji*\Projects\\  *ProjectName*\\*ProjectName*\Debug\\*ProjectName*txt  
   
 ### <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Aby utworzyć plik dziennika kompilacji dla projektu kodu zarządzanego  
   
-1.  Na pasku menu wybierz **kompilacji**, **Kompiluj rozwiązanie**.  
+1. Na pasku menu wybierz **kompilacji**, **Kompiluj rozwiązanie**.  
   
-2.  W **dane wyjściowe** , wyróżnić informacje z kompilacji, a następnie skopiuj do Schowka.  
+2. W **dane wyjściowe** , wyróżnić informacje z kompilacji, a następnie skopiuj do Schowka.  
   
-3.  Otwórz Edytor tekstów, takiego jak Notatnik, wklej je do pliku, a następnie zapisz go.  
+3. Otwórz Edytor tekstów, takiego jak Notatnik, wklej je do pliku, a następnie zapisz go.  
   
 ### <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Aby zmienić ilość informacji zawartych w dzienniku kompilacji  
   
-1.  Na pasku menu wybierz **narzędzia**, **opcje**.  
+1. Na pasku menu wybierz **narzędzia**, **opcje**.  
   
-2.  Na **projekty i rozwiązania** wybierz **kompilowanie i uruchamianie** strony.  
+2. Na **projekty i rozwiązania** wybierz **kompilowanie i uruchamianie** strony.  
   
-3.  W **poziom szczegółowości danych wyjściowych kompilacji projektu programu MSBuild** , wybierz jedną z następujących wartości, a następnie wybierz **OK** przycisku.  
+3. W **poziom szczegółowości danych wyjściowych kompilacji projektu programu MSBuild** , wybierz jedną z następujących wartości, a następnie wybierz **OK** przycisku.  
   
     |Poziom szczegółowości|Opis|  
     |---------------------|-----------------|  

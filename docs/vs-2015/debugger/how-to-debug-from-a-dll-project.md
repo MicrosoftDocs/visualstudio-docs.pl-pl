@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4a9a3e7cd63e5a485063789d9f9eeaf1227d1b5d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 360384118f5c2d02801b63b8836800eca5e26d78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782947"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102253"
 ---
 # <a name="how-to-debug-from-a-dll-project"></a>Instrukcje: Debugowanie z projektu DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,35 +39,35 @@ Aby rozpocząć debugowanie z projektu DLL, należy określić aplikacji wywołu
   
 ### <a name="to-specify-the-calling-application-in-a-c-project"></a>Aby określić aplikacji wywołującej w projekcie C++.  
   
-1.  Kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz **właściwości**. Przejdź do **debugowania** kartę.  
+1. Kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz **właściwości**. Przejdź do **debugowania** kartę.  
   
-2.  Upewnij się, że **konfiguracji** polu w górnej części okna jest ustawiana **debugowania**.  
+2. Upewnij się, że **konfiguracji** polu w górnej części okna jest ustawiana **debugowania**.  
   
-3.  Przejdź do **właściwości konfiguracji / debugowanie**.  
+3. Przejdź do **właściwości konfiguracji / debugowanie**.  
   
-4.  W **debuger do uruchomienia** wybierz **lokalny debuger Windows** lub **zdalny debuger Windows**.  
+4. W **debuger do uruchomienia** wybierz **lokalny debuger Windows** lub **zdalny debuger Windows**.  
   
-5.  W **polecenia** lub **polecenia zdalnego** Dodaj nazwę w pełni kwalifikowaną ścieżkę aplikacji.  
+5. W **polecenia** lub **polecenia zdalnego** Dodaj nazwę w pełni kwalifikowaną ścieżkę aplikacji.  
   
-6.  Dodaj argumenty programu niezbędne do **argumenty wiersza polecenia** pole.  
+6. Dodaj argumenty programu niezbędne do **argumenty wiersza polecenia** pole.  
   
 ### <a name="to-specify-the-calling-application-in-a-c-or-visual-basic-project"></a>Aby określić aplikacji wywołującej w projekcie języka C# lub Visual Basic  
   
-1.  Kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz **właściwości**. Przejdź do **debugowania** kartę.  
+1. Kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz **właściwości**. Przejdź do **debugowania** kartę.  
   
      Wybierz **uruchomienia programu zewnętrznego**i Dodaj nazwę w pełni kwalifikowaną ścieżkę program do uruchomienia.  
   
      Jeśli musisz dodać argumenty wiersza polecenia programu zewnętrznego, dodaj je w **argumenty wiersza polecenia** pola.  
   
-2.  Można również wywołać aplikacji jako adres URL. (Można to zrobić, Jeśli debugujesz zarządzaną bibliotekę DLL używane przez lokalnej aplikacji ASP.NET.)  
+2. Można również wywołać aplikacji jako adres URL. (Można to zrobić, Jeśli debugujesz zarządzaną bibliotekę DLL używane przez lokalnej aplikacji ASP.NET.)  
   
      W obszarze **Akcja uruchamiania**, wybierz opcję **uruchamiania przeglądarki w adresie URL:** przycisk radiowy, a następnie wypełnij adresu URL.  
   
 ### <a name="to-start-debugging-from-the-dll-project"></a>Aby rozpocząć debugowanie z projektu DLL  
   
-1.  Ustaw punkty przerwania, zgodnie z potrzebami.  
+1. Ustaw punkty przerwania, zgodnie z potrzebami.  
   
-2.  Rozpocznij debugowanie (naciśnij klawisz F5, kliknij zieloną strzałkę lub kliknij **debugowania / uruchamiania debugowania**).  
+2. Rozpocznij debugowanie (naciśnij klawisz F5, kliknij zieloną strzałkę lub kliknij **debugowania / uruchamiania debugowania**).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie projektów DLL](../debugger/debugging-dll-projects.md)   

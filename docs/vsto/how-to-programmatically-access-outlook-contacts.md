@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c46df4218a12c0f9a155567aeee0c007d0a19c53
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a9fc9cf214a8aebd663a7de29528790aa3cc0b46
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598209"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104229"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>Instrukcje: Programowy dostęp do kontaktów programu Outlook
   W tym przykładzie wyszukuje wszystkie kontakty, w których ostatni nazwy zawierają ciąg wyszukiwania.
@@ -32,7 +32,7 @@ ms.locfileid: "56598209"
 ## <a name="compile-the-code"></a>Skompilować kod
  Ten przykład wymaga:
 
--   Kontakty, w których ostatni nazwy zawierają ciąg "**Na"** (na przykład Tzipi Butnaru) w **kontakty** folderu.
+- Kontakty, w których ostatni nazwy zawierają ciąg "**Na"** (na przykład Tzipi Butnaru) w **kontakty** folderu.
 
 ## <a name="see-also"></a>Zobacz także
 - [Praca z elementami kontaktów](../vsto/working-with-contact-items.md)

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e13de2f53622923aef1d4870de30be1afdf891ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dc2b1c25f9b4cf9bc777eefd0c95985a534799b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942911"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058139"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Instrukcje: Tworzenie metod DataContext zamapowanych na procedury składowane i funkcje (O/R Designer)
 
@@ -33,17 +33,17 @@ Możesz utworzyć <xref:System.Data.Linq.DataContext> metody, przeciągając prz
 
 ### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>Aby utworzyć element DataContext metody, które zwracają automatycznie wygenerowane typy
 
-1.  W **Eksploratora serwera** lub **Eksplorator bazy danych**, rozwiń węzeł **procedur składowanych** węzeł bazy danych, z którym pracujesz.
+1. W **Eksploratora serwera** lub **Eksplorator bazy danych**, rozwiń węzeł **procedur składowanych** węzeł bazy danych, z którym pracujesz.
 
-2.  Zlokalizuj odpowiednią procedurę składowaną i przeciągnij go na pustym obszarem **O/R Designer**.
+2. Zlokalizuj odpowiednią procedurę składowaną i przeciągnij go na pustym obszarem **O/R Designer**.
 
      <xref:System.Data.Linq.DataContext> Metody jest tworzone z automatycznie wygenerowanego zwracany typ i pojawia się w **metody** okienka.
 
 ### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>Aby utworzyć metody DataContext, które mają zwracany typ klasę jednostki
 
-1.  W **Eksploratora serwera** lub **Eksplorator bazy danych**, rozwiń węzeł **procedur składowanych** węzeł bazy danych, z którym pracujesz.
+1. W **Eksploratora serwera** lub **Eksplorator bazy danych**, rozwiń węzeł **procedur składowanych** węzeł bazy danych, z którym pracujesz.
 
-2.  Zlokalizuj odpowiednią procedurę składowaną i przeciągnij go do istniejącej klasy jednostki w **O/R Designer**.
+2. Zlokalizuj odpowiednią procedurę składowaną i przeciągnij go do istniejącej klasy jednostki w **O/R Designer**.
 
      <xref:System.Data.Linq.DataContext> Metody jest tworzony z typem zwracanym klasy wybranej jednostki i pojawia się w **metody** okienka.
 

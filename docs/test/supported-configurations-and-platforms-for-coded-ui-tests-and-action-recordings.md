@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e0bb62bb8b7ea64bc01e18e47974d4035b9e1bd1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 43153f86ca9ee9a26465ad910b6918aee5292a87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666693"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103405"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji
 
@@ -27,7 +27,7 @@ W poniższej tabeli wymieniono obsługiwane konfiguracje i platformy dla kodowan
 
 **Wymagania**
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
 ## <a name="supported-configurations"></a>Obsługiwane konfiguracje
 

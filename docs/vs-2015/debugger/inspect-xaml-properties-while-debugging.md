@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 010f9b7b0d77bca8bd264ab8a3561743c616dc1f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 52d978472f057359cb2b1e0375f2d7ba524d1925
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779799"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101434"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Sprawdzanie właściwości XAML podczas debugowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,10 +103,10 @@ private void button_Click(object sender, RoutedEventArgs e)
 ## <a name="using-xaml-tools-with-running-applications"></a>Używanie narzędzi XAML z uruchamiania aplikacji  
  Można użyć tych narzędzi XAML, nawet wtedy, gdy nie masz kodu źródłowego. Po dołączeniu do uruchomionej aplikacji XAML, możesz użyć **dynamiczne drzewo wizualne** od elementów interfejsu użytkownika w tej aplikacji za. Oto przykład, przy użyciu tej samej aplikacji WPF testu, którego używaliśmy wcześniej.  
   
-1.  Rozpocznij **TestXaml** aplikacji w konfiguracji wydania. Nie można dołączyć do procesu, który jest uruchomiony w **debugowania** konfiguracji.  
+1. Rozpocznij **TestXaml** aplikacji w konfiguracji wydania. Nie można dołączyć do procesu, który jest uruchomiony w **debugowania** konfiguracji.  
   
-2.  Otwórz drugie wystąpienie programu Visual Studio, a następnie kliknij przycisk **debugowanie / dołączanie do procesu**. Znajdź **TestXaml.exe** na liście dostępnych procesów, a następnie kliknij przycisk **Dołącz**.  
+2. Otwórz drugie wystąpienie programu Visual Studio, a następnie kliknij przycisk **debugowanie / dołączanie do procesu**. Znajdź **TestXaml.exe** na liście dostępnych procesów, a następnie kliknij przycisk **Dołącz**.  
   
-3.  Uruchamiania aplikacji.  
+3. Uruchamiania aplikacji.  
   
-4.  W drugim wystąpieniu programu Visual Studio, otwórz **dynamiczne drzewo wizualne** (**debugowanie / Windows / dynamiczne drzewo wizualne**). Powinien zostać wyświetlony **TestXaml** elementy interfejsu użytkownika, a powinien móc manipulować nimi, jak podczas debugowania aplikacji bezpośrednio.
+4. W drugim wystąpieniu programu Visual Studio, otwórz **dynamiczne drzewo wizualne** (**debugowanie / Windows / dynamiczne drzewo wizualne**). Powinien zostać wyświetlony **TestXaml** elementy interfejsu użytkownika, a powinien móc manipulować nimi, jak podczas debugowania aplikacji bezpośrednio.

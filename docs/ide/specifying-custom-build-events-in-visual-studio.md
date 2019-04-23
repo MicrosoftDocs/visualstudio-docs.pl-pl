@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66feaa25b9910a48e192e80798e50d80d861fb08
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af4ac9e8dad60c28e5017c09f1f94ed7aaa00dfd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940610"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101942"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Określanie niestandardowych zdarzeń kompilacji w programie Visual Studio
 
@@ -24,11 +24,11 @@ Określając to zdarzenie kompilacji niestandardowej, może automatycznie urucho
 
  Aby uzyskać szczegółowe informacje o języku programowania, którego używasz zobacz następujące tematy:
 
--   Visual Basic —[jak: Określanie zdarzeń kompilacji (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+- Visual Basic —[jak: Określanie zdarzeń kompilacji (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   C#i F#—[jak: Określanie zdarzeń kompilacji (C#)](../ide/how-to-specify-build-events-csharp.md).
+- C#i F#—[jak: Określanie zdarzeń kompilacji (C#)](../ide/how-to-specify-build-events-csharp.md).
 
--   Visual C++ —[określanie zdarzeń kompilacji](/cpp/ide/specifying-build-events).
+- Visual C++ —[określanie zdarzeń kompilacji](/cpp/ide/specifying-build-events).
 
 ## <a name="syntax"></a>Składnia
 

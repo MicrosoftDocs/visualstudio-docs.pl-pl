@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a4f123c6dfbe7d3f194c3f07c5ed685cf5cc862c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8f41aa8c074f724976adabaa99df0e8ca0064fa3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753044"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103306"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Skonfiguruj zaporę Windows do zdalnego debugowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,15 +44,15 @@ W tym temacie opisano sposób skonfigurowania zapory w celu włączenia debugowa
 ## <a name="to-configure-windows-firewall-on-the-visual-studio-computer"></a>Aby skonfigurować zaporę Windows na komputerze programu Visual Studio  
  Instrukcje dotyczące konfigurowania zapory Windows się nieznacznie różnić w różnych systemach operacyjnych. Windows 7 lub Windows Server 2008, słowo **program** jest używany; w systemu Windows 8/8.1, Windows 10 i Windows Server 2012, słowo **aplikacji** jest używany.  W poniższych krokach używamy słowa **aplikacji**.  
   
-1.  Otwórz stronę zapory Windows. (W **Start** polu wyszukiwania menu, typ **zapory Windows**).  
+1. Otwórz stronę zapory Windows. (W **Start** polu wyszukiwania menu, typ **zapory Windows**).  
   
-2.  Kliknij przycisk **Zezwalaj aplikacji lub funkcję przez zaporę Windows**.  
+2. Kliknij przycisk **Zezwalaj aplikacji lub funkcję przez zaporę Windows**.  
   
-3.  W **dozwolone aplikacje i funkcje** listy, wyszukiwanie **Visual Studio zdalnego debugera odnajdywania**. Jeśli ta opcja jest wyświetlana, upewnij się, że jest zaznaczone, a także wybrano jeden lub więcej typów sieci.  
+3. W **dozwolone aplikacje i funkcje** listy, wyszukiwanie **Visual Studio zdalnego debugera odnajdywania**. Jeśli ta opcja jest wyświetlana, upewnij się, że jest zaznaczone, a także wybrano jeden lub więcej typów sieci.  
   
-4.  Jeśli **Visual Studio zdalnego debugera odnajdywania** jest wymieniony, kliknij przycisk **Zezwalaj na inną aplikację**. Jeśli nadal nie widać go w **Dodaj aplikację** okna, kliknij przycisk **Przeglądaj** i przejdź do  **\<katalogu instalacyjnego programu Visual Studio > \Common7\IDE\Remote debugera**. Znajdź odpowiedni folder dla aplikacji (x86, x64, Appx), a następnie wybierz pozycję **msvsmon.exe**. Następnie kliknij przycisk **Dodaj**.  
+4. Jeśli **Visual Studio zdalnego debugera odnajdywania** jest wymieniony, kliknij przycisk **Zezwalaj na inną aplikację**. Jeśli nadal nie widać go w **Dodaj aplikację** okna, kliknij przycisk **Przeglądaj** i przejdź do  **\<katalogu instalacyjnego programu Visual Studio > \Common7\IDE\Remote debugera**. Znajdź odpowiedni folder dla aplikacji (x86, x64, Appx), a następnie wybierz pozycję **msvsmon.exe**. Następnie kliknij przycisk **Dodaj**.  
   
-5.  W **dozwolone aplikacje i funkcje** listy wybierz **zdalny Monitor debugowania Visual Studio**. Zaznacz jeden lub więcej typów sieci (**domeny głównej/pracy (prywatny), publiczne**) ma monitor debugera zdalnego nawiązać połączenia z usługą. Typy mogą zawierać sieci, do którego jest podłączony komputer z programem Visual Studio.  
+5. W **dozwolone aplikacje i funkcje** listy wybierz **zdalny Monitor debugowania Visual Studio**. Zaznacz jeden lub więcej typów sieci (**domeny głównej/pracy (prywatny), publiczne**) ma monitor debugera zdalnego nawiązać połączenia z usługą. Typy mogą zawierać sieci, do którego jest podłączony komputer z programem Visual Studio.  
   
 ## <a name="to-open-a-port-on-the-visual-studio-computer-to-enable-discovery"></a>Aby otworzyć port na komputerze programu Visual Studio, aby włączyć odnajdywanie  
  Musisz zezwolić na porcie UDP 3702 przychodzących umożliwić wykrycie komputerów uruchomienie zdalnego debugera. Aby dodać go, zobacz jak konfigurowanie portów w zaporze.  
@@ -64,15 +64,15 @@ W tym temacie opisano sposób skonfigurowania zapory w celu włączenia debugowa
   
  Instrukcje dotyczące konfigurowania zapory Windows się nieznacznie różnić w różnych systemach operacyjnych. Windows 7 lub Windows Server 2008, słowo **program** jest używany; w systemu Windows 8/8.1, Windows 10 i Windows Server 2012, słowo **aplikacji** jest używany.  W poniższych krokach używamy słowa **aplikacji**.  
   
-1.  Otwórz stronę zapory Windows. (Na **Start** polu wyszukiwania menu, typ **zapory Windows**.)  
+1. Otwórz stronę zapory Windows. (Na **Start** polu wyszukiwania menu, typ **zapory Windows**.)  
   
-2.  Kliknij przycisk **Zezwalaj aplikacji lub funkcję przez zaporę Windows**.  
+2. Kliknij przycisk **Zezwalaj aplikacji lub funkcję przez zaporę Windows**.  
   
-3.  W **dozwolone aplikacje i funkcje** listy, wyszukiwanie **zdalny Monitor debugowania Visual Studio**. Jeśli ta opcja jest wyświetlana, upewnij się, że jest zaznaczone, a także wybrano jeden lub więcej typów sieci.  
+3. W **dozwolone aplikacje i funkcje** listy, wyszukiwanie **zdalny Monitor debugowania Visual Studio**. Jeśli ta opcja jest wyświetlana, upewnij się, że jest zaznaczone, a także wybrano jeden lub więcej typów sieci.  
   
-4.  Jeśli **zdalny Monitor debugowania Visual Studio** jest wymieniony, kliknij przycisk **Zezwalaj na inną aplikację**. Jeśli nadal nie widać go w **okno aplikacji Dodaj**, kliknij przycisk **Przeglądaj** i przejdź do  **\<katalogu instalacyjnego programu Visual Studio > \Common7\IDE\Remote debugera**. Znajdź odpowiedni folder dla aplikacji (x86, x64, Appx), a następnie wybierz pozycję **msvsmon.exe**. Następnie kliknij przycisk **Dodaj**.  
+4. Jeśli **zdalny Monitor debugowania Visual Studio** jest wymieniony, kliknij przycisk **Zezwalaj na inną aplikację**. Jeśli nadal nie widać go w **okno aplikacji Dodaj**, kliknij przycisk **Przeglądaj** i przejdź do  **\<katalogu instalacyjnego programu Visual Studio > \Common7\IDE\Remote debugera**. Znajdź odpowiedni folder dla aplikacji (x86, x64, Appx), a następnie wybierz pozycję **msvsmon.exe**. Następnie kliknij przycisk **Dodaj**.  
   
-5.  W **dozwolone aplikacje** listy wybierz **zdalny Monitor debugowania Visual Studio**. Zaznacz jeden lub więcej typów sieci (**domeny głównej/pracy (prywatny), publiczne**) ma monitor debugera zdalnego nawiązać połączenia z usługą. Typy mogą zawierać sieci, do którego jest podłączony komputer z programem Visual Studio.  
+5. W **dozwolone aplikacje** listy wybierz **zdalny Monitor debugowania Visual Studio**. Zaznacz jeden lub więcej typów sieci (**domeny głównej/pracy (prywatny), publiczne**) ma monitor debugera zdalnego nawiązać połączenia z usługą. Typy mogą zawierać sieci, do którego jest podłączony komputer z programem Visual Studio.  
   
 ## <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>Porty na komputerze zdalnym, na które Włączanie debugowania zdalnego  
   
@@ -95,21 +95,21 @@ W tym temacie opisano sposób skonfigurowania zapory w celu włączenia debugowa
   
 ## <a name="how-to-configure-ports-in-windows-firewall"></a>Jak skonfigurować porty w Zaporze Windows  
   
-1.  Na **Start** menu, wyszukaj **Zapora Windows z zabezpieczeniami zaawansowanymi**.  
+1. Na **Start** menu, wyszukaj **Zapora Windows z zabezpieczeniami zaawansowanymi**.  
   
-2.  Kliknij przycisk **reguły ruchu przychodzącego** lub **reguł dla ruchu wychodzącego** a następnie kliknij przycisk **nową regułę** w **akcje** listy.  
+2. Kliknij przycisk **reguły ruchu przychodzącego** lub **reguł dla ruchu wychodzącego** a następnie kliknij przycisk **nową regułę** w **akcje** listy.  
   
-3.  Na **typ reguły** wybierz opcję **portu** a następnie kliknij przycisk **dalej**.  
+3. Na **typ reguły** wybierz opcję **portu** a następnie kliknij przycisk **dalej**.  
   
-4.  Na **protokół i porty** wybierz portu i protokołu (TCP lub UDP). Wybierz **określone porty lokalne** i wprowadź numery portów, które chcesz włączyć dla protokołu. Oddzielne numery przecinkami. Następnie kliknij przycisk **Dalej**.  
+4. Na **protokół i porty** wybierz portu i protokołu (TCP lub UDP). Wybierz **określone porty lokalne** i wprowadź numery portów, które chcesz włączyć dla protokołu. Oddzielne numery przecinkami. Następnie kliknij przycisk **Dalej**.  
   
-5.  Na **akcji** wybierz opcję **Zezwalaj na połączenie** a następnie kliknij przycisk **dalej**.  
+5. Na **akcji** wybierz opcję **Zezwalaj na połączenie** a następnie kliknij przycisk **dalej**.  
   
-6.  Na **profilu** wybierz jeden lub więcej typów sieci, aby włączyć za pośrednictwem portu usługi. Wybranego typu musi zawierać sieci, do którego jest podłączony komputera zdalnego. Następnie kliknij przycisk **Dalej**.  
+6. Na **profilu** wybierz jeden lub więcej typów sieci, aby włączyć za pośrednictwem portu usługi. Wybranego typu musi zawierać sieci, do którego jest podłączony komputera zdalnego. Następnie kliknij przycisk **Dalej**.  
   
-7.  Na **nazwa** stronie, wpisz nazwę reguły, a następnie kliknij **Zakończ**.  
+7. Na **nazwa** stronie, wpisz nazwę reguły, a następnie kliknij **Zakończ**.  
   
-8.  Powinien zostać wyświetlony nową regułę w **reguły ruchu przychodzącego** lub **reguł dla ruchu wychodzącego** listy.  
+8. Powinien zostać wyświetlony nową regułę w **reguły ruchu przychodzącego** lub **reguł dla ruchu wychodzącego** listy.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie zdalne](../debugger/remote-debugging.md)

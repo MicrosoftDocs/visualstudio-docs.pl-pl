@@ -8,11 +8,11 @@ ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
 ms.openlocfilehash: fbd6f51ee2a4db7407bb96dff82e31d6dca7389d
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856122"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053646"
 ---
 # <a name="install-a-preview-or-update-for-visual-studio-for-mac"></a>Zainstaluj wersję zapoznawczą lub aktualizacji dla programu Visual Studio dla komputerów Mac
 

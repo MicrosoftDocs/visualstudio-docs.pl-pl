@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88903c1370219976bca6e8418c3254d048db51d2
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e9dc571576346aa246452cdebf0a147468d6dfea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324724"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100927"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Instrukcje: Określanie zdarzeń kompilacji (Visual Basic)
 
@@ -34,13 +34,13 @@ Tworzenie zdarzenia są określone w **zdarzenia kompilacji** dostępne okno dia
 
 ### <a name="to-specify-a-build-event"></a>Aby określić zdarzenia kompilacji
 
-1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
+1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
 
-2.  Kliknij przycisk **skompilować** kartę.
+2. Kliknij przycisk **skompilować** kartę.
 
-3.  Kliknij przycisk **zdarzenia kompilacji** przycisk, aby otworzyć **zdarzenia kompilacji** okno dialogowe.
+3. Kliknij przycisk **zdarzenia kompilacji** przycisk, aby otworzyć **zdarzenia kompilacji** okno dialogowe.
 
-4.  Wprowadź argumenty wiersza polecenia dla akcji kompilacji przed lub po kompilacji, a następnie kliknij przycisk **OK**.
+4. Wprowadź argumenty wiersza polecenia dla akcji kompilacji przed lub po kompilacji, a następnie kliknij przycisk **OK**.
 
     > [!NOTE]
     > Dodaj `call` instrukcji przed poleceniami wszystkich wykonywanych po kompilacji, które są uruchamiane *.bat* plików. Na przykład `call C:\MyFile.bat` lub `call C:\MyFile.bat call C:\MyFile2.bat`.
@@ -125,14 +125,14 @@ Poniższa procedura pokazuje, jak ustawić wersję minimalną wersję systemu op
 
 ### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Aby wywołać zdarzenie po kompilacji, aby zmienić manifest aplikacji
 
-1.  Tworzenie aplikacji Windows dla projektu, które mają zostać opublikowane. Z **pliku** menu, kliknij przycisk **New**, a następnie kliknij przycisk **projektu**.
+1. Tworzenie aplikacji Windows dla projektu, które mają zostać opublikowane. Z **pliku** menu, kliknij przycisk **New**, a następnie kliknij przycisk **projektu**.
 
-2.  W **nowy projekt** dialogowym **języka Visual Basic** węzła, wybierz opcję **pulpitu Windows** a następnie **aplikacja formularzy Windows** szablonu. Nadaj projektowi nazwę `VBWinApp`.
-3.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
+2. W **nowy projekt** dialogowym **języka Visual Basic** węzła, wybierz opcję **pulpitu Windows** a następnie **aplikacja formularzy Windows** szablonu. Nadaj projektowi nazwę `VBWinApp`.
+3. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
 
-4.  W **projektanta projektu**, przejdź do **Publikuj** strony, a następnie ustaw **publikowania lokalizacji** do *C:\TEMP*.
+4. W **projektanta projektu**, przejdź do **Publikuj** strony, a następnie ustaw **publikowania lokalizacji** do *C:\TEMP*.
 
-5.  Opublikuj projekt, klikając **Publikuj teraz**.
+5. Opublikuj projekt, klikając **Publikuj teraz**.
 
      Plik manifestu zostanie utworzone i umieścić w *C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest*. Aby wyświetlić manifest, kliknij prawym przyciskiem myszy plik, a następnie kliknij przycisk **Otwórz za pomocą**, następnie kliknij przycisk **wybierz program, z listy**, a następnie kliknij przycisk **Notatnik**.
 
@@ -142,9 +142,9 @@ Poniższa procedura pokazuje, jak ustawić wersję minimalną wersję systemu op
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6.  W **projektanta projektu**, przejdź do **skompilować** kartę, a następnie kliknij przycisk **zdarzenia kompilacji** przycisk, aby otworzyć **zdarzenia kompilacji** okno dialogowe.
+6. W **projektanta projektu**, przejdź do **skompilować** kartę, a następnie kliknij przycisk **zdarzenia kompilacji** przycisk, aby otworzyć **zdarzenia kompilacji** okno dialogowe.
 
-7.  W **wiersz polecenia zdarzenia po kompilacji** wprowadź następujące polecenie:
+7. W **wiersz polecenia zdarzenia po kompilacji** wprowadź następujące polecenie:
 
      `C:\TEMP\ChangeOSVersionVB.exe "$(TargetPath).manifest" 5.1.2600.0`
 
@@ -152,7 +152,7 @@ Poniższa procedura pokazuje, jak ustawić wersję minimalną wersję systemu op
 
      `$(TargetPath)` — Makro określa pełną ścieżkę do pliku wykonywalnego tworzona. W związku z tym *.manifest $(TargetPath)* określą manifestem aplikacji utworzonym w *bin* katalogu. Publikowanie skopiuje tego manifestu do lokalizacji publikowania, które zostały ustawione wcześniej.
 
-8.  Opublikuj projekt ponownie. Przejdź do **Publikuj** strony, a następnie kliknij przycisk **Publikuj teraz**.
+8. Opublikuj projekt ponownie. Przejdź do **Publikuj** strony, a następnie kliknij przycisk **Publikuj teraz**.
 
      Ponownie wyświetlić manifest. Aby wyświetlić manifest, przejdź do katalogu publikowania, kliknij prawym przyciskiem myszy plik, a następnie kliknij przycisk **Otwórz za pomocą** i następnie **wybierz program, z listy**, a następnie kliknij przycisk **Notatnik**.
 

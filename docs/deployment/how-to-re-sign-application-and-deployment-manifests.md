@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03606c1844ba058c5129affb5776cdc0a89849be
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e934832f20ea7ab11484cdeb345f989aa842e06d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610648"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097027"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Instrukcje: Ponowne podpisywanie manifestów aplikacji i wdrożenia
 Po wprowadzeniu zmian do właściwości wdrożenia w manifeście aplikacji dla aplikacji Windows Forms, aplikacji Windows Presentation Foundation (xbap) lub rozwiązań pakietu Office, musisz ją ponownie podpisać zarówno aplikację i manifesty wdrożenia za pomocą certyfikat. Ten proces pozwala upewnić się, że zmodyfikowany pliki nie są zainstalowane na komputerach użytkowników końcowych.
@@ -35,11 +35,11 @@ Po wprowadzeniu zmian do właściwości wdrożenia w manifeście aplikacji dla a
 
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Ponowne podpisywanie aplikacji i wdrażania manifestów za pomocą Mage.exe
 
-1.  Otwórz **Visual Studio Command Prompt** okna.
+1. Otwórz **Visual Studio Command Prompt** okna.
 
-2.  Zmień katalogi na folder, który zawiera pliki manifestu, które chcesz się zalogować.
+2. Zmień katalogi na folder, który zawiera pliki manifestu, które chcesz się zalogować.
 
-3.  Wpisz następujące polecenie, aby utworzyć plik manifestu aplikacji. Zastąp *ManifestFileName* z nazwą pliku manifestu, plus rozszerzenie. Zastąp *certyfikatu* ze ścieżką względną lub w pełni kwalifikowana plik certyfikatu i Zastąp *hasło* hasło dla certyfikatu.
+3. Wpisz następujące polecenie, aby utworzyć plik manifestu aplikacji. Zastąp *ManifestFileName* z nazwą pliku manifestu, plus rozszerzenie. Zastąp *certyfikatu* ze ścieżką względną lub w pełni kwalifikowana plik certyfikatu i Zastąp *hasło* hasło dla certyfikatu.
 
     ```cmd
     mage -sign ManifestFileName.manifest -CertFile Certificate -Password Password
@@ -53,7 +53,7 @@ Po wprowadzeniu zmian do właściwości wdrożenia w manifeście aplikacji dla a
     mage -sign WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-4.  Wpisz następujące polecenie, aby zaktualizować i podpisać plik manifestu wdrażania, zastępując nazw zastępczych, jak w poprzednim kroku.
+4. Wpisz następujące polecenie, aby zaktualizować i podpisać plik manifestu wdrażania, zastępując nazw zastępczych, jak w poprzednim kroku.
 
     ```cmd
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password
@@ -67,20 +67,20 @@ Po wprowadzeniu zmian do właściwości wdrożenia w manifeście aplikacji dla a
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-5.  Opcjonalnie, skopiuj manifest wdrażania wzorca (*publikowania\\\<nazwa_aplikacji > .application*) do katalogu wdrażania wersji (*pliki publish\Application\\ \<nazwa_aplikacji > _\<wersji >*).
+5. Opcjonalnie, skopiuj manifest wdrażania wzorca (*publikowania\\\<nazwa_aplikacji > .application*) do katalogu wdrażania wersji (*pliki publish\Application\\ \<nazwa_aplikacji > _\<wersji >*).
 
 ## <a name="update-and-re-sign-the-application-and-deployment-manifests"></a>Aktualizowanie i ponowne podpisywanie manifestów aplikacji i wdrożenia
  W tej procedurze założono, że zostały już wprowadzone zmiany do pliku manifestu aplikacji (*.manifest*), ale istnieją inne pliki, które zostały zaktualizowane. Podczas aktualizacji plików skrótu, który reprezentuje plik również musi zostać zaktualizowany.
 
 #### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Aktualizowanie i ponowne podpisywanie aplikacji i wdrażania manifestów za pomocą Mage.exe
 
-1.  Otwórz **Visual Studio Command Prompt** okna.
+1. Otwórz **Visual Studio Command Prompt** okna.
 
-2.  Zmień katalogi na folder, który zawiera pliki manifestu, które chcesz się zalogować.
+2. Zmień katalogi na folder, który zawiera pliki manifestu, które chcesz się zalogować.
 
-3.  Usuń *.deploy* rozszerzenie pliku z plików w Publikuj dane wyjściowe folderu.
+3. Usuń *.deploy* rozszerzenie pliku z plików w Publikuj dane wyjściowe folderu.
 
-4.  Wpisz następujące polecenie, aby zaktualizować manifest aplikacji przy użyciu nowych skrótów do zaktualizowanych plików i podpisać plik manifestu aplikacji. Zastąp *ManifestFileName* z nazwą pliku manifestu, plus rozszerzenie. Zastąp *certyfikatu* ze ścieżką względną lub w pełni kwalifikowana plik certyfikatu i Zastąp *hasło* hasło dla certyfikatu.
+4. Wpisz następujące polecenie, aby zaktualizować manifest aplikacji przy użyciu nowych skrótów do zaktualizowanych plików i podpisać plik manifestu aplikacji. Zastąp *ManifestFileName* z nazwą pliku manifestu, plus rozszerzenie. Zastąp *certyfikatu* ze ścieżką względną lub w pełni kwalifikowana plik certyfikatu i Zastąp *hasło* hasło dla certyfikatu.
 
     ```cmd
     mage -update ManifestFileName.manifest -CertFile Certificate -Password Password
@@ -94,7 +94,7 @@ Po wprowadzeniu zmian do właściwości wdrożenia w manifeście aplikacji dla a
     mage -update WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-5.  Wpisz następujące polecenie, aby zaktualizować i podpisać plik manifestu wdrażania, zastępując nazw zastępczych, jak w poprzednim kroku.
+5. Wpisz następujące polecenie, aby zaktualizować i podpisać plik manifestu wdrażania, zastępując nazw zastępczych, jak w poprzednim kroku.
 
     ```cmd
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password
@@ -108,9 +108,9 @@ Po wprowadzeniu zmian do właściwości wdrożenia w manifeście aplikacji dla a
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-6.  Dodaj *.deploy* rozszerzenie pliku do plików, z wyjątkiem pliki manifestu aplikacji i wdrożenia.
+6. Dodaj *.deploy* rozszerzenie pliku do plików, z wyjątkiem pliki manifestu aplikacji i wdrożenia.
 
-7.  Opcjonalnie, skopiuj manifest wdrażania wzorca (*publikowania\\\<nazwa_aplikacji > .application*) do katalogu wdrażania wersji (*pliki publish\Application\\ \<nazwa_aplikacji > _\<wersji >*).
+7. Opcjonalnie, skopiuj manifest wdrażania wzorca (*publikowania\\\<nazwa_aplikacji > .application*) do katalogu wdrażania wersji (*pliki publish\Application\\ \<nazwa_aplikacji > _\<wersji >*).
 
 ## <a name="see-also"></a>Zobacz także
 - [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)

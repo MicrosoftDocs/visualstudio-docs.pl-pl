@@ -19,27 +19,27 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1131f6d569d01787d26bea7dde1c993401ce9580
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: db550b2a99f12190cac0bde74859191c2943b2d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670176"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102761"
 ---
 # <a name="add-new-data-sources"></a>Dodawanie nowych źródeł danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W kontekście programu .NET data tools w programie Visual Studio termin *źródła danych* odwołuje się do obiektów platformy .NET, połączyć się z magazynem danych, które udostępniają dane do aplikacji .NET. Projektantów programu Visual Studio mogą wykorzystywać dane wyjściowe źródła danych, aby wygenerować standardowy kod, który powiąże dane do formularzy podczas przeciągania i upuszczania obiektów bazy danych z **źródeł danych** okna. Tego rodzaju źródła danych może być:  
   
--   Klasa w modelu Entity Framework, który jest skojarzony z pewnego rodzaju bazy danych.  
+- Klasa w modelu Entity Framework, który jest skojarzony z pewnego rodzaju bazy danych.  
   
--   Zestaw danych, który jest skojarzony z pewnego rodzaju bazy danych.  
+- Zestaw danych, który jest skojarzony z pewnego rodzaju bazy danych.  
   
--   Klasa, która reprezentuje usługę sieciową, takich jak usługi danych usługi Windows Communication Foundation (WCF) lub usługi REST.  
+- Klasa, która reprezentuje usługę sieciową, takich jak usługi danych usługi Windows Communication Foundation (WCF) lub usługi REST.  
   
--   Klasa, która reprezentuje usługę programu SharePoint.  
+- Klasa, która reprezentuje usługę programu SharePoint.  
   
--   Klasa lub kolekcji w rozwiązaniu.  
+- Klasa lub kolekcji w rozwiązaniu.  
   
 > [!NOTE]
 >  Jeśli nie używasz funkcji wiązania danych, zestawy danych, platformy Entity Framework LINQ to SQL, WCF lub programu SharePoint, pojęcie "źródło danych" nie ma zastosowania. Po prostu Połącz bezpośrednio z bazą danych przy użyciu obiektów klasy SQLCommand i komunikować się bezpośrednio z bazy danych.  
@@ -77,11 +77,11 @@ W kontekście programu .NET data tools w programie Visual Studio termin *źród�
   
  Można utworzyć źródło danych z następujących rodzajów usług:  
   
--   Usługi danych WCF. Aby uzyskać więcej informacji, zobacz [Przegląd](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
+- Usługi danych WCF. Aby uzyskać więcej informacji, zobacz [Przegląd](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
   
--   Usługi danych WCF. Aby uzyskać więcej informacji, zobacz [Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
+- Usługi danych WCF. Aby uzyskać więcej informacji, zobacz [Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
   
--   Usługi sieci Web.  
+- Usługi sieci Web.  
   
     > [!NOTE]
     >  Elementy, które pojawiają się w **źródeł danych** są zależne od danych zwracanemu przez usługę. Niektóre usługi mogą nie dostarczać wystarczających informacji dla **Kreatora konfiguracji źródła danych** do tworzenia obiektów, które można powiązać. Na przykład, jeśli usługa zwraca zestaw danych bez typu, żadne elementy nie pojawią się w **źródeł danych** okno po zakończeniu działania kreatora. Jest to spowodowane nietypizowane zestawy danych są oferowane schematem i dlatego Kreator nie ma wystarczających informacji, aby utworzyć źródło danych.  

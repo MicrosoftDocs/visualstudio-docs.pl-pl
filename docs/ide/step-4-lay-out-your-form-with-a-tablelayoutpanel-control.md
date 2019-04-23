@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7083a8874b699716d834ea69ba88c30225acec88
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 63a99a35f7485dd6b2c9e80f552ce9364ce40f89
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057774"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Krok 4. Określić układ formularza z formantem TableLayoutPanel
 W tym kroku dodasz <xref:System.Windows.Forms.TableLayoutPanel> formantu do formularza. TableLayoutPanel pomaga poprawnie wyrównać formanty w formularzu, który zostanie dodany później.
@@ -22,14 +22,14 @@ W tym kroku dodasz <xref:System.Windows.Forms.TableLayoutPanel> formantu do form
 
 ## <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Aby zmienić układ formularza z formantem TableLayoutPanel
 
-1.  Po lewej stronie programu Visual Studio IDE, Znajdź **przybornika** kartę. Wybierz **przybornika** kartę, a **przybornika** pojawia się. (Lub na pasku menu wybierz **widoku** > **przybornika**.)
+1. Po lewej stronie programu Visual Studio IDE, Znajdź **przybornika** kartę. Wybierz **przybornika** kartę, a **przybornika** pojawia się. (Lub na pasku menu wybierz **widoku** > **przybornika**.)
 
-2.  Wybierz symbol małego trójkąta obok **kontenery** grupę, aby ją otworzyć, jak pokazano na poniższej ilustracji.
+2. Wybierz symbol małego trójkąta obok **kontenery** grupę, aby ją otworzyć, jak pokazano na poniższej ilustracji.
 
      ![Grupa kontenerów](../ide/media/express_toolbox.png)
 **kontenery** grupy
 
-3.  Możesz dodać formanty, takie jak przyciski, pola wyboru i etykiet do formularza. Kliknij dwukrotnie formant TableLayoutPanel w **przybornika**. (Można także można przeciągnąć kontrolki z przybornika do formularza). Gdy to zrobisz, IDE dodaje formant TableLayoutPanel do formularza, jak pokazano na poniższej ilustracji.
+3. Możesz dodać formanty, takie jak przyciski, pola wyboru i etykiet do formularza. Kliknij dwukrotnie formant TableLayoutPanel w **przybornika**. (Można także można przeciągnąć kontrolki z przybornika do formularza). Gdy to zrobisz, IDE dodaje formant TableLayoutPanel do formularza, jak pokazano na poniższej ilustracji.
 
      ![Formant TableLayoutPanel](../ide/media/express_formtablelayout.png)
 **TableLayoutPanel** kontroli
@@ -42,26 +42,26 @@ W tym kroku dodasz <xref:System.Windows.Forms.TableLayoutPanel> formantu do form
      ![Ikona pinezki](../ide/media/express_pushpintoolbox.png)
 **pinezki** ikony
 
-4.  Upewnij się, że TableLayoutPanel jest zaznaczony, wybierając je. Możesz sprawdzić, jaki formant jest zaznaczony, patrząc na liście rozwijanej w górnej części **właściwości** okna, jak pokazano na poniższej ilustracji.
+4. Upewnij się, że TableLayoutPanel jest zaznaczony, wybierając je. Możesz sprawdzić, jaki formant jest zaznaczony, patrząc na liście rozwijanej w górnej części **właściwości** okna, jak pokazano na poniższej ilustracji.
 
      ![Okno właściwości pokazujące formant TableLayoutPanel](../ide/media/express_controlspropwin.png)
 **właściwości** okno **TableLayoutPanel** kontroli
 
-5.  Wybierz **alfabetycznie** przycisk na pasku narzędzi w **właściwości** okna. Powoduje to, że lista właściwości w **właściwości** okno, aby wyświetlić w kolejności alfabetycznej, co ułatwi lokalizowanie właściwości w tym samouczku.
+5. Wybierz **alfabetycznie** przycisk na pasku narzędzi w **właściwości** okna. Powoduje to, że lista właściwości w **właściwości** okno, aby wyświetlić w kolejności alfabetycznej, co ułatwi lokalizowanie właściwości w tym samouczku.
 
-6.  Selektor formantu to listy rozwijanej w górnej części **właściwości** okna. W tym przykładzie jej pokazują, że formant nazywany `tableLayoutPanel1` jest zaznaczone. Możesz wybierać formanty, albo przez wybranie obszaru w **Windows Forms Designer** lub wybierając z selektora formantów. Teraz, że TableLayoutPanel jest zaznaczony, znaleźć **Dock** właściwości i wybierz polecenie **Dock**, powinien być ustawiony na **Brak**. Należy zauważyć, że strzałki listy rozwijanej pojawia się obok wartości. Wybierz strzałkę, a następnie wybierz **wypełnienia** przycisku (duży przycisk na środku), jak pokazano na poniższej ilustracji.
+6. Selektor formantu to listy rozwijanej w górnej części **właściwości** okna. W tym przykładzie jej pokazują, że formant nazywany `tableLayoutPanel1` jest zaznaczone. Możesz wybierać formanty, albo przez wybranie obszaru w **Windows Forms Designer** lub wybierając z selektora formantów. Teraz, że TableLayoutPanel jest zaznaczony, znaleźć **Dock** właściwości i wybierz polecenie **Dock**, powinien być ustawiony na **Brak**. Należy zauważyć, że strzałki listy rozwijanej pojawia się obok wartości. Wybierz strzałkę, a następnie wybierz **wypełnienia** przycisku (duży przycisk na środku), jak pokazano na poniższej ilustracji.
 
      ![Okno właściwości z zaznaczonym wypełnieniem](../ide/media/express_docktable.png)
 **właściwości** okno z **wypełnienia** wybrane
 
      *Dokowanie* w programie Visual Studio odnosi się do gdy okno jest dołączone do innego okna lub obszaru w IDE. Na przykład **właściwości** okno może być oddokowane — czyli niezamocowane Visual Studio — i lub może być zadokowane przy **Eksploratora rozwiązań**.
 
-7.  Po ustawieniu TableLayoutPanel **Dock** właściwości **wypełnienia**, panel wypełnia cały formularz. Jeśli zmienisz rozmiar formularza ponownie, obiekt TableLayoutPanel pozostaje zadokowany i zmienia się, aby dopasować rozmiar.
+7. Po ustawieniu TableLayoutPanel **Dock** właściwości **wypełnienia**, panel wypełnia cały formularz. Jeśli zmienisz rozmiar formularza ponownie, obiekt TableLayoutPanel pozostaje zadokowany i zmienia się, aby dopasować rozmiar.
 
     > [!NOTE]
     >  Element TableLayoutPanel działa jak tabela w programie Microsoft Office Word: Ma ona wierszy i kolumn i pojedyncze komórki może obejmować wiele wierszy i kolumn. Każda komórka może zawierać jeden formant (jak przycisk, pole wyboru lub etykietę). Twój TableLayoutPanel będzie miał <xref:System.Windows.Forms.PictureBox> obejmujące cały górny wiersz, formant <xref:System.Windows.Forms.CheckBox> kontrolki w jego lewej dolnej komórce i cztery <xref:System.Windows.Forms.Button> kontrolki w jej dolnej prawej komórce.
 
-8.  Obecnie TableLayoutPanel ma dwa równe rzędy wielkości i dwie kolumny równej wielkości. Musisz zmienić ich rozmiar, aby górny wiersz i prawa kolumna były znacznie większe. W **Windows Forms Designer**, wybierz obiekt TableLayoutPanel. W prawym górnym rogu jest przycisk mały trójkąt czarny, który wygląda następująco.
+8. Obecnie TableLayoutPanel ma dwa równe rzędy wielkości i dwie kolumny równej wielkości. Musisz zmienić ich rozmiar, aby górny wiersz i prawa kolumna były znacznie większe. W **Windows Forms Designer**, wybierz obiekt TableLayoutPanel. W prawym górnym rogu jest przycisk mały trójkąt czarny, który wygląda następująco.
 
      ![Przycisk z trójkątem](../ide/media/express_iconblacktriangle.gif)
 **trójkąt** przycisku
@@ -87,6 +87,6 @@ W tym kroku dodasz <xref:System.Windows.Forms.TableLayoutPanel> formantu do form
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
--   Aby przejść do następnego kroku samouczka, zobacz [krok 5: Dodawanie formantów do formularza](../ide/step-5-add-controls-to-your-form.md).
+- Aby przejść do następnego kroku samouczka, zobacz [krok 5: Dodawanie formantów do formularza](../ide/step-5-add-controls-to-your-form.md).
 
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 3: Ustawianie właściwości formularza](../ide/step-3-set-your-form-properties.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 3: Ustawianie właściwości formularza](../ide/step-3-set-your-form-properties.md).

@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd53eef6cb5dc7b7144375f5d0f6b47e11913ed3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e439521d9a81bc418eb403bb87ee9576605b8e66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778345"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055501"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Instrukcje: Znajdowanie tematów w spisie treści
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +36,9 @@ W **zawartość** karcie, można użyć spisu treści (TOC) można znaleźć inf
   
 #### <a name="to-filter-the-toc"></a>Aby filtrować spis treści  
   
-1.  Wybierz **zawartość** kartę.  
+1. Wybierz **zawartość** kartę.  
   
-2.  W **zawartość filtra** tekstu wprowadź termin.  
+2. W **zawartość filtra** tekstu wprowadź termin.  
   
 > [!NOTE]
 >  Jeśli filtr potrzebuje dużo czasu do uruchomienia, można wyświetlić wyniki szybciej przy użyciu `title:` operatora wyszukiwania zaawansowanego.  
@@ -48,9 +48,9 @@ W **zawartość** karcie, można użyć spisu treści (TOC) można znaleźć inf
   
 #### <a name="to-synchronize-the-toc-with-the-topic-window"></a>Aby zsynchronizować spis treści z oknem tematu  
   
-1.  Wyświetl temat.  
+1. Wyświetl temat.  
   
-2.  Kliknij przycisk **Pokaż temat w spisie treści** znajdujący się na pasku narzędzi lub naciśnij klawisze Ctrl + S.  
+2. Kliknij przycisk **Pokaż temat w spisie treści** znajdujący się na pasku narzędzi lub naciśnij klawisze Ctrl + S.  
   
      **Zawartość** kartę otwiera i wyświetla lokalizację tematu w spisie treści.  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f65760d8203ad01e9bab7987435691a8d5acf4b2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab88824055b890fcc65424d692dd12500d021712
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797323"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056485"
 ---
 # <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>Błąd: zależność &#39;pliku&#39; w projekcie &#39;projektu&#39; nie można skopiować do katalogu uruchomienia, ponieważ spowodowałoby to konflikt z zależnością &#39;pliku&#39;
 Istnieje konflikt między references; więcej niż jednej zależności distinct z tą samą nazwą pliku, które są kopiowane do katalogu bin aplikacji do uruchomienia. Katalog przebiegu nie może rozwiązać konflikt, ponieważ żaden z zależności podstawowego odwołania.  
@@ -27,11 +27,11 @@ Istnieje konflikt między references; więcej niż jednej zależności distinct 
   
  **Aby naprawić ten błąd**  
   
--   Określ jeden z zestawów bezpośrednio odwoływać się do projektu. Możliwe wadą tego podejścia jest nie gwarantuje zestawu wybranych do pracy z zestawów, które wymagają inna wersja przywoływanego zestawu.  
+- Określ jeden z zestawów bezpośrednio odwoływać się do projektu. Możliwe wadą tego podejścia jest nie gwarantuje zestawu wybranych do pracy z zestawów, które wymagają inna wersja przywoływanego zestawu.  
   
      \- lub —  
   
--   Upewnij się, że obie kopie zestawu o silnej nazwie i w globalnej pamięci podręcznej. Eliminuje to potrzebę skopiować te zestawy do katalogu bin.  
+- Upewnij się, że obie kopie zestawu o silnej nazwie i w globalnej pamięci podręcznej. Eliminuje to potrzebę skopiować te zestawy do katalogu bin.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md)   

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b48863234d7d624c183a6e02967411280655c5fc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2b34803ac047c411f3e77652949841227caef38e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703191"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055395"
 ---
 # <a name="extend-solutions"></a>Rozszerzanie rozwiązań
 Rozwiązanie to grupa jeden lub więcej projektów, które współpracują ze sobą, aby utworzyć aplikację.
@@ -21,6 +21,6 @@ Rozwiązanie to grupa jeden lub więcej projektów, które współpracują ze so
 ## <a name="in-this-section"></a>W tej sekcji
  Poniższe przewodniki pokazują niektóre sposoby, w którym można rozszerzyć rozwiązania.
 
-1.  [Rozszerzanie filtru Eksploratora rozwiązań](../extensibility/extending-the-solution-explorer-filter.md) wyjaśnia, jak filtrowanie, co wyświetlane w Eksploratorze rozwiązań.
+1. [Rozszerzanie filtru Eksploratora rozwiązań](../extensibility/extending-the-solution-explorer-filter.md) wyjaśnia, jak filtrowanie, co wyświetlane w Eksploratorze rozwiązań.
 
-2.  [Zarządzanie ładowaniem projektu w rozwiązaniu](../extensibility/managing-project-loading-in-a-solution.md) objaśnia Zarządzanie ładowaniem projektu w celu zwiększenia wydajności, gdy użytkownik wczytuje rozwiązania.
+2. [Zarządzanie ładowaniem projektu w rozwiązaniu](../extensibility/managing-project-loading-in-a-solution.md) objaśnia Zarządzanie ładowaniem projektu w celu zwiększenia wydajności, gdy użytkownik wczytuje rozwiązania.

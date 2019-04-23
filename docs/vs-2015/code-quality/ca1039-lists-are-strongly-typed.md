@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 19191d8812d198b6a72ec8b6bdc8e75ef9d8f4ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3fb1a6255539ded989c5ad9638fc961d606a19f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773799"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097118"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Listy są silnie typizowane
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ ms.locfileid: "54773799"
 ## <a name="cause"></a>Przyczyna
  Publiczny lub chroniony typ implementuje <xref:System.Collections.IList?displayProperty=fullName> , ale udostępnia silnie typizowane metody dla co najmniej jednej z następujących czynności:
 
--   IList.Item
+- IList.Item
 
--   IList.Add
+- IList.Add
 
--   IList.Contains
+- IList.Contains
 
--   IList.IndexOf
+- IList.IndexOf
 
--   IList.Insert
+- IList.Insert
 
--   IList.Remove
+- IList.Remove
 
 ## <a name="rule-description"></a>Opis reguły
  Ta reguła wymaga <xref:System.Collections.IList> implementacji w celu dostarczenia silnie typizowane składowe, dzięki czemu użytkownicy nie musieli rzutować argumentów na <xref:System.Object?displayProperty=fullName> wpisz podczas korzystania z funkcji dostępnych przez interfejs. <xref:System.Collections.IList> Interfejs jest implementowany przez kolekcje obiektów, które mogą być udostępniane przez indeks. Reguła ta zakłada, że typ, który zawiera <xref:System.Collections.IList> robi to, aby zarządzać kolekcją wystąpień typów mocniejszych niż <xref:System.Object>.

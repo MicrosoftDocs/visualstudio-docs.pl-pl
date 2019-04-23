@@ -1,6 +1,6 @@
 ---
 title: Ukryty Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
-ms.date: 11/04/2016
+ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
@@ -13,32 +13,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a7a70b59d08da09f6a06c3d5c38d330def11b86
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c3fdeebabbb3f7a95886fed0a7e2c5eafa4d495b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721397"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104437"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden — element (szablony Visual Studio)
-Określa, czy szablon jest wyświetlany w jednym **nowy projekt** lub **Dodaj nowy element** okno dialogowe.
 
- \<VSTemplate> \<TemplateData> \<Hidden>
+Określa, czy szablon jest wyświetlany w jeden nowy projekt lub **Dodaj nowy element** okien dialogowych.
+
+```xml
+<VSTemplate>
+    <TemplateData>
+        <Hidden>
+```
 
 ## <a name="syntax"></a>Składnia
 
-```
-<Hidden> true/false </Hidden>
+```xml
+<Hidden>true</Hidden>
+<Hidden>false</Hidden>
 ```
 
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
- W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
+
+W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
 ### <a name="attributes"></a>Atrybuty
- Brak.
+
+Brak.
 
 ### <a name="child-elements"></a>Elementy podrzędne
- Brak.
+
+Brak.
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
@@ -47,19 +56,22 @@ Określa, czy szablon jest wyświetlany w jednym **nowy projekt** lub **Dodaj no
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|
 
 ## <a name="text-value"></a>Wartość tekstowa
- Wartość tekstowa jest wymagana.
 
- Tekst musi być albo `true` lub `false`oznaczający Określa, czy szablon pojawi się w **nowy projekt** lub **Dodaj nowy element** okien dialogowych.
+Wartość tekstowa jest wymagana.
+
+Tekst musi być albo `true` lub `false`oznaczający Określa, czy szablon pojawi się w **nowy projekt** lub **Dodaj nowy element** okien dialogowych.
 
 ## <a name="remarks"></a>Uwagi
- `Hidden` element jest opcjonalny.
 
- Jeśli zostanie określony, nie inne elementy podrzędne `TemplateData` elementu są wymagane.
+`Hidden` element jest opcjonalny.
+
+Jeśli zostanie określony, nie inne elementy podrzędne `TemplateData` elementu są wymagane.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano metadanych [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] szablonu.
 
-```
+W poniższym przykładzie pokazano metadanych C# szablonu.
+
+```xml
 <VSTemplate Type="Project" Version="3.0.0"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
@@ -85,5 +97,6 @@ Określa, czy szablon jest wyświetlany w jednym **nowy projekt** lub **Dodaj no
 ```
 
 ## <a name="see-also"></a>Zobacz także
-- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+
+- [Odwołanie do schematu szablonu](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

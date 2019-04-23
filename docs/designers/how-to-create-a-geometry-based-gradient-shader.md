@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1baaccbe2d7df07900eecbedd385ce8c5a031cc5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cfb6a629b5ff0ddddeead8f9f53d43580aba084a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957755"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100225"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Instrukcje: Tworzenie cieniowania gradientu geometrycznego
 
@@ -25,21 +25,21 @@ Można zaimplementować programu do cieniowania geometrycznego, dołączając po
 
 Przed rozpoczęciem upewnij się, że **właściwości** okna i **przybornika** są wyświetlane.
 
-1.  Tworzenie modułu cieniującego DGSL za pomocą którego do pracy. Aby uzyskać informacje dotyczące sposobu dodawania modułu cieniującego DGSL do projektu, zobacz sekcję pierwsze kroki w [Shader Designer](../designers/shader-designer.md).
+1. Tworzenie modułu cieniującego DGSL za pomocą którego do pracy. Aby uzyskać informacje dotyczące sposobu dodawania modułu cieniującego DGSL do projektu, zobacz sekcję pierwsze kroki w [Shader Designer](../designers/shader-designer.md).
 
-2.  Odłącz **koloru punktu** węzła z **ostateczny kolor** węzła. Wybierz **RGB** terminali z **koloru punktu** węzła, a następnie wybierz **Przerwij linki**. To sprawia, że miejsce na węzeł, który zostanie dodany do następnego kroku.
+2. Odłącz **koloru punktu** węzła z **ostateczny kolor** węzła. Wybierz **RGB** terminali z **koloru punktu** węzła, a następnie wybierz **Przerwij linki**. To sprawia, że miejsce na węzeł, który zostanie dodany do następnego kroku.
 
-3.  Dodaj **mnożenia** węzła do wykresu. W **przybornika**w obszarze **matematyczne**, wybierz opcję **mnożenia** i przenieś go do powierzchni projektowej.
+3. Dodaj **mnożenia** węzła do wykresu. W **przybornika**w obszarze **matematyczne**, wybierz opcję **mnożenia** i przenieś go do powierzchni projektowej.
 
-4.  Dodaj **wektor maski** węzła do wykresu. W **przybornika**w obszarze **narzędzie**, wybierz opcję **wektor maski** i przenieś go do powierzchni projektowej.
+4. Dodaj **wektor maski** węzła do wykresu. W **przybornika**w obszarze **narzędzie**, wybierz opcję **wektor maski** i przenieś go do powierzchni projektowej.
 
-5.  Określ wartości maski **wektor maski** węzła. W **wybierz** tryb, wybierz **wektor maski** węzła, a następnie w polu **właściwości** oknie **zielony / Y** właściwość **Wartość true,**, a następnie ustaw **czerwony / X**, **niebieski / Z** i **alfa / W** właściwości w celu **False**. W tym przykładzie **czerwony / X**, **zielony / Y**, i **niebieski / Z** właściwości odpowiadają x, y i składniki z **pozycja świata** węzeł, i **alfa / W** jest nieużywana. Ponieważ tylko **zielony / Y** ustawiono **True**, tylko składnik y wektor wejściowy pozostaje po jego są wyświetlane jako znaki.
+5. Określ wartości maski **wektor maski** węzła. W **wybierz** tryb, wybierz **wektor maski** węzła, a następnie w polu **właściwości** oknie **zielony / Y** właściwość **Wartość true,**, a następnie ustaw **czerwony / X**, **niebieski / Z** i **alfa / W** właściwości w celu **False**. W tym przykładzie **czerwony / X**, **zielony / Y**, i **niebieski / Z** właściwości odpowiadają x, y i składniki z **pozycja świata** węzeł, i **alfa / W** jest nieużywana. Ponieważ tylko **zielony / Y** ustawiono **True**, tylko składnik y wektor wejściowy pozostaje po jego są wyświetlane jako znaki.
 
-6.  Dodaj **pozycja świata** węzła do wykresu. W **przybornika**w obszarze **stałe**, wybierz opcję **pozycja świata** i przenieś go do powierzchni projektowej.
+6. Dodaj **pozycja świata** węzła do wykresu. W **przybornika**w obszarze **stałe**, wybierz opcję **pozycja świata** i przenieś go do powierzchni projektowej.
 
-7.  Maski pozycji miejsca na świecie fragmentu. W **wybierz** tryb, Przenieś **dane wyjściowe** terminali z **pozycja świata** węzeł, aby **wektor** terminali z **maski Wektor** węzła. To połączenie maskuje pozycji fragmentu, aby zignorować x i z składników.
+7. Maski pozycji miejsca na świecie fragmentu. W **wybierz** tryb, Przenieś **dane wyjściowe** terminali z **pozycja świata** węzeł, aby **wektor** terminali z **maski Wektor** węzła. To połączenie maskuje pozycji fragmentu, aby zignorować x i z składników.
 
-8.  Mnożenie — stała koloru RGB według pozycji miejsca na świecie maskowanego. Przenieś **RGB** terminali z **koloru punktu** węzeł, aby **Y** terminali z **mnożenia** węzeł, a następnie przenieść  **Dane wyjściowe** terminali z **wektor maski** węzeł **X** terminali z **mnożenia** węzła. To połączenie jest skalowana w wartości koloru, wysokość piksela w przestrzeni świata.
+8. Mnożenie — stała koloru RGB według pozycji miejsca na świecie maskowanego. Przenieś **RGB** terminali z **koloru punktu** węzeł, aby **Y** terminali z **mnożenia** węzeł, a następnie przenieść  **Dane wyjściowe** terminali z **wektor maski** węzeł **X** terminali z **mnożenia** węzła. To połączenie jest skalowana w wartości koloru, wysokość piksela w przestrzeni świata.
 
 9. Połącz się ostateczny kolor z wartości koloru skalowany. Przenieś **dane wyjściowe** terminali z **mnożenia** węzeł, aby **RGB** terminali z **ostateczny kolor** węzła.
 

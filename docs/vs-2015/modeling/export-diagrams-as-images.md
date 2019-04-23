@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3554941ea4fc0d0d95d36cc99224f270cdc23fe9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da424c2250c327a04a9f878e6bd953a664dcc4d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752348"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104125"
 ---
 # <a name="export-diagrams-as-images"></a>Eksportowanie diagramów jako obrazów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ W programie Visual Studio możesz zapisać diagramów modelowania w formatach ty
   
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Aby skopiować na diagramie lub część diagramu do innej aplikacji  
   
-1.  Na diagramie wybierz niektóre lub wszystkie kształty.  
+1. Na diagramie wybierz niektóre lub wszystkie kształty.  
   
-2.  Kliknij prawym przyciskiem myszy zaznaczenie, a następnie kliknij przycisk **kopiowania**.  
+2. Kliknij prawym przyciskiem myszy zaznaczenie, a następnie kliknij przycisk **kopiowania**.  
   
-3.  Wybór należy wkleić do aplikacji, która ma.  
+3. Wybór należy wkleić do aplikacji, która ma.  
   
 ### <a name="to-export-an-image-as-part-of-an-automated-process"></a>Aby wyeksportować obraz w ramach zautomatyzowanego procesu  
   
--   Zobacz [diagramy UML eksportu do plików obrazu](../modeling/export-uml-diagrams-to-image-files.md).  
+- Zobacz [diagramy UML eksportu do plików obrazu](../modeling/export-uml-diagrams-to-image-files.md).  
   
 ### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>Aby zapisać diagramu modelowania jako plik formatu XML Paper Specification (XPS)  
   
-1.  Na **pliku** menu, kliknij przycisk **drukowania** otworzyć **drukowania** okno dialogowe.  
+1. Na **pliku** menu, kliknij przycisk **drukowania** otworzyć **drukowania** okno dialogowe.  
   
-2.  W **nazwa** listy wybierz **modułu zapisywania dokumentów XPS firmy Microsoft**, a następnie kliknij przycisk **OK**.  
+2. W **nazwa** listy wybierz **modułu zapisywania dokumentów XPS firmy Microsoft**, a następnie kliknij przycisk **OK**.  
   
-3.  W **Zapisz plik jako** okno dialogowe, Zapisz plik jako **dokument XPS (\*.xps)** pliku.  
+3. W **Zapisz plik jako** okno dialogowe, Zapisz plik jako **dokument XPS (\*.xps)** pliku.  
   
 ## <a name="net-framework-security"></a>Zabezpieczenia.NET Framework  
   

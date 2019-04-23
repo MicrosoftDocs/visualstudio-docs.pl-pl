@@ -13,12 +13,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a62aacf8ad702aca19531876c57aaf45b10ce639
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccf761521d43e3f5ff9d12a4af7fbae4addcddc9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768102"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100524"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Dostosowywanie tworzenia i przesuwania elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,9 +89,9 @@ Możesz zezwolić elementu można przeciągać innym, z przybornika lub wklejeni
   
 2. Aby umożliwić użytkownikom scalania elementów na `ExampleElement` kształtów, Utwórz nowe EMD w `ExampleElement` klasą domeny:  
   
-   1.  W **Eksplorator DSL**, rozwiń węzeł **klasami domeny**. Kliknij prawym przyciskiem myszy `ExampleElement` a następnie kliknij przycisk **Dodaj nowe dyrektywa scalania elementów**.  
+   1. W **Eksplorator DSL**, rozwiń węzeł **klasami domeny**. Kliknij prawym przyciskiem myszy `ExampleElement` a następnie kliknij przycisk **Dodaj nowe dyrektywa scalania elementów**.  
   
-   2.  Upewnij się, że **szczegóły języka DSL** okno jest otwarte, tak aby widoczne szczegółowe informacje o nowych EMD. (Menu: **Wyświetl**, **innych Windows**, **szczegóły języka DSL**.)  
+   2. Upewnij się, że **szczegóły języka DSL** okno jest otwarte, tak aby widoczne szczegółowe informacje o nowych EMD. (Menu: **Wyświetl**, **innych Windows**, **szczegóły języka DSL**.)  
   
 3. Ustaw **klasa indeksowania** w oknie Szczegóły języka DSL w celu zdefiniowania, jakie klasy elementy mogą zostać scalone na `ExampleElement` obiektów.  
   
@@ -119,29 +119,29 @@ Możesz zezwolić elementu można przeciągać innym, z przybornika lub wklejeni
   
 5. Przetestuj język DSL:  
   
-   1.  Naciśnij klawisz F5, aby ponownie skompilować i uruchomić rozwiązanie.  
+   1. Naciśnij klawisz F5, aby ponownie skompilować i uruchomić rozwiązanie.  
   
         Ponowne tworzenie będzie trwać dłużej niż zwykle, ponieważ wygenerowany kod będzie można zaktualizować z poziomu szablonów tekstu są zgodne z nową definicję DSL.  
   
-   2.  Gdy doświadczalnym wystąpieniu programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] został uruchomiony, otwórz plik modelu DSL. Utwórz niektóre elementy w przykładzie.  
+   2. Gdy doświadczalnym wystąpieniu programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] został uruchomiony, otwórz plik modelu DSL. Utwórz niektóre elementy w przykładzie.  
   
-   3.  Przeciągnij z **Element przykład** narzędzie do istniejącego kształtu.  
+   3. Przeciągnij z **Element przykład** narzędzie do istniejącego kształtu.  
   
         Pojawi się nowy kształt i jest połączony do istniejącego kształtu, za pomocą łącznika.  
   
-   4.  Kopiuj istniejącego kształtu. Wybierz inny kształt i Wklej.  
+   4. Kopiuj istniejącego kształtu. Wybierz inny kształt i Wklej.  
   
         Zostanie utworzona kopia krawędzi pierwszego kształtu.  Jego nazwa została zmieniona i jest połączony do drugiego kształtu, za pomocą łącznika.  
   
    Zwróć uwagę następujące kwestie z tej procedury:  
   
--   Tworząc Scal dyrektyw, można zezwolić dowolnego rodzaju elementu, aby akceptować inne. EMD jest tworzony w odbieranie klasy domeny, a klasa zaakceptowane domeny jest określony w **Index, klasa** pola.  
+- Tworząc Scal dyrektyw, można zezwolić dowolnego rodzaju elementu, aby akceptować inne. EMD jest tworzony w odbieranie klasy domeny, a klasa zaakceptowane domeny jest określony w **Index, klasa** pola.  
   
--   Definiując ścieżek, można określić łącza, które powinny być używany do łączenia nowy element do istniejącego modelu.  
+- Definiując ścieżek, można określić łącza, które powinny być używany do łączenia nowy element do istniejącego modelu.  
   
      Łączy, które określisz powinien zawierać jedna relacja osadzania.  
   
--   EMD dotyczy zarówno tworzenie z przybornika, a także operacji wklejania.  
+- EMD dotyczy zarówno tworzenie z przybornika, a także operacji wklejania.  
   
      Jeśli piszesz kod niestandardowy, który tworzy nowe elementy, możesz jawnie wywołać EMD przy użyciu `ElementOperations.Merge` metody. Dzięki temu kod łączy nowych elementów do modelu w taki sam sposób jak inne operacje. Aby uzyskać więcej informacji, zobacz [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md).  
   
@@ -150,21 +150,21 @@ Możesz zezwolić elementu można przeciągać innym, z przybornika lub wklejeni
   
 #### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>Aby napisać kod akceptowanie niestandardowe ograniczenia, co użytkownik może dodać  
   
-1.  Tworzenie języka DSL za pomocą **minimalny języka** szablonu rozwiązania. Otwórz z diagramem definicji DSL.  
+1. Tworzenie języka DSL za pomocą **minimalny języka** szablonu rozwiązania. Otwórz z diagramem definicji DSL.  
   
-2.  W Eksploratorze DSL rozwiń **klasami domeny**, `ExampleModel`, **dyrektyw scalania**. Wybierz dyrektywa scalania, który nosi nazwę `ExampleElement`.  
+2. W Eksploratorze DSL rozwiń **klasami domeny**, `ExampleModel`, **dyrektyw scalania**. Wybierz dyrektywa scalania, który nosi nazwę `ExampleElement`.  
   
      Ta EMD Określa, jak użytkownik może utworzyć nowego `ExampleElement` obiekty w modelu, na przykład przeciągając je z przybornika.  
   
-3.  W **szczegóły języka DSL** wybierz **akceptowanie niestandardowe używa**.  
+3. W **szczegóły języka DSL** wybierz **akceptowanie niestandardowe używa**.  
   
-4.  Ponownie skompiluj rozwiązanie. To będzie trwać dłużej niż zwykle, ponieważ wygenerowany kod zostanie zaktualizowany z modelu.  
+4. Ponownie skompiluj rozwiązanie. To będzie trwać dłużej niż zwykle, ponieważ wygenerowany kod zostanie zaktualizowany z modelu.  
   
      Błąd kompilacji będą zgłaszane, podobnie do: "Company.ElementMergeSample.ExampleElement nie zawiera definicji CanMergeExampleElement..."  
   
      Musisz zaimplementować metodę `CanMergeExampleElement`.  
   
-5.  Utwórz nowy plik kodu w **Dsl** projektu. Zastąp jego zawartość następującym kodem oraz zmienianie przestrzeni nazw do przestrzeni nazw projektu.  
+5. Utwórz nowy plik kodu w **Dsl** projektu. Zastąp jego zawartość następującym kodem oraz zmienianie przestrzeni nazw do przestrzeni nazw projektu.  
   
     ```csharp  
     using Microsoft.VisualStudio.Modeling;  
@@ -194,19 +194,19 @@ Możesz zezwolić elementu można przeciągać innym, z przybornika lub wklejeni
   
      Ten prosty przykład ogranicza liczbę elementów, które może zostać scalony z nadrzędnego modelu. Warunki bardziej interesujące metody można sprawdzić właściwości i łącza obiektu odbierania. Można to też sprawdzić właściwości scalania elementów, które są przenoszone w <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Aby uzyskać więcej informacji na temat `ElementGroupPrototypes`, zobacz [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md). Aby uzyskać więcej informacji na temat pisania kodu, który odczytuje model, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
-6.  Przetestuj język DSL:  
+6. Przetestuj język DSL:  
   
-    1.  Naciśnij klawisz F5, aby ponownie skompiluj rozwiązanie. Gdy wystąpienie eksperymentalne [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zostanie otwarty, otwórz wystąpienie DSL.  
+    1. Naciśnij klawisz F5, aby ponownie skompiluj rozwiązanie. Gdy wystąpienie eksperymentalne [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zostanie otwarty, otwórz wystąpienie DSL.  
   
-    2.  Tworzenie nowych elementów na kilka sposobów:  
+    2. Tworzenie nowych elementów na kilka sposobów:  
   
-        1.  Przeciągnij z **Element przykład** narzędzia na diagram.  
+        1. Przeciągnij z **Element przykład** narzędzia na diagram.  
   
-        2.  W **Eksploratora modelu przykład**, kliknij prawym przyciskiem myszy węzeł główny, a następnie kliknij przycisk **Dodaj nowy Element przykład**.  
+        2. W **Eksploratora modelu przykład**, kliknij prawym przyciskiem myszy węzeł główny, a następnie kliknij przycisk **Dodaj nowy Element przykład**.  
   
-        3.  Skopiuj i Wklej elementu na diagramie.  
+        3. Skopiuj i Wklej elementu na diagramie.  
   
-    3.  Sprawdź, że nie można użyć dowolnej z następujących sposobów, aby dodać więcej niż cztery elementy w modelu. Jest to spowodowane wszystkich używają dyrektywa scalania.  
+    3. Sprawdź, że nie można użyć dowolnej z następujących sposobów, aby dodać więcej niż cztery elementy w modelu. Jest to spowodowane wszystkich używają dyrektywa scalania.  
   
 ## <a name="example-adding-custom-merge-code-to-an-emd"></a>Przykład: Dodawanie kodu niestandardowego scalania do EMD  
  W kodzie scalania niestandardowego można zdefiniować, co się dzieje, gdy użytkownik przeciągnie narzędzia lub wkleja na element. Istnieją dwa sposoby, aby zdefiniować niestandardowy scalania:  
@@ -219,19 +219,19 @@ Możesz zezwolić elementu można przeciągać innym, z przybornika lub wklejeni
   
 #### <a name="to-override-mergerelate"></a>Aby zastąpić MergeRelate  
   
-1.  Upewnij się, czy zdefiniowano EMD, do którego chcesz dodać kod w definicji DSL. Jeśli chcesz, możesz dodać ścieżki i zdefiniuj akceptowanie niestandardowe kodu zgodnie z opisem w poprzedniej sekcji.  
+1. Upewnij się, czy zdefiniowano EMD, do którego chcesz dodać kod w definicji DSL. Jeśli chcesz, możesz dodać ścieżki i zdefiniuj akceptowanie niestandardowe kodu zgodnie z opisem w poprzedniej sekcji.  
   
-2.  Na diagramie DslDefinition wybierz klasę odbieranie scalania. Zazwyczaj jest klasa na końcu źródła relacji osadzania.  
+2. Na diagramie DslDefinition wybierz klasę odbieranie scalania. Zazwyczaj jest klasa na końcu źródła relacji osadzania.  
   
      Na przykład w DSL wygenerowany na podstawie rozwiązania minimalny języka, wybierz pozycję `ExampleModel`.  
   
-3.  W **właściwości** oknie **Generates Double Derived** do **true**.  
+3. W **właściwości** oknie **Generates Double Derived** do **true**.  
   
-4.  Ponownie skompiluj rozwiązanie.  
+4. Ponownie skompiluj rozwiązanie.  
   
-5.  Sprawdź zawartość **Dsl\Generated Files\DomainClasses.cs**. Wyszukaj metody o nazwie `MergeRelate` i sprawdź ich zawartość. Dzięki temu, dzięki czemu można tworzyć własne wersji.  
+5. Sprawdź zawartość **Dsl\Generated Files\DomainClasses.cs**. Wyszukaj metody o nazwie `MergeRelate` i sprawdź ich zawartość. Dzięki temu, dzięki czemu można tworzyć własne wersji.  
   
-6.  Nowy plik kodu pisać klasę częściową dla klasy odbierania i Zastąp `MergeRelate` metody. Pamiętaj, aby wywołać metodę bazową. Na przykład:  
+6. Nowy plik kodu pisać klasę częściową dla klasy odbierania i Zastąp `MergeRelate` metody. Pamiętaj, aby wywołać metodę bazową. Na przykład:  
   
     ```csharp  
     partial class ExampleModel  
@@ -285,23 +285,23 @@ Możesz zezwolić elementu można przeciągać innym, z przybornika lub wklejeni
   
 #### <a name="to-create-a-forward-merge-directive"></a>Aby utworzyć to dyrektywa scalania do przodu  
   
-1.  Utwórz [!INCLUDE[dsl](../includes/dsl-md.md)] rozwiązania przy użyciu szablonu z modelu składników.  
+1. Utwórz [!INCLUDE[dsl](../includes/dsl-md.md)] rozwiązania przy użyciu szablonu z modelu składników.  
   
-2.  Wyświetlanie **Eksplorator DSL** , otwierając DslDefinition.dsl.  
+2. Wyświetlanie **Eksplorator DSL** , otwierając DslDefinition.dsl.  
   
-3.  W **Eksplorator DSL**, rozwiń węzeł **klasami domeny**.  
+3. W **Eksplorator DSL**, rozwiń węzeł **klasami domeny**.  
   
-4.  **Elementu ComponentPort** klasy abstrakcyjnej domeny jest klasą bazową obu **InPort** i **elementu OutPort**. Kliknij prawym przyciskiem myszy **elementu ComponentPort** a następnie kliknij przycisk **Dodaj nowe dyrektywa scalania elementów**.  
+4. **Elementu ComponentPort** klasy abstrakcyjnej domeny jest klasą bazową obu **InPort** i **elementu OutPort**. Kliknij prawym przyciskiem myszy **elementu ComponentPort** a następnie kliknij przycisk **Dodaj nowe dyrektywa scalania elementów**.  
   
      Nowy **dyrektywa scalania elementów** pojawia się pod węzłem **dyrektyw scalania** węzła.  
   
-5.  Wybierz **dyrektywa scalania elementów** węzła i Otwórz **szczegóły języka DSL** okna.  
+5. Wybierz **dyrektywa scalania elementów** węzła i Otwórz **szczegóły języka DSL** okna.  
   
-6.  Na liście klasy indeksowania wybierz **elementu ComponentPort**.  
+6. Na liście klasy indeksowania wybierz **elementu ComponentPort**.  
   
-7.  Wybierz **Przekaż Scalanie do innej klasy domeny**.  
+7. Wybierz **Przekaż Scalanie do innej klasy domeny**.  
   
-8.  Na liście wyboru ścieżki rozwiń **elementu ComponentPort**, rozwiń węzeł **elementu ComponentHasPorts**, a następnie wybierz pozycję **składnika**.  
+8. Na liście wyboru ścieżki rozwiń **elementu ComponentPort**, rozwiń węzeł **elementu ComponentHasPorts**, a następnie wybierz pozycję **składnika**.  
   
      Nowa ścieżka powinien przypominać to:  
   

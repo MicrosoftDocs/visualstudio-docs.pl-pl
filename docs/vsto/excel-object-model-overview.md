@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3db6031a7934d72a3784f08ff7c6c3e5018d26c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bfee8d6183a8292f5c39140ada9d4787e4f027ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628588"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104554"
 ---
 # <a name="excel-object-model-overview"></a>Model obiektu Excel ― omówienie
   Do opracowywania rozwiązań korzystających z programu Microsoft Office Excel, możesz korzystać z obiektami dostarczonych przez model obiektów programu Excel. W tym temacie przedstawiono najważniejsze obiekty:
@@ -99,7 +99,7 @@ ms.locfileid: "56628588"
 
  Program Visual Studio rozszerza <xref:Microsoft.Office.Interop.Excel.Range> obiektu, zapewniając <xref:Microsoft.Office.Tools.Excel.NamedRange> i <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> typów. Te typy mają większość te same funkcje co <xref:Microsoft.Office.Interop.Excel.Range> obiektu, a także nowe funkcje, takie jak możliwość powiązania danych i nowe zdarzenia. Aby uzyskać więcej informacji, zobacz [kontrolki NamedRange](../vsto/namedrange-control.md) i [xmlmappedrange — formant](../vsto/xmlmappedrange-control.md).
 
-##  <a name="ExcelOMDocumentation"></a> Zapoznaj się z dokumentacją modelu obiektów programu Excel
+## <a name="ExcelOMDocumentation"></a> Zapoznaj się z dokumentacją modelu obiektów programu Excel
  Aby uzyskać pełne informacje na temat modelu obiektów programu Excel mogą odwoływać się do programu Excel odwołanie do zestawu podstawowej usługi międzyoperacyjnej (PIA) i dokumentacja modelu obiektów języka VBA.
 
 ### <a name="primary-interop-assembly-reference"></a>Odwołanie do zestawu podstawowej usługi międzyoperacyjnej

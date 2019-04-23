@@ -12,12 +12,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3120cee504de8565f5caf80034678e9788da70ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 28f8cd324079a50a20312022ea6daaba843f8564
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783311"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100329"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Przewodnik: Tworzenie niestandardowego hosta szablonu tekstu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,31 +31,31 @@ A *szablon tekstowy*<em>hosta</em> zapewnia środowisko, które umożliwia *apar
   
  Zadania przedstawione w niniejszym przewodniku to m.in.:  
   
--   Tworzenie niestandardowego hosta szablonu tekstu.  
+- Tworzenie niestandardowego hosta szablonu tekstu.  
   
--   Testowanie niestandardowego hosta.  
+- Testowanie niestandardowego hosta.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby wykonać instrukcje w tym przewodniku, musisz mieć następujące elementy:  
   
--   Visual Studio 2010 lub w nowszej wersji  
+- Visual Studio 2010 lub w nowszej wersji  
   
--   Visual Studio SDK  
+- Visual Studio SDK  
   
 ## <a name="creating-a-custom-text-template-host"></a>Tworzenie niestandardowego hosta szablonu tekstu  
  W tym przewodniku utworzysz niestandardowego hosta w wykonywalnej aplikacji, którą można wywołać z wiersza polecenia. Aplikacja przyjmuje plik szablonu tekstu jako argument, odczytuje szablon, wywołuje aparat do przekształcania szablonu i wyświetla wszystkie błędy, które występują w oknie wiersza polecenia.  
   
 #### <a name="to-create-a-custom-host"></a>Aby utworzyć niestandardowego hosta  
   
-1.  W Visual Studio utwórz nową aplikację konsoli Visual Basic lub C# o nazwie CustomHost.  
+1. W Visual Studio utwórz nową aplikację konsoli Visual Basic lub C# o nazwie CustomHost.  
   
-2.  Dodaj odwołania do następujących zestawów:  
+2. Dodaj odwołania do następujących zestawów:  
   
-    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 i nowsze wersje**  
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 i nowsze wersje**  
   
-3.  Zastąp kod w pliku Program.cs lub Module1.vb następującym kodem:  
+3. Zastąp kod w pliku Program.cs lub Module1.vb następującym kodem:  
   
     ```csharp  
     using System;  
@@ -714,22 +714,22 @@ A *szablon tekstowy*<em>hosta</em> zapewnia środowisko, które umożliwia *apar
     End Namespace  
     ```  
   
-4.  Dla [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] tylko Otwórz **projektu** menu, a następnie kliknij przycisk **właściwości CustomHost**. W **obiekt początkowy** kliknij **CustomHost.Program**.  
+4. Dla [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] tylko Otwórz **projektu** menu, a następnie kliknij przycisk **właściwości CustomHost**. W **obiekt początkowy** kliknij **CustomHost.Program**.  
   
-5.  Na **pliku** menu, kliknij przycisk **Zapisz wszystko**.  
+5. Na **pliku** menu, kliknij przycisk **Zapisz wszystko**.  
   
-6.  Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
+6. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
   
 ## <a name="testing-the-custom-host"></a>Testowanie niestandardowego hosta  
  Aby przetestować niestandardowego hosta, napisz szablon tekstowy, a następnie uruchom niestandardowego hosta, przekaż mu nazwę szablonu tekstu i sprawdź, czy szablon jest przekształcany.  
   
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Aby utworzyć szablon tekstowy w celu przetestowania niestandardowego hosta  
   
-1.  Utwórz plik tekstowy i nadaj mu nazwę `TestTemplate.tt`.  
+1. Utwórz plik tekstowy i nadaj mu nazwę `TestTemplate.tt`.  
   
      Do utworzenia pliku możesz użyć dowolnego edytora tekstów (na przykład Notatnika).  
   
-2.  Dodaj następującą zawartość do pliku:  
+2. Dodaj następującą zawartość do pliku:  
   
     > [!NOTE]
     >  Język programowania szablonu tekstu nie musi odpowiadać językowi niestandardowego hosta.  
@@ -772,13 +772,13 @@ A *szablon tekstowy*<em>hosta</em> zapewnia środowisko, które umożliwia *apar
   
     ```  
   
-3.  Zapisz i zamknij plik.  
+3. Zapisz i zamknij plik.  
   
 #### <a name="to-test-the-custom-host"></a>Aby przetestować niestandardowego hosta  
   
-1.  Otwórz okno wiersza polecenia.  
+1. Otwórz okno wiersza polecenia.  
   
-2.  Wpisz ścieżkę pliku wykonywalnego dla niestandardowego hosta, ale nie naciskaj jeszcze ENTER.  
+2. Wpisz ścieżkę pliku wykonywalnego dla niestandardowego hosta, ale nie naciskaj jeszcze ENTER.  
   
      Na przykład wpisz:  
   
@@ -787,9 +787,9 @@ A *szablon tekstowy*<em>hosta</em> zapewnia środowisko, które umożliwia *apar
     > [!NOTE]
     >  Zamiast wpisywać adres, możesz przejść do pliku CustomHost.exe w **Eksplorator Windows** i przeciągnąć plik do okna wiersza polecenia.  
   
-3.  Wpisz spację.  
+3. Wpisz spację.  
   
-4.  Wpisz ścieżkę do pliku szablonu tekstu, a następnie naciśnij ENTER.  
+4. Wpisz ścieżkę do pliku szablonu tekstu, a następnie naciśnij ENTER.  
   
      Na przykład wpisz:  
   
@@ -800,11 +800,11 @@ A *szablon tekstowy*<em>hosta</em> zapewnia środowisko, które umożliwia *apar
   
      Aplikacja niestandardowego hosta uruchamia się i wykonuje proces przekształcania szablonu tekstu.  
   
-5.  W **Eksplorator Windows**, przejdź do folderu, w którym znajduje się plik TestTemplate.tt.  
+5. W **Eksplorator Windows**, przejdź do folderu, w którym znajduje się plik TestTemplate.tt.  
   
      Ten folder zawiera także plik TestTemplate1.txt.  
   
-6.  Otwórz ten plik, aby zobaczyć wyniki przekształcenia szablonu tekstu.  
+6. Otwórz ten plik, aby zobaczyć wyniki przekształcenia szablonu tekstu.  
   
      Pojawia się wygenerowany tekst wyjściowy o następującej zawartości:  
   

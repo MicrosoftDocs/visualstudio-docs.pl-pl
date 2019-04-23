@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45ccabfbeceeeb64a07764cc4ed32d6dead00db8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e9695755967aa1b66aa7cda2d784ae88b0fc1b42
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644487"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104411"
 ---
 # <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>Instrukcje: Dodawanie właściwości do niestandardowego typu elementu projektu SharePoint
   Podczas definiowania niestandardowego typu elementu projektu SharePoint, można dodać właściwość do elementu projektu. Właściwość pojawia się w **właściwości** okna po wybraniu elementu projektu w **Eksploratora rozwiązań**.
@@ -28,11 +28,11 @@ ms.locfileid: "56644487"
 
 ### <a name="to-add-a-property-to-a-definition-of-a-project-item-type"></a>Aby dodać właściwość do definicji typu elementu projektu
 
-1.  Zdefiniuj klasę z właściwością publiczną, który reprezentuje właściwość, którą chcesz dodać do tego typu elementu niestandardowego projektu. Jeśli chcesz dodać wiele właściwości do typu elementu niestandardowego projektu, można zdefiniować wszystkie właściwości w tej samej klasy lub w różnych klas.
+1. Zdefiniuj klasę z właściwością publiczną, który reprezentuje właściwość, którą chcesz dodać do tego typu elementu niestandardowego projektu. Jeśli chcesz dodać wiele właściwości do typu elementu niestandardowego projektu, można zdefiniować wszystkie właściwości w tej samej klasy lub w różnych klas.
 
-2.  W <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> metody usługi <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implementacji, uchwyt <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> zdarzenia *projectItemTypeDefinition* parametru.
+2. W <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> metody usługi <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implementacji, uchwyt <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> zdarzenia *projectItemTypeDefinition* parametru.
 
-3.  W procedurze obsługi zdarzeń dla <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> zdarzenia dodaje wystąpienie klasy właściwości niestandardowych do <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A> zbiór parametr argumenty zdarzenia.
+3. W procedurze obsługi zdarzeń dla <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> zdarzenia dodaje wystąpienie klasy właściwości niestandardowych do <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A> zbiór parametr argumenty zdarzenia.
 
 ## <a name="example"></a>Przykład
  Poniższy przykład kodu pokazuje, jak dodać właściwość o nazwie **właściwość przykład** do niestandardowego elementu typ projektu.
@@ -48,22 +48,22 @@ ms.locfileid: "56644487"
 ### <a name="specify-the-behavior-of-custom-properties"></a>Określ zachowanie właściwości niestandardowe
  Można zdefiniować jak właściwość niestandardową wygląda i zachowuje się tak **właściwości** okna przez zastosowanie atrybutów z <xref:System.ComponentModel> przestrzeń nazw do definicji właściwości. Następujące atrybuty są przydatne w wielu scenariuszach:
 
--   <xref:System.ComponentModel.DisplayNameAttribute>: Określa nazwę właściwości, która pojawia się w **właściwości** okna.
+- <xref:System.ComponentModel.DisplayNameAttribute>: Określa nazwę właściwości, która pojawia się w **właściwości** okna.
 
--   <xref:System.ComponentModel.DescriptionAttribute>: Określa ciąg opisu, który pojawia się w dolnej części **właściwości** okno po wybraniu właściwości.
+- <xref:System.ComponentModel.DescriptionAttribute>: Określa ciąg opisu, który pojawia się w dolnej części **właściwości** okno po wybraniu właściwości.
 
--   <xref:System.ComponentModel.DefaultValueAttribute>: Określa domyślną wartość właściwości.
+- <xref:System.ComponentModel.DefaultValueAttribute>: Określa domyślną wartość właściwości.
 
--   <xref:System.ComponentModel.TypeConverterAttribute>: Określa niestandardowe konwersji między ciąg, który jest wyświetlany w **właściwości** okna, a wartość właściwości innych niż ciąg.
+- <xref:System.ComponentModel.TypeConverterAttribute>: Określa niestandardowe konwersji między ciąg, który jest wyświetlany w **właściwości** okna, a wartość właściwości innych niż ciąg.
 
--   <xref:System.ComponentModel.EditorAttribute>: Określa niestandardowy Edytor służące do modyfikowania właściwości.
+- <xref:System.ComponentModel.EditorAttribute>: Określa niestandardowy Edytor służące do modyfikowania właściwości.
 
 ## <a name="compile-the-code"></a>Skompilować kod
  Te przykłady kodu wymagają projekt biblioteki klas z odwołaniami do następujących zestawów:
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-project-item"></a>Wdrożenia elementu projektu
  Aby włączyć innych deweloperzy mogą używać element projektu, należy utworzyć szablon projektu lub szablonu elementu projektu. Aby uzyskać więcej informacji, zobacz [Tworzenie elementu szablonów i szablonów projektu dla elementów projektu programu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).

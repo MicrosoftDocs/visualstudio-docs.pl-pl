@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b924cb02f46a0857c21903bed9200ed4ef79b6db
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0713ae13038991ec65dcbebe350c9085f7d6a94a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640860"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103423"
 ---
 # <a name="perftips"></a>Perftip
 Debuger programu Visual Studio *Perftip* i zintegrowane z debugerem **narzędzia diagnostyczne** ułatwiają monitorowanie i analizowanie wydajności aplikacji podczas debugowania.
@@ -32,27 +32,27 @@ Debuger programu Visual Studio *Perftip* i zintegrowane z debugerem **narzędzia
 
  ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
 
--   **Zdarzenia przerwania** osi czasu Oznacz punkty przerwania, które zostały trafień w sesji debugowania. Kliknij zdarzenie, aby go zaznaczyć **debugera** listy szczegóły.
+- **Zdarzenia przerwania** osi czasu Oznacz punkty przerwania, które zostały trafień w sesji debugowania. Kliknij zdarzenie, aby go zaznaczyć **debugera** listy szczegóły.
 
--   **Wykorzystanie procesora CPU** wykres przedstawia zmiany w użyciu procesora CPU dla wszystkich rdzeni procesora w sesji debugowania.
+- **Wykorzystanie procesora CPU** wykres przedstawia zmiany w użyciu procesora CPU dla wszystkich rdzeni procesora w sesji debugowania.
 
--   **Zdarzenia** listę **debugera** w okienku szczegółów obejmują elementy, dla każdego zdarzenia przerwania.
+- **Zdarzenia** listę **debugera** w okienku szczegółów obejmują elementy, dla każdego zdarzenia przerwania.
 
--   **Czas trwania** kolumny zdarzeniu przerwania przedstawia czas, jaki upłynął od zdarzenia i poprzedniego punktu przerwania.
+- **Czas trwania** kolumny zdarzeniu przerwania przedstawia czas, jaki upłynął od zdarzenia i poprzedniego punktu przerwania.
 
 ## <a name="turn-perftips-on-or-off"></a>Włączanie funkcji PerfTips i wyłączanie
  Aby włączyć lub wyłączyć Perftip:
 
-1.  Na **debugowania** menu, wybierz **opcje**.
+1. Na **debugowania** menu, wybierz **opcje**.
 
-2.  Zaznacz lub wyczyść **Pokaż upłynęło PerfTip podczas debugowania**.
+2. Zaznacz lub wyczyść **Pokaż upłynęło PerfTip podczas debugowania**.
 
 ## <a name="turn-the-diagnostic-tools-window-on-or-off"></a>Włącz okno narzędzia diagnostyczne lub wyłącz
  Aby włączyć lub wyłączyć w oknie narzędzia diagnostyczne:
 
-1.  Na **debugowania** menu, wybierz **opcje**.
+1. Na **debugowania** menu, wybierz **opcje**.
 
-2.  Zaznacz lub wyczyść **Włącz narzędzia diagnostyczne podczas debugowania**.
+2. Zaznacz lub wyczyść **Włącz narzędzia diagnostyczne podczas debugowania**.
 
 ## <a name="see-also"></a>Zobacz także
 - [Profilowanie w programie Visual Studio](../profiling/index.md)

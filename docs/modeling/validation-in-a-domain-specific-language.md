@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd81854dfa603063a70b2fe11b06eff341c203f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 09c16e55766c0239346540dfcc74b99b2ed8579b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913057"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103598"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Sprawdzanie poprawności w języku specyficznym dla domeny
 Autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczenia sprawdzania poprawności, aby sprawdzić, czy model utworzony przez użytkownika jest znaczący. Na przykład modem DSL umożliwia użytkownikom rysowanie drzewa rodziny osób oraz ich elementów nadrzędnych, można zapisać ograniczenie, które gwarantuje, że elementy podrzędne daty urodzenia po ich elementy nadrzędne.
@@ -54,13 +54,13 @@ Autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczenia sp
 
 1. Włącz sprawdzanie poprawności w **Editor\Validation** węzła:
 
-   1.  Otwórz **Dsl\DslDefinition.dsl**.
+   1. Otwórz **Dsl\DslDefinition.dsl**.
 
-   2.  W Eksploratorze DSL rozwiń **edytora** a następnie wybierz węzeł **weryfikacji**.
+   2. W Eksploratorze DSL rozwiń **edytora** a następnie wybierz węzeł **weryfikacji**.
 
-   3.  W oknie właściwości ustaw **używa** właściwości `true`. Najwygodniej ustawiania tych właściwości jest.
+   3. W oknie właściwości ustaw **używa** właściwości `true`. Najwygodniej ustawiania tych właściwości jest.
 
-   4.  Kliknij przycisk **Przekształć wszystkie szablony** w **Eksploratora rozwiązań** paska narzędzi.
+   4. Kliknij przycisk **Przekształć wszystkie szablony** w **Eksploratora rozwiązań** paska narzędzi.
 
 2. Napisz częściowych definicji klasy dla co najmniej jednej klasy domeny lub relacji domeny. Zapisz te definicje w nowym pliku kodu w **Dsl** projektu.
 
@@ -70,7 +70,7 @@ Autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczenia sp
    [ValidationState(ValidationState.Enabled)]
    ```
 
-   -   Domyślnie ten atrybut umożliwi sprawdzania poprawności dla klas pochodnych. Jeśli chcesz wyłączyć sprawdzanie poprawności dla określonej klasy pochodnej, możesz użyć `ValidationState.Disabled`.
+   - Domyślnie ten atrybut umożliwi sprawdzania poprawności dla klas pochodnych. Jeśli chcesz wyłączyć sprawdzanie poprawności dla określonej klasy pochodnej, możesz użyć `ValidationState.Disabled`.
 
 4. Dodaj metody sprawdzania poprawności do klasy. Każda metoda sprawdzania poprawności mogą mieć dowolną nazwę, ale ma jeden parametr typu <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.
 

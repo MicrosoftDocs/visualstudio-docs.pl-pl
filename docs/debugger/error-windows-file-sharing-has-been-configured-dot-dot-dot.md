@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 669a66f95c4e93dc9bee936cf36973cae20a2a4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 89224dc5394f248ea82d428731ef387cb705ff27
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698888"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099809"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>Błąd: Udostępnianie plików systemu Windows zostało skonfigurowane...
 Udostępnianie plików Windows został skonfigurowany, tak aby połączy się z komputerem zdalnym przy użyciu innej nazwy użytkownika. Jest to niezgodne z funkcją debugowania zdalnego
@@ -32,16 +32,16 @@ Udostępnianie plików Windows został skonfigurowany, tak aby połączy się z 
 
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd
 
-1.  Zaloguj się na komputerze lokalnym komputera, który debugujesz, przy użyciu nazwy konta.
+1. Zaloguj się na komputerze lokalnym komputera, który debugujesz, przy użyciu nazwy konta.
 
      —lub—
 
      . Rozłącz z komputera zdalnego, a następnie ponownie skonfiguruj Udostępnianie plików, połączyć się z innego komputera przy użyciu nazwy konta:
 
-    1.  Na **Start** menu wskaż **Akcesoria**, a następnie kliknij przycisk **polecenia**.
+    1. Na **Start** menu wskaż **Akcesoria**, a następnie kliknij przycisk **polecenia**.
 
-    2.  W wierszu polecenia Windows wpisz:
+    2. W wierszu polecenia Windows wpisz:
 
          `net use /delete computer_name`
 
-    3.  Zmień ustawienia udostępniania plików przy użyciu dowolnej z metod opisanych w Pomocy Windows.
+    3. Zmień ustawienia udostępniania plików przy użyciu dowolnej z metod opisanych w Pomocy Windows.

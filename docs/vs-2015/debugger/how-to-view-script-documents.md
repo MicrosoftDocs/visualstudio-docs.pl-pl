@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cadfa9cf4c07b84f8e0f4c00678a858876c25bd0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 88f923ab0447f1ac7d57e84d94f0ab442d912d67
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795015"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104216"
 ---
 # <a name="how-to-view-script-documents"></a>Instrukcje: Wyświetlanie dokumentów skryptu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ We wcześniejszych wersjach programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)
   
 ### <a name="to-view-a-server-side-script-document"></a>Aby wyświetlić dokument skryptu po stronie serwera  
   
-1.  W **Eksploratora rozwiązań**, otwórz  **\<Pathname witryny sieci Web >** węzła.  
+1. W **Eksploratora rozwiązań**, otwórz  **\<Pathname witryny sieci Web >** węzła.  
   
-2.  Kliknij dwukrotnie plik skryptu, który chcesz wyświetlić.  
+2. Kliknij dwukrotnie plik skryptu, który chcesz wyświetlić.  
   
      Plik skryptu po stronie serwera, zostanie otwarty w oknie źródła.  
   
 ### <a name="to-view-a-client-side-script-document"></a>Aby wyświetlić dokument skryptu po stronie klienta  
   
-1.  W **Eksploratora rozwiązań**, otwórz **dokumenty skryptów** węzła.  
+1. W **Eksploratora rozwiązań**, otwórz **dokumenty skryptów** węzła.  
   
-2.  Kliknij dwukrotnie plik skryptu, który chcesz wyświetlić.  
+2. Kliknij dwukrotnie plik skryptu, który chcesz wyświetlić.  
   
      Plik skryptu po stronie klienta zostanie otwarty w oknie źródła.  
   

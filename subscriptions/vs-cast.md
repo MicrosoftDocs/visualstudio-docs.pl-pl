@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat wyróżnienia RZUTOWANIA korzyści dostępne w wybranych subskrypcjach programu Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 1d4466fa2a4fac38849a7b157921094d769a4e04
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a96b314a22bf3036167b0d7b1bb6077edee01f59
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650138"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100342"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Wyróżnij RZUTOWANIA korzyści w ramach subskrypcji programu Visual Studio
 
@@ -39,41 +39,41 @@ Subskrybenci programu Visual Studio Enterprise mogą uzyskać bezpłatne i pełn
    > [!NOTE]
    > Aktywacje korzyści wyróżnić RZUTOWANIA są ograniczone do 10 w ramach organizacji.  Jeśli ma już użyte aktywacje dziesięć Twojej organizacji, będzie można aktywować korzyść wyróżnić RZUTOWANIA i otrzymasz wiadomość e-mail z dalszych informacji.
 
- 0. Po przesłaniu informacji zostanie wyświetlona strona potwierdzenia otrzymania żądania.
+0. Po przesłaniu informacji zostanie wyświetlona strona potwierdzenia otrzymania żądania.
 
     > [!div class="mx-imgBorder"]
     > ![Strony Podziękowania wyróżnienia RZUTOWANIA](_img/vs-cast-highlight/vs-cast-highlight-thankyou.png)
 
-0.  Zespół RZUTOWANIA oceni Twoje żądanie i skontaktuje się z Tobą, aby zakończyć tworzenie Twojego konta.
+0. Zespół RZUTOWANIA oceni Twoje żądanie i skontaktuje się z Tobą, aby zakończyć tworzenie Twojego konta.
 
-0.  Otrzymasz również następującą wiadomość e-mail z RZUTOWANIA, potwierdzenie odebrania żądania.
+0. Otrzymasz również następującą wiadomość e-mail z RZUTOWANIA, potwierdzenie odebrania żądania.
 
-   *Dziękujemy za Twoje żądanie aktywować dostęp do 30 dni, aby wyróżnić CAST - Ekskluzywna oferta dla klientów programu Microsoft Visual Studio Enterprise!*
-
-   *Firma Microsoft obecnie przeglądania Twoje żądanie dotyczące aktywacji i dostępu, aby wyróżnić RZUTOWANIA. Powrót po awarii z mnie usłyszysz w nie więcej niż 48 godzin.*
-
-   *Najlepszym rozwiązaniem,*
-   *Greg*
+   > *Dziękujemy za Twoje żądanie aktywować dostęp do 30 dni, aby wyróżnić CAST - Ekskluzywna oferta dla klientów programu Microsoft Visual Studio Enterprise!*
+   >
+   > *Firma Microsoft obecnie przeglądania Twoje żądanie dotyczące aktywacji i dostępu, aby wyróżnić RZUTOWANIA. Powrót po awarii z mnie usłyszysz w nie więcej niż 48 godzin.*
+   >
+   > *Najlepszym rozwiązaniem,*
+   > *Greg*
 
 Po zatwierdzeniu żądania otrzymasz drugiej wiadomości e-mail, potwierdzający pomyślne utworzenie konta usługi i pytaniem, możesz kliknąć link aktywacyjny, aby zakończyć proces aktywacji.
 
-   *Firma Microsoft pomyślnie zweryfikowane i zweryfikować Twoje żądanie dostępu, wyróżnij RZUTOWANIA. Witamy na pokład!*
-
-   *Istnieje jedna czynność wymaganej od swojej stronie, aby ukończyć aktywację. Będą mieć otrzymasz wiadomość e-mail z noreply@casthighlight.com z łącze do aktywacji. Zaznacz pole Twojej wiadomości-śmieci, jeśli nie widzisz wiadomości e-mail.*
-
-   *Kliknij link aktywacyjny, podany w wiadomości e-mail i zakończyć proces aktywacji.*
-
-   *Po uaktywnieniu będą dostępne 30-dniowego do wyróżnienia RZUTOWANIA platformy i możesz dodać maksymalnie 5 aplikacji. Należy pamiętać, że jest to Ekskluzywna oferta dostępna dla klientów programu Microsoft Visual Studio Enterprise tylko.*
-
-   *Będzie można się z Tobą, aby upewnić się, że wszystko, czego bezproblemową dla Ciebie. W międzyczasie poniżej przedstawiono niektóre przydatną zawartość, aby rozpocząć pracę:*
-
-   - [Wyróżnij CAST - pokaz CloudReadiness](https://www.youtube.com/watch?v=wFUpAzn1Iu8&feature=youtu.be)
-    -   [Getting Started Guide (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
-    -   Samouczek wideo — [skonfigurować Portfolio](https://www.youtube.com/watch?v=MDm8ln4vuGE)
-    -   Samouczek wideo — [Dodawanie aplikacji](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
-
-   *Najlepszym rozwiązaniem,*
-   *Greg*
+   > *Firma Microsoft pomyślnie zweryfikowane i zweryfikować Twoje żądanie dostępu, wyróżnij RZUTOWANIA. Witamy na pokład!*
+   >
+   > *Istnieje jedna czynność wymaganej od swojej stronie, aby ukończyć aktywację. Będą mieć otrzymasz wiadomość e-mail z noreply@casthighlight.com z łącze do aktywacji. Zaznacz pole Twojej wiadomości-śmieci, jeśli nie widzisz wiadomości e-mail.*
+   >
+   > *Kliknij link aktywacyjny, podany w wiadomości e-mail i zakończyć proces aktywacji.*
+   >
+   > *Po uaktywnieniu będą dostępne 30-dniowego do wyróżnienia RZUTOWANIA platformy i możesz dodać maksymalnie 5 aplikacji. Należy pamiętać, że jest to Ekskluzywna oferta dostępna dla klientów programu Microsoft Visual Studio Enterprise tylko.*
+   >
+   > *Będzie można się z Tobą, aby upewnić się, że wszystko, czego bezproblemową dla Ciebie. W międzyczasie poniżej przedstawiono niektóre przydatną zawartość, aby rozpocząć pracę:*
+   >
+   > - [Wyróżnij CAST - pokaz CloudReadiness](https://www.youtube.com/watch?v=wFUpAzn1Iu8&feature=youtu.be)
+   > - [Getting Started Guide (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
+   > - Samouczek wideo — [skonfigurować Portfolio](https://www.youtube.com/watch?v=MDm8ln4vuGE)
+   > - Samouczek wideo — [Dodawanie aplikacji](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
+   >
+   > *Najlepszym rozwiązaniem,*
+   > *Greg*
 
    > [!NOTE]
    > Należy kliknąć łącze do aktywacji w wiadomości e-mail, które otrzymujesz.  W przeciwnym razie nie można korzystać z subskrypcji, wyróżnij RZUTOWANIA. Jeśli nie widzisz wiadomości e-mail w skrzynce odbiorczej, koniecznie sprawdź foldery spamu.
@@ -98,12 +98,12 @@ Po zatwierdzeniu żądania otrzymasz drugiej wiadomości e-mail, potwierdzający
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
--  Potrzebujesz pomocy dotyczącej korzystania z wyróżnić RZUTOWANIA?  Zapoznaj się z tymi zasobami:
+- Potrzebujesz pomocy dotyczącej korzystania z wyróżnić RZUTOWANIA?  Zapoznaj się z tymi zasobami:
     - [Prześlij żądanie pomocy technicznej](https://casthighlight.com/support/)
     - [Getting Started Guide (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
 
--  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
+- Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Następne kroki
 

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5c970fe4cd1bbd87f54e10be85adf37554c10675
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ed5b0f84ea19e465a9d820d9f25c4fc19546c639
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950542"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103384"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Zapisywanie danych za pomocą metod DBDirect adaptera TableAdapter
 
@@ -29,15 +29,15 @@ Ten przewodnik zawiera szczegółowe instrukcje na temat uruchamiania instrukcji
 
 Z tego instruktażu dowiesz się jak:
 
--   Utwórz nową **aplikacja interfejsu Windows Forms**.
+- Utwórz nową **aplikacja interfejsu Windows Forms**.
 
--   Tworzenie i konfigurowanie zestawu danych za pomocą [Kreatora konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png).
+- Tworzenie i konfigurowanie zestawu danych za pomocą [Kreatora konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png).
 
--   Wybierz kontrolkę do utworzenia w formularzu podczas przeciągania elementów z **źródeł danych** okna. Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Wybierz kontrolkę do utworzenia w formularzu podczas przeciągania elementów z **źródeł danych** okna. Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--   Tworzenie formularza powiązanych z danymi przez przeciąganie elementów z **źródeł danych** okna na formularzu.
+- Tworzenie formularza powiązanych z danymi przez przeciąganie elementów z **źródeł danych** okna na formularzu.
 
--   Dodaj metody do bezpośredniego dostępu do bazy danych oraz wykonać wstawiania, aktualizacji i usuwania.
+- Dodaj metody do bezpośredniego dostępu do bazy danych oraz wykonać wstawiania, aktualizacji i usuwania.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -87,11 +87,11 @@ Ten krok używa **Kreatora konfiguracji źródła danych** można utworzyć źr�
 
 4. Na **wybierz połączenie danych** ekranu, wykonaj jedną z następujących czynności:
 
-    -   Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.
+    - Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.
 
          —lub—
 
-    -   Wybierz **nowe połączenie** można uruchomić **Dodawanie/modyfikowanie połączenia** okno dialogowe.
+    - Wybierz **nowe połączenie** można uruchomić **Dodawanie/modyfikowanie połączenia** okno dialogowe.
 
 5. Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie wybierz **dalej**.
 
@@ -152,21 +152,21 @@ A <xref:System.Windows.Forms.DataGridView> kontroli i pasek narzędzi (<xref:Sys
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 
--   Wybierz **F5** do uruchomienia aplikacji.
+- Wybierz **F5** do uruchomienia aplikacji.
 
--   Wybierz **Wstaw** przycisk i sprawdź, czy nowy rekord jest wyświetlany w siatce.
+- Wybierz **Wstaw** przycisk i sprawdź, czy nowy rekord jest wyświetlany w siatce.
 
--   Wybierz **aktualizacji** przycisk, a następnie sprawdź, czy rekord zostanie zaktualizowany w siatce.
+- Wybierz **aktualizacji** przycisk, a następnie sprawdź, czy rekord zostanie zaktualizowany w siatce.
 
--   Wybierz **Usuń** przycisk, a następnie sprawdź, czy rekord zostanie usunięty z siatki.
+- Wybierz **Usuń** przycisk, a następnie sprawdź, czy rekord zostanie usunięty z siatki.
 
 ## <a name="next-steps"></a>Następne kroki
 
 W zależności od wymagań aplikacji istnieje kilka kroków, które można wykonać po utworzeniu formularza powiązanych z danymi. Niektóre udoskonalenia, których można dokonać w tym instruktażu obejmują:
 
--   Dodawanie funkcji wyszukiwania do formularza.
+- Dodawanie funkcji wyszukiwania do formularza.
 
--   Dodawanie dodatkowych tabel do zestawu danych, wybierając **Konfigurowanie zestawu danych za pomocą kreatora** z poziomu **źródeł danych** okna. Można dodawać formanty, które wyświetlają pokrewne dane, przeciągając pokrewne węzły na formularzu. Aby uzyskać więcej informacji, zobacz [relacje w zestawach danych](relationships-in-datasets.md).
+- Dodawanie dodatkowych tabel do zestawu danych, wybierając **Konfigurowanie zestawu danych za pomocą kreatora** z poziomu **źródeł danych** okna. Można dodawać formanty, które wyświetlają pokrewne dane, przeciągając pokrewne węzły na formularzu. Aby uzyskać więcej informacji, zobacz [relacje w zestawach danych](relationships-in-datasets.md).
 
 ## <a name="see-also"></a>Zobacz także
 

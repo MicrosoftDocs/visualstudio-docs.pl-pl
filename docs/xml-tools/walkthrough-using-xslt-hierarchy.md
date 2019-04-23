@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7c7e93fa0ba58f7888212c48e28d21bd564ae7c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 3cf836ed59dadba71314aa38cd4d2907bee384a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526311"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051638"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Przewodnik: Użycie hierarchii XSLT
 
@@ -69,7 +69,7 @@ W przykładzie w tym temacie pokazano, debugowanie w arkuszu stylów odwołania.
     </xsl:stylesheet>
     ```
 
-3.  Dodaj następujący kod *xslinclude.xsl* pliku:
+3. Dodaj następujący kod *xslinclude.xsl* pliku:
 
     ```xml
     <?xml version='1.0'?>
@@ -103,11 +103,11 @@ W przykładzie w tym temacie pokazano, debugowanie w arkuszu stylów odwołania.
     </xsl:stylesheet>
     ```
 
-4.  Dodaj punkt przerwania w instrukcji `<xsl:include href="xslincludefile.xsl" />`.
+4. Dodaj punkt przerwania w instrukcji `<xsl:include href="xslincludefile.xsl" />`.
 
-5.  Rozpocznij debugowanie.
+5. Rozpocznij debugowanie.
 
-6.  Gdy debuger zatrzymuje się w instrukcji `<xsl:include href="xslincludefile.xsl" />`, naciśnij klawisz **Step Into** przycisku. Debugowanie może być kontynuowane w arkuszu stylów odwołania. Hierarchia jest widoczna i Projektant wyświetla prawidłową ścieżkę.
+6. Gdy debuger zatrzymuje się w instrukcji `<xsl:include href="xslincludefile.xsl" />`, naciśnij klawisz **Step Into** przycisku. Debugowanie może być kontynuowane w arkuszu stylów odwołania. Hierarchia jest widoczna i Projektant wyświetla prawidłową ścieżkę.
 
 ## <a name="see-also"></a>Zobacz także
 

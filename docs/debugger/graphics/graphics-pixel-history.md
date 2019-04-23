@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d02d56441eb8cb5a47fcdfc6cfa0db153fd72b8b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 23bdabcdd19bd12729d7b505ef4897d38ba8ad69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715703"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100994"
 ---
 # <a name="graphics-pixel-history"></a>Historia pikseli grafiki
 Okno Historia pikseli grafiki w analizatora grafiki programu Visual Studio pomaga zrozumieć wpływ piksela określone przez zdarzenia Direct3D występujących podczas ramki grach i aplikacjach.
@@ -35,7 +35,7 @@ Okno Historia pikseli grafiki w analizatora grafiki programu Visual Studio pomag
 
  Można rozwinąć każdego podstawowego, aby sprawdzić, jak dane wyjściowe programu do cieniowania pikseli została scalona z istniejących kolor piksela, aby otrzymać kolor wyniku. W tym miejscu można zbadać lub debugowanie kodu programu do cieniowania pikseli, która jest skojarzona z podstawowego i można rozwinąć węzła programu do cieniowania wierzchołków do zbadania cieniowania wierzchołków, danych wejściowych.
 
-###  <a name="exclusion"></a> Pierwotny wykluczeń
+### <a name="exclusion"></a> Pierwotny wykluczeń
  Jeśli podstawowy jest wykluczony z wpływu na kolor piksela, wyłączenie może wystąpić z różnych powodów. Każdy powód jest reprezentowany przez ikonę która jest opisane w poniższej tabeli:
 
 |Ikona|Przyczynę wyłączenia|
@@ -52,22 +52,22 @@ Okno Historia pikseli grafiki w analizatora grafiki programu Visual Studio pomag
 
 ##### <a name="to-view-a-shaders-source-code"></a>Aby wyświetlić kod źródłowy modułu cieniującego
 
-1.  W **Historia pikseli grafiki** oknie Znajdź wywołania rysowania, która odnosi się do programu do cieniowania chcesz zbadać i rozwiń go.
+1. W **Historia pikseli grafiki** oknie Znajdź wywołania rysowania, która odnosi się do programu do cieniowania chcesz zbadać i rozwiń go.
 
-2.  W obszarze rysowania Zadzwonimy do Ciebie po prostu rozwinięte, wybierz podstawowy, który demonstruje problem, który chcesz wziąć i rozwiń go.
+2. W obszarze rysowania Zadzwonimy do Ciebie po prostu rozwinięte, wybierz podstawowy, który demonstruje problem, który chcesz wziąć i rozwiń go.
 
-3.  W obszarze podstawowego interesuje Cię, skorzystaj z linku tytuł programu do cieniowania — na przykład, kliknij link **obj:30 program do cieniowania wierzchołków** Aby wyświetlić kod źródłowy modułu cieniującego wierzchołek.
+3. W obszarze podstawowego interesuje Cię, skorzystaj z linku tytuł programu do cieniowania — na przykład, kliknij link **obj:30 program do cieniowania wierzchołków** Aby wyświetlić kod źródłowy modułu cieniującego wierzchołek.
 
     > [!TIP]
     >  Liczba obiektów **obj:30**, identyfikuje ten program do cieniowania w całym interfejsu analizatora grafiki przykład w oknie etapy potoku i tabela obiektu.
 
 ##### <a name="to-debug-a-shader"></a>Do debugowania cieniowania
 
-1.  W **Historia pikseli grafiki** oknie Znajdź wywołania rysowania, która odnosi się do programu do cieniowania chcesz zbadać i rozwiń go.
+1. W **Historia pikseli grafiki** oknie Znajdź wywołania rysowania, która odnosi się do programu do cieniowania chcesz zbadać i rozwiń go.
 
-2.  Następnie w obszarze wywołanie rysowania właśnie rozwiniętej, wybierz podstawowy, który pokazuje problem interesuje i rozwiń go.
+2. Następnie w obszarze wywołanie rysowania właśnie rozwiniętej, wybierz podstawowy, który pokazuje problem interesuje i rozwiń go.
 
-3.  W obszarze podstawowego interesuje Cię, wybierz opcję **Rozpocznij debugowanie**. Ten punkt wejścia do wartości domyślnych debugera HLSL pierwszego wywołania modułu cieniującego dla odpowiedniego podstawowego — czyli pierwszej pikseli lub wierzchołek, który jest przetwarzany przez programu do cieniowania. Istnieje tylko jeden piksel, skojarzony element pierwotny, ale ma więcej niż jednego wywołania programu do cieniowania wierzchołków linii i trójkąty.
+3. W obszarze podstawowego interesuje Cię, wybierz opcję **Rozpocznij debugowanie**. Ten punkt wejścia do wartości domyślnych debugera HLSL pierwszego wywołania modułu cieniującego dla odpowiedniego podstawowego — czyli pierwszej pikseli lub wierzchołek, który jest przetwarzany przez programu do cieniowania. Istnieje tylko jeden piksel, skojarzony element pierwotny, ale ma więcej niż jednego wywołania programu do cieniowania wierzchołków linii i trójkąty.
 
      Aby debugować wywołania programu do cieniowania wierzchołków dla określonego wierzchołka, rozwiń link tytułu VertexShader i Znajdź wierzchołka interesuje Cię, następnie wybierz **Rozpocznij debugowanie** obok niej.
 

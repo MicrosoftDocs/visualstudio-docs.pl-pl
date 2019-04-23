@@ -19,12 +19,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9a2d6420abc9b9d70ce23c1dc8dc1aab5941119f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a39a2ef42463bd781f6bb8a24e3cfbc10b937b90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54798990"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056071"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identyfikowanie i dostosowywanie skrótów klawiaturowych w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,48 +52,48 @@ Można zidentyfikować skróty klawiaturowe dla poleceń programu Visual Studio,
 > [!NOTE]
 >  Twoje ustawienia i wersja programu Visual Studio mogą zmienić nazwy i lokalizacje poleceń menu oraz opcje, które pojawiają się w oknach dialogowych. Ten temat opiera się na **ogólnych ustawieniach projektowych**.
 
-##  <a name="bkmk_identify"></a> Identyfikowanie skrótu klawiaturowego
+## <a name="bkmk_identify"></a> Identyfikowanie skrótu klawiaturowego
 
-1.  Na pasku menu wybierz **narzędzia**, **opcje**.
+1. Na pasku menu wybierz **narzędzia**, **opcje**.
 
-2.  Rozwiń **środowiska**, a następnie wybierz **klawiatury**.
+2. Rozwiń **środowiska**, a następnie wybierz **klawiatury**.
 
      ![Wyświetlić skróty klawiaturowe w oknie dialogowym Opcje](../ide/media/optionskeyboard.png "OptionsKeyboard")
 
-3.  W **Pokaż polecenia zawierające** wpisz całość lub część nazwy polecenia bez spacji.
+3. W **Pokaż polecenia zawierające** wpisz całość lub część nazwy polecenia bez spacji.
 
      Na przykład można znaleźć polecenia dla **solutionexplorer**.
 
-4.  Na liście, wybierz odpowiednie polecenie.
+4. Na liście, wybierz odpowiednie polecenie.
 
      Na przykład, można wybrać **View.SolutionExplorer**.
 
-5.  Jeśli polecenie ma skrót klawiaturowy, pojawia się w **skróty dla wybranego polecenia** listy.
+5. Jeśli polecenie ma skrót klawiaturowy, pojawia się w **skróty dla wybranego polecenia** listy.
 
      ![Wyświetl skrót dla określonego polecenia](../ide/media/viewshortcut.png "ViewShortcut")
 
-##  <a name="bkmk_assign"></a> Dostosowywanie skrótu klawiaturowego
+## <a name="bkmk_assign"></a> Dostosowywanie skrótu klawiaturowego
 
-1.  Na pasku menu wybierz **narzędzia**, **opcje**.
+1. Na pasku menu wybierz **narzędzia**, **opcje**.
 
-2.  Rozwiń **środowiska** folder, a następnie wybierz **klawiatury**.
+2. Rozwiń **środowiska** folder, a następnie wybierz **klawiatury**.
 
      ![Wyświetlić skróty klawiaturowe w oknie dialogowym Opcje](../ide/media/optionskeyboard.png "OptionsKeyboard")
 
-3.  W **Pokaż polecenia zawierające** wpisz całość lub część nazwy polecenia bez spacji.
+3. W **Pokaż polecenia zawierające** wpisz całość lub część nazwy polecenia bez spacji.
 
      Na przykład można znaleźć polecenia dla **solutionexplorer**.
 
-4.  Z listy wybierz polecenie, do którego chcesz przypisać skrót klawiaturowy.
+4. Z listy wybierz polecenie, do którego chcesz przypisać skrót klawiaturowy.
 
-5.  W **Użyj nowego skrótu** listy, wybierz obszar funkcji, w której chcesz użyć skrótu.
+5. W **Użyj nowego skrótu** listy, wybierz obszar funkcji, w której chcesz użyć skrótu.
 
      Na przykład, można wybrać **Global** Jeśli chcesz, aby skrót działał we wszystkich kontekstach. Można użyć dowolnego skrótu, który nie jest mapowany (jako globalny) w innym edytorze. W przeciwnym razie edytor zastępuje skrót.
 
     > [!NOTE]
     >  Nie można przypisać następujących klawiszy jako części skrótów klawiaturowych w **Global**: Drukuj podręcznego/Sys Rq, Scroll Lock, Pause/Break, kartę, włączony klawisz Caps Lock, Insert, Home, End, Page Up, Page Down, klawiszy logo Windows, klucz aplikacji, za pomocą klawiszy strzałek lub Enter; Num Lock, Delete lub Clear na klawiaturze numerycznej; lub Ctrl + Alt + Delete.
 
-6.  W **naciśnij klawisze skrótu** wprowadź skrót, którego chcesz użyć.
+6. W **naciśnij klawisze skrótu** wprowadź skrót, którego chcesz użyć.
 
     > [!NOTE]
     >  Można utworzyć skrót, który łączy literę z klawiszem Alt, Ctrl lub oboma. Można też utworzyć skrót, który łączy klawisz Shift i literę z klawiszem Alt, Ctrl lub oboma.
@@ -102,45 +102,45 @@ Można zidentyfikować skróty klawiaturowe dla poleceń programu Visual Studio,
 
      ![Określ inny skrót dla polecenia](../ide/media/reassignshortcut.png "ReassignShortcut")
 
-7.  Wybierz **przypisać** przycisku.
+7. Wybierz **przypisać** przycisku.
 
     > [!NOTE]
     >  Jeśli określisz inny skrót dla polecenia, wybierz **przypisać** przycisk, a następnie wybierz **anulować** przycisku, okno dialogowe zostanie zamknięte, ale zmiany nie zostanie wycofana.
 
-##  <a name="bkmk_transfer"></a> Udostępnianie niestandardowych skrótów klawiaturowych
+## <a name="bkmk_transfer"></a> Udostępnianie niestandardowych skrótów klawiaturowych
  Możesz udostępniać własne skróty, eksportując je do pliku, a następnie przekazując plik innym osobom, aby mogły importować dane.
 
 #### <a name="to-export-only-keyboard-shortcuts"></a>Aby wyeksportować tylko skróty klawiaturowe
 
-1.  Na pasku menu wybierz **narzędzia**, **Import i eksport ustawień**.
+1. Na pasku menu wybierz **narzędzia**, **Import i eksport ustawień**.
 
-2.  Wybierz **Eksportuj wybrane ustawienia środowiska**, a następnie wybierz **dalej** przycisku.
+2. Wybierz **Eksportuj wybrane ustawienia środowiska**, a następnie wybierz **dalej** przycisku.
 
-3.  W obszarze **jakie ustawienia chcesz eksportować?**, wyczyść **wszystkie ustawienia** pole wyboru, rozwiń **opcje**, a następnie rozwiń węzeł **środowiska**.
+3. W obszarze **jakie ustawienia chcesz eksportować?**, wyczyść **wszystkie ustawienia** pole wyboru, rozwiń **opcje**, a następnie rozwiń węzeł **środowiska**.
 
-4.  Wybierz **klawiatury** pole wyboru, a następnie wybierz **dalej** przycisku.
+4. Wybierz **klawiatury** pole wyboru, a następnie wybierz **dalej** przycisku.
 
      ![Eksportowanie dostosować tylko skróty klawiaturowe](../ide/media/exportshortcuts.png "ExportShortcuts")
 
-5.  W **co chcesz nazwać plik swoich ustawień?** i **Store plik moich ustawień w tym katalogu** pola, albo pozostaw wartości domyślne lub określ różne wartości, a następnie wybierz  **Zakończ** przycisku.
+5. W **co chcesz nazwać plik swoich ustawień?** i **Store plik moich ustawień w tym katalogu** pola, albo pozostaw wartości domyślne lub określ różne wartości, a następnie wybierz  **Zakończ** przycisku.
 
      Domyślnie skróty są zapisywane w pliku w folderze %USERPROFILE%\Documents\Visual Studio 2013\Settings. Nazwa pliku odzwierciedla datę, kiedy zostały wyeksportowane ustawienia, a rozszerzenie to .vssettings.
 
 #### <a name="to-import-only-keyboard-shortcuts"></a>Aby zaimportować tylko skróty klawiaturowe
 
-1.  Na pasku menu wybierz **narzędzia**, **Import i eksport ustawień**.
+1. Na pasku menu wybierz **narzędzia**, **Import i eksport ustawień**.
 
-2.  Wybierz **Importuj ustawienia wybranego środowiska** przycisk opcji, a następnie wybierz **dalej** przycisku.
+2. Wybierz **Importuj ustawienia wybranego środowiska** przycisk opcji, a następnie wybierz **dalej** przycisku.
 
-3.  Wybierz **nie, tylko zaimportuj nowe ustawienia, zastępując Moje bieżące ustawienia** przycisk opcji, a następnie wybierz **dalej** przycisku.
+3. Wybierz **nie, tylko zaimportuj nowe ustawienia, zastępując Moje bieżące ustawienia** przycisk opcji, a następnie wybierz **dalej** przycisku.
 
-4.  W obszarze **Moje ustawienia**, wybierz plik zawierający skróty, które chcesz zaimportować, lub wybierz **Przeglądaj** przycisk, aby zlokalizować odpowiedni plik.
+4. W obszarze **Moje ustawienia**, wybierz plik zawierający skróty, które chcesz zaimportować, lub wybierz **Przeglądaj** przycisk, aby zlokalizować odpowiedni plik.
 
-5.  Wybierz **dalej** przycisku.
+5. Wybierz **dalej** przycisku.
 
-6.  W obszarze **ustawienia, które chcesz zaimportować?**, wyczyść **wszystkie ustawienia** pole wyboru, rozwiń **opcje**, a następnie rozwiń węzeł **środowiska**.
+6. W obszarze **ustawienia, które chcesz zaimportować?**, wyczyść **wszystkie ustawienia** pole wyboru, rozwiń **opcje**, a następnie rozwiń węzeł **środowiska**.
 
-7.  Wybierz **klawiatury** pole wyboru, a następnie wybierz **Zakończ** przycisku.
+7. Wybierz **klawiatury** pole wyboru, a następnie wybierz **Zakończ** przycisku.
 
      ![Importuj tylko dostosować skróty klawiaturowe](../ide/media/importshortcuts.png "ImportShortcuts")
 

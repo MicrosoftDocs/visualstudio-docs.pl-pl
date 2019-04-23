@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24db36d6bb3a431d5ee3848eb8a6a794980f919a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a4c170b533b1eadb60be2ec1ca5d5fe000c5b4d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777306"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055734"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Instrukcje: Wyświetlanie i edytowanie kodu za pomocą polecenia Zobacz definicję (Alt + F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Możesz użyć **Peek Definition** polecenie, aby wyświetlić i edytować kod b
   
 #### <a name="to-open-a-peek-definition-window"></a>Aby otworzyć okno Zobacz definicję  
   
-1.  Możesz znaleźć **Peek Definition** , otwierając menu skrótów dla metody, którą chcesz zbadać. (Klawiatura: Alt+F12)  
+1. Możesz znaleźć **Peek Definition** , otwierając menu skrótów dla metody, którą chcesz zbadać. (Klawiatura: Alt+F12)  
   
      Ta ilustracja przedstawia **Peek Definition** okna dla metody, która nosi nazwę `Print()`:  
   
@@ -38,33 +38,33 @@ Możesz użyć **Peek Definition** polecenie, aby wyświetlić i edytować kod b
   
      Okno definicji jest wyświetlane poniżej `printer.Print(“Hello World!”)` wiersza w oryginalnym pliku. Okno nie ukrywa żadnego kodu w pliku oryginalnym. Wiersze, które następują `printer.Print(“Hello World!”)` wywołania są wyświetlane w oknie definicji.  
   
-2.  Możesz przenieść kursor w inne miejsce w oknie definicji kodu. Nadal możesz się przemieszczać w oknie oryginalnego kodu powyżej lub poniżej okna definicji.  
+2. Możesz przenieść kursor w inne miejsce w oknie definicji kodu. Nadal możesz się przemieszczać w oknie oryginalnego kodu powyżej lub poniżej okna definicji.  
   
-3.  Można skopiować ciąg z okna definicji i wkleić go w kodzie oryginalnym. Możesz również przeciągać i upuszczać ciąg z okna definicji do oryginalnego kodu bez usuwania go z okna definicji.  
+3. Można skopiować ciąg z okna definicji i wkleić go w kodzie oryginalnym. Możesz również przeciągać i upuszczać ciąg z okna definicji do oryginalnego kodu bez usuwania go z okna definicji.  
   
-4.  Możesz zamknąć okno definicji wybierając klawisz Esc lub **Zamknij** przycisku na karcie okna definicji.  
+4. Możesz zamknąć okno definicji wybierając klawisz Esc lub **Zamknij** przycisku na karcie okna definicji.  
   
 #### <a name="to-open-a-peek-definition-window-from-within-a-peek-definition-window"></a>Aby otworzyć okno Zobacz definicję z poziomu okna Zobacz definicję  
   
--   Jeśli masz już **Peek Definition** otwarte okno, można wywołać **Peek Definition** ponownie dla kodu w tym oknie. Otwiera się inne okno definicji. Zestaw łączy do stron nadrzędnych obok karty w oknie definicji, służący do nawigacji między oknami definicji. Etykietka narzędzia na każdej kropce ukazuje nazwę pliku i ścieżkę pliku definicji, którą ta kropka reprezentuje.  
+- Jeśli masz już **Peek Definition** otwarte okno, można wywołać **Peek Definition** ponownie dla kodu w tym oknie. Otwiera się inne okno definicji. Zestaw łączy do stron nadrzędnych obok karty w oknie definicji, służący do nawigacji między oknami definicji. Etykietka narzędzia na każdej kropce ukazuje nazwę pliku i ścieżkę pliku definicji, którą ta kropka reprezentuje.  
   
      ![Okno podglądu w oknie podglądu](../ide/media/peekwithinpeek.png "PeekWithinPeek")  
   
 #### <a name="to-use-peek-definition-with-multiple-results"></a>Aby użyć funkcji Zobacz definicję z wieloma wynikami  
   
--   Jeśli używasz **Peek Definition** wobec kodu, który ma więcej niż jedną definicję (na przykład klas częściowych), lista wyników pojawi się z prawej strony widoku definicji kodu. Możesz wybrać dowolny wynik na liście, aby wyświetlić jego definicję.  
+- Jeśli używasz **Peek Definition** wobec kodu, który ma więcej niż jedną definicję (na przykład klas częściowych), lista wyników pojawi się z prawej strony widoku definicji kodu. Możesz wybrać dowolny wynik na liście, aby wyświetlić jego definicję.  
   
      ![Okno podglądu z wieloma wynikami](../ide/media/peekmultiple.png "PeekMultiple")  
   
 #### <a name="to-edit-inside-the-peek-definition-window"></a>Aby edytować wewnątrz okna Zobacz definicję  
   
--   Podczas uruchamiania do edycji wewnątrz **Peek Definition** okna, plik, który modyfikujesz automatycznie otwiera się jako oddzielna karta w edytorze kodu i odzwierciedla wprowadzone już zmiany. Możesz wprowadzić, cofnąć i zapisać zmiany w **Peek Definition** okna, a karta nadal będzie odzwierciedlała te zmiany. Nawet po zamknięciu okna bez zapisywania zmian można wprowadzić, cofnąć i zapisać więcej zmian na karcie, rozpoczynając dokładnie tam, gdzie przerwano.  
+- Podczas uruchamiania do edycji wewnątrz **Peek Definition** okna, plik, który modyfikujesz automatycznie otwiera się jako oddzielna karta w edytorze kodu i odzwierciedla wprowadzone już zmiany. Możesz wprowadzić, cofnąć i zapisać zmiany w **Peek Definition** okna, a karta nadal będzie odzwierciedlała te zmiany. Nawet po zamknięciu okna bez zapisywania zmian można wprowadzić, cofnąć i zapisać więcej zmian na karcie, rozpoczynając dokładnie tam, gdzie przerwano.  
   
      ![Edytowanie w oknie podglądu](../ide/media/peekedit.png "PeekEdit")  
   
 #### <a name="to-use-keyboard-shortcuts-for-peek-definition"></a>Aby używać skrótów klawiaturowych dla funkcji Zobacz definicję  
   
--   Można użyć następujących skrótów klawiaturowych z **Peek Definition** okna:  
+- Można użyć następujących skrótów klawiaturowych z **Peek Definition** okna:  
   
     |Funkcja|Skrót klawiaturowy|  
     |-------------------|-----------------------|  

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9e5dd79465301e5d2e6362daf70ef3e5b7c54ee
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fb4bbb124575346c930fa5539801deb3c9981cac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646320"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102175"
 ---
 # <a name="how-to-programmatically-count-characters-in-documents"></a>Instrukcje: Programowe zliczanie znaków w dokumentach
   Pierwszy znak w dokumencie jest od pozycji znaku 0, który reprezentuje punkt wstawiania. Ostatnia pozycja znaku jest równa całkowita liczba znaków w dokumencie. Można określić liczbę znaków w dokumencie za pomocą <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> właściwość <xref:Microsoft.Office.Interop.Word.Characters> kolekcji.
@@ -30,24 +30,24 @@ ms.locfileid: "56646320"
 
 ## <a name="to-display-the-number-of-characters-in-a-document-level-customization"></a>Aby wyświetlić liczbę znaków w dostosowaniu na poziomie dokumentu
 
-1.  Wybierz cały dokument.
+1. Wybierz cały dokument.
 
      [!code-vb[Trin_VstcoreWordAutomation#98](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#98)]
      [!code-csharp[Trin_VstcoreWordAutomation#98](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#98)]
 
-2.  Wyświetl liczbę znaków w dokumencie, w oknie komunikatu.
+2. Wyświetl liczbę znaków w dokumencie, w oknie komunikatu.
 
      [!code-vb[Trin_VstcoreWordAutomation#99](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#99)]
      [!code-csharp[Trin_VstcoreWordAutomation#99](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#99)]
 
 ## <a name="to-display-the-number-of-characters-in-a-vsto-add-in"></a>Aby wyświetlić liczbę znaków w dodatku narzędzi VSTO
 
-1.  Wybierz cały dokument. Poniższy przykład wybiera aktywnego dokumentu.
+1. Wybierz cały dokument. Poniższy przykład wybiera aktywnego dokumentu.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#98](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#98)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#98](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#98)]
 
-2.  Wyświetl liczbę znaków w dokumencie, w oknie komunikatu.
+2. Wyświetl liczbę znaków w dokumencie, w oknie komunikatu.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#99](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#99)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#99](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#99)]

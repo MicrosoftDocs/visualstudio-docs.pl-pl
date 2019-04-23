@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 662cd662e8fe18c5a2a8c05a7f5da21c064743b3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0f814623d8084619ccbe82d6660900055f81b3ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660752"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101187"
 ---
 # <a name="msbuild-properties1"></a>MSBuild Properties1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,11 +111,11 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
 ## <a name="creating-properties-during-execution"></a>Tworzenie właściwości podczas wykonywania  
  Właściwościom umieszczonym poza elementami `Target` wartości są przypisane w fazie obliczania kompilacji. W następnej fazie (wykonywania) właściwości można tworzyć i modyfikować w następujący sposób:  
   
--   Właściwość może być emitowana przez dowolne zadanie. Aby było wyemitować właściwość, [zadań](../msbuild/task-element-msbuild.md) element musi mieć element podrzędny [dane wyjściowe](../msbuild/output-element-msbuild.md) element, który ma `PropertyName` atrybutu.  
+- Właściwość może być emitowana przez dowolne zadanie. Aby było wyemitować właściwość, [zadań](../msbuild/task-element-msbuild.md) element musi mieć element podrzędny [dane wyjściowe](../msbuild/output-element-msbuild.md) element, który ma `PropertyName` atrybutu.  
   
--   Właściwość może być emitowana przez [CreateProperty](../msbuild/createproperty-task.md) zadania. Takie użycie jest przestarzałe.  
+- Właściwość może być emitowana przez [CreateProperty](../msbuild/createproperty-task.md) zadania. Takie użycie jest przestarzałe.  
   
--   Począwszy od platformy .NET Framework w wersji 3.5, elementy `Target` mogą zawierać elementy `PropertyGroup` zawierające deklaracje właściwości.  
+- Począwszy od platformy .NET Framework w wersji 3.5, elementy `Target` mogą zawierać elementy `PropertyGroup` zawierające deklaracje właściwości.  
   
 ## <a name="storing-xml-in-properties"></a>Przechowywanie kodu XML we właściwościach  
  Właściwości mogą zawierać dowolny kod XML pomocny w przekazywaniu wartości do zadań albo wyświetlaniu informacji o logowaniu. W przykładzie poniżej pokazano właściwość `ConfigTemplate`, która ma wartość zawierającą kod XML oraz odwołania do innych właściwości. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zastępuje odwołania do właściwości przy użyciu ich odpowiednich wartości. Wartości właściwości są przypisywane w kolejności, w jakiej występują. Dlatego w tym przykładzie właściwości użyte w odwołaniach `$(MySupportedVersion)`, `$(MyRequiredVersion)` i `$(MySafeMode)` powinny już być zdefiniowane.  

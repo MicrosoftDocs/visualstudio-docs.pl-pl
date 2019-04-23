@@ -8,12 +8,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0b8129b4ff946658c5e1b4f24c57ca77cb50e14a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71f92543b73eddb26f82e787f5c81f53d3aeddb8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786589"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102669"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351: Nie używaj uszkodzonych algorytmów kryptograficznych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,9 +47,9 @@ ms.locfileid: "54786589"
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
  Użyj kryptograficznie silniejszych opcji:  
   
--   Skróty w użytku MD5, [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) rodziny (np. <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
+- Skróty w użytku MD5, [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) rodziny (np. <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
   
--   DES i RC2 użytku <xref:System.Security.Cryptography.Aes> szyfrowania.  
+- DES i RC2 użytku <xref:System.Security.Cryptography.Aes> szyfrowania.  
   
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
  Nie pomijaj ostrzeżeń dla tej reguły, chyba że jest zostały sprawdzone przez eksperta kryptograficznych.  

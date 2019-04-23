@@ -12,12 +12,12 @@ ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: baefb34bf098b9d5b712267a88303b25a2d5687d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b7845d80b895d1b4c68afc59f2d2fe821be11f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783557"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102799"
 ---
 # <a name="adding-and-removing-property-pages"></a>Dodawanie i usuwanie stron właściwości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ W Projektancie projektu stanowi centralną lokalizację służącą do zarządza
   
 #### <a name="to-remove-a-property-page-in-project-designer"></a>Aby usunąć stronę właściwości w Projektancie projektu  
   
-1.  Zastąp `GetProperty(uint itemId, int propId, out object property)` metodę, aby filtrować strony właściwości i uzyskać `clsids` listy.  
+1. Zastąp `GetProperty(uint itemId, int propId, out object property)` metodę, aby filtrować strony właściwości i uzyskać `clsids` listy.  
   
     ```vb  
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)  
@@ -75,7 +75,7 @@ W Projektancie projektu stanowi centralną lokalizację służącą do zarządza
     }  
     ```  
   
-2.  Usuń **zdarzenia kompilacji** uzyskane strony `clsids` listy.  
+2. Usuń **zdarzenia kompilacji** uzyskane strony `clsids` listy.  
   
     ```vb  
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"  
@@ -111,7 +111,7 @@ W Projektancie projektu stanowi centralną lokalizację służącą do zarządza
   
 #### <a name="to-add-a-property-page-in-project-designer"></a>Aby dodać stronę właściwości w Projektancie projektu  
   
-1.  Utwórz stronę właściwości, które chcesz dodać.  
+1. Utwórz stronę właściwości, które chcesz dodać.  
   
     ```vb  
     Class DeployPropertyPage  
@@ -156,7 +156,7 @@ W Projektancie projektu stanowi centralną lokalizację służącą do zarządza
     }  
     ```  
   
-2.  Zarejestruj swoje nowe strony właściwości.  
+2. Zarejestruj swoje nowe strony właściwości.  
   
     ```vb  
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>  
@@ -166,7 +166,7 @@ W Projektancie projektu stanowi centralną lokalizację służącą do zarządza
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]  
     ```  
   
-3.  Zastąp `GetProperty(uint itemId, int propId, out object property)` metodę, aby filtrować strony właściwości, Uzyskaj `clsids` listy i Dodaj nową stronę właściwości.  
+3. Zastąp `GetProperty(uint itemId, int propId, out object property)` metodę, aby filtrować strony właściwości, Uzyskaj `clsids` listy i Dodaj nową stronę właściwości.  
   
     ```vb  
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer  

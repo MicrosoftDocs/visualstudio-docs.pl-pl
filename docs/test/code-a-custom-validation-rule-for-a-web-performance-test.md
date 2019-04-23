@@ -15,12 +15,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f26dc7fd69c5190f5ba56985ef2509ddbf87866
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c39518c03d1a599dbe9eecac3d609343b7394313
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919914"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099757"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Kod niestandardowej reguły walidacji dla testów wydajności sieci web
 
@@ -33,24 +33,24 @@ Możesz utworzyć własne reguły sprawdzania poprawności. Aby to zrobić, klas
 
 ## <a name="to-create-custom-validation-rules"></a>Aby utworzyć niestandardowe reguły sprawdzania poprawności
 
-1.  Otwórz projekt Test zawierający test wydajności sieci web.
+1. Otwórz projekt Test zawierający test wydajności sieci web.
 
-2.  (Opcjonalnie) Należy utworzyć oddzielny projekt biblioteki klas, w której chcesz przechowywać regułę sprawdzania poprawności.
+2. (Opcjonalnie) Należy utworzyć oddzielny projekt biblioteki klas, w której chcesz przechowywać regułę sprawdzania poprawności.
 
     > [!IMPORTANT]
     > Klasę można utworzyć w tym samym projekcie, w którym znajdują się testy. Jednak chcąc używać zdefiniowanej reguły do różnych testów, najlepiej utworzyć oddzielny projekt Biblioteki klas i w nim przechowywać regułę. W przypadku utworzenia oddzielnego projektu należy wykonać opcjonalne kroki podane w tej procedurze.
 
-3.  (Opcjonalnie) W projekcie biblioteki klas Dodaj odwołanie do biblioteki DLL Microsoft.VisualStudio.QualityTools.WebTestFramework.
+3. (Opcjonalnie) W projekcie biblioteki klas Dodaj odwołanie do biblioteki DLL Microsoft.VisualStudio.QualityTools.WebTestFramework.
 
-4.  Utwórz klasę pochodną od klasy <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. Zaimplementuj elementy członkowskie <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.Validate*> i <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.RuleName*>.
+4. Utwórz klasę pochodną od klasy <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. Zaimplementuj elementy członkowskie <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.Validate*> i <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.RuleName*>.
 
-5.  (Opcjonalnie) Skompiluj nowy projekt Biblioteka klas.
+5. (Opcjonalnie) Skompiluj nowy projekt Biblioteka klas.
 
-6.  (Opcjonalnie) W projekcie testowym Dodaj odwołanie do projektu Biblioteka klas zawierającego niestandardową regułę poprawności.
+6. (Opcjonalnie) W projekcie testowym Dodaj odwołanie do projektu Biblioteka klas zawierającego niestandardową regułę poprawności.
 
-7.  W projekcie Test Otwórz test wydajności sieci web, w **edytora testów wydajności sieci Web**.
+7. W projekcie Test Otwórz test wydajności sieci web, w **edytora testów wydajności sieci Web**.
 
-8.  Aby dodać niestandardową regułę poprawności na żądanie testu wydajności sieci web, kliknij prawym przyciskiem myszy żądanie i wybierz pozycję **Dodaj regułę walidacji**.
+8. Aby dodać niestandardową regułę poprawności na żądanie testu wydajności sieci web, kliknij prawym przyciskiem myszy żądanie i wybierz pozycję **Dodaj regułę walidacji**.
 
      **Dodaj regułę walidacji** pojawi się okno dialogowe. Zostanie wyświetlony swojej niestandardowej reguły walidacji w **wybierz regułę** listy wraz z reguł sprawdzania poprawności wstępnie zdefiniowane. Wybierz swoje niestandardowej reguły walidacji, a następnie wybierz **OK**.
 

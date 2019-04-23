@@ -17,25 +17,25 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6f50584c5e01b97eb00a0e7f62998670d033553
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 523764ae5cd787fd4b52650e894eb086ae4adb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759111"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097131"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET Debugging: Wymagania systemowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym temacie opisano wymagania dotyczące oprogramowania i zabezpieczeń dla [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] debugowania scenariuszy:  
   
--   Debugowanie lokalne, w którym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i aplikacji sieci Web, uruchom na tym samym komputerze. Istnieją dwie wersje tego scenariusza:  
+- Debugowanie lokalne, w którym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i aplikacji sieci Web, uruchom na tym samym komputerze. Istnieją dwie wersje tego scenariusza:  
   
-    -   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kod znajduje się w systemie plików.  
+    - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kod znajduje się w systemie plików.  
   
-    -   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kod znajduje się w witrynie sieci Web usług IIS.  
+    - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kod znajduje się w witrynie sieci Web usług IIS.  
   
--   Zdalne debugowanie, w którym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] działa na komputerze klienckim i debugować aplikację internetową, która jest uruchomiona na komputerze serwera zdalnego.  
+- Zdalne debugowanie, w którym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] działa na komputerze klienckim i debugować aplikację internetową, która jest uruchomiona na komputerze serwera zdalnego.  
   
 ## <a name="security-requirements"></a>Wymagania dotyczące zabezpieczeń  
  Zdalne debugowanie lokalne i zdalne komputery muszą należeć do Instalatora domeny lub grupy roboczej.  

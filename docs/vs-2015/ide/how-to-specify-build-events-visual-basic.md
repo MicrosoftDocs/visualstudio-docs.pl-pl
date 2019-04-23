@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97e69abaef4fb5066082ad2170fe25cad0a51b18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e9e12894a6c526e70e9d2ea814c2634a271098d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779200"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104268"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Instrukcje: Określanie zdarzeń kompilacji (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ Zdarzenia kompilacji, w języku Visual Basic mogą służyć do uruchamiania skr
   
 #### <a name="to-specify-a-build-event"></a>Aby określić zdarzenia kompilacji  
   
-1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
+1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
   
-2.  Kliknij przycisk **skompilować** kartę.  
+2. Kliknij przycisk **skompilować** kartę.  
   
-3.  Kliknij przycisk **zdarzenia kompilacji** przycisk, aby otworzyć **zdarzenia kompilacji** okno dialogowe.  
+3. Kliknij przycisk **zdarzenia kompilacji** przycisk, aby otworzyć **zdarzenia kompilacji** okno dialogowe.  
   
-4.  Wprowadź argumenty wiersza polecenia dla akcji kompilacji przed lub po kompilacji, a następnie kliknij przycisk **OK**.  
+4. Wprowadź argumenty wiersza polecenia dla akcji kompilacji przed lub po kompilacji, a następnie kliknij przycisk **OK**.  
   
     > [!NOTE]
     >  Dodaj `call` instrukcję przed polecenia wszystkich wykonywanych po kompilacji, które uruchamiają pliki bat. Na przykład `call C:\MyFile.bat` lub `call C:\MyFile.bat call C:\MyFile2.bat`.  
@@ -126,15 +126,15 @@ Zdarzenia kompilacji, w języku Visual Basic mogą służyć do uruchamiania skr
   
 #### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Aby wywołać zdarzenie po kompilacji, aby zmienić manifest aplikacji  
   
-1.  Tworzenie aplikacji Windows dla projektu, które mają zostać opublikowane. Z **pliku** menu, kliknij przycisk **New**, a następnie kliknij przycisk **projektu**.  
+1. Tworzenie aplikacji Windows dla projektu, które mają zostać opublikowane. Z **pliku** menu, kliknij przycisk **New**, a następnie kliknij przycisk **projektu**.  
   
-2.  W **nowy projekt** dialogowym **języka Visual Basic** węzeł **Windows** a następnie **aplikacji Windows** szablonu. Nadaj projektowi nazwę `VBWinApp`.  
+2. W **nowy projekt** dialogowym **języka Visual Basic** węzeł **Windows** a następnie **aplikacji Windows** szablonu. Nadaj projektowi nazwę `VBWinApp`.  
   
-3.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
+3. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
   
-4.  W Projektancie projektu, przejdź do **Publikuj** strony, a następnie ustaw **publikowania lokalizacji** do `C:\TEMP\`.  
+4. W Projektancie projektu, przejdź do **Publikuj** strony, a następnie ustaw **publikowania lokalizacji** do `C:\TEMP\`.  
   
-5.  Opublikuj projekt, klikając **Publikuj teraz**.  
+5. Opublikuj projekt, klikając **Publikuj teraz**.  
   
      Plik manifestu zostanie utworzone i umieścić w `C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest`. Aby wyświetlić manifest, kliknij prawym przyciskiem myszy plik, a następnie kliknij przycisk **Otwórz za pomocą**, następnie kliknij przycisk **wybierz program, z listy**, a następnie kliknij przycisk **Notatnik**.  
   
@@ -144,9 +144,9 @@ Zdarzenia kompilacji, w języku Visual Basic mogą służyć do uruchamiania skr
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />  
     ```  
   
-6.  W Projektancie projektu, przejdź do **skompilować** kartę, a następnie kliknij przycisk **zdarzenia kompilacji** przycisk, aby otworzyć **zdarzenia kompilacji** okno dialogowe.  
+6. W Projektancie projektu, przejdź do **skompilować** kartę, a następnie kliknij przycisk **zdarzenia kompilacji** przycisk, aby otworzyć **zdarzenia kompilacji** okno dialogowe.  
   
-7.  W **wiersz polecenia zdarzenia po kompilacji** wprowadź następujące polecenie:  
+7. W **wiersz polecenia zdarzenia po kompilacji** wprowadź następujące polecenie:  
   
      `C:\TEMP\ChangeOSVersionVB.exe "$(TargetPath).manifest" 5.1.2600.0`  
   
@@ -154,7 +154,7 @@ Zdarzenia kompilacji, w języku Visual Basic mogą służyć do uruchamiania skr
   
      `$(TargetPath)` — Makro określa pełną ścieżkę do pliku wykonywalnego tworzona. Dlatego .manifest $(TargetPath) będzie określać manifestem aplikacji utworzonym w katalogu bin. Publikowanie skopiuje tego manifestu do lokalizacji publikowania, które zostały ustawione wcześniej.  
   
-8.  Opublikuj projekt ponownie. Przejdź do **Publikuj** strony, a następnie kliknij przycisk **Publikuj teraz**.  
+8. Opublikuj projekt ponownie. Przejdź do **Publikuj** strony, a następnie kliknij przycisk **Publikuj teraz**.  
   
      Ponownie wyświetlić manifest. Aby wyświetlić manifest, przejdź do katalogu publikowania, kliknij prawym przyciskiem myszy plik, a następnie kliknij przycisk **Otwórz za pomocą** i następnie **wybierz program, z listy**, a następnie kliknij przycisk **Notatnik**.  
   

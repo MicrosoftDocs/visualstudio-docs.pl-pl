@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d03c7b96a6329775db426f7306dcf4cf60ca0e4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf0462b4d6aac29c87d71506e3a535f21e2b91a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712037"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103408"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Instrukcje: Tworzenie niestandardowego tekstu znaczników
 Jeśli chcesz utworzyć znacznika niestandardowego tekstu, aby podkreślić lub organizowanie kodu, należy wykonać następujące czynności:
@@ -45,45 +45,45 @@ Jeśli chcesz utworzyć znacznika niestandardowego tekstu, aby podkreślić lub 
 
 2. Utwórz cztery wartości w obszarze **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<wersji > \Text Editor\External znaczniki\\\<MarkerGUID >**
 
-   -   (Domyślnie)
+   - (Domyślnie)
 
-   -   Usługa
+   - Usługa
 
-   -   Nazwa wyświetlana
+   - Nazwa wyświetlana
 
-   -   Package
+   - Package
 
-   -   `Default` wpis jest opcjonalny typu REG_SZ. Po ustawieniu wartości wpisu jest ciąg zawierający pewne przydatne informacje identyfikacyjne, na przykład "niestandardowego tekstu znacznika".
+   - `Default` wpis jest opcjonalny typu REG_SZ. Po ustawieniu wartości wpisu jest ciąg zawierający pewne przydatne informacje identyfikacyjne, na przykład "niestandardowego tekstu znacznika".
 
-   -   `Service` jest wpis typu REG_SZ zawierający ciąg identyfikatora GUID usługi, która zawiera znacznik niestandardowego tekstu przez proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Format jest {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.
+   - `Service` jest wpis typu REG_SZ zawierający ciąg identyfikatora GUID usługi, która zawiera znacznik niestandardowego tekstu przez proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Format jest {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.
 
-   -   `DisplayName` to wpis typu REG_SZ zawierający identyfikator zasobu o nazwie znacznika niestandardowego tekstu. Format jest #YYYY.
+   - `DisplayName` to wpis typu REG_SZ zawierający identyfikator zasobu o nazwie znacznika niestandardowego tekstu. Format jest #YYYY.
 
-   -   `Package` wpis typu REG_SZ zawierającego `GUID` pakietu VSPackage, która dostarcza usługę wymienionych w ramach usługi. Format jest {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.
+   - `Package` wpis typu REG_SZ zawierającego `GUID` pakietu VSPackage, która dostarcza usługę wymienionych w ramach usługi. Format jest {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.
 
 ## <a name="to-create-a-custom-text-marker"></a>Aby utworzyć znacznika niestandardowego tekstu
 
-1.  Implementowanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> interfejsu.
+1. Implementowanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> interfejsu.
 
      Implementacja ten interfejs definiuje zachowania i wyglądu tego typu znacznika niestandardowego.
 
      Ten interfejs jest wywoływana, gdy
 
-    1.  Użytkownik uruchamia IDE po raz pierwszy.
+    1. Użytkownik uruchamia IDE po raz pierwszy.
 
-    2.  Użytkownik wybierze **Resetuj** przycisku w obszarze **czcionki i kolory** — strona właściwości w **środowiska** folder, znajdujący się w lewym okienku  **Opcje** okno dialogowe uzyskany z **narzędzia** menu środowiska IDE.
+    2. Użytkownik wybierze **Resetuj** przycisku w obszarze **czcionki i kolory** — strona właściwości w **środowiska** folder, znajdujący się w lewym okienku  **Opcje** okno dialogowe uzyskany z **narzędzia** menu środowiska IDE.
 
-2.  Implementowanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider.GetTextMarkerType%2A> metody, wskazujące, której `IVsPackageDefinedTextMarkerType` implementacji powinny być zwracane na podstawie typu znacznika GUID określony w wywołaniu metody.
+2. Implementowanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider.GetTextMarkerType%2A> metody, wskazujące, której `IVsPackageDefinedTextMarkerType` implementacji powinny być zwracane na podstawie typu znacznika GUID określony w wywołaniu metody.
 
      Środowisko wywołuje w tej chwili Metoda pierwszego typu znacznika niestandardowego jest tworzony i określa identyfikator GUID typu znacznika niestandardowego.
 
 ## <a name="to-proffer-your-marker-type-as-a-service"></a>Aby udąło typu znacznika jako usługa
 
-1.  Wywołaj <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponentManager.QueryService%2A> metodę <xref:Microsoft.VisualStudio.Shell.Interop.SProfferService>.
+1. Wywołaj <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponentManager.QueryService%2A> metodę <xref:Microsoft.VisualStudio.Shell.Interop.SProfferService>.
 
      Wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> jest zwracana.
 
-2.  Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.ProfferService%2A> metody, określając identyfikator GUID identyfikujący usługi typu znacznika niestandardowego i podając wskaźnik do implementacji <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interfejsu. Twoje <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> implementacji powinna zwrócić wskaźnik do implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider> interfejsu.
+2. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.ProfferService%2A> metody, określając identyfikator GUID identyfikujący usługi typu znacznika niestandardowego i podając wskaźnik do implementacji <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interfejsu. Twoje <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> implementacji powinna zwrócić wskaźnik do implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider> interfejsu.
 
      Plik cookie unikatowe identyfikowanie, że usługa jest zwracana. Ten plik cookie mógł później użyć, aby można było odwołać usługi typu znacznika niestandardowego przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> metody <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> interfejsu określenie tej wartości pliku cookie.
 

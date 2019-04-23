@@ -23,12 +23,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dd897e0d340bed3c82ab47a9e315915456d10480
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fd484422cdae8cfc04cab169feefdd452f178a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757088"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056682"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Ustawienia projektu dla konfiguracji debugowania w C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Możesz zmienić ustawienia projektu dla konfiguracji debugowania języka C# w *
 > [!WARNING]
 >  Ten temat nie dotyczy aplikacji Windows Store. Zobacz [uruchomić sesję debugowania (VB, C#, C++ i XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
-##  <a name="BKMK_Debug_tab"></a> Debugowanie kartę  
+## <a name="BKMK_Debug_tab"></a> Debugowanie kartę  
   
 |**Ustawienie**|**Opis**|  
 |-----------------|---------------------|  
@@ -50,7 +50,7 @@ Możesz zmienić ustawienia projektu dla konfiguracji debugowania języka C# w *
 |**Włącz debugowanie kodu niezarządzanego**|Umożliwia debugowanie wywołań do kodu natywnego (niezarządzanego) Win32 z zarządzanych aplikacji.|  
 |**Włącz debugowanie programu SQL Server**|Umożliwia debugowanie obiektów bazy danych programu SQL Server.|  
   
-##  <a name="BKMK_Build_tab"></a> Tworzenie karty  
+## <a name="BKMK_Build_tab"></a> Tworzenie karty  
   
 |Ustawienie|Opis|  
 |-------------|-----------------|  

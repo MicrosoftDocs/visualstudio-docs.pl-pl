@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de30faec90fd59531187d09f7eef76c3db7b043
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9c88c9c8769051724855d292bfefb56f69cb8dee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910444"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053172"
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>Korzystanie z sekwencji unikowych w szablonach tekstowych
 Można użyć sekwencji ucieczki w szablonach tekstowych, które mają być Generowanie tagi szablonu tekstu i (w kodzie języka C# tylko) do anulowania, znaki kontrolne i znaki cudzysłowu.
@@ -29,12 +29,12 @@ Można użyć sekwencji ucieczki w szablonach tekstowych, które mają być Gene
 
  Blok tekstu zawiera ciągi używany jako znak ucieczki znaczniki szablonu tekstu, może użyć poniższej sekwencji ucieczki:
 
--   Jeśli tag szablonu tekstu jest poprzedzony parzystą liczbą ucieczki (\\) znaków szablonu analizatora będzie połowę znaki ucieczki a sekwencja jako tag szablonu tekstu. Na przykład, jeśli istnieją cztery znaki ucieczki w szablonie tekstowym, nastąpi dwa "\\" znaków w wygenerowanym pliku.
+- Jeśli tag szablonu tekstu jest poprzedzony parzystą liczbą ucieczki (\\) znaków szablonu analizatora będzie połowę znaki ucieczki a sekwencja jako tag szablonu tekstu. Na przykład, jeśli istnieją cztery znaki ucieczki w szablonie tekstowym, nastąpi dwa "\\" znaków w wygenerowanym pliku.
 
--   Jeśli tag szablonu tekstu jest poprzedzony nieparzystą liczbę ucieczki (\\) znaki, analizator składni szablonu będzie zawierać połowę "\\" znaków oraz samego znacznika (\<# lub #>). Tag nie jest uważany za tag szablonu tekstu.
+- Jeśli tag szablonu tekstu jest poprzedzony nieparzystą liczbę ucieczki (\\) znaki, analizator składni szablonu będzie zawierać połowę "\\" znaków oraz samego znacznika (\<# lub #>). Tag nie jest uważany za tag szablonu tekstu.
 
--   Jeśli znaku ucieczki (\\) znak pojawia się gdziekolwiek w dowolnej kolejności niż gdzie specjalne znaków kontrolnych lub oferty (w języku C# tylko), znaku będą dane wyjściowe bezpośrednio.
+- Jeśli znaku ucieczki (\\) znak pojawia się gdziekolwiek w dowolnej kolejności niż gdzie specjalne znaków kontrolnych lub oferty (w języku C# tylko), znaku będą dane wyjściowe bezpośrednio.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Instrukcje: Generowanie szablonów z szablonów przy użyciu sekwencji unikowych](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)
+- [Instrukcje: Generowanie szablonów z szablonów przy użyciu sekwencji ucieczki](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

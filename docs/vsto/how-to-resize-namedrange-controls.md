@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e3de20f175ae7300732cd56633aebcdc3e0aa0cf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ba5603fe759f55a85425bc61da0a470aa38d636c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654038"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099614"
 ---
 # <a name="how-to-resize-namedrange-controls"></a>Instrukcje: Zmiana rozmiaru formantów NamedRange
   Można ustawić rozmiar <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli po dodaniu go do dokumentu programu Microsoft Office Excel; Jednakże, możesz chcieć zmienić jej rozmiar w późniejszym czasie.
@@ -30,32 +30,32 @@ ms.locfileid: "56654038"
 
  W tym temacie opisano następujące zadania:
 
--   [Zmiana rozmiaru formantów NamedRange w czasie projektowania](#designtime)
+- [Zmiana rozmiaru formantów NamedRange w czasie projektowania](#designtime)
 
--   [Zmiana rozmiaru formantów NamedRange w czasie wykonywania w projekcie na poziomie dokumentu](#runtimedoclevel)
+- [Zmiana rozmiaru formantów NamedRange w czasie wykonywania w projekcie na poziomie dokumentu](#runtimedoclevel)
 
--   [Zmiana rozmiaru formantów NamedRange w czasie wykonywania w projekcie dodatku narzędzi VSTO](#runtimeaddin)
+- [Zmiana rozmiaru formantów NamedRange w czasie wykonywania w projekcie dodatku narzędzi VSTO](#runtimeaddin)
 
-##  <a name="designtime"></a> Zmiana rozmiaru formantów NamedRange w czasie projektowania
+## <a name="designtime"></a> Zmiana rozmiaru formantów NamedRange w czasie projektowania
  Możesz zmienić rozmiar nazwany zakres poprzez zmianę definicji jej rozmiaru w **Definiowanie nazwy** okno dialogowe.
 
 ### <a name="to-resize-a-named-range-by-using-the-define-name-dialog-box"></a>Aby zmienić rozmiar nazwany zakres przy użyciu nazwy zdefiniować okno dialogowe
 
-1.  Kliknij prawym przyciskiem myszy <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli.
+1. Kliknij prawym przyciskiem myszy <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli.
 
-2.  Kliknij przycisk **Zarządzaj nazwane zakresy** w menu skrótów.
+2. Kliknij przycisk **Zarządzaj nazwane zakresy** w menu skrótów.
 
      **Definiowanie nazwy** pojawi się okno dialogowe.
 
-3.  Wybierz zakres nazwanych, który chcesz zmienić.
+3. Wybierz zakres nazwanych, który chcesz zmienić.
 
-4.  Wyczyść **odwołuje się do** pola.
+4. Wyczyść **odwołuje się do** pola.
 
-5.  Zaznacz komórki, które chcesz użyć do zdefiniowania rozmiaru nazwanym zakresie.
+5. Zaznacz komórki, które chcesz użyć do zdefiniowania rozmiaru nazwanym zakresie.
 
-6.  Kliknij przycisk **OK**.
+6. Kliknij przycisk **OK**.
 
-##  <a name="runtimedoclevel"></a> Zmiana rozmiaru formantów NamedRange w czasie wykonywania w projekcie na poziomie dokumentu
+## <a name="runtimedoclevel"></a> Zmiana rozmiaru formantów NamedRange w czasie wykonywania w projekcie na poziomie dokumentu
  Możesz zmienić rozmiar nazwany zakres programowo przy użyciu <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> właściwości.
 
 > [!NOTE]
@@ -63,27 +63,27 @@ ms.locfileid: "56654038"
 
 ### <a name="to-resize-a-named-range-programmatically"></a>Aby programowo zmienić rozmiar nazwany zakres
 
-1.  Tworzenie <xref:Microsoft.Office.Tools.Excel.NamedRange> formant w komórce **A1** z `Sheet1`.
+1. Tworzenie <xref:Microsoft.Office.Tools.Excel.NamedRange> formant w komórce **A1** z `Sheet1`.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#4)]
      [!code-vb[Trin_VstcoreHostControlsExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#4)]
 
-2.  Zmień rozmiar nazwany zakres obejmujący komórki **B1**.
+2. Zmień rozmiar nazwany zakres obejmujący komórki **B1**.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#5)]
 
-##  <a name="runtimeaddin"></a> Zmiana rozmiaru formantów NamedRange w czasie wykonywania w projekcie dodatku narzędzi VSTO
+## <a name="runtimeaddin"></a> Zmiana rozmiaru formantów NamedRange w czasie wykonywania w projekcie dodatku narzędzi VSTO
  Możesz zmienić rozmiar <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki w dowolnym otwartego arkusza w czasie wykonywania. Aby uzyskać więcej informacji o sposobie dodawania <xref:Microsoft.Office.Tools.Excel.NamedRange> sterowania do arkusza za pomocą dodatków narzędzi VSTO dla programów, zobacz [jak: Dodawanie formantów NamedRange do arkuszy](../vsto/how-to-add-namedrange-controls-to-worksheets.md).
 
 ### <a name="to-resize-a-named-range-programmatically"></a>Aby programowo zmienić rozmiar nazwany zakres
 
-1.  Tworzenie <xref:Microsoft.Office.Tools.Excel.NamedRange> formant w komórce **A1** z `Sheet1`.
+1. Tworzenie <xref:Microsoft.Office.Tools.Excel.NamedRange> formant w komórce **A1** z `Sheet1`.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#10](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#10)]
      [!code-vb[Trin_Excel_Dynamic_Controls#10](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#10)]
 
-2.  Zmień rozmiar nazwany zakres obejmujący komórki **B1**.
+2. Zmień rozmiar nazwany zakres obejmujący komórki **B1**.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#11)]
      [!code-vb[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#11)]

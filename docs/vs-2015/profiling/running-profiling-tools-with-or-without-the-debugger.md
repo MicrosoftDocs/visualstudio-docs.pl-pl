@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 910c2f6e71820c079eb92fdc7adf61d9e67d0001
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 806eeba9b3dfee8dc45c90f0a6d2f99ed0772ec7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783393"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054069"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Uruchamianie narzędzi profilowania z debugerem lub bez debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ Program Visual Studio teraz oferuje możliwość wyboru wydajności narzędzia, 
   
  Poniżej zamieszczono kilka pytań, które mogą pomóc w podjęciu decyzji, którego rodzaju narzędzie jest odpowiednia do własnych celów:  
   
-1.  Problem podczas aplikacji został on opracowany czy był znaleziono w wydanej wersji?  
+1. Problem podczas aplikacji został on opracowany czy był znaleziono w wydanej wersji?  
   
      Jeśli ten problem, który masz do czynienia z został znaleziony podczas programowania, prawdopodobnie nie potrzebujesz do uruchamiania narzędzi do oceny wydajności w kompilacji wydania. Jeśli został znaleziony w wersji, należy odtworzyć problem z konfiguracją wydania i zdecyduj, czy debuger może pomóc w celu bliższego zbadania problemu.  
   
-2.  Przetwarza problem spowodowany przez użycie Procesora CPU  
+2. Przetwarza problem spowodowany przez użycie Procesora CPU  
   
      Wiele problemów są spowodowane przez problemy z wydajnością zewnętrznych, takich jak We/Wy pliku lub czas odpowiedzi sieci, dzięki czemu nie należy podejmować różnica, czy uruchamianie narzędzi do oceny wydajności z lub bez debugera. Jeśli problem wynika z wywołania mocy procesora CPU, różnica między Zwolnij i Debuguj konfiguracje mogą być znaczące i prawdopodobnie należy sprawdź, czy ten problem, istnieje w kompilacji wydania, przed rozpoczęciem korzystania z narzędzia zintegrowane z debugerem  
   
-3.  Muszą dokładnie pomiaru wydajności, czy jest dopuszczalne przybliżona liczba?  
+3. Muszą dokładnie pomiaru wydajności, czy jest dopuszczalne przybliżona liczba?  
   
      Debugowania braku kompilacje niektóre optymalizacje, które zapewniają kompilacji wydania, na przykład wbudowanie wywołania funkcji i stałe, nieużywane oczyszczania kodu ścieżek i zapisywanie zmienne w sposób, który nie może być używany przez debuger. Sam debuger zmienia czas wydajności, ponieważ wykonuje niektóre operacje, które są niezbędne do debugowania (na przykład przechwytuje wyjątek i zdarzenia ładowanie modułu). Dlatego liczby wydajność w narzędziach zintegrowane z debugerem są tylko z dokładnością dziesiątki milisekund. Numery wersji konfiguracji za pomocą narzędzi bez debugera wydajności są znacznie bardziej precyzyjne.  
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Zbieranie danych profilowania podczas debugowania  
+## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Zbieranie danych profilowania podczas debugowania  
  Poniższa sekcja dotyczy debugowania lokalnego. Możesz dowiedzieć się o debugowaniu na urządzeniu lub zdalnego debugowania w kolejnych sekcjach.  
   
 1. Otwórz projekt, który chcesz debugować, następnie kliknij przycisk **debugowania / uruchamiania debugowania** (lub **Start** na pasku narzędzi lub **F5**).  

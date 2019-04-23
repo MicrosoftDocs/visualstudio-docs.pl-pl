@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6fe1ebb3316acfc53ac29ea734413cc0cf2cb15e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f1fca54350900b2ed252efc324308d1168c6da53
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638559"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101109"
 ---
 # <a name="how-to-programmatically-hide-worksheets"></a>Instrukcje: Programowe ukrywanie arkuszy
   Możesz pokazać lub ukryć wszystkie arkusza w skoroszycie. Aby ukryć arkusza, użyj element hosta arkusza lub dostęp do arkusza za pomocą kolekcji arkuszy skoroszytu.
@@ -30,7 +30,7 @@ ms.locfileid: "56638559"
 
 ### <a name="to-hide-a-worksheet-using-a-worksheet-host-item"></a>Aby ukryć w arkuszu za pomocą element hosta arkusza
 
-1.  Ustaw <xref:Microsoft.Office.Tools.Excel.Worksheet.Visible%2A> właściwość `Sheet1` element hosta do <xref:Microsoft.Office.Interop.Excel.XlSheetVisibility.xlSheetHidden> wartość wyliczenia.
+1. Ustaw <xref:Microsoft.Office.Tools.Excel.Worksheet.Visible%2A> właściwość `Sheet1` element hosta do <xref:Microsoft.Office.Interop.Excel.XlSheetVisibility.xlSheetHidden> wartość wyliczenia.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#25](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#25)]
      [!code-vb[Trin_VstcoreExcelAutomation#25](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#25)]
@@ -38,13 +38,13 @@ ms.locfileid: "56638559"
 ## <a name="use-the-sheets-collection-of-the-excel-workbook"></a>Korzystać z kolekcji arkuszy skoroszytu programu Excel
  Dostęp do arkuszy za pomocą programu Microsoft Office Excel <xref:Microsoft.Office.Interop.Excel.Sheets> kolekcji w następujących przypadkach:
 
--   Chcesz ukryć arkusza w dodatku VSTO.
+- Chcesz ukryć arkusza w dodatku VSTO.
 
--   Arkusz kalkulacyjny, który chcesz ukryć został utworzony w czasie wykonywania w dostosowaniu na poziomie dokumentu.
+- Arkusz kalkulacyjny, który chcesz ukryć został utworzony w czasie wykonywania w dostosowaniu na poziomie dokumentu.
 
 ### <a name="to-hide-a-worksheet-using-the-sheets-collection-of-the-excel-workbook"></a>Aby ukryć w arkuszu za pomocą kolekcji arkuszy skoroszytu programu Excel
 
-1.  Ustaw <xref:Microsoft.Office.Interop.Excel.Worksheets.Visible%2A> właściwości arkusza do <xref:Microsoft.Office.Interop.Excel.XlSheetVisibility.xlSheetHidden> wartość wyliczenia.
+1. Ustaw <xref:Microsoft.Office.Interop.Excel.Worksheets.Visible%2A> właściwości arkusza do <xref:Microsoft.Office.Interop.Excel.XlSheetVisibility.xlSheetHidden> wartość wyliczenia.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#26](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#26)]
      [!code-vb[Trin_VstcoreExcelAutomation#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#26)]

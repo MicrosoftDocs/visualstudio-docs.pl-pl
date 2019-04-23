@@ -21,12 +21,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 31268b94ab632e598badcba3def387ef1fc2ba1d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e60fe59b4d515f37593175f0b76d1562f170abfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752203"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059101"
 ---
 # <a name="error-aspnet-not-installed"></a>Błąd: ASP.NET nie jest zainstalowany
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Ten błąd występuje, gdy [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] nie 
   
 ### <a name="to-reinstall-aspnet"></a>Ponowna instalacja programu ASP.NET  
   
-1.  Z poziomu okna wiersza polecenia Uruchom następujące polecenie:  
+1. Z poziomu okna wiersza polecenia Uruchom następujące polecenie:  
   
     ```  
     \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i  

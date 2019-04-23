@@ -14,12 +14,12 @@ ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 194c1e926ead79d5db05e530e2345aa4c722aa21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9efe5ffcd0428a11df69e3c80f28fdecaeb99aaf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776443"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100361"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Przewodnik testowania wtyczek kontroli kodu źródłowego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,55 +57,55 @@ Ta sekcja zawiera wskazówki dotyczące testowania Twojego wtyczka do kontroli �
   
 ## <a name="test-areas-covered-in-this-section"></a>Obszary testów, opisanych w tej sekcji  
   
--   [Obszar testowy 1: Dodaj / Otwórz z kontroli źródła](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
+- [Obszar testowy 1: Dodaj / Otwórz z kontroli źródła](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    -   Wielkość 1a: Dodaj rozwiązanie do kontroli źródła  
+    - Wielkość 1a: Dodaj rozwiązanie do kontroli źródła  
   
-    -   Wielkość 1b: Otwórz rozwiązanie z kontroli źródła  
+    - Wielkość 1b: Otwórz rozwiązanie z kontroli źródła  
   
-    -   Przypadek 1c: Dodaj rozwiązanie z kontroli źródła  
+    - Przypadek 1c: Dodaj rozwiązanie z kontroli źródła  
   
--   [Obszar testowy 2: Pobieranie z kontroli źródła](../../extensibility/internals/test-area-2-get-from-source-control.md)  
+- [Obszar testowy 2: Pobieranie z kontroli źródła](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
--   [Obszar testowy 3: Zapoznaj się z / Cofnij wyewidencjonowanie](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
+- [Obszar testowy 3: Zapoznaj się z / Cofnij wyewidencjonowanie](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-    -   Przypadek 3: Zapoznaj się z / Cofnij wyewidencjonowanie  
+    - Przypadek 3: Zapoznaj się z / Cofnij wyewidencjonowanie  
   
-    -   Wielkości liter 3a: Wyewidencjonuj  
+    - Wielkości liter 3a: Wyewidencjonuj  
   
-    -   Wielkość 3b: Wyewidencjonowanie bez połączenia  
+    - Wielkość 3b: Wyewidencjonowanie bez połączenia  
   
-    -   Przypadek 3c: Edytuj zapytanie/zapytanie Zapisz (QEQS)  
+    - Przypadek 3c: Edytuj zapytanie/zapytanie Zapisz (QEQS)  
   
-    -   Zamierzone, Zapisz 3d: Dyskretnej wyewidencjonowania  
+    - Zamierzone, Zapisz 3d: Dyskretnej wyewidencjonowania  
   
-    -   Wielkość 3e: Cofnij wyewidencjonowanie  
+    - Wielkość 3e: Cofnij wyewidencjonowanie  
   
--   [Obszar testowy 4: Zamelduj się](../../extensibility/internals/test-area-4-check-in.md)  
+- [Obszar testowy 4: Zamelduj się](../../extensibility/internals/test-area-4-check-in.md)  
   
-    -   Wielkość 4a: Zmodyfikowane elementy  
+    - Wielkość 4a: Zmodyfikowane elementy  
   
-    -   Wielkość 4b: Trwa dodawanie plików  
+    - Wielkość 4b: Trwa dodawanie plików  
   
-    -   W przypadku 4c: Dodawanie projektów  
+    - W przypadku 4c: Dodawanie projektów  
   
--   [Obszar testowy 5: Zmień kontrolę źródła](../../extensibility/internals/test-area-5-change-source-control.md)  
+- [Obszar testowy 5: Zmień kontrolę źródła](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    -   Wielkość 5a: powiązania  
+    - Wielkość 5a: powiązania  
   
-    -   Wielkość 5b: Usuń powiązanie  
+    - Wielkość 5b: Usuń powiązanie  
   
-    -   W przypadku 5c: ponowne wiązanie  
+    - W przypadku 5c: ponowne wiązanie  
   
--   [Obszar testowy 6: Usuń](../../extensibility/internals/test-area-6-delete.md)  
+- [Obszar testowy 6: Usuń](../../extensibility/internals/test-area-6-delete.md)  
   
--   [Obszar testowy 7: Udostępnij](../../extensibility/internals/test-area-7-share.md)  
+- [Obszar testowy 7: Udostępnij](../../extensibility/internals/test-area-7-share.md)  
   
--   [Obszar testowy 8: Przełączanie wtyczki](../../extensibility/internals/test-area-8-plug-in-switching.md)  
+- [Obszar testowy 8: Przełączanie wtyczki](../../extensibility/internals/test-area-8-plug-in-switching.md)  
   
-    -   8a przypadków: Automatyczna zmiana  
+    - 8a przypadków: Automatyczna zmiana  
   
-    -   8b przypadków: Oparte na rozwiązaniach zmiany  
+    - 8b przypadków: Oparte na rozwiązaniach zmiany  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wtyczki kontroli źródła](../../extensibility/source-control-plug-ins.md)

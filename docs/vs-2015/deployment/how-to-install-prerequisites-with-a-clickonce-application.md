@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a3619e911ffcf730012ee26d26783b6a7596704
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 04f6c78f3733bbc8aab3aec5811f1eb643ecca4e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784893"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056617"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Instrukcje: Instalowanie wstępnie wymaganych składników za pomocą aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,31 +41,31 @@ Wszystkie [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacje wymag
   
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Aby określić wymagania wstępne dotyczące instalacji za pomocą aplikacji ClickOnce  
   
-1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** kliknij menu **właściwości**.  
+1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** kliknij menu **właściwości**.  
   
-2.  Wybierz **Publikuj** okienka.  
+2. Wybierz **Publikuj** okienka.  
   
-3.  Kliknij przycisk **wymagania wstępne** przycisk, aby otworzyć **wymagania wstępne** okno dialogowe.  
+3. Kliknij przycisk **wymagania wstępne** przycisk, aby otworzyć **wymagania wstępne** okno dialogowe.  
   
-4.  W **wymagania wstępne** okna dialogowego pole, upewnij się, że **Utwórz program instalacyjny, aby zainstalować wstępnie wymagane składniki** pole wyboru jest zaznaczone.  
+4. W **wymagania wstępne** okna dialogowego pole, upewnij się, że **Utwórz program instalacyjny, aby zainstalować wstępnie wymagane składniki** pole wyboru jest zaznaczone.  
   
-5.  W **wymagania wstępne** listy, należy sprawdzić te składniki, które chcesz zainstalować, a następnie kliknij przycisk **OK**.  
+5. W **wymagania wstępne** listy, należy sprawdzić te składniki, które chcesz zainstalować, a następnie kliknij przycisk **OK**.  
   
      Wybrane składniki zostaną spakowane i opublikowanych wraz z aplikacji.  
   
 ### <a name="to-specify-a-different-download-location-for-prerequisites"></a>Aby określić lokalizację pobierania różnych wstępnie wymaganych składników  
   
-1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** kliknij menu **właściwości**.  
+1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** kliknij menu **właściwości**.  
   
-2.  Wybierz **Publikuj** okienka.  
+2. Wybierz **Publikuj** okienka.  
   
-3.  Kliknij przycisk **wymagania wstępne** przycisk, aby otworzyć **wymagania wstępne** okno dialogowe.  
+3. Kliknij przycisk **wymagania wstępne** przycisk, aby otworzyć **wymagania wstępne** okno dialogowe.  
   
-4.  W **wymagania wstępne** okna dialogowego pole, upewnij się, że **Utwórz program instalacyjny, aby zainstalować wstępnie wymagane składniki** pole wyboru jest zaznaczone.  
+4. W **wymagania wstępne** okna dialogowego pole, upewnij się, że **Utwórz program instalacyjny, aby zainstalować wstępnie wymagane składniki** pole wyboru jest zaznaczone.  
   
-5.  W **Określ lokalizację instalacji wstępnie wymaganych składników** zaznacz **Pobierz wstępnie wymagane składniki z następującej lokalizacji**.  
+5. W **Określ lokalizację instalacji wstępnie wymaganych składników** zaznacz **Pobierz wstępnie wymagane składniki z następującej lokalizacji**.  
   
-6.  Wybierz lokalizację z listy rozwijanej lub wprowadź adres URL, ścieżkę pliku lub lokalizację FTP, a następnie kliknij **OK.**  
+6. Wybierz lokalizację z listy rozwijanej lub wprowadź adres URL, ścieżkę pliku lub lokalizację FTP, a następnie kliknij **OK.**  
   
     > [!NOTE]
     >  Upewnij się, że instalatory dla określone składniki istnieje w określonej lokalizacji.  

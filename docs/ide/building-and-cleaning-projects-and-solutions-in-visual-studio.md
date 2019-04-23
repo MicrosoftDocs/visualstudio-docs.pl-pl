@@ -1,5 +1,5 @@
 ---
-title: Kompilowanie oraz Oczyszczanie projektów i rozwiązań
+title: Kompilowanie oraz oczyszczanie projektów i rozwiązań
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e6b970fdda47bab704def8859cb3489bce13bcb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 73a15890dd35f341760561bbd730795e62b1478b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925387"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057878"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Kompilowanie i czyszczenie projektów i rozwiązań w programie Visual Studio
 
@@ -42,44 +42,44 @@ Korzystając z procedur opisanych w tym temacie, można utworzyć, odbudować lu
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Do kompilacji, odbudować lub Wyczyść całe rozwiązanie
 
-1.  W **Eksploratora rozwiązań**, wybierz lub Otwórz rozwiązanie.
+1. W **Eksploratora rozwiązań**, wybierz lub Otwórz rozwiązanie.
 
-2.  Na pasku menu wybierz **kompilacji**, a następnie wybierz jedno z następujących poleceń:
+2. Na pasku menu wybierz **kompilacji**, a następnie wybierz jedno z następujących poleceń:
 
-    -   Wybierz **kompilacji** lub **Kompiluj rozwiązanie** skompilować tylko tych projektów, plików i składników, które zmieniły się od najnowszej kompilacji.
+    - Wybierz **kompilacji** lub **Kompiluj rozwiązanie** skompilować tylko tych projektów, plików i składników, które zmieniły się od najnowszej kompilacji.
 
         > [!NOTE]
         > **Kompilacji** staje się polecenia **Kompiluj rozwiązanie** gdy rozwiązanie zawiera więcej niż jeden projekt.
 
-    -   Wybierz **Kompiluj rozwiązanie** do rozwiązania "Wyczyść", a następnie skompilowanie wszystkich plików projektu i składników.
+    - Wybierz **Kompiluj rozwiązanie** do rozwiązania "Wyczyść", a następnie skompilowanie wszystkich plików projektu i składników.
 
-    -   Wybierz **czyste rozwiązanie** można usunąć wszystkich plików pośrednich i wynikowych. Za pomocą tylko projektu, jak i składnika pliki po lewej nowe wystąpienia pośrednich i pliki wyjściowe może następnie być skompilowana.
+    - Wybierz **czyste rozwiązanie** można usunąć wszystkich plików pośrednich i wynikowych. Za pomocą tylko projektu, jak i składnika pliki po lewej nowe wystąpienia pośrednich i pliki wyjściowe może następnie być skompilowana.
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>Aby skompilować lub ponownie skompilować pojedynczego projektu
 
-1.  W **Eksploratora rozwiązań**, wybrać lub otworzyć projektu.
+1. W **Eksploratora rozwiązań**, wybrać lub otworzyć projektu.
 
-2.  Na pasku menu wybierz **kompilacji**, a następnie wybierz **kompilacji** *ProjectName* lub **odbudować** *ProjectName*.
+2. Na pasku menu wybierz **kompilacji**, a następnie wybierz **kompilacji** *ProjectName* lub **odbudować** *ProjectName*.
 
-    -   Wybierz **kompilacji** *ProjectName* tworzenie tylko tych projektów składników, które zmieniły się od najnowszej kompilacji.
+    - Wybierz **kompilacji** *ProjectName* tworzenie tylko tych projektów składników, które zmieniły się od najnowszej kompilacji.
 
-    -   Wybierz **odbudować** *ProjectName* do projektu "Wyczyść", a następnie skompiluj pliki projektu i wszystkich składników projektów.
+    - Wybierz **odbudować** *ProjectName* do projektu "Wyczyść", a następnie skompiluj pliki projektu i wszystkich składników projektów.
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Aby skompilować tylko projekt startowy i jego zależności
 
-1.  Na pasku menu wybierz **narzędzia** > **opcje**.
+1. Na pasku menu wybierz **narzędzia** > **opcje**.
 
-2.  W **opcje** okna dialogowego rozwiń **projekty i rozwiązania** węzła, a następnie wybierz **kompilowanie i uruchamianie** strony.
+2. W **opcje** okna dialogowego rozwiń **projekty i rozwiązania** węzła, a następnie wybierz **kompilowanie i uruchamianie** strony.
 
      **Kompilowanie i uruchamianie** > **projekty i rozwiązania** > **opcje** zostanie otwarte okno dialogowe.
 
-3.  Wybierz **tylko tworzyć projekty startowe i zależności przy uruchomieniu** pole wyboru.
+3. Wybierz **tylko tworzyć projekty startowe i zależności przy uruchomieniu** pole wyboru.
 
      Gdy to pole wyboru jest zaznaczone, tylko bieżący projekt startowy i jego zależności są tworzone podczas wykonywania jednej z następujących czynności:
 
-    -   Na pasku menu wybierz **debugowania** > **Start** (**F5**).
+    - Na pasku menu wybierz **debugowania** > **Start** (**F5**).
 
-    -   Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie** (**Ctrl**+**Shift** +  **B**).
+    - Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie** (**Ctrl**+**Shift** +  **B**).
 
     Gdy to pole wyboru jest wyczyszczone, wszystkie projekty, ich zależności i pliki rozwiązania są tworzone po uruchomieniu dowolnego z powyższych poleceń. Domyślnie to pole wyboru jest wyczyszczone.
 

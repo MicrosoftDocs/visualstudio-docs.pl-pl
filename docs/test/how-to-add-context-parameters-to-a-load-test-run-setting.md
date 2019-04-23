@@ -9,12 +9,12 @@ ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b7af7b566e874941e72ae3a905ab2c1b58c89ff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b979da03c0ea5378684ff12bc86d4fb59eef9180
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907909"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102786"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Instrukcje: Dodawanie parametrów kontekstu do ustawień przebiegu testu obciążeniowego
 
@@ -52,11 +52,11 @@ Ponadto, przypisując różne wartości do parametru kontekstu przy użyciu tej 
 
 ## <a name="to-add-a-context-parameter-to-a-run-setting"></a>Aby dodać parametr kontekstu do ustawień
 
-1.  Otwórz test obciążenia.
+1. Otwórz test obciążenia.
 
-2.  Rozwiń **parametrów uruchomieniowych** folderów w drzewie testu obciążenia w edytorze testu obciążeniowego.
+2. Rozwiń **parametrów uruchomieniowych** folderów w drzewie testu obciążenia w edytorze testu obciążeniowego.
 
-3.  Kliknij prawym przyciskiem myszy konkretne ustawienia uruchamiania, do której chcesz dodać parametr kontekstu, a następnie wybierz **dodać parametr kontekstu**.
+3. Kliknij prawym przyciskiem myszy konkretne ustawienia uruchamiania, do której chcesz dodać parametr kontekstu, a następnie wybierz **dodać parametr kontekstu**.
 
      Dodano nowy parametr kontekstu do **parametrów kontekstu** folderu w **parametrów uruchomieniowych** folderu w drzewie testu obciążenia.
 
@@ -64,11 +64,11 @@ Ponadto, przypisując różne wartości do parametru kontekstu przy użyciu tej 
 
      Jeśli działanie ustawienie już zawiera **parametrów kontekstu** folderu, możesz go prawym przyciskiem myszy i wybierz **dodać parametr kontekstu**.
 
-4.  W **właściwości** okna, zmień wartość **nazwa** odpowiednio (na przykład Serwer_sieci_web_1). W **właściwości** oknie zmiany **wartość** do parametru, którego chcesz używać (na przykład `http://CorporateStagingWebServer`).
+4. W **właściwości** okna, zmień wartość **nazwa** odpowiednio (na przykład Serwer_sieci_web_1). W **właściwości** oknie zmiany **wartość** do parametru, którego chcesz używać (na przykład `http://CorporateStagingWebServer`).
 
-5.  (Opcjonalnie) Powtórz kroki od 3 do 5 i używać różnych ciąg **wartość** właściwości (na przykład `http://CorporateProductionWebServer`).
+5. (Opcjonalnie) Powtórz kroki od 3 do 5 i używać różnych ciąg **wartość** właściwości (na przykład `http://CorporateProductionWebServer`).
 
-6.  Wybierz opcję uruchamiania ustawień, które mają być aktywne. Otwórz menu skrótów dotyczące wykonywania ustawień, a następnie wybierz **Ustaw jako aktywny**.
+6. Wybierz opcję uruchamiania ustawień, które mają być aktywne. Otwórz menu skrótów dotyczące wykonywania ustawień, a następnie wybierz **Ustaw jako aktywny**.
 
 ## <a name="see-also"></a>Zobacz także
 

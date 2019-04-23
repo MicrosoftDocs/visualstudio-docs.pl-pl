@@ -11,19 +11,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78814ae3b5b25a2e5bc85f55217d6b695f634a84
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6ec71ce9be704566640a90c9187abe77f5cc3fe3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680247"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101603"
 ---
 # <a name="verify-subtypes-of-a-project-at-run-time"></a>Sprawdź podtypów projektu w czasie wykonywania
 Pakietu VSPackage, który jest zależny od podtypu niestandardowego projektu powinna zawierać logikę do wyszukiwania, która podtypu tak, aby go może zakończyć się niepowodzeniem bez problemu zmieniała Jeśli podtyp nie jest obecny. Poniższa procedura pokazuje, jak sprawdzić, czy z określonym podtypem.
 
 ### <a name="to-verify-the-presence-of-a-subtype"></a>Aby sprawdzić obecność podtypem
 
-1.  Pobrać hierarchii projektu z projektu i rozwiązania obiektów jako <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> obiektu, dodając następujący kod do Twojego pakietu VSPackage.
+1. Pobrać hierarchii projektu z projektu i rozwiązania obiektów jako <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> obiektu, dodając następujący kod do Twojego pakietu VSPackage.
 
     ```csharp
     EnvDTE.DTE dte;
@@ -40,7 +40,7 @@ Pakietu VSPackage, który jest zależny od podtypu niestandardowego projektu pow
 
     ```
 
-2.  Rzutowanie hierarchii, aby <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected> interfejsu.
+2. Rzutowanie hierarchii, aby <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected> interfejsu.
 
     ```csharp
     IVsAggregatableProjectCorrected AP;
@@ -48,14 +48,14 @@ Pakietu VSPackage, który jest zależny od podtypu niestandardowego projektu pow
 
     ```
 
-3.  Pobierz listę identyfikatorów GUID. typ projektu, wywołując <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>.
+3. Pobierz listę identyfikatorów GUID. typ projektu, wywołując <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>.
 
     ```csharp
     string projTypeGuids = AP.GetAggregateProjectTypeGuids().ToUpper();
 
     ```
 
-4.  Sprawdź listę dla identyfikatora GUID z określonym podtypem.
+4. Sprawdź listę dla identyfikatora GUID z określonym podtypem.
 
     ```csharp
     // Replace the string "MyGUID" with the GUID of the subtype.

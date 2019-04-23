@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc629f44ed39fb07459916f07ef430f87b00e14a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2e0efd4b4f9fb301f5bcba4a12857647a8d911f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918887"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104580"
 ---
 # <a name="draw-shapes-and-paths"></a>Rysowanie kształtów i ścieżek
 
@@ -21,7 +21,7 @@ W Projektancie XAML *kształt* dokładnie to, czego można oczekiwać. Na przyk�
 
 Kształtów i ścieżek należy używać grafiki wektorowej, więc ich przeskalować do ekranów o wysokiej rozdzielczości. Jeśli chcesz dowiedzieć się więcej na temat grafiki wektorowej, zobacz [co to są grafiki wektorowej](https://www.youtube.com/watch?v=MoCSwF0n-io) lub [grafika wektorowa](http://www.webopedia.com/TERM/V/vector_graphics.html).
 
-##  <a name="Shape"></a> Rysowanie kształtu
+## <a name="Shape"></a> Rysowanie kształtu
  Możesz znaleźć kształty w **zasoby** panelu.
 
  ![Kategoria kształtów na panelu Zasoby](../designers/media/b4_shapes_assetspanel.png)
@@ -30,7 +30,7 @@ Kształtów i ścieżek należy używać grafiki wektorowej, więc ich przeskalo
 
  ![Handles](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png)
 
-##  <a name="Path"></a> Rysowanie ścieżki
+## <a name="Path"></a> Rysowanie ścieżki
  Ścieżka jest szereg podłączonych linii i krzywych. Użyj ścieżki, aby tworzyć interesujące kształty, które nie są dostępne w **zasoby** panelu.
 
  Ścieżkę można zdefiniować przy użyciu linii, Pióro lub ołówka. Można znaleźć tych narzędzi w **narzędzia** panelu.
@@ -80,12 +80,12 @@ Kształtów i ścieżek należy używać grafiki wektorowej, więc ich przeskalo
 
  Użyj **wybór** narzędzie ![narzędzia zaznaczania](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png) aby wybrać ścieżkę. Użyj **pióra** narzędzie ![pióro](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png) kliknąć ścieżkę, w której chcesz dodać punkt w dowolnym miejscu.
 
-##  <a name="Convert"></a> Konwertowanie kształtu do ścieżki
+## <a name="Convert"></a> Konwertowanie kształtu do ścieżki
  Aby zmodyfikować kształtu w taki sam sposób, aby zmodyfikować ścieżkę, konwertowanie kształtu do ścieżki.
 
  **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [pracy dzięki określeniu ścieżki: Konwertowanie kształtu na ścieżkę](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
-##  <a name="Combine"></a> Połącz ścieżki
+## <a name="Combine"></a> Połącz ścieżki
  Można połączyć kształtów i ścieżek w pojedynczą ścieżkę.
 
  ![Połącz ścieżki](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
@@ -98,7 +98,7 @@ Kształtów i ścieżek należy używać grafiki wektorowej, więc ich przeskalo
 
  **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [pracy dzięki określeniu ścieżki: Połącz ścieżki](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
-##  <a name="Compound"></a> Utwórz ścieżkę złożoną
+## <a name="Compound"></a> Utwórz ścieżkę złożoną
  Podczas tworzenia ścieżki złożonej żadnych przecinających się części ścieżki są odejmowane od wyniku, a wynikowe ścieżki zajmuje się we właściwościach visual znajdujących się najniżej ścieżki.
 
  Możesz przerwać od siebie ścieżkę złożoną dowolnej chwili po jego utworzeniu.
@@ -107,7 +107,7 @@ Kształtów i ścieżek należy używać grafiki wektorowej, więc ich przeskalo
 
  **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [pracy dzięki określeniu ścieżki: Utwórz ścieżkę złożoną](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
-##  <a name="Clipping"></a> Tworzenie ścieżki przycinania
+## <a name="Clipping"></a> Tworzenie ścieżki przycinania
  Ścieżki przycięcia jest ścieżka lub kształtu, który jest stosowany do innego obiektu, ukrywanie części maskowanego obiektu, które wykraczają poza przycinania.
 
  ![Ścieżki przycięcia](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)

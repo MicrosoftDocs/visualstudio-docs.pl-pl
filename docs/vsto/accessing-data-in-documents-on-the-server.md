@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d13a15386fe8486dae16173ebb52ec2593de24f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d12c8168ef01dd3a38616af4f9dab2c38662bfff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926856"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102584"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>Dostęp do danych w dokumentach na serwerze
   Można programować względem danych w dostosowaniu na poziomie dokumentu, bez konieczności używania modelu obiektów programu Microsoft Office Word lub Microsoft Office Excel. Oznacza to, że można dostęp do danych znajdujących się w dokumencie na serwerze, który nie ma programu Word lub programem Excel zainstalowanym. Na przykład kod na serwerze (na przykład w [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] strony) można dostosować dane w dokumencie i dostosowany dokument wysyłany do użytkownika końcowego. Po otwarciu dokumentu przez użytkownika końcowego dostosowanych danych Kod powiązania danych w zestawie rozwiązania wiąże się z dokumentem. Jest to możliwe, ponieważ dane w dokumencie są oddzielone od interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [dane dostosowywane na poziomie dokumentu z pamięci podręcznej](../vsto/cached-data-in-document-level-customizations.md).
@@ -49,15 +49,15 @@ ms.locfileid: "55926856"
 ## <a name="modify-data-in-the-cache"></a>Modyfikowanie danych w pamięci podręcznej
  Aby zmodyfikować obiekt dane w pamięci podręcznej, zwykle wykonują następujące czynności:
 
-1.  Deserializuje reprezentację XML obiektu w pamięci podręcznej do nowego wystąpienia obiektu. Dostęp do pliku XML przy użyciu <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> właściwość <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> reprezentujący obiekt dane w pamięci podręcznej.
+1. Deserializuje reprezentację XML obiektu w pamięci podręcznej do nowego wystąpienia obiektu. Dostęp do pliku XML przy użyciu <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> właściwość <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> reprezentujący obiekt dane w pamięci podręcznej.
 
-2.  Wprowadź zmiany w tej kopii.
+2. Wprowadź zmiany w tej kopii.
 
-3.  Serializowanie zmienionych obiektów do pamięci podręcznej danych przy użyciu jednej z następujących opcji:
+3. Serializowanie zmienionych obiektów do pamięci podręcznej danych przy użyciu jednej z następujących opcji:
 
-    -   Jeśli chcesz automatycznie serializuj zmiany, należy użyć <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> metody. Ta metoda używa **w formacie DiffGram** format serializacji <xref:System.Data.DataSet>, <xref:System.Data.DataTable>i wpisana zestawu danych obiektów w pamięci podręcznej danych. **w formacie DiffGram** format gwarantuje, że zmiany w pamięci podręcznej danych w dokumencie w trybie offline są prawidłowo wysyłane do serwera.
+    - Jeśli chcesz automatycznie serializuj zmiany, należy użyć <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> metody. Ta metoda używa **w formacie DiffGram** format serializacji <xref:System.Data.DataSet>, <xref:System.Data.DataTable>i wpisana zestawu danych obiektów w pamięci podręcznej danych. **w formacie DiffGram** format gwarantuje, że zmiany w pamięci podręcznej danych w dokumencie w trybie offline są prawidłowo wysyłane do serwera.
 
-    -   Jeśli chcesz wykonać swoje własne serializacji zmian danych w pamięci podręcznej, można napisać bezpośrednio do <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> właściwości. Określ **w formacie DiffGram** formatu, jeśli używasz <xref:System.Data.Common.DataAdapter> aktualizacji bazy danych za pomocą zmian wprowadzonych w danych w <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, lub typizowany zestaw danych. W przeciwnym razie <xref:System.Data.Common.DataAdapter> spowoduje zaktualizowanie bazy danych, dodając nowe wiersze zamiast modyfikowania istniejących wierszy.
+    - Jeśli chcesz wykonać swoje własne serializacji zmian danych w pamięci podręcznej, można napisać bezpośrednio do <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> właściwości. Określ **w formacie DiffGram** formatu, jeśli używasz <xref:System.Data.Common.DataAdapter> aktualizacji bazy danych za pomocą zmian wprowadzonych w danych w <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, lub typizowany zestaw danych. W przeciwnym razie <xref:System.Data.Common.DataAdapter> spowoduje zaktualizowanie bazy danych, dodając nowe wiersze zamiast modyfikowania istniejących wierszy.
 
 ### <a name="modify-data-without-deserializing-the-current-value"></a>Modyfikowanie danych bez deserializacja bieżącą wartość
  W niektórych przypadkach możesz chcieć zmodyfikować wartość obiektu w pamięci podręcznej nie pierwszy deserializacja bieżącą wartość. Na przykład, można to zrobić w przypadku zmiany wartości obiektu, który jest typem prostym, takie jak ciąg lub liczba całkowita, czy są inicjowanie pamięci podręcznej <xref:System.Data.DataSet> w dokumencie na serwerze. W takich przypadkach można użyć <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> metody bez pierwszy deserializacja bieżącą wartość obiektu w pamięci podręcznej.
@@ -70,9 +70,9 @@ ms.locfileid: "55926856"
 ### <a name="modify-null-values-in-the-data-cache"></a>Modyfikowanie wartości null w pamięci podręcznej danych
  Pamięć podręczna danych nie są zapisywane obiekty, które mają wartość **null** gdy dokument zostanie zapisany i zamknięte. To ograniczenie ma kilka konsekwencje modyfikacji danych w pamięci podręcznej:
 
--   Jeśli ustawisz dowolnego obiektu w pamięci podręcznej danych na wartość **null**, wszystkie obiekty w pamięci podręcznej danych zostanie automatycznie ustawiony w **null** po otwarciu dokumentu i pamięci podręcznej danych całej zostanie wyczyszczona podczas dokument jest zapisać i zamknąć. Oznacza to, że wszystkie obiekty w pamięci podręcznej zostaną usunięte z pamięci podręcznej danych i <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> kolekcja będzie pusta.
+- Jeśli ustawisz dowolnego obiektu w pamięci podręcznej danych na wartość **null**, wszystkie obiekty w pamięci podręcznej danych zostanie automatycznie ustawiony w **null** po otwarciu dokumentu i pamięci podręcznej danych całej zostanie wyczyszczona podczas dokument jest zapisać i zamknąć. Oznacza to, że wszystkie obiekty w pamięci podręcznej zostaną usunięte z pamięci podręcznej danych i <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> kolekcja będzie pusta.
 
--   W przypadku tworzenia rozwiązania przy użyciu **null** obiektów w pamięci podręcznej danych i chcesz zainicjować tych obiektów za pomocą <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy przed dokument zostanie otwarty po raz pierwszy, należy upewnić się, zainicjuj wszystkie obiekty w pamięci podręcznej danych. Jeśli można zainicjować tylko niektórych obiektów, wszystkie obiekty zostanie ustawiona **null** po otwarciu dokumentu i pamięci podręcznej wszystkie dane zostaną wyczyszczone, gdy dokument zostanie zapisany i zamknięte.
+- W przypadku tworzenia rozwiązania przy użyciu **null** obiektów w pamięci podręcznej danych i chcesz zainicjować tych obiektów za pomocą <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy przed dokument zostanie otwarty po raz pierwszy, należy upewnić się, zainicjuj wszystkie obiekty w pamięci podręcznej danych. Jeśli można zainicjować tylko niektórych obiektów, wszystkie obiekty zostanie ustawiona **null** po otwarciu dokumentu i pamięci podręcznej wszystkie dane zostaną wyczyszczone, gdy dokument zostanie zapisany i zamknięte.
 
 ## <a name="access-typed-datasets-in-the-cache"></a>Dostęp wpisanych zestawów danych w pamięci podręcznej
  Jeśli chcesz uzyskać dostęp do danych w zestawie danych wpisywanych, zarówno z rozwiązania do pakietu Office i aplikacji poza biurem, takich jak aplikacji Windows Forms lub [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] projektu, należy zdefiniować typizowany zestaw danych w osobnym zestawie, który odwołuje się do obu projekty. Jeśli dodasz typizowany zestaw danych do każdego projektu za pomocą **konfiguracji źródła danych** kreatora lub **Projektanta obiektów Dataset**, .NET Framework będą traktować typizowanych zestawów danych w dwóch projektów jako różne typy . Aby uzyskać więcej informacji na temat tworzenia typizowanych zestawów danych, zobacz [tworzenie i konfigurowanie zestawów danych w programie Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md).

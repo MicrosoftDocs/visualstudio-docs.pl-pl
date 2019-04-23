@@ -23,12 +23,12 @@ ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7ec7527e51175b82d06a35ad7a6bc26856acf5dd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c0344b9961e7ade31864d70c7d7422f328983abd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773644"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100981"
 ---
 # <a name="how-to-use-a-visualizer"></a>Instrukcje: Korzystanie z wizualizatora
 Korzystanie z wizualizatora, aby wyświetlić zawartość zmiennej lub obiektu w sposób zrozumiały dla typu danych. Można użyć wizualizatorów z **DataTips**, **Obejrzyj** oknie **automatyczne** oknie lub **zmiennych lokalnych** okna.  
@@ -40,15 +40,15 @@ Korzystanie z wizualizatora, aby wyświetlić zawartość zmiennej lub obiektu w
   
 ### <a name="to-open-a-visualizer"></a>Aby otworzyć wizualizatora  
   
-1.  Kliknij ikonę lupy, która pojawia się obok nazwy zmiennej w **DataTips**, **Obejrzyj** oknie lub w **Autos**, **lokalne**, lub **Quick Watch** okna.  
+1. Kliknij ikonę lupy, która pojawia się obok nazwy zmiennej w **DataTips**, **Obejrzyj** oknie lub w **Autos**, **lokalne**, lub **Quick Watch** okna.  
   
      Zostanie wyświetlona lista wizualizatorów.  
   
-2.  Kliknij pozycję Wizualizator, którego chcesz użyć.  
+2. Kliknij pozycję Wizualizator, którego chcesz użyć.  
   
 ### <a name="to-use-a-visualizer-for-managed-code-during-remote-debugging"></a>Aby korzystanie z wizualizatora dla zarządzanego kodu podczas debugowania zdalnego  
   
--   Skopiuj Wizualizator biblioteki DLL do komputera zdalnego, przed rozpoczęciem sesji debugowania.  
+- Skopiuj Wizualizator biblioteki DLL do komputera zdalnego, przed rozpoczęciem sesji debugowania.  
   
      Ścieżka do biblioteki DLL musi być taka sama, zarówno w przypadku zdalnego, jak i komputerów lokalnych. Ta ścieżka może być jedną z następujących lokalizacji:  
   

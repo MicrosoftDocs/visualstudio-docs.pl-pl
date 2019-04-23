@@ -12,12 +12,12 @@ ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b028250c53ccf0d5af09671bca82848a626d3129
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4741059410e052c571d77088b9cbe109fb651642
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802801"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095070"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Zmiana wyglądu polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,21 +36,21 @@ Aby przekazać opinię do użytkownika, zmiana wyglądu polecenia. Na przykład 
   
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>Zmiana wyglądu polecenia menu  
   
-1.  Postępuj zgodnie z instrukcjami w [zmiana tekstu polecenia Menu](../extensibility/changing-the-text-of-a-menu-command.md) utworzyć element menu o nazwie `New Text`.  
+1. Postępuj zgodnie z instrukcjami w [zmiana tekstu polecenia Menu](../extensibility/changing-the-text-of-a-menu-command.md) utworzyć element menu o nazwie `New Text`.  
   
-2.  W pliku ChangeMenuText.cs, dodaj następującą instrukcję using:  
+2. W pliku ChangeMenuText.cs, dodaj następującą instrukcję using:  
   
     ```csharp  
     using System.Security.Permissions;  
     ```  
   
-3.  W pliku ChangeMenuTextPackageGuids.cs Dodaj następujący wiersz:  
+3. W pliku ChangeMenuTextPackageGuids.cs Dodaj następujący wiersz:  
   
     ```csharp  
     public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
     ```  
   
-4.  W pliku ChangeMenuText.cs Zastąp kod w metodzie ShowMessageBox następujących czynności:  
+4. W pliku ChangeMenuText.cs Zastąp kod w metodzie ShowMessageBox następujących czynności:  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -61,7 +61,7 @@ Aby przekazać opinię do użytkownika, zmiana wyglądu polecenia. Na przykład 
     }  
     ```  
   
-5.  Uzyskaj polecenie, które chcesz zaktualizować z <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> obiektu, a następnie ustaw odpowiednie właściwości w obiekcie command. Na przykład poniższa metoda sprawia, że określone polecenie z poziomu polecenia pakietu VSPackage dostępne lub niedostępne. Poniższy kod sprawia, że element menu o nazwie `New Text` niedostępna po jego kliknięciu.  
+5. Uzyskaj polecenie, które chcesz zaktualizować z <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> obiektu, a następnie ustaw odpowiednie właściwości w obiekcie command. Na przykład poniższa metoda sprawia, że określone polecenie z poziomu polecenia pakietu VSPackage dostępne lub niedostępne. Poniższy kod sprawia, że element menu o nazwie `New Text` niedostępna po jego kliknięciu.  
   
     ```csharp  
     public bool ChangeMyCommand(int cmdID, bool enableCmd)  
@@ -80,11 +80,11 @@ Aby przekazać opinię do użytkownika, zmiana wyglądu polecenia. Na przykład 
     }  
     ```  
   
-6.  Skompiluj projekt, a następnie rozpocząć debugowanie. Powinna zostać wyświetlona doświadczalnym wystąpieniu programu Visual Studio.  
+6. Skompiluj projekt, a następnie rozpocząć debugowanie. Powinna zostać wyświetlona doświadczalnym wystąpieniu programu Visual Studio.  
   
-7.  Na **narzędzia** menu, kliknij przycisk **wywołania ChangeMenuText** polecenia. W tym momencie nazwa polecenia jest **wywołania ChangeMenuText**, dlatego program obsługi poleceń nie wywołuje ChangeMyCommand().  
+7. Na **narzędzia** menu, kliknij przycisk **wywołania ChangeMenuText** polecenia. W tym momencie nazwa polecenia jest **wywołania ChangeMenuText**, dlatego program obsługi poleceń nie wywołuje ChangeMyCommand().  
   
-8.  Na **narzędzia** menu powinien zostać wyświetlony **nowy tekst**. Kliknij przycisk **nowy tekst**. Polecenie powinno teraz wyszarzone.  
+8. Na **narzędzia** menu powinien zostać wyświetlony **nowy tekst**. Kliknij przycisk **nowy tekst**. Polecenie powinno teraz wyszarzone.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)   

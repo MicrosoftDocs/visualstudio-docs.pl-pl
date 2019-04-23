@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3142d854a3a6371983dc6c5851ad007c387f1480
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 025f5366938eb00114b035f0b7992d61433cc181
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603043"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102565"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Sprawdzanie poprawności punktów przerwania w starszej wersji usługi językowej
 Punkt przerwania wskazuje, że wykonywanie programu powinna zostać przerwana w określonym punkcie, gdy są one uruchamiane w debugerze. Użytkownika można umieścić punkt przerwania w dowolnym wierszu w pliku źródłowym, ponieważ edytor ma nie wie, co stanowi prawidłowej lokalizacji punktu przerwania. Gdy debuger jest uruchamiany, wszystkie oznaczone punkty przerwania (nazywane oczekujących punktów przerwania) są powiązane z odpowiedniej lokalizacji w uruchomionego programu. W tym samym czasie, które punkty przerwania są sprawdzane w celu zapewnienia, że ich oznaczenie lokalizacje prawidłowy kod. Na przykład punkt przerwania w komentarz nie jest prawidłowy, ponieważ nie ma kodu w tej lokalizacji w kodzie źródłowym. Debuger wyłącza nieprawidłowy punktów przerwania.
@@ -25,13 +25,13 @@ Punkt przerwania wskazuje, że wykonywanie programu powinna zostać przerwana w 
 
 ## <a name="implementing-support-for-validating-breakpoints"></a>Implementowanie obsługi sprawdzania poprawności punktów przerwania
 
--   <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Metoda otrzymuje położenie punktu przerwania. Implementacji należy zdecydować, czy lokalizacja jest prawidłowa i wskazują, że to zwracając obszaru tekstu, który identyfikuje kod skojarzone z pozycji wiersz punktu przerwania.
+- <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Metoda otrzymuje położenie punktu przerwania. Implementacji należy zdecydować, czy lokalizacja jest prawidłowa i wskazują, że to zwracając obszaru tekstu, który identyfikuje kod skojarzone z pozycji wiersz punktu przerwania.
 
--   Zwróć <xref:Microsoft.VisualStudio.VSConstants.S_OK> Jeśli lokalizacja jest prawidłowa, lub <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> Jeśli nie jest prawidłowy.
+- Zwróć <xref:Microsoft.VisualStudio.VSConstants.S_OK> Jeśli lokalizacja jest prawidłowa, lub <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> Jeśli nie jest prawidłowy.
 
--   Jeśli punkt przerwania jest prawidłowy zakres tekstu jest wyróżniona wraz z punktu przerwania.
+- Jeśli punkt przerwania jest prawidłowy zakres tekstu jest wyróżniona wraz z punktu przerwania.
 
--   Jeśli punkt przerwania jest nieprawidłowa, na pasku stanu pojawi się komunikat o błędzie.
+- Jeśli punkt przerwania jest nieprawidłowa, na pasku stanu pojawi się komunikat o błędzie.
 
 ### <a name="example"></a>Przykład
  Ten przykład pokazuje implementację <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> metodę, która wywołuje analizator uzyskać zakres kodu (jeśli istnieją) w określonej lokalizacji.

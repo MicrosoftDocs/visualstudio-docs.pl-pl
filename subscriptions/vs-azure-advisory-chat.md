@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Dowiedz się, jak zastosować korzyści użycia Chat doradztwa technicznego dotyczącego platformy Azure, uwzględniony w subskrypcjach programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: e9640fc17f2fa924bc51ab536366479b72de0f36
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 03e55b29cea867d438ef0536a2db7ee9c4f47e36
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656118"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102045"
 ---
 # <a name="azure-advisory-chat"></a>Czat z doradcą Azure Advisor
 
@@ -38,7 +38,7 @@ Azure doradztwa technicznego dotyczącego Rozmowa jest prosty w użyciu.
 
 |                                                      Poziom subskrypcji                                                      |     Kanały      |    Korzyść    | Podlega odnowieniu? |
 |------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                                      Visual Studio Enterprise (Standard)                                       | VL, Azure, Retail |   Jeden rok    |    Yes     |
+|                                      Visual Studio Enterprise (Standard)                                       | VL, Azure, Retail |   Jeden rok    |    Tak     |
 | Visual Studio Professional (standardowy, miesięczną w chmurze) programu Visual Studio Enterprise (miesięczne chmury, NFR<sup>1</sup>) |        Wszystkie        | Niedostępne |     Nie     |
 |                                          Visual Studio Test Professional (Standard)                                          |        Wszystkie        | Niedostępne |     Nie     |
 |                                                  Platformy MSDN (standardowa)                                                   |        Wszystkie        | Niedostępne |     Nie     |
@@ -54,8 +54,8 @@ Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://m
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
 ### <a name="q--what-is-the-difference-between-azure-advisory-chat-and-azure-advisor"></a>PYT.:  Jaka jest różnica między Chat doradztwa technicznego dotyczącego platformy Azure i usługi Azure Advisor?
--  Odp.:  Czat z doradcą Azure jest usługą rozmowy w czasie rzeczywistym, aby pomóc w razie pytań dotyczących usługi Azure. [Usługa Azure Advisor](/azure/advisor/advisor-overview) to spersonalizowany konsultant ds. chmury, który ułatwia stosowanie najlepszych rozwiązań do optymalizacji wdrożeń platformy Azure. Jej analizuje konfigurację zasobów i dane telemetryczne użycia, a następnie zaleca rozwiązania, które mogą pomóc Ci zwiększyć efektywność kosztową, wydajność, wysoką dostępność i bezpieczeństwo zasobów platformy Azure.
+- Odp.:  Czat z doradcą Azure jest usługą rozmowy w czasie rzeczywistym, aby pomóc w razie pytań dotyczących usługi Azure. [Usługa Azure Advisor](/azure/advisor/advisor-overview) to spersonalizowany konsultant ds. chmury, który ułatwia stosowanie najlepszych rozwiązań do optymalizacji wdrożeń platformy Azure. Jej analizuje konfigurację zasobów i dane telemetryczne użycia, a następnie zaleca rozwiązania, które mogą pomóc Ci zwiększyć efektywność kosztową, wydajność, wysoką dostępność i bezpieczeństwo zasobów platformy Azure.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
--  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
+- Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

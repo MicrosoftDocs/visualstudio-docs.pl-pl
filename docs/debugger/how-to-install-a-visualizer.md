@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1a552c07443e4dd38070a86b7d9513d8cfa0136
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d5b27d52c1f390e6c9f60ef10a91d9a93f903f5c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691426"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104489"
 ---
 # <a name="how-to-install-a-visualizer"></a>Instrukcje: Instalacja programu Visualizer
 Po utworzeniu wizualizatora, należy zainstalować wizualizatora tak, że będzie on dostępny w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Instalowanie wizualizatora jest prostym procesem.
@@ -32,17 +32,17 @@ Po utworzeniu wizualizatora, należy zainstalować wizualizatora tak, że będzi
 
 ### <a name="to-install-a-visualizer"></a>Aby instalacja programu visualizer
 
-1.  Znajdź bibliotekę DLL, która zawiera visualizer, który został wcześniej utworzony.
+1. Znajdź bibliotekę DLL, która zawiera visualizer, który został wcześniej utworzony.
 
-2.  Kopiuj bibliotekę DLL do jednej z następujących lokalizacji:
+2. Kopiuj bibliotekę DLL do jednej z następujących lokalizacji:
 
-    -   *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
+    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
-    -   `My Documents\` *VisualStudioVersion* `\Visualizers`
+    - `My Documents\` *VisualStudioVersion* `\Visualizers`
 
-3.  Jeśli chcesz użyć zarządzany Wizualizator dla zdalnego debugowania, należy skopiować bibliotekę DLL do tej samej ścieżki na komputerze zdalnym.
+3. Jeśli chcesz użyć zarządzany Wizualizator dla zdalnego debugowania, należy skopiować bibliotekę DLL do tej samej ścieżki na komputerze zdalnym.
 
-4.  Uruchom ponownie sesję debugowania.
+4. Uruchom ponownie sesję debugowania.
 
 ## <a name="see-also"></a>Zobacz też
 - [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)

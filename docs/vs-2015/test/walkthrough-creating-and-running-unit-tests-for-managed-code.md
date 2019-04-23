@@ -14,12 +14,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c74a4f4089fa2af5c7413f8c95076c6254ffa21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ad9a30f5a54177a9df955cbe78d0ad0bc5d99ac3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784663"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058892"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,9 +54,9 @@ W tym przewodniku krok po kroku tworzenia, uruchamiania i dostosowywać serie te
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
   
--   Projekt o nazwie Bank. Zobacz [przykładowy projekt dotyczący tworzenia testów jednostkowych](../test/sample-project-for-creating-unit-tests.md).  
+- Projekt o nazwie Bank. Zobacz [przykładowy projekt dotyczący tworzenia testów jednostkowych](../test/sample-project-for-creating-unit-tests.md).  
   
-##  <a name="BKMK_Prepare_the_walkthrough"></a> Przygotuj przewodnik  
+## <a name="BKMK_Prepare_the_walkthrough"></a> Przygotuj przewodnik  
   
 1. Otwórz program Visual Studio.  
   
@@ -107,28 +107,28 @@ public void Debit(double amount)
   
 ```  
   
-##  <a name="BKMK_Create_a_unit_test_project"></a> Tworzenie projektu testu jednostkowego  
+## <a name="BKMK_Create_a_unit_test_project"></a> Tworzenie projektu testu jednostkowego  
  **Wymagań wstępnych**: Wykonaj kroki opisane w procedurze [Przygotuj przewodnik](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
   
 #### <a name="to-create-a-unit-test-project"></a>Aby utworzyć projekt testów jednostkowych  
   
-1.  Na **pliku** menu, wybierz **Dodaj**, a następnie wybierz **nowy projekt...** .  
+1. Na **pliku** menu, wybierz **Dodaj**, a następnie wybierz **nowy projekt...** .  
   
-2.  W oknie dialogowym Nowy projekt rozwiń **zainstalowane**, rozwiń węzeł **Visual C#**, a następnie wybierz **testu**.  
+2. W oknie dialogowym Nowy projekt rozwiń **zainstalowane**, rozwiń węzeł **Visual C#**, a następnie wybierz **testu**.  
   
-3.  Z listy szablonów wybierz **projektu testu jednostkowego**.  
+3. Z listy szablonów wybierz **projektu testu jednostkowego**.  
   
-4.  W **nazwa** , wpisz BankTest, a następnie wybierz **OK**.  
+4. W **nazwa** , wpisz BankTest, a następnie wybierz **OK**.  
   
      **BankTests** projekt jest dodawany do **Bank** rozwiązania.  
   
-5.  W **BankTests** projektu, Dodaj odwołanie do **Bank** rozwiązania.  
+5. W **BankTests** projektu, Dodaj odwołanie do **Bank** rozwiązania.  
   
      W Eksploratorze rozwiązań wybierz **odwołania** w **BankTests** projektu, a następnie wybierz **Dodaj odwołanie...**  z menu kontekstowego.  
   
-6.  W oknie dialogowym Reference Manager, rozwiń **rozwiązania** , a następnie sprawdź **Bank** elementu.  
+6. W oknie dialogowym Reference Manager, rozwiń **rozwiązania** , a następnie sprawdź **Bank** elementu.  
   
-##  <a name="BKMK_Create_the_test_class"></a> Utwórz klasę testową  
+## <a name="BKMK_Create_the_test_class"></a> Utwórz klasę testową  
  Potrzebujemy klasą testową w celu sprawdzenia `BankAccount` klasy. Możemy użyć pliku UnitTest1.cs, który został wygenerowany przez szablon projektu, ale firma Microsoft należy nadać plikowi i klasie bardziej opisowe nazwy. Można to zrobić w jednym kroku przez zmianę nazwy pliku w Eksploratorze rozwiązań.  
   
  **Zmiana nazwy pliku klasy**  
@@ -163,7 +163,7 @@ namespace BankTests
 using BankAccountNS;  
 ```  
   
-###  <a name="BKMK_Test_class_requirements"></a> Wymagania klasy testowej  
+### <a name="BKMK_Test_class_requirements"></a> Wymagania klasy testowej  
  Minimalne wymagania dla klasy testowej są następujące:  
   
 - `[TestClass]` Atrybut jest wymagany w jednostce Microsoft struktury testowania dla zarządzanego kodu, dla każdej klasy, która zawiera metody testów jednostkowych, które chcesz uruchomić w Eksploratorze testów.  
@@ -172,12 +172,12 @@ using BankAccountNS;
   
   Może mieć inne klasy projekt testów jednostkowych, które nie mają `[TestClass]` atrybut, na które może mieć innych metod w klasach testowych, które nie mają `[TestMethod]` atrybutu. Te klasy i metody można użyć w swoich metod testowych.  
   
-##  <a name="BKMK_Create_the_first_test_method"></a> Tworzenie pierwszej metody testowej  
+## <a name="BKMK_Create_the_first_test_method"></a> Tworzenie pierwszej metody testowej  
  W tej procedurze, zostaną napisane metody, aby sprawdzić zachowanie testów jednostkowych `Debit` metody `BankAccount` klasy. Metoda jest wymieniona powyżej.  
   
  Analizując testowaną metodę, określamy, czy są przynajmniej trzy zachowania, które muszą być sprawdzone:  
   
-1. Metoda zgłasza [Trwa wyjątku ArgumentOutOfRangeException] (<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) Jeśli kwota debet jest większa niż saldo.  
+1. Metoda zgłasza ([Trwa wyjątku ArgumentOutOfRangeException]<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) Jeśli kwota debet jest większa niż saldo.  
   
 2. Zgłasza również `ArgumentOutOfRangeException` Jeśli kwota debet jest mniejsza niż zero.  
   
@@ -213,28 +213,28 @@ using BankAccountNS;
   
    Metoda jest dość prosta. Skonfigurowanie nowego `BankAccount` obiektu z saldem, a następnie wycofać prawidłową kwotę. Używamy środowisko testów jednostkowych Microsoft dla kodu zarządzanego <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> metodę, aby sprawdzić, czy saldo końcowe jest, jakiego się spodziewaliśmy.  
   
-###  <a name="BKMK_Test_method_requirements"></a> Wymagania metod testowych  
+### <a name="BKMK_Test_method_requirements"></a> Wymagania metod testowych  
  Metoda testowa musi spełniać następujące wymagania:  
   
--   Metoda musi posiadać `[TestMethod]` atrybutu.  
+- Metoda musi posiadać `[TestMethod]` atrybutu.  
   
--   Metoda musi zwracać `void`.  
+- Metoda musi zwracać `void`.  
   
--   Metoda nie może mieć parametrów.  
+- Metoda nie może mieć parametrów.  
   
-##  <a name="BKMK_Build_and_run_the_test"></a> Kompilowanie i uruchamianie testu  
+## <a name="BKMK_Build_and_run_the_test"></a> Kompilowanie i uruchamianie testu  
   
 #### <a name="to-build-and-run-the-test"></a>Aby skompilować i uruchomić test  
   
-1.  Na **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.  
+1. Na **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.  
   
      Jeśli nie ma żadnych błędów, pojawi się okno UnitTestExplorer z **Debit_WithValidAmount_UpdatesBalance** na liście **testy nieuruchamiane** grupy. Eksplorator testów nie jest wyświetlany po pomyślnej kompilacji, wybierz opcję **testu** menu, kliknij **Windows**, a następnie wybierz **Eksplorator testów**.  
   
-2.  Wybierz **Uruchom wszystkie** do uruchomienia testu. Ponieważ test jest uruchomiony pasek stanu u góry okna jest animowany. Na końcu przebiegu testowego pasek zmieni kolor zielony, jeśli wszystkie metody testowe zakończy się pomyślnie lub czerwony Jeśli którykolwiek z testów nie powiedzie się.  
+2. Wybierz **Uruchom wszystkie** do uruchomienia testu. Ponieważ test jest uruchomiony pasek stanu u góry okna jest animowany. Na końcu przebiegu testowego pasek zmieni kolor zielony, jeśli wszystkie metody testowe zakończy się pomyślnie lub czerwony Jeśli którykolwiek z testów nie powiedzie się.  
   
-3.  W takim przypadku test nie powiódł się. Metoda testowa jest przenoszona do **testy zakończone niepomyślnie**. Grupa. Wybierz metodę w Eksploratorze testów, aby wyświetlić szczegóły u dołu okna.  
+3. W takim przypadku test nie powiódł się. Metoda testowa jest przenoszona do **testy zakończone niepomyślnie**. Grupa. Wybierz metodę w Eksploratorze testów, aby wyświetlić szczegóły u dołu okna.  
   
-##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Napraw kod i ponownego przeprowadzania testów  
+## <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Napraw kod i ponownego przeprowadzania testów  
  **Analizuj wyniki testu**  
   
  Wynik testu zawiera komunikat, który opisuje błąd. Dla `AreEquals` metody komunikat wyświetlany, możesz oczekiwanym ((<strong>oczekiwana\<*XXX*></strong>parametr) i co zostało rzeczywiście przesłane ( **Rzeczywiste\<*YYY* >** parametru). Rezultatem było saldo od salda początkowego, ale zamiast tego wzrosło o kwotę wycofania.  
@@ -259,7 +259,7 @@ m_balance -= amount;
   
  W Eksploratorze testów wybierz **Uruchom wszystkie** do ponownego uruchomienia testu. Czerwony/zielony pasek zmienia kolor na zielony a test przenoszony jest do **testy zakończone powodzeniem** grupy.  
   
-##  <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Użyj testów jednostkowych, aby poprawić kod  
+## <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Użyj testów jednostkowych, aby poprawić kod  
  W tej sekcji opisano, jak proces iteracyjny analizy, tworzenie testów jednostkowych i Refaktoryzacja może pomóc zwiększyć kodu produkcyjnego, bardziej niezawodnego i skutecznego.  
   
  **Analizuj problemy**  

@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 683e9e6fdd6108ade3a991ce5280a2f8024fe496
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 3d5e74a4384cff0a68764ffe09a37ab28460d58b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834920"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058502"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Instrukcje: Tworzenie typu Zerowalnego (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,17 +42,17 @@ Niektóre typy wartości nie zawsze masz (lub potrzebujesz) zdefiniowanej warto�
   
 ### <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Aby dodać typ dopuszczający wartość null, za pomocą projektanta klas  
   
-1.  Na diagramie klasy należy rozwinąć istniejącej klasy, lub Utwórz nową klasę.  
+1. Na diagramie klasy należy rozwinąć istniejącej klasy, lub Utwórz nową klasę.  
   
-2.  Aby dodać klasę do projektu, na **Diagram klas** menu, kliknij przycisk **Dodaj**, a następnie kliknij przycisk **Dodaj klasę**.  
+2. Aby dodać klasę do projektu, na **Diagram klas** menu, kliknij przycisk **Dodaj**, a następnie kliknij przycisk **Dodaj klasę**.  
   
-3.  Aby rozwinąć kształt klasy na **Diagram klas** menu, kliknij przycisk **rozwiń**.  
+3. Aby rozwinąć kształt klasy na **Diagram klas** menu, kliknij przycisk **rozwiń**.  
   
-4.  Wybierz kształt klasy. Na **Diagram klas** menu, kliknij przycisk **Dodaj**, a następnie kliknij przycisk **pola**. Nowe pole o nazwie domyślnej **pola** pojawi się w kształt klasy, a także w **szczegóły klasy** okna.  
+4. Wybierz kształt klasy. Na **Diagram klas** menu, kliknij przycisk **Dodaj**, a następnie kliknij przycisk **pola**. Nowe pole o nazwie domyślnej **pola** pojawi się w kształt klasy, a także w **szczegóły klasy** okna.  
   
-5.  W **nazwa** kolumny **szczegóły klasy** okna (lub w klasie kształtu, sam), Zmień nazwę nowego pola do nazwy ważne i istotne.  
+5. W **nazwa** kolumny **szczegóły klasy** okna (lub w klasie kształtu, sam), Zmień nazwę nowego pola do nazwy ważne i istotne.  
   
-6.  W **typu** kolumny **szczegóły klasy** oknie zadeklarowana jako typ dopuszczający wartość null, jak pokazano w poniższym kodzie:  
+6. W **typu** kolumny **szczegóły klasy** oknie zadeklarowana jako typ dopuszczający wartość null, jak pokazano w poniższym kodzie:  
   
     ```csharp  
     // Declare a nullable type in Visual C#:  
@@ -71,15 +71,15 @@ Niektóre typy wartości nie zawsze masz (lub potrzebujesz) zdefiniowanej warto�
   
 ### <a name="to-add-a-nullable-type-by-using-the-code-editor"></a>Aby dodać typ dopuszczający wartość null, za pomocą edytora kodu  
   
-1.  Dodaj klasę do projektu. Wybierz węzeł projektu w **Eksploratora rozwiązań**, a następnie na **projektu** menu, kliknij przycisk **Dodaj klasę**.  
+1. Dodaj klasę do projektu. Wybierz węzeł projektu w **Eksploratora rozwiązań**, a następnie na **projektu** menu, kliknij przycisk **Dodaj klasę**.  
   
-2.  W pliku CS lub .vb dla nowej klasy należy dodać co najmniej jeden typ dopuszczający wartość null w nowej klasie do deklaracji klasy.  
+2. W pliku CS lub .vb dla nowej klasy należy dodać co najmniej jeden typ dopuszczający wartość null w nowej klasie do deklaracji klasy.  
   
-3.  W widoku klas przeciągnij nową ikonę klasy do powierzchni projektowej projektanta klas. Kształt klasy pojawia się na diagramie klasy.  
+3. W widoku klas przeciągnij nową ikonę klasy do powierzchni projektowej projektanta klas. Kształt klasy pojawia się na diagramie klasy.  
   
-4.  Rozwiń szczegóły kształt klasy, a następnie przesuń wskaźnik myszy nad składowych klasy. Etykietka narzędzia zawiera deklarację każdego elementu członkowskiego.  
+4. Rozwiń szczegóły kształt klasy, a następnie przesuń wskaźnik myszy nad składowych klasy. Etykietka narzędzia zawiera deklarację każdego elementu członkowskiego.  
   
-5.  Kliknij prawym przyciskiem myszy kształt klasy, a następnie kliknij przycisk **szczegóły klasy**. Można wyświetlać lub modyfikować właściwości nowego typu w **szczegóły klasy** okna.  
+5. Kliknij prawym przyciskiem myszy kształt klasy, a następnie kliknij przycisk **szczegóły klasy**. Można wyświetlać lub modyfikować właściwości nowego typu w **szczegóły klasy** okna.  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:System.Nullable%601>   

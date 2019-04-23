@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0aa4d1c3126c22661285f18aac18a63d55468312
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9c82669ac6d4f32f1525b7e14427ed620a51cfc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647304"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102708"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>Komentarz kodu w starszej wersji usługi językowej
 Języki programowania zwykle zapewniają oznacza dodawać adnotacje i komentarze kodu. Komentarz to sekcja tekst, który zawiera dodatkowe informacje o kodzie, ale jest ignorowany podczas kompilacji lub interpretacji.
@@ -26,9 +26,9 @@ Języki programowania zwykle zapewniają oznacza dodawać adnotacje i komentarze
 ## <a name="comment-styles"></a>Style komentarz
 Istnieją dwa ogólne style komentarza:
 
-1.  Komentarze wiersza, gdzie jest komentarz w jednym wierszu.
+1. Komentarze wiersza, gdzie jest komentarz w jednym wierszu.
 
-2.  Komentarze bloku, gdzie komentarz może obejmować wiele wierszy.
+2. Komentarze bloku, gdzie komentarz może obejmować wiele wierszy.
 
 Wiersz komentarze zazwyczaj mają znak początkowy (lub znaków), podczas komentarze bloku znaków zarówno rozpoczęcia i zakończenia. Na przykład w języku C# wiersz komentarza rozpoczyna się od `//`, i zaczyna się komentarza blokowego `/*` i kończy `*/`.
 

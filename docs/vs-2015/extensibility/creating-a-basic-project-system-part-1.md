@@ -12,12 +12,12 @@ ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 caps.latest.revision: 48
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ed2f8975f24404c00f81d86d0d1d6a6933b3d8ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1fcf05377545100dfffe2db2385ea80fef4106eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791862"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104944"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>Tworzenie systemu podstawowego projektu, część 1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ W programie Visual Studio projekty są kontenerami, używanych przez deweloperó
 >  Jeśli zachodzi potrzeba Rozszerzanie programu Visual Studio przy użyciu typu niestandardowego projektu, zdecydowanie zalecamy korzystanie z [System projektu usługi Visual Studio](https://github.com/Microsoft/VSProjectSystem) która ma kilka zalet w stosunku do tworzenia projektu systemu od zera:  
 > 
 > - Łatwiejsze dołączanie.  Nawet systemu podstawowego projektu wymaga dziesiątki tysięcy wierszy kodu.  Wykorzystując CPS zmniejsza koszty dołączania do kilku kliknięć, zanim można przystąpić do go dostosować do swoich potrzeb.  
->   -   Łatwiejsze konserwacji.  Dzięki wykorzystaniu CPS, wystarczy do obsługi własnych scenariuszy.  My zajmujemy utrzymania wszystkich infrastruktury systemu projektu.  
+>   - Łatwiejsze konserwacji.  Dzięki wykorzystaniu CPS, wystarczy do obsługi własnych scenariuszy.  My zajmujemy utrzymania wszystkich infrastruktury systemu projektu.  
 > 
 >   Jeśli potrzebujesz do wersji docelowej programu Visual Studio starszych niż program Visual Studio 2013, nie można wykorzystać CPS w rozszerzeniu Visual Studio.  Jeśli tak jest rzeczywiście, ten przewodnik jest dobrym miejscem, aby rozpocząć pracę.  
   
@@ -41,21 +41,21 @@ W programie Visual Studio projekty są kontenerami, używanych przez deweloperó
   
  Ten przewodnik omawia sposób wykonywania tych zadań:  
   
--   Tworzenie typu podstawowego projektu.  
+- Tworzenie typu podstawowego projektu.  
   
--   Utwórz szablon podstawowy projekt.  
+- Utwórz szablon podstawowy projekt.  
   
--   Szablon projektu należy zarejestrować w usłudze Visual Studio.  
+- Szablon projektu należy zarejestrować w usłudze Visual Studio.  
   
--   Utwórz wystąpienie projektu, otwierając **nowy projekt** okno dialogowe, a następnie za pomocą szablonu.  
+- Utwórz wystąpienie projektu, otwierając **nowy projekt** okno dialogowe, a następnie za pomocą szablonu.  
   
--   Tworzenie fabryki projektu w systemie projektu.  
+- Tworzenie fabryki projektu w systemie projektu.  
   
--   Utwórz węzeł projektu w systemie projektu.  
+- Utwórz węzeł projektu w systemie projektu.  
   
--   Dodaj niestandardowe ikony system projektu.  
+- Dodaj niestandardowe ikony system projektu.  
   
--   Implementuje podstawowy szablon Podstawienie parametru.  
+- Implementuje podstawowy szablon Podstawienie parametru.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -254,11 +254,11 @@ W programie Visual Studio projekty są kontenerami, używanych przez deweloperó
 ## <a name="add-the-managed-package-framework-code"></a>Dodaj kod środowiska pakietu zarządzanego  
  Implementuje połączenie między pakietu z projektem i fabryka projektu.  
   
--   Zaimportuj pliki kodu źródłowego dla środowiska pakietu zarządzanego.  
+- Zaimportuj pliki kodu źródłowego dla środowiska pakietu zarządzanego.  
   
-    1.  Cofnij ładowanie projektu SimpleProject (w **Eksploratora rozwiązań**, wybierz węzeł projektu i w menu kontekstowym kliknij **Zwolnij projekt**.), a następnie otwórz plik projektu w edytorze XML.  
+    1. Cofnij ładowanie projektu SimpleProject (w **Eksploratora rozwiązań**, wybierz węzeł projektu i w menu kontekstowym kliknij **Zwolnij projekt**.), a następnie otwórz plik projektu w edytorze XML.  
   
-    2.  Dodaj poniższe bloki do pliku projektu (tuż powyżej \<Import > bloków). Ustaw ProjectBasePath lokalizację pliku ProjectBase.files w kodzie środowiska pakietu zarządzanego, które zostały pobrane. Być może będzie trzeba dodać ukośnik odwrotny na nazwę ścieżki. Jeśli tego nie zrobisz, projekt może się nie powieść można znaleźć kodu zarządzanego środowiska pakietu.  
+    2. Dodaj poniższe bloki do pliku projektu (tuż powyżej \<Import > bloków). Ustaw ProjectBasePath lokalizację pliku ProjectBase.files w kodzie środowiska pakietu zarządzanego, które zostały pobrane. Być może będzie trzeba dodać ukośnik odwrotny na nazwę ścieżki. Jeśli tego nie zrobisz, projekt może się nie powieść można znaleźć kodu zarządzanego środowiska pakietu.  
   
         ```  
         <PropertyGroup>  
@@ -271,38 +271,38 @@ W programie Visual Studio projekty są kontenerami, używanych przez deweloperó
         > [!IMPORTANT]
         >  Nie zapomnij ukośnik odwrotny na końcu ścieżki.  
   
-    3.  Ponownie Załaduj projekt.  
+    3. Ponownie Załaduj projekt.  
   
-    4.  Dodaj odwołania do następujących zestawów:  
+    4. Dodaj odwołania do następujących zestawów:  
   
-        -   Microsoft.VisualStudio.Designer.Interfaces (w \<VSSDK instalacji > \VisualStudioIntegration\Common\Assemblies\v2.0)  
+        - Microsoft.VisualStudio.Designer.Interfaces (w \<VSSDK instalacji > \VisualStudioIntegration\Common\Assemblies\v2.0)  
   
-        -   WindowsBase  
+        - WindowsBase  
   
-        -   Microsoft.Build.Tasks.v4.0  
+        - Microsoft.Build.Tasks.v4.0  
   
 #### <a name="to-initialize-the-project-factory"></a>Aby zainicjować fabryka projektu  
   
-1.  W pliku SimpleProjectPackage.cs, Dodaj następujący kod `using` instrukcji.  
+1. W pliku SimpleProjectPackage.cs, Dodaj następujący kod `using` instrukcji.  
   
     ```  
     using Microsoft.VisualStudio.Project;  
     ```  
   
-2.  Pochodzi `SimpleProjectPackage` klasy z `Microsoft.VisualStudio.Package.ProjectPackage`.  
+2. Pochodzi `SimpleProjectPackage` klasy z `Microsoft.VisualStudio.Package.ProjectPackage`.  
   
     ```  
     public sealed class SimpleProjectPackage : ProjectPackage  
     ```  
   
-3.  Zarejestrować fabryki projektu. Dodaj następujący wiersz do `SimpleProjectPackage.Initialize` metody tuż za `base.Initialize`.  
+3. Zarejestrować fabryki projektu. Dodaj następujący wiersz do `SimpleProjectPackage.Initialize` metody tuż za `base.Initialize`.  
   
     ```  
     base.Initialize();  
     this.RegisterProjectFactory(new SimpleProjectFactory(this));  
     ```  
   
-4.  Implementuje właściwość abstrakcyjną `ProductUserContext`:  
+4. Implementuje właściwość abstrakcyjną `ProductUserContext`:  
   
     ```csharp  
     public override string ProductUserContext  
@@ -311,19 +311,19 @@ W programie Visual Studio projekty są kontenerami, używanych przez deweloperó
     }  
     ```  
   
-5.  W SimpleProjectFactory.cs, Dodaj następujący kod `using` instrukcji znajdującej się po istniejącej `using` instrukcji.  
+5. W SimpleProjectFactory.cs, Dodaj następujący kod `using` instrukcji znajdującej się po istniejącej `using` instrukcji.  
   
     ```  
     using Microsoft.VisualStudio.Project;  
     ```  
   
-6.  Pochodzi `SimpleProjectFactory` klasy z `ProjectFactory`.  
+6. Pochodzi `SimpleProjectFactory` klasy z `ProjectFactory`.  
   
     ```  
     class SimpleProjectFactory : ProjectFactory  
     ```  
   
-7.  Dodaj następującą metodę fikcyjnego do `SimpleProjectFactory` klasy. Ta metoda będzie implementowany w dalszej części tego tematu.  
+7. Dodaj następującą metodę fikcyjnego do `SimpleProjectFactory` klasy. Ta metoda będzie implementowany w dalszej części tego tematu.  
   
     ```  
     protected override ProjectNode CreateProject()  
@@ -332,7 +332,7 @@ W programie Visual Studio projekty są kontenerami, używanych przez deweloperó
     }  
     ```  
   
-8.  Dodaj następujące pola i Konstruktor `SimpleProjectFactory` klasy. To `SimpleProjectPackage` odwołanie jest buforowany w pole prywatne, dzięki czemu mogą służyć podczas ustawiania witryna dostawcy usług.  
+8. Dodaj następujące pola i Konstruktor `SimpleProjectFactory` klasy. To `SimpleProjectPackage` odwołanie jest buforowany w pole prywatne, dzięki czemu mogą służyć podczas ustawiania witryna dostawcy usług.  
   
     ```  
     private SimpleProjectPackage package;  
@@ -351,17 +351,17 @@ W programie Visual Studio projekty są kontenerami, używanych przez deweloperó
   
 #### <a name="to-test-the-project-factory-implementation"></a>Aby przetestować wdrożenie fabryki projektu  
   
-1.  W pliku SimpleProjectFactory.cs Ustaw punkt przerwania na następujący wiersz w `SimpleProjectFactory` konstruktora.  
+1. W pliku SimpleProjectFactory.cs Ustaw punkt przerwania na następujący wiersz w `SimpleProjectFactory` konstruktora.  
   
     ```  
     this.package = package;  
     ```  
   
-2.  Naciśnij klawisz F5, aby uruchomić doświadczalne wystąpienie programu Visual Studio.  
+2. Naciśnij klawisz F5, aby uruchomić doświadczalne wystąpienie programu Visual Studio.  
   
-3.  W doświadczalnym wystąpieniu Uruchom utworzyć nowy projekt. W **nowy projekt** okno dialogowe, wybierz opcję SimpleProject typ projektu, a następnie kliknij przycisk **OK**. Zatrzymuje wykonywanie w punkcie przerwania.  
+3. W doświadczalnym wystąpieniu Uruchom utworzyć nowy projekt. W **nowy projekt** okno dialogowe, wybierz opcję SimpleProject typ projektu, a następnie kliknij przycisk **OK**. Zatrzymuje wykonywanie w punkcie przerwania.  
   
-4.  Wyczyść punkt przerwania i zatrzymać debugowanie. Ponieważ nie utworzono jeszcze węzła projektu, kod tworzenia projektu nadal zgłasza wyjątków.  
+4. Wyczyść punkt przerwania i zatrzymać debugowanie. Ponieważ nie utworzono jeszcze węzła projektu, kod tworzenia projektu nadal zgłasza wyjątków.  
   
 ## <a name="extending-the-project-node-class"></a>Rozszerzanie klasa węzła projektu  
  Teraz można zaimplementować `SimpleProjectNode` klasy, która jest pochodną `ProjectNode` klasy. `ProjectNode` Klasy bazowej obsługuje następujące zadania tworzenia projektu:  
@@ -432,13 +432,13 @@ W programie Visual Studio projekty są kontenerami, używanych przez deweloperó
   
 #### <a name="to-connect-the-project-factory-class-and-the-node-class"></a>Aby połączyć klasę fabryki projektu i klasa węzła  
   
-1.  W pliku SimpleProjectFactory.cs, Dodaj następujący kod `using` instrukcji:  
+1. W pliku SimpleProjectFactory.cs, Dodaj następujący kod `using` instrukcji:  
   
     ```  
     using IOleServiceProvider =    Microsoft.VisualStudio.OLE.Interop.IServiceProvider;  
     ```  
   
-2.  Zastąp `SimpleProjectFactory.CreateProject` metody, używając następującego kodu.  
+2. Zastąp `SimpleProjectFactory.CreateProject` metody, używając następującego kodu.  
   
     ```  
     protected override ProjectNode CreateProject()  
@@ -450,18 +450,18 @@ W programie Visual Studio projekty są kontenerami, używanych przez deweloperó
     }  
     ```  
   
-3.  Ponownie skompiluj rozwiązanie, a następnie sprawdź, czy opiera się bez błędów.  
+3. Ponownie skompiluj rozwiązanie, a następnie sprawdź, czy opiera się bez błędów.  
   
 ## <a name="testing-the-project-node-class"></a>Testowanie klasa węzła projektu  
  Przetestuj fabryką projektu, aby zobaczyć, czy zostaje utworzony hierarchii projektu.  
   
 #### <a name="to-test-the-project-node-class"></a>Aby przetestować klasa węzła projektu  
   
-1.  Naciśnij klawisz F5, aby rozpocząć debugowanie. W doświadczalnym wystąpieniu należy utworzyć nowe SimpleProject.  
+1. Naciśnij klawisz F5, aby rozpocząć debugowanie. W doświadczalnym wystąpieniu należy utworzyć nowe SimpleProject.  
   
-2.  Program Visual Studio, należy wywołać fabryką projektu, aby utworzyć projekt.  
+2. Program Visual Studio, należy wywołać fabryką projektu, aby utworzyć projekt.  
   
-3.  Zamknij wystąpienie doświadczalne programu Visual Studio.  
+3. Zamknij wystąpienie doświadczalne programu Visual Studio.  
   
 ## <a name="adding-a-custom-project-node-icon"></a>Dodawanie ikony węzła niestandardowego projektu  
  Ikona węzła projektu we wcześniejszej sekcji znajduje się ikona domyślna. Można go zmienić, na ikony niestandardowej.  
@@ -543,13 +543,13 @@ W programie Visual Studio projekty są kontenerami, używanych przez deweloperó
   
 #### <a name="to-test-the-custom-project-node-icon"></a>Aby przetestować niestandardowego projektu ikony węzła  
   
-1.  Rozpocznij debugowanie, a w doświadczalnym wystąpieniu tworzenie nowych SimpleProject.  
+1. Rozpocznij debugowanie, a w doświadczalnym wystąpieniu tworzenie nowych SimpleProject.  
   
-2.  W nowo utworzonym projekcie należy zauważyć, że SimpleProjectNode.bmp jest używany jako ikona węzła projektu.  
+2. W nowo utworzonym projekcie należy zauważyć, że SimpleProjectNode.bmp jest używany jako ikona węzła projektu.  
   
      ![Prosty projekt nowy węzeł projektu](../extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")  
   
-3.  Otwórz plik Program.cs w edytorze kodu. Kod źródłowy, który przypomina poniższy kod powinien być widoczny.  
+3. Otwórz plik Program.cs w edytorze kodu. Kod źródłowy, który przypomina poniższy kod powinien być widoczny.  
   
     ```  
     using System;  
@@ -617,9 +617,9 @@ W programie Visual Studio projekty są kontenerami, używanych przez deweloperó
   
 3. Sprawdź wartości `nameSpace` i `className` parametrów.  
   
-   -   `nameSpace` podano wartość \<RootNamespace > elementu w pliku szablonu projektu \Templates\Projects\SimpleProject\SimpleProject.myproj. W tym przypadku wartość jest "MyRootNamespace".  
+   - `nameSpace` podano wartość \<RootNamespace > elementu w pliku szablonu projektu \Templates\Projects\SimpleProject\SimpleProject.myproj. W tym przypadku wartość jest "MyRootNamespace".  
   
-   -   `className` podana jest wartość nazwę klasy źródłowej pliku bez rozszerzenia nazwy pliku. W tym przypadku jest to plik był kopiowany do folderu docelowego AssemblyInfo.cs; Dlatego wartość className jest "AssemblyInfo".  
+   - `className` podana jest wartość nazwę klasy źródłowej pliku bez rozszerzenia nazwy pliku. W tym przypadku jest to plik był kopiowany do folderu docelowego AssemblyInfo.cs; Dlatego wartość className jest "AssemblyInfo".  
   
 4. Usuń punkt przerwania, a następnie naciśnij klawisz F5, aby kontynuować wykonywanie.  
   

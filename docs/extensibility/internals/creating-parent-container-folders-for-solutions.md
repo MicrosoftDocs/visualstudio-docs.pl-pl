@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c23ec3101baac033cbef47f6f1c3ad6f717a15d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b9b48cb7862b23df325b35bba0cb3e197573e3c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661064"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102721"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Tworzenie folderów kontenera dla rozwiązań nadrzędnego
 W źródło sterowania wtyczki interfejsu API w wersji 1.2 użytkownik może określić lokalizację docelową kontroli źródła z jednym elementem głównym dla wszystkich projektów sieci web w ramach rozwiązania. To z jednym elementem głównym jest nazywany Super Unified głównego (dolna Południowa).
@@ -35,13 +35,13 @@ W źródło sterowania wtyczki interfejsu API w wersji 1.2 użytkownik może okr
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE prawie zawsze tworzy SUR folder podczas dodawania rozwiązanie do kontroli źródła. W szczególności odbywa się to w następujących przypadkach:
 
--   Projekt jest projektem sieci web udziału plików.
+- Projekt jest projektem sieci web udziału plików.
 
--   Istnieją różne dyski dla projektu i pliku rozwiązania.
+- Istnieją różne dyski dla projektu i pliku rozwiązania.
 
--   Istnieją różne udziały plików rozwiązania i projektu.
+- Istnieją różne udziały plików rozwiązania i projektu.
 
--   Projekt został dodany osobno (w ramach rozwiązania pod kontrolą źródła).
+- Projekt został dodany osobno (w ramach rozwiązania pod kontrolą źródła).
 
 W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], zalecane jest, czy nazwa folderu SUR być taka sama jak nazwa rozwiązania bez rozszerzenia. W poniższej tabeli podsumowano zachowanie w dwóch wersjach.
 

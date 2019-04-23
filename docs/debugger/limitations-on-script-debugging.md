@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad7008213e0e20b010842b99c9c7be2a39b3bd5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 69c5bb23745719edf5e67400d97202f4d14ac17d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687565"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101044"
 ---
 # <a name="limitations-on-script-debugging"></a>Ograniczenia debugowania skryptu
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] obsługuje debugowanie skryptu po stronie klienta, z zastrzeżeniem ograniczeń w tym temacie.
@@ -30,15 +30,15 @@ ms.locfileid: "56687565"
 ## <a name="limitations-on-breakpoint-mapping-with-client-side-script"></a>Ograniczenia dotyczące mapowanie punktów przerwania, za pomocą skryptu po stronie klienta
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] można ustawić punkt przerwania w pliku po stronie serwera ASPX lub kodu HTML, który jest przekształcany w pliku po stronie klienta w czasie wykonywania. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mapuje punkt przerwania z pliku po stronie serwera do odpowiedniego punktu przerwania w pliku po stronie klienta, podlegają następującym ograniczeniom:
 
--   Można ustawić punktów przerwania, wewnątrz `<script>` bloków. Punkty przerwania w skrypcie wbudowanych lub `<% %>` bloki nie mogą być mapowane.
+- Można ustawić punktów przerwania, wewnątrz `<script>` bloków. Punkty przerwania w skrypcie wbudowanych lub `<% %>` bloki nie mogą być mapowane.
 
--   Adres URL przeglądarki dla strony musi zawierać nazwę strony. Na przykład http://microsoft.com/default.apsx. Mapowanie punktów przerwania nie może rozpoznać przekierowania z adresu takich jak http://microsoft.com do domyślnej strony.
+- Adres URL przeglądarki dla strony musi zawierać nazwę strony. Na przykład http://microsoft.com/default.apsx. Mapowanie punktów przerwania nie może rozpoznać przekierowania z adresu takich jak http://microsoft.com do domyślnej strony.
 
--   Należy ustawić punkt przerwania w określonej w przeglądarce adres URL, a nie w pliku sterowania (ascx) ASPX strony głównej strony lub inny plik dołączony przez tę stronę. Nie można zamapować punkty przerwania ustawione na stronach uwzględnione.
+- Należy ustawić punkt przerwania w określonej w przeglądarce adres URL, a nie w pliku sterowania (ascx) ASPX strony głównej strony lub inny plik dołączony przez tę stronę. Nie można zamapować punkty przerwania ustawione na stronach uwzględnione.
 
--   Punkty przerwania ustawione w `<script defer=true>` bloki nie mogą być mapowane.
+- Punkty przerwania ustawione w `<script defer=true>` bloki nie mogą być mapowane.
 
--   Aby ustawić punktów przerwania w `<script id="">` bloków, mapowanie punktów przerwania ignoruje `id` atrybutu.
+- Aby ustawić punktów przerwania w `<script id="">` bloków, mapowanie punktów przerwania ignoruje `id` atrybutu.
 
 ## <a name="breakpoint-mapping-and-duplicate-lines"></a>Mapowanie punktów przerwania lub zduplikowane wiersze
  Aby znaleźć odpowiedniej lokalizacji w skrypt po stronie serwera i klienta, algorytm mapowanie punktu przerwania sprawdza, czy kod w każdym wierszu. Algorytm przyjęto założenie, że każdy wiersz jest unikatowa. Jeśli co najmniej dwa wiersze zawierają ten sam kod, a następnie ustaw punkt przerwania na jednym z tych zduplikowane wiersze, algorytm mapowanie punktu przerwania wybrać zduplikowany problem w pliku po stronie klienta. Aby tego uniknąć, należy dodać komentarz do wiersza, w którym ustawiono punkt przerwania. Na przykład:

@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f675b40f250505e654b287fcaa86e70aca4cdd0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 57c843b7c556ac409a63d5e6c01e2699da59958b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796466"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099575"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Instrukcje: Tworzenie rozwiązania języka specyficznego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,9 +67,9 @@ Języka specyficznego dla domeny (DSL) jest tworzony przy użyciu wyspecjalizowa
   
 3. Wprowadź rozszerzenie nazwy pliku na **rozszerzenie pliku** strony. Powinien on być unikatowy w komputerze i w każdym komputerze, na którym chcesz zainstalować język DSL. Powinien zostać wyświetlony komunikat **Brak aplikacji lub edytorów programu Visual Studio za pomocą tego rozszerzenia**.  
   
-   -   Jeśli rozszerzenie nazwy pliku jest używany, poprzednie eksperymentalne językami DSL, które nie zostały w pełni zainstalowane, można wyczyścić je na zewnątrz przy użyciu **Zresetuj wystąpienie eksperymentalne** narzędzia, które znajdują się w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menu zestawu SDK.  
+   - Jeśli rozszerzenie nazwy pliku jest używany, poprzednie eksperymentalne językami DSL, które nie zostały w pełni zainstalowane, można wyczyścić je na zewnątrz przy użyciu **Zresetuj wystąpienie eksperymentalne** narzędzia, które znajdują się w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menu zestawu SDK.  
   
-   -   Jeśli w kolejnym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pełni zainstalowano rozszerzenie, która używa tego rozszerzenia pliku na komputerze, należy rozważyć odinstalowanie go. Na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.  
+   - Jeśli w kolejnym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pełni zainstalowano rozszerzenie, która używa tego rozszerzenia pliku na komputerze, należy rozważyć odinstalowanie go. Na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.  
   
 4. Zbadaj i w razie potrzeby dostosować, pola na pozostałych stronach kreatora. Gdy jesteś zadowolony z ustawień, kliknij przycisk **Zakończ**. Aby uzyskać więcej informacji na temat ustawień, zobacz [stron kreatora Projektant DSL](#settings).  
   
@@ -78,7 +78,7 @@ Języka specyficznego dla domeny (DSL) jest tworzony przy użyciu wyspecjalizowa
    > [!NOTE]
    >  Jeśli zobaczysz komunikat z ostrzeżeniem, nie można uruchomić szablony tekstowe ze źródeł niezaufanych, kliknij przycisk **OK**. Można ustawić ten komunikat, aby nie pojawiają się ponownie.  
   
-##  <a name="settings"></a> Na stronach kreatora projektanta DSL  
+## <a name="settings"></a> Na stronach kreatora projektanta DSL  
  Możesz pozostawić kilka pól, bez zmian wartości domyślne. Jednak należy się upewnić, czy ustawić pola rozszerzenie pliku.  
   
 ### <a name="solution-settings-page"></a>Strona Ustawienia rozwiązania  
@@ -98,15 +98,15 @@ Języka specyficznego dla domeny (DSL) jest tworzony przy użyciu wyspecjalizowa
   
  Jeśli zobaczysz listę narzędzi lub pakietów, należy wykonać jedną z następujących czynności:  
   
--   Wpisz rozszerzenie inny plik.  
+- Wpisz rozszerzenie inny plik.  
   
      \- lub —  
   
--   Resetuj [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wystąpienie eksperymentalne. To wyrejestruje wszystkich języków DSL, które zostały wcześniej utworzone. Na **Start** menu, kliknij przycisk **wszystkie programy**, **Microsoft Visual Studio 2010 SDK**, **narzędzia**, a następnie **resetowania Microsoft Visual Studio 2010 doświadczalne wystąpienie**. Można odtworzyć innych języków, które chcesz ponownie użyć DSL.  
+- Resetuj [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wystąpienie eksperymentalne. To wyrejestruje wszystkich języków DSL, które zostały wcześniej utworzone. Na **Start** menu, kliknij przycisk **wszystkie programy**, **Microsoft Visual Studio 2010 SDK**, **narzędzia**, a następnie **resetowania Microsoft Visual Studio 2010 doświadczalne wystąpienie**. Można odtworzyć innych języków, które chcesz ponownie użyć DSL.  
   
      \- lub —  
   
--   Jeśli [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pełni zainstalowano rozszerzenie, która używa tego rozszerzenia pliku na komputerze, odinstaluj je. Na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.  
+- Jeśli [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pełni zainstalowano rozszerzenie, która używa tego rozszerzenia pliku na komputerze, odinstaluj je. Na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.  
   
 ### <a name="product-settings-page"></a>Strona ustawień produktu  
  **Co to jest nazwa produktu, którego należy nowy język specyficznego dla domeny?**  

@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1d0ff9d8f3113b1df1e10891a3bd2197dd92482d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 50d307cd65bfdf534b6ca3586e69bbc27be25e36
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58789903"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055388"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Debugowanie aplikacji platformy uniwersalnej systemu Windows na komputerach zdalnych z programu Visual Studio
 
 Visual Studio umożliwia uruchamianie, debugowanie, profilowanie i testowanie aplikacji platformy uniwersalnej Windows (UWP), na innym komputerze lub urządzeniu. Uruchamianie aplikacji platformy uniwersalnej systemu Windows na komputerze zdalnym jest szczególnie przydatne w przypadku, gdy komputer z programem Visual Studio nie obsługuje funkcji specyficznych dla platformy uniwersalnej systemu Windows, takich jak dotyk, lokalizacji geograficznej lub fizycznych orientacji.
 
-##  <a name="BKMK_Prerequisites"></a> Wymagania wstępne
+## <a name="BKMK_Prerequisites"></a> Wymagania wstępne
 
 Aby debugować aplikację platformy UWP na urządzeniu zdalnym z programu Visual Studio:
 
@@ -35,7 +35,7 @@ Aby debugować aplikację platformy UWP na urządzeniu zdalnym z programu Visual
   - Niektóre wersje systemu Windows 10, uruchom i automatycznie uruchomić narzędzia zdalne. W przeciwnym razie [zainstalować i uruchomić narzędzia zdalne dla Visual Studio](#BKMK_download).
   - Urządzenia Windows Mobile 10 nie wymagają lub obsługi narzędzi zdalnych.
 
-##  <a name="BKMK_ConnectVS"></a> Konfigurowanie projektu programu Visual Studio dla zdalnego debugowania
+## <a name="BKMK_ConnectVS"></a> Konfigurowanie projektu programu Visual Studio dla zdalnego debugowania
 <a name="BKMK_DirectConnect"></a> Użyj projektu **właściwości** określić urządzenie zdalne, aby nawiązać połączenie. Ustawienia różnią się w zależności od języka programowania.
 
 > [!CAUTION]
@@ -43,27 +43,27 @@ Aby debugować aplikację platformy UWP na urządzeniu zdalnym z programu Visual
 >
 >Jeśli wybierzesz **uwierzytelniania Windows** dla **typ uwierzytelniania**, należy zalogować się do maszyny zdalnej podczas debugowania. Zdalny debuger musi również działać w ramach **uwierzytelniania Windows** tryb, z tym samym kontem użytkownika na komputerze programu Visual Studio.
 
-###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Konfigurowanie C# lub projekcie Visual Basic dla zdalnego debugowania
+### <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Konfigurowanie C# lub projekcie Visual Basic dla zdalnego debugowania
 
 1. Wybierz C# lub projekcie Visual Basic w programie Visual Studio **Eksploratora rozwiązań** i wybierz **właściwości** ikonę, naciśnij klawisz **Alt** +  **Wprowadź**, lub kliknij prawym przyciskiem myszy i wybierz pozycję **właściwości**.
 
-1.  Wybierz **debugowania** kartę.
+1. Wybierz **debugowania** kartę.
 
-1.  W obszarze **urządzenie docelowe**, wybierz opcję **maszyny zdalnej** na komputerze zdalnym, lub **urządzenia** urządzenia Windows Mobile 10 połączone bezpośrednio.
+1. W obszarze **urządzenie docelowe**, wybierz opcję **maszyny zdalnej** na komputerze zdalnym, lub **urządzenia** urządzenia Windows Mobile 10 połączone bezpośrednio.
 
-1.  Na komputerze zdalnym, wprowadź nazwę sieci lub adresu IP w **maszyny zdalnej** pola, lub wybierz opcję **znaleźć** wyszukiwania dla urządzenia w [połączeń zdalnych, okno dialogowe](#remote-connections).
+1. Na komputerze zdalnym, wprowadź nazwę sieci lub adresu IP w **maszyny zdalnej** pola, lub wybierz opcję **znaleźć** wyszukiwania dla urządzenia w [połączeń zdalnych, okno dialogowe](#remote-connections).
 
     ![Właściwości projektu dla zdalnego debugowania zarządzane](../debugger/media/vsrun_managed_projprop_remote.png "zarządzanego debugowania właściwości projektu")
 
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Konfigurowanie projektu dla zdalnego debugowania w języku C++
+### <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Konfigurowanie projektu dla zdalnego debugowania w języku C++
 
-1.  Wybierz projekt C++ w programie Visual Studio **Eksploratora rozwiązań** i wybierz **właściwości** ikonę, naciśnij klawisz **Alt**+**Enter**, lub kliknij prawym przyciskiem myszy i wybierz pozycję **właściwości**.
+1. Wybierz projekt C++ w programie Visual Studio **Eksploratora rozwiązań** i wybierz **właściwości** ikonę, naciśnij klawisz **Alt**+**Enter**, lub kliknij prawym przyciskiem myszy i wybierz pozycję **właściwości**.
 
-1.  Wybierz **debugowanie** kartę.
+1. Wybierz **debugowanie** kartę.
 
-3.  W obszarze **debuger do uruchomienia**, wybierz opcję **maszyny zdalnej** na komputerze zdalnym, lub **urządzenia** urządzenia Windows Mobile 10 połączone bezpośrednio.
+3. W obszarze **debuger do uruchomienia**, wybierz opcję **maszyny zdalnej** na komputerze zdalnym, lub **urządzenia** urządzenia Windows Mobile 10 połączone bezpośrednio.
 
-1.  Na komputerze zdalnym, wprowadź lub wybierz nazwę sieci lub adresu IP w **NazwaKomputera** pola lub listy w dół i wybierz **zlokalizuj** wyszukiwania dla urządzenia w [połączeń zdalnych, okno dialogowe ](#remote-connections).
+1. Na komputerze zdalnym, wprowadź lub wybierz nazwę sieci lub adresu IP w **NazwaKomputera** pola lub listy w dół i wybierz **zlokalizuj** wyszukiwania dla urządzenia w [połączeń zdalnych, okno dialogowe ](#remote-connections).
 
     ![Właściwości projektu C++ dla zdalnego debugowania](../debugger/media/vsrun_cpp_projprop_remote.png "debugowanie C++ właściwości projektu")
 
@@ -92,7 +92,7 @@ Dla programu Visual Studio do debugowania aplikacji na komputerze zdalnym komput
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
-##  <a name="BKMK_RunRemoteDebug"></a> Zdalne debugowanie aplikacji platformy UWP
+## <a name="BKMK_RunRemoteDebug"></a> Zdalne debugowanie aplikacji platformy UWP
 
 Zdalne debugowanie działa tak samo, jak debugowanie lokalne.
 

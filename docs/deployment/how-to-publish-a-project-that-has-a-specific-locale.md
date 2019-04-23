@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70300e7d6090e7c8155281e771522bec08308f5b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f4b920706a6a43f52ab861d392efe4b30f28c4ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629667"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056578"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Instrukcje: Publikowanie projektu o specyficznych ustawieniach regionalnych
 Nie jest niczym niezwykłym aplikacji zawierają składniki, które mają różnych ustawień regionalnych. W tym scenariuszu może utworzyć rozwiązanie, które ma kilka projektów, a następnie opublikuj oddzielnych projektów dla poszczególnych ustawień regionalnych. Ta procedura pokazuje, jak publikować pierwszego projektu w rozwiązaniu przy użyciu ustawień regionalnych "PL" za pomocą makra. Jeśli chcesz wypróbować tę procedurę za pomocą ustawień regionalnych innych niż "en", upewnij się ustawić `localeString` w makrze zgodne z ustawieniami regionalnymi, którego używasz (na przykład, "de" lub "de-DE").
@@ -35,13 +35,13 @@ Nie jest niczym niezwykłym aplikacji zawierają składniki, które mają różn
 
 ### <a name="to-create-the-publishing-macro"></a>Aby utworzyć publikowania — makro
 
-1.  Aby otworzyć Eksplorator makr w **narzędzia** menu wskaż **makra**, a następnie kliknij przycisk **Eksplorator makr**.
+1. Aby otworzyć Eksplorator makr w **narzędzia** menu wskaż **makra**, a następnie kliknij przycisk **Eksplorator makr**.
 
-2.  Utwórz nowy moduł makra. W Eksploratorze — makro wybierz **MyMacros**. Na **narzędzia** menu wskaż **makra**, a następnie kliknij przycisk **nowy moduł — makro**. Nazwa modułu **PublishSpecificCulture**.
+2. Utwórz nowy moduł makra. W Eksploratorze — makro wybierz **MyMacros**. Na **narzędzia** menu wskaż **makra**, a następnie kliknij przycisk **nowy moduł — makro**. Nazwa modułu **PublishSpecificCulture**.
 
-3.  W Eksploratorze — makro rozwiń **MyMacros** węzeł, a następnie otwórz **PublishAllProjects** modułu, klikając go dwukrotnie (lub z **narzędzia** wskaż **Makra**, a następnie kliknij przycisk **makrach IDE**).
+3. W Eksploratorze — makro rozwiń **MyMacros** węzeł, a następnie otwórz **PublishAllProjects** modułu, klikając go dwukrotnie (lub z **narzędzia** wskaż **Makra**, a następnie kliknij przycisk **makrach IDE**).
 
-4.  W makrach IDE, Dodaj następujący kod do modułu, po `Import` instrukcji:
+4. W makrach IDE, Dodaj następujący kod do modułu, po `Import` instrukcji:
 
     ```vb
     Module PublishSpecificCulture
@@ -135,31 +135,31 @@ Nie jest niczym niezwykłym aplikacji zawierają składniki, które mają różn
     End Module
     ```
 
-5.  Zamknij makra środowiska IDE. Fokus powrót do programu Visual Studio.
+5. Zamknij makra środowiska IDE. Fokus powrót do programu Visual Studio.
 
 ### <a name="to-publish-a-project-for-a-specific-locale"></a>Publikowanie projektu o specyficznych ustawieniach regionalnych
 
-1.  Aby utworzyć projekt aplikacji Windows Visual Basic w **pliku** menu wskaż **nowy**, a następnie kliknij przycisk **projektu**.
+1. Aby utworzyć projekt aplikacji Windows Visual Basic w **pliku** menu wskaż **nowy**, a następnie kliknij przycisk **projektu**.
 
-2.  W **nowy projekt** okno dialogowe, wybierz opcję **aplikacji Windows** z **języka Visual Basic** węzła. Nadaj projektowi nazwę *PublishLocales*.
+2. W **nowy projekt** okno dialogowe, wybierz opcję **aplikacji Windows** z **języka Visual Basic** węzła. Nadaj projektowi nazwę *PublishLocales*.
 
-3.  Kliknij z formularza Form1. W **właściwości** okna, w obszarze **projektowania**, zmień **języka** właściwość **(opcja domyślna)** do **wjęzykuangielskim**. Zmiana **tekstu** właściwości formularza w celu **MyForm**.
+3. Kliknij z formularza Form1. W **właściwości** okna, w obszarze **projektowania**, zmień **języka** właściwość **(opcja domyślna)** do **wjęzykuangielskim**. Zmiana **tekstu** właściwości formularza w celu **MyForm**.
 
      Należy pamiętać, że zlokalizowany zasób biblioteki DLL nie są tworzone, dopóki nie są potrzebne. Na przykład są one tworzone po zmianie tekstu w formularzu lub jego formantów po określeniu nowych ustawień regionalnych.
 
-4.  Publikowanie *PublishLocales* przy użyciu programu Visual Studio IDE.
+4. Publikowanie *PublishLocales* przy użyciu programu Visual Studio IDE.
 
      W **Eksploratora rozwiązań**, wybierz opcję *PublishLocales*. Na **projektu** menu, wybierz opcję **właściwości**. W Projektancie projektu na **Publikuj** Określ lokalizację publikacji, **http://localhost/PublishLocales**, a następnie kliknij przycisk **Publikuj teraz**.
 
      Po wyświetleniu strony sieci Web publikowania należy go zamknąć. (W tym kroku należy opublikować projekt, nie trzeba go zainstalować.)
 
-5.  Publikowanie *PublishLocales* ponownie przez wywołanie makra w oknie wiersza polecenia programu Visual Studio. Aby wyświetlić okno wiersza polecenia na **widoku** menu wskaż **Windows inne** a następnie kliknij przycisk **okna polecenia**, lub naciśnij **Ctrl** + **Alt**+**A**. W oknie wiersza polecenia, wpisz `macros`; Autouzupełnianie udostępni listy dostępnych makr. Wybierz Poniższe makro, a następnie naciśnij klawisz ENTER:
+5. Publikowanie *PublishLocales* ponownie przez wywołanie makra w oknie wiersza polecenia programu Visual Studio. Aby wyświetlić okno wiersza polecenia na **widoku** menu wskaż **Windows inne** a następnie kliknij przycisk **okna polecenia**, lub naciśnij **Ctrl** + **Alt**+**A**. W oknie wiersza polecenia, wpisz `macros`; Autouzupełnianie udostępni listy dostępnych makr. Wybierz Poniższe makro, a następnie naciśnij klawisz ENTER:
 
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`
 
-6.  Gdy proces publikowania zakończy się powodzeniem, zostanie wygenerowany komunikat z informacją "Publikowanie zakończyło się pomyślnie *PublishLocales\PublishLocales.vbproj*. Publikowanie język został "en". " Kliknij przycisk **OK** w oknie komunikatu. Po wyświetleniu strony sieci Web publikowania kliknij **zainstalować**.
+6. Gdy proces publikowania zakończy się powodzeniem, zostanie wygenerowany komunikat z informacją "Publikowanie zakończyło się pomyślnie *PublishLocales\PublishLocales.vbproj*. Publikowanie język został "en". " Kliknij przycisk **OK** w oknie komunikatu. Po wyświetleniu strony sieci Web publikowania kliknij **zainstalować**.
 
-7.  Szukaj w *C:\Inetpub\wwwroot\PublishLocales\en*. Powinien zostać wyświetlony zainstalowanych plików, takich jak manifestów *setup.exe*i publikowania pliku strony sieci Web, oprócz zlokalizowany plik DLL zasobów. (Domyślnie funkcja ClickOnce dołącza *.deploy* rozszerzenia dla plików exe i dll; Usuń to rozszerzenie, po wdrożeniu.)
+7. Szukaj w *C:\Inetpub\wwwroot\PublishLocales\en*. Powinien zostać wyświetlony zainstalowanych plików, takich jak manifestów *setup.exe*i publikowania pliku strony sieci Web, oprócz zlokalizowany plik DLL zasobów. (Domyślnie funkcja ClickOnce dołącza *.deploy* rozszerzenia dla plików exe i dll; Usuń to rozszerzenie, po wdrożeniu.)
 
 ## <a name="see-also"></a>Zobacz także
 - [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)

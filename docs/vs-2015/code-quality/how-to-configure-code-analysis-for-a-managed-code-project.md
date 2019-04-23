@@ -14,12 +14,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7814bd356dfa50c121fc73c1b88c1ae12dfa3df4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a326be363295ed1033d0e91e1675e326a51c9adf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790896"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104320"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Instrukcje: Konfigurowanie analizy kodu dla projektu kodu zarządzanego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,26 +31,26 @@ W [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../in
   
 ### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Aby skonfigurować zestaw reguł dla projektu .NET Framework  
   
-1.  W **Eksploratora rozwiązań**, kliknij projekt.  
+1. W **Eksploratora rozwiązań**, kliknij projekt.  
   
-2.  Na **analizy** menu, kliknij przycisk **Konfigurowanie analizy kodu dla** *ProjectName*.  
+2. Na **analizy** menu, kliknij przycisk **Konfigurowanie analizy kodu dla** *ProjectName*.  
   
-3.  W **konfiguracji** i **platformy** listy, kliknij przycisk platformę kompilacji konfiguracji i docelowej.  
+3. W **konfiguracji** i **platformy** listy, kliknij przycisk platformę kompilacji konfiguracji i docelowej.  
   
-4.  Aby uruchomić analizę kodu, za każdym razem, gdy projekt jest kompilowany przy użyciu wybranej konfiguracji, zaznacz **Włącz analizę kodu podczas kompilacji (definiuje stałą CODE_ANALYSIS)** pole wyboru. Można również uruchomić analizę kodu ręcznie, otwierając **analizy** menu i klikając **Uruchom analizę kodu dla** *ProjectName*.  
+4. Aby uruchomić analizę kodu, za każdym razem, gdy projekt jest kompilowany przy użyciu wybranej konfiguracji, zaznacz **Włącz analizę kodu podczas kompilacji (definiuje stałą CODE_ANALYSIS)** pole wyboru. Można również uruchomić analizę kodu ręcznie, otwierając **analizy** menu i klikając **Uruchom analizę kodu dla** *ProjectName*.  
   
-5.  Domyślnie program analizy kodu nie raportuje ostrzeżenia z kodu, który jest generowany automatycznie przez narzędzia zewnętrzne. Aby wyświetlić ostrzeżenia z wygenerowanego kodu, należy wyczyścić **Pomijaj wyniki z wygenerowanego kodu** pole wyboru.  
+5. Domyślnie program analizy kodu nie raportuje ostrzeżenia z kodu, który jest generowany automatycznie przez narzędzia zewnętrzne. Aby wyświetlić ostrzeżenia z wygenerowanego kodu, należy wyczyścić **Pomijaj wyniki z wygenerowanego kodu** pole wyboru.  
   
     > [!NOTE]
     >  Ta opcja nie pomija błędy analizy kodu i ostrzeżenia z wygenerowanego kodu podczas błędy i ostrzeżenia są wyświetlane w formularzach i szablony. Można wyświetlać lub zachować kod źródłowy dla formularza lub szablonu.  
   
-6.  W **Uruchom ten zestaw reguł** listy, wykonaj jedną z następujących czynności:  
+6. W **Uruchom ten zestaw reguł** listy, wykonaj jedną z następujących czynności:  
   
-    -   Kliknij zestaw reguł, który chcesz użyć.  
+    - Kliknij zestaw reguł, który chcesz użyć.  
   
-    -   Kliknij przycisk  **\<Przeglądaj … >** do określenia, ustaw istniejącej reguły niestandardowe, który nie jest na liście.  
+    - Kliknij przycisk  **\<Przeglądaj … >** do określenia, ustaw istniejącej reguły niestandardowe, który nie jest na liście.  
   
-    -   Definiowanie niestandardowego zestawu reguł.  
+    - Definiowanie niestandardowego zestawu reguł.  
   
          Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych zestawów reguł](../code-quality/creating-custom-code-analysis-rule-sets.md).  
   

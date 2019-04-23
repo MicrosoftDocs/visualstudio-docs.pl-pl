@@ -10,12 +10,12 @@ ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 034afff7b907a8f9079242e26105a46a68e8da6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 83bc344cf4c99efd426066a47c240b710ef455e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776434"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056045"
 ---
 # <a name="inside-the-editor"></a>Wewnątrz edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Edytor składa się z liczbą różne podsystemy, które pozwalają zapobiec edy
   
 - [Funkcja IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
-##  <a name="overview"></a> Omówienie podsystemów  
+## <a name="overview"></a> Omówienie podsystemów  
   
 ### <a name="text-model-subsystem"></a>Podsystem modelu tekstu  
  Podsystem modelu tekstu jest odpowiedzialny za reprezentowania tekstu i włączając jego manipulacji. Podsystem modelu tekst zawiera <xref:Microsoft.VisualStudio.Text.ITextBuffer> interfejs, który opisuje sekwencji znaków, który ma być wyświetlana przez edytor. Ten tekst można modyfikować, śledzone i inny sposób modyfikować na wiele sposobów. Model tekst zawiera także typy następujące aspekty:  
@@ -76,7 +76,7 @@ Edytor składa się z liczbą różne podsystemy, które pozwalają zapobiec edy
   
 ## <a name="a-closer-look-at-the-text-model-and-the-text-view"></a>Bliższe spojrzenie na modelu tekstu i widoku tekstu  
   
-###  <a name="textmodel"></a> Model tekstu  
+### <a name="textmodel"></a> Model tekstu  
  Podsystem modelu tekstu składa się z różnych grup z typów tekstu. Obejmują one bufor tekstowy, migawek tekstu i zakresy tekstu.  
   
 #### <a name="text-buffers-and-text-snapshots"></a>Bufory tekstu i migawek tekstu  
@@ -149,7 +149,7 @@ abXefYj
   
  Deweloperzy mogą definiować własne typy zawartości i zarejestruj je przy użyciu <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>. Wiele funkcji w edytorze można zdefiniować w odniesieniu do określonego typu zawartości przy użyciu <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>. Na przykład marginesy edytora, zakończeń i obsługi myszy można zdefiniować tak, aby dotyczyły tylko do edytory, które wyświetlają określone typy zawartości.  
   
-###  <a name="textview"></a> Widok tekstu  
+### <a name="textview"></a> Widok tekstu  
  Part widok wzorca model view controller (MVC) definiuje widoku tekstu formatowanie widok, elementów graficznych, takich jak pasek przewijania i karetki. Wszystkie elementy prezentacji w edytorze programu Visual Studio są oparte na WPF.  
   
 #### <a name="text-views"></a>Widoki tekstowe  
@@ -184,21 +184,21 @@ abXefYj
 ## <a name="editor-features"></a>Funkcje edytora  
  Funkcje edytora zaprojektowano tak, aby definicji funkcji jest oddzielony od implementacji. Edytor zawiera następujące funkcje:  
   
--   Znaczniki i klasyfikatorów  
+- Znaczniki i klasyfikatorów  
   
--   Zakończeń  
+- Zakończeń  
   
--   Rzut  
+- Rzut  
   
--   Tworzenie konspektu  
+- Tworzenie konspektu  
   
--   Mysz i klucz powiązania  
+- Mysz i klucz powiązania  
   
--   Operacje i w nim elementów podstawowych  
+- Operacje i w nim elementów podstawowych  
   
--   IntelliSense  
+- IntelliSense  
   
-###  <a name="tagsandclassifiers"></a> Znaczniki i klasyfikatorów  
+### <a name="tagsandclassifiers"></a> Znaczniki i klasyfikatorów  
  Tagi są znaczniki, które są skojarzone z tekstu. Mogły być wyświetlane na różne sposoby, na przykład za pomocą kolorowania tekstu, podkreślenia, grafiki lub wyskakujących okienek. Klasyfikatorów są jednego rodzaju tagu.  
   
  Inne rodzaje znaczniki są <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> wyróżnianie tekstu, <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> tworzenia konspektów, i <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> błędy kompilacji.  
@@ -230,14 +230,14 @@ abXefYj
   
  <xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap> Mapowanie z typu klasyfikacji do zestawu właściwości formatowania tekstu. Implementacja Mapa formatu w edytorze obsługuje wszystkich eksporty formatów klasyfikacji.  
   
-###  <a name="adornments"></a> Zakończeń  
+### <a name="adornments"></a> Zakończeń  
  Zakończeń są efekty graficzne, które nie są bezpośrednio związane z czcionek i kolorów, znaków w widoku tekstu. Na przykład podkreślenie czerwona fala, który służy do oznaczania — kompilowanie kodu w wielu językach programowania jest osadzony zakończeń i etykietki narzędzi są wyskakujące zakończeń. Zakończeń są uzyskiwane z <xref:System.Windows.UIElement> i zaimplementować <xref:Microsoft.VisualStudio.Text.Tagging.ITag>. Istnieją dwa typy specjalne tag zakończeń <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>, dla skojarzenia, które zajmują się tą samą przestrzenią jako tekst w widoku i <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>, dla podkreślenia wężyk.  
   
  Osadzony zakończeń są grafiki, które stanowią część widoku tekstu sformatowanego. Są zorganizowane w różnych warstwach porządku osi Z. Istnieją trzy warstwy wbudowane, w następujący sposób: tekst, karetki i zaznaczenia. Jednakże deweloperzy mogą zdefiniować większej liczbie warstw i umieść je w kolejności, w odniesieniu do siebie nawzajem. Trzy rodzaje zakończeń osadzone są zakończeń tekstu powiązane z wątkiem, (które przeniesienie, gdy tekst i są usuwane po usunięciu tekst), zakończeń Wyświetl powiązane z wątkiem, (które mają na celu innymi niż tekstowe części widoku) i kontrolowane przez właściciela zakończeń ( Deweloper musi zarządzać ich umieszczania).  
   
  Wyskakujące zakończeń są grafiki, które są wyświetlane w małym oknie powyżej widoku tekstu, na przykład etykietek narzędzi.  
   
-###  <a name="projection"></a> Projekcja  
+### <a name="projection"></a> Projekcja  
  Projekcja jest techniką tworzenia inny rodzaj buforu tekstu, który nie przechowuje tekst, ale zamiast tego łączy tekstu z innych buforów tekstu. Na przykład buforu projekcji można połączyć tekst z dwóch innych buforów i przedstawi wynik, tak jak w przypadku w buforze tylko jeden lub ukrycia fragmenty tekstu w buforze jeden. Bufor projekcji może działać jako bufor źródłowy do innego buforu projekcji. Zbiór buforów, które są powiązane przez projekcję można skonstruować tak, aby zmienić tekst na wiele różnych sposobów. (Taki zestaw jest również nazywany *wykres buforu*.) Funkcję tworzenia konspektów tekstu Visual Studio jest implementowany przy użyciu buforu projekcji ukryć zwinięty tekst i Edytor programu Visual Studio dla stron ASP.NET używa projekcji o obsłudze języków osadzone, takie jak Visual Basic i C#.  
   
  <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> Jest tworzona przy użyciu <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>. Bufor projekcji jest reprezentowany przez uporządkowana sekwencja <xref:Microsoft.VisualStudio.Text.ITrackingSpan> obiektów, które są znane jako *źródła zakresy*. Zawartość tych zakresów są uporządkowane jako sekwencja znaków. Bufory tekstu, z których są rysowane zakresy źródłowych są nazywane *źródła buforów*. Klienci buforu projekcji nie muszą wiedzieć, że różni się od buforu zwykły tekst.  
@@ -271,18 +271,18 @@ P: ABCDEvwxyz
 ##### <a name="events-and-projection-buffers"></a>Zdarzenia i bufory projekcji  
  Po zmodyfikowaniu buforu projekcji, zmiany są wysyłane z buforu projekcji do buforów, które od niego zależne. Po zmodyfikowaniu wszystkie bufory bufora zmiany zdarzenia są wywoływane, począwszy od najgłębiej zagnieżdżoną buforu.  
   
-###  <a name="outlining"></a> Tworzenie konspektu  
+### <a name="outlining"></a> Tworzenie konspektu  
  Konspekt jest możliwość rozwijać i zwijać różne bloki tekstu w widoku tekstu. Konspekt jest zdefiniowany jako rodzajem elementu <xref:Microsoft.VisualStudio.Text.Tagging.ITag>, w taki sam sposób, jak zdefiniowano zakończeń. Element <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> jest znacznikiem, który definiuje region tekstu, który można rozwijać i zwijać. Aby użyć konspektu, należy zaimportować <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService> można pobrać <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager>. Menedżer konspektu wylicza zwija i rozwija różne bloki, które są reprezentowane jako <xref:Microsoft.VisualStudio.Text.Outlining.ICollapsible> obiektów i w związku z tym wywołuje zdarzenia.  
   
-###  <a name="mousebindings"></a> Powiązania myszy  
+### <a name="mousebindings"></a> Powiązania myszy  
  Powiązania myszy połączyć różne polecenia ruchów myszy. Powiązania myszy są zdefiniowane przy użyciu <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider>, i klawiszy są definiowane za pomocą <xref:Microsoft.VisualStudio.Text.Editor.IKeyProcessorProvider>. <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> Automatycznie tworzy wszystkie powiązania i łączy je z zdarzeń myszy w widoku.  
   
  <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessor> Interfejs zawiera procedury obsługi zdarzeń przetwarzania wstępnego i po przetwarzaniu dla zdarzeń myszy. Obsługiwać jednego ze zdarzeń, możesz zastąpić niektóre metody w <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase>.  
   
-###  <a name="editoroperations"></a> Operacje edytora  
+### <a name="editoroperations"></a> Operacje edytora  
  Przestała może służyć do automatyzowania interakcji z edytora, skryptów lub w innych celach. Możesz zaimportować <xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService> do dostępu do operacji w danym <xref:Microsoft.VisualStudio.Text.Editor.ITextView>. Te obiekty służy następnie do modyfikowania zaznaczenia, przewiń w widoku lub Przesuń karetkę do różnych części widoku.  
   
-###  <a name="intellisense"></a> Funkcja IntelliSense  
+### <a name="intellisense"></a> Funkcja IntelliSense  
  Technologia IntelliSense obsługuje uzupełniania instrukcji, pomocy dotyczącej sygnatur (nazywane również informacje o parametrach), szybkie informacje i żarówki.  
   
  Dokańczanie instrukcji zawiera wyskakującego listę potencjalnych uzupełnienia dla nazwy metod, elementy XML i innych elementów kodu lub języka znaczników. Ogólnie rzecz biorąc gestu użytkownika wywołuje sesja kończenia. Sesja Wyświetla listę potencjalnych ukończenia, a użytkownik może wybrać jedną lub Odrzuć listy. <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> Jest odpowiedzialny za tworzenie i wyzwalanie <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>. <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> Oblicza <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> elementów uzupełniania dla sesji.  

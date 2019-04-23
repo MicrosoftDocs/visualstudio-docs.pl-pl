@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 02c6b2912d828f566236aa8f24868ae9314d743e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c7b95155db18e9aa879b11cadf21b33cb0189ff9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753185"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103371"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Udoskonalanie jakości kodu z zasadami ewidencjowania projektu zespołowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ Gdy używasz Team Foundation Version Control (TFVC), można utworzyć zasady ewi
   
  Można określić te zespołu projektu zasad ewidencjonowania:  
   
--   **Kompilacje**: Wymaga się, że błędy kompilacji, które zostały utworzone podczas kompilacji muszą zostać usunięte przed zaewidencjonowaniem.  
+- **Kompilacje**: Wymaga się, że błędy kompilacji, które zostały utworzone podczas kompilacji muszą zostać usunięte przed zaewidencjonowaniem.  
   
--   **Komentarzy do zestawu zmian**: Wymaga od użytkowników podania komentarz podczas ewidencjonowania zmiany.  
+- **Komentarzy do zestawu zmian**: Wymaga od użytkowników podania komentarz podczas ewidencjonowania zmiany.  
   
--   **Analiza kodu**: Wymaga, uruchamiania analizy kodu przed zaewidencjonowaniem.  
+- **Analiza kodu**: Wymaga, uruchamiania analizy kodu przed zaewidencjonowaniem.  
   
--   **Elementy robocze**: Wymaga co najmniej jednego elementu roboczego skojarzonego z ewidencjonowanym.  
+- **Elementy robocze**: Wymaga co najmniej jednego elementu roboczego skojarzonego z ewidencjonowanym.  
   
 > [!IMPORTANT]
 >  Aby użyć zasad ewidencjonowania, musisz mieć połączenie do [!INCLUDE[vststfsLong](../includes/vststfslong-md.md)].  

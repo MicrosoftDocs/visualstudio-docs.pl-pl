@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16686d3900b3db2656492f5049590eeff47eb93a
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: fca2436b99f97e18801f8adffdc27fd348fc8123
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796354"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101954"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Konfigurowanie agentów testowych i kontrolerów do prowadzenia testów obciążeniowych testów
 
@@ -27,11 +27,11 @@ Program Visual Studio może generować symulowane obciążenia aplikacji za pomo
 
 Architektura symulacji obciążenia składa się z klienta programu Visual Studio, kontroler testów i agentów testowych.
 
--   Klient służy do opracowywania i wykonywania testów oraz do wyświetlania ich wyników.
+- Klient służy do opracowywania i wykonywania testów oraz do wyświetlania ich wyników.
 
--   Kontroler testów służy do administrowania agentami testowymi i gromadzenia wyników testów.
+- Kontroler testów służy do administrowania agentami testowymi i gromadzenia wyników testów.
 
--   Agenci testowi służą do wykonywania testów oraz zbierania danych, w tym informacji systemowych i danych profilowania ze środowiska ASP.NET zdefiniowanych w ustawieniu testu.
+- Agenci testowi służą do wykonywania testów oraz zbierania danych, w tym informacji systemowych i danych profilowania ze środowiska ASP.NET zdefiniowanych w ustawieniu testu.
 
 Taka architektura ma szereg zalet:
 

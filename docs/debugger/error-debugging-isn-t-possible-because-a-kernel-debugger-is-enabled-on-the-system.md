@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d876298fd202b96fc6519e5056ca7dd297e386ed
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 63666302bcbf9f8f44c6121b583f0cf7b259f3ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709671"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096975"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Błąd: Debugowanie nie jest&#39;t możliwe ponieważ w systemie jest włączony debuger jądra
 Podczas debugowania kodu zarządzanego, mogą pojawić się następujący komunikat o błędzie:
@@ -56,7 +56,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>Aby wyłączyć debugowanie jądra w bieżącej sesji
 
--   W wierszu polecenia wpisz polecenie:
+- W wierszu polecenia wpisz polecenie:
 
     ```cmd
     Kdbgctrl.exe -d
@@ -64,23 +64,23 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
 #### <a name="to-disable-kernel-debugging-for-all-sessions-windows-vista-and-windows-7"></a>Aby wyłączyć debugowanie jądra dla wszystkich sesji (Windows Vista i Windows 7)
 
-1.  W wierszu polecenia wpisz polecenie:
+1. W wierszu polecenia wpisz polecenie:
 
     ```cmd
     bcdedit /debug off
     ```
 
-2.  Uruchom ponownie komputer.
+2. Uruchom ponownie komputer.
 
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>Aby wyłączyć debugowanie jądra dla wszystkich sesji (inne systemy operacyjne Windows)
 
-1.  Zlokalizuj plik boot.ini na dysku systemowym (zwykle C:\\). Plik boot.ini może być ukryta i tylko do odczytu. W związku z tym należy użyć następujące polecenia, aby zobaczyć, jak to:
+1. Zlokalizuj plik boot.ini na dysku systemowym (zwykle C:\\). Plik boot.ini może być ukryta i tylko do odczytu. W związku z tym należy użyć następujące polecenia, aby zobaczyć, jak to:
 
     ```cmd
     dir /ASH
     ```
 
-2.  Otwórz plik boot.ini za pomocą Notatnika i Usuń następujące opcje:
+2. Otwórz plik boot.ini za pomocą Notatnika i Usuń następujące opcje:
 
     ```cmd
     /debug
@@ -88,13 +88,13 @@ Debugging isn't possible because a kernel debugger is enabled on the system
     /baudrate
     ```
 
-3.  Uruchom ponownie komputer.
+3. Uruchom ponownie komputer.
 
 #### <a name="to-debug-with-the-kernel-debugger"></a>Aby debugować z debuger jądra
 
-1.  Jeśli debuger jądra jest podłączany, zobaczysz komunikat z pytaniem, czy chcesz kontynuować debugowanie. Kliknij przycisk Tak, aby kontynuować.
+1. Jeśli debuger jądra jest podłączany, zobaczysz komunikat z pytaniem, czy chcesz kontynuować debugowanie. Kliknij przycisk Tak, aby kontynuować.
 
-2.  Możesz otrzymać `User break exception(Int 3).` w takiej sytuacji wpisz następujące polecenie debuger jądra, aby kontynuować debugowanie:
+2. Możesz otrzymać `User break exception(Int 3).` w takiej sytuacji wpisz następujące polecenie debuger jądra, aby kontynuować debugowanie:
 
      `gn`
 

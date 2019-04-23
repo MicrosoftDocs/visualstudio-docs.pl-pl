@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43305d7b9353bd34e98a3dcfd31205cb9159a2f3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 99ad13fd3c8c1c2efeeec28794e10a91d9dd0db1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659926"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060842"
 ---
 # <a name="how-to-create-xml-snippets"></a>Instrukcje: Tworzenie fragmentów kodu XML
 
@@ -23,23 +23,23 @@ Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawi
 
  Aby utworzyć nowy kod XML fragment kodu tworzy nowy plik XML i użyj **Wstaw fragment kodu** funkcji.
 
-1.  Na **pliku** menu, kliknij przycisk **New** a następnie kliknij przycisk **pliku**.
+1. Na **pliku** menu, kliknij przycisk **New** a następnie kliknij przycisk **pliku**.
 
-2.  Kliknij przycisk **pliku XML** a następnie kliknij przycisk **Otwórz**.
+2. Kliknij przycisk **pliku XML** a następnie kliknij przycisk **Otwórz**.
 
-3.  Kliknij prawym przyciskiem myszy w okienku edytora, a następnie wybierz pozycję **Wstaw fragment kodu**.
+3. Kliknij prawym przyciskiem myszy w okienku edytora, a następnie wybierz pozycję **Wstaw fragment kodu**.
 
-4.  Wybierz **fragment** z listy i kliknij **Enter**.
+4. Wybierz **fragment** z listy i kliknij **Enter**.
 
-5.  Wprowadź wszelkie zmiany do nowego fragmentu kodu.
+5. Wprowadź wszelkie zmiany do nowego fragmentu kodu.
 
-6.  Z **pliku** menu wybierz opcję **Zapisz XMLFile.xml**.
+6. Z **pliku** menu wybierz opcję **Zapisz XMLFile.xml**.
 
      **Zapisz plik jako** zostanie wyświetlone okno dialogowe.
 
-7.  Wprowadź nazwę dla nowego fragmentu kodu, a następnie wybierz pozycję **pliki fragmentu kodu** z **Zapisz jako typ** okna listy rozwijanej.
+7. Wprowadź nazwę dla nowego fragmentu kodu, a następnie wybierz pozycję **pliki fragmentu kodu** z **Zapisz jako typ** okna listy rozwijanej.
 
-8.  Użyj **Zapisz w** listy rozwijanej, aby zmienić lokalizację pliku do *fragmenty XML Snippets\XML\My 2005\Code My Documents\Visual Studio* folder, a następnie naciśnij klawisz **Zapisz**.
+8. Użyj **Zapisz w** listy rozwijanej, aby zmienić lokalizację pliku do *fragmenty XML Snippets\XML\My 2005\Code My Documents\Visual Studio* folder, a następnie naciśnij klawisz **Zapisz**.
 
 ## <a name="snippet-description"></a>Opis fragmentu kodu
 

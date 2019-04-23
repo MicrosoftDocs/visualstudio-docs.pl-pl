@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae5873462c2938ab4215d1cd4837c496e235ab35
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e06317aa91cf71d109a2e90bc955aa28cc4b4903
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913369"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101863"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Dostosowywanie narzędzi i przybornika
 
@@ -38,15 +38,15 @@ Editor
 
 W tej części Eksplorator DSL możesz wykonywać następujące czynności:
 
--   Utwórz nowe karty. Karty zdefiniować nagłówki sekcji w przyborniku.
+- Utwórz nowe karty. Karty zdefiniować nagłówki sekcji w przyborniku.
 
--   Tworzenie nowych narzędzi.
+- Tworzenie nowych narzędzi.
 
--   Skopiuj i Wklej narzędzia.
+- Skopiuj i Wklej narzędzia.
 
--   Przenieś narzędzia w górę lub w dół na liście.
+- Przenieś narzędzia w górę lub w dół na liście.
 
--   Usuń karty i narzędzi.
+- Usuń karty i narzędzi.
 
 > [!IMPORTANT]
 > Aby dodać lub wkleić elementy w Eksplorator DSL, kliknij prawym przyciskiem myszy pokolenia nowego węzła. Na przykład, aby dodać narzędzia, kliknij prawym przyciskiem myszy kartę, a nie **narzędzia** węzła. Aby dodać kartę, kliknij prawym przyciskiem myszy **edytora** węzła.
@@ -59,36 +59,36 @@ W tej części Eksplorator DSL możesz wykonywać następujące czynności:
 
 #### <a name="to-add-a-tool-to-the-toolbox"></a>Aby dodać narzędzie do przybornika
 
-1.  Po utworzeniu klasy kształt i mechanizmowi klasy domeny, zazwyczaj utworzyć narzędzie elementu.
+1. Po utworzeniu klasy kształt i mechanizmowi klasy domeny, zazwyczaj utworzyć narzędzie elementu.
 
      Po utworzeniu klasy łącznika i mechanizmowi relacja odwołania, zwykle utworzyć narzędzia Łącznik.
 
-2.  W Eksploratorze DSL rozwiń **edytora** węzła i **karty przybornika** węzła.
+2. W Eksploratorze DSL rozwiń **edytora** węzła i **karty przybornika** węzła.
 
      Kliknij prawym przyciskiem myszy węzeł kartę przybornika, a następnie kliknij przycisk **dodać nowe narzędzie Element** lub **dodać nowe narzędzie połączenia**.
 
-3.  Ustaw **ikonę przybornika** właściwości do odwoływania się do mapy bitowej 16 x 16.
+3. Ustaw **ikonę przybornika** właściwości do odwoływania się do mapy bitowej 16 x 16.
 
      Jeśli chcesz zdefiniować nową ikonę, Utwórz plik mapy bitowej w Eksploratorze rozwiązań w **Dsl\Resources** folderu. Ten plik powinien zawierać następujące wartości właściwości: **Akcja kompilacji** = **zawartości**; **Kopiuj do katalogu wyjściowego** = **nie Kopiuj**.
 
-4.  **Dla narzędzia elementu:** Ustaw **klasy** właściwości narzędzia do odwoływania się do klasy konkretnej domeny, która jest mapowana na kształt.
+4. **Dla narzędzia elementu:** Ustaw **klasy** właściwości narzędzia do odwoływania się do klasy konkretnej domeny, która jest mapowana na kształt.
 
      **Aby uzyskać narzędzie łącznika:** Ustaw **konstruktora połączeń** właściwości narzędzia do jednego z elementów, które są oferowane na liście rozwijanej. Konstruktory połączeń są tworzone automatycznie podczas mapowania łącznik do relacji domeny. Jeśli niedawno po utworzeniu łącznika, będą zazwyczaj wybiera się konstruktora skojarzone z nimi połączenie.
 
-5.  Aby przetestować język DSL, naciśnij klawisz F5 lub CTRL + F5, a w doświadczalnym wystąpieniu programu Visual Studio, Otwórz przykładowy plik modelu. Nowe narzędzie powinna zostać wyświetlona w przyborniku. Przeciągnij go na diagram, aby sprawdzić, czy tworzy nowy element.
+5. Aby przetestować język DSL, naciśnij klawisz F5 lub CTRL + F5, a w doświadczalnym wystąpieniu programu Visual Studio, Otwórz przykładowy plik modelu. Nowe narzędzie powinna zostać wyświetlona w przyborniku. Przeciągnij go na diagram, aby sprawdzić, czy tworzy nowy element.
 
      Jeśli nie ma narzędzia, należy zatrzymać eksperymentalne programu Visual Studio. W Windows **Start** menu, uruchom **Zresetuj wystąpienie eksperymentalne programu Microsoft Visual Studio 2010**. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**. Następnie ponownie przetestuj język DSL.
 
 ## <a name="customizing"></a> Narzędzia dostosowywania elementów
  Domyślnie narzędzie utworzy jedno wystąpienie określonej klasy, ale można wybrać różne na dwa sposoby:
 
--   Zdefiniuj dyrektywy scalania elementów w innych klas, umożliwiające im na akceptowanie nowe wystąpienia tej klasy, a następnie utwórz dodatkowe linki, po utworzeniu nowego elementu. Można na przykład umożliwia użytkownikowi Dodaj komentarz do innego elementu, a przez to tworzyć łącza między tymi dwoma.
+- Zdefiniuj dyrektywy scalania elementów w innych klas, umożliwiające im na akceptowanie nowe wystąpienia tej klasy, a następnie utwórz dodatkowe linki, po utworzeniu nowego elementu. Można na przykład umożliwia użytkownikowi Dodaj komentarz do innego elementu, a przez to tworzyć łącza między tymi dwoma.
 
      Te modyfikacje również wpływać na, co się stanie po użytkownik wkleja przeciągnie lub porzuca element.
 
      Aby uzyskać więcej informacji, zobacz [Dostosowywanie tworzenia i przesuwania elementu](../modeling/customizing-element-creation-and-movement.md).
 
--   Napisz kod, aby dostosować narzędzie, dzięki czemu może utworzyć grupy elementów. Narzędzie jest inicjowany za pomocą metod ToolboxHelper.cs, którą można przesłonić. Aby uzyskać więcej informacji, zobacz [tworzenia grup z elementów przy użyciu narzędzia](#groups).
+- Napisz kod, aby dostosować narzędzie, dzięki czemu może utworzyć grupy elementów. Narzędzie jest inicjowany za pomocą metod ToolboxHelper.cs, którą można przesłonić. Aby uzyskać więcej informacji, zobacz [tworzenia grup z elementów przy użyciu narzędzia](#groups).
 
 ## <a name="groups"></a> Tworzenie grup elementów przy użyciu narzędzia
  Każde narzędzie element zawiera prototyp elementów, które należy utworzyć. Domyślnie każde narzędzie element tworzy pojedynczy element, ale jest również można utworzyć grupy powiązanych obiektów za pomocą jednego narzędzia. Aby to zrobić, należy zainicjować narzędzia z <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> zawierający elementy pokrewne.

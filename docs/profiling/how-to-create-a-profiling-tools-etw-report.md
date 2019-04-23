@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 310c43ea4dbdf1f50a76b574ec52baa589769034
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 48946a5e12431cf00e296f445adab657f6c1a959
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614470"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101967"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>Instrukcje: Tworzenie raportu ETW narzędzi profilowania
 Raport śledzenie zdarzeń dla Windows (ETW) zawiera listę zdarzeń funkcji ETW, które są rejestrowane w sesji pomiaru wydajności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools. Dane funkcji ETW są zbierane w pliku binarnym (. *etl*) pliku. Aby uzyskać więcej informacji na temat tego raportu, zobacz [raportu śledzenie zdarzeń dla Windows (ETW)](../profiling/event-tracing-for-windows-etw-report.md).
@@ -29,7 +29,7 @@ Raport śledzenie zdarzeń dla Windows (ETW) zawiera listę zdarzeń funkcji ETW
 
 ### <a name="to-generate-an-etw-report"></a>Aby wygenerować raport ETW
 
--   W **polecenia** oknie wpisz następujące polecenie w wierszu:
+- W **polecenia** oknie wpisz następujące polecenie w wierszu:
 
      *ToolsPath* **VSPerfReport** *Plik_vsp* **/Summary: ETW [podsumowań w plikach]**
 

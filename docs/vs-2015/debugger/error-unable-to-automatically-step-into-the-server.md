@@ -22,12 +22,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b12509de2e2ba536d9d54d11a41924d86bf5667
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2d979b53f4bd5962a01fa5eb1b77cc7c81c68a4a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786685"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102422"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>Błąd: Nie można automatycznie krok po kroku do serwera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +40,9 @@ Odczytuje błąd:
   
  Możliwe przyczyny to:  
   
--   Plik web.config dla Twojego [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji nie powoduje ustawienia debugowania na wartość "true" (zobacz [tryb debugowania w aplikacjach ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)).  
+- Plik web.config dla Twojego [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji nie powoduje ustawienia debugowania na wartość "true" (zobacz [tryb debugowania w aplikacjach ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)).  
   
--   Wersja [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] został zainstalowany po zainstalowaniu programu Visual Studio. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] powinien zostać zainstalowany przed Visual Studio. Aby rozwiązać ten problem, należy użyć Windows **Panelu sterowania**, **programy i funkcje** naprawić instalację programu Visual Studio.  
+- Wersja [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] został zainstalowany po zainstalowaniu programu Visual Studio. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] powinien zostać zainstalowany przed Visual Studio. Aby rozwiązać ten problem, należy użyć Windows **Panelu sterowania**, **programy i funkcje** naprawić instalację programu Visual Studio.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)   

@@ -8,21 +8,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1289aa8da4bb61d8c5cae6ca79257291a14f8ce9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c17686ab0e14e483019416560c3fa06ce6aa3206
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921513"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056994"
 ---
 # <a name="xml-schema-designer"></a>Projektant schematu XML
 
 Projektant schematu XML (XSD Designer) jest graficznego narzędzia, która pozwala na wizualizowanie schematu z zestawu na różnych poziomach abstrakcji. Poniżej przedstawiono główne składniki Projektant XSD:
 
--   [Eksplorator schematu XML](../xml-tools/xml-schema-explorer.md) umożliwia przeglądanie, przejdź w drzewie schematu XML i wyszukiwanie.
+- [Eksplorator schematu XML](../xml-tools/xml-schema-explorer.md) umożliwia przeglądanie, przejdź w drzewie schematu XML i wyszukiwanie.
 
--   [Widoku Start](../xml-tools/start-view.md) to doskonała Projektant XSD; z widoku startowego możesz przejść z innymi widokami Projektant XSD i Szczegóły zestawu schematów.
+- [Widoku Start](../xml-tools/start-view.md) to doskonała Projektant XSD; z widoku startowego możesz przejść z innymi widokami Projektant XSD i Szczegóły zestawu schematów.
 
--   [Widoku wykresu](../xml-tools/graph-view.md) umożliwia wyświetlenie Omówienie zestawu schematu i relacje między węzłami schematu.
+- [Widoku wykresu](../xml-tools/graph-view.md) umożliwia wyświetlenie Omówienie zestawu schematu i relacje między węzłami schematu.
 
--   [Widoku modelu zawartości](../xml-tools/content-model-view.md) zawiera graficzną reprezentację szczegóły węzłów lokalne i globalne schematu, w tym proste i złożone typy, elementy, grup, atrybuty i grupy atrybutów.
+- [Widoku modelu zawartości](../xml-tools/content-model-view.md) zawiera graficzną reprezentację szczegóły węzłów lokalne i globalne schematu, w tym proste i złożone typy, elementy, grup, atrybuty i grupy atrybutów.

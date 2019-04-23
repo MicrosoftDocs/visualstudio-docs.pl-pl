@@ -14,12 +14,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d1c5b5d75dedf45988291459ed55b31bf80fc583
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2c0e8594014848bee103c65127b5edb7ad969284
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760240"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104701"
 ---
 # <a name="how-to-create-inheritance-between-types-class-designer"></a>Instrukcje: Tworzenie dziedziczenia między typami (Projektant klas) 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,21 +28,21 @@ Aby utworzyć relację dziedziczenia między dwoma typami na diagramie klasy prz
   
 ### <a name="to-create-an-inheritance-between-types"></a>Aby utworzyć dziedziczenia między typami  
   
-1.  Z projektu w Eksploratorze rozwiązań Otwórz plik diagramu klasy (.cd).  
+1. Z projektu w Eksploratorze rozwiązań Otwórz plik diagramu klasy (.cd).  
   
      Jeśli nie masz diagram klas, należy go utworzyć. Zobacz [jak: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).  
   
-2.  W **przybornika**w obszarze **projektanta klas**, kliknij przycisk **dziedziczenia**.  
+2. W **przybornika**w obszarze **projektanta klas**, kliknij przycisk **dziedziczenia**.  
   
-3.  Na diagramie klasy można narysować linię dziedziczenia między typami, które chcesz, zaczynając od:  
+3. Na diagramie klasy można narysować linię dziedziczenia między typami, które chcesz, zaczynając od:  
   
-    -   Klasy pochodnej do klasy bazowej  
+    - Klasy pochodnej do klasy bazowej  
   
-    -   Klasa implementująca zaimplementowanego interfejsu  
+    - Klasa implementująca zaimplementowanego interfejsu  
   
-    -   Rozszerzanie interfejsu do rozszerzonego interfejsu  
+    - Rozszerzanie interfejsu do rozszerzonego interfejsu  
   
-4.  W przypadku typ pochodny od typu ogólnego, opcjonalnie kliknij przycisk linii dziedziczenia. W **właściwości** oknie **argumentów typu** właściwość będzie pasował do typu odpowiedniego dla typu ogólnego.  
+4. W przypadku typ pochodny od typu ogólnego, opcjonalnie kliknij przycisk linii dziedziczenia. W **właściwości** oknie **argumentów typu** właściwość będzie pasował do typu odpowiedniego dla typu ogólnego.  
   
     > [!NOTE]
     >  Jeśli klasa abstrakcyjna nadrzędny zawiera co najmniej jedną abstrakcyjną składową, wszystkie abstrakcyjne składowe są zaimplementowane jako nieabstrakcyjne klasy dziedziczące.   

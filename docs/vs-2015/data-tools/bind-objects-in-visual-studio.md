@@ -19,12 +19,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 96acd1039f9293e6efb64f2726fc53a4c33cdc31
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ee820bc246e11b722d663ecc6a6037f182bc2c33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667186"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053120"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Powiązanie obiektów w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,17 +42,17 @@ Visual Studio zapewnia narzędzia projektowania do pracy z niestandardowych obie
 ## <a name="examples-of-using-custom-objects-as-data-sources"></a>Przykłady użycia niestandardowych obiektów jako źródła danych
  Są niezliczone sposoby zaimplementować logikę aplikacji, podczas pracy z obiektami jako źródło danych, SQL bazy danych są kilka standardowych operacji, które można uprościć za pomocą obiektów TableAdapter generowane — Visual Studio. Tej stronie wyjaśniamy sposób implementacji tych standardowych procesów przy użyciu TableAdapters.It nie jest przeznaczony jako wskazówki dotyczące tworzenia niestandardowych obiektów. Na przykład będzie zazwyczaj wykonywać następujące operacje standardowe niezależnie od konkretnej implementacji obiektów lub aplikacji logiki:
 
--   Ładowanie danych w obiektach (zazwyczaj z bazy danych).
+- Ładowanie danych w obiektach (zazwyczaj z bazy danych).
 
--   Tworzenie typizowanego kolekcji obiektów.
+- Tworzenie typizowanego kolekcji obiektów.
 
--   Dodawanie obiektów do i usuwanie obiektów z kolekcji.
+- Dodawanie obiektów do i usuwanie obiektów z kolekcji.
 
--   Dane obiektu są wyświetlane użytkownikom w formularzu.
+- Dane obiektu są wyświetlane użytkownikom w formularzu.
 
--   Zmienianie/edytowanie danych w obiekcie.
+- Zmienianie/edytowanie danych w obiekcie.
 
--   Zapisywanie danych z obiektów w bazie danych.
+- Zapisywanie danych z obiektów w bazie danych.
 
 > [!NOTE]
 >  Aby lepiej zrozumieć i dostarczanie kontekstu przykładach na tej stronie, zalecamy wykonanie następujących czynności: [Przewodnik: O łączeniu z danymi w obiektach (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Ten przewodnik tworzy obiekty omówionych w tym miejscu.

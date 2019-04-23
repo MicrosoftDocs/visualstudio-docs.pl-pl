@@ -8,12 +8,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e86f026ec4d4133635ba5cf9d6c37970abe6e139
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: e49fbb3411aee98fce5899c522b9743b3f2afa33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415904"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060296"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Instrukcje: Tworzenie wtyczki rejestratora
 
@@ -33,20 +33,20 @@ W poniższych procedurach opisano sposób tworzenia kodu szczątkowego dla rejes
 
 ### <a name="to-create-a-recorder-plug-in"></a>Aby utworzyć wtyczkę rejestratora
 
-1.  Otwórz rozwiązanie, które zawiera projekt testu obciążenia i wydajności sieci web za pomocą testu wydajności sieci web, dla której chcesz utworzyć wtyczkę rejestratora.
+1. Otwórz rozwiązanie, które zawiera projekt testu obciążenia i wydajności sieci web za pomocą testu wydajności sieci web, dla której chcesz utworzyć wtyczkę rejestratora.
 
-2.  Dodaj nową **biblioteki klas** projektu do rozwiązania.
+2. Dodaj nową **biblioteki klas** projektu do rozwiązania.
 
-3.  W **Eksploratora rozwiązań**, w nowym folderze projektu biblioteki klas, kliknij prawym przyciskiem myszy **odwołania** i wybierz polecenie **Dodaj odwołanie**.
+3. W **Eksploratora rozwiązań**, w nowym folderze projektu biblioteki klas, kliknij prawym przyciskiem myszy **odwołania** i wybierz polecenie **Dodaj odwołanie**.
 
     > [!TIP]
     > Na przykład nowy folder projektu biblioteki klas **RecorderPlugins**.
 
      **Dodaj odwołanie** zostanie wyświetlone okno dialogowe.
 
-4.  Wybierz **.NET** kartę.
+4. Wybierz **.NET** kartę.
 
-5.  Przewiń w dół i wybierz **Microsoft.VisualStudio.QualityTools.WebTestFramework** , a następnie wybierz **OK**.
+5. Przewiń w dół i wybierz **Microsoft.VisualStudio.QualityTools.WebTestFramework** , a następnie wybierz **OK**.
 
      **Microsoft.VisualStudio.QualityTools.WebTestFramework** zostanie dodany do **odwołania** folderu w **Eksploratora rozwiązań**.
 
@@ -88,11 +88,11 @@ Po skompilowaniu dodatku plug-in rejestratora umieścić wynikowy DLL w jednej z
 
 ### <a name="execute-the-recorder-plug-in"></a>Uruchom wtyczkę Rejestrator
 
-1.  Utwórz nowy test wydajności sieci web.
+1. Utwórz nowy test wydajności sieci web.
 
      **Włącz WebTestRecordPlugins** Wyświetla okno dialogowe.
 
-2.  Zaznacz pole wyboru dla dodatku plug-in rejestratora i wybierz polecenie **OK**.
+2. Zaznacz pole wyboru dla dodatku plug-in rejestratora i wybierz polecenie **OK**.
 
      Po zakończeniu testu wydajności sieci web zostanie wykonany nowy dodatek plug-in rejestratora.
 

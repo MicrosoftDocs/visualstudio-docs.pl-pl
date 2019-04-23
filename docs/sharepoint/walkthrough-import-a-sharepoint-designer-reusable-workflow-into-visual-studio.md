@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1552e45b13fbbd860a429238cf233bbfccbb3f02
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 702c671922d8ea7a1552504be062b7b31de16a09
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603421"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053939"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Przewodnik: Importowanie przepływu pracy wielokrotnego użytku programu SharePoint Designer do Visual Studio
   W tym instruktażu przedstawiono sposób importowania przepływu pracy wielokrotnego użytku, utworzone w programie SharePoint Designer 2010 do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu przepływu pracy programu SharePoint.
@@ -48,11 +48,11 @@ ms.locfileid: "56603421"
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
--   Obsługiwane edycje [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i programu SharePoint.
+- Obsługiwane edycje [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i programu SharePoint.
 
--   Program Visual Studio.
+- Program Visual Studio.
 
--   Microsoft [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] SharePoint Designer 2010.
+- Microsoft [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] SharePoint Designer 2010.
 
 ## <a name="create-target-sharepoint-subsites"></a>Utwórz podwitryny SharePoint docelowej
  Najpierw należy utworzyć dwa nowe Lokacje podrzędne programu SharePoint: jeden do hostowania przepływów danych wielokrotnego użytku z programu SharePoint Designer umożliwia hostowanie skonwertowane przepływy pracy.
@@ -80,27 +80,27 @@ ms.locfileid: "56603421"
 
 #### <a name="to-create-a-sharepoint-designer-reusable-workflow"></a>Aby utworzyć wielokrotny przepływ danych programu SharePoint Designer
 
-1.  W **podwitryny** wybierz pozycję **SPD1** lokacji go zmodyfikować.
+1. W **podwitryny** wybierz pozycję **SPD1** lokacji go zmodyfikować.
 
-2.  Na Wstążce, wybierz **przepływu pracy wielokrotnego użytku** przycisku.
+2. Na Wstążce, wybierz **przepływu pracy wielokrotnego użytku** przycisku.
 
      Zostanie wyświetlony Kreator tworzenia przepływu pracy wielokrotnego użytku.
 
-3.  W **nazwa** wprowadź **SPD zadania przepływu pracy**.
+3. W **nazwa** wprowadź **SPD zadania przepływu pracy**.
 
-4.  W **typu zawartości** wybierz **zadań**, a następnie wybierz **OK** przycisku.
+4. W **typu zawartości** wybierz **zadań**, a następnie wybierz **OK** przycisku.
 
      Przepływ pracy zostanie otwarty w Projektancie przepływu pracy programu SharePoint Designer.
 
-5.  W Projektancie przepływu pracy, wybierz krok 1, a następnie na Wstążce, wybierz **warunek** przycisku.
+5. W Projektancie przepływu pracy, wybierz krok 1, a następnie na Wstążce, wybierz **warunek** przycisku.
 
-6.  Na liście warunków, wybierz opcję **Jeśli pola bieżącego elementu jest równa wartości**.
+6. Na liście warunków, wybierz opcję **Jeśli pola bieżącego elementu jest równa wartości**.
 
      Ten krok powoduje dodanie warunku, który nosi nazwę **Jeśli pole jest równa wartości**.
 
-7.  W **Jeśli pole jest równa wartości** warunku, wybierz polecenie **pola** łącza.
+7. W **Jeśli pole jest równa wartości** warunku, wybierz polecenie **pola** łącza.
 
-8.  Na liście wartości, wybierz opcję **tytuł**.
+8. Na liście wartości, wybierz opcję **tytuł**.
 
 9. W **Jeśli pole jest równa wartości** warunku, wybierz polecenie **wartość** łącza.
 
@@ -128,23 +128,23 @@ ms.locfileid: "56603421"
 
 #### <a name="to-save-and-deploy-the-reusable-workflow"></a>Aby zapisać i wdrożyć wielokrotny przepływ danych
 
-1.  W górnej części programu SharePoint Designer wybierz **Zapisz** przycisk, aby zapisać postęp, a następnie wybierz **Publikuj** przycisk, aby wdrożyć przepływ pracy, aby **SPD1** witryny programu SharePoint .
+1. W górnej części programu SharePoint Designer wybierz **Zapisz** przycisk, aby zapisać postęp, a następnie wybierz **Publikuj** przycisk, aby wdrożyć przepływ pracy, aby **SPD1** witryny programu SharePoint .
 
-2.  W okienku nawigacji wybierz **przepływy pracy** obiektu.
+2. W okienku nawigacji wybierz **przepływy pracy** obiektu.
 
-3.  W obszarze **przepływu pracy wielokrotnego użytku**, wybierz **SPD zadania przepływu pracy**.
+3. W obszarze **przepływu pracy wielokrotnego użytku**, wybierz **SPD zadania przepływu pracy**.
 
-4.  Na Wstążce, wybierz **Zapisz jako szablon** przycisk, aby zapisać przepływ pracy jako *.wsp* pliku.
+4. Na Wstążce, wybierz **Zapisz jako szablon** przycisk, aby zapisać przepływ pracy jako *.wsp* pliku.
 
-5.  Otwórz **SPD1** witryny programu SharePoint w przeglądarce, aby wyświetlić *.wsp* pliku w programie SharePoint.
+5. Otwórz **SPD1** witryny programu SharePoint w przeglądarce, aby wyświetlić *.wsp* pliku w programie SharePoint.
 
-6.  Na pasku szybkiego uruchamiania wybierz **bibliotek** łącza.
+6. Na pasku szybkiego uruchamiania wybierz **bibliotek** łącza.
 
-7.  W **biblioteki dokumentów** wybierz pozycję **zasobów witryn** łącza.
+7. W **biblioteki dokumentów** wybierz pozycję **zasobów witryn** łącza.
 
      **SPD zadania przepływu pracy** pliku jest wyświetlany na liście zasobów innych witryn.
 
-8.  Na liście plików wybierz nazwę tego pliku
+8. Na liście plików wybierz nazwę tego pliku
 
 9. W **pobieranie pliku** okna dialogowego wybierz **Zapisz** przycisk, aby zapisać *.wsp* plików w systemie lokalnym.
 
@@ -188,11 +188,11 @@ ms.locfileid: "56603421"
 
 11. Ponieważ **Importowanie programu SharePoint 2010 przepływu pracy wielokrotnego użytku** szablonu nie importuje wartości właściwości skojarzenia dla importowanych przepływu pracy, należy wprowadzić je. W tym celu:
 
-    1.  W **Eksploratora rozwiązań**, wybierz **SPD_Workflow_TestFT** węzła.
+    1. W **Eksploratora rozwiązań**, wybierz **SPD_Workflow_TestFT** węzła.
 
-    2.  Wybierz przycisk wielokropka (![elipsy projektanta Mobile ASP.NET](../sharepoint/media/mwellipsis.gif "elipsy projektanta Mobile ASP.NET")) przycisk obok jednego z listy właściwości, takie jak **listy docelowej** właściwości.
+    2. Wybierz przycisk wielokropka (![elipsy projektanta Mobile ASP.NET](../sharepoint/media/mwellipsis.gif "elipsy projektanta Mobile ASP.NET")) przycisk obok jednego z listy właściwości, takie jak **listy docelowej** właściwości.
 
-    3.  Wypełnienie brakujących wartości w Kreatorze dostosowywania programu SharePoint, a następnie wybierz **Zakończ** przycisku.
+    3. Wypełnienie brakujących wartości w Kreatorze dostosowywania programu SharePoint, a następnie wybierz **Zakończ** przycisku.
 
 12. Wybierz Plik xoml, a następnie na pasku menu wybierz **widoku** > **projektanta** Aby wyświetlić zaimportowane przepływu pracy w Projektancie przepływu pracy.
 
@@ -206,9 +206,9 @@ ms.locfileid: "56603421"
 
 14. Wykonaj jeden z następujących zestawów czynności:
 
-    -   Kliknij dwukrotnie **CodeActivity1** do generowania procedury obsługi zdarzeń i przeglądania kodu.
+    - Kliknij dwukrotnie **CodeActivity1** do generowania procedury obsługi zdarzeń i przeglądania kodu.
 
-    -   W **właściwości** okno **CodeActivity1**, ustaw wartość **ExecuteCode** właściwości **codeActivity_ExecuteCode**.
+    - W **właściwości** okno **CodeActivity1**, ustaw wartość **ExecuteCode** właściwości **codeActivity_ExecuteCode**.
 
 15. Dodaj następujący kod w ramach istniejącego **przy użyciu** lub **Importy** instrukcji:
 
@@ -225,27 +225,27 @@ ms.locfileid: "56603421"
 
 #### <a name="to-deploy-the-project-and-associate-the-workflow"></a>Aby wdrożyć projekt i skojarzyć przepływ danych
 
-1.  W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], wybierz **F5** klucza do uruchamiania i wdrażania projektu przekonwertowanego przepływu pracy.
+1. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], wybierz **F5** klucza do uruchamiania i wdrażania projektu przekonwertowanego przepływu pracy.
 
-2.  Na pasku szybkiego uruchamiania wybierz **zadania** łącze, aby wyświetlić listę zadań.
+2. Na pasku szybkiego uruchamiania wybierz **zadania** łącze, aby wyświetlić listę zadań.
 
-3.  Na **narzędzia do obsługi List** kartę, wybrać **elementów** przycisk, a następnie wybierz **nowy element** przycisku.
+3. Na **narzędzia do obsługi List** kartę, wybrać **elementów** przycisk, a następnie wybierz **nowy element** przycisku.
 
      **Zadania - nowy element** zostanie otwarte okno dialogowe.
 
-4.  W **tytuł** wprowadź **nowe zadanie**, a następnie wybierz **Zapisz** przycisku.
+4. W **tytuł** wprowadź **nowe zadanie**, a następnie wybierz **Zapisz** przycisku.
 
-5.  Na **narzędzia do obsługi List** kartę, wybrać **listy** przycisk, a następnie wybierz **ustawienia listy** przycisku.
+5. Na **narzędzia do obsługi List** kartę, wybrać **listy** przycisk, a następnie wybierz **ustawienia listy** przycisku.
 
      **Ustawienia listy** zostanie wyświetlona strona.
 
-6.  W **uprawnienia i zarządzanie** wybierz pozycję **ustawienia przepływu pracy** łącza.
+6. W **uprawnienia i zarządzanie** wybierz pozycję **ustawienia przepływu pracy** łącza.
 
      **Ustawienia przepływu pracy** zostanie wyświetlona strona.
 
-7.  Wybierz **Dodaj przepływ pracy** łącza.
+7. Wybierz **Dodaj przepływ pracy** łącza.
 
-8.  W **przepływu pracy** wybierz **WorkflowImportProject1 - Test przepływu pracy SPD**.
+8. W **przepływu pracy** wybierz **WorkflowImportProject1 - Test przepływu pracy SPD**.
 
 9. W **nazwa** wprowadź **SPD przepływ pracy Test**, a następnie wybierz **OK** przycisku.
 

@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6e52c9a34b5fc6ea487cffd1728a525dc5a0984
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c549beaf58e64d8026b3f6bd39a3b69922d6b7f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54766227"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097417"
 ---
 # <a name="install-and-manage-local-content"></a>Instalowanie zawartości lokalnej i zarządzanie nią
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,18 +43,18 @@ Za pomocą Podglądu pomocy firmy Microsoft, możesz dodać, usunąć, aktualiza
   
 #### <a name="to-change-the-content-installation-source"></a>Aby zmienić źródło zawartości instalacji  
   
-1.  Na **zarządzanie zawartością** kartę, wybrać **dysku** przycisku opcji.  
+1. Na **zarządzanie zawartością** kartę, wybrać **dysku** przycisku opcji.  
   
     > [!NOTE]
     >  **Dysku** opcji nie będzie dostępny, jeśli administrator uniemożliwił Ci modyfikowanie źródła instalacji zawartości. Aby uzyskać więcej informacji, zobacz [Podręcznik administratora programu Podgląd Pomocy](../ide/help-viewer-administrator-guide.md).  
   
-2.  Wykonaj jedną z następujących czynności:  
+2. Wykonaj jedną z następujących czynności:  
   
-    -   Wprowadź ścieżkę do pliku .msha lub adres URL punktu końcowego usługi.  
+    - Wprowadź ścieżkę do pliku .msha lub adres URL punktu końcowego usługi.  
   
-    -   Wybierz kolejno opcje Przeglądaj (**...** ) przycisk, aby przejść do pliku .msha.  
+    - Wybierz kolejno opcje Przeglądaj (**...** ) przycisk, aby przejść do pliku .msha.  
   
-    -   Na liście wybierz wpis, który był używany ostatni.  
+    - Na liście wybierz wpis, który był używany ostatni.  
   
 ## <a name="download-and-install-content-locally"></a>Pobieranie i instalowanie zawartości lokalnie  
  Jeżeli pobierzesz i zainstalujesz zawartość na komputerze lokalnym, można wyświetlić tematy bez połączenia internetowego.  
@@ -66,13 +66,13 @@ Za pomocą Podglądu pomocy firmy Microsoft, możesz dodać, usunąć, aktualiza
   
 #### <a name="to-download-and-install-content"></a>Aby pobrać i zainstalować zawartość  
   
-1.  Wybierz **zarządzanie zawartością** kartę.  
+1. Wybierz **zarządzanie zawartością** kartę.  
   
-2.  Na liście zawartości, wybierz opcję **Dodaj** łącze obok księgi lub ksiąg, które chcesz pobrać i zainstalować.  
+2. Na liście zawartości, wybierz opcję **Dodaj** łącze obok księgi lub ksiąg, które chcesz pobrać i zainstalować.  
   
      Książka zostanie dodana do **oczekujące zmiany** listy, a szacowany rozmiar księgi lub ksiąg, które określiłeś, zostanie wyświetlone poniżej tej listy. Ponieważ niektóre książki mają wspólne tematy, całkowity rozmiar wiele książek może być mniejszy niż suma wielkości każdej z książek.  
   
-3.  Wybierz **aktualizacji** przycisku.  
+3. Wybierz **aktualizacji** przycisku.  
   
      Księgi lub ksiąg, które można określić są instalowane wraz z wszelkimi aktualizacjami książek, które mają już na tym komputerze. Czasy instalacji różnią się, ale mogą wyświetlić postęp na pasku stanu.  
   
@@ -86,13 +86,13 @@ Za pomocą Podglądu pomocy firmy Microsoft, możesz dodać, usunąć, aktualiza
   
 #### <a name="to-remove-content"></a>Aby usunąć zawartość  
   
-1.  Wybierz **zarządzanie zawartością** kartę.  
+1. Wybierz **zarządzanie zawartością** kartę.  
   
-2.  Na liście zawartości, wybierz opcję **Usuń** łącze obok księgi lub ksiąg, które chcesz usunąć.  
+2. Na liście zawartości, wybierz opcję **Usuń** łącze obok księgi lub ksiąg, które chcesz usunąć.  
   
      Książka zostanie dodana do **oczekujące zmiany** listy.  
   
-3.  Wybierz **aktualizacji** przycisku.  
+3. Wybierz **aktualizacji** przycisku.  
   
      Księgi lub ksiąg, określonych przez użytkownika są usuwane z komputera.  
   
@@ -116,13 +116,13 @@ Za pomocą Podglądu pomocy firmy Microsoft, możesz dodać, usunąć, aktualiza
   
 #### <a name="to-move-local-content"></a>Aby przenieść zawartość lokalną  
   
-1.  Na **zarządzanie zawartością** kartę, wybrać **przenieść** przycisku w obszarze **ścieżkę lokalną Store**.  
+1. Na **zarządzanie zawartością** kartę, wybrać **przenieść** przycisku w obszarze **ścieżkę lokalną Store**.  
   
      **Przenoszenie zawartości** zostanie otwarte okno dialogowe.  
   
-2.  W **do** pola tekstowego, wprowadzić inną lokalizację zawartości, a następnie wybierz **OK** przycisku.  
+2. W **do** pola tekstowego, wprowadzić inną lokalizację zawartości, a następnie wybierz **OK** przycisku.  
   
-3.  Wybierz **Zamknij** przycisk po przeniesieniu zawartości.  
+3. Wybierz **Zamknij** przycisk po przeniesieniu zawartości.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Podgląd Pomocy firmy Microsoft](../ide/microsoft-help-viewer.md)

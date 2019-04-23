@@ -11,12 +11,12 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6c6722078f2f25bfb2a14b44e001b0f2921e8ad5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bf0d5e29138f27956dff52571296395507d44976
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804936"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055421"
 ---
 # <a name="registering-single-file-generators"></a>Rejestrowanie generatorów jednoplikowych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Aby udostępnić niestandardowego narzędzia w [!INCLUDE[vsprvs](../../includes/
   
 ### <a name="to-register-a-custom-tool"></a>Aby zarejestrować narzędzie niestandardowe  
   
-1.  Zarejestruj to narzędzie niestandardowe biblioteki DLL w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] rejestru lokalnego lub w kluczu HKEY_CLASSES_ROOT rejestru systemu.  
+1. Zarejestruj to narzędzie niestandardowe biblioteki DLL w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] rejestru lokalnego lub w kluczu HKEY_CLASSES_ROOT rejestru systemu.  
   
      Na przykład poniżej przedstawiono informacje o rejestracji dla zarządzanych MSDataSetGenerator narzędzie niestandardowe, który jest dostarczany z [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]:  
   
@@ -38,17 +38,17 @@ Aby udostępnić niestandardowego narzędzia w [!INCLUDE[vsprvs](../../includes/
     "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"  
     ```  
   
-2.  Utwórz klucz rejestru w żądany [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] gałęzi w obszarze generatorów\\*GUID* gdzie *GUID* jest identyfikator GUID jest definiowany przez system projektu określonego języka lub usługi. Nazwa klucza staje się nazwą programową Twojego niestandardowego narzędzia. Klucz niestandardowe narzędzie ma następujące wartości:  
+2. Utwórz klucz rejestru w żądany [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] gałęzi w obszarze generatorów\\*GUID* gdzie *GUID* jest identyfikator GUID jest definiowany przez system projektu określonego języka lub usługi. Nazwa klucza staje się nazwą programową Twojego niestandardowego narzędzia. Klucz niestandardowe narzędzie ma następujące wartości:  
   
-    -   (Domyślnie)  
+    - (Domyślnie)  
   
          Opcjonalna. Zawiera przyjazny dla użytkownika opis niestandardowego narzędzia. Ten parametr jest opcjonalny, ale zalecane.  
   
-    -   CLSID  
+    - CLSID  
   
          Wymagana. Określa identyfikator biblioteki klas składnika modelu COM, który implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
   
-    -   GeneratesDesignTimeSource  
+    - GeneratesDesignTimeSource  
   
          Wymagana. Wskazuje, czy typy plikom, które są generowane przez niestandardowe narzędzie były dostępne dla projektantów wizualnych. Wartość tego parametru musi być 0 (zero) typy nie są dostępne do projektantów wizualnych lub 1 (co) dla typów dostępnych projektantów wizualnych.  
   

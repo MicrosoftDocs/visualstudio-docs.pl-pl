@@ -12,12 +12,12 @@ ms.prod: visual-studio-mac
 ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: 8cc0678dbb3e55d80f51e457f141c7f2dc5a12d9
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 48cf25a7164fabc96924897c0a4a28bbbe4bea74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58573055"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053588"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Publikowanie aplikacji sieci Web w usłudze Azure App Service przy użyciu programu Visual Studio dla komputerów Mac
 
@@ -25,9 +25,9 @@ Narzędzie publikowania do publikowania aplikacji platformy ASP.NET Core w usłu
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
- - [Visual Studio 2017 for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017) zainstalowane za pomocą programu ASP.NET Core włączone.
- - Subskrypcja platformy Azure. Jeśli nie masz już subskrypcję, [Utwórz bezpłatne konto](https://azure.microsoft.com/free/dotnet/), zawierający środki w wysokości 200 USD na 30 dni i 12 miesięcy z popularnych bezpłatnych usług.
- - Projekt platformy ASP.NET Core. Jeśli nie masz jeszcze projektu, możesz to zrobić [Utwórz nową](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2017).
+- [Visual Studio 2017 for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017) zainstalowane za pomocą programu ASP.NET Core włączone.
+- Subskrypcja platformy Azure. Jeśli nie masz już subskrypcję, [Utwórz bezpłatne konto](https://azure.microsoft.com/free/dotnet/), zawierający środki w wysokości 200 USD na 30 dni i 12 miesięcy z popularnych bezpłatnych usług.
+- Projekt platformy ASP.NET Core. Jeśli nie masz jeszcze projektu, możesz to zrobić [Utwórz nową](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2017).
 
 ## <a name="publish-to-azure-app-service"></a>Publikowanie w usłudze Azure App Service
 

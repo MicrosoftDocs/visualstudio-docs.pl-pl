@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd4a839c1d93d89cf6d0502e234f7cb1401a6809
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d297c1ef7079a894a53a77694d213f8b0f5cb257
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684419"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055408"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Omówienie diagnostyki grafiki w programie Visual Studio
 Program Visual Studio *Graphics Diagnostics* to zestaw narzędzi do rejestrowania i następnie analizowania problemów renderowania i wydajności w aplikacjach Direct3D. Diagnostyka grafiki może służyć w aplikacjach, które działają lokalnie na komputerze z systemem Windows lub na zdalnym komputerze lub urządzeniu.
@@ -59,7 +59,7 @@ Program Visual Studio *Graphics Diagnostics* to zestaw narzędzi do rejestrowani
 
 #### <a name="to-open-the-directx-control-panel"></a>Aby otworzyć panel sterowania DirectX
 
--   Na pasku menu wybierz **debugowania**, **grafiki**, **Panel sterowania DirectX**.
+- Na pasku menu wybierz **debugowania**, **grafiki**, **Panel sterowania DirectX**.
 
 ## <a name="graphics-analyzer"></a>Analizator grafiki
  Analizator grafiki programu Visual Studio jest dedykowany interfejs do badania problemów renderowania i wydajności w ramkach, który został już przechwycony. Wewnątrz analizatora grafiki znajdziesz kilka narzędzi, które pomagają poznać i zrozumieć sposób renderowania w aplikacji. Każde narzędzie udostępnia inny rodzaj informacji o ramce, która jest poddawana i narzędzia są przeznaczone do użytku z optymalizacją intuicyjnie zawęzić-w w źródle problem z renderowaniem, rozpoczynając od jego wyglądem w bufor ramki.

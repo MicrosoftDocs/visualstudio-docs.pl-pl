@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ceadc2458b6d380cc67062cf89cbea20541446c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 87bf42ccb44c170321f36a9fe2fa7f44e274dcfe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609947"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099666"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Przewodnik: Tworzenie niestandardowego Instalatora dla aplikacji ClickOnce
 Na podstawie dowolnej aplikacji ClickOnce *.exe* pliku można dyskretnie zainstalować i aktualizowane przez instalatora niestandardowego. Niestandardowego Instalatora można zaimplementować niestandardowy komfortu podczas instalacji, w tym niestandardowych okien dialogowych dla operacji zabezpieczeń i konserwacji. Aby wykonać operacje instalacji, używa niestandardowego Instalatora <xref:System.Deployment.Application.InPlaceHostingManager> klasy. W tym instruktażu pokazano, jak utworzyć niestandardowego instalatora dyskretnej instalacji aplikacji ClickOnce.
@@ -32,11 +32,11 @@ Na podstawie dowolnej aplikacji ClickOnce *.exe* pliku można dyskretnie zainsta
 
 ### <a name="to-create-a-custom-clickonce-application-installer"></a>Aby utworzyć niestandardowego Instalatora aplikacji ClickOnce
 
-1.  W aplikacji ClickOnce należy dodać odwołania do System.Deployment i pozycję System.Windows.Forms.
+1. W aplikacji ClickOnce należy dodać odwołania do System.Deployment i pozycję System.Windows.Forms.
 
-2.  Dodaj nową klasę do aplikacji i określić dowolną nazwę. W tym przewodniku używa nazwy `MyInstaller`.
+2. Dodaj nową klasę do aplikacji i określić dowolną nazwę. W tym przewodniku używa nazwy `MyInstaller`.
 
-3.  Dodaj następujący kod `Imports` lub `using` instrukcji na górze nowej klasie.
+3. Dodaj następujący kod `Imports` lub `using` instrukcji na górze nowej klasie.
 
     ```vb
     Imports System.Deployment.Application
@@ -48,7 +48,7 @@ Na podstawie dowolnej aplikacji ClickOnce *.exe* pliku można dyskretnie zainsta
     using System.Windows.Forms;
     ```
 
-4.  Dodaj następujące metody do klasy.
+4. Dodaj następujące metody do klasy.
 
      Wywoływanie tych metod <xref:System.Deployment.Application.InPlaceHostingManager> metody pobierania pliku manifestu wdrożenia assert odpowiednie uprawnienia, poproś użytkownika o zgodę, aby zainstalować, a następnie należy pobrać i zainstalować ją w pamięci podręcznej funkcji ClickOnce. Określić niestandardowego Instalatora aplikacji ClickOnce jest wstępnie zaufany lub może odroczyć zaufania decyzja o <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> wywołania metody. Ten kod wstępnie ufa aplikacji.
 
@@ -58,7 +58,7 @@ Na podstawie dowolnej aplikacji ClickOnce *.exe* pliku można dyskretnie zainsta
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.vb)]
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.cs)]
 
-5.  Próby instalacji w kodzie, wywołania `InstallApplication` metody. Na przykład, jeśli nazwę klasy `MyInstaller`, może wywołać `InstallApplication` w następujący sposób.
+5. Próby instalacji w kodzie, wywołania `InstallApplication` metody. Na przykład, jeśli nazwę klasy `MyInstaller`, może wywołać `InstallApplication` w następujący sposób.
 
     ```vb
     Dim installer As New MyInstaller()

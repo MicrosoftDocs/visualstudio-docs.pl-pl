@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 994135458fb7bc76ef2ab7f4a76ac184e1b6426e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc97aad2d3a056a61ae925816ac6d2457918db65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945986"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100784"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Instrukcje: Generowanie informacji rejestru dla Instalatora
 
@@ -28,7 +28,7 @@ ms.locfileid: "54945986"
 
 ## <a name="to-create-a-registration-manifest"></a>Aby utworzyć manifest rejestracji
 
--   Uruchom RegPkg z **/regfile razem** przełącznika. Podaj inne przełączniki, nazwa pliku wyjściowego i ścieżkę pakietu VSPackage.
+- Uruchom RegPkg z **/regfile razem** przełącznika. Podaj inne przełączniki, nazwa pliku wyjściowego i ścieżkę pakietu VSPackage.
 
      Na przykład w wierszu polecenia należy wpisać podobny do poniższego:
 
@@ -38,7 +38,7 @@ ms.locfileid: "54945986"
 
 ## <a name="to-view-a-registration-manifest"></a>Aby wyświetlić manifest rejestracji
 
--   Otwórz manifest rejestracji w dowolnym edytorze tekstów.
+- Otwórz manifest rejestracji w dowolnym edytorze tekstów.
 
      Poniższy przykład to manifest rejestracji, który RegPkg tworzy dla usługi w języka IronPython:
 
@@ -99,7 +99,7 @@ ms.locfileid: "54945986"
 
 ## <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Aby utworzyć XML Instalatora Windows narzędzi Dołącz plik
 
--   Uruchom RegPkg z **/wixfile** przełącznika. Podaj inne przełączniki, nazwa pliku wyjściowego i ścieżkę pakietu VSPackage.
+- Uruchom RegPkg z **/wixfile** przełącznika. Podaj inne przełączniki, nazwa pliku wyjściowego i ścieżkę pakietu VSPackage.
 
      Na przykład w wierszu polecenia należy wpisać podobny do poniższego:
 
@@ -109,7 +109,7 @@ ms.locfileid: "54945986"
 
 ## <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Aby wyświetlić XML Instalatora Windows narzędzi dołączyć plik
 
--   Otwórz zestaw narzędzi XML Instalatora Windows umieścić plik w dowolnym edytorze tekstów.
+- Otwórz zestaw narzędzi XML Instalatora Windows umieścić plik w dowolnym edytorze tekstów.
 
      Poniższy przykład jest pliku dołączonego, który tworzy RegPkg dla usługi w języka IronPython:
 

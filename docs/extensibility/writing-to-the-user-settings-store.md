@@ -8,42 +8,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a576c692ffb03f631aa0d85d02b99ad74cd4b9c1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0ea782140405b55a6c5a90b01fb466586f66cc38
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705271"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054108"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Zapisywanie w magazynie ustawień użytkownika
 Ustawienia użytkownika są zapisywalne ustawień, jak w powyższym **narzędzia / Opcje** okna dialogowego Właściwości systemu windows i niektórych innych oknach dialogowych. Rozszerzenia programu Visual Studio może użyć do przechowywania niewielkich ilości danych. W tym instruktażu przedstawiono sposób dodawania Notatnik w programie Visual Studio jako narzędzie zewnętrzne za odczytywanie z oraz zapisywanie w magazynie ustawień użytkownika.
 
 ### <a name="backing-up-your-user-settings"></a>Tworzenie kopii zapasowej ustawień użytkownika
 
-1.  Musi być możliwe zresetowanie ustawień zewnętrznych narzędzi, dzięki czemu można debugować i powtórz procedurę. Aby to zrobić, należy zapisać ustawienia oryginalne tak, aby można je przywrócić zgodnie z potrzebami.
+1. Musi być możliwe zresetowanie ustawień zewnętrznych narzędzi, dzięki czemu można debugować i powtórz procedurę. Aby to zrobić, należy zapisać ustawienia oryginalne tak, aby można je przywrócić zgodnie z potrzebami.
 
-2.  Open Regedit.exe.
+2. Open Regedit.exe.
 
-3.  Przejdź do pozycji narzędzia HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.
+3. Przejdź do pozycji narzędzia HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.
 
     > [!NOTE]
     >  Upewnij się, że przeglądasz klucz, który zawiera \14.0Exp\ i nie \14.0\\. Po uruchomieniu doświadczalnym wystąpieniu programu Visual Studio, ustawień użytkownika znajdują się w gałęzi rejestru "14.0Exp".
 
-4.  Kliknij prawym przyciskiem myszy podklucz \External Tools\, a następnie kliknij przycisk **wyeksportować**. Upewnij się, że **wybrana gałąź** jest zaznaczone.
+4. Kliknij prawym przyciskiem myszy podklucz \External Tools\, a następnie kliknij przycisk **wyeksportować**. Upewnij się, że **wybrana gałąź** jest zaznaczone.
 
-5.  Zapisz plik wynikowy Tools.reg zewnętrznych.
+5. Zapisz plik wynikowy Tools.reg zewnętrznych.
 
-6.  Później, gdy chcesz zresetować ustawienia zewnętrznych narzędzi, wybierz SDKs\Windows\v8.0a\bin\netfx HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External klucza rejestru i kliknij przycisk **Usuń** w menu kontekstowym.
+6. Później, gdy chcesz zresetować ustawienia zewnętrznych narzędzi, wybierz SDKs\Windows\v8.0a\bin\netfx HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External klucza rejestru i kliknij przycisk **Usuń** w menu kontekstowym.
 
-7.  Gdy **Potwierdzanie usunięcia klucza** pojawi się okno dialogowe, kliknij przycisk **tak**.
+7. Gdy **Potwierdzanie usunięcia klucza** pojawi się okno dialogowe, kliknij przycisk **tak**.
 
-8.  Kliknij prawym przyciskiem myszy plik Tools.reg zewnętrznego, który został wcześniej zapisany, kliknij przycisk **Otwórz za pomocą**, a następnie kliknij przycisk **Edytora rejestru**.
+8. Kliknij prawym przyciskiem myszy plik Tools.reg zewnętrznego, który został wcześniej zapisany, kliknij przycisk **Otwórz za pomocą**, a następnie kliknij przycisk **Edytora rejestru**.
 
 ## <a name="writing-to-the-user-settings-store"></a>Zapisywanie w magazynie ustawień użytkownika
 
-1.  Utwórz projekt VSIX o nazwie UserSettingsStoreExtension, a następnie dodaj polecenie niestandardowe o nazwie UserSettingsStoreCommand. Aby uzyskać więcej informacji na temat tworzenia niestandardowych poleceń, zobacz [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+1. Utwórz projekt VSIX o nazwie UserSettingsStoreExtension, a następnie dodaj polecenie niestandardowe o nazwie UserSettingsStoreCommand. Aby uzyskać więcej informacji na temat tworzenia niestandardowych poleceń, zobacz [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-2.  W UserSettingsStoreCommand.cs, Dodaj następujące instrukcje using:
+2. W UserSettingsStoreCommand.cs, Dodaj następujące instrukcje using:
 
     ```csharp
     using System.Collections.Generic;
@@ -51,7 +51,7 @@ Ustawienia użytkownika są zapisywalne ustawień, jak w powyższym **narzędzia
     using Microsoft.VisualStudio.Shell.Settings;
     ```
 
-3.  MenuItemCallback Usuń treść metody i pobieranie użytkownika, które ustawienia są przechowywane, w następujący sposób:
+3. MenuItemCallback Usuń treść metody i pobieranie użytkownika, które ustawienia są przechowywane, w następujący sposób:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -61,7 +61,7 @@ Ustawienia użytkownika są zapisywalne ustawień, jak w powyższym **narzędzia
     }
     ```
 
-4.  Teraz Dowiedz się, czy program Notatnik jest już ustawiona jako zewnętrznego narzędzia. Musisz wykonać iterację wszystkich zewnętrznych narzędzi, aby ustalić, czy ustawienie ToolCmd "Notatnik", w następujący sposób:
+4. Teraz Dowiedz się, czy program Notatnik jest już ustawiona jako zewnętrznego narzędzia. Musisz wykonać iterację wszystkich zewnętrznych narzędzi, aby ustalić, czy ustawienie ToolCmd "Notatnik", w następujący sposób:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -85,7 +85,7 @@ Ustawienia użytkownika są zapisywalne ustawień, jak w powyższym **narzędzia
 
     ```
 
-5.  Notatnik nie została ustawiona jako narzędzie zewnętrzne, ustaw go w następujący sposób:
+5. Notatnik nie została ustawiona jako narzędzie zewnętrzne, ustaw go w następujący sposób:
 
     ```vb
     private void MenuItemCallback(object sender, EventArgs e)
@@ -121,10 +121,10 @@ Ustawienia użytkownika są zapisywalne ustawień, jak w powyższym **narzędzia
     }
     ```
 
-6.  Przetestuj kod. Należy pamiętać o tym, jego dodaje Notatnik jako zewnętrznego narzędzia, więc musisz wycofać rejestru przed jego uruchomieniem po raz drugi.
+6. Przetestuj kod. Należy pamiętać o tym, jego dodaje Notatnik jako zewnętrznego narzędzia, więc musisz wycofać rejestru przed jego uruchomieniem po raz drugi.
 
-7.  Skompilować kod i rozpocząć debugowanie.
+7. Skompilować kod i rozpocząć debugowanie.
 
-8.  Na **narzędzia** menu, kliknij przycisk **wywołania UserSettingsStoreCommand**. Spowoduje to dodanie Notatnika na potrzeby **narzędzia** menu.
+8. Na **narzędzia** menu, kliknij przycisk **wywołania UserSettingsStoreCommand**. Spowoduje to dodanie Notatnika na potrzeby **narzędzia** menu.
 
 9. Powinien zostać wyświetlony Notatnik w menu Narzędzia / Opcje menu, a następnie klikając polecenie **Notatnik** należy wywołać wystąpienie Notatnika.

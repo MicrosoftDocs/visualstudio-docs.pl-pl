@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: afbfaae56470fa9b16c99277d36b0e39a6504906
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 362eb5fd1973035e31ccd301f6cc46a748a9b2ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628913"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099731"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Dodatkowe informacje na temat błędów SharePoint
   Możesz znaleźć pomocy w rozwiązywaniu problemów [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] błędy i ostrzeżenia w Rozwiązywanie problemów z tematów i publiczne fora narzędzi programu SharePoint.
@@ -29,11 +29,11 @@ ms.locfileid: "56628913"
 ## <a name="troubleshoot-errors-and-issues"></a>Rozwiązywanie problemów
  Aby uzyskać pomoc dotyczącą typowych błędów i innych problemów w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] narzędziach programu SharePoint, zobacz następujące tematy:
 
--   [Rozwiązywanie problemów z rozwiązaniami SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)
+- [Rozwiązywanie problemów z rozwiązaniami SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)
 
--   [Debugowanie rozwiązań SharePoint](../sharepoint/debugging-sharepoint-solutions.md)
+- [Debugowanie rozwiązań SharePoint](../sharepoint/debugging-sharepoint-solutions.md)
 
--   [Rozwiązywanie problemów z pakowaniem i wdrażaniem SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
+- [Rozwiązywanie problemów z pakowaniem i wdrażaniem SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 
 ## <a name="other-resources"></a>Inne zasoby
  W poniższej tabeli wymieniono [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] narzędzi programu SharePoint, fora i inne zasoby, które są dostępne.

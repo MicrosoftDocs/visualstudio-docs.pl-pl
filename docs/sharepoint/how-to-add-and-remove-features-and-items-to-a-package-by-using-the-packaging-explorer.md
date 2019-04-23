@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2dda4193a0ea30ac08f8a63a39ce00fb634832d7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f62181909afef7f404270a085f9bbb1a5341c115
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596428"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104463"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Instrukcje: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu Eksploratora pakietów
   Aby skonfigurować pakiet do wdrożenia programu SharePoint elementy i funkcje, można użyć Eksploratora pakietów. Elementów projektu programu SharePoint i funkcje można dostosować w pliku wsp.
@@ -31,7 +31,7 @@ ms.locfileid: "56596428"
 
 #### <a name="to-open-the-packaging-explorer"></a>Aby otworzyć Eksploratora pakietów
 
-1.  Na pasku menu wybierz **widoku** > **Windows inne** > **Eksploratora pakietów**.
+1. Na pasku menu wybierz **widoku** > **Windows inne** > **Eksploratora pakietów**.
 
      **Eksploratora pakietów** pojawia się w **przybornika**.
 
@@ -40,15 +40,15 @@ ms.locfileid: "56596428"
 
 #### <a name="to-add-a-sharepoint-feature"></a>Aby dodać funkcję programu SharePoint
 
-1.  Otwórz **Eksploratora pakietów**, otwórz menu skrótów dla projektu, a następnie wybierz **Dodaj funkcję**.
+1. Otwórz **Eksploratora pakietów**, otwórz menu skrótów dla projektu, a następnie wybierz **Dodaj funkcję**.
 
 #### <a name="to-move-an-existing-sharepoint-feature"></a>Aby przenieść istniejącą funkcję programu SharePoint
 
-1.  Otwórz **Eksploratora pakietów**, a następnie wykonaj jedną z następujących czynności:
+1. Otwórz **Eksploratora pakietów**, a następnie wykonaj jedną z następujących czynności:
 
-    -   Przeciągnij **funkcji** z jednego projektu do innego projektu.
+    - Przeciągnij **funkcji** z jednego projektu do innego projektu.
 
-    -   Otwórz menu skrótów dla funkcji, wybierz polecenie **Wytnij**, otwórz menu skrótów dla projektu, do którego chcesz przenieść tę funkcję, a następnie wybierz **Wklej**.
+    - Otwórz menu skrótów dla funkcji, wybierz polecenie **Wytnij**, otwórz menu skrótów dla projektu, do którego chcesz przenieść tę funkcję, a następnie wybierz **Wklej**.
 
     > [!NOTE]
     >  Użyj tej procedury, jeśli masz więcej niż jeden projekt programu SharePoint w rozwiązaniu.
@@ -58,9 +58,9 @@ ms.locfileid: "56596428"
 
 #### <a name="to-validate-a-sharepoint-feature-or-package"></a>Aby sprawdzić poprawność funkcji programu SharePoint lub pakietu
 
-1.  Otwórz **Eksploratora pakietów**.
+1. Otwórz **Eksploratora pakietów**.
 
-2.  Otwórz menu skrótów dla funkcji lub pakietu, a następnie wybierz **weryfikacji**.
+2. Otwórz menu skrótów dla funkcji lub pakietu, a następnie wybierz **weryfikacji**.
 
 ## <a name="see-also"></a>Zobacz także
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

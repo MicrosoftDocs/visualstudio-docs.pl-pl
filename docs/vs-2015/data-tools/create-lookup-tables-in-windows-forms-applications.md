@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 280cc2fa94b8ea8167da2168cd4fff90bb8fa612
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 76c55d45e279a3fcf6579c77bf7d226c7baf13d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663235"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102981"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Tworzenie tabel wyszukiwania w aplikacjach Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,25 +35,25 @@ Termin *tabeli odnośników* dotyczy kontrolek, które są powiązane z dwoma po
   
 ## <a name="to-databind-a-lookup-control"></a>Aby powiązać z danymi kontrolkę wyszukiwania odnośników  
   
-1.  Otwórz **źródeł danych** okna.  
+1. Otwórz **źródeł danych** okna.  
   
     > [!NOTE]
     > Tabele odnośników wymagają, że dwie pokrewne tabele lub obiekty są dostępne w **źródeł danych** okna.
   
-2.  Rozwiń węzły w **źródeł danych** okna, aż zobaczysz tabelę nadrzędną i wszystkie jej kolumny oraz pokrewną tabelę podrzędną i jej wszystkie kolumny.  
+2. Rozwiń węzły w **źródeł danych** okna, aż zobaczysz tabelę nadrzędną i wszystkie jej kolumny oraz pokrewną tabelę podrzędną i jej wszystkie kolumny.  
   
     > [!NOTE]
     >  Węzłem tabeli podrzędnej jest węzeł pokazywany jako rozwijany węzeł podrzędny tabeli nadrzędnej.  
   
-3.  Zmień upuszczany typ tabeli podrzędnej na **szczegóły** , wybierając **szczegóły** na liście kontrolek w węźle tabeli podrzędnej. Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+3. Zmień upuszczany typ tabeli podrzędnej na **szczegóły** , wybierając **szczegóły** na liście kontrolek w węźle tabeli podrzędnej. Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
-4.  Odszukaj węzeł, który łączy dwie tabele ( `CustomerID` węzła w poprzednim przykładzie). Zmień jego upuszczany typ <xref:System.Windows.Forms.ComboBox> , wybierając **ComboBox** na liście kontrolek.  
+4. Odszukaj węzeł, który łączy dwie tabele ( `CustomerID` węzła w poprzednim przykładzie). Zmień jego upuszczany typ <xref:System.Windows.Forms.ComboBox> , wybierając **ComboBox** na liście kontrolek.  
   
-5.  Przeciągnij główny węzeł tabeli podrzędnej z **źródeł danych** okna do formularza.  
+5. Przeciągnij główny węzeł tabeli podrzędnej z **źródeł danych** okna do formularza.  
   
      W formularzu pojawią się kontrolki powiązane z danymi (z etykietami opisowymi) oraz pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>). A [DataSet](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane w zasobniku składnika.  
   
-6.  Teraz przeciągnij główny węzeł tabeli nadrzędnej z **źródeł danych** okna bezpośrednio na kontrolkę wyszukiwania odnośników ( <xref:System.Windows.Forms.ComboBox>).  
+6. Teraz przeciągnij główny węzeł tabeli nadrzędnej z **źródeł danych** okna bezpośrednio na kontrolkę wyszukiwania odnośników ( <xref:System.Windows.Forms.ComboBox>).  
   
      Powiązania wyszukiwania odnośników są teraz ustanowione. W poniższej tabeli opisano konkretne właściwości skonfigurowane w kontrolce.  
   
