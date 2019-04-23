@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88d5b4729ec24ef9594e3c0528a8d09156f23b1b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b4d2a6195fc2357eecc6f9e011a1a7a4c3fff789
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926276"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073050"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Instrukcje: Zarządzanie zawijaniem wierszy w edytorze
 
@@ -28,19 +28,19 @@ Można ustawić lub wyczyścić **zawijanie** opcji. Gdy ta opcja jest ustawiona
 
 ## <a name="to-set-word-wrap-preferences"></a>Można ustawić preferencje zawijania programu word
 
-1.  Na **narzędzia** menu, wybierz opcję **opcje**.
+1. Na **narzędzia** menu, wybierz opcję **opcje**.
 
-2.  W **edytora tekstów** folderu, wybierz **ogólne** opcji na liście **wszystkie języki** podfolder, aby ustawić tę opcję, globalnie.
+2. W **edytora tekstów** folderu, wybierz **ogólne** opcji na liście **wszystkie języki** podfolder, aby ustawić tę opcję, globalnie.
 
      — lub —
 
      Wybierz **ogólne** opcje w podfolderze dla języka, możesz programowania.
 
-3.  W obszarze **ustawienia**, zaznacz lub wyczyść **zawijanie** opcji.
+3. W obszarze **ustawienia**, zaznacz lub wyczyść **zawijanie** opcji.
 
      Gdy **zawijanie** opcja jest zaznaczona, **Pokaż zualne przy zawijaniu wierszy** opcja jest włączona.
 
-4.  Wybierz **wyświetlane zualne zawijanie** opcję, jeśli chcesz wyświetlić wskaźnik zwracany strzałkę, gdzie długi wiersz zawijana drugi wiersz. Usuń zaznaczenie tej opcji, jeśli nie chcesz wyświetlić strzałki wskaźnika.
+4. Wybierz **wyświetlane zualne zawijanie** opcję, jeśli chcesz wyświetlić wskaźnik zwracany strzałkę, gdzie długi wiersz zawijana drugi wiersz. Usuń zaznaczenie tej opcji, jeśli nie chcesz wyświetlić strzałki wskaźnika.
 
     > [!NOTE]
     > Tych strzałek monitu nie są dodawane do kodu; są one tylko w celach wyświetlania.

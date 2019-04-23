@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ccce6d63e1cb96d4f4027bd13a4a4095e0e4248
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9fcad439c7f0633f75d2a7364e2d0d3bfb142f89
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951491"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090345"
 ---
 # <a name="domain-property-value-change-handlers"></a>Obsługa zmian wartości właściwości domeny
 
@@ -52,15 +52,15 @@ public partial class Comment
 
 Zwróć uwagę na następujące kwestie dotyczące obsługi właściwości:
 
--   Metody obsługi właściwości są nazywane po użytkownik wprowadza zmiany do właściwości domeny, i gdy program kod przypisuje inną wartość właściwości.
+- Metody obsługi właściwości są nazywane po użytkownik wprowadza zmiany do właściwości domeny, i gdy program kod przypisuje inną wartość właściwości.
 
--   Metody są wywoływane tylko wtedy, gdy faktycznie zmienia wartość. Program obsługi nie jest wywoływana, jeśli program kod przypisuje wartość, która jest równa wartości bieżącej.
+- Metody są wywoływane tylko wtedy, gdy faktycznie zmienia wartość. Program obsługi nie jest wywoływana, jeśli program kod przypisuje wartość, która jest równa wartości bieżącej.
 
--   Magazyn obliczone i niestandardowe właściwości domeny nie ma metody OnValueChanged i OnValueChanging.
+- Magazyn obliczone i niestandardowe właściwości domeny nie ma metody OnValueChanged i OnValueChanging.
 
--   Program obsługi zmiany nie można używać do modyfikowania nowych wartości. Jeśli chcesz to zrobić, na przykład ograniczyć wartość do określonego zakresu, definiowanie `ChangeRule`.
+- Program obsługi zmiany nie można używać do modyfikowania nowych wartości. Jeśli chcesz to zrobić, na przykład ograniczyć wartość do określonego zakresu, definiowanie `ChangeRule`.
 
--   Nie można dodać program obsługi zmiany właściwości, który reprezentuje rolę relacji. Zamiast tego Zdefiniuj `AddRule` i `DeleteRule` klasy relacji. Te zasady są wyzwalane, gdy łącza są tworzone lub zmienione. Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
+- Nie można dodać program obsługi zmiany właściwości, który reprezentuje rolę relacji. Zamiast tego Zdefiniuj `AddRule` i `DeleteRule` klasy relacji. Te zasady są wyzwalane, gdy łącza są tworzone lub zmienione. Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
 
 ### <a name="changes-in-and-out-of-the-store"></a>Zmiany i Magazyn
 

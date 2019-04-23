@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f1b98429f8d80d14acd6ce7951b9eb116f827ead
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d607300bc42bd0428655a9590ab2e6dcc2a7043
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752577"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063143"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Instrukcje: Dodawanie nowego elementu do projektu przepływu pracy (starsza wersja)
 Po utworzeniu projektu przepływu pracy za pomocą starszego [!INCLUDE[wfd1](../includes/wfd1-md.md)] dostarczone przez [!INCLUDE[vs2010](../includes/vs2010-md.md)] który jest przeznaczony dla jednej [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], możesz dodać [!INCLUDE[wf](../includes/wf-md.md)] elementów i innych znanych [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] elementy do projektu.  
@@ -37,15 +37,15 @@ Po utworzeniu projektu przepływu pracy za pomocą starszego [!INCLUDE[wfd1](../
   
 ### <a name="to-add-a-new-item-to-a-workflow-project"></a>Aby dodać nowy element do projektu przepływu pracy  
   
-1.  Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.  
+1. Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.  
   
      **Dodaj nowy element** zostanie otwarte okno dialogowe.  
   
-2.  Wybierz element.  
+2. Wybierz element.  
   
      W poprzedniej tabeli wymieniono dostępne opcje Windows Workflow Foundation.  
   
-3.  Kliknij przycisk **Dodaj** do dodania elementu do projektu przepływu pracy.  
+3. Kliknij przycisk **Dodaj** do dodania elementu do projektu przepływu pracy.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie starszej wersji projektów przepływu pracy](../workflow-designer/creating-legacy-workflow-projects.md)

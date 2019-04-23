@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9d8ef7f5df692f2f13c9eb3a5a99aa155d38137
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 773a9f5a990b3432484c1ff13012b173c9fac1cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614678"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076227"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Przewodnik: Ręczne wdrażanie aplikacji ClickOnce, które nie wymagają ponownego podpisywania i zachowują informacje o znakowaniu
 Po utworzeniu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji i nadaj mu klientowi do publikowania i wdrażania, tradycyjnie miał odbiorcy do manifestu wdrażania aktualizacji i ponownie zaloguj się. Która nadal jest preferowaną metodą w większości przypadków, .NET Framework 3.5 pozwala na tworzenie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń, które mogą być wdrażane przez klientów bez konieczności ponownie wygenerować nowy manifest wdrożenia. Aby uzyskać więcej informacji, zobacz [aplikacji wdrażania technologii ClickOnce do testowania i produkcji serwerów bez ponownego podpisywania](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -40,9 +40,9 @@ Po utworzeniu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Aby wykonać kroki opisane w tym przewodniku potrzebne są następujące elementy:
 
--   Aplikacja Windows Forms, która wszystko będzie gotowe do wdrożenia. Ta aplikacja zostanie wcześniej określano *WindowsFormsApp1*.
+- Aplikacja Windows Forms, która wszystko będzie gotowe do wdrożenia. Ta aplikacja zostanie wcześniej określano *WindowsFormsApp1*.
 
--   Visual Studio lub Windows SDK.
+- Visual Studio lub Windows SDK.
 
 ### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageexe"></a>Do wdrożenia z wieloma wdrożenia i obsługę znakowania przy użyciu Mage.exe aplikacji ClickOnce
 

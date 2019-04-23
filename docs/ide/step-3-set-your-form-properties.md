@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8edb5fd4b7df44528461d5078e78fd315c0c40b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a26d6f72cee0f2718e84a9e2b671c2be7977bbd5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931458"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096247"
 ---
 # <a name="step-3-set-your-form-properties"></a>Krok 3. Ustawianie właściwości formularza
 Następnie użyj **właściwości** okna, aby zmienić wygląd formularza.
@@ -60,14 +60,14 @@ Następnie użyj **właściwości** okna, aby zmienić wygląd formularza.
 
 7. Przed przejściem do następnego kroku, zatrzymuje program, ponieważ IDE nie pozwoli zmienić programu, gdy jest uruchomiona. Należy pamiętać, że można użyć dowolnej z następujących metod, aby zatrzymać program.
 
-   -   Na pasku narzędzi wybierz **Zatrzymaj debugowanie** przycisku.
+   - Na pasku narzędzi wybierz **Zatrzymaj debugowanie** przycisku.
 
-   -   Na pasku menu wybierz **debugowania** > **Zatrzymaj debugowanie**.
+   - Na pasku menu wybierz **debugowania** > **Zatrzymaj debugowanie**.
 
-   -   Wybierz **X** przycisk w prawym górnym rogu **Form1** okna.
+   - Wybierz **X** przycisk w prawym górnym rogu **Form1** okna.
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
--   Aby przejść do następnego kroku samouczka, zobacz [krok 4: Określić układ formularza z formantem TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
+- Aby przejść do następnego kroku samouczka, zobacz [krok 4: Określić układ formularza z formantem TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
 
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 2: Uruchom program](../ide/step-2-run-your-program.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 2: Uruchom program](../ide/step-2-run-your-program.md).

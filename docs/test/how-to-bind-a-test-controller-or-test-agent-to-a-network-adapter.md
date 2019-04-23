@@ -11,12 +11,12 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c72eb3db36310efd69d18078ca43c1907697453b
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: dfcbac0bb9188826804ba13884f0f57962dddeab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58414973"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086497"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Instrukcje: Powiąż kontroler testów lub agenta testowego z kartą sieciową
 
@@ -35,19 +35,19 @@ Jeśli komputer zawierający kontroler testów lub zainstalowane oprogramowanie 
 
 ### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>Do uzyskiwania adresów IP kart sieciowych
 
-1.  Z Microsoft Windows, wybierz **Start**, wybierz **Rozpocznij wyszukiwanie** wpisz **cmd**, a następnie wybierz **Enter**.
+1. Z Microsoft Windows, wybierz **Start**, wybierz **Rozpocznij wyszukiwanie** wpisz **cmd**, a następnie wybierz **Enter**.
 
-2.  Typ **ipconfig/all**.
+2. Typ **ipconfig/all**.
 
      Adresy IP dla karty sieciowe są wyświetlane. Zapisz adres IP karty sieciowej, którą chcesz powiązać kontroler.
 
 ### <a name="to-bind-a-network-adapter-to-a-test-controller"></a>Aby powiązać kartę sieciową z kontrolerem testów
 
-1.  Z Microsoft Windows, wybierz **Start**, wybierz **Rozpocznij wyszukiwanie** wpisz **services.msc**, a następnie wybierz **Enter**.
+1. Z Microsoft Windows, wybierz **Start**, wybierz **Rozpocznij wyszukiwanie** wpisz **services.msc**, a następnie wybierz **Enter**.
 
      **Usług** zostanie wyświetlone okno dialogowe.
 
-2.  W okienku wyników w obszarze **nazwa** kolumny, kliknij prawym przyciskiem myszy **Visual Studio Test Controller** usługi, a następnie wybierz **zatrzymać**.
+2. W okienku wyników w obszarze **nazwa** kolumny, kliknij prawym przyciskiem myszy **Visual Studio Test Controller** usługi, a następnie wybierz **zatrzymać**.
 
      —lub—
 
@@ -55,9 +55,9 @@ Jeśli komputer zawierający kontroler testów lub zainstalowane oprogramowanie 
 
      `net stop vsttcontroller`
 
-3.  Otwórz *QTCcontroller.exe.config* plik konfiguracyjny XML znajdujący się w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\\\<edition > \Common7\IDE*.
+3. Otwórz *QTCcontroller.exe.config* plik konfiguracyjny XML znajdujący się w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\\\<edition > \Common7\IDE*.
 
-4.  Znajdź `<appSettings>` tagu.
+4. Znajdź `<appSettings>` tagu.
 
     ```xml
     <appSettings>
@@ -71,14 +71,14 @@ Jeśli komputer zawierający kontroler testów lub zainstalowane oprogramowanie 
     </appSettings>
     ```
 
-5.  Dodaj `BindTo` klawisz, aby określić kartę sieciową, której można używać w `<appSettings>` sekcji.
+5. Dodaj `BindTo` klawisz, aby określić kartę sieciową, której można używać w `<appSettings>` sekcji.
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
     </appSettings>
     ```
 
-6.  Uruchom usługę kontrolera testu. Aby to zrobić, uruchom następujące polecenie w wierszu polecenia:
+6. Uruchom usługę kontrolera testu. Aby to zrobić, uruchom następujące polecenie w wierszu polecenia:
 
     `net start vsttcontroller`
 
@@ -89,11 +89,11 @@ Jeśli komputer zawierający kontroler testów lub zainstalowane oprogramowanie 
 
 ### <a name="to-bind-a-network-interface-card-to-a-test-agent"></a>Aby powiązać kartę interfejsu sieciowego z agenta testowego
 
-1.  Z Microsoft Windows, wybierz **Start**, wybierz **Rozpocznij wyszukiwanie** wpisz **services.msc**, a następnie wybierz **Enter**.
+1. Z Microsoft Windows, wybierz **Start**, wybierz **Rozpocznij wyszukiwanie** wpisz **services.msc**, a następnie wybierz **Enter**.
 
     **Usług** zostanie wyświetlone okno dialogowe.
 
-2.  W okienku wyników w obszarze **nazwa** kolumny, kliknij prawym przyciskiem myszy **Visual Studio Test Agent** usługi, a następnie wybierz **zatrzymać**.
+2. W okienku wyników w obszarze **nazwa** kolumny, kliknij prawym przyciskiem myszy **Visual Studio Test Agent** usługi, a następnie wybierz **zatrzymać**.
 
      —lub—
 
@@ -101,9 +101,9 @@ Jeśli komputer zawierający kontroler testów lub zainstalowane oprogramowanie 
 
      **polecenie net stop vsttagent**
 
-3.  Otwórz *QTAgentService.exe.config* plik konfiguracyjny XML znajdujący się w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\\\<edition > \Common7\IDE*.
+3. Otwórz *QTAgentService.exe.config* plik konfiguracyjny XML znajdujący się w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\\\<edition > \Common7\IDE*.
 
-4.  Znajdź `<appSettings>` tagu.
+4. Znajdź `<appSettings>` tagu.
 
     ```xml
     <appSettings>
@@ -117,14 +117,14 @@ Jeśli komputer zawierający kontroler testów lub zainstalowane oprogramowanie 
     </appSettings>  </appSettings>
     ```
 
-5.  Dodaj `BindTo` klawisz, aby określić kartę sieciową, której można używać w `<appSettings>` sekcji.
+5. Dodaj `BindTo` klawisz, aby określić kartę sieciową, której można używać w `<appSettings>` sekcji.
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
     </appSettings>
     ```
 
-6.  Uruchom usługę agenta testowego. Aby to zrobić, uruchom następujące polecenie w wierszu polecenia:
+6. Uruchom usługę agenta testowego. Aby to zrobić, uruchom następujące polecenie w wierszu polecenia:
 
     `net start vsttagent`
 

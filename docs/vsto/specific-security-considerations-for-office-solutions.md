@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1a40fe9329061b457fb2038399324818ec69e43
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5c59824594a783ad952a7b15c47ee3f781aba79d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629082"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081323"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Zagadnienia dotyczące zabezpieczeń określone dla rozwiązań pakietu Office
   Funkcjach zabezpieczeń zapewnianych przez program Microsoft .NET Framework i Microsoft Office może pomóc chronić swoje rozwiązania pakietu Office na potencjalne zagrożenia. W tym temacie opisano niektóre z tych zagrożeń i zapewnia zalecenia, aby zapewnić ochronę przed nimi. Zawiera także informacje o wpływie ustawienia zabezpieczeń Microsoft Office na rozwiązań pakietu Office.
@@ -39,13 +39,13 @@ ms.locfileid: "56629082"
 
 ### <a name="recommendations"></a>Zalecenia
 
--   Zawsze weryfikowały dane wejściowe i dane, czy jest określany na podstawie użytkownika, dokument, bazy danych, usługi sieci web lub dowolnego innego źródła.
+- Zawsze weryfikowały dane wejściowe i dane, czy jest określany na podstawie użytkownika, dokument, bazy danych, usługi sieci web lub dowolnego innego źródła.
 
--   Należy zachować ostrożność udostępnianie określone typy funkcji, takich jak pobieranie danych uprzywilejowanego w imieniu użytkownika i umieszczając go w niechronionego arkusza.
+- Należy zachować ostrożność udostępnianie określone typy funkcji, takich jak pobieranie danych uprzywilejowanego w imieniu użytkownika i umieszczając go w niechronionego arkusza.
 
--   W zależności od typu aplikacji może mieć sens, aby sprawdzić, czy działa oryginalnego dokumentu, przed wykonaniem jakiegokolwiek kodu. Na przykład sprawdzić, czy działa on od dokumentu przechowywanego w lokalizacji znanych, bezpiecznych.
+- W zależności od typu aplikacji może mieć sens, aby sprawdzić, czy działa oryginalnego dokumentu, przed wykonaniem jakiegokolwiek kodu. Na przykład sprawdzić, czy działa on od dokumentu przechowywanego w lokalizacji znanych, bezpiecznych.
 
--   Może to być dobry pomysł, aby wyświetlić ostrzeżenie, jeśli dokument zostanie otwarty, jeśli aplikacja wykonuje żadnych uprzywilejowanych akcji. Na przykład utworzyć ekran powitalny lub okno dialogowe uruchamiania informujący o tym, że aplikacja będzie dostęp do informacji osobistych i użytkownik powinien wybrać kontynuować, lub przycisk Anuluj. Jeśli użytkownik końcowy pobiera takie ostrzeżenie z dokumentem pozornie nieszkodliwie, użytkownik będzie można zamknąć aplikację, zanim wszystko zostanie naruszony.
+- Może to być dobry pomysł, aby wyświetlić ostrzeżenie, jeśli dokument zostanie otwarty, jeśli aplikacja wykonuje żadnych uprzywilejowanych akcji. Na przykład utworzyć ekran powitalny lub okno dialogowe uruchamiania informujący o tym, że aplikacja będzie dostęp do informacji osobistych i użytkownik powinien wybrać kontynuować, lub przycisk Anuluj. Jeśli użytkownik końcowy pobiera takie ostrzeżenie z dokumentem pozornie nieszkodliwie, użytkownik będzie można zamknąć aplikację, zanim wszystko zostanie naruszony.
 
 ## <a name="code-is-blocked-by-the-outlook-object-model-guard"></a>Kod jest zablokowany przez strażnik modelu obiektów programu Outlook
  Microsoft Office, można ograniczyć kodu korzystania z niektórych właściwości, metod i obiekty w modelu obiektów. Przez ograniczenie dostępu do tych obiektów, program Outlook pomaga zapobiec za pomocą modelu obiektów do złośliwych celów robaki poczty e-mail i wirusami. Ta funkcja zabezpieczeń jest określany jako strażnik modelu obiektów programu Outlook. Jeśli dodatku narzędzi VSTO próbuje użyć ograniczone właściwości lub metody, przy włączonym strażnik modelu obiektów, program Outlook wyświetli ostrzeżenie, który umożliwia użytkownikowi zatrzymać operację lub umożliwia użytkownikowi udzielać dostępu do właściwości lub metody przez ograniczony okres t edytora IME. Jeśli użytkownik zatrzymuje operację, dodatków narzędzi VSTO dla programu Outlook utworzone za pomocą rozwiązań pakietu Office w programie Visual Studio będzie zgłaszać <xref:System.Runtime.InteropServices.COMException>.
@@ -103,17 +103,17 @@ ms.locfileid: "56629082"
 
 #### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-includeoffice15shortvstoincludesoffice-15-short-mdmd-applications"></a>Aby wyłączyć dodatków narzędzi VSTO dla programów w pakiecie Microsoft Office 2010 i Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] aplikacji
 
-1.  Wybierz **pliku** kartę.
+1. Wybierz **pliku** kartę.
 
-2.  Wybierz *ApplicationName* **opcje** przycisku.
+2. Wybierz *ApplicationName* **opcje** przycisku.
 
-3.  W okienku kategorii wybierz **Centrum zaufania**.
+3. W okienku kategorii wybierz **Centrum zaufania**.
 
-4.  W okienku szczegółów wybierz **ustawienia Centrum zaufania**.
+4. W okienku szczegółów wybierz **ustawienia Centrum zaufania**.
 
-5.  W okienku kategorii wybierz **Add-ins**.
+5. W okienku kategorii wybierz **Add-ins**.
 
-6.  W okienku szczegółów wybierz **dodatki wymagają aplikacji były podpisane przez zaufanego wydawcę** lub **Wyłącz wszystkie dodatki aplikacji**.
+6. W okienku szczegółów wybierz **dodatki wymagają aplikacji były podpisane przez zaufanego wydawcę** lub **Wyłącz wszystkie dodatki aplikacji**.
 
 ## <a name="see-also"></a>Zobacz także
 - [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50ca0b96ecee2c3537ce88c4468efee48c7cd732
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cd02491b42e9e6a5d677eca35ccde2aa559352c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940780"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096884"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Programy obsługi zdarzeń propagujące zmiany poza modelem
 
@@ -25,21 +25,21 @@ Powierzchnia graficznego i innych kontrolek interfejsu użytkownika są przykła
 
 ### <a name="to-define-a-store-event"></a>Aby zdefiniować zdarzenia magazynu
 
-1.  Wybierz typ zdarzenia, które chcesz monitorować. Aby uzyskać pełną listę, Przyjrzyj się właściwości <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Każda właściwość odnosi się do typu zdarzenia. Najczęściej używane zdarzenia, które typy to:
+1. Wybierz typ zdarzenia, które chcesz monitorować. Aby uzyskać pełną listę, Przyjrzyj się właściwości <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Każda właściwość odnosi się do typu zdarzenia. Najczęściej używane zdarzenia, które typy to:
 
-    -   `ElementAdded` -wyzwalane, gdy element modelu, relacji łączy, kształtu lub połączenia jest tworzony.
+    - `ElementAdded` -wyzwalane, gdy element modelu, relacji łączy, kształtu lub połączenia jest tworzony.
 
-    -   ElementPropertyChanged — wyzwalane, gdy wartość `Normal` właściwość domeny zostanie zmieniony. Zdarzenie jest wyzwalane tylko wtedy, gdy wartości nowym i starym nie są równe. Nie można zastosować zdarzenie do obliczone i niestandardowe właściwości przechowywania.
+    - ElementPropertyChanged — wyzwalane, gdy wartość `Normal` właściwość domeny zostanie zmieniony. Zdarzenie jest wyzwalane tylko wtedy, gdy wartości nowym i starym nie są równe. Nie można zastosować zdarzenie do obliczone i niestandardowe właściwości przechowywania.
 
          Nie można zastosować do właściwości roli, które odnoszą się do relacji łączy. Zamiast tego należy użyć `ElementAdded` do monitorowania relacji domeny.
 
-    -   `ElementDeleted` -wyzwalane po elementu modelu, relacji, kształtu lub łącznik został usunięty. Nadal możesz uzyskać dostępu do wartości właściwości elementu, ale będzie mieć żadnych relacji z innymi elementami.
+    - `ElementDeleted` -wyzwalane po elementu modelu, relacji, kształtu lub łącznik został usunięty. Nadal możesz uzyskać dostępu do wartości właściwości elementu, ale będzie mieć żadnych relacji z innymi elementami.
 
-2.  Dodaj definicję klasy częściowej _YourDsl_**DocData** w osobnym pliku kodu w **DslPackage** projektu.
+2. Dodaj definicję klasy częściowej _YourDsl_**DocData** w osobnym pliku kodu w **DslPackage** projektu.
 
-3.  Jako metodę jak w poniższym przykładzie, należy napisać kod zdarzenia. Może być `static`, chyba że chcesz uzyskać dostęp do `DocData`.
+3. Jako metodę jak w poniższym przykładzie, należy napisać kod zdarzenia. Może być `static`, chyba że chcesz uzyskać dostęp do `DocData`.
 
-4.  Zastąp `OnDocumentLoaded()` zarejestrować program obsługi. Jeśli masz więcej niż jeden program obsługi, można zarejestrować je w tym samym miejscu.
+4. Zastąp `OnDocumentLoaded()` zarejestrować program obsługi. Jeśli masz więcej niż jeden program obsługi, można zarejestrować je w tym samym miejscu.
 
 Lokalizacja kodu rejestracji nie jest krytyczny. `DocView.LoadView()` jest alternatywną lokalizację.
 
@@ -160,11 +160,11 @@ private static void AlbumTitleAdjuster(object sender,
 
 Jeśli piszesz zdarzenie, które aktualizuje magazynu:
 
--   Użyj `store.InUndoRedoOrRollback` Aby uniknąć wprowadzania zmian do elementów modelu w cofania. Menedżer transakcji ustawi wszystko w magazynie do stanu pierwotnego.
+- Użyj `store.InUndoRedoOrRollback` Aby uniknąć wprowadzania zmian do elementów modelu w cofania. Menedżer transakcji ustawi wszystko w magazynie do stanu pierwotnego.
 
--   Użyj `store.InSerializationTransaction` Aby uniknąć wprowadzania zmian, gdy model jest ładowany z pliku.
+- Użyj `store.InSerializationTransaction` Aby uniknąć wprowadzania zmian, gdy model jest ładowany z pliku.
 
--   Zmiany spowoduje dalsze zdarzenia wyzwolone. Upewnij się, że należy unikać wejścia w nieskończoną pętlę.
+- Zmiany spowoduje dalsze zdarzenia wyzwolone. Upewnij się, że należy unikać wejścia w nieskończoną pętlę.
 
 ## <a name="store-event-types"></a>Typy zdarzeń Store
 

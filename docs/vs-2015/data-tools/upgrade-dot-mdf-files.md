@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 6cdbb5d092f431f628e76c7ab629d5ed70429cee
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 395e2a6233c1b6187d9089459cb8f267c4c3c904
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661506"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079911"
 ---
 # <a name="upgrade-mdf-files"></a>Uaktualnianie plików mdf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,15 +54,15 @@ W tym temacie opisano opcje uaktualniania pliku bazy danych (.mdf), po zainstalo
   
  Przed rozpoczęciem uaktualnienia bazy danych należy wziąć pod uwagę następujące kryteria:  
   
--   Nie uaktualniaj, jeśli użytkownik chce pracować nad projektem w starszej wersji i nowszej wersji programu Visual Studio.  
+- Nie uaktualniaj, jeśli użytkownik chce pracować nad projektem w starszej wersji i nowszej wersji programu Visual Studio.  
   
--   Nie uaktualnienie aplikacji, które będą używane w środowiskach korzystających z programu SQL Server Express zamiast LocalDB.  
+- Nie uaktualnienie aplikacji, które będą używane w środowiskach korzystających z programu SQL Server Express zamiast LocalDB.  
   
--   Nie uaktualniaj Jeśli aplikacja korzysta z połączenia zdalnego, ponieważ LocalDB nie akceptuje tych postanowień.  
+- Nie uaktualniaj Jeśli aplikacja korzysta z połączenia zdalnego, ponieważ LocalDB nie akceptuje tych postanowień.  
   
--   Nie uaktualniaj, jeśli aplikacja opiera się na Internet Information Services (IIS).  
+- Nie uaktualniaj, jeśli aplikacja opiera się na Internet Information Services (IIS).  
   
--   Rozważ uaktualnienie, jeśli chcesz przetestować aplikacje baz danych w środowisku piaskownicy, ale nie chcesz administrować bazy danych.  
+- Rozważ uaktualnienie, jeśli chcesz przetestować aplikacje baz danych w środowisku piaskownicy, ale nie chcesz administrować bazy danych.  
   
 ### <a name="to-upgrade-a-database-file"></a>Aby uaktualnić plik bazy danych  
   
@@ -70,17 +70,17 @@ W tym temacie opisano opcje uaktualniania pliku bazy danych (.mdf), po zainstalo
   
 2. W **Dodaj połączenie** okna dialogowego wprowadź następujące informacje:  
   
-   -   **Źródło danych**: `Microsoft SQL Server (SqlClient)`  
+   - **Źródło danych**: `Microsoft SQL Server (SqlClient)`  
   
-   -   **Nazwa serwera**:  
+   - **Nazwa serwera**:  
   
-       -   Aby użyć domyślnej wersji: `(localdb)\MSSQLLocalDB`.  Ta wartość umożliwi określenie ProjectV12 lub ProjectV13, w zależności od wersji programu Visual Studio jest zainstalowany i utworzenia pierwszego wystąpienia LocalDB. **MSSQLLocalDB** w węźle **Eksplorator obiektów SQL Server** pokazuje, w której wersji wskazuje.  
+       - Aby użyć domyślnej wersji: `(localdb)\MSSQLLocalDB`.  Ta wartość umożliwi określenie ProjectV12 lub ProjectV13, w zależności od wersji programu Visual Studio jest zainstalowany i utworzenia pierwszego wystąpienia LocalDB. **MSSQLLocalDB** w węźle **Eksplorator obiektów SQL Server** pokazuje, w której wersji wskazuje.  
   
-       -   Aby użyć określonej wersji: `(localdb)\ProjectsV12` lub `(localdb)\ProjectsV13`, w których wersja V12 jest LocalDB 2014 i V13 jest LocalDB 2016.  
+       - Aby użyć określonej wersji: `(localdb)\ProjectsV12` lub `(localdb)\ProjectsV13`, w których wersja V12 jest LocalDB 2014 i V13 jest LocalDB 2016.  
   
-   -   **Dołącz plik bazy danych**: Ścieżka fizyczna głównego pliku .mdf.  
+   - **Dołącz plik bazy danych**: Ścieżka fizyczna głównego pliku .mdf.  
   
-   -   **Nazwa logiczna**: Nazwa, którą chcesz korzystać z plikiem.  
+   - **Nazwa logiczna**: Nazwa, którą chcesz korzystać z plikiem.  
   
 3. Wybierz przycisk **OK**.  
   
@@ -102,11 +102,11 @@ W tym temacie opisano opcje uaktualniania pliku bazy danych (.mdf), po zainstalo
   
 ### <a name="to-work-with-the-database-in-visual-studio-but-retain-compatibility-with-sql-server-express"></a>Aby pracować z bazą danych w programie Visual Studio, ale zachować zgodność z programu SQL Server Express  
   
--   W programie Visual Studio Otwórz projekt bez jego uaktualnieniem.  
+- W programie Visual Studio Otwórz projekt bez jego uaktualnieniem.  
   
-    -   Aby uruchomić projekt, wybierz klawisz F5.  
+    - Aby uruchomić projekt, wybierz klawisz F5.  
   
-    -   Aby edytować bazy danych, otwórz plik mdf w **Eksploratora rozwiązań**i rozwiń węzeł w **Eksploratora serwera** do pracy z bazą danych.  
+    - Aby edytować bazy danych, otwórz plik mdf w **Eksploratora rozwiązań**i rozwiń węzeł w **Eksploratora serwera** do pracy z bazą danych.  
   
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Aby program SQL Server Express domyślny aparat bazy danych  
   

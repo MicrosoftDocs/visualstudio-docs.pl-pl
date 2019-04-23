@@ -8,12 +8,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 10d0ada1ba86f57b9b40a40b6ffc560379d411dc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 257c5944ee1939849c4163fef518abf513183998
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670098"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095818"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Kolory i style dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ ms.locfileid: "59670098"
 
  **Narzędzia > Opcje w oknie dialogowym**
 
-##  <a name="BKMK_TheVSColorService"></a> Usługa VSColor
+## <a name="BKMK_TheVSColorService"></a> Usługa VSColor
  Program Visual Studio udostępnia usługi kolorów środowiska, nazywany również usługi VSColor lub powłoki kolorów. Ta usługa pozwala powiązać wartości kolorów elementy interfejsu użytkownika zestaw zawierający kolorów dla każdego motywu kolorów nazwa wartość. Usługa VSColor należy użyć dla wszystkich elementów interfejsu użytkownika, tak aby kolory automatycznie zmieniać, aby odzwierciedlić bieżący motyw wybrane przez użytkownika tak, aby interfejsu użytkownika powiązany z usługami kolorów środowiska integruje się z nowe motywy w przyszłych wersjach programu Visual Studio.
 
 ### <a name="how-the-service-works"></a>Jak działa usługa
@@ -256,18 +256,18 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> Wybierając duży kontrast — kolory
+## <a name="BKMK_ChoosingHighContrastColors"></a> Wybierając duży kontrast — kolory
 
 ### <a name="overview"></a>Omówienie
  Windows używa kilka motywów poziomie systemu o wysokim kontraście podnoszących kontrast kolorów tekstu, tła i obrazów, dzięki czemu elementy są wyświetlane na ekranie znacznie. Ze względu na ułatwienia dostępu jest ważne, że elementy interfejsu programu Visual Studio poprawnie odpowiadać, gdy użytkownicy będą przełączać się do motywu o wysokim kontraście.
 
  Tylko niewielki podzbiór kolory systemowe może służyć do dużego kontrastu, motywów. Podczas wybierania systemu nazw kolorów, należy pamiętać o następujących wskazówek:
 
-1.  **Wybierz kolory systemowe, które mają takie samo znaczenie semantyczne** jako element, który jest kolorowania. Na przykład jeśli użytkownik zdecyduje o wysokim kontraście kolor tekstu w oknie umożliwia WindowText i nie ControlText.
+1. **Wybierz kolory systemowe, które mają takie samo znaczenie semantyczne** jako element, który jest kolorowania. Na przykład jeśli użytkownik zdecyduje o wysokim kontraście kolor tekstu w oknie umożliwia WindowText i nie ControlText.
 
-2.  **Wybierz pary tła/na pierwszym planie** razem lub nie będziesz mieć pewność, że wybrany kolor będzie działać w wszystkich tematów o wysokim kontraście.
+2. **Wybierz pary tła/na pierwszym planie** razem lub nie będziesz mieć pewność, że wybrany kolor będzie działać w wszystkich tematów o wysokim kontraście.
 
-3.  **Określić, które części interfejsu użytkownika są najważniejsze i upewnij się, że wyróżnienia obszarów zawartości.** Wiele szczegółów, który zazwyczaj będzie odróżnić niewielkie różnice w odcień koloru, zostaną utracone, więc stosowania kolorów obramowania silne wspólne do definiowania obszarów zawartości, ponieważ istnieją żadnych wariantów kolorów dla różnych obszarów zawartości.
+3. **Określić, które części interfejsu użytkownika są najważniejsze i upewnij się, że wyróżnienia obszarów zawartości.** Wiele szczegółów, który zazwyczaj będzie odróżnić niewielkie różnice w odcień koloru, zostaną utracone, więc stosowania kolorów obramowania silne wspólne do definiowania obszarów zawartości, ponieważ istnieją żadnych wariantów kolorów dla różnych obszarów zawartości.
 
 ### <a name="system-color-set"></a>Zestaw kolorów systemu
  Tabeli u [Blog zespołu programu WPF: Odwołanie SystemColors](http://blogs.msdn.com/b/wpf/archive/2010/11/30/systemcolors-reference.aspx) wskazuje kompletny zestaw nazw kolorów systemowych i odpowiednie odcienie wyświetlane w każdym temacie.
@@ -323,7 +323,7 @@ protected override void Dispose(bool disposing)
 |WindowFrame|— Środowisko IDE obramowanie|
 |WindowText|— Automatyczne ukrywanie karty w pierwszym planie<br />-Wybranego narzędzia okna karty w pierwszym planie<br />— Karta w oknie dokumentu po przeniesieniu fokusu i pierwszego planu kartę tymczasowych po przeniesieniu fokusu lub niezaznaczony<br />-Drzewa widok domyślny kolor pierwszego planu i umieść kursor nad niezaznaczone glifów<br />— Obramowanie karty wybranego okna Narzędzie<br />-Tło thumb paska przewijania, obramowania i symboli|
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> Udostępnianie kolorów dla użytkowników końcowych
+## <a name="BKMK_ExposingColorsForEndUsers"></a> Udostępnianie kolorów dla użytkowników końcowych
 
 ### <a name="overview"></a>Omówienie
  Czasami chcesz umożliwiają użytkownikom końcowym dostosować interfejs użytkownika, takie jak podczas tworzenia edytora kodu lub powierzchni projektowej. Najczęstszym sposobem to polega na użyciu **Narzędzia > Opcje** okna dialogowego. Chyba że wysoce specjalistycznych interfejsu użytkownika, który wymaga kontrolek specjalnych, do przedstawienia dostosowania najłatwiej za pośrednictwem **czcionki i kolory** stronie w obrębie **środowiska** części okna dialogowego. Dla każdego elementu, który należy udostępnić dostosowywania użytkownik może wybrać zmienić kolor pierwszego planu i kolor tła.
@@ -335,13 +335,13 @@ protected override void Dispose(bool disposing)
 
  Aby implementować niestandardowe kategorie lub wyświetlić elementy, pakietu VSPackage musi:
 
--   **Tworzenie lub identyfikowanie kategorie w rejestrze.** Implementacja interfejsu środowiska IDE **czcionki i kolory** strona właściwości używa tych informacji do poprawnie zapytań dla usługi obsługi danej kategorii.
+- **Tworzenie lub identyfikowanie kategorie w rejestrze.** Implementacja interfejsu środowiska IDE **czcionki i kolory** strona właściwości używa tych informacji do poprawnie zapytań dla usługi obsługi danej kategorii.
 
--   **Tworzenie lub identyfikowanie grupy w rejestrze (opcjonalnie).** Może być przydatne do definiowania grupy, która reprezentuje sumę dwóch lub więcej kategorii. Grupa jest zdefiniowany, IDE automatycznie scala podkategorii i dystrybuuje wyświetlania elementów w obrębie grupy.
+- **Tworzenie lub identyfikowanie grupy w rejestrze (opcjonalnie).** Może być przydatne do definiowania grupy, która reprezentuje sumę dwóch lub więcej kategorii. Grupa jest zdefiniowany, IDE automatycznie scala podkategorii i dystrybuuje wyświetlania elementów w obrębie grupy.
 
--   **Implementowanie Obsługa środowiska IDE.**
+- **Implementowanie Obsługa środowiska IDE.**
 
--   **Obsługa zmian czcionek i kolorów.**
+- **Obsługa zmian czcionek i kolorów.**
 
 #### <a name="to-create-or-identify-categories"></a>Aby utworzyć lub wskazać kategorii
  Konstruowania specjalny rodzaj kategorii wpisu rejestru [HKLM\SOFTWARE\Microsoft \Visual Studio\\< wersja programu Visual Studio\>\FontAndColors\\< kategorii\>]. \<Kategoria > jest nazwą niezlokalizowana kategorii.
@@ -426,11 +426,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\FontAndColors\CSharp T
 
  **UWAGA:**
 
--   "NameID" = identyfikator zasobu Nazwa zlokalizowanej kategorii w pakiecie
+- "NameID" = identyfikator zasobu Nazwa zlokalizowanej kategorii w pakiecie
 
--   "ToolWindowPackage" = identyfikator GUID pakietu
+- "ToolWindowPackage" = identyfikator GUID pakietu
 
--   "Category" = "{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}" jest tylko przykładowe i rzeczywista wartość może być udostępniane przez implementujący nowego identyfikatora GUID.
+- "Category" = "{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}" jest tylko przykładowe i rzeczywista wartość może być udostępniane przez implementujący nowego identyfikatora GUID.
 
 ### <a name="set-the-font-and-color-property-category-guid"></a>Ustaw kategorię właściwości czcionek i kolorów identyfikatora GUID
  Poniższy przykładowy kod pokazuje ustawienie kategorii identyfikatorów GUID.

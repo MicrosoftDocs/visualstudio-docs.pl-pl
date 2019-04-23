@@ -8,27 +8,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dc9c53055c31e8cfbedb089b48eda4274fe8b9a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e35cb321772354de29b7b8466b6136c96cabf98d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683405"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081882"
 ---
 # <a name="layout-for-visual-studio"></a>Układ dla programu Visual Studio
 Większość okien dialogowych programu Visual Studio jest [układ okna dialogowego narzędzia](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), które są unthemed okien dialogowych standardzie postępuj zgodnie z [zasad układu okna dialogowego pulpitu Windows](/windows/desktop/uxguide/win-dialog-box). Przemieszcza się w programie Visual Studio można odświeżyć jego interfejsie użytkownika, niektóre ważniejszej okien dialogowych mają nowy projekt, który ustanawia je jak definiowanie produktu środowiska. Te [układ okna dialogowego motywem](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) ma wygląd kompozycji.
 
-##  <a name="BKMK_UtilityDialogLayout"></a> Układ okna dialogowego narzędzia
+## <a name="BKMK_UtilityDialogLayout"></a> Układ okna dialogowego narzędzia
 
--   Wszystkie kontrolki w oknie dialogowym narzędzia należy rozpoczynają się od góry/do lewej i przepływu w dół.
+- Wszystkie kontrolki w oknie dialogowym narzędzia należy rozpoczynają się od góry/do lewej i przepływu w dół.
 
--   Nigdy nie środka kontrolki w oknie dialogowym w celu wypełnienia obszaru dużych.
+- Nigdy nie środka kontrolki w oknie dialogowym w celu wypełnienia obszaru dużych.
 
--   Czcionka środowiska na użytek cały tekst okna dialogowego. Podczas pisania visual specyfikacji, należy określić czcionka środowiska zamiast zaznaczania określonej czcionki i rozmiar. Zobacz [czcionka środowiska](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
+- Czcionka środowiska na użytek cały tekst okna dialogowego. Podczas pisania visual specyfikacji, należy określić czcionka środowiska zamiast zaznaczania określonej czcionki i rozmiar. Zobacz [czcionka środowiska](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
--   Umożliwia obsługę celem jakości w craftsmanship w odstępy spójną kontrolę i położenia.
+- Umożliwia obsługę celem jakości w craftsmanship w odstępy spójną kontrolę i położenia.
 
--   Okna dialogowe może stać się bardziej złożone z większej liczby kontrolek i/lub unikatowe zestawienie kontrolki. W tych złożonych sytuacjach na odpowiednia ilość miejsca między kontroli grupowania, aby przyznać użytkownikowi przepływ logiczny można przeanalizować.
+- Okna dialogowe może stać się bardziej złożone z większej liczby kontrolek i/lub unikatowe zestawienie kontrolki. W tych złożonych sytuacjach na odpowiednia ilość miejsca między kontroli grupowania, aby przyznać użytkownikowi przepływ logiczny można przeanalizować.
 
 ### <a name="utility-dialog-layout-examples"></a>Przykłady układu okna dialogowego narzędzia
  Wszystkie wymiary są wyrażane jako pikseli.
@@ -45,11 +45,11 @@ Większość okien dialogowych programu Visual Studio jest [układ okna dialogow
 
 #### <a name="margins"></a>Marginesy
 
--   Wszystkie okna dialogowe powinny mieć 12-pikselowe obramowanie wokół krawędzi wszystkich.
+- Wszystkie okna dialogowe powinny mieć 12-pikselowe obramowanie wokół krawędzi wszystkich.
 
--   Marginesy w ramce grupy powinna być 9 pikseli od krawędzi ramki.
+- Marginesy w ramce grupy powinna być 9 pikseli od krawędzi ramki.
 
--   Marginesy w kontrolce karty powinny być 6 pikseli z krawędzią formantu karty.
+- Marginesy w kontrolce karty powinny być 6 pikseli z krawędzią formantu karty.
 
 #### <a name="command-buttons"></a>Przyciski poleceń
 
@@ -69,13 +69,13 @@ Większość okien dialogowych programu Visual Studio jest [układ okna dialogow
 
 #### <a name="labels"></a>Etykiety
 
--   Wyrównaj do lewej wszystkie etykiety.
+- Wyrównaj do lewej wszystkie etykiety.
 
--   Dla etykiet, które znajdują się powyżej kontrolki one powinien wyrównuj do lewej dokładnie kontrolką poniżej i dolnej części etykieta powinna być 5 pikseli powyżej górnej części innego formantu (na przykład pole kombi).
+- Dla etykiet, które znajdują się powyżej kontrolki one powinien wyrównuj do lewej dokładnie kontrolką poniżej i dolnej części etykieta powinna być 5 pikseli powyżej górnej części innego formantu (na przykład pole kombi).
 
--   Dla etykiet, które znajdują się na lewo od formantów minimalna szerokość pomiędzy etykietą i kontrolki wprowadzania jest 10 pikseli. Powinno zostać ustanowione dorozumianych drugiej kolumny do wyrównywania pola tekstowe, pola kombi lub innych kontrolek.
+- Dla etykiet, które znajdują się na lewo od formantów minimalna szerokość pomiędzy etykietą i kontrolki wprowadzania jest 10 pikseli. Powinno zostać ustanowione dorozumianych drugiej kolumny do wyrównywania pola tekstowe, pola kombi lub innych kontrolek.
 
--   Etykiety liter i są z dwukropkiem. Zobacz [styl tekstu](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
+- Etykiety liter i są z dwukropkiem. Zobacz [styl tekstu](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
 
 #### <a name="distance-between-controls"></a>Odległość między kontrolkami
  Stos jest kontrolki. Nie ma żadnych bezwzględne wytyczne dotyczące odstępów między formantami skumulowany. Szczelność między kontrolkami mogą się nieco różnić między okien dialogowych. Zalecane jest 20 pikseli dla par pionowych formant/etykiety i 9 pikseli dla par pozioma kontrolka/etykiety. Odstępy minimalne kontroli dla par poziomy to 6 pikseli.
@@ -96,11 +96,11 @@ Większość okien dialogowych programu Visual Studio jest [układ okna dialogow
 
 #### <a name="helper-text"></a>Tekst pomocy
 
--   Okno dialogowe można wyświetlić tekst pomocy, który zawiera więcej informacji o przeznaczeniu okna dialogowego. To zwykle znajduje się u góry i może być zdania 1-2.
+- Okno dialogowe można wyświetlić tekst pomocy, który zawiera więcej informacji o przeznaczeniu okna dialogowego. To zwykle znajduje się u góry i może być zdania 1-2.
 
--   Długość wiersza powinna być dobrze szerokości dla użytkownika przeanalizować i odczytać. Średnie okna dialogowego powinna być co najwyżej 550 pikseli szerokości.
+- Długość wiersza powinna być dobrze szerokości dla użytkownika przeanalizować i odczytać. Średnie okna dialogowego powinna być co najwyżej 550 pikseli szerokości.
 
-####  <a name="BKMK_InteriorCommandButtons"></a> Przyciski poleceń posługiwanie się nimi
+#### <a name="BKMK_InteriorCommandButtons"></a> Przyciski poleceń posługiwanie się nimi
  W oknach dialogowych bardziej złożone wewnętrznej kontroli może być własną powiązane przycisków, które mogą mieć wpływ na, gdzie znajdują się okno dialogowe zatwierdzenia przycisków.
 
 - Wyrównanie w pionie (kolumna) wnętrza przyciski, gdy użycie **OK**/**anulować** w poziomie są ukierunkowane w prawym dolnym rogu.
@@ -120,22 +120,22 @@ Większość okien dialogowych programu Visual Studio jest [układ okna dialogow
 #### <a name="browse-button"></a>[Przeglądaj …] przycisk
  **[Przeglądaj …]**  przycisków poniżej pola tekstowego powinien zawierają bardziej "Przeglądaj..." w całości w tym wielokropka. Jeśli ilość miejsca jest ścisła lub dostępnych jest wiele **[Przeglądaj …]**  przyciski na ekranie przycisku można zmniejszyć do właśnie wielokropka.
 
-##  <a name="BKMK_ThemedDialogLayout"></a> Układ okna dialogowego motywów
+## <a name="BKMK_ThemedDialogLayout"></a> Układ okna dialogowego motywów
  Motywem okien dialogowych w programie Visual Studio mają jaśniejszy wygląd i oferują więcej biały. Typografia zapewnia więcej wyróżnienia i zainteresowań, oferując bardziej otwarty i ustawić odmianą rozmiary czcionek i wagi. Jeśli to możliwe, chrome i paska tytułu zostały obniżone lub usunięte. Układ tych okien dialogowych należy stosować tego podstawowego wzorca:
 
-1.  Tło okna dialogowego jest białe.
+1. Tło okna dialogowego jest białe.
 
-2.  Istnieje reguła 1-pikselowe obramowanie kolorem szarym wartości średniej.
+2. Istnieje reguła 1-pikselowe obramowanie kolorem szarym wartości średniej.
 
-3.  Tytuł okna dialogowego nie jest już znajduje się w pasku tytułu, ale zapewnia wizualnego zainteresowania i wyróżnić w punkcie o większym rozmiarze. (Zobacz sekcję rozmiar czcionki w [styl tekstu](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).)
+3. Tytuł okna dialogowego nie jest już znajduje się w pasku tytułu, ale zapewnia wizualnego zainteresowania i wyróżnić w punkcie o większym rozmiarze. (Zobacz sekcję rozmiar czcionki w [styl tekstu](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).)
 
-4.  Dzięki połączeniu z usługami dodatkowe tekstu, na przykład opis etykiety powinny być **czcionka środowiska + Bold**.
+4. Dzięki połączeniu z usługami dodatkowe tekstu, na przykład opis etykiety powinny być **czcionka środowiska + Bold**.
 
-5.  Posługiwanie się nimi kolumny są rozdzielane przez regułę 1-pikselowe w kolorze szarym światła.
+5. Posługiwanie się nimi kolumny są rozdzielane przez regułę 1-pikselowe w kolorze szarym światła.
 
-6.  Domyślne łącza mają nie znaku podkreślenia. Ustaw kursor po naciśnięciu stany się zmiana koloru oraz podkreślenia.
+6. Domyślne łącza mają nie znaku podkreślenia. Ustaw kursor po naciśnięciu stany się zmiana koloru oraz podkreślenia.
 
-7.  Zatwierdź przycisków (takich jak **OK**/**anulować**) znajdują się w prawym dolnym rogu.
+7. Zatwierdź przycisków (takich jak **OK**/**anulować**) znajdują się w prawym dolnym rogu.
 
 ### <a name="themed-dialog-layout-examples"></a>Przykłady układu okna dialogowego motywów
  ![Układ okna dialogowego motywem](../../extensibility/ux-guidelines/media/0801-h_themeddialog.png "0801 h_ThemedDialog")

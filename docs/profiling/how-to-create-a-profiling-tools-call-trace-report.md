@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f9c5afe582c12f3f7e6a941030be1c94bcd1f5f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0afc0279a9f1f82a18d0e645f56add5da6b347a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650996"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063832"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Instrukcje: Tworzenie raportu śledzenia wywołań narzędzi profilowania
 *Raport śledzenia wywołań* dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools Wyświetla listę informacji chronometrażu dla każdego punktu wejścia i wyjścia do funkcji w aplikacji oraz dla każdego wywołania innych funkcji przez funkcję. Raporty śledzenia wywołań są dostępne dla danych profilowania, tylko wtedy, gdy zostały one pobrane metodą instrumentacji.
@@ -26,9 +26,9 @@ ms.locfileid: "59650996"
 
 ### <a name="to-create-a-call-trace-report"></a>Aby utworzyć raport śledzenia wywołań
 
-1.  Otwórz **polecenia** okna.
+1. Otwórz **polecenia** okna.
 
-2.  W wierszu polecenia wpisz następujące polecenie:
+2. W wierszu polecenia wpisz następujące polecenie:
 
      *ToolsPath* **VSPerfReport** *VSPFile*  **/CallTrace [/Xml]**
 

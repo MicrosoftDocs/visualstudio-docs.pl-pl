@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2caee9a39df18bfed0dc48a9c0266721500ddeca
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ba23da85e24dd7c1020b19b66852cad86f79a03b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654944"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084781"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Tworzenie języka specyficznego dla domeny opartego na formularzach systemu Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Wystąpienia elementu DSL, przedstawiający interfejs użytkownika Windows formu
 
 2. Poeksperymentuj z początkowej przykładu, który zawiera szablon:  
 
-   1.  Transformuj wszystkie szablony.  
+   1. Transformuj wszystkie szablony.  
 
-   2.  Tworzenie i uruchamianie aplikacji przykładowej (**kombinację klawiszy CTRL + F5**).  
+   2. Tworzenie i uruchamianie aplikacji przykładowej (**kombinację klawiszy CTRL + F5**).  
 
-   3.  W doświadczalnym wystąpieniu programu Visual Studio, otwórz `Sample` plik debugowania projektu.  
+   3. W doświadczalnym wystąpieniu programu Visual Studio, otwórz `Sample` plik debugowania projektu.  
 
         Należy zauważyć, że jest wyświetlany w kontrolce Windows Forms.  
 
@@ -54,17 +54,17 @@ Wystąpienia elementu DSL, przedstawiający interfejs użytkownika Windows formu
 
    W głównym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zwróć uwagę na następujące kwestie dotyczące rozwiązania DSL:  
 
--   `DslDefinition.dsl` nie zawiera żadnych elementów diagramu. Jest to spowodowane DSL diagramów nie będzie używać do wyświetlania wystąpienia modele tego języka DSL. Zamiast tego formularza Windows będzie powiązać modelu i elementów w formularzu będą wyświetlane w modelu.  
+- `DslDefinition.dsl` nie zawiera żadnych elementów diagramu. Jest to spowodowane DSL diagramów nie będzie używać do wyświetlania wystąpienia modele tego języka DSL. Zamiast tego formularza Windows będzie powiązać modelu i elementów w formularzu będą wyświetlane w modelu.  
 
--   Oprócz `Dsl` i `DslPackage` projektów, rozwiązanie zawiera projekt trzeci o nazwie `UI.` **interfejsu użytkownika** projekt zawiera definicję formantu Windows Forms. `DslPackage` zależy od `UI`, i `UI` zależy od `Dsl`.  
+- Oprócz `Dsl` i `DslPackage` projektów, rozwiązanie zawiera projekt trzeci o nazwie `UI.` **interfejsu użytkownika** projekt zawiera definicję formantu Windows Forms. `DslPackage` zależy od `UI`, i `UI` zależy od `Dsl`.  
 
--   W `DslPackage` projektu, `UI\DocView.cs` zawiera kod, który wyświetla formantu Windows Forms, która jest zdefiniowana w `UI` projektu.  
+- W `DslPackage` projektu, `UI\DocView.cs` zawiera kod, który wyświetla formantu Windows Forms, która jest zdefiniowana w `UI` projektu.  
 
--   `UI` Projekt zawiera przykładowe pracy kontrolki formularza, powiązany z język DSL. Jednak nie będzie ona działać po zostały zmienione w definicji DSL. `UI` Projekt zawiera:  
+- `UI` Projekt zawiera przykładowe pracy kontrolki formularza, powiązany z język DSL. Jednak nie będzie ona działać po zostały zmienione w definicji DSL. `UI` Projekt zawiera:  
 
-    -   Klasy Windows Forms o nazwie `ModelViewControl`.  
+    - Klasy Windows Forms o nazwie `ModelViewControl`.  
 
-    -   Plik o nazwie `DataBinding.cs` zawierający dodatkowe częściową definicję `ModelViewControl`. Aby wyświetlić jego zawartość w **Eksploratora rozwiązań**, otwórz menu skrótów dla pliku i wybierz polecenie **Wyświetl kod**.  
+    - Plik o nazwie `DataBinding.cs` zawierający dodatkowe częściową definicję `ModelViewControl`. Aby wyświetlić jego zawartość w **Eksploratora rozwiązań**, otwórz menu skrótów dla pliku i wybierz polecenie **Wyświetl kod**.  
 
 ### <a name="about-the-ui-project"></a>Temat projektu interfejsu użytkownika  
  Po zaktualizowaniu pliku definicji DSL, aby określić własne DSL, trzeba będzie zaktualizować kontrolki na `UI` projektu DSL. W odróżnieniu od `Dsl` i `DslPackage` projektami, na przykład `UI` projektu nie jest generowany na podstawie `DslDefinitionl.dsl`. Możesz dodać .TT — pliki do generowania kodu, jeśli chcesz, mimo że nie jest objęty w tym przewodniku.  
@@ -76,34 +76,34 @@ Wystąpienia elementu DSL, przedstawiający interfejs użytkownika Windows formu
 
 #### <a name="to-update-the-dsl-definition"></a>Aby zaktualizować definicję DSL  
 
-1.  Otwórz DslDefinition.dsl w projektanta DSL.  
+1. Otwórz DslDefinition.dsl w projektanta DSL.  
 
-2.  Usuń **ExampleElement**  
+2. Usuń **ExampleElement**  
 
-3.  Zmień nazwę **ExampleModel** klasy domeny `Farm`.  
+3. Zmień nazwę **ExampleModel** klasy domeny `Farm`.  
 
      Wypróbuj dodatkowe właściwości o nazwie `Size` typu **Int32**, i `IsOrganic` typu **logiczna**.  
 
     > [!NOTE]
     >  Jeśli usuniesz klasy domeny katalogu głównego, a następnie utwórz nowy katalog główny, trzeba będzie zresetować właściwość klasy głównej edytora. W **Eksplorator DSL**, wybierz opcję **edytora**. Następnie w oknie właściwości ustaw **klasę główną** do `Farm`.  
 
-4.  Użyj **klasy domeny o nazwie** narzędzia do tworzenia następujących klas domeny:  
+4. Użyj **klasy domeny o nazwie** narzędzia do tworzenia następujących klas domeny:  
 
-    -   `Field` — Podać to właściwość dodatkowe domeny o nazwie `Size`.  
+    - `Field` — Podać to właściwość dodatkowe domeny o nazwie `Size`.  
 
-    -   `Animal` W oknie właściwości ustaw **modyfikator dziedziczenia** do **abstrakcyjne**.  
+    - `Animal` W oknie właściwości ustaw **modyfikator dziedziczenia** do **abstrakcyjne**.  
 
-5.  Użyj **klasy domeny** narzędzia do tworzenia następujących klas:  
+5. Użyj **klasy domeny** narzędzia do tworzenia następujących klas:  
 
-    -   `Sheep`  
+    - `Sheep`  
 
-    -   `Goat`  
+    - `Goat`  
 
-6.  Użyj **dziedziczenia** narzędzie `Goat` i `Sheep` dziedziczyć `Animal`.  
+6. Użyj **dziedziczenia** narzędzie `Goat` i `Sheep` dziedziczyć `Animal`.  
 
-7.  Użyj **osadzania** narzędzie do osadzania `Field` i `Animal` w obszarze `Farm`.  
+7. Użyj **osadzania** narzędzie do osadzania `Field` i `Animal` w obszarze `Farm`.  
 
-8.  Warto uporządkować dane na diagramie. Aby zmniejszyć liczbę zduplikowanych elementów, należy użyć **Przenieś tutaj poddrzewo** polecenia przejdź do menu skrótów w elementów typu liść.  
+8. Warto uporządkować dane na diagramie. Aby zmniejszyć liczbę zduplikowanych elementów, należy użyć **Przenieś tutaj poddrzewo** polecenia przejdź do menu skrótów w elementów typu liść.  
 
 9. **Transformuj wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań.  
 
@@ -117,13 +117,13 @@ Wystąpienia elementu DSL, przedstawiający interfejs użytkownika Windows formu
 
 #### <a name="to-define-your-dsl-model-as-a-data-source"></a>Aby zdefiniować modelu DSL jako źródło danych  
 
-1.  Na **danych** menu, wybierz **Pokaż źródła danych**.  
+1. Na **danych** menu, wybierz **Pokaż źródła danych**.  
 
      **Źródeł danych** zostanie otwarte okno.  
 
      Wybierz **Dodaj nowe źródło danych**. **Kreatora konfiguracji źródła danych** zostanie otwarty.  
 
-2.  Wybierz **obiektu**, **dalej**.  
+2. Wybierz **obiektu**, **dalej**.  
 
      Rozwiń **Dsl**, **Company.FarmApp**i wybierz **farmy**, która jest klasą głównego modelu. Wybierz **Zakończ**.  
 
@@ -181,7 +181,7 @@ Wystąpienia elementu DSL, przedstawiający interfejs użytkownika Windows formu
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>Aby ukończyć powiązania z język DSL  
 
-1.  Dodaj następujący kod w osobnym pliku kodu w **interfejsu użytkownika** projektu:  
+1. Dodaj następujący kod w osobnym pliku kodu w **interfejsu użytkownika** projektu:  
 
     ```csharp  
     using System.ComponentModel;  
@@ -207,7 +207,7 @@ Wystąpienia elementu DSL, przedstawiający interfejs użytkownika Windows formu
     }  
     ```  
 
-2.  W **DslPackage** projekt, Edytuj **DslPackage\DocView.tt** można zaktualizować następujących definicji zmiennej:  
+2. W **DslPackage** projekt, Edytuj **DslPackage\DocView.tt** można zaktualizować następujących definicji zmiennej:  
 
     ```csharp  
     string viewControlTypeName = "FarmControl";  
@@ -218,18 +218,18 @@ Wystąpienia elementu DSL, przedstawiający interfejs użytkownika Windows formu
 
 #### <a name="to-test-the-dsl"></a>Aby przetestować język DSL  
 
-1.  Skompiluj i uruchom rozwiązanie.  
+1. Skompiluj i uruchom rozwiązanie.  
 
-2.  W doświadczalnym wystąpieniu programu Visual Studio, otwórz **przykładowe** pliku.  
+2. W doświadczalnym wystąpieniu programu Visual Studio, otwórz **przykładowe** pliku.  
 
-3.  W **FarmApp Explorer**, otwórz menu skrótów na **farmy** węzła głównego, a następnie wybierz **Dodaj nowe koza**.  
+3. W **FarmApp Explorer**, otwórz menu skrótów na **farmy** węzła głównego, a następnie wybierz **Dodaj nowe koza**.  
 
      `Goat1` pojawia się w **zwierząt** widoku.  
 
     > [!WARNING]
     >  Musisz użyć menu skrótów na **farmy** węzła nie **zwierząt** węzła.  
 
-4.  Wybierz **farmy** węzła głównego i wyświetlić jego właściwości.  
+4. Wybierz **farmy** węzła głównego i wyświetlić jego właściwości.  
 
      W widoku formularza, zmień **nazwa** lub **rozmiar** farmy.  
 
@@ -239,13 +239,13 @@ Wystąpienia elementu DSL, przedstawiający interfejs użytkownika Windows formu
 
 #### <a name="to-make-the-properties-update-immediately"></a>Zapewnienie właściwości wykonać natychmiastową aktualizację  
 
-1.  W widoku Projekt FarmControl.cs zaznacz pole proste, takie jak nazwa, rozmiar lub IsOrganic.  
+1. W widoku Projekt FarmControl.cs zaznacz pole proste, takie jak nazwa, rozmiar lub IsOrganic.  
 
-2.  W oknie właściwości rozwiń **powiązania danych** , a następnie otwórz **(zaawansowane)**.  
+2. W oknie właściwości rozwiń **powiązania danych** , a następnie otwórz **(zaawansowane)**.  
 
      W **formatowanie i powiązywanie zaawansowane** okna dialogowego, w obszarze **tryb aktualizacji źródła danych**, wybierz **onpropertychanged —**.  
 
-3.  Skompiluj i uruchom rozwiązanie.  
+3. Skompiluj i uruchom rozwiązanie.  
 
      Upewnij się, że po zmianie zawartości tego pola do odpowiedniej właściwości natychmiast zmiany modelu farmy.  
 

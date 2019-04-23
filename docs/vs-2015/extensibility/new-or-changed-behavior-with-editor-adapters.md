@@ -10,12 +10,12 @@ ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 79f0a700b64abffe93d79d284ce2f45a76b3e6a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fc7ddaf7ec67a1e33248d5ce424868849200d3e6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758950"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073621"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Zachowaniem nowe lub zostały zmienione z kartami edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,29 +85,29 @@ Jeśli aktualizujesz kodu napisanego dla wcześniejszych wersji podstawowy edyto
   
  Metody, których to dotyczy m.in (lista nie jest wyczerpująca):  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.CenterLines%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.CenterLines%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetCaretPos%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetCaretPos%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineAndColumn%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineAndColumn%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetNearestPosition%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetNearestPosition%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetPointOfLineColumn%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetPointOfLineColumn%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetTextStream%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetTextStream%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWordExtent%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWordExtent%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.PositionCaretForEditing%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.PositionCaretForEditing%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.ReplaceTextOnLine%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.ReplaceTextOnLine%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetCaretPos%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetCaretPos%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetSelection%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetSelection%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetTopLine%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetTopLine%2A>  
   
 #### <a name="outlining"></a>Tworzenie konspektu  
  Klienci z <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> zostanie wyświetlony tylko tych regionów konspektu, które zostały dodane za pomocą <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>lub <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSessionEx.AddHiddenRegionsEx%2A>. Użytkownicy nie zobaczą regionów ad-hoc, ponieważ nie zostały dodane za pośrednictwem karty edytora. Podobnie Ci klienci nie są wyświetlane zwijanie regionów dodane przez języki (w tym C# i C++), które korzystają z nowego kodu w edytorze, a nie kart edytora.  
@@ -120,7 +120,7 @@ Jeśli aktualizujesz kodu napisanego dla wcześniejszych wersji podstawowy edyto
   
 #### <a name="intellisense"></a>IntelliSense  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A> Metoda zakończy się niepowodzeniem, jeśli przekażesz w klasie, który nie implementuje albo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2> lub <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>. Niestandardowe akcje Win32 rysowanych przez właściciela podręczne nie są już obsługiwane.  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A> Metoda zakończy się niepowodzeniem, jeśli przekażesz w klasie, który nie implementuje albo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2> lub <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>. Niestandardowe akcje Win32 rysowanych przez właściciela podręczne nie są już obsługiwane.  
   
 #### <a name="smarttags"></a>SmartTags  
  Brak obsługi karty tagów inteligentnych utworzonych za pomocą, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagData>, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow>, i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow2> interfejsów.  

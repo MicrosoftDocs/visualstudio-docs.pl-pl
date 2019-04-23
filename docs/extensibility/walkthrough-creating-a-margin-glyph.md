@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 745e54856f1859857877eab18c18b2ee9eb62ead
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 02bc8d858f28799020b958978845c0994accd554
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721941"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067420"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>Przewodnik: Utwórz na marginesie
 Za pomocą rozszerzenia niestandardowego edytora, można dostosować wygląd marginesu edytora. W tym przewodniku umieszcza glifów margines wskaźnika zawsze wtedy, gdy wyraz "todo" pojawia się w komentarzu do kodu.
@@ -25,45 +25,45 @@ Za pomocą rozszerzenia niestandardowego edytora, można dostosować wygląd mar
 
 ## <a name="create-a-mef-project"></a>Utwórz projekt MEF
 
-1.  Utwórz projekt VSIX języka C#. (W **nowy projekt** okno dialogowe, wybierz opcję **Visual C# / rozszerzalności**, następnie **projekt VSIX**.) Nazwij rozwiązanie `TodoGlyphTest`.
+1. Utwórz projekt VSIX języka C#. (W **nowy projekt** okno dialogowe, wybierz opcję **Visual C# / rozszerzalności**, następnie **projekt VSIX**.) Nazwij rozwiązanie `TodoGlyphTest`.
 
-2.  Dodaj element projektu klasyfikatora edytora. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Dodaj element projektu klasyfikatora edytora. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
-3.  Usuń istniejące pliki klasy.
+3. Usuń istniejące pliki klasy.
 
 ## <a name="define-the-glyph"></a>Zdefiniuj glifów
  Zdefiniować symbol, uruchamiając <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactory> interfejsu.
 
 ### <a name="to-define-the-glyph"></a>Aby zdefiniować symbol
 
-1.  Dodaj plik klasy i nadaj mu nazwę `TodoGlyphFactory`.
+1. Dodaj plik klasy i nadaj mu nazwę `TodoGlyphFactory`.
 
-2.  Dodaj następujący kod, za pomocą deklaracji.
+2. Dodaj następujący kod, za pomocą deklaracji.
 
      [!code-csharp[VSSDKTodoGlyphTest#1](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_1.cs)]
      [!code-vb[VSSDKTodoGlyphTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_1.vb)]
 
-3.  Dodaj klasę o nazwie `TodoGlyphFactory` implementującej <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactory>.
+3. Dodaj klasę o nazwie `TodoGlyphFactory` implementującej <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactory>.
 
      [!code-csharp[VSSDKTodoGlyphTest#2](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_2.cs)]
      [!code-vb[VSSDKTodoGlyphTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_2.vb)]
 
-4.  Dodaj pola prywatnego, który definiuje wymiary glif.
+4. Dodaj pola prywatnego, który definiuje wymiary glif.
 
      [!code-csharp[VSSDKTodoGlyphTest#3](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_3.cs)]
      [!code-vb[VSSDKTodoGlyphTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_3.vb)]
 
-5.  Implementowanie `GenerateGlyph` , definiując elementu interfejsu użytkownika symbol. `TodoTag` jest zdefiniowany w dalszej części tego przewodnika.
+5. Implementowanie `GenerateGlyph` , definiując elementu interfejsu użytkownika symbol. `TodoTag` jest zdefiniowany w dalszej części tego przewodnika.
 
      [!code-csharp[VSSDKTodoGlyphTest#4](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_4.cs)]
      [!code-vb[VSSDKTodoGlyphTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_4.vb)]
 
-6.  Dodaj klasę o nazwie `TodoGlyphFactoryProvider` implementującej <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactoryProvider>. Eksportowanie tej klasy przy użyciu <xref:Microsoft.VisualStudio.Utilities.NameAttribute> z "TodoGlyph" <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> z VsTextMarker po <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> z "code" i <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> z TodoTag.
+6. Dodaj klasę o nazwie `TodoGlyphFactoryProvider` implementującej <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactoryProvider>. Eksportowanie tej klasy przy użyciu <xref:Microsoft.VisualStudio.Utilities.NameAttribute> z "TodoGlyph" <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> z VsTextMarker po <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> z "code" i <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> z TodoTag.
 
      [!code-csharp[VSSDKTodoGlyphTest#5](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_5.cs)]
      [!code-vb[VSSDKTodoGlyphTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_5.vb)]
 
-7.  Implementowanie <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactoryProvider.GetGlyphFactory%2A> metoda przez utworzenie wystąpienia `TodoGlyphFactory`.
+7. Implementowanie <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactoryProvider.GetGlyphFactory%2A> metoda przez utworzenie wystąpienia `TodoGlyphFactory`.
 
      [!code-csharp[VSSDKTodoGlyphTest#6](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_6.cs)]
      [!code-vb[VSSDKTodoGlyphTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_6.vb)]
@@ -73,39 +73,39 @@ Za pomocą rozszerzenia niestandardowego edytora, można dostosować wygląd mar
 
 ### <a name="to-define-a-todo-tag-and-tagger"></a>Aby zdefiniować tagu zadań do wykonania i moduł tagujący
 
-1.  Dodaj nowy plik klasy do projektu i nadaj mu nazwę `TodoTagger`.
+1. Dodaj nowy plik klasy do projektu i nadaj mu nazwę `TodoTagger`.
 
-2.  Dodaj następujące instrukcje importu.
+2. Dodaj następujące instrukcje importu.
 
      [!code-csharp[VSSDKTodoGlyphTest#7](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_7.cs)]
      [!code-vb[VSSDKTodoGlyphTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_7.vb)]
 
-3.  Dodaj klasę o nazwie `TodoTag`.
+3. Dodaj klasę o nazwie `TodoTag`.
 
      [!code-csharp[VSSDKTodoGlyphTest#8](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_8.cs)]
      [!code-vb[VSSDKTodoGlyphTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_8.vb)]
 
-4.  Zmodyfikuj klasę o nazwie `TodoTagger` implementującej <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> typu `TodoTag`.
+4. Zmodyfikuj klasę o nazwie `TodoTagger` implementującej <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> typu `TodoTag`.
 
      [!code-csharp[VSSDKTodoGlyphTest#9](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_9.cs)]
      [!code-vb[VSSDKTodoGlyphTest#9](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_9.vb)]
 
-5.  Aby `TodoTagger` klasy, Dodaj pola prywatne dla <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> i tekst do wyszukania w klasyfikacji można obejmuje.
+5. Aby `TodoTagger` klasy, Dodaj pola prywatne dla <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> i tekst do wyszukania w klasyfikacji można obejmuje.
 
      [!code-csharp[VSSDKTodoGlyphTest#10](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_10.cs)]
      [!code-vb[VSSDKTodoGlyphTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_10.vb)]
 
-6.  Dodaj Konstruktor, który ustawia klasyfikatora.
+6. Dodaj Konstruktor, który ustawia klasyfikatora.
 
      [!code-csharp[VSSDKTodoGlyphTest#11](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_11.cs)]
      [!code-vb[VSSDKTodoGlyphTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_11.vb)]
 
-7.  Implementowanie <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> obejmuje metody, wyszukując wszystkich klasyfikacji, których nazwy zawierają wyraz "comment" i którego tekstu zawiera tekst wyszukiwania. Zawsze, gdy zostanie znaleziony tekst wyszukiwania, ponownie uzyskanie nową <xref:Microsoft.VisualStudio.Text.Tagging.TagSpan%601> typu `TodoTag`.
+7. Implementowanie <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> obejmuje metody, wyszukując wszystkich klasyfikacji, których nazwy zawierają wyraz "comment" i którego tekstu zawiera tekst wyszukiwania. Zawsze, gdy zostanie znaleziony tekst wyszukiwania, ponownie uzyskanie nową <xref:Microsoft.VisualStudio.Text.Tagging.TagSpan%601> typu `TodoTag`.
 
      [!code-csharp[VSSDKTodoGlyphTest#12](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_12.cs)]
      [!code-vb[VSSDKTodoGlyphTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_12.vb)]
 
-8.  Zadeklaruj `TagsChanged` zdarzeń.
+8. Zadeklaruj `TagsChanged` zdarzeń.
 
      [!code-csharp[VSSDKTodoGlyphTest#13](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_13.cs)]
      [!code-vb[VSSDKTodoGlyphTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_13.vb)]
@@ -130,12 +130,12 @@ Za pomocą rozszerzenia niestandardowego edytora, można dostosować wygląd mar
 
 ### <a name="to-build-and-test-the-todoglyphtest-solution"></a>Aby skompilować i przetestować rozwiązanie TodoGlyphTest
 
-1.  Skompiluj rozwiązanie.
+1. Skompiluj rozwiązanie.
 
-2.  Uruchom projekt, naciskając klawisz **F5**. Drugie wystąpienie programu Visual Studio uruchamia.
+2. Uruchom projekt, naciskając klawisz **F5**. Drugie wystąpienie programu Visual Studio uruchamia.
 
-3.  Upewnij się, że margines wskaźnika jest wyświetlane. (Na **narzędzia** menu, kliknij przycisk **opcje**. Na **edytora tekstów** strony, upewnij się, że **margines wskaźnika** jest zaznaczona.)
+3. Upewnij się, że margines wskaźnika jest wyświetlane. (Na **narzędzia** menu, kliknij przycisk **opcje**. Na **edytora tekstów** strony, upewnij się, że **margines wskaźnika** jest zaznaczona.)
 
-4.  Otwórz plik kodu, który ma komentarzy. Dodaj ten wyraz "todo" do sekcji komentarzy.
+4. Otwórz plik kodu, który ma komentarzy. Dodaj ten wyraz "todo" do sekcji komentarzy.
 
-5.  Jasny jasnoniebieski okrąg ciemny konspektu niebieski pojawia się w margines wskaźnika do lewej części okna kodu.
+5. Jasny jasnoniebieski okrąg ciemny konspektu niebieski pojawia się w margines wskaźnika do lewej części okna kodu.

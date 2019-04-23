@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00534f5ff415ba836d8c2d581e599669941fda6f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 85a0dcb3b10db33605f1411615210928cde565fc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790852"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076253"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Instrukcje: Podpisywanie manifestów wdrożenia i aplikacji
 
@@ -39,43 +39,43 @@ Jeśli chcesz opublikować aplikację za pomocą wdrażania ClickOnce, manifest�
 
 ## <a name="sign-using-a-certificate"></a>Zaloguj się przy użyciu certyfikatu
 
-1.  Przejdź do okna właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz **właściwości**). Na **podpisywanie** zaznacz **Podpisz manifesty ClickOnce** pole wyboru.
+1. Przejdź do okna właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz **właściwości**). Na **podpisywanie** zaznacz **Podpisz manifesty ClickOnce** pole wyboru.
 
-2.  Kliknij przycisk **wybierać Store** przycisku.
+2. Kliknij przycisk **wybierać Store** przycisku.
 
      **Wybierz certyfikat** okno dialogowe pojawia się i wyświetla zawartość w magazynie certyfikatów Windows.
 
     > [!TIP]
     > Jeśli klikniesz **kliknij tutaj, aby wyświetlić właściwości certyfikatu**, **szczegóły certyfikatu** pojawi się okno dialogowe. To okno dialogowe zawiera szczegółowe informacje o certyfikacie i zawiera dodatkowe opcje. Możesz kliknąć pozycję **certyfikaty** Aby wyświetlić dodatkowe informacje pomocy.
 
-3.  Wybierz certyfikat, którego chcesz użyć do podpisania manifestów.
+3. Wybierz certyfikat, którego chcesz użyć do podpisania manifestów.
 
-4.  Ponadto można określić adres serwera znacznika czasowego w **adres URL serwera znacznika czasowego** pola tekstowego. Jest to serwer zapewniający znacznik czasu określający kiedy manifest została podpisana.
+4. Ponadto można określić adres serwera znacznika czasowego w **adres URL serwera znacznika czasowego** pola tekstowego. Jest to serwer zapewniający znacznik czasu określający kiedy manifest została podpisana.
 
 ## <a name="sign-using-an-existing-key-file"></a>Zaloguj się przy użyciu istniejącego pliku kluczowego
 
-1.  Na **podpisywanie** wybierz opcję **Podpisz manifesty ClickOnce** pole wyboru.
+1. Na **podpisywanie** wybierz opcję **Podpisz manifesty ClickOnce** pole wyboru.
 
-2.  Kliknij przycisk **wybierz z pliku** przycisku.
+2. Kliknij przycisk **wybierz z pliku** przycisku.
 
      **Wybierz plik** pojawi się okno dialogowe.
 
-3.  W **wybierz plik** okno dialogowe, przejdź do lokalizacji pliku klucza (*PFX*), którą chcesz użyć, a następnie kliknij przycisk **Otwórz**.
+3. W **wybierz plik** okno dialogowe, przejdź do lokalizacji pliku klucza (*PFX*), którą chcesz użyć, a następnie kliknij przycisk **Otwórz**.
 
     > [!NOTE]
     > Ta opcja obsługuje tylko pliki mające *PFX* rozszerzenia. Jeśli masz plik klucza lub certyfikat w innym formatu, zapisz go w magazynie certyfikatów Windows i wybierz certyfikat jest opisane w poprzedniej procedurze. Wybrany cel certyfikatu powinien zawierać oznaczanie kodu.
 
      **Wprowadź hasło do otwarcia pliku** pojawi się okno dialogowe. (Jeśli *PFX* plik jest już przechowywany w magazynie certyfikatów Windows lub nie jest chroniony hasłem, użytkownik nie jest monitowany o podanie hasła.)
 
-4.  Wprowadź hasło, aby uzyskać dostęp do pliku klucza i naciśnij klawisz **Enter**.
+4. Wprowadź hasło, aby uzyskać dostęp do pliku klucza i naciśnij klawisz **Enter**.
 
 ## <a name="sign-using-a-test-certificate"></a>Zaloguj się przy użyciu certyfikatu testowego
 
-1.  Na **podpisywanie** wybierz opcję **Podpisz manifesty ClickOnce** pole wyboru.
+1. Na **podpisywanie** wybierz opcję **Podpisz manifesty ClickOnce** pole wyboru.
 
-2.  Aby utworzyć nowy certyfikat do testowania, kliknij przycisk **Utwórz certyfikat testu** przycisku.
+2. Aby utworzyć nowy certyfikat do testowania, kliknij przycisk **Utwórz certyfikat testu** przycisku.
 
-3.  W **Utwórz certyfikat testu** okna dialogowego wprowadź hasło, aby zabezpieczyć swój certyfikat testowy.
+3. W **Utwórz certyfikat testu** okna dialogowego wprowadź hasło, aby zabezpieczyć swój certyfikat testowy.
 
 ## <a name="generate-unsigned-manifests"></a>Generowanie nieoznaczonych manifestów
 
@@ -88,24 +88,24 @@ Podpisywanie manifestów ClickOnce jest opcjonalne w przypadku *.exe*— na pods
 
 ### <a name="to-generate-unsigned-manifests-and-include-all-files-in-the-generated-hash"></a>Aby wygenerować manifest i Dołącz wszystkie pliki do wygenerowanego skrótu
 
-1.  Aby wygenerować nieoznaczony manifest, który zawiera wszystkie pliki w skrócie, musisz najpierw opublikować aplikację razem z podpisanych manifestów. W związku z tym najpierw Oznacz manifest ClickOnce wypełniając jedną z poprzednich procedur, a następnie Opublikuj aplikację.
+1. Aby wygenerować nieoznaczony manifest, który zawiera wszystkie pliki w skrócie, musisz najpierw opublikować aplikację razem z podpisanych manifestów. W związku z tym najpierw Oznacz manifest ClickOnce wypełniając jedną z poprzednich procedur, a następnie Opublikuj aplikację.
 
-2.  Na **podpisywanie** strony, wyczyść **Podpisz manifesty ClickOnce** pole wyboru.
+2. Na **podpisywanie** strony, wyczyść **Podpisz manifesty ClickOnce** pole wyboru.
 
-3.  Resetuj wersję publikacji, tak że tylko jedna wersja aplikacji jest dostępna. Domyślnie program Visual Studio automatycznie zwiększa numer wersji publikowanej wersji za każdym razem, gdy spróbujesz opublikować aplikację. Aby uzyskać więcej informacji, zobacz [jak: ClickOnce ustawienie wersji publikacji](../deployment/how-to-set-the-clickonce-publish-version.md).
+3. Resetuj wersję publikacji, tak że tylko jedna wersja aplikacji jest dostępna. Domyślnie program Visual Studio automatycznie zwiększa numer wersji publikowanej wersji za każdym razem, gdy spróbujesz opublikować aplikację. Aby uzyskać więcej informacji, zobacz [jak: ClickOnce ustawienie wersji publikacji](../deployment/how-to-set-the-clickonce-publish-version.md).
 
-4.  Opublikuj aplikację.
+4. Opublikuj aplikację.
 
 ### <a name="to-generate-unsigned-manifests-and-exclude-one-or-more-files-from-the-generated-hash"></a>Aby wygenerować manifest i wykluczyć jeden lub więcej plików z wygenerowanego skrótu
 
-1.  Na **podpisywanie** strony, wyczyść **Podpisz manifesty ClickOnce** pole wyboru.
+1. Na **podpisywanie** strony, wyczyść **Podpisz manifesty ClickOnce** pole wyboru.
 
-2.  Otwórz **pliki aplikacji** okno dialogowe i ustaw **skrótu** do **wykluczyć** dla plików, które chcesz wykluczyć z wygenerowanego mieszania.
+2. Otwórz **pliki aplikacji** okno dialogowe i ustaw **skrótu** do **wykluczyć** dla plików, które chcesz wykluczyć z wygenerowanego mieszania.
 
     > [!NOTE]
     > Wykluczanie pliku ze skrótu konfiguruje funkcję ClickOnce, aby wyłączyć automatyczne oznaczanie manifestów, więc nie trzeba najpierw publikować oznaczonych manifestów jak pokazano w poprzedniej procedurze.
 
-3.  Opublikuj aplikację.
+3. Opublikuj aplikację.
 
 ## <a name="see-also"></a>Zobacz także
 

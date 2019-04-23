@@ -10,12 +10,12 @@ ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: de44dde72e339a2afe4caff779e3468ae2b8601e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 197df09d54500e16ca4f904662693bdfc983f7b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942898"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095116"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Analizowanie wyników testów obciążenia za pomocą analizatora testu obciążenia
 
@@ -25,11 +25,11 @@ Znajdź wąskie gardła, identyfikowanie błędów i zmierzyć ulepszenia w apli
 
 Analizowanie wyników testów obciążenia w następujący sposób:
 
--   Badania obciążenia należy monitorować wtedy, gdy jest uruchomiona.
+- Badania obciążenia należy monitorować wtedy, gdy jest uruchomiona.
 
--   Analizuj badania obciążenia po jego ukończeniu.
+- Analizuj badania obciążenia po jego ukończeniu.
 
--   Wyświetlanie wyników z poprzedniego testu obciążenia.
+- Wyświetlanie wyników z poprzedniego testu obciążenia.
 
 Można również tworzyć raporty, pozwalające porównać dwa lub więcej raportów dla analizy trendu udostępnić zainteresowanym osobom. Zobacz [testy obciążenia raportowanie wyników dla potrzeb porównań testów lub analizy trendów](../test/compare-load-test-results.md).
 

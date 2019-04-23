@@ -22,12 +22,12 @@ caps.latest.revision: 93
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98d754bfc5f68acf693f37f98347c8c60075beaa
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 980b7e0f54c058650a393c35467a73d926ec6638
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324875"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088733"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Dostosowanie map kodu przez edycję plików DGML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Aby dostosować mapę kodu, można edytować plik Directed Graph Markup Language
 > [!NOTE]
 >  Aby utworzyć map kodu, musi mieć program Visual Studio Enterprise. Podczas edytowania mapy kodu w programie Visual Studio go czyści wszelkie atrybuty i nieużywane elementy DGML, usuwając je podczas zapisywania pliku .dgml. Tworzy również elementy kodu automatycznie podczas ręcznego dodawania nowych łączy. Podczas zapisywania pliku .dgml wszelkie atrybuty, które są dodawane do elementu, mogą się ponownie rozmieszczać w kolejności alfabetycznej.  
   
-##  <a name="OrganizeNodes"></a> Grupować elementy kodu  
+## <a name="OrganizeNodes"></a> Grupować elementy kodu  
  Można dodać nowe grupy lub przekonwertować istniejące węzły w grupie.  
   
 1. Otwórz plik .dgml w edytorze tekstu lub edytorze XML.  
@@ -80,12 +80,12 @@ Aby dostosować mapę kodu, można edytować plik Directed Graph Markup Language
   
     Aby uzyskać więcej informacji na temat `Category` atrybutów, zobacz [przypisywać kategorie elementów kodu i linków](#AssignCategories).  
   
-##  <a name="ChangeGraphStyle"></a> Zmień styl mapy  
+## <a name="ChangeGraphStyle"></a> Zmień styl mapy  
  Możesz zmienić kolor tła i koloru obramowania mapy, edytując plik .dgml mapy. Aby zmienić styl elementów kodu i linków, zobacz [Zmienianie stylu elementów kodu i linków](#Highlight).  
   
-1.  Otwórz plik .dgml w edytorze tekstu lub edytorze XML.  
+1. Otwórz plik .dgml w edytorze tekstu lub edytorze XML.  
   
-2.  W `<DirectedGraph>` elementu, Dodaj dowolny z następujących atrybutów, aby zmienić jego styl:  
+2. W `<DirectedGraph>` elementu, Dodaj dowolny z następujących atrybutów, aby zmienić jego styl:  
   
      Kolor tła  
   
@@ -108,25 +108,25 @@ Aby dostosować mapę kodu, można edytować plik Directed Graph Markup Language
     </DirectedGraph>  
     ```  
   
-##  <a name="Highlight"></a> Zmienianie stylu elementów kodu i linków  
+## <a name="Highlight"></a> Zmienianie stylu elementów kodu i linków  
   
-###  <a name="CreateCustomStyles"></a>   
+### <a name="CreateCustomStyles"></a>   
  Style niestandardowe można stosować do następujących elementów kodu:  
   
--   Elementy jednego kodu i linki  
+- Elementy jednego kodu i linki  
   
--   Grupy elementów kodu i linki  
+- Grupy elementów kodu i linki  
   
--   Grupy elementów kodu i linków na podstawie określonych warunków  
+- Grupy elementów kodu i linków na podstawie określonych warunków  
   
 > [!TIP]
 >  Jeśli masz powtarzające się style w wielu elementów kodu lub łączy, można rozważyć zastosowanie kategorii do tych elementów kodu lub łącza, a następnie zastosowanie stylu do tej kategorii. Aby uzyskać więcej informacji, zobacz [Przypisz kategorie do elementów kodu i linków](#AssignCategories) i [przypisz właściwości do elementów kodu i linków](#AssignProperties).  
   
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>Aby zastosować styl niestandardowy do pojedynczego elementu kodu  
   
-1.  Otwórz plik .dgml w edytorze tekstu lub edytorze XML.  
+1. Otwórz plik .dgml w edytorze tekstu lub edytorze XML.  
   
-2.  Znajdź element kodu `<Node/>` elementu. Dodaj dowolny z tych atrybutów, aby dostosować jego styl:  
+2. Znajdź element kodu `<Node/>` elementu. Dodaj dowolny z tych atrybutów, aby dostosować jego styl:  
   
      Kolor tła  
   
@@ -215,11 +215,11 @@ Aby dostosować mapę kodu, można edytować plik Directed Graph Markup Language
   
 ##### <a name="to-apply-a-custom-style-to-a-single-link"></a>Aby zastosować styl niestandardowy do pojedynczego łącza  
   
-1.  Otwórz plik .dgml w edytorze tekstu lub edytorze XML.  
+1. Otwórz plik .dgml w edytorze tekstu lub edytorze XML.  
   
-2.  Znajdź `<Link/>` element, który zawiera nazwy elementu kodu źródłowego i docelowego elementu kodu.  
+2. Znajdź `<Link/>` element, który zawiera nazwy elementu kodu źródłowego i docelowego elementu kodu.  
   
-3.  W `<Link/>` elementu, Dodaj dowolny z następujących atrybutów, aby dostosować jego styl:  
+3. W `<Link/>` elementu, Dodaj dowolny z następujących atrybutów, aby dostosować jego styl:  
   
      Kolor konturu i grotu strzałki  
   
@@ -376,11 +376,11 @@ Aby dostosować mapę kodu, można edytować plik Directed Graph Markup Language
   
  W tym przykładzie:  
   
-1.  Jeśli `Coverage` wynosi > 80, a następnie ustaw `Background` właściwości na zielony.  
+1. Jeśli `Coverage` wynosi > 80, a następnie ustaw `Background` właściwości na zielony.  
   
-2.  Jeśli nie `Coverage` wynosi > 50, a następnie ustaw `Background` właściwości na odcień koloru pomarańczowego na podstawie wartości z `Coverage` właściwości.  
+2. Jeśli nie `Coverage` wynosi > 50, a następnie ustaw `Background` właściwości na odcień koloru pomarańczowego na podstawie wartości z `Coverage` właściwości.  
   
-3.  Ustaw inne `Background` właściwości na odcień czerwieni na podstawie wartości z `Coverage` właściwości.  
+3. Ustaw inne `Background` właściwości na odcień czerwieni na podstawie wartości z `Coverage` właściwości.  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -438,14 +438,14 @@ Aby dostosować mapę kodu, można edytować plik Directed Graph Markup Language
 </DirectedGraph>  
 ```  
   
-##  <a name="AssignProperties"></a> Przypisywanie właściwości do elementów kodu i łączy  
+## <a name="AssignProperties"></a> Przypisywanie właściwości do elementów kodu i łączy  
  Elementy kodu i łącza można organizować przez przypisywanie im właściwości. Na przykład można wybrać elementy kodu, które mają szczególne właściwości, tak aby można je pogrupować, zmienić ich styl lub je ukryć.  
   
 #### <a name="to-assign-a-property-to-a-code-element"></a>Aby przypisać właściwość do elementu kodu  
   
-1.  Otwórz plik .dgml w edytorze tekstu lub edytorze XML.  
+1. Otwórz plik .dgml w edytorze tekstu lub edytorze XML.  
   
-2.  Znajdź `<Node/>` element dla tego elementu kodu. Określ nazwę właściwości i jego wartość. Na przykład:  
+2. Znajdź `<Node/>` element dla tego elementu kodu. Określ nazwę właściwości i jego wartość. Na przykład:  
   
     ```xml  
     <Nodes>  
@@ -453,7 +453,7 @@ Aby dostosować mapę kodu, można edytować plik Directed Graph Markup Language
     </Nodes>  
     ```  
   
-3.  Dodaj `<Property/>` elementu `<Properties>` sekcji, aby określić atrybuty, takie jak jego widoczna nazwa i typ danych:  
+3. Dodaj `<Property/>` elementu `<Properties>` sekcji, aby określić atrybuty, takie jak jego widoczna nazwa i typ danych:  
   
     ```xml  
     <Properties>  
@@ -463,11 +463,11 @@ Aby dostosować mapę kodu, można edytować plik Directed Graph Markup Language
   
 #### <a name="to-assign-a-property-to-a-link"></a>Aby przypisać właściwość do łącza  
   
-1.  Otwórz plik .dgml w edytorze tekstu lub edytorze XML.  
+1. Otwórz plik .dgml w edytorze tekstu lub edytorze XML.  
   
-2.  Znajdź `<Link/>` element, który zawiera nazwy elementu kodu źródłowego i docelowego elementu kodu.  
+2. Znajdź `<Link/>` element, który zawiera nazwy elementu kodu źródłowego i docelowego elementu kodu.  
   
-3.  W `<Node/>` elementu, określ nazwę właściwości i jego wartość. Na przykład:  
+3. W `<Node/>` elementu, określ nazwę właściwości i jego wartość. Na przykład:  
   
     ```xml  
     <Links>  
@@ -475,7 +475,7 @@ Aby dostosować mapę kodu, można edytować plik Directed Graph Markup Language
     </Links>  
     ```  
   
-4.  Dodaj `<Property/>` elementu `<Properties>` sekcji, aby określić atrybuty, takie jak jego widoczna nazwa i typ danych:  
+4. Dodaj `<Property/>` elementu `<Properties>` sekcji, aby określić atrybuty, takie jak jego widoczna nazwa i typ danych:  
   
     ```xml  
     <Properties>  
@@ -483,16 +483,16 @@ Aby dostosować mapę kodu, można edytować plik Directed Graph Markup Language
     </Properties>  
     ```  
   
-##  <a name="AssignCategories"></a> Przypisywanie kategorii do elementów kodu i łączy  
+## <a name="AssignCategories"></a> Przypisywanie kategorii do elementów kodu i łączy  
  W poniższych sekcjach przedstawiono, jak można organizować elementy kodu przez przypisywanie kategorii do nich i w jaki sposób można utworzyć hierarchiczne kategorie, które pomagają organizować elementy kodu i dodawanie atrybutów do kategorii podrzędnych za pomocą dziedziczenia.  
   
 #### <a name="to-assign-a-category-to-a-code-element"></a>Aby przypisać kategorię do elementu kodu  
   
--   Otwórz plik .dgml w edytorze tekstu lub edytorze XML.  
+- Otwórz plik .dgml w edytorze tekstu lub edytorze XML.  
   
--   Znajdź `<Node/>` elementu dla elementu kodu, który ma.  
+- Znajdź `<Node/>` elementu dla elementu kodu, który ma.  
   
--   W `<Node/>` elementu Dodawanie `Category` atrybutu, aby określić nazwę kategorii. Na przykład:  
+- W `<Node/>` elementu Dodawanie `Category` atrybutu, aby określić nazwę kategorii. Na przykład:  
   
     ```xml  
     <Nodes>  
@@ -510,11 +510,11 @@ Aby dostosować mapę kodu, można edytować plik Directed Graph Markup Language
   
 #### <a name="to-assign-a-category-to-a-link"></a>Przypisywanie kategorii do łącza  
   
-1.  Otwórz plik .dgml w edytorze tekstu lub edytorze XML.  
+1. Otwórz plik .dgml w edytorze tekstu lub edytorze XML.  
   
-2.  Znajdź `<Link/>` element, który zawiera nazwy elementu kodu źródłowego i docelowego elementu kodu.  
+2. Znajdź `<Link/>` element, który zawiera nazwy elementu kodu źródłowego i docelowego elementu kodu.  
   
-3.  W `<Link/>` elementu Dodawanie `Category` atrybutu, aby określić nazwę kategorii. Na przykład:  
+3. W `<Link/>` elementu Dodawanie `Category` atrybutu, aby określić nazwę kategorii. Na przykład:  
   
     ```xml  
     <Links>  
@@ -522,7 +522,7 @@ Aby dostosować mapę kodu, można edytować plik Directed Graph Markup Language
     </Links>  
     ```  
   
-4.  Dodaj `<Category/>` elementu `<Categories>` sekcji tak, aby można było używać `Label` atrybutu, aby określić tekst wyświetlany dla tej kategorii:  
+4. Dodaj `<Category/>` elementu `<Categories>` sekcji tak, aby można było używać `Label` atrybutu, aby określić tekst wyświetlany dla tej kategorii:  
   
     ```xml  
     <Categories>  
@@ -532,9 +532,9 @@ Aby dostosować mapę kodu, można edytować plik Directed Graph Markup Language
   
 #### <a name="to-create-hierarchical-categories"></a>Tworzenie kategorii hierarchicznych  
   
-1.  Otwórz plik .dgml w edytorze tekstu lub edytorze XML.  
+1. Otwórz plik .dgml w edytorze tekstu lub edytorze XML.  
   
-2.  Dodaj `<Category/>` element dla kategorii nadrzędnej, a następnie dodaj `BasedOn` atrybutów do kategorii podrzędnych `<Category/>` elementu.  
+2. Dodaj `<Category/>` element dla kategorii nadrzędnej, a następnie dodaj `BasedOn` atrybutów do kategorii podrzędnych `<Category/>` elementu.  
   
      Na przykład:  
   
@@ -554,7 +554,7 @@ Aby dostosować mapę kodu, można edytować plik Directed Graph Markup Language
   
      W tym przykładzie tło `MyFirstNode` zielony ponieważ jej `Category` dziedziczy atrybut `Background` atrybutu `MyParentCategory`.  
   
-##  <a name="AddReferences"></a> Połączyć dokumenty lub adresy URL elementów kodu i linków  
+## <a name="AddReferences"></a> Połączyć dokumenty lub adresy URL elementów kodu i linków  
  Możesz połączyć dokumenty lub adresy URL do elementów kodu lub łącza, edytując plik .dgml mapy i dodawanie `Reference` atrybutu `<Node/>` elementu dla elementu kodu lub `<Link/>` dla łącza. Następnie można otworzyć i wyświetlić tę zawartość z elementu kodu lub łącza. `Reference` Atrybut określa ścieżkę tej zawartości. Może to być ścieżka względem lokalizacji pliku .dgml lub ścieżka bezwzględna.  
   
 > [!CAUTION]
@@ -562,13 +562,13 @@ Aby dostosować mapę kodu, można edytować plik Directed Graph Markup Language
   
  Na przykład można połączyć następujące elementy kodu:  
   
--   Aby opisać zmiany w klasie, można połączyć element roboczy kodu, dokument lub inny plik .dgml adres URL do elementu kodu dla klasy.  
+- Aby opisać zmiany w klasie, można połączyć element roboczy kodu, dokument lub inny plik .dgml adres URL do elementu kodu dla klasy.  
   
--   Można połączyć diagram warstwy do elementu kodu grupy, który reprezentuje warstwę w logicznej architekturze oprogramowania.  
+- Można połączyć diagram warstwy do elementu kodu grupy, który reprezentuje warstwę w logicznej architekturze oprogramowania.  
   
--   Aby wyświetlić więcej informacji na temat składnika, który udostępnia interfejs, można połączyć diagram składników do elementu kodu dla tego interfejsu.  
+- Aby wyświetlić więcej informacji na temat składnika, który udostępnia interfejs, można połączyć diagram składników do elementu kodu dla tego interfejsu.  
   
--   Połącz element kodu do elementu pracy Team Foundation Server lub usterki lub inne informacje dotyczące elementu kodu.  
+- Połącz element kodu do elementu pracy Team Foundation Server lub usterki lub inne informacje dotyczące elementu kodu.  
   
 #### <a name="to-link-a-document-or-url-to-a-code-element"></a>Aby połączyć element kodu dokumentu lub adresu URL  
   
@@ -602,13 +602,13 @@ Aby dostosować mapę kodu, można edytować plik Directed Graph Markup Language
   
    2. W `<Properties>` sekcji:  
   
-      1.  Dodaj `<Property/>` elementu dla każdego nowego typu odwołania.  
+      1. Dodaj `<Property/>` elementu dla każdego nowego typu odwołania.  
   
-      2.  Ustaw `Id` atrybutu na nazwę nowego atrybutu odwołania.  
+      2. Ustaw `Id` atrybutu na nazwę nowego atrybutu odwołania.  
   
-      3.  Dodaj `IsReference` atrybutu i ustaw ją na `True` aby odwołanie pojawiało się w elemencie kod **przejdź do odwołania** menu skrótów.  
+      3. Dodaj `IsReference` atrybutu i ustaw ją na `True` aby odwołanie pojawiało się w elemencie kod **przejdź do odwołania** menu skrótów.  
   
-      4.  Użyj `Label` atrybutu, aby określić tekst wyświetlany w elemencie kod **przejdź do odwołania** menu skrótów.  
+      4. Użyj `Label` atrybutu, aby określić tekst wyświetlany w elemencie kod **przejdź do odwołania** menu skrótów.  
   
       Na przykład:  
   

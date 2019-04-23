@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 20bfe541204d302699c37129f95476fb43541797
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e27892859dd58add2f505fa04e21faac5576a80b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752788"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088759"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Wdrażanie niestandardowych zasad ewidencjonowania analizy kodu dla kodu zarządzanego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,52 +39,52 @@ Analiza kodu, że zasady ewidencjonowania określa zestaw reguł, które członk
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Aby utworzyć folder kontroli wersji dla zestawu reguł zasad ewidencjonowania  
   
-1.  W [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], rozwiń węzeł projektu zespołu, a następnie kliknij **kontroli źródła**.  
+1. W [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], rozwiń węzeł projektu zespołu, a następnie kliknij **kontroli źródła**.  
   
-2.  W **folderów** okienku kliknij prawym przyciskiem myszy projekt zespołowy, a następnie kliknij przycisk **nowy Folder**.  
+2. W **folderów** okienku kliknij prawym przyciskiem myszy projekt zespołowy, a następnie kliknij przycisk **nowy Folder**.  
   
-3.  W okienku głównym kontroli źródła, kliknij prawym przyciskiem myszy **nowy Folder**, kliknij przycisk **Zmień nazwę**, a następnie wpisz nazwę dla folderu zestawu reguł.  
+3. W okienku głównym kontroli źródła, kliknij prawym przyciskiem myszy **nowy Folder**, kliknij przycisk **Zmień nazwę**, a następnie wpisz nazwę dla folderu zestawu reguł.  
   
 #### <a name="to-create-the-check-in-policy-rule-set"></a>Aby utworzyć zestaw reguł zasad ewidencjonowania  
   
-1.  Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **pliku**.  
+1. Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **pliku**.  
   
-2.  W **kategorie** kliknij **ogólne**.  
+2. W **kategorie** kliknij **ogólne**.  
   
-3.  W **szablony** listy, kliknij dwukrotnie **zestawu reguł analizy kodu**.  
+3. W **szablony** listy, kliknij dwukrotnie **zestawu reguł analizy kodu**.  
   
-4.  Określ reguły do uwzględnienia w zestawie reguł, a następnie zapisz plik zestawu reguł do folderu zestawu reguł, który został utworzony.  
+4. Określ reguły do uwzględnienia w zestawie reguł, a następnie zapisz plik zestawu reguł do folderu zestawu reguł, który został utworzony.  
   
      Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych zestawów reguł](../code-quality/creating-custom-code-analysis-rule-sets.md)  
   
 #### <a name="to-add-the-rule-set-file-to-version-control"></a>Można dodać reguły zestawu plików do kontroli wersji  
   
-1.  W **Eksploratora kontroli źródła**, kliknij prawym przyciskiem myszy nowy folder, a następnie kliknij przycisk **Dodaj elementy do folderu**.  
+1. W **Eksploratora kontroli źródła**, kliknij prawym przyciskiem myszy nowy folder, a następnie kliknij przycisk **Dodaj elementy do folderu**.  
   
      Aby uzyskać więcej informacji, zobacz [korzystanie z kontroli wersji](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
   
-2.  Kliknij plik, który został utworzony zestaw reguł, a następnie kliknij **Zakończ**.  
+2. Kliknij plik, który został utworzony zestaw reguł, a następnie kliknij **Zakończ**.  
   
      Plik zostanie dodany do kontroli źródła i wyewidencjonowany dla Ciebie.  
   
-3.  W **Eksploratora kontroli źródła** okno Szczegóły, kliknij prawym przyciskiem myszy nazwę pliku, a następnie kliknij przycisk **Zaewidencjonuj oczekujące zmiany**.  
+3. W **Eksploratora kontroli źródła** okno Szczegóły, kliknij prawym przyciskiem myszy nazwę pliku, a następnie kliknij przycisk **Zaewidencjonuj oczekujące zmiany**.  
   
-4.  W **ewidencjonowania** okno dialogowe, masz opcję, aby dodać komentarz, a następnie kliknij przycisk **Zaewidencjonuj**.  
+4. W **ewidencjonowania** okno dialogowe, masz opcję, aby dodać komentarz, a następnie kliknij przycisk **Zaewidencjonuj**.  
   
     > [!NOTE]
     >  Jeśli zasady analizy kodu ewidencjonowania została już skonfigurowana dla projektu zespołowego i po wybraniu **wymusić zaewidencjonowanie obejmowało tylko pliki, które są częścią bieżącego rozwiązania**, spowoduje wyzwolenie ostrzeżenie o niepowodzeniu zasady. W oknie dialogowym błędu zasad, wybierz **Przesłoń błąd zasad i Kontynuuj ewidencjonowanie**. Dodaj wymagane komentarz, a następnie kliknij przycisk **OK**.  
   
 #### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>Aby określić regułę Ustaw plik jako zasady ewidencjonowania  
   
-1.  Na **zespołu** menu wskaż **ustawienia projektu zespołowego**, a następnie kliknij przycisk **kontroli źródła**.  
+1. Na **zespołu** menu wskaż **ustawienia projektu zespołowego**, a następnie kliknij przycisk **kontroli źródła**.  
   
-2.  Kliknij przycisk **zasad ewidencjonowania**, a następnie kliknij przycisk **Dodaj**.  
+2. Kliknij przycisk **zasad ewidencjonowania**, a następnie kliknij przycisk **Dodaj**.  
   
-3.  W **zasad ewidencjonowania** listy, kliknij dwukrotnie **analizy kodu**i upewnij się, że **wymusić analizy kodu dla zarządzanego kodu** pole wyboru jest zaznaczone.  
+3. W **zasad ewidencjonowania** listy, kliknij dwukrotnie **analizy kodu**i upewnij się, że **wymusić analizy kodu dla zarządzanego kodu** pole wyboru jest zaznaczone.  
   
-4.  W **Uruchom ten zestaw reguł** kliknij  **\<z kontroli źródła wybierz zestaw reguł >**.  
+4. W **Uruchom ten zestaw reguł** kliknij  **\<z kontroli źródła wybierz zestaw reguł >**.  
   
-5.  Wpisz ścieżkę pliku zestawu reguł zasad zaewidencjonowania w kontroli wersji.  
+5. Wpisz ścieżkę pliku zestawu reguł zasad zaewidencjonowania w kontroli wersji.  
   
      Ścieżka musi być zgodna z następującej składni:  
   
@@ -93,29 +93,29 @@ Analiza kodu, że zasady ewidencjonowania określa zestaw reguł, które członk
     > [!NOTE]
     >  Możesz skopiować ścieżkę przy użyciu jednej z poniższych procedur w programie **Eksploratora kontroli źródła**:  
   
-    -   W **folderów** okienku, kliknij folder zawierający plik zestawu reguł. Kopiuj ścieżkę kontroli wersji, folderu, który pojawia się w **źródła** polu, a następnie wpisz nazwę pliku zestawu reguł ręcznie.  
+    - W **folderów** okienku, kliknij folder zawierający plik zestawu reguł. Kopiuj ścieżkę kontroli wersji, folderu, który pojawia się w **źródła** polu, a następnie wpisz nazwę pliku zestawu reguł ręcznie.  
   
-    -   W okienku szczegółów kliknij prawym przyciskiem myszy pliku zestawu reguł, a następnie kliknij przycisk **właściwości**. Na **ogólne** kartę, skopiuj wartość w **nazwy serwera**.  
+    - W okienku szczegółów kliknij prawym przyciskiem myszy pliku zestawu reguł, a następnie kliknij przycisk **właściwości**. Na **ogólne** kartę, skopiuj wartość w **nazwy serwera**.  
   
 ## <a name="synchronizing-code-projects-to-the-check-in-policy-rule-set"></a>Synchronizowanie projekty kodu zestawu reguł zasad ewidencjonowania  
  Należy określić regułę zasad ewidencjonowania projektu zespołowego jest ustawiony jako zestaw reguł analizy kodu w konfiguracji projektu kodu w oknie dialogowym właściwości projektu kodu. Jeśli zestaw reguł znajduje się na tym samym dysku, projekt kodu, ścieżka względna jest używana do określania zestawu reguł, gdy ścieżka jest zaznaczona w oknie dialogowym pliku. Ścieżka względna umożliwia ustawienia właściwości projektu, który będzie działał w innych komputerów, które używają podobnych lokalnej wersji kontrolowanie struktury.  
   
 #### <a name="to-specify-a-team-project-rule-set-as-the-rule-set-of-a-code-project"></a>Aby określić regułę projektu zespołowego należy ustawić jako zestaw reguł projektu kodu  
   
-1.  Jeśli to konieczne, należy pobrać folderu zestawu reguł zasad ewidencjonowania i plików z kontroli wersji.  
+1. Jeśli to konieczne, należy pobrać folderu zestawu reguł zasad ewidencjonowania i plików z kontroli wersji.  
   
      Można wykonać tego kroku w **Eksploratora kontroli źródła** przez kliknięcie prawym przyciskiem myszy folder, a następnie klikając polecenie zestawu reguł **Pobierz najnowszą wersję**.  
   
-2.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt kodu, a następnie kliknij przycisk **właściwości**.  
+2. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt kodu, a następnie kliknij przycisk **właściwości**.  
   
-3.  **Kliknij przycisk Analiza kodu**.  
+3. **Kliknij przycisk Analiza kodu**.  
   
-4.  Jeśli to konieczne, kliknij odpowiednie opcje w **konfiguracji** i **platformy** listy.  
+4. Jeśli to konieczne, kliknij odpowiednie opcje w **konfiguracji** i **platformy** listy.  
   
-5.  Aby uruchomić analizę kodu, ilekroć dany projekt kodu został skompilowany przy użyciu określonej konfiguracji, zaznacz **Włącz analizę kodu podczas kompilacji (definiuje stałą CODE_ANALYSIS)** pole wyboru.  
+5. Aby uruchomić analizę kodu, ilekroć dany projekt kodu został skompilowany przy użyciu określonej konfiguracji, zaznacz **Włącz analizę kodu podczas kompilacji (definiuje stałą CODE_ANALYSIS)** pole wyboru.  
   
-6.  Ignorowanie kodu w składników innych firm, wybierz **Pomijaj wyniki z wygenerowanego kodu** pole wyboru.  
+6. Ignorowanie kodu w składników innych firm, wybierz **Pomijaj wyniki z wygenerowanego kodu** pole wyboru.  
   
-7.  W **Uruchom ten zestaw reguł** kliknij  **\<Przeglądaj … >**.  
+7. W **Uruchom ten zestaw reguł** kliknij  **\<Przeglądaj … >**.  
   
-8.  Określ lokalną wersję pliku zestawu reguł zasad ewidencjonowania.
+8. Określ lokalną wersję pliku zestawu reguł zasad ewidencjonowania.

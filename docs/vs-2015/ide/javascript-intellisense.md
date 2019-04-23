@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b96ceed46b9411e128a34861fbd06fd53817a18a
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: af1484bef2baadf961eb00c952a50abec5c4a9f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194460"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066588"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,40 +62,40 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
 
   Aby uzyskać więcej informacji na temat funkcji IntelliSense [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], zobacz [za pomocą funkcji IntelliSense](../ide/using-intellisense.md).
 
-##  <a name="DeterminingIntelliSenseContext"></a> Określanie kontekstu IntelliSense
+## <a name="DeterminingIntelliSenseContext"></a> Określanie kontekstu IntelliSense
  Technologia JavaScript IntelliSense zawiera opcje kodowania w zależności od całego skryptu, który odnosi się do bieżącego kontekstu skryptu. Obejmuje to elementy skryptu w bieżącym pliku. Obejmuje to również wszelki kod, który jest wywoływany bezpośrednio lub pośrednio ze skryptu, takie jak odwołania do pliku skryptu, odwołania do zestawów skryptów, odwołania do usługi i odwołania do strony skojarzonej.
 
  Bieżący kontekst skryptu jest utworzony w oparciu o następujące elementy:
 
--   Funkcje, które są zdefiniowane we wszystkich blokach skryptu w aktywnym dokumencie. Wbudowane bloki skryptu są obsługiwane w plikach, które mają rozszerzenia nazwy pliku aspx., ascx, .master, .html i .htm.
+- Funkcje, które są zdefiniowane we wszystkich blokach skryptu w aktywnym dokumencie. Wbudowane bloki skryptu są obsługiwane w plikach, które mają rozszerzenia nazwy pliku aspx., ascx, .master, .html i .htm.
 
--   `script` elementy z `src` atrybuty, które wskazują do innego pliku skryptu. Docelowy plik skryptu musi mieć rozszerzenie nazwy pliku js.
+- `script` elementy z `src` atrybuty, które wskazują do innego pliku skryptu. Docelowy plik skryptu musi mieć rozszerzenie nazwy pliku js.
 
--   Pliki JavaScript, które odwołują się inne pliki JavaScript za pomocą `reference` dyrektywy.
+- Pliki JavaScript, które odwołują się inne pliki JavaScript za pomocą `reference` dyrektywy.
 
--   Grupy odniesienia dla obiektów globalnych, rozszerzenia IntelliSense lub pliki skryptów ładowane z opóźnieniem.
+- Grupy odniesienia dla obiektów globalnych, rozszerzenia IntelliSense lub pliki skryptów ładowane z opóźnieniem.
 
--   Odwołania do usług XML sieci Web.
+- Odwołania do usług XML sieci Web.
 
--   <xref:System.Web.UI.ScriptManager> i <xref:System.Web.UI.ScriptManagerProxy> kontrolki, jeśli aplikacja sieci Web jest aplikacją ASP.NET z włączoną obsługą technologii AJAX.
+- <xref:System.Web.UI.ScriptManager> i <xref:System.Web.UI.ScriptManagerProxy> kontrolki, jeśli aplikacja sieci Web jest aplikacją ASP.NET z włączoną obsługą technologii AJAX.
 
--   [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)], Jeśli pracujesz w aplikacji internetowej ASP.NET z włączoną obsługą technologii AJAX.
+- [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)], Jeśli pracujesz w aplikacji internetowej ASP.NET z włączoną obsługą technologii AJAX.
 
     > [!NOTE]
     >  Funkcja IntelliSense nie jest obsługiwana dla skryptu w atrybutach programu obsługi zdarzeń dla elementów HTML, lub który jest zdefiniowany w `href` atrybutów.
 
-##  <a name="ProcessingIntelliSenseInformation"></a> Przetwarzanie informacji IntelliSense
+## <a name="ProcessingIntelliSenseInformation"></a> Przetwarzanie informacji IntelliSense
  Aby zapewnić JavaScript IntelliSense, usługa językowa wykonuje następujące operacje:
 
--   Tworzy listę plików zależnych JavaScript, które są oparte na odwołaniach w aktywnym dokumencie i oparte na rekursywnym rozpatrywaniu odwołań skryptu w plikach odwołania.
+- Tworzy listę plików zależnych JavaScript, które są oparte na odwołaniach w aktywnym dokumencie i oparte na rekursywnym rozpatrywaniu odwołań skryptu w plikach odwołania.
 
--   Przechodzi przez listę i gromadzi informacje o typie oraz inne odpowiednie dane z każdego pliku.
+- Przechodzi przez listę i gromadzi informacje o typie oraz inne odpowiednie dane z każdego pliku.
 
--   Agreguje dane i przekazuje je do usługi języka JavaScript, która udostępnia informacje o typie i danych technologii IntelliSense.
+- Agreguje dane i przekazuje je do usługi języka JavaScript, która udostępnia informacje o typie i danych technologii IntelliSense.
 
--   Monitoruje pliki pod kątem zmian, które mogą mieć wpływ na listę IntelliSense i aktualizuje listę, stosownie do potrzeb. Skrypty w lokalizacjach zdalnych (do których kod odwołuje się na przykład za pomocą protokołu HTTP) nie są monitorowane.
+- Monitoruje pliki pod kątem zmian, które mogą mieć wpływ na listę IntelliSense i aktualizuje listę, stosownie do potrzeb. Skrypty w lokalizacjach zdalnych (do których kod odwołuje się na przykład za pomocą protokołu HTTP) nie są monitorowane.
 
-##  <a name="Features"></a> Funkcje JavaScript IntelliSense
+## <a name="Features"></a> Funkcje JavaScript IntelliSense
  Technologia JavaScript IntelliSense obsługuje następujące obiekty:
 
 - [Elementy Object Model (DOM) dokumentu](#HTMLDom)
@@ -118,21 +118,21 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
 
   Gdy IntelliSense nie jest w stanie określić typu obiektu, udostępnia opcje uzupełniania instrukcji przy użyciu identyfikatorów w aktywnym dokumencie. Aby uzyskać więcej informacji, zobacz [uzupełnianie składni dla identyfikatorów](../ide/statement-completion-for-identifiers.md).
 
-###  <a name="HTMLDom"></a> Elementy DOM HTML
+### <a name="HTMLDom"></a> Elementy DOM HTML
  Technologia JavaScript IntelliSense zawiera odwołania programistyczne dla elementów DOM Dynamic HTML (DHTML), takie jak `body`, `form`, i `div`. Tylko elementy, które są zawarte w bieżącym dokumencie i na stronie głównej, są wyświetlane przez technologię IntelliSense. JavaScript IntelliSense obsługuje również `window` i `document` obiektów i ich elementów członkowskich.
 
-###  <a name="IntrinsicObjects"></a> Obiekty wewnętrzne
+### <a name="IntrinsicObjects"></a> Obiekty wewnętrzne
  Technologia JavaScript IntelliSense zawiera odwołania programistyczne dla obiektów wewnętrznych takich jak `Array`, `String`, `Math`, `Date`, i `Number`. Aby uzyskać więcej informacji o obiektach wewnętrznych, zobacz [standardowe wbudowane obiekty](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects).
 
-###  <a name="UserDefined"></a> Zmienne zdefiniowane przez użytkownika, funkcje i obiekty
+### <a name="UserDefined"></a> Zmienne zdefiniowane przez użytkownika, funkcje i obiekty
  Po zmianie pliku JavaScript, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] skanuje otwarte i odnośne dokumenty, aby określić wszystkie dostępne zasoby kodu. Obejmuje to zmienne, funkcje i obiekty, które zostały utworzone. Te zasoby będą dostępne dla JavaScript IntelliSense.
 
  Aby uzyskać więcej informacji na temat zmiennych zdefiniowanych przez użytkownika, funkcje i obiekty, zobacz [tworzenie własnych obiektów](http://go.microsoft.com/fwlink/?LinkId=108671) w witrynie MSDN.
 
-###  <a name="External"></a> Odwołania do pliku zewnętrznego
+### <a name="External"></a> Odwołania do pliku zewnętrznego
  Mogą zawierać różne typy odwołań do zewnętrznego pliku, aby uzyskać obsługę IntelliSense w kodzie. Odwołania do zewnętrznego pliku mogą być odwołaniami do skryptu, dyrektywami odwołań lub mogą być określone za pomocą grup odwołań.
 
-####  <a name="Script"></a> Odwołania do skryptu
+#### <a name="Script"></a> Odwołania do skryptu
  Zamiast pisania całości skryptu klienckiego na stronie, można utworzyć zewnętrzne pliki odwołań, które zawierają kod skryptów. Ułatwia to ponowne użycie kodu przez różne strony oraz umożliwia buforowanie skryptu klienckiego przez przeglądarkę.
 
  Jeśli nie pracujesz na stronie sieci Web z włączoną obsługą technologii AJAX programu ASP.NET, można się odwołać do zewnętrznego pliku skryptu za pomocą `src` atrybutów w znaczniku otwierającym elementu `script` elementu. `src` Atrybut określa adres URL do zewnętrznego pliku, który zawiera kod źródłowy lub dane.
@@ -159,7 +159,7 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
 
  Technologia IntelliSense obsługuje również pliki skryptów, które są osadzane jako zasoby w zestawie w aplikacjach internetowych ASP.NET AJAX. Aby uzyskać więcej informacji na temat zasobów osadzonych skryptów, zobacz [instruktażu: Embedding a JavaScript File jako zasób w zestawie](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
 
-####  <a name="ReferenceDirectives"></a> Dyrektywy odwoławcze
+#### <a name="ReferenceDirectives"></a> Dyrektywy odwoławcze
  A `reference` włącza dyrektywą [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] do ustanawiania relacji między skryptu aktualnie edytowanym i innymi skryptami. `reference` Dyrektywy pozwala umieścić plik skryptu w kontekście skryptów bieżącego pliku skryptu. Dzięki temu IntelliSense może się odnosić do zewnętrznie zdefiniowanych funkcji, typów i pól w trakcie kodowania.
 
  Możesz utworzyć `reference` dyrektywy w formie komentarza XML. Dyrektywa musi być zadeklarowana w pliku wcześniej niż dowolny skrypt. A `reference` dyrektywy może zawierać odwołanie do skryptu opartego na dysku, odwołanie do skryptu opartego na zestawie, odwołanie do skryptu opartego na usługi lub odwołanie do skryptu opartego na stronie.
@@ -203,23 +203,23 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
 
  Następujące reguły mają zastosowanie do `reference` dyrektywy.
 
--   `reference` Komentarza XML musi być zadeklarowany przed jakimkolwiek skryptem.
+- `reference` Komentarza XML musi być zadeklarowany przed jakimkolwiek skryptem.
 
--   Należy użyć składni komentarzy XML z trzema ukośnikami. Odniesienia przy użyciu składni standardowych komentarzy (dwa ukośniki) są ignorowane.
+- Należy użyć składni komentarzy XML z trzema ukośnikami. Odniesienia przy użyciu składni standardowych komentarzy (dwa ukośniki) są ignorowane.
 
--   Można określić tylko jeden plik lub zasób dla każdej dyrektywy.
+- Można określić tylko jeden plik lub zasób dla każdej dyrektywy.
 
--   Wiele odwołań do skryptów opartych na stronie nie jest dozwolone.
+- Wiele odwołań do skryptów opartych na stronie nie jest dozwolone.
 
--   Jeśli jest określone odwołanie oparte na stronie, nie są dozwolone inne typy dyrektyw odwołania.
+- Jeśli jest określone odwołanie oparte na stronie, nie są dozwolone inne typy dyrektyw odwołania.
 
--   Nazwy plików używają ścieżek względnych. Można używać operatora tyldy (`~`) umożliwiają ścieżki względem katalogu głównego aplikacji.
+- Nazwy plików używają ścieżek względnych. Można używać operatora tyldy (`~`) umożliwiają ścieżki względem katalogu głównego aplikacji.
 
--   Ścieżki bezwzględne są ignorowane.
+- Ścieżki bezwzględne są ignorowane.
 
--   Dyrektywy odwołania na stronach odwołania nie będą przetwarzane — to znaczy, że dyrektywy odwołania nie są rekursywnie rozwiązywane dla stron. Uwzględniany jest tylko skrypt wywoływany bezpośrednio przez stronę.
+- Dyrektywy odwołania na stronach odwołania nie będą przetwarzane — to znaczy, że dyrektywy odwołania nie są rekursywnie rozwiązywane dla stron. Uwzględniany jest tylko skrypt wywoływany bezpośrednio przez stronę.
 
-####  <a name="ReferenceGroups"></a> Grupy odwołań
+#### <a name="ReferenceGroups"></a> Grupy odwołań
  Można używać wstępnie zdefiniowanych grup odwołań w celu określania, że konkretne pliki .js IntelliSense znajdują się w zakresie dla różnych projektów JavaScript. Dostępne są następujące typy grup odwołań:
 
 - Niejawna (Windows), aby uzyskać [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacji przy użyciu języka JavaScript. Pliki dołączone do tej grupy są w zakresie dla każdego pliku .js otwartego w Edytorze kodu dla projektu określonego typu.
@@ -246,7 +246,7 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
 > [!WARNING]
 >  Jeśli włączysz tę funkcję i obserwujesz mniejszą wydajność w Edytorze kodu, zalecamy jej wyłączenie.
 
-###  <a name="XMLDocComments"></a> Komentarze dokumentacji XML
+### <a name="XMLDocComments"></a> Komentarze dokumentacji XML
  Komentarze dokumentacji XML to opisy tekstowe elementów kodu, które można dodać do skryptu. Te opisy tekstowe są wyświetlane w IntelliSense podczas tworzenia odwołania do komentowanego skryptu. Na przykład można dostarczyć informacji na temat parametrów funkcji i wartości zwracanej. Komentarze dokumentacji XML są dostępne tylko z odnośnych plików, zestawów i usług. Aby uzyskać więcej informacji, zobacz [komentarze dokumentacji XML](../ide/xml-documentation-comments-javascript.md) i [tworzyć komentarze dokumentacji XML](../ide/create-xml-documentation-comments-for-javascript-intellisense.md).
 
  Technologia IntelliSense można wyświetlić komentarze dokumentacji XML w następujących scenariuszach:
@@ -259,23 +259,23 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
 
   Technologia IntelliSense nie jest dostępna, gdy jeden plik .aspx odwołuje się do innego pliku aspx.
 
-###  <a name="ASPNet"></a> ASP.NET AJAX Objects
+### <a name="ASPNet"></a> ASP.NET AJAX Objects
  ASP.NET AJAX również obsługuje technologię JavaScript IntelliSense. ASP.NET AJAX obejmuje strukturę klienta, która rozszerza standardowe typy, które są dostępne w języku ECMAScript (JavaScript). Aby umożliwić technologii JavaScript IntelliSense dostarczanie szczegółowych informacji o obiektach ASP.NET AJAX, komentarze dokumentacji XML zostały dodane w całej [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)]. Te komentarze dokumentacji XML są wyświetlane podczas korzystania z typów i elementów członkowskich, które są zawarte w bibliotece programu ASP.NET AJAX.
 
 > [!NOTE]
 >  Prywatne elementy członkowskie nie są wyświetlane przez JavaScript IntelliSense. Prywatne elementy członkowskie są oznaczone w technologii ASP.NET AJAX jako elementy członkowskie, które rozpoczynają się od znaku podkreślenia (_).
 
-##  <a name="Extensibility"></a> Rozszerzalność JavaScript IntelliSense
+## <a name="Extensibility"></a> Rozszerzalność JavaScript IntelliSense
  Usługa języka JavaScript zawiera obiekty i funkcje, które umożliwiają modyfikowanie doświadczenia IntelliSense dla programistów, którzy korzystają z bibliotek innych firm. Funkcje te są szczególnie przydatne, gdy usługa języka domyślnego nie jest w stanie dostarczyć wszystkich informacji, które chcesz dostarczać klientom. Aby uzyskać więcej informacji, zobacz [rozszerzanie JavaScript IntelliSense](../ide/extending-javascript-intellisense.md).
 
-##  <a name="Validation"></a> Sprawdzanie poprawności języka JavaScript
+## <a name="Validation"></a> Sprawdzanie poprawności języka JavaScript
  Sprawdzanie poprawności skryptów JavaScript jest nieprzerwanie wykonywane w tle. Gdy [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] wykrywa błędy składni w kodzie JavaScript, informacje są przekazywane w następujący sposób:
 
--   Podkreślone elementy w edytorze. Czerwone faliste linie wskazują błędy. Jeśli przytrzymasz wskaźnik myszy nad błędem, wyświetla się etykieta zawierająca opis błędu.
+- Podkreślone elementy w edytorze. Czerwone faliste linie wskazują błędy. Jeśli przytrzymasz wskaźnik myszy nad błędem, wyświetla się etykieta zawierająca opis błędu.
 
--   **Lista błędów** okna. **Lista błędów** okno wyświetla opis błędu, plik, w którym wystąpił błąd, numer wiersza i kolumny i projektu. Do wyświetlenia **lista błędów** okna w **widoku** menu, kliknij przycisk **lista błędów**.
+- **Lista błędów** okna. **Lista błędów** okno wyświetla opis błędu, plik, w którym wystąpił błąd, numer wiersza i kolumny i projektu. Do wyświetlenia **lista błędów** okna w **widoku** menu, kliknij przycisk **lista błędów**.
 
--   W oknie Dane wyjściowe wyświetlane odwołania, które nie zostały załadowane.
+- W oknie Dane wyjściowe wyświetlane odwołania, które nie zostały załadowane.
 
 ## <a name="see-also"></a>Zobacz też
 - [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)

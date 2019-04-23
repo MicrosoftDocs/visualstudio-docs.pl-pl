@@ -15,12 +15,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 29c0a8f3eca5d6da2c86a1881e943754ad1ba087
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8b286a67b21d022b12f77ffff68a71da88256757
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762822"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095779"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Zestawy powinny mieć prawidłowe silne nazwy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ ms.locfileid: "54762822"
 
    **Aby podpisać zestaw silną nazwą poza programem Visual Studio**
 
--   Użyj narzędzie silnych nazw (Sn.exe), które są dostarczane przez [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] zestawu SDK. Aby uzyskać więcej informacji, zobacz [Sn.exe (narzędzie silnych nazw)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).
+- Użyj narzędzie silnych nazw (Sn.exe), które są dostarczane przez [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] zestawu SDK. Aby uzyskać więcej informacji, zobacz [Sn.exe (narzędzie silnych nazw)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Tylko Pomijaj ostrzeżeń dla tej reguły, jeśli zestaw jest używany w środowisku, w których naruszeniu zawartość nie jest wymagana.

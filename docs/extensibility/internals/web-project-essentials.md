@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 234b2958fd3a5a533e881fc2589c275893326814
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1cfd7c6c8543537f88bdf033068d2ae62c7a634a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603004"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071334"
 ---
 # <a name="web-project-essentials"></a>Podstawowe informacje dotyczące projektów internetowych
 Projekty sieci Web tworzyć aplikacje sieci Web. Projekt sieci Web można użyć, aby utworzyć aplikację internetową, która ma inteligentne strony sieci Web. Inteligentne strony sieci Web zawiera kod po stronie serwera, który renderuje stronę sieci Web na żądanie.
@@ -28,9 +28,9 @@ Projekty sieci Web tworzyć aplikacje sieci Web. Projekt sieci Web można użyć
 
 - Pliki kodu dodatkowe źródła, takich jak klasy pomocnika, które nie są skojarzone z określonej strony sieci Web znajdują się w folderze /App_Code witryny sieci Web.
 
-  -   Projekt witryny sieci Web (WSP) generuje jednego pliku wykonywalnego, dla każdej inteligentne strony sieci Web. Dodatkowe pliki wykonywalne są generowane na podstawie żadnych plików kodu źródłowego w folderze /App_Code.
+  - Projekt witryny sieci Web (WSP) generuje jednego pliku wykonywalnego, dla każdej inteligentne strony sieci Web. Dodatkowe pliki wykonywalne są generowane na podstawie żadnych plików kodu źródłowego w folderze /App_Code.
 
-  -   Projekt aplikacji sieci Web (WAP) tworzy jednej plik wykonywalny, który łączy kod dla wszystkich stron sieci Web inteligentnego, a także wszystkich plików źródłowych z folderu /App_Code.
+  - Projekt aplikacji sieci Web (WAP) tworzy jednej plik wykonywalny, który łączy kod dla wszystkich stron sieci Web inteligentnego, a także wszystkich plików źródłowych z folderu /App_Code.
 
 - Niezależnie od w witrynie sieci Web znajduje się plik rozwiązania dla projektu sieci Web. Domyślnie pliki rozwiązania znajdują się w \Documents and Settings\\*Twojekonto*\My dokumenty\\*\<programu Visual Studio ### >* \Projects\\ *YourWebSite*.
 
@@ -53,9 +53,9 @@ Projekty sieci Web tworzyć aplikacje sieci Web. Projekt sieci Web można użyć
 
 - Inteligentne strony sieci Web łączy HTML w języku programowania po stronie serwera. Język po stronie serwera jest nazywany językowych zawarte. Aby umożliwić obsługę ograniczonego języka, system projektu sieci Web musi implementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> rodziny interfejsów.
 
-  -   Aby zapewnić obsługę języka zawartych w edytorze, usługa języka HTML musi Odrocz wyświetlające kod języka zawartej z usługą językowych zawarte.
+  - Aby zapewnić obsługę języka zawartych w edytorze, usługa języka HTML musi Odrocz wyświetlające kod języka zawartej z usługą językowych zawarte.
 
-  -   Znaczniki błędów (czerwony squigglies) zawsze powinny być tworzone w edytorze kodu podstawowego buforu.
+  - Znaczniki błędów (czerwony squigglies) zawsze powinny być tworzone w edytorze kodu podstawowego buforu.
 
 ## <a name="see-also"></a>Zobacz też
 - [Projekty internetowe](../../extensibility/internals/web-projects.md)

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 04f4fff68720b456ac8ac2b8e121d9194019060c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 957805caa946dced54d52f1aa6b4a7f96e75b31a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633112"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091086"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Architektura dodatków narzędzi VSTO
   Dodatków narzędzi VSTO utworzony przy użyciu narzędzi Office developer tools w programie Visual Studio oferuje funkcje architektury, które podkreślić stabilność i bezpieczeństwo i umożliwia im ściśle współpracować z programem Microsoft Office. W tym temacie opisano następujące aspekty dodatków narzędzi VSTO dla programów:
@@ -36,7 +36,7 @@ ms.locfileid: "56633112"
 
   Aby uzyskać ogólne informacje o tworzeniu dodatków narzędzi VSTO dla programów, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) i [wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md).
 
-##  <a name="UnderstandingAddIns"></a> Omówienie dodatków narzędzi VSTO
+## <a name="UnderstandingAddIns"></a> Omówienie dodatków narzędzi VSTO
  Korzystając z narzędzia Office developer tools w programie Visual Studio do tworzenia dodatku narzędzi VSTO dla programów, możesz utworzyć zestawu kodu zarządzanego, który jest ładowany przez aplikacji pakietu Microsoft Office. Po załadowaniu zestawu dodatku narzędzi VSTO mogą reagować na zdarzenia, które są wywoływane w aplikacji (na przykład, gdy użytkownik kliknie element menu). Dodatek narzędzi VSTO dla programów można również wywołać modelu obiektów automatyzacji i rozszerzania aplikacji i może używać dowolnej klasy w [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].
 
  Zestaw komunikuje się ze składnikami modelu COM. aplikacji za pomocą podstawowego zestawu międzyoperacyjnego aplikacji. Aby uzyskać więcej informacji, zobacz [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md) i [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -46,7 +46,7 @@ ms.locfileid: "56633112"
 > [!NOTE]
 >  Dodatków narzędzi VSTO, które tworzysz przy użyciu narzędzi Office developer tools w programie Visual Studio są przeznaczone do użycia tylko wtedy, gdy host aplikacji Microsoft Office jest uruchamiana przez użytkownika końcowego. Jeśli aplikacja jest uruchamiana programowo (na przykład za pomocą automatyzacji), dodatku narzędzi VSTO mogą nie działać zgodnie z oczekiwaniami.
 
-##  <a name="AddinComponents"></a> Składniki dodatków narzędzi VSTO
+## <a name="AddinComponents"></a> Składniki dodatków narzędzi VSTO
  Mimo że zestaw dodatku narzędzi VSTO dla programów główny składnik, jest wiele składników, które odgrywa ważną rolę w jaki sposób aplikacje Microsoft Office wykrycie i załadowanie dodatków narzędzi VSTO.
 
 ### <a name="registry-entries"></a>Wpisy rejestru
@@ -64,7 +64,7 @@ ms.locfileid: "56633112"
 
  Aby uzyskać więcej informacji, zobacz [Visual Studio Tools dla pakietu Office runtime ― omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
-##  <a name="HowAddinsWork"></a> Jak działają dodatków narzędzi VSTO za pomocą aplikacji Microsoft Office
+## <a name="HowAddinsWork"></a> Jak działają dodatków narzędzi VSTO za pomocą aplikacji Microsoft Office
  Gdy użytkownik uruchamia aplikację Microsoft Office, aplikacja używa pliku manifestu wdrożenia i manifest aplikacji do lokalizowania i ładowania najbardziej aktualną wersję zestawu dodatku narzędzi VSTO. Na poniższej ilustracji przedstawiono architekturę podstawowe tych dodatków narzędzi VSTO dla programów.
 
  ![Architektura dodatków pakietu office 2007](../vsto/media/office07addin.png "architektura dodatku pakietu Office 2007")
@@ -75,21 +75,21 @@ ms.locfileid: "56633112"
 ### <a name="loading-process"></a>Proces ładowania
  Gdy użytkownik uruchamia aplikację, wykonywane są następujące kroki:
 
-1.  Aplikacja sprawdza się w rejestrze wpisy, które identyfikują dodatków narzędzi VSTO dla programów, które zostały utworzone przy użyciu narzędzi Office developer tools w programie Visual Studio.
+1. Aplikacja sprawdza się w rejestrze wpisy, które identyfikują dodatków narzędzi VSTO dla programów, które zostały utworzone przy użyciu narzędzi Office developer tools w programie Visual Studio.
 
-2.  Jeśli aplikacja wykryje te wpisy rejestru, biblioteka VSTOEE.dll, która ładuje VSTOLoader.dll ładowania aplikacji. Są to niezarządzanych bibliotek DLL, które są składnikami programu ładującego dla Visual Studio 2010 Tools for Office Runtime. Aby uzyskać więcej informacji, zobacz [Visual Studio Tools dla pakietu Office runtime ― omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+2. Jeśli aplikacja wykryje te wpisy rejestru, biblioteka VSTOEE.dll, która ładuje VSTOLoader.dll ładowania aplikacji. Są to niezarządzanych bibliotek DLL, które są składnikami programu ładującego dla Visual Studio 2010 Tools for Office Runtime. Aby uzyskać więcej informacji, zobacz [Visual Studio Tools dla pakietu Office runtime ― omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
-3.  *VSTOLoader.dll* ładuje [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] i uruchomienie zarządzanego część [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+3. *VSTOLoader.dll* ładuje [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] i uruchomienie zarządzanego część [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
-4.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Sprawdza dostępność aktualizacji manifestu i pobiera najnowsze manifestów aplikacji i wdrożenia.
+4. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Sprawdza dostępność aktualizacji manifestu i pobiera najnowsze manifestów aplikacji i wdrożenia.
 
-5.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Wykonuje szereg kontroli zabezpieczeń. Aby uzyskać więcej informacji, zobacz [rozwiązań Secure Office](../vsto/securing-office-solutions.md).
+5. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Wykonuje szereg kontroli zabezpieczeń. Aby uzyskać więcej informacji, zobacz [rozwiązań Secure Office](../vsto/securing-office-solutions.md).
 
-6.  Jeśli dodatek narzędzi VSTO dla programów jest zaufane do uruchamiania, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] używa manifest wdrożenia i manifest aplikacji, aby sprawdzać dostępność aktualizacji zestawu. Jeśli dostępna jest nowa wersja zestawu, środowisko uruchomieniowe pobiera nową wersję zestawu do [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] pamięci podręcznej na komputerze klienckim. Aby uzyskać więcej informacji, zobacz [wdrożyć rozwiązanie Office](../vsto/deploying-an-office-solution.md).
+6. Jeśli dodatek narzędzi VSTO dla programów jest zaufane do uruchamiania, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] używa manifest wdrożenia i manifest aplikacji, aby sprawdzać dostępność aktualizacji zestawu. Jeśli dostępna jest nowa wersja zestawu, środowisko uruchomieniowe pobiera nową wersję zestawu do [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] pamięci podręcznej na komputerze klienckim. Aby uzyskać więcej informacji, zobacz [wdrożyć rozwiązanie Office](../vsto/deploying-an-office-solution.md).
 
-7.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Tworzy nową domenę aplikacji, w którym można załadować zestawu dodatku narzędzi VSTO.
+7. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Tworzy nową domenę aplikacji, w którym można załadować zestawu dodatku narzędzi VSTO.
 
-8.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Ładuje zestaw dodatku narzędzi VSTO dla programów do domeny aplikacji.
+8. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Ładuje zestaw dodatku narzędzi VSTO dla programów do domeny aplikacji.
 
 9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Wywołania <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> metody w swojej dodatku narzędzi VSTO, jeśli zastępowano go.
 

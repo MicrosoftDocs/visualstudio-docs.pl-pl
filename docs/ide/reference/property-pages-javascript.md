@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59af3b192b404184e5bc5e5a5461c978e2a85e1b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c1f725c239df2ffc9683676c4c20a86ce12f873e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648500"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096924"
 ---
 # <a name="property-pages-javascript"></a>Strony właściwości, JavaScript
 **Stron właściwości** zapewnia dostęp do ustawień projektu. Można użyć stron, które pojawiają się w **stron właściwości** można zmienić właściwości projektu.
@@ -69,11 +69,11 @@ Następujące strony i opcje są wyświetlane w **stron właściwości**.
 
  Określa host domyślny dla debugera.
 
--   Wybierz **komputera lokalnego** Aby uruchomić aplikację na komputerze-hoście programu Visual Studio. Aby uzyskać więcej informacji, zobacz [uruchamianie aplikacji na komputerze lokalnym](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
+- Wybierz **komputera lokalnego** Aby uruchomić aplikację na komputerze-hoście programu Visual Studio. Aby uzyskać więcej informacji, zobacz [uruchamianie aplikacji na komputerze lokalnym](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
--   Wybierz **symulator** Aby uruchomić aplikację w symulatorze. Aby uzyskać więcej informacji, zobacz [uruchamiania aplikacji w symulatorze](../../debugger/run-windows-store-apps-in-the-simulator.md).
+- Wybierz **symulator** Aby uruchomić aplikację w symulatorze. Aby uzyskać więcej informacji, zobacz [uruchamiania aplikacji w symulatorze](../../debugger/run-windows-store-apps-in-the-simulator.md).
 
--   Wybierz **maszyny zdalnej** Aby uruchomić aplikację na komputerze zdalnym. Aby uzyskać więcej informacji na temat debugowania zdalnego, zobacz [uruchamianie aplikacji na komputerze zdalnym](../../debugger/run-windows-store-apps-on-a-remote-machine.md).
+- Wybierz **maszyny zdalnej** Aby uruchomić aplikację na komputerze zdalnym. Aby uzyskać więcej informacji na temat debugowania zdalnego, zobacz [uruchamianie aplikacji na komputerze zdalnym](../../debugger/run-windows-store-apps-on-a-remote-machine.md).
 
 **Uruchamianie aplikacji**
 

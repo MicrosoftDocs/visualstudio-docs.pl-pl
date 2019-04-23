@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5363a4d2f07b22aa0a256ff40f039792a3d2a6c2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7d8366c0f87830a77f550dabbce2e8f875171418
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932199"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087381"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Odczytywanie modeli i diagramów w innych wersjach programu Visual Studio
 
@@ -34,16 +34,16 @@ Z tego powodu jeśli chcesz odczytać diagram zależności, należy również ma
 
 Aby uzyskać diagram zależności, minimalny zestaw plików, które są potrzebne jest następująca:
 
--   Dwa pliki dla diagramu, który chcesz, aby dowiedzieć się, na przykład diagramu **MyDiagram.classdiagram i MyDiagram.classdiagram.layout**.
+- Dwa pliki dla diagramu, który chcesz, aby dowiedzieć się, na przykład diagramu **MyDiagram.classdiagram i MyDiagram.classdiagram.layout**.
 
     > [!NOTE]
     > Dla diagramów zależności powinien również mieć plik o nazwie _MyDiagram_**. layerdiagram.suppressions**.
 
--   Pliku projektu modelowania (**MyModel.modelproj**)
+- Pliku projektu modelowania (**MyModel.modelproj**)
 
--   Plik modelu głównym (**ModelDefinition\MyModel.uml**)
+- Plik modelu głównym (**ModelDefinition\MyModel.uml**)
 
--   Pliki pakietu dla dowolnego pakietu, do którego odwołuje się na diagramie (**ModelDefinition\MyPackage.uml**)
+- Pliki pakietu dla dowolnego pakietu, do którego odwołuje się na diagramie (**ModelDefinition\MyPackage.uml**)
 
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Zmiany wprowadzone w trybie tylko do odczytu
 
@@ -57,5 +57,5 @@ Możesz zapisać te zmiany. Jeśli chcesz zmiany były widoczne dla innych użyt
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)
+- [Diagramy zależności: informacje](../modeling/layer-diagrams-reference.md)
 - [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)

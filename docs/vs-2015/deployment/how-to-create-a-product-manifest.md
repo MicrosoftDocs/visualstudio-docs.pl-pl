@@ -19,12 +19,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 948cbe88f39b0a39fc23ff8307c3e3484fb9438c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73e2c3f2c9736fd762a9e763827ed641ea5069f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788631"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092126"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Instrukcje: Tworzenie manifestu produktu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,11 +37,11 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakietu 
   
 #### <a name="to-create-the-product-manifest"></a>Aby utworzyć manifest produktu  
   
-1.  Utwórz katalog dla pakietu programu inicjującego. W tym przykładzie użyto C:\package.  
+1. Utwórz katalog dla pakietu programu inicjującego. W tym przykładzie użyto C:\package.  
   
-2.  W programie Visual Studio Utwórz nowy plik XML o nazwie `product.xml`i zapisz go w folderze C:\package.  
+2. W programie Visual Studio Utwórz nowy plik XML o nazwie `product.xml`i zapisz go w folderze C:\package.  
   
-3.  Dodaj następujący kod XML opisujący przestrzeni nazw i produktu kod XML dla pakietu. Zastąp kod produktu o unikatowym identyfikatorze dla pakietu.  
+3. Dodaj następujący kod XML opisujący przestrzeni nazw i produktu kod XML dla pakietu. Zastąp kod produktu o unikatowym identyfikatorze dla pakietu.  
   
     ```  
     <Product  
@@ -49,7 +49,7 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakietu 
     ProductCode="Custom.Bootstrapper.Package">  
     ```  
   
-4.  Dodaj kod XML, aby określić, czy pakiet ma zależność. W tym przykładzie użyto zależność w systemie Microsoft Windows Installer 3.1.  
+4. Dodaj kod XML, aby określić, czy pakiet ma zależność. W tym przykładzie użyto zależność w systemie Microsoft Windows Installer 3.1.  
   
     ```  
     <RelatedProducts>  
@@ -57,7 +57,7 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakietu 
       </RelatedProducts>  
     ```  
   
-5.  Dodaj kod XML, aby wyświetlić listę wszystkich plików, które należą do pakietu programu inicjującego. W tym przykładzie używa nazwy pliku pakietu CorePackage.msi.  
+5. Dodaj kod XML, aby wyświetlić listę wszystkich plików, które należą do pakietu programu inicjującego. W tym przykładzie używa nazwy pliku pakietu CorePackage.msi.  
   
     ```  
     <PackageFiles>  
@@ -65,16 +65,16 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakietu 
     </PackageFiles>  
     ```  
   
-6.  Skopiuj lub Przenieś plik CorePackage.msi do folderu C:\package.  
+6. Skopiuj lub Przenieś plik CorePackage.msi do folderu C:\package.  
   
-7.  Dodaj kod XML, aby zainstalować pakiet przy użyciu poleceń programu inicjującego. Program inicjujący automatycznie dodaje **/qn** flagi do pliku .msi, co spowoduje zainstalowanie w trybie dyskretnym. Jeśli plik .exe, program inicjujący uruchamia plik .exe przy użyciu powłoki. Następujący kody XML pokazuje bez argumentów do CorePackage.msi, ale argument wiersza polecenia można umieścić w atrybucie argumentów.  
+7. Dodaj kod XML, aby zainstalować pakiet przy użyciu poleceń programu inicjującego. Program inicjujący automatycznie dodaje **/qn** flagi do pliku .msi, co spowoduje zainstalowanie w trybie dyskretnym. Jeśli plik .exe, program inicjujący uruchamia plik .exe przy użyciu powłoki. Następujący kody XML pokazuje bez argumentów do CorePackage.msi, ale argument wiersza polecenia można umieścić w atrybucie argumentów.  
   
     ```  
     <Commands>  
         <Command PackageFile="CorePackage.msi" Arguments="">  
     ```  
   
-8.  Dodaj następujący kod XML, aby sprawdzić, czy zainstalowano ten pakiet programu inicjującego. Zastąp kod produktu o identyfikatorze GUID dla składnik redystrybucyjny.  
+8. Dodaj następujący kod XML, aby sprawdzić, czy zainstalowano ten pakiet programu inicjującego. Zastąp kod produktu o identyfikatorze GUID dla składnik redystrybucyjny.  
   
     ```  
     <InstallChecks>  

@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 04/11/2019
+ms.date: 04/19/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6246291a00a86a3cde0e3a9cf134724d9dc470ed
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 20130075ec285cf8d71c40831871c5eeeb342f52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537653"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068967"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -193,6 +193,7 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.2 | Wydanie | 18 kwietnia 2019 r. | 16.0.28803.202 |
 | 16.1.0 | Wersja zapoznawcza 1 | 10 kwietnia 2019 r. | 16.1.28809.33 |
 | 16.0.1 | Wydanie | 9 kwietnia 2019 r. | 16.0.28803.156 |
 | 16.0.1 | Wersja zapoznawcza 1 | 9 kwietnia 2019 r. | 16.0.28803.156 |

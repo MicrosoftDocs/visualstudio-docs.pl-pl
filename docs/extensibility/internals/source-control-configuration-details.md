@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c01c71673640814006fe6771aa841852c247fd54
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: db9a8abb2b1013a7d11a4013d602e33592beff70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965318"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070098"
 ---
 # <a name="source-control-configuration-details"></a>Szczegóły konfiguracji kontroli kodu źródłowego
 W celu wdrożenia kontroli źródła, należy poprawnie skonfigurować system projektu lub edytora, aby wykonać następujące czynności:
 
--   Żądanie uprawnień do przejścia do zmiany stanu
+- Żądanie uprawnień do przejścia do zmiany stanu
 
--   Żądanie uprawnień do zapisania pliku
+- Żądanie uprawnień do zapisania pliku
 
--   Poproś o uprawnienia do dodawania, usuwania lub zmiany nazwy plików w projekcie
+- Poproś o uprawnienia do dodawania, usuwania lub zmiany nazwy plików w projekcie
 
 ## <a name="request-permission-to-transition-to-changed-state"></a>Żądanie uprawnień do przejścia do zmiany stanu
  Projekt lub Edytor musi żądać uprawnienia do przejścia do zmiany stanu (dirty) przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>. Każdy edytor, który implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A> musi wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> i uzyskać zatwierdzenie, aby zmienić dokumentu w środowisku przed zwróceniem `True` dla <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A>. Projekt jest zasadniczo edytor dla pliku projektu, a co w efekcie ponosi odpowiedzialność tej samej dotyczące implementowania śledzenia zmianie stanu w pliku projektu, podobnie jak edytor tekstu dla jego plików. Środowisko obsługuje stan zmienionego rozwiązania, ale musi obsługiwać zmiana stanu dowolnego obiektu odwołuje się do rozwiązania, ale nie są zapisywane, takich jak plik projektu lub jego elementów. Ogólnie rzecz biorąc Jeśli projekt lub edytora jest odpowiedzialny za zarządzanie stanów trwałych dla elementu, następnie odpowiada dotyczące implementowania śledzenia zmianie stanu.

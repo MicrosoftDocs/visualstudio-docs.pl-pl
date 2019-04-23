@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6eb3e77c8d84f7603828c39b637bb49a8310a269
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 24c876edafaee848a050099fdb031f4637436f22
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54771182"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096572"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio — Porady i wskazówki
 
@@ -22,23 +22,23 @@ ms.locfileid: "54771182"
 
 Możesz się przemieszczać w programie Visual Studio łatwiej za pomocą skrótów klawiaturowych w tym temacie. Aby uzyskać więcej informacji, zobacz [skróty klawiaturowe w programie Visual Studio](default-keyboard-shortcuts-in-visual-studio.md). Aby uzyskać informacji na temat optymalizowania programu Visual Studio dla ułatwień dostępu, zobacz [i porady dotyczące ułatwień dostępu](../ide/reference/accessibility-tips-and-tricks.md).
 
--   [Zarządzanie oknem](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
+- [Zarządzanie oknem](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
 
--   [Skróty okna](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
+- [Skróty okna](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
 
--   [Wyszukiwania usługi Visual Studio](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
+- [Wyszukiwania usługi Visual Studio](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
 
--   [Znajdowanie w edytorze](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
+- [Znajdowanie w edytorze](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
 
--   [Edytor kodu](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
+- [Edytor kodu](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
 
--   [Paski narzędzi](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
+- [Paski narzędzi](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
 
--   [Debugowanie](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
+- [Debugowanie](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
 
--   [Zarządzanie cyklem życia aplikacji](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
+- [Zarządzanie cyklem życia aplikacji](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
 
-##  <a name="BKMK_WindowMgmt"></a> Zarządzanie oknem
+## <a name="BKMK_WindowMgmt"></a> Zarządzanie oknem
 
 |||
 |-|-|
@@ -49,7 +49,7 @@ Możesz się przemieszczać w programie Visual Studio łatwiej za pomocą skrót
 |Pokazywanie listy otwartych plików|Ctrl+Alt+Down|
 |Pokaż wszystkie Windows liczb zmiennoprzecinkowych|Ctrl+Shift+M|
 
-##  <a name="BKMK_WindowShortcuts"></a> Skróty okna
+## <a name="BKMK_WindowShortcuts"></a> Skróty okna
 
 |||
 |-|-|
@@ -59,7 +59,7 @@ Możesz się przemieszczać w programie Visual Studio łatwiej za pomocą skrót
 |Uruchom nowe wystąpienie|Win+Shift+n|
 |Przełączanie między Windows|Win+n|
 
-##  <a name="BKMK_Search"></a> Wyszukiwania usługi Visual Studio
+## <a name="BKMK_Search"></a> Wyszukiwania usługi Visual Studio
 
 |||
 |-|-|
@@ -69,7 +69,7 @@ Możesz się przemieszczać w programie Visual Studio łatwiej za pomocą skrót
 |Wyniki zakresu pasek Szybkie uruchamianie|- @opt Opcje<br />- @cmd Poleceń<br />- @mru Ostatnio używane<br />- @doc Otwartych dokumentach|
 |Wyszukiwanie w opcjach narzędzi|Ctrl+E|
 
-##  <a name="BKMK_EditorFind"></a> Znajdowanie w edytorze
+## <a name="BKMK_EditorFind"></a> Znajdowanie w edytorze
 
 |||
 |-|-|
@@ -84,7 +84,7 @@ Możesz się przemieszczać w programie Visual Studio łatwiej za pomocą skrót
 |Znajdź w plikach|Ctrl+Shift+F|
 |Zastąp w plikach|Ctrl+Shift+H|
 
-##  <a name="BKMK_CodeEditor"></a> Edytor kodu
+## <a name="BKMK_CodeEditor"></a> Edytor kodu
 
 |||
 |-|-|
@@ -109,7 +109,7 @@ Możesz się przemieszczać w programie Visual Studio łatwiej za pomocą skrót
 |Przechodzenie między wieloma wynikami wyglądu|F8 i Shift + F8|
 |Przełączanie się między oknem edytora kodu i okna Zobacz definicję|Shift + Esc|
 
-##  <a name="BKMK_Toolbars"></a> Paski narzędzi
+## <a name="BKMK_Toolbars"></a> Paski narzędzi
 
 |||
 |-|-|
@@ -118,7 +118,7 @@ Możesz się przemieszczać w programie Visual Studio łatwiej za pomocą skrót
 |Znajdowanie trybu poleceń tekstowych|Typ ">"|
 |Utwórz nowy alias|> alias NewAlias, polecenie|
 
-##  <a name="BKMK_Debugging"></a> Debugowanie
+## <a name="BKMK_Debugging"></a> Debugowanie
 
 |||
 |-|-|
@@ -137,7 +137,7 @@ Możesz się przemieszczać w programie Visual Studio łatwiej za pomocą skrót
 |Bufor czyszczenia okna bezpośredniego|> ze specyfikacją cls|
 |Wartość do druku w oknie bezpośrednim|? nazwa_zmiennej|
 
-##  <a name="BKMK_ALM"></a> Zarządzanie cyklem życia aplikacji
+## <a name="BKMK_ALM"></a> Zarządzanie cyklem życia aplikacji
 
 Zobacz [skrótów klawiaturowych: Visual Studio Online, TFS i sieci web portal, programu Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
 

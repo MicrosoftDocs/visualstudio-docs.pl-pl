@@ -11,12 +11,12 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1b419568490e41b135c2c7c801154f6550c546e9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d93d14383ec755f14619f4d126c7f676acafc6c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771468"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070111"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Testy jednostkowe metod ogólnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,20 +29,20 @@ Możesz wygenerować testy jednostkowe metod ogólnych dokładnie tak jak w przy
 ## <a name="examples"></a>Przykłady  
  Poniższe przykłady ilustrują, testy jednostkowe dla typów ogólnych:  
   
--   [Edytowanie wygenerowany kod testu](#EditingGeneratedTestCode). W tym przykładzie ma dwie sekcje wygenerowany kod testu i edytować kod testu. Widoczny jest sposób edytować kod testu raw, który jest generowany na podstawie metody ogólnej do metody testowej przydatne.  
+- [Edytowanie wygenerowany kod testu](#EditingGeneratedTestCode). W tym przykładzie ma dwie sekcje wygenerowany kod testu i edytować kod testu. Widoczny jest sposób edytować kod testu raw, który jest generowany na podstawie metody ogólnej do metody testowej przydatne.  
   
--   [Za pomocą ograniczenia typu](#TypeConstraintNotSatisfied). Ten przykład przedstawia metody rodzajowej, który używa ograniczenia typu testu jednostkowego. W tym przykładzie ograniczenia typu nie został spełniony.  
+- [Za pomocą ograniczenia typu](#TypeConstraintNotSatisfied). Ten przykład przedstawia metody rodzajowej, który używa ograniczenia typu testu jednostkowego. W tym przykładzie ograniczenia typu nie został spełniony.  
   
-###  <a name="EditingGeneratedTestCode"></a> Przykład 1: Edytowanie kodu wygenerowanego testu  
+### <a name="EditingGeneratedTestCode"></a> Przykład 1: Edytowanie kodu wygenerowanego testu  
  Kod testu w tej sekcji testuje metodę kodu w ramach testu o nazwie `SizeOfLinkedList()`. Ta metoda zwraca całkowitą, która określa liczbę węzłów w połączonej listy.  
   
  Pierwszy przykład kodu w sekcji wygenerowanego kodu testu, zawiera kod testu bitu wygenerowane przez program Visual Studio Enterprise. Drugi przykład, w sekcji kodu testu edytowana, pokazuje, jak można wprowadzić testowania funkcjonowania metoda SizeOfLinkedList dla dwóch różnych typów danych, `int` i `char`.  
   
  Ten kod ilustruje dwóch metod:  
   
--   metodą pomocnika testu `SizeOfLinkedListTestHelper<T>()`. Domyślnie metody pomocnika testu ma "TestHelper" w nazwie.  
+- metodą pomocnika testu `SizeOfLinkedListTestHelper<T>()`. Domyślnie metody pomocnika testu ma "TestHelper" w nazwie.  
   
--   Metoda testowa, `SizeOfLinkedListTest()`. Każdej metody testowej jest oznaczona przez atrybut TestMethod.  
+- Metoda testowa, `SizeOfLinkedListTest()`. Każdej metody testowej jest oznaczona przez atrybut TestMethod.  
   
 #### <a name="generated-test-code"></a>Kod wygenerowany Test  
  Poniższy kod testu został wygenerowany z `SizeOfLinkedList()` metody. Ponieważ jest to bitu wygenerowany test, muszą zostać zmodyfikowane, aby poprawnie metoda SizeOfLinkedList testu.  
@@ -74,22 +74,22 @@ public void SizeOfLinkedListTest()
 ##### <a name="test-helper-method"></a>Metoda pomocnika testu  
  Metoda pomocnika testu wykonuje następujące czynności, które odnoszą się do wierszy w kodzie etykietą kroki od 1 do 5.  
   
-1.  Tworzenie połączonej listy ogólnej.  
+1. Tworzenie połączonej listy ogólnej.  
   
-2.  Dołącz czterech węzłów do połączonej listy. Typ danych w treści tych węzłów jest nieznany.  
+2. Dołącz czterech węzłów do połączonej listy. Typ danych w treści tych węzłów jest nieznany.  
   
-3.  Przypisz oczekiwanego rozmiaru połączonej listy do zmiennej `expected`.  
+3. Przypisz oczekiwanego rozmiaru połączonej listy do zmiennej `expected`.  
   
-4.  Obliczenia rzeczywisty rozmiar połączonej listy i przypisz ją do zmiennej `actual`.  
+4. Obliczenia rzeczywisty rozmiar połączonej listy i przypisz ją do zmiennej `actual`.  
   
-5.  Porównaj `actual` z `expected` w instrukcji asercji. Rzeczywiste nie jest równa oczekiwana, test kończy się niepowodzeniem.  
+5. Porównaj `actual` z `expected` w instrukcji asercji. Rzeczywiste nie jest równa oczekiwana, test kończy się niepowodzeniem.  
   
 ##### <a name="test-method"></a>Test — metoda  
  Metoda testowa jest kompilowane do kodu, która jest wywoływana po uruchomieniu testu o nazwie SizeOfLinkedListTest. Wykonuje następujące czynności, które odnoszą się do wierszy w kodzie etykietą kroki 6 i 7.  
   
-1.  Określ `<int>` wywołanie metody pomocnika test, aby zweryfikować, że test działa w ramach `integer` zmiennych.  
+1. Określ `<int>` wywołanie metody pomocnika test, aby zweryfikować, że test działa w ramach `integer` zmiennych.  
   
-2.  Określ `<char>` wywołanie metody pomocnika test, aby zweryfikować, że test działa w ramach `char` zmiennych.  
+2. Określ `<char>` wywołanie metody pomocnika test, aby zweryfikować, że test działa w ramach `char` zmiennych.  
   
 ```  
   
@@ -119,7 +119,7 @@ public void SizeOfLinkedListTest()
 > [!NOTE]
 >  Przy każdym uruchomieniu testu SizeOfLinkedListTest jego TestHelper metoda jest wywoływana dwa razy. Instrukcję assert musi zwrócić wartość true, co czas test kończył się pomyślnie. Jeśli test zakończy się niepowodzeniem, może nie być jasne czy wywołania określona `<int>` lub wywołanie, które określono `<char>` spowodował, że jego nie powiedzie się. Aby znaleźć odpowiedzi, można analizować stos wywołań, lub można ustawić punkty przerwania w metodzie testowej, a następnie debugować podczas wykonywania testu. Aby uzyskać więcej informacji, zobacz [jak: Debugowanie podczas przeprowadzania testu w rozwiązaniu ASP.NET](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
   
-###  <a name="TypeConstraintNotSatisfied"></a> Przykład 2: Za pomocą ograniczenia typu  
+### <a name="TypeConstraintNotSatisfied"></a> Przykład 2: Za pomocą ograniczenia typu  
  Ten przykład przedstawia test jednostkowy metody rodzajowej, który używa ograniczenia typu, który nie jest spełniony. Pierwsza sekcja wyświetla kod z projektu kodu w ramach testu. Ograniczenie typu jest wyróżniona.  
   
  Druga sekcja wyświetla kod z projektu testów.  

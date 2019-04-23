@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34f86760fdede4efa84bc069c0ed9c92bf6740bd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cac9d8ef6a8165b8fffd9e7f2be931828bb529f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790590"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081154"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Instrukcje: Zmienianie języka publikacji dla aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ Podczas publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] apli
   
 ### <a name="to-change-the-publish-language"></a>Aby zmienić język publikacji  
   
-1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
+1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
   
-2.  Kliknij przycisk **Publikuj** kartę.  
+2. Kliknij przycisk **Publikuj** kartę.  
   
-3.  Kliknij przycisk **opcje** przycisk, aby otworzyć **opcji publikowania** okno dialogowe.  
+3. Kliknij przycisk **opcje** przycisk, aby otworzyć **opcji publikowania** okno dialogowe.  
   
-4.  Kliknij przycisk **opis**.  
+4. Kliknij przycisk **opis**.  
   
-5.  W **opcji publikowania** okna dialogowego pole, wybierz język i kultury z **języka publikacji** listy rozwijanej, a następnie kliknij **OK**.  
+5. W **opcji publikowania** okna dialogowego pole, wybierz język i kultury z **języka publikacji** listy rozwijanej, a następnie kliknij **OK**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   

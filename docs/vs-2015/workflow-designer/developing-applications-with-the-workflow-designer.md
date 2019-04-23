@@ -17,37 +17,37 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ffefb9f6542bbbb44d732116a348045660cf78b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71fdd358c03604b196b0a57a9667f40dfb92b049
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780994"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073972"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Tworzenie aplikacji za pomocą projektanta przepływów pracy
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] Jest widoczny Projektant wizualny oraz debugera dla konstrukcji graficznego i debugowanie [!INCLUDE[wf](../includes/wf-md.md)] aplikacji w [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] hostowaną w [!INCLUDE[vs2010](../includes/vs2010-md.md)] środowiska deweloperskiego. Pozwala ona do tworzenia aplikacji złożonych przepływu pracy, biblioteka działań lub [!INCLUDE[indigo1](../includes/indigo1-md.md)] usługi przy użyciu szablonów i projektantów działań. [!INCLUDE[crabout](../includes/crabout-md.md)] przepływy pracy, zobacz [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
   
  Poniżej przedstawiono kilka nowych funkcji projektowania modyfikujące tej nowej wersji składnika [!INCLUDE[wfd2](../includes/wfd2-md.md)] oprócz starsze wersje [!INCLUDE[wfd2](../includes/wfd2-md.md)]:  
   
--   [!INCLUDE[wfd2](../includes/wfd2-md.md)] Został skompilowany przy użyciu [!INCLUDE[avalon1](../includes/avalon1-md.md)]. To zwiększają komfort projektanta działań i zwiększa wydajność dużych i złożonych przepływów pracy.  
+- [!INCLUDE[wfd2](../includes/wfd2-md.md)] Został skompilowany przy użyciu [!INCLUDE[avalon1](../includes/avalon1-md.md)]. To zwiększają komfort projektanta działań i zwiększa wydajność dużych i złożonych przepływów pracy.  
   
--   Działania niestandardowe, teraz są skonstruowane z [!INCLUDE[avalon2](../includes/avalon2-md.md)], przy użyciu XAML i model programowania do tworzenia Projektanci działań zostały uproszczone.  
+- Działania niestandardowe, teraz są skonstruowane z [!INCLUDE[avalon2](../includes/avalon2-md.md)], przy użyciu XAML i model programowania do tworzenia Projektanci działań zostały uproszczone.  
   
--   Działania został zaimplementowany, co pozwala wizualizować przepływem programu za pomocą dobrze znanych schematów blokowych modelowania stylu.  
+- Działania został zaimplementowany, co pozwala wizualizować przepływem programu za pomocą dobrze znanych schematów blokowych modelowania stylu.  
   
--   [!INCLUDE[wfd2](../includes/wfd2-md.md)] Ma nowej zmiennej projektanta umożliwiającego zadeklarować i określać ich zakresy zmiennych w ramach przepływów pracy, powiązanie ich z działania.  
+- [!INCLUDE[wfd2](../includes/wfd2-md.md)] Ma nowej zmiennej projektanta umożliwiającego zadeklarować i określać ich zakresy zmiennych w ramach przepływów pracy, powiązanie ich z działania.  
   
--   W [!INCLUDE[vs2010](../includes/vs2010-md.md)], [!INCLUDE[wfd2](../includes/wfd2-md.md)] zapewnia wszystkie funkcje IntelliSense podczas tworzenia wyrażeń języka Visual Basic w ramach Twojej [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] przepływów pracy.  
+- W [!INCLUDE[vs2010](../includes/vs2010-md.md)], [!INCLUDE[wfd2](../includes/wfd2-md.md)] zapewnia wszystkie funkcje IntelliSense podczas tworzenia wyrażeń języka Visual Basic w ramach Twojej [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] przepływów pracy.  
   
--   Środowisko debugowania teraz obejmuje XAML, dzięki czemu możesz ustawić punkty przerwania w definicji przepływu pracy XAML i aby wejść do kodu XAML w czasie wykonywania, który zapewnia środowisko, podobnie jak w kodzie zarządzanym.  
+- Środowisko debugowania teraz obejmuje XAML, dzięki czemu możesz ustawić punkty przerwania w definicji przepływu pracy XAML i aby wejść do kodu XAML w czasie wykonywania, który zapewnia środowisko, podobnie jak w kodzie zarządzanym.  
   
--   Rehostowanie [!INCLUDE[wfd2](../includes/wfd2-md.md)] poza [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] znacznie jest uproszczony w porównaniu z poprzednimi wersjami, teraz wymaga tylko kilku wierszy kodu.  
+- Rehostowanie [!INCLUDE[wfd2](../includes/wfd2-md.md)] poza [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] znacznie jest uproszczony w porównaniu z poprzednimi wersjami, teraz wymaga tylko kilku wierszy kodu.  
   
--   Nowy <xref:System.Activities.Statements.Flowchart> działanie i jego [schemat blokowy](../workflow-designer/flowchart-activity-designer.md) pozwala na wizualizowanie przepływu programu przy użyciu dobrze znanych schematów blokowych modelowania stylu.  
+- Nowy <xref:System.Activities.Statements.Flowchart> działanie i jego [schemat blokowy](../workflow-designer/flowchart-activity-designer.md) pozwala na wizualizowanie przepływu programu przy użyciu dobrze znanych schematów blokowych modelowania stylu.  
   
--   Zostały rozszerzone działań dotyczących komunikatów, umożliwiającego pisanie pełni deklaracyjnego (Brak kodu) [!INCLUDE[indigo1](../includes/indigo1-md.md)] usług.  
+- Zostały rozszerzone działań dotyczących komunikatów, umożliwiającego pisanie pełni deklaracyjnego (Brak kodu) [!INCLUDE[indigo1](../includes/indigo1-md.md)] usług.  
   
--   **Dodaj odwołanie do usługi...** funkcja umożliwia generowanie działania automatycznie uzyskiwać dostęp do usług sieci Web.  
+- **Dodaj odwołanie do usługi...** funkcja umożliwia generowanie działania automatycznie uzyskiwać dostęp do usług sieci Web.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Używanie projektanta przepływu pracy](../workflow-designer/using-the-workflow-designer.md)  

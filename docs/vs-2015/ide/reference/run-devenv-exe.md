@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8f941aaff6b4f5f97a298549e91c29ffb19e84ea
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 68e5dcc5ff2e78fe87bbaad639c93f5532ea74fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667527"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065678"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ devenv {/run|/r} {SolutionName|ProjectName}
 ## <a name="remarks"></a>Uwagi  
  Kompiluje i uruchamia określony projekt lub rozwiązanie, zgodnie z ustawieniami określonymi dla aktywnej konfiguracji rozwiązania. Ten przełącznik uruchamia zintegrowanego środowiska programistycznego (IDE) i pozostawia aktywne po projekt lub rozwiązanie zakończy działanie.  
   
--   Należy ująć ciągi zawierające spacje w podwójny cudzysłów.  
+- Należy ująć ciągi zawierające spacje w podwójny cudzysłów.  
   
--   Podsumowanie informacji, w tym błędy, mogą być wyświetlane w **polecenia** okno lub pliku dziennika określony za pomocą `/out` przełącznika.  
+- Podsumowanie informacji, w tym błędy, mogą być wyświetlane w **polecenia** okno lub pliku dziennika określony za pomocą `/out` przełącznika.  
   
 ## <a name="example"></a>Przykład  
  W tym przykładzie uruchamia rozwiązanie `MySolution` przy użyciu konfiguracji aktywnego wdrożenia.  

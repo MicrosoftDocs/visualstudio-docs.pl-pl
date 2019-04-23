@@ -16,12 +16,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dba1ec7a21c0340db8b89124892edf78db2e04c8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b5e85bc7a5bac87692448aab393056fa1db5edbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803318"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084001"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Błąd: Uwierzytelnianie Kerberos nie powiodło się
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,19 +48,19 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 ### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>Aby sprawdzić, czy DNS na komputerze docelowym poprawnie mapuje nazwę komputera hosta debugera  
   
-1.  Na komputerze docelowym, otwórz **Start** menu wskaż **Akcesoria** a następnie kliknij przycisk **polecenia**.  
+1. Na komputerze docelowym, otwórz **Start** menu wskaż **Akcesoria** a następnie kliknij przycisk **polecenia**.  
   
-2.  W **polecenia** okna, typ:  
+2. W **polecenia** okna, typ:  
   
     ```  
     ping <debugger_host_computer_name>  
     ```  
   
-3.  W pierwszym wierszu `ping` odpowiedzi zawiera pełną nazwę komputera i adres IP zwrócony przez serwer DNS dla określonego komputera.  
+3. W pierwszym wierszu `ping` odpowiedzi zawiera pełną nazwę komputera i adres IP zwrócony przez serwer DNS dla określonego komputera.  
   
-4.  Na komputerze-hoście debugera, otwarcie **polecenia** okna i uruchom `ipconfig`.  
+4. Na komputerze-hoście debugera, otwarcie **polecenia** okna i uruchom `ipconfig`.  
   
-5.  Porównaj wartości adresów IP.  
+5. Porównaj wartości adresów IP.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)   

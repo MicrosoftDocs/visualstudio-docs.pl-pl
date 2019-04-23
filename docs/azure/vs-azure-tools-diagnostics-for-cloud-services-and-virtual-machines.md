@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 0dbeccece261a347a2de5218910eddca8b2d715c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 45e0eca12ecde6c6ede2e290f109ef04ce2035ff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908729"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095974"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Konfigurowanie diagnostyki dla usług w chmurze i maszyn wirtualnych platformy Azure
 Gdy zachodzi potrzeba Rozwiązywanie problemów z usługą w chmurze platformy Azure lub maszynie wirtualnej, można użyć programu Visual Studio na łatwiejsze konfigurowanie diagnostyki platformy Azure. Diagnostyka przechwytuje dane systemu i rejestrowania danych na maszynach wirtualnych i wystąpień maszyn wirtualnych, które są uruchamiane usługi w chmurze. Dane diagnostyczne jest przekazywany do wybranego konta magazynu. Aby uzyskać więcej informacji o diagnostyce rejestrowania na platformie Azure, zobacz [Włączanie rejestrowania diagnostycznego dla aplikacji sieci Web w usłudze Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -154,6 +154,7 @@ Jeśli używasz zestawu SDK Azure 2.5, aby określić niestandardowe źródło d
    <DataSource name="CustomDataSource!*" />
 </WindowsEventLog>
 ```
+
 ### <a name="performance-counters"></a>Liczniki wydajności
 Informacje o liczniku wydajności może pomóc w zlokalizować wąskie gardła systemu oraz dostosowywać wydajność systemu i aplikacji. Aby uzyskać więcej informacji, zobacz [tworzenia i używania liczników wydajności w aplikacji Azure](https://msdn.microsoft.com/library/azure/hh411542.aspx). Aby przechwycić liczników wydajności, wybierz **Włącz transferu liczników wydajności** pole wyboru. Aby zwiększyć lub zmniejszyć interwał między przekazywania dzienników zdarzeń do konta magazynu, należy zmienić **transferu okres (w min)** wartość. Zaznacz pola wyboru dla liczników wydajności, które mają być śledzone.
 

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf5a7c3f7587869a30ca2f367915fba1a42ec262
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5813a6f89062bf53f7f8c0b57b4ed3a8ef9c4edf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642979"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091437"
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>Instrukcje: Dołączanie plików za pomocą modułu
   *Moduły* (nie należy mylić z [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] modułów) to kontenery, które umożliwia wdrażanie obrazów, plików tekstowych lub plików, takich jak strony wzorcowe ASPX w programie SharePoint.
@@ -29,31 +29,31 @@ ms.locfileid: "56642979"
 
 #### <a name="to-add-a-module"></a>Aby dodać moduł
 
-1.  W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Otwórz lub Utwórz projekt programu SharePoint.
+1. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Otwórz lub Utwórz projekt programu SharePoint.
 
      Aby uzyskać więcej informacji, zobacz [SharePoint szablony elementu projektu i projektu](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2.  W **Eksploratora rozwiązań**, wybierz węzeł projektu, a następnie na pasku menu wybierz **projektu** > **Dodaj nowy element**.
+2. W **Eksploratora rozwiązań**, wybierz węzeł projektu, a następnie na pasku menu wybierz **projektu** > **Dodaj nowy element**.
 
      **Dodaj nowy element** zostanie otwarte okno dialogowe.
 
-3.  Na liście szablonów programu SharePoint, wybierz opcję **modułu** szablonu, a następnie wybierz **Dodaj** przycisku.
+3. Na liście szablonów programu SharePoint, wybierz opcję **modułu** szablonu, a następnie wybierz **Dodaj** przycisku.
 
      W tym kroku tworzy węzeł w projekcie o nazwie Module1.
 
-4.  W obszarze Module1, Usuń *przykład.txt* pliku.
+4. W obszarze Module1, Usuń *przykład.txt* pliku.
 
      Przykład.txt znajduje się we wszystkich modułach nowy przykład celów i nie jest potrzebna. (Należy pamiętać, że usunięcie pliku spowoduje również usunięcie jego wpis z modułu *Elements.xml* pliku.)
 
-5.  Pliki do wdrożenia na strukturę określonego folderu w programie SharePoint, utworzyć te foldery, w obszarze Module1 w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , wybierając węzeł Module1, a następnie na pasku menu, wybierając **projektu**, **New Folder**.
+5. Pliki do wdrożenia na strukturę określonego folderu w programie SharePoint, utworzyć te foldery, w obszarze Module1 w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , wybierając węzeł Module1, a następnie na pasku menu, wybierając **projektu**, **New Folder**.
 
-6.  Wybierz folder, w której chcesz dodać plik, a następnie na pasku menu wybierz **projektu**, **Dodaj istniejący element**.
+6. Wybierz folder, w której chcesz dodać plik, a następnie na pasku menu wybierz **projektu**, **Dodaj istniejący element**.
 
-7.  Wybierz jeden lub więcej plików, które mają być wdrażane do programu SharePoint, a następnie wybierz **Dodaj** przycisku.
+7. Wybierz jeden lub więcej plików, które mają być wdrażane do programu SharePoint, a następnie wybierz **Dodaj** przycisku.
 
      Po dodaniu pliku do projektu wpis dla niej jest automatycznie dodawane do pliku Elements.xml modułu. Podczas wdrażania projektu pliki są kopiowane do programu SharePoint server względem katalogu głównego projektu, która jest określona przez **pliku** elementu **adresu Url** atrybutów, takich jak `Url="Module1/New Folder/SomeFile.doc`. Jeśli chcesz zmienić lokalizację wdrażania dla pliku, albo przenieść do innego folderu w **Eksploratora rozwiązań** lub zmienić jego **adresu Url** ustawienie.
 
-8.  Wszystkie pliki, które mają być wyświetlane w bibliotece dokumentów, można dołączyć `Type="GhostableInLibrary"` atrybutu do swojego wpisu w *Elements.xml*. Na przykład
+8. Wszystkie pliki, które mają być wyświetlane w bibliotece dokumentów, można dołączyć `Type="GhostableInLibrary"` atrybutu do swojego wpisu w *Elements.xml*. Na przykład
 
     ```xml
     <File Path="Module1\Some Folder\SomePage.aspx" Url="Module1/Some Folder/SomePage.aspx" Type="GhostableInLibrary" />

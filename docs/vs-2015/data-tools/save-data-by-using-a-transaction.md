@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba83cf7db6415eefcb989f678bc4149d495016e4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c133bb3f8ef56378c20b985aa118e48e71109cea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658347"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065262"
 ---
 # <a name="save-data-by-using-a-transaction"></a>Zapisywanie danych przy użyciu transakcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,15 +46,15 @@ Zapisywanie danych w ramach transakcji przy użyciu <xref:System.Transactions> p
   
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll"></a>Aby dodać odwołanie do biblioteki dll System.Transactions  
   
-1.  Na **projektu** menu, wybierz opcję **Dodaj odwołanie**.  
+1. Na **projektu** menu, wybierz opcję **Dodaj odwołanie**.  
   
-2.  Na **.NET** kartę (**programu SQL Server** kartę dla projektów programu SQL Server), wybierz opcję **System.Transactions**, a następnie wybierz pozycję **OK**.  
+2. Na **.NET** kartę (**programu SQL Server** kartę dla projektów programu SQL Server), wybierz opcję **System.Transactions**, a następnie wybierz pozycję **OK**.  
   
      Odwołanie do System.Transactions.dll zostanie dodany do projektu.  
   
 ### <a name="to-save-data-in-a-transaction"></a>Aby zapisać dane w ramach transakcji  
   
--   Dodaj kod, aby zapisać dane w obrębie za pomocą instrukcji, która zawiera transakcji. Poniższy kod przedstawia sposób tworzenia i utworzyć wystąpienie <xref:System.Transactions.TransactionScope> obiektu w za pomocą instrukcji:  
+- Dodaj kod, aby zapisać dane w obrębie za pomocą instrukcji, która zawiera transakcji. Poniższy kod przedstawia sposób tworzenia i utworzyć wystąpienie <xref:System.Transactions.TransactionScope> obiektu w za pomocą instrukcji:  
   
      [!code-csharp[VbRaddataSaving#11](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#11)]
      [!code-vb[VbRaddataSaving#11](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#11)]  

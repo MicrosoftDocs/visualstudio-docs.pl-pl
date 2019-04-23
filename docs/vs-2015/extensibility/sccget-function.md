@@ -12,12 +12,12 @@ ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: baaa2691783562240b5e465c98aab43e6f8cd1e9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3f8317405c52850eceb816b958718835c029c6c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763793"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068304"
 ---
 # <a name="sccget-function"></a>SccGet, funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,21 +86,21 @@ SCCRTN SccGet(
   
  Istnieją dwa sposoby, aby rozwiązać ten problem, gdzie w lokalnej pamięci podręcznej wersji kontroli źródła staje się zsynchronizowany z bazy danych kontroli źródła:  
   
-1.  Nie zezwalaj na zmianę nazwy pliku w bazie danych kontroli źródła, która jest obecnie wyewidencjonowany.  
+1. Nie zezwalaj na zmianę nazwy pliku w bazie danych kontroli źródła, która jest obecnie wyewidencjonowany.  
   
-2.  Czy wielokrotność "Usuń stare" następuje "Dodaj nowe". Następującego algorytmu jest jednym ze sposobów osiągnięcia tego.  
+2. Czy wielokrotność "Usuń stare" następuje "Dodaj nowe". Następującego algorytmu jest jednym ze sposobów osiągnięcia tego.  
   
-    1.  Wywołaj [SccQueryChanges](../extensibility/sccquerychanges-function.md) funkcji, aby dowiedzieć się więcej na temat zmiany nazwy a.txt do b.txt w bazie danych kontroli źródła.  
+    1. Wywołaj [SccQueryChanges](../extensibility/sccquerychanges-function.md) funkcji, aby dowiedzieć się więcej na temat zmiany nazwy a.txt do b.txt w bazie danych kontroli źródła.  
   
-    2.  Zmień nazwę lokalnych a.txt b.txt.  
+    2. Zmień nazwę lokalnych a.txt b.txt.  
   
-    3.  Wywołaj `SccGet` funkcji dla a.txt i b.txt.  
+    3. Wywołaj `SccGet` funkcji dla a.txt i b.txt.  
   
-    4.  Ponieważ a.txt nie istnieje w bazie danych kontroli źródła, wersja lokalna pamięć podręczna są przeczyszczane Brak a.txt informacji o wersji.  
+    4. Ponieważ a.txt nie istnieje w bazie danych kontroli źródła, wersja lokalna pamięć podręczna są przeczyszczane Brak a.txt informacji o wersji.  
   
-    5.  Plik b.txt wyewidencjonowany jest scalany z zawartości pliku lokalnego b.txt.  
+    5. Plik b.txt wyewidencjonowany jest scalany z zawartości pliku lokalnego b.txt.  
   
-    6.  Teraz mogą zostać zaewidencjonowane b.txt zaktualizowany plik.  
+    6. Teraz mogą zostać zaewidencjonowane b.txt zaktualizowany plik.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   

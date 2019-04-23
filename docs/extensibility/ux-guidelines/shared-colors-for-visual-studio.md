@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89c4a4a25c2dfdeb33bfadcf8416a0cbc4726658
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5ce63a9f5ab04748975521c225d207bee2b0937b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649957"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089567"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Udostępnione kolory dla programu Visual Studio
 Podczas projektowania interfejsu użytkownika, który używa wspólnych elementów powłoki programu Visual Studio lub chcesz, aby Twoje element interfejsu, aby były zgodne z podobne funkcje, umożliwia już istniejącymi nazwami tokenu w plikach definicji pakietu wybierz i przypisania kolorów. Gwarantuje to, że Twój interfejs użytkownika pozostaje zgodny z całego środowiska programu Visual Studio i że jest aktualizowana automatycznie po motywy są dodawane lub aktualizowane.
@@ -22,11 +22,11 @@ W tym artykule opisano typowe elementy interfejsu użytkownika i token nazwy kt�
 
 Upewnij się, że prawidłowo używać nazw tokenu:
 
--   **Użyj tokenu nazw na podstawie funkcji, nie na samego koloru.** Typowe udostępnione kolory są skojarzone z elementami określonego interfejsu i są przeznaczone wyłącznie do użytku takie same lub podobne funkcje. Na przykład nie używaj ponownie plików kolor po naciśnięciu kombi dla Animacja postępu rotowania tylko dlatego, jak kolor. Funkcje pola kombi i animacji są różne, a Jeśli kolor skojarzony z zmiany pola kombi, może nie być odpowiedni kolor w odniesieniu do danego elementu animacji. Spójnego używania koloru pomaga w poznaniu użytkowników i uniknąć pomyłek.
+- **Użyj tokenu nazw na podstawie funkcji, nie na samego koloru.** Typowe udostępnione kolory są skojarzone z elementami określonego interfejsu i są przeznaczone wyłącznie do użytku takie same lub podobne funkcje. Na przykład nie używaj ponownie plików kolor po naciśnięciu kombi dla Animacja postępu rotowania tylko dlatego, jak kolor. Funkcje pola kombi i animacji są różne, a Jeśli kolor skojarzony z zmiany pola kombi, może nie być odpowiedni kolor w odniesieniu do danego elementu animacji. Spójnego używania koloru pomaga w poznaniu użytkowników i uniknąć pomyłek.
 
--   **Użyj kolorów tła i tekstu w poprawnej kombinacji.** Kolory tła, które są przeznaczone do użycia z tekstem będzie miał kolor tekstu. Nie używaj kolorów tekstu innego niż został określony dla w tle. Jeśli nie ma kolor skojarzony tekst, nie należy używać tego kolor tła dla dowolnego powierzchni, w którym oczekujesz, że do wyświetlania tekstu. Inne kombinacje kolorów tekstu i tła może prowadzić do interfejsu nie można go odczytać.
+- **Użyj kolorów tła i tekstu w poprawnej kombinacji.** Kolory tła, które są przeznaczone do użycia z tekstem będzie miał kolor tekstu. Nie używaj kolorów tekstu innego niż został określony dla w tle. Jeśli nie ma kolor skojarzony tekst, nie należy używać tego kolor tła dla dowolnego powierzchni, w którym oczekujesz, że do wyświetlania tekstu. Inne kombinacje kolorów tekstu i tła może prowadzić do interfejsu nie można go odczytać.
 
--   **Użyj kolorów kontrolki, które są odpowiednie dla ich lokalizacji.** W określonych stanach niektóre formanty programu Visual Studio nie ma osobnych obramowanie i kolory tła. Zamiast tego przejmą ich te kolory z powierzchni spodem. Upewnij się, zawsze używaj tokenów nazwy, które są odpowiednie dla lokalizacji, w którym umieszcza się kontrolka.
+- **Użyj kolorów kontrolki, które są odpowiednie dla ich lokalizacji.** W określonych stanach niektóre formanty programu Visual Studio nie ma osobnych obramowanie i kolory tła. Zamiast tego przejmą ich te kolory z powierzchni spodem. Upewnij się, zawsze używaj tokenów nazwy, które są odpowiednie dla lokalizacji, w którym umieszcza się kontrolka.
 
 > [!IMPORTANT]
 > Nie używaj tokenów w kategorii "Stronę startową" lub "Jabłecznik."
@@ -623,13 +623,13 @@ Możliwe, używaj wspólnej kontroli wyszukiwania oferowanych przez środowisko 
 
 Pole wyszukiwania może być jednym z kilku Państw, z których niektóre są wzajemnie wykluczających się:
 
--   "Skupia się" lub "po przeniesieniu fokusu" odnosi się do czy kursor znajduje się w polu tekstowym.
+- "Skupia się" lub "po przeniesieniu fokusu" odnosi się do czy kursor znajduje się w polu tekstowym.
 
--   "Active" lub "nieaktywne" odnosi się do tego, czy użytkownik wprowadził zapytania wyszukiwania w polu tekstowym.
+- "Active" lub "nieaktywne" odnosi się do tego, czy użytkownik wprowadził zapytania wyszukiwania w polu tekstowym.
 
--   "Aktywowaniu" oznacza, że użytkownik ma moused w polu wyszukiwania za pomocą myszy (ten stan zastępuje inne stany).
+- "Aktywowaniu" oznacza, że użytkownik ma moused w polu wyszukiwania za pomocą myszy (ten stan zastępuje inne stany).
 
--   "Wyłączone" oznacza, że funkcja wyszukiwania jest wyłączone dla bieżącego kontekstu.
+- "Wyłączone" oznacza, że funkcja wyszukiwania jest wyłączone dla bieżącego kontekstu.
 
 ![Pole wyszukiwania (poprawek)](../../extensibility/ux-guidelines/media/0303-110_searchboxredline.png "0303 110_SearchBoxRedline")<br />Pole wyszukiwania (poprawek)
 
@@ -854,7 +854,7 @@ Menu rozwijane pole wyszukiwania ma być nieco bardziej skomplikowane niż inne 
 | Tło łącza | `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br />(Ograniczniki gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Pierwszego planu (tekst łącza) | `SearchControl.PopupButtonMouseDownText` |
 
-###  <a name="BKMK_TreeView"></a> Widok drzewa
+### <a name="BKMK_TreeView"></a> Widok drzewa
 Kilkoma oknami narzędzi, w tym Eksploratora rozwiązań, Eksploratora serwera i widoku klasy implementuje hierarchiczne schematu organizacyjnego którego kolory są kontrolowane przez nazw kolorów w `TreeView` kategorii. Wszystkie elementy w widoku drzewa mają kolor tła i tekstu. Elementy, które zostały zagnieżdżone elementy podrzędne mają także symbole, które wskazują, czy element jest rozwijane czy zwijane.
 
 ![Widok drzewa (poprawek)](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "0303 147_TreeViewRedline")<br />Widok drzewa (poprawek)
@@ -1037,7 +1037,7 @@ Manifest Designer został zaprojektowany jako sposób, aby ułatwić edytowanie 
 
 ## <a name="command-structures"></a>Polecenie struktury
 
-###  <a name="BKMK_CommandMenus"></a> Menu
+### <a name="BKMK_CommandMenus"></a> Menu
 Menu może wystąpić w kilku miejscach w programie Visual Studio: główny pasek menu, osadzony w dokumencie lub narzędzia systemu windows lub kliknij prawym przyciskiem myszy w różnych miejscach w całej IDE. Implementacje menu skojarzone z innymi elementami interfejsu użytkownika zostały omówione w sekcji dla odpowiednich elementów. Zawsze należy używać implementacji standardowe menu oferowanych przez środowisko Visual Studio. Jednak w sporadycznych przypadkach możesz utracić dostęp do standardowego menu programu Visual Studio. W takich sytuacjach należy stosować następujących nazw tokenu, aby upewnić się, że Twój interfejs użytkownika są spójne z innych menu w programie Visual Studio.
 
 ![Menu programu Visual Studio (poprawek)](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303 000_MenuRedline")<br />Menu programu Visual Studio (poprawek)
@@ -1278,7 +1278,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 | Pierwszego planu (tekst) | `Environment.CommandBarTextInactive` |
 | Obramowanie | Brak |
 
-####  <a name="BKMK_CommandComboBox"></a> Pola kombi na pasku poleceń
+#### <a name="BKMK_CommandComboBox"></a> Pola kombi na pasku poleceń
 
 > [!IMPORTANT]
 > Pola kombi są podobne do list rozwijanych, ale zawierają region tekst do edycji. Jeśli z listy rozwijanej nie obejmuje regionu tekst do edycji, Użyj kolorów tokeny zabezpieczające [polecenia paska list rozwijanych](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
@@ -1410,7 +1410,7 @@ Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i mo�
 | Tło | Brak |
 | Pierwszego planu (symbol) | `Environment.ComboBoxDisabledGlyph` |
 
-####  <a name="BKMK_CommandDropDown"></a> Pasek poleceń list rozwijanych
+#### <a name="BKMK_CommandDropDown"></a> Pasek poleceń list rozwijanych
 
 > [!IMPORTANT]
 >  Listy rozwijane są podobne do pola kombi, ale brak regionów tekst do edycji. Jeśli z listy rozwijanej zawiera tekst do edycji regionu, należy użyć tokenów kolorów dla [polecenia paska pola kombi](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
@@ -1713,9 +1713,9 @@ Karty dokumentów znajdują się w kanale kartę, aby wskazać, które dokumenty
 #### <a name="open-document-tabs"></a>Otwórz dokument karty
 Każdy otwarty dokument ma kartę w kanale kartę dokumentu, który wyświetla jego nazwę. Dokumenty można albo wybrać lub otworzyć w tle, a ich karty odzwierciedlać te stany:
 
--   Wybrane karta reprezentuje dokument, który jest aktualnie wyświetlany w dokumencie dobrze. Kartę wybraną ma obramowanie dokumentu, które dobrze rozszerza między górną krawędzią dokumentu.
+- Wybrane karta reprezentuje dokument, który jest aktualnie wyświetlany w dokumencie dobrze. Kartę wybraną ma obramowanie dokumentu, które dobrze rozszerza między górną krawędzią dokumentu.
 
--   Karty w tle są żadnych kart dokumentu, które nie są aktualnie wybrana karta. Po kliknięciu stają się wybranej karty i uzyskania wszystkich obramowania, tekstu i tła kolorów z tymi nazwami tokenu.
+- Karty w tle są żadnych kart dokumentu, które nie są aktualnie wybrana karta. Po kliknięciu stają się wybranej karty i uzyskania wszystkich obramowania, tekstu i tła kolorów z tymi nazwami tokenu.
 
 ![Karta otwartego dokumentu (poprawek)](../../extensibility/ux-guidelines/media/0303-073_opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")<br />Karta otwartego dokumentu (poprawek)
 

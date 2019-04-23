@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 496328eb8911ad03d34c02e17d92f9a782b149da
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e218cfb3514333e48f2c5d59d55664de1bbd906a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599197"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095865"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Instrukcje: Pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie online
 *Ciągu zapytania* jest to część URL zaczynającym się od znaku zapytania (?), który zawiera dowolne informacje w formie *nazwa = wartość*. Załóżmy, że masz [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji o nazwie `WindowsApp1` hostujący na `servername`, i chcesz przekazać wartość zmiennej `username` po uruchomieniu aplikacji. Adres URL może wyglądać następująco:
@@ -46,12 +46,12 @@ ms.locfileid: "56599197"
 
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>Aby uzyskać informacje o parametrach zapytania z aplikacji ClickOnce
 
-1.  Umieść następujący kod w projekcie. Aby ten kod do funkcji, trzeba będzie zawierać odwołanie do System.Web i Dodaj `using` lub `Imports` instrukcji System.Web, System.Collections.Specialized i System.Deployment.Application.
+1. Umieść następujący kod w projekcie. Aby ten kod do funkcji, trzeba będzie zawierać odwołanie do System.Web i Dodaj `using` lub `Imports` instrukcji System.Web, System.Collections.Specialized i System.Deployment.Application.
 
      [!code-csharp[ClickOnceQueryString#1](../deployment/codesnippet/CSharp/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.cs)]
      [!code-vb[ClickOnceQueryString#1](../deployment/codesnippet/VisualBasic/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.vb)]
 
-2.  Wywołaj funkcję zdefiniowany wcześniej w celu pobrania <xref:System.Collections.DictionaryBase.Dictionary%2A> parametrów ciągu zapytania, indeksowane według nazwy.
+2. Wywołaj funkcję zdefiniowany wcześniej w celu pobrania <xref:System.Collections.DictionaryBase.Dictionary%2A> parametrów ciągu zapytania, indeksowane według nazwy.
 
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>Aby włączyć ciągu zapytania w aplikacji ClickOnce za pomocą MageUI.exe
 

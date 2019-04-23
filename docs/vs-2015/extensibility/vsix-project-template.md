@@ -11,12 +11,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3ef6037220337f0dc5005952849c9700703709f2
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: e8bc80e28979a1adf86f4b0490f84cc393450521
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872732"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096140"
 ---
 # <a name="vsix-project-template"></a>Szablon projektu VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,37 +48,37 @@ Można użyć szablonu projektu VSIX do opakowania jedno lub więcej rozszerzeń
   
 #### <a name="to-package-an-extension-by-using-a-vsix-project"></a>Aby utworzyć pakiet rozszerzenia za pomocą projektu VSIX  
   
-1.  Twórz projekty, które składają się na Twoje rozszerzenie.  
+1. Twórz projekty, które składają się na Twoje rozszerzenie.  
   
-2.  Utwórz projekt VSIX przy użyciu **projekt VSIX** szablonu.  
+2. Utwórz projekt VSIX przy użyciu **projekt VSIX** szablonu.  
   
      Source.Extension.vsixmanifest, który zostanie otwarty w **Manifest Designer**.  
   
-3.  Na **zasoby** kartę, wybrać **New** przycisku.  
+3. Na **zasoby** kartę, wybrać **New** przycisku.  
   
      **Dodaj nowy zasób** pojawi się okno dialogowe.  
   
-4.  W **typu** listy, wybierz typ rozszerzenie do dodania.  
+4. W **typu** listy, wybierz typ rozszerzenie do dodania.  
   
-5.  Aby dodać rozszerzenie lub zawartości elementu, który znajduje się w bieżącym rozwiązaniu (na przykład szablon elementu lub skompilowanego zestawu), wykonaj następujące czynności:  
+5. Aby dodać rozszerzenie lub zawartości elementu, który znajduje się w bieżącym rozwiązaniu (na przykład szablon elementu lub skompilowanego zestawu), wykonaj następujące czynności:  
   
-    1.  W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.  
+    1. W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.  
   
-    2.  W **projektu** , wybierz nazwę rozszerzenia.  
+    2. W **projektu** , wybierz nazwę rozszerzenia.  
   
-    3.  W **osadzania w tym folderze** wprowadź nazwę folderu, w której chcesz osadzić elementu zawartości, a następnie wybierz **OK** przycisku.  
+    3. W **osadzania w tym folderze** wprowadź nazwę folderu, w której chcesz osadzić elementu zawartości, a następnie wybierz **OK** przycisku.  
   
-6.  Aby dodać rozszerzenie lub element zawartości, który nie znajduje się w bieżącym rozwiązaniu, wykonaj następujące czynności:  
+6. Aby dodać rozszerzenie lub element zawartości, który nie znajduje się w bieżącym rozwiązaniu, wykonaj następujące czynności:  
   
-    1.  W **źródła** pola listy, wybierz **plików w systemie plików**.  
+    1. W **źródła** pola listy, wybierz **plików w systemie plików**.  
   
-    2.  W **ścieżki** pole, wprowadź pełną ścieżkę do pliku rozszerzenie skompilowany lub skompresowany lub użyj **Przeglądaj** przycisk, aby przejść do pliku.  
+    2. W **ścieżki** pole, wprowadź pełną ścieżkę do pliku rozszerzenie skompilowany lub skompresowany lub użyj **Przeglądaj** przycisk, aby przejść do pliku.  
   
-    3.  W **osadzania w tym folderze** wprowadź nazwę folderu, w której chcesz osadzić elementu zawartości, a następnie wybierz **OK** przycisku.  
+    3. W **osadzania w tym folderze** wprowadź nazwę folderu, w której chcesz osadzić elementu zawartości, a następnie wybierz **OK** przycisku.  
   
-7.  Jeśli chcesz, aby do pakietu, aby uwzględnić dodatkowe rozszerzenia, należy je dodać w taki sam sposób.  
+7. Jeśli chcesz, aby do pakietu, aby uwzględnić dodatkowe rozszerzenia, należy je dodać w taki sam sposób.  
   
-8.  Skompiluj rozwiązanie.  
+8. Skompiluj rozwiązanie.  
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Tworzy plik .vsix, który zawiera plik manifestu VSIX, pliku [Content_Types] .xml i wszystkie zasoby rozszerzenia, które zostały dodane do projektu.  
   

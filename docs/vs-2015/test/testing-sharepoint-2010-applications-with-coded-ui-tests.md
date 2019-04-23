@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6f512ac0788128db87269407c10ae400268283f5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 229893e13da06253398da32cfef4a85402a4787a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873547"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094557"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,16 +22,16 @@ ms.locfileid: "57873547"
   
  **Wymagania**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>Co jeszcze muszę wiedzieć o kodowane testy interfejsu użytkownika?  
  Aby dowiedzieć się więcej na temat korzyści z używania kodowanych testów interfejsu użytkownika, zobacz [Użyj interfejsu użytkownika do testów Your kodu automatyzacji](../test/use-ui-automation-to-test-your-code.md) i [testowanie dostarczania ciągłego w programie Visual Studio 2012 – rozdział 5 Automatyzacja testów systemu](http://go.microsoft.com/fwlink/?LinkID=255196).  
   
  **Uwagi**  
   
--   ![Wymagań wstępnych](../test/media/prereq.png "wstępnie wymagany składnik") kodowanych testów interfejsu użytkownika dla aplikacji programu SharePoint są obsługiwane tylko przez program SharePoint 2010.  
+- ![Wymagań wstępnych](../test/media/prereq.png "wstępnie wymagany składnik") kodowanych testów interfejsu użytkownika dla aplikacji programu SharePoint są obsługiwane tylko przez program SharePoint 2010.  
   
--   ![Wymagań wstępnych](../test/media/prereq.png "wstępnie wymagany składnik") pomocy technicznej dla programu Visio i PowerPoint 2010 kontrolek w aplikacji programu SharePoint nie jest obsługiwane.  
+- ![Wymagań wstępnych](../test/media/prereq.png "wstępnie wymagany składnik") pomocy technicznej dla programu Visio i PowerPoint 2010 kontrolek w aplikacji programu SharePoint nie jest obsługiwane.  
   
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Tworzenie kodowanego testu interfejsu użytkownika dla aplikacji programu SharePoint  
  [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) dla aplikacji SharePoint 2010 jest taka sama, jak podczas tworzenia testów dla innych typów aplikacji. Nagrywanie i odtwarzanie jest obsługiwana dla wszystkich kontrolek w interfejsie edytowania w Internecie. Interfejs do wybierania kategorii i składniki web Part są wszystkie formanty standardowe sieci web.  
@@ -62,14 +62,14 @@ uiGridKeyboardInputEdit.Text=value;
   
  W przypadku rejestrowania akcji w komórce pusty, a następnie nagrywanie pobiera nieco bardziej skomplikowane, ponieważ moment, Dodaj tekst do komórki, nowy \<div > formant jest dodawany jako element podrzędny elementu komórki. Nowy \<div > po prostu wprowadzony tekst zawiera formant. Rejestrator musi zarejestrować akcje na nowym \<div > formant; jednak nie ponieważ nowy \<div > formant nie istnieje do czasu, po wprowadzeniu testu. Musi ręcznie wprowadzić następujące zmiany kodu w celu uwzględnienia tego problemu.  
   
-1.  Przejdź do inicjowania komórkę i wprowadź `RowIndex` i `ColumnIndex` podstawowe właściwości:  
+1. Przejdź do inicjowania komórkę i wprowadź `RowIndex` i `ColumnIndex` podstawowe właściwości:  
   
     ```csharp  
     this.mUIItemCell.SearchProperties[HtmlCell.PropertyNames. RowIndex] = "3";   
     this.mUIItemCell.SearchProperties[HtmlCell.PropertyNames. ColumnIndex] = "3";  
     ```  
   
-2.  Znajdź `HtmlDiv` podrzędnym komórki:  
+2. Znajdź `HtmlDiv` podrzędnym komórki:  
   
     ```csharp  
     private UITestControl getControlToDoubleClick(HtmlCell cell)   
@@ -85,13 +85,13 @@ uiGridKeyboardInputEdit.Text=value;
   
     ```  
   
-3.  Dodaj kod dla myszy kliknij dwukrotnie działanie `HtmlDiv`:  
+3. Dodaj kod dla myszy kliknij dwukrotnie działanie `HtmlDiv`:  
   
     ```csharp  
     Mouse.DoubleClick(uIItemPane, new Point(31, 14)); )  
     ```  
   
-4.  Dodaj kod, aby ustawić tekst na `TextArea`:  
+4. Dodaj kod, aby ustawić tekst na `TextArea`:  
   
     ```csharp  
     uIGridKeyboardInputEdit.Text = value; }  
@@ -114,15 +114,15 @@ uiGridKeyboardInputEdit.Text=value;
   
 #### <a name="testing-silverlight-web-parts"></a>Testowanie składników web Part Silverlight  
   
-1.  Uruchom narzędzie Fiddler.  
+1. Uruchom narzędzie Fiddler.  
   
-2.  Wyczyść pamięć podręczną przeglądarki. Jest to konieczne, ponieważ plik XAP, który zawiera DLL pomocnika automatyzacji interfejsu użytkownika programu Silverlight, zwykle jest buforowana. Mamy upewnij się, że zmodyfikowany plik XAP jest pobierana, dzięki czemu wyczyszczeniu pamięci podręcznej przeglądarki.  
+2. Wyczyść pamięć podręczną przeglądarki. Jest to konieczne, ponieważ plik XAP, który zawiera DLL pomocnika automatyzacji interfejsu użytkownika programu Silverlight, zwykle jest buforowana. Mamy upewnij się, że zmodyfikowany plik XAP jest pobierana, dzięki czemu wyczyszczeniu pamięci podręcznej przeglądarki.  
   
-3.  Otwórz stronę sieci web.  
+3. Otwórz stronę sieci web.  
   
-4.  Uruchom Rejestrator i generowania kodu, tak jak w przypadku testowania aplikacji sieci web w regularnych.  
+4. Uruchom Rejestrator i generowania kodu, tak jak w przypadku testowania aplikacji sieci web w regularnych.  
   
-5.  Należy się upewnić, że wygenerowany kod odwołuje się do Microsoft.VisualStudio.TestTools.UITest.Extension.Silverlight.dll.  
+5. Należy się upewnić, że wygenerowany kod odwołuje się do Microsoft.VisualStudio.TestTools.UITest.Extension.Silverlight.dll.  
   
      Aby uzyskać więcej informacji, zobacz [interfejsu użytkownika testowania programu SharePoint 2010 przy użyciu programu Visual Studio 2012](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx)  
   

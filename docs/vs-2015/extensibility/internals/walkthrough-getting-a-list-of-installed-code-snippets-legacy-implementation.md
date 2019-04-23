@@ -12,12 +12,12 @@ ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ef16552fbbb051a24d7b2e1fbe5b5266774ef13f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9948950322c0d4f994ed9c12fe6ebec5112b6d13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773319"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076279"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Przewodnik: Pobieranie listy zainstalowanych fragmentów kodu (starsza wersja implementacji)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Fragment kodu jest fragmentem kodu, które mogą być wstawiane do bufor źród�
   
 ### <a name="to-retrieve-a-list-of-code-snippets"></a>Aby pobrać listę fragmentów kodu  
   
-1.  Poniższy kod przedstawia sposób uzyskiwania listy fragmentów kodu dla danego języka. Wyniki są przechowywane w tablicy <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> struktury. Ta metoda jest używana statyczna <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> metodę, aby uzyskać <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> interfejs z <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> usługi. Jednak również użyć dostawcy usług danego pakietu VSPackage i wywołania <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> metody.  
+1. Poniższy kod przedstawia sposób uzyskiwania listy fragmentów kodu dla danego języka. Wyniki są przechowywane w tablicy <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> struktury. Ta metoda jest używana statyczna <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> metodę, aby uzyskać <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> interfejs z <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> usługi. Jednak również użyć dostawcy usług danego pakietu VSPackage i wywołania <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> metody.  
   
     ```csharp  
     using System;  
@@ -105,7 +105,7 @@ Fragment kodu jest fragmentem kodu, które mogą być wstawiane do bufor źród�
   
 ### <a name="to-call-the-getsnippets-method"></a>Aby wywołać metodę GetSnippets  
   
-1.  Poniższa metoda przedstawiono sposób wywoływania `GetSnippets` metoda po zakończeniu operacji analizowania. <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> Metoda jest wywoływana po operacji analizowania, która została uruchomiona z powodu <xref:Microsoft.VisualStudio.Package.ParseReason>.  
+1. Poniższa metoda przedstawiono sposób wywoływania `GetSnippets` metoda po zakończeniu operacji analizowania. <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> Metoda jest wywoływana po operacji analizowania, która została uruchomiona z powodu <xref:Microsoft.VisualStudio.Package.ParseReason>.  
   
 > [!NOTE]
 >  `expansionsList` Tablicy listis ze względu na wydajność w pamięci podręcznej. Zmiany fragmenty kodu nie są odzwierciedlane na liście, dopóki usługa języka jest zatrzymana i ponownie załadować (np. przez zatrzymanie i ponowne uruchomienie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]).  
@@ -129,7 +129,7 @@ class TestLanguageService : LanguageService
   
 ### <a name="to-use-the-snippet-information"></a>Aby użyć informacji fragmentu kodu  
   
-1.  Poniższy kod przedstawia sposób użycia informacji fragment zwracanych przez `GetSnippets` metody. `AddSnippets` Metoda jest wywoływana z analizatora w odpowiedzi na jakiegokolwiek powodu analizy, który jest używany do wypełniania listy fragmentów kodu. To powinno nastąpić po pełnej analizy zostało wykonane po raz pierwszy.  
+1. Poniższy kod przedstawia sposób użycia informacji fragment zwracanych przez `GetSnippets` metody. `AddSnippets` Metoda jest wywoływana z analizatora w odpowiedzi na jakiegokolwiek powodu analizy, który jest używany do wypełniania listy fragmentów kodu. To powinno nastąpić po pełnej analizy zostało wykonane po raz pierwszy.  
   
      `AddDeclaration` Metoda tworzy listę deklaracje, które są później jest wyświetlana na liście uzupełniania.  
   

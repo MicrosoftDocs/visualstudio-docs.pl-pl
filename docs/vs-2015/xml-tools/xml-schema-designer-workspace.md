@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d0b14b9f1cbbb81cc814546c5965e505a42885d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6200b96992638ccf5ad009ac103551824219135f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656547"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074963"
 ---
 # <a name="xml-schema-designer-workspace"></a>Obszar roboczy projektanta schematu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,29 +26,29 @@ Projektant schematu XML (XSD Designer) jest graficznego narzędzia, które ułat
 ## <a name="adding-nodes-to-the-workspace"></a>Dodawanie węzłów do obszaru roboczego  
  Można dodać węzły do obszaru roboczego, w następujący sposób:  
   
--   W sekcji "Szczegóły zestawu schematów" [widoku Start](../xml-tools/start-view.md), kliknij przycisk **Dodaj** łącze obok typu globalnego węzła.  
+- W sekcji "Szczegóły zestawu schematów" [widoku Start](../xml-tools/start-view.md), kliknij przycisk **Dodaj** łącze obok typu globalnego węzła.  
   
--   Przeciągnij i upuść z Eksploratora schematu XML na jeden z trzech widoków globalnego węzłów, węzły plików i węzły przestrzeni nazw. Aby uzyskać więcej informacji, zobacz sekcję "Przeciąganie i upuszczanie węzły" w [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md).  
+- Przeciągnij i upuść z Eksploratora schematu XML na jeden z trzech widoków globalnego węzłów, węzły plików i węzły przestrzeni nazw. Aby uzyskać więcej informacji, zobacz sekcję "Przeciąganie i upuszczanie węzły" w [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md).  
   
--   Użyj menu kontekstowego w Eksplorator schematu XML. Aby uzyskać więcej informacji, zobacz [menu kontekstowe](../xml-tools/context-menus-xml-schema-explorer.md).  
+- Użyj menu kontekstowego w Eksplorator schematu XML. Aby uzyskać więcej informacji, zobacz [menu kontekstowe](../xml-tools/context-menus-xml-schema-explorer.md).  
   
--   Wykonaj wyszukiwanie w Eksploratorze XSD, a następnie kliknij przycisk **Dodaj wyróżnione węzły do obszaru roboczego** przycisk w okienku wyników podsumowania. Aby uzyskać więcej informacji, zobacz [wyszukiwania zestawu schematu](../xml-tools/searching-the-schema-set.md).  
+- Wykonaj wyszukiwanie w Eksploratorze XSD, a następnie kliknij przycisk **Dodaj wyróżnione węzły do obszaru roboczego** przycisk w okienku wyników podsumowania. Aby uzyskać więcej informacji, zobacz [wyszukiwania zestawu schematu](../xml-tools/searching-the-schema-set.md).  
   
 ## <a name="view-switching"></a>Przełączanie widoku  
  Aby przełączać widoki, należy użyć jednej z następujących czynności:  
   
--   Pasek narzędzi Projektanta XSD.  
+- Pasek narzędzi Projektanta XSD.  
   
--   Menu kontekstowe widoku modelu zawartości i widoku wykresu.  
+- Menu kontekstowe widoku modelu zawartości i widoku wykresu.  
   
--   Znaki wodne, na stronie widoku Start lub znak wodny na pusty widok modelu zawartości lub w widoku wykresu.  
+- Znaki wodne, na stronie widoku Start lub znak wodny na pusty widok modelu zawartości lub w widoku wykresu.  
   
--   Klawisze skrótu: CTRL + 1 dla widoku startowego, CTRL + 2 dla widoku wykresu i CTRL + 3 dla widoku modelu zawartości.  
+- Klawisze skrótu: CTRL + 1 dla widoku startowego, CTRL + 2 dla widoku wykresu i CTRL + 3 dla widoku modelu zawartości.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
   
--   [Widok startowy](../xml-tools/start-view.md)  
+- [Widok startowy](../xml-tools/start-view.md)  
   
--   [Widok wykresu](../xml-tools/graph-view.md)  
+- [Widok wykresu](../xml-tools/graph-view.md)  
   
--   [Widok modelu zawartości](../xml-tools/content-model-view.md)
+- [Widok modelu zawartości](../xml-tools/content-model-view.md)

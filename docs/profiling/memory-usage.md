@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb24742a4387a84bba0b52763cdb559280c24c4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 25ed4c8032133f08b975a22d56de4911efbd50a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59232778"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081362"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Użycie pamięci miar w programie Visual Studio
 
@@ -41,22 +41,22 @@ W tym samouczku wykonasz następujące czynności:
 
 ## <a name="collect-memory-usage-data"></a>Zbieranie danych użycia pamięci
 
-1.  Otwórz projekt, który chcesz debugować w programie Visual Studio i ustaw punkt przerwania w swojej aplikacji w punkcie, w którym chcesz rozpocząć badanie użycia pamięci.
+1. Otwórz projekt, który chcesz debugować w programie Visual Studio i ustaw punkt przerwania w swojej aplikacji w punkcie, w którym chcesz rozpocząć badanie użycia pamięci.
 
     Jeśli masz obszar, w którym podejrzewasz problem pamięci, należy ustawić pierwszy punkt przerwania przed wystąpieniem problemu pamięci.
 
     > [!TIP]
     >  Ponieważ może stanowić wyzwanie do przechwytywania profilu pamięci operacji, która Cię interesuje, gdy aplikacja często przydziela i zwalnia pamięć, ustawić punkty przerwania na początku i końca operacji (lub wykonać krok po kroku) aby znaleźć konkretny punkt Pamięć zmieniła się.
 
-2.  Ustaw drugi punkt przerwania na końcu funkcji lub regionu kod, który chcesz analizować (lub po wystąpieniu problemu podejrzanych pamięci).
+2. Ustaw drugi punkt przerwania na końcu funkcji lub regionu kod, który chcesz analizować (lub po wystąpieniu problemu podejrzanych pamięci).
 
-3.  **Narzędzia diagnostyczne** okno pojawia się automatycznie, o ile nie została ona wyłączona. Aby wyświetlić okno ponownie, kliknij przycisk **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.
+3. **Narzędzia diagnostyczne** okno pojawia się automatycznie, o ile nie została ona wyłączona. Aby wyświetlić okno ponownie, kliknij przycisk **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.
 
-4.  Wybierz **użycie pamięci** z **wybierz narzędzia** ustawienie na pasku narzędzi.
+4. Wybierz **użycie pamięci** z **wybierz narzędzia** ustawienie na pasku narzędzi.
 
      ![Pokaż narzędzia diagnostyczne](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
 
-5.  Kliknij przycisk **debugowania / uruchamiania debugowania** (lub **Start** na pasku narzędzi lub **F5**).
+5. Kliknij przycisk **debugowania / uruchamiania debugowania** (lub **Start** na pasku narzędzi lub **F5**).
 
      Po zakończeniu ładowania aplikacji zostanie wyświetlony widok podsumowania narzędzia diagnostyczne.
 
@@ -69,20 +69,20 @@ W tym samouczku wykonasz następujące czynności:
      >
      >  Zatrzymaj (klawisz skrótu: **Przenieś**+**F5**) i uruchom ponownie debugowanie.
 
-6.  Aby zrobić migawkę podczas uruchamiania sesji debugowania, wybierz opcję **wykonaj migawkę** na **użycie pamięci** paska narzędzi. (Pomocne może być Ustaw punkt przerwania w tym miejscu także.)
+6. Aby zrobić migawkę podczas uruchamiania sesji debugowania, wybierz opcję **wykonaj migawkę** na **użycie pamięci** paska narzędzi. (Pomocne może być Ustaw punkt przerwania w tym miejscu także.)
 
     ![Wykonaj migawkę](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
 
      > [!TIP]
      >  Aby utworzyć punkt odniesienia dla porównania pamięci, należy rozważyć wykonanie migawki podczas uruchamiania sesji debugowania.
 
-6.  Uruchom scenariusz, który spowoduje, że pierwszy punkt przerwania na.
+6. Uruchom scenariusz, który spowoduje, że pierwszy punkt przerwania na.
 
-7.  Gdy debuger jest wstrzymana w pierwszym punkcie przerwania, wybierz **wykonaj migawkę** na **użycie pamięci** paska narzędzi.
+7. Gdy debuger jest wstrzymana w pierwszym punkcie przerwania, wybierz **wykonaj migawkę** na **użycie pamięci** paska narzędzi.
 
-8.  Naciśnij klawisz **F5** do uruchomienia aplikacji na drugi punkt przerwania.
+8. Naciśnij klawisz **F5** do uruchomienia aplikacji na drugi punkt przerwania.
 
-9.  Teraz Utwórz kolejną migawkę.
+9. Teraz Utwórz kolejną migawkę.
 
      W tym momencie można rozpocząć analizy danych.
 
@@ -93,9 +93,9 @@ Wiersze tabeli podsumowania użycia pamięci zawiera listę migawek, które mia�
 
  Nazwa kolumny zależą od trybu debugowania, możesz wybrać we właściwościach projektu: .NET, natywny lub mieszany (.NET i natywny).
 
--   **Obiekty (różnica)** i **alokacje (różnica)** kolumn wyświetlany liczbę obiektów w .NET i pamięci natywnej, gdy migawka została utworzona.
+- **Obiekty (różnica)** i **alokacje (różnica)** kolumn wyświetlany liczbę obiektów w .NET i pamięci natywnej, gdy migawka została utworzona.
 
--   **Rozmiar sterty (różnica)** kolumnie jest wyświetlana liczba bajtów w .NET i natywnej sterty
+- **Rozmiar sterty (różnica)** kolumnie jest wyświetlana liczba bajtów w .NET i natywnej sterty
 
 Po wykonaniu wiele migawek komórek tabeli podsumowania obejmują zmianę wartości między migawką wiersza i poprzednią migawkę.
 
@@ -136,13 +136,13 @@ Aby Analizowanie użycia pamięci, kliknij jedno z łączy, które otwiera szcze
 
  **Widok typów** Wyświetla liczbę i rozmiar typów w migawce.
 
--   Wybierz ikonę wystąpienia (![ikonę wystąpienia, w kolumnie Typ obiektu](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) dla wybranego typu, aby wyświetlić informacje o obiektach wybranego typu w migawce.
+- Wybierz ikonę wystąpienia (![ikonę wystąpienia, w kolumnie Typ obiektu](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) dla wybranego typu, aby wyświetlić informacje o obiektach wybranego typu w migawce.
 
      **Wystąpień** widok zawiera każde wystąpienie wybranego typu. Wybranie wystąpienia przedstawia stos wywołań, które spowodowało utworzenie wystąpienia w **stos wywołań alokacji** okienka.
 
      ![Wystąpienia widoku](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
 
--   Wybierz **widok stosów** w **tryb widoku** listy w celu wyświetlenia alokacji stosu dla wybranego typu.
+- Wybierz **widok stosów** w **tryb widoku** listy w celu wyświetlenia alokacji stosu dla wybranego typu.
 
      ![Widok stosów](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_StacksView")
 

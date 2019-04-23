@@ -41,12 +41,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5d3017d293b8288df9b5d7bdbe09fe2e901fa58
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 65f3a3abfe7e49872c7131a247d74612200bf42a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865986"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091021"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Projekty pakietu Office w środowisku Visual Studio
   Dla projektów pakietu Microsoft Office przygotowano środowisko programistyczne podobne jak do innych typów projektów w programie, np. projektów interfejsu Windows Forms. Podczas tworzenia lub otwierania projektu pakietu Office elementy projektu pojawiają się w **Eksploratora rozwiązań**. W projektach na poziomie dokumentu dokument (tzn. dokument programu Word lub skoroszyt programu Excel) jest otwierany w programie Visual Studio i zachowuje się jak projektant wizualny.
@@ -73,7 +73,7 @@ ms.locfileid: "54865986"
 ### <a name="temporary-certificates"></a>Tymczasowe certyfikaty
  Projekty pakietu Office zawierają również tymczasowy certyfikat o nazwie *Nazwa projektu*_TemporaryKey.pfx. Certyfikat służy do podpisywania manifestów aplikacji i wdrażania projektu w trakcie programowania. Aby uzyskać więcej informacji, zobacz [udzielenia zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md) i [rozwiązań Secure Office](../vsto/securing-office-solutions.md).
 
-###  <a name="hiddenfiles"></a> Ukryte pliki projektu
+### <a name="hiddenfiles"></a> Ukryte pliki projektu
  Niektóre pliki projektu są domyślnie ukryte. Pliki te są generowane przez program Visual Studio i różnią się w zależności od typu projektu. Aby wyświetlić ukryte pliki, kliknij przycisk **Pokaż wszystkie pliki** w **Eksploratora rozwiązań**.
 
  Nie wolno modyfikować ukrytych plików projektu. Bezpośrednia edycja tych plików nie jest obsługiwana i może spowodować uszkodzenie projektu. Ukryte pliki projektu są generowane każdorazowo po wprowadzeniu pewnych zmian w dokumencie. Ręczna modyfikacja ukrytego pliku projektu spowoduje utratę tych zmian podczas ponownego generowania pliku.

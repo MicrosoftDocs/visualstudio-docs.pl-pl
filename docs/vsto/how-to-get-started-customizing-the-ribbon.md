@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 14c4ff1e8bf443351f835d74d44b49bbb61e0321
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f164a8f1d1c84725530e7a3afab5e63472ae257e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640119"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081570"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Instrukcje: Wprowadzenie do dostosowywania wstążki
   Aby dostosować Wstążki aplikacji pakietu Microsoft Office, należy dodać **Wstążka (Projektant graficzny)** lub **wstążki (XML)** elementu do projektu programu pakietu Office.
@@ -37,33 +37,33 @@ ms.locfileid: "56640119"
 
     Nazwy nie mogą zawierać następujących znaków:
 
-   -   Krzyżyk (#)
+   - Krzyżyk (#)
 
-   -   Procentu (%)
+   - Procentu (%)
 
-   -   Handlowe "i" (&)
+   - Handlowe "i" (&)
 
-   -   Gwiazdka (*)
+   - Gwiazdka (*)
 
-   -   Kreski pionowej (|)
+   - Kreski pionowej (|)
 
-   -   Ukośnik odwrotny (\\)
+   - Ukośnik odwrotny (\\)
 
-   -   Dwukropek (:)
+   - Dwukropek (:)
 
-   -   Podwójny cudzysłów (")
+   - Podwójny cudzysłów (")
 
-   -   Mniej niż (\<)
+   - Mniej niż (\<)
 
-   -   Większe niż (>)
+   - Większe niż (>)
 
-   -   Znak zapytania (?)
+   - Znak zapytania (?)
 
-   -   Do przodu ukośnika (/)
+   - Do przodu ukośnika (/)
 
-   -   Spacji wiodących albo końcowych ("")
+   - Spacji wiodących albo końcowych ("")
 
-   -   Nazwy zarezerwowane dla Windows lub systemu DOS, np. ("nul", "aux", "con", "com1", "lpt1" i tak dalej)
+   - Nazwy zarezerwowane dla Windows lub systemu DOS, np. ("nul", "aux", "con", "com1", "lpt1" i tak dalej)
 
 4. Kliknij przycisk **OK**.
 

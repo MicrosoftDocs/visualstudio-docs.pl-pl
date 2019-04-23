@@ -11,12 +11,12 @@ ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: dcf653654005b75a889bcafd668fbb9313572ff2
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 1cdd172c2960024da8b12735764161d36498c4e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039145"
 ---
 # <a name="deploying-custom-start-pages"></a>Wdrażanie niestandardowych stron początkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +57,9 @@ Niestandardowe strony Start można wdrożyć za pomocą VSIX wdrażania lub kopi
   
 ##### <a name="to-create-an-all-users-deployment"></a>Aby utworzyć wdrożenie wszystkich użytkowników  
   
-1.  Otwórz plik extension.vsixmanifest w widoku kodu.  
+1. Otwórz plik extension.vsixmanifest w widoku kodu.  
   
-2.  W `Identifier` element manifestu vsix dodawania `AllUsers` element, który ma wartość `true`.  
+2. W `Identifier` element manifestu vsix dodawania `AllUsers` element, który ma wartość `true`.  
   
     ```  
     <AllUsers>true</AllUsers>  
@@ -67,9 +67,9 @@ Niestandardowe strony Start można wdrożyć za pomocą VSIX wdrażania lub kopi
   
      To powoduje, że Instalator vsix monit o podanie uprawnień administratora, a następnie zainstalować pliki do \Common7\IDE\Extensions.  
   
-3.  Otwórz plik .pkgdef.  
+3. Otwórz plik .pkgdef.  
   
-4.  Modyfikowanie .pkgdef do ustawiania domyślnej strony początkowej w obszarze HKLM, dodając następujące polecenie, gdzie *MyStartPage.xaml* jest nazwą pliku XAML, który zawiera stronę początkową.  
+4. Modyfikowanie .pkgdef do ustawiania domyślnej strony początkowej w obszarze HKLM, dodając następujące polecenie, gdzie *MyStartPage.xaml* jest nazwą pliku XAML, który zawiera stronę początkową.  
   
      [$RootKey$\StartPage\Default]  
   
@@ -84,11 +84,11 @@ Niestandardowe strony Start można wdrożyć za pomocą VSIX wdrażania lub kopi
   
 #### <a name="to-manually-install-a-custom-start-page"></a>Aby ręcznie zainstalować niestandardowej strony początkowej  
   
-1.  Skopiuj plik .xaml, który zawiera znaczniki strony początkowej, oraz wszelkie pliki pomocnicze, inne niż zestawy i wklej je w folderze \StartPages\ użytkownika.  
+1. Skopiuj plik .xaml, który zawiera znaczniki strony początkowej, oraz wszelkie pliki pomocnicze, inne niż zestawy i wklej je w folderze \StartPages\ użytkownika.  
   
-2.  Jeśli strona startowa wymaga zestawów, skopiuj je i wklej je w... \\ *Folder instalacji programu visual Studio*\Common7\IDE\PrivateAssemblies\\.  
+2. Jeśli strona startowa wymaga zestawów, skopiuj je i wklej je w... \\ *Folder instalacji programu visual Studio*\Common7\IDE\PrivateAssemblies\\.  
   
-3.  W **Dostosuj stronę początkową** listy na **uruchamiania** opcji wybierz Nowa strona początkowa. Aby uzyskać więcej informacji, zobacz [Dostosowywanie strony początkowej](../ide/customizing-the-start-page-for-visual-studio.md).  
+3. W **Dostosuj stronę początkową** listy na **uruchamiania** opcji wybierz Nowa strona początkowa. Aby uzyskać więcej informacji, zobacz [Dostosowywanie strony początkowej](../ide/customizing-the-start-page-for-visual-studio.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowanie strony początkowej](../ide/customizing-the-start-page-for-visual-studio.md)   

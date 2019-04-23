@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f6e9bea3d45249d847f2dccfe522f832d6a07b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c231aac3b78ddb5100cc06600059045fdc463e51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644526"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074011"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Instrukcje: Dane w pamięci podręcznej w dokumentach zabezpieczonych hasłem
   Możesz dodać dane do pamięci podręcznej danych na dokument lub skoroszyt, który jest chroniony hasłem, zmiany w buforowanych danych nie są zapisywane automatycznie. Aby zapisać zmiany na dane w pamięci podręcznej, zastępowanie dwie metody w projekcie.
@@ -30,13 +30,13 @@ ms.locfileid: "56644526"
 
 ### <a name="to-cache-data-in-a-word-document-that-is-protected-with-a-password"></a>Do buforowania danych w dokumencie programu Word, który jest chroniony hasłem
 
-1.  W `ThisDocument` klasy, oznacz publiczne pole lub właściwość przechowywanie w pamięci podręcznej. Aby uzyskać więcej informacji, zobacz [dane z pamięci podręcznej](../vsto/caching-data.md).
+1. W `ThisDocument` klasy, oznacz publiczne pole lub właściwość przechowywanie w pamięci podręcznej. Aby uzyskać więcej informacji, zobacz [dane z pamięci podręcznej](../vsto/caching-data.md).
 
-2.  Zastąp <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> method in Class metoda `ThisDocument` klasy i usuwanie ochrony z dokumentu.
+2. Zastąp <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> method in Class metoda `ThisDocument` klasy i usuwanie ochrony z dokumentu.
 
      Po zapisaniu dokumentu [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] wywołuje tę metodę w celu zapewniają możliwość wyłączania ochrony dokumentu. Dzięki temu zmiany mają być zapisywane dane buforowane.
 
-3.  Zastąp <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> method in Class metoda `ThisDocument` klasy i ponownie zastosować ochronę dokumentu.
+3. Zastąp <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> method in Class metoda `ThisDocument` klasy i ponownie zastosować ochronę dokumentu.
 
      Po zapisaniu dokumentu [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] wywołuje tę metodę, aby zapewnić możliwość ponownego zastosowania ochrony do dokumentu.
 
@@ -54,13 +54,13 @@ ms.locfileid: "56644526"
 
 ### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>Do buforowania danych w skoroszycie programu Excel, który jest chroniony hasłem
 
-1.  W `ThisWorkbook` klasy lub jednej z `Sheet` *n* klas, oznacz publiczne pole lub właściwość przechowywanie w pamięci podręcznej. Aby uzyskać więcej informacji, zobacz [dane z pamięci podręcznej](../vsto/caching-data.md).
+1. W `ThisWorkbook` klasy lub jednej z `Sheet` *n* klas, oznacz publiczne pole lub właściwość przechowywanie w pamięci podręcznej. Aby uzyskać więcej informacji, zobacz [dane z pamięci podręcznej](../vsto/caching-data.md).
 
-2.  Zastąp <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> method in Class metoda `ThisWorkbook` klasy, a następnie usuń ochronę skoroszytu.
+2. Zastąp <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> method in Class metoda `ThisWorkbook` klasy, a następnie usuń ochronę skoroszytu.
 
      Po zapisaniu skoroszytu [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] wywołuje tę metodę, aby zapewnić możliwość usuwające ochronę skoroszytu. Dzięki temu zmiany mają być zapisywane dane buforowane.
 
-3.  Zastąp <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> method in Class metoda `ThisWorkbook` klasy i ponownie zastosować ochronę dokumentu.
+3. Zastąp <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> method in Class metoda `ThisWorkbook` klasy i ponownie zastosować ochronę dokumentu.
 
      Po zapisaniu skoroszytu [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] wywołuje tę metodę daje możliwość ponownego zastosowania ochrony do skoroszytu.
 

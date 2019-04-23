@@ -8,21 +8,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24ddbcef7c4ebfaa61dfd225c2d1fa13a23b3344
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fd7136367bfb883cfc5d962a1373fec738413fc6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711777"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092256"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Przewodnik: Przechwytywanie informacji graficznych
 W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostyki grafiki, aby ręcznie przechwytywać informacje graficzne z aplikacji Direct3D.
 
  Ten instruktaż ilustruje następujące zadania:
 
--   Przechwytywanie diagnostyki grafiki do aplikacji
+- Przechwytywanie diagnostyki grafiki do aplikacji
 
--   Przechwytywanie informacji graficznych
+- Przechwytywanie informacji graficznych
 
 ## <a name="capturing-graphics-information"></a>Przechwytywanie informacji graficznych
  Aby korzystać z narzędzi programu Graphics Diagnostics, najpierw musisz przechwytywanie informacji graficznych, która opiera się na. Aby włączyć funkcję przechwytywania, należy użyć **Rozpocznij diagnostykę** polecenie, aby podłączyć Graphics Diagnostics do aplikacji podczas jej uruchamiania.
@@ -56,7 +56,7 @@ W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-qu
 ## <a name="next-steps"></a>Następne kroki
  W tym instruktażu zademonstrowano, jak przechwytywać informacje graficzne ręcznie. Kolejnym krokiem Rozważ użycie tej opcji:
 
--   Dowiedz się, jak analizować przechwycone informacje graficzne przy użyciu narzędzi programu Graphics Diagnostics. Zobacz [Przegląd](overview-of-visual-studio-graphics-diagnostics.md).
+- Dowiedz się, jak analizować przechwycone informacje graficzne przy użyciu narzędzi programu Graphics Diagnostics. Zobacz [Przegląd](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Zobacz też
 - [Przechwytywanie informacji graficznych](capturing-graphics-information.md)

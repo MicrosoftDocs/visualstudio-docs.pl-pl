@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0727709ce309ef35ca25896ff84a34577f1e7ef4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 969945260ee453e84ae2aeec0f28559ca11933a0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609621"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083728"
 ---
 # <a name="call-tree-view---contention-data"></a>Widok drzewa wywołań — dane rywalizacji
 Widok drzewa wywołania Wyświetla ścieżki wykonywania funkcji, które zostały przesunięta w profilowanej aplikacji. Główny drzewa jest punktem wejścia do aplikacji lub składnika. Każdy węzeł funkcji zawiera listę wszystkich funkcji, które go wywołały, ile razy funkcja została zablokowana i ilość czasu, że funkcja została zablokowana, ponieważ został on rywalizacji o zasób z innych wątkach lub procesach.
@@ -25,7 +25,7 @@ Widok drzewa wywołania Wyświetla ścieżki wykonywania funkcji, które został
 ## <a name="highlight-the-execution-hot-path"></a>Wyróżnij ścieżkę aktywną wykonywania
  Widok drzewa wywołania można rozwijać i Podświetlenie ścieżki wykonywania procesu lub funkcja, która utworzyła większość rywalizacji.
 
--   Aby wyświetlić najbardziej aktywne ścieżkę, kliknij prawym przyciskiem myszy proces lub funkcji, a następnie kliknij **Rozwiń ścieżkę aktywną**.
+- Aby wyświetlić najbardziej aktywne ścieżkę, kliknij prawym przyciskiem myszy proces lub funkcji, a następnie kliknij **Rozwiń ścieżkę aktywną**.
 
 ## <a name="set-the-call-tree-root-node"></a>Ustaw węzeł główny drzewa wywołań
  Każdy proces, w trakcie uruchomienia profilowania pojawia się jako węzeł główny. Aby ustawić węzeł początkowy widok drzewa wywołania, kliknij prawym przyciskiem myszy węzeł, który chcesz ustawić jako węzeł początkowy, a następnie kliknij przycisk **zestawu głównego**.

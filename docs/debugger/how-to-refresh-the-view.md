@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be6a1b70326e2eca32c1be2c27382e55c51bc5f1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 485c9e7152b3ed533c08e3f4f48409455849c43e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681871"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075054"
 ---
 # <a name="how-to-refresh-the-view"></a>Instrukcje: Odśwież widok
 Spy ++ tworzy "migawkę" tabel systemowych i odświeża widoku na podstawie tych informacji. Należy okresowo odświeżać widoków systemu. Jeśli masz narzędzie Spy ++ widok Otwórz i nie mają odświeżyć widok, nie zobaczysz te procesy, wątki i systemu windows, które następnie są tworzone. Ponadto możesz zobaczyć elementy, które już istnieją. **Odśwież** polecenie jest dostępne dla wszystkich widoków z wyjątkiem widoku komunikatów.
 
 ### <a name="to-refresh-the-currently-active-view"></a>Aby odświeżyć widok aktywne
 
--   Wybierz **Odśwież** z **okna** menu lub kliknij przycisk **Odśwież** przycisku na pasku narzędzi.
+- Wybierz **Odśwież** z **okna** menu lub kliknij przycisk **Odśwież** przycisku na pasku narzędzi.
 
 ## <a name="see-also"></a>Zobacz też
 - [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)

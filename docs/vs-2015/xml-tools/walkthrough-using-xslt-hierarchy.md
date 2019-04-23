@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d662a94a77dff02fd994122e5106f5bff35bac3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ed644c1dda4ac3674ef60d0027c37532fc6d0f92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669448"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075627"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>Przewodnik: Korzystanie z hierarchii XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Narzędzie hierarchii XSLT upraszcza wiele zadań programistycznych XML. Arkusz 
   
 ### <a name="procedure-title"></a>Tytuł procedury  
   
-1.  Otwórz dokument XML w programie Visual Studio. W tym przykładzie użyto następujących `collection.xml` dokumentu.  
+1. Otwórz dokument XML w programie Visual Studio. W tym przykładzie użyto następujących `collection.xml` dokumentu.  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -51,7 +51,7 @@ Narzędzie hierarchii XSLT upraszcza wiele zadań programistycznych XML. Arkusz 
     </COLLECTION>  
     ```  
   
-2.  Dodaj następujący kod `xslincludefile.xsl`:  
+2. Dodaj następujący kod `xslincludefile.xsl`:  
   
     ```  
     <?xml version='1.0'?>  
@@ -74,7 +74,7 @@ Narzędzie hierarchii XSLT upraszcza wiele zadań programistycznych XML. Arkusz 
     </xsl:stylesheet>  
     ```  
   
-3.  Dodaj następujący kod `xslinclude.xsl` pliku:  
+3. Dodaj następujący kod `xslinclude.xsl` pliku:  
   
     ```  
     <?xml version='1.0'?>  
@@ -108,11 +108,11 @@ Narzędzie hierarchii XSLT upraszcza wiele zadań programistycznych XML. Arkusz 
     </xsl:stylesheet>  
     ```  
   
-4.  Dodaj punkt przerwania w instrukcji: `<xsl:include href="xslincludefile.xsl" />`  
+4. Dodaj punkt przerwania w instrukcji: `<xsl:include href="xslincludefile.xsl" />`  
   
-5.  Rozpocznij debugowanie.  
+5. Rozpocznij debugowanie.  
   
-6.  Gdy debuger zatrzymuje się w instrukcji `<xsl:include href="xslincludefile.xsl" />`, naciśnij klawisz Wkrocz do przycisku. Należy pamiętać, że debugowanie może być kontynuowane w arkuszu stylów odwołania. Hierarchia jest widoczna i Projektant wyświetla prawidłową ścieżkę.  
+6. Gdy debuger zatrzymuje się w instrukcji `<xsl:include href="xslincludefile.xsl" />`, naciśnij klawisz Wkrocz do przycisku. Należy pamiętać, że debugowanie może być kontynuowane w arkuszu stylów odwołania. Hierarchia jest widoczna i Projektant wyświetla prawidłową ścieżkę.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik: XSLT Profiler](../xml-tools/walkthrough-xslt-profiler.md)

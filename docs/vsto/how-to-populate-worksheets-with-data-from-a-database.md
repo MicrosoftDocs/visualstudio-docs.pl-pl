@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1169ea54ffbc0d0437204ed4491e2b8cc68a4a04
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 67c12843d00bf8d5af51fa7af3175077527afa58
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865622"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079150"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Instrukcje: Zapełnianie arkuszy danymi z bazy danych
 
@@ -35,17 +35,17 @@ Poniższy przykład pokazuje, jak dodać formanty powiązane z danymi w użyciu 
 
 ### <a name="to-populate-a-worksheet-with-data-from-a-database"></a>Aby wypełnić arkusza z danymi z bazy danych
 
-1.  Otwórz projekt poziomu dokumentu programu Excel w programie Visual Studio po otwarciu arkusza w projektancie.
+1. Otwórz projekt poziomu dokumentu programu Excel w programie Visual Studio po otwarciu arkusza w projektancie.
 
-2.  Otwórz **źródeł danych** okna i Utwórz źródło danych dla projektu. Aby uzyskać więcej informacji, zobacz [dodać nowe połączenia](../data-tools/add-new-connections.md).
+2. Otwórz **źródeł danych** okna i Utwórz źródło danych dla projektu. Aby uzyskać więcej informacji, zobacz [dodać nowe połączenia](../data-tools/add-new-connections.md).
 
-3.  Przeciągnij pole lub tabela, z **źródeł danych** okna do arkusza.
+3. Przeciągnij pole lub tabela, z **źródeł danych** okna do arkusza.
 
 Jedną z następujących formantów jest tworzony w arkuszu:
 
--   Jeśli przeciągniesz pole <xref:Microsoft.Office.Tools.Excel.NamedRange> formant zostanie utworzony w arkuszu. Aby uzyskać więcej informacji, zobacz [kontrolki NamedRange](../vsto/namedrange-control.md).
+- Jeśli przeciągniesz pole <xref:Microsoft.Office.Tools.Excel.NamedRange> formant zostanie utworzony w arkuszu. Aby uzyskać więcej informacji, zobacz [kontrolki NamedRange](../vsto/namedrange-control.md).
 
--   Jeśli przeciągniesz tabeli <xref:Microsoft.Office.Tools.Excel.ListObject> formant zostanie utworzony w arkuszu. Aby uzyskać więcej informacji, zobacz [kontrolki ListObject](../vsto/listobject-control.md).
+- Jeśli przeciągniesz tabeli <xref:Microsoft.Office.Tools.Excel.ListObject> formant zostanie utworzony w arkuszu. Aby uzyskać więcej informacji, zobacz [kontrolki ListObject](../vsto/listobject-control.md).
 
 Można dodać innej kontrolki, wybierając tabelę lub pole **źródeł danych** okna, a następnie wybierając innej kontrolki z listy rozwijanej.
 
@@ -53,19 +53,19 @@ Można dodać innej kontrolki, wybierając tabelę lub pole **źródeł danych**
 
 Oprócz sterowania następujące obiekty powiązane dane są automatycznie dodawane do projektu:
 
--   Wpisany zestaw danych, który hermetyzuje tabelami danych, które łączysz się w bazie danych. Aby uzyskać więcej informacji, zobacz [narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+- Wpisany zestaw danych, który hermetyzuje tabelami danych, które łączysz się w bazie danych. Aby uzyskać więcej informacji, zobacz [narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
--   A <xref:System.Windows.Forms.BindingSource> który formant łączy się z zestawu danych. Aby uzyskać więcej informacji, zobacz [— informacje o składniku BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
+- A <xref:System.Windows.Forms.BindingSource> który formant łączy się z zestawu danych. Aby uzyskać więcej informacji, zobacz [— informacje o składniku BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
--   TableAdapter, łączącej typizowany zestaw danych w bazie danych. Aby uzyskać więcej informacji, zobacz [TableAdapter — Przegląd](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+- TableAdapter, łączącej typizowany zestaw danych w bazie danych. Aby uzyskać więcej informacji, zobacz [TableAdapter — Przegląd](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
--   TableAdapterManager, który służy do koordynowania adapterów tabel w zestawie danych w celu włączenia aktualizacji hierarchicznej. Aby uzyskać więcej informacji, zobacz [hierarchiczna aktualizacja](../data-tools/hierarchical-update.md) i [odwołania TableAdapterManager](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
+- TableAdapterManager, który służy do koordynowania adapterów tabel w zestawie danych w celu włączenia aktualizacji hierarchicznej. Aby uzyskać więcej informacji, zobacz [hierarchiczna aktualizacja](../data-tools/hierarchical-update.md) i [odwołania TableAdapterManager](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
 
 Kiedy uruchamiasz projekt, kontrolka ma wyświetlać pierwszego rekordu w źródle danych. Możesz użyć <xref:System.Windows.Forms.BindingSource> aby umożliwić użytkownikom do przewijania rekordów.
 
 ### <a name="to-scroll-through-the-records"></a>Do przewijania rekordów
 
--   Użyj <xref:System.Windows.Forms.BindingSource> metody takie jak <xref:System.Windows.Forms.BindingSource.MoveNext%2A> i <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
+- Użyj <xref:System.Windows.Forms.BindingSource> metody takie jak <xref:System.Windows.Forms.BindingSource.MoveNext%2A> i <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
 
 Aby uzyskać informacje o sposobie wysyłania aktualizacji do zestawu danych i bazę danych, zobacz [jak: Aktualizowanie źródła danych danymi z kontrolki hosta](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 

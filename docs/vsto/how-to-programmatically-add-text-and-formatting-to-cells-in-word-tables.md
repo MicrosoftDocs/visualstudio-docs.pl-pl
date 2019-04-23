@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 983b2939d652c20c3fbcb42dd8caded802495c8d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a415e55c263534ee4b29e5b45e24ad471d68fe0e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614652"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063871"
 ---
 # <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>Instrukcje: Programowe Dodawanie tekstu i formatowania do komórek w tabelach programu Word
   Każda tabela składa się z kolekcji komórek. Poszczególnym <xref:Microsoft.Office.Interop.Word.Cell> obiekt reprezentuje jedną komórkę w tabeli. To odwołanie do każdej komórki według lokalizacji w tabeli. Ten przykład dotyczy komórek znajduje się w pierwszym wierszu i pierwszą kolumnę tabeli; dodaje tekst do komórki; i stosuje formatowanie.
@@ -29,7 +29,7 @@ ms.locfileid: "56614652"
 
 ## <a name="to-add-text-and-formatting-to-cells"></a>Dodawanie tekstu i formatowania do komórek
 
-1.  Odwołanie do komórki według lokalizacji w tabeli, Dodaj tekst do komórki i zastosować formatowanie.
+1. Odwołanie do komórki według lokalizacji w tabeli, Dodaj tekst do komórki i zastosować formatowanie.
 
      Poniższy przykład kodu może służyć w dostosowaniu na poziomie dokumentu. Aby użyć tego przykładu, należy uruchomić go z `ThisDocument` klasy w projekcie.
 

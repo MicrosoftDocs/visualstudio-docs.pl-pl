@@ -9,25 +9,25 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eca75f325557ee118cf4ab54287978dc63420ff7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 202ff45d5b69f91d9f0081c8253c11962009abaa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793484"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068954"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Dostępność produktów i usług (program Blend)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Firma Microsoft poświęca wiele uwagi ułatwiając wszystkim użytkownikom korzystania z jej produktów i usług. W rozdziałach poniżej zawarto informacje o funkcjach, produktach i usługach, dzięki którym system Microsoft Windows jest łatwiej dostępny dla osób niepełnosprawnych:  
   
--   „Funkcje ułatwień dostępu w systemie Windows”  
+- „Funkcje ułatwień dostępu w systemie Windows”  
   
--   „Dokumentacja w alternatywnych formatach”  
+- „Dokumentacja w alternatywnych formatach”  
   
--   „Obsługa klienta dla osób z wadą słuchu”  
+- „Obsługa klienta dla osób z wadą słuchu”  
   
--   „Informacje dodatkowe”  
+- „Informacje dodatkowe”  
   
 > [!NOTE]
 >  Informacje w tym rozdziale mogą dotyczyć wyłącznie użytkowników, którzy uzyskali licencje na produkty firmy Microsoft w Stanach Zjednoczonych. Jeśli użytkownik uzyskał produkt poza Stanami Zjednoczonymi, może użyć karty informacji o przedstawicielstwach dołączonej do pakietu oprogramowania lub odwiedzić [witryny Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkID=75069) listę Microsoft pomocy technicznej usługi telefonu liczby i adresów. Można się skontaktować z oddziałem firmy Microsoft i sprawdzić, czy produkty i usługi opisane w tym rozdziale są dostępne na danym terenie. Informacje o ułatwieniach dostępu są dostępne również w innych językach, między innymi w japońskim i francuskim.  
@@ -48,7 +48,7 @@ Firma Microsoft poświęca wiele uwagi ułatwiając wszystkim użytkownikom korz
 ## <a name="documentation-in-alternative-formats"></a>Dokumentacja w alternatywnych formatach  
  Osoby mające trudności z czytaniem lub obsługą materiałów drukowanych mogą dla wielu produktów Microsoft uzyskać dokumentację w bardziej przystępnych formatach. Możesz wyświetlić indeks przystępnej dokumentacji produktów w [witryny Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkID=75069).  
   
- Dodatkowo kolejne publikacje Microsoft można uzyskać od firmy Recording for the Blind & Dyslexic, Inc (RFB&D). RFB&D rozpowszechnia te dokumenty zarejestrowanym użytkownikom spełniającym odpowiednie kryteria. Aby uzyskać informacje o dostępności dokumentacji produktów Microsoft i książek w wydawnictwie Microsoft Press, skontaktuj się z:  
+ Ponadto można uzyskać dodatkowe publikacje firmy Microsoft od firmy Recording for the Blind & Dyslexic, Inc (RFB & D). Firma RFB & D dystrybuuje te dokumenty zarejestrowanym, uprawnionym członkom dystrybucji usługi. Aby uzyskać informacje o dostępności dokumentacji produktów Microsoft i książek w wydawnictwie Microsoft Press, skontaktuj się z:  
   
  **Learning Ally**  
   

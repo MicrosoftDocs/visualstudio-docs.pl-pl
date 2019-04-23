@@ -11,12 +11,12 @@ ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 23dc268aad528e7a628b384f8931ccfcec2674fe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3df1a4e61859aee4b27dccf5360e0ae99ad5aa8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757116"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077527"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Lista kontrolna: Tworzenie starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ Poniższa lista zawiera podsumowanie podstawowe kroki, które należy wykonać, 
   
 ## <a name="steps-for-creating-a-language-service"></a>Procedury służące do tworzenia usługi językowej  
   
-1.  Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> interfejsu.  
+1. Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> interfejsu.  
   
-    -   W pliku z pakietu VSPackage, zaimplementuj <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interfejsu, aby zapewnić obsługę języka.  
+    - W pliku z pakietu VSPackage, zaimplementuj <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interfejsu, aby zapewnić obsługę języka.  
   
-    -   Udostępnianie usługi w języka zintegrowanego środowiska programistycznego (IDE) w swojej <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementacji.  
+    - Udostępnianie usługi w języka zintegrowanego środowiska programistycznego (IDE) w swojej <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementacji.  
   
-2.  Implementowanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfejsu w klasie usługi główny język.  
+2. Implementowanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfejsu w klasie usługi główny język.  
   
      <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Interfejs jest punktem początkowym interakcji między podstawowy edytor i usługa językowa.  
   
@@ -121,7 +121,7 @@ Poniższa lista zawiera podsumowanie podstawowe kroki, które należy wykonać, 
   
    Podaj kontekstu do edytora w jednym z następujących sposobów:  
   
-  -   Dostarczanie kontekstu znaczników tekstu poprzez implementację <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> interfejsu.  
+  - Dostarczanie kontekstu znaczników tekstu poprzez implementację <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> interfejsu.  
   
   Podaj wszystkie kontekstu użytkownika poprzez implementację <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> interfejsu.  
   

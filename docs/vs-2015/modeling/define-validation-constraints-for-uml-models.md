@@ -11,12 +11,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f7144f435c61bcf6cab03b55482962e55b02407e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9591875b525d44e343f8326b7f5a145b04b57cff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780603"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071165"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definiowanie ograniczeń walidacji dla modeli UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ Można zdefiniować ograniczenia sprawdzania poprawności, które sprawdzić, cz
 ## <a name="defining-a-validation-extension"></a>Definiowanie rozszerzenia sprawdzania poprawności  
  Aby utworzyć rozszerzenie sprawdzania poprawności dla projektanta UML, należy utworzyć klasę, która definiuje ograniczenia sprawdzania poprawności i osadzić tę klasę w Visual Studio Integration rozszerzenie (VSIX). VSIX działa jako kontener, który może zainstalować ograniczenie. Istnieją dwie alternatywne metody definiowania rozszerzenia sprawdzania poprawności:  
   
--   **Utwórz rozszerzenie walidacji w jego własnym VSIX przy użyciu szablonu projektu.** Jest to szybsza metoda. Użyj go, jeśli nie chcesz połączyć ograniczeń sprawdzania poprawności z innymi rodzajami rozszerzeń takich jak polecenia menu, elementy do przybornika niestandardowego lub program obsługi gestów. Można zdefiniować kilka ograniczeń w jednej klasie.  
+- **Utwórz rozszerzenie walidacji w jego własnym VSIX przy użyciu szablonu projektu.** Jest to szybsza metoda. Użyj go, jeśli nie chcesz połączyć ograniczeń sprawdzania poprawności z innymi rodzajami rozszerzeń takich jak polecenia menu, elementy do przybornika niestandardowego lub program obsługi gestów. Można zdefiniować kilka ograniczeń w jednej klasie.  
   
--   **Utwórz osobną klasę weryfikacji i projektów VSIX.** Użyj tej metody, jeśli chcesz połączyć kilka rodzajów rozszerzeń w samym VSIX. Na przykład jeśli polecenie menu oczekuje modelu do przestrzegania szczególnych ograniczeń, można ją osadzić w samym VSIX jako metodę sprawdzania poprawności.  
+- **Utwórz osobną klasę weryfikacji i projektów VSIX.** Użyj tej metody, jeśli chcesz połączyć kilka rodzajów rozszerzeń w samym VSIX. Na przykład jeśli polecenie menu oczekuje modelu do przestrzegania szczególnych ograniczeń, można ją osadzić w samym VSIX jako metodę sprawdzania poprawności.  
   
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>Aby utworzyć rozszerzenie sprawdzania poprawności w jego własnym VSIX  
   
@@ -81,29 +81,29 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 #### <a name="to-create-a-separate-validation-constraint-in-a-class-library-project"></a>Aby utworzyć ograniczenie osobnego sprawdzania poprawności w projekcie biblioteki klas  
   
-1.  Utwórz projekt biblioteki klas, dodając go do istniejącego rozwiązania VSIX albo tworząc nowe rozwiązanie.  
+1. Utwórz projekt biblioteki klas, dodając go do istniejącego rozwiązania VSIX albo tworząc nowe rozwiązanie.  
   
-    1.  Na **pliku** menu, wybierz **New**, **projektu**.  
+    1. Na **pliku** menu, wybierz **New**, **projektu**.  
   
-    2.  W obszarze **zainstalowane szablony**, rozwiń węzeł **Visual C#** lub **języka Visual Basic**, a następnie w środkowej kolumnie Wybierz **biblioteki klas**.  
+    2. W obszarze **zainstalowane szablony**, rozwiń węzeł **Visual C#** lub **języka Visual Basic**, a następnie w środkowej kolumnie Wybierz **biblioteki klas**.  
   
-2.  Chyba że rozwiązanie zawiera już jeden, Utwórz projekt VSIX:  
+2. Chyba że rozwiązanie zawiera już jeden, Utwórz projekt VSIX:  
   
-    1.  W **Eksploratora rozwiązań**, w menu skrótów rozwiązania wybierz **Dodaj**, **nowy projekt**.  
+    1. W **Eksploratora rozwiązań**, w menu skrótów rozwiązania wybierz **Dodaj**, **nowy projekt**.  
   
-    2.  W obszarze **zainstalowane szablony**, rozwiń węzeł **Visual C#** lub **języka Visual Basic**, następnie wybierz **rozszerzalności**. W środkowej kolumnie kliknij **projekt VSIX**.  
+    2. W obszarze **zainstalowane szablony**, rozwiń węzeł **Visual C#** lub **języka Visual Basic**, następnie wybierz **rozszerzalności**. W środkowej kolumnie kliknij **projekt VSIX**.  
   
-3.  Ustaw projekt VSIX jako projekt startowy rozwiązania.  
+3. Ustaw projekt VSIX jako projekt startowy rozwiązania.  
   
-    -   W Eksploratorze rozwiązań w menu skrótów projektu VSIX wybierz **Ustaw jako projekt startowy**.  
+    - W Eksploratorze rozwiązań w menu skrótów projektu VSIX wybierz **Ustaw jako projekt startowy**.  
   
-4.  W **source.extension.vsixmanifest**w obszarze **zawartości**, Dodaj projekt biblioteki klas jako składnik MEF:  
+4. W **source.extension.vsixmanifest**w obszarze **zawartości**, Dodaj projekt biblioteki klas jako składnik MEF:  
   
-    1.  Na **metadanych** kartę, ustaw nazwę VSIX.  
+    1. Na **metadanych** kartę, ustaw nazwę VSIX.  
   
-    2.  Na **Instaluj obiekty docelowe** kartę, należy ustawić wersji programu Visual Studio jako obiekty docelowe.  
+    2. Na **Instaluj obiekty docelowe** kartę, należy ustawić wersji programu Visual Studio jako obiekty docelowe.  
   
-    3.  Na **zasoby** kartę, wybrać **New**i w oknie dialogowym Ustaw:  
+    3. Na **zasoby** kartę, wybrać **New**i w oknie dialogowym Ustaw:  
   
          **Typ** = **składnik MEF**  
   
@@ -113,9 +113,9 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 #### <a name="to-define-the-validation-class"></a>Aby zdefiniować klasę walidacji  
   
-1.  Nie potrzebujesz tej procedury, jeśli utworzono klasy weryfikacji z własnej VSIX z szablonu projektu sprawdzania poprawności.  
+1. Nie potrzebujesz tej procedury, jeśli utworzono klasy weryfikacji z własnej VSIX z szablonu projektu sprawdzania poprawności.  
   
-2.  W projekcie klasy sprawdzania poprawności, należy dodać odwołania do następujących [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] zestawów:  
+2. W projekcie klasy sprawdzania poprawności, należy dodać odwołania do następujących [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] zestawów:  
   
      `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
   
@@ -125,11 +125,11 @@ using Microsoft.VisualStudio.Uml.Classes;
   
      `System.ComponentModel.Composition`  
   
-3.  Dodaj plik do projektu biblioteki klas zawierający kod, który jest podobny do poniższego przykładu.  
+3. Dodaj plik do projektu biblioteki klas zawierający kod, który jest podobny do poniższego przykładu.  
   
-    -   Każde ograniczenie sprawdzania poprawności znajduje się w metodzie, która jest oznaczona szczególnym atrybutem. Metoda akceptuje parametr typu elementu modelu. Podczas sprawdzania poprawności, szablon sprawdzania poprawności zastosuje każdej metody sprawdzania poprawności do każdego elementu modelu, który odpowiada jego typowi parametru.  
+    - Każde ograniczenie sprawdzania poprawności znajduje się w metodzie, która jest oznaczona szczególnym atrybutem. Metoda akceptuje parametr typu elementu modelu. Podczas sprawdzania poprawności, szablon sprawdzania poprawności zastosuje każdej metody sprawdzania poprawności do każdego elementu modelu, który odpowiada jego typowi parametru.  
   
-    -   Metody te można umieścić w jakiejkolwiek klasie i przestrzeni nazw. Należy je zmienić zgodnie z preferencjami.  
+    - Metody te można umieścić w jakiejkolwiek klasie i przestrzeni nazw. Należy je zmienić zgodnie z preferencjami.  
   
     ```  
     using System.Collections.Generic;  
@@ -178,48 +178,48 @@ using Microsoft.VisualStudio.Uml.Classes;
     }  
     ```  
   
-##  <a name="Executing"></a> Wykonywanie ograniczenia sprawdzania poprawności  
+## <a name="Executing"></a> Wykonywanie ograniczenia sprawdzania poprawności  
  Do celów testowych wykonaj metody walidacji w trybie debugowania.  
   
 #### <a name="to-test-the-validation-constraint"></a>Aby przetestować ograniczenie sprawdzania poprawności  
   
-1.  Naciśnij klawisz **F5**, lub na **debugowania** menu, wybierz **Rozpocznij debugowanie**.  
+1. Naciśnij klawisz **F5**, lub na **debugowania** menu, wybierz **Rozpocznij debugowanie**.  
   
      Eksperymentalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozpoczyna się.  
   
      **Rozwiązywanie problemów z**: Jeśli nowy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nie można uruchomić:  
   
-    -   Jeśli masz więcej niż jeden projekt, upewnij się, że projekt VSIX jest ustawiony jako projekt startowy rozwiązania.  
+    - Jeśli masz więcej niż jeden projekt, upewnij się, że projekt VSIX jest ustawiony jako projekt startowy rozwiązania.  
   
-    -   W Eksploratorze rozwiązań w menu skrótów uruchamiania lub tylko projektu, wybierz **właściwości**. W edytorze właściwości projektu zaznacz **debugowania** kartę. Upewnij się, że ciąg w **uruchomienia programu zewnętrznego** pole jest pełna nazwa ścieżki [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zazwyczaj:  
+    - W Eksploratorze rozwiązań w menu skrótów uruchamiania lub tylko projektu, wybierz **właściwości**. W edytorze właściwości projektu zaznacz **debugowania** kartę. Upewnij się, że ciąg w **uruchomienia programu zewnętrznego** pole jest pełna nazwa ścieżki [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zazwyczaj:  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  W eksperymentalnym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], Otwórz lub Utwórz projekt modelowania i otworzyć lub utworzyć diagram modelowania.  
+2. W eksperymentalnym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], Otwórz lub Utwórz projekt modelowania i otworzyć lub utworzyć diagram modelowania.  
   
-3.  Aby skonfigurować test próbki ograniczenia podany w poprzedniej sekcji:  
+3. Aby skonfigurować test próbki ograniczenia podany w poprzedniej sekcji:  
   
-    1.  Otwórz diagram klas.  
+    1. Otwórz diagram klas.  
   
-    2.  Utwórz klasę i dodaj dwa atrybuty, które mają taką samą nazwę.  
+    2. Utwórz klasę i dodaj dwa atrybuty, które mają taką samą nazwę.  
   
-4.  W menu skrótów w dowolnym miejscu na diagramie wybierz **weryfikacji**.  
+4. W menu skrótów w dowolnym miejscu na diagramie wybierz **weryfikacji**.  
   
-5.  Błędy w modelu będą raportowane w oknie błędów.  
+5. Błędy w modelu będą raportowane w oknie błędów.  
   
-6.  Kliknij dwukrotnie raport o błędach. Jeśli elementy wymienione w raporcie są widoczne na ekranie, zostaną one wyróżnione.  
+6. Kliknij dwukrotnie raport o błędach. Jeśli elementy wymienione w raporcie są widoczne na ekranie, zostaną one wyróżnione.  
   
      **Rozwiązywanie problemów z**: Jeśli **weryfikacji** nie ma polecenia menu, upewnij się, że:  
   
-    -   Projekt sprawdzania poprawności jest wymieniony jako składnik listy MEF **zasoby** karcie **source.extensions.manifest** w projekcie VSIX.  
+    - Projekt sprawdzania poprawności jest wymieniony jako składnik listy MEF **zasoby** karcie **source.extensions.manifest** w projekcie VSIX.  
   
-    -   Poprawny `Export` i `ValidationMethod` atrybuty są dołączone do metody sprawdzania poprawności.  
+    - Poprawny `Export` i `ValidationMethod` atrybuty są dołączone do metody sprawdzania poprawności.  
   
-    -   `ValidationCategories.Menu` znajduje się w argumencie `ValidationMethod` atrybutu i składa się z innych wartości przy użyciu logicznych lub (&#124;).  
+    - `ValidationCategories.Menu` znajduje się w argumencie `ValidationMethod` atrybutu i składa się z innych wartości przy użyciu logicznych lub (&#124;).  
   
-    -   Parametry wszystkich `Import` i `Export` atrybuty są prawidłowe.  
+    - Parametry wszystkich `Import` i `Export` atrybuty są prawidłowe.  
   
-##  <a name="Implementing"></a> Ocena ograniczenia  
+## <a name="Implementing"></a> Ocena ograniczenia  
  Metoda sprawdzania poprawności powinna ustalić, czy ograniczenie sprawdzania poprawności, które chcesz zastosować jest wartość PRAWDA lub FAŁSZ. W przypadku opcji true nie powinny nic robić. Jeśli ma wartość FAŁSZ, należy zgłosić błąd przy użyciu metod dostarczonych przez `ValidationContext` parametru.  
   
 > [!NOTE]
@@ -349,7 +349,7 @@ IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);  
 ```  
   
-###  <a name="ContextCache"></a> Koordynowanie wielokrotnego sprawdzania poprawności  
+### <a name="ContextCache"></a> Koordynowanie wielokrotnego sprawdzania poprawności  
  Podczas sprawdzania poprawności, na przykład przez użytkownika menu wykresu, każda metoda sprawdzania poprawności ma zastosowanie do każdego elementu modelu. Oznacza to, że w pojedynczej grupy wywołanie RAM sprawdzania poprawności, tę samą metodę można stosować wiele razy do różnych elementów.  
   
  Stanowi to problem dla sprawdzanie poprawności, które zajmuje się relacją między elementami. Na przykład można napisać sprawdzanie poprawności, które zaczyna się, powiedzmy, przypadek użycia i sprawdzić **obejmują** relacje, aby zweryfikować, że nie istnieją żadne pętle. Ale kiedy metoda jest stosowana do każdego przypadku użycia w modelu, który ma wiele **obejmują** łącza, prawdopodobnie będzie wielokrotnie przetwarzać te same obszary modelu.  
@@ -363,26 +363,26 @@ context.LogError(... , usecase);
 |`context.GetValue<T>(name)`|Pobierz wartość.|  
 |`Context.GetValue<T>()`|Pobierz wartość określonego typu.|  
   
-##  <a name="Installing"></a> Instalowanie i odinstalowywanie rozszerzenia  
+## <a name="Installing"></a> Instalowanie i odinstalowywanie rozszerzenia  
  Możesz zainstalować [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] rozszerzenie zarówno na swoim komputerze, jak i na innych komputerach.  
   
 #### <a name="to-install-an-extension"></a>Aby zainstalować rozszerzenie  
   
-1.  Na komputerze, należy znaleźć **.vsix** pliku, który został zbudowany w danym projekcie VSIX.  
+1. Na komputerze, należy znaleźć **.vsix** pliku, który został zbudowany w danym projekcie VSIX.  
   
-    1.  W **Eksploratora rozwiązań**, w menu skrótów projektu VSIX wybierz **Otwórz Folder w Eksploratorze Windows**.  
+    1. W **Eksploratora rozwiązań**, w menu skrótów projektu VSIX wybierz **Otwórz Folder w Eksploratorze Windows**.  
   
-    2.  Zlokalizuj plik **bin\\\*\\**_YourProject_**.vsix**  
+    2. Zlokalizuj plik **bin\\\*\\**_YourProject_**.vsix**  
   
-2.  Kopiuj **.vsix** plik na komputer docelowy, na którym chcesz zainstalować rozszerzenie. Może to być Twój własny komputer lub innej.  
+2. Kopiuj **.vsix** plik na komputer docelowy, na którym chcesz zainstalować rozszerzenie. Może to być Twój własny komputer lub innej.  
   
-    -   Komputer docelowy musi mieć jedną z wersji [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] ustawionego w **source.extension.vsixmanifest**.  
+    - Komputer docelowy musi mieć jedną z wersji [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] ustawionego w **source.extension.vsixmanifest**.  
   
-3.  Na komputerze docelowym, otwórz **.vsix** pliku.  
+3. Na komputerze docelowym, otwórz **.vsix** pliku.  
   
      **Instalator rozszerzenia programu Visual Studio** otwiera i instaluje rozszerzenia.  
   
-4.  Uruchom lub uruchom ponownie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+4. Uruchom lub uruchom ponownie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
 #### <a name="to-uninstall-an-extension"></a>Aby odinstalować rozszerzenie  
   
@@ -396,7 +396,7 @@ context.LogError(... , usecase);
   
    *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [wersja]**  
   
-##  <a name="Example"></a> Przykład  
+## <a name="Example"></a> Przykład  
  W tym przykładzie wyszukuje pętli w relacji zależności między elementami.  
   
  Będzie sprawdzać poprawność zarówno na zapisu i polecenia menu sprawdzania poprawności.  

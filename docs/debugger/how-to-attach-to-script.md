@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2402cbc4f4a1fa37c4317c6616fc02e4fa34e59d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 72ae0ff0b4958e831f96a0eb62b4a1a4a453ece7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686083"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084911"
 ---
 # <a name="how-to-attach-to-script"></a>Instrukcje: Dołączanie do skryptu
 W tym temacie wyjaśniono, jak ręczne dołączenie debugera programu Visual Studio do pliku skryptu w celu debugowania.
@@ -34,21 +34,21 @@ W tym temacie wyjaśniono, jak ręczne dołączenie debugera programu Visual Stu
 
 2. W **dołączyć do procesu** okno dialogowe, przyjrzeć **dostępne procesy** chcesz dołączyć do listy i Znajdź skryptu procedur. Procesy skryptu można zidentyfikować, analizując **typu** kolumny.
 
-   1.  Jeśli proces, który chcesz debugować jest uruchomiony na innym komputerze, musisz najpierw wybrać komputera zdalnego.
+   1. Jeśli proces, który chcesz debugować jest uruchomiony na innym komputerze, musisz najpierw wybrać komputera zdalnego.
 
-   2.  Jeśli proces działa przy użyciu konta innego użytkownika, wybierz opcję **Pokaż procesy wszystkich użytkowników** pole wyboru.
+   2. Jeśli proces działa przy użyciu konta innego użytkownika, wybierz opcję **Pokaż procesy wszystkich użytkowników** pole wyboru.
 
-   3.  Jeśli są połączone za pośrednictwem **Podłączanie pulpitu zdalnego**, wybierz opcję **Pokaż procesy we wszystkich sesjach** pole wyboru.
+   3. Jeśli są połączone za pośrednictwem **Podłączanie pulpitu zdalnego**, wybierz opcję **Pokaż procesy we wszystkich sesjach** pole wyboru.
 
 3. Kliknij proces, który chcesz dołączyć do.
 
 4. W **dołączyć do** polu, powinien zostać wyświetlony **kod skryptu** lub **automatyczne: Kod skryptu**. Jeśli widzisz czymkolwiek, wykonaj następujące kroki:
 
-   1.  Kliknij przycisk **wybierz**.
+   1. Kliknij przycisk **wybierz**.
 
-   2.  W **Wybieranie typu kodu** okno dialogowe, kliknij przycisk **debugowania tych typów kodu** i wybierz **skryptu**.
+   2. W **Wybieranie typu kodu** okno dialogowe, kliknij przycisk **debugowania tych typów kodu** i wybierz **skryptu**.
 
-   3.  Kliknij przycisk **OK**.
+   3. Kliknij przycisk **OK**.
 
 5. Kliknij przycisk **dołączyć**.
 

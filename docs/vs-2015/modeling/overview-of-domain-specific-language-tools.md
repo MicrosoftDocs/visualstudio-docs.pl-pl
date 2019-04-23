@@ -11,12 +11,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed5232ed8f0033e5953f14b8e4a9aa08abcb316c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d36b2cb0c4e8e7ddf9016302c9efcfae0710097c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802980"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088746"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Przegląd narzędzi językowych właściwych dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ Narzędzia języka specyficznego dla domeny (narzędzia DSL), które są hostowa
   
  Narzędzia DSL obejmuje następujące narzędzia:  
   
--   Kreator projektu, który używa innego rozwiązania szablonów, które ułatwią rozpoczęcie tworzenia języka specyficznego dla domeny.  
+- Kreator projektu, który używa innego rozwiązania szablonów, które ułatwią rozpoczęcie tworzenia języka specyficznego dla domeny.  
   
--   Graficzny projektant do tworzenia i edytowania definicji języka specyficznego dla domeny.  
+- Graficzny projektant do tworzenia i edytowania definicji języka specyficznego dla domeny.  
   
--   Aparat sprawdzania poprawności upewnia się, że definicji języka specyficznego dla domeny jest dobrze sformułowany i wyświetla błędy i ostrzeżenia, jeśli wystąpią problemy.  
+- Aparat sprawdzania poprawności upewnia się, że definicji języka specyficznego dla domeny jest dobrze sformułowany i wyświetla błędy i ostrzeżenia, jeśli wystąpią problemy.  
   
--   Generator kodu, który przyjmuje definicji języka specyficznego dla domeny jako dane wejściowe i generuje kod źródłowy jako dane wyjściowe.  
+- Generator kodu, który przyjmuje definicji języka specyficznego dla domeny jako dane wejściowe i generuje kod źródłowy jako dane wyjściowe.  
   
 ## <a name="the-dsl-tools-solution"></a>Rozwiązanie narzędzi języka DSL  
  Kreator projektanta specyficznego dla domeny zawiera następujące szablony rozwiązań:  

@@ -8,37 +8,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56c7dc7557c91d82c89e612da7b78e3a889ad01e
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: c0f451ed2ddb6b619e896a664e5592496e4af4de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796754"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096260"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Czcionki i formatowanie dla programu Visual Studio
-##  <a name="BKMK_TheEnvironmentFont"></a> Czcionka środowiska
+## <a name="BKMK_TheEnvironmentFont"></a> Czcionka środowiska
  Wszystkie czcionki w programie Visual Studio muszą być widoczne dla użytkownika na potrzeby dostosowywania. To przede wszystkim odbywa się za pośrednictwem **czcionki i kolory** strony w **Narzędzia > Opcje** okna dialogowego. Są trzy główne kategorie ustawienia czcionek:
 
--   **Czcionka środowiska** -głównej czcionkę dla środowiska IDE (zintegrowanym środowiskiem programistycznym), dla wszystkich elementów interfejsu, w tym okna dialogowe, menu, okien narzędzi i oknami dokumentu. Domyślnie czcionka środowiska jest powiązany czcionki systemowej, który jest wyświetlany jako 9 pt Segoe UI w aktualnych wersjach programu Windows. Przy użyciu jednego czcionki dla wszystkich elementów interfejsu temu wygląd spójny czcionki w całej IDE.
+- **Czcionka środowiska** -głównej czcionkę dla środowiska IDE (zintegrowanym środowiskiem programistycznym), dla wszystkich elementów interfejsu, w tym okna dialogowe, menu, okien narzędzi i oknami dokumentu. Domyślnie czcionka środowiska jest powiązany czcionki systemowej, który jest wyświetlany jako 9 pt Segoe UI w aktualnych wersjach programu Windows. Przy użyciu jednego czcionki dla wszystkich elementów interfejsu temu wygląd spójny czcionki w całej IDE.
 
--   **Edytor tekstu** — czy powierzchni w kodzie i innych edytorów tekstowych można dostosować w edytorze tekstu elementów strony w **Narzędzia > Opcje**.
+- **Edytor tekstu** — czy powierzchni w kodzie i innych edytorów tekstowych można dostosować w edytorze tekstu elementów strony w **Narzędzia > Opcje**.
 
--   **Określonych kolekcji** -powierzchni projektanta systemu windows, które oferują dostosowywania ich elementy interfejsu użytkownika może narazić czcionki specyficzne dla ich projektu, w ich własnych strony ustawień w **Narzędzia > Opcje**.
+- **Określonych kolekcji** -powierzchni projektanta systemu windows, które oferują dostosowywania ich elementy interfejsu użytkownika może narazić czcionki specyficzne dla ich projektu, w ich własnych strony ustawień w **Narzędzia > Opcje**.
 
 ### <a name="editor-font-customization-and-resizing"></a>Dostosowywanie czcionek edytora i zmienianie rozmiaru
  Użytkownicy często będzie powiększyć lub powiększenie rozmiaru i/lub kolor tekstu w edytorze zgodnie z ich preferencji, niezależnie od interfejsu użytkownika ogólne. Ponieważ czcionka środowiska jest używany w przypadku elementów, które mogą być wyświetlane w ramach lub jako część Projektant/edytor, to należy zwrócić uwagę oczekiwane zachowanie, gdy jeden z tych klasyfikacjach czcionki zostanie zmieniona.
 
  Podczas tworzenia elementów interfejsu użytkownika, które pojawiają się w edytorze, ale nie są niebędące częścią *zawartości*, ważne jest, aby użyć czcionka środowiska i nie czcionki tekstu, aby elementy zmiany rozmiaru w przewidywalny sposób.
 
-1.  Kod tekstu w edytorze zmiany rozmiaru z ustawieniem czcionki tekstu kodu i odpowiadać na poziom powiększenia tekst w edytorze.
+1. Kod tekstu w edytorze zmiany rozmiaru z ustawieniem czcionki tekstu kodu i odpowiadać na poziom powiększenia tekst w edytorze.
 
-2.  Wszystkie inne elementy interfejsu powinny mieć związek ustawienia czcionki środowisko i reagowanie na zmiany globalne w środowisku. To obejmuje (ale nie jest ograniczona do):
+2. Wszystkie inne elementy interfejsu powinny mieć związek ustawienia czcionki środowisko i reagowanie na zmiany globalne w środowisku. To obejmuje (ale nie jest ograniczona do):
 
-    -   Tekst w menu kontekstowe
+    - Tekst w menu kontekstowe
 
-    -   Tekst w zakończeń edytora, takie jak żarówki tekst menu, okienka edytora szybkiego wyszukiwania i przejdź do okienka
+    - Tekst w zakończeń edytora, takie jak żarówki tekst menu, okienka edytora szybkiego wyszukiwania i przejdź do okienka
 
-    -   Etykieta tekst w oknach dialogowych, takich jak **Znajdź w plikach** lub **refaktoryzacji**
+    - Etykieta tekst w oknach dialogowych, takich jak **Znajdź w plikach** lub **refaktoryzacji**
 
 ### <a name="accessing-the-environment-font"></a>Uzyskiwanie dostępu do czcionka środowiska
  W kodzie natywnym, czy WinForms, czcionka środowiska może zostać oceniony przez wywołanie metody `IUIHostLocale::GetDialogFont` po wykonaniu zapytania względem interfejsu z `SID_SUIHostLocale` usługi.
@@ -87,7 +87,7 @@ window.ShowModal()
 <Setter Property="FontSize" Value="{DynamicResource VsFont.EnvironmentFontSize}" />
 ```
 
-###  <a name="BKMK_Formatting"></a> Formatowanie odwołania (skalowanie/pogrubienie)
+### <a name="BKMK_Formatting"></a> Formatowanie odwołania (skalowanie/pogrubienie)
  Niektóre okna dialogowe wymaga określonego tekstu pogrubienie lub rozmiar niż czcionka środowiska. Wcześniej czcionki większy niż czcionka środowiska zostały zakodowane jako "`environment font +2`" lub podobne. Korzystania z fragmentów kodu podanego obsługuje monitorów o dużej rozdzielczości i upewnij się, że tekst wyświetlany zawsze znajduje się na właściwy rozmiar i grubość (na przykład lub Semilight światła).
 
 > **Uwaga: Przed zastosowaniem formatowania, upewnij się, są następujące wskazówki w [styl tekstu](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
@@ -300,7 +300,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
  Aby zresetować czcionki, kliknij przycisk "Użyj ustawień domyślnych" w obszarze **Narzędzia > Opcje > środowisko > czcionki i kolory**.
 
-##  <a name="BKMK_TextStyle"></a> Styl tekstu
+## <a name="BKMK_TextStyle"></a> Styl tekstu
  Styl tekstu odnosi się do rozmiaru czcionki, waga i wielkość liter w wyrazie. Aby uzyskać wytyczne dotyczące implementacji, zobacz [czcionka środowiska](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
 ### <a name="text-casing"></a>Wielkość liter w wyrazie tekstu
@@ -359,9 +359,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="sentence-case"></a>Jak w zdaniu
  Jak w zdaniu to metoda standardowa wielkość liter do zapisu w kapitalizowane jest tylko pierwszy wyraz zdania, wraz z dowolnej nazwy własne i zrozumieć "I". Ogólnie rzecz biorąc jak w zdaniu jest łatwiejsze dla odbiorców na całym świecie do odczytu, szczególnie jeśli zawartość zostanie zamienione przez maszynę. Zdania przypadek użycia:
 
-1.  **Komunikaty paska stanu.** Są one prostych, krótkich i podaj tylko informacje o stanie. Przykład: "Trwa ładowanie pliku projektu"
+1. **Komunikaty paska stanu.** Są one prostych, krótkich i podaj tylko informacje o stanie. Przykład: "Trwa ładowanie pliku projektu"
 
-2.  **Wszystkie inne elementy interfejsu użytkownika**, łącznie z etykiety, pola wyboru i przyciski radiowe i wyświetlać listę elementów pola. Przykład: "Wybierz wszystkie elementy na liście"
+2. **Wszystkie inne elementy interfejsu użytkownika**, łącznie z etykiety, pola wyboru i przyciski radiowe i wyświetlać listę elementów pola. Przykład: "Wybierz wszystkie elementy na liście"
 
 ### <a name="text-formatting"></a>Formatowanie tekstu
  Domyślne formatowania tekstu w programie Visual Studio 2013 jest kontrolowana przez [czcionka środowiska](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Ta usługa pomaga zapewnić wygląd czcionki spójne w całym środowisku IDE (zintegrowanym środowiskiem programistycznym), a musi być on zagwarantować spójne środowisko dla użytkowników.
@@ -373,36 +373,36 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 #### <a name="bold-text"></a>Tekst pogrubiony
  Tekst pogrubiony jest rzadko używana w programie Visual Studio i powinna być zarezerwowana dla:
 
--   etykiety pytanie w kreatorach
+- etykiety pytanie w kreatorach
 
--   Wyznaczanie aktywny projekt w Eksploratorze rozwiązań
+- Wyznaczanie aktywny projekt w Eksploratorze rozwiązań
 
--   zastąpić wartości w oknie narzędzia właściwości
+- zastąpić wartości w oknie narzędzia właściwości
 
--   Niektóre zdarzenia w list rozwijanych w Edytorze Visual Basic
+- Niektóre zdarzenia w list rozwijanych w Edytorze Visual Basic
 
--   generowane przez serwer zawartości w konspekt dokumentu dla stron sieci web
+- generowane przez serwer zawartości w konspekt dokumentu dla stron sieci web
 
--   nagłówki sekcji w oknie dialogowym złożonych lub Projektant interfejsu użytkownika
+- nagłówki sekcji w oknie dialogowym złożonych lub Projektant interfejsu użytkownika
 
 #### <a name="italics"></a>Kursywa
  Program Visual Studio nie korzysta z kursywą lub pogrubiony tekst kursywą.
 
 #### <a name="color"></a>Kolor
 
--   Niebieski jest zarezerwowany dla hiperlinków (Nawigacja i polecenia) i nigdy nie należy używać w przypadku orientacji.
+- Niebieski jest zarezerwowany dla hiperlinków (Nawigacja i polecenia) i nigdy nie należy używać w przypadku orientacji.
 
--   Większe nagłówki (czcionka środowiska x 155% lub nowszej) można kolorowe do tych celów:
+- Większe nagłówki (czcionka środowiska x 155% lub nowszej) można kolorowe do tych celów:
 
-    -   Aby zapewnić estetyczny podpisu w interfejsie użytkownika Visual Studio
+    - Aby zapewnić estetyczny podpisu w interfejsie użytkownika Visual Studio
 
-    -   Aby zwrócić uwagę na określonym obszarze
+    - Aby zwrócić uwagę na określonym obszarze
 
-    -   Oferowanie zwolnienia z kolor tekstu standardowego środowiska szary/czarny ciemny
+    - Oferowanie zwolnienia z kolor tekstu standardowego środowiska szary/czarny ciemny
 
--   Kolor w nagłówkach należy korzystać z istniejących programu Visual Studio kolory firmowe, przede wszystkim purpurowy głównej #FF68217A.
+- Kolor w nagłówkach należy korzystać z istniejących programu Visual Studio kolory firmowe, przede wszystkim purpurowy głównej #FF68217A.
 
--   Używając koloru w nagłówkach, musisz spełnić [Windows kolor wytycznych](/windows/desktop/uxguide/vis-color), w tym współczynnik kontrastu i inne zagadnienia dotyczące ułatwień dostępu.
+- Używając koloru w nagłówkach, musisz spełnić [Windows kolor wytycznych](/windows/desktop/uxguide/vis-color), w tym współczynnik kontrastu i inne zagadnienia dotyczące ułatwień dostępu.
 
 ### <a name="font-size"></a>Rozmiar czcionki
  Visual Studio UI projektu funkcji jaśniejszy wygląd więcej białymi znakami. Jeśli to możliwe, chrome i paska tytułu zostały obniżone lub usunięte. Gdy gęstość informacji jest wymagane w programie Visual Studio, typografii jest nadal ważny, z naciskiem na bardziej otwarty i ustawić odmianą rozmiary czcionek i wagi.
@@ -474,11 +474,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ### <a name="padding-and-spacing"></a>Wypełnienie i odstępy
  Nagłówki wymagają ilość wolnego miejsca wokół je, aby dać im odpowiednią wyróżnienia. Miejsce to różni się zależnie od rozmiaru punktów i co jeszcze jest bliski nagłówka, takich jak linii poziomej lub wiersza tekstu w czcionce środowiska.
 
--   Idealne uzupełnienie nagłówek samodzielnie powinna być 90% miejsca wysokość kapitałowych znaków. Na przykład nagłówek Segoe UI Light 28 (czas pacyficzny) ma limit wysokości 26 (czas pacyficzny) i uzupełnienie należy około 23 (czas pacyficzny) lub około 31 pikseli.
+- Idealne uzupełnienie nagłówek samodzielnie powinna być 90% miejsca wysokość kapitałowych znaków. Na przykład nagłówek Segoe UI Light 28 (czas pacyficzny) ma limit wysokości 26 (czas pacyficzny) i uzupełnienie należy około 23 (czas pacyficzny) lub około 31 pikseli.
 
--   Minimalna ilość miejsca wokół nagłówek powinien wynosić 50% kapitałowych wielkość czcionki. Może być używany mniej miejsca, jeżeli nagłówek towarzyszy regułę lub inny element ściśle dopasowane.
+- Minimalna ilość miejsca wokół nagłówek powinien wynosić 50% kapitałowych wielkość czcionki. Może być używany mniej miejsca, jeżeli nagłówek towarzyszy regułę lub inny element ściśle dopasowane.
 
--   Pogrubiony tekst czcionka środowiska powinien być zgodny z domyślną interlinia wysokość i uzupełniania.
+- Pogrubiony tekst czcionka środowiska powinien być zgodny z domyślną interlinia wysokość i uzupełniania.
 
 ## <a name="see-also"></a>Zobacz także
 

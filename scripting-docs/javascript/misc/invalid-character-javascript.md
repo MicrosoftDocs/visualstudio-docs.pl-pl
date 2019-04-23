@@ -14,25 +14,25 @@ ms.assetid: b6a54a93-7fc9-459a-bdd6-f42d1ce40b5f
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49a465345ad7cb70fc21d1a253816162daf939a8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 6ec548ff629663e647d2d153ff87caa4edb1dd21
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843662"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086081"
 ---
 # <a name="invalid-character-javascript"></a>Nieprawidłowy znak (JavaScript)
 Zawiera identyfikator przy użyciu znaku (lub znaków) nie został rozpoznany jako prawidłowa przez [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] kompilatora. Prawidłowe znaki należy stosować poniższe reguły:  
   
--   Pierwszy znak musi być literą ASCII (wielkie lub małe) lub znaku podkreślenia (_).  
+- Pierwszy znak musi być literą ASCII (wielkie lub małe) lub znaku podkreślenia (_).  
   
--   Kolejne znaki mogą być litery, cyfry lub podkreślenia ASCII.  
+- Kolejne znaki mogą być litery, cyfry lub podkreślenia ASCII.  
   
--   Nazwa identyfikatora nie może być słowem zastrzeżonym.  
+- Nazwa identyfikatora nie może być słowem zastrzeżonym.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Unikaj używania znaków, które nie są częścią [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] definicji języka.  
+- Unikaj używania znaków, które nie są częścią [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] definicji języka.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zmienne](../../javascript/variables-javascript.md)   

@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3c5a07a38982175466982b34ab0e4ddedcf31be
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5576d1a7f66e11056240702f81e2f55edf65f5a0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938915"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073907"
 ---
 # <a name="install-and-manage-local-content"></a>Instalowanie i zarządzać zawartością lokalną
 
@@ -42,18 +42,18 @@ Domyślnie Podgląd pomocy instaluje zawartość przy użyciu usług Microsoft o
 
 ### <a name="to-change-the-content-installation-source"></a>Aby zmienić źródło zawartości instalacji
 
-1.  Na **zarządzanie zawartością** kartę, wybrać **dysku** przycisku opcji.
+1. Na **zarządzanie zawartością** kartę, wybrać **dysku** przycisku opcji.
 
     > [!NOTE]
     > **Dysku** opcja jest niedostępna, jeśli administrator uniemożliwił Ci modyfikowanie źródła instalacji zawartości. Aby uzyskać więcej informacji, zobacz [Podręcznik administratora programu Podgląd Pomocy](../help-viewer/administrator-guide.md).
 
-2.  Wykonaj jedną z następujących czynności:
+2. Wykonaj jedną z następujących czynności:
 
-    -   Wprowadź ścieżkę *.msha* plik lub adres URL punktu końcowego usługi.
+    - Wprowadź ścieżkę *.msha* plik lub adres URL punktu końcowego usługi.
 
-    -   Wybierz kolejno opcje Przeglądaj (**...** ) przycisk, aby przejść do *.msha* pliku.
+    - Wybierz kolejno opcje Przeglądaj (**...** ) przycisk, aby przejść do *.msha* pliku.
 
-    -   Na liście wybierz wpis, który był używany ostatni.
+    - Na liście wybierz wpis, który był używany ostatni.
 
 ## <a name="download-and-install-content-locally"></a>Pobieranie i instalowanie zawartości lokalnie
 
@@ -67,13 +67,13 @@ Jeżeli pobierzesz i zainstalujesz zawartość na komputerze lokalnym, możesz w
 
 ### <a name="to-download-and-install-content"></a>Aby pobrać i zainstalować zawartość
 
-1.  Wybierz **zarządzanie zawartością** kartę.
+1. Wybierz **zarządzanie zawartością** kartę.
 
-2.  Na liście zawartości, wybierz opcję **Dodaj** łącze obok księgi lub ksiąg, które chcesz pobrać i zainstalować.
+2. Na liście zawartości, wybierz opcję **Dodaj** łącze obok księgi lub ksiąg, które chcesz pobrać i zainstalować.
 
      Książka zostanie dodana do **oczekujące zmiany** listy, a szacowany rozmiar księgi lub ksiąg, które określiłeś, zostanie wyświetlone poniżej tej listy. Ponieważ niektóre książki mają wspólne tematy, całkowity rozmiar wiele książek może być mniejszy niż suma wielkości każdej z książek.
 
-3.  Wybierz **aktualizacji** przycisku.
+3. Wybierz **aktualizacji** przycisku.
 
      Księgi lub ksiąg, które można określić są instalowane wraz z wszelkimi aktualizacjami książek, które mają już na tym komputerze. Czasy instalacji różnią się, ale mogą wyświetlić postęp na pasku stanu.
 
@@ -89,13 +89,13 @@ Można zaoszczędzić miejsce na dysku przez usunięcie niepożądanych element�
 
 ### <a name="to-remove-content"></a>Aby usunąć zawartość
 
-1.  Wybierz **zarządzanie zawartością** kartę.
+1. Wybierz **zarządzanie zawartością** kartę.
 
-2.  Na liście zawartości, wybierz opcję **Usuń** łącze obok księgi lub ksiąg, które chcesz usunąć.
+2. Na liście zawartości, wybierz opcję **Usuń** łącze obok księgi lub ksiąg, które chcesz usunąć.
 
      Książka zostanie dodana do **oczekujące zmiany** listy.
 
-3.  Wybierz **aktualizacji** przycisku.
+3. Wybierz **aktualizacji** przycisku.
 
      Księgi lub ksiąg, określonych przez użytkownika są usuwane z komputera.
 
@@ -121,13 +121,13 @@ Przenosząc zainstalowaną zawartość z komputera lokalnego do udziału sieciow
 
 ### <a name="to-move-local-content"></a>Aby przenieść zawartość lokalną
 
-1.  Na **zarządzanie zawartością** kartę, wybrać **przenieść** przycisku w obszarze **ścieżkę lokalną Store**.
+1. Na **zarządzanie zawartością** kartę, wybrać **przenieść** przycisku w obszarze **ścieżkę lokalną Store**.
 
      **Przenoszenie zawartości** zostanie otwarte okno dialogowe.
 
-2.  W **do** pola tekstowego, wprowadzić inną lokalizację zawartości, a następnie wybierz **OK** przycisku.
+2. W **do** pola tekstowego, wprowadzić inną lokalizację zawartości, a następnie wybierz **OK** przycisku.
 
-3.  Wybierz **Zamknij** przycisk po przeniesieniu zawartości.
+3. Wybierz **Zamknij** przycisk po przeniesieniu zawartości.
 
 ## <a name="see-also"></a>Zobacz także
 

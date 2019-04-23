@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab40302e7b92f0cb3789c7510ba80904b45f5afe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: daf131fd6d7940458252e734ab0cc222f2e3a357
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596727"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096139"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Identyfikatory GUID i identyfikatory programu Visual Studio poleceń
 Identyfikator GUID i identyfikator wartości polecenia zawarte w programie Visual Studio zintegrowane środowisko programistyczne (IDE) są definiowane w .vsct — pliki, które są zainstalowane jako część programu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [polecenia definiowane w IDE, menu i grupy](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -52,11 +52,11 @@ Identyfikator GUID i identyfikator wartości polecenia zawarte w programie Visua
 ### <a name="special-cases"></a>Specjalne przypadki
  W następujących przypadkach tekst menu lub tekst etykietki narzędzia może wyglądać inaczej niż w definicji polecenia.
 
--   Elementy menu, które obejmują podkreślony znak, takie jak **drukowania** polecenie **pliku** menu, w którym *P* jest podkreślony.
+- Elementy menu, które obejmują podkreślony znak, takie jak **drukowania** polecenie **pliku** menu, w którym *P* jest podkreślony.
 
      Znaki, które są poprzedzone symbolem handlowego "i" (&) znaków w nazwach elementów menu są wyświetlane jako podkreślony. Jednak *vsct* pliki są zapisywane w formacie XML, który używa handlowe "i" (&) znaku, aby wskazać znaki specjalne i wymaga, że musi województw handlowe "i" mają być wyświetlane jako  *&amp;amp;*. Dlatego w *vsct* pliku **drukowania** polecenia jest wyświetlany jako  *&amp;amp; Drukuj*.
 
--   Polecenia, które mają dynamiczne tekstu, takie jak **Zapisz** \<bieżącej, nazwa_pliku\>i dynamicznie wygenerowano elementy menu, takie jak elementy **ostatnio używane pliki** listy.
+- Polecenia, które mają dynamiczne tekstu, takie jak **Zapisz** \<bieżącej, nazwa_pliku\>i dynamicznie wygenerowano elementy menu, takie jak elementy **ostatnio używane pliki** listy.
 
      Nie ma niezawodne możliwości wyszukiwania na dynamiczny tekst. Zamiast tego należy znaleźć grupy, która obsługuje polecenie żądany przez konsultacji [menu identyfikatory GUID i identyfikatory programu Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) lub [pasków narzędzi identyfikatory GUID i identyfikatory programu Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)i wyszukaj identyfikator tej grupy. Jeśli definicji polecenia nie ma grupy jako jego [elementu nadrzędnego](../../extensibility/parent-element.md), wyszukiwanie *SharedCmdPlace.vsct* i *ShellCmdPlace.vsct* (lub  *VsDbgCmdPlace.vsct* dla poleceń debugera) dla `<CommandPlacement>` element, który ustawia element nadrzędny polecenia. *SharedCmdPlace.vsct*, *ShellCmdPlace.vsct*, i *VsDbgCmdPlace.vsct* znajdują się w *\<ścieżka instalacji programu Visual Studio SDK\>\ VisualStudioIntegration\Common\Inc\\* folderu.
 

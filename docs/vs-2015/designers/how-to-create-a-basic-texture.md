@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b653d1b19842910fc88deb9d9cae5db918f35b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a343cb508933b91f5400ff6bc17c285a54bd2e87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767102"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076802"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Instrukcje: Tworzenie tekstury podstawowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ W tym dokumencie pokazano, jak utworzyć teksturę podstawową za pomocą edytor
   
  Ten dokument przedstawia te działania:  
   
--   Ustawianie rozmiaru tekstury  
+- Ustawianie rozmiaru tekstury  
   
--   Ustawianie pierwszego planu i tła kolorów  
+- Ustawianie pierwszego planu i tła kolorów  
   
--   Za pomocą kanału alfa (przezroczystości)  
+- Za pomocą kanału alfa (przezroczystości)  
   
--   Za pomocą **wypełnienia** i **elipsy** narzędzia  
+- Za pomocą **wypełnienia** i **elipsy** narzędzia  
   
--   Ustawianie właściwości narzędzia  
+- Ustawianie właściwości narzędzia  
   
 ## <a name="creating-a-basic-texture"></a>Tworzenie tekstury podstawowej  
  Edytor obrazu do tworzenia i modyfikowania obrazów i tekstur dla Twojej gry lub aplikacji.  

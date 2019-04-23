@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d269cdb4fe84820174ded9c477fc3c9f917b0b5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d4f53d723ca9249386027264038df6c5895b7d03
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802645"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081232"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Jeśli masz wiele kont Microsoft i/lub konta służbowego lub szkolnego, można 
   
 #### <a name="sign-in-to-visual-studio"></a>Logowanie do programu Visual Studio  
   
-1.  Zaloguj się do programu Visual Studio 2015 za pomocą konta Microsoft lub kontem organizacyjnym. Powinny zostać wyświetlone swoją nazwę użytkownika, które zostaną uwzględnione w prawym górnym rogu okna, podobny do następującego:  
+1. Zaloguj się do programu Visual Studio 2015 za pomocą konta Microsoft lub kontem organizacyjnym. Powinny zostać wyświetlone swoją nazwę użytkownika, które zostaną uwzględnione w prawym górnym rogu okna, podobny do następującego:  
   
      ![Currentlly zalogowanego użytkownika](../ide/media/vs2015-username.png "VS2015_UserName")  
   
@@ -44,14 +44,14 @@ Jeśli masz wiele kont Microsoft i/lub konta służbowego lub szkolnego, można 
   
 ### <a name="access-your-azure-account-via-add-connected-service-dialog"></a>Dostęp do konta platformy Azure za pomocą okna dialogowego Dodawanie podłączonej usługi  
   
-1.  Utwórz projekt aplikacji uniwersalnej w języku C#.  
+1. Utwórz projekt aplikacji uniwersalnej w języku C#.  
   
-2.  Kliknij prawym przyciskiem myszy węzeł projektu w Eksploratorze rozwiązań i wybierz polecenie **Dodaj > usługi połączonej**. Dodaj podłączoną usługę kreatora pojawia się i zostanie wyświetlony identyfikator listy usług na koncie platformy Azure, który jest skojarzony z identyfikatora logowania programu Visual Studio. Należy pamiętać, że nie trzeba osobno logowanie do platformy Azure. Jednakże należy zalogować się do innych kont spróbujesz uzyskać dostęp do zasobów z danego komputera po raz pierwszy.  
+2. Kliknij prawym przyciskiem myszy węzeł projektu w Eksploratorze rozwiązań i wybierz polecenie **Dodaj > usługi połączonej**. Dodaj podłączoną usługę kreatora pojawia się i zostanie wyświetlony identyfikator listy usług na koncie platformy Azure, który jest skojarzony z identyfikatora logowania programu Visual Studio. Należy pamiętać, że nie trzeba osobno logowanie do platformy Azure. Jednakże należy zalogować się do innych kont spróbujesz uzyskać dostęp do zasobów z danego komputera po raz pierwszy.  
   
     > [!WARNING]
     >  Jeśli po raz pierwszy tworzysz Store app w programie Visual Studio 2015 na określonym komputerze, zostanie wyświetlony monit Włącz urządzenie w trybie projektowania, przechodząc do **ustawienia &#124; . Aktualizacje i zabezpieczenia &#124; dla deweloperów** na tym komputerze. Aby uzyskać więcej informacji, zobacz [Włącz swoje urządzenie do tworzenia](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).  
   
-###  <a name="access_azure"></a> Dostęp do usługi Azure Active Directory w projekcie sieci Web  
+### <a name="access_azure"></a> Dostęp do usługi Azure Active Directory w projekcie sieci Web  
  Usługa Azure AD umożliwia obsługę użytkownika końcowego logowania jednokrotnego w aplikacjach sieci web platformy ASP.NET MVC lub uwierzytelniania AD w usługach interfejsu API sieci Web. Uwierzytelnianie domeny różni się od uwierzytelniania konta użytkownika; Użytkownicy, którzy mają dostęp do domeny usługi Active Directory można użyć istniejących kont usługi Azure AD, połączyć się z aplikacji sieci web. Aplikacje usługi Office 365 można również użyć uwierzytelniania przez domenę. Aby to zobaczyć w działaniu, tworzenie aplikacji sieci web (**pliku > Nowy Projekt > C# > chmura > Aplikacja sieci Web ASP.NET**). W oknie dialogowym Nowy projekt ASP.NET wybierz **Zmień uwierzytelnianie**. Kreatora uwierzytelniania pojawia się i pozwala wybrać rodzaj uwierzytelniania do użycia w aplikacji.  
   
  ![Okna dialogowego uwierzytelnienia zmiany w technologii ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")  

@@ -11,12 +11,12 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be34e52df0442e071e666da5e66eb31f041d2941
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3ca2a69fc0f5777c34857f6f3da0c7faabcd81ce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922176"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088902"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Strategie rozwiązywania problemów kontrolerów testów i agentów testowych w testach obciążenia
 
@@ -24,7 +24,7 @@ W tym artykule omówiono niektóre typowe problemy, które można napotkać podc
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-##  <a name="unable-to-collect-performance-counters-on-test-agent-computer"></a>Nie można zebrać liczników wydajności na komputerze agenta testowego
+## <a name="unable-to-collect-performance-counters-on-test-agent-computer"></a>Nie można zebrać liczników wydajności na komputerze agenta testowego
 
 Po uruchomieniu testu obciążenia, może być wystąpią błędy, gdy użytkownik próbuje nawiązać połączenie z komputerem agenta testowego i zbierania liczników wydajności. Usługa Rejestr zdalny jest usługą odpowiedzialną za dostarczanie danych licznika wydajności na komputerze zdalnym. W niektórych systemach operacyjnych usługa Rejestr zdalny nie zostanie uruchomiona automatycznie. Aby rozwiązać ten problem, należy ręcznie uruchomić usługę Rejestr zdalny.
 
@@ -39,11 +39,11 @@ Można kontrolować poziom rejestrowania na komputerze kontrolera testów. Jest 
 
 ### <a name="to-set-the-logging-level-on-a-test-controller-computer"></a>Aby ustawić poziom rejestrowania na komputerze kontrolera testu
 
-1.  Zatrzymaj usługę kontrolera testu. W wierszu polecenia wpisz `net stop vsttcontroller`.
+1. Zatrzymaj usługę kontrolera testu. W wierszu polecenia wpisz `net stop vsttcontroller`.
 
-2.  Otwórz plik *QTController.exe.config*. Ten plik znajduje się w katalogu instalacyjnym kontrolera.
+2. Otwórz plik *QTController.exe.config*. Ten plik znajduje się w katalogu instalacyjnym kontrolera.
 
-3.  Edytuj wpis dla `EqtTraceLevel` przełączyć się w sekcji Diagnostyka systemu pliku. Kod powinien wyglądać następująco:
+3. Edytuj wpis dla `EqtTraceLevel` przełączyć się w sekcji Diagnostyka systemu pliku. Kod powinien wyglądać następująco:
 
     ```xml
     <system.diagnostics>
@@ -64,23 +64,23 @@ Można kontrolować poziom rejestrowania na komputerze kontrolera testów. Jest 
     </system.diagnostics>
     ```
 
-4.  Zapisz plik.
+4. Zapisz plik.
 
-5.  Uruchom usługę kontrolera. W wierszu polecenia wpisz `net start vsttcontroller`.
+5. Uruchom usługę kontrolera. W wierszu polecenia wpisz `net start vsttcontroller`.
 
 Dotyczy to kontrolera testów, Usługa agenta testowego i procesu agenta testowego. Podczas diagnozowania problemów, warto włączyć rejestrowanie na wszystkich trzech procesów. Procedury ustanawiania poziomów rejestrowania jest taka sama dla wszystkich trzech procesów, jak określono wcześniej dla kontrolera testów. Aby ustawić poziomy rejestrowania dla agenta testowego, usługi i procesu agenta, należy użyć następujących plików konfiguracyjnych:
 
--   *QTController.exe.config* Usługa kontrolera
+- *QTController.exe.config* Usługa kontrolera
 
--   *QTAgentService.exe.config* Usługa agenta
+- *QTAgentService.exe.config* Usługa agenta
 
--   *QTDCAgent (32).exe.config* proces adaptera danych agenta dla architektury 32-bitowych.
+- *QTDCAgent (32).exe.config* proces adaptera danych agenta dla architektury 32-bitowych.
 
--   *QTDCAgent (64).exe.config* proces adaptera danych agenta dla architektury 64-bitowych.
+- *QTDCAgent (64).exe.config* proces adaptera danych agenta dla architektury 64-bitowych.
 
--   *QTAgent (32).exe.config* proces testowania agenta dla architektury 32-bitowych.
+- *QTAgent (32).exe.config* proces testowania agenta dla architektury 32-bitowych.
 
--   *QTAgent (64).exe.config* proces testowania agenta dla architektury 64-bitowych.
+- *QTAgent (64).exe.config* proces testowania agenta dla architektury 64-bitowych.
 
 ## <a name="bind-a-test-controller-to-a-network-adapter"></a>Powiąż kontroler testów z kartą sieciową
 
@@ -97,25 +97,25 @@ Aby naprawić ten błąd, można powiązać kontroler testów do jednej z kart s
 
 ### <a name="to-obtain-the-ip-address-of-the-network-adapter"></a>Aby uzyskać adres IP karty sieciowej
 
-1.  Wybierz **Start**, a następnie wybierz **Uruchom**.
+1. Wybierz **Start**, a następnie wybierz **Uruchom**.
 
      **Uruchom** zostanie wyświetlone okno dialogowe.
 
-2.  Typ `cmd` , a następnie wybierz **OK**.
+2. Typ `cmd` , a następnie wybierz **OK**.
 
      Otwiera wiersz poleceń.
 
-3.  Typ `ipconfig /all`.
+3. Typ `ipconfig /all`.
 
      Adresy IP dla karty sieciowe są wyświetlane. Zapisz adres IP karty sieciowej, którą chcesz powiązać kontroler.
 
 ### <a name="to-bind-a-test-controller-to-a-network-adapter"></a>Aby powiązać kontroler testów z kartą sieciową
 
-1.  Zatrzymaj usługę kontrolera testu. W wierszu polecenia wpisz `net stop vsttcontroller`.
+1. Zatrzymaj usługę kontrolera testu. W wierszu polecenia wpisz `net stop vsttcontroller`.
 
-2.  Otwórz plik *QTController.exe.config*. Ten plik znajduje się w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+2. Otwórz plik *QTController.exe.config*. Ten plik znajduje się w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
-3.  Dodaj wpis dla `BindTo` właściwości do ustawień aplikacji. Określ adres IP karty sieciowej, którą chcesz powiązać kontroler. Kod powinien wyglądać następująco:
+3. Dodaj wpis dla `BindTo` właściwości do ustawień aplikacji. Określ adres IP karty sieciowej, którą chcesz powiązać kontroler. Kod powinien wyglądać następująco:
 
     ```xml
     <appSettings>
@@ -129,13 +129,13 @@ Aby naprawić ten błąd, można powiązać kontroler testów do jednej z kart s
     </appSettings>
     ```
 
-4.  Zapisz plik.
+4. Zapisz plik.
 
-5.  Uruchom usługę kontrolera testu. W wierszu polecenia wpisz `net start vsttcontroller`.
+5. Uruchom usługę kontrolera testu. W wierszu polecenia wpisz `net start vsttcontroller`.
 
 ### <a name="to-connect-a-test-agent-to-a-bound-controller"></a>Aby połączyć agenta testowego z kontrolerem powiązania
 
--   Uruchom ponownie instalację agenta testowego. Tym razem, określ adres IP dla kontrolera testów, a nie nazwę kontrolera testów.
+- Uruchom ponownie instalację agenta testowego. Tym razem, określ adres IP dla kontrolera testów, a nie nazwę kontrolera testów.
 
 Dotyczy to kontrolera testów, Usługa agenta testowego i procesu agenta testowego. `BindTo` Właściwość musi być ustawiona dla każdego procesu, który jest uruchomiony na komputerze, który ma więcej niż jedną kartę sieciową. Procedury ustanawiania `BindTo` właściwości jest taka sama dla wszystkich trzech procesów, jak określono wcześniej dla kontrolera testów. Aby ustawić poziomów rejestrowania dla usługi agenta testowego i procesu agenta testowego, należy użyć plików konfiguracyjnych, które są wymienione w [ustawić poziom rejestrowania na komputerze kontrolera testu](#set-the-logging-level-on-a-test-controller-computer).
 

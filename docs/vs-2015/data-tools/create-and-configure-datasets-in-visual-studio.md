@@ -17,12 +17,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a2930acee9e187f14b87e28190a88195b0bea7a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b3073f79cc58296b6952d610384d06648aa6ce3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656257"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093478"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Tworzenie i konfigurowanie zestawów danych w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,23 +33,23 @@ A *dataset* to zbiór obiektów, które przechowuje dane z bazy danych w pamięc
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Utwórz nowy zestaw danych za pomocą Kreatora konfiguracji źródła danych
 
-1.  Na **projektu** menu, kliknij przycisk **Dodaj nowe źródło danych** można uruchomić **Kreatora konfiguracji źródła danych**.
+1. Na **projektu** menu, kliknij przycisk **Dodaj nowe źródło danych** można uruchomić **Kreatora konfiguracji źródła danych**.
 
-2.  Wybierz typ źródła danych, które będą łączyć się.
+2. Wybierz typ źródła danych, które będą łączyć się.
 
      ![Kreator konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png "Kreatora konfiguracji źródła danych")
 
-3.  W przypadku baz danych wybierz bazę danych lub bazy danych, które będą znajdować się źródło danych dla zestawu danych.
+3. W przypadku baz danych wybierz bazę danych lub bazy danych, które będą znajdować się źródło danych dla zestawu danych.
 
      ![Źródła danych wybierz połączenie](../data-tools/media/data-source-choose-a-connection.png "źródła danych wybierz połączenie")
 
-4.  Wybierz tabele (lub poszczególnych kolumn), procedur przechowywanych, funkcji i widoków z bazy danych, który ma być reprezentowane w zestawie danych.
+4. Wybierz tabele (lub poszczególnych kolumn), procedur przechowywanych, funkcji i widoków z bazy danych, który ma być reprezentowane w zestawie danych.
 
      ![Wybierz obiekty bazy danych](../data-tools/media/raddata-chose-objects.png "raddata wybranego obiektów")
 
-5.  Kliknij przycisk **Zakończ**.
+5. Kliknij przycisk **Zakończ**.
 
-6.  Zestaw danych jest widoczny jako węzeł w **Eksploratora rozwiązań**:
+6. Zestaw danych jest widoczny jako węzeł w **Eksploratora rozwiązań**:
 
      ![Zestaw danych w Eksploratorze rozwiązań](../data-tools/media/dataset-in-solution-explorer.png "zestawu danych w Eksploratorze rozwiązań")
 
@@ -57,11 +57,11 @@ A *dataset* to zbiór obiektów, które przechowuje dane z bazy danych w pamięc
 
      ![Projektant obiektów DataSet](../data-tools/media/dataset-designer.png "Projektanta obiektów DataSet")
 
-7.  Wierszy relacji, które łączą się z tabel reprezentują relacje między tabelami, zgodnie z definicją w bazie danych. Domyślnie ograniczenia klucza obcego w bazie danych są reprezentowane jako relacja tylko przy użyciu aktualizacji i usuwania reguł ustawiony na wartość none. Zazwyczaj jest to czego chcesz. Jednak można kliknąć wiersze, aby wyświetlić **relacji** okno dialogowe, w którym można zmienić zachowanie aktualizacji hierarchicznych. Aby uzyskać więcej informacji, zobacz [relacje w zestawach danych](../data-tools/relationships-in-datasets.md) i [hierarchiczna aktualizacja](../data-tools/hierarchical-update.md).
+7. Wierszy relacji, które łączą się z tabel reprezentują relacje między tabelami, zgodnie z definicją w bazie danych. Domyślnie ograniczenia klucza obcego w bazie danych są reprezentowane jako relacja tylko przy użyciu aktualizacji i usuwania reguł ustawiony na wartość none. Zazwyczaj jest to czego chcesz. Jednak można kliknąć wiersze, aby wyświetlić **relacji** okno dialogowe, w którym można zmienić zachowanie aktualizacji hierarchicznych. Aby uzyskać więcej informacji, zobacz [relacje w zestawach danych](../data-tools/relationships-in-datasets.md) i [hierarchiczna aktualizacja](../data-tools/hierarchical-update.md).
 
      ![Okno dialogowe Zestaw danych relacji](../data-tools/media/raddata-relation-dialog.png "raddata relacji w oknie dialogowym")
 
-8.  Kliknij tabelę, tabeli karty lub nazwa kolumny w tabeli, aby wyświetlić jego właściwości w **właściwości** okna. Można zmodyfikować niektóre wartości w tym miejscu. Pamiętaj tylko, modyfikowania zestawu danych, a nie źródłowej bazy danych.
+8. Kliknij tabelę, tabeli karty lub nazwa kolumny w tabeli, aby wyświetlić jego właściwości w **właściwości** okna. Można zmodyfikować niektóre wartości w tym miejscu. Pamiętaj tylko, modyfikowania zestawu danych, a nie źródłowej bazy danych.
 
      ![Właściwości kolumny zestawu danych](../data-tools/media/dataset-column-properties.png "właściwości kolumny zestawu danych")
 
@@ -74,22 +74,22 @@ A *dataset* to zbiór obiektów, które przechowuje dane z bazy danych w pamięc
 ## <a name="add-a-database-table-or-other-object-to-an-existing-dataset"></a>Dodaj tabelę bazy danych lub inny obiekt do istniejącego zestawu danych
  Ta procedura pokazuje, jak dodać tabelę z tej samej bazy danych, którego użyto do utworzenia zestawu danych.
 
-1.  Kliknij węzeł zestawu danych w **Eksploratora rozwiązań** zapewnić Projektanta obiektów DataSet fokus.
+1. Kliknij węzeł zestawu danych w **Eksploratora rozwiązań** zapewnić Projektanta obiektów DataSet fokus.
 
-2.  Kliknij przycisk **źródeł danych** kartę na lewym marginesie programu Visual Studio, lub wprowadź `Data Sources` w **szybkiego uruchamiania**.
+2. Kliknij przycisk **źródeł danych** kartę na lewym marginesie programu Visual Studio, lub wprowadź `Data Sources` w **szybkiego uruchamiania**.
 
-3.  Kliknij prawym przyciskiem myszy węzeł zestawu danych, a następnie wybierz pozycję **Konfigurowanie źródła danych za pomocą kreatora** .
+3. Kliknij prawym przyciskiem myszy węzeł zestawu danych, a następnie wybierz pozycję **Konfigurowanie źródła danych za pomocą kreatora** .
 
      ![Menu kontekstowe źródła danych](../data-tools/media/data-source-context-menu.png "menu kontekstowe źródła danych")
 
-4.  Użyj kreatora, aby określić, które dodatkowe tabele lub procedur składowanych lub innego obiektu bazy danych, aby dodać do zestawu danych.
+4. Użyj kreatora, aby określić, które dodatkowe tabele lub procedur składowanych lub innego obiektu bazy danych, aby dodać do zestawu danych.
 
 ## <a name="add-a-stand-alone-data-table-to-a-dataset"></a>Dodaj tabelę danych autonomicznej do zestawu danych
 
-1.  Otwórz swój zestaw danych w **Projektanta obiektów Dataset**.
+1. Otwórz swój zestaw danych w **Projektanta obiektów Dataset**.
 
-2.  Przeciągnij <xref:System.Data.DataTable> klasy z **DataSet** karcie **przybornika** na **Projektanta obiektów Dataset**.
+2. Przeciągnij <xref:System.Data.DataTable> klasy z **DataSet** karcie **przybornika** na **Projektanta obiektów Dataset**.
 
-3.  Dodawanie kolumn do definiowania tabeli danych. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie kolumn do DataTable](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
+3. Dodawanie kolumn do definiowania tabeli danych. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie kolumn do DataTable](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
 
-4.  Tabele autonomicznej konieczne wdrożenie `Fill` logiki w tabelach autonomicznej tak, aby wypełnić je danymi. Instrukcje dotyczące Wypełnianie tabel danych autonomicznych, zobacz [wypełnianie zestawu danych z elementu DataAdapter](http://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).
+4. Tabele autonomicznej konieczne wdrożenie `Fill` logiki w tabelach autonomicznej tak, aby wypełnić je danymi. Instrukcje dotyczące Wypełnianie tabel danych autonomicznych, zobacz [wypełnianie zestawu danych z elementu DataAdapter](http://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).

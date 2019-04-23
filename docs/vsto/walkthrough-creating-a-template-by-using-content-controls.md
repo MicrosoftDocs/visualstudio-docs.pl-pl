@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26632961474f54a545ff0fa900fff6c50a9ec3da
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 565d735e2d822d6cc7b353ffdf106b30201c22d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605942"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074378"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Przewodnik: Tworzenie szablonu za pomocą formantów zawartości
   W tym instruktażu pokazano, jak utworzyć dostosowywania poziomie dokumentu, który używa kontrolek zawartości do tworzenia zawartości ze strukturą i wielokrotnego użytku w szablonie programu Microsoft Office Word.
@@ -47,16 +47,16 @@ ms.locfileid: "56605942"
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Word.
+- Microsoft Word.
 
 ## <a name="create-a-new-word-template-project"></a>Utwórz nowy projekt szablonu programu Word
  Utwórz szablon programu Word, dzięki czemu użytkownicy mogą łatwo tworzyć własne kopie.
 
 ### <a name="to-create-a-new-word-template-project"></a>Aby utworzyć nowy projekt szablonu programu Word
 
-1.  Utwórz projekt szablonu programu Word o nazwie **MyBuildingBlockTemplate**. W kreatorze należy utworzyć nowy dokument w rozwiązaniu. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Utwórz projekt szablonu programu Word o nazwie **MyBuildingBlockTemplate**. W kreatorze należy utworzyć nowy dokument w rozwiązaniu. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zostanie otwarty nowy szablon programu Word w Projektancie i dodaje **MyBuildingBlockTemplate** projekt **Eksploratora rozwiązań**.
 
@@ -137,14 +137,14 @@ ms.locfileid: "56605942"
 
 ### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>Do programowego modyfikowania zawartości kontrolki interfejsu użytkownika
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **ThisDocument.cs** lub **ThisDocument.vb**, a następnie kliknij przycisk **Wyświetl kod**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **ThisDocument.cs** lub **ThisDocument.vb**, a następnie kliknij przycisk **Wyświetl kod**.
 
-2.  Dodaj następujący kod do `ThisDocument` klasy. Ten kod deklaruje kilka obiektów, które będą używane w dalszej części tego przewodnika.
+2. Dodaj następujący kod do `ThisDocument` klasy. Ten kod deklaruje kilka obiektów, które będą używane w dalszej części tego przewodnika.
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#1)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#1)]
 
-3.  Dodaj następujący kod do `ThisDocument_Startup` metody `ThisDocument` klasy. Ten kod dodaje wpisy do <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> i <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> w tabelach i ustawia tekst symbolu zastępczego, który jest wyświetlane w każdym z tych kontrolek, zanim użytkownik edytuje je.
+3. Dodaj następujący kod do `ThisDocument_Startup` metody `ThisDocument` klasy. Ten kod dodaje wpisy do <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> i <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> w tabelach i ustawia tekst symbolu zastępczego, który jest wyświetlane w każdym z tych kontrolek, zanim użytkownik edytuje je.
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#2)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#2)]
@@ -154,7 +154,7 @@ ms.locfileid: "56605942"
 
 ### <a name="to-prevent-users-from-editing-the-employee-table"></a>Aby uniemożliwić użytkownikom edytowanie tabeli pracowników
 
-1.  Dodaj następujący kod do `ThisDocument_Startup` metody `ThisDocument` klasy po kodzie dodanym w poprzednim kroku. Ten kod uniemożliwia użytkownikom edytowanie tabeli pracowników, umieszczając tabeli w ramach <xref:Microsoft.Office.Tools.Word.GroupContentControl> obiektu zadeklarowanej wcześniej.
+1. Dodaj następujący kod do `ThisDocument_Startup` metody `ThisDocument` klasy po kodzie dodanym w poprzednim kroku. Ten kod uniemożliwia użytkownikom edytowanie tabeli pracowników, umieszczając tabeli w ramach <xref:Microsoft.Office.Tools.Word.GroupContentControl> obiektu zadeklarowanej wcześniej.
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#3)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#3)]
@@ -164,12 +164,12 @@ ms.locfileid: "56605942"
 
 ### <a name="to-add-the-tables-to-the-building-blocks-in-the-template"></a>Aby dodać tabele do bloków konstrukcyjnych w szablonie
 
-1.  Dodaj następujący kod do `ThisDocument_Startup` metody `ThisDocument` klasy po kodzie dodanym w poprzednim kroku. Ten kod dodaje nowe bloki konstrukcyjne, które znajdują się tabele do kolekcji Microsoft.Office.Interop.Word.BuildingBlockEntries, który zawiera wszystkie wielokrotnego użytku bloków konstrukcyjnych w szablonie. Nowe bloki konstrukcyjne są definiowane w nowej kategorii o nazwie **pracowników i informacje o kliencie** i przypisywany jest typ bloku konstrukcyjnego `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`.
+1. Dodaj następujący kod do `ThisDocument_Startup` metody `ThisDocument` klasy po kodzie dodanym w poprzednim kroku. Ten kod dodaje nowe bloki konstrukcyjne, które znajdują się tabele do kolekcji Microsoft.Office.Interop.Word.BuildingBlockEntries, który zawiera wszystkie wielokrotnego użytku bloków konstrukcyjnych w szablonie. Nowe bloki konstrukcyjne są definiowane w nowej kategorii o nazwie **pracowników i informacje o kliencie** i przypisywany jest typ bloku konstrukcyjnego `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`.
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#4)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#4)]
 
-2.  Dodaj następujący kod do `ThisDocument_Startup` metody `ThisDocument` klasy po kodzie dodanym w poprzednim kroku. Ten kod usuwa tabel z szablonu. Tabele nie są już konieczne, ponieważ mają być dodane do galerii wielokrotnego użytku bloków konstrukcyjnych w szablonie. Kod najpierw powoduje umieszczenie dokumentu w trybie projektowania, dzięki czemu można usunąć tabeli pracowników chronionych.
+2. Dodaj następujący kod do `ThisDocument_Startup` metody `ThisDocument` klasy po kodzie dodanym w poprzednim kroku. Ten kod usuwa tabel z szablonu. Tabele nie są już konieczne, ponieważ mają być dodane do galerii wielokrotnego użytku bloków konstrukcyjnych w szablonie. Kod najpierw powoduje umieszczenie dokumentu w trybie projektowania, dzięki czemu można usunąć tabeli pracowników chronionych.
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#5)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#5)]
@@ -179,7 +179,7 @@ ms.locfileid: "56605942"
 
 ### <a name="to-create-a-content-control-that-displays-the-building-blocks"></a>Aby utworzyć kontrolkę zawartości, która wyświetla bloki konstrukcyjne
 
-1.  Dodaj następujący kod do `ThisDocument_Startup` metody `ThisDocument` klasy po kodzie dodanym w poprzednim kroku. Ten kod inicjalizuje <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> obiektu zadeklarowanej wcześniej. <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> Wyświetla wszystkie bloki konstrukcyjne, które są zdefiniowane w kategorii **pracowników i informacje o kliencie** , które mają typ bloku konstrukcyjnego `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`.
+1. Dodaj następujący kod do `ThisDocument_Startup` metody `ThisDocument` klasy po kodzie dodanym w poprzednim kroku. Ten kod inicjalizuje <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> obiektu zadeklarowanej wcześniej. <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> Wyświetla wszystkie bloki konstrukcyjne, które są zdefiniowane w kategorii **pracowników i informacje o kliencie** , które mają typ bloku konstrukcyjnego `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`.
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#6)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#6)]
@@ -189,50 +189,50 @@ ms.locfileid: "56605942"
 
 ### <a name="to-test-the-employee-table"></a>Aby przetestować tabeli pracowników
 
-1.  Naciśnij klawisz **F5** Aby uruchomić projekt.
+1. Naciśnij klawisz **F5** Aby uruchomić projekt.
 
-2.  Kliknij przycisk **wybierz pierwszego bloku konstrukcyjnego** do wyświetlenia pierwszą kontrolkę zawartości galerii bloków konstrukcyjnych.
+2. Kliknij przycisk **wybierz pierwszego bloku konstrukcyjnego** do wyświetlenia pierwszą kontrolkę zawartości galerii bloków konstrukcyjnych.
 
-3.  Kliknij strzałkę listy rozwijanej obok **1 Galeria niestandardowa** nagłówka w formancie, a następnie wybierz **tabeli pracowników**.
+3. Kliknij strzałkę listy rozwijanej obok **1 Galeria niestandardowa** nagłówka w formancie, a następnie wybierz **tabeli pracowników**.
 
-4.  Kliknij w komórce po prawej stronie **nazwiska pracownika** komórki, a następnie wpisz nazwę.
+4. Kliknij w komórce po prawej stronie **nazwiska pracownika** komórki, a następnie wpisz nazwę.
 
      Upewnij się, że do tej komórki, można dodać tylko tekst. <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> Umożliwia użytkownikom dodawanie tylko tekst, nie innych typów zawartości, takiej jak grafika lub tabeli.
 
-5.  Kliknij w komórce po prawej stronie **Data zatrudnienia** komórki, a następnie wybierz datę oznaczoną pogrubioną selektora daty.
+5. Kliknij w komórce po prawej stronie **Data zatrudnienia** komórki, a następnie wybierz datę oznaczoną pogrubioną selektora daty.
 
-6.  Kliknij w komórce po prawej stronie **tytuł** komórki, a następnie wybierz jedno z stanowiska w polu kombi.
+6. Kliknij w komórce po prawej stronie **tytuł** komórki, a następnie wybierz jedno z stanowiska w polu kombi.
 
      Opcjonalnie wpisz nazwę stanowisko, który nie jest na liście. Jest to możliwe, ponieważ <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> umożliwia użytkownikom wybranie z listy wpisów lub wpisz swoje wpisy.
 
-7.  Kliknij ikonę w komórce po prawej stronie **obraz** komórki, a następnie przejdź do obrazu, aby go wyświetlić.
+7. Kliknij ikonę w komórce po prawej stronie **obraz** komórki, a następnie przejdź do obrazu, aby go wyświetlić.
 
-8.  Spróbuj dodać wiersze lub kolumny do tabeli, a następnie spróbuj usunąć wiersze i kolumny z tabeli. Upewnij się, że nie można zmodyfikować tabeli. <xref:Microsoft.Office.Tools.Word.GroupContentControl> Zapobiega przed dokonaniem jakichkolwiek modyfikacji.
+8. Spróbuj dodać wiersze lub kolumny do tabeli, a następnie spróbuj usunąć wiersze i kolumny z tabeli. Upewnij się, że nie można zmodyfikować tabeli. <xref:Microsoft.Office.Tools.Word.GroupContentControl> Zapobiega przed dokonaniem jakichkolwiek modyfikacji.
 
 ### <a name="to-test-the-customer-feedback-table"></a>Aby przetestować tabeli opinie klientów
 
-1.  Kliknij przycisk **Wybierz drugi bloku konstrukcyjnego** do wyświetlenia drugi formant zawartości galerii bloków konstrukcyjnych.
+1. Kliknij przycisk **Wybierz drugi bloku konstrukcyjnego** do wyświetlenia drugi formant zawartości galerii bloków konstrukcyjnych.
 
-2.  Kliknij strzałkę listy rozwijanej obok **1 Galeria niestandardowa** nagłówka w formancie, a następnie wybierz **tabeli klientów**.
+2. Kliknij strzałkę listy rozwijanej obok **1 Galeria niestandardowa** nagłówka w formancie, a następnie wybierz **tabeli klientów**.
 
-3.  Kliknij w komórce po prawej stronie **nazwa klienta** komórki, a następnie wpisz nazwę.
+3. Kliknij w komórce po prawej stronie **nazwa klienta** komórki, a następnie wpisz nazwę.
 
-4.  Kliknij w komórce po prawej stronie **oceny zadowolenia** komórki, a następnie wybierz jedną z dostępnych opcji.
+4. Kliknij w komórce po prawej stronie **oceny zadowolenia** komórki, a następnie wybierz jedną z dostępnych opcji.
 
      Upewnij się, że nie można wpisać własny tekst. <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> Umożliwia użytkownikom tylko po to wybrać z listy wpisów.
 
-5.  Kliknij w komórce po prawej stronie **komentarze** komórki, a następnie wpisz niektóre komentarze.
+5. Kliknij w komórce po prawej stronie **komentarze** komórki, a następnie wpisz niektóre komentarze.
 
      Opcjonalnie dodaj część zawartości innego niż tekstu, takie jak grafika lub osadzonej tabeli. Jest to możliwe, ponieważ <xref:Microsoft.Office.Tools.Word.RichTextContentControl> umożliwia użytkownikom dodawanie zawartości innych niż tekst.
 
-6.  Sprawdź, można dodać wiersze lub kolumny w tabeli i że można usunąć wiersze i kolumny z tabeli. Jest to możliwe, ponieważ tabela ma nie chronione przez umieszczenie go w <xref:Microsoft.Office.Tools.Word.GroupContentControl>.
+6. Sprawdź, można dodać wiersze lub kolumny w tabeli i że można usunąć wiersze i kolumny z tabeli. Jest to możliwe, ponieważ tabela ma nie chronione przez umieszczenie go w <xref:Microsoft.Office.Tools.Word.GroupContentControl>.
 
-7.  Zamknij szablon.
+7. Zamknij szablon.
 
 ## <a name="next-steps"></a>Następne kroki
  Możesz dowiedzieć się więcej na temat sposobu używania kontrolek zawartości z tego tematu:
 
--   Powiązywanie kontrolek zawartości do elementów XML, a także o nazwie niestandardowe elementy XML, które są osadzone w dokumencie. Aby uzyskać więcej informacji, zobacz [instruktażu: Powiązywanie kontrolek zawartości do niestandardowych części XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
+- Powiązywanie kontrolek zawartości do elementów XML, a także o nazwie niestandardowe elementy XML, które są osadzone w dokumencie. Aby uzyskać więcej informacji, zobacz [instruktażu: Powiązywanie kontrolek zawartości do niestandardowych części XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
 
 ## <a name="see-also"></a>Zobacz także
 - [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)

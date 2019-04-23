@@ -16,23 +16,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb0f29224bb87611f010421dd372832f2a014d7e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b1070483e492bbbf6cc9f6e9f4a8f4b225f2b74b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366487"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096169"
 ---
 # <a name="msbuild-conditions"></a>Warunki MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obsługuje określony zbiór warunków, które mogą być stosowane wszędzie tam, gdzie `Condition` atrybut jest dozwolony. W poniższej tabeli opisano te warunki.
 
 |Warunek|Opis|
 |---------------|-----------------|
-|'`stringA`' == '`stringB`'|Daje w wyniku `true` Jeśli `stringA` jest równa `stringB`.<br /><br /> Na przykład:<br /><br /> `Condition="$(CONFIG)=='DEBUG'"`<br /><br /> Apostrofy nie są wymagane dla prostych ciągów znaków alfanumerycznych lub wartościami logicznymi. Jednakże apostrofy są wymagane do wartości puste.|
-|'`stringA`' != '`stringB`'|Daje w wyniku `true` Jeśli `stringA` nie jest równa `stringB`.<br /><br /> Na przykład:<br /><br /> `Condition="$(CONFIG)!='DEBUG'"`<br /><br /> Apostrofy nie są wymagane dla prostych ciągów znaków alfanumerycznych lub wartościami logicznymi. Jednakże apostrofy są wymagane do wartości puste.|
+|'`stringA`' == '`stringB`'|Daje w wyniku `true` Jeśli `stringA` jest równa `stringB`.<br /><br /> Na przykład:<br /><br /> `Condition="'$(CONFIG)'=='DEBUG'"`<br /><br /> Apostrofy nie są wymagane dla prostych ciągów znaków alfanumerycznych lub wartościami logicznymi. Jednakże apostrofy są wymagane do wartości puste.|
+|'`stringA`' != '`stringB`'|Daje w wyniku `true` Jeśli `stringA` nie jest równa `stringB`.<br /><br /> Na przykład:<br /><br /> `Condition="'$(CONFIG)'!='DEBUG'"`<br /><br /> Apostrofy nie są wymagane dla prostych ciągów znaków alfanumerycznych lub wartościami logicznymi. Jednakże apostrofy są wymagane do wartości puste.|
 |\<, >, \<=, >=|Oblicza wartości liczbowych operandu. Zwraca `true` Jeśli relacyjnych oceny ma wartość true. Argumenty operacji musi być liczbą dziesiętną lub szesnastkową. Liczby szesnastkowe musi zaczynać się od "0 x". **Uwaga:**  W pliku XML, znaki `<` i `>` muszą być poprzedzone znakiem zmiany znaczenia. Symbol `<` jest reprezentowany jako `&lt;`. Symbol `>` jest reprezentowany jako `&gt;`.|
-|Istnieje ("`stringA`")|Daje w wyniku `true` Jeśli plik lub folder o nazwie `stringA` istnieje.<br /><br /> Na przykład:<br /><br /> `Condition="!Exists($(builtdir))"`<br /><br /> Apostrofy nie są wymagane dla prostych ciągów znaków alfanumerycznych lub wartościami logicznymi. Jednakże apostrofy są wymagane do wartości puste.|
-|HasTrailingSlash ("`stringA`")|Daje w wyniku `true` czy określony ciąg zawiera albo końcowej kreski ułamkowej odwróconej (\\) lub przekazywania znaku ukośnika (/).<br /><br /> Na przykład:<br /><br /> `Condition="!HasTrailingSlash($(OutputPath))"`<br /><br /> Apostrofy nie są wymagane dla prostych ciągów znaków alfanumerycznych lub wartościami logicznymi. Jednakże apostrofy są wymagane do wartości puste.|
+|Istnieje ("`stringA`")|Daje w wyniku `true` Jeśli plik lub folder o nazwie `stringA` istnieje.<br /><br /> Na przykład:<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> Apostrofy nie są wymagane dla prostych ciągów znaków alfanumerycznych lub wartościami logicznymi. Jednakże apostrofy są wymagane do wartości puste.|
+|HasTrailingSlash ("`stringA`")|Daje w wyniku `true` czy określony ciąg zawiera albo końcowej kreski ułamkowej odwróconej (\\) lub przekazywania znaku ukośnika (/).<br /><br /> Na przykład:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Apostrofy nie są wymagane dla prostych ciągów znaków alfanumerycznych lub wartościami logicznymi. Jednakże apostrofy są wymagane do wartości puste.|
 |!|Daje w wyniku `true` Jeśli argument daje w wyniku `false`.|
 |Oraz|Daje w wyniku `true` Jeśli oba koniunkcję `true`.|
 |Lub|Daje w wyniku `true` , gdy co najmniej jeden z operandów jest `true`.|

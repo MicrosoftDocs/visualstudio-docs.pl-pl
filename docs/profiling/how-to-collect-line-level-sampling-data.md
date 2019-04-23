@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb55221eb8d4a0d60832853499096747e836da6a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e447b0b15a7a541567932a72dffd7abfc9851e7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624285"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072386"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Instrukcje: Zbieranie danych pobierania próbek na poziomie wiersza
 Próbkowanie na poziomie wiersza jest możliwość określenia, gdzie w kodzie funkcji obciążającą procesor, takich jak funkcja, która ma wysoką wyłącznych próbek, procesor musi spędzają większość czasu profilera.
@@ -49,11 +49,11 @@ Próbkowanie na poziomie wiersza jest możliwość określenia, gdzie w kodzie f
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>Wyłącz próbkowanie poziomie wiersza dla kodu zarządzanego
  Próbkowanie na poziomie wiersza jest domyślnie włączona. Można wyłączyć zbieranie danych na poziomie wiersza dla kodu zarządzanego przy użyciu jednej z następujących poleceń:
 
--   Przed rozpoczęciem profilowania, wpisz **VSPerfCLREnv /samplelineoff**. Dotyczy to zarówno aplikacji i usług.
+- Przed rozpoczęciem profilowania, wpisz **VSPerfCLREnv /samplelineoff**. Dotyczy to zarówno aplikacji i usług.
 
      — lub —
 
--   Podczas uruchamiania aplikacji, wpisz **VSPerfCmd/lineoff \<inne argumenty >**.
+- Podczas uruchamiania aplikacji, wpisz **VSPerfCmd/lineoff \<inne argumenty >**.
 
 ## <a name="see-also"></a>Zobacz także
 - [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)

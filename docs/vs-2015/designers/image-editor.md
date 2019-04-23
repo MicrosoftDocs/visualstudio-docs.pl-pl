@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0bda440c463082d62568bcdfd0525eebe2a17c61
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 08fd0d6e33de0c032ab63f013fca7ee3174b260e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768306"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077384"
 ---
 # <a name="image-editor"></a>Edytor obrazów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,13 +44,13 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
   
 #### <a name="to-add-an-image-to-your-project"></a>Aby dodać obraz do projektu  
   
-1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, który chcesz dodać obraz do, a następnie wybierz **Dodaj**, **nowy element**.  
+1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, który chcesz dodać obraz do, a następnie wybierz **Dodaj**, **nowy element**.  
   
-2.  W **Dodaj nowy element** dialogowego **zainstalowane**, wybierz opcję **grafiki**, a następnie wybierz odpowiedni format pliku obrazu. Aby dowiedzieć się, jak wybrać format pliku, w zależności od wymagań zobacz następującą sekcję.  
+2. W **Dodaj nowy element** dialogowego **zainstalowane**, wybierz opcję **grafiki**, a następnie wybierz odpowiedni format pliku obrazu. Aby dowiedzieć się, jak wybrać format pliku, w zależności od wymagań zobacz następującą sekcję.  
   
-3.  Określ **nazwa** pliku obrazu i **lokalizacji** której ma zostać utworzony.  
+3. Określ **nazwa** pliku obrazu i **lokalizacji** której ma zostać utworzony.  
   
-4.  Wybierz **Dodaj** przycisku.  
+4. Wybierz **Dodaj** przycisku.  
   
 ### <a name="choosing-the-image-format"></a>Wybieranie formatu obrazu  
  W zależności od tego, jak zamierzasz korzystać z obrazu określonych formatów plików, może być bardziej odpowiednie niż inne. Na przykład niektóre formaty mogą nie obsługiwać funkcji, które należy — podobnie jak przezroczystość lub format określony kolor — lub może nie zapewniać odpowiedni kompresji dla rodzaju zawartości obrazu zaplanowano.  
@@ -146,7 +146,7 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
 |**Ołówek**, **pędzla**, **Aerograf**, **wiersza**, **prostokąt**, **prostokąt zaokrąglony** , **Elipsy**, **tekstu**|Aby dopasować wybór koloru aktywne, wraz z obrazu, w **właściwości** okna, rozwiń węzeł **kanały** grupy właściwości i ustaw **Rysowanie** pole wyboru na  **Alfa** kanał, a następnie narysuj normalnie.<br /><br /> Aby narysować przy użyciu wybór koloru aktywne i pozostawić wartość alfa odpowiadającą obrazu w miejscu, należy wyczyścić **Rysowanie** obok **alfa** kanał, a następnie narysuj normalnie.|  
 |**Wypełnienie**|Aby dopasować wybór koloru aktywne, wraz z obrazu, po prostu wybrać obszar, aby wypełnić.<br /><br /> Umożliwia wybór koloru active — z uwzględnieniem wartości kanał alfa — Aby zastąpić obraz, naciśnij i przytrzymaj klawisz Shift, a następnie wybierz obszar, aby wypełnić.|  
   
-###  <a name="ImageProperties"></a> Właściwości obrazu  
+### <a name="ImageProperties"></a> Właściwości obrazu  
  Możesz użyć **właściwości** okna, aby określić różne właściwości obrazu. Na przykład można ustawić właściwości szerokości i wysokości rozmiaru.  
   
  W poniższej tabeli opisano właściwości obrazu.  
@@ -171,9 +171,9 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
 #### <a name="resizing-images"></a>Zmiana rozmiaru obrazów  
  Poniżej przedstawiono dwa sposoby zmiany rozmiaru obrazu. W obu przypadkach edytora obrazów używa interpolacji liniowej Power bi do próbkowania obrazu.  
   
--   W **właściwości** okna, określ nowe wartości **szerokość** i **wysokość** właściwości.  
+- W **właściwości** okna, określ nowe wartości **szerokość** i **wysokość** właściwości.  
   
--   Wybierz całego obrazu, a następnie zmień rozmiar obrazu za pomocą znaczników obramowania.  
+- Wybierz całego obrazu, a następnie zmień rozmiar obrazu za pomocą znaczników obramowania.  
   
 ### <a name="working-with-tools"></a>Praca z narzędzia  
   
@@ -207,7 +207,7 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
 |Ctrl|||Kopiuje, a następnie zmienia rozmiar zawartości wybranego regionu.|  
 |Ctrl|Shift||Kopiuje, a następnie proporcjonalnie zmienia rozmiar zawartości wybranego regionu.|  
   
-####  <a name="ToolProperties"></a> Właściwości narzędzia  
+#### <a name="ToolProperties"></a> Właściwości narzędzia  
  To narzędzie jest zaznaczone, ale można używać **właściwości** okna możliwość określania szczegółów o tym jak wpływa na obrazie. Na przykład można ustawić grubość **ołówka** narzędzia lub kolor **pędzla** narzędzia.  
   
  Możesz ustawić kolor pierwszego planu i kolor tła. Obie obsługują kanał alfa, zapewnienie nieprzezroczystość zdefiniowanych przez użytkownika. Ustawienia są stosowane do wszystkich narzędzi. Jeśli używasz myszy, lewy przycisk myszy odpowiada kolor pierwszego planu, a następnie prawym przyciskiem myszy odpowiada kolor tła.  

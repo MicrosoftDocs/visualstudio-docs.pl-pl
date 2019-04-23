@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d37ef5efcdc7e559e19fcce396e8c87875bdf59
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ca4e817ae33d3129259de619e07bf256e6f544bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626599"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092321"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Jak dodać elementy interfejsu użytkownika w pakietach VSPackage
 Dodać elementy interfejsu użytkownika, na przykład menu, paski narzędzi i narzędzi systemu windows, do programu Visual Studio poprzez pakietu VSPackage *vsct* pliku.
@@ -27,11 +27,11 @@ Dodać elementy interfejsu użytkownika, na przykład menu, paski narzędzi i na
 ## <a name="the-visual-studio-command-table-architecture"></a>Architektura tabeli polecenia programu Visual Studio
  Jak wspomniano, architektura tabeli polecenia obsługuje powyższych zasad architektonicznych. Założenia abstrakcji, struktur danych i narzędzia architektury tabeli polecenia są następujące:
 
--   Istnieją trzy podstawowe typy elementów: menu, poleceń i grup. Menu mogą być udostępniane w interfejsie użytkownika jako menu, podmenu, paski narzędzi i okien narzędzi. Polecenia są procedury, które użytkownik może uruchomić w środowisku IDE, i które można uwidocznić jako elementy menu, przyciski, pola listy i inne kontrolki. Grupy są kontenerami dla zarówno menu i poleceń.
+- Istnieją trzy podstawowe typy elementów: menu, poleceń i grup. Menu mogą być udostępniane w interfejsie użytkownika jako menu, podmenu, paski narzędzi i okien narzędzi. Polecenia są procedury, które użytkownik może uruchomić w środowisku IDE, i które można uwidocznić jako elementy menu, przyciski, pola listy i inne kontrolki. Grupy są kontenerami dla zarówno menu i poleceń.
 
--   Każdy element jest określona, zgodnie z definicją, opisujące element, jego priorytet względem innych elementów, a flagi, które modyfikują zachowanie.
+- Każdy element jest określona, zgodnie z definicją, opisujące element, jego priorytet względem innych elementów, a flagi, które modyfikują zachowanie.
 
--   Każdy element ma umieszczenia, opisująca nadrzędnego elementu. Element może mieć wielu elementów nadrzędnych, dzięki czemu może występować w wielu lokalizacjach w interfejsie użytkownika.
+- Każdy element ma umieszczenia, opisująca nadrzędnego elementu. Element może mieć wielu elementów nadrzędnych, dzięki czemu może występować w wielu lokalizacjach w interfejsie użytkownika.
 
      Każde polecenie musi mieć grupę jako klasy nadrzędnej, nawet jeśli jest elementem podrzędnym tylko w tej grupie. Każdy standardowe menu musi mieć grupę nadrzędną. Paski narzędzi i okien narzędzi pełnić rolę własne elementy nadrzędne. Grupa może mieć jako jego element nadrzędny głównego pasek menu programu Visual Studio lub dowolnego menu, pasek narzędzi lub okna narzędzi.
 
@@ -74,15 +74,15 @@ Dodać elementy interfejsu użytkownika, na przykład menu, paski narzędzi i na
 ### <a name="menus-groups-and-commands"></a>Menu, grupy i polecenia
  Menu, grupy lub polecenie ma identyfikator GUID i identyfikator, może być dodany do środowiska IDE programu. Każdy element interfejsu użytkownika musi mieć następujące elementy:
 
--   A `guid` atrybut, który jest zgodna z nazwą `GuidSymbol` element, który jest zdefiniowany element interfejsu użytkownika, w obszarze.
+- A `guid` atrybut, który jest zgodna z nazwą `GuidSymbol` element, który jest zdefiniowany element interfejsu użytkownika, w obszarze.
 
--   `id` Atrybut, który jest zgodna z nazwą skojarzonego `IDSymbol` elementu.
+- `id` Atrybut, który jest zgodna z nazwą skojarzonego `IDSymbol` elementu.
 
      Razem `guid` i `id` atrybuty tworzą *podpisu* elementu interfejsu użytkownika.
 
--   A `priority` atrybut, który określa położenie elementu interfejsu użytkownika w menu nadrzędnej lub grupy.
+- A `priority` atrybut, który określa położenie elementu interfejsu użytkownika w menu nadrzędnej lub grupy.
 
--   A [elementu nadrzędnego](../../extensibility/parent-element.md) zawierający `guid` i `id` atrybuty określające podpisu menu nadrzędnej lub grupy.
+- A [elementu nadrzędnego](../../extensibility/parent-element.md) zawierający `guid` i `id` atrybuty określające podpisu menu nadrzędnej lub grupy.
 
 #### <a name="menus"></a>Menu
  Każde menu jest zdefiniowany jako [Menu element](../../extensibility/menu-element.md) w `Menus` sekcji. Menu musi mieć `guid`, `id`, i `priority` atrybutów, a `Parent` elementu, a także następujących dodatkowych atrybutów i elementy podrzędne:
@@ -263,17 +263,17 @@ priority="0x0100" type="Menu">
 #### <a name="general-requirements"></a>Wymagania ogólne
  Polecenie musi upłynąć poniższą sekwencję testy mogą być wyświetlane i włączone:
 
--   Polecenie znajduje się poprawnie.
+- Polecenie znajduje się poprawnie.
 
--   `DefaultInvisible` Nie ustawiono flagi.
+- `DefaultInvisible` Nie ustawiono flagi.
 
--   Nadrzędny menu lub pasek narzędzi jest widoczna.
+- Nadrzędny menu lub pasek narzędzi jest widoczna.
 
--   Polecenie nie jest niewidoczne ze względu na zapis kontekstu, w [VisibilityConstraints, element](../../extensibility/visibilityconstraints-element.md) sekcji.
+- Polecenie nie jest niewidoczne ze względu na zapis kontekstu, w [VisibilityConstraints, element](../../extensibility/visibilityconstraints-element.md) sekcji.
 
--   Kod pakietu VSPackage, który implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu wyświetla i umożliwia swojej dyspozycji. Brak kodu interfejsu został on przechwycony i podjęło odpowiednie działania.
+- Kod pakietu VSPackage, który implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu wyświetla i umożliwia swojej dyspozycji. Brak kodu interfejsu został on przechwycony i podjęło odpowiednie działania.
 
--   Po kliknięciu polecenia staje się zgodnie z procedurą opisaną w [algorytm routingu](../../extensibility/internals/command-routing-algorithm.md).
+- Po kliknięciu polecenia staje się zgodnie z procedurą opisaną w [algorytm routingu](../../extensibility/internals/command-routing-algorithm.md).
 
 ## <a name="call-pre-defined-commands"></a>Wywołanie polecenia wstępnie zdefiniowane
  [UsedCommands, element](../../extensibility/usedcommands-element.md) umożliwia pakietów VSPackage polecenia dostępu, które są dostarczane przez inne pakietów VSPackage lub IDE. Aby to zrobić, należy utworzyć [UsedCommand, element](../../extensibility/usedcommand-element.md) ma identyfikator GUID i identyfikator polecenia do użycia. Gwarantuje to, że polecenia zostaną załadowane przez program Visual Studio, nawet jeśli nie jest częścią bieżącej konfiguracji programu Visual Studio. Aby uzyskać więcej informacji, zobacz [UsedCommand, element](../../extensibility/usedcommand-element.md).

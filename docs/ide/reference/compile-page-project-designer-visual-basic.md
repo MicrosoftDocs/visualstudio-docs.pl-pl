@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a226f22370f128374433e78b787ad730a3bbdfc9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 957e9e4b51dbca2f27e042b185b6dd071791cfad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662048"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083988"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Strona kompilowania, Projektant projektu (Visual Basic)
 
@@ -70,11 +70,11 @@ Następujące ustawienia pozwalają włączyć ustawienia kompilatora opcji konf
 
  **Opcja strict** Określa, czy wymusza semantykę typów ścisłych. Gdy **Option Strict** jest **na**, powodują błąd w czasie kompilacji przez następujące warunki:
 
--   Niejawne konwersje zawężające
+- Niejawne konwersje zawężające
 
--   Późne powiązania
+- Późne powiązania
 
--   Niejawnego wpisywania, które spowodowało, że `Object` typu
+- Niejawnego wpisywania, które spowodowało, że `Object` typu
 
 Niejawne błędy konwersji zawężającej wystąpić, gdy jest konwersja typu danych niejawne, który jest konwersją zawężającą. Aby uzyskać więcej informacji, zobacz [Option Strict — instrukcja](/dotnet/visual-basic/language-reference/statements/option-strict-statement), [Konwersje jawne i niejawne](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions), i [rozszerzanie i zwężanie konwersji](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions).
 
@@ -91,11 +91,11 @@ Podczas tworzenia projektu, **Option Strict** ustawienie **strony kompilacji** j
 **Opcja Strict poszczególne ostrzeżenia.**
 **Konfiguracje ostrzeżenie** części **strony kompilacji** ma ustawienia, które odnoszą się do trzech warunków, które powodują błąd kompilacji podczas `Option Strict` znajduje się na. Te ustawienia są następujące:
 
--   **Niejawna konwersja**
+- **Niejawna konwersja**
 
--   **Rozpoznanie późnego wiązania; Wywołanie może się nie powieść w czasie wykonywania**
+- **Rozpoznanie późnego wiązania; Wywołanie może się nie powieść w czasie wykonywania**
 
--   **Niejawne typu; założono, że obiekt**
+- **Niejawne typu; założono, że obiekt**
 
 Po ustawieniu **Option Strict** do **na**, wszystkie trzy ustawienia konfiguracji tych ostrzeżeń są ustawione na **błąd**. Po ustawieniu **Option Strict** do **poza**, wszystkie trzy ustawienia są ustawione na **Brak**.
 
@@ -127,11 +127,11 @@ Uruchamianie zgodnie z aplikacją 64-bitowej podwaja się rozmiar wskaźnika, a 
 
 To pole wyboru jest dostępne tylko wtedy, gdy spełnione są wszystkie następujące warunki:
 
--   Na **kompilowania strony**, **Procesora docelowego** listy jest ustawiona na **dowolny Procesor**.
+- Na **kompilowania strony**, **Procesora docelowego** listy jest ustawiona na **dowolny Procesor**.
 
--   Na **strony aplikacji**, **typ aplikacji** lista określa, że projekt jest aplikacją.
+- Na **strony aplikacji**, **typ aplikacji** lista określa, że projekt jest aplikacją.
 
--   Na **strony aplikacji**, **platformę docelową** lista określa .NET Framework 4.5.
+- Na **strony aplikacji**, **platformę docelową** lista określa .NET Framework 4.5.
 
 **Ostrzeżenie konfiguracji** Poniższa tabela zawiera listę warunków kompilacji i odpowiedni poziom powiadomienia **Brak**, **ostrzeżenie**, lub **błąd** dla każdego.
 

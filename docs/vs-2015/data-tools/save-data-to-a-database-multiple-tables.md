@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 979c476068afb3f76d4561c4d93a8c02ce4e4187
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: cd19af4bc2533d2bd4e7c21dd49eae53510ae429
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648305"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118217"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Zapisywanie danych w bazie danych (wiele tabel)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,33 +38,33 @@ Jedną z najbardziej typowych scenariuszy w tworzeniu aplikacji jest wyświetlen
   
  Zadania zilustrowane w tym przewodniku obejmują:  
   
--   Tworzenie nowego **aplikacji Windows** projektu.  
+- Tworzenie nowego **aplikacji Windows** projektu.  
   
--   Tworzenie i konfigurowanie źródła danych w aplikacji za pomocą [Kreatora konfiguracji źródła danych](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
+- Tworzenie i konfigurowanie źródła danych w aplikacji za pomocą [Kreatora konfiguracji źródła danych](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
--   Określa elementy w [okna źródeł danych](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992). Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+- Określa elementy w [okna źródeł danych](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992). Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
--   Tworzenie formantów powiązanych z danymi przez przeciąganie elementów z **źródeł danych** okna do formularza.  
+- Tworzenie formantów powiązanych z danymi przez przeciąganie elementów z **źródeł danych** okna do formularza.  
   
--   Modyfikowanie kilku rekordów w każdej tabeli w zestawie danych.  
+- Modyfikowanie kilku rekordów w każdej tabeli w zestawie danych.  
   
--   Modyfikowanie kodu wysyłać zaktualizowane dane w zestawie danych w bazie danych.  
+- Modyfikowanie kodu wysyłać zaktualizowane dane w zestawie danych w bazie danych.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby ukończyć ten przewodnik, potrzebne są:  
   
--   Dostęp do przykładowej bazy danych Northwind.
+- Dostęp do przykładowej bazy danych Northwind.
   
 ## <a name="create-the-windows-application"></a>Tworzenie aplikacji Windows  
  Pierwszym krokiem jest utworzenie **aplikacji Windows**. Przypisanie nazwy do projektu jest opcjonalny w tym kroku, ale firma Microsoft będzie nadaj jej nazwę, ponieważ planujemy zapisanie go później.  
   
 #### <a name="to-create-the-new-windows-application-project"></a>Aby utworzyć nowy projekt aplikacji Windows  
   
-1.  Na **pliku** menu, Utwórz nowy projekt.  
+1. Na **pliku** menu, Utwórz nowy projekt.  
   
-2.  Nadaj projektowi nazwę `UpdateMultipleTablesWalkthrough`.  
+2. Nadaj projektowi nazwę `UpdateMultipleTablesWalkthrough`.  
   
-3.  Wybierz **aplikacji Windows**, a następnie wybierz pozycję **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Wybierz **aplikacji Windows**, a następnie wybierz pozycję **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **UpdateMultipleTablesWalkthrough** projekt zostanie utworzony i dodany do **Eksploratora rozwiązań**.  
   
@@ -73,27 +73,27 @@ Jedną z najbardziej typowych scenariuszy w tworzeniu aplikacji jest wyświetlen
   
 #### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych  
   
-1.  Na **danych** menu, wybierz opcję**Pokaż źródła danych**.  
+1. Na **danych** menu, wybierz opcję**Pokaż źródła danych**.  
   
-2.  W **źródeł danych** wybierz**Dodaj nowe źródło danych** można uruchomić **Kreatora konfiguracji źródła danych**.  
+2. W **źródeł danych** wybierz**Dodaj nowe źródło danych** można uruchomić **Kreatora konfiguracji źródła danych**.  
   
-3.  Na **wybierz typ źródła danych**ekranu, wybierz opcję **bazy danych**, a następnie wybierz pozycję **dalej**.  
+3. Na **wybierz typ źródła danych**ekranu, wybierz opcję **bazy danych**, a następnie wybierz pozycję **dalej**.  
   
-4.  Na **wybierz połączenie danych**wykonaj ekranu, jedną z następujących czynności:  
+4. Na **wybierz połączenie danych**wykonaj ekranu, jedną z następujących czynności:  
   
-    -   Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.  
+    - Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.  
   
          —lub—  
   
-    -   Wybierz **nowe połączenie** otworzyć **Dodawanie/modyfikowanie połączenia** okno dialogowe.  
+    - Wybierz **nowe połączenie** otworzyć **Dodawanie/modyfikowanie połączenia** okno dialogowe.  
   
-5.  Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie wybierz **dalej**.  
+5. Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie wybierz **dalej**.  
   
-6.  Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji**, wybierz opcję **dalej**.  
+6. Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji**, wybierz opcję **dalej**.  
   
-7.  Na **wybierz obiekty bazy danych**ekranu, a następnie rozwiń **tabel** węzła.  
+7. Na **wybierz obiekty bazy danych**ekranu, a następnie rozwiń **tabel** węzła.  
   
-8.  Wybierz **klientów** i **zamówienia** tabel, a następnie wybierz **Zakończ**.  
+8. Wybierz **klientów** i **zamówienia** tabel, a następnie wybierz **Zakończ**.  
   
      **NorthwindDataSet** zostanie dodany do projektu, a tabele są wyświetlane w **źródeł danych** okna.  
   
@@ -102,20 +102,20 @@ Jedną z najbardziej typowych scenariuszy w tworzeniu aplikacji jest wyświetlen
   
 #### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>Aby ustawić upuszczany typ elementów w oknie źródeł danych  
   
-1.  W **źródeł danych** okna, rozwiń węzeł **klientów** węzła.  
+1. W **źródeł danych** okna, rozwiń węzeł **klientów** węzła.  
   
-2.  Na **klientów** węzeł **szczegóły** z listy kontroli, aby zmienić kontrolę nad **klientów** tabeli do poszczególnych formantów. Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+2. Na **klientów** węzeł **szczegóły** z listy kontroli, aby zmienić kontrolę nad **klientów** tabeli do poszczególnych formantów. Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
 ## <a name="create-the-data-bound-form"></a>Tworzenie formularza powiązanych z danymi  
  Można utworzyć formanty powiązane z danymi przez przeciąganie elementów z **źródeł danych** okna do formularza.  
   
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Aby utworzyć formanty powiązane z danymi formularza  
   
-1.  Przeciągnij główny **klientów** węzła z **źródeł danych** okna na **Form1**.  
+1. Przeciągnij główny **klientów** węzła z **źródeł danych** okna na **Form1**.  
   
      Formanty powiązane z danymi z etykietami opisowymi są wyświetlane w formularzu, oraz pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania między rekordami. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane w zasobniku składnika.  
   
-2.  Przeciągnij powiązane **zamówienia** węzła z **źródeł danych** okna na **Form1**.  
+2. Przeciągnij powiązane **zamówienia** węzła z **źródeł danych** okna na **Form1**.  
   
     > [!NOTE]
     >  Powiązane **zamówienia** węzeł znajduje się poniżej **faks** kolumny, a jest elementem podrzędnym **klientów** węzła.  
@@ -130,9 +130,9 @@ Jedną z najbardziej typowych scenariuszy w tworzeniu aplikacji jest wyświetlen
   
 #### <a name="to-add-update-logic-to-the-application"></a>Aby dodać logikę aktualizacji do aplikacji  
   
-1.  Wybierz **Zapisz** znajdujący się na <xref:System.Windows.Forms.BindingNavigator>. Spowoduje to otwarcie edytora kodu, aby `bindingNavigatorSaveItem_Click` programu obsługi zdarzeń.  
+1. Wybierz **Zapisz** znajdujący się na <xref:System.Windows.Forms.BindingNavigator>. Spowoduje to otwarcie edytora kodu, aby `bindingNavigatorSaveItem_Click` programu obsługi zdarzeń.  
   
-2.  Zastąp kod w obsłudze zdarzeń, aby wywołać `Update` metody powiązanych elementów TableAdapter. Poniższy kod najpierw tworzy trzy tabele dane tymczasowe do przechowywania zaktualizowanych informacji dla każdego <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, i <xref:System.Data.DataRowState>). Następnie aktualizacje są uruchamiane w odpowiedniej kolejności. Kod powinien wyglądać następująco:  
+2. Zastąp kod w obsłudze zdarzeń, aby wywołać `Update` metody powiązanych elementów TableAdapter. Poniższy kod najpierw tworzy trzy tabele dane tymczasowe do przechowywania zaktualizowanych informacji dla każdego <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, i <xref:System.Data.DataRowState>). Następnie aktualizacje są uruchamiane w odpowiedniej kolejności. Kod powinien wyglądać następująco:  
   
      [!code-csharp[VbRaddataSaving#10](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form4.cs#10)]
      [!code-vb[VbRaddataSaving#10](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form4.vb#10)]  
@@ -141,20 +141,20 @@ Jedną z najbardziej typowych scenariuszy w tworzeniu aplikacji jest wyświetlen
   
 #### <a name="to-test-the-application"></a>Aby przetestować aplikację  
   
-1.  Wybierz **F5**.  
+1. Wybierz **F5**.  
   
-2.  Należy wprowadzić pewne zmiany do danych z co najmniej jednego rekordu w każdej tabeli.  
+2. Należy wprowadzić pewne zmiany do danych z co najmniej jednego rekordu w każdej tabeli.  
   
-3.  Wybierz ikonę **Zapisz**.  
+3. Wybierz ikonę **Zapisz**.  
   
-4.  Sprawdź wartości w bazie danych, aby sprawdzić, czy zmiany zostały zapisane.  
+4. Sprawdź wartości w bazie danych, aby sprawdzić, czy zmiany zostały zapisane.  
   
 ## <a name="next-steps"></a>Następne kroki  
  W zależności od wymagań aplikacji istnieje kilka kroków, które można wykonać po utworzeniu formularza powiązanych z danymi w aplikacji Windows. Niektóre udoskonalenia, których można dokonać w tym instruktażu obejmują:  
   
--   Dodawanie funkcji wyszukiwania do formularza. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie zapytania parametrycznego do Windows Forms aplikacji](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
+- Dodawanie funkcji wyszukiwania do formularza. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie zapytania parametrycznego do Windows Forms aplikacji](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
   
--   Edytowanie źródła danych, aby dodać lub usunąć obiekty bazy danych. Aby uzyskać więcej informacji, zobacz [jak: Edytowanie zestawu danych](http://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3).  
+- Edytowanie źródła danych, aby dodać lub usunąć obiekty bazy danych. Aby uzyskać więcej informacji, zobacz [jak: Edytowanie zestawu danych](http://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)

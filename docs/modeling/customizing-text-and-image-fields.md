@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d63354d552b04d07f0b2d0ede41d28fc33cda3a3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6a31544c256c8160eba2c18afb102205a921e0b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970728"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088564"
 ---
 # <a name="customizing-text-and-image-fields"></a>Dostosowywanie pól tekstowych i obrazu
 Po zdefiniowaniu dekoratora tekstu w kształcie jest reprezentowana przez element TextField. Przykłady inicjalizacji TextFields i innych ShapeFields należy sprawdzić Dsl\GeneratedCode\Shapes.cs w rozwiązaniu języka DSL.
@@ -181,13 +181,13 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 #### <a name="to-create-a-subclass-of-imagefield"></a>Aby utworzyć podklasę ImageField
 
-1.  Ustaw **Generates Double Derived** właściwości z klasy nadrzędnej kształtu w definicji DSL.
+1. Ustaw **Generates Double Derived** właściwości z klasy nadrzędnej kształtu w definicji DSL.
 
-2.  Zastąp `InitializeShapeFields` metody klasy kształtu.
+2. Zastąp `InitializeShapeFields` metody klasy kształtu.
 
-    -   Utwórz nowy plik kodu w projekcie języka DSL i zapisać definicję klasy częściowej klasy kształtu. Zastąp definicję metody istnieje.
+    - Utwórz nowy plik kodu w projekcie języka DSL i zapisać definicję klasy częściowej klasy kształtu. Zastąp definicję metody istnieje.
 
-3.  Sprawdź kod `InitializeShapeFields` w DSL\GeneratedCode\Shapes.cs.
+3. Sprawdź kod `InitializeShapeFields` w DSL\GeneratedCode\Shapes.cs.
 
      W metodzie zastąpienie wywołanie metody podstawowej, a następnie utwórz wystąpienie klasy pola własnego obrazu. Umożliwia to Zastąp pole zwykłego obrazu w `shapeFields` listy.
 

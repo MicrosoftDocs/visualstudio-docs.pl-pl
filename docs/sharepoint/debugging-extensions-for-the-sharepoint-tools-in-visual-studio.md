@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d28836e1213e65fa7537937b9b6ce27b87f1c3ba
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 3340c55b99f9d2507bb129eff689cc1b510843f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324503"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094401"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Debugowanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio
   Można debugować rozszerzenia narzędzi programu SharePoint w wystąpieniu doświadczalnym lub regularnych wystąpieniach programu Visual Studio. Jeśli potrzebujesz rozwiązać problem zachowania rozszerzenia, możesz zmodyfikować wartości rejestru, aby wyświetlić dodatkowe informacje o błędzie i skonfigurować, jak Visual Studio wykonuje polecenia programu SharePoint.
@@ -29,50 +29,50 @@ ms.locfileid: "58324503"
 
  Aby uzyskać przykłady ilustrujące sposób debugowania różnego rodzaju rozszerzeń w doświadczalnym wystąpieniu programu Visual Studio zobacz następujące instruktaże:
 
--   [Przewodnik: Rozszerzanie typu elementu projektu SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
+- [Przewodnik: Rozszerzanie typu elementu projektu SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
 
--   [Przewodnik: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
+- [Przewodnik: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 
--   [Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
+- [Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 
--   [Przewodnik: Rozszerzanie Eksploratora serwera na potrzeby wyświetlania składników web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+- [Przewodnik: Rozszerzanie Eksploratora serwera na potrzeby wyświetlania składników web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 
--   [Przewodnik: Wywołania w modelu obiektu klienta SharePoint w rozszerzeniu Eksploratora serwera](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
+- [Przewodnik: Wywołania w modelu obiektu klienta SharePoint w rozszerzeniu Eksploratora serwera](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 
 ## <a name="debug-extensions-in-the-regular-instance-of-visual-studio"></a>Debuguj rozszerzenia w regularnym wystąpieniu programu Visual Studio
  Jeśli chcesz debugować rozszerzenie projektu w regularnym wystąpieniu programu Visual Studio, należy najpierw zainstalować rozszerzenia w regularnym wystąpieniu. Następnie można dołączyć debugera do drugiego procesu programu Visual Studio. Po zakończeniu można usunąć rozszerzenie tak, aby już nie ładuje się na komputerze deweloperskim.
 
 #### <a name="to-install-the-extension"></a>Aby zainstalować rozszerzenie
 
-1.  Zamknij wszystkie wystąpienia programu Visual Studio.
+1. Zamknij wszystkie wystąpienia programu Visual Studio.
 
-2.  W folderze danych wyjściowych kompilacji dla projektu rozszerzenia, otwórz *.vsix* pliku, klikając go dwukrotnie lub otwierając jego menu skrótów, a następnie wybierając **Otwórz**:
+2. W folderze danych wyjściowych kompilacji dla projektu rozszerzenia, otwórz *.vsix* pliku, klikając go dwukrotnie lub otwierając jego menu skrótów, a następnie wybierając **Otwórz**:
 
-3.  W **Instalator rozszerzenia programu Visual Studio** okno dialogowe, wybierz wersję programu Visual Studio, do której chcesz zainstalować rozszerzenie, a następnie wybierz **zainstalować** przycisku.
+3. W **Instalator rozszerzenia programu Visual Studio** okno dialogowe, wybierz wersję programu Visual Studio, do której chcesz zainstalować rozszerzenie, a następnie wybierz **zainstalować** przycisku.
 
      Program Visual Studio instaluje pliki rozszerzenia do %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions\\*nazwisko autora*\\*Nazwa rozszerzenia* \\ *wersji*. Ostatnie trzy foldery w tej ścieżce są konstruowane na podstawie `Author`, `Name`, i `Version` elementów w *extension.vsixmanifest* pliku dla rozszerzenia.
 
-4.  Po zainstalowaniu rozszerzenia Visual Studio wybierz **Zamknij** przycisku.
+4. Po zainstalowaniu rozszerzenia Visual Studio wybierz **Zamknij** przycisku.
 
 #### <a name="to-debug-the-extension"></a>Aby debugować rozszerzenie
 
-1.  Otwórz program Visual Studio z uprawnieniami administratora i Otwórz projekt rozszerzenia. Następujące kroki odnoszą się do tego wystąpienia programu Visual Studio jako *pierwsze wystąpienie*.
+1. Otwórz program Visual Studio z uprawnieniami administratora i Otwórz projekt rozszerzenia. Następujące kroki odnoszą się do tego wystąpienia programu Visual Studio jako *pierwsze wystąpienie*.
 
-2.  Uruchomienie innego wystąpienia programu Visual Studio z uprawnieniami administratora. Następujące kroki odnoszą się do tego wystąpienia programu Visual Studio jako *drugie wystąpienie*.
+2. Uruchomienie innego wystąpienia programu Visual Studio z uprawnieniami administratora. Następujące kroki odnoszą się do tego wystąpienia programu Visual Studio jako *drugie wystąpienie*.
 
-3.  Przełącz się do pierwszego wystąpienia programu Visual Studio.
+3. Przełącz się do pierwszego wystąpienia programu Visual Studio.
 
-4.  Na pasku menu wybierz **debugowania**, **dołączyć do procesu**.
+4. Na pasku menu wybierz **debugowania**, **dołączyć do procesu**.
 
-5.  W **dostępne procesy** wybierz *devenv.exe*. Ten wpis, który odwołuje się do drugiego wystąpienia programu Visual Studio; to wystąpienie, który chcesz debugować swoje rozszerzenie projektu w.
+5. W **dostępne procesy** wybierz *devenv.exe*. Ten wpis, który odwołuje się do drugiego wystąpienia programu Visual Studio; to wystąpienie, który chcesz debugować swoje rozszerzenie projektu w.
 
-6.  Wybierz **Dołącz** przycisku.
+6. Wybierz **Dołącz** przycisku.
 
      Program Visual Studio uruchamia rozszerzenie projektu w trybie debugowania.
 
-7.  Przełącz się do drugiego wystąpienia programu Visual Studio.
+7. Przełącz się do drugiego wystąpienia programu Visual Studio.
 
-8.  Utwórz nowy projekt programu SharePoint, który ładuje Twoje rozszerzenie. Na przykład w przypadku debugowania rozszerzeniem dla elementów projektu definicji listy, utworzyć **definicji listy** projektu.
+8. Utwórz nowy projekt programu SharePoint, który ładuje Twoje rozszerzenie. Na przykład w przypadku debugowania rozszerzeniem dla elementów projektu definicji listy, utworzyć **definicji listy** projektu.
 
 9. Wykonać dowolne kroki są wymagane, aby przetestować kod rozszerzenia.
 
@@ -80,33 +80,33 @@ ms.locfileid: "58324503"
 
 #### <a name="to-remove-the-extension"></a>Aby usunąć rozszerzenie
 
-1.  W programie Visual Studio, na pasku menu wybierz **narzędzia**, **rozszerzenia i aktualizacje**.
+1. W programie Visual Studio, na pasku menu wybierz **narzędzia**, **rozszerzenia i aktualizacje**.
 
      **Rozszerzenia i aktualizacje** zostanie otwarte okno dialogowe.
 
-2.  Na liście rozszerzeń wybierz nazwę rozszerzenia, a następnie wybierz **Odinstaluj** przycisku.
+2. Na liście rozszerzeń wybierz nazwę rozszerzenia, a następnie wybierz **Odinstaluj** przycisku.
 
-3.  W oknie dialogowym wybierz **tak** przycisk, aby upewnić się, że chcesz odinstalować rozszerzenie.
+3. W oknie dialogowym wybierz **tak** przycisk, aby upewnić się, że chcesz odinstalować rozszerzenie.
 
-4.  Wybierz **Uruchom ponownie teraz** przycisk, aby ukończyć dezinstalację.
+4. Wybierz **Uruchom ponownie teraz** przycisk, aby ukończyć dezinstalację.
 
 ## <a name="debug-sharepoint-commands"></a>Debugowanie poleceń programu SharePoint
  Jeśli chcesz debugować polecenie programu SharePoint, która jest częścią rozszerzenia narzędzi programu SharePoint, należy dołączyć debuger *vssphost4.exe* procesu. Jest to proces hosta 64-bitowego, który wykonuje polecenia programu SharePoint. Aby uzyskać więcej informacji na temat poleceń programu SharePoint i *vssphost4.exe*, zobacz [wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
 #### <a name="to-attach-the-debugger-to-the-vssphost4exe-process"></a>Aby dołączyć debuger do procesu vssphost4.exe
 
-1.  Rozpocznij debugowanie Twojego rozszerzenia w doświadczalnym wystąpieniu programu Visual Studio lub regularnych wystąpieniach programu Visual Studio, postępując zgodnie z powyższymi instrukcjami.
+1. Rozpocznij debugowanie Twojego rozszerzenia w doświadczalnym wystąpieniu programu Visual Studio lub regularnych wystąpieniach programu Visual Studio, postępując zgodnie z powyższymi instrukcjami.
 
-2.  W wystąpieniu programu Visual Studio, w którym jest uruchomiony debuger, na pasku menu wybierz **debugowania**, **dołączyć do procesu**.
+2. W wystąpieniu programu Visual Studio, w którym jest uruchomiony debuger, na pasku menu wybierz **debugowania**, **dołączyć do procesu**.
 
-3.  W **dostępne procesy** wybierz *vssphost.exe*.
+3. W **dostępne procesy** wybierz *vssphost.exe*.
 
     > [!NOTE]
     >  Jeśli vssphost.exe nie ma na liście, należy uruchomić *vssphost4.exe* procesu w wystąpieniu programu Visual Studio, w którym są uruchomione rozszerzenia. Zazwyczaj można to zrobić, wykonując akcję wywołującą Visual Studio, aby połączyć się z witryną programu SharePoint na komputerze deweloperskim. Na przykład programu Visual Studio uruchamia *vssphost4.exe* po rozwinięciu węzła połączenia witryny (węzła, który wyświetla adres URL witryny) w obszarze **połączeń SharePoint** w węźle **Eksploratora serwera**  oknie lub podczas dodawania niektórych elementów projektu programu SharePoint, takich jak **wystąpienie listy** lub **odbiorcy zdarzeń** elementy do projektu programu SharePoint.
 
-4.  Wybierz **Dołącz** przycisku.
+4. Wybierz **Dołącz** przycisku.
 
-5.  W wystąpieniu programu Visual Studio, która jest debugowana należy wykonać kroki, które są wymagane do wykonania polecenia.
+5. W wystąpieniu programu Visual Studio, która jest debugowana należy wykonać kroki, które są wymagane do wykonania polecenia.
 
 ## <a name="modify-registry-values-to-help-debug-sharepoint-tools-extensions"></a>Modyfikowanie wartości rejestru, aby pomóc w debugowaniu rozszerzeń narzędzi SharePoint
  Podczas debugowania rozszerzenia narzędzi programu SharePoint w programie Visual Studio, można zmodyfikować wartości rejestru, aby ułatwić rozwiązywanie problemów z rozszerzeniem. Istnieją wartości w **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools** klucza. Te wartości nie istnieją domyślnie.

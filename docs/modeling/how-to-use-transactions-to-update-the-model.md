@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eed10c7535a08a299f43138774935f4c65eafffa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9a7514e3ff0c876a669f514a7e17bb02b73c19c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924399"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075028"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Instrukcje: Użycie transakcji do aktualizacji modelu
 Transakcje upewnij się, że zmiany wprowadzone do magazynu są traktowane jako grupa. Zmiany, które są grupowane może być przekazana lub wycofana jako pojedyncza jednostka.
@@ -57,9 +57,9 @@ catch (Exception ex)
 ## <a name="rolling-back-a-transaction"></a>Wycofywanie transakcji
  Aby upewnić się, że Store pozostaje w lub powraca do stanu przed transakcji, można użyć jednej z tych taktyka:
 
-1.  Zgłoś wyjątek, który nie jest wyłapywany wewnątrz zakresu transakcji.
+1. Zgłoś wyjątek, który nie jest wyłapywany wewnątrz zakresu transakcji.
 
-2.  Jawnie Wycofaj tę transakcję:
+2. Jawnie Wycofaj tę transakcję:
 
     ```csharp
     this.Store.TransactionManager.CurrentTransaction.Rollback();

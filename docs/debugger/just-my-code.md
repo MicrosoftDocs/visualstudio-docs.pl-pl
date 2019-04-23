@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ebbf2401432b9afec5a66fb6a7322e3e2df035
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: edb78ed49add85b35f3fb89b4ba424d44f52bf8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325334"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081869"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Debuguj tylko kod użytkownika przy użyciu tylko mój kod
 
@@ -110,7 +110,7 @@ Jeśli debuger przerwie działanie na kodzie niezwiązanych z użytkownikiem (na
 
 Jeśli debuger uderza w wyjątku, zatrzymuje na wyjątek, czy jest ono w kodzie użytkownika lub niezwiązanych z użytkownikiem. **Nieobsługiwane przez użytkownika** opcji na liście **ustawienia wyjątków** okno dialogowe, są ignorowane.
 
-###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Dostosowywanie C++ stos wywołań i kodu, przechodzenie krok po kroku zachowanie
+### <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Dostosowywanie C++ stos wywołań i kodu, przechodzenie krok po kroku zachowanie
 
 Dla projektów języka C++, można określić moduły, pliki źródłowe i funkcji **stos wywołań** okna traktuje jako kod niezwiązany z użytkownikiem, określając je w  *\*.natjmc* plików. To dostosowanie ma zastosowanie również do kodu, przechodzenie krok po kroku, korzystając z najnowszą wersję kompilatora (zobacz [C++ tylko mój kod](#BKMK_CPP_User_and_non_user_code)).
 
@@ -160,7 +160,7 @@ A *.natjmc* plik jest plikiem XML o następującej składni:
 |`Module`|Opcjonalna. Nazwa lub pełną ścieżkę do modułu, która zawiera funkcję. Ten atrybut służy do odróżniania funkcji o tej samej nazwie.|
 |`ExceptionImplementation`|Po ustawieniu `true`, stos wywołań Wyświetla funkcja, która zgłosiła wyjątek, a nie z tej funkcji.|
 
-###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> Dostosowywanie zachowania przechodzenia krok po kroku C++ niezależne od ustawień tylko mój kod
+### <a name="BKMK_CPP_Customize_stepping_behavior"></a> Dostosowywanie zachowania przechodzenia krok po kroku C++ niezależne od ustawień tylko mój kod
 
 W projektach C++ można określić funkcji, aby przejść przez wymienienie ich jako kod niezwiązany z użytkownikiem w  *\*.natstepfilter* plików. Funkcje wymienione w  *\*.natstepfilter* pliki nie są zależne od ustawień tylko mój kod.
 
@@ -192,7 +192,7 @@ A *.natstepfilter* plik jest plikiem XML o następującej składni:
 |`Module`|Opcjonalna. ECMA 262 sformatowane wyrażeń regularnych, określić pełną ścieżkę do modułu zawierający funkcję. Dopasowanie jest rozróżniana wielkość liter.|
 |`Action`|Wymagana. Jedną z następujących wartości rozróżniana wielkość liter:<br /><br /> `NoStepInto`  -Nakazuje debugerowi na wkroczenie za pośrednictwem funkcji.<br /> `StepInto`  -Nakazuje debugerowi na wkroczenie do funkcji zastąpienie wszelkich innych `NoStepInto` dopasowane funkcji.|
 
-##  <a name="BKMK_JavaScript_Just_My_Code"></a> Tylko mój kod języka JavaScript
+## <a name="BKMK_JavaScript_Just_My_Code"></a> Tylko mój kod języka JavaScript
 
 <a name="BKMK_JS_User_and_non_user_code"></a> JavaScript tylko mój kod kontrolki przechodzenie krok po kroku, a następnie wywołać wyświetlanie stosu przez skategoryzowanie kodu w jednym z tych klasyfikacji:
 
@@ -205,10 +205,10 @@ A *.natstepfilter* plik jest plikiem XML o następującej składni:
 Debuger JavaScript klasyfikuje kod jako użytkownika lub niezwiązanych z użytkownikiem w następującej kolejności:
 
 1. Domyślne klasyfikacje.
-   -   Skrypt wykonywany, przekazując ciąg do hosta — pod warunkiem `eval` funkcja **MyCode**.
-   -   Skrypt wykonywany, przekazując ciąg do `Function` Konstruktor jest **LibraryCode**.
-   -   Skrypt w odwołaniu do struktury, takich jak WinJS lub zestawu Azure SDK jest **LibraryCode**.
-   -   Skrypt wykonywany, przekazując ciąg do `setTimeout`, `setImmediate`, lub `setInterval` funkcje **UnrelatedCode**.
+   - Skrypt wykonywany, przekazując ciąg do hosta — pod warunkiem `eval` funkcja **MyCode**.
+   - Skrypt wykonywany, przekazując ciąg do `Function` Konstruktor jest **LibraryCode**.
+   - Skrypt w odwołaniu do struktury, takich jak WinJS lub zestawu Azure SDK jest **LibraryCode**.
+   - Skrypt wykonywany, przekazując ciąg do `setTimeout`, `setImmediate`, lub `setInterval` funkcje **UnrelatedCode**.
 
 2. Klasyfikacje, określony dla wszystkich projektów Visual Studio JavaScript w *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json* pliku.
 

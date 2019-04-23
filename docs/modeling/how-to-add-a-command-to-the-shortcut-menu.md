@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb8a9990c28d30d00efdfd98bd106dcd12b05c66
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 70960cc92d60ebbffa34dda75557dfcb9a1a0d67
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913382"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092724"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Instrukcje: Dodawanie polecenia do menu skrótów
 
@@ -50,7 +50,7 @@ Użyj metody w tym temacie:
 
    W przeciwnym razie należy wziąć pod uwagę przy użyciu metody MEF do definiowania polecenia. Aby uzyskać więcej informacji, zobacz [rozszerzanie DSL za pomocą MEF](../modeling/extend-your-dsl-by-using-mef.md).
 
-##  <a name="VSCT"></a> Zadeklaruj polecenie w Commands.Vsct
+## <a name="VSCT"></a> Zadeklaruj polecenie w Commands.Vsct
  Polecenia menu są deklarowane w DslPackage\Commands.vsct. Te definicje Określ etykiety elementów menu i gdzie są wyświetlane na pasku menu.
 
  Plik, który można edytować Commands.vsct, importuje definicje z kilku pliki .h, które znajdują się w katalogu *ścieżka instalacji programu Visual Studio SDK*\VisualStudioIntegration\Common\Inc. Zawiera on również GeneratedVsct.vsct, która jest generowana z definicji DSL.
@@ -59,9 +59,9 @@ Użyj metody w tym temacie:
 
 ### <a name="to-add-the-command"></a>Aby dodać polecenie
 
-1.  W **Eksploratora rozwiązań**w obszarze **DslPackage** projektu, otwórz Commands.vsct.
+1. W **Eksploratora rozwiązań**w obszarze **DslPackage** projektu, otwórz Commands.vsct.
 
-2.  W `Commands` elementu, zdefiniuj jeden lub więcej przycisków i grup. A *przycisk* element menu. A *grupy* to sekcja w menu. Aby zdefiniować te elementy, Dodaj następujące elementy:
+2. W `Commands` elementu, zdefiniuj jeden lub więcej przycisków i grup. A *przycisk* element menu. A *grupy* to sekcja w menu. Aby zdefiniować te elementy, Dodaj następujące elementy:
 
     ```xml
     <!-- Define a group - a section in the menu -->
@@ -90,7 +90,7 @@ Użyj metody w tym temacie:
     > [!NOTE]
     > Każdy przycisk lub grupa jest identyfikowana przez identyfikator GUID i liczby całkowitej. Można utworzyć kilka grup i przyciski, za pomocą tego samego identyfikatora GUID. Jednak musi mieć różne identyfikatory. Do nazw identyfikator GUID i identyfikator są tłumaczone na rzeczywistych identyfikatorów GUID i identyfikatory numeryczne w `<Symbols>` węzła.
 
-3.  Dodaj ograniczenie widoczności dla polecenia, więc, że jest załadowany tylko w kontekście języka specyficznego dla domeny. Aby uzyskać więcej informacji, zobacz [VisibilityConstraints, Element](../extensibility/visibilityconstraints-element.md).
+3. Dodaj ograniczenie widoczności dla polecenia, więc, że jest załadowany tylko w kontekście języka specyficznego dla domeny. Aby uzyskać więcej informacji, zobacz [VisibilityConstraints, Element](../extensibility/visibilityconstraints-element.md).
 
      Aby to zrobić, Dodaj następujące elementy w `CommandTable` elementu po `Commands` elementu.
 
@@ -102,7 +102,7 @@ Użyj metody w tym temacie:
     </VisibilityConstraints>
     ```
 
-4.  Definiowanie nazw, które były używane identyfikatory GUID i identyfikatory. Aby to zrobić, Dodaj `Symbols` element `CommandTable` elementu po `Commands` elementu.
+4. Definiowanie nazw, które były używane identyfikatory GUID i identyfikatory. Aby to zrobić, Dodaj `Symbols` element `CommandTable` elementu po `Commands` elementu.
 
     ```xml
     <Symbols>
@@ -115,37 +115,37 @@ Użyj metody w tym temacie:
     </Symbols>
     ```
 
-5.  Zastąp `{000...000}` o identyfikatorze GUID, który identyfikuje elementy menu i grupy. Aby uzyskać nowy identyfikator GUID, użyj **Utwórz GUID** narzędzie **narzędzia** menu.
+5. Zastąp `{000...000}` o identyfikatorze GUID, który identyfikuje elementy menu i grupy. Aby uzyskać nowy identyfikator GUID, użyj **Utwórz GUID** narzędzie **narzędzia** menu.
 
     > [!NOTE]
     >  Jeśli dodasz więcej grup lub elementy menu, można użyć tego samego identyfikatora GUID. Jednakże, należy użyć nowych wartości dla `IDSymbols`.
 
-6.  W kodzie skopiowanych z tej procedury Zastąp każde wystąpienie następujących ciągów własne ciągi:
+6. W kodzie skopiowanych z tej procedury Zastąp każde wystąpienie następujących ciągów własne ciągi:
 
-    -   `grpidMyMenuGroup`
+    - `grpidMyMenuGroup`
 
-    -   `cmdidMyContextMenuCommand`
+    - `cmdidMyContextMenuCommand`
 
-    -   `guidCustomMenuCmdSet`
+    - `guidCustomMenuCmdSet`
 
-    -   `My Context Menu Command`
+    - `My Context Menu Command`
 
-##  <a name="version"></a> Zaktualizuj wersję pakietu w Package.tt
+## <a name="version"></a> Zaktualizuj wersję pakietu w Package.tt
  Przy dodawaniu lub zmienić polecenie aktualizacji `version` parametru <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> mający zastosowanie do klasy pakietu przed publikacją nową wersję języka specyficznego dla domeny.
 
  Ponieważ klasa pakietu jest zdefiniowana w wygenerowanym pliku, należy zaktualizować atrybutu w pliku szablonu tekstu, który generuje Package.cs plik.
 
 ### <a name="to-update-the-packagett-file"></a>Aby zaktualizować plik Package.tt
 
-1.  W **Eksploratora rozwiązań**w **DslPackage** projektu w **GeneratedCode** folder, otwórz plik Package.tt.
+1. W **Eksploratora rozwiązań**w **DslPackage** projektu w **GeneratedCode** folder, otwórz plik Package.tt.
 
-2.  Znajdź `ProvideMenuResource` atrybutu.
+2. Znajdź `ProvideMenuResource` atrybutu.
 
-3.  Inkrementacja `version` parametr atrybut, który jest drugi parametr. Jeśli chcesz, możesz napisać nazwę parametru jawnie, aby pamiętać o jego przeznaczenia. Na przykład:
+3. Inkrementacja `version` parametr atrybut, który jest drugi parametr. Jeśli chcesz, możesz napisać nazwę parametru jawnie, aby pamiętać o jego przeznaczenia. Na przykład:
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
-##  <a name="CommandSet"></a> Zdefiniuj zachowanie polecenia
+## <a name="CommandSet"></a> Zdefiniuj zachowanie polecenia
 
 DSL ma już niektóre polecenia, które są implementowane w częściową klasą, która jest zadeklarowana w DslPackage\GeneratedCode\CommandSet.cs. Aby dodać nowe polecenia, można rozszerzyć tę klasę, tworząc nowy plik, który zawiera częściowa deklaracja tego samego rodzaju. Nazwa klasy jest zazwyczaj  *\<YourDslName >*`CommandSet`. Jest to przydatne rozpocząć przez weryfikowanie nazwę klasy i zapoznanie się jego zawartość.
 
@@ -153,15 +153,15 @@ Polecenie klasę zestawu jest tworzony na podstawie <xref:Microsoft.VisualStudio
 
 ### <a name="extend-the-commandset-class"></a>Rozszerzenie klasy element CommandSet
 
-1.  W Eksploratorze rozwiązań w projekcie DslPackage Otwórz GeneratedCode folder, a następnie sprawdź w obszarze CommandSet.tt i otwieranie jego pliku wygenerowanego CommandSet.cs. Należy pamiętać, że przestrzeń nazw i nazwę pierwszej klasy, która jest zdefiniowany w niej. Na przykład może zostać wyświetlony:
+1. W Eksploratorze rozwiązań w projekcie DslPackage Otwórz GeneratedCode folder, a następnie sprawdź w obszarze CommandSet.tt i otwieranie jego pliku wygenerowanego CommandSet.cs. Należy pamiętać, że przestrzeń nazw i nazwę pierwszej klasy, która jest zdefiniowany w niej. Na przykład może zostać wyświetlony:
 
      `namespace Company.Language1`
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2.  W **DslPackage**, Utwórz folder o nazwie **kod niestandardowy**. W tym folderze utwórz plik nowej klasy, który nosi nazwę `CommandSet.cs`.
+2. W **DslPackage**, Utwórz folder o nazwie **kod niestandardowy**. W tym folderze utwórz plik nowej klasy, który nosi nazwę `CommandSet.cs`.
 
-3.  W nowym pliku zapisu częściowa deklaracja, która ma tę samą nazwę jak wygenerowanej częściowej klasy i przestrzeni nazw. Na przykład:
+3. W nowym pliku zapisu częściowa deklaracja, która ma tę samą nazwę jak wygenerowanej częściowej klasy i przestrzeni nazw. Na przykład:
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -322,13 +322,13 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 ### <a name="to-exercise-the-command"></a>Wykonywanie polecenia
 
-1.  Na **Eksploratora rozwiązań** narzędzi, kliknij przycisk **Przekształć wszystkie szablony**.
+1. Na **Eksploratora rozwiązań** narzędzi, kliknij przycisk **Przekształć wszystkie szablony**.
 
-2.  Naciśnij klawisz **F5** ponownie skompiluj rozwiązanie i rozpocząć debugowanie języka specyficznego dla domeny w eksperymentalnym kompilacji.
+2. Naciśnij klawisz **F5** ponownie skompiluj rozwiązanie i rozpocząć debugowanie języka specyficznego dla domeny w eksperymentalnym kompilacji.
 
-3.  W eksperymentalnym kompilacji Otwórz diagram przykładowej.
+3. W eksperymentalnym kompilacji Otwórz diagram przykładowej.
 
-4.  Kliknij prawym przyciskiem myszy różne elementy na diagramie, aby sprawdzić, czy polecenie jest prawidłowo włączone lub wyłączone i odpowiednio wyświetlane lub ukryte, w zależności od wybranego elementu.
+4. Kliknij prawym przyciskiem myszy różne elementy na diagramie, aby sprawdzić, czy polecenie jest prawidłowo włączone lub wyłączone i odpowiednio wyświetlane lub ukryte, w zależności od wybranego elementu.
 
 ## <a name="troubleshoot"></a>Rozwiązywanie problemów
 
@@ -344,11 +344,11 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 **Nie jest wywoływana metoda OnStatus**:
 
--   Upewnij się, że identyfikatory GUID i identyfikatory w kodzie element CommandSet odpowiadają polom w sekcji symbole Commands.vsct.
+- Upewnij się, że identyfikatory GUID i identyfikatory w kodzie element CommandSet odpowiadają polom w sekcji symbole Commands.vsct.
 
--   Commands.vsct upewnij się, że identyfikator GUID i identyfikator w każdym węźle nadrzędnym zidentyfikować poprawne nadrzędnej grupy.
+- Commands.vsct upewnij się, że identyfikator GUID i identyfikator w każdym węźle nadrzędnym zidentyfikować poprawne nadrzędnej grupy.
 
--   W wierszu polecenia programu Visual Studio wpisz devenv/Setup z exp /rootsuffix. Następnie uruchom ponownie wystąpienie debugowania programu Visual Studio.
+- W wierszu polecenia programu Visual Studio wpisz devenv/Setup z exp /rootsuffix. Następnie uruchom ponownie wystąpienie debugowania programu Visual Studio.
 
 - Przejść przez metodę OnStatus, aby sprawdzić tego polecenia. Widoczne i polecenia. Włączone są ustawione na wartość true.
 
@@ -361,7 +361,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="see-also"></a>Zobacz także
 
 - [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [Instrukcje: Modyfikowanie standardowego polecenia Menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
+- [Instrukcje: Modyfikowanie standardowego polecenia menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 - [Wdrażanie rozwiązań dla języka specyficznego dla domeny](../modeling/deploying-domain-specific-language-solutions.md)
 - [Przykładowy kod: Diagramy obwodu](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 

@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 071a18af0532a55946087f7c47535405d0d3b40e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 28e2358b92080bd56cfda9d395f87e5c188da221
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769341"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062922"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Ustawienie obrazu tła w diagramie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,21 +25,21 @@ W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wizualizacji i modelowania SDK ob
   
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>Aby ustawić obraz tła dla wygenerowanego projektanta  
   
-1.  Skopiuj plik obrazu, który chcesz użyć jako tło diagramu do katalogu Dsl\Resources dla bieżącego projektu.  
+1. Skopiuj plik obrazu, który chcesz użyć jako tło diagramu do katalogu Dsl\Resources dla bieżącego projektu.  
   
-2.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy Dsl\Resources folder, wskaż **Dodaj**, a następnie kliknij przycisk **istniejący element**.  
+2. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy Dsl\Resources folder, wskaż **Dodaj**, a następnie kliknij przycisk **istniejący element**.  
   
-3.  W **Dodaj istniejący element** okno dialogowe, przejdź do folderu Dsl\Resources.  
+3. W **Dodaj istniejący element** okno dialogowe, przejdź do folderu Dsl\Resources.  
   
-4.  W **pliki typu** kliknij **pliki obrazów**.  
+4. W **pliki typu** kliknij **pliki obrazów**.  
   
-5.  Kliknij plik obrazu, który został skopiowany do katalogu, a następnie kliknij przycisk **Dodaj**.  
+5. Kliknij plik obrazu, który został skopiowany do katalogu, a następnie kliknij przycisk **Dodaj**.  
   
-6.  Kliknij prawym przyciskiem myszy Dsl, a następnie kliknij przycisk **właściwości** aby otworzyć okno właściwości projektu Dsl.  
+6. Kliknij prawym przyciskiem myszy Dsl, a następnie kliknij przycisk **właściwości** aby otworzyć okno właściwości projektu Dsl.  
   
-7.  Na **zasobów** kliknij pozycję **ten projekt nie zawiera domyślnego pliku zasobów. Kliknij tutaj, aby go utworzyć.**  
+7. Na **zasobów** kliknij pozycję **ten projekt nie zawiera domyślnego pliku zasobów. Kliknij tutaj, aby go utworzyć.**  
   
-8.  Dodaj plik obrazu do pliku zasobów przez przeciąganie obrazów z **Eksploratora rozwiązań** do okna zasobów.  
+8. Dodaj plik obrazu do pliku zasobów przez przeciąganie obrazów z **Eksploratora rozwiązań** do okna zasobów.  
   
 9. Otwórz menu Plik, a następnie kliknij opcję, aby zapisać wprowadzone właściwości projektu.  
   

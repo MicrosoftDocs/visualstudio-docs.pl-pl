@@ -19,12 +19,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ca7b4254ac359158b9cf42600b28ef533372813
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2b0ec545defec941d9a59001841d8bea443aa522
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777447"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071866"
 ---
 # <a name="link-model-elements-and-work-items"></a>Łączenie elementów modeli i elementów roboczych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,108 +63,108 @@ ms.locfileid: "54777447"
 > [!WARNING]
 >  Możesz musi już być podłączony do TFS źródła kodu kontrolki (SCC) można utworzyć lub połączyć elementu roboczego. Jeśli próbujesz nawiązać połączenie z inną SCC TFS, Visual Studio powoduje zamknięcie bieżącego rozwiązania automatycznie. Upewnij się, że jesteś podłączony do odpowiednich SCC przed przystąpieniem do tworzenia lub łącze do elementu roboczego. W kolejnych wersjach programu Visual Studio polecenia menu nie są dostępne, jeśli nie są połączone SCC.  
   
--   [Połącz z projektem zespołowym](#ConnectTFS)  
+- [Połącz z projektem zespołowym](#ConnectTFS)  
   
--   [Połącz element modelu z nowego elementu roboczego](#LinkNew)  
+- [Połącz element modelu z nowego elementu roboczego](#LinkNew)  
   
--   [Połącz element modelu z istniejącym elementem pracy](#LinkExisting)  
+- [Połącz element modelu z istniejącym elementem pracy](#LinkExisting)  
   
--   [Wyświetl elementy robocze połączone z elementem modelu](#OpenWorkItem)  
+- [Wyświetl elementy robocze połączone z elementem modelu](#OpenWorkItem)  
   
--   [Wyświetl elementy modelu połączone z elementem roboczym](#ViewLinkedModels)  
+- [Wyświetl elementy modelu połączone z elementem roboczym](#ViewLinkedModels)  
   
--   [Usuń łącza między elementami modelu i elementami roboczymi](#RemoveLinks)  
+- [Usuń łącza między elementami modelu i elementami roboczymi](#RemoveLinks)  
   
--   [Rozwiązywanie problemów](#Troubleshooting)  
+- [Rozwiązywanie problemów](#Troubleshooting)  
   
-##  <a name="ConnectTFS"></a> Połącz z projektem zespołowym  
+## <a name="ConnectTFS"></a> Połącz z projektem zespołowym  
  Musisz najpierw połączyć się z projektem zespołowym do tworzenia, wyświetlania lub usuwania łączy.  
   
-1.  Na **zespołu** menu, wybierz **Zarządzaj połączeniami** do wyświetlenia okna programu Team Explorer.  
+1. Na **zespołu** menu, wybierz **Zarządzaj połączeniami** do wyświetlenia okna programu Team Explorer.  
   
-2.  Jeśli odpowiedni projekt nie pojawia się w programie Team Explorer wybierz **Zarządzaj połączeniami** , a następnie wybierz **Połącz z projektem zespołowym**. Następnie wybierz w razie potrzeby odpowiednie projekty lub serwer.  
+2. Jeśli odpowiedni projekt nie pojawia się w programie Team Explorer wybierz **Zarządzaj połączeniami** , a następnie wybierz **Połącz z projektem zespołowym**. Następnie wybierz w razie potrzeby odpowiednie projekty lub serwer.  
   
-3.  W **Team Explorer**, wybierz projekt, w którym chcesz utworzyć, połączyć lub wyświetlać elementy robocze.  
+3. W **Team Explorer**, wybierz projekt, w którym chcesz utworzyć, połączyć lub wyświetlać elementy robocze.  
   
-##  <a name="LinkNew"></a> Połącz element modelu z nowego elementu roboczego  
+## <a name="LinkNew"></a> Połącz element modelu z nowego elementu roboczego  
   
-1.  Upewnij się, że masz połączenie z wystąpieniem TFS, którego chcesz użyć.  
+1. Upewnij się, że masz połączenie z wystąpieniem TFS, którego chcesz użyć.  
   
-2.  Na diagramie modelowania lub w **Eksploratora modelu UML**, otwórz menu skrótów dla elementu modelu.  
+2. Na diagramie modelowania lub w **Eksploratora modelu UML**, otwórz menu skrótów dla elementu modelu.  
   
-3.  Wybierz **Utwórz element pracy** i rodzaj elementu roboczego, który chcesz utworzyć.  
+3. Wybierz **Utwórz element pracy** i rodzaj elementu roboczego, który chcesz utworzyć.  
   
-4.  Wypełnij pola formularza elementu roboczego. Wybierz **Zapisz element roboczy**.  
+4. Wypełnij pola formularza elementu roboczego. Wybierz **Zapisz element roboczy**.  
   
      Program Visual Studio połączy element modelu z nowym elementem roboczym. Ikona pojawi się na elemencie modelu lub w pobliżu.  
   
 > [!WARNING]
 >  Możesz musi już być podłączony do TFS źródła kodu kontrolki (SCC) można utworzyć lub połączyć elementu roboczego. Jeśli próbujesz nawiązać połączenie z inną SCC TFS, Visual Studio powoduje zamknięcie bieżącego rozwiązania automatycznie. Upewnij się, że jesteś podłączony do odpowiednich SCC przed przystąpieniem do tworzenia lub łącze do elementu roboczego. W kolejnych wersjach programu Visual Studio polecenia menu nie są dostępne, jeśli nie są połączone SCC.  
   
-##  <a name="LinkExisting"></a> Połącz element modelu z istniejącym elementem pracy  
+## <a name="LinkExisting"></a> Połącz element modelu z istniejącym elementem pracy  
  Podczas łączenia elementów modelu z elementami roboczymi należy rozpocząć od elementu modelu, a nie od elementu roboczego.  
   
-1.  Upewnij się, że masz połączenie z wystąpieniem TFS, którego chcesz użyć.  
+1. Upewnij się, że masz połączenie z wystąpieniem TFS, którego chcesz użyć.  
   
-2.  Na diagramie modelowania lub w **Eksploratora modelu UML**, otwórz menu skrótów dla elementu modelu. Wybierz **Połącz z elementem roboczym**. Następnie wybierz swój projekt w **projektu** pola.  
+2. Na diagramie modelowania lub w **Eksploratora modelu UML**, otwórz menu skrótów dla elementu modelu. Wybierz **Połącz z elementem roboczym**. Następnie wybierz swój projekt w **projektu** pola.  
   
-3.  Wybierz jeden lub więcej elementów roboczych, aby utworzyć łącze do elementu modelu, wykonując jedną z następujących czynności:  
+3. Wybierz jeden lub więcej elementów roboczych, aby utworzyć łącze do elementu modelu, wykonując jedną z następujących czynności:  
   
-    -   Wybierz zapytanie w **zapisane zapytanie**.  
+    - Wybierz zapytanie w **zapisane zapytanie**.  
   
-    -   Wpisz identyfikatory elementów roboczych, rozdzielone spacjami, w **identyfikatory**.  
+    - Wpisz identyfikatory elementów roboczych, rozdzielone spacjami, w **identyfikatory**.  
   
-    -   Wpisz odpowiednie słowo lub frazę w **tytuł zawiera**.  
+    - Wpisz odpowiednie słowo lub frazę w **tytuł zawiera**.  
   
-4.  Wybierz **znaleźć**.  
+4. Wybierz **znaleźć**.  
   
-5.  Na liście elementów roboczych wybierz jeden z nich lub kilka, które chcesz połączyć.  
+5. Na liście elementów roboczych wybierz jeden z nich lub kilka, które chcesz połączyć.  
   
      Gdy wszystko będzie gotowe, **elementów roboczych** właściwości elementu modelu pokazuje liczbę większą niż wcześniej. Ikona pojawi się również na elemencie modelu lub w pobliżu.  
   
 > [!WARNING]
 >  Możesz musi już być podłączony do TFS źródła kodu kontrolki (SCC) można utworzyć lub połączyć elementu roboczego. Jeśli próbujesz nawiązać połączenie z inną SCC TFS, Visual Studio powoduje zamknięcie bieżącego rozwiązania automatycznie. Upewnij się, że jesteś podłączony do odpowiednich SCC przed przystąpieniem do tworzenia lub łącze do elementu roboczego. W kolejnych wersjach programu Visual Studio polecenia menu nie są dostępne, jeśli nie są połączone SCC.  
   
-##  <a name="OpenWorkItem"></a> Wyświetl elementy robocze połączone z elementem modelu  
+## <a name="OpenWorkItem"></a> Wyświetl elementy robocze połączone z elementem modelu  
   
-1.  W **Team Explorer**, upewnij się, że nawiązano do projektu zespołowego, gdzie elementy robocze są połączone z elementem modelu.  
+1. W **Team Explorer**, upewnij się, że nawiązano do projektu zespołowego, gdzie elementy robocze są połączone z elementem modelu.  
   
-2.  Na diagramie modelowania lub w **Eksploratora modelu UML**, otwórz menu skrótów dla elementu modelu. Wybierz **Wyświetl elementy robocze** Aby wyświetlić listę połączonych elementów roboczych.  
+2. Na diagramie modelowania lub w **Eksploratora modelu UML**, otwórz menu skrótów dla elementu modelu. Wybierz **Wyświetl elementy robocze** Aby wyświetlić listę połączonych elementów roboczych.  
   
     > [!NOTE]
     >  Wyświetlane są tylko elementy robocze z aktualnie połączonego serwera. Jeśli nie widzisz żadnych elementów roboczych, upewnij się, że łączysz się z właściwym serwerem w programie **Team Explorer**.  
   
-##  <a name="ViewLinkedModels"></a> Wyświetl elementy modelu połączone z elementem roboczym  
+## <a name="ViewLinkedModels"></a> Wyświetl elementy modelu połączone z elementem roboczym  
  Można wyświetlić diagramy modelowania i elementy, które są połączone z elementem roboczym w programie Visual Studio Team Services i w Team Foundation Server 2012 lub nowszym. Na przykład element roboczy może być połączony z modelami klas, które pokazują projekt nowych klas, które mają być zaimplementowane.  
   
-1.  W **Team Explorer**, upewnij się, że nawiązano do projektu zespołowego, gdzie elementy modelu są połączone z elementem roboczym.  
+1. W **Team Explorer**, upewnij się, że nawiązano do projektu zespołowego, gdzie elementy modelu są połączone z elementem roboczym.  
   
     > [!NOTE]
     >  Do wyświetlania elementów modelu połączonego można używać tylko programu Team Explorer, a nie Team Web Access. Upewnij się, że obszar roboczy jest mapowany do projektu modelowania, zawierającego elementy lub diagramy modelowania. Jeśli nie masz obszaru roboczego, należy go utworzyć. Zobacz [Rozwiązywanie problemów](#Troubleshooting) i [tworzenie i Praca z obszarami roboczymi](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
   
-2.  Otwórz element roboczy, wybierz polecenie **łącza**. W obszarze **łącze modelu**, otwórz menu skrótów dla połączonego elementu modelu. Wybierz **Otwórz połączony element**.  
+2. Otwórz element roboczy, wybierz polecenie **łącza**. W obszarze **łącze modelu**, otwórz menu skrótów dla połączonego elementu modelu. Wybierz **Otwórz połączony element**.  
   
      ![Otwórz połączonego elementu modelu z elementu roboczego](../modeling/media/workitem-openlinkedmodelelement.png "WorkItem_OpenLinkedModelElement")  
   
-##  <a name="RemoveLinks"></a> Usuń łącza między elementami modelu i elementami roboczymi  
+## <a name="RemoveLinks"></a> Usuń łącza między elementami modelu i elementami roboczymi  
  Usuń połączony element roboczy przez uruchomienie z elementu modelu. W ten sposób można poprawnie usunąć wzajemne powiązania z tym elementem modelu z elementu roboczego. W przeciwnym razie, jeśli zaczniesz od elementu roboczego, nie będzie można usunąć wzajemnego powiązania z tym elementem roboczym z elementu modelu.  
   
-1.  Na diagramie modelowania lub w **Eksploratora modelu UML**, otwórz menu skrótów dla elementu modelu.  
+1. Na diagramie modelowania lub w **Eksploratora modelu UML**, otwórz menu skrótów dla elementu modelu.  
   
-2.  Wybierz **usuwa elementy robocze**.  
+2. Wybierz **usuwa elementy robocze**.  
   
      \- lub —  
   
-    1.  Wybierz **właściwości**, następnie **elementy robocze** gdzie jest wyświetlana liczba połączonych elementów roboczych.  
+    1. Wybierz **właściwości**, następnie **elementy robocze** gdzie jest wyświetlana liczba połączonych elementów roboczych.  
   
-    2.  W **elementów roboczych** właściwości, wybierz przycisk wielokropka **[...]** .  
+    2. W **elementów roboczych** właściwości, wybierz przycisk wielokropka **[...]** .  
   
         > [!NOTE]
         >  Pojawiają się tylko elementy robocze na bieżącym serwerze. Jeśli lista jest pusta, ale liczba elementów roboczych nie jest równa zeru, upewnij się, że nawiązano połączenie z właściwym serwerem w **Team Explorer**.  
   
-3.  W obszarze **Usuń łącza do elementów roboczych**, wyczyść wybrane elementy, które chcesz odłączyć. Wybierz **OK**.  
+3. W obszarze **Usuń łącza do elementów roboczych**, wyczyść wybrane elementy, które chcesz odłączyć. Wybierz **OK**.  
   
-##  <a name="Troubleshooting"></a> Rozwiązywanie problemów  
+## <a name="Troubleshooting"></a> Rozwiązywanie problemów  
   
 |**Problem**|**Możliwa przyczyna**|**Rozdzielczość**|  
 |---------------|------------------------|--------------------|  

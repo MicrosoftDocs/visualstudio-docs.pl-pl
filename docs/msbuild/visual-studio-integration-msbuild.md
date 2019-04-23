@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5e3881bc346c5074c7fd4277708a16e22d4acd7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fc915136f64000da94132c0d10e153a206ed1ec0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597858"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072534"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integracja programu Visual Studio (MSBuild)
 Visual Studio zawiera [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do ładowania i kompilacji projektów zarządzanych. Ponieważ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] jest odpowiedzialna za projekt, niemal każdy projekt w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] formatu może być pomyślnie używany w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], nawet jeśli projekt został utworzony przez inne narzędzie i ma niestandardowy proces kompilacji.
@@ -75,13 +75,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-intellisense"></a>Funkcja IntelliSense czasu projektowania
  Aby uzyskać obsługę technologii IntelliSense w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zanim kompilacja wygeneruje zestaw danych wyjściowych, muszą być spełnione następujące warunki:
 
--   Musi istnieć obiekt docelowy o nazwie `Compile`.
+- Musi istnieć obiekt docelowy o nazwie `Compile`.
 
--   Albo `Compile` docelowego lub jednej z jego zależności musi wywołać zadanie zadanie kompilatora dla projektu, taki jak `Csc` lub `Vbc`.
+- Albo `Compile` docelowego lub jednej z jego zależności musi wywołać zadanie zadanie kompilatora dla projektu, taki jak `Csc` lub `Vbc`.
 
--   Albo `Compile` docelowego lub jednej z jego zależności musi spowodować, aby kompilator otrzymał wszystkie niezbędne parametry dla technologii IntelliSense, szczególnie wszystkie odwołania.
+- Albo `Compile` docelowego lub jednej z jego zależności musi spowodować, aby kompilator otrzymał wszystkie niezbędne parametry dla technologii IntelliSense, szczególnie wszystkie odwołania.
 
--   Warunki wymienione w [wewnątrz – procesowe](#in-process-compilers) sekcji muszą zostać spełnione.
+- Warunki wymienione w [wewnątrz – procesowe](#in-process-compilers) sekcji muszą zostać spełnione.
 
 ## <a name="build-solutions"></a>Tworzenie rozwiązań
  W ramach [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], plik rozwiązania i kolejność kompilacji projektu są kontrolowane przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sam. Podczas kompilowania rozwiązania z *msbuild.exe* w wierszu polecenia [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] analizuje plik rozwiązania i porządkuje kompilacje projektu. W obu przypadkach projekty są kompilowane indywidualnie w kolejności wg zależności, a odwołania projekt-projekt-nie są przenoszone. Natomiast gdy poszczególne projekty są kompilowane przy użyciu *msbuild.exe*, jest przesunięta odwołań między projektami.
@@ -126,22 +126,22 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-target-execution"></a>Wykonanie docelowego czasu projektowania
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] próbuje wykonać obiekty docelowe z niektórymi nazwami podczas ładowania projektu. Te obiekty docelowe obejmują `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths`, i `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uruchamia te obiekty docelowe, tak aby kompilator może zostać zainicjowana, aby dostarczyć IntelliSense, debuger może być inicjowany, a odwołania wyświetlane w Eksploratorze rozwiązań mogą być rozwiązane. Jeśli nie występują te obiekty docelowe, projekt będzie załadować i skompilowany poprawnie, ale doświadczenie projektowania w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nie będzie w pełni funkcjonalne.
 
-##  <a name="edit-project-files-in-visual-studio"></a>Edytowanie plików projektu w programie Visual Studio
+## <a name="edit-project-files-in-visual-studio"></a>Edytowanie plików projektu w programie Visual Studio
  Aby edytować [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu bezpośrednio, możesz otworzyć plik projektu w edytorze programu Visual Studio XML.
 
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Aby rozładować i edytować plik projektu w programie Visual Studio
 
-1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **Zwolnij projekt**.
+1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **Zwolnij projekt**.
 
      Projekt jest oznaczony jako **(niedostępna)**.
 
-2.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla niedostępnego projektu, a następnie wybierz **Edytuj \<plik projektu >**.
+2. W **Eksploratora rozwiązań**, otwórz menu skrótów dla niedostępnego projektu, a następnie wybierz **Edytuj \<plik projektu >**.
 
      Plik projektu zostanie otwarty w edytorze XML programu Visual Studio.
 
-3.  Edytuj, Zapisz i zamknij plik projektu.
+3. Edytuj, Zapisz i zamknij plik projektu.
 
-4.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla niedostępnego projektu, a następnie wybierz **Załaduj ponownie projekt**.
+4. W **Eksploratora rozwiązań**, otwórz menu skrótów dla niedostępnego projektu, a następnie wybierz **Załaduj ponownie projekt**.
 
 ## <a name="intellisense-and-validation"></a>Technologia IntelliSense i Walidacja
  Edytowanie plików projektu za pomocą edytora XML, technologia IntelliSense i sprawdzanie poprawności operają [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliki schematów. Te pliki zostaną zainstalowane w pamięci podręcznej schematu, który można znaleźć w  *\<katalogu instalacyjnego programu Visual Studio > \Xml\Schemas\1033\MSBuild*.

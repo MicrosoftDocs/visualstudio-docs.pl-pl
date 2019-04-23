@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df1e76c895102d5a33d66628a7c6436ab604b1ba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e85c589866aba54e856afb066cec253c7057aaad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639768"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071411"
 ---
 # <a name="start"></a>Uruchamianie
 **Start** jest opcja *VSPerfCmd.exe* opcja, która inicjuje profiler do określonej metody profilowania.
@@ -27,13 +27,13 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 #### <a name="parameters"></a>Parametry
  `Method` Musi mieć jedną z następujących słów kluczowych:
 
--   **ŚLEDZENIE** -określa metody instrumentacji.
+- **ŚLEDZENIE** -określa metody instrumentacji.
 
--   **Przykładowe** -określa metody pobierania próbek.
+- **Przykładowe** -określa metody pobierania próbek.
 
--   **POKRYCIE** -określa pokrycie kodu.
+- **POKRYCIE** -określa pokrycie kodu.
 
--   **WSPÓŁBIEŻNOŚĆ** -określa metodę rywalizacji zasobów.
+- **WSPÓŁBIEŻNOŚĆ** -określa metodę rywalizacji zasobów.
 
 ## <a name="required-options"></a>Wymagane opcje
  **Dane wyjściowe** opcja musi być określony, gdy **Start** jest określona w wierszu polecenia.

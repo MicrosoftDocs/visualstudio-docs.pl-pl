@@ -8,12 +8,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d82414b94caee2f1ccbb823e94d9168e5502df8c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 903074787169a8889db89a85d65129c1b97c13e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753149"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096962"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Niezabezpieczone wykonywanie skryptu XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "54753149"
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
--   Zastąp niezabezpieczone argument XsltSettings XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> lub z wystąpieniem, wyłączył możliwość wykonywania funkcji i skryptów dokumentu.
+- Zastąp niezabezpieczone argument XsltSettings XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> lub z wystąpieniem, wyłączył możliwość wykonywania funkcji i skryptów dokumentu.
 
--   Zastąp <xref:System.Xml.XmlResolver> argumentu o wartości null lub <xref:System.Xml.XmlSecureResolver> wystąpienia.
+- Zastąp <xref:System.Xml.XmlResolver> argumentu o wartości null lub <xref:System.Xml.XmlSecureResolver> wystąpienia.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Jeśli nie masz pewności, że dane wejściowe jest znany jako z zaufanego źródła, nie Pomijaj reguły z tego ostrzeżenia.

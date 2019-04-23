@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: be913d0f5ce4419591cebb8370936c06ae22be4f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 443086a77adbd872c63eab5b432ec7144acb9d69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666484"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092589"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Instrukcje: Dołącz profiler do aplikacji sieci web ASP.NET do zbierania danych współbieżności przy użyciu wiersza polecenia
 W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia narzędzi Profilujących do dołączenia programu profilującego do aplikacji ASP.NET i zbieranie danych współbieżności procesu i wątku.
@@ -49,16 +49,16 @@ Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do
 
 3. Dołącz profiler do procesu roboczego ASP.NET, wpisując następujące polecenie:**VSPerfCmd / dołączanie:** `PID` [**/targetclr:**`Version`]
 
-   -   `PID` Określa identyfikator lub nazwę procesu roboczego ASP.NET. Można wyświetlić identyfikatory i nazwy wszystkich uruchomionych procesów w Menedżerze zadań Windows.
+   - `PID` Określa identyfikator lub nazwę procesu roboczego ASP.NET. Można wyświetlić identyfikatory i nazwy wszystkich uruchomionych procesów w Menedżerze zadań Windows.
 
-   -   [/ targetclr](../profiling/targetclr.md) **:** `Version` Określa wersję środowiska uruchomieniowego języka wspólnego (CLR) do profilu, gdy więcej niż jedna wersja środowiska wykonawczego jest załadowana w aplikacji. Ten parametr jest opcjonalny.
+   - [/ targetclr](../profiling/targetclr.md) **:** `Version` Określa wersję środowiska uruchomieniowego języka wspólnego (CLR) do profilu, gdy więcej niż jedna wersja środowiska wykonawczego jest załadowana w aplikacji. Ten parametr jest opcjonalny.
 
 ## <a name="control-data-collection"></a>Sterowanie zbieraniem danych
  Gdy aplikacja jest uruchomiona, można kontrolować zbieranie danych przez uruchamianie i zatrzymywanie zapisywania danych do pliku za pomocą *VSPerfCmd.exe* opcje. Przez kontrolowanie zbierania danych może zbierać dane dla określonej części wykonywania programu, takiej jak uruchamianie lub zamykanie aplikacji.
 
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych
 
--   Pary opcji VSPerfCmd w poniższej tabeli uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
+- Pary opcji VSPerfCmd w poniższej tabeli uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
 
     |Opcja|Opis|
     |------------|-----------------|
@@ -71,11 +71,11 @@ Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do
 
 #### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania
 
-1.  Odłącz profiler od aplikacji docelowej, zamykając go lub wpisując następujące polecenie w wierszu polecenia:
+1. Odłącz profiler od aplikacji docelowej, zamykając go lub wpisując następujące polecenie w wierszu polecenia:
 
      **Narzędzia VSPerfCmd / Odłącz**
 
-2.  Zamknij program profilujący, wpisując następujące polecenie w wierszu polecenia:
+2. Zamknij program profilujący, wpisując następujące polecenie w wierszu polecenia:
 
      **Narzędzia VSPerfCmd** [ /shutdown](../profiling/shutdown.md)
 

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d4cac8341adb61a6644e7e331f00584c5c341471
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 49e4618e2262575ffaa642d55ae140529f86942b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325243"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038473"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Omówienie modelu programowania programu SharePoint rozszerzeń narzędzi
   Po utworzeniu rozszerzeń dla narzędzi SharePoint w programie Visual Studio, należy rozpocząć od implementacja interfejsów rozszerzeń, które są udostępniane przez narzędzia programu SharePoint. W większości przypadków będzie również użyć innych typów dostarczonych przez narzędzia programu SharePoint do zaimplementowania funkcji w rozszerzeniu. W niektórych przypadkach można także użyć typów w innych modeli obiektów, dostarczone przez program Visual Studio i programu SharePoint. Konieczne jest zrozumienie przeznaczenia każdego z tych modeli obiektów oraz wiedzieć, jak za ich pomocą ze sobą tworzenia rozszerzeń dla narzędzi SharePoint.
@@ -45,14 +45,14 @@ ms.locfileid: "58325243"
 ## <a name="understand-the-object-models-that-you-use-in-sharepoint-tools-extensions"></a>Zrozumienie modeli obiektów, używanych w rozszerzeń narzędzi SharePoint
  Istnieje kilka modeli obiektów, których można użyć podczas tworzenia rozszerzeń dla narzędzi SharePoint:
 
--   *Modelu obiektów programu SharePoint narzędzia*. Ten model obiektów zapewnia rozszerzalność interfejsów, które implementują do tworzenia rozszerzenia narzędzi programu SharePoint i innych powiązanych typów.
+- *Modelu obiektów programu SharePoint narzędzia*. Ten model obiektów zapewnia rozszerzalność interfejsów, które implementują do tworzenia rozszerzenia narzędzi programu SharePoint i innych powiązanych typów.
 
--   *Visual Studio Automatyzacja i integracja modele do obiektów*. Te modele obiektów umożliwia dostęp do funkcji programu Visual Studio, które wykraczają poza zakres modelu obiektów przy użyciu narzędzi programu SharePoint.
+- *Visual Studio Automatyzacja i integracja modele do obiektów*. Te modele obiektów umożliwia dostęp do funkcji programu Visual Studio, które wykraczają poza zakres modelu obiektów przy użyciu narzędzi programu SharePoint.
 
     > [!NOTE]
     >  Możesz przekonwertować niektóre obiekty w modelu obiektu narzędzi programu SharePoint do obiektów w automatyzacji programu Visual Studio i modeli obiektów integracji i odwrotnie, korzystając z usługi projektu programu SharePoint. Aby uzyskać więcej informacji, zobacz [konwersji między typami systemu projektu SharePoint a innymi typami projektu Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
 
--   *Modele obiektów serwera i klienta programu SharePoint*. Użyj tych modeli obiektów, do modyfikowania witryny programu SharePoint lub odbierać dane z witryny programu SharePoint z kontekstu rozszerzenia narzędzi programu SharePoint.
+- *Modele obiektów serwera i klienta programu SharePoint*. Użyj tych modeli obiektów, do modyfikowania witryny programu SharePoint lub odbierać dane z witryny programu SharePoint z kontekstu rozszerzenia narzędzi programu SharePoint.
 
 ### <a name="sharepoint-tools-object-model"></a>Model obiektów programu SharePoint narzędzia
  Każdego rozszerzenia narzędzi programu SharePoint używa typów w modelu obiektów programu SharePoint narzędzia do definiowania zachowania podstawowych i funkcji rozszerzenia. W poniższych tabelach opisano przestrzenie nazw, które mają zostać uwzględnione w tym modelu obiektu assemby, który je zawiera.

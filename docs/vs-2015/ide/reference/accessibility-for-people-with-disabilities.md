@@ -13,18 +13,18 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87f8f60985f9dfe8629cfd96bcffc9926b8a56e1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 38a4ea987a1b7514d19433f3da75e269fcaf50ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662013"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093764"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Ułatwienia dostępu dla osób niepełnosprawnych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Firma Microsoft poświęca wiele uwagi ułatwiając wszystkim użytkownikom korzystania z jej produktów i usług. Poniższe tematy zawierają informacje o funkcjach, produktach i usługach powodujących, że Microsoft [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bardziej dostępny dla osób niepełnosprawnych.  
   
--   [Ułatwienia dostępu w Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)  
+- [Ułatwienia dostępu w Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)  
   
--   [Funkcje ułatwień dostępu w Podglądzie Pomocy](../../ide/accessibility-features-of-the-help-viewer.md)
+- [Funkcje ułatwień dostępu w Podglądzie Pomocy](../../ide/accessibility-features-of-the-help-viewer.md)

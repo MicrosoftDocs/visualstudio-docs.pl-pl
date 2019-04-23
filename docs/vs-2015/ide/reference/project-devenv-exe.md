@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bbb215efc6ddeabda860b3f0cc218f388f8eaeee
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 398d92065b1ff1b5447017c7a21fc0def1e0da52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652452"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093140"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,11 +63,11 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
   
 ## <a name="remarks"></a>Uwagi  
   
--   Należy użyć wchodzi w skład `devenv /build`, /`clean`, `/rebuild`, lub `/deploy` polecenia.  
+- Należy użyć wchodzi w skład `devenv /build`, /`clean`, `/rebuild`, lub `/deploy` polecenia.  
   
--   Należy ująć ciągi zawierające spacje w podwójny cudzysłów.  
+- Należy ująć ciągi zawierające spacje w podwójny cudzysłów.  
   
--   Podsumowanie informacji na temat kompilacji, w tym błędy, mogą być wyświetlane w **polecenia** okno lub pliku dziennika określony za pomocą `/out` przełącznika.  
+- Podsumowanie informacji na temat kompilacji, w tym błędy, mogą być wyświetlane w **polecenia** okno lub pliku dziennika określony za pomocą `/out` przełącznika.  
   
 ## <a name="example"></a>Przykład  
  W tym przykładzie tworzy projekt `CSharpConsoleApp`przy użyciu `Debug` konfigurację kompilacji projektu w ramach `Debug` Konfiguracja rozwiązania o `MySolution`.  

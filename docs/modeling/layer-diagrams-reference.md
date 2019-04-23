@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f0a13f6355b868292d7d2867e54a8e62cb87c0f
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 1e592b6d5da908b71aa5af9bae7afe495944301a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223016"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093491"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramy zależności: odwołanie
 
@@ -40,13 +40,13 @@ Można określić zamierzone lub istniejące zależności między warstwami. Te 
 
 Użyj diagramu, zależności, które ułatwiają wykonywanie następujących zadań:
 
--   Komunikować się z istniejącą lub zamierzonego logiczną architekturę systemu.
+- Komunikować się z istniejącą lub zamierzonego logiczną architekturę systemu.
 
--   Odkryj konfliktów między istniejący kod i planowaną architekturę.
+- Odkryj konfliktów między istniejący kod i planowaną architekturę.
 
--   Wizualizacja wpływu zmian na planowaną architekturę podczas refaktoryzacji, zaktualizować lub ewolucji systemu.
+- Wizualizacja wpływu zmian na planowaną architekturę podczas refaktoryzacji, zaktualizować lub ewolucji systemu.
 
--   Wzmocnienie planowaną architekturę podczas tworzenia i konserwacji kodu, umieszczając Weryfikacja przy użyciu zaewidencjonowania i operacji kompilacji.
+- Wzmocnienie planowaną architekturę podczas tworzenia i konserwacji kodu, umieszczając Weryfikacja przy użyciu zaewidencjonowania i operacji kompilacji.
 
 W tym temacie opisano elementy, które można używać na diagram zależności. Aby uzyskać szczegółowe informacje o sposobie tworzenia i Rysowanie diagramów zależności, zobacz [diagramy zależności: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md). Aby uzyskać więcej informacji na temat wzorców warstwowe, odwiedź stronę [lokacji wzorców i praktyk](http://go.microsoft.com/fwlink/?LinkId=145794).
 
@@ -68,17 +68,17 @@ W poniższej tabeli opisano elementy, które można używać na diagram zależno
 
 Możesz połączyć każdą warstwę artefakty w rozwiązaniu, takich jak projekty, klasy, przestrzeni nazw, pliki projektu i innymi częściami oprogramowania. Liczba na warstwie pokazuje liczbę artefaktów, które są połączone z warstwą. Jednak podczas odczytywania liczbę artefaktów na warstwie, pamiętaj o następujących kwestiach:
 
--   Jeśli warstwa jest połączona z artefaktem zawierającym inne artefakty, ale warstwy nie łączy się bezpośrednio z innymi artefaktami, wówczas liczba uwzględnia tylko połączony artefakt. Jednak inne artefakty są uwzględniane w analizie podczas walidacji warstwy.
+- Jeśli warstwa jest połączona z artefaktem zawierającym inne artefakty, ale warstwy nie łączy się bezpośrednio z innymi artefaktami, wówczas liczba uwzględnia tylko połączony artefakt. Jednak inne artefakty są uwzględniane w analizie podczas walidacji warstwy.
 
      Na przykład, jeżeli warstwa jest połączona z pojedynczą przestrzenią nazw, liczba połączonych artefaktów wynosi 1, nawet jeśli przestrzeń nazw zawiera klasy. Jeśli warstwa zawiera także łącza do każdej klasy w przestrzeni nazw, liczba będzie uwzględniać połączone klasy.
 
--   Jeśli warstwa zawiera inne warstwy, które są połączone z artefaktami, warstwa kontenerów jest także połączona z tymi artefaktami, mimo że liczba na warstwie kontenerów nie uwzględnia tych artefaktów.
+- Jeśli warstwa zawiera inne warstwy, które są połączone z artefaktami, warstwa kontenerów jest także połączona z tymi artefaktami, mimo że liczba na warstwie kontenerów nie uwzględnia tych artefaktów.
 
 Aby uzyskać więcej informacji na temat łączenia warstwami i artefaktami zobacz:
 
--   [Diagramy zależności: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)
+- [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)
 
--   [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)
+- [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)
 
 ### <a name="examine-the-linked-artifacts"></a>Sprawdź połączonych artefaktów
 

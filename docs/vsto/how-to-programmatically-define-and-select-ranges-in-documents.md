@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d95690af1b1712aa374a4e9717c8c3bc6ac17fed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6cdfe722e957eaae97b587940a1b8fb3db1112c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599908"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078866"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Instrukcje: Programowe definiowanie i zaznaczanie zakresów w dokumentach
   Można zdefiniować zakres w dokumencie programu Microsoft Word pakietu Office za pomocą <xref:Microsoft.Office.Interop.Word.Range> obiektu. Wybierz cały dokument na wiele sposobów, na przykład za pomocą <xref:Microsoft.Office.Interop.Word.Range.Select%2A> metody <xref:Microsoft.Office.Interop.Word.Range> obiektu lub przy użyciu właściwość Content <xref:Microsoft.Office.Tools.Word.Document> klasy (w dostosowaniu na poziomie dokumentu) lub <xref:Microsoft.Office.Interop.Word.Document> klasy (w Dodatek narzędzi VSTO dla).
@@ -33,14 +33,14 @@ ms.locfileid: "56599908"
 
 ### <a name="to-define-a-range-in-a-document-level-customization"></a>Aby zdefiniować zakres w dostosowaniu na poziomie dokumentu
 
-1.  Dodaj zakres w dokumencie, przekazując początkowy i końcowy znak do <xref:Microsoft.Office.Tools.Word.Document.Range%2A> metody <xref:Microsoft.Office.Tools.Word.Document> klasy. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisDocument` klasy w projekcie.
+1. Dodaj zakres w dokumencie, przekazując początkowy i końcowy znak do <xref:Microsoft.Office.Tools.Word.Document.Range%2A> metody <xref:Microsoft.Office.Tools.Word.Document> klasy. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisDocument` klasy w projekcie.
 
      [!code-vb[Trin_VstcoreWordAutomation#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#18)]
      [!code-csharp[Trin_VstcoreWordAutomation#18](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#18)]
 
 ### <a name="to-define-a-range-by-using-a-vsto-add-in"></a>Aby zdefiniować zakres przy użyciu dodatku narzędzi VSTO
 
-1.  Dodaj zakres w dokumencie, przekazując początkowy i końcowy znak do <xref:Microsoft.Office.Interop.Word._Document.Range%2A> metody <xref:Microsoft.Office.Interop.Word.Document> klasy. Poniższy przykład kodu dodaje zakres do aktywnego dokumentu. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisAddIn` klasy w projekcie.
+1. Dodaj zakres w dokumencie, przekazując początkowy i końcowy znak do <xref:Microsoft.Office.Interop.Word._Document.Range%2A> metody <xref:Microsoft.Office.Interop.Word.Document> klasy. Poniższy przykład kodu dodaje zakres do aktywnego dokumentu. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisAddIn` klasy w projekcie.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#18)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#18](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#18)]
@@ -50,7 +50,7 @@ ms.locfileid: "56599908"
 
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-select-method"></a>Aby zaznaczyć cały dokument jako zakres przy użyciu metody Select
 
-1.  Użyj <xref:Microsoft.Office.Interop.Word.Range.Select%2A> metody <xref:Microsoft.Office.Interop.Word.Range> zawierający całego dokumentu. Aby użyć w poniższym przykładzie kodu, należy uruchomić go z `ThisDocument` klasy w projekcie.
+1. Użyj <xref:Microsoft.Office.Interop.Word.Range.Select%2A> metody <xref:Microsoft.Office.Interop.Word.Range> zawierający całego dokumentu. Aby użyć w poniższym przykładzie kodu, należy uruchomić go z `ThisDocument` klasy w projekcie.
 
      [!code-vb[Trin_VstcoreWordAutomation#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#19)]
      [!code-csharp[Trin_VstcoreWordAutomation#19](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#19)]
@@ -75,12 +75,12 @@ ms.locfileid: "56599908"
 
 ### <a name="to-select-a-sentence-by-manually-setting-the-start-and-end-values"></a>Aby wybrać dowolne zdanie, należy ręcznie ustawienie wartości początkowa i końcowa
 
-1.  Utwórz zmienną zakresu.
+1. Utwórz zmienną zakresu.
 
      [!code-vb[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#23)]
 
-2.  Sprawdź, czy istnieją co najmniej dwa zdania w dokumencie, ustaw *Start* i *zakończenia* argumenty zakresu, a następnie wybierz zakres.
+2. Sprawdź, czy istnieją co najmniej dwa zdania w dokumencie, ustaw *Start* i *zakończenia* argumenty zakresu, a następnie wybierz zakres.
 
      [!code-vb[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#24)]
@@ -90,7 +90,7 @@ ms.locfileid: "56599908"
 
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-select-method"></a>Aby zaznaczyć cały dokument jako zakres przy użyciu metody Select
 
-1.  Użyj <xref:Microsoft.Office.Interop.Word.Range.Select%2A> metody <xref:Microsoft.Office.Interop.Word.Range> zawierający całego dokumentu. Poniższy kod wybiera zawartość aktywnego dokumentu. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisAddIn` klasy w projekcie.
+1. Użyj <xref:Microsoft.Office.Interop.Word.Range.Select%2A> metody <xref:Microsoft.Office.Interop.Word.Range> zawierający całego dokumentu. Poniższy kod wybiera zawartość aktywnego dokumentu. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisAddIn` klasy w projekcie.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#19)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#19](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#19)]
@@ -115,12 +115,12 @@ ms.locfileid: "56599908"
 
 ### <a name="to-select-a-sentence-by-manually-setting-the-start-and-end-values"></a>Aby wybrać dowolne zdanie, należy ręcznie ustawienie wartości początkowa i końcowa
 
-1.  Utwórz zmienną zakresu.
+1. Utwórz zmienną zakresu.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#23)]
 
-2.  Sprawdź, czy istnieją co najmniej dwa zdania w dokumencie, ustaw *Start* i *zakończenia* argumenty zakresu, a następnie wybierz zakres.
+2. Sprawdź, czy istnieją co najmniej dwa zdania w dokumencie, ustaw *Start* i *zakończenia* argumenty zakresu, a następnie wybierz zakres.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#24)]

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1b4137a6f024a9a4f752af7c9e19fd946a1c282
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 284b7f501d729a89ff31ab9fee187d3f3e19d4b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653895"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090146"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Przewodnik: Zmiana formatowania dokumentu za pomocą formantów CheckBox
   W tym instruktażu pokazano, jak użyć kontrolek formularzy Windows Forms w dostosowywania poziomie dokumentu dla programu Microsoft Office Word, aby zmienić formatowanie tekstu.
@@ -41,16 +41,16 @@ ms.locfileid: "59653895"
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] lub [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
+- [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] lub [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
 ## <a name="create-the-project"></a>Utwórz projekt
  Pierwszym krokiem jest utworzenie projektu dokument programu Word.
 
 ### <a name="create-a-new-project"></a>Tworzenie nowego projektu
 
-1.  Tworzenie projektu dokument programu Word z nazwą **Moje formatowania Word**. W kreatorze Wybierz **Utwórz nowy dokument**.
+1. Tworzenie projektu dokument programu Word z nazwą **Moje formatowania Word**. W kreatorze Wybierz **Utwórz nowy dokument**.
 
      Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -61,29 +61,29 @@ ms.locfileid: "59653895"
 
 ### <a name="add-three-check-boxes"></a>Dodaj trzy pola wyboru
 
-1.  Sprawdź, czy dokument jest otwarty w Projektancie Visual Studio.
+1. Sprawdź, czy dokument jest otwarty w Projektancie Visual Studio.
 
-2.  Z **wspólnych formantów** karcie **przybornika**, przeciągnij pierwszy <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> kontrolki do dokumentu.
+2. Z **wspólnych formantów** karcie **przybornika**, przeciągnij pierwszy <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> kontrolki do dokumentu.
 
-3.  W **właściwości** okna, Zmień następujące właściwości.
+3. W **właściwości** okna, Zmień następujące właściwości.
 
     |Właściwość|Wartość|
     |--------------|-----------|
     |**Nazwa**|**applyBoldFont**|
     |**Text**|**Bold**|
 
-4.  Naciśnij klawisz **Enter** przenieść punkt wstawiania poniżej pierwsze pole wyboru.
+4. Naciśnij klawisz **Enter** przenieść punkt wstawiania poniżej pierwsze pole wyboru.
 
-5.  Dodawanie drugiego pola wyboru do dokumentu poniżej `ApplyBoldFont` pole wyboru, a następnie Zmień następujące właściwości.
+5. Dodawanie drugiego pola wyboru do dokumentu poniżej `ApplyBoldFont` pole wyboru, a następnie Zmień następujące właściwości.
 
     |Właściwość|Wartość|
     |--------------|-----------|
     |**Nazwa**|**applyItalicFont**|
     |**Text**|**Kursywa**|
 
-6.  Naciśnij klawisz **Enter** przenieść punkt wstawiania poniżej drugiego pola wyboru.
+6. Naciśnij klawisz **Enter** przenieść punkt wstawiania poniżej drugiego pola wyboru.
 
-7.  Dodaj trzecie pole wyboru do dokumentu poniżej `ApplyItalicFont` pole wyboru, a następnie Zmień następujące właściwości.
+7. Dodaj trzecie pole wyboru do dokumentu poniżej `ApplyItalicFont` pole wyboru, a następnie Zmień następujące właściwości.
 
     |Właściwość|Wartość|
     |--------------|-----------|
@@ -113,28 +113,28 @@ ms.locfileid: "59653895"
 
 ### <a name="change-formatting-when-a-check-box-is-selected"></a>Zmienianie formatowania, gdy zaznaczono pole wyboru
 
-1.  Kliknij prawym przyciskiem myszy `ThisDocument` w **Eksploratora rozwiązań**, a następnie kliknij przycisk **Wyświetl kod** w menu skrótów.
+1. Kliknij prawym przyciskiem myszy `ThisDocument` w **Eksploratora rozwiązań**, a następnie kliknij przycisk **Wyświetl kod** w menu skrótów.
 
-2.  Aby uzyskać C# , Dodaj następujące stałe do **ThisDocument** klasy.
+2. Aby uzyskać C# , Dodaj następujące stałe do **ThisDocument** klasy.
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#2)]
 
-3.  Dodaj następujący kod do <xref:System.Windows.Forms.Control.Click> program obsługi zdarzeń `applyBoldFont` pole wyboru.
+3. Dodaj następujący kod do <xref:System.Windows.Forms.Control.Click> program obsługi zdarzeń `applyBoldFont` pole wyboru.
 
      [!code-vb[Trin_VstcoreProgrammingControlsWord#3](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#3)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#3)]
 
-4.  Dodaj następujący kod do <xref:System.Windows.Forms.Control.Click> program obsługi zdarzeń `applyItalicFont` pole wyboru.
+4. Dodaj następujący kod do <xref:System.Windows.Forms.Control.Click> program obsługi zdarzeń `applyItalicFont` pole wyboru.
 
      [!code-vb[Trin_VstcoreProgrammingControlsWord#4](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#4)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#4)]
 
-5.  Dodaj następujący kod do <xref:System.Windows.Forms.Control.Click> program obsługi zdarzeń `applyUnderlineFont` pole wyboru.
+5. Dodaj następujący kod do <xref:System.Windows.Forms.Control.Click> program obsługi zdarzeń `applyUnderlineFont` pole wyboru.
 
      [!code-vb[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#5)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#5)]
 
-6.  W C#, należy dodać procedury obsługi zdarzeń dla pól tekstowych do <xref:Microsoft.Office.Tools.Word.Document.Startup> zdarzeń. Aby uzyskać informacje o sposobie tworzenia procedury obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+6. W C#, należy dodać procedury obsługi zdarzeń dla pól tekstowych do <xref:Microsoft.Office.Tools.Word.Document.Startup> zdarzeń. Aby uzyskać informacje o sposobie tworzenia procedury obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]
 
@@ -143,18 +143,18 @@ ms.locfileid: "59653895"
 
 ### <a name="test-your-document"></a>Testowanie dokumentu
 
-1.  Naciśnij klawisz **F5** Aby uruchomić projekt.
+1. Naciśnij klawisz **F5** Aby uruchomić projekt.
 
-2.  Zaznacz lub wyczyść pole wyboru.
+2. Zaznacz lub wyczyść pole wyboru.
 
-3.  Upewnij się, że tekst jest prawidłowo sformatowany.
+3. Upewnij się, że tekst jest prawidłowo sformatowany.
 
 ## <a name="next-steps"></a>Następne kroki
  W tym instruktażu przedstawiono podstawy korzystania z pola wyboru oraz programowe Zmienianie tekstu w dokumentach programu Word. Poniżej przedstawiono niektóre zadania, które mogą pochodzić dalej:
 
--   Użyj przycisku, aby wypełnić pole tekstowe. Aby uzyskać więcej informacji, zobacz [instruktażu: Wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).
+- Użyj przycisku, aby wypełnić pole tekstowe. Aby uzyskać więcej informacji, zobacz [instruktażu: Wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).
 
--   Za pomocą przycisków radiowych, aby wybrać styl wykresu. Aby uzyskać więcej informacji, zobacz [instruktażu: Aktualizacja wykresu w dokumencie za pomocą przycisków radiowych](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
+- Za pomocą przycisków radiowych, aby wybrać styl wykresu. Aby uzyskać więcej informacji, zobacz [instruktażu: Aktualizacja wykresu w dokumencie za pomocą przycisków radiowych](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
 
 ## <a name="see-also"></a>Zobacz także
 - [Wskazówki dotyczące przy użyciu programu Word](../vsto/walkthroughs-using-word.md)

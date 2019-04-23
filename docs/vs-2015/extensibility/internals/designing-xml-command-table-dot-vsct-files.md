@@ -10,12 +10,12 @@ ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f83b5e85d02e4427e433a517bbac84dcccaab243
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 987536af051de4a66b3eccadb105fd98455ddf06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764011"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085914"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Projektowanie tabeli poleceń XML (. Pliki Vsct)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -100,19 +100,19 @@ Pliku XML polecenia tabeli (vsct) opisano układ i wygląd elementów polecenia 
 ## <a name="vsct-file-design-guidelines"></a>. Wytyczne dotyczące projektowania pliku Vsct  
  Aby pomyślnie zaprojektować pliku vsct, należy przestrzegać następujących wytycznych.  
   
--   Polecenia można umieścić tylko w grupach, grup, które można umieścić tylko w menu i menu można umieścić tylko w grupach. W środowisku IDE programu grupy są wyświetlane tylko menu i poleceń nie jest.  
+- Polecenia można umieścić tylko w grupach, grup, które można umieścić tylko w menu i menu można umieścić tylko w grupach. W środowisku IDE programu grupy są wyświetlane tylko menu i poleceń nie jest.  
   
--   Podmenu nie można przypisać bezpośrednio do menu, ale muszą być przypisane do grupy, która z kolei jest przypisany do menu.  
+- Podmenu nie można przypisać bezpośrednio do menu, ale muszą być przypisane do grupy, która z kolei jest przypisany do menu.  
   
--   Polecenia, menu podrzędne i grup można przypisać do jednej grupy element nadrzędny lub menu przy użyciu pola nadrzędnego ich definiujące dyrektywy.  
+- Polecenia, menu podrzędne i grup można przypisać do jednej grupy element nadrzędny lub menu przy użyciu pola nadrzędnego ich definiujące dyrektywy.  
   
--   Organizowanie tabeli polecenia wyłącznie za pośrednictwem pola nadrzędnego w dyrektywach ma znaczące ograniczenia. Dyrektywy definiujące obiekty, które może potrwać argument tylko jedną jednostkę nadrzędną.  
+- Organizowanie tabeli polecenia wyłącznie za pośrednictwem pola nadrzędnego w dyrektywach ma znaczące ograniczenia. Dyrektywy definiujące obiekty, które może potrwać argument tylko jedną jednostkę nadrzędną.  
   
--   Ponowne użycie poleceń, grup lub podmenu wymagane jest użycie nowej dyrektywy, aby utworzyć nowe wystąpienie obiektu za pomocą własnego `GUID:ID` pary.  
+- Ponowne użycie poleceń, grup lub podmenu wymagane jest użycie nowej dyrektywy, aby utworzyć nowe wystąpienie obiektu za pomocą własnego `GUID:ID` pary.  
   
--   Każdy `GUID:ID` pary muszą być unikatowe. Ponowne użycie polecenia, który na przykład został umieszczony w menu, pasek narzędzi lub menu kontekstowego, jest obsługiwane przez <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu.  
+- Każdy `GUID:ID` pary muszą być unikatowe. Ponowne użycie polecenia, który na przykład został umieszczony w menu, pasek narzędzi lub menu kontekstowego, jest obsługiwane przez <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu.  
   
--   Polecenia i podmenu również można przypisać do wielu grup i grup, które można przypisać do wielu menu przy użyciu [Commands, Element](../../extensibility/commands-element.md).  
+- Polecenia i podmenu również można przypisać do wielu grup i grup, które można przypisać do wielu menu przy użyciu [Commands, Element](../../extensibility/commands-element.md).  
   
 ## <a name="vsct-file-notes"></a>. Informacje o pliku Vsct  
  Jeśli wprowadzisz zmiany w pliku vsct po zarówno skompilować go i umieść go w macierzystym satelitarną bibliotekę DLL, należy uruchomić **/nosetupvstemplates/Setup devenv.exe**. W ten sposób wymusza zasobów pakietu VSPackage, określone w doświadczalnych rejestr w celu należy przeczytać i wewnętrznej bazy danych, który opisuje [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] odbudowania.  

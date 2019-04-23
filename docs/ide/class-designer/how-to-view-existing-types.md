@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: caeab08d6032bd8c88d35a62da56e3dc8015da9a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ef2882fec8d213c38a2e125d4e3f0c3f22d1d581
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923909"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087273"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>Instrukcje: Wyświetlanie istniejących typów w Projektancie klas
 
@@ -31,9 +31,9 @@ Aby zaprojektować nowe typy diagramów klas, zobacz [jak: Tworzenie typów za p
 
 ## <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Aby wyświetlić typy w projekcie na diagramie klasy
 
-1.  Z projektu w **Eksploratora rozwiązań**, otwórz istniejący plik diagramu klasy (.cd). Lub jeśli nie istnieje żaden diagram klas, dodaj nowy diagram klas do projektu. Zobacz [jak: Dodawanie diagramów klas do projektów](how-to-add-class-diagrams-to-projects.md).
+1. Z projektu w **Eksploratora rozwiązań**, otwórz istniejący plik diagramu klasy (.cd). Lub jeśli nie istnieje żaden diagram klas, dodaj nowy diagram klas do projektu. Zobacz [jak: Dodawanie diagramów klas do projektów](how-to-add-class-diagrams-to-projects.md).
 
-2.  Z projektu w **Eksploratora rozwiązań**, przeciągnij plik kodu źródłowego do diagramu klas.
+2. Z projektu w **Eksploratora rozwiązań**, przeciągnij plik kodu źródłowego do diagramu klas.
 
     > [!NOTE]
     > Jeśli rozwiązanie ma projektu, który udostępnia kod przez wiele aplikacji, można przeciągnąć pliki lub kod do diagramu klasy tylko z tych źródeł:

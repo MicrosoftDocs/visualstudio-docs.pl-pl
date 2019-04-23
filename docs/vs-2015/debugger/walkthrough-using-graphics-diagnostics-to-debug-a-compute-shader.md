@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a57a77e401564b3bd32897a9b32d9773d959a17
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: db33a55c5ced7c1bbbf4b238185beac43ac290f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089190"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080349"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Przewodnik: Używanie Graphics Diagnostics do debugowania cieniowania obliczenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ W tym instruktażu przedstawiono sposób korzystania z narzędzi Visual Studio d
   
  Ten instruktaż ilustruje następujące zadania:  
   
--   Za pomocą **Lista zdarzeń graficznych** do lokalizowania potencjalnych źródeł problemu.  
+- Za pomocą **Lista zdarzeń graficznych** do lokalizowania potencjalnych źródeł problemu.  
   
--   Za pomocą **stos wywołań zdarzenia grafiki** do określenia, które cieniowanie obliczenia jest wykonywane przez DirectCompute `Dispatch` zdarzeń.  
+- Za pomocą **stos wywołań zdarzenia grafiki** do określenia, które cieniowanie obliczenia jest wykonywane przez DirectCompute `Dispatch` zdarzeń.  
   
--   Za pomocą **etapy potoku grafiki** okna i debugera HLSL można badać cieniowanie obliczenia będące źródłem problemu.  
+- Za pomocą **etapy potoku grafiki** okna i debugera HLSL można badać cieniowanie obliczenia będące źródłem problemu.  
   
 ## <a name="scenario"></a>Scenariusz  
  W tym scenariuszu zaprojektowałeś symulację dynamiki płynów, której używa DirectCompute do wykonywania najintensywniejszej obliczeniowo części aktualizacji symulacji. Po uruchomieniu aplikacji renderowanie zestawu danych i interfejs użytkownika jest poprawna, ale Symulacja nie zachowuje się zgodnie z oczekiwaniami. Przy użyciu programu Graphics Diagnostics można przechwytywać problemy do dziennika grafiki, dzięki czemu można debugować aplikację. Problem wygląda to w aplikacji:  

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4ac6e63bf0f669364e3011360fa74b7d8fde8662
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 49d253b63b682d81903003d6bdd148922989f274
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645111"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082324"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Instrukcje: Tworzenie polecenia SharePoint
   Jeśli chcesz użyć modelu obiektów serwera w rozszerzenia narzędzi programu SharePoint, należy utworzyć niestandardowy *polecenia SharePoint* wywołać interfejs API. Polecenie programu SharePoint należy zdefiniować w zestawie, który można wywoływać bezpośrednio do modelu obiektów serwera.
@@ -26,36 +26,36 @@ ms.locfileid: "56645111"
 
 ### <a name="to-create-a-sharepoint-command"></a>Aby utworzyć polecenie programu SharePoint
 
-1.  Utwórz projekt biblioteki klas, które ma następującą konfigurację:
+1. Utwórz projekt biblioteki klas, które ma następującą konfigurację:
 
-    -   Jest przeznaczony dla programu .NET Framework 3.5. Aby uzyskać więcej informacji o wybieraniu platformę docelową, zobacz [jak: Docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+    - Jest przeznaczony dla programu .NET Framework 3.5. Aby uzyskać więcej informacji o wybieraniu platformę docelową, zobacz [jak: Docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
-    -   Jest przeznaczony dla AnyCPU lub x64 platformy. Domyślnie platforma docelowa projekty bibliotek klas to AnyCPU. Aby uzyskać więcej informacji o wybieraniu platformę docelową, zobacz [jak: Konfigurowanie projektów pod kątem platform docelowych](../ide/how-to-configure-projects-to-target-platforms.md).
+    - Jest przeznaczony dla AnyCPU lub x64 platformy. Domyślnie platforma docelowa projekty bibliotek klas to AnyCPU. Aby uzyskać więcej informacji o wybieraniu platformę docelową, zobacz [jak: Konfigurowanie projektów pod kątem platform docelowych](../ide/how-to-configure-projects-to-target-platforms.md).
 
     > [!NOTE]
     >  Nie można zaimplementować polecenia programu SharePoint w tym samym projekcie, który definiuje rozszerzenia narzędzi programu SharePoint, ponieważ poleceń programu SharePoint docelowych .NET Framework 3.5 i programu SharePoint narzędzia rozszerzeń element docelowy [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Należy zdefiniować żadnych poleceń programu SharePoint, które są używane przez rozszerzenie w osobnym projekcie. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-2.  Dodaj odwołania do następujących zestawów:
+2. Dodaj odwołania do następujących zestawów:
 
-    -   Microsoft.VisualStudio.SharePoint.Commands
+    - Microsoft.VisualStudio.SharePoint.Commands
 
-    -   Microsoft.SharePoint
+    - Microsoft.SharePoint
 
-3.  Klasy w projekcie Utwórz metodę, która definiuje polecenie programu SharePoint. Metoda musi być zgodna z następującymi zasadami:
+3. Klasy w projekcie Utwórz metodę, która definiuje polecenie programu SharePoint. Metoda musi być zgodna z następującymi zasadami:
 
-    -   Może mieć jeden lub dwa parametry.
+    - Może mieć jeden lub dwa parametry.
 
          Pierwszy parametr musi być <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> obiektu. Ten obiekt zawiera Microsoft.SharePoint.SPSite lub Microsoft.SharePoint.SPWeb wykonywania polecenia. Zapewnia także <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandLogger> obiekt, który może służyć do zapisywania komunikatów do **dane wyjściowe** okna lub **lista błędów** okna w programie Visual Studio.
 
          Drugi parametr może być typem wybranego, ale ten parametr jest opcjonalny. Ten parametr można dodać do polecenia programu SharePoint, jeśli trzeba przekazać dane z rozszerzenia narzędzi programu SharePoint do polecenia.
 
-    -   Może mieć wartości zwracanej, ale jest to opcjonalne.
+    - Może mieć wartości zwracanej, ale jest to opcjonalne.
 
-    -   Drugi parametr i wartość zwracana musi być typem, który może być serializowany przez Windows Communication Foundation (WCF). Aby uzyskać więcej informacji, zobacz [typy obsługiwane przez serializator kontraktu danych](/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer) i [przy użyciu klasy XmlSerializer](/dotnet/framework/wcf/feature-details/using-the-xmlserializer-class).
+    - Drugi parametr i wartość zwracana musi być typem, który może być serializowany przez Windows Communication Foundation (WCF). Aby uzyskać więcej informacji, zobacz [typy obsługiwane przez serializator kontraktu danych](/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer) i [przy użyciu klasy XmlSerializer](/dotnet/framework/wcf/feature-details/using-the-xmlserializer-class).
 
-    -   Metoda może mieć żadnych widoczności (**publicznych**, **wewnętrzny**, lub **prywatnej**), i może być statyczne lub niestatycznej.
+    - Metoda może mieć żadnych widoczności (**publicznych**, **wewnętrzny**, lub **prywatnej**), i może być statyczne lub niestatycznej.
 
-4.  Zastosuj <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> do metody. Ten atrybut określa unikatowy identyfikator dla polecenia; Ten identyfikator nie musi być zgodna z nazwą metody.
+4. Zastosuj <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> do metody. Ten atrybut określa unikatowy identyfikator dla polecenia; Ten identyfikator nie musi być zgodna z nazwą metody.
 
      Podczas wywoływania polecenia z rozszerzenia narzędzi programu SharePoint, należy określić ten sam Unikatowy identyfikator. Aby uzyskać więcej informacji, zobacz [jak: Wykonywanie polecenia SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md).
 
@@ -70,9 +70,9 @@ ms.locfileid: "56645111"
 ## <a name="compiling-the-code"></a>Kompilowanie kodu
  Ten przykład wymaga odwołania do następujących zestawów:
 
--   Microsoft.VisualStudio.SharePoint.Commands
+- Microsoft.VisualStudio.SharePoint.Commands
 
--   Microsoft.SharePoint
+- Microsoft.SharePoint
 
 ## <a name="deploying-the-command"></a>Wdrażanie polecenia
  Aby wdrożyć polecenia, należy uwzględnić zestawu poleceń w tej samej [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozszerzenia (*vsix*) pakiet za pomocą zestawu rozszerzeń, która używa polecenia. Musisz również dodać wpis dla zestawu poleceń w pliku extension.vsixmanifest. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).

@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 82d6c16c75cb2605bcdb8382d461d3557846fcc2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7cb8d054a2e26caddb2ccc9f37d20bb973b1833f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769638"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090806"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Przewodnik: Za pomocą interfejsów API Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,12 +57,12 @@ DataCollection.CurrentId);
   
 #### <a name="to-create-the-code-to-profile"></a>Aby utworzyć kod do profilu  
   
-1.  Utwórz nowy projekt C# w programie Visual Studio, lub użyć kompilacji wiersza polecenia, w zależności od preferencji.  
+1. Utwórz nowy projekt C# w programie Visual Studio, lub użyć kompilacji wiersza polecenia, w zależności od preferencji.  
   
     > [!NOTE]
     >  Kompilacja musi odwoływać się biblioteki Microsoft.VisualStudio.Profiler.dll, znajduje się w katalogu narzędzi Narzędzia 9\Team programu Microsoft Visual Studio.  
   
-2.  Skopiuj i wklej następujący kod do projektu:  
+2. Skopiuj i wklej następujący kod do projektu:  
   
     ```  
     using System;  
@@ -141,23 +141,23 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-at-the-command-line"></a>Do gromadzenia i wyświetlania danych w wierszu polecenia  
   
-1.  Kompiluj wersję debugowania przykładowy kod, który został utworzony w procedurze "Tworzenie kodu do profil", we wcześniejszej części tego przewodnika.  
+1. Kompiluj wersję debugowania przykładowy kod, który został utworzony w procedurze "Tworzenie kodu do profil", we wcześniejszej części tego przewodnika.  
   
-2.  Aby profilować aplikację zarządzaną, wpisz następujące polecenie, aby ustawić odpowiednie zmienne środowiskowe:  
+2. Aby profilować aplikację zarządzaną, wpisz następujące polecenie, aby ustawić odpowiednie zmienne środowiskowe:  
   
      **VsPefCLREnv /traceon**  
   
-3.  Wpisz następujące polecenie:**VSInstr \<nazwa pliku > .exe**  
+3. Wpisz następujące polecenie:**VSInstr \<nazwa pliku > .exe**  
   
-4.  Wpisz następujące polecenie:**/Output polecenia VSPerfCmd:\<nazwa pliku > .vsp**  
+4. Wpisz następujące polecenie:**/Output polecenia VSPerfCmd:\<nazwa pliku > .vsp**  
   
-5.  Wpisz następujące polecenie:**VSPerfCmd /globaloff**  
+5. Wpisz następujące polecenie:**VSPerfCmd /globaloff**  
   
-6.  Wykonywanie programu.  
+6. Wykonywanie programu.  
   
-7.  Wpisz następujące polecenie:**VSPerfCmd/shutdown**  
+7. Wpisz następujące polecenie:**VSPerfCmd/shutdown**  
   
-8.  Wpisz następujące polecenie:**VSPerfReport/calltrace:\<nazwa pliku > .vsp**  
+8. Wpisz następujące polecenie:**VSPerfReport/calltrace:\<nazwa pliku > .vsp**  
   
      Plik CSV jest tworzony w bieżącym katalogu z wynikowe dane dotyczące wydajności.  
   

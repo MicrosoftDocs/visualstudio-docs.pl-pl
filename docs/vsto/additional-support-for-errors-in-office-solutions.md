@@ -56,12 +56,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62cd0007a2dd231bcfc0e99f64ac76d20d415263
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fb5877bccdc60d031e6ccd799eb6536df15fda38
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643433"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088778"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Dodatkowa obsługa błędów w rozwiązaniach pakietu Office
 
@@ -71,11 +71,11 @@ Aby pomóc w znalezieniu odpowiedzi na problemy, z którymi zetknie się tworzen
 
 Aby uzyskać pomoc dotyczącą typowych błędów w rozwiązaniach pakietu Office zobacz następujące tematy:
 
--   [Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office](../vsto/troubleshooting-errors-in-office-solutions.md)
+- [Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office](../vsto/troubleshooting-errors-in-office-solutions.md)
 
--   [Rozwiązywanie problemów z zabezpieczeniami rozwiązań pakietu Office](../vsto/troubleshooting-office-solution-security.md)
+- [Rozwiązywanie problemów z zabezpieczeniami rozwiązań pakietu Office](../vsto/troubleshooting-office-solution-security.md)
 
--   [Rozwiązywanie problemów z wdrażaniem rozwiązań Office](../vsto/troubleshooting-office-solution-deployment.md)
+- [Rozwiązywanie problemów z wdrażaniem rozwiązań Office](../vsto/troubleshooting-office-solution-deployment.md)
 
 ## <a name="other-resources"></a>Inne zasoby
 

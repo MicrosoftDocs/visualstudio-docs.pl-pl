@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57f1f8274d121b5370f47dfdb62be3a8e5cdd017
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 2f0b4069bf1b74c15f9fcf7cdb7e488247b8548e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525873"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086380"
 ---
-# <a name="walkthrough-use-xml-editor-features"></a>Przewodnik: Korzystanie z funkcji edytora XML
+# <a name="walkthrough-use-xml-editor-features"></a>Przewodnik: Używanie funkcji edytora XML
 
 Kroki opisane w tym przewodniku opisano można utworzyć nowego dokumentu XML. Przewodnik używa także niektóre funkcje edytora XML, które ułatwiają cenny na potrzeby tworzenia XML.
 
@@ -24,59 +24,59 @@ Kroki opisane w tym przewodniku opisano można utworzyć nowego dokumentu XML. P
 
 ## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Aby utworzyć nowy plik XML i skojarzyć go z schematu XML
 
-1.  Na **pliku** menu wskaż **New**i kliknij przycisk **pliku**.
+1. Na **pliku** menu wskaż **New**i kliknij przycisk **pliku**.
 
-2.  Wybierz **pliku XML** w **szablony** okienku i kliknij przycisk **Otwórz**.
+2. Wybierz **pliku XML** w **szablony** okienku i kliknij przycisk **Otwórz**.
 
      Nowy plik jest otwarty w edytorze. Ten plik zawiera deklarację XML domyślne `<?xml version="1.0" encoding="utf-8">`.
 
-3.  W oknie dialogowym właściwości dokumentu, kliknij przycisk przeglądania (**...** ) na **schematów** pola.
+3. W oknie dialogowym właściwości dokumentu, kliknij przycisk przeglądania (**...** ) na **schematów** pola.
 
      **Schematy XSD** zostanie wyświetlone okno dialogowe.
 
-4.  Kliknij przycisk **Dodaj**.
+4. Kliknij przycisk **Dodaj**.
 
      **Otwieranie schematu XSD** zostanie wyświetlone okno dialogowe.
 
-5.  Wybierz *hireDate.xsd* plik i kliknij przycisk **Otwórz**.
+5. Wybierz *hireDate.xsd* plik i kliknij przycisk **Otwórz**.
 
-6.  Kliknij przycisk **OK**.
+6. Kliknij przycisk **OK**.
 
      Schemat XML jest teraz skojarzone z dokumentem XML. Schemat XML jest używany do walidacji dokumentu. Również służy przez technologię IntelliSense do wypełniania listy członków prawidłowe elementy.
 
 ## <a name="to-add-data"></a>Aby dodać dane
 
-1.  Typ `<` w okienku edytora.
+1. Typ `<` w okienku edytora.
 
      Lista elementów członkowskich Wyświetla możliwych elementów:
 
-    -   **! —** Aby dodać komentarz.
+    - **! —** Aby dodać komentarz.
 
-    -   **! DOCTYPE** można dodać typu dokumentu.
+    - **! DOCTYPE** można dodać typu dokumentu.
 
-    -   **?** Aby dodać instrukcji przetwarzania.
+    - **?** Aby dodać instrukcji przetwarzania.
 
-    -   **Pracownik** można dodać elementu głównego.
+    - **Pracownik** można dodać elementu głównego.
 
-2.  Wybierz **<!--** można dodać węzeł komentarzy i naciśnij klawisz **Enter**.
+2. Wybierz **<!--** można dodać węzeł komentarzy i naciśnij klawisz **Enter**.
 
      Edytor wstawia tagu końcowego komentarz i umieszcza kursor między tagiem początkowym i końcowym w komentarz.
 
-3.  Wpisz **pliku XML testu**.
+3. Wpisz **pliku XML testu**.
 
-4.  W nowym wierszu, wpisz `<`i wybierz **pracowników** z listy elementów członkowskich.
+4. W nowym wierszu, wpisz `<`i wybierz **pracowników** z listy elementów członkowskich.
 
      Edytor dodaje początek XML element `<employee`. W tym momencie można dodawać atrybutów do elementu, lub możesz ją zamknąć tagu początkowego, wpisując `>`.
 
-5.  Typ `>` zamknięcie tagu.
+5. Typ `>` zamknięcie tagu.
 
-6.  Edytor dodaje tag końcowy. Tag końcowy zostanie dodany z linią falistą wskazujący błąd sprawdzania poprawności. **Etykietki narzędzia** wyświetlany jest komunikat: **Element "pracownik" ma niekompletną zawartość. Oczekiwano 'ID'**.
+6. Edytor dodaje tag końcowy. Tag końcowy zostanie dodany z linią falistą wskazujący błąd sprawdzania poprawności. **Etykietki narzędzia** wyświetlany jest komunikat: **Element "pracownik" ma niekompletną zawartość. Oczekiwano 'ID'**.
 
-7.  Typ `<` i wybierz **identyfikator** z listy elementów członkowskich. Następnie wpisz `>`.
+7. Typ `<` i wybierz **identyfikator** z listy elementów członkowskich. Następnie wpisz `>`.
 
      Edytor dodaje XML element `<ID></ID>`i umieszcza kursor po identyfikatorze taga otwierającego.
 
-8.  Typ **abc**.
+8. Typ **abc**.
 
      **Abc** tekstu jest linią falistą. **Etykietki narzędzia** wyświetlany jest komunikat: **Element "ID" ma nieprawidłową wartość przy uwzględnieniu jego typu danych**.
 
@@ -104,11 +104,11 @@ Kroki opisane w tym przewodniku opisano można utworzyć nowego dokumentu XML. P
 
 ## <a name="to-save-the-xml-document"></a>Można zapisać dokumentu XML
 
-1.  Z **pliku** menu, wybierz opcję **Zapisz jako**.
+1. Z **pliku** menu, wybierz opcję **Zapisz jako**.
 
      **Zapisz plik jako** zostanie wyświetlone okno dialogowe. Domyślna nazwa pliku jest *"XMLFile1"*.
 
-2.  Wprowadź nazwę pliku i lokalizację dokumentu XML, a następnie kliknij przycisk **Zapisz**.
+2. Wprowadź nazwę pliku i lokalizację dokumentu XML, a następnie kliknij przycisk **Zapisz**.
 
 ## <a name="hiredatexsd-file"></a>Plik hireDate.xsd
 

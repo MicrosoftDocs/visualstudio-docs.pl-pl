@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 630934ce6915191ccb111e8bc061d8faacc421f7
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: ce8bc44bf506cf315420aad4108832f7461f1c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415476"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077878"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Dodawanie poleceń i gestów do diagramów zależności
 
@@ -108,7 +108,7 @@ Jeśli chcesz utworzyć jeden VSIX zawierający polecenia, moduły sprawdzania w
 
 8. Aby zainstalować VSIX w głównym wystąpieniu programu Visual Studio lub na innym komputerze, należy znaleźć **.vsix** w pliku **bin** katalogu projektów VSIX. Skopiuj go do komputera, na którym chcesz zainstalować VSIX. Kliknij dwukrotnie plik VSIX w Eksploratorze plików.
 
-##  <a name="command"></a> Definiowanie polecenia Menu
+## <a name="command"></a> Definiowanie polecenia Menu
 
 Możesz dodać więcej definicji poleceń menu do istniejącego gest lub polecenia projektu. Każde polecenie jest zdefiniowane przez klasę, która ma następujące cechy:
 
@@ -124,11 +124,11 @@ Możesz dodać więcej definicji poleceń menu do istniejącego gest lub polecen
 
 - Metody, które implementują `ICommandExtension` są następujące:
 
-  -   `string Text {get;}` Etykieta jest wyświetlana w menu.
+  - `string Text {get;}` Etykieta jest wyświetlana w menu.
 
-  -   `void QueryStatus(IMenuCommand command)` -wywoływana, gdy użytkownik kliknie prawym przyciskiem myszy diagram i określa, czy polecenie powinno być widoczne i włączone dla bieżącego zaznaczenia przez użytkownika.
+  - `void QueryStatus(IMenuCommand command)` -wywoływana, gdy użytkownik kliknie prawym przyciskiem myszy diagram i określa, czy polecenie powinno być widoczne i włączone dla bieżącego zaznaczenia przez użytkownika.
 
-  -   `void Execute(IMenuCommand command)` -wywoływana, gdy użytkownik wybierze polecenie.
+  - `void Execute(IMenuCommand command)` -wywoływana, gdy użytkownik wybierze polecenie.
 
 - Aby określić bieżące zaznaczenie, można importować `IDiagramContext`:
 
@@ -212,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-##  <a name="gesture"></a> Definiowanie procedury obsługi gestu
+## <a name="gesture"></a> Definiowanie procedury obsługi gestu
 
 Obsługa gestu reaguje, gdy użytkownik przeciągnie elementy na diagram zależności, a użytkownik kliknie dwukrotnie dowolne miejsce na diagramie.
 
@@ -238,7 +238,7 @@ namespace MyLayerExtensions // change to your preference
 
 Zwróć uwagę na następujące kwestie dotyczące obsługi gestu:
 
--   Elementy członkowskie `IGestureExtension` są następujące:
+- Elementy członkowskie `IGestureExtension` są następujące:
 
      **OnDoubleClick** -wywoływana, gdy użytkownik kliknie dwukrotnie dowolne miejsce na diagramie.
 
@@ -246,7 +246,7 @@ Zwróć uwagę na następujące kwestie dotyczące obsługi gestu:
 
      **OnDragDrop** -wywoływana, gdy użytkownik porzuca element na diagram.
 
--   Pierwszy argument do każdej metody jest `IShape`, z którego można uzyskać element warstwy. Na przykład:
+- Pierwszy argument do każdej metody jest `IShape`, z którego można uzyskać element warstwy. Na przykład:
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
@@ -259,7 +259,7 @@ Zwróć uwagę na następujące kwestie dotyczące obsługi gestu:
     }
     ```
 
--   Programy obsługi dla niektórych typów przeciąganych elementów zostały już zdefiniowane. Na przykład użytkownik może przeciągać elementy z Eksploratora rozwiązań na diagram zależności. Nie można zdefiniować uchwytu przeciągania dla tego typu elementu. W takich przypadkach Twoje `DragDrop` metody nie zostaną wywołane.
+- Programy obsługi dla niektórych typów przeciąganych elementów zostały już zdefiniowane. Na przykład użytkownik może przeciągać elementy z Eksploratora rozwiązań na diagram zależności. Nie można zdefiniować uchwytu przeciągania dla tego typu elementu. W takich przypadkach Twoje `DragDrop` metody nie zostaną wywołane.
 
 ## <a name="see-also"></a>Zobacz też
 

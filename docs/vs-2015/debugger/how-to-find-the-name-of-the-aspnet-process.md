@@ -17,12 +17,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c403cefee3aa7d45c11cd80cf5fc2dd53a06c1fc
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 4cc62b8635a2d7a663b597d4f8a2363fe14ba432
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834030"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071931"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>Instrukcje: Znajdowanie nazwy procesu ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,25 +42,25 @@ Aby dołączyć do uruchomionej [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]
   
 ### <a name="to-determine-whether-project-code-resides-on-the-file-system-or-iis"></a>Aby określić, czy kod projektu znajduje się na system plików lub IIS  
   
-1.  W programie Visual Studio, otwórz **Eksploratora rozwiązań** Jeśli nie jest już otwarty.  
+1. W programie Visual Studio, otwórz **Eksploratora rozwiązań** Jeśli nie jest już otwarty.  
   
-2.  Zaznacz górny węzeł, który zawiera nazwę aplikacji.  
+2. Zaznacz górny węzeł, który zawiera nazwę aplikacji.  
   
-3.  Jeśli **właściwości** tytuł okna zawiera ścieżkę do pliku, kod aplikacji znajduje się w systemie plików.  
+3. Jeśli **właściwości** tytuł okna zawiera ścieżkę do pliku, kod aplikacji znajduje się w systemie plików.  
   
      W przeciwnym razie **właściwości** tytuł okna będzie zawierać nazwę witryny sieci Web.  
   
 ### <a name="to-determine-the-iis-version-under-which-the-application-is-running"></a>Można określić wersji usług IIS, w którym aplikacja jest uruchomiona  
   
-1.  Znajdź **narzędzia administracyjne** i uruchomimy ją. W zależności od systemu operacyjnego, może to być ikona wewnątrz **Panelu sterowania**, lub wpis menu, który pojawia się po kliknięciu **Start**.  
+1. Znajdź **narzędzia administracyjne** i uruchomimy ją. W zależności od systemu operacyjnego, może to być ikona wewnątrz **Panelu sterowania**, lub wpis menu, który pojawia się po kliknięciu **Start**.  
   
      Windows XP **Panelu sterowania** mogą znajdować się w widoku kategorii lub widok klasyczny. W widoku kategorii, trzeba kliknąć **Przełącz na widok klasyczny** lub **wydajność i konserwacja** się **narzędzia administracyjne** ikony.  
   
-2.  Z **narzędzia administracyjne**, uruchom program Internet Information Services. Zostanie wyświetlone okno dialogowe programu MMC.  
+2. Z **narzędzia administracyjne**, uruchom program Internet Information Services. Zostanie wyświetlone okno dialogowe programu MMC.  
   
-3.  Jeśli istnieje więcej niż jednym komputerze, na liście w okienku po lewej stronie, wybierz ten, na którym znajduje się kod aplikacji.  
+3. Jeśli istnieje więcej niż jednym komputerze, na liście w okienku po lewej stronie, wybierz ten, na którym znajduje się kod aplikacji.  
   
-4.  Wersja usług IIS znajduje się w **wersji** kolumny w okienku po prawej stronie.  
+4. Wersja usług IIS znajduje się w **wersji** kolumny w okienku po prawej stronie.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wstępne wymagania zdalne debugowanie aplikacji sieci Web](../debugger/prerequistes-for-remote-debugging-web-applications.md)   

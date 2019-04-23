@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4884aba3deb3a450b373a6d19abd9c7cf5bdbff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 18956cd3f4fa1a550808577f9e7fec9c9b193b4c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945290"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095875"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Instrukcje: Otwieranie modelu z pliku w kodzie programu
 W dowolnej aplikacji, możesz otworzyć modeli języka DSL.
@@ -24,11 +24,11 @@ W dowolnej aplikacji, możesz otworzyć modeli języka DSL.
 
 #### <a name="to-set-the-target-framework"></a>Aby ustawić platformę docelową
 
-1.  Otwórz projekt programu Visual Studio dla aplikacji, w którym chcesz odczytać modelu DSL.
+1. Otwórz projekt programu Visual Studio dla aplikacji, w którym chcesz odczytać modelu DSL.
 
-2.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **właściwości**.
+2. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **właściwości**.
 
-3.  W oknie dialogowym właściwości projektu na **aplikacji** kartę, należy ustawić **platformę docelową** pole **.NET Framework 4**.
+3. W oknie dialogowym właściwości projektu na **aplikacji** kartę, należy ustawić **platformę docelową** pole **.NET Framework 4**.
 
 > [!NOTE]
 >  Konieczne może być nawet wtedy, gdy wybrano **.NET Framework 4** w oknie dialogowym tworzenia projektu. Platforma docelowa nie powinny być **.NET Framework 4 Client Profile**.
@@ -36,22 +36,22 @@ W dowolnej aplikacji, możesz otworzyć modeli języka DSL.
 ## <a name="references"></a>Odwołania
  Należy dodać te odwołania do projektu aplikacji Visual Studio:
 
--   `Microsoft.VisualStudio.Modeling.Sdk.11.0`
+- `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-    -   Jeśli nie są widoczne w obszarze **.NET** karcie **Add References** okno dialogowe, kliknij przycisk **Przeglądaj** kartę i przejdź do `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
+    - Jeśli nie są widoczne w obszarze **.NET** karcie **Add References** okno dialogowe, kliknij przycisk **Przeglądaj** kartę i przejdź do `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
 
--   Zestaw DSL, który można znaleźć w folderze bin projektu DSL. Jego nazwa ma zwykle postać: *NazwaFirmy*. *YourProject*`.Dsl.dll`.
+- Zestaw DSL, który można znaleźć w folderze bin projektu DSL. Jego nazwa ma zwykle postać: *NazwaFirmy*. *YourProject*`.Dsl.dll`.
 
 ## <a name="important-classes-in-the-dsl"></a>Ważne klas w język DSL
  Przed można napisać kod, który odczytuje DSL, należy znać nazwy niektórych klas wygenerowanych przez DSL. W rozwiązaniu DSL Otwórz **Dsl** projektu i Znajdź **GeneratedCode** folderu. Alternatywnie, kliknij dwukrotnie zestaw DSL w projekcie **odwołania**i otwórz przestrzeń nazw DSL w **przeglądarki obiektów**.
 
  Są to klasy, które należy zidentyfikować:
 
--   *YourDslRootClass* — jest to nazwa klasy głównej w swojej `DslDefinition.dsl`.
+- *YourDslRootClass* — jest to nazwa klasy głównej w swojej `DslDefinition.dsl`.
 
--   *YourDslName* `SerializationHelper` — ta klasa jest zdefiniowana w `SerializationHelper.cs` w projekcie języka DSL.
+- *YourDslName* `SerializationHelper` — ta klasa jest zdefiniowana w `SerializationHelper.cs` w projekcie języka DSL.
 
--   *YourDslName* `DomainModel` — ta klasa jest zdefiniowana w `DomainModel.cs` w projekcie języka DSL.
+- *YourDslName* `DomainModel` — ta klasa jest zdefiniowana w `DomainModel.cs` w projekcie języka DSL.
 
 ## <a name="reading-from-a-file"></a>Odczytywanie z pliku
  Poniższy przykład jest przeznaczony do odczytu DSL, w którym klasy ważne są następujące:

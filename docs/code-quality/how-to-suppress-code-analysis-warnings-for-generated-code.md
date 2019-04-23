@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0bc46684d94470bb5e12cbdbecb5538ceb89606
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c2d58ea5d23ed8b302b6ec2a0352f23b0eeeff66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936081"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066523"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Instrukcje: Pomijanie ostrzeżeń analizy wygenerowanego kodu
 Kompilatory kodu zarządzanego często generują kod, który jest dodawany do projektu w celu ułatwienia tworzenia kodu szybkiego. Ponadto deweloperzy często używają narzędzi innych firm ułatwia szybkie tworzenie aplikacji. Te narzędzia są również wygenerować kod, który jest dodawany do projektu.
@@ -27,8 +27,8 @@ Kompilatory kodu zarządzanego często generują kod, który jest dodawany do pr
 
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>Aby pominąć ostrzeżeń dla wygenerowanego kodu w projekcie
 
-1.  Kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań, a następnie kliknij przycisk **właściwości**.
+1. Kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań, a następnie kliknij przycisk **właściwości**.
 
-2.  Kliknij przycisk **analiza kodu**.
+2. Kliknij przycisk **analiza kodu**.
 
-3.  Wybierz **Pomijaj wyniki z wygenerowanego kodu** pole wyboru.
+3. Wybierz **Pomijaj wyniki z wygenerowanego kodu** pole wyboru.

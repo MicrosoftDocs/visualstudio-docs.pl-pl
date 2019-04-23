@@ -61,12 +61,12 @@ ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 36d2665eef36e0e233cf02d241f550f3e701800f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f83f421203b25edbbccf767c0661ece709dd63c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805520"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085093"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Edycja i kontynuowanie przy błędach i ostrzeżeniach (C#)
 Dokonano edycji sekcji kodu, który nie jest dozwolona w Visual C# Edytuj i Kontynuuj.  
@@ -79,11 +79,11 @@ Dokonano edycji sekcji kodu, który nie jest dozwolona w Visual C# Edytuj i Kont
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-1.  Na **debugowania** menu, wybierz **Cofnij** Aby cofnąć zmianę.  
+1. Na **debugowania** menu, wybierz **Cofnij** Aby cofnąć zmianę.  
   
      —lub—  
   
-2.  Zatrzymaj sesję debugowania, edytować i rozpocznij nową sesję debugowania.  
+2. Zatrzymaj sesję debugowania, edytować i rozpocznij nową sesję debugowania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytuj i kontynuuj (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d459f641983960fdd7c4c1ded3b90c0a578c42b3
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 253f86f83805d11d7a1a6475fcbaf4eb76bfbc50
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873671"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081245"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analizowanie i modelowanie architektury
 
@@ -69,39 +69,39 @@ Mapy kodu pomagają zobaczyć organizacją i relacje w kodzie.
 
 **Typowe zastosowania:**
 
--   Sprawdź kod programu, można lepiej zrozumieć jego strukturę i jego zależności, jak zaktualizować go i oszacować koszt proponowane zmiany.
+- Sprawdź kod programu, można lepiej zrozumieć jego strukturę i jego zależności, jak zaktualizować go i oszacować koszt proponowane zmiany.
 
 **Zobacz:**
 
--   [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)
--   [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)
--   [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)
+- [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)
+- [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)
+- [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ### <a name="dependency-diagram"></a>Diagram zależności
 Diagramy zależności umożliwiają zdefiniowanie struktury aplikacji jako zestaw warstw lub bloki jawne zależności. Można uruchomić sprawdzania poprawności, aby odnaleźć konfliktów między zależnościami w kodzie i zależności opisane na diagram zależności.
 
 **Typowe zastosowania:**
 
--   Stabilizowanie struktury aplikacji za pomocą liczne zmiany za pośrednictwem jego użytkowania.
--   Odkryj konflikty niezamierzonych zależności przed zaewidencjonowaniem zmian w kodzie.
+- Stabilizowanie struktury aplikacji za pomocą liczne zmiany za pośrednictwem jego użytkowania.
+- Odkryj konflikty niezamierzonych zależności przed zaewidencjonowaniem zmian w kodzie.
 
 **Zobacz:**
 
--   [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)
--   [Diagramy zależności: informacje](../modeling/layer-diagrams-reference.md)
--   [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)
+- [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)
+- [Diagramy zależności: informacje](../modeling/layer-diagrams-reference.md)
+- [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)
 
 ### <a name="domain-specific-language-dsl"></a>Języka specyficznego dla domeny (DSL)
 DSL jest notacji, która projektowania do określonego celu. W programie Visual Studio jest zazwyczaj graficznego.
 
 **Typowe zastosowania:**
 
--   Generowanie lub skonfigurować części aplikacji. Praca jest wymagany do tworzenia, narzędzia i notacji. Wynik może być lepszym rozwiązaniem niż dostosowywania UML do domeny.
--   W przypadku dużych projektów lub linii produktów, w którym inwestycji w opracowywaniu język DSL i jego narzędzi jest zwracany przez jej użycie w więcej niż jeden projekt.
+- Generowanie lub skonfigurować części aplikacji. Praca jest wymagany do tworzenia, narzędzia i notacji. Wynik może być lepszym rozwiązaniem niż dostosowywania UML do domeny.
+- W przypadku dużych projektów lub linii produktów, w którym inwestycji w opracowywaniu język DSL i jego narzędzi jest zwracany przez jej użycie w więcej niż jeden projekt.
 
 **Zobacz:**
 
--   [Modelowanie SDK dla Visual Studio — języki specyficzne dla domeny](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
+- [Modelowanie SDK dla Visual Studio — języki specyficzne dla domeny](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
 ## <a name="where-can-i-get-more-information"></a>Gdzie można uzyskać więcej informacji?
 

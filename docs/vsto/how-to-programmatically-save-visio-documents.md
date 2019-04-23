@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5542e1ddde595bd22b34d339fd422e003a0ef0e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 08303b672fe45db4b6ccfcb5a64be5115e660186
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618604"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069441"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>Instrukcje: Programowe zapisywanie dokumentów programu Visio
   Istnieje kilka sposobów na zapisywanie dokumentów programu Microsoft Office Visio:
@@ -35,7 +35,7 @@ ms.locfileid: "56618604"
 
 ### <a name="to-save-a-document"></a>Zapisywanie dokumentu
 
--   Wywołaj `Microsoft.Office.Interop.Visio.Document.Save` metody `Microsoft.Office.Tools.Visio.Document` klasy dokumentu, który został wcześniej zapisany.
+- Wywołaj `Microsoft.Office.Interop.Visio.Document.Save` metody `Microsoft.Office.Tools.Visio.Document` klasy dokumentu, który został wcześniej zapisany.
 
      Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisAddIn` klasy w projekcie.
 
@@ -50,7 +50,7 @@ ms.locfileid: "56618604"
 
 ### <a name="to-save-the-active-visio-document-with-a-new-name"></a>Aby zapisać aktywny dokument programu Visio z nową nazwą
 
--   Wywołaj `Microsoft.Office.Interop.Visio.Document.SaveAs` metody `Microsoft.Office.Tools.Visio.Document` chcesz zapisać, korzystając z w pełni kwalifikowaną ścieżkę, łącznie z nazwą pliku. Jeśli plik o tej nazwie już istnieje w tym folderze, jest zastąpione w trybie dyskretnym.
+- Wywołaj `Microsoft.Office.Interop.Visio.Document.SaveAs` metody `Microsoft.Office.Tools.Visio.Document` chcesz zapisać, korzystając z w pełni kwalifikowaną ścieżkę, łącznie z nazwą pliku. Jeśli plik o tej nazwie już istnieje w tym folderze, jest zastąpione w trybie dyskretnym.
 
      Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisAddIn` klasy w projekcie.
 
@@ -62,7 +62,7 @@ ms.locfileid: "56618604"
 
 ### <a name="to-save-document-with-a-new-name-and-specified-arguments"></a>Można zapisać dokumentu z nową nazwą i określonych argumentów
 
--   Wywołaj `Microsoft.Office.Interop.Visio.Document.SaveAsEx` metody `Microsoft.Office.Tools.Visio.Document` chcesz zapisać, korzystając z w pełni kwalifikowaną ścieżkę, łącznie z nazwą pliku. Jeśli plik o tej nazwie już istnieje w tym folderze, zwracany jest wyjątek.
+- Wywołaj `Microsoft.Office.Interop.Visio.Document.SaveAsEx` metody `Microsoft.Office.Tools.Visio.Document` chcesz zapisać, korzystając z w pełni kwalifikowaną ścieżkę, łącznie z nazwą pliku. Jeśli plik o tej nazwie już istnieje w tym folderze, zwracany jest wyjątek.
 
      Poniższy przykład kodu Zapisuje aktywny dokument pod nową nazwą, oznacza dokumentu jako tylko do odczytu i zawiera dokument na liście niedawno używane dokumenty. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisAddIn` klasy w projekcie.
 
@@ -72,7 +72,7 @@ ms.locfileid: "56618604"
 ## <a name="compile-the-code"></a>Skompilować kod
  Ten przykład kodu wymaga następujących elementów:
 
--   Zapisz dokument, który ma nową nazwę, katalog o nazwie `Test` musi znajdować się w *Moje dokumenty* folder (Windows XP i starszych) lub *dokumenty* folder (Windows Vista).
+- Zapisz dokument, który ma nową nazwę, katalog o nazwie `Test` musi znajdować się w *Moje dokumenty* folder (Windows XP i starszych) lub *dokumenty* folder (Windows Vista).
 
 ## <a name="see-also"></a>Zobacz także
 - [Rozwiązania programu Visio](../vsto/visio-solutions.md)

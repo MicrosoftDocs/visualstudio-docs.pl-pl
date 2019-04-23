@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3501c963a3fdc97151fdacce723942ca4e4bc93f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 480a355ee2af321341c54b90edcc582d49102186
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628887"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092867"
 ---
 # <a name="event-logging-for-office-solutions"></a>Rejestrowanie zdarzeń dla rozwiązań pakietu Office
   Aby wyświetlić komunikaty o wyjątkach, które są przechwytywane przez służy Podgląd zdarzeń w Windows [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] po zainstalowaniu lub odinstalowaniu rozwiązań pakietu Office. Te komunikaty z Rejestratora zdarzeń służy do instalacji i problemy z wdrażaniem.
@@ -32,19 +32,19 @@ ms.locfileid: "56628887"
 
 ### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Można odczytać dziennika zdarzeń w systemie Windows Server 2003 i Windows XP
 
-1.  W Panelu sterowania otwórz **narzędzia administracyjne**.
+1. W Panelu sterowania otwórz **narzędzia administracyjne**.
 
-2.  Rozpocznij **Podgląd zdarzeń**.
+2. Rozpocznij **Podgląd zdarzeń**.
 
-3.  Na liście dzienniki zdarzeń, wybierz **aplikacji**.
+3. Na liście dzienniki zdarzeń, wybierz **aplikacji**.
 
-4.  Na **widoku** menu, kliknij przycisk **filtru**.
+4. Na **widoku** menu, kliknij przycisk **filtru**.
 
-5.  W **źródła zdarzeń** listy wybierz **VSTO 4.0**.
+5. W **źródła zdarzeń** listy wybierz **VSTO 4.0**.
 
-6.  W przypadku zdarzeń instalacji w **identyfikator zdarzenia** wpisz **4096**.
+6. W przypadku zdarzeń instalacji w **identyfikator zdarzenia** wpisz **4096**.
 
-7.  Kliknij przycisk **OK** Aby wyświetlić widok filtrowany.
+7. Kliknij przycisk **OK** Aby wyświetlić widok filtrowany.
 
 ### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Można odczytać dziennika zdarzeń w Windows 7, Windows Vista i Windows Server 2008
 
@@ -84,17 +84,17 @@ ms.locfileid: "56628887"
 
 ### <a name="to-disable-the-event-log"></a>Aby wyłączyć w dzienniku zdarzeń
 
-1.  W Panelu sterowania otwórz **systemu**.
+1. W Panelu sterowania otwórz **systemu**.
 
-2.  Na **zaawansowane** kliknij pozycję **zmienne środowiskowe**.
+2. Na **zaawansowane** kliknij pozycję **zmienne środowiskowe**.
 
-3.  W **zmiennych systemowych** okienku kliknij **New**.
+3. W **zmiennych systemowych** okienku kliknij **New**.
 
-4.  W **Nowa zmienna systemowa** okno dialogowe, typ **VSTO_EVENTLOGDISABLED** w **nazwa zmiennej** pole.
+4. W **Nowa zmienna systemowa** okno dialogowe, typ **VSTO_EVENTLOGDISABLED** w **nazwa zmiennej** pole.
 
-5.  W **wartość zmiennej** wpisz **1**.
+5. W **wartość zmiennej** wpisz **1**.
 
-6.  Kliknij przycisk **OK**.
+6. Kliknij przycisk **OK**.
 
 ## <a name="see-also"></a>Zobacz także
 - [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)

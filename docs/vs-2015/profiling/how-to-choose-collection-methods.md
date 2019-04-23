@@ -13,12 +13,12 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 187a45a925b8124309da44e114ac63e2212bf7c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 33ff14ce88f2032b998214ed11310a15550321dc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792879"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088447"
 ---
 # <a name="how-to-choose-collection-methods"></a>Instrukcje: Wybieranie metod kolekcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "54792879"
   
 #### <a name="to-select-a-collection-method-using-the-performance-wizard"></a>Aby wybrać metodę kolekcji za pomocą Kreatora wydajności  
   
--   Na pierwszej stronie kreatora wybierz jedną z następujących opcji:  
+- Na pierwszej stronie kreatora wybierz jedną z następujących opcji:  
   
 |Opcja|Opis|  
 |------------|-----------------|  
@@ -48,53 +48,53 @@ ms.locfileid: "54792879"
   
 #### <a name="to-select-a-collection-method-using-performance-explorer"></a>Aby wybrać metodę kolekcji za pomocą Eksploratora wydajności  
   
-1.  Na **Eksplorator wydajności** narzędzi, kliknij strzałkę obok pozycji **metoda** listy rozwijanej.  
+1. Na **Eksplorator wydajności** narzędzi, kliknij strzałkę obok pozycji **metoda** listy rozwijanej.  
   
-2.  Kliknij metodę kolekcji, którą użytkownik sobie tego życzy.  
+2. Kliknij metodę kolekcji, którą użytkownik sobie tego życzy.  
   
 ## <a name="performance-session-property-pages"></a>Strony właściwości sesji wydajności  
   
 #### <a name="to-select-the-sampling-or-instrumentation-method-using-performance-session-properties"></a>Aby wybrać metodę próbkowania i instrumentacji, przy użyciu właściwości sesji wydajności  
   
-1.  W **Eksplorator wydajności**, wybierz sesję wydajności.  
+1. W **Eksplorator wydajności**, wybierz sesję wydajności.  
   
      Nazwa pliku sesji wydajności ma rozszerzenie .psess.  
   
-2.  Kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij przycisk **właściwości**.  
+2. Kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij przycisk **właściwości**.  
   
-3.  W **stron właściwości**, kliknij przycisk **ogólne**.  
+3. W **stron właściwości**, kliknij przycisk **ogólne**.  
   
-4.  Kliknij metodę kolekcji, którą użytkownik sobie tego życzy.  
+4. Kliknij metodę kolekcji, którą użytkownik sobie tego życzy.  
   
-    -   Aby uzyskać informacje o innych opcjach, które są dostępne, gdy są zbierane dane z próbkowania, zobacz [zbieranie statystyk wydajności za pomocą próbkowania](../profiling/collecting-performance-statistics-by-using-sampling.md)  
+    - Aby uzyskać informacje o innych opcjach, które są dostępne, gdy są zbierane dane z próbkowania, zobacz [zbieranie statystyk wydajności za pomocą próbkowania](../profiling/collecting-performance-statistics-by-using-sampling.md)  
   
-    -   Aby uzyskać informacje o innych opcjach, które są dostępne, gdy są zbierane dane z próbkowania, zobacz [zbieranie szczegółowych danych o chronometrażu przy użyciu Instrumentacji](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md).  
+    - Aby uzyskać informacje o innych opcjach, które są dostępne, gdy są zbierane dane z próbkowania, zobacz [zbieranie szczegółowych danych o chronometrażu przy użyciu Instrumentacji](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md).  
   
 #### <a name="to-select-net-memory-data-collection-by-using-performance-session-properties"></a>Aby wybrać zbieranie danych pamięci .NET przy użyciu właściwości sesji wydajności  
   
-1.  W **Eksplorator wydajności**, wybierz sesję wydajności.  
+1. W **Eksplorator wydajności**, wybierz sesję wydajności.  
   
      Nazwa pliku sesji wydajności ma rozszerzenie .psess.  
   
-2.  Kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij przycisk **właściwości**.  
+2. Kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij przycisk **właściwości**.  
   
-3.  W **stron właściwości**, kliknij przycisk **ogólne**.  
+3. W **stron właściwości**, kliknij przycisk **ogólne**.  
   
-4.  Kliknij przycisk **próbkowania** lub **Instrumentacji**.  
+4. Kliknij przycisk **próbkowania** lub **Instrumentacji**.  
   
-5.  Kliknij przycisk **informacje dotyczące alokacji obiektów .NET zbieranie** do zbierania rozmiaru i liczby [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] obiekt alokacji.  
+5. Kliknij przycisk **informacje dotyczące alokacji obiektów .NET zbieranie** do zbierania rozmiaru i liczby [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] obiekt alokacji.  
   
-6.  (Opcjonalnie) Kliknij przycisk **również zbierać informacje dotyczące okresu istnienia obiektu platformy .NET** do zbierania danych o generacje kolekcji wyrzucania elementów, w których pamięci obiektu zostało odzyskane.  
+6. (Opcjonalnie) Kliknij przycisk **również zbierać informacje dotyczące okresu istnienia obiektu platformy .NET** do zbierania danych o generacje kolekcji wyrzucania elementów, w których pamięci obiektu zostało odzyskane.  
   
      Aby uzyskać informacje o innych opcjach, które są dostępne podczas zbierania danych pamięci .NET, zobacz [zbieranie alokacji pamięci .NET i danych o okresie istnienia](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md).  
   
 #### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>Aby wybrać zbierania danych współbieżności przy użyciu właściwości sesji wydajności  
   
-1.  W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij **właściwości**.  
+1. W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij **właściwości**.  
   
-2.  W **stron właściwości**, kliknij przycisk **ogólne**.  
+2. W **stron właściwości**, kliknij przycisk **ogólne**.  
   
-3.  Kliknij przycisk **współbieżności**.  
+3. Kliknij przycisk **współbieżności**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)   

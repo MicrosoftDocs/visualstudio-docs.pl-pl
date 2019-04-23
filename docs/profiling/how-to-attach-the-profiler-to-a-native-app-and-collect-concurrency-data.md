@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a16aa073583c62577f6a40fb24aac69c7e95b93e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 34fe188a26b4a971ec683cbea7b4a5334bead12c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624376"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083975"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Instrukcje: Dołączanie profilera do autonomicznej aplikacji natywnej i zbieranie danych współbieżności przy użyciu wiersza polecenia
 W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza poleceń Profiling Tools do dołączenia programu profilującego do uruchomionej natywnej aplikacji autonomicznej (C/C++) i zbierania wątku dane rywalizacji o zasoby.
@@ -28,7 +28,7 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
 
 #### <a name="to-attach-the-profiler-to-a-running-native-application"></a>Aby dołączyć profiler do uruchomionej natywnej aplikacji
 
-1.  W wierszu polecenia wpisz następujące polecenie:
+1. W wierszu polecenia wpisz następujące polecenie:
 
      [Narzędzia VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency**
 
@@ -42,7 +42,7 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
     |[/automark](../profiling/automark.md) **:** `Interval`|Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami zbierania licznika wydajności Windows. Wartość domyślna to 500.|
     |[/Events](../profiling/events-vsperfcmd.md) **:** `Config`|Określa zdarzenie śledzenie zdarzeń dla Windows (ETW) mają być zbierane podczas profilowania. Zdarzenia ETW są zbierane w pliku oddzielne (ETL).|
 
-2.  Dołącz profiler do aplikacji docelowej, wpisując następujące polecenie:
+2. Dołącz profiler do aplikacji docelowej, wpisując następujące polecenie:
 
      **Narzędzia VSPerfCmd**[/ dołączanie](../profiling/attach.md) **:**{`PID`&#124;`ProcName`}
 
@@ -53,7 +53,7 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
 
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych
 
--   Pary opcji w poniższej tabeli uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
+- Pary opcji w poniższej tabeli uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
 
     |Opcja|Opis|
     |------------|-----------------|
@@ -66,10 +66,10 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
 
 #### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania
 
-1.  Odłącz profiler od aplikacji docelowej, zamykając go lub wpisując następujące polecenie:
+1. Odłącz profiler od aplikacji docelowej, zamykając go lub wpisując następujące polecenie:
 
      **Narzędzia VSPerfCmd / Odłącz**
 
-2.  Zamknij program profilujący, wpisując następujące polecenie:
+2. Zamknij program profilujący, wpisując następujące polecenie:
 
      **Narzędzia VSPerfCmd** [ /shutdown](../profiling/shutdown.md)

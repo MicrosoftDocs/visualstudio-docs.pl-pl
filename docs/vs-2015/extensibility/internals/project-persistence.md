@@ -11,12 +11,12 @@ ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9627170ad65906af1bc7930897c374504cae4552
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: abbcc1fc1048866ef790a4b6779ed15ef80a9be1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58152569"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074245"
 ---
 # <a name="project-persistence"></a>Trwałość projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Trwałość stanowi kluczy dla Twojego projektu. Większość projektów używa�
   
  Elementy projektu może być oparte na plikach lub systemem plików:  
   
--   Elementy opartej na plikach może być lokalny lub zdalny. W projektach sieci Web w języku C# na przykład połączenia z plikami w systemie zdalnym są zachowywane lokalnie, a same pliki utrwalanie w systemie zdalnym.  
+- Elementy opartej na plikach może być lokalny lub zdalny. W projektach sieci Web w języku C# na przykład połączenia z plikami w systemie zdalnym są zachowywane lokalnie, a same pliki utrwalanie w systemie zdalnym.  
   
--   Elementy non-file-based zapisać elementy z bazą danych lub repozytorium.  
+- Elementy non-file-based zapisać elementy z bazą danych lub repozytorium.  
   
 ## <a name="commit-models"></a>Zatwierdź modeli  
  Po podjęciu decyzji o tym, gdzie znajdują się elementy projektu, musisz wybrać model odpowiednie zatwierdzenia. Na przykład w modelu opartych na plikach z lokalnymi plikami, każdy projekt zapisaniem autonomicznie. W modelu repozytorium można zapisać kilka elementów w ramach jednej transakcji. Aby uzyskać więcej informacji, zobacz [decyzje projektowe dotyczące typów projektu](../../extensibility/internals/project-type-design-decisions.md).  

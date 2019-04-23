@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 645346098b954fb57f5bb09f5ee97cfa48302150
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c02dbf550ca1621a17d2b674a522e1e4f4bcc1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766160"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038909"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Instrukcje: Rozszerzanie projektanta języka specyficznego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,25 +28,25 @@ Można wykonać rozszerzenia do projektanta, którego używasz do edytowania def
   
 #### <a name="to-create-a-dsl-designer-extension-solution"></a>Aby utworzyć rozwiązanie rozszerzenia projektanta DSL  
   
-1.  Tworzenie nowego projektu przy użyciu szablonu projektu biblioteki klas. W **nowy projekt** okno dialogowe, kliknij przycisk **Visual C#** a następnie w środkowym oknie kliknij pozycję **biblioteki klas**.  
+1. Tworzenie nowego projektu przy użyciu szablonu projektu biblioteki klas. W **nowy projekt** okno dialogowe, kliknij przycisk **Visual C#** a następnie w środkowym oknie kliknij pozycję **biblioteki klas**.  
   
      Projekt ten będzie zawierał kod rozszerzenia.  
   
-2.  Tworzenie nowego projektu przy użyciu szablonu projektu VSIX. W **nowy projekt** okna dialogowego rozwiń **Visual C#**, kliknij przycisk **rozszerzalności**, a następnie w środkowym oknie Wybierz **projekt VSIX**.  
+2. Tworzenie nowego projektu przy użyciu szablonu projektu VSIX. W **nowy projekt** okna dialogowego rozwiń **Visual C#**, kliknij przycisk **rozszerzalności**, a następnie w środkowym oknie Wybierz **projekt VSIX**.  
   
      Wybierz **Dodaj do rozwiązania**.  
   
      Source.Extension.vsixmanifest zostanie otwarty w edytorze manifestu VSIX.  
   
-3.  Powyżej pola zawartość, kliknij przycisk **Dodaj zawartość**.  
+3. Powyżej pola zawartość, kliknij przycisk **Dodaj zawartość**.  
   
-4.  W **Dodaj zawartość** okno dialogowe, zestaw **wybierz typ zawartości** do **składnik MEF**i ustaw **projektu** do projektu biblioteki klas.  
+4. W **Dodaj zawartość** okno dialogowe, zestaw **wybierz typ zawartości** do **składnik MEF**i ustaw **projektu** do projektu biblioteki klas.  
   
-5.  Kliknij przycisk **Wybierz wersje** i upewnij się, że **programu Visual Studio Enterprise** jest zaznaczone.  
+5. Kliknij przycisk **Wybierz wersje** i upewnij się, że **programu Visual Studio Enterprise** jest zaznaczone.  
   
-6.  Upewnij się, że projekt VSIX jest projektem startowym rozwiązania.  
+6. Upewnij się, że projekt VSIX jest projektem startowym rozwiązania.  
   
-7.  W projekcie biblioteki klas Dodaj odwołania do następujących zestawów:  
+7. W projekcie biblioteki klas Dodaj odwołania do następujących zestawów:  
   
      Microsoft.VisualStudio.CoreUtility  
   

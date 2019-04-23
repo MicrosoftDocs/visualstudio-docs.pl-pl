@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: bc943fe059850b024a5067d36bcc14d258ca5565
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d15f0e8e5c5cbdac5a130804977adf90385adfe1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635075"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093686"
 ---
 # <a name="wpf-overview"></a>Omówienie podsystemu WPF
 
@@ -224,9 +224,9 @@ Na poniższej ilustracji przedstawiono wynik znaczników XAML w poprzednim przyk
 
 Większość aplikacji są tworzone użytkownikom sposób wyświetlić i edytować dane. Dla aplikacji WPF praca, przechowywania i uzyskiwania dostępu do danych jest już udostępniane na potrzeby technologii, takich jak SQL Server oraz obiektów ADO .NET. Po dane są dostępne, a następnie ładowane do aplikacji zarządzanych obiektów, rozpoczyna się trudną pracę dla aplikacji WPF. Obejmuje to zasadniczo dwie rzeczy:
 
-1.  Kopiowanie danych z obiektów zarządzanych w formantach, gdzie można wyświetlane i edytowane dane.
+1. Kopiowanie danych z obiektów zarządzanych w formantach, gdzie można wyświetlane i edytowane dane.
 
-2.  Zapewnienie, że zmiany wprowadzone w danych za pomocą formantów są kopiowane do obiektów zarządzanych.
+2. Zapewnienie, że zmiany wprowadzone w danych za pomocą formantów są kopiowane do obiektów zarządzanych.
 
 Aby uprościć tworzenie aplikacji, WPF zapewnia aparat powiązania danych, aby automatycznie wykonać następujące kroki. Jednostki podstawowe aparat wiązanie danych jest <xref:System.Windows.Data.Binding> klasy, których zadaniem jest do wiązania kontrolki (cel wiążący) obiektu danych (źródło wiążące). Ta relacja jest zilustrowany przez poniższej ilustracji:
 
@@ -547,7 +547,7 @@ Ponieważ ten styl jest przeznaczony dla wszystkich <xref:System.Windows.Control
 
 Aby uzyskać więcej informacji, zobacz [Tworzenie szablonów i stylów](/dotnet/framework/wpf/controls/styling-and-templating).
 
-### <a name="resources"></a>Resources
+### <a name="resources"></a>Zasoby
 
 Kontrolki w aplikacji powinny mieć tego samego wygląd, który może zawierać żadnych z czcionki i kolory tła, w celu kontrolowania szablonów, szablony danych i style. Do hermetyzacji tych zasobów w obrębie jednej lokalizacji do ponownego wykorzystania, można użyć w WPF Obsługa zasoby interfejsu użytkownika.
 
@@ -575,11 +575,11 @@ W poniższym przykładzie zdefiniowano wspólnej kolor tła, który jest współ
 
 W tym przykładzie implementuje zasób koloru tła przy użyciu `Window.Resources` elementu właściwości. Ten zasób jest dostępny dla wszystkich obiektów podrzędnych <xref:System.Windows.Window>. Istnieje wiele zasobów zakresy, w tym następujące czynności, wymienione w kolejności, w którym są one rozwiązane:
 
-1.  Poszczególnych kontrolek (przy użyciu dziedziczonego <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> właściwości).
+1. Poszczególnych kontrolek (przy użyciu dziedziczonego <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> właściwości).
 
-2.  A <xref:System.Windows.Window> lub <xref:System.Windows.Controls.Page> (również przy użyciu dziedziczonego <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> właściwości).
+2. A <xref:System.Windows.Window> lub <xref:System.Windows.Controls.Page> (również przy użyciu dziedziczonego <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> właściwości).
 
-3.  <xref:System.Windows.Application> (Przy użyciu <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> właściwości).
+3. <xref:System.Windows.Application> (Przy użyciu <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> właściwości).
 
 Różne zakresy zapewnia elastyczność w odniesieniu do sposobu, w którym do definiowania i udostępniać swoje zasoby.
 
@@ -619,7 +619,7 @@ Zasoby i słowniki zasobów są podstawą Obsługa platformy WPF dla motywów i 
 
 Aby uzyskać więcej informacji, zobacz [zasobów](/dotnet/framework/wpf/advanced/xaml-resources).
 
-### <a name="custom-controls"></a>Formanty niestandardowe
+### <a name="custom-controls"></a>Kontrolki niestandardowe
 
 Mimo że WPF oferuje obsługę dostosowania, możesz napotkać sytuacje, gdzie istniejących kontrolek WPF nie spełnia wymagań aplikacji i jej użytkownikach. Taka sytuacja może wystąpić jeśli:
 

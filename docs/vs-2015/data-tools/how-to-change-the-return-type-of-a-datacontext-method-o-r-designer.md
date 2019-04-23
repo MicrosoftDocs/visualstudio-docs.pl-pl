@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be57c5d8a298f37f9cffc7cc4b363651efbc9c2b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3e44a2c9b5fab120432f412e7c70f35c8e1ecafd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665652"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077475"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Instrukcje: Zmiany zwracanego typu metody DataContext (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,19 +28,19 @@ Zwracany typ <xref:System.Data.Linq.DataContext> — metoda (utworzonym w zależ
   
 ### <a name="to-change-the-return-type-of-a-datacontext-method-from-the-auto-generated-type-to-an-entity-class"></a>Zmiany zwracanego typu metody DataContext ze typu automatycznie wygenerowana klasa jednostki  
   
-1.  Wybierz <xref:System.Data.Linq.DataContext> metody w okienko metod.  
+1. Wybierz <xref:System.Data.Linq.DataContext> metody w okienko metod.  
   
-2.  Wybierz **typie zwracanym** w **właściwości** okna, a następnie wybierz jednostki dostępne klasy w **typie zwracanym** listy. Jeśli klasa odpowiedniej jednostki nie jest na liście, dodaj go do, lub utwórz go w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] ją dodać do listy.  
+2. Wybierz **typie zwracanym** w **właściwości** okna, a następnie wybierz jednostki dostępne klasy w **typie zwracanym** listy. Jeśli klasa odpowiedniej jednostki nie jest na liście, dodaj go do, lub utwórz go w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] ją dodać do listy.  
   
-3.  Zapisz plik dbml.  
+3. Zapisz plik dbml.  
   
 ### <a name="to-change-the-return-type-of-a-datacontext-method-from-an-entity-class-back-to-the-auto-generated-type"></a>Aby zmienić typ zwracany metody DataContext z klasy jednostki na typ wygenerowany automatycznie  
   
-1.  Wybierz <xref:System.Data.Linq.DataContext> metody w okienko metod i usuń go.  
+1. Wybierz <xref:System.Data.Linq.DataContext> metody w okienko metod i usuń go.  
   
-2.  Przeciągnij obiekt bazy danych z **Eksploratora serwera**/**Eksplorator bazy danych** nad pustym obszarem projektanta O/R.  
+2. Przeciągnij obiekt bazy danych z **Eksploratora serwera**/**Eksplorator bazy danych** nad pustym obszarem projektanta O/R.  
   
-3.  Zapisz plik dbml.  
+3. Zapisz plik dbml.  
   
 ## <a name="see-also"></a>Zobacz też  
  [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

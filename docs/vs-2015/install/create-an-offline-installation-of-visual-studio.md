@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 798318f55c6f5db599f39a653a4d9ed5edbed8f6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 197ae2a168f7f14f7d0ea3d9b82b5943c1af82f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651009"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077943"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Tworzenie instalacji Offline programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,33 +30,33 @@ Ta strona w tym artykule opisano sposób instalowania programu Visual Studio 201
 > [!IMPORTANT]
 > Jeśli maszyny w trybie offline jest uruchomiona, Windows 7 z dodatkiem SP1 lub Windows Server 2008 R2, zobacz instrukcje specjalne [Rozwiązywanie problemów z instalacją w trybie offline](#BKMK_tshoot) części tego tematu.  Wykonaj te instrukcje *przed* instalacji programu Visual Studio 2015.
 
-##  <a name="BKMK_Offline"></a> Instalowanie przez tworzenie instalacji w trybie offline
+## <a name="BKMK_Offline"></a> Instalowanie przez tworzenie instalacji w trybie offline
 
 #### <a name="to-create-an-offline-installation-layout"></a>Aby utworzyć układ instalacji w trybie offline
 
-1.  Wybierz wersję programu Visual Studio, który chcesz zainstalować z [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) strony pobierania.
+1. Wybierz wersję programu Visual Studio, który chcesz zainstalować z [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) strony pobierania.
 
-2.  Po pobraniu Instalatora w lokalizacji w systemie plików Uruchom "\<nazwą pliku wykonywalnego >/layout".
+2. Po pobraniu Instalatora w lokalizacji w systemie plików Uruchom "\<nazwą pliku wykonywalnego >/layout".
 
      Na przykład uruchomić: `vs_enterprise.exe /layout D:\VisualStudio2015`
 
      Za pomocą `/layout` przełącznika, możesz pobrać prawie wszystkich pakietów instalacyjnych, nie tylko tych, które dotyczą komputera pobierania. Takie podejście zapewnia pliki, które należy uruchom tego Instalatora w dowolnym miejscu i może być przydatne, jeśli chcesz zainstalować składniki, które pierwotnie nie instalowano.
 
-3.  Po uruchomieniu tego polecenia, zostanie wyświetlone okno dialogowe, które pozwala zmienić folder, w którym ma układu instalacji w trybie offline, aby znajdują się.   Następnie kliknij przycisk **Pobierz** przycisku.
+3. Po uruchomieniu tego polecenia, zostanie wyświetlone okno dialogowe, które pozwala zmienić folder, w którym ma układu instalacji w trybie offline, aby znajdują się.   Następnie kliknij przycisk **Pobierz** przycisku.
 
      Jeśli pobieranie pakietu zakończy się pomyślnie, powinien zostać wyświetlony komunikat informujący, że **Instalacja zakończona pomyślnie! Pomyślnie pobrano wszystkie określone składniki.**
 
-4.  Zlokalizuj folder, w którym określone wcześniej. (Na przykład zlokalizuj D:\VisualStudio2015). Ten folder zawiera wszystko, czego potrzebujesz, aby skopiować do współdzielonej lokalizacji lub nośnika instalacyjnego.
+4. Zlokalizuj folder, w którym określone wcześniej. (Na przykład zlokalizuj D:\VisualStudio2015). Ten folder zawiera wszystko, czego potrzebujesz, aby skopiować do współdzielonej lokalizacji lub nośnika instalacyjnego.
 
     > [!CAUTION]
     > Zestaw SDK systemu Android nie obsługuje obecnie środowisko instalacji w trybie offline. Jeśli elementy Instalacja zestawu Android SDK można zainstalować na komputerze, który nie jest połączony z Internetem, instalacja może zakończyć się niepowodzeniem. Aby uzyskać więcej informacji zobacz sekcję "Rozwiązywanie problemów z instalacją w trybie offline", w tym temacie.
 
-5.  Uruchom instalację z lokalizacji pliku lub nośnika instalacyjnego.
+5. Uruchom instalację z lokalizacji pliku lub nośnika instalacyjnego.
 
 ## <a name="updating-an-offline-installation"></a>Aktualizowanie instalacji w trybie offline
  Firma Microsoft wydała kilka aktualizacji dla programu Visual Studio 2015. Aby zaktualizować instalację programu Visual Studio, wystarczy pobrać wersję z z [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) strony pobierania. Następnie wykonaj czynności opisane w tym temacie umożliwiają utworzenie nowego układu instalacji w trybie offline, a następnie użyć go, aby zaktualizować swoją kopię programu Visual Studio 2015.
 
-##  <a name="BKMK_tshoot"></a> Rozwiązywanie problemów z instalacją w trybie offline
+## <a name="BKMK_tshoot"></a> Rozwiązywanie problemów z instalacją w trybie offline
  Podczas instalacji w trybie offline z trybu offline instalacji pamięci podręcznej, może być wyświetlane komunikaty ostrzegawcze o nie będzie mogła zainstalować niektórych składników i pakietów. Poniższa tabela zawiera możliwe rozwiązania dla tych scenariuszy.
 
 | Składnik lub pakietu | Rozwiązanie |

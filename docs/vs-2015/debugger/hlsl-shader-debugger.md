@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aebe99754b19579bbc3475e0eb9a6941da43e558
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ac9352af6bd22ca2cc21545945d56a10db2c458f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763949"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074391"
 ---
 # <a name="hlsl-shader-debugger"></a>Debuger programu do cieniowania HLSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,9 +53,9 @@ Debuger HLSL w analizatora grafiki programu Visual Studio pomaga zrozumieć, jak
   
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pipeline-stages-window"></a>Aby uruchomić debuger HLSL z okna Etapy potoku grafiki  
   
-1.  W **etapy potoku grafiki** okna, zlokalizuj etap potoku, który jest skojarzony z modułem cieniującym, który chcesz debugować.  
+1. W **etapy potoku grafiki** okna, zlokalizuj etap potoku, który jest skojarzony z modułem cieniującym, który chcesz debugować.  
   
-2.  Poniżej tytułu etapu potoku wybierz **Rozpocznij debugowanie**, które pojawia się jako mała zielona strzałka.  
+2. Poniżej tytułu etapu potoku wybierz **Rozpocznij debugowanie**, które pojawia się jako mała zielona strzałka.  
   
     > [!NOTE]
     >  Ten punkt wejścia do debugera HLSL debuguje tylko pierwszy wątek modułu cieniującego dla odpowiedniego etapu, czyli pierwszy wierzchołek lub piksel, który jest przetwarzany. Historia pikseli umożliwia dostęp do innych wątków z tych etapów modułu cieniującego.  

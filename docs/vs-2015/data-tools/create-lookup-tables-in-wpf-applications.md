@@ -22,12 +22,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b25a86617fdead402a2bcc3e6d901868caad840e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d069f48e39327cf73f741eb2b2ff02688fa4c3d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663785"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095922"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Tworzenie tabel wyszukiwania w aplikacjach WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,49 +38,49 @@ Termin *tabeli odnośników* (nazywane czasem *powiązanie wyszukiwania odnośni
   
 ## <a name="to-create-a-lookup-table"></a>Można utworzyć tabeli odnośników  
   
-1.  Dodaj jeden z następujących rodzajów źródeł danych za pomocą powiązanych danych do projektu:  
+1. Dodaj jeden z następujących rodzajów źródeł danych za pomocą powiązanych danych do projektu:  
   
-    -   Zestaw danych lub modelu Entity Data Model.
+    - Zestaw danych lub modelu Entity Data Model.
 
-    -   Usługi danych WCF, usługi WCF lub usługi sieci Web. Aby uzyskać więcej informacji, zobacz [jak: Łączenie z danymi w usłudze](../data-tools/how-to-connect-to-data-in-a-service.md).  
+    - Usługi danych WCF, usługi WCF lub usługi sieci Web. Aby uzyskać więcej informacji, zobacz [jak: Łączenie z danymi w usłudze](../data-tools/how-to-connect-to-data-in-a-service.md).  
   
-    -   Obiekty. Aby uzyskać więcej informacji, zobacz [jak: Łączenie z danymi w obiektach](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
+    - Obiekty. Aby uzyskać więcej informacji, zobacz [jak: Łączenie z danymi w obiektach](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
   
     > [!NOTE]
     >  Zanim można utworzyć tabeli odnośników, dwie pokrewne tabele lub obiekty musi istnieć jako źródło danych dla projektu.  
   
-2.  Otwórz**WPF Designer**i upewnij się, że projektant zawiera kontener, który jest prawidłowe miejsca docelowego dla elementów w **źródeł danych** okna.  
+2. Otwórz**WPF Designer**i upewnij się, że projektant zawiera kontener, który jest prawidłowe miejsca docelowego dla elementów w **źródeł danych** okna.  
   
      Aby uzyskać więcej informacji na temat prawidłowych miejsc upuszczania zobacz [WPF powiązać kontrolki z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-3.  Na **danych** menu, kliknij przycisk **Pokaż źródła danych** otworzyć **źródeł danych** okna.  
+3. Na **danych** menu, kliknij przycisk **Pokaż źródła danych** otworzyć **źródeł danych** okna.  
   
-4.  Rozwiń węzły w **źródeł danych** okna, aż zobaczysz tabelę nadrzędną lub obiektu oraz pokrewną tabelę podrzędną lub obiektu.  
+4. Rozwiń węzły w **źródeł danych** okna, aż zobaczysz tabelę nadrzędną lub obiektu oraz pokrewną tabelę podrzędną lub obiektu.  
   
     > [!NOTE]
     >  Pokrewną tabelę podrzędną lub obiekt jest węzeł pokazywany jako rozwijany węzeł podrzędny tabeli nadrzędnej lub obiektu.  
   
-5.  Kliknij menu rozwijane dla węzła podrzędnego, a następnie wybierz pozycję **szczegóły**.  
+5. Kliknij menu rozwijane dla węzła podrzędnego, a następnie wybierz pozycję **szczegóły**.  
   
-6.  Rozwiń węzeł podrzędny.  
+6. Rozwiń węzeł podrzędny.  
   
-7.  W obszarze węzła podrzędnego kliknij menu rozwijanej dla elementu, który odnosi się danych nadrzędnymi i podrzędnymi. (W powyższym przykładzie jest to **CustomerID** węzła.) Wybierz jedną z następujących typów formantów, które obsługują powiązanie wyszukiwania odnośników:  
+7. W obszarze węzła podrzędnego kliknij menu rozwijanej dla elementu, który odnosi się danych nadrzędnymi i podrzędnymi. (W powyższym przykładzie jest to **CustomerID** węzła.) Wybierz jedną z następujących typów formantów, które obsługują powiązanie wyszukiwania odnośników:  
   
-    -   **ComboBox**  
+    - **ComboBox**  
   
-    -   **ListBox**  
+    - **ListBox**  
   
-    -   **ListView**  
+    - **ListView**  
   
         > [!NOTE]
         >  Jeśli **ListBox** lub **ListView** formant nie jest wyświetlany na liście te formanty można dodać do listy. Aby uzyskać informacje, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
-    -   Kontrolki niestandardowej, która pochodzi od klasy <xref:System.Windows.Controls.Primitives.Selector>.  
+    - Kontrolki niestandardowej, która pochodzi od klasy <xref:System.Windows.Controls.Primitives.Selector>.  
   
         > [!NOTE]
         >  Informacje o sposobie dodawania niestandardowego określa się na liście kontrolek można wybrać dla elementów w **źródeł danych** okna, zobacz [Dodawanie niestandardowych formantów do okna źródeł danych](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
-8.  Przeciągnij węzeł podrzędny z **źródeł danych** okna na kontenerze projektanta WPF. (W powyższym przykładzie jest węzeł podrzędny **zamówienia** węzła.)  
+8. Przeciągnij węzeł podrzędny z **źródeł danych** okna na kontenerze projektanta WPF. (W powyższym przykładzie jest węzeł podrzędny **zamówienia** węzła.)  
   
      Program Visual Studio generuje XAML, który tworzy nowe formanty powiązane z danymi dla każdego z elementów, które przeciągniesz. XAML również dodaje nowy <xref:System.Windows.Data.CollectionViewSource> tabeli podrzędnej lub obiektu do zasobów miejsca docelowego. Dla niektórych źródeł danych programu Visual Studio generuje kod, aby załadować dane do tabeli lub obiektu. Aby uzyskać więcej informacji, zobacz [WPF powiązać kontrolki z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   

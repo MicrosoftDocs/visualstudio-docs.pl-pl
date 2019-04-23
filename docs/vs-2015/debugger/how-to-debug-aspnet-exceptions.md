@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c34ac4fdcf50d1fde95c957de6aff4b7f004a2d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1ccd8c399bd92bd98307d44aff913c30390033c7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786311"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083715"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Instrukcje: Debugowanie wyjątków ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,14 +38,14 @@ Debugowanie wyjątków jest ważną częścią opracowywania niezawodnej [!INCLU
   
 ### <a name="to-enable-debugging-of-aspnet-exceptions-with-just-my-code"></a>Aby włączyć debugowanie wyjątków ASP.NET za pomocą tylko mój kod  
   
-1.  Na **debugowania** menu, kliknij przycisk **wyjątki**.  
+1. Na **debugowania** menu, kliknij przycisk **wyjątki**.  
   
      **Wyjątki** pojawi się okno dialogowe.  
   
-2.  Na **wyjątki środowiska uruchomieniowego języka wspólnego** wiersz, wybierz opcję **zgłoszenia** lub **User-unhandled**.  
+2. Na **wyjątki środowiska uruchomieniowego języka wspólnego** wiersz, wybierz opcję **zgłoszenia** lub **User-unhandled**.  
   
      Aby użyć **User-unhandled** ustawienie **tylko mój kod** musi być włączona...  
   
 ### <a name="to-use-best-practices-for-aspnet-exception-handling"></a>Aby stosować najlepsze rozwiązania dla obsługi wyjątków programu ASP.NET  
   
--   Miejsce `try … catch` bloki wokół kodu, który może generować wyjątki, które można przewidzieć i wiedzieć jak je obsługiwać. Na przykład, jeśli aplikacja wykonuje wywołania do usługi sieci Web XML lub bezpośrednio do programu SQL Server, ten kod powinien być w **try... catch** blokuje, ponieważ istnieją liczne wyjątki, które mogą wystąpić.
+- Miejsce `try … catch` bloki wokół kodu, który może generować wyjątki, które można przewidzieć i wiedzieć jak je obsługiwać. Na przykład, jeśli aplikacja wykonuje wywołania do usługi sieci Web XML lub bezpośrednio do programu SQL Server, ten kod powinien być w **try... catch** blokuje, ponieważ istnieją liczne wyjątki, które mogą wystąpić.

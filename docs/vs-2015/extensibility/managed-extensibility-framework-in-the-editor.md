@@ -10,12 +10,12 @@ ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 589e392530238249eefb789170f4f986b24a8551
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ae47942e9b686ac02623e4b3f2d0681babf879f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766860"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084031"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Struktura Managed Extensibility Framework (MEF) w edytorze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,25 +84,25 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
   
 #### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>Korzystanie z funkcji edytora część MEF  
   
-1.  Dodaj odwołania do System.Composition.ComponentModel.dll, który znajduje się w globalnej pamięci podręcznej zestawów (GAC), do zestawów w edytorze.  
+1. Dodaj odwołania do System.Composition.ComponentModel.dll, który znajduje się w globalnej pamięci podręcznej zestawów (GAC), do zestawów w edytorze.  
   
-2.  Dodaj odpowiednie instrukcje using.  
+2. Dodaj odpowiednie instrukcje using.  
   
     ```  
     using System.ComponentModel.Composition;  
     using Microsoft.VisualStudio.Text;  
     ```  
   
-3.  Dodaj `[Import]` atrybutu do interfejsu usługi, w następujący sposób.  
+3. Dodaj `[Import]` atrybutu do interfejsu usługi, w następujący sposób.  
   
     ```  
     [Import]  
     ITextBufferFactoryService textBufferService;  
     ```  
   
-4.  Po uzyskaniu usługi mogą wykorzystywać jeden z jego składników.  
+4. Po uzyskaniu usługi mogą wykorzystywać jeden z jego składników.  
   
-5.  Kiedy została wykonana zestawu, w jakich go umieszczono... \Common7\IDE\Components\ folder instalacji programu Visual Studio.  
+5. Kiedy została wykonana zestawu, w jakich go umieszczono... \Common7\IDE\Components\ folder instalacji programu Visual Studio.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Punkty rozszerzeń usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)

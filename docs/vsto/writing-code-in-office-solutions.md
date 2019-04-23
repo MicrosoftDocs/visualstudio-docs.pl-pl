@@ -33,12 +33,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1e47e8bea173298761e2a5170382ef2c4b32c6c5
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2c5163de342415113321b6bd2337cd75ff528f6c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54864075"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076893"
 ---
 # <a name="write-code-in-office-solutions"></a>Pisanie kodu w rozwiązaniach pakietu Office
   Istnieją pewne aspekty pisanie kodu w projektach pakietu Office, które różnią się od innych typów projektów w programie Visual Studio. Wiele z tych różnic odnoszą się do sposobu modele obiektów pakietu Office są widoczne dla kodu zarządzanego. Inne różnice są związane z projekt projektów Office.
@@ -63,9 +63,9 @@ ms.locfileid: "54864075"
 
  Ponieważ typy w zestawy PIA pakietu Office odpowiadają typom modeli obiektów opartego na modelu COM, sposób, można użyć tych typów często różni się od innych typów zarządzanych. Na przykład sposób wywołania metody, które mają następujące parametry opcjonalne w Office podstawowy zestaw międzyoperacyjny zależy od języka programowania, którego używasz w projekcie. Więcej informacji znajduje się w następujących tematach:
 
--   [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md).
+- [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md).
 
--   [Późne powiązania w rozwiązaniach pakietu Office](../vsto/late-binding-in-office-solutions.md).
+- [Późne powiązania w rozwiązaniach pakietu Office](../vsto/late-binding-in-office-solutions.md).
 
 ## <a name="program-model-of-office-projects"></a>Program modelu projektów pakietu Office
  Wszystkie projekty pakietu Office zawierają co najmniej jeden wygenerowanej klasy, które zapewnia punkt wejścia dla kodu. Te klasy oferują również dostępu do modelu obiektu aplikacji hosta oraz dostęp do funkcji, takich jak okienka akcji i niestandardowych okienek zadań.
@@ -99,8 +99,11 @@ ms.locfileid: "54864075"
 ## <a name="program-with-visual-basic-vs-visual-c-in-office-solutions"></a>Program za pomocą programu vs w języku Visual Basic. Visual C# w rozwiązaniach pakietu Office
  Rozwiązania dla pakietu Office można utworzyć za pomocą języka Visual Basic lub Visual C#. Ponieważ modele obiektów Microsoft Office zostały zaprojektowane do użycia przy użyciu programu Microsoft Visual Basic for Applications (VBA), deweloperów programu Visual Basic można pracować wygodnie obiekty udostępniane przez aplikacje pakietu Microsoft Office. Visual C# deweloperzy mogą korzystać z większości te same funkcje, deweloperów programu Visual Basic, ale istnieją przypadki, gdzie należy napisać dodatkowy kod w celu użycia modele obiektów pakietu Office. Istnieją pewne różnice między podstawowe funkcje programowania, w rozwój pakietu Office i zarządzanego kodu napisanego w języku Visual Basic i C#.
 
+<!-- markdownlint-disable MD003 MD020 -->
 ## <a name="key-differences-between-visual-basic-and-visual-c"></a>Podstawowe różnice między języka Visual Basic i Visual C#
- Poniższej tabeli przedstawiono podstawowe różnice między języka Visual Basic i Visual C# w rozwój pakietu Office.
+<!-- markdownlint-enable MD003 MD020 -->
+
+Poniższej tabeli przedstawiono podstawowe różnice między języka Visual Basic i Visual C# w rozwój pakietu Office.
 
 |Funkcja|Opis|Obsługa języka Visual Basic|Obsługa Visual C#|
 |-------------|-----------------|--------------------------|------------------------|

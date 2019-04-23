@@ -14,12 +14,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 23320b93f0cdafc7cd47ed5b04fcdf66754c4b67
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 864edc3666164ac05d8155fd001d83c5bf515a6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777328"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093296"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>Instrukcje: Zmiana między notacją składowych i notacją skojarzeń (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ W Projektancie klas możesz zmienić sposób diagram klas reprezentuje relacja s
   
 ### <a name="to-change-member-notation-to-association-notation"></a>Aby zmienić notacją składowych i notacją skojarzeń  
   
-1.  W węźle projektu w Eksploratorze rozwiązań Otwórz plik diagramu klasy (.cd).  
+1. W węźle projektu w Eksploratorze rozwiązań Otwórz plik diagramu klasy (.cd).  
   
-2.  Typ kształtu na diagramie klas, kliknij prawym przyciskiem myszy właściwość element członkowski lub pole reprezentujący skojarzenie, a następnie wybierz **wyświetlić jako skojarzenie**.  
+2. Typ kształtu na diagramie klas, kliknij prawym przyciskiem myszy właściwość element członkowski lub pole reprezentujący skojarzenie, a następnie wybierz **wyświetlić jako skojarzenie**.  
   
     > [!TIP]
     >  Jeśli nie właściwości lub pola są widoczne w kształcie typu, mogą być zwinięte przedziałów w kształcie. Aby rozwinąć kształt typu, kliknij dwukrotnie nazwę przedziału lub kliknij prawym przyciskiem myszy kształt typu, a wybierz **rozwiń**.  
@@ -42,7 +42,7 @@ W Projektancie klas możesz zmienić sposób diagram klas reprezentuje relacja s
   
 ### <a name="to-change-association-notation-to-member-notation"></a>Aby zmienić notacją skojarzeń notacją składowych  
   
--   Na diagramie klas kliknij prawym przyciskiem myszy linia skojarzenia, a następnie wybierz **Pokaż jako właściwość** lub **Pokaż jako pole** odpowiednio.  
+- Na diagramie klas kliknij prawym przyciskiem myszy linia skojarzenia, a następnie wybierz **Pokaż jako właściwość** lub **Pokaż jako pole** odpowiednio.  
   
      Linia asocjacji znika, i właściwość pojawią się w odpowiednich przedziału w ramach jego kształt typu na diagramie.  
   
@@ -50,4 +50,4 @@ W Projektancie klas możesz zmienić sposób diagram klas reprezentuje relacja s
  [Instrukcje: Tworzenie dziedziczenia między typami (Projektant klas)](../ide/how-to-create-inheritance-between-types-class-designer.md)   
  [Instrukcje: Wyświetlanie dziedziczenia między typami (Projektant klas)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
  [Wyświetlanie typów i relacji (Projektant klas)](../ide/viewing-types-and-relationships-class-designer.md)   
- [Instrukcje: Wizualizacja skojarzenia kolekcji (Projektant klas)](../ide/how-to-visualize-a-collection-association-class-designer.md)
+ [Instrukcje: Wizualizacja skojarzeń kolekcji (Projektant klas)](../ide/how-to-visualize-a-collection-association-class-designer.md)

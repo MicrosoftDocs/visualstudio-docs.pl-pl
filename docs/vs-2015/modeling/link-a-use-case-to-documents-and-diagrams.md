@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7e6e6bc1cd9794534f13915ffb41956e423e94c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 012ab6828364af155b52bc19d9a83564b2126a6b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795228"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088681"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Łączenie przypadków użycia z dokumentami i diagramami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,45 +40,45 @@ Możesz połączyć przypadek użycia na diagramie przypadku użycia innego diag
   
 ### <a name="to-open-a-document-associated-with-an-artifact"></a>Aby otworzyć dokument skojarzony z artefaktem  
   
--   Na diagramie przypadków użycia kliknij dwukrotnie kształt artefaktu.  
+- Na diagramie przypadków użycia kliknij dwukrotnie kształt artefaktu.  
   
      Powiązany dokument zostanie otwarty.  
   
 ### <a name="to-link-a-use-case-to-a-diagram-or-file-in-the-same-solution"></a>Aby połączyć przypadek użycia na diagramie lub pliku w tym samym rozwiązaniu  
   
-1.  Rysowanie diagramu, takich jak diagram sekwencji lub diagram aktywności, aby zilustrować scenariusza przypadku użycia.  
+1. Rysowanie diagramu, takich jak diagram sekwencji lub diagram aktywności, aby zilustrować scenariusza przypadku użycia.  
   
-2.  Wróć do diagram przypadków użycia.  
+2. Wróć do diagram przypadków użycia.  
   
-3.  Przeciągnij na diagramie lub w pliku z Eksploratora rozwiązań na pustą część diagramu przypadków użycia.  
+3. Przeciągnij na diagramie lub w pliku z Eksploratora rozwiązań na pustą część diagramu przypadków użycia.  
   
-4.  Łączenie z artefaktu do przypadków użycia za pomocą **zależności**.  
+4. Łączenie z artefaktu do przypadków użycia za pomocą **zależności**.  
   
 ### <a name="to-link-to-a-solution-file-such-as-a-word-document-or-powerpoint-presentation"></a>Aby utworzyć łącze do pliku rozwiązania, takie jak dokument programu Word lub prezentacji programu PowerPoint  
   
-1.  Dodaj dokument do rozwiązania.  
+1. Dodaj dokument do rozwiązania.  
   
-    1.  W tym samym folderze Windows jako rozwiązanie, należy przenieść dokument programu Word.  
+    1. W tym samym folderze Windows jako rozwiązanie, należy przenieść dokument programu Word.  
   
-    2.  W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy rozwiązanie, wskaż opcję **Dodaj**, a następnie kliknij przycisk **istniejący element**.  
+    2. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy rozwiązanie, wskaż opcję **Dodaj**, a następnie kliknij przycisk **istniejący element**.  
   
-    3.  Przejdź do dokumentu programu Word, a następnie kliknij przycisk **Dodaj**.  
+    3. Przejdź do dokumentu programu Word, a następnie kliknij przycisk **Dodaj**.  
   
          Dokument programu Word pojawia się w folderze rozwiązania w Eksploratorze rozwiązań.  
   
-2.  Przeciągnij dokument programu Word za pomocą Eksploratora rozwiązań na pustą część diagramu przypadków użycia.  
+2. Przeciągnij dokument programu Word za pomocą Eksploratora rozwiązań na pustą część diagramu przypadków użycia.  
   
      Pojawi się nowy artefaktu.  
   
-3.  Łączenie z artefaktu do przypadków użycia za pomocą **zależności**.  
+3. Łączenie z artefaktu do przypadków użycia za pomocą **zależności**.  
   
 ### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Aby utworzyć łącze do dokumentu udostępnionego, OneNote element lub strony sieci web  
   
-1.  Uzyskaj adres URL udostępniony element. Może to być na przykład początku ścieżki pliku sieci "\\\\", lub strony sieci web lub początkowy adres URL programu Sharepoint "http://" lub łącze do sekcji programu OneNote, strony, akapitu początku "onenote:".  
+1. Uzyskaj adres URL udostępniony element. Może to być na przykład początku ścieżki pliku sieci "\\\\", lub strony sieci web lub początkowy adres URL programu Sharepoint "http://" lub łącze do sekcji programu OneNote, strony, akapitu początku "onenote:".  
   
-2.  W przyborniku kliknij **artefaktu** a następnie kliknij przycisk na diagramie przypadku użycia.  
+2. W przyborniku kliknij **artefaktu** a następnie kliknij przycisk na diagramie przypadku użycia.  
   
-3.  Za pomocą nowego artefaktu wybrane, wpisz lub wklej adres URL do **hiperłącze** właściwości.  
+3. Za pomocą nowego artefaktu wybrane, wpisz lub wklej adres URL do **hiperłącze** właściwości.  
   
     > [!NOTE]
     >  Jeśli chcesz podać ścieżkę do pliku, najlepiej w typowych obszaru roboczego wybierz plik (począwszy od "\\\\"), lub pliku w ramach rozwiązania Visual Studio. Dzięki temu ścieżkę pliku pozostanie prawidłowe dla komputera innego członka zespołu, czy rozwiązanie jest przenoszony. Aby dodać dokument, takie jak dokument programu Word do rozwiązania, kliknij prawym przyciskiem myszy rozwiązanie w Eksploratorze rozwiązań, wskaż opcję **Dodaj** a następnie kliknij przycisk **istniejący element**.  

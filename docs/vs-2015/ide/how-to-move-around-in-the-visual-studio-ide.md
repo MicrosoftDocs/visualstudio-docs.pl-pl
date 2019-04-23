@@ -18,12 +18,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94629a2e64d154313711b3e8968b28959d3341e8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 269b6bba8c832d240813641317b8f0aa61fa0f34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805422"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069515"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Instrukcje: Poruszanie się w środowisku IDE programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,20 +63,20 @@ Zintegrowanego środowiska programistycznego (IDE) został zaprojektowany umożl
 
 #### <a name="to-switch-to-specific-files-in-the-editor"></a>Aby przełączyć się do określonych plików w edytorze
 
--   Naciśnij klawisze CTRL + TAB, aby wyświetlić **Nawigator IDE**. Naciśnij i przytrzymaj klawisz CTRL i naciskaj klawisz TAB dopiero po wybraniu pliku, który chcesz przełączyć się do.
+- Naciśnij klawisze CTRL + TAB, aby wyświetlić **Nawigator IDE**. Naciśnij i przytrzymaj klawisz CTRL i naciskaj klawisz TAB dopiero po wybraniu pliku, który chcesz przełączyć się do.
 
     > [!TIP]
     >  Aby odwrócić kolejność, w którym można przejść przez **aktywnych plików** listy, naciśnij i przytrzymaj klawisze CTRL + SHIFT i naciśnij klawisz TAB.
 
      \- lub —
 
--   W prawym górnym rogu edytora wybierz **aktywnych plików** przycisk, a następnie wybierz plik z listy, aby przełączyć się do.
+- W prawym górnym rogu edytora wybierz **aktywnych plików** przycisk, a następnie wybierz plik z listy, aby przełączyć się do.
 
      \- lub —
 
--   Na pasku menu wybierz **okna**, **Windows**.
+- Na pasku menu wybierz **okna**, **Windows**.
 
--   Na liście, wybierz plik, który chcesz wyświetlić, a następnie wybierz **Aktywuj**.
+- Na liście, wybierz plik, który chcesz wyświetlić, a następnie wybierz **Aktywuj**.
 
 ## <a name="navigating-among-tool-windows-in-the-ide"></a>Nawigacja pomiędzy narzędzie Windows w środowisku IDE
  **Nawigator IDE** również otworzyć pozwala przechodzić do okna narzędzi, masz w środowisku IDE. Jedno z dwóch poleceń uzyskiwać dostęp do **Nawigator IDE** umożliwia przechodzenie między okien narzędzi w zależności od kolejności, w której chcesz przechodzić między. `Window.PreviousToolWindowNav` Umożliwia przeniesienie do pliku, który został ostatnio używane i `Window.NextToolWindowNav` umożliwia przeniesienie w odwrotnej kolejności. Przypisuje ogólnych ustawieniach projektowych, SHIFT + ALT + F7, aby `Window.PreviousDocumentWindowNav` i ALT + F7, aby `Window.NextDocumentWindowNav`.
@@ -86,7 +86,7 @@ Zintegrowanego środowiska programistycznego (IDE) został zaprojektowany umożl
 
 #### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>Aby przełączyć się do okna narzędzi określonych w środowisku IDE
 
--   Naciśnij klawisze ALT + F7, aby wyświetlić **Nawigator IDE**. Naciśnij i przytrzymaj klawisz ALT i naciskaj klawisz F7, dopóki nie wybierzesz okna, które zamierzasz przejdź do.
+- Naciśnij klawisze ALT + F7, aby wyświetlić **Nawigator IDE**. Naciśnij i przytrzymaj klawisz ALT i naciskaj klawisz F7, dopóki nie wybierzesz okna, które zamierzasz przejdź do.
 
     > [!TIP]
     >  Aby odwrócić kolejność, w którym można przejść przez **Active narzędzie Windows** listy, naciśnij i przytrzymaj klawisze ALT + SHIFT i naciśnij klawisz F7.

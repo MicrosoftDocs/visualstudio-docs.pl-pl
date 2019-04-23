@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 53ee0dce825609c13622911d5836f16954fa7a06
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ee29135e659eff7e4965b6b1fb0d24de2c2e90cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769487"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078737"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>Instrukcje: Widok Otwórz komunikatów w Znajdź okno
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,31 +26,31 @@ Może okazać się łatwe w użyciu **Znajdź okno** okno dialogowe, aby wybrać
   
 ### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>Aby otworzyć okno widoku komunikatów za pomocą okna dialogowego Znajdź okno  
   
-1.  Rozmieść aplikacji dla systemu windows, tak że Spy ++ i okno docelowe są widoczne.  
+1. Rozmieść aplikacji dla systemu windows, tak że Spy ++ i okno docelowe są widoczne.  
   
-2.  Z **Spy** menu, wybierz **Znajdź okno**.  
+2. Z **Spy** menu, wybierz **Znajdź okno**.  
   
      [Okna dialogowego Znajdowanie](../debugger/find-window-dialog-box.md) zostanie otwarty.  
   
-3.  Z **Windows** kartę, przeciągnij **Wyszukiwarka** przedziale docelowego. Przeciągnij narzędzie **Znajdź okno** okno dialogowe wyświetla szczegóły wybranego okna.  
+3. Z **Windows** kartę, przeciągnij **Wyszukiwarka** przedziale docelowego. Przeciągnij narzędzie **Znajdź okno** okno dialogowe wyświetla szczegóły wybranego okna.  
   
      — lub —  
   
      Jeśli uchwyt okna, które chcesz zbadać (na przykład, które są kopiowane z debugera), należy wpisać go do **obsługi** pola tekstowego.  
   
-4.  W obszarze **Pokaż**, wybierz opcję **wiadomości**.  
+4. W obszarze **Pokaż**, wybierz opcję **wiadomości**.  
   
-5.  Naciśnij klawisz **OK**.  
+5. Naciśnij klawisz **OK**.  
   
      Blank [widoku komunikatów](../debugger/messages-view.md) zostanie otwarte okno i **wiadomości** menu jest dodawany do programu Spy ++ — pasek narzędzi.  
   
-6.  Z **wiadomości** menu, wybierz **opcje rejestrowania**.  
+6. Z **wiadomości** menu, wybierz **opcje rejestrowania**.  
   
      [Okno dialogowe opcji komunikatów](../debugger/message-options-dialog-box.md) zostanie otwarty.  
   
-7.  Wybierz opcje dla komunikatów, które mają być wyświetlane.  
+7. Wybierz opcje dla komunikatów, które mają być wyświetlane.  
   
-8.  Naciśnij klawisz **OK** aby rozpocząć rejestrowanie komunikatów.  
+8. Naciśnij klawisz **OK** aby rozpocząć rejestrowanie komunikatów.  
   
      W zależności od opcji wybranych wiadomości było rozpocząć przesyłanie strumieniowe do aktywnego okna widoku komunikatów.  
   

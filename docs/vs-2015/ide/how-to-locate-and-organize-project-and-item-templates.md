@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e734100928bdd6a8609ab59d172d278e91b8ae7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1f4788ab9fa23049ded8107fe1d33a9419b79c00
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778529"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091242"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Instrukcje: Znajdź i organizowania projektów i szablonów elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,23 +90,23 @@ Pliki szablonu muszą być umieszczone w rozpoznawaną przez program Visual Stud
   
 ##### <a name="to-create-new-installed-item-template-categories"></a>Aby utworzyć nowy element zainstalowanych kategorii szablonu  
   
-1.  Utwórz folder w folderze język katalogu zainstalowanych szablonów. Na przykład utworzyć kategorię sieci Web dla [!INCLUDE[csprcs](../includes/csprcs-md.md)] elementu szablonów, należy utworzyć następującego katalogu:  
+1. Utwórz folder w folderze język katalogu zainstalowanych szablonów. Na przykład utworzyć kategorię sieci Web dla [!INCLUDE[csprcs](../includes/csprcs-md.md)] elementu szablonów, należy utworzyć następującego katalogu:  
   
      \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\CSharp\1033\Web\  
   
-2.  Umieścić wszystkie szablony dla tej kategorii w nowym folderze.  
+2. Umieścić wszystkie szablony dla tej kategorii w nowym folderze.  
   
-3.  Zamknij wszystkie wystąpienia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Zamknij wszystkie wystąpienia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  Na **Start** menu, kliknij przycisk **Uruchom**, typ **cmd**i kliknij przycisk **OK**.  
+4. Na **Start** menu, kliknij przycisk **Uruchom**, typ **cmd**i kliknij przycisk **OK**.  
   
-5.  W wierszu polecenia, znajdź katalog, który zawiera devenv.exe i typ **devenv/Setup**.  
+5. W wierszu polecenia, znajdź katalog, który zawiera devenv.exe i typ **devenv/Setup**.  
   
-6.  Uruchom [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6. Uruchom [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-7.  Utwórz projekt lub Otwórz istniejący projekt.  
+7. Utwórz projekt lub Otwórz istniejący projekt.  
   
-8.  Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.  
+8. Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.  
   
 9. Sprawdź, czy kategoria sieci Web jest wyświetlana w **Dodaj nowy element** dialogowym **typów projektów** okienka.  
   
@@ -129,30 +129,30 @@ Pliki szablonu muszą być umieszczone w rozpoznawaną przez program Visual Stud
   
 ##### <a name="to-create-new-custom-item-template-categories"></a>Tworzenie nowego niestandardowego elementu kategorii szablonu  
   
-1.  Utwórz folder w folderze język w katalogu szablonu niestandardowego elementu. Na przykład utworzyć kategorię HelloWorld [!INCLUDE[csprcs](../includes/csprcs-md.md)] szablonów należy utworzyć następującego katalogu:  
+1. Utwórz folder w folderze język w katalogu szablonu niestandardowego elementu. Na przykład utworzyć kategorię HelloWorld [!INCLUDE[csprcs](../includes/csprcs-md.md)] szablonów należy utworzyć następującego katalogu:  
   
      \My Documents\\<Visual Studio version\>\Templates\ItemTemplates\CSharp\HelloWorld\  
   
-2.  Umieścić wszystkie szablony dla tej kategorii w nowym folderze.  
+2. Umieścić wszystkie szablony dla tej kategorii w nowym folderze.  
   
-3.  Utwórz projekt lub Otwórz istniejący projekt.  
+3. Utwórz projekt lub Otwórz istniejący projekt.  
   
-4.  Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.  
+4. Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.  
   
-5.  Sprawdź, czy kategoria HelloWorld znajduje się w **Dodaj nowy element** dialogowym **typów projektów** okienka.  
+5. Sprawdź, czy kategoria HelloWorld znajduje się w **Dodaj nowy element** dialogowym **typów projektów** okienka.  
   
 ### <a name="displaying-templates-in-parent-categories"></a>Wyświetlanie szablonów w kategorii nadrzędnych  
  Możesz włączyć szablonów w podkategorii, które mają być wyświetlane w ich kategorii nadrzędnych przy użyciu `NumberOfParentCategoriesToRollUp` elementu w pliku .vstemplate. Te kroki są identyczne dla szablonów projektów i szablonów elementów.  
   
 ##### <a name="to-display-templates-in-parent-categories"></a>Aby wyświetlić szablony w kategorii nadrzędnych  
   
-1.  Zlokalizuj plik .zip zawierający szablon.  
+1. Zlokalizuj plik .zip zawierający szablon.  
   
-2.  Wyodrębnij plik zip.  
+2. Wyodrębnij plik zip.  
   
-3.  Otwórz plik .vstemplate w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Otwórz plik .vstemplate w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  W `TemplateData` elementu Dodawanie `NumberOfParentCategoriesToRollUp` elementu. Na przykład poniższy kod powoduje, że szablon widoczne w kategorii nadrzędnej, ale nie jest wyższa.  
+4. W `TemplateData` elementu Dodawanie `NumberOfParentCategoriesToRollUp` elementu. Na przykład poniższy kod powoduje, że szablon widoczne w kategorii nadrzędnej, ale nie jest wyższa.  
   
     ```  
     <TemplateData>  
@@ -164,17 +164,17 @@ Pliki szablonu muszą być umieszczone w rozpoznawaną przez program Visual Stud
     </TemplateData>  
     ```  
   
-5.  Zapisz i zamknij plik .vstemplate.  
+5. Zapisz i zamknij plik .vstemplate.  
   
-6.  Wybierz pliki do szablonu, kliknij prawym przyciskiem myszy zaznaczenie, kliknij przycisk **Wyślij do**, a następnie kliknij przycisk **skompresowany Folder (zip)**. Pliki są kompresowane w pliku zip.  
+6. Wybierz pliki do szablonu, kliknij prawym przyciskiem myszy zaznaczenie, kliknij przycisk **Wyślij do**, a następnie kliknij przycisk **skompresowany Folder (zip)**. Pliki są kompresowane w pliku zip.  
   
-7.  Usuń pliki szablonów wyodrębniony i stary plik zip szablonu.  
+7. Usuń pliki szablonów wyodrębniony i stary plik zip szablonu.  
   
-8.  W katalogu zawierającego plik zip usunięte, należy umieścić nowy plik zip.  
+8. W katalogu zawierającego plik zip usunięte, należy umieścić nowy plik zip.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)   
  [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
  [NumberOfParentCategoriesToRollUp (szablony Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)   
  [Instrukcje: Create Project Templates](../ide/how-to-create-project-templates.md)   
- [Instrukcje: Tworzenie szablonów elementu](../ide/how-to-create-item-templates.md)
+ [Instrukcje: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md)

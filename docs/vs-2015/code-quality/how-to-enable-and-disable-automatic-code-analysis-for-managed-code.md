@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 451afe75d71969b4a4a866fc9a7cda1fd85562d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4f5de2926cb38f570defa95463489523c694132
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764537"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079074"
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Instrukcje: Włączanie i wyłączanie automatycznej analizy kodu dla kodu zarządzanego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,10 +23,10 @@ Można skonfigurować analizy kodu do uruchomienia przed każdej kompilacji proj
   
 ### <a name="to-enable-or-disable-automatic-code-analysis"></a>Włączanie lub wyłączanie automatycznej analizy kodu  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **właściwości**.  
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **właściwości**.  
   
-2.  W oknie dialogowym właściwości projektu, kliknij przycisk **analizy kodu**.  
+2. W oknie dialogowym właściwości projektu, kliknij przycisk **analizy kodu**.  
   
-3.  Określ typ kompilacji w **konfiguracji** i platformy docelowej w **platformy**.  
+3. Określ typ kompilacji w **konfiguracji** i platformy docelowej w **platformy**.  
   
-4.  Aby włączyć lub wyłączyć automatycznej analizy kodu, zaznacz lub wyczyść **Włącz analizę kodu podczas kompilacji (definiuje stałą CODE_ANALYSIS)** pole wyboru.
+4. Aby włączyć lub wyłączyć automatycznej analizy kodu, zaznacz lub wyczyść **Włącz analizę kodu podczas kompilacji (definiuje stałą CODE_ANALYSIS)** pole wyboru.

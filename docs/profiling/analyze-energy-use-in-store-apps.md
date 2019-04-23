@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: dd28e0f2455e1a6ed866d879ec347082e9302c3a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e16261020a737651fc79c3fb3eb1da6a539cee34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790436"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078775"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analizowanie zużycia energii w aplikacjach platformy uniwersalnej systemu Windows
 
@@ -88,18 +88,18 @@ if (performance && performance.mark) {
 
 ## <a name="collect-energy-profile-data-for-your-app"></a>Zbieranie danych profilu energetycznego aplikacji
 
-1.  Na **debugowania** menu, wybierz **Rozpocznij diagnostyczne bez debugowania**.
+1. Na **debugowania** menu, wybierz **Rozpocznij diagnostyczne bez debugowania**.
 
      ![Wybierz zużycie energii w Centrum diagnostyki](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
-2.  Wybierz **zużycie energii** , a następnie wybierz **Start**.
+2. Wybierz **zużycie energii** , a następnie wybierz **Start**.
 
     > [!NOTE]
     > Po uruchomieniu **zużycie energii** profilera, może zostać wyświetlony **Kontrola konta użytkownika** okno z żądaniem udzielenia uprawnienia do uruchamiania *VsEtwCollector.exe*. Wybierz **tak**.
 
-3.  Zbadaj aplikację w celu zebrania danych.
+3. Zbadaj aplikację w celu zebrania danych.
 
-4.  Aby zatrzymać profilowanie, przełącz się do programu Visual Studio (Alt + Tab) i wybierz polecenie **Zatrzymaj Kolekcjonowanie** na stronie Centrum diagnostyki.
+4. Aby zatrzymać profilowanie, przełącz się do programu Visual Studio (Alt + Tab) i wybierz polecenie **Zatrzymaj Kolekcjonowanie** na stronie Centrum diagnostyki.
 
      ![Zatrzymaj zbieranie danych](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")
 

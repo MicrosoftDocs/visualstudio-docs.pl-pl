@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a5343fc177afce6baa6d9f4727d118606cc1b57
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 85a4356837180d13428acf34636f28cca668a423
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415970"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063156"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Instrukcje: Rozszerzanie projektanta języka specyficznego dla domeny
 
@@ -26,23 +26,23 @@ Skonfiguruj projekt, który zawiera kod rozszerzenia, a projekt VSIX, które eks
 
 ### <a name="to-create-a-dsl-designer-extension-solution"></a>Aby utworzyć rozwiązanie rozszerzenia projektanta DSL
 
-1.  Utwórz nowy projekt za pomocą **biblioteki klas** szablonu projektu. Projekt ten będzie zawierał kod rozszerzenia.
+1. Utwórz nowy projekt za pomocą **biblioteki klas** szablonu projektu. Projekt ten będzie zawierał kod rozszerzenia.
 
-2.  Utwórz nową **projekt VSIX** projektu.
+2. Utwórz nową **projekt VSIX** projektu.
 
      Wybierz **Dodaj do rozwiązania**.
 
      *Source.Extension.vsixmanifest* zostanie otwarty w edytorze manifestu VSIX.
 
-3.  Powyżej pola zawartość, kliknij przycisk **Dodaj zawartość**.
+3. Powyżej pola zawartość, kliknij przycisk **Dodaj zawartość**.
 
-4.  W **Dodaj zawartość** okno dialogowe, zestaw **wybierz typ zawartości** do **składnik MEF**i ustaw **projektu** do projektu biblioteki klas.
+4. W **Dodaj zawartość** okno dialogowe, zestaw **wybierz typ zawartości** do **składnik MEF**i ustaw **projektu** do projektu biblioteki klas.
 
-5.  Kliknij przycisk **Wybierz wersje** i upewnij się, że **programu Visual Studio Enterprise** jest zaznaczone.
+5. Kliknij przycisk **Wybierz wersje** i upewnij się, że **programu Visual Studio Enterprise** jest zaznaczone.
 
-6.  Upewnij się, że projekt VSIX jest projektem startowym rozwiązania.
+6. Upewnij się, że projekt VSIX jest projektem startowym rozwiązania.
 
-7.  W projekcie biblioteki klas Dodaj odwołania do następujących zestawów:
+7. W projekcie biblioteki klas Dodaj odwołania do następujących zestawów:
 
      Microsoft.VisualStudio.CoreUtility
 
@@ -68,17 +68,17 @@ Aby przetestować jakiegokolwiek rozszerzenia, w tym temacie, tworzenie i urucha
 
 Aby wdrożyć rozszerzeń do głównego programu Visual Studio, a także na innych komputerach, wykonaj następujące kroki:
 
-1.  Znajdź plik VSIX instalacji w projekcie VSIX bin\\*\*\\\*.vsix
+1. Znajdź plik VSIX instalacji w projekcie VSIX bin\\*\*\\\*.vsix
 
-2.  Skopiuj ten plik do komputera docelowego, a następnie w Eksploratorze Windows (lub Eksploratora plików), kliknij go dwukrotnie.
+2. Skopiuj ten plik do komputera docelowego, a następnie w Eksploratorze Windows (lub Eksploratora plików), kliknij go dwukrotnie.
 
      Otwiera Menedżera rozszerzeń programu Visual Studio, aby upewnić się, że rozszerzenie zostało zainstalowane.
 
 Aby odinstalować rozszerzenie, wykonaj następujące kroki:
 
-1.  W programie Visual Studio na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.
+1. W programie Visual Studio na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.
 
-2.  Zaznacz rozszerzenie, a następnie usuń go.
+2. Zaznacz rozszerzenie, a następnie usuń go.
 
 ## <a name="add-a-shortcut-menu-command"></a>Dodaj polecenie Menu skrótów
 

@@ -13,12 +13,12 @@ ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4f0fa6e59b8baa32fefffea7aa4810d688340467
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab4389c936b71ba8ccbb21b22d0a5e533282026d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796745"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067446"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Obszar testowy 3: Zapoznaj się z / Cofnij wyewidencjonowanie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ Ten obszar testowy wtyczki kontroli źródła obejmuje edycji oraz przywracanie 
   
 ##### <a name="check-out"></a>Wymelduj się:  
   
--   **Plik**, **kontroli źródła**, **zapoznaj się z**.  
+- **Plik**, **kontroli źródła**, **zapoznaj się z**.  
   
--   **Plik**, **zapoznaj się z**.  
+- **Plik**, **zapoznaj się z**.  
   
--   Menu skrótów **zapoznaj się z**.  
+- Menu skrótów **zapoznaj się z**.  
   
--   Cofnij wyewidencjonowanie: **Plik**, **kontroli źródła**, **Cofnij wyewidencjonowanie**.  
+- Cofnij wyewidencjonowanie: **Plik**, **kontroli źródła**, **Cofnij wyewidencjonowanie**.  
   
 ## <a name="common-expected-behavior"></a>Typowe oczekiwane zachowanie.  
   
--   Po operacji wyewidencjonowania plików docelowych i/lub foldery są oznaczone jako wyewidencjonowane z magazynu wersji.  
+- Po operacji wyewidencjonowania plików docelowych i/lub foldery są oznaczone jako wyewidencjonowane z magazynu wersji.  
   
--   Magazyn wersji atrybuty wyewidencjonowanie do odpowiednich użytkowników.  
+- Magazyn wersji atrybuty wyewidencjonowanie do odpowiednich użytkowników.  
   
--   Data i Godzina wyewidencjonowania są prawidłowe (ustawienia dla każdego użytkownika).  
+- Data i Godzina wyewidencjonowania są prawidłowe (ustawienia dla każdego użytkownika).  
   
 ## <a name="test-cases"></a>Przypadki testowe  
  Poniżej przedstawiono określonych przypadków testowych dla obszaru testu wyewidencjonowania/cofnięcie wyewidencjonowania.  
@@ -72,11 +72,11 @@ Ten obszar testowy wtyczki kontroli źródła obejmuje edycji oraz przywracanie 
   
 #### <a name="expected-behavior"></a>Oczekiwane zachowanie  
   
--   Nie można użyć **Sprawdź się wyłącznie** polecenia bez połączenia z magazynu wersji.  
+- Nie można użyć **Sprawdź się wyłącznie** polecenia bez połączenia z magazynu wersji.  
   
--   Nie można użyć **Cofnij wyewidencjonowanie** polecenia bez połączenia z magazynu wersji.  
+- Nie można użyć **Cofnij wyewidencjonowanie** polecenia bez połączenia z magazynu wersji.  
   
--   **Udostępnione Wyewidencjonuj** polecenie działa.  
+- **Udostępnione Wyewidencjonuj** polecenie działa.  
   
 |Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|  
 |------------|----------------|--------------------------------|  
@@ -87,13 +87,13 @@ Ten obszar testowy wtyczki kontroli źródła obejmuje edycji oraz przywracanie 
   
 #### <a name="expected-behavior"></a>Oczekiwane zachowanie  
   
--   Po operacji wyewidencjonowania plików docelowych i/lub foldery są oznaczone jako wyewidencjonowane z magazynu wersji.  
+- Po operacji wyewidencjonowania plików docelowych i/lub foldery są oznaczone jako wyewidencjonowane z magazynu wersji.  
   
--   Magazyn wersji atrybuty wyewidencjonowanie do odpowiednich użytkowników.  
+- Magazyn wersji atrybuty wyewidencjonowanie do odpowiednich użytkowników.  
   
--   Data i godzina wyewidencjonowanie są prawidłowe (ustawienia dla każdego użytkownika).  
+- Data i godzina wyewidencjonowanie są prawidłowe (ustawienia dla każdego użytkownika).  
   
--   Lokalna kopia pliku lub folderu docelowego jest zapisywalna.  
+- Lokalna kopia pliku lub folderu docelowego jest zapisywalna.  
   
 |Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|  
 |------------|----------------|--------------------------------|  
@@ -106,13 +106,13 @@ Ten obszar testowy wtyczki kontroli źródła obejmuje edycji oraz przywracanie 
   
 #### <a name="expected-behavior"></a>Oczekiwane zachowanie  
   
--   Po operacji wyewidencjonowania plików docelowych i/lub foldery są oznaczone jako wyewidencjonowane z magazynu wersji.  
+- Po operacji wyewidencjonowania plików docelowych i/lub foldery są oznaczone jako wyewidencjonowane z magazynu wersji.  
   
--   Magazyn wersji atrybuty wyewidencjonowanie do odpowiednich użytkowników.  
+- Magazyn wersji atrybuty wyewidencjonowanie do odpowiednich użytkowników.  
   
--   Data i godzina wyewidencjonowanie jest poprawny (ustawienia dla każdego użytkownika).  
+- Data i godzina wyewidencjonowanie jest poprawny (ustawienia dla każdego użytkownika).  
   
--   Lokalna kopia pliku lub folderu docelowego jest zapisywalna.  
+- Lokalna kopia pliku lub folderu docelowego jest zapisywalna.  
   
 |Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|  
 |------------|----------------|--------------------------------|  
@@ -124,9 +124,9 @@ Ten obszar testowy wtyczki kontroli źródła obejmuje edycji oraz przywracanie 
   
 #### <a name="expected-behavior"></a>Oczekiwane zachowanie  
   
--   Wartość domyślna jest podstawą użytkownika **zapoznaj się z lokalną wersją** ustawienie. Jeśli użytkownik wybierze zapoznaj się z lokalną wersją, wartość domyślna dla cofnięcie wyewidencjonowania jest zawsze wracają do wersji wyewidencjonowany.  
+- Wartość domyślna jest podstawą użytkownika **zapoznaj się z lokalną wersją** ustawienie. Jeśli użytkownik wybierze zapoznaj się z lokalną wersją, wartość domyślna dla cofnięcie wyewidencjonowania jest zawsze wracają do wersji wyewidencjonowany.  
   
--   Po zaakceptowaniu cofania, ikony w **Eksploratora rozwiązań** są aktualizowane, dla których to dotyczy plików, a element zostanie usunięty z **oczekujące elementy do zaewidencjonowania** okna.  
+- Po zaakceptowaniu cofania, ikony w **Eksploratora rozwiązań** są aktualizowane, dla których to dotyczy plików, a element zostanie usunięty z **oczekujące elementy do zaewidencjonowania** okna.  
   
 |Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|  
 |------------|----------------|--------------------------------|  

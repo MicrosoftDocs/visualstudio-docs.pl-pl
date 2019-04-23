@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ce968e53dc00cd46d27154f4c6217fcc815ade1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2f631e8639c1004fa2cb005da3b6c8bcb27f1a9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771910"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076513"
 ---
 # <a name="how-to-specify-the-net-framework-runtime"></a>Instrukcje: Określanie środowiska wykonawczego .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,30 +26,30 @@ Wraz z wydaniem [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)], aplika
   
  **Wymagania**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ### <a name="to-specify-the-net-framework-run-time-to-profile-when-starting-an-application-with-the-profiler"></a>Aby określić środowiska wykonawczego .NET Framework do profilowania, podczas uruchamiania aplikacji przy użyciu profilera  
   
-1.  W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy sesję wydajności, kliknij przycisk **właściwości**, a następnie kliknij przycisk **zaawansowane**.  
+1. W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy sesję wydajności, kliknij przycisk **właściwości**, a następnie kliknij przycisk **zaawansowane**.  
   
      **Docelowa wersja środowiska CLR** liście wyświetlane są **automatyczne** oraz wersje [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] środowiska uruchomieniowego, które są zainstalowane na komputerze.  
   
-2.  Wykonaj jedną z następujących czynności:  
+2. Wykonaj jedną z następujących czynności:  
   
-    -   Kliknij wersję środowiska CLR, które powinny być profilowane.  
+    - Kliknij wersję środowiska CLR, które powinny być profilowane.  
   
-    -   Kliknij przycisk **automatyczne** profilowanie pierwszej wersji, który jest ładowany przez aplikację.  
+    - Kliknij przycisk **automatyczne** profilowanie pierwszej wersji, który jest ładowany przez aplikację.  
   
 ### <a name="to-specify-the-net-framework-run-time-to-profile-when-attaching-the-profiler-to-an-application"></a>Aby określić środowiska wykonawczego .NET Framework do profilowania, podczas dołączania profilera do aplikacji  
   
-1.  W menu Analizuj wskaż Profiler, a następnie kliknij przycisk Attach/Detach.  
+1. W menu Analizuj wskaż Profiler, a następnie kliknij przycisk Attach/Detach.  
   
-2.  Na dołączyć Profiler do procesu, okno dialogowe kliknij proces, który chcesz profilować.  
+2. Na dołączyć Profiler do procesu, okno dialogowe kliknij proces, który chcesz profilować.  
   
      **Docelowa wersja środowiska CLR** pole z listy s **automatyczne** oraz wersje [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] środowiska uruchomieniowego, które są zainstalowane na komputerze.  
   
-3.  Wykonaj jedną z następujących czynności:  
+3. Wykonaj jedną z następujących czynności:  
   
-    -   Kliknij wersję środowiska CLR, które powinny być profilowane.  
+    - Kliknij wersję środowiska CLR, które powinny być profilowane.  
   
-    -   Kliknij przycisk **automatyczne** do profilowania, wersji, który jest ładowany, gdy program profilujący jest dołączony do aplikacji.
+    - Kliknij przycisk **automatyczne** do profilowania, wersji, który jest ładowany, gdy program profilujący jest dołączony do aplikacji.

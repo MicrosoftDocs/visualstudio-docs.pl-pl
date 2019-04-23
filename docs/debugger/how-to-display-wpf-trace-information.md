@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ec8a759ebdb895b43fb34e06378c772b2a5ad5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 55b818940a8e2a779c7bbc0e17dec5cd891a2d88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719512"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091398"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Instrukcje: Wyświetlanie informacji o śledzeniu WPF
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] można otrzymywać informacje o śledzeniu debugowania aplikacji WPF i wyświetlić te informacje w **dane wyjściowe** okna. Aby wyświetlić informacje o śledzeniu debugowania, można włączyć śledzenie WPF.
@@ -30,23 +30,23 @@ ms.locfileid: "56719512"
 
 ### <a name="to-enable-or-customize-wpf-trace-information"></a>Aby włączyć lub dostosować informacje o śledzeniu WPF
 
-1.  Na **narzędzia** menu, wybierz opcję **opcje**.
+1. Na **narzędzia** menu, wybierz opcję **opcje**.
 
-2.  W **opcje** otwarte okno dialogowe, w polu po lewej stronie, **debugowanie** węzła.
+2. W **opcje** otwarte okno dialogowe, w polu po lewej stronie, **debugowanie** węzła.
 
-3.  W obszarze **debugowanie**, kliknij przycisk **okno danych wyjściowych**.
+3. W obszarze **debugowanie**, kliknij przycisk **okno danych wyjściowych**.
 
-4.  W obszarze **ogólne ustawienia danych wyjściowych**, wybierz opcję **wszystkie dane wyjściowe debugowania**.
+4. W obszarze **ogólne ustawienia danych wyjściowych**, wybierz opcję **wszystkie dane wyjściowe debugowania**.
 
-5.  W polu po prawej stronie Wyszukaj **ustawienia śledzenia WPF**.
+5. W polu po prawej stronie Wyszukaj **ustawienia śledzenia WPF**.
 
-6.  Otwórz **ustawienia śledzenia WPF** węzła.
+6. Otwórz **ustawienia śledzenia WPF** węzła.
 
-7.  W obszarze **ustawienia śledzenia WPF**, kliknij kategorię ustawień, które chcesz włączyć (na przykład **powiązanie danych**).
+7. W obszarze **ustawienia śledzenia WPF**, kliknij kategorię ustawień, które chcesz włączyć (na przykład **powiązanie danych**).
 
      Kontrolka listy rozwijanej pojawia się w kolumnie ustawień obok **powiązanie danych** lub kliknięty niezależnie od kategorii.
 
-8.  Kliknij przycisk listy rozwijanej i wybierz typ informacji śledzenia, które mają być wyświetlane: **Wszystkie**, **krytyczne**, **błąd**, **ostrzeżenie**, **informacji**, **pełne**, lub **ActivityTracing**.
+8. Kliknij przycisk listy rozwijanej i wybierz typ informacji śledzenia, które mają być wyświetlane: **Wszystkie**, **krytyczne**, **błąd**, **ostrzeżenie**, **informacji**, **pełne**, lub **ActivityTracing**.
 
      **Krytyczne** umożliwia śledzenie tylko zdarzenia krytyczne.
 
@@ -66,23 +66,23 @@ ms.locfileid: "56719512"
 
 ### <a name="to-disable-wpf-trace-information"></a>Aby wyłączyć informacji o śledzeniu WPF
 
-1.  Na **narzędzia** menu, wybierz opcję **opcje**.
+1. Na **narzędzia** menu, wybierz opcję **opcje**.
 
-2.  W **opcje** otwarte okno dialogowe, w polu po lewej stronie, **debugowanie** węzła.
+2. W **opcje** otwarte okno dialogowe, w polu po lewej stronie, **debugowanie** węzła.
 
-3.  W obszarze **debugowanie**, kliknij przycisk **okno danych wyjściowych**.
+3. W obszarze **debugowanie**, kliknij przycisk **okno danych wyjściowych**.
 
-4.  W polu po prawej stronie Wyszukaj **ustawienia śledzenia WPF**.
+4. W polu po prawej stronie Wyszukaj **ustawienia śledzenia WPF**.
 
-5.  Otwórz **ustawienia śledzenia WPF** węzła.
+5. Otwórz **ustawienia śledzenia WPF** węzła.
 
-6.  W obszarze **ustawienia śledzenia WPF**, kliknij kategorię ustawień, które chcesz włączyć (na przykład **powiązanie danych**).
+6. W obszarze **ustawienia śledzenia WPF**, kliknij kategorię ustawień, które chcesz włączyć (na przykład **powiązanie danych**).
 
      Kontrolka listy rozwijanej pojawia się w kolumnie ustawień obok **powiązanie danych** lub kliknięty niezależnie od kategorii.
 
-7.  Kliknij przycisk listy rozwijanej i wybierz **poza**.
+7. Kliknij przycisk listy rozwijanej i wybierz **poza**.
 
-8.  Kliknij przycisk **OK**.
+8. Kliknij przycisk **OK**.
 
 ## <a name="see-also"></a>Zobacz też
 - [Debugowanie WPF](../debugger/debugging-wpf.md)

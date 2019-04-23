@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 59ee47f8971278e1be9714e8ee4e70911f612d52
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8b67296dc4ad77977ce6ba0399e9d9b4207e2c7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335093"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088668"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Uwzględnione pakietu NuGet w projekcie
 
@@ -77,9 +77,9 @@ Kliknij prawym przyciskiem myszy **pakietów** dostęp do menu kontekstowego:
 
 ![Menu pakietów](media/nuget-walkthrough-PackagesMenu.png)
 
-*   **Dodaj pakiety** — powoduje otwarcie okna, aby dodać więcej pakietów do projektu.
-*   **Aktualizacja** — sprawdza, czy serwer źródłowy dla każdego pakietu i pobiera wszystkie nowsze wersje.
-*   **Przywróć** — pliki do pobrania wszystkie brakujące pakiety (bez aktualizowania istniejące pakiety do nowszych wersji).
+* **Dodaj pakiety** — powoduje otwarcie okna, aby dodać więcej pakietów do projektu.
+* **Aktualizacja** — sprawdza, czy serwer źródłowy dla każdego pakietu i pobiera wszystkie nowsze wersje.
+* **Przywróć** — pliki do pobrania wszystkie brakujące pakiety (bez aktualizowania istniejące pakiety do nowszych wersji).
 
 Aktualizacja opcje przywracania są również dostępne na poziomie rozwiązania i wpływają na wszystkie projekty w rozwiązaniu.
 
@@ -87,9 +87,9 @@ Użytkownik może również kliknij prawym przyciskiem myszy poszczególnych pak
 
 ![Menu pakietów](media/nuget-walkthrough-PackageMenu.png)
 
-*   **Numer wersji** — numer wersji jest wyłączonego elementu menu — jest ona udostępniana tylko w celach informacyjnych.
-*   **Aktualizacja** — sprawdza, czy serwer źródłowy i pliki do pobrania jest nowsza wersja (jeśli istnieje).
-*   **Usuń** — usuwa pakiet z tego projektu i usunięcie odpowiednich zestawów z odwołaniami do projektów.
+* **Numer wersji** — numer wersji jest wyłączonego elementu menu — jest ona udostępniana tylko w celach informacyjnych.
+* **Aktualizacja** — sprawdza, czy serwer źródłowy i pliki do pobrania jest nowsza wersja (jeśli istnieje).
+* **Usuń** — usuwa pakiet z tego projektu i usunięcie odpowiednich zestawów z odwołaniami do projektów.
 
 ## <a name="adding-package-sources"></a>Dodawanie źródła pakietów
 

@@ -20,12 +20,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c698b84ec3af759a4c276e0129e628abba9212f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c60405331ebab909e8056d4800bd43b208c92493
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803371"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087147"
 ---
 # <a name="uml-activity-diagrams-reference"></a>Diagramy aktywności UML: Tematy pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ ms.locfileid: "54803371"
 |13|**Wysłanie sygnału**|Akcja, która wysyła wiadomości lub sygnał do kolejnego działania lub współbieżnych wątków w ramach tego samego działania. Typ i treść wiadomości jest implikowane według tytułu akcji albo określony w dodatkowe uwagi.<br /><br /> Akcję można wysłać danych sygnał, który może być przekazywany do akcji w usłudze flow obiektu lub wprowadzania numeru pin (16).|  
 |14|**Zaakceptuj akcję zdarzenia**|Akcja, która czeka na komunikat lub sygnał, zanim będzie można kontynuować działania. Typ komunikatu, które mogą odbierać akcji jest implikowana przez tytuł lub określone dodatkowe uwagi.<br /><br /> Jeśli akcja nie przychodzącego przepływu sterowania, tworzy token po każdym odebraniu komunikatu.<br /><br /> Działania mogą odbierać dane w sygnał, który mogą być przekazany obiekt przepływ danych wyjściowych lub numer PIN (17).<br /><br /> -   **IsUnmarshall** — Jeśli to ustawienie ma wartość true, może istnieć kilka PinY wyjściowe wpisane, a dane są unmarshalled na nich. Jeśli wartość to false, wszystkie dane jest wyświetlany na jeden kod pin.|  
   
-###  <a name="DataFlow"></a> Przepływ danych  
+### <a name="DataFlow"></a> Przepływ danych  
  Możesz opisać przepływu danych w ramach jednej akcji. Aby uzyskać więcej informacji na temat elementów używanych w tej sekcji zamieszczono Rysowanie diagramu aktywności sekcji rysowania dane przepływają w temacie wytycznych.  
   
  ![Diagram działania pokazujący przepływ danych](../modeling/media/uml-actovdata.png "UML_ActOvData")  
@@ -101,4 +101,4 @@ ms.locfileid: "54803371"
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md)
+ [Diagramy aktywności UML: wskazówki](../modeling/uml-activity-diagrams-guidelines.md)

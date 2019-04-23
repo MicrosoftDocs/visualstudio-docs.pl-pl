@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2a4e9075bc45c052f28ee4a20e34c16651211a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1c346cc488966448cc1b77b624c80fe602555840
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782260"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088798"
 ---
 # <a name="customizing-the-properties-window"></a>Dostosowywanie okna właściwości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,13 +51,13 @@ W języku specyficznym dla domeny (DSL) można dostosować wygląd i zachowanie 
 ### <a name="default-property-forwarding-cases"></a>Domyślna właściwość przekazywania przypadków  
  Gdy użytkownik wybierze kształtu lub łącznika lub element w Eksploratorze, następujące właściwości są wyświetlane w oknie dialogowym właściwości:  
   
--   Właściwości domeny, które są zdefiniowane dla klasy domeny elementu modelu, w tym te, które są zdefiniowane w klasach bazowych. Wyjątek stanowi właściwości domeny, dla których ustawiono **jest możliwa do przeglądania** do `False`.  
+- Właściwości domeny, które są zdefiniowane dla klasy domeny elementu modelu, w tym te, które są zdefiniowane w klasach bazowych. Wyjątek stanowi właściwości domeny, dla których ustawiono **jest możliwa do przeglądania** do `False`.  
   
--   Nazwy elementów, które są połączone za pośrednictwem relacje, które mają liczebność 0.. 1. To zapewnia wygodny sposób wyświetlania opcjonalnie połączone elementy, nawet jeśli nie zdefiniowano mapowanie łącznika dla relacji.  
+- Nazwy elementów, które są połączone za pośrednictwem relacje, które mają liczebność 0.. 1. To zapewnia wygodny sposób wyświetlania opcjonalnie połączone elementy, nawet jeśli nie zdefiniowano mapowanie łącznika dla relacji.  
   
--   Właściwości domeny relacji osadzania, który jest przeznaczony dla elementu. Ponieważ relacji osadzania zwykle nie są wyświetlane jawnie, dzięki temu użytkownik widzi ich właściwości.  
+- Właściwości domeny relacji osadzania, który jest przeznaczony dla elementu. Ponieważ relacji osadzania zwykle nie są wyświetlane jawnie, dzięki temu użytkownik widzi ich właściwości.  
   
--   Właściwości domeny, które są zdefiniowane dla wybranego kształtu lub łącznika.  
+- Właściwości domeny, które są zdefiniowane dla wybranego kształtu lub łącznika.  
   
 ### <a name="adding-property-forwarding"></a>Dodawanie właściwości przekazywania  
  Aby przesłać dalej właściwość, należy zdefiniować deskryptor typu domeny. Jeśli masz relacją domeny między dwoma klasami domeny, można użyć deskryptor typu domeny można ustawić właściwości domeny w pierwszej klasie do wartości właściwości domeny w drugim klasy domeny. Na przykład, jeśli mają relację między **książki** klasy domeny i **Autor** klasy domeny, można użyć deskryptor typu domeny się **nazwa** właściwość Książki **Autor** są wyświetlane w oknie dialogowym właściwości, gdy użytkownik wybierze książki.  
@@ -69,29 +69,29 @@ W języku specyficznym dla domeny (DSL) można dostosować wygląd i zachowanie 
   
 ##### <a name="to-forward-a-property-from-another-element"></a>Aby przekazywać właściwości z innego elementu  
   
-1.  Tworzenie [!INCLUDE[dsl](../includes/dsl-md.md)] rozwiązanie, które zawiera co najmniej dwóch klas, które w tym przykładzie są nazywane **książki** i **Autor**. Powinna istnieć relacja dowolnego rodzaju między **książki** i **Autor**.  
+1. Tworzenie [!INCLUDE[dsl](../includes/dsl-md.md)] rozwiązanie, które zawiera co najmniej dwóch klas, które w tym przykładzie są nazywane **książki** i **Autor**. Powinna istnieć relacja dowolnego rodzaju między **książki** i **Autor**.  
   
      Liczebność roli źródłowej (roli na **książki** po stronie) powinna być od 0 do 1 lub 1.. 1, dlatego każdy **książki** ma jeden **Autor**.  
   
-2.  W **Eksplorator DSL**, kliknij prawym przyciskiem myszy **książki** klasy domeny, a następnie kliknij **Dodaj nowy element DomainTypeDescriptor**.  
+2. W **Eksplorator DSL**, kliknij prawym przyciskiem myszy **książki** klasy domeny, a następnie kliknij **Dodaj nowy element DomainTypeDescriptor**.  
   
      Węzeł o nazwie **ścieżki niestandardowe deskryptorów właściwości** pojawia się w obszarze **deskryptorze typu niestandardowego** węzła.  
   
-3.  Kliknij prawym przyciskiem myszy **deskryptorze typu niestandardowego** węzłem, a następnie kliknij przycisk **dodać nowy atrybut PropertyPath**.  
+3. Kliknij prawym przyciskiem myszy **deskryptorze typu niestandardowego** węzłem, a następnie kliknij przycisk **dodać nowy atrybut PropertyPath**.  
   
      Nową ścieżkę właściwość pojawia się w obszarze **ścieżki niestandardowe deskryptorów właściwości** węzła.  
   
-4.  Wybierz nową ścieżkę właściwości, a następnie w **właściwości** oknie **ścieżka do właściwości** do ścieżki elementu odpowiedniego modelu.  
+4. Wybierz nową ścieżkę właściwości, a następnie w **właściwości** oknie **ścieżka do właściwości** do ścieżki elementu odpowiedniego modelu.  
   
      Ścieżka w widoku drzewa można edytować, klikając strzałkę w dół po prawej stronie tej właściwości. Aby uzyskać więcej informacji na temat ścieżek domeny Zobacz [składnia ścieżki domeny](../modeling/domain-path-syntax.md). Po zakończeniu edycji go, ścieżka powinna przypominać przedstawioną **BookReferencesAuthor.Author/! Autor**.  
   
-5.  Ustaw **właściwość** do **nazwa** właściwość domeny **Autor**.  
+5. Ustaw **właściwość** do **nazwa** właściwość domeny **Autor**.  
   
-6.  Ustaw **nazwy wyświetlanej** do **nazwę autora**.  
+6. Ustaw **nazwy wyświetlanej** do **nazwę autora**.  
   
-7.  Transformuj wszystkie szablony, twórz i uruchamiaj język DSL.  
+7. Transformuj wszystkie szablony, twórz i uruchamiaj język DSL.  
   
-8.  Na diagramie modelu Tworzenie książki, autora i łączyć je przy użyciu relacji odwołania. Wybierz element książki, a następnie w oknie dialogowym właściwości powinien zostać wyświetlony nazwisko autora, oprócz właściwości książki. Zmień nazwę autora połączone lub link książki do innego autora i obserwować, że zmienia nazwę autora książki.  
+8. Na diagramie modelu Tworzenie książki, autora i łączyć je przy użyciu relacji odwołania. Wybierz element książki, a następnie w oknie dialogowym właściwości powinien zostać wyświetlony nazwisko autora, oprócz właściwości książki. Zmień nazwę autora połączone lub link książki do innego autora i obserwować, że zmienia nazwę autora książki.  
   
 ## <a name="custom-property-editors"></a>Edytory właściwości niestandardowej  
  W oknie właściwości zawiera odpowiednią wartość domyślną edytowanie dla rodzaju właściwości każdej domeny. Na przykład dla typu wyliczeniowego, użytkownik zobaczy listy rozwijanej, a na właściwość numeryczną, użytkownik może wprowadzić cyfr. Ta zasada obowiązuje tylko dla typów wbudowanych. Jeśli określisz typ zewnętrzny, użytkownik będzie mógł wyświetlić wartości właściwości, ale nie można go edytować.  
@@ -116,14 +116,14 @@ W języku specyficznym dla domeny (DSL) można dostosować wygląd i zachowanie 
   
 2. Dodaj typ **typy domen** listy, o ile nie zostało jeszcze to zrobione.  
   
-   1.  Otwórz DslDefinition.dsl, a następnie w **Eksplorator DSL**, kliknij prawym przyciskiem myszy węzeł główny, a następnie kliknij przycisk **dodać nowy typ zewnętrzny**.  
+   1. Otwórz DslDefinition.dsl, a następnie w **Eksplorator DSL**, kliknij prawym przyciskiem myszy węzeł główny, a następnie kliknij przycisk **dodać nowy typ zewnętrzny**.  
   
         Nowy wpis, który pojawia się w obszarze **typy domen** węzła.  
   
        > [!WARNING]
        >  Element menu jest w węźle głównym języka DSL **typy domen** węzła.  
   
-   2.  Ustaw nazwę i przestrzeń nazw nowego typu, w oknie dialogowym właściwości.  
+   2. Ustaw nazwę i przestrzeń nazw nowego typu, w oknie dialogowym właściwości.  
   
 3. Dodaj właściwość domeny do klasy domeny w zwykły sposób.  
   
@@ -149,9 +149,9 @@ W języku specyficznym dla domeny (DSL) można dostosować wygląd i zachowanie 
   
 ##### <a name="to-define-a-file-name-domain-property"></a>Aby zdefiniować właściwość domeny nazwa pliku  
   
-1.  Dodaj właściwość domeny do klasy domeny w definicji DSL.  
+1. Dodaj właściwość domeny do klasy domeny w definicji DSL.  
   
-2.  Wybierz nową właściwość. W **atrybut niestandardowy** pola w oknie dialogowym właściwości, należy wprowadzić następujący atrybut. Aby wprowadzić ten atrybut, kliknij przycisk wielokropka **[...]**  a następnie wprowadź nazwę i parametry oddzielnie:  
+2. Wybierz nową właściwość. W **atrybut niestandardowy** pola w oknie dialogowym właściwości, należy wprowadzić następujący atrybut. Aby wprowadzić ten atrybut, kliknij przycisk wielokropka **[...]**  a następnie wprowadź nazwę i parametry oddzielnie:  
   
     ```  
     [System.ComponentModel.Editor (  
@@ -160,15 +160,15 @@ W języku specyficznym dla domeny (DSL) można dostosować wygląd i zachowanie 
   
     ```  
   
-3.  Pozostaw typ właściwości domeny jego domyślne ustawienie **ciąg**.  
+3. Pozostaw typ właściwości domeny jego domyślne ustawienie **ciąg**.  
   
-4.  Aby przetestować edytora, sprawdź, czy użytkownicy mogą otwierać Edytor nazwy plików, aby edytować właściwości usługi domeny.  
+4. Aby przetestować edytora, sprawdź, czy użytkownicy mogą otwierać Edytor nazwy plików, aby edytować właściwości usługi domeny.  
   
-    1.  Naciśnij kombinację klawiszy CTRL + F5 lub F5. W rozwiązaniu do debugowania Otwórz plik testu. Utwórz element klasy domeny i wybierz ją.  
+    1. Naciśnij kombinację klawiszy CTRL + F5 lub F5. W rozwiązaniu do debugowania Otwórz plik testu. Utwórz element klasy domeny i wybierz ją.  
   
-    2.  W oknie dialogowym właściwości wybierz właściwość domeny. Pole wartości pokazuje wielokropek **[...]** .  
+    2. W oknie dialogowym właściwości wybierz właściwość domeny. Pole wartości pokazuje wielokropek **[...]** .  
   
-    3.  Kliknij przycisk wielokropka. Zostanie wyświetlone okno dialogowe pliku. Wybierz plik, a następnie zamknij okno dialogowe. Ścieżka pliku jest teraz wartość właściwości domeny.  
+    3. Kliknij przycisk wielokropka. Zostanie wyświetlone okno dialogowe pliku. Wybierz plik, a następnie zamknij okno dialogowe. Ścieżka pliku jest teraz wartość właściwości domeny.  
   
 ### <a name="defining-your-own-property-editor"></a>Definiowanie własnych Edytor właściwości  
  Można określić własnego edytora. Można byłoby to zrobić, aby zezwolić użytkownikowi, aby edytować typu, który został zdefiniowany lub edytować standardowego typu w specjalny sposób. Na przykład można zezwolić użytkownikowi wprowadź ciąg, który reprezentuje formuły.  

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 470ee530a61ecba5c1acd40be88c469fee6d4f5e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fd2db09937ad76c0ea4c990fcdba5c34a0f8f66c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596272"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093881"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Instrukcje: Uwzględnianie pliku danych w aplikacji ClickOnce
 Każdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalowania aplikacji jest przypisany do katalogu danych na dysku lokalnym komputera docelowego, gdzie aplikacja można zarządzać swoimi danymi. Pliki danych może zawierać pliki dowolnego typu: pliki tekstowe, pliki XML lub nawet bazy danych Microsoft Access (*.mdb*) plików. Poniższe procedury pokazują, jak dodać plik danych dowolnego typu do Twojej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.
@@ -60,25 +60,25 @@ Każdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalo
 
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Aby dołączyć plik danych przy użyciu MageUI.exe
 
-1.  Dodaj plik danych do katalogu aplikacji z użyciem usług rest plików aplikacji.
+1. Dodaj plik danych do katalogu aplikacji z użyciem usług rest plików aplikacji.
 
-2.  Zazwyczaj będzie katalog etykietą bieżąca wersja wdrożenia katalogu aplikacji — na przykład v1.0.0.0.
+2. Zazwyczaj będzie katalog etykietą bieżąca wersja wdrożenia katalogu aplikacji — na przykład v1.0.0.0.
 
-3.  Na **pliku** menu, kliknij przycisk **Otwórz** otworzyć manifest aplikacji.
+3. Na **pliku** menu, kliknij przycisk **Otwórz** otworzyć manifest aplikacji.
 
-4.  Wybierz **pliki** kartę.
+4. Wybierz **pliki** kartę.
 
-5.  W polu tekstowym w górnej części karty wprowadź katalog, który zawiera pliki aplikacji, a następnie kliknij przycisk **wypełniania**.
+5. W polu tekstowym w górnej części karty wprowadź katalog, który zawiera pliki aplikacji, a następnie kliknij przycisk **wypełniania**.
 
      Plik danych zostaną wyświetlone w siatce.
 
-6.  Ustaw **typ pliku** wartość plik danych do **danych**.
+6. Ustaw **typ pliku** wartość plik danych do **danych**.
 
-7.  Zapisz manifest aplikacji, a następnie ponowne podpisywanie pliku.
+7. Zapisz manifest aplikacji, a następnie ponowne podpisywanie pliku.
 
      *MageUI.exe* wyświetli monit o ponowne podpisywanie pliku.
 
-8.  Ponownie podpisać manifest wdrożenia
+8. Ponownie podpisać manifest wdrożenia
 
      Należy ponownie podpisać manifest wdrożenia, ponieważ jego skrót manifest aplikacji została zmieniona.
 

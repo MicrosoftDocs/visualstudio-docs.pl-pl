@@ -14,35 +14,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 42cea2633ceb0cbda1c63b76a4e2b7775e967bc2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c46b629227b1b3d73ee4bc6a265c867921937df2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597104"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069071"
 ---
 # <a name="how-to-create-a-sharepoint-project-item-extension"></a>Instrukcje: Tworzenie rozszerzenia elementu projektu SharePoint
   Tworzenie rozszerzenia elementu projektu, jeśli chcesz dodać funkcje do elementu projektu programu SharePoint, która jest już zainstalowana w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [elementów projektu programu SharePoint z rozszerzenia](../sharepoint/extending-sharepoint-project-items.md).
 
 ### <a name="to-create-a-project-item-extension"></a>Aby utworzyć rozszerzenie elementu projektu
 
-1.  Utwórz projekt biblioteki klas.
+1. Utwórz projekt biblioteki klas.
 
-2.  Dodaj odwołania do następujących zestawów:
+2. Dodaj odwołania do następujących zestawów:
 
-    -   Microsoft.VisualStudio.SharePoint
+    - Microsoft.VisualStudio.SharePoint
 
-    -   System.ComponentModel.Composition
+    - System.ComponentModel.Composition
 
-3.  Utwórz klasę, która implementuje <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> interfejsu.
+3. Utwórz klasę, która implementuje <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> interfejsu.
 
-4.  Dodaj następujące atrybuty do klasy:
+4. Dodaj następujące atrybuty do klasy:
 
-    -   <xref:System.ComponentModel.Composition.ExportAttribute>. Ten atrybut umożliwia środowisku Visual Studio wykrycie i załadowanie swoje <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> implementacji. Przekaż <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> typu konstruktora atrybutu.
+    - <xref:System.ComponentModel.Composition.ExportAttribute>. Ten atrybut umożliwia środowisku Visual Studio wykrycie i załadowanie swoje <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> implementacji. Przekaż <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> typu konstruktora atrybutu.
 
-    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. W rozszerzenia elementu projektu ten atrybut identyfikuje element projektu, który ma zostać rozszerzony. Przekaż identyfikator elementu projektu do konstruktora atrybutu. Aby uzyskać listę identyfikatorów elementów projektu, które są dołączone do programu Visual Studio, zobacz [elementów projektu programu SharePoint z rozszerzenia](../sharepoint/extending-sharepoint-project-items.md).
+    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. W rozszerzenia elementu projektu ten atrybut identyfikuje element projektu, który ma zostać rozszerzony. Przekaż identyfikator elementu projektu do konstruktora atrybutu. Aby uzyskać listę identyfikatorów elementów projektu, które są dołączone do programu Visual Studio, zobacz [elementów projektu programu SharePoint z rozszerzenia](../sharepoint/extending-sharepoint-project-items.md).
 
-5.  W danej implementacji <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> metody, użyj członkowie *projectItemType* parametru do określania zachowania Twojego rozszerzenia. Ten parametr jest <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> obiektu, który zapewnia dostęp do zdarzenia, zdefiniowany w <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> i <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> interfejsów. Aby uzyskać dostęp do konkretnego wystąpienia typu elementu projektu, rozszerzania, obsługi <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> zdarzeniach, takich jak <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> i <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized>.
+5. W danej implementacji <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> metody, użyj członkowie *projectItemType* parametru do określania zachowania Twojego rozszerzenia. Ten parametr jest <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> obiektu, który zapewnia dostęp do zdarzenia, zdefiniowany w <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> i <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> interfejsów. Aby uzyskać dostęp do konkretnego wystąpienia typu elementu projektu, rozszerzania, obsługi <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> zdarzeniach, takich jak <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> i <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized>.
 
 ## <a name="example"></a>Przykład
  Poniższy przykład kodu pokazuje, jak utworzyć proste rozszerzenie elementu projektu odbiorcy zdarzeń. Każdorazowo użytkownik dodaje element projektu odbiorcy zdarzeń do projektu programu SharePoint, to rozszerzenie zapisuje komunikat do **dane wyjściowe** okna i **lista błędów** okna.
@@ -55,9 +55,9 @@ ms.locfileid: "56597104"
 ## <a name="compile-the-code"></a>Skompilować kod
  Ten przykład wymaga odwołania do następujących zestawów:
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>Wdrażanie rozszerzenia
  Aby wdrożyć rozszerzenie, należy utworzyć [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozszerzenie (VSIX), pakiet dla zestawu i innych plików, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).

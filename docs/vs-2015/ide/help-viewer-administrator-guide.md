@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e0f63555cbda069c3db0a3a1d5819292fc3cda14
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 51dfdc95748690f43809244dc14ae2662d8aec39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799708"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086601"
 ---
 # <a name="help-viewer-administrator-guide"></a>Podręcznik administratora programu Podgląd Pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ Podgląd Pomocy umożliwia zarządzanie lokalnymi instalacjami pomocy dla środo
   
 ##### <a name="to-install-english-content-from-the-internet"></a>Aby zainstalować zawartość w języku angielskim z Internetu  
   
-1.  Wybierz **Start** , a następnie wybierz **Uruchom**.  
+1. Wybierz **Start** , a następnie wybierz **Uruchom**.  
   
-2.  Wpisz następujące polecenie:  
+2. Wpisz następujące polecenie:  
   
      C:\Program pliki (x86) \Microsoft Help Viewer\v2.2\hlpctntmgr.exe /operation instalacji/catalogname VisualStudio14/Locale en-us  
   
-3.  Naciśnij klawisz ENTER.  
+3. Naciśnij klawisz ENTER.  
   
 ## <a name="deploying-pre-installed-local-help-content-on-client-computers"></a>Wdrażanie wstępnie zainstalowanych lokalnej zawartości pomocy na komputerach klienckich  
  Można zainstalować zestaw treści z online do jednego komputera, a następnie skopiować ten zainstalowany zestaw treści na inne komputery.  
@@ -117,15 +117,15 @@ Podgląd Pomocy umożliwia zarządzanie lokalnymi instalacjami pomocy dla środo
   
 ##### <a name="to-package-the-content"></a>Aby spakować zawartość  
   
-1.  Utwórz folder do skopiowania do niego zawartość na potrzeby późniejszego wdrożenia.  
+1. Utwórz folder do skopiowania do niego zawartość na potrzeby późniejszego wdrożenia.  
   
      Na przykład: c:\VS12Help.  
   
-2.  Otwórz cmd.exe z uprawnieniami administratora.  
+2. Otwórz cmd.exe z uprawnieniami administratora.  
   
-3.  Przejdź do folderu, który został utworzony w kroku 1.  
+3. Przejdź do folderu, który został utworzony w kroku 1.  
   
-4.  Wpisz następujące polecenie:  
+4. Wpisz następujące polecenie:  
   
      Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \< *nazwa_folderu*> \ /y /e /k /o  
   
@@ -135,11 +135,11 @@ Podgląd Pomocy umożliwia zarządzanie lokalnymi instalacjami pomocy dla środo
   
 ##### <a name="to-deploy-the-content"></a>Aby wdrożyć zawartość  
   
-1.  Utwórz udział sieciowy i skopiuj zawartość pomocy theee do tej lokalizacji.  
+1. Utwórz udział sieciowy i skopiuj zawartość pomocy theee do tej lokalizacji.  
   
      Na przykład skopiuj zawartość c:\VS12Help do \\\myserver\VS12Help.  
   
-2.  Utwórz plik .bat, aby zawierał skrypt wdrażania dla zawartości pomocy. Ponieważ klient prawdopodobnie nałożył blokadę odczytu na dowolnym pliki usuwane w ramach wypychania, należy zamknąć klienta przed wypchnięciem aktualizacji.  
+2. Utwórz plik .bat, aby zawierał skrypt wdrażania dla zawartości pomocy. Ponieważ klient prawdopodobnie nałożył blokadę odczytu na dowolnym pliki usuwane w ramach wypychania, należy zamknąć klienta przed wypchnięciem aktualizacji.  
   
      Na przykład:  
   
@@ -199,7 +199,7 @@ Podgląd Pomocy umożliwia zarządzanie lokalnymi instalacjami pomocy dla środo
     :CONTINUE  
     ```  
   
-3.  Uruchom plik bat na komputerach lokalnych, które zawartości pomocy jest zainstalowane na urządzeniu.  
+3. Uruchom plik bat na komputerach lokalnych, które zawartości pomocy jest zainstalowane na urządzeniu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Argumenty wiersza polecenia Menedżera zawartości pomocy](../ide/command-line-arguments-for-the-help-content-manager.md)   

@@ -10,12 +10,12 @@ ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 20710f60a06c02391d467981b01627085c04a336
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 29b0066f201fbb791d471d5cfb433d9a335aa775
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775100"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069097"
 ---
 # <a name="creating-and-managing-modal-dialog-boxes"></a>Tworzenie modalnych okien dialogowych i zarządzanie nimi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,32 +28,32 @@ Podczas tworzenia modalne okno dialogowe w programie Visual Studio należy upewn
   
 ## <a name="creating-a-dialog-box-derived-from-dialogwindow"></a>Tworzenie okna dialogowego pochodną DialogWindow  
   
-1.  Utwórz projekt VSIX, o nazwie **OpenDialogTest** i dodać polecenie menu o nazwie **OpenDialog**. Aby uzyskać więcej informacji na temat jak to zrobić, zobacz [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1. Utwórz projekt VSIX, o nazwie **OpenDialogTest** i dodać polecenie menu o nazwie **OpenDialog**. Aby uzyskać więcej informacji na temat jak to zrobić, zobacz [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Aby użyć <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> klasy, należy dodać odwołania do następujących zestawów (na karcie Framework **Dodaj odwołanie** okno dialogowe):  
+2. Aby użyć <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> klasy, należy dodać odwołania do następujących zestawów (na karcie Framework **Dodaj odwołanie** okno dialogowe):  
   
-    -   PresentationCore  
+    - PresentationCore  
   
-    -   PresentationFramework  
+    - PresentationFramework  
   
-    -   WindowsBase  
+    - WindowsBase  
   
-    -   System.Xaml  
+    - System.Xaml  
   
-3.  W OpenDialog.cs, Dodaj następujący kod `using` instrukcji:  
+3. W OpenDialog.cs, Dodaj następujący kod `using` instrukcji:  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
     ```  
   
-4.  Zadeklaruj klasę o nazwie **TestDialogWindow** który pochodzi od klasy <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>:  
+4. Zadeklaruj klasę o nazwie **TestDialogWindow** który pochodzi od klasy <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>:  
   
     ```csharp  
     class TestDialogWindow : DialogWindow  
     {. . .}  
     ```  
   
-5.  Aby można było zminimalizowanie i zmaksymalizuj okno dialogowe, należy ustawić <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMaximizeButton%2A> i <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMinimizeButton%2A> na wartość true:  
+5. Aby można było zminimalizowanie i zmaksymalizuj okno dialogowe, należy ustawić <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMaximizeButton%2A> i <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMinimizeButton%2A> na wartość true:  
   
     ```csharp  
     internal TestDialogWindow()  
@@ -63,40 +63,40 @@ Podczas tworzenia modalne okno dialogowe w programie Visual Studio należy upewn
     }  
     ```  
   
-6.  W **OpenDialog.ShowMessageBox** metody, Zastąp istniejący kod następującym kodem:  
+6. W **OpenDialog.ShowMessageBox** metody, Zastąp istniejący kod następującym kodem:  
   
     ```csharp  
     TestDialogWindow testDialog = new TestDialogWindow();  
     testDialog.ShowModal();  
     ```  
   
-7.  Skompiluj i uruchom aplikację. Powinna zostać wyświetlona doświadczalnym wystąpieniu programu Visual Studio. Na **narzędzia** menu w eksperymentalnym wystąpieniu powinien zostać wyświetlony polecenie o nazwie **wywołania OpenDialog**. Po kliknięciu tego polecenia, powinno zostać wyświetlone okno dialogowe. Można zminimalizować i zmaksymalizuj okno.  
+7. Skompiluj i uruchom aplikację. Powinna zostać wyświetlona doświadczalnym wystąpieniu programu Visual Studio. Na **narzędzia** menu w eksperymentalnym wystąpieniu powinien zostać wyświetlony polecenie o nazwie **wywołania OpenDialog**. Po kliknięciu tego polecenia, powinno zostać wyświetlone okno dialogowe. Można zminimalizować i zmaksymalizuj okno.  
   
 ## <a name="creating-and-managing-a-dialog-box-not-derived-from-dialogwindow"></a>Tworzenie i zarządzanie nimi nie pochodzi od DialogWindow okno dialogowe  
   
-1.  Do wykonania tej procedury, można użyć **OpenDialogTest** rozwiązanie utworzone w poprzedniej procedurze, za pomocą tego samego odwołania do zestawu.  
+1. Do wykonania tej procedury, można użyć **OpenDialogTest** rozwiązanie utworzone w poprzedniej procedurze, za pomocą tego samego odwołania do zestawu.  
   
-2.  Dodaj następujący kod `using` deklaracje:  
+2. Dodaj następujący kod `using` deklaracje:  
   
     ```csharp  
     using System.Windows;  
     using Microsoft.Internal.VisualStudio.PlatformUI;  
     ```  
   
-3.  Utwórz klasę o nazwie **TestDialogWindow2** który pochodzi od klasy <xref:System.Windows.Window>:  
+3. Utwórz klasę o nazwie **TestDialogWindow2** który pochodzi od klasy <xref:System.Windows.Window>:  
   
     ```csharp  
     class TestDialogWindow2 : Window  
     {. . .}  
     ```  
   
-4.  Dodaj odwołanie prywatnych do <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
+4. Dodaj odwołanie prywatnych do <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
   
     ```  
     private IVsUIShell shell;  
     ```  
   
-5.  Dodaj Konstruktor, który ustawia odwołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
+5. Dodaj Konstruktor, który ustawia odwołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
   
     ```csharp  
     public TestDialogWindow2(IVsUIShell uiShell)  
@@ -105,7 +105,7 @@ Podczas tworzenia modalne okno dialogowe w programie Visual Studio należy upewn
     }  
     ```  
   
-6.  W **OpenDialog.ShowMessageBox** metody, Zastąp istniejący kod następującym kodem:  
+6. W **OpenDialog.ShowMessageBox** metody, Zastąp istniejący kod następującym kodem:  
   
     ```csharp  
     IVsUIShell uiShell = (IVsUIShell)ServiceProvider.GetService(typeof(SVsUIShell));  
@@ -127,4 +127,4 @@ Podczas tworzenia modalne okno dialogowe w programie Visual Studio należy upewn
     }  
     ```  
   
-7.  Skompiluj i uruchom aplikację. Na **narzędzia** menu powinien zostać wyświetlony polecenie o nazwie **wywołania OpenDialog**. Po kliknięciu tego polecenia, powinno zostać wyświetlone okno dialogowe.
+7. Skompiluj i uruchom aplikację. Na **narzędzia** menu powinien zostać wyświetlony polecenie o nazwie **wywołania OpenDialog**. Po kliknięciu tego polecenia, powinno zostać wyświetlone okno dialogowe.

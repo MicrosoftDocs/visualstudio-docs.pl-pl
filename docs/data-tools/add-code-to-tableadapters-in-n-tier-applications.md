@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 75f7dd3149785520023657bb86ec8172dc379ab6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6454eb53bf6d171e469a4cf2758e0e10a76eab6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926999"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066120"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Dodawanie kodu do adapterów TableAdapter w aplikacjach n-warstwowych
 Możesz rozszerzyć funkcjonalności TableAdapter, tworząc plik częściowe klasy dla TableAdapter i dodając kod do niego (zamiast opcji dodawania kodu *DatasetName.DataSet.Designer* pliku). Klasy częściowe Włącz kod dla określonej klasy do podzielone między wiele plików fizycznych. Aby uzyskać więcej informacji, zobacz [częściowe](/dotnet/visual-basic/language-reference/modifiers/partial) lub [partial (typ)](/dotnet/csharp/language-reference/keywords/partial-type).
@@ -38,17 +38,17 @@ Domyślnie po oddzielić zestaw danych i kod TableAdapter wynik jest plik klasy 
 
 ## <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>Aby dodać kod użytkownika do TableAdapter w aplikacji n-warstwowej
 
-1.  Znajdź projekt, który zawiera *XSD* pliku.
+1. Znajdź projekt, który zawiera *XSD* pliku.
 
-2.  Kliknij dwukrotnie *XSD* plik, aby otworzyć **Projektanta obiektów Dataset**.
+2. Kliknij dwukrotnie *XSD* plik, aby otworzyć **Projektanta obiektów Dataset**.
 
-3.  Kliknij prawym przyciskiem myszy obiekt TableAdapter, który chcesz dodać kod, a następnie wybierz **Wyświetl kod**.
+3. Kliknij prawym przyciskiem myszy obiekt TableAdapter, który chcesz dodać kod, a następnie wybierz **Wyświetl kod**.
 
      Klasy częściowe, zostanie utworzona i zostanie otwarty w edytorze kodu.
 
-4.  Dodaj kod wewnątrz deklaracji klasy częściowej.
+4. Dodaj kod wewnątrz deklaracji klasy częściowej.
 
-5.  Poniższy kod przedstawia gdzie dodać kod do `CustomersTableAdapter` w `NorthwindDataSet`:
+5. Poniższy kod przedstawia gdzie dodać kod do `CustomersTableAdapter` w `NorthwindDataSet`:
 
     ```vb
     Partial Public Class CustomersTableAdapter

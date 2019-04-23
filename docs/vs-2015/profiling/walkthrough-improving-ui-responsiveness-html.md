@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b31d5c7d22ae209b46bdd4c422f6c3e7473ec8e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ae2bb442edbeb49de25b44056263607fa4f26111
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758690"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071645"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Przewodnik: Zwiększanie czasu odpowiedzi interfejsu użytkownika (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,16 +33,16 @@ Ten instruktaż poprowadzi Cię przez proces identyfikowanie i rozwiązywanie pr
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Tworzenie i uruchamianie wykonywania testowanie aplikacji  
   
-1.  W programie Visual Studio Utwórz nowy projekt Windows Universal JavaScript. (Wybierz **plik / nowy / Project**. Wybierz **JavaScript** w okienku po lewej stronie, a następnie wybierz **Windows**, **systemu Windows 10**, a następnie **Universal**, lub  **Windows Phone**.  
+1. W programie Visual Studio Utwórz nowy projekt Windows Universal JavaScript. (Wybierz **plik / nowy / Project**. Wybierz **JavaScript** w okienku po lewej stronie, a następnie wybierz **Windows**, **systemu Windows 10**, a następnie **Universal**, lub  **Windows Phone**.  
   
-2.  > [!IMPORTANT]
+2. > [!IMPORTANT]
     >  Wyniki diagnostyki, przedstawione w tym temacie przedstawiono aplikacji systemu Windows 8.  
   
-3.  Wybierz jeden z szablonów pustego projektu w środkowym okienku, taki jak **pusta aplikacja**.  
+3. Wybierz jeden z szablonów pustego projektu w środkowym okienku, taki jak **pusta aplikacja**.  
   
-4.  W **nazwa** polu Określ nazwę, taką jak `JS_Perf_Tester`, a następnie wybierz **OK**.  
+4. W **nazwa** polu Określ nazwę, taką jak `JS_Perf_Tester`, a następnie wybierz **OK**.  
   
-5.  W **Eksploratora rozwiązań**, otwórz plik default.html i wklej następujący kod między \<treści > znaczniki:  
+5. W **Eksploratora rozwiązań**, otwórz plik default.html i wklej następujący kod między \<treści > znaczniki:  
   
     ```html  
     <div class="wrapper">  
@@ -50,7 +50,7 @@ Ten instruktaż poprowadzi Cię przez proces identyfikowanie i rozwiązywanie pr
     </div>  
     ```  
   
-6.  Otwórz default.css i Dodaj następujący kod CSS:  
+6. Otwórz default.css i Dodaj następujący kod CSS:  
   
     ```css  
     #content {  
@@ -59,7 +59,7 @@ Ten instruktaż poprowadzi Cię przez proces identyfikowanie i rozwiązywanie pr
     }  
     ```  
   
-7.  Otwórz default.js i Zastąp cały kod przy użyciu tego kodu:  
+7. Otwórz default.js i Zastąp cały kod przy użyciu tego kodu:  
   
     ```javascript  
     (function () {  
@@ -148,7 +148,7 @@ Ten instruktaż poprowadzi Cię przez proces identyfikowanie i rozwiązywanie pr
   
     ```  
   
-8.  Wybierz klawisz F5, aby rozpocząć debugowanie. Upewnij się, że **oczekiwanie na wartości** na stronie pojawi się przycisk.  
+8. Wybierz klawisz F5, aby rozpocząć debugowanie. Upewnij się, że **oczekiwanie na wartości** na stronie pojawi się przycisk.  
   
 9. Wybierz **oczekiwanie na wartości** i sprawdź, czy tekst przycisku i kolor na około aktualizacji raz na sekundę. To jest celowe.  
   
@@ -204,9 +204,9 @@ Ten instruktaż poprowadzi Cię przez proces identyfikowanie i rozwiązywanie pr
   
      Szereg fakty może zebrać dane. Na przykład:  
   
-    -   Każdy `Timer` zdarzenia oznaczone kolorami, aby je zidentyfikować jako zdarzenie obsługi skryptów, zawiera wywołanie `document.createElement`, a następnie obliczenia stylu i wywołania `style.backgroundColor` i `appendChild()`.  
+    - Każdy `Timer` zdarzenia oznaczone kolorami, aby je zidentyfikować jako zdarzenie obsługi skryptów, zawiera wywołanie `document.createElement`, a następnie obliczenia stylu i wywołania `style.backgroundColor` i `appendChild()`.  
   
-    -   W krótkim przedział czasu zaznaczone (około jednej do dwóch sekund), istnieją wielu `Timer`, `Layout`, i `Paint` zdarzenia mające miejsce. `Timer` Zdarzenia zachodzą znacznie częściej niż jedna aktualizacja na sekundę, gdy jest widoczne oczywiste, po uruchomieniu aplikacji i wybierz **oczekiwanie na wartości** przycisku.  
+    - W krótkim przedział czasu zaznaczone (około jednej do dwóch sekund), istnieją wielu `Timer`, `Layout`, i `Paint` zdarzenia mające miejsce. `Timer` Zdarzenia zachodzą znacznie częściej niż jedna aktualizacja na sekundę, gdy jest widoczne oczywiste, po uruchomieniu aplikacji i wybierz **oczekiwanie na wartości** przycisku.  
   
 10. Aby zbadać, wybierz link, aby funkcja anonimowa dla jednego z `Timer` zdarzenia w dolnym okienku po lewej stronie. W pliku default.js spowoduje otwarcie następującą funkcję:  
   
@@ -225,7 +225,7 @@ Ten instruktaż poprowadzi Cię przez proces identyfikowanie i rozwiązywanie pr
   
 ### <a name="fixing-the-performance-issue"></a>Rozwiązywanie problemów z wydajnością  
   
-1.  Zastąp `update()` funkcji następującym kodem:  
+1. Zastąp `update()` funkcji następującym kodem:  
   
     ```javascript  
     function update() {  
@@ -240,7 +240,7 @@ Ten instruktaż poprowadzi Cię przez proces identyfikowanie i rozwiązywanie pr
   
      Tej wersji Naprawiono kodu obejmuje 1000 Opóźnienie milisekund, który został pominięty z poprzedniej wersji kodu, zmniejsza opóźnienie wartości domyślnej. Z danych profilera, wydaje się, że wartością domyślną jest zero milisekund, które spowodowały `setValues()` zbyt częste uruchamianie funkcji.  
   
-2.  Ponownie uruchomić profiler czas odpowiedzi interfejsu użytkownika HTML i sprawdź wykres wykorzystania procesora CPU. Można zauważyć, że nadmierne zdarzenia zostaną usunięte, a użycie procesora CPU została obniżona do umieszczonej blisko zero. Naprawiono!  
+2. Ponownie uruchomić profiler czas odpowiedzi interfejsu użytkownika HTML i sprawdź wykres wykorzystania procesora CPU. Można zauważyć, że nadmierne zdarzenia zostaną usunięte, a użycie procesora CPU została obniżona do umieszczonej blisko zero. Naprawiono!  
   
 ## <a name="see-also"></a>Zobacz też  
  [Czas odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md)

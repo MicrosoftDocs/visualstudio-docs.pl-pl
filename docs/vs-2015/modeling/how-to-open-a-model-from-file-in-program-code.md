@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d40becc02333a95801794bd20f2b2abd45043c08
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f0c0374f50894cefbb240c6349c9c2450734501d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803802"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071853"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Instrukcje: Otwieranie modelu z pliku w kodzie programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ W dowolnej aplikacji, możesz otworzyć modeli języka DSL.
   
 #### <a name="to-set-the-target-framework"></a>Aby ustawić platformę docelową  
   
-1.  Otwórz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projekt dla aplikacji, w którym chcesz odczytać modelu DSL.  
+1. Otwórz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projekt dla aplikacji, w którym chcesz odczytać modelu DSL.  
   
-2.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **właściwości**.  
+2. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **właściwości**.  
   
-3.  W oknie dialogowym właściwości projektu na **aplikacji** kartę, należy ustawić **platformę docelową** pole **.NET Framework 4**.  
+3. W oknie dialogowym właściwości projektu na **aplikacji** kartę, należy ustawić **platformę docelową** pole **.NET Framework 4**.  
   
 > [!NOTE]
 >  Konieczne może być nawet wtedy, gdy wybrano **.NET Framework 4** w oknie dialogowym tworzenia projektu. Platforma docelowa nie powinny być **.NET Framework 4 Client Profile**.  
@@ -40,22 +40,22 @@ W dowolnej aplikacji, możesz otworzyć modeli języka DSL.
 ## <a name="references"></a>Odwołania  
  Należy dodać te odwołania do usługi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projekt aplikacji:  
   
--   `Microsoft.VisualStudio.Modeling.Sdk.11.0`  
+- `Microsoft.VisualStudio.Modeling.Sdk.11.0`  
   
-    -   Jeśli nie są widoczne w obszarze **.NET** karcie **Add References** okno dialogowe, kliknij przycisk **Przeglądaj** kartę i przejdź do `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.  
+    - Jeśli nie są widoczne w obszarze **.NET** karcie **Add References** okno dialogowe, kliknij przycisk **Przeglądaj** kartę i przejdź do `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.  
   
--   Zestaw DSL, który można znaleźć w folderze bin projektu DSL. Jego nazwa ma zwykle postać: *NazwaFirmy*. *YourProject*`.Dsl.dll`.  
+- Zestaw DSL, który można znaleźć w folderze bin projektu DSL. Jego nazwa ma zwykle postać: *NazwaFirmy*. *YourProject*`.Dsl.dll`.  
   
 ## <a name="important-classes-in-the-dsl"></a>Ważne klas w język DSL  
  Przed można napisać kod, który odczytuje DSL, należy znać nazwy niektórych klas wygenerowanych przez DSL. W rozwiązaniu DSL Otwórz **Dsl** projektu i Znajdź **GeneratedCode** folderu. Alternatywnie, kliknij dwukrotnie zestaw DSL w projekcie **odwołania**i otwórz przestrzeń nazw DSL w **przeglądarki obiektów**.  
   
  Są to klasy, które należy zidentyfikować:  
   
--   *YourDslRootClass* — jest to nazwa klasy głównej w swojej `DslDefinition.dsl`.  
+- *YourDslRootClass* — jest to nazwa klasy głównej w swojej `DslDefinition.dsl`.  
   
--   *YourDslName* `SerializationHelper` — ta klasa jest zdefiniowana w `SerializationHelper.cs` w projekcie języka DSL.  
+- *YourDslName* `SerializationHelper` — ta klasa jest zdefiniowana w `SerializationHelper.cs` w projekcie języka DSL.  
   
--   *YourDslName* `DomainModel` — ta klasa jest zdefiniowana w `DomainModel.cs` w projekcie języka DSL.  
+- *YourDslName* `DomainModel` — ta klasa jest zdefiniowana w `DomainModel.cs` w projekcie języka DSL.  
   
 ## <a name="reading-from-a-file"></a>Odczytywanie z pliku  
  Poniższy przykład jest przeznaczony do odczytu DSL, w którym klasy ważne są następujące:  

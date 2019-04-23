@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67a35b8987cc9f4f06cc93df2462a4dee326d7e7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 66110f6544bc19476bb4ecdfd6929fb4e26f0b52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664021"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082437"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Ustawienia projektu VC++, projekty i rozwiązania, opcje — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ To okno dialogowe pozwala zdefiniować [!INCLUDE[vcprvc](../../includes/vcprvc-m
   
 ### <a name="to-access-this-dialog-box"></a>Dostęp do tego okna dialogowego  
   
-1.  Na **narzędzia** menu, kliknij przycisk **opcje**.  
+1. Na **narzędzia** menu, kliknij przycisk **opcje**.  
   
-2.  Wybierz **projekty i rozwiązania**, a następnie wybierz pozycję **ustawienia projektu VC ++**.  
+2. Wybierz **projekty i rozwiązania**, a następnie wybierz pozycję **ustawienia projektu VC ++**.  
   
 ## <a name="build-customization-search-path"></a>Ścieżka wyszukiwania dostosowania kompilacji  
  Określa listę katalogów, które zawierają pliki Rules, które ułatwiają definiowanie reguł kompilacji dla Twoich projektów.  

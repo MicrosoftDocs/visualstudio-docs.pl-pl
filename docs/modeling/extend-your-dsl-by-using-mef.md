@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40442d9cf740bd4122aaf48f82fdba425aff261e
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 40b62719fb00910e4eef183f960e1a1d4ea9a4a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415580"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084246"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozszerzanie DSL za pomocą MEF
 
@@ -24,7 +24,7 @@ Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Fram
 
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>Aby włączyć DSL być rozszerzony za MEF
 
-1.  Utwórz nowy folder o nazwie **MefExtension** wewnątrz **DslPackage** projektu. Dodaj następujące pliki do niego:
+1. Utwórz nowy folder o nazwie **MefExtension** wewnątrz **DslPackage** projektu. Dodaj następujące pliki do niego:
 
      Nazwa pliku: `CommandExtensionVSCT.tt`
 
@@ -72,7 +72,7 @@ Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Fram
     <#@ include file="DslPackage\PackageExtensionEnablement.tt" #>
     ```
 
-2.  Utwórz nowy folder o nazwie **MefExtension** wewnątrz **Dsl** projektu. Dodaj następujące pliki do niego:
+2. Utwórz nowy folder o nazwie **MefExtension** wewnątrz **Dsl** projektu. Dodaj następujące pliki do niego:
 
      Nazwa pliku: `DesignerExtensionMetaDataAttribute.tt`
 
@@ -95,7 +95,7 @@ Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Fram
     <#@ include file="Dsl\GestureExtensionController.tt" #>
     ```
 
-3.  Dodaj następujący wiersz do istniejącego pliku, który nosi nazwę **DslPackage\Commands.vsct**:
+3. Dodaj następujący wiersz do istniejącego pliku, który nosi nazwę **DslPackage\Commands.vsct**:
 
     ```xml
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
@@ -103,17 +103,17 @@ Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Fram
 
     Wstaw wiersz po istniejącej `<Include>` dyrektywy.
 
-4.  Otwórz *DslDefinition.dsl*.
+4. Otwórz *DslDefinition.dsl*.
 
-5.  Eksplorator modelu DSL wybierz **Editor\Validation**.
+5. Eksplorator modelu DSL wybierz **Editor\Validation**.
 
-6.  W oknie dialogowym właściwości upewnij się, że co najmniej jedna z właściwości o nazwie **używa** jest `true`.
+6. W oknie dialogowym właściwości upewnij się, że co najmniej jedna z właściwości o nazwie **używa** jest `true`.
 
-7.  W **Eksploratora rozwiązań** narzędzi, kliknij przycisk **Przekształć wszystkie szablony**.
+7. W **Eksploratora rozwiązań** narzędzi, kliknij przycisk **Przekształć wszystkie szablony**.
 
      Pliki pomocnicze są wyświetlane poniżej każdego z plików, które zostały dodane.
 
-8.  Skompiluj i uruchom rozwiązanie, aby sprawdzić, że nadal działa.
+8. Skompiluj i uruchom rozwiązanie, aby sprawdzić, że nadal działa.
 
 DSL jest teraz włączone MEF. Polecenia menu, procedury obsługi gestów i ograniczeń sprawdzania poprawności można napisać jako rozszerzenia MEF. Można napisać te rozszerzenia w rozwiązaniu DSL wraz z innymi kod niestandardowy. Ponadto możesz lub innym deweloperom napisać oddzielne rozszerzeń programu Visual Studio DSL.
 
@@ -135,15 +135,15 @@ Jeśli masz dostęp do utworzonych przez siebie lub kogoś innego DSL włączone
 
 3. Dodaj odwołania do następujących zestawów .NET:
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
-   -   System.ComponentModel.Composition.dll
+   - System.ComponentModel.Composition.dll
 
-   -   System.Windows.Forms.dll
+   - System.Windows.Forms.dll
 
 4. Utwórz nową **projekt VSIX** projektu.
 

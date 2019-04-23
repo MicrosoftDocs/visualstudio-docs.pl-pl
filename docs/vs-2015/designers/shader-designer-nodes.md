@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 659ac2dadd5500ef3cd4a4a3e7c3b36b91e9cc49
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cde6b6a44649f3a9e100a0ff10e3dda21f2d6f3c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793267"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096286"
 ---
 # <a name="shader-designer-nodes"></a>Węzły Shader Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +30,15 @@ Artykuły w tej sekcji dokumentacji zawierają informacje dotyczące różnych w
 ### <a name="promotion-of-inputs"></a>Podwyższanie poziomu danych wejściowych  
  Ponieważ program Shader Designer ostatecznie należy wygenerować kod źródłowy języka HLSL, tak, aby skutki mogą być używane w grach i aplikacjach, węzły Shader Designer podlegają reguły promocji typu, które używa HLSL. Ponieważ sprzęt graficzny działa przede wszystkim na wartości zmiennoprzecinkowe, wpisz podwyższania poziomu między różnymi typami — na przykład z `int` do `float`, lub z `float` do `double`— jest mało prawdopodobna. Zamiast tego ponieważ sprzęt graficzny korzysta z tej samej operacji na wiele rodzajów informacji naraz, inny rodzaj podwyższania poziomu mogą wystąpić, w którym krótszy liczby danych wejściowych jest zwiększany, aby był zgodny z rozmiarem najdłużej danych wejściowych. Jak jest zwiększany jest zależna od typu danych wejściowych, a także od samego operacji:  
   
--   **Jeśli mniejszych typów jest wartość skalarną, wtedy:**  
+- **Jeśli mniejszych typów jest wartość skalarną, wtedy:**  
   
      Wartości skalarnych są replikowane do wektora, który jest równy rozmiar większych dane wejściowe. Na przykład skalarnej wprowadzanie 5.0 staje się wektora (w wersji 5.0, 5.0, 5.0) podczas największych dane wejściowe operacji są Wektor trzech elementowej, niezależnie od tego, co to jest operacja.  
   
--   **Czy mniejszy typ wektora, a operacja jest mnożenia (\*, /, % i tak dalej), następnie:**  
+- **Czy mniejszy typ wektora, a operacja jest mnożenia (\*, /, % i tak dalej), następnie:**  
   
      Wartość wektora jest kopiowana do wiodących elementów wektora, który jest równy rozmiar większych dane wejściowe, a końcowe elementy są ustawione na 1.0. Na przykład wektor danych wejściowych (w wersji 5.0, 5.0) staje się wektora (w wersji 5.0, 5.0, 1.0, 1.0) po przemnożeniu wektor czterech elementu. Pozwala to zachować trzecia i czwarta elementy danych wyjściowych za pomocą tożsamości mnożenia, 1.0.  
   
--   **Czy mniejszy typ wektora, a operacja jest dodawania (+,-, i tak dalej), następnie:**  
+- **Czy mniejszy typ wektora, a operacja jest dodawania (+,-, i tak dalej), następnie:**  
   
      Wartość wektora jest kopiowana do wiodących elementów wektora, który jest równy rozmiar większych dane wejściowe, a końcowe elementy są ustawione na 0,0. Na przykład wektor danych wejściowych (w wersji 5.0, 5.0) staje się wektora (w wersji 5.0, 5.0, 0.0, 0.0) po dodaniu do czterech elementów wektora. Pozwala to zachować trzecia i czwarta elementy danych wyjściowych za pomocą tożsamości dodatku, od 0,0.  
   

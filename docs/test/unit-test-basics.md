@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df0d6c25bad57550fcfc9ce475dcc9da488f195f
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 7a464103d38a9ba0d2215f53a593809b6136aa3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647417"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096741"
 ---
 # <a name="unit-test-basics"></a>Podstawowe informacje o teście jednostkowym
 
@@ -82,9 +82,12 @@ Często jest szybsze generowanie projektu testu jednostkowego i wycinków testó
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Generowanie projektu testów jednostkowych i testów jednostkowych wycinków
 
-1. W oknie edytora kodu, kliknij prawym przyciskiem myszy i wybierz polecenie **Utwórz testy jednostkowe** z menu podręcznego.
+1. W oknie edytora kodu, kliknij prawym przyciskiem myszy i wybierz polecenie [ **Utwórz testy jednostkowe** ](create-unit-tests-menu.md) z menu podręcznego.
 
-    ![W oknie edytora wyświetlić menu kontekstowe](../test/media/createunittestsrightclick.png)
+   ![W oknie edytora wyświetlić menu kontekstowe](../test/media/createunittestsrightclick.png)
+
+   > [!NOTE]
+   > **Utwórz testy jednostkowe** polecenia menu jest dostępna tylko dla kodu zarządzanego, który jest przeznaczony dla .NET Framework (ale nie platformy .NET Core).
 
 2. Kliknij przycisk **OK** zaakceptować ustawienia domyślne, aby utworzyć testy jednostkowe lub zmienić wartości używane do tworzenia i nazwij projekt testów jednostkowych i testów jednostkowych. Możesz wybrać kod, który jest domyślnie dodawany do metody testów jednostkowych.
 
@@ -127,17 +130,17 @@ Projekt testu jednostkowego zwykle odzwierciedla strukturę projektu pojedynczeg
 
    Aby utworzyć odwołanie do projektu kodu:
 
-   1.  Wybierz projekt w **Eksploratora rozwiązań**.
+   1. Wybierz projekt w **Eksploratora rozwiązań**.
 
-   2.  Na **projektu** menu, wybierz **Dodaj odwołanie**.
+   2. Na **projektu** menu, wybierz **Dodaj odwołanie**.
 
-   3.  Na **Menadżer odwołań** po otwarciu okna dialogowego **rozwiązania** węzeł i wybierz polecenie **projektów**. Wybierz nazwę projektu kodu, a następnie zamknij okno dialogowe.
+   3. Na **Menadżer odwołań** po otwarciu okna dialogowego **rozwiązania** węzeł i wybierz polecenie **projektów**. Wybierz nazwę projektu kodu, a następnie zamknij okno dialogowe.
 
 Każdy projekt testu jednostkowego zawiera klasy, które odzwierciedlają nazwy klasy w projekcie kodu. W naszym przykładzie `AccountsTests` projekt będzie zawierać następujące klasy:
 
--   `AccountInfoTests` Klasa zawiera metody testów jednostkowych dla `AccountInfo` klasy w `Accounts` projektu
+- `AccountInfoTests` Klasa zawiera metody testów jednostkowych dla `AccountInfo` klasy w `Accounts` projektu
 
--   `CheckingAccountTests` Klasa zawiera metody testów jednostkowych dla `CheckingAccount` klasy.
+- `CheckingAccountTests` Klasa zawiera metody testów jednostkowych dla `CheckingAccount` klasy.
 
 ## <a name="write-your-tests"></a>Pisania testów
 
@@ -185,11 +188,11 @@ Należy pamiętać, że `Withdraw_ValidAmount_ChangesBalance` używa jawnego `As
 
 Aby uzyskać więcej informacji na temat struktur testów jednostek pochodzących od firmy Microsoft Zobacz jeden z następujących tematów:
 
--   [Kod testu jednostkowego](unit-test-your-code.md)
+- [Kod testu jednostkowego](unit-test-your-code.md)
 
--   [Pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md)
+- [Pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md)
 
--   [Użyj struktury MSTest w testach jednostkowych](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [Użyj struktury MSTest w testach jednostkowych](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
 
 ## <a name="set-timeouts-for-unit-tests"></a>Ustawianie limitów czasu dla testów jednostkowych
 
@@ -260,12 +263,12 @@ Aby uzyskać więcej informacji, zobacz [Uruchamianie testów jednostkowych w Ek
 
 **ODP.:** Użyj **Eksplorator testów** do uruchamiania sesji debugowania dla testów. Krokowe wykonywanie kodu za pomocą debugera programu Visual Studio bezproblemowe przejście i z powrotem między testami jednostek a testowanego projektu. Aby rozpocząć debugowanie:
 
-1.  W edytorze programu Visual Studio Ustaw punkt przerwania w metodach testów, które chcesz debugować.
+1. W edytorze programu Visual Studio Ustaw punkt przerwania w metodach testów, które chcesz debugować.
 
     > [!NOTE]
     > Ponieważ metody testowe można uruchomić w dowolnej kolejności, ustaw punkty przerwania w wszystkich metodach testowych, które chcesz debugować.
 
-2.  W **Eksploratora testów**, wybierz metody badania, a następnie wybierz **Debuguj wybrane testy** z menu skrótów.
+2. W **Eksploratora testów**, wybierz metody badania, a następnie wybierz **Debuguj wybrane testy** z menu skrótów.
 
 Dowiedz się więcej szczegółów o [debugowanie testów jednostkowych](../debugger/debugger-feature-tour.md).
 
@@ -327,9 +330,9 @@ Dowiedz się więcej o [pokrycia kodu](../test/using-code-coverage-to-determine-
 
 Microsoft Fakes używa dwa podejścia do tworzenia klas zastępczych dla zależności zewnętrznych:
 
-1.  *Wycinki* Generowanie klas zastępczych pochodzi od klasy docelowej zależności interfejs nadrzędny. Można zastąpić metody klasy zastępczej dla publicznej metody wirtualne klasy docelowej.
+1. *Wycinki* Generowanie klas zastępczych pochodzi od klasy docelowej zależności interfejs nadrzędny. Można zastąpić metody klasy zastępczej dla publicznej metody wirtualne klasy docelowej.
 
-2.  *Podkładki* umożliwia kierowanie wywołań do metody docelowej, do metody podkładkę substytut dla metod niewirtualnych środowiska uruchomieniowego instrumentacji.
+2. *Podkładki* umożliwia kierowanie wywołań do metody docelowej, do metody podkładkę substytut dla metod niewirtualnych środowiska uruchomieniowego instrumentacji.
 
 W obu metod użyjesz wygenerowanego delegatów wywołania metody zależności do określania zachowania, który ma w metodzie testowej.
 

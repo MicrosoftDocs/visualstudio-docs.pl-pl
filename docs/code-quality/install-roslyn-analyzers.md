@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b1859d422b0f3a76947a64e754521efcda46e65
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 1afeb6f75648ce2ab1687fa9262ab28b658b0d70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982938"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077813"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>Instalowanie analizatorów platformie kompilatora .NET
 
@@ -24,14 +24,14 @@ Program Visual Studio zawiera podstawowy zestaw platformy kompilatora .NET (*Ros
 
 ## <a name="to-install-nuget-analyzer-packages"></a>Aby zainstalować pakiety analizatora NuGet
 
-1. Znajdź pakiet analizatora, które chcesz zainstalować na www.nuget.org. Na przykład możesz chcieć [zainstalować analizatory Microsoft FxCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) Aby sprawdzić swój kod pod kątem problemów zabezpieczeń i wydajności, między innymi.
+1. Znajdź pakiet analizatora, które chcesz zainstalować na www.nuget.org.
+
+   Na przykład możesz chcieć [zainstalować analizatory Microsoft FxCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) Aby sprawdzić swój kod pod kątem problemów zabezpieczeń i wydajności, między innymi. Ewentualnie Zainstaluj zestaw [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) do wyszukania problemów stylu w bazie kodu.
 
 2. Zainstaluj pakiet w programie Visual Studio, za pomocą [Konsola Menedżera pakietów](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) lub [interfejs użytkownika Menedżera pakietów](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 
    > [!NOTE]
    > Strona www.nuget.org dla każdego pakietu analizatora zawiera polecenia, aby wkleić w **Konsola Menedżera pakietów**. Jest parzysta przydatną przycisk, aby skopiować tekst do Schowka.
-   >
-   > ![Strona NuGet.org przedstawiający polecenia konsoli Menedżera pakietów](media/nuget-install-command.png)
 
    Zestawy analizatora są zainstalowane i są wyświetlane w **Eksploratora rozwiązań** w obszarze **odwołania** > **analizatory**.
 

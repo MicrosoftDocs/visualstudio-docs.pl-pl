@@ -1,6 +1,6 @@
 ---
 title: Tworzenie szablonów obejmujących wiele projektów
-ms.date: 01/02/2018
+ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 01bd8101aa1e62e65c83d4da40af4eb624338a89
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f24a7c0d07c804ca45bb31058061cda714ef6a51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59232635"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088941"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Instrukcje: Tworzenie szablonów obejmujących wiele projektów
 
@@ -67,6 +67,19 @@ Katalog główny *vstemplate* plik szablonu wieloprojektowego różni się od sz
         </ProjectCollection>
     </TemplateContent>
     ```
+
+> [!TIP]
+> Jeśli chcesz tylko szablonu wieloprojektowego do wyświetlania w oknie dialogowym Nowy projekt i nie zawiera on poszczególnych projektów, oznacz wewnętrzny szablony jako [ukryte](../extensibility/hidden-element-visual-studio-templates.md). Na przykład:
+>
+> ```xml
+> <VSTemplate Type="Project" ... >
+>     <TemplateData>
+>         ...
+>         <Hidden>true</Hidden>
+>     </TemplateData>
+>     ...
+> </VSTemplate>
+> ```
 
 ## <a name="create-a-multi-project-template-from-an-existing-solution"></a>Tworzenie szablonów wielu projektów z istniejącego rozwiązania
 

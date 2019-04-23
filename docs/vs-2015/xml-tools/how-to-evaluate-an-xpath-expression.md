@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 77c9acae710baeb885bcf901257367251d86c3a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a0c79da47b83f8bf5b44af16ca291e2424011b80
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804477"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075613"
 ---
 # <a name="how-to-evaluate-an-xpath-expression"></a>Instrukcje: Ocena wyrażenia XPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,32 +23,32 @@ Można obliczyć wyrażenia XPath z **QuickWatch** okno dialogowe. Wyrażenie XP
   
  Na poniższej liście opisano, jakie funkcje są obsługiwane podczas obliczania wyrażenia XPath:  
   
--   Wbudowane funkcje XPath są obsługiwane.  
+- Wbudowane funkcje XPath są obsługiwane.  
   
--   Wbudowane funkcje XSLT nie są obsługiwane.  
+- Wbudowane funkcje XSLT nie są obsługiwane.  
   
--   Funkcje zdefiniowane przez użytkownika nie są obsługiwane.  
+- Funkcje zdefiniowane przez użytkownika nie są obsługiwane.  
   
 > [!NOTE]
 >  W poniższej procedurze użyto belowAvg.xsl i books.xml pliki z [instruktażu: Debugowanie arkusza stylów XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) tematu.  
   
 ### <a name="to-evaluate-an-xpath-expression"></a>Aby szacować wyrażenia XPath  
   
-1.  Wstaw punkt przerwania w `xsl:if` taga otwierającego.  
+1. Wstaw punkt przerwania w `xsl:if` taga otwierającego.  
   
-2.  Kliknij przycisk **debugowania XSL** na listwie narzędziowej edytora XML.  
+2. Kliknij przycisk **debugowania XSL** na listwie narzędziowej edytora XML.  
   
      Debuger rozpoczyna się i przerywa na `xsl:if` tagu.  
   
-3.  Kliknij prawym przyciskiem myszy i wybierz **QuickWatch**.  
+3. Kliknij prawym przyciskiem myszy i wybierz **QuickWatch**.  
   
      **QuickWatch** zostanie wyświetlone okno dialogowe.  
   
-4.  Wprowadź `./price/text()` w **wyrażenie** pole **QuickWatch** dialogowym i kliknij przycisk **to ponowne ocenienie**.  
+4. Wprowadź `./price/text()` w **wyrażenie** pole **QuickWatch** dialogowym i kliknij przycisk **to ponowne ocenienie**.  
   
      Cena bieżącego węzła książki, który pojawia się w **wartość** pole.  
   
-5.  Zmień wyrażenie XPath `./price/text() < $bookAverage` i kliknij przycisk **to ponowne ocenienie**.  
+5. Zmień wyrażenie XPath `./price/text() < $bookAverage` i kliknij przycisk **to ponowne ocenienie**.  
   
      **Wartość** pole pokazuje, że wyrażenie XPath daje w wyniku `true`.  
   

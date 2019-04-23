@@ -11,21 +11,21 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 18964ebdb1e011fb7e9fc17f19eadcc822c1d1bf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 66fc8065e81b8b93e73ec034a166e3d5645d4b6b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649124"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095831"
 ---
 # <a name="comparing-properties-and-items"></a>Porównanie właściwości i elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Właściwości programu MSBuild i elementy zarówno służą do przekazywania informacji do zadań, oceny warunków i przechowywania wartości, które można się odwoływać w całym pliku projektu.  
   
--   Właściwości to pary nazwa wartość. Aby uzyskać więcej informacji, zobacz [właściwości programu MSBuild](msbuild-properties1.md).  
+- Właściwości to pary nazwa wartość. Aby uzyskać więcej informacji, zobacz [właściwości programu MSBuild](msbuild-properties1.md).  
   
--   Elementy są obiektami, które zazwyczaj reprezentują pliki. Obiekty elementu może być skojarzony kolekcji metadanych. Metadane są pary nazwa wartość. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).  
+- Elementy są obiektami, które zazwyczaj reprezentują pliki. Obiekty elementu może być skojarzony kolekcji metadanych. Metadane są pary nazwa wartość. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).  
   
 ## <a name="scalars-and-vectors"></a>Wartości skalarnych i wektory  
  Ponieważ właściwości programu MSBuild są pary nazwa wartość, które mają tylko jedną wartość ciągu, są często określane jako *skalarne*. Ponieważ typy elementów MSBuild to listy elementów, są często określane jako *wektor*. Jednak w praktyce właściwości może reprezentować wiele wartości i typów elementów może mieć zero lub jeden elementów.  
@@ -96,15 +96,15 @@ Właściwości programu MSBuild i elementy zarówno służą do przekazywania in
   
 - W fazie obliczania kompilacji:  
   
-  -   Właściwości są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane. Funkcje właściwości są wykonywane. Wartości właściwości w $(PropertyName) formularza zostaną rozwinięte w wyrażeniach. Ustawiono wartość właściwości rozszerzonej wyrażenia.  
+  - Właściwości są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane. Funkcje właściwości są wykonywane. Wartości właściwości w $(PropertyName) formularza zostaną rozwinięte w wyrażeniach. Ustawiono wartość właściwości rozszerzonej wyrażenia.  
   
-  -   Definicje elementów są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane. Funkcje właściwości już zostały rozszerzone w wyrażeniach. Metadane wartości są ustawiane na rozwinięty wyrażeń.  
+  - Definicje elementów są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane. Funkcje właściwości już zostały rozszerzone w wyrażeniach. Metadane wartości są ustawiane na rozwinięty wyrażeń.  
   
-  -   Typy elementów są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane. Wartości elementów w @(ItemType) formularza zostaną rozwinięte. Przekształceń elementów również są rozwijane. W wyrażeniach w już zostały rozszerzone funkcje właściwości i wartości. Wartości elementów listy i metadanych są ustawiane na rozwinięty wyrażenia.  
+  - Typy elementów są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane. Wartości elementów w @(ItemType) formularza zostaną rozwinięte. Przekształceń elementów również są rozwijane. W wyrażeniach w już zostały rozszerzone funkcje właściwości i wartości. Wartości elementów listy i metadanych są ustawiane na rozwinięty wyrażenia.  
   
 - W fazie wykonanie procesu kompilacji:  
   
-  -   Właściwości i elementy, które są zdefiniowane w ramach obiekty docelowe są oceniane razem w kolejności, w jakiej są wyświetlane. Funkcje właściwości są wykonywane, i wartości właściwości zostaną rozwinięte w wyrażeniach. Wartości elementów i przekształceń elementów również są rozwijane. Wartości właściwości elementu typu wartości i wartości metadanych są ustawione na rozwinięty wyrażeń.  
+  - Właściwości i elementy, które są zdefiniowane w ramach obiekty docelowe są oceniane razem w kolejności, w jakiej są wyświetlane. Funkcje właściwości są wykonywane, i wartości właściwości zostaną rozwinięte w wyrażeniach. Wartości elementów i przekształceń elementów również są rozwijane. Wartości właściwości elementu typu wartości i wartości metadanych są ustawione na rozwinięty wyrażeń.  
   
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Subtelnych efektów kolejność obliczania  
  W fazie oceny kompilacji oceny właściwości poprzedza obliczania wartości elementu. Niemniej jednak właściwości mogą mieć wartości, które wydają się zależy od wartości elementu. Rozważmy poniższy skrypt.  

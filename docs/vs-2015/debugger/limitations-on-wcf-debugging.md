@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b42eecb5c620e911e448728678781ee32ccb5ca0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3faa57a0a2ca413898364c2d4ad1891df85f1ce8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777913"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095103"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Ograniczenia debugowania WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Istnieją trzy sposoby, aby można było rozpocząć debugowanie usługi WCF:
 ## <a name="limitations-on-stepping-into-a-service"></a>Ograniczenia dotyczące Wkraczanie do usługi  
  Aby wkraczać do usługi z aplikacji klienckich, które jest debugowany, muszą być spełnione następujące warunki:  
   
--   Klient musi wywołać usługę za pomocą obiektu klienta synchroniczne.  
+- Klient musi wywołać usługę za pomocą obiektu klienta synchroniczne.  
   
--   Operacja Umowy nie może być jednokierunkowe.  
+- Operacja Umowy nie może być jednokierunkowe.  
   
--   Jeśli serwer jest asynchroniczne, nie można wyświetlić pełny stos wywołania, gdy są wykonywane kod wewnątrz usługi.  
+- Jeśli serwer jest asynchroniczne, nie można wyświetlić pełny stos wywołania, gdy są wykonywane kod wewnątrz usługi.  
   
--   Debugowanie musi być włączone w pliku Web.config lub app.config następującym kodem:  
+- Debugowanie musi być włączone w pliku Web.config lub app.config następującym kodem:  
   
     ```  
     <system.web>  
@@ -62,13 +62,13 @@ Istnieją trzy sposoby, aby można było rozpocząć debugowanie usługi WCF:
 ## <a name="limitations-on-automatic-attach-to-a-service"></a>Ograniczenia dotyczące automatyczne dołączanie do usługi  
  Automatyczne dołączanie do usługi ma następujące ograniczenia:  
   
--   Usługa musi być częścią [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania debugowania.  
+- Usługa musi być częścią [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania debugowania.  
   
--   Usługa musi być obsługiwana. Może być częścią projektu witryny sieci Web (System plików i HTTP), projekt aplikacji sieci Web (System plików i HTTP) lub projektu biblioteki usługi WCF. Projekty biblioteki usługi WCF może być Usługa biblioteki lub biblioteki usługi przepływu pracy.  
+- Usługa musi być obsługiwana. Może być częścią projektu witryny sieci Web (System plików i HTTP), projekt aplikacji sieci Web (System plików i HTTP) lub projektu biblioteki usługi WCF. Projekty biblioteki usługi WCF może być Usługa biblioteki lub biblioteki usługi przepływu pracy.  
   
--   Usługa musi być wywoływane z klienta programu WCF.  
+- Usługa musi być wywoływane z klienta programu WCF.  
   
--   Debugowanie musi być włączone w pliku Web.config lub app.config następującym kodem:  
+- Debugowanie musi być włączone w pliku Web.config lub app.config następującym kodem:  
   
     ```  
     <system.web>  

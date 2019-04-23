@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a29d98455ccf796f331513c7abf5e679e55af8b5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 043db1aca02a82abe08786466f4b47213d09540d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669474"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086029"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Brakuje właściwości połączenia w pliku ustawień aplikacji lub jest ona niepoprawna
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Właściwości połączenia w pliku ustawień aplikacji jest brakujące lub niep
   
 ### <a name="to-respond-to-this-message"></a>Aby odpowiedzieć na tę wiadomość  
   
--   Kliknij przycisk **OK**. Informacje o połączeniu, który jest zawarty w pliku dbml jest dodawany do ustawień aplikacji.  
+- Kliknij przycisk **OK**. Informacje o połączeniu, który jest zawarty w pliku dbml jest dodawany do ustawień aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

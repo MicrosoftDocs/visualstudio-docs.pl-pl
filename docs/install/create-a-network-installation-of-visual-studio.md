@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5e499e54a7cf1c5c50a625cfe03482202e3a1f3f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c727b31f353015ca6f43157c4b6afc67339526f0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58857428"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085002"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Tworzenie instalacji sieciowej programu Visual Studio
 
@@ -153,6 +153,7 @@ Poniżej przedstawiono kilka przykładów sposobu tworzenia niestandardowego uk�
     ```cmd
     vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
     ```
+
 ::: moniker range="vs-2017"
 
 ### <a name="new-in-version-153"></a>Nowość w wersji 15.3
@@ -194,11 +195,13 @@ vs_enterprise.exe --layout c:\VSLayout --all
 Administratorzy mogą wdrożyć Visual Studio na klienckich stacjach roboczych w skrypcie instalacji. Lub użytkowników, którzy mają uprawnienia administratora, można uruchomić Instalatora bezpośrednio z poziomu udziału, aby zainstalować program Visual Studio na swojej maszynie.
 
 * Użytkownicy mogą zainstalować, uruchamiając następujące polecenie: <br>
+
     ```cmd
     \\server\products\VS\vs_enterprise.exe
     ```
 
 * Administratorzy mogą instalować w trybie nienadzorowanym, uruchamiając następujące polecenie:
+
     ```cmd
     \server\products\VS\vs_enterprise.exe --quiet --wait --norestart
     ```
@@ -270,6 +273,7 @@ Inne opcje pomocy technicznej dostępne, mamy zbyt. Aby uzyskać listę, zobacz 
 
 * [Aktualizowanie instalacji sieciowej programu Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Sterowanie aktualizacjami na potrzeby wdrożenia oparte na sieci programu Visual Studio](controlling-updates-to-visual-studio-deployments.md)
+* [Cyklu życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing/)
 * [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)

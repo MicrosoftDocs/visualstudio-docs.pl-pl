@@ -14,19 +14,19 @@ ms.assetid: 1a467040-4702-4178-848f-418a5974e907
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 691f7aff61a8a2bfae6444540afe9a28a200278d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 31673205a7ca94783985e0249c5664b4bbca6147
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840435"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073985"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>Długość tablicy musi być skończony dodatnią liczbą całkowitą
 Wywołujesz **tablicy** Konstruktor z argumentem, który nie jest liczbą całkowitą (liczby całkowite składają się z zera, a także zestaw dodatnie liczby całkowite).  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Użyj dodatnie liczby całkowite, tylko wtedy, gdy jest to utworzenie nowego `Array` obiektu. Jeśli chcesz utworzyć tablicy z pojedynczy element, który nie jest liczbą całkowitą, należy to zrobić w dwóch etapach. Najpierw Utwórz tablicę z jednym elementem, a następnie umieść wartość w pierwszym elemencie (array[0]). Oto przykład, który generuje ten błąd.  
+- Użyj dodatnie liczby całkowite, tylko wtedy, gdy jest to utworzenie nowego `Array` obiektu. Jeśli chcesz utworzyć tablicy z pojedynczy element, który nie jest liczbą całkowitą, należy to zrobić w dwóch etapach. Najpierw Utwórz tablicę z jednym elementem, a następnie umieść wartość w pierwszym elemencie (array[0]). Oto przykład, który generuje ten błąd.  
   
     ```JavaScript  
     var piArray = new Array(3.14159);  

@@ -10,12 +10,12 @@ ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 80d2666fc40fa561a0e2993ca50edd0dcf72dbc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4302e7eabb8e731a4332116956614643a4b95ef2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799882"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076789"
 ---
 # <a name="opening-a-dynamic-tool-window"></a>Otwieranie dynamicznego okna narzędzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Okna narzędzi zwykle są otwierane polecenie menu lub równoważne skrót klawi
   
 ### <a name="to-open-a-dynamic-tool-window"></a>Aby otworzyć dynamicznego okna narzędzi  
   
-1.  Utwórz projekt VSIX, o nazwie **DynamicToolWindow** i dodać szablon elementu okno narzędzia o nazwie **DynamicWindowPane.cs**. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).  
+1. Utwórz projekt VSIX, o nazwie **DynamicToolWindow** i dodać szablon elementu okno narzędzia o nazwie **DynamicWindowPane.cs**. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-2.  W pliku DynamicWindowPanePackage.cs odnaleźć deklaracji DynamicWindowPanePackage. Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> i atrybuty T:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute zarejestrować okna narzędzia.  
+2. W pliku DynamicWindowPanePackage.cs odnaleźć deklaracji DynamicWindowPanePackage. Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> i atrybuty T:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute zarejestrować okna narzędzia.  
   
     ```vb  
     [[ProvideToolWindow(typeof(DynamicWindowPane)]  
@@ -52,6 +52,6 @@ Okna narzędzi zwykle są otwierane polecenie menu lub równoważne skrót klawi
   
      Rejestruje to okna narzędzia o nazwie DynamicWindowPane jako przejściowe okno, które nie są zachowywane w przypadku zamknięcia i ponownego otworzenia programu Visual Studio. Zostanie otwarty DynamicWindowPane zawsze wtedy, gdy <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string> stosuje i zamknięte w inny sposób.  
   
-3.  Skompiluj projekt, a następnie rozpocząć debugowanie. Wystąpienie eksperymentalne powinna zostać wyświetlona. Nie powinien być widoczny okna narzędzia.  
+3. Skompiluj projekt, a następnie rozpocząć debugowanie. Wystąpienie eksperymentalne powinna zostać wyświetlona. Nie powinien być widoczny okna narzędzia.  
   
-4.  Otwórz projekt w doświadczalnym wystąpieniu. Okno narzędzia powinna zostać wyświetlona.
+4. Otwórz projekt w doświadczalnym wystąpieniu. Okno narzędzia powinna zostać wyświetlona.

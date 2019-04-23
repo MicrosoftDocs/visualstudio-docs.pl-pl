@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 83c2de11e31dced3be48e390d8bd5b21d57d2092
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a9298f57e3b1f4a05effcb82a39e14503c9cbf74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668503"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090762"
 ---
 # <a name="item-definitions"></a>Definicje elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ ms.locfileid: "59668503"
   
  *ItemDefinitionGroup —* element pojawia się natychmiast po [projektu](../msbuild/project-element-msbuild.md) elementu w pliku projektu. Definicje elementów zapewniają następujące funkcje:  
   
--   Można zdefiniować metadane domyślnie globalne dla elementów poza obiekt docelowy. Oznacza to tych samych metadanych ma zastosowanie do wszystkich elementów określonego typu.  
+- Można zdefiniować metadane domyślnie globalne dla elementów poza obiekt docelowy. Oznacza to tych samych metadanych ma zastosowanie do wszystkich elementów określonego typu.  
   
--   Typy elementów może mieć wielu definicji. Dodanie specyfikacje dodatkowe metadane na typ specyfikację ostatni ma pierwszeństwo. \(Metadane następuje po takiej samej kolejności importu następujące właściwości czynności.\)  
+- Typy elementów może mieć wielu definicji. Dodanie specyfikacje dodatkowe metadane na typ specyfikację ostatni ma pierwszeństwo. \(Metadane następuje po takiej samej kolejności importu następujące właściwości czynności.\)  
   
--   Metadane mogą być dodatku. Na przykład CDefines wartości są zbierane warunkowo, w zależności od właściwości, które są ustawiane. Na przykład `MT;STD_CALL;DEBUG;UNICODE`.  
+- Metadane mogą być dodatku. Na przykład CDefines wartości są zbierane warunkowo, w zależności od właściwości, które są ustawiane. Na przykład `MT;STD_CALL;DEBUG;UNICODE`.  
   
--   Metadane mogą zostać usunięte.  
+- Metadane mogą zostać usunięte.  
   
--   Warunki może służyć do kontrolowania włączenia metadanych.  
+- Warunki może służyć do kontrolowania włączenia metadanych.  
   
 ## <a name="item-metadata-default-values"></a>Element metadanych domyślne wartości  
  Metadane elementu, który jest zdefiniowany w ItemDefinitionGroup — jest po prostu deklarację domyślnej metadanych. Metadane nie ma zastosowania, chyba że zdefiniujesz elementu, który używa ItemGroup zawiera wartości metadanych.  
@@ -66,21 +66,21 @@ ms.locfileid: "59668503"
 ## <a name="value-sources"></a>Wartość źródła  
  Wartości metadanych, który jest zdefiniowany w ItemDefinitionGroup — mogą pochodzić z różnych źródeł, w następujący sposób:  
   
--   PropertyGroup — właściwość  
+- PropertyGroup — właściwość  
   
--   ItemDefinitionGroup — element  
+- ItemDefinitionGroup — element  
   
--   Przekształć element ItemDefinitionGroup — element  
+- Przekształć element ItemDefinitionGroup — element  
   
--   Zmienna środowiskowa  
+- Zmienna środowiskowa  
   
--   Global — właściwość \(z wiersza polecenia MSBuild.exe\)  
+- Global — właściwość \(z wiersza polecenia MSBuild.exe\)  
   
--   Właściwości zastrzeżone  
+- Właściwości zastrzeżone  
   
--   Dobrze\-znanych metadanych elementu z ItemDefinitionGroup —  
+- Dobrze\-znanych metadanych elementu z ItemDefinitionGroup —  
   
--   Sekcja CDATA \< \! \[CDATA\[tutaj niczego nie jest analizowana\]\]\>  
+- Sekcja CDATA \< \! \[CDATA\[tutaj niczego nie jest analizowana\]\]\>  
   
 > [!NOTE]
 >  Metadane elementu z ItemGroup nie jest przydatne w deklaracji metadanych ItemDefinitionGroup —, ponieważ ItemDefinitionGroup — elementy są przetwarzane przed ItemGroup elementów.  

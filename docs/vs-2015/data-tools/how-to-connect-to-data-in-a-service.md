@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a13d0c8ff1383e27f9401f6549c422a8fef96e99
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e3361ba51607924ee0bd0701f6f2dddf12334f93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650047"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090384"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Instrukcje: Łączenie z danymi w usłudze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,20 +43,20 @@ ms.locfileid: "59650047"
   
 ### <a name="to-connect-your-application-to-a-service"></a>Aby połączyć aplikację z usługą  
   
-1.  Na **danych** menu, kliknij przycisk **Dodaj nowe źródło danych**.  
+1. Na **danych** menu, kliknij przycisk **Dodaj nowe źródło danych**.  
   
-2.  Wybierz **usługi** na **wybierz typ źródła danych** strony, a następnie kliknij przycisk **dalej**.  
+2. Wybierz **usługi** na **wybierz typ źródła danych** strony, a następnie kliknij przycisk **dalej**.  
   
-3.  Wprowadź adres usługi, o których chcesz używać, lub kliknij przycisk **odnajdź** lokalizowania usług w bieżącym rozwiązaniu, a następnie kliknij przycisk **Przejdź**.  
+3. Wprowadź adres usługi, o których chcesz używać, lub kliknij przycisk **odnajdź** lokalizowania usług w bieżącym rozwiązaniu, a następnie kliknij przycisk **Przejdź**.  
   
-4.  Opcjonalnie, nową **Namespace** można wpisać zamiast wartości domyślne.  
+4. Opcjonalnie, nową **Namespace** można wpisać zamiast wartości domyślne.  
   
     > [!NOTE]
     >  Kliknij przycisk **zaawansowane** otworzyć [skonfigurować usługi odwołania — okno dialogowe](../data-tools/configure-service-reference-dialog-box.md).  
   
-5.  Kliknij przycisk **OK** można dodać odwołanie do usługi do projektu.  
+5. Kliknij przycisk **OK** można dodać odwołanie do usługi do projektu.  
   
-6.  Kliknij przycisk **Zakończ**.  
+6. Kliknij przycisk **Zakończ**.  
   
      Źródło danych jest dodawane do **źródeł danych** okna.  
   
@@ -64,7 +64,7 @@ ms.locfileid: "59650047"
   
 #### <a name="to-add-functionality-to-your-application"></a>Aby dodać funkcje do aplikacji  
   
--   Wybierz element w **źródeł danych** okna i przeciągnij je na formularz, aby utworzyć formanty powiązane. Aby uzyskać więcej informacji, zobacz [powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
+- Wybierz element w **źródeł danych** okna i przeciągnij je na formularz, aby utworzyć formanty powiązane. Aby uzyskać więcej informacji, zobacz [powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Powiązywanie kontrolek WPF z usługą danych programu WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)   

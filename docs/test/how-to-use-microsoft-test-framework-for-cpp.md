@@ -7,22 +7,22 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f4508856fd2aa280a9e9d62c7e4add9e6ca383c1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 14f2b1e5267bd5c9ce35375c6cf6438406aa3e80
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649226"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072061"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Użyj testów jednostkowych Microsoft Framework dla języka C++ w programie Visual Studio
 
 Framework testów jednostkowych Microsoft dla języka C++ jest domyślnie włączone w **programowanie aplikacji klasycznych w języku C++** obciążenia.
 
-##  <a name="separate_project"></a> Do pisania testów jednostkowych w osobnym projekcie
+## <a name="separate_project"></a> Do pisania testów jednostkowych w osobnym projekcie
 
 Zazwyczaj uruchamiasz swój kod testu we własnym projekcie, w tym samym rozwiązaniu, jako kod, który ma zostać przetestowana. Aby skonfigurować i skonfigurować nowy projekt testowy, zobacz [pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md).
 
-##  <a name="same_project"></a> Pisanie testów jednostkowych w tym samym projekcie
+## <a name="same_project"></a> Pisanie testów jednostkowych w tym samym projekcie
 
 W niektórych przypadkach, na przykład podczas testowania — eksportowane funkcje w bibliotece DLL może być konieczne Utwórz testy w tym samym projekcie jako program, które testujesz. Pisanie testów jednostkowych w tym samym projekcie:
 
@@ -39,7 +39,7 @@ W niektórych przypadkach, na przykład podczas testowania — eksportowane funk
 
 2. Dodaj plik testu jednostkowego języka C++:
 
-   -   Kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj** > **nowy element** > **testu jednostkowego języka C++**.
+   - Kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj** > **nowy element** > **testu jednostkowego języka C++**.
 
 ## <a name="write-the-tests"></a>Pisanie testów
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bcaa3688486831f83712dc0cf0ee3e4a17c4a22
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bbe2c216a9293ddc8c5c1212957c2987924d14e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918380"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089292"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Korzystanie z okna wyników metryk kodów
 
@@ -48,15 +48,15 @@ Można filtrować wyniki, które są wyświetlane w **wyników metryk kodów** o
 
 ### <a name="to-filter-the-code-metrics-results"></a>Do filtrowania wyników metryk kodów
 
-1.  Z **filtru** , wybierz nazwę kolumny na liście.
+1. Z **filtru** , wybierz nazwę kolumny na liście.
 
-2.  W **Min**, wpisz wartość minimalna, który będzie wyświetlany.
+2. W **Min**, wpisz wartość minimalna, który będzie wyświetlany.
 
-3.  W **Max**, wpisz wartość maksymalna ma być wyświetlany.
+3. W **Max**, wpisz wartość maksymalna ma być wyświetlany.
 
-4.  Kliknij przycisk **Zastosuj filtr** przycisku.
+4. Kliknij przycisk **Zastosuj filtr** przycisku.
 
-5.  Aby wyświetlić szczegóły wyniku, rozwiń drzewo hierarchii.
+5. Aby wyświetlić szczegóły wyniku, rozwiń drzewo hierarchii.
 
 ## <a name="add-remove-and-rearrange-data-columns"></a>Dodawanie, usuwanie i zmiana rozmieszczenia kolumn danych
 
@@ -88,23 +88,23 @@ Aby uzyskać więcej informacji na temat tablic Azure elementów roboczych, zoba
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Aby utworzyć element roboczy na podstawie wyniku
 
-1.  Kliknij prawym przyciskiem myszy wynik.
+1. Kliknij prawym przyciskiem myszy wynik.
 
-2.  Wskaż **Utwórz element pracy**, a następnie kliknij typ elementu roboczego, w której chcesz utworzyć (**usterki**, **zadań**, i tak dalej).
+2. Wskaż **Utwórz element pracy**, a następnie kliknij typ elementu roboczego, w której chcesz utworzyć (**usterki**, **zadań**, i tak dalej).
 
-3.  Wykonaj formularz elementu roboczego, wypełniając we wszystkich wymaganych polach.
+3. Wykonaj formularz elementu roboczego, wypełniając we wszystkich wymaganych polach.
 
-4.  Na **pliku** menu, kliknij przycisk **Zapisz wszystko** można zapisać elementu roboczego.
+4. Na **pliku** menu, kliknij przycisk **Zapisz wszystko** można zapisać elementu roboczego.
 
 ### <a name="to-create-a-bug-based-on-a-result"></a>Aby utworzyć usterkę, na podstawie wyniku
 
-1.  Kliknij wynik, aby go zaznaczyć.
+1. Kliknij wynik, aby go zaznaczyć.
 
-2.  Kliknij przycisk **Utwórz element roboczy** przycisku.
+2. Kliknij przycisk **Utwórz element roboczy** przycisku.
 
-3.  Wykonaj formularz elementu roboczego, wypełniając we wszystkich wymaganych polach.
+3. Wykonaj formularz elementu roboczego, wypełniając we wszystkich wymaganych polach.
 
-4.  Na **pliku** menu, kliknij przycisk **Zapisz wszystko** można zapisać elementu roboczego.
+4. Na **pliku** menu, kliknij przycisk **Zapisz wszystko** można zapisać elementu roboczego.
 
 ## <a name="see-also"></a>Zobacz także
 

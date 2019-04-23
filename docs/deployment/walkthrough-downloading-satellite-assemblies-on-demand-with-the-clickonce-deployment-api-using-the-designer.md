@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c70782190bbfd76f5536a68eb597dbf3d122e773
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 3af25c298970d9fe7f4a1442dedaf3af9f0172d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323831"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095441"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Przewodnik: Pobieranie zestawów satelickich na żądanie z wdrożeniem ClickOnce interfejsu API przy użyciu narzędzia Projektant
 Aplikacje Windows Forms można skonfigurować dla wielu języków przy użyciu zestawów satelickich. A *zestawie satelickim* to zestaw, który zawiera zasoby aplikacji dla kultury innej niż aplikacja domyślna kultura.
@@ -39,39 +39,39 @@ Aplikacje Windows Forms można skonfigurować dla wielu języków przy użyciu z
 
 ### <a name="to-mark-satellite-assemblies-as-optional"></a>Aby oznaczyć jako opcjonalne zestawy satelickie
 
-1.  Skompilowanie projektu. Spowoduje to wygenerowanie zestawów satelickich dla wszystkich kultur, w których lokalizujesz do.
+1. Skompilowanie projektu. Spowoduje to wygenerowanie zestawów satelickich dla wszystkich kultur, w których lokalizujesz do.
 
-2.  Kliknij prawym przyciskiem myszy nazwę projektu w Eksploratorze rozwiązań, a następnie kliknij przycisk **właściwości**.
+2. Kliknij prawym przyciskiem myszy nazwę projektu w Eksploratorze rozwiązań, a następnie kliknij przycisk **właściwości**.
 
-3.  Kliknij przycisk **Publikuj** kartę, a następnie kliknij przycisk **pliki aplikacji**.
+3. Kliknij przycisk **Publikuj** kartę, a następnie kliknij przycisk **pliki aplikacji**.
 
-4.  Wybierz **Pokaż wszystkie pliki** pole wyboru, aby wyświetlić zestawy satelickie. Domyślnie wszystkie zestawy satelickie zostaną uwzględnione we wdrożeniu i będą widoczne w tym oknie dialogowym.
+4. Wybierz **Pokaż wszystkie pliki** pole wyboru, aby wyświetlić zestawy satelickie. Domyślnie wszystkie zestawy satelickie zostaną uwzględnione we wdrożeniu i będą widoczne w tym oknie dialogowym.
 
      Zestawu satelickiego mają nazwy w postaci  *\<isoCode > \ApplicationName.resources.dll*, gdzie \<isoCode > jest w formacie RFC 1766 identyfikator języka.
 
-5.  Kliknij przycisk **New** w **grupa pobierania** listy dla każdego identyfikatora języka. Po wyświetleniu monitu Pobierz nazwę grupy, należy wprowadzić identyfikator języka. Na przykład dla zestawu satelickiego japońskiego, należy określić nazwę grupy pobierania `ja-JP`.
+5. Kliknij przycisk **New** w **grupa pobierania** listy dla każdego identyfikatora języka. Po wyświetleniu monitu Pobierz nazwę grupy, należy wprowadzić identyfikator języka. Na przykład dla zestawu satelickiego japońskiego, należy określić nazwę grupy pobierania `ja-JP`.
 
-6.  Zamknij **pliki aplikacji** okno dialogowe.
+6. Zamknij **pliki aplikacji** okno dialogowe.
 
 ### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Aby pobrać zestawów satelickich na żądanie w języku C\#
 
-1.  Otwórz *Program.cs* pliku. Jeśli nie widzisz tego pliku w Eksploratorze rozwiązań, wybierz swój projekt, a na **projektu** menu, kliknij przycisk **Pokaż wszystkie pliki**.
+1. Otwórz *Program.cs* pliku. Jeśli nie widzisz tego pliku w Eksploratorze rozwiązań, wybierz swój projekt, a na **projektu** menu, kliknij przycisk **Pokaż wszystkie pliki**.
 
-2.  Użyj poniższego kodu, aby pobrać zestawu satelickiego odpowiednie i uruchomić aplikację.
+2. Użyj poniższego kodu, aby pobrać zestawu satelickiego odpowiednie i uruchomić aplikację.
 
      [!code-csharp[ClickOnce.SatelliteAssemblies#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.cs)]
 
 ### <a name="to-download-satellite-assemblies-on-demand-in-visual-basic"></a>Aby pobrać zestawów satelickich na żądanie w języku Visual Basic
 
-1.  W **właściwości** okna aplikacji, kliknij przycisk **aplikacji** kartę.
+1. W **właściwości** okna aplikacji, kliknij przycisk **aplikacji** kartę.
 
-2.  W dolnej części strony karty kliknij **Wyświetl zdarzenia aplikacji**.
+2. W dolnej części strony karty kliknij **Wyświetl zdarzenia aplikacji**.
 
-3.  Dodaj następujące instrukcje importu na początku *ApplicationEvents.VB* pliku.
+3. Dodaj następujące instrukcje importu na początku *ApplicationEvents.VB* pliku.
 
      [!code-vb[ClickOnce.SatelliteAssembliesVB#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]
 
-4.  Dodaj następujący kod do `MyApplication` klasy.
+4. Dodaj następujący kod do `MyApplication` klasy.
 
      [!code-vb[ClickOnce.SatelliteAssembliesVB#2](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.vb)]
 

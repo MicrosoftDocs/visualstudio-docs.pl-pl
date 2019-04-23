@@ -12,12 +12,12 @@ ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a7650fc8a2ba297ccd3bc2a87be72a3f70062a18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2b54c6ba8f3daefa53f00478c1d7e4573311cfb6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782678"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061349"
 ---
 # <a name="project-property-user-interface"></a>Interfejs użytkownika właściwości projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ Podtypu projektu można użyć elementów w projekcie **stron właściwości** o
   
 - Podtypu projektu można określić odpowiednich identyfikatorów CatID dla różnych obiektów rozszerzalnej podstawowego projektu w czasie wykonywania, pobierając następujące <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> wartości:  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
   Aby określić identyfikatorów CatID zakresu projektu, podtypu projektu pobiera powyżej właściwości <xref:Microsoft.VisualStudio.VSConstants.VSITEMID> z `VSITEMID``typedef`. Podtypu projektu może być również kontrolować, które **strony właściwości** okna dialogowego pola strony są wyświetlane dla projektu, niezależnie od konfiguracji i zależne od konfiguracji. Niektóre podtypy projektów może być konieczne Usuń wbudowane strony i Dodaj określonych stron podtypu projektu. Aby włączyć to wywoływanych w projekcie zarządzanego klienta <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> metoda następujących właściwości:  
   

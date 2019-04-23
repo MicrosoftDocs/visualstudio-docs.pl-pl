@@ -8,56 +8,59 @@ ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c8d0dfb8a7758d0619557f6c54056cd88ec68771
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 87520a7e17d194d7f5cc28665a6f23466bface65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780065"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086432"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Udostępnione kolory dla programu Visual Studio
+
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Podczas projektowania interfejsu użytkownika, który używa wspólnych elementów powłoki programu Visual Studio lub chcesz, aby Twoje element interfejsu, aby były zgodne z podobne funkcje, umożliwia już istniejącymi nazwami tokenu w plikach definicji pakietu wybierz i przypisania kolorów. Gwarantuje to, że Twój interfejs użytkownika pozostaje zgodny z całego środowiska programu Visual Studio i że jest aktualizowana automatycznie po motywy są dodawane lub aktualizowane.
 
- W tym artykule opisano typowe elementy interfejsu użytkownika i token nazwy które używają, które można odwoływać się podczas kompilowania z podobnym interfejsem użytkownika. Dla określonych informacji dotyczących tych kolorów tokeny dostępu, zobacz [usługa VSColor](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).
+W tym artykule opisano typowe elementy interfejsu użytkownika i token nazwy które używają, które można odwoływać się podczas kompilowania z podobnym interfejsem użytkownika. Dla określonych informacji dotyczących tych kolorów tokeny dostępu, zobacz [usługa VSColor](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).
 
- Upewnij się, że prawidłowo używać nazw tokenu:
+Upewnij się, że prawidłowo używać nazw tokenu:
 
--   **Użyj tokenu nazw na podstawie funkcji, nie na samego koloru.** Typowe udostępnione kolory są skojarzone z elementami określonego interfejsu i są przeznaczone wyłącznie do użytku takie same lub podobne funkcje. Na przykład nie używaj ponownie plików kolor po naciśnięciu kombi dla Animacja postępu rotowania tylko dlatego, jak kolor. Funkcje pola kombi i animacji są różne, a Jeśli kolor skojarzony z zmiany pola kombi, mogą już być odpowiedni kolor w odniesieniu do danego elementu animacji. Spójnego używania koloru pomaga w poznaniu użytkowników i uniknąć pomyłek.
+- **Użyj tokenu nazw na podstawie funkcji, nie na samego koloru.** Typowe udostępnione kolory są skojarzone z elementami określonego interfejsu i są przeznaczone wyłącznie do użytku takie same lub podobne funkcje. Na przykład nie używaj ponownie plików kolor po naciśnięciu kombi dla Animacja postępu rotowania tylko dlatego, jak kolor. Funkcje pola kombi i animacji są różne, a Jeśli kolor skojarzony z zmiany pola kombi, mogą już być odpowiedni kolor w odniesieniu do danego elementu animacji. Spójnego używania koloru pomaga w poznaniu użytkowników i uniknąć pomyłek.
 
--   **Użyj kolorów tła i tekstu w poprawnej kombinacji.** Kolory tła, które są przeznaczone do użycia z tekstem będzie miał kolor tekstu. Nie używaj kolorów tekstu innego niż został określony dla w tle. Jeśli nie jest kolorem skojarzony tekst, nie należy używać tego kolor tła dla dowolnego powierzchni, w którym oczekujesz, że do wyświetlania tekstu. Inne kombinacje kolorów tekstu i tła może spowodować w interfejsie nie można go odczytać.
+- **Użyj kolorów tła i tekstu w poprawnej kombinacji.** Kolory tła, które są przeznaczone do użycia z tekstem będzie miał kolor tekstu. Nie używaj kolorów tekstu innego niż został określony dla w tle. Jeśli nie jest kolorem skojarzony tekst, nie należy używać tego kolor tła dla dowolnego powierzchni, w którym oczekujesz, że do wyświetlania tekstu. Inne kombinacje kolorów tekstu i tła może spowodować w interfejsie nie można go odczytać.
 
--   **Użyj kolorów kontrolki, które są odpowiednie dla ich lokalizacji.** W określonych stanach niektóre formanty programu Visual Studio nie mają osobne obramowania i kolory tła. Zamiast tego przejmą ich te kolory z powierzchni spodem. Upewnij się, zawsze używaj tokenów nazwy, które są odpowiednie dla lokalizacji, w którym umieszcza się kontrolka.
+- **Użyj kolorów kontrolki, które są odpowiednie dla ich lokalizacji.** W określonych stanach niektóre formanty programu Visual Studio nie mają osobne obramowania i kolory tła. Zamiast tego przejmą ich te kolory z powierzchni spodem. Upewnij się, zawsze używaj tokenów nazwy, które są odpowiednie dla lokalizacji, w którym umieszcza się kontrolka.
 
 > [!IMPORTANT]
->  Nie używaj tokenów w kategorii "Stronę startową" lub "Jabłecznik."
+> Nie używaj tokenów w kategorii "Stronę startową" lub "Jabłecznik."
 
 ## <a name="command-structures"></a>Polecenie struktury
 
-###  <a name="BKMK_CommandMenus"></a> Menu
- Menu może wystąpić w kilku miejscach w programie Visual Studio: główny pasek menu, osadzony w dokumencie lub narzędzia systemu windows lub kliknij prawym przyciskiem myszy w różnych miejscach w całej IDE. Implementacje menu skojarzone z innymi elementami interfejsu użytkownika zostały omówione w sekcji dla odpowiednich elementów. Zawsze należy używać implementacji standardowe menu oferowanych przez środowisko Visual Studio. Jednak w sporadycznych przypadkach możesz utracić dostęp do standardowego menu programu Visual Studio. W takich sytuacjach należy stosować następujących nazw tokenu, aby upewnić się, że Twój interfejs użytkownika są spójne z innych menu w programie Visual Studio.
+### <a name="BKMK_CommandMenus"></a> Menu
 
- ![Menu poprawek](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303 000_MenuRedline")
+Menu może wystąpić w kilku miejscach w programie Visual Studio: główny pasek menu, osadzony w dokumencie lub narzędzia systemu windows lub kliknij prawym przyciskiem myszy w różnych miejscach w całej IDE. Implementacje menu skojarzone z innymi elementami interfejsu użytkownika zostały omówione w sekcji dla odpowiednich elementów. Zawsze należy używać implementacji standardowe menu oferowanych przez środowisko Visual Studio. Jednak w sporadycznych przypadkach możesz utracić dostęp do standardowego menu programu Visual Studio. W takich sytuacjach należy stosować następujących nazw tokenu, aby upewnić się, że Twój interfejs użytkownika są spójne z innych menu w programie Visual Studio.
 
- Użyj...
- -   Kiedy należy utworzyć niestandardowe menu.
+![Menu poprawek](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303 000_MenuRedline")
+
+Użyj...
+- Kiedy należy utworzyć niestandardowe menu.
 
 - Jeśli masz nowy składnik interfejsu użytkownika, który chcesz dopasować menu programu Visual Studio.
 
-  Nie używaj...
-  kolor tła samodzielnie. Zawsze użyj kombinacji tła/pierwszego planu, jak określono.
+Nie używaj...
+kolor tła samodzielnie. Zawsze użyj kombinacji tła/pierwszego planu, jak określono.
 
 #### <a name="menu-title"></a>Tytuł menu
- Tytuły menu składają się z tła, obramowania i tekst tytułu, a także opcjonalnie symbol, zwykle w przypadku, gdy menu znajduje się na pasku poleceń.
 
- ![Tytuł menu poprawek](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303 001_MenuTitleRedline")
+Tytuły menu składają się z tła, obramowania i tekst tytułu, a także opcjonalnie symbol, zwykle w przypadku, gdy menu znajduje się na pasku poleceń.
 
- Użyj...
+![Tytuł menu poprawek](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303 001_MenuTitleRedline")
+
+Użyj...
 zawsze, gdy tworzysz tytuł menu niestandardowe.
 
- Nie używaj...
- -   dla wszystkich elementów, które nie chcesz zawsze odpowiada tytuł menu.
+Nie używaj...
+- dla wszystkich elementów, które nie chcesz zawsze odpowiada tytuł menu.
 
 - w dowolnej kombinacji tła/pierwszego planu, inny niż określony.
 
@@ -192,15 +195,16 @@ zawsze, gdy tworzysz tytuł menu niestandardowe.
   Brak
 
 #### <a name="menu"></a>Menu
- Element menu poszczególnych składa się z tekst menu i opcjonalnej ikony, pole wyboru lub symbol podmenu. Jego tekstu i tła kolorów zmiana po najechaniu wskaźnikiem. Token ten kolor to para tła/pierwszego planu.
 
- ![Elementy menu poprawek](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303 009_MenuItemRedline")
+Element menu poszczególnych składa się z tekst menu i opcjonalnej ikony, pole wyboru lub symbol podmenu. Jego tekstu i tła kolorów zmiana po najechaniu wskaźnikiem. Token ten kolor to para tła/pierwszego planu.
 
- Użyj...
+![Elementy menu poprawek](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303 009_MenuItemRedline")
+
+Użyj...
 Aby uzyskać wszystkie listy rozwijanej, który jest uruchamiany z paska menu i paska poleceń.
 
- Nie używaj...
- -   Aby uzyskać wszystkie listy rozwijanej, która występuje w kontekście innego.
+Nie używaj...
+- Aby uzyskać wszystkie listy rozwijanej, która występuje w kontekście innego.
 
 - w dowolnej kombinacji tła/pierwszego planu, inny niż określony.
 
@@ -351,32 +355,34 @@ Aby uzyskać wszystkie listy rozwijanej, który jest uruchamiany z paska menu i 
   `Environment.CommandBarSelectedIconDisabled`
 
 ### <a name="command-bar"></a>Pasek poleceń
- Na pasku poleceń może znajdować się w wielu miejscach w programie Visual Studio IDE, głównie półki polecenia i narzędzia embedded na platformie lub okna dokumentu.
 
- Ogólnie rzecz biorąc należy zawsze używać implementacja paska poleceń standardowych, które są dostarczane przez środowisko Visual Studio. Przy użyciu standardowego mechanizmu zapewnia, są poprawnie wyświetlane wszystkie szczegóły visual i że elementów interaktywnych będą zachowywać się spójne z innymi formantami paska poleceń programu Visual Studio. Jednak jeśli jest to niezbędne do tworzenia własnego paska poleceń, upewnij się, że poprawnie za pomocą następujących nazw tokenu stylu.
+Na pasku poleceń może znajdować się w wielu miejscach w programie Visual Studio IDE, głównie półki polecenia i narzędzia embedded na platformie lub okna dokumentu.
 
- ![Pasek poleceń poprawek](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303 018_CommandBarRedline")
+Ogólnie rzecz biorąc należy zawsze używać implementacja paska poleceń standardowych, które są dostarczane przez środowisko Visual Studio. Przy użyciu standardowego mechanizmu zapewnia, są poprawnie wyświetlane wszystkie szczegóły visual i że elementów interaktywnych będą zachowywać się spójne z innymi formantami paska poleceń programu Visual Studio. Jednak jeśli jest to niezbędne do tworzenia własnego paska poleceń, upewnij się, że poprawnie za pomocą następujących nazw tokenu stylu.
 
- ![Przycisk przepełnienie poprawek](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303 019_OverflowButtonRedline")
+![Pasek poleceń poprawek](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303 018_CommandBarRedline")
 
- Użyj...
+![Przycisk przepełnienie poprawek](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303 019_OverflowButtonRedline")
+
+Użyj...
 w miejscach osadzone polecenia pasek ale są one nie można użyć standardowego implementacja paska poleceń programu Visual Studio.
 
- Nie używaj...
- -   dla elementów interfejsu użytkownika, które nie są podobne do paska poleceń.
+Nie używaj...
+- dla elementów interfejsu użytkownika, które nie są podobne do paska poleceń.
 
--   Aby uzyskać inne niż te, dla których token nazwy zostały określone składniki paska poleceń.
+- Aby uzyskać inne niż te, dla których token nazwy zostały określone składniki paska poleceń.
 
 #### <a name="command-bar-group"></a>Grupy pasek poleceń
- Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i może zawierać dowolną liczbę przyciski, Podziel przyciski, menu rozwijane, pola kombi lub menu. Kolory dla tych formantów jest regulowane przez oddzielne nazwy tokenu i są omówione oddzielnie w innym miejscu, w tym przewodniku. Linii separatora jest używane do dzielenia grupy pasek poleceń do powiązanych podgrupy.
 
- ![Grupa paska poleceń poprawek](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303 020_CommandBarGroupRedline")
+Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i może zawierać dowolną liczbę przyciski, Podziel przyciski, menu rozwijane, pola kombi lub menu. Kolory dla tych formantów jest regulowane przez oddzielne nazwy tokenu i są omówione oddzielnie w innym miejscu, w tym przewodniku. Linii separatora jest używane do dzielenia grupy pasek poleceń do powiązanych podgrupy.
 
- Użyj...
+![Grupa paska poleceń poprawek](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303 020_CommandBarGroupRedline")
+
+Użyj...
 w miejscach osadzone polecenia pasek ale są one nie można użyć standardowego implementacja paska poleceń programu Visual Studio.
 
- Nie używaj...
- -   dla elementów interfejsu użytkownika, które nie są podobne do paska poleceń.
+Nie używaj...
+- dla elementów interfejsu użytkownika, które nie są podobne do paska poleceń.
 
 - Aby uzyskać inne niż te, dla których token nazwy zostały określone składniki paska poleceń.
 
@@ -407,15 +413,16 @@ w miejscach osadzone polecenia pasek ale są one nie można użyć standardowego
   `Environment.CommandBarToolBarSeparatorHighlight`
 
 #### <a name="command-icons"></a>Ikony poleceń
- ![Ikona polecenia poprawek](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303 021_CommandIconRedline1")
 
- ![Ikona polecenia poprawek](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303 022_CommandIconRedline2")
+![Ikona polecenia poprawek](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303 021_CommandIconRedline1")
 
- Użyj...
+![Ikona polecenia poprawek](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303 022_CommandIconRedline2")
+
+Użyj...
 dla przycisków, które zostaną umieszczone na pasku poleceń.
 
- Nie używaj...
- -   dla formantów, które mają własne nazwy tokenu.
+Nie używaj...
+- dla formantów, które mają własne nazwy tokenu.
 
 - w dowolnej kombinacji tła/pierwszego planu, inny niż określony.
 
@@ -551,20 +558,20 @@ dla przycisków, które zostaną umieszczone na pasku poleceń.
 
   Brak
 
-####  <a name="BKMK_CommandComboBox"></a> Pole kombi
+#### <a name="BKMK_CommandComboBox"></a> Pole kombi
 
 > [!IMPORTANT]
->  Pola kombi są podobne do list rozwijanych, ale zawierają region tekst do edycji. Jeśli z listy rozwijanej nie obejmuje regionu tekst do edycji, należy użyć tokenów kolor, znajdującym się [listy rozwijanej](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
+> Pola kombi są podobne do list rozwijanych, ale zawierają region tekst do edycji. Jeśli z listy rozwijanej nie obejmuje regionu tekst do edycji, należy użyć tokenów kolor, znajdującym się [listy rozwijanej](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
 
- ![Pole kombi poprawek](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 029_ComboBoxRedline")
+![Pole kombi poprawek](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 029_ComboBoxRedline")
 
- Użyj...
- -   Podczas tworzenia pola kombi niestandardowych.
+Użyj...
+- Podczas tworzenia pola kombi niestandardowych.
 
 - Podczas tworzenia formantu paska poleceń, która jest podobna do pola kombi.
 
   Nie używaj...
-  -   dla wszystkich elementów, nie należy zawsze dopasować polecenia paska.
+  - dla wszystkich elementów, nie należy zawsze dopasować polecenia paska.
 
 - Jeśli masz dostęp do pola kombi ze stylem.
 
@@ -798,18 +805,18 @@ dla przycisków, które zostaną umieszczone na pasku poleceń.
 
   `Environment.ComboBoxDisabledGlyph`
 
-####  <a name="BKMK_CommandDropDown"></a> Lista rozwijana
+#### <a name="BKMK_CommandDropDown"></a> Lista rozwijana
 
 > [!IMPORTANT]
->  Listy rozwijane są podobne do pola kombi, ale brak regionów tekst do edycji. Jeśli z listy rozwijanej zawiera tekst do edycji regionu, należy użyć tokenów kolor, znajdującym się [pola kombi](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
+> Listy rozwijane są podobne do pola kombi, ale brak regionów tekst do edycji. Jeśli z listy rozwijanej zawiera tekst do edycji regionu, należy użyć tokenów kolor, znajdującym się [pola kombi](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
 
- ![Upuść&#45;poprawek w dół](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")
+![Upuść&#45;poprawek w dół](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")
 
- Użyj...
+Użyj...
 Podczas tworzenia kontrolki niestandardowej listy rozwijanej.
 
- Nie używaj...
- -   dla wszystkich elementów, który nie jest podobna do listy rozwijanej.
+Nie używaj...
+- dla wszystkich elementów, który nie jest podobna do listy rozwijanej.
 
 - dla pola kombi lub przyciski dzielone.
 
@@ -1010,15 +1017,16 @@ Podczas tworzenia kontrolki niestandardowej listy rozwijanej.
   `Environment.DropDownDisabledGlyph`
 
 #### <a name="split-button"></a>Przycisk podziału
- Przyciski dzielone udostępniać wiele tokenów nazwy inne kontrolki paska poleceń, takich jak przyciski, menu i tekst paska poleceń. Wszystkie niezbędne działania i przycisk listy rozwijanej token nazwy są powtarzane tutaj dla wygody. Listy rozwijane w przycisku podziału stanowią implementacje paska poleceń [menu](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).
 
- ![Przycisk podziału poprawek](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303 053_SplitButtonRedline")
+Przyciski dzielone udostępniać wiele tokenów nazwy inne kontrolki paska poleceń, takich jak przyciski, menu i tekst paska poleceń. Wszystkie niezbędne działania i przycisk listy rozwijanej token nazwy są powtarzane tutaj dla wygody. Listy rozwijane w przycisku podziału stanowią implementacje paska poleceń [menu](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).
 
- Użyj...
+![Przycisk podziału poprawek](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303 053_SplitButtonRedline")
+
+Użyj...
 Kiedy tworzysz przycisku podziału niestandardowych.
 
- Nie używaj...
- -   dla innych rodzajów przycisków.
+Nie używaj...
+- dla innych rodzajów przycisków.
 
 - w dowolnej kombinacji tła/pierwszego planu, inny niż określony.
 
@@ -1425,7 +1433,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
   Podczas tworzenia karty niestandardowego dokumentu.
 
   Nie używaj...
-  -   dla karty tymczasowe (wersja zapoznawcza).
+  - dla karty tymczasowe (wersja zapoznawcza).
 
 - dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycznie, jeśli powłoka ma aktualizacji motywu.
 
@@ -1538,15 +1546,16 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
  Ustaw kolor tła.
 
 #### <a name="preview-tab"></a>Karta (wersja zapoznawcza)
- Karta (wersja zapoznawcza) pojawia się po prawej stronie kanału kartę dokumentu, gdy użytkownik kliknie element w oknie narzędzia Eksploratora rozwiązań. On działa w wersji zapoznawczej dokumentu, a także zapewnia możliwość nie zamykaj dokumentu po lewej stronie kanału karty dokumentu. Otwórz kartę tylko jeden (wersja zapoznawcza) może być otwarty naraz. Podgląd karty mają zarówno w tle i wybranych stanów, takie jak karty i może być ukierunkowane lub po przeniesieniu fokusu w ich stanie aktywnym.
 
- ![Karta Podgląd poprawek](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303 078_PreviewTabRedline")
+Karta (wersja zapoznawcza) pojawia się po prawej stronie kanału kartę dokumentu, gdy użytkownik kliknie element w oknie narzędzia Eksploratora rozwiązań. On działa w wersji zapoznawczej dokumentu, a także zapewnia możliwość nie zamykaj dokumentu po lewej stronie kanału karty dokumentu. Otwórz kartę tylko jeden (wersja zapoznawcza) może być otwarty naraz. Podgląd karty mają zarówno w tle i wybranych stanów, takie jak karty i może być ukierunkowane lub po przeniesieniu fokusu w ich stanie aktywnym.
 
- Użyj...
+![Karta Podgląd poprawek](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303 078_PreviewTabRedline")
+
+Użyj...
 dowolne miejsce tworzenia tymczasowych (wersja zapoznawcza) i ma pewien element, aby dopasować bieżący kolor karcie podglądu.
 
- Nie używaj...
- -   dla każdego rodzaju dokumentu lub kartę, która nie jest tymczasowe (wersja zapoznawcza).
+Nie używaj...
+- dla każdego rodzaju dokumentu lub kartę, która nie jest tymczasowe (wersja zapoznawcza).
 
 - dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycznie, jeśli powłoka ma aktualizacji motywu.
 
@@ -1661,15 +1670,16 @@ dowolne miejsce tworzenia tymczasowych (wersja zapoznawcza) i ma pewien element,
   Ustaw kolor tła.
 
 #### <a name="document-overflow-button"></a>Przycisk przepełnienie dokument
- Przycisk przepełnienie dokument jest obecny, jeśli istnieje jeden lub więcej dokumentów otworzyć, niezależnie od tego, czy brak miejsca w pionie w bieżącej konfiguracji, aby dopasować wszystkich kartach dokumentów. Menu rozwijanego przepełnienie dokumentu, które są kontrolowane przez **CommandBarMenu** kolory (zobacz [menu](../../misc/shared-colors.md#BKMK_CommandMenus)), zostanie wyświetlona lista wszystkich otwartych dokumentach widoczna i ukryta, i zmienia się glif przepełnienia w zależności od tego, czy wszystkie otwarte dokumenty są wyświetlane w kanale kartę.
 
- ![Przepełnienie poprawek](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303 083_OverflowRedline")
+Przycisk przepełnienie dokument jest obecny, jeśli istnieje jeden lub więcej dokumentów otworzyć, niezależnie od tego, czy brak miejsca w pionie w bieżącej konfiguracji, aby dopasować wszystkich kartach dokumentów. Menu rozwijanego przepełnienie dokumentu, które są kontrolowane przez **CommandBarMenu** kolory (zobacz [menu](../../misc/shared-colors.md#BKMK_CommandMenus)), zostanie wyświetlona lista wszystkich otwartych dokumentach widoczna i ukryta, i zmienia się glif przepełnienia w zależności od tego, czy wszystkie otwarte dokumenty są wyświetlane w kanale kartę.
 
- Użyj...
+![Przepełnienie poprawek](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303 083_OverflowRedline")
+
+Użyj...
 Podczas tworzenia niestandardowego dokumentu przycisku przepełnienia.
 
- Nie używaj...
- -   dla interfejsu użytkownika, który nie jest podobne do przycisku przepełnienia.
+Nie używaj...
+- dla interfejsu użytkownika, który nie jest podobne do przycisku przepełnienia.
 
 - dla przycisków przepełnienie paska poleceń.
 
@@ -1895,13 +1905,14 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
  `Environment.TitleBarDragHandle`
 
 #### <a name="title-bar-buttons"></a>Przyciski paska tytułu
- ![Przycisk paska tytułu poprawek](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303 095_TitleBarButtonRedline")
 
- Użyj...
+![Przycisk paska tytułu poprawek](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303 095_TitleBarButtonRedline")
+
+Użyj...
 przycisków, które są wyświetlane w interfejs użytkownika, który używa tokenów kolor z paski tytułu okna narzędzia.
 
- Nie używaj...
- -   w przypadku przycisków, które pojawiają się w innych lokalizacjach.
+Nie używaj...
+- w przypadku przycisków, które pojawiają się w innych lokalizacjach.
 
 - w dowolnej kombinacji tła/pierwszego planu, inny niż określony.
 
@@ -2227,7 +2238,7 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
   Podczas projektowania pole wyszukiwania niestandardowego.
 
   Nie używaj...
-  -   dla wszystkich elementów, który nie jest pole wyszukiwania.
+  - dla wszystkich elementów, który nie jest pole wyszukiwania.
 
 - dla każdego elementu, który nie ma zawsze do dopasowania wyszukiwania polu interfejsu użytkownika.
 
@@ -2516,17 +2527,18 @@ dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycz
   Brak
 
 #### <a name="search-drop-down-lists"></a>Listy rozwijane wyszukiwania
- Menu rozwijane pole wyszukiwania ma być nieco bardziej skomplikowane niż inne menu rozwijanych w programie Visual Studio. "Sugerowane wyszukiwania" i sekcje "Opcje wyszukiwania" może występować samodzielnie, lub ze sobą w menu, a każdy z nich jest kolorowe oddzielnie. Wiersz również oddziela te dwie sekcje, gdy pojawiają się ze sobą i obramowanie wokół menu rozwijane całego.
 
- ![Listy wyszukiwania&#45;poprawek w dół](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303 124_SearchDropdownRedline")
+Menu rozwijane pole wyszukiwania ma być nieco bardziej skomplikowane niż inne menu rozwijanych w programie Visual Studio. "Sugerowane wyszukiwania" i sekcje "Opcje wyszukiwania" może występować samodzielnie, lub ze sobą w menu, a każdy z nich jest kolorowe oddzielnie. Wiersz również oddziela te dwie sekcje, gdy pojawiają się ze sobą i obramowanie wokół menu rozwijane całego.
 
- Użyj...
- -   Podczas tworzenia listy rozwijanej wyszukiwania niestandardowego.
+![Listy wyszukiwania&#45;poprawek w dół](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303 124_SearchDropdownRedline")
+
+Użyj...
+- Podczas tworzenia listy rozwijanej wyszukiwania niestandardowego.
 
 - Prawidłowe nazwy tokenu dla składników poprawnej listy.
 
   Nie używaj...
-  -   Aby uzyskać listy rozwijane, które pojawiają się w innych kontekstach.
+  - Aby uzyskać listy rozwijane, które pojawiają się w innych kontekstach.
 
 - w dowolnej kombinacji tła/pierwszego planu, inny niż określony.
 
@@ -2906,16 +2918,17 @@ Podczas tworzenia interfejsu użytkownika, który chcesz dopasować paski przewi
 
  `Environment.ScrollBarArrowGlyphPressed`
 
-###  <a name="BKMK_TreeView"></a> Widok drzewa
- Kilkoma oknami narzędzi, w tym Eksploratora rozwiązań, Eksploratora serwera i widoku klasy implementuje hierarchiczne schematu organizacyjnego którego kolory są kontrolowane przez nazw kolorów w kategorii TreeView. Wszystkie elementy w widoku drzewa mają kolor tła i tekstu. Elementy, które zostały zagnieżdżone elementy podrzędne mają także symbole, które wskazują, czy element jest rozwijane czy zwijane.
+### <a name="BKMK_TreeView"></a> Widok drzewa
 
- ![Widok drzewa poprawek](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303 147_TreeViewRedline")
+Kilkoma oknami narzędzi, w tym Eksploratora rozwiązań, Eksploratora serwera i widoku klasy implementuje hierarchiczne schematu organizacyjnego którego kolory są kontrolowane przez nazw kolorów w kategorii TreeView. Wszystkie elementy w widoku drzewa mają kolor tła i tekstu. Elementy, które zostały zagnieżdżone elementy podrzędne mają także symbole, które wskazują, czy element jest rozwijane czy zwijane.
 
- Użyj...
+![Widok drzewa poprawek](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303 147_TreeViewRedline")
+
+Użyj...
 wszędzie, musisz zaimplementować hierarchiczny widok organizacji.
 
- Nie używaj...
- -   dla wszystkich elementów, który nie jest podobny do widoku drzewa.
+Nie używaj...
+- dla wszystkich elementów, który nie jest podobny do widoku drzewa.
 
 - w dowolnej kombinacji tła/pierwszego planu, inny niż określony.
 
@@ -3332,13 +3345,14 @@ dla dowolnego interfejsu użytkownika, który nie jest kontrolkę pola wyboru.
  `CommonControls.CheckBoxGlyphFocused`
 
 ### <a name="drop-boxcombo-box-controls"></a>Upuść formantów pola kombi/pola
- ![Upuść&#45;dół&#47;poprawek pola kombi](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303 167_DropDownComboBoxRedline")
 
- Użyj...
+![Upuść&#45;dół&#47;poprawek pola kombi](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303 167_DropDownComboBoxRedline")
+
+Użyj...
 listy rozwijane i pole kombi pola, które są również częścią dokumentu.
 
- Nie używaj...
- -   dla dowolnego interfejsu użytkownika, który nie jest listy rozwijanej lub pola kombi.
+Nie używaj...
+- dla dowolnego interfejsu użytkownika, który nie jest listy rozwijanej lub pola kombi.
 
 - Aby uzyskać [listy rozwijanej](../../misc/shared-colors.md#BKMK_CommandDropDown) lub [pola kombi](../../misc/shared-colors.md#BKMK_CommandComboBox) na pasku poleceń.
 
@@ -3690,17 +3704,18 @@ dla wszelkich elementów interfejsu użytkownika, który nie jest formantem tabe
  Brak
 
 ## <a name="manifest-designer"></a>Manifest Designer
- Manifest Designer został zaprojektowany jako sposób, aby ułatwić edytowanie pliku manifestu w projektach systemu Windows 8 i Windows Phone 8. Gdy nie ma udostępnionego framework dostępne do użycia, może być odpowiednia dla Ciebie dopasować układ i kolory kart orientacji/nawigacji i ogólną strukturę. Aby uzyskać więcej informacji na temat szczegółów układ zobacz [układu dla programu Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
- ![Projektant manifestu poprawek](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303 175_ManifestDesignerRedline")
+Manifest Designer został zaprojektowany jako sposób, aby ułatwić edytowanie pliku manifestu w projektach systemu Windows 8 i Windows Phone 8. Gdy nie ma udostępnionego framework dostępne do użycia, może być odpowiednia dla Ciebie dopasować układ i kolory kart orientacji/nawigacji i ogólną strukturę. Aby uzyskać więcej informacji na temat szczegółów układ zobacz [układu dla programu Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
- Użyj...
- -   dla projektantów, które są podobne do projektanta manifestu.
+![Projektant manifestu poprawek](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303 175_ManifestDesignerRedline")
+
+Użyj...
+- dla projektantów, które są podobne do projektanta manifestu.
 
 - zamiast przy użyciu karty wspólne kontroluje również w górnej części edytora w obrębie dokumentu.
 
-  Nie używaj...
-  -   Jeśli masz więcej niż sześć kart.
+Nie używaj...
+- Jeśli masz więcej niż sześć kart.
 
 - dla wszelkich elementów interfejsu użytkownika, który nie ma struktury, takich jak projektant manifestów.
 
@@ -3964,15 +3979,16 @@ dla wszystkich innych typów interfejsu użytkownika.
 ## <a name="shell"></a>Powłoka
 
 ### <a name="background"></a>Tło
- Tło środowiska składa się z dwóch warstw. Dolna warstwa jest jednolitego koloru, który obejmuje całe środowisko IDE. Górną warstwę mieści się w obszarze półki polecenia i między kanałami automatycznego ukrywania okna narzędzia na lewej lub prawej krawędzi środowiska IDE. Począwszy od programu Visual Studio 2013 warstwy tła górny i dolny są ustawione na ten sam kolor w motywy jasny i ciemny motyw.
 
- ![Tło powłoki poprawek](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303 187_ShellBackgroundRedline")
+Tło środowiska składa się z dwóch warstw. Dolna warstwa jest jednolitego koloru, który obejmuje całe środowisko IDE. Górną warstwę mieści się w obszarze półki polecenia i między kanałami automatycznego ukrywania okna narzędzia na lewej lub prawej krawędzi środowiska IDE. Począwszy od programu Visual Studio 2013 warstwy tła górny i dolny są ustawione na ten sam kolor w motywy jasny i ciemny motyw.
 
- Użyj...
+![Tło powłoki poprawek](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303 187_ShellBackgroundRedline")
+
+Użyj...
 dla miejsc, które chcesz dopasować tło środowiska Visual Studio.
 
- Nie używaj...
- -   jako wypełnienia dla miejsc, które nie są tła powierzchni.
+Nie używaj...
+- jako wypełnienia dla miejsc, które nie są tła powierzchni.
 
 - jako tła, na którym chcesz umieścić elementy pierwszego planu.
 
@@ -4009,17 +4025,18 @@ dla miejsc, które chcesz dopasować tło środowiska Visual Studio.
   `Environment.EnvironmentBackgroundGradientMiddle2`
 
 ### <a name="command-shelf"></a>Polecenie Półka
- Dwa zestawy token nazwy są używane do tła półki polecenia: on ustawiony, na którym znajduje się na pasku menu, a drugi dla gdzie znajdują się paski poleceń. Grupa pasek indywidualne polecenie ma swoje własne wartości kolorów tła, które zostały omówione bardziej szczegółowo w sekcji "polecenie bar". Menu paska i polecenia paska tekstu omówiono w sekcji pasek menu i poleceń, odpowiednio.
 
- ![Polecenie półki poprawek](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303 188_CommandShelfRedline")
+Dwa zestawy token nazwy są używane do tła półki polecenia: on ustawiony, na którym znajduje się na pasku menu, a drugi dla gdzie znajdują się paski poleceń. Grupa pasek indywidualne polecenie ma swoje własne wartości kolorów tła, które zostały omówione bardziej szczegółowo w sekcji "polecenie bar". Menu paska i polecenia paska tekstu omówiono w sekcji pasek menu i poleceń, odpowiednio.
 
- Użyj...
- -   dla obszarów, w którym umieszcza się menu i paski narzędzi.
+![Polecenie półki poprawek](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303 188_CommandShelfRedline")
+
+Użyj...
+- dla obszarów, w którym umieszcza się menu i paski narzędzi.
 
 - w tle poprawne /? kombinacji Nazwa tokenu pierwszego planu.
 
-  Nie używaj...
-  dla obszarów, które nie są podobne do półki polecenia.
+Nie używaj...
+dla obszarów, które nie są podobne do półki polecenia.
 
   Składnik
 

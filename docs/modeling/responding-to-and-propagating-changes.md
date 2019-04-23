@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 188ad2ca0ff0b84d94c58cb42076c6b0782742a1
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 375f6996c91c294dd3b630c9ab987ff4b2d6cbdb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416035"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078645"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Odpowiadanie na zmiany i propagowanie zmian
 Gdy element zostanie utworzony, usunięty lub zaktualizowany, można napisać kod, który propaguje zmiany z innymi częściami modelu lub zasobów zewnętrznych, takich jak pliki, bazy danych lub innych składników.
@@ -41,13 +41,13 @@ Gdy element zostanie utworzony, usunięty lub zaktualizowany, można napisać ko
 
  Używać zdarzeń store można zsynchronizować modelu obiektów poza Store i reguł do zapewniania spójności w ramach Store.
 
--   **Tworzenie niestandardowych reguł** Tworzenie niestandardowej reguły jako pochodne klasy abstrakcyjnej reguły. Musi również powiadomić framework o reguły niestandardowej. Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
+- **Tworzenie niestandardowych reguł** Tworzenie niestandardowej reguły jako pochodne klasy abstrakcyjnej reguły. Musi również powiadomić framework o reguły niestandardowej. Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
 
--   **Subskrybowanie zdarzeń** przed mogą subskrybować zdarzenie, utworzyć program obsługi zdarzeń i delegata. Następnie użyj <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>właściwości do subskrybowania zdarzenia. Aby uzyskać więcej informacji, zobacz [obsługi propagowanie zmian poza Model zdarzeń](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+- **Subskrybowanie zdarzeń** przed mogą subskrybować zdarzenie, utworzyć program obsługi zdarzeń i delegata. Następnie użyj <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>właściwości do subskrybowania zdarzenia. Aby uzyskać więcej informacji, zobacz [obsługi propagowanie zmian poza Model zdarzeń](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
--   **Cofanie zmian** cofnięcie transakcji, zdarzenia są wywoływane, ale nie są stosowane zasady. Jeśli reguła zmienia wartość i Cofnij tę zmianę, wartość jest resetowany do oryginalnej wartości podczas działania cofania. Gdy zdarzenie jest wywoływane, możesz ręcznie zmienić wartość do oryginalnej wartości. Aby dowiedzieć się więcej na temat transakcji i cofania, zobacz [jak: Użycie transakcji do aktualizacji modelu](../modeling/how-to-use-transactions-to-update-the-model.md).
+- **Cofanie zmian** cofnięcie transakcji, zdarzenia są wywoływane, ale nie są stosowane zasady. Jeśli reguła zmienia wartość i Cofnij tę zmianę, wartość jest resetowany do oryginalnej wartości podczas działania cofania. Gdy zdarzenie jest wywoływane, możesz ręcznie zmienić wartość do oryginalnej wartości. Aby dowiedzieć się więcej na temat transakcji i cofania, zobacz [jak: Użycie transakcji do aktualizacji modelu](../modeling/how-to-use-transactions-to-update-the-model.md).
 
--   **Przekazywanie argumentów zdarzeń do zasad i zdarzenia** obu zdarzeń, a zasady są przekazywane `EventArgs` parametr, który zawiera informacje o tym, jak model został zmieniony.
+- **Przekazywanie argumentów zdarzeń do zasad i zdarzenia** obu zdarzeń, a zasady są przekazywane `EventArgs` parametr, który zawiera informacje o tym, jak model został zmieniony.
 
 ## <a name="see-also"></a>Zobacz też
 

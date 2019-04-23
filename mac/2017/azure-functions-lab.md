@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: d728de52a159d058ecae48d48620547b6d8fcf4f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f1c619bbddd5116ad2d425909d80e30ca99e06c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652972"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074365"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Samouczek: Wprowadzenie do usługi Azure Functions
 
@@ -104,6 +104,7 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functio
     using System.Web;
     using Microsoft.WindowsAzure.Storage.Table;
     ```
+
 1. Usuń istniejące `Run` metody i Dodaj metodę poniżej do klasy jako funkcji platformy Azure:
 
     ```csharp
@@ -119,6 +120,7 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functio
         return x + y;
     }
     ```
+
 1. Przejdźmy teraz przez definicję metody eliminujemy.
 
     Pierwszą rzeczą, zostanie wyświetlony jest **FunctionName** atrybut, który oznacza tę metodę jako funkcję platformy Azure. Ten atrybut Określa publiczny nazwę funkcji. Nazwa atrybutu nie musi być zgodna z nazwą rzeczywistego — metoda.
@@ -180,6 +182,7 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functio
 
     return x + y;
     ```
+
 1. Uruchom aplikację.
 
 1. Wróć do okna przeglądarki i Dołącz ciąg `/?x=2&y=3` do adresu URL. Cały adres URL powinien być teraz `http://localhost:7071/api/Add?x=2&y=3`. Przejdź do nowego adresu URL.
@@ -190,7 +193,7 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functio
 
 ## <a name="exercise-4-working-with-functionjson"></a>Ćwiczenie 4: Praca z function.json
 
-1.  W ćwiczeniu wcześniej wspomniano, Visual Studio for Mac "wygenerowania" funkcję zadania dla funkcji platformy Azure zdefiniowany w bibliotece. Jest to, ponieważ usługi Azure Functions faktycznie nie używa atrybuty metody w czasie wykonywania, ale raczej używa konwencji systemu plików w czasie kompilacji do konfigurowania miejsca i w jaki sposób usługa Azure Functions są udostępniane. Z **konsoli rozwiązania**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Odsłoń w programie Finder**.
+1. W ćwiczeniu wcześniej wspomniano, Visual Studio for Mac "wygenerowania" funkcję zadania dla funkcji platformy Azure zdefiniowany w bibliotece. Jest to, ponieważ usługi Azure Functions faktycznie nie używa atrybuty metody w czasie wykonywania, ale raczej używa konwencji systemu plików w czasie kompilacji do konfigurowania miejsca i w jaki sposób usługa Azure Functions są udostępniane. Z **konsoli rozwiązania**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Odsłoń w programie Finder**.
 
      ![Odsłoń w opcji menu wyszukiwania](media/azure-functions-lab-image23.png)
 
@@ -289,6 +292,7 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functio
         return x + y;
     }
     ```
+
 1. Naciśnij klawisz **F5** Aby skompilować i uruchomić projekt.
 
 1. Zakończeniu kompilacji i uruchamia platformę, teraz poinformuje, jest druga trasa żądania, które mapuje do nowo dodanego metody:
@@ -315,6 +319,7 @@ Często usługi, które tworzysz może być znacznie bardziej złożone niż co 
         public int Sum { get; set; }
     }
     ```
+
 1. W ramach **Dodaj** klasy, Dodaj poniższy kod, aby wprowadzić inną funkcję. Należy pamiętać, że ta unikatowa do tej pory w tym, że nie obejmują, odpowiedź HTTP. Ostatni wiersz zwraca nowy **wymagają elementu** wypełniony niektóre informacje o kluczu, która ułatwi późniejszą do pobrania w późniejszym czasie na (**PartitionKey** i **RowKey**), a także jej Parametry i sum. Używa również kod w metodzie **TraceWriter** ułatwiają wiedzieć podczas wykonywania funkcji.
 
     ```csharp
@@ -340,6 +345,7 @@ Często usługi, które tworzysz może być znacznie bardziej złożone niż co 
         };
     }
     ```
+
 1. Naciśnij klawisz **F5** Aby skompilować i uruchomić projekt.
 
 1. Na karcie przeglądarki przejdź do **http://localhost:7071/api/Process/4/6**. Spowoduje to umieszczenie kolejną wiadomość do kolejki po pewnym czasie powinno spowodować kolejnego wiersza, które są dodawane do tabeli.
@@ -362,6 +368,7 @@ Często usługi, które tworzysz może być znacznie bardziej złożone niż co 
     [Table("Results", "sums", "{x}_{y}")]
     TableRow tableRow,
     ```
+
 1. Dodaj poniższy kod do początku metody. Jeśli **wymagają elementu** nie jest null, a firma Microsoft już ma wyników dla Żądana operacja może zwrócić go bezpośrednio. W przeciwnym razie funkcja jest kontynuowane tak jak poprzednio. Chociaż może to nie być najlepszy sposób zwrócenia danych, przedstawia punkt, czy można organizować bardzo zaawansowane operacje w wielu warstwach skalowalne z bardzo niewielkiej ilości kodu.
 
     ```csharp
@@ -371,6 +378,7 @@ Często usługi, które tworzysz może być znacznie bardziej złożone niż co 
         return null;
     }
     ```
+
 1. Naciśnij klawisz **F5** Aby skompilować i uruchomić projekt.
 
 1. Na karcie przeglądarki, Odśwież adres URL w **http://localhost:7071/api/Process/4/6**. Ponieważ istnieje wiersz tabeli dla tego rekordu, powinien zostać zwrócony natychmiast i bez błędów. Ponieważ nie ma żadnych danych wyjściowych HTTP, zostaną wyświetlone dane wyjściowe w terminalu.

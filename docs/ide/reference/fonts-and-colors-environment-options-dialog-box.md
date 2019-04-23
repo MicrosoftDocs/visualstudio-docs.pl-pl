@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b48c86c74b724dc6df5d5935f1340f6de0fc9185
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: b1576af2511f3bd24c26a64c1667c6b466bedd1e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647469"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076508"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Czcionki i kolory, środowisko, opcje — Okno dialogowe
 
@@ -42,26 +42,26 @@ Kolor schemat zmiany wprowadzone podczas sesji, w której należy. Możesz oceni
 
 Wyświetla listę wszystkich elementów interfejsu użytkownika, dla których można zmienić czcionkę i kolor schematów. Po wybraniu elementu z tej listy można dostosować ustawienia kolorów dla elementu zaznaczonego w **wyświetlania elementów**.
 
--   **Edytor tekstu**
+- **Edytor tekstu**
 
      Zmiany styl czcionki, rozmiaru i koloru ustawienia wyświetlania do edytora tekstów wpływają na wygląd tekstu w edytorze tekstu domyślnego. Te ustawienia nie wpłynie dokumentów otwartych w edytorze tekstów poza IDE.
 
--   **Drukarki**
+- **Drukarki**
 
      Zmiany styl czcionki, rozmiaru i wyświetlania kolorów dla drukarki na wygląd tekstu w dokumentach.
 
     > [!NOTE]
     > W razie potrzeby można wybrać czcionkę różne domyślne związane z drukowaniem niż ten używany do wyświetlania w edytorze tekstów. Może to być przydatne podczas drukowania kodu, który zawiera znaków jednobajtowych i dwubajtowych.
 
--   **Uzupełnianie instrukcji**
+- **Uzupełnianie instrukcji**
 
      Zmienia styl i rozmiar czcionki dla tekstu, który pojawia się w uzupełniania wyskakujących w edytorze.
 
--   **Etykietki narzędzi edytora**
+- **Etykietki narzędzi edytora**
 
      Zmienia styl i rozmiar czcionki dla tekstu wyświetlanego w etykietkach narzędzi jest wyświetlany w edytorze.
 
--   **Czcionka środowiska**
+- **Czcionka środowiska**
 
      Zmienia styl czcionki i rozmiar wszystkie elementy interfejsu użytkownika IDE, które nie mają już osobną opcją w **Pokaż ustawienia dla**.
 
@@ -71,7 +71,7 @@ Wyświetla listę wszystkich elementów interfejsu użytkownika, dla których mo
 
      ::: moniker-end
 
--   **[Wszystkie tekstowe narzędzie Windows]**
+- **[Wszystkie tekstowe narzędzie Windows]**
 
      Zmiany styl czcionki, rozmiaru i koloru ustawienia wyświetlania na ten element wpływ wygląd tekstu w oknach narzędzi, których okienka danych wyjściowych w środowisku IDE. Na przykład okno danych wyjściowych, okno polecenia, okno bezpośrednie itp.
 

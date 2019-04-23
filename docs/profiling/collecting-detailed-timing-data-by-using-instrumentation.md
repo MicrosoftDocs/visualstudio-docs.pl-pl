@@ -11,23 +11,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bd897d6b986b1d0c7a06a36a58eb88ba929bfc4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a58a5a1431dbb8ddbc9b23d93928f615e945b3b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617577"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074050"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>Zbieranie szczegółowych danych o chronometrażu przy użyciu instrumentacji
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools metoda Instrumentacja wprowadza profilowania kodu do kopii modułu. Ten kod rejestruje każdego wpisu, zakończenia i wywołanie funkcji funkcji w module podczas uruchomienia profilowania. Metoda Instrumentacja jest przydatne do zbierania informacji chronometrażu o sekcji kodu i zrozumienie wpływu na operacje wejścia i wyjścia na wydajność aplikacji.
 
  Należy określić metody instrumentacji, przy użyciu jednej z następujących procedur:
 
--   Na pierwszej stronie kreatora profilowania, wybierz **Instrumentacji**.
+- Na pierwszej stronie kreatora profilowania, wybierz **Instrumentacji**.
 
--   Na **Eksplorator wydajności** narzędzi w **metoda** kliknij **Instrumentacji**.
+- Na **Eksplorator wydajności** narzędzi w **metoda** kliknij **Instrumentacji**.
 
--   Na **ogólne** strony okna dialogowego właściwości sesji wydajności, wybierz opcję **Instrumentacji**.
+- Na **ogólne** strony okna dialogowego właściwości sesji wydajności, wybierz opcję **Instrumentacji**.
 
 ## <a name="common-tasks"></a>Wspólne zadania
  Można określić dodatkowe opcje w _sesji wydajności_**stron właściwości** okna dialogowego sesji wydajności. Aby otworzyć to okno dialogowe:

@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ecb4d69db653c24ff13c0c95059d431424e4fe9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35d2343343bf554df7592c8616e7697d88665baf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069124"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077891"
 ---
 # <a name="how-to-debug-injected-code"></a>Instrukcje: Debugowanie wprowadzonego kodu
 
@@ -46,25 +46,25 @@ Przy użyciu atrybutów znacznie upraszcza programowania w języku C++. Aby uzys
 
 ## <a name="to-turn-on-source-annotation"></a>Aby włączyć funkcję adnotacji źródła
 
--   Kliknij prawym przyciskiem myszy **dezasemblacji** oknie i wybierz polecenie **Pokaż kod źródłowy** z menu skrótów.
+- Kliknij prawym przyciskiem myszy **dezasemblacji** oknie i wybierz polecenie **Pokaż kod źródłowy** z menu skrótów.
 
      Jeśli znasz lokalizację atrybutu w oknie źródła, można użyć menu skrótów, można znaleźć wprowadzonego kodu w **dezasemblacji** okna.
 
 ## <a name="to-view-injected-code"></a>Aby wyświetlić wprowadzonego kodu
 
-1.  Debuger musi być w trybie przerwania.
+1. Debuger musi być w trybie przerwania.
 
-2.  W oknie kodu źródłowego umieść kursor w miejscu dostępnym dla atrybutu, którego wprowadzonego kodu, którą chcesz wyświetlić.
+2. W oknie kodu źródłowego umieść kursor w miejscu dostępnym dla atrybutu, którego wprowadzonego kodu, którą chcesz wyświetlić.
 
-3.  Kliknij prawym przyciskiem myszy, a następnie wybierz pozycję **przejdź do demontażu** z menu skrótów.
+3. Kliknij prawym przyciskiem myszy, a następnie wybierz pozycję **przejdź do demontażu** z menu skrótów.
 
      Jeśli lokalizacja atrybutu zbliża się bieżący punkt wykonania, możesz wybrać **dezasemblacji** w oknie **debugowania** menu.
 
 ## <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>Aby wyświetlić kod dezasemblacji w bieżącym punkcie Wykonywanie
 
-1.  Debuger musi być w trybie przerwania.
+1. Debuger musi być w trybie przerwania.
 
-2.  Z **debugowania** menu, wybierz **Windows**i kliknij przycisk **dezasemblacji**.
+2. Z **debugowania** menu, wybierz **Windows**i kliknij przycisk **dezasemblacji**.
 
 ## <a name="see-also"></a>Zobacz także
 

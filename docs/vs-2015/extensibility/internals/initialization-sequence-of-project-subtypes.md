@@ -10,12 +10,12 @@ ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 79bcd3981da8d8aee37e802b2463b4b33b60c430
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c5594d54c188c2f561dd66229e808e48068ba41a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782716"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062707"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Sekwencja inicjowania podtypów projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "54782716"
   
     Poniżej przedstawiono kroki inicjowania.  
   
-   1.  Implementacja interfejsu środowiska <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> wywołania metody "HrCreateInnerProj''" metody z poniższej deklaracji funkcji:  
+   1. Implementacja interfejsu środowiska <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> wywołania metody "HrCreateInnerProj''" metody z poniższej deklaracji funkcji:  
   
        ```  
        HRESULT HrCreateInnerProj  
@@ -50,13 +50,13 @@ ms.locfileid: "54782716"
   
         Gdy ta funkcja jest wywoływana po raz pierwszy, oznacza to, dla podtypu projektu najbardziej zewnętrznej, parametry `pOuter` i `pOwner` są przekazywane w jako `null` i funkcja ustawia podtypu projektu najbardziej zewnętrznej `IUnknown` do `pOuter`.  
   
-   2.  Następnie wywołuje środowisko `HrCreateInnerProj` funkcji z drugi identyfikator GUID typu projektu na liście. Ten identyfikator GUID odnosi się do drugiego podtypu projektu wewnętrznego przechodzenie krok po kroku kierunku projektu podstawowego w sekwencji agregacji.  
+   2. Następnie wywołuje środowisko `HrCreateInnerProj` funkcji z drugi identyfikator GUID typu projektu na liście. Ten identyfikator GUID odnosi się do drugiego podtypu projektu wewnętrznego przechodzenie krok po kroku kierunku projektu podstawowego w sekwencji agregacji.  
   
-   3.  `pOuter` Teraz wskazuje `IUnknown` podtypu projektu najbardziej zewnętrznej i `HrCreateInnerProj` implementacja wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> następuje wywołanie do implementacji <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>. W <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> metoda przekazywania w kontrolowaniu `IUnknown` podtypu projektu najbardziej zewnętrznej `pOuter`. Należących do projektu (podtypu projektu wewnętrznego) musi utworzyć jego obiekt projektu agregacji. W <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> implementacji metody przekazać wskaźnik do `IUnknown` wewnętrzny projektu, który są agregowane. Te dwie metody tworzenia obiektu agregacji, a Twoje implementacje muszą wykonać reguły agregacji COM, aby upewnić się, że podtypu projektu nie znajdą się przytrzymanie licznik odwołań do samej siebie.  
+   3. `pOuter` Teraz wskazuje `IUnknown` podtypu projektu najbardziej zewnętrznej i `HrCreateInnerProj` implementacja wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> następuje wywołanie do implementacji <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>. W <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> metoda przekazywania w kontrolowaniu `IUnknown` podtypu projektu najbardziej zewnętrznej `pOuter`. Należących do projektu (podtypu projektu wewnętrznego) musi utworzyć jego obiekt projektu agregacji. W <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> implementacji metody przekazać wskaźnik do `IUnknown` wewnętrzny projektu, który są agregowane. Te dwie metody tworzenia obiektu agregacji, a Twoje implementacje muszą wykonać reguły agregacji COM, aby upewnić się, że podtypu projektu nie znajdą się przytrzymanie licznik odwołań do samej siebie.  
   
-   4.  `HrCreateInnerProj` Implementacja wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>. W przypadku tej metody podtypu projektu działa inicjowania. Na przykład można rejestrować zdarzenia rozwiązania w <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>.  
+   4. `HrCreateInnerProj` Implementacja wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>. W przypadku tej metody podtypu projektu działa inicjowania. Na przykład można rejestrować zdarzenia rozwiązania w <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>.  
   
-   5.  `HrCreateInnerProj` jest wywoływany rekursywnie, aż do osiągnięcia ostatni identyfikator GUID (podstawowy projekt) na liście. Dla każdego z tych wywołań są powtarzane czynności c do d. `pOuter` Wskazuje podtypu projektu najbardziej zewnętrznej `IUnknown` dla każdego poziomu agregacji.  
+   5. `HrCreateInnerProj` jest wywoływany rekursywnie, aż do osiągnięcia ostatni identyfikator GUID (podstawowy projekt) na liście. Dla każdego z tych wywołań są powtarzane czynności c do d. `pOuter` Wskazuje podtypu projektu najbardziej zewnętrznej `IUnknown` dla każdego poziomu agregacji.  
   
    W poniższym przykładzie opisano proces programistyczny w przybliżony reprezentacja <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> metody jest implementowany przez środowisko. Kod jest tylko przykładowe; nie jest przeznaczone do skompilowania i sprawdzanie błędów wszystkie została usunięta z myślą o przejrzystości.  
   

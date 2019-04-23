@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87a7924a8a1239da61553c50dc7c7ba8cea547d2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c8aec1862424be0182e99285ac3772cc9c4bb19f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918328"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086692"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Zaawansowane ustawienia kompilatora (Visual Basic) — Okno dialogowe
 
@@ -25,13 +25,13 @@ Użyj **ustawienia AdvancedCompiler** okna dialogowego **projektanta projektu** 
 
 ## <a name="to-access-this-dialog-box"></a>Dostęp do tego okna dialogowego
 
-1.  W **Eksploratora rozwiązań**, wybierz węzeł projektu (nie **rozwiązania** węzła).
+1. W **Eksploratora rozwiązań**, wybierz węzeł projektu (nie **rozwiązania** węzła).
 
-2.  Na **projektu** menu, kliknij przycisk **właściwości**. Gdy **projektanta projektu** pojawi się, kliknij przycisk **skompilować** kartę.
+2. Na **projektu** menu, kliknij przycisk **właściwości**. Gdy **projektanta projektu** pojawi się, kliknij przycisk **skompilować** kartę.
 
-3.  Na [strona kompilowania, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), wybierz opcję **konfiguracji** i **platformy**. W uproszczonych konfiguracjach kompilacji **konfiguracji** i **platformy** listy nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [jak: Zestaw debugowania i zwalniania konfiguracji](../../debugger/how-to-set-debug-and-release-configurations.md).
+3. Na [strona kompilowania, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), wybierz opcję **konfiguracji** i **platformy**. W uproszczonych konfiguracjach kompilacji **konfiguracji** i **platformy** listy nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [jak: Zestaw debugowania i zwalniania konfiguracji](../../debugger/how-to-set-debug-and-release-configurations.md).
 
-4.  Kliknij przycisk **zaawansowane opcje kompilacji**.
+4. Kliknij przycisk **zaawansowane opcje kompilacji**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 

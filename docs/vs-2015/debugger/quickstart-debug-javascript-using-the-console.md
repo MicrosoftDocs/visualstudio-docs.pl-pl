@@ -20,12 +20,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bce2eae7c9df527c9b40e8d7f68bda68033449f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b03f7c69e5eac71f9edc790df31d9704a141e590
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798472"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065691"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Szybki Start: Debugowanie kodu JavaScript przy użyciu konsoli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
   
  Korzystanie z okna konsoli języka JavaScript, możesz porozmawiać z aplikacji bez zatrzymywania i ponownego uruchamiania debugera. Aby uzyskać więcej informacji, zobacz [odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md). Aby uzyskać informacje na temat innych debugowanie funkcji, takich jak za pomocą narzędzia DOM Explorer oraz ustawiania punktów przerwania, JavaScript, zobacz [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md) i [debugowanie aplikacji w programie Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
-##  <a name="InteractiveConsole"></a> Debugowanie przy użyciu okna konsoli języka JavaScript  
+## <a name="InteractiveConsole"></a> Debugowanie przy użyciu okna konsoli języka JavaScript  
  Poniższe kroki umożliwiają utworzenie `FlipView` aplikacji i pokazują, jak interaktywnie debugowanie kodu JavaScript, błąd kodowania.  
   
 > [!CAUTION]
@@ -71,13 +71,13 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>Aby debugować kod JavaScript w aplikacji FlipView  
   
-1.  Utwórz nowe rozwiązanie w programie Visual Studio, wybierając **pliku** > **nowy projekt**.  
+1. Utwórz nowe rozwiązanie w programie Visual Studio, wybierając **pliku** > **nowy projekt**.  
   
-2.  Wybierz **JavaScript** > **Store Apps**, wybierają **aplikacje Windows** lub **aplikacji Windows Phone**, a następnie wybierz polecenie  **Pusta aplikacja**.  
+2. Wybierz **JavaScript** > **Store Apps**, wybierają **aplikacje Windows** lub **aplikacji Windows Phone**, a następnie wybierz polecenie  **Pusta aplikacja**.  
   
-3.  Wpisz nazwę dla projektu, takie jak `FlipViewApp`i wybierz polecenie **OK** do tworzenia aplikacji.  
+3. Wpisz nazwę dla projektu, takie jak `FlipViewApp`i wybierz polecenie **OK** do tworzenia aplikacji.  
   
-4.  W elemencie BODY default.html Zastąp istniejący kod HTML przy użyciu tego kodu:  
+4. W elemencie BODY default.html Zastąp istniejący kod HTML przy użyciu tego kodu:  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -91,7 +91,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
     </div>  
     ```  
   
-5.  Otwórz default.css i Dodaj CSS dla `#fView` selektor:  
+5. Otwórz default.css i Dodaj CSS dla `#fView` selektor:  
   
     ```css  
     #fView {  
@@ -101,7 +101,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
     }  
     ```  
   
-6.  Otwórz default.js i Zastąp kod następującym kodem JavaScript:  
+6. Otwórz default.js i Zastąp kod następującym kodem JavaScript:  
   
     ```javascript  
     (function () {  
@@ -153,11 +153,11 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
     })();  
     ```  
   
-7.  Jeśli docelowy debugowania nie została jeszcze wybrana, wybierz opcję **symulator** lub dla Windows Phone **Emulator 8.1 WVGA 4 cala 512MB** z listy rozwijanej obok pozycji listy **urządzenia** znajdujący się na **debugowania** narzędzi:  
+7. Jeśli docelowy debugowania nie została jeszcze wybrana, wybierz opcję **symulator** lub dla Windows Phone **Emulator 8.1 WVGA 4 cala 512MB** z listy rozwijanej obok pozycji listy **urządzenia** znajdujący się na **debugowania** narzędzi:  
   
      ![Wybierz opcję debugowania listy docelowej](../debugger/media/js-select-target.png "JS_Select_Target")  
   
-8.  Naciśnij klawisz F5, aby uruchomić debuger.  
+8. Naciśnij klawisz F5, aby uruchomić debuger.  
   
      Brak uruchomienia aplikacji, ale obrazy. APPHOST błędy w oknie konsoli JavaScript wskazują, czy Brak obrazów.  
   
@@ -209,18 +209,18 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
   
      Aby zawierającą pełną default.html strony poprawione przykładowego kodu, zobacz [debugowanie HTML, CSS i JavaScript przykładowy kod](../debugger/debug-html-css-and-javascript-sample-code.md).  
   
-##  <a name="InteractiveDebuggingBreakMode"></a> Tryb interaktywny debugowania i podziału  
+## <a name="InteractiveDebuggingBreakMode"></a> Tryb interaktywny debugowania i podziału  
  Możesz użyć punktów przerwania i wejdź do kodu, podczas korzystania z narzędzi, takich jak okno konsoli JavaScript debugowanie kodu JavaScript. Gdy program, który jest uruchomiony w debugerze napotka punkt przerwania, debuger tymczasowo wstrzymuje wykonywanie programu. Gdy wykonanie programu jest zawieszone, program zmienia się z wykonywania tryb na tryb przerwania. Można wznowić wykonywania w dowolnym momencie.  
   
  Gdy program jest w trybie przerwania, można użyć okna konsoli JavaScript na uruchamianie skryptów i poleceń, które są prawidłowe w bieżącym kontekście wykonania skryptu. W tej procedurze użyjesz stały wersję `FlipView` aplikacji utworzony wcześniej, aby zademonstrować użycie trybu przerwania.  
   
 #### <a name="to-set-a-breakpoint-and-debug-the-app"></a>Aby ustawić punkt przerwania i debugować aplikację  
   
-1.  W pliku default.html `FlipView` aplikację, która wcześniej utworzona, otwórz menu skrótów dla `updateImages()` funkcji, a następnie wybierz **punktu przerwania** > **Wstaw punkt przerwania**.  
+1. W pliku default.html `FlipView` aplikację, która wcześniej utworzona, otwórz menu skrótów dla `updateImages()` funkcji, a następnie wybierz **punktu przerwania** > **Wstaw punkt przerwania**.  
   
-2.  Wybierz **komputera lokalnego** lub **Emulator 8.1 WVGA 4 cala 512MB** listy rozwijanej obok pozycji listy **Rozpocznij debugowanie** znajdujący się na **debugowania** pasek narzędzi.  
+2. Wybierz **komputera lokalnego** lub **Emulator 8.1 WVGA 4 cala 512MB** listy rozwijanej obok pozycji listy **Rozpocznij debugowanie** znajdujący się na **debugowania** pasek narzędzi.  
   
-3.  Wybierz **debugowania** > **Rozpocznij debugowanie**, lub naciśnij klawisz F5.  
+3. Wybierz **debugowania** > **Rozpocznij debugowanie**, lub naciśnij klawisz F5.  
   
      Aplikacja przejdzie do trybu podziału gdy wykonywanie osiągnie `updateImages()` funkcji i bieżący wiersz wykonania programu zostanie wyróżniona na żółto.  
   
@@ -228,36 +228,36 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
   
      Można zmienić wartości zmiennych, które bezpośrednio wpływają na stan programu bez przerywania bieżącą sesję debugowania.  
   
-4.  Typ `updateImages` wiersza i naciśnij klawisz Enter. Wizualizator dla funkcji pojawia się w oknie konsoli.  
+4. Typ `updateImages` wiersza i naciśnij klawisz Enter. Wizualizator dla funkcji pojawia się w oknie konsoli.  
   
-5.  Wybierz funkcję w oknie konsoli, aby pokazać implementacja funkcji.  
+5. Wybierz funkcję w oknie konsoli, aby pokazać implementacja funkcji.  
   
      Poniższa ilustracja przedstawia okno konsoli w tym momencie.  
   
      ![Okno konsoli JavaScript przedstawiający wizualizatora](../debugger/media/js-console-function-visualizer.png "JS_Console_Function_Visualizer")  
   
-6.  Skopiuj jeden wiersz w funkcji z okna danych wyjściowych do danych wejściowych wiersza polecenia i zmień wartość indeksu na 3:  
+6. Skopiuj jeden wiersz w funkcji z okna danych wyjściowych do danych wejściowych wiersza polecenia i zmień wartość indeksu na 3:  
   
     ```javascript  
     pages.setAt(3, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
     ```  
   
-7.  Naciśnij klawisz Enter, aby uruchomić wiersz kodu.  
+7. Naciśnij klawisz Enter, aby uruchomić wiersz kodu.  
   
      Jeśli chcesz śledzić wykonywanie kodu wiersz po wierszu, naciśnij klawisz F11 lub naciśnij klawisz F5, aby kontynuować wykonywanie programów.  
   
-8.  Naciśnij klawisz F5, aby kontynuować wykonywanie programów. `FlipView` Pojawia się w aplikacji, a wszystkie cztery strony pokazują teraz jeden z obrazów innych niż domyślne.  
+8. Naciśnij klawisz F5, aby kontynuować wykonywanie programów. `FlipView` Pojawia się w aplikacji, a wszystkie cztery strony pokazują teraz jeden z obrazów innych niż domyślne.  
   
      Aby przełączyć się do programu Visual Studio, naciśnij klawisz F12 lub Alt + Tab.  
   
-##  <a name="SinglelineMultilineMode"></a> Tryb jednowierszowy i trybu wielowierszowego w oknie konsoli JavaScript  
+## <a name="SinglelineMultilineMode"></a> Tryb jednowierszowy i trybu wielowierszowego w oknie konsoli JavaScript  
  Monit wejściowy dla okna konsoli języka JavaScript obsługuje tryb jednowierszowy i trybu wielowierszowego. Interaktywne procedury debugowania, w tym temacie zawiera przykład użycia obu trybów. Można nacisnąć klawisze Ctrl + Alt + M, aby przełączać się między trybami.  
   
  Tryb jednowierszowy zawiera Historia wejściowego. Możesz przejść w historii danych wejściowych za pomocą klawiszy Strzałka w górę i Strzałka w dół. Tryb jednowierszowy czyści wiersz danych wejściowych podczas wykonywania skryptów. Aby uruchomić skrypt w tryb jednowierszowy, naciśnij klawisz Enter.  
   
  Tryb wielowierszowy czyść wiersz danych wejściowych podczas uruchamiania skryptów. Po przełączeniu do trybu jednowierszowego z trybu wielowierszowego, możesz wyczyścić wejścia liniowego, naciskając klawisz **Wyczyść dane wejściowe** (czerwony "symbol X"). Aby uruchomić skrypt w trybu wielowierszowego, naciśnij klawisze Ctrl + Enter lub wybierz symbol strzałki w prawym dolnym rogu okna.  
   
-##  <a name="Switching"></a> Przełączanie kontekstu wykonywania skryptu  
+## <a name="Switching"></a> Przełączanie kontekstu wykonywania skryptu  
  Okna konsoli języka JavaScript pozwala na interakcję z kontekstem pojedyncze wykonanie, który reprezentuje pojedyncze wystąpienie hosta platformy sieci web (WWAHost.exe), w danym momencie. W niektórych scenariuszach aplikacji może uruchomić kolejne wystąpienie hosta, na przykład przy użyciu `iframe`, kontrakt udziału, internetowy proces roboczy lub `WebView` kontroli. Jeśli działa inne wystąpienie hosta, można wybrać kontekstu wykonywania różnych podczas uruchamiania aplikacji, wybierając w kontekście wykonywania **docelowej** listy.  
   
  Poniższa ilustracja przedstawia listy docelowej w oknie konsoli JavaScript.  
@@ -266,14 +266,14 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
   
  Można również przełączyć kontekst wykonywania za pomocą `cd` polecenie, ale musisz znać nazwę kontekstu wykonywania i odwołania, możesz użyć musi się mieścić w zakresie. **Docelowej** listy zapewnia lepszy dostęp do innych kontekstach wykonywania.  
   
-##  <a name="BrowserSupport"></a> Przeglądarki i pomoc techniczna platformy  
+## <a name="BrowserSupport"></a> Przeglądarki i pomoc techniczna platformy  
  Okno konsoli JavaScript jest obsługiwane na następujących platformach:  
   
--   [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] i Windows Phone Store aplikacji przy użyciu języków JavaScript i HTML  
+- [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] i Windows Phone Store aplikacji przy użyciu języków JavaScript i HTML  
   
--   Internet Explorer 11, systemem [!INCLUDE[win81](../includes/win81-md.md)]  
+- Internet Explorer 11, systemem [!INCLUDE[win81](../includes/win81-md.md)]  
   
--   Uruchomione programie Internet Explorer 10 [!INCLUDE[win8](../includes/win8-md.md)]  
+- Uruchomione programie Internet Explorer 10 [!INCLUDE[win8](../includes/win8-md.md)]  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji w programie Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   

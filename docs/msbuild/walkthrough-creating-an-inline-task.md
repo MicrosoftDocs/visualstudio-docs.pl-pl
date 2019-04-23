@@ -11,48 +11,48 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad3d554ff62c3d9a3d295efbf10fde403176b94
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 967727fce010c38e2ef44a0b7e73ec10b257cce0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597270"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096234"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Przewodnik: Tworzenie zadania wbudowanego
 Zadania programu MSBuild są zwykle tworzone przez skompilowanie klasy, która implementuje <xref:Microsoft.Build.Framework.ITask> interfejsu. Począwszy od programu .NET Framework w wersji 4, można utworzyć zadania wbudowane w pliku projektu. Nie trzeba utworzyć osobny zestaw do obsługi zadań. Aby uzyskać więcej informacji, zobacz [zadania wbudowane](../msbuild/msbuild-inline-tasks.md).
 
  W tym instruktażu pokazano, jak utworzyć i uruchomić te zadania wbudowane:
 
--   Zadanie, które nie ma danych wejściowych lub wyjściowych parametrów.
+- Zadanie, które nie ma danych wejściowych lub wyjściowych parametrów.
 
--   Zadanie, które ma jeden parametr wejściowy i bez parametrów wyjściowych.
+- Zadanie, które ma jeden parametr wejściowy i bez parametrów wyjściowych.
 
--   Zadanie, które ma dwa parametry wejściowe i parametr jedno wyjście, który zwraca wartość właściwości programu MSBuild.
+- Zadanie, które ma dwa parametry wejściowe i parametr jedno wyjście, który zwraca wartość właściwości programu MSBuild.
 
--   Zadanie, które ma dwa parametry wejściowe i parametr jedno wyjście, która zwraca elementu MSBuild.
+- Zadanie, które ma dwa parametry wejściowe i parametr jedno wyjście, która zwraca elementu MSBuild.
 
 Aby utworzyć i uruchomić zadania, należy użyć programu Visual Studio i **okno wiersza polecenia w usłudze Visual Studio**, wykonując następujące czynności:
 
-1.   Tworzenie pliku projektu programu MSBuild w programie Visual Studio.
+1. Tworzenie pliku projektu programu MSBuild w programie Visual Studio.
 
-2.   Zmodyfikuj plik projektu w programie Visual Studio do tworzenie zadania wbudowanego.
+2. Zmodyfikuj plik projektu w programie Visual Studio do tworzenie zadania wbudowanego.
 
-3.   Użyj **okna wiersza polecenia** do skompilowania projektu i sprawdź wyniki.
+3. Użyj **okna wiersza polecenia** do skompilowania projektu i sprawdź wyniki.
 
 ## <a name="create-and-modify-an-msbuild-project"></a>Tworzenie i modyfikowanie projektu programu MSBuild
  System projektu programu Visual Studio zależy od programu MSBuild. W związku z tym można utworzyć plik projektu kompilacji za pomocą programu Visual Studio. W tej sekcji utworzysz plik projektu języka Visual C#. (Możesz utworzyć plik projektu w języku Visual Basic. W kontekście tego samouczka różnica między plikami dwóch projektów jest niewielki.)
 
 #### <a name="to-create-and-modify-a-project-file"></a>Do tworzenia i modyfikowania pliku projektu
 
-1.  W programie Visual Studio na **pliku** menu, kliknij przycisk **New** a następnie kliknij przycisk **projektu**.
+1. W programie Visual Studio na **pliku** menu, kliknij przycisk **New** a następnie kliknij przycisk **projektu**.
 
-2.  W **nowy projekt** okno dialogowe, wybierz opcję **Visual C#** typ projektu, a następnie wybierz **aplikacja interfejsu Windows Forms** szablonu. W **nazwa** wpisz `InlineTasks`. Wpisz **lokalizacji** dla rozwiązania, na przykład *D:\\*. Upewnij się, że **Utwórz katalog rozwiązania** jest zaznaczone, **Dodaj do kontroli źródła** jest wyczyszczone, a **Nazwa rozwiązania** jest **InlineTasks**.
+2. W **nowy projekt** okno dialogowe, wybierz opcję **Visual C#** typ projektu, a następnie wybierz **aplikacja interfejsu Windows Forms** szablonu. W **nazwa** wpisz `InlineTasks`. Wpisz **lokalizacji** dla rozwiązania, na przykład *D:\\*. Upewnij się, że **Utwórz katalog rozwiązania** jest zaznaczone, **Dodaj do kontroli źródła** jest wyczyszczone, a **Nazwa rozwiązania** jest **InlineTasks**.
 
-3.  Kliknij przycisk **OK** do tworzenia pliku projektu.
+3. Kliknij przycisk **OK** do tworzenia pliku projektu.
 
-3.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **InlineTasks** węzła projektu, a następnie kliknij przycisk **Zwolnij projekt**.
+3. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **InlineTasks** węzła projektu, a następnie kliknij przycisk **Zwolnij projekt**.
 
-4.  Ponownie kliknij prawym przyciskiem myszy węzeł projektu, a następnie kliknij przycisk **Edytuj InlineTasks.csproj**.
+4. Ponownie kliknij prawym przyciskiem myszy węzeł projektu, a następnie kliknij przycisk **Edytuj InlineTasks.csproj**.
 
      Plik projektu zostanie wyświetlony w edytorze kodu.
 

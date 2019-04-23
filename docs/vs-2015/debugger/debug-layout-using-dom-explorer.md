@@ -18,12 +18,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb6de5edcd94b0391c090b0f68658258134375aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2e9292464ee117cf79a249c1c1a0636edb931c1d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763913"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063235"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Debugowanie układu przy użyciu eksploratora modelu DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
   
 #### <a name="to-fix-the-layout-issue"></a>Aby rozwiązać ten problem, układ  
   
-1.  W programie Visual Studio Utwórz nową aplikację Store, który używa szablonu projektu Centrum/obrotu.  
+1. W programie Visual Studio Utwórz nową aplikację Store, który używa szablonu projektu Centrum/obrotu.  
   
-2.  W folderze udostępnionym pages\hub Otwórz hub.css.  
+2. W folderze udostępnionym pages\hub Otwórz hub.css.  
   
-3.  Zamień następujący kod CSS:  
+3. Zamień następujący kod CSS:  
   
     ```css  
     .hubpage .hub .section4 .sub-image-row img {  
@@ -65,22 +65,22 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
     }  
     ```  
   
-4.  Wybierz projekt appName.WindowsPhone lub projektu appName.Windows w Eksploratorze rozwiązań, a następnie wybierz **Ustaw jako projekt startowy** z menu skrótów dla projektu.  
+4. Wybierz projekt appName.WindowsPhone lub projektu appName.Windows w Eksploratorze rozwiązań, a następnie wybierz **Ustaw jako projekt startowy** z menu skrótów dla projektu.  
   
-5.  W zależności od Twój projekt startowy wybierają **Emulator 8.1 WVGA 4 cala 512 MB** lub **symulator** na liście rozwijanej na pasku narzędzi debugowania (**komputera lokalnego** jest wartością domyślną wartość).  
+5. W zależności od Twój projekt startowy wybierają **Emulator 8.1 WVGA 4 cala 512 MB** lub **symulator** na liście rozwijanej na pasku narzędzi debugowania (**komputera lokalnego** jest wartością domyślną wartość).  
   
      ![Wybieranie obiektu docelowego debugowania](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
   
-6.  Naciśnij klawisz F5, aby uruchomić aplikację w trybie debugowania.  
+6. Naciśnij klawisz F5, aby uruchomić aplikację w trybie debugowania.  
   
-7.  Otwórz przewijania lub flicking sekcja 4.  
+7. Otwórz przewijania lub flicking sekcja 4.  
   
     > [!TIP]
     >  Pozycja prawo emulatora telefonu lub symulatora obok okna programu Visual Studio, dzięki czemu można natychmiast zobaczyć wyniki wyborów i zmiany wprowadzone w stylach CSS.  
   
      Po załadowaniu sekcji 4, zobaczysz niższe obrazy wyglądają niewłaściwie. Każdy element pojawi się wycinania połowę (z lewej połowie brakujący).  
   
-8.  Przejdź do programu Visual Studio i wybierz **zaznacz Element** w Eksploratorze DOM (albo naciśnij klawisze Ctrl + B). Spowoduje to zmianę trybu zaznaczania, dzięki czemu będzie można zaznaczyć element, klikając go, i przenieść aplikację na pierwszy plan. Jednym kliknięciem można powrócić do poprzedniego trybu.  
+8. Przejdź do programu Visual Studio i wybierz **zaznacz Element** w Eksploratorze DOM (albo naciśnij klawisze Ctrl + B). Spowoduje to zmianę trybu zaznaczania, dzięki czemu będzie można zaznaczyć element, klikając go, i przenieść aplikację na pierwszy plan. Jednym kliknięciem można powrócić do poprzedniego trybu.  
   
     > [!TIP]
     >  Aby wybrać elementy HTML bezpośrednio w Eksploratorze DOM, można użyć klawiszy strzałek lub innych metod. Aby uzyskać więcej informacji dotyczących zaznaczania elementów, zobacz [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md).  
@@ -105,11 +105,11 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
   
      Ten widok zawiera pewne przydatne informacje dotyczące elementu:  
   
-    -   Kolory odpowiadają wyróżnienia pola, który pojawia się w symulatorze, po najechaniu kursorem na elementy. Reprezentuje kolor niebieski \<img > wymiarów elementu. Tan kolor reprezentuje wartości marginesów.  
+    - Kolory odpowiadają wyróżnienia pola, który pojawia się w symulatorze, po najechaniu kursorem na elementy. Reprezentuje kolor niebieski \<img > wymiarów elementu. Tan kolor reprezentuje wartości marginesów.  
   
-    -   Lewy margines (lewym marginesie) jest ustawiona, który wskazówki na przyczynę problemu, ponieważ pasuje objawów (czarne po lewej stronie obrazów).  
+    - Lewy margines (lewym marginesie) jest ustawiona, który wskazówki na przyczynę problemu, ponieważ pasuje objawów (czarne po lewej stronie obrazów).  
   
-    -   Pola, które wyświetla wartości 0 pikseli (na przykład obramowanie i dopełnienie) sugeruje, że prawdopodobnie nie są ustawione odpowiednie właściwości CSS.  
+    - Pola, które wyświetla wartości 0 pikseli (na przykład obramowanie i dopełnienie) sugeruje, że prawdopodobnie nie są ustawione odpowiednie właściwości CSS.  
   
 11. Aby zobaczyć sposób zastosowania reguły lewy margines, wybierz **obliczane** kartę i sprawdź w obszarze reguła lewy margines. Widać, że ta zasada została ustawiona za pomocą wartości 5em obliczoną wartością jest jednak 66.66px lub 146.66px, w zależności od urządzenia docelowego.  
   

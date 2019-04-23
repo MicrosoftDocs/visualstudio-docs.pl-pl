@@ -16,12 +16,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 563826c63d851e412b7c74a99f5b8a9ad1c1556e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a3c24d8aa984ddc947d3c532020974a196192940
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798810"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082389"
 ---
 # <a name="net-memory-allocations-view"></a>.NET Widok alokacji pamięci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Widok alokacji zawiera typy, które zostały utworzone podczas uruchomienia prof
 ## <a name="highlighting-the-execution-hot-path"></a>Wyróżnianie ścieżka aktywna wykonywania  
  Można znaleźć ścieżki wykonywania drzewo wywołań, utworzony większość obiektów o typie elementu nadrzędnego.  
   
--   Aby wyświetlić najbardziej aktywne ścieżkę, kliknij prawym przyciskiem myszy typu lub funkcji, a następnie kliknij **Rozwiń ścieżkę aktywną**.  
+- Aby wyświetlić najbardziej aktywne ścieżkę, kliknij prawym przyciskiem myszy typu lub funkcji, a następnie kliknij **Rozwiń ścieżkę aktywną**.  
   
 |Kolumna|Opis|  
 |------------|-----------------|  

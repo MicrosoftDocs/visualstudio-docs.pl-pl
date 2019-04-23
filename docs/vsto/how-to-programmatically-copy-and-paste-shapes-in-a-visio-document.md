@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad4ddf0ff7e4fd2f315b47f8a7e2fddb604932e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 81941d131b51135771333aeab966716f4126a58b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604041"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091281"
 ---
 # <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Instrukcje: Programowe kopiowanie i wklejanie kształtów w dokumencie programu Visio
   Możesz programowo skopiuj kształtów na jednej stronie dokumentu i wklej je do nowej strony w tym samym dokumencie. Można wkleić je do lokalizacji domyślnej (Centrum aktywne okno) lub te same lokalizacje współrzędnych ponieważ na stronie oryginalnej.
@@ -28,7 +28,7 @@ ms.locfileid: "56604041"
 
 ### <a name="to-copy-shapes-to-the-center-of-another-page"></a>Aby skopiować kształty do środka innej strony
 
--   Poniższy przykład pokazuje, jak skopiować kształty od pierwszej strony i wklej je do Centrum drugiej strony.
+- Poniższy przykład pokazuje, jak skopiować kształty od pierwszej strony i wklej je do Centrum drugiej strony.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#14](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#14)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#14)]
@@ -40,7 +40,7 @@ ms.locfileid: "56604041"
 
 ### <a name="to-copy-shapes-and-shape-locations-to-another-page"></a>Aby skopiować kształty i lokalizacje kształtów do innej strony
 
--   Poniższy przykład pokazuje, jak skopiować kształty od pierwszej strony i wklej je do drugiej strony, przy użyciu oryginalnych lokalizacji współrzędnych.
+- Poniższy przykład pokazuje, jak skopiować kształty od pierwszej strony i wklej je do drugiej strony, przy użyciu oryginalnych lokalizacji współrzędnych.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#15)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#15)]

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05164cf426c8156000377d980a40ae9f54d13c4b
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 68482f9dcb88bd87c65f749c821f4afe92089a51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57873518"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064066"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrowanie modeli za pomocą Visual Studio Modelbus
 
@@ -25,9 +25,9 @@ ModelBus umożliwia utworzenie unikatowych odwołania do modelu lub do określon
 
 Aby uzyskać dodatkowe informacje i przykładowy kod zobacz:
 
--   [Instrukcje: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Instrukcje: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)
 
--   [Modeling SDK for Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)
+- [Modeling SDK for Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -80,9 +80,9 @@ Aby upewnić się, że element identyfikatory są zachowywane:
 
    Alternatywnie, jeśli chcesz użyć nazwy elementów do identyfikowania elementów zamiast identyfikatory GUID, można zastąpić części wygenerowanego kart. Należy zastąpić następujące metody w klasie karty:
 
--   Zastąp `GetElementId` do zwrócenia identyfikatora, którego chcesz użyć. Ta metoda jest wywoływana podczas tworzenia odwołania.
+- Zastąp `GetElementId` do zwrócenia identyfikatora, którego chcesz użyć. Ta metoda jest wywoływana podczas tworzenia odwołania.
 
--   Zastąp `ResolveElementReference` zlokalizować poprawny element z odwołaniem Model Bus.
+- Zastąp `ResolveElementReference` zlokalizować poprawny element z odwołaniem Model Bus.
 
 ## <a name="editRef"></a> Uzyskiwanie dostępu do języka DSL z innego języka DSL
 
@@ -92,21 +92,21 @@ Aby włączyć DSL można używać odwołań do innego DSL, najpierw należy go 
 
 ### <a name="to-enable-a-dsl-to-consume-references-to-an-exposed-dsl"></a>Aby włączyć DSL korzystanie z odwołań do narażonych DSL
 
-1.  W definicji DSL diagramu, kliknij prawym przyciskiem myszy na główną część diagramu, a następnie kliknij przycisk **Włącz Modelbus**.
+1. W definicji DSL diagramu, kliknij prawym przyciskiem myszy na główną część diagramu, a następnie kliknij przycisk **Włącz Modelbus**.
 
-2.  W oknie dialogowym wybierz **chcę włączyć ten model z odwołania do modelu magistrali**.
+2. W oknie dialogowym wybierz **chcę włączyć ten model z odwołania do modelu magistrali**.
 
-3.  W projekcie języka Dsl konsumencki DSL należy dodać następujące zestawy do odwołań projektu. Te zestawy (pliki .dll) znajduje się w ModelBusAdapter\bin\\* katalogu narażonych DSL.
+3. W projekcie języka Dsl konsumencki DSL należy dodać następujące zestawy do odwołań projektu. Te zestawy (pliki .dll) znajduje się w ModelBusAdapter\bin\\* katalogu narażonych DSL.
 
-    -   Narażone zestawu DSL, na przykład **Fabrikam.FamilyTree.Dsl.dll**
+    - Narażone zestawu DSL, na przykład **Fabrikam.FamilyTree.Dsl.dll**
 
-    -   Model narażonych magistrali zestaw adaptera, na przykład **Fabrikam.FamilyTree.ModelBusAdapter.dll**
+    - Model narażonych magistrali zestaw adaptera, na przykład **Fabrikam.FamilyTree.ModelBusAdapter.dll**
 
-4.  Dodaj następujące zestawy .NET do odwołania do projektu konsumencki projektu DSL.
+4. Dodaj następujące zestawy .NET do odwołania do projektu konsumencki projektu DSL.
 
-    1.  **Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0.dll**
+    1. **Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0.dll**
 
-    2.  **Microsoft.VisualStudio.Modeling.Sdk.Integration.Shell.11.0.dll**
+    2. **Microsoft.VisualStudio.Modeling.Sdk.Integration.Shell.11.0.dll**
 
 ### <a name="to-store-a-model-bus-reference-in-a-domain-property"></a>Do przechowywania odwołania magistrali modelu we właściwości domeny
 
@@ -120,39 +120,39 @@ Aby włączyć DSL można używać odwołań do innego DSL, najpierw należy go 
 
 ### <a name="to-allow-the-user-to-set-a-model-bus-reference-in-a-domain-property"></a>Aby zezwolić użytkownikowi na ustawianie odwołanie magistrali modelu we właściwości domeny
 
-1.  Kliknij prawym przyciskiem myszy właściwość domeny, a następnie kliknij przycisk **ModelBusReference edytować właściwości określonych**. Zostanie otwarte okno dialogowe. Jest to *Model Bus selektora*.
+1. Kliknij prawym przyciskiem myszy właściwość domeny, a następnie kliknij przycisk **ModelBusReference edytować właściwości określonych**. Zostanie otwarte okno dialogowe. Jest to *Model Bus selektora*.
 
-2.  Wybierz odpowiedni **rodzaju ModelBusReference**: element wewnątrz modelu lub modelu.
+2. Wybierz odpowiedni **rodzaju ModelBusReference**: element wewnątrz modelu lub modelu.
 
-3.  W ciągu filtru okno dialogowe pliku, wprowadź ciąg takich jak `Family Tree files |*.ftree`. Subsitute rozszerzenie pliku narażonych DSL.
+3. W ciągu filtru okno dialogowe pliku, wprowadź ciąg takich jak `Family Tree files |*.ftree`. Subsitute rozszerzenie pliku narażonych DSL.
 
-4.  Jeśli wybrano odwoływać się do elementu w modelu, można dodać listę typów, które użytkownik może wybrać, na przykład Company.FamilyTree.Person.
+4. Jeśli wybrano odwoływać się do elementu w modelu, można dodać listę typów, które użytkownik może wybrać, na przykład Company.FamilyTree.Person.
 
-5.  Kliknij przycisk **OK**, a następnie kliknij przycisk **Przekształć wszystkie szablony** w **Eksploratora rozwiązań** paska narzędzi.
+5. Kliknij przycisk **OK**, a następnie kliknij przycisk **Przekształć wszystkie szablony** w **Eksploratora rozwiązań** paska narzędzi.
 
     > [!WARNING]
     > Jeśli nie wybrano prawidłowego modelu lub jednostki przycisku OK nie wpłyną, mimo że może pojawić się włączone.
 
-6.  Jeśli określono listę typów docelowych, takich jak Company.FamilyTree.Person, następnie należy dodać odwołanie do zestawu do projektu DSL odwołuje się do elementu docelowego DSL, na przykład Company.FamilyTree.Dsl.dll biblioteki DLL
+6. Jeśli określono listę typów docelowych, takich jak Company.FamilyTree.Person, następnie należy dodać odwołanie do zestawu do projektu DSL odwołuje się do elementu docelowego DSL, na przykład Company.FamilyTree.Dsl.dll biblioteki DLL
 
 ### <a name="to-test-a-model-bus-reference"></a>Aby przetestować odwołanie magistrali modelu
 
-1.  Twórz zarówno narażonych i korzystanie z nich języków DSL.
+1. Twórz zarówno narażonych i korzystanie z nich języków DSL.
 
-2.  Uruchom jedno z języków DSL w trybie doświadczalnym, naciskając klawisz F5 lub CTRL + F5.
+2. Uruchom jedno z języków DSL w trybie doświadczalnym, naciskając klawisz F5 lub CTRL + F5.
 
-3.  W projekcie debugowanie w doświadczalnym wystąpieniu programu Visual Studio należy dodać pliki, które są wystąpieniami każdego DSL.
+3. W projekcie debugowanie w doświadczalnym wystąpieniu programu Visual Studio należy dodać pliki, które są wystąpieniami każdego DSL.
 
     > [!NOTE]
     > Visual Studio ModelBus tylko może rozpoznać odwołania do modeli, które są elementy w tym samym rozwiązaniu Visual Studio. Na przykład nie można utworzyć odwołania do pliku modelu w innej części systemu plików.
 
-4.  Utwórz niektóre elementy i łącza w wystąpieniu narażonych DSL i zapisz go.
+4. Utwórz niektóre elementy i łącza w wystąpieniu narażonych DSL i zapisz go.
 
-5.  Otwórz wystąpienie konsumencki DSL, a następnie wybierz element modelu, który ma właściwość odwołanie magistrali modelu.
+5. Otwórz wystąpienie konsumencki DSL, a następnie wybierz element modelu, który ma właściwość odwołanie magistrali modelu.
 
-6.  W oknie właściwości kliknij dwukrotnie model bus referencyjna właściwość. Zostanie otwarte okno dialogowe selektora.
+6. W oknie właściwości kliknij dwukrotnie model bus referencyjna właściwość. Zostanie otwarte okno dialogowe selektora.
 
-7.  Kliknij przycisk **Przeglądaj** i wybierz wystąpienie narażonych DSL.
+7. Kliknij przycisk **Przeglądaj** i wybierz wystąpienie narażonych DSL.
 
      Selektor również umożliwi wybranie elementu w modelu, jeśli określony rodzaj specyficzne dla elementu modelu magistrali odwołania.
 
@@ -388,9 +388,9 @@ ModelBusReference elementReferenceRestored =
 
  Główny rekord rozruchowy jest przeprowadzona w dwóch etapach:
 
--   `ModelBusReferencePropertySerializer` to standardowa serializator, która zajmuje się nagłówek MBR. Używa ona standardowych DSL `SerializationContext` zbiór właściwości, który jest przechowywany w `ReferenceContext` przy użyciu klucza `ModelBusReferencePropertySerializer.ModelBusLoadContextKey`. W szczególności `SerializationContext` powinien zawierać wystąpienia `ModelBus`.
+- `ModelBusReferencePropertySerializer` to standardowa serializator, która zajmuje się nagłówek MBR. Używa ona standardowych DSL `SerializationContext` zbiór właściwości, który jest przechowywany w `ReferenceContext` przy użyciu klucza `ModelBusReferencePropertySerializer.ModelBusLoadContextKey`. W szczególności `SerializationContext` powinien zawierać wystąpienia `ModelBus`.
 
--   Karta ModelBus zajmuje się częścią kart MBR. Może używać dodatkowych informacji przechowywanych w ReferenceContext z MBR. Prosty adapter opartych na plikach przechowuje ścieżki pliku głównego przy użyciu kluczy `FilePathLoadContextKey` i `FilePathSaveContextKey`.
+- Karta ModelBus zajmuje się częścią kart MBR. Może używać dodatkowych informacji przechowywanych w ReferenceContext z MBR. Prosty adapter opartych na plikach przechowuje ścieżki pliku głównego przy użyciu kluczy `FilePathLoadContextKey` i `FilePathSaveContextKey`.
 
      Odwołanie karty w pliku modelu jest przeprowadzona tylko wtedy, gdy jest używany.
 

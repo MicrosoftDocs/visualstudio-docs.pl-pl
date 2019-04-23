@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f6fd87a9c666e3373515cf8df59d7cd9fd7c717
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 91cef3ad04ca7b1713f7e48f87dbefe1a84d8fca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624402"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093465"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Instrukcje: Tworzenie pakietu rozwiązania SharePoint przy użyciu zadań MSBuild
   Kompilacji, czyszczenia i sprawdzanie poprawności pakietu programu SharePoint (*.wsp*) przy użyciu wiersza polecenia zadania programu MSBuild na komputerze deweloperskim. Te polecenia umożliwia również Automatyzowanie procesu kompilacji za pomocą programu Team Foundation Server na komputerze kompilacji.
@@ -26,11 +26,11 @@ ms.locfileid: "56624402"
 
 #### <a name="to-build-a-sharepoint-package"></a>Aby utworzyć pakiet programu SharePoint
 
-1.  Na Windows **Start** menu, wybierz **wszystkie programy** > **Akcesoria** > **polecenia**.
+1. Na Windows **Start** menu, wybierz **wszystkie programy** > **Akcesoria** > **polecenia**.
 
-2.  Przejdź do katalogu, w którym znajduje się projekt programu SharePoint.
+2. Przejdź do katalogu, w którym znajduje się projekt programu SharePoint.
 
-3.  Wprowadź następujące polecenie, aby utworzyć pakiet dla projektu. Zastąp *ProjectFileName* nazwą projektu.
+3. Wprowadź następujące polecenie, aby utworzyć pakiet dla projektu. Zastąp *ProjectFileName* nazwą projektu.
 
     ```cmd
     msbuild /t:Package ProjectFileName
@@ -47,11 +47,11 @@ ms.locfileid: "56624402"
 
 #### <a name="to-clean-a-sharepoint-package"></a>Aby wyczyścić pakietu programu SharePoint
 
-1.  Otwórz okno wiersza polecenia.
+1. Otwórz okno wiersza polecenia.
 
-2.  Przejdź do katalogu, w którym znajduje się projekt programu SharePoint.
+2. Przejdź do katalogu, w którym znajduje się projekt programu SharePoint.
 
-3.  Wprowadź następujące polecenie, aby wyczyścić pakietu dla projektu. Zastąp *ProjectFileName* nazwą projektu.
+3. Wprowadź następujące polecenie, aby wyczyścić pakietu dla projektu. Zastąp *ProjectFileName* nazwą projektu.
 
     ```cmd
     msbuild /t:CleanPackage ProjectFileName
@@ -68,11 +68,11 @@ ms.locfileid: "56624402"
 
 #### <a name="to-validate-a-sharepoint-package"></a>Aby sprawdzić poprawność pakietu programu SharePoint
 
-1.  Otwórz okno wiersza polecenia.
+1. Otwórz okno wiersza polecenia.
 
-2.  Przejdź do katalogu, w którym znajduje się projekt programu SharePoint.
+2. Przejdź do katalogu, w którym znajduje się projekt programu SharePoint.
 
-3.  Wprowadź następujące polecenie, aby zweryfikować pakietu dla projektu. Zastąp *ProjectFileName* nazwą projektu.
+3. Wprowadź następujące polecenie, aby zweryfikować pakietu dla projektu. Zastąp *ProjectFileName* nazwą projektu.
 
     ```cmd
     msbuild /t:ValidatePackage ProjectFileName
@@ -89,11 +89,11 @@ ms.locfileid: "56624402"
 
 #### <a name="to-set-a-property-in-a-sharepoint-package"></a>Do ustawiania właściwości w pakiecie programu SharePoint
 
-1.  Otwórz okno wiersza polecenia.
+1. Otwórz okno wiersza polecenia.
 
-2.  Przejdź do katalogu, w którym znajduje się projekt programu SharePoint.
+2. Przejdź do katalogu, w którym znajduje się projekt programu SharePoint.
 
-3.  Wprowadź następujące polecenie, aby ustawić właściwość pakietu dla projektu. Zastąp *PropertyName* z właściwościami, który chcesz ustawić.
+3. Wprowadź następujące polecenie, aby ustawić właściwość pakietu dla projektu. Zastąp *PropertyName* z właściwościami, który chcesz ustawić.
 
     ```cmd
     msbuild /property:PropertyName=Value

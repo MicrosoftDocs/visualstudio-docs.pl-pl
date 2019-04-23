@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2470c6ff8603bc100ee515b046efcf2436cb0b4e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bd447f0d68eb729c0bd25a65e99e871d7927c49b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629134"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087679"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Instrukcje: Określ lokalizację, w której użytkownicy końcowi będą przeprowadzać instalacje
 Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, lokalizację, do którego użytkownicy używają do pobrania i zainstalowania aplikacji nie jest koniecznie lokalizacji, w którym początkowo opublikować aplikację. Na przykład w niektórych organizacjach deweloper może publikować aplikacje na serwerze tymczasowym, a następnie administrator może przenieść aplikację na serwerze sieci Web.
@@ -35,11 +35,11 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 
 ### <a name="to-specify-an-installation-url"></a>Aby określić adres URL instalacji
 
-1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
+1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
 
-2.  Kliknij przycisk **Publikuj** kartę.
+2. Kliknij przycisk **Publikuj** kartę.
 
-3.  W polu adres URL instalacji wprowadź lokalizację instalacji przy użyciu w pełni kwalifikowany adres URL w formacie *http://www.microsoft.com/ApplicationName*, lub ścieżkę UNC w formacie  *\\\Server\ApplicationName*.
+3. W polu adres URL instalacji wprowadź lokalizację instalacji przy użyciu w pełni kwalifikowany adres URL w formacie *http://www.microsoft.com/ApplicationName*, lub ścieżkę UNC w formacie  *\\\Server\ApplicationName*.
 
 ## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Określanie lokalizacji kopiowania plików w programie Visual Studio](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)

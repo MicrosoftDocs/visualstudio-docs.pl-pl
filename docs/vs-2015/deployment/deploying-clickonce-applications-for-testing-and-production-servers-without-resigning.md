@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2354f65e1b042682a0e58a0dbb4bc12712bb47e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c853e24da3f203d67874d7b9740d3239abd78c14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760715"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066601"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Wdrażanie technologii ClickOnce do testowania i obsługi serwerów produkcyjnych bez ponownego podpisywania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ W tym temacie opisano nową funkcję wprowadzone w .NET Framework w wersji 3.5, 
   
  Niezależnych dostawców oprogramowania i deweloperów innych firm można wyrazić zgodę na tę funkcję, co ułatwia ich klienci będą mogli aktualizować aplikacje usługi. Ta funkcja może być używana w następujących sytuacjach:  
   
--   Podczas aktualizacji aplikacji, a nie pierwszej instalacji aplikacji.  
+- Podczas aktualizacji aplikacji, a nie pierwszej instalacji aplikacji.  
   
--   Gdy ma tylko jedną konfigurację aplikacji na komputerze. Na przykład jeśli aplikacja jest skonfigurowana by wskazywał dwóch różnych bazach danych, nie można użyć tej funkcji.  
+- Gdy ma tylko jedną konfigurację aplikacji na komputerze. Na przykład jeśli aplikacja jest skonfigurowana by wskazywał dwóch różnych bazach danych, nie można użyć tej funkcji.  
   
 ## <a name="excluding-deploymentprovider-from-deployment-manifests"></a>Wykluczanie deploymentProvider manifesty wdrożenia  
  W .NET Framework 2.0 i .NET Framework 3.0, każda aplikacja ClickOnce, która jest instalowana na systemu pod kątem dostępności w trybie offline należy określić `deploymentProvider` w manifeście wdrożenia. `deploymentProvider` Często nazywa się aktualizującej; to lokalizacja, w którym ClickOnce będzie szukać aktualizacji aplikacji. To wymaganie, połączone z konieczności wydawcy aplikacji zarejestrować swoje wdrożenia wprowadzone trudne dla firmy zaktualizować aplikacji ClickOnce, od dostawcy lub innych firm. Zapewnia także go trudniejsze do wdrożenia tej samej aplikacji z wielu lokalizacji w tej samej sieci.  

@@ -21,12 +21,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ad3dddec84ac8afc00681171bf59d13205229ca7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 533ad333923edf2e3f55ed5c4e85b42f422a573a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754241"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072373"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Instrukcje: Określanie linku do pomocy technicznej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ Podczas publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] apli
   
 ### <a name="to-specify-a-support-url"></a>Aby określić adres URL pomocy technicznej  
   
-1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
+1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
   
-2.  Kliknij przycisk **Publikuj** kartę.  
+2. Kliknij przycisk **Publikuj** kartę.  
   
-3.  Kliknij przycisk **opcje** przycisk, aby otworzyć **opcji publikowania** okno dialogowe.  
+3. Kliknij przycisk **opcje** przycisk, aby otworzyć **opcji publikowania** okno dialogowe.  
   
-4.  Kliknij przycisk **opis**.  
+4. Kliknij przycisk **opis**.  
   
-5.  W **adres URL pomocy technicznej** wprowadź pełną ścieżkę do witryny sieci Web, strona sieci Web lub UNC udziału.  
+5. W **adres URL pomocy technicznej** wprowadź pełną ścieżkę do witryny sieci Web, strona sieci Web lub UNC udziału.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   

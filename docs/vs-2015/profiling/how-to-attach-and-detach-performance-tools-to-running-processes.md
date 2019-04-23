@@ -17,12 +17,12 @@ caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2357993f6f0d814bc2383564cafe16bb2e21225a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 873f4735cd1be2525b8b009dc94787b4eed394ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762438"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095746"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Instrukcje: Dołączanie i odłączanie narzędzi wydajności do uruchomionego procesu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Program profilujący może służyć do dołączenia do lub odłączyć od uruch
   
 ### <a name="to-attach-to-a-running-process"></a>Aby dołączyć do uruchomionego procesu  
   
-1.  Na **analizy** menu wskaż **Profiler** a następnie kliknij przycisk **Attach/Detach**.  
+1. Na **analizy** menu wskaż **Profiler** a następnie kliknij przycisk **Attach/Detach**.  
   
      \- lub —  
   
@@ -52,13 +52,13 @@ Program profilujący może służyć do dołączenia do lub odłączyć od uruch
   
      **Dołączyć Profiler do procesu** pojawi się okno dialogowe.  
   
-2.  Kliknij nazwę, którą chcesz dołączyć do procesu.  
+2. Kliknij nazwę, którą chcesz dołączyć do procesu.  
   
-3.  Kliknij przycisk **dołączyć**.  
+3. Kliknij przycisk **dołączyć**.  
   
 ### <a name="to-detach-from-a-running-process"></a>Można odłączyć od uruchomionego procesu  
   
-1.  Na **analizy** menu wskaż **Profiler** a następnie kliknij przycisk **Attach/Detach**.  
+1. Na **analizy** menu wskaż **Profiler** a następnie kliknij przycisk **Attach/Detach**.  
   
      \- lub —  
   
@@ -66,9 +66,9 @@ Program profilujący może służyć do dołączenia do lub odłączyć od uruch
   
      **Dołączyć Profiler do procesu** pojawi się okno dialogowe.  
   
-2.  Kliknij nazwę obrazu, z którego chcesz odłączyć.  
+2. Kliknij nazwę obrazu, z którego chcesz odłączyć.  
   
-3.  Kliknij przycisk **odłączyć**.  
+3. Kliknij przycisk **odłączyć**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Kontrolowanie zbierania danych](../profiling/controlling-data-collection.md)   

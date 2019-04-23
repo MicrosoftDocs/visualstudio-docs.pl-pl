@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d488149302e21f6e46f1c20a32fb7aecefe8337
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: c1f2f4dc5eb4c285b99a72a58836e5f81b3ef30f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869305"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088460"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modyfikowanie stylu obiektów w programie Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ Najprostszym sposobem dostosować obiekt jest do ustawiania właściwości **wł
   
  **W tym temacie**:  
   
--   [Pędzle: Modyfikowanie wyglądu obiektu](#Brushes)  
+- [Pędzle: Modyfikowanie wyglądu obiektu](#Brushes)  
   
--   [Style i szablony: Tworzenie spójnego wyglądu i zachowania między formantów](#Styles)  
+- [Style i szablony: Tworzenie spójnego wyglądu i zachowania między formantów](#Styles)  
   
--   [Stany wizualne: Zmienianie wyglądu kontrolki oparte na stanie](#Visual)  
+- [Stany wizualne: Zmienianie wyglądu kontrolki oparte na stanie](#Visual)  
   
--   [Zasoby dotyczące oprogramowania: Tworzenie, kolory, style i szablony i używać ich ponownie później](#Resources)  
+- [Zasoby dotyczące oprogramowania: Tworzenie, kolory, style i szablony i używać ich ponownie później](#Resources)  
   
-##  <a name="Brushes"></a> Pędzle: Modyfikowanie wyglądu obiektu  
+## <a name="Brushes"></a> Pędzle: Modyfikowanie wyglądu obiektu  
  Stosowanie pędzla do obiektu, jeśli chcesz zmienić jego wygląd.  
   
  **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pędzle edytora](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).  
@@ -57,7 +57,7 @@ Najprostszym sposobem dostosować obiekt jest do ustawiania właściwości **wł
   
  **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Kafelek pędzle](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
   
-##  <a name="Styles"></a> Style i szablony: Tworzenie spójnego wyglądu i zachowania między formantów  
+## <a name="Styles"></a> Style i szablony: Tworzenie spójnego wyglądu i zachowania między formantów  
  Można zaprojektować wygląd i zachowanie kontrolki, jeden raz i zastosowanie tego projektu do innych kontrolek, dzięki czemu nie trzeba zachować je oddzielnie.  
   
  **Należy użyć stylu?** : Jeśli chcesz ustawić domyślne właściwości (np. kolor przycisku), użyj *styl*. Kontrolki można modyfikować, nawet w przypadku, po zastosowaniu styl do niego.  
@@ -102,14 +102,14 @@ Najprostszym sposobem dostosować obiekt jest do ustawiania właściwości **wł
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Przywracanie domyślnego stylu lub szablonu kontrolki  
  Wybierz kontrolkę a następnie w [właściwości](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) panelu, odszukaj **styl** lub **szablonu** właściwości. Następnie kliknij przycisk **zaawansowane opcje** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb"), a następnie kliknij przycisk **resetowania** w menu skrótów.  
   
-##  <a name="Visual"></a> Stany wizualne: Zmienianie wyglądu kontrolki oparte na stanie  
+## <a name="Visual"></a> Stany wizualne: Zmienianie wyglądu kontrolki oparte na stanie  
  Formanty mogą mieć inny wygląd visual na podstawie interakcji użytkownika. Można na przykład należy przycisk, zielony, po kliknięciu przez użytkownika lub uruchomieniu animacji. Skróć lub wydłużyć czas między stany wizualne za pomocą przejścia.  
   
  ![](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png "a95c671a-5639-40b9-83db-1e6b214330d5")  
   
  **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [zarządzać stanem formantów WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).  
   
-##  <a name="Resources"></a> Zasoby dotyczące oprogramowania: Tworzenie, kolory, style i szablony i używać ich ponownie później  
+## <a name="Resources"></a> Zasoby dotyczące oprogramowania: Tworzenie, kolory, style i szablony i używać ich ponownie później  
  Możesz również przekonwertować wszystko, co w projekcie do zasobu. Zasób jest tylko obiekt, który można ponownie użyć w różnych miejscach w aplikacji. Na przykład można utworzyć jeden raz kolor, ułatwiają zasobu i następnie użyć tego koloru na kilka obiektów. Aby zmienić kolor wszystkich tych obiektów, można zmienić kolor zasobu.  
   
  ![](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-b153-52a23cd744f7") ![](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  

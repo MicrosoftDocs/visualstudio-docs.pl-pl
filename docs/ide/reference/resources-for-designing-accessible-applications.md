@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b79d1f95b6aab700de060a3749374e9ecb48c229
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7fe2a4b57fda3ab861b5471e1af70cd4bfcc55e6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952671"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086146"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Zasoby do projektowania dostępnych aplikacji
 
@@ -43,13 +43,13 @@ Użyj następujących linków, aby znaleźć informacje o technologii obsługuj�
 
 ## <a name="websites"></a>Witryny internetowe
 
--   [Przewodnik: Wytyczne dotyczące ułatwień dostępu za pomocą kontrolki obrazu, kontrolek Menu i AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) ten artykuł zawiera instrukcje krok po kroku, w tym formantów dostępny w przykładowej strony internetowej. Daje ona również niektóre ułatwień dostępu wskazówki dotyczące projektowania dla sieci Web.
+- [Przewodnik: Wytyczne dotyczące ułatwień dostępu za pomocą kontrolki obrazu, kontrolek Menu i AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) ten artykuł zawiera instrukcje krok po kroku, w tym formantów dostępny w przykładowej strony internetowej. Daje ona również niektóre ułatwień dostępu wskazówki dotyczące projektowania dla sieci Web.
 
--   **Tworzenie stron sieci Web dostępny za pomocą DHTML** artykułu technicznego na ten temat zawiera listę elementów HTML 4.0, które są dostępne, a także wskazówki dotyczące projektowania internetowego. Aby uzyskać więcej informacji, zobacz [tworzenia dostępny stron sieci web za pomocą DHTML](https://msdn.microsoft.com/library/ms528445.aspx).
+- **Tworzenie stron sieci Web dostępny za pomocą DHTML** artykułu technicznego na ten temat zawiera listę elementów HTML 4.0, które są dostępne, a także wskazówki dotyczące projektowania internetowego. Aby uzyskać więcej informacji, zobacz [tworzenia dostępny stron sieci web za pomocą DHTML](https://msdn.microsoft.com/library/ms528445.aspx).
 
 ### <a name="third-party-resources"></a>Zasoby innych firm
 
--   **Inicjatywy ułatwień dostępu w sieci World Wide Web Consortium (W3C) w sieci Web** tej witryny sieci Web udostępnia wskazówki i technik projektowania dostępne witryn sieci Web. Aby uzyskać więcej informacji, zobacz [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
+- **Inicjatywy ułatwień dostępu w sieci World Wide Web Consortium (W3C) w sieci Web** tej witryny sieci Web udostępnia wskazówki i technik projektowania dostępne witryn sieci Web. Aby uzyskać więcej informacji, zobacz [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
 ## <a name="see-also"></a>Zobacz także
 

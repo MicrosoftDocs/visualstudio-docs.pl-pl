@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ce3cfa8762c6202a7c36bd9606a0fa77ccdd94a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58866769"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084044"
 ---
 # <a name="managing-external-tools"></a>Zarządzanie narzędziami zewnętrznymi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,17 +72,17 @@ Możesz wywołać zewnętrznych narzędzi z poziomu programu Visual Studio. Kilk
 ## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Narzędzia dostępne w Menu narzędzia programu Visual Studio  
  Możesz wywołać następujących narzędzi z **narzędzia** menu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Można również wywołać za pomocą nazwy z **Szybkie uruchamianie** okna. Na przykład, aby wywołać GuidGen.exe, wpisz **Utwórz GUID**.  
   
-1.  Utwórz identyfikator GUID: generuje identyfikator GUID.  
+1. Utwórz identyfikator GUID: generuje identyfikator GUID.  
   
-2.  Wyszukiwanie błędów: pobiera komunikat o błędzie z wprowadzonej wartości. Aby uzyskać więcej informacji, zobacz [odwołanie ERRLOOK](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
+2. Wyszukiwanie błędów: pobiera komunikat o błędzie z wprowadzonej wartości. Aby uzyskać więcej informacji, zobacz [odwołanie ERRLOOK](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
   
-3.  Narzędzie śledzenia ATL/MFC: Pokazuje debugowania komunikaty śledzenia w źródłach ATL i MFC.  
+3. Narzędzie śledzenia ATL/MFC: Pokazuje debugowania komunikaty śledzenia w źródłach ATL i MFC.  
   
-4.  PreEmptive Protection - Dotfuscator: Chroni programy platformy .NET dla odtwarzania.  
+4. PreEmptive Protection - Dotfuscator: Chroni programy platformy .NET dla odtwarzania.  
   
-5.  SPY++: Wyświetla w postaci graficznej procesy, wątki, windows i komunikatów okien.  
+5. SPY++: Wyświetla w postaci graficznej procesy, wątki, windows i komunikatów okien.  
   
-6.  Edytor konfiguracji usługi WCF: Umożliwia tworzenie i modyfikowanie ustawień konfiguracji usługi WCF.  
+6. Edytor konfiguracji usługi WCF: Umożliwia tworzenie i modyfikowanie ustawień konfiguracji usługi WCF.  
   
 > [!WARNING]
 >  Może pojawić się różne listy zewnętrznych narzędzi w zależności od wersji programu Visual Studio zainstalowane a profilu ustawień zostały zastosowane. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -90,11 +90,11 @@ Możesz wywołać zewnętrznych narzędzi z poziomu programu Visual Studio. Kilk
 ## <a name="adding-new-tools"></a>Dodawanie nowych narzędzi  
  Możesz dodać do zewnętrznego narzędzia **narzędzia** menu. Otwórz **zewnętrznych narzędzi** dialogowym i kliknij przycisk **Dodaj**, a następnie wypełnij informacje. Na przykład następujący wpis powoduje Eksploratora Windows, aby otworzyć znajduje się w katalogu pliku, który aktualnie otwarte w programie Visual Studio:  
   
-1.  Tytuł: Otwórz lokalizację pliku  
+1. Tytuł: Otwórz lokalizację pliku  
   
-2.  Polecenie: explorer.exe  
+2. Polecenie: explorer.exe  
   
-3.  Argumenty: / root, "$(ItemDir)"  
+3. Argumenty: / root, "$(ItemDir)"  
   
 ## <a name="arguments-for-external-tools"></a>Argumenty dla zewnętrznych narzędzi  
  Następujące argumenty są zmiennymi programu Visual Studio, które przypisano podczas uruchamiania narzędzia zewnętrznego. Łącza do zewnętrznych narzędzi, takich jak Notatnik lub Spy ++, które mogą być wyświetlane na **narzędzia** menu, w oknie dialogowym narzędzia zewnętrzne.  

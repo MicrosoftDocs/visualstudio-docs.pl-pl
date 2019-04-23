@@ -9,12 +9,12 @@ ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d35552ad224b038886bcb9dd44177b80b1536ed
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0d66b7f15bd1fb988c82cea934973e15cb4c6fe2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954520"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093166"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Instrukcje: Określanie liczby iteracji testowych w teście obciążeniowym, ustawienia uruchamiania
 
@@ -29,19 +29,19 @@ Za pomocą **edytora testu obciążenia**, można edytować **iteracji testu** w
 
 ## <a name="to-specify-the-number-of-test-iterations-in-a-run-setting"></a>Aby określić liczbę iteracji testowych w ustawieniach testu
 
-1.  Otwórz test obciążenia.
+1. Otwórz test obciążenia.
 
      **Edytora testu obciążenia** pojawi się i wyświetli drzewa testu obciążenia.
 
-2.  Obciążenia testowanie drzewa, w **parametrów uruchomieniowych** folderu, wybierz ustawienie uruchamiania.
+2. Obciążenia testowanie drzewa, w **parametrów uruchomieniowych** folderu, wybierz ustawienie uruchamiania.
 
-3.  Na **widoku** menu, wybierz opcję **okno właściwości** do wyświetlania obciążenia Uruchom kategorii i właściwości tego ustawienia.
+3. Na **widoku** menu, wybierz opcję **okno właściwości** do wyświetlania obciążenia Uruchom kategorii i właściwości tego ustawienia.
 
-4.  Ustaw **Użyj iteracji testu** właściwości **True**.
+4. Ustaw **Użyj iteracji testu** właściwości **True**.
 
-5.  W **iteracje testu** właściwość, wprowadź numer, który wskazuje liczbę iteracji testu do uruchomienia podczas testu obciążeniowego.
+5. W **iteracje testu** właściwość, wprowadź numer, który wskazuje liczbę iteracji testu do uruchomienia podczas testu obciążeniowego.
 
-6.  Po zakończeniu, zmiana wartości właściwości, wybierz **Zapisz** na **pliku** menu. Następnie możesz uruchomić test obciążenia za pomocą nowego **iteracje testu** wartość.
+6. Po zakończeniu, zmiana wartości właściwości, wybierz **Zapisz** na **pliku** menu. Następnie możesz uruchomić test obciążenia za pomocą nowego **iteracje testu** wartość.
 
 ## <a name="see-also"></a>Zobacz także
 

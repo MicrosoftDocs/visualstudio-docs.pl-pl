@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45bd40d2261a30ea455132ba92841c33b968eac0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eaf8982afb01ee07eb8c2d672f351c6e917620a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614990"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094427"
 ---
 # <a name="when-to-create-project-types"></a>Kiedy należy tworzyć typy projektów
 Tworzenie nowych typów projektów stanowi podstawę do dostosowywania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dla użytkowników. Jednak tworzenie nowy typ projektu nie jest wymagane w przypadku wszystkich [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dostosowań. Poniższe wskazówki pomoże określić, czy nowy typ projektu jest wymagana dla danego scenariusza.
@@ -23,26 +23,26 @@ Tworzenie nowych typów projektów stanowi podstawę do dostosowywania [!INCLUDE
 ## <a name="create-a-new-project-type"></a>Utwórz nowy typ projektu
  Należy utworzyć typ projektu, jeśli chcesz dostosować [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] do działania w co najmniej jednej z następujących sposobów:
 
--   Uczestniczy w kompilacji, wdrażania, konfiguracji i kontroli źródła.
+- Uczestniczy w kompilacji, wdrażania, konfiguracji i kontroli źródła.
 
--   Oferuje obsługę debugowania.
+- Oferuje obsługę debugowania.
 
--   Wyświetl elementy projektu w **Eksploratora rozwiązań**.
+- Wyświetl elementy projektu w **Eksploratora rozwiązań**.
 
--   Użyj **Otwórz projekt** lub **nowy projekt** okno dialogowe.
+- Użyj **Otwórz projekt** lub **nowy projekt** okno dialogowe.
 
--   Zagnieżdżanie projektów pomocy technicznej.
+- Zagnieżdżanie projektów pomocy technicznej.
 
 ## <a name="extend-an-existing-project-type"></a>Rozszerzyć istniejący typ projektu
  Należy utworzyć nowy typ projektu, można użyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pod następującymi względami do modyfikowania lub rozszerzania działania istniejącego typu projektu, na przykład, modyfikując procesem kompilacji dla [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projektów:
 
--   Praca z wieloma plikami jako pojedyncza jednostka.
+- Praca z wieloma plikami jako pojedyncza jednostka.
 
--   Wyświetl pojedynczy plik jako hierarchię elementów podrzędnych.
+- Wyświetl pojedynczy plik jako hierarchię elementów podrzędnych.
 
--   Wyświetlanie w kontekście polecenia wokół edytorów.
+- Wyświetlanie w kontekście polecenia wokół edytorów.
 
--   Wyświetl kontekstu usługi dla edytorów.
+- Wyświetl kontekstu usługi dla edytorów.
 
 ## <a name="use-an-existing-project-type"></a>Użyj istniejącego typu projektu
  Tworzenie nowego projektu Czasami nie jest konieczne. W poniższej tabeli przedstawiono zadania, które jest konieczne tworzenie typu projektu.

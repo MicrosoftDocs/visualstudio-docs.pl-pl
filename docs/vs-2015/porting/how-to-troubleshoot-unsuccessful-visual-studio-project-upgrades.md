@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 7d5c30c9b61707f9ac4a32d49613b46416a8d881
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 194dae93e3a013da366d454582b531a2cc4ff8b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804266"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096338"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Instrukcje: Rozwiązywanie problemów z uaktualnieniami projektu powiodło się programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Czasami program Visual Studio w pełni nie można przekonwertować projekt z wcz
 
 #### <a name="to-resolve-incorrect-file-paths"></a>Aby rozwiązać niepoprawny plik ścieżki
 
-1.  Otwórz plik projektu w edytorze tekstów.
+1. Otwórz plik projektu w edytorze tekstów.
 
-2.  Skanuj w poszukiwaniu ścieżki plików, które mogą być niepoprawne, zwłaszcza tych, które zawierają [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] numer wersji.
+2. Skanuj w poszukiwaniu ścieżki plików, które mogą być niepoprawne, zwłaszcza tych, które zawierają [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] numer wersji.
 
-3.  Tak, aby wskazać nowe obiekty docelowe, należy zmodyfikować ścieżki niepoprawny plik.
+3. Tak, aby wskazać nowe obiekty docelowe, należy zmodyfikować ścieżki niepoprawny plik.
 
 ## <a name="the-project-does-not-build-because-references-are-not-valid"></a>Projekt nie kompiluje się, ponieważ odwołania są nieprawidłowe
  Po uaktualnieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], może również być uaktualniania [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersji. Jeśli projekt zawiera odwołania, które są anulowane w nowszego [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersji, ich mogą nie być rozpoznawane poprawnie. Jest to bardzo prawdopodobne, odwołań, które zawierają numery wersji, na przykład `Microsoft.VisualStudio.Shell.Interop.8.0`.

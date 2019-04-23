@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 137755ae4e1bfab97cbaec063a29a95caa1d9cd6
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 6239bc351872dc7a945c3fbff8ad1ed13817c3ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865024"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082792"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>Instrukcje: Zapełnianie dokumentów danymi z usług
 
@@ -33,21 +33,21 @@ Poniższy przykład pokazuje, jak dodać formanty powiązane z danymi do dokumen
 
 ## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>Aby wypełnić projektów dokumentów przy użyciu danych z usługi sieci web
 
-1.  Otwórz **źródeł danych** okna i Utwórz źródło danych usługi dla Twojego projektu. Aby uzyskać więcej informacji, zobacz [dodasz nowe źródła danych](../data-tools/add-new-data-sources.md).
+1. Otwórz **źródeł danych** okna i Utwórz źródło danych usługi dla Twojego projektu. Aby uzyskać więcej informacji, zobacz [dodasz nowe źródła danych](../data-tools/add-new-data-sources.md).
 
-2.  Przeciągnij tabelę lub pole, które ma z **źródeł danych** okna dokumentu.
+2. Przeciągnij tabelę lub pole, które ma z **źródeł danych** okna dokumentu.
 
      Kontrolki jest tworzona w dokumencie, <xref:System.Windows.Forms.BindingSource> jest tworzona, jest powiązany z klasy obiektu w projekcie, a klasy są generowane dla usługi.
 
-3.  W kodzie Utwórz wystąpienie klasy usługi sieci web, którą połączenia w kroku 1.
+3. W kodzie Utwórz wystąpienie klasy usługi sieci web, którą połączenia w kroku 1.
 
-4.  Jeśli istnieją właściwości, które są wymagane do komunikacji z usługą sieci web, tworzenia wystąpień tych właściwości.
+4. Jeśli istnieją właściwości, które są wymagane do komunikacji z usługą sieci web, tworzenia wystąpień tych właściwości.
 
-5.  Utwórz i Wyślij żądanie danych przy użyciu metod udostępnianych przez usługę sieci Web i wszystkie wystąpienia właściwości utworzonego w kroku 4.
+5. Utwórz i Wyślij żądanie danych przy użyciu metod udostępnianych przez usługę sieci Web i wszystkie wystąpienia właściwości utworzonego w kroku 4.
 
      Metody, których można użyć, zależą od tego, jakie usługi sieci web oferuje.
 
-6.  Przypisz odpowiedzi danych z usługi sieci web do <xref:System.Windows.Forms.BindingSource.DataSource%2A> właściwość <xref:System.Windows.Forms.BindingSource>.
+6. Przypisz odpowiedzi danych z usługi sieci web do <xref:System.Windows.Forms.BindingSource.DataSource%2A> właściwość <xref:System.Windows.Forms.BindingSource>.
 
 Kiedy uruchamiasz projekt, formanty wyświetlania pierwszego rekordu w źródle danych. Możesz włączyć przewijanie rekordów dzięki obsłudze zdarzeń walut, przy użyciu obiektów w <xref:System.Windows.Forms.BindingSource>.
 

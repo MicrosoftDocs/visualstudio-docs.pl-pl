@@ -15,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: d45d402287443e3cdd643a76853e62c11c64e3d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0277d0f04042b6d7ed4cb8b6233d8b0ccec464f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951160"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095493"
 ---
 # <a name="add-and-remove-property-pages"></a>Dodawanie i usuwanie stron właściwości
 
@@ -32,7 +32,7 @@ Często podtypu projektu musi wyświetlić dodatkowe strony właściwości w Pro
 
 ### <a name="remove-a-property-page"></a>Usuń stronę właściwości
 
-1.  Zastąp `GetProperty(uint itemId, int propId, out object property)` metodę, aby filtrować strony właściwości i uzyskać `clsids` listy.
+1. Zastąp `GetProperty(uint itemId, int propId, out object property)` metodę, aby filtrować strony właściwości i uzyskać `clsids` listy.
 
     ```vb
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)
@@ -77,7 +77,7 @@ Często podtypu projektu musi wyświetlić dodatkowe strony właściwości w Pro
     }
     ```
 
-2.  Usuń **zdarzenia kompilacji** uzyskane strony `clsids` listy.
+2. Usuń **zdarzenia kompilacji** uzyskane strony `clsids` listy.
 
     ```vb
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"
@@ -113,7 +113,7 @@ Często podtypu projektu musi wyświetlić dodatkowe strony właściwości w Pro
 
 ### <a name="add-a-property-page"></a>Dodawanie strony właściwości
 
-1.  Utwórz stronę właściwości, które chcesz dodać.
+1. Utwórz stronę właściwości, które chcesz dodać.
 
     ```vb
     Class DeployPropertyPage
@@ -158,7 +158,7 @@ Często podtypu projektu musi wyświetlić dodatkowe strony właściwości w Pro
     }
     ```
 
-2.  Zarejestruj swoje nowe strony właściwości.
+2. Zarejestruj swoje nowe strony właściwości.
 
     ```vb
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>
@@ -168,7 +168,7 @@ Często podtypu projektu musi wyświetlić dodatkowe strony właściwości w Pro
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]
     ```
 
-3.  Zastąp `GetProperty(uint itemId, int propId, out object property)` metodę, aby filtrować strony właściwości, Uzyskaj `clsids` listy i Dodaj nową stronę właściwości.
+3. Zastąp `GetProperty(uint itemId, int propId, out object property)` metodę, aby filtrować strony właściwości, Uzyskaj `clsids` listy i Dodaj nową stronę właściwości.
 
     ```vb
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer

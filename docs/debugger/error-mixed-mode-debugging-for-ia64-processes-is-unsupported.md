@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f80cc0d38335679df413f104deadc8f9135ab765
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5c4414651249aa7622e7f7be59e6150a4925f1b8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715755"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089344"
 ---
 # <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Błąd: Debugowanie procesów IA64 w trybie mieszanym nie jest obsługiwane
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Debugger nie obsługuje debugowania kod mieszany natywnych i zarządzanych w procesie opartych na procesorach Itanium.
 
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd
 
--   Twórz 32-bitowej wersji aplikacji do debugowania.
+- Twórz 32-bitowej wersji aplikacji do debugowania.
 
 ## <a name="see-also"></a>Zobacz też
 - [Debugowanie zdalne](../debugger/remote-debugging.md)

@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6346b7751ccb076298c406f3f3e583991bfadfe7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 548851a4e5811864e60d3a14368d6380f14f9e7e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702957"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089396"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Jak można sprawdzić, kto przekazuje błędną wartość parametru?
 ## <a name="problem-description"></a>Opis problemu
@@ -37,19 +37,19 @@ ms.locfileid: "56702957"
 
 #### <a name="to-resolve-this-problem"></a>Aby rozwiązać ten problem
 
-1.  Ustaw punkt przerwania na początku funkcji.
+1. Ustaw punkt przerwania na początku funkcji.
 
-2.  Kliknij prawym przyciskiem myszy punkt przerwania i wybierz **warunek**.
+2. Kliknij prawym przyciskiem myszy punkt przerwania i wybierz **warunek**.
 
-3.  W **warunek punktu przerwania** okno dialogowe, kliknij pozycję **warunek** pole wyboru. Zobacz [zaawansowane punkty przerwania](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
+3. W **warunek punktu przerwania** okno dialogowe, kliknij pozycję **warunek** pole wyboru. Zobacz [zaawansowane punkty przerwania](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 
-4.  Wprowadź wyrażenie, takie jak `Var==3`, w polu tekstowym, gdzie `Var` to nazwa parametru, która zawiera złą wartość, a `3` jest złą wartością przekazywaną do niego.
+4. Wprowadź wyrażenie, takie jak `Var==3`, w polu tekstowym, gdzie `Var` to nazwa parametru, która zawiera złą wartość, a `3` jest złą wartością przekazywaną do niego.
 
-5.  Wybierz **ma wartość True** przycisk radiowy, a następnie kliknij przycisk **OK** przycisku.
+5. Wybierz **ma wartość True** przycisk radiowy, a następnie kliknij przycisk **OK** przycisku.
 
-6.  Teraz ponownie uruchom program. Punkt przerwania powoduje zatrzymanie programu na początku funkcji podczas `Var` parametr ma wartość `3`.
+6. Teraz ponownie uruchom program. Punkt przerwania powoduje zatrzymanie programu na początku funkcji podczas `Var` parametr ma wartość `3`.
 
-7.  Okno stosu wywołań służy do znajdowania funkcji wywołującej i przejdź do jego kod źródłowy. Aby uzyskać więcej informacji, zobacz [jak: Korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md).
+7. Okno stosu wywołań służy do znajdowania funkcji wywołującej i przejdź do jego kod źródłowy. Aby uzyskać więcej informacji, zobacz [jak: Korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="see-also"></a>Zobacz też
 - [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)

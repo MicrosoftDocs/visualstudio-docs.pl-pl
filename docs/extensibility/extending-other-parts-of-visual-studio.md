@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34771bd005b298f73bcc2ee13e2d4cf9a123f1a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf4066a9eee47d1ffad156768287bf036aaae3cf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683051"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080920"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>Rozszerzanie innych części programu Visual Studio
 
@@ -29,9 +29,9 @@ Podstawowe bloki konstrukcyjne programu Visual Studio Extensibility są pakietó
 
 Dowiedz się, jak dodać nowych kontrolek i inne elementy do przybornika i jak korzystać z funkcji przybornika:
 
--   [Tworzenie kontrolki przybornika WPF](../extensibility/creating-a-wpf-toolbox-control.md)
+- [Tworzenie kontrolki przybornika WPF](../extensibility/creating-a-wpf-toolbox-control.md)
 
--   [Tworzenie kontrolki przybornika Windows Forms](../extensibility/creating-a-windows-forms-toolbox-control.md)
+- [Tworzenie kontrolki przybornika Windows Forms](../extensibility/creating-a-windows-forms-toolbox-control.md)
 
 ## <a name="extend-the-status-bar"></a>Rozszerzanie paska stanu
 

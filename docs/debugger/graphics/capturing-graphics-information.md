@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d614a991de46552c34ca5ab8c797f6dd92954180
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: bf8c3a43cfff286e43d099258913b816491527da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708618"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065655"
 ---
 # <a name="capturing-graphics-information"></a>Przechwytywanie informacji graficznych
 Przechwytywać informacje graficzne z aplikacji Direct3D, tak aby analizator grafiki programu Visual Studio można użyć do diagnozowania problemów z renderowaniem i problemy z wydajnością.
@@ -57,9 +57,9 @@ Przechwytywać informacje graficzne z aplikacji Direct3D, tak aby analizator gra
 
 #### <a name="to-configure-graphics-diagnostics-capture-options"></a>Aby skonfigurować opcje przechwytywania diagnostyki grafiki
 
-1.  Na pasku menu wybierz menu Narzędzia, opcje. Zostanie wyświetlone okno dialogowe Opcje.
+1. Na pasku menu wybierz menu Narzędzia, opcje. Zostanie wyświetlone okno dialogowe Opcje.
 
-2.  Na liście Kategoria opcji po lewej stronie wybierz pozycję Diagnostyka grafiki, a następnie skonfiguruj żądane opcje diagnostyki grafiki.
+2. Na liście Kategoria opcji po lewej stronie wybierz pozycję Diagnostyka grafiki, a następnie skonfiguruj żądane opcje diagnostyki grafiki.
 
      **Zbieraj stosy wywołań podczas przechwytywania (zwalnia przechwytywanie)** zaznacz to pole, aby zebrać stosy wywołań. Stosy wywołań nie są zbierane domyślnie. Aby przechwycić stosy wywołań, upewnij się, że **zbieranie wywołań stosów podczas przechwytywania (zwalnia Przechwytywanie** pole wyboru jest ustawiona na włączanie kolekcji, a następnie ustaw opcję **znaczników rysowania, wysyłania, obecny i wydajności**opcję (ustawienie domyślne), aby zbierać tylko najważniejsze stosy wywołań, lub **wszystko** opcję, aby zbierać wszystkie stosy wywołań. Aby zatrzymać zbieranie stosy wywołań później, należy wyczyścić **zbieranie wywołań stosów podczas przechwytywania (zwalnia Przechwytywanie** pola wyboru.
 

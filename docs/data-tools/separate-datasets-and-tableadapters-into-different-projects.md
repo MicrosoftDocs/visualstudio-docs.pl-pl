@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3eb9e8035dd8fa4b6a3143341e7be9959254452e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8a24b934b0ffe4cc22dc7be01aca19910ee3c768
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927662"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096871"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Rozdzielanie zestawów danych i adapterów TableAdapter do różnych projektów
 Typizowane zestawy danych zostały rozszerzone, aby [TableAdapters](create-and-configure-tableadapters.md) i klasy zestawu danych mogą być generowane w oddzielnych projektów. Dzięki temu można szybko oddzielnymi warstwami aplikacji i generowania aplikacji n warstwowa danych.
@@ -30,25 +30,25 @@ Gdy kod zestawu danych można oddzielić od kodu TableAdapter, projekt, który z
 
 #### <a name="to-separate-the-dataset-into-a-different-project"></a>Aby podzielić zestawu danych na inny projekt
 
-1.  Otwórz rozwiązanie, które zawiera zestaw danych (*XSD* pliku).
+1. Otwórz rozwiązanie, które zawiera zestaw danych (*XSD* pliku).
 
     > [!NOTE]
     >  Jeśli rozwiązanie zawiera projekt, do którego chcesz rozdzielić swój kod w zestawie danych, tworzenia projektu lub dodać istniejący projekt do rozwiązania.
 
-2.  Kliknij dwukrotnie plik typizowany zestaw danych ( *XSD* pliku) w **Eksploratora rozwiązań** można otworzyć zestawu danych w **Projektanta obiektów Dataset**.
+2. Kliknij dwukrotnie plik typizowany zestaw danych ( *XSD* pliku) w **Eksploratora rozwiązań** można otworzyć zestawu danych w **Projektanta obiektów Dataset**.
 
-3.  Wybierz pusty obszar **Projektanta obiektów Dataset**.
+3. Wybierz pusty obszar **Projektanta obiektów Dataset**.
 
-4.  W **właściwości** oknie Znajdź **projektu DataSet** węzła.
+4. W **właściwości** oknie Znajdź **projektu DataSet** węzła.
 
-5.  W **projektu DataSet** , wybierz nazwę projektu, do którego chcesz wygenerować kod zestawu danych na liście.
+5. W **projektu DataSet** , wybierz nazwę projektu, do którego chcesz wygenerować kod zestawu danych na liście.
 
      Po wybraniu projektu, do którego chcesz wygenerować kod zestawu danych **plik zestawu danych** właściwość jest wypełniana przy użyciu domyślnej nazwy pliku. Jeśli to konieczne, możesz zmienić tę nazwę. Ponadto, jeśli chcesz wygenerować kod zestawu danych w określonym katalogu, można ustawić **folderu projektu** właściwość na nazwę folderu.
 
     > [!NOTE]
     >  Kiedy oddzielisz zestawy danych i TableAdapters (przez ustawienie **projektu DataSet** właściwości), istniejące częściowe klasy zestawu danych w projekcie nie będą przenoszone automatycznie. Istniejące klasy częściowego zestawu danych należy przenieść ręcznie do projektu zestawu danych.
 
-6.  Zapisz zestaw danych.
+6. Zapisz zestaw danych.
 
      Kod zestawu danych jest generowany w wybranym projekcie w **projektu DataSet** właściwości i **TableAdapter** kod jest generowany w bieżącym projekcie.
 

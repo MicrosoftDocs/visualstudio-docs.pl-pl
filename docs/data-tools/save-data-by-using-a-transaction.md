@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8d5d47cfc21b0aebef884fade422600be2beeb58
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bf5864d25e78b6050da5c13097503b2998dda44a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924373"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080998"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Instrukcje: Zapisywanie danych przy użyciu transakcji
 
@@ -37,15 +37,15 @@ Aby wycofać transakcji zgłoszenie wyjątku przed wywołaniem <xref:System.Tran
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Aby dodać odwołanie do System.Transactions.dll
 
-1.  Na **projektu** menu, wybierz opcję **Dodaj odwołanie**.
+1. Na **projektu** menu, wybierz opcję **Dodaj odwołanie**.
 
-2.  Na **.NET** kartę (**programu SQL Server** kartę dla projektów programu SQL Server), wybierz opcję **System.Transactions**, a następnie wybierz pozycję **OK**.
+2. Na **.NET** kartę (**programu SQL Server** kartę dla projektów programu SQL Server), wybierz opcję **System.Transactions**, a następnie wybierz pozycję **OK**.
 
      Odwołanie do *System.Transactions.dll* zostanie dodany do projektu.
 
 ## <a name="to-save-data-in-a-transaction"></a>Aby zapisać dane w ramach transakcji
 
--   Dodaj kod, aby zapisać dane w obrębie za pomocą instrukcji, która zawiera transakcji. Poniższy kod przedstawia sposób tworzenia i utworzyć wystąpienie <xref:System.Transactions.TransactionScope> obiektu w za pomocą instrukcji:
+- Dodaj kod, aby zapisać dane w obrębie za pomocą instrukcji, która zawiera transakcji. Poniższy kod przedstawia sposób tworzenia i utworzyć wystąpienie <xref:System.Transactions.TransactionScope> obiektu w za pomocą instrukcji:
 
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]

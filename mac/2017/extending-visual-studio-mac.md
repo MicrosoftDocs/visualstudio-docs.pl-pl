@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 8212039cd4f83cd9ea2b53a1050f32ed5dbad367
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 3465ef29ca732cd26c03919082052d8b26a83ba1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58573088"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086125"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Rozszerzanie programu Visual Studio dla komputerów Mac
 
@@ -81,10 +81,10 @@ Rozszerzenia poleceń są definiowane przez dodawanie wpisów do `/MonoDevelop/I
 
 Atrybut ścieżki, która określa punkt rozszerzenia, że jest ona w tym przypadku podłączania, zawiera węzeł rozszerzenia `/MonoDevelop/Ide/Commands/Edit`. Ponadto działa jako węzeł nadrzędny węzła do polecenia. Węzeł polecenie ma następujące atrybuty:
 
-*   **Identyfikator** — Określa identyfikator dla tego polecenia. Identyfikatory poleceń musi być zadeklarowany jako elementy członkowskie wyliczenia i służą do łączenia poleceń do CommandItems.
-*   **_etykieta** — tekst, który ma być wyświetlany w menu.
-*   **_opis** — tekst, który ma być wyświetlany jako etykietka narzędzia dla przycisków paska narzędzi.
-*   **defaultHandler** -Określa `CommandHandler` klasę, która obsługuje polecenie
+* **Identyfikator** — Określa identyfikator dla tego polecenia. Identyfikatory poleceń musi być zadeklarowany jako elementy członkowskie wyliczenia i służą do łączenia poleceń do CommandItems.
+* **_etykieta** — tekst, który ma być wyświetlany w menu.
+* **_opis** — tekst, który ma być wyświetlany jako etykietka narzędzia dla przycisków paska narzędzi.
+* **defaultHandler** -Określa `CommandHandler` klasę, która obsługuje polecenie
 
 <!--To invoke the command from the Edit Menu, the walkthrough creates a CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` extension point:-->
 
@@ -137,27 +137,27 @@ To wiąże ze sobą, polecenie i CommandItem — CommandItem wywołuje polecenie
 
 Aby uzyskać informacji na temat zakresu obszarów, które są dostępne dla rozwoju, zobacz [odwołanie do rozszerzenia drzewa](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) i [omówienie interfejsu API](http://monodevelop.com/Developers/Articles/API_Overview). Podczas tworzenia pakietów rozszerzeń zaawansowanej, również dotyczyć [artykułów dla deweloperów](http://monodevelop.com/Developers/Articles). Poniżej przedstawiono skróconą listę obszarów do dostosowywania:
 
-*   Okienka
-*   Schematy powiązań klawiszy
-*   Zasady
-*   Programy formatujące kodu
-*   Formaty plików projektu
-*   Preferencje paneli
-*   Opcje paneli
-*   Protokoły debugera
-*   Wizualizatory debugera
-*   Układ obszaru roboczego
-*   Węzły drzewa konsoli rozwiązania
-*   Marginesy Edytor źródła
-*   Aparaty testów jednostkowych
-*   Generatory kodu
-*   Fragmenty kodu
-*   Platformy docelowe
-*   Docelowe środowisko uruchomieniowe
-*   Klastry Wirtualne zaplecza
-*   Refaktoryzacja
-*   Wykonanie procedury obsługi
-*   Wyróżnianie składni
+* Okienka
+* Schematy powiązań klawiszy
+* Zasady
+* Programy formatujące kodu
+* Formaty plików projektu
+* Preferencje paneli
+* Opcje paneli
+* Protokoły debugera
+* Wizualizatory debugera
+* Układ obszaru roboczego
+* Węzły drzewa konsoli rozwiązania
+* Marginesy Edytor źródła
+* Aparaty testów jednostkowych
+* Generatory kodu
+* Fragmenty kodu
+* Platformy docelowe
+* Docelowe środowisko uruchomieniowe
+* Klastry Wirtualne zaplecza
+* Refaktoryzacja
+* Wykonanie procedury obsługi
+* Wyróżnianie składni
 
 ## <a name="additional-information"></a>Dodatkowe informacje
 

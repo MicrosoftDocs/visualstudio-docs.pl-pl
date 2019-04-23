@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 536e5ea82d230d27e0b5e95099bf377d6ec1123f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c590ed271897ac6aebb875bafcb1b6b50a753629
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643538"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078022"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Instrukcje: Programowe Dodawanie wierszy i kolumn do tabel programu Word
   W tabeli programu Microsoft Office Word komórki są zorganizowane w wiersze i kolumny. Możesz użyć <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> metody <xref:Microsoft.Office.Interop.Word.Rows> obiektu, aby dodać wiersze do tabeli i <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> metody <xref:Microsoft.Office.Interop.Word.Columns> obiektu, aby dodać kolumny.
@@ -41,14 +41,14 @@ ms.locfileid: "56643538"
 
 ### <a name="to-add-a-row-to-a-table"></a>Aby dodać wiersz do tabeli
 
-1.  Użyj <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> metodę, aby dodać wiersz do tabeli.
+1. Użyj <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> metodę, aby dodać wiersz do tabeli.
 
      [!code-vb[Trin_VstcoreWordAutomation#95](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#95)]
      [!code-csharp[Trin_VstcoreWordAutomation#95](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#95)]
 
 ### <a name="to-add-a-column-to-a-table"></a>Aby dodać kolumnę do tabeli
 
-1.  Użyj <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> metody, a następnie użyj <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> metodę, aby wyświetlić wszystkie kolumny taką samą szerokość.
+1. Użyj <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> metody, a następnie użyj <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> metodę, aby wyświetlić wszystkie kolumny taką samą szerokość.
 
      [!code-vb[Trin_VstcoreWordAutomation#96](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#96)]
      [!code-csharp[Trin_VstcoreWordAutomation#96](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#96)]
@@ -63,14 +63,14 @@ ms.locfileid: "56643538"
 
 ### <a name="to-add-a-row-to-a-table"></a>Aby dodać wiersz do tabeli
 
-1.  Użyj <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> metodę, aby dodać wiersz do tabeli.
+1. Użyj <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> metodę, aby dodać wiersz do tabeli.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#95](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#95)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#95](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#95)]
 
 ### <a name="to-add-a-column-to-a-table"></a>Aby dodać kolumnę do tabeli
 
-1.  Użyj <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> metody, a następnie użyj <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> metodę, aby wyświetlić wszystkie kolumny taką samą szerokość.
+1. Użyj <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> metody, a następnie użyj <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> metodę, aby wyświetlić wszystkie kolumny taką samą szerokość.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#96](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#96)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#96](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#96)]

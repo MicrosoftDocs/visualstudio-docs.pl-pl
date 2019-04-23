@@ -6,12 +6,12 @@ ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1eca19210be8001c56d14213d5efcde358f58b50
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5dd39ecfb25b4b21f7a9064da7621bcc77aab791
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788173"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076709"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ Manifest, aby narzędzie do obsługi kodu jest aplikacja konsolowa która przyjm
   
  **Przykłady**  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
   
--   / Namespace /language:C++ /manifest:D:\MyManifest.imagemanifest ManifestToCode: Moje:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
+- / Namespace /language:C++ /manifest:D:\MyManifest.imagemanifest ManifestToCode: Moje:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>Uwagi  
   
--   Firma Microsoft zaleca, użyj tego narzędzia z manifestów obrazu, które zostały wygenerowane przez Manifest za pomocą narzędzia zasobów.  
+- Firma Microsoft zaleca, użyj tego narzędzia z manifestów obrazu, które zostały wygenerowane przez Manifest za pomocą narzędzia zasobów.  
   
--   Narzędzie analizuje tylko wpisy symbolu, aby wygenerować otoki kodu. Jeśli manifestu obrazu nie zawiera żadnych symboli, następnie otoki wygenerowany kod jest pusta. Jeśli jest obraz lub zestaw obrazów w manifeście obrazu, które nie korzystają z symboli, następnie one zostaną wykluczone z otokę kodu.  
+- Narzędzie analizuje tylko wpisy symbolu, aby wygenerować otoki kodu. Jeśli manifestu obrazu nie zawiera żadnych symboli, następnie otoki wygenerowany kod jest pusta. Jeśli jest obraz lub zestaw obrazów w manifeście obrazu, które nie korzystają z symboli, następnie one zostaną wykluczone z otokę kodu.  
   
 ## <a name="sample-output"></a>Przykładowe dane wyjściowe  
  **Otoki języka C#**  

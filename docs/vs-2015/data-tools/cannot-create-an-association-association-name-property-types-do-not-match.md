@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 149f9360569978cf3ec15fd60154ad6f1408362f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 79f991954c1c54811496628576283c3c0b4330a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656599"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065119"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Nie można utworzyć skojarzenia &lt;Nazwa skojarzenia&gt; — typy właściwości nie są zgodne.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Nie można utworzyć skojarzenia \<Nazwa skojarzenia > — Typy właściwości n
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-1.  Sprawdź komunikat i zanotuj właściwości przywołane w komunikacie.  
+1. Sprawdź komunikat i zanotuj właściwości przywołane w komunikacie.  
   
-2.  Kliknij przycisk **OK** aby zamknąć okno dialogowe.  
+2. Kliknij przycisk **OK** aby zamknąć okno dialogowe.  
   
-3.  Sprawdzanie **właściwości skojarzenia** i wybierz polecenie Właściwości tego samego typu danych.  
+3. Sprawdzanie **właściwości skojarzenia** i wybierz polecenie Właściwości tego samego typu danych.  
   
-4.  Kliknij przycisk **OK**.  
+4. Kliknij przycisk **OK**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Instrukcje: Utwórz skojarzenie (Relacja) między LINQ to SQL klas (Projektant O/R)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   

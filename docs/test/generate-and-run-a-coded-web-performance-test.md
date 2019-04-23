@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5c1a065d30f3925ba5c567d562d0138de8c5953
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869279"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086406"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generowanie i uruchamianie kodowanego testu wydajności sieci Web
 
@@ -29,13 +29,13 @@ Testy wydajności sieci Web są rejestrowane przez przeglądanie aplikacji sieci
 
 ## <a name="generate-a-coded-web-performance-test"></a>Generuj zakodowany internetowy test wydajnościowy
 
-1.  Jeśli nie utworzono testu wydajności sieci web, zobacz [rejestrowanie testu wydajności sieci web](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
+1. Jeśli nie utworzono testu wydajności sieci web, zobacz [rejestrowanie testu wydajności sieci web](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
 
-2.  Generowanie kodowanego testu.
+2. Generowanie kodowanego testu.
 
      ![Generuj zakodowany internetowy test wydajnościowy](../test/media/web_test_coded_generate.png)
 
-3.  Nazwij przypadek testowy.
+3. Nazwij przypadek testowy.
 
      ![Wprowadź nazwę dla kodowany internetowy test wydajnościowy](../test/media/web_test_coded_generate_nametest.png)
 
@@ -47,7 +47,7 @@ Testy wydajności sieci Web są rejestrowane przez przeglądanie aplikacji sieci
 
      W kodzie widać, że metoda GetRequestEnumerator() w języku C# lub metoda Run() w języku Visual Basic zawiera każdy sprawdzania poprawności reguły i żądanie sieci web w teście zapisane.
 
-4.  Aby wykazać, dodając kilka prostych kodów, przewiń w dół do końca metody i po kodzie dla ostatniego żądania sieci web i Dodaj następujący kod:
+4. Aby wykazać, dodając kilka prostych kodów, przewiń w dół do końca metody i po kodzie dla ostatniego żądania sieci web i Dodaj następujący kod:
 
     ```c#
     if (DateTime.Today.DayOfWeek == DayOfWeek.Wednesday)
@@ -72,9 +72,9 @@ Testy wydajności sieci Web są rejestrowane przez przeglądanie aplikacji sieci
     End If
     ```
 
-5.  Kompiluj rozwiązanie, aby sprawdzić, czy skompilowanie niestandardowego kodu.
+5. Kompiluj rozwiązanie, aby sprawdzić, czy skompilowanie niestandardowego kodu.
 
-6.  Uruchom test.
+6. Uruchom test.
 
      ![Uruchom kodowany internetowy test wydajnościowy](../test/media/web_test_coded_generate_run.png)
 

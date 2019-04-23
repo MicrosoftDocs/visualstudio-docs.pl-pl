@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f3fd643ca29c5f5e4df20f244bc06b6bca04b9bd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7633d60ed672b64137b68bd9e6c3b860224753e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930743"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085964"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Instrukcje: Łączenie z danymi w usłudze
 
@@ -36,20 +36,20 @@ Po zakończeniu działania kreatora, jest dodawany do projektu odwołanie do us�
 
 ## <a name="to-connect-your-application-to-a-service"></a>Aby połączyć aplikację z usługą
 
-1.  Na **danych** menu, kliknij przycisk **Dodaj nowe źródło danych**.
+1. Na **danych** menu, kliknij przycisk **Dodaj nowe źródło danych**.
 
-2.  Wybierz **usługi** na **wybierz typ źródła danych** strony, a następnie kliknij przycisk **dalej**.
+2. Wybierz **usługi** na **wybierz typ źródła danych** strony, a następnie kliknij przycisk **dalej**.
 
-3.  Wprowadź adres usługi, o których chcesz używać, lub kliknij przycisk **odnajdź** lokalizowania usług w bieżącym rozwiązaniu, a następnie kliknij przycisk **Przejdź**.
+3. Wprowadź adres usługi, o których chcesz używać, lub kliknij przycisk **odnajdź** lokalizowania usług w bieżącym rozwiązaniu, a następnie kliknij przycisk **Przejdź**.
 
-4.  Opcjonalnie możesz wpisać nową **Namespace** zamiast wartości domyślne.
+4. Opcjonalnie możesz wpisać nową **Namespace** zamiast wartości domyślne.
 
     > [!NOTE]
     > Kliknij przycisk **zaawansowane** otworzyć [okno dialogowe Konfigurowanie odwołania do usługi](../data-tools/configure-service-reference-dialog-box.md).
 
-5.  Kliknij przycisk **OK** można dodać odwołanie do usługi do projektu.
+5. Kliknij przycisk **OK** można dodać odwołanie do usługi do projektu.
 
-6.  Kliknij przycisk **Zakończ**.
+6. Kliknij przycisk **Zakończ**.
 
      Źródło danych jest dodawane do **źródeł danych** okna.
 

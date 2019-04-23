@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0138ec1e2a36ce20b80982103ec408077502993a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ff63e6cca9deebbfcfa5960b41d85f9425f7a73
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913827"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063923"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Instrukcje: Zmiana między notacją składowych i notacją skojarzeń w Projektancie klas
 
@@ -29,9 +29,9 @@ W **projektanta klas**, możesz zmienić sposób diagram klas reprezentuje relac
 
 ## <a name="to-change-member-notation-to-association-notation"></a>Aby zmienić notacją składowych i notacją skojarzeń
 
-1.  W węźle projektu w Eksploratorze rozwiązań Otwórz plik diagramu klasy (.cd).
+1. W węźle projektu w Eksploratorze rozwiązań Otwórz plik diagramu klasy (.cd).
 
-2.  Typ kształtu na diagramie klas, kliknij prawym przyciskiem myszy właściwość element członkowski lub pole reprezentujący skojarzenie, a następnie wybierz **wyświetlić jako skojarzenie**.
+2. Typ kształtu na diagramie klas, kliknij prawym przyciskiem myszy właściwość element członkowski lub pole reprezentujący skojarzenie, a następnie wybierz **wyświetlić jako skojarzenie**.
 
     > [!TIP]
     > Jeśli nie właściwości lub pola są widoczne w kształcie typu, mogą być zwinięte przedziałów w kształcie. Aby rozwinąć kształt typu, kliknij dwukrotnie nazwę przedziału lub kliknij prawym przyciskiem myszy kształt typu, a wybierz **rozwiń**.

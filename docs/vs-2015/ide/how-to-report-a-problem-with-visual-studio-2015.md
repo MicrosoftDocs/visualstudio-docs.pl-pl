@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73b06f4235d5770cb6c086d6aed54229e00702de
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d8cedd5ab26539d5ebe32aee8df272691dd0a779
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665145"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083652"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Jak zgłosić Problem w programie Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Kliknij ikony opinii użytkownika obok **Szybkie uruchamianie** w pasku tytułu 
 
 ## <a name="describe-the-problem"></a>Opisz problem
 
-###  <a name="describe_the_problem"></a>
+### <a name="describe_the_problem"></a>
 
 1. Nadaj opisowy tytuł problemu, który pomoże nam go przesłać do właściwego zespołu w programie Visual Studio.
 
@@ -49,15 +49,15 @@ Wybierz **Dołącz zrzut ekranu** wysyłać bieżącego ekranu do firmy Microsof
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>Podaj zrzutu śledzenia i sterty (opcjonalnie)
 
-###  <a name="provide_a_trace_and_heap_dump"></a>
+### <a name="provide_a_trace_and_heap_dump"></a>
 
-1.  Pliki zrzutu śledzenia i stosu są bardzo pomocne podczas diagnozowania problemów.   Jesteśmy wdzięczni za jej znacznie podczas używania narzędzia Problem raportu Aby zarejestrować kroki odtworzenia i wysyłać dane do firmy Microsoft.
+1. Pliki zrzutu śledzenia i stosu są bardzo pomocne podczas diagnozowania problemów.   Jesteśmy wdzięczni za jej znacznie podczas używania narzędzia Problem raportu Aby zarejestrować kroki odtworzenia i wysyłać dane do firmy Microsoft.
 
-2.  Kliknij cudzysłów ostrokątny obok **Zarejestruj swoje czynności prowadzące do odtworzenia problemu**. Jeśli problem powoduje Visual Studio, aby rozłączyć lub awarii, a następnie otwórz inne wystąpienie programu Visual Studio i wybierz ją z widoku listy.
+2. Kliknij cudzysłów ostrokątny obok **Zarejestruj swoje czynności prowadzące do odtworzenia problemu**. Jeśli problem powoduje Visual Studio, aby rozłączyć lub awarii, a następnie otwórz inne wystąpienie programu Visual Studio i wybierz ją z widoku listy.
 
-3.  Kliknij pozycję **Rozpocznij nagrywanie** i wykonaj kroki odtworzenia problemu. Gdy wszystko będzie gotowe, kliknij pozycję **zatrzymać rekordu** przycisk przestawne okno.
+3. Kliknij pozycję **Rozpocznij nagrywanie** i wykonaj kroki odtworzenia problemu. Gdy wszystko będzie gotowe, kliknij pozycję **zatrzymać rekordu** przycisk przestawne okno.
 
-4.  Poczekaj kilka minut dla programu Visual Studio do zbierania i spakować informacje, które zostały zapisane. Okno dialogowe będzie wyglądać mniej więcej tak, po zakończeniu procesu kolekcji:
+4. Poczekaj kilka minut dla programu Visual Studio do zbierania i spakować informacje, które zostały zapisane. Okno dialogowe będzie wyglądać mniej więcej tak, po zakończeniu procesu kolekcji:
 
      ![Zapisz plik śledzenia](../ide/media/record-a-trace-file.png "Zapisz plik śledzenia")
 

@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95fa2a4146e151b689efbb82d933e05be698f62b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7b4d5e914566cc019a3882ed53923f84ecdddf85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798254"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069539"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Instrukcje: Pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie online
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,26 +49,26 @@ ms.locfileid: "54798254"
   
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>Aby uzyskać informacje o parametrach zapytania z aplikacji ClickOnce  
   
-1.  Umieść następujący kod w projekcie. Aby ten kod do funkcji, trzeba będzie zawierać odwołanie do System.Web i Dodaj `using` lub `Imports` instrukcji System.Web, System.Collections.Specialized i System.Deployment.Application.  
+1. Umieść następujący kod w projekcie. Aby ten kod do funkcji, trzeba będzie zawierać odwołanie do System.Web i Dodaj `using` lub `Imports` instrukcji System.Web, System.Collections.Specialized i System.Deployment.Application.  
   
      [!code-csharp[ClickOnceQueryString#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnceQueryString/CS/Form1.cs#1)]
      [!code-vb[ClickOnceQueryString#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceQueryString/VB/Form1.vb#1)]  
   
-2.  Wywołaj funkcję zdefiniowany wcześniej w celu pobrania <xref:System.Collections.DictionaryBase.Dictionary%2A> parametrów ciągu zapytania, indeksowane według nazwy.  
+2. Wywołaj funkcję zdefiniowany wcześniej w celu pobrania <xref:System.Collections.DictionaryBase.Dictionary%2A> parametrów ciągu zapytania, indeksowane według nazwy.  
   
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>Aby włączyć ciągu zapytania w aplikacji ClickOnce za pomocą MageUI.exe  
   
-1.  Otwórz wiersz polecenia platformy .NET, wpisz:  
+1. Otwórz wiersz polecenia platformy .NET, wpisz:  
   
     ```  
     MageUI  
     ```  
   
-2.  Z **pliku** menu, wybierz opcję **Otwórz**i otwarcie manifestu wdrażania dla Twojego [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikację, która znajduje się plik kończy się rozszerzeniem `.application` rozszerzenia.  
+2. Z **pliku** menu, wybierz opcję **Otwórz**i otwarcie manifestu wdrażania dla Twojego [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikację, która znajduje się plik kończy się rozszerzeniem `.application` rozszerzenia.  
   
-3.  Wybierz **opcje wdrażania** panelu w oknie nawigacji po lewej stronie, a następnie wybierz **Zezwalaj na adres URL parametry do przekazania do aplikacji** pole wyboru.  
+3. Wybierz **opcje wdrażania** panelu w oknie nawigacji po lewej stronie, a następnie wybierz **Zezwalaj na adres URL parametry do przekazania do aplikacji** pole wyboru.  
   
-4.  Z **pliku** menu, wybierz opcję **Zapisz**.  
+4. Z **pliku** menu, wybierz opcję **Zapisz**.  
   
 > [!NOTE]
 >  Alternatywnie można włączyć ciągu zapytania, przekazując [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Wybierz **Zezwalaj na adres URL parametry do przekazania do aplikacji** pola wyboru, które można znaleźć, otwierając **właściwości projektu**, wybierając opcję **Publikuj** kartę, klikając przycisk **Opcje** przycisk, a następnie wybierając **manifesty**.  

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84fe30f4bddc410f580ccd94250591027e0f9887
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: d6dd7f086a5e2163c1b2f6db2c6bd50c45c36e85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796143"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065574"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Instrukcje: Użycie zmiennych środowiskowych w kompilacji
 Podczas kompilowania projektów często jest to konieczne, można ustawić opcji kompilacji, korzystając z informacji, który nie znajduje się w pliku projektu lub plików, wchodzące w skład projektu. Te informacje są zwykle przechowywane w zmiennych środowiskowych.
@@ -38,7 +38,7 @@ Podczas kompilowania projektów często jest to konieczne, można ustawić opcji
 
 #### <a name="to-provide-a-default-value-for-a-property"></a>Aby podać wartość domyślną dla właściwości
 
--   Użyj `Condition` atrybutu dla właściwości, aby ustawić wartość tylko wtedy, gdy właściwość nie ma wartości. Na przykład, poniższy kod ustawia `ToolsPath` właściwości *c:\tools* tylko wtedy, gdy `ToolsPath` nie ustawiono zmiennej środowiskowej:
+- Użyj `Condition` atrybutu dla właściwości, aby ustawić wartość tylko wtedy, gdy właściwość nie ma wartości. Na przykład, poniższy kod ustawia `ToolsPath` właściwości *c:\tools* tylko wtedy, gdy `ToolsPath` nie ustawiono zmiennej środowiskowej:
 
      `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`
 

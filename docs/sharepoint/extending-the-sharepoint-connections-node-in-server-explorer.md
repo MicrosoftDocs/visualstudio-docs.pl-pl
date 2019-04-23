@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8b63b5a14319a86dc561a0c6068286cdc70a472
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6b1d461419497a0a45f50f12589cf3ac978a7666
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56595127"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092643"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera
   W programie Visual Studio, można nawiązać lokalnych witryn programu SharePoint na komputerze deweloperskim za pomocą **połączeń SharePoint** w węźle **Eksploratora serwera** okna. Ten węzeł Wyświetla wielu składników lokalnych witryn programu SharePoint w hierarchicznym widoku drzewa. Na przykład można wyświetlić listy, biblioteki dokumentów i typów zawartości w lokacji lokalnej. Aby uzyskać więcej informacji o korzystaniu z **Eksploratora serwera** połączyć się z lokalnych witryn programu SharePoint, zobacz [połączeń Przeglądaj SharePoint za pomocą Eksploratora serwera](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).
@@ -36,9 +36,9 @@ ms.locfileid: "56595127"
 
  Istnieją dwa typy właściwości niestandardowych, które można dodać do węzła:
 
--   Właściwości, które wyświetla zestaw danych tylko do odczytu z witryny programu SharePoint. Dane w tym artykule opisano składnik programu SharePoint, który reprezentuje węzeł. Aby uzyskać wskazówki, które pokazuje, jak to zrobić, zobacz [instruktażu: Rozszerzanie Eksploratora serwera na potrzeby wyświetlania składników web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
+- Właściwości, które wyświetla zestaw danych tylko do odczytu z witryny programu SharePoint. Dane w tym artykule opisano składnik programu SharePoint, który reprezentuje węzeł. Aby uzyskać wskazówki, które pokazuje, jak to zrobić, zobacz [instruktażu: Rozszerzanie Eksploratora serwera na potrzeby wyświetlania składników web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
 
--   Właściwości, które wyświetlają dane niestandardowe odczytu/zapisu. Dla przykładu kodu, który pokazuje, jak to zrobić, zobacz [jak: Rozszerzanie węzła SharePoint w Eksploratorze serwera](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).
+- Właściwości, które wyświetlają dane niestandardowe odczytu/zapisu. Dla przykładu kodu, który pokazuje, jak to zrobić, zobacz [jak: Rozszerzanie węzła SharePoint w Eksploratorze serwera](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).
 
 ## <a name="get-data-for-built-in-nodes"></a>Pobieranie danych dla wbudowanego węzłów
  Wszystkie węzły wbudowanych dostarczane przez program Visual Studio obejmują dane informacje o składniku programu SharePoint, które reprezentują one. Na przykład węzeł, który reprezentuje listę w witrynie programu SharePoint udostępnia dane dotyczące listy, takie jak tytuł i adres URL domyślny widok listy.

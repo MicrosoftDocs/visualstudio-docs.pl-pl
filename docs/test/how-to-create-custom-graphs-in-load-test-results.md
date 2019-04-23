@@ -9,12 +9,12 @@ ms.assetid: 17fcafce-76f9-4411-9389-6e5376eab236
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a03d16f74623d935e8f4f09b0f397672ad226487
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6df80340f57ba40597af67d57ba1bda3da778f4b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932411"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075132"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>Instrukcje: Tworzenie wykresów niestandardowych obciążenia wyników testu
 
@@ -26,7 +26,7 @@ Po uruchomieniu testu obciążeniowego lub po zakończeniu działania, można wy
 
 ## <a name="to-create-a-custom-load-test-results-graph"></a>Aby utworzyć wykres wyników testu obciążenia niestandardowe
 
-1.  Na **testu obciążeniowego** narzędzi, wybierz **Dodaj nowy wykres**.
+1. Na **testu obciążeniowego** narzędzi, wybierz **Dodaj nowy wykres**.
 
      \- lub —
 
@@ -34,11 +34,11 @@ Po uruchomieniu testu obciążeniowego lub po zakończeniu działania, można wy
 
      **Wprowadź nazwę wykresu** zostanie wyświetlone okno dialogowe.
 
-2.  W obszarze **nazwa wykresu**, wpisz nazwę dla wykresu, a wybierz **OK**.
+2. W obszarze **nazwa wykresu**, wpisz nazwę dla wykresu, a wybierz **OK**.
 
      Nowy wykres, który pojawia się w **analizatora testu obciążenia**. Wygląda na to, w panelu aktualnie zaznaczonym wykresem; zastępuje wykres, który został wyświetlony w tym panelu.
 
-3.  Dostosuj nowy wykres, dodając liczniki. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie i usuwanie liczników na wykresach](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
+3. Dostosuj nowy wykres, dodając liczniki. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie i usuwanie liczników na wykresach](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 
 ## <a name="see-also"></a>Zobacz także
 

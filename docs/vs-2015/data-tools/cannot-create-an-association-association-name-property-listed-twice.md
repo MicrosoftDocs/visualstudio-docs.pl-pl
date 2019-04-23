@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b9592605a25c76b4ea17b6efe91363d59585f56e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: dd366f6bc572798e1115991afccb2b39eb8f9f6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660973"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091580"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Nie można utworzyć skojarzenia &lt;Nazwa skojarzenia&gt; — właściwość jest wymieniona dwukrotnie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Nie można utworzyć skojarzenia \<Nazwa skojarzenia >. Tę samą właściwość
   
 ### <a name="to-resolve-this-condition"></a>Aby rozwiązać ten problem  
   
--   Sprawdź komunikat i zanotuj właściwości określony w komunikacie.  
+- Sprawdź komunikat i zanotuj właściwości określony w komunikacie.  
   
--   Kliknij przycisk **OK** aby odrzucić okno komunikatu.  
+- Kliknij przycisk **OK** aby odrzucić okno komunikatu.  
   
--   Sprawdzanie **właściwości skojarzenia** i Usuń zduplikowane wpisy.  
+- Sprawdzanie **właściwości skojarzenia** i Usuń zduplikowane wpisy.  
   
--   Kliknij przycisk **OK**.  
+- Kliknij przycisk **OK**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [LINQ to SQL Tools w programie Visual Studio](http://msdn.microsoft.com/library/a57e82d5-f7e4-4894-8add-3d9ba4fce186)   

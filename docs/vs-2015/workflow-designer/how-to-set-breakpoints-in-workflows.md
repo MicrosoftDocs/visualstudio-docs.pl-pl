@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2aaf61ada4167f29f1c6d4754ced7c9757054a88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dc428d70e036da311d2cf3050cec9e94a13782e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803234"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089981"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Instrukcje: Ustawianie punktów przerwania w przepływach pracy
 Kiedy używasz [!INCLUDE[wfd1](../includes/wfd1-md.md)], możesz ustawić punkty przerwania na graficzny przepływów pracy, tak jak w kodzie języka Visual Basic lub C#. Zgodnie z oczekiwaniami, zatrzyma wykonywanie przepływu pracy, w każdym punkcie przerwania, który został ustawiony.  
@@ -32,13 +32,13 @@ Kiedy używasz [!INCLUDE[wfd1](../includes/wfd1-md.md)], możesz ustawić punkty
   
 ### <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>Aby ustawić punkt przerwania w działaniu w widoku projektu  
   
-1.  Wybierz czynność chcesz, aby debuger przerywał działanie w przypadku.  
+1. Wybierz czynność chcesz, aby debuger przerywał działanie w przypadku.  
   
-2.  Na **debugowania** menu, wybierz opcję **Przełącz punkt przerwania**. Czerwona ikona pojawi się do górnej krawędzi lewej działania.  
+2. Na **debugowania** menu, wybierz opcję **Przełącz punkt przerwania**. Czerwona ikona pojawi się do górnej krawędzi lewej działania.  
   
      Alternatywnie można również nacisnąć skrót **F9** klucza po wybraniu działania lub można kliknij prawym przyciskiem myszy działanie i wybierz opcję **punktu przerwania** następnie **Wstaw punkt przerwania**z menu kontekstowego.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Instrukcje: Wywoływanie debugera przepływu pracy](../workflow-designer/how-to-invoke-the-workflow-debugger.md)   
  [Debugowanie przepływów pracy za pomocą projektanta przepływu pracy](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)   
- [Instrukcje: Debugowanie XAML za pomocą projektanta przepływu pracy](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)
+ [Instrukcje: Debugowanie kodu XAML za pomocą Projektanta przepływu pracy](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

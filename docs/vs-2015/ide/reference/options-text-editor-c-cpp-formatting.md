@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fb9de22ef325586bdaff4cb5603173cd3f9bba4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 612b6cf34b345381c211f40cd66f7c69dda9dafa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658581"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084950"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opcje, edytor tekstu, C/C++, formatowanie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -71,11 +71,11 @@ Pozwala zmienić domyślne zachowanie Edytora kodu podczas programowania w C lub
  **Automatyczny konspekt bloków instrukcji**  
  Kiedy ta opcja jest zaznaczona, automatyczne tworzenie konspektu jest włączone dla następujących konsruktów instrukcji:  
   
--   [if-else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2)  
+- [if-else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2)  
   
--   [switch, instrukcja (C++)](http://msdn.microsoft.com/library/6c3f3ed3-5593-463c-8f4b-b33742b455c6)  
+- [switch, instrukcja (C++)](http://msdn.microsoft.com/library/6c3f3ed3-5593-463c-8f4b-b33742b455c6)  
   
--   [while, instrukcja (C++)](http://msdn.microsoft.com/library/358dbe76-5e5e-4af5-b575-c2293c636899)  
+- [while, instrukcja (C++)](http://msdn.microsoft.com/library/358dbe76-5e5e-4af5-b575-c2293c636899)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Ogólne, środowisko, okno dialogowe Opcje](../../ide/reference/general-environment-options-dialog-box.md)   

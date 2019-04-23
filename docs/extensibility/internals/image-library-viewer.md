@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5457c0b4e7b355c130fedbdbba456b550a35f1ee
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 749441e960363fe208e3ad67288180c1935db35f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633255"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084820"
 ---
 # <a name="image-library-viewer"></a>Przeglądarka biblioteki obrazów
 Narzędzie przeglądarka biblioteki obrazów programu Visual Studio można załadować i wyszukaj obraz o nazwie manifesty umożliwienie użytkownikowi nimi manipulować w taki sam sposób, który będzie programu Visual Studio. Użytkownik może zmienić tła, rozmiary, DPI, duży kontrast i inne ustawienia. Narzędzie również Wyświetla informacje ładowania dla każdego z manifestu obrazu i wyświetla informacje dotyczące źródła dla każdego obrazu w manifeście obrazu. To narzędzie jest przydatne w przypadku:
@@ -73,7 +73,7 @@ Narzędzie przeglądarka biblioteki obrazów programu Visual Studio można zała
 |**Element podrzędny**|**Definicja**|
 |Import|Importuje symbole dany plik manifestu do użycia w bieżącym manifeście.|
 |Guid|Symbol reprezentuje identyfikator GUID i muszą być zgodne, formatowania identyfikatora GUID.|
-|ID|Symbol reprezentuje identyfikator i musi być nieujemną liczbą całkowitą.|
+|Identyfikator|Symbol reprezentuje identyfikator i musi być nieujemną liczbą całkowitą.|
 |String|Symbol reprezentuje wartość dowolny ciąg.|
 
  Symbole jest rozróżniana wielkość liter i odwołania, przy użyciu składni $(symbol-name):
@@ -114,7 +114,7 @@ Narzędzie przeglądarka biblioteki obrazów programu Visual Studio można zała
 |-|-|
 |**Atrybut**|**Definicja**|
 |Guid|[Wymagane] Identyfikator GUID część monikera obrazu|
-|ID|[Wymagane] Część Identyfikatora monikera obrazu|
+|Identyfikator|[Wymagane] Część Identyfikatora monikera obrazu|
 |AllowColorInversion|[Opcjonalna, domyślne true] Wskazuje, czy obraz, który może mieć jego kolorów programowo odwrócona, gdy jest używana na ciemnym tle.|
 
  **Element źródłowy**
@@ -153,7 +153,7 @@ Narzędzie przeglądarka biblioteki obrazów programu Visual Studio można zała
 |-|-|
 |**Atrybut**|**Definicja**|
 |Typ|[Wymagane] Typ zasobu natywnego, XAML lub PNG|
-|ID|[Wymagane] Całkowitą część Identyfikatora zasobu natywnego|
+|Identyfikator|[Wymagane] Całkowitą część Identyfikatora zasobu natywnego|
 
  **ImageList**
 
@@ -170,7 +170,7 @@ Narzędzie przeglądarka biblioteki obrazów programu Visual Studio można zała
 |-|-|
 |**Atrybut**|**Definicja**|
 |Guid|[Wymagane] Identyfikator GUID część monikera obrazu|
-|ID|[Wymagane] Część Identyfikatora monikera obrazu|
+|Identyfikator|[Wymagane] Część Identyfikatora monikera obrazu|
 |Zewnętrzna|[Opcjonalnie, wartość domyślna to false] Wskazuje, czy monikera obrazu odwołuje się do obrazu w bieżącym manifeście.|
 
  Moniker obrazu zawarte nie musi odwoływać się do obrazu, który został zdefiniowany w bieżącym manifeście. Jeśli nie można odnaleźć obrazu zawarte w bibliotece obrazów, obraz pusty symbol zastępczy zostanie użyty w tym miejscu.
@@ -224,9 +224,9 @@ Narzędzie przeglądarka biblioteki obrazów programu Visual Studio można zała
 
 ## <a name="notes"></a>Uwagi
 
--   Domyślnie narzędzie będzie ściągać kilka obrazów manifesty obecny w katalogu instalacyjnym programu Visual Studio. Jest jedyną, która ma publicznie w użyciu monikerów **Microsoft.VisualStudio.ImageCatalog** manifestu. Identyfikator GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (czy **nie** Zastąp ten identyfikator GUID w niestandardowym manifeście) typu: KnownMonikers
+- Domyślnie narzędzie będzie ściągać kilka obrazów manifesty obecny w katalogu instalacyjnym programu Visual Studio. Jest jedyną, która ma publicznie w użyciu monikerów **Microsoft.VisualStudio.ImageCatalog** manifestu. Identyfikator GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (czy **nie** Zastąp ten identyfikator GUID w niestandardowym manifeście) typu: KnownMonikers
 
--   Narzędzie prób podczas uruchamiania można załadować wszystkich manifestów obrazu, które znajdzie, dzięki czemu może potrwać kilka sekund dla aplikacji, aby faktycznie są wyświetlane. Być może wolno lub nieodpowiadający podczas ładowania manifestów.
+- Narzędzie prób podczas uruchamiania można załadować wszystkich manifestów obrazu, które znajdzie, dzięki czemu może potrwać kilka sekund dla aplikacji, aby faktycznie są wyświetlane. Być może wolno lub nieodpowiadający podczas ładowania manifestów.
 
 ## <a name="sample-output"></a>Przykładowe dane wyjściowe
  To narzędzie nie generuje żadnych danych wyjściowych.

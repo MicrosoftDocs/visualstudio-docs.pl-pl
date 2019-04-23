@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 000a036b90d1fa44f24a8340770790ab216c1d85
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 17ca737e0796230b9af207bf2f203700676ac630
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945420"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078931"
 ---
 # <a name="build-office-solutions"></a>Tworzenie rozwiązań pakietu Office
   Ogólnie rzecz biorąc kompilowanie i debugowanie projektów pakietu Office jest taka sama jak kompilowania i debugowania innych rodzajów projektów w programie Visual Studio, takich jak Windows Forms. W tematach w tej sekcji opisano różnice, które istnieją. Aby uzyskać ogólne informacje o sposobie tworzenia aplikacji, zobacz [skompilować i utworzyć w programie Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
@@ -45,15 +45,15 @@ ms.locfileid: "55945420"
 ### <a name="document-level-projects"></a>Projektów na poziomie dokumentu
  Podczas tworzenia projektów dokumentów w danych wyjściowych projektu obejmuje następujące elementy:
 
--   Kopię dokumentu projektu.
+- Kopię dokumentu projektu.
 
--   Zestaw projektu i wszystkie zestawy referencyjne, które mają ich **Kopiuj lokalnie** właściwością **true**.
+- Zestaw projektu i wszystkie zestawy referencyjne, które mają ich **Kopiuj lokalnie** właściwością **true**.
 
--   Manifest aplikacji, który ma rozszerzenie nazwy pliku *.manifest*. Aby uzyskać więcej informacji, zobacz [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
+- Manifest aplikacji, który ma rozszerzenie nazwy pliku *.manifest*. Aby uzyskać więcej informacji, zobacz [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
 
--   Manifest wdrożenia, który ma rozszerzenie nazwy pliku *.vsto*. Aby uzyskać więcej informacji, zobacz [manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md).
+- Manifest wdrożenia, który ma rozszerzenie nazwy pliku *.vsto*. Aby uzyskać więcej informacji, zobacz [manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md).
 
--   Bazę danych programu (*PDB*) pliku.
+- Bazę danych programu (*PDB*) pliku.
 
 > [!NOTE]
 >  W przypadku tworzenia rozwiązania poziomu dokumentu do lokalizacji zdalnej, zamiast komputera lokalnego, należy dodać w pełni kwalifikowaną ścieżkę do listy zaufanych lokalizacji w Centrum zaufania w aplikacji. Aby uzyskać więcej informacji, zobacz sekcję o nazwie udzielanie zaufania do dokumentów w [rozwiązań Secure Office](../vsto/securing-office-solutions.md).

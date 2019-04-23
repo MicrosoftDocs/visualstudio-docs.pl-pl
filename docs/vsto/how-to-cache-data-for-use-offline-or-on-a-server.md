@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bae12ea054c674e14da53fe60879c5466120d0a9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7c53d7bd1264ff21866746796d598b27cfac5984
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636518"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094544"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Instrukcje: Dane z pamięci podręcznej do użytku w trybie offline lub na serwerze
   Można oznaczyć elementu danych w pamięci podręcznej w dokumencie, więc, że jest on dostępny w trybie offline. To również umożliwia dla danych w dokumencie, aby być manipulowane przez inny kod, gdy dokument jest przechowywany na serwerze.
@@ -36,28 +36,28 @@ ms.locfileid: "56636518"
 
 ### <a name="to-cache-data-in-the-document-using-code"></a>Do buforowania danych w dokumencie przy użyciu kodu
 
-1.  Zadeklaruj publiczne pole lub właściwość elementu danych jako składową klasy elementu hosta w projekcie, takie jak `ThisDocumen`t klasy w projekcie programu Word lub `ThisWorkbook` klasy w projekcie programu Excel.
+1. Zadeklaruj publiczne pole lub właściwość elementu danych jako składową klasy elementu hosta w projekcie, takie jak `ThisDocumen`t klasy w projekcie programu Word lub `ThisWorkbook` klasy w projekcie programu Excel.
 
-2.  Zastosuj <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> atrybutu do elementu członkowskiego, aby oznaczyć element danych, które mają być przechowywane w pamięci podręcznej danych dokumentu. Poniższy przykład dotyczy deklarację pola dla tego atrybutu <xref:System.Data.DataSet>.
+2. Zastosuj <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> atrybutu do elementu członkowskiego, aby oznaczyć element danych, które mają być przechowywane w pamięci podręcznej danych dokumentu. Poniższy przykład dotyczy deklarację pola dla tego atrybutu <xref:System.Data.DataSet>.
 
      [!code-csharp[Trin_VstcoreDataExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#11)]
      [!code-vb[Trin_VstcoreDataExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#11)]
 
-3.  Dodaj kod, aby utworzyć wystąpienia elementu danych i, jeśli to konieczne, można go załadować z bazy danych.
+3. Dodaj kod, aby utworzyć wystąpienia elementu danych i, jeśli to konieczne, można go załadować z bazy danych.
 
      Element danych tylko jest ładowany podczas jej pierwszego tworzenia; Dzięki temu pamięci podręcznej pozostaje w dokumencie i trzeba napisać inny kod, aby go zaktualizować.
 
 ### <a name="to-cache-a-dataset-in-the-document-by-using-the-properties-window"></a>W pamięci podręcznej zestawu danych w dokumencie za pomocą okna właściwości
 
-1.  Dodaj zestaw danych do projektu przy użyciu narzędzi w Projektancie Visual Studio, na przykład poprzez dodanie źródła danych do projektu przy użyciu **źródeł danych** okna.
+1. Dodaj zestaw danych do projektu przy użyciu narzędzi w Projektancie Visual Studio, na przykład poprzez dodanie źródła danych do projektu przy użyciu **źródeł danych** okna.
 
-2.  Utwórz wystąpienie zestawu danych, jeśli jeszcze nie masz i wybierz wystąpienie w projektancie.
+2. Utwórz wystąpienie zestawu danych, jeśli jeszcze nie masz i wybierz wystąpienie w projektancie.
 
-3.  W **właściwości** oknie **CacheInDocument** właściwości **True**.
+3. W **właściwości** oknie **CacheInDocument** właściwości **True**.
 
      Aby uzyskać więcej informacji, zobacz [Properties in Office Projects](../vsto/properties-in-office-projects.md).
 
-4.  W **właściwości** oknie **Modyfikatory** właściwości **publicznych** (domyślnie jest **wewnętrzne**).
+4. W **właściwości** oknie **Modyfikatory** właściwości **publicznych** (domyślnie jest **wewnętrzne**).
 
 ## <a name="see-also"></a>Zobacz także
 - [Dane w pamięci podręcznej](../vsto/caching-data.md)

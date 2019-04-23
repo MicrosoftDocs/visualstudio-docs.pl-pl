@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21497404d6cdad3f55bffd97fd0329d76418b313
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8fe194e11edf0a3f825303137b9bdcc755135eee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841579"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078658"
 ---
 # <a name="help-viewer-administrator-guide"></a>Podręcznik administratora programu Podgląd pomocy
 
@@ -45,13 +45,13 @@ Aby uzyskać więcej informacji na temat *HlpCtntMgr.exe* składnia wiersza pole
 
 Wymagania:
 
--   Komputery klienckie muszą mieć dostęp do Internetu.
+- Komputery klienckie muszą mieć dostęp do Internetu.
 
--   Użytkownicy muszą mieć uprawnienia administratora, aby zaktualizować, Dodaj lub usuń lokalną zawartość pomocy po zakończeniu instalacji.
+- Użytkownicy muszą mieć uprawnienia administratora, aby zaktualizować, Dodaj lub usuń lokalną zawartość pomocy po zakończeniu instalacji.
 
 Ostrzeżenia:
 
--   Domyślnym źródłem pomocy będzie nadal online.
+- Domyślnym źródłem pomocy będzie nadal online.
 
 ### <a name="example"></a>Przykład
 
@@ -59,13 +59,13 @@ Poniższy przykład instaluje zawartość w języku angielskim dla programu Visu
 
 #### <a name="to-install-english-content-from-the-internet"></a>Aby zainstalować zawartość w języku angielskim z Internetu
 
-1.  Wybierz **Start** , a następnie wybierz **Uruchom**.
+1. Wybierz **Start** , a następnie wybierz **Uruchom**.
 
-2.  Wpisz następujące polecenie:
+2. Wpisz następujące polecenie:
 
      `C:\Program Files (x86)\Microsoft Help Viewer\v2.3\hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us`
 
-3.  Naciśnij klawisz **wprowadź**.
+3. Naciśnij klawisz **wprowadź**.
 
 ## <a name="deploy-pre-installed-local-help-content-on-client-computers"></a>Wdrażanie wstępnie zainstalowanych lokalnie zawartości pomocy, na komputerach klienckich
 
@@ -73,16 +73,16 @@ Można zainstalować zestaw treści z online do jednego komputera, a następnie 
 
 Wymagania:
 
--   Komputer, na którym jest instalowany zestaw zawartości musi mieć dostęp do Internetu.
+- Komputer, na którym jest instalowany zestaw zawartości musi mieć dostęp do Internetu.
 
--   Użytkownicy muszą mieć uprawnienia administratora, aby zaktualizować, Dodaj lub usuń lokalną zawartość pomocy po zakończeniu instalacji.
+- Użytkownicy muszą mieć uprawnienia administratora, aby zaktualizować, Dodaj lub usuń lokalną zawartość pomocy po zakończeniu instalacji.
 
     > [!TIP]
     > Jeśli użytkownicy nie mają praw administratora, zalecane jest wyłączenie **zarządzanie zawartością** karty w Podglądzie pomocy. Aby uzyskać więcej informacji, zobacz [przesłonięcia menedżera zawartości Pomocy](../help-viewer/behavior-overrides.md).
 
 Ostrzeżenia:
 
--   Domyślnym źródłem pomocy będzie nadal online.
+- Domyślnym źródłem pomocy będzie nadal online.
 
 ### <a name="create-the-content-set"></a>Utwórz zestaw zawartości
 
@@ -104,23 +104,23 @@ Przed utworzeniem zestawu podstawowego zawartości, należy najpierw odinstalowa
 
 #### <a name="to-download-the-content"></a>Aby pobrać zawartość
 
-1.  W Podglądzie pomocy wybierz **zarządzanie zawartością** kartę.
+1. W Podglądzie pomocy wybierz **zarządzanie zawartością** kartę.
 
-2.  W obszarze **zalecana dokumentacja** lub **dostępnej dokumentacji**, przejdź do zestawów dokumentacji, aby pobrać, a następnie wybierz **Dodaj**.
+2. W obszarze **zalecana dokumentacja** lub **dostępnej dokumentacji**, przejdź do zestawów dokumentacji, aby pobrać, a następnie wybierz **Dodaj**.
 
-3.  Wybierz **aktualizacji**.
+3. Wybierz **aktualizacji**.
 
 Następnie należy spakować zawartości, aby można było wdrożyć na komputerach klienckich.
 
 #### <a name="to-package-the-content"></a>Aby spakować zawartość
 
-1.  Utwórz folder do skopiowania do niego zawartość na potrzeby późniejszego wdrożenia. Na przykład: *C:\VSHelp*.
+1. Utwórz folder do skopiowania do niego zawartość na potrzeby późniejszego wdrożenia. Na przykład: *C:\VSHelp*.
 
-2.  Otwórz *cmd.exe* z uprawnieniami administratora.
+2. Otwórz *cmd.exe* z uprawnieniami administratora.
 
-3.  Przejdź do folderu, który został utworzony w kroku 1.
+3. Przejdź do folderu, który został utworzony w kroku 1.
 
-4.  Wpisz następujące polecenie:
+4. Wpisz następujące polecenie:
 
      `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o`
 
@@ -128,11 +128,11 @@ Następnie należy spakować zawartości, aby można było wdrożyć na komputer
 
 ### <a name="deploy-the-content"></a>Wdrażanie zawartości
 
-1.  Utwórz udział sieciowy i skopiuj zawartość pomocy do tej lokalizacji.
+1. Utwórz udział sieciowy i skopiuj zawartość pomocy do tej lokalizacji.
 
      Na przykład skopiuj zawartość *C:\VSHelp* do  *\\\myserver\VSHelp*.
 
-2.  Tworzenie *.bat* plik będzie zawierał skrypt wdrażania dla zawartości pomocy. Ponieważ klient prawdopodobnie nałożył blokadę odczytu na dowolnym pliki usuwane w ramach wypychania, należy zamknąć klienta przed wypchnięciem aktualizacji. Na przykład:
+2. Tworzenie *.bat* plik będzie zawierał skrypt wdrażania dla zawartości pomocy. Ponieważ klient prawdopodobnie nałożył blokadę odczytu na dowolnym pliki usuwane w ramach wypychania, należy zamknąć klienta przed wypchnięciem aktualizacji. Na przykład:
 
     ```cmd
     REM - copy pre-ripped content to ProgramData
@@ -140,7 +140,7 @@ Następnie należy spakować zawartości, aby można było wdrożyć na komputer
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)
     ```
 
-3.  Uruchom *.bat* plików na komputerach lokalnych, które chcesz zainstalować zawartości pomocy na.
+3. Uruchom *.bat* plików na komputerach lokalnych, które chcesz zainstalować zawartości pomocy na.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34a9a97e018642660d7424b0bfce2a1bbbc9c073
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 6a7bf7d49430923652ece66fc566ee75af1884d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983523"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093353"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Przewodnik: Publikowanie rozszerzenia programu Visual Studio
 
@@ -80,27 +80,27 @@ W tym artykule użyto rozszerzenia pakietu VSPackage domyślnego, ale kroki są 
 
     * **Identyfikator VSIX** jest unikatowy identyfikator, który korzysta z programu Visual Studio dla rozszerzenia. Ten identyfikator jest wymagany, jeśli chcesz mieć rozszerzenie automatycznie aktualizowane. Ten identyfikator jest wypełniany automatycznie z *source.extension.vsixmanifest* pliku.
 
-   * **Logo** używany dla rozszerzenia. Jest wypełniany automatycznie z *source.extension.vsixmanifest* pliku Jeśli podano.
+    * **Logo** używany dla rozszerzenia. Jest wypełniany automatycznie z *source.extension.vsixmanifest* pliku Jeśli podano.
 
-     * **Krótki opis** funkcji co Twoje rozszerzenie. Ten opis jest wypełniany automatycznie z *source.extension.vsixmanifest* pliku.
+    * **Krótki opis** funkcji co Twoje rozszerzenie. Ten opis jest wypełniany automatycznie z *source.extension.vsixmanifest* pliku.
 
-     * **Omówienie** jest dobrym miejscem do uwzględnienia zrzutów ekranu i szczegółowe informacje na temat działania Twojego rozszerzenia.
+    * **Omówienie** jest dobrym miejscem do uwzględnienia zrzutów ekranu i szczegółowe informacje na temat działania Twojego rozszerzenia.
 
-     * **Obsługiwane wersje programu Visual Studio** pozwala wybrać, które wersje programu Visual Studio rozszerzenie będzie działać na. Rozszerzenie jest ona instalowana tylko do tych wersji.
+    * **Obsługiwane wersje programu Visual Studio** pozwala wybrać, które wersje programu Visual Studio rozszerzenie będzie działać na. Rozszerzenie jest ona instalowana tylko do tych wersji.
 
-     * ** Obsługiwane edition pozwala na wybór jakie wersje programu Visual Studio rozszerzenie będzie działać na z programu Visual Studio. Rozszerzenie jest ona instalowana tylko do tych wersji.
+    * ** Obsługiwane edition pozwala na wybór jakie wersje programu Visual Studio rozszerzenie będzie działać na z programu Visual Studio. Rozszerzenie jest ona instalowana tylko do tych wersji.
 
-     * **Typ**. Najczęściej spotykanym typem rozszerzenia są **narzędzia**.
+    * **Typ**. Najczęściej spotykanym typem rozszerzenia są **narzędzia**.
 
-     * **Kategorie**. Wybierz maksymalnie trzy, które są najlepszym rozwiązaniem dla rozszerzenia.
+    * **Kategorie**. Wybierz maksymalnie trzy, które są najlepszym rozwiązaniem dla rozszerzenia.
 
-     * **Tagi** są słowa kluczowe, które ułatwiają użytkownikom znajdowanie Twojego rozszerzenia. Tagi mogą pomóc w zwiększeniu trafności wyszukiwania rozszerzeń w portalu Marketplace.
+    * **Tagi** są słowa kluczowe, które ułatwiają użytkownikom znajdowanie Twojego rozszerzenia. Tagi mogą pomóc w zwiększeniu trafności wyszukiwania rozszerzeń w portalu Marketplace.
 
-     * **Cennik kategorii** jest koszt Twojego rozszerzenia.
+    * **Cennik kategorii** jest koszt Twojego rozszerzenia.
 
-     * **Repozytorium kodu źródłowego** umożliwia udostępnianie linku do kodu źródłowego ze społecznością.
+    * **Repozytorium kodu źródłowego** umożliwia udostępnianie linku do kodu źródłowego ze społecznością.
 
-     * **Zezwalaj na pytania i odpowiedzi dla rozszerzenia** pozwala użytkownikom na stronie wpis rozszerzenia należy pozostawić pytania.
+    * **Zezwalaj na pytania i odpowiedzi dla rozszerzenia** pozwala użytkownikom na stronie wpis rozszerzenia należy pozostawić pytania.
 
 9. Kliknij przycisk **Zapisz prze & kazywanie**. Strona Zarządzanie tym wymaga opcji, możesz z powrotem do wydawcy. Rozszerzenia nie został jeszcze opublikowany. Aby opublikować Twojego rozszerzenia, kliknij prawym przyciskiem myszy na Twoje rozszerzenie i wybierz **Upublicznij**. Można wyświetlić, jak rozszerzenie będzie wyglądało w portalu Marketplace, wybierając **rozszerzenie widoku**. W przypadku nabycia liczb, kliknij pozycję **raporty**. Aby wprowadzić zmiany do rozszerzenia, wybierz polecenie **Edytuj**.
 

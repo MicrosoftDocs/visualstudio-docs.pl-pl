@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1173b55a3e22d7a2fec9ecdb0440765beb970e6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d7eac5329fb5bfacb036e8f0ed585b96ded2a069
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693103"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084755"
 ---
 # <a name="how-to-manage-multiple-threads-in-managed-code"></a>Instrukcje: Zarządzanie wieloma wątkami w kodzie zarządzanym
 Jeśli masz zarządzanych rozszerzenia pakietu VSPackage, który wywołuje metody asynchronicznej lub operacji, które są wykonywane w wątkach, innego niż wątek interfejsu użytkownika usługi Visual Studio, należy postępować zgodnie z wytycznymi podanymi poniżej. Wątek interfejsu użytkownika umożliwia zachowanie elastyczny, ponieważ nie trzeba czekać do pracy na inny wątek, aby zakończyć. Użytkownik może uczynić kod bardziej efektywne, ponieważ nie masz dodatkowe wątki, które zajmują miejsce na stosie i możesz przekształcić ją w bardziej niezawodne i łatwiejsze do debugowania, ponieważ uniknięcia zakleszczenia i zawiesza się.
@@ -25,7 +25,7 @@ Jeśli masz zarządzanych rozszerzenia pakietu VSPackage, który wywołuje metod
 
 ## <a name="switch-from-the-ui-thread-to-a-background-thread"></a>Przełącz z wątku interfejsu użytkownika do wątku w tle
 
-1.  Jeśli korzystasz z wątku interfejsu użytkownika, a co chcesz zrobić asynchroniczne działania na wątku w tle, użyj `Task.Run()`:
+1. Jeśli korzystasz z wątku interfejsu użytkownika, a co chcesz zrobić asynchroniczne działania na wątku w tle, użyj `Task.Run()`:
 
     ```csharp
     await Task.Run(async delegate{
@@ -35,7 +35,7 @@ Jeśli masz zarządzanych rozszerzenia pakietu VSPackage, który wywołuje metod
 
     ```
 
-2.  Jeśli jesteś w wątku interfejsu użytkownika i chcesz zablokować synchronicznie, podczas wykonywania pracy na wątku w tle, użyj <xref:System.Threading.Tasks.TaskScheduler> właściwość `TaskScheduler.Default` wewnątrz <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:
+2. Jeśli jesteś w wątku interfejsu użytkownika i chcesz zablokować synchronicznie, podczas wykonywania pracy na wątku w tle, użyj <xref:System.Threading.Tasks.TaskScheduler> właściwość `TaskScheduler.Default` wewnątrz <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:
 
     ```csharp
     // using Microsoft.VisualStudio.Threading;
@@ -49,7 +49,7 @@ Jeśli masz zarządzanych rozszerzenia pakietu VSPackage, który wywołuje metod
 
 ## <a name="switch-from-a-background-thread-to-the-ui-thread"></a>Przełącz z wątku w tle do wątku interfejsu użytkownika
 
-1.  Jeśli jesteś w wątku tła, i chcesz zrobić coś w wątku interfejsu użytkownika, użyj <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:
+1. Jeśli jesteś w wątku tła, i chcesz zrobić coś w wątku interfejsu użytkownika, użyj <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:
 
     ```csharp
     // Switch to main thread

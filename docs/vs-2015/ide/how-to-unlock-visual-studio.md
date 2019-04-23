@@ -10,37 +10,37 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8876cebf5851454aa3140f6a3269fa0d3ecbbc95
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 05153b7829281684ff9f27f2b5ac708903982b57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774546"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072555"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Jak odblokować program Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Możesz ocenić programu Visual Studio bezpłatnie do 30 dni. Po zalogowaniu się do środowiska IDE można rozszerzyć okresu próbnego o 90 dni. Aby kontynuować korzystanie z programu Visual Studio można odblokować środowisko IDE przez
 
-1.  za pomocą subskrypcją w trybie online.
+1. za pomocą subskrypcją w trybie online.
 
-2.  wprowadzanie klucza produktu.
+2. wprowadzanie klucza produktu.
 
 ## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>Aby odblokować programu Visual Studio z subskrypcją w trybie online
  Odblokować program Visual Studio przy użyciu subskrypcji MSDN lub Visual Studio online skojarzone z kontem Microsoft lub konta służbowego lub szkolnego:
 
-1.  Kliknij przycisk "Sign in" w prawym górnym rogu IDE (lub przejdź do pliku > Ustawienia konta, aby otworzyć okno dialogowe Ustawienia konta, a następnie kliknij przycisk "Zaloguj".)
+1. Kliknij przycisk "Sign in" w prawym górnym rogu IDE (lub przejdź do pliku > Ustawienia konta, aby otworzyć okno dialogowe Ustawienia konta, a następnie kliknij przycisk "Zaloguj".)
 
-2.  Wprowadź poświadczenia dla konta Microsoft lub konta służbowego lub szkolnego. Program Visual Studio znajdzie subskrypcję MSDN lub Visual Studio Team Services skojarzonych z Twoim kontem.
+2. Wprowadź poświadczenia dla konta Microsoft lub konta służbowego lub szkolnego. Program Visual Studio znajdzie subskrypcję MSDN lub Visual Studio Team Services skojarzonych z Twoim kontem.
 
 > [!IMPORTANT]
 >  Program Visual Studio automatycznie wyszuka skojarzone subskrypcje w trybie online, po nawiązaniu połączenia z kontem usługi Visual Studio Team Services z okna narzędzia Team Explorer. Po nawiązaniu połączenia z kontem usługi Visual Studio Team Services, możesz zalogować się przy użyciu Microsoft i jej pracy lub kont służbowych. Jeśli istnieje subskrypcją w trybie online dla tego konta użytkownika, Visual Studio automatycznie odblokować środowisko IDE dla Ciebie.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Aby odblokować program Visual Studio za pomocą klucza produktu
 
-1.  Wybierz **Plik > Ustawienia konta** aby otworzyć okno dialogowe Ustawienia konta i kliknij "**licencji za pomocą klucza produktu**" link.
+1. Wybierz **Plik > Ustawienia konta** aby otworzyć okno dialogowe Ustawienia konta i kliknij "**licencji za pomocą klucza produktu**" link.
 
-2.  Wprowadź klucz produktu, w tym miejscu.
+2. Wprowadź klucz produktu, w tym miejscu.
 
 > [!TIP]
 >  Wersje wstępne programu Visual Studio nie ma kluczy produktów. Musisz się zarejestrować się do IDE na używanie wersji wstępnej.
@@ -68,9 +68,9 @@ Możesz ocenić programu Visual Studio bezpłatnie do 30 dni. Po zalogowaniu si�
 ### <a name="updating-expired-licenses"></a>Aktualizowanie wygasłych licencji
  Jeśli Twoja subskrypcja wygasła całkowicie i nie jest już prawa dostępu do programu Visual Studio, musisz mieć:
 
-1.  Odnów subskrypcję. Aby uzyskać więcej informacji o licencji, którego używasz, przejdź do pliku > okno dialogowe Ustawienia konta i spójrz na informacje o licencjach po prawej stronie okna dialogowego.
+1. Odnów subskrypcję. Aby uzyskać więcej informacji o licencji, którego używasz, przejdź do pliku > okno dialogowe Ustawienia konta i spójrz na informacje o licencjach po prawej stronie okna dialogowego.
 
-2.  Jeśli masz inną subskrypcję skojarzony z innym kontem, należy dodać to konto do listy wszystkich kont po lewej stronie w pliku > okno dialogowe Ustawienia konta, klikając polecenie "Dodaj konto..." link.
+2. Jeśli masz inną subskrypcję skojarzony z innym kontem, należy dodać to konto do listy wszystkich kont po lewej stronie w pliku > okno dialogowe Ustawienia konta, klikając polecenie "Dodaj konto..." link.
 
 ## <a name="see-also"></a>Zobacz też
  [Logowanie do programu Visual Studio](../ide/signing-in-to-visual-studio.md)

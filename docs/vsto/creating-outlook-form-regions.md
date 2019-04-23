@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d25325eb6f0fac952cbecff13cacde2d5354762
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ea3f72a26938a50cddbb622565173be603436ba3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621373"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092763"
 ---
 # <a name="create-outlook-form-regions"></a>Tworzenie regionów formularzy programu Outlook
   Regiony formularzy służy do dostosowywania formularzy programu Microsoft Office Outlook. Visual Studio zapewnia zaawansowane narzędzia, które ułatwiają służących do projektowania, opracowywania i debugowania regionów formularza.
@@ -30,23 +30,23 @@ ms.locfileid: "56621373"
 
  Ten temat zawiera następujące informacje:
 
--   [Zalety korzystania z regionów formularzy](#Enhance)
+- [Zalety korzystania z regionów formularzy](#Enhance)
 
--   [Dodawanie regionów formularzy programu Outlook do projektu](#Adding)
+- [Dodawanie regionów formularzy programu Outlook do projektu](#Adding)
 
--   [Użyj projektanta regionów formularza](#UsingFormRegionDesigner)
+- [Użyj projektanta regionów formularza](#UsingFormRegionDesigner)
 
--   [Użyj regionów formularzy zaprojektowanych w programie Outlook](#UsingFormRegionDesignedOutlook)
+- [Użyj regionów formularzy zaprojektowanych w programie Outlook](#UsingFormRegionDesignedOutlook)
 
--   [Dodaj kod niestandardowy do regionu formularza](#AddingCustomCode)
+- [Dodaj kod niestandardowy do regionu formularza](#AddingCustomCode)
 
--   [Skompiluj projekt](#Building)
+- [Skompiluj projekt](#Building)
 
--   [Debugowanie regionu formularza](#Debugging)
+- [Debugowanie regionu formularza](#Debugging)
 
--   [Wdrażanie regionów formularzy](#Deploying)
+- [Wdrażanie regionów formularzy](#Deploying)
 
-##  <a name="Enhance"></a> Zalety korzystania z regionów formularzy
+## <a name="Enhance"></a> Zalety korzystania z regionów formularzy
  Regiony formularzy oferuje wiele udoskonaleń za pośrednictwem tradycyjnych tworzeniu formularzy programu Outlook:
 
 - Dostosowywanie domyślnej strony jakiejkolwiek formy standardowych.
@@ -59,10 +59,10 @@ ms.locfileid: "56621373"
 
   Aby uzyskać więcej informacji, zobacz [dostosowywanie stron formularza i regionów formularzy w](/office/vba/outlook/Concepts/Forms/customizing-form-pages-and-form-regions).
 
-##  <a name="Adding"></a> Dodawanie regionów formularzy programu Outlook do projektu
+## <a name="Adding"></a> Dodawanie regionów formularzy programu Outlook do projektu
  Możesz użyć **nowy Region formularza programu Outlook** kreatora w celu zaprojektowania nowego regionu formularza lub zaimportować regionu formularza zaprojektowanego w programie Outlook. Ponadto jeśli region formularza, które było używane w innym projekcie dodatku narzędzi VSTO dla programu Outlook, można ponownie użyć Twojego istniejącego regionu formularza.
 
-###  <a name="CreatingFormRegion"></a> Utwórz nowy region formularza za pomocą Kreatora
+### <a name="CreatingFormRegion"></a> Utwórz nowy region formularza za pomocą Kreatora
  Aby utworzyć regionu formularza, Dodaj **Region formularza programu Outlook** elementu do projektu dodatku narzędzi VSTO dla programu Outlook. Spowoduje to uruchomienie **nowy Region formularza programu Outlook** kreatora.
 
  Użyj kreatora, aby wskazać, czy użytkownik chce zaprojektować nowy region formularza lub zaimportować regionu formularza zaprojektowanego w programie Outlook. Aby uzyskać więcej informacji na temat projektowania nowy region formularza, zobacz [użyć projektanta regionów formularza](#UsingFormRegionDesigner). Aby uzyskać więcej informacji na temat korzystania z regionów formularzy zaprojektowanych w programie Outlook, zobacz [importowanie regionów formularzy zaprojektowanych w programie Outlook](#UsingFormRegionDesignedOutlook).
@@ -83,11 +83,11 @@ ms.locfileid: "56621373"
 #### <a name="form-region-files"></a>Pliki regionu formularza
  Po zakończeniu **nowy Region formularza programu Outlook** kreatora, Visual Studio automatycznie dodaje następujące pliki do projektu:
 
--   Plik kodu regionu formularza. Ten plik ma nazwę określoną dla **Region formularza programu Outlook** pozycja **Dodaj nowy element** okno dialogowe. Dodaj kod do obsługi zdarzeń regionu formularza do tego pliku.
+- Plik kodu regionu formularza. Ten plik ma nazwę określoną dla **Region formularza programu Outlook** pozycja **Dodaj nowy element** okno dialogowe. Dodaj kod do obsługi zdarzeń regionu formularza do tego pliku.
 
--   Plik kodu projektanta regionów formularza. Ten plik zawiera kod generowany przez projektanta regionów formularza i nie należy bezpośrednio edytować.
+- Plik kodu projektanta regionów formularza. Ten plik zawiera kod generowany przez projektanta regionów formularza i nie należy bezpośrednio edytować.
 
--   Magazynu formularzy programu Outlook (*OFS*) pliku.
+- Magazynu formularzy programu Outlook (*OFS*) pliku.
 
     > [!NOTE]
     >  Ten plik zostanie dodany do projektu tylko, Jeśli importujesz regionu formularza zaprojektowanego w programie Outlook.
@@ -101,12 +101,12 @@ ms.locfileid: "56621373"
 
  Większość klas fabryki region formularza jest zaimplementowana w pliku projektanta regionów formularza. Jednak `FormRegionInitializing` program obsługi zdarzeń jest widoczna w pliku kodu regionu formularza. Ta procedura obsługi zdarzeń służy do określenia, czy region formularza powinien być wyświetlany programu Outlook. Aby uzyskać więcej informacji, zobacz [obsługi zdarzeń regionu formularza](#HandlingFormRegionEvents).
 
-###  <a name="AddingExistingFormRegion"></a> Dodawanie istniejącego regionu formularza do projektu
+### <a name="AddingExistingFormRegion"></a> Dodawanie istniejącego regionu formularza do projektu
  W przypadku regionów formularzy programu Outlook, które było używane w innym projekcie programu Outlook może używać go w bieżącym projekcie dodatku narzędzi VSTO dla programu Outlook przy użyciu **Dodaj istniejący element** okno dialogowe.
 
  Istniejącego regionu formularza, musisz mieć plik kodu (*.vb* lub *.cs*); nie można dodać magazynu formularzy programu Outlook (*OFS*) plików za pomocą **Dodaj istniejący element** okno dialogowe. Można jednak utworzyć nowy region formularza, importując plik magazynu formularzy programu Outlook. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie regionu formularza do projektu dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-##  <a name="UsingFormRegionDesigner"></a> Użyj projektanta regionów formularza
+## <a name="UsingFormRegionDesigner"></a> Użyj projektanta regionów formularza
  Projektanta regionów formularza ułatwia projektowanie układ i wygląd regionu formularza. Przeciągnij zarządzane formanty do powierzchni projektanta, kliknij dwukrotnie ikonę kontrolki, można otworzyć procedury obsługi zdarzeń i ustawianie właściwości w **właściwości** okna.
 
 > [!NOTE]
@@ -124,7 +124,7 @@ ms.locfileid: "56621373"
 
   Obsługuje projektanta regionów formularza tylko zarządzane formanty. Nie można dodać kontrolki natywne programu Outlook.
 
-##  <a name="UsingFormRegionDesignedOutlook"></a> Importowanie regionów formularzy zaprojektowanych w programie Outlook
+## <a name="UsingFormRegionDesignedOutlook"></a> Importowanie regionów formularzy zaprojektowanych w programie Outlook
  Podczas projektowania w programie Outlook, można dodać kontrolki natywne programu Outlook do regionu formularza. Natywne kontrolki programu Outlook umożliwia powiązanie z danymi programu Outlook w czasie projektowania. Jednak nie można następnie użyć projektanta regionów formularza dodać zarządzane formanty lub zmienić wygląd regionu formularza.
 
  Można zaimportować regionów formularzy w projekcie dodatku narzędzi VSTO dla programu Outlook przy użyciu **nowy Region formularza programu Outlook** kreatora. Na **wybierz sposób tworzenia regionu formularza** wybierz **Importuj plik magazynu formularzy programu Outlook (ofs)**. Następnie możesz przejść do lokalizacji pliku magazynu formularzy programu Outlook (*OFS*) pliku. (Outlook zapisuje regionów formularza jako *OFS* pliki.)
@@ -143,12 +143,12 @@ ms.locfileid: "56621373"
 ### <a name="update-an-imported-form-regions-design"></a>Aktualizowanie projektu z regionu formularza zaimportowany
  Możesz dodać, usunąć ani zmienić formantów na region formularza. Zanim to zrobisz, Utwórz kopię zapasową jakiegokolwiek kodu, który został dodany do pliku kodu regionu formularza. Następnie otwórz *OFS* pliku w programie Outlook, zmodyfikuj regionu formularza, a następnie zapisz zmiany. Użyj **nowy Region formularza programu Outlook** kreatora do zaimportowania zmodyfikowanego *OFS* pliku. Następnie można wkleić kod do nowego pliku kodu regionu formularza.
 
-##  <a name="AddingCustomCode"></a> Dodaj kod niestandardowy do regionu formularza
+## <a name="AddingCustomCode"></a> Dodaj kod niestandardowy do regionu formularza
  <xref:Microsoft.Office.Tools.Outlook> Przestrzeń nazw zapewnia dostęp do klas, które reprezentują regionu formularza, elementu programu Outlook, który wyświetla regionu formularza i inne przydatne elementy. **Region formularza programu Outlook** elementu automatycznie dodaje odwołanie do tego zestawu w projekcie i wstawia odpowiednią **przy użyciu** lub **Importy** instrukcji na górze plik kodu regionu formularza.
 
  Można użyć klas, metod i właściwości w `Microsoft.Office.Interop.Outlook` przestrzeni nazw do wykonywania większości programem Outlook zadania programowania. Aby uzyskać więcej informacji na temat modelu obiektów programu Outlook, zobacz [model obiektu Outlook ― omówienie](../vsto/outlook-object-model-overview.md). Przykłady typowych zadań, które korzystać z modelu obiektów programu Outlook, zobacz [rozwiązania programu Outlook](../vsto/outlook-solutions.md).
 
-###  <a name="HandlingFormRegionEvents"></a> Obsługa zdarzeń regionu formularza
+### <a name="HandlingFormRegionEvents"></a> Obsługa zdarzeń regionu formularza
  **Region formularza programu Outlook** elementu automatycznie dodaje następujące obsługi trzech zdarzeń do pliku kodu regionu formularza.
 
 |Zdarzenie|Opis|
@@ -157,7 +157,7 @@ ms.locfileid: "56621373"
 |FormRegionShowing|Występuje po utworzeniu wystąpienia obszaru formularza, ale przed pojawieniem się obszaru formularza.|
 |FormRegionClosed|Występuje przed zamknięciem obszaru formularza.|
 
-##  <a name="Building"></a> Skompiluj projekt
+## <a name="Building"></a> Skompiluj projekt
  Podczas tworzenia projektu dodatku narzędzi VSTO dla programu Outlook zawierający regionu formularza programu Visual Studio dodaje następujące informacje do rejestru:
 
 - Klucz dla każdej klasy wiadomości, który jest skojarzony z co najmniej jeden region formularza.
@@ -166,12 +166,12 @@ ms.locfileid: "56621373"
 
   Program Outlook używa tych informacji do załadowania regionów formularza.
 
-##  <a name="Debugging"></a> Debugowanie regionu formularza
+## <a name="Debugging"></a> Debugowanie regionu formularza
  Można debugować dodatku narzędzi VSTO dla programu Outlook zawiera region formularza tak samo, jak debuguje się inne [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektów. Po uruchomieniu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugera programu Visual Studio automatycznie uruchamia program Outlook.
 
  Aby wyświetlić regionu formularza, należy otworzyć odpowiednią elementu programu Outlook. Na przykład jeśli przylegającym regionie formularza jest dołączany na końcu elementu poczty, otwórz element poczty.
 
-##  <a name="Deploying"></a> Wdrażanie regionów formularzy
+## <a name="Deploying"></a> Wdrażanie regionów formularzy
  Regiony formularzy są wdrażane automatycznie przy użyciu skojarzonego dodatku narzędzi VSTO dla programu Outlook. W związku z tym nie masz do wykonywania zadań specjalnych, aby wdrożyć regionu formularza. Aby uzyskać więcej informacji dotyczących wdrażania dodatków narzędzi VSTO dla programów, zobacz [wdrożyć rozwiązanie Office](../vsto/deploying-an-office-solution.md).
 
 ## <a name="related-topics"></a>Tematy pokrewne

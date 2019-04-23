@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d03ef199e0c1c4ea3684287e1621e6d9b5fc52f8
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: a770cf1ded0ef85e92f192398b03aa2015502fdf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315537"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076402"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Instrukcje: Używanie wyłącznie klawiatury
 
@@ -55,19 +55,19 @@ Formularz lub Projektant za pomocą klawiatury, można dodać kontrolki w przybo
 
 ### <a name="to-set-dialog-box-options-from-the-keyboard"></a>Aby ustawić opcje w oknach dialogowych z klawiatury
 
-1.  Użyj **kartę** lub **Shift** + **kartę** można przenieść w górę i w dół za pomocą formantów w oknie dialogowym.
+1. Użyj **kartę** lub **Shift** + **kartę** można przenieść w górę i w dół za pomocą formantów w oknie dialogowym.
 
-2.  Aby zmienić ustawienia opcji:
+2. Aby zmienić ustawienia opcji:
 
-    -   Przyciski radiowe, można użyć **Strzałka w górę** i **strzałkę w dół** Zmień zaznaczoną wartość.
+    - Przyciski radiowe, można użyć **Strzałka w górę** i **strzałkę w dół** Zmień zaznaczoną wartość.
 
-    -   W przypadku pola wyboru Użyj **spacja** zaznacz lub usuń zaznaczenie.
+    - W przypadku pola wyboru Użyj **spacja** zaznacz lub usuń zaznaczenie.
 
-    -   W przypadku list rozwijanych, użyj **Alt** + **Strzałka w dół** wyświetlania elementów, a następnie użyć **UPARROW** i **Strzałka w dół** można zmienić wybrany element.
+    - W przypadku list rozwijanych, użyj **Alt** + **Strzałka w dół** wyświetlania elementów, a następnie użyć **UPARROW** i **Strzałka w dół** można zmienić wybrany element.
 
-    -   W przypadku przycisków, naciśnij klawisz **Enter** do wywołania.
+    - W przypadku przycisków, naciśnij klawisz **Enter** do wywołania.
 
-    -   Siatki używaj klawiszy strzałek aby przejść. W przypadku list rozwijanych w siatkach, użyj **Shift** + **Alt** + **Strzałka w dół** wyświetlania elementów, a następnie użyć **UPARROW**i **Strzałka w dół** można zmienić wybranego elementu.
+    - Siatki używaj klawiszy strzałek aby przejść. W przypadku list rozwijanych w siatkach, użyj **Shift** + **Alt** + **Strzałka w dół** wyświetlania elementów, a następnie użyć **UPARROW**i **Strzałka w dół** można zmienić wybranego elementu.
 
 ## <a name="window-and-file-navigation"></a>Okno i plik nawigacji
 
@@ -75,29 +75,29 @@ Formularz lub Projektant za pomocą klawiatury, można dodać kontrolki w przybo
 
 ### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>Aby poruszać się między systemem windows i plików w środowisku IDE z klawiatury
 
--   Aby poruszać się między plikami w edytora lub projektanta, wybierz klawisze CTRL + TAB kluczy do wyświetlenia Nawigator IDE z **aktywnych plików** wybrane. Wybierz klawisz Enter, aby przejść do pliku wyróżnione.
+- Aby poruszać się między plikami w edytora lub projektanta, wybierz klawisze CTRL + TAB kluczy do wyświetlenia Nawigator IDE z **aktywnych plików** wybrane. Wybierz klawisz Enter, aby przejść do pliku wyróżnione.
 
--   Aby poruszać się między okien narzędzi zadokowanych, wybierz polecenie klawisze Alt + F7, aby wyświetlić Nawigator IDE z **Active narzędzie Windows** wybrane. Naciśnij klawisz Enter, aby przejść do wyróżnionego okna.
+- Aby poruszać się między okien narzędzi zadokowanych, wybierz polecenie klawisze Alt + F7, aby wyświetlić Nawigator IDE z **Active narzędzie Windows** wybrane. Naciśnij klawisz Enter, aby przejść do wyróżnionego okna.
 
 ### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>Aby przenieść i dokowanie okien narzędzi z klawiatury
 
-1.  Przejdź do okna narzędzi, który chcesz przenieść, a następnie ustawić fokus.
+1. Przejdź do okna narzędzi, który chcesz przenieść, a następnie ustawić fokus.
 
-2.  Na **okna** menu, wybierz opcję **Dockable** opcji.
+2. Na **okna** menu, wybierz opcję **Dockable** opcji.
 
-3.  Naciśnij klawisz **ALT** + **miejsca** , a następnie wybierz **przenieść**.
+3. Naciśnij klawisz **ALT** + **miejsca** , a następnie wybierz **przenieść**.
 
      Dokowania romb przewodnik pojawia się.
 
-4.  Użyj **strzałkę** klucze, aby przenieść okna do nowej lokalizacji.
+4. Użyj **strzałkę** klucze, aby przenieść okna do nowej lokalizacji.
 
      Wskaźnik myszy przesuwa się w oknie używasz **strzałkę** kluczy.
 
-5.  Po osiągnięciu nowej lokalizacji, należy użyć **strzałkę** klucze, aby umieść kursor myszy nad poprawne część rombu przewodnika.
+5. Po osiągnięciu nowej lokalizacji, należy użyć **strzałkę** klucze, aby umieść kursor myszy nad poprawne część rombu przewodnika.
 
      Konspekt okno narzędzia pojawi się w nowej lokalizacji dokowania.
 
-6.  Naciśnij klawisz **ENTER**.
+6. Naciśnij klawisz **ENTER**.
 
      Okno narzędzia zostanie zablokowany na miejscu w nowej lokalizacji dokowania.
 

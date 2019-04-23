@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04922b703fd2c1158a98fc4574ad217cccd5016e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a2c0a6f7c2203e7b3a37f974d916010dbe70b31f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907454"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067394"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Instrukcje: Zmiana wielkości liter w edytorze
 
@@ -27,11 +27,11 @@ Polecenia menu lub skróty klawiaturowe umożliwia konwertowanie wielkości zazn
 
 ## <a name="to-switch-text-to-upper-case"></a>Aby przełączyć tekst na wielkie litery
 
-1.  Zaznacz tekst, który ma zostać przekonwertowany.
+1. Zaznacz tekst, który ma zostać przekonwertowany.
 
-2.  Na **Edytuj** menu, wybierz opcję **zaawansowane**.
+2. Na **Edytuj** menu, wybierz opcję **zaawansowane**.
 
-3.  Aby przekonwertować tekst na wielkie litery, wybierz opcję **wprowadzić wielkie litery**, lub naciśnij **Ctrl**+**Shift**+**U**.
+3. Aby przekonwertować tekst na wielkie litery, wybierz opcję **wprowadzić wielkie litery**, lub naciśnij **Ctrl**+**Shift**+**U**.
 
     — lub —
 

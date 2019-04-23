@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b1d29c4398e6b6c377ab493c495951f942d15965
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a80bfecaa288eabc0161d0262535a7912411f78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942391"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091294"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Instrukcje: Używanie funkcji wyszukiwania w Projektancie przepływu pracy
 
@@ -23,13 +23,13 @@ W celu ułatwienia tworzenia większych i bardziej skomplikowanych przepływów 
 
 Szybkiego wyszukiwania umożliwia znalezienie następujące w Projektancie:
 
--   Właściwości <xref:System.Activities.Activity> obiektów <xref:System.Activities.Statements.FlowNode> obiektów <xref:System.Activities.Statements.State> obiektów, przejścia i inne elementy niestandardowe sterowanie przepływem.
+- Właściwości <xref:System.Activities.Activity> obiektów <xref:System.Activities.Statements.FlowNode> obiektów <xref:System.Activities.Statements.State> obiektów, przejścia i inne elementy niestandardowe sterowanie przepływem.
 
--   Zmienne
+- Zmienne
 
--   Argumenty
+- Argumenty
 
--   Wyrażenia
+- Wyrażenia
 
 ### <a name="use-quick-find"></a>Zastosowanie szybkiego wyszukiwania
 
@@ -47,8 +47,8 @@ Znajdź w plikach lokalizuje ciągów w pliki przepływu pracy, w tym plików XA
 
 ### <a name="use-find-in-files"></a>Za pomocą narzędzia Znajdź w plikach
 
-1.  W programie Visual Studio, naciśnij klawisz **Ctrl**+**Shift**+**F**, lub wybierz **Edytuj**  >   **Znajdź i Zamień** > **Znajdź w plikach**.
+1. W programie Visual Studio, naciśnij klawisz **Ctrl**+**Shift**+**F**, lub wybierz **Edytuj**  >   **Znajdź i Zamień** > **Znajdź w plikach**.
 
-2.  Wprowadź szukany element do **Znajdź** polu tekstowym i kliknij przycisk **Znajdź wszystkie**.
+2. Wprowadź szukany element do **Znajdź** polu tekstowym i kliknij przycisk **Znajdź wszystkie**.
 
-3.  Wynik wyszukiwania jest wyświetlany w **Znajdź wynik** widoku. Dwukrotne kliknięcie elementu wyniku powoduje przejście do działania, który zawiera dopasowanie w Projektancie przepływu pracy.
+3. Wynik wyszukiwania jest wyświetlany w **Znajdź wynik** widoku. Dwukrotne kliknięcie elementu wyniku powoduje przejście do działania, który zawiera dopasowanie w Projektancie przepływu pracy.

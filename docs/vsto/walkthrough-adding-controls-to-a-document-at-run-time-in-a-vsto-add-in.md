@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bdfd80818e88af8e2907c982e75628627bcac5e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f226f65e493ced3a33dcfe7514633992cce158d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648553"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070072"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Przewodnik: Dodawanie formantów do dokumentów w czasie wykonywania w dodatku narzędzi VSTO
   Aby dodać formanty dowolnego otwartego dokumentu Microsoft Word pakietu Office, za pomocą dodatku narzędzi VSTO. W tym instruktażu przedstawiono sposób użycia wstążki umożliwiające użytkownikom dodawanie <xref:Microsoft.Office.Tools.Word.Controls.Button> lub <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do dokumentu.
@@ -42,18 +42,18 @@ ms.locfileid: "59648553"
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] lub [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
+- [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] lub [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
 ## <a name="create-a-new-word-add-in-project"></a>Utwórz nowy projekt dodatku programu Word
  Rozpocznij od utworzenia projektu dodatku narzędzi VSTO programu Word.
 
 ### <a name="to-create-a-new-word-vsto-add-in-project"></a>Aby utworzyć nowy projekt dodatku narzędzi VSTO programu Word
 
-1.  Utwórz projekt dodatku narzędzi VSTO dla programu Word z nazwą **WordDynamicControls**. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Utwórz projekt dodatku narzędzi VSTO dla programu Word z nazwą **WordDynamicControls**. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2.  Dodaj odwołanie do **Microsoft.Office.Tools.Word.v4.0.Utilities.dll** zestawu. To odwołanie jest wymagane, aby programowo dodać formant programu Windows Forms do dokumentów w dalszej części tego przewodnika.
+2. Dodaj odwołanie do **Microsoft.Office.Tools.Word.v4.0.Utilities.dll** zestawu. To odwołanie jest wymagane, aby programowo dodać formant programu Windows Forms do dokumentów w dalszej części tego przewodnika.
 
 ## <a name="provide-a-ui-to-add-controls-to-a-document"></a>Udostępniają interfejs użytkownika, aby dodać kontrolki do dokumentu
  Dodaj kartę niestandardową do wstążki w programie Word. Użytkownicy mogą wybrać pola wyboru na karcie, aby dodać kontrolki do dokumentu.
@@ -107,19 +107,19 @@ ms.locfileid: "59648553"
 
 ### <a name="to-add-and-remove-controls-on-the-active-document"></a>Dodawanie i usuwanie kontrolek w aktywnym dokumencie
 
-1.  W **Eksploratora rozwiązań**, kliknij dwukrotnie *ThisAddIn.cs* lub *ThisAddIn.vb* do otwarcia w edytorze kodu.
+1. W **Eksploratora rozwiązań**, kliknij dwukrotnie *ThisAddIn.cs* lub *ThisAddIn.vb* do otwarcia w edytorze kodu.
 
-2.  Dodaj następujący kod do `ThisAddIn` klasy. Ten kod deklaruje <xref:Microsoft.Office.Tools.Word.Controls.Button> i <xref:Microsoft.Office.Tools.Word.RichTextContentControl> obiektami, które reprezentują formanty, które zostaną dodane do dokumentu.
+2. Dodaj następujący kod do `ThisAddIn` klasy. Ten kod deklaruje <xref:Microsoft.Office.Tools.Word.Controls.Button> i <xref:Microsoft.Office.Tools.Word.RichTextContentControl> obiektami, które reprezentują formanty, które zostaną dodane do dokumentu.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#1)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#1)]
 
-3.  Dodaj następującą metodę do `ThisAddIn` klasy. Kiedy użytkownik kliknie **Dodaj przycisk** pole wyboru na Wstążce, Metoda ta umożliwia dodanie <xref:Microsoft.Office.Tools.Word.Controls.Button> do bieżącego zaznaczenia w dokumencie, jeśli pole wyboru jest zaznaczone, lub usuwa <xref:Microsoft.Office.Tools.Word.Controls.Button> Jeśli pole wyboru jest wyczyszczone.
+3. Dodaj następującą metodę do `ThisAddIn` klasy. Kiedy użytkownik kliknie **Dodaj przycisk** pole wyboru na Wstążce, Metoda ta umożliwia dodanie <xref:Microsoft.Office.Tools.Word.Controls.Button> do bieżącego zaznaczenia w dokumencie, jeśli pole wyboru jest zaznaczone, lub usuwa <xref:Microsoft.Office.Tools.Word.Controls.Button> Jeśli pole wyboru jest wyczyszczone.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#2](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#2](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#2)]
 
-4.  Dodaj następującą metodę do `ThisAddIn` klasy. Kiedy użytkownik kliknie **Dodawanie kontrolki tekstu sformatowanego** pole wyboru na Wstążce, Metoda ta umożliwia dodanie <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do bieżącego zaznaczenia w dokumencie, jeśli pole wyboru jest zaznaczone, lub usuwa <xref:Microsoft.Office.Tools.Word.RichTextContentControl> Jeśli pole wyboru jest wyczyszczone.
+4. Dodaj następującą metodę do `ThisAddIn` klasy. Kiedy użytkownik kliknie **Dodawanie kontrolki tekstu sformatowanego** pole wyboru na Wstążce, Metoda ta umożliwia dodanie <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do bieżącego zaznaczenia w dokumencie, jeśli pole wyboru jest zaznaczone, lub usuwa <xref:Microsoft.Office.Tools.Word.RichTextContentControl> Jeśli pole wyboru jest wyczyszczone.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#3)]
@@ -129,12 +129,12 @@ ms.locfileid: "59648553"
 
 ### <a name="to-remove-the-button-control-when-the-document-is-saved"></a>Aby usunąć formant przycisku, gdy dokument zostanie zapisany
 
-1.  W *ThisAddIn.cs* lub *ThisAddIn.vb* plik kodu, dodaj następującą metodę do `ThisAddIn` klasy. Ta metoda jest program obsługi zdarzeń dla <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> zdarzeń. Jeśli został zapisany dokument <xref:Microsoft.Office.Tools.Word.Document> element hosta, który jest skojarzony z nim program obsługi zdarzeń pobiera element hosta i usuwa <xref:Microsoft.Office.Tools.Word.Controls.Button> kontrolować, jeśli taki istnieje.
+1. W *ThisAddIn.cs* lub *ThisAddIn.vb* plik kodu, dodaj następującą metodę do `ThisAddIn` klasy. Ta metoda jest program obsługi zdarzeń dla <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> zdarzeń. Jeśli został zapisany dokument <xref:Microsoft.Office.Tools.Word.Document> element hosta, który jest skojarzony z nim program obsługi zdarzeń pobiera element hosta i usuwa <xref:Microsoft.Office.Tools.Word.Controls.Button> kontrolować, jeśli taki istnieje.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#4](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#4)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#4](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#4)]
 
-2.  W języku C#, Dodaj następujący kod do `ThisAddIn_Startup` programu obsługi zdarzeń. Ten kod w języku C# połączenie wymaga `Application_DocumentBeforeSave` programu obsługi zdarzeń z <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> zdarzeń.
+2. W języku C#, Dodaj następujący kod do `ThisAddIn_Startup` programu obsługi zdarzeń. Ten kod w języku C# połączenie wymaga `Application_DocumentBeforeSave` programu obsługi zdarzeń z <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> zdarzeń.
 
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#5)]
 
@@ -143,7 +143,7 @@ ms.locfileid: "59648553"
 
 ### <a name="to-add-or-remove-controls-when-the-user-clicks-the-check-boxes-on-the-ribbon"></a>Aby dodać lub usunąć kontrolki, gdy użytkownik kliknie przycisk pola wyboru na Wstążce
 
-1.  W *MyRibbon.cs* lub *MyRibbon.vb* plik kodu, Zastąp wygenerowany `addButtonCheckBox_Click` i `addRichTextCheckBox_Click` procedury obsługi zdarzeń z następującym kodem. Ten kod redefiniuje tych programów obsługi zdarzeń, aby wywołać `ToggleButtonOnDocument` i `ToggleRichTextControlOnDocument` metod, które zostały dodane do `ThisAddIn` klasa we wcześniejszej części tego przewodnika.
+1. W *MyRibbon.cs* lub *MyRibbon.vb* plik kodu, Zastąp wygenerowany `addButtonCheckBox_Click` i `addRichTextCheckBox_Click` procedury obsługi zdarzeń z następującym kodem. Ten kod redefiniuje tych programów obsługi zdarzeń, aby wywołać `ToggleButtonOnDocument` i `ToggleRichTextControlOnDocument` metod, które zostały dodane do `ThisAddIn` klasa we wcześniejszej części tego przewodnika.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.vb#6)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.cs#6)]
@@ -153,34 +153,34 @@ ms.locfileid: "59648553"
 
 ### <a name="to-test-the-solution"></a>Do przetestowania rozwiązania.
 
-1.  Naciśnij klawisz **F5** Aby uruchomić projekt.
+1. Naciśnij klawisz **F5** Aby uruchomić projekt.
 
-2.  W aktywnym dokumencie naciśnij **Enter** kilka razy, aby dodać nowy pusty akapitów do dokumentu.
+2. W aktywnym dokumencie naciśnij **Enter** kilka razy, aby dodać nowy pusty akapitów do dokumentu.
 
-3.  Wybierz opcję pierwszym akapicie.
+3. Wybierz opcję pierwszym akapicie.
 
-4.  Kliknij przycisk **Add-Ins** kartę.
+4. Kliknij przycisk **Add-Ins** kartę.
 
-5.  W **dodać formanty** grupy, kliknij przycisk **Dodaj przycisk**.
+5. W **dodać formanty** grupy, kliknij przycisk **Dodaj przycisk**.
 
      Przycisk pojawia się w pierwszym akapicie.
 
-6.  Wybierz ostatni akapitu.
+6. Wybierz ostatni akapitu.
 
-7.  W **dodać formanty** grupy, kliknij przycisk **Dodawanie kontrolki tekstu sformatowanego**.
+7. W **dodać formanty** grupy, kliknij przycisk **Dodawanie kontrolki tekstu sformatowanego**.
 
      Kontrolki zawartości tekstu sformatowanego jest dodawany do ostatniego akapitu.
 
-8.  Zapisz dokument.
+8. Zapisz dokument.
 
      Przycisk zostanie usunięty z dokumentu.
 
 ## <a name="next-steps"></a>Następne kroki
  Możesz dowiedzieć się więcej informacji na temat formantów w dodatkach VSTO w tych tematach:
 
--   Przykład demonstrujący, jak dodać wiele innych typów formantów do dokumentów w czasie wykonywania i ponowne utworzenie formanty, po otwarciu dokumentu, można znaleźć w artykule Word dodatek dynamicznej formantów próbki w [Office development ― przykłady i wskazówki dotyczące](../vsto/office-development-samples-and-walkthroughs.md).
+- Przykład demonstrujący, jak dodać wiele innych typów formantów do dokumentów w czasie wykonywania i ponowne utworzenie formanty, po otwarciu dokumentu, można znaleźć w artykule Word dodatek dynamicznej formantów próbki w [Office development ― przykłady i wskazówki dotyczące](../vsto/office-development-samples-and-walkthroughs.md).
 
--   Aby uzyskać wskazówki, który demonstruje sposób dodawania formantów do arkusza za pomocą dodatku narzędzi VSTO dla programu Excel, zobacz [instruktażu: Dodawanie formantów do arkusza w czasie wykonywania w projekcie dodatku narzędzi VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).
+- Aby uzyskać wskazówki, który demonstruje sposób dodawania formantów do arkusza za pomocą dodatku narzędzi VSTO dla programu Excel, zobacz [instruktażu: Dodawanie formantów do arkusza w czasie wykonywania w projekcie dodatku narzędzi VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).
 
 ## <a name="see-also"></a>Zobacz także
 - [Rozwiązania programu Word](../vsto/word-solutions.md)

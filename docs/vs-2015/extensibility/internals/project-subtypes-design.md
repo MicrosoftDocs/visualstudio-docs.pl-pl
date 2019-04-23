@@ -10,12 +10,12 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 78b768ae63fcf03912d4f81820e80706f8a46a98
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0e7cd96324e5a2bbd6c9b0acf4125bc0450cfd06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776467"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085782"
 ---
 # <a name="project-subtypes-design"></a>Projektowanie podtypów projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,11 +24,11 @@ Podtypy projektów umożliwiają pakietów VSPackage rozszerzanie projektów opa
   
  Poniższe tematy przedstawiają szczegółowo, podstawowe projektowania i implementowania podtypy projektów:  
   
--   Podtypu projektu.  
+- Podtypu projektu.  
   
--   Wielopoziomowe agregacji.  
+- Wielopoziomowe agregacji.  
   
--   Obsługa interfejsów.  
+- Obsługa interfejsów.  
   
 ## <a name="project-subtype-design"></a>Podtypu projektu  
  Inicjowanie podtypu projektu odbywa się agregowanie głównym <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> obiektów. Takie połączenie umożliwia podtypem projektu do nadpisania lub zwiększ większość funkcji projektu podstawowego. Podtypy projektów uzyskać pierwszy szansę, aby obsłużyć właściwości za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>, poleceń, za pomocą <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>i Projekt element zarządzania za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>. Dodatkowo można rozszerzyć podtypy projektów:  
@@ -71,11 +71,11 @@ Urządzenie Extender automatyzacji podtypu projektu.
 ## <a name="multi-level-aggregation"></a>Wielopoziomowe agregacji  
  Implementacji podtypu projektu, który otacza niższe podtypu projektu musi programowane wspólne umożliwia podtypu projektu wewnętrznego działać prawidłowo. Lista programowania obowiązki obejmuje:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Implementacji podtyp projektu, do którego jest zawijany wewnętrzny podtyp musi delegować do <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implementacji podtypu projektu wewnętrznego dla obu <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> metody.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Implementacji podtyp projektu, do którego jest zawijany wewnętrzny podtyp musi delegować do <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implementacji podtypu projektu wewnętrznego dla obu <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> metody.  
   
--   <xref:EnvDTE80.IInternalExtenderProvider> Implementacji podtypu projektu otoki musi delegować, jego podtypu projektu wewnętrznego. W szczególności wykonania <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> musi uzyskać ciąg nazwy z podtypu projektu wewnętrzny i następnie ciągów chce, aby dodać jako urządzenia Extender.  
+- <xref:EnvDTE80.IInternalExtenderProvider> Implementacji podtypu projektu otoki musi delegować, jego podtypu projektu wewnętrznego. W szczególności wykonania <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> musi uzyskać ciąg nazwy z podtypu projektu wewnętrzny i następnie ciągów chce, aby dodać jako urządzenia Extender.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> Utworzyć implementacji podtypu projektu otoki <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> obiekt wewnętrzny jego podtypu projektu i przytrzymaj go jako Delegat prywatny, ponieważ tylko obiekt konfiguracji projektu podstawowego projektu bezpośrednio wie, że otoki istnieje obiekt konfiguracji podtypu projektu. Podtypu projektu zewnętrznego można początkowo wybrać interfejsy konfiguracji, które chce obsługiwać bezpośrednio, a następnie poprzez delegowanie przekazać rest podtypu projektu wewnętrznej implementacji <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> Utworzyć implementacji podtypu projektu otoki <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> obiekt wewnętrzny jego podtypu projektu i przytrzymaj go jako Delegat prywatny, ponieważ tylko obiekt konfiguracji projektu podstawowego projektu bezpośrednio wie, że otoki istnieje obiekt konfiguracji podtypu projektu. Podtypu projektu zewnętrznego można początkowo wybrać interfejsy konfiguracji, które chce obsługiwać bezpośrednio, a następnie poprzez delegowanie przekazać rest podtypu projektu wewnętrznej implementacji <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.  
   
 ## <a name="supporting-interfaces"></a>Obsługa interfejsów  
  Podstawowy projekt deleguje wywołania do obsługi dodane przez podtypem projektu interfejsach rozszerzenie różnych aspektów implementacji. W tym rozszerzanie obiektów konfiguracji projektu i różnych właściwości przeglądarki obiektów. Te interfejsy są pobierane przez wywołanie metody `QueryInterface` na `punkOuter` (wskaźnik do `IUnknown`) z agregatora podtypu projektu najbardziej zewnętrznej.  

@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fdac7018ec67250514836f22f3c297ddce5bd382
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c6b387acd7494396d118915f94a93ca88ec67199
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805032"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118230"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Jak utworzyć i stosowanie zasobów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,27 +28,27 @@ Style i szablony dla elementów w Projektancie XAML są przechowywane w jednostk
   
 ### <a name="to-create-a-new-resource"></a>Aby utworzyć nowy zasób  
   
-1.  Plik XAML jest otwarty w Projektancie XAML Utwórz element lub wybierz element w okno konspektu dokumentu.  
+1. Plik XAML jest otwarty w Projektancie XAML Utwórz element lub wybierz element w okno konspektu dokumentu.  
   
-2.  W oknie dialogowym właściwości wybierz znacznik właściwości, która pojawia się jako symbol pole po prawej stronie wartości właściwości, a następnie wybierz **Konwertuj na nowy zasób**. Symbol białe pola wskazuje wartość domyślną, a symbol czarne pole zazwyczaj wskazuje, że zastosowano zasobu lokalnego  
+2. W oknie dialogowym właściwości wybierz znacznik właściwości, która pojawia się jako symbol pole po prawej stronie wartości właściwości, a następnie wybierz **Konwertuj na nowy zasób**. Symbol białe pola wskazuje wartość domyślną, a symbol czarne pole zazwyczaj wskazuje, że zastosowano zasobu lokalnego  
   
      Pojawi się odpowiednie okno dialogowego dla tworzenia zasobu. To okno dialogowe pojawia się podczas tworzenia zasobu z pędzla:  
   
      ![Utwórz zasób — okno dialogowe](../designers/media/xaml-create-resource.png "xaml_create_resource")  
   
-3.  W **nazwa (klucz)** wprowadź nazwę klucza. Jest to nazwa, do którego można użyć, jeśli chcesz, aby inne elementy, aby odwoływać się do zasobu.  
+3. W **nazwa (klucz)** wprowadź nazwę klucza. Jest to nazwa, do którego można użyć, jeśli chcesz, aby inne elementy, aby odwoływać się do zasobu.  
   
-4.  W obszarze **zdefiniować w**, wybierz opcję określającą, którym ma być zdefiniowany zasób:  
+4. W obszarze **zdefiniować w**, wybierz opcję określającą, którym ma być zdefiniowany zasób:  
   
-    -   Aby udostępnić zasób do każdego dokumentu w aplikacji, wybierz opcję **aplikacji**.  
+    - Aby udostępnić zasób do każdego dokumentu w aplikacji, wybierz opcję **aplikacji**.  
   
-    -   Aby udostępnić zasób do bieżącego dokumentu, wybierz opcję **w tym dokumencie**.  
+    - Aby udostępnić zasób do bieżącego dokumentu, wybierz opcję **w tym dokumencie**.  
   
-    -   Aby udostępnić zasób tylko element z której utworzono zasób lub jego elementy podrzędne, wybierz **w tym dokumencie**, a na liście rozwijanej wybierz *elementu*: *nazwy* .  
+    - Aby udostępnić zasób tylko element z której utworzono zasób lub jego elementy podrzędne, wybierz **w tym dokumencie**, a na liście rozwijanej wybierz *elementu*: *nazwy* .  
   
-    -   Aby zdefiniować zasób w pliku słownika zasobów, które mogą zostać ponownie użyte w innych projektach, kliknij przycisk **słownik zasobów**, a następnie wybierz istniejący plik słownika zasobów, takich jak **StandardStyles.xaml**, na liście rozwijanej.  
+    - Aby zdefiniować zasób w pliku słownika zasobów, które mogą zostać ponownie użyte w innych projektach, kliknij przycisk **słownik zasobów**, a następnie wybierz istniejący plik słownika zasobów, takich jak **StandardStyles.xaml**, na liście rozwijanej.  
   
-5.  Wybierz **OK** przycisk, aby utworzyć zasób i zastosować go do elementu, z którego została utworzona.  
+5. Wybierz **OK** przycisk, aby utworzyć zasób i zastosować go do elementu, z którego została utworzona.  
   
 ### <a name="to-apply-a-resource-to-an-element-or-property"></a>Aby zastosować zasób do elementu lub właściwości  
   
@@ -69,11 +69,11 @@ Style i szablony dla elementów w Projektancie XAML są przechowywane w jednostk
   
 ### <a name="to-edit-a-resource"></a>Aby edytować zasobu  
   
-1.  Wybierz element, w obszarze kompozycji lub w oknie konspekt dokumentu.  
+1. Wybierz element, w obszarze kompozycji lub w oknie konspekt dokumentu.  
   
-2.  Wybierz znacznik właściwości domyślne lub lokalnych z prawej strony właściwości w oknie dialogowym właściwości, a następnie wybierz **Edytuj zasób** otworzyć **Edytuj zasób** okno dialogowe.  
+2. Wybierz znacznik właściwości domyślne lub lokalnych z prawej strony właściwości w oknie dialogowym właściwości, a następnie wybierz **Edytuj zasób** otworzyć **Edytuj zasób** okno dialogowe.  
   
-3.  Modyfikowanie opcji dla zasobu.  
+3. Modyfikowanie opcji dla zasobu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie interfejsu użytkownika przy użyciu projektanta XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

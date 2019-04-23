@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04d67f90006d4e11b2cbe16f6dacd3ba02cde7a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7694f0f725af8a20ff3a5a01753b0669c0fd5d9f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779452"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067355"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Kompilowanie i tworzenie w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ Można używać programu Visual Studio do kompilacji aplikacji i do tworzenia ze
 
  Spoza IDE można wykonywać następujące zadania dodatkowe:
 
--   [Zmiana katalogu wyjściowego kompilacji](../ide/how-to-change-the-build-output-directory.md).
+- [Zmiana katalogu wyjściowego kompilacji](../ide/how-to-change-the-build-output-directory.md).
 
--   [Identyfikuj projekty, które są zależne od danych wyjściowych z innego projektu w celu poprawnej kompilacji](../ide/how-to-create-and-remove-project-dependencies.md).
+- [Identyfikuj projekty, które są zależne od danych wyjściowych z innego projektu w celu poprawnej kompilacji](../ide/how-to-create-and-remove-project-dependencies.md).
 
--   [Zmień ilość informacji zawartych w dzienniku kompilacji lub okno danych wyjściowych kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md).
+- [Zmień ilość informacji zawartych w dzienniku kompilacji lub okno danych wyjściowych kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md).
 
--   [Ukryj określone ostrzeżenia kompilatora Visual C#, Visual C++ lub Visual Basic](../ide/how-to-suppress-compiler-warnings.md).
+- [Ukryj określone ostrzeżenia kompilatora Visual C#, Visual C++ lub Visual Basic](../ide/how-to-suppress-compiler-warnings.md).
 
--   [Określ niestandardowe przed kompilacją i po zakończeniu kompilowania akcje w przypadku kompilacji](../ide/specifying-custom-build-events-in-visual-studio.md).
+- [Określ niestandardowe przed kompilacją i po zakończeniu kompilowania akcje w przypadku kompilacji](../ide/specifying-custom-build-events-in-visual-studio.md).
 
--   Zwiększ wydajność kompilacji przy użyciu kompilacji równoległych. Aby uzyskać więcej informacji, zobacz [tworzenie wielu projektów w sposób równoległy](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) lub wpis w blogu [dostrajanie kompilacji równoległych C++](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx).
+- Zwiększ wydajność kompilacji przy użyciu kompilacji równoległych. Aby uzyskać więcej informacji, zobacz [tworzenie wielu projektów w sposób równoległy](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) lub wpis w blogu [dostrajanie kompilacji równoległych C++](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx).
 
 ## <a name="see-also"></a>Zobacz też
  [Przewodnik: Tworzenie aplikacji](../ide/walkthrough-building-an-application.md) [opis konfiguracji kompilacji](../ide/understanding-build-configurations.md) [interpretacji platformy kompilacji](../ide/understanding-build-platforms.md) [tworzenia projektów witryny sieci Web (kompilowanie)](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Jak: Tworzenie i usuwanie zależności projektu](../ide/how-to-create-and-remove-project-dependencies.md)

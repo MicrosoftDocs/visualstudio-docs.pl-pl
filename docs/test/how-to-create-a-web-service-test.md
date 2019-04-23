@@ -10,12 +10,12 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f1172cff8abc53867f4a13cacdf16fe2d1f065e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3fd640a79a81e2306c8abd1c3c5279b1fc8f335f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954975"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065366"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Instrukcje: Tworzenie testu usługi internetowej
 
@@ -31,21 +31,21 @@ Visual Studio Enterprise
 
 ## <a name="to-test-a-web-service"></a>Aby przetestować usługę sieci web
 
-1.  Utwórz nowy test wydajności sieci web. Zaraz po otwarciu przeglądarki, wybierz **zatrzymać**.
+1. Utwórz nowy test wydajności sieci web. Zaraz po otwarciu przeglądarki, wybierz **zatrzymać**.
 
-2.  W **edytora testów wydajności sieci Web**, kliknij prawym przyciskiem myszy test wydajności sieci web i wybierz **Dodaj żądanie usługi sieci Web**.
+2. W **edytora testów wydajności sieci Web**, kliknij prawym przyciskiem myszy test wydajności sieci web i wybierz **Dodaj żądanie usługi sieci Web**.
 
-3.  W **adresu Url** właściwości nowego żądania wpisz nazwę usługi sieci web, takich jak **http://localhost/storecsvs/InstantOrder.asmx**.
+3. W **adresu Url** właściwości nowego żądania wpisz nazwę usługi sieci web, takich jak **http://localhost/storecsvs/InstantOrder.asmx**.
 
-4.  Otwórz oddzielną sesję przeglądarki i wpisz adres URL *.asmx* strony w **adres** paska narzędzi. Wybierz metodę, którą chcesz przetestować i uważnie przeczytaj komunikat protokołu SOAP. Zawiera on element `SOAPAction`.
+4. Otwórz oddzielną sesję przeglądarki i wpisz adres URL *.asmx* strony w **adres** paska narzędzi. Wybierz metodę, którą chcesz przetestować i uważnie przeczytaj komunikat protokołu SOAP. Zawiera on element `SOAPAction`.
 
-5.  W **edytora testów wydajności sieci Web**, kliknij prawym przyciskiem myszy żądanie i wybierz **Dodawanie nagłówka** Aby dodać nowy nagłówek. W **nazwa** właściwość, typ `SOAPAction`. W **wartość** właściwości, wpisz wartość, która zostanie wyświetlony w `SOAPAction`, takich jak `"http://tempuri.org/CheckStatus"`.
+5. W **edytora testów wydajności sieci Web**, kliknij prawym przyciskiem myszy żądanie i wybierz **Dodawanie nagłówka** Aby dodać nowy nagłówek. W **nazwa** właściwość, typ `SOAPAction`. W **wartość** właściwości, wpisz wartość, która zostanie wyświetlony w `SOAPAction`, takich jak `"http://tempuri.org/CheckStatus"`.
 
-6.  Rozwiń węzeł adresu URL w edytorze, wybierz polecenie **ciąg tekstowy** węzła i **typu zawartości** właściwości wprowadź wartość `text/xml`.
+6. Rozwiń węzeł adresu URL w edytorze, wybierz polecenie **ciąg tekstowy** węzła i **typu zawartości** właściwości wprowadź wartość `text/xml`.
 
-7.  Wróć do przeglądarki z kroku 4 zaznacz fragment XML żądania SOAP ze strony opisu usługi sieci web i skopiuj go do Schowka.
+7. Wróć do przeglądarki z kroku 4 zaznacz fragment XML żądania SOAP ze strony opisu usługi sieci web i skopiuj go do Schowka.
 
-8.  Zawartość XML przypomina poniższy przykład:
+8. Zawartość XML przypomina poniższy przykład:
 
      ```xml
      <?xml version="1.0" encoding="utf-8"?>

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa12fdc3eea5c353071fb4a80e2c99f2f9e060c2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9d831cb629665e641394d011bd11eb74481c4f94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629953"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087186"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Instrukcje: Dodaj przycisk Uruchom okno dialogowe do grupy wstążki
   Możesz dodać przycisk Uruchom okno dialogowe z żadną grupą na Wstążce. Przycisk Uruchom okno dialogowe jest mała ikona, która pojawia się w grupie. Użytkownicy, kliknij tę ikonę, aby otworzyć określone okno dialogowe lub okienka zadań, które zapewniają więcej opcji, które odnoszą się do tej grupy.
@@ -27,11 +27,11 @@ ms.locfileid: "56629953"
 
 ### <a name="to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Aby dodać przycisk Uruchom okno dialogowe do grupy wstążki
 
-1.  Wybierz plik kodu wstążki (*.vb* lub *.cs* pliku) w **Eksploratora rozwiązań**.
+1. Wybierz plik kodu wstążki (*.vb* lub *.cs* pliku) w **Eksploratora rozwiązań**.
 
-2.  Na **widoku** menu, kliknij przycisk **projektanta**.
+2. Na **widoku** menu, kliknij przycisk **projektanta**.
 
-3.  W Projektancie wstążki, kliknij prawym przyciskiem myszy dowolną grupę, a następnie kliknij przycisk **Dodaj element DialogBoxLauncher**.
+3. W Projektancie wstążki, kliknij prawym przyciskiem myszy dowolną grupę, a następnie kliknij przycisk **Dodaj element DialogBoxLauncher**.
 
      Dodaj kod, aby <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick> zdarzeń grupę, aby otworzyć okno dialogowe niestandardowych i wbudowanych.
 

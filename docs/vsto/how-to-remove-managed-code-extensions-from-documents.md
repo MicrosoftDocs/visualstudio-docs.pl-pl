@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d4b1e315d335215c990329380739f5fbf34997d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 438658af3f182ea732d0fefef0f5a5d6ecbefa03
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625858"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071632"
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>Instrukcje: Usuwanie rozszerzenia kodu zarządzanego z dokumentów
   Zestaw dostosowania można programowo usunąć dokument lub skoroszyt, który jest częścią dostosowywania poziomie dokumentu dla programu Microsoft Office Word lub Microsoft Office Excel. Użytkownicy mogą otwierać dokumentów i wyświetlanie zawartości, ale dowolnego niestandardowego interfejsu użytkownika (UI) dodawanie do dokumentów, nie będą widoczne, a kod nie będzie działał.
@@ -31,27 +31,27 @@ ms.locfileid: "56625858"
 
 ## <a name="to-remove-the-customization-assembly-at-runtime"></a>Aby usunąć zestaw dostosowania w czasie wykonywania
 
-1.  W kodzie dostosowywania wywołać <xref:Microsoft.Office.Tools.Word.Document.RemoveCustomization%2A> — metoda (dla programu Word) lub <xref:Microsoft.Office.Tools.Excel.Workbook.RemoveCustomization%2A> — metoda (dla programu Excel). Tę metodę należy wywoływać tylko wtedy, gdy dostosowanie nie jest już potrzebny.
+1. W kodzie dostosowywania wywołać <xref:Microsoft.Office.Tools.Word.Document.RemoveCustomization%2A> — metoda (dla programu Word) lub <xref:Microsoft.Office.Tools.Excel.Workbook.RemoveCustomization%2A> — metoda (dla programu Excel). Tę metodę należy wywoływać tylko wtedy, gdy dostosowanie nie jest już potrzebny.
 
      Gdzie chcesz wywołać tę metodę w kodzie zależy od tego, jak dostosowywanie jest używany. Na przykład, jeśli klienci korzystać z funkcji usługi dostosowywania aż będą gotowe do wysyłania dokumentu do innych klientów, którzy muszą tylko dokumentem (nie dostosowywania), musisz podać niektóre interfejsu użytkownika, który wywołuje `RemoveCustomization` gdy klient kliknie go. Alternatywnie Jeśli dostosowanie wypełnia dokumentu z danymi, po pierwszym otwarciu, ale dostosowanie nie zapewnia inne funkcje, które są dostępne bezpośrednio przez klientów, następnie możesz wywołać RemoveCustomization tak szybko, jak dostosowywanie Inicjowanie dokumentu zostanie zakończone.
 
 ## <a name="to-remove-the-customization-assembly-from-a-closed-document-or-a-document-on-a-server"></a>Aby usunąć zestaw dostosowania z dokumentu zamknięte lub na serwerze
 
-1.  W projekcie, który nie wymaga programu Microsoft Office, takich jak aplikacji konsoli lub projekt Windows Forms, Dodaj odwołanie do *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll* zestawu.
+1. W projekcie, który nie wymaga programu Microsoft Office, takich jak aplikacji konsoli lub projekt Windows Forms, Dodaj odwołanie do *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll* zestawu.
 
-2.  Dodaj następujący kod **Importy** lub **przy użyciu** instrukcji na górze pliku kodu.
+2. Dodaj następujący kod **Importy** lub **przy użyciu** instrukcji na górze pliku kodu.
 
      [!code-csharp[Trin_VstcoreDeployment#1](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#1)]
      [!code-vb[Trin_VstcoreDeployment#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#1)]
 
-3.  Wywołaj statyczną <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> metody <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy, a następnie określ ścieżkę dokumentu rozwiązanie dla parametru.
+3. Wywołaj statyczną <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> metody <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy, a następnie określ ścieżkę dokumentu rozwiązanie dla parametru.
 
      Poniższy przykład kodu zakłada, z dokumentu o nazwie usuwasz dostosowania *WordDocument1.docx* znajduje się na pulpicie.
 
      [!code-csharp[Trin_VstcoreDeployment#2](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#2)]
      [!code-vb[Trin_VstcoreDeployment#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#2)]
 
-4.  Skompilować projekt i uruchomić aplikację na komputerze, w której chcesz usunąć dostosowania. Na komputerze musi być Visual Studio 2010 Tools dla pakietu Office runtime zainstalowane.
+4. Skompilować projekt i uruchomić aplikację na komputerze, w której chcesz usunąć dostosowania. Na komputerze musi być Visual Studio 2010 Tools dla pakietu Office runtime zainstalowane.
 
 ## <a name="see-also"></a>Zobacz także
 - [Zarządzanie dokumentami na serwerze za pomocą klasy ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)

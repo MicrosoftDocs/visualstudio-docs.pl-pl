@@ -8,23 +8,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2e70fb88a9dd3c51a5e280e1e778bd18220985f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688371"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091333"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Przewodnik: Debugowanie błędów renderowania spowodowanych cieniowaniem
 W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostyki grafiki do zbadania obiekt, który jest niepoprawnie kolorowe z powodu usterki programu do cieniowania.
 
  W tym instruktażu przedstawiono sposób:
 
--   Sprawdź dokument dziennika grafiki, aby zidentyfikować pikseli, które pokazują problem.
+- Sprawdź dokument dziennika grafiki, aby zidentyfikować pikseli, które pokazują problem.
 
--   Użyj **Historia pikseli grafiki** okna, aby dokładniej zbadać stan pikseli.
+- Użyj **Historia pikseli grafiki** okna, aby dokładniej zbadać stan pikseli.
 
--   Użyj **Debuger języka HLSL** do zbadania cieniowania pikseli i wierzchołka.
+- Użyj **Debuger języka HLSL** do zbadania cieniowania pikseli i wierzchołka.
 
 ## <a name="scenario"></a>Scenariusz
  Niepoprawne kolorowanie na obiektach często występuje po program do cieniowania wierzchołków przekazuje piksel niepoprawne lub niepełne informacje programu do cieniowania.

@@ -25,12 +25,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2bd0fe7ca8b2a1f21ebcb6c3434348df9d2e66e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 42d7c9798527498f2803d814515faefd62c3ace9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803330"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077501"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>Instrukcje: Korzystanie z okna dezasemblacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,13 +64,13 @@ Ta funkcja jest dostępna tylko wtedy, gdy włączone jest debugowanie na poziom
   
 ### <a name="to-display-the-disassembly-window"></a>Aby wyświetlić okno dezasemblacji  
   
--   Na **debugowania** menu, wybierz **Windows**i kliknij przycisk **dezasemblacji**.  
+- Na **debugowania** menu, wybierz **Windows**i kliknij przycisk **dezasemblacji**.  
   
      Debuger musi być uruchomiona lub w trybie przerwania.  
   
 ### <a name="to-turn-optional-information-on-or-off"></a>Aby włączyć informacje opcjonalne lub wyłączyć  
   
--   Kliknij prawym przyciskiem myszy **dezasemblacji** oknie i ustawić lub wyczyścić odpowiednie opcje w menu skrótów.  
+- Kliknij prawym przyciskiem myszy **dezasemblacji** oknie i ustawić lub wyczyścić odpowiednie opcje w menu skrótów.  
   
      Żółta strzałka na lewym marginesie oznacza lokalizację bieżący punkt wykonania. Dla kodu natywnego odpowiada to licznik programu procesora CPU. Ta lokalizacja zawiera następnej instrukcji, która zostanie wykonana w programach.  
   

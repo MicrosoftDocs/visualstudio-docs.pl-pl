@@ -12,12 +12,12 @@ ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8d9836702b00b51d1e2dbe1cd64687c892feaba4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f1cd8e7e85b9753c3742044ae2a557cdf4637214
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765053"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084885"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType — Element (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,11 +57,11 @@ Klasyfikuje szablon projektu, tak aby była wyświetlana w ramach określonej gr
   
  Ta wartość określa typ projektu szablonu zostanie utworzona i musi zawierać jeden z następujących wartości:  
   
--   `CSharp`: Określa, że ten szablon tworzy [!INCLUDE[csprcs](../includes/csprcs-md.md)] projektu lub elementu.  
+- `CSharp`: Określa, że ten szablon tworzy [!INCLUDE[csprcs](../includes/csprcs-md.md)] projektu lub elementu.  
   
--   `VisualBasic`: Określa, że ten szablon tworzy [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projektu lub elementu.  
+- `VisualBasic`: Określa, że ten szablon tworzy [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projektu lub elementu.  
   
--   `Web`: Określa, że ten szablon tworzy projekt sieci Web lub elementu. Jeśli `ProjectType` element zawiera tę wartość, język projektu lub elementu jest zdefiniowany w [projectsubtype — Element (szablony Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
+- `Web`: Określa, że ten szablon tworzy projekt sieci Web lub elementu. Jeśli `ProjectType` element zawiera tę wartość, język projektu lub elementu jest zdefiniowany w [projectsubtype — Element (szablony Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
   
 ## <a name="remarks"></a>Uwagi  
  `ProjectType` jest wymaganym elementem podrzędnym elementu `TemplateData`.  

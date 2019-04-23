@@ -10,27 +10,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98c63d2eff11997a37d27f71d01403b59f276e2b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 971eb3184fc12b9ed72675fbcd46a893981b4c9e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679141"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072958"
 ---
 # <a name="program-control"></a>Kontrola programu
 W programie Visual Studio debugowanie wszystkich następujących przechodzenie krok po kroku i kontynuowanie procedury wykonywane na poziomie programu:
 
--   Oznacza to, że ustawienie następnej instrukcji, ustawienia komputera do następnej instrukcji do wykonania w środowisku określonego ramki
+- Oznacza to, że ustawienie następnej instrukcji, ustawienia komputera do następnej instrukcji do wykonania w środowisku określonego ramki
 
--   Wykonywanie, oznacza to, w dalszym ciągu wyjście z trybu przechodzenia krok po kroku
+- Wykonywanie, oznacza to, w dalszym ciągu wyjście z trybu przechodzenia krok po kroku
 
--   Przechodzenie do następnej instrukcji
+- Przechodzenie do następnej instrukcji
 
--   Kontynuując bieżący tryb wykonywania krokowego
+- Kontynuując bieżący tryb wykonywania krokowego
 
--   Zawieszanie wątków zawarte przez program
+- Zawieszanie wątków zawarte przez program
 
--   Wznawianie wątków zawarte przez program
+- Wznawianie wątków zawarte przez program
 
 > [!NOTE]
 >  Wyświetlanie stosu wywołań jest wdrażany na poziomie wątku. Aby wyliczyć informacji o ramce, podczas wyświetlania stos wywołań dla wątku, należy zaimplementować wszystkie metody [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interfejsu.

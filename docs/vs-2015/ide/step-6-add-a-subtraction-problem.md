@@ -9,29 +9,29 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 500836281c1dba10bfdfe61b2442d30fb985fe38
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e846bc8dc8d3087c58d58ee91752abc713c5f66e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796627"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064223"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Krok 6. Dodawanie zadania z odejmowaniem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W szóstej części tego samouczka dodasz problem odejmowania i Dowiedz się, jak wykonywać następujące zadania:  
   
--   Store wartości odejmowania.  
+- Store wartości odejmowania.  
   
--   Wygeneruj liczby losowe dla problemu (i należy się upewnić, że odpowiedź na pytanie od 0 do 100).  
+- Wygeneruj liczby losowe dla problemu (i należy się upewnić, że odpowiedź na pytanie od 0 do 100).  
   
--   Zaktualizuj metodę, która sprawdza odpowiedzi, tak aby sprawdzała zbyt nowy problem odejmowania.  
+- Zaktualizuj metodę, która sprawdza odpowiedzi, tak aby sprawdzała zbyt nowy problem odejmowania.  
   
--   Zaktualizować programu obsługi zdarzeń Tick czasomierza usługi obsługi zdarzeń wypełniał poprawną odpowiedź, gdy skończy się czas.  
+- Zaktualizować programu obsługi zdarzeń Tick czasomierza usługi obsługi zdarzeń wypełniał poprawną odpowiedź, gdy skończy się czas.  
   
 ### <a name="to-add-a-subtraction-problem"></a>Aby dodać problem odejmowania  
   
-1.  Dodawanie dwóch zmiennych całkowitych dla problemu odejmowania do formularza, między zmiennych całkowitych dla problemu dodawania oraz czasomierzem. Kod powinien wyglądać następująco.  
+1. Dodawanie dwóch zmiennych całkowitych dla problemu odejmowania do formularza, między zmiennych całkowitych dla problemu dodawania oraz czasomierzem. Kod powinien wyglądać następująco.  
   
      [!code-csharp[VbExpressTutorial3Step5_6#12](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#12)]
      [!code-vb[VbExpressTutorial3Step5_6#12](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#12)]  
@@ -40,7 +40,7 @@ W szóstej części tego samouczka dodasz problem odejmowania i Dowiedz się, ja
   
      Następnie zmodyfikujesz `StartTheQuiz()` metodę, aby dostarczyć losowe wartości dla problemu odejmowania.  
   
-2.  Dodaj następujący kod po komentarzu "Wypełnij problem odejmowania".  
+2. Dodaj następujący kod po komentarzu "Wypełnij problem odejmowania".  
   
      [!code-csharp[VbExpressTutorial3Step5_6#13](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#13)]
      [!code-vb[VbExpressTutorial3Step5_6#13](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#13)]  
@@ -62,19 +62,19 @@ Przeciążenie dla metody Next() w technologii IntelliSense
   
      W tym przypadku chcesz wybrać ostatnie przeciążenie, ponieważ można określić wartości minimalne i maksymalne.  
   
-3.  Modyfikowanie `CheckTheAnswer()` metodę sprawdzania, czy poprawną odpowiedź odejmowania.  
+3. Modyfikowanie `CheckTheAnswer()` metodę sprawdzania, czy poprawną odpowiedź odejmowania.  
   
      [!code-csharp[VbExpressTutorial3Step5_6#14](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#14)]
      [!code-vb[VbExpressTutorial3Step5_6#14](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#14)]  
   
      W języku Visual C# `&&` jest `logical and` operatora. W języku Visual Basic, równorzędny operator to `AndAlso`. Te operatory wskazują "Jeśli suma addend1 i addend2 jest równa wartości sumy NumericUpDown i jeśli odjemna minus odjemnik jest równa wartości różnicy NumericUpDown." `CheckTheAnswer()` Metoda zwraca `true` tylko wtedy, gdy odpowiedzi na dodawanie i problemy odejmowania są poprawne.  
   
-4.  Zastąp ostatnią część programu obsługi zdarzeń Tick timera następującym kodem, tak aby wypełnił poprawną odpowiedź, gdy skończy się czas.  
+4. Zastąp ostatnią część programu obsługi zdarzeń Tick timera następującym kodem, tak aby wypełnił poprawną odpowiedź, gdy skończy się czas.  
   
      [!code-csharp[VbExpressTutorial3Step5_6#22](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#22)]
      [!code-vb[VbExpressTutorial3Step5_6#22](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#22)]  
   
-5.  Zapisz i uruchom kod.  
+5. Zapisz i uruchom kod.  
   
      Program obejmuje problem odejmowania, jak pokazano na następującym rysunku.  
   
@@ -83,6 +83,6 @@ Quiz matematyczny z problemem odejmowania
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   
--   Aby przejść do następnego kroku samouczka, zobacz [kroku 7: Dodawanie problemów mnożenia i dzielenia](../ide/step-7-add-multiplication-and-division-problems.md).  
+- Aby przejść do następnego kroku samouczka, zobacz [kroku 7: Dodawanie problemów mnożenia i dzielenia](../ide/step-7-add-multiplication-and-division-problems.md).  
   
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 5: Dodawanie obsługi zdarzeń wprowadzania dla formantów NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 5: Dodawanie obsługi zdarzeń wprowadzania dla formantów NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

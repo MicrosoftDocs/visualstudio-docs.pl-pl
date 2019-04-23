@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a18f986b64a58f4b5d9a8cad74ce118985b06c96
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 41974aee19cf1e4919028d5ef0f0e9b53c6b369e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909378"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095168"
 ---
 # <a name="how-to-model-3d-terrain"></a>Instrukcje: Modelowanie terenu 3D
 
@@ -29,22 +29,22 @@ Gdy skończysz, model powinien wyglądać następująco:
 
 Przed rozpoczęciem upewnij się, że **właściwości** okna i **przybornika** są wyświetlane.
 
-1.  Utwórz model 3D, z którą chcesz pracować. Aby uzyskać informacje dotyczące sposobu dodawania modelu do swojego projektu, zobacz sekcję pierwsze kroki w [edytora modelu](../designers/model-editor.md).
+1. Utwórz model 3D, z którą chcesz pracować. Aby uzyskać informacje dotyczące sposobu dodawania modelu do swojego projektu, zobacz sekcję pierwsze kroki w [edytora modelu](../designers/model-editor.md).
 
-2.  Dodaj płaszczyznę do sceny. W **przybornika**w obszarze **kształty**, wybierz opcję **płaszczyzny** i przenieś go do powierzchni projektowej.
+2. Dodaj płaszczyznę do sceny. W **przybornika**w obszarze **kształty**, wybierz opcję **płaszczyzny** i przenieś go do powierzchni projektowej.
 
     > [!TIP]
     > Aby ułatwić obiektu płaszczyzny chcesz pracować, można ramki go na powierzchnię. W **wybierz** tryb, wybierz obiekt płaszczyzny, a następnie na pasku narzędzi edytora modelu, wybierz **obiekt w ramce** przycisku.
 
-3.  Wprowadź trybu wyboru pierwszego planu. Na pasku narzędzi edytora modelu wybierz **wybierz krój**.
+3. Wprowadź trybu wyboru pierwszego planu. Na pasku narzędzi edytora modelu wybierz **wybierz krój**.
 
-4.  Należy podzielić płaszczyzny. W przypadku trybu wyboru pierwszego planu wybierz płaszczyzny raz go uaktywnić dla zaznaczenia, a następnie wybierz ją ponownie, aby wybrać jej tylko twarzy. Na pasku narzędzi edytora modelu wybierz **Podziel pierwszy plan**. Spowoduje to dodanie nowe wierzchołki płaszczyzny i podziel go na partycje równej wielkości.
+4. Należy podzielić płaszczyzny. W przypadku trybu wyboru pierwszego planu wybierz płaszczyzny raz go uaktywnić dla zaznaczenia, a następnie wybierz ją ponownie, aby wybrać jej tylko twarzy. Na pasku narzędzi edytora modelu wybierz **Podziel pierwszy plan**. Spowoduje to dodanie nowe wierzchołki płaszczyzny i podziel go na partycje równej wielkości.
 
-5.  Utwórz więcej segmentami. Przy wciąż zaznaczonym nowe powierzchnie, wybierz polecenie **Podziel pierwszy plan** dwa razy. Spowoduje to utworzenie w sumie 64 twarzy. Tworząc więcej segmentami, można nadać terenu jeszcze więcej szczegółów.
+5. Utwórz więcej segmentami. Przy wciąż zaznaczonym nowe powierzchnie, wybierz polecenie **Podziel pierwszy plan** dwa razy. Spowoduje to utworzenie w sumie 64 twarzy. Tworząc więcej segmentami, można nadać terenu jeszcze więcej szczegółów.
 
-6.  Przejść do trybu wyboru punktu. Na pasku narzędzi edytora modelu wybierz **wybierz punkt**.
+6. Przejść do trybu wyboru punktu. Na pasku narzędzi edytora modelu wybierz **wybierz punkt**.
 
-7.  Zmodyfikuj punkt, aby utworzyć funkcję terenu. W trybie wyboru punktu, należy wybrać jeden z punktów, a następnie na pasku narzędzi edytora modelu wybierz **Translate** narzędzia. Pole, który reprezentuje punkt jest wyświetlany na powierzchni projektowej. Aby przenieść pole i tym samym zmodyfikować wysokość punktu, użyj zieloną strzałkę. Powtórz ten krok dla różnych punktów w celu utworzenia interesujące funkcje terenu.
+7. Zmodyfikuj punkt, aby utworzyć funkcję terenu. W trybie wyboru punktu, należy wybrać jeden z punktów, a następnie na pasku narzędzi edytora modelu wybierz **Translate** narzędzia. Pole, który reprezentuje punkt jest wyświetlany na powierzchni projektowej. Aby przenieść pole i tym samym zmodyfikować wysokość punktu, użyj zieloną strzałkę. Powtórz ten krok dla różnych punktów w celu utworzenia interesujące funkcje terenu.
 
     > [!TIP]
     > Możesz wybrać kilka punktów jednocześnie z ich w jednolity sposób.

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30f51715cd26c9d61e355115db6f4ca4b9831ef0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 37e8b8e47b306f8b99e378cf407c0faf0955c737
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660791"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084872"
 ---
 # <a name="core-interfaces"></a>Interfejsy podstawowe
 Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomocą [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].
@@ -65,7 +65,7 @@ Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomo
 
 - Visual Studio (VS)
 
-##  <a name="Breakpoints"></a> Punkty przerwania
+## <a name="Breakpoints"></a> Punkty przerwania
  Te interfejsy są ze sobą powiązane do implementacji i śledzenie punktów przerwania.
 
 |Interface|Zaimplementowane przez|Opis|
@@ -86,7 +86,7 @@ Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomo
 |[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)|DE|Reprezentuje wyliczenie dla zestawu powiązanych punktów przerwania.|
 |[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)|DE|Reprezentuje wyliczenia w zestawie punktów przerwania, których nie można powiązać lokalizacji w pamięci.|
 
-##  <a name="Contexts"></a> Konteksty
+## <a name="Contexts"></a> Konteksty
  Te interfejsy reprezentują różne rodzaje kontekstów w ramach debugowanego programu.
 
 |Interface|Zaimplementowane przez|Opis|
@@ -100,7 +100,7 @@ Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomo
 |[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|Reprezentuje kontekst ramki stosu w punkt przerwania lub wyjątku.|
 |[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)|DE|Reprezentuje wyliczenia w zestawie kontekstów kodu.|
 
-##  <a name="CoreServer"></a> Core Server
+## <a name="CoreServer"></a> Core Server
  Te interfejsy reprezentują maszyny, na którym jest debugowany program. Są one zaimplementowane przez [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] , ale może być wywoływany do przez aparaty debugowania.
 
 |Interface|Zaimplementowane przez|Opis|
@@ -108,7 +108,7 @@ Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomo
 |[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)|VS|Zapewnia dostęp do portów i dostawcy portów, a także informacje o komputerze.|
 |[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)|VS|Reprezentuje [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) , która obsługuje zdalne debugowanie.|
 
-##  <a name="DebugEngines"></a> Aparaty debugowania
+## <a name="DebugEngines"></a> Aparaty debugowania
  Te interfejsy reprezentują silniki debugowania i ich skojarzone zdarzenia.
 
 |Interface|Zaimplementowane przez|Opis|
@@ -120,7 +120,7 @@ Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomo
 |[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE, PS|Reprezentuje węzeł program, który obsługuje wielu aparatów debugowania.|
 |[IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)|DE|Zapewnia sposób SDM można uzyskać interfejsu do aparatu debugowania z wątku, programu lub ramki stosu.|
 
-##  <a name="Documents"></a> Dokumenty
+## <a name="Documents"></a> Dokumenty
  Te interfejsy reprezentują dokumenty (pliki źródłowe) i skojarzonych z nimi elementów.
 
 |Interface|Zaimplementowane przez|Opis|
@@ -135,7 +135,7 @@ Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomo
 |[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)|VS, DE|Reprezentuje dokument tekstowy, dostarczone przez DE (pochodną [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)), podając faktycznego tekstu.|
 |[IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|DE|Wysyłane przez DE, aby określić zmiany w pliku źródłowego, który znajduje się w pamięci.|
 
-##  <a name="Events"></a> Zdarzenia
+## <a name="Events"></a> Zdarzenia
  Te interfejsy reprezentują wszystkie zdarzenia, które są przesyłane między DE i Menedżer debugowania sesji (SDM).
 
 | Interface | Zaimplementowane przez | Opis |
@@ -180,7 +180,7 @@ Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomo
 | [IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md) | DE | Wysyłane przez DE wątku została zniszczona. |
 | [IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md) | DE | Wysyłane przez DE, gdy wątek zmieniono jego nazwę. |
 
-##  <a name="Expressions"></a> Wyrażenia
+## <a name="Expressions"></a> Wyrażenia
  Te interfejsy reprezentują wyrażenia, które mogło zostać ocenione w szczególnym kontekście.
 
 |Interface|Zaimplementowane przez|Opis|
@@ -189,7 +189,7 @@ Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomo
 |[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|Reprezentuje kontekst, w którym wyrażenie jest obliczane. Uzyskany z [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) interfejsu.|
 |[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|DE|Wysyłane przez DE, po zakończeniu Obliczanie wyrażenia asynchroniczne.|
 
-##  <a name="Memory"></a> Pamięć
+## <a name="Memory"></a> Pamięć
  Te interfejsy reprezentują sekwencje bajtów w pamięci.
 
 |Interface|Zaimplementowane przez|Opis|
@@ -197,7 +197,7 @@ Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomo
 |[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)|DE|Reprezentuje sekwencję bajtów w pamięci, który może odczytać lub zapisywane.|
 |[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|Reprezentuje lokalizację w pamięci sekwencji bajtów.|
 
-##  <a name="Modules"></a> Moduły
+## <a name="Modules"></a> Moduły
  Te interfejsy reprezentują moduł, który odnosi się do pliku wykonywalnego lub. Plik DLL.
 
 |Interface|Zaimplementowane przez|Opis|
@@ -208,7 +208,7 @@ Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomo
 |[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)|DE|Reprezentuje informacji o serwerze źródłowym, który jest zawarty w pliku PDB.|
 |[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)|DE|Reprezentuje wyliczenia w zestawie modułów, które są znane przez [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md).|
 
-##  <a name="Ports"></a> Porty
+## <a name="Ports"></a> Porty
  Te interfejsy reprezentują portów i dostawcy portów.
 
 | Interface | Zaimplementowane przez | Opis |
@@ -228,7 +228,7 @@ Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomo
 | [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) | VS, PS | Reprezentuje wyliczenie za pośrednictwem zestawu portów. |
 | [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) | VS | Reprezentuje wyliczenie zestawu dostawcy portów. |
 
-##  <a name="Processes"></a> Procesy
+## <a name="Processes"></a> Procesy
  Te interfejsy reprezentują procesów, pojedynczy plik wykonywalny, który zawiera jeden lub więcej programów.
 
 |Interface|Zaimplementowane przez|Opis|
@@ -240,7 +240,7 @@ Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomo
 |[IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)|PS|Reprezentuje proces, który musi śledzić sesji, który jest dołączony do niego.|
 |[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)|PS|Reprezentuje wyliczenie zestaw procesów na porcie.|
 
-##  <a name="Programs"></a> Programy
+## <a name="Programs"></a> Programy
  Te interfejsy reprezentują programów, jednostki logiczne wykonywania, które nie muszą odpowiadać fizycznego pliku wykonywalnego lub modułu.
 
 |Interface|Zaimplementowane przez|Opis|
@@ -259,7 +259,7 @@ Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomo
 |[IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)|DE, PS|Reprezentuje [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) może kierować element interfejsów granice wątku lub procesu.|
 |[IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)|DE, PS|Reprezentuje wyliczenie zestawu programów.|
 
-##  <a name="Properties"></a> Właściwości
+## <a name="Properties"></a> Właściwości
  Te interfejsy reprezentuje właściwości i wartość skojarzoną z określonym kontekstem, zazwyczaj wynikiem oceny wyrażenia.
 
 |Interface|Zaimplementowane przez|Opis|
@@ -273,7 +273,7 @@ Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomo
 |[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)|DE|Reprezentuje wyliczenie za pośrednictwem zestawu [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struktur, które opisują zmiennych, rejestry, parametry i wyrażenia.|
 |[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)|DE|Reprezentuje wyliczenie za pośrednictwem zestawu [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struktury.|
 
-##  <a name="StackFrames"></a> Ramki stosu
+## <a name="StackFrames"></a> Ramki stosu
  Te interfejsy reprezentuje ramkę stosu, kontekst, w której punkt przerwania lub wyjątek wystąpił.
 
 |Interface|Zaimplementowane przez|Opis|
@@ -283,7 +283,7 @@ Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomo
 |[IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)|DE|Reprezentuje wyliczenie zestawu [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) struktur, które określają funkcja wywołania sekwencja używana do osiągnięcia ramki określonego stosu.|
 |[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)|DE|Reprezentuje wyliczenie za pośrednictwem zestawu [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktur, które opisują ramki stosu.|
 
-##  <a name="Threads"></a> Wątki
+## <a name="Threads"></a> Wątki
  Te interfejsy reprezentują wątków i ich skojarzone zdarzenia.
 
 |Interface|Zaimplementowane przez|Opis|
@@ -294,7 +294,7 @@ Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomo
 |[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|Wysyłane przez DE, gdy wątek zmieniono jego nazwę.|
 |[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)|DE|Reprezentuje wyliczenia w zestawie wątków.|
 
-##  <a name="TypeVisualizers"></a> Wizualizatorów typu
+## <a name="TypeVisualizers"></a> Wizualizatorów typu
  Interfejsy te zapewniają obsługę wizualizatorów typu. Te interfejsy są zazwyczaj implementowane przez ewaluatora wyrażeń.
 
 |Interface|Zaimplementowane przez|Opis|

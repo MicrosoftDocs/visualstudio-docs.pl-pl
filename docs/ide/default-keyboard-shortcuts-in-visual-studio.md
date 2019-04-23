@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bc8879dbc515f7f779308db0b745ce5bb5afc50
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4e8cea36eeed3e09f1d88ad08f95f816d5206d65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607411"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091060"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyślne skróty klawiaturowe w programie Visual Studio
 
@@ -40,22 +40,22 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |[Menu kontekstowe debugera](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Inne menu kontekstowe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Menu kontekstowe Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[Centrum diagnostyki](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
-##  <a name="bkmk_global"></a> Globalne
+## <a name="bkmk_global"></a> Globalne
 
-###  <a name="bkmk_analyze"></a> Analizowanie
+### <a name="bkmk_analyze"></a> Analizowanie
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
 |Analyze.NavigateBackward|**Shift + Alt + 3**|
 |Analyze.NavigateForward|**Shift + Alt + 4**|
 
-###  <a name="bkmk_architecture"></a> Architektura
+### <a name="bkmk_architecture"></a> Architektura
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
 |Architecture.NewDiagram|**CTRL +\\, Ctrl + N**|
 
-###  <a name="bkmk_build"></a> Kompilacja
+### <a name="bkmk_build"></a> Kompilacja
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -64,13 +64,13 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Build.Compile|**CTRL + F7**|
 |Build.RunCodeAnalysisonSolution|**ALT + F11**|
 
-###  <a name="bkmk_classview"></a> Menu kontekstowe widoku klas
+### <a name="bkmk_classview"></a> Menu kontekstowe widoku klas
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**ALT + wprowadź**|
 
-###  <a name="bkmk_debug"></a> Debugowanie
+### <a name="bkmk_debug"></a> Debugowanie
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -138,7 +138,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Debug.Watch3|**Ctrl + Alt + W, 3**|
 |Debug.Watch4|**Ctrl + Alt + W, 4**|
 
-###  <a name="bkmk_debugger"></a> Menu kontekstowe debugera
+### <a name="bkmk_debugger"></a> Menu kontekstowe debugera
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -146,13 +146,13 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|**ALT + F9, A**|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|**ALT + F9, S**|
 
-###  <a name="bkmk_diagnostics"></a> Centrum diagnostyki
+### <a name="bkmk_diagnostics"></a> Centrum diagnostyki
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |DiagnosticsHub.StopCollection|**Ctrl + Alt + F2**|
 
-###  <a name="bkmk_edit"></a> Edytuj
+### <a name="bkmk_edit"></a> Edytuj
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|-|
@@ -211,7 +211,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Edit.SurroundWith|**CTRL + K, Ctrl + S**|
 |Edit.Undo|**CTRL + Z**<br /><br /> lub<br /><br /> **Alt + Backspace**|
 
-###  <a name="bkmk_editorContext"></a> Menu kontekstowe edytora
+### <a name="bkmk_editorContext"></a> Menu kontekstowe edytora
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -222,7 +222,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**CTRL + K, Ctrl + O** (litery ' O')|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**CTRL + K, Ctrl + T**<br /><br /> lub<br /><br /> **CTRL + K, T**|
 
-###  <a name="bkmk_file"></a> Plik
+### <a name="bkmk_file"></a> Plik
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -238,7 +238,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |File.SaveSelectedItems|**CTRL + S**|
 |File.ViewinBrowser|**Ctrl + Shift + W**|
 
-###  <a name="bkmk_help"></a> Pomoc
+### <a name="bkmk_help"></a> Pomoc
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -247,19 +247,19 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Help.ViewHelp|**CTRL + F1**|
 |Help.WindowHelp|**SHIFT + F1**|
 
-###  <a name="bkmk_loadtest"></a> Test obciążeniowy
+### <a name="bkmk_loadtest"></a> Test obciążeniowy
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |LoadTest.JumpToCounterPane|**CTRL + R, pytania i odpowiedzi**|
 
-###  <a name="bkmk_otherContext"></a> Inne menu kontekstowe
+### <a name="bkmk_otherContext"></a> Inne menu kontekstowe
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**Wstaw**|
 
-###  <a name="bkmk_project"></a> Projekt
+### <a name="bkmk_project"></a> Projekt
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -271,14 +271,14 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Project.Publishselectedfiles|**ALT +;**  następnie **Alt + P**|
 |Project.Replaceselectedfilesfromserver|**ALT +;**  następnie **klawisze Alt + R**|
 
-###  <a name="bkmk_projectContext"></a> Menu kontekstowe projektu i rozwiązania
+### <a name="bkmk_projectContext"></a> Menu kontekstowe projektu i rozwiązania
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
 |ProjectandSolutionContextMenus.Item.MoveDown|**Alt + Strzałka w dół**|
 |ProjectandSolutionContextMenus.Item.MoveUp|**Alt + Strzałka w górę**|
 
-###  <a name="bkmk_refactor"></a> Refaktoryzacja
+### <a name="bkmk_refactor"></a> Refaktoryzacja
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -289,7 +289,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Refactor.Rename|**CTRL + R, Ctrl + R**|
 |Refactor.ReorderParameters|**CTRL + R, Ctrl + O** (litery ' O')|
 
-###  <a name="bkmk_solutionexplorerGLOBAL"></a> Eksplorator rozwiązań
+### <a name="bkmk_solutionexplorerGLOBAL"></a> Eksplorator rozwiązań
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -297,7 +297,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |SolutionExplorer.PendingChangesFilter|**CTRL + [**, **P**<br /><br /> lub<br /><br /> **CTRL + [**, **klawisze Ctrl + P**|
 |SolutionExplorer.SyncWithActiveDocument|**CTRL + [**, **S**<br /><br /> lub<br /><br /> **CTRL + [**, **klawisze Ctrl + S**|
 
-###  <a name="bkmk_team"></a> Zespół
+### <a name="bkmk_team"></a> Zespół
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -306,7 +306,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Team.Git.GoToGitCommits|**CTRL + 0** (zero), **Ctrl + O** (litery ' O')<br /><br /> lub<br /><br /> **CTRL + 0, O**|
 |Team.TeamExplorerSearch|**CTRL +'**|
 
-###  <a name="bkmk_TFcontext"></a> Menu kontekstowe Team Foundation
+### <a name="bkmk_TFcontext"></a> Menu kontekstowe Team Foundation
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -321,14 +321,14 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |TeamFoundationContextMenus.Commands.GoToWebAccess|**CTRL + 0** (zero), **klawisze Ctrl + A**<br /><br /> lub<br /><br /> **CTRL + 0, A**|
 |TeamFoundationContextMenus.Commands.GoToWorkItems|**CTRL + 0** (zero), **Ctrl + W**<br /><br /> lub<br /><br /> **CTRL + 0, W**|
 
-###  <a name="bkmk_test"></a> Test
+### <a name="bkmk_test"></a> Test
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
 |Test.UseCodedUITestBuilder|**CTRL +\\, Ctrl + C**|
 |Test.UseExistingActionRecording|**CTRL +\\, Ctrl + A**|
 
-###  <a name="bkmk_testexplorerGLOBAL"></a> Eksplorator testów
+### <a name="bkmk_testexplorerGLOBAL"></a> Eksplorator testów
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -338,7 +338,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |TestExplorer.RunAllTests|**CTRL + R, A**|
 |TestExplorer.RunAllTestsInContext|**CTRL + R, T**|
 
-###  <a name="bkmk_tools"></a> Narzędzia
+### <a name="bkmk_tools"></a> Narzędzia
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -347,7 +347,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Tools.ForceGC|**Ctrl + Shift + Alt + F12, Ctrl + Shift + Alt + F12**|
 |Tools.GoToCommandLine|**CTRL +/**|
 
-###  <a name="bkmk_view"></a> Widok
+### <a name="bkmk_view"></a> Widok
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -396,7 +396,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |View.ZoomIn|**Ctrl + Shift +.**|
 |View.ZoomOut|**Ctrl + Shift +,**|
 
-###  <a name="bkmk_window"></a> Okno
+### <a name="bkmk_window"></a> Okno
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -427,14 +427,14 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Window.SolutionExplorerSearch|**CTRL +;**|
 |Window.WindowSearch|**ALT + "**|
 
-###  <a name="bkmk_windowsazure"></a> Azure
+### <a name="bkmk_windowsazure"></a> Azure
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
 |WindowsAzure.RetryMobileServiceScriptOperation|**CTRL + Num \*, Ctrl + R**|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|**CTRL + Num \*, Ctrl + D**|
 
-##  <a name="adonet-entity-data-model-designer"></a>Projektant modelu danych jednostki ADO.NET
+## <a name="adonet-entity-data-model-designer"></a>Projektant modelu danych jednostki ADO.NET
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -449,7 +449,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |View.EntityDataModelBrowser|**CTRL + 1**|
 |View.EntityDataModelMappingDetails|**CTRL + 2**|
 
-##  <a name="class-diagram"></a>Diagram klas
+## <a name="class-diagram"></a>Diagram klas
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -461,7 +461,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Edit.RemovefromDiagram|**Delete**|
 |View.ViewCode|**Wprowadź**|
 
-##  <a name="coded-ui-test-editor"></a>Edytor kodowanego testu interfejsu użytkownika
+## <a name="coded-ui-test-editor"></a>Edytor kodowanego testu interfejsu użytkownika
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -472,14 +472,14 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |OtherContextMenus.UITestEditorContextMenu.Movecode|**Ctrl + Alt + C**|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|**Ctrl + Shift + T**|
 
-##  <a name="dataset-editor"></a>Edytor obiektów DataSet
+## <a name="dataset-editor"></a>Edytor obiektów DataSet
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
 |OtherContextMenus.ColumnContext.InsertColumn|**Wstaw**|
 |OtherContextMenus.DbTableContext.Add.Column|**CTRL + L**|
 
-##  <a name="difference-viewer"></a>Podgląd różnic
+## <a name="difference-viewer"></a>Podgląd różnic
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -495,7 +495,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |EditorContextMenus.CodeWindow.AddComment|**Ctrl + Shift + K**|
 |EditorContextMenus.CodeWindow.EditLocalFile|**Ctrl + Shift + P**|
 
-##  <a name="dom-explorer"></a>Eksplorator DOM
+## <a name="dom-explorer"></a>Eksplorator DOM
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -503,13 +503,13 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |DOMExplorer.SelectElement|**CTRL + B**|
 |DOMExplorer.ShowLayout|**Ctrl + Shift + I**|
 
-##  <a name="f-interactive"></a>interakcyjne F#
+## <a name="f-interactive"></a>interakcyjne F#
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|**Ctrl + Break**|
 
-##  <a name="graph-document-editor"></a>Edytor dokumentów wykresu
+## <a name="graph-document-editor"></a>Edytor dokumentów wykresu
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -521,7 +521,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Delete**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
-##  <a name="graphics-diagnostics"></a>Diagnostyka grafiki
+## <a name="graphics-diagnostics"></a>Diagnostyka grafiki
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -535,13 +535,13 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Graphics.ZoomIn|**Shift + Alt +=**|
 |Graphics.ZoomOut|**Shift + Alt +-**|
 
-##  <a name="html-editor"></a>Edytor HTML
+## <a name="html-editor"></a>Edytor HTML
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**CTRL + M, Ctrl + G**|
 
-##  <a name="html-editor-design-view"></a>Widok projektu edytora HTML
+## <a name="html-editor-design-view"></a>Widok projektu edytora HTML
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -564,7 +564,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |View.ViewMarkup|**SHIFT + F7**|
 |Window.PreviousTab|**Ctrl + PgUp**|
 
-##  <a name="html-editor-source-view"></a>Widok źródła edytora HTML
+## <a name="html-editor-source-view"></a>Widok źródła edytora HTML
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -574,13 +574,13 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |View.ViewDesigner|**SHIFT + F7**|
 |Window.PreviousTab|**Ctrl + PgUp**|
 
-##  <a name="layer-diagram"></a>Diagram warstwowy
+## <a name="layer-diagram"></a>Diagram warstwowy
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |Edit.Delete|**Shift + Delete**|
 
-##  <a name="managed-resources-editor"></a>Edytor zasobów zarządzanych
+## <a name="managed-resources-editor"></a>Edytor zasobów zarządzanych
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -595,7 +595,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Resources.Other|**CTRL + 6**|
 |Resources.Strings|**CTRL + 1**|
 
-##  <a name="merge-editor-window"></a>Okno edytora scalania
+## <a name="merge-editor-window"></a>Okno edytora scalania
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -603,7 +603,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|**ALT + 2**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|**ALT + 3**|
 
-##  <a name="microsoft-sql-server-data-tools-schema-compare"></a>Narzędzia danych Microsoft SQL Server, Porównywanie schematów
+## <a name="microsoft-sql-server-data-tools-schema-compare"></a>Narzędzia danych Microsoft SQL Server, Porównywanie schematów
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -614,7 +614,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |SQL.SSDTSchemaCompareStop|**Alt + Break**|
 |SQL.SSDTSchemaCompareWriteUpdates|**Shift + Alt + U**|
 
-##  <a name="microsoft-sql-server-data-tools-table-designer"></a>Narzędzia danych Microsoft SQL Server, Projektant tabel
+## <a name="microsoft-sql-server-data-tools-table-designer"></a>Narzędzia danych Microsoft SQL Server, Projektant tabel
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -625,7 +625,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |SQL.Rename|**F2**<br /><br /> lub<br /><br /> **CTRL + R, R**<br /><br /> lub<br /><br /> **CTRL + R, Ctrl + R**|
 |ViewFileInScriptPanel|**Shift + Alt + PgDn**|
 
-##  <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Narzędzia danych Microsoft SQL Server, Edytor T-SQL
+## <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Narzędzia danych Microsoft SQL Server, Edytor T-SQL
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -646,7 +646,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |TSqlEditorCloneQuery|**Ctrl + Alt + N**|
 |TSqlEditorDatabaseCombo|**Shift + Alt + PgDn**|
 
-##  <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Narzędzia danych Microsoft SQL Server, Edytor T-SQL PDW
+## <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Narzędzia danych Microsoft SQL Server, Edytor T-SQL PDW
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -661,13 +661,13 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |TSqlEditorCloneQuery|**Ctrl + Alt + N**|
 |TSqlEditorDatabaseCombo|**Shift + Alt + PgDn**|
 
-##  <a name="page-inspector"></a>Inspektor strony
+## <a name="page-inspector"></a>Inspektor strony
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |PageInspector.Minimize|**F12**|
 
-##  <a name="query-designer"></a>Projektant zapytań
+## <a name="query-designer"></a>Projektant zapytań
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -680,7 +680,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |QueryDesigner.Results|**CTRL + 4**|
 |QueryDesigner.SQL|**CTRL + 3**|
 
-##  <a name="query-results"></a>Wyniki zapytania
+## <a name="query-results"></a>Wyniki zapytania
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -688,7 +688,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |SQL.QueryResultsRefresh|**Shift + Alt + R**|
 |SQL.QueryResultsStop|**Alt + Break**|
 
-##  <a name="report-designer"></a>Projektant raportów
+## <a name="report-designer"></a>Projektant raportów
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -714,14 +714,14 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Edit.TabLeft|**Shift + Tab**|
 |View.ReportData|**Ctrl + Alt + D**|
 
-##  <a name="sequence-diagram"></a>Diagramów sekwencji
+## <a name="sequence-diagram"></a>Diagramów sekwencji
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
 |ArchitectureDesigner.Sequence.NavigateToCode|**F12**|
 |Edit.Delete|**Shift + Del**|
 
-##  <a name="settings-designer"></a>Projektant ustawień
+## <a name="settings-designer"></a>Projektant ustawień
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -730,13 +730,13 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Edit.SelectionCancel|**ESC**|
 |View.ViewCode|**F7**|
 
-##  <a name="solution-explorer"></a>Eksplorator rozwiązań
+## <a name="solution-explorer"></a>Eksplorator rozwiązań
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|**CTRL + K, Ctrl + G**|
 
-##  <a name="team-explorer"></a>Team Explorer
+## <a name="team-explorer"></a>Team Explorer
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
@@ -761,13 +761,13 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|**Shift + Alt + L**|
 |View.Refresh|**F5**|
 
-##  <a name="test-explorer"></a>Eksplorator testów
+## <a name="test-explorer"></a>Eksplorator testów
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |TestExplorer.OpenTest|**F12**|
 
-##  <a name="text-editor"></a>Edytor tekstu
+## <a name="text-editor"></a>Edytor tekstu
 
 | Polecenia | Skróty klawiaturowe |
 | - | - |
@@ -884,38 +884,38 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion | **ALT + PgDn** |
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion | **ALT + PgUp** |
 
-##  <a name="uml-activity-diagram"></a>Diagram aktywności UML
+## <a name="uml-activity-diagram"></a>Diagram aktywności UML
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |Edit.Delete|**Shift + Del**|
 
-##  <a name="uml-class-diagram"></a>Diagram klas UML
+## <a name="uml-class-diagram"></a>Diagram klas UML
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift + Del**|
 
-##  <a name="uml-component-diagram"></a>Diagram składników UML
+## <a name="uml-component-diagram"></a>Diagram składników UML
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift + Del**|
 
-##  <a name="uml-use-case-diagram"></a>Diagram przypadków użycia UML
+## <a name="uml-use-case-diagram"></a>Diagram przypadków użycia UML
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift + Del**|
 
-##  <a name="vc-accelerator-editor"></a>Edytor klawiszy skrótów VC
+## <a name="vc-accelerator-editor"></a>Edytor klawiszy skrótów VC
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
 |Edit.NewAccelerator|**Wstaw**|
 |Edit.NextKeyTyped|**CTRL + W**|
 
-##  <a name="vc-dialog-editor"></a>Edytor okien dialogowych VC
+## <a name="vc-dialog-editor"></a>Edytor okien dialogowych VC
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -949,7 +949,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Format.TestDialog|**Ctrl+T**|
 |Format.ToggleGuides|**CTRL + G**|
 
-##  <a name="vc-image-editor"></a>Edytor obrazów VC
+## <a name="vc-image-editor"></a>Edytor obrazów VC
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -991,13 +991,13 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Image.ZoomIn|**Ctrl + Shift +.**<br /><br /> lub<br /><br /> **CTRL + Strzałka w górę**|
 |Image.ZoomOut|**Ctrl + Shift +,**<br /><br /> lub<br /><br /> **CTRL + Strzałka w dół**|
 
-##  <a name="vc-string-editor"></a>Edytor ciągów VC
+## <a name="vc-string-editor"></a>Edytor ciągów VC
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |Edit.NewString|**Wstaw**|
 
-##  <a name="view-designer"></a>Pokaż projektanta
+## <a name="view-designer"></a>Pokaż projektanta
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -1010,13 +1010,13 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |QueryDesigner.Results|**CTRL + 4**|
 |QueryDesigner.SQL|**CTRL + 3**|
 
-##  <a name="visual-studio"></a>Visual Studio
+## <a name="visual-studio"></a>Visual Studio
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|**CTRL + 1**|
 
-##  <a name="windows-forms-designer"></a>Projektant Windows Forms
+## <a name="windows-forms-designer"></a>Projektant Windows Forms
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -1045,7 +1045,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Edit.SizeControlUp|**Strzałka Ctrl + Shift + Strzałka w górę**|
 |Edit.TabLeft|**Shift + Tab**|
 
-##  <a name="work-item-editor"></a>Edytor elementu roboczego
+## <a name="work-item-editor"></a>Edytor elementu roboczego
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -1053,7 +1053,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Edit.RefreshWorkItem|**F5**|
 |Team.NewLinkedWorkItem|**Shift + Alt + L**|
 
-##  <a name="work-item-query-view"></a>Widok zapytania o elementy robocze
+## <a name="work-item-query-view"></a>Widok zapytania o elementy robocze
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -1064,7 +1064,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Team.Refresh|**F5**|
 |Window.Toggle|**Shift + Alt + V**|
 
-##  <a name="work-item-results-view"></a>Widok wyników dotyczących elementu pracy
+## <a name="work-item-results-view"></a>Widok wyników dotyczących elementu pracy
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -1077,7 +1077,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Team.Refresh|**F5**|
 |Window.Toggle|**Shift + Alt + V**|
 
-##  <a name="workflow-designer"></a>Projektant przepływu pracy
+## <a name="workflow-designer"></a>Projektant przepływu pracy
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -1105,7 +1105,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |WorkflowDesigner.ZoomIn|**CTRL + Num +**|
 |WorkflowDesigner.ZoomOut|**CTRL + Num-**|
 
-##  <a name="xaml-ui-designer"></a>Projektant języka XAML
+## <a name="xaml-ui-designer"></a>Projektant języka XAML
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -1127,14 +1127,14 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |View.EdgeRightMoveRight|**Ctrl + Shift + Alt +.**|
 |View.ShowPropertyMarkerMenu|**CTRL + SPACJA**|
 
-##  <a name="xml-text-editor"></a>Edytor (tekstu) XML
+## <a name="xml-text-editor"></a>Edytor (tekstu) XML
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
 |XML.StartXSLTDebugging|**ALT + F5**|
 |XML.StartXSLTWithoutDebugging|**Ctrl + Alt + F5**|
 
-##  <a name="xml-schema-designer"></a>Projektant schematu XML
+## <a name="xml-schema-designer"></a>Projektant schematu XML
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |

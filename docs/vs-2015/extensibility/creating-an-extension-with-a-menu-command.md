@@ -13,12 +13,12 @@ ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 644f763c64897eda4896c1431c815519dcc9b65f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e3bbf6b3b1ed2565d5e58806bd0935f713ba5bfd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774256"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076692"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>Tworzenie rozszerzenia za pomocą polecenia menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,28 +30,28 @@ W tym instruktażu przedstawiono sposób tworzenia rozszerzenia za pomocą polec
   
 ## <a name="creating-a-menu-command"></a>Tworzenie polecenia Menu  
   
-1.  Utwórz projekt VSIX, o nazwie **FirstMenuCommand**. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C# / rozszerzalności**.  
+1. Utwórz projekt VSIX, o nazwie **FirstMenuCommand**. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C# / rozszerzalności**.  
   
-2.  Po otwarciu projektu, Dodaj polecenie niestandardowe szablon elementu o nazwie **FirstCommand**. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Add / nowy element**. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C# / rozszerzalności** i wybierz **polecenia niestandardowego**. W **nazwa** u dołu okna, Zmień nazwę pliku polecenia, aby **FirstCommand.cs**.  
+2. Po otwarciu projektu, Dodaj polecenie niestandardowe szablon elementu o nazwie **FirstCommand**. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Add / nowy element**. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C# / rozszerzalności** i wybierz **polecenia niestandardowego**. W **nazwa** u dołu okna, Zmień nazwę pliku polecenia, aby **FirstCommand.cs**.  
   
-3.  Skompiluj projekt, a następnie rozpocząć debugowanie.  
+3. Skompiluj projekt, a następnie rozpocząć debugowanie.  
   
      Pojawi się doświadczalnym wystąpieniu programu Visual Studio. Aby uzyskać więcej informacji na temat wystąpienia eksperymentalnego zobacz [wystąpienie doświadczalne](../extensibility/the-experimental-instance.md).  
   
-4.  W doświadczalnym wystąpieniu Otwórz **narzędzia / rozszerzenia i aktualizacje** okna. Powinien zostać wyświetlony **FirstMenuCommand** rozszerzenia w tym miejscu. (Jeśli otworzysz **rozszerzenia i aktualizacje** wystąpienia pracy programu Visual Studio, nie będziesz widzieć **FirstMenuCommand**).  
+4. W doświadczalnym wystąpieniu Otwórz **narzędzia / rozszerzenia i aktualizacje** okna. Powinien zostać wyświetlony **FirstMenuCommand** rozszerzenia w tym miejscu. (Jeśli otworzysz **rozszerzenia i aktualizacje** wystąpienia pracy programu Visual Studio, nie będziesz widzieć **FirstMenuCommand**).  
   
      Teraz przejdź do **narzędzia** menu w eksperymentalnym wystąpieniu. Powinien zostać wyświetlony **wywołania FirstCommand** polecenia. W tym momencie ją po prostu wywołuje okno komunikatu, informujący, że "FirstCommandPackage wewnątrz FirstMenuCommand.FirstCommand.MenuItemCallback()". Zobaczymy, jak faktycznie Uruchom Notatnik z tego polecenia, w następnej sekcji.  
   
 ## <a name="changing-the-menu-command-handler"></a>Zmiana program obsługi poleceń Menu  
  Teraz zaktualizujmy program obsługi poleceń, aby uruchomić program Notatnik.  
   
-1.  Zatrzymaj debugowanie i wrócić do pracy Twojego wystąpienia programu Visual Studio. Otwórz plik FirstCommand.cs i dodaj następującą instrukcję using:  
+1. Zatrzymaj debugowanie i wrócić do pracy Twojego wystąpienia programu Visual Studio. Otwórz plik FirstCommand.cs i dodaj następującą instrukcję using:  
   
     ```csharp  
     using System.Diagnostics;  
     ```  
   
-2.  Znajdź Konstruktor prywatny FirstCommand. Jest to, gdy polecenie jest podłączany do usługi polecenia, a określono program obsługi poleceń. Zmień nazwę program obsługi poleceń StartNotepad, w następujący sposób:  
+2. Znajdź Konstruktor prywatny FirstCommand. Jest to, gdy polecenie jest podłączany do usługi polecenia, a określono program obsługi poleceń. Zmień nazwę program obsługi poleceń StartNotepad, w następujący sposób:  
   
     ```csharp  
     private FirstCommand(Package package)  
@@ -74,7 +74,7 @@ W tym instruktażu przedstawiono sposób tworzenia rozszerzenia za pomocą polec
     }  
     ```  
   
-3.  Usuń metodę MenuItemCallback i Dodaj metodę StartNotepad, która będzie po prostu uruchom program Notatnik:  
+3. Usuń metodę MenuItemCallback i Dodaj metodę StartNotepad, która będzie po prostu uruchom program Notatnik:  
   
     ```csharp  
     private void StartNotepad(object sender, EventArgs e)  
@@ -85,7 +85,7 @@ W tym instruktażu przedstawiono sposób tworzenia rozszerzenia za pomocą polec
     }  
     ```  
   
-4.  Teraz wypróbuj działanie rozwiązania. Po rozpoczęciu debugowania projektu i kliknięciu **narzędzia / wywołania FirstCommand**, powinny zostać wyświetlone wystąpienia programu Notatnik, pojawiają się.  
+4. Teraz wypróbuj działanie rozwiązania. Po rozpoczęciu debugowania projektu i kliknięciu **narzędzia / wywołania FirstCommand**, powinny zostać wyświetlone wystąpienia programu Notatnik, pojawiają się.  
   
      Można użyć wystąpienia <xref:System.Diagnostics.Process> klasy do uruchamiania dowolnych plików wykonywalnych, nie tylko Notatnik. Wypróbuj za pomocą calc.exe, na przykład.  
   
@@ -94,9 +94,9 @@ W tym instruktażu przedstawiono sposób tworzenia rozszerzenia za pomocą polec
   
  Aby przejść do tego skryptu w jeden z dwóch sposobów:  
   
-1.  Na pulpicie, Znajdź **Zresetuj Visual Studio 2015 wystąpienie eksperymentalne programu**.  
+1. Na pulpicie, Znajdź **Zresetuj Visual Studio 2015 wystąpienie eksperymentalne programu**.  
   
-2.  W wierszu polecenia Uruchom następujące polecenie:  
+2. W wierszu polecenia Uruchom następujące polecenie:  
   
     ```  
     <VSSDK installation>\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp && PAUSE  
@@ -119,11 +119,11 @@ W tym instruktażu przedstawiono sposób tworzenia rozszerzenia za pomocą polec
   
 1. Możesz wykonać wiele innych rzeczy przy użyciu prostego polecenia:  
   
-   1.  Dodaj własną ikonę: [Dodawanie ikon do poleceń menu](../extensibility/adding-icons-to-menu-commands.md)  
+   1. Dodaj własną ikonę: [Dodawanie ikon do poleceń menu](../extensibility/adding-icons-to-menu-commands.md)  
   
-   2.  Zmiana tekstu polecenia menu: [Zmiana tekstu polecenia menu](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2. Zmiana tekstu polecenia menu: [Zmiana tekstu polecenia menu](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-   3.  Dodaj skrót menu do polecenia: [Wiązanie skrótów klawiaturowych z elementami menu](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3. Dodaj skrót menu do polecenia: [Wiązanie skrótów klawiaturowych z elementami menu](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
 2. Dodaj różne rodzaje polecenia, menu i paski narzędzi: [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)  
   

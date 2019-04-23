@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 770c805489e358252151dc8e777941a267f76363
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f23db8a9674de621090be70067a555ef4fca2b99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770581"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061427"
 ---
 # <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Analiza literałów ciągów atrybutów powinna przebiegać poprawnie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,11 +55,11 @@ ms.locfileid: "54770581"
 
  Reguła jest wyzwalana, wykonując następujące czynności:
 
--   Parametry, które zawierają "version" i nie można przeanalizować System.Version.
+- Parametry, które zawierają "version" i nie można przeanalizować System.Version.
 
--   Parametry, które zawierają "guid" i nie można przeanalizować System.Guid.
+- Parametry, które zawierają "guid" i nie można przeanalizować System.Guid.
 
--   Parametry, które zawierają "uri", "urn" lub "url" i nie można przeanalizować na System.Uri.
+- Parametry, które zawierają "uri", "urn" lub "url" i nie można przeanalizować na System.Uri.
 
 ## <a name="see-also"></a>Zobacz też
  [CA1054: Parametry identyfikatora URI nie powinny być ciągami](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

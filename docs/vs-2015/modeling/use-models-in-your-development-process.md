@@ -11,12 +11,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c75b2aa7d4796a97370f414f0b7286c271b4c977
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: d9b93f8cb6422a3c9e2cf589924c2028db3dd6c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842684"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038411"
 ---
 # <a name="use-models-in-your-development-process"></a>Używanie modeli w procesie tworzenia aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,25 +52,25 @@ W programie Visual Studio można użyć modelu, aby pomóc Ci zrozumieć i zmien
   
  Inne aspekty specyfikacji, które zazwyczaj są używane wraz z modeli, m.in. W zależności od skali i styl projektu mogą korzystać z kilku z tych aspektów lub używaj żadnego na wszystkich:  
   
--   Przypadki użycia. Scenariusz użycia jest krótki opis, oraz użytkowników i innych uczestników projektu jakiegoś aspektu zachowania systemu, które zostaną dostarczone w jednej iteracji projektu. Typowy scenariusz użycia, który rozpoczyna się "odbiorcy będą mogli..." Scenariusz użycia może powodować grupy przypadków użycia lub można zdefiniować rozszerzenia przypadki użycia, które zostały wcześniej opracowane. Definiowanie lub rozszerzanie przypadki użycia pomaga zwiększyć przejrzyste historii użytkownika.  
+- Przypadki użycia. Scenariusz użycia jest krótki opis, oraz użytkowników i innych uczestników projektu jakiegoś aspektu zachowania systemu, które zostaną dostarczone w jednej iteracji projektu. Typowy scenariusz użycia, który rozpoczyna się "odbiorcy będą mogli..." Scenariusz użycia może powodować grupy przypadków użycia lub można zdefiniować rozszerzenia przypadki użycia, które zostały wcześniej opracowane. Definiowanie lub rozszerzanie przypadki użycia pomaga zwiększyć przejrzyste historii użytkownika.  
   
--   Żądania zmiany. Żądania zmiany w bardziej formalnych projektów jest bardzo podobny do scenariusza użycia w projekcie agile. Podejście agile co został opracowany w poprzedniej iteracji traktuje wszystkie wymagania zgodnie ze zmianami.  
+- Żądania zmiany. Żądania zmiany w bardziej formalnych projektów jest bardzo podobny do scenariusza użycia w projekcie agile. Podejście agile co został opracowany w poprzedniej iteracji traktuje wszystkie wymagania zgodnie ze zmianami.  
   
--   Użyj przypadków opisu. Przypadek użycia reprezentuje jeden ze sposobów, w którym użytkownik korzysta z systemu w celu osiągnięcia określonego celu. Pełny opis zawiera cel, główne i alternatywnych sekwencji zdarzeń i wyjątkowe wyniki. Diagram przypadków użycia pomaga podsumowywania i omówiono jej przypadki użycia.  
+- Użyj przypadków opisu. Przypadek użycia reprezentuje jeden ze sposobów, w którym użytkownik korzysta z systemu w celu osiągnięcia określonego celu. Pełny opis zawiera cel, główne i alternatywnych sekwencji zdarzeń i wyjątkowe wyniki. Diagram przypadków użycia pomaga podsumowywania i omówiono jej przypadki użycia.  
   
--   Scenariusze. Scenariusz jest dość szczegółowy opis sekwencję zdarzeń, pokazujący, jak systemu, użytkowników i innych systemów współpracują ze sobą podania wartości do zainteresowanych stron. Może upłynąć postaci slide show interfejsu użytkownika lub prototypu interfejsu użytkownika. Można go opisać przypadek użycia jednego lub sekwencji przypadki użycia.  
+- Scenariusze. Scenariusz jest dość szczegółowy opis sekwencję zdarzeń, pokazujący, jak systemu, użytkowników i innych systemów współpracują ze sobą podania wartości do zainteresowanych stron. Może upłynąć postaci slide show interfejsu użytkownika lub prototypu interfejsu użytkownika. Można go opisać przypadek użycia jednego lub sekwencji przypadki użycia.  
   
--   Słownik. Słownik wymagania dotyczące projektu w tym artykule opisano słów, z którymi klienci omówić świata w. Modele wymagania i interfejsu użytkownika należy również użyć niniejsze postanowienia. Diagram klas może pomóc wyjaśnić relacje między większość tych terminów. Tworzenie diagramów i słownik nie tylko zmniejsza nieporozumień między użytkownikami i deweloperów, ale udostępnia również prawie zawsze nieporozumień między zainteresowane strony biznesowe różne.  
+- Słownik. Słownik wymagania dotyczące projektu w tym artykule opisano słów, z którymi klienci omówić świata w. Modele wymagania i interfejsu użytkownika należy również użyć niniejsze postanowienia. Diagram klas może pomóc wyjaśnić relacje między większość tych terminów. Tworzenie diagramów i słownik nie tylko zmniejsza nieporozumień między użytkownikami i deweloperów, ale udostępnia również prawie zawsze nieporozumień między zainteresowane strony biznesowe różne.  
   
--   Reguły biznesowe. Może być wyrażona wiele reguł biznesowych, niezmienna ograniczenia dotyczące skojarzenia i atrybutów w modelu klasy wymagań, jak i ograniczenia na diagramach sekwencji.  
+- Reguły biznesowe. Może być wyrażona wiele reguł biznesowych, niezmienna ograniczenia dotyczące skojarzenia i atrybutów w modelu klasy wymagań, jak i ograniczenia na diagramach sekwencji.  
   
--   Projektowania wysokiego poziomu. W tym artykule opisano główne części i jak one współdziałają ze sobą. Składnik, sekwencji i diagramy interfejsu są główną częścią projektowania wysokiego poziomu.  
+- Projektowania wysokiego poziomu. W tym artykule opisano główne części i jak one współdziałają ze sobą. Składnik, sekwencji i diagramy interfejsu są główną częścią projektowania wysokiego poziomu.  
   
--   Wzorce projektowe. Opis reguły projektowania, które są współużytkowane w różnych częściach systemu.  
+- Wzorce projektowe. Opis reguły projektowania, które są współużytkowane w różnych częściach systemu.  
   
--   Przetestuj specyfikacji. Test skrypty i projekty kodu testu potrafi wykorzystać diagramów aktywności i sekwencji do opisania sekwencji kroków testu. Testy systemu muszą być wyrażone w modelu wymagań, dzięki czemu można łatwo można ich zmienić po zmianie wymagań.  
+- Przetestuj specyfikacji. Test skrypty i projekty kodu testu potrafi wykorzystać diagramów aktywności i sekwencji do opisania sekwencji kroków testu. Testy systemu muszą być wyrażone w modelu wymagań, dzięki czemu można łatwo można ich zmienić po zmianie wymagań.  
   
--   Plan projektu. Plan projektu lub zaległości definiuje dostarczenia każdej funkcji. Można zdefiniować każdej funkcji, co przypadków użycia i reguły biznesowe implementuje, lub rozszerzenie z informacją. Można albo odwołasz się do przypadków użycia i reguły biznesowe bezpośrednio w ramach planu, lub zdefiniować zestaw funkcji w oddzielny dokument i użyj tytuły funkcji w planie.  
+- Plan projektu. Plan projektu lub zaległości definiuje dostarczenia każdej funkcji. Można zdefiniować każdej funkcji, co przypadków użycia i reguły biznesowe implementuje, lub rozszerzenie z informacją. Można albo odwołasz się do przypadków użycia i reguły biznesowe bezpośrednio w ramach planu, lub zdefiniować zestaw funkcji w oddzielny dokument i użyj tytuły funkcji w planie.  
   
 ### <a name="use-models-in-iteration-planning"></a>Używanie modeli w ramach planowania iteracji  
  Mimo że wszystkie projekty różnią się w ich skalowania i organizacji, typowym projekcie jest planowana jako szereg iteracji między dwoma do sześciu tygodni. Jest to ważne, aby zaplanować wystarczająco dużo iteracji, aby umożliwić opinii od początku iteracji, które ma być używany do dostosowania zakresu i plany dotyczące późniejszej iteracji.  
@@ -80,28 +80,28 @@ W programie Visual Studio można użyć modelu, aby pomóc Ci zrozumieć i zmien
 #### <a name="sharpen-focus-as-each-iteration-approaches"></a>Doskonalenie fokus jako metod każdej iteracji  
  Gdy zbliża się iteracja, aby uprościć określenie, co ma zostać dostarczona na końcu iteracji należy używać modeli.  
   
--   Nie modelu wszystko, co szczegółowo w wczesnych iteracjach. W pierwszej iteracji utworzenia diagramu klas głównych elementów w słowniku użytkownika narysować diagram przypadków użycia główne i narysować diagram główne składniki. Nie opisują któregoś z powyższych dokładniej przyjrzeć się ponieważ szczegóły zmieni się w dalszej części projektu. Umożliwia utworzenie listę funkcji lub główne przypadki użycia w warunkach określonych w tym modelu. Funkcje należy przypisać do iteracji, tak aby około równoważenia obciążenia szacowany w całym projekcie. Te przypisania zmieni się w dalszej części projektu.  
+- Nie modelu wszystko, co szczegółowo w wczesnych iteracjach. W pierwszej iteracji utworzenia diagramu klas głównych elementów w słowniku użytkownika narysować diagram przypadków użycia główne i narysować diagram główne składniki. Nie opisują któregoś z powyższych dokładniej przyjrzeć się ponieważ szczegóły zmieni się w dalszej części projektu. Umożliwia utworzenie listę funkcji lub główne przypadki użycia w warunkach określonych w tym modelu. Funkcje należy przypisać do iteracji, tak aby około równoważenia obciążenia szacowany w całym projekcie. Te przypisania zmieni się w dalszej części projektu.  
   
--   Spróbuj wdrożyć uproszczone wersje wszystkich najważniejszych przypadków użycia w wczesnych iteracji. Rozszerzenia te przypadki użycia w późniejszej iteracji. Takie podejście pomaga zmniejszyć ryzyko odnajdywania luka w wymaganiach lub architektury za późno w projekcie, aby podejmować żadnych działań na jego temat.  
+- Spróbuj wdrożyć uproszczone wersje wszystkich najważniejszych przypadków użycia w wczesnych iteracji. Rozszerzenia te przypadki użycia w późniejszej iteracji. Takie podejście pomaga zmniejszyć ryzyko odnajdywania luka w wymaganiach lub architektury za późno w projekcie, aby podejmować żadnych działań na jego temat.  
   
--   Pod koniec każdej iteracji naciśnij i przytrzymaj workshop wymagania, aby zdefiniować szczegółowo, wymaganiami lub historią użytkowników, które będą rozwijane w następnej iteracji. Zaproś użytkowników i zainteresowane strony biznesowe, które można określić priorytety, a także deweloperom i testerom systemu. Zezwala na określenie wymagań dla iteracji 2-tygodniowych trzy godziny.  
+- Pod koniec każdej iteracji naciśnij i przytrzymaj workshop wymagania, aby zdefiniować szczegółowo, wymaganiami lub historią użytkowników, które będą rozwijane w następnej iteracji. Zaproś użytkowników i zainteresowane strony biznesowe, które można określić priorytety, a także deweloperom i testerom systemu. Zezwala na określenie wymagań dla iteracji 2-tygodniowych trzy godziny.  
   
--   Celem warsztatów jest wszystkim użytkownikom zgodę na to, co można zrobić przed zakończeniem następnej iteracji. Użyj modeli jako jedno z narzędzi, aby pomóc w wyjaśnianiu wymagania. Dane wyjściowe warsztatów to lista prac iteracji: oznacza to, że lista rozwoju zadania w programie [!INCLUDE[esprfound](../includes/esprfound-md.md)] i zestawów testów w [!INCLUDE[TCMext](../includes/tcmext-md.md)].  
+- Celem warsztatów jest wszystkim użytkownikom zgodę na to, co można zrobić przed zakończeniem następnej iteracji. Użyj modeli jako jedno z narzędzi, aby pomóc w wyjaśnianiu wymagania. Dane wyjściowe warsztatów to lista prac iteracji: oznacza to, że lista rozwoju zadania w programie [!INCLUDE[esprfound](../includes/esprfound-md.md)] i zestawów testów w [!INCLUDE[TCMext](../includes/tcmext-md.md)].  
   
--   W warsztacie wymagania omówiono w nim projekt pod warunkiem, że należy określić szacunki dla zadania programistyczne. W przeciwnym razie Zachowaj dyskusji zachowania systemu, który użytkownicy będą mogli doświadczyć bezpośrednio. Zachowaj modelu wymagań niezależnie od architektury model.  
+- W warsztacie wymagania omówiono w nim projekt pod warunkiem, że należy określić szacunki dla zadania programistyczne. W przeciwnym razie Zachowaj dyskusji zachowania systemu, który użytkownicy będą mogli doświadczyć bezpośrednio. Zachowaj modelu wymagań niezależnie od architektury model.  
   
--   Nietechnicznym zainteresowane strony mają zwykle informacji o żadnych problemach zrozumienie diagramy UML, za pomocą wskazówki od Ciebie.  
+- Nietechnicznym zainteresowane strony mają zwykle informacji o żadnych problemach zrozumienie diagramy UML, za pomocą wskazówki od Ciebie.  
   
 #### <a name="link-model-to-work-items"></a>Model łączy do elementów roboczych  
  Po warsztaty wymagania opracowania szczegółowe informacje o modelu wymagań, a następnie połącz modelu zadań programistycznych. Można to zrobić, łącząc elementy robocze w [!INCLUDE[esprfound](../includes/esprfound-md.md)] do elementów w modelu. Aby dowiedzieć się, jak to zrobić, zobacz [łączenie elementów modeli i elementów roboczych](../modeling/link-model-elements-and-work-items.md).  
   
  Można połączyć dowolny element do elementów roboczych, ale najbardziej przydatne elementy są następujące:  
   
--   Zastosowań. Możesz połączyć przypadek użycia do zadań tworzenie implementujące go.  
+- Zastosowań. Możesz połączyć przypadek użycia do zadań tworzenie implementujące go.  
   
--   Użyj rozszerzenia wielkości liter. Jeśli tylko jeden z aspektów przypadek użycia będą realizowane w iteracji, można oddzielić je w przypadku użycia podstawowego wraz z jednego lub więcej rozszerzeń. Rozszerzenia są przypadki użycia w przypadku podstawowej relacji "rozszerzenia". Aby uzyskać więcej informacji na temat rozszerzenia przypadków użycia, zobacz [diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md).  
+- Użyj rozszerzenia wielkości liter. Jeśli tylko jeden z aspektów przypadek użycia będą realizowane w iteracji, można oddzielić je w przypadku użycia podstawowego wraz z jednego lub więcej rozszerzeń. Rozszerzenia są przypadki użycia w przypadku podstawowej relacji "rozszerzenia". Aby uzyskać więcej informacji na temat rozszerzenia przypadków użycia, zobacz [diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md).  
   
--   Komentarz opisujący reguł biznesowych lub jakość wymagań usługi. Aby uzyskać więcej informacji, zobacz [modelowanie wymagań użytkowników](../modeling/model-user-requirements.md).  
+- Komentarz opisujący reguł biznesowych lub jakość wymagań usługi. Aby uzyskać więcej informacji, zobacz [modelowanie wymagań użytkowników](../modeling/model-user-requirements.md).  
   
 #### <a name="link-model-to-tests"></a>Model łącze do testów  
  Przewodnik dotyczący projektowania testów akceptacyjnych przy użyciu modelu wymagań. Utwórz testy wątkom prace deweloperskie.  
