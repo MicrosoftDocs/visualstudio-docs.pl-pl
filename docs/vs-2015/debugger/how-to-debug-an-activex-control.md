@@ -25,12 +25,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b822ed97b2f31b6838fcfc9ee2b6ea32760c54d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f8dea98b05f5350f581128f18f38ec5f095505a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761262"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105674"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Instrukcje: Debugowanie kontrolki ActiveX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ UWAGA]
   
 ### <a name="to-specify-a-container-for-the-debug-session"></a>Aby określić kontener dla sesji debugowania  
   
-1.  W Eksploratorze rozwiązań wybierz projekt.  
+1. W Eksploratorze rozwiązań wybierz projekt.  
   
-2.  Z **widoku** menu, wybierz **stron właściwości**.  
+2. Z **widoku** menu, wybierz **stron właściwości**.  
   
-3.  W **strony właściwości projektu** po otwarciu okna dialogowego **właściwości konfiguracji** folder, a następnie wybierz **debugowanie**.  
+3. W **strony właściwości projektu** po otwarciu okna dialogowego **właściwości konfiguracji** folder, a następnie wybierz **debugowanie**.  
   
-4.  W obszarze **debugowanie** kategorii, zlokalizuj **polecenia** właściwości.  
+4. W obszarze **debugowanie** kategorii, zlokalizuj **polecenia** właściwości.  
   
-5.  Określ ścieżkę dla kontenera. Na przykład C:\Program Files\Internet Explorer\IEXPLORE. PLIK EXE.  
+5. Określ ścieżkę dla kontenera. Na przykład C:\Program Files\Internet Explorer\IEXPLORE. PLIK EXE.  
   
-6.  Jeśli używasz aktywnego pulpitu programu Internet Explorer można określić jako kontener, wpisz `/new` w **argumenty wiersza polecenia** pole.  
+6. Jeśli używasz aktywnego pulpitu programu Internet Explorer można określić jako kontener, wpisz `/new` w **argumenty wiersza polecenia** pole.  
   
-7.  Kliknij przycisk **OK**.  
+7. Kliknij przycisk **OK**.  
   
      Jeśli nie zostanie określony kontener w **strony właściwości projektu** okno dialogowe, można określić kontenera po rozpoczęciu debugowania. Po wybraniu polecenia wykonywania, aby rozpocząć debugowanie, [plik wykonywalny debugowania sesji okno dialogowe](../debugger/executable-for-debugging-session-dialog-box.md) pojawia się. Określ nazwę ścieżki kontenera, w oknie dialogowym.  
   

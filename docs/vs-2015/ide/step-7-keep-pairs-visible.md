@@ -9,12 +9,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb65f5b45c34672679f88c7f6ba12f972f0e0388
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4f0c0b7b3e1edb367db6a49987a67e8a6dfdc17c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766316"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112055"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Krok 7. Zachowywanie widoczności par
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Gra działa dobrze, dopóki gracz wybiera tylko pary ikon, które nie są zgodne
   
 ### <a name="to-keep-pairs-visible"></a>Aby zachować widoczność par  
   
-1.  Dodaj następujący kod `if` instrukcję, aby `label_Click()` metody obsługi zdarzeń, pod koniec kodu, tuż nad instrukcją uruchomienia czasomierza. Przyjrzyj się kodowi podczas dodawania go do programu. Zastanów się, jak działa kod.  
+1. Dodaj następujący kod `if` instrukcję, aby `label_Click()` metody obsługi zdarzeń, pod koniec kodu, tuż nad instrukcją uruchomienia czasomierza. Przyjrzyj się kodowi podczas dodawania go do programu. Zastanów się, jak działa kod.  
   
      [!code-csharp[VbExpressTutorial4Step7#9](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step7/cs/form1.cs#9)]
      [!code-vb[VbExpressTutorial4Step7#9](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step7/vb/form1.vb#9)]  
@@ -54,13 +54,13 @@ Gra działa dobrze, dopóki gracz wybiera tylko pary ikon, które nie są zgodne
   
      Pierwsza z tych dwóch instrukcji sprawdza, czy dwie ikony są takie same. Ponieważ dwie wartości są porównywane, program Visual C# używa `==` operatora równości. Druga instrukcja faktycznie zmienia wartość (o nazwie *przypisania*), ustawiając `firstClicked` zmienną odwołania do `null` je zresetować. Dlatego używa `=` operator przypisania zamiast tego. Visual C# stosuje `=` do ustawiania wartości, a `==` do porównania. Visual Basic stosuje `=` zarówno przypisanie zmiennej, jak i porównań.  
   
-2.  Zapisz i uruchom program, a następnie zacznij wybierać ikony na formularzu. Jeśli wybierzesz parę, która nie pasuje, wyzwala się zdarzenie czasomierza Takt i obie ikony znikają. Jeśli wybierzesz pasującą parę nowy `if` wykonuje instrukcję, a instrukcja return spowoduje, że metoda pominie kod uruchamiający czasomierz, tak że ikony pozostaną widoczne, jak pokazano na poniższej ilustracji.  
+2. Zapisz i uruchom program, a następnie zacznij wybierać ikony na formularzu. Jeśli wybierzesz parę, która nie pasuje, wyzwala się zdarzenie czasomierza Takt i obie ikony znikają. Jeśli wybierzesz pasującą parę nowy `if` wykonuje instrukcję, a instrukcja return spowoduje, że metoda pominie kod uruchamiający czasomierz, tak że ikony pozostaną widoczne, jak pokazano na poniższej ilustracji.  
   
      ![Gra tworzona w ramach tego samouczka](../ide/media/express-finishedgame.png "Express_FinishedGame")  
 Gra w dopasowywanie z widocznymi parami ikon  
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   
--   Aby przejść do następnego kroku samouczka, zobacz [krok 8: Dodaj metodę, aby sprawdzić, czy gracz wygrał](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).  
+- Aby przejść do następnego kroku samouczka, zobacz [krok 8: Dodaj metodę, aby sprawdzić, czy gracz wygrał](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).  
   
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 6: Dodaj czasomierz](../ide/step-6-add-a-timer.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 6: Dodaj czasomierz](../ide/step-6-add-a-timer.md).

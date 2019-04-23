@@ -13,21 +13,21 @@ ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ca6993d8d8d56f1ea2ccf8b4b6c41909606e8755
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d0a0b999a1a6e6ed2364060031f68378e7222ec0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765817"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112484"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Wybór i aktualność w środowisku IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Zintegrowanego środowiska programistycznego (IDE) przechowuje informacje o użytkownikach aktualnie wybrane obiekty za pomocą wyboru *kontekstu*. Za pomocą kontekst zaznaczenia pakietów VSPackage mogą brać udział w walucie śledzenia na dwa sposoby:  
   
--   Poprzez propagowanie waluty informacji na temat pakietów VSPackage środowiska IDE.  
+- Poprzez propagowanie waluty informacji na temat pakietów VSPackage środowiska IDE.  
   
--   Monitorując wybory aktualnie aktywnych użytkowników w środowisku IDE.  
+- Monitorując wybory aktualnie aktywnych użytkowników w środowisku IDE.  
   
 ## <a name="selection-context"></a>Kontekst zaznaczenia  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE globalnie śledzi informacje o walucie IDE w obiekcie kontekstu własnego wyboru globalnego. W poniższej tabeli przedstawiono elementów, które tworzą kontekst zaznaczenia.  
@@ -40,9 +40,9 @@ ms.locfileid: "54765817"
   
  Ponadto środowisko obsługuje dwie listy globalne:  
   
--   Lista aktywnych identyfikatory poleceń interfejsu użytkownika  
+- Lista aktywnych identyfikatory poleceń interfejsu użytkownika  
   
--   Lista typów obecnie aktywnym elementem.  
+- Lista typów obecnie aktywnym elementem.  
   
 ### <a name="window-types-and-selection"></a>Typy okien i wybór  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE organizuje systemu windows na dwa ogólne typy:  
@@ -60,9 +60,9 @@ ms.locfileid: "54765817"
 ### <a name="events-and-currency"></a>Zdarzenia i waluty  
  Mogą wystąpić dwa typy zdarzeń, które mają wpływ na środowisko pojęcie waluty:  
   
--   Zdarzenia, które są przenoszone na poziomie globalnym i Zmień kontekst zaznaczenia ramki okna. Przykłady tego typu zdarzeń okno podrzędne MDI, są otwarte okna narzędzi globalnego otwierana lub okna narzędzi typu projektu otwieranego.  
+- Zdarzenia, które są przenoszone na poziomie globalnym i Zmień kontekst zaznaczenia ramki okna. Przykłady tego typu zdarzeń okno podrzędne MDI, są otwarte okna narzędzi globalnego otwierana lub okna narzędzi typu projektu otwieranego.  
   
--   Zdarzenia, które zmieniają elementy śledzone w kontekście wybór ramki okna. Przykłady obejmują zmianę w obiekt DocObject lub zmianę w oknie typu projektu.  
+- Zdarzenia, które zmieniają elementy śledzone w kontekście wybór ramki okna. Przykłady obejmują zmianę w obiekt DocObject lub zmianę w oknie typu projektu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wybór obiektów kontekstu](../../extensibility/internals/selection-context-objects.md)   

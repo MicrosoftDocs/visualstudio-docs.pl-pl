@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f57dedfecd8db92f93183fa0430de712431f83a0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f47ddbadc5decaa292d34cd2becbff69e69b51a9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787611"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105461"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Instrukcje: Filtrowanie widoków raportu pod kątem narzędzi profilowania w celu wyświetlenia kodu w ramach opcji Tylko mój kod
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,19 +23,19 @@ Visual Studio 2010 Premium zapewnia filtrowanie raportów wydajności, tak że w
   
 ### <a name="to-enable-just-my-code"></a>Aby włączyć opcję tylko mój kod  
   
-1.  Na **narzędzia** menu, kliknij przycisk **opcje**.  
+1. Na **narzędzia** menu, kliknij przycisk **opcje**.  
   
-2.  W **opcje** okna dialogowego rozwiń **narzędzia do oceny wydajności** , a następnie wybierz **ogólne** węzła.  
+2. W **opcje** okna dialogowego rozwiń **narzędzia do oceny wydajności** , a następnie wybierz **ogólne** węzła.  
   
-3.  W obszarze **ustawienia ogólne**, wybierz opcję **Włącz tylko mój kod** pole wyboru.  
+3. W obszarze **ustawienia ogólne**, wybierz opcję **Włącz tylko mój kod** pole wyboru.  
   
 ### <a name="to-disable-just-my-code"></a>Aby wyłączyć opcję tylko mój kod  
   
-1.  Na **narzędzia** menu, kliknij przycisk **opcje**.  
+1. Na **narzędzia** menu, kliknij przycisk **opcje**.  
   
-2.  W **opcje** okna dialogowego rozwiń **narzędzia do oceny wydajności** , a następnie wybierz **ogólne** węzła.  
+2. W **opcje** okna dialogowego rozwiń **narzędzia do oceny wydajności** , a następnie wybierz **ogólne** węzła.  
   
-3.  W obszarze **ustawienia ogólne**, wyczyść **Włącz tylko mój kod** pole wyboru.  
+3. W obszarze **ustawienia ogólne**, wyczyść **Włącz tylko mój kod** pole wyboru.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowywanie widoków raportów narzędzi do oceny wydajności](../profiling/customizing-performance-tools-report-views.md)

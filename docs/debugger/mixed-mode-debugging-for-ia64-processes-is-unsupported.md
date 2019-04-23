@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 961ee6e14ea7b9f6292f14b9356e5d1ab233c8a4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f0130ba9e893d5a4036df9ee1bc2ab22c8e18008
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713987"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111990"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Debugowanie w trybie mieszanym dla procesów IA64 nie jest obsługiwane.
 Program Visual Studio nie obsługuje debugowanie kodu zarządzanego i natywnego w procesów IA64 w trybie mieszanym. Oznacza to, że nie możesz wejść z kodu zarządzanego do kodu macierzystego lub kodu natywnego do zarządzanego kodu podczas debugowania.
 
 ### <a name="workarounds"></a>Rozwiązania
 
--   Debugowanie kodu zarządzanego i natywnego w oddzielnych sesji debugowania.
+- Debugowanie kodu zarządzanego i natywnego w oddzielnych sesji debugowania.
 
      —lub—
 
@@ -35,19 +35,19 @@ Program Visual Studio nie obsługuje debugowanie kodu zarządzanego i natywnego 
 
 ### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>Aby zmienić platformy 32-bitowe (Visual Basic lub C#)
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy nad projektem, a następnie kliknij przycisk **właściwości** w menu skrótów.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy nad projektem, a następnie kliknij przycisk **właściwości** w menu skrótów.
 
-2.  Na stronach właściwości kliknij przycisk **skompilować** lub **debugowania** kartę.
+2. Na stronach właściwości kliknij przycisk **skompilować** lub **debugowania** kartę.
 
-3.  Kliknij przycisk **platformy** i wybierać x86 listę platform.
+3. Kliknij przycisk **platformy** i wybierać x86 listę platform.
 
      Domyślnie domyślne Kompilatory języka Visual Basic i C# generuje kod wymagany do uruchomienia na dowolny procesor CPU. Na komputerze 64-bitowych te pliki binarne Uruchom jako procesów 64-bitowych. Aby uruchomić proces 32-bitowy, należy wybrać **Win32**, a nie **AnyCPU**.
 
 ### <a name="to-change-the-platform-to-32-bit-cc"></a>Aby zmienić platformy 32-bitowych (C/C++)
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy nad projektem, a następnie kliknij przycisk **właściwości** w menu skrótów.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy nad projektem, a następnie kliknij przycisk **właściwości** w menu skrótów.
 
-2.  Na stronach właściwości kliknij przycisk **platformy** i wybierz listę platform, systemu Win32
+2. Na stronach właściwości kliknij przycisk **platformy** i wybierz listę platform, systemu Win32
 
 ## <a name="see-also"></a>Zobacz też
 - [Debugowanie aplikacji 64-bitowych](../debugger/debug-64-bit-applications.md)

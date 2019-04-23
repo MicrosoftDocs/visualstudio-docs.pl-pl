@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4308fb0aa39120704c5537188407a9686e9b13a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 078230c2b80d364b68fb127f18fc21a0b931cbce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762147"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106673"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Dodawanie kodu do zestawów danych w aplikacjach n-warstwowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Domyślnie po rozdzielenie zestawu danych i `TableAdapter` kod, wynik jest plik 
 
 ## <a name="add-code-to-datasets-in-n-tier-applications"></a>Dodawanie kodu do zestawów danych w aplikacjach n-warstwowych
 
-1.  Znajdź projekt, który zawiera plik XSD (zestaw danych).
+1. Znajdź projekt, który zawiera plik XSD (zestaw danych).
 
-2.  Wybierz **XSD** plik, aby otworzyć zestaw danych.
+2. Wybierz **XSD** plik, aby otworzyć zestaw danych.
 
-3.  Kliknij prawym przyciskiem myszy tabelę danych, do której chcesz dodać kod (nazwa tabeli na pasku tytułu), a następnie wybierz **Wyświetl kod**.
+3. Kliknij prawym przyciskiem myszy tabelę danych, do której chcesz dodać kod (nazwa tabeli na pasku tytułu), a następnie wybierz **Wyświetl kod**.
 
      Klasy częściowe, zostanie utworzona i zostanie otwarty w edytorze kodu.
 
-4.  Dodaj kod wewnątrz deklaracji klasy częściowej.
+4. Dodaj kod wewnątrz deklaracji klasy częściowej.
 
      Poniższy kod przedstawia gdzie dodać kod do CustomersDataTable w NorthwindDataSet:
 

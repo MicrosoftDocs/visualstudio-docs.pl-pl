@@ -11,30 +11,30 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dfa174ca228adcd404edb3e91733731f975ed732
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1dc596909862c2ebb490fa478e1f5f71f88dd7ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767969"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106647"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Dostosowywanie i rozszerzanie języka specyficznego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Program Visual Studio do modelowania i zestaw SDK wizualizacji (VMSDK) zawiera kilka poziomów, w których można zdefiniować narzędzi do modelowania:  
   
-1.  Definiowanie języka właściwego dla domeny (DSL), za pomocą diagramem definicji DSL. Możesz szybko utworzyć DSL za pomocą notacji diagramowy, czytelny formularza XML i podstawowe narzędzia, które są wymagane do generowania kodu i innych artefaktów.  
+1. Definiowanie języka właściwego dla domeny (DSL), za pomocą diagramem definicji DSL. Możesz szybko utworzyć DSL za pomocą notacji diagramowy, czytelny formularza XML i podstawowe narzędzia, które są wymagane do generowania kodu i innych artefaktów.  
   
      Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md).  
   
-2.  Dostosuj język DSL za pomocą bardziej zaawansowanych funkcji w definicji DSL. Na przykład można wprowadzić dodatkowe linki, które są wyświetlane, gdy użytkownik tworzy element. Te techniki najczęściej są wykonywane w definicji DSL, a niektóre wymagają kilku wierszy kodu programu.  
+2. Dostosuj język DSL za pomocą bardziej zaawansowanych funkcji w definicji DSL. Na przykład można wprowadzić dodatkowe linki, które są wyświetlane, gdy użytkownik tworzy element. Te techniki najczęściej są wykonywane w definicji DSL, a niektóre wymagają kilku wierszy kodu programu.  
   
-3.  Rozszerzanie narzędzi do modelowania przy użyciu kodu programu. VMSDK jest zaprojektowany specjalnie w celu ułatwiają integrowanie rozszerzeń z kodem, który jest generowany na podstawie definicji DSL.  Aby uzyskać więcej informacji, zobacz [pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
+3. Rozszerzanie narzędzi do modelowania przy użyciu kodu programu. VMSDK jest zaprojektowany specjalnie w celu ułatwiają integrowanie rozszerzeń z kodem, który jest generowany na podstawie definicji DSL.  Aby uzyskać więcej informacji, zobacz [pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 > [!NOTE]
 >  Po zaktualizowaniu pliku definicji DSL, nie zapomnij kliknąć **Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań, przed ponowną kompilację rozwiązania.  
   
-##  <a name="customShapes"></a> W tej sekcji  
+## <a name="customShapes"></a> W tej sekcji  
   
 |Aby uzyskać ten efekt|Można znaleźć w tym temacie|  
 |----------------------------|-------------------------|  
@@ -65,7 +65,7 @@ Program Visual Studio do modelowania i zestaw SDK wizualizacji (VMSDK) zawiera k
 |Utwórz grupę elementów za pomocą jednego narzędzia. Na przykład składnik ustalony zestawu portów.|Zastąp metodę inicjowania przybornika w ToolboxHelper.cs. Utwórz Element grupy prototyp (EGP) zawierający elementy i ich łącza relacji. Zobacz [Dostosowywanie narzędzi i przybornika](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Objęte kształty głównej i port EGP albo zdefiniuj boundsrules — do pozycji kształtów portu podczas tworzenia wystąpienia EGP. Zobacz [boundsrules — ograniczenie lokalizacji i rozmiaru kształtu](../modeling/boundsrules-constrain-shape-location-and-size.md).|  
 |Używanie narzędzia połączenia z jednego do utworzenia wystąpienia kilka typów relacji.|Dodaj łącze połączyć dyrektywy LCD do konstruktora połączeń, które jest wywoływane przez narzędzie. LCD określenia typu relacji z typów dwóch elementów. Aby to zależą od stany elementów, można dodać kod niestandardowy. Zobacz [Dostosowywanie narzędzi i przybornika](../modeling/customizing-tools-and-the-toolbox.md).|  
 |Umocowany narzędzia — użytkownik może kliknąć dwukrotnie dowolne narzędzie do tworzenia wielu kształtów i łączników pod rząd.|Eksplorator modelu DSL wybierz `Editor` węzła. W oknie właściwości ustaw **używa elementów przybornika umocowany**.|  
-|Definiowanie polecenia menu|Zobacz [jak: Modyfikowanie standardowego polecenia Menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|  
+|Definiowanie polecenia menu|Zobacz [jak: Modyfikowanie standardowego polecenia menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|  
 |Ograniczenie modelu przy użyciu reguł sprawdzania poprawności|Zobacz [weryfikacji języka specyficznego dla domeny](../modeling/validation-in-a-domain-specific-language.md)|  
 |Generowanie kodu, plików konfiguracji lub dokumentów z języka DSL.|[Generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |Dostosowywanie sposobu zapisywania modeli do pliku.|Zobacz [Dostosowywanie przechowywania plików i serializacji XML](../modeling/customizing-file-storage-and-xml-serialization.md)|  

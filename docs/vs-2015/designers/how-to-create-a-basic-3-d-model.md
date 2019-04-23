@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7c904e74793710dedc96d4a769d4f6c61a15e69
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 834651f525ccb292f82d5cf0ab5a7068a1cf7f20
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760774"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108311"
 ---
 # <a name="how-to-create-a-basic-3-d-model"></a>Instrukcje: Tworzenie podstawowego modelu 3-D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ W tym dokumencie przedstawiono sposób używania edytora modelu do tworzenia pod
   
  Ten dokument przedstawia te działania:  
   
--   Dodawanie obiektów do sceny  
+- Dodawanie obiektów do sceny  
   
--   Wybieranie powierzchni i krawędzi  
+- Wybieranie powierzchni i krawędzi  
   
--   Opcje przekształcania  
+- Opcje przekształcania  
   
--   Za pomocą **Podziel pierwszy plan** i **wyciągnij** narzędzia  
+- Za pomocą **Podziel pierwszy plan** i **wyciągnij** narzędzia  
   
--   Za pomocą **triangulacja** polecenia  
+- Za pomocą **triangulacja** polecenia  
   
 ## <a name="creating-a-basic-3-d-model"></a>Tworzenie podstawowego modelu 3-D  
  Edytor modelu do tworzenia i modyfikowania modeli 3D i sceny gry lub aplikacji. Poniższe kroki pokazują jak utworzyć uproszczony model 3-w domu za pomocą edytora modelu. Uproszczony model może służyć jako elementu zastępczego dla końcowego artystycznych, które są nadal tworzone, jako siatkę wykrywanie kolizji lub niska Szczegóły modelu ma być używany, gdy obiekt, który reprezentuje jest zbyt daleko do korzystania z renderowania bardziej szczegółowe.  

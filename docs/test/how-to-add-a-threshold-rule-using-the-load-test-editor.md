@@ -11,12 +11,12 @@ ms.assetid: 3d8fac8f-426f-4155-9ced-f7cd4c79792c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: efd430ce9f8bef3ab04e3a7cec91ce3f606cc786
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2a5865eba5ec6971a35104af3ccd090ee6b06410
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930314"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112718"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Instrukcje: Dodawanie reguły progu za pomocą edytora testu obciążenia
 
@@ -26,17 +26,17 @@ Reguły progów w testach obciążenia porównanie wartości licznika wydajnośc
 
 ## <a name="to-add-a-threshold-rule"></a>Aby dodać reguły progu
 
-1.  Otwórz test obciążenia.
+1. Otwórz test obciążenia.
 
-2.  W edytorze testu obciążenia, rozwiń węzeł **zbiorów liczników** węzła.
+2. W edytorze testu obciążenia, rozwiń węzeł **zbiorów liczników** węzła.
 
-3.  Rozwiń jedno ze **kategorie liczników** w jednym ze zbiorów liczników. Na przykład, możesz wybrać **loadtest: Scenario**. Rozwiń węzeł.
+3. Rozwiń jedno ze **kategorie liczników** w jednym ze zbiorów liczników. Na przykład, możesz wybrać **loadtest: Scenario**. Rozwiń węzeł.
 
-4.  Kliknij prawym przyciskiem myszy jeden z liczników, na przykład **obciążenie użytkownikami**w obszarze **loadtest: Scenario**. Wybierz **Dodaj regułę progową**.
+4. Kliknij prawym przyciskiem myszy jeden z liczników, na przykład **obciążenie użytkownikami**w obszarze **loadtest: Scenario**. Wybierz **Dodaj regułę progową**.
 
      **Dodaj regułę progową** zostanie wyświetlone okno dialogowe.
 
-5.  Możesz wybrać spośród dwóch typów zasad: **Porównanie ze stałą** i **porównanie liczników**. Wybierz odpowiedni typ i ustaw wartości.
+5. Możesz wybrać spośród dwóch typów zasad: **Porównanie ze stałą** i **porównanie liczników**. Wybierz odpowiedni typ i ustaw wartości.
 
     > [!NOTE]
     > Ustaw **alertu, gdy nastąpi przekroczenie** właściwości **True** do wskazania przekroczenia progu to problemu, lub **False** do wskazywania objętych poniżej wartości progowej problem.

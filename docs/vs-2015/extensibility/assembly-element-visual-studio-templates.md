@@ -13,12 +13,12 @@ ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1e3dfc502157b2d0016f1a0fd9a12dc3905f623c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 10c894f3507ae760624b6ae18f785aae6016cd5e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796141"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112367"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly — Element (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Określa informacje o zestawie używany w tym szablonie, aby dodać odwołanie d
   
  Ten tekst Określa zestaw do dodania do projektu przy tworzeniu wystąpienia szablonu elementu. Ta nazwa zestawu musi być określona w jednym z następujących sposobów:  
   
--   Jako nazwę pełnego zestawu. Na przykład:  
+- Jako nazwę pełnego zestawu. Na przykład:  
   
     ```  
     <Assembly>  
@@ -65,7 +65,7 @@ Określa informacje o zestawie używany w tym szablonie, aby dodać odwołanie d
     </Assembly>  
     ```  
   
--   Jako odwołanie do zwykłego tekstu. Na przykład:  
+- Jako odwołanie do zwykłego tekstu. Na przykład:  
   
     ```  
     <Assembly> System </Assembly>  

@@ -8,12 +8,12 @@ ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: dc913e3a456e46e1f9e19102dadddb1092358e0b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 510d0c2144b2640f720bea004cdc44026f749310
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799131"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111158"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Przewodnik: Zapisywanie ustawień użytkownika na stronie początkowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,35 +37,35 @@ Za utrwalanie ustawień użytkownika uzyskać swoją stronę początkową. Dzię
   
 #### <a name="to-configure-the-project-for-this-walkthrough"></a>Aby skonfigurować projekt w ramach tego przewodnika  
   
-1.  Utwórz projekt strony początkowej za pomocą szablonu projektu strony początkowej, zgodnie z opisem w [tworzenia Twojej własnej strony początkowej](../misc/creating-your-own-start-page.md). Nadaj projektowi nazwę **SaveMySettings**.  
+1. Utwórz projekt strony początkowej za pomocą szablonu projektu strony początkowej, zgodnie z opisem w [tworzenia Twojej własnej strony początkowej](../misc/creating-your-own-start-page.md). Nadaj projektowi nazwę **SaveMySettings**.  
   
-2.  W **Eksploratora rozwiązań**, Dodaj następujące odwołania do zestawów do projektu StartPageControl:  
+2. W **Eksploratora rozwiązań**, Dodaj następujące odwołania do zestawów do projektu StartPageControl:  
   
-    -   EnvDTE  
+    - EnvDTE  
   
-    -   EnvDTE80  
+    - EnvDTE80  
   
-    -   Microsoft.VisualStudio.OLE.Interop  
+    - Microsoft.VisualStudio.OLE.Interop  
   
-    -   Microsoft.VisualStudio.Shell.Interop.11.0  
+    - Microsoft.VisualStudio.Shell.Interop.11.0  
   
-3.  Otwórz MyControl.xaml.  
+3. Otwórz MyControl.xaml.  
   
-4.  Z poziomu okienka XAML w najwyższego poziomu <xref:System.Windows.Controls.UserControl> definicja elementu, dodaj następującą deklarację zdarzeń po deklaracjach przestrzeni nazw.  
+4. Z poziomu okienka XAML w najwyższego poziomu <xref:System.Windows.Controls.UserControl> definicja elementu, dodaj następującą deklarację zdarzeń po deklaracjach przestrzeni nazw.  
   
     ```  
     Loaded="OnLoaded"  
     ```  
   
-5.  W okienku projektowania kliknij główny obszar formantu, a następnie naciśnij klawisz DELETE.  
+5. W okienku projektowania kliknij główny obszar formantu, a następnie naciśnij klawisz DELETE.  
   
      Spowoduje to usunięcie <xref:System.Windows.Controls.Border> elementu, a wszystkie elementy, a tylko najwyższego poziomu pozostawia <xref:System.Windows.Controls.Grid> elementu.  
   
-6.  Z **przybornika**, przeciągnij <xref:System.Windows.Controls.StackPanel> formant do siatki.  
+6. Z **przybornika**, przeciągnij <xref:System.Windows.Controls.StackPanel> formant do siatki.  
   
-7.  Teraz przeciągnij <xref:System.Windows.Controls.TextBlock>, <xref:System.Windows.Controls.TextBox>oraz przycisk umożliwiający wymianę <xref:System.Windows.Controls.StackPanel>.  
+7. Teraz przeciągnij <xref:System.Windows.Controls.TextBlock>, <xref:System.Windows.Controls.TextBox>oraz przycisk umożliwiający wymianę <xref:System.Windows.Controls.StackPanel>.  
   
-8.  Dodaj **x: Name** atrybutu dla <xref:System.Windows.Controls.TextBox>, a `Click` zdarzenia <xref:System.Windows.Controls.Button>, jak pokazano w poniższym przykładzie.  
+8. Dodaj **x: Name** atrybutu dla <xref:System.Windows.Controls.TextBox>, a `Click` zdarzenia <xref:System.Windows.Controls.Button>, jak pokazano w poniższym przykładzie.  
   
     ```xml  
     <StackPanel Width="300" HorizontalAlignment="Center" VerticalAlignment="Center">  
@@ -79,15 +79,15 @@ Za utrwalanie ustawień użytkownika uzyskać swoją stronę początkową. Dzię
   
 #### <a name="to-implement-the-user-control"></a>Aby zaimplementować formant użytkownika  
   
-1.  W okienku XAML, kliknij prawym przyciskiem myszy `Click` atrybutu <xref:System.Windows.Controls.Button> elementu, a następnie kliknij przycisk **przejdź do procedury obsługi zdarzeń**.  
+1. W okienku XAML, kliknij prawym przyciskiem myszy `Click` atrybutu <xref:System.Windows.Controls.Button> elementu, a następnie kliknij przycisk **przejdź do procedury obsługi zdarzeń**.  
   
      To spowoduje otwarcie MyControl.xaml.cs i tworzy obsługi wycinka `Button_Click` zdarzeń.  
   
-2.  Dodaj następujący kod `using` instrukcji na górze pliku.  
+2. Dodaj następujący kod `using` instrukcji na górze pliku.  
   
      [!code-csharp[StartPageDTE#11](../snippets/csharp/VS_Snippets_VSSDK/startpagedte/cs/startpagecontrol/mycontrol.xaml.cs#11)]  
   
-3.  Dodaj prywatnej `SettingsStore` właściwości, jak pokazano w poniższym przykładzie.  
+3. Dodaj prywatnej `SettingsStore` właściwości, jak pokazano w poniższym przykładzie.  
   
     ```csharp  
     private IVsWritableSettingsStore _settingsStore = null;  
@@ -121,7 +121,7 @@ Za utrwalanie ustawień użytkownika uzyskać swoją stronę początkową. Dzię
   
      Ta właściwość najpierw pobiera odwołanie do <xref:EnvDTE80.DTE2> interfejs, który zawiera model obiektowy automatyzacji z <xref:System.Windows.FrameworkElement.DataContext%2A> kontrolki użytkownika, a następnie używa DTE wystąpienia <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> interfejsu. Następnie używa tego wystąpienia, aby przywrócić bieżące ustawienia użytkownika.  
   
-4.  Wypełnij `Button_Click` zdarzeń w następujący sposób.  
+4. Wypełnij `Button_Click` zdarzeń w następujący sposób.  
   
     ```csharp  
     private void Button_Click(object sender, RoutedEventArgs e)  
@@ -138,7 +138,7 @@ Za utrwalanie ustawień użytkownika uzyskać swoją stronę początkową. Dzię
   
      To zapisuje zawartość pola tekstowego do pola "MySetting" w kolekcji "MySettings" w rejestrze. Jeśli kolekcja nie istnieje, zostanie utworzony.  
   
-5.  Dodaj następujący program obsługi dla `OnLoaded` zdarzeń kontrolki użytkownika.  
+5. Dodaj następujący program obsługi dla `OnLoaded` zdarzeń kontrolki użytkownika.  
   
     ```csharp  
     private void OnLoaded(Object sender, RoutedEventArgs e)  
@@ -152,11 +152,11 @@ Za utrwalanie ustawień użytkownika uzyskać swoją stronę początkową. Dzię
   
      Bieżąca wartość "MySetting" to ustawia tekst pola tekstowego.  
   
-6.  Tworzenie kontrolki użytkownika.  
+6. Tworzenie kontrolki użytkownika.  
   
-7.  W **Eksploratora rozwiązań**, otwórz source.extension.vsixmanifest.  
+7. W **Eksploratora rozwiązań**, otwórz source.extension.vsixmanifest.  
   
-8.  W edytorze manifestu zestawu **nazwa produktu** do **Zapisz moje ustawienia strony początkowej**.  
+8. W edytorze manifestu zestawu **nazwa produktu** do **Zapisz moje ustawienia strony początkowej**.  
   
      Ustawia nazwę strony początkowej, ponieważ jest wyświetlane w **Dostosuj stronę początkową** listy w **opcje** okno dialogowe.  
   
@@ -166,27 +166,27 @@ Za utrwalanie ustawień użytkownika uzyskać swoją stronę początkową. Dzię
   
 #### <a name="to-test-the-user-control"></a>Aby przetestować formant użytkownika  
   
-1.  Naciśnij F5.  
+1. Naciśnij F5.  
   
      Otwiera doświadczalne wystąpienie programu Visual Studio.  
   
-2.  W doświadczalnym wystąpieniu na **narzędzia** menu, kliknij przycisk **opcje**.  
+2. W doświadczalnym wystąpieniu na **narzędzia** menu, kliknij przycisk **opcje**.  
   
-3.  W **środowiska** węzła, kliknij przycisk **uruchamiania**, a następnie w **Dostosuj stronę początkową** listy wybierz **[zainstalowane rozszerzenie] Zapisz moje ustawienia stronę początkową** .  
+3. W **środowiska** węzła, kliknij przycisk **uruchamiania**, a następnie w **Dostosuj stronę początkową** listy wybierz **[zainstalowane rozszerzenie] Zapisz moje ustawienia stronę początkową** .  
   
      Kliknij przycisk **OK**.  
   
-4.  Zamknij stronę początkową, jeśli jest otwarty, a następnie na **widoku** menu, kliknij przycisk **strona startowa**.  
+4. Zamknij stronę początkową, jeśli jest otwarty, a następnie na **widoku** menu, kliknij przycisk **strona startowa**.  
   
-5.  Na stronie początkowej kliknij **MójFormant** kartę.  
+5. Na stronie początkowej kliknij **MójFormant** kartę.  
   
-6.  W polu tekstowym wpisz **Cat**, a następnie kliknij przycisk **Zapisz moje ustawienia**.  
+6. W polu tekstowym wpisz **Cat**, a następnie kliknij przycisk **Zapisz moje ustawienia**.  
   
-7.  Zamknij stronę początkową, a następnie otwórz go ponownie.  
+7. Zamknij stronę początkową, a następnie otwórz go ponownie.  
   
      Słowo "Cat" powinna być wyświetlana w polu tekstowym.  
   
-8.  Zastąp słowo "Cat" słowa "Dog". Nie klikaj przycisku.  
+8. Zastąp słowo "Cat" słowa "Dog". Nie klikaj przycisku.  
   
 9. Zamknij stronę początkową, a następnie otwórz go ponownie.  
   

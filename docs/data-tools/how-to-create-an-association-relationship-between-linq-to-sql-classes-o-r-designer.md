@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 21043571f60c13ed7be38f0af8f4208fc54b75a0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d7bf1be05ebabcaac319cce591cf82cd2ab5f5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907792"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112289"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Instrukcje: Tworzenie skojarzenia między LINQ to SQL klas (Projektant O/R)
 Skojarzenia między klasami jednostki w [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] są analogiczne do relacji między tabelami w bazie danych. Można utworzyć skojarzenia między klasami jednostki przy użyciu **Edytor skojarzeń** okno dialogowe.
@@ -36,15 +36,15 @@ Po utworzeniu skojarzenia, po wybraniu skojarzenia w **O/R Designer**, istnieje 
 
 ## <a name="to-create-an-association-between-entity-classes"></a>Aby utworzyć skojarzenie między klasami jednostki
 
-1.  Kliknij prawym przyciskiem myszy klasę jednostki, która reprezentuje klasa nadrzędna do skojarzenia, wskaż opcję **Dodaj**, a następnie kliknij przycisk **skojarzenie**.
+1. Kliknij prawym przyciskiem myszy klasę jednostki, która reprezentuje klasa nadrzędna do skojarzenia, wskaż opcję **Dodaj**, a następnie kliknij przycisk **skojarzenie**.
 
-2.  Sprawdź, czy poprawny **klasy nadrzędnej** wybrano **Edytor skojarzeń** okno dialogowe.
+2. Sprawdź, czy poprawny **klasy nadrzędnej** wybrano **Edytor skojarzeń** okno dialogowe.
 
-3.  Wybierz **klasy podrzędnej** w polu kombi.
+3. Wybierz **klasy podrzędnej** w polu kombi.
 
-4.  Wybierz **właściwości skojarzenia** powiązanych klas. Zwykle to mapuje relacji klucza obcego w bazie danych. Na przykład w `Customers` i `Orders` skojarzenia, **właściwości skojarzenia** są `CustomerID` dla każdej klasy.
+4. Wybierz **właściwości skojarzenia** powiązanych klas. Zwykle to mapuje relacji klucza obcego w bazie danych. Na przykład w `Customers` i `Orders` skojarzenia, **właściwości skojarzenia** są `CustomerID` dla każdej klasy.
 
-5.  Kliknij przycisk **OK** utworzyć skojarzenie.
+5. Kliknij przycisk **OK** utworzyć skojarzenie.
 
 ## <a name="see-also"></a>Zobacz także
 

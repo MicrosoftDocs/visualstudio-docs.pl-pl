@@ -16,12 +16,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a7c2320f7943798a336e52ba2043f430cdb9231
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 98670f99779804cec87bc4afc03ab7d126024378
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661350"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105620"
 ---
 # <a name="toolbox"></a>Przybornik
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ ms.locfileid: "59661350"
 ## <a name="help-on-toolbox-tabs"></a>Pomoc na temat kart przybornika  
  Poniższe dokumenty zawierają dodatkowe informacje o określonych **przybornika** karty.  
   
--   [Przybornik, karta Dane](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
+- [Przybornik, karta Dane](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
   
--   [Przybornik, karta Składniki](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
+- [Przybornik, karta Składniki](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
   
--   [Przybornik, karta HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
+- [Przybornik, karta HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
   
--   [Przybornik, karta Dane](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
+- [Przybornik, karta Dane](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
   
--   [Przybornik, karta Składniki](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
+- [Przybornik, karta Składniki](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
   
--   [Przybornik, karta HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
+- [Przybornik, karta HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
   
 ## <a name="see-also"></a>Zobacz też  
  [Korzystanie z przybornika](../../ide/using-the-toolbox.md)

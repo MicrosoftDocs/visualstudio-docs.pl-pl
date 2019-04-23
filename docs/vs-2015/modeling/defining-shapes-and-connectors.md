@@ -9,19 +9,19 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 02b470926001c08695bc6c18712cbd0db41503cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 761e0e77a0fe9f6f32f08045d81f6eab815801dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775998"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112328"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definiowanie kształtów i łączników
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Istnieje kilka typów podstawowych kształtów, które mogą być używane do wyświetlania informacji na diagramie w języku specyficznym dla domeny (DSL).  
   
-##  <a name="shapeTypes"></a> Podstawowe typy kształtów i łączników  
+## <a name="shapeTypes"></a> Podstawowe typy kształtów i łączników  
  DSL diagram zawiera zbiór *kształty* powiązane liniami lub *łączników*.  Zwykle, ale nie zawsze:  
   
 - Kształty są widoczne reprezentacja elementów modelu.  
@@ -45,5 +45,5 @@ Istnieje kilka typów podstawowych kształtów, które mogą być używane do wy
 |Torów|Tory podzielić diagramu na poziomą lub pionową segmentów. Tor zawsze pozostaje poniżej innych kształtów na diagramie.<br /><br /> Zazwyczaj elementy modelu toru są elementem nadrzędnym w katalogu głównym modelu i inne elementy są elementem nadrzędnym na nich. Na przykład utworzyć DSL za pomocą szablonu rozwiązania przepływu zadań.|  
 |Łączniki|Linii między kształtami zazwyczaj reprezentują relacje odniesienia. Można ustawić opcje, aby bezpośrednio lub prostoliniowego łącznika i mają różne typy grot strzałki.|  
   
-##  <a name="shapeInheritance"></a> Kształt dziedziczenia  
+## <a name="shapeInheritance"></a> Kształt dziedziczenia  
  Kształt może dziedziczyć z innego kształtu. Jednak kształty muszą być tego samego rodzaju. Na przykład kształt geometryczny może dziedziczyć kształt geometryczny. Kształty dziedziczone mają przedziały i dekoratory ich kształtu podstawowego. Łączniki mogą dziedziczyć łączników.

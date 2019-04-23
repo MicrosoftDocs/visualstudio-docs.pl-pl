@@ -10,12 +10,12 @@ ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0e4fe3b07a2a076218fd004328ad87e4d5e3bab7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2788903c60564d501770616fbe3ad2335e60a250
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773732"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105412"
 ---
 # <a name="extending-the-output-window"></a>Rozszerzanie okna danych wyjściowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,22 +27,22 @@ ms.locfileid: "54773732"
 ## <a name="creating-an-extension-that-uses-the-output-pane"></a>Tworzenie rozszerzenia używa okienko danych wyjściowych  
  Istnieje możliwość rozszerzenia, które wykonuje różne aspekty okienko danych wyjściowych.  
   
-1.  Utwórz projekt VSIX, o nazwie `TestOutput` za pomocą polecenia menu o nazwie **TestOutput**. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1. Utwórz projekt VSIX, o nazwie `TestOutput` za pomocą polecenia menu o nazwie **TestOutput**. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Dodaj następujące odwołania:  
+2. Dodaj następujące odwołania:  
   
-    1.  EnvDTE  
+    1. EnvDTE  
   
-    2.  EnvDTE80  
+    2. EnvDTE80  
   
-3.  W TestOutput.cs, dodaj następującą instrukcję using:  
+3. W TestOutput.cs, dodaj następującą instrukcję using:  
   
     ```f#  
     using EnvDTE;  
     using EnvDTE80;  
     ```  
   
-4.  W TestOutput.cs delete, metoda ShowMessageBox. Dodaj następujące szkieletu metody:  
+4. W TestOutput.cs delete, metoda ShowMessageBox. Dodaj następujące szkieletu metody:  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  
@@ -50,7 +50,7 @@ ms.locfileid: "54773732"
     }  
     ```  
   
-5.  W Konstruktorze TestOutput zmienić program obsługi poleceń do OutputCommandHandler. Oto części, które umożliwia dodanie polecenia:  
+5. W Konstruktorze TestOutput zmienić program obsługi poleceń do OutputCommandHandler. Oto części, które umożliwia dodanie polecenia:  
   
     ```csharp  
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
@@ -63,7 +63,7 @@ ms.locfileid: "54773732"
     }  
     ```  
   
-6.  Poniższe sekcje mają różne metody, które pokazują różne sposoby radzenia sobie z okienkiem danych wyjściowych. Można wywoływać te metody do treści metody OutputCommandHandler(). Na przykład poniższy kod dodaje metody CreatePane() podanej w następnej sekcji.  
+6. Poniższe sekcje mają różne metody, które pokazują różne sposoby radzenia sobie z okienkiem danych wyjściowych. Można wywoływać te metody do treści metody OutputCommandHandler(). Na przykład poniższy kod dodaje metody CreatePane() podanej w następnej sekcji.  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  

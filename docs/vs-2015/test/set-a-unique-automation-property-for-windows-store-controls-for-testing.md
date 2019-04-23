@@ -8,12 +8,12 @@ ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ed707c1dfa2d756bdf3fa879051795c6ac05eed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6ce207776fe2f3dfe00ddc764546a370dbb53dca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789082"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107043"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Ustawianie unikatowej właściwości automatyzacji dla kontrolek Sklepu Windows przeznaczonych do testowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,19 +22,19 @@ Jeśli chcesz uruchomić kodowane testy interfejsu użytkownika dla aplikacji op
   
  Możesz przypisać unikatowej właściwości automatyzacji na podstawie typu kontrolki XAML w aplikacji. Poniżej przedstawiono sposób przypisać ten unikatowej właściwości automatyzacji w następujących sytuacjach:  
   
--   [Statyczne definicji XAML formantów](#UniquePropertyWindowsStoreControlsStaticXAML)  
+- [Statyczne definicji XAML formantów](#UniquePropertyWindowsStoreControlsStaticXAML)  
   
--   [Przypisz unikatowy usługi automation — właściwości przy użyciu programu Visual Studio i Blend for Visual Studio](#UniquePropertyWindowsStoreControlsExpressionBlend)  
+- [Przypisz unikatowy usługi automation — właściwości przy użyciu programu Visual Studio i Blend for Visual Studio](#UniquePropertyWindowsStoreControlsExpressionBlend)  
   
--   [Użyj DataTemplate](#UniquePropertyWindowsStoreControlsDataTemplate)  
+- [Użyj DataTemplate](#UniquePropertyWindowsStoreControlsDataTemplate)  
   
--   [Korzystanie z szablonu kontrolki](#UniquePropertyWindowsStoreControlsControlTemplate)  
+- [Korzystanie z szablonu kontrolki](#UniquePropertyWindowsStoreControlsControlTemplate)  
   
--   [Kontrolek dynamicznych](#UniquePropertyWindowsStoreControlsDynamicControls)  
+- [Kontrolek dynamicznych](#UniquePropertyWindowsStoreControlsDynamicControls)  
   
 ## <a name="use-methods-to-assign-a-unique-automation-property"></a>Użyj metody, aby przypisać unikatowej właściwości automatyzacji  
   
-###  <a name="UniquePropertyWindowsStoreControlsStaticXAML"></a> Statyczne definicji XAML  
+### <a name="UniquePropertyWindowsStoreControlsStaticXAML"></a> Statyczne definicji XAML  
  Aby określić unikatowej właściwości automatyzacji dla formantu, który jest zdefiniowany w pliku XAML, można ustawić AutomationProperties.AutomationId lub AutomationProperties.Name jawnie lub niejawnie, jak pokazano w poniższych przykładach. Jedną z tych wartości ustawienia zapewnia kontrolę unikatowej właściwości automatyzacji, który może służyć do identyfikowania formantu, tworząc kodowanego interfejsu użytkownika testowego, nagrywanie akcji.  
   
  **Ustaw właściwość niejawnie**  
@@ -68,7 +68,7 @@ Jeśli chcesz uruchomić kodowane testy interfejsu użytkownika dla aplikacji op
 <Button AutomationProperties.Name="ButtonY" Height="31" HorizontalAlignment="Left" Margin="23,76,0,0" VerticalAlignment="Top" Width="140" Click="ButtonY_Click" />  
 ```  
   
-###  <a name="UniquePropertyWindowsStoreControlsExpressionBlend"></a> Przypisz unikatowy usługi automation — właściwości przy użyciu programu Visual Studio i Blend for Visual Studio  
+### <a name="UniquePropertyWindowsStoreControlsExpressionBlend"></a> Przypisz unikatowy usługi automation — właściwości przy użyciu programu Visual Studio i Blend for Visual Studio  
  Aby przypisać unikatowe nazwy elementów interaktywnych, takich jak przyciski, pola listy, pola kombi i pól tekstowych, można użyć programu Visual Studio lub Blend for Visual Studio. Zapewnia to kontrolka unikatową wartość w AutomationProperties.Name.  
   
  **Visual Studio:** Na **narzędzia** menu wskaż **opcje** , a następnie wybierz **edytora tekstów**, następnie **XAML**, a na koniec **różne** .  
@@ -94,7 +94,7 @@ Jeśli chcesz uruchomić kodowane testy interfejsu użytkownika dla aplikacji op
   
  ![Ustaw projekt nadawać nazwy elementom interaktywnym](../test/media/cuit-windowsstoreproeprty-blend-2.png "CUIT_WindowsStoreProeprty_Blend_2")  
   
-###  <a name="UniquePropertyWindowsStoreControlsDataTemplate"></a> Korzystanie z szablonu danych  
+### <a name="UniquePropertyWindowsStoreControlsDataTemplate"></a> Korzystanie z szablonu danych  
  Można zdefiniować prostego szablonu, za pomocą właściwości ItemTemplate do powiązania wartości w polu listy zmiennych przy użyciu następujących XAML.  
   
 ```xaml  
@@ -157,7 +157,7 @@ public override string ToString()
   
 ```  
   
-###  <a name="UniquePropertyWindowsStoreControlsControlTemplate"></a> Korzystanie z szablonu kontrolki  
+### <a name="UniquePropertyWindowsStoreControlsControlTemplate"></a> Korzystanie z szablonu kontrolki  
  Tak, aby każde wystąpienie określonego typu uzyskuje unikatowej właściwości automatyzacji, jeśli jest zdefiniowana w kodzie, można użyć szablonu kontrolki. Tak, aby AutomationProperty wiąże się z unikatowego Identyfikatora w wystąpienie kontrolki, należy utworzyć szablon. Następujące XAML demonstruje jedno z podejść do utworzenia powiązania z szablonu kontrolki.  
   
 ```xaml  
@@ -185,7 +185,7 @@ public override string ToString()
 <Button Content=”Button2” Style="{StaticResource MyButton}" Width="140"/>  
 ```  
   
-###  <a name="UniquePropertyWindowsStoreControlsDynamicControls"></a> Kontrolek dynamicznych  
+### <a name="UniquePropertyWindowsStoreControlsDynamicControls"></a> Kontrolek dynamicznych  
  W przypadku kontrolek, które są tworzone dynamicznie w kodzie i nieutworzonych statycznie lub za pomocą szablonów w plikach XAML, należy ustawić właściwości zawartości lub nazwa dla kontrolki. To sprawia, że się, że każdy dynamicznej kontroli ma unikatowej właściwości automatyzacji. Na przykład jeśli pole wyboru, które można wyświetlić, wybierz element listy, można ustawić te właściwości, jak pokazano poniżej:  
   
 ```csharp  

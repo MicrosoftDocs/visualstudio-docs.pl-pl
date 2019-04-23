@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbb3d6dd6e83d245afc8d2367e120db245d8285f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 829e219056b7c0a74226dd933ab38b8559ebd6b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782257"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107089"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Opisywanie przepływu sterowania przy użyciu fragmentów w diagramach sekwencji UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,16 +38,16 @@ Na diagramie sekwencji UML *połączone fragmenty* pozwalają wyświetlić pętl
   
  Dostępne są następujące elementy pokazano na rysunku.  
   
-1.  Połączony fragment. Istnieje kilka rodzajów połączonego fragmentu. W tym przykładzie jest Alt połączony fragment, którego można użyć, aby pokazać, że alternatywnych sekwencji komunikatów może wystąpić.  
+1. Połączony fragment. Istnieje kilka rodzajów połączonego fragmentu. W tym przykładzie jest Alt połączony fragment, którego można użyć, aby pokazać, że alternatywnych sekwencji komunikatów może wystąpić.  
   
-2.  Operandy interakcji. Każdy połączony fragment zawiera co najmniej jeden argument interakcji, który może zawierać wiadomości, zastosowania interakcji i mniejsze połączonego fragmentu. W tym przykładzie połączone Alt fragment ma dwie operacje interakcji, przedstawiający dwa alternatywnych sekwencji komunikatów.  
+2. Operandy interakcji. Każdy połączony fragment zawiera co najmniej jeden argument interakcji, który może zawierać wiadomości, zastosowania interakcji i mniejsze połączonego fragmentu. W tym przykładzie połączone Alt fragment ma dwie operacje interakcji, przedstawiający dwa alternatywnych sekwencji komunikatów.  
   
-3.  Każdy argument interakcji można wybrać, klikając pozycję wewnątrz niego oddzielnie. W tym przykładzie argument najważniejsze interakcji jest zaznaczone, tak, aby jego granicę są widoczne. Zwykle tylko jednoznaczny interakcji z operandów jest widoczna.  
+3. Każdy argument interakcji można wybrać, klikając pozycję wewnątrz niego oddzielnie. W tym przykładzie argument najważniejsze interakcji jest zaznaczone, tak, aby jego granicę są widoczne. Zwykle tylko jednoznaczny interakcji z operandów jest widoczna.  
   
     > [!NOTE]
     >  Aby wybrać operand najważniejsze interakcji, możesz nie powinien klikać za blisko początku połączonego fragmentu.  
   
-4.  Osłony. Każdy argument interakcji można nadać ochrony. Opisuje warunku w ramach której zostanie wykonane komunikaty wewnątrz operand interakcji.  
+4. Osłony. Każdy argument interakcji można nadać ochrony. Opisuje warunku w ramach której zostanie wykonane komunikaty wewnątrz operand interakcji.  
   
 ## <a name="creating-combined-fragments"></a>Tworzenie połączone fragmentów  
  Aby uzyskać listę rodzajów fragment, można utworzyć, zobacz [rodzajów połączone fragmentu](#KindsOfFragment).  
@@ -97,12 +97,12 @@ Na diagramie sekwencji UML *połączone fragmenty* pozwalają wyświetlić pętl
   
 #### <a name="to-set-or-view-the-properties-of-a-combined-fragment"></a>Aby ustawić lub wyświetlić właściwości połączony fragment  
   
--   Kliknij prawym przyciskiem myszy w tytule połączonego fragmentu, a następnie kliknij przycisk **właściwości**.  
+- Kliknij prawym przyciskiem myszy w tytule połączonego fragmentu, a następnie kliknij przycisk **właściwości**.  
   
     > [!NOTE]
     >  Różne rodzaje połączonego fragmentu mają różne właściwości.  
   
-##  <a name="KindsOfFragment"></a> Rodzaje połączony Fragment  
+## <a name="KindsOfFragment"></a> Rodzaje połączony Fragment  
   
 ### <a name="fragments-describing-control-flow"></a>Fragmenty opisywanie przepływu sterowania  
  Od prostego diagramu sekwencji pokazuje tylko jednej typowej sekwencji. Do opisania zmian, które mogą wystąpić w różnych przypadkach, można użyć następujących typów połączonego fragmentu.  

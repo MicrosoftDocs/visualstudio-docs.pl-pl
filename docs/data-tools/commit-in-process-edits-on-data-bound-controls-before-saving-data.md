@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4f57b21117f5fd5a4ff7c0403afe9cdbd63ec342
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f771fec52024fb7d1e4c000d374f08929d453917
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950451"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112649"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Zatwierdzanie edycji wewnątrzprocesowych w ramach kontrolek powiązanych z danymi przed zapisaniem danych
 
@@ -40,12 +40,12 @@ Poniższy kod używa [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) za
 
 ## <a name="to-call-endedit-for-all-bindingsource-components-on-a-form"></a>Aby wywołać EndEdit — dla wszystkich składników BindingSource w formularzu
 
-1.  Dodaj następujący kod do formularza, który zawiera <xref:System.Windows.Forms.BindingSource> składników.
+1. Dodaj następujący kod do formularza, który zawiera <xref:System.Windows.Forms.BindingSource> składników.
 
      [!code-csharp[VSProDataOrcasEndEditOnAll#1](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_1.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#1](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_1.vb)]
 
-2.  Dodaj następujący wiersz kodu, tuż przed wszelkie wywołania, aby zapisać dane formularza ( `TableAdapterManager.UpdateAll()` metoda):
+2. Dodaj następujący wiersz kodu, tuż przed wszelkie wywołania, aby zapisać dane formularza ( `TableAdapterManager.UpdateAll()` metoda):
 
      [!code-csharp[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.vb)]

@@ -12,12 +12,12 @@ ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 03e2e5ce9ee1883f51bea68d5c1ccc2af0c944a7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6045466d93a0017b648ca4327e80c801517c1359
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955547"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111717"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Instrukcje: Określanie agentów testowych do użycia w scenariuszach testów obciążenia
 
@@ -45,24 +45,24 @@ Jeśli komputer agenta testowego ma więcej niż 75 procent wykorzystania proces
 
 ## <a name="to-specify-the-agents-to-use-for-a-scenario"></a>Aby określić agentów na potrzeby scenariusza
 
-1.  Otwórz test obciążenia.
+1. Otwórz test obciążenia.
 
      **Edytora testu obciążenia** pojawia się. Zostanie wyświetlone drzewo testu obciążenia.
 
-2.  Obciążenia test drzew **scenariuszy** folderu, wybierz węzeł scenariusz, dla którego chcesz określić agentów do użytku.
+2. Obciążenia test drzew **scenariuszy** folderu, wybierz węzeł scenariusz, dla którego chcesz określić agentów do użytku.
 
-3.  Na **widoku** menu, wybierz opcję **okno właściwości**.
+3. Na **widoku** menu, wybierz opcję **okno właściwości**.
 
      Kategorie i właściwości scenariusza są wyświetlane w **właściwości** okna.
 
-4.  W polu tekstowym dla **agenci do użycia** właściwości, wpisz listę agentów, na których może uruchomić scenariusza.
+4. W polu tekstowym dla **agenci do użycia** właściwości, wpisz listę agentów, na których może uruchomić scenariusza.
 
      Agenci muszą być rozdzielone przecinkami, na przykład "**agenta agenta 1, agenta 2, 3**". Niewypełnienie tej właściwości oznacza, że scenariusz powinien wykorzystywać wszystkich dostępnych agentów.
 
     > [!NOTE]
     > **Agenci do użycia** właściwość jest ignorowana dla przebiegów lokalnych. Dla przebiegów zdalnych, jeśli żaden z agentów, określone w **agenci do użycia** istnieje, nie zostaną uruchomione testy, w tym scenariuszu.
 
-5.  Po zmianie właściwości wybierz **Zapisz** na **pliku** menu. Następnie można uruchomić testu obciążenia za pomocą nowego **agenci do użycia** wartość.
+5. Po zmianie właściwości wybierz **Zapisz** na **pliku** menu. Następnie można uruchomić testu obciążenia za pomocą nowego **agenci do użycia** wartość.
 
 ## <a name="see-also"></a>Zobacz także
 

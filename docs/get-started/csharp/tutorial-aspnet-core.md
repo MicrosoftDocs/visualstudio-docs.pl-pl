@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: fc79308010b895156ee57bbb5a5e2458a19b3838
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 191be9ea5433351f6f89366cc2240d8b0801e54b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649163"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111730"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Samouczek: Wprowadzenie do języka C# i ASP.NET Core w programie Visual Studio
 
@@ -222,6 +222,7 @@ To rozwiązanie jest zgodna **strona Razor** wzorca projektowego. Jest inny niż
      Message = String.Format("Your directory is {0}.", directory);
      }
     ```
+
 1. Należy zauważyć, że dwa faliste podkreślenia są wyświetlane w obszarze **środowiska** i **ciąg**. Faliste podkreślenia są wyświetlane, ponieważ te typy nie są w zakresie.
 
    ![Błędy oznaczone faliste podkreślenia w metodzie OnGet](media/csharp-aspnet-razor-add-new-on-get-method.png)

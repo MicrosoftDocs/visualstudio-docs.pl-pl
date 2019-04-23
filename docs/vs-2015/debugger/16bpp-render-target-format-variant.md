@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee5112f27498bfa14d742469478cc4961f3cc7b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7b315c7ab9bb10d039e81ba26b1beb9c4447a205
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779745"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112380"
 ---
 # <a name="16bpp-render-target-format-variant"></a>Wariant formatu docelowego renderowania 16bpp
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,11 +37,11 @@ Zestawy piksel formatu DXGI_FORMAT_B5G6R5_UNORM wszystkie elementy docelowe rend
 ## <a name="remarks"></a>Uwagi  
  Format docelowy renderowania jest resetowana do DXGI_FORMAT_B5G6R5_UNORM na każde wywołanie `ID3D11Device::CreateTexture2D` tworząca docelowego renderowania. W szczególności format jest zastępowany podczas przekazany pDesc obiekt D3D11_TEXTURE2D_DESC opisuje cel renderowania; Czyli:  
   
--   Element członkowski BindFlags ma flagę D3D11_BIND_REDNER_TARGET zestawu.  
+- Element członkowski BindFlags ma flagę D3D11_BIND_REDNER_TARGET zestawu.  
   
--   Element członkowski BindFlags ma flagę D3D11_BIND_DEPTH_STENCIL wyczyszczone.  
+- Element członkowski BindFlags ma flagę D3D11_BIND_DEPTH_STENCIL wyczyszczone.  
   
--   Użycie elementu członkowskiego jest równa D3D11_USAGE_DEFAULT.  
+- Użycie elementu członkowskiego jest równa D3D11_USAGE_DEFAULT.  
   
 ## <a name="restrictions-and-limitations"></a>Ograniczenia i ograniczenia  
  Ponieważ B5G6R5 format nie ma kanału alfa, alfa zawartości nie są zachowywane przez ten typ variant. Jeśli renderowanie aplikacji wymaga kanał alfa w docelowych renderowania, po prostu nie można przełączyć do formatu B5G6R5.  

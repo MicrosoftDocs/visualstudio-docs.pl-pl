@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31ca31ffe85f7d932ebb23d6a454b5bccfdcb5ce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 821e3bc4abc379f0ed7fc1343867f88fefe54b17
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713402"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111821"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>Instrukcje: Wyświetlanie dokumentów skryptu (JavaScript)
 
@@ -31,17 +31,17 @@ Pliki skryptów po stronie serwera są widoczne w Eksploratorze rozwiązań. Pli
 
 ### <a name="to-view-a-server-side-script-document"></a>Aby wyświetlić dokument skryptu po stronie serwera
 
-1.  W **Eksploratora rozwiązań**, otwórz  **\<Pathname witryny sieci Web >** węzła.
+1. W **Eksploratora rozwiązań**, otwórz  **\<Pathname witryny sieci Web >** węzła.
 
-2.  Kliknij dwukrotnie plik skryptu, który chcesz wyświetlić.
+2. Kliknij dwukrotnie plik skryptu, który chcesz wyświetlić.
 
      Plik skryptu po stronie serwera, zostanie otwarty w oknie źródła.
 
 ### <a name="to-view-a-client-side-script-document"></a>Aby wyświetlić dokument skryptu po stronie klienta
 
-1.  W **Eksploratora rozwiązań**, otwórz **dokumenty skryptów** węzła.
+1. W **Eksploratora rozwiązań**, otwórz **dokumenty skryptów** węzła.
 
-2.  Kliknij dwukrotnie plik skryptu, który chcesz wyświetlić.
+2. Kliknij dwukrotnie plik skryptu, który chcesz wyświetlić.
 
      Plik skryptu po stronie klienta zostanie otwarty w oknie źródła.
 

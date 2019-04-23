@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 869075875f5de56cc7454c58f7dbb5dfda7a9f76
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dbd65c5247a82f2a58a57e50402ecde5d330cc9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928780"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111691"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Dodawanie kodu do zestawów danych w aplikacjach n-warstwowych
 Możesz rozszerzyć funkcjonalność zestawu danych, tworzenia pliku częściowej klasy zestawu danych i dodając kod do niego (zamiast opcji dodawania kodu *DatasetName*. Plik Dataset.Designer). Klasy częściowe Włącz kod dla określonej klasy do podzielone między wiele plików fizycznych. Aby uzyskać więcej informacji, zobacz [częściowe](/dotnet/visual-basic/language-reference/modifiers/partial) lub [klasy częściowe i metody](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
@@ -35,15 +35,15 @@ Domyślnie po oddzielić zestaw danych i kod TableAdapter wynik jest plik klasy 
 
 ## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>Dodawanie kodu do zestawów danych w aplikacjach n warstwowej
 
-1.  Znajdź projekt, który zawiera *XSD* pliku.
+1. Znajdź projekt, który zawiera *XSD* pliku.
 
-2.  Wybierz **XSD** plik, aby otworzyć zestaw danych.
+2. Wybierz **XSD** plik, aby otworzyć zestaw danych.
 
-3.  Kliknij prawym przyciskiem myszy tabelę danych, do której chcesz dodać kod (nazwa tabeli na pasku tytułu), a następnie wybierz **Wyświetl kod**.
+3. Kliknij prawym przyciskiem myszy tabelę danych, do której chcesz dodać kod (nazwa tabeli na pasku tytułu), a następnie wybierz **Wyświetl kod**.
 
      Klasy częściowe, zostanie utworzona i zostanie otwarty w edytorze kodu.
 
-4.  Dodaj kod wewnątrz deklaracji klasy częściowej.
+4. Dodaj kod wewnątrz deklaracji klasy częściowej.
 
      Poniższy kod przedstawia gdzie dodać kod do CustomersDataTable w NorthwindDataSet:
 
@@ -53,6 +53,7 @@ Domyślnie po oddzielić zestaw danych i kod TableAdapter wynik jest plik klasy 
         ' to the CustomersDataTable.
     End Class
     ```
+
     ```csharp
     partial class CustomersDataTable
     {

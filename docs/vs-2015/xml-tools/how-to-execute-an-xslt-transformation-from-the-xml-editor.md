@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cf4696827f0c94e9eb9dfbd88a5e814298f823e1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ec546997d5c6ff75a3ccba1e60e9fe7a4b5b7c74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649527"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112601"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Instrukcje: Wykonywanie transformacji XSLT w edytorze XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ Edytor XML umożliwia kojarzenie arkusz stylów XSLT z dokumentu XML na przekszt
   
 ### <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>Wykonywanie transformacji XSLT z dokumentu XML  
   
-1.  Otwórz dokument XML w edytorze XML.  
+1. Otwórz dokument XML w edytorze XML.  
   
-2.  Arkusz stylów XSLT należy skojarzyć z dokumentu XML.  
+2. Arkusz stylów XSLT należy skojarzyć z dokumentu XML.  
   
-    -   Dodaj `xml-stylesheet` przetwarzania instrukcji w dokumencie XML. Na przykład, Dodaj następujący wiersz `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` się w prologu dokumentu.  
+    - Dodaj `xml-stylesheet` przetwarzania instrukcji w dokumencie XML. Na przykład, Dodaj następujący wiersz `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` się w prologu dokumentu.  
   
          —lub—  
   
-    -   Dodaj using arkusza stylów XSLT **właściwości** okna. W dokumencie **okno właściwości**, kliknij przycisk **Przeglądaj** przycisku **arkusza stylów** , wybierz arkusz stylów XSLT, a następnie kliknij przycisk **Otwórz**.  
+    - Dodaj using arkusza stylów XSLT **właściwości** okna. W dokumencie **okno właściwości**, kliknij przycisk **Przeglądaj** przycisku **arkusza stylów** , wybierz arkusz stylów XSLT, a następnie kliknij przycisk **Otwórz**.  
   
-3.  Kliknij przycisk **dane wyjściowe ShowXSL** znajdujący się na **edytora XML** paska narzędzi.  
+3. Kliknij przycisk **dane wyjściowe ShowXSL** znajdujący się na **edytora XML** paska narzędzi.  
   
     > [!NOTE]
     >  W przypadku arkusza stylów, nie skojarzonych z dokumentu XML, okno dialogowe monit zapewniają arkusza stylów do użycia.  
@@ -46,22 +46,22 @@ Edytor XML umożliwia kojarzenie arkusz stylów XSLT z dokumentu XML na przekszt
   
 ### <a name="to-execute-an-xslt-transformation-from-an-xslt-style-sheet"></a>Wykonywanie transformacji XSLT z arkusza stylów XSLT  
   
-1.  Otworzyć arkusz stylów XSLT w edytorze XML.  
+1. Otworzyć arkusz stylów XSLT w edytorze XML.  
   
-2.  Określ dokumentu XML w **dane wejściowe** pola dokumentu **właściwości** okna.  
+2. Określ dokumentu XML w **dane wejściowe** pola dokumentu **właściwości** okna.  
   
     > [!NOTE]
     >  Dokument XML jest dokument wejściowy używany do transformacji. Jeśli dokument nie jest określony, uruchamianiu przekształcenie XSLT **Otwieranie pliku** pojawi się okno dialogowe, a w tym czasie można określić dokument.  
   
-3.  Kliknij przycisk **dane wyjściowe ShowXSLT** znajdujący się na **edytora XML** paska narzędzi.  
+3. Kliknij przycisk **dane wyjściowe ShowXSLT** znajdujący się na **edytora XML** paska narzędzi.  
   
      Dane wyjściowe z transformację XSLT jest wyświetlany w nowym oknie dokumentu.  
   
 ### <a name="to-provide-a-different-output-file-name"></a>Aby podać nazwę pliku danych wyjściowych inne niż  
   
-1.  Określ nazwę pliku w **dane wyjściowe** pola dokumentu **właściwości** okna.  
+1. Określ nazwę pliku w **dane wyjściowe** pola dokumentu **właściwości** okna.  
   
-2.  Kliknij przycisk **dane wyjściowe ShowXSLT** znajdujący się na **edytora XML** paska narzędzi.  
+2. Kliknij przycisk **dane wyjściowe ShowXSLT** znajdujący się na **edytora XML** paska narzędzi.  
   
      Dane wyjściowe z transformację XSLT jest wyświetlany w nowym oknie dokumentu i Edytor używane w oknie danych wyjściowych jest zależna od rozszerzenia pliku swoje **dane wyjściowe** właściwości dokumentu.  
   

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da54bae8c1a688e4708a71476e6654132708a511
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3ff626078296c61d5f2588434942d4016cba0c1e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607476"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111951"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Program MSBuild docelowej platformy framework i docelowego
 Można skompilować projekt, do uruchamiania na *platformę docelową*, czyli konkretnej wersji programu .NET Framework i *platformę docelową*, czyli architektury konkretnego oprogramowania.  Można na przykład wskazać aplikację do uruchamiania na .NET Framework 2.0 na 32-bitowej platformie, która jest zgodna z rodziny procesorów 802 x 86 ("x86"). Kombinacja wartości docelowej i platforma docelowa jest znany jako *kontekstu docelowej*.
@@ -61,11 +61,11 @@ Platforma docelowa jest określona w `TargetFrameworkVersion` właściwości w p
 ## <a name="target-platform"></a>Platforma docelowa
  A *platformy* jest kombinację sprzętu i oprogramowania, który definiuje konkretnego środowiska. Na przykład
 
--   `x86` Określa 32-bitowym systemie operacyjnym Windows działa na procesorze Intel 80 x 86 lub jego odpowiednika.
+- `x86` Określa 32-bitowym systemie operacyjnym Windows działa na procesorze Intel 80 x 86 lub jego odpowiednika.
 
--   `x64` Określa w systemie operacyjnym Windows 64-bitowym, który działa na procesorze Intel x64 lub równoważnej.
+- `x64` Określa w systemie operacyjnym Windows 64-bitowym, który działa na procesorze Intel x64 lub równoważnej.
 
--   `Xbox` Określa platformę Microsoft Xbox 360.
+- `Xbox` Określa platformę Microsoft Xbox 360.
 
 A *platformę docelową* jest konkretnej platformie, że projekt został skompilowany do uruchamiania na. Platforma docelowa jest określona w `PlatformTarget` kompilacji właściwości w pliku projektu. Można zmienić platformę docelową, używając strony właściwości projektu lub **programu Configuration Manager** w środowisku IDE.
 

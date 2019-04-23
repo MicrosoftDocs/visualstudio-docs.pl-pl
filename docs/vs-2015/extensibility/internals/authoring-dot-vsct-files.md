@@ -10,12 +10,12 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bf3d9acd493cd10a8d014b4479684a0107cb8740
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 853a3f8db3623156e000c9360981933091ef9afd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954030"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106972"
 ---
 # <a name="authoring-vsct-files"></a>Tworzenie. Pliki Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ W tym dokumencie przedstawiono sposób tworzenie pliku vsct, aby dodać elementy
   
 ##### <a name="to-create-the-file-structure"></a>Tworzenie struktury pliku  
   
-1.  Dodawanie pliku vsct do projektu, wykonując kroki opisane w [jak: Tworzenie. Pliku Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
+1. Dodawanie pliku vsct do projektu, wykonując kroki opisane w [jak: Tworzenie. Pliku Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
   
-2.  Dodaj wymagane przestrzenie nazw do `CommandTable` elementu, jak pokazano w poniższym przykładzie.  
+2. Dodaj wymagane przestrzenie nazw do `CommandTable` elementu, jak pokazano w poniższym przykładzie.  
   
     ```xml  
     <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"   
@@ -42,7 +42,7 @@ W tym dokumencie przedstawiono sposób tworzenie pliku vsct, aby dodać elementy
   
     ```  
   
-3.  W `CommandTable` elementu Dodawanie `Commands` element do obsługi wszystkich niestandardowych menu, paski narzędzi, grup poleceń i polecenia. Tak, aby załadować niestandardowe elementy interfejsu użytkownika, `Commands` element musi mieć jej `Package` atrybut ustawiony na nazwę pakietu.  
+3. W `CommandTable` elementu Dodawanie `Commands` element do obsługi wszystkich niestandardowych menu, paski narzędzi, grup poleceń i polecenia. Tak, aby załadować niestandardowe elementy interfejsu użytkownika, `Commands` element musi mieć jej `Package` atrybut ustawiony na nazwę pakietu.  
   
      Po `Commands` elementu Dodawanie `Symbols` element, aby zdefiniować identyfikatorów GUID dla pakietu i nazwy i identyfikatory poleceń Twoje elementów interfejsu użytkownika.  
   
@@ -51,28 +51,28 @@ W tym dokumencie przedstawiono sposób tworzenie pliku vsct, aby dodać elementy
   
 ##### <a name="to-include-visual-studio-resources"></a>Aby dołączyć zasoby programu Visual Studio  
   
-1.  W górnej części `CommandTable` elementu, dodaj je `Extern` elementu dla każdego pliku zewnętrznego, odwołania i ustawiania `href` atrybut nazwy pliku. Możesz odwołać się następujące pliki nagłówków, aby uzyskać dostęp do zasobów programu Visual Studio:  
+1. W górnej części `CommandTable` elementu, dodaj je `Extern` elementu dla każdego pliku zewnętrznego, odwołania i ustawiania `href` atrybut nazwy pliku. Możesz odwołać się następujące pliki nagłówków, aby uzyskać dostęp do zasobów programu Visual Studio:  
   
-    -   Stdidcmd.h, definiuje identyfikatorów dla wszystkich poleceń udostępnianych przez program Visual Studio.  
+    - Stdidcmd.h, definiuje identyfikatorów dla wszystkich poleceń udostępnianych przez program Visual Studio.  
   
-    -   Vsshlids.h, zawiera identyfikatory poleceń menu programu Visual Studio.  
+    - Vsshlids.h, zawiera identyfikatory poleceń menu programu Visual Studio.  
   
-2.  Jeśli pakiet wymaga dowolne polecenia, które zostały zdefiniowane przez program Visual Studio lub innych pakietów, należy dodać `UsedCommands` elementu po `Commands` elementu. Wypełnij ten element z [UsedCommand](../../extensibility/usedcommand-element.md) elementu dla każdego polecenia, oznacza to wywołanie nie jest częścią pakietu. Ustaw `guid` i `id` atrybuty `UsedCommand` elementy do wartości Identyfikator GUID i identyfikator polecenia do wywołania. Aby uzyskać więcej informacji o tym, jak znaleźć polecenia identyfikatory GUID i identyfikatory programu Visual Studio, zobacz [identyfikatory GUID i identyfikatory programu Visual Studio — polecenia](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md). Aby wywołać poleceń z innych pakietów, należy użyć identyfikator GUID i identyfikator polecenia zgodnie z definicją w pliku vsct tych pakietów.  
+2. Jeśli pakiet wymaga dowolne polecenia, które zostały zdefiniowane przez program Visual Studio lub innych pakietów, należy dodać `UsedCommands` elementu po `Commands` elementu. Wypełnij ten element z [UsedCommand](../../extensibility/usedcommand-element.md) elementu dla każdego polecenia, oznacza to wywołanie nie jest częścią pakietu. Ustaw `guid` i `id` atrybuty `UsedCommand` elementy do wartości Identyfikator GUID i identyfikator polecenia do wywołania. Aby uzyskać więcej informacji o tym, jak znaleźć polecenia identyfikatory GUID i identyfikatory programu Visual Studio, zobacz [identyfikatory GUID i identyfikatory programu Visual Studio — polecenia](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md). Aby wywołać poleceń z innych pakietów, należy użyć identyfikator GUID i identyfikator polecenia zgodnie z definicją w pliku vsct tych pakietów.  
   
 ### <a name="declaring-ui-elements"></a>Zadeklarowanie elementów interfejsu użytkownika  
  Zadeklaruj nowych elementów interfejsu użytkownika w `Symbols` części pliku vsct.  
   
 ##### <a name="to-declare-ui-elements"></a>Aby zadeklarować elementy interfejsu użytkownika  
   
-1.  W `Symbols` elementu, Dodaj trzy [GuidSymbol](../../extensibility/guidsymbol-element.md) elementów. Każdy `GuidSymbol` element ma `name` atrybutu i `value` atrybutu. Ustaw `name` atrybutu, aby odzwierciedlały celem elementu. `value` Atrybut przyjmuje postać identyfikatora GUID. (Można wygenerować identyfikatora GUID na **narzędzia** menu, kliknij przycisk **Utwórz GUID**, a następnie wybierz pozycję **Format rejestru**.)  
+1. W `Symbols` elementu, Dodaj trzy [GuidSymbol](../../extensibility/guidsymbol-element.md) elementów. Każdy `GuidSymbol` element ma `name` atrybutu i `value` atrybutu. Ustaw `name` atrybutu, aby odzwierciedlały celem elementu. `value` Atrybut przyjmuje postać identyfikatora GUID. (Można wygenerować identyfikatora GUID na **narzędzia** menu, kliknij przycisk **Utwórz GUID**, a następnie wybierz pozycję **Format rejestru**.)  
   
      Pierwszy `GuidSymbol` element, który reprezentuje pakiet, a zwykle nie ma elementów podrzędnych. Drugi `GuidSymbol` element reprezentuje polecenie Ustaw i będzie zawierać wszystkie symbole, które definiują menu, grup i poleceń. Trzeci `GuidSymbol` element reprezentuje swoje magazynu obrazów i zawiera symbole dla wszystkich ikony dla poleceń. Jeśli nie masz żadnych poleceń korzystających z ikon, można pominąć trzeci `GuidSymbol` elementu.  
   
-2.  W `GuidSymbol` elementu, który reprezentuje zestaw poleceń, Dodaj jeden lub kilka [IDSymbol](../../extensibility/idsymbol-element.md) elementów. Każdy z nich reprezentuje menu, pasek narzędzi, grupy lub polecenia, które dodajesz do Interfejsu użytkownika.  
+2. W `GuidSymbol` elementu, który reprezentuje zestaw poleceń, Dodaj jeden lub kilka [IDSymbol](../../extensibility/idsymbol-element.md) elementów. Każdy z nich reprezentuje menu, pasek narzędzi, grupy lub polecenia, które dodajesz do Interfejsu użytkownika.  
   
      Dla każdego `IDSymbol` elementu, ustaw `name` atrybutu nazwa będzie używana do odwoływania się do odpowiedniego menu, grupy lub polecenia, a następnie ustaw `value` elementu liczbę szesnastkową, która będzie reprezentowała identyfikatora polecenia. Nie dwóch `IDSymbol` elementy, które mają ten sam nadrzędny element może mieć taką samą wartość.  
   
-3.  Jeśli dowolne elementy interfejsu użytkownika wymaga ikony, należy dodać `IDSymbol` elementu dla każdego ikonę, aby `GuidSymbol` elementu, który reprezentuje magazynu w obrazie.  
+3. Jeśli dowolne elementy interfejsu użytkownika wymaga ikony, należy dodać `IDSymbol` elementu dla każdego ikonę, aby `GuidSymbol` elementu, który reprezentuje magazynu w obrazie.  
   
 ### <a name="putting-ui-elements-in-the-ide"></a>Umieszczenie elementów interfejsu użytkownika w środowisku IDE  
  [Menu](../../extensibility/menus-element.md) elementu [grup](../../extensibility/groups-element.md) elementu, a [przyciski](../../extensibility/buttons-element.md) element zawiera definicje dla wszystkich menu, grup i poleceń, które są zdefiniowane w pakiecie. Umieść następujące menu, grupy i polecenia w środowisku IDE, za pomocą [nadrzędnego](../../extensibility/parent-element.md) elementu, który jest częścią definicji elementu interfejsu użytkownika lub za pomocą [CommandPlacement](../../extensibility/commandplacement-element.md) element, który jest zdefiniowany w innym miejscu.  
@@ -120,9 +120,9 @@ W tym dokumencie przedstawiono sposób tworzenie pliku vsct, aby dodać elementy
   
     Celem `Parent` element jest menu lub grupy, która będzie zawierać menu, grupy lub polecenia.  
   
-   1.  Ustaw `guid` atrybutu nazwy `GuidSymbol` element, który definiuje zestaw poleceń. Jeśli element docelowy nie jest częścią pakietu, należy użyć identyfikatora guid dla tego zestawu poleceń, zgodnie z definicją w odpowiedniego pliku vsct.  
+   1. Ustaw `guid` atrybutu nazwy `GuidSymbol` element, który definiuje zestaw poleceń. Jeśli element docelowy nie jest częścią pakietu, należy użyć identyfikatora guid dla tego zestawu poleceń, zgodnie z definicją w odpowiedniego pliku vsct.  
   
-   2.  Ustaw `id` atrybutu do dopasowania `id` atrybut menu docelowego lub grupy. Aby uzyskać listę menu i grup, które są dostępne w programie Visual Studio, zobacz [identyfikatory GUID i identyfikatory Visual Studio menu](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) lub [identyfikatory GUID i identyfikatory programu Visual Studio pasków narzędzi](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md).  
+   2. Ustaw `id` atrybutu do dopasowania `id` atrybut menu docelowego lub grupy. Aby uzyskać listę menu i grup, które są dostępne w programie Visual Studio, zobacz [identyfikatory GUID i identyfikatory Visual Studio menu](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) lub [identyfikatory GUID i identyfikatory programu Visual Studio pasków narzędzi](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md).  
   
    Jeśli masz dużą liczbę elementów interfejsu użytkownika można umieścić w IDE lub w przypadku elementów, które powinny się wyświetlać w wielu miejscach, zdefiniuj ich rozmieszczenia w [CommandPlacements](../../extensibility/commandplacements-element.md) elementu, jak pokazano w poniższych krokach.  
   
@@ -145,11 +145,11 @@ W tym dokumencie przedstawiono sposób tworzenie pliku vsct, aby dodać elementy
   
 1. Aby element interfejsu użytkownika było widoczne tylko w określonych kontekstach interfejsu użytkownika, na przykład po załadowaniu rozwiązania, użyj ograniczeń widoczność.  
   
-   1.  Po `Commands` elementu Dodawanie `VisibilityConstraints` elementu.  
+   1. Po `Commands` elementu Dodawanie `VisibilityConstraints` elementu.  
   
-   2.  Dla każdego elementu interfejsu użytkownika w celu ograniczenia Dodaj [VisibilityItem](../../extensibility/visibilityitem-element.md) elementu.  
+   2. Dla każdego elementu interfejsu użytkownika w celu ograniczenia Dodaj [VisibilityItem](../../extensibility/visibilityitem-element.md) elementu.  
   
-   3.  Dla każdego `VisibilityItem` elementu, ustaw `guid` i `id` atrybutów, które mają menu, grupy lub polecenia, a następnie ustaw `context` atrybutu kontekstu interfejsu użytkownika, należy zgodnie z definicją w <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> klasy. Aby uzyskać więcej informacji, zobacz [VisibilityItem, Element](../../extensibility/visibilityitem-element.md).  
+   3. Dla każdego `VisibilityItem` elementu, ustaw `guid` i `id` atrybutów, które mają menu, grupy lub polecenia, a następnie ustaw `context` atrybutu kontekstu interfejsu użytkownika, należy zgodnie z definicją w <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> klasy. Aby uzyskać więcej informacji, zobacz [VisibilityItem, Element](../../extensibility/visibilityitem-element.md).  
   
 2. Aby ustawić widoczność i dostępność elementów interfejsu użytkownika w kodzie, należy użyć co najmniej jeden z następujących flag poleceń:  
   

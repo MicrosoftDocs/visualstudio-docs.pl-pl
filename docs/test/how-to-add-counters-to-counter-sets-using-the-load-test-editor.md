@@ -10,12 +10,12 @@ ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 539d56d4adaa0cf831bde96ccd280fd03750b89f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 004eff423874a07e2b49713eaed16eb1bf8be609
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970533"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110521"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Instrukcje: Dodawanie liczników do zestawów liczników za pomocą edytora testu obciążenia
 
@@ -30,34 +30,34 @@ Zarządzasz licznikami w **edytora testu obciążenia**. Zbiory liczników, któ
 
 ## <a name="to-add-counters-to-a-counter-set"></a>Aby dodać liczniki do zestawu liczników
 
-1.  Otwórz test obciążenia.
+1. Otwórz test obciążenia.
 
-2.  Rozwiń **zbiorów liczników** węzła. Wszystkie zbiory liczników, które zostały dodane do testu obciążeniowego są widoczne.
+2. Rozwiń **zbiorów liczników** węzła. Wszystkie zbiory liczników, które zostały dodane do testu obciążeniowego są widoczne.
 
     > [!NOTE]
     > Drzewo hierarchia test obciążenia zawiera także **parametrów uruchomieniowych** węzła. Ten węzeł zawiera **mapowaniach zbioru liczników** węzła, który przedstawia wszystkie komputery i zbiory liczników, które są mapowane na tych komputerach.
 
-3.  Kliknij prawym przyciskiem myszy istniejący zbiór liczników, a następnie wybierz **Dodaj liczniki**.
+3. Kliknij prawym przyciskiem myszy istniejący zbiór liczników, a następnie wybierz **Dodaj liczniki**.
 
      **Wybierz liczniki wydajności** zostanie wyświetlone okno dialogowe.
 
-4.  W **komputera** rozwijane kombi wpisz nazwę komputera, którą chcesz zamapować do. Alternatywnie wybierz jeden z komputerów na liście rozwijanej.
+4. W **komputera** rozwijane kombi wpisz nazwę komputera, którą chcesz zamapować do. Alternatywnie wybierz jeden z komputerów na liście rozwijanej.
 
     > [!NOTE]
     > Ponieważ zbiory liczników muszą być zamapowane na komputerze, zanim dane wydajności są zbierane, należy określić komputer, na którym można zbierać dane dotyczące wydajności.
 
-5.  Wybierz **kategorii wydajności** do filtrowania kategorii liczników wydajności, dane. Zostaną wyświetlone dwie kolumny danych, z którego ma zostać Wybierz liczniki wydajności.
+5. Wybierz **kategorii wydajności** do filtrowania kategorii liczników wydajności, dane. Zostaną wyświetlone dwie kolumny danych, z którego ma zostać Wybierz liczniki wydajności.
 
     > [!NOTE]
     > Niektóre kategorie liczników wymaga również wybierz domyślne wystąpienie. Na przykład wybierzesz licznika SQL, należy wybranie wystąpienie serwera SQL, ponieważ może istnieć więcej niż jedno wystąpienie programu SQL Server zainstalowane na komputerze docelowym.
 
-6.  Wybierz licznik i wystąpienie, aby dodać do zestawu liczników niestandardowych.
+6. Wybierz licznik i wystąpienie, aby dodać do zestawu liczników niestandardowych.
 
      \- lub —
 
      Wybierz **wszystkie liczniki** przycisk radiowy, aby wybrać wszystkie dostępne liczniki.
 
-7.  Wybierz **OK**.
+7. Wybierz **OK**.
 
     > [!NOTE]
     > Istnieje również możliwość dodać liczniki do zbioru liczników, wybierając istniejący licznika lub kategoria licznika, wybierając kopię i wklejając ją do innego licznika Ustaw węzła. Dodatkowe liczniki, które są kopiowane, ale nie jest to konieczne, mogą zostać usunięte.

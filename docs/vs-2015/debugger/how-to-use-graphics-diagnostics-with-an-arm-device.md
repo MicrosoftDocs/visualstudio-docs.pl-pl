@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2a606d6b22dabc8bab0477a240499021a4312c3
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 7ae934de4a9f0dbcf4076d7402abd138eac20268
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867685"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104879"
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Instrukcje: Korzystanie z diagnostyki grafiki z urządzeniem ARM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ Graphics Diagnostics obsługuje zdalne debugowanie aplikacji Direct3D na urządz
   
 #### <a name="to-enable-remote-debugging-on-your-arm-based-device"></a>Aby włączyć debugowanie zdalne na urządzeniu z systemem ARM  
   
-1.  Zainstaluj [zasad dotyczących zestawów ARM](http://msdn.microsoft.com/windows/desktop/dn469188) na urządzeniu z systemem ARM.  
+1. Zainstaluj [zasad dotyczących zestawów ARM](http://msdn.microsoft.com/windows/desktop/dn469188) na urządzeniu z systemem ARM.  
   
-2.  Zainstaluj [Remote Debugging Tools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) na urządzeniu z systemem ARM.  
+2. Zainstaluj [Remote Debugging Tools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) na urządzeniu z systemem ARM.  
   
 > [!IMPORTANT]
 >  Urządzeń z systemem Windows Phone 8.1 trzeba zarejestrować telefon do programowania. Aby to zrobić, musi być zarejestrowany dla deweloperów. Aby uzyskać więcej informacji, zobacz [sposób wdrażania i uruchamiania aplikacji dla systemu Windows Phone 8](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
@@ -39,11 +39,11 @@ Graphics Diagnostics obsługuje zdalne debugowanie aplikacji Direct3D na urządz
   
 #### <a name="to-configure-and-start-graphics-diagnostics-on-your-device"></a>Aby skonfigurować i uruchomić diagnostyki grafiki na urządzeniu z systemem  
   
-1.  Na **platformy rozwiązania** listy rozwijanej wybierz **ARM** tak, aby urządzenia z systemem ARM będą dostępne jako obiekt docelowy debugowania zdalnego.  
+1. Na **platformy rozwiązania** listy rozwijanej wybierz **ARM** tak, aby urządzenia z systemem ARM będą dostępne jako obiekt docelowy debugowania zdalnego.  
   
-2.  Na **Debuguj element docelowy** listy rozwijanej wybierz urządzenie ARM.  
+2. Na **Debuguj element docelowy** listy rozwijanej wybierz urządzenie ARM.  
   
-3.  W menu, wybierz **debugowania**, **grafiki**, **Rozpocznij diagnostykę**. (Klawiatura: Alt+F5)  
+3. W menu, wybierz **debugowania**, **grafiki**, **Rozpocznij diagnostykę**. (Klawiatura: Alt+F5)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Uruchom Windows Store apps na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md)   

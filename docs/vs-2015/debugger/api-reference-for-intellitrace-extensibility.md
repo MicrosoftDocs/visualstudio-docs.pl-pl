@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fd1387e02b96c9a5a4781e014641a49bbb5280ba
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 1e8cc2613a1fda470bd46951d0a4ffaf2d0eeedd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111509"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>Odwołanie API rozszerzalności IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Korzystając z informacji w tej sekcji, można użyć rozszerzalności IntelliTr
 ## <a name="in-this-section"></a>W tej sekcji  
  Interfejsów API rozszerzania funkcji IntelliTrace są zawarte w jednej przestrzeni nazw  
   
--   <xref:Microsoft.VisualStudio.IntelliTrace>  
+- <xref:Microsoft.VisualStudio.IntelliTrace>  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [IntelliTrace](../debugger/intellitrace.md)  

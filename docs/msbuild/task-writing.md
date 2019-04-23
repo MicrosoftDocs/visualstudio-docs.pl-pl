@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdeab63dffaf7884484f46fbfe9eac2002514e52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0ac45a955c1d6545fa0d2052843c3d48b92e4083
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629927"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110846"
 ---
 # <a name="task-writing"></a>Wpisywanie zadania
 Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Zadania są zawarte w elementów docelowych. Bibliotekę typowych zadań jest dołączana [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], możesz również tworzyć własnych zadań. Aby uzyskać więcej informacji na temat biblioteki zadań, które są dołączone [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], zobacz [zadania, odwołanie](../msbuild/msbuild-task-reference.md).
@@ -27,9 +27,9 @@ Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Zadania 
 
  Istnieją dwie metody, których można użyć podczas wykonywania zadania:
 
--   Implementowanie <xref:Microsoft.Build.Framework.ITask> interfejs bezpośrednio.
+- Implementowanie <xref:Microsoft.Build.Framework.ITask> interfejs bezpośrednio.
 
--   Pochodną klasy z klasy Pomocnika <xref:Microsoft.Build.Utilities.Task>, który jest zdefiniowany w *Microsoft.Build.Utilities.dll* zestawu. Zadanie implementuje ITask i zawiera domyślne implementacje niektórych członków ITask. Ponadto rejestrowanie jest łatwiejsze.
+- Pochodną klasy z klasy Pomocnika <xref:Microsoft.Build.Utilities.Task>, który jest zdefiniowany w *Microsoft.Build.Utilities.dll* zestawu. Zadanie implementuje ITask i zawiera domyślne implementacje niektórych członków ITask. Ponadto rejestrowanie jest łatwiejsze.
 
 W obu przypadkach należy dodać do swojej klasy metodę o nazwie `Execute`, czyli metody, która jest wywoływana, gdy zadanie jest uruchamiane. Ta metoda nie przyjmuje żadnych parametrów i zwraca `Boolean` wartość: `true` Jeśli zadanie zakończyło się pomyślnie lub `false` Jeśli go nie powiodła się. Poniższy przykład przedstawia zadanie, które nie wykonuje żadnych działań i zwraca `true`.
 

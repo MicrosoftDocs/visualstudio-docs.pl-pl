@@ -10,12 +10,12 @@ ms.assetid: 2cd52d1a-4c35-43ca-8a84-9c79dabd907f
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ded54760efe611b337c736e0474042b70ff8bf2e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 30ba0d48676438f19581e93a3af3c900569f5d5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791953"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112262"
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>Przykładowy dodatek Excel dla kodowanych testów UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ Ten przykład dodatku [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] jest za
   
  Ważne elementy tego dodatku:  
   
--   `ThisAddIn`  Klasy — zarządza kanał wywołaniem funkcji zdalnych .NET między `ExcelUICommunicator` i [rozszerzenie kodowanych testów interfejsu użytkownika przykładowe dla programu Excel](../test/sample-coded-ui-test-extension-for-excel.md).  
+- `ThisAddIn`  Klasy — zarządza kanał wywołaniem funkcji zdalnych .NET między `ExcelUICommunicator` i [rozszerzenie kodowanych testów interfejsu użytkownika przykładowe dla programu Excel](../test/sample-coded-ui-test-extension-for-excel.md).  
   
--   `ExcelCodedUIAddinHelper_TemporaryKey.pfx`  -Certyfikatu zabezpieczeń do testowania dodatku.  
+- `ExcelCodedUIAddinHelper_TemporaryKey.pfx`  -Certyfikatu zabezpieczeń do testowania dodatku.  
   
--   `ExcelUICommunicator`  Klasa — ta klasa implementuje `IExcelUICommunication` interfejsu.  
+- `ExcelUICommunicator`  Klasa — ta klasa implementuje `IExcelUICommunication` interfejsu.  
   
 ## <a name="thisaddin-class"></a>Thisaddin — klasa  
  Większość tej klasie faktycznie jest generowany przez Visual Studio Tools dla pakietu Office w `ThisAddIn.Designer.cs` pliku podczas tworzenia projektu dodatku programu Excel.  

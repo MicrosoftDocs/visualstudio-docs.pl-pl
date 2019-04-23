@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b943322fe6172eaaf196cc3f842da9ec0838d8cc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 681564b2148fb9554e80105c2e18b1d220bb37ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702398"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111652"
 ---
 # <a name="how-to-troubleshoot-services"></a>Instrukcje: Rozwiązywanie problemów z usługami
 Istnieje kilka typowych problemów, które mogą wystąpić przy próbie usługi:
@@ -52,9 +52,9 @@ if (log == null) return;
 
 2. Gdy wywołujesz GetService, należy użyć typu usługi i nie jest typem interfejsu. Podczas żądania usługi z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], <xref:Microsoft.VisualStudio.Shell.Package> wyodrębnia identyfikator GUID typu. Usługa nie zostanie znaleziony, jeśli następujące warunki:
 
-   1.  Typ interfejsu jest przekazywany do GetService zamiast typu usługi.
+   1. Typ interfejsu jest przekazywany do GetService zamiast typu usługi.
 
-   2.  Nie identyfikatora GUID jawnie jest przypisany do interfejsu. W związku z tym system tworzy domyślny identyfikator GUID dla obiektu, zgodnie z potrzebami.
+   2. Nie identyfikatora GUID jawnie jest przypisany do interfejsu. W związku z tym system tworzy domyślny identyfikator GUID dla obiektu, zgodnie z potrzebami.
 
 3. Upewnij się, że pakietu VSPackage żądania usługi zostały zlokalizowane. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] po jego konstruowania i przed wywołaniem wystąpienia usługi witryny pakietu VSPackage <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.
 

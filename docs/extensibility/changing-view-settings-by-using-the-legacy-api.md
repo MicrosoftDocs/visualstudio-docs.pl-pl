@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85a0cb811ecb21cf0dd607bd046011bb7018f3cd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dc0dc26a01cdddb4b26dfa65acab2c497618a76e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697601"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106491"
 ---
 # <a name="change-view-settings-by-using-the-legacy-api"></a>Zmienianie ustawień widoku przy użyciu starszej wersji interfejsu API
 Ustawienia podstawowe funkcje edytora, takie jak zawijanie wyrazów, margines zaznaczania i wirtualną przestrzenią, można zmienić przez użytkownika przez **opcje** okno dialogowe. Jednak istnieje również możliwość zmiany tych ustawień programowo.
@@ -25,13 +25,13 @@ Ustawienia podstawowe funkcje edytora, takie jak zawijanie wyrazów, margines za
 
  Poniżej przedstawiono typowy proces dotyczące zmieniania ustawień widoku dla wystąpienia podstawowy edytor.
 
-1.  Wywołaj `QueryInterface` na (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) dla <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfejsu.
+1. Wywołaj `QueryInterface` na (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) dla <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfejsu.
 
-2.  Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> metody, określając wartość GUID_EditPropCategory_View_MasterSettings dla `rguidCategory` parametru.
+2. Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> metody, określając wartość GUID_EditPropCategory_View_MasterSettings dla `rguidCategory` parametru.
 
      W ten sposób zwraca wskaźnik do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfejs, który zawiera zbiór właściwości wymuszone dla widoku. Wszystkie ustawienia w tej grupie są stale wymuszone. Jeśli to ustawienie nie jest w tej grupie, a następnie będzie przestrzegany opcji określonych w **opcje** okno dialogowe lub przez użytkownika polecenia.
 
-3.  Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> metody, określając wartość odpowiednie ustawienia w `idprop` parametru.
+3. Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> metody, określając wartość odpowiednie ustawienia w `idprop` parametru.
 
      Na przykład aby wymusić zawijanie wyrazów, należy wywołać <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> i określ wartość VSEDITPROPID_ViewLangOpt_WordWrap, `vt` dla `idprop` parametru. W tym wywołaniu `vt` jest wariant typu VT_BOOL i `vt.boolVal` jest VARIANT_TRUE.
 

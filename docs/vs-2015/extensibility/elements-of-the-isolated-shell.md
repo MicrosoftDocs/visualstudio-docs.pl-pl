@@ -10,12 +10,12 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cea41ee70001d32bb003a6ccefe033d42274f682
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a95b7da718f050357f6ecd79c90c389dd6085d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789555"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106608"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Elementy programu Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Można zmodyfikować ustawień rejestru, ustawienia środowiska wykonawczego i p
   
  Gdy aplikacja jest uruchomiona, ustawienia rejestru są zdefiniowane w następującej kolejności:  
   
-1.  Utworzenie klucza rejestru dla aplikacji.  
+1. Utworzenie klucza rejestru dla aplikacji.  
   
-2.  Rejestr jest aktualizowany z pliku .pkgdef aplikacji, definiując określonego klucze i wpisy.  
+2. Rejestr jest aktualizowany z pliku .pkgdef aplikacji, definiując określonego klucze i wpisy.  
   
-3.  Dla każdego pakietu, który jest częścią aplikacji rejestr jest aktualizowany z pliku .pkgdef tego pakietu. Każdy pakiet jest zdefiniowana w pliku .pkgdef aplikacji przez $RootKey$ \Packages\\{*vsPackageGuid*} klucza dla pakietu.  
+3. Dla każdego pakietu, który jest częścią aplikacji rejestr jest aktualizowany z pliku .pkgdef tego pakietu. Każdy pakiet jest zdefiniowana w pliku .pkgdef aplikacji przez $RootKey$ \Packages\\{*vsPackageGuid*} klucza dla pakietu.  
   
-4.  Rejestr jest aktualizowany z AppEnvConfig.pkgdef i BaseConfig.pkgdef w *ścieżka instalacji programu Visual Studio SDK*\Common7\IDE\ShellExtensions\Platform katalogu. Te pliki to część pakietu Visual Studio, a także częścią pakietu redystrybucyjnego programu Visual Studio Shell (tryb izolowany).  
+4. Rejestr jest aktualizowany z AppEnvConfig.pkgdef i BaseConfig.pkgdef w *ścieżka instalacji programu Visual Studio SDK*\Common7\IDE\ShellExtensions\Platform katalogu. Te pliki to część pakietu Visual Studio, a także częścią pakietu redystrybucyjnego programu Visual Studio Shell (tryb izolowany).  
   
-5.  Rejestr jest aktualizowany z pliku pkgundef aplikacji przez usunięcie określonego klucze i wpisy.  
+5. Rejestr jest aktualizowany z pliku pkgundef aplikacji przez usunięcie określonego klucze i wpisy.  
   
 ## <a name="run-time-settings"></a>Ustawienia środowiska wykonawczego  
  Po uruchomieniu aplikacji isolated shell wywołuje punkt wejścia uruchamiania powłoki programu Visual Studio. Ustawienia aplikacji są definiowane podczas uruchamiania aplikacji, w następujący sposób:  

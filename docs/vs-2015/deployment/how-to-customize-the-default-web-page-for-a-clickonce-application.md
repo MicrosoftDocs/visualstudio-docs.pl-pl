@@ -18,12 +18,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a8fc28666a7b0c1d44ad36fabffa19974fea5956
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 275d3d0547d83e794801c45a7554d58e181d64e7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771281"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107063"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Instrukcje: Dostosowywanie domyślnej strony internetowej dla aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ Podczas publikowania aplikacji ClickOnce w sieci Web, strony sieci Web jest auto
   
 ### <a name="to-customize-the-publish-web-page"></a>Aby dostosować strony sieci Web publikowania  
   
-1.  Publikowanie aplikacji ClickOnce do lokalizacji w sieci Web. Aby uzyskać więcej informacji, zobacz [jak: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+1. Publikowanie aplikacji ClickOnce do lokalizacji w sieci Web. Aby uzyskać więcej informacji, zobacz [jak: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
-2.  Na serwerze sieci Web otwórz plik Publish.htm w Visual Web Designer lub innego edytora HTML.  
+2. Na serwerze sieci Web otwórz plik Publish.htm w Visual Web Designer lub innego edytora HTML.  
   
-3.  Dostosowywanie strony zgodnie z potrzebami i zapisz go.  
+3. Dostosowywanie strony zgodnie z potrzebami i zapisz go.  
   
-4.  Opcjonalna. Aby zapobiec zastąpieniu strony sieci Web publikowanie niestandardowych programu Visual Studio, usuń zaznaczenie pola wyboru **automatycznie Generuj stronę sieci web wdrożenia po każdej publikowania** w oknie dialogowym Opcje publikowania.  
+4. Opcjonalna. Aby zapobiec zastąpieniu strony sieci Web publikowanie niestandardowych programu Visual Studio, usuń zaznaczenie pola wyboru **automatycznie Generuj stronę sieci web wdrożenia po każdej publikowania** w oknie dialogowym Opcje publikowania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)   

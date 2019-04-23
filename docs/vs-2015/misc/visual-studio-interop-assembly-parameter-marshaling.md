@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: 6bde8ba3acd88936e482124f189fd35f7a1d6421
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 209f5956d77e714f7f663693f9ac22241d428480
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755223"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105072"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Parametr zestawu międzyoperacyjnego programu Visual Studio Marshalingu
 Pakietów VSPackage, które są zapisywane w kodzie zarządzanym może być konieczne wywoływanie lub można wywoływać za pomocą kodu niezarządzanego COM. Argumenty metody są zazwyczaj transformowany lub zorganizować automatycznie, organizator międzyoperacyjny. Jednak czasami argumenty nie mogą zostać przekształcone w prosty sposób. W takich przypadkach parametrów prototypu zestawu międzyoperacyjnego metody są używane do możliwie najdokładniej dopasować parametrów funkcji COM. Aby uzyskać więcej informacji, zobacz [Marshaling międzyoperacyjności](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
@@ -28,11 +28,11 @@ Pakietów VSPackage, które są zapisywane w kodzie zarządzanym może być koni
   
  Dokumentacja dla każdej metody zawiera trzy istotne sekcje:  
   
--   [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] Prototypu funkcji COM.  
+- [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] Prototypu funkcji COM.  
   
--   Prototyp metoda zestawu międzyoperacyjnego.  
+- Prototyp metoda zestawu międzyoperacyjnego.  
   
--   Lista parametrów COM i krótki opis każdego z nich.  
+- Lista parametrów COM i krótki opis każdego z nich.  
   
 ##### <a name="look-for-differences-between-the-two-prototypes"></a>Zwróć uwagę na różnice między dwa prototypy  
  Zagadnienia dotyczące współdziałania większość dziedziczyć niezgodności między definicji typu określonego za pomocą interfejsu COM, jak i definicja tego samego typu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zestawy międzyoperacyjne. Na przykład, należy wziąć pod uwagę różnice w możliwość przekazywania `null` wartości parametrów [out]. Należy szukać różnice między dwa prototypy i należy wziąć pod uwagę ich rozgałęzień dla przekazywanych danych.  
@@ -79,17 +79,17 @@ else
 > [!NOTE]
 >  Wiadomo, że następujące metody przekazywania `IUnknown` obiektu wskaźników jako typ <xref:System.IntPtr>. Je obsłużyć zgodnie z opisem w tej sekcji.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
   
 ### <a name="optional-out-parameters"></a>Opcjonalne [parametry out]  
  Wyszukaj parametry, które są zdefiniowane jako [out] — Typ danych (`int`, `object`i tak dalej) w COM interfejs, ale są definiowane jako tablice tego samego typu danych w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zestawu międzyoperacyjnego metody prototypu.  

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73266c77a26f614af9978b48f7475086070aa5e6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1d4221cfdc0d741264aa4667892117ba0cc24f9a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666010"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108285"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Przegląd wielowersyjności kodu w programie MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ Korzystając z programu MSBuild, można kompilować aplikację do uruchamiania n
   
  Oto niektóre funkcje przeznaczone dla programu MSBuild:  
   
--   Można opracować aplikację, która jest przeznaczony dla starszej wersji programu .NET Framework, na przykład wersji 2.0, 3.5 i 4.  
+- Można opracować aplikację, która jest przeznaczony dla starszej wersji programu .NET Framework, na przykład wersji 2.0, 3.5 i 4.  
   
--   Można wskazać framework innych niż .NET Framework, na przykład Silverlight Framework.  
+- Można wskazać framework innych niż .NET Framework, na przykład Silverlight Framework.  
   
--   Możesz wybrać docelową *profil framework*, czyli uprzednio zdefiniowany podzbiór platformy docelowej.  
+- Możesz wybrać docelową *profil framework*, czyli uprzednio zdefiniowany podzbiór platformy docelowej.  
   
--   Jeśli z dodatkiem Service pack dla bieżącej wersji programu .NET Framework jest zwalniana, można go wykorzystać.  
+- Jeśli z dodatkiem Service pack dla bieżącej wersji programu .NET Framework jest zwalniana, można go wykorzystać.  
   
--   Przeznaczone dla programu MSBuild gwarantuje, że aplikacja używa tylko funkcjonalności, która jest dostępna w docelowej platformy framework i platformy.  
+- Przeznaczone dla programu MSBuild gwarantuje, że aplikacja używa tylko funkcjonalności, która jest dostępna w docelowej platformy framework i platformy.  
   
 ## <a name="target-framework-and-platform"></a>Platforma  
  A *platformę docelową* jest wersją .NET Framework, projekt został opracowany pod kątem uruchamiania na i *platformę docelową* czy projekt jest kompilowany do uruchamiania na Platforma systemu.  Na przykład możesz chcieć aplikacji .NET Framework 2.0, do uruchamiania na 32-bitowej platformie, która jest zgodna z rodziny procesorów 802 x 86 (x86) docelowej. Kombinacja wartości docelowej i platforma docelowa jest znany jako *kontekstu docelowej*. Aby uzyskać więcej informacji, zobacz [platformy docelowej i platformy docelowej](../msbuild/msbuild-target-framework-and-target-platform.md).  

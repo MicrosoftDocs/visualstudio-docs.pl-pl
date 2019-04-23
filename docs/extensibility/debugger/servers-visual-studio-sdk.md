@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2e5b50a3f2969f8f22ce938522526a6010c640a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 56ec28d0d9202bfd72d31e95c53038dd1fa475e9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691387"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111782"
 ---
 # <a name="servers-visual-studio-sdk"></a>Serwery (zestaw SDK programu Visual Studio)
 W architekturze debugera *serwera*:
 
--   Jest kontenerem portów i dostawcy portów i komunikuje się portów i dostawcy portów Menedżer debugowania sesji (SDM) i aparaty debugowania.
+- Jest kontenerem portów i dostawcy portów i komunikuje się portów i dostawcy portów Menedżer debugowania sesji (SDM) i aparaty debugowania.
 
--   Można zidentyfikować się według nazwy i wyliczanie jego portów i dostawcy portów.
+- Można zidentyfikować się według nazwy i wyliczanie jego portów i dostawcy portów.
 
--   Jest reprezentowany przez [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) interfejs, który jest implementowane tylko przez program Visual Studio (jedno wystąpienie serwera dla każdego wystąpienia uruchomienia programu Visual Studio).
+- Jest reprezentowany przez [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) interfejs, który jest implementowane tylko przez program Visual Studio (jedno wystąpienie serwera dla każdego wystąpienia uruchomienia programu Visual Studio).
 
 ## <a name="see-also"></a>Zobacz także
 - [Porty](../../extensibility/debugger/ports.md)

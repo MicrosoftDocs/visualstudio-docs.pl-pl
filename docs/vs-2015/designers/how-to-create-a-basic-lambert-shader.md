@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 15bf6243fc6e39a4cd7817bdfe964943ab16a3d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d70a0c279c0720e79477b518ab63cf0326ca5237
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792011"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111249"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Instrukcje: Tworzenie podstawowego modułu cieniującego Lamberta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ W tym dokumencie przedstawiono sposób użycia Shader Designer i język programu
   
  Ten dokument przedstawia te działania:  
   
--   Dodawanie węzłów do wykresu programu do cieniowania  
+- Dodawanie węzłów do wykresu programu do cieniowania  
   
--   Trwa rozłączanie węzłów  
+- Trwa rozłączanie węzłów  
   
--   Łączenie z węzłami  
+- Łączenie z węzłami  
   
 ## <a name="the-lambert-lighting-model"></a>Modelu oświetlenia Lamberta  
  Model oświetlenia Lambert dołącza oświetlenia otoczenia i kierunkowe odcień obiektów w scenie 3-D. Otoczenia składniki zapewniają podstawowy poziom oświetlenia w scenie 3-D. Kierunkowe składniki zapewniają dodatkowe oświetlenia ze źródeł (dalekie) światła kierunkowego. Oświetlenia otoczenia ma wpływ na wszystkie powierzchnie w scenie tak samo, niezależnie od ich orientacji. Dla danego powierzchni jest to produkt koloru otoczenia powierzchni i koloru i intensywności oświetlenia otoczenia na scenie. Światła kierunkowego ma wpływ na co narażonego na ataki w scenie inaczej, zgodnie z orientacją powierzchni względem kierunku po stronie źródła światła. Jest to produkt kolor rozpraszania i orientację powierzchni, a kolor, intensywność i kierunek źródła światła. Powierzchnie, które są spowodowane bezpośrednio do źródła światła otrzymują maksymalny udział i powierzchnie, które są spowodowane bezpośrednio natychmiast otrzymać nie wkład. W ramach modelu oświetlenia Lamberta składnik otoczenia i co najmniej jednego składnika kierunkowe są łączone w celu określenia udział łączny kolor rozpraszania dla każdego punktu w obiekcie.  

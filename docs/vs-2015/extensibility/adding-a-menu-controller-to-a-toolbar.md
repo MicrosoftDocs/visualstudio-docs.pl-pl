@@ -12,12 +12,12 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 28588f04119eea31dfb0f32beb3b78376aa1b6b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c63f6c98153c9f7a9fab171b3caddd57df717cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781309"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107804"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Dodawanie kontrolera menu do paska narzędzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ W tym przewodniku opiera się na [Dodawanie paska narzędzi do okna narzędzi](.
   
 ## <a name="implementing-the-menu-controller-commands"></a>Implementowanie polecenia Menu kontrolera  
   
-1.  W TWTestCommandPackageGuids.cs Dodaj identyfikatory poleceń menu trzech elementów po poleceniu istniejących identyfikatorów.  
+1. W TWTestCommandPackageGuids.cs Dodaj identyfikatory poleceń menu trzech elementów po poleceniu istniejących identyfikatorów.  
   
     ```csharp  
     public const int cmdidMCItem1 = 0x130;  
@@ -122,13 +122,13 @@ W tym przewodniku opiera się na [Dodawanie paska narzędzi do okna narzędzi](.
     public const int cmdidMCItem3 = 0x132;  
     ```  
   
-2.  W TWTestCommand.cs Dodaj następujący kod w górnej części klasy TWTestCommand.  
+2. W TWTestCommand.cs Dodaj następujący kod w górnej części klasy TWTestCommand.  
   
     ```csharp  
     private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
-3.  W Konstruktorze TWTestCommand po ostatnim wywołaniu `AddCommand` metody, Dodaj kod, aby kierować zdarzenia dla każdego polecenia za pomocą tej samej procedury obsługi.  
+3. W Konstruktorze TWTestCommand po ostatnim wywołaniu `AddCommand` metody, Dodaj kod, aby kierować zdarzenia dla każdego polecenia za pomocą tej samej procedury obsługi.  
   
     ```csharp  
     for (int i = TWTestCommandPackageGuids.cmdidMCItem1; i <=  
@@ -149,7 +149,7 @@ W tym przewodniku opiera się na [Dodawanie paska narzędzi do okna narzędzi](.
     }  
     ```  
   
-4.  Dodaj program obsługi zdarzeń do klasy TWTestCommand, aby oznaczyć wybrane polecenie jako zaznaczone.  
+4. Dodaj program obsługi zdarzeń do klasy TWTestCommand, aby oznaczyć wybrane polecenie jako zaznaczone.  
   
     ```csharp  
     private void OnMCItemQueryStatus(object sender, EventArgs e)  
@@ -162,7 +162,7 @@ W tym przewodniku opiera się na [Dodawanie paska narzędzi do okna narzędzi](.
     }  
     ```  
   
-5.  Dodaj program obsługi zdarzeń, która wyświetla komunikat MessageBox, gdy użytkownik wybierze polecenie na kontroler menu:  
+5. Dodaj program obsługi zdarzeń, która wyświetla komunikat MessageBox, gdy użytkownik wybierze polecenie na kontroler menu:  
   
     ```csharp  
     private void OnMCItemClicked(object sender, EventArgs e)  
@@ -214,13 +214,13 @@ W tym przewodniku opiera się na [Dodawanie paska narzędzi do okna narzędzi](.
   
 ## <a name="testing-the-menu-controller"></a>Testowanie kontroler Menu  
   
-1.  Skompiluj projekt, a następnie rozpocząć debugowanie. Powinien zostać wyświetlony wystąpienie eksperymentalne.  
+1. Skompiluj projekt, a następnie rozpocząć debugowanie. Powinien zostać wyświetlony wystąpienie eksperymentalne.  
   
-2.  Otwórz **ToolWindow testu** na **widok / inne Windows** menu.  
+2. Otwórz **ToolWindow testu** na **widok / inne Windows** menu.  
   
      Kontroler menu pojawia się na pasku narzędzi w oknie narzędzia i wyświetla **MC element 1**.  
   
-3.  Przycisk menu kontrolera strzałkę po lewej stronie.  
+3. Przycisk menu kontrolera strzałkę po lewej stronie.  
   
      Powinien zostać wyświetlony trzy elementy: pierwsze z nich jest zaznaczony i ma pole podświetlenie wokół odpowiednią ikonę. Kliknij przycisk **elementu MC 3**.  
   

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59e712d9354432bc142478935827a6439547321c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: be54c19a1e09b610611c8791d62d012ebdaf5ae8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662399"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106270"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Wybieranie katalogu instalacyjnego dla pakietu VSPackage
 Pakietu VSPackage i towarzyszące mu pliki muszą znajdować się w systemie plików użytkownika. Lokalizacja zależy od tego, czy pakietu VSPackage odbywa się lub niezarządzane schematu przechowywania wersji side-by-side i wybór użytkownika.
@@ -47,15 +47,15 @@ Pakietu VSPackage i towarzyszące mu pliki muszą znajdować się w systemie pli
 
  [Zarządzanie pakietami VSPackage](../../extensibility/managing-vspackages.md) artykułu wskazuje, że wpisy rejestru kontrolują lokalizację [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] faktycznie szuka pakietu VSPackage satelickiej biblioteki DLL. Jednak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] próbuje załadować satelitarnej biblioteki DLL w podkatalogu o nazwie wartości identyfikatora LCID, w następującej kolejności:
 
-1.  Domyślny identyfikator LCID (LCID usługi Visual Studio, na przykład *\1033* w języku angielskim)
+1. Domyślny identyfikator LCID (LCID usługi Visual Studio, na przykład *\1033* w języku angielskim)
 
-2.  Domyślnie LCID podjęzyk domyślne.
+2. Domyślnie LCID podjęzyk domyślne.
 
-3.  Ustawienia domyślne systemu LCID.
+3. Ustawienia domyślne systemu LCID.
 
-4.  Ustawienia domyślne systemu LCID z odmianą języka domyślnego.
+4. Ustawienia domyślne systemu LCID z odmianą języka domyślnego.
 
-5.  Federalna Angielski (*. \1033* lub *. \0x409*).
+5. Federalna Angielski (*. \1033* lub *. \0x409*).
 
 Jeśli biblioteka DLL pakietu VSPackage zawiera zasoby i **SatelliteDll\DllName** punkty wejścia rejestru, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] próbuje załadować je w podanej kolejności.
 

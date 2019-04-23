@@ -2,7 +2,7 @@
 title: Co nowego w programie Visual Studio 2019
 titleSuffix: ''
 description: Dowiedz się więcej o nowych funkcjach w programie Visual Studio 2019 r.
-ms.date: 04/04/2019
+ms.date: 04/11/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 399207f81ec1f25e6a5169235820989c1b2c34e4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ca411e0c66033ea923a979f68ed19c1ec02b6ed9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59477544"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109195"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
@@ -167,6 +167,12 @@ Pobierz migawkę wykonywanie danej aplikacji w chmurze, aby zobaczyć dokładnie
 Dodaliśmy obsługę przeznaczone dla aplikacji ASP.NET (desktop i Core), które są uruchamiane na Maszynie wirtualnej platformy Azure. Ponadto Dodaliśmy obsługę aplikacji działających w usłudze Azure Kubernetes Service. Rozszerzenie Snapshot Debugger może pomóc w znacznie skrócić czas potrzebny do rozwiązywania problemów występujących w środowiskach produkcyjnych.
 
 Aby uzyskać więcej informacji, zobacz [debugowanie na żywo aplikacji ASP.NET, Azure, przy użyciu rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-applications.md) strony, a [wprowadzenie do czasu podróży debugowania dla programu Visual Studio Enterprise 2019](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/) wpis w blogu.
+
+## <a name="whats-next"></a>Jaka jest przyszłość
+
+Firma Microsoft aktualizuje program Visual Studio 2019 r często z nowymi funkcjami, które mogą ułatwić programowanie jeszcze lepsze środowisko. Aby dowiedzieć się więcej na temat naszych najnowszych innowacji, zapoznaj się z [Blog dotyczący programu Visual Studio](https://devblogs.microsoft.com/visualstudio/). I dla rekordu udostępniliśmy w wersji zapoznawczej do daty, Przyjrzyj się [informacje o wersji zapoznawczej](/visualstudio/releases/2019/release-notes-preview/).
+
+Chcesz wiedzieć więcej o tym, co jeszcze znajduje się w działa dla programu Visual Studio 2019 r.? Zobacz [harmonogram działania programu Visual Studio](/visualstudio/productinfo/vs-roadmap/).
 
 ## <a name="give-us-feedback"></a>Przekaż nam swoją opinię
 

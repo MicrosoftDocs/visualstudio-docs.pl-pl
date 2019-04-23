@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 9b31859d677ab69108ad5e2681890a8c4a88f854
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0263afa4eeb9094802fe6272380b6b53106da4a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911212"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111886"
 ---
 # <a name="set-up-remote-workspaces"></a>Konfigurowanie zdalnych obszarów roboczych
 
@@ -96,14 +96,19 @@ Aby samodzielnie wystawiania certyfikatu z podpisem własnym:
 
 1. SSH lub logowanie na maszynie z systemem Linux.
 2. Zainstaluj `ssl-cert` pakietu:
+
     ```sh
     sudo apt-get install ssl-cert
     ```
+
 3. Uruchom `make-ssl-cert` do wygenerowania certyfikatu SSL z podpisem własnym domyślne:
+
     ```sh
     sudo make-ssl-cert generate-default-snakeoil --force-overwrite
     ```
+
 4. Konwertuj wygenerowany klucz i pliki PEM do pliku PFX. Wygenerowany plik PFX powinna być w folderze głównym:
+
     ```sh
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```

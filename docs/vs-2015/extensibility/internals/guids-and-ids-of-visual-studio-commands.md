@@ -14,12 +14,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 598daccecbd2b03d0df117262571f6f511e2a247
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2feef3cbe72b7eb8db96052236fe483733e22273
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798515"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107752"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Identyfikatory GUID i identyfikatory poleceń programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ Identyfikator GUID i identyfikator wartości polecenia zawarte w programie Visua
 ### <a name="special-cases"></a>Specjalne przypadki
  W następujących przypadkach tekst menu lub tekst etykietki narzędzia może wyglądać inaczej niż w definicji polecenia.
 
--   Elementy menu, które obejmują podkreślony znak, takie jak **drukowania** polecenie **pliku** menu, w którym jest podkreślone P.
+- Elementy menu, które obejmują podkreślony znak, takie jak **drukowania** polecenie **pliku** menu, w którym jest podkreślone P.
 
      Znaki, które są poprzedzone znaku "&" w nazwach elementów menu są wyświetlane jako podkreślony. Jednak .vsct — pliki są zapisywane w pliku XML, który używa znaku "&", aby wskazać znaki specjalne i wymaga, że należy określić handlowe "i", który ma być wyświetlana jako&amp;". W związku z tym, w pliku vsct **drukowania** polecenia jest wyświetlany jako "&amp;drukowania".
 
--   Polecenia, które mają dynamiczne tekstu, takie jak **Zapisz** *bieżącej, nazwa_pliku*i dynamicznie wygenerowano elementy menu, takie jak elementy **ostatnio używane pliki** listy.
+- Polecenia, które mają dynamiczne tekstu, takie jak **Zapisz** *bieżącej, nazwa_pliku*i dynamicznie wygenerowano elementy menu, takie jak elementy **ostatnio używane pliki** listy.
 
      Nie ma niezawodne możliwości wyszukiwania na dynamiczny tekst. Zamiast tego należy znaleźć grupy, która obsługuje polecenie żądany przez konsultacji [identyfikatory GUID i identyfikatory Visual Studio menu](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) lub [identyfikatory GUID i identyfikatory programu Visual Studio pasków narzędzi](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)i wyszukaj identyfikator tej grupy. Jeśli definicji polecenia nie ma grupy jako jego [elementu nadrzędnego](../../extensibility/parent-element.md), wyszukaj SharedCmdPlace.vsct i ShellCmdPlace.vsct (lub VsDbgCmdPlace.vsct dla poleceń debugera) `<CommandPlacement>` element, który ustawia element nadrzędny polecenie. AndVsDbgCmdPlace.vsct SharedCmdPlace.vsct, ShellCmdPlace.vsct, znajdują się w *ścieżka instalacji programu Visual Studio SDK*\VisualStudioIntegration\Common\Inc\ folderu.
 

@@ -13,18 +13,18 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: d392e19bb51cd981cc833535556eb083e8e5ba07
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3a81f6aa138b361a44a272ebda3557d27a914c64
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59674086"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112360"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>Rejestrowanie i powtarzanie na żywo aplikacji ASP.NET na maszynach wirtualnych platformy Azure przy użyciu rozszerzenia Snapshot Debugger
 
-Czas podróży debugowania (TTD) (wersja zapoznawcza) w programie Visual Studio Enterprise umożliwia rejestrowanie aplikacji internetowej uruchomionej na maszynie wirtualnej (maszyny Wirtualnej platformy Azure) i następnie dokładnie rekonstrukcji i odtwarzania ścieżki wykonywania. TTD integruje się z naszym rozszerzenia Snapshot Debugger oferty i umożliwia przewijanie i odtworzenia wszystkich wierszy kodu, jednak wiele razy, należy pomaga Ci wyizolować i zidentyfikować problemy, które mogą występować tylko w środowiskach produkcyjnych.
+Czas podróży debugowania (TTD) (wersja zapoznawcza) w programie Visual Studio Enterprise umożliwia rejestrowanie aplikacji internetowej uruchomionej na maszynie Wirtualnej platformy Azure maszyna wirtualna () i następnie dokładnie rekonstrukcji i odtwarzania ścieżki wykonywania. TTD integruje się z rozszerzenia Snapshot Debugger i umożliwia temu przewinąć do tyłu i odtworzenia wszystkich wierszy kodu dowolną liczbę razy, której potrzebujesz, pomagając Ci wyizolować i zidentyfikować problemy, które mogą występować tylko w środowiskach produkcyjnych.
 
-Przechwytywanie nagranie TTD nie zostanie zatrzymany aplikacji, jednak nagrywanie dodać znaczne obciążenie do uruchomionego procesu, spowalniania na podstawie czynników, które obejmują rozmiar procesu i liczba aktywnych wątków.
+Przechwytywanie nagranie TTD nie zostanie zatrzymany aplikacji. Jednak nagrywanie TDD znacznie zwiększa obciążenie do uruchomionego procesu, spowalniania na podstawie czynników, które obejmują rozmiar procesu i liczba aktywnych wątków.
 
 Ta funkcja jest dostępna w wersji zapoznawczej dla wersji programu Visual Studio 2019 Przejdź licencją na żywo.
 
@@ -32,8 +32,8 @@ W tym samouczku wykonasz następujące czynności:
 
 > [!div class="checklist"]
 > * Uruchom rozszerzenie Snapshot Debugger z włączonym debugowaniem podróży czasu
-> * Ustawianie punktu przyciągania i zbierać rejestrującego czas podróży
-> * Rozpocznij debugowanie rejestrującego czas podróży
+> * Ustawianie punktu przyciągania i zbieranie przez czas podróży nagrywanie
+> * Start debugging czas podróży nagrywanie
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -46,7 +46,7 @@ W tym samouczku wykonasz następujące czynności:
 
 ## <a name="open-your-project-and-start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>Otwórz swój projekt i uruchomić rozszerzenia Snapshot Debugger z włączonym debugowaniem podróży czasu
 
-1. Otwórz projekt, który chcesz zebrać rejestrującego czas podróży.
+1. Otwórz projekt, dla której chcesz zbierać czas podróży rejestrowania.
 
     > [!IMPORTANT]
     > Aby rozpocząć TTD, należy otworzyć *tę samą wersję kodu źródłowego* , są publikowane w usłudze maszyny Wirtualnej platformy Azure.
@@ -58,24 +58,24 @@ W tym samouczku wykonasz następujące czynności:
     > [!IMPORTANT]
     > Po raz pierwszy wybierzesz **dołączyć rozszerzenie Snapshot Debugger** dla swojej maszyny Wirtualnej usług IIS jest automatycznie uruchamiany ponownie.
 
-    Metadane dla **modułów** nie zostanie początkowo aktywowane, przejdź do aplikacji sieci web i **Rozpocznij zbieranie** przycisk stanie się aktywny. Program Visual Studio jest teraz w trybie debugowania migawek.
+    Metadane dla **modułów** nie został początkowo uaktywniony. Przejdź do aplikacji sieci web i **Rozpocznij zbieranie** przycisk staje się aktywny. Program Visual Studio jest teraz w trybie debugowania migawek.
 
    ![Tryb debugowania migawek](../debugger/media/snapshot-message.png)
 
     > [!NOTE]
     > Rozszerzenie witryny usługi Application Insights obsługuje również debugowania migawek. Jeśli wystąpią "rozszerzenie nieaktualna witryny" komunikat o błędzie, zobacz [rozwiązania problemu wskazówki i znanych problemów dotyczących debugowania migawek](../debugger/debug-live-azure-apps-troubleshooting.md) dla uaktualnienie szczegółowe informacje.
 
-   **Modułów** okna dowiesz się, gdy wszystkie moduły zostały załadowane dla maszyny Wirtualnej platformy Azure (wybierz **Debuguj > Windows > modułów** otworzyć to okno).
+   **Modułów** okna dowiesz się, gdy wszystkie moduły są ładowane dla maszyny Wirtualnej platformy Azure (wybierz **Debuguj > Windows > modułów** otworzyć to okno).
 
    ![Sprawdź okno modułów](../debugger/media/snapshot-modules.png)
 
-## <a name="set-a-snappoint-and-collect-a-time-travel-recording"></a>Ustawianie punktu przyciągania i zbierać rejestrującego czas podróży
+## <a name="set-a-snappoint-and-collect-a-time-travel-recording"></a>Ustawianie punktu przyciągania i zbieranie przez czas podróży nagrywanie
 
 1. W edytorze kodu kliknij lewym marginesie na oprawę w metodzie, który Cię interesuje można ustawić punktu przyciągania. Upewnij się, że kod, który będzie wykonywać.
 
    ![Ustaw punkt przyciągania](../debugger/media/time-travel-debugging-set-snappoint-settings.png)
 
-1. Kliknij prawym przyciskiem myszy ikonę punkt przyciągania (piłka puste), a następnie wybierz **akcje**. Kliknij w oknie Ustawienia migawek **akcji** pole wyboru. Następnie kliknij przycisk **zbierać dane śledzenia podróży czas na końcu tej metody** pole wyboru.
+1. Kliknij prawym przyciskiem myszy ikonę punkt przyciągania (piłka puste), a następnie wybierz **akcje**. W **ustawienia migawek** okna, kliknij przycisk **akcji** pole wyboru. Następnie kliknij przycisk **zbierać dane śledzenia podróży czas na końcu tej metody** pole wyboru.
 
    ![Zbieranie czasu podróży śledzenia na końcu metody](../debugger/media/time-travel-debugging-set-snappoint-action.png)
 
@@ -85,9 +85,9 @@ W tym samouczku wykonasz następujące czynności:
 
 ## <a name="take-a-snapshot"></a>Utwórz migawkę
 
-Po włączeniu punktu przyciągania będzie przechwytywać migawki, ilekroć wykonywany wiersza kodu, w którym znajduje się punkt przyciągania. To wykonanie może być spowodowany rzeczywistego żądania na serwerze. Aby wymusić Twojego punktu przyciągania trafień, przejdź do widoku przeglądarki witryny sieci web i podjąć działania wymaganego co powodować Twojego punktu przyciągania na.
+Po włączeniu punktu przyciągania przechwytuje migawki zawsze wtedy, gdy wykonuje wiersza kodu, w którym znajduje się punkt przyciągania. To wykonanie może być spowodowane rzeczywistego żądania na serwerze. Aby wymusić Twojego punktu przyciągania trafień, przejdź do widoku przeglądarki witryny sieci web i podjąć działania wymaganego co powodować Twojego punktu przyciągania na.
 
-## <a name="start-debugging-a-time-travel-recording"></a>Rozpocznij debugowanie rejestrującego czas podróży
+## <a name="start-debugging-a-time-travel-recording"></a>Start debugging czas podróży nagrywanie
 
 1. Po osiągnięciu punktu przyciągania migawki pojawia się w oknie narzędzia diagnostyczne. Aby otworzyć to okno, wybierz **Debuguj > Windows > Pokaż narzędzia diagnostyczne**.
 
@@ -95,7 +95,7 @@ Po włączeniu punktu przyciągania będzie przechwytywać migawki, ilekroć wyk
 
 1. Kliknij łącze Wyświetl migawkę można otworzyć czas podróży, rejestrowanie w edytorze kodu.
   
-   Można wykonywać każdy wiersz kodu, rejestrowane przez TTD przy użyciu **Kontynuuj** i **odwrotnego nadal** przycisków. Ponadto na pasku narzędzi debugowania można używać do **Pokaż następną instrukcję**, **Step Into**, **Step Over**, **Step Out**,  **Krok do**, **ponownie Przekrocz**, **kroku wycofywanie**.
+   Można wykonywać każdy wiersz kodu, rejestrowane przez TTD przy użyciu **Kontynuuj** i **odwrotnego nadal** przycisków. Ponadto **debugowania** narzędzi można używać do **Pokaż następną instrukcję**, **Step Into**, **Step Over**, **Step Out**, **Krok z powrotem do**, **ponownie Przekrocz**, **kroku wycofywanie**.
 
    ![Rozpocznij debugowanie](../debugger/media/time-travel-debugging-step-commands.png)
 
@@ -109,11 +109,11 @@ Po włączeniu punktu przyciągania będzie przechwytywać migawki, ilekroć wyk
 
 ## <a name="set-a-conditional-snappoint"></a>Ustaw warunkowego punktu przyciągania
 
-Jeśli jest trudne do odtworzenia w określonym stanie w swojej aplikacji, należy rozważyć, czy korzystanie z warunkowego punktu przyciągania mogą pomóc w. Warunkowe punkty przyciągania uniknąć zbierania rejestrowanie czasu podróży, aż aplikacja przejdzie do żądanego stanu, na przykład w przypadku zmiennej określonej wartości, które chcesz sprawdzić. [Możesz ustawić warunki, używając wyrażeń i filtry, lub liczbą trafień](../debugger/debug-live-azure-apps-troubleshooting.md).
+Jeśli jest trudne do odtworzenia w określonym stanie w swojej aplikacji, należy rozważyć, czy korzystanie z warunkowego punktu przyciągania mogą pomóc w. Warunkowe punkty przyciągania uniknąć zbieranie przez czas podróży, rejestrowanie, aż aplikacja przejdzie do żądanego stanu, na przykład w przypadku zmiennej określonej wartości, które chcesz sprawdzić. [Możesz ustawić warunki, używając wyrażeń i filtry, lub liczbą trafień](../debugger/debug-live-azure-apps-troubleshooting.md).
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym samouczku wyjaśniono sposób zbierania rejestrującego czas podróży dla maszyn wirtualnych platformy Azure. Warto przeczytać więcej na temat rozszerzenia Snapshot Debugger.
+W tym samouczku wyjaśniono sposób zbierania czasu podróży, rejestrowania usługi Azure Virtual Machines. Warto przeczytać więcej na temat rozszerzenia Snapshot Debugger.
 
 > [!div class="nextstepaction"]
 > [Debugowanie migawek — często zadawane pytania](../debugger/debug-live-azure-apps-faq.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 716366366bd9bb7514d042748b07dcb30a3567eb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6c3d9394eef00ef315d6a0c6afc35e0af5dd7854
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923827"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112249"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Tworzenie kontrolki użytkownika formularzy Windows obsługującego proste powiązanie danych
 
@@ -39,27 +39,27 @@ Ten przewodnik tworzy prosty formant, który wyświetla dane z jednej kolumny w 
 
 Z tego instruktażu dowiesz się jak:
 
--   Utwórz nową **aplikacja interfejsu Windows Forms**.
+- Utwórz nową **aplikacja interfejsu Windows Forms**.
 
--   Dodaj nową **kontrolki użytkownika** do projektu.
+- Dodaj nową **kontrolki użytkownika** do projektu.
 
--   Wizualnie projektować kontrolkę użytkownika.
+- Wizualnie projektować kontrolkę użytkownika.
 
--   Implementowanie `DefaultBindingProperty` atrybutu.
+- Implementowanie `DefaultBindingProperty` atrybutu.
 
--   Tworzenie zestawu danych za pomocą **konfiguracji źródła danych** kreatora.
+- Tworzenie zestawu danych za pomocą **konfiguracji źródła danych** kreatora.
 
--   Ustaw **Phone** kolumny w **źródeł danych** okno, aby użyć nowego formantu.
+- Ustaw **Phone** kolumny w **źródeł danych** okno, aby użyć nowego formantu.
 
--   Utwórz formularz do wyświetlania danych w nowej kontrolki.
+- Utwórz formularz do wyświetlania danych w nowej kontrolki.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Northwind.
 
-1.  Jeśli nie masz programu SQL Server Express LocalDB, zainstaluj go z [stronę pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), lub za pomocą **Instalatora programu Visual Studio**. W **Instalatora programu Visual Studio**, można zainstalować programu SQL Server Express LocalDB, jako część **przechowywanie i przetwarzanie danych** obciążenie, lub jako poszczególnych składników.
+1. Jeśli nie masz programu SQL Server Express LocalDB, zainstaluj go z [stronę pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), lub za pomocą **Instalatora programu Visual Studio**. W **Instalatora programu Visual Studio**, można zainstalować programu SQL Server Express LocalDB, jako część **przechowywanie i przetwarzanie danych** obciążenie, lub jako poszczególnych składników.
 
-2.  Instalowanie przykładowej bazy danych Northwind, wykonaj następujące czynności:
+2. Instalowanie przykładowej bazy danych Northwind, wykonaj następujące czynności:
 
     1. W programie Visual Studio, otwórz **Eksplorator obiektów SQL Server** okna. (Eksplorator obiektów SQL Server jest instalowany jako część **przechowywanie i przetwarzanie danych** obciążenie w **Instalatora programu Visual Studio**.) Rozwiń **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w ramach wystąpienia LocalDB, a następnie wybierz pozycję **nowe zapytanie**.
 
@@ -89,9 +89,9 @@ Pierwszym krokiem jest utworzenie **aplikacja interfejsu Windows Forms**:
 
 Ten przewodnik tworzy po prostego formantu powiązać dane z **kontrolki użytkownika**. Dodaj **kontrolki użytkownika** elementu do **SimpleControlWalkthrough** projektu:
 
-1.  Z **projektu** menu, wybierz **Dodaj kontrolkę użytkownika**.
+1. Z **projektu** menu, wybierz **Dodaj kontrolkę użytkownika**.
 
-2.  Typ **PhoneNumberBox** w obszarze nazw, a następnie kliknij przycisk **Dodaj**.
+2. Typ **PhoneNumberBox** w obszarze nazw, a następnie kliknij przycisk **Dodaj**.
 
      **PhoneNumberBox** formant jest dodawany do **Eksploratora rozwiązań**i zostanie otwarty w projektancie.
 
@@ -99,48 +99,48 @@ Ten przewodnik tworzy po prostego formantu powiązać dane z **kontrolki użytko
 
 W tym przewodniku rozszerza istniejący <xref:System.Windows.Forms.MaskedTextBox> utworzyć **PhoneNumberBox** sterowania:
 
-1.  Przeciągnij <xref:System.Windows.Forms.MaskedTextBox> z **przybornika** na powierzchnię projektu kontrolki użytkownika.
+1. Przeciągnij <xref:System.Windows.Forms.MaskedTextBox> z **przybornika** na powierzchnię projektu kontrolki użytkownika.
 
-2.  Wybierz tag inteligentny <xref:System.Windows.Forms.MaskedTextBox> możesz po prostu przeciągnąć i wybierz polecenie **ustawić maskę**.
+2. Wybierz tag inteligentny <xref:System.Windows.Forms.MaskedTextBox> możesz po prostu przeciągnąć i wybierz polecenie **ustawić maskę**.
 
-3.  Wybierz **numer telefonu** w **maska wprowadzania** okno dialogowe, a następnie kliknij przycisk **OK** ustalenie maski.
+3. Wybierz **numer telefonu** w **maska wprowadzania** okno dialogowe, a następnie kliknij przycisk **OK** ustalenie maski.
 
 ## <a name="add-the-required-data-binding-attribute"></a>Dodaj wymagany atrybut wiązania danych
 
 Implementowanie prostego formantów tego wiązania danych pomocy technicznej, <xref:System.ComponentModel.DefaultBindingPropertyAttribute>:
 
-1.  Przełącznik **PhoneNumberBox** formantu do widoku kodu. (Na **widoku** menu, wybierz **kodu**.)
+1. Przełącznik **PhoneNumberBox** formantu do widoku kodu. (Na **widoku** menu, wybierz **kodu**.)
 
-2.  Zastąp kod w **PhoneNumberBox** następującym kodem:
+2. Zastąp kod w **PhoneNumberBox** następującym kodem:
 
      [!code-csharp[VbRaddataDisplaying#3](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.cs)]
      [!code-vb[VbRaddataDisplaying#3](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.vb)]
 
-3.  Z **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.
+3. Z **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Utwórz źródło danych z bazy danych
 
 Ten krok używa **konfiguracji źródła danych** kreatora w celu utworzenia źródła danych na podstawie `Customers` tabeli w bazie danych Northwind. Musi mieć dostęp do przykładowej bazy danych Northwind do utworzenia połączenia. Aby uzyskać informacje na temat konfigurowania przykładowej bazy danych Northwind, zobacz [jak: Zainstalować przykładowe bazy danych](../data-tools/installing-database-systems-tools-and-samples.md).
 
-1.  Aby otworzyć **źródeł danych** okna na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
+1. Aby otworzyć **źródeł danych** okna na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
 
-2.  W **źródeł danych** wybierz **Dodaj nowe źródło danych** można uruchomić **konfiguracji źródła danych** kreatora.
+2. W **źródeł danych** wybierz **Dodaj nowe źródło danych** można uruchomić **konfiguracji źródła danych** kreatora.
 
-3.  Na **wybierz typ źródła danych** wybierz opcję **bazy danych**, a następnie kliknij przycisk **dalej**.
+3. Na **wybierz typ źródła danych** wybierz opcję **bazy danych**, a następnie kliknij przycisk **dalej**.
 
-4.  Na **wybierz połączenie danych** wykonaj jedną z następujących czynności:
+4. Na **wybierz połączenie danych** wykonaj jedną z następujących czynności:
 
-    -   Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.
+    - Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.
 
-    -   Wybierz **nowe połączenie** można uruchomić **Dodawanie/modyfikowanie połączenia** okno dialogowe.
+    - Wybierz **nowe połączenie** można uruchomić **Dodawanie/modyfikowanie połączenia** okno dialogowe.
 
-5.  Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie kliknij przycisk **dalej**.
+5. Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie kliknij przycisk **dalej**.
 
-6.  Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji** kliknij **dalej**.
+6. Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji** kliknij **dalej**.
 
-7.  Na **wybierz obiekty bazy danych** rozwiń **tabel** węzła.
+7. Na **wybierz obiekty bazy danych** rozwiń **tabel** węzła.
 
-8.  Wybierz `Customers` tabeli, a następnie kliknij przycisk **Zakończ**.
+8. Wybierz `Customers` tabeli, a następnie kliknij przycisk **Zakończ**.
 
      **NorthwindDataSet** zostanie dodany do projektu, a `Customers` tabela zostanie wyświetlona w **źródeł danych** okna.
 
@@ -148,17 +148,17 @@ Ten krok używa **konfiguracji źródła danych** kreatora w celu utworzenia źr
 
 W ramach **źródeł danych** okna, można ustawić formant aby je utworzyć przed przeciąganie elementów na formularzu:
 
-1.  Otwórz **Form1** w projektancie.
+1. Otwórz **Form1** w projektancie.
 
-2.  Rozwiń **klientów** w węźle **źródeł danych** okna.
+2. Rozwiń **klientów** w węźle **źródeł danych** okna.
 
-3.  Kliknij strzałkę listy rozwijanej **klientów** węzeł i wybierz polecenie **szczegóły** na liście kontrolek.
+3. Kliknij strzałkę listy rozwijanej **klientów** węzeł i wybierz polecenie **szczegóły** na liście kontrolek.
 
-4.  Kliknij strzałkę listy rozwijanej **Phone** kolumny i wybierz polecenie **Dostosuj**.
+4. Kliknij strzałkę listy rozwijanej **Phone** kolumny i wybierz polecenie **Dostosuj**.
 
-5.  Wybierz **PhoneNumberBox** z listy **skojarzonych formantów** w **opcje dostosowywania interfejsu użytkownika danych** okno dialogowe.
+5. Wybierz **PhoneNumberBox** z listy **skojarzonych formantów** w **opcje dostosowywania interfejsu użytkownika danych** okno dialogowe.
 
-6.  Kliknij strzałkę listy rozwijanej **Phone** kolumny, a wybierz **PhoneNumberBox**.
+6. Kliknij strzałkę listy rozwijanej **Phone** kolumny, a wybierz **PhoneNumberBox**.
 
 ## <a name="add-controls-to-the-form"></a>Dodawanie formantów do formularza
 
@@ -176,9 +176,9 @@ Naciśnij klawisz **F5** do uruchomienia aplikacji.
 
 W zależności od wymagań aplikacji istnieje kilka kroków, które można wykonać po utworzenie kontrolki, która obsługuje powiązanie danych. Niektóre typowe następne kroki obejmują:
 
--   Wprowadzenie do Kontrolki niestandardowe w bibliotece kontrolki, więc można go używać w innych aplikacjach.
+- Wprowadzenie do Kontrolki niestandardowe w bibliotece kontrolki, więc można go używać w innych aplikacjach.
 
--   Tworzenie formantów, które obsługują bardziej złożonych scenariuszy powiązanie danych. Aby uzyskać więcej informacji, zobacz [tworzenie kontrolki użytkownika formularzy Windows obsługującego złożone powiązanie danych](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) i [utworzyć formant użytkownika Windows Forms, który obsługuje powiązanie danych wyszukiwania](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
+- Tworzenie formantów, które obsługują bardziej złożonych scenariuszy powiązanie danych. Aby uzyskać więcej informacji, zobacz [tworzenie kontrolki użytkownika formularzy Windows obsługującego złożone powiązanie danych](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) i [utworzyć formant użytkownika Windows Forms, który obsługuje powiązanie danych wyszukiwania](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
 ## <a name="see-also"></a>Zobacz także
 

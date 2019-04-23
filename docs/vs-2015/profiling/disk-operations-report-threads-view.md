@@ -13,12 +13,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: be99c10a999ec190f538816e39eac411dc85544e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: daace3e78cca67fd9b44144cd6c8a5608dbd9a1e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763377"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111197"
 ---
 # <a name="disk-operations-report-threads-view"></a>Raport dotyczący operacji na dysku (Widok wątków)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,23 +27,23 @@ Raport operacji dyskowych pokazuje operacje We/Wy dysku w kanałach dysku.
   
  Te informacje są zgłaszane dla każdego dostępu dysku występujący w imieniu procesu, który jest profilowany w przedziale czasowym aktualnie widoczne:  
   
--   Nazwa i identyfikator PID procesu, który wykonał dostępu do dysku  
+- Nazwa i identyfikator PID procesu, który wykonał dostępu do dysku  
   
--   Identyfikator wątku, który uzyskał dostęp do dysku  
+- Identyfikator wątku, który uzyskał dostęp do dysku  
   
--   Nazwa pliku, którego uzyskano dostęp  
+- Nazwa pliku, którego uzyskano dostęp  
   
--   Liczba operacji odczytu na pliku  
+- Liczba operacji odczytu na pliku  
   
--   Liczba Bajty odczytane  
+- Liczba Bajty odczytane  
   
--   Opóźnienie odczytu, w milisekundach  
+- Opóźnienie odczytu, w milisekundach  
   
--   Liczba zapisów  
+- Liczba zapisów  
   
--   Liczba bajtów zapisanych  
+- Liczba bajtów zapisanych  
   
--   Opóźnienie zapisu, w milisekundach  
+- Opóźnienie zapisu, w milisekundach  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

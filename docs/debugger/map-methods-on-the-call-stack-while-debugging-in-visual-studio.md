@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd8928f204da4a3af15918a598df6241cd39df85
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3de5a3f9e9c5b8f89a9c8917794247098ba12d06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665678"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111808"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Tworzenie wizualnej mapy stosu wywołań podczas debugowania (C#, Visual Basic, C++, JavaScript)
 
@@ -51,7 +51,7 @@ Poniżej przedstawiono krótkie omówienie mapy kodu:
 
  ![Debugowanie za pomocą stosów wywołań na mapach kodu](../debugger/media/debuggermap_overview.png "DebuggerMap_Overview")
 
-##  <a name="MapStack"></a> Mapuj stos wywołań
+## <a name="MapStack"></a> Mapuj stos wywołań
 
 1. W programie Visual Studio Enterprise C#, Visual Basic, C++ lub JavaScript projektu, Rozpocznij debugowanie wybierając **debugowania** > **Rozpocznij debugowanie** lub naciskając **F5**.
 
@@ -89,11 +89,11 @@ Aby kontrolować układ mapy, wybierz **układ** menu na pasku narzędzi mapy.
 
 W **układ** menu, możesz:
 
--   Zmiana układu domyślnego.
--   Zatrzymać automatyczne rozmieszczanie na mapie, anulując **automatycznie rozmieszczaj podczas debugowania**.
--   Ponowne rozmieszczanie map jak najmniejszy podczas dodawania elementów, nie zaznaczaj opcji **układ Przyrostowy**.
+- Zmiana układu domyślnego.
+- Zatrzymać automatyczne rozmieszczanie na mapie, anulując **automatycznie rozmieszczaj podczas debugowania**.
+- Ponowne rozmieszczanie map jak najmniejszy podczas dodawania elementów, nie zaznaczaj opcji **układ Przyrostowy**.
 
-##  <a name="MakeNotes"></a> Robienie notatek dotyczących kodu
+## <a name="MakeNotes"></a> Robienie notatek dotyczących kodu
 
 Można dodawać komentarze, aby śledzić, co się dzieje w kodzie.
 
@@ -103,7 +103,7 @@ Aby dodać nowy wiersz w komentarzu, naciśnij **Shift**+**Enter**.
 
  ![Dodaj komentarz do stosu wywołań na mapie kodu](../debugger/media/debuggermap_addcomment.png "DebuggerMap_AddComment")
 
-##  <a name="UpdateMap"></a> Aktualizacja mapy za pomocą następnego stosu wywołań
+## <a name="UpdateMap"></a> Aktualizacja mapy za pomocą następnego stosu wywołań
 
 Podczas uruchamiania aplikacji do następnego punktu przerwania lub wejścia do funkcji mapy automatycznie dodaje nowych stosów wywołań.
 
@@ -111,7 +111,7 @@ Podczas uruchamiania aplikacji do następnego punktu przerwania lub wejścia do 
 
 Aby zatrzymać automatyczne dodawanie nowych stosów wywołań do mapy, wybierz ![Pokaż automatycznie umieszczane na mapie kodu](../debugger/media/debuggermap_automaticupdateicon.gif "Pokaż automatycznie umieszczane na mapie kodu") na pasku narzędzi mapy kodu. Mapa nadal wyróżniać istniejące stosy wywołań. Aby ręcznie dodać bieżący stos wywołań do mapy, naciśnij klawisz **Ctrl**+**Shift**+**`**.
 
-##  <a name="AddRelatedCode"></a> Dodawanie kodu pokrewnego do mapy
+## <a name="AddRelatedCode"></a> Dodawanie kodu pokrewnego do mapy
 
 Teraz, gdy masz mapę, w C# lub Visual Basic, możesz dodać elementy, takie jak pola, właściwości i innych metod, aby śledzić, co się dzieje w kodzie.
 
@@ -134,7 +134,7 @@ Kontynuuj tworzenie mapy, aby zobaczyć więcej kodu.
 
  ![Metody używające pole na mapie kodu stosu wywołań](../debugger/media/debuggermap_foundallreferences.png "DebuggerMap_FoundAllReferences")
 
-##  <a name="FindBugs"></a> Znajdowanie błędów za pomocą mapy
+## <a name="FindBugs"></a> Znajdowanie błędów za pomocą mapy
  Wizualizacja kodu pomoże w szybszym znalezieniu błędów. Na przykład załóżmy, że analizujesz błąd w aplikacji rysowania. Po narysowaniu linii, w przypadku próby cofnięcia nic się nie dzieje, aż do rysowania kolejnej linii.
 
  Aby ustawić punkty przerwania `clear`, `undo`, i `Repaint` metod, rozpocząć debugowanie i utworzyć mapę podobną do tego:

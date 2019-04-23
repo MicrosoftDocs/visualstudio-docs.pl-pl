@@ -12,12 +12,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d0ca68c9d95f0b2b511ece0ecafbd9bdcacf328d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8a96e6b10b68fc3b3275fbadb07de310c224da8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759819"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104917"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Obsługa fragmentów kodu w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ Fragment kodu jest fragmentem kodu, który jest wstawiany do pliku źródłowego
 ## <a name="providing-support-for-code-snippets"></a>Zapewnianie obsługi w przypadku fragmentów kodu  
  Aby włączyć obsługę fragmenty kodu, należy podać albo zainstalować program fragmenty kodu i podać oznacza, że dla użytkownika wstawić tych fragmentów kodu. Istnieją trzy kroki, aby włączyć obsługę fragmenty kodu:  
   
-1.  Instalowanie plików fragmentu kodu.  
+1. Instalowanie plików fragmentu kodu.  
   
-2.  Włączanie fragmentów kodu usługi języka.  
+2. Włączanie fragmentów kodu usługi języka.  
   
-3.  Wywoływanie <xref:Microsoft.VisualStudio.Package.ExpansionProvider> obiektu.  
+3. Wywoływanie <xref:Microsoft.VisualStudio.Package.ExpansionProvider> obiektu.  
   
 ### <a name="installing-the-snippet-files"></a>Instalowanie plików fragmentu kodu  
  Wszystkie fragmenty kodu w języku są przechowywane jako szablonów w plikach XML zwykle jeden szablon fragmentu kodu na plik. Aby uzyskać szczegółowe informacje dotyczące schematu XML, używany do szablonów fragmentów kodu, zobacz [dokumentacja schematu fragmentów kodu](../../ide/code-snippets-schema-reference.md). Każdy szablon fragmentu kodu jest identyfikowany za pomocą identyfikatora języka. Ten język identyfikator jest określone w rejestrze i są umieszczane w `Language` atrybutu \<kodu > tagu w szablonie.  
@@ -117,9 +117,9 @@ Fragment kodu jest fragmentem kodu, który jest wstawiany do pliku źródłowego
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Wstawianie fragmentu kodu przy użyciu polecenia Menu  
  Aby polecenie menu do wyświetlenia w przeglądarce fragment kodu, możesz dodać polecenie menu a następnie wywołać <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.ExpansionProvider> interfejsu w odpowiedzi na polecenie menu.  
   
-1.  Dodaj przycisk i polecenia do pliku vsct. Można znaleźć instrukcje dotyczące wykonywania, dlatego w [instruktażu: Tworzenie polecenia Menu za pomocą szablonu pakietu programu Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+1. Dodaj przycisk i polecenia do pliku vsct. Można znaleźć instrukcje dotyczące wykonywania, dlatego w [instruktażu: Tworzenie polecenia Menu za pomocą szablonu pakietu programu Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
-2.  Wyprowadzić klasę z <xref:Microsoft.VisualStudio.Package.ViewFilter> klasy, a także Przesłoń <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> metodę w celu wskazania obsługę nowego polecenia menu. W tym przykładzie zawsze uruchamia polecenia menu.  
+2. Wyprowadzić klasę z <xref:Microsoft.VisualStudio.Package.ViewFilter> klasy, a także Przesłoń <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> metodę w celu wskazania obsługę nowego polecenia menu. W tym przykładzie zawsze uruchamia polecenia menu.  
   
     ```csharp  
     using Microsoft.VisualStudio.Package;  
@@ -155,7 +155,7 @@ Fragment kodu jest fragmentem kodu, który jest wstawiany do pliku źródłowego
     }  
     ```  
   
-3.  Zastąp <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.ViewFilter> klasy w celu uzyskania <xref:Microsoft.VisualStudio.Package.ExpansionProvider> obiektu, a następnie wywołać <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> metody dla tego obiektu.  
+3. Zastąp <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.ViewFilter> klasy w celu uzyskania <xref:Microsoft.VisualStudio.Package.ExpansionProvider> obiektu, a następnie wywołać <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> metody dla tego obiektu.  
   
     ```csharp  
     using Microsoft.VisualStudio.Package;  
@@ -207,15 +207,15 @@ Fragment kodu jest fragmentem kodu, który jest wstawiany do pliku źródłowego
   
      Następujące metody w klasie <xref:Microsoft.VisualStudio.Package.ExpansionProvider> klasy są wywoływane przez program Visual Studio w podanej kolejności podczas wstawiania fragmentu kodu:  
   
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>  
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>  
   
-5.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
+5. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
   
-6.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
+6. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
   
-7.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
+7. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
   
-8.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
+8. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
      Po <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> metoda jest wywoływana, fragment kodu został wstawiony i <xref:Microsoft.VisualStudio.Package.ExpansionProvider> obiekt jest w trybie edycji specjalne, używane do modyfikowania fragment kodu, który właśnie został wstawiony.  
   

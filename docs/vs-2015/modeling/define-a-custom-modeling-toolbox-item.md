@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 42137beead40c0e032942116bc92a3b9a456fbc6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: becc123cab729aff7d1306bb0ee13aee521444ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770756"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105048"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definiowanie niestandardowego elementu przybornika modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,38 +27,38 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorca, które 
   
  Niestandardowe narzędzie tworzy jeden lub więcej nowych elementów na diagramie. Na przykład można utworzyć niestandardowe narzędzie do tworzenia elementów, takich jak te:  
   
--   Pakiet jest połączony z profilu platformy .NET i klasy z stereotyp .NET.  
+- Pakiet jest połączony z profilu platformy .NET i klasy z stereotyp .NET.  
   
--   Para klas połączone przez skojarzenie, aby reprezentować wzorzec obserwatora.  
+- Para klas połączone przez skojarzenie, aby reprezentować wzorzec obserwatora.  
   
 > [!NOTE]
 >  Ta metoda umożliwia tworzenie narzędzi elementów. Oznacza to można utworzyć narzędzia, które zostaną przeciągnięte z przybornika do diagramu. Nie można utworzyć narzędzia Łącznik.  
   
-##  <a name="DefineTool"></a> Definiowanie niestandardowego narzędzia modelowania  
+## <a name="DefineTool"></a> Definiowanie niestandardowego narzędzia modelowania  
   
 #### <a name="to-define-a-custom-modeling-tool"></a>Aby zdefiniować narzędzie do modelowania niestandardowe  
   
-1.  Tworzenie diagramu UML, który zawiera element lub grupy elementów.  
+1. Tworzenie diagramu UML, który zawiera element lub grupy elementów.  
   
-    -   Te elementy mogą mieć relacje między nimi i może mieć zależne elementy, takie jak porty, atrybuty, operacje lub numerów PIN.  
+    - Te elementy mogą mieć relacje między nimi i może mieć zależne elementy, takie jak porty, atrybuty, operacje lub numerów PIN.  
   
-2.  Zapisz diagram przy użyciu nazwy, który chcesz nadać nowe narzędzie. Na **pliku** menu, użyj **Zapisz... Jako**.  
+2. Zapisz diagram przy użyciu nazwy, który chcesz nadać nowe narzędzie. Na **pliku** menu, użyj **Zapisz... Jako**.  
   
-3.  W Eksploratorze Windows skopiuj pliki dwóch diagram do następujący folder lub podfolder:  
+3. W Eksploratorze Windows skopiuj pliki dwóch diagram do następujący folder lub podfolder:  
   
      *YourDocuments* **elementów przybornika Tools\Custom \Visual Studio\Architecture**  
   
-    -   Utwórz ten folder, jeśli jeszcze nie istnieje. Może być konieczne utworzenie ich obu **narzędzia architektury** i **elementy do przybornika niestandardowego**.  
+    - Utwórz ten folder, jeśli jeszcze nie istnieje. Może być konieczne utworzenie ich obu **narzędzia architektury** i **elementy do przybornika niestandardowego**.  
   
-    -   Skopiuj oba pliki diagramu, jedną nazwą, która kończy się w "menu... **diagram**", a druga o nazwie, która kończy"... **diagram.layout**"  
+    - Skopiuj oba pliki diagramu, jedną nazwą, która kończy się w "menu... **diagram**", a druga o nazwie, która kończy"... **diagram.layout**"  
   
-    -   Można wprowadzić dowolną liczbę niestandardowych narzędzi, jak chcesz. Diagram użycia jeden dla każdego narzędzia.  
+    - Można wprowadzić dowolną liczbę niestandardowych narzędzi, jak chcesz. Diagram użycia jeden dla każdego narzędzia.  
   
-4.  (Opcjonalnie) Tworzenie **.tbxinfo** plików zgodnie z opisem w temacie [sposób definiowania właściwości niestandardowe narzędzia](#tbxinfo)i dodaj go do tego samego katalogu. Dzięki temu można zdefiniować ikonę przybornika, etykietki narzędzi i tak dalej.  
+4. (Opcjonalnie) Tworzenie **.tbxinfo** plików zgodnie z opisem w temacie [sposób definiowania właściwości niestandardowe narzędzia](#tbxinfo)i dodaj go do tego samego katalogu. Dzięki temu można zdefiniować ikonę przybornika, etykietki narzędzi i tak dalej.  
   
-    -   Pojedynczy **.tbxinfo** pliku może służyć do definiowania wielu narzędzi. Może odnosić się do plików diagramu, które znajdują się w jego podfolderach.  
+    - Pojedynczy **.tbxinfo** pliku może służyć do definiowania wielu narzędzi. Może odnosić się do plików diagramu, które znajdują się w jego podfolderach.  
   
-5.  Uruchom ponownie program Visual Studio. Dodatkowe narzędzia pojawi się w przyborniku dla odpowiedniego typu diagramu.  
+5. Uruchom ponownie program Visual Studio. Dodatkowe narzędzia pojawi się w przyborniku dla odpowiedniego typu diagramu.  
   
 ### <a name="what-the-custom-tool-will-replicate"></a>Jakie będą replikowane narzędzie niestandardowe  
  Narzędzie niestandardowe będą replikowane większość funkcji diagramu źródłowego:  
@@ -83,7 +83,7 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorca, które 
   
 - Łącznik routingu. Jeśli ręczne trasowanie łączników routingu będzie nie zostać zachowane podczas służy narzędzie. Położenie niektórych kształtów zagnieżdżonych, takie jak porty, nie są zachowywane względem ich właścicieli.  
   
-##  <a name="tbxinfo"></a> Jak zdefiniować właściwości niestandardowych narzędzi  
+## <a name="tbxinfo"></a> Jak zdefiniować właściwości niestandardowych narzędzi  
  Informacji przybornika (**.tbxinfo**) plik pozwala określić nazwę przybornika, ikony, etykietki narzędzia, karta i słowo kluczowe dla co najmniej jedno niestandardowe narzędzie pomocy. Nadać mu dowolną nazwę, taką jak **MyTools.tbxinfo**.  
   
  Plik w postaci ogólnego jest następująca:  
@@ -138,35 +138,35 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorca, które 
 > [!NOTE]
 >  W przypadku uruchomienia przy użyciu pliku .tbxinfo po eksperymentowanie z używaniem plików diagramu na ich własnych, może się okazać, że Przybornik zawiera zarówno stare i nowe wersje elementu przybornika. Może to także wystąpić, jeśli nazwa pliku diagramu została wpisana z błędem w pliku .tbxinfo. Jeśli ten problem wystąpi, w menu skrótów w przyborniku wybierz **resetowania przybornika**. Elementy do przybornika niestandardowego znikną. Uruchom ponownie program Visual Studio i pojawi się odpowiednie elementy niestandardowe.  
   
-##  <a name="Extension"></a> Jak dystrybuować elementów przybornika w rozszerzenia programu Visual Studio  
+## <a name="Extension"></a> Jak dystrybuować elementów przybornika w rozszerzenia programu Visual Studio  
  Można rozpowszechniać elementów przybornika z innymi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] użytkowników upakowanie je do programu Visual Studio rozszerzenia (VSIX). Można spakować poleceń, profile i inne rozszerzenia, w tym samym pliku VSIX. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160780).  
   
  Zwykły sposób do tworzenia rozszerzenia programu Visual Studio jest użycie szablonu projektu VSIX. Aby to zrobić, należy zainstalować [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
   
 #### <a name="to-add-a-toolbox-item-to-a-visual-studio-extension"></a>Aby dodać element przybornika do rozszerzenia programu Visual Studio  
   
-1.  [Tworzenie i testowanie co najmniej jedno narzędzie niestandardowe](#DefineTool).  
+1. [Tworzenie i testowanie co najmniej jedno narzędzie niestandardowe](#DefineTool).  
   
-2.  [Utwórz plik .tbxinfo](#tbxinfo) odwołujący się narzędzia.  
+2. [Utwórz plik .tbxinfo](#tbxinfo) odwołujący się narzędzia.  
   
-3.  Otwórz istniejący projekt rozszerzenia Visual Studio.  
+3. Otwórz istniejący projekt rozszerzenia Visual Studio.  
   
      \- lub —  
   
      Zdefiniuj nowy projekt rozszerzenia Visual Studio.  
   
-    1.  Na **pliku** menu, wybierz **New**, **projektu**.  
+    1. Na **pliku** menu, wybierz **New**, **projektu**.  
   
-    2.  W **nowy projekt** dialogowego **zainstalowane szablony**, wybierz **Visual C#**, **rozszerzalności**, **VSIX Projekt**.  
+    2. W **nowy projekt** dialogowego **zainstalowane szablony**, wybierz **Visual C#**, **rozszerzalności**, **VSIX Projekt**.  
   
-4.  Dodaj do definicji przybornika do projektu. Obejmują **.tbxinfo** plików, pliki diagramu, pliki map bitowych i pliki zasobów i upewnij się, że są one uwzględnione w VSIX.  
+4. Dodaj do definicji przybornika do projektu. Obejmują **.tbxinfo** plików, pliki diagramu, pliki map bitowych i pliki zasobów i upewnij się, że są one uwzględnione w VSIX.  
   
-    -   W Eksploratorze rozwiązań w menu skrótów projektu VSIX wybierz **Dodaj**, **istniejący element**. W oknie dialogowym Ustaw **obiekty typu: Wszystkie pliki**. Znajdź pliki, zaznacz je, a następnie wybierz **Dodaj**.  
+    - W Eksploratorze rozwiązań w menu skrótów projektu VSIX wybierz **Dodaj**, **istniejący element**. W oknie dialogowym Ustaw **obiekty typu: Wszystkie pliki**. Znajdź pliki, zaznacz je, a następnie wybierz **Dodaj**.  
   
         > [!NOTE]
         >  W tym projekcie nie można otworzyć plików diagramu w edytorze modeli.  
   
-5.  Ustaw następujące właściwości wszystkich plików, które zostały dodane. W tym samym czasie można ustawiać ich właściwości, wybierając je w Eksploratorze rozwiązań. Należy zachować ostrożność nie należy zmieniać właściwości inne pliki w projekcie.  
+5. Ustaw następujące właściwości wszystkich plików, które zostały dodane. W tym samym czasie można ustawiać ich właściwości, wybierając je w Eksploratorze rozwiązań. Należy zachować ostrożność nie należy zmieniać właściwości inne pliki w projekcie.  
   
      **Kopiuj do katalogu wyjściowego** = **zawsze Kopiuj**  
   
@@ -174,24 +174,24 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorca, które 
   
      **Uwzględnione w VSIX** = **true**  
   
-6.  Otwórz **source.extension.vsixmanifest**. Zostanie otwarty w edytorze manifesty rozszerzenia.  
+6. Otwórz **source.extension.vsixmanifest**. Zostanie otwarty w edytorze manifesty rozszerzenia.  
   
-7.  W obszarze **metadanych**, Dodaj opis narzędzi niestandardowych.  
+7. W obszarze **metadanych**, Dodaj opis narzędzi niestandardowych.  
   
      W obszarze **zasoby**, wybierz **New** , a następnie ustaw pola w oknie dialogowym w następujący sposób:  
   
-    -   **Typ** = **niestandardowe rozszerzenia typu**  
+    - **Typ** = **niestandardowe rozszerzenia typu**  
   
-    -   Typ = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
+    - Typ = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
   
         > [!NOTE]
         >  Nie jest jedną z opcji na liście rozwijanej. Musisz wprowadzić go za pomocą klawiatury.  
   
-    -   **Źródło** = **plików w systemie plików**.  
+    - **Źródło** = **plików w systemie plików**.  
   
-    -   **Ścieżka** = swoje **.tbxinfo** pliku, na przykład **MyTools.tbxinfo**  
+    - **Ścieżka** = swoje **.tbxinfo** pliku, na przykład **MyTools.tbxinfo**  
   
-8.  Skompiluj projekt.  
+8. Skompiluj projekt.  
   
 9. **Aby sprawdzić, czy rozszerzenie działa**, naciśnij klawisz F5. Uruchamia doświadczalne wystąpienie programu Visual Studio.  
   
@@ -201,11 +201,11 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorca, które 
   
 #### <a name="to-install-custom-tools-from-a-visual-studio-extension"></a>Aby zainstalować narzędzia niestandardowe z rozszerzenia programu Visual Studio  
   
-1.  Otwórz `.vsix` plik w Eksploratorze Windows lub w programie Visual Studio.  
+1. Otwórz `.vsix` plik w Eksploratorze Windows lub w programie Visual Studio.  
   
-2.  Wybierz **zainstalować** w zostanie wyświetlone okno dialogowe.  
+2. Wybierz **zainstalować** w zostanie wyświetlone okno dialogowe.  
   
-3.  Aby odinstalować lub tymczasowo wyłączyć rozszerzenie, otwórz **rozszerzenia i aktualizacje** z **narzędzia** menu.  
+3. Aby odinstalować lub tymczasowo wyłączyć rozszerzenie, otwórz **rozszerzenia i aktualizacje** z **narzędzia** menu.  
   
 ## <a name="localization"></a>Lokalizacja  
  Istnieje możliwość rozszerzenia, które zainstalowanego na innym komputerze, spowoduje wyświetlenie nazwy narzędzia i etykietki narzędzi w języku komputera docelowego.  

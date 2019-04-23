@@ -9,12 +9,12 @@ ms.assetid: e3b7d952-9012-400a-8131-3444390a6066
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 411e0a83b180014ffb3a896887c3798d57ffc635
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 51bfc7a9061cbc17d766f1174593907bfbf762ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938010"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106965"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Edytowanie modeli testów mieszanych, aby określić prawdopodobieństwo, że użytkownik wirtualny uruchomi testu
 
@@ -26,13 +26,13 @@ ms.locfileid: "55938010"
 
 Można określić jedną z następujących opcji model testu mieszanego, dla scenariusza testu obciążenia:
 
--   **Na podstawie całkowitej liczby testów:** Określa, który test wydajności lub jednostki w sieci web jest uruchamiany, gdy wirtualny użytkownik rozpoczyna iterację testu. Na koniec testu obciążenia liczby uruchamianych konkretnego testu pasuje dystrybucji przypisanych testu. Ten model testu mieszanego należy użyć, gdy test mieszany jest tworzony na transakcji, określonym w dzienniku IIS lub w danych produkcyjnych.
+- **Na podstawie całkowitej liczby testów:** Określa, który test wydajności lub jednostki w sieci web jest uruchamiany, gdy wirtualny użytkownik rozpoczyna iterację testu. Na koniec testu obciążenia liczby uruchamianych konkretnego testu pasuje dystrybucji przypisanych testu. Ten model testu mieszanego należy użyć, gdy test mieszany jest tworzony na transakcji, określonym w dzienniku IIS lub w danych produkcyjnych.
 
--   **Na podstawie liczby wirtualnych użytkowników:** Określa procent wirtualnych użytkowników, którzy uruchomią namierzenie internetowego testu wydajności lub jednostki. W dowolnym momencie testu obciążeniowego liczbę użytkowników, którzy uruchomili określonego testu pasuje do przypisanego rozkładu. Ten model testu mieszanego należy użyć, gdy test mieszany jest bazowanie na procencie użytkowników określonego testu.
+- **Na podstawie liczby wirtualnych użytkowników:** Określa procent wirtualnych użytkowników, którzy uruchomią namierzenie internetowego testu wydajności lub jednostki. W dowolnym momencie testu obciążeniowego liczbę użytkowników, którzy uruchomili określonego testu pasuje do przypisanego rozkładu. Ten model testu mieszanego należy użyć, gdy test mieszany jest bazowanie na procencie użytkowników określonego testu.
 
--   **Na podstawie tempa użytkownika:** W trakcie testu obciążenia każdy test wydajności sieci web lub test jednostkowy jest uruchamiany określoną liczbę razy na użytkowników, na godzinę. Ten model testu mieszanego należy użyć, jeśli chcesz, aby wirtualni użytkownicy uruchamiali test w konkretnym tempie przez cały test obciążeniowy.
+- **Na podstawie tempa użytkownika:** W trakcie testu obciążenia każdy test wydajności sieci web lub test jednostkowy jest uruchamiany określoną liczbę razy na użytkowników, na godzinę. Ten model testu mieszanego należy użyć, jeśli chcesz, aby wirtualni użytkownicy uruchamiali test w konkretnym tempie przez cały test obciążeniowy.
 
--   **Oparte na kolejności:** Każdy wirtualny użytkownik uruchamia testy wydajności lub jednostki sieci web, w kolejności, że testy są zdefiniowane w tym scenariuszu. Wirtualny użytkownik kontynuuje, okrągło testów w następującej kolejności do czasu ukończenia testu obciążeniowego.
+- **Oparte na kolejności:** Każdy wirtualny użytkownik uruchamia testy wydajności lub jednostki sieci web, w kolejności, że testy są zdefiniowane w tym scenariuszu. Wirtualny użytkownik kontynuuje, okrągło testów w następującej kolejności do czasu ukończenia testu obciążeniowego.
 
 ## <a name="tasks"></a>Zadania
 
@@ -53,27 +53,27 @@ Za pomocą **edytora testu obciążenia**, model testu mieszanego w scenariuszu 
 
 ### <a name="to-change-the-test-mix-model"></a>Aby zmienić model testu mieszanego
 
-1.  Otwórz test obciążenia.
+1. Otwórz test obciążenia.
 
      **Edytora testu obciążenia** pojawia się. Zostanie wyświetlone drzewo testu obciążenia.
 
-2.  W *scenariuszy* folderu drzewa testu obciążenia, wybierz węzeł scenariusz, dla którego chcesz określić maksymalną liczbę iteracji testu.
+2. W *scenariuszy* folderu drzewa testu obciążenia, wybierz węzeł scenariusz, dla którego chcesz określić maksymalną liczbę iteracji testu.
 
-3.  Na **widoku** menu, wybierz opcję **okno właściwości**.
+3. Na **widoku** menu, wybierz opcję **okno właściwości**.
 
      Kategorie i właściwości scenariusza są wyświetlane.
 
-4.  W **typ testu mieszanego** właściwości, wybierz przycisk wielokropka ( **...** ).
+4. W **typ testu mieszanego** właściwości, wybierz przycisk wielokropka ( **...** ).
 
      **Edytuj Test mieszany** zostanie wyświetlone okno dialogowe.
 
-5.  Wybierz z listy rozwijanej w obszarze **model testu mieszanego** i wybierz model testu mieszanego, za pomocą którego chcesz użyć dla tego scenariusza.
+5. Wybierz z listy rozwijanej w obszarze **model testu mieszanego** i wybierz model testu mieszanego, za pomocą którego chcesz użyć dla tego scenariusza.
 
-6.  (Opcjonalnie) Modyfikowanie mieszanki testów za pomocą **Dodaj**, **Usuń** i **dystrybucji** suwaki dystrybucji i przyciski. Aby uzyskać więcej informacji, zobacz [Edytuj test mieszany, aby określić, które testy, aby uwzględnić w scenariuszu testu obciążenia](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+6. (Opcjonalnie) Modyfikowanie mieszanki testów za pomocą **Dodaj**, **Usuń** i **dystrybucji** suwaki dystrybucji i przyciski. Aby uzyskać więcej informacji, zobacz [Edytuj test mieszany, aby określić, które testy, aby uwzględnić w scenariuszu testu obciążenia](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
-7.  (Opcjonalnie) Określ testu sieci web wydajności i jednostki do inicjowania lub zakończenia, za pomocą pola wyboru i wybierając odpowiednią testów. Aby uzyskać więcej informacji, zobacz [Emulate oczekiwane wykorzystanie w świecie rzeczywistym witryny sieci Web lub aplikacji](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md).
+7. (Opcjonalnie) Określ testu sieci web wydajności i jednostki do inicjowania lub zakończenia, za pomocą pola wyboru i wybierając odpowiednią testów. Aby uzyskać więcej informacji, zobacz [Emulate oczekiwane wykorzystanie w świecie rzeczywistym witryny sieci Web lub aplikacji](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md).
 
-8.  Wybierz **OK**.
+8. Wybierz **OK**.
 
      **Właściwości** okno wyświetla nowy model mieszaniny testu dla **typ testu mieszanego** właściwości.
 

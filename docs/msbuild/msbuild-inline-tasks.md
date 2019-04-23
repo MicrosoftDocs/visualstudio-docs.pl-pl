@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ee2dff8cab226d3df724d7a8295de52c56e11a8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 762d0902d63e70b9f6475e7f66782e20778b5db6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668148"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106309"
 ---
 # <a name="msbuild-inline-tasks"></a>Zadania wbudowane programu MSBuild
 Zadania programu MSBuild są zwykle tworzone przez skompilowanie klasy, która implementuje <xref:Microsoft.Build.Framework.ITask> interfejsu. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).
@@ -46,21 +46,21 @@ Zadania programu MSBuild są zwykle tworzone przez skompilowanie klasy, która i
 
  `UsingTask` Element w przykładzie ma trzy atrybuty, które opisują zadania i wbudowane fabryki zadań, który kompiluje go.
 
--   `TaskName` Nazwy atrybutów, zadania, w tym przypadku `DoNothing`.
+- `TaskName` Nazwy atrybutów, zadania, w tym przypadku `DoNothing`.
 
--   `TaskFactory` Atrybutu nazwy klasy, która implementuje fabryki zadań w tekście.
+- `TaskFactory` Atrybutu nazwy klasy, która implementuje fabryki zadań w tekście.
 
--   `AssemblyFile` Atrybutu zapewnia lokalizacji fabryki zadań w tekście. Alternatywnie, można użyć `AssemblyName` atrybutu, aby określić w pełni kwalifikowana nazwa klasy fabryki wbudowanych zadań, która znajduje się w globalnej pamięci podręcznej zestawów (GAC).
+- `AssemblyFile` Atrybutu zapewnia lokalizacji fabryki zadań w tekście. Alternatywnie, można użyć `AssemblyName` atrybutu, aby określić w pełni kwalifikowana nazwa klasy fabryki wbudowanych zadań, która znajduje się w globalnej pamięci podręcznej zestawów (GAC).
 
 Pozostałe elementy `DoNothing` zadania są puste, znajdują się w celu zilustrowania kolejności i struktura zadania wbudowanego. Bardziej niezawodna przykład został przedstawiony w dalszej części tego tematu.
 
--   `ParameterGroup` Element jest opcjonalne. Jeśli zostanie określony, deklaruje parametrów zadania. Aby uzyskać więcej informacji na temat parametrów wejściowych i wyjściowych, zobacz [danych wejściowych i wyjściowych parametry](#input-and-output-parameters) w dalszej części tego tematu.
+- `ParameterGroup` Element jest opcjonalne. Jeśli zostanie określony, deklaruje parametrów zadania. Aby uzyskać więcej informacji na temat parametrów wejściowych i wyjściowych, zobacz [danych wejściowych i wyjściowych parametry](#input-and-output-parameters) w dalszej części tego tematu.
 
--   `Task` Element opisuje i zawiera kod źródłowy zadania.
+- `Task` Element opisuje i zawiera kod źródłowy zadania.
 
--   `Reference` Element określa odwołania do zestawów .NET, które są używane w kodzie. Jest to równoważne do dodawania odwołania do projektu w programie Visual Studio. `Include` Atrybut ścieżka przywoływanego zestawu.
+- `Reference` Element określa odwołania do zestawów .NET, które są używane w kodzie. Jest to równoważne do dodawania odwołania do projektu w programie Visual Studio. `Include` Atrybut ścieżka przywoływanego zestawu.
 
--   `Using` Element zawiera przestrzenie nazw, które chcesz uzyskać dostęp. Przypomina to `Using` instrukcji w języku Visual C#. `Namespace` Atrybut określa przestrzeń nazw do uwzględnienia.
+- `Using` Element zawiera przestrzenie nazw, które chcesz uzyskać dostęp. Przypomina to `Using` instrukcji w języku Visual C#. `Namespace` Atrybut określa przestrzeń nazw do uwzględnienia.
 
 `Reference` i `Using` elementy są one niezależne od języka. Zadania wbudowane można pisać w jednym z obsługiwanych języków .NET CodeDom, na przykład Visual Basic lub Visual C#.
 
@@ -74,11 +74,11 @@ Pozostałe elementy `DoNothing` zadania są puste, znajdują się w celu zilustr
 
  `Type` Atrybut określa typ kodu, który można znaleźć w `Code` elementu.
 
--   Jeśli wartość `Type` jest `Class`, a następnie `Code` element zawiera kod dla klasy, która pochodzi od klasy <xref:Microsoft.Build.Framework.ITask> interfejsu.
+- Jeśli wartość `Type` jest `Class`, a następnie `Code` element zawiera kod dla klasy, która pochodzi od klasy <xref:Microsoft.Build.Framework.ITask> interfejsu.
 
--   Jeśli wartość `Type` jest `Method`, ten kod definiuje nadpisanie `Execute` metody <xref:Microsoft.Build.Framework.ITask> interfejsu.
+- Jeśli wartość `Type` jest `Method`, ten kod definiuje nadpisanie `Execute` metody <xref:Microsoft.Build.Framework.ITask> interfejsu.
 
--   Jeśli wartość `Type` jest `Fragment`, ten kod definiuje zawartość `Execute` metody, ale nie podpisu lub `return` instrukcji.
+- Jeśli wartość `Type` jest `Fragment`, ten kod definiuje zawartość `Execute` metody, ale nie podpisu lub `return` instrukcji.
 
 Sam kod zwykle pojawia się między `<![CDATA[` znaczników i `]]>` znacznika. Ponieważ kod znajduje się w sekcji CDATA, nie masz już martwić się o zmianę znaczenia znaków zastrzeżonych, na przykład "\<" lub ">".
 
@@ -135,11 +135,11 @@ Log.LogError("Hello, world!");
 
  Parametry może mieć co najmniej jeden z tych atrybutów:
 
--   `Required` jest opcjonalny atrybut, który jest `false` domyślnie. Jeśli `true`, a następnie parametr jest wymagany i musi być danej wartości przed wywołaniem zadania.
+- `Required` jest opcjonalny atrybut, który jest `false` domyślnie. Jeśli `true`, a następnie parametr jest wymagany i musi być danej wartości przed wywołaniem zadania.
 
--   `ParameterType` jest opcjonalny atrybut, który jest `System.String` domyślnie. Mogą posłużyć do w pełni kwalifikowaną typu, elementu lub wartości, który może zostać przekonwertowany do i z ciągu za pomocą System.Convert.ChangeType. (Innymi słowy, dowolnej typ, który mogą być przekazywane do i z zadania zewnętrznego.)
+- `ParameterType` jest opcjonalny atrybut, który jest `System.String` domyślnie. Mogą posłużyć do w pełni kwalifikowaną typu, elementu lub wartości, który może zostać przekonwertowany do i z ciągu za pomocą System.Convert.ChangeType. (Innymi słowy, dowolnej typ, który mogą być przekazywane do i z zadania zewnętrznego.)
 
--   `Output` jest opcjonalny atrybut, który jest `false` domyślnie. Jeśli `true`, a następnie parametru musi być danej wartości przed powrotem z metody Execute.
+- `Output` jest opcjonalny atrybut, który jest `false` domyślnie. Jeśli `true`, a następnie parametru musi być danej wartości przed powrotem z metody Execute.
 
 Na przykład
 
@@ -153,11 +153,11 @@ Na przykład
 
 definiuje trzy następujące parametry:
 
--   `Expression` jest wymagany parametr wejściowy typu System.String.
+- `Expression` jest wymagany parametr wejściowy typu System.String.
 
--   `Files` jest wymagany element parametr wejściowy listy.
+- `Files` jest wymagany element parametr wejściowy listy.
 
--   `Tally` jest parametrem wyjściowym typu System.Int32.
+- `Tally` jest parametrem wyjściowym typu System.Int32.
 
 Jeśli `Code` element ma `Type` atrybutu `Fragment` lub `Method`, a następnie właściwości są tworzone automatycznie dla każdego parametru. W przeciwnym razie właściwości musi być jawnie zadeklarowana w kodzie źródłowym zadań i muszą dokładnie odpowiadać ich definicji parametru.
 

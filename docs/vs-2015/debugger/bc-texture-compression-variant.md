@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2b164933b3d695e1a680e26629b093b59009b502
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f0758d9eb5a003b0353ceb4fee21996d90685fa5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777835"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111236"
 ---
 # <a name="bc-texture-compression-variant"></a>Wariant kompresji tekstury BC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ Umożliwia zablokowanie kompresji tekstury, które mają format pikseli, który 
   
 - `D3D11_TEXTURE2D_DESC` Obiekt przekazany w `pDesc` opisuje niezmiennych zasób programu do cieniowania; będącego:  
   
-  -   Element członkowski BindFlags ma tylko D3D11_BIND_SHADER_RESOURCE ustawiona jest flaga.  
+  - Element członkowski BindFlags ma tylko D3D11_BIND_SHADER_RESOURCE ustawiona jest flaga.  
   
-  -   Użycie elementu członkowskiego jest równa D3D11_USAGE_DEFAULT lub D3D11_USAGE_IMMUTABLE.  
+  - Użycie elementu członkowskiego jest równa D3D11_USAGE_DEFAULT lub D3D11_USAGE_IMMUTABLE.  
   
-  -   Element członkowski CPUAccessFlags jest równa 0 (Brak dostępu Procesora).  
+  - Element członkowski CPUAccessFlags jest równa 0 (Brak dostępu Procesora).  
   
-  -   Element członkowski SamplerDesc ma członków liczba równa 1 (nie próbkowanie Wygładzanie (MSAA)).  
+  - Element członkowski SamplerDesc ma członków liczba równa 1 (nie próbkowanie Wygładzanie (MSAA)).  
   
 - Początkowe dane są dostarczane do wywołania `CreateTexture2D`.  
   

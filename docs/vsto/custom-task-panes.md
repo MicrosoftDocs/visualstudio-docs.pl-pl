@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f034797a773602f714ce69193ce6987ba9560bf5
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 9e6ebd09188e737e75c9e5f66ed95411e1a9453d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526710"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106205"
 ---
 # <a name="custom-task-panes"></a>Niestandardowe okienka zadań
   Panele interfejsu użytkownika, które zwykle są zadokowane po jednej stronie okna aplikacji Microsoft Office są okienka zadań. Niestandardowe okienka zadań zapewniają możliwość tworzenia własnych okienka zadań i użytkownikom znany interfejs dostęp do funkcji tego rozwiązania. Na przykład interfejs może zawierać mechanizmy uruchamianie kodu na modyfikowanie dokumentów lub wyświetlania danych ze źródła danych.
@@ -126,7 +126,7 @@ ms.locfileid: "57526710"
 
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Automatycznie czyści zasoby wykorzystywane przez niestandardowego okienka zadań, gdy dodatku narzędzi VSTO jest zwalniana. Nie wywołuj <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> lub <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> metody `ThisAddIn_Shutdown` program obsługi zdarzeń w projekcie. Te metody zgłosi <xref:System.ObjectDisposedException>, ponieważ [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] czyści zasoby wykorzystywane przez <xref:Microsoft.Office.Tools.CustomTaskPane> obiekt przed `ThisAddIn_Shutdown` jest wywoływana. Aby uzyskać więcej informacji na temat `ThisAddIn_Shutdown`, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md)
 
-##  <a name="Managing"></a> Zarządzanie niestandardowych okienek zadań w wiele okien aplikacji
+## <a name="Managing"></a> Zarządzanie niestandardowych okienek zadań w wiele okien aplikacji
  Podczas tworzenia niestandardowego okienka zadań w aplikacji, która wyświetla dokumenty i inne elementy przy użyciu wielu okien, należy wykonać dodatkowe czynności, aby upewnić się, że w okienku zadań jest widoczna po użytkownik oczekuje.
 
  Niestandardowe okienka zadań we wszystkich aplikacjach są skojarzone z oknem ramki dokument przedstawia widok dokumentu lub elementu do użytkownika. W okienku zadań jest widoczna tylko wtedy, gdy okno skojarzone jest widoczne. Jednak nie wszystkie aplikacje użyć okien ramowych dokumentu, ten sam sposób.
@@ -137,7 +137,7 @@ ms.locfileid: "57526710"
 
 - [Word, InfoPath i PowerPoint](#WordAndInfoPath)
 
-##  <a name="Outlook"></a> Program Outlook
+## <a name="Outlook"></a> Program Outlook
  Po utworzeniu niestandardowego okienka zadań programu Outlook niestandardowego okienka zadań jest skojarzony z określonym oknie Eksploratora lub Inspektora. Eksploratory usługi są systemu windows, które wyświetlają zawartość folderu i inspektorzy, wyświetlające element, taki jak wiadomość e-mail lub zadania.
 
  Jeśli chcesz wyświetlić niestandardowego okienka zadań z wielu Eksploratora lub Inspektora systemu windows, musisz utworzyć nowe wystąpienie klasy niestandardowego okienka zadań, po otwarciu okna Eksploratora lub Inspektora. Aby to zrobić, obsługi zdarzenia, które jest wywoływane, gdy stworzono okno Eksploratora lub Inspektora, a następnie utwórz okienka zadań w obsłudze zdarzeń. Może również obsługiwać Explorer i Inspektor zdarzenia, aby ukryć lub wyświetlanie okienka zadań w zależności od tego, w jakim oknie jest widoczna.
@@ -167,7 +167,7 @@ ms.locfileid: "57526710"
 
  Nie usuwaj jawnie niestandardowego okienka zadań, systemu windows w programie Outlook może zawierać wiele wystąpień niestandardowego okienka zadań. Outlook czasami jest odtwarzana systemu windows i windows odtwarzania zachowywanie odwołania do żadnych niestandardowych okienek zadań, które zostały dołączone do nich.
 
-##  <a name="WordAndInfoPath"></a> Word, InfoPath i PowerPoint
+## <a name="WordAndInfoPath"></a> Word, InfoPath i PowerPoint
  Word, InfoPath i PowerPoint wyświetlić każdy dokument w oknie ramowym innego dokumentu. Podczas tworzenia niestandardowego okienka zadań w przypadku tych aplikacji niestandardowego okienka zadań jest skojarzony tylko z określonym dokumentem. Jeśli użytkownik otwiera innego dokumentu, niestandardowego okienka zadań jest ukryta, do momentu wyświetlenia dokumentu wcześniej ponownie.
 
  Jeśli chcesz wyświetlić niestandardowego okienka zadań z wieloma dokumentami, Utwórz nowe wystąpienie klasy niestandardowego okienka zadań, gdy użytkownik tworzy nowy dokument lub otwiera istniejący dokument. Aby to zrobić, obsługi zdarzeń, które są wywoływane, gdy dokument zostanie utworzony lub otwarty, a następnie utwórz okienka zadań w procedurze obsługi zdarzeń. Może również obsługiwać zdarzenia dokumentu, aby ukryć lub wyświetlanie okienka zadań w zależności od tego, który dokument jest widoczna.
@@ -177,43 +177,43 @@ ms.locfileid: "57526710"
 ### <a name="word-events"></a>Zdarzenia programu Word
  Aby monitorować stan okien dokumentu programu Word, może obsługiwać następujące zdarzenia:
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeClose>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeClose>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.NewDocument>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.NewDocument>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowActivate>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowActivate>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowDeactivate>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowDeactivate>
 
 ### <a name="infopath-events"></a>Zdarzenia programu InfoPath
  Aby monitorować stan okien dokumentu w programie InfoPath, może obsługiwać następujące zdarzenia:
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowActivate>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowActivate>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowDeactivate>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowDeactivate>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeClose>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeClose>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen>
 
 ### <a name="powerpoint-events"></a>Zdarzenia programu PowerPoint
  Aby monitorować stan okien dokumentu w programie PowerPoint, może obsługiwać następujące zdarzenia:
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
 ## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
