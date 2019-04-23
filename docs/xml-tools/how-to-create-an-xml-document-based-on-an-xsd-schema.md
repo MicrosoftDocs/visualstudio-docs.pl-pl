@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa5206ea42385cb716c522504648e1d8fd5879ae
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: d4ba0106a1494c7e7e8d56c3e902a3436f657712
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525121"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115357"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Instrukcje: Tworzenie dokumentu XML na podstawie schematu XSD
 
@@ -21,29 +21,29 @@ ms.locfileid: "57525121"
 
  Tej opcji można użyć w następujących scenariuszach:
 
--   Aby poznać użycie różnych konstrukcji w schemacie.
+- Aby poznać użycie różnych konstrukcji w schemacie.
 
--   Aby upewnić się, że schemat wykonuje co ma na celu.
+- Aby upewnić się, że schemat wykonuje co ma na celu.
 
 **Generowanie XML przykładowe** funkcja jest dostępna tylko na elementy globalne i wymaga prawidłowego zestawu schematu XML.
 
 Ta funkcja generuje zwykle ważnych dokumentów XML. Jednakże, jeśli schemat zawiera co najmniej jeden z następujących czynności, próbki mogą być nieprawidłowe:
 
--   `xs:key`, `xs:keyref`, I `xs:unique` ograniczenia tożsamości.
+- `xs:key`, `xs:keyref`, I `xs:unique` ograniczenia tożsamości.
 
--   `xs:pattern` zestawy reguł.
+- `xs:pattern` zestawy reguł.
 
--   Wyliczenia o `xs:QName` typu.
+- Wyliczenia o `xs:QName` typu.
 
--   `xs:ENTITY`, `xs:ENTITIES`, i `xs:NOTATION` typów.
+- `xs:ENTITY`, `xs:ENTITIES`, i `xs:NOTATION` typów.
 
 Ponadto należy pamiętać, że `xs:base64Binary` zawartość zostanie wygenerowany tylko wtedy, gdy wyliczenia występują w schematu dla tego typu.
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Można wygenerować wystąpienia dokumentu XML na podstawie pliku XSD
 
-1.  Postępuj zgodnie z instrukcjami w [jak: Tworzenie i edytowanie pliku schematu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Postępuj zgodnie z instrukcjami w [jak: Tworzenie i edytowanie pliku schematu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  W [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md), kliknij prawym przyciskiem myszy `PurchaseOrder` element globalny. Wybierz **wygenerować przykładowy kod XML**.
+2. W [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md), kliknij prawym przyciskiem myszy `PurchaseOrder` element globalny. Wybierz **wygenerować przykładowy kod XML**.
 
      Po wybraniu tej opcji, PurchaseOrder. *xml* pliku o następującej zawartości XML przykładowych zostanie wygenerowany i otwarty w edytorze XML:
 

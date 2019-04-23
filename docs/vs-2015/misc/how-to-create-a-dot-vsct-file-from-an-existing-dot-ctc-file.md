@@ -9,29 +9,29 @@ helpviewer_keywords:
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
 manager: jillfra
-ms.openlocfilehash: fd041724eaf13395ad2e85427de35faa86374abd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2d5ba5a271cd7132d9750fc0569b801022aeb932
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797100"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117859"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Instrukcje: Tworzenie. Plik Vsct z istniejącej. Plik CTC
 Można utworzyć pliku vsct oparty na składni XML z istniejącego pliku źródłowego .ctc tabeli poleceń. Dzięki temu możesz korzystać z zalet nowego opartego na języku XML [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] format kompilatora tabeli (VSCT) polecenia.  
   
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>Do utworzenia pliku vsct z pliku .ctc  
   
-1.  Uzyskaj kopię programu języka Perl.  
+1. Uzyskaj kopię programu języka Perl.  
   
-2.  Uzyskaj kopię skryptu Perl ConvertCTCToVSCT.pl, zazwyczaj znajduje się w  *\<ścieżka instalacji programu Visual Studio SDK >* \VisualStudioIntegration\Tools\bin folderu.  
+2. Uzyskaj kopię skryptu Perl ConvertCTCToVSCT.pl, zazwyczaj znajduje się w  *\<ścieżka instalacji programu Visual Studio SDK >* \VisualStudioIntegration\Tools\bin folderu.  
   
-3.  Uzyskaj kopię pliku źródłowego .ctc, który ma zostać przekonwertowany.  
+3. Uzyskaj kopię pliku źródłowego .ctc, który ma zostać przekonwertowany.  
   
-4.  Umieść pliki w tym samym katalogu.  
+4. Umieść pliki w tym samym katalogu.  
   
-5.  W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] polecenia monitu okna, przejdź do katalogu.  
+5. W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] polecenia monitu okna, przejdź do katalogu.  
   
-6.  Typ  
+6. Typ  
   
     ```  
     perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct  

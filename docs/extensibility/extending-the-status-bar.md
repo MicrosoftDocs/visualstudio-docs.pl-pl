@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f655979e010ea7aa0dafee78648a970cb2e3229
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 499e6c2b34fcc5261ab8fb3a87a24e2cc0959d8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704777"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113745"
 ---
 # <a name="extend-the-status-bar"></a>Rozszerzanie paska stanu
 Na pasku stanu programu Visual Studio w dolnej części IDE służy do wyświetlania informacji.
@@ -32,9 +32,9 @@ Na pasku stanu programu Visual Studio w dolnej części IDE służy do wyświetl
 
 ### <a name="read-and-write-to-the-status-bar"></a>Odczyt i zapis do paska stanu
 
-1.  Utwórz projekt VSIX, o nazwie **TestStatusBarExtension** i dodać polecenie menu o nazwie **TestStatusBarCommand**.
+1. Utwórz projekt VSIX, o nazwie **TestStatusBarExtension** i dodać polecenie menu o nazwie **TestStatusBarCommand**.
 
-2.  W *TestStatusBarCommand.cs*, Zastąp kod metody procedury obsługi poleceń (`MenuItemCallback`) z następujących czynności:
+2. W *TestStatusBarCommand.cs*, Zastąp kod metody procedury obsługi poleceń (`MenuItemCallback`) z następujących czynności:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -68,17 +68,17 @@ Na pasku stanu programu Visual Studio w dolnej części IDE służy do wyświetl
     }
     ```
 
-3.  Skompilować kod i rozpocząć debugowanie.
+3. Skompilować kod i rozpocząć debugowanie.
 
-4.  Otwórz **narzędzia** menu w eksperymentalnym wystąpieniu programu Visual Studio. Kliknij przycisk **wywołania TestStatusBarCommand** przycisku.
+4. Otwórz **narzędzia** menu w eksperymentalnym wystąpieniu programu Visual Studio. Kliknij przycisk **wywołania TestStatusBarCommand** przycisku.
 
      Powinien zostać wyświetlony, tekst w pasku odczyty teraz stanu **napisany przed chwilą na pasku stanu.** i zostanie wyświetlone okno komunikatu ma ten sam tekst.
 
 ### <a name="update-the-progress-bar"></a>Aktualizacja pasek postępu
 
-1.  W tej procedurze, firma Microsoft pokazują, jak zainicjować i zaktualizuj pasek postępu.
+1. W tej procedurze, firma Microsoft pokazują, jak zainicjować i zaktualizuj pasek postępu.
 
-2.  Otwórz *TestStatusBarCommand.cs* i Zastęp `MenuItemCallback` metoda następującym kodem:
+2. Otwórz *TestStatusBarCommand.cs* i Zastęp `MenuItemCallback` metoda następującym kodem:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -102,21 +102,21 @@ Na pasku stanu programu Visual Studio w dolnej części IDE służy do wyświetl
     }
     ```
 
-3.  Skompilować kod i rozpocząć debugowanie.
+3. Skompilować kod i rozpocząć debugowanie.
 
-4.  Otwórz **narzędzia** menu w eksperymentalnym wystąpieniu programu Visual Studio. Kliknij przycisk **wywołania TestStatusBarCommand** przycisku.
+4. Otwórz **narzędzia** menu w eksperymentalnym wystąpieniu programu Visual Studio. Kliknij przycisk **wywołania TestStatusBarCommand** przycisku.
 
      Powinien zostać wyświetlony, tekst w pasku odczyty teraz stanu **zapisywania pasek postępu.** Powinien być też widoczny pasek postępu pobierania aktualizacji co sekundę 20 sekund. Po tym zostaną wyczyszczone, pasek stanu i pasek postępu.
 
 ### <a name="display-an-animation"></a>Wyświetlanie animacji
 
-1.  Na pasku stanu wyświetlane animacji pętli, która wskazuje długotrwała operacja (np. Tworzenie wielu projektów w rozwiązaniu). Jeśli nie widzisz tą animację, upewnij się, że masz właściwą **narzędzia** > **opcje** ustawienia:
+1. Na pasku stanu wyświetlane animacji pętli, która wskazuje długotrwała operacja (np. Tworzenie wielu projektów w rozwiązaniu). Jeśli nie widzisz tą animację, upewnij się, że masz właściwą **narzędzia** > **opcje** ustawienia:
 
      Przejdź do **narzędzia** > **opcje** > **ogólne** kartę i usuń zaznaczenie pola wyboru **automatycznie Dostosuj wygląd bazując na kliencie wydajność**. Następnie zaznacz opcję podrzędnych **Włącz bogate doświadczenia wizualne**. Teraz można wyświetlać animacji, gdy kompilujesz projekt eksperymentalne wystąpienia programu Visual Studio.
 
      W tej procedurze wyświetlana standardowa animacji programu Visual Studio, który reprezentuje budowania projektu lub rozwiązania.
 
-2.  Otwórz *TestStatusBarCommand.cs* i Zastęp `MenuItemCallback` metoda następującym kodem:
+2. Otwórz *TestStatusBarCommand.cs* i Zastęp `MenuItemCallback` metoda następującym kodem:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -137,8 +137,8 @@ Na pasku stanu programu Visual Studio w dolnej części IDE służy do wyświetl
     }
     ```
 
-3.  Skompilować kod i rozpocząć debugowanie.
+3. Skompilować kod i rozpocząć debugowanie.
 
-4.  Otwórz **narzędzia** w doświadczalnym wystąpieniu programu Visual Studio, a następnie kliknij przycisk menu **wywołania TestStatusBarCommand**.
+4. Otwórz **narzędzia** w doświadczalnym wystąpieniu programu Visual Studio, a następnie kliknij przycisk menu **wywołania TestStatusBarCommand**.
 
      Gdy pojawi się okno komunikatu, również powinny animacji w pasku stanu na końcu z prawej strony. Podczas odrzucania okno komunikatu znika animacji.

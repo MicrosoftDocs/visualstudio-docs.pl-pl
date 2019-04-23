@@ -11,12 +11,12 @@ ms.assetid: a955b3d2-c8ad-40dd-8ea3-9f1a271e1eed
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: efbd13bf7ada237dc21bc5b2b6a186b13a52fd06
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 16f6558373c111dbaf933184cf5ae23d00962b7a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932418"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114746"
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>Instrukcje: Importuj wyniki testu obciążenia z repozytorium
 
@@ -28,21 +28,21 @@ Wyniki testu obciążeniowego można zarządzać z edytora testu obciążenia, u
 
 ## <a name="to-import-results-into-a-repository"></a>Aby zaimportować wyników do repozytorium
 
-1.  Od wydajności sieci web i obciążenia projektu testowego, otwórz test obciążenia.
+1. Od wydajności sieci web i obciążenia projektu testowego, otwórz test obciążenia.
 
-2.  Na osadzonym pasku narzędzi wybierz **Otwórz i Zarządzaj wynikami**.
+2. Na osadzonym pasku narzędzi wybierz **Otwórz i Zarządzaj wynikami**.
 
      **Otwórz i Zarządzaj wynikami testu obciążenia** zostanie wyświetlone okno dialogowe.
 
-3.  W **wprowadź nazwę kontrolera Aby odnaleźć wyniki testu obciążeniowego**, wybierz kontroler. Wybierz  **\<lokalny >** aby przejść do wyników przechowywanych lokalnie.
+3. W **wprowadź nazwę kontrolera Aby odnaleźć wyniki testu obciążeniowego**, wybierz kontroler. Wybierz  **\<lokalny >** aby przejść do wyników przechowywanych lokalnie.
 
      Jeśli wyniki testów obciążenia są dostępne, są wyświetlane w **wyniki testu obciążeniowego** listy. Kolumny są **czasu**, **czas trwania**, **użytkownika**, **wynik**, **testu**, i  **Opis elementu**. **Testowanie** zawiera nazwę testu, i **opis** zawiera opcjonalny opis dodawany przed uruchomieniem testu.
 
-4.  Wybierz **importu**.
+4. Wybierz **importu**.
 
      **Importuj wyniki testu obciążeniowego** pojawi się okno dialogowe.
 
-5.  W **nazwy pliku** polu, wpisz nazwę pliku wyników testu zarchiwizowany, a następnie wybierz **Otwórz**.
+5. W **nazwy pliku** polu, wpisz nazwę pliku wyników testu zarchiwizowany, a następnie wybierz **Otwórz**.
 
      \- lub —
 

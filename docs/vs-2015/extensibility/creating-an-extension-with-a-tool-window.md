@@ -8,12 +8,12 @@ ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f07cb45d6b77fc554475558fddba34792c0d8a55
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 94c8335b8d723ef20c04cfffe6b3788d71ecaa4f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774148"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118126"
 ---
 # <a name="creating-an-extension-with-a-tool-window"></a>Tworzenie rozszerzenia za pomocą okna narzędzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ W tej procedurze opisano sposób użyć szablonu projektu VSIX i **okna narzędz
   
 ### <a name="creating-a-tool-window"></a>Tworzenie okna narzędzi  
   
-1.  Utwórz projekt VSIX, o nazwie **FirstWindow**. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C# / rozszerzalności**.  
+1. Utwórz projekt VSIX, o nazwie **FirstWindow**. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C# / rozszerzalności**.  
   
-2.  Po otwarciu projektu, należy dodać szablon elementu okno narzędzia o nazwie **FirstWindow**. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Add / nowy element**. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C# / rozszerzalności** i wybierz **okna narzędzi niestandardowych**. W **nazwa** u dołu okna, Zmień nazwę pliku okna narzędzi, aby **FirstWindow.cs**.  
+2. Po otwarciu projektu, należy dodać szablon elementu okno narzędzia o nazwie **FirstWindow**. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Add / nowy element**. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C# / rozszerzalności** i wybierz **okna narzędzi niestandardowych**. W **nazwa** u dołu okna, Zmień nazwę pliku okna narzędzi, aby **FirstWindow.cs**.  
   
-3.  Skompiluj projekt, a następnie rozpocząć debugowanie.  
+3. Skompiluj projekt, a następnie rozpocząć debugowanie.  
   
      Pojawi się doświadczalnym wystąpieniu programu Visual Studio. Aby uzyskać więcej informacji na temat wystąpienia eksperymentalnego zobacz [wystąpienie doświadczalne](../extensibility/the-experimental-instance.md).  
   
-4.  W doświadczalnym wystąpieniu, przejdź do **widok / inne Windows**.  
+4. W doświadczalnym wystąpieniu, przejdź do **widok / inne Windows**.  
   
      Powinien zostać wyświetlony element menu dla **FirstWindow**. Kliknij go.  
   

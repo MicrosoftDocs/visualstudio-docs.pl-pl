@@ -8,12 +8,12 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ae69e33d60c4d6bc4257c6c9006b795d8cbdced
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 23d347d43918661ca65019862f476f1d636d5d06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868714"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117373"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Instalowanie platform testów jednostkowych innych firm
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Visual Studio Test Explorer można uruchamiać dowolną jednostkę struktury tes
   
  **Wymagania**  
   
--   Visual Studio Enterprise, Visual Studio Professional  
+- Visual Studio Enterprise, Visual Studio Professional  
   
 ## <a name="acquiring-third-party-frameworks"></a>Pobieranie struktur innych firm  
  Można pobrać i zainstalować wiele platform testów jednostkowych innych firm, korzystając z Menedżera rozszerzeń programu Visual Studio lub z galerii Visual Studio w witrynie MSDN. Można również pobrać struktur w innych witrynach, takich jak witryny sieci Web Framework.  

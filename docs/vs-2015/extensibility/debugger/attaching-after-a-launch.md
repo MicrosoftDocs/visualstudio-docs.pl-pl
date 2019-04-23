@@ -10,12 +10,12 @@ ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b1f39297c4e87b7d4801b786ca2132acaf366fd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71b26fc2d26e180af25919dde5d3c4ee1bc1f891
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799464"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113121"
 ---
 # <a name="attaching-after-a-launch"></a>Dołączanie po uruchomieniu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Po uruchomieniu programu sesji debugowania jest gotowy do dołączania aparat de
 ## <a name="design-decisions"></a>Decyzje dotyczące projektu  
  Ponieważ komunikacja jest łatwiejsze w przestrzeni adresowej udostępnionego, należy zdecydować, czy warto więcej ułatwiają komunikację między sesji debugowania i "de" lub między DE i program. Wybierz jedną z następujących:  
   
--   Jeśli warto więcej ułatwiają komunikację między sesji debugowania i "de", sesja debugowania wspólnie tworzy DE i pyta, Niemcy, aby dołączyć do programu. Spowoduje to pozostawienie sesji debugowania i "de" ze sobą w jedną przestrzeń adresową i środowiska wykonawczego i programie razem w innym.  
+- Jeśli warto więcej ułatwiają komunikację między sesji debugowania i "de", sesja debugowania wspólnie tworzy DE i pyta, Niemcy, aby dołączyć do programu. Spowoduje to pozostawienie sesji debugowania i "de" ze sobą w jedną przestrzeń adresową i środowiska wykonawczego i programie razem w innym.  
   
--   Jeśli więcej sensu ułatwiających komunikację między DE i program, następnie środowiska wykonawczego wspólnie tworzy DE. Spowoduje to pozostawienie SDM w jedną przestrzeń adresową, a DE, środowiska wykonawczego i program w innym. To jest typowe dla DE, który jest implementowany przy użyciu tłumacza do uruchamiania przy użyciu skryptu języków.  
+- Jeśli więcej sensu ułatwiających komunikację między DE i program, następnie środowiska wykonawczego wspólnie tworzy DE. Spowoduje to pozostawienie SDM w jedną przestrzeń adresową, a DE, środowiska wykonawczego i program w innym. To jest typowe dla DE, który jest implementowany przy użyciu tłumacza do uruchamiania przy użyciu skryptu języków.  
   
     > [!NOTE]
     >  Jak DE dołącza do programu zależy od implementacji. Komunikacja między DE i program jest również zależna od implementacji.  

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 64c7bc0f5b9aa9b23aa940583cebcd3e202e6487
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9c691eea7417e882ee3b73e9f2adc538714b486a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653648"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094670"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funkcje IntelliSense w edytorze XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,19 +85,19 @@ Edytor XML udostępnia pełne funkcje IntelliSense porównywalne do innych edyto
   
  Edytor XML ma następujące efekty dla następujących elementów:  
   
--   Dopasowywanie tagiem początkowym i końcowym.  
+- Dopasowywanie tagiem początkowym i końcowym.  
   
--   Jakaś para "\<" lub ">" nawiasy.  
+- Jakaś para "\<" lub ">" nawiasy.  
   
--   Początek i koniec komentarzy.  
+- Początek i koniec komentarzy.  
   
--   Początek i koniec instrukcji przetwarzania.  
+- Początek i koniec instrukcji przetwarzania.  
   
--   Początek i koniec bloki CDATA.  
+- Początek i koniec bloki CDATA.  
   
--   Początek i koniec DTD deklaracji.  
+- Początek i koniec DTD deklaracji.  
   
--   Otwieranie i zamykanie cudzysłowy atrybutów.  
+- Otwieranie i zamykanie cudzysłowy atrybutów.  
   
 ## <a name="modifying-the-intellisense-options"></a>Modyfikowanie opcji IntelliSense  
  Funkcje IntelliSense i automatycznego uzupełniania są domyślnie włączone. Jednak możesz to zmienić, modyfikując ustawienia opcji narzędzi.  
@@ -112,11 +112,11 @@ Edytor XML udostępnia pełne funkcje IntelliSense porównywalne do innych edyto
   
 #### <a name="to-change-the-auto-completion-behavior"></a>Aby zmienić zachowanie automatyczne uzupełnianie  
   
-1.  Wybierz **opcje** z **narzędzia** menu.  
+1. Wybierz **opcje** z **narzędzia** menu.  
   
-2.  Rozwiń **edytora tekstów**, rozwiń węzeł **XML**i wybierz **różne**.  
+2. Rozwiń **edytora tekstów**, rozwiń węzeł **XML**i wybierz **różne**.  
   
-3.  Wprowadzaj żadnych zmian w **automatyczne wstawianie** sekcji, a następnie kliknij przycisk **OK**.  
+3. Wprowadzaj żadnych zmian w **automatyczne wstawianie** sekcji, a następnie kliknij przycisk **OK**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytor XML](../xml-tools/xml-editor.md)   

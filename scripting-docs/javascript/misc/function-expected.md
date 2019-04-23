@@ -14,12 +14,12 @@ ms.assetid: f62ade94-9f6f-4832-9b9b-49a06a385bbe
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41d1ecc982dcdc4d494fc167e4784e9121bec15e
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 4442143b2766ed3608a852d0f811a6b943fd19df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843938"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117059"
 ---
 # <a name="function-expected"></a>Oczekiwana funkcja
 Albo próbowałeś wywołać za pomocą jednego z **prototypu funkcji** metody na obiekt, który nie był `Function` obiektu lub możesz użyć obiektu w kontekście wywołań funkcji. Na przykład, poniższy kod generuje ten błąd, ponieważ **przykład** nie jest funkcją.  
@@ -31,9 +31,9 @@ var x = example();           // Try and call example as if it were a function.
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Wywoływać tylko **prototypu funkcji** metod `Function` obiektów.  
+- Wywoływać tylko **prototypu funkcji** metod `Function` obiektów.  
   
--   Upewnij się, że używasz operatora wywołania funkcji `()` wywołać tylko funkcje.  
+- Upewnij się, że używasz operatora wywołania funkcji `()` wywołać tylko funkcje.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Function — obiekt](../../javascript/reference/function-object-javascript.md)   

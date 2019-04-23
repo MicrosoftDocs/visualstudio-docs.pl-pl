@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d3c90d955ba412a75005ab47627c1901df57891
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9aa4f39fb54617ae1dbf048a1e13f009c8df5185
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936983"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085632"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Przesłanianie i rozszerzanie wygenerowanych klas
 
@@ -54,9 +54,9 @@ Niemniej jednak można zastąpić tych metod, ustawiając **Generates Double Der
 
 Na przykład, na przykład Library.dsl `CirculationBook` klasa domeny ma `Generates``Double Derived` właściwością `true`. Kod generowany dla tej klasy domeny zawiera dwie klasy:
 
--   `CirculationBookBase`, która jest abstrakcyjny i który zawiera wszystkie metody i właściwości.
+- `CirculationBookBase`, która jest abstrakcyjny i który zawiera wszystkie metody i właściwości.
 
--   `CirculationBook`, który pochodzi od `CirculationBookBase`. Jest pusta, z wyjątkiem jego konstruktorów.
+- `CirculationBook`, który pochodzi od `CirculationBookBase`. Jest pusta, z wyjątkiem jego konstruktorów.
 
 Aby zastąpić dowolną metodę, tworzysz częściową definicję klasy pochodnej, takich jak `CirculationBook`. Można zastąpić wygenerowane metody i metod odziedziczone framework modelowania.
 

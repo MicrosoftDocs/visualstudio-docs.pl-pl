@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0c805c842832ac99c527ea382169775d8b6b2529
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5114e7b32bd22b341489e15ac354cc24b3c6d7d7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782556"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113316"
 ---
 # <a name="validate-your-uml-model"></a>Weryfikacja modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,24 +49,24 @@ Niektóre modele UML, które można narysować w programie Visual Studio może z
   
 #### <a name="to-install-a-visual-studio-extension"></a>Aby zainstalować rozszerzenia programu Visual Studio  
   
-1.  Kliknij dwukrotnie **.vsix** pliku w Eksploratorze Windows (lub Eksploratora plików).  
+1. Kliknij dwukrotnie **.vsix** pliku w Eksploratorze Windows (lub Eksploratora plików).  
   
-2.  Ponownie uruchom dowolne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , jest już uruchomiony.  
+2. Ponownie uruchom dowolne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , jest już uruchomiony.  
   
 ## <a name="disabling-and-uninstalling-validation-constraints"></a>Wyłączanie i odinstalowywania ograniczenia sprawdzania poprawności  
  W przypadku pracy z modelem, do którego nie stosuje ograniczenia może tymczasowo wyłączyć rozszerzenie, które je zawiera. W ten sposób pozwala pracować z różnymi rodzajami modeli w różnym czasie, włączania i wyłączania rozszerzeń.  
   
 #### <a name="to-disable-or-uninstall-a-visual-studio-extension"></a>Aby wyłączyć lub odinstalować rozszerzenia programu Visual Studio  
   
-1.  Na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.  
+1. Na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.  
   
-2.  Obok rozszerzenia, kliknij przycisk **wyłączyć** tymczasowo wyłączyć rozszerzenie. Możesz ją włączyć ponownie później, wracając do **rozszerzenia i aktualizacje** okna.  
+2. Obok rozszerzenia, kliknij przycisk **wyłączyć** tymczasowo wyłączyć rozszerzenie. Możesz ją włączyć ponownie później, wracając do **rozszerzenia i aktualizacje** okna.  
   
      \- lub —  
   
      Kliknij przycisk **Odinstaluj** można usunąć rozszerzenia.  
   
-3.  Uruchom ponownie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Uruchom ponownie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>Zobacz też  
  [Definiowanie ograniczeń walidacji dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md)   

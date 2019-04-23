@@ -10,12 +10,12 @@ ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9576b220ed3624ee1ee5dbf83630affc38041231
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 45355ff34b2a088c63f6d303e771d7a5008cb80c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804508"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117996"
 ---
 # <a name="preparing-extensions-for-windows-installer-deployment"></a>Przygotowywanie rozszerzeń dla wdrożenia Instalatora Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,34 +27,34 @@ Za pomocą pakietu Instalatora Windows (MSI) nie można wdrożyć pakiet VSIX. J
   
 #### <a name="to-prepare-an-extension-project-for-windows-installer-deployment"></a>Aby przygotować projekt rozszerzenia dla wdrożenia Instalatora Windows  
   
-1.  Tworzenie pakietu VSPackage, składnik MEF, zakończeń edytora lub innych typów projektów rozszerzalności, która zawiera manifestu VSIX.  
+1. Tworzenie pakietu VSPackage, składnik MEF, zakończeń edytora lub innych typów projektów rozszerzalności, która zawiera manifestu VSIX.  
   
-2.  Otwórz manifestu VSIX w edytorze kodu.  
+2. Otwórz manifestu VSIX w edytorze kodu.  
   
-3.  Element InstalledByMsi manifestu VSIX, aby ustawić `true`. Aby uzyskać więcej informacji na temat manifestu VSIX, zobacz [VSIX rozszerzenia schematu 2.0 Reference](../extensibility/vsix-extension-schema-2-0-reference.md).  
+3. Element InstalledByMsi manifestu VSIX, aby ustawić `true`. Aby uzyskać więcej informacji na temat manifestu VSIX, zobacz [VSIX rozszerzenia schematu 2.0 Reference](../extensibility/vsix-extension-schema-2-0-reference.md).  
   
      Zapobiega to próby instalacji składnika Instalator VSIX.  
   
-4.  Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i kliknij przycisk **właściwości**.  
+4. Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i kliknij przycisk **właściwości**.  
   
-5.  Wybierz **VSIX** kartę.  
+5. Wybierz **VSIX** kartę.  
   
-6.  Sprawdź pole o nazwie **VSIX kopiowania zawartości do następującej lokalizacji** i wpisz ścieżkę, do której pliki przejmą projektu Instalatora.  
+6. Sprawdź pole o nazwie **VSIX kopiowania zawartości do następującej lokalizacji** i wpisz ścieżkę, do której pliki przejmą projektu Instalatora.  
   
 ## <a name="extracting-files-from-an-existing-vsix-package"></a>Wypakowywanie plików z istniejącego pakietu VSIX  
  Wykonaj następujące kroki, aby dodać zawartość istniejącego pakietu VSIX do projektu Instalatora, gdy nie masz pliki źródłowe.  
   
 #### <a name="to-extract-files-from-an-existing-vsix-package"></a>Aby wyodrębnić pliki z istniejącego pakietu VSIX  
   
-1.  Zmień nazwę. Plik VSIX, zawierający rozszerzenie z *filename*.vsix do *filename*.zip.  
+1. Zmień nazwę. Plik VSIX, zawierający rozszerzenie z *filename*.vsix do *filename*.zip.  
   
-2.  Skopiuj zawartość pliku zip do katalogu.  
+2. Skopiuj zawartość pliku zip do katalogu.  
   
-3.  Usuwanie pliku [Content_types] .xml z katalogu.  
+3. Usuwanie pliku [Content_types] .xml z katalogu.  
   
-4.  Edytowanie manifestu VSIX, jak pokazano w poprzedniej procedurze.  
+4. Edytowanie manifestu VSIX, jak pokazano w poprzedniej procedurze.  
   
-5.  Dodaj pozostałych plików do projektu Instalatora.  
+5. Dodaj pozostałych plików do projektu Instalatora.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wdrażanie za pomocą Instalatora programu Visual Studio](http://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0)   

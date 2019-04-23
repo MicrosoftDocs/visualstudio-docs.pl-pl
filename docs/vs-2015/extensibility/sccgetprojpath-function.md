@@ -12,23 +12,23 @@ ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 053d8ff8f7e75224b05b1a722ba1bce03cd53a59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4c7a4af5928f1d7b803e882c1826e451982389bc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765278"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093933"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath, funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ta funkcja monituje użytkownika o ścieżkę projektu, który jest ciągiem, który ma znaczenie tylko do wtyczka do kontroli źródła. Jest ona wywoływana, gdy użytkownik jest:  
   
--   Tworzenie nowego projektu  
+- Tworzenie nowego projektu  
   
--   Dodawanie istniejącego projektu do kontroli wersji  
+- Dodawanie istniejącego projektu do kontroli wersji  
   
--   Próby znalezienia istniejący projekt kontroli wersji  
+- Próby znalezienia istniejący projekt kontroli wersji  
   
 ## <a name="syntax"></a>Składnia  
   

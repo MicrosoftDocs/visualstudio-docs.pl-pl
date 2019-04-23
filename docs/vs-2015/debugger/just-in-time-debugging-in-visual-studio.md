@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ca4c3e5016377758e8910c15bf992e629778c0e9
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 1f2d3f0bd70a4c7be82b991eb5397065fe3d4ee7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868192"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116176"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Debugowanie just in time w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Działania należy podjąć, gdy pojawi się programu Visual Studio Just-in-Time
 
 - Konieczne jest posiadanie [zainstalowanego programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) Aby wyświetlić szczegółowe informacje o błędzie i spróbuj go debugować. Zobacz [przy użyciu JIT](#BKMK_Using_JIT) szczegółowe informacje. Jeśli nie można naprawić błąd i napraw aplikację, skontaktuj się z właścicielem aplikacji, aby rozwiązać problem.
 
-##  <a name="BKMK_Enabling"></a> Włącz lub wyłącz Just-In-Time debugowania
+## <a name="BKMK_Enabling"></a> Włącz lub wyłącz Just-In-Time debugowania
  Można włączyć lub wyłączyć debugowanie w programie Visual Studio Just In Time **narzędzia / Opcje** okno dialogowe.
 
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>Aby włączyć lub wyłączyć Just-In-Time debugowanie
@@ -73,36 +73,36 @@ Działania należy podjąć, gdy pojawi się programu Visual Studio Just-in-Time
 
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>Aby wyłączyć debugowanie, edytując rejestr Just In Time
 
-1.  Na **Start** menu, wyszukaj i uruchom `regedit.exe`
+1. Na **Start** menu, wyszukaj i uruchom `regedit.exe`
 
-2.  W **Edytora rejestru** okna, zlokalizuj i Usuń wpisy rejestru wykonaj:
+2. W **Edytora rejestru** okna, zlokalizuj i Usuń wpisy rejestru wykonaj:
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
 
-    -   HKEY_LOCAL_MACHINE\Software\Microsoft\\. NETFramework\DbgManagedDebugger
+    - HKEY_LOCAL_MACHINE\Software\Microsoft\\. NETFramework\DbgManagedDebugger
 
-3.  Jeśli komputer działa w 64-bitowym systemie operacyjnym, należy również usunąć następujące wpisy rejestru:
+3. Jeśli komputer działa w 64-bitowym systemie operacyjnym, należy również usunąć następujące wpisy rejestru:
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\DbgManagedDebugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\DbgManagedDebugger
 
-4.  Należy zadbać, aby nie przypadkowo usunąć lub zmienić żadnych kluczy rejestru.
+4. Należy zadbać, aby nie przypadkowo usunąć lub zmienić żadnych kluczy rejestru.
 
-5.  Zamknij **Edytora rejestru** okna.
+5. Zamknij **Edytora rejestru** okna.
 
 > [!NOTE]
 >  Jeśli próbujesz wyłączyć debugowanie po stronie serwera aplikacji Just-In-Time, a te kroki nie rozwiążą problemu, należy wyłączyć debugowanie po stronie serwera, w ustawieniach aplikacji usług IIS i spróbuj ponownie.
 
 #### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>Aby włączyć Just-In-Time, debugowanie formularza Windows
 
-1.  Domyślnie aplikacje Windows Forms mają program obsługi wyjątków najwyższego poziomu, który umożliwia programowi kontynuowania działania, jeśli możliwe jest odzyskiwanie. Na przykład jeśli aplikacja Windows Forms zwraca nieobsługiwany wyjątek, zobaczysz okno dialogowe podobne do następującego:
+1. Domyślnie aplikacje Windows Forms mają program obsługi wyjątków najwyższego poziomu, który umożliwia programowi kontynuowania działania, jeśli możliwe jest odzyskiwanie. Na przykład jeśli aplikacja Windows Forms zwraca nieobsługiwany wyjątek, zobaczysz okno dialogowe podobne do następującego:
 
      ![WindowsFormsUnhandledException](../debugger/media/windowsformsunhandledexception.png "WindowsFormsUnhandledException")
 
      Aby włączyć Just-In-Time debugowanie aplikacji Windows Forms, należy wykonać następujące dodatkowe czynności:
 
-2.  Ustaw `jitDebugging` wartość `true` w `system.windows.form` części pliku machine.config lub  *\<Nazwa aplikacji >*. exe.config pliku:
+2. Ustaw `jitDebugging` wartość `true` w `system.windows.form` części pliku machine.config lub  *\<Nazwa aplikacji >*. exe.config pliku:
 
     ```
     <configuration>
@@ -110,7 +110,7 @@ Działania należy podjąć, gdy pojawi się programu Visual Studio Just-in-Time
     </configuration>
     ```
 
-3.  W aplikacji formularzy Windows w języku C++, należy także ustawić `DebuggableAttribute` w pliku .config lub w kodzie. Jeśli kompilujesz z opcją [/zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) i bez [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), kompilator ustawia ten atrybut. Jeśli chcesz debugować kompilację niezoptymalizowanego wydania, jednak należy ustawić to samodzielnie. Można to zrobić, dodając poniższą linię do one pliku AssemblyInfo.cpp aplikacji:
+3. W aplikacji formularzy Windows w języku C++, należy także ustawić `DebuggableAttribute` w pliku .config lub w kodzie. Jeśli kompilujesz z opcją [/zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) i bez [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), kompilator ustawia ten atrybut. Jeśli chcesz debugować kompilację niezoptymalizowanego wydania, jednak należy ustawić to samodzielnie. Można to zrobić, dodając poniższą linię do one pliku AssemblyInfo.cpp aplikacji:
 
     ```
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -178,19 +178,19 @@ static void Main(string[] args)
 
  Można napotkać następujące komunikaty o błędach, które są skojarzone z Just-In-Time debugowania.
 
--   **Nie można dołączyć do procesu powodującego awarię. Określony program nie jest programem Windows ani MS-DOS.**
+- **Nie można dołączyć do procesu powodującego awarię. Określony program nie jest programem Windows ani MS-DOS.**
 
      Ten błąd występuje, gdy użytkownik próbuje dołączyć do procesu uruchomionego jako inny użytkownik.
 
      Aby obejść ten problem, uruchom program Visual Studio, otwórz **dołączyć do procesu** okno dialogowe z **debugowania** menu, a następnie znajdź proces, który chcesz debugować w **dostępne procesy**listy. Jeśli nie znasz nazwy procesu, Przyjrzyj się **debuger just in Time programu Visual Studio** okna dialogowego i zwróć uwagę, identyfikator procesu. Wybierz proces na **dostępne procesy** listy, a następnie kliknij przycisk **Dołącz**. W **debuger just in Time programu Visual Studio** okno dialogowe, kliknij przycisk **nie** aby zamknąć okno dialogowe.
 
--   **Nie można uruchomić debugera, ponieważ żaden użytkownik nie jest zalogowany.**
+- **Nie można uruchomić debugera, ponieważ żaden użytkownik nie jest zalogowany.**
 
      Ten błąd występuje, gdy Just-In-Time debugowania próbuje uruchomić program Visual Studio na maszynie w przypadku, gdy nie ma żadnego użytkownika zalogowany do konsoli. Ponieważ żaden użytkownik nie jest zalogowany, nie istnieje żadna sesja użytkownika, aby wyświetlić Just-In-Time debugging okno dialogowe.
 
      Aby rozwiązać ten problem, należy zalogować się na komputerze.
 
--   **Klasa nie jest zarejestrowana.**
+- **Klasa nie jest zarejestrowana.**
 
      Ten błąd wskazuje, że debuger próbował utworzyć klasę modelu COM, który nie jest zarejestrowana, prawdopodobnie z powodu problemu z instalacją.
 

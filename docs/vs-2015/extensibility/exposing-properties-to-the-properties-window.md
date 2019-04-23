@@ -12,12 +12,12 @@ ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4194ed3bac4d027b2bbf3cadd574f67343c0ae80
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b7b9e352c3042e5175b7420a9d4203ca7f59e7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789012"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117144"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>Uwidacznianie właściwości w oknie właściwości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Ten przewodnik udostępnia publiczne właściwości obiektu do **właściwości*
   
 #### <a name="to-expose-properties-to-the-properties-window"></a>Aby udostępnić właściwości w oknie właściwości  
   
-1.  Każde rozszerzenie programu Visual Studio rozpoczyna się od Projekt wdrożenia VSIX, który będzie zawierać zasoby rozszerzenia. Tworzenie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu VSIX, o nazwie `MyObjectPropertiesExtension`. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C# / rozszerzalności**.  
+1. Każde rozszerzenie programu Visual Studio rozpoczyna się od Projekt wdrożenia VSIX, który będzie zawierać zasoby rozszerzenia. Tworzenie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu VSIX, o nazwie `MyObjectPropertiesExtension`. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C# / rozszerzalności**.  
   
-2.  Dodawanie okna narzędzi, dodając szablon elementu niestandardowego okna narzędzi o nazwie `MyToolWindow`. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Add / nowy element**. W **okna dialogowego Dodaj nowy element**, przejdź do **elementy Visual C# / rozszerzalności** i wybierz **okna narzędzi niestandardowych**. W **nazwa** pola w dolnej części okna dialogowego, Zmień nazwę pliku, aby `MyToolWindow.cs`. Aby uzyskać więcej informacji o sposobie tworzenia niestandardowego okna narzędzi, zobacz [Tworzenie rozszerzenia za pomocą okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).  
+2. Dodawanie okna narzędzi, dodając szablon elementu niestandardowego okna narzędzi o nazwie `MyToolWindow`. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Add / nowy element**. W **okna dialogowego Dodaj nowy element**, przejdź do **elementy Visual C# / rozszerzalności** i wybierz **okna narzędzi niestandardowych**. W **nazwa** pola w dolnej części okna dialogowego, Zmień nazwę pliku, aby `MyToolWindow.cs`. Aby uzyskać więcej informacji o sposobie tworzenia niestandardowego okna narzędzi, zobacz [Tworzenie rozszerzenia za pomocą okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-3.  Otwórz MyToolWindow.cs i dodaj następującą instrukcję using:  
+3. Otwórz MyToolWindow.cs i dodaj następującą instrukcję using:  
   
     ```  
     using System.Collections;  
@@ -44,7 +44,7 @@ Ten przewodnik udostępnia publiczne właściwości obiektu do **właściwości*
     using Microsoft.VisualStudio.Shell.Interop;  
     ```  
   
-4.  Teraz dodaj następujące pola do `MyToolWindow` klasy.  
+4. Teraz dodaj następujące pola do `MyToolWindow` klasy.  
   
     ```csharp  
     private ITrackSelection trackSel;  
@@ -52,7 +52,7 @@ Ten przewodnik udostępnia publiczne właściwości obiektu do **właściwości*
   
     ```  
   
-5.  Dodaj następujący kod do klasy MyToolWindow.  
+5. Dodaj następujący kod do klasy MyToolWindow.  
   
     ```csharp  
     private ITrackSelection TrackSelection  
@@ -91,11 +91,11 @@ Ten przewodnik udostępnia publiczne właściwości obiektu do **właściwości*
   
      `TrackSelection` Używa właściwości `GetService` uzyskać `STrackSelection` usługa, która zapewnia <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interfejsu. `OnToolWindowCreated` Programu obsługi zdarzeń i `SelectList` metoda razem utworzyć listę wybranych obiektów, która zawiera tylko narzędzie okno okienka samego obiektu. `UpdateSelection` Informuje metoda **właściwości** okno, aby wyświetlić właściwości publiczne okienka okna narzędzi.  
   
-6.  Skompiluj projekt, a następnie rozpocząć debugowanie. Powinna zostać wyświetlona doświadczalnym wystąpieniu programu Visual Studio.  
+6. Skompiluj projekt, a następnie rozpocząć debugowanie. Powinna zostać wyświetlona doświadczalnym wystąpieniu programu Visual Studio.  
   
-7.  Jeśli **właściwości** okno nie jest widoczna, otwórz ją, naciskając klawisz F4.  
+7. Jeśli **właściwości** okno nie jest widoczna, otwórz ją, naciskając klawisz F4.  
   
-8.  Otwórz **MyToolWindow** okna. Znaleźć go w **widok / inne Windows**.  
+8. Otwórz **MyToolWindow** okna. Znaleźć go w **widok / inne Windows**.  
   
      Zostanie otwarte okno i publicznymi właściwościami okienku okna pojawiają się w **właściwości** okna.  
   
@@ -108,7 +108,7 @@ Ten przewodnik udostępnia publiczne właściwości obiektu do **właściwości*
   
 #### <a name="to-expose-tool-window-properties"></a>Aby udostępnić narzędzia Właściwości okna  
   
-1.  Otwórz MyToolWindow.cs i Dodaj właściwość typu boolean publicznych IsChecked do klasy MyToolWindow.  
+1. Otwórz MyToolWindow.cs i Dodaj właściwość typu boolean publicznych IsChecked do klasy MyToolWindow.  
   
     ```csharp  
     [Category("My Properties")]  
@@ -127,7 +127,7 @@ Ten przewodnik udostępnia publiczne właściwości obiektu do **właściwości*
   
      Tej właściwości pobiera jego stan z pola wyboru WPF, która zostanie utworzona później.  
   
-2.  Otwórz MyToolWindowControl.xaml.cs i Zamień Konstruktor MyToolWindowControl następujący kod.  
+2. Otwórz MyToolWindowControl.xaml.cs i Zamień Konstruktor MyToolWindowControl następujący kod.  
   
     ```vb  
     private MyToolWindow pane;  
@@ -141,19 +141,19 @@ Ten przewodnik udostępnia publiczne właściwości obiektu do **właściwości*
   
      Dzięki temu `MyToolWindowControl` dostęp do `MyToolWindow` okienka.  
   
-3.  W MyToolWindow.cs, zmień `MyToolWindow` konstruktora w następujący sposób:  
+3. W MyToolWindow.cs, zmień `MyToolWindow` konstruktora w następujący sposób:  
   
     ```csharp  
     base.Content = new MyToolWindowControl(this);  
     ```  
   
-4.  Zmień na widok projektu MyToolWindowControl.  
+4. Zmień na widok projektu MyToolWindowControl.  
   
-5.  Usuń przycisk i pole wyboru z **przybornika** na lewym górnym rogu.  
+5. Usuń przycisk i pole wyboru z **przybornika** na lewym górnym rogu.  
   
-6.  Dodaj zdarzenia zaznaczone i niezaznaczone. Zaznacz pole wyboru w widoku Projekt. W **właściwości** okna, kliknij przycisk programów obsługi zdarzeń (u góry po prawej stronie **właściwości** okno). Znajdź **zaznaczone** i typ **checkbox_Checked** w polu tekstowym, następnie znajdź **niezaznaczone** i typ **checkbox_Unchecked** w polu tekstowym.  
+6. Dodaj zdarzenia zaznaczone i niezaznaczone. Zaznacz pole wyboru w widoku Projekt. W **właściwości** okna, kliknij przycisk programów obsługi zdarzeń (u góry po prawej stronie **właściwości** okno). Znajdź **zaznaczone** i typ **checkbox_Checked** w polu tekstowym, następnie znajdź **niezaznaczone** i typ **checkbox_Unchecked** w polu tekstowym.  
   
-7.  Dodawanie obsługi zdarzeń pola wyboru:  
+7. Dodawanie obsługi zdarzeń pola wyboru:  
   
     ```csharp  
     private void checkbox_Checked(object sender, RoutedEventArgs e)  
@@ -168,7 +168,7 @@ Ten przewodnik udostępnia publiczne właściwości obiektu do **właściwości*
     }  
     ```  
   
-8.  Skompiluj projekt, a następnie rozpocząć debugowanie.  
+8. Skompiluj projekt, a następnie rozpocząć debugowanie.  
   
 9. W doświadczalnym wystąpieniu Otwórz **MyToolWindow** okna.  
   
@@ -184,7 +184,7 @@ Ten przewodnik udostępnia publiczne właściwości obiektu do **właściwości*
   
 #### <a name="to-change-selection-lists"></a>Aby zmienić wybór dotyczący listy  
   
-1.  Otwórz MyToolWindow.cs i Dodaj klasę publiczną, o nazwie `Simple`.  
+1. Otwórz MyToolWindow.cs i Dodaj klasę publiczną, o nazwie `Simple`.  
   
     ```csharp  
     public class Simple  
@@ -209,7 +209,7 @@ Ten przewodnik udostępnia publiczne właściwości obiektu do **właściwości*
     }  
     ```  
   
-2.  Dodawanie właściwości SimpleObject do klasy MyToolWindow, a także dwie metody, aby przełączyć **właściwości** okno wyboru między okienka w oknie i `Simple` obiektu.  
+2. Dodawanie właściwości SimpleObject do klasy MyToolWindow, a także dwie metody, aby przełączyć **właściwości** okno wyboru między okienka w oknie i `Simple` obiektu.  
   
     ```csharp  
     private Simple simpleObject = null;  
@@ -237,7 +237,7 @@ Ten przewodnik udostępnia publiczne właściwości obiektu do **właściwości*
     }  
     ```  
   
-3.  W MyToolWindowControl.cs programy obsługi pól wyboru należy zastąpić następujące wiersze kodu:  
+3. W MyToolWindowControl.cs programy obsługi pól wyboru należy zastąpić następujące wiersze kodu:  
   
     ```csharp  
     private void checkbox_Checked(object sender, RoutedEventArgs e)  
@@ -254,11 +254,11 @@ Ten przewodnik udostępnia publiczne właściwości obiektu do **właściwości*
     }  
     ```  
   
-4.  Skompiluj projekt, a następnie rozpocząć debugowanie.  
+4. Skompiluj projekt, a następnie rozpocząć debugowanie.  
   
-5.  W doświadczalnym wystąpieniu Otwórz **MyToolWindow** okna.  
+5. W doświadczalnym wystąpieniu Otwórz **MyToolWindow** okna.  
   
-6.  Zaznacz pole wyboru w **MyToolWindow** okna. **Właściwości** jest wyświetlana w oknie `Simple` obiektu właściwości **SomeText** i **tylko do odczytu**. Usuń zaznaczenie pola wyboru. Właściwości publiczne okna pojawiają się w **właściwości** okna.  
+6. Zaznacz pole wyboru w **MyToolWindow** okna. **Właściwości** jest wyświetlana w oknie `Simple` obiektu właściwości **SomeText** i **tylko do odczytu**. Usuń zaznaczenie pola wyboru. Właściwości publiczne okna pojawiają się w **właściwości** okna.  
   
     > [!NOTE]
     >  Nazwa wyświetlana **SomeText** jest **Mój tekst**.  

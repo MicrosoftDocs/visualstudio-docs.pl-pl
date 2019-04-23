@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0c197a15962d12e101e0d3ab164d706375620d9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 74f8fdd738c613977a73cc3d79b5ba880c7e6e74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648250"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116098"
 ---
 # <a name="proxy-authorization-required"></a>Wymaga autoryzacji serwera proxy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,29 +23,29 @@ Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni do programu Vi
   
 ## <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Uruchom ponownie program Visual Studio. Powinna zostać wyświetlona okno dialogowe uwierzytelniania serwera proxy. Wprowadź swoje poświadczenia w oknie dialogowym.  
+- Uruchom ponownie program Visual Studio. Powinna zostać wyświetlona okno dialogowe uwierzytelniania serwera proxy. Wprowadź swoje poświadczenia w oknie dialogowym.  
   
--   Jeśli powyższy krok nie rozwiąże problemu, może to być spowodowane serwera proxy nie jest wyświetlany monit o poświadczenia dla http://go.microsoft.com adresy, ale jest to spowodowane *. adresów visualStudio.com. Na tych serwerach należy umieścić na liście dozwolonych poniżej, aby odblokować wszystkie w scenariuszach logowania w programie Visual Studio:  
+- Jeśli powyższy krok nie rozwiąże problemu, może to być spowodowane serwera proxy nie jest wyświetlany monit o poświadczenia dla http://go.microsoft.com adresy, ale jest to spowodowane *. adresów visualStudio.com. Na tych serwerach należy umieścić na liście dozwolonych poniżej, aby odblokować wszystkie w scenariuszach logowania w programie Visual Studio:  
   
-    -   *.windows.net  
+    - *.windows.net  
   
-    -   *.microsoftonline.com  
+    - *.microsoftonline.com  
   
-    -   *.visualstudio.com  
+    - *.visualstudio.com  
   
-    -   *.microsoft.com  
+    - *.microsoft.com  
   
-    -   *.live.com  
+    - *.live.com  
   
--   W przeciwnym razie możesz usunąć http://go.microsoft.com adresów z listy dozwolonych adresów, tak, aby w oknie dialogowym uwierzytelniania serwera proxy, pojawia się dla obu http://go.microsoft.com adres i punkty końcowe serwera, po ponownym uruchomieniu programu Visual Studio.  
+- W przeciwnym razie możesz usunąć http://go.microsoft.com adresów z listy dozwolonych adresów, tak, aby w oknie dialogowym uwierzytelniania serwera proxy, pojawia się dla obu http://go.microsoft.com adres i punkty końcowe serwera, po ponownym uruchomieniu programu Visual Studio.  
   
--   LUB  
+- LUB  
   
--   Poświadczenia domyślne za pomocą serwera proxy, należy wykonać następujące:  
+- Poświadczenia domyślne za pomocą serwera proxy, należy wykonać następujące:  
   
-    1.  Znajdź devenv.exe.config (plik devenv.exe w konfiguracji): **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE** (lub **% ProgramFiles (x86) %\Microsoft Visual Studio 14.0\Common7\IDE**) .  
+    1. Znajdź devenv.exe.config (plik devenv.exe w konfiguracji): **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE** (lub **% ProgramFiles (x86) %\Microsoft Visual Studio 14.0\Common7\IDE**) .  
   
-    2.  Plik konfiguracyjny zawiera `<system.net>` zablokować, a następnie dodaj następujący kod:  
+    2. Plik konfiguracyjny zawiera `<system.net>` zablokować, a następnie dodaj następujący kod:  
   
         ```xml  
         <defaultProxy enabled="true" useDefaultCredentials="true">  
@@ -56,6 +56,6 @@ Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni do programu Vi
   
          Adres serwera proxy poprawne należy wstawić dla sieci w `proxyaddress="<http://<yourproxy:port#>`.  
   
--   LUB  
+- LUB  
   
--   Można również postępuj zgodnie z instrukcjami [ten wpis](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) można dodać kod, który umożliwi używanie serwera proxy.
+- Można również postępuj zgodnie z instrukcjami [ten wpis](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) można dodać kod, który umożliwi używanie serwera proxy.

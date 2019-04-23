@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat korzyści CloudPilot dostępne w wybranych subskrypcjach programu Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 3a77287b9a5d26cc74bddbefb24600d73cce2fdc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f251073337c862e0d96fb3550b163da29ce8f42e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655650"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094258"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Korzyść CloudPilot w subskrypcji programu Visual Studio
 
@@ -44,14 +44,14 @@ CloudPilot, przez UnifyCloud, zaprojektowano w celu ułatwienia deweloperom szyb
    > [!NOTE]
    > Aktywacje korzyści CloudPilot są ograniczone do 10, jednej organizacji, skorzystać z dowolnej kombinacji subskrypcji programu Visual Studio Enterprise lub Visual Studio Professional.  Jeśli ma już użyte aktywacje dziesięć Twojej organizacji, będzie można aktywować korzyść CloudPilot i otrzymasz wiadomość e-mail z UnifyCloud dodatkowych informacji.
 
- 0. Następnie zostanie wyświetlona strona produktu umożliwiający zapoznanie się z CloudPilot.  Kliknij przycisk **przejdź do CloudPilot** w prawym górnym rogu, aby przejść do portalu CloudPilot.
+0. Następnie zostanie wyświetlona strona produktu umożliwiający zapoznanie się z CloudPilot.  Kliknij przycisk **przejdź do CloudPilot** w prawym górnym rogu, aby przejść do portalu CloudPilot.
 
     > [!div class="mx-imgBorder"]
     > ![CloudPilot Product Page](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
 
-0.  To wszystko!  Zostaną wyświetlone w portalu CloudPilot i wszystko będzie gotowe rozpocząć korzystanie z subskrypcji CloudPilot, aby przenieść swoje aplikacje w systemie Microsoft Azure.
+0. To wszystko!  Zostaną wyświetlone w portalu CloudPilot i wszystko będzie gotowe rozpocząć korzystanie z subskrypcji CloudPilot, aby przenieść swoje aplikacje w systemie Microsoft Azure.
 
-0.  Zaraz po pomyślnym utworzeniu konta otrzymasz wiadomość e-mail od potwierdzający pomyślne utworzenie konta usługi VSS UnifyCloud działu pomocy technicznej.
+0. Zaraz po pomyślnym utworzeniu konta otrzymasz wiadomość e-mail od potwierdzający pomyślne utworzenie konta usługi VSS UnifyCloud działu pomocy technicznej.
 
     > [!div class="mx-imgBorder"]
     > ![Wiadomość E-mail z potwierdzeniem CloudPilot](_img/vs-cloudpilot/vs-cloudpilot-email.png)
@@ -76,13 +76,13 @@ CloudPilot, przez UnifyCloud, zaprojektowano w celu ułatwienia deweloperom szyb
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
--  Potrzebujesz pomocy dotyczącej korzystania z CloudPilot?  Zapoznaj się z tymi zasobami:
+- Potrzebujesz pomocy dotyczącej korzystania z CloudPilot?  Zapoznaj się z tymi zasobami:
     - [Skontaktuj się z pomocą UnifyCloud](https://www.unifycloud.com/contacts/) dla zapytania o UnifyCloud produktów.
     - [Podręcznik użytkownika CloudPilot](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
     - [Prześlij żądanie pomocy technicznej](https://support.datacamp.com/hc/requests/new)
 
--  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
+- Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Następne kroki
 

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35e292d5fcaaea4f70154cf6febfc26bc20f1318
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8667c55eed6de6b2b3c76af2ef45a5357a254516
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648968"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115994"
 ---
 # <a name="schema-cache"></a>Pamięć podręczna schematów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,21 +109,21 @@ Edytor XML udostępnia pamięci podręcznej schematów znajduje się w katalogu 
 
 #### <a name="to-change-the-schema-cache-location"></a>Aby zmienić lokalizację pamięci podręcznej schematu  
 
-1.  Z **narzędzia** menu, wybierz opcję **opcje**.  
+1. Z **narzędzia** menu, wybierz opcję **opcje**.  
 
-2.  Rozwiń **edytora tekstów**, rozwiń węzeł **XML**, a następnie kliknij przycisk **różne**.  
+2. Rozwiń **edytora tekstów**, rozwiń węzeł **XML**, a następnie kliknij przycisk **różne**.  
 
-3.  Kliknij przycisk **Przeglądaj** znajdujący się na **schematów** pola.  
+3. Kliknij przycisk **Przeglądaj** znajdujący się na **schematów** pola.  
 
-4.  Wybierz folder dla pamięci podręcznej schematu, a następnie kliknij przycisk **OK**.  
+4. Wybierz folder dla pamięci podręcznej schematu, a następnie kliknij przycisk **OK**.  
 
 #### <a name="to-add-another-directory-of-common-schemas"></a>Aby dodać inny katalog typowych schematów  
 
-1.  Edytuj plik catalog.xml w katalogu pamięci podręcznej schematu edytora XML.  
+1. Edytuj plik catalog.xml w katalogu pamięci podręcznej schematu edytora XML.  
 
-2.  Dodaj nową `<Catalog href="…"/>` element, który wskazuje katalog dodatkowe schematów.  
+2. Dodaj nową `<Catalog href="…"/>` element, który wskazuje katalog dodatkowe schematów.  
 
-3.  Zapisz zmiany.  
+3. Zapisz zmiany.  
 
      Katalog jest automatycznie ponownie ładowane.  
 

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f055ba84c4e6a6b48c13f3eef9a433eb4c5b3e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cef35cd1aa19ad27e7c47227b726a44756b0fae8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605851"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085723"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Instrukcje: Dodawanie formantów XMLMappedRange do arkuszy
   Kiedy mapujesz — element XML do komórki w programie Microsoft Excel pakietu Office, Visual Studio automatycznie dodaje <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> formantu do arkusza.
@@ -30,30 +30,30 @@ ms.locfileid: "56605851"
 
 ## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>Aby dodać kontrolkę XMLMappedRange do arkusza
 
-1.  Otwórz skoroszyt programu Excel w Projektancie Visual Studio.
+1. Otwórz skoroszyt programu Excel w Projektancie Visual Studio.
 
-2.  Otwórz arkusz, w którym chcesz dodać formant.
+2. Otwórz arkusz, w którym chcesz dodać formant.
 
-3.  Na **Developer** kliknij pozycję **źródła**.
+3. Na **Developer** kliknij pozycję **źródła**.
 
     > [!NOTE]
     >  Jeśli **Developer** karta nie jest widoczna na Wstążce, należy je włączyć. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
      **Źródła XML** pojawi się okienko zadań.
 
-4.  W **źródła XML** okienka zadań, kliknij przycisk **mapy XML**.
+4. W **źródła XML** okienka zadań, kliknij przycisk **mapy XML**.
 
-5.  W **mapy XML** okno dialogowe, kliknij przycisk **Dodaj**.
+5. W **mapy XML** okno dialogowe, kliknij przycisk **Dodaj**.
 
      **Źródła XML** pojawi się okno dialogowe.
 
-6.  Wybierz schemat XML z **źródła XML** dialogowym i kliknij przycisk **Otwórz**.
+6. Wybierz schemat XML z **źródła XML** dialogowym i kliknij przycisk **Otwórz**.
 
      Schemat jest dodawany do **mapy XML** okno dialogowe.
 
-7.  W **mapy XML** okno dialogowe, kliknij przycisk **OK**.
+7. W **mapy XML** okno dialogowe, kliknij przycisk **OK**.
 
-8.  Przeciągnij element z **źródła XML** okienka zadań do komórki w arkuszu.
+8. Przeciągnij element z **źródła XML** okienka zadań do komórki w arkuszu.
 
      <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Zostanie utworzony i dodany do projektu.
 

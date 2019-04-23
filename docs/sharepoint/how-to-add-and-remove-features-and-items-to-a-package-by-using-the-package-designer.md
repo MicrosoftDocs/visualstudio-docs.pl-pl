@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f76abaaa1210320c14175be2bb47828b7bd06aa9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 654773f5a5e46960f8c015cc6f731e16332fcdd7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608100"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094323"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Instrukcje: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu projektanta pakietów
   Podczas tworzenia rozwiązania programu SharePoint, Visual Studio dodaje funkcje programu SharePoint domyślne do pakietu w rozwiązaniu. Przed wdrożeniem końcowego może Dodawanie i usuwanie elementów projektu programu SharePoint oraz funkcje, aby zmodyfikować pakiet programu SharePoint.
@@ -52,7 +52,7 @@ ms.locfileid: "56608100"
 
 #### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>Aby usunąć funkcji programu SharePoint przy użyciu projektanta pakietów
 
-1.  W **elementów w pakiecie** , wybierz element, który chcesz usunąć, a następnie wybierz **Usuń** (<) przycisku, lub wybierz **Usuń wszystkie** przycisku (<<) do usunięcia wszystkie elementy.
+1. W **elementów w pakiecie** , wybierz element, który chcesz usunąć, a następnie wybierz **Usuń** (<) przycisku, lub wybierz **Usuń wszystkie** przycisku (<<) do usunięcia wszystkie elementy.
 
      Elementy programu SharePoint są wyświetlane w **elementów w rozwiązaniu** listy.
 

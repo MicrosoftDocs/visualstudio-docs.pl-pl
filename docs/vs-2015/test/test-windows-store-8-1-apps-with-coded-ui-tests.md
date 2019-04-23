@@ -8,12 +8,12 @@ ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: 26
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e8d7f1bf475dca7ed0e06e4b3ebb045b0513d5b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 827f7b136fb5b9c8de96145e1d8edba7b46b3f72
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799300"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114668"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Testowanie Windows platformy UWP i 8.1 Store Apps za pomocą kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Użyj tego przewodnika dotyczący tworzenia testów interfejsu użytkownika dla 
   
 ## <a name="create-a-simple-windows-store-app"></a>Utwórz prostą aplikację Windows Store  
   
-1.  Jeśli chcesz uruchomić kodowane testy interfejsu użytkownika dla aplikacji opartych na XAML Windows Store, musisz najpierw [Ustawianie unikatowej właściwości automatyzacji, który identyfikował każdy formant](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md).  
+1. Jeśli chcesz uruchomić kodowane testy interfejsu użytkownika dla aplikacji opartych na XAML Windows Store, musisz najpierw [Ustawianie unikatowej właściwości automatyzacji, który identyfikował każdy formant](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md).  
   
      Na **narzędzia** menu wskaż **opcje** , a następnie wybierz **edytora tekstów**, następnie **XAML**, a na koniec **różne** .  
   
@@ -30,15 +30,15 @@ Użyj tego przewodnika dotyczący tworzenia testów interfejsu użytkownika dla 
   
      ![XAML — różne opcje](../test/media/cuit-windowsstoreapp-b.png "CUIT_WindowsStoreApp_B")  
   
-2.  Utwórz nowy projekt dla pustego XAML opartych na aplikacji Windows Store przy użyciu szablonu programu Visual C# lub Visual Basic.  
+2. Utwórz nowy projekt dla pustego XAML opartych na aplikacji Windows Store przy użyciu szablonu programu Visual C# lub Visual Basic.  
   
      ![Tworzenie pustej aplikacji Windows Store &#40;XAML&#41;](../test/media/cuit-windowsstoreapp-newproject-blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")  
   
-3.  W Eksploratorze rozwiązań Otwórz plik MainPage.xaml. Z przybornika przeciągnij formant przycisku i formant pola tekstowego na powierzchnię projektową.  
+3. W Eksploratorze rozwiązań Otwórz plik MainPage.xaml. Z przybornika przeciągnij formant przycisku i formant pola tekstowego na powierzchnię projektową.  
   
      ![Projektowanie aplikacji Windows Store](../test/media/cuit-windowsstoreapp-design.png "CUIT_WindowsStoreApp_Design")  
   
-4.  Kliknij dwukrotnie formant przycisku i Dodaj następujący kod:  
+4. Kliknij dwukrotnie formant przycisku i Dodaj następujący kod:  
   
     ```csharp  
     private void button_Click_1(object sender, RoutedEventArgs e)  
@@ -58,7 +58,7 @@ Użyj tego przewodnika dotyczący tworzenia testów interfejsu użytkownika dla 
     End Class  
     ```  
   
-5.  Naciśnij klawisz F5, aby uruchomić aplikację Windows Store.  
+5. Naciśnij klawisz F5, aby uruchomić aplikację Windows Store.  
   
 ## <a name="create-and-run-a-coded-ui-test-for-the-windows-store-app"></a>Tworzenie i uruchamianie kodowanego testu interfejsu użytkownika dla aplikacji Windows Store  
 
@@ -294,15 +294,15 @@ Użyj tego przewodnika dotyczący tworzenia testów interfejsu użytkownika dla 
   
 ## <a name="q--a"></a>Pytania i odpowiedzi  
   
--   **PYT.: Dlaczego nie widzę opcji zapisu mojego kodowanego testu interfejsu użytkownika w Generuj kod dla kodowanego testu interfejsu użytkownika okna dialogowego**  
+- **PYT.: Dlaczego nie widzę opcji zapisu mojego kodowanego testu interfejsu użytkownika w Generuj kod dla kodowanego testu interfejsu użytkownika okna dialogowego**  
   
      **A**: Opcja zapisu nie jest obsługiwana dla aplikacji Windows Store.  
   
--   **PYT.: Można utworzyć kodowany test interfejsu użytkownika dla Moje aplikacje Windows Store, w oparciu o WinJS?**  
+- **PYT.: Można utworzyć kodowany test interfejsu użytkownika dla Moje aplikacje Windows Store, w oparciu o WinJS?**  
   
      **A**: Nie, obsługiwane są tylko aplikacje na podstawie XAML.  
   
--   **PYT.: Czy mogę utworzyć kodowane testy interfejsu użytkownika dla mojej aplikacji Windows Store w systemie, który nie jest uruchomiony, Windows 8.1 lub Windows 10?**  
+- **PYT.: Czy mogę utworzyć kodowane testy interfejsu użytkownika dla mojej aplikacji Windows Store w systemie, który nie jest uruchomiony, Windows 8.1 lub Windows 10?**  
   
      **A**: Nie, szablony projekt kodowanego testu interfejsu użytkownika są dostępne tylko w Windows 8.1 i Windows 10. Aby utworzyć automatyzacji dla aplikacji uniwersalnych platformy Windows (UWP), należy systemu Windows 10.  
 

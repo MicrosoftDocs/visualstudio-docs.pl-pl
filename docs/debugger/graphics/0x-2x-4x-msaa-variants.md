@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74d1be80fff92a8663582ba4e51e65ecc224ef1f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a442ed4a81cac312c675d9dd6d83a8901e939f15
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699226"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093985"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0 x / 2 x / 4 x MSAA wariantów
 Zastąpienia wielu przykładowe Wygładzanie (MSAA) ustawień dla wszystkich elementy docelowe renderowania i łańcuchy wymiany.
@@ -33,13 +33,13 @@ Zastąpienia wielu przykładowe Wygładzanie (MSAA) ustawień dla wszystkich ele
 
 - `D3D11_TEXTURE2D_DESC` Obiekt przekazany w `pDesc` opisuje obiekt docelowy renderowania; który jest:
 
-  -   Element członkowski BindFlags ma flagę D3D11_BIND_TARGET albo ustawiona jest flaga D3D11_BIND_DEPTH_STENCIL.
+  - Element członkowski BindFlags ma flagę D3D11_BIND_TARGET albo ustawiona jest flaga D3D11_BIND_DEPTH_STENCIL.
 
-  -   Użycie elementu członkowskiego jest równa D3D11_USAGE_DEFAULT.
+  - Użycie elementu członkowskiego jest równa D3D11_USAGE_DEFAULT.
 
-  -   Element członkowski CPUAccessFlags jest równa 0.
+  - Element członkowski CPUAccessFlags jest równa 0.
 
-  -   Element członkowski MipLevels jest ustawiona na 1.
+  - Element członkowski MipLevels jest ustawiona na 1.
 
 - Urządzenie obsługuje liczność próbki żądanej (0, 2 lub 4) i jakość próbkowania (0) dla żądanego docelowej format (członek D3D11_TEXTURE2D_DESC::Format), zgodnie z ustaleniami renderowania `ID3D11Device::CheckMultisampleQualityLevels`.
 

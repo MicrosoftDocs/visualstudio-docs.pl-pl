@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41774d09b72430aafc50794cd3d356baa4b565ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b1a03463d292fa1d4d980c62daa74b291d6a8cb1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803635"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117307"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Skróty klawiaturowe w Projektancie przepływu pracy
 Wszystkie najważniejsze funkcje [!INCLUDE[wfd1](../includes/wfd1-md.md)] może zostać oceniony przez klawiatury.  
@@ -54,13 +54,13 @@ Wszystkie najważniejsze funkcje [!INCLUDE[wfd1](../includes/wfd1-md.md)] może 
   
 - Aby połączyć działania:  
   
-  1.  Wybierz czynność źródła, przechodząc do działania.  
+  1. Wybierz czynność źródła, przechodząc do działania.  
   
-  2.  Naciśnij klawisze CTRL + E, M tyle razy, zgodnie z potrzebami, aby przenieść fokus klawiatury na działanie docelowe.  
+  2. Naciśnij klawisze CTRL + E, M tyle razy, zgodnie z potrzebami, aby przenieść fokus klawiatury na działanie docelowe.  
   
-  3.  Naciśnij klawisze CTRL + E, S, aby dodać działanie docelowe do wyboru.  
+  3. Naciśnij klawisze CTRL + E, S, aby dodać działanie docelowe do wyboru.  
   
-  4.  Naciśnij klawisze CTRL + E, F, aby dodać łącznika ze źródła do miejsca docelowego.  
+  4. Naciśnij klawisze CTRL + E, F, aby dodać łącznika ze źródła do miejsca docelowego.  
   
   Uwagi dotyczące łączenia działań przez klawiatury:  
   
@@ -73,18 +73,18 @@ Wszystkie najważniejsze funkcje [!INCLUDE[wfd1](../includes/wfd1-md.md)] może 
 ### <a name="expression-editing"></a>Edytowanie wyrażeń  
  Domyślnie, domyślne skróty klawiaturowe dla [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] edycji tekstu zastosować wewnątrz edytora wyrażeń w [!INCLUDE[wfd2](../includes/wfd2-md.md)], zastosowanie mają poniższe ograniczenia:  
   
--   Ponowne mapowanie skróty klawiaturowe dla następujących poleceń nie ma znaczenia. Domyślne skróty klawiaturowe można używać tylko dostępu do tych poleceń podczas edycji wyrażenia.  
+- Ponowne mapowanie skróty klawiaturowe dla następujących poleceń nie ma znaczenia. Domyślne skróty klawiaturowe można używać tylko dostępu do tych poleceń podczas edycji wyrażenia.  
   
-    1.  Wytnij  
+    1. Wytnij  
   
-    2.  Kopiuj  
+    2. Kopiuj  
   
-    3.  Wklej  
+    3. Wklej  
   
-    4.  Zaznacz wszystko  
+    4. Zaznacz wszystko  
   
-    5.  Cofnij  
+    5. Cofnij  
   
-    6.  Wykonaj ponownie  
+    6. Wykonaj ponownie  
   
--   Aby ponownie zamapować skróty klawiaturowe dla wyrażenia polecenia wewnątrz edycji [!INCLUDE[wfd2](../includes/wfd2-md.md)] w [!INCLUDE[vs2010](../includes/vs2010-md.md)], Edytuj skróty w [!INCLUDE[wfd2](../includes/wfd2-md.md)] zakresu. Zmiany wprowadzone w zakresie Edytor tekstu nie automatycznie dotyczą [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Jeśli chcesz ponownie zmapować skróty w obu miejscach, należy najpierw zastosować zmiany dwukrotnie (raz dla każdego zakresu).
+- Aby ponownie zamapować skróty klawiaturowe dla wyrażenia polecenia wewnątrz edycji [!INCLUDE[wfd2](../includes/wfd2-md.md)] w [!INCLUDE[vs2010](../includes/vs2010-md.md)], Edytuj skróty w [!INCLUDE[wfd2](../includes/wfd2-md.md)] zakresu. Zmiany wprowadzone w zakresie Edytor tekstu nie automatycznie dotyczą [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Jeśli chcesz ponownie zmapować skróty w obu miejscach, należy najpierw zastosować zmiany dwukrotnie (raz dla każdego zakresu).

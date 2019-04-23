@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e4ce804664f78bd4ec329f7e4e66008053291c77
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 26857824cac478936837a125068bd610dfc4c837
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799775"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117632"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Instrukcje: Tworzenie i usuwanie zależności projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,18 +49,18 @@ Podczas kompilowania rozwiązania, które zawiera wiele projektów, może być k
   
 ### <a name="to-remove-dependencies-from-projects"></a>Aby usunąć zależności z projektów  
   
-1.  W Eksploratorze rozwiązań wybierz projekt.  
+1. W Eksploratorze rozwiązań wybierz projekt.  
   
-2.  Na **projektu** menu, wybierz **zależności projektu**.  
+2. Na **projektu** menu, wybierz **zależności projektu**.  
   
      **Zależności projektu** zostanie otwarte okno dialogowe.  
   
     > [!NOTE]
     >  **Zależności projektu** opcja jest dostępna tylko w rozwiązaniu z więcej niż jeden projekt.  
   
-3.  Na **zależności** , a następnie wybierz projekt z **projektu** menu rozwijanego.  
+3. Na **zależności** , a następnie wybierz projekt z **projektu** menu rozwijanego.  
   
-4.  W **zależy od** pola, wyczyść pole wyboru obok pozycji inne projekty, które nie są już zależności dla tego projektu.  
+4. W **zależy od** pola, wyczyść pole wyboru obok pozycji inne projekty, które nie są już zależności dla tego projektu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Kompilowanie oraz Oczyszczanie projektów i rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   

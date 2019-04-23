@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c77b95b05409adf7c5e4c9a81136ca9143cec03
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f7d74b90fc0bcbe67b13cffadb2793bc15213b9f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688059"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094141"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Wprowadzenie do diagnostyki grafiki w programie Visual Studio
 W tej sekcji umożliwią przygotowanie skorzystać z Graphics Diagnostics po raz pierwszy, a następnie można przechwycić ramki na podstawie aplikacja Direct3D i zbadać je w analizatorze grafiki.
@@ -28,7 +28,7 @@ W tej sekcji umożliwią przygotowanie skorzystać z Graphics Diagnostics po raz
 
  Aby uzyskać informacje na temat instalowania narzędzi graficznych, zobacz [zainstalować grafiki Tools for Windows 10](#InstallGraphicsTools).
 
-##  <a name="InstallGraphicsTools"></a> Instalowanie narzędzi graficznych dla systemu Windows 10
+## <a name="InstallGraphicsTools"></a> Instalowanie narzędzi graficznych dla systemu Windows 10
  W systemie Windows 10 infrastruktury diagnostyki grafiki świadczą opcjonalna funkcja systemu Windows o nazwie *narzędzi graficznych*. Ta funkcja jest wymagana do przechwytywania i odtwarzania informacji graficznych w systemie Windows 10 niezależnie od tego, czy aplikacja przechwytywanym cele poprzedniej wersji systemu windows lub z wersji Direct3D używa. Istnieje możliwość zainstalowania funkcji narzędzia graficzne wcześniejsze; w przeciwnym razie będzie zainstalowanych na żądanie pierwszy po uruchomieniu sesji diagnostyki grafiki w programie Visual Studio.
 
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Aby zainstalować narzędzi graficznych dla systemu Windows 10
@@ -70,7 +70,7 @@ W tej sekcji umożliwią przygotowanie skorzystać z Graphics Diagnostics po raz
 
 #### <a name="to-capture-single-frames"></a>Aby przechwycić ramki pojedynczego
 
--   W programie Visual Studio, wybierz **Przechwyć ramkę** przycisk paska narzędzi lub Diagnostyka sesji okna grafiki. Lub, jeśli aplikacja ma fokus, wystarczy nacisnąć klawisz **klawisza Print Screen** kluczowe na klawiaturze.
+- W programie Visual Studio, wybierz **Przechwyć ramkę** przycisk paska narzędzi lub Diagnostyka sesji okna grafiki. Lub, jeśli aplikacja ma fokus, wystarczy nacisnąć klawisz **klawisza Print Screen** kluczowe na klawiaturze.
 
 #### <a name="to-capture-a-sequence-of-frames"></a>Aby przechwycić sekwencji ramek
 

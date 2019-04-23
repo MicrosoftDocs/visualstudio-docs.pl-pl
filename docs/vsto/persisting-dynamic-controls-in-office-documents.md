@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48b2cc1402243bfedb7b22280b4a161235cb9957
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8fd44d535cd8a9920ebc3de37d0c483a19dac8f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863516"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117983"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Utrwalanie kontrolek dynamicznych w dokumentach pakietu Office
 
@@ -76,11 +76,11 @@ W dodatków narzędzi VSTO dla programów formanty są usuwane, ale otoki Active
 
 Możesz je ponownie utworzyć usuniętego kontrolek Windows Forms po użytkownik ponownie otwiera dokument. Aby to zrobić, rozwiązanie musi wykonać następujące zadania:
 
-1.  Store informacji na temat rozmiaru, lokalizacja i stan kontrolki, gdy dokument zostanie zapisany lub zamknięte. W dostosowaniu na poziomie dokumentu można zapisać danych do pamięci podręcznej danych w dokumencie. W dodatku narzędzi VSTO dla programów można zapisać danych z niestandardowym elementem XML w dokumencie.
+1. Store informacji na temat rozmiaru, lokalizacja i stan kontrolki, gdy dokument zostanie zapisany lub zamknięte. W dostosowaniu na poziomie dokumentu można zapisać danych do pamięci podręcznej danych w dokumencie. W dodatku narzędzi VSTO dla programów można zapisać danych z niestandardowym elementem XML w dokumencie.
 
-2.  Utwórz ponownie kontrolek w zdarzenie, które jest wywoływane, gdy dokument jest otwarty. W projektach na poziomie dokumentu, można to zrobić `Sheet` *n* `_Startup` lub `ThisDocument_Startup` procedury obsługi zdarzeń. W projektach dodatku narzędzi VSTO można zrobić w przypadku tym programy obsługi dla <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> lub <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> zdarzenia.
+2. Utwórz ponownie kontrolek w zdarzenie, które jest wywoływane, gdy dokument jest otwarty. W projektach na poziomie dokumentu, można to zrobić `Sheet` *n* `_Startup` lub `ThisDocument_Startup` procedury obsługi zdarzeń. W projektach dodatku narzędzi VSTO można zrobić w przypadku tym programy obsługi dla <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> lub <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> zdarzenia.
 
-###  <a name="removingActiveX"></a> Usuń otoki ActiveX w dodatku
+### <a name="removingActiveX"></a> Usuń otoki ActiveX w dodatku
 
 Po dodaniu dynamiczne kontrolek Windows Forms do dokumentów za pomocą dodatku narzędzi VSTO uniemożliwia otoki ActiveX dla formantów znajdujących się w dokumencie następnym razem, gdy zostanie otwarta w następujący sposób.
 

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b3e8a5c2cb1e1e58343fa785699ebed4a91ead19
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: efb36d9ee21d5769c7ddd35461e09934b87d5c33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629966"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116137"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Przewodnik: Zbieranie danych przy użyciu formularza Windows
   W tym instruktażu pokazano, jak otworzyć formularz Windows z dostosowywania poziomie dokumentu dla programu Microsoft Office Excel, zbiera informacje o użytkowniku i zapisanie tych informacji w komórce arkusza.
@@ -32,9 +32,9 @@ ms.locfileid: "56629966"
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] lub [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] lub [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 > [!NOTE]
 >  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -44,7 +44,7 @@ ms.locfileid: "56629966"
 
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt
 
-1.  Utwórz projektu skoroszytu programu Excel o nazwie **WinFormInput**i wybierz **Utwórz nowy dokument** w kreatorze. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Utwórz projektu skoroszytu programu Excel o nazwie **WinFormInput**i wybierz **Utwórz nowy dokument** w kreatorze. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio zostanie otwarty nowy skoroszyt programu Excel w Projektancie i dodaje **WinFormInput** projekt **Eksploratora rozwiązań**.
 
@@ -52,13 +52,13 @@ ms.locfileid: "56629966"
 
 ### <a name="to-add-a-named-range-to-sheet1"></a>Aby dodać nazwany zakres do Arkusz1
 
-1.  Zaznacz komórkę **A1** na `Sheet1`.
+1. Zaznacz komórkę **A1** na `Sheet1`.
 
-2.  W **nazwa** wpisz **formInput**.
+2. W **nazwa** wpisz **formInput**.
 
      **Nazwa** pole znajduje się po lewej stronie paska formuły, tuż nad kolumny **A** arkusza.
 
-3.  Naciśnij klawisz **wprowadź**.
+3. Naciśnij klawisz **wprowadź**.
 
      A <xref:Microsoft.Office.Tools.Excel.NamedRange> formant jest dodawany do komórki **A1**. Nie ma żadnego wskazania widoczne w arkuszu, ale **formInput** pojawia się w **nazwa** pole (tuż nad arkusz po lewej stronie) i w **właściwości** okna po komórka **A1** jest zaznaczone.
 
@@ -107,11 +107,11 @@ ms.locfileid: "56629966"
 
 ### <a name="to-send-information-to-the-worksheet"></a>Do wysyłania informacji do arkusza
 
-1.  Kliknij prawym przyciskiem myszy **GetInputString** w **Eksploratora rozwiązań**, a następnie kliknij przycisk **Projektant widoków**.
+1. Kliknij prawym przyciskiem myszy **GetInputString** w **Eksploratora rozwiązań**, a następnie kliknij przycisk **Projektant widoków**.
 
-2.  Kliknij dwukrotnie przycisk aby otworzyć plik kodu przy użyciu przycisku <xref:System.Windows.Forms.Control.Click> dodać program obsługi zdarzeń.
+2. Kliknij dwukrotnie przycisk aby otworzyć plik kodu przy użyciu przycisku <xref:System.Windows.Forms.Control.Click> dodać program obsługi zdarzeń.
 
-3.  Dodaj kod do narzędzia obsługi zdarzeń, aby pobrać dane wejściowe z pola tekstowego, przesłać ją do funkcji `WriteStringToCell`, a następnie zamknij formularz.
+3. Dodaj kod do narzędzia obsługi zdarzeń, aby pobrać dane wejściowe z pola tekstowego, przesłać ją do funkcji `WriteStringToCell`, a następnie zamknij formularz.
 
      [!code-csharp[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/CSharp/WinFormInputCS/GetInputString.cs#3)]
      [!code-vb[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/VisualBasic/WinFormInput/GetInputString.vb#3)]
@@ -121,20 +121,20 @@ ms.locfileid: "56629966"
 
 ### <a name="to-test-your-workbook"></a>Aby przetestować skoroszytu
 
-1.  Naciśnij klawisz **F5** Aby uruchomić projekt.
+1. Naciśnij klawisz **F5** Aby uruchomić projekt.
 
-2.  Upewnij się, że zostanie wyświetlony formularz Windows.
+2. Upewnij się, że zostanie wyświetlony formularz Windows.
 
-3.  Typ **Witaj, świecie** w polu tekstowym, a następnie kliknij przycisk **OK**.
+3. Typ **Witaj, świecie** w polu tekstowym, a następnie kliknij przycisk **OK**.
 
-4.  Upewnij się, że **Witaj, świecie** jest wyświetlana w komórce **A1** arkusza.
+4. Upewnij się, że **Witaj, świecie** jest wyświetlana w komórce **A1** arkusza.
 
 ## <a name="next-steps"></a>Następne kroki
  W tym instruktażu przedstawiono podstawowe informacje dotyczące przedstawiająca formularz Windows i przekazywanie danych do arkusza. Inne zadania, które chcesz wykonać obejmują:
 
--   Formanty Windows Forms w skoroszycie programu Excel lub dokumentu programu Word. Aby uzyskać więcej informacji, zobacz [kontrolek formularzy Windows w przegląd dokumentów pakietu Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
+- Formanty Windows Forms w skoroszycie programu Excel lub dokumentu programu Word. Aby uzyskać więcej informacji, zobacz [kontrolek formularzy Windows w przegląd dokumentów pakietu Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
--   Zmodyfikuj interfejsu użytkownika aplikacji z dostosowywania poziomie dokumentu lub dodatku narzędzi VSTO dla pakietu Microsoft Office. Aby uzyskać więcej informacji, zobacz [dostosowywania interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).
+- Zmodyfikuj interfejsu użytkownika aplikacji z dostosowywania poziomie dokumentu lub dodatku narzędzi VSTO dla pakietu Microsoft Office. Aby uzyskać więcej informacji, zobacz [dostosowywania interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).
 
 ## <a name="see-also"></a>Zobacz także
 - [Opracowywania rozwiązań pakietu Office](../vsto/developing-office-solutions.md)

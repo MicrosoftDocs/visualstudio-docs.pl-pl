@@ -11,12 +11,12 @@ ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 714e4a24ae6dc2c345b97bbd6e080b0c987f65f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6cef18951a6ac5494f74c150c4251bafd9597686
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781383"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117944"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Obsługa paska nawigacyjnego w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,24 +70,24 @@ namespace TestLanguagePackage
   
   Implementacja <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metoda przeważnie wykonuje następujące czynności:  
   
-1.  Zostanie wyświetlona lista bieżącej deklaracji dla pliku źródłowego.  
+1. Zostanie wyświetlona lista bieżącej deklaracji dla pliku źródłowego.  
   
      Istnieją różne sposoby do wypełnienia listy. Jedno z podejść jest utworzenie niestandardowej metody na wersję <xref:Microsoft.VisualStudio.Package.LanguageService> klasy, która wywołuje <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodę z powodu niestandardowych analizy, która zwraca listę wszystkich deklaracji. Innym rozwiązaniem może być wywołanie <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> bezpośrednio z metody <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodę z powodu niestandardowych analizy. Trzeci rozwiązaniem może być w pamięci podręcznej deklaracji w <xref:Microsoft.VisualStudio.Package.AuthoringScope> klasy zwrócony przez ostatnią pełną operację analizy w <xref:Microsoft.VisualStudio.Package.LanguageService> klasy i pobrać z <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metody.  
   
-2.  Wypełnij lub zaktualizować listę typów.  
+2. Wypełnij lub zaktualizować listę typów.  
   
      Zawartość listy typów mogą zostać zaktualizowane po zmianie źródła lub jeśli zmiana stylu tekstu typów, w oparciu o bieżącym położeniu karetki. Należy zauważyć, że w tym miejscu jest przekazywany do <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metody.  
   
-3.  Określ typ, wybierz z listy typów, oparte na bieżącym położeniu karetki.  
+3. Określ typ, wybierz z listy typów, oparte na bieżącym położeniu karetki.  
   
      Możesz wyszukać deklaracje, które zostały uzyskane w kroku 1, aby znaleźć typ, który otacza bieżącym położeniu karetki i następnie wyszukaj listę typów dla tego typu ustalić jego indeksu na liście typów.  
   
-4.  Wypełnij lub zaktualizować listę elementów członkowskich na podstawie wybranego typu.  
+4. Wypełnij lub zaktualizować listę elementów członkowskich na podstawie wybranego typu.  
   
      Lista elementów członkowskich odzwierciedla, co to jest aktualnie wyświetlany w **członków** listy rozwijanej. Zawartość listy elementów członkowskich może być konieczne można zaktualizować, czy źródłowy został zmieniony, czy są wyświetlane tylko członkowie wybranego typu i wybrany typ został zmieniony. Jeśli wybierzesz wyświetlić wszystkie elementy członkowskie w pliku źródłowym, style tekstu poszczególnych członków na liście musi zostać zaktualizowany, jeśli aktualnie wybranego typu została zmieniona.  
   
-5.  Ustal, elementu członkowskiego, aby wybrać na liście elementów członkowskich na podstawie bieżącego położenia karetki.  
+5. Ustal, elementu członkowskiego, aby wybrać na liście elementów członkowskich na podstawie bieżącego położenia karetki.  
   
      Wyszukaj deklaracje, które zostały uzyskane w kroku 1 dla elementu członkowskiego, który zawiera bieżącym położeniu karetki, a następnie wyszukaj listę elementów członkowskich dla tego elementu, aby ustalić jego indeksu do listy członków.  
   
-6.  Zwróć `true` Jeśli zmiany zostały dokonane do listy lub zaznaczenia w obu list.
+6. Zwróć `true` Jeśli zmiany zostały dokonane do listy lub zaznaczenia w obu list.

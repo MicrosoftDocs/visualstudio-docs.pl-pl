@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b2261641f1883830e60785dda1460f0f4202f21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6e9c8f14fbec74b353550a1420a5ff3e119d6dce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783537"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117437"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Przewodnik: Wiersza polecenia, profilowania przy użyciu metody próbkowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ W tym instruktażu przedstawiono sposób profilować aplikację przy użyciu nar
   
  W tym instruktażu będą wykonaj następujące kroki:  
   
--   Profil aplikacji przy użyciu narzędzia wiersza polecenia i pobierania próbek.  
+- Profil aplikacji przy użyciu narzędzia wiersza polecenia i pobierania próbek.  
   
--   Analizuj próbkowanych wyniki profilowania, aby zlokalizować i rozwiązać problemy z wydajnością.  
+- Analizuj próbkowanych wyniki profilowania, aby zlokalizować i rozwiązać problemy z wydajnością.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
   
--   [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], lub [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], lub [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
--   Pośredni wiedzę na temat [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)]  
+- Pośredni wiedzę na temat [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)]  
   
--   Pośredni, informacje o pracy z narzędzi wiersza polecenia  
+- Pośredni, informacje o pracy z narzędzi wiersza polecenia  
   
--   Kopię [peopletrax — przykład](../profiling/peopletrax-sample-profiling-tools.md)  
+- Kopię [peopletrax — przykład](../profiling/peopletrax-sample-profiling-tools.md)  
   
--   Aby pracować z danymi dostarczonych przez profilowanie, najlepiej jest mieć debugowania dostępnych informacji o symbolach.  
+- Aby pracować z danymi dostarczonych przez profilowanie, najlepiej jest mieć debugowania dostępnych informacji o symbolach.  
   
 ## <a name="command-line-profiling-using-the-sampling-method"></a>Polecenie wiersza profilowania przy użyciu metody próbkowania  
  Próbkowanie jest metodą profilowania za pomocą którego proces okresowo wysyłane do określenia funkcji active. Dane wynikowe zapewnia liczenie częstotliwość funkcja znajdowała się na szczycie stosu wywołań proces był wtedy próbkowany.  
@@ -53,19 +53,19 @@ W tym instruktażu przedstawiono sposób profilować aplikację przy użyciu nar
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Aplikacja ma być profilowana peopletrax — przy użyciu metody próbkowania  
   
-1.  Przykładowa aplikacja peopletrax — Instalowanie i tworzenie wersji aplikacji.  
+1. Przykładowa aplikacja peopletrax — Instalowanie i tworzenie wersji aplikacji.  
   
-2.  Otwórz okno wiersza polecenia i Dodaj katalog Profiling Tools do lokalnej zmiennej środowiskowej Path.  
+2. Otwórz okno wiersza polecenia i Dodaj katalog Profiling Tools do lokalnej zmiennej środowiskowej Path.  
   
-3.  Zmień katalog roboczy na katalog, który zawiera pliki binarne peopletrax —.  
+3. Zmień katalog roboczy na katalog, który zawiera pliki binarne peopletrax —.  
   
-4.  Wpisz następujące polecenie, aby ustawić odpowiednie zmienne środowiskowe:  
+4. Wpisz następujące polecenie, aby ustawić odpowiednie zmienne środowiskowe:  
   
     ```  
     VSPerfCLREnv /sampleon  
     ```  
   
-5.  Uruchom profilowanie, uruchamiając VSPerfCmd.exe, czyli narzędzie wiersza polecenia, który kontroluje profilera. Następujące polecenie uruchamia aplikację i profiler w trybie próbkowania:  
+5. Uruchom profilowanie, uruchamiając VSPerfCmd.exe, czyli narzędzie wiersza polecenia, który kontroluje profilera. Następujące polecenie uruchamia aplikację i profiler w trybie próbkowania:  
   
     ```  
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe  
@@ -73,13 +73,13 @@ W tym instruktażu przedstawiono sposób profilować aplikację przy użyciu nar
   
      Proces profiler uruchamia i dołącza do procesu PeopleTrax.exe. Uruchamia proces profiler do zapisywania zebranych danych profilowania do pliku raportu.  
   
-6.  Kliknij przycisk **Pobierz osoby**.  
+6. Kliknij przycisk **Pobierz osoby**.  
   
-7.  Kliknij przycisk **ExportData**.  
+7. Kliknij przycisk **ExportData**.  
   
      Notatnik otwiera i wyświetla nowy plik, który zawiera wyeksportowane dane z **peopletrax —**.  
   
-8.  Zamknij Notatnik, a następnie Zamknij **peopletrax —** aplikacji.  
+8. Zamknij Notatnik, a następnie Zamknij **peopletrax —** aplikacji.  
   
 9. Zamknij program profilujący. Wpisz następujące polecenie:  
   
@@ -95,11 +95,11 @@ W tym instruktażu przedstawiono sposób profilować aplikację przy użyciu nar
   
 11. Profilowanie danych są przechowywane w pliku the.vsp Analizuj wyniki za pomocą jednego z następujących metod:  
   
-    -   Otwórz plik the.vsp w środowisku IDE programu Visual Studio.  
+    - Otwórz plik the.vsp w środowisku IDE programu Visual Studio.  
   
          — lub —  
   
-    -   Generowanie pliku wartości rozdzielanych przecinkami (.csv) za pomocą narzędzia wiersza polecenia VSPerfReport.exe. Do generowania raportów dla użycia poza [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE, użyj następującego polecenia:  
+    - Generowanie pliku wartości rozdzielanych przecinkami (.csv) za pomocą narzędzia wiersza polecenia VSPerfReport.exe. Do generowania raportów dla użycia poza [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE, użyj następującego polecenia:  
   
         ```  
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all  

@@ -12,12 +12,12 @@ ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 896a493701f0fff2c5ecf6057831e9092cd28a1d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8444fa5910658ab92643b2110483efc059560674
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925501"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094362"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Określanie typów sieci wirtualnych w scenariuszu testu obciążenia
 
@@ -41,17 +41,17 @@ Aby uzyskać więcej informacji, zobacz [informacje o formancie mieszanego](../t
 
 Visual Studio używa emulacja sieciowej true bazującej na oprogramowanie dla wszystkich typów testu, w tym testy obciążenia. Emulacja sieci true symuluje warunki w sieci przez bezpośrednią manipulację pakietami sieciowymi. Emulator sieci może emulować zachowanie zarówno sieci przewodowych i bezprzewodowych, za pomocą niezawodnego łącza fizycznego, takiego jak Ethernet. Następujące atrybuty sieci są włączone w prawdziwą emulację sieci:
 
--   Czas błądzenia za pośrednictwem sieci (opóźnienie)
+- Czas błądzenia za pośrednictwem sieci (opóźnienie)
 
--   Dostępna przepustowość
+- Dostępna przepustowość
 
--   Zachowanie usługi kolejkowania wiadomości
+- Zachowanie usługi kolejkowania wiadomości
 
--   Utrata pakietów
+- Utrata pakietów
 
--   Zmiana kolejności pakietów
+- Zmiana kolejności pakietów
 
--   Propagacje błędów.
+- Propagacje błędów.
 
 Emulacja sieci true również zapewnia elastyczność filtrowania pakietów sieciowych na podstawie adresów IP lub protokołów, takich jak TCP, UDP i ICMP.
 
@@ -59,30 +59,30 @@ Emulacja sieci TRUE może służyć przez deweloperów aplikacji opartej na siec
 
 ## <a name="to-add-new-networks-to-a-scenario"></a>Umożliwia dodawanie nowych sieci do scenariusza
 
-1.  Podczas określania mieszany profil sieciowy dla scenariusza, wybierz **Dodaj**.
+1. Podczas określania mieszany profil sieciowy dla scenariusza, wybierz **Dodaj**.
 
      Nowy wpis sieci zostanie dodany do siatki.
 
     > [!NOTE]
     > Aby wyświetlić **Edytuj mieszany profil sieciowy** okna dialogowego pole, kliknij prawym przyciskiem myszy istniejący scenariusz, a następnie wybierz **Edytuj mieszany profil sieciowy**.
 
-2.  W **typu sieci** kolumnę, wybierz strzałkę znajdującą się nowy wpis. Wybierz typ wybraną sieć.
+2. W **typu sieci** kolumnę, wybierz strzałkę znajdującą się nowy wpis. Wybierz typ wybraną sieć.
 
-3.  (Opcjonalnie) Dostosuj kontroli mieszany, aby określić rozkład testu. Aby uzyskać więcej informacji, zobacz [informacje o formancie mieszanego](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+3. (Opcjonalnie) Dostosuj kontroli mieszany, aby określić rozkład testu. Aby uzyskać więcej informacji, zobacz [informacje o formancie mieszanego](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
-4.  Po zakończeniu dodawania sieci wybierz **OK**.
+4. Po zakończeniu dodawania sieci wybierz **OK**.
 
 ## <a name="to-remove-networks-from-a-scenario"></a>Aby usunąć sieci ze scenariusza
 
-1.  Otwórz test obciążenia.
+1. Otwórz test obciążenia.
 
-2.  Kliknij prawym przyciskiem myszy scenariusza, z którego chcesz usunąć sieć, a następnie wybierz **Edytuj mieszany profil sieciowy**. **Edytuj mieszany profil sieciowy** zostanie wyświetlone okno dialogowe.
+2. Kliknij prawym przyciskiem myszy scenariusza, z którego chcesz usunąć sieć, a następnie wybierz **Edytuj mieszany profil sieciowy**. **Edytuj mieszany profil sieciowy** zostanie wyświetlone okno dialogowe.
 
-3.  Wybierz sieć w siatce, a następnie wybierz **Usuń**.
+3. Wybierz sieć w siatce, a następnie wybierz **Usuń**.
 
-4.  (Opcjonalnie) Dostosuj kontroli mieszany, aby określić rozkład testu. Aby uzyskać więcej informacji, zobacz [informacje o formancie mieszanego](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+4. (Opcjonalnie) Dostosuj kontroli mieszany, aby określić rozkład testu. Aby uzyskać więcej informacji, zobacz [informacje o formancie mieszanego](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
-5.  Po zakończeniu usuwania sieci wybierz **OK**.
+5. Po zakończeniu usuwania sieci wybierz **OK**.
 
 ## <a name="about-the-mix-control"></a>Informacje o formancie mieszany
 

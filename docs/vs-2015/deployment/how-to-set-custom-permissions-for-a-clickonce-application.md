@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 279dd66ca1f814dbd52593d52040818edf8f408b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fa16f3587e0d70d8604aeadb33ee7807f6a22ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786351"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085665"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Instrukcje: Ustawienie uprawnień niestandardowych dla aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,23 +30,23 @@ Możesz wdrożyć [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikac
   
 ### <a name="to-customize-a-permission"></a>Aby dostosować uprawnienia  
   
-1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
+1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
   
-2.  Kliknij przycisk **zabezpieczeń** kartę.  
+2. Kliknij przycisk **zabezpieczeń** kartę.  
   
-3.  Wybierz **włączenia ustawień zabezpieczeń technologii ClickOnce** pole wyboru.  
+3. Wybierz **włączenia ustawień zabezpieczeń technologii ClickOnce** pole wyboru.  
   
-4.  Wybierz **to częściowo zaufanych aplikacji** przycisku opcji.  
+4. Wybierz **to częściowo zaufanych aplikacji** przycisku opcji.  
   
      Formanty w **uprawnienia zabezpieczeń aplikacji ClickOnce** sekcji są włączone.  
   
-5.  Z **strefy, aplikacja zostanie zainstalowana z** listy rozwijanej kliknij **(niestandardowy)**.  
+5. Z **strefy, aplikacja zostanie zainstalowana z** listy rozwijanej kliknij **(niestandardowy)**.  
   
-6.  Kliknij przycisk **Edytuj uprawnienia XML**.  
+6. Kliknij przycisk **Edytuj uprawnienia XML**.  
   
      Plik app.manifest zostanie otwarty w edytorze XML.  
   
-7.  Przed `</applicationRequestMinimum>` elementu Dodawanie kodu XML uprawnienia, których wymaga aplikacja.  
+7. Przed `</applicationRequestMinimum>` elementu Dodawanie kodu XML uprawnienia, których wymaga aplikacja.  
   
     > [!NOTE]
     >  Możesz użyć `ToXml` ustawiona metoda uprawnienia, można wygenerować kodu XML manifestu aplikacji. Na przykład, aby wygenerować plik XML dla <xref:System.Security.Permissions.EnvironmentPermission> zestaw uprawnień, wywołanie <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> metody. Aby uzyskać więcej informacji na temat struktury uprawnienie ustawić XML, zobacz [NIB: Instrukcje: Importowanie zestawu uprawnień za pomocą pliku XML](http://msdn.microsoft.com/dea16b54-c108-408a-ac36-cdc05f746236).  

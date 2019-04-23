@@ -12,12 +12,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3057d333cfc3b08298a5329a34ef52a51556e4ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc3890ee8392088592aef16dcc120637da74e285
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800397"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113459"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Sprawdzanie poprawności w języku specyficznym dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +58,13 @@ Autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczenia sp
   
 1. Włącz sprawdzanie poprawności w **Editor\Validation** węzła:  
   
-   1.  Otwórz **Dsl\DslDefinition.dsl**.  
+   1. Otwórz **Dsl\DslDefinition.dsl**.  
   
-   2.  W Eksploratorze DSL rozwiń **edytora** a następnie wybierz węzeł **weryfikacji**.  
+   2. W Eksploratorze DSL rozwiń **edytora** a następnie wybierz węzeł **weryfikacji**.  
   
-   3.  W oknie właściwości ustaw **używa** właściwości `true`. Najwygodniej ustawiania tych właściwości jest.  
+   3. W oknie właściwości ustaw **używa** właściwości `true`. Najwygodniej ustawiania tych właściwości jest.  
   
-   4.  Kliknij przycisk **Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań.  
+   4. Kliknij przycisk **Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań.  
   
 2. Napisz częściowych definicji klasy dla co najmniej jednej klasy domeny lub relacji domeny. Zapisz te definicje w nowym pliku kodu w **Dsl** projektu.  
   
@@ -74,7 +74,7 @@ Autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczenia sp
    [ValidationState(ValidationState.Enabled)]  
    ```  
   
-   -   Domyślnie ten atrybut umożliwi sprawdzania poprawności dla klas pochodnych. Jeśli chcesz wyłączyć sprawdzanie poprawności dla określonej klasy pochodnej, możesz użyć `ValidationState.Disabled`.  
+   - Domyślnie ten atrybut umożliwi sprawdzania poprawności dla klas pochodnych. Jeśli chcesz wyłączyć sprawdzanie poprawności dla określonej klasy pochodnej, możesz użyć `ValidationState.Disabled`.  
   
 4. Dodaj metody sprawdzania poprawności do klasy. Każda metoda sprawdzania poprawności mogą mieć dowolną nazwę, ale ma jeden parametr typu <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.  
   
@@ -304,7 +304,7 @@ namespace Company.FamilyTree
   
  Programy obsługi są również nazywane po cofnąć ani ponownego wykonywania operacji, które mają wpływ na łącza lub elementów.  
   
-##  <a name="custom"></a> Kategorie niestandardowego sprawdzania poprawności  
+## <a name="custom"></a> Kategorie niestandardowego sprawdzania poprawności  
  Oprócz standardowego sprawdzania poprawności kategorii, takich jak Menu i otwórz można zdefiniować własne kategorie. Możesz wywołać tych kategorii z kodu programu. Użytkownik nie może wywołać je bezpośrednio.  
   
  Typowym zastosowaniem niestandardowych kategorii jest definiowanie kategorii, który umożliwia sprawdzenie, czy model spełnia warunki wstępne określonego narzędzia.  
@@ -332,7 +332,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");  
 ```  
   
-##  <a name="alternatives"></a> Alternatywy dla sprawdzania poprawności  
+## <a name="alternatives"></a> Alternatywy dla sprawdzania poprawności  
  Ograniczenia sprawdzania poprawności raportowania błędów, ale nie należy zmieniać modelu. Jeśli zamiast tego chcesz uniemożliwić modelu staje się nieprawidłowy, można użyć innych technik.  
   
  Techniki te nie są jednak zalecane. Jest to zazwyczaj lepiej zezwolić użytkownikom na podjęcie decyzji o sposobie Popraw nieprawidłowy model.  

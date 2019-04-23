@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbc1bff5ad547a946efa3edcd5c21cc6de4fad07
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ed23ea566bb27eaa8a315473fdf5345764ad5384
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780530"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113953"
 ---
 # <a name="troubleshooting-broken-references"></a>Rozwiązywanie problemów z przerwanymi odwołaniami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ Jeśli aplikacja próbuje użyć uszkodzone odwołanie, generowany jest błąd w
   
 #### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>Aby naprawić uszkodzone odwołanie, poprawiając ścieżkę odwołania  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i kliknij przycisk **właściwości**.  
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i kliknij przycisk **właściwości**.  
   
-2.  **Projektanta projektu** pojawia się.  
+2. **Projektanta projektu** pojawia się.  
   
-3.  Jeśli używasz języka Visual Basic, wybierz opcję **odwołania** strony, a następnie kliknij przycisk **ścieżki odwołania** przycisku. W **ścieżki odwołania** okna dialogowego wpisz ścieżkę do folderu, który zawiera element, którego chcesz się odwołać w **folderu** pola, a następnie kliknij przycisk **Dodaj Folder** przycisku.  
+3. Jeśli używasz języka Visual Basic, wybierz opcję **odwołania** strony, a następnie kliknij przycisk **ścieżki odwołania** przycisku. W **ścieżki odwołania** okna dialogowego wpisz ścieżkę do folderu, który zawiera element, którego chcesz się odwołać w **folderu** pola, a następnie kliknij przycisk **Dodaj Folder** przycisku.  
   
      —lub—  
   
@@ -69,20 +69,20 @@ Jeśli aplikacja próbuje użyć uszkodzone odwołanie, generowany jest błąd w
   
 #### <a name="to-fix-a-broken-project-reference-for-a-file-that-no-longer-exists-on-your-drive"></a>Aby naprawić przerwane odwołanie do pliku, który już nie istnieje na dysku  
   
--   Usuń odwołanie.  
+- Usuń odwołanie.  
   
--   Jeśli istnieje odwołanie w innej lokalizacji na komputerze, należy go odczytywać z tej lokalizacji.  
+- Jeśli istnieje odwołanie w innej lokalizacji na komputerze, należy go odczytywać z tej lokalizacji.  
   
--   Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodaj odwołanie](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodaj odwołanie](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="referenced-file-has-been-renamed"></a>Nazwa pliku została zmieniona  
  Istnieje możliwość, że zmieniono nazwę pliku, którego dotyczy odwołanie.  
   
 #### <a name="to-fix-a-broken-reference-for-a-file-that-has-been-renamed"></a>Aby naprawić uszkodzone odwołanie do pliku, którego nazwa została zmieniona  
   
--   Usuń odwołanie, a następnie dodaj odwołanie do pliku o zmienionej nazwie.  
+- Usuń odwołanie, a następnie dodaj odwołanie do pliku o zmienionej nazwie.  
   
--   Odwołanie istnieje w innej lokalizacji na komputerze, należy go odczytywać z tej lokalizacji. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodaj odwołanie](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Odwołanie istnieje w innej lokalizacji na komputerze, należy go odczytywać z tej lokalizacji. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodaj odwołanie](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="network-connection-or-authentication-has-failed"></a>Połączenie sieciowe lub uwierzytelnianie nie powiodło się  
  Może istnieć wiele możliwe przyczyny niedostępności plików: połączenie sieciowe nie powiodło się lub niepowodzenie uwierzytelniania, na przykład. Przyczyny dotyczyły, może być unikatowy oznacza, że odzyskiwania; na przykład może być konieczne skontaktuj się z administratorem lokalnym w celu dostępu do wymaganych zasobów. Jednak usunięcie odwołania i naprawianie kodu, których jej jest zawsze opcję. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodaj odwołanie](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  

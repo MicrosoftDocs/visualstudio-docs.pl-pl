@@ -11,12 +11,12 @@ ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fcbf6c3908460ce9d0f34b31c9a815c652de8031
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba059cc1c5546bc437c7ea83a08aa8dca0a56f98
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797612"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117685"
 ---
 # <a name="evaluating-locals"></a>Ocenianie zmiennych lokalnych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ ms.locfileid: "54797612"
   
  Ta funkcja pobierania wartości zmiennej lokalnej jest hermetyzowany w funkcji pomocnika, która wykonuje następujące zadania:  
   
-1.  Wiąże `IDebugField` obiektu w pamięci, aby uzyskać `IDebugObject` obiektu.  
+1. Wiąże `IDebugField` obiektu w pamięci, aby uzyskać `IDebugObject` obiektu.  
   
-2.  Pobiera wartość z pamięci. Ta wartość jest reprezentowana jako serię bajtów.  
+2. Pobiera wartość z pamięci. Ta wartość jest reprezentowana jako serię bajtów.  
   
-3.  Formatuje wartość na podstawie typu lokalnego.  
+3. Formatuje wartość na podstawie typu lokalnego.  
   
-4.  Zwraca obiekt rodzajowy, zawierający wartość lokalnego. W języku C# to `object`, a w języku C++, to `VARIANT`.  
+4. Zwraca obiekt rodzajowy, zawierający wartość lokalnego. W języku C# to `object`, a w języku C++, to `VARIANT`.  
   
 ## <a name="managed-code"></a>Kod zarządzany  
  Jest to implementacja funkcji, która pobiera wartości zmiennej lokalnej w kodzie zarządzanym.  

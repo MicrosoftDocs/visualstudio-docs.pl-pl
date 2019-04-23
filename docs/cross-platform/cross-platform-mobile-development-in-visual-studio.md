@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 2144ebd4725532d3dbbf4685f6629cbbbdd7c73e
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: fcf28d844124b7a2ae8a0b380739433261c5a3ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069687"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093842"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Tworzenie aplikacji mobilnych dla wielu platform w programie Visual Studio
 
@@ -40,7 +40,7 @@ Program Visual Studio Tools for Xamarin można wskazać systemów Android, iOS i
 |[Dowiedz się więcej o aplikacji Windows Universal apps w programie Visual Studio](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (Visual Studio)|
 |[Dowiedz się więcej o podobieństwa Swift i C#](https://aka.ms/scposter) (witrynie download.microsoft.com)|
 
-###  <a name="AndroidHTML"></a> Docelowe systemów Android, iOS i Windows z pojedynczą bazą kodu
+### <a name="AndroidHTML"></a> Docelowe systemów Android, iOS i Windows z pojedynczą bazą kodu
 
  Tworzyć natywne aplikacje dla systemów Android, iOS i Windows przy użyciu C# lub F# (Visual Basic nie jest obsługiwane w tej chwili).  Aby rozpocząć pracę, zainstaluj program Visual Studio 2017, wybierz **programowanie aplikacji mobilnych przy użyciu platformy .NET** opcji w Instalatorze.
 
@@ -56,7 +56,7 @@ Program Visual Studio Tools for Xamarin można wskazać systemów Android, iOS i
 
  W zależności od złożoności projektu aplikacji, można rozważyć wbudowanie jej za pomocą *Xamarin.Forms* szablonów w **Mobile Apps** grupy szablonów projektu. Xamarin.Forms to zestaw narzędzi interfejsu użytkownika, który umożliwia tworzenie jednego interfejsu, którą można współdzielić między systemów Android, iOS i Windows.  Podczas kompilowania rozwiązania platformy Xamarin.Forms, uzyskasz aplikację systemu Android aplikacji systemu iOS i aplikacji Windows. Aby uzyskać więcej informacji, zobacz [Dowiedz się więcej o programowaniu rozwiązań mobilnych za pomocą platformy Xamarin](/xamarin/cross-platform/get-started/introduction-to-mobile-development/) i [dokumentacji zestawu narzędzi Xamarin.Forms](/xamarin/xamarin-forms/).
 
-####  <a name="ShareHTML"></a> Współdziel kod między systemami Android, iOS i aplikacji Windows
+#### <a name="ShareHTML"></a> Współdziel kod między systemami Android, iOS i aplikacji Windows
 
  Jeśli nie będziesz jej używać zestawu narzędzi Xamarin.Forms i projektować pod kątem poszczególnych platform indywidualnie, możesz udostępniać większość kodu między projektami platform (systemów Android, iOS i Windows) bez interfejsu użytkownika. W tym wszelka logika biznesowa, integracja z chmurą, dostęp do bazy danych lub inny kod, który jest przeznaczony dla .NET Framework. Tylko kod, który nie mogą udostępniać jest kod, który jest przeznaczony dla określonej platformy.
 
@@ -69,7 +69,7 @@ Program Visual Studio Tools for Xamarin można wskazać systemów Android, iOS i
 |[Udostępnianie kodu opcje](/xamarin/cross-platform/app-fundamentals/code-sharing/) (Xamarin) |
 |[Kod opcje udostępniania przy użyciu platformy .NET](/dotnet/standard/cross-platform/) |
 
-###  <a name="WindowsHTML"></a> Docelowe urządzenia z systemem Windows 10
+### <a name="WindowsHTML"></a> Docelowe urządzenia z systemem Windows 10
 
  ![Urządzenia Windows](../cross-platform/media/windowsdevices.png "urządzenia Windows")
 
@@ -84,7 +84,7 @@ Program Visual Studio Tools for Xamarin można wskazać systemów Android, iOS i
 |[Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[Migrowanie aplikacji na platformie Universal Windows (UWP)](https://msdn.microsoft.com/library/mt148501.aspx)|
 
-##  <a name="HTML"></a> Tworzenie aplikacji dla systemu Android, iOS i Windows (HTML/JavaScript)
+## <a name="HTML"></a> Tworzenie aplikacji dla systemu Android, iOS i Windows (HTML/JavaScript)
 
  ![Windows, iOS i urządzenia z systemem Android](../cross-platform/media/homedevices.png "Windows, iOS i urządzenia z systemem Android")
 

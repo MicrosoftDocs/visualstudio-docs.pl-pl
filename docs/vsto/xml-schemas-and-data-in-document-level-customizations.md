@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2959707048cb3223b6866c3c8aa4c04cc146077
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: eb56d2f9b6d2d5c08956d48f4f53a46305d9fd26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875461"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117932"
 ---
 # <a name="xml-schemas-and-data-in-document-level-customizations"></a>Schematy XML i dane dostosowywane na poziomie dokumentu
   **Ważne** informacji zawartych w tym temacie dotyczące programu Microsoft Word jest prezentowane wyłącznie do korzyści i korzystanie z innym osobom oraz organizacjom, którzy znajdują się poza w Stanach Zjednoczonych i ich terytoriach lub korzystających z lub tworzenie programy, korzystających z produktów Microsoft Word, które są licencjonowane przez firmę Microsoft przed 2010 stycznia, po usunięciu implementację funkcji określonej przez Microsoft związane z niestandardowy kod XML z programu Microsoft Word. Te informacje dotyczące programu Microsoft Word nie mogą być odczytywane lub używane przez osoby i organizacje w Stanach Zjednoczonych lub jego terytoria, którzy za pomocą lub opracowywanie programów uruchamianych na produkty Microsoft Word, które są licencjonowane przez firmę Microsoft, po 10 stycznia 2010 r. ; te produkty będą nie działa tak samo jako produkty licencjonowane przed tą datą lub kupić i licencjonowane do użycia poza Stanami Zjednoczonymi.
@@ -40,16 +40,16 @@ ms.locfileid: "54875461"
 
  Istnieją dwa główne obiekty:
 
--   Schemat XML (plik XSD). Dla każdego schematu w skoroszycie programu Visual Studio dodaje schematu do projektu. Ta opcja ma nazwę elementu projektu z rozszerzeniem XSD w **Eksploratora rozwiązań**.
+- Schemat XML (plik XSD). Dla każdego schematu w skoroszycie programu Visual Studio dodaje schematu do projektu. Ta opcja ma nazwę elementu projektu z rozszerzeniem XSD w **Eksploratora rozwiązań**.
 
--   Wpisane <xref:System.Data.DataSet> klasy. Ta klasa jest tworzona w oparciu o schemacie. Ta klasa dataset jest widoczna w **Widok klas**.
+- Wpisane <xref:System.Data.DataSet> klasy. Ta klasa jest tworzona w oparciu o schemacie. Ta klasa dataset jest widoczna w **Widok klas**.
 
 ## <a name="objects-created-when-schema-elements-are-mapped-to-excel-worksheets"></a>Obiekty utworzone, gdy elementy schematu są mapowane do arkusza programu Excel
  Podczas mapowania elementu schematu z **źródła XML** okienka zadań do arkusza programu Visual Studio automatycznie tworzy kilka obiektów i dodaje je do projektu:
 
--   Kontrolki. Dla każdego obiektu zamapowanych w skoroszycie <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> kontroli (dla elementów schematu niepowtarzający) lub <xref:Microsoft.Office.Tools.Excel.ListObject> formantu (w przypadku powtarzające się elementy schematu) jest tworzony w modelu programowania. <xref:Microsoft.Office.Tools.Excel.ListObject> Kontroli można usunąć tylko przez usunięcie mapowania i mapowanych obiektów ze skoroszytu. Aby uzyskać więcej informacji na temat formantów, zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md).
+- Kontrolki. Dla każdego obiektu zamapowanych w skoroszycie <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> kontroli (dla elementów schematu niepowtarzający) lub <xref:Microsoft.Office.Tools.Excel.ListObject> formantu (w przypadku powtarzające się elementy schematu) jest tworzony w modelu programowania. <xref:Microsoft.Office.Tools.Excel.ListObject> Kontroli można usunąć tylko przez usunięcie mapowania i mapowanych obiektów ze skoroszytu. Aby uzyskać więcej informacji na temat formantów, zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md).
 
--   BindingSource. Po utworzeniu <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> przez mapowanie elementu schematu niepowtarzający w arkuszu <xref:System.Windows.Forms.BindingSource> jest tworzony i <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> kontrolka jest powiązana z <xref:System.Windows.Forms.BindingSource>. Musi być powiązany <xref:System.Windows.Forms.BindingSource> do wystąpienia źródła danych, które pasuje do schematu mapowane do dokumentu, takiego jak wystąpienie wpisanego <xref:System.Data.DataSet> klasę, która została utworzona. Utwórz powiązanie, ustawiając <xref:System.Windows.Forms.BindingSource.DataSource%2A> i <xref:System.Windows.Forms.BindingSource.DataMember%2A> właściwości, które są widoczne w **właściwości** okna.
+- BindingSource. Po utworzeniu <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> przez mapowanie elementu schematu niepowtarzający w arkuszu <xref:System.Windows.Forms.BindingSource> jest tworzony i <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> kontrolka jest powiązana z <xref:System.Windows.Forms.BindingSource>. Musi być powiązany <xref:System.Windows.Forms.BindingSource> do wystąpienia źródła danych, które pasuje do schematu mapowane do dokumentu, takiego jak wystąpienie wpisanego <xref:System.Data.DataSet> klasę, która została utworzona. Utwórz powiązanie, ustawiając <xref:System.Windows.Forms.BindingSource.DataSource%2A> i <xref:System.Windows.Forms.BindingSource.DataMember%2A> właściwości, które są widoczne w **właściwości** okna.
 
     > [!NOTE]
     >  <xref:System.Windows.Forms.BindingSource> Nie został utworzony dla <xref:Microsoft.Office.Tools.Excel.ListObject> obiektów. Należy samodzielnie ręcznie powiązali <xref:Microsoft.Office.Tools.Excel.ListObject> ze źródłem danych, ustawiając <xref:System.Windows.Forms.BindingSource.DataSource%2A> i <xref:System.Windows.Forms.BindingSource.DataMember%2A> właściwości w **właściwości** okna.

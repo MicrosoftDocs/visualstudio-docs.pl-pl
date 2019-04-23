@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 615b9bc4974a0483dec5e9c39727ebae50039a1f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: deba5e493f58a99e672e362977406670e1eee0e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596532"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094349"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Instrukcje: Tworzenie obsługiwanego odbiornika dla określonej listy formularzy
   Odbiornik zdarzeń wystąpienia listy reaguje na zdarzenia występujące w żadnym wystąpieniu definicji listy. Choć szablonu odbiorcy zdarzenia nie przeznaczonych dla określonej listy formularzy, możesz zmodyfikować odbiorcy zdarzeń, które są ograniczone do definicji listy w celu reagowania na zdarzenia w określonej listy formularzy.
@@ -30,24 +30,24 @@ ms.locfileid: "56596532"
 
 #### <a name="to-modify-an-event-receiver-to-respond-to-a-specific-list-instance"></a>Aby zmodyfikować odbiorcy zdarzenia i reagować na określonej listy formularzy
 
-1.  W przeglądarce otwórz witrynę programu SharePoint.
+1. W przeglądarce otwórz witrynę programu SharePoint.
 
-2.  W okienku nawigacji **Wyświetla** łącza.
+2. W okienku nawigacji **Wyświetla** łącza.
 
-3.  W **całą zawartość lokacji** wybierz **Utwórz** łącza.
+3. W **całą zawartość lokacji** wybierz **Utwórz** łącza.
 
-4.  W **Utwórz** okna dialogowego wybierz **anonsów** wpisz, określ nazwę anonsu **TestAnnouncements**, a następnie wybierz **Utwórz**przycisku.
+4. W **Utwórz** okna dialogowego wybierz **anonsów** wpisz, określ nazwę anonsu **TestAnnouncements**, a następnie wybierz **Utwórz**przycisku.
 
-5.  W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Utwórz projekt odbiorcy zdarzeń.
+5. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Utwórz projekt odbiorcy zdarzeń.
 
-6.  W **jakiego typu odbiorcę zdarzeń chcesz wykonać?** wybierz **zdarzenia elementu listy**.
+6. W **jakiego typu odbiorcę zdarzeń chcesz wykonać?** wybierz **zdarzenia elementu listy**.
 
     > [!NOTE]
     >  Możesz również wybrać dowolny inny rodzaj odbiorcy zdarzeń, który zakresów w definicji listy, na przykład **listę zdarzeń poczty E-mail** lub **zdarzenia przepływu pracy listy**.
 
-7.  W **jaki element ma być źródła zdarzeń?** wybierz **anonsów**.
+7. W **jaki element ma być źródła zdarzeń?** wybierz **anonsów**.
 
-8.  W **obsługę następujących zdarzeń** listy wybierz **zostanie dodany element** pole wyboru, a następnie wybierz **Zakończ** przycisku.
+8. W **obsługę następujących zdarzeń** listy wybierz **zostanie dodany element** pole wyboru, a następnie wybierz **Zakończ** przycisku.
 
 9. W **Eksploratora rozwiązań**, w obszarze EventReceiver1, otwórz *Elements.xml*.
 

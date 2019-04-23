@@ -13,12 +13,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f1d5d706bb3ce738fc8c820e6ffd0600b9a98ef
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 430c321c14226228b46bfb0e43f372851fb2a232
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797792"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117606"
 ---
 # <a name="graphics-log-document"></a>Dokument dziennika grafiki
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Dokument dziennika grafiki jest rekord zdarzenia grafiki, które wystąpiły, gd
   
 #### <a name="to-inspect-a-frame"></a>Aby sprawdzić ramkę  
   
--   W **lista ramek**, wybierz ramkę, która ma zostać sprawdzony. Dane wyjściowe docelowego renderowania w górnej części dokumentu dziennika grafiki jest zaktualizowany i będzie pokazywał zaznaczonej klatki.  
+- W **lista ramek**, wybierz ramkę, która ma zostać sprawdzony. Dane wyjściowe docelowego renderowania w górnej części dokumentu dziennika grafiki jest zaktualizowany i będzie pokazywał zaznaczonej klatki.  
   
 #### <a name="to-inspect-a-pixel"></a>Aby sprawdzić piksel  
   
--   W górnej części dokumentu dziennika grafiki wybierz piksel, który chcesz z danych wyjściowych docelowego renderowania. Po wybraniu pikseli, można użyć **Historia pikseli grafiki** okna, aby wyświetlić szczegółowe informacje na temat wybranego piksela. Aby uzyskać więcej informacji, zobacz [historii pikseli](../debugger/graphics-pixel-history.md).  
+- W górnej części dokumentu dziennika grafiki wybierz piksel, który chcesz z danych wyjściowych docelowego renderowania. Po wybraniu pikseli, można użyć **Historia pikseli grafiki** okna, aby wyświetlić szczegółowe informacje na temat wybranego piksela. Aby uzyskać więcej informacji, zobacz [historii pikseli](../debugger/graphics-pixel-history.md).  
   
 ## <a name="playback-machine"></a>Maszyna odtwarzająca  
  Wyświetlany w prawym górnym rogu **lista ramek** jest **maszynę odtwarzającą**. Maszyna odtwarzania jest komputerem lub urządzeniem, który służy do odtwarzania zdarzenia grafiki z pliku dziennika grafiki podczas sesji diagnostyki grafiki nowsze. Za pomocą innego urządzenia zamiast komputera deweloperskiego do odtwarzania przechwytywanych zdarzeń, bardziej precyzyjne można odtworzyć środowiska wykonawczego, w której występuje problem — na przykład, można użyć maszyny, sprzęt graficzny różnych lub sterowniki niż te, które korzysta z komputera deweloperskiego lub inne rodzaje urządzeń, takich jak tablety przeznaczone dla komputerów z procesorem ARM z systemem Windows RT lub urządzenia Windows Phone.  

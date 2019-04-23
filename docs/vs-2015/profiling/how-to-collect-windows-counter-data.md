@@ -16,12 +16,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2c3e4a9cffd81561af39cef5eb88f4a7745b2dad
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4fb88d4db82bde5f93d33716b65e2e8a4b48305a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54753419"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115669"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Instrukcje: Zbieranie danych liczników systemu Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,28 +30,28 @@ Liczniki Windows są liczniki wydajności systemu, które mogą być zbierane po
   
  **Wymagania**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje Windows Store również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ### <a name="to-collect-windows-counter-data"></a>Aby zebrać dane Windows  
   
-1.  W Eksploratorze wydajności, kliknij prawym przyciskiem myszy sesję, dla której chcesz skonfigurować liczniki Windows, a następnie wybierz pozycję **właściwości**.  
+1. W Eksploratorze wydajności, kliknij prawym przyciskiem myszy sesję, dla której chcesz skonfigurować liczniki Windows, a następnie wybierz pozycję **właściwości**.  
   
-2.  W **stron właściwości**, kliknij przycisk **liczniki Windows**.  
+2. W **stron właściwości**, kliknij przycisk **liczniki Windows**.  
   
-3.  Wybierz **zbierania liczników Windows** pole wyboru.  
+3. Wybierz **zbierania liczników Windows** pole wyboru.  
   
-4.  W **interwał zbierania (MS)** tekstu wpisz przedział czasu.  
+4. W **interwał zbierania (MS)** tekstu wpisz przedział czasu.  
   
-5.  Wybierz kategorię z **kategorii licznika** listy rozwijanej.  
+5. Wybierz kategorię z **kategorii licznika** listy rozwijanej.  
   
-6.  Wybierz domyślne wystąpienie z **wystąpienia** listy rozwijanej.  
+6. Wybierz domyślne wystąpienie z **wystąpienia** listy rozwijanej.  
   
-7.  Wybierz liczniki, które chcesz użyć podczas profilowania aplikacji.  
+7. Wybierz liczniki, które chcesz użyć podczas profilowania aplikacji.  
   
-8.  Kliknij przycisk **zastosowania.**  
+8. Kliknij przycisk **zastosowania.**  
   
 ## <a name="see-also"></a>Zobacz też  
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)   

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd805c420b636225bc12c31afd79d47c6732d28
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: c7f767f254119e1f9820c72a12e2aac7b4c141f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323948"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115201"
 ---
 # <a name="walkthrough-build-an-application"></a>Przewodnik: kompilowanie aplikacji
 
@@ -65,7 +65,7 @@ Następnie Skompiluj rozwiązanie za pomocą konfiguracji niestandardowej kompil
 
 ### <a name="build-the-solution"></a>Skompiluj rozwiązanie
 
--   Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**.
+- Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**.
 
     **Dane wyjściowe** okno wyświetla wyniki kompilacji. Kompilacja powiodła się.
 

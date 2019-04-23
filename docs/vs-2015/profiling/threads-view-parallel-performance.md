@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34fe3cecc07d567c362e0dbdde3eb271c80dd61c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e2fd0e329e6cf3434348fba1d3282921ee8c1f57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756807"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114798"
 ---
 # <a name="threads-view-parallel-performance"></a>Widok wątków (Parallel Performance)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ Widok wątków jest najbardziej szczegółowy i bogate widoku w Wizualizatorze w
 ## <a name="usage"></a>Użycie  
  Oto kilka sposobów, że można użyć widoku wątków:  
   
--   Zidentyfikuj powodów dlaczego interfejs użytkownika (UI) aplikacji nie odpowiada podczas niektórych faz wykonywania.  
+- Zidentyfikuj powodów dlaczego interfejs użytkownika (UI) aplikacji nie odpowiada podczas niektórych faz wykonywania.  
   
--   Określ ilość czasu, który ma poświęcony blokowania synchronizacji, operacji We/Wy, błędów stron i inne zdarzenia.  
+- Określ ilość czasu, który ma poświęcony blokowania synchronizacji, operacji We/Wy, błędów stron i inne zdarzenia.  
   
--   Określ stopień zakłócenia wywoływane przez inne procesy, które są wykonywane w systemie.  
+- Określ stopień zakłócenia wywoływane przez inne procesy, które są wykonywane w systemie.  
   
--   Identyfikowanie problemów równoważenia obciążenia dla przetwarzania równoległego.  
+- Identyfikowanie problemów równoważenia obciążenia dla przetwarzania równoległego.  
   
--   Określ powody do skalowania, która jest nieoptymalne lub nie istnieje (na przykład, dlaczego wydajność aplikacji równoległych nie poprawia, gdy będzie dostępnych rdzeni bardziej logiczny).  
+- Określ powody do skalowania, która jest nieoptymalne lub nie istnieje (na przykład, dlaczego wydajność aplikacji równoległych nie poprawia, gdy będzie dostępnych rdzeni bardziej logiczny).  
   
--   Dowiedz się, stopień współbieżności w aplikacji, aby pomóc w przetwarzania równoległego.  
+- Dowiedz się, stopień współbieżności w aplikacji, aby pomóc w przetwarzania równoległego.  
   
--   Poznanie zależności pomiędzy wątki robocze i krytyczne ścieżki wykonywania.  
+- Poznanie zależności pomiędzy wątki robocze i krytyczne ścieżki wykonywania.  
   
 ## <a name="examining-specific-time-intervals-and-threads"></a>Badanie w określonych odstępach czasu i wątki  
  Widok wątki pokazuje oś czasu. Możesz powiększać i przesuń w osi czasu, aby sprawdzić w określonych odstępach czasu i wątki aplikacji. Na osi x jest czas się na osi y różnych kanałów:  

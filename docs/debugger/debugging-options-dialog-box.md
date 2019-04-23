@@ -21,23 +21,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e80504e14e6468dc4d9efa31258bdbf6150a649
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d0a6a6d8312dba4ae89e773fc2be8fa0b9984e0b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690353"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094310"
 ---
 # <a name="debugging-options-dialog-box"></a>Debugowanie, opcje ― Okno dialogowe
 **Debugowanie** folder, w **opcje** okno dialogowe na **narzędzia** menu, zawiera następujące stron, które umożliwiają określenie debugera opcje narzędzia.
 
--   [Ogólne, Debugowanie, Opcje, okno dialogowe](../debugger/general-debugging-options-dialog-box.md)
+- [Ogólne, Debugowanie, Opcje, okno dialogowe](../debugger/general-debugging-options-dialog-box.md)
 
--   [Just-In-Time, Debugowanie, Opcje, okno dialogowe](../debugger/just-in-time-debugging-options-dialog-box.md)
+- [Just-In-Time, Debugowanie, Opcje, okno dialogowe](../debugger/just-in-time-debugging-options-dialog-box.md)
 
--   [Okno Dane wyjściowe, Debugowanie, Opcje, okno dialogowe](../debugger/output-window-debugging-options-dialog-box.md)
+- [Okno Dane wyjściowe, Debugowanie, Opcje, okno dialogowe](../debugger/output-window-debugging-options-dialog-box.md)
 
--   [Symbole, debugowanie, opcje — Okno dialogowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [Symbole, debugowanie, opcje — Okno dialogowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 
 ## <a name="see-also"></a>Zobacz też
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)

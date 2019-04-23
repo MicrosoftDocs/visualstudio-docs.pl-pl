@@ -27,35 +27,35 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7b10bb975d03ee317c23831ad72e9f5ac0ee6659
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c452ad86fc5c09048ae1fae56630309e661ac78c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771649"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114570"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Debugowanie aplikacji sieci Web: Błędy i rozwiązywanie problemów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Podczas próby debugowania aplikacji sieci Web, mogą wystąpić następujące błędy.  
   
--   [Rozwiązywanie problemów](../debugger/debugging-web-applications-troubleshooting.md)  
+- [Rozwiązywanie problemów](../debugger/debugging-web-applications-troubleshooting.md)  
   
--   [Błąd: Witryna korzysta z adresu IP](../debugger/error-site-uses-ip-address.md)  
+- [Błąd: Witryna korzysta z adresu IP](../debugger/error-site-uses-ip-address.md)  
   
--   [Błąd: Sprawdzenie zabezpieczeń nie powiodło się, ponieważ usługa administracyjna IIS nie odpowiedziała](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
+- [Błąd: Sprawdzenie zabezpieczeń nie powiodło się, ponieważ usługa administracyjna IIS nie odpowiedziała](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
   
--   [Błąd: Platforma ASP.NET nie jest zainstalowana](../debugger/error-aspnet-not-installed.md)  
+- [Błąd: Platforma ASP.NET nie jest zainstalowana](../debugger/error-aspnet-not-installed.md)  
   
--   [Błąd: Debugowanie nie powiodło się, ponieważ zintegrowane uwierzytelnianie systemu Windows nie jest włączone](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
+- [Błąd: Debugowanie nie powiodło się, ponieważ zintegrowane uwierzytelnianie systemu Windows nie jest włączone](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
   
--   [Błąd: Serwer internetowy nie jest poprawnie skonfigurowany](../debugger/error-the-web-server-is-not-configured-correctly.md)  
+- [Błąd: Serwer internetowy nie jest poprawnie skonfigurowany](../debugger/error-the-web-server-is-not-configured-correctly.md)  
   
--   [Błąd: Serwer internetowy został zablokowany i blokuje czasownik DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
+- [Błąd: Serwer internetowy został zablokowany i blokuje czasownik DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
   
--   [Błąd: Przekroczono limit czasu podczas debugowania usług internetowych](../debugger/error-timeout-while-debugging-web-services.md)  
+- [Błąd: Przekroczono limit czasu podczas debugowania usług internetowych](../debugger/error-timeout-while-debugging-web-services.md)  
   
--   [Błąd: Nie można rozpocząć debugowania na serwerze internetowym](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
+- [Błąd: Nie można rozpocząć debugowania na serwerze internetowym](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
