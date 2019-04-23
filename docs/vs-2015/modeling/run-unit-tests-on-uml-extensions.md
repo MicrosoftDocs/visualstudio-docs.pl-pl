@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 493193e24fcee2b3f3290546abc656faee7d88a7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e37f6d7891e561beecdf0f9146d647822940571b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790245"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079853"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Uruchamianie testów jednostek dla rozszerzeń UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,20 +50,20 @@ Aby zapewnić stabilne, wykonując kolejne zmiany kodu, firma Microsoft zaleca p
   
  Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
-##  <a name="Host"></a> Konfigurowanie testów jednostkowych dla rozszerzenia VSIX  
+## <a name="Host"></a> Konfigurowanie testów jednostkowych dla rozszerzenia VSIX  
  Metody w swoich rozszerzeniach modelowania zwykle współpracować z diagramu, który jest już otwarty. Metody takie jak używać importów MEF **IDiagramContext** i **ILinkedUndoContext**. Przed uruchomieniem testów środowisku testowym, należy skonfigurować ten kontekst.  
   
 #### <a name="to-set-up-a-unit-test-that-executes-in-includevsprvsincludesvsprvs-mdmd"></a>Aby skonfigurować test jednostkowy, który jest wykonywany w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
-1.  Utwórz projekt rozszerzenia UML i projekt testów jednostkowych.  
+1. Utwórz projekt rozszerzenia UML i projekt testów jednostkowych.  
   
-    1.  **Projekt rozszerzenia UML.** Zazwyczaj należy utworzyć przy użyciu polecenia, gestu lub szablonów projektu sprawdzania poprawności. Na przykład zobacz [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
+    1. **Projekt rozszerzenia UML.** Zazwyczaj należy utworzyć przy użyciu polecenia, gestu lub szablonów projektu sprawdzania poprawności. Na przykład zobacz [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
-    2.  **Projekt testów jednostkowych.** Aby uzyskać więcej informacji, zobacz [swój kod testu jednostkowego](../test/unit-test-your-code.md).  
+    2. **Projekt testów jednostkowych.** Aby uzyskać więcej informacji, zobacz [swój kod testu jednostkowego](../test/unit-test-your-code.md).  
   
-2.  Utwórz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania zawierającego projekt modelowania UML. To rozwiązanie będzie używany jako początkowy stan testów. Powinno być niezależne od rozwiązania, w którym zapisu rozszerzenia UML i jego testów jednostkowych. Aby uzyskać więcej informacji, zobacz [UML tworzenie projektów i diagramów modelowania](../modeling/create-uml-modeling-projects-and-diagrams.md).  
+2. Utwórz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania zawierającego projekt modelowania UML. To rozwiązanie będzie używany jako początkowy stan testów. Powinno być niezależne od rozwiązania, w którym zapisu rozszerzenia UML i jego testów jednostkowych. Aby uzyskać więcej informacji, zobacz [UML tworzenie projektów i diagramów modelowania](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
-3.  **W projekcie rozszerzenia UML**, Edytuj plik csproj jako tekst i upewnij się, że następujące wiersze, Pokaż `true`:  
+3. **W projekcie rozszerzenia UML**, Edytuj plik csproj jako tekst i upewnij się, że następujące wiersze, Pokaż `true`:  
   
     ```  
     <CopyBuildOutputToOutputDirectory>true</CopyBuildOutputToOutputDirectory>  
@@ -72,33 +72,33 @@ Aby zapewnić stabilne, wykonując kolejne zmiany kodu, firma Microsoft zaleca p
   
      Aby edytować plik .csproj jako tekst, wybierz pozycję **Zwolnij projekt** menu skrótów projektu w Eksploratorze rozwiązań. Następnie wybierz **Edytuj. .csproj**. Po zakończeniu edycji tekstu, wybierz **Załaduj ponownie projekt**.  
   
-4.  W projekcie rozszerzenia UML, należy dodać następujący wiersz do **Properties\AssemblyInfo.cs**. Dzięki temu testów jednostkowych, aby dostęp do metod, które chcesz przetestować:  
+4. W projekcie rozszerzenia UML, należy dodać następujący wiersz do **Properties\AssemblyInfo.cs**. Dzięki temu testów jednostkowych, aby dostęp do metod, które chcesz przetestować:  
   
     ```csharp  
     [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.  
     ```  
   
-5.  **W projekcie testów jednostkowych**, Dodaj następujące odwołania do zestawów:  
+5. **W projekcie testów jednostkowych**, Dodaj następujące odwołania do zestawów:  
   
-    -   *Projekt rozszerzenia UML*  
+    - *Projekt rozszerzenia UML*  
   
-    -   **EnvDTE.dll**  
+    - **EnvDTE.dll**  
   
-    -   **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**  
+    - **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**  
   
-    -   **Microsoft.VisualStudio.ComponentModelHost.dll**  
+    - **Microsoft.VisualStudio.ComponentModelHost.dll**  
   
-    -   **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**  
+    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**  
   
-    -   **Microsoft.VisualStudio.Uml.Interfaces.dll**  
+    - **Microsoft.VisualStudio.Uml.Interfaces.dll**  
   
-    -   **Microsoft.VSSDK.TestHostFramework.dll**  
+    - **Microsoft.VSSDK.TestHostFramework.dll**  
   
-6.  Prefiks atrybutu `[HostType("VS IDE")]` do każdej metody testowej, włączając w to metody inicjowania.  
+6. Prefiks atrybutu `[HostType("VS IDE")]` do każdej metody testowej, włączając w to metody inicjowania.  
   
      Pozwoli to zagwarantować, że testy zostaną uruchomione w eksperymentalnym wystąpieniu programu Visual Studio.  
   
-##  <a name="DTE"></a> Uzyskiwanie dostępu do obiektu DTE i ModelStore  
+## <a name="DTE"></a> Uzyskiwanie dostępu do obiektu DTE i ModelStore  
  Napisanie metody, aby otworzyć projekt modelowania w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Zazwyczaj chcesz otworzyć to rozwiązanie tylko raz w każdym przebiegu testu. Aby uruchomić metody tylko raz, prefiks metody z `[AssemblyInitialize]` atrybutu. Nie zapomnij również muszą atrybutu [HostType ("środowiska IDE programu VS")] dla każdej metody testowej.  Na przykład:  
   
 ```csharp  
@@ -166,7 +166,7 @@ namespace UnitTests
   
  Jeśli wystąpienie <xref:EnvDTE.Project?displayProperty=fullName> reprezentuje projekcie modelowania, a następnie można go rzutować do i z <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.IModelingProject>.  
   
-##  <a name="Opening"></a> Otwieranie diagramu modelu  
+## <a name="Opening"></a> Otwieranie diagramu modelu  
  Dla każdego testu lub klas testów zazwyczaj chcesz pracować Otwórz diagram. W poniższym przykładzie użyto `[ClassInitialize]` atrybut, który wykonuje tę metodę przed innymi metodami w tej klasie testu. Ponownie nie należy zapominać, również muszą atrybutu [HostType ("środowiska IDE programu VS")] dla każdej metody testowej:  
   
 ```csharp  
@@ -211,7 +211,7 @@ public class MyTestClass
   
 ```  
   
-##  <a name="UiThread"></a> Wykonaj zmiany modelu w wątku interfejsu użytkownika  
+## <a name="UiThread"></a> Wykonaj zmiany modelu w wątku interfejsu użytkownika  
  Jeśli testy lub metody w ramach badania, zmienić magazyn modeli, następnie należy wykonać je w wątku interfejsu użytkownika. Jeśli nie zrobisz, możesz zobaczyć `AccessViolationException`. W wywołaniu Invoke, należy dołączyć kod metody testowej:  
   
 ```  
@@ -231,7 +231,7 @@ using Microsoft.VSSDK.Tools.VsIdeTesting;
     }  
 ```  
   
-##  <a name="MEF"></a> Testowanie polecenia, gestu i inne składniki MEF  
+## <a name="MEF"></a> Testowanie polecenia, gestu i inne składniki MEF  
  Składniki MEF Użyj deklaracje właściwości, które mają `[Import]` atrybutu, a których wartości są ustawiane przez ich hostów. Zazwyczaj takie właściwości obejmują IDiagramContext SVsServiceProvider i ILinkedUndoContext. Podczas testowania metodą, która wykorzystuje dowolne z tych właściwości należy ustawić ich wartości przed wykonaniem testowaną metodę. Na przykład jeśli napisano rozszerzeniem polecenie podobne do tego kodu:  
   
 ```  

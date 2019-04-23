@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9adab2cbf429860840e60b88065cf445c882fd2c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 7bca2a98ba4df4294d401e2cd5f5b6e80e5d31c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844021"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099679"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scenariusz: Zmienianie projektu przy użyciu wizualizacji i modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
 - [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)  
   
-##  <a name="ScenarioOverview"></a> Omówienie scenariusza  
+## <a name="ScenarioOverview"></a> Omówienie scenariusza  
  W tym scenariuszu opisano odcinki z cyklu rozwoju oprogramowania dwóch fikcyjnych spółek: Dinner Now i Lucerne publikowania. Dinner Now zapewnia terenie Seattle usługę dostarczania posiłków opartą na sieci Web. Klienci mogą posiłki i zapłacić za w witrynie internetowej firmy Dinner Now. Zamówienia są następnie wysyłane do odpowiedniej lokalnej restauracji do dostarczenia. Lucerna Publishing, firma w Nowym Jorku, prowadzi kilka działalności zarówno off, jak i w sieci Web. Na przykład uruchamiają witryny sieci Web których klienci mogą ogłaszać opinie o restauracjach.  
   
  Lucerna niedawno nabyła obiad teraz i chce wprowadzić następujące zmiany:  
@@ -78,7 +78,7 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
 - [Testowanie, sprawdzanie poprawności i ewidencjonowanie kodu zaktualizowanego](#TestValidateCheckInCode)  
   
-##  <a name="ModelingDiagramsTools"></a> Role architektury i diagramów modelowania w tworzeniu oprogramowania  
+## <a name="ModelingDiagramsTools"></a> Role architektury i diagramów modelowania w tworzeniu oprogramowania  
  W poniższej tabeli opisano role, które mogą pełnić te narzędzia wielu i różnych etapach cyklu życia tworzenia oprogramowania:  
   
 ||**Modelowanie wymagań użytkowników**|**Modelowanie procesów biznesowych**|**Architektura i projektowanie**|**Kod — Wizualizacja i eksploracja**|**Weryfikacja**|  
@@ -103,7 +103,7 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
 - [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)  
   
-- [Instrukcje: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+- [Instrukcje: Dodawanie diagramów klasy do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
 - [Modelowanie SDK dla Visual Studio — języki specyficzne dla domeny](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
   
@@ -122,7 +122,7 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   > [!NOTE]
   >  Niektóre wersje programu Visual Studio obsługuje sprawdzanie poprawności warstwy i wersje tylko do odczytu mapy kodu i diagramów UML do wizualizacji i modelowania. Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
-##  <a name="UnderstandingCommunicating"></a> Opis i przekazywaniu informacji o systemie  
+## <a name="UnderstandingCommunicating"></a> Opis i przekazywaniu informacji o systemie  
  Nie ma żadnej zalecanej kolejności przy użyciu programu Visual Studio, modelowanie diagramów, aby można było ich używać stosownie do potrzeb lub podejścia. Zwykle zespoły wracają do swoich modeli wielokrotnie i często w całym projekcie. Każdy diagram oferuje szczególne zalety, aby ułatwić zrozumienie, opisać i zakomunikować różne aspekty systemu w fazie projektowania.  
   
  Dinner Now i Lucerne komunikują się ze sobą i z udziałowcami projektu za pomocą diagramów oraz ich wspólnego języka. Na przykład Dinner Now używa diagramów do wykonywania następujących zadań:  
@@ -165,14 +165,14 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
 - [Testowanie, sprawdzanie poprawności i ewidencjonowanie kodu zaktualizowanego](#TestValidateCheckInCode)  
   
-###  <a name="UnderstandingBPMandSystemDesign"></a> Opis roli systemu w procesie biznesowym  
+### <a name="UnderstandingBPMandSystemDesign"></a> Opis roli systemu w procesie biznesowym  
  Lucerna chce dowiedzieć się więcej na temat procesu biznesowego obiad teraz. Tworzą następujące diagramy w celu jasnego przedstawienia jej z firmą Dinner Now łatwiej:  
   
 |**Diagram**|**W tym artykule opisano**|  
 |-----------------|-------------------|  
-|*Diagram przypadków użycia (UML)*<br /><br /> Zobacz:<br /><br /> -   [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md)|— Działania, które obsługuje system firmy Dinner Now<br />Osoby i systemy zewnętrzne, które wykonują działania<br />-Główne składniki systemu obsługujące każde działanie<br />Części procesu biznesowego, które są poza zakresem bieżącego systemu, na przykład dostawy żywności|  
-|*Diagram aktywności (UML)*<br /><br /> Zobacz:<br /><br /> -   [Diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md)|Przepływ kroków, które występują, gdy klient tworzy zamówienie|  
-|*Diagram klas (UML)*<br /><br /> Zobacz:<br /><br /> -   [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md)|Podmioty gospodarcze i warunki, które są używane w dyskusji oraz relacje między tymi jednostkami. Na przykład zamówienie i element Menu są częścią słownictwa w tym scenariuszu.|  
+|*Diagram przypadków użycia (UML)*<br /><br /> Zobacz:<br /><br /> -   [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramy przypadków użycia UML: wskazówki](../modeling/uml-use-case-diagrams-guidelines.md)|— Działania, które obsługuje system firmy Dinner Now<br />Osoby i systemy zewnętrzne, które wykonują działania<br />-Główne składniki systemu obsługujące każde działanie<br />Części procesu biznesowego, które są poza zakresem bieżącego systemu, na przykład dostawy żywności|  
+|*Diagram aktywności (UML)*<br /><br /> Zobacz:<br /><br /> -   [Diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy aktywności UML: wskazówki](../modeling/uml-activity-diagrams-guidelines.md)|Przepływ kroków, które występują, gdy klient tworzy zamówienie|  
+|*Diagram klas (UML)*<br /><br /> Zobacz:<br /><br /> -   [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)|Podmioty gospodarcze i warunki, które są używane w dyskusji oraz relacje między tymi jednostkami. Na przykład zamówienie i element Menu są częścią słownictwa w tym scenariuszu.|  
   
  Na przykład Lucerne tworzy Poniższy diagram przypadków użycia, aby zrozumieć zadania, które są wykonywane w witrynie internetowej firmy Dinner Now i kto je wykonuje:  
   
@@ -192,14 +192,14 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
  **Diagram klas UML**  
   
-###  <a name="DescribingURM"></a> Opisujący nowych lub uaktualnionych wymagań użytkownika  
+### <a name="DescribingURM"></a> Opisujący nowych lub uaktualnionych wymagań użytkownika  
  Lucerna chce, aby dodać funkcje w systemie obiad teraz tak, aby klienci mogą odczytywać opinie i dodawać opinie o restauracjach. One aktualizuje następujące diagramy, czemu może opisać i omówić ten nowy wymóg z firmą Dinner Now:  
   
 |**Diagram**|**W tym artykule opisano**|  
 |-----------------|-------------------|  
-|*Diagram przypadków użycia (UML)*<br /><br /> Zobacz:<br /><br /> -   [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md)|Nowy przypadek użycia dla "Napisz recenzję restauracji"|  
-|*Diagram aktywności (UML)*<br /><br /> Zobacz:<br /><br /> -   [Diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md)|Kroki, które występują, gdy klient chce napisać recenzję restauracji|  
-|*Diagram klas (UML)*<br /><br /> Zobacz:<br /><br /> -   [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md)|Dane, które są wymagane do przechowywania przeglądu|  
+|*Diagram przypadków użycia (UML)*<br /><br /> Zobacz:<br /><br /> -   [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramy przypadków użycia UML: wskazówki](../modeling/uml-use-case-diagrams-guidelines.md)|Nowy przypadek użycia dla "Napisz recenzję restauracji"|  
+|*Diagram aktywności (UML)*<br /><br /> Zobacz:<br /><br /> -   [Diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy aktywności UML: wskazówki](../modeling/uml-activity-diagrams-guidelines.md)|Kroki, które występują, gdy klient chce napisać recenzję restauracji|  
+|*Diagram klas (UML)*<br /><br /> Zobacz:<br /><br /> -   [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)|Dane, które są wymagane do przechowywania przeglądu|  
   
  Na przykład poniższy diagram przypadków użycia zawiera nowy przypadek użycia "Napisz recenzję", aby przedstawić nowe wymaganie. Jest wyróżniany kolorem pomarańczowym na diagramie w celu łatwiejszej identyfikacji:  
   
@@ -219,7 +219,7 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
  **Diagram klas UML**  
   
-###  <a name="CreatingTests"></a> Tworzenie testów z modeli  
+### <a name="CreatingTests"></a> Tworzenie testów z modeli  
  Oba zespoły zgadzają się, że powinni pełny zestaw testów systemu i jego składników, zanim wprowadzą jakiekolwiek zmiany. Lucerna ma wyspecjalizowany zespół wykonujący system i testowanie poziomu składnika. Ich ponowne użycie testy utworzone przez firmy Dinner Now i im strukturę za pomocą diagramów UML:  
   
 - Każdy przypadek użycia jest reprezentowany przez jeden lub wiele testów. Elementy na diagramie przypadków użycia łączą się z przypadkiem testowym z elementami roboczymi na serwerze Team Foundation Server.  
@@ -236,7 +236,7 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
 - [Weryfikacja modelu UML](../modeling/validate-your-uml-model.md)  
   
-###  <a name="DeterminingChanges"></a> Identyfikowanie zmian w istniejącym systemie  
+### <a name="DeterminingChanges"></a> Identyfikowanie zmian w istniejącym systemie  
  Dinner Now musi oszacować koszty realizacji nowego wymagania. Zależy to częściowo ile ta zmiana wpłynie na inne części systemu. Aby pomóc im to zrozumieć, jeden z deweloperów Dinner Now tworzy te mapy i diagramy z istniejącego kodu:  
   
 |**Mapa lub diagramu**|**Pokazuje**|  
@@ -262,11 +262,11 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
 |**Diagramy**|**W tym artykule opisano**|  
 |------------------|-------------------|  
-|*Diagram aktywności (UML)*<br /><br /> Zobacz:<br /><br /> -   [Diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md)|Przepływ kroków, które występują, gdy system zauważa, że klient składa zamówienie z restauracji ponownie monitowania klienta o napisanie recenzji.|  
-|*Diagram klas (UML)*<br /><br /> Zobacz:<br /><br /> -   [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md)|Logiczne klays i ich wzajemne relacje. Na przykład dodaje się nową klasę do opisania **przeglądu** i jej relacji z innymi jednostkami, takich jak **restauracji**, **Menu**, i **klienta**.<br /><br /> Aby skojarzyć opinie z klientem, system musi przechowywać szczegóły klienta. Diagram klas UML może pomóc wyjaśnić te szczegóły.|  
+|*Diagram aktywności (UML)*<br /><br /> Zobacz:<br /><br /> -   [Diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy aktywności UML: wskazówki](../modeling/uml-activity-diagrams-guidelines.md)|Przepływ kroków, które występują, gdy system zauważa, że klient składa zamówienie z restauracji ponownie monitowania klienta o napisanie recenzji.|  
+|*Diagram klas (UML)*<br /><br /> Zobacz:<br /><br /> -   [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)|Logiczne klays i ich wzajemne relacje. Na przykład dodaje się nową klasę do opisania **przeglądu** i jej relacji z innymi jednostkami, takich jak **restauracji**, **Menu**, i **klienta**.<br /><br /> Aby skojarzyć opinie z klientem, system musi przechowywać szczegóły klienta. Diagram klas UML może pomóc wyjaśnić te szczegóły.|  
 |*Diagram klas oparty na kodzie*<br /><br /> Zobacz [jak: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Istniejące klasy w kodzie.|  
-|*Diagram składników (UML)*<br /><br /> Zobacz:<br /><br /> -   [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy składników UML: Wytyczne dotyczące](../modeling/uml-component-diagrams-guidelines.md)|Części wysokiego poziomu systemu, takie jak witryna firmy Dinner Now w sieci Web oraz ich interfejsów. Niniejsze interfejsy określają, jak składniki wzajemnej interakcji za pośrednictwem metody lub usługi, które zapewniają i wykorzystują.|  
-|*Diagram sekwencji (UML)*<br /><br /> Zobacz:<br /><br /> -   [Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)<br />-   [Diagramy sekwencji UML: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md)|Sekwencja interakcji między wystąpieniami.|  
+|*Diagram składników (UML)*<br /><br /> Zobacz:<br /><br /> -   [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy składników UML: wskazówki](../modeling/uml-component-diagrams-guidelines.md)|Części wysokiego poziomu systemu, takie jak witryna firmy Dinner Now w sieci Web oraz ich interfejsów. Niniejsze interfejsy określają, jak składniki wzajemnej interakcji za pośrednictwem metody lub usługi, które zapewniają i wykorzystują.|  
+|*Diagram sekwencji (UML)*<br /><br /> Zobacz:<br /><br /> -   [Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)<br />-   [Diagramy sekwencji UML: wskazówki](../modeling/uml-sequence-diagrams-guidelines.md)|Sekwencja interakcji między wystąpieniami.|  
   
  Na przykład poniższy diagram składników zawiera nowy składnik, który jest częścią składnika witryny firmy Dinner Now w sieci Web. Składnik ReviewProcessing obsługuje funkcje tworzenia przeglądów i pojawia się wyróżniony kolorem pomarańczowym:  
   
@@ -280,12 +280,12 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
  **Diagram sekwencji UML**  
   
-###  <a name="ValidatingCode"></a> Zachowywanie kodu zgodnie z projektem  
+### <a name="ValidatingCode"></a> Zachowywanie kodu zgodnie z projektem  
  Dinner Now, musisz upewnić się, że zaktualizowany kod pozostaje zgodny z projektem. Tworzy diagramy warstw, które opisują warstwy funkcji w systemie, określa dozwolone zależności między nimi i kojarzy artefakty rozwiązania z tymi warstwami.  
   
 |**Diagram**|**W tym artykule opisano**|  
 |-----------------|-------------------|  
-|*Diagram warstwowy*<br /><br /> Zobacz:<br /><br /> -   [Tworzenie diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy warstw: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)<br />-   [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)|Logiczna architektura kodu.<br /><br /> Diagram warstwy organizuje i mapuje artefakty w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania grup abstrakcyjnych nazywanych *warstwy*. Te warstwy określają role, zadania lub funkcje, które te artefakty pełnią w systemie.<br /><br /> Diagramy warstwy są przydatne do opisywania zamierzonego projektu systemu i sprawdzenia poprawności zmian kodu w stosunku do projektu.<br /><br /> Aby utworzyć warstwy, przeciągnij elementy z Eksploratora rozwiązań, map kodu, widoku klas i przeglądarki obiektów. Aby narysować nowe warstwy, Użyj przybornika lub kliknij prawym przyciskiem myszy powierzchnię diagramu.<br /><br /> Aby wyświetlić istniejące zależności, kliknij prawym przyciskiem myszy powierzchnię diagramu warstwy, a następnie kliknij przycisk **Wygeneruj zależności**. Aby określić zależności zamierzone, narysuj nowe.|  
+|*Diagram warstwowy*<br /><br /> Zobacz:<br /><br /> -   [Tworzenie diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)<br />-   [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)|Logiczna architektura kodu.<br /><br /> Diagram warstwy organizuje i mapuje artefakty w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania grup abstrakcyjnych nazywanych *warstwy*. Te warstwy określają role, zadania lub funkcje, które te artefakty pełnią w systemie.<br /><br /> Diagramy warstwy są przydatne do opisywania zamierzonego projektu systemu i sprawdzenia poprawności zmian kodu w stosunku do projektu.<br /><br /> Aby utworzyć warstwy, przeciągnij elementy z Eksploratora rozwiązań, map kodu, widoku klas i przeglądarki obiektów. Aby narysować nowe warstwy, Użyj przybornika lub kliknij prawym przyciskiem myszy powierzchnię diagramu.<br /><br /> Aby wyświetlić istniejące zależności, kliknij prawym przyciskiem myszy powierzchnię diagramu warstwy, a następnie kliknij przycisk **Wygeneruj zależności**. Aby określić zależności zamierzone, narysuj nowe.|  
   
  Na przykład poniższy diagram warstwowy opisuje zależności między warstwami i liczbą artefaktów, które są skojarzone z poszczególnymi warstwami:  
   
@@ -297,13 +297,13 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
  Zobacz:  
   
--   [Zdefiniuj proces kompilacji](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
+- [Zdefiniuj proces kompilacji](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
   
--   [Korzystać z procesu kompilacji ewidencjonowanej warunkowo do sprawdzenia poprawności zmian](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
+- [Korzystać z procesu kompilacji ewidencjonowanej warunkowo do sprawdzenia poprawności zmian](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
   
--   [Dostosowywanie szablonu procesu kompilacji](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [Dostosowywanie szablonu procesu kompilacji](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
-###  <a name="GeneralTips"></a> Ogólne porady dotyczące tworzenia i używania modeli  
+### <a name="GeneralTips"></a> Ogólne porady dotyczące tworzenia i używania modeli  
   
 - Większość diagramów składa się z węzłów, które są połączone liniami. Dla każdego typu diagramu Przybornik zawiera różne rodzaje węzłów i wierszy.  
   
@@ -323,7 +323,7 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
   Zobacz [tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md).  
   
-###  <a name="PlanningTracking"></a> Planowanie i śledzenie pracy  
+### <a name="PlanningTracking"></a> Planowanie i śledzenie pracy  
  Diagramy modelowania w usłudze Visual Studio są zintegrowane z programem Team Foundation Server, aby zaplanować, zarządzanie i łatwiej śledzić pracę. Oba zespoły używają modeli do identyfikowania przypadków testowych i zadań programistycznych i do szacowania pracy. Lucerna tworzy i łaczy Team Foundation Server elementy robocze z elementami modelu, takie jak przypadki użycia lub składniki. Pomoże im to monitorować ich postęp i śledzić ich pracę odpowiednio do wymagań użytkowników. Pomoże im to upewnić się, że ich zmiany w dalszym ciągu spełniają te wymagania.  
   
  Jako postępem prac zespoły aktualizują elementy robocze, aby odzwierciedlić czas poświęcony na ich zadań. Ponadto monitorują i raportują stan swojej pracy, korzystając z następujących funkcji serwera Team Foundation Server:  
@@ -344,7 +344,7 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
 - [Tworzenie zaległości i zadań za pomocą programu Project](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
-###  <a name="TestValidateCheckInCode"></a> Testowanie, sprawdzanie poprawności i ewidencjonowanie kodu  
+### <a name="TestValidateCheckInCode"></a> Testowanie, sprawdzanie poprawności i ewidencjonowanie kodu  
  Jak wykonania poszczególne zadania zespoły ewidencjonują kod do kontroli wersji serwera Team Foundation i otrzymują przypomnienia z Team Foundation Server, jeśli zapomną. Zanim Team Foundation Server zaakceptuje ewidencjonowania, zespoły uruchamiają testy jednostkowe i sprawdzanie poprawności warstwy, aby sprawdzić kod w oparciu o przypadki testowe i projekt. Używają programu Team Foundation Server do uruchamiania kompilacji, zautomatyzowanych testów jednostek i sprawdzania poprawności warstw w regularnie. Dzięki temu, upewnij się, że dany kod spełnia następujące kryteria:  
   
 - To działa.  
@@ -367,7 +367,7 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
 - [Kompiluj aplikację](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
-##  <a name="UpdatingSystem"></a> Aktualizowanie systemu przy użyciu wizualizacji i modelowania  
+## <a name="UpdatingSystem"></a> Aktualizowanie systemu przy użyciu wizualizacji i modelowania  
  Lucerna i obiad teraz muszą zintegrować swoje systemy płatności. Poniższe sekcje pokazują, że diagramy modelowania w programie Visual Studio pomagają w wykonaniu tego zadania:  
   
 - [Omówienie wymagań użytkowników: Diagramy przypadków użycia](#UnderstandUseCases)  
@@ -396,7 +396,7 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
 - [Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)  
   
-###  <a name="UnderstandUseCases"></a> Omówienie wymagań użytkowników: Diagramy przypadków użycia  
+### <a name="UnderstandUseCases"></a> Omówienie wymagań użytkowników: Diagramy przypadków użycia  
  Diagramy przypadków użycia stanowią podsumowanie działań, że obsługuje system i osób wykonujących te działania. Lucerna używa diagramu przypadków użycia, aby dowiedzieć się, system firmy Dinner Now w kwestii:  
   
 - Klienci składają zamówienia.  
@@ -419,9 +419,9 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
   Zobacz:  
   
-- [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)  
+- [Diagramy przypadków użycia UML: informacje](../modeling/uml-use-case-diagrams-reference.md)  
   
-- [Diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md)  
+- [Diagramy przypadków użycia UML: wskazówki](../modeling/uml-use-case-diagrams-guidelines.md)  
   
 #### <a name="drawing-a-use-case-diagram"></a>Rysowanie diagramu przypadków użycia  
  Diagram przypadków użycia ma następujące cechy główne:  
@@ -440,30 +440,30 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
   Zobacz:  
   
-- [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)  
+- [Diagramy przypadków użycia UML: informacje](../modeling/uml-use-case-diagrams-reference.md)  
   
-- [Diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md)  
+- [Diagramy przypadków użycia UML: wskazówki](../modeling/uml-use-case-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-use-case-diagrams"></a>Podsumowanie: Zalety diagramy przypadków użycia  
  Diagramy przypadków użycia ułatwiają wizualizowanie:  
   
--   Działania, które system obsługuje lub nie obsługuje  
+- Działania, które system obsługuje lub nie obsługuje  
   
--   Osoby i systemy zewnętrzne, które wykonują te działania  
+- Osoby i systemy zewnętrzne, które wykonują te działania  
   
--   Główne składniki systemu obsługujące każde działanie, które można przedstawić jako podsystemy zagnieżdżone wewnątrz systemu nadrzędnego  
+- Główne składniki systemu obsługujące każde działanie, które można przedstawić jako podsystemy zagnieżdżone wewnątrz systemu nadrzędnego  
   
--   Jak przypadek użycia można podzielić na mniejsze lub na odmiany  
+- Jak przypadek użycia można podzielić na mniejsze lub na odmiany  
   
 #### <a name="relationship-to-other-diagrams"></a>Związek z innymi diagramami  
   
 |**Diagram**|**W tym artykule opisano**|  
 |-----------------|-------------------|  
-|Diagramu aktywności|Przepływ kroków w przypadku użycia i używające, które wykonują te kroki w przypadku.<br /><br /> Nazwy przypadków użycia często odzwierciedlają kroki na diagramie aktywności. Diagramy aktywności obsługują elementy, takie jak decyzje, scalenia, dane wejściowe i wyjściowe, przepływy współbieżne i tak dalej.<br /><br /> Zobacz:<br /><br /> -   [Diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md)|  
-|Diagramów sekwencji|Sekwencja interakcji między uczestnikami w przypadku użycia.<br /><br /> Zobacz:<br /><br /> -   [Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)<br />-   [Diagramy sekwencji UML: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md)|  
-|Diagram klas (UML)|Jednostki lub typy, które uczestniczą w przypadku użycia.<br /><br /> Zobacz:<br /><br /> -   [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md)|  
+|Diagramu aktywności|Przepływ kroków w przypadku użycia i używające, które wykonują te kroki w przypadku.<br /><br /> Nazwy przypadków użycia często odzwierciedlają kroki na diagramie aktywności. Diagramy aktywności obsługują elementy, takie jak decyzje, scalenia, dane wejściowe i wyjściowe, przepływy współbieżne i tak dalej.<br /><br /> Zobacz:<br /><br /> -   [Diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy aktywności UML: wskazówki](../modeling/uml-activity-diagrams-guidelines.md)|  
+|Diagramów sekwencji|Sekwencja interakcji między uczestnikami w przypadku użycia.<br /><br /> Zobacz:<br /><br /> -   [Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)<br />-   [Diagramy sekwencji UML: wskazówki](../modeling/uml-sequence-diagrams-guidelines.md)|  
+|Diagram klas (UML)|Jednostki lub typy, które uczestniczą w przypadku użycia.<br /><br /> Zobacz:<br /><br /> -   [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)|  
   
-###  <a name="UnderstandActivities"></a> Omówienie procesu biznesowego: Diagramy aktywności  
+### <a name="UnderstandActivities"></a> Omówienie procesu biznesowego: Diagramy aktywności  
  Diagramy aktywności opisują przepływ kroków procesu biznesowego i zapewniają prosty sposób komunikowania przepływu pracy. Projekt rozwoju może mieć wiele diagramów aktywności. Zwykle działanie obejmuje wszystkie akcje, które wynikają z jednego z działań zewnętrznych, takich jak zamawianie posiłku, aktualizowanie menu lub dodanie nowej restauracji do działalności. Działanie może również opisywać szczegóły działań złożonych.  
   
  Lucerna aktualizacje następujący diagramie aktywności, aby pokazać, że Lucerna przetwarza płatności i płaci restauracjom. System płatności obiad teraz one Zamień System płatności firmy Lucerne, jak podkreślono:  
@@ -480,9 +480,9 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
  Zobacz:  
   
--   [Diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md)  
+- [Diagramy aktywności UML: informacje](../modeling/uml-activity-diagrams-reference.md)  
   
--   [Diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md)  
+- [Diagramy aktywności UML: wskazówki](../modeling/uml-activity-diagrams-guidelines.md)  
   
 #### <a name="drawing-an-activity-diagram"></a>Rysowanie diagramu aktywności  
  Diagram aktywności ma następujące cechy główne:  
@@ -505,9 +505,9 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
   Zobacz:  
   
-- [Diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md)  
+- [Diagramy aktywności UML: informacje](../modeling/uml-activity-diagrams-reference.md)  
   
-- [Diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md)  
+- [Diagramy aktywności UML: wskazówki](../modeling/uml-activity-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-activity-diagrams"></a>Podsumowanie: Zalety diagramów aktywności  
  Diagramy aktywności ułatwiają wizualizację i opisywanie przepływu sterowania i informacji między działaniami firmy, systemu lub programu. Jest to prosty i skuteczny sposób na odzwierciedlanie przepływu pracy podczas komunikowania się z innymi osobami.  
@@ -516,10 +516,10 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
 |**Diagram**|**Opis**|  
 |-----------------|---------------------|  
-|Diagramów przypadków użycia|Podsumowanie działań, które wykonuje każdy uczestnik.<br /><br /> Zobacz:<br /><br /> -   [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md)|  
-|Diagramów składników|Umożliwia wizualizację systemu jako zbiór części wielokrotnego użytku, które zapewniają lub zużywają działanie za pomocą wyraźnie określonych interfejsów.<br /><br /> Zobacz:<br /><br /> -   [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy składników UML: Wytyczne dotyczące](../modeling/uml-component-diagrams-guidelines.md)|  
+|Diagramów przypadków użycia|Podsumowanie działań, które wykonuje każdy uczestnik.<br /><br /> Zobacz:<br /><br /> -   [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramy przypadków użycia UML: wskazówki](../modeling/uml-use-case-diagrams-guidelines.md)|  
+|Diagramów składników|Umożliwia wizualizację systemu jako zbiór części wielokrotnego użytku, które zapewniają lub zużywają działanie za pomocą wyraźnie określonych interfejsów.<br /><br /> Zobacz:<br /><br /> -   [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy składników UML: wskazówki](../modeling/uml-component-diagrams-guidelines.md)|  
   
-###  <a name="DescribeComponents"></a> Opisz strukturę systemu: Diagramy składników  
+### <a name="DescribeComponents"></a> Opisz strukturę systemu: Diagramy składników  
  Diagramy składników opisują system jako kolekcję osobnych części, które zapewniają lub zużywają działanie za pomocą wyraźnie określonych interfejsów. Części mogą być w dowolnej skali i mogą być połączone w dowolny sposób.  
   
  Aby pomóc firmom Lucerne i Dinner Now wizualizować i omówić składniki systemu oraz ich interfejsów, tworzą następujące diagramy składników:  
@@ -554,9 +554,9 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
   Zobacz:  
   
-- [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)  
+- [Diagramy składników UML: informacje](../modeling/uml-component-diagrams-reference.md)  
   
-- [Diagramy składników UML: Wytyczne dotyczące](../modeling/uml-component-diagrams-guidelines.md)  
+- [Diagramy składników UML: wskazówki](../modeling/uml-component-diagrams-guidelines.md)  
   
 #### <a name="drawing-a-component-diagram"></a>Rysowanie diagramu składników  
  Diagram składników ma następujące cechy główne:  
@@ -575,28 +575,28 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
   Zobacz:  
   
-- [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)  
+- [Diagramy składników UML: informacje](../modeling/uml-component-diagrams-reference.md)  
   
-- [Diagramy składników UML: Wytyczne dotyczące](../modeling/uml-component-diagrams-guidelines.md)  
+- [Diagramy składników UML: wskazówki](../modeling/uml-component-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-component-diagrams"></a>Podsumowanie: Zalety diagramów składników  
  Diagramy składników ułatwiają wizualizowanie:  
   
--   System jako kolekcja osobnych części, niezależnie od ich implementacji języka i stylu.  
+- System jako kolekcja osobnych części, niezależnie od ich implementacji języka i stylu.  
   
--   Składniki z dobrze określonymi interfejsami, co ułatwia zrozumienie i aktualizację w przypadku zmiany wymagań projektu.  
+- Składniki z dobrze określonymi interfejsami, co ułatwia zrozumienie i aktualizację w przypadku zmiany wymagań projektu.  
   
 #### <a name="relationship-to-other-diagrams"></a>Związek z innymi diagramami  
   
 |**Diagram**|**Opis**|  
 |-----------------|---------------------|  
 |Mapy kodu|Umożliwia wizualizację organizacji i relacjach w istniejącym kodzie.<br /><br /> Aby zidentyfikować potencjalne składniki, tworzenie kodu mapy i pogrupować elementy według ich funkcji w systemie.<br /><br /> Zobacz:<br /><br /> -   [Mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)|  
-|Diagramów sekwencji|Umożliwia wizualizację sekwencji wzajemnego oddziaływania między komponentami lub częściami wewnątrz składnika.<br /><br /> Aby utworzyć linię życia na diagramie sekwencji ze składnika, kliknij prawym przyciskiem myszy składnik, a następnie kliknij przycisk **Utwórz linię życia**.<br /><br /> Zobacz:<br /><br /> -   [Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)<br />-   [Diagramy sekwencji UML: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md)|  
-|Diagram klas (UML)|Definiuj interfejsy na dostarczonych lub wymaganych portach i klasy, które implementują funkcjonalność składników.<br /><br /> Zobacz:<br /><br /> -   [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md)|  
-|Diagram warstwowy|Opisz logiczną architekturę systemu w powiązaniu ze składnikami. Użyj sprawdzania poprawności warstwy, aby upewnić się, że kod pozostaje zgodny z projektem.<br /><br /> Zobacz:<br /><br /> -   [Tworzenie diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy warstw: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)<br />-   [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)|  
-|Diagramu aktywności|Umożliwia wizualizację wewnętrznego przetwarzania, które składniki wykonują w odpowiedzi na wiadomości przychodzące.<br /><br /> Zobacz:<br /><br /> -   [Diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md)|  
+|Diagramów sekwencji|Umożliwia wizualizację sekwencji wzajemnego oddziaływania między komponentami lub częściami wewnątrz składnika.<br /><br /> Aby utworzyć linię życia na diagramie sekwencji ze składnika, kliknij prawym przyciskiem myszy składnik, a następnie kliknij przycisk **Utwórz linię życia**.<br /><br /> Zobacz:<br /><br /> -   [Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)<br />-   [Diagramy sekwencji UML: wskazówki](../modeling/uml-sequence-diagrams-guidelines.md)|  
+|Diagram klas (UML)|Definiuj interfejsy na dostarczonych lub wymaganych portach i klasy, które implementują funkcjonalność składników.<br /><br /> Zobacz:<br /><br /> -   [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)|  
+|Diagram warstwowy|Opisz logiczną architekturę systemu w powiązaniu ze składnikami. Użyj sprawdzania poprawności warstwy, aby upewnić się, że kod pozostaje zgodny z projektem.<br /><br /> Zobacz:<br /><br /> -   [Tworzenie diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)<br />-   [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)|  
+|Diagramu aktywności|Umożliwia wizualizację wewnętrznego przetwarzania, które składniki wykonują w odpowiedzi na wiadomości przychodzące.<br /><br /> Zobacz:<br /><br /> -   [Diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy aktywności UML: wskazówki](../modeling/uml-activity-diagrams-guidelines.md)|  
   
-###  <a name="VisualizeCode"></a> Wizualizacja istniejącego kodu: Mapy kodu  
+### <a name="VisualizeCode"></a> Wizualizacja istniejącego kodu: Mapy kodu  
  Mapy kodu pokazują bieżącą organizacją i relacje w kodzie. Elementy są reprezentowane przez *węzłów* na mapie, a relacje są reprezentowane przez *łącza*. Mapy kodu może pomóc Ci realizować następujące rodzaje zadań:  
   
 - Poznawanie nieznanego kodu.  
@@ -637,37 +637,37 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
 #### <a name="creating-a-code-map"></a>Tworzenie Map kodu  
   
--   Aby uzyskać szybki przegląd kodu źródłowego wykonaj następujące kroki, aby wygenerować mapę kodu:  
+- Aby uzyskać szybki przegląd kodu źródłowego wykonaj następujące kroki, aby wygenerować mapę kodu:  
   
      Na **architektury** menu, kliknij przycisk **Generuj mapę kodu dla rozwiązania**.  
   
      Aby uzyskać szybki przegląd skompilowanego kodu Utwórz mapę kodów puste, a następnie przeciągnij pliki zestawu lub pliki binarne do powierzchni mapy.  
   
--   Aby poznać konkretny kod lub elementy rozwiązania, użyj Eksploratora rozwiązań, aby wybrać elementy i relacje, które mają być wyświetlane. Możesz następnie wygenerować nowej mapy lub Dodaj wybrane elementy do istniejącej mapy. Zobacz [mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).  
+- Aby poznać konkretny kod lub elementy rozwiązania, użyj Eksploratora rozwiązań, aby wybrać elementy i relacje, które mają być wyświetlane. Możesz następnie wygenerować nowej mapy lub Dodaj wybrane elementy do istniejącej mapy. Zobacz [mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).  
   
--   Aby ułatwić zrozumienie mapy, można zmienić układ, aby go do rodzaju zadań, które chcesz wykonać.  
+- Aby ułatwić zrozumienie mapy, można zmienić układ, aby go do rodzaju zadań, które chcesz wykonać.  
   
      Na przykład do zwizualizowania warstw w kodzie, wybierz układ drzewa. Zobacz [przeglądanie i zmianę położenia map kodu](../modeling/browse-and-rearrange-code-maps.md).  
   
 #### <a name="summary-strengths-of-code-maps"></a>Podsumowanie: Zalety map kodu  
  Mapy kodu ułatwiają:  
   
--   Więcej informacji o organizacji i relacjach w istniejącym kodzie.  
+- Więcej informacji o organizacji i relacjach w istniejącym kodzie.  
   
--   Zidentyfikuj obszary, które mogą mieć wpływ proponowana zmiana.  
+- Zidentyfikuj obszary, które mogą mieć wpływ proponowana zmiana.  
   
--   Znajdowanie obszarów złożoności, wzorów, warstwy lub innych obszarów, które można poprawić, aby ułatwić utrzymania, zmieniać i ponownego użycia kodu.  
+- Znajdowanie obszarów złożoności, wzorów, warstwy lub innych obszarów, które można poprawić, aby ułatwić utrzymania, zmieniać i ponownego użycia kodu.  
   
 #### <a name="relationship-to-other-diagrams"></a>Związek z innymi diagramami  
   
 |**Diagram**|**W tym artykule opisano**|  
 |-----------------|-------------------|  
-|Diagram warstwowy|Logiczna architektura systemu. Użyj sprawdzania poprawności warstwy, aby upewnić się, że kod pozostaje zgodny z projektem.<br /><br /> Aby ułatwić identyfikację istniejących lub planowanych warstw, utwórz mapę kodu i pogrupować pokrewne elementy. Aby utworzyć diagram warstwy, zobacz:<br /><br /> -   [Tworzenie diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy warstw: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)|  
-|Diagramów składników|Składniki, ich interfejsy oraz ich wzajemne relacje.<br /><br /> Aby pomóc w zidentyfikowaniu składników, utworzyć kod mapy i pogrupować elementy według ich funkcji w systemie.<br /><br /> Zobacz:<br /><br /> -   [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy składników UML: Wytyczne dotyczące](../modeling/uml-component-diagrams-guidelines.md)|  
-|Diagram klas (UML)|Klasy, ich atrybuty i operacje oraz ich wzajemne relacje.<br /><br /> Aby pomóc w zidentyfikowaniu tych elementów, należy utworzyć diagram klas UML, pokazujący te elementy.<br /><br /> Zobacz:<br /><br /> -   [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md)|  
+|Diagram warstwowy|Logiczna architektura systemu. Użyj sprawdzania poprawności warstwy, aby upewnić się, że kod pozostaje zgodny z projektem.<br /><br /> Aby ułatwić identyfikację istniejących lub planowanych warstw, utwórz mapę kodu i pogrupować pokrewne elementy. Aby utworzyć diagram warstwy, zobacz:<br /><br /> -   [Tworzenie diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)|  
+|Diagramów składników|Składniki, ich interfejsy oraz ich wzajemne relacje.<br /><br /> Aby pomóc w zidentyfikowaniu składników, utworzyć kod mapy i pogrupować elementy według ich funkcji w systemie.<br /><br /> Zobacz:<br /><br /> -   [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy składników UML: wskazówki](../modeling/uml-component-diagrams-guidelines.md)|  
+|Diagram klas (UML)|Klasy, ich atrybuty i operacje oraz ich wzajemne relacje.<br /><br /> Aby pomóc w zidentyfikowaniu tych elementów, należy utworzyć diagram klas UML, pokazujący te elementy.<br /><br /> Zobacz:<br /><br /> -   [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)|  
 |Diagram klasy (oparty na kodzie)|Istniejące klasy w kodzie dla konkretnego projektu.<br /><br /> Wizualizację i modyfikowanie istniejącej klasy w kodzie, za pomocą projektanta klas.<br /><br /> Zobacz [jak: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|  
   
-###  <a name="DescribeSequence"></a> Opisz interakcje: Diagramy sekwencji  
+### <a name="DescribeSequence"></a> Opisz interakcje: Diagramy sekwencji  
  Diagramy sekwencji opisują serię interakcji między częściami systemu. Części mogą być w dowolnej skali. Na przykład mogą sięgać od poszczególnych obiektów w programie do dużych podsystemów lub podmiotów zewnętrznych. Interakcje mogą mieć dowolną skalę i typu. Na przykład mogą sięgać od pojedynczych komunikatów do rozszerzonych transakcji i mogą być wywołaniami funkcji lub komunikatami usługi sieci Web.  
   
  Aby pomóc firmom Lucerne i Dinner Now opisać i omówić czynności w przypadku użycia przetwarzanie płatności, tworzą poniższego diagramu sekwencji z diagramu składników. Są lustrzanym odbiciem witryny firmy Dinner Now w sieci Web i jej części. Komunikaty wyświetlane między liniami życia odpowiadają połączeniom na diagramach składników:  
@@ -682,11 +682,11 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
  Zobacz:  
   
--   [Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)  
+- [Diagramy sekwencji UML: informacje](../modeling/uml-sequence-diagrams-reference.md)  
   
--   [Diagramy sekwencji UML: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md)  
+- [Diagramy sekwencji UML: wskazówki](../modeling/uml-sequence-diagrams-guidelines.md)  
   
--   [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)  
+- [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)  
   
 #### <a name="drawing-a-sequence-diagram"></a>Rysowanie diagramu sekwencji  
  Diagram sekwencji ma następujące cechy główne:  
@@ -703,26 +703,26 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
   Zobacz:  
   
-- [Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)  
+- [Diagramy sekwencji UML: informacje](../modeling/uml-sequence-diagrams-reference.md)  
   
-- [Diagramy sekwencji UML: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md)  
+- [Diagramy sekwencji UML: wskazówki](../modeling/uml-sequence-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-sequence-diagrams"></a>Podsumowanie: Zalety diagramów sekwencji  
  Diagramy sekwencji pozwalają zwizualizować:  
   
--   Przepływ sterowania, które przechodzi między aktorami i obiektami podczas wykonywania przypadku użycia.  
+- Przepływ sterowania, które przechodzi między aktorami i obiektami podczas wykonywania przypadku użycia.  
   
--   Implementacja wywołania metody lub komunikatu.  
+- Implementacja wywołania metody lub komunikatu.  
   
 #### <a name="relationship-to-other-diagrams"></a>Związek z innymi diagramami  
   
 |**Diagram**|**Opis**|  
 |-----------------|---------------------|  
-|Diagram klas (UML)|Definiowanie klas, które reprezentują linie życia oraz parametry i zwracane wartości, które są używane w wiadomościach przesyłanych między liniami życia.<br /><br /> Aby utworzyć klasę z linii życia, kliknij prawym przyciskiem myszy linii życia, a następnie kliknij przycisk **Utwórz klasę** lub **Utwórz interfejs**. Aby utworzyć linię życia z typu na diagramie klasy, kliknij prawym przyciskiem myszy typ, a następnie kliknij przycisk **Utwórz linię życia**.<br /><br /> Zobacz:<br /><br /> -   [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md)|  
-|Diagramów składników|Opisz składniki, linie życia oraz interfejsy, które zapewniają i wykorzystują zachowanie reprezentowane przez wiadomości.<br /><br /> Aby utworzyć linię życia z diagramu składników, kliknij prawym przyciskiem myszy składnik, a następnie kliknij przycisk **Utwórz linię życia**.<br /><br /> Zobacz:<br /><br /> -   [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy składników UML: Wytyczne dotyczące](../modeling/uml-component-diagrams-guidelines.md)|  
-|Diagramów przypadków użycia|Podsumowanie interakcji między użytkownikami i składnikami na diagramie sekwencji jako przypadek użycia, który przedstawia cel użytkownika.<br /><br /> Zobacz:<br /><br /> -   [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md)|  
+|Diagram klas (UML)|Definiowanie klas, które reprezentują linie życia oraz parametry i zwracane wartości, które są używane w wiadomościach przesyłanych między liniami życia.<br /><br /> Aby utworzyć klasę z linii życia, kliknij prawym przyciskiem myszy linii życia, a następnie kliknij przycisk **Utwórz klasę** lub **Utwórz interfejs**. Aby utworzyć linię życia z typu na diagramie klasy, kliknij prawym przyciskiem myszy typ, a następnie kliknij przycisk **Utwórz linię życia**.<br /><br /> Zobacz:<br /><br /> -   [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)|  
+|Diagramów składników|Opisz składniki, linie życia oraz interfejsy, które zapewniają i wykorzystują zachowanie reprezentowane przez wiadomości.<br /><br /> Aby utworzyć linię życia z diagramu składników, kliknij prawym przyciskiem myszy składnik, a następnie kliknij przycisk **Utwórz linię życia**.<br /><br /> Zobacz:<br /><br /> -   [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy składników UML: wskazówki](../modeling/uml-component-diagrams-guidelines.md)|  
+|Diagramów przypadków użycia|Podsumowanie interakcji między użytkownikami i składnikami na diagramie sekwencji jako przypadek użycia, który przedstawia cel użytkownika.<br /><br /> Zobacz:<br /><br /> -   [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramy przypadków użycia UML: wskazówki](../modeling/uml-use-case-diagrams-guidelines.md)|  
   
-###  <a name="DefineClasses"></a> Definiuj słownik typów: Diagramy klas  
+### <a name="DefineClasses"></a> Definiuj słownik typów: Diagramy klas  
  Diagramy klas określają podmioty, terminy i pojęcia, które uczestniczą w systemie oraz ich wzajemne relacje. Na przykład służy tych diagramów podczas programowania do opisania atrybutów i operacji dla każdej klasy, niezależnie od ich implementacji języka i stylu.  
   
  Aby pomóc firmie Lucerne opisać i omówić podmioty, które uczestniczą w przypadku użycia przetwarzanie płatności, można narysować Poniższy diagram klasy:  
@@ -741,20 +741,20 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
  Zobacz:  
   
--   [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)  
+- [Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)  
   
--   [Diagramy klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md)  
+- [Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)  
   
 #### <a name="drawing-a-class-diagram"></a>Rysowanie diagramu klas  
  Diagram klas ma następujące cechy główne:  
   
 - Typy takie jak klasy, interfejsy i wyliczenia:  
   
-  -   A *klasy* jest definicji obiektów, które mają szczególne strukturalnych szczególnymi cechami strukturalnymi i.  
+  - A *klasy* jest definicji obiektów, które mają szczególne strukturalnych szczególnymi cechami strukturalnymi i.  
   
-  -   *Interfejsu* definiuje część widocznych zewnętrznych zachowań obiektu.  
+  - *Interfejsu* definiuje część widocznych zewnętrznych zachowań obiektu.  
   
-  -   *Wyliczenie* jest klasyfikatorem, który zawiera listę wartości literałów.  
+  - *Wyliczenie* jest klasyfikatorem, który zawiera listę wartości literałów.  
   
 - *Atrybuty* to wartości pewnego typu, opisujące każde wystąpienie *klasyfikatora*. Klasyfikator to ogólna nazwa dla typów, składników, przypadków użycia i nawet aktorów.  
   
@@ -780,33 +780,33 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
   Zobacz:  
   
-- [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)  
+- [Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)  
   
-- [Diagramy klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md)  
+- [Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)  
   
-- [Instrukcje: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+- [Instrukcje: Dodawanie diagramów klasy do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
 #### <a name="summary-strengths-of-class-diagrams"></a>Podsumowanie: Zalety diagramów klas  
  Diagramy klas pomagają określić:  
   
--   Wspólny Słownik terminów do wykorzystania podczas omawiania potrzeb użytkowników i jednostek, które uczestniczą w systemie. Zobacz [modelowanie wymagań użytkowników](../modeling/model-user-requirements.md).  
+- Wspólny Słownik terminów do wykorzystania podczas omawiania potrzeb użytkowników i jednostek, które uczestniczą w systemie. Zobacz [modelowanie wymagań użytkowników](../modeling/model-user-requirements.md).  
   
--   Typy, które są używane przez części systemu, takie jak składniki, niezależnie od ich implementacji. Zobacz [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md).  
+- Typy, które są używane przez części systemu, takie jak składniki, niezależnie od ich implementacji. Zobacz [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md).  
   
--   Relacje, takie jak zależności między typami. Na przykład można pokazać, że jeden typ może być skojarzony z wieloma wystąpieniami innego typu.  
+- Relacje, takie jak zależności między typami. Na przykład można pokazać, że jeden typ może być skojarzony z wieloma wystąpieniami innego typu.  
   
 #### <a name="relationship-to-other-diagrams"></a>Związek z innymi diagramami  
   
 |**Diagram**|**Opis**|  
 |-----------------|---------------------|  
-|Diagramów przypadków użycia|Zdefiniuj typy, które są używane do opisywania celów i etapów przypadków użycia.<br /><br /> Zobacz:<br /><br /> -   [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md)|  
-|Diagramu aktywności|Definiowanie typów danych, które przechodzą przez węzły obiektów, PinY wejściowe, PinY wyjściowe oraz węzły parametru działania.<br /><br /> Zobacz:<br /><br /> -   [Diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md)|  
-|Diagramów składników|Opisz składniki, ich interfejsy oraz ich wzajemne relacje. Klasa może również opisywać dokończyć kompletny komponent.<br /><br /> Zobacz:<br /><br /> -   [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy składników UML: Wytyczne dotyczące](../modeling/uml-component-diagrams-guidelines.md)|  
-|Diagram warstwowy|Definiuj logiczną architekturę systemu, w odniesieniu do klasy.<br /><br /> Użyj sprawdzania poprawności warstwy, aby upewnić się, że kod pozostaje zgodny z projektem.<br /><br /> Zobacz:<br /><br /> -   [Tworzenie diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy warstw: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)<br />-   [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)|  
-|Diagramów sekwencji|Definiuj rodzaje linii życia i operacje, parametry i zwracane wartości dla wszystkich wiadomości, które linia życia może odbierać.<br /><br /> Aby utworzyć linię życia z typu na diagramie klasy, kliknij prawym przyciskiem myszy typ, a następnie kliknij przycisk **Utwórz linię życia**.<br /><br /> Zobacz:<br /><br /> -   [Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)<br />-   [Diagramy sekwencji UML: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md)|  
+|Diagramów przypadków użycia|Zdefiniuj typy, które są używane do opisywania celów i etapów przypadków użycia.<br /><br /> Zobacz:<br /><br /> -   [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)<br />-   [Diagramy przypadków użycia UML: wskazówki](../modeling/uml-use-case-diagrams-guidelines.md)|  
+|Diagramu aktywności|Definiowanie typów danych, które przechodzą przez węzły obiektów, PinY wejściowe, PinY wyjściowe oraz węzły parametru działania.<br /><br /> Zobacz:<br /><br /> -   [Diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagramy aktywności UML: wskazówki](../modeling/uml-activity-diagrams-guidelines.md)|  
+|Diagramów składników|Opisz składniki, ich interfejsy oraz ich wzajemne relacje. Klasa może również opisywać dokończyć kompletny komponent.<br /><br /> Zobacz:<br /><br /> -   [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy składników UML: wskazówki](../modeling/uml-component-diagrams-guidelines.md)|  
+|Diagram warstwowy|Definiuj logiczną architekturę systemu, w odniesieniu do klasy.<br /><br /> Użyj sprawdzania poprawności warstwy, aby upewnić się, że kod pozostaje zgodny z projektem.<br /><br /> Zobacz:<br /><br /> -   [Tworzenie diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)<br />-   [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)|  
+|Diagramów sekwencji|Definiuj rodzaje linii życia i operacje, parametry i zwracane wartości dla wszystkich wiadomości, które linia życia może odbierać.<br /><br /> Aby utworzyć linię życia z typu na diagramie klasy, kliknij prawym przyciskiem myszy typ, a następnie kliknij przycisk **Utwórz linię życia**.<br /><br /> Zobacz:<br /><br /> -   [Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)<br />-   [Diagramy sekwencji UML: wskazówki](../modeling/uml-sequence-diagrams-guidelines.md)|  
 |Mapy kodu|Umożliwia wizualizację organizacji i relacjach w istniejącym kodzie.<br /><br /> Aby zidentyfikować klasy, ich relacje i ich metod, utwórz mapę kodu, pokazujący te elementy.<br /><br /> Zobacz:<br /><br /> -   [Mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)|  
   
-###  <a name="DescribeLayers"></a> Opisz logiczną architekturę: Diagramy warstw  
+### <a name="DescribeLayers"></a> Opisz logiczną architekturę: Diagramy warstw  
  Diagramy warstwy opisują architekturę logiczną systemu organizowania artefaktów w Twoich rozwiązaniach w abstrakcyje grupy, lub *warstwy*. Artefakty mogą być różne, takie jak przestrzenie nazw, projekty, klasy, metody i tak dalej. Warstwy przedstawiają i opisują role lub zadania, które te artefakty pełnią w systemie. Można także dodać sprawdzanie poprawności warstwy w kompilacji i ewidencjonowaniu operacji, aby upewnić się, że kod pozostaje zgodny z jego zamysłem.  
   
  Aby zachować zgodność kodu z projektem, firmy Dinner Now i Lucerne umożliwia poniższego diagramu warstwy sprawdzania poprawności kodu, jest opracowywany:  
@@ -858,25 +858,25 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
 - [Tworzenie diagramów warstw z kodu](../modeling/create-layer-diagrams-from-your-code.md)  
   
-- [Diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md)  
+- [Diagramy warstw: informacje](../modeling/layer-diagrams-reference.md)  
   
-- [Diagramy warstw: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)  
+- [Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)  
   
 - [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)  
   
 #### <a name="summary-strengths-of-layer-diagrams"></a>Podsumowanie: Zalety diagramów warstw  
  Diagramy warstwy pomogą Ci:  
   
--   Opisz logiczną architekturę systemu zgodnie z funkcji jego artefaktów.  
+- Opisz logiczną architekturę systemu zgodnie z funkcji jego artefaktów.  
   
--   Upewnij się, że kod w opracowaniu odpowiada określonemu projektowi.  
+- Upewnij się, że kod w opracowaniu odpowiada określonemu projektowi.  
   
 #### <a name="relationship-to-other-diagrams"></a>Związek z innymi diagramami  
   
 |**Diagram**|**Opis**|  
 |-----------------|---------------------|  
 |Mapy kodu|Umożliwia wizualizację organizacji i relacjach w istniejącym kodzie.<br /><br /> Aby utworzyć warstwy, Generuj mapę kodu, a następnie zgrupuj elementy na mapie jako potencjalne warstwy. Przeciągnij grupy z mapy do diagramu warstwowego.<br /><br /> Zobacz:<br /><br /> -   [Mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Przeglądanie i rozmieszczanie map kodu](../modeling/browse-and-rearrange-code-maps.md)|  
-|Diagramów składników|Opisz składniki, ich interfejsy oraz ich wzajemne relacje.<br /><br /> Aby zwizualizować warstwy, Utwórz diagram składników, który opisuje funkcje różnych składników w systemie.<br /><br /> Zobacz:<br /><br /> -   [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy składników UML: Wytyczne dotyczące](../modeling/uml-component-diagrams-guidelines.md)|  
+|Diagramów składników|Opisz składniki, ich interfejsy oraz ich wzajemne relacje.<br /><br /> Aby zwizualizować warstwy, Utwórz diagram składników, który opisuje funkcje różnych składników w systemie.<br /><br /> Zobacz:<br /><br /> -   [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagramy składników UML: wskazówki](../modeling/uml-component-diagrams-guidelines.md)|  
   
 ## <a name="external-resources"></a>Zasoby zewnętrzne  
   
