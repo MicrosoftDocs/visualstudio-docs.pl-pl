@@ -1,21 +1,21 @@
 ---
-ms.openlocfilehash: 4b5b629ecf67ebd88be2eb1bf9172fec001fb475
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: b8903ecc6f0bdb1ee24f5b8b7b724311c903e4ba
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58051826"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59737211"
 ---
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 ::: moniker range=">=vs-2019"
 
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) zainstalowane odpowiednie obciążeń dla wybranego języka:
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) zainstalowane odpowiednie obciążeń dla wybranego języka:
   * ASP.NET: **ASP.NET i tworzenie aplikacji internetowych**
   * Node.js: **Tworzenia aplikacji node.js**
 ::: moniker-end
 ::: moniker range="vs-2017"
-* [Program Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) zainstalowane odpowiednie obciążeń dla wybranego języka:
+* [Program Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) zainstalowane odpowiednie obciążeń dla wybranego języka:
   * ASP.NET: **ASP.NET i tworzenie aplikacji internetowych**
   * Node.js: **Tworzenia aplikacji node.js**
 ::: moniker-end

@@ -1,11 +1,11 @@
 ---
 ms.topic: include
-ms.openlocfilehash: 57e03003412adf654157c635ee8fbbc9b9796f13
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: a2ceafbbd204083fc421a05488dd67185f68d9d8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896916"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59737210"
 ---
 > [!NOTE]
-> Funkcja testów wydajności i obciążenia sieci Web jest przestarzała. Visual Studio 2019 r jest najnowszej wersji, gdzie wydajności sieci web i testy obciążenia będą dostępne.
+> Funkcja testów wydajności i obciążenia sieci Web jest przestarzała. Visual Studio 2019 r jest najnowszej wersji, gdzie wydajności sieci web i testy obciążenia będą dostępne. Aby uzyskać więcej informacji, zobacz [usługi koniec cyklu życia testowania obciążenia w chmurze](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/) wpis w blogu.
