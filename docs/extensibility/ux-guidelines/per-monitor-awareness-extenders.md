@@ -16,12 +16,12 @@ ms.technology: vs-ide-general
 ms.topic: reference
 ms.workload:
 - multiple
-ms.openlocfilehash: db30c3d74a7742daa3c9cf7225bc2a38062dc6e4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 44938c5753491521702867398a514f770cf831fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660700"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099393"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Rozpoznawanie — monitorowanie, obsługę rozszerzeń programu Visual Studio
 Wersje przed Visual Studio 2019 r było ich kontekstami świadomości DPI równa świadomi, a nie wartość DPI aware (PMA) monitor systemu. Działające w systemie świadomości spowodowało wizualizację pogorszenie środowiska (np. rozmyty czcionki lub ikony) zawsze wtedy, gdy program Visual Studio było renderowanie na monitorach z różne skale lub zdalnego do maszyn za pomocą innego ekranu konfiguracji np. (inny Windows skalowanie).
@@ -39,9 +39,9 @@ Zapoznaj się [wysokiej rozdzielczości DPI aplikacji programowanie aplikacji kl
 
 ## <a name="enabling-pma"></a>Włączanie PMA
 Aby włączyć PMA w programie Visual Studio, muszą zostać spełnione następujące wymagania:
-1)  Windows 10 kwietnia 2018 r. aktualizacji (v1803 RS4) lub nowszy
-2)  .NET framework 4.8 RTM lub nowszej
-3)  Visual Studio 2019 r przy użyciu ["Optymalizuj renderowania na ekranach o różnych pikseli gęstości"](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019) po włączeniu opcji
+1) Windows 10 kwietnia 2018 r. aktualizacji (v1803 RS4) lub nowszy
+2) .NET framework 4.8 RTM lub nowszej
+3) Visual Studio 2019 r przy użyciu ["Optymalizuj renderowania na ekranach o różnych pikseli gęstości"](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019) po włączeniu opcji
 
 Po spełnieniu tych wymagań programu Visual Studio spowoduje automatyczne włączenie trybu PMA całym procesie.
 
@@ -203,6 +203,7 @@ Większość pracy obliczeń interfejsu użytkownika, wykonywanej jako część 
 Jeśli okno narzędzia WPF nie jest przeprowadzana migracja do zapewnienia pełnej obsługi PMA, należy zrezygnować z CLMM. Aby to zrobić, nowy interfejs musi zostać wdrożone: IVsDpiAware.
 
 C#:
+
 ```cs
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
 public interface IVsDpiAeware
@@ -213,6 +214,7 @@ public interface IVsDpiAeware
 ```
  
 C++:
+
 ```cpp
 IVsDpiAware : public IUnknown
 {
@@ -245,6 +247,7 @@ enum __VSDPIMODE
 Starszy interfejs użytkownika, który nie został zaktualizowany do obsługi trybu PMA nadal może być konieczne wyglądało pracę, podczas gdy program Visual Studio jest uruchomiony w trybie PMA. Jednego takiego poprawkę obejmuje upewnienie się, że interfejs użytkownika jest tworzona w prawo DpiAwarenessContext. Aby wymusić interfejs użytkownika do konkretnej DpiAwarenessContext, można wprowadzić zakres rozdzielczości DPI następującym kodem:
 
 C#:
+
 ```cs
 using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
 {
@@ -254,6 +257,7 @@ using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
 ```
 
 C++:
+
 ```cpp
 void MyClass::ShowDialog()
 {

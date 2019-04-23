@@ -11,23 +11,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 781e1cce1d363ade1d236c8e17f9c3feeb4b0f5c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 745fea2ebaba478d9c405ab51db607e5eb025cc7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913291"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058009"
 ---
 # <a name="customizing-the-model-explorer"></a>Dostosowywanie Eksploratora modelu
 Możesz zmienić wygląd i zachowanie Eksploratora dla projektanta języka specyficznego dla domeny w następujący sposób:
 
--   Zmienianie tytułu okna.
+- Zmienianie tytułu okna.
 
--   Zmień ikonę na karcie.
+- Zmień ikonę na karcie.
 
--   Zmiana ikony dla węzłów.
+- Zmiana ikony dla węzłów.
 
--   Aby ukryć węzły.
+- Aby ukryć węzły.
 
 ## <a name="changing-the-window-title"></a>Zmienianie tytułu okna
  Aby zmienić tytuł okna Eksploratora wygenerowane, wybierz **zachowanie Eksploratora** w **Eksplorator DSL**, a następnie w polu **właściwości** oknie  **Tytuł** właściwości tytułu ma.
@@ -66,25 +66,25 @@ Możesz zmienić wygląd i zachowanie Eksploratora dla projektanta języka specy
 
 #### <a name="to-display-a-property"></a>Aby wyświetlić właściwości
 
-1.  Otwórz rozwiązanie, który został utworzony we wcześniejszej procedurze.
+1. Otwórz rozwiązanie, który został utworzony we wcześniejszej procedurze.
 
-2.  Upewnij się, że **komentarz** odwołuje się do klasy pojedynczej domeny przez ustawienie Liczebność roli o nazwie właściwości **przedmioty** się od 0 do 1. Nazwa właściwości, powinny stać się **podmiotu**, a Nazwa relacji powinna stać się **CommentReferencesSubject**.
+2. Upewnij się, że **komentarz** odwołuje się do klasy pojedynczej domeny przez ustawienie Liczebność roli o nazwie właściwości **przedmioty** się od 0 do 1. Nazwa właściwości, powinny stać się **podmiotu**, a Nazwa relacji powinna stać się **CommentReferencesSubject**.
 
-3.  W **Eksplorator DSL**, kliknij prawym przyciskiem myszy **zachowanie Eksploratora** a następnie kliknij przycisk **Dodaj nowe ustawienia węzła Eksploratora**.
+3. W **Eksplorator DSL**, kliknij prawym przyciskiem myszy **zachowanie Eksploratora** a następnie kliknij przycisk **Dodaj nowe ustawienia węzła Eksploratora**.
 
      **ExplorerNodeSettings** pojawia się pod węzłem **niestandardowe ustawienia węzła** węzła.
 
-4.  Wybierz **ExplorerNodeSettings**, a następnie w polu **właściwości** oknie **klasy** do **komentarz**.
+4. Wybierz **ExplorerNodeSettings**, a następnie w polu **właściwości** oknie **klasy** do **komentarz**.
 
-5.  Kliknij prawym przyciskiem myszy **komentarz** węzłem, a następnie kliknij przycisk **Dodaj nową ścieżkę właściwości**.
+5. Kliknij prawym przyciskiem myszy **komentarz** węzłem, a następnie kliknij przycisk **Dodaj nową ścieżkę właściwości**.
 
      Pojawi się nowy węzeł o nazwie **właściwość wyświetlana**.
 
-6.  Wybierz **właściwość wyświetlana**, a następnie w polu **właściwości** okna, kliknij pole wartości **właściwości ścieżki**. Wybierz **komentarz**, następnie **CommentReferencesSubject**, następnie **FlowElement**. Ścieżka wynikowa powinien przypominać **CommentReferencesSubject.Subject/! Temat**.
+6. Wybierz **właściwość wyświetlana**, a następnie w polu **właściwości** okna, kliknij pole wartości **właściwości ścieżki**. Wybierz **komentarz**, następnie **CommentReferencesSubject**, następnie **FlowElement**. Ścieżka wynikowa powinien przypominać **CommentReferencesSubject.Subject/! Temat**.
 
-7.  W polu wartość **właściwość**, wybierz opcję **nazwa**.
+7. W polu wartość **właściwość**, wybierz opcję **nazwa**.
 
-8.  Transformuj wszystkie szablony, a następnie Skompiluj i uruchom swoje rozwiązanie.
+8. Transformuj wszystkie szablony, a następnie Skompiluj i uruchom swoje rozwiązanie.
 
 9. Otwórz przykładowy diagram w wygenerowanym projektancie.
 
@@ -97,17 +97,17 @@ Możesz zmienić wygląd i zachowanie Eksploratora dla projektanta języka specy
 
 #### <a name="to-hide-an-explorer-node"></a>Aby ukryć węzeł Eksploratora
 
-1.  Otwórz rozwiązanie, który został utworzony we wcześniejszej procedurze.
+1. Otwórz rozwiązanie, który został utworzony we wcześniejszej procedurze.
 
-2.  W **Eksplorator DSL**, kliknij prawym przyciskiem myszy **zachowanie Eksploratora** a następnie kliknij przycisk **Dodaj nową ścieżkę domeny**.
+2. W **Eksplorator DSL**, kliknij prawym przyciskiem myszy **zachowanie Eksploratora** a następnie kliknij przycisk **Dodaj nową ścieżkę domeny**.
 
      A **ścieżka domeny** pojawia się pod węzłem **ukrytych węzłów**.
 
-3.  Wybierz **ścieżka domeny**, a następnie w polu **właściwości** okna, kliknij pole wartości **definicja ścieżki**. Wybierz **FlowGraph**, następnie **FlowGraphHasComments**. Ścieżka wynikowa powinien przypominać **FlowGraphHasComments.Comments**
+3. Wybierz **ścieżka domeny**, a następnie w polu **właściwości** okna, kliknij pole wartości **definicja ścieżki**. Wybierz **FlowGraph**, następnie **FlowGraphHasComments**. Ścieżka wynikowa powinien przypominać **FlowGraphHasComments.Comments**
 
-4.  Transformuj wszystkie szablony, a następnie Skompiluj i uruchom swoje rozwiązanie.
+4. Transformuj wszystkie szablony, a następnie Skompiluj i uruchom swoje rozwiązanie.
 
-5.  Otwórz przykładowy diagram w wygenerowanym projektancie.
+5. Otwórz przykładowy diagram w wygenerowanym projektancie.
 
      Eksplorator powinny pokazywać tylko **aktorów** węzeł i nie powinien być wyświetlony **komentarze** węzła.
 

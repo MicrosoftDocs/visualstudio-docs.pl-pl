@@ -10,12 +10,12 @@ ms.assetid: a39fca69-0014-474c-933f-51f0e9b9617e
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f7e771acfa44c1b32dfcc33b2ef1cbcaef879b9f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3bd7b31a609117a59a5110cdb4460e5c36395ede
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805523"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089214"
 ---
 # <a name="how-to-add-standard-text-markers"></a>Instrukcje: Dodaj znaczniki standardowy tekst
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Poniższa procedura umożliwia utworzenie jednej z domyślnych typów znacznika 
   
 ### <a name="to-create-a-text-marker"></a>Aby utworzyć znacznika tekstu  
   
-1.  W zależności od tego, czy używany jest jeden lub dwa - wymiarowej współrzędnych, wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> metody lub <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> metodę w celu utworzenia nowego znacznika tekstu.  
+1. W zależności od tego, czy używany jest jeden lub dwa - wymiarowej współrzędnych, wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> metody lub <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> metodę w celu utworzenia nowego znacznika tekstu.  
   
      W tym wywołaniu metody, określ typ znacznika, zakres tekstu do tworzenia znacznika i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfejsu. Ta metoda zwraca wskaźnik do znacznika nowo utworzony tekstu. Typy znacznika są pobierane z <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> wyliczenia. Określ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfejsu, jeśli ma być powiadamiany o znacznika zdarzenia.  
   
@@ -36,15 +36,15 @@ Poniższa procedura umożliwia utworzenie jednej z domyślnych typów znacznika 
   
 #### <a name="to-add-a-custom-command-to-the-context-menu"></a>Aby dodać niestandardowe polecenia do menu kontekstowego  
   
-1.  Menu kontekstowe jest wyświetlane, środowisko wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A> metody i przebiegów możesz wskaźnik do znacznika tekstu na i numer elementu polecenia w menu kontekstowym.  
+1. Menu kontekstowe jest wyświetlane, środowisko wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A> metody i przebiegów możesz wskaźnik do znacznika tekstu na i numer elementu polecenia w menu kontekstowym.  
   
      Na przykład zawierać polecenia specyficzne dla punktu przerwania z menu kontekstowego **Usuń punkt przerwania** za pośrednictwem **nowego punktu przerwania**wyświetlane w poniższy zrzut ekranu.  
   
      ![Menu kontekstowe znacznika](../extensibility/media/vsmarkercontextmenu.gif "vsMarkercontextmenu")  
   
-2.  Przesłać tekst, który identyfikuje nazwę polecenia niestandardowe. Na przykład **Usuń punkt przerwania** może być polecenie niestandardowe, jeśli środowisko nie już podał go. Możesz też przekazać ponownie tego, czy polecenie jest obsługiwane, dostępna i włączona i/lub przełącz wł. / wył. Środowisko używa tych informacji do wyświetlania polecenia niestandardowego menu kontekstowego w prawidłowy sposób.  
+2. Przesłać tekst, który identyfikuje nazwę polecenia niestandardowe. Na przykład **Usuń punkt przerwania** może być polecenie niestandardowe, jeśli środowisko nie już podał go. Możesz też przekazać ponownie tego, czy polecenie jest obsługiwane, dostępna i włączona i/lub przełącz wł. / wył. Środowisko używa tych informacji do wyświetlania polecenia niestandardowego menu kontekstowego w prawidłowy sposób.  
   
-3.  Można wykonać polecenia wywołania środowiska <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> metody przekazywania wskaźnika znacznika tekst i liczby wybrane z menu kontekstowego polecenie.  
+3. Można wykonać polecenia wywołania środowiska <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> metody przekazywania wskaźnika znacznika tekst i liczby wybrane z menu kontekstowego polecenie.  
   
      Dzięki tym informacjom tego wywołania do wykonania, mówią, niezależnie od akcji znacznika tekstu polecenia niestandardowe.  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 61301fce94ab1359a10249f739d2bf613ebfdda8
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f2146c8a15292ddc9233c8e10b8f58f5212df0c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867740"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077605"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generowanie kodu w procesie kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,31 +27,31 @@ Istnieją pewne różnice w czynnościach, które mogą wykonać zadania kompila
 
 Oznacza to, że nie można uzyskać dostępu do takich elementów, jak nazwy plików projektu, w taki sam sposób podczas kompilacji szablonu tekstu w MSBuild. Można jednak [przekazać informacje o środowisku do szablonów tekstowych i procesorów dyrektyw przy użyciu parametrów kompilacji](#parameters).
 
-##  <a name="buildserver"></a> Konfigurowanie maszyn
+## <a name="buildserver"></a> Konfigurowanie maszyn
 
 Aby umożliwić wykonywanie zadań kompilacji na komputerze deweloperskim, należy zainstalować [zestawu Modeling SDK for Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
 Jeśli [serwer kompilacji](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) uruchomienia na komputerze, na którym nie zainstalowano programu Visual Studio, skopiuj następujące pliki do komputera kompilacji z komputera deweloperskiego. Zastąp ostatnich numerów wersji "*".
 
--   $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
+- $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
-    -   Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
 
-    -   Microsoft.TextTemplating.Build.Tasks.dll
+    - Microsoft.TextTemplating.Build.Tasks.dll
 
-    -   Microsoft.TextTemplating.targets
+    - Microsoft.TextTemplating.targets
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+- $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-    -   Microsoft.VisualStudio.TextTemplating.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.*.0.dll
 
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (several files)
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (several files)
 
-    -   Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
+- $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
 
-    -   Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
 
 ## <a name="to-edit-the-project-file"></a>Aby edytować plik projektu
 
@@ -90,7 +90,7 @@ Po tym wierszu wstaw import szablonu tekstu:
 
 Istnieje kilka właściwości, które można wstawić do pliku projektu, aby móc kontrolować zadanie przekształcenia:
 
--   Należy uruchomić zadanie przekształceń na początku każdej kompilacji:
+- Należy uruchomić zadanie przekształceń na początku każdej kompilacji:
 
     ```xml
     <PropertyGroup>
@@ -98,7 +98,7 @@ Istnieje kilka właściwości, które można wstawić do pliku projektu, aby mó
     </PropertyGroup>
     ```
 
--   Zastąp pliki, które są tylko do odczytu, ponieważ np. nie zostały wyewidencjonowane:
+- Zastąp pliki, które są tylko do odczytu, ponieważ np. nie zostały wyewidencjonowane:
 
     ```xml
     <PropertyGroup>
@@ -106,7 +106,7 @@ Istnieje kilka właściwości, które można wstawić do pliku projektu, aby mó
     </PropertyGroup>
     ```
 
--   Za każdym razem przekształcaj każdy szablon:
+- Za każdym razem przekształcaj każdy szablon:
 
     ```xml
     <PropertyGroup>
@@ -213,7 +213,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-##  <a name="parameters"></a> Przekazywanie danych kontekstu kompilacji w szablonach
+## <a name="parameters"></a> Przekazywanie danych kontekstu kompilacji w szablonach
 
 Można ustawić wartości parametrów w pliku projektu. Na przykład, można przekazać właściwości kompilacji i [zmienne środowiskowe](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -234,7 +234,7 @@ W szablonie tekstu, ustaw `hostspecific` w dyrektywie szablonu. Użyj [parametru
 The project folder is: <#= ProjectFolder #>
 ```
 
-##  <a name="msbuild"></a> Korzystanie z właściwości projektu w zestawie i dyrektyw include
+## <a name="msbuild"></a> Korzystanie z właściwości projektu w zestawie i dyrektyw include
 
 Makra Visual Studio, takie jak $(SolutionDir), nie działają w MSBuild. Zamiast tego można użyć właściwości projektu.
 
@@ -271,13 +271,13 @@ Jeżeli zaktualizujesz dołączony plik lub inny plik odczytany przez szablon, V
 
 **Co to są inne opcje przekształceń szablonu tekstu?**
 
--   [Narzędzia TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) można używać w skryptach poleceń. W większości przypadków program MSBuild jest łatwiejszy w użyciu.
+- [Narzędzia TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) można używać w skryptach poleceń. W większości przypadków program MSBuild jest łatwiejszy w użyciu.
 
--   [Wywoływanie transformacji tekstu w rozszerzeniu VS](../modeling/invoking-text-transformation-in-a-vs-extension.md)
+- [Wywoływanie transformacji tekstu w rozszerzeniu VS](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
--   [Szablony tekstu czasu projektowania](../modeling/design-time-code-generation-by-using-t4-text-templates.md) są przekształcane przez program Visual Studio.
+- [Szablony tekstu czasu projektowania](../modeling/design-time-code-generation-by-using-t4-text-templates.md) są przekształcane przez program Visual Studio.
 
--   [Szablony tekstowe czasu wykonania](../modeling/run-time-text-generation-with-t4-text-templates.md) są przekształcane w czasie wykonywania w aplikacji.
+- [Szablony tekstowe czasu wykonania](../modeling/run-time-text-generation-with-t4-text-templates.md) są przekształcane w czasie wykonywania w aplikacji.
 
 ## <a name="read-more"></a>Dowiedz się więcej
 

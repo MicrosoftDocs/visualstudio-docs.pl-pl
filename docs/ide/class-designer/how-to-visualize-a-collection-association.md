@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e734b84bb8c386c60f3fef9061d74b8b31277cec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 09c23b59711a95f0729555acfd0203160bd9995d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910952"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043474"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Instrukcje: Wizualizacja skojarzenia kolekcji w Projektancie klas
 
@@ -28,11 +28,11 @@ Właściwości i pola, które są kolekcjami innych typów mogą być wyświetla
 
 ## <a name="to-create-a-collection-association"></a>Aby utworzyć skojarzenia kolekcji
 
-1.  W kodzie Utwórz właściwość lub pole, którego typem jest sam kolekcję silnie typizowane.
+1. W kodzie Utwórz właściwość lub pole, którego typem jest sam kolekcję silnie typizowane.
 
-2.  Na diagramie klasy należy rozwinąć klasy tak, aby właściwości i pola.
+2. Na diagramie klasy należy rozwinąć klasy tak, aby właściwości i pola.
 
-3.  W klasie, kliknij prawym przyciskiem myszy pole lub właściwość, a następnie wybierz **pokazać jako skojarzenia kolekcji**.
+3. W klasie, kliknij prawym przyciskiem myszy pole lub właściwość, a następnie wybierz **pokazać jako skojarzenia kolekcji**.
 
 Właściwość lub pole jest wyświetlana jako linia skojarzenia łączenie typu modułu zbierającego dane.
 

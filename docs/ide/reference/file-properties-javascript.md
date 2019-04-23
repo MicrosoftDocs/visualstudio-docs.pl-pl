@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 684e638d1a2e69d48381964272294999d43c5242
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5c8bb8bc743aea29219edc8db9c0c52bf839954a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956769"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090502"
 ---
 # <a name="file-properties-javascript"></a>Właściwości pliku, JavaScript
 Aby wskazać, jakie akcje, system projektu należy wykonać na plikach, można użyć właściwości pliku. Na przykład można ustawić właściwości pliku, aby wskazać, czy plik należy dodać do pakietu jako plik zasobów.
@@ -46,13 +46,13 @@ Aby wskazać, jakie akcje, system projektu należy wykonać na plikach, można u
 ### <a name="package-action"></a>Akcja pakietu
  **Akcja pakietu** właściwość wskazuje co program Visual Studio przy użyciu pliku po wykonaniu kompilacji. **Pakiet akcji** może mieć jeden z kilku wartości:
 
--   **Brak** — plik nie jest uwzględniony w manifeście pakietu. Przykładem jest plik tekstowy, który zawiera dokumentację, takich jak plik Readme.
+- **Brak** — plik nie jest uwzględniony w manifeście pakietu. Przykładem jest plik tekstowy, który zawiera dokumentację, takich jak plik Readme.
 
--   **Zawartość** — plik jest uwzględniony w manifeście pakietu. Na przykład to ustawienie jest wartością domyślną dla .htm, js, CSS, obrazów, plików audio i wideo.
+- **Zawartość** — plik jest uwzględniony w manifeście pakietu. Na przykład to ustawienie jest wartością domyślną dla .htm, js, CSS, obrazów, plików audio i wideo.
 
--   **Manifest** — plik nie jest uwzględniony w manifeście pakietu. Zamiast tego pliku jest używany dla danych wejściowych podczas generowania manifestu pakietu. Jest to wartość domyślna dla pliku package.appxmanifest.
+- **Manifest** — plik nie jest uwzględniony w manifeście pakietu. Zamiast tego pliku jest używany dla danych wejściowych podczas generowania manifestu pakietu. Jest to wartość domyślna dla pliku package.appxmanifest.
 
--   **Zasób** — plik nie jest uwzględniony w manifeście pakietu. Zamiast tego należy zawartość pliku są indeksowane w indeksie zasobów pakietu (PRI), prowadzące do manifestu pakietu. Zazwyczaj służy do plików zasobów.
+- **Zasób** — plik nie jest uwzględniony w manifeście pakietu. Zamiast tego należy zawartość pliku są indeksowane w indeksie zasobów pakietu (PRI), prowadzące do manifestu pakietu. Zazwyczaj służy do plików zasobów.
 
 Wartością domyślną dla **Akcja pakietu** zależy od rozszerzenia pliku, który można dodać do rozwiązania.
 

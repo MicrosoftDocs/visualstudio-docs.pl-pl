@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 476d117b04b648c2893885700d94a157399cea15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bcf6a06ee89bcc3ba691b38e98cf8bf43d9c063b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802425"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048050"
 ---
 # <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Instrukcje: Dodawanie komentarzy do diagramów klas (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ Kształty komentarza umożliwia dodawanie adnotacji do diagramów klas. Kształt
   
 ### <a name="to-add-a-comment"></a>Aby dodać komentarz  
   
-1.  Przeciągnij komentarz z **przybornika projektanta klas** na diagram klas.  
+1. Przeciągnij komentarz z **przybornika projektanta klas** na diagram klas.  
   
-2.  Kliknij nowy komentarz kształt na diagramie, a następnie wpisz tekst, który ma.  
+2. Kliknij nowy komentarz kształt na diagramie, a następnie wpisz tekst, który ma.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Praca z diagramami klas (Projektant klas)](../ide/working-with-class-diagrams-class-designer.md)   
  [Praca z diagramami klas (Projektant klas)](../ide/working-with-class-diagrams-class-designer.md)   
- [Instrukcje: Dostosowywanie diagramów klas (Projektant klas)](../ide/how-to-customize-class-diagrams-class-designer.md)
+ [Instrukcje: Dostosowywanie diagramów klasy (Projektant klas)](../ide/how-to-customize-class-diagrams-class-designer.md)

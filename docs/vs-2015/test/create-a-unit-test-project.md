@@ -8,12 +8,12 @@ ms.assetid: a608bfba-1a43-4a60-b73a-1fe53ef58098
 caps.latest.revision: 10
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5adef222f42c3dc2b6035bfa7ab25441051597e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca472a8db08f337d873f0e43475a9231f2999b13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804349"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096624"
 ---
 # <a name="create-a-unit-test-project"></a>Tworzenie projektu testu jednostkowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,21 +25,21 @@ Testy jednostkowe dublowanie często struktury kodu w ramach testu. Na przykład
   
 ## <a name="to-create-a-unit-test-project"></a>Aby utworzyć projekt testów jednostkowych:  
   
-1.  Na **pliku** menu, wybierz **New** , a następnie wybierz **projektu** (klawiatura: Ctrl + Shift + N).  
+1. Na **pliku** menu, wybierz **New** , a następnie wybierz **projektu** (klawiatura: Ctrl + Shift + N).  
   
-2.  W oknie dialogowym Nowy projekt rozwiń **zainstalowane** węzła, wybierz język, którego chcesz użyć dla projektu testowego, a następnie wybierz **testu**.  
+2. W oknie dialogowym Nowy projekt rozwiń **zainstalowane** węzła, wybierz język, którego chcesz użyć dla projektu testowego, a następnie wybierz **testu**.  
   
-3.  Aby użyć jednego z platform testów jednostkowych firmy Microsoft, wybierz opcję **projektu testu jednostkowego** z listy szablonów projektu. W przeciwnym razie wybierz szablon projektu jednostki środowiskiem testowym, którego chcesz użyć. Aby przetestować projekt kont w naszym przykładzie, czy nazwa projektu AccountsTests.  
+3. Aby użyć jednego z platform testów jednostkowych firmy Microsoft, wybierz opcję **projektu testu jednostkowego** z listy szablonów projektu. W przeciwnym razie wybierz szablon projektu jednostki środowiskiem testowym, którego chcesz użyć. Aby przetestować projekt kont w naszym przykładzie, czy nazwa projektu AccountsTests.  
   
-4.  W projekcie testu jednostki Dodaj odwołanie do testowanego kodu.  Oto jak utworzyć odwołanie do projektu kodu w tym samym rozwiązaniu:  
+4. W projekcie testu jednostki Dodaj odwołanie do testowanego kodu.  Oto jak utworzyć odwołanie do projektu kodu w tym samym rozwiązaniu:  
   
-    1.  Wybierz projekt w Eksploratorze rozwiązań.  
+    1. Wybierz projekt w Eksploratorze rozwiązań.  
   
-    2.  Na **projektu** menu, wybierz **Dodaj odwołanie...** .  
+    2. Na **projektu** menu, wybierz **Dodaj odwołanie...** .  
   
-    3.  W oknie dialogowym Reference Manager Otwórz **rozwiązania** węzeł i wybierz polecenie **projektów**. Sprawdź nazwę projektu kodu, a następnie zamknij okno dialogowe.  
+    3. W oknie dialogowym Reference Manager Otwórz **rozwiązania** węzeł i wybierz polecenie **projektów**. Sprawdź nazwę projektu kodu, a następnie zamknij okno dialogowe.  
   
-5.  Jeśli kod, który ma zostać przetestowana, jest w innej lokalizacji, zobacz [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md) informacje dotyczące dodawania odwołania.  
+5. Jeśli kod, który ma zostać przetestowana, jest w innej lokalizacji, zobacz [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md) informacje dotyczące dodawania odwołania.  
   
 ## <a name="next-steps"></a>Następne kroki  
  **Pisanie testów jednostkowych**  

@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0e0f08256d8852e707c3f6acf37ed6addc2ef831
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3cb95da9bc6405d313aa32e208d68df4327db6f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771626"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087901"
 ---
 # <a name="querying-the-pdb-file"></a>Używanie zapytań dotyczących pliku .Pdb
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Plik bazy danych programu (z rozszerzeniem .pdb) to plik binarny, który zawiera
   
 ### <a name="to-query-the-pdb-file"></a>Do wykonywania zapytań w pliku .pdb  
   
-1.  Uzyskiwanie źródła danych, tworząc [idiadatasource —](../../debugger/debug-interface-access/idiadatasource.md) interfejsu.  
+1. Uzyskiwanie źródła danych, tworząc [idiadatasource —](../../debugger/debug-interface-access/idiadatasource.md) interfejsu.  
   
     ```cpp#  
     CComPtr<IDiaDataSource> pSource;  
@@ -44,7 +44,7 @@ Plik bazy danych programu (z rozszerzeniem .pdb) to plik binarny, który zawiera
     }  
     ```  
   
-2.  Wywołaj [idiadatasource::loaddatafrompdb —](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) lub [idiadatasource::loaddataforexe —](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) ładuje te informacje debugowania.  
+2. Wywołaj [idiadatasource::loaddatafrompdb —](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) lub [idiadatasource::loaddataforexe —](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) ładuje te informacje debugowania.  
   
     ```cpp#  
     wchar_t wszFilename[ _MAX_PATH ];  
@@ -58,7 +58,7 @@ Plik bazy danych programu (z rozszerzeniem .pdb) to plik binarny, który zawiera
     }  
     ```  
   
-3.  Wywołaj [idiadatasource::opensession —](../../debugger/debug-interface-access/idiadatasource-opensession.md) otworzyć [idiasession —](../../debugger/debug-interface-access/idiasession.md) do uzyskania dostępu do informacji debugowania.  
+3. Wywołaj [idiadatasource::opensession —](../../debugger/debug-interface-access/idiadatasource-opensession.md) otworzyć [idiasession —](../../debugger/debug-interface-access/idiasession.md) do uzyskania dostępu do informacji debugowania.  
   
     ```cpp#  
     CComPtr<IDiaSession> psession;  
@@ -68,7 +68,7 @@ Plik bazy danych programu (z rozszerzeniem .pdb) to plik binarny, który zawiera
     }  
     ```  
   
-4.  Używanie metod w `IDiaSession` można wyszukiwać symbole w źródle danych.  
+4. Używanie metod w `IDiaSession` można wyszukiwać symbole w źródle danych.  
   
     ```cpp#  
     CComPtr<IDiaSymbol> pglobal;  
@@ -78,7 +78,7 @@ Plik bazy danych programu (z rozszerzeniem .pdb) to plik binarny, który zawiera
     }  
     ```  
   
-5.  Użyj `IDiaEnum*` informacje o debugowaniu interfejsy do wyliczenia, a następnie przeprowadź skanowanie za pomocą symboli lub inne elementy.  
+5. Użyj `IDiaEnum*` informacje o debugowaniu interfejsy do wyliczenia, a następnie przeprowadź skanowanie za pomocą symboli lub inne elementy.  
   
     ```cpp#  
     CComPtr<IDiaEnumTables> pTables;  

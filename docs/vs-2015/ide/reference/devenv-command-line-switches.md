@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 85c5cef12ed92cbd37b303aa7bd1e23cbced76ae
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 4eadb8c9553873f43ad9435ad43fae00f57affcb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653869"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050715"
 ---
 # <a name="devenv-command-line-switches"></a>Przełączniki wiersza polecenia Devenv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,24 +46,24 @@ Devenv pozwala ustawić różne opcje zintegrowanego środowiska programistyczne
   
  Zasady składni `devenv` przełączników przypominają wyjątki dla innych narzędzi wiersza polecenia systemu DOS. Następujące reguły składni mają zastosowanie do wszystkich `devenv` przełączników i ich argumentów:  
   
--   Polecenia zaczynają się od `devenv`.  
+- Polecenia zaczynają się od `devenv`.  
   
--   Przełączniki nie jest rozróżniana wielkość liter.  
+- Przełączniki nie jest rozróżniana wielkość liter.  
   
--   Podczas określania rozwiązania lub projektu, pierwszy argument jest nazwa pliku rozwiązania lub pliku projektu, w tym ścieżki pliku.  
+- Podczas określania rozwiązania lub projektu, pierwszy argument jest nazwa pliku rozwiązania lub pliku projektu, w tym ścieżki pliku.  
   
--   Jeśli pierwszy argument jest plik, który nie jest rozwiązanie lub projekt, ten plik zostanie otwarty w odpowiedniego edytora, w nowym wystąpieniu środowiska IDE.  
+- Jeśli pierwszy argument jest plik, który nie jest rozwiązanie lub projekt, ten plik zostanie otwarty w odpowiedniego edytora, w nowym wystąpieniu środowiska IDE.  
   
--   Jeśli podasz nazwę pliku projektu, a nie nazwę pliku rozwiązania `devenv` polecenia wyszuka folderu nadrzędnego pliku projektu plik rozwiązania, który ma taką samą nazwę. Na przykład polecenie `devenv /build myproject1.vbproj` wyszuka folder nadrzędny do pliku rozwiązania, który nosi nazwę "myproject1.sln".  
+- Jeśli podasz nazwę pliku projektu, a nie nazwę pliku rozwiązania `devenv` polecenia wyszuka folderu nadrzędnego pliku projektu plik rozwiązania, który ma taką samą nazwę. Na przykład polecenie `devenv /build myproject1.vbproj` wyszuka folder nadrzędny do pliku rozwiązania, który nosi nazwę "myproject1.sln".  
   
     > [!NOTE]
     >  Jeden i tylko jeden plik rozwiązania, który odwołuje się do tego projektu powinna znajdować się w folderu nadrzędnego. Jeśli folder nadrzędny zawiera nie pliku rozwiązania, który odwołuje się do tego projektu lub jeśli folder nadrzędny zawiera dwa lub więcej plików rozwiązania, które ją przywołują, następnie rozwiązanie tymczasowe zostanie utworzony plik, nosi nazwę dla tego projektu, a następnie odwołuje się do niej.  
   
--   Gdy nazwy pliku i ścieżki plików zawiera spacje, należy ująć je w znaki podwójnego cudzysłowu (""). Na przykład "c:\project\\".  
+- Gdy nazwy pliku i ścieżki plików zawiera spacje, należy ująć je w znaki podwójnego cudzysłowu (""). Na przykład "c:\project\\".  
   
--   Wstaw jeden znak spacji między przełączniki i argumenty, w tym samym wierszu. Na przykład polecenie **devenv/log output.txt** IDE otwiera i wyświetla wszystkie rejestrowania informacji w ramach danej sesji output.txt.  
+- Wstaw jeden znak spacji między przełączniki i argumenty, w tym samym wierszu. Na przykład polecenie **devenv/log output.txt** IDE otwiera i wyświetla wszystkie rejestrowania informacji w ramach danej sesji output.txt.  
   
--   Nie można użyć składni wieloznacznej `devenv` poleceń.  
+- Nie można użyć składni wieloznacznej `devenv` poleceń.  
   
 ## <a name="devenv-switches"></a>Przełączniki Devenv  
  Użyj następujących przełączników wiersza polecenia do wyświetlania IDE i wykonać zadania opisane.  

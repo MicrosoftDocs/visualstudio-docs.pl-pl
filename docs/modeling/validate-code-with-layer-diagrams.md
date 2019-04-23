@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6286c787b1f69c0e44541e156b06440c7267f79d
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 05e09dfc70ae5bc4adf85562f48c5cc8c4874bc6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870363"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055824"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Weryfikacja kodu przy użyciu diagramów zależności
 
@@ -79,17 +79,17 @@ Weryfikacja odbywa się w czasie rzeczywistym i błędy są wyświetlane od razu
 
 Możesz połączyć warstwy z witryn sieci Web, dokumentów pakietu Office, plikami ze zwykłym tekstem i plikami w projektach, które są współużytkowane przez wiele aplikacji, ale proces walidacji nie uwzględni je. Błędy walidacji nie będą widoczne w przypadku odwołań do projektów lub zestawów połączonych z oddzielnymi warstwami, jeżeli między tymi warstwami nie ma żadnych zależności. Odwołania te nie są uważane za zależności, chyba że w kodzie wykorzystano te odwołania.
 
-1.  Na diagramie zależności zaznacz jedną lub więcej warstw, kliknij prawym przyciskiem myszy zaznaczenie, a następnie kliknij **Wyświetl łącza**.
+1. Na diagramie zależności zaznacz jedną lub więcej warstw, kliknij prawym przyciskiem myszy zaznaczenie, a następnie kliknij **Wyświetl łącza**.
 
-2.  W **Eksplorator warstw**, Przyjrzyj się **obsługuje walidację** kolumny. Jeśli wartością jest false, element nie obsługuje walidacji.
+2. W **Eksplorator warstw**, Przyjrzyj się **obsługuje walidację** kolumny. Jeśli wartością jest false, element nie obsługuje walidacji.
 
 ## <a name="include-other-net-assemblies-and-projects-for-validation"></a>Uwzględnienia innych projektów i zestawów .NET w walidacji
 
 Podczas przeciągania elementów do diagramu zależności odwołania do projektów lub odpowiednich zestawów .NET są dodawane automatycznie do **odwołania do warstwy** folderu w projekcie modelowania. Folder ten zawiera odwołania do zestawów i projektów, które są analizowane podczas walidacji. Może zawierać innych zestawów platformy .NET i projekty do walidacji bez ręcznego przeciągania ich na diagram zależności.
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt modelowania lub **odwołania do warstwy** folder, a następnie kliknij **Dodaj odwołanie**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt modelowania lub **odwołania do warstwy** folder, a następnie kliknij **Dodaj odwołanie**.
 
-2.  W **Dodaj odwołanie** okno dialogowe, zaznacz zestawy lub projekty, a następnie kliknij przycisk **OK**.
+2. W **Dodaj odwołanie** okno dialogowe, zaznacz zestawy lub projekty, a następnie kliknij przycisk **OK**.
 
 ## <a name="validate-code-manually"></a>Ręczna walidacja kodu
 
@@ -97,19 +97,19 @@ Jeśli masz diagram Otwórz zależności, który jest połączony z elementami r
 
 ### <a name="validate-code-from-an-open-dependency-diagram"></a>Sprawdzanie poprawności kodu z diagramu Otwórz zależności
 
-1.  Kliknij prawym przyciskiem myszy powierzchnię diagramu, a następnie kliknij przycisk **sprawdzanie poprawności architektury**.
+1. Kliknij prawym przyciskiem myszy powierzchnię diagramu, a następnie kliknij przycisk **sprawdzanie poprawności architektury**.
 
     > [!NOTE]
     > Domyślnie **Build Action** właściwość zależności pliku diagramu (.layerdiagram) jest ustawiona na **weryfikacji** tak, aby diagram znajduje się w trakcie procesu walidacji.
 
      **Lista błędów** okna raporty o błędach. Aby uzyskać więcej informacji na temat błędów sprawdzania poprawności, zobacz [rozwiązać problemy ze sprawdzaniem poprawności warstwy](#troubleshoot-layer-validation-issues).
 
-2.  Aby wyświetlić źródło każdego błędu, klikaj dwukrotnie poszczególne błędy w **lista błędów** okna.
+2. Aby wyświetlić źródło każdego błędu, klikaj dwukrotnie poszczególne błędy w **lista błędów** okna.
 
     > [!NOTE]
     > Program Visual Studio może wyświetlać mapę kodu, zamiast źródła błędu. Dzieje się tak, gdy kod ma zależność od zestawu, który nie jest określona przez diagram zależności lub w kodzie brakuje zależności, która jest określona przez diagram zależności. Przejrzyj mapy kodu lub kod w celu określenia, czy powinna istnieć zależność. Aby uzyskać więcej informacji na temat map kodu, zobacz [mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).
 
-3.  Aby zarządzać błędami, zobacz [Rozwiązywanie błędów walidacji warstwy](#resolve-layer-validation-errors).
+3. Aby zarządzać błędami, zobacz [Rozwiązywanie błędów walidacji warstwy](#resolve-layer-validation-errors).
 
 ### <a name="validate-code-at-the-command-prompt"></a>Sprawdź poprawność kodu w wierszu polecenia
 
@@ -183,15 +183,15 @@ Użyj edytora tekstów, aby otworzyć plik projektu modelowania (.modelproj), a 
 
 \- lub —
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt modelowania, który zawiera diagram zależności lub diagramów, a następnie kliknij **właściwości**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt modelowania, który zawiera diagram zależności lub diagramów, a następnie kliknij **właściwości**.
 
-2.  W **właściwości** okna, Ustaw projekt modelowania **sprawdzanie poprawności architektury** właściwości **True**.
+2. W **właściwości** okna, Ustaw projekt modelowania **sprawdzanie poprawności architektury** właściwości **True**.
 
     Dotyczy to projektów modelowania w trakcie procesu walidacji.
 
-3.  W **Eksploratora rozwiązań**, kliknij plik diagramu (.layerdiagram) zależności, którego chcesz używać do sprawdzania poprawności.
+3. W **Eksploratora rozwiązań**, kliknij plik diagramu (.layerdiagram) zależności, którego chcesz używać do sprawdzania poprawności.
 
-4.  W **właściwości** okna, upewnij się, że diagram **Build Action** właściwość jest ustawiona na **weryfikacji**.
+4. W **właściwości** okna, upewnij się, że diagram **Build Action** właściwość jest ustawiona na **weryfikacji**.
 
     Obejmuje to diagram zależności w trakcie procesu walidacji.
 

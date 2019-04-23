@@ -13,12 +13,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 093054168a2314711476a5c4bc8a98ffdc6f732e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5f838974292a16a9aeaea11362848b06f5abe982
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780763"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048518"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Instrukcje: Profiluj kod JavaScript na stronach sieci Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,61 +27,61 @@ ms.locfileid: "54780763"
   
  **Wymagania**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
--   Internet Explorer 8 lub nowszy.  
+- Internet Explorer 8 lub nowszy.  
   
 > [!WARNING]
 >  Aby profilować kod JavaScript w aplikacjach Windows Store, zobacz jeden z następujących tematów:  
 > 
 > - [Synchronizacja funkcji JavaScript](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03) [synchronizacja funkcji JavaScript na urządzeniu zdalnym](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
->   -   [Analizowanie danych synchronizacja funkcji JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
->   -  
+>   - [Analizowanie danych synchronizacja funkcji JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
+>   - 
   
  Aby utworzyć sesję wydajności, można użyć Kreatora profilowania. Określ metody instrumentacji, a następnie określ JavaScript profilowania opcję na stronie Instrumentacji w oknie dialogowym właściwości sesji wydajności.  
   
  Po określeniu profilowanie plików JavaScript, kod JavaScript, który wykonuje w przeglądarce i [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] kod, który jest wykonywany na serwerze są profilowane.  
   
--   Aby uzyskać [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji sieci Web, zarówno kod JavaScript, który jest wykonywany w przeglądarce i [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] kod, który jest wykonywany na serwerze są profilowane.  
+- Aby uzyskać [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji sieci Web, zarówno kod JavaScript, który jest wykonywany w przeglądarce i [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] kod, który jest wykonywany na serwerze są profilowane.  
   
--   Dla dowolnej strony sieci Web kod JavaScript, który jest wykonywany w przeglądarce jest profilowana.  
+- Dla dowolnej strony sieci Web kod JavaScript, który jest wykonywany w przeglądarce jest profilowana.  
   
 ### <a name="to-profile-javascript-in-an-aspnet-web-application-project"></a>Aby profilować kod JavaScript w projekcie aplikacji sieci Web platformy ASP.NET  
   
-1.  W [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], otwórz [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] projektu sieci Web.  
+1. W [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], otwórz [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] projektu sieci Web.  
   
-2.  Na **analizy** menu, kliknij przycisk **Uruchom Kreatora wydajności**.  
+2. Na **analizy** menu, kliknij przycisk **Uruchom Kreatora wydajności**.  
   
-3.  Na pierwszej stronie kreatora wydajności, należy określić **Instrumentacji** metoda profilowania, a następnie kliknij przycisk **dalej**.  
+3. Na pierwszej stronie kreatora wydajności, należy określić **Instrumentacji** metoda profilowania, a następnie kliknij przycisk **dalej**.  
   
-4.  Na drugiej stronie kreatora, upewnij się, że bieżący projekt jest zaznaczony na liście elementów docelowych, a następnie kliknij przycisk **dalej.**  
+4. Na drugiej stronie kreatora, upewnij się, że bieżący projekt jest zaznaczony na liście elementów docelowych, a następnie kliknij przycisk **dalej.**  
   
-5.  Na trzeciej stronie kreatora wybierz **Profiluj kod JavaScript** pole wyboru, a następnie kliknij przycisk **dalej**.  
+5. Na trzeciej stronie kreatora wybierz **Profiluj kod JavaScript** pole wyboru, a następnie kliknij przycisk **dalej**.  
   
-6.  Na czwartej stronie kreatora kliknij **Zakończ** do uruchomienia aplikacji sieci Web w przeglądarce.  
+6. Na czwartej stronie kreatora kliknij **Zakończ** do uruchomienia aplikacji sieci Web w przeglądarce.  
   
-7.  Przetestuj funkcjonalność, która powinny być profilowane.  
+7. Przetestuj funkcjonalność, która powinny być profilowane.  
   
-8.  Aby zakończyć sesję profilowania, zamknij przeglądarkę.  
+8. Aby zakończyć sesję profilowania, zamknij przeglądarkę.  
   
 ### <a name="to-profile-javascript-in-individual-web-pages-or-a-javascript-applications"></a>Profilowanie kodu JavaScript w stronach sieci Web lub aplikacji JavaScript  
   
-1.  Otwórz [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)].  
+1. Otwórz [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)].  
   
-2.  Na **analizy** menu, kliknij przycisk **Uruchom Kreatora wydajności**.  
+2. Na **analizy** menu, kliknij przycisk **Uruchom Kreatora wydajności**.  
   
-3.  Na pierwszej stronie kreatora wydajności, należy określić **Instrumentacji** metoda profilowania, a następnie kliknij przycisk **dalej**.  
+3. Na pierwszej stronie kreatora wydajności, należy określić **Instrumentacji** metoda profilowania, a następnie kliknij przycisk **dalej**.  
   
-4.  Na drugiej stronie kreatora kliknij aplikację ASP.NET lub JavaScript, a następnie kliknij przycisk **dalej.**  
+4. Na drugiej stronie kreatora kliknij aplikację ASP.NET lub JavaScript, a następnie kliknij przycisk **dalej.**  
   
-5.  Na trzeciej stronie kreatora:  
+5. Na trzeciej stronie kreatora:  
   
-    1.  Wpisz adres URL strony w **jakim adresem URL lub ścieżką będzie działała aplikacja sieci** pole.  
+    1. Wpisz adres URL strony w **jakim adresem URL lub ścieżką będzie działała aplikacja sieci** pole.  
   
-    2.  Wybierz **Profiluj kod JavaScript** pole wyboru, a następnie kliknij przycisk **dalej**.  
+    2. Wybierz **Profiluj kod JavaScript** pole wyboru, a następnie kliknij przycisk **dalej**.  
   
-6.  Na czwartej stronie kreatora kliknij **Zakończ** można uruchomić strony sieci Web w przeglądarce.  
+6. Na czwartej stronie kreatora kliknij **Zakończ** można uruchomić strony sieci Web w przeglądarce.  
   
-7.  Przetestuj funkcjonalność, która powinny być profilowane.  
+7. Przetestuj funkcjonalność, która powinny być profilowane.  
   
-8.  Aby zakończyć sesję profilowania, zamknij przeglądarkę.
+8. Aby zakończyć sesję profilowania, zamknij przeglądarkę.

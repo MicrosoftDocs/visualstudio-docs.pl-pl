@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7817454cc2c5789975e064dec7a58d8e857a145
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fafeeb386e1dd40067620d529cb25023d3f0f29
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760751"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087944"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Instrukcje: Określanie alternatywnej lokalizacji aktualizacji wdrażania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,27 +33,27 @@ Można zainstalować usługi [!INCLUDE[ndptecclick](../includes/ndptecclick-md.m
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Określanie alternatywnej lokalizacji aktualizacji za pomocą MageUI.exe (narzędzie oparte na formularzach Windows)  
   
-1.  Otwórz wiersz polecenia w programie .NET Framework i wpisz:  
+1. Otwórz wiersz polecenia w programie .NET Framework i wpisz:  
   
      **mageui.exe**  
   
-2.  Na **pliku** menu, wybierz **Otwórz** na otwarcie manifestu wdrażania aplikacji.  
+2. Na **pliku** menu, wybierz **Otwórz** na otwarcie manifestu wdrażania aplikacji.  
   
-3.  Wybierz **opcje wdrażania** kartę.  
+3. Wybierz **opcje wdrażania** kartę.  
   
-4.  W polu tekstowym o nazwie **Uruchom lokalizacji**, wprowadź adres URL do katalogu, który będzie zawierać manifest wdrażania aktualizacji aplikacji.  
+4. W polu tekstowym o nazwie **Uruchom lokalizacji**, wprowadź adres URL do katalogu, który będzie zawierać manifest wdrażania aktualizacji aplikacji.  
   
-5.  Zapisywanie pliku manifestu wdrożenia.  
+5. Zapisywanie pliku manifestu wdrożenia.  
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageexe"></a>Określanie alternatywnej lokalizacji aktualizacji za pomocą Mage.exe  
   
-1.  Otwórz wiersz polecenia .NET Framework.  
+1. Otwórz wiersz polecenia .NET Framework.  
   
-2.  Ustaw lokalizację aktualizacji, używając następującego polecenia. W tym przykładzie **HelloWorld.exe.application** jest ścieżką do Twojego [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest aplikacji, która zawsze ma rozszerzenie .application, i **http://adatum.com/Update/Path** jest adres URL tego [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] będzie szukać aktualizacji aplikacji.  
+2. Ustaw lokalizację aktualizacji, używając następującego polecenia. W tym przykładzie **HelloWorld.exe.application** jest ścieżką do Twojego [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest aplikacji, która zawsze ma rozszerzenie .application, i **http://adatum.com/Update/Path** jest adres URL tego [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] będzie szukać aktualizacji aplikacji.  
   
      **Mage -Update HelloWorld.exe.application -ProviderUrl http://adatum.com/Update/Path**  
   
-3.  Zapisz plik.  
+3. Zapisz plik.  
   
     > [!NOTE]
     >  Teraz należy ponownie podpisać plik za pomocą Mage.exe. Aby uzyskać więcej informacji, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  

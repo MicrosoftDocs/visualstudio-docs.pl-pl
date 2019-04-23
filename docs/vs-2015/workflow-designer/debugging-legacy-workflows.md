@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7585d824ea6abf7df0aab5dc07c88abe9ff97081
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b98c520dc96b6f3c6467bbcaf8e48d9cff8791d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765974"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048739"
 ---
 # <a name="debugging-legacy-workflows"></a>Debugowanie starszych wersji przepływów pracy
 Jeśli używasz starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)] w [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] tworzenie [!INCLUDE[wf](../includes/wf-md.md)] aplikacji czy target.NET Framework 3.0 lub 3.5, można debugować z przepływami pracy, jak każdy inny program ustawiania punktów przerwania, dołączanie do procesów i wątków badanie i stos wywołań. Istnieje również możliwość debugowania zdalnego.  
@@ -27,7 +27,7 @@ Jeśli używasz starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)] w [!INC
 >  Jeśli zostały zainstalowane i odinstalować na komputerze wielu wersji programu Visual Studio, debugowanie WF3 może zakończyć się niepowodzeniem przy użyciu jednego z dwóch następujące możliwości:  
 > 
 > - Nie są osiągane punktów przerwania.  
->   -   Zostanie wyświetlony następujący komunikat:  
+>   - Zostanie wyświetlony następujący komunikat:  
 > 
 >   **Nie można rozpocząć debugowania na serwerze sieci web. Debuger nie jest poprawnie zainstalowany.  Nie można debugować żądanego typu kodu.  Uruchom Instalatora, aby zainstalować lub naprawić debuger.**  
 > 
@@ -70,4 +70,4 @@ Jeśli używasz starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)] w [!INC
   
  [Opcje debugowania wykonywania krokowego (starsza wersja)](../workflow-designer/debug-stepping-options-legacy.md)  
   
- [Instrukcje: Zmień debugowania opcję krokowego (starsza wersja)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)
+ [Instrukcje: Opcja zmiany debugowania krokowego (starsza wersja)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)

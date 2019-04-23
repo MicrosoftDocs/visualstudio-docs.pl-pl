@@ -12,25 +12,25 @@ ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c38f0a891c6ee57ad2d483e48e06624fa9bccdf1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 272946c80f5df2c96d4cf2bf20ea988c71766d46
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769880"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100576"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Ten interfejs zapewnia obsługę:  
   
--   Pobieranie długi ciąg skojarzony z właściwością.  
+- Pobieranie długi ciąg skojarzony z właściwością.  
   
--   Kojarzenie Unikatowy identyfikator z właściwością.  
+- Kojarzenie Unikatowy identyfikator z właściwością.  
   
--   Pobiera listę przeglądarek niestandardowych właściwości.  
+- Pobiera listę przeglądarek niestandardowych właściwości.  
   
--   Ustawienie wartości właściwości z możliwością zgłosić wszystkie wynikowe błędy  
+- Ustawienie wartości właściwości z możliwością zgłosić wszystkie wynikowe błędy  
   
 ## <a name="syntax"></a>Składnia  
   

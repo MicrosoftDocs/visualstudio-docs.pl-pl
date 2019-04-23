@@ -26,12 +26,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4cde65af7de5ff56c2420116c026c61793fcf983
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 87e0280534eaf97fefebe54712b0f0b12e14bdac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799313"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077280"
 ---
 # <a name="understanding-build-configurations"></a>Ogólne informacje o konfiguracjach kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,20 +69,20 @@ Można przechowywać różne konfiguracje rozwiązania i projektu właściwości
 ## <a name="how-visual-studio-assigns-project-configurations"></a>W jaki sposób platforma Azure przypisuje konfiguracje projektu  
  Podczas definiowania nowa konfiguracja rozwiązania i nie Kopiuj ustawień z istniejącego programu Visual Studio przypisuje domyślne konfiguracje projektu przy użyciu następujących kryteriów. Kryteria są obliczane w podanej kolejności.  
   
-1.  Jeśli projekt ma nazwę konfiguracji (*\<Nazwa konfiguracji > \<nazwa platformy >*) czy dokładnie pasuje nazwę Nowa konfiguracja rozwiązania tej konfiguracji jest przypisany. Nazwy konfiguracji nie jest rozróżniana wielkość liter.  
+1. Jeśli projekt ma nazwę konfiguracji (*\<Nazwa konfiguracji > \<nazwa platformy >*) czy dokładnie pasuje nazwę Nowa konfiguracja rozwiązania tej konfiguracji jest przypisany. Nazwy konfiguracji nie jest rozróżniana wielkość liter.  
   
-2.  Jeśli projekt zawiera nazwy konfiguracji, w której części nazwy konfiguracji odpowiada nowa konfiguracja rozwiązania, tej konfiguracji jest przypisany, czy część platformy jest zgodny, czy nie.  
+2. Jeśli projekt zawiera nazwy konfiguracji, w której części nazwy konfiguracji odpowiada nowa konfiguracja rozwiązania, tej konfiguracji jest przypisany, czy część platformy jest zgodny, czy nie.  
   
-3.  Jeśli nadal nie ma dopasowania, pierwsza konfiguracja, który znajduje się w projekcie zostanie przypisany.  
+3. Jeśli nadal nie ma dopasowania, pierwsza konfiguracja, który znajduje się w projekcie zostanie przypisany.  
   
 ## <a name="how-visual-studio-assigns-solution-configurations"></a>W jaki sposób platforma Azure przypisuje konfiguracje rozwiązania  
  Po utworzeniu konfiguracji projektu (w **programu Configuration Manager**, wybierając **New** z menu rozwijanego w **konfiguracji** kolumny dla tego projektu) i Wybierz **Utwórz nowe konfiguracje rozwiązania** pole wyboru, Visual Studio szuka Konfiguracja rozwiązania o nazwie podobne do skompilowania projektu na każdej z obsługiwanych platform. W niektórych przypadkach program Visual Studio zmienia nazwę istniejącego konfiguracje rozwiązania lub definiuje nowe.  
   
  Program Visual Studio przypisuje konfiguracje rozwiązania przy użyciu następujących kryteriów.  
   
--   Jeśli Konfiguracja projektu nie określa platformy lub określa tylko jedną platformę, następnie konfiguracji rozwiązania, którego nazwa jest zgodny z typem nowa konfiguracja projektu jest znalezione lub dodane. Domyślna nazwa tej konfiguracji rozwiązania nie ma nazwy platformy; ma postać  *\<Nazwa konfiguracji projektu >*.  
+- Jeśli Konfiguracja projektu nie określa platformy lub określa tylko jedną platformę, następnie konfiguracji rozwiązania, którego nazwa jest zgodny z typem nowa konfiguracja projektu jest znalezione lub dodane. Domyślna nazwa tej konfiguracji rozwiązania nie ma nazwy platformy; ma postać  *\<Nazwa konfiguracji projektu >*.  
   
--   Jeśli projekt obsługuje wiele platform, Konfiguracja rozwiązania jest znaleźć lub dodano dla każdej z obsługiwanych platform. Nazwa każdej konfiguracji rozwiązania obejmuje zarówno nazwę konfiguracji projektu i platformy, a ma postać  *\<Nazwa konfiguracji projektu > \<nazwa platformy >*.  
+- Jeśli projekt obsługuje wiele platform, Konfiguracja rozwiązania jest znaleźć lub dodano dla każdej z obsługiwanych platform. Nazwa każdej konfiguracji rozwiązania obejmuje zarówno nazwę konfiguracji projektu i platformy, a ma postać  *\<Nazwa konfiguracji projektu > \<nazwa platformy >*.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik: Tworzenie aplikacji](../ide/walkthrough-building-an-application.md)   

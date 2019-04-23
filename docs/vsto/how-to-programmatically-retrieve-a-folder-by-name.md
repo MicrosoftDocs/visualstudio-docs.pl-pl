@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c08f3d2f7ddcd3d9f1ad0eb0b937905d6449d00
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a494f954f3f670fb796b33a0dbd01e2512ad1d26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620892"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088629"
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Instrukcje: Programowe pobieranie folderu według nazwy
   W tym przykładzie pobiera odwołanie do folderu o nazwie niestandardowego, a następnie wyświetla zawartość tego folderu.
@@ -30,7 +30,7 @@ ms.locfileid: "56620892"
 ## <a name="compile-the-code"></a>Skompilować kod
  Ten przykład wymaga:
 
--   Folder o nazwie TestFolder.
+- Folder o nazwie TestFolder.
 
 ## <a name="see-also"></a>Zobacz także
 - [Praca z folderami](../vsto/working-with-folders.md)

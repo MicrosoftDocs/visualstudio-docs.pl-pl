@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat korzyści usługi Office 365, objęte niektóre subskrypcje programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: daace466f79f89f17568f25b7ecf5358e0bfc4c5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9f3df6923101bf5b8b4a2592460e96b57416c1c8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656053"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088109"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Usługi Office 365 Pro Plus w subskrypcji programu Visual Studio
 
@@ -52,7 +52,7 @@ Jeśli planowane jest tworzenie aplikacji dla pakietu Office, należy aktywować
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Dostępne       |  Tak          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Dostępne       |  Yes          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | Niedostępne       |  Brak          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Niedostępne                                                            |  Brak          |
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  Brak          |
@@ -68,6 +68,6 @@ Jeśli planowane jest tworzenie aplikacji dla pakietu Office, należy aktywować
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
--  Aby uzyskać pomoc techniczną za pomocą każdego składnika pakietu EMS, odwiedź https://support.microsoft.com/allproducts i wybrać produkt.
--  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące programu Visual Studio IDE, DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+- Aby uzyskać pomoc techniczną za pomocą każdego składnika pakietu EMS, odwiedź https://support.microsoft.com/allproducts i wybrać produkt.
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
+- Masz pytanie dotyczące programu Visual Studio IDE, DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

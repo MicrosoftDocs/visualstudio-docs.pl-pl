@@ -13,12 +13,12 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 monikerRange: vs-2017
-ms.openlocfilehash: 88de2703db119f4124eb02658efb327df2ae899f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 58de705d90567723f98bfb472f808da7101a624e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790475"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041251"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Język JavaScript w programie Visual Studio 2017
 
@@ -52,14 +52,14 @@ Aby skompilować pliki JavaScript `tsconfig.json` musi zostać dodany plik, a ni
 
 Wymagane ustawienia dla pliku tsconfig są następujące:
 
- - `allowJs`: Ta wartość musi być równa `true` dla plików JavaScript uznać. Wartość domyślna to `false`, ponieważ TypeScript kompiluje w kodzie JavaScript, a kompilator nie może zawierać tylko skompilowanych plików.
- - `outDir`: Ta wartość powinna być równa lokalizacji nie są uwzględnione w projekcie, że emitowany plików JavaScript nie są wykrywane oraz dołączone do projektu (zobacz `exclude`).
- - `module`: Jeśli przy użyciu modułów, to ustawienie informuje kompilator, który format modułu należy używać emitowany kod (na przykład `commonjs` dla węzła lub narzędzia tworzące pakiety, takich jak Browserify).
- - `exclude`: To ustawienie stanów folderów nie do uwzględnienia w projekcie.
- Lokalizacja danych wyjściowych, foldery poza projektem, takie jak `node_modules` lub `temp`, powinny zostać dodane do tego ustawienia.
- - `enableAutoDiscovery`: To ustawienie umożliwia automatyczne wykrywanie i pobierania plików definicji, co zostało opisane wcześniej.
- - `compileOnSave`: To ustawienie informuje kompilator, jeśli należy ponownie skompilować każdym razem, gdy plik źródłowy jest zapisany w programie Visual Studio.
- - `typeAcquisition`: Ten zbiór ustawień kontrolowania zachowania przejęcia automatyczne typu (dokładniejszego wyjaśnienia w [w tej sekcji](/visualstudio/ide/javascript-intellisense#Auto))
+- `allowJs`: Ta wartość musi być równa `true` dla plików JavaScript uznać. Wartość domyślna to `false`, ponieważ TypeScript kompiluje w kodzie JavaScript, a kompilator nie może zawierać tylko skompilowanych plików.
+- `outDir`: Ta wartość powinna być równa lokalizacji nie są uwzględnione w projekcie, że emitowany plików JavaScript nie są wykrywane oraz dołączone do projektu (zobacz `exclude`).
+- `module`: Jeśli przy użyciu modułów, to ustawienie informuje kompilator, który format modułu należy używać emitowany kod (na przykład `commonjs` dla węzła lub narzędzia tworzące pakiety, takich jak Browserify).
+- `exclude`: To ustawienie stanów folderów nie do uwzględnienia w projekcie.
+Lokalizacja danych wyjściowych, foldery poza projektem, takie jak `node_modules` lub `temp`, powinny zostać dodane do tego ustawienia.
+- `enableAutoDiscovery`: To ustawienie umożliwia automatyczne wykrywanie i pobierania plików definicji, co zostało opisane wcześniej.
+- `compileOnSave`: To ustawienie informuje kompilator, jeśli należy ponownie skompilować każdym razem, gdy plik źródłowy jest zapisany w programie Visual Studio.
+- `typeAcquisition`: Ten zbiór ustawień kontrolowania zachowania przejęcia automatyczne typu (dokładniejszego wyjaśnienia w [w tej sekcji](/visualstudio/ide/javascript-intellisense#Auto))
 
 Aby można było przekonwertować plików JavaScript z modułami CommonJS i umieść je w `./out` folderu, można użyć następującego `tsconfig.json` pliku:
 

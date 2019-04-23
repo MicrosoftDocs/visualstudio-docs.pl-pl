@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d6b203fcfbe5de92787ae5d2dcaba1b7d9b9454e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bab7f45824def7a4b5a385381a4789b7adc276d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870626"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048622"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Rozwiązywanie problemów z rozwiązaniami SharePoint
   Następujące problemy lub alerty, mogą wystąpić podczas debugowania rozwiązań programu SharePoint przy użyciu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugera. Aby uzyskać więcej informacji, zobacz [debugowanie rozwiązania przepływu pracy programu SharePoint 2007](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -115,9 +115,9 @@ ms.locfileid: "54870626"
 
 ##### <a name="to-reenter-the-workflow-wizard"></a>Aby ponownie wprowadzić kreatora przepływu pracy
 
-1.  W **Eksploratora rozwiązań**, wybierz węzeł przepływ pracy.
+1. W **Eksploratora rozwiązań**, wybierz węzeł przepływ pracy.
 
-2.  W **właściwości** okna, wybierz przycisk wielokropka (...) w dowolnej właściwości, która zawiera przycisk wielokropka.
+2. W **właściwości** okna, wybierz przycisk wielokropka (...) w dowolnej właściwości, która zawiera przycisk wielokropka.
 
 ## <a name="user-must-refresh-application-page-in-browser-while-debugging-to-view-updated-image"></a>Użytkownik musi odświeżać strony aplikacji w przeglądarce podczas debugowania, aby wyświetlić zaktualizowany obraz
  Jeśli debugujesz rozwiązania programu SharePoint, która zawiera strony aplikacji za pomocą kontrolki, który wyświetla obraz, taki jak [!INCLUDE[TLA2#tla_html](../sharepoint/includes/tla2sharptla-html-md.md)] kontrolki obrazu, należy odświeżyć stronę w przeglądarce, aby wyświetlić wszelkie zmiany, które zostały wprowadzone do obrazu.
@@ -127,13 +127,13 @@ ms.locfileid: "54870626"
 
 ### <a name="error-message"></a>Komunikat o błędzie
 
--   Lokalizacja witryny programu SharePoint jest nieprawidłowy.
+- Lokalizacja witryny programu SharePoint jest nieprawidłowy.
 
 ### <a name="resolution"></a>Rozwiązanie
 
--   Zainstaluj [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
+- Zainstaluj [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
 
--   Upewnij się, że masz uprawnienia dostępu administratora do witryny sieci Web programu SharePoint. Aby uzyskać więcej informacji, zobacz [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] artykule Online [Przypisywanie lub usuwanie administratorów aplikacji usług w programie SharePoint Server](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications).
+- Upewnij się, że masz uprawnienia dostępu administratora do witryny sieci Web programu SharePoint. Aby uzyskać więcej informacji, zobacz [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] artykule Online [Przypisywanie lub usuwanie administratorów aplikacji usług w programie SharePoint Server](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications).
 
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>Witryna usuwania sieci web zdarzenie nie występuje w projekcie odbiorcy zdarzeń
  Podczas tworzenia projektu odbiorcy zdarzeń, a następnie wybierz wystąpienia określonych zdarzeń w sieci Web, takich jak "lokacji jest usuwana", nigdy nie wystąpi zdarzenie.
@@ -156,46 +156,46 @@ ms.locfileid: "54870626"
 
 ##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>Aby zmienić zakres funkcji odbiorcy zdarzeń
 
-1.  W **Eksploratora rozwiązań**, otwórz odbiorcy zdarzeń *.feature* w pliku **projektanta funkcji** przez dwukrotne kliknięcie pliku albo otwierając jego menu skrótów i następnie Wybieranie **Otwórz**.
+1. W **Eksploratora rozwiązań**, otwórz odbiorcy zdarzeń *.feature* w pliku **projektanta funkcji** przez dwukrotne kliknięcie pliku albo otwierając jego menu skrótów i następnie Wybieranie **Otwórz**.
 
-2.  Wybierz strzałkę obok **zakres**, a następnie wybierz **witryny** na liście.
+2. Wybierz strzałkę obok **zakres**, a następnie wybierz **witryny** na liście.
 
 ## <a name="deployment-error-appears-after-the-name-of-an-identifier-in-a-business-data-connectivity-model-project-is-changed"></a>Błąd wdrażania pojawia się po zmianie nazwy identyfikatora w projekcie modelu łączności danych biznesowych
  Ten problem występuje, jeśli zmiana nazwy identyfikatora jednostki w modelu łączności danych biznesowych (BDC), a następnie spróbuj wdrożyć to rozwiązanie.
 
 ### <a name="error-messages"></a>Komunikaty o błędach
 
--   \<*Nazwa modelu*> ma następujące błędy aktywacji zewnętrznego typu zawartości...
+- \<*Nazwa modelu*> ma następujące błędy aktywacji zewnętrznego typu zawartości...
 
--   IMetadataObject o nazwie "\<*nazwę modelu*>" ma wartość pola "name" zduplikowanych...
+- IMetadataObject o nazwie "\<*nazwę modelu*>" ma wartość pola "name" zduplikowanych...
 
 ### <a name="resolution"></a>Rozwiązanie
  Aby rozwiązać ten problem, ręcznie usuń model, a następnie należy ponownie wdrożyć rozwiązanie.  Usuń z modelu, przy użyciu jednej z następujących narzędzi:
 
--   Administracja centralna programu SharePoint 2010. Aby uzyskać więcej informacji, zobacz [zarządzania modelu usługi łączności danych biznesowych](http://go.microsoft.com/fwlink/?LinkID=181472) witryny sieci Web TechNet firmy Microsoft.
+- Administracja centralna programu SharePoint 2010. Aby uzyskać więcej informacji, zobacz [zarządzania modelu usługi łączności danych biznesowych](http://go.microsoft.com/fwlink/?LinkID=181472) witryny sieci Web TechNet firmy Microsoft.
 
--   Windows PowerShell. Można usunąć modelu, wpisując polecenie w wierszu polecenia: **Remove-SPBusinessDataCatalogModel**. Aby uzyskać więcej informacji, zobacz [ogólne polecenia cmdlet (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) witryny sieci Web TechNet firmy Microsoft.
+- Windows PowerShell. Można usunąć modelu, wpisując polecenie w wierszu polecenia: **Remove-SPBusinessDataCatalogModel**. Aby uzyskać więcej informacji, zobacz [ogólne polecenia cmdlet (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) witryny sieci Web TechNet firmy Microsoft.
 
 ## <a name="an-error-appears-when-you-try-to-view-a-visual-web-part-in-sharepoint"></a>Błąd jest wyświetlany, gdy użytkownik próbuje wyświetlić wizualny składnik web part w programie SharePoint
  Ten problem występuje, gdy **ścieżki** właściwości kontrolki użytkownika nie zaczyna się od ciągu "CONTROLTEMPLATES\\".
 
 ### <a name="error-messages"></a>Komunikaty o błędach
 
--   Plik "/_CONTROLTEMPLATES/*\<Nazwa projektu >*/*\<nazwa składnika Web Part >*/*\<kontrolki użytkownika nazwa >*.ascx "nie istnieje.
+- Plik "/_CONTROLTEMPLATES/*\<Nazwa projektu >*/*\<nazwa składnika Web Part >*/*\<kontrolki użytkownika nazwa >*.ascx "nie istnieje.
 
--   Błąd serwera w aplikacji» /».
+- Błąd serwera w aplikacji» /».
 
 ### <a name="resolution"></a>Rozwiązanie
 
 ##### <a name="to-resolve-this-issue"></a>Aby rozwiązać ten problem
 
-1.  W **Eksploratora rozwiązań**, wybierz plik kontrolki użytkownika, którego rozszerzenie nazwy pliku jest *ascx*.
+1. W **Eksploratora rozwiązań**, wybierz plik kontrolki użytkownika, którego rozszerzenie nazwy pliku jest *ascx*.
 
-2.  Na pasku menu wybierz **widoku** > **okno właściwości**.
+2. Na pasku menu wybierz **widoku** > **okno właściwości**.
 
-3.  W **właściwości** okna, rozwiń węzeł **lokalizacji wdrożenia** węzła.
+3. W **właściwości** okna, rozwiń węzeł **lokalizacji wdrożenia** węzła.
 
-4.  Upewnij się, że wartość **ścieżki** właściwość zaczyna się od ciągu "CONTROLTEMPLATES\\".
+4. Upewnij się, że wartość **ścieżki** właściwość zaczyna się od ciągu "CONTROLTEMPLATES\\".
 
 ## <a name="error-appears-when-an-imported-reusable-workflow-that-contains-a-task-form-field-is-run"></a>Błąd pojawia się po uruchomieniu importowanych wielokrotny przepływ danych zawierającego pole formularza zadania
  Ten problem występuje, jeśli Importowanie przepływu pracy, który zawiera formularz zadania, który znajduje się pole, a następnie uruchomić nowy przepływ pracy w tym samym systemie, w którym można zaimportować.
@@ -230,26 +230,26 @@ ms.locfileid: "54870626"
 
 ##### <a name="to-access-the-iis-app-pool-settings"></a>Aby uzyskać dostęp do ustawień puli aplikacji usług IIS
 
-1.  Otwórz Menedżera usług IIS.
+1. Otwórz Menedżera usług IIS.
 
-2.  W **połączeń** okienku rozwiń węzeł serwera programu SharePoint, a następnie wybierz **pul aplikacji** węzła.
+2. W **połączeń** okienku rozwiń węzeł serwera programu SharePoint, a następnie wybierz **pul aplikacji** węzła.
 
-3.  Na **pul aplikacji** wybierz pulę aplikacji programu SharePoint (zazwyczaj "SharePoint - 80"), a następnie w **akcje** okienku wybierz **Zaawansowane ustawienia** łącze.
+3. Na **pul aplikacji** wybierz pulę aplikacji programu SharePoint (zazwyczaj "SharePoint - 80"), a następnie w **akcje** okienku wybierz **Zaawansowane ustawienia** łącze.
 
-4.  Aby zwiększyć czas oczekiwania przed upływem limitu czasu usług IIS, należy zmienić wartość **maksymalny czas odpowiedzi polecenia Ping (sekundy)** wartość, która jest większa niż 90 sekund.
+4. Aby zwiększyć czas oczekiwania przed upływem limitu czasu usług IIS, należy zmienić wartość **maksymalny czas odpowiedzi polecenia Ping (sekundy)** wartość, która jest większa niż 90 sekund.
 
-5.  Aby wyłączyć odpowiada na polecenie ping usług IIS, należy ustawić **pingowanie włączone** do **False**.
+5. Aby wyłączyć odpowiada na polecenie ping usług IIS, należy ustawić **pingowanie włączone** do **False**.
 
 ## <a name="auto-retract-leaves-orphaned-list-instance-in-sharepoint"></a>Automatycznie Wycofaj pozostawia wystąpienie listy oddzielone w programie SharePoint
  Ten problem występuje, gdy należy wykonać następujące czynności.
 
-1.  Tworzenie definicji listy, który powoduje wystąpienie listy [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Tworzenie definicji listy, który powoduje wystąpienie listy [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  Wybierz **F5** klawisz, aby uruchomić rozwiązanie.
+2. Wybierz **F5** klawisz, aby uruchomić rozwiązanie.
 
-3.  Zatrzymaj debugowanie lub zamknąć witrynę programu SharePoint.
+3. Zatrzymaj debugowanie lub zamknąć witrynę programu SharePoint.
 
-4.  Otwórz witrynę programu SharePoint, a następnie otwórz wystąpienie listy.
+4. Otwórz witrynę programu SharePoint, a następnie otwórz wystąpienie listy.
 
 ### <a name="error-message"></a>Komunikat o błędzie
  Błąd serwera w aplikacji» /».

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21851bc26ec69207c95a41e988b20b5df3c70c39
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: d09ad8644c30be76c38cf4b819d09ee1c470cb39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567263"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048182"
 ---
 # <a name="create-applications-in-bidirectional-languages"></a>Tworzenie aplikacji w językach dwukierunkowych
 
@@ -28,11 +28,11 @@ Visual Studio umożliwia tworzenie aplikacji, które poprawnie wyświetlania tek
 
 ## <a name="types-of-applications-that-support-bidirectional-languages"></a>Typy aplikacji, które obsługują języki dwukierunkowe
 
--  Aplikacje Windows
+- Aplikacje Windows
 
    Możesz utworzyć w pełni aplikacjach, które obejmują obsługę tekstu dwukierunkowego, od prawej do lewej kolejność czytania i dublowanie (cofania układu systemu windows, menu, okna dialogowe i tak dalej). Z wyjątkiem funkcji dublowania, te funkcje są dostępne, domyślnie lub zgodnie z ustawieniami właściwości. Dublowanie obsługę natury niektóre funkcje, takie jak okna komunikatów. Jednak w innych przypadkach należy zaimplementować dublowania w kodzie. Aby uzyskać więcej informacji, zobacz [Dwukierunkowa obsługa aplikacji Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
 
--  Aplikacje internetowe
+- Aplikacje internetowe
 
    Obsługa usług sieci Web, wysyłanie i odbieranie UTF-8 i tekst w formacie Unicode, czemu są odpowiednie dla aplikacji, które obejmują języki dwukierunkowe. Zależą od przeglądarki dla interfejsu użytkownika aplikacji klienta sieci Web, więc stopień dwukierunkowe obsługuje w aplikacji sieci web jest zależny od stopnia przeglądarki użytkownika obsługuje te funkcje dwukierunkowy. W programie Visual Studio możesz tworzyć aplikacje z obsługą tekst arabski lub hebrajski, kolejność czytania od prawej do lewej, kodowanie pliku i ustawienia lokalnych kultury. Aby uzyskać więcej informacji, zobacz [Dwukierunkowa obsługa aplikacji sieci web platformy ASP.NET](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
 

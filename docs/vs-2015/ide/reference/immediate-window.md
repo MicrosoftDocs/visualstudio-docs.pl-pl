@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 574b480cbdce0f038ba4d94be6dc2ba9cf46726c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 7a39b6f84185c78ccea11e09e628050a6bf4f601
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660297"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053404"
 ---
 # <a name="immediate-window"></a>Okno bezpośrednie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -118,9 +118,9 @@ ms.locfileid: "59660297"
   
 #### <a name="to-toggle-first-chance-exception-notifications-in-the-immediate-window"></a>Aby przełączyć powiadomienia wyjątku pierwszej szansy w oknie bezpośrednim  
   
-1.  Na **widoku** menu, kliknij przycisk **Windows inne**i kliknij przycisk **dane wyjściowe**.  
+1. Na **widoku** menu, kliknij przycisk **Windows inne**i kliknij przycisk **dane wyjściowe**.  
   
-2.  Kliknij prawym przyciskiem myszy obszar tekstu **dane wyjściowe** okna i zaznacz lub odznacz opcję **komunikaty o wyjątkach**.  
+2. Kliknij prawym przyciskiem myszy obszar tekstu **dane wyjściowe** okna i zaznacz lub odznacz opcję **komunikaty o wyjątkach**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Nawigowanie po kodzie za pomocą debugera za](../../debugger/navigating-through-code-with-the-debugger.md)   

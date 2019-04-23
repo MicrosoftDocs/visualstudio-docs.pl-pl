@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 732fa9a5d32916545b281a006cbeeaa93771f3ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f525f4b31a3535f6ea7b89d0443402240365cc7d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754339"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088655"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Instrukcje: Eksportowanie tekstury zawierającej mipmapy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ Potok zawartości obrazu może generować mipmapy z obrazu źródłowego w ramac
   
  Ten dokument przedstawia te działania:  
   
--   Konfigurowanie obrazu źródłowego, który ma być przetwarzana przez potok zawartości obrazu.  
+- Konfigurowanie obrazu źródłowego, który ma być przetwarzana przez potok zawartości obrazu.  
   
--   Konfigurowanie potoku zawartości obrazu, aby nie generować mipmap.  
+- Konfigurowanie potoku zawartości obrazu, aby nie generować mipmap.  
   
 ## <a name="exporting-mipmaps"></a>Eksportowanie Mipmap  
  Mipmapping zapewnia automatyczne ekranowego poziom szczegółów wypełniający dla teksturowanych powierzchni w grze lub aplikacji 3D. Zwiększa wydajność renderowania gry lub aplikacji poprzez wstępnie obliczenie wersji tekstury, aby cała Tekstura nie musi być próbkowana w dół każdorazowo, gdy jest próbkowana.  

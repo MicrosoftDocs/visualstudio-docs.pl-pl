@@ -8,12 +8,12 @@ ms.assetid: a03c2e83-a41f-4854-bcf2-fcaa277a819d
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1fe4adb6e70027cae239cf9fafe605aa03431ff3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 97f238b51e3f4ad3bbb32bdbdc134089c0cb7e99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766628"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099107"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,10 +51,10 @@ Microsoft Fakes pomaga w izolowaniu kodu testowanego przez zastąpienie innych c
   
  Zasadniczo zaleca się używanie typów wycinków w celu odseparowania od zależności w ramach własnej bazy kodów. Można to zrobić, ukrywając składniki za interfejsami. Typy podkładek można wykorzystywać do izolowania od składników innych firm, które nie mają sprawdzalnego API.  
   
-##  <a name="stubs"></a> Wprowadzenie do wycinków  
+## <a name="stubs"></a> Wprowadzenie do wycinków  
  Aby uzyskać bardziej szczegółowy opis, zobacz [stosowanie wycinków kodu do izolowania poszczególnych części aplikacji od siebie nawzajem testów jednostkowych](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
   
-1.  **Interfejsy wsunięć**  
+1. **Interfejsy wsunięć**  
   
      Aby użyć wycinków, musisz napisać kod, który chcesz przetestować w taki sposób, aby nie wymieniał wprost klas w innych składnikach Twojej aplikacji. Przez „składnik” rozumie się klasę lub grupę klas, które są opracowane i aktualizowane łącznie i zwykle są zawarte w jednym projekcie Visual Studio. Zmienne i parametry powinny być zdeklarowane przy użyciu interfejsów, a wystąpienia innych składników powinny zostać przekazane lub utworzone za pomocą fabryki. Jeśli na przykład StockFeed jest klasą w innym składniku aplikacji, zostałoby to uznane za nieprawidłowe:  
   
@@ -75,15 +75,15 @@ Microsoft Fakes pomaga w izolowaniu kodu testowanego przez zastąpienie innych c
   
     ```  
   
-2.  **Dodawanie podrobionych zestawów**  
+2. **Dodawanie podrobionych zestawów**  
   
-    1.  W oknie Eksploratora rozwiązań rozwiń listę odwołań projektu testowego. Jeśli pracujesz w języku Visual Basic, należy wybrać **Pokaż wszystkie pliki** aby zobaczyć listę odwołań.  
+    1. W oknie Eksploratora rozwiązań rozwiń listę odwołań projektu testowego. Jeśli pracujesz w języku Visual Basic, należy wybrać **Pokaż wszystkie pliki** aby zobaczyć listę odwołań.  
   
-    2.  Wybierz odwołanie do zestawu, w którym zdefiniowano interfejs (na przykład IStockFeed). W menu skrótów tego odwołania wybierz **Dodaj zestawy Substytuowane**.  
+    2. Wybierz odwołanie do zestawu, w którym zdefiniowano interfejs (na przykład IStockFeed). W menu skrótów tego odwołania wybierz **Dodaj zestawy Substytuowane**.  
   
-    3.  Ponownie skompiluj rozwiązanie.  
+    3. Ponownie skompiluj rozwiązanie.  
   
-3.  W testach należy skonstruować wystąpienia wycinka i podać kod dla jego metody:  
+3. W testach należy skonstruować wystąpienia wycinka i podać kod dla jego metody:  
   
     ```csharp  
     [TestClass]  
@@ -145,7 +145,7 @@ Microsoft Fakes pomaga w izolowaniu kodu testowanego przez zastąpienie innych c
   
      Wycinki kodu są generowane także dla metod pobierających i ustawiających właściwości, dla zdarzeń i metod ogólnych. Aby uzyskać więcej informacji, zobacz [stosowanie wycinków kodu do izolowania poszczególnych części aplikacji od siebie nawzajem testów jednostkowych](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
   
-##  <a name="shims"></a> Wprowadzenie do podkładek  
+## <a name="shims"></a> Wprowadzenie do podkładek  
  (Aby uzyskać bardziej szczegółowy opis, zobacz [stosowanie podkładek do izolowania aplikacji od innych zestawów w celu przeprowadzania testów jednostkowych](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).)  
   
  Załóżmy, że składnik zawiera wywołania `DateTime.Now`:  

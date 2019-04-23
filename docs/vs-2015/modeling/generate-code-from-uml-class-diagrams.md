@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2613dbd0c803352c758ac1baf1b1f5d4469b9c73
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 020dd35d225d8629a8061d1a74b234b62960c830
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663995"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056162"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generowanie kodu na podstawie diagramów klas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ Aby wygenerować kod Visual C# .NET z diagramów klas UML w programie Visual Stu
 
 2. Na diagramie klasy lub w **Eksploratora modelu UML**, wybierz elementy, z których chcesz wygenerować kod. Można wybrać jedną z następujących pozycji:  
 
-   -   Określony zbiór elementów.  
+   - Określony zbiór elementów.  
 
-   -   Pakiet lub model, aby wygenerować kod z jego zawartości.  
+   - Pakiet lub model, aby wygenerować kod z jego zawartości.  
 
-   -   Diagram, aby zaznaczyć wszystkie elementy na diagramie.  
+   - Diagram, aby zaznaczyć wszystkie elementy na diagramie.  
 
 3. Otwórz menu skrótów dla wybranego elementu, a następnie wybierz **Generuj kod**.  
 
@@ -71,7 +71,7 @@ Aby wygenerować kod Visual C# .NET z diagramów klas UML w programie Visual Stu
 
    Pewne testy sprawdzania poprawności są stosowane do modelu w celu zapewnienia, że może on być przetłumaczony na C#. Jeśli testy te nie powiodą się, wyświetlany jest komunikat o błędzie i generowanie kodu nie jest wykonywane. Jeśli utworzono polecenie walidacji menu, kod nie będzie generowany dla każdego elementu, dla którego polecenie walidacji nie powiedzie się. Aby uzyskać więcej informacji, zobacz [definiowanie ograniczeń walidacji dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md).  
 
-##  <a name="default"></a> Domyślne przekształcenia generacji kodu  
+## <a name="default"></a> Domyślne przekształcenia generacji kodu  
  Ta sekcja zawiera podsumowanie wyników, które są produkowane przez **Generuj kod** polecenia, chyba że Dostosowywanie polecenia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie polecenia Generuj kod](#custom).  
 
 - Dla każdego typu wybranego w modelu UML tworzony jest jeden typ C#. Każdy typ jest umieszczany w osobnym pliku kodu w obszarze **GeneratedCode** folderu.  
@@ -126,7 +126,7 @@ Aby wygenerować kod Visual C# .NET z diagramów klas UML w programie Visual Stu
 
   Każdy atrybut i operacja również ma właściwości stereotypu, które można ustawiać. Jeśli nie ma właściwości na nowym atrybucie, uruchom **Generuj kod**.  
 
-##  <a name="custom"></a> Dostosowywanie polecenia Generuj kod  
+## <a name="custom"></a> Dostosowywanie polecenia Generuj kod  
  **Generuj kod** polecenie działa poprzez przekształcenie elementów modelu przy użyciu zestawu szablonów tekstu. Aby uzyskać więcej informacji na temat szablonów tekstowych, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md).  
 
  Szablony są określone w zestawie *powiązania szablonów tekstu*. Powiązanie szablonu tekstu określa, jaki szablon powinien być stosowany, gdzie ma zostać umieszczony wygenerowanych danych wyjściowych, a inne parametry **Generuj kod** polecenia.  
@@ -175,7 +175,7 @@ Aby wygenerować kod Visual C# .NET z diagramów klas UML w programie Visual Stu
 
 5. Można dołączyć dowolną liczbę powiązań do elementu.  
 
-##  <a name="writing"></a> Pisanie szablonu tekstowego  
+## <a name="writing"></a> Pisanie szablonu tekstowego  
  Można napisać własne szablony tekstu. Szablony tekstu mogą generować kod programu lub dowolnego innego rodzaju plik tekstowy.  
 
  Firma Microsoft zaleca rozpoczynanie pracy od modyfikowania kopii szablonów standardowych. Szablony można skopiować z następujących lokalizacji:  

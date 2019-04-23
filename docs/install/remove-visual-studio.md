@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 779771c51299239814f7ddd6a9cdbfbed017ac72
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e363065d96169660817a548fb97d39f09cf679c9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790124"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088226"
 ---
 # <a name="remove-visual-studio"></a>Usuwanie programu Visual Studio
 
@@ -45,6 +45,7 @@ W poniższych instrukcjach można uruchomić narzędzie z różnych przełączni
    * Typ **cmd** w polu "Wpisz tutaj, aby wyszukać".
    * Kliknij prawym przyciskiem myszy pozycję **Wiersz polecenia**, a następnie kliknij polecenie **Uruchom jako administrator**.
 3. Wpisz pełną ścieżkę `InstallCleanup.exe` narzędzia i niezależnie od przełącznika wiersza polecenia, które chcesz przekazać. Domyślnie ścieżkę narzędzia jest następująca:
+
    ```
    C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe
    ```

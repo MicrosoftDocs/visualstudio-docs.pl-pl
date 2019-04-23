@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 408b13892d24689fb163aea0105a47028defad59
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: efadc6917f565f5449a76b6a8b91b309356a00bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622075"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051322"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Widok rywalizacji o zasoby — dane rywalizacji
 Widok rywalizacji o zasoby zawiera dane kontencji zasobów, które były źródłem zdarzeń rywalizacji o zasoby. Zdarzenia rywalizacji występuje, gdy funkcja w wątku musieli czekać na dostęp do zasobu, ponieważ funkcja w innym wątku uzyskał wyłączny dostęp do zasobu. Każdy zasób jest węzeł główny drzewa wywołań, który wyświetla ścieżki wykonywania funkcji, które spowodowały zdarzenia rywalizacji.
@@ -30,9 +30,9 @@ Widok rywalizacji o zasoby zawiera dane kontencji zasobów, które były źród�
 ### <a name="function-values"></a>Wartości funkcji
  Wartości funkcji są oparte na wystąpieniach funkcji, które wystąpiły w ścieżce wykonywania reprezentowany w drzewie wywołań.
 
--   Wyłączne wartości są oparte na zdarzeniach, które wystąpiły podczas wykonywania instrukcji funkcji w jego treści funkcji. Zdarzenia, które wystąpiły w funkcjach, które zostały wywołane przez funkcję nie są uwzględnione w wartości wyłączności.
+- Wyłączne wartości są oparte na zdarzeniach, które wystąpiły podczas wykonywania instrukcji funkcji w jego treści funkcji. Zdarzenia, które wystąpiły w funkcjach, które zostały wywołane przez funkcję nie są uwzględnione w wartości wyłączności.
 
--   Wartości włączne opierają się na zdarzenia, które wystąpiły podczas wykonywania funkcji i funkcji wywoływanych przez funkcję.
+- Wartości włączne opierają się na zdarzenia, które wystąpiły podczas wykonywania funkcji i funkcji wywoływanych przez funkcję.
 
 ### <a name="percentage-values"></a>Wartości procentowe
  Wartości procentowe są oparte na całkowita liczba zdarzeń w czasie lub rywalizacji o zasoby w danych profilowania. Jeśli zastosowano filtr raportu lub widoku uruchomienia profilowania, tylko czas blokowania i rywalizacji w odfiltrowane dane są używane jako wartość całkowita.

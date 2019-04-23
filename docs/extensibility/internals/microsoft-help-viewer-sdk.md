@@ -8,26 +8,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bee805581f23e4654a8fce318a39b4ff3da4184
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0b0e50c54aa702fb05732a37b3b363b378fe9c3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660719"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087836"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Zestaw SDK Podglądu Pomocy firmy Microsoft
 
 Ten artykuł zawiera następujące zadania integratorzy Visual Studio podglądu pomocy:
 
--   Tworzenie tematu (Obsługa F1)
+- Tworzenie tematu (Obsługa F1)
 
--   Tworzenie pakietu zawartości, znakowania podglądu pomocy
+- Tworzenie pakietu zawartości, znakowania podglądu pomocy
 
--   Wdrażanie zestawu artykułów
+- Wdrażanie zestawu artykułów
 
--   Dodawanie Pomocy Visual Studio shell (integrated lub isolated)
+- Dodawanie Pomocy Visual Studio shell (integrated lub isolated)
 
--   Dodatkowe zasoby
+- Dodatkowe zasoby
 
 ## <a name="create-a-topic-f1-support"></a>Tworzenie tematu (Obsługa F1)
 
@@ -43,37 +43,37 @@ Mógł być renderowany prawidłowo w Podglądzie pomocy pierwotne tematu zawart
 
 Temat zwykle zawiera dwie sekcje:
 
--   Metadane (zobacz odwołanie do metadanych zawartości): dane dotyczące tematu, na przykład, unikatowego Identyfikatora tematu, wartość — słowo kluczowe, identyfikator spisu treści, tematu nadrzędny identyfikator węzła, itp.
+- Metadane (zobacz odwołanie do metadanych zawartości): dane dotyczące tematu, na przykład, unikatowego Identyfikatora tematu, wartość — słowo kluczowe, identyfikator spisu treści, tematu nadrzędny identyfikator węzła, itp.
 
--   Zawartość treści: zgodne z podstawowych XHTML 1.1 W3C, która obejmuje obsługiwane zachowania zawartości (zwijany obszaru, fragment kodu itp. Pełną listę znajdują się poniżej).
+- Zawartość treści: zgodne z podstawowych XHTML 1.1 W3C, która obejmuje obsługiwane zachowania zawartości (zwijany obszaru, fragment kodu itp. Pełną listę znajdują się poniżej).
 
 Znakowanie pakiet rozszerzeń Visual Studio obsługiwane kontrolki:
 
--   Łącza
+- Łącza
 
--   CodeSnippet
+- CodeSnippet
 
--   CollapsibleArea
+- CollapsibleArea
 
--   Dziedziczonego elementu członkowskiego
+- Dziedziczonego elementu członkowskiego
 
--   LanguageSpecificText
+- LanguageSpecificText
 
 Obsługiwanych ciągów języka (bez uwzględniania wielkości liter):
 
--   javascript
+- javascript
 
--   CSharp lub c#
+- CSharp lub c#
 
--   cplusplus or visualc++ or c++
+- cplusplus or visualc++ or c++
 
--   Język JScript
+- Język JScript
 
--   języka Visual Basic lub VB.
+- języka Visual Basic lub VB.
 
--   f # lub języka fsharp lub fs
+- f # lub języka fsharp lub fs
 
--   inne — ciąg reprezentujący nazwę języka
+- inne — ciąg reprezentujący nazwę języka
 
 **Tworzenie tematu w Podglądzie pomocy**
 
@@ -94,15 +94,15 @@ Tworzenie nowego dokumentu XHTML o nazwie ContosoTopic4.htm i dołączyć tytuł
 
 Następnie dodaj dane, aby zdefiniować sposób jak temat jest przedstawiane (własne ani nie), aby odwołać się w tym temacie F1, w której istnieje w tym temacie w spisie treści, jego identyfikator (w przypadku odwołania do linku przez inne tematy), itp. Zobacz tabelę "Metadane zawartości" poniżej, aby uzyskać pełną listę obsługiwanych metadanych.
 
--   W tym przypadku użyjemy naszego znakowania pakietu wariant oznaczonego pakietu Visual Studio podglądu pomocy.
+- W tym przypadku użyjemy naszego znakowania pakietu wariant oznaczonego pakietu Visual Studio podglądu pomocy.
 
--   Dodaj F1 meta nazwę i wartość ("Microsoft.Help.F1" zawartość = "ContosoTopic4"), będą zgodne podana wartość F1 w zbiorze właściwości środowiska IDE. (Zobacz sekcji pomocy F1, aby uzyskać więcej informacji). Jest to wartość, która pasuje do F1 wywoływać z poziomu środowiska IDE, aby wyświetlić ten temat, po wybraniu F1 w środowisku IDE.
+- Dodaj F1 meta nazwę i wartość ("Microsoft.Help.F1" zawartość = "ContosoTopic4"), będą zgodne podana wartość F1 w zbiorze właściwości środowiska IDE. (Zobacz sekcji pomocy F1, aby uzyskać więcej informacji). Jest to wartość, która pasuje do F1 wywoływać z poziomu środowiska IDE, aby wyświetlić ten temat, po wybraniu F1 w środowisku IDE.
 
--   Dodaj identyfikator tematu. Jest to ciąg, który jest używany przez innych tematów, aby utworzyć łącze do tego tematu. Jest to identyfikator podglądu pomocy, w tym temacie.
+- Dodaj identyfikator tematu. Jest to ciąg, który jest używany przez innych tematów, aby utworzyć łącze do tego tematu. Jest to identyfikator podglądu pomocy, w tym temacie.
 
--   W przypadku spisu treści należy dodać węzła nadrzędnego w tym temacie do definiowania, gdzie pojawią się tego węzła spisu treści tematu.
+- W przypadku spisu treści należy dodać węzła nadrzędnego w tym temacie do definiowania, gdzie pojawią się tego węzła spisu treści tematu.
 
--   Spis treści można dodać w kolejności węzła w tym temacie. Gdy węzeł nadrzędny ma `n` liczba elementów podrzędnych węzłów, zdefiniuj zgodnie z kolejnością węzłów podrzędnych lokalizację w tym temacie. Na przykład w tym temacie jest numer 4 4 tematy podrzędne.
+- Spis treści można dodać w kolejności węzła w tym temacie. Gdy węzeł nadrzędny ma `n` liczba elementów podrzędnych węzłów, zdefiniuj zgodnie z kolejnością węzłów podrzędnych lokalizację w tym temacie. Na przykład w tym temacie jest numer 4 4 tematy podrzędne.
 
 Przykład sekcji metadanych:
 
@@ -131,17 +131,17 @@ Przykład sekcji metadanych:
 
 Treść (nie w tym nagłówku i stopce) tematu będzie zawierać łączy strony, sekcji Uwaga, zwijany obszaru, fragment kodu i fragment tekstu specyficzny dla języka.  Zobacz sekcję znakowania, aby uzyskać informacje dotyczące tych obszarów prezentowane tematu.
 
-1.  Dodaj znacznik tytułu tematu:  `<div class="title">Contoso Topic 4</div>`
+1. Dodaj znacznik tytułu tematu:  `<div class="title">Contoso Topic 4</div>`
 
-2.  Dodaj sekcję Uwaga: `<div class="alert"> add your table tag and text </div>`
+2. Dodaj sekcję Uwaga: `<div class="alert"> add your table tag and text </div>`
 
-3.  Dodawanie obszaru zwijana:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. Dodawanie obszaru zwijana:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4.  Dodaj fragment kodu:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. Dodaj fragment kodu:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  Dodaj tekst specyficzny dla języka kodu:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Należy pamiętać, że `devLangnu=` umożliwia wprowadzenie innych języków. Na przykład `devLangnu="Fortran"` Wyświetla Fortran po fragmencie kodu DisplayLanguage = Fortran
+5. Dodaj tekst specyficzny dla języka kodu:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Należy pamiętać, że `devLangnu=` umożliwia wprowadzenie innych języków. Na przykład `devLangnu="Fortran"` Wyświetla Fortran po fragmencie kodu DisplayLanguage = Fortran
 
-6.  Dodawanie łączy strony: `<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
+6. Dodawanie łączy strony: `<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 > Uwaga: dla nieobsługiwanych nowe "Język" (przykład F#, Cobol, Pascal) kolorowania kodu we fragmencie kodu jest monochromatyczny.
@@ -280,27 +280,27 @@ F1 Diagram przepływu:
 
 Gdy Podgląd pomocy domyślne źródło zawartości pomocy jest równa online (uruchamianie w przeglądarce):
 
--   Funkcje programu Visual Studio Partner (VSP) Dodaj wartość do zbioru właściwości F1 (prefix.keyword zbiór właściwości oraz online adres URL dla prefiksu znaleziony w rejestrze): F1 wysyła adres URL pliku VSP + parametrów w przeglądarce.
+- Funkcje programu Visual Studio Partner (VSP) Dodaj wartość do zbioru właściwości F1 (prefix.keyword zbiór właściwości oraz online adres URL dla prefiksu znaleziony w rejestrze): F1 wysyła adres URL pliku VSP + parametrów w przeglądarce.
 
--   Funkcje programu Visual Studio (Edytor języka, elementy określonego menu programu Visual Studio, itp.):  F1 wysyła Visual Studio adresu URL w przeglądarce.
+- Funkcje programu Visual Studio (Edytor języka, elementy określonego menu programu Visual Studio, itp.):  F1 wysyła Visual Studio adresu URL w przeglądarce.
 
 Gdy Podgląd pomocy domyślne źródło zawartości pomocy jest równa pomocy lokalnej (Uruchom w Podglądzie pomocy):
 
--   VSP funkcji, jeśli słowo kluczowe są takie same między F1 zbiór właściwości, a indeksu magazynu lokalnego (czyli prefix.keyword zbioru właściwości = wartość znajdującą się w indeksie magazynu lokalnego):  F1 powoduje wyświetlenie tematu w Podglądzie pomocy.
+- VSP funkcji, jeśli słowo kluczowe są takie same między F1 zbiór właściwości, a indeksu magazynu lokalnego (czyli prefix.keyword zbioru właściwości = wartość znajdującą się w indeksie magazynu lokalnego):  F1 powoduje wyświetlenie tematu w Podglądzie pomocy.
 
--   Funkcje programu Visual Studio (bez opcji VSP zastąpić zbioru właściwości emitowane przez funkcje programu Visual Studio): F1 powoduje wyświetlenie tematu w Podglądzie Pomocy programu Visual Studio.
+- Funkcje programu Visual Studio (bez opcji VSP zastąpić zbioru właściwości emitowane przez funkcje programu Visual Studio): F1 powoduje wyświetlenie tematu w Podglądzie Pomocy programu Visual Studio.
 
 Ustaw następujące wartości rejestru, aby włączyć F1 rezerwowych dla zawartości pomocy dostawcy. Rezerwowe F1 oznacza, że w Podglądzie pomocy jest równa szukać pomocy F1 zawartości online i zawartości dostawcy jest instalowana lokalnie na dysku twardym użytkowników. Podgląd pomocy powinna wyglądać przy pomocy lokalnej na zawartość, nawet jeśli ustawienie domyślne to pomocy online.
 
 1. Ustaw **VendorContent** wartości w kluczu rejestru 2.3 pomocy:
 
-   -   Dla 32-bitowych systemach operacyjnych:
+   - Dla 32-bitowych systemach operacyjnych:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
         "VendorContent" = dword: 00000001
 
-   -   Dla 64-bitowych systemach operacyjnych:
+   - Dla 64-bitowych systemach operacyjnych:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
@@ -328,9 +328,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudi
 
 Gdy F1 — słowo kluczowe w formacie, który występuje nagłówek/metody, znak "/", zostanie przetworzona, wynikiem konstrukcji następujące:
 
--   Nagłówek: będzie przestrzeni nazw, który może służyć do zarejestrowania w rejestrze
+- Nagłówek: będzie przestrzeni nazw, który może służyć do zarejestrowania w rejestrze
 
--   Metoda: będzie to słowo kluczowe, które zostanie przekazane.
+- Metoda: będzie to słowo kluczowe, które zostanie przekazane.
 
 Na przykład, biorąc pod uwagę niestandardową biblioteką o nazwie CustomLibrary i metodę o nazwie MyTestMethod, gdy F1 żądanie pochodzi w nim będą formatowane jako `CustomLibrary/MyTestMethod`.
 
@@ -383,55 +383,55 @@ Wersję programu Visual Studio obejmuje szereg różnych produktów Visual Studi
 
 Pakiety znakowania są instalowane przez produkt zawierający podglądu pomocy.  W przypadku produktów Visual Studio:
 
--   Bazowy pakiet znakowania (Branding_\<ustawień regionalnych > .mshc) jest zainstalowana w katalogu głównym aplikacji 2.3 podglądu pomocy (przykład: \Microsoft Help Viewer\v2.3 pliki (x86) C:\Program) przez pakiet językowy podglądu pomocy.  Jest ono używane w przypadkach, w których nie zainstalowano produkt znakowania pakietów (Brak zawartości został zainstalowany) lub gdzie zainstalowany pakiet znakowania są uszkodzone.  Elementy programu Visual Studio (logo i opinie) są ignorowane, gdy główny rezerwowego znakowania pakietu aplikacji jest używany.
+- Bazowy pakiet znakowania (Branding_\<ustawień regionalnych > .mshc) jest zainstalowana w katalogu głównym aplikacji 2.3 podglądu pomocy (przykład: \Microsoft Help Viewer\v2.3 pliki (x86) C:\Program) przez pakiet językowy podglądu pomocy.  Jest ono używane w przypadkach, w których nie zainstalowano produkt znakowania pakietów (Brak zawartości został zainstalowany) lub gdzie zainstalowany pakiet znakowania są uszkodzone.  Elementy programu Visual Studio (logo i opinie) są ignorowane, gdy główny rezerwowego znakowania pakietu aplikacji jest używany.
 
--   Po zainstalowaniu usługi zawartości pakietu zawartości programu Visual Studio znakowania pakietów jest również instalowany (w przypadku pierwszego scenariusza instalacji zawartości czasu).  W przypadku aktualizacji do znakowania pakietów, aktualizacja jest zainstalowana podczas następnej aktualizacji zawartości lub Akcja instalacji dodatkowego pakietu.
+- Po zainstalowaniu usługi zawartości pakietu zawartości programu Visual Studio znakowania pakietów jest również instalowany (w przypadku pierwszego scenariusza instalacji zawartości czasu).  W przypadku aktualizacji do znakowania pakietów, aktualizacja jest zainstalowana podczas następnej aktualizacji zawartości lub Akcja instalacji dodatkowego pakietu.
 
 Podgląd Pomocy firmy Microsoft obsługuje znakowania tematy, na podstawie metadanych tematu.
 
--   Gdzie temat metadane definiuje samodzielnie marki = true, tematu, ponieważ renderować, nic nie rób (o ile to znakowania).
+- Gdzie temat metadane definiuje samodzielnie marki = true, tematu, ponieważ renderować, nic nie rób (o ile to znakowania).
 
--   Gdzie temat metadane definiuje samodzielnie marki = false, za pomocą pakietu znakowania skojarzone z wartością metadanych TopicVendor.
+- Gdzie temat metadane definiuje samodzielnie marki = false, za pomocą pakietu znakowania skojarzone z wartością metadanych TopicVendor.
 
--   Gdzie temat metadane definiuje name="Microsoft.Help.TopicVendor" zawartość =\< znakowania nazwę pakietu dostawcy MSHA >, za pomocą pakietu znakowania zdefiniowane w wartość zawartości.
+- Gdzie temat metadane definiuje name="Microsoft.Help.TopicVendor" zawartość =\< znakowania nazwę pakietu dostawcy MSHA >, za pomocą pakietu znakowania zdefiniowane w wartość zawartości.
 
--   W ramach katalogu programu Visual Studio ma priorytet stosowania znakowania pakietów.  Stosowany jest znakowania pierwszy domyślne programu Visual Studio, a następnie, jeśli zdefiniowane w metadanych tematu i obsługiwane przez skojarzony znakowania pakietów (zgodnie z definicją w msha instalacji), zdefiniowane przez dostawcę znakowania są stosowane jako przesłonięcie.
+- W ramach katalogu programu Visual Studio ma priorytet stosowania znakowania pakietów.  Stosowany jest znakowania pierwszy domyślne programu Visual Studio, a następnie, jeśli zdefiniowane w metadanych tematu i obsługiwane przez skojarzony znakowania pakietów (zgodnie z definicją w msha instalacji), zdefiniowane przez dostawcę znakowania są stosowane jako przesłonięcie.
 
 Elementy znakowania zazwyczaj można podzielić na trzy główne kategorie:
 
--   Elementy nagłówka (przykłady link opinii, tekst warunkowego zastrzeżenie, logo)
+- Elementy nagłówka (przykłady link opinii, tekst warunkowego zastrzeżenie, logo)
 
--   Zawartość zachowania (przykłady obejmują rozwijanie/zwijanie kontrolki tekstu elementy i elementy fragment kodu)
+- Zawartość zachowania (przykłady obejmują rozwijanie/zwijanie kontrolki tekstu elementy i elementy fragment kodu)
 
--   Stopka elementów (np. prawa autorskie)
+- Stopka elementów (np. prawa autorskie)
 
 Elementy uznawany za elementy marki obejmują (szczegółowo opisane w tej specyfikacji):
 
--   Logo katalogu/produktu (Visual Studio np.)
+- Logo katalogu/produktu (Visual Studio np.)
 
--   Elementy link i wysyłania wiadomości e-mail opinii
+- Elementy link i wysyłania wiadomości e-mail opinii
 
--   Tekst klauzuli wyłączenia odpowiedzialności
+- Tekst klauzuli wyłączenia odpowiedzialności
 
--   Tekst praw autorskich
+- Tekst praw autorskich
 
 Pliki obsługi w pakiecie znakowania Pomoc usługi Visual Studio obejmują:
 
--   Grafika (logo, ikon itp.)
+- Grafika (logo, ikon itp.)
 
--   Branding.js — pliki pomocnicze zachowania zawartości skryptu
+- Branding.js — pliki pomocnicze zachowania zawartości skryptu
 
--   Branding.XML - ciągów, które są stale używane w całym zawartości katalogu.  Uwaga: elementy tekstowe lokalizacji programu Visual Studio w branding.xml, obejmują _locID = "\<unikatową wartość >"
+- Branding.XML - ciągów, które są stale używane w całym zawartości katalogu.  Uwaga: elementy tekstowe lokalizacji programu Visual Studio w branding.xml, obejmują _locID = "\<unikatową wartość >"
 
--   Branding.css - definicji stylów w celu zachowania spójności prezentacji
+- Branding.css - definicji stylów w celu zachowania spójności prezentacji
 
--   Printing.css — definicje styl spójne drukowania prezentacji
+- Printing.css — definicje styl spójne drukowania prezentacji
 
 Jak wspomniano powyżej, znakowania pakiety są skojarzone z tematem:
 
--   Gdy SelfBranded = false jest zdefiniowany w metadanych, temat dziedziczy katalogu znakowania pakietów
+- Gdy SelfBranded = false jest zdefiniowany w metadanych, temat dziedziczy katalogu znakowania pakietów
 
--   Lub kiedy SelfBranded = false i jest unikatowy pakiet znakowania zdefiniowanych w MSHA i dostępne, gdy zawartość jest zainstalowany
+- Lub kiedy SelfBranded = false i jest unikatowy pakiet znakowania zdefiniowanych w MSHA i dostępne, gdy zawartość jest zainstalowany
 
 Dla VSPs Implementowanie niestandardowych znakowania pakietów (VSP zawartości, SelfBranded = True), jest jednym ze sposobów, aby kontynuować rozpoczęcie rezerwowego oznaczonego pakietu (zainstalowany w programie Podgląd pomocy), a następnie zmień nazwę pliku, zgodnie z potrzebami.  Branding_\<ustawień regionalnych > .mshc plik jest plikiem zip z rozszerzeniem pliku zmieniony na .mshc, więc po prostu Zmień rozszerzenie z .mshc na zip i wyodrębnić zawartość.  Poniżej znajduje się pakiet elementy znakowania i zmodyfikuj odpowiednio (na przykład zmiana logo VSP logo i odwołania do logo w pliku Branding.xml, zaktualizuj Branding.xml na charakterystyce VSP itp.).
 
@@ -589,9 +589,9 @@ Pakiet ze znakowaniem zawiera zbiór plików HTM, które obsługują scenariusze
 
 Pomoc przeglądarki znakowania pakiet rozszerzeń Visual Studio zawiera dwa pliki css do obsługi spójne prezentacji zawartości Pomocy programu Visual Studio:
 
--   Branding.css — zawiera elementy css do renderowania gdzie SelfBranded = false
+- Branding.css — zawiera elementy css do renderowania gdzie SelfBranded = false
 
--   Printer.css — zawiera elementy css do renderowania gdzie SelfBranded = false
+- Printer.css — zawiera elementy css do renderowania gdzie SelfBranded = false
 
 Branding.css pliki zawierają definicje dla programu Visual Studio tematu prezentacji (zastrzeżenie: to, że branding.css zawarte w Branding_\<ustawień regionalnych > .mshc usługi pakietu mogą ulec zmianie).
 
@@ -649,11 +649,11 @@ Sample HelpContentSetup.msha file: (Zastąp "content wartość 1. nazwa" i "zawa
 </div>.
 ```
 
-1.  Utwórz folder lokalny, podobny do "C:\SampleContent"
+1. Utwórz folder lokalny, podobny do "C:\SampleContent"
 
-2.  W tym przykładzie użyjemy MSHC pliki zawierają tematy.  MSHC jest zip z rozszerzeniem pliku zmieniła się z rozszerzeniem .zip do. MSHC.
+2. W tym przykładzie użyjemy MSHC pliki zawierają tematy.  MSHC jest zip z rozszerzeniem pliku zmieniła się z rozszerzeniem .zip do. MSHC.
 
-3.  Utwórz poniżej HelpContentSetup.msha jako plik tekstowy (Notatnik został użyty do utworzenia pliku) i zapisz go w folderze wspomniano powyżej (zobacz krok 1).
+3. Utwórz poniżej HelpContentSetup.msha jako plik tekstowy (Notatnik został użyty do utworzenia pliku) i zapisz go w folderze wspomniano powyżej (zobacz krok 1).
 
 Klasa "Znakowania" istnieje i jest unikatowa. Mshc znakowania znajduje się w tym podstawowe informacje, dzięki czemu będzie mieć zainstalowaną zawartość, oznaczenia marką, a zachowania zawartości, które są zawarte w MSHCs będzie miał odpowiednią obsługę zawartym w pakiecie znakowania. Bez tego błędy powoduje, że gdy system wyszukuje elementy pomocy technicznej, które nie są częścią zgranych (zainstalowane) zawartości.
 
@@ -703,9 +703,9 @@ W tym instruktażu pokazano, jak dołączyć zawartości pomocy do aplikacji pro
 
 **Wymagania**
 
-1.  [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]
+1. [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]
 
-2.  [Visual Studio 2013 Isolated Shell Redist](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
+2. [Visual Studio 2013 Isolated Shell Redist](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
 **Omówienie**
 
@@ -721,9 +721,9 @@ Podstawowe kroki tworzenia aplikacji Isolated Shell i jego pomocy:
 
 Utwórz magazyn zawartości programu Visual Studio. W scenariuszu Integrated Shell Zmień Visual Studio12 nazwa katalogu produktów w następujący sposób:
 
--   Utwórz folder C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15.
+- Utwórz folder C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15.
 
--   Utwórz plik o nazwie CatalogType.xml i dodać go do folderu. Ten plik powinien zawierać następujące wiersze kodu:
+- Utwórz plik o nazwie CatalogType.xml i dodać go do folderu. Ten plik powinien zawierać następujące wiersze kodu:
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -744,13 +744,13 @@ Zdefiniuj magazynu zawartości w rejestrze. W przypadku Integrated Shell należy
 
 Aby utworzyć rozszerzenie Isolated Shell:
 
-1.  W programie Visual Studio w obszarze **pliku**, wybierz **nowy projekt**w obszarze **inne typy projektów** wybierz **rozszerzalności**, a następnie wybierz polecenie  **Program Visual Studio Shell izolowany**. Nadaj projektowi nazwę `ContosoHelpShell`) aby utworzyć projekt rozszerzenia na podstawie szablonu programu Visual Studio Isolated Shell.
+1. W programie Visual Studio w obszarze **pliku**, wybierz **nowy projekt**w obszarze **inne typy projektów** wybierz **rozszerzalności**, a następnie wybierz polecenie  **Program Visual Studio Shell izolowany**. Nadaj projektowi nazwę `ContosoHelpShell`) aby utworzyć projekt rozszerzenia na podstawie szablonu programu Visual Studio Isolated Shell.
 
-2.  W Eksploratorze rozwiązań Otwórz ApplicationCommands.vsct w projekcie ContosoHelpShellUI w folderze plików zasobów. Upewnij się, że ten wiersz jest ujęty w komentarz (wyszukaj frazę "No_Help"): `<!-- <define name="No_HelpMenuCommands"/> -->`
+2. W Eksploratorze rozwiązań Otwórz ApplicationCommands.vsct w projekcie ContosoHelpShellUI w folderze plików zasobów. Upewnij się, że ten wiersz jest ujęty w komentarz (wyszukaj frazę "No_Help"): `<!-- <define name="No_HelpMenuCommands"/> -->`
 
-3.  Wybierz klawisz F5, aby skompilować i uruchomić **debugowania**. W doświadczalnym wystąpieniu izolowane środowisko IDE powłoki, wybierz **pomocy** menu. Upewnij się, że **Wyświetl Pomoc**, **Dodawanie i usuwanie zawartości Pomocy**, i **Ustaw preferencje pomocy** polecenia pojawiają się.
+3. Wybierz klawisz F5, aby skompilować i uruchomić **debugowania**. W doświadczalnym wystąpieniu izolowane środowisko IDE powłoki, wybierz **pomocy** menu. Upewnij się, że **Wyświetl Pomoc**, **Dodawanie i usuwanie zawartości Pomocy**, i **Ustaw preferencje pomocy** polecenia pojawiają się.
 
-4.  W Eksploratorze rozwiązań Otwórz ContosoHelpShell.pkgdef w projekcie ContosHelpShell w folderze dostosowania powłoki. Aby zdefiniować katalogu firmy Contoso pomocy, Dodaj następujące wiersze:
+4. W Eksploratorze rozwiązań Otwórz ContosoHelpShell.pkgdef w projekcie ContosHelpShell w folderze dostosowania powłoki. Aby zdefiniować katalogu firmy Contoso pomocy, Dodaj następujące wiersze:
 
     ```
      [$RootKey$\Help]
@@ -760,7 +760,7 @@ Aby utworzyć rozszerzenie Isolated Shell:
     "BrandingPackage"="ContosoBrandingPackage.mshc"
     ```
 
-5.  W Eksploratorze rozwiązań Otwórz ContosoHelpShell.Application.pkgdef w projekcie ContosHelpShell w folderze dostosowania powłoki. Aby włączyć pomocy F1, Dodaj następujące wiersze:
+5. W Eksploratorze rozwiązań Otwórz ContosoHelpShell.Application.pkgdef w projekcie ContosHelpShell w folderze dostosowania powłoki. Aby włączyć pomocy F1, Dodaj następujące wiersze:
 
     ```
     // F1 Help Provider
@@ -776,9 +776,9 @@ Aby utworzyć rozszerzenie Isolated Shell:
     @="{4A791146-19E4-11D3-B86B-00C04F79F802}"
     ```
 
-6.  W Eksploratorze rozwiązań w menu kontekstowym rozwiązania ContosoHelpShell wybierz **właściwości** elementu menu. W obszarze **właściwości konfiguracji**, wybierz opcję **programu Configuration Manager**. W **konfiguracji** kolumny, zmienić każda wartość "Debug" na "Wersja".
+6. W Eksploratorze rozwiązań w menu kontekstowym rozwiązania ContosoHelpShell wybierz **właściwości** elementu menu. W obszarze **właściwości konfiguracji**, wybierz opcję **programu Configuration Manager**. W **konfiguracji** kolumny, zmienić każda wartość "Debug" na "Wersja".
 
-7.  Skompiluj rozwiązanie. Spowoduje to utworzenie zestawu plików w folderze wersji, która będzie używana w następnej sekcji.
+7. Skompiluj rozwiązanie. Spowoduje to utworzenie zestawu plików w folderze wersji, która będzie używana w następnej sekcji.
 
 Aby przetestować, tak, jakby wdrożona:
 

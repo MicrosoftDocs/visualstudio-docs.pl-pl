@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39fcb9444fd3d4cde218cdc92e083d28342d8342
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 6b6cf1e800c785f73ebb11e09f11b617fe42aa32
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872277"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099289"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Przewodnik: Proste powiązanie danych w projekcie dodatku narzędzi VSTO
 
@@ -29,11 +29,11 @@ Dane można powiązać formanty hosta i kontrolek Windows Forms w projektach dod
 
 W instruktażu przedstawiono następujące zagadnienia:
 
--   Dodawanie <xref:Microsoft.Office.Tools.Word.ContentControl> do dokumentu w czasie wykonywania.
+- Dodawanie <xref:Microsoft.Office.Tools.Word.ContentControl> do dokumentu w czasie wykonywania.
 
--   Tworzenie <xref:System.Windows.Forms.BindingSource> , formant łączy się z wystąpieniem zestawu danych.
+- Tworzenie <xref:System.Windows.Forms.BindingSource> , formant łączy się z wystąpieniem zestawu danych.
 
--   Włączanie użytkownika do przewijania rekordów i wyświetlać je w kontrolce.
+- Włączanie użytkownika do przewijania rekordów i wyświetlać je w kontrolce.
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -41,15 +41,15 @@ W instruktażu przedstawiono następujące zagadnienia:
 
 Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] lub [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
+- [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] lub [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
--   Dostęp do uruchomionego wystąpienia programu SQL Server 2005 lub SQL Server 2005 Express, który ma `AdventureWorksLT` przykładowej bazy danych dołączono do niego. Możesz pobrać `AdventureWorksLT` bazy danych z [witryny sieci Web CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Aby uzyskać więcej informacji na temat dołączania bazy danych zobacz następujące tematy:
+- Dostęp do uruchomionego wystąpienia programu SQL Server 2005 lub SQL Server 2005 Express, który ma `AdventureWorksLT` przykładowej bazy danych dołączono do niego. Możesz pobrać `AdventureWorksLT` bazy danych z [witryny sieci Web CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Aby uzyskać więcej informacji na temat dołączania bazy danych zobacz następujące tematy:
 
-    -   Aby dołączyć bazę danych przy użyciu programu SQL Server Management Studio lub SQL Server Management Studio Express, zobacz [jak: Dołączanie bazy danych (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+    - Aby dołączyć bazę danych przy użyciu programu SQL Server Management Studio lub SQL Server Management Studio Express, zobacz [jak: Dołączanie bazy danych (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    -   Aby dołączyć bazę danych przy użyciu wiersza polecenia, zobacz [jak: Dołączanie pliku bazy danych do programu SQL Server Express](/previous-versions/sql/).
+    - Aby dołączyć bazę danych przy użyciu wiersza polecenia, zobacz [jak: Dołączanie pliku bazy danych do programu SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu
 
@@ -57,13 +57,13 @@ Pierwszym krokiem jest utworzenie projektu dodatku narzędzi VSTO programu Word.
 
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt
 
-1.  Utwórz projekt dodatku narzędzi VSTO programu Word z nazwą **zapełnianie dokumentów z bazy danych**, za pomocą Visual Basic lub C#.
+1. Utwórz projekt dodatku narzędzi VSTO programu Word z nazwą **zapełnianie dokumentów z bazy danych**, za pomocą Visual Basic lub C#.
 
      Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Zostanie otwarty program Visual Studio *ThisAddIn.vb* lub *ThisAddIn.cs* plików i dodaje **zapełnianie dokumentów z bazy danych** projekt **Eksploratora rozwiązań** .
 
-2.  Jeśli projekt jest ukierunkowany [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], Dodaj odwołanie do *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* zestawu. To odwołanie jest wymagane, aby programowo dodać kontrolek formularzy Windows Forms do dokumentów w dalszej części tego przewodnika.
+2. Jeśli projekt jest ukierunkowany [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], Dodaj odwołanie do *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* zestawu. To odwołanie jest wymagane, aby programowo dodać kontrolek formularzy Windows Forms do dokumentów w dalszej części tego przewodnika.
 
 ## <a name="create-a-data-source"></a>Utwórz źródło danych
 
@@ -103,37 +103,37 @@ Aby uzyskać więcej informacji na temat powiązanie kontrolek z danymi, zobacz 
 
 ### <a name="to-create-the-interface-in-the-document"></a>Aby utworzyć interfejs w dokumencie
 
-1.  W `ThisAddIn` klasy, Zadeklaruj następujące formanty do wyświetlania i przewijać `Customer` tabeli `AdventureWorksLTDataSet` bazy danych.
+1. W `ThisAddIn` klasy, Zadeklaruj następujące formanty do wyświetlania i przewijać `Customer` tabeli `AdventureWorksLTDataSet` bazy danych.
 
      [!code-vb[Trin_WordAddInDatabase#1](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#1)]
      [!code-csharp[Trin_WordAddInDatabase#1](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#1)]
 
-2.  W `ThisAddIn_Startup` metody, Dodaj następujący kod, aby zainicjować zestaw danych, wypełnić dataset przy użyciu informacji z `AdventureWorksLTDataSet` bazy danych.
+2. W `ThisAddIn_Startup` metody, Dodaj następujący kod, aby zainicjować zestaw danych, wypełnić dataset przy użyciu informacji z `AdventureWorksLTDataSet` bazy danych.
 
      [!code-vb[Trin_WordAddInDatabase#2](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDatabase#2](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#2)]
 
-3.  Dodaj następujący kod do `ThisAddIn_Startup` metody. Spowoduje to wygenerowanie element hosta, która rozszerza dokument. Aby uzyskać więcej informacji, zobacz [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+3. Dodaj następujący kod do `ThisAddIn_Startup` metody. Spowoduje to wygenerowanie element hosta, która rozszerza dokument. Aby uzyskać więcej informacji, zobacz [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
      [!code-vb[Trin_WordAddInDatabase#3](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDatabase#3](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#3)]
 
-4.  Zdefiniuj kilku zakresów na początku dokumentu. Tych zakresach wskazać, gdzie Wstawianie tekstu i umieść formanty.
+4. Zdefiniuj kilku zakresów na początku dokumentu. Tych zakresach wskazać, gdzie Wstawianie tekstu i umieść formanty.
 
      [!code-vb[Trin_WordAddInDatabase#4](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#4)]
      [!code-csharp[Trin_WordAddInDatabase#4](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#4)]
 
-5.  Dodawanie kontrolek interfejsu do wcześniej zdefiniowanego zakresu.
+5. Dodawanie kontrolek interfejsu do wcześniej zdefiniowanego zakresu.
 
      [!code-vb[Trin_WordAddInDatabase#5](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#5)]
      [!code-csharp[Trin_WordAddInDatabase#5](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#5)]
 
-6.  Powiąż formant zawartości `AdventureWorksLTDataSet` przy użyciu <xref:System.Windows.Forms.BindingSource>. Aby uzyskać C# deweloperów, Dodaj dwie procedury obsługi zdarzeń dla <xref:Microsoft.Office.Tools.Word.Controls.Button> kontrolki.
+6. Powiąż formant zawartości `AdventureWorksLTDataSet` przy użyciu <xref:System.Windows.Forms.BindingSource>. Aby uzyskać C# deweloperów, Dodaj dwie procedury obsługi zdarzeń dla <xref:Microsoft.Office.Tools.Word.Controls.Button> kontrolki.
 
      [!code-vb[Trin_WordAddInDatabase#6](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#6)]
      [!code-csharp[Trin_WordAddInDatabase#6](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#6)]
 
-7.  Dodaj następujący kod, aby poruszać się po rekordów bazy danych.
+7. Dodaj następujący kod, aby poruszać się po rekordów bazy danych.
 
      [!code-vb[Trin_WordAddInDatabase#7](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#7)]
      [!code-csharp[Trin_WordAddInDatabase#7](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#7)]
@@ -144,11 +144,11 @@ Po otwarciu programu Word, formant zawartości są wyświetlane dane z `Adventur
 
 ### <a name="to-test-the-vsto-add-in"></a>Aby przetestować dodatku narzędzi VSTO
 
-1.  Naciśnij klawisz **F5**.
+1. Naciśnij klawisz **F5**.
 
      Kontrolki zawartości o nazwie `customerContentControl` zostanie utworzony i wypełniony danymi. Jednocześnie, obiekt zestawu danych o nazwie `adventureWorksLTDataSet` i <xref:System.Windows.Forms.BindingSource> o nazwie `customerBindingSource` są dodawane do projektu. <xref:Microsoft.Office.Tools.Word.ContentControl> Jest powiązany z <xref:System.Windows.Forms.BindingSource>, która z kolei jest powiązana z obiektem zestawu danych.
 
-2.  Kliknij przycisk **dalej** i **Wstecz** przycisków do przewijania rekordów bazy danych.
+2. Kliknij przycisk **dalej** i **Wstecz** przycisków do przewijania rekordów bazy danych.
 
 ## <a name="see-also"></a>Zobacz także
 

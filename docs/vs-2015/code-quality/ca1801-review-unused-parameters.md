@@ -16,12 +16,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f356f0a13b9a1b9ecf3a8096b29c1f0c9c6f275a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0efbec121e08d026145d8762b574847fbd4a2b88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662611"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045645"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Dokonaj przeglądu nieużywanych parametrów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1801: Pr
 ## <a name="cause"></a>Przyczyna  
  Podpis metody zawiera parametr, który nie jest używany w jej treści. Ta reguła analizuje następujących metod:  
   
--   Metody odwołuje się obiekt delegowany.  
+- Metody odwołuje się obiekt delegowany.  
   
--   Metody stosowane jako programów obsługi zdarzeń.  
+- Metody stosowane jako programów obsługi zdarzeń.  
   
--   Metody zadeklarowane za pomocą `abstract` (`MustOverride` w języku Visual Basic) modyfikator.  
+- Metody zadeklarowane za pomocą `abstract` (`MustOverride` w języku Visual Basic) modyfikator.  
   
--   Metody zadeklarowane za pomocą `virtual` (`Overridable` w języku Visual Basic) modyfikator.  
+- Metody zadeklarowane za pomocą `virtual` (`Overridable` w języku Visual Basic) modyfikator.  
   
--   Metody zadeklarowane za pomocą `override` (`Overrides` w języku Visual Basic) modyfikator.  
+- Metody zadeklarowane za pomocą `override` (`Overrides` w języku Visual Basic) modyfikator.  
   
--   Metody zadeklarowane za pomocą `extern` (`Declare` instrukcji w języku Visual Basic) modyfikator.  
+- Metody zadeklarowane za pomocą `extern` (`Declare` instrukcji w języku Visual Basic) modyfikator.  
   
 ## <a name="rule-description"></a>Opis reguły  
  Przejrzyj parametry w metod niewirtualnych, które nie są używane w treści metody, aby upewnić się, że nie poprawność istnieje wokół nie można uzyskać do nich dostęp. Nieużywane parametry ponosić kosztów konserwacji i wydajności.  

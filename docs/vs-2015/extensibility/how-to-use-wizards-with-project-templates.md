@@ -14,12 +14,12 @@ ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 801f6f02c94b60b95949d41cb1c762516d2c58b5
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 8da1661d518ff13d3949bee27dc0b78f5e244103
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325008"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056149"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Instrukcje: Korzystanie z kreatorów z szablonami projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,24 +33,24 @@ Program Visual Studio udostępnia <xref:Microsoft.VisualStudio.TemplateWizard.IW
 ## <a name="creating-a-project-template-project-with-a-vsix-project"></a>Tworzenie projektu szablonu projektu z projektu VSIX  
  Możesz rozpocząć tworzenie szablonu niestandardowego za pomocą projektu szablonu projektu., który jest częścią zestawu SDK programu Visual Studio. W tej procedurze użyto projektu szablonu projektu C#, ale jest również szablon projektami Visual Basic. Następnie możesz dodać projekt VSIX do rozwiązania zawierającego projekt szablonu projektu.  
   
-1.  Utwórz projekt szablonu projektu C# (w programie Visual Studio, **plik / nowy / Project / Visual C# / rozszerzalności / szablonu projektu C#**). Nadaj mu nazwę **MyProjectTemplate**.  
+1. Utwórz projekt szablonu projektu C# (w programie Visual Studio, **plik / nowy / Project / Visual C# / rozszerzalności / szablonu projektu C#**). Nadaj mu nazwę **MyProjectTemplate**.  
   
     > [!NOTE]
     >  Może być konieczne instalowanie zestawu SDK programu Visual Studio. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-2.  Dodaj nowy projekt VSIX (**plik / nowy / Project / Visual C# / rozszerzalności / projekt VSIX**) w tym samym rozwiązaniu co projekt szablonu projektu (w **Eksploratora rozwiązań**, wybierz węzeł rozwiązania Kliknij prawym przyciskiem myszy, a następnie wybierz **Add / New Project**). Nadaj mu nazwę **MyProjectWizard.**  
+2. Dodaj nowy projekt VSIX (**plik / nowy / Project / Visual C# / rozszerzalności / projekt VSIX**) w tym samym rozwiązaniu co projekt szablonu projektu (w **Eksploratora rozwiązań**, wybierz węzeł rozwiązania Kliknij prawym przyciskiem myszy, a następnie wybierz **Add / New Project**). Nadaj mu nazwę **MyProjectWizard.**  
   
-3.  Ustaw projekt VSIX jako projekt startowy. W **Eksploratora rozwiązań**, wybierz węzeł rozwiązania, kliknij prawym przyciskiem myszy i wybierz **Ustaw jako projekt startowy**.  
+3. Ustaw projekt VSIX jako projekt startowy. W **Eksploratora rozwiązań**, wybierz węzeł rozwiązania, kliknij prawym przyciskiem myszy i wybierz **Ustaw jako projekt startowy**.  
   
-4.  Dodaj szablon projektu jako zasób usługi w projekcie VSIX. W **Eksploratora rozwiązań**, w obszarze węzła projektu VSIX, Znajdź **source.extension.vsixmanifest** pliku. Kliknij dwukrotnie, aby go otworzyć w edytorze manifestu.  
+4. Dodaj szablon projektu jako zasób usługi w projekcie VSIX. W **Eksploratora rozwiązań**, w obszarze węzła projektu VSIX, Znajdź **source.extension.vsixmanifest** pliku. Kliknij dwukrotnie, aby go otworzyć w edytorze manifestu.  
   
-5.  W edytorze manifestu, wybierz **zasoby** karty w lewej części okna.  
+5. W edytorze manifestu, wybierz **zasoby** karty w lewej części okna.  
   
-6.  W **zasoby** zaznacz **New**. W **Dodaj nowy zasób** okna dla pól typu, zaznacz **Microsoft.VisualStudio.ProjectTemplate**. W **źródła** pól, zaznacz **projekt w bieżącym rozwiązaniu**. W **projektu** pól, zaznacz **MyProjectTemplate**. Następnie kliknij przycisk **OK**.  
+6. W **zasoby** zaznacz **New**. W **Dodaj nowy zasób** okna dla pól typu, zaznacz **Microsoft.VisualStudio.ProjectTemplate**. W **źródła** pól, zaznacz **projekt w bieżącym rozwiązaniu**. W **projektu** pól, zaznacz **MyProjectTemplate**. Następnie kliknij przycisk **OK**.  
   
-7.  Skompiluj rozwiązanie, a następnie rozpocząć debugowanie. Zostanie wyświetlone drugie wystąpienie programu Visual Studio. (Może to potrwać kilka minut).  
+7. Skompiluj rozwiązanie, a następnie rozpocząć debugowanie. Zostanie wyświetlone drugie wystąpienie programu Visual Studio. (Może to potrwać kilka minut).  
   
-8.  W drugim wystąpieniu programu Visual Studio spróbuj utworzyć nowy projekt za pomocą nowego szablonu. (**Plik / nowy / Project / Visual C# / szablonu MyProject**). Nowy projekt powinno zostać wyświetlone klasę o nazwie **klasa1**. Utworzono szablonu niestandardowego projektu! Zatrzymać debugowanie.  
+8. W drugim wystąpieniu programu Visual Studio spróbuj utworzyć nowy projekt za pomocą nowego szablonu. (**Plik / nowy / Project / Visual C# / szablonu MyProject**). Nowy projekt powinno zostać wyświetlone klasę o nazwie **klasa1**. Utworzono szablonu niestandardowego projektu! Zatrzymać debugowanie.  
   
 ## <a name="creating-a-custom-template-wizard"></a>Tworzenie kreatora niestandardowego szablonu  
  W tym temacie przedstawiono sposób tworzenia niestandardowego kreatora, który służy do otwierania formularza Windows przed utworzeniem projektu. Formularz pozwala użytkownikom na dodawanie wartości parametru niestandardowego, który jest dodawany do kodu źródłowego podczas tworzenia projektu.  
@@ -59,11 +59,11 @@ Program Visual Studio udostępnia <xref:Microsoft.VisualStudio.TemplateWizard.IW
   
 2. W **Eksploratora rozwiązań**, wybierz węzeł projektu VSIX. Poniżej Eksplorator rozwiązań powinien zostać wyświetlony **właściwości** okna. Jeśli tego nie zrobisz, wybierz opcję **widok / okno właściwości**, lub naciśnij **F4**. W oknie dialogowym Właściwości zaznacz następujące pola do `true`:  
   
-   -   **IncludeAssemblyInVSIXContainer**  
+   - **IncludeAssemblyInVSIXContainer**  
   
-   -   **IncludeDebugSymbolsInVSIXContainer**  
+   - **IncludeDebugSymbolsInVSIXContainer**  
   
-   -   **IncludeDebugSymbolsInLocalVSIXDeployment**  
+   - **IncludeDebugSymbolsInLocalVSIXDeployment**  
   
 3. Dodaj zestaw jako zasobu w projekcie VSIX. Otwórz plik source.extension.vsixmanifest, a następnie wybierz pozycję **zasoby** kartę. W **Dodaj nowy zasób** oknie dla **typu** wybierz **Microsoft.VisualStudio.Assembly**, dla **źródła** wybierz **A Projekt w bieżącym rozwiązaniu**oraz **projektu** wybierz **MyTemplateWizard**.  
   
@@ -292,19 +292,19 @@ namespace $safeprojectname$
 ## <a name="using-the-custom-wizard"></a>Za pomocą niestandardowego kreatora  
  Teraz możesz utworzyć projekt na podstawie szablonu i użyć niestandardowego kreatora.  
   
-1.  Ponownie skompiluj rozwiązanie, a następnie rozpocząć debugowanie. Drugie wystąpienie programu Visual Studio powinny być wyświetlane.  
+1. Ponownie skompiluj rozwiązanie, a następnie rozpocząć debugowanie. Drugie wystąpienie programu Visual Studio powinny być wyświetlane.  
   
-2.  Utwórz nowy projekt MyProjectTemplate. (**Plik / nowy / Project / Visual C# / MyProjectTemplate**)  
+2. Utwórz nowy projekt MyProjectTemplate. (**Plik / nowy / Project / Visual C# / MyProjectTemplate**)  
   
-3.  W **nowy projekt** okno dialogowe, zlokalizuj szablon, wpisz nazwę i kliknij przycisk **OK**.  
+3. W **nowy projekt** okno dialogowe, zlokalizuj szablon, wpisz nazwę i kliknij przycisk **OK**.  
   
      Zostanie otwarty formularz wprowadzania użytkownika kreatora.  
   
-4.  Wpisz wartość dla parametru niestandardowego, a następnie kliknij przycisk.  
+4. Wpisz wartość dla parametru niestandardowego, a następnie kliknij przycisk.  
   
      Formularz wprowadzania użytkownika kreatora zostanie zamknięty, a projekt jest tworzony na podstawie tego szablonu.  
   
-5.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy plik kodu źródłowego i kliknij przycisk **Wyświetl kod**.  
+5. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy plik kodu źródłowego i kliknij przycisk **Wyświetl kod**.  
   
      Należy zauważyć, że `$custommessage$` został zastąpiony tekstem wprowadzonym w formularz wprowadzania użytkownika kreatora.  
   

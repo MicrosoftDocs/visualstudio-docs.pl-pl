@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 349fbd0358481e6cd809efe4f4d210ec94ef50a6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0ac57569802bbab5317f59e5311e4871a6e74ba1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614717"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093062"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Instrukcje: Programowe zapisywanie skoroszytów
   Istnieje kilka sposobów, aby zapisać skoroszyt. Skoroszyt programu bez wprowadzania zmian w ścieżce. Jeśli skoroszyt nie zostały zapisane, zanim należy zapisać skoroszyt, określając ścieżkę. Bez jawnej ścieżki program Microsoft Office Excel zapisuje plik w bieżącym folderze o nazwie, które podano podczas jej tworzenia. Można również zapisać kopię skoroszytu bez modyfikowania Otwórz skoroszyt w pamięci.
@@ -30,14 +30,14 @@ ms.locfileid: "56614717"
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Aby zapisać skoroszyt, skojarzone z dostosowywania poziomie dokumentu
 
-1.  Wywołaj <xref:Microsoft.Office.Tools.Excel.Workbook.Save%2A> metody `ThisWorkbook` klasy.
+1. Wywołaj <xref:Microsoft.Office.Tools.Excel.Workbook.Save%2A> metody `ThisWorkbook` klasy.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#4)]
      [!code-vb[Trin_VstcoreExcelAutomation#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#4)]
 
 ### <a name="to-save-the-active-workbook-in-a-vsto-add-in"></a>Aby zapisać aktywnym skoroszycie w dodatku narzędzi VSTO
 
-1.  Wywołaj <xref:Microsoft.Office.Interop.Excel._Workbook.Save%2A> metodę, aby zapisać skoroszyt active. Aby użyć w poniższym przykładzie kodu, należy uruchomić go `ThisAddIn` klasy w projekcie dodatku narzędzi VSTO dla programu Excel.
+1. Wywołaj <xref:Microsoft.Office.Interop.Excel._Workbook.Save%2A> metodę, aby zapisać skoroszyt active. Aby użyć w poniższym przykładzie kodu, należy uruchomić go `ThisAddIn` klasy w projekcie dodatku narzędzi VSTO dla programu Excel.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#3](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#3)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#3)]
@@ -50,14 +50,14 @@ ms.locfileid: "56614717"
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Aby zapisać skoroszyt, skojarzone z dostosowywania poziomie dokumentu
 
-1.  Wywołaj <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> metody `ThisWorkbook` klasy. Aby użyć w poniższym przykładzie kodu, należy uruchomić go `ThisWorkbook` klasy.
+1. Wywołaj <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> metody `ThisWorkbook` klasy. Aby użyć w poniższym przykładzie kodu, należy uruchomić go `ThisWorkbook` klasy.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#5)]
      [!code-vb[Trin_VstcoreExcelAutomation#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#5)]
 
 ### <a name="to-save-the-active-workbook-in-a-vsto-add-in"></a>Aby zapisać aktywnym skoroszycie w dodatku narzędzi VSTO
 
-1.  Wywołaj <xref:Microsoft.Office.Interop.Excel._Workbook.SaveAs%2A> metodę, aby zapisać skoroszyt active nową ścieżkę. Aby użyć w poniższym przykładzie kodu, należy uruchomić go `ThisAddIn` klasy w projekcie dodatku narzędzi VSTO dla programu Excel.
+1. Wywołaj <xref:Microsoft.Office.Interop.Excel._Workbook.SaveAs%2A> metodę, aby zapisać skoroszyt active nową ścieżkę. Aby użyć w poniższym przykładzie kodu, należy uruchomić go `ThisAddIn` klasy w projekcie dodatku narzędzi VSTO dla programu Excel.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#4](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#4)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#4](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#4)]
@@ -67,14 +67,14 @@ ms.locfileid: "56614717"
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Aby zapisać skoroszyt, skojarzone z dostosowywania poziomie dokumentu
 
-1.  Wywołaj <xref:Microsoft.Office.Tools.Excel.Workbook.SaveCopyAs%2A> metody `ThisWorkbook` klasy. Aby użyć w poniższym przykładzie kodu, należy uruchomić go `ThisWorkbook` klasy.
+1. Wywołaj <xref:Microsoft.Office.Tools.Excel.Workbook.SaveCopyAs%2A> metody `ThisWorkbook` klasy. Aby użyć w poniższym przykładzie kodu, należy uruchomić go `ThisWorkbook` klasy.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#6)]
      [!code-vb[Trin_VstcoreExcelAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#6)]
 
 ### <a name="to-save-the-active-workbook-in-a-vsto-add-in"></a>Aby zapisać aktywnym skoroszycie w dodatku narzędzi VSTO
 
-1.  Wywołaj <xref:Microsoft.Office.Interop.Excel._Workbook.SaveCopyAs%2A> metodę, aby zapisać kopię aktywnego skoroszytu. Aby użyć w poniższym przykładzie kodu, należy uruchomić go `ThisAddIn` klasy w projekcie dodatku narzędzi VSTO dla programu Excel.
+1. Wywołaj <xref:Microsoft.Office.Interop.Excel._Workbook.SaveCopyAs%2A> metodę, aby zapisać kopię aktywnego skoroszytu. Aby użyć w poniższym przykładzie kodu, należy uruchomić go `ThisAddIn` klasy w projekcie dodatku narzędzi VSTO dla programu Excel.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#5](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#5)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#5](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#5)]

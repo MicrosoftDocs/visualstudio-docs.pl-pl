@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f8e3f4d53b0a8b79367064761ba0fc5b901dc5e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d694fe9bb614acfd80e5ec1b9f6bed166775c214
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670072"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091484"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Instrukcje: Wybieranie schematów XML do użycia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,23 +50,23 @@ Edytor XML udostępnia pamięci podręcznej schematów znajduje się w katalogu 
   
 ### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>Aby dodać schematu XML do pamięci podręcznej schematów  
   
-1.  W oknie dialogowym właściwości dokumentu, kliknij przycisk **schematów** pola.  
+1. W oknie dialogowym właściwości dokumentu, kliknij przycisk **schematów** pola.  
   
-2.  Kliknij przycisk **Dodaj**.  
+2. Kliknij przycisk **Dodaj**.  
   
      Spowoduje to otwarcie **otwieranie schematu XSD** okna dialogowego.  
   
-3.  Przeglądaj i wybierz schematy, aby dodać do pamięci podręcznej schematów.  
+3. Przeglądaj i wybierz schematy, aby dodać do pamięci podręcznej schematów.  
   
-4.  Kliknij przycisk **Otwórz**.  
+4. Kliknij przycisk **Otwórz**.  
   
      Schematy dodane do schematu w pamięci podręcznej i jest **użyj** jest równa wartości w kolumnie **używają tego schematu**.  
   
 ### <a name="to-delete-an-xml-schema-from-the-schema-cache"></a>Aby usunąć schematu XML z pamięci podręcznej schematów  
   
-1.  W oknie dialogowym właściwości dokumentu, kliknij przycisk **schematów** pola.  
+1. W oknie dialogowym właściwości dokumentu, kliknij przycisk **schematów** pola.  
   
-2.  Wybierz schemat, Usuń, a następnie kliknij przycisk **Usuń**.  
+2. Wybierz schemat, Usuń, a następnie kliknij przycisk **Usuń**.  
   
      Schemat zostanie usunięty z pamięci podręcznej schematów w pamięci, ale nie jest on usuwany z systemu plików.  
   

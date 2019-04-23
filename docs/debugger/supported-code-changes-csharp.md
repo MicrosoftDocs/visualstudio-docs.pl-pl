@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9e840a8bb19b48c5cd4526ad80526bd62fcf8fa0
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: f20f61ffc4a6e4105a96b58c3dc73e7154e7c9cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526182"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055791"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Obsługiwane zmiany kodu (C# i Visual Basic)
 Edytuj i Kontynuuj obsługuje większość typów zmian kodu w treści metod. Większość zmian poza treści metod i drobne zmiany w treści metod, nie można zastosować podczas debugowania, jednak. Aby zastosować te nieobsługiwane zmiany, należy zatrzymać debugowanie i ponownie uruchom za pomocą nowej wersji kodu.
@@ -45,7 +45,7 @@ W poniższej tabeli przedstawiono zmiany wprowadzone do C# i kodu języka Visual
 ## <a name="unsupported-changes-to-code"></a>Nieobsługiwane zmiany do kodu
  Nie można zastosować następujące zmiany do C# i kodu języka Visual Basic podczas sesji debugowania:
 
--   Zmiany bieżącej instrukcji lub aktywnej instrukcji.
+- Zmiany bieżącej instrukcji lub aktywnej instrukcji.
 
      Aktywne instrukcje obejmują dowolnej instrukcji w funkcjach w stosie wywołań, które zostały wywołane do bieżącej instrukcji.
 
@@ -90,19 +90,19 @@ Platform i nieobsługiwanych aplikacji obejmują platformy ASP.NET 5, Silverligh
 ## <a name="unsupported-scenarios"></a>Nieobsługiwane scenariusze
  Edytuj i Kontynuuj nie jest dostępna w następujących scenariuszach debugowania:
 
--   Debugowanie trybu mieszanego (natywnego/zarządzanego).
+- Debugowanie trybu mieszanego (natywnego/zarządzanego).
 
--   Debugowanie SQL.
+- Debugowanie SQL.
 
--   Debugowanie odzyskiwania po awarii. Zrzut programu Watson.
+- Debugowanie odzyskiwania po awarii. Zrzut programu Watson.
 
--   Debugowanie aplikacji osadzonego środowiska uruchomieniowego.
+- Debugowanie aplikacji osadzonego środowiska uruchomieniowego.
 
--   Debugowanie aplikacji przy użyciu dołączyć do procesu (**debugowania > Dołącz do procesu**) zamiast uruchamiania aplikacji, wybierając **Start** z **debugowania** menu.
+- Debugowanie aplikacji przy użyciu dołączyć do procesu (**debugowania > Dołącz do procesu**) zamiast uruchamiania aplikacji, wybierając **Start** z **debugowania** menu.
 
--   Debugowanie zoptymalizowanego kodu.
+- Debugowanie zoptymalizowanego kodu.
 
--   Debugowanie starą wersję kodu po nowej wersji nie powiodło się skompilowanie z powodu błędów kompilacji.
+- Debugowanie starą wersję kodu po nowej wersji nie powiodło się skompilowanie z powodu błędów kompilacji.
 
 ## <a name="see-also"></a>Zobacz też
 - [Edytuj i kontynuuj (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

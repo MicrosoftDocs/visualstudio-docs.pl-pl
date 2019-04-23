@@ -11,14 +11,14 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b02f1035a8b149ba8cfc1152bb83d1410bd86350
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d93c18f1b62ef7171fb35af896a8e9adbc461680
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781275"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053536"
 ---
-# <a name="graphics-frame-analysis"></a>Analiza klatek grafiki
+# <a name="graphics-frame-analysis"></a>Analiza ramek grafiki
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do analizowania i zoptymalizować wydajność renderowania Direct3D grach i aplikacjach.  
@@ -139,7 +139,7 @@ Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do ana
   
  Analiza klatek ogranicza liczbę ponownych prób do 10. Jeśli platformą zarządzania energią agresywne lub uzyskania bramowego zegara, może spowodować analizy klatek zakończyć się niepowodzeniem i zgłoś błąd, ponieważ przekroczyła limit ponownych prób. Może być w stanie rozwiązać ten problem, resetując używanej platformy zarządzania energią i zegara, szybkość ograniczania jako łagodniej, umożliwia platformie.  
   
-##  <a name="HardwareSupport"></a> Pomoc techniczna dotycząca sprzętu  
+## <a name="HardwareSupport"></a> Pomoc techniczna dotycząca sprzętu  
   
 ### <a name="timestamps-and-occlusion-queries"></a>Zapytania sygnatury czasowe i zamknięcia.  
  Sygnatury czasowe są obsługiwane na wszystkich platformach, które obsługują analizy klatek. Głębokość zamknięcia zapytania — wymagana dla licznika zamknięte pikseli — są obsługiwane na platformach, które obsługują poziom funkcji 9.2 lub nowszej.  
@@ -182,7 +182,7 @@ Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do ana
 > [!NOTE]
 >  Dotyczy to tylko do wywołań interfejsu API Direct3D, których używasz, nie poziomów funkcji. Tak długo, jak długo używasz Direct3D 11, Direct3D 11.1 i Direct3D 11.2 API, można użyć dowolnego poziomu funkcji, które chcesz i analiza klatek tylko będą działać.  
   
-##  <a name="Variants"></a> Wariantów  
+## <a name="Variants"></a> Wariantów  
  Każda zmiana, który sprawia, że funkcja analizy klatek sposób renderowania ramki podczas odtwarzania jest znany jako *wariant*. Warianty, które sprawdza, czy analiza klatek odnoszą się do wspólnego, stosunkowo łatwa zmiany, które można wprowadzić ulepszenia wydajności renderowania i jakość wizualną aplikacji — na przykład, zmniejszenie rozmiaru tekstury, przy użyciu kompresji tekstury lub włączenie różne rodzaje wygładzanie. Warianty zastąpić kontekstu zwykle renderowania i parametrów w aplikacji. Poniżej przedstawiono podsumowanie:  
   
 |Variant|Opis|  

@@ -12,21 +12,21 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6d63393313097503ed92c8a540d85152b3f8688
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ce4b5671d0e10d2f524ee96494d37cb68babe72a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794005"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058879"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Rozwiązywanie problemów z wyjątkami: System.ServiceModel.Security.MessageSecurityException
 A <xref:System.ServiceModel.Security.MessageSecurityException> wyjątek jest generowany, gdy [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] Określa, że komunikat nie jest poprawnie zabezpieczony lub została naruszona. Ten błąd występuje najczęściej, gdy wszystkie spełnione są następujące warunki:  
   
--   Umożliwia to odwołanie do usługi WCF za pośrednictwem połączenia zdalnego, takich jak połączenia pulpitu zdalnego lub usług terminalowych komunikować się z usługą WCF (SVC) w projekcie aplikacji witryny sieci Web lub sieci Web.  
+- Umożliwia to odwołanie do usługi WCF za pośrednictwem połączenia zdalnego, takich jak połączenia pulpitu zdalnego lub usług terminalowych komunikować się z usługą WCF (SVC) w projekcie aplikacji witryny sieci Web lub sieci Web.  
   
--   Nie masz uprawnienia administratora na zdalnej witrynie.  
+- Nie masz uprawnienia administratora na zdalnej witrynie.  
   
--   Żądania z hostem lokalnym na zdalnej witrynie są aktualnie obsługiwane przez [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] serwera projektowego.  
+- Żądania z hostem lokalnym na zdalnej witrynie są aktualnie obsługiwane przez [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] serwera projektowego.  
   
 ## <a name="associated-tips"></a>Skojarzone porady  
  **Korzystając z programem ASP.Net Development Server, należy rozwiązać problemy z uwierzytelnianiem NTLM.**  
@@ -78,11 +78,11 @@ A <xref:System.ServiceModel.Security.MessageSecurityException> wyjątek jest gen
   
 #### <a name="to-turn-off-ntlm-security"></a>Aby wyłączyć zabezpieczenie NTLM  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy nazwę witryny sieci Web, a następnie kliknij przycisk **stron właściwości**.  
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy nazwę witryny sieci Web, a następnie kliknij przycisk **stron właściwości**.  
   
-2.  Wybierz **opcje uruchamiania**, a następnie wyczyść **uwierzytelniania NTLM** pole wyboru.  
+2. Wybierz **opcje uruchamiania**, a następnie wyczyść **uwierzytelniania NTLM** pole wyboru.  
   
-3.  Kliknij przycisk **OK**.  
+3. Kliknij przycisk **OK**.  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:System.ServiceModel.Security.MessageSecurityException>   

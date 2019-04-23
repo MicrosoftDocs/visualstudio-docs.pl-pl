@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91eda74b4f83f38434117ab1217d0a20d66d2842
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 85e253491a4cb3713b5920c9abd09f9396298319
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712453"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099146"
 ---
 # <a name="how-to-start-spy"></a>Instrukcje: Uruchamianie programu Spy++
 
@@ -46,9 +46,9 @@ Fakt, że narzędzie Spy ++ działają niezależnie, po jego uruchomieniu możes
 
 ## <a name="start-spy-at-a-command-prompt"></a>Uruchom narzędzie Spy ++ w wierszu polecenia
 
-1.  W oknie wiersza polecenia Zmień katalogi na folder, który zawiera spyxx.exe. Zazwyczaj jest ścieżka do tego folderu... \\ *Folder instalacji programu visual Studio*\Common7\Tools\\.
+1. W oknie wiersza polecenia Zmień katalogi na folder, który zawiera spyxx.exe. Zazwyczaj jest ścieżka do tego folderu... \\ *Folder instalacji programu visual Studio*\Common7\Tools\\.
 
-2.  Enter **spyxx.exe**.
+2. Enter **spyxx.exe**.
 
 ## <a name="see-also"></a>Zobacz także
 - [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)

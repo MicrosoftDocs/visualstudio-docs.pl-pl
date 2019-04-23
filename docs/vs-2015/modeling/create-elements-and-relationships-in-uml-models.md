@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b31faa7c71a0f4072d922528a1abc4d040e7dae
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: ce1f236347ad811f1c5d115f30907b7e3356e3af
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834972"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099276"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>Tworzenie elementów i relacji w modelach UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,11 +87,11 @@ using Microsoft.VisualStudio.Uml.Extensions;
   
 #### <a name="to-create-an-association"></a>Aby utworzyć skojarzenie  
   
-1.  Uzyskaj właściciela skojarzenia, zwykle jest to pakiet lub model zawierający końcowy relacji w źródle.  
+1. Uzyskaj właściciela skojarzenia, zwykle jest to pakiet lub model zawierający końcowy relacji w źródle.  
   
-2.  Wywołaj wymaganej metody tworzenia właściciela.  
+2. Wywołaj wymaganej metody tworzenia właściciela.  
   
-3.  Ustaw właściwości relacji, takie jak jego nazwa.  
+3. Ustaw właściwości relacji, takie jak jego nazwa.  
   
      Na przykład:  
   
@@ -100,7 +100,7 @@ using Microsoft.VisualStudio.Uml.Extensions;
     association .Name = "Observes";  
     ```  
   
-4.  Ustaw właściwości każdy koniec relacji. Są zawsze dwa `MemberEnds`. Na przykład:  
+4. Ustaw właściwości każdy koniec relacji. Są zawsze dwa `MemberEnds`. Na przykład:  
   
     ```  
     association .MemberEnds[0].Name = "subject";   // role name  
@@ -125,9 +125,9 @@ anElement.Delete();
   
  Gdy usuniesz element z modelu:  
   
--   Każda relacja, który stanowi łącze do niego są także usuwane.  
+- Każda relacja, który stanowi łącze do niego są także usuwane.  
   
--   Każdy kształt, który go reprezentowane na diagramie są także usuwane.  
+- Każdy kształt, który go reprezentowane na diagramie są także usuwane.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzanie modeli i diagramów UML](../modeling/extend-uml-models-and-diagrams.md)   

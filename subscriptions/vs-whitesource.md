@@ -7,14 +7,14 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Dowiedz się, jak aktywować subskrypcję WhiteSource Bolt zawartych w ramach subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: b305808e022fd95db517a824d99a9af75d96ec24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ab373a21924aaac1a2a5660ed3032c69f04260e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659842"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055629"
 ---
-#  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Użyj narzędzia WhiteSource Bolt w subskrypcji programu Visual Studio
+# <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Użyj narzędzia WhiteSource Bolt w subskrypcji programu Visual Studio
 
 Znajdowanie i eliminowanie luk w zabezpieczeniach typu open source oraz generowanie kompleksowych raportów spisu i licencji wszystkich składników typu open source w kompilacji. Niektóre subskrypcje programu Visual Studio obejmują sześć miesięcy bezpłatnego dostępu.
 
@@ -90,6 +90,6 @@ Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://m
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 
--  Potrzebujesz pomocy dotyczącej WhiteSource Bolt?  Porozmawiaj z przedstawicielem WhiteSource Bolt na żywo w https://www.whitesourcesoftware.com/vse_whitesource_bolt/
--  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+- Potrzebujesz pomocy dotyczącej WhiteSource Bolt?  Porozmawiaj z przedstawicielem WhiteSource Bolt na żywo w https://www.whitesourcesoftware.com/vse_whitesource_bolt/
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
+- Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

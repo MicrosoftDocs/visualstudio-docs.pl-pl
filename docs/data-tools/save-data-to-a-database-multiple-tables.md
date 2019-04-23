@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b5f2296e7dbd6c40327ed516f4da2bf51b8dd4cd
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 9e4a30c3aa85969a4cbf712f2f4018c24169ff6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268560"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051417"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Zapisywanie danych w bazie danych (wiele tabel)
 
@@ -31,15 +31,15 @@ Dane można zapisać w aplikacji w bazie danych, wywołując `Update` metody Tab
 
 Zadania zilustrowane w tym przewodniku obejmują:
 
--  Tworzenie i konfigurowanie źródła danych w aplikacji za pomocą [Kreatora konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png).
+- Tworzenie i konfigurowanie źródła danych w aplikacji za pomocą [Kreatora konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png).
 
--  Określa elementy w [okna źródeł danych](add-new-data-sources.md#data-sources-window). Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Określa elementy w [okna źródeł danych](add-new-data-sources.md#data-sources-window). Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--  Tworzenie formantów powiązanych z danymi przez przeciąganie elementów z **źródeł danych** okna do formularza.
+- Tworzenie formantów powiązanych z danymi przez przeciąganie elementów z **źródeł danych** okna do formularza.
 
--  Modyfikowanie kilku rekordów w każdej tabeli w zestawie danych.
+- Modyfikowanie kilku rekordów w każdej tabeli w zestawie danych.
 
--  Modyfikowanie kodu wysyłać zaktualizowane dane w zestawie danych w bazie danych.
+- Modyfikowanie kodu wysyłać zaktualizowane dane w zestawie danych w bazie danych.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 

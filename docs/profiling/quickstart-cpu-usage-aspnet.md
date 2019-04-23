@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: b21e9b1735f7d6e631d25cecb2923662625400c0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2026767778f1e060ccff4a05af2649a40c1d984f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634061"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058866"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Szybki start: Analizowanie danych użycia procesora CPU w Visual Studio (ASP.NET)
 
@@ -153,30 +153,30 @@ Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debu
     }
     ```
 
-##  <a name="step-1-collect-profiling-data"></a>Krok 1. Zbieranie danych profilowania
+## <a name="step-1-collect-profiling-data"></a>Krok 1. Zbieranie danych profilowania
 
-1.  Najpierw ustaw punkt przerwania w swojej aplikacji, w tym wierszu kodu w `Simple` Konstruktor:
+1. Najpierw ustaw punkt przerwania w swojej aplikacji, w tym wierszu kodu w `Simple` Konstruktor:
 
     `for (int i = 0; i < 200; i++)`
 
     Ustaw punkt przerwania, klikając na marginesie po lewej stronie wiersza kodu.
 
-1.  Następnym etapem jest skonfigurowanie drugiego punktu przerwania na zamykającego nawiasu klamrowego na końcu `Simple` Konstruktor:
+1. Następnym etapem jest skonfigurowanie drugiego punktu przerwania na zamykającego nawiasu klamrowego na końcu `Simple` Konstruktor:
 
      ![Ustawianie punktów przerwania do profilowania](../profiling/media/quickstart-cpu-usage-breakpoints-aspnet.png)
 
     > [!TIP]
     > Ustawiając dwa punkty przerwania, można ograniczyć zbieranie danych do części kodu, który chcesz analizować.
 
-1.  **Narzędzia diagnostyczne** okna jest jeszcze widoczny, o ile nie została ona wyłączona. Aby wyświetlić okno ponownie, kliknij przycisk **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.
+1. **Narzędzia diagnostyczne** okna jest jeszcze widoczny, o ile nie została ona wyłączona. Aby wyświetlić okno ponownie, kliknij przycisk **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.
 
-1.  Kliknij przycisk **debugowania** > **Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).
+1. Kliknij przycisk **debugowania** > **Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).
 
-1.  Po zakończeniu ładowania aplikacji kliknij przycisk **o** link u góry strony sieci web, aby rozpocząć Uruchamianie nowego kodu.
+1. Po zakończeniu ładowania aplikacji kliknij przycisk **o** link u góry strony sieci web, aby rozpocząć Uruchamianie nowego kodu.
 
-1.  Przyjrzyj się **Podsumowanie** zostanie wyświetlony widok narzędzia diagnostyczne.
+1. Przyjrzyj się **Podsumowanie** zostanie wyświetlony widok narzędzia diagnostyczne.
 
-1.  Gdy debuger jest wstrzymany, Włącz zbieranie danych użycia procesora CPU, wybierając **profil procesora CPU rekordu**, a następnie otwórz **użycie procesora CPU** kartę.
+1. Gdy debuger jest wstrzymany, Włącz zbieranie danych użycia procesora CPU, wybierając **profil procesora CPU rekordu**, a następnie otwórz **użycie procesora CPU** kartę.
 
      ![Narzędzia diagnostyczne Włącz profilowanie procesora CPU](../profiling/media/quickstart-cpu-usage-summary.png)
 
@@ -184,7 +184,7 @@ Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debu
 
      Po wybraniu **profil procesora CPU rekordu**, Visual Studio spowoduje rozpoczęcie rejestrowania funkcji i czas, jaki przyjmują do wykonania, a także zawiera wykres osi czasu, można użyć, aby skoncentrować się na poszczególnych segmentach sesji pobierania próbek. Ta zebrane dane może wyświetlać tylko w przypadku, gdy aplikacja jest zatrzymywane w punkcie przerwania.
 
-6.  Naciśnij klawisz F5, aby uruchomić aplikację na drugi punkt przerwania.
+6. Naciśnij klawisz F5, aby uruchomić aplikację na drugi punkt przerwania.
 
      Teraz masz teraz dane wydajności dla twojej aplikacji specjalnie dla regionu kodu wykonywanego między dwoma punktami przerwania.
 

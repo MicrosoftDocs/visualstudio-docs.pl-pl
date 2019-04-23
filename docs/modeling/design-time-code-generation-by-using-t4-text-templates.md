@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8187fbfce9492623df5d998acd0bb4279b7ce0d2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b4cfca45d2ad1979b091c668854990ce9a7c0311
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657470"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090423"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
 Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inne pliki w projekcie programu Visual Studio. Zazwyczaj piszesz szablony, dzięki czemu mogą się różnić kodu, które generują zgodnie z danymi z *modelu*. Model jest pliku lub bazy danych, który zawiera najważniejsze informacje o wymaganiach dotyczących aplikacji.
@@ -141,9 +141,9 @@ Szablony tekstowe umożliwiają używanie kodu programu do zmiany zawartości w 
 
 #### <a name="to-generate-program-code-or-resources"></a>Aby wygenerować kod programu lub zasobów
 
-1.  Zmień dyrektywie wyjścia, aby wygenerować plik odpowiedniego typu, takich jak CS, .vb, resx lub XML.
+1. Zmień dyrektywie wyjścia, aby wygenerować plik odpowiedniego typu, takich jak CS, .vb, resx lub XML.
 
-2.  Wstaw kod, który zostanie wygenerowany kod rozwiązania, która jest wymagana. Na przykład, jeśli chcesz wygenerować trzy deklaracje pola Liczba całkowita w klasie:
+2. Wstaw kod, który zostanie wygenerowany kod rozwiązania, która jest wymagana. Na przykład, jeśli chcesz wygenerować trzy deklaracje pola Liczba całkowita w klasie:
 
     ```csharp
 
@@ -176,7 +176,7 @@ Szablony tekstowe umożliwiają używanie kodu programu do zmiany zawartości w 
 
     ```
 
-3.  Zapisz plik i sprawdzić wygenerowanego pliku, który zawiera teraz następujący kod:
+3. Zapisz plik i sprawdzić wygenerowanego pliku, który zawiera teraz następujący kod:
 
     ```csharp
     class MyGeneratedClass {

@@ -10,51 +10,51 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a454d28b1aa646df6fb3cfaa8df33807a340d778
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b3c996b8b97217deb130d8e11a68b7efae01ee05
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700903"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077592"
 ---
 # <a name="add-search-to-a-tool-window"></a>Dodawanie wyszukiwania do okna narzędzi
 Podczas tworzenia lub aktualizowania okna narzędzi w rozszerzeniu, możesz dodać te same funkcje wyszukiwania, który pojawia się gdzie indziej w programie Visual Studio. Ta funkcja obejmuje następujące funkcje:
 
--   Pole wyszukiwania znajduje się zawsze w obszarze niestandardowego paska narzędzi.
+- Pole wyszukiwania znajduje się zawsze w obszarze niestandardowego paska narzędzi.
 
--   Wskaźnik postępu, który jest nałożony na samo pole wyszukiwania.
+- Wskaźnik postępu, który jest nałożony na samo pole wyszukiwania.
 
--   Możliwości, aby wyświetlić wyniki, natychmiast po wprowadzeniu każdego znaku (Wyszukaj), lub tylko wtedy, gdy wybierzesz **Enter** klucza (Wyszukaj na żądanie).
+- Możliwości, aby wyświetlić wyniki, natychmiast po wprowadzeniu każdego znaku (Wyszukaj), lub tylko wtedy, gdy wybierzesz **Enter** klucza (Wyszukaj na żądanie).
 
--   Lista, która wyświetla warunki, dla których wyszukaniu ostatnio.
+- Lista, która wyświetla warunki, dla których wyszukaniu ostatnio.
 
--   Możliwość filtrowania wyszukiwania według określonych pól lub aspektów celów wyszukiwania.
+- Możliwość filtrowania wyszukiwania według określonych pól lub aspektów celów wyszukiwania.
 
 Dzięki temu przewodnikowi dowiesz się, jak wykonywać następujące zadania:
 
-1.  Tworzenie projektu pakietu VSPackage.
+1. Tworzenie projektu pakietu VSPackage.
 
-2.  Utwórz okna narzędzi, który zawiera kontrolkę użytkownika platformy za pomocą TextBox tylko do odczytu.
+2. Utwórz okna narzędzi, który zawiera kontrolkę użytkownika platformy za pomocą TextBox tylko do odczytu.
 
-3.  Dodaj pole wyszukiwania do okna narzędzi.
+3. Dodaj pole wyszukiwania do okna narzędzi.
 
-4.  Dodaj implementację wyszukiwania.
+4. Dodaj implementację wyszukiwania.
 
-5.  Włącz szybkie wyszukiwanie i wyświetlanie paska postępu.
+5. Włącz szybkie wyszukiwanie i wyświetlanie paska postępu.
 
-6.  Dodaj **Uwzględnij wielkość liter** opcji.
+6. Dodaj **Uwzględnij wielkość liter** opcji.
 
-7.  Dodaj **wyszukiwanie tylko wiersze nawet** filtru.
+7. Dodaj **wyszukiwanie tylko wiersze nawet** filtru.
 
 ## <a name="to-create-a-vsix-project"></a>Aby utworzyć projekt VSIX
 
-1.  Utwórz projekt VSIX, o nazwie `TestToolWindowSearch` w oknie narzędzi o nazwie **TestSearch**. Jeśli potrzebujesz pomocy w ten sposób, zobacz [Tworzenie rozszerzenia za pomocą okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).
+1. Utwórz projekt VSIX, o nazwie `TestToolWindowSearch` w oknie narzędzi o nazwie **TestSearch**. Jeśli potrzebujesz pomocy w ten sposób, zobacz [Tworzenie rozszerzenia za pomocą okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 ## <a name="to-create-a-tool-window"></a>Utworzenie okna narzędzia
 
-1.  W `TestToolWindowSearch` otwarty projekt *TestSearchControl.xaml* pliku.
+1. W `TestToolWindowSearch` otwarty projekt *TestSearchControl.xaml* pliku.
 
-2.  Zastąp istniejące `<StackPanel>` blok z następujący blok, który dodaje tylko do odczytu <xref:System.Windows.Controls.TextBox> do <xref:System.Windows.Controls.UserControl> w oknie narzędzia.
+2. Zastąp istniejące `<StackPanel>` blok z następujący blok, który dodaje tylko do odczytu <xref:System.Windows.Controls.TextBox> do <xref:System.Windows.Controls.UserControl> w oknie narzędzia.
 
     ```xaml
     <StackPanel Orientation="Vertical">
@@ -65,13 +65,13 @@ Dzięki temu przewodnikowi dowiesz się, jak wykonywać następujące zadania:
     </StackPanel>
     ```
 
-3.  W *TestSearchControl.xaml.cs* plików, dodaj następującą instrukcję using:
+3. W *TestSearchControl.xaml.cs* plików, dodaj następującą instrukcję using:
 
     ```csharp
     using System.Text;
     ```
 
-4.  Usuń `button1_Click()` metody.
+4. Usuń `button1_Click()` metody.
 
      W **TestSearchControl** klasy, Dodaj następujący kod.
 
@@ -80,15 +80,15 @@ Dzięki temu przewodnikowi dowiesz się, jak wykonywać następujące zadania:
      [!code-csharp[ToolWindowSearch#1](../extensibility/codesnippet/CSharp/adding-search-to-a-tool-window_1.cs)]
      [!code-vb[ToolWindowSearch#1](../extensibility/codesnippet/VisualBasic/adding-search-to-a-tool-window_1.vb)]
 
-5.  Skompiluj projekt, a następnie rozpocząć debugowanie. Pojawi się doświadczalnym wystąpieniu programu Visual Studio.
+5. Skompiluj projekt, a następnie rozpocząć debugowanie. Pojawi się doświadczalnym wystąpieniu programu Visual Studio.
 
-6.  Na pasku menu wybierz **widoku** > **Windows inne** > **TestSearch**.
+6. Na pasku menu wybierz **widoku** > **Windows inne** > **TestSearch**.
 
      Zostanie wyświetlone okno narzędzia, ale nie jest jeszcze wyświetlany formantu wyszukiwania.
 
 ## <a name="to-add-a-search-box-to-the-tool-window"></a>Aby dodać pole wyszukiwania do okna narzędzi
 
-1.  W *TestSearch.cs* Dodaj następujący kod, aby `TestSearch` klasy. Ten kod zastępuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> właściwość tak, że metody dostępu get zwraca `true`.
+1. W *TestSearch.cs* Dodaj następujący kod, aby `TestSearch` klasy. Ten kod zastępuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> właściwość tak, że metody dostępu get zwraca `true`.
 
      Aby włączyć wyszukiwanie, konieczne jest przesłonięcie <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> właściwości. <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> Klasy implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch> i udostępnia domyślną implementację, które nie umożliwiają wyszukiwanie.
 
@@ -99,16 +99,16 @@ Dzięki temu przewodnikowi dowiesz się, jak wykonywać następujące zadania:
     }
     ```
 
-2.  Skompiluj projekt, a następnie rozpocząć debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.
+2. Skompiluj projekt, a następnie rozpocząć debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.
 
-3.  W doświadczalnym wystąpieniu programu Visual Studio, otwórz **TestSearch**.
+3. W doświadczalnym wystąpieniu programu Visual Studio, otwórz **TestSearch**.
 
      Kontrolka wyszukiwania pojawi się w górnej części okna narzędzia z **wyszukiwania** znaku wodnego oraz ikonę szkła powiększanie. Jednak wyszukiwania nie działa jeszcze, ponieważ proces wyszukiwania nie została zaimplementowana.
 
 ## <a name="to-add-the-search-implementation"></a>Aby dodać implementacji wyszukiwania
  Po włączeniu wyszukiwania na <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>, jak w poprzedniej procedurze okna narzędzia tworzy hosta wyszukiwania. Ten host konfiguruje i zarządza procesami wyszukiwania, które pojawiają się w wątku tła. Ponieważ <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> klasa zarządza tworzenia hosta wyszukiwania i ustawienia wyszukiwania, wystarczy utworzyć zadanie wyszukiwania i stanowią metodę wyszukiwania. Proces wyszukiwania występuje w wątku w tle i wywołania formant okna narzędzia występuje w wątku interfejsu użytkownika. W związku z tym, należy użyć <xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A> metodę, aby zarządzać wszelkie wywołania, wprowadzone w radzenia sobie z kontrolką.
 
-1.  W *TestSearch.cs* plików, Dodaj następujący kod `using` instrukcji:
+1. W *TestSearch.cs* plików, Dodaj następujący kod `using` instrukcji:
 
     ```csharp
     using System;
@@ -123,13 +123,13 @@ Dzięki temu przewodnikowi dowiesz się, jak wykonywać następujące zadania:
     using Microsoft.VisualStudio.Shell.Interop;
     ```
 
-2.  W `TestSearch` klasy, Dodaj następujący kod, który wykonuje następujące czynności:
+2. W `TestSearch` klasy, Dodaj następujący kod, który wykonuje następujące czynności:
 
-    -   Zastępuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> metodę w celu utworzenia zadania wyszukiwania.
+    - Zastępuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> metodę w celu utworzenia zadania wyszukiwania.
 
-    -   Zastępuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> metody w celu przywrócenia stanu pola tekstowego. Ta metoda jest wywoływana, gdy użytkownik anuluje zadania wyszukiwania i po użytkownik ustawia lub unsets opcji lub filtrów. Zarówno <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> są wywoływane w wątku interfejsu użytkownika. W związku z tym, nie trzeba w tym polu tekstowym za dostęp <xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A> metody.
+    - Zastępuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> metody w celu przywrócenia stanu pola tekstowego. Ta metoda jest wywoływana, gdy użytkownik anuluje zadania wyszukiwania i po użytkownik ustawia lub unsets opcji lub filtrów. Zarówno <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> są wywoływane w wątku interfejsu użytkownika. W związku z tym, nie trzeba w tym polu tekstowym za dostęp <xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A> metody.
 
-    -   Tworzy klasę o nazwie `TestSearchTask` tej, która dziedziczy <xref:Microsoft.VisualStudio.Shell.VsSearchTask>, która udostępnia domyślną implementację elementu <xref:Microsoft.VisualStudio.Shell.Interop.IVsSearchTask>.
+    - Tworzy klasę o nazwie `TestSearchTask` tej, która dziedziczy <xref:Microsoft.VisualStudio.Shell.VsSearchTask>, która udostępnia domyślną implementację elementu <xref:Microsoft.VisualStudio.Shell.Interop.IVsSearchTask>.
 
          W `TestSearchTask`, Konstruktor określa pola prywatnego, który odwołuje się do okna narzędzi. Aby zapewnić metoda wyszukiwania, możesz zastąpić <xref:Microsoft.VisualStudio.Shell.VsSearchTask.OnStartSearch%2A> i <xref:Microsoft.VisualStudio.Shell.VsSearchTask.OnStopSearch%2A> metody. <xref:Microsoft.VisualStudio.Shell.VsSearchTask.OnStartSearch%2A> Metoda polega na to, gdzie wdrożyć proces wyszukiwania. Ten proces obejmuje wyszukiwania, wyświetlania wyników wyszukiwania w polu tekstowym i wywoływania implementacji klasy podstawowej przez tę metodę, aby zgłosić, że wyszukiwania została zakończona.
 
@@ -228,18 +228,18 @@ Dzięki temu przewodnikowi dowiesz się, jak wykonywać następujące zadania:
     }
     ```
 
-3.  Testowania implementacji wyszukiwania, wykonując następujące czynności:
+3. Testowania implementacji wyszukiwania, wykonując następujące czynności:
 
-    1.  Skompiluj ponownie projekt, a następnie rozpocząć debugowanie.
+    1. Skompiluj ponownie projekt, a następnie rozpocząć debugowanie.
 
-    2.  W doświadczalnym wystąpieniu programu Visual Studio, otwórz ponownie okno narzędzia, wprowadź jakiś tekst wyszukiwania w oknie wyszukiwania, a następnie kliknij przycisk **ENTER**.
+    2. W doświadczalnym wystąpieniu programu Visual Studio, otwórz ponownie okno narzędzia, wprowadź jakiś tekst wyszukiwania w oknie wyszukiwania, a następnie kliknij przycisk **ENTER**.
 
          Powinna pojawić się poprawne wyniki.
 
 ## <a name="to-customize-the-search-behavior"></a>Aby dostosować zachowanie wyszukiwania
  Zmieniając ustawienia wyszukiwania, możesz wprowadzać szereg zmian w sposób wyświetlania kontrolki wyszukiwania i jak przeprowadza się wyszukiwanie. Na przykład możesz zmienić znaku wodnego (domyślny tekst wyświetlany w polu wyszukiwania), minimalna i maksymalną szerokość kontrolki wyszukiwania i czy jest wyświetlany pasek postępu. Można również zmienić punkt, w której wyniki wyszukiwania start (na żądanie lub szybkiego wyszukiwania) i czy ma być wyświetlana lista warunków, dla których niedawno Przeszukano. Można znaleźć pełną listę ustawień w <xref:Microsoft.VisualStudio.PlatformUI.SearchSettingsDataSource> klasy.
 
-1.  W * TestSearch.cs* Dodaj następujący kod, aby `TestSearch` klasy. Ten kod umożliwia szybkie wyszukiwanie, zamiast wyszukiwania na żądanie (co oznacza, że użytkownik nie ma kliknij **ENTER**). Ten kod zastępuje `ProvideSearchSettings` method in Class metoda `TestSearch` klasy, które są niezbędne do zmiany ustawień domyślnych.
+1. W * TestSearch.cs* Dodaj następujący kod, aby `TestSearch` klasy. Ten kod umożliwia szybkie wyszukiwanie, zamiast wyszukiwania na żądanie (co oznacza, że użytkownik nie ma kliknij **ENTER**). Ten kod zastępuje `ProvideSearchSettings` method in Class metoda `TestSearch` klasy, które są niezbędne do zmiany ustawień domyślnych.
 
     ```csharp
     public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)
@@ -249,11 +249,11 @@ Dzięki temu przewodnikowi dowiesz się, jak wykonywać następujące zadania:
             (uint)VSSEARCHSTARTTYPE.SST_INSTANT);}
     ```
 
-2.  Testowanie nowe ustawienie, ponownie skompilować rozwiązanie i ponownego uruchamiania debugera.
+2. Testowanie nowe ustawienie, ponownie skompilować rozwiązanie i ponownego uruchamiania debugera.
 
      Wyniki wyszukiwania wyświetlany za każdym razem w polu wyszukiwania, wpisz znak.
 
-3.  W `ProvideSearchSettings` metody, Dodaj następujący wiersz, który umożliwia wyświetlanie paska postępu.
+3. W `ProvideSearchSettings` metody, Dodaj następujący wiersz, który umożliwia wyświetlanie paska postępu.
 
     ```csharp
     public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)
@@ -273,20 +273,20 @@ Dzięki temu przewodnikowi dowiesz się, jak wykonywać następujące zadania:
     SearchCallback.ReportProgress(this, progress++, (uint)contentArr.GetLength(0));
     ```
 
-4.  Do wydłużenia wystarczająco postęp przetwarzania paska jest widoczny, Usuń komentarz następujący wiersz w `OnStartSearch` metody `TestSearchTask` klasy:
+4. Do wydłużenia wystarczająco postęp przetwarzania paska jest widoczny, Usuń komentarz następujący wiersz w `OnStartSearch` metody `TestSearchTask` klasy:
 
     ```csharp
     System.Threading.Thread.Sleep(100);
     ```
 
-5.  Przetestuj nowe ustawienia, ponownie skompilować rozwiązanie i uruchamianie na potrzeby debugowania.
+5. Przetestuj nowe ustawienia, ponownie skompilować rozwiązanie i uruchamianie na potrzeby debugowania.
 
      Pasek postępu postać w oknie wyszukiwania (niebieska linia poniżej w polu tekstowym wyszukiwania) zawsze wykonywania wyszukiwania.
 
 ## <a name="to-enable-users-to-refine-their-searches"></a>Aby umożliwić użytkownikom udoskonalić swoje wyszukiwanie
  Możesz zezwalać użytkownikom zawęzić ich wyszukiwania za pomocą opcji, takich jak **Uwzględnij wielkość liter** lub **Uwzględnij całe wyrazy**. Opcje mogą być wartość logiczna, której są wyświetlane jako pola wyboru lub polecenia, które są wyświetlane jako przyciski. W tym przewodniku utworzysz logiczna opcji.
 
-1.  W *TestSearch.cs* Dodaj następujący kod, aby `TestSearch` klasy. Ten kod zastępuje `SearchOptionsEnum` metody, która umożliwia implementacji wyszukiwania wykryć, czy danej opcji jest włączone czy wyłączone. Kod w `SearchOptionsEnum` dodaje możliwość Uwzględnij wielkość liter do <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumWindowSearchOptions> modułu wyliczającego. Możliwość Uwzględnij wielkość liter jest również udostępniana jako `MatchCaseOption` właściwości.
+1. W *TestSearch.cs* Dodaj następujący kod, aby `TestSearch` klasy. Ten kod zastępuje `SearchOptionsEnum` metody, która umożliwia implementacji wyszukiwania wykryć, czy danej opcji jest włączone czy wyłączone. Kod w `SearchOptionsEnum` dodaje możliwość Uwzględnij wielkość liter do <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumWindowSearchOptions> modułu wyliczającego. Możliwość Uwzględnij wielkość liter jest również udostępniana jako `MatchCaseOption` właściwości.
 
     ```csharp
     private IVsEnumWindowSearchOptions m_optionsEnum;
@@ -320,26 +320,26 @@ Dzięki temu przewodnikowi dowiesz się, jak wykonywać następujące zadania:
     }
     ```
 
-2.  W `TestSearchTask` klasy, Usuń komentarz następujące linię `OnStartSearch` metody:
+2. W `TestSearchTask` klasy, Usuń komentarz następujące linię `OnStartSearch` metody:
 
     ```csharp
     matchCase = m_toolWindow.MatchCaseOption.Value;
     ```
 
-3.  Przetestuj opcji:
+3. Przetestuj opcji:
 
-    1.  Skompiluj projekt, a następnie rozpocząć debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.
+    1. Skompiluj projekt, a następnie rozpocząć debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.
 
-    2.  W oknie Narzędzia wybierz strzałkę w dół po prawej stronie pola tekstowego.
+    2. W oknie Narzędzia wybierz strzałkę w dół po prawej stronie pola tekstowego.
 
          **Uwzględnij wielkość liter** pojawi się pole wyboru.
 
-    3.  Wybierz **Uwzględnij wielkość liter** pole wyboru, a następnie wykonać niektóre wyszukiwania.
+    3. Wybierz **Uwzględnij wielkość liter** pole wyboru, a następnie wykonać niektóre wyszukiwania.
 
 ## <a name="to-add-a-search-filter"></a>Aby dodać filtr wyszukiwania
  Można dodać filtry wyszukiwania, które umożliwiają użytkownikom uściślenia zestawu elementów docelowych wyszukiwania. Na przykład można filtrować pliki w Eksploratorze plików, według daty, od których one zostały ostatnio zmodyfikowane i ich rozszerzenia nazw plików. W tym przewodniku dodasz filtr tylko nawet wiersze. Gdy użytkownik wybierze ten filtr, hosta wyszukiwania dodaje ciągów, które można określić do zapytania wyszukiwania. Można zidentyfikować te ciągi wewnątrz metodę wyszukiwania i filtrowania elementów docelowych wyszukiwania odpowiednio.
 
-1.  W *TestSearch.cs* Dodaj następujący kod, aby `TestSearch` klasy. Kod implementuje `SearchFiltersEnum` , dodając <xref:Microsoft.VisualStudio.PlatformUI.WindowSearchSimpleFilter> określający do odfiltrowania wyników wyszukiwania, tak aby były wyświetlane tylko nawet wiersze.
+1. W *TestSearch.cs* Dodaj następujący kod, aby `TestSearch` klasy. Kod implementuje `SearchFiltersEnum` , dodając <xref:Microsoft.VisualStudio.PlatformUI.WindowSearchSimpleFilter> określający do odfiltrowania wyników wyszukiwania, tak aby były wyświetlane tylko nawet wiersze.
 
     ```csharp
     public override IVsEnumWindowSearchFilters SearchFiltersEnum
@@ -356,7 +356,7 @@ Dzięki temu przewodnikowi dowiesz się, jak wykonywać następujące zadania:
 
      Teraz kontrolka wyszukiwania zawiera filtr wyszukiwania `Search even lines only`. Kiedy użytkownik naciśnie filtr ciąg `lines:"even"` pojawia się w polu wyszukiwania. Kryteria wyszukiwania może znajdować się w tym samym czasie jako filtr. Wyszukiwanie ciągów może pojawić się przed filtru, po filtr i / lub.
 
-2.  W *TestSearch.cs* Dodaj następujące metody umożliwiające `TestSearchTask` klasy, która znajduje się w `TestSearch` klasy. Metody te obsługują `OnStartSearch` metody, która zmodyfikujesz w następnym kroku.
+2. W *TestSearch.cs* Dodaj następujące metody umożliwiające `TestSearchTask` klasy, która znajduje się w `TestSearch` klasy. Metody te obsługują `OnStartSearch` metody, która zmodyfikujesz w następnym kroku.
 
     ```csharp
     private string RemoveFromString(string origString, string stringToRemove)
@@ -384,7 +384,7 @@ Dzięki temu przewodnikowi dowiesz się, jak wykonywać następujące zadania:
     }
     ```
 
-3.  W `TestSearchTask` klasy, zaktualizuj `OnStartSearch` metoda następującym kodem. Ta zmiana aktualizuje kod w celu obsługi filtru.
+3. W `TestSearchTask` klasy, zaktualizuj `OnStartSearch` metoda następującym kodem. Ta zmiana aktualizuje kod w celu obsługi filtru.
 
     ```csharp
     protected override void OnStartSearch()
@@ -463,13 +463,13 @@ Dzięki temu przewodnikowi dowiesz się, jak wykonywać następujące zadania:
     }
     ```
 
-4.  Przetestuj swój kod.
+4. Przetestuj swój kod.
 
-5.  Skompiluj projekt, a następnie rozpocząć debugowanie. W doświadczalnym wystąpieniu programu Visual Studio Otwórz okno narzędzia, a następnie kliknij strzałkę w dół na kontrolce wyszukiwania.
+5. Skompiluj projekt, a następnie rozpocząć debugowanie. W doświadczalnym wystąpieniu programu Visual Studio Otwórz okno narzędzia, a następnie kliknij strzałkę w dół na kontrolce wyszukiwania.
 
      **Uwzględnij wielkość liter** pole wyboru i **wyszukiwanie tylko wiersze nawet** filtru są wyświetlane.
 
-6.  Wybierz odpowiedni filtr.
+6. Wybierz odpowiedni filtr.
 
      Zawiera pole wyszukiwania **wierszy: "nawet"**, i są wyświetlane następujące wyniki:
 
@@ -479,7 +479,7 @@ Dzięki temu przewodnikowi dowiesz się, jak wykonywać następujące zadania:
 
      6 goodbye
 
-7.  Usuń `lines:"even"` w polu wyszukiwania, wybierz **Uwzględnij wielkość liter** pole wyboru, a następnie wprowadź `g` w polu wyszukiwania.
+7. Usuń `lines:"even"` w polu wyszukiwania, wybierz **Uwzględnij wielkość liter** pole wyboru, a następnie wprowadź `g` w polu wyszukiwania.
 
      Wyświetlane są następujące wyniki:
 
@@ -489,6 +489,6 @@ Dzięki temu przewodnikowi dowiesz się, jak wykonywać następujące zadania:
 
      5 goodbye
 
-8.  Wybierz X po prawej stronie pola wyszukiwania.
+8. Wybierz X po prawej stronie pola wyszukiwania.
 
      Wyszukiwanie jest wyczyszczone, a oryginalna zawartość jest wyświetlana. Jednak **Uwzględnij wielkość liter** nadal zaznaczone jest pole wyboru.

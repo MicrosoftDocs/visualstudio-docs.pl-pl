@@ -12,12 +12,12 @@ ms.prod: visual-studio-mac
 ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: d6e4e605a838ef354b8aef7227d2825fef8b7e7f
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: c6aa04ceb08daeb303ae6c421fe34465a9ebcda4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856304"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053233"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Publikowanie aplikacji sieci Web w usłudze Azure App Service przy użyciu programu Visual Studio dla komputerów Mac
 
@@ -25,9 +25,9 @@ Narzędzie publikowania do publikowania aplikacji platformy ASP.NET Core w usłu
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
- - [Visual Studio 2019 r dla komputerów Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) zainstalowane za pomocą programu ASP.NET Core włączone.
- - Subskrypcja platformy Azure. Jeśli nie masz już subskrypcję, [Utwórz bezpłatne konto](https://azure.microsoft.com/free/dotnet/), zawierający środki w wysokości 200 USD na 30 dni i 12 miesięcy z popularnych bezpłatnych usług.
- - Projekt platformy ASP.NET Core. Jeśli nie masz jeszcze projektu, możesz to zrobić [Utwórz nową](~/create-new-projects.md).
+- [Visual Studio 2019 r dla komputerów Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) zainstalowane za pomocą programu ASP.NET Core włączone.
+- Subskrypcja platformy Azure. Jeśli nie masz już subskrypcję, [Utwórz bezpłatne konto](https://azure.microsoft.com/free/dotnet/), zawierający środki w wysokości 200 USD na 30 dni i 12 miesięcy z popularnych bezpłatnych usług.
+- Projekt platformy ASP.NET Core. Jeśli nie masz jeszcze projektu, możesz to zrobić [Utwórz nową](~/create-new-projects.md).
 
 ## <a name="publish-to-azure-app-service"></a>Publikowanie w usłudze Azure App Service
 

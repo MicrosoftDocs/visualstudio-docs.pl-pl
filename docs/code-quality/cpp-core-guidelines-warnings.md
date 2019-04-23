@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 556821ff934d8276622ffb12ddbf4589ac404ab8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 002a82143ca30e87a8e83f3e7e4b7217ab677f11
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661389"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087927"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Korzystanie z kontrolerów podstawowych wytycznych dotyczących języka C++
 
@@ -84,17 +84,17 @@ Podstawowych wytycznych dotyczących języka C++, istnieją ułatwia pisanie kod
 
 Po dodaniu nowych zasad do wytycznych podstawowe sprawdzanie języka C++, może wzrosnąć liczba ostrzeżeń, które są tworzone dla wcześniej napisanego kodu. Zestawy wstępnie zdefiniowanych reguł można użyć do filtrowania, jakie rodzaje zasad, aby włączyć. Począwszy od programu Visual Studio 2017 w wersji 15.3 zestawów reguł obsługiwane są:
 
-  - **Właściciel — reguły dotyczące wskaźnika** wymusić [zarządzania zasobami sprawdza związane z właścicielem\<T > podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Właściciel — reguły dotyczące wskaźnika** wymusić [zarządzania zasobami sprawdza związane z właścicielem\<T > podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Reguły dotyczące zmiennych** wymusić [operacje sprawdzania powiązane z podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
+- **Reguły dotyczące zmiennych** wymusić [operacje sprawdzania powiązane z podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
-  - **Reguły dotyczące wskaźnika surowego** wymusić [sprawdza, zarządzania zasobami powiązane z surowe wskaźniki podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Reguły dotyczące wskaźnika surowego** wymusić [sprawdza, zarządzania zasobami powiązane z surowe wskaźniki podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Unikatowe reguły dotyczące wskaźnika** wymusić [zarządzania zasobami sprawdza powiązane z typami z semantyką unikatowego wskaźnika podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Unikatowe reguły dotyczące wskaźnika** wymusić [zarządzania zasobami sprawdza powiązane z typami z semantyką unikatowego wskaźnika podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Reguły dotyczące granic** wymusić [granic profilu podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+- **Reguły dotyczące granic** wymusić [granic profilu podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-  - **Reguły typu** wymusić [typu profilu podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
+- **Reguły typu** wymusić [typu profilu podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
 
 Można ograniczyć ostrzeżeń do tylko jednej lub kilku grup. **Native Minimum** i **natywny zalecany** reguły zestawy reguł podstawowe sprawdzanie języka C++, oprócz innych PREfast kontroli. Aby wyświetlić dostępnych zestawów reguł, Otwórz okno dialogowe właściwości projektu, wybierz **Analysis\General kodu**, Otwórz na liście rozwijanej **zestawów reguł** pola kombi i pobrania **Wybierz wiele zestawów reguł** . Aby uzyskać więcej informacji na temat Korzystanie z zestawów reguł w programie Visual Studio, zobacz [przy użyciu zestawów reguł do grupowania reguł analizy kodu](using-rule-sets-to-group-code-analysis-rules.md).
 

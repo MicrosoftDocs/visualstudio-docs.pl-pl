@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8962dd95aa46ae75a2d214738e7713ae9da42534
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a28076b8c394818c248a5a18c7bc91d484f2c28a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775200"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045801"
 ---
 # <a name="remove-parameters-refactoring-c"></a>Refaktoryzacja usuwania parametrów (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "54775200"
   
 ### <a name="to-remove-parameters"></a>Aby usunąć parametrów  
   
-1.  Utwórz aplikację konsoli o nazwie `RemoveParameters`, a następnie zastąp `Program` następującym kodem.  
+1. Utwórz aplikację konsoli o nazwie `RemoveParameters`, a następnie zastąp `Program` następującym kodem.  
   
     ```csharp  
     class A  
@@ -55,19 +55,19 @@ ms.locfileid: "54775200"
     }  
     ```  
   
-2.  Umieść kursor w metodzie `A`, albo w deklaracji metody lub wywołania metody.  
+2. Umieść kursor w metodzie `A`, albo w deklaracji metody lub wywołania metody.  
   
-3.  Z **Refaktoryzuj** menu, wybierz opcję **Usuń parametry** do wyświetlenia **Usuń parametry** okno dialogowe.  
+3. Z **Refaktoryzuj** menu, wybierz opcję **Usuń parametry** do wyświetlenia **Usuń parametry** okno dialogowe.  
   
      Możesz również wpisać skrótu klawiaturowego CTRL + R, V, aby wyświetlić **Usuń parametry** okno dialogowe.  
   
      Również kliknięciu prawym przyciskiem myszy kursora, wskaż polecenie **Refaktoryzuj**, a następnie kliknij przycisk **Usuń parametry** do wyświetlenia **Usuń parametry** okno dialogowe.  
   
-4.  Za pomocą **parametry** pola, umieść kursor na `int i`, a następnie kliknij przycisk **Usuń**.  
+4. Za pomocą **parametry** pola, umieść kursor na `int i`, a następnie kliknij przycisk **Usuń**.  
   
-5.  Kliknij przycisk **OK**.  
+5. Kliknij przycisk **OK**.  
   
-6.  W **podgląd zmian — Usuń parametry** okno dialogowe, kliknij przycisk **Zastosuj**.  
+6. W **podgląd zmian — Usuń parametry** okno dialogowe, kliknij przycisk **Zastosuj**.  
   
 ## <a name="remarks"></a>Uwagi  
  Parametry można usunąć z deklaracji metody lub wywołania metody. Umieść kursor w nazwie metody deklaracji lub delegata i wywoływać Usuń parametry.  

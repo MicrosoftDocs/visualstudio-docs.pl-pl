@@ -23,12 +23,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 392e50b9494d2de17f2d1ac2b0f3c23f1e872fa6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54466cc3561c194199bbad2b35cd00433da2b0f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795072"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046152"
 ---
 # <a name="walkthrough-debugging-at-design-time"></a>Przewodnik: Debugowanie w czasie projektowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Możesz użyć programu Visual Studio **bezpośrednie** okna do wykonania funkcj
   
 ### <a name="to-hit-breakpoints-from-the-immediate-window"></a>Aby identyfikować punkty przerwania w oknie bezpośrednim  
   
-1.  Wklej następujący kod do aplikacji konsoli Visual Basic:  
+1. Wklej następujący kod do aplikacji konsoli Visual Basic:  
   
     ```  
     Module Module1  
@@ -63,19 +63,19 @@ Możesz użyć programu Visual Studio **bezpośrednie** okna do wykonania funkcj
     End Module  
     ```  
   
-2.  Ustaw punkt przerwania w wierszu, który odczytuje, `s="Add BreakPoint Here"`.  
+2. Ustaw punkt przerwania w wierszu, który odczytuje, `s="Add BreakPoint Here"`.  
   
-3.  Wpisz następujące polecenie w **bezpośrednie** okna: `?MyFunction<enter>`  
+3. Wpisz następujące polecenie w **bezpośrednie** okna: `?MyFunction<enter>`  
   
-4.  Sprawdź, czy punkt przerwania został trafiony i że stos wywołań jest prawidłowo wprowadzony.  
+4. Sprawdź, czy punkt przerwania został trafiony i że stos wywołań jest prawidłowo wprowadzony.  
   
-5.  Na **debugowania** menu, kliknij przycisk **Kontynuuj**i sprawdź, że jesteś nadal w trybie projektowania.  
+5. Na **debugowania** menu, kliknij przycisk **Kontynuuj**i sprawdź, że jesteś nadal w trybie projektowania.  
   
-6.  Wpisz następujące polecenie w **bezpośrednie** okna: `?MyFunction<enter>`  
+6. Wpisz następujące polecenie w **bezpośrednie** okna: `?MyFunction<enter>`  
   
-7.  Wpisz następujące polecenie w **bezpośrednie** okna: `?MySub<enter>`  
+7. Wpisz następujące polecenie w **bezpośrednie** okna: `?MySub<enter>`  
   
-8.  Sprawdź, czy trafiony punkt przerwania i sprawdzić wartość zmiennej statycznej `i` w **lokalne** okna. Powinien mieć wartość 3.  
+8. Sprawdź, czy trafiony punkt przerwania i sprawdzić wartość zmiennej statycznej `i` w **lokalne** okna. Powinien mieć wartość 3.  
   
 9. Sprawdź, czy wywołanie stosu jest prawidłowa.  
   

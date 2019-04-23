@@ -20,12 +20,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 578835b770a9895b00513b6907956bc3bb9f9da7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 001f3a3c74f792fbe3028b6915cb350d359221a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653765"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043139"
 ---
 # <a name="insert-new-records-into-a-database"></a>Wstawianie nowych rekordów do bazy danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Wstawianie nowych rekordów do bazy danych, umożliwia `TableAdapter.Update` met
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>Wstawianie nowych rekordów do bazy danych za pomocą TableAdapter.INSERT — metoda  
   
--   Wywołaj TableAdapter `Insert` jest metoda wartości dla każdej kolumny jako parametry.  
+- Wywołaj TableAdapter `Insert` jest metoda wartości dla każdej kolumny jako parametry.  
   
     > [!NOTE]
     >  Jeśli nie masz dostępne wystąpienia, należy utworzyć wystąpienie TableAdapter, którego chcesz użyć.  
@@ -77,7 +77,7 @@ Wstawianie nowych rekordów do bazy danych, umożliwia `TableAdapter.Update` met
   
 #### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>Aby wstawianie nowych rekordów do bazy danych przy użyciu polecenia obiektów  
   
--   Utwórz nowy obiekt polecenia, a następnie ustaw jego `Connection`, `CommandType`, i `CommandText` właściwości.  
+- Utwórz nowy obiekt polecenia, a następnie ustaw jego `Connection`, `CommandType`, i `CommandText` właściwości.  
   
      [!code-csharp[VbRaddataSaving#16](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#16)]
      [!code-vb[VbRaddataSaving#16](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#16)]  

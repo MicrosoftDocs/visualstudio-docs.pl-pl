@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a63234a820c4f3cffae65342bad0b7fd439edfff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba6262ef3174428dc14c5f747c4346b5f04e35ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769956"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077631"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>Kod źródłowy L2DBForm.XAML.CS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,9 +24,9 @@ Ten temat zawiera zawartość i opis kodu źródłowego języka C# w pliku L2DBF
 ## <a name="data-members"></a>Elementy członkowskie danych  
  Dwie prywatne składowe danych są używane do kojarzenia tej klasy, aby zasoby, okno L2DBForm.xaml.  
   
--   Zmienna przestrzeni nazw `myBooks` jest inicjowany do `"http://www.mybooks.com"`.  
+- Zmienna przestrzeni nazw `myBooks` jest inicjowany do `"http://www.mybooks.com"`.  
   
--   Element członkowski `bookList` jest inicjowana w Konstruktorze ciąg CDATA w L2DBForm.xaml o następujący wiersz:  
+- Element członkowski `bookList` jest inicjowana w Konstruktorze ciąg CDATA w L2DBForm.xaml o następujący wiersz:  
   
     ```  
     bookList = (XElement)((ObjectDataProvider)Resources["LoadedBooks"]).Data;  
@@ -35,11 +35,11 @@ Ten temat zawiera zawartość i opis kodu źródłowego języka C# w pliku L2DBF
 ## <a name="onaddbook-event-handler"></a>Program obsługi zdarzeń OnAddBook  
  Ta metoda zawiera trzy następujące instrukcje:  
   
--   Pierwsza instrukcja warunkowego jest używany do sprawdzania poprawności danych wejściowych.  
+- Pierwsza instrukcja warunkowego jest używany do sprawdzania poprawności danych wejściowych.  
   
--   Druga instrukcja tworzy nową <xref:System.Xml.Linq.XElement> z ciągu wartości które użytkownik wprowadził w **Dodawanie nowej książki** sekcji interfejsu użytkownika.  
+- Druga instrukcja tworzy nową <xref:System.Xml.Linq.XElement> z ciągu wartości które użytkownik wprowadził w **Dodawanie nowej książki** sekcji interfejsu użytkownika.  
   
--   Ostatnią instrukcją dodaje ten nowy element książki do dostawcy danych w L2DBForm.xaml. W związku z tym dane dynamiczne powiązanie automatycznie aktualizuje interfejsu użytkownika za pomocą tego nowego elementu; bardzo dostarczone przez użytkownika jest wymagany żaden kod.  
+- Ostatnią instrukcją dodaje ten nowy element książki do dostawcy danych w L2DBForm.xaml. W związku z tym dane dynamiczne powiązanie automatycznie aktualizuje interfejsu użytkownika za pomocą tego nowego elementu; bardzo dostarczone przez użytkownika jest wymagany żaden kod.  
   
 ## <a name="onremove-event-handler"></a>Program obsługi zdarzeń OnRemove  
  `OnRemove` Program obsługi jest bardziej skomplikowane niż `OnAddBook` obsługi dwóch powodów. Po pierwsze ponieważ nieprzetworzonym kodzie XML zawiera zachowanych biały znak, dopasowania oddzielane należy również usunąć wpis książki. Po drugie dla wygody zaznaczoną opcję spowodowało na usunięty element jest resetowany do poprzedniego na liście.  

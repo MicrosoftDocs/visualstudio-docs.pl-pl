@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0815ccf781782a0d638fcf941a6e48edcf8ccd1f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 53003e2a88faf2ef29d3a1eb3df1da081f20ce57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624688"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077761"
 ---
 # <a name="program-document-level-customizations"></a>Program dostosowań na poziomie dokumentu
   Rozszerzając program Microsoft Office Word lub Microsoft Office Excel za pomocą dostosowania poziomu dokumentu, należy wykonać następujące zadania:
@@ -62,13 +62,13 @@ ms.locfileid: "56624688"
 
 - Projektów na poziomie dokumentu dla programu Excel ma wiele wygenerowanych klas: jeden dla samego skoroszytu i jeden dla każdego arkusza. Domyślnie tych klas mają następujące nazwy:
 
-  -   `ThisWorkbook`
+  - `ThisWorkbook`
 
-  -   `Sheet1`
+  - `Sheet1`
 
-  -   `Sheet2`
+  - `Sheet2`
 
-  -   `Sheet3`
+  - `Sheet3`
 
   Wygenerowana klasa zawiera procedury obsługi zdarzeń, które są wywoływane, gdy otwarcie lub zamknięcie dokumentu. Aby uruchomić kod po otwarciu dokumentu, Dodaj kod, aby `Startup` programu obsługi zdarzeń. Aby uruchomić kod zaraz przed zamknięciem dokumentu, Dodaj kod, aby `Shutdown` programu obsługi zdarzeń. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
 

@@ -13,12 +13,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ff52925dea61916b9fa27af8cfacc044588cdb75
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 81bb2392a4ea6d9860cdcf2beeadcfe4e6ec7940
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785625"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091619"
 ---
 # <a name="performance-report-overview"></a>Raport dotyczący wydajności — omówienie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,19 +82,19 @@ Można wyświetlić danych profilowania w sesji pomiaru wydajności **raport dot
 ## <a name="customizable-filter-control"></a>Formant filtru można dostosowywać  
  Formant filtru można dostosowywać ma następujące opcje:  
   
--   **Importowanie filtru** — pobiera wcześniej zapisane zapytanie niestandardowe.  
+- **Importowanie filtru** — pobiera wcześniej zapisane zapytanie niestandardowe.  
   
--   **Eksportuj filtr** — zapisuje niestandardowe zapytanie do określonej lokalizacji.  
+- **Eksportuj filtr** — zapisuje niestandardowe zapytanie do określonej lokalizacji.  
   
--   **Wykonaj zapytanie** — wykonuje zapytanie, wyświetlana w formancie zapytanie niestandardowe.  
+- **Wykonaj zapytanie** — wykonuje zapytanie, wyświetlana w formancie zapytanie niestandardowe.  
   
--   **Zatrzymaj zapytanie** -zatrzymuje wykonywanie zapytania, który jest uruchomiony. Ten przycisk jest dostępny, jeśli jest uruchomiony bez określenia zapytania.  
+- **Zatrzymaj zapytanie** -zatrzymuje wykonywanie zapytania, który jest uruchomiony. Ten przycisk jest dostępny, jeśli jest uruchomiony bez określenia zapytania.  
   
--   **Wyświetl zapytanie** — pokazuje lub ukrywa Kontrolki niestandardowe zapytanie.  
+- **Wyświetl zapytanie** — pokazuje lub ukrywa Kontrolki niestandardowe zapytanie.  
   
--   **Zapisz Analyzed** — raport wraz z jego bieżącej analizy jest zapisywany jako plik .vsps.  
+- **Zapisz Analyzed** — raport wraz z jego bieżącej analizy jest zapisywany jako plik .vsps.  
   
--   **Eksportuj** — zapisuje bieżący raport w. Sformatowana CVS lub. Pliku w formacie XML, z opcjami, aby zapisać różne widoki.  
+- **Eksportuj** — zapisuje bieżący raport w. Sformatowana CVS lub. Pliku w formacie XML, z opcjami, aby zapisać różne widoki.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Analizowanie wydajności danych dotyczących narzędzi](../profiling/analyzing-performance-tools-data.md)   

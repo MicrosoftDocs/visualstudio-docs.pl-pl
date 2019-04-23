@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fc2626ba0efab60921ed721b9f06fec28c66f58b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ea312ca2858a02bc8a70c3e41dbb525c9d222adc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932277"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099055"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Przewodnik: Zapisywanie danych w ramach transakcji
 
@@ -32,9 +32,9 @@ W tym instruktażu pokazano, jak zapisywanie danych w ramach transakcji przy uż
 
 Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Northwind.
 
-1.  Jeśli nie masz programu SQL Server Express LocalDB, zainstaluj go z [stronę pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), lub za pomocą **Instalatora programu Visual Studio**. W Instalatorze programu Visual Studio, można zainstalować programu SQL Server Express LocalDB, jako część **programowanie aplikacji klasycznych dla platformy .NET** obciążenie, lub jako poszczególnych składników.
+1. Jeśli nie masz programu SQL Server Express LocalDB, zainstaluj go z [stronę pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), lub za pomocą **Instalatora programu Visual Studio**. W Instalatorze programu Visual Studio, można zainstalować programu SQL Server Express LocalDB, jako część **programowanie aplikacji klasycznych dla platformy .NET** obciążenie, lub jako poszczególnych składników.
 
-2.  Instalowanie przykładowej bazy danych Northwind, wykonaj następujące czynności:
+2. Instalowanie przykładowej bazy danych Northwind, wykonaj następujące czynności:
 
     1. W programie Visual Studio, otwórz **Eksplorator obiektów SQL Server** okna. (Eksplorator obiektów SQL Server jest instalowany jako część **przechowywanie i przetwarzanie danych** obciążenie w Instalatorze programu Visual Studio.) Rozwiń **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w ramach wystąpienia LocalDB, a następnie wybierz pozycję **nowe zapytanie**.
 
@@ -64,27 +64,27 @@ Pierwszym krokiem jest utworzenie **aplikacja interfejsu Windows Forms**.
 
 Ten krok używa **Kreatora konfiguracji źródła danych** można utworzyć źródła danych, na podstawie `Customers` i `Orders` tabel w bazie danych Northwind.
 
-1.  Aby otworzyć **źródeł danych** okna na **danych** menu, wybierz opcję **Pokaż źródła danych**.
+1. Aby otworzyć **źródeł danych** okna na **danych** menu, wybierz opcję **Pokaż źródła danych**.
 
-2.  W **źródeł danych** wybierz **Dodaj nowe źródło danych** można uruchomić **Kreatora konfiguracji źródła danych**.
+2. W **źródeł danych** wybierz **Dodaj nowe źródło danych** można uruchomić **Kreatora konfiguracji źródła danych**.
 
-3.  Na **wybierz typ źródła danych** ekranu, wybierz opcję **bazy danych**, a następnie wybierz pozycję **dalej**.
+3. Na **wybierz typ źródła danych** ekranu, wybierz opcję **bazy danych**, a następnie wybierz pozycję **dalej**.
 
-4.  Na **wybierz połączenie danych** wykonaj ekranu, jedną z następujących czynności:
+4. Na **wybierz połączenie danych** wykonaj ekranu, jedną z następujących czynności:
 
-    -   Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.
+    - Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.
 
          —lub—
 
-    -   Wybierz **nowe połączenie** można uruchomić **Dodawanie/modyfikowanie połączenia** okna dialogowego pole, a następnie utwórz połączenie z bazą danych Northwind.
+    - Wybierz **nowe połączenie** można uruchomić **Dodawanie/modyfikowanie połączenia** okna dialogowego pole, a następnie utwórz połączenie z bazą danych Northwind.
 
-5.  Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie wybierz **dalej**.
+5. Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie wybierz **dalej**.
 
-6.  Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji** ekranu, wybierz opcję **dalej**.
+6. Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji** ekranu, wybierz opcję **dalej**.
 
-7.  Na **wybierz obiekty bazy danych** ekranu, a następnie rozwiń **tabel** węzła.
+7. Na **wybierz obiekty bazy danych** ekranu, a następnie rozwiń **tabel** węzła.
 
-8.  Wybierz `Customers` i `Orders` tabel, a następnie wybierz **Zakończ**.
+8. Wybierz `Customers` i `Orders` tabel, a następnie wybierz **Zakończ**.
 
      **NorthwindDataSet** zostanie dodany do projektu i `Customers` i `Orders` tabele są wyświetlane w **źródeł danych** okna.
 
@@ -108,9 +108,9 @@ Użyj transakcji <xref:System.Transactions> przestrzeni nazw. Odwołanie do zest
 
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Aby dodać odwołanie do pliku System.Transactions DLL
 
-1.  Na **projektu** menu, wybierz opcję **Dodaj odwołanie**.
+1. Na **projektu** menu, wybierz opcję **Dodaj odwołanie**.
 
-2.  Wybierz **System.Transactions** (na **.NET** karty), a następnie wybierz pozycję **OK**.
+2. Wybierz **System.Transactions** (na **.NET** karty), a następnie wybierz pozycję **OK**.
 
      Odwołanie do **System.Transactions** zostanie dodany do projektu.
 
@@ -120,47 +120,47 @@ Jako pierwszą tabelę upuszczone na formularzu, kod jest dodawany domyślnie `c
 
 ### <a name="to-modify-the-auto-generated-save-code"></a>Aby zmodyfikować wygenerowaną automatycznie zapisać kod
 
-1.  Wybierz **Zapisz** znajdujący się na **CustomersBindingNavigator** (przycisk z ikoną dyskietki).
+1. Wybierz **Zapisz** znajdujący się na **CustomersBindingNavigator** (przycisk z ikoną dyskietki).
 
-2.  Zastąp `CustomersBindingNavigatorSaveItem_Click` metoda następującym kodem:
+2. Zastąp `CustomersBindingNavigatorSaveItem_Click` metoda następującym kodem:
 
      [!code-vb[VbRaddataSaving#4](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#4](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_1.cs)]
 
 Uzgadnianie zmian do powiązanych danych kolejność jest następująca:
 
--   Usuń rekordy podrzędne. (W tym przypadku usuwania rekordów z `Orders` tabeli.)
+- Usuń rekordy podrzędne. (W tym przypadku usuwania rekordów z `Orders` tabeli.)
 
--   Usuwanie rekordów nadrzędnych. (W tym przypadku usuwania rekordów z `Customers` tabeli.)
+- Usuwanie rekordów nadrzędnych. (W tym przypadku usuwania rekordów z `Customers` tabeli.)
 
--   Wstawianie rekordów nadrzędnych. (W tym przypadku wstawiania rekordów w `Customers` tabeli.)
+- Wstawianie rekordów nadrzędnych. (W tym przypadku wstawiania rekordów w `Customers` tabeli.)
 
--   Wstaw rekordy podrzędne. (W tym przypadku wstawiania rekordów w `Orders` tabeli.)
+- Wstaw rekordy podrzędne. (W tym przypadku wstawiania rekordów w `Orders` tabeli.)
 
 ### <a name="to-delete-existing-orders"></a>Aby usunąć istniejące zamówienia
 
--   Dodaj następujący kod `DeleteOrders` metody **Form1**:
+- Dodaj następujący kod `DeleteOrders` metody **Form1**:
 
      [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
      [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]
 
 ### <a name="to-delete-existing-customers"></a>Aby usunąć istniejący klienci
 
--   Dodaj następujący kod `DeleteCustomers` metody **Form1**:
+- Dodaj następujący kod `DeleteCustomers` metody **Form1**:
 
      [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
      [!code-csharp[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]
 
 ### <a name="to-add-new-customers"></a>Aby dodać nowych klientów
 
--   Dodaj następujący kod `AddNewCustomers` metody **Form1**:
+- Dodaj następujący kod `AddNewCustomers` metody **Form1**:
 
      [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
      [!code-csharp[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]
 
 ### <a name="to-add-new-orders"></a>Aby dodać nowe zamówienia
 
--   Dodaj następujący kod `AddNewOrders` metody **Form1**:
+- Dodaj następujący kod `AddNewOrders` metody **Form1**:
 
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]

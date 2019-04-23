@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 388b0ebbeea9cd9adb15629f34952ef0307a842b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5c2082e4f2c67696f057ea8fc779bfaf391e0af1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648825"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096585"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Przewodnik: Tworzenie pliku projektu MSBuild od zera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,13 +54,13 @@ Języki programowania, które obsługują program .NET Framework używają plik�
   
 #### <a name="to-create-the-minimal-application"></a>Aby utworzyć minimalną aplikację  
   
-1.  W wierszu polecenia przejdź do folderu, w którym chcesz utworzyć aplikację, na przykład documents\ lub \Desktop\\.  
+1. W wierszu polecenia przejdź do folderu, w którym chcesz utworzyć aplikację, na przykład documents\ lub \Desktop\\.  
   
-2.  Typ **md HelloWorld** utworzyć podfolder o nazwie \HelloWorld\\.  
+2. Typ **md HelloWorld** utworzyć podfolder o nazwie \HelloWorld\\.  
   
-3.  Typ **cd HelloWorld** można zmienić do nowego folderu.  
+3. Typ **cd HelloWorld** można zmienić do nowego folderu.  
   
-4.  Otwórz Notatnik lub inny edytor tekstu, a następnie wpisz poniższy kod.  
+4. Otwórz Notatnik lub inny edytor tekstu, a następnie wpisz poniższy kod.  
   
     ```  
     using System;  
@@ -78,28 +78,28 @@ Języki programowania, które obsługują program .NET Framework używają plik�
     }  
     ```  
   
-5.  Zapisz ten plik źródłowy kodu i nadaj mu nazwę HelloWorld.csproj.  
+5. Zapisz ten plik źródłowy kodu i nadaj mu nazwę HelloWorld.csproj.  
   
-6.  Kompiluj aplikację wpisując **csc helloworld.cs** w wierszu polecenia.  
+6. Kompiluj aplikację wpisując **csc helloworld.cs** w wierszu polecenia.  
   
-7.  Przetestuj aplikację wpisując **helloworld** w wierszu polecenia.  
+7. Przetestuj aplikację wpisując **helloworld** w wierszu polecenia.  
   
      **Witaj, świecie!** powinien zostać wyświetlony komunikat.  
   
-8.  Usuń aplikację wpisując **del helloworld.exe** w wierszu polecenia.  
+8. Usuń aplikację wpisując **del helloworld.exe** w wierszu polecenia.  
   
 ## <a name="creating-a-minimal-msbuild-project-file"></a>Tworzenie minimalnego pliku projektu MSBuild  
  Teraz, gdy minimalny plik źródłowy aplikacji, można utworzyć minimalny plik projektu do skompilowania aplikacji. Ten plik projektu zawiera następujące elementy:  
   
--   Wymagany katalog główny `Project` węzła.  
+- Wymagany katalog główny `Project` węzła.  
   
--   `ItemGroup` Węzeł zawiera elementy jednostki.  
+- `ItemGroup` Węzeł zawiera elementy jednostki.  
   
--   Element jednostki odwołujący się do pliku źródłowego aplikacji.  
+- Element jednostki odwołujący się do pliku źródłowego aplikacji.  
   
--   A `Target` węzła zawiera zadania, które są wymagane do kompilowania aplikacji.  
+- A `Target` węzła zawiera zadania, które są wymagane do kompilowania aplikacji.  
   
--   A `Task` element, aby uruchomić kompilator Visual C# do kompilowania aplikacji.  
+- A `Task` element, aby uruchomić kompilator Visual C# do kompilowania aplikacji.  
   
 #### <a name="to-create-a-minimal-msbuild-project-file"></a>Aby utworzyć plik projektu minimalnego MSBuild  
   
@@ -162,7 +162,7 @@ Języki programowania, które obsługują program .NET Framework używają plik�
   
 #### <a name="to-add-msbuild-to-your-path"></a>Aby dodać programu MSBuild do ścieżki  
   
--   Począwszy od programu Visual Studio 2013, możesz znaleźć MSBuild.exe w folderze programu MSBuild (`%ProgramFiles%\MSBuild` na 32-bitowym systemie operacyjnym lub `%ProgramFiles(x86)%\MSBuild` na 64-bitowym systemie operacyjnym).  
+- Począwszy od programu Visual Studio 2013, możesz znaleźć MSBuild.exe w folderze programu MSBuild (`%ProgramFiles%\MSBuild` na 32-bitowym systemie operacyjnym lub `%ProgramFiles(x86)%\MSBuild` na 64-bitowym systemie operacyjnym).  
   
      W wierszu polecenia wpisz **Ustaw PATH=%PATH%;%ProgramFiles%\MSBuild** lub **Ustaw ŚCIEŻKĘ = % PATH %; % ProgramFiles (x86) %\MSBuild**.  
   
@@ -173,11 +173,11 @@ Języki programowania, które obsługują program .NET Framework używają plik�
   
 #### <a name="to-build-the-application"></a>Aby skompilować aplikację  
   
-1.  W wierszu polecenia wpisz **msbuild helloworld.csproj /t:Build**.  
+1. W wierszu polecenia wpisz **msbuild helloworld.csproj /t:Build**.  
   
      To skompiluje kompilację docelową projektu HelloWorld wywołując kompilator Visual C# do tworzenia aplikacji Helloworld.  
   
-2.  Przetestuj aplikację wpisując **helloworld**.  
+2. Przetestuj aplikację wpisując **helloworld**.  
   
      **Witaj, świecie!** powinien zostać wyświetlony komunikat.  
   
@@ -189,9 +189,9 @@ Języki programowania, które obsługują program .NET Framework używają plik�
 ## <a name="adding-build-properties"></a>Dodawanie właściwości kompilacji  
  Można dodać właściwości kompilacji do pliku projektu, aby dalej kontrolować kompilację. Teraz dodaj następujące właściwości:  
   
--   `AssemblyName` Właściwość, aby określić nazwę aplikacji.  
+- `AssemblyName` Właściwość, aby określić nazwę aplikacji.  
   
--   `OutputPath` Właściwości w celu określenia folderu zawierającego aplikację.  
+- `OutputPath` Właściwości w celu określenia folderu zawierającego aplikację.  
   
 #### <a name="to-add-build-properties"></a>Aby dodać właściwości kompilacji  
   
@@ -260,13 +260,13 @@ Języki programowania, które obsługują program .NET Framework używają plik�
   
 #### <a name="to-test-the-build-properties"></a>Aby przetestować właściwości kompilacji  
   
-1.  W wierszu polecenia wpisz **msbuild helloworld.csproj /t:Build**.  
+1. W wierszu polecenia wpisz **msbuild helloworld.csproj /t:Build**.  
   
      To tworzy \Bin\ folder i następnie wywołuje kompilatora Visual C# do tworzenia aplikacji MSBuildSample i umieszcza go w folderze \Bin\.  
   
-2.  Aby sprawdzić, czy \Bin\ folder został utworzony i czy zawiera aplikację MSBuildSample, należy wpisać **katalog Bin**.  
+2. Aby sprawdzić, czy \Bin\ folder został utworzony i czy zawiera aplikację MSBuildSample, należy wpisać **katalog Bin**.  
   
-3.  Przetestuj aplikację wpisując **Bin\MSBuildSample**.  
+3. Przetestuj aplikację wpisując **Bin\MSBuildSample**.  
   
      **Witaj, świecie!** powinien zostać wyświetlony komunikat.  
   
@@ -325,37 +325,37 @@ Języki programowania, które obsługują program .NET Framework używają plik�
 ## <a name="testing-the-build-targets"></a>Testowanie obiektów docelowych kompilacji  
  Możesz skorzystać z nowych celów kompilacji do badania tych funkcji w pliku projektu:  
   
--   Kompilowanie domyślnej kompilacji.  
+- Kompilowanie domyślnej kompilacji.  
   
--   Ustawianie nazwy aplikacji, w tym celu w wierszu polecenia.  
+- Ustawianie nazwy aplikacji, w tym celu w wierszu polecenia.  
   
--   Usuwanie aplikacji przed kompilacją innej aplikacji.  
+- Usuwanie aplikacji przed kompilacją innej aplikacji.  
   
--   Usuwanie aplikacji bez kompilacji innej aplikacji.  
+- Usuwanie aplikacji bez kompilacji innej aplikacji.  
   
 #### <a name="to-test-the-build-targets"></a>Aby przetestować obiekty docelowe kompilacji  
   
-1.  W wierszu polecenia wpisz **msbuild helloworld.csproj /p:AssemblyName = Greetings**.  
+1. W wierszu polecenia wpisz **msbuild helloworld.csproj /p:AssemblyName = Greetings**.  
   
      Ponieważ nie użyto **/t** do jawnego ustawienia celu, MSBuild uruchamia domyślny element docelowy kompilacji. **/P** przełączanie przesłania `AssemblyName` właściwość i nadaje jej nową wartość `Greetings`. To powoduje, że nowa aplikację, Greetings.exe, ma być utworzony w folderze \Bin\.  
   
-2.  Aby sprawdzić, czy \Bin\ folder zawiera zarówno aplikację MSBuildSample, jak i nową aplikację Greetings, wpisz **katalog Bin**.  
+2. Aby sprawdzić, czy \Bin\ folder zawiera zarówno aplikację MSBuildSample, jak i nową aplikację Greetings, wpisz **katalog Bin**.  
   
-3.  Przetestuj aplikację Greetings wpisując **Bin\Greetings**.  
+3. Przetestuj aplikację Greetings wpisując **Bin\Greetings**.  
   
      **Witaj, świecie!** powinien zostać wyświetlony komunikat.  
   
-4.  Usuń aplikację MSBuildSample wpisując **helloworld.csproj msbuild/t /: wyczyść**.  
+4. Usuń aplikację MSBuildSample wpisując **helloworld.csproj msbuild/t /: wyczyść**.  
   
      To uruchamia zadanie czysty, aby usunąć aplikację, która ma domyślne `AssemblyName` wartość właściwości `MSBuildSample`.  
   
-5.  Usuń aplikację Greetings wpisując **helloworld.csproj msbuild/t /: czyszczenie /p:AssemblyName = Greetings**.  
+5. Usuń aplikację Greetings wpisując **helloworld.csproj msbuild/t /: czyszczenie /p:AssemblyName = Greetings**.  
   
      To uruchamia zadanie czysty, aby usunąć aplikację, która ma danego **AssemblyName** wartość właściwości `Greetings`.  
   
-6.  Aby sprawdzić, czy \Bin\ folder teraz jest pusty, wpisz **katalog Bin**.  
+6. Aby sprawdzić, czy \Bin\ folder teraz jest pusty, wpisz **katalog Bin**.  
   
-7.  Typ **msbuild**.  
+7. Typ **msbuild**.  
   
      Mimo że nie określono pliku projektu, MSBuild tworzy pliku helloworld.csproj ponieważ istnieje tylko jeden plik projektu w bieżącym folderze. Powoduje to, że nowa aplikacja MSBuildSample ma być utworzony w folderze \Bin\.  
   
@@ -366,7 +366,7 @@ Języki programowania, które obsługują program .NET Framework używają plik�
   
 #### <a name="to-build-incrementally"></a>Aby kompilować przyrostowo  
   
-1.  W pliku projektu należy dodać te atrybuty do otwarcia docelowej kompilacji:  
+1. W pliku projektu należy dodać te atrybuty do otwarcia docelowej kompilacji:  
   
     ```  
     Inputs="@(Compile)" Outputs="$(OutputPath)$(AssemblyName).exe"  
@@ -383,7 +383,7 @@ Języki programowania, które obsługują program .NET Framework używają plik�
     </Target>  
     ```  
   
-2.  Przetestuj kompilację docelową wpisując **msbuild /v:d** w wierszu polecenia.  
+2. Przetestuj kompilację docelową wpisując **msbuild /v:d** w wierszu polecenia.  
   
      Należy pamiętać, że helloworld.csproj jest domyślnym plikiem projektu, a tej kompilacji domyślnego obiektu docelowego.  
   

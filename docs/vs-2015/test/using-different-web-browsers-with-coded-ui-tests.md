@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7245af090cfdaa8e4282677c8b5a052d63b63e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5289804eb85b9af4fff090f98cc97f8d2c9ec676
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805537"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100407"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Korzystanie z różnych przeglądarek sieci Web do przeprowadzania kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
   
 - Systemy operacyjne:  
   
-  -   Microsoft Windows 7  
+  - Microsoft Windows 7  
   
-  -   Microsoft Windows 8  
+  - Microsoft Windows 8  
   
-  -   Microsoft Windows Server 2008 R2 SP1  
+  - Microsoft Windows Server 2008 R2 SP1  
   
 - Wersje przeglądarki sieci Web:  
   
-  -   Windows Internet Explorer 9  
+  - Windows Internet Explorer 9  
   
-  -   Windows Internet Explorer 10  
+  - Windows Internet Explorer 10  
   
-  -   Obsługiwane wersje Mozilla Firefox i Google Chrome, przejdź [tutaj](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)  
+  - Obsługiwane wersje Mozilla Firefox i Google Chrome, przejdź [tutaj](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)  
   
 - Zainstaluj [Selenium components for Coded UI Cross Browser Testing](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
@@ -83,19 +83,19 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
 ### <a name="enable-debugging"></a>Włączanie debugowania  
  Aby włączyć debugowanie aplikacji internetowej, należy zastosować następujące opcje konfiguracji:  
   
-1.  Włączyć funkcję Tylko mój kod:  
+1. Włączyć funkcję Tylko mój kod:  
   
-    1.  Na **narzędzia** menu, wybierz **opcje** , a następnie wybierz **debugowanie**.  
+    1. Na **narzędzia** menu, wybierz **opcje** , a następnie wybierz **debugowanie**.  
   
-    2.  Wybierz **Włącz tylko mój kod**.  
+    2. Wybierz **Włącz tylko mój kod**.  
   
-2.  Wyłączyć wyjątki CLR:  
+2. Wyłączyć wyjątki CLR:  
   
-    1.  Na **debugowania** menu, wybierz **wyjątki**.  
+    1. Na **debugowania** menu, wybierz **wyjątki**.  
   
-    2.  Aby uzyskać **wyjątki środowiska uruchomieniowego języka wspólnego**, usuń zaznaczenie pola wyboru **User-unhandled**.  
+    2. Aby uzyskać **wyjątki środowiska uruchomieniowego języka wspólnego**, usuń zaznaczenie pola wyboru **User-unhandled**.  
   
-##  <a name="generate"></a> *Opcja zmiany BrowserWindow.CurrentBrowser w kodowanym teście interfejsu użytkownika nie jest widoczna.*  
+## <a name="generate"></a> *Opcja zmiany BrowserWindow.CurrentBrowser w kodowanym teście interfejsu użytkownika nie jest widoczna.*  
  Być może używasz wersji [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] , który nie obsługuje kodowanych testów interfejsu użytkownika za pomocą różnych przeglądarek sieci web. Aby używać takich kodowanych testów interfejsu użytkownika, należy użyć programu Visual Studio Enterprise.  
   
  *Co jeszcze muszę wiedzieć?*  

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f62b580b72f7910f8d5a688acc8df61361286c0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a1763e51a09ba797bd22c85ba998e1533aa18f97
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627925"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050763"
 ---
 # <a name="test-area-6-delete"></a>Obszar testowy 6: Usuwanie
 Ten obszar testowy wtyczki kontroli źródła obejmuje akcje usuwania.
@@ -36,13 +36,13 @@ Ten obszar testowy wtyczki kontroli źródła obejmuje akcje usuwania.
 ## <a name="expected-behavior"></a>Oczekiwane zachowanie
  To oczekiwane zachowanie dla przypadków testowych, w obszarze badania delete:
 
--   Usunięty element nie jest już widoczna w ramach **Eksploratora rozwiązań**.
+- Usunięty element nie jest już widoczna w ramach **Eksploratora rozwiązań**.
 
--   Element nadrzędny usuniętego projektu lub element jest wyewidencjonowany, zgodnie z potrzebami (prawdopodobnie wraz z monitem o.)
+- Element nadrzędny usuniętego projektu lub element jest wyewidencjonowany, zgodnie z potrzebami (prawdopodobnie wraz z monitem o.)
 
--   Po usunięciu zaznaczenia lub dodano element, nie ma w **oczekujące elementy do zaewidencjonowania** okna.
+- Po usunięciu zaznaczenia lub dodano element, nie ma w **oczekujące elementy do zaewidencjonowania** okna.
 
--   Element nadal istnieje w magazynie kontroli źródła, nawet po usunięciu i musi ręcznie przeczyścić.
+- Element nadal istnieje w magazynie kontroli źródła, nawet po usunięciu i musi ręcznie przeczyścić.
 
 |Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|
 |------------|----------------|--------------------------------|

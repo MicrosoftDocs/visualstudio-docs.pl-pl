@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0d77d78cdcf889b22d9cf6901b6beae41aaaee4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 4391f4cf989b51a49b874e6eccdcceb28f609003
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366734"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060557"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Instrukcje: Zbieranie danych dotyczących wydajności dla witryny sieci Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,25 +46,25 @@ Możesz użyć **kreatora wydajności** do zbierania danych wydajności dla [!IN
   
 ### <a name="to-profile-a-web-site-project"></a>Aby przeprowadzić profilowanie projektu witryny sieci Web  
   
-1.  Otwórz [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] projektu sieci Web w [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] lub [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
+1. Otwórz [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] projektu sieci Web w [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] lub [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
   
-2.  Na **analizy** menu, kliknij przycisk **Uruchom Kreatora wydajności**.  
+2. Na **analizy** menu, kliknij przycisk **Uruchom Kreatora wydajności**.  
   
-3.  Na pierwszej stronie kreatora, wybierz metody profilowania, a następnie kliknij przycisk **dalej**. Aby uzyskać więcej informacji na temat metod profilowania, zobacz [metodami zbierania danych wydajności opis](../profiling/understanding-performance-collection-methods.md). Należy zauważyć, że metoda profilowania narzędzie concurrency visualizer nie jest dostępna dla aplikacji sieci web.  
+3. Na pierwszej stronie kreatora, wybierz metody profilowania, a następnie kliknij przycisk **dalej**. Aby uzyskać więcej informacji na temat metod profilowania, zobacz [metodami zbierania danych wydajności opis](../profiling/understanding-performance-collection-methods.md). Należy zauważyć, że metoda profilowania narzędzie concurrency visualizer nie jest dostępna dla aplikacji sieci web.  
   
-4.  W **aplikacji, które chcesz docelowe dla profilowania?** listy rozwijanej, upewnij się, że bieżący projekt jest wybrany, a następnie kliknij przycisk **dalej**.  
+4. W **aplikacji, które chcesz docelowe dla profilowania?** listy rozwijanej, upewnij się, że bieżący projekt jest wybrany, a następnie kliknij przycisk **dalej**.  
   
-5.  Na trzeciej stronie kreatora możesz dodać dane interakcji między warstwami profilowania (TIP), dane z języka JavaScript w stronach sieci Web i / lub.  
+5. Na trzeciej stronie kreatora możesz dodać dane interakcji między warstwami profilowania (TIP), dane z języka JavaScript w stronach sieci Web i / lub.  
   
-    -   Aby zebrać interakcje między warstwami, zaznacz **Włącz profilowanie interakcji pomiędzy warstwami** pole wyboru.  
+    - Aby zebrać interakcje między warstwami, zaznacz **Włącz profilowanie interakcji pomiędzy warstwami** pole wyboru.  
   
-    -   Aby zebrać dane z kod JavaScript na stronach sieci Web, wybierz pozycję **Profiluj kod JavaScript** pole wyboru.  
+    - Aby zebrać dane z kod JavaScript na stronach sieci Web, wybierz pozycję **Profiluj kod JavaScript** pole wyboru.  
   
-6.  Kliknij przycisk **Dalej**.  
+6. Kliknij przycisk **Dalej**.  
   
-7.  Na czwartej stronie kreatora kliknij **Zakończ**.  
+7. Na czwartej stronie kreatora kliknij **Zakończ**.  
   
-8.  Sesja wydajności jest tworzona dla [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji i witrynę sieci Web jest uruchomiony w przeglądarce. Przetestuj funkcjonalność, która ma być profilu, a następnie zamknij przeglądarkę.  
+8. Sesja wydajności jest tworzona dla [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji i witrynę sieci Web jest uruchomiony w przeglądarce. Przetestuj funkcjonalność, która ma być profilu, a następnie zamknij przeglądarkę.  
   
      Program profilujący generuje plik danych i wyświetla widok podsumowania danych w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] głównego okna.  
   
@@ -90,9 +90,9 @@ Możesz użyć **kreatora wydajności** do zbierania danych wydajności dla [!IN
   
 6. Na trzeciej stronie kreatora możesz dodać dane interakcji między warstwami profilowania (TIP), dane z języka JavaScript w stronach sieci Web i / lub.  
   
-   -   Aby zebrać interakcje między warstwami, zaznacz **Włącz profilowanie interakcji pomiędzy warstwami** pole wyboru.  
+   - Aby zebrać interakcje między warstwami, zaznacz **Włącz profilowanie interakcji pomiędzy warstwami** pole wyboru.  
   
-   -   Aby zebrać dane z kod JavaScript na stronach sieci Web, wybierz pozycję **Profiluj kod JavaScript** pole wyboru.  
+   - Aby zebrać dane z kod JavaScript na stronach sieci Web, wybierz pozycję **Profiluj kod JavaScript** pole wyboru.  
   
 7. Kliknij przycisk **Dalej**.  
   

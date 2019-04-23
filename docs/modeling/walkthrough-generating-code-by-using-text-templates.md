@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1fabf31a58203e2fb98dd4929907de4f8fff436
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 042d6b6c59489abcfbdcdd4dd10055ea4dedfff5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928910"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055667"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Przewodnik: Generowanie kodu przy użyciu szablonów tekstowych
 
@@ -83,9 +83,9 @@ W tym projekcie jednego pliku szablonu służy do generowania klasy, które umo�
 
 Tej techniki można zastosować do dowolnego projektu kodu. W tym instruktażu wykorzystano projektu C# i na potrzeby testowania używamy aplikacji konsoli.
 
-1.  Na **pliku** kliknij menu **New** a następnie kliknij przycisk **projektu**.
+1. Na **pliku** kliknij menu **New** a następnie kliknij przycisk **projektu**.
 
-2.  Kliknij przycisk **Visual C#** węzła, a następnie w polu **szablony** okienku kliknij **aplikacji konsoli.**
+2. Kliknij przycisk **Visual C#** węzła, a następnie w polu **szablony** okienku kliknij **aplikacji konsoli.**
 
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>Dodaj plik XML prototypu do projektu
 
@@ -93,13 +93,13 @@ Celem tego pliku jest zapewnienie przykłady typy węzłów XML, które aplikacj
 
 Plik powinien być częścią projektu, tak aby można go odczytać szablonu, ale nie można zbudować w skompilowanej aplikacji.
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, kliknij przycisk **Dodaj** a następnie kliknij przycisk **nowy element**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, kliknij przycisk **Dodaj** a następnie kliknij przycisk **nowy element**.
 
-2.  W **Dodaj nowy element** okno dialogowe, wybierz opcję **pliku XML** z **szablony** okienka.
+2. W **Dodaj nowy element** okno dialogowe, wybierz opcję **pliku XML** z **szablony** okienka.
 
-3.  Dodaj zawartość próbki do pliku.
+3. Dodaj zawartość próbki do pliku.
 
-4.  W ramach tego przewodnika nadaj plikowi nazwę `exampleXml.xml`. Ustaw zawartość pliku do pliku XML, pokazano w poprzedniej sekcji.
+4. W ramach tego przewodnika nadaj plikowi nazwę `exampleXml.xml`. Ustaw zawartość pliku do pliku XML, pokazano w poprzedniej sekcji.
 
 ### <a name="add-a-test-code-file"></a>Dodaj plik kodu testu
 
@@ -131,20 +131,20 @@ Bardziej szczegółowe badania można sprawdzić wynik działania tej funkcji ba
 
 Dodaj plik szablonu tekstu i Ustaw rozszerzenie danych wyjściowych *.cs*.
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, kliknij przycisk **Dodaj**, a następnie kliknij przycisk **nowy element**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, kliknij przycisk **Dodaj**, a następnie kliknij przycisk **nowy element**.
 
-2.  W **Dodaj nowy element** wybierz okno dialogowe **szablon tekstowy** z **szablony** okienka.
+2. W **Dodaj nowy element** wybierz okno dialogowe **szablon tekstowy** z **szablony** okienka.
 
     > [!NOTE]
     > Upewnij się, że dodano szablonu tekstu, a nie wstępnie przetworzony szablon tekstu.
 
-3.  W pliku, w dyrektywie szablonu, należy zmienić `hostspecific` atrybutu `true`.
+3. W pliku, w dyrektywie szablonu, należy zmienić `hostspecific` atrybutu `true`.
 
      Ta zmiana spowoduje włączenie kod szablonu w celu uzyskania dostępu do usług Visual Studio.
 
-4.  W dyrektywie wyjścia Zmień rozszerzenie atrybut "CS", tak, aby szablon generuje plik języka C#. W projekcie języka Visual Basic może go zmienić na ".vb".
+4. W dyrektywie wyjścia Zmień rozszerzenie atrybut "CS", tak, aby szablon generuje plik języka C#. W projekcie języka Visual Basic może go zmienić na ".vb".
 
-5.  Zapisz plik. Na tym etapie pliku szablonu tekstu powinien zawierać następujące wiersze:
+5. Zapisz plik. Na tym etapie pliku szablonu tekstu powinien zawierać następujące wiersze:
 
     ```
     <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -412,15 +412,15 @@ Aby ponownie wygenerować klas, gdy przykładowy plik XML zostanie zmieniony, kl
 
 W tym instruktażu przedstawiono kilka technik i korzyści wynikające z generowania kodu:
 
--   *Generowanie kodu* jest tworzenie części kodu źródłowego aplikacji *modelu*. Model zawiera informacje w postaci nadaje się do domeny aplikacji i mogą ulec zmianie w okresie istnienia aplikacji.
+- *Generowanie kodu* jest tworzenie części kodu źródłowego aplikacji *modelu*. Model zawiera informacje w postaci nadaje się do domeny aplikacji i mogą ulec zmianie w okresie istnienia aplikacji.
 
--   Silne wpisywanie jest jedną z zalet generowania kodu. Gdy model reprezentuje informacje w postaci bardziej odpowiednie dla użytkownika, wygenerowany kod umożliwia innych części aplikacji, aby poradzić sobie z informacjami o przy użyciu zestawu typów.
+- Silne wpisywanie jest jedną z zalet generowania kodu. Gdy model reprezentuje informacje w postaci bardziej odpowiednie dla użytkownika, wygenerowany kod umożliwia innych części aplikacji, aby poradzić sobie z informacjami o przy użyciu zestawu typów.
 
--   Funkcja IntelliSense i kompilator pomocne podczas tworzenia kodu, który jest zgodna ze schematem modelu, i kiedy piszesz nowy kod po zaktualizowaniu schematu.
+- Funkcja IntelliSense i kompilator pomocne podczas tworzenia kodu, który jest zgodna ze schematem modelu, i kiedy piszesz nowy kod po zaktualizowaniu schematu.
 
--   Dodanie jednego prostotę pliku szablonu projektu może zapewnić te korzyści.
+- Dodanie jednego prostotę pliku szablonu projektu może zapewnić te korzyści.
 
--   Szablon tekstowy można opracowany i przetestowany szybko i przyrostowo.
+- Szablon tekstowy można opracowany i przetestowany szybko i przyrostowo.
 
 W tym instruktażu kodu programu faktycznie jest generowany z wystąpienia modelu reprezentatywna próbka pliki XML, które aplikacja może przetworzyć. W podejściu bardziej formalne schematu XML jest wprowadzanie do szablonu w postaci pliku XSD lub definicji języka specyficznego dla domeny. Takie podejście może ułatwić szablonu określić właściwości, takie jak liczebność relacji.
 

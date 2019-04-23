@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ab9b6e0ee62bc2506022a853a04871902fa04aad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2e6db11220c2cc7f14bc2f0f05912e7855646c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789780"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045985"
 ---
 # <a name="automatic-feature-suspension"></a>Automatyczne wstrzymanie funkcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ Jeśli Twoje dostępnej pamięci systemowej kwalifikuje się do 200MB lub mniej,
 
  W stan braku pamięci mają miejsce następujące zdarzenia:
 
--   Pełnej analizy rozwiązania dla programu Visual C# i Visual Basic jest wyłączona.
+- Pełnej analizy rozwiązania dla programu Visual C# i Visual Basic jest wyłączona.
 
--   [Wyrzucanie elementów bezużytecznych](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) trybu o małych opóźnieniach (GC) dla języka Visual C# i Visual Basic są wyłączone.
+- [Wyrzucanie elementów bezużytecznych](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) trybu o małych opóźnieniach (GC) dla języka Visual C# i Visual Basic są wyłączone.
 
--   Visual Studio pamięci podręczne są opróżniane.
+- Visual Studio pamięci podręczne są opróżniane.
 
 ## <a name="improve-visual-studio-performance"></a>Poprawa wydajności programu Visual Studio
  Aby uzyskać porady i wskazówki na temat sposobu poprawy wydajności programu Visual Studio podczas zajmowania się warunki małej ilości pamięci lub dużych rozwiązań, zobacz [zagadnienia dotyczące wydajności w przypadku dużych rozwiązań](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
@@ -48,11 +48,11 @@ Jeśli Twoje dostępnej pamięci systemowej kwalifikuje się do 200MB lub mniej,
 
 Wszystkie bufory programu Visual Studio są natychmiast opróżnienia, ale rozpocznie się ponownie wypełnić, jeśli nadal bieżącej sesji rozwoju lub uruchom ponownie program Visual Studio. Pamięci podręczne opróżnionych obejmują pamięci podręczne dla następujących funkcji.
 
--   Znajdź wszystkie odwołania
+- Znajdź wszystkie odwołania
 
--   Przejdź do
+- Przejdź do
 
--   Dodaj instrukcję Using
+- Dodaj instrukcję Using
 
 Ponadto używane dla operacji programu Visual Studio wewnętrznych pamięci podręcznych również zostaną wyczyszczone.
 

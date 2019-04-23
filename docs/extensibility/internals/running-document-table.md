@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c91aa3cbad7fd58fbd819e46f3f3428f68801e9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 093c2e33b8fe3918c280bb68dabda54808cc5e3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618942"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060829"
 ---
 # <a name="running-document-table"></a>Uruchamianie tabeli dokumentu
 IDE utrzymuje listę wszystkich aktualnie otwarte dokumenty w wewnętrznej struktury o nazwie uruchomionej tabeli dokumentu (Normalizacją). Ta lista zawiera wszystkie otwarte dokumenty w pamięci, niezależnie od tego, czy te dokumenty są obecnie edytowane. Dokument jest dowolny element, który jest trwały, w tym pliki w projekcie lub w pliku projektu głównego (na przykład plik .vcxproj).
@@ -52,9 +52,9 @@ IDE utrzymuje listę wszystkich aktualnie otwarte dokumenty w wewnętrznej struk
 
  IDE używa również Normalizacją do resurface (przesuwanie do przodu) otwartego dokumentu, jeśli użytkownik zażąda tego dokumentu. Aby uzyskać więcej informacji, zobacz [wyświetlanie plików za pomocą polecenia Otwórz plik](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Aby ustalić, czy plik jest otwarty w Normalizacją, wykonaj jedną z następujących czynności.
 
--   Kwerenda dotycząca moniker dokumentu (oznacza to ścieżki pełny dokument) sprawdzić, czy element jest otwarty.
+- Kwerenda dotycząca moniker dokumentu (oznacza to ścieżki pełny dokument) sprawdzić, czy element jest otwarty.
 
--   Identyfikator hierarchii lub element umożliwia poproś system projektu dla ścieżki pełny dokument, a następnie wyszukaj element Normalizacją.
+- Identyfikator hierarchii lub element umożliwia poproś system projektu dla ścieżki pełny dokument, a następnie wyszukaj element Normalizacją.
 
 ## <a name="see-also"></a>Zobacz też
 - [Użycie flagi RDT_ReadLock](../../extensibility/internals/rdt-readlock-usage.md)

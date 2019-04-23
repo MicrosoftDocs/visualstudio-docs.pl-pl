@@ -11,12 +11,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47db94f7602a42ae9e5142ef27213a06adb8865c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5d12f1a2343018f05f0e741222b844c562b50f5e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791656"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048388"
 ---
 # <a name="call-tree-view---contention-data"></a>Widok drzewa wywołań — dane rywalizacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Widok drzewa wywołania Wyświetla ścieżki wykonywania funkcji, które został
 ## <a name="highlighting-the-execution-hot-path"></a>Wyróżnianie ścieżka aktywna wykonywania  
  Widok drzewa wywołania można rozwijać i Podświetlenie ścieżki wykonywania procesu lub funkcja, która utworzyła większość rywalizacji.  
   
--   Aby wyświetlić najbardziej aktywne ścieżkę, kliknij prawym przyciskiem myszy proces lub funkcji, a następnie kliknij **Rozwiń ścieżkę aktywną**.  
+- Aby wyświetlić najbardziej aktywne ścieżkę, kliknij prawym przyciskiem myszy proces lub funkcji, a następnie kliknij **Rozwiń ścieżkę aktywną**.  
   
 ## <a name="setting-the-call-tree-root-node"></a>Ustawienie węzeł główny drzewa wywołań  
  Każdy proces, w trakcie uruchomienia profilowania pojawia się jako węzeł główny. Aby ustawić węzeł początkowy widok drzewa wywołania, kliknij prawym przyciskiem myszy węzeł, który chcesz ustawić jako węzeł początkowy, a następnie kliknij przycisk **zestawu głównego**.  

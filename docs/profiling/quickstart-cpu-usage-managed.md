@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b77ae405463496c5de703947de9b4429218d2435
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 58ab671014f2745bbc577e50d9e8051df72091c9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935686"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098977"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Szybki start: Analizowanie danych użycia procesora CPU w programie Visual Studio (kod zarządzany)
 
@@ -160,9 +160,9 @@ Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debu
     > [!NOTE]
     > W języku Visual Basic, upewnij się, obiekt startowy jest ustawiony na `Sub Main` (**właściwości** > **aplikacji** > **obiekt początkowy**).
 
-##  <a name="step-1-collect-profiling-data"></a>Krok 1. Zbieranie danych profilowania
+## <a name="step-1-collect-profiling-data"></a>Krok 1. Zbieranie danych profilowania
 
-1.  Najpierw ustaw punkt przerwania w swojej aplikacji, w tym wierszu kodu w `Main` funkcji:
+1. Najpierw ustaw punkt przerwania w swojej aplikacji, w tym wierszu kodu w `Main` funkcji:
 
     `for (int i = 0; i < 200; i++)`
 
@@ -172,20 +172,20 @@ Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debu
 
     Ustaw punkt przerwania, klikając na marginesie po lewej stronie wiersza kodu.
 
-2.  Następnym etapem jest skonfigurowanie drugiego punktu przerwania na zamykającego nawiasu klamrowego na końcu `Main` funkcji:
+2. Następnym etapem jest skonfigurowanie drugiego punktu przerwania na zamykającego nawiasu klamrowego na końcu `Main` funkcji:
 
      ![Ustaw punkty przerwania dla profilowania](../profiling/media/quickstart-cpu-usage-breakpoints.png "ustawiać punkty przerwania dla profilowania")
 
     > [!TIP]
     > Ustawiając dwa punkty przerwania, można ograniczyć zbieranie danych do części kodu, który chcesz analizować.
 
-3.  **Narzędzia diagnostyczne** okna jest jeszcze widoczny, o ile nie została ona wyłączona. Aby wyświetlić okno ponownie, kliknij przycisk **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.
+3. **Narzędzia diagnostyczne** okna jest jeszcze widoczny, o ile nie została ona wyłączona. Aby wyświetlić okno ponownie, kliknij przycisk **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.
 
-4.  Kliknij przycisk **debugowania** > **Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).
+4. Kliknij przycisk **debugowania** > **Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).
 
      Gdy aplikacja zakończy ładowanie, **Podsumowanie** zostanie wyświetlony widok narzędzia diagnostyczne.
 
-5.  Gdy debuger jest wstrzymany, Włącz zbieranie danych użycia procesora CPU, wybierając **profil procesora CPU rekordu**, a następnie otwórz **użycie procesora CPU** kartę.
+5. Gdy debuger jest wstrzymany, Włącz zbieranie danych użycia procesora CPU, wybierając **profil procesora CPU rekordu**, a następnie otwórz **użycie procesora CPU** kartę.
 
      ![Narzędzia diagnostyczne Włącz profilowanie procesora CPU](../profiling/media/quickstart-cpu-usage-summary.png "narzędzia diagnostyczne Włącz profilowanie procesora CPU")
 
@@ -193,7 +193,7 @@ Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debu
 
      Po wybraniu **profil procesora CPU rekordu**, Visual Studio spowoduje rozpoczęcie rejestrowania funkcji i czas, jaki przyjmują do wykonania, a także zawiera wykres osi czasu, można użyć, aby skoncentrować się na poszczególnych segmentach sesji pobierania próbek. Ta zebrane dane może wyświetlać tylko w przypadku, gdy aplikacja jest zatrzymywane w punkcie przerwania.
 
-6.  Naciśnij klawisz **F5** do uruchomienia aplikacji na drugi punkt przerwania.
+6. Naciśnij klawisz **F5** do uruchomienia aplikacji na drugi punkt przerwania.
 
      Teraz masz teraz dane wydajności dla twojej aplikacji specjalnie dla regionu kodu wykonywanego między dwoma punktami przerwania.
 

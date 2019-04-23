@@ -11,12 +11,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0e71e499eb1920dd59ee47533855cf9f86cbbd0
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 5e703ca3e1770d92a2dc01402acaaba0b4988e92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416100"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078190"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Instrukcje: Określanie limitów czasu dla kontrolerów testów i agentów testowych
 
@@ -26,7 +26,7 @@ Kontroler testów i agenta testowego ma kilka ustawień limitu czasu, które okr
 
 Aby edytować kontroler testów lub różne ustawienia limitu czasu agenta testowego, zmodyfikuj następujące pliki konfiguracji, za pomocą nazw kluczy i wartości w tabelach:
 
--   Kontroler testów: *QTController.exe.config*
+- Kontroler testów: *QTController.exe.config*
 
     |Nazwa klucza|Opis|Wartość|
     |-|-----------------|-|
@@ -35,7 +35,7 @@ Aby edytować kontroler testów lub różne ustawienia limitu czasu agenta testo
     |AgentInitializeTimeout|Liczba sekund oczekiwania dla wszystkich agentów i ich modułów zbierających dane, aby zainicjować na początku testu uruchomić przed przerwaniem przebiegu testu. Ta wartość powinna być umiarkowanie duża, jeśli za pomocą modułów zbierających dane.|"n" Liczba sekund. Wartość domyślna: "120" (dwie minuty).|
     |AgentCleanupTimeout|Liczba sekund oczekiwania dla wszystkich agentów i ich modułów zbierających dane, aby wyczyścić, przed wykonaniem testów przebieg. Ta wartość powinna być umiarkowanie duża, jeśli za pomocą modułów zbierających dane.|"n" Liczba sekund. Wartość domyślna: "120" (dwie minuty).|
 
--   Agent testowy: *QTAgentService.exe.config*
+- Agent testowy: *QTAgentService.exe.config*
 
     |Nazwa klucza|Opis|Wartość|
     |-|-----------------|-|

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6322e860cb45cecc3db5d5060e1322c41d57e695
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0ecae68c3c5d9569f2c63d484c53696bbec42e55
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634230"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043810"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Zapis procesorów uwzględniających rejestratorów
 Zdolność [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] może korzystać z wielu procesorów skrócić czas tworzenia projektu, ale również dodaje złożoności do tworzenia rejestrowania zdarzeń. W środowisku jednoprocesorowym zdarzenia, komunikaty, ostrzeżenia i błędy przybyć rejestratora w sposób przewidywalny i sekwencyjne. Jednak w środowisku wielu procesorów zdarzeń z różnych źródeł mogą pojawić się w tym samym czasie lub poza sekwencją. Aby zapewnić w tym celu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] udostępnia procesorów uwzględniających rejestratora i nowy model rejestrowania i umożliwia utworzenie niestandardowego "przekazywanie rejestratorów."
@@ -62,9 +62,9 @@ public interface INodeLogger: ILogger
 
  Istnieją dwa sposoby korzystania z rejestrowania rozproszonych, w następujący sposób:
 
--   Dostosowywanie rejestratora wstępnie metalowych przesyłania dalej o nazwie <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>.
+- Dostosowywanie rejestratora wstępnie metalowych przesyłania dalej o nazwie <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>.
 
--   Napisać własne niestandardowe przekazywania rejestratora.
+- Napisać własne niestandardowe przekazywania rejestratora.
 
 Można zmodyfikować ConfigurableForwardingLogger ze swoimi potrzebami. W tym celu należy wywołać rejestratora w wierszu polecenia za pomocą *MSBuild.exe*i wyświetlać zdarzenia kompilacji, które chcesz rejestratora do przekazywania na węźle centralnym.
 

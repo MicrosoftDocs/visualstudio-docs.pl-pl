@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a233518f34fdafdb45822f4bc12c3edc452f50cb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 39cdb98f14823b02c8d4d2b60575eddca6da0420
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598859"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055358"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Formanty Windows Forms na przegląd dokumentów pakietu Office
   Kontrolek formularzy Windows Forms są obiekty, które użytkownicy mogą wchodzić w interakcje z wprowadzać ani wykonywać operacje na danych. W projektach na poziomie dokumentu dla programu Microsoft Office Excel i Microsoft Office Word dodaniem kontrolek formularzy Windows Forms do dokumentów lub skoroszytu w projekcie w czasie projektowania lub można programowo dodać tych formantów w czasie wykonywania. Programowe można dodać te formanty do dowolnego otwartego dokumentu lub arkusza w czasie wykonywania w dodatku narzędzi VSTO dla programu Excel lub Word.
@@ -42,19 +42,20 @@ ms.locfileid: "56598859"
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
 ## <a name="use-windows-forms-controls"></a>Użyj kontrolek formularzy Windows Forms
- Możesz dodać kontrolek formularzy Windows Forms do dokumentów oraz do elementów interfejsu użytkownika można dostosowywać, łącznie z okienka akcji niestandardowych okienek zadań i formularzy Windows. Kontrolek formularzy Windows Forms zazwyczaj mają takie samo zachowanie w dokumentach jako na inne elementy interfejsu użytkownika, ale istnieją pewne różnice. Aby uzyskać informacje, zobacz [ograniczenia Windows Forms kontrolki w dokumentach pakietu Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).
 
- Decyzja, czy należy dodać kontrolek formularzy Windows Forms do dokumentu lub innego elementu interfejsu użytkownika zależy od wielu czynników. Podczas projektowania interfejsu użytkownika rozwiązania, należy wziąć pod uwagę używa formantów Windows Forms zgodnie z opisem w poniższej tabeli.
+Możesz dodać kontrolek formularzy Windows Forms do dokumentów oraz do elementów interfejsu użytkownika można dostosowywać, łącznie z okienka akcji niestandardowych okienek zadań i formularzy Windows. Kontrolek formularzy Windows Forms zazwyczaj mają takie samo zachowanie w dokumentach jako na inne elementy interfejsu użytkownika, ale istnieją pewne różnice. Aby uzyskać informacje, zobacz [ograniczenia Windows Forms kontrolki w dokumentach pakietu Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).
 
- W dokumencie.
- -   Kiedy chcesz wyświetlić kontrolki 100% czasu.
+Decyzja, czy należy dodać kontrolek formularzy Windows Forms do dokumentu lub innego elementu interfejsu użytkownika zależy od wielu czynników. Podczas projektowania interfejsu użytkownika rozwiązania, należy wziąć pod uwagę używa formantów Windows Forms zgodnie z opisem w poniższej tabeli.
+
+W dokumencie.
+- Kiedy chcesz wyświetlić kontrolki 100% czasu.
 
 - Kiedy chcesz użytkownikom na wprowadzanie danych bezpośrednio w dokumencie, na przykład w dokumentach opartego na formularzach, gdzie edycji powierzchni jest zablokowany.
 
 - Kiedy chcesz formantów do wyświetlania tworzone są dane w dokumencie. Na przykład jeśli chcesz dodać przyciski do każdego wiersza w obiekcie listy, należy je zgodnie z każdego elementu listy.
 
-  W okienku Akcje lub niestandardowego okienka zadań.
-  -   Kiedy chcesz udostępniać kontekstowe informacje do użytkownika.
+W okienku Akcje lub niestandardowego okienka zadań.
+- Kiedy chcesz udostępniać kontekstowe informacje do użytkownika.
 
 - Jeśli chcesz tylko wyniki były wyświetlane w dokumencie i nie formanty zapytania i danych.
 
@@ -62,8 +63,8 @@ ms.locfileid: "56598859"
 
 - Kiedy chcesz upewnić się, że formanty nie przeszkadzają ze stanowiskiem dokumentu.
 
-  W formularzu Windows.
-  -   Jeśli chcesz kontrolować rozmiar interfejsu użytkownika.
+W formularzu Windows.
+- Jeśli chcesz kontrolować rozmiar interfejsu użytkownika.
 
 - Kiedy chcesz uniemożliwić użytkownikom ukrywanie lub usuwanie kontrolek.
 
@@ -80,32 +81,32 @@ ms.locfileid: "56598859"
 ### <a name="create-custom-user-controls"></a>Tworzenie niestandardowych formantów użytkownika
  Można dodać kontrolkę użytkownika do projektu, a następnie dodać go do **przybornika**. Kontrolki użytkownika można następnie przeciągnąć bezpośrednio do dokumentu w taki sam sposób, należy dodać formant programu Windows Forms do dokumentu. Istnieje kilka kwestii, o których należy pamiętać, po utworzeniu kontrolki użytkownika:
 
--   Nie należy tworzyć **zapieczętowanego** kontrolki użytkownika. Przeciągnięcie formantu do dokumentu programu Visual Studio generuje klasę otoki pochodną klasy formantu użytkownika, aby rozszerzać go i obsługiwać jego użycia w dokumencie. Jeśli kontrolka użytkownika znajduje się **zapieczętowanego**, Visual Studio nie można wygenerować klasy otoki.
+- Nie należy tworzyć **zapieczętowanego** kontrolki użytkownika. Przeciągnięcie formantu do dokumentu programu Visual Studio generuje klasę otoki pochodną klasy formantu użytkownika, aby rozszerzać go i obsługiwać jego użycia w dokumencie. Jeśli kontrolka użytkownika znajduje się **zapieczętowanego**, Visual Studio nie można wygenerować klasy otoki.
 
--   Formanty użytkownika musi mieć <xref:System.Runtime.InteropServices.ComVisibleAttribute> ustawioną wartość atrybutu **true**. Formanty użytkownika utworzone w projekcie programu pakietu Office mają ten atrybut ustawiony na **true** przez domyślne, ale użytkownik formantów, które są częścią projektów poza może nie mieć tego atrybutu, wartość **true**.
+- Formanty użytkownika musi mieć <xref:System.Runtime.InteropServices.ComVisibleAttribute> ustawioną wartość atrybutu **true**. Formanty użytkownika utworzone w projekcie programu pakietu Office mają ten atrybut ustawiony na **true** przez domyślne, ale użytkownik formantów, które są częścią projektów poza może nie mieć tego atrybutu, wartość **true**.
 
--   Po dodaniu kontrolki użytkownika do dokumentu nie zmieniaj nazwy ani usunąć <xref:System.Windows.Forms.UserControl> klasy z projektu. Jeśli musisz zmienić nazwę kontrolki użytkownika należy najpierw usunąć z dokumentu i dodać je ponownie po zmianie nazwy.
+- Po dodaniu kontrolki użytkownika do dokumentu nie zmieniaj nazwy ani usunąć <xref:System.Windows.Forms.UserControl> klasy z projektu. Jeśli musisz zmienić nazwę kontrolki użytkownika należy najpierw usunąć z dokumentu i dodać je ponownie po zmianie nazwy.
 
 ### <a name="arrange-controls-at-design-time"></a>Rozmieszczanie formantów w czasie projektowania
  Jeśli dodasz kilka formantów do dokumentów programu Word i Excel w czasie projektowania, można szybko ustawić wyrównanie wszystkich wybranych kontrolek przy użyciu **Microsoft Office Word** i **Microsoft Office Excel**paski narzędzi w programie Visual Studio. Te paski narzędzi są dostępne tylko wtedy, gdy dokument lub skoroszyt jest otwarty w projektancie.
 
  Po wybraniu wielu formantów w projektancie, kontrolki będą ułożone za pomocą następujących przycisków na te paski narzędzi:
 
--   **Wyrównaj wej**
+- **Wyrównaj wej**
 
--   **Wyrównaj do centrów**
+- **Wyrównaj do centrów**
 
--   **Wyrównaj prawa**
+- **Wyrównaj prawa**
 
--   **Wyrównaj górne krawędzie**
+- **Wyrównaj górne krawędzie**
 
--   **Wyrównaj lewych**
+- **Wyrównaj lewych**
 
--   **Wyrównaj do dołu**
+- **Wyrównaj do dołu**
 
--   **Wprowadź równe odstępy w poziomie**
+- **Wprowadź równe odstępy w poziomie**
 
--   **Wprowadź odstępy w pionie**
+- **Wprowadź odstępy w pionie**
 
 > [!NOTE]
 >  W projektach programu Word przyciski te są włączone tylko wtedy, gdy wybrane formanty nie są zgodne z tekstu. Formanty, które dodają do dokumentu w czasie projektowania są domyślnie tworzone są tekstu.

@@ -11,12 +11,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4d5110c0289a630640fdb2c2383234173d931c72
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f1db922974c587cdeadc131d17c44cbab4b49af0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776452"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048544"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analizator i skaner starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -82,29 +82,29 @@ namespace MyNamespace
   
  Załóżmy, że usługa językowa obsługuje pasujące nawiasy klamrowe.  
   
-1.  Użytkownik wpisuje zamykający nawias klamrowy (}).  
+1. Użytkownik wpisuje zamykający nawias klamrowy (}).  
   
-2.  Nawiasów klamrowych jest wstawiana w lokalizacji kursora w pliku źródłowym i kursora jest zaawansowany o jeden.  
+2. Nawiasów klamrowych jest wstawiana w lokalizacji kursora w pliku źródłowym i kursora jest zaawansowany o jeden.  
   
-3.  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Method in Class metoda <xref:Microsoft.VisualStudio.Package.Source> klasy jest wywoływana z kontrolą typów zamykającego nawiasu klamrowego.  
+3. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Method in Class metoda <xref:Microsoft.VisualStudio.Package.Source> klasy jest wywoływana z kontrolą typów zamykającego nawiasu klamrowego.  
   
-4.  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Wywołania metody <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.Source> klasy w celu uzyskania tokenu w położeniu tuż przed aktualną pozycją kursora. Ten token odnosi się do typizowanych zamykający nawias klamrowy).  
+4. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Wywołania metody <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.Source> klasy w celu uzyskania tokenu w położeniu tuż przed aktualną pozycją kursora. Ten token odnosi się do typizowanych zamykający nawias klamrowy).  
   
-    1.  <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> Wywołania metody <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> metody <xref:Microsoft.VisualStudio.Package.Colorizer> obiektu, aby uzyskać wszystkie tokeny w bieżącym wierszu.  
+    1. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> Wywołania metody <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> metody <xref:Microsoft.VisualStudio.Package.Colorizer> obiektu, aby uzyskać wszystkie tokeny w bieżącym wierszu.  
   
-    2.  <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Wywołania metody <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> metody <xref:Microsoft.VisualStudio.Package.IScanner> obiekt z tekstem bieżącego wiersza.  
+    2. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Wywołania metody <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> metody <xref:Microsoft.VisualStudio.Package.IScanner> obiekt z tekstem bieżącego wiersza.  
   
-    3.  <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Wielokrotnie wywołuje metodę <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> metody <xref:Microsoft.VisualStudio.Package.IScanner> obiektu, aby zebrać wszystkie tokeny z bieżącego wiersza.  
+    3. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Wielokrotnie wywołuje metodę <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> metody <xref:Microsoft.VisualStudio.Package.IScanner> obiektu, aby zebrać wszystkie tokeny z bieżącego wiersza.  
   
-    4.  <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> Metoda wywołuje metodę prywatnej <xref:Microsoft.VisualStudio.Package.Source> klasy do uzyskania tokenu, który zawiera żądanej pozycji, a następnie przekazuje na liście tokenów uzyskany z <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> metody.  
+    4. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> Metoda wywołuje metodę prywatnej <xref:Microsoft.VisualStudio.Package.Source> klasy do uzyskania tokenu, który zawiera żądanej pozycji, a następnie przekazuje na liście tokenów uzyskany z <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> metody.  
   
-5.  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Metoda szuka Flaga tokenów wyzwalacza <xref:Microsoft.VisualStudio.Package.TokenTriggers> na token, który jest zwracany z <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> metody; oznacza to, że token, który reprezentuje zamykający nawias klamrowy).  
+5. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Metoda szuka Flaga tokenów wyzwalacza <xref:Microsoft.VisualStudio.Package.TokenTriggers> na token, który jest zwracany z <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> metody; oznacza to, że token, który reprezentuje zamykający nawias klamrowy).  
   
-6.  Jeśli wyzwalacz flagę <xref:Microsoft.VisualStudio.Package.TokenTriggers> zostanie znaleziony, <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.Source> nosi nazwę klasy.  
+6. Jeśli wyzwalacz flagę <xref:Microsoft.VisualStudio.Package.TokenTriggers> zostanie znaleziony, <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.Source> nosi nazwę klasy.  
   
-7.  <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> Metoda zaczyna się od operacji analizowania wartości Przyczyna analizy <xref:Microsoft.VisualStudio.Package.ParseReason>. Ta operacja ostatecznie wywołuje <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metody <xref:Microsoft.VisualStudio.Package.LanguageService> klasy. Jeśli włączono asynchroniczną analizy to wywołanie <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metoda występuje w wątku tła.  
+7. <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> Metoda zaczyna się od operacji analizowania wartości Przyczyna analizy <xref:Microsoft.VisualStudio.Package.ParseReason>. Ta operacja ostatecznie wywołuje <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metody <xref:Microsoft.VisualStudio.Package.LanguageService> klasy. Jeśli włączono asynchroniczną analizy to wywołanie <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metoda występuje w wątku tła.  
   
-8.  Po zakończeniu operacji analizowania, wewnętrznej procedury obsługi zakończenia (znany także jako metoda wywołania zwrotnego) o nazwie `HandleMatchBracesResponse` jest wywoływana w <xref:Microsoft.VisualStudio.Package.Source> klasy. To wywołanie jest wykonywane automatycznie przez <xref:Microsoft.VisualStudio.Package.LanguageService> podstawowej klasy, nie przez analizator.  
+8. Po zakończeniu operacji analizowania, wewnętrznej procedury obsługi zakończenia (znany także jako metoda wywołania zwrotnego) o nazwie `HandleMatchBracesResponse` jest wywoływana w <xref:Microsoft.VisualStudio.Package.Source> klasy. To wywołanie jest wykonywane automatycznie przez <xref:Microsoft.VisualStudio.Package.LanguageService> podstawowej klasy, nie przez analizator.  
   
 9. `HandleMatchBracesResponse` Metoda uzyskuje listę zakresów z <xref:Microsoft.VisualStudio.Package.AuthoringSink> obiekt, który jest przechowywany w <xref:Microsoft.VisualStudio.Package.ParseRequest> obiektu. (Zakres jest <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> strukturę, która określa zakres wierszy i znaków w pliku źródłowym.) Ta lista zakresy zazwyczaj zawiera dwa zakresy, jeden dla otwierające i zamykające nawiasy klamrowe.  
   

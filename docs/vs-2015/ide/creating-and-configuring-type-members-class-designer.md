@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c036680d540854eb3143875663aeac35a466884
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 5cee90bd16f0b7a151ca826517f081a89518ff5b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323610"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060660"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Tworzenie i konfigurowanie typów członków (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Możesz dodać te składowe do typów w klasie na diagramie i skonfigurować te 
 |**Rozpocznij pracę:** Zanim utworzysz i skonfigurujesz składowe typu, należy otworzyć okno Szczegóły klasy.|-   [Otwieranie okna Szczegóły klasy](../ide/creating-and-configuring-type-members-class-designer.md#OpenClassDetails)<br />-   [Uwagi dotyczące użycia okna Szczegóły klasy](../ide/creating-and-configuring-type-members-class-designer.md#ClassDetailsUsageNotes)<br />-   [Wyświetlanie informacji tylko do odczytu](../ide/creating-and-configuring-type-members-class-designer.md#ReadOnlyInfo)<br />-   [Skróty myszy i klawiaturowe w diagramie klas i oknie szczegółów klasy (Projektant klas)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md)|  
 |**Tworzenie i modyfikowanie składowych typu:** Można tworzyć nowe składowe, modyfikowanie składowych i Dodawanie parametrów do metody przy użyciu okna Szczegóły klasy.|-   [Tworzenie elementów członkowskich](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)<br />-   [Modyfikowanie elementów członkowskich typu](../ide/creating-and-configuring-type-members-class-designer.md#ModifyTypeMembers)<br />-   [Dodawanie parametrów do metod](../ide/creating-and-configuring-type-members-class-designer.md#AddMethodParams)|  
   
-##  <a name="OpenClassDetails"></a> Otwieranie okna Szczegóły klasy  
+## <a name="OpenClassDetails"></a> Otwieranie okna Szczegóły klasy  
  Domyślnie, okno Szczegóły klasy pojawia się automatycznie po otwarciu nowego diagramu klasy (zobacz [jak: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)). Okno Szczegóły klasy można otworzyć także jawnie, w następujący sposób.  
   
 #### <a name="to-open-the-class-details-window"></a>Aby otworzyć okno Szczegóły klasy  
@@ -73,16 +73,16 @@ Możesz dodać te składowe do typów w klasie na diagramie i skonfigurować te 
   
    — lub —  
   
--   Wskaż **Windows inne** w menu Widok, a następnie kliknij przycisk **szczegóły klasy**.  
+- Wskaż **Windows inne** w menu Widok, a następnie kliknij przycisk **szczegóły klasy**.  
   
-##  <a name="CreateMembers"></a> Tworzenie elementów członkowskich  
+## <a name="CreateMembers"></a> Tworzenie elementów członkowskich  
  Można utworzyć element członkowski, używając dowolnego z następujących narzędzi:  
   
--   Projektant klas  
+- Projektant klas  
   
--   Pasek narzędzi okna Szczegóły klasy  
+- Pasek narzędzi okna Szczegóły klasy  
   
--   Okno Szczegóły klasy  
+- Okno Szczegóły klasy  
   
 > [!NOTE]
 >  Można również utworzyć konstruktory i destruktory przy użyciu procedur opisanych w tej sekcji. Należy pamiętać, że konstruktory i destruktory to szczególne rodzaje metod i jako takie pojawiają się na **metody** przedziału w kształtach diagramu klas i w **metody** sekcji klasy Siatki okna Szczegóły.  
@@ -92,45 +92,45 @@ Możesz dodać te składowe do typów w klasie na diagramie i skonfigurować te 
   
 #### <a name="to-create-a-member-using-class-designer"></a>Aby utworzyć składową za pomocą Projektanta klas  
   
-1.  Kliknij prawym przyciskiem myszy typ, do którego chcesz dodać element członkowski, wskaż polecenie **Dodaj**, a następnie wybierz typ elementu członkowskiego, które chcesz dodać.  
+1. Kliknij prawym przyciskiem myszy typ, do którego chcesz dodać element członkowski, wskaż polecenie **Dodaj**, a następnie wybierz typ elementu członkowskiego, które chcesz dodać.  
   
      Nowa sygnatura elementu członkowskiego jest tworzona i dodawana do typu. Otrzymuje nazwę domyślną, która może zmieniać w **projektanta klas**, **szczegóły klasy** oknie lub w **właściwości** okna.  
   
-2.  Opcjonalnie określ inne szczegóły dotyczące elementu członkowskiego, takie jak jego typ.  
+2. Opcjonalnie określ inne szczegóły dotyczące elementu członkowskiego, takie jak jego typ.  
   
 #### <a name="to-create-a-member-using-the-class-details-window-toolbar"></a>Aby utworzyć składową za pomocą paska narzędzi okna Szczegóły klasy  
   
-1.  Na powierzchni diagramu wybierz typ, do którego chcesz dodać element członkowski.  
+1. Na powierzchni diagramu wybierz typ, do którego chcesz dodać element członkowski.  
   
      Typ uzyskuje fokus i jego zawartość jest wyświetlana w oknie Szczegóły klasy.  
   
-2.  Na pasku narzędzi okna Szczegóły klasy kliknij górną ikonę i wybierz pozycję **New \<składowej >** z listy rozwijanej.  
+2. Na pasku narzędzi okna Szczegóły klasy kliknij górną ikonę i wybierz pozycję **New \<składowej >** z listy rozwijanej.  
   
      Kursor przesuwa się do **nazwa** pola w wierszu dla rodzaju elementu członkowskiego, które chcesz dodać. Na przykład, jeśli kliknięto przycisk **nową właściwość**, kursor zostanie przeniesiony do nowego wiersza w **właściwości** okna Szczegóły klasy.  
   
-3.  Wpisz nazwę elementu członkowskiego, który chcesz utworzyć, i naciśnij klawisz Enter (lub przenieś fokus w inny sposób, np. za pomocą klawisza Tab).  
+3. Wpisz nazwę elementu członkowskiego, który chcesz utworzyć, i naciśnij klawisz Enter (lub przenieś fokus w inny sposób, np. za pomocą klawisza Tab).  
   
      Nowa sygnatura elementu członkowskiego jest tworzona i dodawana do typu. Składowa istnieje teraz w kodzie i jest wyświetlany w **projektanta klas**, okno Szczegóły klasy i w oknie właściwości.  
   
-4.  Opcjonalnie określ inne szczegóły dotyczące elementu członkowskiego, takie jak jego typ.  
+4. Opcjonalnie określ inne szczegóły dotyczące elementu członkowskiego, takie jak jego typ.  
   
 #### <a name="to-create-a-member-using-the-class-details-window"></a>Aby utworzyć składową za pomocą okna Szczegóły klasy  
   
-1.  Na powierzchni diagramu wybierz typ, do którego chcesz dodać element członkowski.  
+1. Na powierzchni diagramu wybierz typ, do którego chcesz dodać element członkowski.  
   
      Typ uzyskuje fokus i jego zawartość jest wyświetlana w oknie Szczegóły klasy.  
   
-2.  W oknie Szczegóły klasy, w sekcji zawierającej rodzaj elementu członkowskiego, które chcesz dodać, kliknij  **\<Dodawanie elementu członkowskiego >**. Na przykład jeśli chcesz dodać pole, kliknij pozycję  **\<Dodaj pole >**.  
+2. W oknie Szczegóły klasy, w sekcji zawierającej rodzaj elementu członkowskiego, które chcesz dodać, kliknij  **\<Dodawanie elementu członkowskiego >**. Na przykład jeśli chcesz dodać pole, kliknij pozycję  **\<Dodaj pole >**.  
   
-3.  Wpisz nazwę elementu członkowskiego, który chcesz utworzyć, a następnie naciśnij klawisz Enter.  
+3. Wpisz nazwę elementu członkowskiego, który chcesz utworzyć, a następnie naciśnij klawisz Enter.  
   
      Nowa sygnatura elementu członkowskiego jest tworzona i dodawana do typu. Składowa istnieje teraz w kodzie i jest wyświetlany w **projektanta klas**, okno Szczegóły klasy i w oknie właściwości.  
   
-4.  Opcjonalnie określ inne szczegóły dotyczące elementu członkowskiego, takie jak jego typ.  
+4. Opcjonalnie określ inne szczegóły dotyczące elementu członkowskiego, takie jak jego typ.  
   
      **Uwaga:** Skróty klawiaturowe można również użyć do tworzenia elementów członkowskich. Aby uzyskać więcej informacji, zobacz [skróty myszy i klawiaturowe w diagramie klas i oknie szczegółów klasy (Projektant klas)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md).  
   
-##  <a name="ModifyTypeMembers"></a> Modyfikowanie elementów członkowskich typu  
+## <a name="ModifyTypeMembers"></a> Modyfikowanie elementów członkowskich typu  
  Projektant klas umożliwia modyfikowanie składowych typów, które są wyświetlane na diagramie. Można modyfikować składowe dowolnego typu wyświetlane na diagramie klasy, które nie są tylko do odczytu. (Zobacz [wyświetlanie informacji tylko do odczytu (Projektant klas)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Składowe typu modyfikuje się za pomocą edycji w miejscu na powierzchni projektowej, w oknie Właściwości i w oknie Szczegóły klasy.  
   
  Wszystkie składowe wyświetlane w oknie Szczegóły klasy reprezentują składowe typów na diagramie klasy. Istnieją cztery rodzaje elementów członkowskich: metody, właściwości, pola i zdarzenia.  
@@ -139,52 +139,52 @@ Możesz dodać te składowe do typów w klasie na diagramie i skonfigurować te 
   
  Każdy wiersz elementu członkowskiego zawiera następujące elementy:  
   
--   **Ikona elementu członkowskiego**  
+- **Ikona elementu członkowskiego**  
   
      Każdy rodzaj elementu członkowskiego jest reprezentowany przez własną ikonę. Wskaż myszą ikonę elementu członkowskiego, aby wyświetlić sygnaturę elementu członkowskiego. Kliknij ikonę elementu członkowskiego lub przestrzeń z lewej strony ikony elementu członkowskiego, aby zaznaczyć wiersz.  
   
--   **Nazwa elementu członkowskiego**  
+- **Nazwa elementu członkowskiego**  
   
      **Nazwa** kolumny w wierszu elementu członkowskiego Wyświetla nazwę elementu członkowskiego. Ta nazwa jest wyświetlany na **nazwa** właściwości w oknie dialogowym właściwości. Ta komórka służy do zmiany nazwy któregokolwiek elementu członkowskiego, który ma uprawnienia odczytu i zapisu.  
   
      Jeśli **nazwa** kolumna jest zbyt wąska, aby wyświetlić całą nazwę, wskazanie myszą na nazwę elementu członkowskiego powoduje wyświetlenie całej nazwy.  
   
--   **Typ elementu członkowskiego**  
+- **Typ elementu członkowskiego**  
   
      **MemberType** komórki korzysta z technologii IntelliSense, która pozwala na wybranie z listy wszystkich typów dostępnych w bieżącym projekcie lub w projektach odwołania.  
   
--   **Modyfikator składowej**  
+- **Modyfikator składowej**  
   
      Zmień widoczność modyfikator elementu członkowskiego albo `Public` (`public`), `Private` (`private`), `Friend` (`internal`) `Protected` (`protected`), `Protected``Friend` (`protected``internal`), lub `Default`.  
   
--   **\<Dodaj element członkowski >**  
+- **\<Dodaj element członkowski >**  
   
      Ostatni wiersz w oknie Szczegóły klasy zawiera tekst  **\<Dodawanie elementu członkowskiego >** w **nazwa** komórki. Po kliknięciu tej komórki, można utworzyć nowy element członkowski. Aby uzyskać więcej informacji, zobacz [tworzenie elementów członkowskich](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
   
--   **Właściwości elementu członkowskiego w oknie dialogowym właściwości**  
+- **Właściwości elementu członkowskiego w oknie dialogowym właściwości**  
   
      Okno Szczegóły klasy zawiera podzbiór właściwości składowych, które są wyświetlane w oknie Właściwości. Zmiana właściwości w jednej lokalizacji zaktualizuje globalnie wartość właściwości. Obejmuje to wyświetlanie jej wartości w innej lokalizacji.  
   
--   **Podsumowanie**  
+- **Podsumowanie**  
   
      **Podsumowania** komórki uwidacznia podsumowanie informacji na temat elementu członkowskiego. Kliknij przycisk wielokropka w **Podsumowanie** komórki, aby wyświetlić lub edytować informacje o **Podsumowanie**, **typie zwracanym**, i **uwagi** dla elementu członkowskiego .  
   
--   **Ukryj**  
+- **Ukryj**  
   
      Gdy **Ukryj** pole wyboru jest zaznaczone, element członkowski nie jest wyświetlany w typie.  
   
 #### <a name="to-modify-a-type-member"></a>Aby zmodyfikować element członkowski typu  
   
-1.  Za pomocą Projektanta klas, wybierz typ.  
+1. Za pomocą Projektanta klas, wybierz typ.  
   
-2.  Jeśli nie zostanie wyświetlone okno Szczegóły klasy, kliknij przycisk **okna Szczegóły klasy** przycisk na pasku narzędzi projektanta klas.  
+2. Jeśli nie zostanie wyświetlone okno Szczegóły klasy, kliknij przycisk **okna Szczegóły klasy** przycisk na pasku narzędzi projektanta klas.  
   
-3.  Edytuj wartości w polach w siatce okna Szczegóły klasy. Po każdej modyfikacji naciśnij klawisz ENTER lub w inny sposób przenieś fokus kursora z edytowanego pola, na przykład, naciskając klawisz TAB. Zmiany odzwierciedlają się bezpośrednio w kodzie.  
+3. Edytuj wartości w polach w siatce okna Szczegóły klasy. Po każdej modyfikacji naciśnij klawisz ENTER lub w inny sposób przenieś fokus kursora z edytowanego pola, na przykład, naciskając klawisz TAB. Zmiany odzwierciedlają się bezpośrednio w kodzie.  
   
     > [!NOTE]
     >  Jeśli chcesz zmodyfikować jedynie nazwę elementu członkowskiego, możesz to zrobić za pomocą edycji w miejscu.  
   
-##  <a name="AddMethodParams"></a> Dodawanie parametrów do metod  
+## <a name="AddMethodParams"></a> Dodawanie parametrów do metod  
  Dodaj parametry do metod przy użyciu okna Szczegóły klasy. Parametry mogą być skonfigurowane jako wymagane lub opcjonalne. Podanie wartości dla **opcjonalny domyślny** właściwości parametru powoduje, że projektant generuje kod jako parametr opcjonalny.  
   
  Wiersze parametrów zawierają następujące elementy:  
@@ -221,42 +221,42 @@ Możesz dodać te składowe do typów w klasie na diagramie i skonfigurować te 
 > [!NOTE]
 >  Chociaż destruktor jest metodą, to nie może mieć parametrów.  
   
-###  <a name="HowToAddParameterToMethod"></a> Aby dodać parametr do metody  
+### <a name="HowToAddParameterToMethod"></a> Aby dodać parametr do metody  
   
-1.  Na powierzchni diagramu kliknij typ zawierający metodę, do której chcesz dodać parametr.  
+1. Na powierzchni diagramu kliknij typ zawierający metodę, do której chcesz dodać parametr.  
   
      Typ uzyskuje fokus i jego zawartość wyświetla się w oknie Szczegóły klasy.  
   
-2.  W oknie Szczegóły klasy rozszerz wiersz metody, do której chcesz dodać parametr.  
+2. W oknie Szczegóły klasy rozszerz wiersz metody, do której chcesz dodać parametr.  
   
      Pojawi się wiersz parametru z wcięciem, zawierający tylko parę nawiasów i wyrazy  **\<Dodaj parametr >.**  
   
-3.  Kliknij przycisk  **\<Dodaj parametr >**, wpisz nazwę nowego parametru, a następnie naciśnij klawisz **Enter**.  
+3. Kliknij przycisk  **\<Dodaj parametr >**, wpisz nazwę nowego parametru, a następnie naciśnij klawisz **Enter**.  
   
      Nowy parametr jest dodawany do metody i kodu metody. Wyświetla się w oknie Szczegóły klasy i w oknie Właściwości.  
   
-4.  Opcjonalnie określ inne szczegóły dotyczące parametru, takie jak jego typ.  
+4. Opcjonalnie określ inne szczegóły dotyczące parametru, takie jak jego typ.  
   
 ### <a name="to-add-an-optional-parameter-to-a-method"></a>Aby dodać opcjonalny parametr do metody  
   
-1.  Na powierzchni diagramu kliknij typ zawierający metodę, do której chcesz dodać opcjonalny parametr.  
+1. Na powierzchni diagramu kliknij typ zawierający metodę, do której chcesz dodać opcjonalny parametr.  
   
      Typ uzyskuje fokus i jego zawartość wyświetla się w oknie Szczegóły klasy.  
   
-2.  W oknie Szczegóły klasy rozszerz wiersz metody, do której chcesz dodać opcjonalny parametr.  
+2. W oknie Szczegóły klasy rozszerz wiersz metody, do której chcesz dodać opcjonalny parametr.  
   
      Pojawi się wiersz parametru z wcięciem, zawierający tylko parę nawiasów i wyrazy  **\<Dodaj parametr >.**  
   
-3.  Kliknij przycisk  **\<Dodaj parametr >**, wpisz nazwę nowego parametru, a następnie naciśnij klawisz **Enter**.  
+3. Kliknij przycisk  **\<Dodaj parametr >**, wpisz nazwę nowego parametru, a następnie naciśnij klawisz **Enter**.  
   
      Nowy parametr jest dodawany do metody i kodu metody. Wyświetla się w oknie Szczegóły klasy i w oknie Właściwości.  
   
-4.  W oknie właściwości wpisz wartość dla **opcjonalny domyślny** właściwości. Ustawienie właściwości Opcjonalny domyślny parametru powoduje, że ten parametr staje się opcjonalny.  
+4. W oknie właściwości wpisz wartość dla **opcjonalny domyślny** właściwości. Ustawienie właściwości Opcjonalny domyślny parametru powoduje, że ten parametr staje się opcjonalny.  
   
     > [!NOTE]
     >  Opcjonalne parametry muszą być ostatnimi parametrami na liście parametrów.  
   
-##  <a name="ClassDetailsUsageNotes"></a> Uwagi dotyczące użycia okna Szczegóły klasy  
+## <a name="ClassDetailsUsageNotes"></a> Uwagi dotyczące użycia okna Szczegóły klasy  
  Zwróć uwagę na poniższe porady dotyczące korzystania z okna Szczegóły klasy.  
   
  **Komórki edytowalne i nieedytowalne**  
@@ -285,7 +285,7 @@ Możesz dodać te składowe do typów w klasie na diagramie i skonfigurować te 
   
   Można skopiować lub wyciąć pola lub wiersze w oknie Szczegóły klasy i wkleić je do innego typu. Wiersz można wyciąć tylko wtedy, gdy nie jest tylko do odczytu. Podczas wklejania wiersza, okno Szczegóły klasy przypisuje nową nazwę (pochodzącą z nazwy skopiowanego wiersza), aby uniknąć konfliktu.  
   
-##  <a name="ReadOnlyInfo"></a> Wyświetlanie informacji tylko do odczytu  
+## <a name="ReadOnlyInfo"></a> Wyświetlanie informacji tylko do odczytu  
  Projektant klasy i okno Szczegóły klasy mogą wyświetlać typy (i składowe) dla następujących składowych:  
   
 - projekt, który zawiera diagram klas  

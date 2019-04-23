@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6a72f78e89af41509711c94a00c8ab11b11fc549
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 006a3fa3d41799a87449b8f9e111ca341a698bf5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59018223"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041650"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi
 
@@ -44,6 +44,7 @@ Ponadto [interfejs API konfiguracji instalacji](<xref:Microsoft.VisualStudio.Set
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
 ```
+
 ::: moniker range="vs-2017"
 
 > [!TIP]
@@ -64,6 +65,7 @@ Ponieważ te wpisy nie są przechowywane w rejestrze globalnego, istnieją specj
 1. Wybierz `HKEY_LOCAL_MACHINE` węzła.
 
 1. Wybierz z menu głównego Regedit **pliku** > **Załaduj gałąź rejestru...**  a następnie wybierz plik rejestru prywatnego, który jest przechowywany w **AppData\Local** folderu. Na przykład:
+
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```

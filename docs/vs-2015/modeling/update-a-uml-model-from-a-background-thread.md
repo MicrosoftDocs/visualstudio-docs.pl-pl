@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd0707ec7838ffb2dcebc8a176c79810f2614133
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d5a7ad318b5bd9fac41d5e8835169e4075d1da67
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796462"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093010"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Aktualizowanie modelu UML z wątku w tle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ Czasami może być przydatny do wprowadzania zmian do modelu w wątku w tle. Na 
   
  Jednak należy pamiętać, że magazyn UML nie jest bezpieczny dla wątków. Ważne są następujące środki ostrożności:  
   
--   Każda aktualizacji modelu lub diagramu musi nastąpić w wątku interfejsu użytkownika. Wątek tła musi użyć <xref:System.Windows.Forms.Control.Invoke%2A> lub `Dispatcher.` <xref:System.Windows.Threading.Dispatcher.Invoke%2A> mieć wątku interfejsu użytkownika wykona bieżące aktualizacje.  
+- Każda aktualizacji modelu lub diagramu musi nastąpić w wątku interfejsu użytkownika. Wątek tła musi użyć <xref:System.Windows.Forms.Control.Invoke%2A> lub `Dispatcher.` <xref:System.Windows.Threading.Dispatcher.Invoke%2A> mieć wątku interfejsu użytkownika wykona bieżące aktualizacje.  
   
--   Jeśli grupujesz serie zmian w pojedynczą transakcję, zaleca się, że można uniemożliwić użytkownikowi edytowanie modelu gdy transakcja jest w toku. W przeciwnym razie zmiany wprowadzone przez użytkownika staną się częścią tej samej transakcji. Aby uniemożliwić użytkownikowi dokonywanie zmian poprzez wyświetlenie modalnego okna dialogowego. Jeśli chcesz, możesz dostarczyć przycisk Anuluj w oknie dialogowym. Użytkownik może wyświetlić zmiany po ich wprowadzeniu.  
+- Jeśli grupujesz serie zmian w pojedynczą transakcję, zaleca się, że można uniemożliwić użytkownikowi edytowanie modelu gdy transakcja jest w toku. W przeciwnym razie zmiany wprowadzone przez użytkownika staną się częścią tej samej transakcji. Aby uniemożliwić użytkownikowi dokonywanie zmian poprzez wyświetlenie modalnego okna dialogowego. Jeśli chcesz, możesz dostarczyć przycisk Anuluj w oknie dialogowym. Użytkownik może wyświetlić zmiany po ich wprowadzeniu.  
   
 ## <a name="example"></a>Przykład  
  W tym przykładzie użyto wątku w tle, aby wprowadzić wiele zmian do modelu. Okno dialogowe służy do wykluczenia użytkownika, gdy wątek jest uruchomiony. W tym prostym przykładzie Brak przycisku Anuluj znajduje się w oknie dialogowym. Jednakże może być łatwo dodać tę funkcję.  
@@ -36,17 +36,17 @@ Czasami może być przydatny do wprowadzania zmian do modelu w wątku w tle. Na 
   
 2. Upewnij się, że projekt zawiera odwołania do tych zestawów:  
   
-   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+   - Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.[version]  
+   - Microsoft.VisualStudio.Modeling.Sdk.[version]  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
   
-   -   Microsoft.VisualStudio.Uml.Interfaces  
+   - Microsoft.VisualStudio.Uml.Interfaces  
   
-   -   System.ComponentModel.Composition  
+   - System.ComponentModel.Composition  
   
-   -   System.Windows.Forms  
+   - System.Windows.Forms  
   
 3. Dodaj do projektu formularz Windows o nazwie **ProgressForm**. Powinna zostać wyświetlona komunikat informujący o tym, że aktualizacje są w toku. Nie ma mieć żadnych innych formantów.  
   
@@ -162,9 +162,9 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
   
 #### <a name="to-allow-the-user-to-cancel-the-thread-in-the-example"></a>Aby zezwolić użytkownikowi anulowanie wątku w przykładzie  
   
-1.  Dodaj przycisk Anuluj do okna dialogowego postępu.  
+1. Dodaj przycisk Anuluj do okna dialogowego postępu.  
   
-2.  Dodaj następujący kod do okna dialogowego postępu:  
+2. Dodaj następujący kod do okna dialogowego postępu:  
   
      `public event MethodInvoker Cancel;`  
   
@@ -176,7 +176,7 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
   
      `}`  
   
-3.  W metodzie Execute() Wstaw ten wiersz po zbudowaniu formularza:  
+3. W metodzie Execute() Wstaw ten wiersz po zbudowaniu formularza:  
   
      `form.Cancel += delegate() { worker.CancelAsync(); };`  
   

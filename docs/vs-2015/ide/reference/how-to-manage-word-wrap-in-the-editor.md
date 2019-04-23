@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ff92e93d2fa15591afddddc1a012ff94b8ba6c0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 172c5b049e19700d3ce2e4ff1fe43490a2194a92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656014"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088044"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Instrukcje: Zarządzanie zawijaniem wierszy w edytorze
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Można ustawić lub wyczyścić **zawijanie** opcji. Gdy ta opcja jest ustawiona
   
 #### <a name="to-set-word-wrap-preferences"></a>Można ustawić preferencje zawijania programu word  
   
-1.  Na **narzędzia** menu, wybierz opcję **opcje**.  
+1. Na **narzędzia** menu, wybierz opcję **opcje**.  
   
-2.  W **edytora tekstów** folderu, wybierz **ogólne** opcji na liście **wszystkie języki** podfolder, aby ustawić tę opcję, globalnie.  
+2. W **edytora tekstów** folderu, wybierz **ogólne** opcji na liście **wszystkie języki** podfolder, aby ustawić tę opcję, globalnie.  
   
      — lub —  
   
      Wybierz **ogólne** opcje w podfolderze dla języka, możesz programowania.  
   
-3.  W obszarze **ustawienia**, zaznacz lub wyczyść **zawijanie** opcji.  
+3. W obszarze **ustawienia**, zaznacz lub wyczyść **zawijanie** opcji.  
   
      Gdy **zawijanie** opcja jest zaznaczona, **Pokaż zualne przy zawijaniu wierszy** opcja jest włączona.  
   
-4.  Wybierz **wyświetlane zualne zawijanie** opcję, jeśli chcesz wyświetlić wskaźnik zwracany strzałkę, gdzie długi wiersz zawijana drugi wiersz. Usuń zaznaczenie tej opcji, jeśli nie chcesz wyświetlić strzałki wskaźnika.  
+4. Wybierz **wyświetlane zualne zawijanie** opcję, jeśli chcesz wyświetlić wskaźnik zwracany strzałkę, gdzie długi wiersz zawijana drugi wiersz. Usuń zaznaczenie tej opcji, jeśli nie chcesz wyświetlić strzałki wskaźnika.  
   
     > [!NOTE]
     >  Tych strzałek monitu nie są dodawane do kodu: są wyłącznie w celach wyświetlania.  

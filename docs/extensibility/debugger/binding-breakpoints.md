@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34914f382ded8dc7fbea4db49517c17024a8e3a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5c36e5df52d4caa34d611f7f1c26b8a5187a637a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720656"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077566"
 ---
 # <a name="bind-breakpoints"></a>Powiąż punktów przerwania
 Jeśli użytkownik ustawia punkt przerwania, być może, naciskając klawisz **F9**, IDE formulates żądanie i wyświetla monit o sesji debugowania, aby utworzyć punkt przerwania.
@@ -23,15 +23,15 @@ Jeśli użytkownik ustawia punkt przerwania, być może, naciskając klawisz **F
 ## <a name="set-a-breakpoint"></a>Ustaw punkt przerwania
  Ustawienie punktu przerwania jest procesem dwuetapowym, ponieważ kod lub wpływ punkt przerwania danych mogą jeszcze być niedostępne. Najpierw należy opisać punkt przerwania, a następnie kodu lub danych staje się dostępny, jego musi być powiązana z tego kodu lub danych, w następujący sposób:
 
-1.  Punkt przerwania zostanie wywołana z silniki debugowania odpowiednie (DEs), a następnie punkt przerwania jest powiązany z kodu lub danych, po jej udostępnieniu.
+1. Punkt przerwania zostanie wywołana z silniki debugowania odpowiednie (DEs), a następnie punkt przerwania jest powiązany z kodu lub danych, po jej udostępnieniu.
 
-2.  Żądanie przerwania jest wysyłane do sesji debugowania i wysyła je do wszystkich odpowiednich DEs. Wszelkie DE, który wybiera do obsługi punktu przerwania tworzy odpowiedni oczekujących punktów przerwania.
+2. Żądanie przerwania jest wysyłane do sesji debugowania i wysyła je do wszystkich odpowiednich DEs. Wszelkie DE, który wybiera do obsługi punktu przerwania tworzy odpowiedni oczekujących punktów przerwania.
 
-3.  Sesja debugowania umożliwia zbieranie informacji o oczekujących punktów przerwania i wysyła je do pakietu debugowania (składnik debugowania programu Visual Studio).
+3. Sesja debugowania umożliwia zbieranie informacji o oczekujących punktów przerwania i wysyła je do pakietu debugowania (składnik debugowania programu Visual Studio).
 
-4.  Debugowanie pakietu monituje o sesji debugowania, aby powiązać oczekujący punkt przerwania z kodu lub danych. Sesja debugowania wysyła to żądanie do wszystkich odpowiednich DEs.
+4. Debugowanie pakietu monituje o sesji debugowania, aby powiązać oczekujący punkt przerwania z kodu lub danych. Sesja debugowania wysyła to żądanie do wszystkich odpowiednich DEs.
 
-5.  Jeśli DE jest w stanie powiązać punkt przerwania, wysyła to, że punkt przerwania powiązane zdarzenia do sesji debugowania. W przeciwnym razie zamiast wysyła zdarzenie błąd punktu przerwania.
+5. Jeśli DE jest w stanie powiązać punkt przerwania, wysyła to, że punkt przerwania powiązane zdarzenia do sesji debugowania. W przeciwnym razie zamiast wysyła zdarzenie błąd punktu przerwania.
 
 ## <a name="pending-breakpoints"></a>Oczekujących punktów przerwania
  Oczekujący punkt przerwania można powiązać wiele lokalizacji kodu. Na przykład wiersz kodu źródłowego dla szablonów języka C++ można powiązać każdy sekwencji kod generowany na podstawie szablonu. Sesja debugowania zdarzenia można użyć w punkt przerwania powiązanej wyliczyć kontekstów kod powiązany punkt przerwania w czasie, w którym zdarzenie zostało wysłane. Więcej kontekstów kod może być powiązana później, więc DE może wysłać zdarzenia dla każdego żądania powiązania powiązany wiele punkt przerwania. Jednak DE należy wysłać tylko jedno zdarzenie błędu punkt przerwania na żądania powiązania.

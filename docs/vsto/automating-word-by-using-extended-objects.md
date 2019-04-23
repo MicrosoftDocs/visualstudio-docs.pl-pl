@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cdcb13c493fbffb147d2f91c48bfff5b37e3a6d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c75708afa3c230dcc4bba308cf2d7c97b77d802b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598274"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050936"
 ---
 # <a name="automate-word-by-using-extended-objects"></a>Automatyzowanie programu Word za pomocą obiektów rozszerzonych
   Podczas opracowywania rozwiązań programu Word w programie Visual Studio, możesz użyć *hostować elementy* i *kontrolki hosta*s w posiadanych rozwiązaniach. Są to obiekty, które rozszerzają niektóre powszechnie używane obiekty w modelu obiektów programu Word (oznacza to, że model obiektu, który jest udostępniany przez podstawowy zestaw międzyoperacyjny dla programu Word), takie jak <xref:Microsoft.Office.Interop.Word.Document> i <xref:Microsoft.Office.Interop.Word.ContentControl> obiektów. Obiekty rozszerzone zachowują się jak obiekty programu Word, w których są one oparte na, ale dodają dodatkowe zdarzenia i możliwości wiązania danych do obiektów.
@@ -39,20 +39,20 @@ ms.locfileid: "56598274"
 
  Aby uzyskać więcej informacji, zobacz [element hosta dokumentu](../vsto/document-host-item.md).
 
-## <a name="word-host-controls"></a>kontrolki hosta programu Word
+## <a name="word-host-controls"></a>formanty hosta programu Word
  Istnieje kilka hosta formantów dla programu Word, które ułatwiają tworzenie, organizowanie i automatyzowanie dokumentów. Większość ich funkcji obejmuje importowania, prezentowania i ochrony danych. Te kontrolki hosta zapewniają zdarzenia oraz funkcje wiązania danych, które nie mają ich odpowiedników w macierzystym modelu obiektów programu Word.
 
  W projektach na poziomie dokumentu można dodać dowolną kontrolkę hosta do dokumentu w czasie projektowania lub można dodać kontrolki zawartości oraz zakładki, które znajdują się w czasie wykonywania. W projektach dodatku narzędzi VSTO można dodać formanty zawartości i formantów zakładek do dowolnego otwartego dokumentu w czasie wykonywania.
 
  Aby uzyskać informacje o kontrolkach hosta, którego można używać w projektach programu Word zobacz następujące tematy:
 
--   [Formanty zawartości](../vsto/content-controls.md)
+- [Formanty zawartości](../vsto/content-controls.md)
 
--   [BOOKMARK, kontrolka](../vsto/bookmark-control.md)
+- [BOOKMARK, kontrolka](../vsto/bookmark-control.md)
 
--   [Formant XMLNode](../vsto/xmlnode-control.md)
+- [Formant XMLNode](../vsto/xmlnode-control.md)
 
--   [Formant XMLNodes](../vsto/xmlnodes-control.md)
+- [Formant XMLNodes](../vsto/xmlnodes-control.md)
 
 ## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)

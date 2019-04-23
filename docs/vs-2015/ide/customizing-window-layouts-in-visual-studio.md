@@ -24,12 +24,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c02bd6bfdbb11a42688bb434cecfd5748e072d96
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 337c57c79e55c5113bb4411a091d2c29a954c342
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802032"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098587"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Dostosowywanie układów okien w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,11 +120,11 @@ W programie Visual Studio można dostosować położenie, rozmiar i zachowanie s
 ### <a name="reset-name-and-switch-between-window-layouts"></a>Resetowanie, nazwę i przełączać się między układy okien
  Możesz powrócić IDE do oryginalnego layoutu okna zestawu ustawień za pomocą **Zresetuj układ okna** polecenia. Po uruchomieniu tego polecenia, są wykonywane następujące akcje:
 
--   Wszystkie okna są przenoszone do ich domyślnych pozycji.
+- Wszystkie okna są przenoszone do ich domyślnych pozycji.
 
--   Windows, które zostały zamknięte w domyślnym układzie okien są zamknięte.
+- Windows, które zostały zamknięte w domyślnym układzie okien są zamknięte.
 
--   Windows, które są otwarte w domyślnym układzie okien są otwarte.
+- Windows, które są otwarte w domyślnym układzie okien są otwarte.
 
 ### <a name="create-and-save-custom-layouts"></a>Utworzyć i zapisać niestandardowe układy
  Program Visual Studio 2015 można zapisać maksymalnie 10 niestandardowe układy okien i szybko przełączaj się między nimi. Poniższe kroki pokazują sposób tworzenia, zapisywania, wywołania i zarządzać układy niestandardowe, które wykorzystują wielu monitorów z oba okna zadokowane i przestawne narzędzie.
@@ -133,29 +133,29 @@ W programie Visual Studio można dostosować położenie, rozmiar i zachowanie s
 
 ##### <a name="create-a-ui-project-and-customize-the-layout"></a>Utwórz projekt interfejsu użytkownika i dostosować układ
 
-1.  W **nowy projekt** okno dialogowe, utworzyć Visual C# WPF aplikacji dla komputerów osobistych i wywołać go wedle uznania. Poudawać, że jest to projekt, gdzie możemy pracować w interfejsie użytkownika, więc chcemy zmaksymalizować miejsce w oknie projektanta, a następnie przejść z innymi oknami narzędzi.
+1. W **nowy projekt** okno dialogowe, utworzyć Visual C# WPF aplikacji dla komputerów osobistych i wywołać go wedle uznania. Poudawać, że jest to projekt, gdzie możemy pracować w interfejsie użytkownika, więc chcemy zmaksymalizować miejsce w oknie projektanta, a następnie przejść z innymi oknami narzędzi.
 
-2.  Jeśli masz wiele monitorów, ściąganie **Eksploratora rozwiązań** okna i **właściwości** okna za pośrednictwem drugiego monitora. W systemie pojedynczy monitor Zamknij wszystkie okna z wyjątkiem projektanta.
+2. Jeśli masz wiele monitorów, ściąganie **Eksploratora rozwiązań** okna i **właściwości** okna za pośrednictwem drugiego monitora. W systemie pojedynczy monitor Zamknij wszystkie okna z wyjątkiem projektanta.
 
-3.  Naciśnij klawisz **Ctrl + Alt + X** do wyświetlenia przybornika. Jeśli okno jest zadokowany, przeciągnij go tak, aby liczby zmiennoprzecinkowe, innym miejscu, gdzie chcesz umieść dla dowolnego monitora.
+3. Naciśnij klawisz **Ctrl + Alt + X** do wyświetlenia przybornika. Jeśli okno jest zadokowany, przeciągnij go tak, aby liczby zmiennoprzecinkowe, innym miejscu, gdzie chcesz umieść dla dowolnego monitora.
 
-4.  Naciśnij klawisz F5, aby umieścić programu Visual Studio w trybie debugowania. Dostosować położenie zmiennych automatycznych i stosu wywołań dane wyjściowe debugowania systemu windows w żądany sposób. Układ, który masz zamiar utworzyć dotyczą zarówno trybem edycji i w trybie debugowania.
+4. Naciśnij klawisz F5, aby umieścić programu Visual Studio w trybie debugowania. Dostosować położenie zmiennych automatycznych i stosu wywołań dane wyjściowe debugowania systemu windows w żądany sposób. Układ, który masz zamiar utworzyć dotyczą zarówno trybem edycji i w trybie debugowania.
 
-5.  Kiedy układów w trybie debugowania i tryb edycji są, jak chcesz, w menu głównym wybierz **okna > Zapisz układ okna**. Wywołaj ten układ "Designer".
+5. Kiedy układów w trybie debugowania i tryb edycji są, jak chcesz, w menu głównym wybierz **okna > Zapisz układ okna**. Wywołaj ten układ "Designer".
 
      Należy pamiętać, nowy układ jest przypisany dalej skrótu klawiaturowego z zarezerwowanych listy Ctrl + Alt + 1... 0.
 
 ##### <a name="create-a-database-project-and-layout"></a>Tworzenie bazy danych projektu i układu
 
-1.  Dodaj nową **bazy danych SQL Server** projektu do rozwiązania.
+1. Dodaj nową **bazy danych SQL Server** projektu do rozwiązania.
 
-2.  Kliknij prawym przyciskiem myszy na nowy projekt w Eksploratorze rozwiązań i wybierz polecenie **widoku w Eksploratorze obiektów**. Spowoduje to wyświetlenie **Eksplorator obiektów SQL Server** okno, które umożliwia dostęp do tabel, widoków i innych obiektów w bazie danych. Można przestawić to okno lub zostawić zadokowany. Dostosuj innymi oknami narzędzi w żądany sposób. Dla dodano realizmu można dodać istniejącej bazy danych, ale nie jest konieczne w ramach tego przewodnika.
+2. Kliknij prawym przyciskiem myszy na nowy projekt w Eksploratorze rozwiązań i wybierz polecenie **widoku w Eksploratorze obiektów**. Spowoduje to wyświetlenie **Eksplorator obiektów SQL Server** okno, które umożliwia dostęp do tabel, widoków i innych obiektów w bazie danych. Można przestawić to okno lub zostawić zadokowany. Dostosuj innymi oknami narzędzi w żądany sposób. Dla dodano realizmu można dodać istniejącej bazy danych, ale nie jest konieczne w ramach tego przewodnika.
 
-3.  Gdy układ jest, jak chcesz, w menu głównym wybierz **okna > Zapisz układ okna**. Wywołaj ten układ "Projekt bazy danych". (Firma Microsoft nie będą odblokowane z układem trybu debugowania dla tego projektu.)
+3. Gdy układ jest, jak chcesz, w menu głównym wybierz **okna > Zapisz układ okna**. Wywołaj ten układ "Projekt bazy danych". (Firma Microsoft nie będą odblokowane z układem trybu debugowania dla tego projektu.)
 
 ##### <a name="switch-between-the-layouts"></a>Przełączanie między układów
 
-1.  Aby przełączyć się między układów, skróty klawiaturowe lub w menu głównym wybierz **okna > Zastosuj układ okna**.
+1. Aby przełączyć się między układów, skróty klawiaturowe lub w menu głównym wybierz **okna > Zastosuj układ okna**.
 
      ![Zastosuj menu Układ okna](../ide/media/vs2015-applywindowlayout.png "VS2015_ApplyWindowLayout")
 
@@ -167,7 +167,7 @@ W programie Visual Studio można dostosować położenie, rozmiar i zachowanie s
 
 ##### <a name="manage-and-roam-your-layouts"></a>Zarządzanie i są przekazywane układów
 
-1.  Można usunąć, zmienić lub zmiana kolejności układu niestandardowego, wybierając **okna > Zarządzaj układami okien**. Jeśli przenosisz układu, klucz powiązania jest automatycznie dostosowywany do nowej pozycji na liście. Powiązania nie może być inny sposób modyfikować, a więc może przechowywać maksymalnie 10 układów w danym momencie.
+1. Można usunąć, zmienić lub zmiana kolejności układu niestandardowego, wybierając **okna > Zarządzaj układami okien**. Jeśli przenosisz układu, klucz powiązania jest automatycznie dostosowywany do nowej pozycji na liście. Powiązania nie może być inny sposób modyfikować, a więc może przechowywać maksymalnie 10 układów w danym momencie.
 
      ![Zarządzanie układami okien](../ide/media/managewindowlayouts.png "ManageWindowLayouts")
 

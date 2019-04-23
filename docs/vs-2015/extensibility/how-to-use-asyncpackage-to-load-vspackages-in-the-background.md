@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: 9
 ms.author: gregvanl
-ms.openlocfilehash: 7de79fbbd5221a75bec1e168c22e687ddc9c7ffa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f59838913ed3f9bc6679336393f6db9181291e3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771852"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091671"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Instrukcje: Używanie klasy AsyncPackage do ładowania pakietów VSPackages w tle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,11 +75,11 @@ public sealed class TestPackage : AsyncPackage
 ## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>Konwertowanie istniejącego pakietu VSPackage na AsyncPackage  
  Większość pracy jest taka sama, jak podczas tworzenia nowego **AsyncPackage**. Należy wykonać kroki od 1 do 5 powyżej. Należy również wykonać wyjątkową ostrożność od następujących czynników:  
   
-1.  Pamiętaj, aby usunąć **zainicjować** zastąpienie miał w pakiecie.  
+1. Pamiętaj, aby usunąć **zainicjować** zastąpienie miał w pakiecie.  
   
-2.  Należy unikać zakleszczenia: Może być ukryta zdalnych wywołań procedury w kodzie, który teraz powinny być wykonywane dla wątku w tle. Należy upewnić się, że jeśli wykonujesz zdalnego wywołania procedury (np. **GetService**), musisz albo (1) Przełącz do wątku głównego, lub (2) Użyj asynchroniczną wersję interfejsu API, jeśli taki istnieje (np. **element GetServiceAsync**).  
+2. Należy unikać zakleszczenia: Może być ukryta zdalnych wywołań procedury w kodzie, który teraz powinny być wykonywane dla wątku w tle. Należy upewnić się, że jeśli wykonujesz zdalnego wywołania procedury (np. **GetService**), musisz albo (1) Przełącz do wątku głównego, lub (2) Użyj asynchroniczną wersję interfejsu API, jeśli taki istnieje (np. **element GetServiceAsync**).  
   
-3.  Nie Przełączaj pomiędzy wątkami zbyt często. Spróbuj zlokalizować pracy, która może nastąpić w wątku w tle. Powoduje to skrócenie czasu ładowania.  
+3. Nie Przełączaj pomiędzy wątkami zbyt często. Spróbuj zlokalizować pracy, która może nastąpić w wątku w tle. Powoduje to skrócenie czasu ładowania.  
   
 ## <a name="querying-services-from-asyncpackage"></a>Podczas badania usługi AsyncPackage  
  **AsyncPackage** może lub nie może załadować asynchronicznie w zależności od obiektu wywołującego. Na przykład  

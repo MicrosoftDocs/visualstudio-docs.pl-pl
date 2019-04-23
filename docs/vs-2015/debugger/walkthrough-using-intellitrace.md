@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 195aba127c96e7d7b717f1a93346ebacbb99a502
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bbc2135f292197a1856eaea8d80c03d1c41adff3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760733"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053809"
 ---
 # <a name="walkthrough-using-intellitrace"></a>Przewodnik: Używanie funkcji IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,20 +23,20 @@ Dodatkowo do zebrania informacji dotyczących określonych zdarzeń lub kategori
   
  Za pomocą funkcji IntelliTrace w programie Visual Studio Enterprise (ale nie w wersjach Professional lub Community).  
   
-##  <a name="GettingStarted"></a> Za pomocą funkcji IntelliTrace z tylko zdarzenia  
+## <a name="GettingStarted"></a> Za pomocą funkcji IntelliTrace z tylko zdarzenia  
  Możesz spróbować debugowania tylko zdarzeń IntelliTrace. Zdarzenia IntelliTrace są zdarzeniami debugera, wyjątki, zdarzenia .NET Framework i inne zdarzenia systemowe. Należy włączyć lub wyłączyć określone zdarzenia, aby kontrolować zdarzenia przez IntelliTrace, przed rozpoczęciem debugowania. Aby uzyskać więcej informacji, zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).  
   
  Poniższe kroki pokazują sposób debugowania tylko zdarzeń IntelliTrace:  
   
-1.  Włącz zdarzenia funkcji IntelliTrace przy dostępie do plików. Przejdź do **narzędzia / Opcje / IntelliTrace / zdarzenia IntelliTrace** stronie, a następnie rozwiń **pliku** kategorii. Sprawdź **pliku** kategorii zdarzenia. To powoduje, że wszystkie pliku zdarzenia (dostęp, Zamknij, delete) do sprawdzenia.  
+1. Włącz zdarzenia funkcji IntelliTrace przy dostępie do plików. Przejdź do **narzędzia / Opcje / IntelliTrace / zdarzenia IntelliTrace** stronie, a następnie rozwiń **pliku** kategorii. Sprawdź **pliku** kategorii zdarzenia. To powoduje, że wszystkie pliku zdarzenia (dostęp, Zamknij, delete) do sprawdzenia.  
   
-2.  Utwórz aplikację konsolową języka C#. W pliku Program.cs Dodaj następujące `using` instrukcji:  
+2. Utwórz aplikację konsolową języka C#. W pliku Program.cs Dodaj następujące `using` instrukcji:  
   
     ```csharp  
     using System.IO;  
     ```  
   
-3.  Utwórz <xref:System.IO.FileStream> metody Main, odczytanie z niego, zamknij je i usuń plik. Dodaj kolejny wiersz po prostu zapewnienie miejsca ustawienia punktu przerwania:  
+3. Utwórz <xref:System.IO.FileStream> metody Main, odczytanie z niego, zamknij je i usuń plik. Dodaj kolejny wiersz po prostu zapewnienie miejsca ustawienia punktu przerwania:  
   
     ```csharp  
     static void Main(string[] args)  
@@ -50,14 +50,14 @@ Dodatkowo do zebrania informacji dotyczących określonych zdarzeń lub kategori
     }  
     ```  
   
-4.  Ustawianie punktu przerwania `Console.WriteLine("done");`  
+4. Ustawianie punktu przerwania `Console.WriteLine("done");`  
   
-5.  Rozpocznij standardowe debugowanie. (Naciśnij klawisz **F5** lub kliknij przycisk **debugowania / uruchamiania debugowania**.  
+5. Rozpocznij standardowe debugowanie. (Naciśnij klawisz **F5** lub kliknij przycisk **debugowania / uruchamiania debugowania**.  
   
     > [!TIP]
     >  Zachowaj **lokalne** i **Autos** otwarte okna podczas debugowania można zobaczyć i zapisać wartości w tych oknach.  
   
-6.  Zatrzymuje wykonywanie w punkcie przerwania. Jeśli nie widzisz **narzędzia diagnostyczne** okna, kliknij przycisk **debugowanie / Windows / zdarzenia IntelliTrace**.  
+6. Zatrzymuje wykonywanie w punkcie przerwania. Jeśli nie widzisz **narzędzia diagnostyczne** okna, kliknij przycisk **debugowanie / Windows / zdarzenia IntelliTrace**.  
   
      W **narzędzia diagnostyczne** oknie Znajdź **zdarzenia** kartę (powinien zostać wyświetlony 3 karty **zdarzenia**, **użycie pamięci**, i **procesora CPU Użycie**). **Zdarzenia** karta przedstawia chronologiczną listę zdarzeń, kończąc ostatniego zdarzenia, zanim Debuger przerwał wykonywanie. Powinien zostać wyświetlony zdarzenie o nazwie **WordSearchInputs.txt dostępu**.  
   
@@ -65,7 +65,7 @@ Dodatkowo do zebrania informacji dotyczących określonych zdarzeń lub kategori
   
      ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace-Update1")  
   
-7.  Wybierz zdarzenie, aby rozwinąć jego szczegóły.  
+7. Wybierz zdarzenie, aby rozwinąć jego szczegóły.  
   
      Poniższy zrzut ekranu pochodzi z programu Visual Studio 2015 Update 1.  
   
@@ -79,19 +79,19 @@ Dodatkowo do zebrania informacji dotyczących określonych zdarzeń lub kategori
   
      ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-Update1")  
   
-8.  Jeśli nie możesz znaleźć błędu, spróbuj sprawdzić inne zdarzenia, które doprowadziły do usterki. Informacje na temat rekordów wywołań funkcji IntelliTrace może mieć również, aby można było przechodzić przez wywołania funkcji.  
+8. Jeśli nie możesz znaleźć błędu, spróbuj sprawdzić inne zdarzenia, które doprowadziły do usterki. Informacje na temat rekordów wywołań funkcji IntelliTrace może mieć również, aby można było przechodzić przez wywołania funkcji.  
   
 ## <a name="using-intellitrace-with-events-and-function-calls"></a>Za pomocą funkcji IntelliTrace przy użyciu zdarzenia i wywołania funkcji  
  IntelliTrace może zapisać wywołania funkcji wraz z wydarzeniami. Dzięki temu można wyświetlić historię stosu wywołań, poruszać i wywołań w kodzie. IntelliTrace zapisuje dane, takie jak nazwy funkcji, punkty wejścia i wyjścia funkcji i określone wartości parametrów i zwracanych wartości. Zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).  
   
-1.  Włącz kolekcję wywołań. (Na **narzędzia / Opcje / IntelliTrace / ogólne**, wybierz opcję **zdarzenia IntelliTrace i wywołania informacji**. IntelliTrace rozpocznie się zbieranie tych informacji, po rozpoczęciu następnej sesji debugowania.  
+1. Włącz kolekcję wywołań. (Na **narzędzia / Opcje / IntelliTrace / ogólne**, wybierz opcję **zdarzenia IntelliTrace i wywołania informacji**. IntelliTrace rozpocznie się zbieranie tych informacji, po rozpoczęciu następnej sesji debugowania.  
   
     > [!TIP]
     >  Może to spowolnić aplikację i zwiększyć rozmiar wszystkich plików dziennika IntelliTrace (itrace) zapisywanych na dysku. Aby uzyskać większość danych wywołań, ale zminimalizować skutki, Zapisz dane tylko z tych modułów, które Cię interesują. Aby zmienić maksymalny rozmiar plików itrace, przejdź do **narzędzia / Opcje / IntelliTrace / zaawansowane**, a następnie określ maksymalną ilość miejsca na dysku. Wartość domyślna to 250 MB.  
   
-2.  Rozpocznij debugowanie aplikacji konsolowej C# utworzony w poprzedniej sekcji. Zatrzymuje wykonywanie w punkcie przerwania. Jeśli nie widzisz **narzędzia diagnostyczne** okna, kliknij przycisk **debugowanie / Windows / zdarzenia IntelliTrace**.  
+2. Rozpocznij debugowanie aplikacji konsolowej C# utworzony w poprzedniej sekcji. Zatrzymuje wykonywanie w punkcie przerwania. Jeśli nie widzisz **narzędzia diagnostyczne** okna, kliknij przycisk **debugowanie / Windows / zdarzenia IntelliTrace**.  
   
-3.  Przełącz się do **wywołania** kartę.  
+3. Przełącz się do **wywołania** kartę.  
   
      Zostanie wyświetlona wywołań funkcji aplikacji, począwszy od wywołania głównego (w bieżącym rozwiązaniu główny punkt wejścia), a kończąc na lokalizację, w których wykonanie Przerwano.  
   

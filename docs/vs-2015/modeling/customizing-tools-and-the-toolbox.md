@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 93cc5fdef5c3d91281f01db8d4946dee17394170
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 47b108cfbef8831f9650c7e1af29d528aa8abaa2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790596"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077267"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Dostosowywanie narzędzi i przybornika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,15 +29,15 @@ Zdefiniuj elementy przybornika dla elementów, które chcesz powiadomić użytko
   
  W tym temacie:  
   
--   [Jak jest zdefiniowany przybornika](#ToolboxDef)  
+- [Jak jest zdefiniowany przybornika](#ToolboxDef)  
   
--   [Narzędzia dostosowywania elementów](#customizing)  
+- [Narzędzia dostosowywania elementów](#customizing)  
   
--   [Tworzenie grup elementów przy użyciu narzędzia](#groups)  
+- [Tworzenie grup elementów przy użyciu narzędzia](#groups)  
   
--   [Dostosowywanie narzędzi do nawiązywania połączenia](#connections)  
+- [Dostosowywanie narzędzi do nawiązywania połączenia](#connections)  
   
-##  <a name="ToolboxDef"></a> Jak jest zdefiniowany przybornika  
+## <a name="ToolboxDef"></a> Jak jest zdefiniowany przybornika  
  W Eksploratorze DSL rozwiń węzeł edytora i węzły podrzędne. Zazwyczaj zobaczysz hierarchii, która jest podobny do tego:  
   
 ```  
@@ -53,15 +53,15 @@ Editor
   
  W tej części Eksplorator DSL możesz wykonywać następujące czynności:  
   
--   Utwórz nowe karty. Karty zdefiniować nagłówki sekcji w przyborniku.  
+- Utwórz nowe karty. Karty zdefiniować nagłówki sekcji w przyborniku.  
   
--   Tworzenie nowych narzędzi.  
+- Tworzenie nowych narzędzi.  
   
--   Skopiuj i Wklej narzędzia.  
+- Skopiuj i Wklej narzędzia.  
   
--   Przenieś narzędzia w górę lub w dół na liście.  
+- Przenieś narzędzia w górę lub w dół na liście.  
   
--   Usuń karty i narzędzi.  
+- Usuń karty i narzędzi.  
   
 > [!IMPORTANT]
 >  Aby dodać lub wkleić elementy w Eksplorator DSL, kliknij prawym przyciskiem myszy pokolenia nowego węzła. Na przykład, aby dodać narzędzia, kliknij prawym przyciskiem myszy kartę, a nie **narzędzia** węzła. Aby dodać kartę, kliknij prawym przyciskiem myszy **edytora** węzła.  
@@ -74,38 +74,38 @@ Editor
   
 #### <a name="to-add-a-tool-to-the-toolbox"></a>Aby dodać narzędzie do przybornika  
   
-1.  Po utworzeniu klasy kształt i mechanizmowi klasy domeny, zazwyczaj utworzyć narzędzie elementu.  
+1. Po utworzeniu klasy kształt i mechanizmowi klasy domeny, zazwyczaj utworzyć narzędzie elementu.  
   
      Po utworzeniu klasy łącznika i mechanizmowi relacja odwołania, zwykle utworzyć narzędzia Łącznik.  
   
-2.  W Eksploratorze DSL rozwiń **edytora** węzła i **karty przybornika** węzła.  
+2. W Eksploratorze DSL rozwiń **edytora** węzła i **karty przybornika** węzła.  
   
      Kliknij prawym przyciskiem myszy węzeł kartę przybornika, a następnie kliknij przycisk **dodać nowe narzędzie Element** lub **dodać nowe narzędzie połączenia**.  
   
-3.  Ustaw **ikonę przybornika** właściwości do odwoływania się do mapy bitowej 16 x 16.  
+3. Ustaw **ikonę przybornika** właściwości do odwoływania się do mapy bitowej 16 x 16.  
   
      Jeśli chcesz zdefiniować nową ikonę, Utwórz plik mapy bitowej w Eksploratorze rozwiązań w **Dsl\Resources** folderu. Ten plik powinien zawierać następujące wartości właściwości: **Akcja kompilacji** = **zawartości**; **Kopiuj do katalogu wyjściowego** = **nie Kopiuj**.  
   
-4.  **Dla narzędzia elementu:** Ustaw **klasy** właściwości narzędzia do odwoływania się do klasy konkretnej domeny, która jest mapowana na kształt.  
+4. **Dla narzędzia elementu:** Ustaw **klasy** właściwości narzędzia do odwoływania się do klasy konkretnej domeny, która jest mapowana na kształt.  
   
      **Aby uzyskać narzędzie łącznika:** Ustaw **konstruktora połączeń** właściwości narzędzia do jednego z elementów, które są oferowane na liście rozwijanej. Konstruktory połączeń są tworzone automatycznie podczas mapowania łącznik do relacji domeny. Jeśli niedawno po utworzeniu łącznika, będą zazwyczaj wybiera się konstruktora skojarzone z nimi połączenie.  
   
-5.  Aby przetestować język DSL, naciśnij klawisz F5 lub CTRL + F5 i jest w doświadczalnym wystąpieniu programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], otworzyć przykładowy plik modelu. Nowe narzędzie powinna zostać wyświetlona w przyborniku. Przeciągnij go na diagram, aby sprawdzić, czy tworzy nowy element.  
+5. Aby przetestować język DSL, naciśnij klawisz F5 lub CTRL + F5 i jest w doświadczalnym wystąpieniu programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], otworzyć przykładowy plik modelu. Nowe narzędzie powinna zostać wyświetlona w przyborniku. Przeciągnij go na diagram, aby sprawdzić, czy tworzy nowy element.  
   
      Jeśli nie ma narzędzia, Zatrzymaj eksperymentalnym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. W Windows **Start** menu, uruchom **Zresetuj wystąpienie eksperymentalne programu Microsoft Visual Studio 2010**. Na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**. Następnie ponownie przetestuj język DSL.  
   
-##  <a name="customizing"></a> Narzędzia dostosowywania elementów  
+## <a name="customizing"></a> Narzędzia dostosowywania elementów  
  Domyślnie narzędzie utworzy jedno wystąpienie określonej klasy, ale można wybrać różne na dwa sposoby:  
   
--   Zdefiniuj dyrektywy scalania elementów w innych klas, umożliwiające im na akceptowanie nowe wystąpienia tej klasy, a następnie utwórz dodatkowe linki, po utworzeniu nowego elementu. Można na przykład umożliwia użytkownikowi Dodaj komentarz do innego elementu, a przez to tworzyć łącza między tymi dwoma.  
+- Zdefiniuj dyrektywy scalania elementów w innych klas, umożliwiające im na akceptowanie nowe wystąpienia tej klasy, a następnie utwórz dodatkowe linki, po utworzeniu nowego elementu. Można na przykład umożliwia użytkownikowi Dodaj komentarz do innego elementu, a przez to tworzyć łącza między tymi dwoma.  
   
      Te modyfikacje również wpływać na, co się stanie po użytkownik wkleja przeciągnie lub porzuca element.  
   
      Aby uzyskać więcej informacji, zobacz [Dostosowywanie tworzenia i przesuwania elementu](../modeling/customizing-element-creation-and-movement.md).  
   
--   Napisz kod, aby dostosować narzędzie, dzięki czemu może utworzyć grupy elementów. Narzędzie jest inicjowany za pomocą metod ToolboxHelper.cs, którą można przesłonić. Aby uzyskać więcej informacji, zobacz [tworzenia grup z elementów przy użyciu narzędzia](#groups).  
+- Napisz kod, aby dostosować narzędzie, dzięki czemu może utworzyć grupy elementów. Narzędzie jest inicjowany za pomocą metod ToolboxHelper.cs, którą można przesłonić. Aby uzyskać więcej informacji, zobacz [tworzenia grup z elementów przy użyciu narzędzia](#groups).  
   
-##  <a name="groups"></a> Tworzenie grup elementów przy użyciu narzędzia  
+## <a name="groups"></a> Tworzenie grup elementów przy użyciu narzędzia  
  Każde narzędzie element zawiera prototyp elementów, które należy utworzyć. Domyślnie każde narzędzie element tworzy pojedynczy element, ale jest również można utworzyć grupy powiązanych obiektów za pomocą jednego narzędzia. Aby to zrobić, należy zainicjować narzędzia z <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> zawierający elementy pokrewne.  
   
  Poniższy przykład jest pobierana z DSL, w którym jest typem tranzystor. Każdy tranzystor ma trzy terminale nazwanych. Narzędzie elementu dla tranzystory przechowuje prototyp zawierający cztery elementy modelu i trzy łącza relacji. Gdy użytkownik przeciągnie narzędzie na diagram, prototyp jest tworzone i połączone do korzenia modelu.  
@@ -155,7 +155,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 ```  
   
-##  <a name="connections"></a> Dostosowywanie narzędzi do nawiązywania połączenia  
+## <a name="connections"></a> Dostosowywanie narzędzi do nawiązywania połączenia  
  Zazwyczaj należy utworzyć narzędzia elementu, po utworzeniu nowej klasy łącznika. Alternatywnie możesz doprowadzić do przeciążenia jedno narzędzie, umożliwiając typy po obu stronach w celu określenia typu relacji. Na przykład można zdefiniować jedno narzędzie połączenia, który można utworzyć relacji osoby osoby i relacje miasta osoby.  
   
  Narzędzia połączeń wywoływać konstruktory połączeń. Konstruktory połączeń umożliwia określenie, jak użytkownicy mogą tworzyć połączenia elementów w wygenerowanym projektancie. Konstruktory połączeń określić elementy, które mogą być połączone i rodzaju łącza, który jest tworzony między nimi.  

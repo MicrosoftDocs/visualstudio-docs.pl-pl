@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee8e4b412422d6f385e39f4fdbf44e151313c0a2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a331e94ad57fc4ca23dc859415c61609025f799b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605123"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058255"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Przewodnik: Tworzenie składnika web part programu Silverlight, na który wyświetlającego dane OData dla programu SharePoint
   SharePoint 2010 udostępnia swoje dane listy za pomocą protokołu OData. W programie SharePoint usługi OData jest implementowany przez usługi RESTful ListData.svc. W tym instruktażu przedstawiono sposób tworzenia składnika web part programu SharePoint, na który jest hostem aplikacji Silverlight. Aplikacja Silverlight Wyświetla informacje o liście anons programu SharePoint przy użyciu ListData.svc. Aby uzyskać więcej informacji, zobacz [interfejsu REST w programie SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) i [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).
@@ -27,9 +27,9 @@ ms.locfileid: "56605123"
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
--   Obsługiwane wersje systemu Microsoft Windows i programu SharePoint.
+- Obsługiwane wersje systemu Microsoft Windows i programu SharePoint.
 
--   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
 
 ## <a name="create-a-silverlight-application-and-silverlight-web-part"></a>Tworzenie aplikacji programu Silverlight i składnika web part Silverlight
  Najpierw utwórz aplikacji Silverlight w programie Visual Studio. Aplikacji Silverlight pobiera dane z listy anonsów programu SharePoint przy użyciu usługi ListData.svc.
@@ -68,30 +68,30 @@ ms.locfileid: "56605123"
 
 #### <a name="to-customize-the-silverlight-application"></a>Aby dostosować aplikację Silverlight
 
-1.  Dodaj odwołanie do zestawu do System.Windows.Data w aplikacji Silverlight. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodaj odwołanie](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+1. Dodaj odwołanie do zestawu do System.Windows.Data w aplikacji Silverlight. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodaj odwołanie](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
-2.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla **odwołania**, a następnie wybierz **Dodaj odwołanie do usługi**.
+2. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **odwołania**, a następnie wybierz **Dodaj odwołanie do usługi**.
 
     > [!NOTE]
     >  Jeśli używasz języka Visual Basic, należy wybrać **Pokaż wszystkie pliki** ikonę u góry **Eksploratora rozwiązań** do wyświetlenia **odwołania** węzła.
 
-3.  W polu adresu **Dodaj odwołanie do usługi** okna dialogowego wprowadź adres URL witryny programu SharePoint, takich jak **http://MySPSite**, a następnie wybierz **Przejdź** przycisku.
+3. W polu adresu **Dodaj odwołanie do usługi** okna dialogowego wprowadź adres URL witryny programu SharePoint, takich jak **http://MySPSite**, a następnie wybierz **Przejdź** przycisku.
 
      Gdy Silverlight lokalizuje usługę SharePoint OData ListData.svc, zastępuje adres za pomocą adresu URL wszystkich usług. W tym przykładzie http://myserver staje się http://myserver/_vti_bin/ListData.svc.
 
-4.  Wybierz **OK** przycisk, aby dodać odwołanie do usługi do projektu i użyj domyślnej nazwy usługi ServiceReference1.
+4. Wybierz **OK** przycisk, aby dodać odwołanie do usługi do projektu i użyj domyślnej nazwy usługi ServiceReference1.
 
-5.  Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**.
+5. Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**.
 
-6.  Dodaj nowe źródło danych do projektu, w oparciu o usługi programu SharePoint. Aby to zrobić, na pasku menu, wybierz opcję **widoku** > **Windows inne** > **źródeł danych**.
+6. Dodaj nowe źródło danych do projektu, w oparciu o usługi programu SharePoint. Aby to zrobić, na pasku menu, wybierz opcję **widoku** > **Windows inne** > **źródeł danych**.
 
      **Źródeł danych** okno wyświetla wszystkie dostępne dane listy programu SharePoint, takich jak zadania, ogłoszenia i kalendarza.
 
-7.  Dodaj dane listy ogłoszeń do aplikacji Silverlight. Można przeciągnąć "Anonsów" z **źródeł danych** okna do projektanta Silverlight.
+7. Dodaj dane listy ogłoszeń do aplikacji Silverlight. Można przeciągnąć "Anonsów" z **źródeł danych** okna do projektanta Silverlight.
 
      Spowoduje to utworzenie formantu siatki powiązana lista anonsów witryny programu SharePoint.
 
-8.  Rozmiar formantu siatki w celu dopasowania do strony programu Silverlight.
+8. Rozmiar formantu siatki w celu dopasowania do strony programu Silverlight.
 
 9. W pliku MainPage.xaml kodu (*MainPage.xaml.cs* dla języka Visual C# lub *MainPage.xaml.vb* dla języka Visual Basic), Dodaj następujące odwołania do przestrzeni nazw.
 
@@ -159,6 +159,7 @@ ms.locfileid: "56605123"
         }
     }
     ```
+
      Koniecznie Zastąp *ServerName* symbol zastępczy nazwą serwera, na którym uruchomiony jest SharePoint.
 
 12. Dodaj procedurę obsługi błędów.
@@ -195,34 +196,34 @@ ms.locfileid: "56605123"
 
 #### <a name="to-modify-the-silverlight-web-part"></a>Aby zmodyfikować składnika web part Silverlight
 
-1.  Otwórz menu skrótów dla projektu części sieci web programu Silverlight (**SLWebPartTest**), a następnie wybierz **właściwości**.
+1. Otwórz menu skrótów dla projektu części sieci web programu Silverlight (**SLWebPartTest**), a następnie wybierz **właściwości**.
 
-2.  W **właściwości** oknie Wybierz **SharePoint** kartę.
+2. W **właściwości** oknie Wybierz **SharePoint** kartę.
 
-3.  Jeśli nie została jeszcze wybrana, wybierz opcję **Włącz debugowanie programu Silverlight (zamiast debugowanie skryptów)** pole wyboru.
+3. Jeśli nie została jeszcze wybrana, wybierz opcję **Włącz debugowanie programu Silverlight (zamiast debugowanie skryptów)** pole wyboru.
 
-4.  Zapisz projekt.
+4. Zapisz projekt.
 
 ## <a name="test-the-silverlight-web-part"></a>Testowanie składnika web part Silverlight
  Przetestuj nowy składnik web part Silverlight w programie SharePoint, aby zapewnić prawidłowe wyświetlanie danych listy programu SharePoint.
 
 #### <a name="to-test-the-silverlight-web-part"></a>Aby przetestować składnika web part Silverlight
 
-1.  Wybierz **F5** klawisz, aby skompilować i uruchomić rozwiązanie programu SharePoint.
+1. Wybierz **F5** klawisz, aby skompilować i uruchomić rozwiązanie programu SharePoint.
 
-2.  W programie SharePoint na **Akcje witryny** menu, wybierz **nową stronę**.
+2. W programie SharePoint na **Akcje witryny** menu, wybierz **nową stronę**.
 
-3.  W **nową stronę** okno dialogowe, wprowadź tytuł, takich jak **testu części sieci Web SL**, a następnie wybierz **Utwórz** przycisk.
+3. W **nową stronę** okno dialogowe, wprowadź tytuł, takich jak **testu części sieci Web SL**, a następnie wybierz **Utwórz** przycisk.
 
-4.  W projektancie stron na **narzędzia edycji** kartę, wybrać **Wstaw**.
+4. W projektancie stron na **narzędzia edycji** kartę, wybrać **Wstaw**.
 
-5.  Na pasku karty Wybierz **składnika Web Part**.
+5. Na pasku karty Wybierz **składnika Web Part**.
 
-6.  W **kategorie** wybierz **niestandardowe** folderu.
+6. W **kategorie** wybierz **niestandardowe** folderu.
 
-7.  W **składników Web Part** , wybierz składnik web part Silverlight, a następnie wybierz **Dodaj** przycisk, aby dodać składnik web part do projektanta.
+7. W **składników Web Part** , wybierz składnik web part Silverlight, a następnie wybierz **Dodaj** przycisk, aby dodać składnik web part do projektanta.
 
-8.  Po dokonaniu wszystkie dodatki do strony sieci web, który ma, wybierz **strony** kartę, a następnie wybierz **Zapisz i Zamknij** przycisk na pasku narzędzi.
+8. Po dokonaniu wszystkie dodatki do strony sieci web, który ma, wybierz **strony** kartę, a następnie wybierz **Zapisz i Zamknij** przycisk na pasku narzędzi.
 
      Składnik web part Silverlight powinny teraz wyświetlanie danych anonsu z witryny programu SharePoint. Domyślnie strony znajduje się na liście stron witryny w programie SharePoint.
 

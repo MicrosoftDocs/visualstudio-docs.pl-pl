@@ -12,12 +12,12 @@ ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 72f9f1a098d17d7e6dd0b5cd8218b35f3408695e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 31a9b093fc912be9db573b89d8c6b09e927c8b87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760311"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048726"
 ---
 # <a name="saving-data-in-project-files"></a>Zapisywanie danych w plikach projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Podtypu projektu można zapisywać i pobierać dane specyficzne dla podtypu w pl
   
 #### <a name="to-save-a-build-related-data-in-the-project-file"></a>Aby zapisać kompilacji powiązane dane w pliku projektu  
   
--   Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> metodę, aby zapisać pełną ścieżkę pliku projektu.  
+- Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> metodę, aby zapisać pełną ścieżkę pliku projektu.  
   
     ```  
     private SpecializedProject project;  
@@ -49,7 +49,7 @@ Podtypu projektu można zapisywać i pobierać dane specyficzne dla podtypu w pl
   
 #### <a name="to-retrieve-build-related-data-from-the-project-file"></a>Aby pobrać kompilacji z danych związanych z pliku projektu  
   
--   Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A> metodę, aby pobrać pełną ścieżkę pliku projektu.  
+- Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A> metodę, aby pobrać pełną ścieżkę pliku projektu.  
   
     ```  
     private SpecializedProject project;  
@@ -66,7 +66,7 @@ Podtypu projektu można zapisywać i pobierać dane specyficzne dla podtypu w pl
   
 #### <a name="to-save-non-build-related-data-in-the-project-file"></a>Aby zapisać bez kompilacji powiązane dane w pliku projektu  
   
-1.  Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A> metodę, aby określić, czy XML fragment został zmieniony od momentu jego ostatniego zapisane w jego bieżącym pliku.  
+1. Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A> metodę, aby określić, czy XML fragment został zmieniony od momentu jego ostatniego zapisane w jego bieżącym pliku.  
   
     ```  
     public int IsFragmentDirty(uint storage, out int pfDirty)  
@@ -96,7 +96,7 @@ Podtypu projektu można zapisywać i pobierać dane specyficzne dla podtypu w pl
     }  
     ```  
   
-2.  Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> metodę, aby zapisać dane XML w pliku projektu.  
+2. Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> metodę, aby zapisać dane XML w pliku projektu.  
   
     ```  
     public int Save(ref Guid guidFlavor, uint storage, out string pbstrXMLFragment, int fClearDirty)  
@@ -147,7 +147,7 @@ Podtypu projektu można zapisywać i pobierać dane specyficzne dla podtypu w pl
   
 #### <a name="to-retrieve-non-build-related-data-in-the-project-file"></a>Aby pobrać-build powiązane dane w pliku projektu  
   
-1.  Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A> metodę, aby zainicjować właściwości rozszerzenia projektu i inne dane niezależnie od kompilacji. Ta metoda jest wywoływana, jeśli nie ma żadnych danych konfiguracji XML w pliku projektu.  
+1. Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A> metodę, aby zainicjować właściwości rozszerzenia projektu i inne dane niezależnie od kompilacji. Ta metoda jest wywoływana, jeśli nie ma żadnych danych konfiguracji XML w pliku projektu.  
   
     ```  
     public int InitNew(ref Guid guidFlavor, uint storage)  
@@ -163,7 +163,7 @@ Podtypu projektu można zapisywać i pobierać dane specyficzne dla podtypu w pl
         return VSConstants.S_OK;  
     ```  
   
-2.  Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> metodę, aby załadować dane XML z pliku projektu.  
+2. Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> metodę, aby załadować dane XML z pliku projektu.  
   
     ```  
     public int Load(ref Guid guidFlavor, uint storage, string pszXMLFragment)  

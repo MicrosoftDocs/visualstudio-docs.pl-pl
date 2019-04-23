@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40a8ea93075294bb4419cfe4178965a8a4808cfc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 373a70c3a33258be6b9f618fa190fde4b9b80b0e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949711"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088993"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Instrukcje: Kompilowanie do wspólnego katalogu wyjściowego
 
@@ -26,13 +26,13 @@ Domyślnie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kompilacje 
 
 ## <a name="to-place-all-solution-outputs-in-a-common-directory"></a>Aby umieścić wszystkie rozwiązania w dane wyjściowe wspólnego katalogu
 
-1.  Polecenie jednego projektu w rozwiązaniu.
+1. Polecenie jednego projektu w rozwiązaniu.
 
-2.  Na **projektu** menu, kliknij przycisk **właściwości**.
+2. Na **projektu** menu, kliknij przycisk **właściwości**.
 
-3.  W zależności od typu projektu, kliknij w dowolnym **skompilować** karty lub **kompilacji** , a następnie ustaw **ścieżkę wyjściową** do folderu, do użycia dla wszystkich projektów w rozwiązaniu.
+3. W zależności od typu projektu, kliknij w dowolnym **skompilować** karty lub **kompilacji** , a następnie ustaw **ścieżkę wyjściową** do folderu, do użycia dla wszystkich projektów w rozwiązaniu.
 
-4.  Powtórz kroki 1 – 3 dla wszystkich projektów w rozwiązaniu.
+4. Powtórz kroki 1 – 3 dla wszystkich projektów w rozwiązaniu.
 
 ## <a name="see-also"></a>Zobacz także
 

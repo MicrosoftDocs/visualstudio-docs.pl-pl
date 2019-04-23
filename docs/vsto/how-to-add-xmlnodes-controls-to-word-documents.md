@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a04daa909c712a0e721597ba93a03328e8414539
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0bbfa139605a6196cf57a5a887d9cb74f54527f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598872"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090735"
 ---
 # <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Instrukcje: Dodawanie formantów XMLNodes do dokumentów programu Word
   **Ważne** informacji zawartych w tym temacie dotyczące programu Microsoft Word jest prezentowane wyłącznie do korzyści i korzystanie z innym osobom oraz organizacjom, którzy znajdują się poza w Stanach Zjednoczonych i ich terytoriach lub korzystających z lub tworzenie programy, korzystających z produktów Microsoft Word, które są licencjonowane przez firmę Microsoft przed 2010 stycznia, po usunięciu implementację funkcji określonej przez Microsoft związane z niestandardowy kod XML z programu Microsoft Word. Te informacje dotyczące programu Microsoft Word nie mogą być odczytywane lub używane przez osoby i organizacje w Stanach Zjednoczonych lub jego terytoria, którzy za pomocą lub opracowywanie programów uruchamianych na produkty Microsoft Word, które są licencjonowane przez firmę Microsoft, po 10 stycznia 2010 r. ; te produkty będą nie działa tak samo jako produkty licencjonowane przed tą datą lub kupić i licencjonowane do użycia poza Stanami Zjednoczonymi.
@@ -36,34 +36,34 @@ ms.locfileid: "56598872"
 
 ### <a name="to-add-an-xmlnodes-control-to-a-document"></a>Aby dodać formant XMLNodes do dokumentu
 
-1.  Dokument w Projektancie Visual Studio na wstążce kliknij **Developer** kartę.
+1. Dokument w Projektancie Visual Studio na wstążce kliknij **Developer** kartę.
 
     > [!NOTE]
     >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-2.  W **XML** grupy, kliknij przycisk **schematu**.
+2. W **XML** grupy, kliknij przycisk **schematu**.
 
      **Szablony i dodatki** zostanie otwarte okno dialogowe.
 
-3.  Kliknij przycisk **schematu XML** kartę.
+3. Kliknij przycisk **schematu XML** kartę.
 
-4.  Kliknij przycisk **schemat Dodaj**.
+4. Kliknij przycisk **schemat Dodaj**.
 
      **Schemat Dodaj** zostanie otwarte okno dialogowe.
 
-5.  Wybierz schemat XML, który zawiera powtarzające się elementy schematu i kliknij przycisk **Otwórz**.
+5. Wybierz schemat XML, który zawiera powtarzające się elementy schematu i kliknij przycisk **Otwórz**.
 
      **Schemat ustawień** pojawi się okno dialogowe.
 
-6.  Przypisać aliasu lub kliknij przycisk **OK** można dodać schematu bez aliasu.
+6. Przypisać aliasu lub kliknij przycisk **OK** można dodać schematu bez aliasu.
 
      Schemat jest dodawany do **schemat Dodaj** okno dialogowe.
 
-7.  W **schemat Dodaj** okno dialogowe, kliknij przycisk **OK**.
+7. W **schemat Dodaj** okno dialogowe, kliknij przycisk **OK**.
 
      **Struktury XML** zostanie otwarte okienko zadań.
 
-8.  Kliknij pozycję powtarzający się element schematu **struktury XML** okienka zadań, aby dodać go do dokumentu.
+8. Kliknij pozycję powtarzający się element schematu **struktury XML** okienka zadań, aby dodać go do dokumentu.
 
      <xref:Microsoft.Office.Tools.Word.XMLNodes> Formant zostanie utworzony i dodany do projektu.
 

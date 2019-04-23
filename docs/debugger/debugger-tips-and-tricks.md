@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb47aa94dbf444e27fd149e2e16c723677f973eb
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 8b4c763ff31c6c62a177c77f8886f1de305a5170
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537562"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097326"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Dowiedz się więcej i porady dotyczące wydajności w debugerze programu Visual Studio
 
@@ -74,17 +74,17 @@ Można łatwo wyświetlić zmiennych przy użyciu okna debugera, takie jak **Obe
 
 #### <a name="to-create-an-object-id"></a>Aby utworzyć identyfikator obiektu
 
-1.  Ustaw punkt przerwania w pobliżu zmiennej, którą chcesz śledzić.
+1. Ustaw punkt przerwania w pobliżu zmiennej, którą chcesz śledzić.
 
-2.  Uruchom debuger (**F5**) i zaprzestanie w punkcie przerwania.
+2. Uruchom debuger (**F5**) i zaprzestanie w punkcie przerwania.
 
 3. Znajdź zmienną w **zmiennych lokalnych** okna (**debugowania > Windows > lokalne**), kliknij prawym przyciskiem myszy zmienną i wybierz **wprowadzić identyfikator obiektu**.
 
     ![Tworzenie Identyfikatora obiektu](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
 
-4.  Powinien zostać wyświetlony **$** oraz liczbą **lokalne** okna. Ta zmienna jest identyfikator obiektu.
+4. Powinien zostać wyświetlony **$** oraz liczbą **lokalne** okna. Ta zmienna jest identyfikator obiektu.
 
-5.  Kliknij prawym przyciskiem myszy zmienna Identyfikatora obiektu, a następnie wybierz **Dodaj czujkę**.
+5. Kliknij prawym przyciskiem myszy zmienna Identyfikatora obiektu, a następnie wybierz **Dodaj czujkę**.
 
 Aby uzyskać więcej informacji, zobacz [tworzenia Identyfikatora obiektu](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
 
@@ -126,13 +126,13 @@ Jeśli musisz debugować rodzaje problemów, które są wspólne dla aplikacji w
 
 #### <a name="to-show-threads-in-your-source-code"></a>Aby wyświetlić wątków w kodzie źródłowym
 
-1.  Podczas debugowania, kliknij przycisk **Pokaż wątki w źródle** przycisk ![Pokaż wątki w źródle](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") w **debugowania** paska narzędzi.
+1. Podczas debugowania, kliknij przycisk **Pokaż wątki w źródle** przycisk ![Pokaż wątki w źródle](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") w **debugowania** paska narzędzi.
 
-2.  Spójrz na oprawę w lewej części okna. W tym wierszu, zostanie wyświetlony *znacznika wątku* ikonę ![znacznika wątku](../debugger/media/dbg-thread-marker.png "ThreadMarker") o podobny dwoma wątkami ręczników. Znacznika wątku wskazuje, że wątek został zatrzymany w tej lokalizacji.
+2. Spójrz na oprawę w lewej części okna. W tym wierszu, zostanie wyświetlony *znacznika wątku* ikonę ![znacznika wątku](../debugger/media/dbg-thread-marker.png "ThreadMarker") o podobny dwoma wątkami ręczników. Znacznika wątku wskazuje, że wątek został zatrzymany w tej lokalizacji.
 
     Należy zauważyć, że znacznika wątku może częściowo zasłonięte przez punkt przerwania.
 
-3.  Umieść wskaźnik myszy nad znacznika wątku. Pojawi się DataTip. DataTip informuje numer identyfikacyjny nazwy i wątku dla każdego wątku zatrzymania.
+3. Umieść wskaźnik myszy nad znacznika wątku. Pojawi się DataTip. DataTip informuje numer identyfikacyjny nazwy i wątku dla każdego wątku zatrzymania.
 
     Można również wyświetlić lokalizację wątków w [okna stosów równoległych](../debugger/get-started-debugging-multithreaded-apps.md).
 

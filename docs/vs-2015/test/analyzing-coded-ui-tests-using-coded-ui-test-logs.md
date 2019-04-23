@@ -8,12 +8,12 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: baf26fb00a53e4680d44caf5fb8b2f2c5bd5f4c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 18dbd175ddbf01a826d2a24b5d750cb00b64d28b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773379"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098896"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analiza dzienników zakodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Kodowane filtr dzienników testu interfejsu użytkownika i rekord, który urucha
   
  **Wymagania**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="why-should-i-do-this"></a>Dlaczego należy to zrobić?  
  Dzienniki są prezentowane w formacie, który umożliwia szybkie debugowanie problemów.  
@@ -32,9 +32,9 @@ Kodowane filtr dzienników testu interfejsu użytkownika i rekord, który urucha
 ### <a name="step-1-enable-logging"></a>Krok 1. Włącz rejestrowanie  
  Zależnie od scenariusza należy użyć jednej z następujących metod Aby włączyć dziennik.  
   
--   Docelowa wersja .NET Framework 4 z pliku App.config, nie jest obecne w projekcie testowym  
+- Docelowa wersja .NET Framework 4 z pliku App.config, nie jest obecne w projekcie testowym  
   
-    -   Otwórz **QTAgent32_40.exe.config** pliku.  
+    - Otwórz **QTAgent32_40.exe.config** pliku.  
   
          Domyślnie ten plik znajduje się w  **\<drvie >: \Program Files (x86) \Microsoft Visual Studio 12.0\Common7\IDE**.  
   
@@ -42,9 +42,9 @@ Kodowane filtr dzienników testu interfejsu użytkownika i rekord, który urucha
   
          Zapisz plik.  
   
--   Docelowa wersja .NET Framework 4.5 w pliku App.config, nie jest obecne w projekcie testowym  
+- Docelowa wersja .NET Framework 4.5 w pliku App.config, nie jest obecne w projekcie testowym  
   
-    -   Otwórz **QTAgent32.exe.config** pliku.  
+    - Otwórz **QTAgent32.exe.config** pliku.  
   
          Domyślnie ten plik znajduje się w  **\<drvie >: \Program Files (x86) \Microsoft Visual Studio 12.0\Common7\IDE**.  
   
@@ -52,33 +52,33 @@ Kodowane filtr dzienników testu interfejsu użytkownika i rekord, który urucha
   
          Zapisz plik.  
   
--   Plik App.config w projekcie testowym  
+- Plik App.config w projekcie testowym  
   
-    -   Otwórz plik App.config w projekcie.  
+    - Otwórz plik App.config w projekcie.  
   
          Dodaj następujący kod w węźle Konfiguracja:  
   
          `<system.diagnostics>     <switches>       <add name="EqtTraceLevel" value="4" />     </switches>  </system.diagnostics>`  
   
--   Włączanie rejestrowania z sam kod testu  
+- Włączanie rejestrowania z sam kod testu  
   
-    -   <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
+    - <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
   
 ### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Krok 2. Uruchom kodowany test interfejsu użytkownika, aby wyświetlić dziennik  
  Po uruchomieniu kodowanego testu interfejsu użytkownika ze zmianami do **QTAgent32.exe.config** pliku w miejscu, zostanie wyświetlony w wynikach Eksploratora testów znajduje się link danych wyjściowych. Pliki dziennika są tworzone, nie tylko w przypadku, gdy test zakończy się niepowodzeniem, ale także w przypadku udanych testów, gdy poziom śledzenia jest ustawiona na "pełne."  
   
-1.  Na **testu** menu, wybierz **Windows** , a następnie wybierz **Eksplorator testów**.  
+1. Na **testu** menu, wybierz **Windows** , a następnie wybierz **Eksplorator testów**.  
   
-2.  Na **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.  
+2. Na **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.  
   
-3.  W Eksploratorze testów wybierz kodowanego testu interfejsu użytkownika, aby uruchomić, otwórz jego menu skrótów, a następnie wybierz **Uruchom wybrane testy**.  
+3. W Eksploratorze testów wybierz kodowanego testu interfejsu użytkownika, aby uruchomić, otwórz jego menu skrótów, a następnie wybierz **Uruchom wybrane testy**.  
   
      Uruchomisz testy automatyczne i wskazują one powodzeniem lub niepowodzeniem.  
   
     > [!TIP]
     >  Aby wyświetlić Eksplorator testu z **Test menu**, wskaż polecenie **Windows** , a następnie wybierz **Eksplorator testów**.  
   
-4.  Wybierz **dane wyjściowe** łącze w wynikach Eksploratora testów.  
+4. Wybierz **dane wyjściowe** łącze w wynikach Eksploratora testów.  
   
      ![Link danych wyjściowych w Eksploratorze testów](../test/media/cuit-htmlactionlog1.png "CUIT_HTMLActionLog1")  
   
@@ -86,7 +86,7 @@ Kodowane filtr dzienników testu interfejsu użytkownika i rekord, który urucha
   
      ![Wyniki i łącza danych wyjściowych z kodowanego testu interfejsu użytkownika](../test/media/cuit-htmlactionlog2.png "CUIT_HTMLActionLog2")  
   
-5.  Wybierz łącze UITestActionLog.html.  
+5. Wybierz łącze UITestActionLog.html.  
   
      Dziennik jest wyświetlany w przeglądarce sieci web.  
   

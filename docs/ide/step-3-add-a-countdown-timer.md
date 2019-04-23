@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac6ea6f45446b35d9b65d9665ede5b2e76b387e3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2a703c7d4e28dd2287dff301727872b64e40b9ce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940714"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041420"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Krok 3. Dodawanie czasomierza odliczania
 W trzeciej części tego samouczka dodasz licznik czasu, aby śledzić liczbę sekund, które pozostają uczestnikowi quizu do zakończenia.
@@ -23,26 +23,26 @@ W trzeciej części tego samouczka dodasz licznik czasu, aby śledzić liczbę s
 
 ## <a name="to-add-a-countdown-timer"></a>Aby dodać minutnik
 
-1.  Dodaj zmienną całkowitą o nazwie **timeLeft**, podobnie jak w poprzedniej procedurze. Kod powinien wyglądać następująco.
+1. Dodaj zmienną całkowitą o nazwie **timeLeft**, podobnie jak w poprzedniej procedurze. Kod powinien wyglądać następująco.
 
      [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
      [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]
 
      Teraz potrzebujesz metody, która faktycznie zlicza sekundy, takiej jak timer, który wywołuje zdarzenie po upływie czasu, który określisz.
 
-2.  W oknie projektu, Przenieś <xref:System.Windows.Forms.Timer> z kontrolować **składniki** kategorii **przybornika** do formularza.
+2. W oknie projektu, Przenieś <xref:System.Windows.Forms.Timer> z kontrolować **składniki** kategorii **przybornika** do formularza.
 
      Ten formant jest widoczny w szarym obszarze w dolnej części okna projektu.
 
-3.  W formularzu Wybierz **timer1** ikonę, która właśnie dodany i ustaw jego **interwał** właściwości **1000**.
+3. W formularzu Wybierz **timer1** ikonę, która właśnie dodany i ustaw jego **interwał** właściwości **1000**.
 
      Ponieważ wartość interwału jest w milisekundach, wartość 1000 powoduje, że <xref:System.Windows.Forms.Timer.Tick> zdarzenia co sekundę.
 
-4.  W formularzu, kliknij dwukrotnie **czasomierza** kontrolować, lub wybierz go, a następnie wybierz **Enter** klucza.
+4. W formularzu, kliknij dwukrotnie **czasomierza** kontrolować, lub wybierz go, a następnie wybierz **Enter** klucza.
 
      Edytor kodu pojawi się i wyświetli metodę dla programu obsługi zdarzeń Tick, który właśnie został dodany.
 
-5.  Dodaj następujące instrukcje do nowej metody obsługi zdarzeń.
+5. Dodaj następujące instrukcje do nowej metody obsługi zdarzeń.
 
      [!code-vb[VbExpressTutorial3Step3#6](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_2.vb)]
      [!code-csharp[VbExpressTutorial3Step3#6](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_2.cs)]
@@ -88,14 +88,14 @@ W trzeciej części tego samouczka dodasz licznik czasu, aby śledzić liczbę s
 
      Quizu mogą łatwiej wpisywać liczby przy użyciu <xref:System.Windows.Forms.NumericUpDown> formantu, dlatego używasz takiego odpowiedzi na problemy matematyczne. Wszystkie potencjalne odpowiedzi są liczbami całkowitymi od 0 do 100. Pozostawiając wartości domyślne **Minimum**, **maksymalna**, i **DecimalPlaces** właściwości, należy zapewnić, że quizu nie można wprowadzić liczbę miejsc dziesiętnych, liczby, ujemne lub numery, które są zbyt wysokie. (Jeśli chcesz umożliwić uczestnikom quizu wprowadzanie wartości 3,141, ale nie 3.1415, można ustawić **DecimalPlaces** właściwość 3.)
 
-6.  Dodaj trzy wiersze na końcu `StartTheQuiz()` metody, aby kod wyglądał następująco.
+6. Dodaj trzy wiersze na końcu `StartTheQuiz()` metody, aby kod wyglądał następująco.
 
      [!code-vb[VbExpressTutorial3Step3#7](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_4.vb)]
      [!code-csharp[VbExpressTutorial3Step3#7](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_4.cs)]
 
      Teraz, kiedy quiz się rozpoczyna, **timeLeft** zmienna jest ustawiona na 30 i **tekstu** właściwość **timeLabel** kontrolki jest ustawiona na 30 sekund. A następnie <xref:System.Windows.Forms.Timer.Start> metoda formant Timer rozpoczyna odliczanie do zera. (Quiz nie sprawdza odpowiedzi jeszcze — to przychodzi dalej.)
 
-7.  Zapisz swój program, uruchom go, a następnie wybierz **Start** przycisku w formularzu.
+7. Zapisz swój program, uruchom go, a następnie wybierz **Start** przycisku w formularzu.
 
      Timer rozpoczyna odliczanie. Gdy skończy się czas, kończy się quiz i pojawia się odpowiedź. Na poniższej ilustracji przedstawiono quiz w toku.
 
@@ -103,6 +103,6 @@ W trzeciej części tego samouczka dodasz licznik czasu, aby śledzić liczbę s
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
--   Aby przejść do następnego kroku samouczka, zobacz [krok 4: Dodawanie metody CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Aby przejść do następnego kroku samouczka, zobacz [krok 4: Dodawanie metody CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
 
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 2: Tworzenie losowego problemu dodawania](../ide/step-2-create-a-random-addition-problem.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 2: Tworzenie losowego problemu dodawania](../ide/step-2-create-a-random-addition-problem.md).

@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a540648977c76c354ab21a75b79305c0310a4e7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7b16691a3837bcdeee87b40b36b5b669d671b938
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800443"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046255"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU i liczniki systemu Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Visual Studio Profiler umożliwia zbieranie danych wydajności, który został w
   
  **Wymagania**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje Windows Store również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
@@ -104,13 +104,13 @@ Visual Studio Profiler umożliwia zbieranie danych wydajności, który został w
   
 ##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>Aby wyświetlić listę listę liczników okna, które są obsługiwane na bieżącej platformie  
   
-1.  W Eksploratorze wydajności, kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij przycisk **właściwości**.  
+1. W Eksploratorze wydajności, kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij przycisk **właściwości**.  
   
-2.  Kliknij przycisk **liczniki Windows**.  
+2. Kliknij przycisk **liczniki Windows**.  
   
-3.  Wybierz **Zbierz liczniki Windows**.  
+3. Wybierz **Zbierz liczniki Windows**.  
   
-4.  Z **kategorii licznika** , wybierz grupę liczników na liście. Licznik Windows grupy jest wyświetlana w polu listy.  
+4. Z **kategorii licznika** , wybierz grupę liczników na liście. Licznik Windows grupy jest wyświetlana w polu listy.  
   
      **Uwaga:** Kliknij przycisk **anulować** aby powrócić do poprzedniej konfiguracji licznika w kolekcji.  
   
@@ -119,9 +119,9 @@ Visual Studio Profiler umożliwia zbieranie danych wydajności, który został w
   
 ##### <a name="to-list-of-cpu-counters-that-are-supported-on-the-current-platform"></a>Na liście liczników procesora CPU, które są obsługiwane na bieżącej platformie  
   
-1.  Otwórz okno wiersza polecenia.  
+1. Otwórz okno wiersza polecenia.  
   
-2.  Typ  
+2. Typ  
   
      **\<Katalog narzędzi wydajności w usłudze Visual Studio >/querycounters \VSPerfCmd**  
   

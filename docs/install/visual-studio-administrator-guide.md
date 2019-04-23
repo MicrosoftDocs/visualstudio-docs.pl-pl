@@ -2,7 +2,7 @@
 title: Podręcznik administratora programu Visual Studio
 titleSuffix: ''
 description: Dowiedz się więcej o sposobie wdrażania programu Visual Studio w środowisku przedsiębiorstwa.
-ms.date: 03/30/2019
+ms.date: 04/02/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0c12ae3e101f2f59f0f7f6560ea86f1e6161c6ff
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e228ca06aee6644b57782b30a1a9b02b17435f9d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790098"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088239"
 ---
 # <a name="visual-studio-administrator-guide"></a>Podręcznik administratora programu Visual Studio
 
@@ -99,3 +99,4 @@ Aby uzyskać więcej informacji na temat ustawień opinii klienta, zobacz [progr
 * [Aktualizowanie instalacji opartej na sieci, programu Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Sterowanie aktualizacjami na potrzeby wdrożeń programu Visual Studio](controlling-updates-to-visual-studio-deployments.md)
 * [Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi](tools-for-managing-visual-studio-instances.md)
+* [Cyklu życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing/)

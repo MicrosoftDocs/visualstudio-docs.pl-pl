@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1bec6daa92d4e5b58b97c47a45fa32c410aced5a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a5b76e49285a629234557a973f6d4b45703f1cfd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619956"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056214"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>Instrukcje: Dodaj parametr do metody
   Parametru można użyć do przekazywania informacji do metody, lub aby zostały zwrócone informacje z metody. Wszystkie metody musi mieć co najmniej jeden parametr. Aby uzyskać więcej informacji na temat projektowania parametr obsługuje typu metody, która ma zostać utworzona, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -31,27 +31,27 @@ ms.locfileid: "56619956"
 
 ### <a name="to-add-a-parameter-to-a-method"></a>Aby dodać parametr do metody
 
-1.  Dodaj metodę do jednostki.
+1. Dodaj metodę do jednostki.
 
-2.  Na pasku menu wybierz **widoku** > **Windows inne** > **szczegóły metody BDC**.
+2. Na pasku menu wybierz **widoku** > **Windows inne** > **szczegóły metody BDC**.
 
      **Szczegóły metody BDC** zostanie otwarte okno. Aby uzyskać więcej informacji, zobacz [omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
-3.  W **szczegóły metody BDC** okna, rozwiń węzeł metody, a następnie rozwiń **parametry** węzła.
+3. W **szczegóły metody BDC** okna, rozwiń węzeł metody, a następnie rozwiń **parametry** węzła.
 
-4.  W **dodać parametr** wybierz **tworzenie parametru**.
+4. W **dodać parametr** wybierz **tworzenie parametru**.
 
      Nowy parametr wyświetlany pod **parametry** węzła.
 
-5.  Na pasku menu wybierz **widoku** > **okno właściwości**.
+5. Na pasku menu wybierz **widoku** > **okno właściwości**.
 
-6.  W **właściwości** oknie **nazwa** właściwości z nazwą pasującą. Na przykład, jeśli metoda zwróci dane klientów, można nazwać metody **GetCustomers**.
+6. W **właściwości** oknie **nazwa** właściwości z nazwą pasującą. Na przykład, jeśli metoda zwróci dane klientów, można nazwać metody **GetCustomers**.
 
-7.  W **szczegóły metody BDC** okna, Otwórz listę, która pojawia się dla Kierunek parametru, a następnie wybierz **w**, **InOut**, **się**, lub **zwracają**.
+7. W **szczegóły metody BDC** okna, Otwórz listę, która pojawia się dla Kierunek parametru, a następnie wybierz **w**, **InOut**, **się**, lub **zwracają**.
 
      Aby uzyskać więcej informacji na temat kierunek, w którym należy wybrać dla metody typu, który tworzysz, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).
 
-8.  Zmodyfikuj deskryptor typu parametru. Aby uzyskać więcej informacji, zobacz [jak: Określanie deskryptora typu parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
+8. Zmodyfikuj deskryptor typu parametru. Aby uzyskać więcej informacji, zobacz [jak: Określanie deskryptora typu parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
 ## <a name="see-also"></a>Zobacz także
 - [Omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md)

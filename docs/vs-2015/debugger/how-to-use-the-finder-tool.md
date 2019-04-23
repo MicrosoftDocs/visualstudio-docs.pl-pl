@@ -11,12 +11,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 780cbcf5c6e03c5534b7f2125662696344e9cec4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c14fdcc5d58c62eebf993ba336a109adac5b7106
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771635"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053770"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Instrukcje: Korzystanie z narzędzia wyszukiwania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Narzędzie do wyszukiwania w oknie dialogowym Znajdź okno
   
 ### <a name="to-display-window-properties-or-messages"></a>Aby wyświetlić okno właściwości lub komunikaty  
   
-1.  Rozmieść aplikacji dla systemu windows, tak że Spy ++ i okno docelowe są widoczne.  
+1. Rozmieść aplikacji dla systemu windows, tak że Spy ++ i okno docelowe są widoczne.  
   
-2.  Z **Spy** menu, wybierz **Znajdź okno**.  
+2. Z **Spy** menu, wybierz **Znajdź okno**.  
   
      [Okna dialogowego Znajdowanie](../debugger/find-window-dialog-box.md) zostanie otwarty.  
   
-3.  Przeciągnij **Wyszukiwarka** przedziale docelowego.  
+3. Przeciągnij **Wyszukiwarka** przedziale docelowego.  
   
      Przeciągnij narzędzie **Znajdź okno** okno dialogowe wyświetla szczegóły wybranego okna.  
   
@@ -47,9 +47,9 @@ Narzędzie do wyszukiwania w oknie dialogowym Znajdź okno
     > [!TIP]
     >  Aby zwiększyć czytelność ekranu, wybierz pozycję **Ukryj Spy** opcji. Ta opcja zawiera narzędzie Spy ++ oknie głównym, pozostawiając tylko **Znajdź okno** okno dialogowe widoczne na podstawie innych aplikacji. Okno główne programu Spy ++ jest przywracany po kliknięciu **OK** lub **anulować**, lub po usunięciu zaznaczenia **Ukryj Spy ++** opcji.  
   
-4.  W obszarze **Pokaż**, wybierz opcję **właściwości** lub **wiadomości**.  
+4. W obszarze **Pokaż**, wybierz opcję **właściwości** lub **wiadomości**.  
   
-5.  Naciśnij klawisz **OK**.  
+5. Naciśnij klawisz **OK**.  
   
      W przypadku wybrania **właściwości**, [okno dialogowe właściwości](../debugger/window-properties-dialog-box.md) zostanie otwarty. W przypadku wybrania **wiadomości**, [widoku komunikatów](../debugger/messages-view.md) zostanie otwarte okno.  
   

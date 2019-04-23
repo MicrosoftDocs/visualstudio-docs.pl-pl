@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 03b2cf5b03ea7f2cfc2d8fa90346ac47c1e4ae84
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d58a8b98cb27527f3d4c464119fb5543f88e8ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755261"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088980"
 ---
 # <a name="generate-files-from-a-uml-model"></a>Generowanie plików na podstawie modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Z modelu UML można wygenerować kodu programu, schematów, dokumenty, zasobów 
   
   W tym temacie kończy się wraz z omówieniem [sposób używania Generowanie tekstu](#What). Aby uzyskać więcej informacji, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md).  
   
-##  <a name="Command"></a> Generowanie plików z polecenia menu  
+## <a name="Command"></a> Generowanie plików z polecenia menu  
  Możesz użyć wstępnie Przetwórz szablony tekstowe w ramach polecenia menu UML. W ramach kodu szablonu tekstu lub w osobnej klasy częściowej może odczytywać modelu, które są wyświetlane przez diagram.  
   
  Aby uzyskać więcej informacji o tych funkcjach przeczytaj następujące tematy:  
@@ -134,37 +134,37 @@ Type Class2 ::
           Attribute3 : string   
 ```  
   
-##  <a name="Application"></a> Generowanie plików z aplikacji  
+## <a name="Application"></a> Generowanie plików z aplikacji  
  Można wygenerować plików z aplikacji, która odczytuje modelu UML. W tym celu jest najbardziej elastyczna i niezawodna metoda uzyskiwania dostępu do modelu i jego elementy [Visual Studio Modelbus](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   
  Można również użyć podstawowa interfejsu API można załadować modelu i przekazać model do szablonów tekstowych przy użyciu tych samych technik, tak jak w poprzedniej sekcji. Aby uzyskać więcej informacji na temat ładowania modelu, zobacz [odczytywanie modelu UML w kodzie programu](../modeling/read-a-uml-model-in-program-code.md).  
   
-##  <a name="Design"></a> Generowanie plików w czasie projektowania  
+## <a name="Design"></a> Generowanie plików w czasie projektowania  
  Jeśli projekt ma standardową metodę interpretowanie UML w kodzie, można utworzyć szablony tekstowe, które umożliwiają generowanie kodu w obrębie projektu na podstawie modelu UML. Zazwyczaj trzeba rozwiązania zawierającego projekt modelu UML i jeden lub więcej projektów dla kodu aplikacji. Każdy projekt kodu może zawierać kilka szablonów, które generują pliki kodu, zasoby i konfiguracji programu, na podstawie zawartości modelu. Deweloper może uruchomić wszystkie szablony, klikając **Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań. W formularzu klas częściowych, ułatwia integrowanie zapisywane ręczne części zwykle generowania kodu programu.  
   
  A [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu tego typu mogą być dystrybuowane w postaci szablonu, tak, aby każdy członek zespołu mógł tworzyć projekty, które generują kod z modelu w taki sam sposób. Zazwyczaj szablonu jest częścią pakietu rozszerzenia, obejmującą ograniczenia sprawdzania poprawności na modelu w celu zapewnienia, że zostały spełnione warunki wstępne generowania kodu.  
   
 ### <a name="outline-procedure-for-generating-files"></a>Konspekt procedury generowania plików  
   
--   Aby dodać szablon do projektu, wybierz pozycję **szablonu tekstu** w oknie dialogowym Dodaj nowy plik. Można dodać szablon do większości typów projektu, ale nie do modelowania projektów.  
+- Aby dodać szablon do projektu, wybierz pozycję **szablonu tekstu** w oknie dialogowym Dodaj nowy plik. Można dodać szablon do większości typów projektu, ale nie do modelowania projektów.  
   
--   Właściwości niestandardowe narzędzia plik szablonu powinien być **TextTemplatingFileGenerator**, i rozszerzenie nazwy pliku powinno być .tt.  
+- Właściwości niestandardowe narzędzia plik szablonu powinien być **TextTemplatingFileGenerator**, i rozszerzenie nazwy pliku powinno być .tt.  
   
--   Szablon powinien zawierać co najmniej dyrektywa wyjściowa:  
+- Szablon powinien zawierać co najmniej dyrektywa wyjściowa:  
   
      `<#@ output extension=".cs" #>`  
   
      Ustaw pole rozszerzenia zgodnie z językiem Twojego projektu.  
   
--   Aby umożliwić generowanie kodu w szablonie dostępu do modelu, należy napisać `<#@ assembly #>` dyrektywy dla zestawów wymaganych do odczytania modelu UML. Użyj `ModelingProject.LoadReadOnly()` można otworzyć modelu. Aby uzyskać więcej informacji, zobacz [odczytywanie modelu UML w kodzie programu](../modeling/read-a-uml-model-in-program-code.md).  
+- Aby umożliwić generowanie kodu w szablonie dostępu do modelu, należy napisać `<#@ assembly #>` dyrektywy dla zestawów wymaganych do odczytania modelu UML. Użyj `ModelingProject.LoadReadOnly()` można otworzyć modelu. Aby uzyskać więcej informacji, zobacz [odczytywanie modelu UML w kodzie programu](../modeling/read-a-uml-model-in-program-code.md).  
   
--   Szablon jest wykonywany, gdy zapisujesz go, a po kliknięciu **Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań.  
+- Szablon jest wykonywany, gdy zapisujesz go, a po kliknięciu **Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań.  
   
--   Aby uzyskać więcej informacji na temat tego typu szablonu, zobacz [generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
+- Aby uzyskać więcej informacji na temat tego typu szablonu, zobacz [generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
   
--   W typowym projekcie masz kilka szablonów, które generują różne pliki z tego samego modelu. Pierwsza część każdy szablon będą takie same. Aby zmniejszyć takie duplikowanie, Przenieś części wspólnej do oddzielnego pliku tekstowego, a następnie wywołaj ją przy użyciu dyrektywy `<#@include file="common.txt"#>` w każdym szablonie.  
+- W typowym projekcie masz kilka szablonów, które generują różne pliki z tego samego modelu. Pierwsza część każdy szablon będą takie same. Aby zmniejszyć takie duplikowanie, Przenieś części wspólnej do oddzielnego pliku tekstowego, a następnie wywołaj ją przy użyciu dyrektywy `<#@include file="common.txt"#>` w każdym szablonie.  
   
--   Można również zdefiniować specjalne procesor dyrektywy, która umożliwia dostarczanie parametry, aby proces generowania tekstu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie przekształcenia tekstu T4](../modeling/customizing-t4-text-transformation.md).  
+- Można również zdefiniować specjalne procesor dyrektywy, która umożliwia dostarczanie parametry, aby proces generowania tekstu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie przekształcenia tekstu T4](../modeling/customizing-t4-text-transformation.md).  
   
 ### <a name="example"></a>Przykład  
  Ten przykład generuje klasy C# dla każdej klasy UML w modelu źródłowym.  
@@ -173,19 +173,19 @@ Type Class2 ::
   
 1. Utwórz diagram klas UML w projekcie modelowania w nowym rozwiązaniu.  
   
-   1.  W **architektury** menu, kliknij przycisk **nowy Diagram**.  
+   1. W **architektury** menu, kliknij przycisk **nowy Diagram**.  
   
-   2.  Wybierz **Diagram klas UML**.  
+   2. Wybierz **Diagram klas UML**.  
   
-   3.  Postępuj zgodnie z monitami, aby utworzyć nowy projekt rozwiązania i modelowanie.  
+   3. Postępuj zgodnie z monitami, aby utworzyć nowy projekt rozwiązania i modelowanie.  
   
-   4.  Dodaj niektórych klas do diagramu, przeciągając narzędzie klasy UML z przybornika.  
+   4. Dodaj niektórych klas do diagramu, przeciągając narzędzie klasy UML z przybornika.  
   
-   5.  Zapisz plik.  
+   5. Zapisz plik.  
   
 2. Utwórz projekt C# lub Visual Basic, w tym samym rozwiązaniu.  
   
-   -   W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy rozwiązanie, wskaż opcję **Dodaj**, a następnie kliknij przycisk **nowy projekt**. W obszarze **zainstalowane szablony**, kliknij przycisk **języka Visual Basic** lub **Visual C#,** a następnie wybierz typ projektu, takich jak **aplikację Konsolową**.  
+   - W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy rozwiązanie, wskaż opcję **Dodaj**, a następnie kliknij przycisk **nowy projekt**. W obszarze **zainstalowane szablony**, kliknij przycisk **języka Visual Basic** lub **Visual C#,** a następnie wybierz typ projektu, takich jak **aplikację Konsolową**.  
   
 3. Dodaj plik zwykłego tekstu, C# lub projekcie Visual Basic. Ten plik będzie zawierać kod, który jest udostępniany, jeśli chcesz napisać kilka szablonów tekstu.  
   
@@ -203,9 +203,9 @@ Type Class2 ::
   
 6. Sprawdź, czy kod w pliku zależnego. Powinien zawierać klasę dla każdej klasy UML w modelu.  
   
-   1.  W projekcie języka Visual Basic, kliknij przycisk **Pokaż wszystkie pliki** na pasku narzędzi Eksploratora rozwiązań.  
+   1. W projekcie języka Visual Basic, kliknij przycisk **Pokaż wszystkie pliki** na pasku narzędzi Eksploratora rozwiązań.  
   
-   2.  Rozwiń węzeł pliku szablonu w Eksploratorze rozwiązań.  
+   2. Rozwiń węzeł pliku szablonu w Eksploratorze rozwiązań.  
   
 #### <a name="content-of-the-shared-text-file"></a>Zawartość pliku tekstowego udostępnionego  
  W tym przykładzie plik nosi nazwę SharedTemplateCode.txt, a w tym samym folderze, co szablonów tekstowych.  
@@ -296,23 +296,23 @@ namespace Test{
 }  
 ```  
   
-##  <a name="What"></a> Jak używać Generowanie tekstu  
+## <a name="What"></a> Jak używać Generowanie tekstu  
  Rzeczywista siła modelowania są uzyskiwane podczas używać modeli do projektowania na poziomie wymagania lub architektury. Do wykonania niektórych prac przekształcania wysokiego poziomu pomysłów w kod, można użyć szablonów tekstowych. W wielu przypadkach to nie prowadzi do relację między elementami w modelach UML i klas lub inne części kodu programu.  
   
  Ponadto transformacja jest zależna od domeny problem; nie istnieje uniwersalne mapowania między modelami i kodu.  
   
  Poniżej przedstawiono kilka przykładów generowanie kodu z modeli:  
   
--   **Linie produktów**. Fabrikam, Inc. tworzy i instaluje bagażu Kuwejcie obsługi systemów. Większość oprogramowania jest bardzo podobne w elemencie jednej instalacji, a następnie, ale konfiguracja oprogramowania zależy od zainstalowano pakiet, jakie obsługi maszyn i jak te elementy są ze sobą połączone przez poziome. Na początku umowy analityków firmy Fabrikam omówienia ich wymagań za pomocą funkcji zarządzania lotniska i przechwytywania plan sprzętu przy użyciu diagram aktywności UML. Z tego modelu zespół opracowujący generuje pliki konfiguracji, kod programu, plany i dokumenty użytkownika. Wykonywania pracy przez ręczne dodatki i zmiany w kodzie. Zgodnie z ich zdobycia doświadczenia z jednego zadania do następnego, mogą rozszerzyć zakres wygenerowanego materiału.  
+- **Linie produktów**. Fabrikam, Inc. tworzy i instaluje bagażu Kuwejcie obsługi systemów. Większość oprogramowania jest bardzo podobne w elemencie jednej instalacji, a następnie, ale konfiguracja oprogramowania zależy od zainstalowano pakiet, jakie obsługi maszyn i jak te elementy są ze sobą połączone przez poziome. Na początku umowy analityków firmy Fabrikam omówienia ich wymagań za pomocą funkcji zarządzania lotniska i przechwytywania plan sprzętu przy użyciu diagram aktywności UML. Z tego modelu zespół opracowujący generuje pliki konfiguracji, kod programu, plany i dokumenty użytkownika. Wykonywania pracy przez ręczne dodatki i zmiany w kodzie. Zgodnie z ich zdobycia doświadczenia z jednego zadania do następnego, mogą rozszerzyć zakres wygenerowanego materiału.  
   
--   **Wzorce**. Często deweloperzy firmy Contoso, Ltd tworzenie witryn sieci Web i projektowanie schematu nawigacji za pomocą diagramów klas UML. Każda strona sieci Web jest reprezentowane przez klasę, a asocjacje reprezentują łącza nawigacji. Deweloperzy Generowanie większość kodu witryny sieci Web z modelu. Każda strona sieci Web odpowiada różne klasy i we wpisach w plikach zasobów.  Ta metoda zapewnia korzyści, które konstrukcji każdej strony jest zgodny z jednym wzorcu bardziej niezawodne i elastyczne niż ręcznie napisany kod, dzięki czemu. Wzorzec jest generowanie szablonów, podczas gdy model jest używany do przechwytywania zmiennej aspektów.  
+- **Wzorce**. Często deweloperzy firmy Contoso, Ltd tworzenie witryn sieci Web i projektowanie schematu nawigacji za pomocą diagramów klas UML. Każda strona sieci Web jest reprezentowane przez klasę, a asocjacje reprezentują łącza nawigacji. Deweloperzy Generowanie większość kodu witryny sieci Web z modelu. Każda strona sieci Web odpowiada różne klasy i we wpisach w plikach zasobów.  Ta metoda zapewnia korzyści, które konstrukcji każdej strony jest zgodny z jednym wzorcu bardziej niezawodne i elastyczne niż ręcznie napisany kod, dzięki czemu. Wzorzec jest generowanie szablonów, podczas gdy model jest używany do przechwytywania zmiennej aspektów.  
   
--   **Schematy**. Agencji ubezpieczeniowej ma tysięcy systemów na całym świecie. Te systemy używają różnych baz danych, języków i interfejsy. Zespół centralnej architektury wewnętrznie publikuje modele biznesowe pojęć i procesów. Z tych modeli lokalnych zespoły Generowanie części swoje schematy bazy danych i wymiany, deklaracji w kodzie programu i tak dalej. Graficzną reprezentację modele pomaga zespołom omówić propozycję. Zespoły tworzą wiele diagramów przedstawiających podzestawy modelu, które są stosowane do poszczególnych obszarów działalności. Również używają kolor Wyróżnianie obszarów, które mogą ulec zmianie.  
+- **Schematy**. Agencji ubezpieczeniowej ma tysięcy systemów na całym świecie. Te systemy używają różnych baz danych, języków i interfejsy. Zespół centralnej architektury wewnętrznie publikuje modele biznesowe pojęć i procesów. Z tych modeli lokalnych zespoły Generowanie części swoje schematy bazy danych i wymiany, deklaracji w kodzie programu i tak dalej. Graficzną reprezentację modele pomaga zespołom omówić propozycję. Zespoły tworzą wiele diagramów przedstawiających podzestawy modelu, które są stosowane do poszczególnych obszarów działalności. Również używają kolor Wyróżnianie obszarów, które mogą ulec zmianie.  
   
 ## <a name="important-techniques-for-generating-artifacts"></a>Ważne technik do generowania artefaktów  
  W poprzednich przykładach modele są używane do różnych celów biznesowych — zależnych od ustawień lokalnych i interpretację modelowania elementów, takich jak klas i działań różni się w jednej aplikacji do innej. Następujące techniki są przydatne podczas generowania artefaktów z modeli.  
   
--   **Profile**. Nawet w ramach obszar działalności jeden interpretacja typu elementu może się różnić. Na przykład na diagramie witryny sieci Web niektóre klasy może reprezentować stron sieci Web, a inne reprezentują bloki zawartości. Aby ułatwić użytkownikom zarejestrować te różnice zdefiniować stereotypy. Stereotypy również umożliwiać można dołączyć dodatkowe właściwości, które mają zastosowanie do elementów tego typu. Stereotypy są spakowane w obrębie profilów. Aby uzyskać więcej informacji, zobacz [Definiowanie profilu w celu rozszerzenia UML](../modeling/define-a-profile-to-extend-uml.md).  
+- **Profile**. Nawet w ramach obszar działalności jeden interpretacja typu elementu może się różnić. Na przykład na diagramie witryny sieci Web niektóre klasy może reprezentować stron sieci Web, a inne reprezentują bloki zawartości. Aby ułatwić użytkownikom zarejestrować te różnice zdefiniować stereotypy. Stereotypy również umożliwiać można dołączyć dodatkowe właściwości, które mają zastosowanie do elementów tego typu. Stereotypy są spakowane w obrębie profilów. Aby uzyskać więcej informacji, zobacz [Definiowanie profilu w celu rozszerzenia UML](../modeling/define-a-profile-to-extend-uml.md).  
   
      W kodzie szablonu jest łatwy dostęp stereotypów, które są zdefiniowane dla obiektu do. Na przykład:  
   
@@ -322,14 +322,14 @@ namespace Test{
        (s => s.Profile == profile && s.Name == stereo ); }  
     ```  
   
--   **Ograniczone modeli**. Nie wszystkie modele, które można utworzyć są prawidłowe dla każdego celu. Na przykład w modelach bagażu Kuwejcie Fabrikam, byłoby niepoprawne mieć technicznej ewidencjonowania bez wychodzących taśmy. Można zdefiniować funkcje sprawdzania poprawności, które pomagają użytkownikom do przestrzegania tych warunków ograniczających. Aby uzyskać więcej informacji, zobacz [definiowanie ograniczeń walidacji dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md).  
+- **Ograniczone modeli**. Nie wszystkie modele, które można utworzyć są prawidłowe dla każdego celu. Na przykład w modelach bagażu Kuwejcie Fabrikam, byłoby niepoprawne mieć technicznej ewidencjonowania bez wychodzących taśmy. Można zdefiniować funkcje sprawdzania poprawności, które pomagają użytkownikom do przestrzegania tych warunków ograniczających. Aby uzyskać więcej informacji, zobacz [definiowanie ograniczeń walidacji dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md).  
   
--   **Zachowaj ręczne zmiany**. Tylko niektóre pliki rozwiązania mogą być generowane z modelu. W większości przypadków musisz być w stanie dodać lub dostosować zawartość jest generowana ręcznie. Jest ważne, że te zmiany ręcznej powinny zostać zachowane podczas przekształcania szablonu po ponownym uruchomieniu.  
+- **Zachowaj ręczne zmiany**. Tylko niektóre pliki rozwiązania mogą być generowane z modelu. W większości przypadków musisz być w stanie dodać lub dostosować zawartość jest generowana ręcznie. Jest ważne, że te zmiany ręcznej powinny zostać zachowane podczas przekształcania szablonu po ponownym uruchomieniu.  
   
      Gdzie szablonów generowania kodu w [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] języków, powinien wygenerować klas częściowych, tak aby deweloperzy mogą dodawać metody i kodu. Jest to również przydatne do generowania każdej klasy jako para: abstrakcyjną klasę bazową, która zawiera metody i klasy dziedziczącej, która zawiera tylko Konstruktor. Dzięki temu deweloperzy zastąpienia metody. Aby zezwolić na inicjowanie do zastąpienia, jego odbywa się w oddzielnych metodach zamiast w konstruktorach.  
   
      W przypadku, gdy szablon generuje XML i innych typów danych wyjściowych, może być trudniejsze być oddzielone od zawartość jest generowana ręczne zawartości. Jedną z metod jest tworzenie zadania w procesie kompilacji, który łączy dwa pliki. Inną metodą jest dla deweloperów dopasować lokalną kopię generowania szablonu.  
   
--   **Przenieś kod do oddzielnych zestawów**. Nie zaleca się zapisywania duże jednostki kodu w szablonach. Zaleca się zachować zawartość jest generowana oddzielnie od obliczania i szablony tekstowe nie są również obsługiwane edycji kodu.  
+- **Przenieś kod do oddzielnych zestawów**. Nie zaleca się zapisywania duże jednostki kodu w szablonach. Zaleca się zachować zawartość jest generowana oddzielnie od obliczania i szablony tekstowe nie są również obsługiwane edycji kodu.  
   
      Zamiast tego w przypadku wykonywania obliczeń istotne, aby wygenerować tekst tworzyć te funkcje w osobny zestaw i wywołać jego metody z szablonu.

@@ -13,12 +13,12 @@ ms.assetid: 4479ac61-18a9-4a30-b213-9921c5af9a26
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bdaae4fcf52beccabadfa8abd4800c2e96698c42
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 134b4e2d58b0581a14d387e8601cc0bdc57cb56b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777509"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089253"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -43,9 +43,9 @@ int GetBreakpointResolution( 
  `ppBPResolution`  
  [out] Zwraca [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interfejs, który reprezentuje jedną z następujących czynności:  
   
--   Obiekt rozwiązania punktu przerwania w tym artykule opisano lokalizacja w kodzie, w którym została powiązana punktu przerwania w kodzie.  
+- Obiekt rozwiązania punktu przerwania w tym artykule opisano lokalizacja w kodzie, w którym została powiązana punktu przerwania w kodzie.  
   
--   Lokalizacja danych, gdzie została powiązana punktu przerwania danych.  
+- Lokalizacja danych, gdzie została powiązana punktu przerwania danych.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli stan obiektu powiązany punkt przerwania jest ustawiony na `BPS_DELETED` (część [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) wyliczenia).  

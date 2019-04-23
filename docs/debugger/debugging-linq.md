@@ -19,28 +19,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17b03585c5b92560df6af8988ff954dba896f16a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e7a58b2c8f14f1dff241b7f3c7d783460a83b7bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707175"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087992"
 ---
 # <a name="debugging-linq"></a>Debugowanie LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Obsługa debugowania języka zintegrowanego zapytania kodu (LINQ), z pewnymi ograniczeniami. Najbardziej debugujące funkcje współpracują z instrukcjami LINQ, w tym przechodzenie krok po kroku, ustawiania punktów przerwania i wyświetlaniem wyników w oknach debugera. Ten temat opisuje główne ograniczenia debugowania LINQ.
 
-##  <a name="BKMK_ViewingLINQResults"></a> Wyświetlanie wyników programu LINQ
+## <a name="BKMK_ViewingLINQResults"></a> Wyświetlanie wyników programu LINQ
  Można przeglądać rezultaty instrukcji LINQ, używając DataTips, okna czujki i okna dialogowego QuickWatch. Kiedy używasz okna źródła, możesz wstrzymać wskaźnik na zapytaniu w oknie źródła i wyświetli się datatip. Można kopiować zmienną LINQ i wklej go w oknie czujki lub okno dialogowe QuickWatch.
 
  W programie LINQ kwerenda nie jest uwzględniana podczas tworzenia lub deklarowania, ale tylko wtedy, gdy kwerenda jest używana. W związku z tym zapytanie nie ma wartości dopóki jest ocenione. Aby uzyskać pełny opis tworzenia i oceny kwerend, zobacz [wprowadzenie do zapytań LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) lub [Your pierwszego zapytania LINQ pisania](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query).
 
  Aby wyświetlić wynik zapytania, debugger musi je ocenić. Bezwarunkowa ocena, która występuje podczas wyświetlania wyniku zapytania LINQ w debugerze, ma jakieś konsekwencje, które należy wziąć pod uwagę:
 
--   Każdej oceny kwerendy jest czasochłonne. Rozwinięcie węzła wyników zajmuje trochę czasu. Dla niektórych zapytań powtarzające się oceny może prowadzić do kar zauważalna zmiana wydajności.
+- Każdej oceny kwerendy jest czasochłonne. Rozwinięcie węzła wyników zajmuje trochę czasu. Dla niektórych zapytań powtarzające się oceny może prowadzić do kar zauważalna zmiana wydajności.
 
--   Ocena zapytania może spowodować efekty uboczne, które są zmianami wartości danych lub stanu programu. Nie wszystkie kwerendy mają skutki uboczne. Aby ustalić, czy zapytanie może być bezpiecznie ocenione bez efektów ubocznych, musisz zrozumieć kod, który implementuje zapytanie.
+- Ocena zapytania może spowodować efekty uboczne, które są zmianami wartości danych lub stanu programu. Nie wszystkie kwerendy mają skutki uboczne. Aby ustalić, czy zapytanie może być bezpiecznie ocenione bez efektów ubocznych, musisz zrozumieć kod, który implementuje zapytanie.
 
-##  <a name="BKMK_SteppingAndLinq"></a> Przechodzenie krok po kroku i LINQ
+## <a name="BKMK_SteppingAndLinq"></a> Przechodzenie krok po kroku i LINQ
  Podczas debugowania kodu LINQ, krokowość posiada różnice w zachowaniu, które należy poznać.
 
 ### <a name="linq-to-sql"></a>LINQ do SQL
@@ -104,7 +104,7 @@ End Function
 
  Zrewidowane zapytanie wywołuje funkcję `IsEven` przy każdym przejściu przez `items`. Można użyć okien debugera, aby zobaczyć, czy każdy element spełnia podany warunek i można przejść przez kod w `IsEven`. Predykat w tym przykładzie jest dość prosta. Jednak jeśli masz trudniejszy predykat, który musisz zdebugować, ta technika może być bardzo przydatne.
 
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Edytuj i Kontynuuj nie obsługiwanie dla programu LINQ
+## <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Edytuj i Kontynuuj nie obsługiwanie dla programu LINQ
  Edytuj i Kontynuuj obsługuje zmiany zapytań LINQ z ograniczeniami. Aby uzyskać więcej informacji, zobacz [EnC obsługiwane zmiany](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
 
 ## <a name="see-also"></a>Zobacz też

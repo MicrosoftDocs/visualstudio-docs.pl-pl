@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7c1bcb041101cf90957d02991ab1619d47051b5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 88bd7571179d7841cc239052b7bf9f410761174c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335133"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044034"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Strona odwołań, Projektant projektu (Visual Basic)
 
@@ -82,11 +82,11 @@ Kliknij ten przycisk, aby uzyskać dostęp do **ścieżki odwołania** okno dial
 
  Wybierz przestrzeń nazw określonych przez użytkownika na liście przestrzeni nazw, wpisz nazwę, którą chcesz zamienić go w **zaimportowane przestrzenie nazw** , a następnie kliknij ten przycisk, aby przejść do nowej przestrzeni nazw. Przycisk jest aktywny tylko wtedy, gdy w wybranej przestrzeni nazw to taki, który zostanie dodany do listy przy użyciu **dodać Import użytkownika** przycisku. Możesz dodać:
 
--   Klas lub przestrzeni nazw, takich jak <xref:System.Math?displayProperty=fullName>.
+- Klas lub przestrzeni nazw, takich jak <xref:System.Math?displayProperty=fullName>.
 
--   Importuje aliasem, takich jak `VB=Microsoft.VisualBasic`.
+- Importuje aliasem, takich jak `VB=Microsoft.VisualBasic`.
 
--   Obszary nazw XML, takie jak `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
+- Obszary nazw XML, takie jak `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
 
 ## <a name="see-also"></a>Zobacz też
 

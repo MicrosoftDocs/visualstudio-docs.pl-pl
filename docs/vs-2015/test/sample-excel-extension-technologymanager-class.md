@@ -8,12 +8,12 @@ ms.assetid: 8a7b760d-b5ac-4451-9593-6ac1a0b95cdb
 caps.latest.revision: 11
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ab353f9c42eebe4af10f56f6ee4cda533069121
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 64632c175b44a370d7dcaf48e7c0a8cee766a4ab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779573"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078073"
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Przykładowe rozszerzenie programu Excel: TechnologyManager — Klasa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Ta klasa rozszerza <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITec
 ## <a name="methods-to-get-an-element"></a>Metody w celu uzyskania elementu  
  Dostępnych jest kilka ważnych metod, które są używane przez kodowanych testów interfejsu użytkownika można pobrać elementu specyficzne dla technologii, zapewniając uchwyt punkcie ekran lub element z różnych technologii. Kod dla tych metod nie wymaga wyjaśnień. Metod bazowych są następujące:  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetFocusedElement%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetFocusedElement%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromPoint%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromPoint%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromWindowHandle%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromWindowHandle%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromNativeElement%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromNativeElement%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.ConvertToThisTechnology%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.ConvertToThisTechnology%2A?displayProperty=fullName>  
   
 ## <a name="parsequeryid-method"></a>Metoda ParseQueryId  
  Po utworzeniu kodowanego testu interfejsu użytkownika, użytkownik może określić wartości właściwości dla niektórych lub wszystkich kontrolek w teście. Wartości tych właściwości są używane przez strukturę testów do tworzenia pary nazwa wartość o nazwie właściwości wyszukiwania, które służą do znajdowania określonych kontrolek interfejsu użytkownika podczas testu. Właściwości wyszukiwania razem reprezentowanie wartości <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A?displayProperty=fullName> właściwości każdego elementu w technologii, która zawiera każdy formant. Ponieważ formant może być konieczne można znaleźć kilka razy podczas testu, ta metoda zapewnia Menedżer technologii sposób na optymalizację analizowania właściwości wyszukiwania dla danej kontrolki. Ta metoda zwraca też wartość pliku cookie używanego przez platformę do kolejnych wyszukiwania dla tej kontrolki. Ta implementacja metody używa <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.AndCondition.Match%2A?displayProperty=fullName> metodę, aby przeanalizować właściwości wyszukiwania.  

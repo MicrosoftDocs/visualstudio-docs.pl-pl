@@ -15,67 +15,67 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f28de400b417011b127b76c8813024f9721cc375
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 18c2d5396b01c238213d494c1452e8919ea9cdd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843168"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048063"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Instrukcje: Określanie deskryptora typu parametru
   Deskryptor typu zawiera właściwości, które opisują typ danych parametru. Deskryptor typu może zdefiniować pole, jednostkę lub kolekcję jednostek. Aby uzyskać więcej informacji, zobacz [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
 
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>Aby zdefiniować deskryptor typu parametru
 
-1.  W **szczegóły metody BDC** oknie Wybierz deskryptor typu parametru.
+1. W **szczegóły metody BDC** oknie Wybierz deskryptor typu parametru.
 
-2.  Na pasku menu wybierz **widoku**, **okno właściwości**.
+2. Na pasku menu wybierz **widoku**, **okno właściwości**.
 
-3.  W **właściwości** okna, ustaw właściwości deskryptora typu.
+3. W **właściwości** okna, ustaw właściwości deskryptora typu.
 
      W poniższych procedurach opisano sposób definiowania deskryptora typu jako pola, jednostki lub kolekcja.
 
 ### <a name="to-define-a-field"></a>Aby zdefiniować pole
 
-1.  W **właściwości** oknie **nazwa** właściwości deskryptora typu na nazwę pola w typie, która reprezentuje jednostkę (na przykład: **Imię**).
+1. W **właściwości** oknie **nazwa** właściwości deskryptora typu na nazwę pola w typie, która reprezentuje jednostkę (na przykład: **Imię**).
 
-2.  Na liście obok **TypeName** właściwości, wybierz odpowiedni typ danych (na przykład **Int32**).
+2. Na liście obok **TypeName** właściwości, wybierz odpowiedni typ danych (na przykład **Int32**).
 
      Aby uzyskać informacje na temat innych parametrów opcjonalnych, zobacz [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
 
 ### <a name="to-define-an-entity"></a>Aby zdefiniować jednostkę
 
-1.  W **właściwości** oknie **nazwa** właściwość na nazwę opisującą element (na przykład: **Skontaktuj się z pomocą**).
+1. W **właściwości** oknie **nazwa** właściwość na nazwę opisującą element (na przykład: **Skontaktuj się z pomocą**).
 
-2.  Ustaw **TypeName** właściwość w pełni kwalifikowaną nazwę typu, która reprezentuje jednostkę. Ten typ może być klasą w projekcie, typ zdefiniowany w zestawie, do którego można odwołać się w rozwiązaniu lub typem zdefiniowanym w modelu usługi BDC.
+2. Ustaw **TypeName** właściwość w pełni kwalifikowaną nazwę typu, która reprezentuje jednostkę. Ten typ może być klasą w projekcie, typ zdefiniowany w zestawie, do którego można odwołać się w rozwiązaniu lub typem zdefiniowanym w modelu usługi BDC.
 
-    -   Klasy w projekcie, wybierz strzałkę w dół **TypeName** właściwości, wybierz **bieżący projekt** karty w oknie dialogowym zostanie wyświetlony, a następnie wybierz klasę w projekcie.
+    - Klasy w projekcie, wybierz strzałkę w dół **TypeName** właściwości, wybierz **bieżący projekt** karty w oknie dialogowym zostanie wyświetlony, a następnie wybierz klasę w projekcie.
 
          W pełni kwalifikowana nazwa obejmuje przestrzeń nazw i nazwę klasy, następuje nazwa systemu LOB. W poniższym przykładzie ustawiono wartość **TypeName** właściwości do klasy w projekcie.
 
          `MyBDCNamespace.BdcModel1.Contact, BdcModel1`
 
-    -   Dla typu znajdującego się w zestawie w rozwiązaniu w pełni kwalifikowana nazwa obejmuje nazwę typu, nazwę zestawu, numer wersji, kulturę i token klucza publicznego.
+    - Dla typu znajdującego się w zestawie w rozwiązaniu w pełni kwalifikowana nazwa obejmuje nazwę typu, nazwę zestawu, numer wersji, kulturę i token klucza publicznego.
 
          W poniższym przykładzie ustawiono wartość **TypeName** właściwości Typ zdefiniowany w zestawie, do którego można odwołać się w rozwiązaniu.
 
          `MyNamespace.Contact, myAssemblyName, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`
 
-    -   Dla typu zdefiniowanego w modelu usługi BDC w pełni kwalifikowana nazwa obejmuje przestrzeń nazw i nazwę typu.
+    - Dla typu zdefiniowanego w modelu usługi BDC w pełni kwalifikowana nazwa obejmuje przestrzeń nazw i nazwę typu.
 
          W poniższym przykładzie ustawiono wartość **TypeName** właściwość do typu w modelu usługi BDC.
 
          `Microsoft.BusinessData.Runtime.DynamicType`
 
-3.  W **szczegóły metody BDC** , Otwórz listę, która pojawia się dla deskryptora typu, a następnie wybierz **Edytuj**.
+3. W **szczegóły metody BDC** , Otwórz listę, która pojawia się dla deskryptora typu, a następnie wybierz **Edytuj**.
 
      **Eksplorator BDC** zostanie otwarte okno.
 
-4.  W **Eksplorator BDC**, otwórz menu skrótów deskryptora typu, a następnie wybierz **Dodaj deskryptor typu**.
+4. W **Eksplorator BDC**, otwórz menu skrótów deskryptora typu, a następnie wybierz **Dodaj deskryptor typu**.
 
      Nowy deskryptor typu jest dodawany jako element podrzędny do deskryptora typu. Skonfiguruj ten deskryptor typu jako pole.
 
-5.  Powtórz krok 4, aby dodać deskryptor typu podrzędnego dla każdego pola encji.
+5. Powtórz krok 4, aby dodać deskryptor typu podrzędnego dla każdego pola encji.
 
 ### <a name="to-define-a-collection-of-entities"></a>Aby zdefiniować kolekcję jednostek
 

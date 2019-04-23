@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3985d8a11118097a4d1d97b95340702d1ed23209
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eb31cf48194f48188b714fb7afb14de053cb584d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642784"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043497"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Przegląd wielowersyjności kodu w programie MSBuild
 Korzystając z programu MSBuild, można kompilować aplikację do uruchamiania na jednym z kilku różnych wersji programu .NET Framework i na jednym z różnych platform system. Na przykład można kompilować aplikację do uruchamiania na .NET Framework 2.0 na platformie 32-bitowej i kompilacji tej samej aplikacji do uruchamiania na .NET Framework 4.5 na platformie 64-bitowej.
@@ -23,15 +23,15 @@ Korzystając z programu MSBuild, można kompilować aplikację do uruchamiania n
 
  Oto niektóre funkcje przeznaczone dla programu MSBuild:
 
--   Można opracować aplikację, która jest przeznaczony dla starszej wersji programu .NET Framework, na przykład wersji 2.0, 3.5 i 4.
+- Można opracować aplikację, która jest przeznaczony dla starszej wersji programu .NET Framework, na przykład wersji 2.0, 3.5 i 4.
 
--   Można wskazać framework innych niż .NET Framework, na przykład Silverlight Framework.
+- Można wskazać framework innych niż .NET Framework, na przykład Silverlight Framework.
 
--   Możesz wybrać docelową *profil framework*, czyli uprzednio zdefiniowany podzbiór platformy docelowej.
+- Możesz wybrać docelową *profil framework*, czyli uprzednio zdefiniowany podzbiór platformy docelowej.
 
--   Jeśli z dodatkiem Service pack dla bieżącej wersji programu .NET Framework jest zwalniana, można go wykorzystać.
+- Jeśli z dodatkiem Service pack dla bieżącej wersji programu .NET Framework jest zwalniana, można go wykorzystać.
 
--   Przeznaczone dla programu MSBuild gwarantuje, że aplikacja używa tylko funkcjonalności, która jest dostępna w docelowej platformy framework i platformy.
+- Przeznaczone dla programu MSBuild gwarantuje, że aplikacja używa tylko funkcjonalności, która jest dostępna w docelowej platformy framework i platformy.
 
 ## <a name="target-framework-and-platform"></a>Platforma
  A *platformę docelową* jest wersją .NET Framework, projekt został opracowany pod kątem uruchamiania na i *platformę docelową* czy projekt jest kompilowany do uruchamiania na Platforma systemu.  Na przykład możesz chcieć aplikacji .NET Framework 2.0, do uruchamiania na 32-bitowej platformie, która jest zgodna z rodziny procesorów 802 x 86 (x86) docelowej. Kombinacja wartości docelowej i platforma docelowa jest znany jako *kontekstu docelowej*. Aby uzyskać więcej informacji, zobacz [platformy docelowej i platformy docelowej](../msbuild/msbuild-target-framework-and-target-platform.md).

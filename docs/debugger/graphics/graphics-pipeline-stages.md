@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba192d5ec897a1914ef0ba70188930c8c4ae7ecc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0eb6cf6f460ca0cf164f6acb78b1309d2222ea39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679518"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089136"
 ---
 # <a name="graphics-pipeline-stages"></a>Etapy potoku grafiki
 W oknie etapy potoku grafiki pomaga zrozumieć, jak wywołanie rysowania poszczególnych jest przekształcana w każdym etapie potoku grafiki Direct3D.
@@ -43,14 +43,14 @@ W oknie etapy potoku grafiki pomaga zrozumieć, jak wywołanie rysowania poszcze
 
 #### <a name="to-view-a-shaders-source-code"></a>Aby wyświetlić kod źródłowy modułu cieniującego
 
--   W **etapy potoku grafiki** oknie Znajdź etapu programu do cieniowania, który odnosi się do programu do cieniowania do sprawdzenia. Następnie poniżej obrazu podglądu wykonaj link tytułu etapu programu do cieniowania — na przykład, kliknij link **obj:30 program do cieniowania wierzchołków** Aby wyświetlić kod źródłowy modułu cieniującego wierzchołek.
+- W **etapy potoku grafiki** oknie Znajdź etapu programu do cieniowania, który odnosi się do programu do cieniowania do sprawdzenia. Następnie poniżej obrazu podglądu wykonaj link tytułu etapu programu do cieniowania — na przykład, kliknij link **obj:30 program do cieniowania wierzchołków** Aby wyświetlić kod źródłowy modułu cieniującego wierzchołek.
 
     > [!TIP]
     >  Liczba obiektów **obj:30**, identyfikuje ten program do cieniowania w całym interfejsu analizatora grafiki przykład w oknie historii tabeli i piksela obiektu.
 
 #### <a name="to-debug-a-shader"></a>Do debugowania cieniowania
 
--   W **etapy potoku grafiki** oknie Znajdź etapu programu do cieniowania, który odnosi się do programu do cieniowania chcesz debugować. Następnie poniżej obrazu (wersja zapoznawcza) wybierz **Rozpocznij debugowanie**. Ten punkt wejścia do debugera HLSL ustawienia domyślne pierwsze wywołanie modułu cieniującego dla odpowiedniego etapu, czyli pierwszy pikseli, wierzchołków lub podstawowego, który jest przetwarzany przez moduł cieniujący podczas tego wywołania rysowania. Wywołania tego programu do cieniowania pikseli lub wierzchołka jest możliwy za pośrednictwem **Historia pikseli grafiki**.
+- W **etapy potoku grafiki** oknie Znajdź etapu programu do cieniowania, który odnosi się do programu do cieniowania chcesz debugować. Następnie poniżej obrazu (wersja zapoznawcza) wybierz **Rozpocznij debugowanie**. Ten punkt wejścia do debugera HLSL ustawienia domyślne pierwsze wywołanie modułu cieniującego dla odpowiedniego etapu, czyli pierwszy pikseli, wierzchołków lub podstawowego, który jest przetwarzany przez moduł cieniujący podczas tego wywołania rysowania. Wywołania tego programu do cieniowania pikseli lub wierzchołka jest możliwy za pośrednictwem **Historia pikseli grafiki**.
 
 ### <a name="the-pipeline-stages"></a>Etapy potoku
  W oknie etapy potoku wizualizuje tylko etapy potoku, które były aktywne podczas wywołania rysowania. Każdy etap potoku grafiki przekształca dane wejściowe z poprzedniego etapu i przekazuje jego wynik do kolejnego etapu. Podczas pierwszego etapu — asemblera wejściowego — indeks i wierzchołka dane z aplikacji jako dane wejściowe; ostatni etap — scalanie danych wyjściowych — łączy w sobie nowo renderowane pikseli wraz z bieżącą zawartość obiektu lub obiekt docelowy renderowania jako dane wyjściowe, aby wygenerować ostateczny obraz zostanie wyświetlony na ekranie.

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90fd7beabb14163558afe4b957d95635e91f904a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3d0f5c17fc0dd12cf8ecb184b667880462548877
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719551"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093283"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 Pobiera język skojarzone z tą ramką stosu.
@@ -47,17 +47,17 @@ int GetLanguageInfo ( 
 
  [out] Zwraca `GUID` języka. Aby uzyskać [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] języków, na przykład, następujące mogą zostać zwrócone:
 
--   `guidVBScriptLang`
+- `guidVBScriptLang`
 
--   `guidJScriptLang`
+- `guidJScriptLang`
 
--   `guidCPPLang`
+- `guidCPPLang`
 
--   `guidVBLang`
+- `guidVBLang`
 
--   `guidSQLLang`
+- `guidSQLLang`
 
--   `guidScriptLang`
+- `guidScriptLang`
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

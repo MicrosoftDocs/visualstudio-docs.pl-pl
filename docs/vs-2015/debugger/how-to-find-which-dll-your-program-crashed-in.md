@@ -26,12 +26,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fcb5126d5281a62c9af55ba9e4283df4e1c3819c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1da5ba504c22f78ebd3c0705bd5ee903fb4a2997
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769942"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060569"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in"></a>Instrukcje: Odnajdywanie DLL, która nastąpiła awaria programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,17 +43,17 @@ UWAGA]
   
 ### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>Aby dowiedzieć się, w przypadku, gdy awaria wystąpił podczas korzystania z okna modułów  
   
-1.  Zanotuj adres, w których wystąpiła awaria.  
+1. Zanotuj adres, w których wystąpiła awaria.  
   
-2.  Na **debugowania** menu, wybierz **Windows**i kliknij przycisk **modułów**.  
+2. Na **debugowania** menu, wybierz **Windows**i kliknij przycisk **modułów**.  
   
-3.  W **modułów** oknie Znajdź **adres** kolumny. Może być konieczne sprawdzenie za pomocą paska przewijania.  
+3. W **modułów** oknie Znajdź **adres** kolumny. Może być konieczne sprawdzenie za pomocą paska przewijania.  
   
-4.  Kliknij przycisk **adres** przycisku w górnej części kolumny, aby sortować biblioteki DLL przy użyciu adresu.  
+4. Kliknij przycisk **adres** przycisku w górnej części kolumny, aby sortować biblioteki DLL przy użyciu adresu.  
   
-5.  Skanowanie posortowaną listę można znaleźć biblioteki DLL, którego zakres adresów zawiera lokalizację awarii.  
+5. Skanowanie posortowaną listę można znaleźć biblioteki DLL, którego zakres adresów zawiera lokalizację awarii.  
   
-6.  Przyjrzyj się **nazwa** i **ścieżki** kolumny, aby wyświetlić nazwę biblioteki DLL i ścieżkę.  
+6. Przyjrzyj się **nazwa** i **ścieżki** kolumny, aby wyświetlić nazwę biblioteki DLL i ścieżkę.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Instrukcje: Debugowanie natywnych bibliotek DLL](../debugger/how-to-debug-native-dlls.md)   

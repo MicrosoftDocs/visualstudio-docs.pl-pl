@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: d2be08b563c67b210f8e70df36f49b9fa4c68316
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6e1b34cbc2497bd70f65021c83db4f59480519f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660648"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095961"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Rozwiązywanie problemów i znane problemy (Visual Studio Tools dla Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ W tej sekcji możesz znaleźć rozwiązania typowych problemów z narzędziami V
   
 ##### <a name="to-migrate-your-unity-project-from-unityvs-18-to-visual-studio-tools-for-unity-19"></a>Przeprowadzić migrację projektu środowiska Unity z UnityVS 1.8 do Visual Studio Tools for Unity 1.9  
   
-1.  Usuń stare pliki rozwiązania i projektu z projektu środowiska Unity. W katalogu głównym w swoim projekcie aparatu Unity zlokalizować SLN programu Visual Studio i. * proj pliki i usunąć je wszystkie.  
+1. Usuń stare pliki rozwiązania i projektu z projektu środowiska Unity. W katalogu głównym w swoim projekcie aparatu Unity zlokalizować SLN programu Visual Studio i. * proj pliki i usunąć je wszystkie.  
   
-2.  Importuj Visual Studio Tools dla pakietu Unity w swoim projekcie aparatu Unity. Aby uzyskać informacje o sposobie importowania pakietów w narzędziach VSTU, zobacz Konfigurowanie programu Visual Studio Tools for Unity w [wprowadzenie](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) strony.  
+2. Importuj Visual Studio Tools dla pakietu Unity w swoim projekcie aparatu Unity. Aby uzyskać informacje o sposobie importowania pakietów w narzędziach VSTU, zobacz Konfigurowanie programu Visual Studio Tools for Unity w [wprowadzenie](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) strony.  
   
-3.  Generuj nowe pliki rozwiązań i projektów. Jeśli chcesz wygenerować je teraz w edytorze Unity w menu głównym wybierz **Visual Studio Tools**, **Generuj pliki projektu**. W przeciwnym razie można pominąć ten krok, chcąc; Visual Studio Tools for Unity wygeneruje nowe pliki automatycznie po wybraniu **Visual Studio Tools**, **Otwórz w programie Visual Studio**.  
+3. Generuj nowe pliki rozwiązań i projektów. Jeśli chcesz wygenerować je teraz w edytorze Unity w menu głównym wybierz **Visual Studio Tools**, **Generuj pliki projektu**. W przeciwnym razie można pominąć ten krok, chcąc; Visual Studio Tools for Unity wygeneruje nowe pliki automatycznie po wybraniu **Visual Studio Tools**, **Otwórz w programie Visual Studio**.  
   
 ### <a name="visual-studio-wont-load-the-solution-that-visual-studio-tools-for-unity-created"></a>Program Visual Studio nie można załadować rozwiązania utworzonego w programie Visual Studio Tools for Unity  
  Aby uzyskać więcej informacji, zobacz [odpowiedzi na to pytanie w witrynie stackoverflow](http://stackoverflow.com/a/24035907/36702).  
@@ -44,11 +44,11 @@ W tej sekcji możesz znaleźć rozwiązania typowych problemów z narzędziami V
 ## <a name="known-issues"></a>Znane problemy  
  Są to znane problemy w Visual Studio Tools for Unity, wynikiem sposobu interakcji debuger aparatu Unity w starszej wersji kompilatora języka C#. Pracujemy nad pomóc w rozwiązaniu tych problemów, ale mogą wystąpić następujące problemy, w tym samym czasie.  
   
--   Podczas debugowania, ulega awarii czasem platformy Unity.  
+- Podczas debugowania, ulega awarii czasem platformy Unity.  
   
--   Podczas debugowania, czasami zawiesza się Unity.  
+- Podczas debugowania, czasami zawiesza się Unity.  
   
--   Przechodzenie krok po kroku do i z metody czasami zachowuje się nieprawidłowo, szczególnie w Iteratory lub wewnątrz instrukcji switch.  
+- Przechodzenie krok po kroku do i z metody czasami zachowuje się nieprawidłowo, szczególnie w Iteratory lub wewnątrz instrukcji switch.  
   
 ## <a name="reporting-errors"></a>Raportowanie błędów  
  Pomóż nam ulepszyć jakość programu Visual Studio Tools for Unity przez wysyłanie raportów o błędach, gdy wystąpią uległa awarii, zawiesza się lub inne błędy. Ułatwia to nam Badaj i rozwiązuj problemy w programie Visual Studio Tools for Unity. Dziękuję!  

@@ -12,12 +12,12 @@ ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47b4bacb8815db8cf7cb64f47534d1c3b10a8177
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7e97e21b2d08d7398a4372ac31cda63b5cfb9fe9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800911"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100602"
 ---
 # <a name="upgrading-projects"></a>Uaktualnianie projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Zmienia się na modelu projektu z jednej wersji [!INCLUDE[vsprvs](../../includes
 ## <a name="upgrade-strategies"></a>Strategie uaktualniania  
  Do obsługi uaktualnienia, implementacji systemu projektu muszą definiować ani implementować strategię uaktualnienia. Przy określaniu strategii, istnieje możliwość obsługi kopii zapasowych side-by-side (SxS) i/lub kopii zapasowej.  
   
--   Kopia zapasowa SxS oznacza to, czy projekt kopiuje tylko pliki wymagające uaktualnienia w miejscu, dodając sufiks nazwy odpowiedni plik, na przykład ".old".  
+- Kopia zapasowa SxS oznacza to, czy projekt kopiuje tylko pliki wymagające uaktualnienia w miejscu, dodając sufiks nazwy odpowiedni plik, na przykład ".old".  
   
--   Kopii zapasowej oznacza to, czy projekt kopiuje wszystkie elementy projektu do podanego przez użytkownika lokalizacji kopii zapasowej. Następnie uaktualniane są odpowiednie pliki w oryginalnej lokalizacji projektu.  
+- Kopii zapasowej oznacza to, czy projekt kopiuje wszystkie elementy projektu do podanego przez użytkownika lokalizacji kopii zapasowej. Następnie uaktualniane są odpowiednie pliki w oryginalnej lokalizacji projektu.  
   
 ## <a name="how-upgrade-works"></a>Jak uaktualnić działa  
  Gdy rozwiązanie utworzone w starszych wersjach [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] jest otwarty w nowszej wersji kontroli środowiska IDE, w pliku rozwiązania, aby określić, jeśli musi zostać uaktualniony. Jeśli uaktualnianie jest wymagane, **Kreatora uaktualniania** jest uruchamiane automatycznie przeprowadzi użytkownika przez proces uaktualniania.  

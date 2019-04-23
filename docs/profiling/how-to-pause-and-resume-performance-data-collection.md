@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68200b9a0631affe96427c2355dd65d20cffc1b9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c045acab8741b7b20e830aa9969b575a399edff5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626950"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058905"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Instrukcje: Wstrzymywanie i wznawianie zbierania danych o wydajności
 W oknie strony sesji profilowania można kontrolować zbierania danych profilowania interaktywnie.
@@ -29,13 +29,13 @@ W oknie strony sesji profilowania można kontrolować zbierania danych profilowa
 
 ### <a name="to-pause--resume-or-stop-profiling"></a>Aby wstrzymać, wznowić, lub Zatrzymaj profilowanie
 
--   Na stronie sesji profilowania:
+- Na stronie sesji profilowania:
 
-    -   Wybierz **Wstrzymaj zbieranie** wstrzymać zbieranie danych.
+    - Wybierz **Wstrzymaj zbieranie** wstrzymać zbieranie danych.
 
-    -   Wybierz **Wznów zbieranie** ponowne uruchomienie zbierania danych, po zostało wstrzymane.
+    - Wybierz **Wznów zbieranie** ponowne uruchomienie zbierania danych, po zostało wstrzymane.
 
-    -   Wybierz **zatrzymanie profilowania** aby zakończyć sesję profilowania i generowania raportów.
+    - Wybierz **zatrzymanie profilowania** aby zakończyć sesję profilowania i generowania raportów.
 
 ## <a name="see-also"></a>Zobacz także
 - [Sterowanie zbieraniem danych](../profiling/controlling-data-collection.md)

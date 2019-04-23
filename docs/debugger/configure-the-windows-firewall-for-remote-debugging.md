@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fdfb43a00515dff57dd59943043ee0a42dc270f
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: ff64735e1711a18bd7c55c6e052fa8579bd12e16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428729"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100368"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Konfigurowanie zapory Windows w celu debugowania zdalnego
 
@@ -102,13 +102,13 @@ Na komputerze zdalnym narzędzia do debugowania zdalnego należą:
 
 1. Wybierz **zezwolenie aplikacji przez zaporę Windows**.
 
-1.  Jeśli **zdalny debuger** lub **zdalny debuger programu Visual Studio** nie pojawia się w obszarze **dozwolone aplikacje i funkcje**, wybierz opcję **zmiany ustawień**, a następnie wybierz pozycję **Zezwalaj na inną aplikację**.
+1. Jeśli **zdalny debuger** lub **zdalny debuger programu Visual Studio** nie pojawia się w obszarze **dozwolone aplikacje i funkcje**, wybierz opcję **zmiany ustawień**, a następnie wybierz pozycję **Zezwalaj na inną aplikację**.
 
-1.  Jeśli aplikację zdalny debuger nadal nie jest wymieniony w **Dodaj aplikację** okno dialogowe, wybierz opcję **Przeglądaj**i przejdź do  *\<katalogu instalacyjnego programu Visual Studio\> \\Common7\\IDE\\zdalny debuger\\\<x86*, *x64*, lub *Appx* \> , w zależności od architektury właściwej dla aplikacji. Wybierz *msvsmon.exe*, a następnie wybierz pozycję **Dodaj**.
+1. Jeśli aplikację zdalny debuger nadal nie jest wymieniony w **Dodaj aplikację** okno dialogowe, wybierz opcję **Przeglądaj**i przejdź do  *\<katalogu instalacyjnego programu Visual Studio\> \\Common7\\IDE\\zdalny debuger\\\<x86*, *x64*, lub *Appx* \> , w zależności od architektury właściwej dla aplikacji. Wybierz *msvsmon.exe*, a następnie wybierz pozycję **Dodaj**.
 
-1.  W **aplikacje** listy wybierz **zdalny debuger** , który właśnie został dodany. Wybierz **typy sieci**, a następnie wybierz jeden lub więcej typów sieci, w tym typ sieci dla połączenia zdalnego.
+1. W **aplikacje** listy wybierz **zdalny debuger** , który właśnie został dodany. Wybierz **typy sieci**, a następnie wybierz jeden lub więcej typów sieci, w tym typ sieci dla połączenia zdalnego.
 
-1.  Wybierz **Dodaj**, a następnie wybierz pozycję **OK**.
+1. Wybierz **Dodaj**, a następnie wybierz pozycję **OK**.
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów z połączenia zdalnego debugowania
 

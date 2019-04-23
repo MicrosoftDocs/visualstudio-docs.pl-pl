@@ -11,12 +11,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ab39de049b1ab3ff8054070b863380b66fd35018
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccf7c3565925eb3fe55fe500a127c666515fb41a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776237"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058613"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Tworzenie niestandardowych procesorów dyrektywy T4 dotyczącej szablonu tekstowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "54776237"
   
  Przykładowe niestandardowe procesory dyrektyw może być:  
   
--   Procesor dyrektywy, aby zwrócić dane z bazy danych, która przyjmuje jako parametry nazwę użytkownika i hasło.  
+- Procesor dyrektywy, aby zwrócić dane z bazy danych, która przyjmuje jako parametry nazwę użytkownika i hasło.  
   
--   Procesor dyrektywy, aby otworzyć i przeczytać plik, który przyjmuje nazwę pliku jako parametr.  
+- Procesor dyrektywy, aby otworzyć i przeczytać plik, który przyjmuje nazwę pliku jako parametr.  
   
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>Podmiot zabezpieczeń części niestandardowego procesora dyrektywy  
  Aby opracować procesor dyrektywy, należy utworzyć klasę, która dziedziczy z <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> lub <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.  

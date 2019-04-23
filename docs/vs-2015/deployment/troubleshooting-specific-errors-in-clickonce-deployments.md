@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0dd4b04f3ded38717c14503cdc21d4c9433bd23f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 348cb15ebc348d6c0ece5e7118e896cc6a21b23b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770245"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043199"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,15 +44,15 @@ W tym temacie przedstawiono następujące typowe błędy, które mogą wystąpi�
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Komunikat o błędzie jest wyświetlany komunikat, "nie można pobrać aplikacji. Pliki Brak we wdrożeniu"lub"pobrania aplikacji zostało przerwane, sprawdź, czy błędy sieciowe i spróbuj ponownie później "  
  Ten komunikat oznacza, że jeden lub więcej plików, do którego nastąpiło odwołanie [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesty nie można pobrać. Najprostszym sposobem, aby debugować ten błąd jest spróbują pobrać adres URL, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] mówi, nie można go pobrać. Poniżej przedstawiono niektóre możliwe przyczyny:  
   
--   Jeśli plik dziennika jest wyświetlany komunikat "zabronione (403)" lub "(404) nie znaleziono" Upewnij się, że serwer sieci Web jest skonfigurowany tak, aby pobrać ten plik nie jest blokowany. Aby uzyskać więcej informacji, zobacz [serwera i problemy z konfiguracją klienta we wdrożeniach ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+- Jeśli plik dziennika jest wyświetlany komunikat "zabronione (403)" lub "(404) nie znaleziono" Upewnij się, że serwer sieci Web jest skonfigurowany tak, aby pobrać ten plik nie jest blokowany. Aby uzyskać więcej informacji, zobacz [serwera i problemy z konfiguracją klienta we wdrożeniach ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
--   Jeśli w pliku config jest blokowane przez serwer, zobacz sekcję "Pobierz błąd podczas próby zainstalowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikację, która zawiera plik .config" w dalszej części tego tematu.  
+- Jeśli w pliku config jest blokowane przez serwer, zobacz sekcję "Pobierz błąd podczas próby zainstalowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikację, która zawiera plik .config" w dalszej części tego tematu.  
   
--   Określenia, czy wystąpiły ponieważ `deploymentProvider` wskazuje adres URL w manifeście wdrożenia w innej lokalizacji niż adres URL używany do aktywacji.  
+- Określenia, czy wystąpiły ponieważ `deploymentProvider` wskazuje adres URL w manifeście wdrożenia w innej lokalizacji niż adres URL używany do aktywacji.  
   
--   Upewnij się, że wszystkie pliki znajdują się na serwerze; [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dziennika powinien poinformować Cię, plik, który nie został znaleziony.  
+- Upewnij się, że wszystkie pliki znajdują się na serwerze; [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dziennika powinien poinformować Cię, plik, który nie został znaleziony.  
   
--   Czy istnieją problemy z łącznością sieciową; może odbierać wiadomość, jeśli komputer kliencki przeszedł do trybu offline podczas pobierania.  
+- Czy istnieją problemy z łącznością sieciową; może odbierać wiadomość, jeśli komputer kliencki przeszedł do trybu offline podczas pobierania.  
   
 #### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>Błąd pobierania, podczas próby zainstalowania aplikacji ClickOnce, który ma pliku config  
  Domyślnie aplikacji z systemem Windows w języku Visual Basic zawiera plik App.config. Będzie istnieć problem, gdy użytkownik próbuje się zainstalować z serwera sieci Web, która korzysta z systemu Windows Server 2003, ponieważ ten system operacyjny blokuje instalację programu config pliki ze względów bezpieczeństwa. Aby włączyć pliku .config, należy zainstalować, kliknij przycisk **rozszerzenie pliku ".deploy"** w **opcji publikowania** okno dialogowe.  
@@ -67,11 +67,11 @@ W tym temacie przedstawiono następujące typowe błędy, które mogą wystąpi�
 #### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>Zaktualizowano aplikację na serwerze, ale klient nie pobiera aktualizacji  
  Ten problem można rozwiązać, wykonując jedną z następujących czynności:  
   
--   Sprawdź `deploymentProvider` adresu URL w manifeście wdrożenia. Upewnij się, że aktualizujesz bitów w tej samej lokalizacji, `deploymentProvider` wskazuje.  
+- Sprawdź `deploymentProvider` adresu URL w manifeście wdrożenia. Upewnij się, że aktualizujesz bitów w tej samej lokalizacji, `deploymentProvider` wskazuje.  
   
--   Sprawdź interwał aktualizacji w manifeście wdrożenia. Jeśli tego interwału wynosi okresowych interwałach, takich jak jeden raz co sześć godzin [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nie będzie skanować aktualizacji, dopóki ten interwał został przekazany. Możesz zmienić manifestu do skanowania w poszukiwaniu aktualizacji każdorazowym uruchomieniu aplikacji. Zmiana interwału aktualizacji jest to wygodny sposób w czasie projektowania, aby sprawdzić aktualizacje są instalowane, ale go spowalnia aktywacji aplikacji.  
+- Sprawdź interwał aktualizacji w manifeście wdrożenia. Jeśli tego interwału wynosi okresowych interwałach, takich jak jeden raz co sześć godzin [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nie będzie skanować aktualizacji, dopóki ten interwał został przekazany. Możesz zmienić manifestu do skanowania w poszukiwaniu aktualizacji każdorazowym uruchomieniu aplikacji. Zmiana interwału aktualizacji jest to wygodny sposób w czasie projektowania, aby sprawdzić aktualizacje są instalowane, ale go spowalnia aktywacji aplikacji.  
   
--   Spróbuj ponownie uruchomić aplikację w Start menu. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] mógł wykryty aktualizacji w tle, ale spowoduje wyświetlenie monitu do zainstalowania usługi bits na następny aktywacji.  
+- Spróbuj ponownie uruchomić aplikację w Start menu. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] mógł wykryty aktualizacji w tle, ale spowoduje wyświetlenie monitu do zainstalowania usługi bits na następny aktywacji.  
   
 #### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Podczas aktualizacji otrzymasz komunikat o błędzie, który ma następujący wpis dziennika: "Odwołania we wdrożeniu jest niezgodna tożsamości zdefiniowany w manifeście aplikacji"  
  Ten błąd może wystąpić, ponieważ ręcznej edycji manifesty wdrażania i aplikacji, a spowodowały opis tożsamość zestawu w jeden manifest zostać zsynchronizowany z innymi. Tożsamość zestawu składa się z nazwy, wersji, kulturę i token klucza publicznego. Sprawdź opisy tożsamości w Twojej manifesty i rozwiązać ewentualne różnice.  
@@ -84,9 +84,9 @@ W tym temacie przedstawiono następujące typowe błędy, które mogą wystąpi�
   
  Należy wykonać następujące czynności:  
   
--   Sprawdź, czy tożsamość manifestu wdrażania, tożsamość manifest aplikacji i tożsamość aplikacji głównej EXE są unikatowe.  
+- Sprawdź, czy tożsamość manifestu wdrażania, tożsamość manifest aplikacji i tożsamość aplikacji głównej EXE są unikatowe.  
   
--   Sprawdź, czy ścieżki do plików nie są dłuższe niż 100 znaków. Jeśli aplikacja zawiera ścieżki plików, które są zbyt długie, może przekroczyć ograniczenia dotyczące maksymalnego ścieżki, które można przechowywać. Spróbuj skrócić ścieżki i ponownie zainstalować.  
+- Sprawdź, czy ścieżki do plików nie są dłuższe niż 100 znaków. Jeśli aplikacja zawiera ścieżki plików, które są zbyt długie, może przekroczyć ograniczenia dotyczące maksymalnego ścieżki, które można przechowywać. Spróbuj skrócić ścieżki i ponownie zainstalować.  
   
 #### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>Ustawienia PrivatePath w pliku konfiguracji aplikacji nie są uznawane.  
  Aby użyć PrivatePath (ścieżkach sondowania Fusion), aplikacja musi żądać uprawnienia pełnego zaufania. Spróbuj zmienić manifest aplikacji, aby zażądać pełnego zaufania, a następnie spróbuj ponownie.  
@@ -115,9 +115,9 @@ W tym temacie przedstawiono następujące typowe błędy, które mogą wystąpi�
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Próbowano zalogować się przy użyciu certyfikatu w magazynie certyfikatów i odebranego komunikatu puste pola  
  W **podpisywanie** okno dialogowe, należy:  
   
--   Wybierz **logowania przechowywanym certyfikatem**, i  
+- Wybierz **logowania przechowywanym certyfikatem**, i  
   
--   Wybierz certyfikat z listy; pierwszy certyfikat nie jest ustawieniem domyślnym.  
+- Wybierz certyfikat z listy; pierwszy certyfikat nie jest ustawieniem domyślnym.  
   
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>Klikając przycisk "Zaloguj nie" powoduje, że wyjątek  
  Ten problem, jest to znana usterka. Wszystkie [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestów są wymagane, aby były podpisane. Wystarczy wybrać jedną z opcji podpisywania, a następnie kliknij przycisk **OK**.  

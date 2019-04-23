@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de43eaa56b4405c48be423f94b905cb845cc9843
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fd3e0888cb45facbf2946e6a4656147dab75350e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628146"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100492"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>Określić, czy wdrożyć pakiet VSPackage kontroli źródła
 W tej sekcji rosnącego wyboru wtyczek kontroli kodu źródłowego, kontrolę źródła pakietów VSPackage rozszerzania rozwiązania i zapewnia ogólnych wytycznych o wybieraniu ścieżki odpowiednie integracji kontroli źródła.
@@ -28,13 +28,13 @@ W tej sekcji rosnącego wyboru wtyczek kontroli kodu źródłowego, kontrolę ź
 
  Jeśli chcesz zaimplementować rozwiązanie do kontroli źródła, które zapewnia elastyczność i bardziej rozbudowane kontroli za pośrednictwem interfejsu użytkownika i logikę kontroli źródła, możesz trasy integracji pakietu kontroli źródła. Można:
 
-1.  Rejestrowanie własnych kontroli źródła pakietu VSPackage (zobacz [Rejestracja i wybór](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).
+1. Rejestrowanie własnych kontroli źródła pakietu VSPackage (zobacz [Rejestracja i wybór](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).
 
-2.  Zamień kontroli źródła domyślny interfejs użytkownika niestandardowego interfejsu użytkownika (zobacz [niestandardowy interfejs użytkownika](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)).
+2. Zamień kontroli źródła domyślny interfejs użytkownika niestandardowego interfejsu użytkownika (zobacz [niestandardowy interfejs użytkownika](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)).
 
-3.  Określ symbole, można użyć do obsługi zdarzeń symbol w Eksploratorze rozwiązań (zobacz [kontrola symboli](../../extensibility/internals/glyph-control-source-control-vspackage.md)).
+3. Określ symbole, można użyć do obsługi zdarzeń symbol w Eksploratorze rozwiązań (zobacz [kontrola symboli](../../extensibility/internals/glyph-control-source-control-vspackage.md)).
 
-4.  Obsługa zdarzeń zapytania, edytowanie i zapisywanie zapytań (zobacz [zapytania Edytuj zapytanie Zapisz](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).
+4. Obsługa zdarzeń zapytania, edytowanie i zapisywanie zapytań (zobacz [zapytania Edytuj zapytanie Zapisz](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).
 
 ## <a name="see-also"></a>Zobacz także
 - [Tworzenie wtyczki kontroli źródła](../../extensibility/internals/creating-a-source-control-plug-in.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c9ebd6b96a24b10601257d5eefc58014ef7058c9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9f81514db881ad26a5fa827b0bde11df2467f23d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782599"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050815"
 ---
 # <a name="how-to-restore-c-refactoring-snippets"></a>Instrukcje: Przywróć C# Refaktoryzowanych wstawek kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,23 +30,23 @@ Operacje refaktoryzacji C# polegają na fragmenty kodu w następującym katalogu
   
 ### <a name="to-verify-c-refactoring-snippets-are-available-through-the-code-snippet-manager"></a>Aby sprawdzić, C# refaktoryzacji fragmenty kodu są dostępne za pomocą Menedżera fragmentów kodu  
   
-1.  W **narzędzia** menu, wybierz opcję **Menedżera fragmentów kodu**.  
+1. W **narzędzia** menu, wybierz opcję **Menedżera fragmentów kodu**.  
   
-2.  W **Menedżera fragmentów kodu** okno dialogowe, wybierz opcję **Visual C#** z **języka** listy rozwijanej.  
+2. W **Menedżera fragmentów kodu** okno dialogowe, wybierz opcję **Visual C#** z **języka** listy rozwijanej.  
   
      A **Refactoring** folder powinien być widoczny na liście folderów w widoku drzewa.  
   
 ### <a name="to-restore-refactoring-see-comment-in-code-snippet-manager"></a>Aby przywrócić refaktoryzacji zobaczyć komentarz w Menedżerze fragmentu kodu  
   
-1.  Jeśli **Refactoring** folderu nie są wyświetlane na liście drzewa widoku folderu Menedżera fragmentów kodu, a następnie ta procedura umożliwia dodawanie fragmentów refaktoryzacji Wstecz w Menedżerze fragmentu kodu.  
+1. Jeśli **Refactoring** folderu nie są wyświetlane na liście drzewa widoku folderu Menedżera fragmentów kodu, a następnie ta procedura umożliwia dodawanie fragmentów refaktoryzacji Wstecz w Menedżerze fragmentu kodu.  
   
-2.  W **narzędzia** menu, wybierz opcję **Menedżera fragmentów kodu**.  
+2. W **narzędzia** menu, wybierz opcję **Menedżera fragmentów kodu**.  
   
-3.  W **Menedżera fragmentów kodu** okno dialogowe, wybierz opcję **Visual C#** z **języka** listy rozwijanej.  
+3. W **Menedżera fragmentów kodu** okno dialogowe, wybierz opcję **Visual C#** z **języka** listy rozwijanej.  
   
-4.  Kliknij przycisk **Dodaj**. **Katalog fragmentów kodu** pojawi się okno dialogowe, które ułatwia znajdowanie i określ katalog, aby dodać ponownie w Menedżerze fragmentu kodu,.  
+4. Kliknij przycisk **Dodaj**. **Katalog fragmentów kodu** pojawi się okno dialogowe, które ułatwia znajdowanie i określ katalog, aby dodać ponownie w Menedżerze fragmentu kodu,.  
   
-5.  Znajdź **Refactoring** folderu o ścieżce katalogu:  
+5. Znajdź **Refactoring** folderu o ścieżce katalogu:  
   
      *Installation directory*\Microsoft Visual Studio 14.0\VC#\Snippets\\*language ID*\Refactoring  
   
@@ -54,7 +54,7 @@ Operacje refaktoryzacji C# polegają na fragmenty kodu w następującym katalogu
   
      C:\Program Files\Microsoft Visual Studio 14.0\VC#\Snippets\1033\Refactoring.  
   
-6.  Kliknij przycisk **Otwórz** w **katalog fragmentów kodu** okno dialogowe, a następnie kliknij przycisk **OK** w Menedżerze fragmentów kodu.  
+6. Kliknij przycisk **Otwórz** w **katalog fragmentów kodu** okno dialogowe, a następnie kliknij przycisk **OK** w Menedżerze fragmentów kodu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Fragmenty kodu Visual C#](../ide/visual-csharp-code-snippets.md)   

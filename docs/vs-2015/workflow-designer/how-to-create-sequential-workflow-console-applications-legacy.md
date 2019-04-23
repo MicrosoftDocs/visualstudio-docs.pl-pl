@@ -13,40 +13,40 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d42c6159cdfadf84edd2c02205dea0b102b134a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f4016597d6c88cfe03ebf823e2fea17730b69562
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799675"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090982"
 ---
 # <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>Instrukcje: Tworzenie aplikacji konsoli sekwencyjnego przepływu pracy (starsza wersja)
 Wykonaj następujące kroki, aby utworzyć projekt sekwencyjne Aplikacja konsoli przepływu pracy za pomocą starszego [!INCLUDE[wfd1](../includes/wfd1-md.md)] dostarczone przez [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
 ### <a name="to-create-a-sequential-workflow-console-application"></a>Do tworzenia aplikacji konsolowej sekwencyjnego przepływu pracy  
   
-1.  Uruchom program Visual Studio.  
+1. Uruchom program Visual Studio.  
   
-2.  Na **pliku** menu wskaż **New**, a następnie wybierz pozycję **projektu**.  
+2. Na **pliku** menu wskaż **New**, a następnie wybierz pozycję **projektu**.  
   
      **Nowy projekt** zostanie otwarte okno dialogowe.  
   
-3.  Wybierz opcję **.NET Framework 3.0** opcji lub **.NET Framework 3.5** opcji na liście rozwijanej listy w górnej części **nowy projekt** okna, aby uzyskać dostęp starsza wersja projektanta.  
+3. Wybierz opcję **.NET Framework 3.0** opcji lub **.NET Framework 3.5** opcji na liście rozwijanej listy w górnej części **nowy projekt** okna, aby uzyskać dostęp starsza wersja projektanta.  
   
     > [!NOTE]
     >  Opcją domyślną w [!INCLUDE[vs2010](../includes/vs2010-md.md)] jest **.NET Framework 4**. Ta opcja służy do tworzenia [!INCLUDE[wf](../includes/wf-md.md)] aplikacji przeznaczonych dla [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] i używasz starszej wersji projektanta.  
   
-4.  W **typów projektów** okienku Wybierz projekty Visual C# lub projekty języka Visual Basic (w obszarze **inne języki**), a następnie wybierz pozycję **przepływu pracy**.  
+4. W **typów projektów** okienku Wybierz projekty Visual C# lub projekty języka Visual Basic (w obszarze **inne języki**), a następnie wybierz pozycję **przepływu pracy**.  
   
-5.  W **szablony** okienku wybierz **sekwencyjne Aplikacja konsoli przepływu pracy**.  
+5. W **szablony** okienku wybierz **sekwencyjne Aplikacja konsoli przepływu pracy**.  
   
-6.  W **nazwa** wprowadź opisową nazwę projektu ułatwić identyfikowanie.  
+6. W **nazwa** wprowadź opisową nazwę projektu ułatwić identyfikowanie.  
   
-7.  W **lokalizacji** wprowadź katalog, w którym chcesz zapisać projekt, lub kliknij przycisk **Przeglądaj** można przejść do niego.  
+7. W **lokalizacji** wprowadź katalog, w którym chcesz zapisać projekt, lub kliknij przycisk **Przeglądaj** można przejść do niego.  
   
      Windows Forms Designer otwiera i wyświetla formularz Form1 projektu, który został utworzony.  
   
-8.  Kliknij przycisk **OK**.  
+8. Kliknij przycisk **OK**.  
   
      Projektant przepływu pracy otwiera i wyświetla powierzchni projektowania przepływu pracy sekwencyjnego przepływu pracy, który został utworzony.  
   

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bcd3855b5dd2fc701b78c5745a9053d19dc7fcf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 89152fcb003886087704107f2d4c2a66d3313cc3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658256"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050365"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Opis katalogu szablonu (pliki Vsdir)
 Plik opis katalogu szablonu (vsdir) to plik tekstowy, który umożliwia zintegrowanego środowiska programistycznego (IDE), aby wyświetlić folderów, plików .vsz kreatora i plików szablonów, które są skojarzone z projektem w oknach dialogowych. Zawartość obejmują jeden rekord w pliku lub folderu. Wszystkich plików .vsdir w lokalizacji, do którego istnieje odwołanie są scalane, mimo że .vsdir tylko jeden plik jest zazwyczaj podawana do opisania wiele folderów, pliki szablonów lub kreatorów.
@@ -50,17 +50,17 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
  Podczas tworzenia pliku kreatora, należy również rozważyć następujące kwestie.
 
--   Wszystkie pole Niewymagane, dla których nie ma żadnych istotnych danych powinny zawierać wartość 0 (zero) jako symbolu zastępczego.
+- Wszystkie pole Niewymagane, dla których nie ma żadnych istotnych danych powinny zawierać wartość 0 (zero) jako symbolu zastępczego.
 
--   Jeśli nie podano żadnej zlokalizowanej nazwy, nazwa ścieżka względna jest używana w pliku kreatora.
+- Jeśli nie podano żadnej zlokalizowanej nazwy, nazwa ścieżka względna jest używana w pliku kreatora.
 
--   Ścieżka dll zastępuje clsidPackage dla lokalizacji ikony.
+- Ścieżka dll zastępuje clsidPackage dla lokalizacji ikony.
 
--   Jeśli nie zdefiniowano żadnej ikony, IDE zastępuje domyślną ikonę pliku z tego rozszerzenia.
+- Jeśli nie zdefiniowano żadnej ikony, IDE zastępuje domyślną ikonę pliku z tego rozszerzenia.
 
--   Jeśli nie podano żadnych sugerowane nazwy podstawowej, "Projekt" jest używana.
+- Jeśli nie podano żadnych sugerowane nazwy podstawowej, "Projekt" jest używana.
 
--   Jeśli usuniesz plików .vsz, foldery lub pliki szablonów, należy także usunąć ich skojarzonych rekordów z pliku .vsdir.
+- Jeśli usuniesz plików .vsz, foldery lub pliki szablonów, należy także usunąć ich skojarzonych rekordów z pliku .vsdir.
 
 ## <a name="see-also"></a>Zobacz też
 - [Kreatory](../../extensibility/internals/wizards.md)

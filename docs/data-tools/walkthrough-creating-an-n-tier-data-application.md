@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4edd2ce00439a791f55787e9d55e9e51b3c7b27b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 471f0e9b97293bd70457a8f41cb7efddd6acf6c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933018"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091827"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Przewodnik: Tworzenie n-warstwowej aplikacji do obsługi danych
 *N-warstwowa* danych aplikacji są aplikacje, uzyskiwać dostęp do danych, które są rozdzielone na wiele warstw logiczne, lub *warstwy*. Rozdzielanie składników aplikacji na dyskretne warstwy, łatwość konserwacji i zwiększa skalowalność aplikacji. Dzieje się tak, należy włączyć ułatwia przyjęcie nowych technologii, które mogą być stosowane do poszczególnych warstw, bez konieczności zmiany projektu całego rozwiązania. Architektura N-warstwowa zawiera warstwę prezentacji, warstwy środkowej i warstwy danych. Warstwa środkowa zazwyczaj zawiera warstwy dostępu do danych, warstwy logiki biznesowej i składniki współużytkowane, takie jak uwierzytelnianie i sprawdzania poprawności. Warstwa danych obejmuje relacyjnej bazy danych. N-warstwowych zazwyczaj przechowują wrażliwe informacje w warstwę dostępu do danych w warstwie środkowej do obsługi izolacji użytkowników końcowych, którzy uzyskują dostęp warstwy prezentacji. Aby uzyskać więcej informacji, zobacz [N-warstwowa danych aplikacji — omówienie](../data-tools/n-tier-data-applications-overview.md).
@@ -30,23 +30,23 @@ W tym instruktażu pokazano, jak rozdzielić zestawu danych i `TableAdapter` kod
 
 Z tego instruktażu należy wykonać następujące czynności:
 
--   Utwórz nowe rozwiązanie n warstwowej, który zawiera wiele projektów.
+- Utwórz nowe rozwiązanie n warstwowej, który zawiera wiele projektów.
 
--   Dodaj dwa projekty bibliotek klas do rozwiązania n warstwowej.
+- Dodaj dwa projekty bibliotek klas do rozwiązania n warstwowej.
 
--   Tworzenie typizowanego zestawu danych za pomocą **Kreatora konfiguracji źródła danych**.
+- Tworzenie typizowanego zestawu danych za pomocą **Kreatora konfiguracji źródła danych**.
 
--   Oddziel wygenerowany [TableAdapters](create-and-configure-tableadapters.md) i kod zestawu danych w dyskretne projekty.
+- Oddziel wygenerowany [TableAdapters](create-and-configure-tableadapters.md) i kod zestawu danych w dyskretne projekty.
 
--   Tworzenie usługi Windows Communication Foundation (WCF) do wywołania w warstwie dostępu do danych.
+- Tworzenie usługi Windows Communication Foundation (WCF) do wywołania w warstwie dostępu do danych.
 
--   Tworzenie funkcji w usłudze w celu pobierania danych z warstwy dostępu do danych.
+- Tworzenie funkcji w usłudze w celu pobierania danych z warstwy dostępu do danych.
 
--   Tworzenie aplikacji Windows Forms jako Warstwa prezentacji.
+- Tworzenie aplikacji Windows Forms jako Warstwa prezentacji.
 
--   Tworzenie formantów formularzy Windows, które są powiązane ze źródłem danych.
+- Tworzenie formantów formularzy Windows, które są powiązane ze źródłem danych.
 
--   Pisz kod, aby wypełnić tabele danych.
+- Pisz kod, aby wypełnić tabele danych.
 
 ![Link do wideo](../data-tools/media/playvideo.gif) wersja wideo tego tematu, zobacz [poradnik wideo: Tworzenie aplikacji n warstwowa danych](http://go.microsoft.com/fwlink/?LinkId=115188).
 
@@ -301,7 +301,7 @@ Ustawimy **PresentationTier** projekt jako projekt startowy dla rozwiązania, po
 
 ### <a name="to-set-the-new-presentation-tier-project-as-the-startup-project"></a>Aby ustawić nowy projekt warstwy prezentacji jako projekt startowy
 
--   W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **PresentationTier** i kliknij przycisk **Ustaw jako projekt startowy**.
+- W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **PresentationTier** i kliknij przycisk **Ustaw jako projekt startowy**.
 
 ## <a name="add-references-to-the-presentation-tier"></a>Dodaj odwołania do warstwy prezentacji
  Aplikacja kliencka PresentationTier wymaga odwołanie do usługi danych usługi, aby uzyskać dostęp do metod w usłudze. Ponadto odwołania do zestawu danych trzeba włączyć udostępnianie przez usługę WCF typu. Do momentu włączenia udostępnianie za pośrednictwem usługi danych typu kodu dodanego do klasy częściowego zestawu danych nie jest dostępna dla warstwy prezentacji. Ponieważ zazwyczaj dodaje się kod, taki jak kod walidacji do wiersza i kolumny zmieniający wydarzenia tabel danych prawdopodobnie należy uzyskać dostęp do tego kodu z klienta.
@@ -375,9 +375,9 @@ Uruchom aplikację, naciskając klawisz **F5**. Dane z `Customers` i `Orders` ta
 ## <a name="next-steps"></a>Następne kroki
  W zależności od wymagań aplikacji istnieje kilka kroków, które warto wykonać po zapisaniu powiązanych danych w aplikacji systemu Windows. Na przykład można wprowadzić następujące ulepszenia do tej aplikacji:
 
--   Dodawanie walidacji do zestawu danych.
+- Dodawanie walidacji do zestawu danych.
 
--   Dodaj dodatkowe metody do usługi w przypadku aktualizowania danych w bazie danych.
+- Dodaj dodatkowe metody do usługi w przypadku aktualizowania danych w bazie danych.
 
 ## <a name="see-also"></a>Zobacz także
 

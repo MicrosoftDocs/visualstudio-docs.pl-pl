@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e88fbc023d495bb4fbad795d2013a9fe3a5c883
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2c757f2ee7dc69e53f492d4dfa37c2ca95b4af70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941236"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100590"
 ---
 # <a name="create-a-settings-category"></a>Tworzenie kategorii ustawień
 
@@ -33,9 +33,9 @@ Aby uruchomić ten Instruktaż, najpierw musisz zakończyć w pierwszej sekcji [
 
 ### <a name="to-create-a-settings-category"></a>Aby utworzyć kategorii ustawień
 
-1.  Wykonaj [utworzyć stronę opcji](../extensibility/creating-an-options-page.md).
+1. Wykonaj [utworzyć stronę opcji](../extensibility/creating-an-options-page.md).
 
-2.  Otwórz *VSPackage.resx* pliku i Dodaj te zasoby trzy parametry:
+2. Otwórz *VSPackage.resx* pliku i Dodaj te zasoby trzy parametry:
 
     |Nazwa|Wartość|
     |----------|-----------|
@@ -48,7 +48,7 @@ Aby uruchomić ten Instruktaż, najpierw musisz zakończyć w pierwszej sekcji [
     > [!NOTE]
     >  Z tych trzech nazwę kategorii nie ma **Import i eksport ustawień** kreatora.
 
-3.  W *MyToolsOptionsPackage.cs*, Dodaj `float` właściwość o nazwie `OptionFloat` do `OptionPageGrid` klasy, jak pokazano w poniższym przykładzie.
+3. W *MyToolsOptionsPackage.cs*, Dodaj `float` właściwość o nazwie `OptionFloat` do `OptionPageGrid` klasy, jak pokazano w poniższym przykładzie.
 
     ```csharp
     public class OptionPageGrid : DialogPage
@@ -78,39 +78,39 @@ Aby uruchomić ten Instruktaż, najpierw musisz zakończyć w pierwszej sekcji [
     > [!NOTE]
     >  `OptionPageGrid` Kategorii o nazwie "My Category" teraz składa się z dwóch właściwości `OptionInteger` i `OptionFloat`.
 
-4.  Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> do `MyToolsOptionsPackage` klasy i nadać mu CategoryName "Moje Category", nadaj ObjectName "Moje ustawienia" i ustawić isToolsOptionPage na wartość true. Ustaw categoryResourceID objectNameResourceID i DescriptionResourceID do odpowiedniego zasobu ciągu, który identyfikatorów utworzonych wcześniej.
+4. Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> do `MyToolsOptionsPackage` klasy i nadać mu CategoryName "Moje Category", nadaj ObjectName "Moje ustawienia" i ustawić isToolsOptionPage na wartość true. Ustaw categoryResourceID objectNameResourceID i DescriptionResourceID do odpowiedniego zasobu ciągu, który identyfikatorów utworzonych wcześniej.
 
     ```csharp
     [ProvideProfileAttribute(typeof(OptionPageGrid),
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]
     ```
 
-5.  Skompiluj projekt, a następnie rozpocząć debugowanie. W doświadczalnym wystąpieniu powinien zostać wyświetlony, **Moja strona siatki** ma teraz wartości typu Liczba całkowita i zmiennoprzecinkowa.
+5. Skompiluj projekt, a następnie rozpocząć debugowanie. W doświadczalnym wystąpieniu powinien zostać wyświetlony, **Moja strona siatki** ma teraz wartości typu Liczba całkowita i zmiennoprzecinkowa.
 
 ## <a name="examine-the-settings-file"></a>Zapoznaj się z plikiem ustawień
  W tej sekcji możesz wyeksportować do pliku ustawień właściwości wartości kategorii. Zapoznaj się z plikiem, a następnie zaimportować wartości z powrotem do kategorii właściwości.
 
-1.  Rozpocznij projekt w trybie debugowania, naciskając klawisz **F5**. Spowoduje to uruchomienie wystąpienie eksperymentalne.
+1. Rozpocznij projekt w trybie debugowania, naciskając klawisz **F5**. Spowoduje to uruchomienie wystąpienie eksperymentalne.
 
-2.  Otwórz **narzędzia** > **opcje** okna dialogowego.
+2. Otwórz **narzędzia** > **opcje** okna dialogowego.
 
-3.  W widoku drzewa w lewym okienku rozwiń **Moje kategorii** a następnie kliknij przycisk **Moja strona siatki**.
+3. W widoku drzewa w lewym okienku rozwiń **Moje kategorii** a następnie kliknij przycisk **Moja strona siatki**.
 
-4.  Zmień wartość właściwości **OptionFloat** do 3.1416 i **OptionInteger** do 12. Kliknij przycisk **OK**.
+4. Zmień wartość właściwości **OptionFloat** do 3.1416 i **OptionInteger** do 12. Kliknij przycisk **OK**.
 
-5.  Na **narzędzia** menu, kliknij przycisk **Import i eksport ustawień**.
+5. Na **narzędzia** menu, kliknij przycisk **Import i eksport ustawień**.
 
      **Import i eksport ustawień** pojawi się Kreator.
 
-6.  Upewnij się, że **Eksportuj wybrane ustawienia środowiska** jest zaznaczone, a następnie kliknij przycisk **dalej**.
+6. Upewnij się, że **Eksportuj wybrane ustawienia środowiska** jest zaznaczone, a następnie kliknij przycisk **dalej**.
 
      **Wybierz ustawienia do eksportowania** zostanie wyświetlona strona.
 
-7.  Kliknij przycisk **Moje ustawienia**.
+7. Kliknij przycisk **Moje ustawienia**.
 
      **Opis** zmieni się na **OptionInteger i OptionFloat**.
 
-8.  Upewnij się, że **Moje ustawienia** jest tylko kategorię, która jest zaznaczone, a następnie kliknij przycisk **dalej**.
+8. Upewnij się, że **Moje ustawienia** jest tylko kategorię, która jest zaznaczone, a następnie kliknij przycisk **dalej**.
 
      **Nazwę pliku ustawień** zostanie wyświetlona strona.
 

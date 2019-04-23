@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e8a4e1c44928663d0d055d84899c60b968f90a0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 965f8d9661d30d23365fe324f7102e15fafec77c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636466"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056279"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Instrukcje: Programowe zapisywanie dokumentów
   Istnieje kilka sposobów, aby zapisać dokumenty Microsoft Word pakietu Office. Można zapisać dokumentu, bez zmiany nazwy dokumentu lub zapisaniu dokumentu pod nową nazwą.
@@ -29,7 +29,7 @@ ms.locfileid: "56636466"
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization"></a>Aby zapisać dokument skojarzony z dostosowywania poziomie dokumentu
 
-1.  Wywołaj <xref:Microsoft.Office.Tools.Word.Document.Save%2A> metody <xref:Microsoft.Office.Tools.Word.Document> klasy. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisDocument` klasy w projekcie.
+1. Wywołaj <xref:Microsoft.Office.Tools.Word.Document.Save%2A> metody <xref:Microsoft.Office.Tools.Word.Document> klasy. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisDocument` klasy w projekcie.
 
      [!code-vb[Trin_VstcoreWordAutomation#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#7)]
      [!code-csharp[Trin_VstcoreWordAutomation#7](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#7)]
@@ -45,7 +45,7 @@ ms.locfileid: "56636466"
 
 ### <a name="to-save-a-document-specified-by-name"></a>Można zapisać dokumentu, określonego przez nazwę
 
-1.  Użyj nazwy dokumentu jako argument do <xref:Microsoft.Office.Interop.Word.Documents> kolekcji. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisDocument` lub `ThisAddIn` klasy w projekcie.
+1. Użyj nazwy dokumentu jako argument do <xref:Microsoft.Office.Interop.Word.Documents> kolekcji. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisDocument` lub `ThisAddIn` klasy w projekcie.
 
      [!code-vb[Trin_VstcoreWordAutomation#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#9)]
      [!code-csharp[Trin_VstcoreWordAutomation#9](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#9)]
@@ -58,7 +58,7 @@ ms.locfileid: "56636466"
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization-with-a-new-name"></a>Aby zapisać dokument skojarzony z dostosowania poziomu dokumentu pod nową nazwą
 
-1.  Wywołaj <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> metody `ThisDocument` klasy w projekcie, przy użyciu w pełni kwalifikowaną ścieżkę i nazwę pliku. Jeśli plik o tej nazwie już istnieje w tym folderze, jest zastąpione w trybie dyskretnym. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisDocument` klasy.
+1. Wywołaj <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> metody `ThisDocument` klasy w projekcie, przy użyciu w pełni kwalifikowaną ścieżkę i nazwę pliku. Jeśli plik o tej nazwie już istnieje w tym folderze, jest zastąpione w trybie dyskretnym. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisDocument` klasy.
 
     > [!NOTE]
     >  <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> Metoda zgłasza wyjątek, jeśli katalog docelowy nie istnieje, lub jeśli występują inne problemy podczas zapisywania pliku. Jest dobrą praktyką, aby użyć **try... catch** block wokół <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> metody lub wewnątrz wywołania metody.
@@ -68,7 +68,7 @@ ms.locfileid: "56636466"
 
 ### <a name="to-save-a-native-document-with-a-new-name"></a>Można zapisać dokumentu macierzystego pod nową nazwą
 
-1.  Wywołaj <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> metody <xref:Microsoft.Office.Interop.Word.Document> , którą chcesz zapisać, przy użyciu w pełni kwalifikowaną ścieżkę i nazwę pliku. Jeśli plik o tej nazwie już istnieje w tym folderze, jest zastąpione w trybie dyskretnym.
+1. Wywołaj <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> metody <xref:Microsoft.Office.Interop.Word.Document> , którą chcesz zapisać, przy użyciu w pełni kwalifikowaną ścieżkę i nazwę pliku. Jeśli plik o tej nazwie już istnieje w tym folderze, jest zastąpione w trybie dyskretnym.
 
      Poniższy przykład kodu Zapisuje aktywny dokument pod nową nazwą. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisDocument` lub `ThisAddIn` klasy w projekcie.
 
@@ -81,9 +81,9 @@ ms.locfileid: "56636466"
 ## <a name="compile-the-code"></a>Skompilować kod
  Ten przykład kodu wymaga następujących elementów:
 
--   Zapisywanie dokumentu o nazwie, o nazwie dokumentu *NewDocument.doc* muszą istnieć w katalogu o nazwie *testu* na dysku C.
+- Zapisywanie dokumentu o nazwie, o nazwie dokumentu *NewDocument.doc* muszą istnieć w katalogu o nazwie *testu* na dysku C.
 
--   Aby zapisać dokument pod nową nazwą, katalog o nazwie *testu* musi istnieć na dysku C.
+- Aby zapisać dokument pod nową nazwą, katalog o nazwie *testu* musi istnieć na dysku C.
 
 ## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Programowe zamykanie dokumentów](../vsto/how-to-programmatically-close-documents.md)

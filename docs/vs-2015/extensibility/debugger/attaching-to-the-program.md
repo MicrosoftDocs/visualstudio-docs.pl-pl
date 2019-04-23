@@ -10,12 +10,12 @@ ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0caeb922ecf908f56d9792e6363ac66c339c53e7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f6c8aa5d32d579183b0bb42a9152232377423435
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798422"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088694"
 ---
 # <a name="attaching-to-the-program"></a>Dołączanie do programu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,16 +45,16 @@ Po zarejestrowaniu programy wpisz odpowiedni port, należy dołączyć debuger d
   
   Po `IDebugEngine2::Attach` metoda jest wywoływana, wykonaj następujące kroki w danej implementacji `IDebugEngine2::Attach` metody:  
   
-1.  Wyślij [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) obiekt zdarzenia do SDM. Aby uzyskać więcej informacji, zobacz [wysyłanie zdarzeń](../../extensibility/debugger/sending-events.md).  
+1. Wyślij [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) obiekt zdarzenia do SDM. Aby uzyskać więcej informacji, zobacz [wysyłanie zdarzeń](../../extensibility/debugger/sending-events.md).  
   
-2.  Wywołaj [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) metody [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) obiektu, który został przekazany do `IDebugEngine2::Attach` metody.  
+2. Wywołaj [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) metody [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) obiektu, który został przekazany do `IDebugEngine2::Attach` metody.  
   
      Spowoduje to zwrócenie `GUID` używany do identyfikacji programu. `GUID` Muszą być przechowywane w obiekcie, że reprezentuje lokalnej do DE i programu musi zwracane, gdy `IDebugProgram2::GetProgramId` wywoływana jest metoda `IDebugProgram2` interfejsu.  
   
     > [!NOTE]
     >  W przypadku zaimplementowania `IDebugProgramNodeAttach2` interfejsu programu `GUID` jest przekazywany do `IDebugProgramNodeAttach2::OnAttach` metody. To `GUID` jest wykorzystywany przez program `GUID` zwrócone przez `IDebugProgram2::GetProgramId` metody.  
   
-3.  Wyślij [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) zdarzeń obiektowi powiadomić SDM, lokalnej `IDebugProgram2` do reprezentowania program DE został utworzony obiekt. Aby uzyskać więcej informacji, zobacz [wysyłanie zdarzeń](../../extensibility/debugger/sending-events.md).  
+3. Wyślij [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) zdarzeń obiektowi powiadomić SDM, lokalnej `IDebugProgram2` do reprezentowania program DE został utworzony obiekt. Aby uzyskać więcej informacji, zobacz [wysyłanie zdarzeń](../../extensibility/debugger/sending-events.md).  
   
     > [!NOTE]
     >  To nie jest taka sama `IDebugProgram2` obiektu, który został przekazany do `IDebugEngine2::Attach` metody. Wcześniej przekazane `IDebugProgram2` obiekt jest rozpoznawany przez tylko portu i jest oddzielnym obiektem.  

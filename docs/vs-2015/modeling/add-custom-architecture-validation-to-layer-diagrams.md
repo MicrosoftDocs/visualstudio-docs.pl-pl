@@ -11,14 +11,14 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6cf1dad590a8d7632e9077764e85f432373cc54b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b91f89bc6c3db52526c8c5e64549b08310a17313
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796802"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045884"
 ---
-# <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Dodawanie niestandardowej walidacji architektury do diagramów warstw
+# <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Dodawanie niestandardowej weryfikacji architektury do diagramów warstw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W programie Visual Studio użytkownicy mogą sprawdzić poprawność kodu źródłowego w projekcie względem modelu warstwy, aby mogli zweryfikować, że kod źródłowy odpowiada zależnościom na diagramie warstwy. Istnieje algorytm standardowego sprawdzania poprawności, ale można zdefiniować własne rozszerzenia sprawdzania poprawności.  
@@ -51,7 +51,7 @@ W programie Visual Studio użytkownicy mogą sprawdzić poprawność kodu źród
    >  Do szablonu makethe działać prawidłowo:  
    > 
    > - Edytuj wywołania `LogValidationError` Aby usunąć opcjonalne argumenty `errorSourceNodes` i `errorTargetNodes`.  
-   >   -   Jeśli używasz właściwości niestandardowych, Zastosuj aktualizacje wymienione w [Dodawanie właściwości niestandardowych do diagramów warstw](../modeling/add-custom-properties-to-layer-diagrams.md).  
+   >   - Jeśli używasz właściwości niestandardowych, Zastosuj aktualizacje wymienione w [Dodawanie właściwości niestandardowych do diagramów warstw](../modeling/add-custom-properties-to-layer-diagrams.md).  
   
 3. Edytowanie kodu w celu zdefiniowania walidacji. Aby uzyskać więcej informacji, zobacz [programowanie walidacji](#programming).  
   
@@ -67,19 +67,19 @@ W programie Visual Studio użytkownicy mogą sprawdzić poprawność kodu źród
   
 #### <a name="to-add-layer-validation-to-a-separate-vsix"></a>Aby dodać sprawdzanie poprawności warstwy do oddzielnego VSIX  
   
-1.  Utwórz projekt biblioteki klas w nowym lub istniejącym rozwiązaniu Visual Studio. W **nowy projekt** okno dialogowe, kliknij przycisk **Visual C#** a następnie kliknij przycisk **biblioteki klas**. Projekt ten będzie zawierać klasy warstwy sprawdzania poprawności.  
+1. Utwórz projekt biblioteki klas w nowym lub istniejącym rozwiązaniu Visual Studio. W **nowy projekt** okno dialogowe, kliknij przycisk **Visual C#** a następnie kliknij przycisk **biblioteki klas**. Projekt ten będzie zawierać klasy warstwy sprawdzania poprawności.  
   
-2.  Identyfikowanie lub Utwórz projekt VSIX w rozwiązaniu. Projekt VSIX zawiera plik o nazwie **source.extension.vsixmanifest**. Jeśli trzeba dodać projekt VSIX, wykonaj następujące kroki:  
+2. Identyfikowanie lub Utwórz projekt VSIX w rozwiązaniu. Projekt VSIX zawiera plik o nazwie **source.extension.vsixmanifest**. Jeśli trzeba dodać projekt VSIX, wykonaj następujące kroki:  
   
-    1.  W **nowy projekt** okna dialogowego wybierz **Visual C#**, **rozszerzalności**, **projekt VSIX**.  
+    1. W **nowy projekt** okna dialogowego wybierz **Visual C#**, **rozszerzalności**, **projekt VSIX**.  
   
-    2.  W **Eksploratora rozwiązań**, w menu skrótów projektu VSIX **Ustaw jako projekt startowy**.  
+    2. W **Eksploratora rozwiązań**, w menu skrótów projektu VSIX **Ustaw jako projekt startowy**.  
   
-3.  W **source.extension.vsixmanifest**w obszarze **zasoby**, Dodaj projekt sprawdzania poprawności warstwy jako składnik MEF:  
+3. W **source.extension.vsixmanifest**w obszarze **zasoby**, Dodaj projekt sprawdzania poprawności warstwy jako składnik MEF:  
   
-    1.  Wybierz **nowe**.  
+    1. Wybierz **nowe**.  
   
-    2.  W **Dodaj nowy zasób** okno dialogowe, zestaw:  
+    2. W **Dodaj nowy zasób** okno dialogowe, zestaw:  
   
          **Type** = **Microsoft.VisualStudio.MefComponent**  
   
@@ -87,11 +87,11 @@ W programie Visual Studio użytkownicy mogą sprawdzić poprawność kodu źród
   
          **Projekt** = *projektu modułu sprawdzania poprawności*  
   
-4.  Należy także dodać go jako sprawdzanie poprawności warstwy:  
+4. Należy także dodać go jako sprawdzanie poprawności warstwy:  
   
-    1.  Wybierz **nowe**.  
+    1. Wybierz **nowe**.  
   
-    2.  W **Dodaj nowy zasób** okno dialogowe, zestaw:  
+    2. W **Dodaj nowy zasób** okno dialogowe, zestaw:  
   
          **Type** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Nie jest jedną z opcji na liście rozwijanej. Należy wprowadzić je przy użyciu klawiatury.  
   
@@ -99,7 +99,7 @@ W programie Visual Studio użytkownicy mogą sprawdzić poprawność kodu źród
   
          **Projekt** = *projektu modułu sprawdzania poprawności*  
   
-5.  Wróć do projektu warstwy sprawdzania poprawności i dodaj następujące odwołania do projektu:  
+5. Wróć do projektu warstwy sprawdzania poprawności i dodaj następujące odwołania do projektu:  
   
     |**Dokumentacja**|**Co to pozwala zrobić**|  
     |-------------------|------------------------------------|  
@@ -110,18 +110,18 @@ W programie Visual Studio użytkownicy mogą sprawdzić poprawność kodu źród
     |System.ComponentModel.Composition|Zdefiniuj składnik walidacji za pomocą Managed Extensibility Framework (MEF)|  
     |Microsoft.VisualStudio.Modeling.Sdk.[version]|Zdefiniuj rozszerzenia modelowania|  
   
-6.  Kopiuj przykładowy kod na końcu tego tematu w pliku klasy w projekcie Walidatora biblioteki, aby uwzględnić kod przy sprawdzaniu poprawności. Aby uzyskać więcej informacji, zobacz [programowanie walidacji](#programming).  
+6. Kopiuj przykładowy kod na końcu tego tematu w pliku klasy w projekcie Walidatora biblioteki, aby uwzględnić kod przy sprawdzaniu poprawności. Aby uzyskać więcej informacji, zobacz [programowanie walidacji](#programming).  
   
-7.  Aby przetestować rozszerzenie, zobacz [debugowanie walidacji warstwowej](#debugging).  
+7. Aby przetestować rozszerzenie, zobacz [debugowanie walidacji warstwowej](#debugging).  
   
     > [!NOTE]
     >  Metoda zostanie wywołana tylko w szczególnych okolicznościach, a punkty przerwania nie będą działać automatycznie. Aby uzyskać więcej informacji, zobacz [debugowanie walidacji warstwowej](#debugging).  
   
-8.  Aby zainstalować VSIX w głównym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], lub na innym komputerze, należy znaleźć **.vsix** w pliku **bin** katalogu projektów VSIX. Skopiuj go do komputera, na którym chcesz zainstalować VSIX. Kliknij dwukrotnie plik VSIX w Eksploratorze Windows. (Eksplorator plików w systemie Windows 8).  
+8. Aby zainstalować VSIX w głównym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], lub na innym komputerze, należy znaleźć **.vsix** w pliku **bin** katalogu projektów VSIX. Skopiuj go do komputera, na którym chcesz zainstalować VSIX. Kliknij dwukrotnie plik VSIX w Eksploratorze Windows. (Eksplorator plików w systemie Windows 8).  
   
      Aby odinstalować go, należy użyć **rozszerzenia i aktualizacje** na **narzędzia** menu.  
   
-##  <a name="programming"></a> Sprawdzanie poprawności programowania  
+## <a name="programming"></a> Sprawdzanie poprawności programowania  
  Aby zdefiniować rozszerzenie warstwy sprawdzania poprawności, zdefiniujesz klasę, która ma następujące cechy:  
   
 - Ogólny formularz zgłoszenia jest następujący:  
@@ -190,7 +190,7 @@ W programie Visual Studio użytkownicy mogą sprawdzić poprawność kodu źród
   
   Łączy z warstwy do elementów w kodzie należą do kategorii "Reprezentuje".  
   
-##  <a name="debugging"></a> Debugowanie sprawdzania poprawności  
+## <a name="debugging"></a> Debugowanie sprawdzania poprawności  
  Aby debugować rozszerzenie warstwy sprawdzania poprawności, naciśnij kombinację klawiszy CTRL + F5. Eksperymentalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zostanie otwarty. W tym wypadku Otwórz lub Utwórz model warstwy. Ten model musi być skojarzony z kodem i musi mieć co najmniej jedną zależność.  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Testowanie za pomocą rozwiązania, które zawiera zależności  
@@ -217,7 +217,7 @@ W programie Visual Studio użytkownicy mogą sprawdzić poprawność kodu źród
 ### <a name="deploying-a-validation-extension"></a>Wdrażanie rozszerzenie sprawdzania poprawności  
  Aby zainstalować rozszerzenie sprawdzania poprawności na komputerze, na którym zainstalowano odpowiedniej wersji programu Visual Studio, otwórz plik VSIX na komputerze docelowym. Aby zainstalować na komputerze, na którym [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] jest zainstalowany, należy ręcznie wyodrębnić zawartości VSIX do folderu rozszerzeń. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzenia modelu warstwy](../modeling/deploy-a-layer-model-extension.md).  
   
-##  <a name="example"></a> Przykładowy kod  
+## <a name="example"></a> Przykładowy kod  
   
 ```csharp  
 using System;  

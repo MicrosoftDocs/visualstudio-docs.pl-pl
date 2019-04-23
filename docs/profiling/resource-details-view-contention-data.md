@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aac0487e2faafdf608975a30f737b01b669db273
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 10b6331c4f0f4e2590fff76d2d7bf8a33a82376f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642940"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058281"
 ---
 # <a name="resource-details-view---contention-data"></a>Widok szczegółów zasobów — dane rywalizacji
 Widok szczegółów zasobów przedstawia wykres osi czasu blokowania zdarzeń, które były spowodowane przez rywalizacji za pośrednictwem wybranego zasobu. Blokowanie zdarzenie występuje, gdy wątek jest zmuszony do zawieszenia wykonania, ponieważ inny wątek został zablokowany dostęp do zasobu.
@@ -28,21 +28,21 @@ Widok szczegółów zasobów przedstawia wykres osi czasu blokowania zdarzeń, k
 
 #### <a name="to-magnify-a-timeline-segment"></a>Aby powiększyć segment osi czasu
 
--   Przeciągnij kursor nad obszarem osi czasu.
+- Przeciągnij kursor nad obszarem osi czasu.
 
      Po zwolnieniu przycisku myszy widok powiększa do segmentu wybrana wartość czasu. Możesz powtórzyć proces dalsze powiększanie segmentu. Pole przewijania na pasku przewijania czas reprezentuje rozmiar względny, segmentu czas, który pojawia się w widoku.
 
 #### <a name="to-zoom-out-on-a-timeline"></a>Aby pomniejszyć na osi czasu
 
--   Wykonaj jedną z następujących czynności:
+- Wykonaj jedną z następujących czynności:
 
-    -   Kliknij przycisk **Pomniejsz** aby powrócić do poprzedniego poziomu powiększenia.
+    - Kliknij przycisk **Pomniejsz** aby powrócić do poprzedniego poziomu powiększenia.
 
-    -   Kliknij przycisk **resetowania powiększenia** do wyświetlenia wszystkich osi czasu w widoku.
+    - Kliknij przycisk **resetowania powiększenia** do wyświetlenia wszystkich osi czasu w widoku.
 
 #### <a name="to-view-the-call-stack-of-an-event"></a>Aby wyświetlić stos wywołań zdarzenia
 
--   Na wykresie osi czasu kliknij pasek zdarzeń.
+- Na wykresie osi czasu kliknij pasek zdarzeń.
 
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Aby wyświetlić lub edytować kod źródłowy funkcji w stosie wywołań
 
@@ -52,12 +52,12 @@ Widok szczegółów zasobów przedstawia wykres osi czasu blokowania zdarzeń, k
 
 #### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>Aby wyświetlić drzewo wywołań rywalizacji zdarzeń dla zasobu
 
--   Wykres osi czasu, kliknij **całkowita**.
+- Wykres osi czasu, kliknij **całkowita**.
 
      Widok Kontencji pojawia się dla zasobu. Aby uzyskać więcej informacji, zobacz [widok Kontencji zasobów](../profiling/resource-contentions-view-contention-data.md)
 
 #### <a name="to-view-all-the-contention-events-of-a-thread"></a>Aby wyświetlić wszystkie zdarzenia rywalizacji wątków
 
--   Na wykresie osi czasu kliknij nazwę lub identyfikator wątku.
+- Na wykresie osi czasu kliknij nazwę lub identyfikator wątku.
 
      Widok szczegółów wątku są wyświetlane dla zaznaczonych wątków. Aby uzyskać więcej informacji, zobacz [widok szczegółów wątku](../profiling/thread-details-view-contention-data.md).

@@ -10,11 +10,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 77dc73b0be050e5108f73d38dfbbaa763d236995
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365606"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100499"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Instalowanie symboli debugowania dla interpreterów języka Python
 

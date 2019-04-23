@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbceecbbe03e84e1dac6c851f3bbb692c0e26539
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3ae2894a60392b444a9415a4951170be097ef61a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934656"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048350"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Krok 11. Uruchamianie programu i próbowanie innych funkcji
 Program jest gotowy i gotowa do uruchomienia. Możesz uruchomić program i ustawić kolor tła <xref:System.Windows.Forms.PictureBox>. Aby dowiedzieć się więcej, spróbuj poprawić program zmieniając kolor formularza, dostosowując przyciski i pole wyboru i zmieniając właściwości formularza.
@@ -24,38 +24,38 @@ Program jest gotowy i gotowa do uruchomienia. Możesz uruchomić program i ustaw
 
 ## <a name="to-run-your-program-and-set-the-background-color"></a>Aby uruchomić program i ustawić kolor tła
 
-1.  Wybierz **F5**, lub na pasku menu wybierz **debugowania** > **Rozpocznij debugowanie**.
+1. Wybierz **F5**, lub na pasku menu wybierz **debugowania** > **Rozpocznij debugowanie**.
 
-2.  Przed otwarciem obrazu wybierz **Ustaw kolor tła** przycisku. **Kolor** zostanie otwarte okno dialogowe.
+2. Przed otwarciem obrazu wybierz **Ustaw kolor tła** przycisku. **Kolor** zostanie otwarte okno dialogowe.
 
      ![Okno dialogowe kolorów](../ide/media/express_colordialog.png)
 **kolor** okno dialogowe
 
-3.  Wybierz kolor, aby ustawić kolor tła PictureBox. Przyjrzyj się bliżej `backgroundButton_Click()` metodę, aby zrozumieć, jak to działa.
+3. Wybierz kolor, aby ustawić kolor tła PictureBox. Przyjrzyj się bliżej `backgroundButton_Click()` metodę, aby zrozumieć, jak to działa.
 
     > [!NOTE]
     >  Możesz załadować obraz z Internetu wklejając jego adres URL do **Otwórz plik** okno dialogowe. Spróbuj odnaleźć obraz z przezroczystym tłem, więc pojawia się kolor tła.
 
-4.  Wybierz **Wyczyść obraz** przycisk, aby upewnić się, czy to powoduje wyczyszczenie. Następnie zamknij program, wybierając **Zamknij** przycisku.
+4. Wybierz **Wyczyść obraz** przycisk, aby upewnić się, czy to powoduje wyczyszczenie. Następnie zamknij program, wybierając **Zamknij** przycisku.
 
 ## <a name="to-try-other-features"></a>Aby wypróbować inne funkcje
 
--   Zmień kolor formularza i przyciski za pomocą **BackColor** właściwości.
+- Zmień kolor formularza i przyciski za pomocą **BackColor** właściwości.
 
--   Dostosuj przyciski i pola wyboru za pomocą **czcionki** i **ForeColor** właściwości.
+- Dostosuj przyciski i pola wyboru za pomocą **czcionki** i **ForeColor** właściwości.
 
--   Zmień formularza **FormBorderStyle** i **ControlBox** właściwości.
+- Zmień formularza **FormBorderStyle** i **ControlBox** właściwości.
 
--   Użyj formularza **AcceptButton** i **CancelButton** właściwości, tak aby przyciski są wybierane automatycznie kiedy użytkownik naciśnie **Enter** lub **Esc** klucza. Ten program był otwarty **Otwórz plik** okno dialogowe, gdy użytkownik wybierze **Enter** i zamknąć okno, gdy użytkownik wybierze **Esc**.
+- Użyj formularza **AcceptButton** i **CancelButton** właściwości, tak aby przyciski są wybierane automatycznie kiedy użytkownik naciśnie **Enter** lub **Esc** klucza. Ten program był otwarty **Otwórz plik** okno dialogowe, gdy użytkownik wybierze **Enter** i zamknąć okno, gdy użytkownik wybierze **Esc**.
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
--   Aby dowiedzieć się więcej na temat programowania w programie Visual Studio, zobacz [pojęcia związane z programowaniem](https://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6).
+- Aby dowiedzieć się więcej na temat programowania w programie Visual Studio, zobacz [pojęcia związane z programowaniem](https://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6).
 
--   Aby dowiedzieć się więcej na temat języka Visual Basic, zobacz [opracowywania aplikacji za pomocą Visual Basic](/dotnet/visual-basic/developing-apps/index).
+- Aby dowiedzieć się więcej na temat języka Visual Basic, zobacz [opracowywania aplikacji za pomocą Visual Basic](/dotnet/visual-basic/developing-apps/index).
 
--   Aby dowiedzieć się więcej na temat Visual C#, zobacz [wprowadzenie do C# języka i platformy .NET Framework](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework).
+- Aby dowiedzieć się więcej na temat Visual C#, zobacz [wprowadzenie do C# języka i platformy .NET Framework](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework).
 
--   Aby przejść do następnego samouczka, zobacz [samouczek 2: Utwórz quiz matematyczny](../ide/tutorial-2-create-a-timed-math-quiz.md).
+- Aby przejść do następnego samouczka, zobacz [samouczek 2: Utwórz quiz matematyczny](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 10: Pisanie kodu dla dodatkowych przycisków i pola wyboru](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 10: Pisanie kodu dla dodatkowych przycisków i pola wyboru](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).

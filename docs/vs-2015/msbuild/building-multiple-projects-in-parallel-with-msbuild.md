@@ -13,21 +13,21 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c74db546307767b352387b1627310794ec833b0f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c420c4546a836d1440bdb150eba1319ad6218622
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650385"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050249"
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>Równoległe tworzenie wielu projektów za pomocą narzędzia MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Można użyć programu MSBuild do kompilacji wielu projektów przez uruchomienie ich równolegle. Aby uruchomić kompilacje równolegle, należy użyć następujących ustawień na komputerze z wieloma procesorami lub procesorem o wielu rdzeniach:  
   
--   Należy użyć przełącznika `/maxcpucount` w wierszu polecenia.  
+- Należy użyć przełącznika `/maxcpucount` w wierszu polecenia.  
   
--   Parametr zadania <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> w zadaniu programu MSBuild.  
+- Parametr zadania <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> w zadaniu programu MSBuild.  
   
 > [!NOTE]
 >  **/Verbosity** (**/v**) przełącznik w wierszu polecenia może również wpływać na wydajność kompilacji. Wydajność kompilacji może spaść jeśli szczegółowość informacji dziennika kompilacji jest ustawiona na szczegóły lub diagnostyka, które są używane w celu rozwiązania problemów. Aby uzyskać więcej informacji, zobacz [uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md) i [odwołanie do wiersza polecenia](../msbuild/msbuild-command-line-reference.md).  

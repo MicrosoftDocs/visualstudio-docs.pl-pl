@@ -11,12 +11,12 @@ ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 075644dc36a25c723f51e7c518cbaf6de8a8bc1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f54dc683aa4287145a27e22d49397241b395f69f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794572"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093309"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Sprawdzanie poprawności punktów przerwania w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Punkt przerwania wskazuje, że wykonywanie programu powinna zostać przerwana w 
   
 ## <a name="implementing-support-for-validating-breakpoints"></a>Implementowanie obsługi sprawdzania poprawności punktów przerwania  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Metoda otrzymuje położenie punktu przerwania. Implementacji należy zdecydować, czy lokalizacja jest prawidłowa i wskazują, że to zwracając obszaru tekstu, który identyfikuje kod skojarzone z pozycji wiersz punktu przerwania.  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Metoda otrzymuje położenie punktu przerwania. Implementacji należy zdecydować, czy lokalizacja jest prawidłowa i wskazują, że to zwracając obszaru tekstu, który identyfikuje kod skojarzone z pozycji wiersz punktu przerwania.  
   
--   Zwróć <xref:Microsoft.VisualStudio.VSConstants.S_OK> Jeśli lokalizacja jest prawidłowa, lub <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> Jeśli nie jest prawidłowy.  
+- Zwróć <xref:Microsoft.VisualStudio.VSConstants.S_OK> Jeśli lokalizacja jest prawidłowa, lub <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> Jeśli nie jest prawidłowy.  
   
--   Jeśli punkt przerwania jest prawidłowy zakres tekstu jest wyróżniona wraz z punktu przerwania.  
+- Jeśli punkt przerwania jest prawidłowy zakres tekstu jest wyróżniona wraz z punktu przerwania.  
   
--   Jeśli punkt przerwania jest nieprawidłowa, na pasku stanu pojawi się komunikat o błędzie.  
+- Jeśli punkt przerwania jest nieprawidłowa, na pasku stanu pojawi się komunikat o błędzie.  
   
 ### <a name="example"></a>Przykład  
  Ten przykład pokazuje implementację <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> metodę, która wywołuje analizator uzyskać zakres kodu (jeśli istnieją) w określonej lokalizacji.  

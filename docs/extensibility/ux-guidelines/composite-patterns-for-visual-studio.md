@@ -8,60 +8,60 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8808804c5b99918e68169e4ab5510cdb5c634a8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 16f2dafb6938c40a1d14f805c6a6deff6f25d16d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670501"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056130"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Wzorce złożone dla programu Visual Studio
 Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfiguracjach. Oto niektóre z najważniejszych wzorce złożone w programie Visual Studio, w odniesieniu do spójności:
 
--   [Wizualizacja danych](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_DataVisualization)
+- [Wizualizacja danych](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_DataVisualization)
 
--   [Interfejs użytkownika i wgląd w obiekcie](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)
+- [Interfejs użytkownika i wgląd w obiekcie](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)
 
--   [Wybór modeli](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_SelectionModels)
+- [Wybór modeli](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_SelectionModels)
 
--   [Trwałość i zapisywanie ustawień](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_PersistenceAndSavingSettings)
+- [Trwałość i zapisywanie ustawień](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_PersistenceAndSavingSettings)
 
--   [Wprowadzanie dotykowe](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)
+- [Wprowadzanie dotykowe](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)
 
-##  <a name="BKMK_DataVisualization"></a> Wizualizacja danych
+## <a name="BKMK_DataVisualization"></a> Wizualizacja danych
 
 ### <a name="overview"></a>Omówienie
  Wykresy są wizualne przedstawienie do zagregowania i wizualizowanie danych w celu zwiększenia proces podejmowania decyzji. Pomagają użytkownikom zmierzyła się z dużą ilością danych, ale oznacza niewielkie Zobacz, co wymaga uwagi i co może wymagać ponownego akcji.
 
  Użytkownik będzie korzystna wykresu w przypadku spełnienia dowolnego z następujących warunków:
 
--   Wykres pomoże użytkownikom w identyfikacji zadania, którymi można pracować?
+- Wykres pomoże użytkownikom w identyfikacji zadania, którymi można pracować?
 
--   Wykres umożliwi użytkownikom prognozy konsekwencje potencjalne zmiany?
+- Wykres umożliwi użytkownikom prognozy konsekwencje potencjalne zmiany?
 
--   Wykres ułatwią użytkownikom wykryć trendy i zidentyfikować wzorce?
+- Wykres ułatwią użytkownikom wykryć trendy i zidentyfikować wzorce?
 
--   Wykres pozwoli użytkownikom na podejmowanie lepszych decyzji?
+- Wykres pozwoli użytkownikom na podejmowanie lepszych decyzji?
 
--   Wykres pomoże odpowiedzi na konkretne pytanie, które użytkownicy mogą w danym kontekście?
+- Wykres pomoże odpowiedzi na konkretne pytanie, które użytkownicy mogą w danym kontekście?
 
 #### <a name="general-rules-for-charts"></a>Ogólne zasady dla wykresów
 
--   Wyraźnie etykiety danych. Ilustracje bez wyjaśnienie są po prostu wygląda obrazów.
+- Wyraźnie etykiety danych. Ilustracje bez wyjaśnienie są po prostu wygląda obrazów.
 
--   Rozpocznij osi od zera, aby uniknąć pochylanie proporcji. Rozmiar linii długość i paskiem są ważnych podpowiedzi wizualne dla zrozumienia, relacje między punktami danych.
+- Rozpocznij osi od zera, aby uniknąć pochylanie proporcji. Rozmiar linii długość i paskiem są ważnych podpowiedzi wizualne dla zrozumienia, relacje między punktami danych.
 
--   Tworzenie wykresów, nie grafika informacyjna o systemie. Grafika informacyjna o systemie są artystyczny reprezentacje danych, a ich podstawowym celem jest narracja visual. Wykresy można i należy być atrakcyjne wizualnie, ale dane same przemówiły.
+- Tworzenie wykresów, nie grafika informacyjna o systemie. Grafika informacyjna o systemie są artystyczny reprezentacje danych, a ich podstawowym celem jest narracja visual. Wykresy można i należy być atrakcyjne wizualnie, ale dane same przemówiły.
 
--   Należy unikać skeumorphism, połączyć wykresy słupkowe, hashmarks kontrast i inne grafika informacyjna ma.
+- Należy unikać skeumorphism, połączyć wykresy słupkowe, hashmarks kontrast i inne grafika informacyjna ma.
 
--   Nie należy używać jako element dekoracyjne efekty 3W. Ich używać tylko wtedy, gdy są naprawdę integralną częścią zdolność użytkownika zrozumienie informacji.
+- Nie należy używać jako element dekoracyjne efekty 3W. Ich używać tylko wtedy, gdy są naprawdę integralną częścią zdolność użytkownika zrozumienie informacji.
 
--   Należy unikać wielu linii i wypełnień, zgodnie z więcej niż dwóch kolorów może utrudnić tego typu wykresu odczytać i zinterpretować.
+- Należy unikać wielu linii i wypełnień, zgodnie z więcej niż dwóch kolorów może utrudnić tego typu wykresu odczytać i zinterpretować.
 
--   Nie należy używać wykresu (lub dowolnej ilustracja) jako jedyny sposób opis koncepcji lub interakcji z danymi. To stanowi trudności dla użytkowników niedowidzących.
+- Nie należy używać wykresu (lub dowolnej ilustracja) jako jedyny sposób opis koncepcji lub interakcji z danymi. To stanowi trudności dla użytkowników niedowidzących.
 
--   Nie należy używać wykresów jako nieodpłatnych lub dekoracyjne elementów na stronie. Innymi słowy Jeśli wykres nie dodać wszystkich użytkowników wartość lub pomoc rozwiązania problemu, nie używaj go.
+- Nie należy używać wykresów jako nieodpłatnych lub dekoracyjne elementów na stronie. Innymi słowy Jeśli wykres nie dodać wszystkich użytkowników wartość lub pomoc rozwiązania problemu, nie używaj go.
 
 ### <a name="chart-types"></a>Typy wykresów
  Typy wykresów używane w programie Visual Studio obejmują wykresy słupkowe, wykresy liniowe, modyfikacji wykres kołowy, znane jako wykresów kołowych lub "wykres pierścieniowy," osi czasu, wykres punktowy powierzchni (zwane również "klaster wykresy") i wykresy Gantta. Każdy typ wykresu jest przydatne do komunikowania się na inny rodzaj informacji.
@@ -81,7 +81,7 @@ Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfigur
 |![Próbka 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|#79D7F2|121,215,242|
 |![Próbka B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|#B5B5B5|181,181,181|
 
-##  <a name="BKMK_OnObjectUI"></a> Interfejs użytkownika i wgląd w obiekcie
+## <a name="BKMK_OnObjectUI"></a> Interfejs użytkownika i wgląd w obiekcie
  Ta sekcja umożliwia kontekstu do wgląd, znany także jako widok podglądu kodu typu UI na obiekcie unikatowe dla programu Visual Studio.
 
 ### <a name="overview"></a>Omówienie
@@ -92,9 +92,9 @@ Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfigur
 
 - Interfejsu na obiekt użytkownika w programie Visual Studio albo wbudowany lub liczb zmiennoprzecinkowych i niezawodny lub jest przejściowy.
 
-  -   Widok podglądu kodu, typu UI na obiekcie w programie Visual Studio jest wbudowane i niezawodny.
+  - Widok podglądu kodu, typu UI na obiekcie w programie Visual Studio jest wbudowane i niezawodny.
 
-  -   CodeLens, typu UI na obiekcie w programie Visual Studio jest przejściowy i zmiennoprzecinkowych
+  - CodeLens, typu UI na obiekcie w programie Visual Studio jest przejściowy i zmiennoprzecinkowych
 
   Zrozumienie sposobu działania fragment kodu lub znajdowania szczegółowe informacje dotyczące tego kodu, często wymaga zatem programistą, aby przełączyć kontekst, a następnie przejdź do innej zawartości lub innego okna. Może być uciążliwe, te zmiany w kontekście, ponieważ użytkownicy mogą utracić skoncentrować się na ich oryginalnym zadaniem, gdy opuszczają ich głównego okna. Ponadto pobieranie, że oryginalna zwrotnego kontekstu może być trudne, szczególnie w przypadku, jeśli przełączanie między oknami spowodowane oryginalny kod, aby być zasłonięte przez inne interfejs użytkownika.
 
@@ -106,11 +106,11 @@ Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfigur
 #### <a name="relationships-between-master-and-detail-content"></a>Relacje między węzłem głównym i szczegółów zawartości
  Informacje o punkcie uwagi służy do wyświetlania relacji między zawartości, czy użytkownik jest koncentruje się na (zawartość "główną") wraz z dodatkowymi powiązana zawartość (zawartość "szczegóły"). W tym wzorcu zawartości szczegółów jest wyraźnie związane z zawartością, użytkownik pracuje z i mogą być wyświetlane w pobliżu głównej zawartości. Informacje uzupełniające lub informacje, które nie można podsumować w bez przeciążenia wzorca zawartości powinien być zgodny z innego wzorca, takich jak okna narzędzi.
 
--   **Zawsze** wyświetlanie zawartości szczegółów w bliskim sąsiedztwie do głównej zawartości.
+- **Zawsze** wyświetlanie zawartości szczegółów w bliskim sąsiedztwie do głównej zawartości.
 
--   **Zawsze** upewnij się, że zawartość szczegółów nadal umożliwiają użytkownikom zachowanie stanu koncentruje się na głównej zawartości. Często najlepszym sposobem osiągnięcia tego jest do renderowania zawartości szczegółów jak blisko wzorca zawartości, jak to możliwe. Można to zrobić przez renderowania zawartości szczegółów w oknie podręcznym obok wzorca zawartości lub renderowania szczegółów zawartość w tekście poniżej głównej zawartości.
+- **Zawsze** upewnij się, że zawartość szczegółów nadal umożliwiają użytkownikom zachowanie stanu koncentruje się na głównej zawartości. Często najlepszym sposobem osiągnięcia tego jest do renderowania zawartości szczegółów jak blisko wzorca zawartości, jak to możliwe. Można to zrobić przez renderowania zawartości szczegółów w oknie podręcznym obok wzorca zawartości lub renderowania szczegółów zawartość w tekście poniżej głównej zawartości.
 
--   **Nigdy nie** informacjom punkcie uwagi, który przyjmuje użytkownika od wzorca zawartości. Jeśli użytkownicy potrzebują do wyświetlania zawartości szczegółów oddzielnie, narażony konkretne działanie, który umożliwia użytkownikowi to zrobić.
+- **Nigdy nie** informacjom punkcie uwagi, który przyjmuje użytkownika od wzorca zawartości. Jeśli użytkownicy potrzebują do wyświetlania zawartości szczegółów oddzielnie, narażony konkretne działanie, który umożliwia użytkownikowi to zrobić.
 
 #### <a name="design-details"></a>Szczegóły projektu
  Po określeniu, czy interfejs użytkownika na obiekcie jest właściwym wyborem, istnieją cztery główne zagadnienia:
@@ -131,123 +131,123 @@ Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfigur
 
 ### <a name="on-object-ui-components"></a>Składniki interfejsu użytkownika na obiekcie
 
-1.  Typ kontenera (prezentera zawartości)
+1. Typ kontenera (prezentera zawartości)
 
-    -   Zmiennoprzecinkowe
+    - Zmiennoprzecinkowe
 
-    -   wbudowane
+    - wbudowane
 
-2.  Typ zawartości
+2. Typ zawartości
 
-    -   Komunikat o charakterze informacyjnym: dane, które mogą być statyczne lub dynamiczne
+    - Komunikat o charakterze informacyjnym: dane, które mogą być statyczne lub dynamiczne
 
-    -   Informacje z możliwością działania: poleceń, które zmienia głównej zawartości
+    - Informacje z możliwością działania: poleceń, które zmienia głównej zawartości
 
-    -   Nawigacja: linki, które prowadzą użytkownika do innego okna lub aplikacji, takich jak MSDN
+    - Nawigacja: linki, które prowadzą użytkownika do innego okna lub aplikacji, takich jak MSDN
 
-3.  Gestów
+3. Gestów
 
-    -   Wywołania
+    - Wywołania
 
-    -   Zwolnienia
+    - Zwolnienia
 
-    -   Przypinanie
+    - Przypinanie
 
-    -   Inne interakcje
+    - Inne interakcje
 
-4.  Model stanu trwałego i zatwierdzenia
+4. Model stanu trwałego i zatwierdzenia
 
-    -   Przejściowe
+    - Przejściowe
 
-    -   trwałe
+    - trwałe
 
-    -   Automatyczne
+    - Automatyczne
 
-    -   Na żądanie
+    - Na żądanie
 
-5.  Wskaźniki otoczenia (opcjonalnie)
+5. Wskaźniki otoczenia (opcjonalnie)
 
-    -   Podkreślenie fala
+    - Podkreślenie fala
 
-    -   Ikona tagów inteligentnych
+    - Ikona tagów inteligentnych
 
-    -   Inne wskaźniki otoczenia
+    - Inne wskaźniki otoczenia
 
 #### <a name="container-content-presenter-type"></a>Typ kontenera (prezentera zawartości)
  Istnieją dwie główne opcje dostępne do prezentowania zawartości w punkcie uwagi:
 
-1.  **Śródwierszowe:** prezentera wbudowane, takie jak widok wglądu, który wprowadzono w programie Visual Studio 2013 edytorze kodu, sprawia, że miejsce dla nowej zawartości przez przesunięcie istniejącej zawartości.
+1. **Śródwierszowe:** prezentera wbudowane, takie jak widok wglądu, który wprowadzono w programie Visual Studio 2013 edytorze kodu, sprawia, że miejsce dla nowej zawartości przez przesunięcie istniejącej zawartości.
 
-    -   **Preferuj** przedstawić Prezenterzy wbudowanych, jeśli oczekujesz, że użytkownicy będą spędzać znaczną ilość czasu, odnoszące się do lub interakcji z zawartością.
+    - **Preferuj** przedstawić Prezenterzy wbudowanych, jeśli oczekujesz, że użytkownicy będą spędzać znaczną ilość czasu, odnoszące się do lub interakcji z zawartością.
 
-    -   **Należy unikać** Prezenterzy wbudowanych, jeśli oczekujesz, że użytkownicy będą chcieli Uzyskaj wgląd w informacje, można przedstawić, a następnie kontynuuj ich główne zadania przy minimalnym zakłóceniu.
+    - **Należy unikać** Prezenterzy wbudowanych, jeśli oczekujesz, że użytkownicy będą chcieli Uzyskaj wgląd w informacje, można przedstawić, a następnie kontynuuj ich główne zadania przy minimalnym zakłóceniu.
 
-2.  **Zmiennoprzecinkowa:** prezentera zmiennoprzecinkowy jest umieszczony maksymalnie zbliżone do wybranej zawartości, jak to możliwe, ale nie zmienia układ istniejącej zawartości. Różne strategie można zastosować, takich jak wyświetlanie ruchomego panelu zawartości za pośrednictwem najbliższego dostępnego miejsca biały na wybrany symbol.
+2. **Zmiennoprzecinkowa:** prezentera zmiennoprzecinkowy jest umieszczony maksymalnie zbliżone do wybranej zawartości, jak to możliwe, ale nie zmienia układ istniejącej zawartości. Różne strategie można zastosować, takich jak wyświetlanie ruchomego panelu zawartości za pośrednictwem najbliższego dostępnego miejsca biały na wybrany symbol.
 
-    -   **Preferuj** liczb zmiennoprzecinkowych Prezenterzy, jeśli oczekujesz, że użytkownicy będą chcieli Uzyskaj wgląd w informacje, można przedstawić, a następnie kontynuuj ich główne zadania przy minimalnym zakłóceniu.
+    - **Preferuj** liczb zmiennoprzecinkowych Prezenterzy, jeśli oczekujesz, że użytkownicy będą chcieli Uzyskaj wgląd w informacje, można przedstawić, a następnie kontynuuj ich główne zadania przy minimalnym zakłóceniu.
 
-    -   **Należy unikać** liczb zmiennoprzecinkowych Prezenterzy, jeśli oczekujesz, że użytkownicy będą chcieli do wydania znaczną ilość czasu, odnoszące się do lub interakcji z zawartością możesz obecne.
+    - **Należy unikać** liczb zmiennoprzecinkowych Prezenterzy, jeśli oczekujesz, że użytkownicy będą chcieli do wydania znaczną ilość czasu, odnoszące się do lub interakcji z zawartością możesz obecne.
 
 #### <a name="content-type"></a>Typ zawartości
  Istnieją trzy główne typy zawartości, które mogą być wyświetlane w dowolnym kontenerze interfejsu użytkownika na obiekcie. Mogą być wyświetlane dowolnej kombinacji tych typów informacji. Są trzy typy:
 
-1.  **Komunikat o charakterze informacyjnym:** kontenery interfejs użytkownika wyświetli pewnego rodzaju zawartość informacyjna na obiekcie dla większości. Zawartość może reprezentować informacji na temat obecnego stanu środowiska, lub może reprezentować, informacje o potencjalnych przyszły stan środowiska. Na przykład można użyć aby pokazać efekt określonego polecenia, takie jak Refaktoryzacja, na istniejący kod.
+1. **Komunikat o charakterze informacyjnym:** kontenery interfejs użytkownika wyświetli pewnego rodzaju zawartość informacyjna na obiekcie dla większości. Zawartość może reprezentować informacji na temat obecnego stanu środowiska, lub może reprezentować, informacje o potencjalnych przyszły stan środowiska. Na przykład można użyć aby pokazać efekt określonego polecenia, takie jak Refaktoryzacja, na istniejący kod.
 
-    -   **Zawsze** Użyj canonical reprezentacja możesz wyświetlić informacje. Na przykład kod powinien wyglądać podobnie do kodu z wyróżnianiem składni i należy przestrzegać, niezależnie od czcionek i inne ustawienia środowiska, ustawionych przez użytkownika.
+    - **Zawsze** Użyj canonical reprezentacja możesz wyświetlić informacje. Na przykład kod powinien wyglądać podobnie do kodu z wyróżnianiem składni i należy przestrzegać, niezależnie od czcionek i inne ustawienia środowiska, ustawionych przez użytkownika.
 
-    -   **Zawsze** należy rozważyć obsługę wszystkich działań nad zawartością informacyjny, który może wystąpić, jeśli te same informacje są prezentowane jako głównej zawartości. Na przykład jeśli prezentowanie istniejący kod w kontenerze interfejsu użytkownika na obiekcie, zdecydowanie należy rozważyć obsługę możliwość przeglądania i modyfikowania kodu.
+    - **Zawsze** należy rozważyć obsługę wszystkich działań nad zawartością informacyjny, który może wystąpić, jeśli te same informacje są prezentowane jako głównej zawartości. Na przykład jeśli prezentowanie istniejący kod w kontenerze interfejsu użytkownika na obiekcie, zdecydowanie należy rozważyć obsługę możliwość przeglądania i modyfikowania kodu.
 
-    -   **Zawsze** należy rozważyć użycie inny kolor tła, jeśli prezentacja informacyjny zawartości, która reprezentuje potencjalnych przyszłych stan.
+    - **Zawsze** należy rozważyć użycie inny kolor tła, jeśli prezentacja informacyjny zawartości, która reprezentuje potencjalnych przyszłych stan.
 
-2.  Informacje z możliwością działania: niektóre kontenery interfejsu użytkownika na obiekcie zapewni możliwość wykonywania akcji głównej zawartości, takie jak wykonanie operacji refaktoryzacji.
+2. Informacje z możliwością działania: niektóre kontenery interfejsu użytkownika na obiekcie zapewni możliwość wykonywania akcji głównej zawartości, takie jak wykonanie operacji refaktoryzacji.
 
-    -   **Zawsze** umieść informacje z możliwością działania polecenia niezależnie od informacyjny zawartości.
+    - **Zawsze** umieść informacje z możliwością działania polecenia niezależnie od informacyjny zawartości.
 
-    -   **Zawsze** włączać i wyłączać akcji, gdy jest to konieczne.
+    - **Zawsze** włączać i wyłączać akcji, gdy jest to konieczne.
 
-    -   **Zawsze** odnoszą się do standardowych wytycznych do reprezentowania polecenia w oknach dialogowych.
+    - **Zawsze** odnoszą się do standardowych wytycznych do reprezentowania polecenia w oknach dialogowych.
 
-    -   **Zawsze** zachować minimalną liczbę akcji, które są dostępne w pojemniku na obiekt interfejsu użytkownika na poziomie. Wchodzenie w interakcje przy użyciu interfejsu użytkownika na obiekcie powinna być lekkie, szybkie środowisko. Użytkownik nie powinien mieć do rozwiń energii na zarządzaniu sam pojemnik interfejsu użytkownika na obiekcie.
+    - **Zawsze** zachować minimalną liczbę akcji, które są dostępne w pojemniku na obiekt interfejsu użytkownika na poziomie. Wchodzenie w interakcje przy użyciu interfejsu użytkownika na obiekcie powinna być lekkie, szybkie środowisko. Użytkownik nie powinien mieć do rozwiń energii na zarządzaniu sam pojemnik interfejsu użytkownika na obiekcie.
 
-    -   **Zawsze** należy wziąć pod uwagę, jak i kiedy pojemniku interfejsu użytkownika na obiekcie zostaną zamknięte lub odrzucony. Najlepszym rozwiązaniem jest dowolną akcję, która zawiera dialog między węzłem głównym i szczegółów zawartości powinien też zamknąć kontenera interfejsu użytkownika na obiekcie po wywołaniu tej akcji.
+    - **Zawsze** należy wziąć pod uwagę, jak i kiedy pojemniku interfejsu użytkownika na obiekcie zostaną zamknięte lub odrzucony. Najlepszym rozwiązaniem jest dowolną akcję, która zawiera dialog między węzłem głównym i szczegółów zawartości powinien też zamknąć kontenera interfejsu użytkownika na obiekcie po wywołaniu tej akcji.
 
-3.  **Nawigacja:** niektóre na obiekcie kontenery interfejsu użytkownika zawierać linki, które prowadzą użytkownika do innego okna lub aplikacji, takich jak otwieranie artykuł w witrynie MSDN w przeglądarce sieci web.
+3. **Nawigacja:** niektóre na obiekcie kontenery interfejsu użytkownika zawierać linki, które prowadzą użytkownika do innego okna lub aplikacji, takich jak otwieranie artykuł w witrynie MSDN w przeglądarce sieci web.
 
-    -   **Zawsze** dołączana dowolne łącze nawigacyjne za pomocą "Otwórz", dzięki czemu użytkownicy będą nie oczekiwano, przez do niektórych innej zawartości.
+    - **Zawsze** dołączana dowolne łącze nawigacyjne za pomocą "Otwórz", dzięki czemu użytkownicy będą nie oczekiwano, przez do niektórych innej zawartości.
 
-    -   **Zawsze** oddzielić łączy nawigacyjnych od łączy informacje z możliwością działania.
+    - **Zawsze** oddzielić łączy nawigacyjnych od łączy informacje z możliwością działania.
 
 #### <a name="ambient-indicators-optional"></a>Wskaźniki otoczenia (opcjonalnie)
  Wskaźniki otoczenia można subtelne, łącznie z tekstem prezentowane w kolorze kontrastowym od pozostałej części kodu, lub oczywiste, łącznie z symbolami tickler, takich jak podkreślenia wężyk i ikony tagu inteligentnego. Wskaźniki otoczenia komunikują się dostępność dodatkowych i istotnych informacji. W idealnym przypadku zawierają przydatne informacje, nawet bez konieczności interakcji z użytkownikiem przez użytkownika.
 
--   **Zawsze** umieść wskaźnik otoczenia, tak, aby nie przeszkadzać ani nie przeciąży użytkownika. Jeśli nie jest możliwe umieścić wskaźnik otoczenia w taki sposób, należy rozważyć inne rozwiązanie.
+- **Zawsze** umieść wskaźnik otoczenia, tak, aby nie przeszkadzać ani nie przeciąży użytkownika. Jeśli nie jest możliwe umieścić wskaźnik otoczenia w taki sposób, należy rozważyć inne rozwiązanie.
 
--   **Zawsze** umieść wskaźnik otoczenia jak najbardziej zbliżony do zawartości, która jest powiązana.
+- **Zawsze** umieść wskaźnik otoczenia jak najbardziej zbliżony do zawartości, która jest powiązana.
 
--   **Zawsze** spróbuj utworzyć wskaźnik, który zawiera podsumowanie informacji o dostępnych. Rozważ podanie liczbę elementów danych dostępnych (na przykład, "3 odwołania do" zamiast po prostu odwołania do"") lub traktować inny sposób podsumowywania danych.
+- **Zawsze** spróbuj utworzyć wskaźnik, który zawiera podsumowanie informacji o dostępnych. Rozważ podanie liczbę elementów danych dostępnych (na przykład, "3 odwołania do" zamiast po prostu odwołania do"") lub traktować inny sposób podsumowywania danych.
 
-    -   W przypadkach, gdy dane dla wskaźnika nie zawsze być obliczane i wyświetlane natychmiast należy wziąć pod uwagę opiniowania progresywnego jako wartości są obliczane. Na przykład należy wziąć pod uwagę animowanie zmian, które odzwierciedlają aktualizacji dostępnych danych, podobnie jak sposób, w jaki Kafelek na żywo poczty e-mail na Windows Phone odświeża jako liczba wzrasta nieprzeczytanych wiadomości e-mail.
+    - W przypadkach, gdy dane dla wskaźnika nie zawsze być obliczane i wyświetlane natychmiast należy wziąć pod uwagę opiniowania progresywnego jako wartości są obliczane. Na przykład należy wziąć pod uwagę animowanie zmian, które odzwierciedlają aktualizacji dostępnych danych, podobnie jak sposób, w jaki Kafelek na żywo poczty e-mail na Windows Phone odświeża jako liczba wzrasta nieprzeczytanych wiadomości e-mail.
 
--   **Nigdy nie** dodanie wskaźników więcej niż użytkownik rozsądnie może zająć do danego elementu zawartości. Wskaźniki otoczenia powinny być przydatne bez konieczności interakcji użytkownika. Wskaźniki utratę ich otoczenie, jeśli wymagają one przepełnienie i inne formanty zarządzania w celu dostosowania ich do widoku.
+- **Nigdy nie** dodanie wskaźników więcej niż użytkownik rozsądnie może zająć do danego elementu zawartości. Wskaźniki otoczenia powinny być przydatne bez konieczności interakcji użytkownika. Wskaźniki utratę ich otoczenie, jeśli wymagają one przepełnienie i inne formanty zarządzania w celu dostosowania ich do widoku.
 
 #### <a name="gestures"></a>Gestów
  Jest kluczowym aspektem umożliwienie użytkownikowi Obsługa skoncentrować się na głównej zawartości dzięki obsłudze prawo gestów do otwierania i odrzucić zawartość dodatkowe szczegóły.
 
--   **Zawsze** wymaga od użytkownika do wykonania niektórych jawne gest, aby otworzyć dodatkowej zawartości. Typowe gestów Otwórz obejmują:
+- **Zawsze** wymaga od użytkownika do wykonania niektórych jawne gest, aby otworzyć dodatkowej zawartości. Typowe gestów Otwórz obejmują:
 
-    -   **Po wskazaniu wskaźnikiem:** etykietki narzędzi lub nieinterakcyjnych informacyjny zawartości
+    - **Po wskazaniu wskaźnikiem:** etykietki narzędzi lub nieinterakcyjnych informacyjny zawartości
 
-    -   **Polecenie jawne:** prezentera wbudowane
+    - **Polecenie jawne:** prezentera wbudowane
 
-    -   **Kliknij dwukrotnie otoczenia wskaźnika:** Okno podręczne CodeLens
+    - **Kliknij dwukrotnie otoczenia wskaźnika:** Okno podręczne CodeLens
 
--   **Zawsze** odrzucić zawartość szczegółów zawsze wtedy, gdy użytkownik naciśnie klawisz Esc.
+- **Zawsze** odrzucić zawartość szczegółów zawsze wtedy, gdy użytkownik naciśnie klawisz Esc.
 
--   **Zawsze** należy wziąć pod uwagę kontekstu interfejsu użytkownika na obiekcie. Dla zawartości Prezenterzy, które umożliwiają interakcję w kontenerze dokładnie rozważ, czy są wyświetlane dodatkowe informacje po najechaniu wskaźnikiem, czyli może być szkodliwe do przepływu pracy użytkownika.
+- **Zawsze** należy wziąć pod uwagę kontekstu interfejsu użytkownika na obiekcie. Dla zawartości Prezenterzy, które umożliwiają interakcję w kontenerze dokładnie rozważ, czy są wyświetlane dodatkowe informacje po najechaniu wskaźnikiem, czyli może być szkodliwe do przepływu pracy użytkownika.
 
--   **Nigdy nie** wyświetlania zawartości po najechaniu wskaźnikiem, które można edytować lub zaprasza interakcji z użytkownikiem. To zachowanie może frustrować użytkowników, jeśli użytkownik próbuje Przesuń kursor nad zawartością szczegółów standardowe zachowanie dla etykietki narzędzia jest natychmiast zamknąć po umieszczeniu kursora nie jest już główną zawartości, który go.
+- **Nigdy nie** wyświetlania zawartości po najechaniu wskaźnikiem, które można edytować lub zaprasza interakcji z użytkownikiem. To zachowanie może frustrować użytkowników, jeśli użytkownik próbuje Przesuń kursor nad zawartością szczegółów standardowe zachowanie dla etykietki narzędzia jest natychmiast zamknąć po umieszczeniu kursora nie jest już główną zawartości, który go.
 
-##  <a name="BKMK_SelectionModels"></a> Wybór modeli
+## <a name="BKMK_SelectionModels"></a> Wybór modeli
 
 ### <a name="overview"></a>Omówienie
  Wybór modelu to mechanizm służący do wskazywania i upewnij się, operacje na co najmniej jeden interesujące obiekty interfejsu użytkownika. W tym temacie omówiono wzorce interakcji zaznaczenia w ramach edytory dokumentu programu Visual Studio: edytory tekstów, projektów i powierzchnie modelowania.
@@ -317,11 +317,11 @@ Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfigur
 #### <a name="interaction"></a>Interakcji
  Wybieranie obiektu graficznego może być skomplikowane i zależy od kilku czynników:
 
--   **Edytor modelu zaznaczenia głównego.** Edytory, które zawierają obiekty graficzne można również edytować tekst lub siatkach. Na przykład edytor może być oparte na tekście edytor, który również obsługuje umieszczanie obiektów graficznych, takich jak projektant XAML usługi Visual Studio. Obsługuje wiele typów obiektów może mieć wpływ na sposób użytkownik wybiera grupy składające się z różnymi typami obiektów.
+- **Edytor modelu zaznaczenia głównego.** Edytory, które zawierają obiekty graficzne można również edytować tekst lub siatkach. Na przykład edytor może być oparte na tekście edytor, który również obsługuje umieszczanie obiektów graficznych, takich jak projektant XAML usługi Visual Studio. Obsługuje wiele typów obiektów może mieć wpływ na sposób użytkownik wybiera grupy składające się z różnymi typami obiektów.
 
--   **Obsługa Stany wyboru podstawowego i pomocniczego.** Edytor może zapewnić podstawowe i pomocnicze wybór dokonany stany tak, aby obiekty mogą być edytowane spójnie, dostosowane do siebie nawzajem, ze zmienionym rozmiarem ze sobą, i tak dalej.
+- **Obsługa Stany wyboru podstawowego i pomocniczego.** Edytor może zapewnić podstawowe i pomocnicze wybór dokonany stany tak, aby obiekty mogą być edytowane spójnie, dostosowane do siebie nawzajem, ze zmienionym rozmiarem ze sobą, i tak dalej.
 
--   **Obsługa edycji w miejscu.** Edytory można również zezwolić zawartość ich obiektów graficznych do edycji. Na przykład kształt prostokąta mogą również zawierać tekst wewnątrz, które mogą być zmieniane przez użytkownika. Ponadto ten tekst może wyśrodkowany lub uzasadnione. Edycji w miejscu polega na bardziej szczegółowym interakcji z użytkownikiem i w związku z tym wymaga odpowiedniego zestawu podpowiedzi wizualne przedstawienie informacji o stanie użytkownika.
+- **Obsługa edycji w miejscu.** Edytory można również zezwolić zawartość ich obiektów graficznych do edycji. Na przykład kształt prostokąta mogą również zawierać tekst wewnątrz, które mogą być zmieniane przez użytkownika. Ponadto ten tekst może wyśrodkowany lub uzasadnione. Edycji w miejscu polega na bardziej szczegółowym interakcji z użytkownikiem i w związku z tym wymaga odpowiedniego zestawu podpowiedzi wizualne przedstawienie informacji o stanie użytkownika.
 
 #### <a name="mouse-interaction"></a>Interakcji z myszą
 
@@ -390,7 +390,7 @@ Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfigur
 
  **Zaznaczenie główne z dwóch opcji dodatkowych**
 
-####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Wygląd Wybieranie obiektu graficznego
+#### <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Wygląd Wybieranie obiektu graficznego
  Uchwyty są kwadratów rysowane we wzorcu prostokątny wokół pola ograniczenia obiektu. Na wykresie poniżej przedstawiono przykłady różnych stanów, które obiekt graficzny może mieć z uchwyt zmiany rozmiaru i wygląd edycji w miejscu. Rozmiar uchwytów należy powiązać z krawędź okna i przy użyciu metryk brzegowych **GetSystemMetrics** interfejsu API.
 
 | Stan | Wygląd | Szczegóły dotyczące programu Visual |
@@ -445,11 +445,11 @@ Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfigur
 
  Przeciąganie w treści listy wykonuje jedną z trzech czynności:
 
--   Inicjuje wyboru regionu, jeśli lista obsługuje tę funkcję i w dół myszy jest białych znaków
+- Inicjuje wyboru regionu, jeśli lista obsługuje tę funkcję i w dół myszy jest białych znaków
 
--   Inicjuje operację przeciągania i upuszczania, jeśli komórki listy lub wiersza obsługuje on źródła przeciągania
+- Inicjuje operację przeciągania i upuszczania, jeśli komórki listy lub wiersza obsługuje on źródła przeciągania
 
--   Wybiera bieżącego wiersza.
+- Wybiera bieżącego wiersza.
 
 ##### <a name="in-place-editing"></a>Edytowanie w miejscu
  W przypadku edycji w miejscu jest dozwolona, istnieją dwa podstawowe modele: selektora prostego edycji kontrolki i właściwości. Za pomocą kontrolki edycji proste zawartość jest wyróżniony i gotowe wprowadzania zaraz po edycji w miejscu aktywowaniu przez użytkownika. W przypadku, gdy wybór właściwości jest implementowana, przycisk, który wywołuje wybór właściwości jest wyświetlana po aktywowaniu tryb edycji w miejscu i bieżącego zaznaczenia nie są wyróżnione. Przycisk selektora powinny być wyrównany do prawej komórce. Aby uzyskać przykłady edycji w miejscu, zobacz **okno właściwości** i **listy zadań** w programie Visual Studio.
@@ -457,21 +457,21 @@ Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfigur
 ##### <a name="keyboard-support"></a>Obsługa klawiatury
  Obsługa klawiatury do wyboru na listach i w siatkach zgodna z konwencjami standardowa Windows:
 
--   Klawisze strzałek powodują przechodzenie listę, wybierając każdej wiersza/komórki, ponieważ fokus zostanie przeniesiony.
+- Klawisze strzałek powodują przechodzenie listę, wybierając każdej wiersza/komórki, ponieważ fokus zostanie przeniesiony.
 
--   Shift + Strzałka wykonuje wyboru ciągłego, w kierunku klawiszy strzałek.
+- Shift + Strzałka wykonuje wyboru ciągłego, w kierunku klawiszy strzałek.
 
--   CTRL + STRZAŁKA następuje Spacja Przełącza między Dodawanie i usuwanie elementów listy z zaznaczenia, tworzenie rozłączne zaznaczenia.
+- CTRL + STRZAŁKA następuje Spacja Przełącza między Dodawanie i usuwanie elementów listy z zaznaczenia, tworzenie rozłączne zaznaczenia.
 
--   Siatki, zawierających zagnieżdżone hierarchie klawisz Strzałka w prawo rozwija wiersza nadrzędnego i Strzałka w lewo zwija jeden.
+- Siatki, zawierających zagnieżdżone hierarchie klawisz Strzałka w prawo rozwija wiersza nadrzędnego i Strzałka w lewo zwija jeden.
 
--   Klawisz Tab przesuwa fokus między komórkami w bieżącym wierszu, jeśli komórki są edytowalne.
+- Klawisz Tab przesuwa fokus między komórkami w bieżącym wierszu, jeśli komórki są edytowalne.
 
--   Klawisz Enter wykonywane domyślne na element na liście (często **Otwórz**).
+- Klawisz Enter wykonywane domyślne na element na liście (często **Otwórz**).
 
--   Klawisz F2 aktywuje edycji w miejscu dla aktualnie zaznaczonej komórki.
+- Klawisz F2 aktywuje edycji w miejscu dla aktualnie zaznaczonej komórki.
 
-##  <a name="BKMK_PersistenceAndSavingSettings"></a> Trwałość i zapisywanie ustawień
+## <a name="BKMK_PersistenceAndSavingSettings"></a> Trwałość i zapisywanie ustawień
 
 ### <a name="overview"></a>Omówienie
  Mimo że każdy składnik oprogramowania w programie Visual Studio jest zazwyczaj odpowiedzialny za własne stan i stan trwały, Visual Studio automatycznie zapisuje ustawienia w niektórych przypadkach, takich jak za pomocą okna rozmiary i położenie. W poniższej tabeli jest kombinacją ustawienia zapisywane automatycznie i ustawienia, które wymagają użytkownika lub zaprogramowane podjęcia działania.
@@ -488,17 +488,17 @@ Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfigur
 
  Co użytkownik robi i gdy robią, mówią, czy ustawienia są zapisywane w pamięci (w trakcie sesji), zapisane na dysku (między sesjami jako ustawienie rejestru), jako część projektu lub rozwiązania sam plik, w ramach programu **rozwiązania Opcje (suo)** pliku lub zgodnie z ustawień niestandardowych plików tylko do tego składnika oprogramowania zna. Powyższej tabeli przedstawiono kilka zdarzeń, w których można zapisać ustawień. Istnieją jednak czasami, w których warto zapisać stan:
 
--   Gdy użytkownik zmienia lokalizację, w obrębie okna dialogowego lub okna
+- Gdy użytkownik zmienia lokalizację, w obrębie okna dialogowego lub okna
 
--   Gdy użytkownik przenosi fokus do innego okna
+- Gdy użytkownik przenosi fokus do innego okna
 
--   Gdy użytkownik zmienia się od projektowania do tryb debugowania
+- Gdy użytkownik zmienia się od projektowania do tryb debugowania
 
--   Po wylogowaniu się użytkownika swojego konta
+- Po wylogowaniu się użytkownika swojego konta
 
--   Gdy komputer przechodzi w stan hibernacji lub wyłączania
+- Gdy komputer przechodzi w stan hibernacji lub wyłączania
 
--   Gdy komputer/dysku jest chcesz sformatować i ponownie skonfigurować aplikację
+- Gdy komputer/dysku jest chcesz sformatować i ponownie skonfigurować aplikację
 
 ### <a name="window-configurations"></a>Konfiguracje okien
  Konfigurację okna jest podstawowe prezentacji środowiska deweloperskiego — jest schemat, składający się z listy obecnych okien narzędzi i sposobu, w którym są uporządkowane. Dla systemu windows zarządzany przez środowisko IDE (system windows IDE) informacji o układzie jest trwały dla każdego użytkownika, więc po użytkownik zostanie uruchomiona, IDE, układ okna pojawi się taka sama jak gdy trwają zakończył działanie programu Visual Studio. Stan i położenie okna środowiska IDE są utrwalane w pliku opcji niestandardowych w formacie XML. Okien narzędzi, które są tworzone przez pakiety załadowana do środowiska IDE utrwalić informacje o ich stanie, w rejestrze i może być lub może się różnić dla poszczególnych użytkowników.
@@ -506,17 +506,17 @@ Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfigur
 #### <a name="profile-specific-layouts"></a>Układy specyficzne dla danego profilu
  Każdy profil zawiera układy okien narzędzi, zorganizowanych w sposób znane deweloperów określonych osób (deweloperów Visual C++ powinny być widoczne **Eksploratora rozwiązań** po lewej stronie IDE, podczas gdy deweloperów języka C#, powinny być widoczne  **Eksplorator rozwiązań** po prawej stronie). Układy okien specyficzne dla danego profilu są ładowane po użytkownik wybierze profilu przy uruchamianiu. Autor pakietu, należy określić układ okna najbardziej odpowiednie dla obsługi swoich klientów, wiedząc, że zmiany wprowadzone przez użytkownika w konfiguracji okna zostaną następnie utrwalone.
 
-##  <a name="BKMK_TouchInput"></a> Wprowadzanie dotykowe
+## <a name="BKMK_TouchInput"></a> Wprowadzanie dotykowe
  Użytkownicy są coraz bardziej przy użyciu rozwoju firmy na urządzeniach dotykowych. Istnieją jednak bariery, które utrudniają używać narzędzi programistycznych dostępnych na urządzeniach dotykowych. Użytkownicy będą oczekiwać, że nasze produkty, aby zapewnić środowisko touch wiarygodne i dokładne. Celem tych wytycznych ma ułatwić podjęcie decyzji o możliwości touch zestawowi i zachęcania touch spójne środowisko dla programu Visual Studio i powiązanych produktów.
 
 ### <a name="levels-of-experience"></a>Poziomy doświadczenia
  Następujące poziomy środowisko są przeznaczone do służyć jako przewodnik dotyczący pomagają zespołom zdecydować, które oferują możliwości touch na podstawie ich żądanego poziomu zainteresowania inwestycji w kontakcie.
 
--   **Podstawowe doświadczenie w zakresie** jest dla zespołów, które chcesz udostępnić touch możliwości, więc nie końce dead w całej swojej pracy.
+- **Podstawowe doświadczenie w zakresie** jest dla zespołów, które chcesz udostępnić touch możliwości, więc nie końce dead w całej swojej pracy.
 
--   **Zoptymalizowane pod kątem obsługi** jest przeznaczona dla zespołów, które mają być możliwości najbardziej typowe touch (na przykład te zwykle dostępne w aplikacji przeglądarki internetowe).
+- **Zoptymalizowane pod kątem obsługi** jest przeznaczona dla zespołów, które mają być możliwości najbardziej typowe touch (na przykład te zwykle dostępne w aplikacji przeglądarki internetowe).
 
--   **z podwyższonym poziomem uprawnień środowisko** dla zespołów, które chcesz dodać funkcje, takie jak gesty lub inne opcjonalne funkcje, które mogą ułatwić ich stosowania wyświetlaczy dotykowych przyjazna.
+- **z podwyższonym poziomem uprawnień środowisko** dla zespołów, które chcesz dodać funkcje, takie jak gesty lub inne opcjonalne funkcje, które mogą ułatwić ich stosowania wyświetlaczy dotykowych przyjazna.
 
 ||Podstawowe doświadczenie w zakresie|Zoptymalizowane środowisko|Środowisko z podwyższonym poziomem uprawnień|
 |-|----------------------|--------------------------|-------------------------|

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13fc731dcf5d96db569a969244b2375939afee62
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9373ed07ec49bd41dad343dc447b4b2026793492
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636973"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088512"
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>Instrukcje: Dodawanie i usuwanie zależności funkcji
   Z funkcji programu SharePoint może zależeć od innych funkcji dla funkcji lub danych. W takich przypadkach funkcje te można oznaczyć jako zależności dla Twojej funkcji. W ten sposób programu SharePoint server gwarantuje, że funkcje zależne są aktywowane, zanim Twoja funkcja jest aktywowana.
@@ -30,9 +30,9 @@ ms.locfileid: "56636973"
 
 #### <a name="to-add-a-dependency-on-a-feature-in-the-solution"></a>Aby dodać zależność od funkcji w rozwiązaniu
 
-1.  Otwórz projektanta funkcji, rozwiń węzeł **zależności aktywacji funkcji** węzła, a następnie wybierz **Dodaj** przycisku.
+1. Otwórz projektanta funkcji, rozwiń węzeł **zależności aktywacji funkcji** węzła, a następnie wybierz **Dodaj** przycisku.
 
-2.  W **Dodawanie zależności aktywacji funkcji** okna dialogowego wybierz **dodać zależność od funkcji w rozwiązaniu** przycisk opcji, wybierz tytuł funkcji, która ma zostać dodany jako zależność, a następnie Wybierz **Dodaj** przycisku.
+2. W **Dodawanie zależności aktywacji funkcji** okna dialogowego wybierz **dodać zależność od funkcji w rozwiązaniu** przycisk opcji, wybierz tytuł funkcji, która ma zostać dodany jako zależność, a następnie Wybierz **Dodaj** przycisku.
 
      Można dodać więcej niż jedną funkcję, wybierając tytuły wielu podczas wybierania **Ctrl** klucza.
 
@@ -41,28 +41,28 @@ ms.locfileid: "56636973"
 
 #### <a name="to-add-a-dependency-by-the-feature-id"></a>Aby dodać zależności według Identyfikatora funkcji
 
-1.  Otwórz projektanta funkcji, rozwiń węzeł **zależności aktywacji funkcji** węzła, a następnie wybierz **Dodaj** przycisku.
+1. Otwórz projektanta funkcji, rozwiń węzeł **zależności aktywacji funkcji** węzła, a następnie wybierz **Dodaj** przycisku.
 
-2.  W **Dodawanie zależności aktywacji funkcji** okna dialogowego wybierz **Dodaj zależność niestandardową** przycisku opcji.
+2. W **Dodawanie zależności aktywacji funkcji** okna dialogowego wybierz **Dodaj zależność niestandardową** przycisku opcji.
 
-3.  W **identyfikator funkcji** tekstu wprowadź identyfikator GUID dla funkcji, którą chcesz oznaczyć jako zależność aktywacji, a następnie wybierz **Dodaj** przycisku.
+3. W **identyfikator funkcji** tekstu wprowadź identyfikator GUID dla funkcji, którą chcesz oznaczyć jako zależność aktywacji, a następnie wybierz **Dodaj** przycisku.
 
 ## <a name="edit-custom-dependencies"></a>Edytowanie niestandardowej zależności
  Możesz edytować niestandardowej zależności, które wcześniej dodałeś. Jednak funkcji zależnych, które są w Twoje rozwiązania mogą tylko można usunąć, nie można ich edytować.
 
 #### <a name="to-change-a-dependency-on-a-feature-in-the-solution"></a>Aby zmienić zależność od funkcji w rozwiązaniu
 
-1.  Otwórz projektanta funkcji, a następnie rozwiń **zależności aktywacji funkcji** węzła.
+1. Otwórz projektanta funkcji, a następnie rozwiń **zależności aktywacji funkcji** węzła.
 
-2.  Wybierz nazwę funkcji, którą chcesz edytować, a następnie wybierz **Edytuj** przycisku.
+2. Wybierz nazwę funkcji, którą chcesz edytować, a następnie wybierz **Edytuj** przycisku.
 
-3.  W **Edytuj zależność aktywacji funkcji niestandardowych** okno dialogowe Zmień tytuł, identyfikator funkcji lub opis, a następnie wybierz **przesyłania** przycisku.
+3. W **Edytuj zależność aktywacji funkcji niestandardowych** okno dialogowe Zmień tytuł, identyfikator funkcji lub opis, a następnie wybierz **przesyłania** przycisku.
 
 ## <a name="remove-dependencies"></a>Usuń zależności
 
 #### <a name="to-remove-a-dependency-on-a-feature-in-the-solution"></a>Aby usunąć zależność od funkcji w rozwiązaniu
 
-1.  W Projektancie funkcji Rozwiń **zależności aktywacji funkcji** węzła, wybierz nazwę funkcji, którą chcesz usunąć, a następnie wybierz **Usuń** przycisku.
+1. W Projektancie funkcji Rozwiń **zależności aktywacji funkcji** węzła, wybierz nazwę funkcji, którą chcesz usunąć, a następnie wybierz **Usuń** przycisku.
 
 ## <a name="see-also"></a>Zobacz także
 - [Tworzenie funkcji SharePoint](../sharepoint/creating-sharepoint-features.md)

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26fdadf92fa94efe0a08fdf090e5a295e2f65096
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6841b8a91cec24f467f6e3f684cbb27e25c9fa63
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999980"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045619"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Instrukcje: Wyłączanie aktywacji adresu URL aplikacji ClickOnce
 
@@ -35,13 +35,13 @@ Ta procedura korzysta z narzędzia Windows Software Development Kit (SDK) MageUI
 
 ### <a name="to-disable-url-activation-for-your-application"></a>Aby wyłączanie aktywacji adresu URL aplikacji
 
-1.  Otwórz manifest wdrożenia w MageUI.exe. Jeśli użytkownik jeszcze nie utworzono jedną, wykonaj kroki opisane w [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+1. Otwórz manifest wdrożenia w MageUI.exe. Jeśli użytkownik jeszcze nie utworzono jedną, wykonaj kroki opisane w [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
-2.  Wybierz **opcje wdrażania** kartę.
+2. Wybierz **opcje wdrażania** kartę.
 
-3.  Wyczyść **automatycznie uruchomić aplikacji po zainstalowaniu** pole wyboru.
+3. Wyczyść **automatycznie uruchomić aplikacji po zainstalowaniu** pole wyboru.
 
-4.  Zapisz i podpisać manifest.
+4. Zapisz i podpisać manifest.
 
 ## <a name="see-also"></a>Zobacz także
 

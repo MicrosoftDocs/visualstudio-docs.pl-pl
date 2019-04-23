@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b9b3e338989a7ac4291bdf524b7ea872618d8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc1f87ac6ce94a1ef474388f75b33aa963b19f8d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795161"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046383"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Przewodnik: Brak obiektów spowodowany cieniowaniem wierzchołków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../includes/v
   
  Ten instruktaż ilustruje następujące zadania:  
   
--   Za pomocą **Lista zdarzeń graficznych** do lokalizowania potencjalnych źródeł problemu.  
+- Za pomocą **Lista zdarzeń graficznych** do lokalizowania potencjalnych źródeł problemu.  
   
--   Za pomocą **etapy potoku grafiki** okna, aby sprawdzić efekt skonfigurowania `DrawIndexed` wywołań interfejsu API Direct3D.  
+- Za pomocą **etapy potoku grafiki** okna, aby sprawdzić efekt skonfigurowania `DrawIndexed` wywołań interfejsu API Direct3D.  
   
--   Za pomocą **Debuger języka HLSL** do zbadania cieniowania wierzchołków.  
+- Za pomocą **Debuger języka HLSL** do zbadania cieniowania wierzchołków.  
   
--   Za pomocą **stos wywołań zdarzenia grafiki** ułatwia znalezienie źródła Nieprawidłowa stała HLSL.  
+- Za pomocą **stos wywołań zdarzenia grafiki** ułatwia znalezienie źródła Nieprawidłowa stała HLSL.  
   
 ## <a name="scenario"></a>Scenariusz  
  Jedną z najczęstszych przyczyn nieistniejącego obiektu w 3-w aplikacji występuje, gdy program do cieniowania wierzchołków przekształca wierzchołki obiektu w sposób niepoprawne lub nieoczekiwanego — obiekt może na przykład skalować do bardzo małym rozmiarze, lub przekształcane w taki sposób, że wydaje się za zaporą aparatu , a nie przed nim.  

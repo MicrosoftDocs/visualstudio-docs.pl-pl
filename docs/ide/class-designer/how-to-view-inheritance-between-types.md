@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b23a676e4028e8f06f26ccc985ca22b85f56ac95
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d1a15765bff6d391afc7395be03172bf5d5fc32
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907856"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047998"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Instrukcje: Wyświetlanie dziedziczenia między typami w Projektancie klas
 
@@ -27,9 +27,9 @@ Można znaleźć relacji dziedziczenia, jeśli istnieje między typem podstawowy
 
 ## <a name="to-find-the-base-type"></a>Aby znaleźć typ podstawowy
 
-1.  Na diagramie klas kliknij typ, dla którego chcesz wyświetlić klasy bazowej lub interfejsu.
+1. Na diagramie klas kliknij typ, dla którego chcesz wyświetlić klasy bazowej lub interfejsu.
 
-2.  Na **Diagram klas** menu, wybierz **Pokaż klasy podstawowe** lub **Pokaż interfejsy Base**.
+2. Na **Diagram klas** menu, wybierz **Pokaż klasy podstawowe** lub **Pokaż interfejsy Base**.
 
      Typ klasy bazowej lub interfejsu widoczny jako zaznaczony na diagramie. Wszystkie linie dziedziczenia ukryte pojawiają się między dwoma kształtami.
 
@@ -37,9 +37,9 @@ Również kliknięciu prawym przyciskiem myszy typ, którego typ podstawowy, kt�
 
 ## <a name="to-find-the-derived-types"></a>Aby znaleźć typy pochodne
 
-1.  Na diagramie klas kliknij typ, dla którego chcesz wyświetlić klas pochodnych lub interfejsów.
+1. Na diagramie klas kliknij typ, dla którego chcesz wyświetlić klas pochodnych lub interfejsów.
 
-2.  Na **Diagram klas** menu, wybierz **Pokaż klasy pochodne** lub **Pokaż interfejsy pochodne**.
+2. Na **Diagram klas** menu, wybierz **Pokaż klasy pochodne** lub **Pokaż interfejsy pochodne**.
 
      Klasy pochodne typu lub interfejsy są wyświetlane na diagramie. Wszystkie linie dziedziczenia ukryte pojawiają się między kształtów.
 

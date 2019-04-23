@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a47f29f2731756d4607ff611a450c4f988e4413e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9e67b6e999078523c11ba2b59175743e4a8f3d33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768860"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044238"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Instrukcje: Przechwytywanie kliknięć w kształcie lub elemencie Decorator
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,11 +47,11 @@ public partial class MyShape // change
   
 #### <a name="to-intercept-a-click-on-an-icon-decorator"></a>Aby przechwycić kliknąć ikonę elementu decorator  
   
-1.  Otwórz lub Utwórz rozwiązanie DSL.  
+1. Otwórz lub Utwórz rozwiązanie DSL.  
   
-2.  Wybierz lub Utwórz kształt, który ma dekorator ikonę, a następnie dokonaj mapowania go do klasy domeny.  
+2. Wybierz lub Utwórz kształt, który ma dekorator ikonę, a następnie dokonaj mapowania go do klasy domeny.  
   
-3.  W pliku kodu, który jest oddzielony od plików znajdujących się w `GeneratedCode` folderu, Utwórz nowy podklasy ImageField:  
+3. W pliku kodu, który jest oddzielony od plików znajdujących się w `GeneratedCode` folderu, Utwórz nowy podklasy ImageField:  
   
     ```  
     using Microsoft.VisualStudio.Modeling;  
@@ -89,7 +89,7 @@ public partial class MyShape // change
   
      Należy ustawić Handled wartość true, jeśli nie chcesz, aby zdarzenia, które mają być przekazane do kształtu, zawierającego.  
   
-4.  Zastąp metodę InitializeShapeFields, w swojej classs kształtu, dodając poniższą definicję klasy częściowej.  
+4. Zastąp metodę InitializeShapeFields, w swojej classs kształtu, dodając poniższą definicję klasy częściowej.  
   
     ```  
     public partial class MyShape // change  
@@ -116,9 +116,9 @@ public partial class MyShape // change
     }  
     ```  
   
-1.  Skompiluj i uruchom rozwiązanie.  
+1. Skompiluj i uruchom rozwiązanie.  
   
-2.  Kliknij dwukrotnie ikonę na wystąpienie kształtu. Powinna zostać wyświetlona Twoja wiadomość testową.  
+2. Kliknij dwukrotnie ikonę na wystąpienie kształtu. Powinna zostać wyświetlona Twoja wiadomość testową.  
   
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Przechwytuje kliknięcia i przeciąga element CompartmentShape list  
  Poniższy przykład umożliwia użytkownikom zmienić kolejność elementów w kształt przedziału, przeciągając je. Aby uruchomić ten kod:  
@@ -135,19 +135,19 @@ public partial class MyShape // change
   
    Podsumowując ten kod działa w następujący sposób. W tym przykładzie `ClassShape` jest nazwa kształtu przedziału.  
   
--   Zestaw programów obsługi zdarzeń myszy jest dołączany do każdego wystąpienia elementu compartment, podczas jego tworzenia.  
+- Zestaw programów obsługi zdarzeń myszy jest dołączany do każdego wystąpienia elementu compartment, podczas jego tworzenia.  
   
--   `ClassShape.MouseDown` Zdarzeń przechowuje bieżącego elementu.  
+- `ClassShape.MouseDown` Zdarzeń przechowuje bieżącego elementu.  
   
--   Gdy wskaźnik myszy przenosi z bieżącego elementu tworzone jest wystąpienie MouseAction, który ustawia kursor i przechwytuje mysz, do jego zwolnienia.  
+- Gdy wskaźnik myszy przenosi z bieżącego elementu tworzone jest wystąpienie MouseAction, który ustawia kursor i przechwytuje mysz, do jego zwolnienia.  
   
      Aby zapobiec zakłóceniu inne akcje myszy, takie jak wybór tekstu elementu, MouseAction jest tworzone dopiero myszy opuścił oryginalnego elementu.  
   
      Alternatywą dla tworzenia MouseAction będzie po prostu do nasłuchiwania pod kątem MouseUp. Jednak to nie będzie działać poprawnie, gdy użytkownik zwolni przycisk myszy po przeciągnięciu go poza przedziału. MouseAction jest w stanie wykonać odpowiednią akcję, niezależnie od tego, gdzie zwolnieniu przycisku myszy.  
   
--   Po zwolnieniu przycisku myszy MouseAction.MouseUp zmienia kolejność łączy między elementami modelu.  
+- Po zwolnieniu przycisku myszy MouseAction.MouseUp zmienia kolejność łączy między elementami modelu.  
   
--   Zmiana kolejności roli generowane regułę, która aktualizuje okno. To zachowanie jest już zdefiniowany i jest wymagany żaden dodatkowy kod.  
+- Zmiana kolejności roli generowane regułę, która aktualizuje okno. To zachowanie jest już zdefiniowany i jest wymagany żaden dodatkowy kod.  
   
 ```csharp  
 using Microsoft.VisualStudio.Modeling;  

@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca75dc2afd49576cecc0fb89afd11744f098b170
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e3dd75e8c88f87991abbdaa74a711b8f3c7324b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631617"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042241"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; — element (aplikacja ClickOnce)
 Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomienia na komputerze klienckim.
@@ -78,28 +78,28 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomi
 ## <a name="permissionset"></a>PermissionSet
  Wymagana. Ten element jest elementem podrzędnym `applicationRequestMinimum` elementu i zawiera `IPermission` elementu. Ten element ma następujące atrybuty.
 
--   `ID`
+- `ID`
 
      Wymagana. Identyfikuje zestaw uprawnień. Ten atrybut może być dowolna wartość. Identyfikator jest przywoływany w `defaultAssemblyRequest` i `assemblyRequest` atrybutów.
 
--   `version`
+- `version`
 
      Wymagana. Identyfikuje wersję uprawnienia. Ta wartość jest zazwyczaj `1`.
 
 ## <a name="ipermission"></a>Interfejsu IPermission
  Opcjonalna. Ten element jest elementem podrzędnym `PermissionSet` elementu. `IPermission` Elementu pełni identyfikuje klasy uprawnień w [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. `IPermission` Element ma następujące atrybuty, ale mogą mieć dodatkowe atrybuty, które odnoszą się do właściwości klasy uprawnień. Aby sprawdzić składnię określone uprawnienie, zobacz temat w przykładach wymienionych w pliku Security.config —.
 
--   `class`
+- `class`
 
      Wymagana. Identyfikuje klasy uprawnień za pomocą silnej nazwy. Na przykład, poniższy kod określa `FileDialogPermission` typu.
 
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`
 
--   `version`
+- `version`
 
      Wymagana. Identyfikuje wersję uprawnienia. Ta wartość jest zazwyczaj `1`.
 
--   `Unrestricted`
+- `Unrestricted`
 
      Wymagana. Określa, czy aplikacja musi nieograniczony przyznanie tego uprawnienia. Jeśli `true`, udzielenia uprawnień to bezwarunkowy. Jeśli `false`, lub jeśli ten atrybut jest niezdefiniowana, jest ograniczona zgodnie z atrybutów określonych uprawnień wobec `IPermission` tagu. Wykonaj następujące uprawnienia:
 
@@ -119,18 +119,18 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomi
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest
  Opcjonalna. Identyfikuje zestaw wszystkich zestawów uprawnień. Ten element jest elementem podrzędnym `applicationRequestMinimum` elementu i ma następujący atrybut.
 
--   `permissionSetReference`
+- `permissionSetReference`
 
      Wymagana. Określa identyfikator zestawu uprawnień, który jest domyślnym uprawnieniem. Zestaw uprawnień jest zadeklarowana w `PermissionSet` elementu.
 
 ## <a name="assemblyrequest"></a>assemblyRequest
  Opcjonalna. Umożliwia określenie uprawnień dla określonego zestawu. Ten element jest elementem podrzędnym `applicationRequestMinimum` elementu i ma następujące atrybuty.
 
--   `Name`
+- `Name`
 
      Wymagana. Określa nazwę zestawu.
 
--   `permissionSetReference`
+- `permissionSetReference`
 
      Wymagana. Określa identyfikator zestawu uprawnień, który wymaga tego zestawu. Zestaw uprawnień jest zadeklarowana w `PermissionSet` elementu.
 

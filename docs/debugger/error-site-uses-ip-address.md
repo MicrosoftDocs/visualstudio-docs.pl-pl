@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57790fce73c96a37c678f32cb76e332c28f73673
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 468cb2c85be088213bc865122a790408c6c992b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696509"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093573"
 ---
 # <a name="error-site-uses-ip-address"></a>Błąd: Witryna korzysta z adresu IP
 Ten błąd występuje, gdy debuger próbuje automatyczne dołączanie do aplikacji sieci Web, który jest przy użyciu adresu IP. Dzieje się tak w przypadku zmiany **Identyfikacja witryny sieci Web** do **użyć określonego adresu IP** w usługach IIS.
@@ -30,11 +30,11 @@ Ten błąd występuje, gdy debuger próbuje automatyczne dołączanie do aplikac
 
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd
 
-1.  Użyj ręcznie dołączyć zamiast (wybierz z menu Debugowanie **dołączyć do procesu**).
+1. Użyj ręcznie dołączyć zamiast (wybierz z menu Debugowanie **dołączyć do procesu**).
 
      —lub—
 
-2.  Zmiana **Identyfikacja witryny sieci Web usług IIS** ustawienie.
+2. Zmiana **Identyfikacja witryny sieci Web usług IIS** ustawienie.
 
 ## <a name="see-also"></a>Zobacz też
 - [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

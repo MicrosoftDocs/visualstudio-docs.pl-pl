@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6266f487e2e0c66e532297c3fdae3fd3e5498052
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4bd14060517793d28e24818a051df63efb8f0e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777760"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061103"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>Instrukcje: Włączanie funkcji AutoStart dla instalacji z dysku CD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ W przypadku wdrażania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ap
   
 ### <a name="to-enable-autostart"></a>Aby włączyć automatyczne uruchamianie  
   
-1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** kliknij menu **właściwości**.  
+1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** kliknij menu **właściwości**.  
   
-2.  Kliknij przycisk **Publikuj** kartę.  
+2. Kliknij przycisk **Publikuj** kartę.  
   
-3.  Kliknij przycisk **opcje** przycisku.  
+3. Kliknij przycisk **opcje** przycisku.  
   
      **Opcji publikowania** pojawi się okno dialogowe.  
   
-4.  Kliknij przycisk **wdrożenia**.  
+4. Kliknij przycisk **wdrożenia**.  
   
-5.  Wybierz **dla instalacji z dysku CD, automatycznie Rozpocznij instalację po włożeniu dysku CD** pole wyboru.  
+5. Wybierz **dla instalacji z dysku CD, automatycznie Rozpocznij instalację po włożeniu dysku CD** pole wyboru.  
   
      Plik Autorun.inf zostaną skopiowane do lokalizacji publikowania, gdy aplikacja została opublikowana.  
   

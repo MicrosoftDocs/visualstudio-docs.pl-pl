@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b6d205a3a8abddadc714aea4aa913ff064518920
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 91c993697103417eb3ba39e3c6d2929baee9311a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663482"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046426"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Instrukcje: Dołącz Profiler do usługi .NET i zbieranie danych pamięci przy użyciu wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,16 +88,16 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
     **Narzędzia VSPerfCmd**[/ dołączanie](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]    
 
-   -   Określ identyfikator procesu lub nazwę procesu usługi. Można wyświetlić identyfikatory i nazwy wszystkich uruchomionych procesów w Menedżerze zadań Windows.  
+   - Określ identyfikator procesu lub nazwę procesu usługi. Można wyświetlić identyfikatory i nazwy wszystkich uruchomionych procesów w Menedżerze zadań Windows.  
 
-   -   **targetclr:** `Version` Określa wersję środowiska uruchomieniowego języka wspólnego (CLR) do profilu, gdy więcej niż jedna wersja środowiska wykonawczego jest załadowana w aplikacji. Opcjonalna.  
+   - **targetclr:** `Version` Określa wersję środowiska uruchomieniowego języka wspólnego (CLR) do profilu, gdy więcej niż jedna wersja środowiska wykonawczego jest załadowana w aplikacji. Opcjonalna.  
 
 ## <a name="controlling-data-collection"></a>Kontrolowanie zbierania danych  
  Usługa jest uruchomiona, ale można używać **VSPerfCmd.exe** opcje do zatrzymywania i uruchamiania zapisywania danych do pliku danych profilera. Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonywania programu, takiej jak uruchamianie lub zamykanie aplikacji.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych  
 
--   Następujące pary **VSPerfCmd** opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.  
+- Następujące pary **VSPerfCmd** opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.  
 
     |Opcja|Opis|  
     |------------|-----------------|  
@@ -110,23 +110,23 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
 #### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania  
 
-1.  Wykonaj jedną z następujących czynności, aby odłączyć program profiler od aplikacji docelowej:  
+1. Wykonaj jedną z następujących czynności, aby odłączyć program profiler od aplikacji docelowej:  
 
-    -   Zatrzymaj usługę.  
+    - Zatrzymaj usługę.  
 
          —lub—  
 
-    -   Typ **VSPerfCmd / Odłącz**  
+    - Typ **VSPerfCmd / Odłącz**  
 
-2.  Zamknij program profilujący. Wpisz:  
+2. Zamknij program profilujący. Wpisz:  
 
      **Narzędzia VSPerfCmd/shutdown**  
 
-3.  (Opcjonalnie) Wyczyść zmienne środowiskowe profilowania. Wpisz:  
+3. (Opcjonalnie) Wyczyść zmienne środowiskowe profilowania. Wpisz:  
 
      **VSPerfClrEnv /globaloff**  
 
-4.  Uruchom ponownie komputer.  
+4. Uruchom ponownie komputer.  
 
 ## <a name="see-also"></a>Zobacz też  
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)   

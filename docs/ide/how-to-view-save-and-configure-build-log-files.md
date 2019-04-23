@@ -9,46 +9,46 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0185e8879718e068cd624559087db9369d7e190
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e40f414b3b3ea6bc151ef036deb0b5d80464ba46
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58789929"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057983"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Instrukcje: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji
 
 Po skompilowaniu projektu w środowisku IDE programu Visual Studio można wyświetlić informacje o tej kompilacji w **dane wyjściowe** okna. Za pomocą tych informacji, można na przykład rozwiązywania problemów dotyczących niepowodzenia kompilacji. 
 
-  - Dla projektów języka C++, można również wyświetlić te same informacje w *.txt* pliku, który został utworzony i zapisywane automatycznie. 
+- Dla projektów języka C++, można również wyświetlić te same informacje w *.txt* pliku, który został utworzony i zapisywane automatycznie. 
 
-  - W przypadku projektów kodu zarządzanego, można kliknąć w oknie danych wyjściowych kompilacji, a następnie naciśnij klawisz **Ctrl**+**S**. Visual Studio wyświetli monit o lokalizację do zapisania informacji z **dane wyjściowe** okna do *.txt* pliku. 
-  
+- W przypadku projektów kodu zarządzanego, można kliknąć w oknie danych wyjściowych kompilacji, a następnie naciśnij klawisz **Ctrl**+**S**. Visual Studio wyświetli monit o lokalizację do zapisania informacji z **dane wyjściowe** okna do *.txt* pliku. 
+
 Aby określić, jakiego rodzaju informacje mają być wyświetlane dotyczące każdej kompilacji umożliwia także środowiska IDE.
 
 Jeśli tworzysz dowolny rodzaj projektu przy użyciu programu MSBuild, możesz utworzyć *.txt* plik, aby zapisać informacje o kompilacji. Aby uzyskać więcej informacji, zobacz [dzienniki kompilacji Uzyskaj](../msbuild/obtaining-build-logs-with-msbuild.md).
 
 ## <a name="to-view-the-build-log-file-for-a-c-project"></a>Aby wyświetlić plik dziennika kompilacji dla projektu w języku C++
 
-1.  W **Eksplorator Windows** lub **Eksploratora plików**, otwórz następujący plik:  *\\...\Visual Studio \<wersji\>\Projects\\ < nazwa_projektu\>\\< nazwa_projektu\>\Debug\\< nazwa_projektu\>txt*
+1. W **Eksplorator Windows** lub **Eksploratora plików**, otwórz następujący plik:  *\\...\Visual Studio \<wersji\>\Projects\\ < nazwa_projektu\>\\< nazwa_projektu\>\Debug\\< nazwa_projektu\>txt*
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Aby utworzyć plik dziennika kompilacji dla projektu kodu zarządzanego
 
-1.  Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**.
+1. Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**.
 
-2.  W **dane wyjściowe** kliknij gdzieś w tekście.
+2. W **dane wyjściowe** kliknij gdzieś w tekście.
 
-3.  Naciśnij klawisz **Ctrl**+**S**.
+3. Naciśnij klawisz **Ctrl**+**S**.
 
    Visual Studio wyświetli monit dla lokalizacji zapisać dane wyjściowe kompilacji.
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Aby zmienić ilość informacji zawartych w dzienniku kompilacji
 
-1.  Na pasku menu wybierz **narzędzia** > **opcje**.
+1. Na pasku menu wybierz **narzędzia** > **opcje**.
 
-2.  Na **projekty i rozwiązania** wybierz **kompilowanie i uruchamianie** strony.
+2. Na **projekty i rozwiązania** wybierz **kompilowanie i uruchamianie** strony.
 
-3.  W **poziom szczegółowości danych wyjściowych kompilacji projektu programu MSBuild** , wybierz jedną z następujących wartości, a następnie wybierz **OK** przycisku.
+3. W **poziom szczegółowości danych wyjściowych kompilacji projektu programu MSBuild** , wybierz jedną z następujących wartości, a następnie wybierz **OK** przycisku.
 
     |Poziom szczegółowości|Opis|
     | - |-----------------|

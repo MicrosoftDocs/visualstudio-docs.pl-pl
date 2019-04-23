@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d07c0e11d47e20f43f4d4173de4bcc3c24b864b1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8bfef86b8ea82077ba7fe3f753f9835c06c3380a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652733"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097352"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Instrukcje: Kompilacja określonych obiektów docelowych w rozwiązaniach za pomocą programu MSBuild.exe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Można użyć MSBuild.exe, aby kompilacja określonych obiektów docelowych okre
   
 ### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>Tworzenie konkretnego celu określonego projektu w rozwiązaniu  
   
-1.  W wierszu polecenia wpisz polecenie `MSBuild.exe <SolutionName>.sln`, gdzie `<SolutionName>` odnosi się do nazwy pliku rozwiązania, który zawiera element docelowy, który chcesz wykonać.  
+1. W wierszu polecenia wpisz polecenie `MSBuild.exe <SolutionName>.sln`, gdzie `<SolutionName>` odnosi się do nazwy pliku rozwiązania, który zawiera element docelowy, który chcesz wykonać.  
   
-2.  Określ element docelowy po **/t** przełącznika w formacie *ProjectName*:*TargetName*.  
+2. Określ element docelowy po **/t** przełącznika w formacie *ProjectName*:*TargetName*.  
   
 ## <a name="example"></a>Przykład  
  Poniższy przykład wykonuje `Rebuild` celem `NotInSlnFolder` projektu, a następnie wykonuje `Clean` celem `InSolutionFolder` projektu, który znajduje się w `NewFolder` folderu rozwiązania.  

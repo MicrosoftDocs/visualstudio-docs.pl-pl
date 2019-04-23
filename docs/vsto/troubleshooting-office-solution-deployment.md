@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6773e73eaa4d6d53bbfa63e26b66f56553910444
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 418a1a22979b701ec1d1d32521f7f89e2c5274eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872264"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088096"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Rozwiązywanie problemów z wdrażaniem rozwiązań Office
   Ten temat zawiera informacje o tym, jak rozwiązać typowe problemy, które mogą wystąpić podczas wdrażania rozwiązań pakietu Office.
@@ -43,11 +43,11 @@ ms.locfileid: "54872264"
 
 #### <a name="to-set-the-time-out-value"></a>Aby ustawić wartość limitu czasu
 
-1.  W rejestrze przejdź do następującego klucza:
+1. W rejestrze przejdź do następującego klucza:
 
      **HKEY_CURRENT_USER\Software\Microsoft\VSTA**
 
-2.  W **AddInTimeout** podklucza, należy ustawić wartość limitu czasu w milisekundach.
+2. W **AddInTimeout** podklucza, należy ustawić wartość limitu czasu w milisekundach.
 
      Jeśli **AddInTimeout** podklucz nie istnieje, utwórz ją jako wartość typu DWORD.
 

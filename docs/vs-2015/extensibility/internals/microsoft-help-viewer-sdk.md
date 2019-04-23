@@ -8,27 +8,27 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e4a72acafa4e2ad8de757541312a13f203f73559
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e08a443513bb6043ec2f3841067021ffc65dd92d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764693"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099015"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Zestaw SDK Podglądu Pomocy firmy Microsoft
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Ten artykuł zawiera następujące zadania integratorzy Visual Studio podglądu pomocy:
 
--   Tworzenie tematu (Obsługa F1)
+- Tworzenie tematu (Obsługa F1)
 
--   Tworzenie pakietu zawartości, znakowania podglądu pomocy
+- Tworzenie pakietu zawartości, znakowania podglądu pomocy
 
--   Wdrażanie zestawu artykułów
+- Wdrażanie zestawu artykułów
 
--   Dodawanie Pomocy Visual Studio shell (integrated lub isolated)
+- Dodawanie Pomocy Visual Studio shell (integrated lub isolated)
 
--   Dodatkowe zasoby
+- Dodatkowe zasoby
 
 ### <a name="creating-a-topic-f1-support"></a>Tworzenie tematu (Obsługa F1)
  Ta sekcja zawiera omówienie składników prezentowane tematu, temat wymagania, krótki opis sposobu tworzenia tematu (w tym wymagania w zakresie obsługi F1), a na końcu tematu na jej wynik renderowany.
@@ -132,17 +132,17 @@ Ten artykuł zawiera następujące zadania integratorzy Visual Studio podglądu 
 
  Treść (nie w tym nagłówku i stopce) tematu będzie zawierać łączy strony, sekcji Uwaga, zwijany obszaru, fragment kodu i fragment tekstu określonego języka.  Zobacz sekcję znakowania, aby uzyskać informacje dotyczące tych obszarów prezentowane tematu.
 
-1.  Dodaj znacznik tytułu tematu:  `<div class="title">Contoso Topic 4</div>`
+1. Dodaj znacznik tytułu tematu:  `<div class="title">Contoso Topic 4</div>`
 
-2.  Dodaj sekcję Uwaga: `<div class="alert"> add your table tag and text </div>`
+2. Dodaj sekcję Uwaga: `<div class="alert"> add your table tag and text </div>`
 
-3.  Dodawanie obszaru zwijana:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. Dodawanie obszaru zwijana:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4.  Dodaj fragment kodu:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. Dodaj fragment kodu:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  Dodaj kod języka określonego tekstu:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Należy pamiętać, że devLangnu = umożliwia wprowadzenie innych języków. Na przykład devLangnu = "Fortran" spowoduje wyświetlenie Fortran po fragmencie kodu DisplayLanguage = Fortran
+5. Dodaj kod języka określonego tekstu:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Należy pamiętać, że devLangnu = umożliwia wprowadzenie innych języków. Na przykład devLangnu = "Fortran" spowoduje wyświetlenie Fortran po fragmencie kodu DisplayLanguage = Fortran
 
-6.  Dodawanie łączy strony: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6. Dodawanie łączy strony: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 >  Uwaga: dla nieobsługiwanych nowe "Język" (przykład F#, Cobol, Pascal) kolorowania kodu we fragmencie kodu jest monochromatyczny.
@@ -296,13 +296,13 @@ some F# code
 
 1. Ustaw **VendorContent** pomocy 2.1 z klucza rejestru:
 
-   -   Dla 32-bitowych systemach operacyjnych:
+   - Dla 32-bitowych systemach operacyjnych:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
         "VendorContent" = dword: 00000001
 
-   -   Dla 64-bitowych systemach operacyjnych:
+   - Dla 64-bitowych systemach operacyjnych:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
@@ -439,7 +439,7 @@ some F# code
 |Funkcja:|**CollapsibleArea**|
 |Użycie:|Rozwiń zwija formantu zawartości tekstu|
 |**Element**|**Wartość**|
-|ExpandText|Rozwiń węzeł|
+|ExpandText|Expand|
 |CollapseText|Zwiń|
 |Funkcja:|**CodeSnippet**|
 |Użycie:|Tekst kontrolki fragmentu kodu.  Uwaga: Zawartości fragmentu kodu przy użyciu miejsca "Bez podziału" zostanie zmieniony na miejsce.|

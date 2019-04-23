@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1f1b341ae91e0c5706aaef0a8e74cebdefd79e6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 09aac9bc14ac5716cd5d91b3e8209ab4c266bbd4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651672"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046603"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>Instrukcje: Dołączanie profilera do usługi natywnej w celu zbierania statystyk aplikacji przy użyciu wiersza polecenia
 W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia narzędzi Profilujących do dołączenia programu profilującego do macierzystej usługi i zbierania statystyk wydajności przy użyciu metody próbkowania.
@@ -77,7 +77,7 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
 
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych
 
--   Następujące pary **VSPerfCmd** opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
+- Następujące pary **VSPerfCmd** opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
 
     |Opcja|Opis|
     |------------|-----------------|
@@ -90,15 +90,15 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
 
 #### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania
 
-1.  Wykonaj jedną z następujących czynności, aby odłączyć program profiler od aplikacji docelowej:
+1. Wykonaj jedną z następujących czynności, aby odłączyć program profiler od aplikacji docelowej:
 
-    -   Zatrzymaj usługę.
+    - Zatrzymaj usługę.
 
          —lub—
 
-    -   Typ **VSPerfCmd / Odłącz**
+    - Typ **VSPerfCmd / Odłącz**
 
-2.  Zamknij program profilujący. Wpisz:
+2. Zamknij program profilujący. Wpisz:
 
      **Narzędzia VSPerfCmd/shutdown**
 

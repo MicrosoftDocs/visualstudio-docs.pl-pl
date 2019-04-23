@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 82a76f36f3b7cf0f4687d8797fe2694b731933ca
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0538620cde170ea9ae033a510c7fa01ff20c64d3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666926"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093153"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>Parametry połączenia zawierają poświadczenia z hasłem w postaci zwykłego tekstu i nie korzystają ze zintegrowanych zabezpieczeń
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ Czy chcesz zapisać parametry połączenia w bieżącym pliku DBML i pliki konfi
   
 ### <a name="to-save-the-connection-string-with-the-sensitive-information-in-the-projects-application-settings"></a>Aby zapisać parametry połączenia z poufnych informacji w ustawieniach aplikacji projektu  
   
--   Kliknij przycisk **Tak**.  
+- Kliknij przycisk **Tak**.  
   
      Parametry połączenia są przechowywane jako ustawienie aplikacji. Parametry połączenia zawierają poufne informacje w postaci zwykłego tekstu. Za pomocą pliku DBML nie zawiera poufne informacje.  
   
 ### <a name="to-save-the-connection-string-without-the-sensitive-information-in-the-projects-application-settings"></a>Aby zapisać parametry połączenia bez informacji poufnych w ustawieniach aplikacji projektu  
   
--   Kliknij przycisk **nie**.  
+- Kliknij przycisk **nie**.  
   
      Parametry połączenia są przechowywane jako ustawienie aplikacji, ale hasło nie jest dołączony.  
   

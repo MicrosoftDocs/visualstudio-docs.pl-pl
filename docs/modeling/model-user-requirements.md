@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda0284bd9ae4b0f68a8bb0fa779959f52650bdd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d75bfd7634e068224b12168390193773c198957a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937360"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058528"
 ---
 # <a name="model-user-requirements"></a>Wymagania modelu użytkownika
 
@@ -56,7 +56,7 @@ Można utworzyć kilka różnych widoków wymagań użytkowników.  Każdy widok
 
 Należy zauważyć, że większość typów diagram może służyć do innych celów. Omówienie typów na diagramie, zobacz [tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md).
 
-##  <a name="BusinessRules"></a> Wyświetlanie reguły biznesowe
+## <a name="BusinessRules"></a> Wyświetlanie reguły biznesowe
 
 Reguły biznesowej jest wymagana, która nie jest skojarzony z konkretnego przypadku użycia, należy przestrzegać w całym systemie.
 
@@ -76,19 +76,19 @@ Więcej informacji można znaleźć w następujących tematach:
 |-|-|
 |Jak tworzyć kod, który działa zgodnie z regułami biznesowymi|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|
 
-##  <a name="QoSRequirements"></a> Opisujące jakości wymagań
+## <a name="QoSRequirements"></a> Opisujące jakości wymagań
 
 Istnieje kilka kategorii wymagań dotyczących jakości usługi. Ulepszenia obejmują następujące czynności:
 
--   Wydajność
+- Wydajność
 
--   Zabezpieczenia
+- Zabezpieczenia
 
--   Użyteczność
+- Użyteczność
 
--   Niezawodność
+- Niezawodność
 
--   Niezawodność
+- Niezawodność
 
 Niektóre z tych wymagań można uwzględnić w opisach przypadki użycia określonego. Inne wymagania nie są specyficzne dla przypadków użycia i najbardziej efektywne są zapisywane w osobnym dokumencie. Możliwe, to warto stosować się do słownictwa zdefiniowane za pomocą modelu wymagań. W poniższym przykładzie należy zauważyć, że głównym słowa używane wymaganie są tytuły aktorów, przypadki użycia i klas w poprzedniej ilustracji:
 

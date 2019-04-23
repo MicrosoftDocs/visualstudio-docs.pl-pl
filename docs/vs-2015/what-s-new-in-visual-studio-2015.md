@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18e5effdd2398ce3532c73c1d9f9941554b2043b
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: bd06e1b6eb74a6a356c085bdade2733e29d54023
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195167"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041838"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Co&#39;s Nowość w programie Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -123,15 +123,15 @@ Aby dowiedzieć się więcej na temat wiele ulepszeń oraz nowe funkcje w progra
 ## <a name="cross-platform-debugging-support"></a>Obsługa debugowania dla wielu platform
  Za pomocą programu Visual Studio do tworzenia i debugowania natywnych aplikacji mobilnych przeznaczone dla systemów Windows, iOS i urządzenia z systemem Android. Użyj [Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx), lub podłącz urządzenie i debugowania kodu bezpośrednio w programie Visual Studio.
 
--   **JavaScript / Cordova**. Użyj [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) do tworzenia aplikacji natywnych dla Windows, iOS i Android za pomocą języka JavaScript.
+- **JavaScript / Cordova**. Użyj [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) do tworzenia aplikacji natywnych dla Windows, iOS i Android za pomocą języka JavaScript.
 
      [Debugowanie aplikacji](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1) w bibliotece MSDN przedstawiono szczegółowe obsługę Cordova debugowania programu Visual Studio.
 
--   **C# / Xamarin**. Użyj [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) do tworzenia aplikacji natywnych dla Windows, iOS i Android w programie Visual Studio w języku C#.
+- **C# / Xamarin**. Użyj [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) do tworzenia aplikacji natywnych dla Windows, iOS i Android w programie Visual Studio w języku C#.
 
      [Debugowanie](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (iOS) i [debugowania na urządzeniu](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) w [przewodników dla deweloperów platformy Xamarin](http://developer.xamarin.com/guides) opisano środowisko debugowania.
 
--   **C++ / Android**. Użyj [Visual C++ for Cross-Platform Mobile Development](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) szablony wraz z narzędziami innych firm, takich jak [zestawu Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) może tworzyć aplikacje natywne dla Windows i Android.
+- **C++ / Android**. Użyj [Visual C++ for Cross-Platform Mobile Development](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) szablony wraz z narzędziami innych firm, takich jak [zestawu Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) może tworzyć aplikacje natywne dla Windows i Android.
 
 ## <a name="debugging-and-diagnostics"></a>Debugowanie i diagnostyka
 

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f35aaf5b36da2bf40420bd4461f7d2fa880575e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4fb5a8c7a54871c7d948a458768c5551dbb5d550
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937503"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091762"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Powiązanie obiektów jako źródła danych w programie Visual Studio
 
@@ -40,25 +40,25 @@ Ogólnie rzecz biorąc niestandardowe obiekty nie wymagają żadnych określonyc
 
 Istnieją sposoby niezliczone, aby zaimplementować logikę aplikacji, podczas pracy z obiektami jako źródło danych, SQL bazy danych są kilka standardowych operacji, które można uprościć za pomocą obiektów TableAdapter generowanych przez program Visual Studio. Tej stronie wyjaśniamy sposób implementacji tych standardowych procesów za pomocą adapterów TableAdapter. Nie ma służyć jako przewodnik w do tworzenia niestandardowych obiektów. Na przykład będzie zazwyczaj wykonywać następujące operacje standardowe niezależnie od konkretnej implementacji obiektów lub aplikacji logiki:
 
--   Ładowanie danych w obiektach (zazwyczaj z bazy danych).
+- Ładowanie danych w obiektach (zazwyczaj z bazy danych).
 
--   Tworzenie typizowanego kolekcji obiektów.
+- Tworzenie typizowanego kolekcji obiektów.
 
--   Dodawanie obiektów do i usuwanie obiektów z kolekcji.
+- Dodawanie obiektów do i usuwanie obiektów z kolekcji.
 
--   Dane obiektu są wyświetlane użytkownikom w formularzu.
+- Dane obiektu są wyświetlane użytkownikom w formularzu.
 
--   Zmienianie/edytowanie danych w obiekcie.
+- Zmienianie/edytowanie danych w obiekcie.
 
--   Zapisywanie danych z obiektów w bazie danych.
+- Zapisywanie danych z obiektów w bazie danych.
 
 ### <a name="load-data-into-objects"></a>Ładowanie danych do obiektów
 
 W tym przykładzie dane zostały załadowane do obiektów za pomocą adapterów TableAdapter. Domyślnie TableAdapters są tworzone za pomocą dwóch rodzajów metod, które pobierania danych z bazy danych i wypełnianie tabel danych.
 
--   `TableAdapter.Fill` Metoda wypełni istniejącej tabeli danych z danymi zwracanymi.
+- `TableAdapter.Fill` Metoda wypełni istniejącej tabeli danych z danymi zwracanymi.
 
--   `TableAdapter.GetData` Metoda zwraca tabelę danych wypełniony danymi.
+- `TableAdapter.GetData` Metoda zwraca tabelę danych wypełniony danymi.
 
 Najprostszym sposobem załadowania niestandardowych obiektów z danymi jest wywołać `TableAdapter.GetData` metody w pętli poprzez Kolekcja wierszy w tabeli zwracanych danych i wypełnić każdego obiektu z wartościami w każdym wierszu. Możesz utworzyć `GetData` metodę zwracającą tabelę danych wypełnione dla dowolnego zapytania, które dodano do TableAdapter.
 

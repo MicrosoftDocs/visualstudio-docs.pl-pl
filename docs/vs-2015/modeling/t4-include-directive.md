@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b67f3def0eadc35f67d590b282001cac1c526ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6b475b8e5c2138c909133aee0440f0dcaea99e13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803051"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057709"
 ---
 # <a name="t4-include-directive"></a>Dyrektywa T4 Include
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,7 +112,7 @@ Output message 5 (from top template).
   
 ```  
   
-##  <a name="msbuild"></a> Korzystanie z właściwości projektu w MSBuild i Visual Studio  
+## <a name="msbuild"></a> Korzystanie z właściwości projektu w MSBuild i Visual Studio  
  Chociaż można używać makr Visual Studio, takich jak $(SolutionDir), w dyrektywie include, nie działają one w MSBuild. Aby przekształcić szablony w komputerze kompilacji, musisz użyć właściwości projektu.  
   
  Wyedytuj plik .csproj lub .vbproj, aby zdefiniować właściwość projektu. Ten przykład definiuje właściwość o nazwie `myIncludeFolder`:  

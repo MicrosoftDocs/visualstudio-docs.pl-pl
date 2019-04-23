@@ -11,12 +11,12 @@ ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c4667bd26db80c005605214eeca9e852a7705bdf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56a110f382d0b182eed0ea1a95cd4dabf2877037
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766726"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090449"
 ---
 # <a name="component-management"></a>Zarządzanie składnikami
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ Jednostki zadań w Instalatorze Windows są określane jako składniki Instalato
   
 ## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Wytyczne dotyczące tworzenia Instalatora w celu instalacji Side-by-side  
   
--   Tworzenie plików i kluczy rejestru, które są współużytkowane przez wersje na ich własnych składniki.  
+- Tworzenie plików i kluczy rejestru, które są współużytkowane przez wersje na ich własnych składniki.  
   
      Dzięki temu można łatwo korzystać z nich w następnej wersji. Na przykład bibliotek typów, które są zarejestrowane na całym świecie, plik rozszerzenia i inne elementy, zarejestrowane w kluczu HKEY_CLASSES_ROOT i tak dalej.  
   
--   Grupy składników udostępnionych do modułów scalania oddzielne.  
+- Grupy składników udostępnionych do modułów scalania oddzielne.  
   
      Ułatwia to tworzenie poprawnie na potrzeby przechodzenia do przodu side-by-side.  
   
--   Zainstaluj udostępnione pliki i klucze rejestru przy użyciu tych samych składników Instalatora Windows w wersjach.  
+- Zainstaluj udostępnione pliki i klucze rejestru przy użyciu tych samych składników Instalatora Windows w wersjach.  
   
      Jeśli używasz innego składnika, pliki i wpisy rejestru są odinstalowywane po odinstalowaniu jednej określonej wersji pakietu VSPackage, ale innego pakietu VSPackage nadal jest zainstalowany.  
   
--   Nie należy mieszać wersjonowana i udostępnionych elementów w jednym składniku.  
+- Nie należy mieszać wersjonowana i udostępnionych elementów w jednym składniku.  
   
      To sprawia, że niemożliwe do instalacji udostępnione elementy globalnej lokalizacji i wersjonowanych elementów do lokalizacje izolowanych.  
   
--   Nie ma kluczy rejestru udostępnionego, które wskazują wersji plików.  
+- Nie ma kluczy rejestru udostępnionego, które wskazują wersji plików.  
   
      Jeśli to zrobisz, klucze współużytkowane zostaną zastąpione po zainstalowaniu innej wersji pakietu VSPackage. Po usunięciu druga wersja pliku, do którego wskazuje klucz został usunięty.  
   

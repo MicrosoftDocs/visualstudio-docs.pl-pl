@@ -12,21 +12,21 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 29590b96a8d8d2ad8fbddaf0d97b9ed55e6aadf2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e89b677113a04f286be3201a6b76d78fd5d191c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763601"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044021"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Różnice pomiędzy dodawaniem odwołań za pomocą NuGet a Extension SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Możesz podać pakiet do użycia w ramach projektów programu Visual Studio za pomocą rozszerzenie NuGet w programie Visual Studio albo zestaw software development kit (SDK). Poprzez opisanie podobieństwa i różnice między dwa mechanizmy, w tym temacie mogą pomóc wybrać najlepszy dla zadania.  
   
--   NuGet jest systemem zarządzania pakietami open source, który upraszcza dołączanie biblioteki do rozwiązania projektu. Aby uzyskać więcej informacji, zobacz [Przegląd NuGet](http://go.microsoft.com/fwlink/?LinkId=254877).  
+- NuGet jest systemem zarządzania pakietami open source, który upraszcza dołączanie biblioteki do rozwiązania projektu. Aby uzyskać więcej informacji, zobacz [Przegląd NuGet](http://go.microsoft.com/fwlink/?LinkId=254877).  
   
--   Zestaw SDK to zbiór plików, które program Visual Studio traktuje jako element jedno odwołanie. **Menadżer odwołań** okno dialogowe wyświetla listę wszystkich zestawów SDK, które są istotne dla projektu, który został otwarty podczas tego okna dialogowego. Po dodaniu zestawu SDK do projektu, możesz uzyskać dostęp do wszystkich zawartość tego zestawu SDK za pomocą funkcji IntelliSense, **przybornika**, projektantów oraz **przeglądarki obiektów**, MSBuild, wdrażania, debugowaniu i pakowaniu. Aby uzyskać więcej informacji na temat zestawów SDK, zobacz [tworzenia Software Development Kit](../extensibility/creating-a-software-development-kit.md).  
+- Zestaw SDK to zbiór plików, które program Visual Studio traktuje jako element jedno odwołanie. **Menadżer odwołań** okno dialogowe wyświetla listę wszystkich zestawów SDK, które są istotne dla projektu, który został otwarty podczas tego okna dialogowego. Po dodaniu zestawu SDK do projektu, możesz uzyskać dostęp do wszystkich zawartość tego zestawu SDK za pomocą funkcji IntelliSense, **przybornika**, projektantów oraz **przeglądarki obiektów**, MSBuild, wdrażania, debugowaniu i pakowaniu. Aby uzyskać więcej informacji na temat zestawów SDK, zobacz [tworzenia Software Development Kit](../extensibility/creating-a-software-development-kit.md).  
   
 ## <a name="which-mechanism-should-i-use"></a>Jakie działania należy używać?  
  Poniższa tabela ułatwia porównanie odwołujący się funkcji odwołujący się funkcje pakietu nuget zestawu SDK.  

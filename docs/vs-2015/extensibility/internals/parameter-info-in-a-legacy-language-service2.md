@@ -12,12 +12,12 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cd89520cb976cb6deaca957d97f952e4baa71def
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 986a392dc381b972c9e4d4bfa6dda06fe1aa878e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790741"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087746"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informacje o parametrach w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -113,10 +113,10 @@ testfunc("a string",3);
   
  Kroki, które przyjmuje analizatora są opisane poniżej:  
   
-1.  Wywołuje analizator <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> z tekstem "testfunc".  
+1. Wywołuje analizator <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> z tekstem "testfunc".  
   
-2.  Wywołuje analizator <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.  
+2. Wywołuje analizator <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.  
   
-3.  Wywołuje analizator <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.  
+3. Wywołuje analizator <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.  
   
-4.  Wywołuje analizator <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.
+4. Wywołuje analizator <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.

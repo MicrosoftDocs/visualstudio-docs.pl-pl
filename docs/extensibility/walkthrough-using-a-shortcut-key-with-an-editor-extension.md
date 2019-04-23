@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d2abc185d06aa74e47bb2a36bd17df12a9db5c8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0e8d4acb5bc43a174187fa74714a9ff24ef0a67c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710308"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048691"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Przewodnik: Użyj klawisza skrótu z rozszerzeniem edytora
 Klawisze skrótów można odpowiedzieć w rozszerzeniu edytora. Następujące Instruktaż pokazuje, jak dodać zakończeń widok na widok tekstu przy użyciu klawisza skrótu. Ten przewodnik jest oparty na szablonie edytora zakończeń okienka ekranu, i umożliwia dodawanie zakończeń przy użyciu + znak.
@@ -61,9 +61,9 @@ Przed Visual Studio 2017 w wersji 15.6, jedynym sposobem obsługi poleceń w roz
 
  Filtr polecenia jest implementacją <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, która obsługuje polecenie przez utworzenie wystąpienia zakończeń.
 
-1.  Dodaj plik klasy i nadaj mu nazwę `KeyBindingCommandFilter`.
+1. Dodaj plik klasy i nadaj mu nazwę `KeyBindingCommandFilter`.
 
-2.  Dodaj następujące instrukcje using.
+2. Dodaj następujące instrukcje using.
 
     ```csharp
     using System;
@@ -74,13 +74,13 @@ Przed Visual Studio 2017 w wersji 15.6, jedynym sposobem obsługi poleceń w roz
 
     ```
 
-3.  Klasa o nazwie KeyBindingCommandFilter powinien dziedziczyć <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.
+3. Klasa o nazwie KeyBindingCommandFilter powinien dziedziczyć <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.
 
     ```csharp
     internal class KeyBindingCommandFilter : IOleCommandTarget
     ```
 
-4.  Dodaj pola prywatne dla widoku tekstu, następnego polecenia w łańcuchu polecenia i flagi do reprezentowania, czy filtr polecenia został już dodany.
+4. Dodaj pola prywatne dla widoku tekstu, następnego polecenia w łańcuchu polecenia i flagi do reprezentowania, czy filtr polecenia został już dodany.
 
     ```csharp
     private IWpfTextView m_textView;
@@ -89,7 +89,7 @@ Przed Visual Studio 2017 w wersji 15.6, jedynym sposobem obsługi poleceń w roz
     internal bool m_adorned;
     ```
 
-5.  Dodaj Konstruktor, który ustawia widok tekstu.
+5. Dodaj Konstruktor, który ustawia widok tekstu.
 
     ```csharp
     public KeyBindingCommandFilter(IWpfTextView textView)
@@ -99,7 +99,7 @@ Przed Visual Studio 2017 w wersji 15.6, jedynym sposobem obsługi poleceń w roz
     }
     ```
 
-6.  Implementowanie `QueryStatus()` metody w następujący sposób.
+6. Implementowanie `QueryStatus()` metody w następujący sposób.
 
     ```csharp
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)
@@ -108,7 +108,7 @@ Przed Visual Studio 2017 w wersji 15.6, jedynym sposobem obsługi poleceń w roz
     }
     ```
 
-7.  Implementowanie `Exec()` metodę, tak że dodaje purpurowy pola do widoku, jeśli znak plus (**+**) wpisany znak.
+7. Implementowanie `Exec()` metodę, tak że dodaje purpurowy pola do widoku, jeśli znak plus (**+**) wpisany znak.
 
     ```csharp
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
@@ -135,7 +135,7 @@ Przed Visual Studio 2017 w wersji 15.6, jedynym sposobem obsługi poleceń w roz
 ## <a name="add-the-command-filter-prior-to-visual-studio-2017-version-156"></a>Dodaj filtr polecenia (przed Visual Studio 2017 w wersji 15.6)
  Dostawca zakończeń należy dodać polecenie Filtr do widoku tekstu. W tym przykładzie implementuje dostawcę <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> do nasłuchiwania zdarzeń tworzenia widoku tekstu. Ten dostawca zakończeń Eksportuje również warstwy zakończeń, definiujący porządek zakończeń.
 
-1.  W pliku KeyBindingTestTextViewCreationListener, Dodaj następujące instrukcje using:
+1. W pliku KeyBindingTestTextViewCreationListener, Dodaj następujące instrukcje using:
 
     ```csharp
     using System;
@@ -150,7 +150,7 @@ Przed Visual Studio 2017 w wersji 15.6, jedynym sposobem obsługi poleceń w roz
 
     ```
 
-2.  Aby uzyskać karty widoku tekstu, należy zaimportować <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.
+2. Aby uzyskać karty widoku tekstu, należy zaimportować <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.
 
     ```csharp
     [Import(typeof(IVsEditorAdaptersFactoryService))]
@@ -158,7 +158,7 @@ Przed Visual Studio 2017 w wersji 15.6, jedynym sposobem obsługi poleceń w roz
 
     ```
 
-3.  Zmiana <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> metodę, tak że dodaje `KeyBindingCommandFilter`.
+3. Zmiana <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> metodę, tak że dodaje `KeyBindingCommandFilter`.
 
     ```csharp
     public void TextViewCreated(IWpfTextView textView)
@@ -167,7 +167,7 @@ Przed Visual Studio 2017 w wersji 15.6, jedynym sposobem obsługi poleceń w roz
     }
     ```
 
-4.  `AddCommandFilter` Obsługi pobiera karty widoku tekstu i dodaje filtr polecenia.
+4. `AddCommandFilter` Obsługi pobiera karty widoku tekstu i dodaje filtr polecenia.
 
     ```csharp
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)
@@ -256,6 +256,7 @@ Program obsługi poleceń jest implementacją <xref:Microsoft.VisualStudio.Comma
        return false;
    }
    ```
+
    7. Skopiuj definicję warstwy zakończeń z *KeyBindingTestTextViewCreationListener.cs* plik *KeyBindingCommandHandler.cs* , a następnie usuń  *KeyBindingTestTextViewCreationListener.cs* pliku:
 
    ```csharp
@@ -319,8 +320,8 @@ private void CreateVisuals(ITextViewLine line)
 
 ## <a name="build-and-test-the-code"></a>Tworzenie i testowanie kodu
 
-1.  Skompiluj rozwiązanie KeyBindingTest i uruchom go w doświadczalnym wystąpieniu.
+1. Skompiluj rozwiązanie KeyBindingTest i uruchom go w doświadczalnym wystąpieniu.
 
-2.  Utwórz lub Otwórz plik tekstowy. Wpisz wyrazy, niektóre zawierającą znak "", a następnie wpisz **+** w widoku tekstu w dowolnym miejscu.
+2. Utwórz lub Otwórz plik tekstowy. Wpisz wyrazy, niektóre zawierającą znak "", a następnie wpisz **+** w widoku tekstu w dowolnym miejscu.
 
      Purpurowa kwadrat powinny pojawić się na każdym "" znak w pliku.

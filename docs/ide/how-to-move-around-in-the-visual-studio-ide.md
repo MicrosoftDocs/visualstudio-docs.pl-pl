@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18239c01707e63acaf7602ec77dad3bc6b42a884
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5933d89e38d040b088879f10911f2f1fff049aab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908481"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057891"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Instrukcje: Poruszanie się w środowisku IDE programu Visual Studio
 
@@ -43,9 +43,9 @@ Przejdź wstecz i nawigować do przodu cyklu otwarte pliki w edytorze, na podsta
 
 ### <a name="to-move-through-open-files-in-order-of-use"></a>Aby przeglądać otwarte pliki w kolejności użycia
 
--   Aby uaktywnić otwarte dokumenty w kolejności ich zostały ostatnio korzystał z usług, naciśnij **Ctrl**+**-**.
+- Aby uaktywnić otwarte dokumenty w kolejności ich zostały ostatnio korzystał z usług, naciśnij **Ctrl**+**-**.
 
--   Aby uaktywnić otwartymi dokumentami w odwrotnej kolejności niż kolejność, naciśnij **Ctrl**+**Shift**+**-**.
+- Aby uaktywnić otwartymi dokumentami w odwrotnej kolejności niż kolejność, naciśnij **Ctrl**+**Shift**+**-**.
 
     > [!NOTE]
     > **Przejdź wstecz** i **Nawiguj do przodu** również znajduje się na **widoku** menu.
@@ -63,20 +63,20 @@ Możesz również przełączyć się do określonego pliku, Otwórz w edytorze, 
 
 ### <a name="to-switch-to-specific-files-in-the-editor"></a>Aby przełączyć się do określonych plików w edytorze
 
--   Naciśnij klawisz **Ctrl**+**kartę** do wyświetlenia **Nawigator IDE**. Naciśnij i przytrzymaj **Ctrl** klucz, a następnie naciśnij klawisz **kartę** aż do momentu, gdy wybierz plik, który chcesz przełączyć się do.
+- Naciśnij klawisz **Ctrl**+**kartę** do wyświetlenia **Nawigator IDE**. Naciśnij i przytrzymaj **Ctrl** klucz, a następnie naciśnij klawisz **kartę** aż do momentu, gdy wybierz plik, który chcesz przełączyć się do.
 
     > [!TIP]
     > Aby odwrócić kolejność, w którym można przejść przez **aktywnych plików** listy, naciśnij i przytrzymaj **Ctrl**+**Shift** kluczy, a następnie naciśnij klawisz **kartę**.
 
     \- lub —
 
--   W prawym górnym rogu edytora wybierz **aktywnych plików** przycisk, a następnie wybierz plik z listy, aby przełączyć się do.
+- W prawym górnym rogu edytora wybierz **aktywnych plików** przycisk, a następnie wybierz plik z listy, aby przełączyć się do.
 
     \- lub —
 
--   Na pasku menu wybierz **okna** > **Windows**.
+- Na pasku menu wybierz **okna** > **Windows**.
 
--   Na liście, wybierz plik, który chcesz wyświetlić, a następnie wybierz **Aktywuj**.
+- Na liście, wybierz plik, który chcesz wyświetlić, a następnie wybierz **Aktywuj**.
 
 ## <a name="navigate-among-tool-windows-in-the-ide"></a>Przechodzenie między oknami narzędzi w IDE
 
@@ -87,7 +87,7 @@ Możesz również przełączyć się do określonego pliku, Otwórz w edytorze, 
 
 ### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>Aby przełączyć się do okna narzędzi określonych w środowisku IDE
 
--   Naciśnij klawisz **Alt**+**F7** do wyświetlenia **Nawigator IDE**. Naciśnij i przytrzymaj **Alt** klucz, a następnie naciśnij klawisz **F7** aż do momentu, gdy wybierz okno, o których chcesz przełączyć się do.
+- Naciśnij klawisz **Alt**+**F7** do wyświetlenia **Nawigator IDE**. Naciśnij i przytrzymaj **Alt** klucz, a następnie naciśnij klawisz **F7** aż do momentu, gdy wybierz okno, o których chcesz przełączyć się do.
 
     > [!TIP]
     > Aby odwrócić kolejność, w którym można przejść przez **Active narzędzie Windows** listy, naciśnij i przytrzymaj **Shift**+**Alt** kluczy, a następnie naciśnij klawisz **F7**.

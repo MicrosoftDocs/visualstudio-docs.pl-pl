@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10067cdf06035b08c56fbcc92440b460a9b7733b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 70d438107b7cbe05b0a1c0049dff8e26c286de89
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612104"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043964"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Obsługa fragmentów kodu w starszej wersji usługi językowej
 Fragment kodu jest fragmentem kodu, który jest wstawiany do pliku źródłowego. Fragmentem jest oparty na składni XML szablonu przy użyciu zestawu pól. Te pola są wyróżnione po tym fragmencie kodu jest wstawiany i mogą mieć różne wartości w zależności od kontekstu, w którym wstawieniu fragmentu kodu. Po wstawieniu fragmentu kodu, usługa językowa można sformatować fragment kodu.
@@ -39,11 +39,11 @@ Fragment kodu jest fragmentem kodu, który jest wstawiany do pliku źródłowego
 ## <a name="providing-support-for-code-snippets"></a>Zapewnianie obsługi w przypadku fragmentów kodu
  Aby włączyć obsługę fragmenty kodu, należy podać albo zainstalować program fragmenty kodu i podać oznacza, że dla użytkownika wstawić tych fragmentów kodu. Istnieją trzy kroki, aby włączyć obsługę fragmenty kodu:
 
-1.  Instalowanie plików fragmentu kodu.
+1. Instalowanie plików fragmentu kodu.
 
-2.  Włączanie fragmentów kodu usługi języka.
+2. Włączanie fragmentów kodu usługi języka.
 
-3.  Wywoływanie <xref:Microsoft.VisualStudio.Package.ExpansionProvider> obiektu.
+3. Wywoływanie <xref:Microsoft.VisualStudio.Package.ExpansionProvider> obiektu.
 
 ### <a name="installing-the-snippet-files"></a>Instalowanie plików fragmentu kodu
  Wszystkie fragmenty kodu w języku są przechowywane jako szablonów w plikach XML zwykle jeden szablon fragmentu kodu na plik. Aby uzyskać szczegółowe informacje dotyczące schematu XML, używany do szablonów fragmentów kodu, zobacz [dokumentacja schematu fragmentów kodu](../../ide/code-snippets-schema-reference.md). Każdy szablon fragmentu kodu jest identyfikowany za pomocą identyfikatora języka. Ten język identyfikator jest określone w rejestrze i są umieszczane w `Language` atrybutu \<kodu > tagu w szablonie.
@@ -115,9 +115,9 @@ Fragment kodu jest fragmentem kodu, który jest wstawiany do pliku źródłowego
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Wstawianie fragmentu kodu przy użyciu polecenia Menu
  Aby polecenie menu do wyświetlenia w przeglądarce fragment kodu, możesz dodać polecenie menu a następnie wywołać <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.ExpansionProvider> interfejsu w odpowiedzi na polecenie menu.
 
-1.  Dodaj przycisk i polecenia do pliku vsct. Można znaleźć instrukcje dotyczące wykonywania, dlatego w [Tworzenie rozszerzenia za pomocą polecenia Menu](../../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Dodaj przycisk i polecenia do pliku vsct. Można znaleźć instrukcje dotyczące wykonywania, dlatego w [Tworzenie rozszerzenia za pomocą polecenia Menu](../../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Wyprowadzić klasę z <xref:Microsoft.VisualStudio.Package.ViewFilter> klasy, a także Przesłoń <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> metodę w celu wskazania obsługę nowego polecenia menu. W tym przykładzie zawsze uruchamia polecenia menu.
+2. Wyprowadzić klasę z <xref:Microsoft.VisualStudio.Package.ViewFilter> klasy, a także Przesłoń <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> metodę w celu wskazania obsługę nowego polecenia menu. W tym przykładzie zawsze uruchamia polecenia menu.
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -153,7 +153,7 @@ Fragment kodu jest fragmentem kodu, który jest wstawiany do pliku źródłowego
     }
     ```
 
-3.  Zastąp <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.ViewFilter> klasy w celu uzyskania <xref:Microsoft.VisualStudio.Package.ExpansionProvider> obiektu, a następnie wywołać <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> metody dla tego obiektu.
+3. Zastąp <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.ViewFilter> klasy w celu uzyskania <xref:Microsoft.VisualStudio.Package.ExpansionProvider> obiektu, a następnie wywołać <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> metody dla tego obiektu.
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -205,15 +205,15 @@ Fragment kodu jest fragmentem kodu, który jest wstawiany do pliku źródłowego
 
      Następujące metody w klasie <xref:Microsoft.VisualStudio.Package.ExpansionProvider> klasy są wywoływane przez program Visual Studio w podanej kolejności podczas wstawiania fragmentu kodu:
 
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
 
-5.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
+5. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
 
-6.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>
+6. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>
 
-7.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>
+7. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>
 
-8.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
+8. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
 
      Po <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> metoda jest wywoływana, fragment kodu został wstawiony i <xref:Microsoft.VisualStudio.Package.ExpansionProvider> obiekt jest w trybie edycji specjalne, używane do modyfikowania fragment kodu, który właśnie został wstawiony.
 

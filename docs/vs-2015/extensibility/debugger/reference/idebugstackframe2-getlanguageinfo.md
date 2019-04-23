@@ -12,12 +12,12 @@ ms.assetid: 0e12fd92-f155-46a7-8272-cda279388cfb
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b0b2807e60a85ccc1915f8612196938b4f544f39
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d370670ed86ee3484243fe5dc7cfdd8ea64be084
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794047"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055904"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -47,17 +47,17 @@ int GetLanguageInfo ( 
  `pguidLanguage`  
  [out] Zwraca `GUID` języka. Aby uzyskać [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] języków, na przykład, następujące mogą zostać zwrócone:  
   
--   `guidVBScriptLang`  
+- `guidVBScriptLang`  
   
--   `guidJScriptLang`  
+- `guidJScriptLang`  
   
--   `guidCPPLang`  
+- `guidCPPLang`  
   
--   `guidVBLang`  
+- `guidVBLang`  
   
--   `guidSQLLang`  
+- `guidSQLLang`  
   
--   `guidScriptLang`  
+- `guidScriptLang`  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  

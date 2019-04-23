@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 329f5c801fabce5f47e915fe54a885a98dda8500
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9ebef342338430404f9506779c2b1e5312462178
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631539"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089591"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce i podpis Authenticode
 *Authenticode* to technologia firmy Microsoft, która używa branżowego standardu kryptografii do podpisywania kodu aplikacji przy użyciu certyfikatów cyfrowych, które zweryfikowania autentyczności wydawcy aplikacji. Za pomocą kodu Authenticode dla wdrożenia aplikacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zmniejsza ryzyko konia trojańskiego. Koń trojański jest wirus lub występuje inne szkodliwe program, który złośliwy firm zniesławiającej jako program wiarygodnego źródła ustanowione, godne zaufania. Podpisywanie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia za pomocą certyfikatu cyfrowego jest opcjonalny krok, aby sprawdzić, czy zestawów i plików nie były modyfikowane.
@@ -58,11 +58,11 @@ ms.locfileid: "56631539"
 ### <a name="update-expired-certificates"></a>Aktualizuj certyfikaty wygasłe
  We wcześniejszych wersjach programu .NET Framework aktualizowanie aplikacji wygasło którego certyfikat może spowodować tę aplikację, przestanie działać. Aby rozwiązać ten problem, należy użyć jednej z następujących metod:
 
--   Zaktualizuj programu .NET Framework w wersji 2.0 z dodatkiem SP1 lub nowszy na Windows XP, lub w wersji 3.5 lub nowszy na Windows Vista.
+- Zaktualizuj programu .NET Framework w wersji 2.0 z dodatkiem SP1 lub nowszy na Windows XP, lub w wersji 3.5 lub nowszy na Windows Vista.
 
--   Odinstaluj tę aplikację, a następnie ponownie zainstaluj nową wersję z prawidłowym certyfikatem.
+- Odinstaluj tę aplikację, a następnie ponownie zainstaluj nową wersję z prawidłowym certyfikatem.
 
--   Utwórz zestaw wiersza polecenia, który aktualizuje certyfikat. Szczegółowe informacje o tym procesie, można znaleźć w folderze [925521 artykuł pomocy technicznej firmy Microsoft](http://go.microsoft.com/fwlink/?LinkId=179454).
+- Utwórz zestaw wiersza polecenia, który aktualizuje certyfikat. Szczegółowe informacje o tym procesie, można znaleźć w folderze [925521 artykuł pomocy technicznej firmy Microsoft](http://go.microsoft.com/fwlink/?LinkId=179454).
 
 ### <a name="store-certificates"></a>Certyfikaty Store
 

@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a781fc290a9be795cf48cf08c062711376bd6acc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 53b75732c636a551e3a000008d3ddcca2aa686cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776039"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058483"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Instrukcje: Modyfikowanie standardowego polecenia menu w języku specyficznym dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,37 +37,37 @@ Można zmodyfikować zachowanie niektóre standardowe polecenia, które są auto
 > [!NOTE]
 >  Jeśli chcesz utworzyć własne polecenia menu, zobacz [jak: Dodawanie polecenia do Menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
-##  <a name="what"></a> Jakie polecenia mogą zmodyfikować?  
+## <a name="what"></a> Jakie polecenia mogą zmodyfikować?  
   
 #### <a name="to-discover-what-commands-you-can-modify"></a>Aby dowiedzieć się, co polecenia, należy zmodyfikować  
   
-1.  W `DslPackage` otwarty projekt `GeneratedCode\CommandSet.cs`. Ten plik C# można znaleźć w Eksploratorze rozwiązań jako podmiot zależny firmy `CommandSet.tt`.  
+1. W `DslPackage` otwarty projekt `GeneratedCode\CommandSet.cs`. Ten plik C# można znaleźć w Eksploratorze rozwiązań jako podmiot zależny firmy `CommandSet.tt`.  
   
-2.  Znajdź klas w tym pliku, których nazwy kończą się za pomocą "`CommandSet`", na przykład `Language1CommandSet` i `Language1ClipboardCommandSet`.  
+2. Znajdź klas w tym pliku, których nazwy kończą się za pomocą "`CommandSet`", na przykład `Language1CommandSet` i `Language1ClipboardCommandSet`.  
   
-3.  W każdej klasie zestaw poleceń, wpisz "`override`" następuje spacja. Funkcja IntelliSense wyświetli listę metod, które można przesłonić. Każde polecenie parą metod, których nazwy zaczynają się "`ProcessOnStatus`"i"`ProcessOnMenu`".  
+3. W każdej klasie zestaw poleceń, wpisz "`override`" następuje spacja. Funkcja IntelliSense wyświetli listę metod, które można przesłonić. Każde polecenie parą metod, których nazwy zaczynają się "`ProcessOnStatus`"i"`ProcessOnMenu`".  
   
-4.  Zwróć uwagę, które polecenia Ustaw klasy zawiera polecenia, które chcesz zmodyfikować.  
+4. Zwróć uwagę, które polecenia Ustaw klasy zawiera polecenia, które chcesz zmodyfikować.  
   
-5.  Zamknij plik bez zapisywania zmian.  
+5. Zamknij plik bez zapisywania zmian.  
   
     > [!NOTE]
     >  Zazwyczaj nie należy edytować pliki, które zostały wygenerowane. Wszelkie zmiany zostaną utracone pliki są generowane przy następnym uruchomieniu.  
   
-##  <a name="extend"></a> Rozszerzenie klasy zestawu odpowiednie polecenie  
+## <a name="extend"></a> Rozszerzenie klasy zestawu odpowiednie polecenie  
  Utwórz nowy plik, który zawiera deklarację częściowe klasy zestawu poleceń.  
   
 #### <a name="to-extend-the-command-set-class"></a>Aby rozszerzyć polecenia Set — klasa  
   
-1.  W Eksploratorze rozwiązań w projekcie DslPackage Otwórz GeneratedCode folder, a następnie sprawdź w obszarze CommandSet.tt i otwieranie jego pliku wygenerowanego CommandSet.cs. Należy pamiętać, że przestrzeń nazw i nazwę pierwszej klasy, która jest zdefiniowany w niej. Na przykład może zostać wyświetlony:  
+1. W Eksploratorze rozwiązań w projekcie DslPackage Otwórz GeneratedCode folder, a następnie sprawdź w obszarze CommandSet.tt i otwieranie jego pliku wygenerowanego CommandSet.cs. Należy pamiętać, że przestrzeń nazw i nazwę pierwszej klasy, która jest zdefiniowany w niej. Na przykład może zostać wyświetlony:  
   
      `namespace Company.Language1`  
   
      `{ ...  internal partial class Language1CommandSet : ...`  
   
-2.  W **DslPackage**, Utwórz folder o nazwie **kod niestandardowy**. W tym folderze utwórz nowy plik klasy o nazwie `CommandSet.cs`.  
+2. W **DslPackage**, Utwórz folder o nazwie **kod niestandardowy**. W tym folderze utwórz nowy plik klasy o nazwie `CommandSet.cs`.  
   
-3.  W nowym pliku zapisu częściowa deklaracja, która ma tę samą nazwę jak wygenerowanej częściowej klasy i przestrzeni nazw. Na przykład:  
+3. W nowym pliku zapisu częściowa deklaracja, która ma tę samą nazwę jak wygenerowanej częściowej klasy i przestrzeni nazw. Na przykład:  
   
     ```  
     using System;  
@@ -79,7 +79,7 @@ Można zmodyfikować zachowanie niektóre standardowe polecenia, które są auto
   
      **Uwaga** Jeżeli szablon pliku klasy został użyty do utworzenia nowego pliku, należy usunąć przestrzeni nazw i nazwę klasy.  
   
-##  <a name="override"></a> Przesłaniaj metody polecenia  
+## <a name="override"></a> Przesłaniaj metody polecenia  
  Większość poleceń mają dwie metody skojarzone: Metody o nazwie, takich jak `ProcessOnStatus`... określa, czy polecenie powinno być widoczne i włączone. Jest wywoływane, gdy użytkownik kliknie prawym przyciskiem myszy diagram i powinna wykonać szybkie i nie wprowadzaj żadnych zmian. `ProcessOnMenu`... jest wywoływana, gdy użytkownik kliknie polecenie i należy wykonać funkcję polecenia. Można zastąpić jedną lub obie te metody.  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Aby zmienić, gdy polecenie jest wyświetlane w menu  

@@ -10,12 +10,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb765bebba4aaa3fe0cece4b64d33d2e810bdfb7
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: ffdd925b1fdddb6bddfb3704e561fac8efc84b57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796715"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048986"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Tworzenie kodowanego testu interfejsu użytkownika opartego na danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,26 +24,26 @@ Na potrzeby testowania różnych warunków, można uruchomić testy wiele razy z
   
  **Wymagania**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="create-a-data-driven-coded-ui-test"></a>Tworzenie opartych na danych kodowanego testu interfejsu użytkownika  
  Ten przykład umożliwia utworzenie kodowanego testu interfejsu użytkownika, uruchamiane w aplikacji Windows kalkulatora. Je ze sobą dodaje dwie liczby i używa potwierdzenie, aby sprawdzić, czy suma jest poprawna. Następnie potwierdzenie i wartości parametrów dla dwóch liczb są kodowane staje się opartych na danych i przechowywane w pliku wartości rozdzielanych przecinkami (CSV).  
   
 #### <a name="step-1---create-a-coded-ui-test"></a>Krok 1 — Tworzenie kodowanego testu interfejsu użytkownika  
   
-1.  Utwórz projekt.  
+1. Utwórz projekt.  
   
      ![Utwórz projekt kodowanego testu interfejsu użytkownika](../test/media/cuit-datadriven.png "CUIT_dataDriven_")  
   
-2.  Możliwość rejestrowania akcji.  
+2. Możliwość rejestrowania akcji.  
   
      ![Wybierz do rejestrowania akcji](../test/media/cuit-datadriven-generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")  
   
-3.  Otwórz aplikację Kalkulator i Rozpocznij nagrywanie testu.  
+3. Otwórz aplikację Kalkulator i Rozpocznij nagrywanie testu.  
   
      ![Rejestruj akcje](../test/media/cuit-datadriven-cuitbuilder.png "CUIT_dataDriven_CUITBuilder")  
   
-4.  Dodaj 1 i 2, Wstrzymaj Rejestrator i generować metodę testową. Firma Microsoft będzie później zastąpić wartości tych danych wejściowych użytkownika przy użyciu wartości z pliku danych.  
+4. Dodaj 1 i 2, Wstrzymaj Rejestrator i generować metodę testową. Firma Microsoft będzie później zastąpić wartości tych danych wejściowych użytkownika przy użyciu wartości z pliku danych.  
   
      ![Generuj metodę testową](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
   
@@ -59,21 +59,21 @@ Na potrzeby testowania różnych warunków, można uruchomić testy wiele razy z
     }  
     ```  
   
-5.  Użyj `AddNumbers()` metodę, aby sprawdzić, że test jest uruchamiany. Umieść kursor w metodzie testowej, pokazanych powyżej, otwórz menu kontekstowe i wybierz **Uruchom testy**. (Skrót klawiaturowy: Ctrl + R, T).  
+5. Użyj `AddNumbers()` metodę, aby sprawdzić, że test jest uruchamiany. Umieść kursor w metodzie testowej, pokazanych powyżej, otwórz menu kontekstowe i wybierz **Uruchom testy**. (Skrót klawiaturowy: Ctrl + R, T).  
   
      Wynik testu, który pokazuje, jeśli test zakończony powodzeniem lub niepowodzeniem są wyświetlane w oknie Eksploratora testów. Aby otworzyć okno Eksploratora testów z **testu** menu, wybierz **Windows** , a następnie wybierz **Eksplorator testów**.  
   
-6.  Ponieważ źródła danych można również o wprowadzenie wartości parametrów potwierdzenie — które są używane przez test, aby zweryfikować oczekiwane wartości — Dodajmy potwierdzenie można zweryfikować, czy sumę dwóch liczb jest poprawna. Umieść kursor w metodzie testowej, pokazanych powyżej, otwórz menu kontekstowe i wybierz **Generuj kod dla kodowanego testu interfejsu użytkownika**, a następnie **Użyj Konstruktor kodowanego testu IU**.  
+6. Ponieważ źródła danych można również o wprowadzenie wartości parametrów potwierdzenie — które są używane przez test, aby zweryfikować oczekiwane wartości — Dodajmy potwierdzenie można zweryfikować, czy sumę dwóch liczb jest poprawna. Umieść kursor w metodzie testowej, pokazanych powyżej, otwórz menu kontekstowe i wybierz **Generuj kod dla kodowanego testu interfejsu użytkownika**, a następnie **Użyj Konstruktor kodowanego testu IU**.  
   
      Mapowanie kontrolki tekstu w kalkulatorze, który wyświetla sumę.  
   
      ![Mapowanie interfejsu użytkownika kontrolki tekstu](../test/media/cuit-datadriven-addassertion.png "CUIT_dataDriven_AddAssertion")  
   
-7.  Dodaj potwierdzenie, która weryfikuje, czy wartość sumy jest poprawna. Wybierz **Wyświetlany_tekst** właściwość, która ma wartość **3** , a następnie wybierz **Dodaj potwierdzenie**. Użyj **AreEqual** komparator i sprawdź, czy jest porównywana wartość **3**.  
+7. Dodaj potwierdzenie, która weryfikuje, czy wartość sumy jest poprawna. Wybierz **Wyświetlany_tekst** właściwość, która ma wartość **3** , a następnie wybierz **Dodaj potwierdzenie**. Użyj **AreEqual** komparator i sprawdź, czy jest porównywana wartość **3**.  
   
      ![Konfigurowanie potwierdzenia](../test/media/cuit-datadriven-builderaddassertion2.png "CUIT_dataDriven_BuilderAddAssertion2")  
   
-8.  Po skonfigurowaniu potwierdzenie, ponownie generuje kod z konstruktora. Spowoduje to utworzenie nowej metody dla weryfikacji.  
+8. Po skonfigurowaniu potwierdzenie, ponownie generuje kod z konstruktora. Spowoduje to utworzenie nowej metody dla weryfikacji.  
   
      ![Generowanie metody asercji](../test/media/cuit-datadriven-assertiongencode.png "CUIT_dataDriven_AssertionGenCode")  
   
@@ -96,11 +96,11 @@ Na potrzeby testowania różnych warunków, można uruchomić testy wiele razy z
   
 #### <a name="step-2---create-a-data-set"></a>Krok 2 — Tworzenie zestawu danych  
   
-1.  Dodaj plik tekstowy do projektu dataDrivenSample o nazwie `data.csv`.  
+1. Dodaj plik tekstowy do projektu dataDrivenSample o nazwie `data.csv`.  
   
      ![Dodaj z pliku wartości rozdzielonych przecinkami do projektu](../test/media/cuit-datadriven-addcsvfile.png "CUIT_dataDriven_AddCSVFile")  
   
-2.  Wypełnij pliku CSV przy użyciu następujących danych:  
+2. Wypełnij pliku CSV przy użyciu następujących danych:  
   
     |Num1|Num2|Suma|  
     |----------|----------|---------|  
@@ -112,9 +112,9 @@ Na potrzeby testowania różnych warunków, można uruchomić testy wiele razy z
   
      ![Wypełnij. Plik CSV z danymi](../test/media/cuit-datadriven-adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")  
   
-3.  Należy zapisać plik CSV przy użyciu kodowania poprawne. Na **pliku** menu, wybierz **zaawansowane opcje zapisywania** i wybierz polecenie **Unicode (UTF-8 bez podpisu)-strona kodowa 65001** jako kodowania.  
+3. Należy zapisać plik CSV przy użyciu kodowania poprawne. Na **pliku** menu, wybierz **zaawansowane opcje zapisywania** i wybierz polecenie **Unicode (UTF-8 bez podpisu)-strona kodowa 65001** jako kodowania.  
   
-4.  Plik CSV, muszą zostać skopiowane do katalogu wyjściowego lub nie można uruchomić testu. Użyj okna właściwości, aby go skopiować.  
+4. Plik CSV, muszą zostać skopiowane do katalogu wyjściowego lub nie można uruchomić testu. Użyj okna właściwości, aby go skopiować.  
   
      ![Wdrażanie. Plik CSV](../test/media/cuit-datadriven-deploycsvfile.png "CUIT_dataDriven_DeployCSVFile")  
   
@@ -122,7 +122,7 @@ Na potrzeby testowania różnych warunków, można uruchomić testy wiele razy z
   
 #### <a name="step-3--add-data-source-binding"></a>Krok 3 — Dodawanie powiązania źródła danych  
   
-1.  Aby powiązać ze źródłem danych, należy dodać `DataSource` atrybut wewnątrz istniejącego `[TestMethod]` atrybut, który jest od razu powyżej metody testowej.  
+1. Aby powiązać ze źródłem danych, należy dodać `DataSource` atrybut wewnątrz istniejącego `[TestMethod]` atrybut, który jest od razu powyżej metody testowej.  
   
     ```  
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]  
@@ -142,7 +142,7 @@ Na potrzeby testowania różnych warunków, można uruchomić testy wiele razy z
     > [!TIP]
     >  Zobacz [przykłady atrybut źródła danych](#CreateDataDrivenCUIT_QA_DataSourceAttributes) w funkcji pytań i odpowiedzi dotyczącej przykłady użycia innych typów źródeł danych, takich jak XML, SQL Express i programu Excel.  
   
-2.  Uruchom test.  
+2. Uruchom test.  
   
      Należy zauważyć, że test jest uruchamiany za pomocą trzech iteracji. Jest to spowodowane źródło danych, który był powiązany zawiera trzy wiersze danych. Jednak zauważysz również, że test jest nadal przy użyciu wartości parametru o stałej i polega na dodaniu 1 + 2 z sumą 3 każdorazowo.  
   
@@ -150,7 +150,7 @@ Na potrzeby testowania różnych warunków, można uruchomić testy wiele razy z
   
 #### <a name="step-4--use-the-data-in-the-coded-ui-test"></a>Krok 4 — użyć danych w kodowanym teście interfejsu użytkownika  
   
-1.  Dodaj `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` na początku pliku CodedUITest.cs:  
+1. Dodaj `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` na początku pliku CodedUITest.cs:  
   
     ```  
     using System;  
@@ -166,7 +166,7 @@ Na potrzeby testowania różnych warunków, można uruchomić testy wiele razy z
     using Microsoft.VisualStudio.TestTools.UITesting.WinControls;  
     ```  
   
-2.  Dodaj `TestContext.DataRow[]` w `CodedUITestMethod1()` metody, które będą miały zastosowanie wartości ze źródła danych. Wartości źródła danych Zastąp stałe przypisany do kontrolki do UIMap za pomocą kontrolek na `SearchProperties`:  
+2. Dodaj `TestContext.DataRow[]` w `CodedUITestMethod1()` metody, które będą miały zastosowanie wartości ze źródła danych. Wartości źródła danych Zastąp stałe przypisany do kontrolki do UIMap za pomocą kontrolek na `SearchProperties`:  
   
     ```  
     public void CodedUITestMethod1()  
@@ -183,19 +183,19 @@ Na potrzeby testowania różnych warunków, można uruchomić testy wiele razy z
   
      Aby ustalić właściwości wyszukiwania, które o kodowaniu dane, użyj edytora kodowanego testu interfejsu użytkownika.  
   
-    -   Otwórz plik UIMap.uitest.  
+    - Otwórz plik UIMap.uitest.  
   
          ![Otwórz Edytor testu kodowanego interfejsu użytkownika](../test/media/cuit-datadriven-opentesteditor.png "CUIT_dataDriven_OpenTestEditor")  
   
-    -   Wybierz akcję interfejsu użytkownika i sprawdź odpowiednie mapowanie kontrolek interfejsu użytkownika. Zwróć uwagę, jak mapowanie odnosi się do kodu, na przykład `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.  
+    - Wybierz akcję interfejsu użytkownika i sprawdź odpowiednie mapowanie kontrolek interfejsu użytkownika. Zwróć uwagę, jak mapowanie odnosi się do kodu, na przykład `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.  
   
          ![Użyj edytora kodowanego testu interfejsu użytkownika, aby uzyskać pomoc przy użyciu kodu](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")  
   
-    -   W oknie dialogowym właściwości Otwórz **wyszukującą**. Właściwości wyszukiwania **nazwa** wartość to, co jest podlegający manipulowaniu w kodzie przy użyciu źródła danych. Na przykład `SearchProperties` trwa przypisywanie wartości w pierwszej kolumnie każdy wiersz danych: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Dla trzech iteracji tego testu spowoduje zmianę **nazwa** wartości dla właściwości wyszukiwania, aby 3, a następnie 5 i na koniec 6.  
+    - W oknie dialogowym właściwości Otwórz **wyszukującą**. Właściwości wyszukiwania **nazwa** wartość to, co jest podlegający manipulowaniu w kodzie przy użyciu źródła danych. Na przykład `SearchProperties` trwa przypisywanie wartości w pierwszej kolumnie każdy wiersz danych: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Dla trzech iteracji tego testu spowoduje zmianę **nazwa** wartości dla właściwości wyszukiwania, aby 3, a następnie 5 i na koniec 6.  
   
          ![Użyj właściwości wyszukiwania, aby uzyskać pomoc w kodowaniu](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")  
   
-3.  Zapisywanie rozwiązania.  
+3. Zapisywanie rozwiązania.  
   
 #### <a name="step-5--run-the-data-driven-test"></a>Krok 5 — Uruchamianie testu opartego na danych  
   
@@ -209,28 +209,28 @@ Na potrzeby testowania różnych warunków, można uruchomić testy wiele razy z
   
 ## <a name="q--a"></a>Pytania i odpowiedzi  
   
-###  <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> Co to są atrybuty źródła danych dla innych typów źródła danych, takich jak program SQL Express lub XML?  
+### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> Co to są atrybuty źródła danych dla innych typów źródła danych, takich jak program SQL Express lub XML?  
  W poniższej tabeli można użyć parametry źródła danych przykładowych, kopiując je do kodu i dokonując wymaganych dostosowaniach.  
   
  **Typy źródeł danych i atrybuty**  
   
--   CSV  
+- CSV  
   
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]`  
   
--   Excel  
+- Excel  
   
      `DataSource("System.Data.Odbc", "Dsn=ExcelFiles;Driver={Microsoft Excel Driver (*.xls)};dbq=|DataDirectory|\\Data.xls;defaultdir=.;driverid=790;maxbuffersize=2048;pagetimeout=5;readonly=true", "Sheet1$", DataAccessMethod.Sequential), DeploymentItem("Sheet1.xls"), TestMethod]`  
   
--   Przypadek testowy w programie Team Foundation Server  
+- Przypadek testowy w programie Team Foundation Server  
   
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.TestCase", "http://vlm13261329:8080/tfs/DefaultCollection;Agile", "30", DataAccessMethod.Sequential), TestMethod]`  
   
--   XML  
+- XML  
   
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\data.xml", "Iterations", DataAccessMethod.Sequential), DeploymentItem("data.xml"), TestMethod]`  
   
--   SQL Express  
+- SQL Express  
   
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`  
   

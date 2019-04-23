@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 289d21b4828e22877ac139f2f29b6500907cf4e0
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: cc81e0f0912e2a32a6fc582420f4fef9823b9891
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567318"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090484"
 ---
 # <a name="develop-tests-from-a-model"></a>Opracowywanie testów na podstawie modelu
 Wymagania i modele architektury można użyć, aby ułatwić organizowanie testów systemu i jego składników. Praktyka ta pomaga zagwarantować, że testowania wymagań które są ważne dla użytkowników i innych zainteresowanych stron i pomaga szybko aktualizować testów, gdy zmienią się wymagania. Jeśli używasz [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], można także utrzymać łącza między modele i testy.
@@ -40,17 +40,17 @@ Wymagania i modele architektury można użyć, aby ułatwić organizowanie test�
 
  Te wytyczne mogą być pomocne:
 
--   Każdy przypadek użycia powinna mieć kilka testów, dla ścieżki głównej i wyjątkowe wyniki.
+- Każdy przypadek użycia powinna mieć kilka testów, dla ścieżki głównej i wyjątkowe wyniki.
 
--   Opisywane przypadek użycia w modelu wymagań jest niezwykle ważne do definiowania jego postcondition, oznacza to, że cel zostanie osiągnięty, niż do szczegółowego opisywania, procedury użytkownik wykona w celu osiągnięcia celu. Na przykład może być postcondition zamówienia posiłek, restauracja jest przygotowywana posiłek dla klienta, a klient zapłacił. Postcondition jest kryterium, które testy należy sprawdzić.
+- Opisywane przypadek użycia w modelu wymagań jest niezwykle ważne do definiowania jego postcondition, oznacza to, że cel zostanie osiągnięty, niż do szczegółowego opisywania, procedury użytkownik wykona w celu osiągnięcia celu. Na przykład może być postcondition zamówienia posiłek, restauracja jest przygotowywana posiłek dla klienta, a klient zapłacił. Postcondition jest kryterium, które testy należy sprawdzić.
 
--   Podstawowy oddzielnych testów na oddzielnych klauzul postcondition. Na przykład utworzyć osobne testów do powiadamiania restauracji kolejności i do celów płatności odbiorcy. Ten rozdział ma następujące zalety:
+- Podstawowy oddzielnych testów na oddzielnych klauzul postcondition. Na przykład utworzyć osobne testów do powiadamiania restauracji kolejności i do celów płatności odbiorcy. Ten rozdział ma następujące zalety:
 
-    -   Zmiany w różnych aspektów wymagania często występują, niezależnie od siebie. Dzieląc testy na różnych aspektach w ten sposób, możesz ułatwić aktualizowanie testów, gdy zmienią się wymagania.
+    - Zmiany w różnych aspektów wymagania często występują, niezależnie od siebie. Dzieląc testy na różnych aspektach w ten sposób, możesz ułatwić aktualizowanie testów, gdy zmienią się wymagania.
 
-    -   Jeśli plan rozwoju implementuje jednym aspekcie przypadek użycia przed inny, możesz włączyć testy oddzielnie, w miarę postępów rozwoju.
+    - Jeśli plan rozwoju implementuje jednym aspekcie przypadek użycia przed inny, możesz włączyć testy oddzielnie, w miarę postępów rozwoju.
 
--   Podczas projektowania testy, należy oddzielić wybór danych testowych, od kodu lub skryptu, który określa, czy osiągnięte zostały postcondition. Na przykład może być testu z prostą funkcją arytmetyczne: Dane wejściowe 4; Sprawdź, czy dane wyjściowe to 2. Zamiast tego należy projektować skryptu jako: Wybierz dane wejściowe mnożenia danych wyjściowych przez siebie i sprawdź, czy wynik jest oryginalne dane wejściowe. Ten styl umożliwia różne dane wejściowe testu bez wprowadzania zmian w głównej części testu.
+- Podczas projektowania testy, należy oddzielić wybór danych testowych, od kodu lub skryptu, który określa, czy osiągnięte zostały postcondition. Na przykład może być testu z prostą funkcją arytmetyczne: Dane wejściowe 4; Sprawdź, czy dane wyjściowe to 2. Zamiast tego należy projektować skryptu jako: Wybierz dane wejściowe mnożenia danych wyjściowych przez siebie i sprawdź, czy wynik jest oryginalne dane wejściowe. Ten styl umożliwia różne dane wejściowe testu bez wprowadzania zmian w głównej części testu.
 
 #### <a name="linking-tests-to-use-cases"></a>Łączenie testy z przypadkami użycia
  Jeśli używasz [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] do projektowania i uruchomić testy, możesz organizować testy w ramach wymaganie, przypadek użycia lub elementów roboczych historii użytkownika. Można połączyć te elementy robocze z przypadkami użycia w modelu. Dzięki temu można szybko śledzenia zmiany do testów i przypadek użycia pomaga śledzić postęp każdego z nich.
@@ -133,15 +133,15 @@ Assert (countAfter == countBefore = 1);
 
  Testy można połączyć wszelkiego rodzaju elementu. Oto kilka przykładów:
 
--   Łączenie przypadków użycia, aby testy, które jego wykonywania.
+- Łączenie przypadków użycia, aby testy, które jego wykonywania.
 
--   Zapis klauzule postcondition przypadków użycia lub celem na komentarze, które są połączone z przypadkiem użycia, a następnie połącz testy każdy komentarz.
+- Zapis klauzule postcondition przypadków użycia lub celem na komentarze, które są połączone z przypadkiem użycia, a następnie połącz testy każdy komentarz.
 
--   Napisz zasad niezmiennej komentarze na diagramach klas lub diagramów aktywności, a następnie połączyć testy.
+- Napisz zasad niezmiennej komentarze na diagramach klas lub diagramów aktywności, a następnie połączyć testy.
 
--   Połącz testy w diagramie aktywności lub poszczególne działania.
+- Połącz testy w diagramie aktywności lub poszczególne działania.
 
--   Zestaw testów połączyć składnik lub podsystem, który sprawdza.
+- Zestaw testów połączyć składnik lub podsystem, który sprawdza.
 
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Aby połączyć testy elementu modelu lub relacji
 

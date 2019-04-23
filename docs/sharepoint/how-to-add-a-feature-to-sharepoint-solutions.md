@@ -12,19 +12,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bfc5c4a7878144263f2c30246f157d74158c9c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 143ab857af7c48f711e47910df07b6c58d07bc31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619267"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058801"
 ---
 # <a name="how-to-add-a-feature-to-sharepoint-solutions"></a>Instrukcje: Dodawanie funkcji do rozwiązań SharePoint
   Podczas tworzenia rozwiązania programu SharePoint, jedna z funkcji i jeden pakiet są dodawane do rozwiązania. Możesz dodać więcej elementów funkcji do organizowania różnych typów plików programu SharePoint.
 
 ### <a name="to-add-a-feature-through-solution-explorer"></a>Aby dodać funkcję za pomocą Eksploratora rozwiązań
 
-1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla **funkcji**, a następnie wybierz **Dodaj funkcję**.
+1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **funkcji**, a następnie wybierz **Dodaj funkcję**.
 
 ## <a name="see-also"></a>Zobacz także
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48b77e07524b6bcabd00de1d8082261e81807a72
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d3f453770dbb389a688db0a9edcc8e97e179858
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644461"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051323"
 ---
 # <a name="create-sharepoint-features"></a>Tworzenie funkcji SharePoint
   Funkcja programu SharePoint można użyć do grupowania powiązanych elementów projektu programu SharePoint dla łatwiejsze wdrażanie. Możesz tworzyć funkcje, ustaw zakresy i oznaczyć inne funkcje za pomocą programu SharePoint Designer funkcji jako zależności. Projektant generuje również manifest, który jest plikiem XML, który opisuje każdą z funkcji.
@@ -26,9 +26,9 @@ ms.locfileid: "56644461"
 ## <a name="add-features-to-the-sharepoint-solution"></a>Dodawanie funkcji do rozwiązań SharePoint
  Funkcję można dodać do rozwiązania programu SharePoint przy użyciu Eksploratora rozwiązań lub Eksploratora pakietów. Można dodać funkcji, można użyć jednej z następujących metod.
 
--   W **Eksploratora rozwiązań**, otwórz menu skrótów dla **funkcji**, a następnie wybierz **Dodaj funkcję**.
+- W **Eksploratora rozwiązań**, otwórz menu skrótów dla **funkcji**, a następnie wybierz **Dodaj funkcję**.
 
--   W **Eksploratora pakietów**, otwórz menu skrótów dla pakietu, a następnie wybierz **Dodaj funkcję**.
+- W **Eksploratora pakietów**, otwórz menu skrótów dla pakietu, a następnie wybierz **Dodaj funkcję**.
 
 ## <a name="using-the-feature-designer"></a>Za pomocą projektanta funkcji
  Rozwiązania programu SharePoint może zawierać jedną lub więcej funkcji programu SharePoint, które są pogrupowane w węźle funkcji w Eksploratorze rozwiązań. Każda funkcja ma swój własny **projektanta funkcji** służące do dostosowywania właściwości funkcji. Aby uzyskać więcej informacji, zobacz [jak: Dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md). Aby rozróżnić funkcje od siebie nawzajem, można skonfigurować właściwości funkcji, takich jak tytuł, opis, wersji i zakresu.

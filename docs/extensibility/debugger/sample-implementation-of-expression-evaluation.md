@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2afb20f2a337008bc3d3b7fe3dd6aaa5b3f163cf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f7b933277a2c509356037e585b7d2256a587c233
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684978"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090544"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Przykład implementacji oceny wyrażenia
 > [!IMPORTANT]
@@ -27,11 +27,11 @@ ms.locfileid: "56684978"
 
  `IDebugExpressionEvaluator::Parse` Wykonuje następujące zadania:
 
-1.  [Tylko w języku C++] Analizuje wyrażenia, aby wyszukać błędy.
+1. [C++ tylko] Analizuje wyrażenia, aby wyszukać błędy.
 
-2.  Tworzy klasę (o nazwie `CParsedExpression` w tym przykładzie), które jest uruchamiane `IDebugParsedExpression` interfejs i są przechowywane w klasie wyrażenie które ma zostać przeanalizowany.
+2. Tworzy klasę (o nazwie `CParsedExpression` w tym przykładzie), które jest uruchamiane `IDebugParsedExpression` interfejs i są przechowywane w klasie wyrażenie które ma zostać przeanalizowany.
 
-3.  Zwraca `IDebugParsedExpression` interfejs z `CParsedExpression` obiektu.
+3. Zwraca `IDebugParsedExpression` interfejs z `CParsedExpression` obiektu.
 
 > [!NOTE]
 >  W przykładach i w przykładzie MyCEE Ewaluator wyrażeń nie należy oddzielić analizy z oceny.

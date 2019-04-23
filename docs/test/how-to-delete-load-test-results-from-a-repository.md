@@ -13,12 +13,12 @@ ms.assetid: c2afe36b-d061-4f0e-9580-c18569ec08f9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e351ccaa6dddcf4773169a1e0a3f8e074002f2d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f37edcadb1d8800cb784771f9cc4f93d885bea65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936125"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041732"
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>Instrukcje: Usuwanie wyników testu obciążenia z repozytorium
 
@@ -30,21 +30,21 @@ Wyniki testu obciążeniowego można zarządzać z edytora testu obciążenia, u
 
 ## <a name="to-delete-results-from-a-repository"></a>Aby usunąć wyniki z repozytorium
 
-1.  Od wydajności sieci web i obciążenia projektu testowego, otwórz test obciążenia.
+1. Od wydajności sieci web i obciążenia projektu testowego, otwórz test obciążenia.
 
-2.  Na osadzonym pasku narzędzi wybierz **Otwórz i Zarządzaj wynikami**.
+2. Na osadzonym pasku narzędzi wybierz **Otwórz i Zarządzaj wynikami**.
 
      **Otwórz i Zarządzaj wynikami testu obciążenia** zostanie wyświetlone okno dialogowe.
 
-3.  W **wprowadź nazwę kontrolera Aby odnaleźć wyniki testu obciążeniowego**, wybierz kontroler. Wybierz  **\<lokalnie - bez kontrolera >** aby przejść do wyników przechowywanych lokalnie.
+3. W **wprowadź nazwę kontrolera Aby odnaleźć wyniki testu obciążeniowego**, wybierz kontroler. Wybierz  **\<lokalnie - bez kontrolera >** aby przejść do wyników przechowywanych lokalnie.
 
-4.  W **Pokaż wyniki następującego testu obciążeniowego**, zaznacz test obciążeniowy, którego wyniki chcesz wyświetlić. Wybierz  **\<Pokaż wyniki wszystkich testów >** aby zobaczyć wszystkie wyniki wszystkich testów.
+4. W **Pokaż wyniki następującego testu obciążeniowego**, zaznacz test obciążeniowy, którego wyniki chcesz wyświetlić. Wybierz  **\<Pokaż wyniki wszystkich testów >** aby zobaczyć wszystkie wyniki wszystkich testów.
 
      Jeśli wyniki testów obciążenia są dostępne, są wyświetlane w **wyniki testu obciążeniowego** listy. Kolumny są **czasu**, **czas trwania**, **użytkownika**, **wynik**, **testu**, i  **Opis elementu**. **Testowanie** zawiera nazwę testu, i **opis** zawiera opcjonalny opis dodawany przed uruchomieniem testu. **Opis** krótkie opisy, które zostały wprowadzone w kolumnie jest wyświetlana **komentarze dotyczące analizy** dla tego wyniku testu.
 
-5.  W **wyniki testu obciążeniowego** Wybierz wynik. Możesz użyć **Shift** klucza **Ctrl** klucza i / lub wybrać więcej niż jeden wynik.
+5. W **wyniki testu obciążeniowego** Wybierz wynik. Możesz użyć **Shift** klucza **Ctrl** klucza i / lub wybrać więcej niż jeden wynik.
 
-6.  Wybierz **Usuń**.
+6. Wybierz **Usuń**.
 
      Wyniki są usuwane z repozytorium.
 

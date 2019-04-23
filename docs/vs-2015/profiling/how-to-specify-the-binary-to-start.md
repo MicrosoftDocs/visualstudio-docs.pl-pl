@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45b5e3ba98c526ffea1ab63f58ef9193a3eaae75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 919e84393cf4aef929a504aadbefe905afe24bfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759896"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098431"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>Instrukcje: Określanie plików binarnych do uruchomienia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ Do profilu plików binarnych takich jak biblioteki dll, należy wprowadzić info
   
  **Wymagania**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ### <a name="to-specify-the-executable-to-start"></a>Określ plik wykonywalny do uruchomienia  
   
-1.  W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy docelowy plik binarny, a następnie kliknij **właściwości**.  
+1. W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy docelowy plik binarny, a następnie kliknij **właściwości**.  
   
-2.  W **stron właściwości** okno dialogowe, kliknij przycisk **Uruchom** właściwości.  
+2. W **stron właściwości** okno dialogowe, kliknij przycisk **Uruchom** właściwości.  
   
-3.  Wybierz **zastąpienie właściwości projektu** pole wyboru.  
+3. Wybierz **zastąpienie właściwości projektu** pole wyboru.  
   
-4.  W **pliku wykonywalnego do uruchomienia** tekst pola, określ lokalizację pliku.  
+4. W **pliku wykonywalnego do uruchomienia** tekst pola, określ lokalizację pliku.  
   
-5.  W **argumenty** tekstu należy określić argumenty, które są wymagane do uruchamiania aplikacji.  
+5. W **argumenty** tekstu należy określić argumenty, które są wymagane do uruchamiania aplikacji.  
   
-6.  W **katalog roboczy** tekstu określ lokalizację katalogu.  
+6. W **katalog roboczy** tekstu określ lokalizację katalogu.  
   
-7.  Kliknij przycisk **OK**.  
+7. Kliknij przycisk **OK**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)

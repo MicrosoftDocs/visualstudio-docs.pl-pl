@@ -11,31 +11,31 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b890a5d3d5c48ad3841075a8ae818d2d37d44f98
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8954aa6a42e743617080bb6918508273c1dd9528
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946629"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089110"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>Instrukcje: Ustawienie atrybutów CLR w elemencie
 Atrybuty niestandardowe są specjalne atrybuty, które mogą być dodawane do elementy domeny, kształty, łączników i diagramy. Możesz dodać dowolny atrybut, który dziedziczy z `System.Attribute` klasy.
 
 ### <a name="to-add-a-custom-attribute"></a>Aby dodać atrybut niestandardowy
 
-1.  W **Eksplorator DSL**, wybierz element, do którego chcesz dodać atrybut niestandardowy.
+1. W **Eksplorator DSL**, wybierz element, do którego chcesz dodać atrybut niestandardowy.
 
-2.  W **właściwości** okna, obok **atrybuty niestandardowe** właściwości, kliknij przycisk Przeglądaj (**...** ) ikona.
+2. W **właściwości** okna, obok **atrybuty niestandardowe** właściwości, kliknij przycisk Przeglądaj (**...** ) ikona.
 
      **Edycja atrybutów** zostanie otwarte okno dialogowe.
 
-3.  W **nazwa** kolumny, kliknij przycisk  **\<Dodaj atrybut >** i wpisz nazwę swojej atrybutu. Naciśnij klawisz ENTER.
+3. W **nazwa** kolumny, kliknij przycisk  **\<Dodaj atrybut >** i wpisz nazwę swojej atrybutu. Naciśnij klawisz ENTER.
 
-4.  Wiersz pod nazwą atrybutu zawiera nawiasy. W tym wierszu typu parametru atrybutu (na przykład `string`), a następnie naciśnij klawisz ENTER.
+4. Wiersz pod nazwą atrybutu zawiera nawiasy. W tym wierszu typu parametru atrybutu (na przykład `string`), a następnie naciśnij klawisz ENTER.
 
-5.  W **właściwości Name** kolumny, wpisz odpowiednią nazwę, na przykład `MyString`.
+5. W **właściwości Name** kolumny, wpisz odpowiednią nazwę, na przykład `MyString`.
 
-6.  Kliknij przycisk **OK**.
+6. Kliknij przycisk **OK**.
 
      **Atrybuty niestandardowe** właściwości wyświetla teraz atrybutu w następującym formacie:
 

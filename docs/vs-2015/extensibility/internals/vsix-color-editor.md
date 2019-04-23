@@ -6,12 +6,12 @@ ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1a4f38224c31862f44e7d1d09578325ccc710bd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fe8e54876f5b2ab3eda5c1bd8d35f0b0d0c788b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805545"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057748"
 ---
 # <a name="vsix-color-editor"></a>Edytor kolorów VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ Narzędzie edytora koloru rozszerzenia programu Visual Studio można tworzyć i 
   
  Token kolor składa się z czterech elementów:  
   
--   **Nazwa kategorii:** Logiczne grupowanie zestaw kolorów. Użyj istniejącej nazwy kategorii, jeśli istnieją już kolorów, które są specyficzne dla żądanego elementu interfejsu użytkownika lub grupy elementów interfejsu użytkownika.  
+- **Nazwa kategorii:** Logiczne grupowanie zestaw kolorów. Użyj istniejącej nazwy kategorii, jeśli istnieją już kolorów, które są specyficzne dla żądanego elementu interfejsu użytkownika lub grupy elementów interfejsu użytkownika.  
   
--   **Nazwa tokenu:** Określa nazwę opisową dla koloru, tokenów i tokenów. Zestawy obejmują tła i pierwszego planu (tekst) token nazwy, a także ich stanów, a te powinny mieć nazwę, tak, aby łatwo identyfikować ich pary i stanów, które odnoszą się do.  
+- **Nazwa tokenu:** Określa nazwę opisową dla koloru, tokenów i tokenów. Zestawy obejmują tła i pierwszego planu (tekst) token nazwy, a także ich stanów, a te powinny mieć nazwę, tak, aby łatwo identyfikować ich pary i stanów, które odnoszą się do.  
   
--   **Wartości kolorów (lub odcieni):** Wymagane dla każdego kolor motywu. Zawsze twórz tekstu i tła kolorów w parach. Kolory są skojarzone dla tła/pierwszego planu, dzięki czemu kolor tekstu jest zawsze czytelny względem koloru tła, na którym jest rysowana. Te kolory są powiązane i będą używane razem w interfejsie użytkownika. Jeśli w tle nie jest przeznaczony do użytku z tekstem, nie definiują kolor pierwszego planu.  
+- **Wartości kolorów (lub odcieni):** Wymagane dla każdego kolor motywu. Zawsze twórz tekstu i tła kolorów w parach. Kolory są skojarzone dla tła/pierwszego planu, dzięki czemu kolor tekstu jest zawsze czytelny względem koloru tła, na którym jest rysowana. Te kolory są powiązane i będą używane razem w interfejsie użytkownika. Jeśli w tle nie jest przeznaczony do użytku z tekstem, nie definiują kolor pierwszego planu.  
   
--   **Nazwa koloru systemu:** Do użytku w wyświetlaniu o wysokim kontraście.  
+- **Nazwa koloru systemu:** Do użytku w wyświetlaniu o wysokim kontraście.  
   
 ## <a name="how-to-use-the-tool"></a>Jak korzystać z narzędzia  
  Jak to możliwe, i ile to możliwe, istniejących kolorów programu Visual Studio należy ponownie użyć zamiast deklarowania nowych. Jednak w przypadkach, gdzie są zdefiniowane nie odpowiednie kolory, kolory niestandardowe powinny być tworzone zapewnienie rozszerzenia motywów zgodne.  
@@ -53,7 +53,7 @@ Narzędzie edytora koloru rozszerzenia programu Visual Studio można tworzyć i 
   
 5. Przetestuj zmiany w programie Visual Studio.  
   
-   **Krok 1: Określ nazwy kategorii i tokenu dla nowych tokenów kolorów.**  
+   **Krok 1. Określ nazwy kategorii i tokenu dla nowych tokenów kolorów.**  
   
    Preferowany nazewnictwa schemat jest VSColor **[Category] [typ interfejsu użytkownika] [Stan]**. Nie należy używać słowa "color" w nazwach VSColor, ponieważ jest nadmiarowy.  
   
@@ -95,11 +95,11 @@ Narzędzie edytora koloru rozszerzenia programu Visual Studio można tworzyć i 
   
 - ListItemDisabledBorder  
   
-  **Krok 2: Wybierz odcieni, używających dla każdego motywu i kolorów systemu elementu interfejsu użytkownika dla o wysokim kontraście.**  
+  **Krok 2. Wybierz odcieni, używających dla każdego motywu i kolorów systemu elementu interfejsu użytkownika dla o wysokim kontraście.**  
   
   Podczas wybierania kolorów niestandardowych dla interfejsu użytkownika, wybierz podobne istniejącego elementu interfejsu użytkownika, a następnie użyj jej kolorów jako podstawy. Kolory dla elementów interfejsu użytkownika — wewnętrzne zostały poddane przeglądach i testowaniu, dzięki czemu będą wyglądały odpowiednie i działają prawidłowo w wszystkie motywy.  
   
-  **Krok 3: Użyj edytora koloru, aby utworzyć nowe tokeny kolorów.**  
+  **Krok 3. Użyj edytora koloru, aby utworzyć nowe tokeny kolorów.**  
   
   Uruchom Edytor kolorów i Otwórz lub Utwórz nowy plik XML niestandardowy motyw kolorów. Wybierz **Edytuj > nowy kolor** z menu. Spowoduje to otwarcie okna dialogowego do określania kategorii i jedną lub więcej nazw dla wpisów kolorów w ramach tej kategorii:  
   
@@ -129,7 +129,7 @@ Narzędzie edytora koloru rozszerzenia programu Visual Studio można tworzyć i 
   
   Po zakończeniu tworzenia, ustawienia i edytowanie tokenów kolorów, należy je zapisać w żądanej .xml lub w formacie .pkgdef. Kolor tokenów ani na tle ani zestawu pierwszego planu będzie zapisana jako pusty kolorów w formacie XML, ale odrzucone w formacie .pkgdef. Okno dialogowe wyświetli ostrzeżenie o możliwej utracie kolor przy próbie Zapisz kolory pusty plik .pkgdef.  
   
-  **Krok 4: Użyj kolorów w rozszerzeniu Visual Studio.**  
+  **Krok 4. Użyj kolorów w rozszerzeniu Visual Studio.**  
   
   Po zdefiniowaniu nowy kolor tokeny, obejmują .pkgdef w pliku projektu za pomocą "Build Action" ustawiony na "Treści" i "Uwzględnić w VSIX" wartość "True".  
   
@@ -179,7 +179,7 @@ namespace MyCustomColors
 </UserControl>  
 ```  
   
- **Krok 5: Przetestuj zmiany w programie Visual Studio.**  
+ **Krok 5. Przetestuj zmiany w programie Visual Studio.**  
   
  Edytor kolorów tymczasowo zastosować kolor tokenów do wystąpienia programu Visual Studio, aby wyświetlić zmiany na żywo do kolorów bez odbudowywania pakietu rozszerzenia. Aby to zrobić, kliknij przycisk "Zastosuj ten motyw do uruchomionego z okna programu Visual Studio", znajduje się w nagłówku każdej kolumny motywu. Ten tymczasowy motyw znikną po zamknięciu Edytor kolorów VSIX.  
   

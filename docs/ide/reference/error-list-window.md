@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe70a8c7daeac86ea3a354f81d8462ca7f4e451
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 603faab80e185e7d22cba1ee544502d790afcdc0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933980"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051015"
 ---
 # <a name="error-list-window"></a>Okno listy błędów
 
@@ -29,17 +29,17 @@ ms.locfileid: "55933980"
 
 **Lista błędów** okno umożliwia wykonywanie następujących zadań:
 
--   Wyświetl błędy, ostrzeżenia i komunikaty generowane podczas pisania kodu.
+- Wyświetl błędy, ostrzeżenia i komunikaty generowane podczas pisania kodu.
 
--   Znajdź błędy składniowe oznaczone przez technologię IntelliSense.
+- Znajdź błędy składniowe oznaczone przez technologię IntelliSense.
 
--   Znajdź błędy wdrażania, niektóre analizy statycznej błędy i błędy wykryte podczas stosowania zasad szablonu organizacji.
+- Znajdź błędy wdrażania, niektóre analizy statycznej błędy i błędy wykryte podczas stosowania zasad szablonu organizacji.
 
--   Kliknij dwukrotnie wpis komunikatu o błędzie, wszelkie można otworzyć pliku, gdzie występuje problem i przejść do lokalizacji błędu.
+- Kliknij dwukrotnie wpis komunikatu o błędzie, wszelkie można otworzyć pliku, gdzie występuje problem i przejść do lokalizacji błędu.
 
--   Filtruj, które wpisy są wyświetlane i które kolumny informacji są wyświetlane dla każdego wpisu.
+- Filtruj, które wpisy są wyświetlane i które kolumny informacji są wyświetlane dla każdego wpisu.
 
--   Wyszukaj konkretne terminy i Ogranicz zakres wyszukiwania do tylko bieżącego projektu lub dokumentu.
+- Wyszukaj konkretne terminy i Ogranicz zakres wyszukiwania do tylko bieżącego projektu lub dokumentu.
 
 Aby wyświetlić **lista błędów**, wybierz **widoku** > **lista błędów**, lub naciśnij **Ctrl** + **\\** + **E**.
 
@@ -53,14 +53,14 @@ Istnieją dwa rodzaje filtru w dwa pola listy rozwijanej: jeden po prawej stroni
 
 Możesz ograniczyć zakres wyszukiwania do analizowania i działają na grupy błędów. Na przykład można skoncentrować się na podstawowych błędach, które uniemożliwiają kompilowania projektu. Opcje zakresu są następujące:
 
-1.  **Otwieranie dokumentów**: Pokaż błędy, ostrzeżenia i komunikaty dla otwartych dokumentów.
+1. **Otwieranie dokumentów**: Pokaż błędy, ostrzeżenia i komunikaty dla otwartych dokumentów.
 
-2.  **Bieżący projekt**: Pokaż błędy, ostrzeżenia i komunikaty z projektu aktualnie wybranego dokumentu w **edytora** lub wybranego projektu w **Eksploratora rozwiązań**.
+2. **Bieżący projekt**: Pokaż błędy, ostrzeżenia i komunikaty z projektu aktualnie wybranego dokumentu w **edytora** lub wybranego projektu w **Eksploratora rozwiązań**.
 
     > [!NOTE]
     > Filtrowana lista błędy, ostrzeżenia i komunikaty ulegnie zmianie, jeśli projekt aktualnie wybranego dokumentu różni się od projektu wybranego w **Eksploratora rozwiązań**.
 
-3.  **Bieżący dokument**: Pokaż błędy, ostrzeżenia i komunikaty dla aktualnie wybranego dokumentu w **edytora** lub **Eksploratora rozwiązań**.
+3. **Bieżący dokument**: Pokaż błędy, ostrzeżenia i komunikaty dla aktualnie wybranego dokumentu w **edytora** lub **Eksploratora rozwiązań**.
 
 Jeśli filtr jest obecnie stosowany do wyników wyszukiwania, nazwę filtra pojawia się w **lista błędów** paska tytułu. **Błędy**, **ostrzeżenia**, i **wiadomości** przyciski, a następnie wyświetla liczbę odfiltrowane elementy są wyświetlane wraz z całkowitą liczbę elementów. Na przykład przyciski Pokaż "x z y błędów". Jeśli żaden filtr zostanie zastosowany, na pasku tytułu widać tylko "Lista błędów".
 

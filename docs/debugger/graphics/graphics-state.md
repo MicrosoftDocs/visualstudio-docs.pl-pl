@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d451f7e59774dae37d781f60812003f16120b98a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f7f4dbeb378f0ac921f42f2ad71d3b5cae8d10ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692986"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088382"
 ---
 # <a name="graphics-state"></a>Stan grafiki
 Okna stanu grafiki programu Visual Studio diagnostyki ułatwia zrozumienie stanu grafiki, który jest aktywny w momencie bieżącego zdarzenia, takie jak wywołania rysowania.
@@ -34,13 +34,13 @@ Okna stanu grafiki programu Visual Studio diagnostyki ułatwia zrozumienie stanu
 
 ##### <a name="to-change-the-state-view"></a>Aby zmienić widok stanu
 
--   W oknie stanu w prawym górnym lewym tuż poniżej tytułu wybierz przycisk, który odpowiada styl widoku stanu, którego chcesz użyć.
+- W oknie stanu w prawym górnym lewym tuż poniżej tytułu wybierz przycisk, który odpowiada styl widoku stanu, którego chcesz użyć.
 
-    -   **Pokaż widok stanu danych wejściowych interfejsu API**
+    - **Pokaż widok stanu danych wejściowych interfejsu API**
 
-    -   **Pokaż widok stanu logicznego**
+    - **Pokaż widok stanu logicznego**
 
-    -   **Pokaż widok stanu Pinned**
+    - **Pokaż widok stanu Pinned**
 
 > [!IMPORTANT]
 >  Trzeba przypiąć stanu w **Pokaż interfejsu API danych wejściowych w stanie** lub **stanu logicznego Pokaż** widoków dla niego będzie wyświetlana w **Pokaż przypięte widok stanu**.
@@ -64,8 +64,8 @@ Okna stanu grafiki programu Visual Studio diagnostyki ułatwia zrozumienie stanu
 
 ##### <a name="to-pin-state-in-place"></a>Aby przypiąć stanu w miejscu
 
-1.  W oknie stanu odszukaj stan, który chcesz wziąć. Może być konieczne rozwiń wyższego poziomu stanu, aby znaleźć szczegółowe informacje, których interesuje Cię.
+1. W oknie stanu odszukaj stan, który chcesz wziąć. Może być konieczne rozwiń wyższego poziomu stanu, aby znaleźć szczegółowe informacje, których interesuje Cię.
 
-2.  Umieść kursor nad stan, który chcesz wziąć. Ikona przypinania pojawia się po lewej stronie element stanu.
+2. Umieść kursor nad stan, który chcesz wziąć. Ikona przypinania pojawia się po lewej stronie element stanu.
 
-3.  Wybierz ikonę pinezki, aby przypiąć element stanu w miejscu.
+3. Wybierz ikonę pinezki, aby przypiąć element stanu w miejscu.

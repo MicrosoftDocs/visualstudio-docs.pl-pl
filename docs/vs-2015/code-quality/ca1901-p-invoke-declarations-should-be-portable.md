@@ -15,12 +15,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ed1385ee914fa8b0df31b360f4a1d8fdc8931332
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccbbc3178a9f65c15d11a27dee1a625cca729240
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756032"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053952"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Deklaracje metody P/Invoke powinny być przenośne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,9 +38,9 @@ ms.locfileid: "54756032"
 ## <a name="rule-description"></a>Opis reguły
  Jedną z następujących scenariuszy narusza tę regułę występuje:
 
--   Wartość zwracana lub parametr jest wpisane jako liczba całkowita stałym rozmiarze, gdy powinna być typizowana jako `IntPtr`.
+- Wartość zwracana lub parametr jest wpisane jako liczba całkowita stałym rozmiarze, gdy powinna być typizowana jako `IntPtr`.
 
--   Wartość zwracana lub parametr jest wpisana jako `IntPtr` kiedy powinna być typizowana jako liczbą całkowitą o stałym rozmiarze.
+- Wartość zwracana lub parametr jest wpisana jako `IntPtr` kiedy powinna być typizowana jako liczbą całkowitą o stałym rozmiarze.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  To naruszenie można rozwiązać za pomocą `IntPtr` lub `UIntPtr` do reprezentowania dojścia, zamiast `Int32` lub `UInt32`.

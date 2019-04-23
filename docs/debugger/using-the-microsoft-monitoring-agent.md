@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 335782f93d7bd0cd9a82c258a0fee3b87d50e72b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8fb9f1ec1eafb0dbea7ca5437d80a32e4fe9d9dc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59232583"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043125"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Korzystanie z programu Microsoft Monitoring Agent (C#, Visual Basic)
 
@@ -26,57 +26,57 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
 
  Przed rozpoczęciem Sprawdź, czy zgodnego źródła i symboli dla kodu skompilowane i wdrożone. Dzięki temu można przejść bezpośrednio do kodu aplikacji, podczas uruchamiania, debugowania i przeglądanie zdarzenia diagnostyczne w dzienniku IntelliTrace. [Skonfiguruj kompilacje](../debugger/diagnose-problems-after-deployment.md) tak, aby program Visual Studio, mogą automatycznie znaleźć i otworzyć pasujące źródło do wdrożonego kodu.
 
-1.  [Krok 1. Skonfiguruj program Microsoft Monitoring Agent](#SetUpMonitoring)
+1. [Krok 1. Skonfiguruj program Microsoft Monitoring Agent](#SetUpMonitoring)
 
-2.  [Krok 2. Rozpoczęcie monitorowania aplikacji](#MonitorEvents)
+2. [Krok 2. Rozpoczęcie monitorowania aplikacji](#MonitorEvents)
 
-3.  [Krok 3. Zapisz zarejestrowane zdarzenia](#SaveEvents)
+3. [Krok 3. Zapisz zarejestrowane zdarzenia](#SaveEvents)
 
-##  <a name="SetUpMonitoring"></a> Krok 1: Skonfiguruj program Microsoft Monitoring Agent
+## <a name="SetUpMonitoring"></a> Krok 1: Skonfiguruj program Microsoft Monitoring Agent
 
  Skonfiguruj agenta autonomiczny, na serwerze sieci web, do przeprowadzenia monitorowania lokalnego bez konieczności zmieniania aplikacji. Jeśli używasz programu System Center 2012, zobacz [instalacji programu Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465156(v=sc.12)).
 
-###  <a name="SetUpStandaloneMMA"></a> Konfigurowanie agenta autonomiczny
+### <a name="SetUpStandaloneMMA"></a> Konfigurowanie agenta autonomiczny
 
-1.  Upewnij się, że:
+1. Upewnij się, że:
 
-    -   Na serwerze sieci web jest uruchomiona [obsługiwane wersje programu Internetowe usługi informacyjne (IIS)](/previous-versions/system-center/system-center-2012-R2/dn465154(v=sc.12)).
+    - Na serwerze sieci web jest uruchomiona [obsługiwane wersje programu Internetowe usługi informacyjne (IIS)](/previous-versions/system-center/system-center-2012-R2/dn465154(v=sc.12)).
 
-    -   Serwer sieci web ma .NET Framework 3.5, 4 lub 4.5.
+    - Serwer sieci web ma .NET Framework 3.5, 4 lub 4.5.
 
-    -   Serwer sieci web jest uruchomiony program Windows PowerShell 3.0 lub nowszej. [PYT.: Co się stanie, jeśli mam Windows PowerShell 2.0?](#PowerShell2)
+    - Serwer sieci web jest uruchomiony program Windows PowerShell 3.0 lub nowszej. [PYT.: Co się stanie, jeśli mam Windows PowerShell 2.0?](#PowerShell2)
 
-    -   Należy mieć uprawnienia administratora na serwerze sieci web, aby uruchamiać polecenia programu PowerShell i Odtwórz pulę aplikacji, po uruchomieniu monitorowania.
+    - Należy mieć uprawnienia administratora na serwerze sieci web, aby uruchamiać polecenia programu PowerShell i Odtwórz pulę aplikacji, po uruchomieniu monitorowania.
 
-    -   Po odinstalowaniu wszystkie wcześniejsze wersje programu Microsoft Monitoring Agent.
+    - Po odinstalowaniu wszystkie wcześniejsze wersje programu Microsoft Monitoring Agent.
 
-2.  [Pobierz bezpłatnie agenta monitorowania Microsoft](http://go.microsoft.com/fwlink/?LinkId=320384), wersji 32-bitowej **MMASetup-i386.exe** lub 64-bitowej wersji **MMASetup-AMD64.exe**, z Microsoft Download Center, aby usługi sieci web serwer.
+2. [Pobierz bezpłatnie agenta monitorowania Microsoft](http://go.microsoft.com/fwlink/?LinkId=320384), wersji 32-bitowej **MMASetup-i386.exe** lub 64-bitowej wersji **MMASetup-AMD64.exe**, z Microsoft Download Center, aby usługi sieci web serwer.
 
-3.  Uruchom pobrany plik wykonywalny, aby uruchomić Kreatora instalacji.
+3. Uruchom pobrany plik wykonywalny, aby uruchomić Kreatora instalacji.
 
-4.  Utwórz bezpieczny katalog na serwerze sieci web, aby przechowywać dzienniki IntelliTrace, na przykład **C:\IntelliTraceLogs**.
+4. Utwórz bezpieczny katalog na serwerze sieci web, aby przechowywać dzienniki IntelliTrace, na przykład **C:\IntelliTraceLogs**.
 
      Upewnij się, utworzyć ten katalog, przed rozpoczęciem monitorowania. Aby nie spowalniać pracy swojej aplikacji, wybierz lokalizację na lokalnym dysku o dużej szybkości, który nie jest bardzo obciążony.
 
     > [!IMPORTANT]
     >  Dzienniki IntelliTrace może zawierać dane osobowe i wrażliwe. Dostęp do tego katalogu do tych tożsamości, które muszą pracować z plikami. Sprawdź zasady zachowania poufności informacji firmy.
 
-5.  Uruchom szczegółowy poziom funkcji monitorowania lub do monitorowania aplikacji programu SharePoint, należy udzielić tej puli aplikacji, który jest hostem sieci web aplikacji lub aplikacji SharePoint uprawnienia odczytu i zapisu do katalogu dziennika funkcji IntelliTrace. [PYT.: Jak skonfigurować uprawnienia dla puli aplikacji?](#FullPermissionsITLog)
+5. Uruchom szczegółowy poziom funkcji monitorowania lub do monitorowania aplikacji programu SharePoint, należy udzielić tej puli aplikacji, który jest hostem sieci web aplikacji lub aplikacji SharePoint uprawnienia odczytu i zapisu do katalogu dziennika funkcji IntelliTrace. [PYT.: Jak skonfigurować uprawnienia dla puli aplikacji?](#FullPermissionsITLog)
 
 ### <a name="q--a"></a>Pytania i odpowiedzi
 
-####  <a name="PowerShell2"></a> Q: Co się stanie, jeśli mam Windows PowerShell 2.0?
+#### <a name="PowerShell2"></a> Q: Co się stanie, jeśli mam Windows PowerShell 2.0?
  **ODP.:** Zdecydowanie zaleca się użycie PowerShell 3.0. W przeciwnym wypadku musisz zaimportować poleceń cmdlet programu Microsoft Monitoring Agent PowerShell z każdym razem, gdy uruchamiasz program PowerShell. Nie masz też dostęp do zawartości pomocy do pobrania.
 
-1.  Otwórz **programu Windows PowerShell** lub **środowiska Windows PowerShell ISE** okna wiersza polecenia jako administrator.
+1. Otwórz **programu Windows PowerShell** lub **środowiska Windows PowerShell ISE** okna wiersza polecenia jako administrator.
 
-2.  Zaimportuj moduł Microsoft Monitoring Agent PowerShell z domyślnej lokalizacji instalacji:
+2. Zaimportuj moduł Microsoft Monitoring Agent PowerShell z domyślnej lokalizacji instalacji:
 
      **PS C: > Import-Module "C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll"**
 
-3.  [Odwiedź TechNet](http://technet.microsoft.com/systemcenter/default) można pobrać najnowszej zawartości pomocy.
+3. [Odwiedź TechNet](http://technet.microsoft.com/systemcenter/default) można pobrać najnowszej zawartości pomocy.
 
-####  <a name="FullPermissionsITLog"></a> Q: Jak skonfigurować uprawnienia dla puli aplikacji?
+#### <a name="FullPermissionsITLog"></a> Q: Jak skonfigurować uprawnienia dla puli aplikacji?
  **ODP.:** Użyj Windows **icacls** polecenia lub za pomocą Eksploratora Windows (lub Eksploratora plików). Na przykład:
 
 - Aby skonfigurować uprawnienia za pomocą Windows **icacls** polecenia:
@@ -93,28 +93,28 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
 
 - Aby skonfigurować uprawnienia za pomocą Eksploratora Windows (lub Eksploratora plików):
 
-  1.  Otwórz **właściwości** dla katalogu dziennika funkcji IntelliTrace.
+  1. Otwórz **właściwości** dla katalogu dziennika funkcji IntelliTrace.
 
-  2.  Na **zabezpieczeń** kartę, wybrać **Edytuj**, **Dodaj**.
+  2. Na **zabezpieczeń** kartę, wybrać **Edytuj**, **Dodaj**.
 
-  3.  Upewnij się, że **wbudowane zabezpieczenia główne** pojawia się w **wybierz ten typ obiektu** pole. Jeśli nie ma tam, wybierz **wybierane** ją dodać.
+  3. Upewnij się, że **wbudowane zabezpieczenia główne** pojawia się w **wybierz ten typ obiektu** pole. Jeśli nie ma tam, wybierz **wybierane** ją dodać.
 
-  4.  Upewnij się, że komputer lokalny pojawi się w **z tej lokalizacji** pole. Jeśli nie ma tam, wybierz **lokalizacje** go zmienić.
+  4. Upewnij się, że komputer lokalny pojawi się w **z tej lokalizacji** pole. Jeśli nie ma tam, wybierz **lokalizacje** go zmienić.
 
-  5.  W **wprowadź nazwy obiektów do wybrania** Dodaj pulę aplikacji dla aplikacji sieci web lub aplikacji programu SharePoint.
+  5. W **wprowadź nazwy obiektów do wybrania** Dodaj pulę aplikacji dla aplikacji sieci web lub aplikacji programu SharePoint.
 
-  6.  Wybierz **Sprawdź nazwy** do rozpoznania nazwy. Wybierz **OK**.
+  6. Wybierz **Sprawdź nazwy** do rozpoznania nazwy. Wybierz **OK**.
 
-  7.  Upewnij się, że pula aplikacji ma **odczytu & wykonać** uprawnienia.
+  7. Upewnij się, że pula aplikacji ma **odczytu & wykonać** uprawnienia.
 
-##  <a name="MonitorEvents"></a> Krok 2: Rozpoczęcie monitorowania aplikacji
+## <a name="MonitorEvents"></a> Krok 2: Rozpoczęcie monitorowania aplikacji
  Za pomocą programu Windows PowerShell [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) polecenie, aby rozpocząć monitorowanie aplikacji. Jeśli używasz programu System Center 2012, zobacz [monitorowanie aplikacji sieci Web za pomocą programu Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).
 
-1.  Na serwerze sieci web Otwórz **programu Windows PowerShell** lub **środowiska Windows PowerShell ISE** okna wiersza polecenia jako administrator.
+1. Na serwerze sieci web Otwórz **programu Windows PowerShell** lub **środowiska Windows PowerShell ISE** okna wiersza polecenia jako administrator.
 
      ![Otwórz program Windows PowerShell jako administrator](../debugger/media/ffr_powershellrunadmin.png "FFR_PowerShellRunAdmin")
 
-2.  Uruchom [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) polecenie, aby rozpocząć monitorowanie aplikacji. To spowoduje ponowne uruchomienie wszystkich aplikacji sieci web na serwerze sieci web.
+2. Uruchom [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) polecenie, aby rozpocząć monitorowanie aplikacji. To spowoduje ponowne uruchomienie wszystkich aplikacji sieci web na serwerze sieci web.
 
      Oto skróconej składni:
 
@@ -142,11 +142,11 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
 
      Aby uzyskać więcej informacji o pełnej składni i inne przykłady, uruchom **get-help Start-WebApplicationMonitoring-szczegółowe** polecenia lub **get-help Start-WebApplicationMonitoring-przykłady** polecenie.
 
-3.  Aby sprawdzić stan wszystkich monitorowanych aplikacji sieci web, uruchom [Get-WebApplicationMonitoringStatus](http://go.microsoft.com/fwlink/?LinkID=313685) polecenia.
+3. Aby sprawdzić stan wszystkich monitorowanych aplikacji sieci web, uruchom [Get-WebApplicationMonitoringStatus](http://go.microsoft.com/fwlink/?LinkID=313685) polecenia.
 
 ### <a name="q--a"></a>Pytania i odpowiedzi
 
-####  <a name="Minimizing"></a> Q: Jak uzyskać większość danych bez spowalniania mojej aplikacji?
+#### <a name="Minimizing"></a> Q: Jak uzyskać większość danych bez spowalniania mojej aplikacji?
  **ODP.:** Program Microsoft Monitoring Agent może zbierać dużą ilość danych i ma wpływ na wydajność aplikacji, w zależności od zbierania danych i jak je zebrać. Oto kilka sposobów na zdobycie większości danych bez spowalniania aplikacji:
 
 - Dla aplikacji sieci web i aplikacji programu SharePoint agent rejestruje dane dla każdej aplikacji, która udostępnia określona pula aplikacji. Może to spowolnić każdej aplikacji, która udostępnia tej samej puli aplikacji, mimo że można ograniczyć kolekcji do modułów, w ramach jednej aplikacji. Aby nie spowalniać inne aplikacje, Hostuj każdą aplikację we własnej puli aplikacji.
@@ -161,9 +161,9 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
 
    Na przykład:
 
-  -   Wyłącz zdarzenia Windows Workflow dla aplikacji, które nie używają Windows Workflow.
+  - Wyłącz zdarzenia Windows Workflow dla aplikacji, które nie używają Windows Workflow.
 
-  -   Wyłącz zdarzenia rejestru dla aplikacji, które uzyskują dostęp do rejestru, ale nie wyświetlają problemów z ustawieniami rejestru.
+  - Wyłącz zdarzenia rejestru dla aplikacji, które uzyskują dostęp do rejestru, ale nie wyświetlają problemów z ustawieniami rejestru.
 
 - Przegląd moduły, dla których agent zbiera dane w planie kolekcji. Edytuj plan kolekcji, aby uwzględnić tylko moduły, które Cię interesują.
 
@@ -228,7 +228,7 @@ Załóżmy, że masz `AlterEmployee` podpis metody, która akceptuje liczbę ca�
 
 Agent zapisuje wartości dla `id`, `Employee.Id`, `Employee.Name` i `Employee` obiekt zwracany z `AlterEmployee` metody. Jednak agent nie zapisuje informacje o `Address` innych obiektów niż posiadającym wartość zerową lub nie. Agent nie zapisuje również dane dotyczące zmiennych lokalnych w `AlterEmployee` metody, chyba że inne metody używają tych zmiennych lokalnych jako parametrów w tym momencie są zapisywane jako parametry metody.
 
-##  <a name="SaveEvents"></a> Krok 3: Zapisz zarejestrowane zdarzenia
+## <a name="SaveEvents"></a> Krok 3: Zapisz zarejestrowane zdarzenia
  Po znalezieniu błędu lub problemu z wydajnością, Zapisz zarejestrowane zdarzenia w dzienniku IntelliTrace. Agent tworzy dziennik tylko wtedy, gdy zarejestrował zdarzenia. Jeśli używasz programu System Center 2012, zobacz [monitorowanie aplikacji sieci Web za pomocą programu Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).
 
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Zapisz zarejestrowane zdarzenia, ale Kontunuuj monitorowanie

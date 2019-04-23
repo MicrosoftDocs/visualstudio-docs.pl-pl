@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 50ebaad52473eaccb39d8253e9af5fbb9f4a3cbf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bc22f9dcbe348f46ae624e5c06706d328633e784
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596741"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046139"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Debugowanie lub wyłączanie kodu projektu w projektancie XAML
 
@@ -21,13 +21,13 @@ W wielu przypadkach nieobsłużonych wyjątków z **XAML** designer może być s
 
 Zawiera kod projektu:
 
--   Kontrolki niestandardowe i kontrolki użytkownika
+- Kontrolki niestandardowe i kontrolki użytkownika
 
--   Biblioteki klas
+- Biblioteki klas
 
--   Konwertery wartości
+- Konwertery wartości
 
--   Powiązania względem danych czasu projektowania wygenerowane z kodu projektu
+- Powiązania względem danych czasu projektowania wygenerowane z kodu projektu
 
 Po wyłączeniu kodu projektu programu Visual Studio zawiera symbole zastępcze. Na przykład programu Visual Studio zawiera nazwę właściwości do powiązania, gdzie dane są już dostępne lub symbol zastępczy dla formantu, który nie jest już uruchomiony.
 
@@ -35,43 +35,43 @@ Po wyłączeniu kodu projektu programu Visual Studio zawiera symbole zastępcze.
 
 ## <a name="to-determine-if-project-code-is-causing-an-exception"></a>Aby określić, jeśli kod projektu powoduje wyjątek
 
-1.  W oknie dialogowym nieobsługiwany wyjątek, wybierz **kliknij tutaj, aby załadować ponownie projektanta** łącza.
+1. W oknie dialogowym nieobsługiwany wyjątek, wybierz **kliknij tutaj, aby załadować ponownie projektanta** łącza.
 
-2.  Na pasku menu wybierz **debugowania** > **Rozpocznij debugowanie** Aby skompilować i uruchomić aplikację.
+2. Na pasku menu wybierz **debugowania** > **Rozpocznij debugowanie** Aby skompilować i uruchomić aplikację.
 
      Jeśli aplikacja zostanie skompilowana i zostanie wykonane pomyślnie, wyjątek czasu projektowania może być spowodowane przez działanie kodu projektu w projektancie.
 
 ## <a name="to-debug-project-code-running-in-the-designer"></a>Aby debugować kod projektu w Projektancie
 
-1.  W oknie dialogowym nieobsługiwany wyjątek, wybierz **kliknij tutaj, aby wyłączyć uruchamianie kodu projektu i załadować ponownie projektanta** łącza.
+1. W oknie dialogowym nieobsługiwany wyjątek, wybierz **kliknij tutaj, aby wyłączyć uruchamianie kodu projektu i załadować ponownie projektanta** łącza.
 
-2.  W Menedżerze zadań Windows, wybierz **Zakończ zadanie** przycisk, aby zamknąć wszystkie wystąpienia projektanta XAML programu Visual Studio, które są aktualnie uruchomione.
+2. W Menedżerze zadań Windows, wybierz **Zakończ zadanie** przycisk, aby zamknąć wszystkie wystąpienia projektanta XAML programu Visual Studio, które są aktualnie uruchomione.
 
      ![Wystąpienia projektanta XAML w Menedżer zadań](../designers/media/xaml_taskmanager.png)
 
-3.  W programie Visual Studio Otwórz stronę XAML, który zawiera kod lub formant, który chcesz debugować.
+3. W programie Visual Studio Otwórz stronę XAML, który zawiera kod lub formant, który chcesz debugować.
 
-4.  Otwórz nowe wystąpienie programu Visual Studio, a następnie otwórz drugie wystąpienie projektu.
+4. Otwórz nowe wystąpienie programu Visual Studio, a następnie otwórz drugie wystąpienie projektu.
 
-5.  Ustaw punkt przerwania w kodzie projektu.
+5. Ustaw punkt przerwania w kodzie projektu.
 
-6.  W wystąpieniu programu Visual Studio, na pasku menu wybierz **debugowania** > **dołączyć do procesu**.
+6. W wystąpieniu programu Visual Studio, na pasku menu wybierz **debugowania** > **dołączyć do procesu**.
 
-7.  W **dołączyć do procesu** okna dialogowego w **dostępne procesy** , wybierz **XDesProc.exe**, a następnie wybierz **Dołącz** przycisku.
+7. W **dołączyć do procesu** okna dialogowego w **dostępne procesy** , wybierz **XDesProc.exe**, a następnie wybierz **Dołącz** przycisku.
 
      ![Proces projektanta XAML](../designers/media/xaml_attach.png)
 
      Jest to proces projektanta XAML w pierwszym wystąpieniu programu Visual Studio.
 
-8.  W pierwszej kolejności programu Visual Studio, na pasku menu wybierz **debugowania** > **Rozpocznij debugowanie**.
+8. W pierwszej kolejności programu Visual Studio, na pasku menu wybierz **debugowania** > **Rozpocznij debugowanie**.
 
      Możesz teraz wejść w kodzie, w którym jest uruchomiony w projektancie.
 
 ## <a name="to-disable-project-code-in-the-designer"></a>Aby wyłączyć kodu projektu w Projektancie
 
--   W oknie dialogowym nieobsługiwany wyjątek, wybierz **kliknij tutaj, aby wyłączyć uruchamianie kodu projektu i załadować ponownie projektanta** łącza.
+- W oknie dialogowym nieobsługiwany wyjątek, wybierz **kliknij tutaj, aby wyłączyć uruchamianie kodu projektu i załadować ponownie projektanta** łącza.
 
--   Możesz również na pasku narzędzi w **projektanta XAML**, wybierz **Wyłącz kod projektu** przycisku.
+- Możesz również na pasku narzędzi w **projektanta XAML**, wybierz **Wyłącz kod projektu** przycisku.
 
      ![Przycisk Wyłącz kod projektu](../designers/media/xaml_disablecode.png)
 
@@ -80,7 +80,7 @@ Po wyłączeniu kodu projektu programu Visual Studio zawiera symbole zastępcze.
     > [!NOTE]
     > Dla projektów przeznaczonych dla ARM lub X64 procesorów, Visual Studio nie można uruchomić kod projektu w projektancie, więc **Wyłącz kod projektu** przycisk jest niedostępny w projektancie.
 
--   Jedną z opcji powoduje, że projektanta aby załadować ponownie, a następnie wyłącz cały kod dla skojarzonego projektu.
+- Jedną z opcji powoduje, że projektanta aby załadować ponownie, a następnie wyłącz cały kod dla skojarzonego projektu.
 
     > [!NOTE]
     > Wyłączanie kodu projektu może prowadzić do utraty danych w czasie projektowania. Alternatywą jest, aby debugować kod uruchomiony w projektancie.

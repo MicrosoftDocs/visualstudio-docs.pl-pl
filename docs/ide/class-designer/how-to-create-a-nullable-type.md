@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c70375e7b7b47b9c345c13b5529ea29e1eed45
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0212f7ef1c5b506ce7a1efbde60e7c46a424bfa3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925523"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043903"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>Instrukcje: Tworzenie typu dopuszczającego wartość null w Projektancie klas
 
@@ -29,9 +29,9 @@ A *typu dopuszczającego wartość null* jest typem wartości, które można roz
 
 Typy dopuszczające wartości null są wystąpieniami <xref:System.Nullable%601> struktury. Każde wystąpienie typu dopuszczającego wartość null, ma dwa publiczne właściwości tylko do odczytu, `HasValue` i `Value`:
 
--   `HasValue` Typ jest `bool` i wskazuje, czy zmienna zawiera wartość zdefiniowana. `True` oznacza, że zmienna zawiera wartość inną niż null. Możesz sprawdzić wartości zdefiniowanej przy użyciu instrukcji takich jak `if (x.HasValue)` lub `if (y != null)`.
+- `HasValue` Typ jest `bool` i wskazuje, czy zmienna zawiera wartość zdefiniowana. `True` oznacza, że zmienna zawiera wartość inną niż null. Możesz sprawdzić wartości zdefiniowanej przy użyciu instrukcji takich jak `if (x.HasValue)` lub `if (y != null)`.
 
--   `Value` jest taki sam typ co typ podstawowy. Jeśli `HasValue` jest `True`, `Value` zawiera odpowiednią wartość. Jeśli `HasValue` jest `False`, uzyskiwania dostępu do `Value` spowoduje zgłoszenie wyjątku dotyczącego nieprawidłowej operacji.
+- `Value` jest taki sam typ co typ podstawowy. Jeśli `HasValue` jest `True`, `Value` zawiera odpowiednią wartość. Jeśli `HasValue` jest `False`, uzyskiwania dostępu do `Value` spowoduje zgłoszenie wyjątku dotyczącego nieprawidłowej operacji.
 
 Domyślnie, kiedy Deklarujesz zmienną typu dopuszczającego wartość null, go nie ma zdefiniowanej wartości (`HasValue` jest `False`), inne niż domyślna wartość typu wartości podstawowej.
 
@@ -43,26 +43,26 @@ Aby uzyskać więcej informacji na temat typów dopuszczających wartości zerow
 
 ## <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Aby dodać typ dopuszczający wartość null, za pomocą projektanta klas
 
-1.  Na diagramie klasy należy rozwinąć istniejącej klasy, lub Utwórz nową klasę.
+1. Na diagramie klasy należy rozwinąć istniejącej klasy, lub Utwórz nową klasę.
 
-2.  Aby dodać klasę do projektu, na **Diagram klas** menu, kliknij przycisk **Dodaj** > **Dodaj klasę**.
+2. Aby dodać klasę do projektu, na **Diagram klas** menu, kliknij przycisk **Dodaj** > **Dodaj klasę**.
 
-3.  Aby rozwinąć kształt klasy na **Diagram klas** menu, kliknij przycisk **rozwiń**.
+3. Aby rozwinąć kształt klasy na **Diagram klas** menu, kliknij przycisk **rozwiń**.
 
-4.  Wybierz kształt klasy. Na **Diagram klas** menu, kliknij przycisk **Dodaj** > **pola**. Nowe pole o nazwie domyślnej **pola** pojawi się w kształt klasy, a także w **szczegóły klasy** okna.
+4. Wybierz kształt klasy. Na **Diagram klas** menu, kliknij przycisk **Dodaj** > **pola**. Nowe pole o nazwie domyślnej **pola** pojawi się w kształt klasy, a także w **szczegóły klasy** okna.
 
-5.  W **nazwa** kolumny **szczegóły klasy** okna (lub w klasie kształtu, sam), Zmień nazwę nowego pola do nazwy ważne i istotne.
+5. W **nazwa** kolumny **szczegóły klasy** okna (lub w klasie kształtu, sam), Zmień nazwę nowego pola do nazwy ważne i istotne.
 
-6.  W **typu** kolumny **szczegóły klasy** oknie zadeklarowana jako typ dopuszczający wartość null, określając następujące czynności:
+6. W **typu** kolumny **szczegóły klasy** oknie zadeklarowana jako typ dopuszczający wartość null, określając następujące czynności:
 
     - `int?` (Visual C#)
     - `Nullable(Of Integer)` (Visual Basic)
 
 ## <a name="to-add-a-nullable-type-by-using-the-code-editor"></a>Aby dodać typ dopuszczający wartość null, za pomocą edytora kodu
 
-1.  Dodaj klasę do projektu. Wybierz węzeł projektu w **Eksploratora rozwiązań**, a następnie na **projektu** menu, kliknij przycisk **Dodaj klasę**.
+1. Dodaj klasę do projektu. Wybierz węzeł projektu w **Eksploratora rozwiązań**, a następnie na **projektu** menu, kliknij przycisk **Dodaj klasę**.
 
-2.  W pliku CS lub .vb dla nowej klasy należy dodać co najmniej jeden typ dopuszczający wartość null w nowej klasie do deklaracji klasy.
+2. W pliku CS lub .vb dla nowej klasy należy dodać co najmniej jeden typ dopuszczający wartość null w nowej klasie do deklaracji klasy.
 
     ```csharp
     // Declare a nullable type in Visual C#:
@@ -79,11 +79,11 @@ Aby uzyskać więcej informacji na temat typów dopuszczających wartości zerow
     End Class
     ```
 
-3.  W widoku klas przeciągnij nową ikonę klasy do powierzchni projektowej projektanta klas. Kształt klasy pojawia się na diagramie klasy.
+3. W widoku klas przeciągnij nową ikonę klasy do powierzchni projektowej projektanta klas. Kształt klasy pojawia się na diagramie klasy.
 
-4.  Rozwiń szczegóły kształt klasy, a następnie przesuń wskaźnik myszy nad składowych klasy. Etykietka narzędzia zawiera deklarację każdego elementu członkowskiego.
+4. Rozwiń szczegóły kształt klasy, a następnie przesuń wskaźnik myszy nad składowych klasy. Etykietka narzędzia zawiera deklarację każdego elementu członkowskiego.
 
-5.  Kliknij prawym przyciskiem myszy kształt klasy, a następnie kliknij przycisk **szczegóły klasy**. Można wyświetlać lub modyfikować właściwości nowego typu w **szczegóły klasy** okna.
+5. Kliknij prawym przyciskiem myszy kształt klasy, a następnie kliknij przycisk **szczegóły klasy**. Można wyświetlać lub modyfikować właściwości nowego typu w **szczegóły klasy** okna.
 
 ## <a name="see-also"></a>Zobacz także
 

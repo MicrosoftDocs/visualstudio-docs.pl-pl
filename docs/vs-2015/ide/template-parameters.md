@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1433d9ba1f207a0f86902d7afd56db6476b1fd56
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dc5f69fee15d3dc67b31c54f0b397fbf039aa52a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787095"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077345"
 ---
 # <a name="template-parameters"></a>Parametry szablonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ Przy użyciu parametrów w szablonach, można zamienić wartości kluczowych cz�
 ## <a name="declaring-and-enabling-template-parameters"></a>Deklarowanie i włączanie parametrów szablonu  
  Parametry szablonu są deklarowane w formacie $*parametru*$. Na przykład:  
   
--   $safeprojectname$  
+- $safeprojectname$  
   
--   $guid1$  
+- $guid1$  
   
--   $guid5$  
+- $guid5$  
   
 #### <a name="to-enable-parameter-substitution-in-templates"></a>Aby włączyć podstawienie parametru w szablonach  
   
-1.  W pliku .vstemplate szablonu zlokalizuj element `ProjectItem`, który odpowiada elementowi, dla którego chcesz włączyć podmianę parametrów.  
+1. W pliku .vstemplate szablonu zlokalizuj element `ProjectItem`, który odpowiada elementowi, dla którego chcesz włączyć podmianę parametrów.  
   
-2.  Ustaw atrybut `ReplaceParameters` elementu `ProjectItem` na `true`.  
+2. Ustaw atrybut `ReplaceParameters` elementu `ProjectItem` na `true`.  
   
-3.  W pliku kodu dla elementu projektu dołącz parametry, tam gdzie jest to potrzebne. Na przykład, następujący parametr określa, że bezpieczna nazwa projektu będzie używana dla przestrzeni nazw w pliku:  
+3. W pliku kodu dla elementu projektu dołącz parametry, tam gdzie jest to potrzebne. Na przykład, następujący parametr określa, że bezpieczna nazwa projektu będzie używana dla przestrzeni nazw w pliku:  
   
     ```  
     namespace $safeprojectname$  

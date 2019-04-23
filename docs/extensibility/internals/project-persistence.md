@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5c195697a94462ce1239318a309160220117b8e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c19b623efca921e7557a818c3915faf6ea158641
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58146529"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087329"
 ---
 # <a name="project-persistence"></a>Trwałość projektu
 Trwałość stanowi kluczy dla Twojego projektu. Większość projektów używać elementów projektu, które reprezentują plików. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje również projektów, których dane są inne niż oparte na pliku. Pliki należące do projektu i pliku projektu musi być utrwalone. IDE powoduje, że projekt, aby zapisać siebie lub elementu projektu.
@@ -25,9 +25,9 @@ Trwałość stanowi kluczy dla Twojego projektu. Większość projektów używa�
 
  Elementy projektu może być oparte na plikach lub systemem plików:
 
--   Elementy opartej na plikach może być lokalny lub zdalny. W projektach sieci Web w języku C# na przykład połączenia z plikami w systemie zdalnym są zachowywane lokalnie, a same pliki utrwalanie w systemie zdalnym.
+- Elementy opartej na plikach może być lokalny lub zdalny. W projektach sieci Web w języku C# na przykład połączenia z plikami w systemie zdalnym są zachowywane lokalnie, a same pliki utrwalanie w systemie zdalnym.
 
--   Elementy non-file-based zapisać elementy z bazą danych lub repozytorium.
+- Elementy non-file-based zapisać elementy z bazą danych lub repozytorium.
 
 ## <a name="commit-models"></a>Zatwierdź modeli
  Po podjęciu decyzji o tym, gdzie znajdują się elementy projektu, musisz wybrać model odpowiednie zatwierdzenia. Na przykład w modelu opartych na plikach z lokalnymi plikami, każdy projekt zapisaniem autonomicznie. W modelu repozytorium można zapisać kilka elementów w ramach jednej transakcji. Aby uzyskać więcej informacji, zobacz [decyzje projektowe dotyczące typów projektu](../../extensibility/internals/project-type-design-decisions.md).

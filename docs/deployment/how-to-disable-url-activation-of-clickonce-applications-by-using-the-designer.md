@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46786b0a11c4be6614732a224b755542b637d662
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c4da1ba726253891ef7df2ccfde8a667ac11ad8d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635452"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100238"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Instrukcje: Wyłączanie aktywacji adresu URL aplikacji ClickOnce przy użyciu narzędzia Projektant
 Zazwyczaj [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji rozpocznie się automatycznie natychmiast, po zakończeniu instalacji z serwera sieci Web. Ze względów bezpieczeństwa może zdecydować wyłączyć to zachowanie i poinformuj użytkowników, aby uruchomić aplikację z **Start** menu zamiast tego. Poniższa procedura opisuje sposób wyłączanie aktywacji adresu URL.
@@ -34,17 +34,17 @@ Zazwyczaj [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] apli
 
 #### <a name="to-disable-url-activation-for-your-application"></a>Aby wyłączanie aktywacji adresu URL aplikacji
 
-1.  Kliknij prawym przyciskiem myszy nazwę projektu w **Eksploratora rozwiązań**i kliknij przycisk **właściwości**.
+1. Kliknij prawym przyciskiem myszy nazwę projektu w **Eksploratora rozwiązań**i kliknij przycisk **właściwości**.
 
-2.  Na **właściwości** kliknij **Publikuj** kartę.
+2. Na **właściwości** kliknij **Publikuj** kartę.
 
-3.  Kliknij przycisk **opcje**.
+3. Kliknij przycisk **opcje**.
 
-4.  Kliknij przycisk **manifesty**.
+4. Kliknij przycisk **manifesty**.
 
-5.  Zaznacz pole wyboru przy opcji **Block aktywowania aplikacji za pomocą adresu URL**.
+5. Zaznacz pole wyboru przy opcji **Block aktywowania aplikacji za pomocą adresu URL**.
 
-6.  Wdrażanie aplikacji.
+6. Wdrażanie aplikacji.
 
 ## <a name="see-also"></a>Zobacz także
 - [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)

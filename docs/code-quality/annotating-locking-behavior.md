@@ -32,12 +32,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ace3a8b729a9d0f54817bdad2eb5b8ee5343c0a9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6590a07ec7fc67bef5f1b1cfd96e80105fa325ce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653011"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053732"
 ---
 # <a name="annotating-locking-behavior"></a>Dodawanie adnotacji do zachowania blokującego
 Aby uniknąć błędów współbieżności w programach wielowątkowych, zawsze postępuj zgodnie z odpowiednią dyscypliny blokowania i korzystanie z adnotacji SAL.
@@ -55,11 +55,11 @@ Aby uniknąć błędów współbieżności w programach wielowątkowych, zawsze 
 
  Niektóre reguły własność wątku na uwadze:
 
--   Pokrętła blokady są uncounted blokad, które mieć prawa własności do zwykłego wątku.
+- Pokrętła blokady są uncounted blokad, które mieć prawa własności do zwykłego wątku.
 
--   Sekcji krytycznych i Muteksy są liczone blokad, które mieć prawa własności do zwykłego wątku.
+- Sekcji krytycznych i Muteksy są liczone blokad, które mieć prawa własności do zwykłego wątku.
 
--   Semaforów i zdarzenia są zliczane blokad, które nie mają własność wyczyść wątku.
+- Semaforów i zdarzenia są zliczane blokad, które nie mają własność wyczyść wątku.
 
 ## <a name="locking-annotations"></a>Blokowanie adnotacji
  W poniższej tabeli wymieniono blokowania adnotacji.

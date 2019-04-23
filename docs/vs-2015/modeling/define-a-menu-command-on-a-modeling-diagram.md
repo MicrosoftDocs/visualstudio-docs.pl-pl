@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef029cc6e931509997ad6f094adedc7d96e4bcd3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f5805483b78798aabc3641c6aa17379370c6a199
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670327"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046250"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definiowanie polecenia menu w diagramie modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skr
 ## <a name="defining-the-menu-command"></a>Definiowanie polecenia menu  
  Aby utworzyć polecenie menu dla projektanta UML, należy utworzyć klasę, która definiuje zachowanie polecenia i osadzić tę klasę w Visual Studio Integration rozszerzenie (VSIX). VSIX działa jako kontener, który może zainstalować polecenia. Istnieją dwie alternatywne metody definiowania polecenia menu:  
 
--   **Utwórz polecenie menu w jego własnym VSIX przy użyciu szablonu projektu.** Jest to szybsza metoda. Użyj go, jeśli nie chcesz połączyć poleceń menu z innymi rodzajami rozszerzeń takich jak rozszerzenia sprawdzania poprawności, elementy do przybornika niestandardowego lub program obsługi gestów.  
+- **Utwórz polecenie menu w jego własnym VSIX przy użyciu szablonu projektu.** Jest to szybsza metoda. Użyj go, jeśli nie chcesz połączyć poleceń menu z innymi rodzajami rozszerzeń takich jak rozszerzenia sprawdzania poprawności, elementy do przybornika niestandardowego lub program obsługi gestów.  
 
--   **Utwórz osobne polecenie menu i projektów VSIX.** Użyj tej metody, jeśli chcesz połączyć kilka rodzajów rozszerzeń w samym VSIX. Na przykład jeśli polecenie menu oczekuje modelu do przestrzegania szczególnych ograniczeń, można ją osadzić w samym VSIX jako metodę sprawdzania poprawności.  
+- **Utwórz osobne polecenie menu i projektów VSIX.** Użyj tej metody, jeśli chcesz połączyć kilka rodzajów rozszerzeń w samym VSIX. Na przykład jeśli polecenie menu oczekuje modelu do przestrzegania szczególnych ograniczeń, można ją osadzić w samym VSIX jako metodę sprawdzania poprawności.  
 
 #### <a name="to-create-a-menu-command-in-its-own-vsix"></a>Aby utworzyć polecenie menu w jego własnym VSIX  
 
@@ -55,13 +55,13 @@ W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skr
 
 1. Utwórz projekt biblioteki klas w nowym rozwiązaniu programu Visual Studio lub w istniejącym rozwiązaniu.  
 
-   1.  Na **pliku** menu, wybierz **New**, **projektu**.  
+   1. Na **pliku** menu, wybierz **New**, **projektu**.  
 
-   2.  W obszarze **zainstalowane szablony**, wybierz opcję **Visual C#** lub **języka Visual Basic**. W środkowej kolumnie Wybierz **biblioteki klas**.  
+   2. W obszarze **zainstalowane szablony**, wybierz opcję **Visual C#** lub **języka Visual Basic**. W środkowej kolumnie Wybierz **biblioteki klas**.  
 
-   3.  Ustaw **rozwiązania** do wskazania, czy chcesz, aby utworzyć nowe rozwiązanie lub dodać składnik do rozwiązania VSIX, które jest już otwarte.  
+   3. Ustaw **rozwiązania** do wskazania, czy chcesz, aby utworzyć nowe rozwiązanie lub dodać składnik do rozwiązania VSIX, które jest już otwarte.  
 
-   4.  Ustaw projekt nazwę i lokalizację i kliknij przycisk OK.  
+   4. Ustaw projekt nazwę i lokalizację i kliknij przycisk OK.  
 
 2. Dodaj następujące odwołania do projektu.  
 
@@ -142,23 +142,23 @@ W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skr
 
 #### <a name="to-add-a-menu-command-to-a-vsix-project"></a>Aby dodać polecenie menu do projektu VSIX  
 
-1.  Nie potrzebujesz tej procedury po utworzeniu polecenia menu z własnej VSIX.  
+1. Nie potrzebujesz tej procedury po utworzeniu polecenia menu z własnej VSIX.  
 
-2.  Utwórz projekt VSIX, chyba że rozwiązanie zawiera już jeden.  
+2. Utwórz projekt VSIX, chyba że rozwiązanie zawiera już jeden.  
 
-    1.  W **Eksploratora rozwiązań**, w menu skrótów rozwiązania wybierz **Dodaj**, **nowy projekt**.  
+    1. W **Eksploratora rozwiązań**, w menu skrótów rozwiązania wybierz **Dodaj**, **nowy projekt**.  
 
-    2.  W obszarze **zainstalowane szablony**, rozwiń węzeł **Visual C#** lub **języka Visual Basic**, następnie wybierz **rozszerzalności**. W środkowej kolumnie Wybierz **projekt VSIX**.  
+    2. W obszarze **zainstalowane szablony**, rozwiń węzeł **Visual C#** lub **języka Visual Basic**, następnie wybierz **rozszerzalności**. W środkowej kolumnie Wybierz **projekt VSIX**.  
 
-3.  W Eksploratorze rozwiązań w menu skrótów projektu VSIX wybierz **Ustaw jako projekt startowy**.  
+3. W Eksploratorze rozwiązań w menu skrótów projektu VSIX wybierz **Ustaw jako projekt startowy**.  
 
-4.  Otwórz **source.extension.vsixmanifest**.  
+4. Otwórz **source.extension.vsixmanifest**.  
 
-    1.  Na **metadanych** kartę, ustaw nazwę VSIX.  
+    1. Na **metadanych** kartę, ustaw nazwę VSIX.  
 
-    2.  Na **Instaluj obiekty docelowe** kartę, należy ustawić wersji programu Visual Studio jako obiekty docelowe.  
+    2. Na **Instaluj obiekty docelowe** kartę, należy ustawić wersji programu Visual Studio jako obiekty docelowe.  
 
-    3.  Na **zasoby** kartę, wybrać **New**i w oknie dialogowym Ustaw:  
+    3. Na **zasoby** kartę, wybrać **New**i w oknie dialogowym Ustaw:  
 
          **Typ** = **składnik MEF**  
 
@@ -166,7 +166,7 @@ W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skr
 
          **Projekt** = *projektu biblioteki klas*  
 
-##  <a name="Implementing"></a> Implementowanie polecenia Menu  
+## <a name="Implementing"></a> Implementowanie polecenia Menu  
  Klasa polecenia menu implementują metody wymagane dla <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>.  
 
 |||  
@@ -209,57 +209,57 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
  Jednak należy pamiętać, że magazyn modelu nie jest bezpieczny dla wątków. Należy zawsze Użyj wątku interfejsu użytkownika, aby wprowadzić aktualizacje i jeśli to możliwe, uniemożliwia użytkownikowi wprowadzanie zmian w trakcie operacji w tle. Aby uzyskać przykład, zobacz [aktualizowanie modelu UML z wątku w tle](../modeling/update-a-uml-model-from-a-background-thread.md).  
 
-##  <a name="Executing"></a> Wykonywanie polecenia Menu  
+## <a name="Executing"></a> Wykonywanie polecenia Menu  
  Do celów testowych wykonaj polecenia w trybie debugowania.  
 
 #### <a name="to-test-the-menu-command"></a>Aby przetestować polecenia menu  
 
-1.  Naciśnij klawisz **F5**, lub na **debugowania** menu, wybierz **Rozpocznij debugowanie**.  
+1. Naciśnij klawisz **F5**, lub na **debugowania** menu, wybierz **Rozpocznij debugowanie**.  
 
      Eksperymentalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozpoczyna się.  
 
      **Rozwiązywanie problemów z**: Jeśli nowy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nie można uruchomić:  
 
-    -   Jeśli masz więcej niż jeden projekt, upewnij się, że projekt VSIX jest ustawiony jako projekt startowy rozwiązania.  
+    - Jeśli masz więcej niż jeden projekt, upewnij się, że projekt VSIX jest ustawiony jako projekt startowy rozwiązania.  
 
-    -   W Eksploratorze rozwiązań w menu skrótów uruchamiania lub tylko projektu, wybierz **właściwości**. W edytorze właściwości projektu zaznacz **debugowania** kartę. Upewnij się, że ciąg w **uruchomienia programu zewnętrznego** pole jest pełna nazwa ścieżki [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zazwyczaj:  
+    - W Eksploratorze rozwiązań w menu skrótów uruchamiania lub tylko projektu, wybierz **właściwości**. W edytorze właściwości projektu zaznacz **debugowania** kartę. Upewnij się, że ciąg w **uruchomienia programu zewnętrznego** pole jest pełna nazwa ścieżki [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zazwyczaj:  
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
 
-2.  W eksperymentalnym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], Otwórz lub Utwórz projekt modelowania i otworzyć lub utworzyć diagram modelowania. Użyj diagramu, który należy do jednego z typów wymienionych w atrybucie klasy polecenia menu.  
+2. W eksperymentalnym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], Otwórz lub Utwórz projekt modelowania i otworzyć lub utworzyć diagram modelowania. Użyj diagramu, który należy do jednego z typów wymienionych w atrybucie klasy polecenia menu.  
 
-3.  Otwórz menu skrótów w dowolnym miejscu na diagramie. Twoje polecenie powinno pojawić się w menu.  
+3. Otwórz menu skrótów w dowolnym miejscu na diagramie. Twoje polecenie powinno pojawić się w menu.  
 
      **Rozwiązywanie problemów z**: Jeśli nie ma polecenia menu, upewnij się, że:  
 
-    -   Projekt polecenia menu jest wymieniony jako składnik listy MEF **zasoby** karcie **source.extensions.manifest** w projekcie VSIX.  
+    - Projekt polecenia menu jest wymieniony jako składnik listy MEF **zasoby** karcie **source.extensions.manifest** w projekcie VSIX.  
 
-    -   Parametry `Import` i `Export` atrybuty są prawidłowe.  
+    - Parametry `Import` i `Export` atrybuty są prawidłowe.  
 
-    -   `QueryStatus` Metoda nie ustawia `command`.`Enabled` lub `Visible` polom `false`.  
+    - `QueryStatus` Metoda nie ustawia `command`.`Enabled` lub `Visible` polom `false`.  
 
-    -   Typ diagramu modelu, że używasz (UML klasy, sekwencja i tak dalej) jest wymieniony jako jeden z atrybutów klasy polecenia menu `[ClassDesignerExtension]`, `[SequenceDesignerExtension]` i tak dalej.  
+    - Typ diagramu modelu, że używasz (UML klasy, sekwencja i tak dalej) jest wymieniony jako jeden z atrybutów klasy polecenia menu `[ClassDesignerExtension]`, `[SequenceDesignerExtension]` i tak dalej.  
 
-##  <a name="Installing"></a> Instalowanie i odinstalowywanie rozszerzenia  
+## <a name="Installing"></a> Instalowanie i odinstalowywanie rozszerzenia  
  Możesz zainstalować [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] rozszerzenie zarówno na swoim komputerze, jak i na innych komputerach.  
 
 #### <a name="to-install-an-extension"></a>Aby zainstalować rozszerzenie  
 
-1.  Na komputerze, należy znaleźć **.vsix** pliku, który został zbudowany w danym projekcie VSIX.  
+1. Na komputerze, należy znaleźć **.vsix** pliku, który został zbudowany w danym projekcie VSIX.  
 
-    1.  W **Eksploratora rozwiązań**, w menu skrótów projektu VSIX wybierz **Otwórz Folder w Eksploratorze Windows**.  
+    1. W **Eksploratora rozwiązań**, w menu skrótów projektu VSIX wybierz **Otwórz Folder w Eksploratorze Windows**.  
 
-    2.  Zlokalizuj plik **bin\\\*\\**_YourProject_**.vsix**  
+    2. Zlokalizuj plik **bin\\\*\\**_YourProject_**.vsix**  
 
-2.  Kopiuj **.vsix** plik na komputer docelowy, na którym chcesz zainstalować rozszerzenie. Może to być Twój własny komputer lub innej.  
+2. Kopiuj **.vsix** plik na komputer docelowy, na którym chcesz zainstalować rozszerzenie. Może to być Twój własny komputer lub innej.  
 
      Komputer docelowy musi mieć jedną z wersji [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] ustawionego w **source.extension.vsixmanifest**.  
 
-3.  Na komputerze docelowym, otwórz **.vsix** pliku, na przykład, klikając go dwukrotnie.  
+3. Na komputerze docelowym, otwórz **.vsix** pliku, na przykład, klikając go dwukrotnie.  
 
      **Instalator rozszerzenia programu Visual Studio** otwiera i instaluje rozszerzenia.  
 
-4.  Uruchom lub uruchom ponownie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+4. Uruchom lub uruchom ponownie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
 
 #### <a name="to-uninstall-an-extension"></a>Aby odinstalować rozszerzenie  
 
@@ -273,7 +273,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    *% LocalAppData %* **\Local\Microsoft\VisualStudio\\\Extensions [wersja]**  
 
-##  <a name="MenuExample"></a> Przykład  
+## <a name="MenuExample"></a> Przykład  
  Poniższy przykład pokazuje kod dla polecenia menu, które zamieni nazwy dwóch elementów na diagramie klasy. Ten kod musi być zbudowany w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenie projektu i zainstalowany zgodnie z opisem w poprzedniej sekcji.  
 
 ```  

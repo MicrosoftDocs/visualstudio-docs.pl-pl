@@ -23,12 +23,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee796418658ec0825a76d60607b77813f84e4144
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ad6fa498fe9b89854f7fe3c74af9636b5b59e47f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777895"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053822"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Przewodnik: Debugowanie formularza internetowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,25 +42,25 @@ Kroki opisane w tym instruktażu pokazano, jak można debugować [!INCLUDE[vstec
   
 ### <a name="to-create-the-web-form"></a>Aby utworzyć formularz sieci Web  
   
-1.  Jeśli masz już rozwiązania otwarte, zamknij go.  
+1. Jeśli masz już rozwiązania otwarte, zamknij go.  
   
-2.  Na **pliku** menu, kliknij przycisk **New**, a następnie kliknij przycisk **witryny sieci Web**.  
+2. Na **pliku** menu, kliknij przycisk **New**, a następnie kliknij przycisk **witryny sieci Web**.  
   
      **Nową witrynę sieci Web** pojawi się okno dialogowe.  
   
-3.  W **szablony** okienku kliknij **witryny sieci Web platformy ASP.NET**.  
+3. W **szablony** okienku kliknij **witryny sieci Web platformy ASP.NET**.  
   
-4.  Na **lokalizacji** wiersz, kliknij przycisk **HTTP** z listy, a następnie w polu tekstowym, wpisz **http://localhost/WebSite**.  
+4. Na **lokalizacji** wiersz, kliknij przycisk **HTTP** z listy, a następnie w polu tekstowym, wpisz **http://localhost/WebSite**.  
   
-5.  W **języka** kliknij **Visual C#** lub **języka Visual Basic**.  
+5. W **języka** kliknij **Visual C#** lub **języka Visual Basic**.  
   
-6.  Kliknij przycisk **OK**.  
+6. Kliknij przycisk **OK**.  
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Tworzy nowy projekt i wyświetla domyślny kod źródłowy HTML. Tworzy również nowy katalog wirtualny o nazwie **witryny sieci Web** w obszarze **domyślna witryna sieci Web** w usługach IIS.  
   
-7.  Kliknij przycisk **projektowania** karty dolny margines.  
+7. Kliknij przycisk **projektowania** karty dolny margines.  
   
-8.  Kliknij przycisk **przybornika** kartę na lewym marginesie, lub wybierz ją na **widoku** menu.  
+8. Kliknij przycisk **przybornika** kartę na lewym marginesie, lub wybierz ją na **widoku** menu.  
   
      **Przybornika** zostanie otwarty.  
   
@@ -90,7 +90,7 @@ Kroki opisane w tym instruktażu pokazano, jak można debugować [!INCLUDE[vstec
   
 ### <a name="to-debug-the-web-form"></a>Aby debugować formularz sieci Web  
   
-1.  W oknie Default.aspx.cs lub Default.aspx.vb należy kliknąć lewy margines w tym samym wierszu jako tekst, który został dodany:  
+1. W oknie Default.aspx.cs lub Default.aspx.vb należy kliknąć lewy margines w tym samym wierszu jako tekst, który został dodany:  
   
     ```  
     ' Visual Basic  
@@ -102,19 +102,19 @@ Kroki opisane w tym instruktażu pokazano, jak można debugować [!INCLUDE[vstec
   
      Pojawi się czerwona kropka i tekst w wierszu zostanie wyróżniony czerwonym kolorem. Czerwona kropka reprezentuje punkt przerwania. Po uruchomieniu aplikacji w trybie debugowania, debuger zlokalizuje miejsce trafienia kodu i przerwie tam wykonywanie. Można wówczas wyświetlić stan aplikacji i zdebugować ją. Aby uzyskać więcej informacji, zobacz [punktów przerwania](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
-2.  Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.  
+2. Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.  
   
-3.  **Debugowanie nie włączone** pojawi się okno dialogowe. Wybierz **modyfikowanie pliku Web.config, aby włączyć debugowanie** opcji, a następnie kliknij przycisk **OK**.  
+3. **Debugowanie nie włączone** pojawi się okno dialogowe. Wybierz **modyfikowanie pliku Web.config, aby włączyć debugowanie** opcji, a następnie kliknij przycisk **OK**.  
   
      Internet Explorer rozpoczyna się i zostanie wyświetlona strona, która została zaprojektowana.  
   
-4.  W programie Internet Explorer kliknij przycisk.  
+4. W programie Internet Explorer kliknij przycisk.  
   
      W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], spowoduje to przejście do wiersza gdzie ustawić punkt przerwania na stronę kodową Default.aspx.cs lub Default.aspx.vb. Ten wiersz powinien być wyróżniony żółtym kolorem. Można teraz wyświetlić zmienne w aplikacji i kontrolować jej wykonanie. Zatrzymuje wykonywanie i czeka, aż polecenie od Ciebie aplikacji.  
   
-5.  Na **debugowania** menu, kliknij przycisk **Windows**, następnie kliknij przycisk **Obejrzyj**, a następnie kliknij przycisk **Watch1**.  
+5. Na **debugowania** menu, kliknij przycisk **Windows**, następnie kliknij przycisk **Obejrzyj**, a następnie kliknij przycisk **Watch1**.  
   
-6.  W **Obejrzyj** okna, typ **TextBox1.Text**.  
+6. W **Obejrzyj** okna, typ **TextBox1.Text**.  
   
      **Obejrzyj** okno pokazuje wartość zmiennej `TextBox1.Text`:  
   
@@ -122,7 +122,7 @@ Kroki opisane w tym instruktażu pokazano, jak można debugować [!INCLUDE[vstec
     ""  
     ```  
   
-7.  Na **debugowania** menu, kliknij przycisk **Step Over**.  
+7. Na **debugowania** menu, kliknij przycisk **Step Over**.  
   
      Wartość `TextBox1.Text` zmian **Obejrzyj** okna do odczytu:  
   
@@ -130,7 +130,7 @@ Kroki opisane w tym instruktażu pokazano, jak można debugować [!INCLUDE[vstec
     "Button was clicked!"  
     ```  
   
-8.  Na **debugowania** menu, kliknij przycisk **Kontynuuj**.  
+8. Na **debugowania** menu, kliknij przycisk **Kontynuuj**.  
   
 9. W programie Internet Explorer kliknij ponownie przycisk.  
   
@@ -144,9 +144,9 @@ Kroki opisane w tym instruktażu pokazano, jak można debugować [!INCLUDE[vstec
   
 ### <a name="to-attach-to-the-web-form-for-debugging"></a>Aby dołączyć do formularza sieci Web do debugowania  
   
-1.  W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] można dołączyć debuger do działającego procesu. Najbardziej efektywne, debugowanie, skompiluj plik wykonywalny jako wersja do debugowania przy użyciu plików symboli (PDB).  
+1. W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] można dołączyć debuger do działającego procesu. Najbardziej efektywne, debugowanie, skompiluj plik wykonywalny jako wersja do debugowania przy użyciu plików symboli (PDB).  
   
-2.  W oknie Default.aspx.cs lub Default.aspx.vb kliknij na lewym marginesie, aby ponownie ustawić punkt przerwania w dodanym wierszu:  
+2. W oknie Default.aspx.cs lub Default.aspx.vb kliknij na lewym marginesie, aby ponownie ustawić punkt przerwania w dodanym wierszu:  
   
     ```  
     ' Visual Basic  
@@ -156,17 +156,17 @@ Kroki opisane w tym instruktażu pokazano, jak można debugować [!INCLUDE[vstec
     textBox1.Text = "Button was clicked!";  
     ```  
   
-3.  Na **debugowania** menu, kliknij przycisk **Rozpocznij bez debugowania**.  
+3. Na **debugowania** menu, kliknij przycisk **Rozpocznij bez debugowania**.  
   
      Formularz sieci Web zaczyna być uruchamiana w ramach programu Internet Explorer, ale nie jest dołączony debuger.  
   
-4.  Dołącz do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu. Aby uzyskać więcej informacji, zobacz [debugowania wdrożonych aplikacji sieci Web](../debugger/debugging-deployed-web-applications.md).  
+4. Dołącz do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu. Aby uzyskać więcej informacji, zobacz [debugowania wdrożonych aplikacji sieci Web](../debugger/debugging-deployed-web-applications.md).  
   
-5.  W programie Internet Explorer kliknij przycisk w formularzu.  
+5. W programie Internet Explorer kliknij przycisk w formularzu.  
   
      W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], powinien trafiony punkt przerwania w Default.aspx.cs, Default.aspx.vb lub Default.aspx.  
   
-6.  Po zakończeniu debugowania na **debugowania** menu, kliknij przycisk **Zatrzymaj debugowanie**.  
+6. Po zakończeniu debugowania na **debugowania** menu, kliknij przycisk **Zatrzymaj debugowanie**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji ASP.NET i AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)

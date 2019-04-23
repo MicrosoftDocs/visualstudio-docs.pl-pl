@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fb6897d9dd603b5a86a6774336d64f51a6bb5d6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0cb6b6d7969742f4cd1c155e800464a6f645649d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908624"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043832"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Korzystanie z zasobów 3D w grach i aplikacjach
 
@@ -34,9 +34,9 @@ Przed wdrożeniem 3D zasobów jako część kompilacji programu Visual Studio mu
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>Aby dodać dostosowania kompilacji do projektu
 
-1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **zależności kompilacji** > **dostosowania kompilacji**. **Pliki z dostosowywania kompilacji Visual C++** pojawi się okno dialogowe.
+1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **zależności kompilacji** > **dostosowania kompilacji**. **Pliki z dostosowywania kompilacji Visual C++** pojawi się okno dialogowe.
 
-2.  W obszarze **dostępne pliki dostosowania kompilacji**, zaznacz pole wyboru, które odpowiadają typom zasobów, które chcesz użyć w projekcie, zgodnie z opisem w poniższej tabeli:
+2. W obszarze **dostępne pliki dostosowania kompilacji**, zaznacz pole wyboru, które odpowiadają typom zasobów, które chcesz użyć w projekcie, zgodnie z opisem w poniższej tabeli:
 
     |Typ zasobu|Nazwa dostosowania kompilacji|
     |----------------| - |
@@ -44,23 +44,23 @@ Przed wdrożeniem 3D zasobów jako część kompilacji programu Visual Studio mu
     |Modele 3D|**MeshContentTask (.targets, .props)**|
     |Programy do cieniowania|**ShaderGraphContentTask(.targets, .props)**|
 
-3.  Wybierz **OK** przycisku.
+3. Wybierz **OK** przycisku.
 
 ## <a name="include-assets-in-your-build"></a>Objęte zasoby kompilacji
  Teraz, gdy projektu wie o różnych rodzajów zasobów 3D, które chcesz użyć, następnym krokiem jest stwierdzenie, które pliki są zasobami 3D i jakie typy zasobów są.
 
 ### <a name="to-add-an-asset-to-your-build"></a>Aby dodać składnik aktywów do kompilacji
 
-1.  W **Eksploratora rozwiązań**w swoim projekcie Otwórz menu skrótów elementu zawartości, a następnie wybierz **właściwości**. Zasób **strona właściwości** pojawi się okno dialogowe.
+1. W **Eksploratora rozwiązań**w swoim projekcie Otwórz menu skrótów elementu zawartości, a następnie wybierz **właściwości**. Zasób **strona właściwości** pojawi się okno dialogowe.
 
-2.  Upewnij się, że **konfiguracji** i **platformy** właściwości są ustawiane na wartości, do których mają zostać zastosowane zmiany.
+2. Upewnij się, że **konfiguracji** i **platformy** właściwości są ustawiane na wartości, do których mają zostać zastosowane zmiany.
 
-3.  W obszarze **właściwości konfiguracji**, wybierz **ogólne**, a następnie w siatce właściwości w obszarze **ogólne**ustaw **typu elementu** właściwości typem elementu potoku zawartości. Na przykład pliku obrazu lub tekstury wybierz **potok zawartości obrazu**.
+3. W obszarze **właściwości konfiguracji**, wybierz **ogólne**, a następnie w siatce właściwości w obszarze **ogólne**ustaw **typu elementu** właściwości typem elementu potoku zawartości. Na przykład pliku obrazu lub tekstury wybierz **potok zawartości obrazu**.
 
     > [!IMPORTANT]
     > Domyślnie program Visual Studio zakłada, że wiele rodzajów plików obrazu należy podzielić na kategorie za pomocą **obraz** elementu typu, która jest wbudowana w program Visual Studio. W związku z tym, należy zmienić **typu elementu** właściwość każdego obrazu, który ma być przetwarzany przez potok zawartości obrazu. Inne typy zawartości potoku pliki źródłowe dla modeli 3D i wizualnego modułu cieniującego grafiki domyślnie poprawny **typu elementu**.
 
-4.  Wybierz **OK** przycisku.
+4. Wybierz **OK** przycisku.
 
 Poniżej przedstawiono trzy typy elementów potoku zawartości i ich skojarzone źródło i dane wyjściowe typów plików.
 
@@ -76,13 +76,13 @@ Można ustawić właściwości potoku zawartości każdego pliku zasobów, dzię
 
 ### <a name="to-configure-content-pipeline-properties"></a>Aby skonfigurować właściwości potoku zawartości
 
-1.  W **Eksploratora rozwiązań**w swoim projekcie Otwórz menu skrótów dla pliku zasobów, a następnie wybierz **właściwości**. Zasób **strona właściwości** pojawi się okno dialogowe.
+1. W **Eksploratora rozwiązań**w swoim projekcie Otwórz menu skrótów dla pliku zasobów, a następnie wybierz **właściwości**. Zasób **strona właściwości** pojawi się okno dialogowe.
 
-2.  Upewnij się, że **konfiguracji** i **platformy** właściwości są ustawione na wartości, które mają zostać zastosowane do zmiany.
+2. Upewnij się, że **konfiguracji** i **platformy** właściwości są ustawione na wartości, które mają zostać zastosowane do zmiany.
 
-3.  W obszarze **właściwości konfiguracji**, wybierz węzeł potoku zawartości — na przykład **potok zawartości obrazu** dla tekstur i obrazów — a następnie w siatce właściwości ustaw właściwości odpowiednie wartości. Na przykład, aby wygenerować mapy MIP dla trwałego tekstura w czasie kompilacji, należy ustawić **Generuj Mips** właściwości **tak**.
+3. W obszarze **właściwości konfiguracji**, wybierz węzeł potoku zawartości — na przykład **potok zawartości obrazu** dla tekstur i obrazów — a następnie w siatce właściwości ustaw właściwości odpowiednie wartości. Na przykład, aby wygenerować mapy MIP dla trwałego tekstura w czasie kompilacji, należy ustawić **Generuj Mips** właściwości **tak**.
 
-4.  Wybierz **OK** przycisku.
+4. Wybierz **OK** przycisku.
 
 ### <a name="image-content-pipeline-configuration"></a>Konfiguracja potoku zawartości obrazów
 

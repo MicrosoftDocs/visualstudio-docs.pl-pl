@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7935176505e535c35b1c864e56cd314a75e7897c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c9d088be89e2cf963df65a0163713c297615121
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764119"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097482"
 ---
 # <a name="how-to-model-3-d-terrain"></a>Instrukcje: Model terenu 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ Ten dokument przedstawia sposób tworzenia modelu terenu 3D za pomocą edytora m
   
  Ten dokument przedstawia te działania:  
   
--   Dodawanie obiektów do sceny  
+- Dodawanie obiektów do sceny  
   
--   Zaznaczanie twarzy i punktów  
+- Zaznaczanie twarzy i punktów  
   
--   Opcje przekształcania  
+- Opcje przekształcania  
   
--   Za pomocą **Podziel pierwszy plan** narzędzia  
+- Za pomocą **Podziel pierwszy plan** narzędzia  
   
--   Ramek na powierzchnię obiektu  
+- Ramek na powierzchnię obiektu  
   
 ## <a name="creating-a-3-d-terrain-model"></a>Tworzenie modelu terenu 3D  
  Możesz utworzyć terenu 3D podpodział płaszczyzny zapewnienie dodatkowych twarzy, a następnie manipulowanie ich wierzchołki, aby tworzyć interesujące funkcje terenu.  

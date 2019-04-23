@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803fd69df06ae820e39d7edcfa54e56e59717a1c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3979138944671ff2809f4f73beb0a28b222ec5ff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053198"
 ---
 # <a name="inside-the-editor"></a>Wewnątrz edytora
 
@@ -152,7 +152,7 @@ Wszystkie migawki buforu tekstowego, do których one należą, możesz uzyskać 
 
 #### <a name="content-types"></a>Typy zawartości
 
-Typy zawartości to mechanizm służący do definiowania różnych typów zawartości. Typ zawartości może być typu pliku, takie jak "text", "code" lub "binary" lub typ technologii, np. "xml", "vb" lub "C#". Na przykład wyraz "using" jest słowem kluczowym w językach C# i Visual Basic, ale nie w innych językach programowania. W związku z tym definicja tego słowa kluczowego będzie ograniczona do typów zawartości "C#" i "vb".
+Typy zawartości to mechanizm służący do definiowania różnych typów zawartości. Typ zawartości może być typu pliku, takie jak "text", "code" lub "binary" lub typ technologii, np. "xml", "vb" lub "c#". Na przykład wyraz "using" jest słowem kluczowym w językach C# i Visual Basic, ale nie w innych językach programowania. W związku z tym definicja tego słowa kluczowego będzie ograniczona do typów zawartości "c#" i "vb".
 
 Typy zawartości są używane jako filtr dla zakończeń i innych elementów w edytorze. Wiele funkcji edytora i punkty rozszerzenia są zdefiniowane dla typu zawartości. Na przykład tekst kolorowanie różni się plikami ze zwykłym tekstem, pliki XML i pliki kodu źródłowego języka Visual Basic. Bufory tekstu ogólnie są przypisywane typu zawartości, są one tworzone, gdy typ zawartości buforu tekstowego można zmienić.
 
@@ -202,19 +202,19 @@ Widok tekstu Formatuje jedną <xref:Microsoft.VisualStudio.Text.ITextSnapshotLin
 
 Funkcje edytora zaprojektowano tak, aby definicji funkcji jest oddzielony od implementacji. Edytor zawiera następujące funkcje:
 
--   Znaczniki i klasyfikatorów
+- Znaczniki i klasyfikatorów
 
--   Zakończeń
+- Zakończeń
 
--   Rzut
+- Rzut
 
--   Tworzenie konspektu
+- Tworzenie konspektu
 
--   Mysz i klucz powiązania
+- Mysz i klucz powiązania
 
--   Operacje i w nim elementów podstawowych
+- Operacje i w nim elementów podstawowych
 
--   IntelliSense
+- IntelliSense
 
 ### <a name="tags-and-classifiers"></a>Znaczniki i klasyfikatorów
 
@@ -262,7 +262,7 @@ Osadzony zakończeń są grafiki, które stanowią część widoku tekstu sforma
 
 Wyskakujące zakończeń są grafiki, które są wyświetlane w małym oknie powyżej widoku tekstu, na przykład etykietek narzędzi.
 
-###  <a name="projection"></a> Projekcja
+### <a name="projection"></a> Projekcja
 
 Projekcja jest techniką tworzenia inny rodzaj buforu tekstu, który nie przechowuje tekst, ale zamiast tego łączy tekstu z innych buforów tekstu. Na przykład buforu projekcji można połączyć tekst z dwóch innych buforów i przedstawi wynik, tak jak w przypadku w buforze tylko jeden lub ukrycia fragmenty tekstu w buforze jeden. Bufor projekcji może działać jako bufor źródłowy do innego buforu projekcji. Zbiór buforów, które są powiązane przez projekcję można skonstruować tak, aby zmienić tekst na wiele różnych sposobów. (Taki zestaw jest również nazywany *wykres buforu*.) Funkcję tworzenia konspektów tekstu Visual Studio jest implementowany przy użyciu buforu projekcji ukryć zwinięty tekst i Edytor programu Visual Studio dla stron ASP.NET używa projekcji o obsłudze języków osadzone, takie jak Visual Basic i C#.
 

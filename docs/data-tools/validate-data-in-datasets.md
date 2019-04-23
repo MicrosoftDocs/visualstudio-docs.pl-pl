@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a68d93e43feea26dc62635fccb561f9c2bd025a5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1b7ef69d2bb7ac9390c82ffb4e17db27a49637aa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945810"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041594"
 ---
 # <a name="validate-data-in-datasets"></a>Weryfikowanie danych w zestawach danych
 Sprawdzanie poprawności danych jest procesem potwierdzania, że wartości wprowadzanych w obiektach danych są zgodne z ograniczeniami w schemacie elementu dataset. Proces weryfikacji potwierdza również, że postępujesz zgodnie z tych wartości reguły, które zostały utworzone dla aplikacji. Jest dobrą praktyką, aby sprawdzić poprawność danych przed wysłaniem aktualizacji do podstawowej bazy danych. Zmniejsza to błędy, a także potencjalną liczbę rund między aplikacją a bazą danych.
@@ -38,18 +38,18 @@ Jest najlepszym miejscem, aby dodać sprawdzanie poprawności do aplikacji w pli
 ## <a name="validate-data"></a>Sprawdzanie poprawności danych
  Sprawdzanie poprawności w zestawie danych odbywa się w następujący sposób:
 
--   Tworząc własne weryfikacji specyficzne dla aplikacji, które sprawdza, czy wartości w kolumnie danych podczas zmiany. Aby uzyskać więcej informacji, zobacz [jak: Sprawdzanie poprawności danych podczas zmiany kolumn](validate-data-in-datasets.md).
+- Tworząc własne weryfikacji specyficzne dla aplikacji, które sprawdza, czy wartości w kolumnie danych podczas zmiany. Aby uzyskać więcej informacji, zobacz [jak: Sprawdzanie poprawności danych podczas zmiany kolumn](validate-data-in-datasets.md).
 
--   Tworząc własne weryfikacji specyficzne dla aplikacji, które sprawdza, czy dane wartości podczas całego danymi wiersza ulegnie zmianie. Aby uzyskać więcej informacji, zobacz [jak: Sprawdzanie poprawności danych podczas przeprowadzania zmian w wierszach](validate-data-in-datasets.md).
+- Tworząc własne weryfikacji specyficzne dla aplikacji, które sprawdza, czy dane wartości podczas całego danymi wiersza ulegnie zmianie. Aby uzyskać więcej informacji, zobacz [jak: Sprawdzanie poprawności danych podczas przeprowadzania zmian w wierszach](validate-data-in-datasets.md).
 
--   Tworząc klucze, ograniczenia unikatowe, i tak dalej jako część definicji rzeczywiste schemat zestawu danych.
+- Tworząc klucze, ograniczenia unikatowe, i tak dalej jako część definicji rzeczywiste schemat zestawu danych.
 
--   Przez ustawienie właściwości <xref:System.Data.DataColumn> obiektu, takie jak <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>, i <xref:System.Data.DataColumn.Unique%2A>.
+- Przez ustawienie właściwości <xref:System.Data.DataColumn> obiektu, takie jak <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>, i <xref:System.Data.DataColumn.Unique%2A>.
 
 Kilka zdarzeń są inicjowane przez <xref:System.Data.DataTable> obiektu, kiedy zmiana odbywa się w rekordzie:
 
--   <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.ColumnChanged> zdarzenia są wywoływane podczas i po każdej zmianie do poszczególnych kolumn. <xref:System.Data.DataTable.ColumnChanging> Zdarzeń jest przydatne w przypadku, gdy chcesz zweryfikować zmiany w określonych kolumnach. Informacje o proponowana zmiana jest przekazywany jako argument ze zdarzeniem.
--   <xref:System.Data.DataTable.RowChanging> i <xref:System.Data.DataTable.RowChanged> zdarzenia są wywoływane podczas i po każdym zmianę w wierszu. <xref:System.Data.DataTable.RowChanging> Zdarzeń jest bardziej ogólny. Oznacza, że zmiany występuje gdzieś w wierszu, ale nie wiesz, która kolumna została zmieniona.
+- <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.ColumnChanged> zdarzenia są wywoływane podczas i po każdej zmianie do poszczególnych kolumn. <xref:System.Data.DataTable.ColumnChanging> Zdarzeń jest przydatne w przypadku, gdy chcesz zweryfikować zmiany w określonych kolumnach. Informacje o proponowana zmiana jest przekazywany jako argument ze zdarzeniem.
+- <xref:System.Data.DataTable.RowChanging> i <xref:System.Data.DataTable.RowChanged> zdarzenia są wywoływane podczas i po każdym zmianę w wierszu. <xref:System.Data.DataTable.RowChanging> Zdarzeń jest bardziej ogólny. Oznacza, że zmiany występuje gdzieś w wierszu, ale nie wiesz, która kolumna została zmieniona.
 
 Domyślnie każda zmiana z kolumną w związku z tym wywołuje cztery zdarzenia. Pierwsza to <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.ColumnChanged> zdarzenia dla określonej kolumny, która jest zmieniany. Następnie są <xref:System.Data.DataTable.RowChanging> i <xref:System.Data.DataTable.RowChanged> zdarzenia. Jeśli wiersz wprowadzono wiele zmian, zdarzenia zostanie wygenerowany dla każdej zmiany.
 
@@ -84,11 +84,11 @@ Jeśli aplikacja używa typizowany zestaw danych, można utworzyć procedury obs
 
 Można sprawdzić poprawność danych po zmianie wartości w kolumnie danych odpowiedzi na <xref:System.Data.DataTable.ColumnChanging> zdarzeń. Gdy wywoływane, zdarzenie to przekazuje argument zdarzeń (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>) zawierający wartość, która jest proponowany dla bieżącej kolumny. Oparte na zawartości `e.ProposedValue`, możesz:
 
--   Zaakceptuj wartość proponowaną przez czynności.
+- Zaakceptuj wartość proponowaną przez czynności.
 
--   Odrzuć proponowaną wartość przez ustawienie błędu kolumny (<xref:System.Data.DataRow.SetColumnError%2A>) z w ramach programu obsługi zdarzeń zmiany kolumny.
+- Odrzuć proponowaną wartość przez ustawienie błędu kolumny (<xref:System.Data.DataRow.SetColumnError%2A>) z w ramach programu obsługi zdarzeń zmiany kolumny.
 
--   Opcjonalnie użyć <xref:System.Windows.Forms.ErrorProvider> formantu, aby wyświetlić komunikat o błędzie dla użytkownika. Aby uzyskać więcej informacji, zobacz [ErrorProvider, składnik](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
+- Opcjonalnie użyć <xref:System.Windows.Forms.ErrorProvider> formantu, aby wyświetlić komunikat o błędzie dla użytkownika. Aby uzyskać więcej informacji, zobacz [ErrorProvider, składnik](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
 
 Można również wykonać sprawdzanie poprawności podczas <xref:System.Data.DataTable.RowChanging> zdarzeń.
 
@@ -97,9 +97,9 @@ Można napisać kod, aby sprawdzić, czy każda kolumny, której chcesz sprawdzi
 
 ### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>Do sprawdzania poprawności danych, gdy wiersz zmieni (Visual Basic)
 
-1.  Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie zestawu danych w Projektancie obiektów Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie zestawu danych w Projektancie obiektów Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
-2.  Kliknij dwukrotnie pasek tytułu tabeli, którą chcesz zweryfikować. Ta akcja powoduje automatyczne utworzenie <xref:System.Data.DataTable.RowChanging> program obsługi zdarzeń <xref:System.Data.DataTable> w pliku częściowej klasy zestawu danych.
+2. Kliknij dwukrotnie pasek tytułu tabeli, którą chcesz zweryfikować. Ta akcja powoduje automatyczne utworzenie <xref:System.Data.DataTable.RowChanging> program obsługi zdarzeń <xref:System.Data.DataTable> w pliku częściowej klasy zestawu danych.
 
     > [!TIP]
     >  Kliknij dwukrotnie po lewej stronie nazwy tabeli, aby utworzyć procedury obsługi zdarzeń zmiany wiersza. Jeśli klikniesz dwukrotnie nazwę tabeli, można go edytować.
@@ -108,14 +108,14 @@ Można napisać kod, aby sprawdzić, czy każda kolumny, której chcesz sprawdzi
 
 ### <a name="to-validate-data-when-a-row-changes-c"></a>Aby sprawdzić poprawność danych, gdy wiersz zmieni (C#)
 
-1.  Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie zestawu danych w Projektancie obiektów Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie zestawu danych w Projektancie obiektów Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
-2.  Kliknij dwukrotnie pasek tytułu tabeli, którą chcesz zweryfikować. Ta akcja tworzy plik częściowy klasy dla <xref:System.Data.DataTable>.
+2. Kliknij dwukrotnie pasek tytułu tabeli, którą chcesz zweryfikować. Ta akcja tworzy plik częściowy klasy dla <xref:System.Data.DataTable>.
 
     > [!NOTE]
     >  **Projektanta obiektów Dataset** nie tworzy automatycznie zdarzenia obsługi dla <xref:System.Data.DataTable.RowChanging> zdarzeń. Należy utworzyć metody, aby obsłużyć <xref:System.Data.DataTable.RowChanging> zdarzeń i wykonywania kodu, aby zaczepić zdarzenie w metodzie inicjalizacji tabeli.
 
-3.  Skopiuj następujący kod do klasy częściowej:
+3. Skopiuj następujący kod do klasy częściowej:
 
     ```csharp
     public override void EndInit()
@@ -149,7 +149,7 @@ Użyj <xref:System.Data.DataRowVersion> wyliczeniu, aby uzyskać dostęp do ró�
 
 ### <a name="to-get-all-changed-records-from-a-dataset"></a>Aby uzyskać wszystkie zmienionych rekordów z zestawu danych
 
--   Wywołaj <xref:System.Data.DataSet.GetChanges%2A> metoda zestawu danych.
+- Wywołaj <xref:System.Data.DataSet.GetChanges%2A> metoda zestawu danych.
 
      Poniższy przykład tworzy nowy zestaw danych o nazwie `changedRecords` i wypełnia zmienionych rekordów z innego zestawu danych o nazwie `dataSet1`.
 
@@ -158,7 +158,7 @@ Użyj <xref:System.Data.DataRowVersion> wyliczeniu, aby uzyskać dostęp do ró�
 
 ### <a name="to-get-all-changed-records-from-a-data-table"></a>Aby uzyskać wszystkie zmienionych rekordów z tabeli danych
 
--   Wywołaj <xref:System.Data.DataTable.GetChanges%2A> metoda DataTable.
+- Wywołaj <xref:System.Data.DataTable.GetChanges%2A> metoda DataTable.
 
      Poniższy przykład tworzy nową tabelę danych o nazwie `changedRecordsTable` i wypełnia zmienionych rekordów z innej tabeli danych o nazwie `dataTable1`.
 
@@ -167,7 +167,7 @@ Użyj <xref:System.Data.DataRowVersion> wyliczeniu, aby uzyskać dostęp do ró�
 
 ### <a name="to-get-all-records-that-have-a-specific-row-state"></a>Aby uzyskać wszystkie rekordy, które mają stan konkretnego wiersza
 
--   Wywołaj `GetChanges` metoda zestawu danych lub tabela danych i przekazać <xref:System.Data.DataRowState> wartość wyliczenia jako argument.
+- Wywołaj `GetChanges` metoda zestawu danych lub tabela danych i przekazać <xref:System.Data.DataRowState> wartość wyliczenia jako argument.
 
      Poniższy przykład pokazuje, jak utworzyć nowy zestaw danych o nazwie `addedRecords` i wypełnić je tylko w przypadku rekordów, które zostały dodane do `dataSet1` zestawu danych.
 
@@ -189,7 +189,7 @@ Przekazywanie <xref:System.Data.DataRowVersion> wartości wraz z indeks kolumny 
 
 ### <a name="to-get-the-original-version-of-a-record"></a>Aby uzyskać oryginalną wersję rekordu
 
--   Dostęp do wartości kolumny, przekazując <xref:System.Data.DataRowVersion> wiersza mają być zwracane.
+- Dostęp do wartości kolumny, przekazując <xref:System.Data.DataRowVersion> wiersza mają być zwracane.
 
      Poniższy przykład pokazuje, jak używać <xref:System.Data.DataRowVersion> wartości, aby uzyskać oryginalnej wartości elementu `CompanyName` pole <xref:System.Data.DataRow>:
 
@@ -200,7 +200,7 @@ Przekazywanie <xref:System.Data.DataRowVersion> wartości wraz z indeks kolumny 
 
 ### <a name="to-get-the-current-version-of-a-record"></a>Aby uzyskać bieżącą wersję rekordu
 
--   Dostęp do wartości kolumny, a następnie dodaj parametr do indeksu, który wskazuje na to, którą wersję wiersza należy zwrócić.
+- Dostęp do wartości kolumny, a następnie dodaj parametr do indeksu, który wskazuje na to, którą wersję wiersza należy zwrócić.
 
      Poniższy przykład pokazuje, jak używać <xref:System.Data.DataRowVersion> wartości, aby uzyskać bieżącą wartość `CompanyName` pole <xref:System.Data.DataRow>:
 

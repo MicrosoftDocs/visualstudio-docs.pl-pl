@@ -14,25 +14,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: becf63a9945c8e12f3c306da757e288a3fe8134c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ebdfdb1503570e08f38eed8efd278830756e50fa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645228"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048440"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Instrukcje: Ręczne tworzenie sesji wydajności
 Można ręcznie utworzyć sesję wydajności. Nie należy otworzyć projekt w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] w tym celu. Aby uzyskać więcej informacji, zobacz [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md).
 
 ### <a name="to-manually-create-a-performance-session"></a>Ręczne tworzenie sesji wydajności
 
-1.  Na **debugowania** menu wskaż **Profiler**, następnie **Eksplorator wydajności**, a następnie kliknij przycisk **nowa sesja wydajności**.
+1. Na **debugowania** menu wskaż **Profiler**, następnie **Eksplorator wydajności**, a następnie kliknij przycisk **nowa sesja wydajności**.
 
      Sesja wydajności puste jest dodawany do **Eksplorator wydajności**.
 
-2.  Kliknij prawym przyciskiem myszy **cele**, a następnie kliknij przycisk **Dodaj binarne docelowej**.
+2. Kliknij prawym przyciskiem myszy **cele**, a następnie kliknij przycisk **Dodaj binarne docelowej**.
 
-3.  W **Dodaj binarne docelowej** okno dialogowe, wybierz nazwę pliku, a następnie kliknij przycisk **Otwórz**.
+3. W **Dodaj binarne docelowej** okno dialogowe, wybierz nazwę pliku, a następnie kliknij przycisk **Otwórz**.
 
      Zostanie dodany nowy plik binarny.
 

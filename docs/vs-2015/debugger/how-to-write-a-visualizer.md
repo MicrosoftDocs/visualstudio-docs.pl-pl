@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2421121e343fabbe3f2ec7d88ec087c6b84c8709
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b0d27b8a326f72098df7f700c2bc3fac8b85e109
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766459"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092932"
 ---
 # <a name="how-to-write-a-visualizer"></a>Instrukcje: Pisanie wizualizatora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,19 +62,19 @@ Możesz napisać niestandardowego wizualizatora obiektu klasy zarządzanej z wyj
   
 ### <a name="to-create-the-debugger-side"></a>Aby utworzyć po stronie debugera  
   
-1.  Użyj <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> metody w celu uzyskania wizualizowanego obiektu po stronie debugera.  
+1. Użyj <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> metody w celu uzyskania wizualizowanego obiektu po stronie debugera.  
   
-2.  Utwórz klasę, która dziedziczy z <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>.  
+2. Utwórz klasę, która dziedziczy z <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>.  
   
-3.  Zastąp <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> metodę w celu wyświetlenia interfejsu. Użyj <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> metody w celu wyświetlenia formularzy Windows, okien dialogowych i formantów w ramach interfejsu.  
+3. Zastąp <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> metodę w celu wyświetlenia interfejsu. Użyj <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> metody w celu wyświetlenia formularzy Windows, okien dialogowych i formantów w ramach interfejsu.  
   
-4.  Zastosuj <xref:System.Diagnostics.DebuggerVisualizerAttribute>, nadając mu wizualizatora (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>).  
+4. Zastosuj <xref:System.Diagnostics.DebuggerVisualizerAttribute>, nadając mu wizualizatora (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>).  
   
 ### <a name="to-create-the-debuggee-side"></a>Aby utworzyć po stronie debugowanego obiektu  
   
-1.  Zastosuj <xref:System.Diagnostics.DebuggerVisualizerAttribute>, nadając mu wizualizatora (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) i źródła obiektu (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>). Jeżeli pominięto źródła obiektu, będą używane domyślne źródło obiektu  
+1. Zastosuj <xref:System.Diagnostics.DebuggerVisualizerAttribute>, nadając mu wizualizatora (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) i źródła obiektu (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>). Jeżeli pominięto źródła obiektu, będą używane domyślne źródło obiektu  
   
-2.  Jeśli chcesz, aby Twoje visualizer, aby można było edytować obiekty danych, również zgodnie z ich, wyświetlić należy zastąpić `TransferData` lub `CreateReplacementObject` metody z <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.  
+2. Jeśli chcesz, aby Twoje visualizer, aby można było edytować obiekty danych, również zgodnie z ich, wyświetlić należy zastąpić `TransferData` lub `CreateReplacementObject` metody z <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie niestandardowych Wizualizatorów](../debugger/create-custom-visualizers-of-data.md)   

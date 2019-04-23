@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4d1dd6d8f4d64400b4b2358dd47971f3111dcf1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3fc77e24a1a9ca72d6f689247f0de6a9e0bf26cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700695"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098938"
 ---
 # <a name="debugger-contexts"></a>Konteksty debugera
 W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowania, aparat debugowania (DE) działa jednocześnie w ramach kilku różnych kontekstach, w następujący sposób:
 
--   Kontekst kodu w tym artykule opisano bieżącej lokalizacji w usłudze stream wykonywania programu.
+- Kontekst kodu w tym artykule opisano bieżącej lokalizacji w usłudze stream wykonywania programu.
 
--   Dokumentacja kontekstu lub pozycji, który opisuje bieżącą pozycję w dokumencie źródłowym.
+- Dokumentacja kontekstu lub pozycji, który opisuje bieżącą pozycję w dokumencie źródłowym.
 
--   Kontekst oceny wyrażeń, który opisuje kontekst, w wyrażeniu, które odbędzie się oceny.
+- Kontekst oceny wyrażeń, który opisuje kontekst, w wyrażeniu, które odbędzie się oceny.
 
 ## <a name="in-this-section"></a>W tej sekcji
  [Kontekst kodu](../../extensibility/debugger/code-context.md) Discusses kontekst kodu jako adresu program strumień instrukcji w współczesnych środowiska wykonawczego architektury i nietradycyjnych języków, gdzie kod nie może być reprezentowany przez instrukcje, ale w inny sposób.

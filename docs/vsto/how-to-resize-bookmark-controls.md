@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1769ed711c0334ef14a3567478cc5010ec4165ea
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 04eefc37162eaa90743982a0039e21d1d9edfb1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644955"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090722"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Instrukcje: Zmiana rozmiaru formantów zakładki
   Ustaw rozmiar <xref:Microsoft.Office.Tools.Word.Bookmark> kontroli po dodaniu go do dokumentu programu Microsoft Office Word. Można też zmienić w późniejszym czasie.
@@ -47,15 +47,15 @@ ms.locfileid: "56644955"
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-design-time"></a>Aby zmienić rozmiar zakładki w projekcie na poziomie dokumentu w czasie projektowania
 
-1.  Wybierz zakładkę w **właściwości** okna.
+1. Wybierz zakładkę w **właściwości** okna.
 
-2.  Zwiększ lub zmniejsz wartość <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> właściwości.
+2. Zwiększ lub zmniejsz wartość <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> właściwości.
 
-3.  Zwiększ lub zmniejsz wartość <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> właściwości.
+3. Zwiększ lub zmniejsz wartość <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> właściwości.
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-runtime"></a>Aby zmienić rozmiar zakładki w projektach na poziomie dokumentu, w czasie wykonywania
 
-1.  Modyfikowanie <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> i <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> właściwości <xref:Microsoft.Office.Tools.Word.Bookmark> utworzone w czasie wykonywania, czy w czasie projektowania.
+1. Modyfikowanie <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> i <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> właściwości <xref:Microsoft.Office.Tools.Word.Bookmark> utworzone w czasie wykonywania, czy w czasie projektowania.
 
      Poniższy przykład kodu dodaje pięć znaków na początku zakładki o nazwie `SampleBookmark`. Ten kod zakłada, że nie istnieją co najmniej pięć znaków tekstu przed zakładką.
 
@@ -69,7 +69,7 @@ ms.locfileid: "56644955"
 
 ### <a name="to-resize-a-bookmark-in-a-vsto-add-in-project-at-runtime"></a>Aby zmienić rozmiar zakładki w projekcie dodatku narzędzi VSTO w czasie wykonywania
 
-1.  Modyfikowanie <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> i <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> właściwości <xref:Microsoft.Office.Tools.Word.Bookmark> tworzony w czasie wykonywania.
+1. Modyfikowanie <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> i <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> właściwości <xref:Microsoft.Office.Tools.Word.Bookmark> tworzony w czasie wykonywania.
 
      Poniższy przykład kodu tworzy <xref:Microsoft.Office.Tools.Word.Bookmark> , zawierający tekst, który w pierwszym akapicie aktywnego dokumentu, a następnie usuwa pięć znaków od początku i końca <xref:Microsoft.Office.Tools.Word.Bookmark>.
 
@@ -81,11 +81,11 @@ ms.locfileid: "56644955"
 
 ### <a name="to-recreate-a-bookmark-in-a-document-level-project-at-design-time"></a>Aby ponownie utworzyć zakładki w projekcie na poziomie dokumentu w czasie projektowania
 
-1.  Zaznacz tekst, które mają zostać uwzględnione w nowym <xref:Microsoft.Office.Tools.Word.Bookmark> kontroli.
+1. Zaznacz tekst, które mają zostać uwzględnione w nowym <xref:Microsoft.Office.Tools.Word.Bookmark> kontroli.
 
-2.  Na **Wstaw** menu, kliknij przycisk **zakładki**.
+2. Na **Wstaw** menu, kliknij przycisk **zakładki**.
 
-3.  W **zakładki** okno dialogowe Wybierz nazwę zakładki, który chcesz zmienić rozmiar, a następnie kliknij przycisk **Dodaj**.
+3. W **zakładki** okno dialogowe Wybierz nazwę zakładki, który chcesz zmienić rozmiar, a następnie kliknij przycisk **Dodaj**.
 
 ## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Dodawanie formantów zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)

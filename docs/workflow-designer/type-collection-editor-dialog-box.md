@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6754c8264b68d8884f5e8ebaea763e004c71596
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 191635364c445bc3959ee2f5f63c7c72c71f171d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913918"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093127"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Edytor kolekcji typów, okno dialogowe
 
@@ -31,16 +31,16 @@ W poniższej tabeli opisano elementy interfejsu użytkownika **kolekcji typów**
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Aby przełączyć się Edytor kolekcji typów do wysyłania i odbierania działań
 
-1.  Wybierz **wysyłania** lub **Receive** działania w widoku Projekt.
+1. Wybierz **wysyłania** lub **Receive** działania w widoku Projekt.
 
-2.  Naciśnij klawisz **F4** aby przywołać **właściwości** okna.
+2. Naciśnij klawisz **F4** aby przywołać **właściwości** okna.
 
-3.  W **właściwości** , kliknij przycisk wielokropka znajdujący się obok **element KnownTypes** właściwości.
+3. W **właściwości** , kliknij przycisk wielokropka znajdujący się obok **element KnownTypes** właściwości.
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>Aby wyświetlić się Edytor kolekcji typów dla działania InvokeMethod
 
-1.  Wybierz **InvokeMethod** działania w widoku Projekt.
+1. Wybierz **InvokeMethod** działania w widoku Projekt.
 
-2.  Naciśnij klawisz **F4** aby przywołać **właściwości** okna.
+2. Naciśnij klawisz **F4** aby przywołać **właściwości** okna.
 
-3.  W **właściwości** , kliknij przycisk wielokropka znajdujący się obok **GenericTypeArguments** właściwości.
+3. W **właściwości** , kliknij przycisk wielokropka znajdujący się obok **GenericTypeArguments** właściwości.

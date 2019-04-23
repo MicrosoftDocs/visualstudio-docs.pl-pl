@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7bf1194b2ffede351dab214c6191a599d725db3b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a81084fd64560dfb8dfef2c4e234daa8983dea3c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597728"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046659"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>Instrukcje: Dołączanie profilera do aplikacji autonomicznej .NET Framework w celu zbierania danych współbieżności przy użyciu wiersza polecenia
 W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia narzędzi Profilujących do dołączenia programu profilującego do uruchomionej aplikacji autonomicznej (klienta) .NET Framework i zbieranie danych współbieżności procesu i wątku.
@@ -28,9 +28,9 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
 
 #### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>Aby dołączyć profiler do działającej aplikacji .NET Framework
 
-1.  Otwórz okno wiersza polecenia.
+1. Otwórz okno wiersza polecenia.
 
-2.  Uruchom program profiler. Wpisz:
+2. Uruchom program profiler. Wpisz:
 
      [Narzędzia VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency/Output:** `OutputFile` [`Options`]
 
@@ -44,24 +44,24 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
     |[/automark](../profiling/automark.md) **:** `Interval`|Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami zbierania licznika wydajności Windows. Wartość domyślna to 500 ms.|
     |[/Events](../profiling/events-vsperfcmd.md) **:** `Config`|Określa zdarzenie śledzenie zdarzeń dla Windows (ETW) mają być zbierane podczas profilowania. Zdarzenia ETW są zbierane w pliku oddzielne (ETL).|
 
-3.  Uruchom aplikację docelową w typowy sposób.
+3. Uruchom aplikację docelową w typowy sposób.
 
-4.  Dołącz profiler do aplikacji docelowej. Wpisz:
+4. Dołącz profiler do aplikacji docelowej. Wpisz:
 
      **Narzędzia VSPerfCmd / dołączanie:** `PID` [**/lineoff**] [**/targetclr:**`Version`]
 
-    -   `PID` Określa identyfikator procesu aplikacji docelowej. Można wyświetlić identyfikatory i nazwy wszystkich uruchomionych procesów w Menedżerze zadań Windows.
+    - `PID` Określa identyfikator procesu aplikacji docelowej. Można wyświetlić identyfikatory i nazwy wszystkich uruchomionych procesów w Menedżerze zadań Windows.
 
-    -   [/ lineoff](../profiling/lineoff.md) wyłącza kolekcję danych numeru wiersza.
+    - [/ lineoff](../profiling/lineoff.md) wyłącza kolekcję danych numeru wiersza.
 
-    -   [/ targetclr](../profiling/targetclr.md) **:** `Version` Określa wersję środowiska uruchomieniowego języka wspólnego (CLR) do profilu, gdy więcej niż jedna wersja środowiska wykonawczego jest załadowana w aplikacji. Opcjonalna.
+    - [/ targetclr](../profiling/targetclr.md) **:** `Version` Określa wersję środowiska uruchomieniowego języka wspólnego (CLR) do profilu, gdy więcej niż jedna wersja środowiska wykonawczego jest załadowana w aplikacji. Opcjonalna.
 
 ## <a name="control-data-collection"></a>Sterowanie zbieraniem danych
  Gdy uruchomiona jest aplikacja docelowa, można kontrolować zbieranie danych przez uruchamianie i zatrzymywanie zapisywania danych do pliku za pomocą *VSPerfCmd.exe* opcje. Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonywania programu, takiej jak uruchamianie lub zamykanie aplikacji.
 
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych
 
--   Następujące pary *VSPerfCmd.exe* opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
+- Następujące pary *VSPerfCmd.exe* opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
 
     |Opcja|Opis|
     |------------|-----------------|
@@ -74,14 +74,14 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
 
 #### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania
 
-1.  Wykonaj jedną z następujących czynności, aby odłączyć program profiler od aplikacji docelowej.
+1. Wykonaj jedną z następujących czynności, aby odłączyć program profiler od aplikacji docelowej.
 
-    -   Typ **VSPerfCmd / Odłącz**
+    - Typ **VSPerfCmd / Odłącz**
 
          —lub—
 
-    -   Zamknij aplikację docelową.
+    - Zamknij aplikację docelową.
 
-2.  Zamknij program profilujący. Wpisz:
+2. Zamknij program profilujący. Wpisz:
 
      Narzędzia VSPerfCmd [ /shutdown](../profiling/shutdown.md)

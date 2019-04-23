@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 595c5f326ba7af25f3b6517f9955db18056e38f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c129ddf016e02fe6c29d5cf63fe57ba07fbd4e95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794329"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087979"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>Zbieranie szczegółowych danych o chronometrażu przy użyciu instrumentacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,11 +26,11 @@ ms.locfileid: "54794329"
   
  Należy określić metody instrumentacji, przy użyciu jednej z następujących procedur:  
   
--   Na pierwszej stronie kreatora profilowania, wybierz **Instrumentacji**.  
+- Na pierwszej stronie kreatora profilowania, wybierz **Instrumentacji**.  
   
--   Na **Eksplorator wydajności** narzędzi w **metoda** kliknij **Instrumentacji**.  
+- Na **Eksplorator wydajności** narzędzi w **metoda** kliknij **Instrumentacji**.  
   
--   Na **ogólne** strony okna dialogowego właściwości sesji wydajności, wybierz opcję **Instrumentacji**.  
+- Na **ogólne** strony okna dialogowego właściwości sesji wydajności, wybierz opcję **Instrumentacji**.  
   
 ## <a name="common-tasks"></a>Typowe zadania  
  Można określić dodatkowe opcje w _sesji wydajności_**stron właściwości** okna dialogowego sesji wydajności. Aby otworzyć to okno dialogowe:  

@@ -12,12 +12,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 49b5e5b7c36b09e08932fcb414478849a12a7c7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f6df66c3a6f34e6137850c68785d0eaadbb13a26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753815"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088148"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Wybieranie między udostępnionymi i wersjonowanymi pakietami VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,21 +31,21 @@ Różne wersje programu Visual Studio mogą współistnieć na tym samym kompute
 ## <a name="shared-vspackages"></a>Udostępnione pakietów VSPackage  
  Za pomocą udostępnionego pakietu VSPackage jest odpowiednie, jeśli używasz tego samego pakietu VSPackage w wielu wersjach [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Aby zaimplementować udostępnionego pakietu VSPackage, należy wykonać następujące czynności:  
   
--   Dzięki Twojego pakietu VSPackage zgodny z wieloma wersjami [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Dostępne są tak zrobić na dwa sposoby:  
+- Dzięki Twojego pakietu VSPackage zgodny z wieloma wersjami [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Dostępne są tak zrobić na dwa sposoby:  
   
-    -   Limit Twojego pakietu VSPackage za pomocą funkcji najstarszą wersję programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] która jest obsługiwana.  
+    - Limit Twojego pakietu VSPackage za pomocą funkcji najstarszą wersję programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] która jest obsługiwana.  
   
-    -   Usługi pakietu VSPackage, aby dostosować je do wersji programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , w którym jest uruchomiona. Następnie, jeśli zapytania dla nowszej usługi nie powiedzie się, Twoje pakietu VSPackage zaoferować innych usług, które są obsługiwane w starszych wersjach programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+    - Usługi pakietu VSPackage, aby dostosować je do wersji programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , w którym jest uruchomiona. Następnie, jeśli zapytania dla nowszej usługi nie powiedzie się, Twoje pakietu VSPackage zaoferować innych usług, które są obsługiwane w starszych wersjach programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   Zarejestruj swoje pakietu VSPackage odpowiednio. Aby uzyskać więcej informacji, zobacz [Rejestracja pakietu VSPackage](../extensibility/internals/vspackage-registration.md) i [zarządzane Rejestracja pakietu VSPackage](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
+- Zarejestruj swoje pakietu VSPackage odpowiednio. Aby uzyskać więcej informacji, zobacz [Rejestracja pakietu VSPackage](../extensibility/internals/vspackage-registration.md) i [zarządzane Rejestracja pakietu VSPackage](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
   
--   Rejestrowanie rozszerzeń plików odpowiednio. Aby uzyskać więcej informacji, zobacz [rejestrowanie rozszerzeń nazw plików dla wdrożeń Side-By-Side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
+- Rejestrowanie rozszerzeń plików odpowiednio. Aby uzyskać więcej informacji, zobacz [rejestrowanie rozszerzeń nazw plików dla wdrożeń Side-By-Side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
   
--   Utwórz Instalatora, który służy do wdrażania Twojego pakietu VSPackage dla odpowiedniej wersji [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md) i [Zarządzanie składnikami](../extensibility/internals/component-management.md).  
+- Utwórz Instalatora, który służy do wdrażania Twojego pakietu VSPackage dla odpowiedniej wersji [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md) i [Zarządzanie składnikami](../extensibility/internals/component-management.md).  
   
--   Rozwiązać problem kolizji rejestracji. Aby uzyskać więcej informacji, zobacz [Rejestracja pakietu VSPackage](../extensibility/internals/vspackage-registration.md).  
+- Rozwiązać problem kolizji rejestracji. Aby uzyskać więcej informacji, zobacz [Rejestracja pakietu VSPackage](../extensibility/internals/vspackage-registration.md).  
   
--   Upewnij się, że zarówno udostępnionymi i wersjonowanymi plikami przestrzegać zliczania odniesień, by umożliwić bezpieczne instalacji i usuwania wielu wersji. Aby uzyskać więcej informacji, zobacz [Zarządzanie składnikami](../extensibility/internals/component-management.md).  
+- Upewnij się, że zarówno udostępnionymi i wersjonowanymi plikami przestrzegać zliczania odniesień, by umożliwić bezpieczne instalacji i usuwania wielu wersji. Aby uzyskać więcej informacji, zobacz [Zarządzanie składnikami](../extensibility/internals/component-management.md).  
   
 ## <a name="versioned-vspackages"></a>Numerów wersji pakietów VSPackage  
  W obszarze wersjonowany strategii pakietu VSPackage, tworzenie jednego pakietu VSPackage dla każdej wersji [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] która jest obsługiwana. W ten sposób jest odpowiednie, jeśli zamierzasz korzystać z zalet usługi świadczone przez nowszych wersjach [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ponieważ każdego pakietu VSPackage można rozwijać bez wpływu na inne. Niemniej jednak wersjonowany strategii tworzenia wielu plików binarnych, od jednej bazy kodu lub wielu kod niezależny od podstaw, może być pociąga za sobą więcej początkowego projektowania niż udostępnionego strategii. Ponadto pracy dodatkowej konfiguracji mogą być wymagane, ponieważ należy utworzyć oddzielne ustawienia dla każdej wersji albo jednego Instalatora, który wykrywa wersje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] są instalowane i obsługuje Twojego pakietu VSPackage.  

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab82a563d5b5dce373394f9f83e883e2d2ee1129
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 9d8ce41d6532a7c389d20872c35a216a96910578
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416022"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087772"
 ---
 # <a name="understanding-the-dsl-code"></a>Znajomość kodu DSL
 
@@ -45,15 +45,15 @@ Naciśnij klawisz **F5** i eksperymentowania, jeśli nie jesteś zaznajomiony z 
 
  Zdecydowanie zalecamy nie edytowanie wygenerowanego kodu bezpośrednio, ponieważ Twoje zmiany zostaną utracone podczas ponownego kompilowania rozwiązania. Zamiast tego aby dostosować DSL:
 
--   Dostosuj wiele parametrów w definicji DSL.
+- Dostosuj wiele parametrów w definicji DSL.
 
--   Zapisać klas częściowych w plikach osobnego kodu do metody zastąpienia, które są zdefiniowane w lub dziedziczone przez klasy generowane. W niektórych przypadkach należy ustawić **Generates Double Derived** opcji klasy w definicji DSL, aby można było przesłonić metodę wygenerowany.
+- Zapisać klas częściowych w plikach osobnego kodu do metody zastąpienia, które są zdefiniowane w lub dziedziczone przez klasy generowane. W niektórych przypadkach należy ustawić **Generates Double Derived** opcji klasy w definicji DSL, aby można było przesłonić metodę wygenerowany.
 
--   Ustaw opcje w definicji DSL, powodującą, że wygenerowany kod w celu zapewnienia "hooks" własnego kodu.
+- Ustaw opcje w definicji DSL, powodującą, że wygenerowany kod w celu zapewnienia "hooks" własnego kodu.
 
      Na przykład jeśli ustawisz **ma Konstruktor niestandardowy** opcji klasę domeny i następnie Skompiluj rozwiązanie, zostanie wyświetlony komunikaty o błędach. Po dwukrotnym kliknięciu jednego z tych komunikatów o błędach, będą widzieć żadnych komentarzy w wygenerowanym kodzie, objaśniające, co powinno zapewniać kod niestandardowy.
 
--   Napisać własne szablony tekstu, aby wygenerować kod specyficzne dla aplikacji. Można Użyj pliki można dołączać do udostępniania części szablonów, które są wspólne dla wielu projektów i utworzyć szablony projektu Visual Studio do skonfigurowania projektów, które są inicjowane z strukturę pliku.
+- Napisać własne szablony tekstu, aby wygenerować kod specyficzne dla aplikacji. Można Użyj pliki można dołączać do udostępniania części szablonów, które są wspólne dla wielu projektów i utworzyć szablony projektu Visual Studio do skonfigurowania projektów, które są inicjowane z strukturę pliku.
 
 ## <a name="generated-files-in-dsl"></a>Wygenerowane pliki w Dsl
  Następujące wygenerowanych plików są wyświetlane w **Dsl** projektu.

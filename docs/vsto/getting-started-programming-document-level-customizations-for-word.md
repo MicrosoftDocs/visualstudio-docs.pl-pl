@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41fb80c229d016658b030d6ebf6981051c5de096
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2b2872ca6496444cbb3878dc39800a8661400a76
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631500"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056331"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Word
   Jeśli możesz po prostu zaczynasz, tworzenia dostosowań poziomie dokumentu dla programu Microsoft Word pakietu Office przy użyciu programu Visual Studio, Oto, co musisz wiedzieć.
@@ -44,11 +44,11 @@ ms.locfileid: "56631500"
 
  Więcej informacji znajduje się w następujących tematach:
 
--   [Program dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)
+- [Program dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)
 
--   [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)
+- [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)
 
--   [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)
+- [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)
 
 ## <a name="customize-the-user-interface-of-word"></a>Dostosowywanie interfejsu użytkownika programu Word
  Większość rozwiązań programu Microsoft Office zmodyfikować interfejsu użytkownika (UI) w aplikacji pakietu Office, aby niektóre umożliwiają użytkownikom na interakcję z rozwiązaniem. Istnieje wiele sposobów, w których można zmodyfikować interfejsu użytkownika programu Word za pomocą dostosowania poziomu dokumentu. Na przykład można dodać formanty do Wstążki i można wyświetlić w okienku Akcje. Aby uzyskać więcej informacji, zobacz [dostosowywania interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).

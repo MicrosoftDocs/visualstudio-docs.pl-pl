@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: deeb74e8e8763feb62b0cc21fcfbfbf3c6b220ca
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 29f6ab4b750370467fa75c2341e20264db756a7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596701"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077202"
 ---
 # <a name="shutdown"></a>Zamykanie
 **Zamknięcia** opcji oczekuje żadnego obecnie profilowane procesu, aby zakończyć lub odłączyć, a następnie wyłącza profilera i zamyka plik danych profilowania. **Zamknięcia** opcja musi być ostatnie polecenie uruchomienia profilowania.
@@ -29,8 +29,8 @@ VSPerfCmd.exe /Shutdown[:Timeout]
 ```
 
 #### <a name="parameters"></a>Parametry
- `Timeout`
- -   (Opcjonalnie) Jeśli zostanie określony, opcja zwraca po określonej liczbie sekund bez konieczności wyłączania program profilujący lub zamykania pliku danych profilowania.
+`Timeout`
+- (Opcjonalnie) Jeśli zostanie określony, opcja zwraca po określonej liczbie sekund bez konieczności wyłączania program profilujący lub zamykania pliku danych profilowania.
 
 ## <a name="see-also"></a>Zobacz także
 - [VSPerfCmd](../profiling/vsperfcmd.md)

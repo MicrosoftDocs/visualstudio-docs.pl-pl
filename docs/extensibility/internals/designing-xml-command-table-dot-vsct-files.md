@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a833478a8dec3b9fe82b22295482fed6f5562d14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1e70a64e01e388af61127fd76f4a2fcee8e5a9b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641549"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091567"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Projektowanie plików (vsct) tabeli poleceń XML
 Tabeli poleceń XML (*vsct*) pliku w tym artykule opisano układ i wygląd elementów polecenia dla pakietu VSPackage. Polecenie elementy obejmują przyciski, pola kombi, menu, paski narzędzi i grup elementów polecenia. W tym artykule opisano XML pliki tabeli poleceń, jak wpływają na elementy polecenia i menu oraz jak je utworzyć.
@@ -98,19 +98,19 @@ Możesz użyć *vsct.exe* kompilator, aby przekonwertować istniejącą *.cto* m
 ## <a name="vsct-file-design-guidelines"></a>wytyczne dotyczące projektowania pliku vsct
  Aby pomyślnie projektowania *vsct* plików, należy przestrzegać następujących wytycznych.
 
--   Polecenia można umieścić tylko w grupach, grup, które można umieścić tylko w menu i menu można umieścić tylko w grupach. W środowisku IDE programu grupy są wyświetlane tylko menu i poleceń nie jest.
+- Polecenia można umieścić tylko w grupach, grup, które można umieścić tylko w menu i menu można umieścić tylko w grupach. W środowisku IDE programu grupy są wyświetlane tylko menu i poleceń nie jest.
 
--   Podmenu nie można przypisać bezpośrednio do menu, ale muszą być przypisane do grupy, która z kolei jest przypisany do menu.
+- Podmenu nie można przypisać bezpośrednio do menu, ale muszą być przypisane do grupy, która z kolei jest przypisany do menu.
 
--   Polecenia, podmenu i grup można przypisać do jednej grupy element nadrzędny lub menu przy użyciu pola nadrzędnego ich definiujące dyrektywy.
+- Polecenia, podmenu i grup można przypisać do jednej grupy element nadrzędny lub menu przy użyciu pola nadrzędnego ich definiujące dyrektywy.
 
--   Organizowanie tabeli polecenia wyłącznie za pośrednictwem pola nadrzędnego w dyrektywach ma znaczące ograniczenia. Dyrektywy definiujące obiekty, które może potrwać argument tylko jedną jednostkę nadrzędną.
+- Organizowanie tabeli polecenia wyłącznie za pośrednictwem pola nadrzędnego w dyrektywach ma znaczące ograniczenia. Dyrektywy definiujące obiekty, które może potrwać argument tylko jedną jednostkę nadrzędną.
 
--   Ponowne użycie poleceń, grup lub podmenu wymagane jest użycie nowej dyrektywy, aby utworzyć nowe wystąpienie obiektu za pomocą własnego `GUID:ID` pary.
+- Ponowne użycie poleceń, grup lub podmenu wymagane jest użycie nowej dyrektywy, aby utworzyć nowe wystąpienie obiektu za pomocą własnego `GUID:ID` pary.
 
--   Każdy `GUID:ID` pary muszą być unikatowe. Ponowne użycie polecenia, który na przykład został umieszczony w menu, pasek narzędzi lub menu kontekstowego, jest obsługiwane przez <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu.
+- Każdy `GUID:ID` pary muszą być unikatowe. Ponowne użycie polecenia, który na przykład został umieszczony w menu, pasek narzędzi lub menu kontekstowego, jest obsługiwane przez <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu.
 
--   Polecenia i podmenu również można przypisać do wielu grup i grup, które można przypisać do wielu menu przy użyciu [Commands, element](../../extensibility/commands-element.md).
+- Polecenia i podmenu również można przypisać do wielu grup i grup, które można przypisać do wielu menu przy użyciu [Commands, element](../../extensibility/commands-element.md).
 
 ## <a name="vsct-file-notes"></a>informacje o pliku vsct
  Jeśli wprowadzisz zmiany *vsct* pliku po zarówno skompilować go i umieść go w macierzystym satelitarną bibliotekę DLL, należy uruchomić **/nosetupvstemplates/Setup devenv.exe**. Wykonując tak wymusza zasobów pakietu VSPackage, określone w doświadczalnych rejestr w celu należy przeczytać i wewnętrznej bazy danych, który opisuje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] odbudowania.

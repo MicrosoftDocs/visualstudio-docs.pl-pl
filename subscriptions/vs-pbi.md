@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Dowiedz się więcej na temat subskrypcji usługi Power BI Pro, dołączone do wybranej subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 966db1966b6056b81f143b41db53f132c5b2755b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: bb13ad93095a5a4d0e7c94ae24889220477feb0a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663261"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053276"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Usługa Power BI Pro w ramach subskrypcji programu Visual Studio
 
@@ -69,7 +69,7 @@ Aby korzystać z usługi Power BI Pro, należy skonfigurować konto lub zaloguj 
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Tak|
+| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Yes|
 | Program Visual Studio Professional (standardowy, miesięczną w chmurze) | VL, Azure, Retail                                       | Niedostępne                                                            |Nie dotyczy         |
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                                            |Nie dotyczy         |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne       |  Tak|
@@ -96,26 +96,26 @@ Odp.:  Tak, można go użyć w środowisku produkcyjnym, z dwoma ważnymi zastrz
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>PYT.:  Podczas próby aktywowania usługi Power BI Pro, otrzymuję komunikat "Masz już konto, za pośrednictwem pracy".  Można nadal korzystać z korzyści?
 Odp.:  Tak.  Komunikat wskazuje, że użytkownik jest zalogowany do domeny, która ma już aktywnych dzierżaw usługi Office 365, na których nie jesteś administratorem.  Aby dodać usługę Power BI Pro do dzierżawy, musi być administratorem tej dzierżawy.  Aby rozwiązać ten problem, wykonaj następujące kroki, aby utworzyć własną dzierżawę.
-1.  Gdy pojawi się komunikat, czy masz już konto, za pośrednictwem pracy, kliknij przycisk **Utwórz nowe konto**.
+1. Gdy pojawi się komunikat, czy masz już konto, za pośrednictwem pracy, kliknij przycisk **Utwórz nowe konto**.
 
-2.  Na następnym ekranie, podaj swoje informacje kontaktowe, a następnie kliknij przycisk **dalej**.
+2. Na następnym ekranie, podaj swoje informacje kontaktowe, a następnie kliknij przycisk **dalej**.
 
-3.  Utwórz swoją nazwę użytkownika i hasło.  Aby skorzystać z bezpłatnej oferty, upewnij się, możesz wybrać **. onmicrosoft.com** jako domena. Kliknij przycisk **Utwórz moje konto**.
+3. Utwórz swoją nazwę użytkownika i hasło.  Aby skorzystać z bezpłatnej oferty, upewnij się, możesz wybrać **. onmicrosoft.com** jako domena. Kliknij przycisk **Utwórz moje konto**.
     > [!div class="mx-imgBorder"]
     > ![Usługa Power BI Pro korzyści tworzenia dzierżawy prywatny identyfikator użytkownika](_img/vs-pbi/vs-pbi-work-userid.png)
 
-4.  Pozostałe kroki w procesie są identyczne z tymi wymienionymi w treści artykułu, zaczynając od kroku 6.
+4. Pozostałe kroki w procesie są identyczne z tymi wymienionymi w treści artykułu, zaczynając od kroku 6.
 
 ### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>PYT.:  Jestem w dzierżawie dla instytucji rządowych.  Czy można używać korzyści?
 Odp.:  Nie.  Korzyści z usługi Power BI Pro nie można dodać do dzierżawach instytucji rządowych.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
--  Potrzebujesz pomocy przy użyciu usługi Power BI Pro?
+- Potrzebujesz pomocy przy użyciu usługi Power BI Pro?
     - Zapoznaj się z [dokumentacji online](/power-bi/).
     - Problemy z rejestracją?  Zapoznaj się z [rejestrację w usłudze Power BI jako użytkownik indywidualny](/power-bi/service-self-service-signup-for-power-bi)
     - Poznaj najważniejsze problemy, Uzyskaj pomoc od społeczności lub Wyślij bilet pomocy technicznej na [stronę pomocy technicznej](https://powerbi.microsoft.com/support/).
--  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
+- Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Następne kroki
 Aby aktywować swoje korzyści z usługi Power BI Pro, odwiedź stronę [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)

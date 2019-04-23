@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9af0d60e9321baa9f4d2ffc4944d939e6398dcf7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9f23d0593129cae2732c8b4df14b3f5e2d5a69f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775933"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051378"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Krok 4. Dodawanie obsługi zdarzeń kliknięcia do każdej etykiety
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,18 +31,18 @@ Gra w dopasowywanie działa w następujący sposób:
   
 ### <a name="to-add-a-click-event-handler-to-each-label"></a>Aby dodać program obsługi zdarzeń Kliknięcie do każdej etykiety  
   
-1.  Otwórz formularz w programie Windows Forms Designer. W oknie Eksploratora rozwiązań wybierz Form1.cs lub Form1.vb. Na pasku menu wybierz **widoku**, **projektanta**.  
+1. Otwórz formularz w programie Windows Forms Designer. W oknie Eksploratora rozwiązań wybierz Form1.cs lub Form1.vb. Na pasku menu wybierz **widoku**, **projektanta**.  
   
-2.  Wybierz pierwszy formant etykiety, aby go zaznaczyć. Następnie trzymaj wciśnięty klawisz CTRL, zaznaczając pozostałe etykiety. Pamiętaj, że każda etykieta jest zaznaczona.  
+2. Wybierz pierwszy formant etykiety, aby go zaznaczyć. Następnie trzymaj wciśnięty klawisz CTRL, zaznaczając pozostałe etykiety. Pamiętaj, że każda etykieta jest zaznaczona.  
   
-3.  Wybierz **zdarzenia** przycisk na pasku narzędzi w **właściwości** okna, aby wyświetlić **zdarzenia** strony w **właściwości** okna. Przewiń w dół do **kliknij** zdarzeń, a następnie wprowadź **label_Click** w polu, jak pokazano na poniższej ilustracji.  
+3. Wybierz **zdarzenia** przycisk na pasku narzędzi w **właściwości** okna, aby wyświetlić **zdarzenia** strony w **właściwości** okna. Przewiń w dół do **kliknij** zdarzeń, a następnie wprowadź **label_Click** w polu, jak pokazano na poniższej ilustracji.  
   
      ![Okno właściwości pokazujące kliknij zdarzenie](../ide/media/express-labelclick.png "Express_labelClick")  
 Okno Właściwości pokazujące zdarzenie Kliknij  
   
-4.  Wybierz klawisz ENTER. IDE dodaje program obsługi zdarzeń na kliknięcie o nazwie `label_Click()` z kodem i przyczepia go do każdej etykiety w formularzu.  
+4. Wybierz klawisz ENTER. IDE dodaje program obsługi zdarzeń na kliknięcie o nazwie `label_Click()` z kodem i przyczepia go do każdej etykiety w formularzu.  
   
-5.  Wypełnij resztę kodu w następujący sposób:  
+5. Wypełnij resztę kodu w następujący sposób:  
   
      [!code-csharp[VbExpressTutorial4Step2_3_4#4](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs#4)]
      [!code-vb[VbExpressTutorial4Step2_3_4#4](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#4)]  
@@ -55,10 +55,10 @@ Okno Właściwości pokazujące zdarzenie Kliknij
   
      Metoda ta najpierw sprawdza, czy **clickedLabel** został pomyślnie przekonwertowany (rzutowany) z obiektu na formant etykiety. Jeśli nie, ma wartość `null` (C#) lub `Nothing` (Visual Basic), a nie chcesz wykonać pozostałej części kodu w metodzie. Następnie metoda sprawdza kolor tekstu wybranej etykiety za pomocą etykiety **ForeColor** właściwości. Jeśli kolor tekstu etykiety jest czarny, oznacza to, że ikona jest już wybrana, a metoda jest wykonana. (Właśnie to `return` wykonuje instrukcja: Mówi programowi, aby zatrzymał wykonywanie metody.) W przeciwnym razie ikona nie została wybrana, więc program zmienia kolor tekstu etykiety na czarny.  
   
-6.  Na pasku menu wybierz **pliku**, **Zapisz wszystko** Aby zapisać postęp, a następnie na pasku menu wybierz **debugowania**, **Rozpocznij debugowanie** do uruchomienia program. Powinien zostać wyświetlony pusty formularz z niebieskim tłem. Wybierz którąś komórkę w formularzu, jedna z ikon powinna się stać widoczna. Kontynuuj wybieranie różnych miejsc w formularzu. Ikony powinny się pojawiać w miarę wybierania.  
+6. Na pasku menu wybierz **pliku**, **Zapisz wszystko** Aby zapisać postęp, a następnie na pasku menu wybierz **debugowania**, **Rozpocznij debugowanie** do uruchomienia program. Powinien zostać wyświetlony pusty formularz z niebieskim tłem. Wybierz którąś komórkę w formularzu, jedna z ikon powinna się stać widoczna. Kontynuuj wybieranie różnych miejsc w formularzu. Ikony powinny się pojawiać w miarę wybierania.  
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   
--   Aby przejść do następnego kroku samouczka, zobacz [krok 5: Dodawanie odwołań do etykiet](../ide/step-5-add-label-references.md).  
+- Aby przejść do następnego kroku samouczka, zobacz [krok 5: Dodawanie odwołań do etykiet](../ide/step-5-add-label-references.md).  
   
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 3: Przypisanie losowej ikony do każdej etykiety](../ide/step-3-assign-a-random-icon-to-each-label.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 3: Przypisanie losowej ikony do każdej etykiety](../ide/step-3-assign-a-random-icon-to-each-label.md).

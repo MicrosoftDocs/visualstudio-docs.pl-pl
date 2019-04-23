@@ -16,12 +16,12 @@ ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5006fb95b2afbe67fd4420caff5885322067eacd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f14942ffd59ce2c6eacf7da2d0d1ab252d58e2cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779432"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100511"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ typedef LONG (*LPTEXTOUTPROC) (
   
 ## <a name="structures"></a>Struktury  
   
-###  <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled  
+### <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled  
   
 ```cpp#  
 typedef struct {  
@@ -81,7 +81,7 @@ typedef struct {
   
  Ta struktura jest wysyłany z `SCC_MSG_BACKGROUND_IS_CANCELLED` wiadomości. Jest on używany do komunikowania się identyfikator operacji w tle, które zostało anulowane.  
   
-###  <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile  
+### <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile  
   
 ```cpp#  
 typedef struct {  
@@ -92,7 +92,7 @@ typedef struct {
   
  Ta struktura jest wysyłany z `SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE` wiadomości. Jest on używany do komunikowania się nazwę pliku do pobrania i Identyfikatorem operacji w tle, który wykonuje pobierania.  
   
-###  <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile  
+### <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile  
   
 ```cpp#  
 typedef struct {  
@@ -104,7 +104,7 @@ typedef struct {
   
  Ta struktura jest wysyłany z `SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE` wiadomości. Jest on używany do komunikowania się wynikiem pobieranie określonego pliku, a także identyfikator operacji w tle, czy podczas pobierania. Zobacz wartości zwracane dla [SccGet](../extensibility/sccget-function.md) dla co można podać w wyniku.  
   
-###  <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage  
+### <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage  
  [C++]  
   
 ```  

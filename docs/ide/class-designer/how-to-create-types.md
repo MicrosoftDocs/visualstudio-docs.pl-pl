@@ -17,44 +17,44 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d4fbcd5581a2cbc860d90a6ba5557c9156cba7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: abee206f67aa019476fcd5085b4ff872338b4d1f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919642"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056032"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Instrukcje: Tworzenie typów za pomocą projektanta klas
 
 Do projektowania nowych typów dla C# i projektach języka Visual Basic, należy je utworzyć na diagramie klasy. Aby wyświetlić istniejące typy, zobacz [jak: Wyświetlanie istniejących typów](how-to-view-existing-types.md).
 
-##  <a name="CreateType"></a> Utwórz nowy typ
+## <a name="CreateType"></a> Utwórz nowy typ
 
-1.  W **przybornika**w obszarze **projektanta klas**, przeciągnij jeden z nich do diagramu klasy:
+1. W **przybornika**w obszarze **projektanta klas**, przeciągnij jeden z nich do diagramu klasy:
 
-    -   **Klasa** lub **klasy abstrakcyjnej**
+    - **Klasa** lub **klasy abstrakcyjnej**
 
-    -   **Enum**
+    - **Enum**
 
-    -   **Interface**
+    - **Interface**
 
-    -   **Struktura** (VB) lub **struktury** (C#)
+    - **Struktura** (VB) lub **struktury** (C#)
 
-    -   **Delegate**
+    - **Delegate**
 
-    -   **Moduł** (tylko w języku VB)
+    - **Moduł** (tylko w języku VB)
 
-2.  Nadaj nazwę typowi. Następnie wybierz jego poziom dostępu.
+2. Nadaj nazwę typowi. Następnie wybierz jego poziom dostępu.
 
-3.  Wybierz plik, do którego chcesz dodać kod początkowy dla typu:
+3. Wybierz plik, do którego chcesz dodać kod początkowy dla typu:
 
-    -   Aby utworzyć nowy plik i dodać go do bieżącego projektu, wybierz **Utwórz nowy plik** i nazwę pliku.
+    - Aby utworzyć nowy plik i dodać go do bieżącego projektu, wybierz **Utwórz nowy plik** i nazwę pliku.
 
-    -   Aby dodać kod do istniejącego pliku, wybierz **Dodaj do istniejącego pliku**.
+    - Aby dodać kod do istniejącego pliku, wybierz **Dodaj do istniejącego pliku**.
 
          Jeśli rozwiązanie ma projektu, który udostępnia kod przez wiele aplikacji, możesz dodać nowy typ do diagramu klas w projekcie aplikacji, ale tylko jeśli odpowiadający plik klasy znajduje się w tym samym projekcie aplikacji lub znajduje się w udostępnionym projekcie.
 
-4.  Teraz dodaj inne elementy, aby zdefiniować typ:
+4. Teraz dodaj inne elementy, aby zdefiniować typ:
 
     |||
     |-|-|
@@ -67,7 +67,7 @@ Do projektowania nowych typów dla C# i projektach języka Visual Basic, należy
 
      Zobacz [tworzenie elementów członkowskich](creating-and-configuring-type-members.md#create-members).
 
-##  <a name="CustAttributeType"></a> Zastosuj atrybut niestandardowy do typu
+## <a name="CustAttributeType"></a> Zastosuj atrybut niestandardowy do typu
 
 1. Kliknij typ kształtu na diagramie klasy.
 
@@ -77,7 +77,7 @@ Do projektowania nowych typów dla C# i projektach języka Visual Basic, należy
 
    Atrybuty niestandardowe są stosowane do typu.
 
-##  <a name="CustAttributeMember"></a> Zastosuj atrybut niestandardowy do elementu członkowskiego typu
+## <a name="CustAttributeMember"></a> Zastosuj atrybut niestandardowy do elementu członkowskiego typu
 
 1. Kliknij nazwę składowej w jej kształcie typu na diagramie klasy lub kliknij jej wiersz w oknie Szczegóły klasy.
 

@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 81aab6e0eea808c8dcb9b37d5772144a863329aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 94e2186fa13f7fe125457dc6f04d6d31d0bcc65d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797450"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046126"
 ---
 # <a name="extending-javascript-intellisense"></a>Rozszerzanie JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
 > [!NOTE]
 >  W języku JavaScript szybkie informacje odnosi się do wyskakujące okno, który pojawia się po prawej stronie listy uzupełniania. Nie można ręcznie wywołać Quick Info.  
   
-##  <a name="intellisenseObject"></a> Obiekt IntelliSense  
+## <a name="intellisenseObject"></a> Obiekt IntelliSense  
  W poniższej tabeli przedstawiono funkcje, które są dostępne dla `intellisense` obiektu. `intellisense` Obiekt jest dostępny tylko w czasie projektowania.  
   
 |Funkcja|Opis|  
@@ -108,118 +108,118 @@ intellisense.addEventListener('statementcompletion', function (event) {
 ## <a name="event-members"></a>Elementy członkowskie zdarzenia  
  W poniższych sekcjach opisano elementy członkowskie, które są widoczne w obiekcie zdarzenia dla następujących zdarzeń: `statementcompletion`, `signaturehelp`, i `statementcompletionhint`.  
   
-###  <a name="CompletionItem"></a> completionItem właściwości  
+### <a name="CompletionItem"></a> completionItem właściwości  
  Zwraca identyfikator, znane jako elementu ukończenia, dla którego żądana jest wyskakującym szybkie informacje. Ta właściwość jest dostępna dla `statementcompletionhint` obiektu zdarzenia i [elementów właściwości](#Items) właściwość `statementcompletion` obiektem zdarzenia.  
   
  Wartość zwracana: `completionItem` obiektu  
   
  Poniżej przedstawiono elementy członkowskie `completionItem` obiektu:  
   
--   `name`. Odczyt/zapis, gdy są używane w `items` kolekcji; w przeciwnym razie tylko do odczytu. Zwraca ciąg, który identyfikuje elementu ukończenia.  
+- `name`. Odczyt/zapis, gdy są używane w `items` kolekcji; w przeciwnym razie tylko do odczytu. Zwraca ciąg, który identyfikuje elementu ukończenia.  
   
--   `kind`. Odczyt/zapis, gdy są używane w `items` kolekcji; w przeciwnym razie tylko do odczytu. Zwraca ciąg, który reprezentuje typ elementu ukończenia. Możliwe wartości to metody, pola, właściwość, parametru, zmienna i zastrzeżone.  
+- `kind`. Odczyt/zapis, gdy są używane w `items` kolekcji; w przeciwnym razie tylko do odczytu. Zwraca ciąg, który reprezentuje typ elementu ukończenia. Możliwe wartości to metody, pola, właściwość, parametru, zmienna i zastrzeżone.  
   
--   `glyph`. Odczyt/zapis, gdy są używane w `items` kolekcji; w przeciwnym razie tylko do odczytu. Zwraca ciąg, który reprezentuje ikonę która jest wyświetlana na liście uzupełniania. Możliwe wartości parametru `glyph` , użyj następującego formatu: vs:*glyphType*, gdzie *glyphType* odnosi się do elementów członkowskich niezależny od języka w <xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup> wyliczenia. Na przykład `vs:GlyphGroupMethod` to jedna z wartości dla `glyph`. Gdy `glyph` nie jest ustawiona, `kind` właściwość określa domyślną ikonę.  
+- `glyph`. Odczyt/zapis, gdy są używane w `items` kolekcji; w przeciwnym razie tylko do odczytu. Zwraca ciąg, który reprezentuje ikonę która jest wyświetlana na liście uzupełniania. Możliwe wartości parametru `glyph` , użyj następującego formatu: vs:*glyphType*, gdzie *glyphType* odnosi się do elementów członkowskich niezależny od języka w <xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup> wyliczenia. Na przykład `vs:GlyphGroupMethod` to jedna z wartości dla `glyph`. Gdy `glyph` nie jest ustawiona, `kind` właściwość określa domyślną ikonę.  
   
--   `parentObject`. Tylko do odczytu. Zwraca obiekt nadrzędny.  
+- `parentObject`. Tylko do odczytu. Zwraca obiekt nadrzędny.  
   
--   `value`. Tylko do odczytu. Zwraca obiekt reprezentujący wartość elementu ukończenia.  
+- `value`. Tylko do odczytu. Zwraca obiekt reprezentujący wartość elementu ukończenia.  
   
--   `comments`. Tylko do odczytu. Zwraca ciąg, który zawiera komentarze, które znajdują się powyżej pola lub zmiennej.  
+- `comments`. Tylko do odczytu. Zwraca ciąg, który zawiera komentarze, które znajdują się powyżej pola lub zmiennej.  
   
--   `scope`. Tylko do odczytu. Zwraca zakres elementu ukończenia. Możliwe wartości są lokalne, globalne, a parametr i elementu członkowskiego.  
+- `scope`. Tylko do odczytu. Zwraca zakres elementu ukończenia. Możliwe wartości są lokalne, globalne, a parametr i elementu członkowskiego.  
   
-###  <a name="Items"></a> Właściwości elementów  
+### <a name="Items"></a> Właściwości elementów  
  Pobiera lub ustawia tablicę instrukcji elementy uzupełniania. Każdy element w tablicy jest [completionItem właściwość](#CompletionItem) obiektu. `items` Właściwość jest dostępna dla `statementcompletion` obiektem zdarzenia.  
   
  Wartość zwracana: tablica  
   
-###  <a name="FunctionComments"></a> functionComments właściwości  
+### <a name="FunctionComments"></a> functionComments właściwości  
  Zwraca komentarze dla tej funkcji. Ta właściwość jest dostępna dla `signaturehelp` obiektem zdarzenia.  
   
  Wartość zwracana: `comments` obiektu  
   
  Poniżej przedstawiono elementy członkowskie `comments` obiektu:  
   
--   `above`. Zwraca komentarze powyżej funkcji.  
+- `above`. Zwraca komentarze powyżej funkcji.  
   
--   `inside`. Zwraca komentarze wewnątrz funkcji, zazwyczaj w formacie VSDoc.  
+- `inside`. Zwraca komentarze wewnątrz funkcji, zazwyczaj w formacie VSDoc.  
   
--   `paramComments`. Zwraca tablicę reprezentujący komentarzy dla każdego parametru w funkcji. Elementy członkowskie tablicy obejmują:  
+- `paramComments`. Zwraca tablicę reprezentujący komentarzy dla każdego parametru w funkcji. Elementy członkowskie tablicy obejmują:  
   
-    -   `name`. Zwraca ciąg reprezentujący nazwę parametru.  
+    - `name`. Zwraca ciąg reprezentujący nazwę parametru.  
   
-    -   `comment`. Zwraca ciąg, który zawiera komentarz parametru.  
+    - `comment`. Zwraca ciąg, który zawiera komentarz parametru.  
   
-###  <a name="FunctionHelp"></a> functionHelp właściwości  
+### <a name="FunctionHelp"></a> functionHelp właściwości  
  Zwraca pomocy dla tej funkcji. Ta właściwość jest dostępna dla `signaturehelp` obiektem zdarzenia.  
   
  Wartość zwracana: `functionHelp` obiektu  
   
  Poniżej przedstawiono elementy członkowskie `functionHelp` obiektu:  
   
--   `functionName`. Odczyt/zapis. Zwraca ciąg zawierający nazwę funkcji.  
+- `functionName`. Odczyt/zapis. Zwraca ciąg zawierający nazwę funkcji.  
   
--   `signatures`. Odczyt/zapis. Pobiera lub ustawia tablicę sygnatur funkcji. Każdy element w tablicy jest `signature` obiektu. Niektóre `signature` właściwości, takie jak `locid`, odpowiadają na typowe [komentarze dokumentacji XML](../ide/xml-documentation-comments-javascript.md) atrybutów.  
+- `signatures`. Odczyt/zapis. Pobiera lub ustawia tablicę sygnatur funkcji. Każdy element w tablicy jest `signature` obiektu. Niektóre `signature` właściwości, takie jak `locid`, odpowiadają na typowe [komentarze dokumentacji XML](../ide/xml-documentation-comments-javascript.md) atrybutów.  
   
      Elementy członkowskie `signature` obiektu obejmują:  
   
-    -   `description`. Odczyt/zapis. Zwraca ciąg, który opisuje funkcji.  
+    - `description`. Odczyt/zapis. Zwraca ciąg, który opisuje funkcji.  
   
-    -   `locid`. Odczyt/zapis. Zwraca identyfikator ciągu, który zawiera informacje na temat funkcji lokalizacji.  
+    - `locid`. Odczyt/zapis. Zwraca identyfikator ciągu, który zawiera informacje na temat funkcji lokalizacji.  
   
-    -   `helpKeyword`. Odczyt/zapis. Zwraca ciąg, który zawiera słowo kluczowe pomocy.  
+    - `helpKeyword`. Odczyt/zapis. Zwraca ciąg, który zawiera słowo kluczowe pomocy.  
   
-    -   `externalFile`. Odczyt/zapis. Zwraca ciąg reprezentujący plik, który zawiera identyfikator elementu członkowskiego.  
+    - `externalFile`. Odczyt/zapis. Zwraca ciąg reprezentujący plik, który zawiera identyfikator elementu członkowskiego.  
   
-    -   `externalid`. Odczyt/zapis. Zwraca ciąg, który reprezentuje identyfikator elementu członkowskiego funkcji.  
+    - `externalid`. Odczyt/zapis. Zwraca ciąg, który reprezentuje identyfikator elementu członkowskiego funkcji.  
   
-    -   `params`. Odczyt/zapis. Pobiera lub ustawia tablicę parametrów funkcji. Każdy element w tablicy parametrów jest `parameter` obiekt, który ma właściwości, które odpowiadają na następujące atrybuty [ \<param >](../ide/param-javascript.md) elementu:  
+    - `params`. Odczyt/zapis. Pobiera lub ustawia tablicę parametrów funkcji. Każdy element w tablicy parametrów jest `parameter` obiekt, który ma właściwości, które odpowiadają na następujące atrybuty [ \<param >](../ide/param-javascript.md) elementu:  
   
-        -   `name`. Odczyt/zapis. Zwraca ciąg reprezentujący nazwę parametru.  
+        - `name`. Odczyt/zapis. Zwraca ciąg reprezentujący nazwę parametru.  
   
-        -   `type`. Odczyt/zapis. Zwraca ciąg, który reprezentuje typ parametru.  
+        - `type`. Odczyt/zapis. Zwraca ciąg, który reprezentuje typ parametru.  
   
-        -   `elementType`. Odczyt/zapis. Jeśli typ jest `Array`, zwraca wartość typu ciąg, który reprezentuje typ elementów w tablicy.  
+        - `elementType`. Odczyt/zapis. Jeśli typ jest `Array`, zwraca wartość typu ciąg, który reprezentuje typ elementów w tablicy.  
   
-        -   `description`. Odczyt/zapis. Zwraca ciąg, który opisuje parametr.  
+        - `description`. Odczyt/zapis. Zwraca ciąg, który opisuje parametr.  
   
-        -   `locid`. Odczyt/zapis. Zwraca identyfikator ciągu, który zawiera informacje na temat funkcji lokalizacji.  
+        - `locid`. Odczyt/zapis. Zwraca identyfikator ciągu, który zawiera informacje na temat funkcji lokalizacji.  
   
-        -   `optional`. Odczyt/zapis. Zwraca ciąg, który wskazuje, czy parametr jest opcjonalny. `true` Wskazuje, że parametr jest opcjonalny; `false` wskazuje, że nie jest.  
+        - `optional`. Odczyt/zapis. Zwraca ciąg, który wskazuje, czy parametr jest opcjonalny. `true` Wskazuje, że parametr jest opcjonalny; `false` wskazuje, że nie jest.  
   
-    -   `returnValue`. Odczyt/zapis. Pobiera lub ustawia obiekt o zwracanej wartości właściwości, które odpowiadają na następujące atrybuty [ \<zwraca >](../ide/returns-javascript.md) elementu:  
+    - `returnValue`. Odczyt/zapis. Pobiera lub ustawia obiekt o zwracanej wartości właściwości, które odpowiadają na następujące atrybuty [ \<zwraca >](../ide/returns-javascript.md) elementu:  
   
-        -   `type`. Odczyt/zapis. Zwraca ciąg, który reprezentuje typ zwracany.  
+        - `type`. Odczyt/zapis. Zwraca ciąg, który reprezentuje typ zwracany.  
   
-        -   `elementType`. Odczyt/zapis. Jeśli typ jest `Array`, zwraca wartość typu ciąg, który reprezentuje typ elementów w tablicy.  
+        - `elementType`. Odczyt/zapis. Jeśli typ jest `Array`, zwraca wartość typu ciąg, który reprezentuje typ elementów w tablicy.  
   
-        -   `description`. Odczyt/zapis. Zwraca ciąg, który opisuje wartość zwracaną.  
+        - `description`. Odczyt/zapis. Zwraca ciąg, który opisuje wartość zwracaną.  
   
-        -   `locid`. Odczyt/zapis. Zwraca identyfikator ciągu, który zawiera informacje na temat funkcji lokalizacji.  
+        - `locid`. Odczyt/zapis. Zwraca identyfikator ciągu, który zawiera informacje na temat funkcji lokalizacji.  
   
-        -   `helpKeyword`. Odczyt/zapis. Zwraca ciąg, który zawiera słowo kluczowe pomocy.  
+        - `helpKeyword`. Odczyt/zapis. Zwraca ciąg, który zawiera słowo kluczowe pomocy.  
   
-        -   `externalFile`. Odczyt/zapis. Zwraca ciąg reprezentujący plik, który zawiera identyfikator elementu członkowskiego.  
+        - `externalFile`. Odczyt/zapis. Zwraca ciąg reprezentujący plik, który zawiera identyfikator elementu członkowskiego.  
   
-        -   `externalid`. Odczyt/zapis. Zwraca ciąg, który reprezentuje identyfikator elementu członkowskiego funkcji.  
+        - `externalid`. Odczyt/zapis. Zwraca ciąg, który reprezentuje identyfikator elementu członkowskiego funkcji.  
   
-###  <a name="ParentObject"></a> parentObject właściwości  
+### <a name="ParentObject"></a> parentObject właściwości  
  Zwraca wartość obiektu nadrzędnego dla funkcji członkowskiej. Na przykład w przypadku `document.getElementByID`, `parentObject` zwraca `document` obiektu. Ta właściwość jest dostępna dla `signaturehelp` obiektem zdarzenia.  
   
  Wartość zwracana: obiekt  
   
-###  <a name="Target"></a> Właściwość docelowa  
+### <a name="Target"></a> Właściwość docelowa  
  Zwraca obiekt, który reprezentuje element po lewej stronie znaku wyzwalacza, który jest znak kropki (.). W przypadku funkcji `target` zwraca funkcję, dla którego wnioskuje się o parametrach. Ta właściwość jest dostępna dla `statementcompletion` i `signaturehelp` obiekty zdarzeń.  
   
  Wartość zwracana: obiekt  
   
-###  <a name="TargetName"></a> targetName właściwości  
+### <a name="TargetName"></a> targetName właściwości  
  Zwraca ciąg, który reprezentuje element docelowy. Na przykład "this." `targetName` zwraca "this". Aby uzyskać "A.B" (gdy kursor znajduje się po "B") `targetName` zwraca "B". Ta właściwość jest dostępna dla `statementcompletion` obiektem zdarzenia.  
   
  Wartość zwracana: ciąg  
   
-###  <a name="SymbolHelp"></a> symbolHelp właściwości  
+### <a name="SymbolHelp"></a> symbolHelp właściwości  
  Zwraca element zakończenia, dla którego żądana jest wyskakującym Quick Info. Ta właściwość jest dostępna dla `statementcompletionhint` obiektem zdarzenia.  
   
  Wartość zwracana: `symbolHelp` obiektu.  
@@ -228,29 +228,29 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  Poniżej przedstawiono elementy członkowskie `symbolHelp` obiektu:  
   
--   `name`. Odczyt/zapis. Zwraca ciąg zawierający nazwę identyfikatora.  
+- `name`. Odczyt/zapis. Zwraca ciąg zawierający nazwę identyfikatora.  
   
--   `symbolType`. Odczyt/zapis. Zwraca ciąg, który reprezentuje typ symbolu. Możliwe wartości to nieznany, atrybut typu wartość logiczna, numer, ciąg, obiekt, funkcji, tablicy, Data i wyrażeń regularnych.  
+- `symbolType`. Odczyt/zapis. Zwraca ciąg, który reprezentuje typ symbolu. Możliwe wartości to nieznany, atrybut typu wartość logiczna, numer, ciąg, obiekt, funkcji, tablicy, Data i wyrażeń regularnych.  
   
--   `symbolDisplayType`. Odczyt/zapis. Zwraca ciąg zawierający nazwę typu do wyświetlenia. Jeśli `symbolDisplayType` nie ustawiono `symbolType` jest używany.  
+- `symbolDisplayType`. Odczyt/zapis. Zwraca ciąg zawierający nazwę typu do wyświetlenia. Jeśli `symbolDisplayType` nie ustawiono `symbolType` jest używany.  
   
--   `elementType`. Odczyt/zapis. Jeśli `symbolType` jest `Array`, zwraca wartość typu ciąg, który reprezentuje typ elementów w tablicy.  
+- `elementType`. Odczyt/zapis. Jeśli `symbolType` jest `Array`, zwraca wartość typu ciąg, który reprezentuje typ elementów w tablicy.  
   
--   `scope`. Odczyt/zapis. Zwraca ciąg, który reprezentuje zakres symbolu. Możliwe wartości to globalnego, lokalnych, parametrów i elementu członkowskiego.  
+- `scope`. Odczyt/zapis. Zwraca ciąg, który reprezentuje zakres symbolu. Możliwe wartości to globalnego, lokalnych, parametrów i elementu członkowskiego.  
   
--   `description`. Odczyt/zapis. Zwraca ciąg, który zawiera opis symbolu.  
+- `description`. Odczyt/zapis. Zwraca ciąg, który zawiera opis symbolu.  
   
--   `locid`. Odczyt/zapis. Zwraca identyfikator ciągu, który zawiera informacje o lokalizacji o symbolu.  
+- `locid`. Odczyt/zapis. Zwraca identyfikator ciągu, który zawiera informacje o lokalizacji o symbolu.  
   
--   `helpKeyword`. Odczyt/zapis. Zwraca ciąg, który zawiera słowo kluczowe pomocy.  
+- `helpKeyword`. Odczyt/zapis. Zwraca ciąg, który zawiera słowo kluczowe pomocy.  
   
--   `externalFile`. Odczyt/zapis. Zwraca ciąg reprezentujący plik, który zawiera identyfikator elementu członkowskiego.  
+- `externalFile`. Odczyt/zapis. Zwraca ciąg reprezentujący plik, który zawiera identyfikator elementu członkowskiego.  
   
--   `externalid`. Odczyt/zapis. Zwraca ciąg, który reprezentuje identyfikator elementu członkowskiego symbolu.  
+- `externalid`. Odczyt/zapis. Zwraca ciąg, który reprezentuje identyfikator elementu członkowskiego symbolu.  
   
--   `functionHelp`. Odczyt/zapis. Zwraca [functionHelp właściwość](#FunctionHelp), które mogą zawierać informacje podczas `symbolType` jest funkcją.  
+- `functionHelp`. Odczyt/zapis. Zwraca [functionHelp właściwość](#FunctionHelp), które mogą zawierać informacje podczas `symbolType` jest funkcją.  
   
-###  <a name="Scope"></a> Określanie zakresu właściwości  
+### <a name="Scope"></a> Określanie zakresu właściwości  
  Zwraca wartość zakresu zakończenia zdarzenia. Możliwe wartości zakończenia zakresu są globalne i elementów członkowskich. Ta właściwość jest dostępna dla `statementcompletion` obiektem zdarzenia.  
   
  Wartość zwracana: ciąg  
@@ -258,27 +258,27 @@ intellisense.addEventListener('statementcompletion', function (event) {
 ## <a name="debugging-intellisense-extensions"></a>Debugowanie rozszerzeń IntelliSense  
  Nie można debugować rozszerzenia, ale można użyć [intellisense obiektu ](#intellisenseObject) /funkcja do wysyłania informacji do okna programu Visual Studio danych wyjściowych. Na przykład, który pokazuje, jak użyć tej funkcji, zobacz [wysyłania wiadomości do okna danych wyjściowych](#Logging) w dalszej części tego tematu. Aby uzyskać `logMessage` do pracy, co najmniej jedna procedura obsługi zdarzeń musi być zarejestrowana w rozszerzeniu.  
   
-##  <a name="CodeExamples"></a> Przykłady kodu  
+## <a name="CodeExamples"></a> Przykłady kodu  
  Ta sekcja zawiera przykłady kodu, które pokazują, jak używać interfejsów API rozszerzania funkcji IntelliSense. Istnieją również inne sposoby korzystania z tych interfejsów API. Aby uzyskać dodatkowe przykłady, zobacz następujące pliki w \\ \\ *ścieżka instalacji programu Visual Studio*\JavaScript\References folderu. Działają one przykłady używane przez usługę języka JavaScript.  
   
--   underscoreFilter.js. Ten kod powoduje ukrycie opcji prywatnych elementów członkowskich z technologii IntelliSense. Obejmuje programy obsługi zdarzeń dla `statementcompletion` zdarzeń.  
+- underscoreFilter.js. Ten kod powoduje ukrycie opcji prywatnych elementów członkowskich z technologii IntelliSense. Obejmuje programy obsługi zdarzeń dla `statementcompletion` zdarzeń.  
   
--   showPlainComments.js. Ten kod zapewnia obsługę technologii IntelliSense dla standardowych komentarzy. Obejmuje programy obsługi zdarzeń dla `signaturehelp` i `statementcompletionhint` zdarzenia.  
+- showPlainComments.js. Ten kod zapewnia obsługę technologii IntelliSense dla standardowych komentarzy. Obejmuje programy obsługi zdarzeń dla `signaturehelp` i `statementcompletionhint` zdarzenia.  
   
-###  <a name="Annotations"></a> Dodawanie adnotacji IntelliSense  
+### <a name="Annotations"></a> Dodawanie adnotacji IntelliSense  
  Poniższa procedura pokazuje, jak do obsługi technologii IntelliSense dokumentacji biblioteki innej firmy bez konieczności wprowadzania zmian bezpośrednio w bibliotece. Aby to zrobić, można użyć `intellisense.annotate` w rozszerzeniu.  
   
  W tym przykładzie do pracy potrzebne są następujące pliki JavaScript w projekcie:  
   
--   demoLib.js, czyli pliku projektu, który reprezentuje biblioteki innej firmy.  
+- demoLib.js, czyli pliku projektu, który reprezentuje biblioteki innej firmy.  
   
--   demoLib.intellisense.js, która jest rozszerzeniem IntelliSense. Ten plik nie musi być zawarty w projekcie, ale musi on znajdować się w tym samym folderze co exampleLib.js.  
+- demoLib.intellisense.js, która jest rozszerzeniem IntelliSense. Ten plik nie musi być zawarty w projekcie, ale musi on znajdować się w tym samym folderze co exampleLib.js.  
   
--   appCode.js, czyli pliku projektu, który reprezentuje kod aplikacji.  
+- appCode.js, czyli pliku projektu, który reprezentuje kod aplikacji.  
   
 ##### <a name="to-add-an-intellisense-annotation"></a>Dodawanie adnotacji IntelliSense  
   
-1.  Dodaj następujący kod do demoLib.js.  
+1. Dodaj następujący kod do demoLib.js.  
   
     ```javascript  
     function someFunc(a) { };  
@@ -286,7 +286,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
     ```  
   
-2.  Dodaj następujący kod do demoLib.intellisense.js.  
+2. Dodaj następujący kod do demoLib.intellisense.js.  
   
     ```javascript  
     intellisense.annotate(someFunc, function (a) {  
@@ -302,35 +302,35 @@ intellisense.addEventListener('statementcompletion', function (event) {
     });  
     ```  
   
-3.  Dodaj następujące dyrektywy odwołania jako pierwszy wiersz w appCode.js. Ścieżka, w tym miejscu użyć wskazuje, czy pliki JavaScript, w tym samym folderze.  
+3. Dodaj następujące dyrektywy odwołania jako pierwszy wiersz w appCode.js. Ścieżka, w tym miejscu użyć wskazuje, czy pliki JavaScript, w tym samym folderze.  
   
     ```javascript  
     /// <reference path="demoLib.js" />  
   
     ```  
   
-4.  W appCode.js wpisz następujący kod. Zobaczysz komentarze dokumentacji XML w rozszerzeniu wyświetlane jako informacje o parametrach funkcji IntelliSense.  
+4. W appCode.js wpisz następujący kod. Zobaczysz komentarze dokumentacji XML w rozszerzeniu wyświetlane jako informacje o parametrach funkcji IntelliSense.  
   
      ![Przykład przedstawiający zastosowanie intellisense.annotate](../ide/media/js-intellisense-annotate-paraminfo.png "js_intellisense_annotate_paraminfo")  
   
-5.  W appCode.js wpisz następujący kod. Podczas wpisywania, zobaczysz standardowych komentarzy w rozszerzeniu wyświetlane jako szybkie informacje technologii IntelliSense.  
+5. W appCode.js wpisz następujący kod. Podczas wpisywania, zobaczysz standardowych komentarzy w rozszerzeniu wyświetlane jako szybkie informacje technologii IntelliSense.  
   
      ![Przykład przedstawiający zastosowanie intellisense.annotate](../ide/media/js-intellisense-annotations.png "js_intellisense_annotations")  
   
-###  <a name="Logging"></a> Wysyłanie komunikatów do okna danych wyjściowych  
+### <a name="Logging"></a> Wysyłanie komunikatów do okna danych wyjściowych  
  Poniższa procedura pokazuje, jak wysyłać komunikaty do okna danych wyjściowych. Może wysyłać wiadomości, aby pomóc w debugowaniu rozszerzeń IntelliSense.  
   
  W tym przykładzie do pracy potrzebne są następujące pliki JavaScript w projekcie:  
   
--   exampleLib.js, czyli pliku projektu, który reprezentuje biblioteki innej firmy.  
+- exampleLib.js, czyli pliku projektu, który reprezentuje biblioteki innej firmy.  
   
--   exampleLib.intellisense.js, która jest rozszerzeniem IntelliSense. Ten plik nie musi być zawarty w projekcie, ale musi on znajdować się w tym samym folderze co exampleLib.js.  
+- exampleLib.intellisense.js, która jest rozszerzeniem IntelliSense. Ten plik nie musi być zawarty w projekcie, ale musi on znajdować się w tym samym folderze co exampleLib.js.  
   
--   appCode.js, czyli pliku projektu, który reprezentuje kod aplikacji.  
+- appCode.js, czyli pliku projektu, który reprezentuje kod aplikacji.  
   
 ##### <a name="to-send-a-message-to-the-output-window"></a>Aby wysłać komunikat w oknie danych wyjściowych  
   
-1.  Dodaj następujący kod do exampleLib.js.  
+1. Dodaj następujący kod do exampleLib.js.  
   
     ```javascript  
     var someVar = {  
@@ -339,7 +339,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
     };  
     ```  
   
-2.  Dodaj następujący kod do exampleLib.intellisense.js.  
+2. Dodaj następujący kod do exampleLib.intellisense.js.  
   
     ```javascript  
     intellisense.addEventListener('statementcompletion', function (e) {  
@@ -357,16 +357,16 @@ intellisense.addEventListener('statementcompletion', function (event) {
     });  
     ```  
   
-3.  Dodaj następujące dyrektywy odwołania jako pierwszy wiersz w appCode.js. Ścieżka, w tym miejscu użyć wskazuje, czy pliki JavaScript, w tym samym folderze.  
+3. Dodaj następujące dyrektywy odwołania jako pierwszy wiersz w appCode.js. Ścieżka, w tym miejscu użyć wskazuje, czy pliki JavaScript, w tym samym folderze.  
   
     ```javascript  
     /// <reference path="exampleLib.js" />  
   
     ```  
   
-4.  W oknie danych wyjściowych wybierz **usługę językową JavaScript** w **Pokaż dane wyjściowe z** listy. (Zaznacz, aby wyświetlić okno danych wyjściowych **dane wyjściowe** z menu Widok.)  
+4. W oknie danych wyjściowych wybierz **usługę językową JavaScript** w **Pokaż dane wyjściowe z** listy. (Zaznacz, aby wyświetlić okno danych wyjściowych **dane wyjściowe** z menu Widok.)  
   
-5.  W appCode.js wpisz następujący kod. Podczas wpisywania, w oknie danych wyjściowych zawiera komunikaty z usługi języka. Pierwszy komunikat w oknie danych wyjściowych wskazuje zażądano uzupełniania instrukcji dla bieżącego zakresu.  
+5. W appCode.js wpisz następujący kod. Podczas wpisywania, w oknie danych wyjściowych zawiera komunikaty z usługi języka. Pierwszy komunikat w oknie danych wyjściowych wskazuje zażądano uzupełniania instrukcji dla bieżącego zakresu.  
   
     ```javascript  
     some  
@@ -383,9 +383,9 @@ intellisense.addEventListener('statementcompletion', function (event) {
     …  
     ```  
   
-6.  Wybierz **Wyczyść wszystko** przycisku w oknie danych wyjściowych.  
+6. Wybierz **Wyczyść wszystko** przycisku w oknie danych wyjściowych.  
   
-7.  Wpisz następujący kod. Pierwszy komunikat w oknie dane wyjściowe wskazuje zażądano listy członków.  
+7. Wpisz następujący kod. Pierwszy komunikat w oknie dane wyjściowe wskazuje zażądano listy członków.  
   
     ```javascript  
     someVar.  
@@ -402,22 +402,22 @@ intellisense.addEventListener('statementcompletion', function (event) {
     …  
     ```  
   
-###  <a name="Icons"></a> Zmiana ikony IntelliSense  
+### <a name="Icons"></a> Zmiana ikony IntelliSense  
  Poniższa procedura pokazuje, jak zmienić ikony domyślnie wyświetlane przez technologię IntelliSense. Może to być przydatne, gdy zawierają IntelliSense informacji na temat pojęć specyficznych dla biblioteki, takich jak przestrzenie nazw, klasy, interfejsy i wyliczenia.  
   
  Ikona dostępne wartości, zobacz <xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup>.  
   
  W tym przykładzie do pracy potrzebne są następujące pliki JavaScript w projekcie:  
   
--   exampleLib.js, czyli projektu pliku biblioteki represens innych firm.  
+- exampleLib.js, czyli projektu pliku biblioteki represens innych firm.  
   
--   exampleLib.intellisense.js, która jest rozszerzeniem IntelliSense. Ten plik nie musi być zawarty w projekcie, ale musi on znajdować się w tym samym folderze co exampleLib.js.  
+- exampleLib.intellisense.js, która jest rozszerzeniem IntelliSense. Ten plik nie musi być zawarty w projekcie, ale musi on znajdować się w tym samym folderze co exampleLib.js.  
   
--   appCode.js, czyli pliku projektu, który reprezentuje kod aplikacji.  
+- appCode.js, czyli pliku projektu, który reprezentuje kod aplikacji.  
   
 ##### <a name="to-change-the-icons"></a>Aby zmienić ikony  
   
-1.  Dodaj następujący kod do exampleLib.js.  
+1. Dodaj następujący kod do exampleLib.js.  
   
     ```javascript  
     function Namespace(name) {  
@@ -437,7 +437,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
     SomeNamespace.Enum1 = new Enum({ VALUE1: 0, VALUE2: 1 });  
     ```  
   
-2.  Dodaj następujący kod do exampleLib.intellisense.js.  
+2. Dodaj następujący kod do exampleLib.intellisense.js.  
   
     ```javascript  
     intellisense.addEventListener('statementcompletion', function (e) {  
@@ -479,35 +479,35 @@ intellisense.addEventListener('statementcompletion', function (event) {
     });  
     ```  
   
-3.  Dodaj następujące dyrektywy odwołania jako pierwszy wiersz w appCode.js. Ścieżka, w tym miejscu użyć wskazuje, czy pliki JavaScript, w tym samym folderze.  
+3. Dodaj następujące dyrektywy odwołania jako pierwszy wiersz w appCode.js. Ścieżka, w tym miejscu użyć wskazuje, czy pliki JavaScript, w tym samym folderze.  
   
     ```javascript  
     /// <reference path="exampleLib.js" />  
   
     ```  
   
-4.  W appCode.js wpisz następujący kod. Podczas wpisywania, zobaczysz, że ikona przestrzeń nazw została zmieniona na "{}", ponieważ jest używany w języku C#.  
+4. W appCode.js wpisz następujący kod. Podczas wpisywania, zobaczysz, że ikona przestrzeń nazw została zmieniona na "{}", ponieważ jest używany w języku C#.  
   
      ![Przykład: użycie właściwości symbol](../ide/media/js-intellisense-glyph-namespace.png "js_intellisense_glyph_namespace")  
   
-5.  W appCode.js wpisz następujący kod. Podczas wpisywania pojawi się nowa ikona wyliczenie dla elementu członkowskiego Enum1 i nową ikonę klasy dla elementu członkowskiego SomeClass1.  
+5. W appCode.js wpisz następujący kod. Podczas wpisywania pojawi się nowa ikona wyliczenie dla elementu członkowskiego Enum1 i nową ikonę klasy dla elementu członkowskiego SomeClass1.  
   
      ![Przykład: użycie właściwości symbol](../ide/media/js-intellisense-glyph-class-enum.png "js_intellisense_glyph_class_enum")  
   
-###  <a name="Overriding"></a> Unikanie środowiska wykonawczego wpływ na wyniki funkcji IntelliSense  
+### <a name="Overriding"></a> Unikanie środowiska wykonawczego wpływ na wyniki funkcji IntelliSense  
  Usługa języka JavaScript działa kod w celu dynamicznego udostępniania informacji IntelliSense. W rezultacie zachowania w czasie wykonywania od czasu do czasu może zakłócać zakładanych wyników. Poniższa procedura przedstawia sposób przesłonięcia wyniki funkcji IntelliSense, gdy IntelliSense niepoprawne powoduje zachowanie w czasie wykonywania.  
   
  W tym przykładzie do pracy potrzebne są następujące pliki JavaScript w projekcie:  
   
--   exampleLib.js, czyli pliku projektu, który reprezentuje biblioteki innej firmy.  
+- exampleLib.js, czyli pliku projektu, który reprezentuje biblioteki innej firmy.  
   
--   exampleLib.intellisense.js, która jest rozszerzeniem IntelliSense. Ten plik nie musi być zawarty w projekcie, ale musi on znajdować się w tym samym folderze co exampleLib.js.  
+- exampleLib.intellisense.js, która jest rozszerzeniem IntelliSense. Ten plik nie musi być zawarty w projekcie, ale musi on znajdować się w tym samym folderze co exampleLib.js.  
   
--   appCode.js, czyli pliku projektu, który reprezentuje kod aplikacji.  
+- appCode.js, czyli pliku projektu, który reprezentuje kod aplikacji.  
   
 ##### <a name="to-avoid-run-time-effects-on-intellisense-results"></a>Aby uniknąć środowiska wykonawczego wpływ na wyniki funkcji IntelliSense  
   
-1.  Dodaj następujący kod do exampleLib.js.  
+1. Dodaj następujący kod do exampleLib.js.  
   
     ```javascript  
     function after(count, func) {  
@@ -521,18 +521,18 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
      W poprzednim kodzie opakowana Funkcja ignoruje początkowego połączenia, na podstawie wartości z `count`, a nie zwracają wartości.  
   
-2.  Dodaj następujące dyrektywy odwołania jako pierwszy wiersz w appCode.js. Ścieżka, w tym miejscu użyć wskazuje, czy pliki JavaScript, w tym samym folderze.  
+2. Dodaj następujące dyrektywy odwołania jako pierwszy wiersz w appCode.js. Ścieżka, w tym miejscu użyć wskazuje, czy pliki JavaScript, w tym samym folderze.  
   
     ```javascript  
     /// <reference path="exampleLib.js" />  
   
     ```  
   
-3.  W appCode.js wpisz następujący kod. Lista identyfikatorów pojawia się zamiast funkcji IntelliSense, ponieważ opakowana funkcja nigdy nie jest wywoływana, co oznacza, że `throttled` funkcja nie zwraca żadnych wyników.  
+3. W appCode.js wpisz następujący kod. Lista identyfikatorów pojawia się zamiast funkcji IntelliSense, ponieważ opakowana funkcja nigdy nie jest wywoływana, co oznacza, że `throttled` funkcja nie zwraca żadnych wyników.  
   
      ![Przykład zastępowanie wyniki intellisense](../ide/media/js-intellisense-override.png "js_intellisense_override")  
   
-4.  Dodaj następujący kod do exampleLib.intellisense.js. Spowoduje to zmianę zachowania w czasie projektowania, aby opakowana funkcja IntelliSense przedstawiono zgodnie z oczekiwaniami.  
+4. Dodaj następujący kod do exampleLib.intellisense.js. Spowoduje to zmianę zachowania w czasie projektowania, aby opakowana funkcja IntelliSense przedstawiono zgodnie z oczekiwaniami.  
   
     ```javascript  
     window.after = function (count, func) {  
@@ -541,7 +541,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
     };  
     ```  
   
-5.  W appCode.js wyniki testów, wpisując ten sam kod, który wcześniej wpisane. Tym razem IntelliSense zawiera żądane informacje.  
+5. W appCode.js wyniki testów, wpisując ten sam kod, który wcześniej wpisane. Tym razem IntelliSense zawiera żądane informacje.  
   
      ![Przykład zastępowanie wyniki IntelliSense](../ide/media/js-intellisense-override-fixed.png "js_intellisense_override_fixed")  
   

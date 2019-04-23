@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e7528e8a589cb64e4debc8c1e119f8f59a6244c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8b5dc42932334b54bb46664da14af7df8dcfe131
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766608"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050789"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Instrukcje: Tworzenie zestawu reguł działania PolicyActivity (starsza wersja)
 W tym temacie opisano sposób tworzenia reguły działanie zasad, można ustawić przy użyciu starszego [!INCLUDE[wfd1](../includes/wfd1-md.md)] przeznaczonego [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -32,33 +32,33 @@ W tym temacie opisano sposób tworzenia reguły działanie zasad, można ustawi�
   
 ### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>Aby wybrać lub utworzyć zestaw reguł dla działania działania PolicyActivity  
   
-1.  Kliknij prawym przyciskiem myszy [działania PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019), a następnie kliknij przycisk **właściwości** otworzyć **właściwości** okna.  
+1. Kliknij prawym przyciskiem myszy [działania PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019), a następnie kliknij przycisk **właściwości** otworzyć **właściwości** okna.  
   
-2.  Kliknij przycisk **RuleSetReference** właściwości.  
+2. Kliknij przycisk **RuleSetReference** właściwości.  
   
-3.  Wykonaj jedną z następujących czynności:  
+3. Wykonaj jedną z następujących czynności:  
   
-    -   Kliknij przycisk **RuleSetReference** wielokropek **[...]** , a następnie wybierz istniejący zestaw reguł [wybierz regułę ustawić okno dialogowe (starsza wersja)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Następnie przejdź do kroku 10.  
-  
-         —lub—  
-  
-    -   Wpisz nazwę dla zestawu reguł. Kliknij przycisk **RuleSetReference** wielokropek **[...]** , a następnie wybierz pozycję **Edytuj** w [wybierz regułę ustawić okno dialogowe (starsza wersja)](../workflow-designer/select-rule-set-dialog-box-legacy.md).  
+    - Kliknij przycisk **RuleSetReference** wielokropek **[...]** , a następnie wybierz istniejący zestaw reguł [wybierz regułę ustawić okno dialogowe (starsza wersja)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Następnie przejdź do kroku 10.  
   
          —lub—  
   
-    -   Wpisz nazwę dla zestawu reguł. Rozwiń **RuleSetReference** właściwości i wybierz wielokropek **[...]**  w **definicji reguł** właściwości.  
+    - Wpisz nazwę dla zestawu reguł. Kliknij przycisk **RuleSetReference** wielokropek **[...]** , a następnie wybierz pozycję **Edytuj** w [wybierz regułę ustawić okno dialogowe (starsza wersja)](../workflow-designer/select-rule-set-dialog-box-legacy.md).  
+  
+         —lub—  
+  
+    - Wpisz nazwę dla zestawu reguł. Rozwiń **RuleSetReference** właściwości i wybierz wielokropek **[...]**  w **definicji reguł** właściwości.  
   
          [Reguły Ustaw edytora okno dialogowe (starsza wersja)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) zostanie otwarty.  
   
-4.  W [reguły Ustaw edytora okno dialogowe (starsza wersja)](../workflow-designer/rule-set-editor-dialog-box-legacy.md), kliknij przycisk **Dodaj regułę** można dodać nowej reguły do zestawu reguł.  
+4. W [reguły Ustaw edytora okno dialogowe (starsza wersja)](../workflow-designer/rule-set-editor-dialog-box-legacy.md), kliknij przycisk **Dodaj regułę** można dodać nowej reguły do zestawu reguł.  
   
-5.  Wprowadź **nazwa**, **priorytet**, i **ponownej oceny** właściwości, lub pozostaw wartości domyślne.  
+5. Wprowadź **nazwa**, **priorytet**, i **ponownej oceny** właściwości, lub pozostaw wartości domyślne.  
   
-6.  Wprowadź tekst **warunek**.  
+6. Wprowadź tekst **warunek**.  
   
-7.  Wprowadź tekst **następnie akcje** i **inne akcje**.  
+7. Wprowadź tekst **następnie akcje** i **inne akcje**.  
   
-8.  Kliknij przycisk **Dodaj regułę** ponownie, aby dodać inną regułę.  
+8. Kliknij przycisk **Dodaj regułę** ponownie, aby dodać inną regułę.  
   
 9. Po zakończeniu kliknij przycisk **OK**.  
   

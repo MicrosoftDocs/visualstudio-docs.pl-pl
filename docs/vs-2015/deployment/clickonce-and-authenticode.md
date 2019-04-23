@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6057aa437aa4fc0d14bd21f20e3fa657f5c5c15d
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 0732a5f867b357bddf3ff9f9d83bcfd7dd1f0573
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834771"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089084"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce i podpis Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Authenticode * jest technologia firmy Microsoft, która używa branżowego stand
   
  Można uzyskać certyfikat podpisywania w jeden z trzech sposobów kodu:  
   
--   Kupić od dostawcy certyfikatu.  
+- Kupić od dostawcy certyfikatu.  
   
--   Wyświetlany jest jeden z grupy w Twojej organizacji, które są odpowiedzialne za tworzenie certyfikatów cyfrowych.  
+- Wyświetlany jest jeden z grupy w Twojej organizacji, które są odpowiedzialne za tworzenie certyfikatów cyfrowych.  
   
--   Generowanie certyfikatu z MakeCert.exe, który jest dołączony do [!INCLUDE[winsdklong](../includes/winsdklong-md.md)].  
+- Generowanie certyfikatu z MakeCert.exe, który jest dołączony do [!INCLUDE[winsdklong](../includes/winsdklong-md.md)].  
   
 ### <a name="how-using-certificate-authorities-helps-users"></a>Jak za pomocą urzędów certyfikacji ułatwia użytkownikom  
  Certyfikat wygenerowany za pomocą narzędzia MakeCert.exe jest popularnie określany mianem *self-cert* lub *certyfikatu testowego*. Tego rodzaju certyfikatu działa znacznie tak samo jak pliku .snk działa w programie .NET Framework. Składa się wyłącznie z pary kluczy kryptograficznych publiczny/prywatny, a nie zawiera możliwe do zweryfikowania informacji o wydawcy. Certyfikaty z własnym można użyć do wdrożenia [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacje z wysokim poziomem zaufania w sieci intranet. Jednak gdy te aplikacje uruchomione na komputerze klienckim [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] zidentyfikować je jako pochodzący od nieznanego wydawcy. Domyślnie [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacje podpisane przy użyciu własnym certyfikatami i wdrożone przez Internet nie może wykorzystać zaufanego wdrożenia aplikacji.  
@@ -61,15 +61,15 @@ Authenticode * jest technologia firmy Microsoft, która używa branżowego stand
 ### <a name="updating-expired-certificates"></a>Aktualizowanie wygasłych certyfikatów  
  We wcześniejszych wersjach programu .NET Framework aktualizowanie aplikacji wygasło którego certyfikat może spowodować tę aplikację, przestanie działać. Aby rozwiązać ten problem, należy użyć jednej z następujących metod:  
   
--   Zaktualizuj programu .NET Framework w wersji 2.0 z dodatkiem SP1 lub nowszy na Windows XP, lub w wersji 3.5 lub nowszy na Windows Vista.  
+- Zaktualizuj programu .NET Framework w wersji 2.0 z dodatkiem SP1 lub nowszy na Windows XP, lub w wersji 3.5 lub nowszy na Windows Vista.  
   
--   Odinstaluj tę aplikację, a następnie ponownie zainstaluj nową wersję z prawidłowym certyfikatem.  
+- Odinstaluj tę aplikację, a następnie ponownie zainstaluj nową wersję z prawidłowym certyfikatem.  
   
--   Utwórz zestaw wiersza polecenia, który aktualizuje certyfikat. Szczegółowe informacje o tym procesie, można znaleźć w folderze [925521 artykuł pomocy technicznej firmy Microsoft](http://go.microsoft.com/fwlink/?LinkId=179454).  
+- Utwórz zestaw wiersza polecenia, który aktualizuje certyfikat. Szczegółowe informacje o tym procesie, można znaleźć w folderze [925521 artykuł pomocy technicznej firmy Microsoft](http://go.microsoft.com/fwlink/?LinkId=179454).  
   
 ### <a name="storing-certificates"></a>Przechowywanie certyfikatów  
   
--   Jako plik pfx w systemie plików można przechowywać certyfikaty, lub przechowywać je wewnątrz kontenera kluczy. Użytkownik w domenie Windows może mieć wiele kontenerów kluczy. Domyślnie program MakeCert.exe będzie certyfikaty są przechowywane w osobistych kontener kluczy, chyba że określisz, że jej należy zapisywać do pliku PFX zamiast tego. Mage.exe i MageUI.exe, [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] narzędzia służące do tworzenia [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożeń umożliwiają korzystanie z certyfikatów przechowywanych w dowolnym czasie.  
+- Jako plik pfx w systemie plików można przechowywać certyfikaty, lub przechowywać je wewnątrz kontenera kluczy. Użytkownik w domenie Windows może mieć wiele kontenerów kluczy. Domyślnie program MakeCert.exe będzie certyfikaty są przechowywane w osobistych kontener kluczy, chyba że określisz, że jej należy zapisywać do pliku PFX zamiast tego. Mage.exe i MageUI.exe, [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] narzędzia służące do tworzenia [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożeń umożliwiają korzystanie z certyfikatów przechowywanych w dowolnym czasie.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)   

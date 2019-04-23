@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aaaa9b5f30844e9d23b35ec9304a70edcd2b6139
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 303c19e8cb02b7c9db78d922f0591cb7ab5f3ed3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933253"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089318"
 ---
 # <a name="hierarchical-update"></a>Hierarchiczna aktualizacja
 
@@ -87,9 +87,9 @@ Zapisz wygenerowany kod zawiera również linię kodu, który wywołuje `Custome
 
 ### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Aby zaktualizować kod w celu zatwierdzenia zmian w tabelach pokrewnych przed zapisaniem
 
-1.  Kliknij dwukrotnie **Zapisz** znajdujący się na <xref:System.Windows.Forms.BindingNavigator> otworzyć **Form1** w edytorze kodu.
+1. Kliknij dwukrotnie **Zapisz** znajdujący się na <xref:System.Windows.Forms.BindingNavigator> otworzyć **Form1** w edytorze kodu.
 
-2.  Dodaj wiersz kodu w celu wywołania `OrdersBindingSource.EndEdit` metoda po wierszu, który wywołuje `CustomersBindingSource.EndEdit` metody. Kod w **Zapisz** kliknięcia przycisku zdarzeń powinny wyglądać podobnie do poniższego:
+2. Dodaj wiersz kodu w celu wywołania `OrdersBindingSource.EndEdit` metoda po wierszu, który wywołuje `CustomersBindingSource.EndEdit` metody. Kod w **Zapisz** kliknięcia przycisku zdarzeń powinny wyglądać podobnie do poniższego:
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]
@@ -101,11 +101,11 @@ Oprócz zatwierdzania zmian w pokrewnej tabeli podrzędnej przed zapisaniem dany
 
 ### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Aby dodać kod, aby zatwierdzić rekordów nadrzędnych w zestawie danych przed dodaniem nowych rekordów podrzędnych
 
-1.  Utwórz procedurę obsługi zdarzeń dla `OrdersBindingSource.AddingNew` zdarzeń.
+1. Utwórz procedurę obsługi zdarzeń dla `OrdersBindingSource.AddingNew` zdarzeń.
 
-    -   Otwórz **Form1** w widoku Projekt, wybierz **OrdersBindingSource** w zasobniku składnika wybierz **zdarzenia** w **właściwości** oknie i następnie kliknij dwukrotnie ikonę **AddingNew** zdarzeń.
+    - Otwórz **Form1** w widoku Projekt, wybierz **OrdersBindingSource** w zasobniku składnika wybierz **zdarzenia** w **właściwości** oknie i następnie kliknij dwukrotnie ikonę **AddingNew** zdarzeń.
 
-2.  Dodaj wiersz kodu do obsługi zdarzeń, który wywołuje `CustomersBindingSource.EndEdit` metody. Kod w `OrdersBindingSource_AddingNew` programu obsługi zdarzeń powinny wyglądać podobnie do poniższego:
+2. Dodaj wiersz kodu do obsługi zdarzeń, który wywołuje `CustomersBindingSource.EndEdit` metody. Kod w `OrdersBindingSource_AddingNew` programu obsługi zdarzeń powinny wyglądać podobnie do poniższego:
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/VisualBasic/hierarchical-update_2.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]

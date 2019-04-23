@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f5459da813de289eb4e3c86a298128c2abb42363
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3ed364d9c8995a93acb0de8002bafefd603c2d71
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661727"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089097"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opcje, edytor tekstu, XAML, formatowanie
 
@@ -44,13 +44,13 @@ Użyj **formatowanie** stronę właściwości, aby określić, jak sformatowane 
 
 Automatyczne formatowanie może wystąpić, gdy dowolne z następujących zdarzeń wykryte.
 
--   Uzupełnianie tagu końcowego lub prostego.
+- Uzupełnianie tagu końcowego lub prostego.
 
--   Uzupełnianie tagu początkowego.
+- Uzupełnianie tagu początkowego.
 
--   Wklejanie ze Schowka.
+- Wklejanie ze Schowka.
 
--   Formatowanie klawiaturowych.
+- Formatowanie klawiaturowych.
 
 Można określić, zdarzenia, które powodują automatyczne formatowanie.
 

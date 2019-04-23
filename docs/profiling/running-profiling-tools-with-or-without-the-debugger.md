@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63215d6350a4922ed416c8c48f006cd23c9e0728
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 273dc6770f2928ed65d6a473b7f1986bc353687e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323727"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060816"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Uruchamianie narzędzi profilowania z debugerem lub bez debugera
 
@@ -33,7 +33,7 @@ Aby zdecydować, które narzędzia i wyników do użycia, należy wziąć pod uw
 - Sam debuger zmienia czas wydajności, jak debugera niezbędne operacje, takie jak przechwytuje wyjątek i zdarzenia ładowania modułu.
 - Wydajność numery kompilacji do wydania **Profiler wydajności** narzędzia są dokładne i dokładne. Wyniki działania narzędzia zintegrowane z debugerem są najbardziej przydatne do porównania z innych pomiarów związanym z debugowaniem.
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Zbieranie danych profilowania podczas debugowania
+## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Zbieranie danych profilowania podczas debugowania
 
 Po rozpoczęciu debugowania w programie Visual Studio, wybierając **debugowania** > **Rozpocznij debugowanie** lub naciskając **F5**, **narzędzia diagnostyczne** domyślnie zostanie wyświetlone okno. Aby otworzyć go ręcznie, zaznacz **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**. **Narzędzia diagnostyczne** okno zawiera informacje dotyczące zdarzenia, pamięć procesu i użycie procesora CPU.
 

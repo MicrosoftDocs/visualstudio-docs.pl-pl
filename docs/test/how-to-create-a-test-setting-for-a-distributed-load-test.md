@@ -8,12 +8,12 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f8cb4c3c2cba9f7734aa50c95f28bb6cef6bcba
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1e55e4fd2e67c07110fcd3351e492ec94ccc47fa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928884"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087849"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Instrukcje: Utwórz ustawienie testu dla testu obciążenia rozłożonego
 
@@ -25,11 +25,11 @@ Na przykład można użyć adaptera danych diagnostycznych programu ASP.NET Prof
 
 Ustawienia testu dla programu Visual Studio są przechowywane w pliku. Ustawienia testowe definiują następujące informacje dotyczące poszczególnych ról:
 
--   Zbiór ról, które są wymagane dla badanej aplikacji
+- Zbiór ról, które są wymagane dla badanej aplikacji
 
--   Rola służące do uruchamiania testów
+- Rola służące do uruchamiania testów
 
--   Adaptery danych diagnostycznych do użycia dla każdej roli
+- Adaptery danych diagnostycznych do użycia dla każdej roli
 
 Po uruchomieniu testów, możesz wybrać ustawienia testu do użycia jako ustawienia aktywnego testu w zależności od tego, czego wymagasz dla tego określonego testu. Plik ustawień testu jest przechowywana jako część rozwiązania. Nazwa pliku ma rozszerzenie *.testsettings*.
 
@@ -43,33 +43,33 @@ Wykonaj następujące kroki, aby utworzyć i usuwania ustawień testowych w rozw
 
 ### <a name="to-add-a-test-settings-for-a-distributed-load-test"></a>Aby dodać ustawienia testów dla rozłożonego testu obciążenia
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **elementy rozwiązania**, wskaż polecenie **Dodaj**, a następnie wybierz **nowy element**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **elementy rozwiązania**, wskaż polecenie **Dodaj**, a następnie wybierz **nowy element**.
 
      **Dodaj nowy element** pojawi się okno dialogowe.
 
-2.  W **zainstalowane szablony** okienku wybierz **ustawienia testu**.
+2. W **zainstalowane szablony** okienku wybierz **ustawienia testu**.
 
-3.  (Opcjonalnie) W **nazwa** Zmień nazwę pliku ustawień testu.
+3. (Opcjonalnie) W **nazwa** Zmień nazwę pliku ustawień testu.
 
-4.  Wybierz **Dodaj**.
+4. Wybierz **Dodaj**.
 
      Nowy plik ustawień testowych pojawia się w **Eksploratora rozwiązań**w obszarze **elementy rozwiązania** folderu.
 
     > [!NOTE]
     > Lista ustawień testowych, które wyświetla Visual Studio Enterprise jest tworzony na podstawie listy plików ustawień testowych w **elementy rozwiązania** folderu. Na przykład, przetestuj pliki ustawień w **elementy rozwiązania** folderu są wyświetlane, gdy używasz **zaznacz aktywne ustawienia testu** opcja **Test** menu. Oznacza to, że po przeniesieniu pliku ustawień testu do innej lokalizacji w hierarchii rozwiązania może już służyć jako ustawienie testu w programie Visual Studio zintegrowanego środowiska programistycznego.
 
-5.  **Ustawienia testu** zostanie wyświetlone okno dialogowe. **Ogólne** została zaznaczona strona.
+5. **Ustawienia testu** zostanie wyświetlone okno dialogowe. **Ogólne** została zaznaczona strona.
 
      Można teraz edytować i zapisać wartości ustawień testu.
 
     > [!NOTE]
     > Wszystkich ustawień testu, tworzonych jest wymieniony jako wyborem dla **zaznacz aktywne ustawienia testu** i **Edytuj ustawienia testu** opcji na **Test** menu.
 
-6.  W obszarze **nazwa**, wpisz nazwę ustawień testu.
+6. W obszarze **nazwa**, wpisz nazwę ustawień testu.
 
-7.  (Opcjonalnie) W obszarze **opis**, wpisz opis ustawienia testu, aby inni członkowie zespołu wiedzieli, jego przeznaczenie.
+7. (Opcjonalnie) W obszarze **opis**, wpisz opis ustawienia testu, aby inni członkowie zespołu wiedzieli, jego przeznaczenie.
 
-8.  (Opcjonalnie) Aby wybrać domyślny schemat nazewnictwa dla przebiegów testowych, wybierz **domyślny schemat nazewnictwa**. Aby zdefiniować własny schemat nazewnictwa, wybierz **schemat zdefiniowany przez użytkownika** i wpisz tekst, który ma w **tekst prefiksu**. Aby sygnatura daty i godziny należy dołączyć do nazwy testu, wybierz **Dołącz sygnaturę daty i godziny**.
+8. (Opcjonalnie) Aby wybrać domyślny schemat nazewnictwa dla przebiegów testowych, wybierz **domyślny schemat nazewnictwa**. Aby zdefiniować własny schemat nazewnictwa, wybierz **schemat zdefiniowany przez użytkownika** i wpisz tekst, który ma w **tekst prefiksu**. Aby sygnatura daty i godziny należy dołączyć do nazwy testu, wybierz **Dołącz sygnaturę daty i godziny**.
 
 9. Wybierz **role**.
 
@@ -154,27 +154,27 @@ Wykonaj następujące kroki, aby utworzyć i usuwania ustawień testowych w rozw
 
      **Skrypty instalacyjne i czyszczące** zostanie wyświetlona strona.
 
-    1.  Wpisz lokalizację pliku skryptu w **skrypt instalacyjny** lub wybierz wielokropek (**...** ), aby zlokalizować konfigurację scenariusza.
+    1. Wpisz lokalizację pliku skryptu w **skrypt instalacyjny** lub wybierz wielokropek (**...** ), aby zlokalizować konfigurację scenariusza.
 
-    2.  Wpisz lokalizację pliku skryptu w **skrypt czyszczący** lub wybierz wielokropek (**...** ), aby zlokalizować czyszczenie scenariusza.
+    2. Wpisz lokalizację pliku skryptu w **skrypt czyszczący** lub wybierz wielokropek (**...** ), aby zlokalizować czyszczenie scenariusza.
 
 24. Aby uruchomić testy przy użyciu innego hosta, wybierz **hosty**.
 
-    1.  W **typ hosta**, upewnij się, że **domyślne** jest zaznaczone.
+    1. W **typ hosta**, upewnij się, że **domyślne** jest zaznaczone.
 
         > [!NOTE]
         > **ASP.NET** w **typ hosta** nie jest obsługiwany w badaniach obciążenia.
 
-    2.  Użyj **Uruchom test w 32-bitową lub 64-bitowych** procesu listy rozwijanej do wybierz, czy testy wydajności i jednostki w sieci web w teście obciążenia, aby był uruchamiany jako procesy 32-bitową lub 64-bitowych.
+    2. Użyj **Uruchom test w 32-bitową lub 64-bitowych** procesu listy rozwijanej do wybierz, czy testy wydajności i jednostki w sieci web w teście obciążenia, aby był uruchamiany jako procesy 32-bitową lub 64-bitowych.
 
         > [!NOTE]
         > Aby zapewnić maksymalną elastyczność, należy skompilować wydajności sieci web i obciążenia projektów testów przy użyciu **dowolny Procesor** konfiguracji. Następnie można uruchomić zarówno 32-bitowych i 64-bitowych agentów. Kompilowanie wydajności sieci web i obciążenia projekty testowe przy użyciu **64-bitowych** konfiguracja zapewnia nie posiada zalet.
 
 25. (Opcjonalnie) Aby ograniczyć czas dla każdego przebiegu testu i badań indywidualnych, wybierz opcję **limity czasu testu.**
 
-    1.  Aby przerwać test Kiedy limit czasu zostanie przekroczony, wybierz **Przerwij przebieg testu, jeśli łączny czas przekroczy** , a następnie wpisz wartość dla tego ograniczenia.
+    1. Aby przerwać test Kiedy limit czasu zostanie przekroczony, wybierz **Przerwij przebieg testu, jeśli łączny czas przekroczy** , a następnie wpisz wartość dla tego ograniczenia.
 
-    2.  Aby zakończyć niepowodzeniem test indywidualny, po przekroczeniu limitu czasu, wybierz **Oznacz pojedynczy test jako zakończony niepowodzeniem, jeśli czas jego wykonywania przekroczy**, a następnie wpisz wartość dla tego ograniczenia.
+    2. Aby zakończyć niepowodzeniem test indywidualny, po przekroczeniu limitu czasu, wybierz **Oznacz pojedynczy test jako zakończony niepowodzeniem, jeśli czas jego wykonywania przekroczy**, a następnie wpisz wartość dla tego ograniczenia.
 
 26. Pomiń **testu jednostkowego**. Testy obciążeniowe nie należy używać tych ustawień.
 

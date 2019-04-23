@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a23cca7e0ae333b50c06e5e4b40e0a51d626f9b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c693b85eb7441749300181da8108dae353e91ad1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635712"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089376"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Uaktualnianie i migracja rozwiązań pakietu Office
   Jeśli masz projekt Microsoft Office, który został utworzony we wcześniejszej wersji programu Visual Studio, musisz uaktualnić projekt, aby używać go w bieżącej wersji programu Visual Studio. Aby uaktualnić projekt Microsoft Office, otwórz go w wersji programu Visual Studio, który zawiera narzędzia Microsoft Office developer tools. Aby uzyskać więcej informacji na temat wersji programu Visual Studio, obejmujących Microsoft Office developer tools, zobacz [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
@@ -35,22 +35,22 @@ ms.locfileid: "56635712"
 ## <a name="changes-to-upgraded-projects"></a>Zmiany do uaktualnionych projektów
  Kiedy uaktualniasz projekt Microsoft Office, Visual Studio modyfikuje projekt, aby docelowe były następujące elementy:
 
--   Visual Studio 2010 Tools dla pakietu Office runtime. Aby uzyskać więcej informacji, zobacz [Visual Studio Tools dla pakietu Office runtime ― omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+- Visual Studio 2010 Tools dla pakietu Office runtime. Aby uzyskać więcej informacji, zobacz [Visual Studio Tools dla pakietu Office runtime ― omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
--   Odwołania bieżącego zestawu.
+- Odwołania bieżącego zestawu.
 
--   Wersja programu .NET Framework, która jest obsługiwana przez typ projektu (po uaktualnieniu do programu Visual Studio 2013 tylko).
+- Wersja programu .NET Framework, która jest obsługiwana przez typ projektu (po uaktualnieniu do programu Visual Studio 2013 tylko).
 
--   Wersja pakietu Microsoft Office, który jest obsługiwany przez typ projektu (po uaktualnieniu do programu Visual Studio 2013 tylko).
+- Wersja pakietu Microsoft Office, który jest obsługiwany przez typ projektu (po uaktualnieniu do programu Visual Studio 2013 tylko).
 
 ## <a name="assembly-references"></a>Odwołania do zestawów
  Visual Studio uaktualnia następujące odwołania zestawów w projekcie:
 
--   Microsoft Office podstawowe zestawy międzyoperacyjne (PIA).
+- Microsoft Office podstawowe zestawy międzyoperacyjne (PIA).
 
--   Zestawy w [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Aby uzyskać więcej informacji o tych zbiorach, zobacz [Visual Studio Tools dla pakietu Office runtime ― omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+- Zestawy w [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Aby uzyskać więcej informacji o tych zbiorach, zobacz [Visual Studio Tools dla pakietu Office runtime ― omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
--   Nowe lub zaktualizowane wersje zależnych zestawów.
+- Nowe lub zaktualizowane wersje zależnych zestawów.
 
 ## <a name="targeted-net-framework"></a>Targeted .NET Framework
  Po uaktualnieniu projektu Visual Studio 2013, Visual Studio modyfikuje projekt docelowy: [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] lub [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Wersja programu .NET framework docelowa dla projektu zależy od tego, jakie wersje pakietu Office jest zainstalowany na tym komputerze. Jeśli [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] jest zainstalowany, Visual Studio modyfikuje projekt, który ma być przeznaczony [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. W przeciwnym razie program Visual Studio modyfikuje projekt, który ma być przeznaczony [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)].

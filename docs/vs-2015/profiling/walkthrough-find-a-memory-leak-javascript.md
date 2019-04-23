@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88f9d8fc871f182bb3a6d7f36c3648982e7a9684
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0533ed4a4d1fc45b41f1e324b087cc0e249e1083
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780937"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100459"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Przewodnik: Znajdowanie wycieku pamięci (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,18 +34,18 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
   
 ### <a name="running-the-javascript-memory-analyzer-test-app"></a>Uruchomiona aplikacja testowa analizatora pamięci JavaScript  
   
-1.  W programie Visual Studio, wybierz **pliku**, **New**, **projektu**.  
+1. W programie Visual Studio, wybierz **pliku**, **New**, **projektu**.  
   
-2.  Wybierz **JavaScript** w okienku po lewej stronie, a następnie wybierz **Windows**, **systemu Windows 8**, a następnie **Universal** lub  **Windows Phone aplikacje**.  
+2. Wybierz **JavaScript** w okienku po lewej stronie, a następnie wybierz **Windows**, **systemu Windows 8**, a następnie **Universal** lub  **Windows Phone aplikacje**.  
   
     > [!IMPORTANT]
     >  Wyniki użycia pamięci, które są wyświetlane w tym temacie są sprawdzane pod względem aplikacji systemu Windows 8.  
   
-3.  Wybierz **pusta aplikacja** szablonu projektu w środkowym okienku.  
+3. Wybierz **pusta aplikacja** szablonu projektu w środkowym okienku.  
   
-4.  W **nazwa** polu Określ nazwę, taką jak `JS_Mem_Tester`, a następnie wybierz **OK**.  
+4. W **nazwa** polu Określ nazwę, taką jak `JS_Mem_Tester`, a następnie wybierz **OK**.  
   
-5.  W **Eksploratora rozwiązań**, otwórz plik default.html i wklej następujący kod między \<treści > znaczniki:  
+5. W **Eksploratora rozwiązań**, otwórz plik default.html i wklej następujący kod między \<treści > znaczniki:  
   
     ```html  
     <div class="wrapper">  
@@ -57,7 +57,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
     > [!IMPORTANT]
     >  Jeśli używasz szablonu aplikacji uniwersalnej dla Windows 8.1, musisz zaktualizować kod HTML i CSS w obu. Windows i. Projekty WindowsPhone.  
   
-6.  Otwórz default.css i Dodaj następujący kod CSS:  
+6. Otwórz default.css i Dodaj następujący kod CSS:  
   
     ```css  
     .memleak {  
@@ -65,7 +65,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
     }  
     ```  
   
-7.  Otwórz default.js i Zastąp cały kod przy użyciu tego kodu:  
+7. Otwórz default.js i Zastąp cały kod przy użyciu tego kodu:  
   
     ```javascript  
     (function () {  
@@ -126,7 +126,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
     })();  
     ```  
   
-8.  Wybierz klawisz F5, aby rozpocząć debugowanie. Upewnij się, że **przeciek pamięci** na stronie pojawi się przycisk.  
+8. Wybierz klawisz F5, aby rozpocząć debugowanie. Upewnij się, że **przeciek pamięci** na stronie pojawi się przycisk.  
   
 9. Przejdź z powrotem do programu Visual Studio (Alt + Tab), a następnie wybierz klawisz Shift + F5, aby zatrzymać debugowanie.  
   
@@ -224,7 +224,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
     > [!TIP]
     >  Czasami, lokalizowanie obiektu w odniesieniu do `Global` obiektu może pomóc w zidentyfikowaniu tego obiektu. Aby to zrobić, otwórz menu skrótów dla identyfikatora, a następnie wybierz **Pokaż w widoku elementów głównych**.  
   
-##  <a name="FixingMemory"></a> Rozwiązywanie problemu pamięci  
+## <a name="FixingMemory"></a> Rozwiązywanie problemu pamięci  
   
 1. Korzystanie z danych, które ujawniło przez profiler, sprawdź kod, który jest odpowiedzialny za usunięcie elementów modelu DOM o identyfikatorze "item". Odbywa się w `initialize()` funkcji.  
   

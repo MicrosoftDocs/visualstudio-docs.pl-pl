@@ -12,25 +12,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 999be3e6d97158406aad32e79be87051ff11d3b3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 91cc840a69135edf59603ba62d15985eb541df0e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609881"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058932"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>Żadnej aktywności wątku, aby pokazać (Widok wątków)
 Ten obszar zawiera dane dotyczące odkrywanie wątków w aktualnie widocznym zakresie czasu.
 
  Jeśli informacje nie są widoczne, sprawdź następujące ustawienia:
 
--   Poziom powiększenia jest wysoka? Spróbuj powiększanie out lub przewijania, aby wyświetlić więcej aktywności wątku w zakresie.
+- Poziom powiększenia jest wysoka? Spróbuj powiększanie out lub przewijania, aby wyświetlić więcej aktywności wątku w zakresie.
 
--   Zbyt wiele wątków jest ukryty? Jeśli tak, spróbuj, przedstawiający wszystkie wątki
+- Zbyt wiele wątków jest ukryty? Jeśli tak, spróbuj, przedstawiający wszystkie wątki
 
--   Jeśli **tylko mój kod** jest wybrana, można przeglądać tylko dane o swoim kodzie. Spróbuj wyczyścić to ustawienie, aby ustalić, czy występuje aktywność wątek systemu.
+- Jeśli **tylko mój kod** jest wybrana, można przeglądać tylko dane o swoim kodzie. Spróbuj wyczyścić to ustawienie, aby ustalić, czy występuje aktywność wątek systemu.
 
--   Upewnij się, że redukcja szumów jest ustawiona na progu dolnego.
+- Upewnij się, że redukcja szumów jest ustawiona na progu dolnego.
 
 ## <a name="see-also"></a>Zobacz także
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

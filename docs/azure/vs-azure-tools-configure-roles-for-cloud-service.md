@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 06914374169d3d6dab6dd5a489461c11ddbc66aa
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 86a86a097bc5e9d3cd567502ec94aae3cbafd324
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953891"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043552"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurowanie ról usług w chmurze platformy Azure przy użyciu programu Visual Studio
 Usługi w chmurze platformy Azure może mieć jedną lub więcej procesów roboczych lub role sieci web. Dla każdej roli musisz zdefiniować sposób konfigurowania tej roli, a także skonfigurować, jak działa tej roli. Aby dowiedzieć się więcej na temat ról w usługach cloud services, zobacz wideo [wprowadzenie do usług Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -255,7 +255,7 @@ Poniższy kod przedstawia przykład sposobu wpisywanie tekstu do pliku w magazyn
 
 Aby wyświetlić plik utworzony przez kod w poprzedniej sekcji, wykonaj następujące kroki:
 
-1.  W obszarze powiadomień Windows kliknij prawym przyciskiem myszy ikonę platformy Azure oraz z menu kontekstowego wybierz **Pokaż interfejs użytkownika emulatora obliczeń**.
+1. W obszarze powiadomień Windows kliknij prawym przyciskiem myszy ikonę platformy Azure oraz z menu kontekstowego wybierz **Pokaż interfejs użytkownika emulatora obliczeń**.
 
     ![Pokaż emulatora obliczeń platformy Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/show-compute-emulator.png)
 

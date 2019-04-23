@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5156af5f8532879bc748627fb62b0b4b6fba4af2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5e5956414b7d298c5bf198d6e1e7daf3bceb6638
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776018"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056370"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Krok 5. Dodawanie obsługi zdarzeń wprowadzania dla kontrolek NumericUpDown
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ W piątej części tego samouczka dodasz programy obsługi zdarzeń Enter, aby t
   
 ### <a name="to-verify-the-default-behavior"></a>Aby sprawdzić zachowanie domyślne  
   
-1.  Uruchom program i uruchom quiz.  
+1. Uruchom program i uruchom quiz.  
   
      W formancie NumericUpDown dla problemu dodawania, kursor miga obok **0** (zero).  
   
-2.  Wprowadź `3`i zwróć uwagę, że formant pokazuje **30**.  
+2. Wprowadź `3`i zwróć uwagę, że formant pokazuje **30**.  
   
-3.  Wprowadź `5`i zwróć uwagę, że **350** pojawia się, ale zmienia się na **100** po sekundzie.  
+3. Wprowadź `5`i zwróć uwagę, że **350** pojawia się, ale zmienia się na **100** po sekundzie.  
   
      Przed rozwiązaniem tego problemu zastanów się, co się dzieje. Zastanów się, dlaczego **0** nie zniknęła po wprowadzeniu `3` i dlaczego **350** zmieniony na **100** , ale nie od razu.  
   
@@ -40,18 +40,18 @@ W piątej części tego samouczka dodasz programy obsługi zdarzeń Enter, aby t
   
 ### <a name="to-add-an-enter-event-handler-for-a-numericupdown-control"></a>Aby dodać moduł obsługi zdarzeń Enter w formancie NumericUpDown  
   
-1.  Wybierz pierwszy formant NumericUpDown (o nazwie "sum") na formularzu, a następnie w **właściwości** okna dialogowego wybierz **zdarzenia** ikonę na pasku narzędzi.  
+1. Wybierz pierwszy formant NumericUpDown (o nazwie "sum") na formularzu, a następnie w **właściwości** okna dialogowego wybierz **zdarzenia** ikonę na pasku narzędzi.  
   
      **Zdarzenia** karcie **właściwości** okno dialogowe wyświetla wszystkie zdarzenia, które można odpowiedzieć (obsłużyć) dla elementu wybranego w formularzu. Ponieważ wybrano formant NumericUpDown, wszystkie wymienione wydarzenia odnoszą się do niego.  
   
-2.  Wybierz **Enter** zdarzenia wprowadź `answer_Enter`, a następnie naciśnij klawisz Enter.  
+2. Wybierz **Enter** zdarzenia wprowadź `answer_Enter`, a następnie naciśnij klawisz Enter.  
   
      ![Okno dialogowe właściwości](../ide/media/express-answerenter.png "Express_AnswerEnter")  
 Okno dialogowe właściwości  
   
      Właśnie dodałeś program obsługi zdarzeń Enter dla formantu sumy NumericUpDown i możesz nadałeś **answer_Enter**.  
   
-3.  W metodzie dla **answer_Enter** procedura obsługi zdarzeń, Dodaj następujący kod.  
+3. W metodzie dla **answer_Enter** procedura obsługi zdarzeń, Dodaj następujący kod.  
   
      [!code-csharp[VbExpressTutorial3Step5_6#11](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#11)]
      [!code-vb[VbExpressTutorial3Step5_6#11](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#11)]  
@@ -60,18 +60,18 @@ Okno dialogowe właściwości
   
      Następny wiersz sprawdza, czy answerBox został pomyślnie przekonwertowany (rzutowany) z obiektu do formantu NumericUpDown. Jeśli konwersja nie powiodła, zmienna będzie miała wartość `null` (C#) lub `Nothing` (Visual Basic). Trzeci wiersz pobiera długość odpowiedzi, która jest wyświetlana w formancie NumericUpDown, a czwarty wiersz wybiera bieżącą wartość w formancie na podstawie tej długości. Teraz gdy uczestnik quizu wybierze formant, Visual Studio uruchamia zdarzenie, co powoduje, że bieżącej odpowiedzi do wybrania. Tak szybko, jak osoba wypełniająca quiz zaczyna wprowadzać inną odpowiedź, poprzednia odpowiedź jest czyszczona i zastąpiona nową odpowiedzią.  
   
-4.  W programie Windows Forms Designer wybierz formant różnicy NumericUpDown.  
+4. W programie Windows Forms Designer wybierz formant różnicy NumericUpDown.  
   
-5.  W **zdarzenia** strony **właściwości** okno dialogowe, przewiń w dół do **Enter** zdarzenia, wybierz strzałkę listy rozwijanej na końcu wiersza, a następnie wybierz `answer_Enter`program obsługi zdarzeń, który właśnie został dodany.  
+5. W **zdarzenia** strony **właściwości** okno dialogowe, przewiń w dół do **Enter** zdarzenia, wybierz strzałkę listy rozwijanej na końcu wiersza, a następnie wybierz `answer_Enter`program obsługi zdarzeń, który właśnie został dodany.  
   
-6.  Powtórz poprzedni krok dla formantów NumericUpDown iloczynu i ilorazu.  
+6. Powtórz poprzedni krok dla formantów NumericUpDown iloczynu i ilorazu.  
   
-7.  Zapisz swój program, a następnie uruchom go.  
+7. Zapisz swój program, a następnie uruchom go.  
   
      Po wybraniu formantu NumericUpDown, istniejąca wartość jest automatycznie wybierane i następnie czyszczona, gdy rozpoczniesz wprowadzać inną wartość.  
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   
--   Aby przejść do następnego kroku samouczka, zobacz [krok 6: Dodawanie problemu odejmowania](../ide/step-6-add-a-subtraction-problem.md).  
+- Aby przejść do następnego kroku samouczka, zobacz [krok 6: Dodawanie problemu odejmowania](../ide/step-6-add-a-subtraction-problem.md).  
   
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 4: Dodawanie metody CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 4: Dodawanie metody CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
