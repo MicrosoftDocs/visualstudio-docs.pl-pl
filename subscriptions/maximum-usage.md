@@ -7,12 +7,12 @@ ms.date: 03/24/2019
 ms.topic: conceptual
 description: Dowiedz się, jak wyświetlić maksymalną liczbę przypisanych subskrypcji w portalu administracyjnym
 searchscope: VS Subscription
-ms.openlocfilehash: cdeddc7bbd62c88096e61753351f3609197d3c72
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: c263c610b140d3662cb17ba9f2c3d3f1a1907ab7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58573025"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070361"
 ---
 # <a name="using-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Za pomocą funkcji maksymalnego użycia, aby śledzić liczbę przypisanych subskrypcji
 
@@ -32,7 +32,7 @@ Aby wyświetlić szczytowa liczba przypisanych na dowolnym poziomie umowy i subs
     > [!div class="mx-imgBorder"]
     > ![Podsumowanie maksymalnego użycia](_img/maximum-usage/maximum-usage-summary.png)
 
-4.  Aby wyświetlić maksymalną liczbę przypisanych przez cały okres istnienia umowę subskrypcji, kliknij **długoterminowych** kartę.
+4. Aby wyświetlić maksymalną liczbę przypisanych przez cały okres istnienia umowę subskrypcji, kliknij **długoterminowych** kartę.
 
 ## <a name="viewing-assignment-history"></a>Wyświetlanie historii przypisania
 

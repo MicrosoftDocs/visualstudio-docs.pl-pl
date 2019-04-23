@@ -26,12 +26,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1235abfc6e8a2c384b02fd1d48a859063c058d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2b40e7814fb809298c71d0078e644c12bd5a9a9e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766614"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064963"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Instrukcje: Debugowanie klientów i serwerów za pomocą debugowania RPC COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Debugowanie zdalnego wywołania (procedur RPC) procedury można użyć do debugo
   
 ### <a name="to-enable-rpc-debugging"></a>Aby włączyć debugowanie RPC  
   
-1.  Na **narzędzia** menu, kliknij przycisk **opcje**.  
+1. Na **narzędzia** menu, kliknij przycisk **opcje**.  
   
-2.  W **opcje** okno dialogowe, kliknij przycisk **debugowanie** folderu.  
+2. W **opcje** okno dialogowe, kliknij przycisk **debugowanie** folderu.  
   
-3.  Kliknij przycisk **natywnych** strony.  
+3. Kliknij przycisk **natywnych** strony.  
   
-4.  Wybierz **debugowania RPC** pole wyboru.  
+4. Wybierz **debugowania RPC** pole wyboru.  
   
     > [!NOTE]
     >  Aby debugować wywołania RPC, musi mieć uprawnienia administratora lub użytkownik zaawansowany.  

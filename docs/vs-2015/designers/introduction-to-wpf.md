@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 54af4da8ccfff04ed51f19b9265659897281f26d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8d20b8938f4d841bb42299b7aa9abaf633f72e7d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670462"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074612"
 ---
 # <a name="introduction-to-wpf"></a>Wprowadzenie do WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,12 +27,12 @@ Windows Presentation Foundation (WPF) pozwala tworzyć aplikacje dla Windows kli
   
  W tym omówieniu jest przeznaczony dla nowych osób i opisano kluczowe funkcje i pojęcia dotyczące środowiska WPF.  
   
-##  <a name="Programming_with_WPF"></a> Programowanie przy użyciu platformy WPF  
+## <a name="Programming_with_WPF"></a> Programowanie przy użyciu platformy WPF  
  WPF istnieje jako podzbiór typów programu .NET Framework, które znajdują się w większości przypadków w <xref:System.Windows> przestrzeni nazw. Jeśli aplikacje zostały wcześniej utworzony za pomocą .NET Framework przy użyciu technologii zarządzanych, takich jak ASP.NET i Windows Forms, WPF podstawowe środowisko programowania należy się zapoznać; Możesz utworzyć wystąpienia klasy, ustaw właściwości, metody wywołania i zdarzenia uchwyt, za pomocą platformy .NET ulubiony język programowania, takich jak C# lub Visual Basic.  
   
  WPF obejmuje dodatkowych narzędzi programistycznych, które podnoszą właściwości i zdarzenia: [właściwości zależności](https://msdn.microsoft.com/library/ms752914\(v=vs.100\).aspx) i [zdarzenia trasowanego](https://msdn.microsoft.com/library/ms742806\(v=vs.100\).aspx).  
   
-##  <a name="Markup_And_Codebehind"></a> Znaczniki i związane z kodem  
+## <a name="Markup_And_Codebehind"></a> Znaczniki i związane z kodem  
  WPF umożliwia tworzenie aplikacji przy użyciu zarówno *znaczników* i *związanym z kodem*, środowisko, które deweloperów platformy ASP.NET, należy zapoznać się z. Zazwyczaj przy użyciu znaczników XAML wyglądu aplikacji podczas używania zarządzanego języków programowania (związane z kodem) w celu zaimplementować jego zachowanie. To oddzielenie wygląd i zachowanie ma następujące zalety:  
   
 - Koszty tworzenia i konserwacji są ograniczone, ponieważ specyficzne dla wyglądu znacznika nie jest ściśle powiązany z kodu specyficznego dla zachowania.  
@@ -143,7 +143,7 @@ End Namespace
   
  ![Komunikat MessageBox](../designers/media/wpfintrofigure25.png "WPFIntroFigure25")  
   
-##  <a name="Controls"></a> Formanty  
+## <a name="Controls"></a> Formanty  
  Środowiska użytkownika, które są dostarczane przez ten model aplikacji są skonstruowane formanty. W środowisku WPF "control" to ogólny termin, która ma zastosowanie do kategorii klas WPF, które znajdują się w oknie lub strony sieci, mają interfejs użytkownika i wdrożenia niektóre zachowania.  
   
  Aby uzyskać więcej informacji, zobacz [formantów](http://msdn.microsoft.com/library/3f255a8a-35a8-4712-9065-472ff7d75599).  
@@ -151,38 +151,38 @@ End Namespace
 ### <a name="wpf-controls-by-function"></a>Formanty WPF według kategorii  
  Poniżej przedstawiono wbudowanych kontrolek WPF.  
   
--   **Przyciski**: <xref:System.Windows.Controls.Button> i <xref:System.Windows.Controls.Primitives.RepeatButton>.  
+- **Przyciski**: <xref:System.Windows.Controls.Button> i <xref:System.Windows.Controls.Primitives.RepeatButton>.  
   
--   **Wyświetlanie danych**: <xref:System.Windows.Controls.DataGrid>, <xref:System.Windows.Controls.ListView>, i <xref:System.Windows.Controls.TreeView>.  
+- **Wyświetlanie danych**: <xref:System.Windows.Controls.DataGrid>, <xref:System.Windows.Controls.ListView>, i <xref:System.Windows.Controls.TreeView>.  
   
--   **Data, wyświetlanie i wybór**: <xref:System.Windows.Controls.Calendar> i <xref:System.Windows.Controls.DatePicker>.  
+- **Data, wyświetlanie i wybór**: <xref:System.Windows.Controls.Calendar> i <xref:System.Windows.Controls.DatePicker>.  
   
--   **Okna dialogowe**: <xref:Microsoft.Win32.OpenFileDialog>, <xref:System.Windows.Controls.PrintDialog>, i <xref:Microsoft.Win32.SaveFileDialog>.  
+- **Okna dialogowe**: <xref:Microsoft.Win32.OpenFileDialog>, <xref:System.Windows.Controls.PrintDialog>, i <xref:Microsoft.Win32.SaveFileDialog>.  
   
--   **Cyfrowy atrament**: <xref:System.Windows.Controls.InkCanvas> i <xref:System.Windows.Controls.InkPresenter>.  
+- **Cyfrowy atrament**: <xref:System.Windows.Controls.InkCanvas> i <xref:System.Windows.Controls.InkPresenter>.  
   
--   **Dokumenty**: <xref:System.Windows.Controls.DocumentViewer>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentScrollViewer>, i <xref:System.Windows.Controls.StickyNoteControl>.  
+- **Dokumenty**: <xref:System.Windows.Controls.DocumentViewer>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentScrollViewer>, i <xref:System.Windows.Controls.StickyNoteControl>.  
   
--   **Dane wejściowe**: <xref:System.Windows.Controls.TextBox>, <xref:System.Windows.Controls.RichTextBox>, i <xref:System.Windows.Controls.PasswordBox>.  
+- **Dane wejściowe**: <xref:System.Windows.Controls.TextBox>, <xref:System.Windows.Controls.RichTextBox>, i <xref:System.Windows.Controls.PasswordBox>.  
   
--   **Układ**: <xref:System.Windows.Controls.Border>, <xref:System.Windows.Controls.Primitives.BulletDecorator>, <xref:System.Windows.Controls.Canvas>, <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.Expander>, <xref:System.Windows.Controls.Grid>, <xref:System.Windows.Controls.GridView>, <xref:System.Windows.Controls.GridSplitter>, <xref:System.Windows.Controls.GroupBox>, <xref:System.Windows.Controls.Panel>, <xref:System.Windows.Controls.Primitives.ResizeGrip>, <xref:System.Windows.Controls.Separator>, <xref:System.Windows.Controls.Primitives.ScrollBar>, <xref:System.Windows.Controls.ScrollViewer>, <xref:System.Windows.Controls.StackPanel>, <xref:System.Windows.Controls.Primitives.Thumb>, <xref:System.Windows.Controls.Viewbox>, <xref:System.Windows.Controls.VirtualizingStackPanel>, <xref:System.Windows.Window>, i <xref:System.Windows.Controls.WrapPanel>.  
+- **Układ**: <xref:System.Windows.Controls.Border>, <xref:System.Windows.Controls.Primitives.BulletDecorator>, <xref:System.Windows.Controls.Canvas>, <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.Expander>, <xref:System.Windows.Controls.Grid>, <xref:System.Windows.Controls.GridView>, <xref:System.Windows.Controls.GridSplitter>, <xref:System.Windows.Controls.GroupBox>, <xref:System.Windows.Controls.Panel>, <xref:System.Windows.Controls.Primitives.ResizeGrip>, <xref:System.Windows.Controls.Separator>, <xref:System.Windows.Controls.Primitives.ScrollBar>, <xref:System.Windows.Controls.ScrollViewer>, <xref:System.Windows.Controls.StackPanel>, <xref:System.Windows.Controls.Primitives.Thumb>, <xref:System.Windows.Controls.Viewbox>, <xref:System.Windows.Controls.VirtualizingStackPanel>, <xref:System.Windows.Window>, i <xref:System.Windows.Controls.WrapPanel>.  
   
--   **Nośnik**: <xref:System.Windows.Controls.Image>, <xref:System.Windows.Controls.MediaElement>, i <xref:System.Windows.Controls.SoundPlayerAction>.  
+- **Nośnik**: <xref:System.Windows.Controls.Image>, <xref:System.Windows.Controls.MediaElement>, i <xref:System.Windows.Controls.SoundPlayerAction>.  
   
--   **Menu**: <xref:System.Windows.Controls.ContextMenu>, <xref:System.Windows.Controls.Menu>, i <xref:System.Windows.Controls.ToolBar>.  
+- **Menu**: <xref:System.Windows.Controls.ContextMenu>, <xref:System.Windows.Controls.Menu>, i <xref:System.Windows.Controls.ToolBar>.  
   
--   **Nawigacja**: <xref:System.Windows.Controls.Frame>, <xref:System.Windows.Documents.Hyperlink>, <xref:System.Windows.Controls.Page>, <xref:System.Windows.Navigation.NavigationWindow>, i <xref:System.Windows.Controls.TabControl>.  
+- **Nawigacja**: <xref:System.Windows.Controls.Frame>, <xref:System.Windows.Documents.Hyperlink>, <xref:System.Windows.Controls.Page>, <xref:System.Windows.Navigation.NavigationWindow>, i <xref:System.Windows.Controls.TabControl>.  
   
--   **Wybór**: <xref:System.Windows.Controls.CheckBox>, <xref:System.Windows.Controls.ComboBox>, <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.RadioButton>, i <xref:System.Windows.Controls.Slider>.  
+- **Wybór**: <xref:System.Windows.Controls.CheckBox>, <xref:System.Windows.Controls.ComboBox>, <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.RadioButton>, i <xref:System.Windows.Controls.Slider>.  
   
--   **Informacje o użytkowniku**: <xref:System.Windows.Controls.AccessText>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.Primitives.Popup>, <xref:System.Windows.Controls.ProgressBar>, <xref:System.Windows.Controls.Primitives.StatusBar>, <xref:System.Windows.Controls.TextBlock>, i <xref:System.Windows.Controls.ToolTip>.  
+- **Informacje o użytkowniku**: <xref:System.Windows.Controls.AccessText>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.Primitives.Popup>, <xref:System.Windows.Controls.ProgressBar>, <xref:System.Windows.Controls.Primitives.StatusBar>, <xref:System.Windows.Controls.TextBlock>, i <xref:System.Windows.Controls.ToolTip>.  
   
-##  <a name="Input_And_Commanding"></a> Dane wejściowe i polecenia  
+## <a name="Input_And_Commanding"></a> Dane wejściowe i polecenia  
  Formanty w większości przypadków wykrywanie oraz reagowanie na dane wejściowe użytkownika. [System wprowadzania WPF](https://msdn.microsoft.com/library/ms754010\(v=vs.100\).aspx) używa zarówno bezpośrednich, jak i routingiem zdarzeń do obsługi wprowadzania tekstu, funkcje zarządzania i położenie myszy.  
   
  Aplikacje mają często złożone wymagania danych wejściowych. WPF zapewnia [polecenia system](https://msdn.microsoft.com/library/ms752308\(v=vs.100\).aspx) oddzielający danych wejściowych akcji użytkownika z kodu, który odpowiada na te akcje.  
   
-##  <a name="Layout"></a> Układ  
+## <a name="Layout"></a> Układ  
  Podczas tworzenia interfejsu użytkownika można zorganizować kontrolkom zorganizowanych według lokalizacji i rozmiaru w celu utworzenia układu. Najważniejszym wymaganiem, wszelkie układu jest dostosowania do zmiany rozmiaru okna i wyświetlić ustawienia. Zamiast wymuszania, pisanie kodu w celu dostosowania układu w tych okolicznościach, WPF zapewnia system najwyższej jakości, rozszerzalne układu dla Ciebie.  
   
  Podstawa system układu jest położenie względne, co zwiększa możliwości dostosowanie do zmieniających się okna i wyświetlania warunków. Ponadto system układu zarządza negocjacji między kontrolkami do określania układu. Negocjowanie jest procesem dwuetapowym: najpierw kontrolki informuje jego obiektu nadrzędnego, jakie lokalizacji i rozmiaru wymaga; Po drugie nadrzędny informuje kontrolki miejsca, które może mieć.  
@@ -214,7 +214,7 @@ End Namespace
   
  ![Strona DockPanel](../designers/media/wpfintrofigure11.png "WPFIntroFigure11")  
   
-##  <a name="Data_Binding"></a> Powiązanie danych  
+## <a name="Data_Binding"></a> Powiązanie danych  
  Większość aplikacji są tworzone użytkownikom sposób wyświetlić i edytować dane. Dla aplikacji WPF praca, przechowywania i uzyskiwania dostępu do danych jest już udostępniane na potrzeby technologii, takich jak SQL Server oraz obiektów ADO .NET. Po dane są dostępne, a następnie ładowane do aplikacji zarządzanych obiektów, rozpoczyna się trudną pracę dla aplikacji WPF. Obejmuje to zasadniczo dwie rzeczy:  
   
 1. Kopiowanie danych z obiektów zarządzanych w formantach, gdzie można wyświetlane i edytowane dane.  
@@ -245,16 +245,16 @@ End Namespace
   
    Aby uzyskać więcej informacji, zobacz [Przegląd wiązanie danych](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx).  
   
-##  <a name="Graphics"></a> Grafiki  
+## <a name="Graphics"></a> Grafiki  
  WPF wprowadza rozbudowane, skalowalny i elastyczny zestaw funkcje grafiki, które mają następujące korzyści:  
   
--   **Niezależne od rozdzielczości i niezależny od urządzenia grafiki**. Podstawowa jednostka miary w systemie grafiki WPF jest piksel niezależnie od urządzenia, czyli 1/96 cala, niezależnie od tego, rzeczywista rozdzielczość ekranu i stanowi podstawę do renderowania niezależne od rozdzielczości i niezależny od urządzenia. Piksele niezależne od urządzenia, która jest automatycznie skalowany aby dopasować ustawienie punktów na cal (dpi) systemu, które powoduje renderowanie na.  
+- **Niezależne od rozdzielczości i niezależny od urządzenia grafiki**. Podstawowa jednostka miary w systemie grafiki WPF jest piksel niezależnie od urządzenia, czyli 1/96 cala, niezależnie od tego, rzeczywista rozdzielczość ekranu i stanowi podstawę do renderowania niezależne od rozdzielczości i niezależny od urządzenia. Piksele niezależne od urządzenia, która jest automatycznie skalowany aby dopasować ustawienie punktów na cal (dpi) systemu, które powoduje renderowanie na.  
   
--   **Ulepszone dokładności**. System współrzędnych WPF jest mierzony z liczby zmiennoprzecinkowe podwójnej precyzji niż pojedynczej precyzji. Przekształcenia i nieprzezroczystość wartości również są wyrażane jako podwójnej precyzji. WPF również obsługuje szeroka gama kolorów (scRGB) i obsługuje zintegrowane zarządzanie danych wejściowych z różnych przestrzeni kolorów.  
+- **Ulepszone dokładności**. System współrzędnych WPF jest mierzony z liczby zmiennoprzecinkowe podwójnej precyzji niż pojedynczej precyzji. Przekształcenia i nieprzezroczystość wartości również są wyrażane jako podwójnej precyzji. WPF również obsługuje szeroka gama kolorów (scRGB) i obsługuje zintegrowane zarządzanie danych wejściowych z różnych przestrzeni kolorów.  
   
--   **Zaawansowana obsługa grafiki i animacje**. WPF upraszcza programowanie grafiki, umożliwiając zarządzanie sceny animacji dla Ciebie; nie ma potrzeby martwić się o interpolacji warianty punktowego, renderowanie pętli i przetwarzania sceny. Ponadto WPF zapewnia obsługę testowania trafień i alfa składania.  
+- **Zaawansowana obsługa grafiki i animacje**. WPF upraszcza programowanie grafiki, umożliwiając zarządzanie sceny animacji dla Ciebie; nie ma potrzeby martwić się o interpolacji warianty punktowego, renderowanie pętli i przetwarzania sceny. Ponadto WPF zapewnia obsługę testowania trafień i alfa składania.  
   
--   **Przyspieszanie sprzętowe**. System grafiki WPF wykorzystuje sprzęt graficzny w celu zminimalizowania użycia procesora CPU.  
+- **Przyspieszanie sprzętowe**. System grafiki WPF wykorzystuje sprzęt graficzny w celu zminimalizowania użycia procesora CPU.  
   
 ### <a name="2-d-shapes"></a>Kształty 2-D  
  WPF zawiera bibliotekę typowych rysowane wektor kształty 2-D, takich jak prostokąty i elipsy, które są wyświetlane na poniższej ilustracji.  
@@ -299,14 +299,14 @@ End Namespace
   
  Aby uzyskać więcej informacji, zobacz [Przegląd grafiki 3D](https://msdn.microsoft.com/library/ms747437\(v=vs.100\).aspx).  
   
-##  <a name="Animation"></a> Animacja  
+## <a name="Animation"></a> Animacja  
  WPF animacji pomocy technicznej pozwala utworzyć formanty zwiększania, potrząśnij, pokrętła i zanikanie, aby utworzyć interesujące strony przejścia i nie tylko. Można animować większość klas WPF, nawet niestandardowych klas. Na poniższej ilustracji przedstawiono prostej animacji w akcji.  
   
  ![Obrazy modułu animowany](../designers/media/wpfintrofigure7.png "WPFIntroFigure7")  
   
  Aby uzyskać więcej informacji, zobacz [Przegląd animacja](https://msdn.microsoft.com/library/ms752312\(v=vs.100\).aspx).  
   
-##  <a name="Media"></a> Media  
+## <a name="Media"></a> Media  
  Jest jednym ze sposobów w celu przekazania sformatowanej zawartości przy użyciu nośnika audiowizualnych. WPF obsługuje specjalne obrazy, wideo i audio.  
   
 ### <a name="images"></a>Obrazy  
@@ -327,7 +327,7 @@ End Namespace
   
  Aby uzyskać więcej informacji, zobacz [Przegląd Media, animacje i grafiki WPF](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx).  
   
-##  <a name="Text_and_Typography"></a> Tekst i typografii  
+## <a name="Text_and_Typography"></a> Tekst i typografii  
  W celu ułatwienia renderowanie tekstu wysokiej jakości, WPF, oferuje następujące funkcje:  
   
 - Obsługa czcionek OpenType.  
@@ -346,7 +346,7 @@ End Namespace
   
   Aby uzyskać więcej informacji, zobacz [typografii w oprogramowaniu Windows Presentation Foundation](https://msdn.microsoft.com/library/ms742190\(v=vs.100\).aspx).  
   
-##  <a name="WPF_Customization"></a> Dostosowywanie aplikacji WPF  
+## <a name="WPF_Customization"></a> Dostosowywanie aplikacji WPF  
  Do tej pory przedstawiono podstawowe bloki konstrukcyjne WPF do tworzenia aplikacji. Model aplikacji umożliwia hostowanie i dostarczać zawartość aplikacji, która składa się głównie z formantów. Aby uprościć rozmieszczenie kontrolek w interfejsie użytkownika i upewnij się, że układ jest obsługiwana w przypadku zmiany rozmiaru okna i wyświetlić ustawienia, użyjesz system układu WPF. Ponieważ większość aplikacji pozwalają użytkownikom na interakcję z danymi, umożliwia powiązanie danych Zmniejsz ilość pracy integracji interfejsu użytkownika z danymi. Aby poprawić wygląd aplikacji, należy użyć kompleksowego zakresu grafiki, animacji i media pomoc techniczna jest świadczona przez WPF.  
   
  Często jednak podstawowe informacje nie są wystarczające do tworzenia i zarządzania naprawdę odrębne i niezrównane wizualnie środowiska użytkownika. Standardowych kontrolek WPF nie może zintegrować z pożądany wygląd aplikacji. Dane mogą nie być wyświetlane w najefektywniejszy sposób. Środowisko użytkownika ogólną aplikacji może nie być odpowiednie do domyślnego wyglądu i działania Windows motywów. Na wiele sposobów prezentacji technologiczne rozszerzeń programu visual jak dowolny inny rodzaj rozszerzalności.  
@@ -498,18 +498,18 @@ End Namespace
   
  Aby uzyskać więcej informacji na temat kontrolek niestandardowych, zobacz [omówienie tworzenia kontrolek](https://msdn.microsoft.com/library/ms745025\(v=vs.100\).aspx).  
   
-##  <a name="WPF_Best_Practices"></a> Najlepsze rozwiązania w WPF  
+## <a name="WPF_Best_Practices"></a> Najlepsze rozwiązania w WPF  
  Podobnie jak w przypadku dowolnej platformy programowania WPF można na wiele sposobów, aby osiągnąć oczekiwany rezultat. Jako sposób zapewnienia, że Twoje WPF aplikacji zapewniają środowisko użytkownika wymagane i spełniać odbiorców ogólnie rzecz biorąc, są zalecane najlepsze rozwiązania dotyczące ułatwień dostępu, globalizacji i lokalizacji i wydajności. Zapoznaj się z poniższymi, aby uzyskać więcej informacji:  
   
--   [Najlepsze rozwiązania w zakresie ułatwień dostępu](https://msdn.microsoft.com/library/aa350483\(v=vs.100\).aspx)najlepsze rozwiązania w zakresie ułatwień dostępu  
+- [Najlepsze rozwiązania w zakresie ułatwień dostępu](https://msdn.microsoft.com/library/aa350483\(v=vs.100\).aspx)najlepsze rozwiązania w zakresie ułatwień dostępu  
   
--   [Przeglądanie globalizacji i lokalizacji WPF](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx)  
+- [Przeglądanie globalizacji i lokalizacji WPF](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx)  
   
--   [Optymalizacja wydajności aplikacji WPF](https://msdn.microsoft.com/library/aa970683\(v=vs.100\).aspx)  
+- [Optymalizacja wydajności aplikacji WPF](https://msdn.microsoft.com/library/aa970683\(v=vs.100\).aspx)  
   
--   [Windows Presentation Foundation zabezpieczeń](https://msdn.microsoft.com/library/aa970906\(v=vs.100\).aspx)  
+- [Windows Presentation Foundation zabezpieczeń](https://msdn.microsoft.com/library/aa970906\(v=vs.100\).aspx)  
   
-##  <a name="Summary"></a> Podsumowanie  
+## <a name="Summary"></a> Podsumowanie  
  WPF jest technologią kompleksowe prezentacji do tworzenia szerokiej gamy olśniewają grafiką aplikacje klienckie. To wprowadzenie udostępnił przyjrzeć się najważniejsze funkcje WPF.  
   
  Następnym krokiem jest do kompilowania aplikacji WPF!  

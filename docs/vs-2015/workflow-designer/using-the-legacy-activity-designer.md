@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e083da3dce7ed6b69309557d9e960a302f5b3d60
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5755c6a3b4ece5b40c7799d83bdf33966d5c2b3e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790548"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070787"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Używanie starszej wersji projektanta działań
 W tym temacie opisano sposób używania projektanta działań w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Podczas określania wartości za pomocą starszej wersji projektanta [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -35,9 +35,9 @@ W tym temacie opisano sposób używania projektanta działań w starszej wersji 
   
 2. Wybierz **działania** lub **działanie (z separacją kodu)** szablonu.  
   
-   1.  Użyj **działania** szablonu w celu utworzenia działanie z definicją działania i kod użytkownika, w tym samym pliku kodu.  
+   1. Użyj **działania** szablonu w celu utworzenia działanie z definicją działania i kod użytkownika, w tym samym pliku kodu.  
   
-   2.  Użyj **działanie (z separacją kodu)** szablonu w celu utworzenia działanie z definicją działania, wyrażone jako znacznik przepływu pracy i kod użytkownika w osobnym pliku kodu.  
+   2. Użyj **działanie (z separacją kodu)** szablonu w celu utworzenia działanie z definicją działania, wyrażone jako znacznik przepływu pracy i kod użytkownika w osobnym pliku kodu.  
   
 3. Wpisz nazwę działania lub pozostaw nazwę domyślną, a następnie kliknij **Dodaj**.  
   

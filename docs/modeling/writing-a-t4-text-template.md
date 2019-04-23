@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ae4a99fd1473ea25667887701198efee23b1356
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 68bb68160b78df4abe1b6874080c9a3ec91a3e31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970806"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063429"
 ---
 # <a name="writing-a-t4-text-template"></a>Pisanie szablonu tekstowego T4
 Szablon tekstu zawiera tekst, który zostanie z niego wygenerowany. Na przykład szablon, który tworzy stronę sieci web będzie zawierać "\<html >..." i wszystkie inne standardowe elementy strony HTML. Dodaje do szablonu są *bloki sterujące*, które stanowią fragmenty kodu programu. Bloki sterujące zawierają zmienne wartości i umożliwiają warunkowość oraz powtarzalność części tekstu.
@@ -25,11 +25,11 @@ Szablon tekstu zawiera tekst, który zostanie z niego wygenerowany. Na przykład
 
  Szablony tekstu składają się z następujących elementów:
 
--   **Dyrektywy** — elementy, które kontrolują sposób przetwarzania szablonu.
+- **Dyrektywy** — elementy, które kontrolują sposób przetwarzania szablonu.
 
--   **Bloki tekstu** — zawartość kopiowana bezpośrednio do wyjścia.
+- **Bloki tekstu** — zawartość kopiowana bezpośrednio do wyjścia.
 
--   **Bloki sterujące** — kod programu, który wstawia zmienne wartości do tekstu oraz kontroluje jego warunkowe lub powtarzające się części.
+- **Bloki sterujące** — kod programu, który wstawia zmienne wartości do tekstu oraz kontroluje jego warunkowe lub powtarzające się części.
 
 Aby wypróbować przykłady zamieszczone w tym temacie, skopiuj je do pliku szablonu zgodnie z opisem w [generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Po zmodyfikowaniu pliku szablonu, zapisz go, a następnie sprawdź dane wyjściowe **.txt** pliku.
 
@@ -107,7 +107,7 @@ Hello!
 <#= 2 + 3 #>
 ```
 
- Zwracamy uwagę, że symbol otwierający ma trzy znaki „<#=”.
+ Zwróć uwagę, że symbol otwierający ma trzy znaki "< #=".
 
  Wyrażenie może zawierać dowolną zmienną znajdującą się w jego zakresie. Na przykład ten blok spowoduje wyświetlanie wierszy z następującymi liczbami:
 

@@ -12,12 +12,12 @@ ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 68e2408c1e6a8fe74c28769a8d4380d4254c6dfe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b28fe0e696b23724758bd877b6031287290f879e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771451"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068785"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField — Element (Szablony projektu Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ Określa, czy **lokalizacji** polu tekstowym **nowy projekt** okno dialogowe jes
   
  Tekst prawidłowe wartości to:  
   
--   `Enabled`, która określa, że **lokalizacji** pole **nowy projekt** okno dialogowe jest włączona.  
+- `Enabled`, która określa, że **lokalizacji** pole **nowy projekt** okno dialogowe jest włączona.  
   
--   `Disabled`, która określa, że **lokalizacji** pole **nowy projekt** okno dialogowe jest wyłączona.  
+- `Disabled`, która określa, że **lokalizacji** pole **nowy projekt** okno dialogowe jest wyłączona.  
   
--   `Hidden`, która określa, że **lokalizacji** pole **nowy projekt** okno zostanie ukryte.  
+- `Hidden`, która określa, że **lokalizacji** pole **nowy projekt** okno zostanie ukryte.  
   
 ## <a name="remarks"></a>Uwagi  
  Wartość domyślna to `Enabled`.  

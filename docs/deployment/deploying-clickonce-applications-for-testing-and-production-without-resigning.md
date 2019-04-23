@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dabed6cb449d51564dafbcddb3a17ccea1cda374
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e111b0d04b8e703a694917985a0559c05584e25b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638169"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065509"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Wdrażanie aplikacji ClickOnce do testowania i produkcji serwerów bez ponownego podpisywania
 W tym artykule opisano funkcję wprowadzone w .NET Framework w wersji 3.5, która umożliwia wdrażanie aplikacji ClickOnce z wielu lokalizacji sieciowych bez ponownego podpisywania lub zmiana ClickOnce manifesty ClickOnce.
@@ -34,9 +34,9 @@ W tym artykule opisano funkcję wprowadzone w .NET Framework w wersji 3.5, któr
 
  Deweloperzy innych firm i niezależni dostawcy oprogramowania zgodzić się na tej funkcji, co ułatwia ich klienci będą mogli aktualizować aplikacje usługi. Ta funkcja może być używana w następujących sytuacjach:
 
--   Podczas aktualizacji aplikacji, nie dla pierwszej instalacji aplikacji.
+- Podczas aktualizacji aplikacji, nie dla pierwszej instalacji aplikacji.
 
--   Gdy ma tylko jedną konfigurację aplikacji na komputerze. Na przykład jeśli aplikacja jest skonfigurowana by wskazywał dwóch różnych bazach danych, nie można użyć tej funkcji.
+- Gdy ma tylko jedną konfigurację aplikacji na komputerze. Na przykład jeśli aplikacja jest skonfigurowana by wskazywał dwóch różnych bazach danych, nie można użyć tej funkcji.
 
 ## <a name="exclude-deploymentprovider-from-deployment-manifests"></a>Wyklucz deploymentProvider z manifestów wdrożenia
  .NET Framework 2.0 i .NET Framework 3.0, każda aplikacja ClickOnce, która jest instalowana na systemu pod kątem dostępności w trybie offline należy liście `deploymentProvider` w manifeście wdrożenia. `deploymentProvider` Często nazywa się aktualizującej; to lokalizacja, gdzie ClickOnce szuka aktualizacji aplikacji. To wymaganie, wraz z konieczności wydawcy aplikacji zarejestrować swoje wdrożenia wprowadzone trudne dla firmy zaktualizować aplikacji ClickOnce, od dostawcy lub innych firm. Zapewnia także go trudniejsze do wdrożenia tej samej aplikacji z wielu lokalizacji w tej samej sieci.

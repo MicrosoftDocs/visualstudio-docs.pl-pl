@@ -6,12 +6,12 @@ ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c878eb55dbbdeacf0984b399949b2c3bbb7550b8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1607ec4863c7e2b21cd69dd57ca4203e3cf4dbf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794551"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063676"
 ---
 # <a name="vsix-color-compiler"></a>Kompilator kolorów VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -111,7 +111,7 @@ Narzędzie kompilatora kolor rozszerzeń programu Visual Studio jest aplikację 
 |-|-|  
 |**Atrybut**|**Definicja**|  
 |Typ|[Wymagane] Typ koloru. Może to być jedna z następujących czynności:<br /><br /> *CT_INVALID:* Kolor jest nieprawidłowy lub nie została ustawiona.<br /><br /> *CT_RAW:* Nieprzetworzona wartość ARGB.<br /><br /> *CT_COLORINDEX:* NIE NALEŻY UŻYWAĆ.<br /><br /> *CT_SYSCOLOR:* Kolor systemu Windows z SysColor.<br /><br /> *CT_VSCOLOR:* Kolor programu Visual Studio na podstawie __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Kolorowi automatycznemu.<br /><br /> *CT_TRACK_FOREGROUND:* NIE NALEŻY UŻYWAĆ.<br /><br /> *CT_TRACK_BACKGROUND:* NIE NALEŻY UŻYWAĆ.|  
-|Źródło|[Wymagane] Wartość koloru reprezentowane w formacie szesnastkowym|  
+|Source|[Wymagane] Wartość koloru reprezentowane w formacie szesnastkowym|  
   
  Obsługiwane przez wyliczenie __VSCOLORTYPE wszystkie wartości są obsługiwane przez schemat w atrybucie typu. Jednak zaleca się, że można używać tylko CT_RAW i CT_SYSCOLOR.  
   
@@ -149,15 +149,15 @@ Narzędzie kompilatora kolor rozszerzeń programu Visual Studio jest aplikację 
   
  **Przykłady**  
   
--   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
--   VsixColorCompiler D:\xml\colors.xml /noLogo  
+- VsixColorCompiler D:\xml\colors.xml /noLogo  
   
 ## <a name="notes"></a>Uwagi  
   
--   To narzędzie wymaga zainstalowania najnowszej wersji środowiska uruchomieniowego VC ++.  
+- To narzędzie wymaga zainstalowania najnowszej wersji środowiska uruchomieniowego VC ++.  
   
--   Obsługiwane są tylko pojedynczych plików. Konwersja zbiorcza za pośrednictwem ścieżek folderów nie jest obsługiwana.  
+- Obsługiwane są tylko pojedynczych plików. Konwersja zbiorcza za pośrednictwem ścieżek folderów nie jest obsługiwana.  
   
 ## <a name="sample-output"></a>Przykładowe dane wyjściowe  
  Plik .pkgdef wygenerowany przez narzędzie będą podobne do poniższych kluczy:  

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7583a25e000478e473cce61fd85e0158bad4212
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7fab8a42d5559c23ce6816d5a247561a4376a7fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609557"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075834"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 Manifest, aby narzędzie do obsługi kodu jest aplikacja konsolowa która przyjmuje plik .imagemanifest dla usługi obrazów programu Visual Studio i generuje plik z otoką lub plików do odwoływania się do wartości manifestu obrazu w języku C++, C#, VB lub vsct plików dla programu Visual Studio rozszerzenia. To narzędzie generuje pliki otoki, których można użyć dla obrazów żądania z usługi Visual Studio obraz bezpośrednio lub do przekazywania wartości manifestu za pośrednictwem interfejsów API, jeśli kod nie obsługuje żadnego interfejsu użytkownika i renderowania.
@@ -40,17 +40,17 @@ Manifest, aby narzędzie do obsługi kodu jest aplikacja konsolowa która przyjm
 
  **Przykłady**
 
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp
 
--   / Namespace /language:C++ /manifest:D:\MyManifest.imagemanifest ManifestToCode: Moje:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend
+- / Namespace /language:C++ /manifest:D:\MyManifest.imagemanifest ManifestToCode: Moje:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend
 
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds
 
 ## <a name="notes"></a>Uwagi
 
--   Firma Microsoft zaleca, użyj tego narzędzia z manifestów obrazu, które zostały wygenerowane przez Manifest za pomocą narzędzia zasobów.
+- Firma Microsoft zaleca, użyj tego narzędzia z manifestów obrazu, które zostały wygenerowane przez Manifest za pomocą narzędzia zasobów.
 
--   Narzędzie analizuje tylko wpisy symbolu, aby wygenerować otoki kodu. Jeśli manifestu obrazu nie zawiera żadnych symboli, następnie otoki wygenerowany kod jest pusta. Jeśli jest obraz lub zestaw obrazów w manifeście obrazu, które nie korzystają z symboli, następnie one zostaną wykluczone z otokę kodu.
+- Narzędzie analizuje tylko wpisy symbolu, aby wygenerować otoki kodu. Jeśli manifestu obrazu nie zawiera żadnych symboli, następnie otoki wygenerowany kod jest pusta. Jeśli jest obraz lub zestaw obrazów w manifeście obrazu, które nie korzystają z symboli, następnie one zostaną wykluczone z otokę kodu.
 
 ## <a name="sample-output"></a>Przykładowe dane wyjściowe
  **Otoki języka C#**

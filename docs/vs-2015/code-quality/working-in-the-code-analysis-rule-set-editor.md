@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0dd83a2b2d613d6d9ef73097bca4d2f9f1c6cd39
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 57d3c21371cc824573e29657d0b41253e556f4c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755881"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072256"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Praca w edytorze zestawu reguł analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Z edytora zestawu reguł analizy kodu pozwala określić reguły, które są obj
   
  W edytorze są wyświetlane reguły w strukturze drzewa, które grupy reguł w regule ustawić pola, które określisz. Aby dodać lub usunąć reguły z zestawu reguł, należy wykonać co najmniej jeden z następujących czynności:  
   
--   Zaznacz lub wyczyść pole wyboru w węźle grupy, aby dodać lub usunąć wszystkie reguły w grupie. Po wybraniu grupy, wszystkie reguły są ustawione na **ostrzeżenie** akcji.  
+- Zaznacz lub wyczyść pole wyboru w węźle grupy, aby dodać lub usunąć wszystkie reguły w grupie. Po wybraniu grupy, wszystkie reguły są ustawione na **ostrzeżenie** akcji.  
   
--   Kliknij przycisk **akcji** pole grupy, a następnie określ akcję do zastosowania do wszystkich reguł w grupie.  
+- Kliknij przycisk **akcji** pole grupy, a następnie określ akcję do zastosowania do wszystkich reguł w grupie.  
   
--   Zaznacz lub wyczyść pole wyboru dla poszczególnych reguł. Po zaznaczeniu pola wyboru dla reguły ustawiono regułę ostrzeżenie akcję.  
+- Zaznacz lub wyczyść pole wyboru dla poszczególnych reguł. Po zaznaczeniu pola wyboru dla reguły ustawiono regułę ostrzeżenie akcję.  
   
 ## <a name="rule-set-editor-toolbar"></a>Pasek narzędzi edytora zestawu reguł  
  Na pasku narzędzi edytora zestawu reguł umożliwia grupowanie, filtrowanie i wyszukiwać dane, który pojawia się w siatce zestawu reguł.  
@@ -73,6 +73,6 @@ Z edytora zestawu reguł analizy kodu pozwala określić reguły, które są obj
 ## <a name="sorting-and-filtering-rule-sets"></a>Sortowanie i filtrowanie zestawów reguł  
  Z nagłówków kolumn siatki zestaw reguł można sortować i filtrować zasady według wartości pola.  
   
--   Aby posortować listy zestawu reguł, kliknij nagłówek kolumny, pola, według której chcesz posortować. Jeśli zestawy reguł są grupowane, każda grupa jest sortowana indywidualnie.  
+- Aby posortować listy zestawu reguł, kliknij nagłówek kolumny, pola, według której chcesz posortować. Jeśli zestawy reguł są grupowane, każda grupa jest sortowana indywidualnie.  
   
--   Aby filtrować zestawów reguł według wartości pola, kliknij przycisk filtru w nagłówku kolumny pola, według której chcesz filtrować. Zaznacz pole wyboru wartości, które mają być wyświetlane, a następnie wyczyść pola wyboru wartości, które chcesz ukryć.
+- Aby filtrować zestawów reguł według wartości pola, kliknij przycisk filtru w nagłówku kolumny pola, według której chcesz filtrować. Zaznacz pole wyboru wartości, które mają być wyświetlane, a następnie wyczyść pola wyboru wartości, które chcesz ukryć.

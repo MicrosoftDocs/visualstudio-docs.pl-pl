@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e2839cf3fdd780ffbf2c3cfb50e086996cfc865e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 17eb5c1ca2ad35b7a510c5a70d3ad5c5f741c69d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663300"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063403"
 ---
 # <a name="hierarchical-update"></a>Hierarchiczna aktualizacja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,11 +99,11 @@ Hierarchiczna aktualizacja * odnosi się do procesu zapisywanie zaktualizowanych
   
 #### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Aby dodać kod, aby zatwierdzić rekordów nadrzędnych w zestawie danych przed dodaniem nowych rekordów podrzędnych  
   
-1.  Utwórz procedurę obsługi zdarzeń dla `OrdersBindingSource.AddingNew` zdarzeń.  
+1. Utwórz procedurę obsługi zdarzeń dla `OrdersBindingSource.AddingNew` zdarzeń.  
   
-    -   Otwórz **Form1** w widoku Projekt, wybierz **OrdersBindingSource** w zasobniku składnika wybierz **zdarzenia** w **właściwości** oknie i następnie kliknij dwukrotnie ikonę **AddingNew** zdarzeń.  
+    - Otwórz **Form1** w widoku Projekt, wybierz **OrdersBindingSource** w zasobniku składnika wybierz **zdarzenia** w **właściwości** oknie i następnie kliknij dwukrotnie ikonę **AddingNew** zdarzeń.  
   
-2.  Dodaj wiersz kodu do obsługi zdarzeń, który wywołuje `CustomersBindingSource.EndEdit` metody. Kod w `OrdersBindingSource_AddingNew` programu obsługi zdarzeń powinny wyglądać podobnie do poniższego:  
+2. Dodaj wiersz kodu do obsługi zdarzeń, który wywołuje `CustomersBindingSource.EndEdit` metody. Kod w `OrdersBindingSource_AddingNew` programu obsługi zdarzeń powinny wyglądać podobnie do poniższego:  
   
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#2)]
      [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#2)]  

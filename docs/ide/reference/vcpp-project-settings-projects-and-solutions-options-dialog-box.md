@@ -18,21 +18,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd44ef0a239f85078856c785ea4b5e2e6050b46e
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2d3f81659930f75cda3c4ec0873837f7486e8b60
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194888"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063858"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Ustawienia projektu VC++, projekty i rozwiązania, opcje — Okno dialogowe
 To okno dialogowe pozwala zdefiniować [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] kompilacji i ustawienia związane z rejestrowania, wydajności i obsługi typów plików projektu.
 
 ### <a name="to-access-this-dialog-box"></a>Dostęp do tego okna dialogowego
 
-1.  Na **narzędzia** menu, kliknij przycisk **opcje**.
+1. Na **narzędzia** menu, kliknij przycisk **opcje**.
 
-2.  Wybierz **projekty i rozwiązania**, a następnie wybierz pozycję **ustawienia projektu VC ++**.
+2. Wybierz **projekty i rozwiązania**, a następnie wybierz pozycję **ustawienia projektu VC ++**.
 
 ## <a name="build-logging"></a>Rejestrowanie kompilacji
  **Tak**

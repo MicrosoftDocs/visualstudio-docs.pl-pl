@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdac288755ca02face6f3422e2da0c78629e2905
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eccbf178b3515cd23695d899749beb478e942ff7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604039"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085932"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Obsługa paska nawigacyjnego w starszej wersji usługi językowej
 Pasek nawigacyjny u góry widoku edytora Wyświetla typy i elementy członkowskie w pliku. Typy są wyświetlane na liście rozwijanej po lewej stronie, a elementy członkowskie są wyświetlane w prawo rozwijanej. Gdy użytkownik wybierze typ, karetkę jest umieszczany w pierwszym wierszu tego typu. Gdy użytkownik wybierze element członkowski, karetkę jest umieszczany w definicji elementu członkowskiego. Pola listy rozwijanej, są aktualizowane zgodnie z bieżącym położeniem karetki.
@@ -68,24 +68,24 @@ namespace TestLanguagePackage
 
   Implementacja <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metoda przeważnie wykonuje następujące czynności:
 
-1.  Zostanie wyświetlona lista bieżącej deklaracji dla pliku źródłowego.
+1. Zostanie wyświetlona lista bieżącej deklaracji dla pliku źródłowego.
 
      Istnieją różne sposoby do wypełnienia listy. Jedno z podejść jest utworzenie niestandardowej metody na wersję <xref:Microsoft.VisualStudio.Package.LanguageService> klasy, która wywołuje <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodę z powodu niestandardowych analizy, która zwraca listę wszystkich deklaracji. Innym rozwiązaniem może być wywołanie <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> bezpośrednio z metody <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodę z powodu niestandardowych analizy. Trzeci rozwiązaniem może być w pamięci podręcznej deklaracji w <xref:Microsoft.VisualStudio.Package.AuthoringScope> klasy zwrócony przez ostatnią pełną operację analizy w <xref:Microsoft.VisualStudio.Package.LanguageService> klasy i pobrać z <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metody.
 
-2.  Wypełnij lub zaktualizować listę typów.
+2. Wypełnij lub zaktualizować listę typów.
 
      Zawartość listy typów mogą zostać zaktualizowane po zmianie źródła lub jeśli zmiana stylu tekstu typów, w oparciu o bieżącym położeniu karetki. Należy zauważyć, że w tym miejscu jest przekazywany do <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metody.
 
-3.  Określ typ, wybierz z listy typów, oparte na bieżącym położeniu karetki.
+3. Określ typ, wybierz z listy typów, oparte na bieżącym położeniu karetki.
 
      Możesz wyszukać deklaracje, które zostały uzyskane w kroku 1, aby znaleźć typ, który otacza bieżącym położeniu karetki i następnie wyszukaj listę typów dla tego typu ustalić jego indeksu na liście typów.
 
-4.  Wypełnij lub zaktualizować listę elementów członkowskich na podstawie wybranego typu.
+4. Wypełnij lub zaktualizować listę elementów członkowskich na podstawie wybranego typu.
 
      Lista elementów członkowskich odzwierciedla, co to jest aktualnie wyświetlany w **członków** listy rozwijanej. Zawartość listy elementów członkowskich może być konieczne można zaktualizować, czy źródłowy został zmieniony, czy są wyświetlane tylko członkowie wybranego typu i wybrany typ został zmieniony. Jeśli wybierzesz wyświetlić wszystkie elementy członkowskie w pliku źródłowym, style tekstu poszczególnych członków na liście musi zostać zaktualizowany, jeśli aktualnie wybranego typu została zmieniona.
 
-5.  Ustal, elementu członkowskiego, aby wybrać na liście elementów członkowskich na podstawie bieżącego położenia karetki.
+5. Ustal, elementu członkowskiego, aby wybrać na liście elementów członkowskich na podstawie bieżącego położenia karetki.
 
      Wyszukaj deklaracje, które zostały uzyskane w kroku 1 dla elementu członkowskiego, który zawiera bieżącym położeniu karetki, a następnie wyszukaj listę elementów członkowskich dla tego elementu, aby ustalić jego indeksu do listy członków.
 
-6.  Zwróć `true` Jeśli zmiany zostały dokonane do listy lub zaznaczenia w obu list.
+6. Zwróć `true` Jeśli zmiany zostały dokonane do listy lub zaznaczenia w obu list.

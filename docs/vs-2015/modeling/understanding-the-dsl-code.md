@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fc0db508fc06cc5b80db589ba7ebd88bc3221be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 25c4359a5ff64a3ddd229e872aa8a52303c22bf2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777455"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068434"
 ---
 # <a name="understanding-the-dsl-code"></a>Znajomość kodu DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,15 +47,15 @@ Rozwiązania języka specyficznego dla domeny (DSL) generuje interfejs API, któ
   
  Zdecydowanie zalecamy nie edytowanie wygenerowanego kodu bezpośrednio, ponieważ Twoje zmiany zostaną utracone podczas ponownego kompilowania rozwiązania. Zamiast tego aby dostosować DSL:  
   
--   Dostosuj wiele parametrów w definicji DSL.  
+- Dostosuj wiele parametrów w definicji DSL.  
   
--   Zapisać klas częściowych w plikach osobnego kodu do metody zastąpienia, które są zdefiniowane w lub dziedziczone przez klasy generowane. W niektórych przypadkach należy ustawić **Generates Double Derived** opcji klasy w definicji DSL, aby można było przesłonić metodę wygenerowany.  
+- Zapisać klas częściowych w plikach osobnego kodu do metody zastąpienia, które są zdefiniowane w lub dziedziczone przez klasy generowane. W niektórych przypadkach należy ustawić **Generates Double Derived** opcji klasy w definicji DSL, aby można było przesłonić metodę wygenerowany.  
   
--   Ustaw opcje w definicji DSL, powodującą, że wygenerowany kod w celu zapewnienia "hooks" własnego kodu.  
+- Ustaw opcje w definicji DSL, powodującą, że wygenerowany kod w celu zapewnienia "hooks" własnego kodu.  
   
      Na przykład jeśli ustawisz **ma Konstruktor niestandardowy** opcji klasę domeny i następnie Skompiluj rozwiązanie, zostanie wyświetlony komunikaty o błędach. Po dwukrotnym kliknięciu jednego z tych komunikatów o błędach, będą widzieć żadnych komentarzy w wygenerowanym kodzie, objaśniające, co powinno zapewniać kod niestandardowy.  
   
--   Napisać własne szablony tekstu, aby wygenerować kod specyficzne dla aplikacji. Można Użyj pliki można dołączać do udostępniania części szablonów, które są wspólne dla wielu projektów i tworzenia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] następujące szablony projektów, które są inicjowane z strukturę pliku projektu.  
+- Napisać własne szablony tekstu, aby wygenerować kod specyficzne dla aplikacji. Można Użyj pliki można dołączać do udostępniania części szablonów, które są wspólne dla wielu projektów i tworzenia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] następujące szablony projektów, które są inicjowane z strukturę pliku projektu.  
   
 ## <a name="generated-files-in-dsl"></a>Wygenerowane pliki w Dsl  
  Następujące wygenerowanych plików są wyświetlane w **Dsl** projektu.  

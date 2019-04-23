@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bad52a02cb87f611293283deb3743c6e148e688
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: e293a0136e6ae2d8b6a6747201e484fdea43f91e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875917"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067238"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>Przewodnik: Aktualizowanie formantów na Wstążce w czasie wykonywania
 
@@ -34,13 +34,13 @@ Przykład ściąga dane z przykładowej bazy danych Northwind do wypełnienia po
 
 W instruktażu przedstawiono następujące zagadnienia:
 
--   Utwórz nowy projekt dodatku narzędzi VSTO dla programu Outlook.
+- Utwórz nowy projekt dodatku narzędzi VSTO dla programu Outlook.
 
--   Projektowanie niestandardowych grupy wstążki.
+- Projektowanie niestandardowych grupy wstążki.
 
--   Dodaj niestandardową grupę do wbudowanej karty.
+- Dodaj niestandardową grupę do wbudowanej karty.
 
--   Aktualizowanie formantów na Wstążce w czasie wykonywania.
+- Aktualizowanie formantów na Wstążce w czasie wykonywania.
 
 > [!NOTE]
 > Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -49,9 +49,9 @@ W instruktażu przedstawiono następujące zagadnienia:
 
 Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Program Microsoft Outlook
+- Program Microsoft Outlook
 
 ## <a name="create-a-new-outlook-vsto-add-in-project"></a>Utwórz nowy projekt dodatku narzędzi VSTO dla programu Outlook
 
@@ -59,11 +59,11 @@ Najpierw utwórz projekt dodatku narzędzi VSTO dla programu Outlook.
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Aby utworzyć nowy projekt dodatku narzędzi VSTO dla programu Outlook
 
-1.  W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Utwórz projekt dodatku narzędzi VSTO dla programu Outlook o nazwie **Ribbon_Update_At_Runtime**.
+1. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Utwórz projekt dodatku narzędzi VSTO dla programu Outlook o nazwie **Ribbon_Update_At_Runtime**.
 
-2.  W **nowy projekt** okno dialogowe, wybierz opcję **Utwórz katalog rozwiązania**.
+2. W **nowy projekt** okno dialogowe, wybierz opcję **Utwórz katalog rozwiązania**.
 
-3.  Zapisz projekt do domyślnego katalogu projektu.
+3. Zapisz projekt do domyślnego katalogu projektu.
 
      Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -73,25 +73,25 @@ Wstążka, w tym przykładzie pojawi się po użytkownik Redaguj nową wiadomoś
 
 ### <a name="to-design-a-custom-group"></a>Aby zaprojektować grupę niestandardową
 
-1.  Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.
+1. Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.
 
-2.  W **Dodaj nowy element** okno dialogowe, wybierz opcję **Wstążka (Projektant graficzny)**.
+2. W **Dodaj nowy element** okno dialogowe, wybierz opcję **Wstążka (Projektant graficzny)**.
 
-3.  Zmień nazwę nowego wstążki do **CustomerRibbon**, a następnie kliknij przycisk **Dodaj**.
+3. Zmień nazwę nowego wstążki do **CustomerRibbon**, a następnie kliknij przycisk **Dodaj**.
 
      *CustomerRibbon.cs* lub *CustomerRibbon.vb* plik zostanie otwarty w Projektancie Wstążki i wyświetla domyślną kartę i grupę.
 
-4.  Kliknij projektanta wstążki, aby go zaznaczyć.
+4. Kliknij projektanta wstążki, aby go zaznaczyć.
 
-5.  W **właściwości** okna, kliknij strzałkę listy rozwijanej obok **RibbonType** właściwości, a następnie kliknij **Microsoft.Outlook.Mail.Compose**.
+5. W **właściwości** okna, kliknij strzałkę listy rozwijanej obok **RibbonType** właściwości, a następnie kliknij **Microsoft.Outlook.Mail.Compose**.
 
      Dzięki temu wstążki, które będą wyświetlane po użytkownik Redaguj nową wiadomość e-mail w programie Outlook.
 
-6.  W Projektancie Wstążki kliknij **grupa1** aby go zaznaczyć.
+6. W Projektancie Wstążki kliknij **grupa1** aby go zaznaczyć.
 
-7.  W **właściwości** oknie **etykiety** do **zakupów klientów**.
+7. W **właściwości** oknie **etykiety** do **zakupów klientów**.
 
-8.  Z **formanty wstążki Office** karcie **przybornika**, przeciągnij **ComboBox** na **zakupów klientów** grupy.
+8. Z **formanty wstążki Office** karcie **przybornika**, przeciągnij **ComboBox** na **zakupów klientów** grupy.
 
 9. Kliknij przycisk **ComboBox1** aby go zaznaczyć.
 
@@ -111,17 +111,17 @@ Wbudowana karty to karta, która jest już na wstążce programu Outlook Explore
 
 ### <a name="to-add-the-custom-group-to-a-built-in-tab"></a>Aby dodać grupę niestandardową do wbudowanej karty
 
-1.  Kliknij przycisk **TabAddins (wbudowane)** kartę, aby go zaznaczyć.
+1. Kliknij przycisk **TabAddins (wbudowane)** kartę, aby go zaznaczyć.
 
-2.  W **właściwości** okna, rozwiń węzeł **ControlId** właściwości, a następnie ustaw **OfficeId** do **TabNewMailMessage**.
+2. W **właściwości** okna, rozwiń węzeł **ControlId** właściwości, a następnie ustaw **OfficeId** do **TabNewMailMessage**.
 
      Spowoduje to dodanie **zakupów klientów** grupy **wiadomości** karty wstążki, który pojawia się w nową wiadomość e-mail.
 
-3.  Kliknij przycisk **zakupów klientów** grupy, aby go zaznaczyć.
+3. Kliknij przycisk **zakupów klientów** grupy, aby go zaznaczyć.
 
-4.  W **właściwości** okna, rozwiń węzeł **pozycji** właściwości, kliknij strzałkę listy rozwijanej obok **PositionType** właściwości, a następnie kliknij  **BeforeOfficeId**.
+4. W **właściwości** okna, rozwiń węzeł **pozycji** właściwości, kliknij strzałkę listy rozwijanej obok **PositionType** właściwości, a następnie kliknij  **BeforeOfficeId**.
 
-5.  Ustaw **OfficeId** właściwości **GroupClipboard**.
+5. Ustaw **OfficeId** właściwości **GroupClipboard**.
 
      To umieszcza **zakupów klientów** grupy przed **Schowka** grupy **wiadomości** kartę.
 
@@ -131,31 +131,31 @@ Użyj **źródeł danych** okna, aby dodać typizowany zestaw danych do projektu
 
 ### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych
 
-1.  Na **danych** menu, kliknij przycisk **Dodaj nowe źródło danych**.
+1. Na **danych** menu, kliknij przycisk **Dodaj nowe źródło danych**.
 
      Spowoduje to uruchomienie **Kreatora konfiguracji źródła danych**.
 
-2.  Wybierz **bazy danych**, a następnie kliknij przycisk **dalej**.
+2. Wybierz **bazy danych**, a następnie kliknij przycisk **dalej**.
 
-3.  Wybierz **Dataset**, a następnie kliknij przycisk **dalej**.
+3. Wybierz **Dataset**, a następnie kliknij przycisk **dalej**.
 
-4.  Wybierz połączenie danych z bazie danych programu Microsoft SQL Server Compact 4.0 Northwind lub Dodaj nowe połączenie przy użyciu **nowe połączenie** przycisku.
+4. Wybierz połączenie danych z bazie danych programu Microsoft SQL Server Compact 4.0 Northwind lub Dodaj nowe połączenie przy użyciu **nowe połączenie** przycisku.
 
-5.  Po zostało wybrane lub utworzyć połączenie, kliknij przycisk **dalej**.
+5. Po zostało wybrane lub utworzyć połączenie, kliknij przycisk **dalej**.
 
-6.  Kliknij przycisk **dalej** można zapisać parametry połączenia.
+6. Kliknij przycisk **dalej** można zapisać parametry połączenia.
 
-7.  Na **wybierz obiekty bazy danych** rozwiń **tabel**.
+7. Na **wybierz obiekty bazy danych** rozwiń **tabel**.
 
-8.  Zaznacz pole wyboru obok każdego z następujących tabel:
+8. Zaznacz pole wyboru obok każdego z następujących tabel:
 
-    1.  **Klienci**
+    1. **Klienci**
 
-    2.  **Szczegóły zamówienia**
+    2. **Szczegóły zamówienia**
 
-    3.  **Zamówienia**
+    3. **Zamówienia**
 
-    4.  **Produkty**
+    4. **Produkty**
 
 9. Kliknij przycisk **Zakończ**.
 
@@ -163,11 +163,11 @@ Użyj **źródeł danych** okna, aby dodać typizowany zestaw danych do projektu
 
 Model obiektu Wstążka umożliwia wykonywanie następujących zadań:
 
--   Dodaj nazwy klienta do **klientów** pola kombi.
+- Dodaj nazwy klienta do **klientów** pola kombi.
 
--   Dodaj przycisk i menu kontrolki do **zakupionych produktów** menu, które reprezentują zamówień sprzedaży i produkty sprzedawane.
+- Dodaj przycisk i menu kontrolki do **zakupionych produktów** menu, które reprezentują zamówień sprzedaży i produkty sprzedawane.
 
--   Wypełnij na, temat i treść pola nowe wiadomości e-mail przy użyciu danych z **klientów** pola kombi i **zakupionych produktów** menu.
+- Wypełnij na, temat i treść pola nowe wiadomości e-mail przy użyciu danych z **klientów** pola kombi i **zakupionych produktów** menu.
 
 ### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>Aby zaktualizować formantów w niestandardowej grupie za pomocą modelu obiektów wstążki
 
@@ -257,31 +257,31 @@ Aby utworzyć wiadomość monitującą wiadomość e-mail klienta, wybierz klien
 
 ### <a name="to-test-the-controls-in-the-custom-group"></a>Aby przetestować formanty niestandardowe grupy
 
-1.  Naciśnij klawisz **F5** Aby uruchomić projekt.
+1. Naciśnij klawisz **F5** Aby uruchomić projekt.
 
      Uruchamia program Outlook.
 
-2.  W programie Outlook na **pliku** menu wskaż **New**, a następnie kliknij przycisk **wiadomość E-mail**.
+2. W programie Outlook na **pliku** menu wskaż **New**, a następnie kliknij przycisk **wiadomość E-mail**.
 
      Są wykonywane następujące akcje:
 
-    -   Pojawi się nowe okno Inspektora wiadomość poczty.
+    - Pojawi się nowe okno Inspektora wiadomość poczty.
 
-    -   Na **komunikat** karcie na wstążce **zakupów klientów** grupa pojawia się przed **Schowka** grupy.
+    - Na **komunikat** karcie na wstążce **zakupów klientów** grupa pojawia się przed **Schowka** grupy.
 
-    -   **Klientów** pola kombi w grupie będą aktualizowane przy użyciu nazwy klientów w bazie danych Northwind.
+    - **Klientów** pola kombi w grupie będą aktualizowane przy użyciu nazwy klientów w bazie danych Northwind.
 
-3.  Na **komunikat** karty wstążki w **zakupów klientów** grupy, wybierz klienta z **klientów** pola kombi.
+3. Na **komunikat** karty wstążki w **zakupów klientów** grupy, wybierz klienta z **klientów** pola kombi.
 
      Są wykonywane następujące akcje:
 
-    -   **Zakupionych produktów** menu jest aktualizowana w celu wyświetlenia każdego zamówienia sprzedaży dla zaznaczonego klienta.
+    - **Zakupionych produktów** menu jest aktualizowana w celu wyświetlenia każdego zamówienia sprzedaży dla zaznaczonego klienta.
 
-    -   Podmenu każdego zamówienia sprzedaży jest aktualizowana w celu wyświetlenia produktów zakupionych w tej kolejności.
+    - Podmenu każdego zamówienia sprzedaży jest aktualizowana w celu wyświetlenia produktów zakupionych w tej kolejności.
 
-    -   Adres e-mail wybranego klienta zostanie dodany do **do** wiersza wiadomość e-mail, tematu i treści wiadomości e-mail są wypełniane przy użyciu tekstu.
+    - Adres e-mail wybranego klienta zostanie dodany do **do** wiersza wiadomość e-mail, tematu i treści wiadomości e-mail są wypełniane przy użyciu tekstu.
 
-4.  Kliknij przycisk **zakupów produktów** menu, wskaż polecenie wszystkie zamówienia sprzedaży, a następnie kliknij produkt z zamówienia sprzedaży.
+4. Kliknij przycisk **zakupów produktów** menu, wskaż polecenie wszystkie zamówienia sprzedaży, a następnie kliknij produkt z zamówienia sprzedaży.
 
      Nazwa produktu jest dodawany do treści wiadomości e-mail.
 
@@ -289,11 +289,11 @@ Aby utworzyć wiadomość monitującą wiadomość e-mail klienta, wybierz klien
 
 Możesz dowiedzieć się więcej na temat sposobu dostosowywania interfejsu użytkownika pakietu Office w tych tematach:
 
--   Dodaj oparte na kontekście interfejsu użytkownika do jakiegokolwiek dostosowywania poziomie dokumentu. Aby uzyskać więcej informacji, zobacz [okienko akcji ― omówienie](../vsto/actions-pane-overview.md).
+- Dodaj oparte na kontekście interfejsu użytkownika do jakiegokolwiek dostosowywania poziomie dokumentu. Aby uzyskać więcej informacji, zobacz [okienko akcji ― omówienie](../vsto/actions-pane-overview.md).
 
--   Rozszerz standardowy lub niestandardowy formularz programu Microsoft Office Outlook. Aby uzyskać więcej informacji, zobacz [instruktażu: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
+- Rozszerz standardowy lub niestandardowy formularz programu Microsoft Office Outlook. Aby uzyskać więcej informacji, zobacz [instruktażu: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
--   Dodawanie niestandardowego okienka zadań do programu Outlook. Aby uzyskać więcej informacji, zobacz [niestandardowych okienek zadań](../vsto/custom-task-panes.md).
+- Dodawanie niestandardowego okienka zadań do programu Outlook. Aby uzyskać więcej informacji, zobacz [niestandardowych okienek zadań](../vsto/custom-task-panes.md).
 
 ## <a name="see-also"></a>Zobacz także
 

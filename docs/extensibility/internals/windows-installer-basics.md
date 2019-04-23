@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2712c8d52ffd569f7d422708de612ac322045f8
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: bf47b5c6aa84cb5d5cc961e34161435dc27dd517
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872956"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066263"
 ---
 # <a name="windows-installer-basics"></a>Podstawowe informacje dotyczące Instalatora Windows
 Instalator Windows instaluje i odinstalowuje aplikacje lub produkty oprogramowania na komputerze użytkownika wykonywania tych zadań w jednostce o nazwie składniki Instalatora Windows (czasami nazywany WICs lub po prostu składników). Identyfikator GUID identyfikuje każdy składnik WIC to podstawowa jednostka instalacji i zliczanie dla konfiguracji za pomocą Instalatora Windows.
@@ -57,15 +57,15 @@ Instalator Windows instaluje i odinstalowuje aplikacje lub produkty oprogramowan
 
 #### <a name="installer-enforced-rules"></a>Reguły wymuszane przez Instalatora
 
--   Wszystkie pliki w danym składnika musi być zainstalowany na tym samym katalogu. Z drugiej strony pliki zainstalowane na oddzielnych folderów muszą należeć do rozdzielania składników.
+- Wszystkie pliki w danym składnika musi być zainstalowany na tym samym katalogu. Z drugiej strony pliki zainstalowane na oddzielnych folderów muszą należeć do rozdzielania składników.
 
--   Może istnieć tylko jedna ścieżka klucza dla danego składnika. Ścieżka klucza jest po prostu plików lub rejestru klucz, który reprezentuje cały składnik.
+- Może istnieć tylko jedna ścieżka klucza dla danego składnika. Ścieżka klucza jest po prostu plików lub rejestru klucz, który reprezentuje cały składnik.
 
 #### <a name="component-provider-responsibilities"></a>Obowiązki dostawcy składników
 
--   Dwa zasoby, które może być udostępniona oddzielnie w kolejnych wersjach powinny istnieć w osobne składniki. Powinny zostać utworzone zasoby do tego samego składnika, tylko wtedy, gdy masz pewność, że te zasoby nigdy nie zostanie udostępniona oddzielnie. W rzeczywistości, zalecane jest, wszystkie podstawowe zasoby (na przykład dll) zawsze znajdują się w oddzielnych WICs. Aby uzyskać więcej informacji, zobacz [Definiowanie składniki Instalatora](/windows/desktop/Msi/defining-installer-components).
+- Dwa zasoby, które może być udostępniona oddzielnie w kolejnych wersjach powinny istnieć w osobne składniki. Powinny zostać utworzone zasoby do tego samego składnika, tylko wtedy, gdy masz pewność, że te zasoby nigdy nie zostanie udostępniona oddzielnie. W rzeczywistości, zalecane jest, wszystkie podstawowe zasoby (na przykład dll) zawsze znajdują się w oddzielnych WICs. Aby uzyskać więcej informacji, zobacz [Definiowanie składniki Instalatora](/windows/desktop/Msi/defining-installer-components).
 
--   Brak określonej wersji zasobu nigdy nie powinien wysłać w więcej niż jeden WIC.
+- Brak określonej wersji zasobu nigdy nie powinien wysłać w więcej niż jeden WIC.
 
 ## <a name="see-also"></a>Zobacz też
 - [Co się stanie, jeśli reguły składników są przerwane?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

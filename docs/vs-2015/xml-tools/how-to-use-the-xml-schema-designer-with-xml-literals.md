@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7855a5dc8c6524dd28a730a81df1c291e04ec466
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 05c32bfc6c3220739c433ef519b696953bc8b1b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653609"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074950"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Instrukcje: Używanie projektanta schematu XML z literałami XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,25 +23,25 @@ W tym temacie opisano sposób wyświetlania schemat jest skojarzony z danymi XML
   
 ### <a name="to-create-a-new-visual-basic-console-application-project"></a>Aby utworzyć nowy projekt aplikacji konsoli Visual Basic  
   
-1.  Start Visual Studio 2010.  
+1. Start Visual Studio 2010.  
   
-2.  Z **pliku** menu, wybierz opcję **New**, a następnie wybierz pozycję **projektu**. **Nowy projekt** pojawi się okno dialogowe. Aby uzyskać **typów projektów**, wybierz opcję **inne języki** , a następnie wybierz **języka Visual Basic**. Aby uzyskać **szablony**, wybierz aplikację konsoli. Następnie wpisz `XMLLiterals` w **nazwa** pola i lokalizację projektu w **lokalizacji** pola. Kliknij przycisk **OK**.  
+2. Z **pliku** menu, wybierz opcję **New**, a następnie wybierz pozycję **projektu**. **Nowy projekt** pojawi się okno dialogowe. Aby uzyskać **typów projektów**, wybierz opcję **inne języki** , a następnie wybierz **języka Visual Basic**. Aby uzyskać **szablony**, wybierz aplikację konsoli. Następnie wpisz `XMLLiterals` w **nazwa** pola i lokalizację projektu w **lokalizacji** pola. Kliknij przycisk **OK**.  
   
      Zostanie utworzony nowy projektu zlecenie serwisowe. Projekt XMLLiterals zawiera jeden plik źródłowy języka Visual Basic, Module1.vb.  
   
 ### <a name="to-add-an-existing-xsd-file-to-the-project"></a>Aby dodać istniejący plik XSD do projektu  
   
-1.  Otwórz nowy tekst w pliku Notepad.Copy schematu XML przykładowego kodu z [schemat zamówienia zakupu](../xml-tools/sample-xsd-file-simple-schema.md) a następnie wklej je do pliku.  
+1. Otwórz nowy tekst w pliku Notepad.Copy schematu XML przykładowego kodu z [schemat zamówienia zakupu](../xml-tools/sample-xsd-file-simple-schema.md) a następnie wklej je do pliku.  
   
-2.  Zapisz plik w lokalizacji o nazwie PurchaseOrderSchema.xsd.  
+2. Zapisz plik w lokalizacji o nazwie PurchaseOrderSchema.xsd.  
   
-3.  W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy nazwę projektu, wybierz **Dodaj**, a następnie wybierz pozycję **istniejący element...** . **Elementu AddExisting** pojawi się okno dialogowe. Przejdź do pliku PurchaseOrderSchema.xsd, zaznacz go, a następnie kliknij **Dodaj**.  
+3. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy nazwę projektu, wybierz **Dodaj**, a następnie wybierz pozycję **istniejący element...** . **Elementu AddExisting** pojawi się okno dialogowe. Przejdź do pliku PurchaseOrderSchema.xsd, zaznacz go, a następnie kliknij **Dodaj**.  
   
      Projekt XMLLiterals zawiera teraz dwa pliki: Module1.VB i PurchaseOrderSchema.xsd.  
   
 ### <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>Aby dodać kod języka Visual Basic z literał, XML na podstawie pliku XSD, zawarty w projekcie  
   
-1.  Zastąp kod w pliku Module1.vb następującym kodem:  
+1. Zastąp kod w pliku Module1.vb następującym kodem:  
   
     ```  
     Imports <xmlns:ns="http://tempuri.org/PurchaseOrderSchema.xsd">  
@@ -70,6 +70,6 @@ W tym temacie opisano sposób wyświetlania schemat jest skojarzony z danymi XML
     End Module  
     ```  
   
-2.  Kliknij prawym przyciskiem myszy dowolny węzeł XML w literał XML lub importu przestrzeni nazw XML, a następnie wybierz pozycję **Pokaż w Eksploratorze schematu**.  
+2. Kliknij prawym przyciskiem myszy dowolny węzeł XML w literał XML lub importu przestrzeni nazw XML, a następnie wybierz pozycję **Pokaż w Eksploratorze schematu**.  
   
      Eksplorator schematu XML jest wyświetlany obok pliku Visual Basic, który ma literał assotiated ze schematem XML XML zestawu.

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b554a197afe2deef3619551af2d45d4a80708afe
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4b8452100eb744d019c0f4c8d5e62566ac761210
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715365"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072751"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Instrukcje: Page Up lub w dół w pamięci
 
@@ -44,7 +44,7 @@ Podczas wyświetlania zawartości pamięci w **pamięci** okna lub **dezasemblac
 
 #### <a name="to-move-up-or-down-one-instruction"></a>Aby przenieść w górę lub dół jednej instrukcji
 
--   Kliknij strzałkę w górę lub w dół pionowy pasek przewijania.
+- Kliknij strzałkę w górę lub w dół pionowy pasek przewijania.
 
 ## <a name="see-also"></a>Zobacz też
 - [Okna pamięci](../debugger/memory-windows.md)

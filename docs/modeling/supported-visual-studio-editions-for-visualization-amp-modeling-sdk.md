@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f73ebb646c152509be9a7fbdd3287f2673ddadb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1e5898a95f10875f0880e4b4799f17b78aa8e79b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907519"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073335"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Obsługiwane wersje programu Visual Studio dla zestawu Visualization & Modeling SDK
 
@@ -37,13 +37,13 @@ Aby zdefiniować DSL, musisz mieć zainstalowane następujące składniki:
 
 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Wdrażanie języki specyficzne dla domeny, które tworzysz obsługuje następujące konfiguracje:
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Visual Studio Professional
+- Visual Studio Professional
 
--   Studio Shell (tryb zintegrowany) pakiet redystrybucyjny pakiet redystrybucyjny programu Visual
+- Studio Shell (tryb zintegrowany) pakiet redystrybucyjny pakiet redystrybucyjny programu Visual
 
--   Studio Shell (tryb izolowany) pakiet redystrybucyjny pakiet redystrybucyjny programu Visual
+- Studio Shell (tryb izolowany) pakiet redystrybucyjny pakiet redystrybucyjny programu Visual
 
 > [!NOTE]
 > Aby było uruchomić produkt powłoki języka DSL, należy ustawić **obsługiwanych wersji programu VS** pole manifestu rozszerzenia. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](../modeling/deploying-domain-specific-language-solutions.md).

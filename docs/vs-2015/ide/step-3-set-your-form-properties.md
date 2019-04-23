@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4a93dfca4681f93d0d2a5c45b189fd34c8dccca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 676ea11188b7b55f3e929280d2b1c67166e37fdc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782252"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067251"
 ---
 # <a name="step-3-set-your-form-properties"></a>Krok 3. Ustawianie właściwości formularza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,14 +64,14 @@ Następnie użyj **właściwości** okna, aby zmienić wygląd formularza.
   
 7. Przed przejściem do następnego kroku, zatrzymuje program, ponieważ IDE nie pozwoli zmienić programu, gdy jest uruchomiona. Należy pamiętać, że można użyć dowolnej z następujących metod, aby zatrzymać program.  
   
-   -   Na pasku narzędzi wybierz **Zatrzymaj debugowanie** przycisku.  
+   - Na pasku narzędzi wybierz **Zatrzymaj debugowanie** przycisku.  
   
-   -   Na pasku menu wybierz **debugowania**, **Zatrzymaj debugowanie**.  
+   - Na pasku menu wybierz **debugowania**, **Zatrzymaj debugowanie**.  
   
-   -   Kliknij przycisk X w prawym górnym rogu **Form1** okna.  
+   - Kliknij przycisk X w prawym górnym rogu **Form1** okna.  
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   
--   Aby przejść do następnego kroku samouczka, zobacz [krok 4: Określić układ formularza z formantem TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).  
+- Aby przejść do następnego kroku samouczka, zobacz [krok 4: Określić układ formularza z formantem TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).  
   
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 2: Uruchom Program](../ide/step-2-run-your-program.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 2: Uruchom Program](../ide/step-2-run-your-program.md).

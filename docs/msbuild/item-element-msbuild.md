@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36824d78b2a4da68586b4ff3b39046bff936ff7f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d94058f1f14f1da644cff672d73cd77e0840c68
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643772"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070693"
 ---
 # <a name="item-element-msbuild"></a>Item — element (MSBuild)
 Zawiera element zdefiniowany przez użytkownika i jego metadanych. Każdy element, który jest używany w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt musi być określony jako element podrzędny elementu `ItemGroup` elementu.
@@ -107,6 +107,7 @@ Poniższy przykład kodu pokazuje sposób deklarowania dwóch elementów tego ty
     </CSFile>
 </ItemGroup>
 ```
+
 Poniższy przykład kodu pokazuje sposób użycia `Update` atrybutu, aby zmodyfikować metadane w pliku o nazwie *somefile.cs* wchodził za pośrednictwem glob. (Dostępne tylko dla projektów .NET Core w programie Visual Studio 2017 lub nowszego).
 
 ```xml

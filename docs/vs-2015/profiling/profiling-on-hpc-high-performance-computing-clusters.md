@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8390fcfd5dd89607422b7614d064ec736f98f61b
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: e14ce5ac1e0596947e69d20e14a3dc1e7ff4f1e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867927"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038954"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilowanie na klastrach HPC (przetwarzanie o wysokiej wydajności)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ Można profilować w węzłach obliczeniowych systemu Microsoft Windows HPC klas
   
   Aby zainstalować [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] i autonomicznych Profiling Tools na aktywne HPC obliczeń, węzeł i Włącz profilowanie na komputerze z klastra, wykonaj następujące kroki:  
   
-1.  Otwórz okno wiersza polecenia, który został zainstalowany przy użyciu pakietu HPC pack.  
+1. Otwórz okno wiersza polecenia, który został zainstalowany przy użyciu pakietu HPC pack.  
   
-2.  Wpisz następujące polecenia w oddzielnych wierszy polecenia:  
+2. Wpisz następujące polecenia w oddzielnych wierszy polecenia:  
   
-    1.  `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`  
+    1. `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`  
   
-    2.  `clusrun /all /scheduler:` *Węzeł główny %* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`  
+    2. `clusrun /all /scheduler:` *Węzeł główny %* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`  
   
-    3.  `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`  
+    3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`  
   
 |||  
 |-|-|  
@@ -63,47 +63,47 @@ Można profilować w węzłach obliczeniowych systemu Microsoft Windows HPC klas
   
 #### <a name="to-profile-on-an-hpc-compute-node"></a>Aby przeprowadzić profilowanie w węźle obliczeń HPC  
   
-1.  Na **analizy** menu, kliknij przycisk **Uruchom Kreatora wydajności HPC**. Jeśli polecenie nie jest dostępny, upewnij się, że wymagania wstępne wymienione powyżej.  
+1. Na **analizy** menu, kliknij przycisk **Uruchom Kreatora wydajności HPC**. Jeśli polecenie nie jest dostępny, upewnij się, że wymagania wstępne wymienione powyżej.  
   
-2.  Kliknij przycisk **dalej** na pierwszej stronie kreatora.  
+2. Kliknij przycisk **dalej** na pierwszej stronie kreatora.  
   
-3.  Na drugiej stronie kreatora wybierz aplikację, którą chcesz profilować.  
+3. Na drugiej stronie kreatora wybierz aplikację, którą chcesz profilować.  
   
-    -   Aby profilować projekt, który jest obecnie otwarty w [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], wybierz opcję **co najmniej jeden z dostępnych projektów** opcji, a następnie wybierz nazwę projektu z listy.  
+    - Aby profilować projekt, który jest obecnie otwarty w [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], wybierz opcję **co najmniej jeden z dostępnych projektów** opcji, a następnie wybierz nazwę projektu z listy.  
   
-    -   Aby przeprowadzić profilowanie plik binarny, który nie znajduje się w otwartym projekcie wybierz **plik wykonywalny (. Plik EXE)** opcji.  
+    - Aby przeprowadzić profilowanie plik binarny, który nie znajduje się w otwartym projekcie wybierz **plik wykonywalny (. Plik EXE)** opcji.  
   
-4.  Kliknij przycisk **Dalej**.  
+4. Kliknij przycisk **Dalej**.  
   
-5.  Na trzeciej stronie kreatora:  
+5. Na trzeciej stronie kreatora:  
   
-    -   Jeśli profilowany plik wykonywalny, który nie znajduje się w otwartym projekcie, określ ścieżkę do pliku binarnego w **co to jest pełna ścieżka do pliku wykonywalnego**.  
+    - Jeśli profilowany plik wykonywalny, który nie znajduje się w otwartym projekcie, określ ścieżkę do pliku binarnego w **co to jest pełna ścieżka do pliku wykonywalnego**.  
   
-    -   Jeśli profilowany plik wykonywalny, który nie znajduje się w otwartym projekcie, można określić argumenty wiersza polecenia do przekazania do procesu w **argumenty wiersza polecenia**.  
+    - Jeśli profilowany plik wykonywalny, który nie znajduje się w otwartym projekcie, można określić argumenty wiersza polecenia do przekazania do procesu w **argumenty wiersza polecenia**.  
   
-    -   W **zdalny katalog roboczy**, określ ścieżkę do folderu, który jest używany przez wystąpień procesu na poszczególnych węzłach obliczeniowych.  
+    - W **zdalny katalog roboczy**, określ ścieżkę do folderu, który jest używany przez wystąpień procesu na poszczególnych węzłach obliczeniowych.  
   
-    -   W **lokalizacji wdrożenia**, określ ścieżkę do katalogu, w którym używane przez serwer HPC na etapie obrazy dla wdrożenia.  
+    - W **lokalizacji wdrożenia**, określ ścieżkę do katalogu, w którym używane przez serwer HPC na etapie obrazy dla wdrożenia.  
   
-6.  Kliknij przycisk **Dalej**.  
+6. Kliknij przycisk **Dalej**.  
   
-7.  Na czwartej stronie kreatora:  
+7. Na czwartej stronie kreatora:  
   
-    -   W **węzeł główny** listy, kliknij komputer, który działa jako węzeł główny HPC podczas uruchomienia profilowania. Węzeł główny może być "localhost", co umożliwia profilu na komputerze lokalnym bez konieczności stosowania klastra.  
+    - W **węzeł główny** listy, kliknij komputer, który działa jako węzeł główny HPC podczas uruchomienia profilowania. Węzeł główny może być "localhost", co umożliwia profilu na komputerze lokalnym bez konieczności stosowania klastra.  
   
-    -   W **liczba procesów** kliknij liczbę wystąpień do uruchomienia aplikacji.  
+    - W **liczba procesów** kliknij liczbę wystąpień do uruchomienia aplikacji.  
   
-    -   Z **profilowania opcje** wybierz celu profilowania.  
+    - Z **profilowania opcje** wybierz celu profilowania.  
   
          Aby profilować proces w klastrze, wybierz **profilu na ranga** opcji, a następnie wybierz pozycję proces z listy rozwijanej.  
   
          Aby profilować proces lub procesy, które są uruchamiane w określonym węźle w klastrze HPC, wybierz **profilu w węźle** opcji, a następnie wybierz węzeł z listy rozwijanej.  
   
-8.  Kliknij przycisk **Dalej**.  
+8. Kliknij przycisk **Dalej**.  
   
 9. Na piątej stronie kreatora można wybrać, aby natychmiast uruchomić profiler jak i profilowania procesu lub do uruchomienia profilowania później za pomocą Eksploratora wydajności.  
   
-    -   Wybierz **Uruchom profilowanie po zakończeniu pracy kreatora** Uruchom profilowanie natychmiast lub usuń zaznaczenie pola wyboru, aby rozpocząć profilowanie ręcznie.  
+    - Wybierz **Uruchom profilowanie po zakończeniu pracy kreatora** Uruchom profilowanie natychmiast lub usuń zaznaczenie pola wyboru, aby rozpocząć profilowanie ręcznie.  
   
 10. Kliknij przycisk **Zakończ**.  
   
@@ -112,17 +112,17 @@ Można profilować w węzłach obliczeniowych systemu Microsoft Windows HPC klas
   
 #### <a name="to-open-the-performance-session-property-pages"></a>Aby otworzyć na stronach właściwości sesji wydajności  
   
-1.  Jeśli to konieczne, otwórz plik sesji (.psess) wydajności w Eksploratorze wydajności. Na **pliku** menu, kliknij przycisk **Otwórz** i zlokalizuj plik.  
+1. Jeśli to konieczne, otwórz plik sesji (.psess) wydajności w Eksploratorze wydajności. Na **pliku** menu, kliknij przycisk **Otwórz** i zlokalizuj plik.  
   
-2.  W Eksploratorze wydajności, kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij przycisk **właściwości**.  
+2. W Eksploratorze wydajności, kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij przycisk **właściwości**.  
   
-3.  W oknie dialogowym stron właściwości użyj jednej z następujących metod:  
+3. W oknie dialogowym stron właściwości użyj jednej z następujących metod:  
   
-    -   Kliknij przycisk **ogólne** , a następnie wybierz **zbieranie klastra HPC** Włącz profilowanie HPC lub usuń zaznaczenie pola wyboru, aby wyłączyć profilowanie HPC.  
+    - Kliknij przycisk **ogólne** , a następnie wybierz **zbieranie klastra HPC** Włącz profilowanie HPC lub usuń zaznaczenie pola wyboru, aby wyłączyć profilowanie HPC.  
   
-    -   Kliknij przycisk **właściwości uruchamiania HPC** można zmienić właściwości, które Uruchom aplikację HPC.  
+    - Kliknij przycisk **właściwości uruchamiania HPC** można zmienić właściwości, które Uruchom aplikację HPC.  
   
-    -   Kliknij przycisk **HPC zaawansowane właściwości** można ustawić opcje dodatkowe  
+    - Kliknij przycisk **HPC zaawansowane właściwości** można ustawić opcje dodatkowe  
   
 ### <a name="hpc-launch-properties"></a>Właściwości uruchamiania HPC  
   

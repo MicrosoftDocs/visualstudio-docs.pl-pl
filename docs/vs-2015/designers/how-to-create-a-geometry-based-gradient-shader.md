@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 555fe986267ce8cd88a5beea6f57cef2ba810156
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8735931e761f7d511615b5be7e93e0198a6b1a45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797540"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071723"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Instrukcje: Tworzenie cieniowania gradientu geometrycznego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ W tym dokumencie przedstawiono sposób umożliwia tworzenie cieniowania gradient
   
  Ten dokument przedstawia te działania:  
   
--   Dodawanie węzłów do wykresu programu do cieniowania  
+- Dodawanie węzłów do wykresu programu do cieniowania  
   
--   Ustawianie właściwości węzła  
+- Ustawianie właściwości węzła  
   
--   Trwa rozłączanie węzłów  
+- Trwa rozłączanie węzłów  
   
--   Łączenie z węzłami  
+- Łączenie z węzłami  
   
 ## <a name="creating-a-geometry-based-gradient-shader"></a>Tworzenie cieniowania gradientu geometrycznego  
  Można zaimplementować programu do cieniowania geometrycznego, dołączając pozycja piksela do modułu cieniującego. W językach cieniowania pikseli zawiera więcej informacji, niż tylko jego kolor i położenie na ekranie 2-D. Piksel — znane jako *fragmentu* w niektórych systemach — jest to zbiór wartości, które opisują powierzchni, który odpowiada pikseli. Wysokość każdego piksela w przestrzeni świata wpływa na kolor ostatecznymi fragmentu obiektu 3-D korzysta z modułem cieniującym, który jest opisany w tym dokumencie.  

@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 58058bf189cf65214ed7d3fe6083ef418107db4f
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: fa0472ae7ad7200ead372057f1dd778c077f764e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268537"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076032"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Odczytywanie danych XML do zestawu danych
 
@@ -125,9 +125,9 @@ Interfejs użytkownika dla tej aplikacji składa się z następujących czynnoś
 
 ### <a name="to-add-controls-to-the-form"></a>Aby dodać formanty do formularza
 
-1.  Otwórz `Form1` w widoku Projekt.
+1. Otwórz `Form1` w widoku Projekt.
 
-2.  Z **przybornika**, przeciągnij następujące kontrolki na formularzu:
+2. Z **przybornika**, przeciągnij następujące kontrolki na formularzu:
 
     - Jeden <xref:System.Windows.Forms.DataGridView> kontroli
 
@@ -135,7 +135,7 @@ Interfejs użytkownika dla tej aplikacji składa się z następujących czynnoś
 
     - Dwa <xref:System.Windows.Forms.Button> formantów
 
-3.  Ustaw następujące właściwości:
+3. Ustaw następujące właściwości:
 
     |formant|Właściwość|Ustawienie|
     |-------------|--------------|-------------|
@@ -150,44 +150,44 @@ Interfejs użytkownika dla tej aplikacji składa się z następujących czynnoś
 
 W tym kroku utworzysz nowy zestaw danych o nazwie `authors`. Aby uzyskać więcej informacji na temat zestawów danych, zobacz [narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
-1.  W **Eksploratora rozwiązań**, wybierz plik źródłowy **Form1**, a następnie wybierz pozycję **Projektant widoków** znajdujący się na **Eksploratora rozwiązań** pasek narzędzi.
+1. W **Eksploratora rozwiązań**, wybierz plik źródłowy **Form1**, a następnie wybierz pozycję **Projektant widoków** znajdujący się na **Eksploratora rozwiązań** pasek narzędzi.
 
-2.  Z [przybornik, karta dane](../ide/reference/toolbox-data-tab.md), przeciągnij **DataSet** na **Form1**.
+2. Z [przybornik, karta dane](../ide/reference/toolbox-data-tab.md), przeciągnij **DataSet** na **Form1**.
 
-3.  W **Dodaj zestaw danych** okno dialogowe, wybierz opcję **Nietypizowany zestaw danych**, a następnie wybierz pozycję **OK**.
+3. W **Dodaj zestaw danych** okno dialogowe, wybierz opcję **Nietypizowany zestaw danych**, a następnie wybierz pozycję **OK**.
 
      **DataSet1** jest dodawana do zasobnika składnika.
 
-4.  W **właściwości** oknie **nazwa** i <xref:System.Data.DataSet.DataSetName%2A> właściwości`AuthorsDataSet`.
+4. W **właściwości** oknie **nazwa** i <xref:System.Data.DataSet.DataSetName%2A> właściwości`AuthorsDataSet`.
 
 ## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>Utwórz procedurę obsługi zdarzeń do odczytania pliku XML do zestawu danych
 
 **Odczytu XML** przycisk odczytuje plik XML do zestawu danych. Następnie ustawia właściwości w <xref:System.Windows.Forms.DataGridView> formant, który powiązać do zestawu danych.
 
-1.  W **Eksploratora rozwiązań**, wybierz opcję **Form1**, a następnie wybierz pozycję **Projektant widoków** znajdujący się na **Eksploratora rozwiązań** narzędzi.
+1. W **Eksploratora rozwiązań**, wybierz opcję **Form1**, a następnie wybierz pozycję **Projektant widoków** znajdujący się na **Eksploratora rozwiązań** narzędzi.
 
-2.  Wybierz **odczytu XML** przycisku.
+2. Wybierz **odczytu XML** przycisku.
 
      **Edytor kodu** o `ReadXmlButton_Click` programu obsługi zdarzeń.
 
-3.  Wpisz następujący kod do `ReadXmlButton_Click` program obsługi zdarzeń:
+3. Wpisz następujący kod do `ReadXmlButton_Click` program obsługi zdarzeń:
 
      [!code-csharp[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_1.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_1.vb)]
 
-4.  W `ReadXMLButton_Click` kod procedury obsługi zdarzeń, zmiana `filepath =` wpisu do prawidłowej ścieżki.
+4. W `ReadXMLButton_Click` kod procedury obsługi zdarzeń, zmiana `filepath =` wpisu do prawidłowej ścieżki.
 
 ## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>Tworzenie obsługi zdarzeń, aby wyświetlić schemat w polu tekstowym
 
 **Pokaż schemat** przycisk tworzy <xref:System.IO.StringWriter> obiekt, który zostanie wypełniony kolorem schematu i jest wyświetlany w <xref:System.Windows.Forms.TextBox>kontroli.
 
-1.  W **Eksploratora rozwiązań**, wybierz opcję **Form1**, a następnie wybierz pozycję **Projektant widoków** przycisku.
+1. W **Eksploratora rozwiązań**, wybierz opcję **Form1**, a następnie wybierz pozycję **Projektant widoków** przycisku.
 
-2.  Wybierz **Pokaż schemat** przycisku.
+2. Wybierz **Pokaż schemat** przycisku.
 
      **Edytor kodu** o `ShowSchemaButton_Click` programu obsługi zdarzeń.
 
-3.  Wklej następujący kod do `ShowSchemaButton_Click` programu obsługi zdarzeń.
+3. Wklej następujący kod do `ShowSchemaButton_Click` programu obsługi zdarzeń.
 
      [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]
@@ -196,13 +196,13 @@ W tym kroku utworzysz nowy zestaw danych o nazwie `authors`. Aby uzyskać więce
 
 Teraz można przetestować formularz, aby upewnić się, że działa zgodnie z oczekiwaniami.
 
-1.  Wybierz **F5** do uruchomienia aplikacji.
+1. Wybierz **F5** do uruchomienia aplikacji.
 
-2.  Wybierz **odczytu XML** przycisku.
+2. Wybierz **odczytu XML** przycisku.
 
      Zawartość pliku XML jest wyświetlana w formancie DataGridView.
 
-3.  Wybierz **Pokaż schemat** przycisku.
+3. Wybierz **Pokaż schemat** przycisku.
 
      Pole tekstowe wyświetla schematu XML w pliku XML.
 

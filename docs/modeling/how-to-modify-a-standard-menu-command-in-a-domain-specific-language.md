@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9d5f137fdce3a50f95b3dfa641bd684d5aab060
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8a2e6bf4ffd22c6f4e3c63315a1c4a221f621c08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952700"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063040"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Instrukcje: Modyfikowanie standardowego polecenia menu w języku specyficznym dla domeny
 
@@ -28,15 +28,15 @@ Można zmodyfikować zachowanie niektóre standardowe polecenia, które są auto
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>Aby dowiedzieć się, co polecenia, należy zmodyfikować
 
-1.  W `DslPackage` otwarty projekt `GeneratedCode\CommandSet.cs`. Ten plik C# można znaleźć w Eksploratorze rozwiązań jako podmiot zależny firmy `CommandSet.tt`.
+1. W `DslPackage` otwarty projekt `GeneratedCode\CommandSet.cs`. Ten plik C# można znaleźć w Eksploratorze rozwiązań jako podmiot zależny firmy `CommandSet.tt`.
 
-2.  Znajdź klas w tym pliku, których nazwy kończą się za pomocą "`CommandSet`", na przykład `Language1CommandSet` i `Language1ClipboardCommandSet`.
+2. Znajdź klas w tym pliku, których nazwy kończą się za pomocą "`CommandSet`", na przykład `Language1CommandSet` i `Language1ClipboardCommandSet`.
 
-3.  W każdej klasie zestaw poleceń, wpisz "`override`" następuje spacja. Funkcja IntelliSense wyświetli listę metod, które można przesłonić. Każde polecenie parą metod, których nazwy zaczynają się "`ProcessOnStatus`"i"`ProcessOnMenu`".
+3. W każdej klasie zestaw poleceń, wpisz "`override`" następuje spacja. Funkcja IntelliSense wyświetli listę metod, które można przesłonić. Każde polecenie parą metod, których nazwy zaczynają się "`ProcessOnStatus`"i"`ProcessOnMenu`".
 
-4.  Zwróć uwagę, które polecenia Ustaw klasy zawiera polecenia, które chcesz zmodyfikować.
+4. Zwróć uwagę, które polecenia Ustaw klasy zawiera polecenia, które chcesz zmodyfikować.
 
-5.  Zamknij plik bez zapisywania zmian.
+5. Zamknij plik bez zapisywania zmian.
 
     > [!NOTE]
     > Zazwyczaj nie należy edytować pliki, które zostały wygenerowane. Wszelkie zmiany zostaną utracone pliki są generowane przy następnym uruchomieniu.
@@ -47,15 +47,15 @@ Utwórz nowy plik, który zawiera deklarację częściowe klasy zestawu poleceń
 
 ### <a name="to-extend-the-command-set-class"></a>Aby rozszerzyć polecenia Set — klasa
 
-1.  W Eksploratorze rozwiązań w projekcie DslPackage Otwórz GeneratedCode folder, a następnie sprawdź w obszarze CommandSet.tt i otwieranie jego pliku wygenerowanego CommandSet.cs. Należy pamiętać, że przestrzeń nazw i nazwę pierwszej klasy, która jest zdefiniowany w niej. Na przykład może zostać wyświetlony:
+1. W Eksploratorze rozwiązań w projekcie DslPackage Otwórz GeneratedCode folder, a następnie sprawdź w obszarze CommandSet.tt i otwieranie jego pliku wygenerowanego CommandSet.cs. Należy pamiętać, że przestrzeń nazw i nazwę pierwszej klasy, która jest zdefiniowany w niej. Na przykład może zostać wyświetlony:
 
      `namespace Company.Language1`
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2.  W **DslPackage**, Utwórz folder o nazwie **kod niestandardowy**. W tym folderze utwórz nowy plik klasy o nazwie `CommandSet.cs`.
+2. W **DslPackage**, Utwórz folder o nazwie **kod niestandardowy**. W tym folderze utwórz nowy plik klasy o nazwie `CommandSet.cs`.
 
-3.  W nowym pliku zapisu częściowa deklaracja, która ma tę samą nazwę jak wygenerowanej częściowej klasy i przestrzeni nazw. Na przykład:
+3. W nowym pliku zapisu częściowa deklaracja, która ma tę samą nazwę jak wygenerowanej częściowej klasy i przestrzeni nazw. Na przykład:
 
     ```csharp
     using System;
@@ -128,17 +128,17 @@ Jeśli Twój kod zmienia Store, takie jak tworzenie, usuwanie lub aktualizowania
 
 Następujące fragmenty są często przydatne w przypadku tych metod:
 
--   `this.CurrentSelection`. Kształt, który kliknięto prawym przyciskiem myszy użytkownika, zawsze znajduje się na tej liście kształtów i łączników. Gdy użytkownik kliknie pustą część diagramu, Diagram jest jedynym członkiem listy.
+- `this.CurrentSelection`. Kształt, który kliknięto prawym przyciskiem myszy użytkownika, zawsze znajduje się na tej liście kształtów i łączników. Gdy użytkownik kliknie pustą część diagramu, Diagram jest jedynym członkiem listy.
 
--   `this.IsDiagramSelected()` - `true` Jeśli użytkownik kliknął pustą część diagramu.
+- `this.IsDiagramSelected()` - `true` Jeśli użytkownik kliknął pustą część diagramu.
 
--   `this.IsCurrentDiagramEmpty()`
+- `this.IsCurrentDiagramEmpty()`
 
--   `this.IsSingleSelection()` — użytkownik nie został wybrany wiele kształtów
+- `this.IsSingleSelection()` — użytkownik nie został wybrany wiele kształtów
 
--   `this.SingleSelection` -kształt lub diagram, który kliknięto prawym przyciskiem myszy użytkownika
+- `this.SingleSelection` -kształt lub diagram, który kliknięto prawym przyciskiem myszy użytkownika
 
--   `shape.ModelElement as MyLanguageElement` — element modelu, reprezentowane przez kształty.
+- `shape.ModelElement as MyLanguageElement` — element modelu, reprezentowane przez kształty.
 
 Aby uzyskać więcej informacji na temat sposobu nawigowania element po elemencie oraz o sposobie tworzenia obiektów i łączy, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
@@ -146,7 +146,7 @@ Aby uzyskać więcej informacji na temat sposobu nawigowania element po elemenci
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [Instrukcje: Dodawanie polecenia do Menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
+- [Instrukcje: Dodawanie polecenia do menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
 - [Dodawanie elementów interfejsu użytkownika przy użyciu pakietów VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Odwołanie do schematu XML VSCT](../extensibility/vsct-xml-schema-reference.md)

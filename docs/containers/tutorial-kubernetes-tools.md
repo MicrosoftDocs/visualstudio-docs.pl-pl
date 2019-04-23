@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 458334beebe6be24b2bec70d0160688e48e653d6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 55e18da9eb7e887ca49565725737cfb8c5aa719e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664328"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075956"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Rozpoczynanie pracy z usługą Visual Studio Tools rozwiązania Kubernetes
 
@@ -36,13 +36,13 @@ Aby korzystać z tej nowej funkcji, należy:
 ::: moniker range="vs-2017"
 - Jeśli chcesz opublikować w usłudze AKS za pomocą programu Visual Studio (*nie* wymagane do debugowania w usłudze AKS za pomocą usługi Azure Dev miejsca do magazynowania):
 
-    1.  [AKS narzędzia publikowania](https://aka.ms/get-vsk8spublish), która jest dostępna do pobrania osobno.
+    1. [AKS narzędzia publikowania](https://aka.ms/get-vsk8spublish), która jest dostępna do pobrania osobno.
 
-    1.  Klaster Azure Kubernetes Service. Aby uzyskać więcej informacji, zobacz [tworzenia klastra usługi AKS](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster). Pamiętaj, aby [łączenia z klastrem](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster) z deweloperskiej stacji roboczej.
+    1. Klaster Azure Kubernetes Service. Aby uzyskać więcej informacji, zobacz [tworzenia klastra usługi AKS](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster). Pamiętaj, aby [łączenia z klastrem](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster) z deweloperskiej stacji roboczej.
 
-    1.  Polecenie Helm interfejsu wiersza polecenia, zainstalowane na deweloperskiej stacji roboczej. Aby uzyskać więcej informacji, zobacz [instalowanie narzędzia Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md).
+    1. Polecenie Helm interfejsu wiersza polecenia, zainstalowane na deweloperskiej stacji roboczej. Aby uzyskać więcej informacji, zobacz [instalowanie narzędzia Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md).
 
-    1.  Skonfigurowane dla klastra usługi AKS przy użyciu narzędzia Helm `helm init` polecenia. Aby uzyskać więcej informacji na temat jak to zrobić, zobacz [sposobu konfigurowania Helm](/azure/aks/kubernetes-helm#configure-helm).
+    1. Skonfigurowane dla klastra usługi AKS przy użyciu narzędzia Helm `helm init` polecenia. Aby uzyskać więcej informacji na temat jak to zrobić, zobacz [sposobu konfigurowania Helm](/azure/aks/kubernetes-helm#configure-helm).
 ::: moniker-end
 
 ## <a name="create-a-new-kubernetes-project"></a>Utwórz nowy projekt rozwiązania Kubernetes

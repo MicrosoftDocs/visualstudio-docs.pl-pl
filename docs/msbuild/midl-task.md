@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb6698ac7652eab416523418458fa0c8b820097
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 301ca4ee88368b9134bbbcd2dc41435590becaed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618162"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071060"
 ---
 # <a name="midl-task"></a>MIDL — Zadanie
 Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawijany *midl.exe*. Aby uzyskać więcej informacji, zobacz [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
@@ -39,7 +39,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 ## <a name="parameters"></a>Parametry
  Poniżej opisano parametry **MIDL** zadania. Większość parametrów zadania oraz kilka zestawów parametrów, odpowiada opcji wiersza polecenia.
 
--   **AdditionalIncludeDirectories**
+- **AdditionalIncludeDirectories**
 
      Opcjonalnie **String []** parametru.
 
@@ -47,7 +47,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/I** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -55,7 +55,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ApplicationConfigurationMode**
+- **ApplicationConfigurationMode**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -63,7 +63,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/app_config** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ClientStubFile**
+- **ClientStubFile**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -71,7 +71,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/cstub** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Zobacz też **ServerStubFile** parametru w tej tabeli.
 
--   **CPreprocessOptions**
+- **CPreprocessOptions**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -79,7 +79,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/cpp_opt** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **DefaultCharType**
+- **DefaultCharType**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -95,7 +95,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/char** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **DllDataFileName**
+- **DllDataFileName**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -103,7 +103,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/dlldata** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **EnableErrorChecks**
+- **EnableErrorChecks**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -119,7 +119,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/Error** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ErrorCheckAllocations**
+- **ErrorCheckAllocations**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -127,7 +127,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **alokacji/Error** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ErrorCheckBounds**
+- **ErrorCheckBounds**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -135,7 +135,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/Error bounds_check** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ErrorCheckEnumRange**
+- **ErrorCheckEnumRange**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -143,7 +143,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/Error enum** opcji w wierszu polecenia Pomoc (**/?**) dla *midl.exe*.
 
--   **ErrorCheckRefPointers**
+- **ErrorCheckRefPointers**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -151,7 +151,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/Error ref** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ErrorCheckStubData**
+- **ErrorCheckStubData**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -159,7 +159,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/Error stub_data** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **GenerateClientFiles**
+- **GenerateClientFiles**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -174,7 +174,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/Client** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **GenerateServerFiles**
+- **GenerateServerFiles**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -189,7 +189,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/Server** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **GenerateStublessProxies**
+- **GenerateStublessProxies**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -197,7 +197,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/Oicf** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **GenerateTypeLibrary**
+- **GenerateTypeLibrary**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -205,7 +205,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **notlb** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **HeaderFileName**
+- **HeaderFileName**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -213,7 +213,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/h** lub **/header** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **IgnoreStandardIncludePath**
+- **IgnoreStandardIncludePath**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -221,7 +221,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/no_def_idir** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **InterfaceIdentifierFileName**
+- **InterfaceIdentifierFileName**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -229,7 +229,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/iid** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **Identyfikator ustawień regionalnych**
+- **Identyfikator ustawień regionalnych**
 
      Opcjonalnie **int** parametru.
 
@@ -237,7 +237,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/LCID** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Zobacz też [identyfikatory ustawień regionalnych](https://docs.microsoft.com/windows/desktop/intl/locale-identifiers).
 
--   **MkTypLibCompatible**
+- **MkTypLibCompatible**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -245,7 +245,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/mktyplib203** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Zobacz też [składni pliku ODL](/previous-versions/windows/desktop/automat/odl-file-syntax) w witrynie MSDN.
 
--   **OutputDirectory**
+- **OutputDirectory**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -253,7 +253,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/out** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **PreprocessorDefinitions**
+- **PreprocessorDefinitions**
 
      Opcjonalnie **String []** parametru.
 
@@ -261,7 +261,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/D** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Zobacz też **UndefinePreprocessorDefinitions** parametru w tej tabeli.
 
--   **ProxyFileName**
+- **ProxyFileName**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -269,7 +269,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/proxy** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **RedirectOutputAndErrors**
+- **RedirectOutputAndErrors**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -277,7 +277,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/o** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ServerStubFile**
+- **ServerStubFile**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -285,13 +285,13 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/sstub** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Zobacz też **ClientStubFile** parametru w tej tabeli.
 
--   **Element źródłowy**
+- **Element źródłowy**
 
      Wymagane `ITaskItem[]` parametru.
 
      Określa listę plików źródłowych, rozdzielone spacjami.
 
--   **StructMemberAlignment**
+- **StructMemberAlignment**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -309,7 +309,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/ZP** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). **/ZP** opcja jest równoznaczna z **/pakiet** opcja i starszej wersji **/ align** opcji.
 
--   **SuppressCompilerWarnings**
+- **SuppressCompilerWarnings**
 
      Opcjonalnie **logiczna** parametru.
 
@@ -317,7 +317,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/no_warn** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      Opcjonalnie `Boolean` parametru.
 
@@ -325,7 +325,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/nologo** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **TargetEnvironment**
+- **TargetEnvironment**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -342,13 +342,13 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/ENV** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      Opcjonalnie `String` parametru.
 
      Określa katalog pośredni, w którym są przechowywane dzienniki śledzenia dla tego zadania.
 
--   **TypeLibFormat**
+- **TypeLibFormat**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -363,7 +363,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/newtlb** i **/oldtlb** opcji na liście [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **TypeLibraryName**
+- **TypeLibraryName**
 
      Opcjonalnie **ciąg** parametru.
 
@@ -371,7 +371,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/TLB** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **UndefinePreprocessorDefinitions**
+- **UndefinePreprocessorDefinitions**
 
      Opcjonalnie **String []** parametru.
 
@@ -379,7 +379,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/U** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Zobacz też **PreprocessorDefinitions** parametru w tej tabeli.
 
--   **ValidateAllParameters**
+- **ValidateAllParameters**
 
      Opcjonalnie `Boolean` parametru.
 
@@ -387,7 +387,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/ robust** i **/no_robust** opcji na liście [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **Warnaserror —**
+- **Warnaserror —**
 
      Opcjonalnie `Boolean` parametru.
 
@@ -397,7 +397,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
 
      Aby uzyskać więcej informacji, zobacz **/WX** opcji na liście [wiersza polecenia MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Zobacz też **Poziom_ostrzeżeń** parametru w tej tabeli.
 
--   **Poziom_ostrzeżeń**
+- **Poziom_ostrzeżeń**
 
      Opcjonalnie **ciąg** parametru.
 

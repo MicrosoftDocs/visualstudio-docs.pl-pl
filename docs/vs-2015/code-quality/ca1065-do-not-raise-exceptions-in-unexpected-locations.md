@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 08c91b7a1f649340c3b0c9bece6b8b1b94c74324
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6c5a393c32d7f7182fc3226689e24d20a4cae1ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773421"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095356"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Nie wywołuj wyjątków w nieoczekiwanych lokalizacjach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,24 +65,24 @@ ms.locfileid: "54773421"
 
  Następujące wyjątki mogą być generowane metody get właściwości:
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> oraz wszystkie pochodne (w tym <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> oraz wszystkie pochodne (w tym <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> oraz wszystkie pochodne
+- <xref:System.NotSupportedException?displayProperty=fullName> oraz wszystkie pochodne
 
--   <xref:System.ArgumentException?displayProperty=fullName> (tylko z indeksowanej get)
+- <xref:System.ArgumentException?displayProperty=fullName> (tylko z indeksowanej get)
 
--   <xref:System.Collections.Generic.KeyNotFoundException> (tylko z indeksowanej get)
+- <xref:System.Collections.Generic.KeyNotFoundException> (tylko z indeksowanej get)
 
 ### <a name="event-accessor-methods"></a>Metody dostępu zdarzeń
  Metod dostępu zdarzeń powinny być proste operacje, które nie zgłaszają wyjątki. Zdarzenie nie powinien zgłosić wyjątek, gdy użytkownik próbuje dodać lub usunąć program obsługi zdarzeń.
 
  Następujące wyjątki mogą być wyrzucanych z accesor zdarzeń:
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> oraz wszystkie pochodne (w tym <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> oraz wszystkie pochodne (w tym <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> oraz wszystkie pochodne
+- <xref:System.NotSupportedException?displayProperty=fullName> oraz wszystkie pochodne
 
--   <xref:System.ArgumentException> i pochodne
+- <xref:System.ArgumentException> i pochodne
 
 ### <a name="equals-methods"></a>Metody Equals
  Następujące **jest równa** metody nie powinna zgłaszać wyjątków:

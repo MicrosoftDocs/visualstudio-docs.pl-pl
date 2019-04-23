@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 870255afe466709f8e9a5fc48e5135943443900d
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 63328af2211f18fe553c32b018ed0a8422a1857f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57871306"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066354"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Wdrażanie składników COM za pomocą technologii ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ Wdrażanie składników COM, starszy tradycyjnie było trudne zadanie. Składnik
   
  Istnieją dwa sposoby, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdraża składniki COM:  
   
--   Wdrażanie składników COM; przy użyciu programu inicjującego to działa na wszystkich obsługiwanych platformach.  
+- Wdrażanie składników COM; przy użyciu programu inicjującego to działa na wszystkich obsługiwanych platformach.  
   
--   Przy użyciu składnika macierzystego izolacji (znany także jako rejestracji wolnego modelu COM) wdrażania. Jednak ta opcja zadziała tylko w Windows XP lub nowszej systemu operacyjnego.  
+- Przy użyciu składnika macierzystego izolacji (znany także jako rejestracji wolnego modelu COM) wdrażania. Jednak ta opcja zadziała tylko w Windows XP lub nowszej systemu operacyjnego.  
   
 ### <a name="example-of-isolating-and-deploying-a-simple-com-component"></a>Przykład izolowanie i wdrażania prostego składnika modelu COM  
  W celu przedstawienia wdrożenie składnika COM bez rejestrowania, w tym przykładzie zostanie tworzenie aplikacji z systemem Windows w języku Visual Basic, który odwołuje się do izolowanego składnika COM natywne utworzone przy użyciu języka Visual Basic 6.0 i wdróż je za pomocą [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
@@ -60,16 +60,16 @@ Wdrażanie składników COM, starszy tradycyjnie było trudne zadanie. Składnik
   
 ##### <a name="to-create-a-native-com-component"></a>Do tworzenia natywnych składnika modelu COM  
   
-1.  Za pomocą języka Visual Basic 6.0 z **pliku** menu, kliknij przycisk **New**, następnie **projektu**.  
+1. Za pomocą języka Visual Basic 6.0 z **pliku** menu, kliknij przycisk **New**, następnie **projektu**.  
   
-2.  W **nowy projekt** okno dialogowe, wybierz opcję **języka Visual Basic** a następnie wybierz węzeł **ActiveX DLL** projektu. W **nazwa** wpisz `VB6Hello`.  
+2. W **nowy projekt** okno dialogowe, wybierz opcję **języka Visual Basic** a następnie wybierz węzeł **ActiveX DLL** projektu. W **nazwa** wpisz `VB6Hello`.  
   
     > [!NOTE]
     >  Obsługiwane są tylko typy projektu ActiveX biblioteki DLL i kontrolki ActiveX z COM bez rejestrowania; Typy projektu ActiveX EXE i dokumentu ActiveX nie są obsługiwane.  
   
-3.  W **Eksploratora rozwiązań**, kliknij dwukrotnie **Class1.vb** można otworzyć edytora tekstu.  
+3. W **Eksploratora rozwiązań**, kliknij dwukrotnie **Class1.vb** można otworzyć edytora tekstu.  
   
-4.  W Class1.vb, Dodaj następujący kod po kod generowany dla `New` metody:  
+4. W Class1.vb, Dodaj następujący kod po kod generowany dla `New` metody:  
   
     ```  
     Public Sub SayHello()  
@@ -77,7 +77,7 @@ Wdrażanie składników COM, starszy tradycyjnie było trudne zadanie. Składnik
     End Sub  
     ```  
   
-5.  Utwórz składnik. Z **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
+5. Utwórz składnik. Z **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
   
 > [!NOTE]
 >  COM bez rejestrowania obsługuje tylko bibliotek DLL i COM kontroluje typów projektów. Nie można używać pliku exe z rejestracji wolnego modelu COM.  

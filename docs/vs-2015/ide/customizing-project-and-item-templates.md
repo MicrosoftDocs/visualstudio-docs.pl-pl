@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9fa5df395aee8e93c191535a7bec5b078563e3aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6567b4ff4ee7c798ac82c5d33ea50ac206fcd692
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801112"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039049"
 ---
 # <a name="customizing-project-and-item-templates"></a>Dostosowywanie szablonów projektu i elementu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ Po utworzeniu szablonów projektów i elementów, nadal masz możliwość dostos
   
  Na przykład należy wykonać następujące zadania:  
   
--   Zmodyfikuj i wyeksportować istniejący szablon jako szablon niestandardowy.  
+- Zmodyfikuj i wyeksportować istniejący szablon jako szablon niestandardowy.  
   
      Aby uzyskać więcej informacji, zobacz [jak: Aktualizowanie istniejących szablonów](../ide/how-to-update-existing-templates.md).  
   
--   Niestandardowe parametry są przekazywane do szablonu, aby zastąpić istniejące wartości.  
+- Niestandardowe parametry są przekazywane do szablonu, aby zastąpić istniejące wartości.  
   
      Aby uzyskać więcej informacji, zobacz [jak: Zastępowanie parametrów w szablonie](../ide/how-to-substitute-parameters-in-a-template.md).  
   
--   Dostosowywanie kreatorów, które tworzenie projektów z szablonów.  
+- Dostosowywanie kreatorów, które tworzenie projektów z szablonów.  
   
      Aby uzyskać więcej informacji, zobacz [jak: Korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md).  
   
@@ -43,9 +43,9 @@ Po utworzeniu szablonów projektów i elementów, nadal masz możliwość dostos
   
  [Instrukcje: Rozwiązywanie problemów z szablonami](../ide/how-to-troubleshoot-templates.md)  
   
- [Instrukcje: Create Project Templates](../ide/how-to-create-project-templates.md)  
+ [Instrukcje: Tworzenie szablonów projektu](../ide/how-to-create-project-templates.md)  
   
- [Instrukcje: Tworzenie szablonów elementu](../ide/how-to-create-item-templates.md)  
+ [Instrukcje: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md)  
   
  [Instrukcje: Tworzenie pakietów startowych](../ide/how-to-create-starter-kits.md)  
   

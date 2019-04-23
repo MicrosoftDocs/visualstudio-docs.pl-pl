@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6ff7dfc9a83028b866f7601b9b41c685262356ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e82166ab336023812c63045c031b81d94dea67e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909610"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066250"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Instrukcje: Rozszerzanie kodu wygenerowanego przez projektanta O/R
 Kod wygenerowany przez **O/R Designer** zostanie ponownie wygenerowany, gdy zmiany zostaną wprowadzone do klas jednostek i innych obiektów na powierzchni projektowej. Ze względu na to ponowne generowanie kodu każdy kod, który dodasz do wygenerowanego kodu jest zazwyczaj zastąpione, gdy projektant generuje kod. **O/R Designer** umożliwia generowanie plików klasy częściowej, w których można dodać kod, który nie jest zastępowany. Przykładem dodając własny kod do kodu generowanego przez **O/R Designer** jest dodawanie sprawdzania poprawności danych do programu LINQ do klas SQL (jednostka). Aby uzyskać więcej informacji, zobacz [jak: Dodawanie walidacji do klas jednostek](../data-tools/how-to-add-validation-to-entity-classes.md).
@@ -24,25 +24,25 @@ Kod wygenerowany przez **O/R Designer** zostanie ponownie wygenerowany, gdy zmia
 
 ### <a name="to-create-a-partial-class-and-add-code-to-an-entity-class"></a>Utwórz klasę częściową i dodać kod do klasy jednostki
 
-1.  Otwórz lub Utwórz nowy plik LINQ to SQL klas (**dbml** pliku) w **O/R Designer**. (Kliknij dwukrotnie **dbml** w pliku **Eksploratora rozwiązań** lub **Eksplorator bazy danych**.)
+1. Otwórz lub Utwórz nowy plik LINQ to SQL klas (**dbml** pliku) w **O/R Designer**. (Kliknij dwukrotnie **dbml** w pliku **Eksploratora rozwiązań** lub **Eksplorator bazy danych**.)
 
-2.  W **O/R Designer**, kliknij prawym przyciskiem myszy klasę, dla którego chcesz dodać sprawdzanie poprawności, a następnie kliknij przycisk **Wyświetl kod**.
+2. W **O/R Designer**, kliknij prawym przyciskiem myszy klasę, dla którego chcesz dodać sprawdzanie poprawności, a następnie kliknij przycisk **Wyświetl kod**.
 
      Zostanie otwarty Edytor kodu klasę częściową dla klasy wybranego obiektu.
 
-3.  Dodaj swój kod w deklaracji klasy częściowej klasy jednostki.
+3. Dodaj swój kod w deklaracji klasy częściowej klasy jednostki.
 
 ## <a name="add-code-to-a-datacontext"></a>Dodawanie kodu do elementu DataContext
 
 ### <a name="to-create-a-partial-class-and-add-code-to-a-datacontext"></a>Utwórz klasę częściową i dodać kod do elementu DataContext
 
-1.  Otwórz lub Utwórz nowy plik LINQ to SQL klas (**dbml** pliku) w **O/R Designer**. (Kliknij dwukrotnie **dbml** w pliku **Eksploratora rozwiązań** lub **Eksplorator bazy danych**.)
+1. Otwórz lub Utwórz nowy plik LINQ to SQL klas (**dbml** pliku) w **O/R Designer**. (Kliknij dwukrotnie **dbml** w pliku **Eksploratora rozwiązań** lub **Eksplorator bazy danych**.)
 
-2.  W **O/R Designer**, kliknij prawym przyciskiem myszy pusty obszar w projektancie, a następnie kliknij przycisk **Wyświetl kod**.
+2. W **O/R Designer**, kliknij prawym przyciskiem myszy pusty obszar w projektancie, a następnie kliknij przycisk **Wyświetl kod**.
 
      Edytor kodu otwiera częściowej klasy kontekstu danych.
 
-3.  Dodaj swój kod w deklaracji klasy częściowej dla kontekstu danych.
+3. Dodaj swój kod w deklaracji klasy częściowej dla kontekstu danych.
 
 ## <a name="see-also"></a>Zobacz także
 

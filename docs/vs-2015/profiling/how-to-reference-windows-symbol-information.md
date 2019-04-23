@@ -14,12 +14,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8819964eff232cc01cbcfc2081e01eca47f04c15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 45e1ad3c89d811a0a2bd715c86d8fcd8006600b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801703"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086705"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Instrukcje: Informacje o symbolach Windows odwołania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Visual Studio Profiling Tools umożliwia rozpoznawanie nazw symbolicznych takich
   
 ### <a name="to-use-the-microsoft-symbol-server"></a>Aby użyć serwera symboli firmy Microsoft  
   
-1.  Tworzenie folderu zawierającego plik informacje o symbolach, takich jak C:\SymbolCache.  
+1. Tworzenie folderu zawierającego plik informacje o symbolach, takich jak C:\SymbolCache.  
   
-2.  Na **narzędzia** menu, kliknij przycisk **opcje**.  
+2. Na **narzędzia** menu, kliknij przycisk **opcje**.  
   
      **Opcje** pojawi się okno dialogowe.  
   
-3.  Rozwiń **debugowanie** drzewa, a następnie kliknij przycisk **symbole**.  
+3. Rozwiń **debugowanie** drzewa, a następnie kliknij przycisk **symbole**.  
   
-4.  W **symboli (.pdb) lokalizacji**, wybierz opcję **serwery symboli firmy Microsoft**  
+4. W **symboli (.pdb) lokalizacji**, wybierz opcję **serwery symboli firmy Microsoft**  
   
-5.  W **Buforuj symbole z serwera symboli do tego katalogu**, wpisz ścieżkę do folderu, który został utworzony w kroku 1, na przykład:  
+5. W **Buforuj symbole z serwera symboli do tego katalogu**, wpisz ścieżkę do folderu, który został utworzony w kroku 1, na przykład:  
   
      **C:\SymbolCache**  
   

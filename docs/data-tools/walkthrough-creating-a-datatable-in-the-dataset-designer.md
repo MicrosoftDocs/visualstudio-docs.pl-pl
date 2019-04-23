@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7a01a249df088d2a89e64f1c04c69e80d69b111c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1126117cb1fc26c4f61bfb0f6ed0e19e86ce9323
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926752"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072672"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Przewodnik: Tworzenie obiektu DataTable w Projektancie obiektów Dataset
 
@@ -37,33 +37,33 @@ W tym przewodniku opisano sposób tworzenia <xref:System.Data.DataTable> (bez Ta
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Dodaj nowy zestaw danych do aplikacji
 
-1.  Na **projektu** menu, wybierz opcję **Dodaj nowy element**.
+1. Na **projektu** menu, wybierz opcję **Dodaj nowy element**.
 
      **Dodaj nowy element** pojawi się okno dialogowe.
 
-2.  W okienku po lewej stronie wybierz **danych**, a następnie wybierz **DataSet** w środkowym okienku.
+2. W okienku po lewej stronie wybierz **danych**, a następnie wybierz **DataSet** w środkowym okienku.
 
-3.  Wybierz **Dodaj**.
+3. Wybierz **Dodaj**.
 
      Program Visual Studio dodaje plik o nazwie **DataSet1.xsd** w projekcie i otwiera go w **Projektanta obiektów Dataset**.
 
 ## <a name="add-a-new-datatable-to-the-dataset"></a>Dodaj nową tabelę DataTable do zestawu danych
 
-1.  Przeciągnij **DataTable** z **DataSet** karcie **przybornika** na **Projektanta obiektów Dataset**.
+1. Przeciągnij **DataTable** z **DataSet** karcie **przybornika** na **Projektanta obiektów Dataset**.
 
      Tabela o nazwie **DataTable1** zostanie dodany do zestawu danych.
 
-2.  Kliknij pasek tytułu **DataTable1** i zmień jego nazwę `Music`.
+2. Kliknij pasek tytułu **DataTable1** i zmień jego nazwę `Music`.
 
 ## <a name="add-columns-to-the-datatable"></a>Dodawanie kolumn do DataTable
 
-1.  Kliknij prawym przyciskiem myszy **utworów muzycznych** tabeli. Wskaż **Dodaj**, a następnie kliknij przycisk **kolumny**.
+1. Kliknij prawym przyciskiem myszy **utworów muzycznych** tabeli. Wskaż **Dodaj**, a następnie kliknij przycisk **kolumny**.
 
-2.  Nadaj kolumnie nazwę `SongID`.
+2. Nadaj kolumnie nazwę `SongID`.
 
-3.  W oknie **Właściwości** ustaw właściwość <xref:System.Data.DataColumn.DataType%2A> na <xref:System.Int16?displayProperty=fullName>. 
+3. W oknie **Właściwości** ustaw właściwość <xref:System.Data.DataColumn.DataType%2A> na <xref:System.Int16?displayProperty=fullName>. 
 
-4.  Powtórz ten proces i dodaj następujące kolumny:
+4. Powtórz ten proces i dodaj następujące kolumny:
 
      `SongTitle`: <xref:System.String?displayProperty=fullName>
 

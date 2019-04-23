@@ -21,12 +21,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d2c2c6f178c952a5516533c2722bc451be2e3bf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9991adc9d770487c646c97da81b6245ae65ba5f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649670"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075379"
 ---
 # <a name="relationships-in-datasets"></a>Relacje w zestawach danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,23 +84,23 @@ Zestawy danych, które zawierają dane powiązane tabele użyj <xref:System.Data
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>Można utworzyć relacji między tabelami danych dwa  
   
-1.  Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [jak: Otwórz zestaw danych w Projektancie obiektów Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [jak: Otwórz zestaw danych w Projektancie obiektów Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Przeciągnij **relacji** obiektu z **DataSet** przybornika do tabeli podrzędnej danych w relacji.  
+2. Przeciągnij **relacji** obiektu z **DataSet** przybornika do tabeli podrzędnej danych w relacji.  
   
      **Relacji** zostanie otwarte okno dialogowe wypełnianie **tabeli podrzędnej** pola z tabeli, która została przeciągnięta **relacji** obiektu na.  
   
-3.  Wybieranie tabeli nadrzędnej z **tabeli nadrzędnej** pole. Tabela nadrzędna zawiera rekordy na stronie "jeden" w relacji jeden do wielu.  
+3. Wybieranie tabeli nadrzędnej z **tabeli nadrzędnej** pole. Tabela nadrzędna zawiera rekordy na stronie "jeden" w relacji jeden do wielu.  
   
-4.  Sprawdź, czy tabela podrzędna poprawne są wyświetlane w **tabeli podrzędnej** pole. Tabela podrzędna zawiera rekordy na stronie "many" w relacji jeden do wielu.  
+4. Sprawdź, czy tabela podrzędna poprawne są wyświetlane w **tabeli podrzędnej** pole. Tabela podrzędna zawiera rekordy na stronie "many" w relacji jeden do wielu.  
   
-5.  Wpisz nazwę dla relacji w **nazwa** pole lub pozostaw nazwę domyślną, w oparciu o wybrane tabele. Jest to nazwa rzeczywistych <xref:System.Data.DataRelation> obiektu w kodzie.  
+5. Wpisz nazwę dla relacji w **nazwa** pole lub pozostaw nazwę domyślną, w oparciu o wybrane tabele. Jest to nazwa rzeczywistych <xref:System.Data.DataRelation> obiektu w kodzie.  
   
-6.  Wybierz kolumny, które sprzężenia w **kolumn klucza** i **kolumny klucza obcego** listy.  
+6. Wybierz kolumny, które sprzężenia w **kolumn klucza** i **kolumny klucza obcego** listy.  
   
-7.  Wybierz, czy chcesz utworzyć relację i/lub ograniczenia. Aby uzyskać informacje, zobacz [wprowadzenie do obiektów DataRelation](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
+7. Wybierz, czy chcesz utworzyć relację i/lub ograniczenia. Aby uzyskać informacje, zobacz [wprowadzenie do obiektów DataRelation](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
   
-8.  Zaznacz lub wyczyść **zagnieżdżone relacji** pole. Wybranie tej opcji ustawia <xref:System.Data.DataRelation.Nested%2A> właściwości `true`, i sprawia, że element podrzędny wiersze w relacji do być zagnieżdżony w kolumnie nadrzędnej, gdy te wiersze są zapisywane w postaci danych XML lub synchronizowane z <xref:System.Xml.XmlDataDocument>. Aby uzyskać więcej informacji, zobacz [zagnieżdżanie elementów DataRelation](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
+8. Zaznacz lub wyczyść **zagnieżdżone relacji** pole. Wybranie tej opcji ustawia <xref:System.Data.DataRelation.Nested%2A> właściwości `true`, i sprawia, że element podrzędny wiersze w relacji do być zagnieżdżony w kolumnie nadrzędnej, gdy te wiersze są zapisywane w postaci danych XML lub synchronizowane z <xref:System.Xml.XmlDataDocument>. Aby uzyskać więcej informacji, zobacz [zagnieżdżanie elementów DataRelation](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
   
 9. Ustawianie reguł, które mają być egzekwowane, gdy wprowadzasz zmiany do rekordów w tych tabelach. Aby uzyskać więcej informacji, zobacz <xref:System.Data.Rule>.  
   
@@ -108,6 +108,6 @@ Zestawy danych, które zawierają dane powiązane tabele użyj <xref:System.Data
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Aby wyświetlić nazwy relacji w Projektancie obiektów Dataset  
   
-1.  Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [jak: Otwórz zestaw danych w Projektancie obiektów Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [jak: Otwórz zestaw danych w Projektancie obiektów Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Z **danych** menu, wybierz opcję **Pokaż etykiety relacji** polecenie, aby wyświetlić nazwę relacji. Usuń zaznaczenie tego polecenia, aby ukryć nazwę relacji.
+2. Z **danych** menu, wybierz opcję **Pokaż etykiety relacji** polecenie, aby wyświetlić nazwę relacji. Usuń zaznaczenie tego polecenia, aby ukryć nazwę relacji.

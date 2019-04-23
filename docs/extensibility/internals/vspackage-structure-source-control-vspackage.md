@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeaa87cf55b9429904286817b043dcba92d2bfcf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 03b9d4fb6a92694df55d6732ac80d75645209a87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335223"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071281"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Struktura pakietu VSPackage (pakiet VSPackage kontroli kodu źródłowego)
 
@@ -28,23 +28,23 @@ Pakietu VSPackage deklaruje jego elementy menu i ustanawia domyślny stan elemen
 
 Pakietu VSPackage kontroli źródła jest głęboko zintegrowana w programie Visual Studio. Semantyka pakietu VSPackage obejmują:
 
--   Interfejs do zaimplementowania bycia pakietu VSPackage ( `IVsPackage` interfejsu)
+- Interfejs do zaimplementowania bycia pakietu VSPackage ( `IVsPackage` interfejsu)
 
--   Implementacja poleceń interfejsu użytkownika (pliku vsct i stosowania <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu)
+- Implementacja poleceń interfejsu użytkownika (pliku vsct i stosowania <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu)
 
--   Rejestracja pakietu VSPackage przy użyciu programu Visual Studio.
+- Rejestracja pakietu VSPackage przy użyciu programu Visual Studio.
 
 Kontrola źródła pakietu VSPackage muszą komunikować się z innymi jednostkami programu Visual Studio:
 
--   Projekty
+- Projekty
 
--   Edytory
+- Edytory
 
--   Rozwiązania
+- Rozwiązania
 
--   Windows
+- Windows
 
--   Uruchamianie tabeli dokumentu
+- Uruchamianie tabeli dokumentu
 
 ### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Usługi środowiska Visual Studio, które mogą być używane
 

@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1059e4035e620d9feb0498bacf5516eed99b5ba3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 394c9adf6794ae6e6c547a46e1fe469e0c642ba8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755342"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096455"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Instrukcje: Tworzenie szablonów wielu projektów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,15 +79,15 @@ Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projekt
   
 ### <a name="to-create-a-multi-project-template"></a>Aby utworzyć szablon wielu projektów  
   
-1.  Twórz projekty do uwzględnienia w szablonie wieloprojektowym.  
+1. Twórz projekty do uwzględnienia w szablonie wieloprojektowym.  
   
-2.  Tworzenie plików .vstemplate dla każdego projektu. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md).  
+2. Tworzenie plików .vstemplate dla każdego projektu. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md).  
   
-3.  Utwórz główny plik .vstemplate szablonu, który zawiera metadane szablonu wieloprojektowego. Aby uzyskać więcej informacji Zobacz pierwszy przykład w poniższej sekcji.  
+3. Utwórz główny plik .vstemplate szablonu, który zawiera metadane szablonu wieloprojektowego. Aby uzyskać więcej informacji Zobacz pierwszy przykład w poniższej sekcji.  
   
-4.  Wybierz pliki i foldery do uwzględnienia w szablonie, kliknij prawym przyciskiem myszy zaznaczenie, kliknij przycisk **Wyślij do**, a następnie kliknij przycisk **skompresowany Folder (zip)**. Pliki i foldery są kompresowane w pliku zip.  
+4. Wybierz pliki i foldery do uwzględnienia w szablonie, kliknij prawym przyciskiem myszy zaznaczenie, kliknij przycisk **Wyślij do**, a następnie kliknij przycisk **skompresowany Folder (zip)**. Pliki i foldery są kompresowane w pliku zip.  
   
-5.  Umieść plik zip szablonu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] katalogu szablonu projektu. Domyślnie ten katalog jest \My Studio *wersji*\Templates\ProjectTemplates\\.  
+5. Umieść plik zip szablonu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] katalogu szablonu projektu. Domyślnie ten katalog jest \My Studio *wersji*\Templates\ProjectTemplates\\.  
   
 ## <a name="example"></a>Przykład  
  Ten przykład przedstawia plik .vstemplate podstawowe główny wielu projektów. W tym przykładzie szablon zawiera dwa projekty `My Windows Application` i `My Class Library`. `ProjectName` Atrybutu na `ProjectTemplateLink` element ustawia nazwę [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] przypisze temu projektowi. Jeśli `ProjectName` atrybut nie istnieje, nazwa pliku vstemplate jest używana jako nazwa projektu.  

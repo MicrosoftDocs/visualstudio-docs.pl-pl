@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 14eaa83f63a4f1c7f91bd2a0da3ad8d285f19113
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fbcf07b462e280f522741b8329d34c2907f5b454
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639818"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066289"
 ---
 # <a name="how-to-localize-code"></a>Instrukcje: Lokalizowanie kodu
   Niezlokalizowany kod używa ciągu ustalonych wartości. Aby zlokalizowania ciągi kodów, zastąp je wywołaniami do <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, czyli metody, która odwołuje się do zlokalizowanych zasobów.
@@ -27,30 +27,30 @@ ms.locfileid: "56639818"
 
 #### <a name="to-localize-code"></a>Aby zlokalizować kod
 
-1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla elementu projektu, a następnie wybierz **Dodaj** > **modułu**.
+1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla elementu projektu, a następnie wybierz **Dodaj** > **modułu**.
 
      Wybierz **plik zasobów** szablonu.
 
     > [!NOTE]
     >  Pamiętaj dodać plik zasobów do elementu projektu programu SharePoint, tak aby właściwość typu wdrażania była dostępna. Ta właściwość jest wymagana w dalszej części tej procedury.
 
-2.  Nadaj plikowi zasobów języka domyślnego nazwę wybraną z dołączonym *resx* rozszerzenia, takie jak *MyAppResources.resx*.
+2. Nadaj plikowi zasobów języka domyślnego nazwę wybraną z dołączonym *resx* rozszerzenia, takie jak *MyAppResources.resx*.
 
-3.  Powtórz kroki 1 i 2, aby dodać pliki zasobów oddzielne w elemencie projektu programu SharePoint: jeden dla każdego zlokalizowanego języka.
+3. Powtórz kroki 1 i 2, aby dodać pliki zasobów oddzielne w elemencie projektu programu SharePoint: jeden dla każdego zlokalizowanego języka.
 
      Użyj tej samej nazwie bazowej dla każdego zlokalizowanego pliku zasobów, ale Dodaj identyfikator kultury. Na przykład, nazwij niemieckie zlokalizowane zasoby *MyAppResources.de-DE.resx*.
 
-4.  Otwórz każdy plik zasobów i Dodaj zlokalizowane ciągi. Użyj tego samego ciągu identyfikatorów w każdym pliku.
+4. Otwórz każdy plik zasobów i Dodaj zlokalizowane ciągi. Użyj tego samego ciągu identyfikatorów w każdym pliku.
 
-5.  Zmień wartość właściwości **typu wdrożenia** właściwości każdego pliku zasobu na **AppGlobalResource** na każdy plik wdrożyć do folderu App_GlobalResources na serwerze.
+5. Zmień wartość właściwości **typu wdrożenia** właściwości każdego pliku zasobu na **AppGlobalResource** na każdy plik wdrożyć do folderu App_GlobalResources na serwerze.
 
-6.  Pozostaw wartość **Build Action** właściwości każdego plików jako **zasób osadzony**.
+6. Pozostaw wartość **Build Action** właściwości każdego plików jako **zasób osadzony**.
 
      Zasoby osadzone są kompilowane do projektu biblioteki DLL.
 
-7.  Skompiluj projekt, aby utworzyć satelitarne biblioteki DLL zasobu.
+7. Skompiluj projekt, aby utworzyć satelitarne biblioteki DLL zasobu.
 
-8.  W **projektancie pakietu**, wybierz **zaawansowane** kartę, a następnie dodaj zestawu satelickiego.
+8. W **projektancie pakietu**, wybierz **zaawansowane** kartę, a następnie dodaj zestawu satelickiego.
 
 9. W **lokalizacji** pola, Dodaj folder ID kultury do ścieżki lokalizacji, takich jak *de-DE\\\<nazwy elementu projektu >. resources.dll*.
 

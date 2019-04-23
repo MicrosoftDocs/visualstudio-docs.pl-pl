@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9942c680f93614a84da3502de4b3a26a08576fb7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 03a10e75ce50441b8c32ff734e6f2d30e9604bc1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610544"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097469"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Instrukcje: Wybieranie plików do kompilacji
 Podczas kompilowania projektu, zawiera kilka plików, możesz wyświetlić listę każdego pliku osobno w pliku projektu lub można używać symboli wieloznacznych, aby uwzględnić wszystkie pliki w jednym katalogu lub zagnieżdżone zestawu katalogów.
@@ -42,7 +42,7 @@ Aby uwzględnić pliki dla kompilacji, muszą być uwzględnione na liście elem
 
 #### <a name="to-declare-multiple-items"></a>Aby zadeklarować wiele elementów
 
--   Użyj `Include` atrybuty podobne do następujących:
+- Użyj `Include` atrybuty podobne do następujących:
 
     `<CSFile Include="form1.cs;form2.cs"/>`
 

@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 551af75c985c9103db37cd3f9fe585655a4df342
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 83dc76e3e92a05f936d94c8cd0f6a2b9b69e4cc1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800472"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073556"
 ---
 # <a name="start"></a>Uruchamianie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  `Method`  
  Musi mieć jedną z następujących słów kluczowych:  
   
--   **ŚLEDZENIE** -określa metody instrumentacji.  
+- **ŚLEDZENIE** -określa metody instrumentacji.  
   
--   **Przykładowe** -określa metody pobierania próbek.  
+- **Przykładowe** -określa metody pobierania próbek.  
   
--   **POKRYCIE** -określa pokrycie kodu.  
+- **POKRYCIE** -określa pokrycie kodu.  
   
--   **WSPÓŁBIEŻNOŚĆ** -określa metodę rywalizacji zasobów.  
+- **WSPÓŁBIEŻNOŚĆ** -określa metodę rywalizacji zasobów.  
   
 ## <a name="required-options"></a>Wymagane opcje  
  **Dane wyjściowe** opcja musi być określony, gdy **Start** jest określona w wierszu polecenia.  

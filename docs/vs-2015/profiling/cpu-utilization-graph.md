@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cebba40ee1c438e7be8ea97dcfc7050491511039
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8058995c8ae45c40f202aaa1e788891da3eb985d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780737"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086790"
 ---
 # <a name="cpu-utilization-graph"></a>Wykres wykorzystania CPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Wykres wykorzystania procesora CPU pokazuje poziom użycia w aplikacji wraz z up
   
 ## <a name="cpu-utilization-graph-colors"></a>Kolory Wykres wykorzystania procesora CPU  
   
--   Zielony oznacza użycie rdzeni logicznych w systemie przez bieżący proces.  
+- Zielony oznacza użycie rdzeni logicznych w systemie przez bieżący proces.  
   
--   Jasny zwykle wskazuje użycie rdzeni logicznych przez inne procesy w systemie. Wysoki odsetek szarości światła w wykres czasu procesora CPU wskazuje, że system jest silnie obciążony przez inne procesy, i proces może być wyparte przez nich. Aby zmniejszyć zużycie rdzenie logiczne przez inne procesy, Zmniejsz liczbę ich działa w systemie.  
+- Jasny zwykle wskazuje użycie rdzeni logicznych przez inne procesy w systemie. Wysoki odsetek szarości światła w wykres czasu procesora CPU wskazuje, że system jest silnie obciążony przez inne procesy, i proces może być wyparte przez nich. Aby zmniejszyć zużycie rdzenie logiczne przez inne procesy, Zmniejsz liczbę ich działa w systemie.  
   
--   Ciemnoszary wskazuje użycia rdzeni logicznych przez proces systemowy. Nie można bezpośrednio kontrolować to, ale warto wiedzieć, kiedy ma miejsce, ponieważ może mieć wpływ na dostępność rdzeni logicznych dla procesu.  
+- Ciemnoszary wskazuje użycia rdzeni logicznych przez proces systemowy. Nie można bezpośrednio kontrolować to, ale warto wiedzieć, kiedy ma miejsce, ponieważ może mieć wpływ na dostępność rdzeni logicznych dla procesu.  
   
--   Oficjalny wskazuje dostępność nieużywane rdzenie logiczne w systemie. Rdzenie te są dostępne dla procesu, jeśli możesz znaleźć dodatkowe możliwości w równoległości obliczeń.  
+- Oficjalny wskazuje dostępność nieużywane rdzenie logiczne w systemie. Rdzenie te są dostępne dla procesu, jeśli możesz znaleźć dodatkowe możliwości w równoległości obliczeń.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok wykorzystania](../profiling/utilization-view.md)   

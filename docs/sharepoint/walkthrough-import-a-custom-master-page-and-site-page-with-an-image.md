@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3d99b76e1ca9c67c0cd29bd435759b529d97b348
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c303ab86409a082c3a6817adc526ded432ea54bf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665997"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063182"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Przewodnik: Importowanie niestandardowej strony wzorcowej oraz strony witryny z obrazem
   W tym instruktażu pokazano, jak importować niestandardową stronę wzorcową i stronę witryny, która ma obraz w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint.
@@ -36,26 +36,26 @@ ms.locfileid: "59665997"
 ## <a name="prerequisites"></a>Wymagania wstępne
  Konieczne jest posiadanie następujących składników w celu przeprowadzenia tego instruktażu:
 
--   Obsługiwane edycje [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i programu SharePoint.
+- Obsługiwane edycje [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i programu SharePoint.
 
--   Program Visual Studio.
+- Program Visual Studio.
 
--   SharePoint Designer 2010.
+- SharePoint Designer 2010.
 
 ## <a name="create-items-in-sharepoint-designer"></a>Tworzenie elementów w programie SharePoint Designer
  W tym przykładzie pokazano, jak utworzyć trzy elementy w programie SharePoint Designer eksportu: niestandardową stronę wzorcową, strony witryny, która odwołuje się niestandardową stronę wzorcową i plikiem obrazu na stronie witryny. Obraz, który jest dodawany do folderu /images/ w programie SharePoint.
 
 #### <a name="to-create-a-custom-master-page-in-sharepoint-designer"></a>Aby utworzyć niestandardową stronę wzorcową w programie SharePoint Designer
 
-1.  W programie SharePoint Designer, w okienku nawigacji wybierz **stronami wzorcowymi** obiekt lokacji.
+1. W programie SharePoint Designer, w okienku nawigacji wybierz **stronami wzorcowymi** obiekt lokacji.
 
-2.  Na **stronami wzorcowymi** Wstążce, wybierz polecenie **pustą stronę wzorcową**.
+2. Na **stronami wzorcowymi** Wstążce, wybierz polecenie **pustą stronę wzorcową**.
 
-3.  Wybierz nowe strony wzorcowej, a następnie na **stronami wzorcowymi** Wstążce, wybierz polecenie **Edytuj plik**.
+3. Wybierz nowe strony wzorcowej, a następnie na **stronami wzorcowymi** Wstążce, wybierz polecenie **Edytuj plik**.
 
-4.  W dolnej części programu SharePoint Designer wybierz **kodu** kartę.
+4. W dolnej części programu SharePoint Designer wybierz **kodu** kartę.
 
-5.  Zastąp istniejący kod znaczników następującym kodem.
+5. Zastąp istniejący kod znaczników następującym kodem.
 
     ```aspx-csharp
     <%@ Master Language="C#" %>
@@ -76,39 +76,39 @@ ms.locfileid: "59665997"
     </html>
     ```
 
-6.  Wybierz pozycję Zapisz stronę **stronami wzorcowymi** kartę i Zmień nazwę strony wzorcowej jako **mybasic1.master**.
+6. Wybierz pozycję Zapisz stronę **stronami wzorcowymi** kartę i Zmień nazwę strony wzorcowej jako **mybasic1.master**.
 
 ## <a name="add-an-image-to-the-content-database-in-sharepoint-designer"></a>Dodawanie obrazu do bazy danych zawartości w programie SharePoint Designer
  Teraz możesz dodać obraz do wyświetlania na stronie witryny. Obraz zostanie wdrożony do bazy danych zawartości programu SharePoint.
 
 #### <a name="to-add-an-image-to-the-content-database-in-sharepoint-designer"></a>Aby dodać obraz do bazy danych zawartości w programie SharePoint Designer
 
-1.  W okienku nawigacji wybierz **wszystkie pliki** lokacji obiektu, a następnie, w widoku drzewa wybierz **obrazów** folderu.
+1. W okienku nawigacji wybierz **wszystkie pliki** lokacji obiektu, a następnie, w widoku drzewa wybierz **obrazów** folderu.
 
-2.  Na **wszystkie pliki** Wstążce, wybierz polecenie **plików importu**, wybierz plik wybranych przez użytkownika, a następnie wybierz **OK** przycisku. W tym przykładzie plik o nazwie **myimg1.png**.
+2. Na **wszystkie pliki** Wstążce, wybierz polecenie **plików importu**, wybierz plik wybranych przez użytkownika, a następnie wybierz **OK** przycisku. W tym przykładzie plik o nazwie **myimg1.png**.
 
      Opcjonalnie możesz utworzyć podfolder, aby ułatwić organizowanie obrazów.
 
-3.  Zamknij **importu** okno dialogowe.
+3. Zamknij **importu** okno dialogowe.
 
 ## <a name="create-a-site-page"></a>Tworzenie strony witryny
  Ta strona podstawowej witryny używa niestandardowej strony wzorcowej i wyświetla obraz, który zostało dodane w poprzednim kroku.
 
 #### <a name="to-create-a-site-page"></a>Aby utworzyć stronę witryny
 
-1.  W okienku nawigacji wybierz **stron witryny** obiektu.
+1. W okienku nawigacji wybierz **stron witryny** obiektu.
 
-2.  Na **stron** Wstążce, wybierz polecenie **strony** przycisku, wybierz polecenie **ASPX** strony typu, a następnie nadaj nowemu plikowi **mycontentpage1.aspx**.
+2. Na **stron** Wstążce, wybierz polecenie **strony** przycisku, wybierz polecenie **ASPX** strony typu, a następnie nadaj nowemu plikowi **mycontentpage1.aspx**.
 
      Opcjonalnie możesz utworzyć podfolder, aby ułatwić organizowanie stron witryny.
 
-3.  Na liście stron witryny, wybierz opcję **MyContentPage1.aspx** aby otworzyć jej stronę właściwości, a następnie w dolnej części strony wybierz **Edytuj plik** łącza.
+3. Na liście stron witryny, wybierz opcję **MyContentPage1.aspx** aby otworzyć jej stronę właściwości, a następnie w dolnej części strony wybierz **Edytuj plik** łącza.
 
      Jeśli pojawia się komunikat i mówi, że ta strona nie zawiera żadnych obszarów, które można edytować w trybie awaryjnym i pyta, czy chcesz otworzyć tę stronę w trybie zaawansowanym, wybierz **tak** przycisku.
 
-4.  W dolnej części strony wybierz **kodu** przycisku.
+4. W dolnej części strony wybierz **kodu** przycisku.
 
-5.  Zastąp istniejący kod znaczników następującym kodem.
+5. Zastąp istniejący kod znaczników następującym kodem.
 
     ```aspx-csharp
     <%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %>
@@ -124,22 +124,22 @@ ms.locfileid: "59665997"
     </asp:Content>
     ```
 
-6.  Zapisz stronę zaktualizowanej witryny.
+6. Zapisz stronę zaktualizowanej witryny.
 
 ## <a name="export-the-items-from-sharepoint"></a>Eksportowanie elementów z programu SharePoint
  Eksportować z programu SharePoint do rozwiązania programu SharePoint (*.wsp*) pliku.
 
 #### <a name="to-export-items-from-sharepoint-designer"></a>Aby wyeksportować elementy z programu SharePoint Designer
 
-1.  W programie SharePoint Designer, w okienku nawigacji wybierz **witryny zespołu** obiektu, a następnie na **witryny** Wstążce, wybierz polecenie **Zapisz jako szablon**.
+1. W programie SharePoint Designer, w okienku nawigacji wybierz **witryny zespołu** obiektu, a następnie na **witryny** Wstążce, wybierz polecenie **Zapisz jako szablon**.
 
-2.  W **Zapisz jako szablon** okna dialogowego wprowadź nazwę pliku i nazwa szablonu, wybierz opcję **dołączanie zawartości** pole wyboru, a następnie wybierz **OK** przycisku.
+2. W **Zapisz jako szablon** okna dialogowego wprowadź nazwę pliku i nazwa szablonu, wybierz opcję **dołączanie zawartości** pole wyboru, a następnie wybierz **OK** przycisku.
 
      Spowoduje to zapisanie zawartości witryny w *.wsp* pliku.
 
-3.  Po rozwiązaniu eksportuje, wybierz **Galeria rozwiązań** łącze, aby wyświetlić listę plików dostępnych rozwiązań.
+3. Po rozwiązaniu eksportuje, wybierz **Galeria rozwiązań** łącze, aby wyświetlić listę plików dostępnych rozwiązań.
 
-4.  Otwórz menu skrótów dla nowego *.wsp* , a następnie wybierz **Zapisz element docelowy jako** zapisać go w systemie.
+4. Otwórz menu skrótów dla nowego *.wsp* , a następnie wybierz **Zapisz element docelowy jako** zapisać go w systemie.
 
 ## <a name="import-the-items-into-visual-studio"></a>Importowanie elementów do programu Visual Studio
  Importuj *.wsp* mezzanine do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Po zaimportowaniu zawartości można go dostosować, dodać więcej elementów i następnie wdrożysz go.
@@ -166,9 +166,9 @@ ms.locfileid: "59665997"
 
     Jeśli istniejącej strony wzorcowej jest oznaczona jako domyślna strona wzorcowa lub niestandardowej strony wzorcowej, zostanie wyświetlony błąd wdrażania z informacją, że nie można usunąć strony wzorcowej. Aby uniknąć tego problemu, wykonaj następujące czynności:
 
-   -   Jeśli istniejące strony wzorcowej jest ustawiona jako domyślna strona wzorcowa, tymczasowo ustawić innej strony wzorcowej jako domyślnej strony wzorcowej. Po wdrożeniu plików w programie SharePoint, należy ustawić nowej strony wzorcowej jako domyślnej strony wzorcowej.
+   - Jeśli istniejące strony wzorcowej jest ustawiona jako domyślna strona wzorcowa, tymczasowo ustawić innej strony wzorcowej jako domyślnej strony wzorcowej. Po wdrożeniu plików w programie SharePoint, należy ustawić nowej strony wzorcowej jako domyślnej strony wzorcowej.
 
-   -   Jeśli istniejące strony wzorcowej jest ustawiony jako niestandardowej strony wzorcowej, tymczasowo ustawić innej strony wzorcowej jako niestandardowej strony wzorcowej. Po wdrożeniu plików w programie SharePoint, należy ustawić nowej strony wzorcowej jako niestandardowej strony wzorcowej.
+   - Jeśli istniejące strony wzorcowej jest ustawiony jako niestandardowej strony wzorcowej, tymczasowo ustawić innej strony wzorcowej jako niestandardowej strony wzorcowej. Po wdrożeniu plików w programie SharePoint, należy ustawić nowej strony wzorcowej jako niestandardowej strony wzorcowej.
 
 6. Na pasku menu wybierz **kompilacji** > **wdrożyć rozwiązanie**.
 

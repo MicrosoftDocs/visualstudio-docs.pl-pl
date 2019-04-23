@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c288da9345435969f7843f753625ce5471bb1878
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 55c4ebc96d93d9b068c29d24727d40975518b1ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776470"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062831"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Instalowanie aplikacji Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ Aby zainstalować aplikację powłoki należy wykonać następujące czynności.
   
 #### <a name="to-prepare-a-shell-application-for-msi-deployment"></a>Aby przygotować aplikację powłoki dla wdrożenia MSI  
   
-1.  Edytuj każdego pliku .vsixmanifest w rozwiązaniu.  
+1. Edytuj każdego pliku .vsixmanifest w rozwiązaniu.  
   
      W `Identifier` elementu Dodawanie `InstalledByMSI` elementu i `SystemComponent` elementu, a następnie ustaw ich wartości `true`.  
   
      Te elementy uniemożliwić Instalator VSIX do zainstalowania składników i użytkownika z je odinstalować za pomocą **rozszerzenia i aktualizacje** okno dialogowe.  
   
-2.  Dla każdego projektu, który zawiera VSIX manifest należy edytować zadania kompilacji, aby wyprowadzić zawartość do lokalizacji, z której zostanie zainstalowany z pliku MSI. Dołączenie manifestu VSIX w danych wyjściowych kompilacji, ale nie tworzy plik .vsix.  
+2. Dla każdego projektu, który zawiera VSIX manifest należy edytować zadania kompilacji, aby wyprowadzić zawartość do lokalizacji, z której zostanie zainstalowany z pliku MSI. Dołączenie manifestu VSIX w danych wyjściowych kompilacji, ale nie tworzy plik .vsix.  
   
 ## <a name="creating-an-msi-for-your-shell"></a>Tworzenie pliku MSI dla powłoki  
  Do utworzenia pakietu MSI, firma Microsoft zaleca użycie [zestaw narzędzi XML Instalatora Windows](http://go.microsoft.com/fwlink/?LinkId=82720) ponieważ daje większą elastyczność niż standardowy projekt Instalatora.  
@@ -85,7 +85,7 @@ Aby zainstalować aplikację powłoki należy wykonać następujące czynności.
   
 ##### <a name="to-set-the-layout-of-shell-components"></a>Aby ustawić układ powłoki składników  
   
-1.  Tworzenie hierarchii `Directory` elementu do reprezentowania wszystkich katalogów na tworzenie w systemie plików na komputerze docelowym, jak w poniższym przykładzie pokazano.  
+1. Tworzenie hierarchii `Directory` elementu do reprezentowania wszystkich katalogów na tworzenie w systemie plików na komputerze docelowym, jak w poniższym przykładzie pokazano.  
   
     ```xml  
     <Directory Id="TARGETDIR" Name="SourceDir">  
@@ -105,7 +105,7 @@ Aby zainstalować aplikację powłoki należy wykonać następujące czynności.
   
      Te katalogi są określane przez `Id` gdy są określone pliki, które muszą zostać zainstalowane.  
   
-2.  Zidentyfikuj składniki, które wymagają powłoka i aplikacji powłoki, co ilustruje poniższy przykład.  
+2. Zidentyfikuj składniki, które wymagają powłoka i aplikacji powłoki, co ilustruje poniższy przykład.  
   
     > [!NOTE]
     >  Niektóre elementy mogą odwoływać się do definicji w innych plikach .wxs.  
@@ -123,7 +123,7 @@ Aby zainstalować aplikację powłoki należy wykonać następujące czynności.
     </Feature>  
     ```  
   
-    1.  `ComponentRef` Element odwołuje się do innego pliku .wxs identyfikujący pliki, które wymaga bieżącego składnika. Na przykład GeneralProfile ma następującą definicję w HelpAbout.wxs.  
+    1. `ComponentRef` Element odwołuje się do innego pliku .wxs identyfikujący pliki, które wymaga bieżącego składnika. Na przykład GeneralProfile ma następującą definicję w HelpAbout.wxs.  
   
         ```xml  
         <Fragment Id="FragmentProfiles">  
@@ -139,7 +139,7 @@ Aby zainstalować aplikację powłoki należy wykonać następujące czynności.
   
          `DirectoryRef` Element określa, gdzie te pliki na komputerze użytkownika. `Directory` Element określa, że zostanie ona zainstalowana w podkatalogu, a każdy `File` element reprezentuje pliku utworzonego lub istnieje jako część rozwiązania i określa, gdzie ten plik można znaleźć po utworzeniu pliku MSI.  
   
-    2.  `ComponentGroupRef` Element odwołuje się do grupy innych składników (lub składniki i grup składników). Na przykład `ComponentGroupRef` w grupie ApplicationGroup jest zdefiniowana w następujący sposób w Application.wxs.  
+    2. `ComponentGroupRef` Element odwołuje się do grupy innych składników (lub składniki i grup składników). Na przykład `ComponentGroupRef` w grupie ApplicationGroup jest zdefiniowana w następujący sposób w Application.wxs.  
   
         ```xml  
         <ComponentGroup Id="ApplicationGroup">  
@@ -166,15 +166,15 @@ Aby zainstalować aplikację powłoki należy wykonać następujące czynności.
   
 ##### <a name="to-integrate-registry-entries-into-the-msi"></a>Aby zintegrować wpisy rejestru do pliku MSI  
   
-1.  W **dostosowania powłoki** folder, otwórz *ProjectName*. reg.  
+1. W **dostosowania powłoki** folder, otwórz *ProjectName*. reg.  
   
-2.  Zastąp wszystkie wystąpienia zmiennej $RootFolder$ token ze ścieżką do katalogu instalacyjnego programu docelowego.  
+2. Zastąp wszystkie wystąpienia zmiennej $RootFolder$ token ze ścieżką do katalogu instalacyjnego programu docelowego.  
   
-3.  Dodaj inne wpisy rejestru, których wymaga aplikacja.  
+3. Dodaj inne wpisy rejestru, których wymaga aplikacja.  
   
-4.  Otwórz ApplicationRegistry.wxs.  
+4. Otwórz ApplicationRegistry.wxs.  
   
-5.  Dla każdego wpisu rejestru w *ProjectName*.reg, Dodaj odpowiedni blok rejestru, jak w poniższych przykładach pokazano.  
+5. Dla każdego wpisu rejestru w *ProjectName*.reg, Dodaj odpowiedni blok rejestru, jak w poniższych przykładach pokazano.  
   
     |*ProjectName*.reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
@@ -186,24 +186,24 @@ Aby zainstalować aplikację powłoki należy wykonać następujące czynności.
 ## <a name="creating-a-setup-bootstrapper"></a>Tworzenie programu inicjującego Instalatora  
  Twoje ukończone MSI zainstaluje tylko wtedy, gdy wszystkie wstępnie wymagane składniki są najpierw instalowane. Aby ułatwić środowisko użytkownika końcowego, Utwórz program instalacyjny, który zbiera i instaluje wszystkie wymagania wstępne, przed instalacją aplikacji. Aby zapewnić pomyślną instalację, wykonaj następujące akcje:  
   
--   Wymuszaj instalację przez administratora.  
+- Wymuszaj instalację przez administratora.  
   
--   Wykryj, czy jest zainstalowany program Visual Studio Shell (Isolated).  
+- Wykryj, czy jest zainstalowany program Visual Studio Shell (Isolated).  
   
--   Jeden lub oba instalatory powłoki są uruchamiane w kolejności.  
+- Jeden lub oba instalatory powłoki są uruchamiane w kolejności.  
   
--   Obsługuje żądania ponownego uruchomienia.  
+- Obsługuje żądania ponownego uruchomienia.  
   
--   Uruchom usługi MSI.  
+- Uruchom usługi MSI.  
   
 ### <a name="enforcing-installation-by-administrator"></a>Wymuszanie instalacji przez administratora  
  Ta procedura jest wymagany do włączenia programu instalacyjnego do uzyskania dostępu wymagane katalogi, takich jak \Program Files\\.  
   
 ##### <a name="to-enforce-installation-by-administrator"></a>Aby wymusić instalację przez administratora  
   
-1.  Otwórz menu skrótów dla projektu Instalatora, a następnie wybierz **właściwości**.  
+1. Otwórz menu skrótów dla projektu Instalatora, a następnie wybierz **właściwości**.  
   
-2.  W obszarze **plik konsolidatora/właściwości/Manifest konfiguracji**ustaw **poziom wykonywania UAC** do **requireAdministrator**.  
+2. W obszarze **plik konsolidatora/właściwości/Manifest konfiguracji**ustaw **poziom wykonywania UAC** do **requireAdministrator**.  
   
      Ta właściwość umieszcza atrybut, który wymaga program można uruchomić jako Administrator w pliku manifestu osadzonego.  
   
@@ -252,15 +252,15 @@ dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);
   
  Aby obsłużyć ponowne uruchomienie, wykonaj następujące akcje:  
   
--   Ustaw rejestru, aby wznowić instalację, podczas uruchamiania Windows.  
+- Ustaw rejestru, aby wznowić instalację, podczas uruchamiania Windows.  
   
--   Program inicjujący double ponownego uruchomienia komputera.  
+- Program inicjujący double ponownego uruchomienia komputera.  
   
--   Usuń klucz ResumeData Instalatora powłoki.  
+- Usuń klucz ResumeData Instalatora powłoki.  
   
--   Uruchom ponownie Windows.  
+- Uruchom ponownie Windows.  
   
--   Resetowanie początku ścieżki pliku MSI.  
+- Resetowanie początku ścieżki pliku MSI.  
   
 ### <a name="setting-the-registry-to-resume-setup-when-windows-starts"></a>Ustawienie rejestru, aby wznowić instalację, podczas uruchamiania Windows  
  Klucz rejestru HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce\ wykonuje podczas uruchamiania systemu z uprawnieniami administracyjnymi i następnie są usuwane. HKEY_CURRENT_USER zawiera klucz podobne, ale działa jako zwykły użytkownik i nie jest odpowiednie dla instalacji. Instalację można wznowić, ustawiając wartość ciągu w kluczu RunOnce, który wywołuje Instalatora. Firma Microsoft zaleca jednak wywołać Instalatora przy użyciu **/ponowne uruchomienie** lub podobny parametr, by powiadomić aplikację, która jest wznawiana zamiast uruchamiania. Może również obejmować parametry, aby wskazać, gdzie jesteś w procesie instalacji, co jest szczególnie przydatne w przypadku instalacji, które mogą wymagać ponownego uruchomienia wielu.  

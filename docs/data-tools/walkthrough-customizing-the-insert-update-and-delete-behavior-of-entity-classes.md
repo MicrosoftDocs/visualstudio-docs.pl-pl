@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 27c2677b8afef1f1e2cd035acb3038b42a4ef56d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e869ae13c9d7ec82cb4d70fb5f3c5fce355691d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948605"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070917"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Przewodnik: Dostosowywanie zachowania wstawiania, aktualizacji i usuwania dla klas jednostek
 
@@ -31,27 +31,27 @@ Ten przewodnik zawiera kroki, które należy wykonać, aby zastąpić domyślne 
 
 Z tego instruktażu dowiesz się, jak wykonywać następujące zadania:
 
--   Tworzenie nowej aplikacji Windows Forms i Dodaj LINQ do pliku SQL do niego.
+- Tworzenie nowej aplikacji Windows Forms i Dodaj LINQ do pliku SQL do niego.
 
--   Utwórz klasę jednostki, który jest zamapowany Northwind `Customers` tabeli.
+- Utwórz klasę jednostki, który jest zamapowany Northwind `Customers` tabeli.
 
--   Utwórz źródło danych obiektu, który odwołuje się do programu LINQ to SQL `Customer` klasy.
+- Utwórz źródło danych obiektu, który odwołuje się do programu LINQ to SQL `Customer` klasy.
 
--   Tworzenie formularza Windows, który zawiera <xref:System.Windows.Forms.DataGridView> , jest powiązany z `Customer` klasy.
+- Tworzenie formularza Windows, który zawiera <xref:System.Windows.Forms.DataGridView> , jest powiązany z `Customer` klasy.
 
--   Implementowanie zapisać funkcjonalności formularza.
+- Implementowanie zapisać funkcjonalności formularza.
 
--   Tworzenie <xref:System.Data.Linq.DataContext> metod, dodając przechowywane procedury, aby **O/R Designer**.
+- Tworzenie <xref:System.Data.Linq.DataContext> metod, dodając przechowywane procedury, aby **O/R Designer**.
 
--   Konfigurowanie `Customer` klasy na potrzeby wykonywania procedur składowanych wstawiania, aktualizacji i usuwania.
+- Konfigurowanie `Customer` klasy na potrzeby wykonywania procedur składowanych wstawiania, aktualizacji i usuwania.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Northwind.
 
-1.  Jeśli nie masz programu SQL Server Express LocalDB, zainstaluj go z [stronę pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), lub za pomocą **Instalatora programu Visual Studio**. W **Instalatora programu Visual Studio**, można zainstalować programu SQL Server Express LocalDB, jako część **przechowywanie i przetwarzanie danych** obciążenie, lub jako poszczególnych składników.
+1. Jeśli nie masz programu SQL Server Express LocalDB, zainstaluj go z [stronę pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), lub za pomocą **Instalatora programu Visual Studio**. W **Instalatora programu Visual Studio**, można zainstalować programu SQL Server Express LocalDB, jako część **przechowywanie i przetwarzanie danych** obciążenie, lub jako poszczególnych składników.
 
-2.  Instalowanie przykładowej bazy danych Northwind, wykonaj następujące czynności:
+2. Instalowanie przykładowej bazy danych Northwind, wykonaj następujące czynności:
 
     1. W programie Visual Studio, otwórz **Eksplorator obiektów SQL Server** okna. (**Eksplorator obiektów SQL Server** jest instalowany jako część **przechowywanie i przetwarzanie danych** obciążenie w **Instalatora programu Visual Studio**.) Rozwiń **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w ramach wystąpienia LocalDB, a następnie wybierz pozycję **nowe zapytanie**.
 
@@ -81,11 +81,11 @@ Ponieważ jesteś Praca z technologią LINQ do klas SQL i wyświetlanie danych w
 
      **UpdatingWithSProcsWalkthrough** projekt zostanie utworzony i dodany do **Eksploratora rozwiązań**.
 
-4.  Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.
+4. Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.
 
-5.  Kliknij przycisk **klasy LINQ do SQL** szablonu i typ **Northwind.dbml** w **nazwa** pole.
+5. Kliknij przycisk **klasy LINQ do SQL** szablonu i typ **Northwind.dbml** w **nazwa** pole.
 
-6.  Kliknij przycisk **Dodaj**.
+6. Kliknij przycisk **Dodaj**.
 
      Pusty plik LINQ to SQL klas (**Northwind.dbml**) jest dodawany do projektu, a **O/R Designer** zostanie otwarty.
 
@@ -95,28 +95,28 @@ Tworzenie typu LINQ do klas SQL, które są mapowane do tabel bazy danych, przec
 
 ### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>Utwórz klasę jednostki klienta i skonfigurować źródło danych z nią
 
-1.  W **Eksploratora serwera** lub **Eksplorator bazy danych**, zlokalizuj **klienta** tabeli w bazie danych Northwind w wersji programu SQL Server.
+1. W **Eksploratora serwera** lub **Eksplorator bazy danych**, zlokalizuj **klienta** tabeli w bazie danych Northwind w wersji programu SQL Server.
 
-2.  Przeciągnij **klientów** węzła z **Eksploratora serwera** lub **Eksplorator bazy danych** na **O/R Designer* powierzchni.
+2. Przeciągnij **klientów** węzła z **Eksploratora serwera** lub **Eksplorator bazy danych** na **O/R Designer* powierzchni.
 
      Klasa jednostki o nazwie **klienta** zostanie utworzony. Posiada właściwości, które odnoszą się do kolumn w tabeli Customers. Klasa jednostki nosi nazwę **klienta** (nie **klientów**), ponieważ reprezentuje on jednego klienta z tabeli Customers.
 
     > [!NOTE]
     > Zmiana nazwy jest to *pluralizacja*. Można je włączyć lub wyłączyć [okno dialogowe Opcje](../ide/reference/options-dialog-box-visual-studio.md). Aby uzyskać więcej informacji, zobacz [jak: Włącz pluralizacja włączać i wyłączać (O/R Designer)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).
 
-3.  Na **kompilacji** menu, kliknij przycisk **kompilacji UpdatingwithSProcsWalkthrough** do skompilowania projektu.
+3. Na **kompilacji** menu, kliknij przycisk **kompilacji UpdatingwithSProcsWalkthrough** do skompilowania projektu.
 
-4.  Aby otworzyć **źródeł danych** okna na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
+4. Aby otworzyć **źródeł danych** okna na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
 
-5.  W **źródeł danych** okna, kliknij przycisk **Dodaj nowe źródło danych**.
+5. W **źródeł danych** okna, kliknij przycisk **Dodaj nowe źródło danych**.
 
-6.  Kliknij przycisk **obiektu** na **wybierz typ źródła danych** strony, a następnie kliknij przycisk **dalej**.
+6. Kliknij przycisk **obiektu** na **wybierz typ źródła danych** strony, a następnie kliknij przycisk **dalej**.
 
-7.  Rozwiń **UpdatingwithSProcsWalkthrough** węzła i Znajdź i zaznacz **klienta** klasy.
+7. Rozwiń **UpdatingwithSProcsWalkthrough** węzła i Znajdź i zaznacz **klienta** klasy.
 
     > [!NOTE]
     > Jeśli **klienta** klasy nie jest dostępna, Anuluj kreatora, skompiluj projekt i uruchom ponownie kreatora.
-8.  Kliknij przycisk **Zakończ** Utwórz źródło danych i dodać **klienta** klasy jednostki **źródeł danych** okna.
+8. Kliknij przycisk **Zakończ** Utwórz źródło danych i dodać **klienta** klasy jednostki **źródeł danych** okna.
 
 ## <a name="create-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>Utwórz DataGridView do wyświetlania danych klientów w formularzu Windows
 
@@ -124,16 +124,16 @@ Tworzenie formantów, które są powiązane z klasami jednostki, przeciągając 
 
 ### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>Aby dodać formanty powiązane z klasami jednostki
 
-1.  Otwórz **Form1** w widoku Projekt.
+1. Otwórz **Form1** w widoku Projekt.
 
-2.  Z **źródeł danych** okna, przeciągnij **klienta** węzła na **Form1**.
+2. Z **źródeł danych** okna, przeciągnij **klienta** węzła na **Form1**.
 
     > [!NOTE]
     > Aby wyświetlić **źródeł danych** okna, kliknij przycisk **Pokaż źródła danych** na **danych** menu.
 
-3.  Otwórz **Form1** w edytorze kodu.
+3. Otwórz **Form1** w edytorze kodu.
 
-4.  Dodaj następujący kod do formularza, globalne do formularza, poza określonej metody, ale wewnątrz `Form1` klasy:
+4. Dodaj następujący kod do formularza, globalne do formularza, poza określonej metody, ale wewnątrz `Form1` klasy:
 
     ```vb
     Private NorthwindDataContext1 As New NorthwindDataContext
@@ -144,7 +144,7 @@ Tworzenie formantów, które są powiązane z klasami jednostki, przeciągając 
         = new NorthwindDataContext();
     ```
 
-5.  Utwórz procedurę obsługi zdarzeń dla `Form_Load` zdarzeń i Dodaj następujący kod do narzędzia obsługi:
+5. Utwórz procedurę obsługi zdarzeń dla `Form_Load` zdarzeń i Dodaj następujący kod do narzędzia obsługi:
 
     ```vb
     CustomerBindingSource.DataSource = NorthwindDataContext1.Customers
@@ -161,15 +161,15 @@ Domyślnie, Zapisz przycisk nie jest włączona i nie jest zaimplementowana funk
 
 ### <a name="to-implement-save-functionality"></a>Aby zaimplementować funkcja zapisywania
 
-1.  Otwórz **Form1** w widoku Projekt.
+1. Otwórz **Form1** w widoku Projekt.
 
-2.  Wybierz opcję Zapisz znajdujący się na **CustomerBindingNavigator** (przycisk z ikoną dyskietki).
+2. Wybierz opcję Zapisz znajdujący się na **CustomerBindingNavigator** (przycisk z ikoną dyskietki).
 
-3.  W **właściwości** oknie **włączone** właściwości **True**.
+3. W **właściwości** oknie **włączone** właściwości **True**.
 
-4.  Kliknij dwukrotnie przycisk Zapisz, aby utworzyć program obsługi zdarzeń i przejdź do edytora kodu.
+4. Kliknij dwukrotnie przycisk Zapisz, aby utworzyć program obsługi zdarzeń i przejdź do edytora kodu.
 
-5.  Dodaj następujący kod do zapisywania obsługi zdarzeń przycisku:
+5. Dodaj następujący kod do zapisywania obsługi zdarzeń przycisku:
 
     ```vb
     NorthwindDataContext1.SubmitChanges()
@@ -183,23 +183,23 @@ Domyślnie, Zapisz przycisk nie jest włączona i nie jest zaimplementowana funk
 
 ### <a name="to-override-the-default-update-behavior"></a>Zastępowanie domyślnego zachowania aktualizacji
 
-1.  Otwórz plik LINQ to SQL w **O/R Designer**. (Kliknij dwukrotnie **Northwind.dbml** w pliku **Eksploratora rozwiązań**.)
+1. Otwórz plik LINQ to SQL w **O/R Designer**. (Kliknij dwukrotnie **Northwind.dbml** w pliku **Eksploratora rozwiązań**.)
 
-2.  W **Eksploratora serwera** lub **Eksplorator bazy danych**, rozwiń węzeł bazy danych Northwind **procedur składowanych** węzła i Znajdź **InsertCustomers**, **UpdateCustomers**, i **DeleteCustomers** procedur składowanych.
+2. W **Eksploratora serwera** lub **Eksplorator bazy danych**, rozwiń węzeł bazy danych Northwind **procedur składowanych** węzła i Znajdź **InsertCustomers**, **UpdateCustomers**, i **DeleteCustomers** procedur składowanych.
 
-3.  Przeciągnij wszystkie trzy procedury przechowywane na **O/R Designer**.
+3. Przeciągnij wszystkie trzy procedury przechowywane na **O/R Designer**.
 
      Procedury składowane są dodawane do okienka metod jako <xref:System.Data.Linq.DataContext> metody. Aby uzyskać więcej informacji, zobacz [metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
-4.  Wybierz **klienta** Klasa jednostki w **O/R Designer**.
+4. Wybierz **klienta** Klasa jednostki w **O/R Designer**.
 
-5.  W **właściwości** wybierz **Wstaw** właściwości.
+5. W **właściwości** wybierz **Wstaw** właściwości.
 
-6.  Kliknij przycisk wielokropka (**...** ) obok pozycji **Użyj środowiska uruchomieniowego** otworzyć **Konfigurowanie zachowania** okno dialogowe.
+6. Kliknij przycisk wielokropka (**...** ) obok pozycji **Użyj środowiska uruchomieniowego** otworzyć **Konfigurowanie zachowania** okno dialogowe.
 
-7.  Wybierz **dostosować**.
+7. Wybierz **dostosować**.
 
-8.  Wybierz **InsertCustomers** method in Class metoda **Dostosuj** listy.
+8. Wybierz **InsertCustomers** method in Class metoda **Dostosuj** listy.
 
 9. Kliknij przycisk **Zastosuj** można zapisać konfiguracji dla wybranej klasy lub zachowania.
 
@@ -238,21 +238,21 @@ Domyślnie, Zapisz przycisk nie jest włączona i nie jest zaimplementowana funk
 
 Uruchom aplikację ponownie, aby sprawdzić, czy **UpdateCustomers** procedury składowanej poprawnie aktualizuje rekord klienta w bazie danych.
 
-1.  Naciśnij klawisz **F5**.
+1. Naciśnij klawisz **F5**.
 
-2.  Zmodyfikuj rekord w siatce, aby sprawdzić zachowanie aktualizacji.
+2. Zmodyfikuj rekord w siatce, aby sprawdzić zachowanie aktualizacji.
 
-3.  Dodaj nowy rekord do testowanie zachowania wstawiania.
+3. Dodaj nowy rekord do testowanie zachowania wstawiania.
 
-4.  Kliknij przycisk Zapisz, aby zapisać zmiany w bazie danych.
+4. Kliknij przycisk Zapisz, aby zapisać zmiany w bazie danych.
 
-5.  Zamknij formularz.
+5. Zamknij formularz.
 
-6.  Naciśnij klawisz **F5** i Sprawdź zaktualizowany rekord a nowo wstawionej rekord trwałość.
+6. Naciśnij klawisz **F5** i Sprawdź zaktualizowany rekord a nowo wstawionej rekord trwałość.
 
-7.  Delete nowe rejestrowanie utworzonego w kroku 3, aby sprawdzić zachowanie dotyczące usuwania.
+7. Delete nowe rejestrowanie utworzonego w kroku 3, aby sprawdzić zachowanie dotyczące usuwania.
 
-8.  Kliknij przycisk Zapisz przycisk, aby przesłać zmiany i Usuń rekord usuniętych z bazy danych.
+8. Kliknij przycisk Zapisz przycisk, aby przesłać zmiany i Usuń rekord usuniętych z bazy danych.
 
 9. Zamknij formularz.
 

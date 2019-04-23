@@ -28,21 +28,32 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5866a26fdcc8bed88713bf92e1c38bfb3b04ba8f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 139e76911825866375a0f524c53dd23b8967f9ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924551"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063169"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Metody mapowania dla stosu wywołań podczas debugowania w programie Visual Studio.
+
 Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. Można robić notatki na mapie, żeby śledzić, jak zachowuje się kod, przez co można skoncentrować się na wyszukiwaniu błędów.
 
  ![Debugowanie za pomocą stosów wywołań na mapach kodu](../debugger/media/debuggermap_overview.png)
 
  Będą potrzebne:
 
-- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)
+ ::: moniker range="vs-2017"
+
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
+
+::: moniker-end
 
 - Kod, który można debugować, taki jak Visual C#, Visual Basic, C++, JavaScript lub X ++
 
@@ -66,9 +77,9 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
 
 ## <a name="MapStack"></a> Mapuj stos wywołań
 
-1.  Rozpocznij debugowanie. (Klawiatura: **F5**)
+1. Rozpocznij debugowanie. (Klawiatura: **F5**)
 
-2.  Po skopiowaniu aplikacja przejdzie do trybu podziału lub wkroczysz do funkcji, wybierz **mapy kodu**. (Klawiatura: **Ctrl** + **Shift** + **`**)
+2. Po skopiowaniu aplikacja przejdzie do trybu podziału lub wkroczysz do funkcji, wybierz **mapy kodu**. (Klawiatura: **Ctrl** + **Shift** + **`**)
 
      ![Wybierz mapę kodu, aby rozpocząć mapowanie stosu wywołań](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -79,16 +90,19 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
      Mapa automatycznie zaktualizuje przerywając debugowania. Zobacz [aktualizacja mapy za pomocą następnego stosu wywołań](#UpdateMap).
 
 ## <a name="MakeNotes"></a> Robienie notatek dotyczących kodu
+
  Dodaj komentarze, aby śledzić, co się dzieje w kodzie. Aby dodać nowy wiersz w komentarzu, naciśnij **Shift + Return**.
 
  ![Dodaj komentarz do stosu wywołań na mapie kodu](../debugger/media/debuggermap_addcomment.png)
 
 ## <a name="UpdateMap"></a> Aktualizacja mapy za pomocą następnego stosu wywołań
+
  Uruchom aplikację do następnego punktu przerwania lub wejścia do funkcji. Mapa dodaje nowy stos wywołań.
 
  ![Aktualizuj mapę kodu za pomocą następnego stosu wywołań](../debugger/media/debuggermap_addclearcallstack.png)
 
 ## <a name="AddRelatedCode"></a> Dodawanie kodu pokrewnego do mapy
+
  Teraz masz mapę — co dalej? Jeśli pracujesz w języku C# lub Visual Basic, należy dodać elementy, takie jak pola, właściwości i innych metod, aby śledzić, co się dzieje w kodzie.
 
  Kliknij dwukrotnie metodę, aby zobaczyć jej definicję kodu lub użyć menu skrótów dla metody. (Klawiatura: Wybierz metodę na mapie i naciśnij klawisz **F12**)
@@ -113,6 +127,7 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
  ![Metody używające pole na mapie kodu stosu wywołań](../debugger/media/debuggermap_foundallreferences.png)
 
 ## <a name="FindBugs"></a> Znajdowanie błędów za pomocą mapy
+
  Wizualizacja kodu pomoże w szybszym znalezieniu błędów. Na przykład załóżmy, że analizujesz błąd w programie rysunkowym. Po narysowaniu linii, w przypadku próby cofnięcia nic się nie dzieje, aż do rysowania kolejnej linii.
 
  Aby ustawić punkty przerwania `clear`, `undo`, i `Repaint` metod, rozpocząć debugowanie i utworzyć mapę podobną do tego:
@@ -149,11 +164,11 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
 
    Otwórz **układ** menu na pasku narzędzi Mapa:
 
-  -   Zmiana układu domyślnego.
+  - Zmiana układu domyślnego.
 
-  -   Aby zatrzymać automatyczne rozmieszczanie na mapie, należy wyłączyć opcję **automatycznie rozmieszczaj podczas debugowania**.
+  - Aby zatrzymać automatyczne rozmieszczanie na mapie, należy wyłączyć opcję **automatycznie rozmieszczaj podczas debugowania**.
 
-  -   Aby zmienić kolejność możliwie mapy, podczas dodawania elementów, należy wyłączyć opcję **układ Przyrostowy**.
+  - Aby zmienić kolejność możliwie mapy, podczas dodawania elementów, należy wyłączyć opcję **układ Przyrostowy**.
 
 - **Czy można dzielić się mapami w innym osobom?**
 
@@ -185,7 +200,7 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
 
 - [Znajdowanie błędów za pomocą mapy](#FindBugs)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)
 - [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)

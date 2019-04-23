@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 52c0ffe1c4261df6498cc03842d650360954eb44
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: eed341b5ae43f52e7df35d820012e760166e096f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660622"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073433"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Używanie rozszerzenia Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ W tej sekcji dowiesz się, jak używać programu Visual Studio Tools dla integra
   
 ##### <a name="to-access-unity-documentation"></a>Aby uzyskać dostęp do dokumentacji aparatu Unity  
   
--   W programie Visual Studio, zaznacz lub umieść kursor nad interfejsu API aparatu Unity, aby dowiedzieć się o, a następnie naciśnij klawisz **Ctrl + Alt + M, Ctrl + H**  
+- W programie Visual Studio, zaznacz lub umieść kursor nad interfejsu API aparatu Unity, aby dowiedzieć się o, a następnie naciśnij klawisz **Ctrl + Alt + M, Ctrl + H**  
   
 ### <a name="unity-monobehavior-scripting-wizard"></a>Kreator skryptów MonoBehavior aparatu Unity  
  Na platformie Unity większość skryptów są implementowane przez pochodząca od klasy MonoBehavior i przesłanianie niektórych jego metod. Kreator MonoBehavior szybko utworzyć pusty definicje metod MonoBehavior, który ma przeciążenia. Za pomocą tego kreatora, można określić co najmniej jednej metody, które mają być przeciążenia z listy dostępnych metod, wybierz polecenie, gdzie zostanie wstawiona do kodu i zdecyduj, czy dołączać komentarzy na temat sposobu ich używania.  
@@ -59,13 +59,13 @@ W tej sekcji dowiesz się, jak używać programu Visual Studio Tools dla integra
   
 ###### <a name="to-create-an-empty-monobehavior-method-definition-by-using-the-quick-monobehavior-wizard"></a>Aby utworzyć pustą definicję metody MonoBehavior za pomocą Kreatora szybkiego MonoBehavior  
   
-1.  W programie Visual Studio, umieść kursor w miejscu metody do wstawienia, a następnie naciśnij klawisz **Ctrl + Shift + Q** Aby uruchomić Kreatora szybkiego MonoBehavior. W przeciwieństwie do innych MonoBehavior kreatora należy umieścić kursor celowo korzystając z tego kreatora, ponieważ nowa metoda jest zawsze wstawiany istnieje.  
+1. W programie Visual Studio, umieść kursor w miejscu metody do wstawienia, a następnie naciśnij klawisz **Ctrl + Shift + Q** Aby uruchomić Kreatora szybkiego MonoBehavior. W przeciwieństwie do innych MonoBehavior kreatora należy umieścić kursor celowo korzystając z tego kreatora, ponieważ nowa metoda jest zawsze wstawiany istnieje.  
   
-2.  Upewnij się, że wersja framework wyświetlany w prawym górnym rogu **tworzyć metody skryptu** okna jest zgodna z wersją używasz. Jeśli nie jest zgodny, zmień wartość z listy rozwijanej, do wersji, którego chcesz użyć.  
+2. Upewnij się, że wersja framework wyświetlany w prawym górnym rogu **tworzyć metody skryptu** okna jest zgodna z wersją używasz. Jeśli nie jest zgodny, zmień wartość z listy rozwijanej, do wersji, którego chcesz użyć.  
   
-3.  Znajdź metodę, która ma być przeciążenia. W oknie Utwórz skrypt metody begin wpisując nazwę metody, w polu tekstowym. Zostanie wyświetlona lista metod, których nazwy odpowiadają zostały wprowadzone.  
+3. Znajdź metodę, która ma być przeciążenia. W oknie Utwórz skrypt metody begin wpisując nazwę metody, w polu tekstowym. Zostanie wyświetlona lista metod, których nazwy odpowiadają zostały wprowadzone.  
   
-4.  Wybierz metodę, którą chcesz przeciążenia. Gdy metoda ma jest wyświetlana na liście, wybierz ją przy użyciu myszy lub klawiszy strzałek, naciśnij klawisz **Enter**. Jeśli tak jest jedyną metodą na liście, możesz po prostu nacisnąć przycisk **Enter**. Metoda jest wstawiany do kodu.  
+4. Wybierz metodę, którą chcesz przeciążenia. Gdy metoda ma jest wyświetlana na liście, wybierz ją przy użyciu myszy lub klawiszy strzałek, naciśnij klawisz **Enter**. Jeśli tak jest jedyną metodą na liście, możesz po prostu nacisnąć przycisk **Enter**. Metoda jest wstawiany do kodu.  
   
 ### <a name="unity-project-explorer"></a>Eksplorator projektu środowiska Unity  
  Eksplorator projektu środowiska Unity można użyć do nawigacji w swoim projekcie aparatu Unity w programie Visual Studio.  
@@ -103,16 +103,16 @@ W tej sekcji dowiesz się, jak używać programu Visual Studio Tools dla integra
 ## <a name="unity-debugging"></a>Profilowanie aparatu Unity  
  Visual Studio Tools for Unity umożliwia debugowanie edytora i gier skrypty dla projektu środowiska Unity za pomocą zaawansowany debuger programu Visual Studio.  
   
-###  <a name="connecting-visual-studio-to-unity"></a> Łączenie programu Visual Studio do aparatu Unity  
+### <a name="connecting-visual-studio-to-unity"></a> Łączenie programu Visual Studio do aparatu Unity  
  Visual Studio Tools for Unity komunikuje się za pomocą aparatu Unity za pośrednictwem połączenia protokołu UDP. Oznacza to, że połączenie z wystąpieniem Unity działa lokalnie, lub dowolnego miejsca w sieci w taki sam sposób. Można połączyć do dowolnego wystąpienia aparatu Unity widać w sieci za pomocą **Wybór wystąpienia aparatu Unity** okna dialogowego.  
   
 ##### <a name="to-open-the-select-unity-instance-dialog"></a>Aby otworzyć okno dialogowe Wybór wystąpienia aparatu Unity  
   
--   W programie Visual Studio, w menu głównym wybierz **debugowania**, **Dołącz debuger aparatu Unity**.  
+- W programie Visual Studio, w menu głównym wybierz **debugowania**, **Dołącz debuger aparatu Unity**.  
   
      ![Dołącz debuger aparatu Unity. ](../cross-platform/media/vstu-debugging-attach-unity-debugger.png "vstu_debugging_attach_unity_debugger")  
   
--   *Lub*, w programie Visual Studio, na pasku stanu, wybierz ikonę wtyczki w prawym dolnym rogu programu Visual Studio.  
+- *Lub*, w programie Visual Studio, na pasku stanu, wybierz ikonę wtyczki w prawym dolnym rogu programu Visual Studio.  
   
      ![Ta ikona wskazuje, że w narzędziach VSTU jest podłączony do aparatu Unity. ](../cross-platform/media/vstu-connection-connected.png "vstu_connection_connected")  
   
@@ -138,7 +138,7 @@ W tej sekcji dowiesz się, jak używać programu Visual Studio Tools dla integra
 > [!IMPORTANT]
 >  Ponieważ Visual Studio Tools for Unity i wystąpienia środowiska Unity komunikują się za pośrednictwem gniazd sieciowych UDP, Zapora może poprosić o nim. W takim przypadku musisz autoryzować połączenie, tak aby VSTU i Unity mogą komunikować się.  
   
-###  <a name="debugging-your-project-in-a-unity-player"></a> Debugowanie projektu w odtwarzaczu aparatu Unity  
+### <a name="debugging-your-project-in-a-unity-player"></a> Debugowanie projektu w odtwarzaczu aparatu Unity  
  Visual Studio Tools for Unity można połączyć bezpośrednio do aplikacji platformy Unity w autonomicznym odtwarzaczu, gdy nie jest uruchomiony Edytor platformy Unity lub do debugowania problemów, które są specyficzne dla tej platformy.  
   
 ##### <a name="to-enable-script-debugging-in-a-unity-player"></a>Aby włączyć debugowanie skryptów w odtwarzaczu aparatu Unity  

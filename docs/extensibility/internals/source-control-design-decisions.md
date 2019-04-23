@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8378bf0a95ca9a844de4985f7403f04978607dcd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3e17e5a88b958c1361e7f8b3db70d7599f44f766
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615276"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066198"
 ---
 # <a name="source-control-design-decisions"></a>Decyzje projektowe dotyczące kontroli kodu źródłowego
 Podczas implementowania kontroli źródła należy rozważyć następujące decyzje dotyczące projektu dla projektów.
@@ -28,11 +28,11 @@ Podczas implementowania kontroli źródła należy rozważyć następujące decy
 ## <a name="will-the-project-include-special-files"></a>Projekt zawierają specjalne pliki?
  Inny decyzja projektowa ważne jest, czy do struktury projektu używa specjalne pliki. Specjalne pliki są ukryte pliki, które opierają się pliki, które są widoczne w Eksploratorze rozwiązań i zaewidencjonowania i wyewidencjonowania okien dialogowych. Jeśli używasz specjalnych plików, należy przestrzegać następujących wytycznych:
 
-1.  Nie należy kojarzyć specjalne pliki z głównego węzła projektu — oznacza to, z projektem samego pliku. Plik projektu musi być pojedynczy plik.
+1. Nie należy kojarzyć specjalne pliki z głównego węzła projektu — oznacza to, z projektem samego pliku. Plik projektu musi być pojedynczy plik.
 
-2.  Gdy specjalne pliki są dodane, usunięte lub zmieniono jego nazwę w projekcie w języku odpowiednim <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> zdarzenia musi być uruchamiane z ustawioną flagą wskazującą są specjalne pliki. Te zdarzenia są wywoływane przez środowisko w odpowiedzi na projekt wywołanie odpowiedniego <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> metody.
+2. Gdy specjalne pliki są dodane, usunięte lub zmieniono jego nazwę w projekcie w języku odpowiednim <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> zdarzenia musi być uruchamiane z ustawioną flagą wskazującą są specjalne pliki. Te zdarzenia są wywoływane przez środowisko w odpowiedzi na projekt wywołanie odpowiedniego <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> metody.
 
-3.  Kiedy wywołuje swój projekt lub edytor <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> dla pliku, specjalne pliki skojarzone z tym plikiem nie zostały automatycznie wyewidencjonowane. Przekaż specjalne pliki w wraz z plikiem nadrzędnym. Środowisko wykryje relacji między wszystkie pliki, które są przekazywane w i odpowiednio Ukryj specjalne pliki w Interfejsie użytkownika wyewidencjonowywania.
+3. Kiedy wywołuje swój projekt lub edytor <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> dla pliku, specjalne pliki skojarzone z tym plikiem nie zostały automatycznie wyewidencjonowane. Przekaż specjalne pliki w wraz z plikiem nadrzędnym. Środowisko wykryje relacji między wszystkie pliki, które są przekazywane w i odpowiednio Ukryj specjalne pliki w Interfejsie użytkownika wyewidencjonowywania.
 
 ## <a name="see-also"></a>Zobacz też
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>

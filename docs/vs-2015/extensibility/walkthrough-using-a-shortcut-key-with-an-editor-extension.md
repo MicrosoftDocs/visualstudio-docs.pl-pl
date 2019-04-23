@@ -10,12 +10,12 @@ ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b40c0590b19b555f757af1e0a38481b0b245c07d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5c9cb20bafa552c47a2f599d12e6b66fdb2bde59
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763020"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085906"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Przewodnik: Używanie klawisza skrótu z rozszerzeniem edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,9 +50,9 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ## <a name="defining-the-command-filter"></a>Definiowanie filtrów polecenia  
  Filtr polecenia jest implementacją <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, która obsługuje polecenie przez utworzenie wystąpienia zakończeń.  
   
-1.  Dodaj plik klasy i nadaj mu nazwę `KeyBindingCommandFilter`.  
+1. Dodaj plik klasy i nadaj mu nazwę `KeyBindingCommandFilter`.  
   
-2.  Dodaj następujące instrukcje using.  
+2. Dodaj następujące instrukcje using.  
   
     ```csharp  
     using System;  
@@ -63,13 +63,13 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-3.  Klasa o nazwie KeyBindingCommandFilter powinien dziedziczyć <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
+3. Klasa o nazwie KeyBindingCommandFilter powinien dziedziczyć <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
     ```csharp  
     internal class KeyBindingCommandFilter : IOleCommandTarget  
     ```  
   
-4.  Dodaj pola prywatne dla widoku tekstu, następnego polecenia w łańcuchu polecenia i flagi do reprezentowania, czy filtr polecenia został już dodany.  
+4. Dodaj pola prywatne dla widoku tekstu, następnego polecenia w łańcuchu polecenia i flagi do reprezentowania, czy filtr polecenia został już dodany.  
   
     ```csharp  
     private IWpfTextView m_textView;  
@@ -78,7 +78,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     internal bool m_adorned;  
     ```  
   
-5.  Dodaj Konstruktor, który ustawia widok tekstu.  
+5. Dodaj Konstruktor, który ustawia widok tekstu.  
   
     ```csharp  
     public KeyBindingCommandFilter(IWpfTextView textView)  
@@ -88,7 +88,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-6.  Implementowanie `QueryStatus()` metody w następujący sposób.  
+6. Implementowanie `QueryStatus()` metody w następujący sposób.  
   
     ```vb  
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  
@@ -97,7 +97,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-7.  Implementowanie `Exec()` metodę, tak że pole jest dodawane do purpurowy do widoku Jeśli + wpisany znak.  
+7. Implementowanie `Exec()` metodę, tak że pole jest dodawane do purpurowy do widoku Jeśli + wpisany znak.  
   
     ```csharp  
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)  
@@ -124,7 +124,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ## <a name="adding-the-command-filter"></a>Dodawanie filtru polecenia  
  Dostawca zakończeń należy dodać polecenie Filtr do widoku tekstu. W tym przykładzie implementuje dostawcę <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> do nasłuchiwania zdarzeń tworzenia widoku tekstu. Ten dostawca zakończeń Eksportuje również warstwy zakończeń, definiujący porządek zakończeń.  
   
-1.  W pliku KeyBindingTestTextViewCreationListener, Dodaj następujące instrukcje using:  
+1. W pliku KeyBindingTestTextViewCreationListener, Dodaj następujące instrukcje using:  
   
     ```csharp  
     using System;  
@@ -139,7 +139,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-2.  W definicji warstwy zakończeń, Zmień nazwę AdornmentLayer z **KeyBindingTest** do **PurpleCornerBox**.  
+2. W definicji warstwy zakończeń, Zmień nazwę AdornmentLayer z **KeyBindingTest** do **PurpleCornerBox**.  
   
     ```csharp  
     [Export(typeof(AdornmentLayerDefinition))]  
@@ -148,7 +148,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     public AdornmentLayerDefinition editorAdornmentLayer;  
     ```  
   
-3.  Aby uzyskać karty widoku tekstu, należy zaimportować <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
+3. Aby uzyskać karty widoku tekstu, należy zaimportować <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
   
     ```csharp  
     [Import(typeof(IVsEditorAdaptersFactoryService))]  
@@ -156,7 +156,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-4.  Zmiana <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> metodę, tak że dodaje `KeyBindingCommandFilter`.  
+4. Zmiana <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> metodę, tak że dodaje `KeyBindingCommandFilter`.  
   
     ```csharp  
     public void TextViewCreated(IWpfTextView textView)  
@@ -165,7 +165,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-5.  `AddCommandFilter` Obsługi pobiera karty widoku tekstu i dodaje filtr polecenia.  
+5. `AddCommandFilter` Obsługi pobiera karty widoku tekstu i dodaje filtr polecenia.  
   
     ```csharp  
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)  
@@ -238,8 +238,8 @@ private void CreateVisuals(ITextViewLine line)
   
 ## <a name="building-and-testing-the-code"></a>Tworzenie i testowanie kodu  
   
-1.  Skompiluj rozwiązanie KeyBindingTest i uruchom go w doświadczalnym wystąpieniu.  
+1. Skompiluj rozwiązanie KeyBindingTest i uruchom go w doświadczalnym wystąpieniu.  
   
-2.  Utwórz lub Otwórz plik tekstowy. Wpisz wyrazy, niektóre zawierającą znak "", a następnie wpisz i w dowolnym miejscu w widoku tekstu.  
+2. Utwórz lub Otwórz plik tekstowy. Wpisz wyrazy, niektóre zawierającą znak "", a następnie wpisz i w dowolnym miejscu w widoku tekstu.  
   
      Purpurowa kwadrat powinny pojawić się na każdym "" znak w pliku.

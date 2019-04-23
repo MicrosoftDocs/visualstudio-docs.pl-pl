@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 200ac7f9a38a242d6140902374d477339747b9b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 740fd46d453a6e6a51285d418374d036d83bc598
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914009"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065029"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Sortowanie, filtrowanie i grupowanie (Eksplorator schematu XML)
 
@@ -23,41 +23,41 @@ W tym temacie opisano opcje, które są dostępne za pośrednictwem **opcje grup
 
  Dostępne są następujące opcje filtru. Domyślnie **Pokaż przestrzenie nazw** i **Pokaż pliki schematu** są zaznaczone opcje.
 
--   **Pokaż przestrzenie nazw**.
+- **Pokaż przestrzenie nazw**.
 
--   **Pokaż pliki schematu**.
+- **Pokaż pliki schematu**.
 
--   **Pokaż Kompozytory (sekwencji/wyboru/all)**.
+- **Pokaż Kompozytory (sekwencji/wyboru/all)**.
 
 ## <a name="sorting-options"></a>Opcje sortowania
 
  Dostępne są następujące opcje sortowania. Wartość domyślna to **sortowania według typu**. **Sortuj według** opcje nie są stosowane do plików i przestrzeni nazw.
 
--   **Sortuj według typu**.
+- **Sortuj według typu**.
 
--   **Sortuj według nazwy**.
+- **Sortuj według nazwy**.
 
--   **Dokumentowanie kolejności**.
+- **Dokumentowanie kolejności**.
 
 ### <a name="sort-by-type"></a>Sortuj według typu
 
  Gdy **sortowania według typu** opcja jest zaznaczona, globalne węzły są sortowane w następującej kolejności. Węzły są posortowane alfabetycznie w każdej grupie.
 
-1.  `import` węzły.
+1. `import` węzły.
 
-2.  `include` węzły.
+2. `include` węzły.
 
-3.  `redefine` węzły.
+3. `redefine` węzły.
 
-4.  `attribute` węzły.
+4. `attribute` węzły.
 
-5.  `attributeGroup` węzły.
+5. `attributeGroup` węzły.
 
-6.  `complexType` węzły.
+6. `complexType` węzły.
 
-7.  `simpleType` węzły.
+7. `simpleType` węzły.
 
-8.  `element` węzły.
+8. `element` węzły.
 
 9. `group` węzły.
 
@@ -65,13 +65,13 @@ W tym temacie opisano opcje, które są dostępne za pośrednictwem **opcje grup
 
  Gdy **Sortuj według nazwy** opcja jest zaznaczona, globalne węzły są sortowane w następującej kolejności:
 
-1.  `import` węzły (w kolejności alfabetycznej według przestrzeni nazw).
+1. `import` węzły (w kolejności alfabetycznej według przestrzeni nazw).
 
-2.  `include` węzły (w kolejności alfabetycznej według `schemaLocation` atrybutów).
+2. `include` węzły (w kolejności alfabetycznej według `schemaLocation` atrybutów).
 
-3.  `redefine` węzły (w kolejności alfabetycznej według `schemaLocation` atrybutów).
+3. `redefine` węzły (w kolejności alfabetycznej według `schemaLocation` atrybutów).
 
-4.  Inne węzły globalne w kolejności alfabetycznej.
+4. Inne węzły globalne w kolejności alfabetycznej.
 
 ### <a name="document-order"></a>Kolejności dokumentu
 

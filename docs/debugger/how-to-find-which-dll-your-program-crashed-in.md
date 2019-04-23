@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7006de0241b0e0c050670ccc14a835f11db1b260
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b7a9421af9e0caf085feb1afb27b53befe837668
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691439"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072581"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Instrukcje: Odnajdywanie DLL, która nastąpiła awaria programu (C#, C++, Visual Basic F#)
 
@@ -35,19 +35,19 @@ ms.locfileid: "56691439"
 
 ### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>Aby dowiedzieć się, w przypadku, gdy awaria wystąpił podczas korzystania z okna modułów
 
-1.  Zanotuj adres, w których wystąpiła awaria.
+1. Zanotuj adres, w których wystąpiła awaria.
 
     Jeśli adres nie jest wyświetlany komunikat o błędzie, może być konieczne Zidentyfikuj bibliotekę DLL przy użyciu alternatywnych metod. Jeśli podejrzewasz systemowej biblioteki DLL, możesz to zrobić [załadować symbole](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) z serwerów symboli firmy Microsoft, podczas debugowania. W przeciwnym razie konieczne może być [Tworzenie pliku zrzutu](../debugger/using-dump-files.md) przy użyciu sterty informacji w zamian. Różne [narzędzia](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/) są dostępne do tworzenia plików zrzutu.
 
-2.  Na **debugowania** menu, wybierz **Windows**i kliknij przycisk **modułów**.
+2. Na **debugowania** menu, wybierz **Windows**i kliknij przycisk **modułów**.
 
-3.  W **modułów** oknie Znajdź **adres** kolumny. Może być konieczne sprawdzenie za pomocą paska przewijania.
+3. W **modułów** oknie Znajdź **adres** kolumny. Może być konieczne sprawdzenie za pomocą paska przewijania.
 
-4.  Kliknij przycisk **adres** przycisku w górnej części kolumny, aby sortować biblioteki DLL przy użyciu adresu.
+4. Kliknij przycisk **adres** przycisku w górnej części kolumny, aby sortować biblioteki DLL przy użyciu adresu.
 
-5.  Skanowanie posortowaną listę można znaleźć biblioteki DLL, którego zakres adresów zawiera lokalizację awarii.
+5. Skanowanie posortowaną listę można znaleźć biblioteki DLL, którego zakres adresów zawiera lokalizację awarii.
 
-6.  Przyjrzyj się **nazwa** i **ścieżki** kolumny, aby wyświetlić nazwę biblioteki DLL i ścieżkę.
+6. Przyjrzyj się **nazwa** i **ścieżki** kolumny, aby wyświetlić nazwę biblioteki DLL i ścieżkę.
 
 ## <a name="see-also"></a>Zobacz też
 - [Debugowanie projektów DLL](../debugger/debugging-dll-projects.md)

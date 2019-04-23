@@ -12,12 +12,12 @@ ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a5f6b8ef087d3e9d43aaf740a99983cf0f5c8d1b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: cd224f84dd1d0be8167ee55fa7b40264d742c4f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661558"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063780"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Opis katalogu szablonu (pliki Vsdir)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,17 +52,17 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
  Podczas tworzenia pliku kreatora, należy również rozważyć następujące kwestie.  
 
--   Wszystkie pole Niewymagane, dla których nie ma żadnych istotnych danych powinny zawierać wartość 0 (zero) jako symbolu zastępczego.  
+- Wszystkie pole Niewymagane, dla których nie ma żadnych istotnych danych powinny zawierać wartość 0 (zero) jako symbolu zastępczego.  
 
--   Jeśli nie podano żadnej zlokalizowanej nazwy, nazwa ścieżka względna jest używana w pliku kreatora.  
+- Jeśli nie podano żadnej zlokalizowanej nazwy, nazwa ścieżka względna jest używana w pliku kreatora.  
 
--   Ścieżka dll zastępuje clsidPackage dla lokalizacji ikony.  
+- Ścieżka dll zastępuje clsidPackage dla lokalizacji ikony.  
 
--   Jeśli nie zdefiniowano żadnej ikony, IDE zastępuje domyślną ikonę pliku z tego rozszerzenia.  
+- Jeśli nie zdefiniowano żadnej ikony, IDE zastępuje domyślną ikonę pliku z tego rozszerzenia.  
 
--   Jeśli nie podano żadnych sugerowane nazwy podstawowej, "Projekt" jest używana.  
+- Jeśli nie podano żadnych sugerowane nazwy podstawowej, "Projekt" jest używana.  
 
--   Jeśli usuniesz plików .vsz, foldery lub pliki szablonów, należy także usunąć ich skojarzonych rekordów z pliku .vsdir.  
+- Jeśli usuniesz plików .vsz, foldery lub pliki szablonów, należy także usunąć ich skojarzonych rekordów z pliku .vsdir.  
 
 ## <a name="see-also"></a>Zobacz też  
  [Kreatorzy](../../extensibility/internals/wizards.md)   

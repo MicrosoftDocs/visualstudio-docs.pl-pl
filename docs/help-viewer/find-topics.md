@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f68bd5803d418f674007fff34aa0fa016c1804a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4e186bf0aa362f153ad3e6f57c39abc55c558270
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918588"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073661"
 ---
 # <a name="how-to-search-for-topics"></a>Instrukcje: Wyszukaj tematy
 
@@ -23,18 +23,18 @@ Aby otworzyć **wyszukiwania** karty, wybierz polecenie **wyszukiwania** karcie 
 
 ## <a name="to-perform-a-full-text-search"></a>Aby wykonać wyszukiwanie pełnotekstowe
 
-1.  W polu wyszukiwania wpisz słowo, które chcesz znaleźć.
+1. W polu wyszukiwania wpisz słowo, które chcesz znaleźć.
 
-2.  W zapytaniu wyszukiwania należy określić które operatory logiczne i zaawansowane wyszukiwanie do zastosowania do wyszukiwania, jeśli istnieją. Aby wyszukać wszystkie dostępne pomocy, nie należy używać operatorów.
+2. W zapytaniu wyszukiwania należy określić które operatory logiczne i zaawansowane wyszukiwanie do zastosowania do wyszukiwania, jeśli istnieją. Aby wyszukać wszystkie dostępne pomocy, nie należy używać operatorów.
 
     > [!NOTE]
     > W **Opcje podglądu** okno dialogowe, można określić dodatkowe preferencji, takich jak maksymalna liczba wyników wyszukiwania, aby wyświetlić w czasie i czy chcesz uwzględnić zawartość w języku angielskim, jeśli Twoje podstawowe ustawienia regionalne są inne niż angielskie.
 
-3.  Wybierz **Enter** klucza.
+3. Wybierz **Enter** klucza.
 
      Wyszukiwanie domyślnie zwraca maksymalnie 200 trafień i wyświetla je w obszarze wyniki wyszukiwania. Dodatkowe informacje o wersji dla każdego wyniku, może pojawić się w zależności od zawartości.
 
-4.  Aby wyświetlić temat, wybierz jego tytuł, z listy wyników.
+4. Aby wyświetlić temat, wybierz jego tytuł, z listy wyników.
 
 ## <a name="full-text-search-tips"></a>Porady dotyczące wyszukiwania pełnotekstowego
 
@@ -66,11 +66,11 @@ Za pomocą operatorów wyszukiwania zaawansowanego, można bardziej ograniczyć 
 
 Algorytm wyszukiwania mają zastosowanie określone kryteria w celu ranga wyniki, wyższe lub niższe wyszukiwania na liście wyników. Ogólnie rzecz biorąc:
 
-1.  Zawartość, która zawiera słów kluczowych w tytule znajduje się wyżej niż zawartość, która nie.
+1. Zawartość, która zawiera słów kluczowych w tytule znajduje się wyżej niż zawartość, która nie.
 
-2.  Zawartość, która zawiera słów kluczowych w bliskim sąsiedztwie znajduje się wyżej niż zawartość, która nie.
+2. Zawartość, która zawiera słów kluczowych w bliskim sąsiedztwie znajduje się wyżej niż zawartość, która nie.
 
-3.  Zawartość, która zawiera zwiększenie gęstości słów wyszukiwania znajduje się wyżej niż zawartości, który ma niższy gęstość wyszukiwanych słów.
+3. Zawartość, która zawiera zwiększenie gęstości słów wyszukiwania znajduje się wyżej niż zawartości, który ma niższy gęstość wyszukiwanych słów.
 
 ### <a name="stopwords"> Słowa ignorowane podczas wyszukiwania (słowa ignorowane) </a>
 

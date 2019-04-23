@@ -6,18 +6,18 @@ ms.assetid: 89ab5741-c664-4b45-8662-3dd01a5761be
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 92e9d4f05342dc2f7c89a3420623e91304c5f062
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 92e1c77b24aa7ab6c144c40af10a534712da53e6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794800"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074154"
 ---
 # <a name="color-theming-tools"></a>Narzędzia do tworzenia motywów kolorów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Zestaw SDK programu VS udostępnia kilka narzędzi, które ułatwiają tworzenie i zarządzanie nimi motywy kolorów.  
   
--   [Edytor kolorów VSIX](../../extensibility/internals/vsix-color-editor.md) narzędzia można tworzyć i edytować kolorów niestandardowych dla programu Visual Studio.  
+- [Edytor kolorów VSIX](../../extensibility/internals/vsix-color-editor.md) narzędzia można tworzyć i edytować kolorów niestandardowych dla programu Visual Studio.  
   
--   [Kompilator kolorów VSIX](../../extensibility/internals/vsix-color-compiler.md) narzędzie konwertuje istniejące pliki XML motywu programu Visual Studio na .pkgdef dla rozszerzenia.
+- [Kompilator kolorów VSIX](../../extensibility/internals/vsix-color-compiler.md) narzędzie konwertuje istniejące pliki XML motywu programu Visual Studio na .pkgdef dla rozszerzenia.

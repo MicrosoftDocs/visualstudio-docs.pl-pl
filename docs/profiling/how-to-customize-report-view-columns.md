@@ -13,46 +13,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a7032f868a8012a4c52657301afdc4aa51af02f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e5fd58603e287de31fab35375e9441f9113fb025
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644968"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072399"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Instrukcje: Dostosowywanie kolumn widoku raportu
 Narzędzia do oceny wydajności w Visual Studio Team System Development Edition są zintegrowane w pełni zintegrowanego środowiska programistycznego (IDE), aby zapewnić nie zakłóca pracy użytkowników. Poniższa lista jest reprezentatywna dla widoków, które można dostosowywać przez dodawanie, usuwanie i zmiana kolejności kolumn:
 
--   [Widok modułów](../profiling/modules-view.md)
+- [Widok modułów](../profiling/modules-view.md)
 
--   [Widok funkcji](../profiling/functions-view.md)
+- [Widok funkcji](../profiling/functions-view.md)
 
--   [Widok linii](../profiling/lines-view.md)
+- [Widok linii](../profiling/lines-view.md)
 
--   [Widok wskaźników instrukcji (IP)](../profiling/instruction-pointers-ips-view.md)
+- [Widok wskaźników instrukcji (IP)](../profiling/instruction-pointers-ips-view.md)
 
--   [Widok wywołujący/wywoływany](../profiling/caller-callee-view.md)
+- [Widok wywołujący/wywoływany](../profiling/caller-callee-view.md)
 
--   [Widok drzewa wywołań](../profiling/call-tree-view.md)
+- [Widok drzewa wywołań](../profiling/call-tree-view.md)
 
--   [Widok alokacji](../profiling/dotnet-memory-allocations-view.md)
+- [Widok alokacji](../profiling/dotnet-memory-allocations-view.md)
 
--   [Widok okresu istnienia obiektu](../profiling/object-lifetime-view.md)
+- [Widok okresu istnienia obiektu](../profiling/object-lifetime-view.md)
 
--   [Widok znaczników](../profiling/marks-view.md)
+- [Widok znaczników](../profiling/marks-view.md)
 
--   [Widok procesu](../profiling/process-view.md)
+- [Widok procesu](../profiling/process-view.md)
 
 ### <a name="to-customize-a-report-view"></a>Aby dostosować widok raportu
 
-1.  Otwórz widok raportu.
+1. Otwórz widok raportu.
 
-2.  Kliknij prawym przyciskiem myszy powierzchnię widoku raportu, a następnie kliknij przycisk **Dodaj/Usuń kolumny**.
+2. Kliknij prawym przyciskiem myszy powierzchnię widoku raportu, a następnie kliknij przycisk **Dodaj/Usuń kolumny**.
 
      **Dodaj/Usuń kolumny** pojawi się okno dialogowe.
 
-3.  Wybierz kolumny, które chcesz dodać.
+3. Wybierz kolumny, które chcesz dodać.
 
-4.  Kliknij przycisk strzałki, aby zmienić kolejność kolumn.
+4. Kliknij przycisk strzałki, aby zmienić kolejność kolumn.
 
-5.  Kliknij przycisk **OK**.
+5. Kliknij przycisk **OK**.

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90a97097eed7b97ad96bfda1f5520d1a9b4f0203
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7a383096d164f1b08e2411a7bc808e96f8a6262e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335405"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061310"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>Zarządzanie ładowaniem projektu w rozwiązaniu
 Rozwiązania programu Visual Studio mogą zawierać dużą liczbę projektów. Domyślne zachowanie programu Visual Studio jest można załadować wszystkich projektów w rozwiązaniu w czasie, które rozwiązanie jest otwierane, a nie Zezwalaj użytkownikowi dostępu do żadnego z projektów wszystkich z nich ma zakończenie ładowania. Podczas procesu ładowania projektu trwa więcej niż dwie minuty, jest wyświetlany pasek postępu, przedstawiający liczbę projektów i łącznej liczby projektów. Użytkownik może zwolnienia projektów podczas pracy w ramach rozwiązania z wieloma projektami, ale ta procedura ma pewne wady: zwolniono projekty są kompilowane jako część polecenia Kompiluj rozwiązanie i zamknięcie IntelliSense opisy typów i elementów członkowskich projekty nie są wyświetlane.
@@ -59,17 +59,17 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 ## <a name="handle-solution-load-events"></a>Obsługa zdarzeń ładowania rozwiązań
  Aby subskrybować zdarzeń ładowania rozwiązania, należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A> po aktywacji usługi Menedżera obciążenia rozwiązania. W przypadku zaimplementowania <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents>, pozwalające reagować na zdarzenia, które odnoszą się do innego projektu ładowania właściwości.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: To zdarzenie jest wywoływane przed otwarciem rozwiązania.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: To zdarzenie jest wywoływane przed otwarciem rozwiązania.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: To zdarzenie jest wywoływane po całkowitym załadowaniu rozwiązania, ale przed tła ładowanie projektu rozpoczyna się od nowa.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: To zdarzenie jest wywoływane po całkowitym załadowaniu rozwiązania, ale przed tła ładowanie projektu rozpoczyna się od nowa.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: To zdarzenie jest wywoływane po początkowym pełni załadowaniu rozwiązania, czy istnieje Menedżera obciążenia rozwiązania. Również wyzwoleniu po obciążenia tło lub żądanie załadowania zawsze wtedy, gdy rozwiązanie staje się w pełni załadowane. W tym samym czasie <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> zostanie ponownie aktywowany.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: To zdarzenie jest wywoływane po początkowym pełni załadowaniu rozwiązania, czy istnieje Menedżera obciążenia rozwiązania. Również wyzwoleniu po obciążenia tło lub żądanie załadowania zawsze wtedy, gdy rozwiązanie staje się w pełni załadowane. W tym samym czasie <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> zostanie ponownie aktywowany.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: To zdarzenie jest wywoływane przed załadowaniem projektu (lub projektów). Aby upewnić się, że inne procesy w tle odbywa się przed projekty są ładowane, należy ustawić `pfShouldDelayLoadToNextIdle` do **true**.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: To zdarzenie jest wywoływane przed załadowaniem projektu (lub projektów). Aby upewnić się, że inne procesy w tle odbywa się przed projekty są ładowane, należy ustawić `pfShouldDelayLoadToNextIdle` do **true**.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: To zdarzenie jest wywoływane, gdy partii projektów ma być załadowany. Jeśli `fIsBackgroundIdleBatch` ma wartość true, projekty mają być ładowane w tle; Jeśli `fIsBackgroundIdleBatch` ma wartość FAŁSZ, projekty są mają zostać załadowane synchronicznie w wyniku żądania użytkownika, na przykład jeśli użytkownik rozwija oczekujące projekt w Eksploratorze rozwiązań. Może obsługiwać to zdarzenie, aby spełniała kosztowne, które w przeciwnym razie musi odbywać się w <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: To zdarzenie jest wywoływane, gdy partii projektów ma być załadowany. Jeśli `fIsBackgroundIdleBatch` ma wartość true, projekty mają być ładowane w tle; Jeśli `fIsBackgroundIdleBatch` ma wartość FAŁSZ, projekty są mają zostać załadowane synchronicznie w wyniku żądania użytkownika, na przykład jeśli użytkownik rozwija oczekujące projekt w Eksploratorze rozwiązań. Może obsługiwać to zdarzenie, aby spełniała kosztowne, które w przeciwnym razie musi odbywać się w <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: To zdarzenie jest wywoływane po załadowaniu partii projektów.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: To zdarzenie jest wywoływane po załadowaniu partii projektów.
 
 ## <a name="detect-and-manage-solution-and-project-loading"></a>Wykrywanie i zarządzanie nimi rozwiązania i ładowanie projektu
  W celu wykrycia stan ładowania projektów i rozwiązań, należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> z następującymi wartościami:

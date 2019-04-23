@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49bc9f56a07319c9edad1522c5e44b0bb35e92a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1576dfc54622f42e87ff2e9a951eed321300b1e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785544"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039291"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Tworzenie sparametryzowanych zapytań adaptera TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ Utworzysz sparametryzowanych zapytań adaptera TableAdapter w Projektancie obiek
   
 ### <a name="create-a-parameterized-query-while-designing-a-data-bound-form"></a>Utwórz zapytanie parametryczne podczas projektowania formularza powiązanych z danymi  
   
-1.  Wybierz kontrolkę w formularzu, która jest już powiązany z zestawem danych. Aby uzyskać więcej informacji, zobacz [formanty powiązania formularzy Windows do danych w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).  
+1. Wybierz kontrolkę w formularzu, która jest już powiązany z zestawem danych. Aby uzyskać więcej informacji, zobacz [formanty powiązania formularzy Windows do danych w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).  
   
-2.  Na **danych** menu, wybierz opcję**Dodaj zapytanie**.  
+2. Na **danych** menu, wybierz opcję**Dodaj zapytanie**.  
   
-3.  Wykonaj **Konstruktor kryteriów wyszukiwania** okno dialogowe, dodając klauzulę WHERE z odpowiednie parametry do instrukcji SQL.  
+3. Wykonaj **Konstruktor kryteriów wyszukiwania** okno dialogowe, dodając klauzulę WHERE z odpowiednie parametry do instrukcji SQL.  
   
 ### <a name="add-a-query-to-an-existing-data-bound-form"></a>Dodaj zapytanie do istniejącego formularza powiązanych z danymi  
   
@@ -91,11 +91,11 @@ Gdyby to zapytanie w metodzie TableAdapter, wysłać zapytanie o wszystkie zamó
   
 ### <a name="enable-a-query-to-accept-null-values"></a>Włącz zapytanie, aby akceptować wartości null  
   
-1.  W **Projektanta obiektów Dataset**, wybierz zapytanie TableAdapter, które wymaga, aby zaakceptować wartości parametru o wartości null.  
+1. W **Projektanta obiektów Dataset**, wybierz zapytanie TableAdapter, które wymaga, aby zaakceptować wartości parametru o wartości null.  
   
-2.  W **właściwości** wybierz **parametry**. Naciśnij przycisk wielokropka (**...** ) przycisk, aby otworzyć **Edytor kolekcji parametrów**.  
+2. W **właściwości** wybierz **parametry**. Naciśnij przycisk wielokropka (**...** ) przycisk, aby otworzyć **Edytor kolekcji parametrów**.  
   
-3.  Wybierz parametr, który dopuszcza wartości null i ustaw **AllowDbNull** właściwość `true`.  
+3. Wybierz parametr, który dopuszcza wartości null i ustaw **AllowDbNull** właściwość `true`.  
   
 ## <a name="see-also"></a>Zobacz także
 

@@ -11,12 +11,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5b841298c7d4683059599bb95b145514ab94873
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 75906a279c1047ff98c7ff8d82d7baf3efc8be0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771019"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068859"
 ---
 # <a name="initialize-correlation-dialog-box"></a>Inicjowanie korelacji, okno dialogowe
 **Inicjowanie korelacji** okno dialogowe jest używany w [!INCLUDE[wfd1](../includes/wfd1-md.md)] edytować <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> właściwość <xref:System.ServiceModel.Activities.InitializeCorrelation> działania. [!INCLUDE[crdefault](../includes/crdefault-md.md)] [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md) tematu.  
@@ -30,7 +30,7 @@ ms.locfileid: "54771019"
   
 ## <a name="to-launch-the-initialize-correlation-dialog-box"></a>Aby uruchomić okno dialogowe Inicjowanie korelacji  
   
--   Kliknij przycisk **widoku** na **InitializeCorrelation** działanie projektanta lub wybierz <xref:System.ServiceModel.Activities.InitializeCorrelation> działania w [!INCLUDE[wfd2](../includes/wfd2-md.md)] a następnie kliknij przycisk wielokropka obok <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> właściwość siatki właściwości.  
+- Kliknij przycisk **widoku** na **InitializeCorrelation** działanie projektanta lub wybierz <xref:System.ServiceModel.Activities.InitializeCorrelation> działania w [!INCLUDE[wfd2](../includes/wfd2-md.md)] a następnie kliknij przycisk wielokropka obok <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> właściwość siatki właściwości.  
   
 ## <a name="see-also"></a>Zobacz też  
  [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)

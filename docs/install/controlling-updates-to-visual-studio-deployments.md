@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a58ee5350467ae2b2eea74b4f929fac69b75c071
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d4ce4621fc2fa32f2730c0ce6cdd0618a44386b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58856291"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076392"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Sterowanie aktualizacjami na potrzeby wdrożenia oparte na sieci programu Visual Studio
 
@@ -33,13 +33,17 @@ Domyślnie program Visual Studio w dalszym ciągu wyszukiwania w trybie online a
 Jeśli ma bezpośrednią kontrolę nad którym szuka aktualizacji programu Visual Studio, można zmodyfikować lokalizacji, w którym wygląda na to. Można także kontrolować wersję, którą użytkownicy zaktualizowali system do. Aby to zrobić, wykonaj następujące kroki:
 
 1. Tworzenie układu offline:
+
    ```cmd
    vs_enterprise.exe --layout C:\vsoffline --lang en-US
    ```
+
 2. Skopiuj go do udziału plików, w którym chcesz udostępnić go:
+
    ```cmd
    xcopy /e C:\vsoffline \\server\share\VS
    ```
+
 3. Zmodyfikuj plik response.json w układ i zmiana `channelUri` wartość, aby wskazać kopię channelManifest.json, który kontroluje administrator.
 
    Pamiętaj anulować ukośników odwrotnych w wartości, jak w poniższym przykładzie:
@@ -49,6 +53,7 @@ Jeśli ma bezpośrednią kontrolę nad którym szuka aktualizacji programu Visua
    ```
 
    Obecnie użytkownicy końcowi mogą uruchomić Instalatora z tego udziału, aby zainstalować program Visual Studio.
+
    ```cmd
    \\server\share\VS\vs_enterprise.exe
    ```
@@ -56,13 +61,17 @@ Jeśli ma bezpośrednią kontrolę nad którym szuka aktualizacji programu Visua
 Gdy administrator przedsiębiorstwa ustali, nadszedł czas na swoich użytkowników zaktualizować do nowszej wersji programu Visual Studio, mogą oni [zaktualizować lokalizację układ](update-a-network-installation-of-visual-studio.md) zestawowi zaktualizowane pliki w następujący sposób.
 
 1. Użyj polecenia, który jest podobny do następującego polecenia:
+
    ```cmd
    vs_enterprise.exe --layout \\server\share\VS --lang en-US
    ```
+
 2. Upewnij się, że response.json plik w układzie zaktualizowane nadal zawiera dostosowania, w szczególności modyfikacji identyfikator channelUri w następujący sposób:
+
    ```json
    "channelUri":"\\\\server\\share\\VS\\ChannelManifest.json"
    ```
+
    Istniejący program Visual Studio instaluje z tego układu Wyszukaj aktualizacje `\\server\share\VS\ChannelManifest.json`. Jeśli channelManifest.json jest nowsza niż co użytkownik zainstalował, Visual Studio powiadamia użytkownika, że dostępna jest aktualizacja.
 
    Nowe instalacje automatycznie zainstalować zaktualizowaną wersję programu Visual Studio bezpośrednio z układu.
@@ -94,6 +103,7 @@ Ponieważ program Visual Studio 2017 [wpisy rejestru są przechowywane w rejestr
 ```cmd
 vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
 ```
+
 ::: moniker-end
 
 ::: moniker range="vs-2019"
@@ -119,3 +129,4 @@ vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterpris
 * [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Narzędzia do zarządzania wystąpieniami programu Visual Studio](tools-for-managing-visual-studio-instances.md)
+* [Cyklu życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing/)

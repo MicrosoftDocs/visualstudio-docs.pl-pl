@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5e7762b50d486f50ed59f489ef45641908d61612
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c672103c0426f2d49eb47aa41014ee13ff0ecae9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933109"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073442"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Zapisywanie danych z obiektu w bazie danych
 
@@ -41,7 +41,7 @@ Domyślnie `DBDirect` metody są tworzone na obiekt TableAdapter, który można 
 
 ## <a name="to-save-new-records-from-an-object-to-a-database"></a>Aby zapisać nowe rekordy z obiektu do bazy danych
 
--   Tworzenie rekordów przez przekazanie wartości do `TableAdapter.Insert` metody.
+- Tworzenie rekordów przez przekazanie wartości do `TableAdapter.Insert` metody.
 
      Poniższy przykład tworzy nowy rekord klienta `Customers` tabeli przez przekazanie wartości w `currentCustomer` obiekt `TableAdapter.Insert` metody.
 
@@ -50,7 +50,7 @@ Domyślnie `DBDirect` metody są tworzone na obiekt TableAdapter, który można 
 
 ## <a name="to-update-existing-records-from-an-object-to-a-database"></a>Aby zaktualizować istniejące rekordy z obiektu do bazy danych
 
--   Modyfikowanie rekordów, wywołując `TableAdapter.Update` metody, przekazując nowe wartości w celu zaktualizowania rekordu, a w oryginalnych wartości, aby zlokalizować rekordu.
+- Modyfikowanie rekordów, wywołując `TableAdapter.Update` metody, przekazując nowe wartości w celu zaktualizowania rekordu, a w oryginalnych wartości, aby zlokalizować rekordu.
 
     > [!NOTE]
     > Trzeba zachować oryginalne wartości, aby można było przekazać je do obiektu `Update` metody. W tym przykładzie użyto właściwości `orig` prefiks do przechowywania oryginalnych wartości.
@@ -62,7 +62,7 @@ Domyślnie `DBDirect` metody są tworzone na obiekt TableAdapter, który można 
 
 ## <a name="to-delete-existing-records-from-a-database"></a>Aby usunąć istniejące rekordy z bazy danych
 
--   Usuń rekordy przez wywołanie metody `TableAdapter.Delete` metody i przekazywanie w oryginalnej wartości do wyszukania w rekordzie.
+- Usuń rekordy przez wywołanie metody `TableAdapter.Delete` metody i przekazywanie w oryginalnej wartości do wyszukania w rekordzie.
 
     > [!NOTE]
     > Trzeba zachować oryginalne wartości, aby można było przekazać je do obiektu `Delete` metody. W tym przykładzie użyto właściwości `orig` prefiks do przechowywania oryginalnych wartości.

@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5b1ffd20fb33048427ba4cacdbbd9360313db089
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 26482e844a4850efb1c50b15e51e4153baf1f9ab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771116"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075999"
 ---
 # <a name="how-to-update-existing-templates"></a>Instrukcje: Aktualizowanie istniejących szablonów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,36 +30,36 @@ Po utworzeniu szablonu i Kompresuj pliki w pliku zip, można zmodyfikować szabl
   
 #### <a name="to-use-export-template-to-update-an-existing-template"></a>Aby wyeksportować szablon służy do aktualizacji istniejącego szablonu  
   
-1.  Na **pliku** menu, kliknij przycisk **New** a następnie kliknij przycisk **nowy projekt**.  
+1. Na **pliku** menu, kliknij przycisk **New** a następnie kliknij przycisk **nowy projekt**.  
   
-2.  Wybierz szablon, który chcesz zaktualizować, wprowadź nazwę i lokalizację dla swojego projektu tymczasowej, a następnie kliknij przycisk **OK**.  
+2. Wybierz szablon, który chcesz zaktualizować, wprowadź nazwę i lokalizację dla swojego projektu tymczasowej, a następnie kliknij przycisk **OK**.  
   
-3.  Modyfikowanie projektu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Modyfikowanie projektu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  Na **pliku** menu, kliknij przycisk **Eksportuj szablon**i użyj **Eksportuj szablon** kreatora, aby utworzyć nowy szablon.  
+4. Na **pliku** menu, kliknij przycisk **Eksportuj szablon**i użyj **Eksportuj szablon** kreatora, aby utworzyć nowy szablon.  
   
-5.  Po zaktualizowany szablon jest skompresowany do pliku zip, należy usunąć stary plik zip szablonu.  
+5. Po zaktualizowany szablon jest skompresowany do pliku zip, należy usunąć stary plik zip szablonu.  
   
 ## <a name="manually-updating-an-existing-template"></a>Ręczna aktualizacja istniejącego szablonu  
  Możesz zaktualizować istniejący szablon poza [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] przez modyfikowanie plików w pliku skompresowanym .zip.  
   
 #### <a name="to-manually-update-an-existing-template"></a>Aby ręcznie zaktualizować istniejący szablon  
   
-1.  Zlokalizuj plik .zip zawierający szablon. Domyślnie ten plik znajduje się w \My Studio *wersji*\My wyeksportowane szablony\\.  
+1. Zlokalizuj plik .zip zawierający szablon. Domyślnie ten plik znajduje się w \My Studio *wersji*\My wyeksportowane szablony\\.  
   
-2.  Wyodrębnij plik zip.  
+2. Wyodrębnij plik zip.  
   
-3.  Zmodyfikować lub usunąć bieżące pliki szablonu lub Dodaj nowe pliki do szablonu.  
+3. Zmodyfikować lub usunąć bieżące pliki szablonu lub Dodaj nowe pliki do szablonu.  
   
-4.  Otwierać, modyfikować i Zapisz plik .vstemplate XML do obsługi zachowanie zaktualizowane lub nowe pliki. Aby uzyskać więcej informacji na temat schematu .vstemplate, zobacz [odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md). Aby uzyskać więcej informacji na temat co można sparametryzować w plikach źródłowych, zobacz [parametry szablonu](../ide/template-parameters.md)  
+4. Otwierać, modyfikować i Zapisz plik .vstemplate XML do obsługi zachowanie zaktualizowane lub nowe pliki. Aby uzyskać więcej informacji na temat schematu .vstemplate, zobacz [odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md). Aby uzyskać więcej informacji na temat co można sparametryzować w plikach źródłowych, zobacz [parametry szablonu](../ide/template-parameters.md)  
   
-5.  Wybierz pliki do szablonu, kliknij prawym przyciskiem myszy, kliknij przycisk **Wyślij do**, a następnie kliknij przycisk **skompresowany Folder (zip)**. Wybrane pliki są kompresowane w pliku zip.  
+5. Wybierz pliki do szablonu, kliknij prawym przyciskiem myszy, kliknij przycisk **Wyślij do**, a następnie kliknij przycisk **skompresowany Folder (zip)**. Wybrane pliki są kompresowane w pliku zip.  
   
-6.  W tym samym katalogu co stary plik zip, należy umieścić nowy plik zip.  
+6. W tym samym katalogu co stary plik zip, należy umieścić nowy plik zip.  
   
-7.  Usuń pliki szablonów wyodrębniony i stary plik zip szablonu.  
+7. Usuń pliki szablonów wyodrębniony i stary plik zip szablonu.  
   
-8.  Start (jako administrator), wiersz polecenia dla deweloperów wystąpienia (w start menu w obszarze **programu Visual Studio 2010 / wiersz polecenia narzędzi/dla deweloperów programu Visual Studio**).  
+8. Start (jako administrator), wiersz polecenia dla deweloperów wystąpienia (w start menu w obszarze **programu Visual Studio 2010 / wiersz polecenia narzędzi/dla deweloperów programu Visual Studio**).  
   
 9. Uruchom następujące polecenie: `devenv /installvstemplates`.  
   

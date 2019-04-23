@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2fd519b396f5120b7b0acca8d2e6144e363ab1f0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4c806e2d84973c445c9ab8a6aedb7c4f1fb28354
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633060"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075548"
 ---
 # <a name="how-to-add-a-resource-file"></a>Instrukcje: Dodawanie pliku zasobu
   Polecenia służące do dodawania plików zasobów znajduje się w menu skrótów dla węzła rozwiązania i funkcja węzły w Eksploratorze rozwiązań. Aby uzyskać więcej informacji, zobacz [rozwiązań SharePoint lokalizowanie](../sharepoint/localizing-sharepoint-solutions.md).
@@ -42,13 +42,13 @@ ms.locfileid: "56633060"
 
 ### <a name="to-add-a-feature-resource-file-to-a-sharepoint-feature"></a>Aby dodać plik zasobów funkcji do funkcji SharePoint
 
-1.  Jeśli rozwiązania programu SharePoint nie jest już otwarty w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], otwórz rozwiązanie.
+1. Jeśli rozwiązania programu SharePoint nie jest już otwarty w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], otwórz rozwiązanie.
 
-2.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla nazwy funkcji w obszarze **funkcji** węzła, a następnie wybierz **Dodaj zasób funkcji**.
+2. W **Eksploratora rozwiązań**, otwórz menu skrótów dla nazwy funkcji w obszarze **funkcji** węzła, a następnie wybierz **Dodaj zasób funkcji**.
 
      Ten krok powoduje dodanie pliku zasobu do funkcji w formacie _Nazwaplikuzasobów_**.** _kultury_**resx**, takich jak *Feature1.en US.resx*.
 
-3.  Gdy **Edytor zasobów** zostanie otwarty w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], dodać zasoby do pliku zasobów.
+3. Gdy **Edytor zasobów** zostanie otwarty w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], dodać zasoby do pliku zasobów.
 
 ## <a name="see-also"></a>Zobacz także
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

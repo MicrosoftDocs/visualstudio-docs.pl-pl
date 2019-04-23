@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee555376a2943cb29344aad2ed94da2b8ab2ae36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dc6492b52cb739c49bdba9f231ebcda313a66105
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617785"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068668"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Instrukcje: Dodawanie opisu filtru do metody wyszukiwania
   Deskryptory filtrów umożliwiają użytkownikom modelu do przekazania wartości do metod, przed ich wykonania. Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -29,25 +29,25 @@ ms.locfileid: "56617785"
 
 ### <a name="to-add-a-filter-descriptor-to-a-finder-method"></a>Aby dodać Deskryptor filtru do metody wyszukiwania
 
-1.  W **szczegóły metody BDC** okna, rozwiń węzeł metody wyszukiwania, rozwiń **parametry** węzła, a następnie dodaj parametr wejściowy. Aby uzyskać więcej informacji, zobacz [jak: Dodaj parametr do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md).
+1. W **szczegóły metody BDC** okna, rozwiń węzeł metody wyszukiwania, rozwiń **parametry** węzła, a następnie dodaj parametr wejściowy. Aby uzyskać więcej informacji, zobacz [jak: Dodaj parametr do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md).
 
-2.  W **szczegóły metody** oknie Wybierz deskryptor typu parametru.
+2. W **szczegóły metody** oknie Wybierz deskryptor typu parametru.
 
-3.  Na pasku menu wybierz **widoku** > **okno właściwości**.
+3. Na pasku menu wybierz **widoku** > **okno właściwości**.
 
-4.  W **właściwości** oknie **nazwy typu** właściwość do typu danych, która jest odpowiednia dla filtru.
+4. W **właściwości** oknie **nazwy typu** właściwość do typu danych, która jest odpowiednia dla filtru.
 
      Filtr może na przykład użyć datę zamówienia, aby ograniczyć liczbę zamówień sprzedaży, zwracany przez metodę. Do obsługi z filtrem **nazwy typu** właściwości deskryptora typu musi być równa **System.DateTime**.
 
-5.  W **szczegóły metody** okna, rozwiń węzeł **deskryptory filtrów** węzła.
+5. W **szczegóły metody** okna, rozwiń węzeł **deskryptory filtrów** węzła.
 
-6.  W **Dodaj Deskryptor filtru** wybierz **Utwórz Deskryptor filtru**.
+6. W **Dodaj Deskryptor filtru** wybierz **Utwórz Deskryptor filtru**.
 
      Nowy Deskryptor filtru, który pojawia się poniżej **deskryptory filtrów** węzła.
 
-7.  Na pasku menu wybierz **widoku** > **okno właściwości**.
+7. Na pasku menu wybierz **widoku** > **okno właściwości**.
 
-8.  W **właściwości** oknie Wybierz **typu** właściwości.
+8. W **właściwości** oknie Wybierz **typu** właściwości.
 
 9. Na liście, który pojawia się dla **typu** właściwości filtrowania wzorzec, który chcesz wybrać.
 

@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f175e8870795374ab35058ef163f4752115d5be
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 05fd28e6b47d74c28edc491458b73b487d282a45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567250"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067732"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015 — Zapraszamy!
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -54,24 +54,24 @@ Witamy w programie Visual Studio! Mamy wszystko, czego potrzebujesz do tworzenia
 
  Wybierz potrzebne narzędzia na podstawie wymagań dotyczących aplikacji i język, którego chcesz użyć.
 
-1.  [Xamarin for Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): Typowe kodu bazowego w C# dla wszystkich urządzeń
+1. [Xamarin for Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): Typowe kodu bazowego w C# dla wszystkich urządzeń
 
-2.  [Apache Cordova w programie Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Typowe kodu bazowego dla kodu HTML, CSS i JavaScript lub Typescript
+2. [Apache Cordova w programie Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Typowe kodu bazowego dla kodu HTML, CSS i JavaScript lub Typescript
 
-3.  [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md): Tworzenie gier 2D/3D wC#
+3. [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md): Tworzenie gier 2D/3D wC#
 
-4.  [Programowanie dla wielu Platform w języku C++](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): Udostępnionych bibliotek kodu i aplikacji w języku C++
+4. [Programowanie dla wielu Platform w języku C++](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): Udostępnionych bibliotek kodu i aplikacji w języku C++
 
-5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Visual Studio Emulator for Android: Debugowanie i testowanie aplikacji systemu Android bez względu na to środowisko IDE
+5. [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Visual Studio Emulator for Android: Debugowanie i testowanie aplikacji systemu Android bez względu na to środowisko IDE
 
 ## <a name="connect-your-apps-to-services"></a>Połącz swoje aplikacje z usług
  Można połączyć się z tymi usługami gotowych (przy założeniu, że masz konto usługi dla poszczególnych usług):
 
--   [Azure Mobile Services](http://azure.microsoft.com/documentation/services/mobile-services/)
+- [Azure Mobile Services](http://azure.microsoft.com/documentation/services/mobile-services/)
 
--   [Azure Storage](http://azure.microsoft.com/documentation/services/storage/)
+- [Azure Storage](http://azure.microsoft.com/documentation/services/storage/)
 
--   Integrowanie interfejsów API REST usługi Office 365 do własnej aplikacji, aby nawiązać połączenie — dane przechowywane w chmurze. Aby uzyskać więcej informacji, zobacz [te przykłady](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
+- Integrowanie interfejsów API REST usługi Office 365 do własnej aplikacji, aby nawiązać połączenie — dane przechowywane w chmurze. Aby uzyskać więcej informacji, zobacz [te przykłady](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
 
 ## <a name="write-great-web-apps-with-aspnet"></a>Zapis wspaniałych aplikacji sieci Web ASP.NET
  [Program ASP.NET 5](http://www.asp.net/vnext/overview/aspnet-vnext/aspnet-5-overview) jest ważna aktualizacja MVC, WebAPI i SignalR i działa na Windows, Mac i Linux.  Program ASP.NET 5 ma został zaprojektowany od podstaw zapewnienie, że stosu z odchudzona i konfigurowalna platformy .NET do tworzenia nowoczesnej sieci web, które są oparte na chmurze aplikacje i usługi.
@@ -102,32 +102,32 @@ Witamy w programie Visual Studio! Mamy wszystko, czego potrzebujesz do tworzenia
 
 ## <a name="in-this-section"></a>W tej sekcji
 
--   [Co nowego w programie Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)
+- [Co nowego w programie Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)
 
--   [Instalowanie programu Visual Studio 2015](./install/install-visual-studio-2015.md)
+- [Instalowanie programu Visual Studio 2015](./install/install-visual-studio-2015.md)
 
--   [Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio](./porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+- [Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio](./porting/porting-migrating-and-upgrading-visual-studio-projects.md)
 
--   [Visual Studio IDE](./ide/visual-studio-ide.md)
+- [Visual Studio IDE](./ide/visual-studio-ide.md)
 
--   [Rozszerzalność w programie Visual Studio](./extensibility/extensibility-in-visual-studio.md)
+- [Rozszerzalność w programie Visual Studio](./extensibility/extensibility-in-visual-studio.md)
 
--   [Uzyskiwanie dostępu do danych w programie Visual Studio](./data-tools/accessing-data-in-visual-studio.md)
+- [Uzyskiwanie dostępu do danych w programie Visual Studio](./data-tools/accessing-data-in-visual-studio.md)
 
--   [Programowanie aplikacji mobilnych dla wielu platform](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)
+- [Programowanie aplikacji mobilnych dla wielu platform](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)
 
--   [C# i Visual Basic udostępnione pojęcia związane z programowaniem](http://msdn.microsoft.com/library/fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6)
+- [C# i Visual Basic udostępnione pojęcia związane z programowaniem](http://msdn.microsoft.com/library/fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6)
 
--   [Visual C++](http://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
+- [Visual C++](http://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
 
--   [JavaScript](./javascript/javascript-in-visual-studio.md)
+- [JavaScript](./javascript/javascript-in-visual-studio.md)
 
--   [Python](./python/getting-started-with-python.md)
+- [Python](./python/getting-started-with-python.md)
 
--   [Visual F#](http://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
+- [Visual F#](http://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
 
--   [Visual Studio LightSwitch](http://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
+- [Visual Studio LightSwitch](http://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
 
--   [DevOps i zarządzanie cyklem życia aplikacji](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
+- [DevOps i zarządzanie cyklem życia aplikacji](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
 
--   [Porozmawiaj z nami](./ide/talk-to-us.md)
+- [Porozmawiaj z nami](./ide/talk-to-us.md)

@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b441543079ab3369beddcd95999809e075b3bb2b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57987b67a2fa081ebaa577f10de478b5fd250aca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907146"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076240"
 ---
 # <a name="how-to-manage-editor-modes"></a>Instrukcje: Zarządzanie trybami edytora
 
@@ -42,21 +42,21 @@ Edytor kodu programu Visual Studio można wyświetlić w różnych trybów wyśw
 
 Można wybrać ukryć wszystkie okna narzędzi i wyświetlić tylko okna dokumentu, należy włączyć **pełny ekran** trybu.
 
--   Naciśnij klawisz **Alt**+**Shift**+**Enter** do wprowadzania lub zamknąć **pełny ekran** trybu.
+- Naciśnij klawisz **Alt**+**Shift**+**Enter** do wprowadzania lub zamknąć **pełny ekran** trybu.
 
      --lub--
 
--   Należy wydać polecenie `View.Fullscreen` w **polecenia** okna.
+- Należy wydać polecenie `View.Fullscreen` w **polecenia** okna.
 
 ## <a name="enable-virtual-space-mode"></a>Włącz tryb obszaru wirtualnego
 
 W **wirtualną przestrzenią** tryb, spacje są dodawane na końcu każdego wiersza kodu. Wybierz tę opcję, aby umieść komentarze w momencie spójne obok kodu.
 
-1.  Wybierz **opcje** z **narzędzia** menu.
+1. Wybierz **opcje** z **narzędzia** menu.
 
-2.  Rozwiń **edytora tekstów** folderu i wybierz polecenie **wszystkie języki** globalnie Ustaw tę opcję, lub wybierz folder, do określonego języka. Na przykład, aby włączyć numery wierszy tylko w języku Visual Basic, należy wybrać **podstawowe** > **edytora tekstów** węzła.
+2. Rozwiń **edytora tekstów** folderu i wybierz polecenie **wszystkie języki** globalnie Ustaw tę opcję, lub wybierz folder, do określonego języka. Na przykład, aby włączyć numery wierszy tylko w języku Visual Basic, należy wybrać **podstawowe** > **edytora tekstów** węzła.
 
-3.  Wybierz **ogólne** opcje, a następnie w obszarze **ustawienia**, wybierz opcję **włączyć wirtualną przestrzenią**.
+3. Wybierz **ogólne** opcje, a następnie w obszarze **ustawienia**, wybierz opcję **włączyć wirtualną przestrzenią**.
 
     > [!NOTE]
     > **Wirtualna przestrzeń** jest włączone w **wybór kolumn** trybu. Gdy **wirtualną przestrzenią** nie jest włączony tryb punkt wstawiania przenoszony z końca jeden wiersz bezpośrednio do pierwszego znaku w następnym.

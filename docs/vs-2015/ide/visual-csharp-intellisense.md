@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0d67cc907155f3f5c6bc4b0f132f9045f7d698a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ea48e1807291e935081f01e821cffafa794104f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800878"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075762"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Visual C# IntelliSense jest dostępna podczas kodowania w edytorze i podczas deb
   
   Na liście uzupełniania w języku C# jest również inteligentnego odfiltrować tokenów nie ma znaczenia i wstępnie wybierz token na podstawie kontekstu. Aby uzyskać więcej informacji, zobacz [filtrowane listy uzupełniania w języku C#](../misc/filtered-completion-lists-in-csharp.md) i [Pre-selected listy uzupełniania w C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
-###  <a name="CodeSnippets"></a> Fragmenty kodu w listach uzupełniania  
+### <a name="CodeSnippets"></a> Fragmenty kodu w listach uzupełniania  
  W języku Visual C# na liście uzupełniania zawiera fragmenty kodu, aby pomóc łatwo Wstawianie wstępnie zdefiniowanych jednostek kodu programu. Fragmenty kodu są wyświetlane na liście uzupełniania jako ten fragment kodu [Shortcut — Element (fragmenty kodu Intellisense)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa).  Aby uzyskać więcej informacji na temat fragmentów kodu, które domyślnie są dostępne w Visual C#, zobacz [Visual C# — wstawki](../ide/visual-csharp-code-snippets.md).  
   
-###  <a name="Keywords"></a> Słowa kluczowe języka w listach uzupełniania  
+### <a name="Keywords"></a> Słowa kluczowe języka w listach uzupełniania  
  W języku Visual C# na liście uzupełniania także słowa kluczowe języka. Aby uzyskać więcej informacji na temat słowa kluczowe języka C#, zobacz [słowa kluczowe języka C#](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
   
-###  <a name="ExtensionMethods"></a> Metody rozszerzające w listach uzupełniania  
+### <a name="ExtensionMethods"></a> Metody rozszerzające w listach uzupełniania  
  W języku Visual C# na liście uzupełniania zawiera metody rozszerzenia, które znajdują się w zakresie.  
   
 > [!NOTE]
@@ -59,23 +59,23 @@ Visual C# IntelliSense jest dostępna podczas kodowania w edytorze i podczas deb
   
  Visual C# filtry listy uzupełniania, które są wyświetlane dla tych elementów:  
   
--   **Interfejsy i klas bazowych.** Funkcja IntelliSense automatycznie usuwa elementy z interfejsu i podstawowej klasy listy uzupełniania, w deklaracji klasy podstawowe i interfejs listy i listy ograniczeń. Na przykład wyliczenia nie są wyświetlane na liście uzupełniania dla klas bazowych, ponieważ nie można używać wyliczenia dla klas podstawowych. Na liście uzupełniania klas bazowych zawiera tylko interfejsów i przestrzeni nazw. Jeśli wybierz element na liście, a następnie wpisz przecinek, IntelliSense usuwa klas bazowych z listy uzupełniania, ponieważ Visual C# nie obsługuje wielokrotne dziedziczenie. Takie samo zachowanie występuje także klauzule ograniczenia.  
+- **Interfejsy i klas bazowych.** Funkcja IntelliSense automatycznie usuwa elementy z interfejsu i podstawowej klasy listy uzupełniania, w deklaracji klasy podstawowe i interfejs listy i listy ograniczeń. Na przykład wyliczenia nie są wyświetlane na liście uzupełniania dla klas bazowych, ponieważ nie można używać wyliczenia dla klas podstawowych. Na liście uzupełniania klas bazowych zawiera tylko interfejsów i przestrzeni nazw. Jeśli wybierz element na liście, a następnie wpisz przecinek, IntelliSense usuwa klas bazowych z listy uzupełniania, ponieważ Visual C# nie obsługuje wielokrotne dziedziczenie. Takie samo zachowanie występuje także klauzule ograniczenia.  
   
--   **Atrybuty**: Po zastosowaniu atrybutu do typu, na liście uzupełniania jest filtrowana, tak aby lista zawiera tylko tych typów, które jest elementem podrzędnym elementu przestrzeni nazw, które zawierają te typy, takie jak <xref:System.Attribute>.  
+- **Atrybuty**: Po zastosowaniu atrybutu do typu, na liście uzupełniania jest filtrowana, tak aby lista zawiera tylko tych typów, które jest elementem podrzędnym elementu przestrzeni nazw, które zawierają te typy, takie jak <xref:System.Attribute>.  
   
--   `as` i `is` operatorów.  
+- `as` i `is` operatorów.  
   
--   **CATCH klauzul.**  
+- **CATCH klauzul.**  
   
--   **Inicjatory obiektów:** Tylko elementy członkowskie, które mogą być inicjowane pojawi się na liście uzupełniania.  
+- **Inicjatory obiektów:** Tylko elementy członkowskie, które mogą być inicjowane pojawi się na liście uzupełniania.  
   
--   **New — słowo kluczowe**: Podczas wpisywania `new` i naciśnij klawisz spacji, zostanie wyświetlona lista uzupełniania. Automatycznie wybrano element na liście na podstawie kontekstu w kodzie. Na przykład automatycznie zaznaczono elementów na liście uzupełniania dla deklaracji i instrukcjach return w metodzie.  
+- **New — słowo kluczowe**: Podczas wpisywania `new` i naciśnij klawisz spacji, zostanie wyświetlona lista uzupełniania. Automatycznie wybrano element na liście na podstawie kontekstu w kodzie. Na przykład automatycznie zaznaczono elementów na liście uzupełniania dla deklaracji i instrukcjach return w metodzie.  
   
--   **jako operatorów i is:** Listy uzupełniania filtrowane jest wyświetlany automatycznie po naciśnięciu klawisza klawisz spacji po wpisaniu `as` lub `is` — słowo kluczowe.  
+- **jako operatorów i is:** Listy uzupełniania filtrowane jest wyświetlany automatycznie po naciśnięciu klawisza klawisz spacji po wpisaniu `as` lub `is` — słowo kluczowe.  
   
--   Zdarzenia: Podczas wpisywania słowa kluczowego `event`, na liście uzupełniania zawiera tylko typy delegatów.  
+- Zdarzenia: Podczas wpisywania słowa kluczowego `event`, na liście uzupełniania zawiera tylko typy delegatów.  
   
--   Parametr pomocy automatycznie sortuje do pierwsze przeciążenie metody, zgodny z parametrami, podczas ich wprowadzania. Jeśli wiele przeciążeń metody są dostępne, możesz użyć pracy i naciśnij strzałkę, aby przejść do następnego przeciążenia możliwe na liście.  
+- Parametr pomocy automatycznie sortuje do pierwsze przeciążenie metody, zgodny z parametrami, podczas ich wprowadzania. Jeśli wiele przeciążeń metody są dostępne, możesz użyć pracy i naciśnij strzałkę, aby przejść do następnego przeciążenia możliwe na liście.  
   
 ## <a name="most-recently-used-members"></a>Ostatnio używanych elementów członkowskich  
  Funkcja IntelliSense pamięta elementy członkowskie zaznaczone niedawno w oknie podręcznym [List Members](../ide/using-intellisense.md) pola obiektu automatyczne uzupełnianie nazw. Następnym razem, użyj listy członków ostatnio używanych elementów członkowskich są wyświetlane u góry. Historia ostatnio używanych elementów członkowskich jest czyszczona między każdej sesji w środowisku IDE.  

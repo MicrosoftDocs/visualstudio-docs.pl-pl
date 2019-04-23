@@ -11,12 +11,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 87c7b4faaf5aad737c8f7f8b653dbea03bc4de31
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0ef8bdb5f35ed727a207140dde6cf20f5645e5b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58866778"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074128"
 ---
 # <a name="visual-studio-shell-integrated"></a>Program Visual Studio Shell (zintegrowany)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,15 +68,15 @@ Powłoka programu Visual Studio obejmuje zintegrowanego środowiska programistyc
 ## <a name="features-not-included-in-the-integrated-shell"></a>Funkcje, które nie są objęte Integrated Shell  
  Poniżej przedstawiono listę funkcji, które nie są uwzględnione w integrated shell:  
   
--   Projektant klas  
+- Projektant klas  
   
--   Ochrona preEmptive — Dotfuscator  
+- Ochrona preEmptive — Dotfuscator  
   
--   Funkcje językowe  
+- Funkcje językowe  
   
--   VSHost  
+- VSHost  
   
--   Żadne języki Visual Studio lub ich szablony skojarzonego projektu lub szablony elementów projektu, są uwzględnione w integrated shell. Nie implementacji specyficznych dla języka innych funkcji, dla dołączono przykładowych fragmentów kodu języka Visual Basic.  
+- Żadne języki Visual Studio lub ich szablony skojarzonego projektu lub szablony elementów projektu, są uwzględnione w integrated shell. Nie implementacji specyficznych dla języka innych funkcji, dla dołączono przykładowych fragmentów kodu języka Visual Basic.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzanie programu Visual Studio — omówienie](http://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

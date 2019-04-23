@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a896a5b850887b36a4fb6596923e742429c44dc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d49c062540b50e442f2ac32e69ee37934c53bf2c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714130"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068616"
 ---
 # <a name="how-to-implement-undo-management"></a>Instrukcje: Implementowanie cofania zarządzania
 Podstawowy interfejs używany do zarządzania cofania jest <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, który jest implementowany przez środowisko. Do obsługi zarządzania cofania, implementować jednostek cofania oddzielne (oznacza to, <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, która może zawierać wiele poszczególne kroki.
@@ -27,9 +27,9 @@ Podstawowy interfejs używany do zarządzania cofania jest <xref:Microsoft.Visua
 
 ### <a name="to-support-undo-management-for-a-single-view-editor"></a>Do obsługi zarządzania cofania dla edytora pojedynczego widoku
 
-1.  Wywołaj `QueryInterface` na `IServiceProvider` interfejsu na ramki okna dla `IOleUndoManager`, z obiektu widoku dokumentu do dostępu do menedżera cofania (`IID_IOLEUndoManager`).
+1. Wywołaj `QueryInterface` na `IServiceProvider` interfejsu na ramki okna dla `IOleUndoManager`, z obiektu widoku dokumentu do dostępu do menedżera cofania (`IID_IOLEUndoManager`).
 
-2.  Gdy widok jest ulokowany do ramki okna, otrzymuje wskaźnik witryny, której można użyć do wywołania `QueryInterface` dla `IServiceProvider`.
+2. Gdy widok jest ulokowany do ramki okna, otrzymuje wskaźnik witryny, której można użyć do wywołania `QueryInterface` dla `IServiceProvider`.
 
 ## <a name="cases-where-an-editor-supports-multiple-views"></a>Przypadków, gdy Edytor obsługuje wiele widoków
  Jeśli masz separacji dokument i widok, występuje menedżera cofania zwykle co skojarzone z dokumentem. Wszystkie jednostki cofania są umieszczane w menedżera cofania co skojarzony z obiektem danych dokumentu.
@@ -46,17 +46,17 @@ Podstawowy interfejs używany do zarządzania cofania jest <xref:Microsoft.Visua
 
 3. Przekaźnik usługi <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> i <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> wywołania do przechowywanej `IOleCommandTarget` interfejsu dla następujących poleceń StandardCommandSet97:
 
-   -   cmdidUndo
+   - cmdidUndo
 
-   -   cmdidMultiLevelUndo
+   - cmdidMultiLevelUndo
 
-   -   cmdidRedo
+   - cmdidRedo
 
-   -   cmdidMultiLevelRedo
+   - cmdidMultiLevelRedo
 
-   -   cmdidMultiLevelUndoList
+   - cmdidMultiLevelUndoList
 
-   -   cmdidMultiLevelRedoList
+   - cmdidMultiLevelRedoList
 
 4. Wywołaj `QueryInterface` na `IOleUndoManager` dla `IID_IVsChangeTrackingUndoManager`. Wskaźnik do Store <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.
 

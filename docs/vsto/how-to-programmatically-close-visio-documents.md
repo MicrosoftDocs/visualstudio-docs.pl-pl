@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9059e0f066cbd1dc6ced5f11f1139d7687afacf3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 474efcb62cf7cadd9de82e41ff2ad36cebc046cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597210"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067658"
 ---
 # <a name="how-to-programmatically-close-visio-documents"></a>Instrukcje: Programowe zamykanie dokumentów programu Visio
   Możesz zamknąć aktywny dokument programu Microsoft Visio pakietu Office przy użyciu `Microsoft.Office.Interop.Visio.Document.Close` metody.
@@ -29,7 +29,7 @@ ms.locfileid: "56597210"
 
 ### <a name="to-close-the-active-document"></a>Aby zamknąć aktywny dokument
 
--   Wywołaj `Microsoft.Office.Interop.Visio.Document.Close` metodę, aby zamknąć aktywny dokument.
+- Wywołaj `Microsoft.Office.Interop.Visio.Document.Close` metodę, aby zamknąć aktywny dokument.
 
      Aby użyć w poniższym przykładzie kodu, należy uruchomić go `ThisAddIn` klasy w projekcie dodatku narzędzi VSTO dla programu Visio.
 

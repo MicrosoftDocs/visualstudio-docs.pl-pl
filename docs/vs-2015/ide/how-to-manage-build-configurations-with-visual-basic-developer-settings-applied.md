@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d6a315adb859445c5efa15df5b8366815bfc86d7
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0b0587f6c1c5d7577d8fddffb73db31f09248fae
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784790"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075652"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Instrukcje: Zarządzanie konfiguracjami kompilacji z zastosowanymi ustawieniami dewelopera języka Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,16 +34,16 @@ Domyślnie, wszystkie opcje konfiguracji zaawansowanej kompilacji jest ukryty za
   
 #### <a name="to-enable-advanced-build-configurations"></a>Aby włączyć zaawansowane konfiguracje kompilacji  
   
-1.  Na **narzędzia** menu, kliknij przycisk **opcje**.  
+1. Na **narzędzia** menu, kliknij przycisk **opcje**.  
   
-2.  Rozwiń **projekty i rozwiązania**i kliknij przycisk **ogólne**.  
+2. Rozwiń **projekty i rozwiązania**i kliknij przycisk **ogólne**.  
   
     > [!NOTE]
     >  **Ogólne** węzeł jest widoczny nawet wtedy, gdy **Pokaż wszystkie ustawienia** opcja jest zaznaczona. Jeśli chcesz zobaczyć każdej opcji, które są dostępne, kliknij przycisk **Pokaż wszystkie ustawienia**.  
   
-3.  Kliknij przycisk **Pokaż zaawansowane konfiguracje kompilacji**.  
+3. Kliknij przycisk **Pokaż zaawansowane konfiguracje kompilacji**.  
   
-4.  Kliknij przycisk **OK**.  
+4. Kliknij przycisk **OK**.  
   
      Na **kompilacji** menu **programu Configuration Manager** jest teraz dostępna i **konfiguracji** i **platformy** list są widoczne w Projektant projektu.  
   

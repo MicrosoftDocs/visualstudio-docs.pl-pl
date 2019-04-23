@@ -9,12 +9,12 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: c59e19434edcb19982fa72d3ddc96d7cb6a870a8
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 9fbcdb0bd9b9bab2afc69a8896cc00bedb98998b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58572896"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065938"
 ---
 # <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>Publikowanie aplikacji sieci Web w folderze przy użyciu programu Visual Studio dla komputerów Mac
 
@@ -22,10 +22,10 @@ Narzędzie publikowania do publikowania aplikacji platformy ASP.NET Core w folde
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
- - [Visual Studio 2017 for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017) zainstalowane za pomocą programu ASP.NET Core włączone.
- - Projekt platformy ASP.NET Core. Jeśli nie masz jeszcze projektu, możesz to zrobić [Utwórz nową](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2017).
+- [Visual Studio 2017 for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017) zainstalowane za pomocą programu ASP.NET Core włączone.
+- Projekt platformy ASP.NET Core. Jeśli nie masz jeszcze projektu, możesz to zrobić [Utwórz nową](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2017).
 
-## <a name="publish-to-folder"></a>Publikowanie do folderu
+## <a name="publish-to-folder"></a>Publikowanie w folderze
 
 Przy użyciu programu Visual Studio dla komputerów Mac możesz opublikować w folderze za pomocą narzędzia publikowania projektów ASP.NET Core. Po opublikowaniu w folderze można przesyłać pliki do serwera sieci web można pobrać go do innego środowiska. Aby opublikować do folderu wykonaj następujące kroki.
 

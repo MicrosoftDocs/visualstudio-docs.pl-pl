@@ -22,12 +22,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3a80fa982da118db58abbc589136823d5c433ce3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e8a7bd540f5c8a99145b892d080d8cb54e57d968
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657262"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061180"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Wyświetlanie powiązanych danych w aplikacjach WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,23 +38,23 @@ W niektórych aplikacjach można pracować z danymi, które pochodzą z wielu ta
   
 ## <a name="to-create-controls-that-display-related-records"></a>Aby utworzyć formanty, które wyświetlania powiązanych rekordów  
   
-1.  Na **danych** menu, kliknij przycisk **Pokaż źródła danych** otworzyć **źródeł danych** okna.  
+1. Na **danych** menu, kliknij przycisk **Pokaż źródła danych** otworzyć **źródeł danych** okna.  
   
-2.  Kliknij przycisk **Dodaj nowe źródło danych**i wykonaj **konfiguracji źródła danych** kreatora.  
+2. Kliknij przycisk **Dodaj nowe źródło danych**i wykonaj **konfiguracji źródła danych** kreatora.  
   
-3.  Otwórz projektanta WPF i upewnij się, że projektant zawiera kontener, który jest prawidłowe miejsca docelowego dla elementów w **źródeł danych** okna.  
+3. Otwórz projektanta WPF i upewnij się, że projektant zawiera kontener, który jest prawidłowe miejsca docelowego dla elementów w **źródeł danych** okna.  
   
      Aby uzyskać więcej informacji na temat prawidłowych miejsc upuszczania zobacz [WPF powiązać kontrolki z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-4.  W **źródeł danych** okna, rozwiń węzeł, który reprezentuje tabeli nadrzędnej lub obiekt w relacji. Tabela nadrzędna lub obiekt znajduje się na stronie "jeden" w relacji jeden do wielu.  
+4. W **źródeł danych** okna, rozwiń węzeł, który reprezentuje tabeli nadrzędnej lub obiekt w relacji. Tabela nadrzędna lub obiekt znajduje się na stronie "jeden" w relacji jeden do wielu.  
   
-5.  Przeciągnij z węzła nadrzędnego (lub wszystkie poszczególne elementy w węźle nadrzędnym) **źródeł danych** okna na prawidłowe miejsca docelowego w projektancie.  
+5. Przeciągnij z węzła nadrzędnego (lub wszystkie poszczególne elementy w węźle nadrzędnym) **źródeł danych** okna na prawidłowe miejsca docelowego w projektancie.  
   
      Program Visual Studio generuje XAML, który tworzy nowe formanty powiązane z danymi dla każdego elementu, który możesz przeciągnąć. XAML również dodaje nowy <xref:System.Windows.Data.CollectionViewSource> tabeli nadrzędnej lub obiektu do zasobów miejsca docelowego. Dla niektórych źródeł danych programu Visual Studio generuje kod, aby załadować dane do tabeli nadrzędnej lub obiektu. Aby uzyskać więcej informacji, zobacz [WPF powiązać kontrolki z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-6.  W **źródeł danych** oknie Znajdź pokrewną tabelę podrzędną lub obiektu. Podrzędnych względem tabel i obiektów są traktowane jako węzły można rozwijać w dolnej części listy danych węzła nadrzędnego.  
+6. W **źródeł danych** oknie Znajdź pokrewną tabelę podrzędną lub obiektu. Podrzędnych względem tabel i obiektów są traktowane jako węzły można rozwijać w dolnej części listy danych węzła nadrzędnego.  
   
-7.  Przeciągnij węzeł podrzędny (lub wszystkie poszczególne elementy węzła podrzędnego) z **źródeł danych** okna na prawidłowe miejsca docelowego w projektancie.  
+7. Przeciągnij węzeł podrzędny (lub wszystkie poszczególne elementy węzła podrzędnego) z **źródeł danych** okna na prawidłowe miejsca docelowego w projektancie.  
   
      Program Visual Studio generuje XAML, który tworzy nowe formanty powiązane z danymi dla każdego z elementów, które przeciągniesz. XAML również dodaje nowy <xref:System.Windows.Data.CollectionViewSource> tabeli podrzędnej lub obiektu do zasobów miejsca docelowego. Ta nowa <xref:System.Windows.Data.CollectionViewSource> jest powiązana z właściwością tabeli nadrzędnej lub obiekt, który właśnie został przeciągnięty do projektanta. Dla niektórych źródeł danych programu Visual Studio generuje kod, aby załadować dane do tabeli podrzędnej lub obiektu.  
   

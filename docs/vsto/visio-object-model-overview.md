@@ -17,21 +17,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 806a2a2165dc604969e2bd8f35a0eb9c1cf07556
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dbae3a1e003c0d9381b80fc24227e65a18c1c8f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636713"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096559"
 ---
 # <a name="visio-object-model-overview"></a>Model obiektu Visio ― omówienie
   Do opracowywania rozwiązań pakietu Office dla programu Microsoft Office Visio, możesz korzystać z modelu obiektów programu Visio. Ten model obiektów składa się z klasy i interfejsy, które znajdują się w podstawowy zestaw międzyoperacyjny dla programu Visio i są definiowane w `Microsoft.Office.Interop.Visio` przestrzeni nazw.
 
  Ten temat zawiera krótkie omówienie modelu obiektów programu Visio. Aby dowiedzieć się, jak za pomocą modelu obiektów programu Visio do wykonywania zadań w projektach pakietu Office zobacz następujące tematy:
 
--   [Praca z dokumentami Visio](../vsto/working-with-visio-documents.md)
+- [Praca z dokumentami Visio](../vsto/working-with-visio-documents.md)
 
--   [Praca z dokumentami Visio shapes](../vsto/working-with-visio-shapes.md)
+- [Praca z dokumentami Visio shapes](../vsto/working-with-visio-shapes.md)
 
 ## <a name="understand-the-visio-object-model"></a>Informacje o modelu obiektów programu Visio
  Program Visio zawiera wiele obiektów, z którymi możesz wchodzić w interakcje. Te obiekty są zorganizowane w hierarchii, który jest ściśle zgodna interfejsu użytkownika. W górnej części hierarchii jest [Microsoft.Office.Interop.Visio.Application](/office/vba/api/Visio.Application) obiektu. Ten obiekt reprezentuje bieżące wystąpienie programu Visio. `Microsoft.Office.Interop.Visio.Application` Obiekt zawiera `Microsoft.Office.Interop.Visio.Document` i `Microsoft.Office.Interop.Visio.Page` obiekty, jak również `Microsoft.Office.Interop.Visio.Documents` i `Microsoft.Office.Interop.Visio.Pages` kolekcji. Każda z tych obiektów i kolekcji ma wiele metod i właściwości, do których masz dostęp do manipulowania i korzystać z niego.
@@ -40,11 +40,11 @@ ms.locfileid: "56636713"
 
  W poniższych sekcjach opisano skrótowo obiektów najwyższego poziomu i jak współdziałają ze sobą. Te obiekty obejmują następujące obiekty:
 
--   Obiekt aplikacji
+- Obiekt aplikacji
 
--   Obiekt dokumentu
+- Obiekt dokumentu
 
--   obiekt strony
+- obiekt strony
 
 ### <a name="application-object"></a>Obiekt aplikacji
  Obiekt Microsoft.Office.Interop.Visio.Application reprezentuje aplikacji Visio, a jest nadrzędne względem wszystkich innych obiektów. Jej członków zwykle mają zastosowanie do programu Visio jako całości. Można użyć właściwości i metody Microsoft.Office.Interop.Visio.Application i `Microsoft.Office.Interop.Visio.ApplicationSettings` obiektów w celu kontrolowania środowiska programu Visio.

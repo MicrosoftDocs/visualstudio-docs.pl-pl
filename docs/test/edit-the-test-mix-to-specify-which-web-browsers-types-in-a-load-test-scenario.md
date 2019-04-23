@@ -11,12 +11,12 @@ ms.assetid: 47f981d9-3038-45cc-a486-82b9daf9a9a1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed7c90e292b2ed77eeae4096e967f10068664659
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4da3fc51593cc877e09ca6f46db70303186b293e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955561"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087082"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Edytuj test mieszany, aby określić, które typy przeglądarek sieci web w scenariuszu testu obciążenia
 
@@ -34,34 +34,34 @@ Po określeniu mieszaną przeglądarkę można później dodać i usunąć typy 
 
 ### <a name="to-add-new-browsers-to-a-scenario"></a>Aby dodać nowych przeglądarek do scenariusza
 
-1.  Gdy w trakcie określania wybierz przeglądarek do scenariusza **Dodaj**.
+1. Gdy w trakcie określania wybierz przeglądarek do scenariusza **Dodaj**.
 
      Nowy wpis w przeglądarce jest dodawany do siatki.
 
     > [!NOTE]
     > Aby wyświetlić **Edytuj mieszaną przeglądarkę** okna dialogowego pole, kliknij prawym przyciskiem myszy istniejący scenariusz, a następnie wybierz **Edytuj mieszaną przeglądarkę**.
 
-2.  W **typ przeglądarki** kolumnę, wybierz strzałkę znajdującą się nowy wpis i wybierz typ żądanego przeglądarki.
+2. W **typ przeglądarki** kolumnę, wybierz strzałkę znajdującą się nowy wpis i wybierz typ żądanego przeglądarki.
 
-3.  (Opcjonalnie) Dostosuj kontroli mieszany, aby określić rozkład testu.
+3. (Opcjonalnie) Dostosuj kontroli mieszany, aby określić rozkład testu.
 
-4.  Po zakończeniu dodawania przeglądarki, wybierz **OK**.
+4. Po zakończeniu dodawania przeglądarki, wybierz **OK**.
 
-##  <a name="remove-browsers-from-a-scenario"></a>Usuwanie przeglądarek ze scenariusza
+## <a name="remove-browsers-from-a-scenario"></a>Usuwanie przeglądarek ze scenariusza
 
 ### <a name="to-remove-browsers-from-a-scenario"></a>Aby usunąć przeglądarki ze scenariusza
 
-1.  Otwórz test obciążenia.
+1. Otwórz test obciążenia.
 
-2.  Kliknij prawym przyciskiem myszy scenariusza, z którego chcesz usunąć przeglądarkę, a następnie wybierz polecenie **Edytuj mieszaną przeglądarkę**.
+2. Kliknij prawym przyciskiem myszy scenariusza, z którego chcesz usunąć przeglądarkę, a następnie wybierz polecenie **Edytuj mieszaną przeglądarkę**.
 
      **Edytuj mieszaną przeglądarkę** zostanie wyświetlone okno dialogowe.
 
-3.  Wybierz przeglądarkę w siatce, a następnie wybierz **Usuń**.
+3. Wybierz przeglądarkę w siatce, a następnie wybierz **Usuń**.
 
-4.  (Opcjonalnie) Dostosuj kontroli mieszany, aby określić rozkład testu.
+4. (Opcjonalnie) Dostosuj kontroli mieszany, aby określić rozkład testu.
 
-5.  Po zakończeniu usuwania przeglądarki, wybierz **OK**.
+5. Po zakończeniu usuwania przeglądarki, wybierz **OK**.
 
 ## <a name="about-the-mix-control"></a>Informacje o formancie mieszany
 

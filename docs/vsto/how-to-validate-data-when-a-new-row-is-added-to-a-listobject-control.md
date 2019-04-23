@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a78674a0738c0b7a0f69e04decd70fbbf1d1e367
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d8aefab319b9b197b9b7df0e23fec71aa3cb64d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615861"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039314"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Instrukcje: Walidacja danych po dodaniu nowego rzędu do kontrolki ListObject
   Użytkownicy mogą dodawać nowe wiersze do <xref:Microsoft.Office.Tools.Excel.ListObject> formant, który jest powiązany z danymi. Możesz walidować dane użytkownika przed zatwierdzeniem zmian w źródle danych.
@@ -34,17 +34,17 @@ ms.locfileid: "56615861"
 
 ### <a name="to-validate-data-when-a-new-row-is-added-to-data-bound-listobject"></a>Aby sprawdzić poprawność danych, gdy nowy wiersz jest dodawany do powiązanych z danymi ListObject
 
-1.  Tworzenie zmiennych dla Identyfikatora i <xref:System.Data.DataTable> na poziomie klasy.
+1. Tworzenie zmiennych dla Identyfikatora i <xref:System.Data.DataTable> na poziomie klasy.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#8)]
      [!code-vb[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#8)]
 
-2.  Utwórz nową <xref:System.Data.DataTable> i dodawanie przykładowe kolumny i dane w `Startup` program obsługi zdarzeń `Sheet1` klasy (w projekcie poziomie dokumentu) lub `ThisAddIn` klasy (w projekcie dodatku narzędzi VSTO).
+2. Utwórz nową <xref:System.Data.DataTable> i dodawanie przykładowe kolumny i dane w `Startup` program obsługi zdarzeń `Sheet1` klasy (w projekcie poziomie dokumentu) lub `ThisAddIn` klasy (w projekcie dodatku narzędzi VSTO).
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#9)]
      [!code-vb[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#9)]
 
-3.  Dodaj kod, aby `list1_BeforeAddDataBoundRow` program obsługi zdarzeń, aby sprawdzić, czy wiek wprowadzono mieści się w dopuszczalnym zakresem.
+3. Dodaj kod, aby `list1_BeforeAddDataBoundRow` program obsługi zdarzeń, aby sprawdzić, czy wiek wprowadzono mieści się w dopuszczalnym zakresem.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#10)]
      [!code-vb[Trin_VstcoreHostControlsExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#10)]

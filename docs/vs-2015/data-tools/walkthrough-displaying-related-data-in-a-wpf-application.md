@@ -19,12 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 873f20383a3a35dcfc7b51128d07d5efc1d11519
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 400e16918f01697eecce2af608ba89e041ca6449
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763904"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065392"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Przewodnik: Wyświetlanie powiązanych danych w aplikacji WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,19 +61,19 @@ W tym instruktażu utworzysz aplikację programu WPF, która wyświetla dane z t
   
 #### <a name="to-create-a-new-wpf-project"></a>Aby utworzyć nowy projekt WPF  
   
-1.  Uruchom program Visual Studio.  
+1. Uruchom program Visual Studio.  
   
-2.  Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **projektu**.  
+2. Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **projektu**.  
   
-3.  Rozwiń **Visual C#** lub **języka Visual Basic**, a następnie wybierz pozycję **Windows**.  
+3. Rozwiń **Visual C#** lub **języka Visual Basic**, a następnie wybierz pozycję **Windows**.  
   
-4.  Upewnij się, że **.NET Framework 4** jest zaznaczona w polu kombi na górze okna dialogowego. <xref:System.Windows.Controls.DataGrid> Formantu, którego używasz w tym przewodniku jest dostępny tylko w programie .NET Framework 4.  
+4. Upewnij się, że **.NET Framework 4** jest zaznaczona w polu kombi na górze okna dialogowego. <xref:System.Windows.Controls.DataGrid> Formantu, którego używasz w tym przewodniku jest dostępny tylko w programie .NET Framework 4.  
   
-5.  Wybierz **aplikacji WPF** szablonu projektu.  
+5. Wybierz **aplikacji WPF** szablonu projektu.  
   
-6.  W **nazwa** wpisz `AdventureWorksOrdersViewer`.  
+6. W **nazwa** wpisz `AdventureWorksOrdersViewer`.  
   
-7.  Kliknij przycisk **OK**.  
+7. Kliknij przycisk **OK**.  
   
      Program Visual Studio tworzy `AdventureWorksOrdersViewer` projektu.  
   
@@ -102,9 +102,9 @@ W tym instruktażu utworzysz aplikację programu WPF, która wyświetla dane z t
   
 6. Na **wybierz obiekty bazy danych** rozwiń **tabel**, a następnie wybierz następujące tabele:  
   
-   -   **SalesOrderDetail**  
+   - **SalesOrderDetail**  
   
-   -   **SalesOrderHeader**  
+   - **SalesOrderHeader**  
   
 7. Kliknij przycisk **Zakończ**.  
   
@@ -192,15 +192,15 @@ W tym instruktażu utworzysz aplikację programu WPF, która wyświetla dane z t
   
 #### <a name="to-test-the-application"></a>Aby przetestować aplikację  
   
-1.  Naciśnij klawisz **F5**.  
+1. Naciśnij klawisz **F5**.  
   
      Aplikacja zostanie skompilowana i działa. Sprawdź następujące informacje:  
   
-    -   **Identyfikator zamówienia sprzedaży** wyświetla pola kombi **71774**. Jest to pierwszy identyfikator zamówienia w jednostce.  
+    - **Identyfikator zamówienia sprzedaży** wyświetla pola kombi **71774**. Jest to pierwszy identyfikator zamówienia w jednostce.  
   
-    -   Dla każdego zamówienia, należy wybrać w **identyfikator zamówienia sprzedaży** pola kombi kolejności szczegółowe informacje są wyświetlane w <xref:System.Windows.Controls.DataGrid>.  
+    - Dla każdego zamówienia, należy wybrać w **identyfikator zamówienia sprzedaży** pola kombi kolejności szczegółowe informacje są wyświetlane w <xref:System.Windows.Controls.DataGrid>.  
   
-2.  Zamknij aplikację.  
+2. Zamknij aplikację.  
   
 ## <a name="next-steps"></a>Następne kroki  
  Po ukończeniu tego przewodnika, Dowiedz się, jak używać **źródeł danych** okna w programie Visual Studio, aby powiązać WPF formanty do innych typów źródeł danych. Aby uzyskać więcej informacji, zobacz [WPF powiązać formanty do usługi danych WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) i [WPF powiązać formanty do zestawu danych](../data-tools/bind-wpf-controls-to-a-dataset.md).  

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13df8f9a4a360c48d25d46ba3cddb1b42d5150a5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3428a5aeca92d8c56634b3221bd35a0e8d0bb926
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632358"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069123"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Wdrażanie składników COM za pomocą technologii ClickOnce
 Wdrażanie składników COM, starszy tradycyjnie było trudne zadanie. Składniki potrzebne do zarejestrowania globalnie i ten sposób może spowodować niepożądane skutki uboczne między nakładającymi się aplikacje. Ta sytuacja zwykle nie jest to problem występujący w aplikacjach .NET Framework, ponieważ składniki są całkowicie odizolowane do aplikacji lub są zgodne z side-by-side. Program Visual Studio umożliwia wdrażanie izolowane składniki COM na wyższe system operacyjny lub Windows XP.
@@ -46,9 +46,9 @@ Wdrażanie składników COM, starszy tradycyjnie było trudne zadanie. Składnik
 
  Istnieją dwa sposoby, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdraża składniki COM:
 
--   Wdrażanie składników COM; przy użyciu programu inicjującego to działa na wszystkich obsługiwanych platformach.
+- Wdrażanie składników COM; przy użyciu programu inicjującego to działa na wszystkich obsługiwanych platformach.
 
--   Przy użyciu składnika macierzystego izolacji (znany także jako rejestracji wolnego modelu COM) wdrażania. Jednak ta opcja zadziała tylko w Windows XP lub nowszej systemu operacyjnego.
+- Przy użyciu składnika macierzystego izolacji (znany także jako rejestracji wolnego modelu COM) wdrażania. Jednak ta opcja zadziała tylko w Windows XP lub nowszej systemu operacyjnego.
 
 ### <a name="example-of-isolating-and-deploying-a-simple-com-component"></a>Przykład izolowanie i wdrażania prostego składnika modelu COM
  W celu przedstawienia wdrożenie składnika COM bez rejestrowania, w tym przykładzie zostanie tworzenie aplikacji z systemem Windows w języku Visual Basic, który odwołuje się do izolowanego składnika COM natywne utworzone przy użyciu języka Visual Basic 6.0 i wdróż je za pomocą [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
@@ -57,16 +57,16 @@ Wdrażanie składników COM, starszy tradycyjnie było trudne zadanie. Składnik
 
 ##### <a name="to-create-a-native-com-component"></a>Do tworzenia natywnych składnika modelu COM
 
-1.  Za pomocą języka Visual Basic 6.0 z **pliku** menu, kliknij przycisk **New**, następnie **projektu**.
+1. Za pomocą języka Visual Basic 6.0 z **pliku** menu, kliknij przycisk **New**, następnie **projektu**.
 
-2.  W **nowy projekt** okno dialogowe, wybierz opcję **języka Visual Basic** a następnie wybierz węzeł **ActiveX DLL** projektu. W **nazwa** wpisz `VB6Hello`.
+2. W **nowy projekt** okno dialogowe, wybierz opcję **języka Visual Basic** a następnie wybierz węzeł **ActiveX DLL** projektu. W **nazwa** wpisz `VB6Hello`.
 
     > [!NOTE]
     >  Obsługiwane są tylko typy projektu ActiveX biblioteki DLL i kontrolki ActiveX z COM bez rejestrowania; Typy projektu ActiveX EXE i dokumentu ActiveX nie są obsługiwane.
 
-3.  W **Eksploratora rozwiązań**, kliknij dwukrotnie **Class1.vb** można otworzyć edytora tekstu.
+3. W **Eksploratora rozwiązań**, kliknij dwukrotnie **Class1.vb** można otworzyć edytora tekstu.
 
-4.  W Class1.vb, Dodaj następujący kod po kod generowany dla `New` metody:
+4. W Class1.vb, Dodaj następujący kod po kod generowany dla `New` metody:
 
     ```vb
     Public Sub SayHello()
@@ -74,7 +74,7 @@ Wdrażanie składników COM, starszy tradycyjnie było trudne zadanie. Składnik
     End Sub
     ```
 
-5.  Utwórz składnik. Z **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+5. Utwórz składnik. Z **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
 > [!NOTE]
 >  COM bez rejestrowania obsługuje tylko bibliotek DLL i COM kontroluje typów projektów. Nie można używać pliku exe z rejestracji wolnego modelu COM.

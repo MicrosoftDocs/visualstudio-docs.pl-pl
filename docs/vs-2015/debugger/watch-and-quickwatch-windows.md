@@ -24,12 +24,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6fa22e93a767df599815c87e5809faddb674854b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d1a6167759d35dd67142e1919423df6aa380fe88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797931"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063533"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Wyrażenie kontrolne i QuickWatch Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,15 +54,15 @@ static void Main(string[] args)
   
  Możesz obserwować zmiennej w oknie QuickWatch w następujący sposób:  
   
-1.  Ustaw punkt przerwania na `a = a + b;` wiersza.  
+1. Ustaw punkt przerwania na `a = a + b;` wiersza.  
   
-2.  Rozpocznij debugowanie. Zatrzymuje wykonywanie w punkcie przerwania.  
+2. Rozpocznij debugowanie. Zatrzymuje wykonywanie w punkcie przerwania.  
   
-3.  Otwórz **QuickWatch** okna (kliknij prawym przyciskiem myszy, wybierz **debugowanie / QuickWatch**, lub **SHIFT + F9**). Możesz otworzyć okno i Dodaj zmienną **wyrażenie** okna, następnie kliknij przycisk **to ponowne ocenienie**. Powinien zostać wyświetlony zmiennej w **wartości** okna o wartości 2.  
+3. Otwórz **QuickWatch** okna (kliknij prawym przyciskiem myszy, wybierz **debugowanie / QuickWatch**, lub **SHIFT + F9**). Możesz otworzyć okno i Dodaj zmienną **wyrażenie** okna, następnie kliknij przycisk **to ponowne ocenienie**. Powinien zostać wyświetlony zmiennej w **wartości** okna o wartości 2.  
   
-4.  **QuickWatch** okno jest oknem modalne okno dialogowe, więc nie można kontynuować debugowanie tak długo, jak jest otwarty. Można dodać zmienną **Obejrzyj** okien przez kliknięcie przycisku **Dodaj czujkę**.  
+4. **QuickWatch** okno jest oknem modalne okno dialogowe, więc nie można kontynuować debugowanie tak długo, jak jest otwarty. Można dodać zmienną **Obejrzyj** okien przez kliknięcie przycisku **Dodaj czujkę**.  
   
-5.  Zamknij **QuickWatch** okna. Teraz można kontynuować debugowanie podczas obserwowania wartość w **Obejrzyj** okna  
+5. Zamknij **QuickWatch** okna. Teraz można kontynuować debugowanie podczas obserwowania wartość w **Obejrzyj** okna  
   
 ## <a name="observing-variables-with-the-watch-window"></a>Obserwowanie zmiennych z okna czujki  
  Możesz obserwować wiele zmiennych o **Obejrzyj** okna. Na przykład, jeśli masz następujący kod:  
@@ -112,7 +112,7 @@ static void Main(string[] args)
   
  ![WatchExpressionError](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
   
-##  <a name="bkmk_refreshWatch"></a> Odświeżanie wartości czujki, które są nieaktualne  
+## <a name="bkmk_refreshWatch"></a> Odświeżanie wartości czujki, które są nieaktualne  
  W pewnych okolicznościach może być widoczna jest ikona odświeżania, (koło przy użyciu dwóch strzałek lub koło z dwóch faliste linie) gdy wyrażenie jest obliczane w **Obejrzyj** okna.  Na przykład, jeśli masz oceny właściwości wyłączony (**narzędzia / Opcje / Debugowanie / Włącz obliczanie właściwości i inne niejawne wywołania funkcji**), i masz następujący kod:  
   
 ```csharp  
@@ -143,7 +143,7 @@ static void Main(string[] args)
   
   Jeśli widzisz ikonę która zostanie koło z dwóch falistych linii, które przypominają wątków, wyrażenie nie zostało ocenione ze względu na potencjalne zależności między wątkami. Innymi słowy obliczenie kodu wymaga innych wątków w aplikacji w celu tymczasowego uruchomienia. Podczas pracy w trybie przerwania, wszystkie wątki w aplikacji zwykle są zatrzymywane. Zezwolenie tymczasowego uruchomienia innych wątków może mieć nieoczekiwane wpływ na stan programu i powoduje, że debuger Ignoruj zdarzenia, takie jak punkty przerwania i wyjątków zgłaszanych na te wątki.  
   
-##  <a name="bkmk_sideEffects"></a> Efekty uboczne i wyrażenia  
+## <a name="bkmk_sideEffects"></a> Efekty uboczne i wyrażenia  
  Obliczenie niektórych wyrażeń może zmienić wartość zmiennej lub inaczej wpłynąć na stan programu. Na przykład obliczenie następującego wyrażenia zmienia wartość `var1`:  
   
 ```  
@@ -202,17 +202,17 @@ public class Program
   
  Można dodać odwołanie do tego `Person` obiektu **Obejrzyj** okna w następujący sposób:  
   
-1.  Ustaw punkt przerwania w kodzie na pewien czas, po utworzeniu obiektu.  
+1. Ustaw punkt przerwania w kodzie na pewien czas, po utworzeniu obiektu.  
   
-2.  Rozpocznij debugowanie, a po zatrzymaniu w punkcie przerwania wykonywania odnaleźć zmiennej w **lokalne** okna, kliknij go prawym przyciskiem myszy, a następnie wybierz pozycję **wprowadzić identyfikator obiektu**.  
+2. Rozpocznij debugowanie, a po zatrzymaniu w punkcie przerwania wykonywania odnaleźć zmiennej w **lokalne** okna, kliknij go prawym przyciskiem myszy, a następnie wybierz pozycję **wprowadzić identyfikator obiektu**.  
   
-3.  Powinien zostać wyświetlony **$** oraz liczbą **lokalne** okna. Jest to identyfikator obiektu.  
+3. Powinien zostać wyświetlony **$** oraz liczbą **lokalne** okna. Jest to identyfikator obiektu.  
   
-4.  Dodaj identyfikator obiektu w oknie czujki.  
+4. Dodaj identyfikator obiektu w oknie czujki.  
   
-5.  Ustaw punkt przerwania, w którym chcesz obserwować zachowanie obiektu.  W powyższym kodzie, który będzie mieć `DoSomething()` metody.  
+5. Ustaw punkt przerwania, w którym chcesz obserwować zachowanie obiektu.  W powyższym kodzie, który będzie mieć `DoSomething()` metody.  
   
-6.  Kontynuuj debugowanie i zatrzymania wykonywania w `DoSomething()` metody **Obejrzyj** jest wyświetlana w oknie `Person` obiektu.  
+6. Kontynuuj debugowanie i zatrzymania wykonywania w `DoSomething()` metody **Obejrzyj** jest wyświetlana w oknie `Person` obiektu.  
   
 > [!NOTE]
 >  Jeśli chcesz wyświetlić właściwości tego obiektu, takie jak `Person.Name` w powyższym przykładzie muszą mieć włączone właściwości oceny.  

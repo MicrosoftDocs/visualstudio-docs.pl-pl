@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bebc8581ead00eeb6b28c2c45f4dcfe991a9e1a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3dfaa1fb344f11817cc67a074580c726f3d23036
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918156"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076045"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Testowanie dużej aplikacji przy użyciu wielu map UI
 
@@ -42,9 +42,9 @@ Użycie wielu plików mapy interfejsu użytkownika może zapewnić następujące
 ## <a name="do-you-need-multiple-ui-maps"></a>Czy potrzebujesz wielu map interfejsu użytkownika?
  Tworzenie wielu map interfejsu użytkownika w każdym z tego typu sytuacje:
 
--   Kilka złożonych zestawów złożonych kontrolek interfejsu użytkownika, które wspólnie wykonują operacji logicznej, takich jak strony rejestracji w witrynie sieci Web lub strony zakupu koszyk sklepowy.
+- Kilka złożonych zestawów złożonych kontrolek interfejsu użytkownika, które wspólnie wykonują operacji logicznej, takich jak strony rejestracji w witrynie sieci Web lub strony zakupu koszyk sklepowy.
 
--   Niezależny zestaw kontrolek, które jest dostępne z różnych punktach aplikacji, na przykład Kreator z kilku stron operacji. Jeśli każda strona kreatora jest szczególnie złożony, można utworzyć oddzielne map interfejsu użytkownika dla każdej strony.
+- Niezależny zestaw kontrolek, które jest dostępne z różnych punktach aplikacji, na przykład Kreator z kilku stron operacji. Jeśli każda strona kreatora jest szczególnie złożony, można utworzyć oddzielne map interfejsu użytkownika dla każdej strony.
 
 ## <a name="add-multiple-ui-maps"></a>Dodawanie wielu map UI
 

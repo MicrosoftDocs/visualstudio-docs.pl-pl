@@ -12,12 +12,12 @@ ms.assetid: df759e89-8193-418c-8038-6626304d387b
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ff387bb2cd029e80641e8c13b198b8f22ccabd1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a2b2b5ca848da4ca680be819e41a8053b21a7d0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794500"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061362"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Instrukcje: Zapewnianie rozszerzonej obsługi zwijania w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,15 +29,15 @@ Dostępne są dwie opcje do rozszerzania możliwości programu obsługi zwijania
   
 #### <a name="to-implement-an-editor-controlled-outline-region"></a>Aby zaimplementować z regionu kontrolowane przez Edytor konspektu  
   
-1.  Wywołaj `QueryService` dla <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>  
+1. Wywołaj `QueryService` dla <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>  
   
      Zwraca wskaźnik do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>.  
   
-2.  Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>, przekazując wskaźnik do buforu danego tekstu. Zwraca wskaźnik do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> obiektu dla buforu.  
+2. Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>, przekazując wskaźnik do buforu danego tekstu. Zwraca wskaźnik do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> obiektu dla buforu.  
   
-3.  Wywołaj <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> na <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> dla wskaźnika do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession>.  
+3. Wywołaj <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> na <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> dla wskaźnika do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession>.  
   
-4.  Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> można dodać jeden lub więcej nowych konturu regiony na raz.  
+4. Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> można dodać jeden lub więcej nowych konturu regiony na raz.  
   
      Ta metoda umożliwia określenie zakresu tekstu do konspektu, czy usunąć lub zachowane istniejących regionach konturu i tego, czy region konspektu jest rozwinięta, czy zwinięta domyślnie.  
   
@@ -46,13 +46,13 @@ Dostępne są dwie opcje do rozszerzania możliwości programu obsługi zwijania
   
 #### <a name="to-implement-a-client-controlled-outline-region"></a>Aby zaimplementować region konspektu kontrolowane przez klienta  
   
-1.  Wywołaj `QueryService` dla <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>. Zwraca wskaźnik do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>.  
+1. Wywołaj `QueryService` dla <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>. Zwraca wskaźnik do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>.  
   
-2.  Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>, przekazując wskaźnik do buforu danego tekstu. Określa, czy sesja ukryty tekst, który jest już istnieje dla buforu.  
+2. Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>, przekazując wskaźnik do buforu danego tekstu. Określa, czy sesja ukryty tekst, który jest już istnieje dla buforu.  
   
-3.  Jeśli sesja tekst, który jest już istnieje, a następnie nie musisz utworzyć jeden, a wskaźnik do istniejących <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> obiekt jest zwracany. Za pomocą tego wskaźnika mógł wyliczyć i tworzenie konspektu regionów. W przeciwnym razie wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> do utworzenia sesji ukrytego tekstu dla buforu. Wskaźnik do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> obiekt jest zwracany.  
+3. Jeśli sesja tekst, który jest już istnieje, a następnie nie musisz utworzyć jeden, a wskaźnik do istniejących <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> obiekt jest zwracany. Za pomocą tego wskaźnika mógł wyliczyć i tworzenie konspektu regionów. W przeciwnym razie wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> do utworzenia sesji ukrytego tekstu dla buforu. Wskaźnik do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> obiekt jest zwracany.  
   
     > [!NOTE]
     >  Podczas wywoływania <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>, można określić klienta tekstu ukrytego (czyli <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> obiektu). Ten klient powiadamia użytkownika, gdy tekstu ukrytego lub konspektu region jest rozwinięta czy zwinięta przez użytkownika.  
   
-4.  Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> struktury) parametr: Określ wartość <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> w `iType` członkiem <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> struktury, aby wskazać, tworzysz region konspektu, zamiast ukryty region. Określ, czy region jest kontrolowany przez klienta lub Edytor kontrolowane w `dwBehavior` członkiem <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> struktury. Inteligentne implementacji konspektu może zawierać kombinację regionów konspektu kontrolowane przez Edytor i klienta. Podaj tekst transparentu, który jest wyświetlane, gdy w Twoim regionie konspektu jest zwinięte, takie jak "..." w `pszBanner` członkiem <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> struktury. Edytor domyślny Baner tekst ukryty region jest "...".
+4. Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> struktury) parametr: Określ wartość <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> w `iType` członkiem <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> struktury, aby wskazać, tworzysz region konspektu, zamiast ukryty region. Określ, czy region jest kontrolowany przez klienta lub Edytor kontrolowane w `dwBehavior` członkiem <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> struktury. Inteligentne implementacji konspektu może zawierać kombinację regionów konspektu kontrolowane przez Edytor i klienta. Podaj tekst transparentu, który jest wyświetlane, gdy w Twoim regionie konspektu jest zwinięte, takie jak "..." w `pszBanner` członkiem <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> struktury. Edytor domyślny Baner tekst ukryty region jest "...".

@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfbc41b24dd0e58dd24e0af99afe458d27f8ade6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b73d5c8acac211db09926acf0ba8009aa04ac0a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930860"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070906"
 ---
 # <a name="search-the-schema-set"></a>Wyszukiwanie zestawu schematów
 
 **Eksploratora schematu XML** umożliwia wyszukiwanie schematu ustawiony w następujący sposób:
 
--   Wyszukiwanie słów kluczowych.
+- Wyszukiwanie słów kluczowych.
 
--   Wyszukiwanie specyficzne dla schematu.
+- Wyszukiwanie specyficzne dla schematu.
 
 ## <a name="keyword-search"></a>Wyszukiwanie słów kluczowych
 
@@ -31,11 +31,11 @@ ms.locfileid: "55930860"
 
  **Eksploratora schematu XML** wyszukuje schematu dla następujących atrybutów:
 
--   Wszelkie `name` lub `ref` atrybuty, które pasują do określonego słowa kluczowego. Według nazwy, można znaleźć elementy, atrybuty, typy i tak dalej.
+- Wszelkie `name` lub `ref` atrybuty, które pasują do określonego słowa kluczowego. Według nazwy, można znaleźć elementy, atrybuty, typy i tak dalej.
 
--   `schemaLocation` Atrybuty instrukcji #include.
+- `schemaLocation` Atrybuty instrukcji #include.
 
--   `namespace` Atrybuty instrukcje importowania.
+- `namespace` Atrybuty instrukcje importowania.
 
 ## <a name="schema-specific-search"></a>Wyszukiwanie określonego schematu
 

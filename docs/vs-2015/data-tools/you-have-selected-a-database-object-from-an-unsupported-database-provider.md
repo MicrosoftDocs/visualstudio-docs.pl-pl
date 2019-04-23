@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4021d6413acbe895995ee25809deb250daf6872c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b8ecec386030299be7b6c9571218dec0c3396440
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764154"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073595"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Wybrano obiekt bazy danych od nieobsługiwanego dostawcy bazy danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,11 +26,11 @@ ms.locfileid: "54764154"
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Kliknij przycisk **OK** kontynuować projektowania klas jednostek, które mapują do połączenia, który używa nieobsługiwanego dostawcy bazy danych. Może wystąpić nieoczekiwane zachowanie, gdy używasz nieobsługiwanej bazy danych dostawcy.  
+- Kliknij przycisk **OK** kontynuować projektowania klas jednostek, które mapują do połączenia, który używa nieobsługiwanego dostawcy bazy danych. Może wystąpić nieoczekiwane zachowanie, gdy używasz nieobsługiwanej bazy danych dostawcy.  
   
      —lub—  
   
--   Kliknij przycisk **anulować**.  
+- Kliknij przycisk **anulować**.  
   
      Akcja została zatrzymana. Utwórz lub użyj połączenia danych, która używa dostawcy programu .NET Framework dla programu SQL Server.  
   

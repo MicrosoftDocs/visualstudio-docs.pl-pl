@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb038fdebdfefeb5f401860c17b5567028c3bb77
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c4241464fe8a43af882fbdbad0f898838e8fd897
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621347"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068369"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Instrukcje: Dodawanie formantów do widoku Backstage
   Można użyć projektanta wstążki, aby dodać formanty do menu otwieranego po kliknięciu **pliku** kartę. Po uruchomieniu aplikacji, formanty, które dodajesz do **pliku** karta pojawi się grupa o nazwie **Add-ins**.
@@ -36,31 +36,31 @@ ms.locfileid: "56621347"
 
 ### <a name="to-add-controls-to-backstage-view"></a>Aby dodać formanty do widoku Backstage
 
-1.  Otwórz element wstążki w widoku Projekt.
+1. Otwórz element wstążki w widoku Projekt.
 
      Aby uzyskać informacje dotyczące sposobu dodawania **Wstążka (Projektant graficzny)** elementu do projektu, zobacz [jak: Wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-2.  W Projektancie Wstążki kliknij **pliku** kartę.
+2. W Projektancie Wstążki kliknij **pliku** kartę.
 
      Projektant menu pojawia się. Tę powierzchnię projektu nie zawiera żadnych formantów.
 
-3.  Z **formanty wstążki Office** karcie **przybornika**, przeciągnij dowolny z następujących formantów w Projektancie menu:
+3. Z **formanty wstążki Office** karcie **przybornika**, przeciągnij dowolny z następujących formantów w Projektancie menu:
 
-    -   Przycisk
+    - Przycisk
 
-    -   CheckBox
+    - CheckBox
 
-    -   Galeria
+    - Galeria
 
-    -   Menu
+    - Menu
 
-    -   Separator
+    - Separator
 
-    -   SplitButton
+    - SplitButton
 
-    -   ToggleButton
+    - ToggleButton
 
-4.  Przeciągnij formanty, aby przenieść je do nowej pozycji menu.
+4. Przeciągnij formanty, aby przenieść je do nowej pozycji menu.
 
 ## <a name="see-also"></a>Zobacz także
 - [Wstążka — omówienie](../vsto/ribbon-overview.md)

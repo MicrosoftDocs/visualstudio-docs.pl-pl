@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c3c477fa1187dfd6ffc24653915e0e8d708d77c3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ec9d40d889964c3b0f369b87d8cd2c2312aaea18
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669931"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075145"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generowanie testów jednostkowych dla kodu za pomocą funkcji IntelliTest
 
@@ -38,9 +38,9 @@ Po uruchomieniu testów funkcji IntelliTest, można łatwo zobaczyć, testy, kt�
 
 Do generowania testów jednostkowych, typów muszą być publiczne. W przeciwnym razie [Utwórz testy jednostkowe](#NoRun) pierwszy przed wygenerowaniem je.
 
-1.  Otwórz swoje rozwiązanie w programie Visual Studio. Następnie otwórz plik klasy, który zawiera metody, które mają zostać przetestowane.
+1. Otwórz swoje rozwiązanie w programie Visual Studio. Następnie otwórz plik klasy, który zawiera metody, które mają zostać przetestowane.
 
-2.  Kliknij prawym przyciskiem myszy metodę w kodzie, a następnie wybierz **Uruchom test IntelliTest** do generowania testów jednostkowych dla kodu w metodzie.
+2. Kliknij prawym przyciskiem myszy metodę w kodzie, a następnie wybierz **Uruchom test IntelliTest** do generowania testów jednostkowych dla kodu w metodzie.
 
      ![Po prawej stronie&#45;kliknij w metodzie do generowania testów jednostkowych](../test/media/runpex.png)
 
@@ -56,7 +56,7 @@ Do generowania testów jednostkowych, typów muszą być publiczne. W przeciwnym
 
 ## <a name="persist-save-the-unit-tests-as-a-regression-suite"></a>Utrwalanie: Zapisz testów jednostkowych jako mechanizm regresji
 
-1.  Wybierz wiersze danych, które chcesz zapisać za pomocą sparametryzowanego testu jednostkowego do projektu testowego.
+1. Wybierz wiersze danych, które chcesz zapisać za pomocą sparametryzowanego testu jednostkowego do projektu testowego.
 
      ![Wybierz testy; prawy&#45;kliknij przycisk, a następnie wybierz opcję Zapisz](../test/media/savepextests.png)
 
@@ -70,13 +70,13 @@ Do generowania testów jednostkowych, typów muszą być publiczne. W przeciwnym
 
 ## <a name="assist-use-intellitest-to-focus-code-exploration"></a>Assist: Użyj funkcji IntelliTest, aby fokus kod — Eksploracja
 
-1.  W przypadku bardziej złożonego kodu funkcji IntelliTest pomaga z poziomu Eksploracja kodu. Na przykład jeśli masz metodę, która ma interfejs jako parametr, a istnieje więcej niż jedną klasę, która implementuje ten interfejs, IntelliTest umożliwia odnalezienie tych klas i zgłosi ostrzeżenie.
+1. W przypadku bardziej złożonego kodu funkcji IntelliTest pomaga z poziomu Eksploracja kodu. Na przykład jeśli masz metodę, która ma interfejs jako parametr, a istnieje więcej niż jedną klasę, która implementuje ten interfejs, IntelliTest umożliwia odnalezienie tych klas i zgłosi ostrzeżenie.
 
      Wyświetl ostrzeżenia zdecydować, co chcesz zrobić.
 
      ![Wyświetl ostrzeżenia](../test/media/pexviewwarning.png)
 
-2.  Po badanie kodu i zrozumieć, co chcesz przetestować, możesz rozwiązać je, aby wybrać klas, które można używać do testowania interfejsu.
+2. Po badanie kodu i zrozumieć, co chcesz przetestować, możesz rozwiązać je, aby wybrać klas, które można używać do testowania interfejsu.
 
      ![Po prawej stronie&#45;kliknij ostrzeżenie, a następnie wybierz poprawkę](../test/media/pexfixwarning.png)
 
@@ -84,7 +84,7 @@ Do generowania testów jednostkowych, typów muszą być publiczne. W przeciwnym
 
      `[assembly: PexUseType(typeof(Camera))]`
 
-3.  Teraz można uruchomić program IntelliTest do generowania sparametryzowanego testu jednostkowego i po prostu przy użyciu klasy, która Naprawiono dane testowe.
+3. Teraz można uruchomić program IntelliTest do generowania sparametryzowanego testu jednostkowego i po prostu przy użyciu klasy, która Naprawiono dane testowe.
 
      ![Ponownie uruchom program IntelliTest w celu wygenerowania danych testowych](../test/media/pexwarningsfixed.png)
 
@@ -92,7 +92,7 @@ Do generowania testów jednostkowych, typów muszą być publiczne. W przeciwnym
 
 Określ ogólne relacji między dane wejściowe i wyjściowe, które mają wygenerowane testy jednostkowe do sprawdzania poprawności. Ta specyfikacja jest hermetyzowany w metodzie, która wygląda jak metody testowej, ale ogólnie jest obliczana. Jest to metoda testowa sparametryzowanej jednostki i potwierdzenia, wszystkie wprowadzone muszą spełniać wszystkie możliwe wartości wejściowych, które mogą generować IntelliTest.
 
-##  <a name="q--a"></a>Pytania i odpowiedzi
+## <a name="q--a"></a>Pytania i odpowiedzi
 
 ### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>PYT.: Można użyć funkcji IntelliTest dla niezarządzanego kodu?
 
@@ -104,13 +104,13 @@ Określ ogólne relacji między dane wejściowe i wyjściowe, które mają wygen
 
  Jeśli masz test, który można przekazać, jeśli istnieją pewne wyjątki zgłaszane, możesz ustawić jedną z następujących atrybutów, w zależności od wymagań na metody testowej, w klasie testu lub zestawu poziomu:
 
--   **PexAllowedExceptionAttribute**
+- **PexAllowedExceptionAttribute**
 
--   **PexAllowedExceptionFromTypeAttribute**
+- **PexAllowedExceptionFromTypeAttribute**
 
--   **PexAllowedExceptionFromTypeUnderTestAttribute**
+- **PexAllowedExceptionFromTypeUnderTestAttribute**
 
--   **PexAllowedExceptionFromAssemblyAttribute**
+- **PexAllowedExceptionFromAssemblyAttribute**
 
 ### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>PYT.: Czy mogę dodać założenia sparametryzowanego testu jednostkowego?
 
@@ -128,7 +128,7 @@ Określ ogólne relacji między dane wejściowe i wyjściowe, które mają wygen
 
  Jeśli dodasz potwierdzenie, a następnie ponownie uruchom program IntelliTest, będzie sprawdzał, czy Twoje potwierdzenie jest prawidłowa, i test zakończy się niepowodzeniem, jeśli nie jest.
 
-###  <a name="NoRun"></a> Q: Czy mogę wygenerować sparametryzowane testy jednostek bez konieczności uruchamiania programu IntelliTest najpierw?
+### <a name="NoRun"></a> Q: Czy mogę wygenerować sparametryzowane testy jednostek bez konieczności uruchamiania programu IntelliTest najpierw?
 
 **ODP.:** Tak, kliknij prawym przyciskiem myszy klasy lub metody, a następnie wybierz **tworzenie testów funkcji IntelliTest**.
 

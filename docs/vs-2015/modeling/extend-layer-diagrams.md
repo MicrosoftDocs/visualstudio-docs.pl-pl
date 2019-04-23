@@ -12,12 +12,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219f850ed73104357766ffc4333da55647fb9d40
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: af191c929b88f1bda76896061359b7315517beb5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843745"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066081"
 ---
 # <a name="extend-layer-diagrams"></a>Rozszerzone diagramy warstw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ Można napisać kod, do tworzenia i aktualizowania diagramy warstwowe, a do spra
   
  Aby uzyskać więcej informacji o diagramach warstwowych zobacz:  
   
--   [Diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md)  
+- [Diagramy warstw: informacje](../modeling/layer-diagrams-reference.md)  
   
--   [Diagramy warstw: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)  
+- [Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)  
   
--   [Tworzenie diagramów warstw z kodu](../modeling/create-layer-diagrams-from-your-code.md)  
+- [Tworzenie diagramów warstw z kodu](../modeling/create-layer-diagrams-from-your-code.md)  
   
--   [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)  
+- [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)  
   
-##  <a name="prereqs"></a> Wymagania  
+## <a name="prereqs"></a> Wymagania  
  Musisz mieć zainstalowane na komputerze, gdzie chcesz rozwijać swoje rozszerzenia warstwy następujące elementy:  
   
 - Visual Studio  

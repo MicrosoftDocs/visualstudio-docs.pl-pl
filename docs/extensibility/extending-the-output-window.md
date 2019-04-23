@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03e7cb1a462c79f498687296afd8c64accfc1458
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 86498adc4d8bce2a7d428b2951764e5d4b8a96a9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706213"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041083"
 ---
 # <a name="extend-the-output-window"></a>Rozszerzanie okna danych wyjściowych
 **Dane wyjściowe** okno to zbiór okienek tekstu odczytu/zapisu. Program Visual Studio zawiera te okienka wbudowane: **Tworzenie**, w projektach, które komunikują się komunikaty dotyczące kompilacji i **ogólne**, w którym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komunikuje się komunikaty dotyczące środowiska IDE. Projekty odwołać się do **kompilacji** automatycznie za pomocą okienka <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> metody interfejsu i programu Visual Studio zapewnia bezpośredni dostęp do **ogólne** okienko za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> Usługa. Oprócz wbudowanych okienek można tworzyć i zarządzać własnych niestandardowych okienek.
@@ -25,22 +25,22 @@ ms.locfileid: "56706213"
 ## <a name="create-an-extension-that-uses-the-output-pane"></a>Tworzenie rozszerzenia, które używa okienko danych wyjściowych
  Istnieje możliwość rozszerzenia, które wykonuje różne aspekty okienko danych wyjściowych.
 
-1.  Utwórz projekt VSIX, o nazwie `TestOutput` za pomocą polecenia menu o nazwie **TestOutput**. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Utwórz projekt VSIX, o nazwie `TestOutput` za pomocą polecenia menu o nazwie **TestOutput**. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Dodaj następujące odwołania:
+2. Dodaj następujące odwołania:
 
-    1.  EnvDTE
+    1. EnvDTE
 
-    2.  EnvDTE80
+    2. EnvDTE80
 
-3.  W *TestOutput.cs*, dodaj następującą instrukcję using:
+3. W *TestOutput.cs*, dodaj następującą instrukcję using:
 
     ```f#
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  W *TestOutput.cs*, Usuń `ShowMessageBox` metody. Dodaj następujące szkieletu metody:
+4. W *TestOutput.cs*, Usuń `ShowMessageBox` metody. Dodaj następujące szkieletu metody:
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)
@@ -48,7 +48,7 @@ ms.locfileid: "56706213"
     }
     ```
 
-5.  W Konstruktorze TestOutput zmienić program obsługi poleceń do OutputCommandHandler. Oto części, które umożliwia dodanie polecenia:
+5. W Konstruktorze TestOutput zmienić program obsługi poleceń do OutputCommandHandler. Oto części, które umożliwia dodanie polecenia:
 
     ```csharp
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
@@ -61,7 +61,7 @@ ms.locfileid: "56706213"
     }
     ```
 
-6.  Poniższe sekcje mają różne metody, które pokazują różne sposoby radzenia sobie z okienkiem danych wyjściowych. Może wywoływać te metody, aby treść `OutputCommandHandler()` metody. Na przykład, poniższy kod dodaje `CreatePane()` metody podanej w następnej sekcji.
+6. Poniższe sekcje mają różne metody, które pokazują różne sposoby radzenia sobie z okienkiem danych wyjściowych. Może wywoływać te metody, aby treść `OutputCommandHandler()` metody. Na przykład, poniższy kod dodaje `CreatePane()` metody podanej w następnej sekcji.
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)

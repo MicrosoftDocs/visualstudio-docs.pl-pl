@@ -7,12 +7,12 @@ ms.author: mblome
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31de4178d5d6ab2e1798c0b881ceb0fcb6fb2366
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: ed4d024b7d10f4432c6a2326f07bb068075971f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954218"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073387"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Jak używać platformy Boost.Test dla języka C++ w programie Visual Studio
 
@@ -73,6 +73,7 @@ W programie Visual Studio 2017 w wersji 15.5 dostępnych żadnych szablonów pro
         <VcpkgEnabled>true</VcpkgEnabled>
     </PropertyGroup>
     ```
+
    c. Zapisz i Zamknij  *\*.vcxproj* pliku, a następnie ponownie Załaduj projekt.
 
    d. Aby otworzyć **stron właściwości**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **właściwości**.

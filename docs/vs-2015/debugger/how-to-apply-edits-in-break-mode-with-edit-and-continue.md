@@ -24,12 +24,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd247cd50566130504110bd37c4b87f9e4783ae7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e26b293a5ac7326ca8f82250ec3d0da9fe96371c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794566"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069929"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Instrukcje: Zastosowanie zmian w trybie przerwania za pomocą Edytuj i Kontynuuj
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,46 +38,46 @@ Edytuj i Kontynuuj umożliwia edytowanie kodu w trybie przerwania, a następnie 
   
  Edytuj i Kontynuuj nie jest dostępna w następujących scenariuszach debugowania:  
   
--   Debugowanie trybu mieszanego (natywnego/zarządzanego).  
+- Debugowanie trybu mieszanego (natywnego/zarządzanego).  
   
--   Debugowanie SQL.  
+- Debugowanie SQL.  
   
--   Debugowanie odzyskiwania po awarii. Zrzut programu Watson.  
+- Debugowanie odzyskiwania po awarii. Zrzut programu Watson.  
   
--   Edytowanie kodu po wystąpieniu nieobsługiwanego wyjątku, gdy **Unwind na stosie wywołań dotycząca nieobsłużonych wyjątków** nie wybrano opcji.  
+- Edytowanie kodu po wystąpieniu nieobsługiwanego wyjątku, gdy **Unwind na stosie wywołań dotycząca nieobsłużonych wyjątków** nie wybrano opcji.  
   
--   Debugowanie aplikacji osadzonego środowiska uruchomieniowego.  
+- Debugowanie aplikacji osadzonego środowiska uruchomieniowego.  
   
--   Debugowanie aplikacji przy użyciu **dołączyć do** zamiast uruchamiania aplikacji przy użyciu **Start** z **debugowania** menu.  
+- Debugowanie aplikacji przy użyciu **dołączyć do** zamiast uruchamiania aplikacji przy użyciu **Start** z **debugowania** menu.  
   
--   Debugowanie zoptymalizowanego kodu.  
+- Debugowanie zoptymalizowanego kodu.  
   
--   Debugowanie kodu zarządzanego, gdy obiektem docelowym jest aplikacją 64-bitową. Jeśli chcesz Użyj funkcji Edytuj i Kontynuuj, należy ustawić element docelowy x86. (_Projektu_**właściwości**, **skompilować** karcie **zaawansowane kompilatora** ustawienie.).  
+- Debugowanie kodu zarządzanego, gdy obiektem docelowym jest aplikacją 64-bitową. Jeśli chcesz Użyj funkcji Edytuj i Kontynuuj, należy ustawić element docelowy x86. (_Projektu_**właściwości**, **skompilować** karcie **zaawansowane kompilatora** ustawienie.).  
   
--   Debugowanie starą wersję kodu po nowej wersji nie powiodło się skompilowanie z powodu błędów kompilacji.  
+- Debugowanie starą wersję kodu po nowej wersji nie powiodło się skompilowanie z powodu błędów kompilacji.  
   
 ### <a name="to-edit-code-in-break-mode"></a>Do edycji kodu w trybie przerwania  
   
-1.  Tryb przerwania, wykonując jedną z następujących czynności:  
+1. Tryb przerwania, wykonując jedną z następujących czynności:  
   
-    -   Ustaw punkt przerwania w kodzie, a następnie wybierz **Rozpocznij debugowanie** z **debugowania** menu i zaczekaj, aż ją w dotarciu do punktu przerwania.  
-  
-         — lub —  
-  
-    -   Rozpocznij debugowanie, a następnie wybierz **Przerwij wszystko** z **debugowania** menu.  
+    - Ustaw punkt przerwania w kodzie, a następnie wybierz **Rozpocznij debugowanie** z **debugowania** menu i zaczekaj, aż ją w dotarciu do punktu przerwania.  
   
          — lub —  
   
-    -   Gdy wystąpi wyjątek, wybierz pozycję **Włącz edytowanie** na**Asystenta wyjątków**.  
+    - Rozpocznij debugowanie, a następnie wybierz **Przerwij wszystko** z **debugowania** menu.  
   
-2.  Wprowadź wszelkie zmiany kodu żądaną i prawne.  
+         — lub —  
+  
+    - Gdy wystąpi wyjątek, wybierz pozycję **Włącz edytowanie** na**Asystenta wyjątków**.  
+  
+2. Wprowadź wszelkie zmiany kodu żądaną i prawne.  
   
      Aby uzyskać więcej informacji, zobacz [nieobsługiwane zmiany w programie Visual Basic, Edytuj i Kontynuuj](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md).  
   
     > [!NOTE]
     >  Jeśli spróbujesz kodu, zmiany, które nie jest dozwolona przez Edytuj i Kontynuuj, zmiany będą podkreślone purpurowa linia falista i zadania pojawi się na liście zadań. Nie można kontynuować wykonywania kodu, chyba że można cofnąć zmiany kodu niedozwolony.  
   
-3.  Na **debugowania** menu, kliknij przycisk **Kontynuuj** można wznowić wykonywania.  
+3. Na **debugowania** menu, kliknij przycisk **Kontynuuj** można wznowić wykonywania.  
   
      Kod wykonuje teraz stosowane edycji włączone do projektu.  
   

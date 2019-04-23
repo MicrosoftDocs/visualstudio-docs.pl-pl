@@ -8,12 +8,12 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 02abe8858f928e5f3fb036b212e0a1ca777259a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5f3ed2d3f8bc52b21f6a87ac7d6da00f665f6b28
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758807"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096533"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Podstawy interfejsu użytkownika dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -22,35 +22,35 @@ ms.locfileid: "54758807"
 
 ### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1. Zachowaj spójność w środowisku Visual Studio.
 
--   Postępuj zgodnie z istniejących wzorce interakcji powłoki.
+- Postępuj zgodnie z istniejących wzorce interakcji powłoki.
 
--   Projektowanie funkcji, aby były zgodne z powłoki języka i craftsmanship wymagania visual.
+- Projektowanie funkcji, aby były zgodne z powłoki języka i craftsmanship wymagania visual.
 
--   Użyj udostępnionego poleceń i kontrolek, jeśli takie istnieją.
+- Użyj udostępnionego poleceń i kontrolek, jeśli takie istnieją.
 
--   Dowiedz się, w hierarchii programu Visual Studio i jak ustanawia kontekst i dyski interfejsu użytkownika.
+- Dowiedz się, w hierarchii programu Visual Studio i jak ustanawia kontekst i dyski interfejsu użytkownika.
 
 ### <a name="2-use-the-environment-service-for-fonts-and-colors"></a>2. Usługa środowiska czcionek i kolorów.
 
--   Interfejs użytkownika należy przestrzegać bieżące ustawienia czcionek środowiska, o ile nie jest widoczna dla dostosowania na stronie czcionek i kolorów w oknie dialogowym Opcje.
+- Interfejs użytkownika należy przestrzegać bieżące ustawienia czcionek środowiska, o ile nie jest widoczna dla dostosowania na stronie czcionek i kolorów w oknie dialogowym Opcje.
 
--   Elementy interfejsu użytkownika, należy użyć usługi VSColor przy użyciu tokenów w środowisku współdzielonym lub tokenów specyficzne dla funkcji.
+- Elementy interfejsu użytkownika, należy użyć usługi VSColor przy użyciu tokenów w środowisku współdzielonym lub tokenów specyficzne dla funkcji.
 
 ### <a name="3-make-all-imagery-consistent-with-the-new-vs-style"></a>3. Wszystkie aplikacje należy zgodnie z nowym stylem programu VS.
 
--   Postępuj zgodnie z zasadami projektowania programu Visual Studio dla ikony, symbole i innych grafik.
+- Postępuj zgodnie z zasadami projektowania programu Visual Studio dla ikony, symbole i innych grafik.
 
--   Nie należy umieszczać tekstu w elementy graficzne.
+- Nie należy umieszczać tekstu w elementy graficzne.
 
 ### <a name="4-design-from-a-user-centric-perspective"></a>4. Projekt z punktu widzenia skoncentrowane na użytkowniku.
 
--   Utwórz przepływ zadań przed poszczególnych funkcji w nim.
+- Utwórz przepływ zadań przed poszczególnych funkcji w nim.
 
--   Należy zapoznać się z użytkownikami, a następnie udostępnią tę wiedzę jawne w swojej specyfikacji.
+- Należy zapoznać się z użytkownikami, a następnie udostępnią tę wiedzę jawne w swojej specyfikacji.
 
--   Podczas przeglądania interfejsu użytkownika, należy obliczyć pełnego środowiska pracy, a także szczegółowe informacje.
+- Podczas przeglądania interfejsu użytkownika, należy obliczyć pełnego środowiska pracy, a także szczegółowe informacje.
 
--   Interfejs użytkownika projektuje się tak, aby pozostaje funkcjonalny i atrakcyjne niezależnie od ustawień regionalnych i językowych.
+- Interfejs użytkownika projektuje się tak, aby pozostaje funkcjonalny i atrakcyjne niezależnie od ustawień regionalnych i językowych.
 
 ## <a name="screen-resolution"></a>Rozdzielczość ekranu
 
@@ -69,9 +69,9 @@ ms.locfileid: "54758807"
 
 #### <a name="feature-team-goals"></a>Funkcja cele zespołu
 
--   Należy ostrzec użytkowników, że dodali element, który musi być skonfigurowany.
+- Należy ostrzec użytkowników, że dodali element, który musi być skonfigurowany.
 
--   Rysuj uwagi użytkownika do obszarów, które wymagają wprowadzania.
+- Rysuj uwagi użytkownika do obszarów, które wymagają wprowadzania.
 
 #### <a name="anti-pattern-solution"></a>Zapobieganie wzorzec rozwiązania
  Zaraz po użytkownik zainicjował akcję, a przed zakończenia zadania, natychmiast umieścić zatrzymanie krytyczne ikony obok obszarów, które wymagają konfiguracji.
@@ -88,11 +88,11 @@ ms.locfileid: "54758807"
 #### <a name="alternatives"></a>Alternatywy
  Jest dużo lepszym rozwiązaniem tego problemu:
 
--   Zezwalaj użytkownikowi na dodawanie deklaracji bez ostrzeżenia, a następnie przesuń od razu do ustawiania właściwości w elemencie.
+- Zezwalaj użytkownikowi na dodawanie deklaracji bez ostrzeżenia, a następnie przesuń od razu do ustawiania właściwości w elemencie.
 
--   Dodaj ikonę ostrzeżenia (trójkąt gold) po fokusu z elementu, takie jak dodanie innej deklaracji do listy lub podejmują próby zmiany karty w projektancie.
+- Dodaj ikonę ostrzeżenia (trójkąt gold) po fokusu z elementu, takie jak dodanie innej deklaracji do listy lub podejmują próby zmiany karty w projektancie.
 
--   Jeśli użytkownik spróbuje kart przed ustawieniem właściwości na wszelkich deklaracji, pop, okno dialogowe wyjaśniające, że aplikacja nie zostanie skompilowany (lub dowolnego skutków) do momentu ostrzeżenia zostały rozwiązane. Jeśli użytkownik odrzuci okna dialogowego i zmienia karty mimo to następnie ikony (krytyczny lub ostrzegawczy, odpowiednio) jest dodawany do zakładki deklaracje.
+- Jeśli użytkownik spróbuje kart przed ustawieniem właściwości na wszelkich deklaracji, pop, okno dialogowe wyjaśniające, że aplikacja nie zostanie skompilowany (lub dowolnego skutków) do momentu ostrzeżenia zostały rozwiązane. Jeśli użytkownik odrzuci okna dialogowego i zmienia karty mimo to następnie ikony (krytyczny lub ostrzegawczy, odpowiednio) jest dodawany do zakładki deklaracje.
 
 ### <a name="forcing-the-user-to-read-text-before-dismissing-ui"></a>Wymuszanie użytkownikowi odczyt tekstu przed odrzucanie interfejsu użytkownika
 
@@ -173,9 +173,9 @@ ms.locfileid: "54758807"
 
    **Lepszym rozwiązaniem:** Stanowić pytanie, na które użytkownik może zadać, klikając link.
 
--   Jak działają usługi Windows Azure?
+- Jak działają usługi Windows Azure?
 
--   Jeśli potrzebny jest projekt Windows Azure Mobile Services?
+- Jeśli potrzebny jest projekt Windows Azure Mobile Services?
 
 #### <a name="using-click-here-for-links"></a>Za pomocą "Kliknij tutaj" dla łączy
  Hiperlinki powinien być samoopisowe. Jest to niezalecane wzorzec używaj "sformułowania kliknij tutaj" lub dowolnych wariantów podobne.

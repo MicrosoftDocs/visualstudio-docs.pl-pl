@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 202640fbe484fc9b384e3e50484a1b4fee63bc4a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00271d77cb5b172fbbbf02682eb7e23c6246ca23
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914230"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064014"
 ---
 # <a name="bookmark-control"></a>Bookmark, formant:
   <xref:Microsoft.Office.Tools.Word.Bookmark> Formant jest zakładki, która ma unikatową nazwę, udostępnia zdarzenia i może być powiązana z danymi. Zakładka może służyć jako symbol zastępczy, aby oznaczyć element lub lokalizacji w dokumencie programu Microsoft Office Word. <xref:Microsoft.Office.Tools.Word.Bookmark> Kontroli jest kombinacją <xref:Microsoft.Office.Interop.Word.Bookmark> obiektu i <xref:Microsoft.Office.Interop.Word.Range> obiektu.
@@ -95,19 +95,19 @@ W poniższej tabeli przedstawiono, jak zdania "To jest tekst przykładowy." jest
 
 Następujące zdarzenia są dostępne dla <xref:Microsoft.Office.Tools.Word.Bookmark> sterowania:
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeDoubleClick>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeDoubleClick>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.Deselected>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.Deselected>
 
--   <xref:System.ComponentModel.IComponent.Disposed>
+- <xref:System.ComponentModel.IComponent.Disposed>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.Selected>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.Selected>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.SelectionChange>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.SelectionChange>
 
 ## <a name="see-also"></a>Zobacz także
 

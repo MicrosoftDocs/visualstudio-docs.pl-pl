@@ -13,21 +13,21 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f709786d908d5bfe4ef4db04916801a5cd6a7366
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78561db4bbf9517cc3fbcd5d9ac6ca36fcafbe05
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794860"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071229"
 ---
 # <a name="making-commands-available"></a>Udostępnianie poleceń
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Gdy wiele pakietów VSPackage zostaną dodane do programu Visual Studio, interfejs użytkownika (UI) mogą stać się przepełniona za pomocą poleceń. Można programować pakietu w celu ograniczenia tego problemu w następujący sposób:  
   
--   Program pakiet tak, że jest załadowany, tylko wtedy, gdy użytkownik wymaga go.  
+- Program pakiet tak, że jest załadowany, tylko wtedy, gdy użytkownik wymaga go.  
   
--   Program pakietu, tak aby jego polecenia są wyświetlane tylko wtedy, gdy może być wymagane w kontekście bieżącego stanu zintegrowanego środowiska programistycznego (IDE).  
+- Program pakietu, tak aby jego polecenia są wyświetlane tylko wtedy, gdy może być wymagane w kontekście bieżącego stanu zintegrowanego środowiska programistycznego (IDE).  
   
 ## <a name="delayed-loading"></a>Opóźnione ładowanie  
  Typowym sposobem, aby umożliwić opóźnione ładowanie jest projektować pakietu VSPackage, dzięki czemu polecenia są wyświetlane w interfejsie użytkownika, ale sam pakiet nie został załadowany, dopóki użytkownik kliknie jedno z poleceń. Aby to osiągnąć, w pliku vsct, Utwórz polecenia, które mają nie flag poleceń.  
@@ -94,11 +94,11 @@ Gdy wiele pakietów VSPackage zostaną dodane do programu Visual Studio, interfe
 ### <a name="custom-context-guids"></a>Identyfikatory GUID kontekstowego  
  Jeśli kontekst odpowiednie polecenia, identyfikator GUID nie jest już zdefiniowany, można zdefiniować, w swojej pakietu VSPackage i Zaprogramuj się być aktywne lub nieaktywne zgodnie z potrzebami można kontrolować widoczność poleceń. Użyj <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> usługi:  
   
--   Rejestrowanie identyfikatorów GUID w kontekście (przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> metody).  
+- Rejestrowanie identyfikatorów GUID w kontekście (przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> metody).  
   
--   Pobieranie stanu kontekst `GUID` (przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> metody).  
+- Pobieranie stanu kontekst `GUID` (przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> metody).  
   
--   Włącz kontekstu `GUID`s włączać i wyłączać (przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> metody).  
+- Włącz kontekstu `GUID`s włączać i wyłączać (przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> metody).  
   
     > [!CAUTION]
     >  Upewnij się, że Twoje pakietu VSPackage nie ma wpływu na stan dowolnego kontekstu istniejącego identyfikatora GUID ponieważ innych pakietów VSPackage może zależeć od ich.  

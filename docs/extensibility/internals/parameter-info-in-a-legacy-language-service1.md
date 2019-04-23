@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba1c2c053a9e2c906e5ca9e530a5a46a2501a840
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0530e5547fd17e1db84e7164039b507cb4583703
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606423"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086316"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informacje o parametrach w starszej wersji usługi językowej
 Etykietki narzędzi IntelliSense Parameter Info zapewnia użytkownikom wskazówek na temat, gdzie się znajdują konstrukcją języka pierwszej klasy.
@@ -43,31 +43,31 @@ Etykietki narzędzi IntelliSense Parameter Info zapewnia użytkownikom wskazówe
 
  Gdy Twoja <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> klasy jest wywoływany, jego metody są wywoływane w następującej kolejności:
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>
 
      Zwraca bieżący bufor tekstowy pozycji i długości odpowiednie dane. To powoduje, że środowisko IDE będzie nie mogą zasłaniać tych danych za pomocą okna etykiety narzędzi.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>
 
      Zwraca liczbę — metoda (liczony od zera indeks) mają być wyświetlane w początkowym. Na przykład jeśli można zwrócić zero, następnie pierwsza przeciążona metoda początkowo zobaczy.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>
 
      Zwraca liczbę przeciążonych metod, które są stosowane w bieżącym kontekście. Jeśli zwróci wartość większą niż 1 dla tej metody, następnie widoku tekstu Wyświetla strzałek w górę i w dół dla Ciebie. Jeśli klikniesz przycisk strzałki w dół, IDE wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.NextMethod%2A> metody. Jeśli klikniesz przycisk strzałki w górę, IDE wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.PrevMethod%2A> metody.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>
 
      Tekst etykietki narzędzia Parameter Info jest tworzony podczas kilka wywołań <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A> i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A> metody.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>
 
      Zwraca liczbę parametrów, aby wyświetlić w metodzie.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>
 
      Po powrocie liczbą metoda odpowiadające za pomocą przeciążenia, które mają być wyświetlane, ta metoda jest wywoływana, następuje wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> metody.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>
 
      Informuje usługi języka w celu aktualizacji edytor, gdy wskazówki metody jest wyświetlana. W <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> metody, wywołaj następujące czynności:
 
@@ -75,6 +75,6 @@ Etykietki narzędzi IntelliSense Parameter Info zapewnia użytkownikom wskazówe
     <pTxWin> ->UpdateTipWindow(<pTip>, UTW_CONTENTCHANGED | UTW_CONTEXTCHANGED).
     ```
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>
 
      Pojawi się po wywołaniu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> metody, gdy zamkniesz okno porad metody.

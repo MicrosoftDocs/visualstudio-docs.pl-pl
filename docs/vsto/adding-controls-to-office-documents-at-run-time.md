@@ -22,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b09e658c896f4f3e864c46dbd02d65a871da318
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c7fa5073fca476159aa756b7a5527dd1007ab66b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600844"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075808"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania
   Można dodać kontrolki do dokumentu Microsoft Office Word i Microsoft Office Excel skoroszyt w czasie wykonywania. Można również usunąć je w czasie wykonywania. Formanty, które są dodawane lub usuwane w czasie wykonywania są nazywane *kontrolek dynamicznych*.
@@ -44,16 +44,16 @@ ms.locfileid: "56600844"
 
   ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Dodawanie formantów do powierzchni dokument w czasie wykonywania? ](http://go.microsoft.com/fwlink/?LinkId=132782).
 
-##  <a name="ControlsCollection"></a> Zarządzanie formantów w czasie wykonywania za pomocą kolekcje kontrolek
+## <a name="ControlsCollection"></a> Zarządzanie formantów w czasie wykonywania za pomocą kolekcje kontrolek
  Aby dodać, pobrać lub usuwanie formantów w czasie wykonywania, należy użyć metody pomocnika <xref:Microsoft.Office.Tools.Excel.ControlCollection> i <xref:Microsoft.Office.Tools.Word.ControlCollection> obiektów.
 
  Sposób dostępu do tych obiektów zależy od typu projektu, które tworzysz:
 
--   W projekcie na poziomie dokumentu dla programu Excel, należy użyć <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> właściwość `Sheet1`, `Sheet2`, i `Sheet3` klasy. Aby uzyskać więcej informacji na temat tych klas, zobacz [element hosta arkusza](../vsto/worksheet-host-item.md).
+- W projekcie na poziomie dokumentu dla programu Excel, należy użyć <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> właściwość `Sheet1`, `Sheet2`, i `Sheet3` klasy. Aby uzyskać więcej informacji na temat tych klas, zobacz [element hosta arkusza](../vsto/worksheet-host-item.md).
 
--   W projekcie na poziomie dokumentu dla programu Word, użyj <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> właściwość `ThisDocument` klasy. Aby uzyskać więcej informacji na temat tej klasy, zobacz [element hosta dokumentu](../vsto/document-host-item.md).
+- W projekcie na poziomie dokumentu dla programu Word, użyj <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> właściwość `ThisDocument` klasy. Aby uzyskać więcej informacji na temat tej klasy, zobacz [element hosta dokumentu](../vsto/document-host-item.md).
 
--   W projekcie dodatku narzędzi VSTO dla programu Excel lub Word, użyj `Controls` właściwość <xref:Microsoft.Office.Tools.Excel.Worksheet> lub <xref:Microsoft.Office.Tools.Word.Document> generowane w czasie wykonywania. Aby uzyskać więcej informacji na temat generowania tych obiektów w czasie wykonywania, zobacz [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+- W projekcie dodatku narzędzi VSTO dla programu Excel lub Word, użyj `Controls` właściwość <xref:Microsoft.Office.Tools.Excel.Worksheet> lub <xref:Microsoft.Office.Tools.Word.Document> generowane w czasie wykonywania. Aby uzyskać więcej informacji na temat generowania tych obiektów w czasie wykonywania, zobacz [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 ### <a name="add-controls"></a>Dodawanie formantów
  <xref:Microsoft.Office.Tools.Excel.ControlCollection> i <xref:Microsoft.Office.Tools.Word.ControlCollection> typy obejmują metody pomocnika, które służy do dodawania formantów hosta i wspólnych formantów Windows Forms do dokumentów i arkuszy. Każda nazwa metody ma format `Add` *kontrolować klasy*, gdzie *kontrolować klasy* jest nazwą klasy formantu, który chcesz dodać. Na przykład, aby dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki do dokumentu, użyj <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddNamedRange%2A> metody.
@@ -76,7 +76,7 @@ ms.locfileid: "56600844"
 > [!NOTE]
 >  Nie usuwaj programowo kontrolek w `Shutdown` programu obsługi zdarzeń dokumentu. Elementy interfejsu użytkownika w pliku nie są już dostępne podczas `Shutdown` zdarzenie jest wywoływane. Jeśli chcesz usunąć kontrolki przed zamknięciem dokumentu, Dodaj swój kod obsługi zdarzeń dla innego zdarzenia, takie jak <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> lub <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> dla programu Word, lub <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>, lub <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> dla programu Excel.
 
-##  <a name="HostControls"></a> Dodawanie hosta formantów do dokumentów
+## <a name="HostControls"></a> Dodawanie hosta formantów do dokumentów
 
 Po dodaniu programowego kontrolki hosta do dokumentów, musisz podać nazwę, która jednoznacznie identyfikuje formant. Ponadto musisz określić, gdzie można dodać kontrolki do dokumentu. Aby uzyskać szczegółowe instrukcje zobacz następujące tematy:
 
@@ -97,7 +97,7 @@ Po zapisaniu dokumentu i następnie zamknięte, wszystkie formanty hosta dynamic
 > [!NOTE]
 > Metody pomocnicze nie są dostarczane dla następujących hostować formantów, ponieważ te kontrolki nie programowo dodać do dokumentów: <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>, i <xref:Microsoft.Office.Tools.Word.XMLNodes>.
 
-##  <a name="WindowsForms"></a> Dodawanie kontrolek formularzy Windows Forms do dokumentów
+## <a name="WindowsForms"></a> Dodawanie kontrolek formularzy Windows Forms do dokumentów
  Po dodaniu programowo formantu Windows Forms do dokumentu, należy podać lokalizację i nazwę, która jednoznacznie identyfikuje formant kontrolki. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Zapewnia metody pomocnika dla każdego formantu. Te metody są przeciążone, aby przekazać zakresu lub określonych współrzędnych lokalizacji kontrolki.
 
  Po zapisaniu dokumentu i następnie zamknięte, wszystkie kontrolki Windows Forms utworzony dynamicznie są usuwane z dokumentu. Można dodać kod do rozwiązania, aby ponownie utworzyć formanty, po otwarciu dokumentu. Jeśli tworzysz dynamiczne kontrolek Windows Forms przy użyciu dodatku narzędzi VSTO otoki ActiveX dla formantów są pozostawiane w dokumencie. Aby uzyskać więcej informacji, zobacz [kontrolek dynamicznych w dokumentach pakietu Office utrwalenia](../vsto/persisting-dynamic-controls-in-office-documents.md).

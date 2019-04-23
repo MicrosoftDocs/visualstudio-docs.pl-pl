@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df33470ea76ac29626459c1240873068180b0860
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f6a9b62c62b863448bb1333b162c6706c48cd72b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600987"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071762"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Przewodnik: Wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku
   W tym instruktażu pokazano, jak używać przycisków i pola tekstowe w dostosowaniu na poziomie dokumentu dla programu Microsoft Office Word.
@@ -35,16 +35,16 @@ ms.locfileid: "56600987"
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Word
+- Microsoft Word
 
 ## <a name="create-the-project"></a>Utwórz projekt
  Pierwszym krokiem jest utworzenie projektu dokument programu Word.
 
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt
 
-1.  Tworzenie projektu dokument programu Word z nazwą **przycisk Moje Word**. W kreatorze Wybierz **Utwórz nowy dokument**.
+1. Tworzenie projektu dokument programu Word z nazwą **przycisk Moje Word**. W kreatorze Wybierz **Utwórz nowy dokument**.
 
      Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -80,14 +80,14 @@ ms.locfileid: "56600987"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Aby zapisać do pola tekstowego, po kliknięciu przycisku
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **ThisDocument**, a następnie kliknij przycisk **Wyświetl kod** w menu skrótów.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **ThisDocument**, a następnie kliknij przycisk **Wyświetl kod** w menu skrótów.
 
-2.  Dodaj następujący kod do <xref:System.Windows.Forms.Control.Click> program obsługi zdarzeń przycisku.
+2. Dodaj następujący kod do <xref:System.Windows.Forms.Control.Click> program obsługi zdarzeń przycisku.
 
      [!code-vb[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#7)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#7)]
 
-3.  W C#, należy dodać program obsługi zdarzeń dla przycisku, aby <xref:Microsoft.Office.Tools.Word.Document.Startup> zdarzeń. Aby dowiedzieć się, jak tworzenie procedur obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+3. W C#, należy dodać program obsługi zdarzeń dla przycisku, aby <xref:Microsoft.Office.Tools.Word.Document.Startup> zdarzeń. Aby dowiedzieć się, jak tworzenie procedur obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#8)]
 
@@ -96,18 +96,18 @@ ms.locfileid: "56600987"
 
 ### <a name="to-test-your-document"></a>Aby przetestować dokumentu
 
-1.  Naciśnij klawisz **F5** Aby uruchomić projekt.
+1. Naciśnij klawisz **F5** Aby uruchomić projekt.
 
-2.  Kliknij przycisk.
+2. Kliknij przycisk.
 
-3.  Upewnij się, że **Hello World!** zostanie wyświetlony w polu tekstowym.
+3. Upewnij się, że **Hello World!** zostanie wyświetlony w polu tekstowym.
 
 ## <a name="next-steps"></a>Następne kroki
  W tym instruktażu przedstawiono podstawy używania przycisków i pola tekstowe w dokumentach programu Word. Poniżej przedstawiono niektóre zadania, które mogą pochodzić dalej:
 
--   Za pomocą pola kombi, aby zmienić formatowanie. Aby uzyskać więcej informacji, zobacz [instruktażu: Dokument Zmienianie formatowania za pomocą formantów CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
+- Za pomocą pola kombi, aby zmienić formatowanie. Aby uzyskać więcej informacji, zobacz [instruktażu: Dokument Zmienianie formatowania za pomocą formantów CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
 
--   Za pomocą przycisków radiowych, aby wybrać styl wykresu. Aby uzyskać więcej informacji, zobacz [instruktażu: Aktualizacja wykresu w dokumencie za pomocą przycisków radiowych](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
+- Za pomocą przycisków radiowych, aby wybrać styl wykresu. Aby uzyskać więcej informacji, zobacz [instruktażu: Aktualizacja wykresu w dokumencie za pomocą przycisków radiowych](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
 
 ## <a name="see-also"></a>Zobacz także
 - [Formanty Windows Forms na przegląd dokumentów pakietu Office](../vsto/windows-forms-controls-on-office-documents-overview.md)

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informacje na temat pakietu Enterprise Mobility + Security korzyści zawarte w Twojej subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 55c271f73f5859f39bbf6b430ffa19ca301591d2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d670db0d083c4b8f32f970c790859a7c82e5dff1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652348"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073140"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Pakiet Enterprise Mobility + Security (EMS) w subskrypcji programu Visual Studio
 
@@ -53,8 +53,8 @@ Aby korzystać z pakietu EMS, należy skonfigurować konto lub zaloguj się przy
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Yes          |
-| Visual Studio Professional (Standard<sup>2</sup>) | VL, Azure, Retail                                       | Dostępne                                                            |  Yes          |
+| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Tak          |
+| Visual Studio Professional (Standard<sup>2</sup>) | VL, Azure, Retail                                       | Dostępne                                                            |  Tak          |
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  Brak          |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                              |  Brak          |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure | Niedostępne | Brak |
@@ -70,7 +70,7 @@ Aby korzystać z pakietu EMS, należy skonfigurować konto lub zaloguj się przy
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
--  Potrzebujesz pomocy przy użyciu pakietu EMS?  Zapoznaj się z online [dokumentacji pakietu EMS](/enterprise-mobility-security/).
--  Aby uzyskać pomoc techniczną za pomocą każdego składnika pakietu EMS, odwiedź [często zadawane pytania dotyczące pomocy technicznej pakietu EMS](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-support-faq) można znaleźć odpowiedniego wsparcia na swoje pytanie.
--  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+- Potrzebujesz pomocy przy użyciu pakietu EMS?  Zapoznaj się z online [dokumentacji pakietu EMS](/enterprise-mobility-security/).
+- Aby uzyskać pomoc techniczną za pomocą każdego składnika pakietu EMS, odwiedź [często zadawane pytania dotyczące pomocy technicznej pakietu EMS](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-support-faq) można znaleźć odpowiedniego wsparcia na swoje pytanie.
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
+- Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

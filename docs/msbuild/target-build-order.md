@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8496e31778765ed92ddca55efbb9e4747c8df81e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e6784ab59580df898e2f5f705984f13a3f94f73a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608828"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086757"
 ---
 # <a name="target-build-order"></a>Kolejność kompilowania obiektów docelowych
 Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego obiektu docelowego jest zależna od danych wyjściowych z innym elementem docelowym. Aby określić kolejność uruchamiania elementów docelowych, można użyć tych atrybutów:
@@ -104,21 +104,21 @@ Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego o
 ## <a name="determine-the-target-build-order"></a>Określić kolejność kompilowania obiektów docelowych
  MSBuild określa kolejność kompilowania obiektów docelowych w następujący sposób:
 
-1.  `InitialTargets` obiekty docelowe są uruchamiane.
+1. `InitialTargets` obiekty docelowe są uruchamiane.
 
-2.  Cele określone w wierszu polecenia przez **-target** przełącznika są uruchamiane. Jeśli określisz żadnych elementów docelowych w wierszu polecenia, a następnie `DefaultTargets` obiekty docelowe są uruchamiane. Jeśli nie jest obecny, pierwszy napotkano element docelowy zostanie uruchomiony.
+2. Cele określone w wierszu polecenia przez **-target** przełącznika są uruchamiane. Jeśli określisz żadnych elementów docelowych w wierszu polecenia, a następnie `DefaultTargets` obiekty docelowe są uruchamiane. Jeśli nie jest obecny, pierwszy napotkano element docelowy zostanie uruchomiony.
 
-3.  `Condition` Atrybut docelowy jest oceniany. Jeśli `Condition` atrybut jest obecny i daje w wyniku `false`, element docelowy nie jest wykonywane i nie ma dalszych wpływu na kompilację.
+3. `Condition` Atrybut docelowy jest oceniany. Jeśli `Condition` atrybut jest obecny i daje w wyniku `false`, element docelowy nie jest wykonywane i nie ma dalszych wpływu na kompilację.
 
     Obiekty docelowe, w których przedstawiono warunkowego elementu docelowego w `BeforeTargets` lub `AfterTargets` nadal wykonywać w zalecanej kolejności
 
-4.  Zanim obiekt docelowy jest wykonywany czy pomijany, jeśli jego `Condition` atrybutu nie było lub nie zostało obliczone do `false`, jego `DependsOnTargets` obiekty docelowe są uruchamiane.
+4. Zanim obiekt docelowy jest wykonywany czy pomijany, jeśli jego `Condition` atrybutu nie było lub nie zostało obliczone do `false`, jego `DependsOnTargets` obiekty docelowe są uruchamiane.
 
-5.  Zanim obiekt docelowy jest wykonywany czy pomijany, wszelkie docelowy, który jest wyświetlany w `BeforeTargets` atrybutu jest uruchamiany.
+5. Zanim obiekt docelowy jest wykonywany czy pomijany, wszelkie docelowy, który jest wyświetlany w `BeforeTargets` atrybutu jest uruchamiany.
 
-6.  Przed wykonaniem celu jego `Inputs` atrybutu i `Outputs` atrybutu są porównywane. Jeśli program MSBuild ustali, że wszystkie pliki wyjściowe są nieaktualne w odniesieniu do odpowiedniego pliku wejściowego lub pliki, a następnie program MSBuild wykonuje element docelowy. W przeciwnym razie program MSBuild pomija element docelowy.
+6. Przed wykonaniem celu jego `Inputs` atrybutu i `Outputs` atrybutu są porównywane. Jeśli program MSBuild ustali, że wszystkie pliki wyjściowe są nieaktualne w odniesieniu do odpowiedniego pliku wejściowego lub pliki, a następnie program MSBuild wykonuje element docelowy. W przeciwnym razie program MSBuild pomija element docelowy.
 
-7.  Po obiekt docelowy jest wykonywany czy pomijany, wszelkie docelowy, który jest wyświetlany w `AfterTargets` atrybutu jest uruchamiany.
+7. Po obiekt docelowy jest wykonywany czy pomijany, wszelkie docelowy, który jest wyświetlany w `AfterTargets` atrybutu jest uruchamiany.
 
 ## <a name="see-also"></a>Zobacz także
 - [Docelowe elementy](../msbuild/msbuild-targets.md)

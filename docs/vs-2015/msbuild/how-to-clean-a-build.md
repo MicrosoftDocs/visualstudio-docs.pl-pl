@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f4f410656e49b1a76e74898940cbd32314fc8b4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f8c64bb19d65540f8c72be9acb1c5f59deb3c8f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661337"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075366"
 ---
 # <a name="how-to-clean-a-build"></a>Instrukcje: Czyszczenie kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Podczas oczyszczania kompilacji są usuwane wszystkie pliki pośrednich i wyniko
   
 #### <a name="to-create-a-directory-for-output-items"></a>Można utworzyć katalogu danych wyjściowych elementów  
   
-1.  Użyj `Property` elementu, aby zdefiniować lokalizację i nazwę katalogu. Na przykład można utworzyć katalog o nazwie `BuiltApp` w katalogu, który zawiera pliki projektu i źródła:  
+1. Użyj `Property` elementu, aby zdefiniować lokalizację i nazwę katalogu. Na przykład można utworzyć katalog o nazwie `BuiltApp` w katalogu, który zawiera pliki projektu i źródła:  
   
      `<builtdir>BuiltApp</builtdir>`  
   
-2.  Użyj [MakeDir](../msbuild/makedir-task.md) zadania do utworzenia katalogu, jeśli katalog nie istnieje. Na przykład:  
+2. Użyj [MakeDir](../msbuild/makedir-task.md) zadania do utworzenia katalogu, jeśli katalog nie istnieje. Na przykład:  
   
      `<MakeDir Directories = "$(builtdir)"`  
   
@@ -46,7 +46,7 @@ Podczas oczyszczania kompilacji są usuwane wszystkie pliki pośrednich i wyniko
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Aby usunąć katalog i wszystkie pliki znajdujące się w katalogu  
   
--   Użyj `RemoveDir` zadań można usunąć katalogu. Na przykład:  
+- Użyj `RemoveDir` zadań można usunąć katalogu. Na przykład:  
   
      `<RemoveDir Directories="$(builtdir)" />`  
   

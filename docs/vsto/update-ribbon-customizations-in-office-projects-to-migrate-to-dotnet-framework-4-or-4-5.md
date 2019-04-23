@@ -12,32 +12,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee1dcd72e80b38eb4dd31603b0133b7ee7f7636b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 0fae2dc72c44b90068212c09086c63c9e00fd2d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324685"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096546"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualizowanie dostosowań Wstążki w projektach pakietu Office, które przenoszonych do oprogramowania .NET Framework 4 lub .NET Framework 4.5
   Jeśli projekt zawiera dostosowania wstążki, który został utworzony przy użyciu **Wstążka (Projektant graficzny)** elementu projektu, należy wprowadzić następujące zmiany do kodu projektu, zmiana platformy docelowej na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub później.
 
--   Zmodyfikuj wygenerowanego kodu wstążki.
+- Zmodyfikuj wygenerowanego kodu wstążki.
 
--   Zmodyfikować każdy kod, który tworzy formantów wstążki w czasie wykonywania, obsługi zdarzeń Wstążki lub programowo Ustawia położenie składnika wstążki.
+- Zmodyfikować każdy kod, który tworzy formantów wstążki w czasie wykonywania, obsługi zdarzeń Wstążki lub programowo Ustawia położenie składnika wstążki.
 
 ## <a name="update-the-generated-ribbon-code"></a>Aktualizacja wygenerowanego kodu wstążki
  Jeśli platforma docelowa projektu zostanie zmieniony na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej, należy zmienić wygenerowanego kodu dla elementu wstążki, wykonując następujące kroki. Pliki kodu, który należy zaktualizować zależą od języka programowania i sposobu tworzenia projektu:
 
--   W projektach języka Visual Basic lub w projektach Visual C#, które zostały utworzone w jednej [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] lub [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] wykonaj wszystkie kroki przedstawione w pliku związanym z kodem wstążki (*YourRibbonItem*. Designer.cs narzędzie lub *YourRibbonItem*. Designer.VB). Aby wyświetlić plik związany z kodem w projektach języka Visual Basic, kliknij **Pokaż wszystkie pliki** znajdujący się w **Eksploratora rozwiązań**.
+- W projektach języka Visual Basic lub w projektach Visual C#, które zostały utworzone w jednej [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] lub [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] wykonaj wszystkie kroki przedstawione w pliku związanym z kodem wstążki (*YourRibbonItem*. Designer.cs narzędzie lub *YourRibbonItem*. Designer.VB). Aby wyświetlić plik związany z kodem w projektach języka Visual Basic, kliknij **Pokaż wszystkie pliki** znajdujący się w **Eksploratora rozwiązań**.
 
--   W projektach Visual C#, utworzone w programie Visual Studio 2008 i następnie przeprowadzono uaktualnienie do [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], wykonaj dwa pierwsze kroki w plik kodu wstążki (*YourRibbonItem*.cs lub *YourRibbonItem*.vb), a Wykonaj pozostałe kroki w pliku związanym z kodem wstążki.
+- W projektach Visual C#, utworzone w programie Visual Studio 2008 i następnie przeprowadzono uaktualnienie do [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], wykonaj dwa pierwsze kroki w plik kodu wstążki (*YourRibbonItem*.cs lub *YourRibbonItem*.vb), a Wykonaj pozostałe kroki w pliku związanym z kodem wstążki.
 
 ### <a name="to-change-the-generated-ribbon-code"></a>Aby zmienić wygenerowanego kodu wstążki
 
-1.  Zmodyfikuj deklarację klasy wstążki, tak, aby pochodzi od klasy <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> zamiast `Microsoft.Office.Tools.Ribbon.OfficeRibbon`.
+1. Zmodyfikuj deklarację klasy wstążki, tak, aby pochodzi od klasy <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> zamiast `Microsoft.Office.Tools.Ribbon.OfficeRibbon`.
 
-2.  Zmodyfikuj konstruktora klasy wstążki, jak pokazano poniżej. Jeśli dodano własne kodu do konstruktora, nie należy zmieniać swój kod. W projektach języka Visual Basic zmodyfikuj konstruktora bez parametrów. Ignoruj innego konstruktora.
+2. Zmodyfikuj konstruktora klasy wstążki, jak pokazano poniżej. Jeśli dodano własne kodu do konstruktora, nie należy zmieniać swój kod. W projektach języka Visual Basic zmodyfikuj konstruktora bez parametrów. Ignoruj innego konstruktora.
 
      Poniższy przykład kodu pokazuje konstruktora domyślnego w klasie wstążki w projekcie, przeznaczonego programu .NET Framework 3.5.
 
@@ -72,7 +72,7 @@ ms.locfileid: "58324685"
     }
     ```
 
-3.  W `InitializeComponent` metody, zmodyfikować każdy kod, który konstruuje formantu wstążki, aby kod zamiast tego używa jednej z metod Pomocnika <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> obiektu.
+3. W `InitializeComponent` metody, zmodyfikować każdy kod, który konstruuje formantu wstążki, aby kod zamiast tego używa jednej z metod Pomocnika <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> obiektu.
 
     > [!NOTE]
     >  W projektach Visual C#, należy rozwinąć region, który nosi nazwę `Component Designer generated code` się `InitializeComponent` metody.
@@ -99,7 +99,7 @@ ms.locfileid: "58324685"
 
      Aby uzyskać pełną listę metody pomocnicze dla formantów wstążki, zobacz [formantów wstążki wystąpienia](#ribboncontrols).
 
-4.  W projektach Visual C#, modyfikowanie dowolnej linii kodu w `InitializeComponent` metody, która używa <xref:System.EventHandler%601> delegata, aby użyć określonego delegata wstążki.
+4. W projektach Visual C#, modyfikowanie dowolnej linii kodu w `InitializeComponent` metody, która używa <xref:System.EventHandler%601> delegata, aby użyć określonego delegata wstążki.
 
      Na przykład załóżmy, że plik zawiera następujący wiersz kodu, który obsługuje <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> zdarzenia w projekcie, który jest przeznaczony dla .NET Framework 3.5.
 
@@ -107,9 +107,9 @@ ms.locfileid: "58324685"
 
     \<CodeContentPlaceHolder > 9</CodeContentPlaceHolder> uzyskać pełną listę obiektów delegowanych wstążki, zobacz [zdarzeń obsługi wstążki](#ribbonevents).
 
-5.  W projektach języka Visual Basic, zlokalizuj `ThisRibbonCollection` klasy na końcu pliku. Zmodyfikuj deklarację zmiennej tej klasy, dzięki czemu nie będzie już dziedziczył z `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`.
+5. W projektach języka Visual Basic, zlokalizuj `ThisRibbonCollection` klasy na końcu pliku. Zmodyfikuj deklarację zmiennej tej klasy, dzięki czemu nie będzie już dziedziczył z `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`.
 
-##  <a name="ribboncontrols"></a> Utwórz wystąpienie formanty wstążki
+## <a name="ribboncontrols"></a> Utwórz wystąpienie formanty wstążki
  Należy zmodyfikować każdy kod, który dynamicznie tworzy formanty wstążki. W projektach programu .NET Framework 3.5, których platformą docelową formanty wstążki są klas, które można utworzyć wystąpienie bezpośrednio w niektórych scenariuszach. W przypadku projektów, których platformą docelową [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej, te kontrolki są interfejsy, które nie są bezpośrednio wystąpienia. Formanty należy utworzyć przy użyciu metod, które są dostarczane przez <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> obiektu.
 
  Istnieją dwa sposoby dostępu do <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> obiektu:
@@ -142,7 +142,7 @@ ms.locfileid: "58324685"
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonTab%2A>|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonToggleButton%2A>|
 
-##  <a name="ribbonevents"></a> Obsługi zdarzeń wstążki
+## <a name="ribbonevents"></a> Obsługi zdarzeń wstążki
  Należy zmodyfikować każdy kod, który obsługuje zdarzenia formantów wstążki. W projektach przeznaczonych dla programu .NET Framework 3.5, te zdarzenia są obsługiwane przez ogólnego <xref:System.EventHandler%601> delegować. W przypadku projektów, których platformą docelową [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszym, te zdarzenia są teraz obsługiwane przez inne delegatów.
 
  W poniższej tabeli wymieniono zdarzenia Wstążki i delegatów, które są skojarzone z nimi w projektach przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej.

@@ -21,12 +21,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bb42950acf958dbb71877671da57f5ea6fcd6898
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c6c6407c038c7d6847db073c1f00c103d9483e78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753772"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039118"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Podgląd wartości danych w poradach dotyczących danych w edytorze kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,34 +52,34 @@ DataTips zapewniają wygodny sposób wyświetlania informacji na temat zmiennych
   
 ### <a name="to-unpin-a-datatip-and-make-it-float"></a>Odepnij poradzie dotyczącej danych i liczb zmiennoprzecinkowych  
   
--   Etykietki danych przypięte, kliknij **Odepnij od źródła** ikony.  
+- Etykietki danych przypięte, kliknij **Odepnij od źródła** ikony.  
   
      Ikona zmiany kodu pin nieprzypięte pozycji. DataTip jest teraz wyświetlany powyżej wszelkie otwarte okna. Zmiennoprzecinkowe DataTip zamyka podczas kończenia sesji debugowania.  
   
 ### <a name="to-repin-a-floating-datatip"></a>Aby repin zmiennoprzecinkowy etykietki danych  
   
--   W poradzie dotyczącej danych kliknij ikonę pinezki.  
+- W poradzie dotyczącej danych kliknij ikonę pinezki.  
   
      Ikona zmiany kodu pin przypiętych pozycji. Jeśli DataTip jest poza oknem źródła, ikonę pinezki jest wyłączona i nie można przypiąć DataTip.  
   
 ### <a name="to-close-a-datatip"></a>Aby zamknąć etykietki danych  
   
--   Umieść wskaźnik myszy nad etykietki danych, a następnie kliknij przycisk **Zamknij** ikony.  
+- Umieść wskaźnik myszy nad etykietki danych, a następnie kliknij przycisk **Zamknij** ikony.  
   
 ### <a name="to-close-all-datatips"></a>Aby zamknąć wszystkie etykietki danych  
   
--   Na **debugowania** menu, kliknij przycisk **wyczyść wszystkie etykietki danych**.  
+- Na **debugowania** menu, kliknij przycisk **wyczyść wszystkie etykietki danych**.  
   
 ### <a name="to-close-all-datatips-for-a-specific-file"></a>Aby zamknąć wszystkie etykietki danych dla określonego pliku  
   
--   Na **debugowania** menu, kliknij przycisk **wyczyść wszystkie etykietki danych przypięte do** *pliku*.  
+- Na **debugowania** menu, kliknij przycisk **wyczyść wszystkie etykietki danych przypięte do** *pliku*.  
   
 ## <a name="expanding-and-editing-information"></a>Rozwijanie i edytowanie informacji o  
  Korzystanie z DataTips, aby rozwinąć tablica, struktury lub obiekt, aby wyświetlić jego składowe. Można również edytować wartość zmiennej w poradzie dotyczącej danych.  
   
 #### <a name="to-expand-a-variable-to-see-its-elements"></a>Aby rozwinąć zmiennej, aby zobaczyć jego elementy  
   
--   W DataTip, umieść wskaźnik myszy **+** logowania, która znajduje się przed nazwę zmiennej.  
+- W DataTip, umieść wskaźnik myszy **+** logowania, która znajduje się przed nazwę zmiennej.  
   
      Zmienna rozwijany, aby wyświetlić jego elementy w postaci drzewa.  
   
@@ -87,16 +87,16 @@ DataTips zapewniają wygodny sposób wyświetlania informacji na temat zmiennych
   
 #### <a name="to-edit-the-value-of-a-variable-using-a-datatip"></a>Aby edytować wartość zmiennej za pomocą etykietki danych  
   
-1.  W poradzie dotyczącej danych kliknij wartość. Ta opcja jest wyłączona dla wartości tylko do odczytu.  
+1. W poradzie dotyczącej danych kliknij wartość. Ta opcja jest wyłączona dla wartości tylko do odczytu.  
   
-2.  Wpisz nową wartość, a następnie naciśnij klawisz ENTER.  
+2. Wpisz nową wartość, a następnie naciśnij klawisz ENTER.  
   
 ## <a name="making-a-datatip-transparent"></a>Ustawianie etykietki danych przezroczystości  
  Jeśli chcesz wyświetlić kod, który znajduje się za etykietki danych, istnieje możliwość DataTip tymczasowo przezroczysty. To nie dotyczy DataTips, które są przypięte lub zmiennoprzecinkową.  
   
 #### <a name="to-make-a-datatip-transparent"></a>Aby przezroczyste etykietki danych  
   
--   W DataTip naciśnij klawisz CTRL.  
+- W DataTip naciśnij klawisz CTRL.  
   
      DataTip pozostanie przezroczyste, tak długo, jak przytrzymaj wciśnięty klawisz CTRL.  
   
@@ -105,7 +105,7 @@ DataTips zapewniają wygodny sposób wyświetlania informacji na temat zmiennych
   
 #### <a name="to-view-the-contents-of-a-variable-using-a-visualizer"></a>Aby wyświetlić zawartość zmiennej za pomocą wizualizatora  
   
--   Kliknij ikonę lupy, aby wybrać Wizualizator domyślna dla typu danych.  
+- Kliknij ikonę lupy, aby wybrać Wizualizator domyślna dla typu danych.  
   
      —lub—  
   
@@ -118,7 +118,7 @@ DataTips zapewniają wygodny sposób wyświetlania informacji na temat zmiennych
   
 #### <a name="to-add-a-variable-to-the-watch-window"></a>Aby dodać zmienną w oknie czujki  
   
--   Kliknij prawym przyciskiem myszy etykietki danych, a następnie kliknij przycisk **Dodaj czujkę**.  
+- Kliknij prawym przyciskiem myszy etykietki danych, a następnie kliknij przycisk **Dodaj czujkę**.  
   
      Zmienna jest dodawany do **Obejrzyj** okna. Jeśli używasz wersji, która obsługuje wiele **Obejrzyj** systemu windows, zmienna jest dodawany do **Czujka 1.**  
   
@@ -127,19 +127,19 @@ DataTips zapewniają wygodny sposób wyświetlania informacji na temat zmiennych
   
 #### <a name="to-export-datatips"></a>Aby wyeksportować etykietek danych  
   
-1.  Polecenie menu Debuguj **Eksportuj etykietki danych**.  
+1. Polecenie menu Debuguj **Eksportuj etykietki danych**.  
   
      **Eksportuj etykietki danych** pojawi się okno dialogowe.  
   
-2.  Przejdź do lokalizacji, w którym chcesz zapisać plik XML, wpisz nazwę dla pliku przy użyciu standardowych plikowych technik **nazwy pliku** , a następnie kliknij przycisk **OK**.  
+2. Przejdź do lokalizacji, w którym chcesz zapisać plik XML, wpisz nazwę dla pliku przy użyciu standardowych plikowych technik **nazwy pliku** , a następnie kliknij przycisk **OK**.  
   
 #### <a name="to-import-datatips"></a>Aby zaimportować etykietek danych  
   
-1.  Polecenie menu Debuguj **Importuj etykietki danych**.  
+1. Polecenie menu Debuguj **Importuj etykietki danych**.  
   
      **Importuj etykietki danych** pojawi się okno dialogowe.  
   
-2.  Użyj okna dialogowego, aby znaleźć plik XML, który chcesz otworzyć, a następnie kliknij przycisk **OK**.  
+2. Użyj okna dialogowego, aby znaleźć plik XML, który chcesz otworzyć, a następnie kliknij przycisk **OK**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)   

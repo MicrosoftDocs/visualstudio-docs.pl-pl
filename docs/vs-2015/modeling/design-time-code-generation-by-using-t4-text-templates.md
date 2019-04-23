@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ff3be8231ede73649ed09569b18fd255882a5221
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f2bd66ca5e5cc7e5884e98ddf4d5c2ba5df15742
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777462"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065146"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,17 +42,17 @@ Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inn
   
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Aby utworzyć szablon T4 czasu projektowania w programie Visual Studio  
   
-1.  Utwórz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu lub Otwórz istniejący.  
+1. Utwórz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu lub Otwórz istniejący.  
   
      Na przykład na **pliku** menu, wybierz **New**, **projektu**.  
   
-2.  Dodaj plik szablonu tekstu do projektu i nadaj jej nazwę, który ma rozszerzenie **.tt**.  
+2. Dodaj plik szablonu tekstu do projektu i nadaj jej nazwę, który ma rozszerzenie **.tt**.  
   
      Aby to zrobić, w **Eksploratora rozwiązań**, w menu skrótów projektu wybierz **Dodaj**, **nowy element**. W **Dodaj nowy element** wybierz okno dialogowe **szablon tekstowy** ze środkowego okienka.  
   
      Należy zauważyć, że **narzędzie niestandardowe** właściwości pliku **TextTemplatingFileGenerator**.  
   
-3.  Otwórz plik. Będzie już zawierać następujące dyrektywy:  
+3. Otwórz plik. Będzie już zawierać następujące dyrektywy:  
   
     ```  
     <#@ template hostspecific="false" language="C#" #>  
@@ -61,17 +61,17 @@ Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inn
   
      Jeśli dodano szablon, aby [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projekt, będzie atrybut language "`VB`".  
   
-4.  Dodaj jakiś tekst na końcu pliku. Na przykład:  
+4. Dodaj jakiś tekst na końcu pliku. Na przykład:  
   
     ```  
     Hello, world!  
     ```  
   
-5.  Zapisz plik.  
+5. Zapisz plik.  
   
      Może zostać wyświetlony **ostrzeżenie o zabezpieczeniach** okno komunikatu, które wyświetli monit o potwierdzenie, że chcesz uruchomić szablon. Kliknij przycisk **OK**.  
   
-6.  W **Eksploratora rozwiązań**, rozwiń węzeł pliku szablonu, a plik, który ma rozszerzenie **.txt**. Plik zawiera wygenerowane z szablonu.  
+6. W **Eksploratora rozwiązań**, rozwiń węzeł pliku szablonu, a plik, który ma rozszerzenie **.txt**. Plik zawiera wygenerowane z szablonu.  
   
     > [!NOTE]
     >  Jeśli projekt jest projekt języka Visual Basic, należy kliknąć przycisk **Pokaż wszystkie pliki** aby można było wyświetlić plik wyjściowy.  
@@ -150,9 +150,9 @@ Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inn
   
 #### <a name="to-generate-program-code-or-resources"></a>Aby wygenerować kod programu lub zasobów  
   
-1.  Zmień dyrektywie wyjścia, aby wygenerować plik odpowiedniego typu, takich jak CS, .vb, resx lub XML.  
+1. Zmień dyrektywie wyjścia, aby wygenerować plik odpowiedniego typu, takich jak CS, .vb, resx lub XML.  
   
-2.  Wstaw kod, który zostanie wygenerowany kod rozwiązania, która jest wymagana. Na przykład, jeśli chcesz wygenerować trzy deklaracje pola Liczba całkowita w klasie:  
+2. Wstaw kod, który zostanie wygenerowany kod rozwiązania, która jest wymagana. Na przykład, jeśli chcesz wygenerować trzy deklaracje pola Liczba całkowita w klasie:  
   
     ```csharp  
   
@@ -185,7 +185,7 @@ Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inn
   
     ```  
   
-3.  Zapisz plik i sprawdzić wygenerowanego pliku, który zawiera teraz następujący kod:  
+3. Zapisz plik i sprawdzić wygenerowanego pliku, który zawiera teraz następujący kod:  
   
     ```  
     class MyGeneratedClass {  
@@ -295,7 +295,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 >  Szablon tekstowy, który jest uruchamiany w domenie aplikacji i usług używanych przez kierowanie. W takiej sytuacji GetCOMService() jest bardziej niezawodną metodą od GetService().  
   
-##  <a name="Regenerating"></a> Automatyczne ponowne generowanie kodu  
+## <a name="Regenerating"></a> Automatyczne ponowne generowanie kodu  
  Zazwyczaj kilka plików w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania są generowane przy użyciu jednego modelu danych wejściowych. Każdy plik jest generowany na podstawie własnego szablonu, ale szablony, które wszystkie odnoszą się do tego samego modelu.  
   
  Jeśli zmieni się w modelu źródłowym, należy ponownie uruchom wszystkie szablony w rozwiązaniu. Aby to zrobić ręcznie, wybierz opcję **Przekształć wszystkie szablony** na **kompilacji** menu.  
@@ -320,25 +320,25 @@ Error("An error message");
 Warning("A warning message");  
 ```  
   
-##  <a name="Converting"></a> Konwertowanie istniejącego pliku do szablonu  
+## <a name="Converting"></a> Konwertowanie istniejącego pliku do szablonu  
  Przydatną cechą szablony to, że wyglądają bardzo podobnie pliki, które generują, wraz z kodu programu wstawiono. Sugeruje to przydatny sposób tworzenia szablonu. Należy najpierw utworzyć zwykły plik jako prototyp, takich jak [!INCLUDE[csprcs](../includes/csprcs-md.md)] pliku i stopniowo wprowadzenie kodu generowania, który jest różny wynikowy plik.  
   
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Aby przekonwertować szablon czasu projektowania istniejącego pliku  
   
-1.  Do Twojej [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu, Dodaj plik typu, który chcesz wygenerować, takich jak `.cs`, `.vb`, lub `.resx` pliku.  
+1. Do Twojej [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu, Dodaj plik typu, który chcesz wygenerować, takich jak `.cs`, `.vb`, lub `.resx` pliku.  
   
-2.  Przetestuj nowy plik, aby upewnić się, że działa.  
+2. Przetestuj nowy plik, aby upewnić się, że działa.  
   
-3.  W Eksploratorze rozwiązań, zmień rozszerzenie nazwy pliku **.tt**.  
+3. W Eksploratorze rozwiązań, zmień rozszerzenie nazwy pliku **.tt**.  
   
-4.  Sprawdź następujące właściwości **.tt** pliku:  
+4. Sprawdź następujące właściwości **.tt** pliku:  
   
     |||  
     |-|-|  
     |**Custom Tool =**|**TextTemplatingFileGenerator**|  
     |**Akcja kompilacji =**|**Brak**|  
   
-5.  Wstaw następujące wiersze na początku pliku:  
+5. Wstaw następujące wiersze na początku pliku:  
   
     ```  
     <#@ template debug="false" hostspecific="false" language="C#" #>  
@@ -349,13 +349,13 @@ Warning("A warning message");
   
      Ustaw `extension` atrybutu rozszerzenie nazwy pliku dla typu pliku, który chcesz wygenerować, na przykład `.cs`, `.resx`, lub `.xml`.  
   
-6.  Zapisz plik.  
+6. Zapisz plik.  
   
      Pomocniczy tworzony jest plik, z określonym rozszerzeniem. Jego właściwości są odpowiednie dla typu pliku. Na przykład **Build Action** będzie właściwości pliku CS **skompilować**.  
   
      Sprawdź, czy wygenerowany plik zawiera tę samą zawartość, jak oryginalny plik.  
   
-7.  Określ część pliku, którego chcesz się różnić. Na przykład element, który pojawia się tylko w określonych warunkach lub części, która jest powtórzona lub gdzie określone wartości różnią się. Wstaw generowania kodu. Zapisz plik i sprawdzić, czy poprawnie generowany jest plik pomocniczy. Powtórz ten krok.  
+7. Określ część pliku, którego chcesz się różnić. Na przykład element, który pojawia się tylko w określonych warunkach lub części, która jest powtórzona lub gdzie określone wartości różnią się. Wstaw generowania kodu. Zapisz plik i sprawdzić, czy poprawnie generowany jest plik pomocniczy. Powtórz ten krok.  
   
 ## <a name="guidelines-for-code-generation"></a>Wskazówki dotyczące generowania kodu  
  Zobacz [wytyczne dotyczące szablonów tekstowych T4 pisania](../modeling/guidelines-for-writing-t4-text-templates.md).  

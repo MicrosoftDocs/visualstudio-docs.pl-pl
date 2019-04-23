@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7c0514d29d3c8e87b277115f8e1307dc0a5fb0c4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: df037f4ee9bb6a89b6d74ffd454abc5bdb13dd8e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662715"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065340"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Utwórz formant użytkownika Windows Forms, który obsługuje powiązanie danych wyszukiwania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,35 +44,35 @@ Podczas wyświetlania danych w formularzach Windows Forms, można wybrać istnie
   
  Z tego instruktażu dowiesz się jak:  
   
--   Utwórz nową **aplikacji Windows**.  
+- Utwórz nową **aplikacji Windows**.  
   
--   Dodaj nową **kontrolki użytkownika** do projektu.  
+- Dodaj nową **kontrolki użytkownika** do projektu.  
   
--   Wizualnie projektować kontrolkę użytkownika.  
+- Wizualnie projektować kontrolkę użytkownika.  
   
--   Implementowanie `LookupBindingProperty` atrybutu.  
+- Implementowanie `LookupBindingProperty` atrybutu.  
   
--   Tworzenie zestawu danych za pomocą **konfiguracji źródła danych** kreatora.  
+- Tworzenie zestawu danych za pomocą **konfiguracji źródła danych** kreatora.  
   
--   Ustaw **CustomerID** kolumny na **zamówienia** tabeli w **źródeł danych** okna, aby użyć nowego formantu.  
+- Ustaw **CustomerID** kolumny na **zamówienia** tabeli w **źródeł danych** okna, aby użyć nowego formantu.  
   
--   Utwórz formularz do wyświetlania danych w nowej kontrolki.  
+- Utwórz formularz do wyświetlania danych w nowej kontrolki.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby ukończyć ten przewodnik, potrzebne są:  
   
--   Dostęp do przykładowej bazy danych Northwind.  
+- Dostęp do przykładowej bazy danych Northwind.  
   
 ## <a name="create-a-windows-application"></a>Tworzenie aplikacji Windows  
  Pierwszym krokiem jest utworzenie **aplikacji Windows**.  
   
 #### <a name="to-create-the-new-windows-project"></a>Aby utworzyć nowy projekt Windows  
   
-1.  W programie Visual Studio z **pliku** menu Utwórz nową **projektu**.  
+1. W programie Visual Studio z **pliku** menu Utwórz nową **projektu**.  
   
-2.  Nadaj projektowi nazwę **LookupControlWalkthrough**.  
+2. Nadaj projektowi nazwę **LookupControlWalkthrough**.  
   
-3.  Wybierz **aplikacja interfejsu Windows Forms**i kliknij przycisk **OK**.  
+3. Wybierz **aplikacja interfejsu Windows Forms**i kliknij przycisk **OK**.  
   
      **LookupControlWalkthrough** projekt zostanie utworzony i dodany do **Eksploratora rozwiązań**.  
   
@@ -81,9 +81,9 @@ Podczas wyświetlania danych w formularzach Windows Forms, można wybrać istnie
   
 #### <a name="to-add-a-user-control-to-the-project"></a>Aby dodać kontrolkę użytkownika do projektu  
   
-1.  Z **projektu** menu, wybierz opcję **Dodaj kontrolkę użytkownika**.  
+1. Z **projektu** menu, wybierz opcję **Dodaj kontrolkę użytkownika**.  
   
-2.  Typ `LookupBox` w **nazwa** obszaru, a następnie kliknij **Dodaj**.  
+2. Typ `LookupBox` w **nazwa** obszaru, a następnie kliknij **Dodaj**.  
   
      **LookupBox** formant jest dodawany do **Eksploratora rozwiązań**i zostanie otwarty w projektancie.  
   
@@ -91,46 +91,46 @@ Podczas wyświetlania danych w formularzach Windows Forms, można wybrać istnie
   
 #### <a name="to-design-the-lookupbox-control"></a>Aby zaprojektować kontroli LookupBox  
   
--   Przeciągnij <xref:System.Windows.Forms.ComboBox> z **przybornika** na powierzchnię projektu kontrolki użytkownika.  
+- Przeciągnij <xref:System.Windows.Forms.ComboBox> z **przybornika** na powierzchnię projektu kontrolki użytkownika.  
   
 ## <a name="add-the-required-data-binding-attribute"></a>Dodaj wymagany atrybut wiązania danych  
  Wyszukiwanie formantów to powiązanie danych pomocy technicznej, można zaimplementować <xref:System.ComponentModel.LookupBindingPropertiesAttribute>.  
   
 #### <a name="to-implement-the-lookupbindingproperties-attribute"></a>Aby zaimplementować atrybutu LookupBindingProperties  
   
-1.  Przełącznik **LookupBox** formantu do widoku kodu. (Na **widoku** menu, wybierz **kodu**.)  
+1. Przełącznik **LookupBox** formantu do widoku kodu. (Na **widoku** menu, wybierz **kodu**.)  
   
-2.  Zastąp kod w `LookupBox` następującym kodem:  
+2. Zastąp kod w `LookupBox` następującym kodem:  
   
      [!code-csharp[VbRaddataDisplaying#5](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/LookupBox.cs#5)]
      [!code-vb[VbRaddataDisplaying#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/LookupBox.vb#5)]  
   
-3.  Z **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.  
+3. Z **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.  
   
 ## <a name="create-a-data-source-from-your-database"></a>Utwórz źródło danych z bazy danych  
  Spowoduje to utworzenie źródła danych przy użyciu **konfiguracji źródła danych** kreatora, na podstawie `Customers` i `Orders` tabel w bazie danych Northwind. Musi mieć dostęp do przykładowej bazy danych Northwind do utworzenia połączenia. Aby uzyskać informacje na temat konfigurowania przykładowej bazy danych Northwind, zobacz [Instalowanie programu SQL Server przykładowych baz danych](../data-tools/install-sql-server-sample-databases.md).  
   
 #### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych  
   
-1.  Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.  
+1. Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.  
   
-2.  W **źródeł danych** wybierz **Dodaj nowe źródło danych** można uruchomić **konfiguracji źródła danych** kreatora.  
+2. W **źródeł danych** wybierz **Dodaj nowe źródło danych** można uruchomić **konfiguracji źródła danych** kreatora.  
   
-3.  Wybierz **bazy danych** na **wybierz typ źródła danych** strony, a następnie kliknij przycisk **dalej**.  
+3. Wybierz **bazy danych** na **wybierz typ źródła danych** strony, a następnie kliknij przycisk **dalej**.  
   
-4.  Na **wybierz połączenie danych** wykonaj strony, jedną z następujących czynności:  
+4. Na **wybierz połączenie danych** wykonaj strony, jedną z następujących czynności:  
   
-    -   Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.  
+    - Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.  
   
-    -   Wybierz **nowe połączenie** można uruchomić **Dodawanie/modyfikowanie połączenia** okno dialogowe.  
+    - Wybierz **nowe połączenie** można uruchomić **Dodawanie/modyfikowanie połączenia** okno dialogowe.  
   
-5.  Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie kliknij przycisk **dalej**.  
+5. Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie kliknij przycisk **dalej**.  
   
-6.  Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji** kliknij **dalej**.  
+6. Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji** kliknij **dalej**.  
   
-7.  Na **wybierz obiekty bazy danych** rozwiń **tabel** węzła.  
+7. Na **wybierz obiekty bazy danych** rozwiń **tabel** węzła.  
   
-8.  Wybierz `Customers` i `Orders` tabel, a następnie kliknij **Zakończ**.  
+8. Wybierz `Customers` i `Orders` tabel, a następnie kliknij **Zakończ**.  
   
      **NorthwindDataSet** zostanie dodany do projektu, a `Customers` i `Orders` tabele są wyświetlane w **źródeł danych** okna.  
   
@@ -139,34 +139,34 @@ Podczas wyświetlania danych w formularzach Windows Forms, można wybrać istnie
   
 #### <a name="to-set-the-customerid-column-to-bind-to-the-lookupbox-control"></a>Aby ustawić kolumnie CustomerID, aby powiązać formant LookupBox  
   
-1.  Otwórz **Form1** w projektancie.  
+1. Otwórz **Form1** w projektancie.  
   
-2.  Rozwiń **klientów** w węźle **źródeł danych** okna.  
+2. Rozwiń **klientów** w węźle **źródeł danych** okna.  
   
-3.  Rozwiń **zamówienia** węzeł (w **klientów** poniżej węzła **faks** kolumny).  
+3. Rozwiń **zamówienia** węzeł (w **klientów** poniżej węzła **faks** kolumny).  
   
-4.  Kliknij strzałkę listy rozwijanej **zamówienia** węzeł i wybierz polecenie **szczegóły** na liście kontrolek.  
+4. Kliknij strzałkę listy rozwijanej **zamówienia** węzeł i wybierz polecenie **szczegóły** na liście kontrolek.  
   
-5.  Kliknij strzałkę listy rozwijanej **CustomerID** kolumny (w **zamówienia** węzła) i wybierz polecenie **Dostosuj**.  
+5. Kliknij strzałkę listy rozwijanej **CustomerID** kolumny (w **zamówienia** węzła) i wybierz polecenie **Dostosuj**.  
   
-6.  Wybierz **LookupBox** z listy **skojarzonych formantów** w **opcje dostosowywania interfejsu użytkownika danych** okno dialogowe.  
+6. Wybierz **LookupBox** z listy **skojarzonych formantów** w **opcje dostosowywania interfejsu użytkownika danych** okno dialogowe.  
   
-7.  Kliknij przycisk **OK**.  
+7. Kliknij przycisk **OK**.  
   
-8.  Kliknij strzałkę listy rozwijanej **CustomerID** kolumny, a wybierz **LookupBox**.  
+8. Kliknij strzałkę listy rozwijanej **CustomerID** kolumny, a wybierz **LookupBox**.  
   
 ## <a name="addcontrols-to-the-form"></a>Addcontrols do formularza  
  Można utworzyć formanty powiązane z danymi przez przeciąganie elementów z **źródeł danych** okna na **Form1**.  
   
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Aby utworzyć formanty powiązane z danymi w formularzu Windows  
   
--   Przeciągnij **zamówienia** węzła z **źródeł danych** okna na formularzu Windows i sprawdź, czy **LookupBox** formant jest używany do wyświetlania danych w `CustomerID` kolumna.  
+- Przeciągnij **zamówienia** węzła z **źródeł danych** okna na formularzu Windows i sprawdź, czy **LookupBox** formant jest używany do wyświetlania danych w `CustomerID` kolumna.  
   
 ## <a name="bind-the-control-to-look-up-companyname-from-the-customers-table"></a>Powiąż formant aby wyszukać CompanyName z tabeli Customers  
   
 #### <a name="to-setup-the-lookup-bindings"></a>Aby skonfigurować powiązania wyszukiwania odnośników  
   
--   Wybierz główny **klientów** w węźle **źródeł danych** okna, a następnie przeciągnij pole na kombi w **CustomerIDLookupBox** na **Form1** .  
+- Wybierz główny **klientów** w węźle **źródeł danych** okna, a następnie przeciągnij pole na kombi w **CustomerIDLookupBox** na **Form1** .  
   
      Spowoduje to utworzenie powiązania danych do wyświetlenia `CompanyName` z `Customers` tabeli przy zachowaniu `CustomerID` wartość z `Orders` tabeli.  
   
@@ -174,9 +174,9 @@ Podczas wyświetlania danych w formularzach Windows Forms, można wybrać istnie
   
 #### <a name="to-run-the-application"></a>Aby uruchomić aplikację  
   
--   Naciśnij klawisz F5, aby uruchomić aplikację.  
+- Naciśnij klawisz F5, aby uruchomić aplikację.  
   
--   Nawigowanie po niektóre rekordy i upewnij się, że `CompanyName` pojawia się w `LookupBox` kontroli.  
+- Nawigowanie po niektóre rekordy i upewnij się, że `CompanyName` pojawia się w `LookupBox` kontroli.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2ff75594cd3c1eb560f9cded5dad2a764198fb5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c2498029b5570a1576f62bcf042a7b87f856f3de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598242"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076657"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Instrukcje: Programowe grupowanie wierszy w arkuszu
   Można grupować jedną lub więcej całych wierszy. Aby utworzyć grupę w arkuszu, należy użyć <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu lub natywnego obiektu zakresu programu Excel.
@@ -37,7 +37,7 @@ ms.locfileid: "56598242"
 
 ### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>Aby utworzyć grupę kontrolek NamedRange do arkusza
 
-1.  Grupa trzech nazwane zakresy, wywołując <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> metoda każdego zakresu. Ten kod muszą być umieszczone w klasie arkusza, nie w `ThisWorkbook` klasy.
+1. Grupa trzech nazwane zakresy, wywołując <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> metoda każdego zakresu. Ten kod muszą być umieszczone w klasie arkusza, nie w `ThisWorkbook` klasy.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#32)]
      [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]
@@ -50,7 +50,7 @@ ms.locfileid: "56598242"
 
 ### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>Aby utworzyć grupę zakresów programu Excel w arkuszu
 
-1.  Grupa trzech nazwane zakresy, wywołując <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> metoda każdego zakresu. W poniższym przykładzie założono, że dostępne są trzy <xref:Microsoft.Office.Interop.Excel.Range> kontrolki o nazwie `data2001`, `data2002`, i `dataAll` na tym samym arkuszu. Każdy z zakresów, o nazwie odwołuje się do całego wiersza w arkuszu.
+1. Grupa trzech nazwane zakresy, wywołując <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> metoda każdego zakresu. W poniższym przykładzie założono, że dostępne są trzy <xref:Microsoft.Office.Interop.Excel.Range> kontrolki o nazwie `data2001`, `data2002`, i `dataAll` na tym samym arkuszu. Każdy z zakresów, o nazwie odwołuje się do całego wiersza w arkuszu.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#33)]
      [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]

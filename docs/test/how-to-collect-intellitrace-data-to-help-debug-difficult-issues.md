@@ -11,12 +11,12 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cac9e52c74b9dc830fa801005a22f0123ee2e41
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce5b03c7973a2b6dd9766f200528ae71cf6e4cfa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926557"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065275"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Instrukcje: Zbieranie danych IntelliTrace aby pomóc w debugowaniu trudnych problemów
 
@@ -51,11 +51,11 @@ Przed wykonaniem kroków w tej procedurze należy otworzyć Ustawienia testu z p
 
 ### <a name="to-configure-the-data-to-collect-with-the-intellitrace-diagnostic-data-adapter"></a>Aby skonfigurować dane zbierane przez adapter danych diagnostycznych IntelliTrace
 
-1.  Wybierz rolę, na której narzędzie IntelliTrace będzie zbierać dane.
+1. Wybierz rolę, na której narzędzie IntelliTrace będzie zbierać dane.
 
-2.  Wybierz **IntelliTrace**.
+2. Wybierz **IntelliTrace**.
 
-3.  W przypadku dodawania funkcji IntelliTrace dla roli klienta sieci web lub aplikacji sieci web programu ASP.NET, należy również zaznaczyć **Proxy klienta ASP.NET dla IntelliTrace i wpływu Test**.
+3. W przypadku dodawania funkcji IntelliTrace dla roli klienta sieci web lub aplikacji sieci web programu ASP.NET, należy również zaznaczyć **Proxy klienta ASP.NET dla IntelliTrace i wpływu Test**.
 
      Ten serwer proxy umożliwia zbieranie informacji na temat połączeń http od klienta do serwera sieci web dla adapterów danych diagnostycznych IntelliTrace i badanie wpływu.
 
@@ -64,22 +64,22 @@ Przed wykonaniem kroków w tej procedurze należy otworzyć Ustawienia testu z p
     >
     > **cmd.exe/profile /user:domain\name runas**
 
-4.  Wybierz **Konfiguruj** dla **IntelliTrace** Aby zmodyfikować domyślne ustawienia narzędzia IntelliTrace.
+4. Wybierz **Konfiguruj** dla **IntelliTrace** Aby zmodyfikować domyślne ustawienia narzędzia IntelliTrace.
 
      Zostanie wyświetlone okno dialogowe z opcjami określenia danych, które mają być zbierane.
 
     > [!WARNING]
     > Po włączeniu funkcji gromadzenia danych przez narzędzie IntelliTrace funkcja zbierania danych o pokryciu kodu nie będzie działać.
 
-5.  Wybierz **ogólne** kartę. Wybierz **tylko zdarzenia funkcji IntelliTrace** Aby rejestrować ważne zdarzenia diagnostyczne, które mają minimalny wpływ na wydajność podczas testowania.
+5. Wybierz **ogólne** kartę. Wybierz **tylko zdarzenia funkcji IntelliTrace** Aby rejestrować ważne zdarzenia diagnostyczne, które mają minimalny wpływ na wydajność podczas testowania.
 
      —lub—
 
      Wybierz **zdarzenia IntelliTrace i wywołania informacji** Aby rejestrować zdarzenia diagnostyczne i metody śledzenia na poziomie pokazujące informacje o wywołaniach. Ten poziom śledzenia może podczas wykonywania testów odczuwalnie obciążać system.
 
-6.  Aby zebrać dane z poziomu aplikacji ASP.NET, który jest uruchomiony w programie Internet Information Services, wybierz **zbieranie danych z aplikacji ASP.NET, które są uruchomione w Internetowych usługach informacyjnych**. Instalowanie i Konfigurowanie agenta testowego w roli serwera sieci web. Zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
+6. Aby zebrać dane z poziomu aplikacji ASP.NET, który jest uruchomiony w programie Internet Information Services, wybierz **zbieranie danych z aplikacji ASP.NET, które są uruchomione w Internetowych usługach informacyjnych**. Instalowanie i Konfigurowanie agenta testowego w roli serwera sieci web. Zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
 
-7.  Wybierz **modułów** kartę. Wybierz opcję **zbierać dane ze wszystkich modułów oprócz następujących** i użyj **Dodaj** do dodania do listy modułów i **Usuń** można usunąć modułu. Ta opcja pozwala objąć wszystkie moduły działające w systemie poza konkretnie wskazanymi.
+7. Wybierz **modułów** kartę. Wybierz opcję **zbierać dane ze wszystkich modułów oprócz następujących** i użyj **Dodaj** do dodania do listy modułów i **Usuń** można usunąć modułu. Ta opcja pozwala objąć wszystkie moduły działające w systemie poza konkretnie wskazanymi.
 
      —lub—
 
@@ -88,7 +88,7 @@ Przed wykonaniem kroków w tej procedurze należy otworzyć Ustawienia testu z p
     > [!NOTE]
     > O ile to tylko możliwe, należy zaznaczać konkretne procesy, które mają być monitorowane. Zapewni to optymalne działanie systemu.
 
-8.  Wybierz **procesy** kartę. Wybierz **zbieranie danych od wszystkich procesów oprócz następujących** i użyj **Dodaj** do dodania do listy procesów i **Usuń** Usuń. Ta opcja pozwala objąć gromadzeniem danych wszystkie procesy działające w systemie poza konkretnie wskazanymi.
+8. Wybierz **procesy** kartę. Wybierz **zbieranie danych od wszystkich procesów oprócz następujących** i użyj **Dodaj** do dodania do listy procesów i **Usuń** Usuń. Ta opcja pozwala objąć gromadzeniem danych wszystkie procesy działające w systemie poza konkretnie wskazanymi.
 
      —lub—
 

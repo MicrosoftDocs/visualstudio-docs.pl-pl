@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26cc1d8c0063d23b20c6c0a8938a67793a2a1532
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c57b16ff9b866ffe36f89ed14b5353fd611a45b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632878"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073220"
 ---
 # <a name="performance-report-overview"></a>Przegląd raportu wydajności
 Można wyświetlić danych profilowania w sesji pomiaru wydajności **raport dotyczący wydajności** okna programu Visual Studio Team System Development Edition zintegrowanego środowiska programistycznego (IDE). Profilowania dane są zapisywane w plikach .vsp i .vsps. Widok raportu w systemie windows umożliwiają można wyświetlać i analizować problemy z wydajnością aplikacji.
@@ -79,19 +79,19 @@ Można wyświetlić danych profilowania w sesji pomiaru wydajności **raport dot
 ## <a name="customizable-filter-control"></a>Formant filtru można dostosowywać
  Formant filtru można dostosowywać ma następujące opcje:
 
--   **Importowanie filtru** — pobiera wcześniej zapisane zapytanie niestandardowe.
+- **Importowanie filtru** — pobiera wcześniej zapisane zapytanie niestandardowe.
 
--   **Eksportuj filtr** — zapisuje niestandardowe zapytanie do określonej lokalizacji.
+- **Eksportuj filtr** — zapisuje niestandardowe zapytanie do określonej lokalizacji.
 
--   **Wykonaj zapytanie** — wykonuje zapytanie, wyświetlana w formancie zapytanie niestandardowe.
+- **Wykonaj zapytanie** — wykonuje zapytanie, wyświetlana w formancie zapytanie niestandardowe.
 
--   **Zatrzymaj zapytanie** -zatrzymuje wykonywanie zapytania, który jest uruchomiony. Ten przycisk jest dostępny, jeśli jest uruchomiony bez określenia zapytania.
+- **Zatrzymaj zapytanie** -zatrzymuje wykonywanie zapytania, który jest uruchomiony. Ten przycisk jest dostępny, jeśli jest uruchomiony bez określenia zapytania.
 
--   **Wyświetl zapytanie** — pokazuje lub ukrywa Kontrolki niestandardowe zapytanie.
+- **Wyświetl zapytanie** — pokazuje lub ukrywa Kontrolki niestandardowe zapytanie.
 
--   **Zapisz Analyzed** — raport wraz z jego bieżącej analizy jest zapisywany jako plik .vsps.
+- **Zapisz Analyzed** — raport wraz z jego bieżącej analizy jest zapisywany jako plik .vsps.
 
--   **Eksportuj** — zapisuje bieżący raport w. Sformatowana CVS lub. Pliku w formacie XML, z opcjami, aby zapisać różne widoki.
+- **Eksportuj** — zapisuje bieżący raport w. Sformatowana CVS lub. Pliku w formacie XML, z opcjami, aby zapisać różne widoki.
 
 ## <a name="see-also"></a>Zobacz także
 - [Analizowanie danych dotyczących narzędzi do oceny wydajności](../profiling/analyzing-performance-tools-data.md)

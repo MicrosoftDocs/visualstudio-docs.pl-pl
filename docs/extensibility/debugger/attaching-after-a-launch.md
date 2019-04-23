@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54284b9e1e55e4e3a3ba8b8237b9420cbf195089
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b5c763e18f30bec27837e248a27546df821ef33f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704049"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065587"
 ---
 # <a name="attach-after-a-launch"></a>Dołączanie po uruchomieniu
 Po uruchomieniu programu sesji debugowania jest gotowy do dołączania aparat debugowania (DE) do wspomnianej programu.
@@ -23,9 +23,9 @@ Po uruchomieniu programu sesji debugowania jest gotowy do dołączania aparat de
 ## <a name="design-decisions"></a>Decyzje dotyczące projektu
  Ponieważ komunikacja jest łatwiejsze w przestrzeni adresowej udostępnionego, należy wybrać opcję dwa podejścia do projektowania: Ustaw komunikacji między sesji debugowania i "de". Lub ustaw komunikację między DE i program. Wybierz jedną z następujących:
 
--   Jeśli więcej sensu skonfigurować komunikację między sesji debugowania i "de", sesja debugowania wspólnie tworzy DE i pyta, Niemcy, aby dołączyć do programu. W tym projekcie pozostawia sesji debugowania i "de" ze sobą w jedną przestrzeń adresową i środowiska wykonawczego i program razem w innym.
+- Jeśli więcej sensu skonfigurować komunikację między sesji debugowania i "de", sesja debugowania wspólnie tworzy DE i pyta, Niemcy, aby dołączyć do programu. W tym projekcie pozostawia sesji debugowania i "de" ze sobą w jedną przestrzeń adresową i środowiska wykonawczego i program razem w innym.
 
--   Jeśli więcej sensu do skonfigurowania komunikacji między DE i program, środowiska wykonawczego powoduje utworzenie wspólnej DE. W tym projekcie pozostawia SDM w jedną przestrzeń adresową i Niemcy, środowiska wykonawczego i program razem w innym. Ten projekt jest typowy dla DE, który jest implementowany przy użyciu tłumacza do uruchamiania przy użyciu skryptu języków.
+- Jeśli więcej sensu do skonfigurowania komunikacji między DE i program, środowiska wykonawczego powoduje utworzenie wspólnej DE. W tym projekcie pozostawia SDM w jedną przestrzeń adresową i Niemcy, środowiska wykonawczego i program razem w innym. Ten projekt jest typowy dla DE, który jest implementowany przy użyciu tłumacza do uruchamiania przy użyciu skryptu języków.
 
     > [!NOTE]
     >  Jak DE dołącza do programu zależy od implementacji. Komunikacja między DE i program jest również zależna od implementacji.

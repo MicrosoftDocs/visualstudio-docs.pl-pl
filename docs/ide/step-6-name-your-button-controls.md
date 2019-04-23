@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0b1c4b34a9d4195875c1ae1104b1dc88585871b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0920a624f726aa4fd6f44d0181be75a45e0b7b92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946158"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070644"
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6. Nazw kontrolkom przycisków
 Jest tylko jedna <xref:System.Windows.Forms.PictureBox> w formularzu. Po dodaniu, IDE automatycznie nadał mu **pictureBox1**. Jest tylko jedna <xref:System.Windows.Forms.CheckBox>, który nosi **checkBox1**. Wkrótce będzie pisanie kodu i ten kod będzie odnosić się do CheckBox i PictureBox. Ponieważ istnieje tylko jeden z tych kontrolek, będzie wiadomo, co oznacza wyświetlenie **pictureBox1** lub **checkBox1** w kodzie.
@@ -27,7 +27,7 @@ Jest tylko jedna <xref:System.Windows.Forms.PictureBox> w formularzu. Po dodaniu
 
 ## <a name="to-name-your-button-controls"></a>Aby nazwać formanty przycisków
 
-1.  W formularzu Wybierz **Zamknij** przycisku. (Jeśli nadal masz zaznaczone wszystkie przyciski, wybierz opcję **Esc** klawisz, aby anulować zaznaczenie.) Przewijanie w **właściwości** okna, aż zobaczysz **(nazwa)** właściwości. ( **(Nazwa)** właściwość jest u góry, gdy właściwości są w kolejności alfabetycznej.) Zmień nazwę na **closeButton**, jak pokazano na poniższej ilustracji.
+1. W formularzu Wybierz **Zamknij** przycisku. (Jeśli nadal masz zaznaczone wszystkie przyciski, wybierz opcję **Esc** klawisz, aby anulować zaznaczenie.) Przewijanie w **właściwości** okna, aż zobaczysz **(nazwa)** właściwości. ( **(Nazwa)** właściwość jest u góry, gdy właściwości są w kolejności alfabetycznej.) Zmień nazwę na **closeButton**, jak pokazano na poniższej ilustracji.
 
      ![Okno właściwości z nazwą closeButton](../ide/media/express_setnameproperty.png)
 **właściwości** okno z **closeButton** nazwy
@@ -35,14 +35,14 @@ Jest tylko jedna <xref:System.Windows.Forms.PictureBox> w formularzu. Po dodaniu
     > [!NOTE]
     >  Jeśli spróbujesz zmienić nazwę przycisku na **closeButton**, ze spacją między wyrazami przycisk i zamykania, środowisko IDE wyświetla komunikat o błędzie: "Wartość właściwości jest nieprawidłowa." Miejsca do magazynowania (i kilka innych znaków) są niedozwolone w nazwach formantów.
 
-2.  Zmień nazwę inne trzy przyciski na **backgroundButton**, **clearButton**, i **showButton**. Możesz sprawdzić nazwy, wybierając przycisk listy rozwijanej selektora kontroli w **właściwości** okna. Pojawiają się nowe nazwy przycisków.
+2. Zmień nazwę inne trzy przyciski na **backgroundButton**, **clearButton**, i **showButton**. Możesz sprawdzić nazwy, wybierając przycisk listy rozwijanej selektora kontroli w **właściwości** okna. Pojawiają się nowe nazwy przycisków.
 
-3.  Kliknij dwukrotnie **Pokaż obraz** przycisku w formularzu. Jako alternatywę, wybierz **Pokaż obraz** znajdujący się na formularzu, a następnie wybierz **Enter** klucza. Po wykonaniu, IDE otwiera dodatkową kartę w oknie głównym o nazwie **Form1.cs** (**Form1.vb** Jeśli używasz języka Visual Basic). Ta karta przedstawia plik kodu za formularzem, jak pokazano na poniższej ilustracji.
+3. Kliknij dwukrotnie **Pokaż obraz** przycisku w formularzu. Jako alternatywę, wybierz **Pokaż obraz** znajdujący się na formularzu, a następnie wybierz **Enter** klucza. Po wykonaniu, IDE otwiera dodatkową kartę w oknie głównym o nazwie **Form1.cs** (**Form1.vb** Jeśli używasz języka Visual Basic). Ta karta przedstawia plik kodu za formularzem, jak pokazano na poniższej ilustracji.
 
      ![Karta Form1.CS z Visual C&#35; kodu](../ide/media/express_showbuttoncode.png)
 **Form1.cs** kartę z wizualizacją C# kodu
 
-4.  Skup się na niniejszej części kodu. (Wybierz **VB** karcie poniżej, jeśli używasz języka Visual Basic, aby wyświetlić wersję kodu w Visual Basic.)
+4. Skup się na niniejszej części kodu. (Wybierz **VB** karcie poniżej, jeśli używasz języka Visual Basic, aby wyświetlić wersję kodu w Visual Basic.)
 
      [!code-vb[VbExpressTutorial1Step6#1](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_1.vb)]
      [!code-csharp[VbExpressTutorial1Step6#1](../ide/codesnippet/CSharp/step-6-name-your-button-controls_1.cs)]
@@ -52,9 +52,9 @@ Jest tylko jedna <xref:System.Windows.Forms.PictureBox> w formularzu. Po dodaniu
     > [!NOTE]
     >  W tym samouczku został uproszczony kod języka Visual Basic, która jest generowana automatycznie przez usunięcie wszystkiego w nawiasach `()`. Zawsze, gdy ten problem wystąpi, możesz usunąć ten sam kod. Program będzie działać w obu kierunkach. Dla pozostałej części samouczków wszelki automatycznie wygenerowany kod jest uproszczony w miarę możliwości.
 
-5.  Wybierz **Windows Forms Designer** karcie ponownie (**Form1.cs [projekt]** w elemencie wizualnym C#, **Form1.vb [projekt]** w języku Visual Basic), a następnie otwórz plik kodu dla  **Wyczyść obraz** przycisk, aby utworzyć metodę dla niego w kodzie formularza. Powtórz tę czynność dla pozostałych dwóch przycisków. Za każdym razem IDE dodaje nową metodę do pliku kodu formularza.
+5. Wybierz **Windows Forms Designer** karcie ponownie (**Form1.cs [projekt]** w elemencie wizualnym C#, **Form1.vb [projekt]** w języku Visual Basic), a następnie otwórz plik kodu dla  **Wyczyść obraz** przycisk, aby utworzyć metodę dla niego w kodzie formularza. Powtórz tę czynność dla pozostałych dwóch przycisków. Za każdym razem IDE dodaje nową metodę do pliku kodu formularza.
 
-6.  Aby dodać jedną metodę, otwórz plik kodu dla **wyboru** w kontrolce **Windows Forms Designer** się IDE doda `checkBox1_CheckedChanged()` metody. Metoda ta jest wywoływana zawsze wtedy, gdy użytkownik zaznacza lub czyści pole wyboru.
+6. Aby dodać jedną metodę, otwórz plik kodu dla **wyboru** w kontrolce **Windows Forms Designer** się IDE doda `checkBox1_CheckedChanged()` metody. Metoda ta jest wywoływana zawsze wtedy, gdy użytkownik zaznacza lub czyści pole wyboru.
 
     > [!NOTE]
     >  Podczas pracy z programem, często przechodzisz między Edytorem kodu a **Windows Forms Designer**. IDE ułatwia nawigowanie w projekcie. Użyj **Eksploratora rozwiązań** otworzyć **Windows Forms Designer** przez dwukrotne kliknięcie *Form1.cs* w elemencie wizualnym C# lub *Form1.vb* w Visual Basic lub na pasku menu wybierz **widoku** > **projektanta**.
@@ -74,6 +74,6 @@ Jest tylko jedna <xref:System.Windows.Forms.PictureBox> w formularzu. Po dodaniu
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
--   Aby przejść do następnego kroku samouczka, zobacz [kroku 7: Dodawanie składników okna dialogowego do formularza](../ide/step-7-add-dialog-components-to-your-form.md).
+- Aby przejść do następnego kroku samouczka, zobacz [kroku 7: Dodawanie składników okna dialogowego do formularza](../ide/step-7-add-dialog-components-to-your-form.md).
 
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 5: Dodawanie formantów do formularza](../ide/step-5-add-controls-to-your-form.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 5: Dodawanie formantów do formularza](../ide/step-5-add-controls-to-your-form.md).

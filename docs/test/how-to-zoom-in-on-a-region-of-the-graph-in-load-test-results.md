@@ -11,12 +11,12 @@ ms.assetid: 729b4c30-4bc3-4698-91b3-17a676897443
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09a0b390299c354494ef29d177a4bd6c72f0548d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f570e2085bf9d0707bb5a8bfe33576466a6d7b41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913070"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073244"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Instrukcje: Powiększanie obszaru wykresu w wynikach testów obciążenia
 
@@ -51,17 +51,17 @@ Zanim zmienisz wyświetlania wykresu powiększanie lub pomniejszanie lub przewij
 
 Aby wyświetlić wykresy:
 
-1.  Uruchom test obciążeniowy, aż zostanie zakończony.
+1. Uruchom test obciążeniowy, aż zostanie zakończony.
 
-2.  Na końcu przebiegu testu obciążeniowego wybierz **tak** w oknie dialogowym z pytaniem o wyświetlaniu wyników z wyników testów obciążenia są przechowywane.
+2. Na końcu przebiegu testu obciążeniowego wybierz **tak** w oknie dialogowym z pytaniem o wyświetlaniu wyników z wyników testów obciążenia są przechowywane.
 
      \- lub —
 
      Wyświetl szczegóły wcześniej uruchomionego testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [jak: Dostęp do wyników testów obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md).
 
-3.  Wybierz **wykresów** Jeśli wykresów nie są wyświetlane.
+3. Wybierz **wykresów** Jeśli wykresów nie są wyświetlane.
 
-4.  Jeśli paski powiększenia nie są wyświetlane, wybierz opcję **Pokaż formanty powiększenia**.
+4. Jeśli paski powiększenia nie są wyświetlane, wybierz opcję **Pokaż formanty powiększenia**.
 
      Dwa paski powiększenia są dostępne dla każdego wykresu. Pasek powiększenia, który kontroluje skalowania w pionie pojawia się po lewej stronie wykresu. W obszarze wykresu zostanie wyświetlony pasek powiększenia, który kontroluje skalowanie w poziomie.
 
@@ -73,21 +73,21 @@ W przypadku wielu wykresy wyświetlane zapewnić ich synchronizację, tak że wy
 
 ### <a name="to-synchronize-zooming-and-scrolling"></a>Aby zsynchronizować powiększania i przewijania
 
-1.  Na **analizatora testu obciążenia**, wybierz **zsynchronizować poziomy powiększenia kontrolki**.
+1. Na **analizatora testu obciążenia**, wybierz **zsynchronizować poziomy powiększenia kontrolki**.
 
      Gdy **zsynchronizować poziomy powiększenia formantów** przycisk jest zaznaczony, powiększania i przewijania Skala czasu poszczególnych wykresów również powiększa Przewija skali czasu inne wykresy.
 
-2.  Ponownie wybierz pozycję **zsynchronizować poziomy powiększenia kontrolki**.
+2. Ponownie wybierz pozycję **zsynchronizować poziomy powiększenia kontrolki**.
 
      Gdy **zsynchronizować poziomy powiększenia formantów** przycisk nie jest zaznaczone, powiększanie i przewijanie Skala czasu poszczególnych wykresów dotyczy tylko tego wykresu.
 
 ### <a name="to-zoom-and-scroll-to-a-region-of-the-graph"></a>Na powiększanie i przewijanie do obszaru wykresu
 
-1.  Na pasku powiększenia wykresu przeciągnij uchwyt po lewej stronie, aby po prawej stronie.
+1. Na pasku powiększenia wykresu przeciągnij uchwyt po lewej stronie, aby po prawej stronie.
 
      To powiększa w dalszej części przebiegu testu. Podobnie przeciągając uchwyt po prawej stronie po lewej stronie powiększa wcześniejszej części przebiegu testu.
 
-2.  Aby powiększyć konkretnego obszaru, przesuń zarówno uchwyty do środka wykresu.
+2. Aby powiększyć konkretnego obszaru, przesuń zarówno uchwyty do środka wykresu.
 
      Im bliżej obsługuje dwa są ze sobą, tym bardziej powiększania Aby wyświetlić segmenty krótszych, bardziej precyzyjną testu obciążeniowego.
 
@@ -107,9 +107,9 @@ W przypadku wielu wykresy wyświetlane zapewnić ich synchronizację, tak że wy
 
 ### <a name="to-zoom-out"></a>Aby pomniejszyć
 
-1.  Kliknij prawym przyciskiem myszy wykres powiększonej.
+1. Kliknij prawym przyciskiem myszy wykres powiększonej.
 
-2.  W menu skrótów wybierz **powiększania się poziomy**.
+2. W menu skrótów wybierz **powiększania się poziomy**.
 
      To powiększa się, aby wyświetlić cały czas trwania testu obciążenia Uruchom.
 

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f879f8367ad1b992300c9e5b1c8a2887e89205b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 318744ec1a1a9214ce0385fc56fb1c0cf340339b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608015"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068499"
 ---
 # <a name="how-to-define-a-method-instance"></a>Instrukcje: Definiowanie wystąpienia metody
   Należy zdefiniować co najmniej jedno wystąpienie metody dla każdej metody w modelu.
@@ -29,15 +29,15 @@ ms.locfileid: "56608015"
 
 ### <a name="to-define-a-method-instance"></a>Aby zdefiniować wystąpienie metody
 
-1.  W **szczegóły metody BDC** okna, rozwiń węzeł metody, a następnie rozwiń **wystąpień** węzła.
+1. W **szczegóły metody BDC** okna, rozwiń węzeł metody, a następnie rozwiń **wystąpień** węzła.
 
-2.  W **Dodaj wystąpienie metody** wybierz **Utwórz wystąpienie metody wyszukującej**.
+2. W **Dodaj wystąpienie metody** wybierz **Utwórz wystąpienie metody wyszukującej**.
 
      Nowe wystąpienie metody zostanie wyświetlone poniżej **wystąpień** węzła.
 
-3.  Na pasku menu wybierz **widoku** > **okno właściwości**.
+3. Na pasku menu wybierz **widoku** > **okno właściwości**.
 
-4.  W **właściwości** okna, ustaw właściwości wystąpienia metody. Aby uzyskać więcej informacji na temat każdej właściwości, zobacz [elementu MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).
+4. W **właściwości** okna, ustaw właściwości wystąpienia metody. Aby uzyskać więcej informacji na temat każdej właściwości, zobacz [elementu MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).
 
 ## <a name="see-also"></a>Zobacz także
 - [Omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md)

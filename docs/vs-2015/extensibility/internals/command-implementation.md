@@ -10,12 +10,12 @@ ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8cd48e7338823c94ad9a16f1b087daac6abe8f6e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a208fabd3d205793763698cde0f6fe367c7bb8b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768295"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067836"
 ---
 # <a name="command-implementation"></a>Implementacja poleceń
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,23 +69,23 @@ if ( null != mcs )
   
 - Jeśli implementacja jednej z metod rozpoznaje zarówno identyfikatora GUID, a polecenie, a następnie metoda powinna być ustawiona na pole flag poleceń każdego polecenia (w `prgCmds` parametr) przy użyciu następujących flag:  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Jeśli polecenie jest obsługiwane.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Jeśli polecenie jest obsługiwane.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Jeśli polecenie nie powinny być widoczne.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Jeśli polecenie nie powinny być widoczne.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Jeśli polecenie jest przełączona w i prawdopodobnie zostały zaewidencjonowane.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Jeśli polecenie jest przełączona w i prawdopodobnie zostały zaewidencjonowane.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Jeśli polecenie jest włączone.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Jeśli polecenie jest włączone.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Jeśli polecenie ma być ukryty, jeśli jest wyświetlana w menu skrótów.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Jeśli polecenie ma być ukryty, jeśli jest wyświetlana w menu skrótów.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Jeśli polecenie jest kontroler menu i nie jest włączona, ale jego menu rozwijane listy nie jest pusta i jest nadal dostępna. (Ta flaga jest rzadko używany).  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Jeśli polecenie jest kontroler menu i nie jest włączona, ale jego menu rozwijane listy nie jest pusta i jest nadal dostępna. (Ta flaga jest rzadko używany).  
   
 - Jeśli polecenie zostało zdefiniowane w pliku vsct z `TextChanges` Flaga, ustaw następujące parametry:  
   
-  -   Ustaw `rgwz` elementu `pCmdText` parametr nowego tekstu polecenia.  
+  - Ustaw `rgwz` elementu `pCmdText` parametr nowego tekstu polecenia.  
   
-  -   Ustaw `cwActual` elementu `pCmdText` parametru, aby rozmiar ciągu polecenia.  
+  - Ustaw `cwActual` elementu `pCmdText` parametru, aby rozmiar ciągu polecenia.  
   
   Upewnij się również, bieżącego kontekstu nie jest funkcją usługi automation, chyba że polecenie jest przeznaczony specjalnie do obsługi funkcji automatyzacji.  
   

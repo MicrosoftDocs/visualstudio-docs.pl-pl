@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e885ffa758f6503c10517c672745a31ef0960fe5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2c507bb2ea6fa231b2b3f3d92cebb3ca78bb4eb5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54767334"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071203"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Instrukcje: Tworzenie i edytowanie konfiguracji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Można utworzyć kilka konfiguracji kompilacji dla rozwiązania. Na przykład mo
   
 #### <a name="to-set-properties-based-on-configurations"></a>Aby ustawić właściwości na podstawie konfiguracji  
   
--   W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **właściwości**.  
+- W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **właściwości**.  
   
      **Stron właściwości** zostanie otwarte okno.  
   
@@ -59,69 +59,69 @@ Można utworzyć kilka konfiguracji kompilacji dla rozwiązania. Na przykład mo
   
 #### <a name="to-create-a-project-configuration"></a>Aby utworzyć konfigurację projektu  
   
-1.  Otwórz **programu Configuration Manager** okno dialogowe.  
+1. Otwórz **programu Configuration Manager** okno dialogowe.  
   
-2.  Wybierz projekt w **projektu** kolumny.  
+2. Wybierz projekt w **projektu** kolumny.  
   
-3.  W **konfiguracji** listy rozwijanej dla tego projektu, wybierz **New**.  
+3. W **konfiguracji** listy rozwijanej dla tego projektu, wybierz **New**.  
   
      **Nowa konfiguracja projektu** zostanie otwarte okno dialogowe.  
   
-4.  W **nazwa** wprowadź nazwę dla nowej konfiguracji.  
+4. W **nazwa** wprowadź nazwę dla nowej konfiguracji.  
   
-5.  Aby użyć ustawienia właściwości z istniejącej konfiguracji projektu, w **Kopiuj ustawienia** listy rozwijanej wybierz konfigurację.  
+5. Aby użyć ustawienia właściwości z istniejącej konfiguracji projektu, w **Kopiuj ustawienia** listy rozwijanej wybierz konfigurację.  
   
-6.  Aby utworzyć konfigurację całego rozwiązania, w tym samym czasie, zaznacz **nowa konfiguracja rozwiązania Utwórz** pole wyboru.  
+6. Aby utworzyć konfigurację całego rozwiązania, w tym samym czasie, zaznacz **nowa konfiguracja rozwiązania Utwórz** pole wyboru.  
   
 #### <a name="to-rename-a-project-configuration"></a>Aby zmienić konfigurację projektu  
   
-1.  Otwórz **programu Configuration Manager** okno dialogowe.  
+1. Otwórz **programu Configuration Manager** okno dialogowe.  
   
-2.  W **projektu** kolumnę, wybierz projekt, który ma konfigurację projektu chcesz zmienić.  
+2. W **projektu** kolumnę, wybierz projekt, który ma konfigurację projektu chcesz zmienić.  
   
-3.  W **konfiguracji** listy rozwijanej dla tego projektu, wybierz **Edytuj**.  
+3. W **konfiguracji** listy rozwijanej dla tego projektu, wybierz **Edytuj**.  
   
      **Edytuj konfiguracje projektu** zostanie otwarte okno dialogowe.  
   
-4.  Wybierz nazwę konfiguracji projektu, który chcesz zmienić.  
+4. Wybierz nazwę konfiguracji projektu, który chcesz zmienić.  
   
-5.  Wybierz **Zmień nazwę**, a następnie wprowadź nową nazwę.  
+5. Wybierz **Zmień nazwę**, a następnie wprowadź nową nazwę.  
   
 ## <a name="creating-and-modifying-solution-wide-build-configurations"></a>Tworzenie i modyfikowanie całego rozwiązania konfiguracje kompilacji  
   
 #### <a name="to-create-a-solution-wide-build-configuration"></a>Aby utworzyć konfigurację kompilacji całego rozwiązania  
   
-1.  Otwórz **programu Configuration Manager** okno dialogowe.  
+1. Otwórz **programu Configuration Manager** okno dialogowe.  
   
-2.  W **Konfiguracja rozwiązania aktywnego** listy rozwijanej wybierz **New**.  
+2. W **Konfiguracja rozwiązania aktywnego** listy rozwijanej wybierz **New**.  
   
      **Nowa konfiguracja rozwiązania** zostanie otwarte okno dialogowe.  
   
-3.  W **nazwa** tekstu wprowadź nazwę dla nowej konfiguracji.  
+3. W **nazwa** tekstu wprowadź nazwę dla nowej konfiguracji.  
   
-4.  Aby użyć ustawień z istniejącej konfiguracji rozwiązania, w **Kopiuj ustawienia** listy rozwijanej wybierz konfigurację.  
+4. Aby użyć ustawień z istniejącej konfiguracji rozwiązania, w **Kopiuj ustawienia** listy rozwijanej wybierz konfigurację.  
   
-5.  Aby utworzyć konfiguracje projektu w tym samym czasie, należy zaznaczyć **Utwórz nowe konfiguracje projektu** pole wyboru.  
+5. Aby utworzyć konfiguracje projektu w tym samym czasie, należy zaznaczyć **Utwórz nowe konfiguracje projektu** pole wyboru.  
   
 #### <a name="to-rename-a-solution-wide-build-configuration"></a>Aby zmienić konfigurację kompilacji całego rozwiązania  
   
-1.  Otwórz **programu Configuration Manager** okno dialogowe.  
+1. Otwórz **programu Configuration Manager** okno dialogowe.  
   
-2.  W **Konfiguracja rozwiązania aktywnego** listy rozwijanej wybierz **Edytuj**.  
+2. W **Konfiguracja rozwiązania aktywnego** listy rozwijanej wybierz **Edytuj**.  
   
      **Edytuj konfiguracje rozwiązania** zostanie otwarte okno dialogowe.  
   
-3.  Wybierz nazwę konfiguracji rozwiązania, które chcesz zmienić.  
+3. Wybierz nazwę konfiguracji rozwiązania, które chcesz zmienić.  
   
-4.  Wybierz **Zmień nazwę**, a następnie wprowadź nową nazwę.  
+4. Wybierz **Zmień nazwę**, a następnie wprowadź nową nazwę.  
   
 #### <a name="to-modify-a-solution-wide-build-configuration"></a>Aby zmodyfikować konfigurację kompilacji całego rozwiązania  
   
-1.  Otwórz **programu Configuration Manager** okno dialogowe.  
+1. Otwórz **programu Configuration Manager** okno dialogowe.  
   
-2.  W **Konfiguracja rozwiązania aktywnego** listę rozwijaną, wybierz konfigurację ma na liście.  
+2. W **Konfiguracja rozwiązania aktywnego** listę rozwijaną, wybierz konfigurację ma na liście.  
   
-3.  W **konteksty projektu** okienko dla każdego projektu, wybierz opcję **konfiguracji** i **platformy** i wybierz opcję **kompilacji**go oraz czy **Wdróż** go.  
+3. W **konteksty projektu** okienko dla każdego projektu, wybierz opcję **konfiguracji** i **platformy** i wybierz opcję **kompilacji**go oraz czy **Wdróż** go.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Ogólne informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md)   

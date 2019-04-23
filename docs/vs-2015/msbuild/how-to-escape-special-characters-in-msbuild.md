@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d6b10c8f4b2658acc3dd4dfa113c8edd8f1de5b2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 94fc8d858e2db9bd1e00bb8770cf52672a900ab0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665718"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065003"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>Instrukcje: Znaki specjalne ucieczki w programie MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Niektóre znaki mają specjalne znaczenie [!INCLUDE[vstecmsbuild](../includes/vs
   
 #### <a name="to-use-an-msbuild-special-character-as-a-literal-character"></a>Aby użyć znaku specjalnego MSBuild jako znak literału  
   
--   Użyj % notacji*xx* zamiast znaki specjalne, gdzie *xx* reprezentuje wartości szesnastkowej znaku ASCII. Na przykład, aby użyć gwiazdki (*) jako znak literałowy, użyj wartości `%2A`.  
+- Użyj % notacji*xx* zamiast znaki specjalne, gdzie *xx* reprezentuje wartości szesnastkowej znaku ASCII. Na przykład, aby użyć gwiazdki (*) jako znak literałowy, użyj wartości `%2A`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)   

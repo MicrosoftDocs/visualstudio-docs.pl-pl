@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b33a3f7980031a84e381a317213de988280517c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f1d72d3da8adeff7b8280bda84eb92b730679fea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598241"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085847"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Instrukcje: Dodawanie okienek akcji do dokumentów programu Word lub arkuszy programu Excel
   Aby dodać okienek akcji do dokumentu programu Microsoft Office Word lub skoroszytu programu Microsoft Excel, należy najpierw utworzyć formant użytkownika interfejsu Windows Forms. Następnie dodaj formant użytkownika do <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> właściwość `ThisDocument.ActionsPane` pola (w programie Word) lub `ThisWorkbook.ActionsPane` pola (Excel) w projekcie.
@@ -35,26 +35,26 @@ ms.locfileid: "56598241"
 
 #### <a name="to-create-the-user-control"></a>Aby utworzyć formant użytkownika
 
-1.  Otwórz projekt poziomu dokumentu programu Word lub Excel w programie Visual Studio.
+1. Otwórz projekt poziomu dokumentu programu Word lub Excel w programie Visual Studio.
 
-2.  Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.
+2. Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.
 
-3.  W **Dodaj nowy element** okno dialogowe, wybierz opcję **kontrolki okienka akcji**, nadaj jej nazwę **HelloControl**i kliknij przycisk **Dodaj**.
+3. W **Dodaj nowy element** okno dialogowe, wybierz opcję **kontrolki okienka akcji**, nadaj jej nazwę **HelloControl**i kliknij przycisk **Dodaj**.
 
     > [!NOTE]
     >  Możesz też dodać **kontrolki użytkownika** elementu do projektu. Klasy generowane przez **kontrolki okienka akcji** i **kontrolki użytkownika** elementy są funkcjonalnie równoważne.
 
-4.  Z **Windows Forms** karcie **przybornika** przeciągnij **przycisk** kontrolki na kontrolkę.
+4. Z **Windows Forms** karcie **przybornika** przeciągnij **przycisk** kontrolki na kontrolkę.
 
     > [!NOTE]
     >  Jeśli formant nie jest widoczny w projektancie, kliknij dwukrotnie **HelloControl** w **Eksploratora rozwiązań**.
 
-5.  Dodaj kod, aby <xref:System.Windows.Forms.Control.Click> program obsługi zdarzeń przycisku. Poniższy przykład pokazuje kod dla dokumentu programu Microsoft Office Word.
+5. Dodaj kod, aby <xref:System.Windows.Forms.Control.Click> program obsługi zdarzeń przycisku. Poniższy przykład pokazuje kod dla dokumentu programu Microsoft Office Word.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#12)]
      [!code-vb[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/HelloControl.vb#12)]
 
-6.  W języku C# należy dodać moduł obsługi zdarzenia kliknięcia przycisku. Możesz umieścić ten kod w `HelloControl` konstruktora, po wywołaniu `InitializeComponent`.
+6. W języku C# należy dodać moduł obsługi zdarzenia kliknięcia przycisku. Możesz umieścić ten kod w `HelloControl` konstruktora, po wywołaniu `InitializeComponent`.
 
      Aby uzyskać informacje o sposobie tworzenia procedury obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
@@ -65,12 +65,12 @@ ms.locfileid: "56598241"
 
 ### <a name="to-add-the-user-control-to-the-actions-pane"></a>Aby dodać kontrolkę użytkownika w okienku Akcje
 
-1.  Dodaj następujący kod do `ThisDocument` lub `ThisWorkbook` klasy jako deklaracja klasy poziomie (nie należy dodawać kod do metody).
+1. Dodaj następujący kod do `ThisDocument` lub `ThisWorkbook` klasy jako deklaracja klasy poziomie (nie należy dodawać kod do metody).
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#14)]
      [!code-vb[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#14)]
 
-2.  Dodaj następujący kod do `ThisDocument_Startup` program obsługi zdarzeń `ThisDocument` klasy lub `ThisWorkbook_Startup` program obsługi zdarzeń `ThisWorkbook` klasy.
+2. Dodaj następujący kod do `ThisDocument_Startup` program obsługi zdarzeń `ThisDocument` klasy lub `ThisWorkbook_Startup` program obsługi zdarzeń `ThisWorkbook` klasy.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#15)]
      [!code-vb[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#15)]

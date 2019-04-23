@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efb95d2beb90358cbbe359076a815dee13ce7166
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e39a742c01b013c43992847010bf5f6cb6ac6009
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644383"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070924"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Tworzenie dodatków narzędzi VSTO dla pakietu Office w programie Visual Studio
   Microsoft Office developer tools w programie Visual Studio umożliwia tworzenie aplikacji .NET Framework, rozszerzających pakiet Office. Te aplikacje są również nazywane *rozwiązań pakietu Office*.
@@ -29,9 +29,9 @@ ms.locfileid: "56644383"
 
  Aby uzyskać najnowsze informacje o programowaniu dla pakietu Office zobacz następujące centra deweloperskie w witrynie MSDN:
 
--   [Rozwoju pakietu Office za pomocą portalu dla deweloperów programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=123844) zawiera linki do informacji o produkcie, przykłady kodu, materiały wideo i zasoby społeczności dotyczące dostosowywania aplikacji pakietu Office w ramach rozwiązania przy użyciu programu Visual Studio .
+- [Rozwoju pakietu Office za pomocą portalu dla deweloperów programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=123844) zawiera linki do informacji o produkcie, przykłady kodu, materiały wideo i zasoby społeczności dotyczące dostosowywania aplikacji pakietu Office w ramach rozwiązania przy użyciu programu Visual Studio .
 
--   [Centrum deweloperów Microsoft Office](http://go.microsoft.com/fwlink/?LinkId=83467) zawiera linki do artykułów technicznych, przykłady kodu, pliki do pobrania, informacji społeczności, pomocy technicznej i inne dokumenty dotyczące dostosowań pakietu Office i aplikacje biznesowe pakietu Office (OBAs ).
+- [Centrum deweloperów Microsoft Office](http://go.microsoft.com/fwlink/?LinkId=83467) zawiera linki do artykułów technicznych, przykłady kodu, pliki do pobrania, informacji społeczności, pomocy technicznej i inne dokumenty dotyczące dostosowań pakietu Office i aplikacje biznesowe pakietu Office (OBAs ).
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [Rozpoczynanie pracy &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

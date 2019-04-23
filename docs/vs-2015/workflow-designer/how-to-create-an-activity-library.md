@@ -9,38 +9,38 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41941893162f6463595652d39547e585176a539f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ce02d639f6fcd3040566a2c279713c046f9c6ead
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776198"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068102"
 ---
 # <a name="how-to-create-an-activity-library"></a>Instrukcje: Tworzenie biblioteki działań
 Działania niestandardowe są używane do modelowania procesów biznesowych w szczególności w przepływie pracy. Szablon Biblioteka działań w [!INCLUDE[vs2010](../includes/vs2010-md.md)] została przekazana do utworzenia takiego działania niestandardowe, które wizualnie za pomocą [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
   
 ### <a name="to-create-a-workflow-activity-library"></a>Aby utworzyć biblioteki działania przepływu pracy  
   
-1.  Rozpocznij [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
+1. Rozpocznij [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
   
-2.  Na **pliku** menu wskaż **New**, a następnie wybierz pozycję **projektu...** .  
+2. Na **pliku** menu wskaż **New**, a następnie wybierz pozycję **projektu...** .  
   
      **Nowy projekt** zostanie otwarte okno dialogowe.  
   
-3.  W **typów projektów** okienku wybierz **przepływu pracy** albo **Visual C#** projektów lub **języka Visual Basic** grupowania w zależności od usługi Preferencje językowe.  
+3. W **typów projektów** okienku wybierz **przepływu pracy** albo **Visual C#** projektów lub **języka Visual Basic** grupowania w zależności od usługi Preferencje językowe.  
   
-4.  W **szablony** okienku wybierz **Biblioteka działań**.  
+4. W **szablony** okienku wybierz **Biblioteka działań**.  
   
-5.  W **nazwa** polu wpisz opisową nazwę projektu, aby ułatwić identyfikowanie.  
+5. W **nazwa** polu wpisz opisową nazwę projektu, aby ułatwić identyfikowanie.  
   
-6.  W **lokalizacji** , wpisz w katalogu, w którym chcesz zapisać projekt, lub kliknij przycisk **Przeglądaj** można przejść do niego.  
+6. W **lokalizacji** , wpisz w katalogu, w którym chcesz zapisać projekt, lub kliknij przycisk **Przeglądaj** można przejść do niego.  
   
-7.  W **rozwiązania** polu, wpisz nazwę opisową dla danego rozwiązania, a następnie kliknij przycisk **OK**.  
+7. W **rozwiązania** polu, wpisz nazwę opisową dla danego rozwiązania, a następnie kliknij przycisk **OK**.  
   
     > [!NOTE]
     >  Jeśli chcesz dodać aplikację konsoli przepływu pracy do istniejącego rozwiązania, otwórz rozwiązanie w [!INCLUDE[vs2010](../includes/vs2010-md.md)], kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań**i wybierz **Dodaj**, następnie  **Nowy projekt...** Aby otworzyć **nowy projekt** okno dialogowe. Należy postępować zgodnie z powyższym opisem w tej procedurze.  
   
-8.  Szablon projektu umożliwia utworzenie definicji działania w XAML. [!INCLUDE[wfd1](../includes/wfd1-md.md)] Otwiera i wyświetla obszar roboczy dla działania niestandardowego.  
+8. Szablon projektu umożliwia utworzenie definicji działania w XAML. [!INCLUDE[wfd1](../includes/wfd1-md.md)] Otwiera i wyświetla obszar roboczy dla działania niestandardowego.  
   
 9. Przeciągnij działanie z **przybornika** do powierzchni projektu, które mają zostać objęte działanie niestandardowe.  
   

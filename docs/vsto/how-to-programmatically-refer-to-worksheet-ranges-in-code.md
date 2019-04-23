@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be71d18b7fa0b3cc9dba8a27c6c462d5ea1a2434
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e82b884965c5c7362951c7d94199f90c93fbfc3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608442"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073699"
 ---
 # <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>Instrukcje: Programowe odwoływanie do zakresów arkusza w kodzie
   Użyj podobnej do odwoływania się do zawartości <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu lub natywnego obiektu zakresu programu Excel.
@@ -32,7 +32,7 @@ ms.locfileid: "56608442"
 
 ### <a name="to-refer-to-a-namedrange-control"></a>Aby odwołać się do kontrolki NamedRange
 
-1.  Ciąg do przypisywania <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> właściwość <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli. Ten kod muszą być umieszczone w klasie arkusza, nie w `ThisWorkbook` klasy.
+1. Ciąg do przypisywania <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> właściwość <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli. Ten kod muszą być umieszczone w klasie arkusza, nie w `ThisWorkbook` klasy.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#46)]
      [!code-vb[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#46)]
@@ -42,7 +42,7 @@ ms.locfileid: "56608442"
 
 ### <a name="to-refer-to-a-native-range-object"></a>Aby odwołać się do obiektu zakresu natywne
 
-1.  Ciąg do przypisywania <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A> właściwości zakresu.
+1. Ciąg do przypisywania <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A> właściwości zakresu.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#47)]
      [!code-vb[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#47)]

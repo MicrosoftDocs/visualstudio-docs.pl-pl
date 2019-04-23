@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2529b22d7039101f83952b3390221af5b78922b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 34d988f88787efc2f40b663ef2f22e6273055533
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605110"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038715"
 ---
-# <a name="test-area-4-check-in"></a>Obszar testowy 4: Zaewidencjonuj
+# <a name="test-area-4-check-in"></a>Obszar testowy 4: ewidencjonowanie
 Ten obszar testowy wtyczki kontroli źródła obejmuje wysyłanie zaktualizowanych elementów do magazynu wersji za pomocą **Zaewidencjonuj** polecenia.
 
 ## <a name="command-menu-access"></a>Dostęp do Menu polecenia
@@ -33,11 +33,11 @@ Ten obszar testowy wtyczki kontroli źródła obejmuje wysyłanie zaktualizowany
 
 ## <a name="common-expected-behavior"></a>Typowe oczekiwane zachowanie.
 
--   Projekty i pliki dodane do rozwiązania lub projektu objętego kontrolą źródła są wyświetlane w **Zaewidencjonuj** okno dialogowe i **oczekujące elementy do zaewidencjonowania** okna.
+- Projekty i pliki dodane do rozwiązania lub projektu objętego kontrolą źródła są wyświetlane w **Zaewidencjonuj** okno dialogowe i **oczekujące elementy do zaewidencjonowania** okna.
 
--   Po zaewidencjonowaniu dodane elementy są wyświetlane w kontroli źródła.
+- Po zaewidencjonowaniu dodane elementy są wyświetlane w kontroli źródła.
 
--   Po zaewidencjonowaniu zaktualizowane elementy są prawidłowo wersjonowanych w magazynie.
+- Po zaewidencjonowaniu zaktualizowane elementy są prawidłowo wersjonowanych w magazynie.
 
 ## <a name="test-cases"></a>Przypadki testowe
  Poniżej przedstawiono określonych przypadków testowych dla obszaru testów zaewidencjonowania.

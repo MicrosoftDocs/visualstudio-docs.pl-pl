@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edf0bc2b233a44893e9a526e172fa75043ebaa42
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e44e62997cac1060047de03253880bbf577935da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689268"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075327"
 ---
 # <a name="historical-debugging-c-visual-basic-c"></a>Debugowanie historyczne (C#, Visual Basic, C++)
 
@@ -31,8 +31,8 @@ Debugowanie historyczne jest tryb debugowania, która jest zależna od informacj
 
 ## <a name="how-do-i-start-using-historical-debugging"></a>Jak uruchomić debugowania historycznego
 
- Funkcja IntelliTrace jest domyślnie włączone. To wszystko, co należy zrobić, zdecyduj, które zdarzenia i wywołania funkcji są przydatne, czy chcesz wyświetlić migawki z pełnym stanem aplikacji. Aby uzyskać więcej informacji na temat definiowania mają być wyszukiwane, zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md). Obsługa funkcji zależy od języka i aplikacji typu.
+Funkcja IntelliTrace jest domyślnie włączone. To wszystko, co należy zrobić, zdecyduj, które zdarzenia i wywołania funkcji są przydatne, czy chcesz wyświetlić migawki z pełnym stanem aplikacji. Aby uzyskać więcej informacji na temat definiowania mają być wyszukiwane, zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md). Obsługa funkcji zależy od języka i aplikacji typu.
 
- - Aby wyświetlić migawki za pomocą debugowania historycznego, zobacz [Sprawdź poprzednie Stany aplikacji za pomocą funkcji IntelliTrace](../debugger/view-historical-application-state.md)
- - Aby dowiedzieć się, jak sprawdzanie zmiennych i przechodzenie do kodu, zobacz [sprawdzanie aplikacji za pomocą debugowania historycznego](../debugger/historical-debugging-inspect-app.md)
- - Aby dowiedzieć się więcej na temat debugowania z uwzględnieniem zdarzeń IntelliTrace, zobacz [instruktażu: Za pomocą funkcji IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
+- Aby wyświetlić migawki za pomocą debugowania historycznego, zobacz [Sprawdź poprzednie Stany aplikacji za pomocą funkcji IntelliTrace](../debugger/view-historical-application-state.md)
+- Aby dowiedzieć się, jak sprawdzanie zmiennych i przechodzenie do kodu, zobacz [sprawdzanie aplikacji za pomocą debugowania historycznego](../debugger/historical-debugging-inspect-app.md)
+- Aby dowiedzieć się więcej na temat debugowania z uwzględnieniem zdarzeń IntelliTrace, zobacz [instruktażu: Za pomocą funkcji IntelliTrace](../debugger/walkthrough-using-intellitrace.md).

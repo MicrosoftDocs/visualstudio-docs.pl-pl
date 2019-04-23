@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ddf2d14d8241f35ac0d83cb0a7f4dab0dd3f6f32
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e54d2dc388ca308e037fb8ff918f521ee16e9092
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618188"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067264"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Instrukcje: Dostosowywanie funkcji SharePoint
   Można tworzyć i dostosowywać funkcje programu SharePoint przy użyciu narzędzia Projektant funkcji w programie Visual Studio. Na przykład można ustawić zakres funkcji i dodać inne funkcje jako zależności. Domyślnie Projektant funkcji jest otwierany podczas dodawania nowej funkcji w Eksploratorze rozwiązań lub w Eksploratorze pakietu programu SharePoint.
@@ -31,22 +31,22 @@ ms.locfileid: "56618188"
 
 #### <a name="to-open-the-feature-designer"></a>Aby otworzyć Projektanta funkcji
 
-1.  W **Eksploratorze rozwiązań** rozwiń węzeł **Funkcje**.
+1. W **Eksploratorze rozwiązań** rozwiń węzeł **Funkcje**.
 
-2.  Kliknij dwukrotnie element *Feature1* lub otwórz menu skrótów elementu *Feature1*, a następnie wybierz pozycję **Widok projektanta**.
+2. Kliknij dwukrotnie element *Feature1* lub otwórz menu skrótów elementu *Feature1*, a następnie wybierz pozycję **Widok projektanta**.
 
 ## <a name="view-the-packaged-manifest-file"></a>Wyświetlanie spakowanego pliku manifestu
  Projektant funkcji może służyć do modyfikacji i generowania pliku manifestu spakowanych funkcji (*feature.xml*). Następnie można wyświetlić kod XML dla tego pliku w programie Visual Studio.
 
 #### <a name="to-view-the-packaged-manifest-file"></a>Aby wyświetlić spakowany pliku manifestu
 
-1.  W **Projektancie funkcji** wybierz kartę **Manifest**.
+1. W **Projektancie funkcji** wybierz kartę **Manifest**.
 
 #### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>Aby wyświetlić spakowany plik manifestu za pomocą Eksploratora rozwiązań
 
-1.  W **Eksploratorze rozwiązań** wybierz ikonę **Pokaż wszystkie pliki**.
+1. W **Eksploratorze rozwiązań** wybierz ikonę **Pokaż wszystkie pliki**.
 
-2.  Rozwiń węzeł Funkcje, rozwiń pozycję NazwaFunkcji, rozwiń pozycję NazwaFunkcji.feature, a następnie otwórz plik  *\<Nazwa_funkcji >. Template.XML* .
+2. Rozwiń węzeł Funkcje, rozwiń pozycję NazwaFunkcji, rozwiń pozycję NazwaFunkcji.feature, a następnie otwórz plik  *\<Nazwa_funkcji >. Template.XML* .
 
     > [!NOTE]
     >  Po otwarciu szablonu manifestu funkcji w formacie pliku XML pliki zostaną automatycznie sprawdzone i można zignorować ostrzeżenia, które są wyświetlane w oknie Lista błędów.
@@ -56,13 +56,13 @@ ms.locfileid: "56618188"
 
 #### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>Aby zmienić szablon manifestu za pomocą edytora XML
 
-1.  W **Projektancie funkcji** wybierz kartę **Manifest**, rozwiń węzeł **Opcje edycji**, a następnie wybierz link **Otwórz w edytorze XML**.
+1. W **Projektancie funkcji** wybierz kartę **Manifest**, rozwiń węzeł **Opcje edycji**, a następnie wybierz link **Otwórz w edytorze XML**.
 
      Zmiany w pliku XML są scalane w spakowanym pliku manifestu.
 
 #### <a name="to-change-the-manifest-template-by-using-the-manifest-template-pane"></a>Aby zmienić szablon manifestu przy użyciu okienka szablonu manifestu
 
-1.  W **Projektancie funkcji** wybierz kartę **Manifest**, rozwiń węzeł **Opcje edycji**, a następnie zmień plik XML, który zostanie wyświetlony w okienku manifestu szablonu.
+1. W **Projektancie funkcji** wybierz kartę **Manifest**, rozwiń węzeł **Opcje edycji**, a następnie zmień plik XML, który zostanie wyświetlony w okienku manifestu szablonu.
 
      Zmiany w pliku XML są wyświetlane w okienku **Podgląd spakowanego manifestu**.
 
@@ -74,9 +74,9 @@ ms.locfileid: "56618188"
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Aby zastąpić spakowany plik manifestu poprzez wyłączenie projektanta
 
-1.  W **Projektancie funkcji** wybierz kartę **Manifest**.
+1. W **Projektancie funkcji** wybierz kartę **Manifest**.
 
-2.  Rozwiń węzeł **Opcje edycji**, wybierz link **Zastąp wygenerowany kod XML i edytuj manifest w edytorze XML**, a następnie wybierz przycisk **Tak**.
+2. Rozwiń węzeł **Opcje edycji**, wybierz link **Zastąp wygenerowany kod XML i edytuj manifest w edytorze XML**, a następnie wybierz przycisk **Tak**.
 
      Szablon zostanie zaktualizowany o spakowany plik bieżącego manifestu.
 
@@ -85,9 +85,9 @@ ms.locfileid: "56618188"
 
 #### <a name="to-re-enable-the-designer"></a>Aby ponownie włączyć Projektanta
 
-1.  W **Projektancie funkcji** wybierz link **Odrzuć zmiany manifestu i ponownie włącz projektanta**, a następnie wybierz przycisk **Tak**.
+1. W **Projektancie funkcji** wybierz link **Odrzuć zmiany manifestu i ponownie włącz projektanta**, a następnie wybierz przycisk **Tak**.
 
-2.  Szablon zostanie odświeżony z początkowym tekstem, a zmiany wprowadzone w pliku XML zostaną utracone.
+2. Szablon zostanie odświeżony z początkowym tekstem, a zmiany wprowadzone w pliku XML zostaną utracone.
 
 ## <a name="see-also"></a>Zobacz także
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

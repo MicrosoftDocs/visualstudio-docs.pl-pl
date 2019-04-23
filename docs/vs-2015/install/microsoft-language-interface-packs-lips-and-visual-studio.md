@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 8d5bf89a4f4b33306176b1fe5e33fa91fb1d325d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ff4faf3fdd6bd4b9398e3448a63e4c6061d79cfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54776925"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096507"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Pakiety języka interfejsu użytkownika (LIP) firmy Microsoft a program Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,46 +43,46 @@ Za pomocą pakietu interfejsu Windows Language (LIP), można zainstalować Windo
 ### <a name="support-for-code-pages"></a>Obsługa stron kodowych
  Niektóre narzędzia programu Visual Studio nie są wyświetlane tekst poprawnie, gdy tekst zawiera znaki, które nie znajdują się w bieżącej stronie kodowej. Zamiast tego są wyświetlane znaki zapytania lub tekstu jest uszkodzony. Uwzględnione są następujące narzędzia lub obszarów:
 
--   Lokacje wdrożyć przy użyciu protokołu FTP.
+- Lokacje wdrożyć przy użyciu protokołu FTP.
 
--   Nazwy komputerów spoza zestawu ASCII w niektóre kontrolki.
+- Nazwy komputerów spoza zestawu ASCII w niektóre kontrolki.
 
--   Narzędzia wiersza polecenia, które Uruchom poza programem Visual Studio.
+- Narzędzia wiersza polecenia, które Uruchom poza programem Visual Studio.
 
--   Kreator migracji programu Visual Basic.
+- Kreator migracji programu Visual Basic.
 
--   Kontener testu kontrolki ActiveX.
+- Kontener testu kontrolki ActiveX.
 
--   OLE/COM Object Viewer.
+- OLE/COM Object Viewer.
 
--   Narzędzia debugowania w sieci Web interfejsu ISAPI.
+- Narzędzia debugowania w sieci Web interfejsu ISAPI.
 
--   Projekty aplikacji MFC, które mają zawartość pomocy w formacie HTML.
+- Projekty aplikacji MFC, które mają zawartość pomocy w formacie HTML.
 
--   Visual SourceSafe / interfejsu użytkownika SCCI powraca do języka angielskiego po stronie niezgodnego kodu.
+- Visual SourceSafe / interfejsu użytkownika SCCI powraca do języka angielskiego po stronie niezgodnego kodu.
 
--   Visual SourceSafe nie obsługuje nazwy plików Unicode.
+- Visual SourceSafe nie obsługuje nazwy plików Unicode.
 
--   Zdefiniowane przez użytkownika końcowego znaków (Korzystanie z prywatnej strefy) nie może służyć jako tokenów/identyfikatorów.
+- Zdefiniowane przez użytkownika końcowego znaków (Korzystanie z prywatnej strefy) nie może służyć jako tokenów/identyfikatorów.
 
--   Nie można wyświetlić znaki alfabetu łacińskiego Extended-B w niektórych okien narzędzi, gdy strona kodowa Windows jest ustawiony język wschodnioazjatyckich programu Visual Studio.
+- Nie można wyświetlić znaki alfabetu łacińskiego Extended-B w niektórych okien narzędzi, gdy strona kodowa Windows jest ustawiony język wschodnioazjatyckich programu Visual Studio.
 
--   Domyślnego symbolu dla niektórych znaków mogą być wyświetlane uruchomienia tekstu, które składają się ze znaków z wielu skryptów języka.
+- Domyślnego symbolu dla niektórych znaków mogą być wyświetlane uruchomienia tekstu, które składają się ze znaków z wielu skryptów języka.
 
--   Kopiowanie i wklejanie skryptów złożonych ciągów do wspólnych formantów, może spowodować znak kształtowania, zostanie utracone. Zamiast tego należy użyć odpowiedniego języka klawiatury do wprowadzania tekstu.
+- Kopiowanie i wklejanie skryptów złożonych ciągów do wspólnych formantów, może spowodować znak kształtowania, zostanie utracone. Zamiast tego należy użyć odpowiedniego języka klawiatury do wprowadzania tekstu.
 
 ##### <a name="to-correctly-display-characters-that-are-not-included-in-the-current-code-page"></a>Aby poprawnie wyświetlić znaki, które nie są uwzględnione w bieżącej stronie kodowej
 
-1.  Kliknij przycisk **Start**, kliknij przycisk **Panelu sterowania**, a następnie otwórz **Opcje regionalne i językowe** (lub **Region** w [!INCLUDE[win8](../includes/win8-md.md)]).
+1. Kliknij przycisk **Start**, kliknij przycisk **Panelu sterowania**, a następnie otwórz **Opcje regionalne i językowe** (lub **Region** w [!INCLUDE[win8](../includes/win8-md.md)]).
 
     > [!NOTE]
     >  Musi być administratorem na komputerze, wykonaj następujące kroki.
 
-2.  Kliknij przycisk **zaawansowane** kartę.
+2. Kliknij przycisk **zaawansowane** kartę.
 
-3.  W **wybierz język, aby dopasować wersję językową programy innego niż Unicode, którego chcesz użyć** listy, wybierz język, którego obecnie używasz.
+3. W **wybierz język, aby dopasować wersję językową programy innego niż Unicode, którego chcesz użyć** listy, wybierz język, którego obecnie używasz.
 
-4.  Kliknij przycisk **OK**.
+4. Kliknij przycisk **OK**.
 
 ## <a name="changing-the-language-used-for-the-ui-text-in-visual-studio"></a>Zmiana języka w tekst interfejsu użytkownika w programie Visual Studio
  Podczas instalowania wielu wersji językowych [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] na tym samym komputerze [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interfejsu użytkownika, wartość domyślna to **taki sam jak Microsoft Windows**. To ustawienie wskazuje, że [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wyświetli tekst interfejsu użytkownika w języku, który jest określony jako język wyświetlania systemu operacyjnego.

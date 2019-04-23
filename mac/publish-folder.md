@@ -9,12 +9,12 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 0ab1b01900077fdbad5dec3fb968abcf46db62d8
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 8bff4b6079818a7e6d4e3500830a036ae6ab28cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856531"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072738"
 ---
 # <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>Publikowanie aplikacji sieci Web w folderze przy użyciu programu Visual Studio dla komputerów Mac
 
@@ -22,10 +22,10 @@ Narzędzie publikowania do publikowania aplikacji platformy ASP.NET Core w folde
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
- - [Visual Studio 2019 r dla komputerów Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) zainstalowane za pomocą programu ASP.NET Core włączone.
- - Projekt platformy ASP.NET Core. Jeśli nie masz jeszcze projektu, możesz to zrobić [Utwórz nową](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2019).
+- [Visual Studio 2019 r dla komputerów Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) zainstalowane za pomocą programu ASP.NET Core włączone.
+- Projekt platformy ASP.NET Core. Jeśli nie masz jeszcze projektu, możesz to zrobić [Utwórz nową](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2019).
 
-## <a name="publish-to-folder"></a>Publikowanie do folderu
+## <a name="publish-to-folder"></a>Publikowanie w folderze
 
 Przy użyciu programu Visual Studio dla komputerów Mac możesz opublikować w folderze za pomocą narzędzia publikowania projektów ASP.NET Core. Po opublikowaniu w folderze można przesyłać pliki do serwera sieci web można pobrać go do innego środowiska. Aby opublikować do folderu wykonaj następujące kroki.
 

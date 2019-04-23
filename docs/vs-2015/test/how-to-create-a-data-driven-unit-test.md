@@ -15,12 +15,12 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 02f55f39a045dcc0cc0b8eddf46134d4a380c9f1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cdc38967a229424badac0cb6b887f44820b71284
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779165"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095766"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Instrukcje: Tworzenie testu jednostkowego opartego na danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,23 +37,23 @@ Za pomocą środowiska testów jednostkowych Microsoft dla kodu zarządzanego, m
   
 - [Pisanie metody testowej](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
   
-  -   [Określanie DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
+  - [Określanie DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
   
-  -   [Aby uzyskać dostęp do danych za pomocą TestContext.DataRow](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
+  - [Aby uzyskać dostęp do danych za pomocą TestContext.DataRow](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
   
 - [Uruchamianie testu i wyświetlania wyników](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
   
   Tworzenie testu jednostkowego opartego na danych obejmuje następujące czynności:  
   
-1.  Utwórz źródło danych, który zawiera wartości, których używasz w metodzie testowej. Źródła danych mogą być dowolnego typu, który jest zarejestrowany na komputerze, na którym uruchamiany jest test.  
+1. Utwórz źródło danych, który zawiera wartości, których używasz w metodzie testowej. Źródła danych mogą być dowolnego typu, który jest zarejestrowany na komputerze, na którym uruchamiany jest test.  
   
-2.  Dodaj prywatnej <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> pola i publiczny `TestContext` właściwości klasy testowej.  
+2. Dodaj prywatnej <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> pola i publiczny `TestContext` właściwości klasy testowej.  
   
-3.  Utwórz metodę testu jednostkowego i Dodaj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> atrybutu do niego.  
+3. Utwórz metodę testu jednostkowego i Dodaj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> atrybutu do niego.  
   
-4.  Użyj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> właściwość indeksatora można pobrać wartości, których używasz w teście.  
+4. Użyj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> właściwość indeksatora można pobrać wartości, których używasz w teście.  
   
-##  <a name="BKMK_The_method_under_test"></a> Testowaną metodę  
+## <a name="BKMK_The_method_under_test"></a> Testowaną metodę  
  Na przykład załóżmy, że utworzono:  
   
 1. To rozwiązanie o nazwie `MyBank` , akceptuje i przetwarzania transakcji dla różnych typów kont.  
@@ -80,7 +80,7 @@ public int AddIntegers(int first, int second)
 }  
 ```  
   
-##  <a name="BKMK_Creating_a_data_source"></a> Tworzenie źródła danych  
+## <a name="BKMK_Creating_a_data_source"></a> Tworzenie źródła danych  
  Aby przetestować `AddIntegers` metody, możemy utworzyć źródło danych, która określa zakres wartości dla parametrów i sum, którzy mają być zwracane. W tym przykładzie tworzymy bazę danych Sql Compact o nazwie `MathsData` i tabelę o nazwie `AddIntegersData` zawierający następujące kolumny nazwy i wartości  
   
 |Pierwszaliczba|SecondNumber|Suma|  
@@ -89,7 +89,7 @@ public int AddIntegers(int first, int second)
 |1|1|2|  
 |2|-3|-1|  
   
-##  <a name="BKMK_Adding_a_TestContext_to_the_test_class"></a> Dodawanie TestContext do klasy testowej  
+## <a name="BKMK_Adding_a_TestContext_to_the_test_class"></a> Dodawanie TestContext do klasy testowej  
  Tworzy środowiska testów jednostkowych `TestContext` obiekt, aby zapisać informacje o źródle danych dla testów opartych na danych. Następnie ustawia ten obiekt jako wartość w ramach `TestContext` właściwość, która zostanie utworzona.  
   
 ```  
@@ -105,7 +105,7 @@ public TestContext TestContext
   
  W metodzie testowej, uzyskujesz dostęp do danych za pośrednictwem `DataRow` właściwości indeksatora `TestContext`.  
   
-##  <a name="BKMK_Writing_the_test_method"></a> Pisanie metody testowej  
+## <a name="BKMK_Writing_the_test_method"></a> Pisanie metody testowej  
  Metodę testową dla `AddIntegers` jest dość prosta. Dla każdego wiersza w źródle danych nazywanej `AddIntegers` z **Pierwszaliczba** i **Drugaliczba** wartości kolumny jako parametry i zweryfikujemy wartość zwracaną względem **suma**wartości w kolumnie:  
   
 ```  
@@ -131,7 +131,7 @@ public void AddIntegers_FromDataSourceTest()
   
  Należy pamiętać, że `Assert` metoda zawiera komunikat, który wyświetla `x` i `y` wartości iteracji nie powiodło się. Domyślnie wartość potwierdzone `expected` i `actual`, znajdują się już w szczegółach testów zakończonych niepowodzeniem.  
   
-###  <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Określanie DataSourceAttribute  
+### <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Określanie DataSourceAttribute  
  `DataSource` Atrybut określa parametry połączenia dla źródła danych i nazwę tabeli, którego używasz w metodzie testowej. Konkretne informacje w parametrach połączenia różni się w zależności od tego, jakiego rodzaju źródła danych, którego używasz. W tym przykładzie użyliśmy SqlServerCe bazy danych.  
   
 ```  
@@ -165,7 +165,7 @@ public void AddIntegers_FromDataSourceTest()
     )]  
 ```  
   
-###  <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Aby uzyskać dostęp do danych za pomocą TestContext.DataRow  
+### <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Aby uzyskać dostęp do danych za pomocą TestContext.DataRow  
  Aby uzyskać dostęp do danych `AddIntegersData` tabeli, użyj `TestContext.DataRow` indeksatora. `DataRow` jest <xref:System.Data.DataRow> obiektu, aby pobranie wartości w kolumnie według nazwy indeksu lub kolumn. Wartości są zwracane jako obiekty, musimy przekonwertować je na odpowiedni typ:  
   
 ```  
@@ -173,7 +173,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
   
 ```  
   
-##  <a name="BKMK_Running_the_test_and_viewing_results"></a> Uruchamianie testu i wyświetlania wyników  
+## <a name="BKMK_Running_the_test_and_viewing_results"></a> Uruchamianie testu i wyświetlania wyników  
  Po zakończeniu pisania metody testowej kompilacji projektu testowego. Metoda testowa pojawia się w oknie Eksploratora testów w **testy nieuruchamiane** grupy. Podczas przeprowadzania, zapisywania i ponownego przeprowadzania testów Test Explorer wyświetla wyniki w grupach **testy zakończone niepomyślnie**, **testy zakończone powodzeniem**, i **testy nieuruchamiane**. Możesz wybrać **Uruchom wszystkie** Aby uruchomić wszystkie testy, lub wybierz **uruchamianie...**  wybranie podzestawu testów do uruchomienia.  
   
  Paski wyników testów w górnej części Eksploratora jest animowany podczas działania testu. Na końcu przebiegu testowego pasek będzie zielony, jeśli wszystkie testy zostały przekazane lub czerwony Jeśli którykolwiek z testów nie powiodło się. Podsumowanie przebiegu testu zostanie wyświetlony w okienku szczegółów u dołu okna Eksploratora testów. Wybierz test, aby wyświetlić szczegóły tego testu w dolnym okienku.  

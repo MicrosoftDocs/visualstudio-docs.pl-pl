@@ -11,12 +11,12 @@ ms.assetid: 1c323afd-fb4e-449a-adaa-bb7a5d3b1468
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e47fa574d607f0fe56950b232991ad6e5ff2b351
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 3870027762675f4f9791fa720ae932aedf0b5f90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867910"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061336"
 ---
 # <a name="enabling-the-azure-sdk"></a>Włączanie zestawu Azure SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ Zestaw Azure SDK dla platformy .NET umożliwia tworzenie, konfigurowanie, tworze
   
 ### <a name="to-enable-the-azure-sdk"></a>Aby włączyć zestaw SDK platformy Azure  
   
-1.  Na **pliku** menu, Utwórz nowy projekt. (Kliknij **New** a następnie kliknij przycisk **projektu**.)  
+1. Na **pliku** menu, Utwórz nowy projekt. (Kliknij **New** a następnie kliknij przycisk **projektu**.)  
   
-2.  Rozwiń węzeł dla dowolnego **języka Visual Basic** lub **C#** a następnie kliknij przycisk **chmury**.  
+2. Rozwiń węzeł dla dowolnego **języka Visual Basic** lub **C#** a następnie kliknij przycisk **chmury**.  
   
-3.  W środkowym okienku wybierz **Pobierz zestaw Azure SDK dla platformy .NET**, a następnie kliknij przycisk **OK**.  
+3. W środkowym okienku wybierz **Pobierz zestaw Azure SDK dla platformy .NET**, a następnie kliknij przycisk **OK**.  
   
      Postępuj zgodnie z instrukcjami w Instalatorze.  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20974c9ebeaaa452be7078db51cb633be498b24c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2545db069db73fed59c95b3b4adc576facd51bc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775909"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067642"
 ---
 # <a name="writing-a-t4-text-template"></a>Pisanie szablonu tekstowego T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ Hello!
 <#= 2 + 3 #>  
 ```  
   
- Zwracamy uwagę, że symbol otwierający ma trzy znaki „<#=”.  
+ Zwróć uwagę, że symbol otwierający ma trzy znaki "< #=".  
   
  Wyrażenie może zawierać dowolną zmienną znajdującą się w jego zakresie. Na przykład ten blok spowoduje wyświetlanie wierszy z następującymi liczbami:  
   
@@ -214,7 +214,7 @@ private void WriteSquareLine(int i)
   
  Aby uzyskać więcej informacji, zobacz [dyrektywa T4 dotycząca importowania](../modeling/t4-import-directive.md).  
   
-###  <a name="Include"></a> Dołączanie kodu i tekstu  
+### <a name="Include"></a> Dołączanie kodu i tekstu  
  Dyrektywa `include` wstawia tekst z innego pliku szablonu. Na przykład poniższa dyrektywa spowoduje wstawienie zawartości pliku `test.txt`.  
   
  `<#@ include file="c:\test.txt" #>`  

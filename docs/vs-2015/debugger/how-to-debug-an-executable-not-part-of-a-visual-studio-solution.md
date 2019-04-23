@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 099f284838a74ce5e302d9ba6ba0974b85260e73
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e913d67442d21cb1a0895721c22ede9b69363f53
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776598"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068707"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Instrukcje: Debugowanie pliku wykonywalnego nie jest częścią rozwiązania programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,25 +40,25 @@ Czasami możesz chcieć debugowanie pliku wykonywalnego, który nie jest częśc
   
 ### <a name="to-create-an-exe-project-for-an-existing-executable"></a>Aby utworzyć projekt EXE dla istniejącego pliku wykonywalnego  
   
-1.  Na **pliku** menu, kliknij przycisk **Otwórz** i wybierz **projektu**.  
+1. Na **pliku** menu, kliknij przycisk **Otwórz** i wybierz **projektu**.  
   
-2.  W **Otwórz projekt** okno dialogowe, kliknij listę rozwijaną listę obok **nazwy pliku** i zaznacz **wszystkie pliki projektu**.  
+2. W **Otwórz projekt** okno dialogowe, kliknij listę rozwijaną listę obok **nazwy pliku** i zaznacz **wszystkie pliki projektu**.  
   
-3.  Znajdź plik wykonywalny, a następnie kliknij przycisk **OK**.  
+3. Znajdź plik wykonywalny, a następnie kliknij przycisk **OK**.  
   
      Tworzy to rozwiązanie tymczasowe, które zawiera plik wykonywalny.  
   
 ### <a name="to-import-an-executable-into-a-visual-studio-solution"></a>Aby zaimportować plik wykonywalny do rozwiązania programu Visual Studio  
   
-1.  Na **pliku** menu wskaż **Dodaj projekt**, a następnie kliknij przycisk **istniejący projekt**.  
+1. Na **pliku** menu wskaż **Dodaj projekt**, a następnie kliknij przycisk **istniejący projekt**.  
   
-2.  W **Dodaj istniejący projekt** okno dialogowe, kliknij listę rozwijaną listę obok **nazwy pliku** i zaznacz **wszystkie pliki projektu**.  
+2. W **Dodaj istniejący projekt** okno dialogowe, kliknij listę rozwijaną listę obok **nazwy pliku** i zaznacz **wszystkie pliki projektu**.  
   
-3.  Znajdź i zaznacz plik wykonywalny.  
+3. Znajdź i zaznacz plik wykonywalny.  
   
-4.  Kliknij przycisk **OK**.  
+4. Kliknij przycisk **OK**.  
   
-5.  Uruchom plik wykonywalny, wybierając polecenie wykonania, takie jak **Start**, z **debugowania** menu.  
+5. Uruchom plik wykonywalny, wybierając polecenie wykonania, takie jak **Start**, z **debugowania** menu.  
   
     > [!NOTE]
     >  Nie wszystkie języki programowania wspierają projekty EXE. Zainstaluj [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] Jeśli musisz korzystać z tej funkcji.  

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57c5516c70819f8f86d56e93f78ec5d877c72a78
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 838e057fd0063df6a1c592dfefee759b56b9f89b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640379"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041198"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informacje o parametrach w starszej wersji usługi językowej
 Informacje o parametrach funkcji IntelliSense jest znak (zazwyczaj nawias otwierający) na liście parametrów metody początkowy etykietkę narzędzia, która zawiera podpis metody, gdy użytkownik wpisuje listy parametrów. Każdy parametr jest wprowadzana i został wpisany parametr separatora (zazwyczaj przecinkami), etykietki narzędzia jest aktualizowana w celu wyświetlenia następny parametr pogrubioną czcionką.
@@ -111,10 +111,10 @@ testfunc("a string",3);
 
  Kroki, które przyjmuje analizatora są opisane poniżej:
 
-1.  Wywołuje analizator <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> z tekstem "testfunc".
+1. Wywołuje analizator <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> z tekstem "testfunc".
 
-2.  Wywołuje analizator <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.
+2. Wywołuje analizator <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.
 
-3.  Wywołuje analizator <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.
+3. Wywołuje analizator <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.
 
-4.  Wywołuje analizator <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.
+4. Wywołuje analizator <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6664bf9ed0e77b99b7d5482907fe07f155fe6162
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bb12d80c581b0ea0b605932083cf4f62fe764e30
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758341"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073491"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generowanie i konfigurowanie aplikacji na podstawie modeli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,27 +54,27 @@ Można wygenerować lub skonfigurować poszczególnych części aplikacji z mode
 ## <a name="developing-a-derived-application"></a>Opracowywanie aplikacji pochodne  
  Ogólne wytyczne mogą się okazać przydatne.  
   
--   **Uruchom określone, a następnie Uogólnij.** Najpierw zapisać określoną wersję aplikacji. Ta wersja powinny działać w jeden zestaw warunków. Jeżeli jesteś zadowolony jej działa poprawnie, możesz wprowadzić niektóre pochodzi z modelu. Rozszerz stopniowo pochodnej części.  
+- **Uruchom określone, a następnie Uogólnij.** Najpierw zapisać określoną wersję aplikacji. Ta wersja powinny działać w jeden zestaw warunków. Jeżeli jesteś zadowolony jej działa poprawnie, możesz wprowadzić niektóre pochodzi z modelu. Rozszerz stopniowo pochodnej części.  
   
      Na przykład projekt witryny sieci Web, która ma określony zestaw stron sieci Web, przed rozpoczęciem projektowania aplikacji sieci Web, która przedstawia stron, które są zdefiniowane w modelu.  
   
--   **Model wariantu aspektów.** Zidentyfikuj aspektów, które będą się różnić między wdrażania jednego i drugiego, lub wraz z upływem czasu zgodnie z wymaganiami zmienić. Są to aspektów, które powinny pochodzić z modelu.  
+- **Model wariantu aspektów.** Zidentyfikuj aspektów, które będą się różnić między wdrażania jednego i drugiego, lub wraz z upływem czasu zgodnie z wymaganiami zmienić. Są to aspektów, które powinny pochodzić z modelu.  
   
      Na przykład jeśli zestaw Web pages i łączy między ich zmiany, ale styl i format stron jest zawsze taki sam, a następnie modelu powinna opisywać łącza, ale nie ma do opisywania formatu stron.  
   
--   **Oddzielne uwagi.** Jeśli zmiennej aspekty można podzielić na niezależne obszarów, należy użyć oddzielnych modeli dla każdego obszaru. ModelBus można zdefiniować operacje, które mają wpływ na modelach i ograniczenia między nimi.  
+- **Oddzielne uwagi.** Jeśli zmiennej aspekty można podzielić na niezależne obszarów, należy użyć oddzielnych modeli dla każdego obszaru. ModelBus można zdefiniować operacje, które mają wpływ na modelach i ograniczenia między nimi.  
   
      Na przykład można użyć jednego modelu do zdefiniowania Nawigacja między stronami sieci Web i innego modelu, do definiowania układu strony. Aby uzyskać więcej informacji, zobacz [modeli UML, integracja z innymi modelami i narzędziami](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   
--   **Model wymóg nie rozwiązania.** Zaprojektuj język DSL lub dostosować UML, tak, aby go w tym artykule opisano wymagania użytkownika. Z drugiej strony nie należy projektować notacji zgodnie ze zmiennej aspektów implementacji.  
+- **Model wymóg nie rozwiązania.** Zaprojektuj język DSL lub dostosować UML, tak, aby go w tym artykule opisano wymagania użytkownika. Z drugiej strony nie należy projektować notacji zgodnie ze zmiennej aspektów implementacji.  
   
      Na przykład model nawigacyjnych w sieci Web powinny reprezentować stron sieci Web i hiperłączy między nimi. Model nawigacyjnych w sieci Web nie powinny reprezentować fragmenty kodu HTML lub klas w aplikacji.  
   
--   **Generowanie i interpretowania?** Jeśli wymagania dotyczące określonego wdrożenia będą rzadko się zmieniają, generowania kodu programu z modelu. Jeśli wymagania często mogą ulec zmianie lub mogą współistnieć w więcej niż jeden typ variant, w tym samym wdrożeniu, wówczas aplikacja jest zapisywana tak, aby można odczytać i zinterpretować modelu.  
+- **Generowanie i interpretowania?** Jeśli wymagania dotyczące określonego wdrożenia będą rzadko się zmieniają, generowania kodu programu z modelu. Jeśli wymagania często mogą ulec zmianie lub mogą współistnieć w więcej niż jeden typ variant, w tym samym wdrożeniu, wówczas aplikacja jest zapisywana tak, aby można odczytać i zinterpretować modelu.  
   
      Na przykład jeśli używasz modelu witryny sieci Web do tworzenia szereg różnych i oddzielnie zainstalowanego witryn sieci Web, następnie należy generować kod witryny z modelu. Jednak go użyć modelu do sterowania lokacji, która zmienia się codziennie, a następnie jest napisanie serwera sieci Web, który odczytuje model i przedstawia informacje o lokacji.  
   
--   **UML lub DSL?** Należy rozważyć utworzenie usługi notacji modelowania przy użyciu stereotypy w celu rozszerzenia UML. Jeśli nie diagramu UML, która pasuje do tego celu, należy zdefiniować języka DSL. Jednak należy unikać istotne semantyce UML.  
+- **UML lub DSL?** Należy rozważyć utworzenie usługi notacji modelowania przy użyciu stereotypy w celu rozszerzenia UML. Jeśli nie diagramu UML, która pasuje do tego celu, należy zdefiniować języka DSL. Jednak należy unikać istotne semantyce UML.  
   
      Na przykład diagram klas UML jest Kolekcja pól i strzałki; w tym notacji może teoretycznie zdefiniujesz niczego. Jednak nie zaleca się użycie na diagramie klasy, z wyjątkiem sytuacji, gdy są w rzeczywistości opisujące zestaw typów. Na przykład można przystosować diagramów klas do opisania różnych typów stron sieci Web.  
   

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eed883703b333fc39039e9c063aeabbbc1709810
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6ebd05843e5a80f95a6eb30809440e6e5a188d0e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924490"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076071"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Najlepsze praktyki dotyczące kodowanych testów interfejsu użytkownika
 
@@ -26,29 +26,29 @@ W tym temacie opisano niektóre zalecenia dotyczące tworzenia kodowanych testó
 
 Skorzystaj z poniższych wskazówek do tworzenia elastycznych kodowanego testu interfejsu użytkownika.
 
--   Użyj **kodowanego testu interfejsu użytkownika** zawsze, gdy jest to możliwe.
+- Użyj **kodowanego testu interfejsu użytkownika** zawsze, gdy jest to możliwe.
 
--   Nie należy modyfikować *UIMap.designer.cs* pliku bezpośrednio. Jeśli zmodyfikujesz plik, zmiany w pliku zostaną zastąpione.
+- Nie należy modyfikować *UIMap.designer.cs* pliku bezpośrednio. Jeśli zmodyfikujesz plik, zmiany w pliku zostaną zastąpione.
 
--   Utwórz test jako sekwencja zarejestrowane metody. Aby uzyskać więcej informacji o sposobie rejestrowania metody, zobacz [tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md).
+- Utwórz test jako sekwencja zarejestrowane metody. Aby uzyskać więcej informacji o sposobie rejestrowania metody, zobacz [tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md).
 
--   Każda metoda zarejestrowane powinna działać na jednej stronie, formularza lub okno dialogowe. Utworzenie nowej metody testów dla każdej nowej strony, formularza lub okno dialogowe.
+- Każda metoda zarejestrowane powinna działać na jednej stronie, formularza lub okno dialogowe. Utworzenie nowej metody testów dla każdej nowej strony, formularza lub okno dialogowe.
 
--   Podczas tworzenia metody należy użyć nazwy metody istotnych zamiast domyślnej nazwy. Znaczącą nazwę pomaga w identyfikacji przeznaczenia metody.
+- Podczas tworzenia metody należy użyć nazwy metody istotnych zamiast domyślnej nazwy. Znaczącą nazwę pomaga w identyfikacji przeznaczenia metody.
 
--   Jeśli to możliwe, należy ograniczyć każdego nagraną metodę do mniej niż 10 akcji. To podejście modułowej ułatwia zastąpić metodę, jeśli zmieni się interfejs użytkownika.
+- Jeśli to możliwe, należy ograniczyć każdego nagraną metodę do mniej niż 10 akcji. To podejście modułowej ułatwia zastąpić metodę, jeśli zmieni się interfejs użytkownika.
 
--   Tworzenie przy użyciu każdego potwierdzenia **kodowanego testu interfejsu użytkownika**, która automatycznie dodaje metodę potwierdzenie *UIMap.Designer.cs* pliku.
+- Tworzenie przy użyciu każdego potwierdzenia **kodowanego testu interfejsu użytkownika**, która automatycznie dodaje metodę potwierdzenie *UIMap.Designer.cs* pliku.
 
--   Jeśli zmieni się interfejs użytkownika (UI), ponownie zarejestrować metod testowych lub metody asercji, lub ponownie zarejestrować poszczególnych sekcjach istniejącej metody testowej.
+- Jeśli zmieni się interfejs użytkownika (UI), ponownie zarejestrować metod testowych lub metody asercji, lub ponownie zarejestrować poszczególnych sekcjach istniejącej metody testowej.
 
--   Utwórz osobne <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> pliku dla każdego modułu w testowanej aplikacji. Aby uzyskać więcej informacji, zobacz [testowanie dużej aplikacji przy użyciu wielu map UI](../test/testing-a-large-application-with-multiple-ui-maps.md).
+- Utwórz osobne <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> pliku dla każdego modułu w testowanej aplikacji. Aby uzyskać więcej informacji, zobacz [testowanie dużej aplikacji przy użyciu wielu map UI](../test/testing-a-large-application-with-multiple-ui-maps.md).
 
--   W testowanej aplikacji, użyj nazw opisowych, podczas tworzenia kontrolek interfejsu użytkownika. Za pomocą zrozumiałej nazwy zapewnia większą przejrzystość i użyteczność nazw automatycznie wygenerowanego formantu.
+- W testowanej aplikacji, użyj nazw opisowych, podczas tworzenia kontrolek interfejsu użytkownika. Za pomocą zrozumiałej nazwy zapewnia większą przejrzystość i użyteczność nazw automatycznie wygenerowanego formantu.
 
--   Jeśli tworzysz potwierdzenia od kodowania za pomocą interfejsu API, należy utworzyć metodę dla każdego potwierdzenia w części <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> klasę, która znajduje się w *UIMap.cs* pliku. Aby wykonać potwierdzenie, należy wywołać tę metodę ze swojej metody testowej.
+- Jeśli tworzysz potwierdzenia od kodowania za pomocą interfejsu API, należy utworzyć metodę dla każdego potwierdzenia w części <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> klasę, która znajduje się w *UIMap.cs* pliku. Aby wykonać potwierdzenie, należy wywołać tę metodę ze swojej metody testowej.
 
--   Jeśli bezpośrednio kodują przy użyciu interfejsu API, użyj właściwości i metod w klasach wygenerowane w *UIMap.Designer.cs* pliku w kodzie, jak możesz. W ramach tych zajęć ułatwi pracę, łatwiejsze i bardziej niezawodne i pomoże Ci osiągnąć bardziej produktywne.
+- Jeśli bezpośrednio kodują przy użyciu interfejsu API, użyj właściwości i metod w klasach wygenerowane w *UIMap.Designer.cs* pliku w kodzie, jak możesz. W ramach tych zajęć ułatwi pracę, łatwiejsze i bardziej niezawodne i pomoże Ci osiągnąć bardziej produktywne.
 
 Kodowane testy interfejsu użytkownika automatycznie dostosowywać się do wielu zmian w interfejsie użytkownika. Jeśli na przykład element interfejsu użytkownika został zmieniony, położenie i kolor, w większości przypadków kodowanego testu interfejsu użytkownika będą nadal znaleźć poprawny element.
 
@@ -58,15 +58,15 @@ Podczas przebiegu testu kontrolek interfejsu użytkownika znajduje się w ramach
 
 Interfejsy użytkownika, która jest często zmieniać podczas programowania. Oto kilka sposobów, aby zmniejszyć wpływ tych zmian:
 
--   Znajdowanie nagraną metodę, która odwołuje się do tego formantu oraz używanie **kodowanego testu interfejsu użytkownika** do ponownego rejestrowania akcji dla tej metody. Taką samą nazwę dla metody umożliwia zastąpienie istniejących działań.
+- Znajdowanie nagraną metodę, która odwołuje się do tego formantu oraz używanie **kodowanego testu interfejsu użytkownika** do ponownego rejestrowania akcji dla tej metody. Taką samą nazwę dla metody umożliwia zastąpienie istniejących działań.
 
--   Jeśli w kontrolce wystąpi potwierdzenie, że nie jest już prawidłowy:
+- Jeśli w kontrolce wystąpi potwierdzenie, że nie jest już prawidłowy:
 
-    -   Usuń metodę, która zawiera potwierdzenie.
+    - Usuń metodę, która zawiera potwierdzenie.
 
-    -   Usuń wywołanie tej metody z metody testowej.
+    - Usuń wywołanie tej metody z metody testowej.
 
-    -   Dodawanie nowej asercji przeciągając przycisk krzyżyka do kontrolki interfejsu użytkownika, otwórz mapę interfejsu użytkownika i Dodaj nowe potwierdzenie.
+    - Dodawanie nowej asercji przeciągając przycisk krzyżyka do kontrolki interfejsu użytkownika, otwórz mapę interfejsu użytkownika i Dodaj nowe potwierdzenie.
 
 Aby uzyskać więcej informacji na temat sposobu rejestrowania kodowane testy interfejsu użytkownika, zobacz [automatyzacji w użyciu interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md).
 

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: 3537879481430490d32ab30f8f6a2f9f7353659b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 81bf6c5ef975d7ce154c1d8bb987e962dfdf4ec2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773588"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040744"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Instrukcje: Ręcznie pakietu rozszerzenia (VSIX wdrożenia)
 Możesz utworzyć pakiet VSIX do opakowania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzeń dla wdrożenia. Istnieją trzy sposoby, aby utworzyć pakiet:  
@@ -33,25 +33,25 @@ Możesz utworzyć pakiet VSIX do opakowania [!INCLUDE[vsprvs](../includes/vsprvs
   
 #### <a name="to-manually-create-a-vsix-package"></a>Aby ręcznie utworzyć pakiet VSIX  
   
-1.  Tworzenie rozszerzenia programu Visual Studio, typu, który jest obsługiwany przez schemat VSIX.  
+1. Tworzenie rozszerzenia programu Visual Studio, typu, który jest obsługiwany przez schemat VSIX.  
   
-2.  Utwórz plik XML i nadaj mu nazwę `extension.vsixmanifest`.  
+2. Utwórz plik XML i nadaj mu nazwę `extension.vsixmanifest`.  
   
-3.  Wprowadź w pliku extension.vsixmanifest zgodnie ze schematem VSIX. Manifest przykładzie można zobaczyć [PackageManifest elementu (Element główny, schemat VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+3. Wprowadź w pliku extension.vsixmanifest zgodnie ze schematem VSIX. Manifest przykładzie można zobaczyć [PackageManifest elementu (Element główny, schemat VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
-4.  Utwórz drugi plik XML i nadaj mu nazwę `[Content_Types].xml`.  
+4. Utwórz drugi plik XML i nadaj mu nazwę `[Content_Types].xml`.  
   
-5.  Wypełnij pliku [Content_Types] .xml, jak to określono w [struktury Content_types\]XML pliku](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
+5. Wypełnij pliku [Content_Types] .xml, jak to określono w [struktury Content_types\]XML pliku](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
   
-6.  Oba pliki XML należy umieścić w katalogu wraz z rozszerzenia, które mają zostać wdrożone.  
+6. Oba pliki XML należy umieścić w katalogu wraz z rozszerzenia, które mają zostać wdrożone.  
   
      W przypadku szablonu projektu lub szablon elementu umieść plik zip zawierający szablon, w tym samym folderze co pliki XML. Nie należy umieszczać pliki XML w pliku .zip.  
   
      We wszystkich innych przypadkach należy umieścić pliki XML w tym samym katalogu co dane wyjściowe kompilacji.  
   
-7.  W Eksploratorze Windows, kliknij prawym przyciskiem myszy folder, który zawiera rozszerzenie zawartości oraz dwóch plikach XML, kliknij przycisk **Wyślij do**, a następnie kliknij przycisk **skompresowany Folder (zip)**.  
+7. W Eksploratorze Windows, kliknij prawym przyciskiem myszy folder, który zawiera rozszerzenie zawartości oraz dwóch plikach XML, kliknij przycisk **Wyślij do**, a następnie kliknij przycisk **skompresowany Folder (zip)**.  
   
-8.  Zmień nazwę wynikowy plik zip *Filename*.vsix, gdzie *Filename* to nazwa pliku pakietu redystrybucyjnego, który instaluje pakiet.  
+8. Zmień nazwę wynikowy plik zip *Filename*.vsix, gdzie *Filename* to nazwa pliku pakietu redystrybucyjnego, który instaluje pakiet.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzenia programu Visual Studio wysyłki](../extensibility/shipping-visual-studio-extensions.md)   

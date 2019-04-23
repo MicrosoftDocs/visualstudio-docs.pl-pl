@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 13ec6d14efa8719b79bcfc39a5402b9c192bbe67
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 428c5ceb878d2ec0f4185ad70772672733fda517
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656625"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062987"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Odinstalowywanie programu Visual Studio dla komputerów Mac
 
@@ -48,12 +48,14 @@ Aby uruchomić skrypt, wykonaj następujące czynności:
     ```bash
     cd /location/of/file
     ```
+
 3. Wykonywalny skrypt i uruchom ją za pomocą **"sudo"**:
 
     ```bash
     chmod +x ./uninstall-vsmac.sh
     sudo ./uninstall-vsmac.sh
     ```
+
 4. Na koniec usunąć skrypt dezinstalacji.
 
 ### <a name="net-core-script"></a>Skrypt platformy .NET core
@@ -68,12 +70,14 @@ Aby uruchomić skrypt, wykonaj następujące czynności:
     ```bash
     cd /location/of/file
     ```
+
 3. Wykonywalny skrypt i uruchom ją za pomocą **"sudo"**:
 
     ```bash
     chmod +x ./dotnet-uninstall-pkgs.sh
     sudo ./dotnet-uninstall-pkgs.sh
     ```
+
 4. Na koniec usunąć skrypt dezinstalacji platformy .NET Core.
 
 ## <a name="uninstall-visual-studio-for-mac"></a>Odinstaluj program Visual Studio dla komputerów Mac

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39f94442e89cee6a615497376ad7baa9c85b7797
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a1b6ef478b9f3661690383623df7c89fae28bb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625533"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063546"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Kojarzenie regionu formularza z klasą wiadomości programu Outlook
   Można określić elementy, które program Microsoft Office Outlook wyświetlania regionu formularza przez kojarzenie regionu formularza z klasą wiadomości dla każdego elementu. Na przykład, jeśli chcesz dołączyć regionu formularza do dolnej części elementu poczty, można skojarzyć regionu formularza z `IPM.Note` klasą wiadomości.
@@ -50,9 +50,9 @@ ms.locfileid: "56625533"
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Kojarzenie regionu formularza z klasą wiadomości programu Outlook
  Istnieją dwa sposoby kojarzenie regionu formularza z klasą wiadomości:
 
--   Użyj **nowy Region formularza programu Outlook** kreatora.
+- Użyj **nowy Region formularza programu Outlook** kreatora.
 
--   Zastosuj atrybuty klasy.
+- Zastosuj atrybuty klasy.
 
 ### <a name="use-the-new-outlook-form-region-wizard"></a>Za pomocą Kreatora nowego regionu formularza programu Outlook
  Na ostatniej stronie **nowy Region formularza programu Outlook** kreatora można wybrać standardowych klasach wiadomości i wpisz nazwy niestandardowych klasach wiadomości, które chcesz skojarzyć z regionu formularza.

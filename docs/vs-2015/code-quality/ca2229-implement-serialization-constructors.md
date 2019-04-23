@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ee283e2e25958d497e00dad245bb69841196c65c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 41e296a979557a42a96c2f57ce49610d88b98a40
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755830"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073167"
 ---
 # <a name="ca2229-implement-serialization-constructors"></a>CA2229: Zaimplementuj konstruktory serializacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "54755830"
 ## <a name="cause"></a>Przyczyna
  Typ implementuje <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfejsu, nie jest delegat lub interfejsu i jest spełniony jeden z następujących warunków:
 
--   Typ nie ma konstruktora przyjmującego <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> obiektu i <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> obiektu (podpis konstruktora serializacji).
+- Typ nie ma konstruktora przyjmującego <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> obiektu i <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> obiektu (podpis konstruktora serializacji).
 
--   Niezapieczętowany typ i modyfikator dostępu dla jego konstruktora serializacji nie jest chroniony (rodzina).
+- Niezapieczętowany typ i modyfikator dostępu dla jego konstruktora serializacji nie jest chroniony (rodzina).
 
--   Typ nie jest zapieczętowany i nie jest prywatny modyfikator dostępu dla jego konstruktora serializacji.
+- Typ nie jest zapieczętowany i nie jest prywatny modyfikator dostępu dla jego konstruktora serializacji.
 
 ## <a name="rule-description"></a>Opis reguły
  Ta reguła ma znaczenie dla typów, które obsługują niestandardowej serializacji. Typ obsługuje niestandardowej serializacji, jeśli implementuje <xref:System.Runtime.Serialization.ISerializable> interfejsu. Konstruktor serializacji jest wymagany do deserializacji lub ponownie utworzyć obiekty, które zostały zserializowanym przy użyciu <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> metody.

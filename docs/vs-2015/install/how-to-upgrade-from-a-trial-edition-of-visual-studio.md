@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6740755567c24ceb9b70d0e63e159e5d74b7955b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c4d1e6436d8f0fdeb80ad0e0c8a2631ba338d50c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785966"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069903"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Instrukcje: Uaktualnienie z wersji próbnej programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Wstępna wersja programu Visual Studio możesz ocenić 14 dni bez rejestracji pr
 
 ### <a name="to-upgrade-from-a-trial-edition-of-visual-studio-professional-or-enterprise"></a>Aby uaktualnić z edycji próbnej Visual Studio Professional lub Enterprise
 
-1.  Uruchom program Visual Studio **Uruchom jako Administrator** trybu.
+1. Uruchom program Visual Studio **Uruchom jako Administrator** trybu.
 
-2.  Na pasku menu wybierz **pomocy**, **Zarejestruj produkt**.
+2. Na pasku menu wybierz **pomocy**, **Zarejestruj produkt**.
 
-3.  Wybierz **Zmień moją licencję produktu** łącza.
+3. Wybierz **Zmień moją licencję produktu** łącza.
 
-4.  Wprowadź prawidłowy klucz produktu, a następnie wybierz **Zastosuj** przycisku.
+4. Wprowadź prawidłowy klucz produktu, a następnie wybierz **Zastosuj** przycisku.
 
     > [!NOTE]
     >  Dostęp do Internetu jest wymagany, aby zarejestrować i odblokować dowolną wersję programu Visual Studio. Po zarejestrowaniu programu Visual Studio połączenie z Internetem jest opcjonalne.

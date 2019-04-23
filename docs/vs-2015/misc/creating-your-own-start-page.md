@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: 001af82f976728b55d2f3b2c3f47d3f39a9e2e73
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 662ee0ba4659e09b02f120bac5b3eaa728add6d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869310"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037898"
 ---
 # <a name="creating-your-own-start-page"></a>Tworzenie własną stronę początkową
 Za pomocą szablonu projektu strony Start lub tworząc pustą stronę początkową, można utworzyć niestandardowej strony początkowej.  
@@ -28,22 +28,22 @@ Za pomocą szablonu projektu strony Start lub tworząc pustą stronę początkow
   
 #### <a name="to-create-a-custom-start-page-by-using-the-start-page-project-template"></a>Do utworzenia niestandardowej strony początkowej za pomocą szablonu projektu strona startowa  
   
-1.  Pobierz i zainstaluj [szablonu projektu strona startowa](http://go.microsoft.com/fwlink/?LinkId=186204) z galerii Visual Studio.  
+1. Pobierz i zainstaluj [szablonu projektu strona startowa](http://go.microsoft.com/fwlink/?LinkId=186204) z galerii Visual Studio.  
   
     > [!WARNING]
     >  W tej chwili nie został uaktualniony szablon projektu Visual Studio 2010 strony początkowej. Aby uzyskać informacje o sposobie uaktualniania tego szablonu, zobacz [jak: Uaktualnienie programu Visual Studio niestandardową stronę początkową](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
   
-2.  Po zainstalowaniu szablonu, należy utworzyć nowy projekt strony start z nim.  
+2. Po zainstalowaniu szablonu, należy utworzyć nowy projekt strony start z nim.  
   
-3.  W lewym okienku okna dialogowego Nowy projekt w obszarze **zainstalowane szablony**, rozwiń węzeł **inne typy projektów** węzłem, a następnie kliknij przycisk **rozszerzalności**.  
+3. W lewym okienku okna dialogowego Nowy projekt w obszarze **zainstalowane szablony**, rozwiń węzeł **inne typy projektów** węzłem, a następnie kliknij przycisk **rozszerzalności**.  
   
-4.  W środkowym okienku kliknij **niestandardowy strona startowa**, a następnie nazwij swój projekt i kliknij **OK**.  
+4. W środkowym okienku kliknij **niestandardowy strona startowa**, a następnie nazwij swój projekt i kliknij **OK**.  
   
      Program Visual Studio tworzy projekt strony początkowej, który jest pełną kopię programu Visual Studio strony początkowej.  
   
-5.  Z **Eksploratora rozwiązań**, otwórz **StartPage.xaml**.  
+5. Z **Eksploratora rozwiązań**, otwórz **StartPage.xaml**.  
   
-6.  Edytuj StartPage.xaml.  
+6. Edytuj StartPage.xaml.  
   
      Możesz wyświetlić swoją pracę, naciskając klawisz F5, aby otworzyć doświadczalne wystąpienie programu Visual Studio za pomocą niestandardowej strony początkowej zainstalowane.  
   

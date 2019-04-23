@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 45e741882e8da2b5ed419540e40f3be40278d540
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f5bd94892a0321346adeacbcad2655a4ab62c6a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779718"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038333"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109: Przejrzyj widoczne procedury obsługi zdarzeń
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,18 +42,18 @@ ms.locfileid: "54779718"
 
  Żądanie nie może chronić niezawodne metody wywoływane przez program obsługi zdarzeń. Zabezpieczenia zapotrzebowania na pomoc zabezpieczyć kod z niezaufanych wywołujących badanie obiektów wywołujących w stosie wywołań. Kod, który dodaje procedurę obsługi zdarzeń do zdarzenia nie jest musi występować w stosie wywołań, po uruchomieniu metody obsługi zdarzeń. W związku z tym stos wywołań może mieć tylko bardzo zaufane obiekty wywołujące po wywołaniu metody obsługi zdarzeń. To powoduje, że zapotrzebowanie wprowadzone przez metodę programu obsługi zdarzeń została wykonana pomyślnie. Ponadto żądane uprawnienie może być oceniane pod po wywołaniu metody. Z tego względu ryzyko nie naprawianie naruszenie tej zasady może być oceniana tylko po zapoznaniu się z metody obsługi zdarzeń. Podczas przeglądania kodu należy wziąć pod uwagę następujące kwestie:
 
--   Powoduje obsługi zdarzenia wykonania żadnych operacji, które są niebezpieczne lub możliwe do wykorzystania, takich jak Potwierdzanie uprawnień lub uprawnienie kodu niezarządzanego z pominięciem?
+- Powoduje obsługi zdarzenia wykonania żadnych operacji, które są niebezpieczne lub możliwe do wykorzystania, takich jak Potwierdzanie uprawnień lub uprawnienie kodu niezarządzanego z pominięciem?
 
--   Co to są zagrożenia bezpieczeństwa, do i z kodu, ponieważ go można uruchomić w dowolnym momencie tylko bardzo zaufanych obiektów wywołujących w stosie?
+- Co to są zagrożenia bezpieczeństwa, do i z kodu, ponieważ go można uruchomić w dowolnym momencie tylko bardzo zaufanych obiektów wywołujących w stosie?
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, przejrzyj metody, a następnie ocenić następujące czynności:
 
--   Czy można utworzyć metody obsługi zdarzeń niepublicznych?
+- Czy można utworzyć metody obsługi zdarzeń niepublicznych?
 
--   Czy jest możliwe przeniesienie wszystkich niebezpiecznych funkcji programu obsługi zdarzeń?
+- Czy jest możliwe przeniesienie wszystkich niebezpiecznych funkcji programu obsługi zdarzeń?
 
--   Jeśli żądanie zabezpieczeń są nakładane, to można zrobić w inny sposób?
+- Jeśli żądanie zabezpieczeń są nakładane, to można zrobić w inny sposób?
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Pomijaj ostrzeżeń od tej reguły tylko po weryfikacji zabezpieczeń zachowania ostrożność aby upewnić się, że Twój kod nie stanowi zagrożenie bezpieczeństwa.

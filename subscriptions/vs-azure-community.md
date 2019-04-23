@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat korzyści społeczności platformy Azure, zawarte w wybranych subskrypcjach programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 5e40621afe4d4211660064c52f97bdbcb96effe1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 154c0164f5126fc38d0e0af5ec5703faacb9f94f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653951"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072789"
 ---
 # <a name="azure-community"></a>Społeczność platformy Azure
 
@@ -40,7 +40,7 @@ Rozpoczynanie pracy ze społecznością platformy Azure jest łatwe.
     > [!div class="mx-imgBorder"]
     > ![Fora społeczności platformy Azure](_img/vs-azure-community/vs-azure-community-forums.png)
 
-4.  W ramach forum można wyświetlić tematy i odpowiedzi, wyszukać odpowiedzi na Twoje pytanie lub zadać nowe pytanie.
+4. W ramach forum można wyświetlić tematy i odpowiedzi, wyszukać odpowiedzi na Twoje pytanie lub zadać nowe pytanie.
     > [!div class="mx-imgBorder"]
     > ![Przykład społeczności platformy Azure](_img/vs-azure-community/vs-azure-community-example.png)
 
@@ -65,7 +65,7 @@ Dostępność korzyści społeczności platformy Azure zależy od poziomu subskr
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
--  Inne zasoby społeczności platformy Azure można znaleźć w ramach społeczności platformy Azure [stronę pomocy technicznej](https://azure.microsoft.com/support/forums/).
--  [Dokumentacja usługi Azure](/azure/).
--  Potrzebna pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio?  Skontaktuj się z programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+- Inne zasoby społeczności platformy Azure można znaleźć w ramach społeczności platformy Azure [stronę pomocy technicznej](https://azure.microsoft.com/support/forums/).
+- [Dokumentacja usługi Azure](/azure/).
+- Potrzebna pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio?  Skontaktuj się z programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
+- Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

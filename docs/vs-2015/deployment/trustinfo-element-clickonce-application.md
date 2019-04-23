@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 829ccc02f9532e62bfb62ec21c8188f313c98e59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca7e19925288b1509fec08235f546b84b4afffef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770143"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039132"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; — Element (aplikacja ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,28 +81,28 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomi
 ## <a name="permissionset"></a>PermissionSet  
  Wymagana. Ten element jest elementem podrzędnym `applicationRequestMinimum` elementu i zawiera `IPermission` elementu. Ten element ma następujące atrybuty.  
   
--   `ID`  
+- `ID`  
   
      Wymagana. Identyfikuje zestaw uprawnień. Ten atrybut może być dowolna wartość. Identyfikator jest przywoływany w `defaultAssemblyRequest` i `assemblyRequest` atrybutów.  
   
--   `version`  
+- `version`  
   
      Wymagana. Identyfikuje wersję uprawnienia. Ta wartość jest zazwyczaj `1`.  
   
 ## <a name="ipermission"></a>Interfejsu IPermission  
  Opcjonalna. Ten element jest elementem podrzędnym `PermissionSet` elementu. `IPermission` Elementu pełni identyfikuje klasy uprawnień w [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. `IPermission` Element ma następujące atrybuty, ale mogą mieć dodatkowe atrybuty, które odnoszą się do właściwości klasy uprawnień. Aby sprawdzić składnię określone uprawnienie, zobacz temat w przykładach wymienionych w pliku Security.config —.  
   
--   `class`  
+- `class`  
   
      Wymagana. Identyfikuje klasy uprawnień za pomocą silnej nazwy. Na przykład, poniższy kod określa `FileDialogPermission` typu.  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
--   `version`  
+- `version`  
   
      Wymagana. Identyfikuje wersję uprawnienia. Ta wartość jest zazwyczaj `1`.  
   
--   `Unrestricted`  
+- `Unrestricted`  
   
      Wymagana. Określa, czy aplikacja musi nieograniczony przyznanie tego uprawnienia. Jeśli `true`, udzielenia uprawnień to bezwarunkowy. Jeśli `false`, lub jeśli ten atrybut jest niezdefiniowana, jest ograniczona zgodnie z atrybutów określonych uprawnień wobec `IPermission` tagu. Wykonaj następujące uprawnienia:  
   
@@ -122,18 +122,18 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomi
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest  
  Opcjonalna. Identyfikuje zestaw wszystkich zestawów uprawnień. Ten element jest elementem podrzędnym `applicationRequestMinimum` elementu i ma następujący atrybut.  
   
--   `permissionSetReference`  
+- `permissionSetReference`  
   
      Wymagana. Określa identyfikator zestawu uprawnień, który jest domyślnym uprawnieniem. Zestaw uprawnień jest zadeklarowana w `PermissionSet` elementu.  
   
 ## <a name="assemblyrequest"></a>assemblyRequest  
  Opcjonalna. Umożliwia określenie uprawnień dla określonego zestawu. Ten element jest elementem podrzędnym `applicationRequestMinimum` elementu i ma następujące atrybuty.  
   
--   `Name`  
+- `Name`  
   
      Wymagana. Określa nazwę zestawu.  
   
--   `permissionSetReference`  
+- `permissionSetReference`  
   
      Wymagana. Określa identyfikator zestawu uprawnień, który wymaga tego zestawu. Zestaw uprawnień jest zadeklarowana w `PermissionSet` elementu.  
   
@@ -143,7 +143,7 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomi
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
  Opcjonalna. Określa poziom zabezpieczeń, w którym aplikacja żąda wykonania. Ten element nie ma elementów podrzędnych i ma następujące atrybuty.  
   
--   `Level`  
+- `Level`  
   
      Wymagana. Wskazuje, że żąda poziomu zabezpieczeń aplikacji. Możliwe wartości to:  
   
@@ -155,7 +155,7 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomi
   
      [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacje będą instalowane tylko z wartością `asInvoker`. Instalowanie przy użyciu dowolnej innej wartości zakończy się niepowodzeniem.  
   
--   `uiAccess`  
+- `uiAccess`  
   
      Opcjonalna. Wskazuje, czy aplikacja wymaga dostępu do elementów interfejsu użytkownika chronionych. Wartości są albo `true` lub `false`, a wartość domyślna to false. Tylko podpisane aplikacje powinny mieć wartość true.  
   

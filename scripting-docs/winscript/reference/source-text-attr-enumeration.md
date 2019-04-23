@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05faeddf43c91ce0f45d54d2f6b6ed46cf8d2a4f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f34121ca50ae2467addb29809e7a3792063642ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58157990"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062453"
 ---
 # <a name="sourcetextattr-enumeration"></a>Wyliczenie SOURCE_TEXT_ATTR
 Opisuje atrybuty pojedynczego znaku w tekście źródłowym.  
@@ -44,11 +44,11 @@ enum enum_SOURCE_TEXT_ATTR{    SOURCETEXT_ATTR_KEYWORD    = 0x0001,    SOURCETEX
 ## <a name="remarks"></a>Uwagi  
  Zazwyczaj `IDebugDocumentHost::GetScriptTextAttributes`, `IActiveScriptDebug::GetScriptletTextAttributes`, i `IActiveScriptDebug::GetScriptTextAttributes` metody zwracają jeden atrybut tekstu na znak, chyba że:  
   
--   Jest ustawiona flaga GETATTRTYPE_DEPSCAN, w którym to przypadku metoda może zwrócić SOURCETEXT_ATTR_IDENTIFIER i SOURCETEXT_ATTR_MEMBERLOOKUP flagi  
+- Jest ustawiona flaga GETATTRTYPE_DEPSCAN, w którym to przypadku metoda może zwrócić SOURCETEXT_ATTR_IDENTIFIER i SOURCETEXT_ATTR_MEMBERLOOKUP flagi  
   
--   Jest ustawiona flaga GETATTRFLAG_THIS, w którym to przypadku metoda może zwrócić flagę SOURCETEXT_ATTR_THIS  
+- Jest ustawiona flaga GETATTRFLAG_THIS, w którym to przypadku metoda może zwrócić flagę SOURCETEXT_ATTR_THIS  
   
--   Flaga GETATTRFLAG_HUMANTEXT jest ustawiona, w którym to przypadku metoda może zwrócić flagi SOURCETEXT_ATTR_HUMANTEXT bazy danych.  
+- Flaga GETATTRFLAG_HUMANTEXT jest ustawiona, w którym to przypadku metoda może zwrócić flagi SOURCETEXT_ATTR_HUMANTEXT bazy danych.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Stałe, wyliczenia i struktury debugera aktywnego skryptu](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

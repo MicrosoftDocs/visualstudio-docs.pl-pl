@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f1c651c27fac6036aa2abcbd3e86b5f46cc9f02
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 0bac96a61a5c071a01f1584911ba41cd84e87da7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647495"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066042"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Krok 1. Tworzenie projektu i Dodawanie tabeli do formularza
 
@@ -47,9 +47,9 @@ Pierwszym krokiem w tworzeniu gry w dopasowanie jest stworzenie projektu i dodan
 
 4. W **właściwości** okna, ustaw następujące właściwości formularza.
 
-   1.  Formularz zmiany **tekstu** właściwość **Form1** do **gra w dopasowywanie**. Ten tekst jest wyświetlany w górnej części okna gry.
+   1. Formularz zmiany **tekstu** właściwość **Form1** do **gra w dopasowywanie**. Ten tekst jest wyświetlany w górnej części okna gry.
 
-   2.  Ustaw rozmiar formularza na 550 pikseli szerokości i 550 pikseli wysokości. Możesz to zrobić, ustawiając **rozmiar** właściwości **550, 550**, lub poprzez przeciąganie rogu formularza, aż zobaczysz właściwy rozmiar w prawym dolnym rogu zintegrowanego rozwoju (środowiska ŚRODOWISKO IDE).
+   2. Ustaw rozmiar formularza na 550 pikseli szerokości i 550 pikseli wysokości. Możesz to zrobić, ustawiając **rozmiar** właściwości **550, 550**, lub poprzez przeciąganie rogu formularza, aż zobaczysz właściwy rozmiar w prawym dolnym rogu zintegrowanego rozwoju (środowiska ŚRODOWISKO IDE).
 
 5. Wyświetl przybornik, wybierając **przybornika** karty po lewej stronie IDE.
 
@@ -76,19 +76,19 @@ Pierwszym krokiem w tworzeniu gry w dopasowanie jest stworzenie projektu i dodan
 
     Gdy TableLayoutPanel jest zaznaczony, Otwórz przybornik i Dodaj <xref:System.Windows.Forms.Label> kontroli (znajdujący się w **wspólnych formantów** kategoria) do lewej górnej komórki TableLayoutPanel. Formant etykiety powinny teraz być zaznaczone w środowisku IDE. Ustaw dla niego następujące właściwości.
 
-   1.  Upewnij się, że etykiety **BackColor** właściwość jest ustawiona na **CornflowerBlue**.
+   1. Upewnij się, że etykiety **BackColor** właściwość jest ustawiona na **CornflowerBlue**.
 
-   2.  Ustaw **AutoSize** właściwości **False**.
+   2. Ustaw **AutoSize** właściwości **False**.
 
-   3.  Ustaw **Dock** właściwości **wypełnienia**.
+   3. Ustaw **Dock** właściwości **wypełnienia**.
 
-   4.  Ustaw **TextAlign** właściwości **MiddleCenter** , wybierając przycisk listy rozwijanej obok właściwości, a następnie wybierając środkowy przycisk. Gwarantuje to, że ikona pojawia się w środku komórki.
+   4. Ustaw **TextAlign** właściwości **MiddleCenter** , wybierając przycisk listy rozwijanej obok właściwości, a następnie wybierając środkowy przycisk. Gwarantuje to, że ikona pojawia się w środku komórki.
 
-   5.  Wybierz **czcionki** właściwości. Wielokropek (**...** ) powinien pojawić się przycisk.
+   5. Wybierz **czcionki** właściwości. Wielokropek (**...** ) powinien pojawić się przycisk.
 
-   6.  Wybierz przycisk wielokropka i ustaw **czcionki** wartość **Webdings**, **styl czcionki** do **Bold**i **rozmiar** do **48**.
+   6. Wybierz przycisk wielokropka i ustaw **czcionki** wartość **Webdings**, **styl czcionki** do **Bold**i **rozmiar** do **48**.
 
-   7.  Ustaw **tekstu** właściwość etykiety na literę **c**.
+   7. Ustaw **tekstu** właściwość etykiety na literę **c**.
 
         Lewa górna komórka w TableLayoutPanel powinna teraz zawierać czarne pole wyśrodkowane na niebieskim tle.
 
@@ -106,6 +106,6 @@ Pierwszym krokiem w tworzeniu gry w dopasowanie jest stworzenie projektu i dodan
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
--   Aby przejść do następnego kroku samouczka, zobacz [krok 2: Dodawanie obiektu Random i listy ikon](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+- Aby przejść do następnego kroku samouczka, zobacz [krok 2: Dodawanie obiektu Random i listy ikon](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
--   Aby powrócić do tematu przeglądu, zobacz [Tutorial 3: Utwórz pasujący obiekt typu gier](../ide/tutorial-3-create-a-matching-game.md).
+- Aby powrócić do tematu przeglądu, zobacz [Tutorial 3: Utwórz pasujący obiekt typu gier](../ide/tutorial-3-create-a-matching-game.md).

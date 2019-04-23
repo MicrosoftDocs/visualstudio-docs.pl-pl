@@ -12,29 +12,29 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f44af8ae730a39f68d24624cd321bd634d98dd73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 581f9c0b9907fd59863f6a468a45ef67d9966475
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638936"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061401"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>Instrukcje: Uruchamianie kodu, gdy są wykonywane kroki związane z wdrażaniem
   Jeśli chcesz wykonać dodatkowe zadania dla kroku wdrożenia w projekcie programu SharePoint, możesz obsłużyć zdarzenia, które są wywoływane przez elementów projektu programu SharePoint przed i po programu Visual Studio wykonuje każdy krok wdrażania. Aby uzyskać więcej informacji, zobacz [rozszerzanie pakowania i wdrażania SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
 
 ### <a name="to-run-code-when-deployment-steps-are-executed"></a>Aby uruchomić kod, gdy są wykonywane kroki związane z wdrażaniem
 
-1.  Tworzenie rozszerzenia elementu projektu, rozszerzenia projektu lub definicji typu elementu projektu. Więcej informacji znajduje się w następujących tematach:
+1. Tworzenie rozszerzenia elementu projektu, rozszerzenia projektu lub definicji typu elementu projektu. Więcej informacji znajduje się w następujących tematach:
 
-    -   [Instrukcje: Tworzenie rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
+    - [Instrukcje: Tworzenie rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 
-    -   [Instrukcje: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
+    - [Instrukcje: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 
-    -   [Instrukcje: Definiowanie typu elementu projektu SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
+    - [Instrukcje: Definiowanie typu elementu projektu SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 
-2.  Do rozszerzenia obsługi <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> i <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted> zdarzenia <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> obiektu (w rozszerzenia elementu projektu lub rozszerzenia projektu) lub <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> obiektu (w definicji typu elementu projektu).
+2. Do rozszerzenia obsługi <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> i <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted> zdarzenia <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> obiektu (w rozszerzenia elementu projektu lub rozszerzenia projektu) lub <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> obiektu (w definicji typu elementu projektu).
 
-3.  W przypadku programów obsługi, użyj <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs> i <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepCompletedEventArgs> parametry, aby uzyskać informacje na temat kroku wdrażania. Na przykład można określić kroku wdrożenia, który jest wykonywany i tego, czy rozwiązanie jest wdrożony lub wycofany.
+3. W przypadku programów obsługi, użyj <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs> i <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepCompletedEventArgs> parametry, aby uzyskać informacje na temat kroku wdrażania. Na przykład można określić kroku wdrożenia, który jest wykonywany i tego, czy rozwiązanie jest wdrożony lub wycofany.
 
 ## <a name="example"></a>Przykład
  Poniższy przykład kodu demonstruje sposób obsługi <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> i <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted> zdarzenia do rozszerzenia dla elementu projektu wystąpienia listy. To rozszerzenie zapisuje komunikat dodatkowe do **dane wyjściowe** okna, gdy pula aplikacji jest odtwarzana programu Visual Studio podczas wdrażania i wycofywanie rozwiązania.
@@ -45,9 +45,9 @@ ms.locfileid: "56638936"
 ## <a name="compile-the-code"></a>Skompilować kod
  Ten przykład wymaga odwołania do następujących zestawów:
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>Wdrażanie rozszerzenia
  Aby wdrożyć rozszerzenie, należy utworzyć [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozszerzenie (VSIX), pakiet dla zestawu i innych plików, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).

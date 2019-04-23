@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 511f19e48f91c6719c8b0021ff7eae4071ce89b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7349bc8c76b749c4306f7483e807507b99a11cff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779338"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075210"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Dodawanie właściwości niestandardowych do diagramów warstw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,20 +32,23 @@ Kiedy piszesz kod rozszerzenia dla diagramów warstw, można przechowywać warto
 > [!IMPORTANT]
 >  Aby ułatwić właściwości są wyświetlane, należy wprowadź następującą zmianę na każdym komputerze, na którym ma właściwości warstwy mają być widoczne.  
 > 
-> 1. Uruchom program Notatnik za pomocą **Uruchom jako Administrator**. Otwórz `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
->    2.  Wewnątrz `Content` elementu dodawanie:  
+>  1. Uruchom program Notatnik za pomocą **Uruchom jako Administrator**. Otwórz `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
+>  
+>  2. Wewnątrz `Content` elementu dodawanie:  
 > 
->    ```xml  
->    <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
->    ```  
->    3.  W obszarze **Visual Studio Tools** części programu Visual Studio application menu start, otwórz **wiersz polecenia dla deweloperów**.  
+>     ```xml  
+>     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
+>     ```  
+>
+>  3. W obszarze **Visual Studio Tools** części programu Visual Studio application menu start, otwórz **wiersz polecenia dla deweloperów**.  
 > 
->    Wprowadź:  
+>     Wprowadź:  
 > 
->    `devenv /rootSuffix /updateConfiguration`  
+>     `devenv /rootSuffix /updateConfiguration`  
 > 
->    `devenv /rootSuffix Exp /updateConfiguration`  
->    4.  Uruchom ponownie program Visual Studio.  
+>     `devenv /rootSuffix Exp /updateConfiguration`  
+>    
+>  4. Uruchom ponownie program Visual Studio.  
   
  **Upewnij się, że Twój kod znajduje się w projekcie VSIX**  
   
@@ -66,15 +69,15 @@ public class MyProperty
   
  Można zdefiniować właściwości na <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> lub dowolny z jej klas pochodnych, które obejmują:  
   
--   `ILayerModel` -modelu  
+- `ILayerModel` -modelu  
   
--   `ILayer` — Każda warstwa  
+- `ILayer` — Każda warstwa  
   
--   `ILayerDependencyLink` — łącza między warstwami  
+- `ILayerDependencyLink` — łącza między warstwami  
   
--   `ILayerComment`  
+- `ILayerComment`  
   
--   `ILayerCommentLink`  
+- `ILayerCommentLink`  
   
 ## <a name="example"></a>Przykład  
  Poniższy kod jest typową właściwością niestandardową deskryptora. Definiuje właściwość typu Boolean na modelu warstwy (`ILayerModel`) umożliwiający użytkownikowi podanie wartości dla niestandardowej metody walidacji.  

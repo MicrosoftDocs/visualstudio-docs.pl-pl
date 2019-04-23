@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6e6c44895a022521899bdd0383ee71257b83fe3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ac5507722a62942dbca67518c2f6689bf29aacfc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668824"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065711"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Co najmniej jeden wybrany element zawiera typ danych nieobsługiwany przez projektanta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ Co najmniej jeden z elementów przeciągnięte z **Eksploratora serwera**/**Eksp
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-1.  Utwórz widok, który jest oparty na odpowiednią tabelę i nie zawiera nieobsługiwany typ danych.  
+1. Utwórz widok, który jest oparty na odpowiednią tabelę i nie zawiera nieobsługiwany typ danych.  
   
-2.  Przeciągnij widok z **Eksploratora serwera**/**Eksplorator bazy danych** do projektanta.  
+2. Przeciągnij widok z **Eksploratora serwera**/**Eksplorator bazy danych** do projektanta.  
   
 ## <a name="see-also"></a>Zobacz też  
  [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

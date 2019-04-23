@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa9be494aaaf79b7235cb9af2393406a6e49abf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b84d78426ccc3294d908e52ee87ce6d521da89cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634425"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070680"
 ---
-# <a name="msbuild-targets"></a>Elementy docelowe programu MSBuild
+# <a name="msbuild-targets"></a>Obiekty docelowe w programie MSBuild
 Obiekty docelowe grupują zadania w określonej kolejności i pozwól, aby być uwzględniona na mniejsze jednostki proces kompilacji. Na przykład jeden element docelowy może usunąć wszystkie pliki w katalogu wyjściowym, aby przygotować się do kompilacji, podczas gdy inny kompiluje dane wejściowe dla projektu i umieszcza je w pusty katalog. Aby uzyskać więcej informacji na temat zadań, zobacz [zadania](../msbuild/msbuild-tasks.md).
 
 ## <a name="declare-targets-in-the-project-file"></a>Deklarowanie obiektów docelowych w pliku projektu
@@ -45,15 +45,15 @@ Obiekty docelowe grupują zadania w określonej kolejności i pozwól, aby być 
 ## <a name="target-build-order"></a>Kolejność kompilowania obiektów docelowych
  Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego obiektu docelowego jest zależna od danych wyjściowych z innym elementem docelowym. Istnieje kilka sposobów, aby określić kolejność, w które elementy docelowe, uruchom.
 
--   Cele początkowe
+- Cele początkowe
 
--   Domyślne elementy docelowe
+- Domyślne elementy docelowe
 
--   Pierwszy element docelowy
+- Pierwszy element docelowy
 
--   Miejsce docelowe zależności
+- Miejsce docelowe zależności
 
--   `BeforeTargets` i `AfterTargets` (MSBuild 4.0)
+- `BeforeTargets` i `AfterTargets` (MSBuild 4.0)
 
 Obiekt docelowy nigdy nie będzie uruchamiany dwa razy podczas pojedynczej kompilacji, nawet wtedy, gdy kolejne docelowego w kompilacji zależy od niego. Po uruchomieniu elementu docelowego swój wkład zgodnie z kompilacją zostało ukończone.
 

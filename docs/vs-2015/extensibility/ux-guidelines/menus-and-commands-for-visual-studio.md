@@ -8,12 +8,12 @@ ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b0fa441c6dc56210c11a0007eb2662b3c08910ba
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 681df08c02813e209738e629495190ad889caf31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867863"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095805"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menu i poleceń dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "57867863"
 ##### <a name="do-not-create-icons-for-every-command"></a>Nie należy tworzyć ikony dla każdego polecenia.
  Zastanów się przed utworzeniem ikona polecenia. Ikony, należy utworzyć tylko w przypadku polecenia który:
 
--   są wyświetlane na pasku narzędzi domyślne.
+- są wyświetlane na pasku narzędzi domyślne.
 
--   mogą zostać dodane przez użytkowników do narzędzi za pośrednictwem **Dostosuj...** okno dialogowe.
+- mogą zostać dodane przez użytkowników do narzędzi za pośrednictwem **Dostosuj...** okno dialogowe.
 
--   zawiera ikony skojarzone z tego samego działania w innego produktu firmy Microsoft.
+- zawiera ikony skojarzone z tego samego działania w innego produktu firmy Microsoft.
 
 ##### <a name="limit-the-addition-of-keyboard-shortcuts"></a>Limit dodawania skróty klawiaturowe
  Większość użytkowników, zastosować niewielki ułamek wszystkie dostępne skróty klawiaturowe. W razie wątpliwości, nie należy powiązać Twojej funkcji skrótu klawiaturowego. Praca z użytkownika środowisko zespołu przed dodaniem nowych skrótów.
@@ -77,65 +77,65 @@ ms.locfileid: "57867863"
 
 ##### <a name="core-menus"></a>Menu Core
 
--   Plik
+- Plik
 
--   Edytowanie
+- Edytowanie
 
--   Widok
+- Widok
 
--   Narzędzia
+- Narzędzia
 
--   Okno
+- Okno
 
--   Pomoc
+- Pomoc
 
 ##### <a name="project-specific-menus"></a>Menu specyficzne dla projektu
 
--   Projekt
+- Projekt
 
--   Kompilacja
+- Kompilacja
 
--   Debugowanie
+- Debugowanie
 
 ##### <a name="context-specific-menus"></a>Menu kontekstowe
 
--   Zespół
+- Zespół
 
--   Dane
+- Dane
 
--   Test
+- Test
 
--   Architektura
+- Architektura
 
--   Analiza
+- Analiza
 
 ##### <a name="document-specific-menus"></a>Menu specyficzne dla dokumentu
 
--   Format
+- Format
 
--   tabela
+- tabela
 
 ##### <a name="when-designing-main-menus-adhere-to-these-rules"></a>Podczas projektowania menu głównych, należy stosować się do tych reguł:
 
--   Nie może przekraczać 25 elementów najwyższego poziomu w podanym kontekście
+- Nie może przekraczać 25 elementów najwyższego poziomu w podanym kontekście
 
--   Menu nigdy nie powinna przekraczać 600 pikseli wysokości.
+- Menu nigdy nie powinna przekraczać 600 pikseli wysokości.
 
--   Ocenia menu głównego w wielu sytuacjach, takich jak w wersji Ultimate i profil ogólne.
+- Ocenia menu głównego w wielu sytuacjach, takich jak w wersji Ultimate i profil ogólne.
 
--   Menu wysuwane są akceptowane.
+- Menu wysuwane są akceptowane.
 
--   Menu wysuwane powinien zawierać co najmniej trzy elementy i nie więcej niż siedem.
+- Menu wysuwane powinien zawierać co najmniej trzy elementy i nie więcej niż siedem.
 
--   Menu wysuwane powinien przeprowadzić tylko jeden poziom głębokiego — niektóre elementy menu programu Visual Studio zawierają kaskadowych podmenu, ale tego wzorca nie zaleca się.
+- Menu wysuwane powinien przeprowadzić tylko jeden poziom głębokiego — niektóre elementy menu programu Visual Studio zawierają kaskadowych podmenu, ale tego wzorca nie zaleca się.
 
--   Użyj nie więcej niż sześciu separatorów. Grupowania należy stosować się do poniższej ilustracji:
+- Użyj nie więcej niż sześciu separatorów. Grupowania należy stosować się do poniższej ilustracji:
 
      ![Wytyczne dotyczące grupowanie w menu głównym](../../extensibility/ux-guidelines/media/0501-b-mainmenus.png "0501 b_MainMenus")
 
--   Gdy masz każda grupa na rysunku nie jest wymagany, dodając dodatkowe grupowania jest ograniczona.
+- Gdy masz każda grupa na rysunku nie jest wymagany, dodając dodatkowe grupowania jest ograniczona.
 
--   Każda grupa powinna mieć dwa na siedem elementów menu.
+- Każda grupa powinna mieć dwa na siedem elementów menu.
 
 #### <a name="main-menu-ordering"></a>Kolejność menu głównego
  Przed dodaniem nowego elementu najwyższego poziomu, należy rozważyć umieszczenie polecenia do istniejącego menu najwyższego poziomu. Podczas dodawania nowego menu najwyższego poziomu, należy umieścić we właściwym miejscu. Zdecyduj, czy menu jest specyficzne dla projektu, kontekstu lub dokumentu. Zachowaj nazwę najwyższego poziomu menu zwięzły i użyj tylko jeden wyraz.
@@ -147,30 +147,30 @@ ms.locfileid: "57867863"
 
  Podczas projektowania menu kontekstowe należy stosować się do tych samych zasad, jak w przypadku menu głównego, a ponadto:
 
--   Nie może przekraczać 25 elementów menu górnego poziomu.
+- Nie może przekraczać 25 elementów menu górnego poziomu.
 
--   Menu wysuwane są akceptowane, ale musi nie może przekraczać jeden poziom głębokiego — nigdy nie używaj kaskadowych menu wysuwanych.
+- Menu wysuwane są akceptowane, ale musi nie może przekraczać jeden poziom głębokiego — nigdy nie używaj kaskadowych menu wysuwanych.
 
--   Użyj nie więcej niż sześciu separatorów.
+- Użyj nie więcej niż sześciu separatorów.
 
 ### <a name="command-placement-in-toolbars"></a>Położenie polecenia na paskach narzędzi
 
 #### <a name="general-toolbars"></a>Ogólne pasków narzędzi
  Podczas projektowania i rozmieszczanie paski narzędzi, postępuj zgodnie z tymi standardami:
 
--   Nie należy używać więcej niż jeden zlecenie na przycisku. Jeden przycisk = jedną akcję.
+- Nie należy używać więcej niż jeden zlecenie na przycisku. Jeden przycisk = jedną akcję.
 
--   Użyj tekstu, obok ikony, tylko wtedy, gdy musi być wzmocnione z etykietą.
+- Użyj tekstu, obok ikony, tylko wtedy, gdy musi być wzmocnione z etykietą.
 
--   Użyj pola kombi wyłącznie dla właściwości, które zostaną przełączone wielokrotnie w jednej sesji. W przeciwnym razie można ujawnić właściwości w innym miejscu.
+- Użyj pola kombi wyłącznie dla właściwości, które zostaną przełączone wielokrotnie w jednej sesji. W przeciwnym razie można ujawnić właściwości w innym miejscu.
 
--   Szerokość pola kombi powinna być równa szerokości elementu najdłuższy w polu + 30%. Na przykład jeśli najdłuższy element znajduje się 200 pikseli, pole kombi należy 260 pikseli szerokości.
+- Szerokość pola kombi powinna być równa szerokości elementu najdłuższy w polu + 30%. Na przykład jeśli najdłuższy element znajduje się 200 pikseli, pole kombi należy 260 pikseli szerokości.
 
--   Ogranicz użycie separatorów. Użyj separatora obok listy rozwijanej jest wzorzec niezalecane, ponieważ kształt z listy rozwijanej, sama działa jako separatora wizualnego.
+- Ogranicz użycie separatorów. Użyj separatora obok listy rozwijanej jest wzorzec niezalecane, ponieważ kształt z listy rozwijanej, sama działa jako separatora wizualnego.
 
--   Ikona grupy powinna zawierać od 3 do 6 ikon.
+- Ikona grupy powinna zawierać od 3 do 6 ikon.
 
--   Jeśli kwalifikatory spowodują pojawienie się wiele przydatnych poleceń, użyj przycisku podziału, która przechowuje ostatniego ustawienia:
+- Jeśli kwalifikatory spowodują pojawienie się wiele przydatnych poleceń, użyj przycisku podziału, która przechowuje ostatniego ustawienia:
 
      ![Podziel przycisków w programie Visual Studio](../../extensibility/ux-guidelines/media/0501-c-splitbuttons.png "0501 c_SplitButtons")
 
@@ -231,13 +231,13 @@ ms.locfileid: "57867863"
 
 #### <a name="when-naming-commands"></a>Podczas nazywania polecenia:
 
--   Skonstruuj tekst tak, aby łatwo możliwych do zlokalizowania. Więcej informacji na temat lokalizowanie tekstu, zobacz [najlepszych rozwiązań w lokalizacji](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices).
+- Skonstruuj tekst tak, aby łatwo możliwych do zlokalizowania. Więcej informacji na temat lokalizowanie tekstu, zobacz [najlepszych rozwiązań w lokalizacji](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices).
 
--   Być zwięzłe. Polecenia należy używać co najwyżej trzech słów.
+- Być zwięzłe. Polecenia należy używać co najwyżej trzech słów.
 
--   Stosowanie wielkimi literami liter: powinny być napisane wielkimi literami pierwszą literę każdego wyrazu. Aby uzyskać więcej informacji na temat formatowania tekstu w programie Visual Studio, zobacz [styl tekstu](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
+- Stosowanie wielkimi literami liter: powinny być napisane wielkimi literami pierwszą literę każdego wyrazu. Aby uzyskać więcej informacji na temat formatowania tekstu w programie Visual Studio, zobacz [styl tekstu](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
 
--   Wziąć pod uwagę, w którym zostaną umieszczone polecenia. Jest to w menu najwyższego poziomu lub menu wysuwanego? Na przykład podczas grupowania poleceń w menu wysuwane, a polecenia najwyższego poziomu musi być "Align" i poleceń menu wysuwane powinien być "Left" "Prawa", "Centrum", "Justify" i tak dalej. Zbyteczna nazwy poleceń menu wysuwane "Wyrównaj do lewej" lub "Wyrównaj do prawej".
+- Wziąć pod uwagę, w którym zostaną umieszczone polecenia. Jest to w menu najwyższego poziomu lub menu wysuwanego? Na przykład podczas grupowania poleceń w menu wysuwane, a polecenia najwyższego poziomu musi być "Align" i poleceń menu wysuwane powinien być "Left" "Prawa", "Centrum", "Justify" i tak dalej. Zbyteczna nazwy poleceń menu wysuwane "Wyrównaj do lewej" lub "Wyrównaj do prawej".
 
      ![Visual Studio napisanego](../../extensibility/ux-guidelines/media/0502-a-formatmenu.png "0502 a_FormatMenu")
 
@@ -246,20 +246,20 @@ ms.locfileid: "57867863"
 
 #### <a name="use-an-icon-with-a-command-only-if"></a>Ikona za pomocą polecenia tylko wtedy, gdy:
 
--   To samo polecenie zawiera ikonę skojarzonych z nim w innym wyraźną produktu firmy Microsoft, takich jak jedna z aplikacji Microsoft Office.
+- To samo polecenie zawiera ikonę skojarzonych z nim w innym wyraźną produktu firmy Microsoft, takich jak jedna z aplikacji Microsoft Office.
 
--   Polecenie zostaną umieszczone w domyślnej paska narzędzi.
+- Polecenie zostaną umieszczone w domyślnej paska narzędzi.
 
--   Polecenie jest polecenie specjalistyczne, które użytkownicy mogą dodać za pomocą narzędzi **"Dostosowywanie..."** okno dialogowe.
+- Polecenie jest polecenie specjalistyczne, które użytkownicy mogą dodać za pomocą narzędzi **"Dostosowywanie..."** okno dialogowe.
 
 ## <a name="access-and-shortcut-keys"></a>Klucze dostępu i skrótów
 
 ### <a name="overview"></a>Omówienie
  Istnieją dwa rodzaje klawiatury przypisań klawiszy:
 
--   **Klucze dostępu** (znany także jako akceleratorów) Zezwalaj na klawiatury uzyskać dostęp za pośrednictwem menu dla polecenia i każdej etykiety w oknie dialogowym interfejsu użytkownika. Klucze dostępu są głównie do celów ułatwień dostępu, są przypisywane do wszystkich menu i większość formantów okna dialogowego, nie mają być zapamiętanych, mają wpływ tylko bieżącego okna i są zlokalizowane.
+- **Klucze dostępu** (znany także jako akceleratorów) Zezwalaj na klawiatury uzyskać dostęp za pośrednictwem menu dla polecenia i każdej etykiety w oknie dialogowym interfejsu użytkownika. Klucze dostępu są głównie do celów ułatwień dostępu, są przypisywane do wszystkich menu i większość formantów okna dialogowego, nie mają być zapamiętanych, mają wpływ tylko bieżącego okna i są zlokalizowane.
 
--   **Klawisze skrótów** służy głównie kontrolki (Ctrl) oraz kombinacje klawiszy — funkcja (Fn). Są one przeznaczone bardziej dla użytkowników zaawansowanych i pomocy produktywności. One przypisanych tylko do większości często używanych poleceń i umożliwia szybki dostęp podczas z pominięciem menu głównego. Klawisze skrótów mają być zapamiętanych, a do tego powodu musi być przypisany spójne ze schematem profilu. Skrót klucza schematów mogą się różnić profilu profilu. Użytkownik może dostosować klawiszy skrótów, za pośrednictwem **Narzędzia > Opcje > klawiatury**.
+- **Klawisze skrótów** służy głównie kontrolki (Ctrl) oraz kombinacje klawiszy — funkcja (Fn). Są one przeznaczone bardziej dla użytkowników zaawansowanych i pomocy produktywności. One przypisanych tylko do większości często używanych poleceń i umożliwia szybki dostęp podczas z pominięciem menu głównego. Klawisze skrótów mają być zapamiętanych, a do tego powodu musi być przypisany spójne ze schematem profilu. Skrót klucza schematów mogą się różnić profilu profilu. Użytkownik może dostosować klawiszy skrótów, za pośrednictwem **Narzędzia > Opcje > klawiatury**.
 
 ### <a name="assigning-access-keys"></a>Przypisywanie klawiszy
  Klucze dostępu składają się z klawisze Alt plus alfanumeryczne. Przypisz klucza dostępu do każdego elementu menu, bez wyjątku. Postępuj zgodnie z Windows i typowych Konwencji przypisywanie klawiszy. na przykład klucz dostępu dla **Plik > Nowy** powinna zawsze być **Alt, F, N**.
@@ -287,6 +287,6 @@ ms.locfileid: "57867863"
 
   Nie jest to prosty sposób sprawdzić dostępność skrótów. Jeśli chcesz dodać skrót, wykonaj następujące kroki:
 
-1.  Sprawdź listę [skróty programu Visual Studio 2013](http://visualstudioshortcuts.com/2013/) można sprawdzić, czy są podobne polecenia, aby Twoje z grupy.
+1. Sprawdź listę [skróty programu Visual Studio 2013](http://visualstudioshortcuts.com/2013/) można sprawdzić, czy są podobne polecenia, aby Twoje z grupy.
 
-2.  Przejdź do **Narzędzia > Opcje > środowisko > klawiatury** i przetestować skrót. Sprawdź, czy każdy schemat mapowania klawiatury na liście "Zastosuj poniższy schemat mapowania dodatkowej klawiatury". Profile ogólne, C#, VB i C++, należy sprawdzić, jak udostępniać te skróty unikatowy. Skrót jest dostępna, jeśli nie jest zamapowany we wszystkich tych miejscach.
+2. Przejdź do **Narzędzia > Opcje > środowisko > klawiatury** i przetestować skrót. Sprawdź, czy każdy schemat mapowania klawiatury na liście "Zastosuj poniższy schemat mapowania dodatkowej klawiatury". Profile ogólne, C#, VB i C++, należy sprawdzić, jak udostępniać te skróty unikatowy. Skrót jest dostępna, jeśli nie jest zamapowany we wszystkich tych miejscach.

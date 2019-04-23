@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fb273a54a89bb4c0339cac739b9dd0fe7fdd0afc
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: d54ac2d7f58f7b5be768e1f431a53d83f5f8fe94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415593"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038734"
 ---
 # <a name="advanced-example-for-containers"></a>Zaawansowany przykład dotyczący kontenerów
 
@@ -178,6 +178,7 @@ The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' return
 
 > docker cp 4b62b4ce3a3c:C:\vslogs.zip "%TEMP%\vslogs.zip"
 ```
+
 ::: moniker-end
 
 ::: moniker range="vs-2019"

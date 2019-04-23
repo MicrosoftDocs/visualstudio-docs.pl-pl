@@ -8,12 +8,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e905ca4a34399c1ec590d5ff16441bd5afe9ce23
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8de4960548b363c99b9625553c47b2cbad2df2de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771269"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063689"
 ---
 # <a name="managing-universal-windows-projects"></a>Zarządzanie uniwersalnymi projektami systemu Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ Universal Windows apps to aplikacje, przeznaczonych dla Windows 8.1 i Windows Ph
   
 ### <a name="navigate-the-shared-project"></a>Przejdź do projektu udostępnionego  
   
-1.  Utwórz projekt VSIX języka C# o nazwie **TestUniversalProject**. (**Pliku, nowe, projekt** i następnie **pakietu Visual Studio C#, rozszerzalności,**). Dodaj **polecenia niestandardowego** szablonu elementu projektu (w Eksploratorze rozwiązań kliknij prawym przyciskiem myszy węzeł projektu, a następnie wybierz pozycję **Add / nowy element**, a następnie przejdź do **rozszerzalności**). Nadaj plikowi nazwę **TestUniversalProject**.  
+1. Utwórz projekt VSIX języka C# o nazwie **TestUniversalProject**. (**Pliku, nowe, projekt** i następnie **pakietu Visual Studio C#, rozszerzalności,**). Dodaj **polecenia niestandardowego** szablonu elementu projektu (w Eksploratorze rozwiązań kliknij prawym przyciskiem myszy węzeł projektu, a następnie wybierz pozycję **Add / nowy element**, a następnie przejdź do **rozszerzalności**). Nadaj plikowi nazwę **TestUniversalProject**.  
   
-2.  Dodaj odwołanie do Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll i Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll (w **rozszerzenia** sekcji).  
+2. Dodaj odwołanie do Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll i Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll (w **rozszerzenia** sekcji).  
   
-3.  Otwórz TestUniversalProject.cs i Dodaj następujący kod `using` instrukcji:  
+3. Otwórz TestUniversalProject.cs i Dodaj następujący kod `using` instrukcji:  
   
     ```csharp  
     using EnvDTE;  
@@ -42,7 +42,7 @@ Universal Windows apps to aplikacje, przeznaczonych dla Windows 8.1 i Windows Ph
     using System.Windows.Forms;  
     ```  
   
-4.  W klasie TestUniversalProject Dodaj pole prywatne wskazuje **dane wyjściowe** okna.  
+4. W klasie TestUniversalProject Dodaj pole prywatne wskazuje **dane wyjściowe** okna.  
   
     ```csharp  
     public sealed class TestUniversalProject   
@@ -52,7 +52,7 @@ Universal Windows apps to aplikacje, przeznaczonych dla Windows 8.1 i Windows Ph
     }  
     ```  
   
-5.  Ustaw odwołanie do okienka danych wyjściowych w Konstruktorze TestUniversalProject:  
+5. Ustaw odwołanie do okienka danych wyjściowych w Konstruktorze TestUniversalProject:  
   
     ```csharp  
     private TestUniversalProject(Package package)  
@@ -77,7 +77,7 @@ Universal Windows apps to aplikacje, przeznaczonych dla Windows 8.1 i Windows Ph
     }  
     ```  
   
-6.  Usuń istniejący kod z `ShowMessageBox` metody:  
+6. Usuń istniejący kod z `ShowMessageBox` metody:  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)   
@@ -85,7 +85,7 @@ Universal Windows apps to aplikacje, przeznaczonych dla Windows 8.1 i Windows Ph
     }  
     ```  
   
-7.  Pobierz obiekt DTE, którego użyto do kilku różnych celów, w tym przewodniku. Ponadto upewnij się, że rozwiązanie jest załadowany po kliknięciu przycisku menu.  
+7. Pobierz obiekt DTE, którego użyto do kilku różnych celów, w tym przewodniku. Ponadto upewnij się, że rozwiązanie jest załadowany po kliknięciu przycisku menu.  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -103,7 +103,7 @@ Universal Windows apps to aplikacje, przeznaczonych dla Windows 8.1 i Windows Ph
     }  
     ```  
   
-8.  Znajdź projektu udostępnionego. Udostępnionego projektu jest kontenerem czysty; Nie twórz ani tworzyć dane wyjściowe. Następującą metodę znajdzie pierwszy udostępnionego projektu w rozwiązaniu, wyszukując <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> obiekt, który ma zdolność projektu udostępnionego.  
+8. Znajdź projektu udostępnionego. Udostępnionego projektu jest kontenerem czysty; Nie twórz ani tworzyć dane wyjściowe. Następującą metodę znajdzie pierwszy udostępnionego projektu w rozwiązaniu, wyszukując <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> obiekt, który ma zdolność projektu udostępnionego.  
   
     ```csharp  
     private IVsHierarchy FindSharedProject()  
@@ -306,7 +306,7 @@ Universal Windows apps to aplikacje, przeznaczonych dla Windows 8.1 i Windows Ph
   
 ### <a name="manage-the-shared-items-in-the-platform-project"></a>Zarządzanie udostępnione elementy w projekcie platformy  
   
-1.  Znajdź elementy z udostępnionego projektu platformy. Elementy projektu udostępnionego są wyświetlane w projekcie platformy jako elementów udostępnionych. Nie widzisz ich w **Eksploratora rozwiązań**, ale możesz zapoznać się z hierarchii projektu, aby je znaleźć. Następującą metodę przedstawia hierarchię i zbiera wszystkie udostępnione elementy. Opcjonalnie wyświetla napis każdego elementu. Udostępnione elementy, które są identyfikowane przez nową właściwość <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7>.  
+1. Znajdź elementy z udostępnionego projektu platformy. Elementy projektu udostępnionego są wyświetlane w projekcie platformy jako elementów udostępnionych. Nie widzisz ich w **Eksploratora rozwiązań**, ale możesz zapoznać się z hierarchii projektu, aby je znaleźć. Następującą metodę przedstawia hierarchię i zbiera wszystkie udostępnione elementy. Opcjonalnie wyświetla napis każdego elementu. Udostępnione elementy, które są identyfikowane przez nową właściwość <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7>.  
   
     ```csharp  
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)  
@@ -338,7 +338,7 @@ Universal Windows apps to aplikacje, przeznaczonych dla Windows 8.1 i Windows Ph
     }  
     ```  
   
-2.  W `ShowMessageBox` metody, Dodaj następujący kod, aby zapoznać się z elementów hierarchii projektu platformy. Wstaw go wewnątrz `foreach` bloku.  
+2. W `ShowMessageBox` metody, Dodaj następujący kod, aby zapoznać się z elementów hierarchii projektu platformy. Wstaw go wewnątrz `foreach` bloku.  
   
     ```csharp  
     output.OutputStringThreadSafe("Walk the active platform project:\n");  
@@ -346,7 +346,7 @@ Universal Windows apps to aplikacje, przeznaczonych dla Windows 8.1 i Windows Ph
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, sharedItemIds, true, true);  
     ```  
   
-3.  Przeczytaj elementów udostępnionych. Udostępnione elementy, które pojawiają się w projekcie platformy jako ukryte pliki połączone i może odczytywać wszystkie właściwości zwykłych plików połączonych. Poniższy kod odczytuje pełną ścieżkę pierwszego elementu udostępnionych.  
+3. Przeczytaj elementów udostępnionych. Udostępnione elementy, które pojawiają się w projekcie platformy jako ukryte pliki połączone i może odczytywać wszystkie właściwości zwykłych plików połączonych. Poniższy kod odczytuje pełną ścieżkę pierwszego elementu udostępnionych.  
   
     ```csharp  
     var sharedItemId = sharedItemIds[0];  
@@ -355,7 +355,7 @@ Universal Windows apps to aplikacje, przeznaczonych dla Windows 8.1 i Windows Ph
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));  
     ```  
   
-4.  Teraz wypróbuj działanie rozwiązania. Naciśnij klawisz F5, aby uruchomić doświadczalne wystąpienie. Tworzenie projektu aplikacji uniwersalnej Centrum C# w doświadczalnym wystąpieniu (w **nowy projekt** okno dialogowe **Visual C# / Windows / systemu Windows 8 / Universal / aplikacja Centrum zawartości**) przejdź do **narzędzia** menu i kliknij przycisk **wywołania TestUniversalProject**, a następnie zaewidencjonuj tekst **dane wyjściowe** okienka. Powinien zostać wyświetlony podobny do poniższego:  
+4. Teraz wypróbuj działanie rozwiązania. Naciśnij klawisz F5, aby uruchomić doświadczalne wystąpienie. Tworzenie projektu aplikacji uniwersalnej Centrum C# w doświadczalnym wystąpieniu (w **nowy projekt** okno dialogowe **Visual C# / Windows / systemu Windows 8 / Universal / aplikacja Centrum zawartości**) przejdź do **narzędzia** menu i kliknij przycisk **wywołania TestUniversalProject**, a następnie zaewidencjonuj tekst **dane wyjściowe** okienka. Powinien zostać wyświetlony podobny do poniższego:  
   
     ```  
     Found shared project: HubApp.Shared  

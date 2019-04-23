@@ -8,32 +8,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 272d9bd9b1e54c6ff97b522375b773002e93dd49
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d57c06cbc465537e0ac523c8133a718369b5ea69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683145"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087797"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Obrazy i ikony dla programu Visual Studio
-##  <a name="BKMK_ImageUseInVisualStudio"></a> Użyj obrazu w programie Visual Studio
+## <a name="BKMK_ImageUseInVisualStudio"></a> Użyj obrazu w programie Visual Studio
  Przed utworzeniem kompozycji, należy wziąć pod uwagę podejmowanie użycie obrazów ponad 1000 w [Visual Studio Image Library](http://www.microsoft.com/en-my/download/details.aspx?id=35825).
 
 ### <a name="types-of-images"></a>Typy obrazów
 
--   **Ikony**. Małe obrazy, które pojawiają się w poleceń, hierarchii, szablonów i tak dalej. Domyślny rozmiar ikony używane w programie Visual Studio jest PNG 16 x 16. Automatycznie generowane przez usługę obraz ikony Generowanie formacie XAML obsługi HDPI.
+- **Ikony**. Małe obrazy, które pojawiają się w poleceń, hierarchii, szablonów i tak dalej. Domyślny rozmiar ikony używane w programie Visual Studio jest PNG 16 x 16. Automatycznie generowane przez usługę obraz ikony Generowanie formacie XAML obsługi HDPI.
 
      **UWAGA:** Gdy obrazy są używane w systemie menu, nie należy tworzyć ikony dla każdego polecenia. Zapoznaj się z [menu i poleceń dla programu Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) aby zobaczyć, czy polecenie powinna pojawić się ikony.
 
--   **Miniatury.** Obrazy używane w obszarze (wersja zapoznawcza) okno dialogowe, takich jak okna dialogowego Nowy projekt.
+- **Miniatury.** Obrazy używane w obszarze (wersja zapoznawcza) okno dialogowe, takich jak okna dialogowego Nowy projekt.
 
--   **Okno dialogowe obrazów.** Obrazy, które są wyświetlane w oknach dialogowych lub kreatory, jako opisowy grafiki lub wskaźników wiadomości. Użyj rzadko i tylko wtedy, gdy jest to niezbędne do zilustrowanie koncepcji trudne lub uzyskania uwagi użytkownika (alertów, ostrzeżenie).
+- **Okno dialogowe obrazów.** Obrazy, które są wyświetlane w oknach dialogowych lub kreatory, jako opisowy grafiki lub wskaźników wiadomości. Użyj rzadko i tylko wtedy, gdy jest to niezbędne do zilustrowanie koncepcji trudne lub uzyskania uwagi użytkownika (alertów, ostrzeżenie).
 
--   **Obrazy animowany.** Używane w wskaźniki postępu, paski stanu oraz operacji w oknach dialogowych.
+- **Obrazy animowany.** Używane w wskaźniki postępu, paski stanu oraz operacji w oknach dialogowych.
 
--   **Kursory.** Służy do wskazania, czy operacja jest dozwolona przy użyciu myszy, gdy obiekt mogą zostać odrzucone i tak dalej.
+- **Kursory.** Służy do wskazania, czy operacja jest dozwolona przy użyciu myszy, gdy obiekt mogą zostać odrzucone i tak dalej.
 
-##  <a name="BKMK_IconDesign"></a> Ikony projektu
+## <a name="BKMK_IconDesign"></a> Ikony projektu
 
 ### <a name="overview"></a>Omówienie
  Visual Studio używa współczesny styl ikony, które geometrii czyste i 50/50 saldo plus/minus (jasny/ciemny) i użyj metafory bezpośrednie i zrozumiałej. Ikona kluczowe znaczenie podczas projektowania Centrum punktów wokół uściślenia i uproszczenie i kontekstu.
@@ -210,19 +210,19 @@ ms.locfileid: "56683145"
 
 #### <a name="file-types"></a>Typy plików
 
--   **32-bitowych PNG:** preferowanym formacie ikon. Dane bezstratne kompresji formacie, który może przechowywać obraz rastrowych pojedynczego (w pikselach). 32-bitowe pliki PNG obsługują kanał alfa przezroczystości, korekcja gamma i przeplotu.
+- **32-bitowych PNG:** preferowanym formacie ikon. Dane bezstratne kompresji formacie, który może przechowywać obraz rastrowych pojedynczego (w pikselach). 32-bitowe pliki PNG obsługują kanał alfa przezroczystości, korekcja gamma i przeplotu.
 
--   **BMP 32-bitowe:** WPF innych kontrolek. Jest określana skrótem XP lub trybie high color, 32-bitowych BMP jest ma format obrazu RGB/A obrazem true kolor z przezroczystością kanał alfa. Kanał alfa jest warstwą przejrzystości umieszczoną w programie Adobe Photoshop, który następnie jest zapisywany w obrębie mapy bitowej jako dodatkowe (czwarty) kanału koloru. Czarne tło jest dodawany podczas produkcji kompozycji do wszystkich plików BMP 32-bitowych, aby zapewnić szybkie wizualną o głębi kolorów. To czarne tło reprezentuje obszar maskowane się w interfejsie użytkownika.
+- **BMP 32-bitowe:** WPF innych kontrolek. Jest określana skrótem XP lub trybie high color, 32-bitowych BMP jest ma format obrazu RGB/A obrazem true kolor z przezroczystością kanał alfa. Kanał alfa jest warstwą przejrzystości umieszczoną w programie Adobe Photoshop, który następnie jest zapisywany w obrębie mapy bitowej jako dodatkowe (czwarty) kanału koloru. Czarne tło jest dodawany podczas produkcji kompozycji do wszystkich plików BMP 32-bitowych, aby zapewnić szybkie wizualną o głębi kolorów. To czarne tło reprezentuje obszar maskowane się w interfejsie użytkownika.
 
--   **ICO 32-bitowe:** ikony projektu i Dodaj element. Wszystkie pliki ICO są true kolor 32-bitowy z przezroczystością kanał alfa (RGB/A). Ponieważ pliki ICO można przechowywać wiele wielkości i głębi kolorów, Vista ikony są często w formacie ICO zawierające 16 x 16, 32 x 32, 48 x 48 i rozmiary obrazów 256 x 256. Aby można było wyświetlać się poprawnie w Eksploratorze Windows, pliki ICO musi być zapisane w celu liczby 24-bitowego i 8-bitowych kolorów dla każdego rozmiaru obrazu.
+- **ICO 32-bitowe:** ikony projektu i Dodaj element. Wszystkie pliki ICO są true kolor 32-bitowy z przezroczystością kanał alfa (RGB/A). Ponieważ pliki ICO można przechowywać wiele wielkości i głębi kolorów, Vista ikony są często w formacie ICO zawierające 16 x 16, 32 x 32, 48 x 48 i rozmiary obrazów 256 x 256. Aby można było wyświetlać się poprawnie w Eksploratorze Windows, pliki ICO musi być zapisane w celu liczby 24-bitowego i 8-bitowych kolorów dla każdego rozmiaru obrazu.
 
--   **XAML:** powierzchni projektowania i definiowania Windows. Ikony XAML są plików obrazu opartego na wektorach, które obsługują skalowanie, obracanie, przesyłanie i przejrzystości. Nie są obecnie często używany w programie Visual Studio, ale stają się coraz bardziej popularne ze względu na ich elastyczność.
+- **XAML:** powierzchni projektowania i definiowania Windows. Ikony XAML są plików obrazu opartego na wektorach, które obsługują skalowanie, obracanie, przesyłanie i przejrzystości. Nie są obecnie często używany w programie Visual Studio, ale stają się coraz bardziej popularne ze względu na ich elastyczność.
 
--   **SVG**
+- **SVG**
 
--   **BMP 24-bitowego:** dla paska poleceń programu Visual Studio. Format obrazu true kolor RGB BMP 24-bitowego jest Konwencji ikonę, która tworzy warstwę przezroczystość przy użyciu amarantowy (R = 255, G = 0, B = 255) jako klucza kolorów dla warstwy przezroczystości przeciwstukowe w poziomie. W BMP 24-bitowego wszystkich powierzchni magenta są wyświetlane na kolor tła.
+- **BMP 24-bitowego:** dla paska poleceń programu Visual Studio. Format obrazu true kolor RGB BMP 24-bitowego jest Konwencji ikonę, która tworzy warstwę przezroczystość przy użyciu amarantowy (R = 255, G = 0, B = 255) jako klucza kolorów dla warstwy przezroczystości przeciwstukowe w poziomie. W BMP 24-bitowego wszystkich powierzchni magenta są wyświetlane na kolor tła.
 
--   **Obraz GIF 24-bitowego:** dla paska poleceń programu Visual Studio. True — kolor RGB obraz formacie, który obsługuje przezroczystość. Pliki GIF są często używane w Kreatorze kompozycji i animacji GIF.
+- **Obraz GIF 24-bitowego:** dla paska poleceń programu Visual Studio. True — kolor RGB obraz formacie, który obsługuje przezroczystość. Pliki GIF są często używane w Kreatorze kompozycji i animacji GIF.
 
 ### <a name="icon-construction"></a>Ikona tworzenia
  Najmniejszy rozmiar ikony w programie Visual Studio jest 16 x 16. Największy wspólne użycie jest 32 x 32. Należy pamiętać, nie w celu wypełnienia całe ramki 16 x 16, 24 x 24 lub 32 x 32 podczas projektowania ikony. Konstrukcja czytelny, jednolity ikona jest niezbędne do rozpoznawania użytkownika. Podczas kompilowania ikony, należy stosować się do następujących punktów.
@@ -244,18 +244,18 @@ ms.locfileid: "56683145"
 
  Aby uzyskać więcej informacji na temat używania kolorów w ikony programu Visual Studio, zobacz [przy użyciu koloru na obrazach](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages).
 
-##  <a name="BKMK_UsingColorInImages"></a> Przy użyciu koloru na obrazach
+## <a name="BKMK_UsingColorInImages"></a> Przy użyciu koloru na obrazach
 
 ### <a name="overview"></a>Omówienie
  Ikony w programie Visual Studio są głównie monochromatyczny. Kolor jest zarezerwowana do przekazywania określonych informacji i nigdy nie dla dekoracji. Kolor jest używany:
 
--   Aby wskazać akcję
+- Aby wskazać akcję
 
--   aby ostrzec użytkownika powiadomienia o stanie
+- aby ostrzec użytkownika powiadomienia o stanie
 
--   Aby wyznaczyć przynależności języka
+- Aby wyznaczyć przynależności języka
 
--   do odróżniania elementów w obrębie funkcji IntelliSense
+- do odróżniania elementów w obrębie funkcji IntelliSense
 
 ### <a name="accessibility"></a>Ułatwienia dostępu
  Wytycznych dotyczących zgodności programu Visual Studio wymagają, że wszystkie ikony zaznaczone pole wyboru do produktu — dostęp próbny wymagania dotyczące ułatwień dostępu dla koloru i kontrast. Kolory z palety języka visual zostały przetestowane i spełniają te wymagania.

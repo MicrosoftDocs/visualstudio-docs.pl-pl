@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ac7771e657b546fdfced7033067d6de26256b96
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28cc20d00a9846fa119666b01aea2efab3a128ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335652"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066419"
 ---
 # <a name="project-subtypes-design"></a>Projektowanie podtypów projektów
 
@@ -23,11 +23,11 @@ Podtypy projektów umożliwiają pakietów VSPackage rozszerzanie projektów opa
 
  Poniższe tematy przedstawiają szczegółowo, podstawowe projektowania i implementowania podtypy projektów:
 
--   Podtypu projektu.
+- Podtypu projektu.
 
--   Wielopoziomowe agregacji.
+- Wielopoziomowe agregacji.
 
--   Obsługa interfejsów.
+- Obsługa interfejsów.
 
 ## <a name="project-subtype-design"></a>Podtypu projektu
 
@@ -73,11 +73,11 @@ Podtypy projektów Dodatkowo można rozszerzyć systemu podstawowego projektu, r
 
 Implementacji podtypu projektu, który otacza niższe podtypu projektu musi programowane wspólne umożliwia podtypu projektu wewnętrznego działać prawidłowo. Lista programowania obowiązki obejmuje:
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Implementacji podtyp projektu, do którego jest zawijany wewnętrzny podtyp musi delegować do <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implementacji podtypu projektu wewnętrznego dla obu <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> metody.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Implementacji podtyp projektu, do którego jest zawijany wewnętrzny podtyp musi delegować do <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implementacji podtypu projektu wewnętrznego dla obu <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> metody.
 
--   <xref:EnvDTE80.IInternalExtenderProvider> Implementacji podtypu projektu otoki musi delegować, jego podtypu projektu wewnętrznego. W szczególności wykonania <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> musi uzyskać ciąg nazwy z podtypu projektu wewnętrzny i następnie ciągów chce, aby dodać jako urządzenia Extender.
+- <xref:EnvDTE80.IInternalExtenderProvider> Implementacji podtypu projektu otoki musi delegować, jego podtypu projektu wewnętrznego. W szczególności wykonania <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> musi uzyskać ciąg nazwy z podtypu projektu wewnętrzny i następnie ciągów chce, aby dodać jako urządzenia Extender.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> Utworzyć implementacji podtypu projektu otoki <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> obiekt wewnętrzny jego podtypu projektu i przytrzymaj go jako Delegat prywatny, ponieważ tylko obiekt konfiguracji projektu podstawowego projektu bezpośrednio wie, że otoki istnieje obiekt konfiguracji podtypu projektu. Podtypu projektu zewnętrznego można początkowo wybrać interfejsy konfiguracji, które chce obsługiwać bezpośrednio, a następnie poprzez delegowanie przekazać rest podtypu projektu wewnętrznej implementacji <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> Utworzyć implementacji podtypu projektu otoki <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> obiekt wewnętrzny jego podtypu projektu i przytrzymaj go jako Delegat prywatny, ponieważ tylko obiekt konfiguracji projektu podstawowego projektu bezpośrednio wie, że otoki istnieje obiekt konfiguracji podtypu projektu. Podtypu projektu zewnętrznego można początkowo wybrać interfejsy konfiguracji, które chce obsługiwać bezpośrednio, a następnie poprzez delegowanie przekazać rest podtypu projektu wewnętrznej implementacji <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.
 
 ## <a name="supporting-interfaces"></a>Obsługa interfejsów
 

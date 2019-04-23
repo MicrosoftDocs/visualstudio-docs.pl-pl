@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a949ee781652c3e19b3ebc3476e736374fe4f21
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4bf492c866a43a0098fbcad5660a19c57fc90a3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634321"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071547"
 ---
 # <a name="how-to-programmatically-print-visio-documents"></a>Instrukcje: Programowe drukowanie dokumentów programu Visio
   Można wydrukować pełną dokumentu Microsoft Visio pakietu Office lub określonej strony.
@@ -29,7 +29,7 @@ ms.locfileid: "56634321"
 
 ### <a name="to-print-a-complete-document"></a>Aby wydrukować pełnego dokumentu
 
--   Wywołaj `Microsoft.Office.Interop.Visio.Document.Print` metody `Microsoft.Office.Interop.Visio.Document` obiekt, który chcesz wydrukować.
+- Wywołaj `Microsoft.Office.Interop.Visio.Document.Print` metody `Microsoft.Office.Interop.Visio.Document` obiekt, który chcesz wydrukować.
 
      Poniższy przykład kodu Drukuje aktywny dokument. Aby użyć tego przykładu, należy uruchomić kod z `ThisAddIn` klasy w projekcie.
 
@@ -40,7 +40,7 @@ ms.locfileid: "56634321"
 
 ### <a name="to-print-a-page-of-a-document"></a>Aby wydrukować stronę dokumentu
 
--   Wywołaj `Microsoft.Office.Interop.Visio.Pages.Print` metody `Microsoft.Office.Interop.Visio.Pages` obiekt, który chcesz wydrukować.
+- Wywołaj `Microsoft.Office.Interop.Visio.Pages.Print` metody `Microsoft.Office.Interop.Visio.Pages` obiekt, który chcesz wydrukować.
 
      Poniższy przykład kodu Drukuje aktywny dokument pierwszej strony. Aby użyć tego przykładu, należy uruchomić kod z `ThisAddIn` klasy w projekcie.
 

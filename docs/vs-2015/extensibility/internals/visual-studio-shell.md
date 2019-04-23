@@ -11,12 +11,12 @@ ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 31afa6229a7eeb39c146d40992effd8969e76725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ec79aab58e167ff2c935317897ba10a042a2e5a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770370"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065548"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ ms.locfileid: "54770370"
   
 - Zaznaczenie całego powłoki śledzenia, kontekstu i waluty. Powłoka śledzi następujące elementy:  
   
-  -   Bieżący projekt  
+  - Bieżący projekt  
   
-  -   Bieżący element projektu lub bieżący identyfikator elementu <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+  - Bieżący element projektu lub bieżący identyfikator elementu <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-  -   Bieżące zaznaczenie dla **właściwości** okna lub `SelectionContainer`  
+  - Bieżące zaznaczenie dla **właściwości** okna lub `SelectionContainer`  
   
-  -   Kontekstu interfejsu użytkownika lub identyfikatory CmdUIGuids, który kontrolowanie widoczności elementu polecenia, menu i paski narzędzi  
+  - Kontekstu interfejsu użytkownika lub identyfikatory CmdUIGuids, który kontrolowanie widoczności elementu polecenia, menu i paski narzędzi  
   
-  -   Aktualnie aktywnych elementów, takich jak aktywne okno dokumentu i menedżera cofania  
+  - Aktualnie aktywnych elementów, takich jak aktywne okno dokumentu i menedżera cofania  
   
-  -   Atrybuty kontekstu użytkownika, które dysku dynamiczna pomoc  
+  - Atrybuty kontekstu użytkownika, które dysku dynamiczna pomoc  
   
   Powłoka pośredniczy również komunikację między bieżącym usług i zainstalowanych pakietów VSPackage. Obsługuje podstawowe funkcje powłoki i udostępnienie ich dla wszystkich pakietów VSPackage zintegrowane w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Te podstawowe funkcje obejmują następujące elementy:  
   

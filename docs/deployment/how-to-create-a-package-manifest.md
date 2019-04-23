@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd678d7db2a3af56a89756f65f8f7b98ef1e37a6
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: d8083ca9a8d3025b1760edde96279a0cd557f722
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58567805"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071251"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Instrukcje: Tworzenie manifestu pakietu
 Aby wdrożyć wymagania wstępne dotyczące aplikacji, można użyć pakietu programu inicjującego. Pakiet programu inicjującego zawiera pojedynczy plik manifestu produktu ale manifest pakietu dla poszczególnych ustawień regionalnych. Zestawu funkcji wspólnych w różnych wersjach zlokalizowanych powinny należeć do manifestu produktu.
@@ -34,13 +34,13 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można użyć pakietu pro
 
 #### <a name="to-create-the-package-manifest"></a>Aby utworzyć manifest pakietu
 
-1.  Utwórz katalog dla pakietu programu inicjującego. W tym przykładzie użyto *C:\package*.
+1. Utwórz katalog dla pakietu programu inicjującego. W tym przykładzie użyto *C:\package*.
 
-2.  Utwórz podkatalog o nazwie ustawień regionalnych, takich jak *en* w języku angielskim.
+2. Utwórz podkatalog o nazwie ustawień regionalnych, takich jak *en* w języku angielskim.
 
-3.  W programie Visual Studio, należy utworzyć plik XML, który nosi nazwę *package.xml*i zapisać go w celu *C:\package\en* folderu.
+3. W programie Visual Studio, należy utworzyć plik XML, który nosi nazwę *package.xml*i zapisać go w celu *C:\package\en* folderu.
 
-4.  Dodaj kod XML, aby wyświetlić listę Nazwa pakietu programu inicjującego, kultura tego manifestu pakietu zlokalizowane i umowę licencyjną opcjonalne. Następujący kod XML używa zmiennych `DisplayName` i `Culture`, które są określone w elemencie nowsze.
+4. Dodaj kod XML, aby wyświetlić listę Nazwa pakietu programu inicjującego, kultura tego manifestu pakietu zlokalizowane i umowę licencyjną opcjonalne. Następujący kod XML używa zmiennych `DisplayName` i `Culture`, które są określone w elemencie nowsze.
 
     ```xml
     <Package
@@ -50,7 +50,7 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można użyć pakietu pro
         LicenseAgreement="eula.txt">
     ```
 
-5.  Dodaj kod XML, aby wyświetlić listę wszystkich plików, które znajdują się w katalogu specyficzny dla ustawień regionalnych. Następujący kod XML, używany jest plik o nazwie *eula.txt* który jest odpowiedni dla **en** ustawień regionalnych.
+5. Dodaj kod XML, aby wyświetlić listę wszystkich plików, które znajdują się w katalogu specyficzny dla ustawień regionalnych. Następujący kod XML, używany jest plik o nazwie *eula.txt* który jest odpowiedni dla **en** ustawień regionalnych.
 
     ```xml
     <PackageFiles>
@@ -58,7 +58,7 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można użyć pakietu pro
     </PackageFiles>
     ```
 
-6.  Dodaj kod XML do definiowania możliwych do zlokalizowania ciągi dla pakietu programu inicjującego. Następujący kod XML dodaje ciągi błędów dla **en** ustawień regionalnych.
+6. Dodaj kod XML do definiowania możliwych do zlokalizowania ciągi dla pakietu programu inicjującego. Następujący kod XML dodaje ciągi błędów dla **en** ustawień regionalnych.
 
     ```xml
       <Strings>
@@ -71,7 +71,7 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można użyć pakietu pro
     </Strings>
     ```
 
-7.  Kopiuj *C:\package* folder w katalogu program inicjujący Instalatora programu Visual Studio. W przypadku programu Visual Studio 2010, jest *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages* katalogu.
+7. Kopiuj *C:\package* folder w katalogu program inicjujący Instalatora programu Visual Studio. W przypadku programu Visual Studio 2010, jest *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages* katalogu.
 
 ## <a name="example"></a>Przykład
  Manifest pakietu zawiera informacje specyficzne dla ustawień regionalnych, takie jak komunikaty o błędach, postanowienia licencyjne dotyczące oprogramowania i pakietów językowych.

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 4caf96c841b794a76a7aba35f9c8ca302de6e885
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cdbf5fa21c8fcf9069db9a7348d4ed576fc342c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923333"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065886"
 ---
 # <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Instrukcje: Debugowanie kodu XAML za pomocą Projektanta przepływu pracy
 
@@ -24,15 +24,15 @@ Przepływy pracy są definiowane zgodnie z XAML. Reprezentacja interfejsu użytk
 
 ## <a name="to-debug-workflow-xaml"></a>Aby debugować przepływ pracy XAML
 
-1.  Otwórz projekt przepływu pracy lub działania w programie Visual Studio.
+1. Otwórz projekt przepływu pracy lub działania w programie Visual Studio.
 
-2.  Ustawianie punktu przerwania działania lub działania, który chcesz debugować, zgodnie z opisem w [jak: Ustawianie punktów przerwania w przepływach pracy](../workflow-designer/how-to-set-breakpoints-in-workflows.md).
+2. Ustawianie punktu przerwania działania lub działania, który chcesz debugować, zgodnie z opisem w [jak: Ustawianie punktów przerwania w przepływach pracy](../workflow-designer/how-to-set-breakpoints-in-workflows.md).
 
-3.  Kliknij prawym przyciskiem myszy plik .xaml, który zawiera definicję przepływu pracy i wybierz **Wyświetl kod**. Widoczne będą wyświetlane w tym samym wierszu co deklaracja elementu XAML działanie, które można ustawić punkt przerwania w w widoku Projekt punktu przerwania.
+3. Kliknij prawym przyciskiem myszy plik .xaml, który zawiera definicję przepływu pracy i wybierz **Wyświetl kod**. Widoczne będą wyświetlane w tym samym wierszu co deklaracja elementu XAML działanie, które można ustawić punkt przerwania w w widoku Projekt punktu przerwania.
 
-4.  Wywoływanie debugera, zgodnie z opisem w [debugowania przepływów pracy](debugging-workflows-with-the-workflow-designer.md).
+4. Wywoływanie debugera, zgodnie z opisem w [debugowania przepływów pracy](debugging-workflows-with-the-workflow-designer.md).
 
-5.  Podczas wykonywania kodu osiągną jeden z punktów przerwania, zostanie wyróżniony element XAML skojarzone z tego punktu przerwania. Aby przejść do następnego punktu przerwania, należy użyć **F10** lub **F11** klucza.
+5. Podczas wykonywania kodu osiągną jeden z punktów przerwania, zostanie wyróżniony element XAML skojarzone z tego punktu przerwania. Aby przejść do następnego punktu przerwania, należy użyć **F10** lub **F11** klucza.
 
 ## <a name="see-also"></a>Zobacz także
 

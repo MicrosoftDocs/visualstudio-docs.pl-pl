@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7f6f2fb35e4f0500e97cf762152955a3f4e5c10
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 45cb15a81f7f8f74ab17bf22ce52aca48a90aea9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655040"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063104"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Przewodnik: Używanie XSLT IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ W tym instruktażu pokazano, jak za pomocą automatycznego uzupełniania wartoś
   
 ### <a name="to-use-intellisense-in-the-name-attribute-of-xslwith-param-and-xslcall-template-elements"></a>Można użyć funkcji IntelliSense w atrybut name elementu xsl: z param i Call-szablonu elementów  
   
-1.  Utwórz nowy plik XSLT i skopiuj poniższy kod:  
+1. Utwórz nowy plik XSLT i skopiuj poniższy kod:  
   
     ```  
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
@@ -47,7 +47,7 @@ W tym instruktażu pokazano, jak za pomocą automatycznego uzupełniania wartoś
     </xsl:stylesheet>  
     ```  
   
-2.  Ustaw kursor po `<xsl:template name="msg23" match="msg23">` i naciśnij klawisz ENTER. Następnie zacznij pisać następujące `xsl:call-template` elementu:  
+2. Ustaw kursor po `<xsl:template name="msg23" match="msg23">` i naciśnij klawisz ENTER. Następnie zacznij pisać następujące `xsl:call-template` elementu:  
   
     ```  
     <xsl:call-template name="localized-message">  
@@ -56,7 +56,7 @@ W tym instruktażu pokazano, jak za pomocą automatycznego uzupełniania wartoś
   
      Zostanie wyświetlona lista nazwy szablonów w `name=""` atrybutu `xsl:call-template` elementu podczas wpisywania.  
   
-3.  Ustaw kursor po `<xsl:call-template name="localized-message">` i naciśnij klawisz ENTER. Następnie zacznij pisać następujące `xsl:with-param` elementu:  
+3. Ustaw kursor po `<xsl:call-template name="localized-message">` i naciśnij klawisz ENTER. Następnie zacznij pisać następujące `xsl:with-param` elementu:  
   
     ```  
     <xsl:with-param name="msgcode">msg23</xsl:with-param>  
@@ -66,7 +66,7 @@ W tym instruktażu pokazano, jak za pomocą automatycznego uzupełniania wartoś
   
 ### <a name="to-use-intellisense-in-the-mode-attribute-of-an-xslapply-templates-element"></a>Aby korzystać z technologii IntelliSense w atrybucie tryb XSL: Zastosuj szablony elementu  
   
-1.  Utwórz nowy plik XSLT i skopiuj poniższy kod:  
+1. Utwórz nowy plik XSLT i skopiuj poniższy kod:  
   
     ```  
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
@@ -113,7 +113,7 @@ W tym instruktażu pokazano, jak za pomocą automatycznego uzupełniania wartoś
     </xsl:stylesheet>  
     ```  
   
-2.  Ustaw kursor po `<xsl:apply-templates select="phone" />` i naciśnij klawisz ENTER. Następnie zacznij pisać następujące `xsl: apply-templates` elementu:  
+2. Ustaw kursor po `<xsl:apply-templates select="phone" />` i naciśnij klawisz ENTER. Następnie zacznij pisać następujące `xsl: apply-templates` elementu:  
   
     ```  
     <xsl:apply-templates select="phone"  mode="accountNumber">  
@@ -123,7 +123,7 @@ W tym instruktażu pokazano, jak za pomocą automatycznego uzupełniania wartoś
   
 ### <a name="to-use-intellisense-in-the-stylesheet-prefix-and-result-prefix-attributes-of-an-xslnamespace-alias-element"></a>Aby użyć funkcji IntelliSense w atrybuty prefiks arkusza stylów i wynik prefiks XSL: namespace-alias elementu  
   
-1.  Utwórz nowy plik XSLT i skopiuj poniższy kod:  
+1. Utwórz nowy plik XSLT i skopiuj poniższy kod:  
   
     ```  
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate"  
@@ -154,7 +154,7 @@ W tym instruktażu pokazano, jak za pomocą automatycznego uzupełniania wartoś
     </xsl:stylesheet>  
     ```  
   
-2.  Ustaw kursor po `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` i naciśnij klawisz ENTER. Następnie zacznij pisać następujące `xsl:namespace-alias` elementu:  
+2. Ustaw kursor po `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` i naciśnij klawisz ENTER. Następnie zacznij pisać następujące `xsl:namespace-alias` elementu:  
   
     ```  
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>  

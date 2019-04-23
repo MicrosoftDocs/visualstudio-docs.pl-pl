@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2266cae99336b1ab56131feee9aa96852746b73b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2d8ecd09487248b4c4be05b354133c710febf30
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801911"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076201"
 ---
 # <a name="securing-clickonce-applications"></a>Zabezpieczanie aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,11 +79,11 @@ ms.locfileid: "54801911"
 ## <a name="deploying-obfuscated-assemblies"></a>Wdrażanie zestawów zasłoniętych  
  Można zasłonić swoją aplikację, używając narzędzia Dotfuscator, aby uniemożliwić innym osobom odtworzenie kodu. Jednak funkcja zasłaniania zestawu nie jest zintegrowana ze środowiskiem IDE programu Visual Studio i procesem wdrażania technologii ClickOnce. Dlatego zasłanianie trzeba będzie wykonać poza procesem wdrażania, być może w ramach kroków wykonywanych po kompilacji. Po skompilowaniu projektu można wykonać następujące kroki ręcznie poza programem Visual Studio:  
   
-1.  Wykonaj zasłanianie przy użyciu narzędzia Dotfuscator.  
+1. Wykonaj zasłanianie przy użyciu narzędzia Dotfuscator.  
   
-2.  Użyj programu Mage.exe lub MageUI.exe, aby wygenerować manifesty technologii ClickOnce i je podpisać. Aby uzyskać więcej informacji, zobacz [Mage.exe (Manifest Generation i narzędzia do edytowania)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) i [MageUI.exe (Manifest Generation i graficzny klient Editing Tool)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+2. Użyj programu Mage.exe lub MageUI.exe, aby wygenerować manifesty technologii ClickOnce i je podpisać. Aby uzyskać więcej informacji, zobacz [Mage.exe (Manifest Generation i narzędzia do edytowania)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) i [MageUI.exe (Manifest Generation i graficzny klient Editing Tool)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
-3.  Ręcznie opublikuj (skopiuj) pliki do lokalizacji źródła wdrożenia (serwer sieci Web, udział UNC lub dysk CD-ROM).  
+3. Ręcznie opublikuj (skopiuj) pliki do lokalizacji źródła wdrożenia (serwer sieci Web, udział UNC lub dysk CD-ROM).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)   

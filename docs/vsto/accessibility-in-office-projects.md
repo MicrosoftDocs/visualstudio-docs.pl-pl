@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e35819371a751aa8047adbacd77f55ea257831a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a54c9d5322b35092d635edd00e3b200ee67997a9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944978"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070046"
 ---
 # <a name="accessibility-in-office-projects"></a>Ułatwienia dostępu w projektach pakietu Office
 
@@ -40,21 +40,21 @@ W większości przypadków projektów pakietu Office w Visual Studio spełnia u�
 
 #### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>Aby wyświetlić klawisze skrótów dla karty Wstążki i formantów w Projektancie
 
-1.  W programie Visual Studio na **narzędzia** menu, kliknij przycisk **opcje**.
+1. W programie Visual Studio na **narzędzia** menu, kliknij przycisk **opcje**.
 
-2.  Rozwiń **narzędzia Office** , a następnie wybierz węzeł **klawiatura programu Microsoft Office Excel** lub **klawiatura programu Microsoft Office Word**, odpowiednio.
+2. Rozwiń **narzędzia Office** , a następnie wybierz węzeł **klawiatura programu Microsoft Office Excel** lub **klawiatura programu Microsoft Office Word**, odpowiednio.
 
-3.  Wybierz **dynamiczny schemat klawiatury**.
+3. Wybierz **dynamiczny schemat klawiatury**.
 
      Pojawi się komunikat z informacją, że należy ponownie uruchomić Visual Studio aby zmiany zaczęły obowiązywać.
 
-4.  Kliknij przycisk **OK**.
+4. Kliknij przycisk **OK**.
 
-5.  Uruchom ponownie program Visual Studio i otwórz ponownie projekt.
+5. Uruchom ponownie program Visual Studio i otwórz ponownie projekt.
 
-6.  Otwórz dokument lub skoroszyt, Projektant projektu.
+6. Otwórz dokument lub skoroszyt, Projektant projektu.
 
-7.  Naciśnij klawisz **F6** spowoduje wyświetlanie klawiszy skrótów dla wstążki.
+7. Naciśnij klawisz **F6** spowoduje wyświetlanie klawiszy skrótów dla wstążki.
 
 ## <a name="accessibility-at-runtime"></a>Ułatwienia dostępu w czasie wykonywania
 

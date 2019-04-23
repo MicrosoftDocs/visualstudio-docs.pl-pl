@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5941dec4b21e044873a2ae95ae7682867b4bd67
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3dd516151f7a3656da1bae195870e8cc29528cfa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037021"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075249"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Instrukcje: Weryfikacja właściwości ustawień IIS
 
@@ -37,11 +37,11 @@ Można ustawić właściwości dla aplikacji sieci Web za pomocą narzędzia adm
 
 1. Otwórz **narzędzia administracyjne** okna: Na **Start** menu wskaż **programy**, a następnie kliknij przycisk **narzędzia administracyjne**. Jeśli **narzędzia administracyjne** nie jest widoczna w **programy** menu, a następnie wyszukaj go w **Panelu sterowania**.
 
-   -   W systemie operacyjnym Windows 2000, wybierz **Menedżera internetowych usług**.
+   - W systemie operacyjnym Windows 2000, wybierz **Menedżera internetowych usług**.
 
-   -   Windows XP, należy wybrać **Internetowe usługi informacyjne**.
+   - Windows XP, należy wybrać **Internetowe usługi informacyjne**.
 
-   -   W systemie Windows Server 2003, kliknij dwukrotnie **Zarządzanie serwerem**.
+   - W systemie Windows Server 2003, kliknij dwukrotnie **Zarządzanie serwerem**.
 
         **Zarządzanie serwerem** zostanie otwarte okno. W obszarze **serwera aplikacji**, kliknij przycisk **zarządzać tym serwerem aplikacji**.
 
@@ -53,23 +53,23 @@ Można ustawić właściwości dla aplikacji sieci Web za pomocą narzędzia adm
 
 4. Sprawdź ustawienia zabezpieczeń dla aplikacji sieci Web:
 
-   1.  W aplikacji sieci Web **właściwości** okna, kliknij przycisk **zabezpieczeń katalogu** kartę, a następnie kliknij przycisk **Edytuj**.
+   1. W aplikacji sieci Web **właściwości** okna, kliknij przycisk **zabezpieczeń katalogu** kartę, a następnie kliknij przycisk **Edytuj**.
 
-   2.  W **metod uwierzytelniania** okno dialogowe, wybierz opcję **Włącz dostęp anonimowy** i **uwierzytelniania zintegrowanego Windows** Jeśli nie są jeszcze wybrane.
+   2. W **metod uwierzytelniania** okno dialogowe, wybierz opcję **Włącz dostęp anonimowy** i **uwierzytelniania zintegrowanego Windows** Jeśli nie są jeszcze wybrane.
 
-   3.  Kliknij przycisk **OK** zamknąć **metod uwierzytelniania** okno dialogowe.
+   3. Kliknij przycisk **OK** zamknąć **metod uwierzytelniania** okno dialogowe.
 
 5. Dla aplikacji serwera ATL. Sprawdź, czy czasownik DEBUG jest skojarzony z rozszerzenia ISAPI. Aby uzyskać więcej informacji, zobacz [jak: Skojarz czasownik DEBUG z rozszerzeniem](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
 
 6. Aby uzyskać [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji, sprawdź folder wirtualny dla aplikacji ma nazwę aplikacji w **Menedżera usług Internet Information Services (IIS)**, **Menedżera internetowych usług** lub  **Internetowe usługi informacyjne**.
 
-   1.  W aplikacji sieci Web **właściwości** wybierz **katalogu** kartę, jeśli aplikacja znajduje się w katalogu wirtualnym lub **katalog macierzysty** kartę, jeśli aplikacja znajduje się w Witryna sieci Web.
+   1. W aplikacji sieci Web **właściwości** wybierz **katalogu** kartę, jeśli aplikacja znajduje się w katalogu wirtualnym lub **katalog macierzysty** kartę, jeśli aplikacja znajduje się w Witryna sieci Web.
 
-   2.  Upewnij się, że nazwa w **ścieżkę lokalną** jest zgodna z nazwą katalogu, w którym aplikacja została faktycznie wdrożona.
+   2. Upewnij się, że nazwa w **ścieżkę lokalną** jest zgodna z nazwą katalogu, w którym aplikacja została faktycznie wdrożona.
 
-   3.  W obszarze **ustawienia aplikacji**, wpisz nazwę katalogu głównego, który zawiera aplikację.
+   3. W obszarze **ustawienia aplikacji**, wpisz nazwę katalogu głównego, który zawiera aplikację.
 
-   4.  Kliknij przycisk **OK** zamknąć **właściwości** okno dialogowe.
+   4. Kliknij przycisk **OK** zamknąć **właściwości** okno dialogowe.
 
 7. Dla [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji, kliknij przycisk **ASP.NET** kartę i sprawdź, czy poprawną wersję [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] jest określony.
 

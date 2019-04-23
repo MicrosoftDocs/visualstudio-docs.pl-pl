@@ -14,12 +14,12 @@ caps.latest.revision: 58
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f903ddbf82686846298e21765e405d939f11e1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e0ac9d085a837ab3ab05754ce70d853112bc48d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754821"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096520"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Przewodnik: Identyfikowanie problemów z wydajnością
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ W tym instruktażu przedstawiono sposób profilu aplikacji można zidentyfikowa�
   
  W tym instruktażu będą wykonaj następujące kroki:  
   
--   Profil aplikacji przy użyciu metody próbkowania.  
+- Profil aplikacji przy użyciu metody próbkowania.  
   
--   Analizuj próbkowanych wyniki profilowania, aby zlokalizować i rozwiązać problem z wydajnością.  
+- Analizuj próbkowanych wyniki profilowania, aby zlokalizować i rozwiązać problem z wydajnością.  
   
--   Profil aplikacji przy użyciu metody instrumentacji.  
+- Profil aplikacji przy użyciu metody instrumentacji.  
   
--   Analizuj instrumentowanych wyniki profilowania, aby zlokalizować i rozwiązać problem z wydajnością.  
+- Analizuj instrumentowanych wyniki profilowania, aby zlokalizować i rozwiązać problem z wydajnością.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
   
@@ -51,29 +51,29 @@ W tym instruktażu przedstawiono sposób profilu aplikacji można zidentyfikowa�
   
 #### <a name="to-profile-an-application-by-using-the-sampling-method"></a>Aby profilować aplikację przy użyciu metody próbkowania  
   
-1.  Otwórz [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] z uprawnieniami administratora. Uruchomione z uprawnieniami administratora jest wymagana dla profilowania.  
+1. Otwórz [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] z uprawnieniami administratora. Uruchomione z uprawnieniami administratora jest wymagana dla profilowania.  
   
-2.  Otwórz rozwiązanie peopletrax —.  
+2. Otwórz rozwiązanie peopletrax —.  
   
      Rozwiązanie peopletrax — teraz wypełnia Eksploratora rozwiązań.  
   
-3.  Ustawienia projektu konfiguracji **wersji**.  
+3. Ustawienia projektu konfiguracji **wersji**.  
   
      Należy użyć kompilację wydania do wykrywania problemów z wydajnością w aplikacji. Kompilację wydania jest zalecane w przypadku profilowania, ponieważ Kompilacja debugowania ma dodatkowe skompilowane do niego informacje, które może niekorzystnie wpłynąć na wydajność i nie pokazują problemy z wydajnością, dokładnie.  
   
-4.  Na **analizy** menu, kliknij przycisk **Uruchom Kreatora wydajności**.  
+4. Na **analizy** menu, kliknij przycisk **Uruchom Kreatora wydajności**.  
   
      Zostanie wyświetlony Kreator wydajności.  
   
-5.  Upewnij się, że **próbkowania Procesora (zalecane)** jest zaznaczone, a następnie kliknij przycisk **dalej**.  
+5. Upewnij się, że **próbkowania Procesora (zalecane)** jest zaznaczone, a następnie kliknij przycisk **dalej**.  
   
-6.  W **aplikacji, które chcesz docelowe dla profilowania**peopletrax — wybierz, a następnie kliknij przycisk **dalej**.  
+6. W **aplikacji, które chcesz docelowe dla profilowania**peopletrax — wybierz, a następnie kliknij przycisk **dalej**.  
   
      [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] tworzy projekt i uruchamia profilowanie aplikacji. **Peopletrax —** pojawi się okno aplikacji.  
   
-7.  Kliknij przycisk **Pobierz osoby**.  
+7. Kliknij przycisk **Pobierz osoby**.  
   
-8.  Kliknij przycisk **ExportData**.  
+8. Kliknij przycisk **ExportData**.  
   
      Notatnik otwiera i wyświetla nowy plik, który zawiera wyeksportowane dane z **peopletrax —**.  
   
@@ -83,23 +83,23 @@ W tym instruktażu przedstawiono sposób profilu aplikacji można zidentyfikowa�
   
 #### <a name="to-analyze-sampled-profiling-results"></a>Aby analizować próbkowane wyniki profilowania  
   
-1.  Widok podsumowania przedstawia oś czasu użycia procesora CPU w trakcie profilowania, **ścieżka aktywna** listy, który reprezentuje gałęzi drzewa wywołań aplikacji, która był najbardziej aktywna i listę  **Działa w sposób najbardziej samodzielnej pracy** pokazujący funkcje, które zostały poddane próbkowaniu największe obciążenie podczas wykonywania kodu w treści funkcji.  
+1. Widok podsumowania przedstawia oś czasu użycia procesora CPU w trakcie profilowania, **ścieżka aktywna** listy, który reprezentuje gałęzi drzewa wywołań aplikacji, która był najbardziej aktywna i listę  **Działa w sposób najbardziej samodzielnej pracy** pokazujący funkcje, które zostały poddane próbkowaniu największe obciążenie podczas wykonywania kodu w treści funkcji.  
   
      Sprawdź **ścieżka aktywna** listy i Zauważ, że metoda PeopleNS.People.GetNames funkcja peopletrax — najbliższe końca listy. Jego pozycja sprawia, że dobrym kandydatem do analizy. Kliknij nazwę funkcji, aby wyświetlić szczegóły GetNames w **Szczegóły funkcji** widoku.  
   
-2.  **Szczegóły funkcji** widok zawiera dwa okna. Okno podziału kosztów zawiera graficzne przedstawienie pracy wykonanej przez funkcję, pracy wykonanej przez funkcje, które go wywołały i wkład funkcje, które wywołały funkcję, aby liczba wystąpień, które zostały poddane próbkowaniu. Możesz zmienić funkcję, która jest celem widoku, klikając nazwę funkcji. Na przykład możesz kliknąć PeopleNS.People.GetPeople się GetPeople wybranej funkcji.  
+2. **Szczegóły funkcji** widok zawiera dwa okna. Okno podziału kosztów zawiera graficzne przedstawienie pracy wykonanej przez funkcję, pracy wykonanej przez funkcje, które go wywołały i wkład funkcje, które wywołały funkcję, aby liczba wystąpień, które zostały poddane próbkowaniu. Możesz zmienić funkcję, która jest celem widoku, klikając nazwę funkcji. Na przykład możesz kliknąć PeopleNS.People.GetPeople się GetPeople wybranej funkcji.  
   
      **Widok kodu funkcji** okno zawiera kod źródłowy funkcji, jeśli jest dostępny i wyróżnia najbardziej kosztowne wiersze w wybranej funkcji. Po wybraniu GetNames widać, ta funkcja odczytuje ciąg z zasobów aplikacji, a następnie używa <xref:System.IO.StringReader> można dodać każdy wiersz w ciągu, aby <xref:System.Collections.ArrayList>. Brak można w sposób jednoznaczny zoptymalizować tę funkcję.  
   
-3.  Ponieważ PeopleNS.People.GetPeople jest tylko obiekt wywołujący GetNames, kliknij przycisk GetPeople w okno podziału kosztów, aby zbadać jego kod. Ta metoda zwraca <xref:System.Collections.ArrayList> PersonInformationNS.PersonInformation obiektów z nazwy osób i firm produkowane przez GetNames. Jednak GetNames jest wywoływana dwa razy każdym razem, który jest tworzony obiekt PersonInformation. Aby zobaczyć, metoda może zostać łatwo zoptymalizowany przez utworzenie listy tylko raz na początku metody i indeksowania w tych list, podczas tworzenia pętli PersonInformation.  
+3. Ponieważ PeopleNS.People.GetPeople jest tylko obiekt wywołujący GetNames, kliknij przycisk GetPeople w okno podziału kosztów, aby zbadać jego kod. Ta metoda zwraca <xref:System.Collections.ArrayList> PersonInformationNS.PersonInformation obiektów z nazwy osób i firm produkowane przez GetNames. Jednak GetNames jest wywoływana dwa razy każdym razem, który jest tworzony obiekt PersonInformation. Aby zobaczyć, metoda może zostać łatwo zoptymalizowany przez utworzenie listy tylko raz na początku metody i indeksowania w tych list, podczas tworzenia pętli PersonInformation.  
   
-4.  Alternatywnej wersji cyklu GetPeople znajduje się z przykładowym kodem aplikacji i dodając symbol kompilacji warunkowej do właściwości kompilacji może być wywołanie funkcji zoptymalizowane. W oknie Eksploratora rozwiązań kliknij prawym przyciskiem myszy projekt osób, a następnie kliknij przycisk **właściwości**. Kliknij przycisk **kompilacji** na menu strony właściwości, a następnie wpisz **OPTIMIZED_GETPEOPLE** w polu tekstowym symbol kompilacji warunkowej. Zoptymalizowana wersja GetPeople zastępuje oryginalną metodę w następnej kompilacji.  
+4. Alternatywnej wersji cyklu GetPeople znajduje się z przykładowym kodem aplikacji i dodając symbol kompilacji warunkowej do właściwości kompilacji może być wywołanie funkcji zoptymalizowane. W oknie Eksploratora rozwiązań kliknij prawym przyciskiem myszy projekt osób, a następnie kliknij przycisk **właściwości**. Kliknij przycisk **kompilacji** na menu strony właściwości, a następnie wpisz **OPTIMIZED_GETPEOPLE** w polu tekstowym symbol kompilacji warunkowej. Zoptymalizowana wersja GetPeople zastępuje oryginalną metodę w następnej kompilacji.  
   
-5.  Należy ponownie uruchomić sesję wydajności. Kliknij na pasku narzędzi Eksploratora wydajności **uruchamianie z profilowaniem**. Kliknij przycisk **uzyskać osób** a następnie kliknij przycisk **Eksport danych**. Zamknij okno programu Notatnik, które zostanie wyświetlone, a następnie zamknij aplikację Trax osób.  
+5. Należy ponownie uruchomić sesję wydajności. Kliknij na pasku narzędzi Eksploratora wydajności **uruchamianie z profilowaniem**. Kliknij przycisk **uzyskać osób** a następnie kliknij przycisk **Eksport danych**. Zamknij okno programu Notatnik, które zostanie wyświetlone, a następnie zamknij aplikację Trax osób.  
   
      Jest generowany nowy plik danych profilowania, a **Podsumowanie** nowe dane są wyświetlane w widoku [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] głównego okna.  
   
-6.  Aby porównać dwa uruchomienia profilowania, wybierz pliki dwóch danych w Eksploratorze wydajności, kliknij prawym przyciskiem myszy pliki, a następnie kliknij **Porównaj wydajność raportów**. Zostanie wyświetlone okno Raport porównawczy w [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] głównego okna. **Delta** zmiany w kolumnie jest wyświetlana w wartości wydajności funkcji z wcześniej **linii bazowej** wartość do późniejszej **porównania** wartość. Można wybrać wartości do porównania z **kolumny** listy rozwijanej. Wybierz **% Włącznych próbek**.  
+6. Aby porównać dwa uruchomienia profilowania, wybierz pliki dwóch danych w Eksploratorze wydajności, kliknij prawym przyciskiem myszy pliki, a następnie kliknij **Porównaj wydajność raportów**. Zostanie wyświetlone okno Raport porównawczy w [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] głównego okna. **Delta** zmiany w kolumnie jest wyświetlana w wartości wydajności funkcji z wcześniej **linii bazowej** wartość do późniejszej **porównania** wartość. Można wybrać wartości do porównania z **kolumny** listy rozwijanej. Wybierz **% Włącznych próbek**.  
   
      Należy zauważyć, że metody GetPeople i GetNames Pokaż wzrost wydajności znaczące.  
   
@@ -110,25 +110,25 @@ W tym instruktażu przedstawiono sposób profilu aplikacji można zidentyfikowa�
   
 #### <a name="to-profile-an-existing-application-by-using-the-instrumentation-method"></a>Aby przeprowadzić profilowanie istniejącej aplikacji przy użyciu metody Instrumentacji  
   
-1.  Jeśli to konieczne, należy otworzyć aplikację peopletrax — w programie Visual Studio.  
+1. Jeśli to konieczne, należy otworzyć aplikację peopletrax — w programie Visual Studio.  
   
      Upewnij się, że działasz jako Administrator oraz że konfiguracja kompilacji dla rozwiązania jest ustawiona na **wersji**.  
   
-2.  W Eksploratorze wydajności kliknij **Instrumentacji**.  
+2. W Eksploratorze wydajności kliknij **Instrumentacji**.  
   
-3.  Kliknij na pasku narzędzi Eksploratora wydajności **uruchamianie z profilowaniem**.  
+3. Kliknij na pasku narzędzi Eksploratora wydajności **uruchamianie z profilowaniem**.  
   
      Program profilujący tworzy projekt i uruchamia profilowanie aplikacji. Zostanie wyświetlone okno aplikacja peopletrax —.  
   
-4.  Kliknij przycisk **Pobierz osoby**.  
+4. Kliknij przycisk **Pobierz osoby**.  
   
      Peopletrax — Siatka danych zostaną wyświetlone wszystkie dane.  
   
-5.  Poczekaj około 10 sekund, a następnie kliknij przycisk **Eksport danych**.  
+5. Poczekaj około 10 sekund, a następnie kliknij przycisk **Eksport danych**.  
   
      **Notatnik** rozpoczyna się i wyświetla nowy plik, który zawiera listę użytkowników z peopletrax —. Oczekiwanie umożliwia aby łatwiej zidentyfikować dane są eksportowane procedury w celu filtrowania.  
   
-6.  Zamknij **Notatnik**, a następnie Zamknij **peopletrax —** aplikacji.  
+6. Zamknij **Notatnik**, a następnie Zamknij **peopletrax —** aplikacji.  
   
      [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] generuje raport sesji wydajności (*.vsp).  
   

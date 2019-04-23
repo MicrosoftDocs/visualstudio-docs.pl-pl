@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2b30a3b1ee02a6ac64c66aa7d80a35dc45a683a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dd3d58b61683c2b25da3e988d307effc28d61dc9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715313"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073374"
 ---
 # <a name="register-an-expression-evaluator"></a>Rejestrowanie ewaluatora wyrażeń
 > [!IMPORTANT]
@@ -106,9 +106,9 @@ namespace EEMC
 ### <a name="dll-server-process"></a>Proces serwera biblioteki DLL
  Podczas rejestrowania EE, serwer biblioteki DLL:
 
-1.  Rejestruje fabrykę jego klasa `CLSID` zgodnie z normalnym konwencje COM.
+1. Rejestruje fabrykę jego klasa `CLSID` zgodnie z normalnym konwencje COM.
 
-2.  Wywołuje funkcję Pomocnika `SetEEMetric` zarejestrować za pomocą programu Visual Studio metryki EE pokazano w poniższej tabeli. Funkcja `SetEEMetric` i metryki, określić następujący są częścią *dbgmetric.lib* biblioteki. Zobacz [pomocnicy zestawu SDK do debugowania](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) Aby uzyskać szczegółowe informacje.
+2. Wywołuje funkcję Pomocnika `SetEEMetric` zarejestrować za pomocą programu Visual Studio metryki EE pokazano w poniższej tabeli. Funkcja `SetEEMetric` i metryki, określić następujący są częścią *dbgmetric.lib* biblioteki. Zobacz [pomocnicy zestawu SDK do debugowania](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) Aby uzyskać szczegółowe informacje.
 
     |Metryka|Opis|
     |------------|-----------------|
@@ -120,7 +120,7 @@ namespace EEMC
     > [!NOTE]
     >  `metricLanguage``GUID` Określa język, według nazwy, ale jest `guidLang` argument `SetEEMetric` który wybiera język. Gdy kompilator generuje plik informacji debugowania, należy wpisać odpowiedni `guidLang` tak, aby DE wie, które EE do użycia. DE zazwyczaj prosi dostawca symboli dla tego języka `GUID`, który jest przechowywany w pliku informacji debugowania.
 
-3.  Rejestruje się za pomocą programu Visual Studio przez utworzenie kluczy w obszarze HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, gdzie *X.Y* jest wersja programu Visual Studio do rejestrowania w usłudze.
+3. Rejestruje się za pomocą programu Visual Studio przez utworzenie kluczy w obszarze HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, gdzie *X.Y* jest wersja programu Visual Studio do rejestrowania w usłudze.
 
 ### <a name="example"></a>Przykład
  Następującą funkcję pokazuje, jak kod niezarządzany (C++) EE rejestruje i wyrejestrowuje się z programem Visual Studio.

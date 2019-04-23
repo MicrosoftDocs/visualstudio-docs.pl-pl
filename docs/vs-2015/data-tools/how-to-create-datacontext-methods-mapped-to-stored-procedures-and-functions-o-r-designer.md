@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8485885cbba43ea9eaef76616607861c44c2ab24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b395b396ab182ca03be35cddc8d237506b43e39c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668785"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066614"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Instrukcje: Tworzenie metod DataContext zamapowanych na procedury składowane i funkcje (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,17 +34,17 @@ Procedury składowane i funkcje, które mogą być dodawane do [!INCLUDE[vs_orde
   
 #### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>Aby utworzyć element DataContext metody, które zwracają automatycznie wygenerowane typy  
   
-1.  W **Eksploratora serwera**/**Eksplorator bazy danych**, rozwiń węzeł **procedur składowanych** węzeł bazy danych, w którym pracujesz.  
+1. W **Eksploratora serwera**/**Eksplorator bazy danych**, rozwiń węzeł **procedur składowanych** węzeł bazy danych, w którym pracujesz.  
   
-2.  Zlokalizuj odpowiednią procedurę składowaną i przeciągnij go na pustym obszarem [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+2. Zlokalizuj odpowiednią procedurę składowaną i przeciągnij go na pustym obszarem [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
      <xref:System.Data.Linq.DataContext> Metody jest tworzone z automatycznie wygenerowanego zwracany typ i pojawia się w **metody** okienka.  
   
 #### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>Aby utworzyć metody DataContext, które mają zwracany typ klasę jednostki  
   
-1.  W **Eksploratora serwera**/**Eksplorator bazy danych**, rozwiń węzeł **procedur składowanych** węzeł bazy danych, w którym pracujesz.  
+1. W **Eksploratora serwera**/**Eksplorator bazy danych**, rozwiń węzeł **procedur składowanych** węzeł bazy danych, w którym pracujesz.  
   
-2.  Zlokalizuj odpowiednią procedurę składowaną i przeciągnij go do istniejącej klasy jednostki w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+2. Zlokalizuj odpowiednią procedurę składowaną i przeciągnij go do istniejącej klasy jednostki w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
      <xref:System.Data.Linq.DataContext> Metody jest tworzony z typem zwracanym klasy wybranej jednostki i pojawia się w **metody** okienka.  
   

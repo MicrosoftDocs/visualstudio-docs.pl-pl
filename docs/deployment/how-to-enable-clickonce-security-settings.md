@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f89db12596754630eddaf78b9429eb2983625481
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1c24126f18cc55bdddcda97a750b1f443bb8b4d8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599848"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068941"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Instrukcje: Włączenie ustawień zabezpieczeń technologii ClickOnce
 Zabezpieczenia dostępu kodu dla aplikacji ClickOnce musi być włączony, aby można było opublikować aplikację. Odbywa się to automatycznie podczas publikowania aplikacji za pomocą Kreatora publikacji.
@@ -32,11 +32,11 @@ Zabezpieczenia dostępu kodu dla aplikacji ClickOnce musi być włączony, aby m
 
 ### <a name="to-enable-clickonce-security-settings"></a>Aby włączyć ustawień zabezpieczeń technologii ClickOnce
 
-1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
+1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
 
-2.  Kliknij przycisk **zabezpieczeń** kartę.
+2. Kliknij przycisk **zabezpieczeń** kartę.
 
-3.  Wybierz **włączenia ustawień zabezpieczeń technologii ClickOnce** pole wyboru.
+3. Wybierz **włączenia ustawień zabezpieczeń technologii ClickOnce** pole wyboru.
 
      Możesz teraz dostosować ustawienia zabezpieczeń dla aplikacji na stronie zabezpieczenia.
 
@@ -45,11 +45,11 @@ Zabezpieczenia dostępu kodu dla aplikacji ClickOnce musi być włączony, aby m
 
 ### <a name="to-disable-clickonce-security-settings"></a>Aby wyłączyć ustawień zabezpieczeń technologii ClickOnce
 
-1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
+1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
 
-2.  Kliknij przycisk **zabezpieczeń** kartę.
+2. Kliknij przycisk **zabezpieczeń** kartę.
 
-3.  Wyczyść **włączenia ustawień zabezpieczeń technologii ClickOnce** pole wyboru.
+3. Wyczyść **włączenia ustawień zabezpieczeń technologii ClickOnce** pole wyboru.
 
      Twoja aplikacja będzie uruchamiana za pomocą ustawień zabezpieczeń w trybie pełnego zaufania; wszystkie ustawienia na **zabezpieczeń** strony zostaną zignorowane.
 

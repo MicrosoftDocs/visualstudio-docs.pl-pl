@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4359b863da56242bbe612fa0055690d9923a9ec4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 66f5510ae63507aebb97a7f8bdfd3e367f1afc85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600478"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074664"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>Instrukcje: Włączenie funkcji AutoStart dla instalacji z dysku CD
 W przypadku wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji za pomocą nośników wymiennych, takich jak dysk CD-ROM lub DVD-ROM, aby umożliwić `AutoStart` tak, aby [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja jest uruchamiana automatycznie, gdy nośnik zostanie wstawiona.
@@ -30,17 +30,17 @@ W przypadku wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick
 
 ### <a name="to-enable-autostart"></a>Aby włączyć automatyczne uruchamianie
 
-1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** kliknij menu **właściwości**.
+1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** kliknij menu **właściwości**.
 
-2.  Kliknij przycisk **Publikuj** kartę.
+2. Kliknij przycisk **Publikuj** kartę.
 
-3.  Kliknij przycisk **opcje** przycisku.
+3. Kliknij przycisk **opcje** przycisku.
 
      **Opcji publikowania** pojawi się okno dialogowe.
 
-4.  Kliknij przycisk **wdrożenia**.
+4. Kliknij przycisk **wdrożenia**.
 
-5.  Wybierz **dla instalacji z dysku CD, automatycznie Rozpocznij instalację po włożeniu dysku CD** pole wyboru.
+5. Wybierz **dla instalacji z dysku CD, automatycznie Rozpocznij instalację po włożeniu dysku CD** pole wyboru.
 
      *Autorun.inf* po opublikowaniu aplikacji plik zostanie skopiowany do lokalizacji publikowania.
 

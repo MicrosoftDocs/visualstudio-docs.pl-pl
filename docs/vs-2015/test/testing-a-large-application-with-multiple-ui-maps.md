@@ -11,12 +11,12 @@ ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 459e7e00f1fc9602b4e003ec16394d9cdf06410a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5a6a3247ed53b6a84feb203ce0e9b480e7f9ce5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775089"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073894"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Testowanie dużej aplikacji przy użyciu wielu map UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ W tym temacie omówiono sposób używania kodowanych testów interfejsu użytkow
 ## <a name="do-you-need-multiple-ui-maps"></a>Czy potrzebujesz wielu map interfejsu użytkownika?  
  Tworzenie wielu map interfejsu użytkownika w każdym z tego typu sytuacje:  
   
--   Kilka złożonych zestawów złożonych kontrolek interfejsu użytkownika, które wspólnie wykonują operacji logicznej, takich jak strony rejestracji w witrynie sieci Web lub strony zakupu koszyk sklepowy.  
+- Kilka złożonych zestawów złożonych kontrolek interfejsu użytkownika, które wspólnie wykonują operacji logicznej, takich jak strony rejestracji w witrynie sieci Web lub strony zakupu koszyk sklepowy.  
   
--   Niezależny zestaw formantów, które są dostępne w różnych punktach aplikacji, na przykład Kreator z kilku stron operacji. Jeśli każda strona kreatora jest szczególnie złożony, można utworzyć oddzielne map interfejsu użytkownika dla każdej strony.  
+- Niezależny zestaw formantów, które są dostępne w różnych punktach aplikacji, na przykład Kreator z kilku stron operacji. Jeśli każda strona kreatora jest szczególnie złożony, można utworzyć oddzielne map interfejsu użytkownika dla każdej strony.  
   
 ## <a name="adding-multiple-ui-maps"></a>Dodawanie wielu map UI  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b548265959ed2be10feb1096d7dc92d95a6cfed0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1485ee6f0737363bc6ab9105b70c93acef866c82
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792847"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038346"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Instrukcje: Określ polecenia przed i po Instrumentacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,39 +53,39 @@ Możesz określić polecenia, które są uruchamiane przed lub po są instrument
   
 ### <a name="to-specify-pre-instrument-commands"></a>Aby określić polecenie przed Instrumentacją  
   
-1.  Wykonaj jedną z następujących czynności:  
+1. Wykonaj jedną z następujących czynności:  
   
-    -   Aby określić polecenia przed Instrumentacją dla wszystkich plików binarnych w sesji wydajności, wybierz węzeł sesji wydajności w **Eksplorator wydajności**, a następnie kliknij prawym przyciskiem myszy i wybierz **właściwości**.  
+    - Aby określić polecenia przed Instrumentacją dla wszystkich plików binarnych w sesji wydajności, wybierz węzeł sesji wydajności w **Eksplorator wydajności**, a następnie kliknij prawym przyciskiem myszy i wybierz **właściwości**.  
   
-    -   Aby określić polecenie przed Instrumentacją dla określonego pliku binarnego, kliknij prawym przyciskiem myszy nazwę pliku binarnego w **cele** listę sesji wydajności, a następnie wybierz **właściwości**.  
+    - Aby określić polecenie przed Instrumentacją dla określonego pliku binarnego, kliknij prawym przyciskiem myszy nazwę pliku binarnego w **cele** listę sesji wydajności, a następnie wybierz **właściwości**.  
   
-2.  W **stron właściwości**, kliknij przycisk **Instrumentacji**.  
+2. W **stron właściwości**, kliknij przycisk **Instrumentacji**.  
   
-3.  Wpisz polecenie w **wiersza polecenia** polu tekstowym w obszarze **zdarzenia przed Instrumentacją**.  
+3. Wpisz polecenie w **wiersza polecenia** polu tekstowym w obszarze **zdarzenia przed Instrumentacją**.  
   
     > [!NOTE]
     >  Możesz kliknąć przycisk wielokropka **(...)**  która jest przyległa do **wiersza polecenia** pole, aby przejść do, a następnie wybierz odpowiedni plik .exe, cmd lub bat.  
   
-4.  Kliknij przycisk **OK**.  
+4. Kliknij przycisk **OK**.  
   
      Aby wyłączyć polecenia uruchamiane bez usuwania go, wybierz **Wyklucz z Instrumentacji** pole wyboru. Aby zmodyfikować kompilatora lub konsolidatora, ustawienia, należy użyć strony właściwości projektu.  
   
 ### <a name="to-specify-post-instrument-commands"></a>Aby określić polecenie po Instrumentacji  
   
-1.  Wykonaj jedną z następujących czynności:  
+1. Wykonaj jedną z następujących czynności:  
   
-    -   Aby określić polecenia po instrumentacji dla wszystkich plików binarnych w sesji wydajności, wybierz węzeł sesji wydajności w **Eksplorator wydajności**, a następnie kliknij prawym przyciskiem myszy i wybierz **właściwości**.  
+    - Aby określić polecenia po instrumentacji dla wszystkich plików binarnych w sesji wydajności, wybierz węzeł sesji wydajności w **Eksplorator wydajności**, a następnie kliknij prawym przyciskiem myszy i wybierz **właściwości**.  
   
-    -   Aby określić polecenie po instrumentacji dla określonego pliku binarnego, kliknij prawym przyciskiem myszy nazwę pliku binarnego w **cele** listę sesji wydajności, a następnie wybierz **właściwości**.  
+    - Aby określić polecenie po instrumentacji dla określonego pliku binarnego, kliknij prawym przyciskiem myszy nazwę pliku binarnego w **cele** listę sesji wydajności, a następnie wybierz **właściwości**.  
   
-2.  W **stron właściwości**, kliknij przycisk **Instrumentacji**.  
+2. W **stron właściwości**, kliknij przycisk **Instrumentacji**.  
   
-3.  Wpisz polecenie w **wiersza polecenia** polu tekstowym w obszarze **zdarzenia po Instrumentacji**.  
+3. Wpisz polecenie w **wiersza polecenia** polu tekstowym w obszarze **zdarzenia po Instrumentacji**.  
   
     > [!NOTE]
     >  Możesz kliknąć przycisk wielokropka **(...)**  która jest przyległa do **wiersza polecenia** pole, aby przejść do, a następnie wybierz odpowiedni plik .exe, cmd lub bat.  
   
-4.  Kliknij przycisk **OK**.  
+4. Kliknij przycisk **OK**.  
   
      Aby wyłączyć polecenia uruchamiane bez usuwania go, wybierz **Wyklucz z Instrumentacji** pole wyboru. Aby zmodyfikować kompilatora lub konsolidatora, ustawienia, należy użyć strony właściwości projektu.  
   

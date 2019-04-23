@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d951486d41e3449410f6f815b3b355a281e0898
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2d89eabec0c199b1b8df7eeb78d0e629d4a70b2e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698875"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072659"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Błąd: Proces roboczy witryny internetowej został zakończony przez usługi IIS
 Debuger zatrzymana wykonywanie kodu na witrynie sieci Web. Spowodowało to Internet Information Services (IIS) aby założył, że proces roboczy przestał odpowiadać. W związku z tym usługi IIS zakończone procesu roboczego.
@@ -30,9 +30,9 @@ Debuger zatrzymana wykonywanie kodu na witrynie sieci Web. Spowodowało to Inter
 
 1. Otwórz **narzędzia administracyjne** okna.
 
-   1.  Kliknij przycisk **Start**, a następnie wybierz **Panelu sterowania**.
+   1. Kliknij przycisk **Start**, a następnie wybierz **Panelu sterowania**.
 
-   2.  W **Panelu sterowania**, wybierz **Przełącz na widok klasyczny**, jeśli to konieczne, a następnie kliknij dwukrotnie **narzędzia administracyjne**.
+   2. W **Panelu sterowania**, wybierz **Przełącz na widok klasyczny**, jeśli to konieczne, a następnie kliknij dwukrotnie **narzędzia administracyjne**.
 
 2. W **narzędzia administracyjne** okna, kliknij dwukrotnie **Internet Information Services (IIS) Manager**.
 

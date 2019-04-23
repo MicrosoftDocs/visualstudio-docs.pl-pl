@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 36fc5dd306782779f553d4144c272c91c7e0f0af
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4e7f99f646d2a93878ec0a78f75cdc6ae1fb0d1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929404"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095688"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Tworzenie prostej aplikacji danych przy użyciu pakietu ADO.NET
 
@@ -31,9 +31,9 @@ W tym artykule przedstawiono prosty sposób pobrać dane z bazy danych w szybki 
 
 Aby utworzyć aplikację, będą potrzebne:
 
--   Program Visual Studio.
+- Program Visual Studio.
 
--   SQL Server Express LocalDB. Jeśli nie masz programu SQL Server Express LocalDB, możesz zainstalować go z [stronę pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
+- SQL Server Express LocalDB. Jeśli nie masz programu SQL Server Express LocalDB, możesz zainstalować go z [stronę pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
 W tym temacie założono, że znasz podstawowe funkcje środowiska IDE programu Visual Studio i można utworzyć aplikacji Windows Forms, dodawać formularze do projektu, umieszczać przyciski i inne formanty w formularzach, ustaw właściwości kontrolek i kodować proste zdarzenia. Jeśli nie masz doświadczenia z tych zadań, zalecamy wykonanie [wprowadzenie do wizualizacji C# i Visual Basic](../ide/quickstart-visual-basic-console.md) tematu przed rozpoczęciem tego instruktażu.
 
@@ -69,11 +69,11 @@ Tworzenie przykładowej bazy danych, wykonując następujące czynności:
 
 2. Dodaj dwie formy Windows do projektu tak, że ma trzy formy, a następnie nadaj im następujące nazwy:
 
-   -   **Nawigacja**
+   - **Nawigacja**
 
-   -   **NewCustomer**
+   - **NewCustomer**
 
-   -   **FillOrCancel**
+   - **FillOrCancel**
 
 3. Dla każdego formularza należy dodać pola tekstowe, przyciski i inne formanty, które pojawiają się na poniższych ilustracjach. Dla każdego formantu należy ustawić właściwości opisywane przez tabele.
 
@@ -124,21 +124,21 @@ Tworzenie przykładowej bazy danych, wykonując następujące czynności:
 
  Parametry połączenia można znaleźć, klikając prawym przyciskiem myszy **sprzedaży** połączenia danych w **Eksploratora serwera** i wybierając pozycję **właściwości**. Znajdź **ConnectionString** właściwości, następnie za pomocą **Ctrl**+**A**, **Ctrl**+**C**  zaznacz i skopiuj ciąg do Schowka.
 
-1.  Jeśli używasz C#w **Eksploratora rozwiązań**, rozwiń węzeł **właściwości** węzła w ramach projektu, a następnie otwórz **Settings.settings** pliku.
+1. Jeśli używasz C#w **Eksploratora rozwiązań**, rozwiń węzeł **właściwości** węzła w ramach projektu, a następnie otwórz **Settings.settings** pliku.
     Jeśli używasz języka Visual Basic w **Eksploratora rozwiązań**, kliknij przycisk **Pokaż wszystkie pliki**, rozwiń węzeł **mój projekt** węzeł, a następnie otwórz **Settings.settings** pliku.
 
-2.  W **nazwa** kolumny, wprowadź `connString`.
+2. W **nazwa** kolumny, wprowadź `connString`.
 
-3.  W **typu** listy wybierz **(parametry połączenia)**.
+3. W **typu** listy wybierz **(parametry połączenia)**.
 
-4.  W **zakres** listy wybierz **aplikacji**.
+4. W **zakres** listy wybierz **aplikacji**.
 
-5.  W **wartość** kolumny, wprowadź parametry połączenia (bez żadnego poza cudzysłowy), a następnie zapisz zmiany.
+5. W **wartość** kolumny, wprowadź parametry połączenia (bez żadnego poza cudzysłowy), a następnie zapisz zmiany.
 
 > [!NOTE]
 > W rzeczywistej aplikacji, należy przechowywać parametry połączenia bezpieczne, zgodnie z opisem w [parametry połączenia i pliki konfiguracyjne](/dotnet/framework/data/adonet/connection-strings-and-configuration-files).
 
-##  <a name="write-the-code-for-the-forms"></a>Pisanie kodu dla formularzy
+## <a name="write-the-code-for-the-forms"></a>Pisanie kodu dla formularzy
 
 Ta sekcja zawiera krótki przegląd informacji na temat działania każdego formularza. Zapewnia również kod, który definiuje podstawowej logiki po kliknięciu przycisku w formularzu.
 
@@ -180,6 +180,7 @@ Aby wykonać logikę formularz NewCustomer, wykonaj następujące kroki.
      ```csharp
      using System.Data.SqlClient;
      ```
+
      ```vb
      Imports System.Data.SqlClient
      ```
@@ -212,6 +213,7 @@ Aby wykonać logikę formularza FillOrCancel, wykonaj następujące kroki.
      using System.Data.SqlClient;
      using System.Text.RegularExpressions;
      ```
+
      ```vb
      Imports System.Data.SqlClient
      Imports System.Text.RegularExpressions

@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c02e700eaa17f29726d9e3ddee83bfbc4874fdda
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 20c449148b98c89f1eb64beb61588661f02ab74a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766163"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073531"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Odczytywanie modeli i diagramów w innych wersjach programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,16 +35,16 @@ Po otwarciu modelu w wersji programu Visual Studio, który nie obsługuje tworze
   
  Aby przeczytać diagramu UML lub diagramu warstwowego, minimalny zestaw plików, które są potrzebne jest następująca:  
   
--   Dwa pliki dla diagramu, który chcesz, aby dowiedzieć się, na przykład diagramu **MyDiagram.classdiagram i MyDiagram.classdiagram.layout**.  
+- Dwa pliki dla diagramu, który chcesz, aby dowiedzieć się, na przykład diagramu **MyDiagram.classdiagram i MyDiagram.classdiagram.layout**.  
   
     > [!NOTE]
     >  Dla diagramów warstw powinien również mieć plik o nazwie _MyDiagram_**. layerdiagram.suppressions**.  
   
--   Pliku projektu modelowania (**MyModel.modelproj**)  
+- Pliku projektu modelowania (**MyModel.modelproj**)  
   
--   Plik modelu głównym (**ModelDefinition\MyModel.uml**)  
+- Plik modelu głównym (**ModelDefinition\MyModel.uml**)  
   
--   Pliki pakietu dla dowolnego pakietu, do którego odwołuje się na diagramie (**ModelDefinition\MyPackage.uml**)  
+- Pliki pakietu dla dowolnego pakietu, do którego odwołuje się na diagramie (**ModelDefinition\MyPackage.uml**)  
   
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Zmiany wprowadzone w trybie tylko do odczytu  
  Jeśli otworzysz modelu i jego diagramy w wersjach programu Visual Studio, który nie obsługuje tworzenia modelu, nie można zmienić modelu. Oznacza to, że nie można zmienić elementów i relacji, które są wyświetlane na diagramach lub w Eksploratorze modelu. Można jednak wprowadzić pewne zmiany, układu tych diagramów:  
@@ -55,16 +55,16 @@ Po otwarciu modelu w wersji programu Visual Studio, który nie obsługuje tworze
   
   Możesz zapisać te zmiany. Jeśli chcesz zmiany były widoczne dla innych użytkowników, co najmniej trzeba wysłać zaktualizowany **.layout** plików.  
   
-##  <a name="RelatedTopics"></a> Tematy pokrewne  
+## <a name="RelatedTopics"></a> Tematy pokrewne  
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md)|Diagram warstwowy pokazuje strukturę ogólną architekturę. Gdy kod jest zapisywany, mogą być automatycznie sprawdzone podstawie diagramu warstwowego.|  
-|[Diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md)|Diagram aktywności zawiera przepływ pracy, procesu biznesowego lub w oprogramowaniu.|  
-|[Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)|Diagram klas zawiera typów i relacji używanych w wielu kontekstach, takich jak kod, schematy bazy danych, protokołów komunikacyjnych i słownikiem pojęć używanych do opisania domeny biznesowej.|  
-|[Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)|Diagram składników zawiera osobnych części, w projekt oprogramowania oraz ich interfejsów.|  
-|[Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)|Diagram sekwencji przedstawia interakcje między elementy projektu oprogramowania.|  
-|[Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)|Diagram przypadków użycia zawiera użytkowników systemu i działań, które użytkownicy mogą wykonywać do osiągnięcia określonych celów.|  
+|[Diagramy warstw: informacje](../modeling/layer-diagrams-reference.md)|Diagram warstwowy pokazuje strukturę ogólną architekturę. Gdy kod jest zapisywany, mogą być automatycznie sprawdzone podstawie diagramu warstwowego.|  
+|[Diagramy aktywności UML: informacje](../modeling/uml-activity-diagrams-reference.md)|Diagram aktywności zawiera przepływ pracy, procesu biznesowego lub w oprogramowaniu.|  
+|[Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)|Diagram klas zawiera typów i relacji używanych w wielu kontekstach, takich jak kod, schematy bazy danych, protokołów komunikacyjnych i słownikiem pojęć używanych do opisania domeny biznesowej.|  
+|[Diagramy składników UML: informacje](../modeling/uml-component-diagrams-reference.md)|Diagram składników zawiera osobnych części, w projekt oprogramowania oraz ich interfejsów.|  
+|[Diagramy sekwencji UML: informacje](../modeling/uml-sequence-diagrams-reference.md)|Diagram sekwencji przedstawia interakcje między elementy projektu oprogramowania.|  
+|[Diagramy przypadków użycia UML: informacje](../modeling/uml-use-case-diagrams-reference.md)|Diagram przypadków użycia zawiera użytkowników systemu i działań, które użytkownicy mogą wykonywać do osiągnięcia określonych celów.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)

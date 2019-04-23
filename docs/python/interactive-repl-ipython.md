@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 8b4510ed738fdd2b33389ab4242dbde86cffff8c
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366513"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070293"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Użycie IPython w oknie interaktywnym
 

@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74b3559849fe69da998f59c3caa6e38ff23b238b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9de3e8446250829d431dcbf33b14effd607ab545
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657522"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075775"
 ---
 # <a name="receiveandsendreply-template-designer"></a>ReceiveAndSendReply, projektant szablonów
 **ReceiveAndSendReply** szablon służy do tworzenia pary wstępnie skonfigurowane <xref:System.ServiceModel.Activities.Receive> i <xref:System.ServiceModel.Activities.SendReply> działań w ramach <xref:System.Activities.Statements.Sequence> działanie, które są skorelowane w ramach wymiany komunikatów żądań/odpowiedzi wzorzec na serwerze.  
@@ -25,11 +25,11 @@ ms.locfileid: "59657522"
 ## <a name="the-receiveandsendreply-template"></a>Szablon ReceiveAndSendReply  
  Dodawanie **ReceiveAndSendReply** szablonu wykonuje trzy rzeczy, oprócz tworzenia <xref:System.ServiceModel.Activities.Receive> i <xref:System.ServiceModel.Activities.SendReply> działań z <xref:System.Activities.Statements.Sequence> działania:  
 
-1.  Konfiguruje <xref:System.ServiceModel.Activities.Receive.OperationName%2A>, <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> właściwości <xref:System.ServiceModel.Activities.Receive> działania.  
+1. Konfiguruje <xref:System.ServiceModel.Activities.Receive.OperationName%2A>, <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> właściwości <xref:System.ServiceModel.Activities.Receive> działania.  
 
-2.  Wiąże <xref:System.ServiceModel.Activities.SendReply.Request%2A> właściwość <xref:System.ServiceModel.Activities.Receive> działanie <xref:System.ServiceModel.Activities.Send> działania.  
+2. Wiąże <xref:System.ServiceModel.Activities.SendReply.Request%2A> właściwość <xref:System.ServiceModel.Activities.Receive> działanie <xref:System.ServiceModel.Activities.Send> działania.  
 
-3.  Tworzy <xref:System.ServiceModel.Activities.CorrelationHandle> jako zmienna w działanie nadrzędne.  
+3. Tworzy <xref:System.ServiceModel.Activities.CorrelationHandle> jako zmienna w działanie nadrzędne.  
 
 ### <a name="using-the-receiveandsendreply-template-designer"></a>Za pomocą ReceiveAndSendReply, Projektant szablonów  
  **ReceiveAndSendReply** projektanta działań można znaleźć w **komunikatów** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika**  karcie [!INCLUDE[wfd2](../includes/wfd2-md.md)] (można także wybrać **narzędzi** z **widoku** menu lub klawiszy CTRL + ALT + X.)  

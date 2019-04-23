@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e01c76f5696e029cd7d15be75786b1009af4a673
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d2c17d20b54ea16f0a6764277855ca240aeb7224
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678634"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061216"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo, funkcja
 Ta funkcja pobiera informacje o stanie dla zestawu wybranych plików pod kontrolą źródła.
@@ -67,13 +67,13 @@ SCCRTN SccQueryInfo(
 
  Wyewidencjonowywanie plików za pomocą tej funkcji, należy pamiętać o następujących `MSSCCI` stan wymagania:
 
--   `SCC_STATUS_OUTBYUSER` jest ustawiona, gdy bieżący użytkownik ma wyewidencjonowania pliku.
+- `SCC_STATUS_OUTBYUSER` jest ustawiona, gdy bieżący użytkownik ma wyewidencjonowania pliku.
 
--   `SCC_STATUS_CHECKEDOUT` Nie można ustawić, chyba że `SCC_STATUS_OUTBYUSER` jest ustawiona.
+- `SCC_STATUS_CHECKEDOUT` Nie można ustawić, chyba że `SCC_STATUS_OUTBYUSER` jest ustawiona.
 
--   `SCC_STATUS_CHECKEDOUT` jest tylko ustawiona, gdy plik jest wyewidencjonowany do wyznaczonej katalogu roboczego.
+- `SCC_STATUS_CHECKEDOUT` jest tylko ustawiona, gdy plik jest wyewidencjonowany do wyznaczonej katalogu roboczego.
 
--   Jeśli plik jest wyewidencjonowany przez bieżącego użytkownika w katalogu innym niż katalog roboczy `SCC_STATUS_OUTBYUSER` jest ustawiona, ale `SCC_STATUS_CHECKEDOUT` nie jest.
+- Jeśli plik jest wyewidencjonowany przez bieżącego użytkownika w katalogu innym niż katalog roboczy `SCC_STATUS_OUTBYUSER` jest ustawiona, ale `SCC_STATUS_CHECKEDOUT` nie jest.
 
 ## <a name="see-also"></a>Zobacz też
 - [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)

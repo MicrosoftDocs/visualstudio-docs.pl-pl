@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4f7da520c1659ebb75b777c031f171d1465493e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ca10710d87777cdaeead42015d46cc6d489c907e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660778"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072640"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opcje, edytor tekstu, C/C++, zaawansowane
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -73,19 +73,19 @@ Zmieniając tych opcji, możesz zmienić zachowanie związane z technologii Inte
   
  Ustaw za pomocą Suma dowolnych z następujących opcji:  
   
--   0 - Brak  
+- 0 - Brak  
   
--   1 — Ogólne  
+- 1 — Ogólne  
   
--   2 - bezczynności (%)  
+- 2 - bezczynności (%)  
   
--   4 — elementów roboczych  
+- 4 — elementów roboczych  
   
--   8 - IntelliSense  
+- 8 - IntelliSense  
   
--   16 - ACPerf  
+- 16 - ACPerf  
   
--   32 - ClassView  
+- 32 - ClassView  
   
 ## <a name="fallback-location"></a>Lokalizacja rezerwowa  
  Lokalizacji rezerwowej to, gdzie umieścić pliki obsługi SDF i funkcja IntelliSense (na przykład iPCH), gdy nie jest używana w lokalizacji głównej (tego samego katalogu jako rozwiązanie). Taka sytuacja może wystąpić, użytkownik nie ma uprawnień do zapisu do katalogu rozwiązania lub katalog rozwiązania jest powolne urządzenia. Domyślną lokalizację rezerwową znajduje się w katalogu temp użytkownika.  

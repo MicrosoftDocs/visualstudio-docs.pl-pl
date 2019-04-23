@@ -11,12 +11,12 @@ ms.assetid: a77816e3-b15b-46a0-90cd-be7242e4d6c9
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5ae077b8ccb4ce41f94fbc5e11bfff1f16c826c0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0ddf7fd92ac0b2f745f9e73170de22e9724dad76
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772121"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074423"
 ---
 # <a name="hitting-a-breakpoint"></a>Aktywacja punktu przerwania
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Poniżej przedstawiono ten proces, gdy aparat debugowania (DE) trafienia punktu 
   
 ## <a name="troubleshooting-a-hit-breakpoint"></a>Rozwiązywanie problemów z trafień punktu przerwania  
   
-1.  Wysyła DE [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) interfejsu jako **EVENT_SYNC_STOP**.  
+1. Wysyła DE [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) interfejsu jako **EVENT_SYNC_STOP**.  
   
-2.  Menedżer debugowania sesji (SDM) wywołuje [IDebugBreakpointEvent2:::EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) można pobrać punkcie przerwania, który został trafiony.  
+2. Menedżer debugowania sesji (SDM) wywołuje [IDebugBreakpointEvent2:::EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) można pobrać punkcie przerwania, który został trafiony.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wywoływanie zdarzeń debugera](../../extensibility/debugger/calling-debugger-events.md)

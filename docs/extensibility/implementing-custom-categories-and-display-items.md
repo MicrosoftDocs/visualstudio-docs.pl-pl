@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81deac9f46c03cac997f555f817bba5831409bca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 60ad63bd5a6fa3b8cca2a288e1c42b1a2ab326bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54968703"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075886"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Implementowanie niestandardowych kategorii i wyświetlania elementów
 Pakietu VSPackage może zapewnić kontrolę nad czcionek i kolorów tekstu do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE) za pomocą niestandardowych kategorii i wyświetlenie elementów.
@@ -81,11 +81,11 @@ Pakietu VSPackage może zapewnić kontrolę nad czcionek i kolorów tekstu do [!
 
 - Metody implementowane za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> należy podać środowisko IDE z:
 
-  -   Wykazy **wyświetlania elementów** w **kategorii.**
+  - Wykazy **wyświetlania elementów** w **kategorii.**
 
-  -   Lokalizowalne nazwy **wyświetlania elementów**.
+  - Lokalizowalne nazwy **wyświetlania elementów**.
 
-  -   Wyświetlanie informacji dla każdego elementu członkowskiego **kategorii**.
+  - Wyświetlanie informacji dla każdego elementu członkowskiego **kategorii**.
 
   > [!NOTE]
   >  Każdy **kategorii** musi zawierać co najmniej jeden **wyświetlanego elementu**.
@@ -94,11 +94,11 @@ Pakietu VSPackage może zapewnić kontrolę nad czcionek i kolorów tekstu do [!
 
    Jego implementacja zapewnia środowisko IDE z:
 
-  -   Lista **kategorie** wchodzące w skład danej grupy.
+  - Lista **kategorie** wchodzące w skład danej grupy.
 
-  -   Dostęp do wystąpienia <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> obsługi każdego **kategorii** w obrębie grupy.
+  - Dostęp do wystąpienia <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> obsługi każdego **kategorii** w obrębie grupy.
 
-  -   Nazwy grup możliwych do zlokalizowania.
+  - Nazwy grup możliwych do zlokalizowania.
 
 - Aktualizowanie środowiska IDE:
 
@@ -109,13 +109,13 @@ Pakietu VSPackage może zapewnić kontrolę nad czcionek i kolorów tekstu do [!
 ## <a name="to-handle-font-and-color-changes"></a>Do obsługi zmian czcionek i kolorów
  Aby prawidłowo obsługiwać kolorowanie tekst, który wyświetla pakietu VSPackage, usługa kolorowanie obsługi pakietu VSPackage musi odpowiedzieć na zainicjowanego przez użytkownika zmian za pomocą **czcionki i kolory** stronę właściwości. Pakietu VSPackage to realizowane przez:
 
--   Obsługa zdarzenia generowane przez środowisko IDE poprzez implementację <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> interfejsu.
+- Obsługa zdarzenia generowane przez środowisko IDE poprzez implementację <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> interfejsu.
 
      IDE, wywołuje odpowiednią metodę następujące modyfikacje użytkownika **czcionki i kolory** strony. Na przykład wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> metody, jeśli wybrano opcję nowego czcionki.
 
      —lub—
 
--   Sondowanie środowisko IDE przeznaczone do zmiany.
+- Sondowanie środowisko IDE przeznaczone do zmiany.
 
      Można to zrobić za pomocą systemu zaimplementowane <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu. Mimo że przede wszystkim do obsługi trwałości, <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> metoda może służyć do uzyskiwania informacji czcionek i kolorów dla **wyświetlania elementów**. Aby uzyskać więcej informacji, zobacz [dostępu przechowywane ustawienia czcionek i kolorów](../extensibility/accessing-stored-font-and-color-settings.md).
 

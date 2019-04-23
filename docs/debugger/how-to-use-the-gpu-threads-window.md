@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c878bcc3b0ed2f37f5bb8700b463ac5c1308981
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 59229b1ca2b055fc8242bf6446541a395eceaa56
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682079"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071359"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>Instrukcje: Korzystanie z okna wątków procesora GPU (C++)
 Okno wątków GPU można zbadać i Praca z wątkami, które są uruchomione w procesorze GPU w aplikacji, na którym wykonujesz debugowanie. Aby uzyskać więcej informacji na temat aplikacji działających na procesorze GPU, zobacz [Przegląd C++ AMP](/cpp/parallel/amp/cpp-amp-overview).
@@ -52,55 +52,55 @@ Okno wątków GPU można zbadać i Praca z wątkami, które są uruchomione w pr
 
 ### <a name="to-display-the-gpu-threads-window"></a>Aby wyświetlić okno wątków GPU
 
-1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **właściwości**.
+1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **właściwości**.
 
-2.  W **stron właściwości** okna dla projektu, w obszarze **właściwości konfiguracji**, wybierz **debugowanie**.
+2. W **stron właściwości** okna dla projektu, w obszarze **właściwości konfiguracji**, wybierz **debugowanie**.
 
-3.  W **debuger do uruchomienia** listy wybierz **lokalny debuger Windows**. W **typ debugera** listy wybierz **tylko GPU**. Musisz wybrać to przerwanie debugowania w punktach przerwania w kodzie, który działa na procesorze GPU.
+3. W **debuger do uruchomienia** listy wybierz **lokalny debuger Windows**. W **typ debugera** listy wybierz **tylko GPU**. Musisz wybrać to przerwanie debugowania w punktach przerwania w kodzie, który działa na procesorze GPU.
 
-4.  Wybierz **OK** przycisku.
+4. Wybierz **OK** przycisku.
 
-5.  Ustaw punkt przerwania w kodzie procesora GPU.
+5. Ustaw punkt przerwania w kodzie procesora GPU.
 
-6.  Na pasku menu wybierz **debugowania**, **Rozpocznij debugowanie**. Poczekaj, aż aplikacja do osiągnięcia punktu przerwania.
+6. Na pasku menu wybierz **debugowania**, **Rozpocznij debugowanie**. Poczekaj, aż aplikacja do osiągnięcia punktu przerwania.
 
-7.  Jeden na pasku menu wybierz **debugowania**, **Windows**, **wątków GPU**.
+7. Jeden na pasku menu wybierz **debugowania**, **Windows**, **wątków GPU**.
 
 ### <a name="to-switch-to-a-different-thread"></a>Aby przełączyć się do innego wątku
 
--   Kliknij dwukrotnie kolumnę. (Klawiatura: Zaznacz wiersz i wybierz klawisz Enter).
+- Kliknij dwukrotnie kolumnę. (Klawiatura: Zaznacz wiersz i wybierz klawisz Enter).
 
 ### <a name="to-display-a-particular-tile-and-thread"></a>Do wyświetlania określonego fragmentu i wątku
 
-1.  Wybierz **rozwiń przełącznik wątku** przycisku z okna wątków GPU.
+1. Wybierz **rozwiń przełącznik wątku** przycisku z okna wątków GPU.
 
-2.  Wprowadź fragmentu i wątku wartości w polach tekstowych.
+2. Wprowadź fragmentu i wątku wartości w polach tekstowych.
 
-3.  Wybierz przycisk, który zawiera strzałkę znajdującą się na nim.
+3. Wybierz przycisk, który zawiera strzałkę znajdującą się na nim.
 
 ### <a name="to-display-or-hide-a-column"></a>Aby wyświetlić lub ukryć kolumny
 
--   Otwórz menu skrótów okna wątków GPU, wybierz **kolumn**, a następnie wybierz kolumnę, którą chcesz wyświetlić lub ukryć.
+- Otwórz menu skrótów okna wątków GPU, wybierz **kolumn**, a następnie wybierz kolumnę, którą chcesz wyświetlić lub ukryć.
 
 ### <a name="to-sort-by-a-column"></a>Aby sortować według kolumny
 
--   Wybierz nagłówek kolumny.
+- Wybierz nagłówek kolumny.
 
 ### <a name="to-group-threads"></a>Grupa wątków
 
--   Otwórz menu skrótów okna wątków GPU, wybierz **Group By**, a następnie wybierz jedną z nazw kolumn wyświetlane. Wybierz **Brak** rozgrupować wątków.
+- Otwórz menu skrótów okna wątków GPU, wybierz **Group By**, a następnie wybierz jedną z nazw kolumn wyświetlane. Wybierz **Brak** rozgrupować wątków.
 
 ### <a name="to-freeze-or-thaw-a-row-of-threads"></a>Na blokowanie lub odblokowywanie wątków wiersz
 
--   Otwórz menu skrótów dla wiersza, a następnie wybierz **Freeze** lub **Odblokuj**.
+- Otwórz menu skrótów dla wiersza, a następnie wybierz **Freeze** lub **Odblokuj**.
 
 ### <a name="to-flag-or-unflag-a-row-of-threads"></a>Aby Flagowanie wiersz wątków lub
 
--   Wybierz kolumnę flagę wątku, lub Otwórz menu skrótów dla wątku i wybierz **flagi** lub **Unflag**.
+- Wybierz kolumnę flagę wątku, lub Otwórz menu skrótów dla wątku i wybierz **flagi** lub **Unflag**.
 
 ### <a name="to-display-only-flagged-threads"></a>Aby wyświetlić tylko oflagowane wątki
 
--   Kliknij przycisk flagi w okno wątków GPU.
+- Kliknij przycisk flagi w okno wątków GPU.
 
 ## <a name="see-also"></a>Zobacz też
 - [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)

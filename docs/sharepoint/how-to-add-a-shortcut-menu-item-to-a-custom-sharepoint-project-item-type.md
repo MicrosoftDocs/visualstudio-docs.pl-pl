@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e28c5802b866c7fea0b1e079e2d22aecee60e690
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7de1bf04137c0e799e19e658307d630ec3fa6a78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621542"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068746"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>Instrukcje: Dodawanie pozycji menu skrótów do niestandardowego typu elementu projektu SharePoint
   Podczas definiowania niestandardowego typu elementu projektu SharePoint, można dodać element menu skrótów do elementu projektu. Element menu jest wyświetlany, gdy użytkownik kliknie prawym przyciskiem myszy element projektu w **Eksploratora rozwiązań**.
@@ -28,11 +28,11 @@ ms.locfileid: "56621542"
 
 ### <a name="to-add-a-shortcut-menu-item-to-a-custom-project-item-type"></a>Aby dodać element menu skrótów do typu elementu niestandardowego projektu
 
-1.  W <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> metody usługi <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implementacji, uchwyt <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested> zdarzenia *projectItemTypeDefinition* parametru.
+1. W <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> metody usługi <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implementacji, uchwyt <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested> zdarzenia *projectItemTypeDefinition* parametru.
 
-2.  W sieci programu obsługi zdarzeń dla <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested> zdarzeń, Dodaj nowy <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> obiekt <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.ViewMenuItems%2A> lub <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.AddMenuItems%2A> zbiór parametr argumenty zdarzenia.
+2. W sieci programu obsługi zdarzeń dla <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested> zdarzeń, Dodaj nowy <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> obiekt <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.ViewMenuItems%2A> lub <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.AddMenuItems%2A> zbiór parametr argumenty zdarzenia.
 
-3.  W <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click> programu obsługi zdarzeń dla nowego <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> obiektów, wykonywanie zadań, o których chcesz wykonać, gdy użytkownik wybierze danego elementu menu skrótów.
+3. W <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click> programu obsługi zdarzeń dla nowego <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> obiektów, wykonywanie zadań, o których chcesz wykonać, gdy użytkownik wybierze danego elementu menu skrótów.
 
 ## <a name="example"></a>Przykład
  Poniższy przykład kodu pokazuje, jak dodać element menu kontekstowego do typu elementu niestandardowego projektu. Gdy użytkownik otwiera menu skrótów elementu projektu w **Eksploratora rozwiązań** i wybiera **zapisać wiadomość do okna danych wyjściowych** elementu menu programu Visual Studio wyświetla komunikat w **dane wyjściowe**  okna.
@@ -45,9 +45,9 @@ ms.locfileid: "56621542"
 ## <a name="compile-the-code"></a>Skompilować kod
  Ten przykład wymaga projekt biblioteki klas z odwołaniami do następujących zestawów:
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-project-item"></a>Wdrożenia elementu projektu
  Aby włączyć innych deweloperzy mogą używać element projektu, należy utworzyć szablon projektu lub szablonu elementu projektu. Aby uzyskać więcej informacji, zobacz [Tworzenie elementu szablonów i szablonów projektu dla elementów projektu programu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).

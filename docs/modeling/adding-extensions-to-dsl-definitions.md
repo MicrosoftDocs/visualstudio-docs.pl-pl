@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f39c45382fc55144f8200c3951fb4a229b7a43
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: fa5c02fc28e7ffec4765d94758c838ab149e7ac3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867374"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064196"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>Dodawanie rozszerzeń do definicji języka DSL
 
@@ -20,15 +20,15 @@ Rozszerzenie definicji DSL umożliwia tworzenie pakietu rozszerzenia języka spe
 
 Rozszerzenia DSL mogą obejmować następujące funkcje:
 
--   Właściwości elementów modelu i prezentacji
+- Właściwości elementów modelu i prezentacji
 
--   Dekoratory dla kształtów i łączników
+- Dekoratory dla kształtów i łączników
 
--   Klasy, relacje, kształty i łączniki
+- Klasy, relacje, kształty i łączniki
 
--   Ograniczenia sprawdzania poprawności
+- Ograniczenia sprawdzania poprawności
 
--   Karty i elementów przybornika
+- Karty i elementów przybornika
 
 Użytkownik rozszerzonej DSL można tworzyć i zapisywanie modelu, który zawiera wystąpienia dodatkowe funkcje. Model może zostać odczytany przez innych użytkowników, którzy mają zainstalowane odpowiednie rozszerzenie. Użytkownicy, którzy nie zainstalowano rozszerzenia nie można użyć dodatkowych funkcji, ale można zaktualizować i zapisywanie modelu bez utraty dodatkowe funkcje.
 

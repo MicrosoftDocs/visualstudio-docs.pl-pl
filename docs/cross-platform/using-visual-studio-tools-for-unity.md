@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 72160388114cd3c4860d9b22cd6c75535a4819dc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: abae34aad980d42018c217e150ea72b5896e436e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669098"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073805"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Korzystanie z narzędzi Visual Studio Tools for Unity
 
@@ -200,7 +200,7 @@ Należy pamiętać, że opisanym tutaj scenariuszu założono, że kod źródło
 
    - Zmodyfikuj ustawienia kompilacji projektu biblioteki DLL, aby ustawić jej folderu danych wyjściowych **zasoby** folderu projektu środowiska Unity. Biblioteki DLL i pliku PDB, pliki zostaną umieszczone w **zasoby** folderu.
 
-   PDB, pliki są wymagane podczas debugowania, ponieważ zawiera symbole debugowania biblioteki DLL i utwórz mapę kodu, biblioteki DLL do postaci kodu źródłowego. Jeśli jest przeznaczony dla starszej wersji środowiska uruchomieniowego, Visual Studio Tools for Unity użyje informacji z biblioteki DLL i pliku PDB do tworzenia biblioteki DLL. Plik MDB format symboli debugowania jest używany przez aparat skryptów starszego aparatu Unity. Jeśli są przeznaczone dla nowego środowiska uruchomieniowego i przy użyciu pliku PDB przenośny, Visual Studio Tools for Unity nie spróbuje wykonać żadnych konwersji symbolu jako nowe środowisko uruchomieniowe Unity jest w stanie natywnie korzystanie z plików PDB przenośny.
+   PDB, pliki są wymagane podczas debugowania, ponieważ zawiera symbole debugowania biblioteki DLL i utwórz mapę kodu, biblioteki DLL do postaci kodu źródłowego. Jeśli jest przeznaczony dla starszej wersji środowiska uruchomieniowego, Visual Studio Tools for Unity użyje informacji z biblioteki DLL i pliku PDB do tworzenia biblioteki DLL. Plik MDB debugowania symbol format jest używany przez aparat skryptów starszego aparatu Unity. Jeśli są przeznaczone dla nowego środowiska uruchomieniowego i przy użyciu pliku PDB przenośny, Visual Studio Tools for Unity nie spróbuje wykonać żadnych konwersji symbolu jako nowe środowisko uruchomieniowe Unity jest w stanie natywnie korzystanie z plików PDB przenośny.
    
    Można znaleźć więcej informacji na temat generowania plików PDB [tutaj](https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-set-debug-and-release-configurations?view=vs-2019). Jeśli nowe środowisko uruchomieniowe, upewnij się, że "Informacje o debugowaniu" jest ustawiona na "Portable", aby można było prawidłowo wygenerować pliku PDB przenośny. Jeśli jest przeznaczony dla starszej wersji środowiska uruchomieniowego, należy użyć "Pełnej".
 

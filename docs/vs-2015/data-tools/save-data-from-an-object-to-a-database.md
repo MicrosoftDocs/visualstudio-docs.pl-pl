@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 120020f4ae1aa409f64ce9999c0fcd9c96e806a9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6980ecc7676afd978f8dfd243ef8f383413ad83d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659023"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074886"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Zapisywanie danych z obiektu w bazie danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Można zapisać danych w obiektach do bazy danych przez przekazanie wartości z 
   
 ### <a name="to-save-new-records-from-an-object-to-a-database"></a>Aby zapisać nowe rekordy z obiektu do bazy danych  
   
--   Tworzenie rekordów przez przekazanie wartości do `TableAdapter.Insert` metody.  
+- Tworzenie rekordów przez przekazanie wartości do `TableAdapter.Insert` metody.  
   
      Poniższy przykład tworzy nowy rekord klienta `Customers` tabeli przez przekazanie wartości w `currentCustomer` obiekt `TableAdapter.Insert` metody.  
   
@@ -54,7 +54,7 @@ Można zapisać danych w obiektach do bazy danych przez przekazanie wartości z 
   
 ### <a name="to-update-existing-records-from-an-object-to-a-database"></a>Aby zaktualizować istniejące rekordy z obiektu do bazy danych  
   
--   Modyfikowanie rekordów, wywołując `TableAdapter.Update` metody, przekazując nowe wartości w celu zaktualizowania rekordu, a w oryginalnych wartości, aby zlokalizować rekordu.  
+- Modyfikowanie rekordów, wywołując `TableAdapter.Update` metody, przekazując nowe wartości w celu zaktualizowania rekordu, a w oryginalnych wartości, aby zlokalizować rekordu.  
   
     > [!NOTE]
     >  Trzeba zachować oryginalne wartości, aby można było przekazać je do obiektu `Update` metody. W tym przykładzie użyto właściwości `orig` prefiks do przechowywania oryginalnych wartości.  
@@ -66,7 +66,7 @@ Można zapisać danych w obiektach do bazy danych przez przekazanie wartości z 
   
 ### <a name="to-delete-existing-records-from-a-database"></a>Aby usunąć istniejące rekordy z bazy danych  
   
--   Usuń rekordy przez wywołanie metody `TableAdapter.Delete` metody i przekazywanie w oryginalnej wartości do wyszukania w rekordzie.  
+- Usuń rekordy przez wywołanie metody `TableAdapter.Delete` metody i przekazywanie w oryginalnej wartości do wyszukania w rekordzie.  
   
     > [!NOTE]
     >  Trzeba zachować oryginalne wartości, aby można było przekazać je do obiektu `Delete` metody. W tym przykładzie użyto właściwości `orig` prefiks do przechowywania oryginalnych wartości.  

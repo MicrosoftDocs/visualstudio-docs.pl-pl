@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b69a06f0dff7347e5f24899552f25721e71ee818
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc5415452c6837fa92e1a37ca5d8dfe2a4dd40f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780700"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068007"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagramy przypadków użycia UML: Wytyczne dotyczące
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,71 +59,71 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
   
    Diagram przypadków użycia może być wyświetlany w przypadki użycia, które są obsługiwane przez system i podsystemów.  
   
-##  <a name="BasicSteps"></a> Podstawowe kroki rysowania diagramów przypadków użycia  
+## <a name="BasicSteps"></a> Podstawowe kroki rysowania diagramów przypadków użycia  
   
 > [!NOTE]
 >  Szczegółowe kroki tworzenia dowolnego diagramu modelowania zawiera są opisane w [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-new-use-case-diagram"></a>Aby utworzyć nowy diagram przypadków użycia  
   
-1.  Na **architektury** menu, kliknij przycisk **nowe UML lub diagramu warstwowego**.  
+1. Na **architektury** menu, kliknij przycisk **nowe UML lub diagramu warstwowego**.  
   
-2.  W obszarze **szablony**, kliknij przycisk **Diagram przypadków UMLUse**.  
+2. W obszarze **szablony**, kliknij przycisk **Diagram przypadków UMLUse**.  
   
-3.  Nadaj nazwę diagramowi.  
+3. Nadaj nazwę diagramowi.  
   
-4.  W **Dodaj do projektu modelowania**, wybierz istniejący projekt modelowania w rozwiązaniu, lub **Utwórz nowy projekt modelowania**, a następnie kliknij przycisk **OK**.  
+4. W **Dodaj do projektu modelowania**, wybierz istniejący projekt modelowania w rozwiązaniu, lub **Utwórz nowy projekt modelowania**, a następnie kliknij przycisk **OK**.  
   
 #### <a name="to-draw-a-use-case-diagram"></a>Aby narysować diagram przypadków użycia  
   
-1.  Przeciągnij **podsystemu** granice z przybornika do diagramu, do reprezentowania całego systemu lub jej główne składniki.  
+1. Przeciągnij **podsystemu** granice z przybornika do diagramu, do reprezentowania całego systemu lub jej główne składniki.  
   
-    -   Możesz narysować diagram przypadków użycia, bez systemu granice, jeśli nie chcesz do opisywania, które przypadki użycia są obsługiwane przez system lub jego składniki.  
+    - Możesz narysować diagram przypadków użycia, bez systemu granice, jeśli nie chcesz do opisywania, które przypadki użycia są obsługiwane przez system lub jego składniki.  
   
-    -   Przeciągnij rogu systemu, aby powiększyć ją, jeśli to konieczne.  
+    - Przeciągnij rogu systemu, aby powiększyć ją, jeśli to konieczne.  
   
-    -   Odpowiednio zmienić jego nazwę.  
+    - Odpowiednio zmienić jego nazwę.  
   
-2.  Przeciągnij **aktorów** z przybornika do diagramu (umieszczenie ich poza granicami dowolnego systemu).  
+2. Przeciągnij **aktorów** z przybornika do diagramu (umieszczenie ich poza granicami dowolnego systemu).  
   
-    -   Aktorzy stanowią klasy użytkowników, organizacje i systemy zewnętrzne, które współdziałają z systemem.  
+    - Aktorzy stanowią klasy użytkowników, organizacje i systemy zewnętrzne, które współdziałają z systemem.  
   
-    -   Zmień ich nazwy. Na przykład: **Klient, restauracja, agencji karty kredytowej.**  
+    - Zmień ich nazwy. Na przykład: **Klient, restauracja, agencji karty kredytowej.**  
   
-3.  Przeciągnij **przypadki użycia** z przybornika do odpowiednich systemów.  
+3. Przeciągnij **przypadki użycia** z przybornika do odpowiednich systemów.  
   
-    -   Zastosowań reprezentują działań, które aktorów wykonywać za pomocą systemu.  
+    - Zastosowań reprezentują działań, które aktorów wykonywać za pomocą systemu.  
   
-    -   Zmień je za pomocą tytułów, czy zrozumiałą aktorów, samodzielnie. Nie należy używać tytułów, które są związane z Twoim kodem. Na przykład: **Zamówienie posiłku, płacisz posiłku, dostarczanie posiłku**.  
+    - Zmień je za pomocą tytułów, czy zrozumiałą aktorów, samodzielnie. Nie należy używać tytułów, które są związane z Twoim kodem. Na przykład: **Zamówienie posiłku, płacisz posiłku, dostarczanie posiłku**.  
   
-    -   Zaczynają się od głównych transakcji, takich jak **zamówienie posiłku**, opuścić aż do nowszych mniejszych interakcji, takich jak **wybierz element Menu**.  
+    - Zaczynają się od głównych transakcji, takich jak **zamówienie posiłku**, opuścić aż do nowszych mniejszych interakcji, takich jak **wybierz element Menu**.  
   
-    -   Przypadek użycia w każdym miejscu w systemie lub główne podsystem, który obsługuję (bez uwzględnienia wszelkich fasady lub składnika uwzględnionego tylko w przypadku nawiązywania połączenia użytkownika).  
+    - Przypadek użycia w każdym miejscu w systemie lub główne podsystem, który obsługuję (bez uwzględnienia wszelkich fasady lub składnika uwzględnionego tylko w przypadku nawiązywania połączenia użytkownika).  
   
-    -   Możesz narysować przypadek użycia poza granicą systemu, aby pokazać, że jest nieobsługiwany przez system, prawdopodobnie w określonej wersji lub wydania.  
+    - Możesz narysować przypadek użycia poza granicą systemu, aby pokazać, że jest nieobsługiwany przez system, prawdopodobnie w określonej wersji lub wydania.  
   
-4.  Kliknij przycisk **skojarzenia** w przyborniku, a następnie przypadek użycia, a następnie aktora, który uczestniczy w przypadku użycia. Każdego aktora należy połączyć swoje przypadki użycia w ten sposób.  
+4. Kliknij przycisk **skojarzenia** w przyborniku, a następnie przypadek użycia, a następnie aktora, który uczestniczy w przypadku użycia. Każdego aktora należy połączyć swoje przypadki użycia w ten sposób.  
   
-5.  Struktura użycie przypadków z **Include**, **Rozszerz** i **Generalizacja** relacji. Aby utworzyć każdego z poniższych linków, kliknij narzędzie, a następnie źródła użycia, a następnie element docelowy. Zobacz następującą sekcję pod tytułem [struktury przypadki użycia](#Structuring).  
+5. Struktura użycie przypadków z **Include**, **Rozszerz** i **Generalizacja** relacji. Aby utworzyć każdego z poniższych linków, kliknij narzędzie, a następnie źródła użycia, a następnie element docelowy. Zobacz następującą sekcję pod tytułem [struktury przypadki użycia](#Structuring).  
   
-6.  Opisz przypadki użycia, które bardziej szczegółowo. Zobacz następującą sekcję pod tytułem [opisujące przypadki użycia, szczegółowo](#Details).  
+6. Opisz przypadki użycia, które bardziej szczegółowo. Zobacz następującą sekcję pod tytułem [opisujące przypadki użycia, szczegółowo](#Details).  
   
-7.  Rysuj oddzielnym diagramie, aby skoncentrować się na różnych podsystemów lub różnych grup powiązanych zastosowań. Wszystkie diagramy w jednym projekcie modelowania są widokami tego samego modelu.  
+7. Rysuj oddzielnym diagramie, aby skoncentrować się na różnych podsystemów lub różnych grup powiązanych zastosowań. Wszystkie diagramy w jednym projekcie modelowania są widokami tego samego modelu.  
   
-##  <a name="Actors"></a> Rysowanie aktorów i przypadki użycia  
+## <a name="Actors"></a> Rysowanie aktorów i przypadki użycia  
  Głównym celem diagram przypadków użycia jest pokazanie, który korzysta z systemu i głównych celów, które osiągną z nim.  
   
--   Tworzenie **aktorów** do reprezentowania klasy osoby, organizacje, innych systemów, oprogramowania lub urządzeń, które współdziałają z systemu lub podsystemu.  
+- Tworzenie **aktorów** do reprezentowania klasy osoby, organizacje, innych systemów, oprogramowania lub urządzeń, które współdziałają z systemu lub podsystemu.  
   
-    -   Aby dowiedzieć się, jak narysować aktorów i innych elementów, zobacz [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
+    - Aby dowiedzieć się, jak narysować aktorów i innych elementów, zobacz [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
   
-    -   Dla każdego zestawu różne cele zidentyfikować aktorów według ich typu lub roli, mimo że osób fizycznych lub jednostki mogą być takie same. Na przykład restauracji i odbiorcy są oddzielne aktorzy, nawet jeśli pracownik restauracji czasami może być klientem.  
+    - Dla każdego zestawu różne cele zidentyfikować aktorów według ich typu lub roli, mimo że osób fizycznych lub jednostki mogą być takie same. Na przykład restauracji i odbiorcy są oddzielne aktorzy, nawet jeśli pracownik restauracji czasami może być klientem.  
   
--   Tworzenie **przypadki użycia** dla każdego cele, które każdego aktora stara się osiągnąć za pomocą systemu.  
+- Tworzenie **przypadki użycia** dla każdego cele, które każdego aktora stara się osiągnąć za pomocą systemu.  
   
-    -   Nazwij i opisz przypadki użycia w wyrazy, które może zrozumieć aktora, zamiast warunki wdrożenia.  
+    - Nazwij i opisz przypadki użycia w wyrazy, które może zrozumieć aktora, zamiast warunki wdrożenia.  
   
--   Użyj **skojarzenia** połączyć aktorów z przypadkami użycia.  
+- Użyj **skojarzenia** połączyć aktorów z przypadkami użycia.  
   
 ### <a name="inheritance-between-actors"></a>Dziedziczenie między uczestnikami  
  ![Diagram przypadków użycia, wyświetlanie dziedziczenia](../modeling/media/uml-ucguideinherit.png "UML_UCGuideInherit")  
@@ -140,19 +140,19 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
   
 ##### <a name="to-change-the-appearance-of-an-actor"></a>Aby zmienić wygląd aktora  
   
-1.  Kliknij prawym przyciskiem myszy aktora, a następnie kliknij przycisk **właściwości**.  
+1. Kliknij prawym przyciskiem myszy aktora, a następnie kliknij przycisk **właściwości**.  
   
      **Właściwości** zostanie wyświetlone okno.  
   
-2.  Ustaw **ścieżka obrazu** właściwości do lokalizacji pliku obrazu.  
+2. Ustaw **ścieżka obrazu** właściwości do lokalizacji pliku obrazu.  
   
-    -   Można użyć dowolnego z kilku formatów obrazu, w tym GIF, jpg i .bmp.  
+    - Można użyć dowolnego z kilku formatów obrazu, w tym GIF, jpg i .bmp.  
   
-    -   Użyj pliku, który znajduje się w rozwiązanie lub projekt do kontroli źródła, tak aby jest nadal dostępna, gdy rozwiązanie jest przenoszone lub kopiowane.  
+    - Użyj pliku, który znajduje się w rozwiązanie lub projekt do kontroli źródła, tak aby jest nadal dostępna, gdy rozwiązanie jest przenoszone lub kopiowane.  
   
-3.  Do replikacji, to wygląd w inne diagramy przypadków użycia, aktor skopiować i wkleić go do innego diagramu.  
+3. Do replikacji, to wygląd w inne diagramy przypadków użycia, aktor skopiować i wkleić go do innego diagramu.  
   
-    -   Obrazu dotyczy tylko do widoku diagramu określonego. Nie ma zastosowania do podstawowego elementu modelu. Jeśli przeciągniesz aktora z Eksploratora modelu UML do innego diagramu, pojawi się jako standardowa kreska.  
+    - Obrazu dotyczy tylko do widoku diagramu określonego. Nie ma zastosowania do podstawowego elementu modelu. Jeśli przeciągniesz aktora z Eksploratora modelu UML do innego diagramu, pojawi się jako standardowa kreska.  
   
 ### <a name="multiplicities-between-actors-and-use-cases"></a>Liczebność punktów między podmiotami i przypadki użycia  
  Skojarzenie między aktora i przypadek użycia można wyświetlić *liczebność* na każdym końcu.  
@@ -202,22 +202,22 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
 ### <a name="using-an-actor-or-use-case-on-multiple-diagrams"></a>Za pomocą przypadek aktora lub użyj na wiele diagramów  
  Można wyświetlić tych samych podmiotów i kilka diagramów przypadków użycia. Na przykład:  
   
--   Możesz opisać w różnych diagramach różnych zastosowań, w których uczestniczy jeden Aktor.  
+- Możesz opisać w różnych diagramach różnych zastosowań, w których uczestniczy jeden Aktor.  
   
--   Użyj jednym diagramie, aby pokazać aktorów i podsystemy, z którymi jest skojarzony przypadek użycia i użyj innego diagramu, aby pokazać, struktury przypadek użycia do przypadków użycia uwzględniona i rozszerzonej.  
+- Użyj jednym diagramie, aby pokazać aktorów i podsystemy, z którymi jest skojarzony przypadek użycia i użyj innego diagramu, aby pokazać, struktury przypadek użycia do przypadków użycia uwzględniona i rozszerzonej.  
   
 ##### <a name="to-show-the-same-actor-or-use-case-on-different-diagrams"></a>Aby wyświetlić ten sam aktora lub przypadek użycia w różnych diagramach  
   
-1.  Utwórz aktora lub przypadek użycia na jednym diagramie.  
+1. Utwórz aktora lub przypadek użycia na jednym diagramie.  
   
-2.  Utwórz inny diagram przypadków użycia.  
+2. Utwórz inny diagram przypadków użycia.  
   
-3.  Przeciągnij aktora lub przypadek użycia poza **Eksploratora modelu** na nowego diagramu.  
+3. Przeciągnij aktora lub przypadek użycia poza **Eksploratora modelu** na nowego diagramu.  
   
     > [!NOTE]
     >  Jeśli umieścisz przy nowym diagramie aktora i przypadek użycia, które są już skojarzone, skojarzenie między nimi będzie wyświetlał nowego diagramu.  
   
-##  <a name="Details"></a> Zastosowań szczegółowo opisujący  
+## <a name="Details"></a> Zastosowań szczegółowo opisujący  
  Reprezentuje przypadek użycia:  
   
 - Celem aktora w systemie, takie jak **kupić posiłek**; oraz  
@@ -230,9 +230,9 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
   
 - Połącz przypadek użycia do innego diagramu lub diagramy w projekcie.  
   
-  -   Diagram aktywności pomaga wyjaśnić bardziej złożony proces w przypadku, gdy istnieją pętle i gałęzie równoległych wątków. Można również pokazać przepływ danych między części procesu. Aby uzyskać więcej informacji, zobacz [diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md).  
+  - Diagram aktywności pomaga wyjaśnić bardziej złożony proces w przypadku, gdy istnieją pętle i gałęzie równoległych wątków. Można również pokazać przepływ danych między części procesu. Aby uzyskać więcej informacji, zobacz [diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md).  
   
-  -   Diagram sekwencji ułatwia wyjaśnić złożonych serię interakcji między różnymi uczestnikami. Można również użyć do wyświetlenia, co się dzieje w systemie w odpowiedzi do każdego przypadku użycia. Aby uzyskać więcej informacji, zobacz [UML Sequence Diagrams: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
+  - Diagram sekwencji ułatwia wyjaśnić złożonych serię interakcji między różnymi uczestnikami. Można również użyć do wyświetlenia, co się dzieje w systemie w odpowiedzi do każdego przypadku użycia. Aby uzyskać więcej informacji, zobacz [UML Sequence Diagrams: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 - Przypadek użycia połączyć strony programu OneNote, sekcji lub akapit, który opisuje przypadek użycia szczegółowo.  
   
@@ -240,41 +240,41 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
   
 #### <a name="to-link-a-use-case-to-a-diagram-or-file-in-the-same-solution"></a>Aby połączyć przypadek użycia na diagramie lub pliku w tym samym rozwiązaniu  
   
-1.  Rysowanie diagramu, takich jak diagram sekwencji lub diagram aktywności, aby zilustrować scenariusza przypadku użycia.  
+1. Rysowanie diagramu, takich jak diagram sekwencji lub diagram aktywności, aby zilustrować scenariusza przypadku użycia.  
   
-2.  Wróć do diagram przypadków użycia.  
+2. Wróć do diagram przypadków użycia.  
   
-3.  Przeciągnij na diagramie lub w pliku z Eksploratora rozwiązań na pustą część diagramu przypadków użycia.  
+3. Przeciągnij na diagramie lub w pliku z Eksploratora rozwiązań na pustą część diagramu przypadków użycia.  
   
-4.  Łączenie z artefaktu do przypadków użycia za pomocą **zależności**.  
+4. Łączenie z artefaktu do przypadków użycia za pomocą **zależności**.  
   
 #### <a name="to-link-to-a-solution-file-such-as-a-word-document-or-powerpoint-presentation"></a>Aby utworzyć łącze do pliku rozwiązania, takie jak dokument programu Word lub prezentacji programu PowerPoint  
   
-1.  Zapis dokumentu, który używa tekstu, zrzuty ekranu i tak dalej do opisania scenariusza przypadku użycia.  
+1. Zapis dokumentu, który używa tekstu, zrzuty ekranu i tak dalej do opisania scenariusza przypadku użycia.  
   
-2.  Dodaj dokument do rozwiązania.  
+2. Dodaj dokument do rozwiązania.  
   
-    1.  W tym samym folderze Windows jako rozwiązanie, należy przenieść dokument programu Word.  
+    1. W tym samym folderze Windows jako rozwiązanie, należy przenieść dokument programu Word.  
   
-    2.  W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy rozwiązanie, wskaż opcję **Dodaj**, a następnie kliknij przycisk **istniejący element**.  
+    2. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy rozwiązanie, wskaż opcję **Dodaj**, a następnie kliknij przycisk **istniejący element**.  
   
-    3.  Przejdź do dokumentu programu Word, a następnie kliknij przycisk **Dodaj**.  
+    3. Przejdź do dokumentu programu Word, a następnie kliknij przycisk **Dodaj**.  
   
          Dokument programu Word pojawia się w folderze rozwiązania w Eksploratorze rozwiązań.  
   
-3.  Przeciągnij dokument programu Word za pomocą Eksploratora rozwiązań na pustą część diagramu przypadków użycia.  
+3. Przeciągnij dokument programu Word za pomocą Eksploratora rozwiązań na pustą część diagramu przypadków użycia.  
   
      Pojawi się nowy artefaktu.  
   
-4.  Łączenie z artefaktu do przypadków użycia za pomocą **zależności**.  
+4. Łączenie z artefaktu do przypadków użycia za pomocą **zależności**.  
   
 #### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Aby utworzyć łącze do dokumentu udostępnionego, OneNote element lub strony sieci web  
   
-1.  Uzyskaj adres URL udostępniony element. Może to być na przykład początku ścieżki pliku sieci "\\\\", lub strony sieci web lub początkowy adres URL programu Sharepoint "http://" lub łącze do sekcji programu OneNote, strony, akapitu początku "onenote:".  
+1. Uzyskaj adres URL udostępniony element. Może to być na przykład początku ścieżki pliku sieci "\\\\", lub strony sieci web lub początkowy adres URL programu Sharepoint "http://" lub łącze do sekcji programu OneNote, strony, akapitu początku "onenote:".  
   
-2.  W przyborniku kliknij **artefaktu** a następnie kliknij przycisk na diagramie przypadku użycia.  
+2. W przyborniku kliknij **artefaktu** a następnie kliknij przycisk na diagramie przypadku użycia.  
   
-3.  Za pomocą nowego artefaktu wybrane, wpisz lub wklej adres URL do **hiperłącze** właściwości.  
+3. Za pomocą nowego artefaktu wybrane, wpisz lub wklej adres URL do **hiperłącze** właściwości.  
   
 > [!NOTE]
 >  Możesz kliknąć dwukrotnie artefakt Otwórz diagram lub dokumentów, do której łączy.  
@@ -284,13 +284,13 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
   
  Dzięki temu można:  
   
--   Opisano w przypadku użycia połączonego elementu roboczego. W szczególności jeśli projekt używa programu Visual Studio formalnego szablonu procesu, możesz połączyć element roboczy przypadku użycia. Ten typ elementu roboczego zawiera pola do opisywania celów i scenariuszy przypadków użycia.  
+- Opisano w przypadku użycia połączonego elementu roboczego. W szczególności jeśli projekt używa programu Visual Studio formalnego szablonu procesu, możesz połączyć element roboczy przypadku użycia. Ten typ elementu roboczego zawiera pola do opisywania celów i scenariuszy przypadków użycia.  
   
--   Połącz przypadki testowe z przypadek użycia, dzięki czemu można uzyskać raporty, w jakim kod opracowywane implementuje przypadek użycia.  
+- Połącz przypadki testowe z przypadek użycia, dzięki czemu można uzyskać raporty, w jakim kod opracowywane implementuje przypadek użycia.  
   
--   Łączenie zadań do przypadku użycia tak, aby można było śledzić postęp prac rozwojowych.  
+- Łączenie zadań do przypadku użycia tak, aby można było śledzić postęp prac rozwojowych.  
   
-##  <a name="Structuring"></a> Tworzenie struktury przypadki użycia  
+## <a name="Structuring"></a> Tworzenie struktury przypadki użycia  
  Należy próbować opisują zachowania systemu przy użyciu zaledwie kilku głównych zastosowań. Każdy przypadek użycia dużych definiuje cel główne, pozwalającej aktora, takich jak kupowanie produktu lub z punktu widzenia dostawcy oferuje produkty do sprzedaży.  
   
  Po dokonaniu tych celów, wyczyść możesz bardziej szczegółowo, jak uzyskuje się każdy cel i różnice w podstawowe cele.  
@@ -299,13 +299,13 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
   
  Na diagramie przypadku użycia można podsumować w relacji między przypadkami użycia głównych i bardziej szczegółowe. W poniższych sekcjach opisano to:  
   
--   [Wyświetlanie szczegółów przypadek użycia za pomocą dołączania](#Include)  
+- [Wyświetlanie szczegółów przypadek użycia za pomocą dołączania](#Include)  
   
--   [Udostępnianie cele Generalizacja](#Inheritance)  
+- [Udostępnianie cele Generalizacja](#Inheritance)  
   
--   [Oddzielanie wariantu przypadków z rozszerzenie](#Extend)  
+- [Oddzielanie wariantu przypadków z rozszerzenie](#Extend)  
   
-###  <a name="Include"></a> Wyświetlanie szczegółów przypadek użycia za pomocą dołączania  
+### <a name="Include"></a> Wyświetlanie szczegółów przypadek użycia za pomocą dołączania  
  Użyj **Include** relacji, aby wyświetlić ten przypadek użycia jednego opisano niektóre szczegóły każdego innego. Na ilustracji **zamówienie posiłku** obejmuje **płacić**, **wybierz Menu**, i **wybierz element Menu**. Każdy z przypadkami użycia uwzględniona, bardziej szczegółowe jest krokiem, który aktora lub aktorów, może być konieczne przeprowadzenie do osiągnięcia celu ogólnej, w tym przypadku użycia. Strzałkę powinien wskazywać w przypadku użycia bardziej szczegółowe, dołączone.  
   
 > [!CAUTION]
@@ -319,11 +319,11 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
   
  Oddzielanie przypadki użycia w tym i części uwzględnione przydaje się do osiągnięcia następujących celów:  
   
--   Struktury opisów przypadków użycia w różnych warstwach szczegółów.  
+- Struktury opisów przypadków użycia w różnych warstwach szczegółów.  
   
--   Należy unikać powtarzania udostępnionego scenariuszy w różnych przypadków użycia.  
+- Należy unikać powtarzania udostępnionego scenariuszy w różnych przypadków użycia.  
   
-####  <a name="Steps"></a> Definiowanie kolejności szczegółowy opis kroków  
+#### <a name="Steps"></a> Definiowanie kolejności szczegółowy opis kroków  
  Diagram przypadków użycia nie mówi nic o kolejność, w którym należy wykonać bardziej szczegółowy opis kroków, ani, czy każdy z nich zawsze jest konieczne.  
   
  Aby kolejność wyczyść kroki, możesz użyć **artefaktu** można dołączyć oddzielny dokument dotyczące przypadek użycia. W poniższym przykładzie diagram aktywności dołączone do zlecenia posiłku przypadek użycia. Alternatywnie można użyć dokument tekstowy, który zawiera listę kroków lub sekwencję zrzuty ekranu. Aby uzyskać więcej informacji, zobacz [opisujące przypadki użycia, szczegółowo](#Details).  
@@ -338,7 +338,7 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
   
   ![Wykonaj kroki wielkości liter pokazano na diagramie połączone działanie](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")  
   
-###  <a name="Inheritance"></a> Udostępnianie cele Generalizacja  
+### <a name="Inheritance"></a> Udostępnianie cele Generalizacja  
  Użyj relację generalizacji, aby pokazać, że *wyspecjalizowane* przypadkiem użycia jest określony sposób, aby osiągnąć cele wyrażona przez inny *ogólne* przypadek użycia. Otwórz grot strzałki powinien wskazywać na bardziej ogólnych przypadek użycia.  
   
  ![Zastosowań przedstawiający relację generalizacji](../modeling/media/uml-ucguidegeneral.png "UML_UCGuideGeneral")  
@@ -354,21 +354,21 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
   
 ##### <a name="to-refactor-common-goals-from-two-or-more-use-cases"></a>Refaktoryzacja wspólnych celów z co najmniej dwa przypadki użycia  
   
-1.  Utwórz i nazwy ogólne nowy przypadek użycia.  
+1. Utwórz i nazwy ogólne nowy przypadek użycia.  
   
-2.  Tworzenie **Generalizacja** relacji o dużych strzałka wskazująca w nowym przypadku użycia ogólne.  
+2. Tworzenie **Generalizacja** relacji o dużych strzałka wskazująca w nowym przypadku użycia ogólne.  
   
-    1.  Kliknij przycisk **Generalizacja** w przyborniku.  
+    1. Kliknij przycisk **Generalizacja** w przyborniku.  
   
-    2.  Kliknij przycisk przypadek użycia wyspecjalizowane (**zapłacić kartą kredytową** w przykładzie).  
+    2. Kliknij przycisk przypadek użycia wyspecjalizowane (**zapłacić kartą kredytową** w przykładzie).  
   
-    3.  Kliknij przycisk przypadek użycia ogólne (**płacić** w przykładzie).  
+    3. Kliknij przycisk przypadek użycia ogólne (**płacić** w przykładzie).  
   
-3.  Jeśli mają opisano cele dla przypadków użycia specjalistyczne, Przenieś przypadków użycia wspólnego części w opisie ogólne.  
+3. Jeśli mają opisano cele dla przypadków użycia specjalistyczne, Przenieś przypadków użycia wspólnego części w opisie ogólne.  
   
-4.  Aktorów, które są współużytkowane między przypadkami użycia wyspecjalizowane mogą być przenoszone do przypadku użycia ogólne.  
+4. Aktorów, które są współużytkowane między przypadkami użycia wyspecjalizowane mogą być przenoszone do przypadku użycia ogólne.  
   
-###  <a name="Extend"></a> Oddziel wariantu przypadkach rozszerzenie  
+### <a name="Extend"></a> Oddziel wariantu przypadkach rozszerzenie  
  Użyj linku rozszerzenie, aby pokazać, że jeden przypadek użycia może dodać funkcje do innego przypadku użycia w pewnych okolicznościach. Strzałkę powinien wskazywać na przypadek użycia głównym, rozszerzoną.  
   
  ![Przypadek użycia jednej, innej rozszerzanie](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")  
@@ -384,11 +384,11 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
   
 2. Tworzenie **Rozszerz** relacji o strzałka wskazująca w przypadku rozszerzonego użycia.  
   
-   1.  Kliknij przycisk **Rozszerz** w przyborniku.  
+   1. Kliknij przycisk **Rozszerz** w przyborniku.  
   
-   2.  Kliknij przycisk rozszerzanie przypadek użycia (**rejestrowanie nowego użytkownika** w przykładzie).  
+   2. Kliknij przycisk rozszerzanie przypadek użycia (**rejestrowanie nowego użytkownika** w przykładzie).  
   
-   3.  Kliknij przycisk przypadku rozszerzonego użycia (**logowania** w przykładzie).  
+   3. Kliknij przycisk przypadku rozszerzonego użycia (**logowania** w przykładzie).  
   
        > [!NOTE]
        >  Unikaj tworzenia pętlę relacji rozszerzenie na diagramie. Jest niepoprawny dla przypadek użycia jako rozszerzenie samego siebie.  
@@ -401,13 +401,13 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
   
    Oddzielanie rozszerzenia może być przydatne do opisywania tych sytuacji:  
   
--   Brak dodatkowych aktorów, którzy są zaangażowani tylko w przypadku użycia rozszerzenia. Na przykład administrator musi zatwierdzić rejestracji klienta w witrynie sieci Web.  
+- Brak dodatkowych aktorów, którzy są zaangażowani tylko w przypadku użycia rozszerzenia. Na przykład administrator musi zatwierdzić rejestracji klienta w witrynie sieci Web.  
   
--   Oddzielne podsystemu poradzi sobie z przypadkami użycia rozszerzenia.  
+- Oddzielne podsystemu poradzi sobie z przypadkami użycia rozszerzenia.  
   
--   Rozszerzenie to będzie dostępna tylko w określonych wersjach systemu. Każda wersja można wyświetlić jako osobne podsystem na diagramie przypadku użycia.  
+- Rozszerzenie to będzie dostępna tylko w określonych wersjach systemu. Każda wersja można wyświetlić jako osobne podsystem na diagramie przypadku użycia.  
   
-##  <a name="Subsystems"></a> Za pomocą podsystemu granice  
+## <a name="Subsystems"></a> Za pomocą podsystemu granice  
  Użyj granicą podsystemu, aby pokazać, co przypadki użycia znajdują się w zakresie systemu.  
   
 #### <a name="to-draw-a-subsystem-boundary"></a>Aby narysować granicą podsystemu  

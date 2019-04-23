@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 60231333a084ef62e069f3e3aba9bee8bd25daed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4ade2b369cd1c9e0371acacfcd63b06a2d89e58a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797566"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066711"
 ---
 # <a name="how-to-start-spy"></a>Instrukcje: Uruchamianie programu Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Można uruchomić programu Spy ++ w programie Visual Studio lub w wierszu polece
   
 ### <a name="to-start-spy-from-visual-studio"></a>Aby uruchomić narzędzie Spy ++ w programie Visual Studio  
   
--   Na **narzędzia** menu, kliknij przycisk **Spy ++**.  
+- Na **narzędzia** menu, kliknij przycisk **Spy ++**.  
   
      Ponieważ Spy ++ działa niezależnie od siebie, po jego uruchomieniu, możesz zamknąć program Visual Studio.  
   
@@ -39,9 +39,9 @@ Można uruchomić programu Spy ++ w programie Visual Studio lub w wierszu polece
   
 ### <a name="to-start-spy-at-a-command-prompt"></a>Aby uruchomić narzędzie Spy ++ w wierszu polecenia  
   
-1.  W oknie wiersza polecenia Zmień katalogi na folder, który zawiera spyxx.exe. Zazwyczaj jest ścieżka do tego folderu... \\ *Folder instalacji programu visual Studio*\Common7\Tools\\.  
+1. W oknie wiersza polecenia Zmień katalogi na folder, który zawiera spyxx.exe. Zazwyczaj jest ścieżka do tego folderu... \\ *Folder instalacji programu visual Studio*\Common7\Tools\\.  
   
-2.  Typ **spyxx.exe** i naciśnij klawisz ENTER.  
+2. Typ **spyxx.exe** i naciśnij klawisz ENTER.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md)   

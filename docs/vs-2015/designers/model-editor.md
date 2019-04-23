@@ -12,12 +12,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9247eae19d32ecc21069836d52192e7d466de1b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 370f6992fb044f5bd7f3593e63afeab46c82830b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802843"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072295"
 ---
 # <a name="model-editor"></a>Edytor kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
   
 #### <a name="to-add-a-3-d-model-to-your-project"></a>Aby dodać model 3-W do projektu  
   
-1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, który chcesz dodać obraz do, a następnie wybierz **Dodaj**, **nowy element**.  
+1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, który chcesz dodać obraz do, a następnie wybierz **Dodaj**, **nowy element**.  
   
-2.  W **Dodaj nowy element** dialogowego **zainstalowane**, wybierz opcję **grafiki**, a następnie wybierz pozycję **Scena 3D (.fbx)**.  
+2. W **Dodaj nowy element** dialogowego **zainstalowane**, wybierz opcję **grafiki**, a następnie wybierz pozycję **Scena 3D (.fbx)**.  
   
-3.  Określ **nazwa** pliku modelu i **lokalizacji** której ma zostać utworzony.  
+3. Określ **nazwa** pliku modelu i **lokalizacji** której ma zostać utworzony.  
   
-4.  Wybierz **Dodaj** przycisku.  
+4. Wybierz **Dodaj** przycisku.  
   
 ### <a name="axis-orientation"></a>Orientacja osi  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] obsługuje każdą orientację osi 3-w i ładuje informacje o orientacji osi z formatów plików modeli, które go obsługują. Jeśli określono nie orientacji osi, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] domyślnie używa prawostronnego układu współrzędnych. **Wskaźnik osi** pokazuje bieżącą orientację osi w prawym dolnym rogu powierzchni projektowej. Na **wskaźnik osi**kolor czerwony odpowiada osi x, zielony reprezentuje oś y, a niebieski odpowiada osi z.  
@@ -132,7 +132,7 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
 ### <a name="viewing-additional-geometry-details"></a>Wyświetlanie dodatkowych szczegółów geometrii  
  Aby lepiej zrozumieć obiekt lub scenę 3-W, można wyświetlić dodatkowe szczegóły geometrii, np. normalne wierzchołka, normalne powierzchni, punkty obrotu aktywnego zaznaczenia i inne szczegóły. Aby je włączyć lub wyłączyć, na **edytora modelu** narzędzi wybierz **skrypty**, **widoku**, a następnie wybierz żądaną opcję.  
   
-###  <a name="Adding3DObjects"></a> Tworzenie i importowanie obiektów 3-w  
+### <a name="Adding3DObjects"></a> Tworzenie i importowanie obiektów 3-w  
  Aby dodać wstępnie zdefiniowany kształt 3-w do sceny, w **przybornika**, wybierz jedną, a następnie przenieś go do powierzchni projektowej. Nowe kształty są umieszczane w źródle sceny. Edytor modelu zawiera siedem kształtów: **Stożek**, **modułu**, **Cylinder**, **dysku**, **płaszczyzny**, **kuli**i **Czajniczek**.  
   
  Aby importować obiekt 3-w z pliku, na **edytora modelu** narzędzi wybierz **zaawansowane**, **Zarządzanie sceną**, **zaimportować**, a następnie określ plik, który chcesz zaimportować.  
@@ -144,11 +144,11 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
   
 ##### <a name="to-transform-an-object-by-using-modeling-tools"></a>Aby przekształcić obiekt za pomocą narzędzi do modelowania  
   
-1.  W **wybierz** tryb, wybierz obiekt, który chcesz przekształcić. Nakładka szkieletowa wskazuje, że obiekt jest wybrany.  
+1. W **wybierz** tryb, wybierz obiekt, który chcesz przekształcić. Nakładka szkieletowa wskazuje, że obiekt jest wybrany.  
   
-2.  Na **edytora modelu** narzędzi, wybierz **Translate**, **skalowania**, lub **Obróć** narzędzia. Dla wybranego obiektu pojawia się manipulator przesunięcia, skalowania lub obrotu.  
+2. Na **edytora modelu** narzędzi, wybierz **Translate**, **skalowania**, lub **Obróć** narzędzia. Dla wybranego obiektu pojawia się manipulator przesunięcia, skalowania lub obrotu.  
   
-3.  Użyj manipulatora do wykonania przekształcenia. Dla przekształceń przesunięcia i skalowania manipulator jest wskaźnikiem osi. Jednocześnie można zmienić jedną oś lub można zmienić wszystkie osie jednocześnie przy użyciu białego sześcianu w środku wskaźnika. Dla obrotu manipulator to sfera wykonana z kolorowych okręgów, które odpowiadają osi x (czerwony), osi y (zielony) i osi z (niebieski). Należy zmienić każdą z osi osobno, aby utworzyć żądany obrót.  
+3. Użyj manipulatora do wykonania przekształcenia. Dla przekształceń przesunięcia i skalowania manipulator jest wskaźnikiem osi. Jednocześnie można zmienić jedną oś lub można zmienić wszystkie osie jednocześnie przy użyciu białego sześcianu w środku wskaźnika. Dla obrotu manipulator to sfera wykonana z kolorowych okręgów, które odpowiadają osi x (czerwony), osi y (zielony) i osi z (niebieski). Należy zmienić każdą z osi osobno, aby utworzyć żądany obrót.  
   
 ##### <a name="to-transform-an-object-by-setting-its-properties"></a>Aby przekształcić obiekt przez ustawienie jego właściwości  
   
@@ -173,16 +173,16 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
 ### <a name="world-and-local-modes"></a>Tryby lokalne i świata  
  Przesunięcie i obrót mogą występować albo w lokalnym układzie współrzędnych (lub *lokalnej ramce odniesienia*) obiektu, albo w układzie współrzędnych świata (lub *ramce odniesienia world*). Światowa ramka odniesienia nie zależy od obrotu obiektu. Tryb lokalny jest opcją domyślną. Aby włączyć (lub wyłączyć) tryb świata, na **tryb edytora modelu** narzędzi, wybierz **WorldLocal** przycisku.  
   
-###  <a name="ModifyingObjects"></a> Modyfikowanie obiektów  
+### <a name="ModifyingObjects"></a> Modyfikowanie obiektów  
  Kształt obiektu 3-W można zmienić, przenosząc lub usuwając jego wierzchołki, krawędzie i powierzchnie. Domyślnie Edytor modelu jest w *trybie obiektu*, dzięki czemu można wybierać i przekształcać całe obiekty. Aby wybrać punkty, krawędzie lub powierzchnie, wybierz odpowiedni tryb wyboru. Na **tryb edytora modelu** narzędzi, wybierz **tryby wyboru**, a następnie wybierz żądany tryb.  
   
  Dodatkowe wierzchołki można utworzyć za pomocą wyciągnięcia lub podpodziału. Wyciągnięcie duplikuje wierzchołki powierzchni (zestaw współpłaszczyznowych wierzchołków), które pozostają połączone przez zduplikowane wierzchołki. Podpodział dodaje wierzchołki, aby utworzyć wiele płaszczyzn tam, gdzie do tej pory była jedna. Aby utworzyć nowe powierzchnie, dodawane są nowe wierzchołki — jeden w środku oryginalnej powierzchni i jeden w połowie każdej krawędzi — które następnie są łączone z oryginalnymi wierzchołkami. Liczba dodanych powierzchni jest równa liczbie krawędzi oryginalnej powierzchni. W obu przypadkach można przesuwać, obracać i skalować nowe wierzchołki, aby zmienić geometrię obiektu.  
   
 ##### <a name="to-extrude-a-face-from-an-object"></a>Aby wyciągnąć powierzchnię z obiektu  
   
-1.  W trybie zaznaczania powierzchni zaznacz powierzchnię, którą chcesz wyciągnąć.  
+1. W trybie zaznaczania powierzchni zaznacz powierzchnię, którą chcesz wyciągnąć.  
   
-2.  Na **edytora modelu** narzędzi, wybierz **skrypty**, **narzędzia**, **wyciągnięcie**.  
+2. Na **edytora modelu** narzędzi, wybierz **skrypty**, **narzędzia**, **wyciągnięcie**.  
   
 ##### <a name="to-subdivide-faces"></a>Aby podpodzielić twarze  
   
@@ -194,21 +194,21 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
   
 ##### <a name="to-triangulate-a-face"></a>Aby przeprowadzić triangulację powierzchni  
   
-1.  W trybie zaznaczania powierzchni zaznacz powierzchnię, dla której chcesz dokonać triangulacji.  
+1. W trybie zaznaczania powierzchni zaznacz powierzchnię, dla której chcesz dokonać triangulacji.  
   
-2.  Na **edytora modelu** narzędzi, wybierz **skrypty**, **narzędzia**, **triangulacja**.  
+2. Na **edytora modelu** narzędzi, wybierz **skrypty**, **narzędzia**, **triangulacja**.  
   
 ##### <a name="to-merge-objects"></a>Aby scalić obiekty  
   
-1.  W trybie zaznaczania obiektów zaznacz obiekty, które chcesz scalić.  
+1. W trybie zaznaczania obiektów zaznacz obiekty, które chcesz scalić.  
   
-2.  Na **edytora modelu** narzędzi, wybierz **skrypty**, **narzędzia**, **Scal obiekty**.  
+2. Na **edytora modelu** narzędzi, wybierz **skrypty**, **narzędzia**, **Scal obiekty**.  
   
 ##### <a name="to-create-an-object-from-a-polygon-selection"></a>Aby utworzyć obiekt z zaznaczenia wielokątnego  
   
-1.  W trybie zaznaczania powierzchni zaznacz powierzchnie, z których chcesz utworzyć nowy obiekt.  
+1. W trybie zaznaczania powierzchni zaznacz powierzchnie, z których chcesz utworzyć nowy obiekt.  
   
-2.  Na **edytora modelu** narzędzi, wybierz **skrypty**, **narzędzia**, **Utwórz nowy obiekt z zaznaczenia wielokątnego**.  
+2. Na **edytora modelu** narzędzi, wybierz **skrypty**, **narzędzia**, **Utwórz nowy obiekt z zaznaczenia wielokątnego**.  
   
 ### <a name="working-with-materials-and-shaders"></a>Praca z materiałami i modułami cieniującymi  
  Wygląd obiektu zależy od interakcji oświetlenia i materiału obiektu w scenie. Materiały są definiowane przez właściwości, które opisują, jak powierzchnia reaguje na różne typy światła, oraz przez program do cieniowania, który oblicza końcowy kolor każdego piksela na powierzchni obiektu na podstawie informacji o oświetleniu, map tekstur, map normalnych i innych danych.  
@@ -248,9 +248,9 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
   
 ##### <a name="to-create-a-hierarchy-that-has-a-parent-object"></a>Aby utworzyć hierarchię zawierającą obiekt nadrzędny  
   
-1.  W **wybierz** tryb, wybierz dwa lub więcej obiektów. Pierwszy wybrany będzie obiektem nadrzędnym.  
+1. W **wybierz** tryb, wybierz dwa lub więcej obiektów. Pierwszy wybrany będzie obiektem nadrzędnym.  
   
-2.  Na **edytora modelu** narzędzi, wybierz **skrypty**, **Zarządzanie sceną**, **Dołącz do nadrzędnego**.  
+2. Na **edytora modelu** narzędzi, wybierz **skrypty**, **Zarządzanie sceną**, **Dołącz do nadrzędnego**.  
   
 ##### <a name="to-create-a-hierarchy-of-sibling-objects"></a>Aby utworzyć obiekty hierarchii elementów równorzędnych  
   

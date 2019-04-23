@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8474bd6550bb57a51bfb6e2c585a333f05d3c1d9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c94b33fad50cb5e271615629641ea7307f669255
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652413"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072568"
 ---
 # <a name="property-functions"></a>Funkcje właściwości
 
@@ -177,7 +177,7 @@ Poniżej przedstawiono listę funkcji właściwości programu MSBuild:
 |ciąg MakeRelative (basePath ciąg, ciąg ścieżki)|Sprawia, że `path` względem `basePath`. `basePath` musi być bezwzględna katalogu. Jeśli `path` nie mogą być wprowadzane względną, jest zwracana verbatim. Podobnie jak `Uri.MakeRelativeUri`.|
 |ciąg ValueOrDefault (conditionValue ciąg, ciąg defaultValue)|Zwraca ciąg w parametrze "defaultValue" tylko wtedy, gdy parametr "conditionValue" jest pusta, w przeciwnym razie, zwraca conditionValue wartość.|
 
-##  <a name="nested-property-functions"></a>Funkcje zagnieżdżonych właściwości
+## <a name="nested-property-functions"></a>Funkcje zagnieżdżonych właściwości
 
 Można łączyć funkcje właściwości formularza bardziej złożone funkcje, co ilustruje poniższy przykład.
 

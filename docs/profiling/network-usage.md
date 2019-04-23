@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d342a3746b081a47e68e781c2c18b7fbc4fe0b33
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e9fb62abc7765d65c394e92b9a5e4cfa5fbe3fd1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606098"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063052"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analizowanie użycia sieci w aplikacjach platformy UWP
 Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacje sieciowe, wykonywane przy użyciu [Windows.Web.Http API](/uwp/api/windows.web.http). Analizowanie danych może pomóc rozwiązać problemy, takie jak problemy dostępu i uwierzytelniania, nieprawidłowe użycie pamięci podręcznej i wyświetlania jest niska i pobrać wydajności.
@@ -65,11 +65,11 @@ Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacje
 ### <a name="analysis-tips"></a>Wskazówki dotyczące analizy
  To narzędzie wyróżnione niektóre obszary, które mogą być przydatne podczas korzystania z analizy związanych z siecią:
 
-1.  Żądania, które są w pełni obsługiwane z pamięci podręcznej są wyświetlane jako **(z pamięci podręcznej)** w **odebrane** kolumny. To może pomóc w określeniu, czy używasz pamięci podręcznej skutecznie aby oszczędzić przepustowość użytkownika lub tego, czy buforowanie odpowiedzi przez pomyłkę i podając użytkowników końcowych w aplikacji za pomocą nieaktualne dane.
+1. Żądania, które są w pełni obsługiwane z pamięci podręcznej są wyświetlane jako **(z pamięci podręcznej)** w **odebrane** kolumny. To może pomóc w określeniu, czy używasz pamięci podręcznej skutecznie aby oszczędzić przepustowość użytkownika lub tego, czy buforowanie odpowiedzi przez pomyłkę i podając użytkowników końcowych w aplikacji za pomocą nieaktualne dane.
 
-2.  Odpowiedzi na błędy (4xx lub 5xx) są wyświetlane w **wyniki** kolumny z czerwonym oznaczeniem stanu kodu i są również wyróżnione na pasku podsumowania. Dzięki temu ułatwiają błędów między wiele potencjalnych żądań w swojej aplikacji.
+2. Odpowiedzi na błędy (4xx lub 5xx) są wyświetlane w **wyniki** kolumny z czerwonym oznaczeniem stanu kodu i są również wyróżnione na pasku podsumowania. Dzięki temu ułatwiają błędów między wiele potencjalnych żądań w swojej aplikacji.
 
-3.  Przycisk Drukowanie pretty odpowiedzi (wewnątrz karta Treść) może pomóc w przeanalizować za pomocą formatu JSON, XML, HTML, CSS, JavaScript i TypeScript ładunków odpowiedzi przez zwiększenie czytelności zawartości.
+3. Przycisk Drukowanie pretty odpowiedzi (wewnątrz karta Treść) może pomóc w przeanalizować za pomocą formatu JSON, XML, HTML, CSS, JavaScript i TypeScript ładunków odpowiedzi przez zwiększenie czytelności zawartości.
 
 ## <a name="see-also"></a>Zobacz także
 

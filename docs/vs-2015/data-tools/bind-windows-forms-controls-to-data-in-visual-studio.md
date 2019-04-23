@@ -23,12 +23,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 866b2b824735ed96615880350343d17adfeecefc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0f2bd51570c8ad1976b6fc9eb5674177f9342833
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654010"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069461"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Powiązywanie kontrolek formularzy Windows Forms z danymi w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,21 +41,21 @@ Możesz wyświetlić dane użytkownikom aplikacji przez powiązanie danych do fo
 
 ## <a name="in-this-section"></a>W tej sekcji
 
--   [Powiązywanie kontrolek Windows Forms z danymi](../data-tools/bind-windows-forms-controls-to-data.md)
+- [Powiązywanie kontrolek Windows Forms z danymi](../data-tools/bind-windows-forms-controls-to-data.md)
 
--   [Zatwierdzanie edycji wewnątrzprocesowych w ramach kontrolek powiązanych z danymi przed zapisaniem danych](../data-tools/commit-in-process-edits-on-data-bound-controls-before-saving-data.md)
+- [Zatwierdzanie edycji wewnątrzprocesowych w ramach kontrolek powiązanych z danymi przed zapisaniem danych](../data-tools/commit-in-process-edits-on-data-bound-controls-before-saving-data.md)
 
--   [Tworzenie tabel wyszukiwania w aplikacjach Windows Forms](../data-tools/create-lookup-tables-in-windows-forms-applications.md)
+- [Tworzenie tabel wyszukiwania w aplikacjach Windows Forms](../data-tools/create-lookup-tables-in-windows-forms-applications.md)
 
--   [Tworzenie formularza Windows Forms na potrzeby wyszukiwania danych](../data-tools/create-a-windows-form-to-search-data.md)
+- [Tworzenie formularza Windows Forms na potrzeby wyszukiwania danych](../data-tools/create-a-windows-form-to-search-data.md)
 
--   [Tworzenie kontrolki użytkownika aplikacji Windows Forms obsługującego proste powiązanie danych](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)
+- [Tworzenie kontrolki użytkownika aplikacji Windows Forms obsługującego proste powiązanie danych](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)
 
--   [Tworzenie kontrolki użytkownika aplikacji Windows Forms obsługującego złożone powiązanie danych](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)
+- [Tworzenie kontrolki użytkownika aplikacji Windows Forms obsługującego złożone powiązanie danych](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)
 
--   [Tworzenie kontrolki użytkownika aplikacji Windows Forms obsługującego powiązanie danych wyszukiwania](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)
+- [Tworzenie kontrolki użytkownika aplikacji Windows Forms obsługującego powiązanie danych wyszukiwania](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)
 
--   [Przekazywanie danych między formularzami](../data-tools/pass-data-between-forms.md)
+- [Przekazywanie danych między formularzami](../data-tools/pass-data-between-forms.md)
 
 ## <a name="bindingsource-component"></a>BindingSource — składnik
  <xref:System.Windows.Forms.BindingSource> Składnika służy do dwóch celów. Po pierwsze zapewnia warstwę abstrakcji podczas powiązywanie kontrolek w formularzu z danymi. Formanty formularza jest powiązana z <xref:System.Windows.Forms.BindingSource> składnika (zamiast związania bezpośrednio ze źródłem danych).
@@ -64,11 +64,11 @@ Możesz wyświetlić dane użytkownikom aplikacji przez powiązanie danych do fo
 
  Aby uzyskać więcej informacji na temat <xref:System.Windows.Forms.BindingSource> składników, zobacz:
 
--   [BindingSource, składnik](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
+- [BindingSource, składnik](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
 
--   [BindingSource, składnik — omówienie](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
+- [BindingSource, składnik — omówienie](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
 
--   [BindingSource, składnik — architektura](http://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
+- [BindingSource, składnik — architektura](http://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
 
 ## <a name="bindingnavigator-control"></a>BindingNavigator — kontrolka
  Ten składnik udostępnia interfejs użytkownika do przechodzenia między danymi wyświetlanymi przez aplikację Windows. Aby uzyskać więcej informacji, zobacz [BindingNavigator — kontrolka](http://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).

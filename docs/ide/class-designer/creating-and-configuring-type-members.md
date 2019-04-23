@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 962b3ef149730772c01c8cfe3a3bf026d59fd3b0
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 39932fe8d4afa31c66d6daa4af33d963b5612eb2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324243"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073844"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Tworzenie i konfigurowanie składowych typu w Projektancie klas
 
@@ -86,41 +86,41 @@ Można utworzyć element członkowski, używając dowolnego z następujących na
 
 ### <a name="create-a-member-using-class-designer"></a>Utworzyć składową za pomocą projektanta klas
 
-1.  Kliknij prawym przyciskiem myszy typ, do którego chcesz dodać element członkowski, wskaż polecenie **Dodaj**, a następnie wybierz typ elementu członkowskiego, które chcesz dodać.
+1. Kliknij prawym przyciskiem myszy typ, do którego chcesz dodać element członkowski, wskaż polecenie **Dodaj**, a następnie wybierz typ elementu członkowskiego, które chcesz dodać.
 
      Nowa sygnatura elementu członkowskiego jest tworzona i dodawana do typu. Otrzymuje nazwę domyślną, która może zmieniać w **projektanta klas**, **szczegóły klasy** oknie lub w **właściwości** okna.
 
-2.  Opcjonalnie określ inne szczegóły dotyczące elementu członkowskiego, takie jak jego typ.
+2. Opcjonalnie określ inne szczegóły dotyczące elementu członkowskiego, takie jak jego typ.
 
 ### <a name="create-a-member-using-the-class-details-window-toolbar"></a>Tworzenie składnika za pomocą paska narzędzi okna Szczegóły klasy
 
-1.  Na powierzchni diagramu wybierz typ, do którego chcesz dodać element członkowski.
+1. Na powierzchni diagramu wybierz typ, do którego chcesz dodać element członkowski.
 
      Typ uzyskuje fokus i jego zawartość jest wyświetlana w **szczegóły klasy** okna.
 
-2.  W **szczegóły klasy** pasek narzędzi okna, kliknij górną ikonę i wybierz pozycję **New \<składowej >** z listy rozwijanej.
+2. W **szczegóły klasy** pasek narzędzi okna, kliknij górną ikonę i wybierz pozycję **New \<składowej >** z listy rozwijanej.
 
      Kursor przesuwa się do **nazwa** pola w wierszu dla rodzaju elementu członkowskiego, które chcesz dodać. Na przykład, jeśli kliknięto przycisk **nową właściwość**, kursor zostanie przeniesiony do nowego wiersza w **właściwości** części **szczegóły klasy** okna.
 
-3.  Wpisz nazwę elementu członkowskiego, który chcesz utworzyć, i naciśnij klawisz Enter (lub przenieś fokus w inny sposób, np. za pomocą klawisza Tab).
+3. Wpisz nazwę elementu członkowskiego, który chcesz utworzyć, i naciśnij klawisz Enter (lub przenieś fokus w inny sposób, np. za pomocą klawisza Tab).
 
      Nowa sygnatura elementu członkowskiego jest tworzona i dodawana do typu. Składowa istnieje teraz w kodzie i jest wyświetlany w **projektanta klas**, **szczegóły klasy** okna i okna właściwości.
 
-4.  Opcjonalnie określ inne szczegóły dotyczące elementu członkowskiego, takie jak jego typ.
+4. Opcjonalnie określ inne szczegóły dotyczące elementu członkowskiego, takie jak jego typ.
 
 ### <a name="create-a-member-using-the-class-details-window"></a>Tworzenie składnika za pomocą okna Szczegóły klasy
 
-1.  Na powierzchni diagramu wybierz typ, do którego chcesz dodać element członkowski.
+1. Na powierzchni diagramu wybierz typ, do którego chcesz dodać element członkowski.
 
      Typ uzyskuje fokus i jego zawartość jest wyświetlana w **szczegóły klasy** okna.
 
-2.  W **szczegóły klasy** okna, w sekcji zawierającej rodzaj elementu członkowskiego, które chcesz dodać, kliknij przycisk  **\<Dodawanie elementu członkowskiego >**. Na przykład jeśli chcesz dodać pole, kliknij pozycję  **\<Dodaj pole >**.
+2. W **szczegóły klasy** okna, w sekcji zawierającej rodzaj elementu członkowskiego, które chcesz dodać, kliknij przycisk  **\<Dodawanie elementu członkowskiego >**. Na przykład jeśli chcesz dodać pole, kliknij pozycję  **\<Dodaj pole >**.
 
-3.  Wpisz nazwę elementu członkowskiego, który chcesz utworzyć, a następnie naciśnij klawisz Enter.
+3. Wpisz nazwę elementu członkowskiego, który chcesz utworzyć, a następnie naciśnij klawisz Enter.
 
      Nowa sygnatura elementu członkowskiego jest tworzona i dodawana do typu. Składowa istnieje teraz w kodzie i jest wyświetlany w **projektanta klas**, **szczegóły klasy** okna i okna właściwości.
 
-4.  Opcjonalnie określ inne szczegóły dotyczące elementu członkowskiego, takie jak jego typ.
+4. Opcjonalnie określ inne szczegóły dotyczące elementu członkowskiego, takie jak jego typ.
 
      **Uwaga:** Skróty klawiaturowe można również użyć do tworzenia elementów członkowskich. Aby uzyskać więcej informacji, zobacz [skróty myszy i klawiaturowe w diagramie klas i szczegóły klasy okna](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
 
@@ -170,11 +170,11 @@ Każdy wiersz elementu członkowskiego zawiera następujące elementy:
 
 ### <a name="to-modify-a-type-member"></a>Aby zmodyfikować element członkowski typu
 
-1.  Za pomocą Projektanta klas, wybierz typ.
+1. Za pomocą Projektanta klas, wybierz typ.
 
-2.  Jeśli **szczegóły klasy** nie zostanie wyświetlone okno, kliknij przycisk **szczegóły klasy** okna przycisk na pasku narzędzi projektanta klas.
+2. Jeśli **szczegóły klasy** nie zostanie wyświetlone okno, kliknij przycisk **szczegóły klasy** okna przycisk na pasku narzędzi projektanta klas.
 
-3.  Edytuj wartości w polach **szczegóły klasy** siatki okna. Po każdej modyfikacji naciśnij klawisz ENTER lub w inny sposób przenieś fokus kursora z edytowanego pola, na przykład, naciskając klawisz TAB. Zmiany odzwierciedlają się bezpośrednio w kodzie.
+3. Edytuj wartości w polach **szczegóły klasy** siatki okna. Po każdej modyfikacji naciśnij klawisz ENTER lub w inny sposób przenieś fokus kursora z edytowanego pola, na przykład, naciskając klawisz TAB. Zmiany odzwierciedlają się bezpośrednio w kodzie.
 
     > [!NOTE]
     > Jeśli chcesz zmodyfikować jedynie nazwę elementu członkowskiego, możesz to zrobić za pomocą edycji w miejscu.
@@ -217,35 +217,35 @@ Wiersze parametrów zawierają następujące elementy:
 
 ### <a name="to-add-a-parameter-to-a-method"></a>Aby dodać parametr do metody
 
-1.  Na powierzchni diagramu kliknij typ zawierający metodę, do której chcesz dodać parametr.
+1. Na powierzchni diagramu kliknij typ zawierający metodę, do której chcesz dodać parametr.
 
      Typ uzyskuje fokus i jego zawartość wyświetla się w **szczegóły klasy** okna.
 
-2.  W **szczegóły klasy** okna, Rozszerz wiersz metody, do której chcesz dodać parametr.
+2. W **szczegóły klasy** okna, Rozszerz wiersz metody, do której chcesz dodać parametr.
 
      Pojawi się wiersz parametru z wcięciem, zawierający tylko parę nawiasów i wyrazy  **\<Dodaj parametr >.**
 
-3.  Kliknij przycisk  **\<Dodaj parametr >**, wpisz nazwę nowego parametru, a następnie naciśnij klawisz **Enter**.
+3. Kliknij przycisk  **\<Dodaj parametr >**, wpisz nazwę nowego parametru, a następnie naciśnij klawisz **Enter**.
 
      Nowy parametr jest dodawany do metody i kodu metody. Wyświetla w **szczegóły klasy** okna i okna właściwości.
 
-4.  Opcjonalnie określ inne szczegóły dotyczące parametru, takie jak jego typ.
+4. Opcjonalnie określ inne szczegóły dotyczące parametru, takie jak jego typ.
 
 ### <a name="to-add-an-optional-parameter-to-a-method"></a>Aby dodać opcjonalny parametr do metody
 
-1.  Na powierzchni diagramu kliknij typ zawierający metodę, do której chcesz dodać opcjonalny parametr.
+1. Na powierzchni diagramu kliknij typ zawierający metodę, do której chcesz dodać opcjonalny parametr.
 
      Typ uzyskuje fokus i jego zawartość wyświetla się w **szczegóły klasy** okna.
 
-2.  W **szczegóły klasy** okna, Rozszerz wiersz metody, do której chcesz dodać opcjonalny parametr.
+2. W **szczegóły klasy** okna, Rozszerz wiersz metody, do której chcesz dodać opcjonalny parametr.
 
      Pojawi się wiersz parametru z wcięciem, zawierający tylko parę nawiasów i wyrazy  **\<Dodaj parametr >.**
 
-3.  Kliknij przycisk  **\<Dodaj parametr >**, wpisz nazwę nowego parametru, a następnie naciśnij klawisz **Enter**.
+3. Kliknij przycisk  **\<Dodaj parametr >**, wpisz nazwę nowego parametru, a następnie naciśnij klawisz **Enter**.
 
      Nowy parametr jest dodawany do metody i kodu metody. Wyświetla w **szczegóły klasy** okna i okna właściwości.
 
-4.  W oknie właściwości wpisz wartość dla **opcjonalny domyślny** właściwości. Ustawienie właściwości Opcjonalny domyślny parametru powoduje, że ten parametr staje się opcjonalny.
+4. W oknie właściwości wpisz wartość dla **opcjonalny domyślny** właściwości. Ustawienie właściwości Opcjonalny domyślny parametru powoduje, że ten parametr staje się opcjonalny.
 
     > [!NOTE]
     > Opcjonalne parametry muszą być ostatnimi parametrami na liście parametrów.

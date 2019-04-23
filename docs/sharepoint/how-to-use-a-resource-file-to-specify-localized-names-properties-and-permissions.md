@@ -19,31 +19,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9014b344e030f3763037395f5fb96d446c0132f0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2be88a29d3e9e3da9d1963aa1226ffca0a0a2bbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621555"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066536"
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Instrukcje: Korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości oraz uprawnień
   Za pomocą pliku zasobów, można podać zlokalizowanych nazw, zdefiniuj właściwości i stosować uprawnienia tor obiekty, które są zdefiniowane w modelu łączności danych biznesowych (BDC). Aby podać te informacje, należy dodać **zasobu łączności danych biznesowych** elementu do projektu, który zawiera **Model usługi łączności danych biznesowych** elementu. Następnie można określić nazwy, właściwości i uprawnienia, edytując XML pliku zasobu.
 
 ### <a name="to-add-a-bdc-resource-file-to-a-sharepoint-project"></a>Aby dodać plik zasobu usługi łączności danych biznesowych do projektu programu SharePoint
 
-1.  W **Eksploratora rozwiązań**, rozwiń folder dla projektu programu SharePoint, a następnie wybierz folder, który zawiera model usługi łączności danych biznesowych.
+1. W **Eksploratora rozwiązań**, rozwiń folder dla projektu programu SharePoint, a następnie wybierz folder, który zawiera model usługi łączności danych biznesowych.
 
-2.  Na pasku menu wybierz **projektu** > **Dodaj nowy element**.
+2. Na pasku menu wybierz **projektu** > **Dodaj nowy element**.
 
-3.  Rozwiń **SharePoint** węzła, a następnie wybierz **2010** węzła.
+3. Rozwiń **SharePoint** węzła, a następnie wybierz **2010** węzła.
 
-4.  W **Dodaj nowy element** okna dialogowego wybierz **element zasobu usługi łączności danych biznesowych**.
+4. W **Dodaj nowy element** okna dialogowego wybierz **element zasobu usługi łączności danych biznesowych**.
 
-5.  W **nazwa** , określ nazwę pliku zasobów, a następnie wybierz **Dodaj** przycisku.
+5. W **nazwa** , określ nazwę pliku zasobów, a następnie wybierz **Dodaj** przycisku.
 
      Plik zasobów, który ma rozszerzenie .bdcr jest dodawany do projektu i otworzyć do edycji.
 
-6.  Dodaj kod XML do definiowania zlokalizowanych nazw, właściwości i uprawnienia, które chcesz zastosować modelu usługi BDC.
+6. Dodaj kod XML do definiowania zlokalizowanych nazw, właściwości i uprawnienia, które chcesz zastosować modelu usługi BDC.
 
      Aby dowiedzieć się, jak zdefiniować te elementy, zobacz [modelu i pliki zasobów](http://go.microsoft.com/fwlink/?LinkID=169283).
 

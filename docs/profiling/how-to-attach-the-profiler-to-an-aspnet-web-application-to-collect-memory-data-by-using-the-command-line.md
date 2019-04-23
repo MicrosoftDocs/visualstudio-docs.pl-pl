@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7a1580c2ec230df2560e34f80a076aeca0baf2c5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3ebe328970b34a9fdc6cc7f3717a6aec28b560ff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659582"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075158"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Instrukcje: Dołącz profiler do aplikacji sieci web ASP.NET do zbierania danych pamięci przy użyciu wiersza polecenia
 W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia narzędzi Profilujących do dołączenia programu profilującego do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sieci Web, aplikacji i zbieranie danych dotyczących liczby i rozmiaru alokacji pamięci .NET Framework. Może również zbierać dane dotyczące okresu istnienia obiektów pamięci .NET Framework.
@@ -38,7 +38,7 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
 
     **VSPerfClrEnv** {**/globalsamplegc** &#124; **/globalsamplegclife**} [**/samplelineoff**]
 
-   -   Opcje **/globalsamplegc** i **/globalsamplegclife** określenie typu pamięci dane mają być zbierane.
+   - Opcje **/globalsamplegc** i **/globalsamplegclife** określenie typu pamięci dane mają być zbierane.
 
         Określ jeden i tylko jeden z następujących opcji.
 
@@ -47,7 +47,7 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
        |**/globalsamplegc**|Umożliwia zbieranie danych alokacji pamięci.|
        |**/globalsamplegclife**|Umożliwia zbieranie danych alokacji pamięci i danych o okresie istnienia obiektu.|
 
-   -   Opcja **/samplelineoff** wyłącza przypisanie zebranych danych do określonego źródła wierszy kodu. Jeśli ta opcja jest określona, dane są przypisane na poziomie funkcji.
+   - Opcja **/samplelineoff** wyłącza przypisanie zebranych danych do określonego źródła wierszy kodu. Jeśli ta opcja jest określona, dane są przypisane na poziomie funkcji.
 
 3. Uruchom ponownie komputer, aby ustawić nową konfigurację środowiska.
 
@@ -90,7 +90,7 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
 
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych
 
--   Następujące pary **VSPerfCmd** opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
+- Następujące pary **VSPerfCmd** opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
 
     |Opcja|Opis|
     |------------|-----------------|

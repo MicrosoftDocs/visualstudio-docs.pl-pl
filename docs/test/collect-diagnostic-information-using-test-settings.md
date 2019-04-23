@@ -8,26 +8,26 @@ ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdaa86e2eb7562f4a3347c942e193da22a9e256e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c378cea12ba749ee9131d13130fdbb7def84ea66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948839"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039089"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>Zbieranie informacji diagnostycznych za pomocą ustawień testów
 
 Możesz użyć *ustawienia testu* w programie Visual Studio, aby zbierać dodatkowe dane podczas wykonywania testów. Na przykład można wprowadzić nagrywać wideo podczas wykonywania testu. Dostępne są adaptery danych diagnostycznych do:
 
--   Zbieraj każdy krok działania interfejsu użytkownika w formacie tekstowym
+- Zbieraj każdy krok działania interfejsu użytkownika w formacie tekstowym
 
--   Zapisz wszystkie akcje interfejsu użytkownika do odtwarzania
+- Zapisz wszystkie akcje interfejsu użytkownika do odtwarzania
 
--   Zbieranie informacji o systemie
+- Zbieranie informacji o systemie
 
--   Zbieranie danych dziennika zdarzeń
+- Zbieranie danych dziennika zdarzeń
 
--   Zbieranie danych IntelliTrace aby pomóc wyizolować nieodtwarzalne błędy
+- Zbieranie danych IntelliTrace aby pomóc wyizolować nieodtwarzalne błędy
 
 Adaptery danych diagnostycznych można również zmienić zachowanie na komputerze testowym. Na przykład za pomocą ustawień testów w programie Visual Studio, możesz emulować różnych wąskich gardeł topologii sieci do oceny wydajności aplikacji zespołu.
 
@@ -49,6 +49,6 @@ Poniższa tabela zawiera omówienie różnych sposobów, które można skonfigur
 |**Dziennik zdarzeń:** Można skonfigurować ustawienie testu by obejmowało gromadzenie dzienników zdarzeń, który znajduje się w wynikach testu.|Tak|Yes|Tak||
 |**IntelliTrace:** Można skonfigurować adapter danych diagnostycznych dla *IntelliTrace* do zbierania informacji diagnostycznych śledzenia w celu pomocy w oddzieleniu błędów, które są trudne do odtworzenia. Spowoduje to utworzenie pliku IntelliTrace, który zawiera te informacje. Plik IntelliTrace ma rozszerzenie *.iTrace*. Gdy test zakończy się niepowodzeniem, można utworzyć usterkę. Plik IntelliTrace, który jest zapisywany łącznie z wyników testów jest automatycznie połączony z tym błędem. Dane, które są gromadzone w pliku IntelliTrace zwiększają produktywność debugowania, skracając czas wymagany do odtworzenia i diagnozy błędu w kodzie. Z tej funkcji IntelliTrace plik sesja lokalna może być symulowana na innym komputerze. Zmniejsza to ryzyko nieodtwarzalnego błędu.|Tak|Yes|Tak|— Jeśli włączysz zbierania danych funkcji IntelliTrace, zbieranie danych pokrycia kodu nie działa.<br />— Jeśli używasz narzędzia IntelliTrace dla roli klienta sieci web, możesz również wybrać serwer Proxy klienta ASP.NET dla IntelliTrace i wpływu Test adapter danych diagnostycznych.<br />-Tylko następujące wersje programu IIS są obsługiwane: IIS 7.0, IIS 7.5 and IIS 8.0.|
 |**Emulacja sieci:** Można określić, że chcesz umieścić sztuczne obciążenie sieciowe w badaniu, korzystając z ustawienia testu. Emulacja sieci ma wpływ na komunikację do i z komputera poprzez emulację szybkości połączenia określonej sieci, takich jak połączenie dodzwaniane. |Nie|Tak (zobacz Uwagi)|Nie|Za pomocą adaptera danych diagnostycznych emulacji sieciowej dla roli klienta lub serwera. Nie trzeba korzystać z karty dla obu tych ról, które komunikują się ze sobą. **Uwaga:**  Ten adapter danych diagnostycznych ma zastosowanie tylko do ustawień testowych Visual Studio. Nie jest używana do ustawień testu w Microsoft Test Manager. **Uwaga:**  Emulacja sieci nie można zwiększyć szybkość połączenia sieciowego. **Ostrzeżenie:**  Jeśli dołączysz adapter danych diagnostycznych emulacji sieci w ustawieniach testu i zamierzasz używać go na komputerze lokalnym, następnie należy również powiązać sterownik emulacji sieci do jednej z kart sieciowych na komputerze. Sterownik emulacji sieci jest wymagana dla adaptera danych diagnostycznych emulacji sieciowej do funkcji. Sterownik emulacji sieci jest zainstalowany i powiązany z kartą sieciową na dwa sposoby: <ul><li>**Sterownik emulacji sieci instalowany z programu Microsoft Visual Studio Test Agent:** Visual Studio Test Agent może służyć zarówno komputerów zdalnych, jak i komputerze lokalnym. Po zainstalowaniu programu Visual Studio Test Agent, proces instalacji obejmuje krok konfiguracji, który wiąże sterownik emulacji sieci z kartą sieciową. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).</li><li>**Sterownik emulacji sieci instalowany z programu Microsoft Visual Studio Test Professional:** Podczas korzystania z emulacji sieci po raz pierwszy monit powiązanie sterownika emulacji sieci z kartą sieciową.</li></ul> Można również zainstalować sterownik emulacji sieci z poziomu wiersza polecenia na komputerze lokalnym bez konieczności instalowania agenta testowego programu Visual Studio przy użyciu następującego polecenia: **VSTestConfig NETWORKEMULATION/Install** **ostrzeżenia:**  Karta emulacji sieci jest ignorowana przez testy obciążenia. Zamiast tego testy obciążenia używają ustawień, które są określone w mieszanym profilu sieciowym Scenariusz testów obciążenia.|
-|**Informacje o systemie:** Ustawienia testu można skonfigurować pod kątem obejmujący informacje o systemie dotyczących urządzenia, na którym wykonywany jest test.|Tak|Yes|Tak||
+|**Informacje o systemie:** Ustawienia testu można skonfigurować pod kątem obejmujący informacje o systemie dotyczących urządzenia, na którym wykonywany jest test.|Tak|Yes|Yes||
 |**Testowanie skutków:** Możesz zbierać informacje o tym, jakie zastosowano metody kodu aplikacji po uruchomieniu przypadku testowego. Może to służyć razem ze zmianami w kodzie aplikacji poczynionymi przez deweloperów, aby określić który test miały wpływ te zmiany deweloperskie.|Tak|Yes|Tak|— Jeśli są zbierane dane dotyczące wpływu testu dla roli klienta sieci web, możesz również wybrać serwer Proxy klienta ASP.NET dla IntelliTrace i wpływu na testowanie adaptera danych diagnostycznych.<br />-Tylko następujące wersje programu IIS są obsługiwane: IIS 7.0, IIS 7.5 and IIS 8.0.|
 |**Rejestrator wideo:** Możesz utworzyć nagranie wideo swojej sesji pulpitu, kiedy przeprowadzasz test. Nagranie wideo może pomóc innym członkom zespołu wyizolować elementy aplikacji, które są trudne do odtworzenia.|Tak|Tak (zobacz Uwagi)|Tak|— Jeśli włączeniu oprogramowanie agenta testowego do uruchamiania jako procesu zamiast usługi można utworzyć nagranie wideo po uruchomieniu automatycznych testów.|

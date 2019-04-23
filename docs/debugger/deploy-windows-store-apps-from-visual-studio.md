@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 02bfb1b4797973b3946405c38598409bf3247c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790384"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065743"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Wdrażanie aplikacji platformy UWP przy użyciu programu Visual Studio
 
@@ -36,18 +36,18 @@ Wdrożenia jest automatycznie podczas debugowania aplikacji w programie Visual S
 
 - Wdrażanie aplikacji, która będzie debugowany, gdy jest ona uruchamiana przez inną aplikację lub metody.
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Jak wdrożyć aplikację platformy uniwersalnej systemu Windows
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Jak wdrożyć aplikację platformy uniwersalnej systemu Windows
  Ręczne wdrażanie aplikacji jest prostym procesem:
 
-1.  Jeśli są wdrażane na urządzeniu zdalnym, należy określić nazwę lub adres IP urządzenia na stronie właściwości projektu z projektu do uruchamiania aplikacji. (Kroki, aby zrobić to są wymienione dalszych szczegółów, w tym temacie).
+1. Jeśli są wdrażane na urządzeniu zdalnym, należy określić nazwę lub adres IP urządzenia na stronie właściwości projektu z projektu do uruchamiania aplikacji. (Kroki, aby zrobić to są wymienione dalszych szczegółów, w tym temacie).
 
-2.  Na pasku narzędzi programu Visual Studio debugger wybierz cel wdrożenia z listy rozwijanej obok **Rozpocznij debugowanie** przycisku.
+2. Na pasku narzędzi programu Visual Studio debugger wybierz cel wdrożenia z listy rozwijanej obok **Rozpocznij debugowanie** przycisku.
 
      ![Uruchom na lokalnym komputerze](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")
 
-3.  Na **kompilacji** menu, wybierz **wdrażania**
+3. Na **kompilacji** menu, wybierz **wdrażania**
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> Jak określić urządzenie zdalne
+## <a name="BKMK_How_to_specify_a_remote_device"></a> Jak określić urządzenie zdalne
 
 **Wymagania wstępne**
 
@@ -92,7 +92,7 @@ Wdrożenie używa zdalny debuger kanał sieciowy do wysyłania plików aplikacji
 
 10. Wprowadź nazwę sieciową urządzenia zdalnego w **maszyny zdalnej** lub przycisk **znaleźć** do wyboru urządzenia z **wybierz połączenie ze zdalnym debugerem** okno dialogowe.
 
-##  <a name="BKMK_Deployment_options"></a> Opcje wdrażania
+## <a name="BKMK_Deployment_options"></a> Opcje wdrażania
 
 Można ustawić następujące opcje wdrażania na stronie właściwości debugowania projektu startowego.
 

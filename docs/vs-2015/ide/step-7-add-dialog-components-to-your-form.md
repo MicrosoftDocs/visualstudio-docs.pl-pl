@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 051f88f81f443b1748ce3d8b0c9ce33e89fac77d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5c49de0af6cbb02c441489cbfa7b1d8a7b3881df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796662"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061479"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Krok 7. Dodawanie składników okna dialogowego do formularza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,25 +27,25 @@ Aby umożliwić programowi otwieranie plików obrazów i Wybieranie koloru tła,
   
 ### <a name="to-add-dialog-components-to-your-form"></a>Aby dodać elementy dialogu do formularza  
   
-1.  Wybierz projektanta Windows Forms (Form1.cs [projekt] lub Form1.vb [projekt]), a następnie otwórz **okien dialogowych** grupy w przyborniku.  
+1. Wybierz projektanta Windows Forms (Form1.cs [projekt] lub Form1.vb [projekt]), a następnie otwórz **okien dialogowych** grupy w przyborniku.  
   
     > [!NOTE]
     >  **Okien dialogowych** grupa w przyborniku zawiera składniki, które otwierają wiele przydatnych okien dialogowych, które mogą służyć do otwierania i zapisywania plików, przeglądania folderów i wybierania czcionek i kolorów. Używasz dwóch elementów dialogu w tym projekcie: **OpenFileDialog** i **ColorDialog**.  
   
-2.  Aby dodać składnik o nazwie **openFileDialog1** do formularza, kliknij dwukrotnie **OpenFileDialog**. Aby dodać składnik o nazwie **colorDialog1** do formularza, kliknij dwukrotnie **ColorDialog** w przyborniku. (Możesz użyć go w następnym kroku samouczka). Powinieneś widzieć obszar w dolnej części projektanta formularzy Windows (poniżej formularza Picture Viewer), który zawiera ikonę dla każdego z dwóch składników dialogu, które dodałeś, jak pokazano na poniższej ilustracji.  
+2. Aby dodać składnik o nazwie **openFileDialog1** do formularza, kliknij dwukrotnie **OpenFileDialog**. Aby dodać składnik o nazwie **colorDialog1** do formularza, kliknij dwukrotnie **ColorDialog** w przyborniku. (Możesz użyć go w następnym kroku samouczka). Powinieneś widzieć obszar w dolnej części projektanta formularzy Windows (poniżej formularza Picture Viewer), który zawiera ikonę dla każdego z dwóch składników dialogu, które dodałeś, jak pokazano na poniższej ilustracji.  
   
      ![Składniki okna dialogowego](../ide/media/express-dialogsadded.png "Express_DialogsAdded")  
 Składniki okna dialogowego  
   
-3.  Wybierz **openFileDialog1** ikonę w obszarze w dolnej części projektanta Windows Forms. Ustaw dwie właściwości:  
+3. Wybierz **openFileDialog1** ikonę w obszarze w dolnej części projektanta Windows Forms. Ustaw dwie właściwości:  
   
-    -   Ustaw **filtru** właściwość następująco (możesz skopiować i wkleić):  
+    - Ustaw **filtru** właściwość następująco (możesz skopiować i wkleić):  
   
         ```  
         JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All files (*.*)|*.*  
         ```  
   
-    -   Ustaw **tytuł** właściwości do następującego: **Wybierz plik obrazu**  
+    - Ustaw **tytuł** właściwości do następującego: **Wybierz plik obrazu**  
   
          **Filtru** ustawienia właściwości określają rodzaje typów plików, które będą wyświetlane w **wybierz obraz** okno dialogowe pliku.  
   
@@ -54,6 +54,6 @@ Składniki okna dialogowego
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   
--   Aby przejść do następnego kroku samouczka, zobacz [krok 8: Pisanie kodu dla programu obsługi zdarzeń przycisku Obraz](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).  
+- Aby przejść do następnego kroku samouczka, zobacz [krok 8: Pisanie kodu dla programu obsługi zdarzeń przycisku Obraz](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).  
   
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 6: Nazw kontrolkom przycisków](../ide/step-6-name-your-button-controls.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 6: Nazw kontrolkom przycisków](../ide/step-6-name-your-button-controls.md).

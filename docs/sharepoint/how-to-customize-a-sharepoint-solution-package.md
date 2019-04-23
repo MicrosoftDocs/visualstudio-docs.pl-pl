@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcc6e59f1c87cd0c3a82383ac97a80488ac1168d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 567eba3da4856cd88a583bf614d5afbc13e77b0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602679"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074924"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Instrukcje: Dostosowywanie pakietu rozwiązania SharePoint
   W Projektancie pakietu można użyć do tworzenia i dostosowywania pakietu (*.wsp*). Na przykład można dodać elementów projektu programu SharePoint i funkcje, określić, czy serwer sieci Web jest zresetować po wdrożeniu rozwiązania i Ustaw typ serwera wdrożenia.
@@ -31,20 +31,20 @@ ms.locfileid: "56602679"
 
 #### <a name="to-open-the-package-designer"></a>Aby otworzyć projektanta pakietów
 
--   W **Eksploratora rozwiązań**, kliknij dwukrotnie **pakietu**, lub wybierz **Projektant widoków** menu skrótów dla **pakietu**.
+- W **Eksploratora rozwiązań**, kliknij dwukrotnie **pakietu**, lub wybierz **Projektant widoków** menu skrótów dla **pakietu**.
 
 ## <a name="view-the-packaged-manifestffile"></a>Wyświetl spakowanych manifestfFile
  W Projektancie pakietu można użyć do zmodyfikowania, a następnie wygenerować pakowanego pliku manifestu. Następnie można wyświetlić kod XML dla tego pliku w programie Visual Studio.
 
 #### <a name="to-view-the-xml-source-file"></a>Aby wyświetlić plik źródłowy XML
 
-1.  W **projektancie pakietu**, wybierz **manifestu**.
+1. W **projektancie pakietu**, wybierz **manifestu**.
 
 #### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>Aby wyświetlić spakowany plik manifestu za pomocą Eksploratora rozwiązań
 
-1.  W **Eksploratora rozwiązań**, wybierz **Pokaż wszystkie pliki**.
+1. W **Eksploratora rozwiązań**, wybierz **Pokaż wszystkie pliki**.
 
-2.  Rozwiń węzeł pakietu, rozwiń Package.package, a następnie otwórz *Package.Template.xml* pliku.
+2. Rozwiń węzeł pakietu, rozwiń Package.package, a następnie otwórz *Package.Template.xml* pliku.
 
     > [!NOTE]
     >  Po otwarciu pliku manifestu XML dla szablonu pakietu, pliki są automatycznie zweryfikowana, i można zignorować te ostrzeżenia, które pojawiają się w oknie Lista błędów.
@@ -54,13 +54,13 @@ ms.locfileid: "56602679"
 
 #### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>Aby zmienić szablon manifestu za pomocą edytora XML
 
-1.  W **projektancie pakietu**, wybierz **manifestu** kartę, a następnie rozwiń **opcje edytowania** węzła, a następnie wybierz **otwarty w edytorze XML** łącze.
+1. W **projektancie pakietu**, wybierz **manifestu** kartę, a następnie rozwiń **opcje edytowania** węzła, a następnie wybierz **otwarty w edytorze XML** łącze.
 
      Zmiany w pliku XML są scalane w spakowanym pliku manifestu.
 
 #### <a name="to-change-the-manifest-template-by-using-the-manifest-template-pane"></a>Aby zmienić szablon manifestu przy użyciu okienka szablonu manifestu
 
-1.  W **projektancie pakietu**, wybierz **manifestu** kartę, a następnie rozwiń **opcje edytowania** węzeł, a następnie zmień plik XML, który jest wyświetlany w okienku manifestu szablonu.
+1. W **projektancie pakietu**, wybierz **manifestu** kartę, a następnie rozwiń **opcje edytowania** węzeł, a następnie zmień plik XML, który jest wyświetlany w okienku manifestu szablonu.
 
      Zmiany w pliku XML są wyświetlane w okienku **Podgląd spakowanego manifestu**.
 
@@ -72,9 +72,9 @@ ms.locfileid: "56602679"
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Aby zastąpić spakowany plik manifestu poprzez wyłączenie projektanta
 
-1.  W **projektancie pakietu**, wybierz **manifestu** kartę.
+1. W **projektancie pakietu**, wybierz **manifestu** kartę.
 
-2.  Rozwiń węzeł **Opcje edycji**, wybierz link **Zastąp wygenerowany kod XML i edytuj manifest w edytorze XML**, a następnie wybierz przycisk **Tak**.
+2. Rozwiń węzeł **Opcje edycji**, wybierz link **Zastąp wygenerowany kod XML i edytuj manifest w edytorze XML**, a następnie wybierz przycisk **Tak**.
 
      Szablon zostanie zaktualizowany o spakowany plik bieżącego manifestu.
 
@@ -83,7 +83,7 @@ ms.locfileid: "56602679"
 
 #### <a name="to-re-enable-the-designer"></a>Aby ponownie włączyć Projektanta
 
-1.  W **projektancie pakietu**, wybierz **Odrzuć modyfikacje manifestu i ponownie włącz projektanta** łącze, a następnie wybierz **tak** przycisku.
+1. W **projektancie pakietu**, wybierz **Odrzuć modyfikacje manifestu i ponownie włącz projektanta** łącze, a następnie wybierz **tak** przycisku.
 
      Szablon zostanie odświeżony z początkowym tekstem, a zmiany wprowadzone w pliku XML zostaną utracone.
 

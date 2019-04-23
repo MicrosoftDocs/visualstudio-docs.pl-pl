@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 180cf2cece705afb6094e49ef23a3dc3f953d0c4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 58c68f8b61adab90f8437658d6efd04f0ca47818
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669149"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065522"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Przewodnik: Korzystanie z interfejsów API profilera
 
@@ -60,12 +60,12 @@ DataCollection.CurrentId);
 
 #### <a name="to-create-the-code-to-profile"></a>Aby utworzyć kod do profilu
 
-1.  Utwórz nowy projekt C# w programie Visual Studio, lub użyć kompilacji wiersza polecenia, w zależności od preferencji.
+1. Utwórz nowy projekt C# w programie Visual Studio, lub użyć kompilacji wiersza polecenia, w zależności od preferencji.
 
     > [!NOTE]
     >  Musi odwoływać się do kompilacji *Microsoft.VisualStudio.Profiler.dll* biblioteki, na terenie *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* katalogu.
 
-2.  Skopiuj i wklej następujący kod do projektu:
+2. Skopiuj i wklej następujący kod do projektu:
 
     ```csharp
     using System;
@@ -148,23 +148,23 @@ DataCollection.CurrentId);
 
 #### <a name="to-collect-and-view-data-at-the-command-line"></a>Do gromadzenia i wyświetlania danych w wierszu polecenia
 
-1.  Kompiluj wersję debugowania przykładowy kod, który został utworzony w procedurze "Tworzenie kodu do profil", we wcześniejszej części tego przewodnika.
+1. Kompiluj wersję debugowania przykładowy kod, który został utworzony w procedurze "Tworzenie kodu do profil", we wcześniejszej części tego przewodnika.
 
-2.  Aby profilować aplikację zarządzaną, wpisz następujące polecenie, aby ustawić odpowiednie zmienne środowiskowe:
+2. Aby profilować aplikację zarządzaną, wpisz następujące polecenie, aby ustawić odpowiednie zmienne środowiskowe:
 
      **VsPerfCLREnv /traceon**
 
-3.  Wpisz następujące polecenie: **VSInstr \<filename>.exe**
+3. Wpisz następujące polecenie: **VSInstr \<filename>.exe**
 
-4.  Wpisz następujące polecenie: **/ OUTPUT polecenia VSPerfCmd:\<nazwa pliku > .vsp**
+4. Wpisz następujące polecenie: **/ OUTPUT polecenia VSPerfCmd:\<nazwa pliku > .vsp**
 
-5.  Wpisz następujące polecenie: **Narzędzia VSPerfCmd /globaloff**
+5. Wpisz następujące polecenie: **Narzędzia VSPerfCmd /globaloff**
 
-6.  Wykonywanie programu.
+6. Wykonywanie programu.
 
-7.  Wpisz następujące polecenie: **Narzędzia VSPerfCmd/shutdown**
+7. Wpisz następujące polecenie: **Narzędzia VSPerfCmd/shutdown**
 
-8.  Wpisz następujące polecenie: **VSPerfReport /calltrace:\<filename>.vsp**
+8. Wpisz następujące polecenie: **VSPerfReport /calltrace:\<filename>.vsp**
 
      ELEMENT. *csv* plik zostanie utworzony w bieżącym katalogu z wynikowe dane dotyczące wydajności.
 

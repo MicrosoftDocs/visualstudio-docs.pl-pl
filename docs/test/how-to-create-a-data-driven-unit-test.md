@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc5c4b68b5713ba8831d840decea7f2ea25704f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 58b7348a1bd46b426339effbe259e6f5058c769b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931445"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063650"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Instrukcje: Tworzenie testu jednostkowego opartego na danych
 
@@ -27,27 +27,27 @@ Za pomocą środowiska testów jednostkowych Microsoft dla kodu zarządzanego, m
 
 Tworzenie testu jednostkowego opartego na danych obejmuje następujące czynności:
 
-1.  Utwórz źródło danych, który zawiera wartości, których używasz w metodzie testowej. Źródła danych mogą być dowolnego typu, który jest zarejestrowany na komputerze, na którym uruchamiany jest test.
+1. Utwórz źródło danych, który zawiera wartości, których używasz w metodzie testowej. Źródła danych mogą być dowolnego typu, który jest zarejestrowany na komputerze, na którym uruchamiany jest test.
 
-2.  Dodaj prywatnej <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> pola i publiczny `TestContext` właściwości klasy testowej.
+2. Dodaj prywatnej <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> pola i publiczny `TestContext` właściwości klasy testowej.
 
-3.  Utwórz metodę testu jednostkowego i Dodaj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> atrybutu do niego.
+3. Utwórz metodę testu jednostkowego i Dodaj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> atrybutu do niego.
 
-4.  Użyj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> właściwość indeksatora można pobrać wartości, których używasz w teście.
+4. Użyj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> właściwość indeksatora można pobrać wartości, których używasz w teście.
 
 ## <a name="the-method-under-test"></a>Testowaną metodę
 
 Na przykład załóżmy, że masz:
 
-1.  To rozwiązanie o nazwie `MyBank` , akceptuje i przetwarzania transakcji dla różnych typów kont.
+1. To rozwiązanie o nazwie `MyBank` , akceptuje i przetwarzania transakcji dla różnych typów kont.
 
-2.  Projekt w `MyBank` o nazwie `BankDb` który zarządza transakcji dla kont.
+2. Projekt w `MyBank` o nazwie `BankDb` który zarządza transakcji dla kont.
 
-3.  Klasa o nazwie `Maths` w `DbBank` projektu, który wykonuje funkcje matematyczne w celu zapewnienia korzystne bank każdej transakcji.
+3. Klasa o nazwie `Maths` w `DbBank` projektu, który wykonuje funkcje matematyczne w celu zapewnienia korzystne bank każdej transakcji.
 
-4.  To test jednostkowy projekt o nazwie `BankDbTests` się testowanie zachowania `BankDb` składnika.
+4. To test jednostkowy projekt o nazwie `BankDbTests` się testowanie zachowania `BankDb` składnika.
 
-5.  To test jednostkowy klasę o nazwie `MathsTests` Aby sprawdzić zachowanie `Maths` klasy.
+5. To test jednostkowy klasę o nazwie `MathsTests` Aby sprawdzić zachowanie `Maths` klasy.
 
 Testujemy metody w `Maths` , dodanie dwóch liczb całkowitych, za pomocą pętli:
 

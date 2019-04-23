@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19c82238a0379e6b94e82bb1e34f20282ff4654f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 889cf092ae77eae7ef190c48b2949ddca646dc2a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930171"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097300"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Krok 10. Pisanie kodu dla dodatkowych przycisków i pola wyboru
 Teraz możesz przystąpić do wykonania czterech pozostałych metod. Możesz skopiować i wkleić ten kod, ale jeśli chcesz dowiedzieć się maksymalnie dużo z tego samouczka, wpisz kod i korzystać z technologii IntelliSense.
@@ -27,13 +27,13 @@ Teraz możesz przystąpić do wykonania czterech pozostałych metod. Możesz sko
 
 ## <a name="to-write-code-for-additional-buttons-and-a-check-box"></a>Aby napisać kod dla dodatkowych przycisków i pola wyboru
 
--   Dodaj następujący kod, aby Twoje **Form1** pliku z kodem (*Form1.cs* lub *Form1.vb*). Wybierz **VB** kartę, aby wyświetlić kod języka Visual Basic.
+- Dodaj następujący kod, aby Twoje **Form1** pliku z kodem (*Form1.cs* lub *Form1.vb*). Wybierz **VB** kartę, aby wyświetlić kod języka Visual Basic.
 
      [!code-vb[VbExpressTutorial1Step9_10#2](../ide/codesnippet/VisualBasic/step-10-write-code-for-additional-buttons-and-a-check-box_1.vb)]
      [!code-csharp[VbExpressTutorial1Step9_10#2](../ide/codesnippet/CSharp/step-10-write-code-for-additional-buttons-and-a-check-box_1.cs)]
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
--   Aby przejść do następnego kroku samouczka, zobacz [krok 11: Uruchamianie programu i próbowanie innych funkcji](../ide/step-11-run-your-program-and-try-other-features.md).
+- Aby przejść do następnego kroku samouczka, zobacz [krok 11: Uruchamianie programu i próbowanie innych funkcji](../ide/step-11-run-your-program-and-try-other-features.md).
 
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 9: Przejrzyj, komentowanie i testowanie kodu](../ide/step-9-review-comment-and-test-your-code.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 9: Przejrzyj, komentowanie i testowanie kodu](../ide/step-9-review-comment-and-test-your-code.md).

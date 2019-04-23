@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5f4f2f5e44ea95137f53019f52de94a5389fa6d8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce3658f93df11b83f89e89931d03f35b0fa801a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913499"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070241"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Instrukcje: Dodawanie walidacji do klas jednostek
 *Sprawdzanie poprawności* klas jednostek jest procesem potwierdzania, że wartości wprowadzone w obiektach danych są zgodne z ograniczeniami w schemacie obiektu, a także zasadami ustanowionymi dla aplikacji. Sprawdzanie poprawności danych, aby wysłać aktualizacje do podstawowej bazy danych jest dobrą praktyką, która zmniejsza błędy. Zmniejsza to także potencjalną liczbę rund między aplikacją a bazą danych.
@@ -33,23 +33,23 @@ ms.locfileid: "55913499"
 
 ### <a name="to-validate-data-during-a-columns-value-change"></a>Aby sprawdzić poprawność danych podczas zmiany wartości w kolumnie
 
-1.  Otwórz lub Utwórz nowy plik LINQ to SQL klas (**dbml** pliku) w **O/R Designer**. (Kliknij dwukrotnie **dbml** w pliku **Eksploratora rozwiązań**.)
+1. Otwórz lub Utwórz nowy plik LINQ to SQL klas (**dbml** pliku) w **O/R Designer**. (Kliknij dwukrotnie **dbml** w pliku **Eksploratora rozwiązań**.)
 
-2.  W **O/R Designer**, kliknij prawym przyciskiem myszy klasę, dla którego chcesz dodać sprawdzanie poprawności, a następnie kliknij przycisk **Wyświetl kod**.
+2. W **O/R Designer**, kliknij prawym przyciskiem myszy klasę, dla którego chcesz dodać sprawdzanie poprawności, a następnie kliknij przycisk **Wyświetl kod**.
 
      Zostanie otwarty Edytor kodu klasę częściową dla klasy wybranego obiektu.
 
-3.  Umieść kursor w klasie częściowej.
+3. Umieść kursor w klasie częściowej.
 
-4.  Dla projektów języka Visual Basic:
+4. Dla projektów języka Visual Basic:
 
-    1.  Rozwiń **nazwę metody** listy.
+    1. Rozwiń **nazwę metody** listy.
 
-    2.  Znajdź **OnCOLUMNNAMEChanging** metody dla kolumny, które chcesz dodać sprawdzanie poprawności, aby.
+    2. Znajdź **OnCOLUMNNAMEChanging** metody dla kolumny, które chcesz dodać sprawdzanie poprawności, aby.
 
-    3.  `OnCOLUMNNAMEChanging` Metoda jest dodawana do klasy częściowej.
+    3. `OnCOLUMNNAMEChanging` Metoda jest dodawana do klasy częściowej.
 
-    4.  Dodaj następujący kod, aby najpierw sprawdź, czy wprowadzona wartość, a następnie upewnij się, że wprowadzona dla kolumny, która wartość jest dopuszczalny dla aplikacji. `value` Argument zawiera proponowana wartość, więc Dodaj logikę, aby upewnić się, że jest prawidłowa wartość:
+    4. Dodaj następujący kod, aby najpierw sprawdź, czy wprowadzona wartość, a następnie upewnij się, że wprowadzona dla kolumny, która wartość jest dopuszczalny dla aplikacji. `value` Argument zawiera proponowana wartość, więc Dodaj logikę, aby upewnić się, że jest prawidłowa wartość:
 
         ```vb
         If value.HasValue Then
@@ -79,23 +79,23 @@ ms.locfileid: "55913499"
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Aby sprawdzić poprawność danych podczas aktualizacji do klasy jednostki
 
-1.  Otwórz lub Utwórz nowy plik LINQ to SQL klas (**dbml** pliku) w **O/R Designer**. (Kliknij dwukrotnie **dbml** w pliku **Eksploratora rozwiązań**.)
+1. Otwórz lub Utwórz nowy plik LINQ to SQL klas (**dbml** pliku) w **O/R Designer**. (Kliknij dwukrotnie **dbml** w pliku **Eksploratora rozwiązań**.)
 
-2.  Kliknij prawym przyciskiem myszy pusty obszar **O/R Designer** i kliknij przycisk **Wyświetl kod**.
+2. Kliknij prawym przyciskiem myszy pusty obszar **O/R Designer** i kliknij przycisk **Wyświetl kod**.
 
      Zostanie otwarty Edytor kodu za pomocą klasę częściową dla `DataContext`.
 
-3.  Umieść kursor w klasie częściowej dla `DataContext`.
+3. Umieść kursor w klasie częściowej dla `DataContext`.
 
-4.  Dla projektów języka Visual Basic:
+4. Dla projektów języka Visual Basic:
 
-    1.  Rozwiń **nazwę metody** listy.
+    1. Rozwiń **nazwę metody** listy.
 
-    2.  Kliknij przycisk **UpdateENTITYCLASSNAME**.
+    2. Kliknij przycisk **UpdateENTITYCLASSNAME**.
 
-    3.  `UpdateENTITYCLASSNAME` Metoda jest dodawana do klasy częściowej.
+    3. `UpdateENTITYCLASSNAME` Metoda jest dodawana do klasy częściowej.
 
-    4.  Dostęp do wartości poszczególnych kolumn przy użyciu `instance` argumentu, jak pokazano w poniższym kodzie:
+    4. Dostęp do wartości poszczególnych kolumn przy użyciu `instance` argumentu, jak pokazano w poniższym kodzie:
 
         ```vb
         If (instance.COLUMNNAME = x) And (instance.COLUMNNAME = y) Then

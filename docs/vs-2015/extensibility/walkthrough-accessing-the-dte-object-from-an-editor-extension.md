@@ -10,12 +10,12 @@ ms.assetid: c1f40bab-c6ec-45b0-8333-ea5ceb02a39d
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 656ca1e4bfaa37afa3a8da8516e67c33bf315dc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4b14b59465b94ddd0a09748f0e309166bf3d4114
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776482"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065821"
 ---
 # <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>Przewodnik: Uzyskiwanie dostępu do obiektu DTE z rozszerzenia edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ Obiekt DTE w pakietach VSPackage, można uzyskać przez wywołanie metody <xref:
   
 #### <a name="to-get-the-dte-object-from-the-serviceprovider"></a>Aby uzyskać obiekt DTE z element ServiceProvider  
   
-1.  Utwórz projekt VSIX języka C# o nazwie `DTETest`. Dodaj szablon elementu klasyfikatora edytora i nadaj mu nazwę `DTETest`. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+1. Utwórz projekt VSIX języka C# o nazwie `DTETest`. Dodaj szablon elementu klasyfikatora edytora i nadaj mu nazwę `DTETest`. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-2.  Dodaj następujące odwołania do zestawów do projektu:  
+2. Dodaj następujące odwołania do zestawów do projektu:  
   
-    -   EnvDTE  
+    - EnvDTE  
   
-    -   EnvDTE80  
+    - EnvDTE80  
   
-    -   Microsoft.VisualStudio.Shell.Immutable.10.0  
+    - Microsoft.VisualStudio.Shell.Immutable.10.0  
   
-3.  Przejdź do pliku DTETest.cs i dodaj następującą `using` dyrektywy:  
+3. Przejdź do pliku DTETest.cs i dodaj następującą `using` dyrektywy:  
   
     ```csharp  
     using EnvDTE;  
@@ -48,7 +48,7 @@ Obiekt DTE w pakietach VSPackage, można uzyskać przez wywołanie metody <xref:
   
     ```  
   
-4.  W `GetDTEProvider` klasy, import <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>.  
+4. W `GetDTEProvider` klasy, import <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>.  
   
     ```csharp  
     [Import]  
@@ -56,14 +56,14 @@ Obiekt DTE w pakietach VSPackage, można uzyskać przez wywołanie metody <xref:
   
     ```  
   
-5.  W `GetClassifier()` metody, Dodaj następujący kod.  
+5. W `GetClassifier()` metody, Dodaj następujący kod.  
   
     ```csharp  
     DTE dte = (DTE)ServiceProvider.GetService(typeof(DTE));  
   
     ```  
   
-6.  Jeśli trzeba użyć <xref:EnvDTE80.DTE2> interfejsu, można rzutować obiektu DTE do niego.  
+6. Jeśli trzeba użyć <xref:EnvDTE80.DTE2> interfejsu, można rzutować obiektu DTE do niego.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Punkty rozszerzeń usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)

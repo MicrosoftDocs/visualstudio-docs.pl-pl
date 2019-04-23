@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef6250e9e413d91c218634e90fe67a4f04b83bce
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 4ed9a9a349f2496343a9a9828cd436d8d4015aa9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953920"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038130"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Instrukcje: Publikowanie aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych
 
@@ -31,7 +31,7 @@ Style wizualne Włącz wygląd wspólnych formantów, aby zmienić w zależnośc
 
   Następnie można przenieść opublikowane pliki do lokalizacji, z którego chcesz zainstalować aplikację użytkownikom końcowym.
 
-##  <a name="publish-the-solution-without-visual-styles-enabled"></a>Publikowanie rozwiązania bez włączonej funkcji stylów wizualnych
+## <a name="publish-the-solution-without-visual-styles-enabled"></a>Publikowanie rozwiązania bez włączonej funkcji stylów wizualnych
 
 1. Upewnij się, że projekt nie ma włączonej funkcji stylów wizualnych. Najpierw sprawdź następujący kod XML manifestu pliku projektu. Następnie kod XML jest obecny, należy ująć XML przy użyciu znacznik komentarza.
 

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2dd787168d906ce90a50562e5147b45308c54ff5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 53e36d993e72da759c87e7d2d2f908818b3d9024
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868062"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068551"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Wdrażanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio
 
@@ -33,9 +33,9 @@ Aby uzyskać więcej informacji o tworzeniu pakietów VSIX i wdrożenie ich [Vis
 
 Możesz użyć **projekt VSIX** szablonem programu Visual Studio SDK do tworzenia pakietów VSIX dla rozszerzeń narzędzi programu SharePoint. Za pomocą projektu VSIX zapewnia kilka korzyści za pośrednictwem ręczne tworzenie pakietu VSIX:
 
--   Podczas kompilowania projektu programu Visual Studio automatycznie generuje pakiet VSIX. Zadania, takie jak dodawanie pliki wdrożenia pakietu i tworzenia pliku [Content_Types] .xml dla pakietu są wykonywane tylko dla Ciebie.
+- Podczas kompilowania projektu programu Visual Studio automatycznie generuje pakiet VSIX. Zadania, takie jak dodawanie pliki wdrożenia pakietu i tworzenia pliku [Content_Types] .xml dla pakietu są wykonywane tylko dla Ciebie.
 
--   Można skonfigurować projekt VSIX, aby dołączyć dane wyjściowe kompilacji projektu rozszerzenia i inne pliki, takie jak szablony projektów i szablonów elementów w pakiecie VSIX.
+- Można skonfigurować projekt VSIX, aby dołączyć dane wyjściowe kompilacji projektu rozszerzenia i inne pliki, takie jak szablony projektów i szablonów elementów w pakiecie VSIX.
 
 Aby uzyskać więcej informacji na temat używania projektu VSIX, zobacz [szablonu projektu VSIX](../extensibility/vsix-project-template.md).
 
@@ -43,17 +43,17 @@ Aby uzyskać więcej informacji na temat używania projektu VSIX, zobacz [szablo
 
 Domyślnie projektów VSIX generować tylko pakietów VSIX, nie zestawów. Dlatego należy zwykle nie należy implementować rozszerzenia narzędzi programu SharePoint w projekcie VSIX. Ogólnie pracować z co najmniej dwa projekty:
 
--   A VSIX project.
+- A VSIX project.
 
--   Projekt biblioteki klas, który implementuje rozszerzenie.
+- Projekt biblioteki klas, który implementuje rozszerzenie.
 
 Możesz także pracować z projektami dodatkowe dla niektórych typów rozszerzeń:
 
--   Projekt biblioteki klas, który implementuje żadnych poleceń programu SharePoint, które są używane przez Twoje rozszerzenie. Aby uzyskać wskazówki, które pokazuje, w tym scenariuszu, zobacz [instruktażu: Rozszerzanie Eksploratora serwera na potrzeby wyświetlania składników web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
+- Projekt biblioteki klas, który implementuje żadnych poleceń programu SharePoint, które są używane przez Twoje rozszerzenie. Aby uzyskać wskazówki, które pokazuje, w tym scenariuszu, zobacz [instruktażu: Rozszerzanie Eksploratora serwera na potrzeby wyświetlania składników web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
 
--   Na projekt szablonu elementu lub szablon projektu, który tworzy szablon elementu lub szablon projektu, jeśli rozszerzenie definiuje nowy typ elementu projektu programu SharePoint. Aby uzyskać wskazówki, które pokazuje, w tym scenariuszu, zobacz [instruktażu: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
+- Na projekt szablonu elementu lub szablon projektu, który tworzy szablon elementu lub szablon projektu, jeśli rozszerzenie definiuje nowy typ elementu projektu programu SharePoint. Aby uzyskać wskazówki, które pokazuje, w tym scenariuszu, zobacz [instruktażu: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
 
--   Projekt biblioteki klas, który implementuje niestandardowego kreatora szablonu elementu lub szablon projektu, jeśli rozszerzenie zawiera szablon. Aby uzyskać wskazówki, które pokazuje, w tym scenariuszu, zobacz [instruktażu: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
+- Projekt biblioteki klas, który implementuje niestandardowego kreatora szablonu elementu lub szablon projektu, jeśli rozszerzenie zawiera szablon. Aby uzyskać wskazówki, które pokazuje, w tym scenariuszu, zobacz [instruktażu: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
 Jeśli dodasz wszystkie projekty w rozwiązaniu programu Visual Studio, można zmodyfikować plik source.extension.vsixmanifest w projekcie VSIX, aby zawierał wyniki kompilacji projekty bibliotek klas.
 
@@ -63,77 +63,77 @@ Należy zmodyfikować plik source.extension.vsixmanifest w projekcie VSIX, aby d
 
 Musisz dodać wpisy do pliku source.extension.vsixmanifest dla następujących elementów:
 
--   Zestawu rozszerzeń.
+- Zestawu rozszerzeń.
 
--   Zestaw, który implementuje żadnych poleceń programu SharePoint, które są używane przez Twoje rozszerzenie.
+- Zestaw, który implementuje żadnych poleceń programu SharePoint, które są używane przez Twoje rozszerzenie.
 
--   Szablony projektów i szablonów elementów, które są skojarzone z rozszerzeniem.
+- Szablony projektów i szablonów elementów, które są skojarzone z rozszerzeniem.
 
--   Kreator niestandardowego szablonu, który jest skojarzony z rozszerzeniem.
+- Kreator niestandardowego szablonu, który jest skojarzony z rozszerzeniem.
 
 W poniższych procedurach opisano sposób dodawania pozycji do pliku .vsixmanifest dla każdego z tych elementów.
 
 #### <a name="to-include-the-extension-assembly"></a>Aby uwzględnić zestawu rozszerzeń
 
-1.  W projekcie VSIX, otwórz menu skrótów dla pliku source.extension.vsixmanifest, a następnie wybierz **Otwórz**.
+1. W projekcie VSIX, otwórz menu skrótów dla pliku source.extension.vsixmanifest, a następnie wybierz **Otwórz**.
 
      Plik zostanie otwarty w Projektancie
 
-2.  Na **zasoby** karta w edytorze wybierz **nowy** przycisku.
+2. Na **zasoby** karta w edytorze wybierz **nowy** przycisku.
 
      **Dodaj nowy zasób** zostanie otwarte okno dialogowe.
 
-3.  W **typu** wybierz **Microsoft.VisualStudio.MefComponent**.
+3. W **typu** wybierz **Microsoft.VisualStudio.MefComponent**.
 
-4.  W **źródła** listy, wykonaj jedną z następujących czynności:
+4. W **źródła** listy, wykonaj jedną z następujących czynności:
 
-    -   Jeśli zestawu rozszerzeń jest zbudowany z projektu, który znajduje się w tym samym rozwiązaniu co projekt VSIX, wybierz **projekt w bieżącym rozwiązaniu**. W **projektu** , wybierz nazwę projektu.
+    - Jeśli zestawu rozszerzeń jest zbudowany z projektu, który znajduje się w tym samym rozwiązaniu co projekt VSIX, wybierz **projekt w bieżącym rozwiązaniu**. W **projektu** , wybierz nazwę projektu.
 
-    -   Jeśli zestawu rozszerzeń jest uwzględniany jako plik w projekcie, wybierz opcję **plików w systemie plików**. W **ścieżki** liście, wprowadź pełną ścieżkę do pliku zestawu rozszerzenia lub używanie **Przeglądaj** przycisk, aby zlokalizować i wybierz plik zestawu.
+    - Jeśli zestawu rozszerzeń jest uwzględniany jako plik w projekcie, wybierz opcję **plików w systemie plików**. W **ścieżki** liście, wprowadź pełną ścieżkę do pliku zestawu rozszerzenia lub używanie **Przeglądaj** przycisk, aby zlokalizować i wybierz plik zestawu.
 
-5.  Wybierz **OK** przycisku.
+5. Wybierz **OK** przycisku.
 
 #### <a name="to-include-a-sharepoint-command-assembly"></a>Aby dołączyć do zestawu poleceń programu SharePoint
 
-1.  W projekcie VSIX, otwórz menu skrótów dla pliku source.extension.vsixmanifest, a następnie wybierz **Otwórz** przycisku.
+1. W projekcie VSIX, otwórz menu skrótów dla pliku source.extension.vsixmanifest, a następnie wybierz **Otwórz** przycisku.
 
      Plik zostanie otwarty w projektancie.
 
-2.  W **zasoby** sekcji edytora, wybierz **New** przycisku.
+2. W **zasoby** sekcji edytora, wybierz **New** przycisku.
 
      **Dodaj nowy zasób** zostanie otwarte okno dialogowe.
 
-3.  W **typu** wprowadź **SharePoint.Commands.v4**.
+3. W **typu** wprowadź **SharePoint.Commands.v4**.
 
-4.  W **źródła** listy, wykonaj jedną z następujących czynności:
+4. W **źródła** listy, wykonaj jedną z następujących czynności:
 
-    -   Jeśli zestaw polecenia jest zbudowany z projektu, który znajduje się w tym samym rozwiązaniu co projekt VSIX, wybierz opcję **projekt w bieżącym rozwiązaniu**. W **projektu** , wybierz nazwę projektu.
+    - Jeśli zestaw polecenia jest zbudowany z projektu, który znajduje się w tym samym rozwiązaniu co projekt VSIX, wybierz opcję **projekt w bieżącym rozwiązaniu**. W **projektu** , wybierz nazwę projektu.
 
-    -   Jeśli zestaw poleceń jest uwzględniany jako plik w projekcie, wybierz opcję **plików w systemie plików**. W **ścieżki** liście, wprowadź pełną ścieżkę do pliku zestawu rozszerzenia lub używanie **Przeglądaj** przycisk, aby zlokalizować i wybierz plik zestawu.
+    - Jeśli zestaw poleceń jest uwzględniany jako plik w projekcie, wybierz opcję **plików w systemie plików**. W **ścieżki** liście, wprowadź pełną ścieżkę do pliku zestawu rozszerzenia lub używanie **Przeglądaj** przycisk, aby zlokalizować i wybierz plik zestawu.
 
-5.  Wybierz **OK** przycisku.
+5. Wybierz **OK** przycisku.
 
 #### <a name="to-include-a-template-that-you-create"></a>Aby uwzględnić utworzonego szablonu
 
-1.  W projekcie VSIX, otwórz menu skrótów dla pliku source.extension.vsixmanifest, a następnie wybierz **Otwórz** przycisku.
+1. W projekcie VSIX, otwórz menu skrótów dla pliku source.extension.vsixmanifest, a następnie wybierz **Otwórz** przycisku.
 
      Plik zostanie otwarty w projektancie.
 
-2.  W **zasoby** sekcji edytora, wybierz **New** przycisku.
+2. W **zasoby** sekcji edytora, wybierz **New** przycisku.
 
      **Dodaj nowy zasób** zostanie otwarte okno dialogowe.
 
-3.  W **typu** wybierz **Microsoft.VisualStudio.ProjectTemplate** lub **Microsoft.VisualStudio.ItemTemplate**.
+3. W **typu** wybierz **Microsoft.VisualStudio.ProjectTemplate** lub **Microsoft.VisualStudio.ItemTemplate**.
 
-4.  W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.
+4. W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.
 
-5.  W **projektu** , wybierz nazwę projektu, a następnie wybierz **OK** przycisku.
+5. W **projektu** , wybierz nazwę projektu, a następnie wybierz **OK** przycisku.
 
-6.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu szablonu projektu lub elementu szablonu, a następnie wybierz **Zwolnij projekt**.
+6. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu szablonu projektu lub elementu szablonu, a następnie wybierz **Zwolnij projekt**.
 
-7.  Ponownie otwórz menu skrótów dla węzła projektu, a następnie wybierz **Edytuj**_YourTemplateProjectName_**.csproj** lub **Edytuj**  _YourTemplateProjectName_**.vbproj**.
+7. Ponownie otwórz menu skrótów dla węzła projektu, a następnie wybierz **Edytuj**_YourTemplateProjectName_**.csproj** lub **Edytuj**  _YourTemplateProjectName_**.vbproj**.
 
-8.  Znajdź następujące `VSTemplate` elementu w pliku projektu.
+8. Znajdź następujące `VSTemplate` elementu w pliku projektu.
 
     ```xml
     <VSTemplate Include="YourTemplateName.vstemplate">
@@ -155,9 +155,9 @@ W poniższych procedurach opisano sposób dodawania pozycji do pliku .vsixmanife
 
 #### <a name="to-include-a-template-that-you-create-manually"></a>Aby uwzględnić szablon, który można tworzyć ręcznie
 
-1.  W projekcie VSIX należy dodać nowy folder do projektu, który ma zawierać szablon.
+1. W projekcie VSIX należy dodać nowy folder do projektu, który ma zawierać szablon.
 
-2.  W tym folderze nowe, utwórz następujące podfoldery, a następnie dodaj plik szablonu (.zip) do *identyfikator ustawień regionalnych* folderu.
+2. W tym folderze nowe, utwórz następujące podfoldery, a następnie dodaj plik szablonu (.zip) do *identyfikator ustawień regionalnych* folderu.
 
      *YourTemplateFolder*
 
@@ -171,43 +171,43 @@ W poniższych procedurach opisano sposób dodawania pozycji do pliku .vsixmanife
 
      Na przykład, jeśli szablon elementu o nazwie ContosoCustomAction.zip, który obsługuje ustawień regionalnych języka angielskiego (Stany Zjednoczone), pełna ścieżka może być *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*.
 
-3.  W **Eksploratora rozwiązań**, wybierz plik szablonu (*YourTemplateName*zip).
+3. W **Eksploratora rozwiązań**, wybierz plik szablonu (*YourTemplateName*zip).
 
-4.  W **właściwości** oknie **Build Action** właściwości **zawartości**.
+4. W **właściwości** oknie **Build Action** właściwości **zawartości**.
 
-5.  Otwórz menu skrótów dla pliku source.extension.vsixmanifest, a następnie wybierz **Otwórz**.
+5. Otwórz menu skrótów dla pliku source.extension.vsixmanifest, a następnie wybierz **Otwórz**.
 
      Plik zostanie otwarty w projektancie.
 
-6.  W **zasoby** sekcji edytora, wybierz **New** przycisku.
+6. W **zasoby** sekcji edytora, wybierz **New** przycisku.
 
      **Dodaj nowy zasób** zostanie otwarte okno dialogowe.
 
-7.  W **typu** wybierz **Microsoft.VisualStudio.ItemTemplate** lub **Microsoft.VisualStudio.ProjectTemplate**.
+7. W **typu** wybierz **Microsoft.VisualStudio.ItemTemplate** lub **Microsoft.VisualStudio.ProjectTemplate**.
 
-8.  W **źródła** wybierz **plików w systemie plików**.
+8. W **źródła** wybierz **plików w systemie plików**.
 
 9. W **ścieżki** wprowadź pełną ścieżkę do zestawu (na przykład *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*, lub użyj **Przeglądaj**przycisk, aby zlokalizować, a następnie wybierz zestaw, a następnie wybierz **OK** przycisku.
 
 #### <a name="to-include-a-wizard-for-a-project-template-or-item-template"></a>Aby uwzględnić Kreator szablonu projektu lub elementu szablonu
 
-1.  W projekcie VSIX, otwórz menu skrótów dla pliku source.extension.vsixmanifest, a następnie wybierz **Otwórz**.
+1. W projekcie VSIX, otwórz menu skrótów dla pliku source.extension.vsixmanifest, a następnie wybierz **Otwórz**.
 
      Plik zostanie otwarty w projektancie.
 
-2.  W **zasoby** sekcji edytora, wybierz **New** przycisku.
+2. W **zasoby** sekcji edytora, wybierz **New** przycisku.
 
      **Dodaj nowy zasób** zostanie otwarte okno dialogowe.
 
-3.  W **typu** wybierz **Microsoft.VisualStudio.Assembly**.
+3. W **typu** wybierz **Microsoft.VisualStudio.Assembly**.
 
-4.  W **źródła** listy, wykonaj jedną z następujących czynności:
+4. W **źródła** listy, wykonaj jedną z następujących czynności:
 
-    -   Jeśli zestaw kreatora jest zbudowany z projektu, który znajduje się w tym samym rozwiązaniu co projekt VSIX, wybierz opcję **projekt w bieżącym rozwiązaniu**. W **projektu** , wybierz nazwę projektu.
+    - Jeśli zestaw kreatora jest zbudowany z projektu, który znajduje się w tym samym rozwiązaniu co projekt VSIX, wybierz opcję **projekt w bieżącym rozwiązaniu**. W **projektu** , wybierz nazwę projektu.
 
-    -   Jeśli zestaw kreatora jest uwzględniany jako plik w projekcie, wybierz opcję **plików w systemie plików**. W **ścieżki** pole, wprowadź pełną ścieżkę do pliku zestawu lub używanie **Przeglądaj** przycisk, aby znaleźć i wybrać zestaw.
+    - Jeśli zestaw kreatora jest uwzględniany jako plik w projekcie, wybierz opcję **plików w systemie plików**. W **ścieżki** pole, wprowadź pełną ścieżkę do pliku zestawu lub używanie **Przeglądaj** przycisk, aby znaleźć i wybrać zestaw.
 
-5.  Wybierz **OK** przycisku.
+5. Wybierz **OK** przycisku.
 
 ### <a name="related-walkthroughs"></a>Pokrewne instruktaże
 
@@ -224,21 +224,21 @@ W poniższej tabeli wymieniono instruktaży, które pokazują, jak użyć projek
 
 Jeśli chcesz ręcznie utworzyć pakiet VSIX dla rozszerzenia narzędzi programu SharePoint, wykonaj następujące czynności:
 
-1.  Tworzenie pliku extension.vsixmanifest i pliku [Content_Types] .xml w nowym folderze. Aby uzyskać więcej informacji, zobacz [anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md).
+1. Tworzenie pliku extension.vsixmanifest i pliku [Content_Types] .xml w nowym folderze. Aby uzyskać więcej informacji, zobacz [anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md).
 
-2.  W Eksploratorze Windows kliknij prawym przyciskiem myszy folder, który zawiera dwa pliki XML, kliknij przycisk Wyślij do, a następnie kliknij Folder skompresowany (zip). Zmień nazwę wynikowy plik zip na Filename.vsix, gdzie nazwa_pliku to nazwa pliku pakietu redystrybucyjnego, który instaluje pakiet.
+2. W Eksploratorze Windows kliknij prawym przyciskiem myszy folder, który zawiera dwa pliki XML, kliknij przycisk Wyślij do, a następnie kliknij Folder skompresowany (zip). Zmień nazwę wynikowy plik zip na Filename.vsix, gdzie nazwa_pliku to nazwa pliku pakietu redystrybucyjnego, który instaluje pakiet.
 
-3.  Dodaj zestaw rozszerzeń do pakietu VSIX. Jeśli rozszerzenie zawiera polecenia programu SharePoint, należy również dodać zestaw, który implementuje polecenie programu SharePoint, aby pakiet VSIX.
+3. Dodaj zestaw rozszerzeń do pakietu VSIX. Jeśli rozszerzenie zawiera polecenia programu SharePoint, należy również dodać zestaw, który implementuje polecenie programu SharePoint, aby pakiet VSIX.
 
-4.  Zmodyfikuj plik extension.vsixmanifest:
+4. Zmodyfikuj plik extension.vsixmanifest:
 
-    -   Dodaj `Microsoft.VisualStudio.MefComponent` pod `Assets` elementu, a następnie ustaw wartość nowego elementu do ścieżki względnej zestawu, który implementuje rozszerzenie w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    - Dodaj `Microsoft.VisualStudio.MefComponent` pod `Assets` elementu, a następnie ustaw wartość nowego elementu do ścieżki względnej zestawu, który implementuje rozszerzenie w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-    -   Jeśli rozszerzenie zawiera polecenia programu SharePoint, która wywołuje w modelu obiektów serwera dla programu SharePoint, należy dodać `Microsoft.VisualStudio.Assembly` pod `Assets` elementu. Ustaw wartość nowego elementu względną ścieżkę zestawu, który implementuje polecenie programu SharePoint w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [zawartości elementu (schemat VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    - Jeśli rozszerzenie zawiera polecenia programu SharePoint, która wywołuje w modelu obiektów serwera dla programu SharePoint, należy dodać `Microsoft.VisualStudio.Assembly` pod `Assets` elementu. Ustaw wartość nowego elementu względną ścieżkę zestawu, który implementuje polecenie programu SharePoint w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [zawartości elementu (schemat VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
-    -   Jeśli rozszerzenie zawiera szablon projektu lub elementu szablonu, należy dodać `ProjectTemplate` lub `ItemTemplate` pod `Assets` elementu. Ustaw wartość nowego elementu względną ścieżkę folderu, który zawiera szablon w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [ProjectTemplate — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)) i [elementów właściwości ItemTemplate (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
+    - Jeśli rozszerzenie zawiera szablon projektu lub elementu szablonu, należy dodać `ProjectTemplate` lub `ItemTemplate` pod `Assets` elementu. Ustaw wartość nowego elementu względną ścieżkę folderu, który zawiera szablon w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [ProjectTemplate — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)) i [elementów właściwości ItemTemplate (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
 
-    -   Jeśli rozszerzenie zawiera Kreatora niestandardowego szablonu projektu lub elementu szablonu, należy dodać `Assembly` pod `Assets` elementu. Ustaw wartość nowego elementu na ścieżkę względną zestawu w pakiecie VSIX, a następnie ustaw `AssemblyName` atrybutu nazwy pełnego zestawu (w tym wersji, kulturę i token klucza publicznego). Aby uzyskać więcej informacji, zobacz [Element zależności (schemat VSX)](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37).
+    - Jeśli rozszerzenie zawiera Kreatora niestandardowego szablonu projektu lub elementu szablonu, należy dodać `Assembly` pod `Assets` elementu. Ustaw wartość nowego elementu na ścieżkę względną zestawu w pakiecie VSIX, a następnie ustaw `AssemblyName` atrybutu nazwy pełnego zestawu (w tym wersji, kulturę i token klucza publicznego). Aby uzyskać więcej informacji, zobacz [Element zależności (schemat VSX)](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37).
 
 ### <a name="example"></a>Przykład
 

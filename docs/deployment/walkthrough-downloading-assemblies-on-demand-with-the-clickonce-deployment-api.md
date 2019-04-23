@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cadba0d6afd35303fd44eb0442bb8f4eb9aa8440
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e363989094f4d4859f272423792aa32152c6de57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603902"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063884"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Przewodnik: Pobieranie zestawów na żądanie przy użyciu wdrażania interfejsu API ClickOnce
 Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji zostaną pobrane po pierwszym uruchomieniu aplikacji. Jednak mogą mieć części aplikacji, które są używane w małej grupie użytkowników. W tym przypadku chcesz pobrać zestaw tylko wtedy, gdy tworzysz w jednym z jej typów. Następujące Instruktaż pokazuje, jak oznaczyć określone zestawy w aplikacji jako "opcjonalny", jak je pobrać za pomocą klasy i w <xref:System.Deployment.Application> przestrzenią nazw, gdy wymagane przez środowisko uruchomieniowe języka wspólnego (CLR).
@@ -32,9 +32,9 @@ Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/incl
 ## <a name="prerequisites"></a>Wymagania wstępne
  Potrzebujesz jednego z następujących składników w celu przeprowadzenia tego instruktażu:
 
--   Windows SDK. Zestaw Windows SDK można pobrać z Microsoft Download Center.
+- Windows SDK. Zestaw Windows SDK można pobrać z Microsoft Download Center.
 
--   Program Visual Studio.
+- Program Visual Studio.
 
 ## <a name="create-the-projects"></a>Tworzenie projektów
 
@@ -100,17 +100,17 @@ Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/incl
 
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>Aby oznaczyć zestawów jako opcjonalne w aplikacji ClickOnce za pomocą MageUI.exe
 
-1.  Za pomocą *MageUI.exe*, utworzyć manifest aplikacji, zgodnie z opisem w [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Manifest aplikacji, użyj następujących ustawień:
+1. Za pomocą *MageUI.exe*, utworzyć manifest aplikacji, zgodnie z opisem w [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Manifest aplikacji, użyj następujących ustawień:
 
-    -   Nazwy w manifeście aplikacji `ClickOnceOnDemand`.
+    - Nazwy w manifeście aplikacji `ClickOnceOnDemand`.
 
-    -   Na **pliki** strony w *ClickOnceLibrary.dll* wierszy, ustawianie **typ pliku** kolumny **Brak**.
+    - Na **pliki** strony w *ClickOnceLibrary.dll* wierszy, ustawianie **typ pliku** kolumny **Brak**.
 
-    -   Na **pliki** stronie *ClickOnceLibrary.dll* wiersz, wpisz `ClickOnceLibrary.dll` w **grupy** kolumny.
+    - Na **pliki** stronie *ClickOnceLibrary.dll* wiersz, wpisz `ClickOnceLibrary.dll` w **grupy** kolumny.
 
-2.  Za pomocą *MageUI.exe*, utworzyć manifest wdrożenia, zgodnie z opisem w [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Manifest wdrożenia, użyj następujących ustawień:
+2. Za pomocą *MageUI.exe*, utworzyć manifest wdrożenia, zgodnie z opisem w [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Manifest wdrożenia, użyj następujących ustawień:
 
-    -   Nazwa pliku manifestu wdrożenia `ClickOnceOnDemand`.
+    - Nazwa pliku manifestu wdrożenia `ClickOnceOnDemand`.
 
 ## <a name="testing-the-new-assembly"></a>Testowanie nowego zestawu
 

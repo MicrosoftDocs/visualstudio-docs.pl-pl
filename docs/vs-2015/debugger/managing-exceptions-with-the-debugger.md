@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: da57824eb467bf1691175a80d74cc61b8f181617
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a8bc2e1f4c78e32db6fa5e09ec50bdd182f4fa6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790905"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040967"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Zarządzanie wyjątkami za pomocą debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,11 +47,11 @@ Wyjątek jest wskazaniem stanu błędu, który występuje, gdy program jest wyko
   
  Gdy wystąpi wyjątek, debuger zapisuje komunikat o wyjątku w oknie danych wyjściowych. Może je przerwać wykonywanie w następujących przypadkach:  
   
--   Gdy wyjątek jest wyrzucany i nie jest obsługiwany.  
+- Gdy wyjątek jest wyrzucany i nie jest obsługiwany.  
   
--   gdy debuger jest równa przerwać wykonywanie natychmiast, gdy wyjątek jest zgłaszany, zanim wywoływana zostanie jakakolwiek Obsługa.  
+- gdy debuger jest równa przerwać wykonywanie natychmiast, gdy wyjątek jest zgłaszany, zanim wywoływana zostanie jakakolwiek Obsługa.  
   
--   Jeśli ustawiono [tylko mój kod](../debugger/just-my-code.md), a debuger jest ustawiona na przerwanie przy każdym wyjątku, który nie jest obsługiwany w kodzie użytkownika.  
+- Jeśli ustawiono [tylko mój kod](../debugger/just-my-code.md), a debuger jest ustawiona na przerwanie przy każdym wyjątku, który nie jest obsługiwany w kodzie użytkownika.  
   
 > [!NOTE]
 >  Program ASP.NET ma program obsługi wyjątków najwyższego poziomu, pokazujący stron błędów, które w przeglądarce. Go nie Przerwij wykonywanie, chyba że **tylko mój kod** jest włączona. Aby uzyskać przykład, zobacz [ustawienia debugera, aby kontynuować na wyjątkach nieobsługiwanych przez użytkownika](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) poniżej.  
@@ -141,7 +141,7 @@ Wyjątek jest wskazaniem stanu błędu, który występuje, gdy program jest wyko
   
    ![Przywróć ustawienia domyślne w ustawieniach wyjątek](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-###  <a name="BKMK_UserUnhandled"></a> Ustawienia debugera, aby kontynuować na wyjątkach nieobsługiwanych przez użytkownika  
+### <a name="BKMK_UserUnhandled"></a> Ustawienia debugera, aby kontynuować na wyjątkach nieobsługiwanych przez użytkownika  
  Jeśli debugujesz kod .NET lub języka JavaScript za pomocą [tylko mój kod](../debugger/just-my-code.md), można polecić debugerowi, które nie do przerwy na wyjątki, które nie są obsługiwane w kodzie użytkownika, ale są obsługiwane w innym miejscu.  
   
 1. W **ustawienia wyjątków** okna, otwórz menu kontekstowe, klikając prawym przyciskiem myszy w oknie, a następnie wybierając **Pokaż kolumny**. (Jeśli wyłączysz **tylko mój kod**, nie zobaczysz tego polecenia.)  

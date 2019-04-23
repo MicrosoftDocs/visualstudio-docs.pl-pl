@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 472535a44e8cc9fe2aef40e1e3bf81c57bfcbe98
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 351247f50560896d53267fcf8d7f4a66a81b9461
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663180"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065483"
 ---
 # <a name="analyze-cpu-usage"></a>Analizowanie użycia procesora CPU
 
@@ -31,7 +31,7 @@ Zazwyczaj komputer lokalny najlepsze replikuje wykonywanie zainstalowanych aplik
 >[!NOTE]
 >Windows 7 lub nowszy jest wymagany do użycia [Profiler wydajności](../profiling/profiling-feature-tour.md).
 
-##  <a name="collect-cpu-usage-data"></a>Zbieranie danych użycia procesora CPU
+## <a name="collect-cpu-usage-data"></a>Zbieranie danych użycia procesora CPU
 
 1. W projekcie programu Visual Studio, należy ustawić Konfiguracja rozwiązania **wersji** i wybierz **komputera lokalnego** jako cel wdrożenia.
 
@@ -59,7 +59,7 @@ Raport diagnostyczny są posortowane według **łączny czas Procesora**, od naj
 Począwszy od programu Visual Studio 2019 r, możesz kliknąć pozycję **Rozwiń ścieżkę aktywną** i **Pokaż ścieżkę aktywną** przycisków, aby wyświetlić wywołania funkcji, która Użyj najwięcej procesora CPU w widoku drzewa wywołań.
 ::: moniker-end
 
-###  <a name="BKMK_Call_tree_data_columns"></a> Kolumny danych użycia procesora CPU
+### <a name="BKMK_Call_tree_data_columns"></a> Kolumny danych użycia procesora CPU
 
 |||
 |-|-|
@@ -67,11 +67,11 @@ Począwszy od programu Visual Studio 2019 r, możesz kliknąć pozycję **Rozwi�
 |**Czas własny Procesora [jednostka, %]**|![Równania własnym %](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Milisekund i procent użycia procesora CPU, używany przez wywołania do funkcji w wybranym zakresie czasu, z wyjątkiem funkcji wywołanych przez funkcję.|
 |**Module**|Nazwa modułu zawierający funkcję.
 
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a> Użycie procesora CPU drzewo wywołań
+### <a name="BKMK_The_CPU_Usage_call_tree"></a> Użycie procesora CPU drzewo wywołań
 
 Aby wyświetlić drzewo wywołań, wybierz węzeł nadrzędny w raporcie. **Użycie procesora CPU** zostanie otwarta strona **wywołujący/wywoływany** widoku. W **bieżący widok** listy rozwijanej wybierz **drzewo wywołań**.
 
-####  <a name="BKMK_Call_tree_structure"></a> Struktura drzewa wywołań
+#### <a name="BKMK_Call_tree_structure"></a> Struktura drzewa wywołań
 
 ::: moniker range=">=vs-2019"
 ![Wywołania struktury drzewa](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "struktury drzewa wywołań")
@@ -87,7 +87,7 @@ Aby wyświetlić drzewo wywołań, wybierz węzeł nadrzędny w raporcie. **Uży
 |![Krok 3](../profiling/media/procguid_3.png "ProcGuid_3")|Elementy podrzędne węzła drugiego poziomu są asynchroniczne procedur, które są nazywane lub utworzonych przez system drugiego poziomu oraz kodu struktury i metody kod użytkownika.|
 |![Krok 4](../profiling/media/procguid_4.png "ProcGuid_4")|Węzły podrzędne metody ma danych tylko w przypadku wywołania metody nadrzędnej. Gdy **Pokaż kod zewnętrzny** jest wyłączona, metody aplikacja może również zawierać **[kod zewnętrzny]** węzła.|
 
-####  <a name="BKMK_External_Code"></a> Kod zewnętrzny
+#### <a name="BKMK_External_Code"></a> Kod zewnętrzny
 
 System i platforma funkcje, które są wykonywane w kodzie są nazywane *kod zewnętrzny*. Funkcje kodu zewnętrznego Uruchom i Zatrzymaj aplikację, rysowania interfejsu użytkownika, kontrolować wątki i podaj inne niskopoziomowe usługi dla aplikacji. W większości przypadków nie chcesz kodu zewnętrznego, dzięki czemu użycie procesora CPU wywoływać drzewa zbiera informacje funkcji zewnętrznych metody użytkownika w jednym **[kod zewnętrzny]** węzła.
 
@@ -108,7 +108,7 @@ Aby znaleźć nazwę funkcji, których szukasz, użyj pola wyszukiwania. Umieś�
 ![Wyszukaj zagnieżdżonego kodu zewnętrznego](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "wyszukiwanie zagnieżdżonego kodu zewnętrznego")
 ::: moniker-end
 
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funkcje asynchroniczne użycia procesora CPU w drzewie wywołań
+### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funkcje asynchroniczne użycia procesora CPU w drzewie wywołań
 
  Gdy kompilator napotka metody asynchronicznej, tworzy ukrytej klasy, aby kontrolować wykonywanie metody. Koncepcyjnie klasa jest automatu stanów. Klasa ma funkcje generowane przez kompilator, wywołujące asynchronicznie oryginalnej metody i wywołania zwrotne, harmonogram i Iteratory potrzebnych do ich uruchomienia. Gdy metoda nadrzędnego wywołuje pierwotną metodą, kompilator usuwa metodę z kontekstu wykonania elementu nadrzędnego i uruchamia metody ukrytej klasy w kontekście systemu i struktury kodu, który kontroluje wykonywanie aplikacji. Metody asynchroniczne są często, ale nie zawsze wykonywane w różnych wątkach co najmniej jeden. Ten kod, który pojawia się w **użycie procesora CPU** drzewo wywołań jako elementy podrzędne **[kod zewnętrzny]** węzeł bezpośrednio pod górny węzeł drzewa.
 

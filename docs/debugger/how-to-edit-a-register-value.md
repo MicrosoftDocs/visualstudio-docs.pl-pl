@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 430ee5d0b36196c85d7c81b63503bfcc471d7664
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 00e1e849ba12303041d23b89e65230c2a5aafc9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075108"
 ---
 # <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Instrukcje: Edytowanie wartości rejestru (C#, C++, Visual Basic F#)
 
@@ -32,9 +32,9 @@ Okno rejestrów jest dostępna tylko wtedy, gdy debugowanie na poziomie adresów
 
 ### <a name="to-change-the-value-of-a-register"></a>Aby zmienić wartość rejestru
 
-1.  W **rejestruje** okna, użyj klawisza TAB lub myszy do wstawiania wskaż wartość, aby zmienić. Po rozpoczęciu wpisywania kursor musi znajdować się przed wartością, którą chcesz zastąpić.
+1. W **rejestruje** okna, użyj klawisza TAB lub myszy do wstawiania wskaż wartość, aby zmienić. Po rozpoczęciu wpisywania kursor musi znajdować się przed wartością, którą chcesz zastąpić.
 
-2.  Wpisz nową wartość.
+2. Wpisz nową wartość.
 
     > [!CAUTION]
     >  Zmiana wartości rejestru (szczególnie w rejestrach EIP i EBP) może wpłynąć na działanie programu.

@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c358f80284083625dfe8c0eb3484c95000beb63
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 7f7fbb6c8e6a6310b736ade599ad7854bc4255c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670449"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070743"
 ---
 # <a name="support-for-user-settings"></a>Pomoc techniczna dotycząca ustawień użytkownika
 Pakietu VSPackage może zdefiniować co najmniej jednej kategorii ustawienia, które są zmienne stanu, które utrzymują się, gdy użytkownik wybierze **importu/eksportu ustawień** polecenie **narzędzia** menu. Aby włączyć ten stan trwały, użyj ustawienia interfejsów API w [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
 
  Wpis rejestru, który jest określany jako punkt ustawienia niestandardowe i identyfikator GUID definiuje kategorię ustawień pakietu VSPackage. Pakietu VSPackage może obsługiwać wiele kategorii ustawienia, każdy zdefiniowany przez punkt ustawienia niestandardowe.
 
--   Implementacje ustawienia, które są oparte na zestawy międzyoperacyjne (przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interfejsu) należy utworzyć niestandardowe ustawienia punktu przez edycję rejestru lub za pomocą skryptu rejestratora (pliku .rgs). Aby uzyskać więcej informacji, zobacz [tworzenie skryptów rejestratora](/cpp/atl/creating-registrar-scripts).
+- Implementacje ustawienia, które są oparte na zestawy międzyoperacyjne (przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interfejsu) należy utworzyć niestandardowe ustawienia punktu przez edycję rejestru lub za pomocą skryptu rejestratora (pliku .rgs). Aby uzyskać więcej informacji, zobacz [tworzenie skryptów rejestratora](/cpp/atl/creating-registrar-scripts).
 
--   Kod, który używa Framework pakietu zarządzanego (MPF) należy utworzyć niestandardowe ustawienia punktów, dołączając <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> do pakietu VSPackage dla każdego punktu ustawienia niestandardowe.
+- Kod, który używa Framework pakietu zarządzanego (MPF) należy utworzyć niestandardowe ustawienia punktów, dołączając <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> do pakietu VSPackage dla każdego punktu ustawienia niestandardowe.
 
      Jeśli jednego pakietu VSPackage obsługuje kilka punktów ustawienia niestandardowe, w każdym punkcie ustawienia niestandardowego jest implementowany przez osobnej klasy, a każdy zostanie zarejestrowany przez unikatowego wystąpienia <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> klasy. W związku z tym ustawienia z implementacji klasy może obsługiwać więcej niż jednej kategorii ustawień.
 

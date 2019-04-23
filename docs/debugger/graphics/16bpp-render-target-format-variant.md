@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3fd601b48489e7334013e1e9438c1b6a580457d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 94775b717a3095d54d3fa52e3d2a5325dc3d21c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698940"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075795"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>16 bpp renderowania wariant formatu docelowego
 Zestawy piksel formatu DXGI_FORMAT_B5G6R5_UNORM wszystkie elementy docelowe renderowania i Utwórz kopię buforów.
@@ -48,11 +48,11 @@ Aplikacje, które są częścią łańcucha wymiany mają format buforu zapasowe
 ## <a name="remarks"></a>Uwagi
  Format docelowy renderowania jest resetowana do DXGI_FORMAT_B5G6R5_UNORM na każde wywołanie `ID3D11Device::CreateTexture2D` tworząca docelowego renderowania. W szczególności format jest zastępowany podczas przekazany pDesc obiekt D3D11_TEXTURE2D_DESC opisuje cel renderowania; Czyli:
 
--   Element członkowski BindFlags ma flagę D3D11_BIND_REDNER_TARGET zestawu.
+- Element członkowski BindFlags ma flagę D3D11_BIND_REDNER_TARGET zestawu.
 
--   Element członkowski BindFlags ma flagę D3D11_BIND_DEPTH_STENCIL wyczyszczone.
+- Element członkowski BindFlags ma flagę D3D11_BIND_DEPTH_STENCIL wyczyszczone.
 
--   Użycie elementu członkowskiego jest równa D3D11_USAGE_DEFAULT.
+- Użycie elementu członkowskiego jest równa D3D11_USAGE_DEFAULT.
 
 ## <a name="restrictions-and-limitations"></a>Ograniczenia i ograniczenia
  Ponieważ B5G6R5 format nie ma kanału alfa, alfa zawartości nie są zachowywane przez ten typ variant. Jeśli renderowanie aplikacji wymaga kanał alfa w docelowych renderowania, po prostu nie można przełączyć do formatu B5G6R5.

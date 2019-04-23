@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fadc8830649a15f1785194f3e2640a7ee86fadbb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 78b73cfe13d2374afad22dd322a80fe69acfb838
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644591"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068980"
 ---
 # <a name="how-to-programmatically-remove-all-comments-from-documents"></a>Instrukcje: Programowe usuwanie wszystkich komentarzy z dokumentów
   Użyj `DeleteAllComments` metodę, aby usunąć wszystkie komentarze z dokumentu programu Microsoft Office Word.
@@ -27,14 +27,14 @@ ms.locfileid: "56644591"
 
 ## <a name="to-remove-all-comments-from-a-document-that-is-part-of-a-document-level-customization"></a>Aby usunąć wszystkie komentarze z dokumentu, który jest częścią dostosowywania poziomie dokumentu
 
-1.  Wywołaj <xref:Microsoft.Office.Tools.Word.Document.DeleteAllComments%2A> metody `ThisDocument` klasy w projekcie. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisDocument` klasy.
+1. Wywołaj <xref:Microsoft.Office.Tools.Word.Document.DeleteAllComments%2A> metody `ThisDocument` klasy w projekcie. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisDocument` klasy.
 
      [!code-vb[Trin_VstcoreWordAutomation#119](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#119)]
      [!code-csharp[Trin_VstcoreWordAutomation#119](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#119)]
 
 ## <a name="to-remove-all-comments-from-a-document-by-using-a-vsto-add-in"></a>Aby usunąć wszystkie komentarze z dokumentu za pomocą dodatku narzędzi VSTO
 
-1.  Wywołaj <xref:Microsoft.Office.Interop.Word._Document.DeleteAllComments%2A> metody <xref:Microsoft.Office.Interop.Word.Document> z którego chcesz usunąć komentarze.
+1. Wywołaj <xref:Microsoft.Office.Interop.Word._Document.DeleteAllComments%2A> metody <xref:Microsoft.Office.Interop.Word.Document> z którego chcesz usunąć komentarze.
 
      Poniższy kod usuwa wszystkie komentarze z aktywnego dokumentu. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisAddIn` klasy w projekcie.
 

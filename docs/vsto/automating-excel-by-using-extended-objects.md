@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 03ea220bf886352a05cc67bdd44a9504dcd86964
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a8a08b58871652cea6332f4239e9da98b28f28e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600857"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070059"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Automatyzowanie programu Excel za pomocą obiektów rozszerzonych
   Podczas opracowywania rozwiązań programu Excel w programie Visual Studio, możesz użyć *hostować elementy* i *kontrolki hosta*s w posiadanych rozwiązaniach. Są to obiekty, które rozszerzają niektóre powszechnie używane obiekty w modelu obiektów programu Excel (oznacza to, że model obiektu, który jest udostępniany przez podstawowy zestaw międzyoperacyjny dla programu Excel), takie jak <xref:Microsoft.Office.Interop.Excel.Worksheet> i <xref:Microsoft.Office.Interop.Excel.Range> obiektów. Obiekty rozszerzone zachowują się jak obiekty programu Excel, które są one oparte na, ale dodają dodatkowe funkcje, takie jak nowe zdarzenia i możliwości wiązania danych do obiektów.
@@ -37,11 +37,11 @@ ms.locfileid: "56600857"
 ## <a name="excel-host-items"></a>Obiekty hosta programu Excel
  Projekty programu Excel dają dostęp do kilku elementów hosta:
 
--   <xref:Microsoft.Office.Tools.Excel.Worksheet>. Ten element hosta zawiera i reprezentuje arkusza w projekcie. Działa również jako kontener dla formantów zarządzanych, w tym formanty hosta i kontrolek Windows Forms i utrzymuje informacji na temat formantów na powierzchni. Aby uzyskać więcej informacji, zobacz [element hosta arkusza](../vsto/worksheet-host-item.md).
+- <xref:Microsoft.Office.Tools.Excel.Worksheet>. Ten element hosta zawiera i reprezentuje arkusza w projekcie. Działa również jako kontener dla formantów zarządzanych, w tym formanty hosta i kontrolek Windows Forms i utrzymuje informacji na temat formantów na powierzchni. Aby uzyskać więcej informacji, zobacz [element hosta arkusza](../vsto/worksheet-host-item.md).
 
--   <xref:Microsoft.Office.Tools.Excel.Workbook>. Ten element hosta skoroszytu w projekcie reprezentuje i działa jako kontener dla składników, które są współużytkowane przez wszystkich arkuszy w skoroszycie. Aby uzyskać więcej informacji, zobacz [element hosta skoroszytu](../vsto/workbook-host-item.md).
+- <xref:Microsoft.Office.Tools.Excel.Workbook>. Ten element hosta skoroszytu w projekcie reprezentuje i działa jako kontener dla składników, które są współużytkowane przez wszystkich arkuszy w skoroszycie. Aby uzyskać więcej informacji, zobacz [element hosta skoroszytu](../vsto/workbook-host-item.md).
 
--   <xref:Microsoft.Office.Tools.Excel.ChartSheet>. Ten host elementu arkusza programu Excel zawierający tylko wykres, który przedstawia zdarzenia.
+- <xref:Microsoft.Office.Tools.Excel.ChartSheet>. Ten host elementu arkusza programu Excel zawierający tylko wykres, który przedstawia zdarzenia.
 
      Po dodaniu wykresu w arkuszu w czasie projektowania, jako nowy arkusz w projekcie dostosowania poziomu dokumentu Microsoft Office Excel, programu Visual Studio automatycznie tworzy <xref:Microsoft.Office.Tools.Excel.ChartSheet> element hosta.
 
@@ -52,13 +52,13 @@ ms.locfileid: "56600857"
 
  Aby uzyskać informacje o kontrolkach hosta, którego można używać w projektach programu Excel zobacz następujące tematy:
 
--   [Kontrolka wykresu](../vsto/chart-control.md)
+- [Kontrolka wykresu](../vsto/chart-control.md)
 
--   [ListObject — formant](../vsto/listobject-control.md)
+- [ListObject — formant](../vsto/listobject-control.md)
 
--   [Namedrange — formant](../vsto/namedrange-control.md)
+- [Namedrange — formant](../vsto/namedrange-control.md)
 
--   [Xmlmappedrange — formant](../vsto/xmlmappedrange-control.md)
+- [Xmlmappedrange — formant](../vsto/xmlmappedrange-control.md)
 
 ## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Wypełnianie formantów ListObject danymi](../vsto/how-to-fill-listobject-controls-with-data.md)
