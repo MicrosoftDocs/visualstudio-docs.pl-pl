@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f794f1c988215f8899dce495f725b3a9c14a435
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b10434f92a5d310d2f53c4a1c1ff7ab3a84bc1ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788168"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045781"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Instrukcje: Określanie ikony aplikacji (Visual Basic C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "54788168"
   
 ### <a name="to-specify-an-application-icon"></a>Aby określić ikony aplikacji  
   
-1.  W **Eksploratora rozwiązań**, wybierz węzeł projektu (nie **rozwiązania** węzła).  
+1. W **Eksploratora rozwiązań**, wybierz węzeł projektu (nie **rozwiązania** węzła).  
   
-2.  Na pasku menu wybierz **projektu**, **właściwości**.  
+2. Na pasku menu wybierz **projektu**, **właściwości**.  
   
-3.  Gdy **projektanta projektu** pojawi się, wybierz **aplikacji** kartę.  
+3. Gdy **projektanta projektu** pojawi się, wybierz **aplikacji** kartę.  
   
-4.  **(Visual Basic)**  w **ikonę** listy, wybierz plik ikony (.ico).  
+4. **(Visual Basic)**  w **ikonę** listy, wybierz plik ikony (.ico).  
   
      **C#** w pobliżu **ikonę** wybierz  **\<Przeglądaj … >** przycisk, a następnie przejdź do lokalizacji pliku ikony, która ma.  
   

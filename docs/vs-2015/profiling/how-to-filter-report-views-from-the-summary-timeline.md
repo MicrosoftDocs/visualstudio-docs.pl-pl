@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 50958671d327013254b0a19e3dda160b1b3035e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ce9b74012be35433c26f8446f36246dbe93f6442
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778860"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044251"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Instrukcje: Filtrowanie widoków raportu z podsumowania osi czasu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,8 +23,8 @@ Można filtrować dane wyświetlane w raportach wydajności, określając segmen
   
 ### <a name="to-filter-a-profiling-report-from-the-summary-timeline-graph"></a>Aby filtrować raport profilowania z podsumowania osi czasu wykresu  
   
-1.  Na wykresie oś czasu widoku podsumowania kliknij punktu na osi czasu, a następnie przeciągnij myszą do innego punktu na osi czasu.  
+1. Na wykresie oś czasu widoku podsumowania kliknij punktu na osi czasu, a następnie przeciągnij myszą do innego punktu na osi czasu.  
   
      Region, który określiłeś, jest zacieniowany.  
   
-2.  Kliknij przycisk **filtru według zaznaczenia**.
+2. Kliknij przycisk **filtru według zaznaczenia**.

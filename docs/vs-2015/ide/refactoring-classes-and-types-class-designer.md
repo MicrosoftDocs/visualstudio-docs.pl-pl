@@ -20,12 +20,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e6a150d32fa4eb5bc162f9ce8522ddfed634253b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1fae6a503323d42d4f759a30b4db790a88079815
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782129"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048401"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refaktoryzacja klas i typów (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,52 +39,52 @@ Refaktoryzacja kodu możesz ułatwić zrozumienie, obsługa i bardziej wydajne, 
   
 |Zadanie|Zawartość pomocnicza|  
 |----------|------------------------|  
-|**Refaktoryzacja klas:** Można użyć operacji refaktoryzacji, podział klasy na klasy częściowe lub Implementowanie abstrakcyjnych klas podstawowych.|-   [Jak: Podział klasy na klasy częściowe (Projektant klas)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md)|  
+|**Refaktoryzacja klas:** Można użyć operacji refaktoryzacji, podział klasy na klasy częściowe lub Implementowanie abstrakcyjnych klas podstawowych.|-   [Jak: Podział klas na klasy częściowe (Projektant klas)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md)|  
 |**Praca z interfejsów:** W Projektancie klas można zaimplementować interfejsu na diagramie klas, łącząc je do klasy, która zawiera kod dla metody interfejsu.|-   [Jak: Implementowanie interfejsu (Projektant klas)](../ide/how-to-implement-an-interface-class-designer.md)|  
-|**Refaktoryzacja, typy, elementy członkowskie typu i parametry:** Za pomocą projektanta klas, można zmienić nazwy typów, Przesłoń składowe typu lub przenieść je z jednego typu na inny. Można również utworzyć typy dopuszczające wartości null.|-   [Zmiana nazwy, typy i elementy członkowskie typu](../ide/refactoring-classes-and-types-class-designer.md#RenamingTypesAndMembers)<br />-   [Przenoszenie elementów członkowskich typu z jednego typu na inny](../ide/refactoring-classes-and-types-class-designer.md#MovingTypeMembers)<br />-   [Jak: Tworzenie typu Zerowalnego (Projektant klas)](../ide/how-to-create-a-nullable-type-class-designer.md)|  
+|**Refaktoryzacja, typy, elementy członkowskie typu i parametry:** Za pomocą projektanta klas, można zmienić nazwy typów, Przesłoń składowe typu lub przenieść je z jednego typu na inny. Można również utworzyć typy dopuszczające wartości null.|-   [Zmiana nazwy, typy i elementy członkowskie typu](../ide/refactoring-classes-and-types-class-designer.md#RenamingTypesAndMembers)<br />-   [Przenoszenie elementów członkowskich typu z jednego typu na inny](../ide/refactoring-classes-and-types-class-designer.md#MovingTypeMembers)<br />-   [Jak: Tworzenie typu zerowalnego (Projektant klas)](../ide/how-to-create-a-nullable-type-class-designer.md)|  
   
-###  <a name="RenamingTypesAndMembers"></a> Zmiana nazwy, typy i elementy członkowskie typu  
+### <a name="RenamingTypesAndMembers"></a> Zmiana nazwy, typy i elementy członkowskie typu  
  W Projektancie klas możesz zmienić nazwę typu lub składowej typu na diagramie klasy lub w oknie dialogowym właściwości. W oknie Szczegóły klasy można zmienić nazwę elementu członkowskiego, ale nie jest typem. Zmiana nazwy typu lub składowej typu propaguje do wszystkich okien i lokalizacji kodu, w których pojawiły się starej nazwy.  
   
 ##### <a name="to-rename-a-name-in-the-class-designer"></a>Aby zmienić nazwę w Projektancie klas  
   
-1.  Na diagramie klasy wybierz typ lub element członkowski, a następnie kliknij nazwę.  
+1. Na diagramie klasy wybierz typ lub element członkowski, a następnie kliknij nazwę.  
   
      Nazwa elementu członkowskiego staje się edytowalna.  
   
-2.  Wpisz nową nazwę dla typu lub składowej typu  
+2. Wpisz nową nazwę dla typu lub składowej typu  
   
 ##### <a name="to-rename-a-name-in-the-class-details-window"></a>Aby zmienić nazwę w oknie Szczegóły klasy  
   
-1.  Aby wyświetlić okno Szczegóły klasy, kliknij prawym przyciskiem myszy typ lub składowa typu, a następnie kliknij przycisk **szczegóły klasy**.  
+1. Aby wyświetlić okno Szczegóły klasy, kliknij prawym przyciskiem myszy typ lub składowa typu, a następnie kliknij przycisk **szczegóły klasy**.  
   
      Zostanie wyświetlone okno Szczegóły klasy.  
   
-2.  W **nazwa** kolumny, zmienić nazwę elementu członkowskiego typu  
+2. W **nazwa** kolumny, zmienić nazwę elementu członkowskiego typu  
   
-3.  Aby przenieść fokus od komórki, naciśnij klawisz **ENTER** klucza, lub kliknij przycisk od komórki.  
+3. Aby przenieść fokus od komórki, naciśnij klawisz **ENTER** klucza, lub kliknij przycisk od komórki.  
   
     > [!NOTE]
     >  W oknie Szczegóły klasy można zmienić nazwę elementu członkowskiego, ale nie jest typem.  
   
 ##### <a name="to-rename-a-name-in-the-properties-window"></a>Aby zmienić nazwę w oknie dialogowym właściwości  
   
-1.  Na diagramie klasy lub w oknie Szczegóły klasy, kliknij prawym przyciskiem myszy typ lub element członkowski, a następnie kliknij przycisk **właściwości**.  
+1. Na diagramie klasy lub w oknie Szczegóły klasy, kliknij prawym przyciskiem myszy typ lub element członkowski, a następnie kliknij przycisk **właściwości**.  
   
      W oknie właściwości, pojawia się i wyświetla właściwości dla typu lub składowej typu.  
   
-2.  W **nazwa** właściwości, Zmień nazwę typu lub typ elementu członkowskiego.  
+2. W **nazwa** właściwości, Zmień nazwę typu lub typ elementu członkowskiego.  
   
      Nowa nazwa propaguje do wszystkich okien i lokalizacji kodu w bieżącym projekcie, gdzie znajdowały się starej nazwy.  
   
-###  <a name="MovingTypeMembers"></a> Przenoszenie elementów członkowskich typu z jednego typu na inny  
+### <a name="MovingTypeMembers"></a> Przenoszenie elementów członkowskich typu z jednego typu na inny  
  Za pomocą **projektanta klas**, można przenieść elementu członkowskiego typu z jednego typu do innego typu, jeśli obie są widoczne w bieżącym diagramie klas.  
   
 ##### <a name="to-move-a-type-member-from-one-type-to-another"></a>Aby przenieść jeden typ elementu członkowskiego typu  
   
-1.  W typie, który jest wyświetlany na powierzchni projektowej, kliknij prawym przyciskiem myszy składnik, który chcesz przenieść do innego typu, a następnie kliknij przycisk **Wytnij**.  
+1. W typie, który jest wyświetlany na powierzchni projektowej, kliknij prawym przyciskiem myszy składnik, który chcesz przenieść do innego typu, a następnie kliknij przycisk **Wytnij**.  
   
-2.  Kliknij prawym przyciskiem myszy docelowy typ, a następnie kliknij przycisk **Wklej**.  
+2. Kliknij prawym przyciskiem myszy docelowy typ, a następnie kliknij przycisk **Wklej**.  
   
      Właściwość zostanie usunięta z typu źródłowego i pojawia się w typie docelowym.  
   

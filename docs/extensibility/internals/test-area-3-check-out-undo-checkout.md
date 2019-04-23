@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 772e238367f16d95fa47d661f8a4bd24091524d1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eb95c5475c653e60c863ddf093d3a92e0c70cf45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605656"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048091"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Obszar testowy 3: Zapoznaj się z / Cofnij wyewidencjonowanie
 Ten obszar testowy wtyczki kontroli źródła obejmuje edycji oraz przywracanie elementów z magazynu wersji za pomocą **Wyewidencjonuj** i **Cofnij wyewidencjonowanie** poleceń.
@@ -33,21 +33,21 @@ Następujące [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ście
 
 ##### <a name="check-out"></a>Wymelduj się:
 
--   **Plik**, **kontroli źródła**, **zapoznaj się z**.
+- **Plik**, **kontroli źródła**, **zapoznaj się z**.
 
--   **Plik**, **zapoznaj się z**.
+- **Plik**, **zapoznaj się z**.
 
--   Menu skrótów **zapoznaj się z**.
+- Menu skrótów **zapoznaj się z**.
 
--   Cofnij wyewidencjonowanie: **Plik**, **kontroli źródła**, **Cofnij wyewidencjonowanie**.
+- Cofnij wyewidencjonowanie: **Plik**, **kontroli źródła**, **Cofnij wyewidencjonowanie**.
 
 ## <a name="common-expected-behavior"></a>Typowe oczekiwane zachowanie.
 
--   Po operacji wyewidencjonowania plików docelowych i/lub foldery są oznaczone jako wyewidencjonowane z magazynu wersji.
+- Po operacji wyewidencjonowania plików docelowych i/lub foldery są oznaczone jako wyewidencjonowane z magazynu wersji.
 
--   Magazyn wersji atrybuty wyewidencjonowanie do odpowiednich użytkowników.
+- Magazyn wersji atrybuty wyewidencjonowanie do odpowiednich użytkowników.
 
--   Data i Godzina wyewidencjonowania są prawidłowe (ustawienia dla każdego użytkownika).
+- Data i Godzina wyewidencjonowania są prawidłowe (ustawienia dla każdego użytkownika).
 
 ## <a name="test-cases"></a>Przypadki testowe
 
@@ -74,11 +74,11 @@ Po użytkownik połączy się ponownie do wersji przechowywania stanów wyewiden
 
 #### <a name="expected-behavior"></a>Oczekiwane zachowanie
 
--   Nie można użyć **Sprawdź się wyłącznie** polecenia bez połączenia z magazynu wersji.
+- Nie można użyć **Sprawdź się wyłącznie** polecenia bez połączenia z magazynu wersji.
 
--   Nie można użyć **Cofnij wyewidencjonowanie** polecenia bez połączenia z magazynu wersji.
+- Nie można użyć **Cofnij wyewidencjonowanie** polecenia bez połączenia z magazynu wersji.
 
--   **Udostępnione Wyewidencjonuj** polecenie działa.
+- **Udostępnione Wyewidencjonuj** polecenie działa.
 
 |Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|
 |------------|----------------|--------------------------------|
@@ -89,13 +89,13 @@ Po użytkownik połączy się ponownie do wersji przechowywania stanów wyewiden
 
 #### <a name="expected-behavior"></a>Oczekiwane zachowanie
 
--   Po operacji wyewidencjonowania plików docelowych i/lub foldery są oznaczone jako wyewidencjonowane z magazynu wersji.
+- Po operacji wyewidencjonowania plików docelowych i/lub foldery są oznaczone jako wyewidencjonowane z magazynu wersji.
 
--   Magazyn wersji atrybuty wyewidencjonowanie do odpowiednich użytkowników.
+- Magazyn wersji atrybuty wyewidencjonowanie do odpowiednich użytkowników.
 
--   Data i godzina wyewidencjonowanie są prawidłowe (ustawienia dla każdego użytkownika).
+- Data i godzina wyewidencjonowanie są prawidłowe (ustawienia dla każdego użytkownika).
 
--   Lokalna kopia pliku lub folderu docelowego jest zapisywalna.
+- Lokalna kopia pliku lub folderu docelowego jest zapisywalna.
 
 |Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|
 |------------|----------------|--------------------------------|
@@ -108,13 +108,13 @@ Po użytkownik połączy się ponownie do wersji przechowywania stanów wyewiden
 
 #### <a name="expected-behavior"></a>Oczekiwane zachowanie
 
--   Po operacji wyewidencjonowania plików docelowych i/lub foldery są oznaczone jako wyewidencjonowane z magazynu wersji.
+- Po operacji wyewidencjonowania plików docelowych i/lub foldery są oznaczone jako wyewidencjonowane z magazynu wersji.
 
--   Magazyn wersji atrybuty wyewidencjonowanie do odpowiednich użytkowników.
+- Magazyn wersji atrybuty wyewidencjonowanie do odpowiednich użytkowników.
 
--   Data i godzina wyewidencjonowanie jest poprawny (ustawienia dla każdego użytkownika).
+- Data i godzina wyewidencjonowanie jest poprawny (ustawienia dla każdego użytkownika).
 
--   Lokalna kopia pliku lub folderu docelowego jest zapisywalna.
+- Lokalna kopia pliku lub folderu docelowego jest zapisywalna.
 
 |Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|
 |------------|----------------|--------------------------------|
@@ -126,9 +126,9 @@ Po użytkownik połączy się ponownie do wersji przechowywania stanów wyewiden
 
 #### <a name="expected-behavior"></a>Oczekiwane zachowanie
 
--   Wartość domyślna jest podstawą użytkownika **zapoznaj się z lokalną wersją** ustawienie. Jeśli użytkownik wybierze zapoznaj się z lokalną wersją, wartość domyślna dla cofnięcie wyewidencjonowania jest zawsze wracają do wersji wyewidencjonowany.
+- Wartość domyślna jest podstawą użytkownika **zapoznaj się z lokalną wersją** ustawienie. Jeśli użytkownik wybierze zapoznaj się z lokalną wersją, wartość domyślna dla cofnięcie wyewidencjonowania jest zawsze wracają do wersji wyewidencjonowany.
 
--   Po zaakceptowaniu cofania, ikony w **Eksploratora rozwiązań** są aktualizowane, dla których to dotyczy plików, a element zostanie usunięty z **oczekujące elementy do zaewidencjonowania** okna.
+- Po zaakceptowaniu cofania, ikony w **Eksploratora rozwiązań** są aktualizowane, dla których to dotyczy plików, a element zostanie usunięty z **oczekujące elementy do zaewidencjonowania** okna.
 
 |Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|
 |------------|----------------|--------------------------------|

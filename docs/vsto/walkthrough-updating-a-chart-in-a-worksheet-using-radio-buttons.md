@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c65e064452d307727e1c19578f7a660451f49c70
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f07987a0c7debdb44c2da442ce6b598f8a78dea0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651893"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097222"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Przewodnik: Aktualizacja wykresu w arkuszu za pomocą przycisków radiowych
   W tym przewodniku przedstawiono podstawowe informacje dotyczące za pomocą przycisków radiowych w arkuszu kalkulacyjnym programu Microsoft Office Excel, aby dać użytkownikowi możliwość szybkiego przełączania się między opcjami. W tym przypadku opcje zmieniają styl wykresu.
@@ -30,9 +30,9 @@ ms.locfileid: "59651893"
 
  W instruktażu przedstawiono następujące zagadnienia:
 
--   Dodawanie grup przycisków radiowych do arkusza.
+- Dodawanie grup przycisków radiowych do arkusza.
 
--   Zmiana stylu wykresu, gdy opcja jest zaznaczona.
+- Zmiana stylu wykresu, gdy opcja jest zaznaczona.
 
 > [!NOTE]
 >  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -40,9 +40,9 @@ ms.locfileid: "59651893"
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] lub [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] lub [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 ## <a name="add-a-chart-to-a-worksheet"></a>Dodawanie wykresu do arkusza
  Można utworzyć projektu skoroszytu programu Excel, który dostosowuje istniejący skoroszyt. W tym przewodniku będzie dodać wykres do skoroszytu, a następnie użyć tego skoroszytu w nowym rozwiązaniu programu Excel. Źródło danych, w tym instruktażu jest arkusza o nazwie **danych wykresu**.
@@ -68,21 +68,21 @@ ms.locfileid: "59651893"
 
 ### <a name="to-add-a-chart-in-excel"></a>Aby dodać wykres w programie Excel
 
-1.  Na **Wstaw** na karcie **wykresy** grupy, kliknij przycisk **kolumny**, a następnie kliknij przycisk **wszystkie typy wykresów**.
+1. Na **Wstaw** na karcie **wykresy** grupy, kliknij przycisk **kolumny**, a następnie kliknij przycisk **wszystkie typy wykresów**.
 
-2.  W **Wstaw wykres** okno dialogowe, kliknij przycisk **OK**.
+2. W **Wstaw wykres** okno dialogowe, kliknij przycisk **OK**.
 
-3.  Na **projektowania** na karcie **danych** grupy, kliknij przycisk **wybierz dane**.
+3. Na **projektowania** na karcie **danych** grupy, kliknij przycisk **wybierz dane**.
 
-4.  W **wybierz źródło danych** okno dialogowe, kliknij przycisk w **zakres Chartdata** i wyczyść wszystkie wybór domyślny.
+4. W **wybierz źródło danych** okno dialogowe, kliknij przycisk w **zakres Chartdata** i wyczyść wszystkie wybór domyślny.
 
-5.  W **danych wykresu** arkusz, wybierz bloku komórek, który zawiera liczby, która obejmuje A4 w lewym górnym rogu do E8 w prawym dolnym rogu.
+5. W **danych wykresu** arkusz, wybierz bloku komórek, który zawiera liczby, która obejmuje A4 w lewym górnym rogu do E8 w prawym dolnym rogu.
 
-6.  W **wybierz źródło danych** okno dialogowe, kliknij przycisk **OK**.
+6. W **wybierz źródło danych** okno dialogowe, kliknij przycisk **OK**.
 
-7.  Zmienianie położenia wykres, aby prawy górny róg wyrównuje komórki zawierającej **E2**.
+7. Zmienianie położenia wykres, aby prawy górny róg wyrównuje komórki zawierającej **E2**.
 
-8.  Zapisz plik na dysku C i nadaj mu nazwę **ExcelChart.xlsx**.
+8. Zapisz plik na dysku C i nadaj mu nazwę **ExcelChart.xlsx**.
 
 9. Zakończ działanie programu Excel.
 
@@ -91,13 +91,13 @@ ms.locfileid: "59651893"
 
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt
 
-1.  Utwórz projektu skoroszytu programu Excel o nazwie **Moje wykresu programu Excel**. W kreatorze Wybierz **Kopiuj istniejący dokument**.
+1. Utwórz projektu skoroszytu programu Excel o nazwie **Moje wykresu programu Excel**. W kreatorze Wybierz **Kopiuj istniejący dokument**.
 
      Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2.  Kliknij przycisk **Przeglądaj** przycisk, a następnie przejdź do skoroszytu, utworzonej we wcześniejszej części tego przewodnika.
+2. Kliknij przycisk **Przeglądaj** przycisk, a następnie przejdź do skoroszytu, utworzonej we wcześniejszej części tego przewodnika.
 
-3.  Kliknij przycisk **OK**.
+3. Kliknij przycisk **OK**.
 
      Visual Studio zostanie otwarty nowy skoroszyt programu Excel w Projektancie i dodaje **Moje wykresu programu Excel** projekt **Eksploratora rozwiązań**.
 
@@ -106,7 +106,7 @@ ms.locfileid: "59651893"
 
 ### <a name="to-change-the-name-of-the-chart-control"></a>Aby zmienić nazwę formantu wykresu
 
-1.  Wybierz <xref:Microsoft.Office.Tools.Excel.Chart> kontroli w Projektancie i Zmień następujące właściwości w **właściwości** okna.
+1. Wybierz <xref:Microsoft.Office.Tools.Excel.Chart> kontroli w Projektancie i Zmień następujące właściwości w **właściwości** okna.
 
     |Właściwość|Wartość|
     |--------------|-----------|
@@ -120,11 +120,11 @@ ms.locfileid: "59651893"
 
 ### <a name="to-add-a-user-control"></a>Aby dodać kontrolkę użytkownika
 
-1.  Wybierz **Moje wykresu programu Excel** projektu w **Eksploratora rozwiązań**.
+1. Wybierz **Moje wykresu programu Excel** projektu w **Eksploratora rozwiązań**.
 
-2.  Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.
+2. Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.
 
-3.  W **Dodaj nowy element** okno dialogowe, kliknij przycisk **kontrolki użytkownika**, nazwij kontrolkę **ChartOptions,** i kliknij przycisk **Dodaj**.
+3. W **Dodaj nowy element** okno dialogowe, kliknij przycisk **kontrolki użytkownika**, nazwij kontrolkę **ChartOptions,** i kliknij przycisk **Dodaj**.
 
 ### <a name="to-add-radio-buttons-to-the-user-control"></a>Aby dodać przycisków radiowych do kontrolki użytkownika
 
@@ -165,36 +165,36 @@ ms.locfileid: "59651893"
 
 ### <a name="to-create-an-event-and-property-on-a-user-control"></a>Aby utworzyć zdarzenie i właściwości w kontrolce użytkownika
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy formant użytkownika, a następnie kliknij przycisk **Wyświetl kod**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy formant użytkownika, a następnie kliknij przycisk **Wyświetl kod**.
 
-2.  Dodaj kod, aby `ChartOptions` klasy w celu utworzenia `SelectionChanged` zdarzeń i `Selection` właściwości.
+2. Dodaj kod, aby `ChartOptions` klasy w celu utworzenia `SelectionChanged` zdarzeń i `Selection` właściwości.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#13](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#13)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#13](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#13)]
 
 ### <a name="to-handle-the-checkedchanged-event-of-the-radio-buttons"></a>Do obsługi zdarzenia CheckedChanged przycisków radiowych
 
-1.  Ustaw typ wykresu w `CheckedChanged` program obsługi zdarzeń `areaBlockChart` przycisk radiowy, a następnie wywołaj zdarzenie.
+1. Ustaw typ wykresu w `CheckedChanged` program obsługi zdarzeń `areaBlockChart` przycisk radiowy, a następnie wywołaj zdarzenie.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#14](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#14)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#14](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#14)]
 
-2.  Ustaw typ wykresu w `CheckedChanged` program obsługi zdarzeń `barChart` przycisku radiowego.
+2. Ustaw typ wykresu w `CheckedChanged` program obsługi zdarzeń `barChart` przycisku radiowego.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#15](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#15)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#15)]
 
-3.  Ustaw typ wykresu w `CheckedChanged` program obsługi zdarzeń `columnChart` przycisku radiowego.
+3. Ustaw typ wykresu w `CheckedChanged` program obsługi zdarzeń `columnChart` przycisku radiowego.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#16](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#16)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#16)]
 
-4.  Ustaw typ wykresu w `CheckedChanged` program obsługi zdarzeń `lineChart` przycisku radiowego.
+4. Ustaw typ wykresu w `CheckedChanged` program obsługi zdarzeń `lineChart` przycisku radiowego.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#17)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#17)]
 
-5.  W języku C# należy dodać obsługę zdarzeń dla przycisków radiowych. Możesz dodać kod do `ChartOptions` Konstruktor poniżej wywołania `InitializeComponent`. Aby uzyskać informacje o sposobie tworzenia procedury obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+5. W języku C# należy dodać obsługę zdarzeń dla przycisków radiowych. Możesz dodać kod do `ChartOptions` Konstruktor poniżej wywołania `InitializeComponent`. Aby uzyskać informacje o sposobie tworzenia procedury obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#18)]
 
@@ -203,29 +203,29 @@ ms.locfileid: "59651893"
 
 ### <a name="to-add-the-user-control-your-worksheet"></a>Aby dodać kontrolkę użytkownika arkusza
 
-1.  Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+1. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
      **ChartOptions** formant użytkownika jest dodawany do **przybornika**.
 
-2.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Sheet1.vb** lub **Sheet1.cs**, a następnie kliknij przycisk **Projektant widoków**.
+2. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Sheet1.vb** lub **Sheet1.cs**, a następnie kliknij przycisk **Projektant widoków**.
 
-3.  Przeciągnij **ChartOptions** z kontrolować **przybornika** do arkusza.
+3. Przeciągnij **ChartOptions** z kontrolować **przybornika** do arkusza.
 
      Nowy formant o nazwie `my_Excel_Chart_ChartOptions1` zostanie dodany do projektu.
 
-4.  Zmień nazwę kontrolki na **ChartOptions1**.
+4. Zmień nazwę kontrolki na **ChartOptions1**.
 
 ## <a name="change-the-chart-type"></a>Zmień typ wykresu
  Aby zmienić typ wykresu, należy utworzyć program obsługi zdarzeń, który ustawia styl zgodnie z opcją wybrana w kontrolce użytkownika.
 
 ### <a name="to-change-the-type-of-chart-that-is-displayed-in-the-worksheet"></a>Aby zmienić typ wykresu, który jest wyświetlany w arkuszu
 
-1.  Dodaj następującą obsługę zdarzeń w celu `Sheet1` klasy.
+1. Dodaj następującą obsługę zdarzeń w celu `Sheet1` klasy.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#19)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#19)]
 
-2.  W języku C#, należy dodać program obsługi zdarzeń dla formantu użytkownika, aby <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> zdarzeń, jak pokazano poniżej. Aby uzyskać informacje o sposobie tworzenia procedury obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+2. W języku C#, należy dodać program obsługi zdarzeń dla formantu użytkownika, aby <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> zdarzeń, jak pokazano poniżej. Aby uzyskać informacje o sposobie tworzenia procedury obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#20)]
 
@@ -234,20 +234,20 @@ ms.locfileid: "59651893"
 
 ### <a name="to-test-your-workbook"></a>Aby przetestować skoroszytu
 
-1.  Naciśnij klawisz **F5** Aby uruchomić projekt.
+1. Naciśnij klawisz **F5** Aby uruchomić projekt.
 
-2.  Wybierz różne przycisków radiowych.
+2. Wybierz różne przycisków radiowych.
 
-3.  Upewnij się, że styl wykresu zmienia się zgodnie z wyborem.
+3. Upewnij się, że styl wykresu zmienia się zgodnie z wyborem.
 
 ## <a name="next-steps"></a>Następne kroki
  W tym instruktażu przedstawiono podstawy używania przycisków radiowych i style wykresu w arkuszu. Poniżej przedstawiono niektóre zadania, które mogą pochodzić dalej:
 
--   Wdrażanie projektu. Aby uzyskać więcej informacji, zobacz [wdrożyć rozwiązanie Office](../vsto/deploying-an-office-solution.md).
+- Wdrażanie projektu. Aby uzyskać więcej informacji, zobacz [wdrożyć rozwiązanie Office](../vsto/deploying-an-office-solution.md).
 
--   Za pomocą przycisku, aby wypełnić pole tekstowe. Aby uzyskać więcej informacji, zobacz [instruktażu: Wyświetlanie tekstu w polu tekstowym w arkuszu za pomocą przycisku](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).
+- Za pomocą przycisku, aby wypełnić pole tekstowe. Aby uzyskać więcej informacji, zobacz [instruktażu: Wyświetlanie tekstu w polu tekstowym w arkuszu za pomocą przycisku](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).
 
--   Zmiana formatowania arkusza za pomocą pola wyboru. Aby uzyskać więcej informacji, zobacz [instruktażu: Arkusz Zmienianie formatowania za pomocą formantów CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).
+- Zmiana formatowania arkusza za pomocą pola wyboru. Aby uzyskać więcej informacji, zobacz [instruktażu: Arkusz Zmienianie formatowania za pomocą formantów CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).
 
 ## <a name="see-also"></a>Zobacz także
 - [Wskazówki dotyczące za pomocą programu Excel](../vsto/walkthroughs-using-excel.md)

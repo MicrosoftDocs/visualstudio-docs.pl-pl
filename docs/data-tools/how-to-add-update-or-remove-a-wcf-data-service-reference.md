@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 201f04852dea58d51cae10e98429f7b5f2bc6951
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4591c6b794905eb0b8742292c752762cdea991e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945459"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099536"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Instrukcje: Dodawanie, aktualizowanie lub usuwanie odwołań usługi danych WCF
 A *sług* umożliwia dostęp do co najmniej jeden projekt [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Użyj **Dodaj odwołanie do usługi** okno dialogowe, aby wyszukać [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] w bieżącym rozwiązaniu lokalnie, w sieci lokalnej lub w Internecie.
@@ -30,11 +30,11 @@ A *sług* umożliwia dostęp do co najmniej jeden projekt [!INCLUDE[ssAstoria](.
 
 ### <a name="to-add-a-reference-to-an-external-service"></a>Aby dodać odwołanie do usługi zewnętrznej
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy nazwę projektu, do którego chcesz dodać usługę, a następnie kliknij przycisk **Dodaj odwołanie do usługi**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy nazwę projektu, do którego chcesz dodać usługę, a następnie kliknij przycisk **Dodaj odwołanie do usługi**.
 
      **Dodaj odwołanie do usługi** pojawi się okno dialogowe.
 
-2.  W **adres** , wprowadź adres URL dla usługi, a następnie kliknij **Przejdź** wyszukiwania dla usługi. Jeśli usługa implementuje zabezpieczenia nazwę i hasło użytkownika, może się monit o nazwę użytkownika i hasło.
+2. W **adres** , wprowadź adres URL dla usługi, a następnie kliknij **Przejdź** wyszukiwania dla usługi. Jeśli usługa implementuje zabezpieczenia nazwę i hasło użytkownika, może się monit o nazwę użytkownika i hasło.
 
     > [!NOTE]
     >  Użytkownik powinien odwoływać się tylko do usług z zaufanego źródła. Dodawanie odwołań z niezaufanego źródła może naruszyć bezpieczeństwo.
@@ -43,11 +43,11 @@ A *sług* umożliwia dostęp do co najmniej jeden projekt [!INCLUDE[ssAstoria](.
 
      Pasek postępu jest wyświetlana podczas wyszukiwania. Zatrzymać wyszukiwania w dowolnym momencie, klikając **zatrzymać**.
 
-3.  W **usług** listy, rozwiń węzeł usługi, który chcesz użyć, a następnie wybierz zestaw jednostek.
+3. W **usług** listy, rozwiń węzeł usługi, który chcesz użyć, a następnie wybierz zestaw jednostek.
 
-4.  W **Namespace** wprowadź obszar nazw, który chcesz użyć dla odwołania.
+4. W **Namespace** wprowadź obszar nazw, który chcesz użyć dla odwołania.
 
-5.  Kliknij przycisk **OK** można dodać odwołania do projektu.
+5. Kliknij przycisk **OK** można dodać odwołania do projektu.
 
      Klient usługi (proxy) jest generowany i metadane opisujące usługi jest dodawany do *app.config* pliku.
 
@@ -74,7 +74,7 @@ A *sług* umożliwia dostęp do co najmniej jeden projekt [!INCLUDE[ssAstoria](.
 
 ### <a name="to-update-a-service-reference"></a>Aby zaktualizować odwołania do usługi
 
--   W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy odwołanie do usługi, a następnie kliknij przycisk **odwołanie do usługi aktualizacji**.
+- W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy odwołanie do usługi, a następnie kliknij przycisk **odwołanie do usługi aktualizacji**.
 
      Okno dialogowe postępu Wyświetla, gdy odwołanie jest aktualizowany z oryginalnej lokalizacji, a klient usługi zostanie ponownie wygenerowany, aby odzwierciedlały zmiany w metadanych.
 
@@ -83,7 +83,7 @@ A *sług* umożliwia dostęp do co najmniej jeden projekt [!INCLUDE[ssAstoria](.
 
 ### <a name="to-remove-a-service-reference"></a>Aby usunąć odwołanie do usługi
 
--   W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy odwołanie do usługi, a następnie kliknij przycisk **Usuń**.
+- W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy odwołanie do usługi, a następnie kliknij przycisk **Usuń**.
 
      Klient usługi zostanie usunięty z rozwiązania oraz metadane opisujące usługi zostaną usunięte z *app.config* pliku.
 

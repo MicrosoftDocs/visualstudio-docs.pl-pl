@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3858d10d685e104617a6de7b5c11c87cfee1872d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 74b3fa73c3a67c721b9311a964e26fa9ab48c16e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802796"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098970"
 ---
 # <a name="how-to-export-a-shader"></a>Instrukcje: Eksport cieniowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,20 +23,20 @@ W tym dokumencie pokazano, jak wyeksportować modułu cieniującego kierowane wy
   
  W tym dokumencie przedstawiono to działanie:  
   
--   Eksportowanie cieniowania  
+- Eksportowanie cieniowania  
   
 ## <a name="exporting-a-shader"></a>Eksportowanie cieniowania  
  Po utworzeniu modułu cieniującego, przy użyciu narzędzia Projektant programu do cieniowania i przed użyciem w swojej aplikacji, należy go wyeksportować w formacie, który rozumie interfejsu API grafiki. Możesz wyeksportować modułu cieniującego na różne sposoby do potrzeb różnych.  
   
 #### <a name="to-export-a-shader"></a>Aby wyeksportować modułu cieniującego  
   
-1.  W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], otwórz **wizualny wykres modułu cieniującego (.dgsl)** pliku.  
+1. W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], otwórz **wizualny wykres modułu cieniującego (.dgsl)** pliku.  
   
      Jeśli nie masz **wizualny wykres modułu cieniującego (.dgsl)** plik, aby otworzyć, utwórz je, zgodnie z opisem w [jak: Tworzenie cieniowania koloru podstawowego](../designers/how-to-create-a-basic-color-shader.md).  
   
-2.  Na **Shader Designer** narzędzi, wybierz **zaawansowane**, **wyeksportować**, **Eksportuj jako**. **Eksportowania modułu cieniującego** zostanie wyświetlone okno dialogowe.  
+2. Na **Shader Designer** narzędzi, wybierz **zaawansowane**, **wyeksportować**, **Eksportuj jako**. **Eksportowania modułu cieniującego** zostanie wyświetlone okno dialogowe.  
   
-3.  W **Zapisz jako typ** listy rozwijanej wybierz format, który chcesz wyeksportować.  
+3. W **Zapisz jako typ** listy rozwijanej wybierz format, który chcesz wyeksportować.  
   
      Poniżej przedstawiono formaty, które można wybrać:  
   
@@ -49,7 +49,7 @@ W tym dokumencie pokazano, jak wyeksportować modułu cieniującego kierowane wy
      **Nagłówek języka C++ (\*.h)**  
      Eksportuje programu do cieniowania w postaci nagłówek stylu C, który definiuje tablica bajtów, która zawiera kod bajtowy HLSL. Tej opcji można tworzyć bardziej czasochłonne debugować i poprawki kodu, w oparciu problemy użytkowników końcowych, ponieważ aplikacja musi ponownie skompilowana, aby przetestować poprawki. Jednak ponieważ dzięki temu jest trudne, chociaż nie jest to niemożliwe, aby zmodyfikować cieniowanie tak, po jej wdrożeniu w aplikacji, stanowi trudności w większości użytkownikowi, który chce się zmodyfikować cieniowanie tak, w sposób niepożądane.  
   
-4.  W **nazwy pliku** pola kombi, określ nazwę dla eksportowanego programu do cieniowania, a następnie wybierz **Zapisz** przycisku.  
+4. W **nazwy pliku** pola kombi, określ nazwę dla eksportowanego programu do cieniowania, a następnie wybierz **Zapisz** przycisku.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Instrukcje: Tworzenie cieniowania koloru podstawowego](../designers/how-to-create-a-basic-color-shader.md)   

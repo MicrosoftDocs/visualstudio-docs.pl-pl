@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91462511f5de22c51dd1d6fd07c192a72e69e541
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5f17be088d27e473af0c45a950541fe0f5b77085
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59232700"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098652"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Funkcja IntelliTrace programu Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -59,7 +59,7 @@ Za pomocą funkcji IntelliTrace w programie Visual Studio Enterprise (ale nie w 
 > [!NOTE]
 > Jeśli chcesz debugować proces, który jest już uruchomiony, można zebrać tylko zdarzenia funkcji IntelliTrace (Brak informacji o wywołaniu). Możesz dołączyć do procesu 32-bitową lub 64-bitowych, tylko na komputerze lokalnym. Zdarzenia występujące przed dołączyć do procesu nie są zbierane.
 
-##  <a name="IntelliTraceVSTraditional"></a> Dlaczego debugować za pomocą IntelliTrace?
+## <a name="IntelliTraceVSTraditional"></a> Dlaczego debugować za pomocą IntelliTrace?
 
 Tradycyjny lub *live* debugowania pokazuje tylko aplikacji bieżący stan, z ograniczoną ilością danych na temat przeszłych zdarzeń. Musisz albo wywnioskować te zdarzenia, w oparciu o bieżący stan aplikacji lub musisz odtworzyć te zdarzenia, ponownie uruchamiając aplikację.
 
@@ -97,7 +97,7 @@ Oto kilka przykładów, jak IntelliTrace może pomóc w debugowaniu:
 
      Jest to przydatne, gdy chcesz zdiagnozować problemy z aplikacjami w trakcie wdrażania. Zobacz [używać autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-##  <a name="WhatData"></a> Jakie dane są zbierane przez IntelliTrace?
+## <a name="WhatData"></a> Jakie dane są zbierane przez IntelliTrace?
 
 **Zbieranie informacji o zdarzeniach**
 

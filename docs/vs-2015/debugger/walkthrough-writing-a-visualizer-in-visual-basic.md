@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e56cf1bcd061ba38d2855c2c8841b410e68032b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e297708d4e89bb1fdcef06366f2790254aeab812
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786339"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050573"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Przewodnik: Pisanie wizualizatora w języku Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,20 +52,20 @@ W tym przewodniku pokazano, jak pisanie prostego wizualizatora przy użyciu [!IN
   
 #### <a name="to-rename-class1vb-and-add-microsoftvisualstudiodebuggervisualizers"></a>Aby zmienić nazwę Class1.vb i dodać Microsoft.VisualStudio.DebuggerVisualizers  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Class1.vb**, a następnie w menu skrótów kliknij **Zmień nazwę**.  
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Class1.vb**, a następnie w menu skrótów kliknij **Zmień nazwę**.  
   
-2.  Zmień nazwę z Class1.vb na bardziej opisową nazwę, takich jak DebuggerSide.vb.  
+2. Zmień nazwę z Class1.vb na bardziej opisową nazwę, takich jak DebuggerSide.vb.  
   
     > [!NOTE]
     >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automatycznie zmienia deklaracji klasy w DebuggerSide.vb, aby dopasować nazwę nowego pliku.  
   
-3.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Mój pierwszy Wizualizator**, a następnie w menu skrótów kliknij **Dodaj odwołanie**.  
+3. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Mój pierwszy Wizualizator**, a następnie w menu skrótów kliknij **Dodaj odwołanie**.  
   
-4.  W **Dodaj odwołanie** dialogowym **.NET** Microsoft.VisualStudio.DebuggerVisualizers.DLL kliknij pozycję.  
+4. W **Dodaj odwołanie** dialogowym **.NET** Microsoft.VisualStudio.DebuggerVisualizers.DLL kliknij pozycję.  
   
-5.  Kliknij przycisk **OK**.  
+5. Kliknij przycisk **OK**.  
   
-6.  W DebuggerSide.vb, dodaj następującą instrukcję, aby `Imports` instrukcji:  
+6. W DebuggerSide.vb, dodaj następującą instrukcję, aby `Imports` instrukcji:  
   
     ```  
     Imports Microsoft.VisualStudio.DebuggerVisualizers  
@@ -105,13 +105,13 @@ W tym przewodniku pokazano, jak pisanie prostego wizualizatora przy użyciu [!IN
   
 #### <a name="to-add-systemwindowsforms"></a>Aby dodać przestrzeń nazw System.Windows.Forms  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania**, a następnie w menu skrótów kliknij **Dodaj odwołanie**.  
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania**, a następnie w menu skrótów kliknij **Dodaj odwołanie**.  
   
-2.  W **Dodaj odwołanie** dialogowym **.NET** kliknij pozycję **System.Windows.Forms**.  
+2. W **Dodaj odwołanie** dialogowym **.NET** kliknij pozycję **System.Windows.Forms**.  
   
-3.  Kliknij przycisk **OK**.  
+3. Kliknij przycisk **OK**.  
   
-4.  W DebuggerSide.cs, dodaj następującą instrukcję, aby `Imports` instrukcji:  
+4. W DebuggerSide.cs, dodaj następującą instrukcję, aby `Imports` instrukcji:  
   
     ```  
     Imports System.Windows.Forms  
@@ -122,7 +122,7 @@ W tym przewodniku pokazano, jak pisanie prostego wizualizatora przy użyciu [!IN
   
 #### <a name="to-show-the-visualizer-output-in-a-dialog-box"></a>Aby wyświetlić dane wyjściowe wizualizatora w oknie dialogowym  
   
-1.  W `Show` metody, Dodaj następujący wiersz kodu:  
+1. W `Show` metody, Dodaj następujący wiersz kodu:  
   
     ```  
     MessageBox.Show(objectProvider.GetObject().ToString())  
@@ -130,20 +130,20 @@ W tym przewodniku pokazano, jak pisanie prostego wizualizatora przy użyciu [!IN
   
      Ten przykładowy kod nie ma obsługi błędów. Powinien zawierać obsługę błędów w rzeczywistych Wizualizator lub dowolny inny rodzaj aplikacji.  
   
-2.  Na **kompilacji** menu, kliknij przycisk **kompilacji MyFirstVisualizer**. Projekt powinien być kompilowany pomyślnie. Usuń wszelkie błędy kompilacji, aby kontynuować.  
+2. Na **kompilacji** menu, kliknij przycisk **kompilacji MyFirstVisualizer**. Projekt powinien być kompilowany pomyślnie. Usuń wszelkie błędy kompilacji, aby kontynuować.  
   
 ## <a name="add-the-necessary-attribute"></a>Dodaj atrybut niezbędne  
  To już koniec kodu po stronie debugera. Istnieje jeszcze jeden krok, jednak: atrybut, który informuje po stronie debugowanego obiektu, która kolekcja klas składa się z wizualizatora.  
   
 #### <a name="to-add-the-debugee-side-code"></a>Aby dodać kod po stronie debugee  
   
-1.  Dodaj następujący kod atrybutu do DebuggerSide.vb, po `Imports` instrukcji lecz przed `namespace MyFirstVisualizer`:  
+1. Dodaj następujący kod atrybutu do DebuggerSide.vb, po `Imports` instrukcji lecz przed `namespace MyFirstVisualizer`:  
   
     ```  
     <Assembly: System.Diagnostics.DebuggerVisualizer(GetType(MyFirstVisualizer.DebuggerSide), GetType(VisualizerObjectSource), Target:=GetType(System.String), Description:="My First Visualizer")>  
     ```  
   
-2.  Na **kompilacji** menu, kliknij przycisk **kompilacji MyFirstVisualizer**. Projekt powinien być kompilowany pomyślnie. Usuń wszelkie błędy kompilacji, aby kontynuować.  
+2. Na **kompilacji** menu, kliknij przycisk **kompilacji MyFirstVisualizer**. Projekt powinien być kompilowany pomyślnie. Usuń wszelkie błędy kompilacji, aby kontynuować.  
   
 ## <a name="create-a-test-harness"></a>Utwórz kontroler testu  
  W tym momencie Twojego pierwszego Wizualizator jest zakończony. Jeśli kroki zostały wykonane poprawnie, można utworzyć wizualizatora i zainstalować go do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Przed zainstalowaniem wizualizatora do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], jednak należy go przetestować, aby upewnić się, że działa poprawnie. Teraz możesz utworzyć kontroler testów do uruchomienia wizualizatora bez konieczności instalowania go do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -177,17 +177,17 @@ W tym przewodniku pokazano, jak pisanie prostego wizualizatora przy użyciu [!IN
   
 #### <a name="to-add-necessary-references-to-mytestconsole"></a>Aby dodać niezbędne odwołania do MyTestConsole  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **MyTestConsole**, a następnie w menu skrótów kliknij **Dodaj odwołanie**.  
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **MyTestConsole**, a następnie w menu skrótów kliknij **Dodaj odwołanie**.  
   
-2.  W **Dodaj odwołanie** dialogowym **.NET** Microsoft.VisualStudio.DebuggerVisualizers kliknij pozycję.  
+2. W **Dodaj odwołanie** dialogowym **.NET** Microsoft.VisualStudio.DebuggerVisualizers kliknij pozycję.  
   
-3.  Kliknij przycisk **OK**.  
+3. Kliknij przycisk **OK**.  
   
-4.  Kliknij prawym przyciskiem myszy **MyTestConsole**, a następnie kliknij przycisk **Dodaj odwołanie** ponownie.  
+4. Kliknij prawym przyciskiem myszy **MyTestConsole**, a następnie kliknij przycisk **Dodaj odwołanie** ponownie.  
   
-5.  W **Dodaj odwołanie** okno dialogowe, kliknij przycisk **projektów** , a następnie wybierz pozycję MyFirstVisualizer.  
+5. W **Dodaj odwołanie** okno dialogowe, kliknij przycisk **projektów** , a następnie wybierz pozycję MyFirstVisualizer.  
   
-6.  Kliknij przycisk **OK**.  
+6. Kliknij przycisk **OK**.  
   
 ## <a name="finish-your-test-harness-and-test-your-visualizer"></a>Zakończenie swoje kontroler testów i przetestowanie usługi wizualizatora  
  Teraz dodasz kod, aby zakończyć kontroler testów.  

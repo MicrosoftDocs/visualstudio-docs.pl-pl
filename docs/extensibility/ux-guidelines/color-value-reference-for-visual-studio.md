@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 20fbe41bef16527ee66d0e87de8456ed1c65b865
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 64d2396215ab8c27607e5d1734cdc8cdfe675db6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428833"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118087"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Odwołanie wartości koloru dla programu Visual Studio
 
@@ -26,13 +26,13 @@ Tokeny koloru do użycia przy użyciu istniejącego interfejsu użytkownika, zob
 
 Korzystając z tego podręcznika, należy pamiętać:
 
--   **Zawsze Kopiuj ze sobą odcieni pierwszego planu i tła.** Nie należy wybierać planu z jednego elementu interfejsu użytkownika i tła z innego po prostu, ponieważ chcesz odcienie.
+- **Zawsze Kopiuj ze sobą odcieni pierwszego planu i tła.** Nie należy wybierać planu z jednego elementu interfejsu użytkownika i tła z innego po prostu, ponieważ chcesz odcienie.
 
--   **Są to kodów szesnastkowych, a nie kolor tokenów.** Nie można użyć Kolor rzeczywisty token nazwy te elementy interfejsu użytkownika, ponieważ nie można kontrolować, jak tokenów można zmienić w przyszłości. Zamiast tego utwórz tokenów w ramach własnych kategorii i użyć wartości hue widocznych w tabelach. Kolor tokenów dla istniejącego interfejsu użytkownika można znaleźć w [udostępnione kolory dla programu Visual Studio](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md).
+- **Są to kodów szesnastkowych, a nie kolor tokenów.** Nie można użyć Kolor rzeczywisty token nazwy te elementy interfejsu użytkownika, ponieważ nie można kontrolować, jak tokenów można zmienić w przyszłości. Zamiast tego utwórz tokenów w ramach własnych kategorii i użyć wartości hue widocznych w tabelach. Kolor tokenów dla istniejącego interfejsu użytkownika można znaleźć w [udostępnione kolory dla programu Visual Studio](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md).
 
 - **Wysoki kontrast próbki są wyświetlane tylko porównanie.** Użyj nazwy kolorów systemu, wysoki kontrast interfejsu użytkownika i nie należy używać selektor Pipeta i kolor na te próbki. Wysoka próbki kontrastu w tym temacie odzwierciedlają kompozycję Duży kontrast nr 1 w Windows. Kolory będzie wyglądać inaczej w innych tematów o wysokim kontraście.
 
--   **Aby uzyskać najlepsze wyniki kolor pary ustawia za pomocą interfejsu użytkownika podobnie jak w przykładzie.**
+- **Aby uzyskać najlepsze wyniki kolor pary ustawia za pomocą interfejsu użytkownika podobnie jak w przykładzie.**
 
 ## <a name="properties-window"></a>Okno właściwości
 

@@ -10,12 +10,12 @@ ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 697565600ef37024abde3acd8f2092c690f31e32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8d22e61d88b5f6e3959a369f6957efbc824384b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801947"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042044"
 ---
 # <a name="how-to-register-editor-file-types"></a>Instrukcje: Typy plików edytora rejestru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Najprostszym sposobem zarejestrowania Edytor typów plików jest za pomocą atry
   
 #### <a name="to-register-editor-file-types-using-mpf-classes"></a>Aby zarejestrować Edytor typów plików, przy użyciu klas MPF  
   
-1.  Podaj <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> klasy za pomocą odpowiednich parametrów dla Twojego edytora w klasie usługi pakietu VSPackage.  
+1. Podaj <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> klasy za pomocą odpowiednich parametrów dla Twojego edytora w klasie usługi pakietu VSPackage.  
   
     ```  
     [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,   
@@ -43,7 +43,7 @@ Najprostszym sposobem zarejestrowania Edytor typów plików jest za pomocą atry
   
      `NameResourceID` jest zdefiniowana w pliku Resources.h BasicEditorUI projektu i identyfikuje edytora edytorem"Moje".  
   
-2.  Zastąp <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.  
+2. Zastąp <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.  
   
      W danej implementacji <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody, wywołanie <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> metody i przekazać wystąpienia fabryki edytora, jak pokazano poniżej.  
   
@@ -61,7 +61,7 @@ Najprostszym sposobem zarejestrowania Edytor typów plików jest za pomocą atry
   
      W tym kroku rejestruje fabryki edytora i rozszerzenia plików edytora.  
   
-3.  Wyrejestruj fabryki edytora.  
+3. Wyrejestruj fabryki edytora.  
   
      Po usunięciu pakietu VSPackage, fabryki edytora są automatycznie wyrejestrowana. Jeśli obiekt fabryki edytora implementuje <xref:System.IDisposable> interfejsu, jego `Dispose` metoda jest wywoływana po fabryka ma został wyrejestrowany z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
@@ -70,7 +70,7 @@ Najprostszym sposobem zarejestrowania Edytor typów plików jest za pomocą atry
   
 #### <a name="to-register-editor-file-types-using-a-registry-script"></a>Aby zarejestrować Edytor typów plików za pomocą skryptów rejestru  
   
-1.  W skrypcie rejestru, zdefiniuj fabryki edytora i fabryka Edytora ciągu identyfikatora GUID pokazany na `GUID_BscEditorFactory` sekcji poniższy skrypt rejestru. Ponadto można zdefiniować rozszerzenie i priorytet rozszerzenie edytora:  
+1. W skrypcie rejestru, zdefiniuj fabryki edytora i fabryka Edytora ciągu identyfikatora GUID pokazany na `GUID_BscEditorFactory` sekcji poniższy skrypt rejestru. Ponadto można zdefiniować rozszerzenie i priorytet rozszerzenie edytora:  
   
     ```  
   
@@ -92,9 +92,9 @@ Najprostszym sposobem zarejestrowania Edytor typów plików jest za pomocą atry
   
      Rozszerzenie pliku edytora, w tym przykładzie jest identyfikowany jako "RTF" i "50" jest jej priorytet. Identyfikator GUID ciągi są zdefiniowane w pliku Resource.h BscEdit przykładowego projektu.  
   
-2.  Rejestrowanie pakietu VSPackage.  
+2. Rejestrowanie pakietu VSPackage.  
   
-3.  Zarejestrować fabryki edytora.  
+3. Zarejestrować fabryki edytora.  
   
      Fabryka edytora jest zarejestrowany w <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> implementacji.  
   

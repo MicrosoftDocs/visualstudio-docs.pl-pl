@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76418913aa725a7858f292d625cb7584b62694e5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: ab9388697b4f33b0c523a6239bda911e3ba47a52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869268"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118256"
 ---
 # <a name="how-to-attach-to-script"></a>Instrukcje: Dołączanie do skryptu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,21 +37,21 @@ W tym temacie wyjaśniono, jak ręczne dołączenie debugera programu Visual Stu
   
 2. W **dołączyć do procesu** okno dialogowe, przyjrzeć **dostępne procesy** chcesz dołączyć do listy i Znajdź skryptu procedur. Procesy skryptu można zidentyfikować, analizując **typu** kolumny.  
   
-   1.  Jeśli proces, który chcesz debugować jest uruchomiony na innym komputerze, musisz najpierw wybrać komputera zdalnego. Aby uzyskać więcej informacji, zobacz [jak: Wybierz komputer zdalny](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
+   1. Jeśli proces, który chcesz debugować jest uruchomiony na innym komputerze, musisz najpierw wybrać komputera zdalnego. Aby uzyskać więcej informacji, zobacz [jak: Wybierz komputer zdalny](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
   
-   2.  Jeśli proces działa przy użyciu konta innego użytkownika, wybierz opcję **Pokaż procesy wszystkich użytkowników** pole wyboru.  
+   2. Jeśli proces działa przy użyciu konta innego użytkownika, wybierz opcję **Pokaż procesy wszystkich użytkowników** pole wyboru.  
   
-   3.  Jeśli są połączone za pośrednictwem **Podłączanie pulpitu zdalnego**, wybierz opcję **Pokaż procesy we wszystkich sesjach** pole wyboru.  
+   3. Jeśli są połączone za pośrednictwem **Podłączanie pulpitu zdalnego**, wybierz opcję **Pokaż procesy we wszystkich sesjach** pole wyboru.  
   
 3. Kliknij proces, który chcesz dołączyć do.  
   
 4. W **dołączyć do** polu, powinien zostać wyświetlony **kod skryptu** lub **automatyczne: Kod skryptu**. Jeśli widzisz czymkolwiek, wykonaj następujące kroki:  
   
-   1.  Kliknij przycisk **wybierz**.  
+   1. Kliknij przycisk **wybierz**.  
   
-   2.  W **Wybieranie typu kodu** okno dialogowe, kliknij przycisk **debugowania tych typów kodu** i wybierz **skryptu**.  
+   2. W **Wybieranie typu kodu** okno dialogowe, kliknij przycisk **debugowania tych typów kodu** i wybierz **skryptu**.  
   
-   3.  Kliknij przycisk **OK**.  
+   3. Kliknij przycisk **OK**.  
   
 5. Kliknij przycisk **dołączyć**.  
   

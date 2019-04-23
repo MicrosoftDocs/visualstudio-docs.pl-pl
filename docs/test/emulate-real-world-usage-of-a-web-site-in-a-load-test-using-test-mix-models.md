@@ -9,12 +9,12 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25e44e9b05a34cbcd245debc87dfbe23c5772a3c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 87161a4d58411f5f1bbe0347d093a39f17742bd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948930"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042070"
 ---
 # <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Emulowanie oczekiwanego wykorzystania rzeczywistych witryny sieci Web lub aplikacji w teście obciążenia przy użyciu modelu testu mieszanego
 
@@ -28,18 +28,18 @@ Za pomocą edytora testu obciążenia lub Kreator modelu testu mieszanego, możn
 
 Można określić jedną z następujących opcji model testu mieszanego, dla scenariusza testu obciążenia:
 
--   **Na podstawie całkowitej liczby testów:** Określa, który test wydajności lub jednostki w sieci web jest uruchamiany, gdy wirtualny użytkownik rozpoczyna iterację testu. Na końcu testu obciążeniowego ile razy określonego testu dopasować rozkład testu przypisane. Ten model testu mieszanego należy użyć, gdy test mieszany jest tworzony na transakcji, określonym w dzienniku IIS lub w danych produkcyjnych. Aby uzyskać więcej informacji, zobacz [wartość procentową na podstawie testów rozpoczęte](#BasedOnTestsStarted).
+- **Na podstawie całkowitej liczby testów:** Określa, który test wydajności lub jednostki w sieci web jest uruchamiany, gdy wirtualny użytkownik rozpoczyna iterację testu. Na końcu testu obciążeniowego ile razy określonego testu dopasować rozkład testu przypisane. Ten model testu mieszanego należy użyć, gdy test mieszany jest tworzony na transakcji, określonym w dzienniku IIS lub w danych produkcyjnych. Aby uzyskać więcej informacji, zobacz [wartość procentową na podstawie testów rozpoczęte](#BasedOnTestsStarted).
 
--   **Na podstawie liczby wirtualnych użytkowników:** Określa procent wirtualnych użytkowników, którzy uruchomią namierzenie internetowego testu wydajności lub jednostki. W dowolnym momencie testu obciążeniowego liczbę użytkowników, którzy uruchomili określonego testu pasuje do przypisanego rozkładu. Ten model testu mieszanego należy użyć, gdy test mieszany jest tworzony na procent użytkowników, którzy uruchomili określonego testu. Aby uzyskać więcej informacji, zobacz [wartość procentową na podstawie liczby użytkowników wirtualnych](#PercentageBasedonVirtualUsers).
+- **Na podstawie liczby wirtualnych użytkowników:** Określa procent wirtualnych użytkowników, którzy uruchomią namierzenie internetowego testu wydajności lub jednostki. W dowolnym momencie testu obciążeniowego liczbę użytkowników, którzy uruchomili określonego testu pasuje do przypisanego rozkładu. Ten model testu mieszanego należy użyć, gdy test mieszany jest tworzony na procent użytkowników, którzy uruchomili określonego testu. Aby uzyskać więcej informacji, zobacz [wartość procentową na podstawie liczby użytkowników wirtualnych](#PercentageBasedonVirtualUsers).
 
--   **Na podstawie tempa użytkownika:** W trakcie testu obciążenia każdy test wydajności sieci web lub test jednostkowy jest uruchamiany określoną liczbę razy na użytkowników, na godzinę. Ten model testu mieszanego należy użyć, jeśli chcesz, aby wirtualni użytkownicy uruchamiali test w konkretnym tempie przez cały test obciążeniowy. Aby uzyskać więcej informacji, zobacz [Pacing test mieszany](#PacingTestMix).
+- **Na podstawie tempa użytkownika:** W trakcie testu obciążenia każdy test wydajności sieci web lub test jednostkowy jest uruchamiany określoną liczbę razy na użytkowników, na godzinę. Ten model testu mieszanego należy użyć, jeśli chcesz, aby wirtualni użytkownicy uruchamiali test w konkretnym tempie przez cały test obciążeniowy. Aby uzyskać więcej informacji, zobacz [Pacing test mieszany](#PacingTestMix).
 
     > [!TIP]
     > Kiedy należy wybrać **procent test mieszany** i gdy użytkownik wybierze **wartość procentową na podstawie liczby użytkowników wirtualnych**? Różnica między te dwie opcje ważne jest, gdy niektóre testy w asortymencie test ma znacznie dłuższy czas niż inne testy. W takiej sytuacji należy prawdopodobnie wybrać **wartość procentową na podstawie liczby użytkowników wirtualnych**. Ten wybór pomaga uniknąć przebieg testu, w którym zwiększa prawdopodobieństwo, że zbyt wielu użytkowników będą uruchomione testy czas trwania długiej. Jednak jeśli wszystkie testy mają podobne czasów trwania, bezpieczniej można **procent test mieszany**.
 
--   **Oparte na kolejności:** Każdy wirtualny użytkownik uruchamia testy wydajności lub jednostki sieci web, w kolejności, że testy są zdefiniowane w tym scenariuszu. Wirtualny użytkownik kontynuuje, okrągło testów w następującej kolejności do czasu ukończenia testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [kolejności sekwencyjnej](#SequentialOrder).
+- **Oparte na kolejności:** Każdy wirtualny użytkownik uruchamia testy wydajności lub jednostki sieci web, w kolejności, że testy są zdefiniowane w tym scenariuszu. Wirtualny użytkownik kontynuuje, okrągło testów w następującej kolejności do czasu ukończenia testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [kolejności sekwencyjnej](#SequentialOrder).
 
-###  <a name="BasedOnTestsStarted"></a> Procent opartych na rozpoczętych testów
+### <a name="BasedOnTestsStarted"></a> Procent opartych na rozpoczętych testów
  Dla każdego testu w zestawie można określić wartość procentową, która określa, jak często testu jest wybrany jako następny test do uruchomienia. Na przykład można przypisać następujące wartości procentowe do trzech testów:
 
 - TestA (50%)
@@ -50,10 +50,10 @@ Można określić jedną z następujących opcji model testu mieszanego, dla sce
 
   Jeśli używasz tego ustawienia, Następny test, aby rozpocząć opiera się na przypisane wartości procentowe. W tym nie biorąc pod uwagę liczbę wirtualnych użytkowników, którzy są aktualnie uruchomione każdego testu.
 
-###  <a name="PercentageBasedonVirtualUsers"></a> Wartość procentową na podstawie liczby użytkowników wirtualnych
+### <a name="PercentageBasedonVirtualUsers"></a> Wartość procentową na podstawie liczby użytkowników wirtualnych
  Ten model testu mieszanego Określa procent wirtualnych użytkowników, którzy uruchomią określonego testu. Jeśli używasz tego modelu testu mieszanego, Następny test, aby rozpocząć opiera się nie tylko na przypisane wartości procentowych, ale także na procent wirtualnych użytkowników, którzy są aktualnie uruchomione określonego testu. W dowolnym momencie testu obciążeniowego liczbę użytkowników, którzy uruchomili określonego testu możliwie najdokładniej pasuje do przypisanego rozkładu.
 
-###  <a name="PacingTestMix"></a> Tempo testu mieszanego
+### <a name="PacingTestMix"></a> Tempo testu mieszanego
  Jeśli określisz pacing mieszanki testów, możesz ustawić wskaźnik wykonania testu dla każdego wirtualnego użytkownika dla każdego testu w teście mieszanym. Dla każdego testu ten kurs jest wyrażona jako testy na wirtualnego użytkownika na godzinę. Na przykład może przypisywać pacing się test mieszany, do następujących testów:
 
 - TestA: 4 testy na użytkownika na godzinę
@@ -79,7 +79,7 @@ Można określić jedną z następujących opcji model testu mieszanego, dla sce
 
   Aby uzyskać więcej informacji, zobacz [jak: Zastosuj rozkład opóźnienia, korzystając z tempa model testu mieszanego użytkownika do](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
 
-###  <a name="SequentialOrder"></a> Kolejności
+### <a name="SequentialOrder"></a> Kolejności
  Wybieranie oparty na test sekwencyjnych order — opcja sprawia, że każdy użytkownik wirtualny Uruchom wszystkie testy w ramach scenariusza opisywanego w kolejności, że testy zostały zdefiniowane.
 
 ## <a name="test-iterations-property"></a>Właściwość iteracji testu

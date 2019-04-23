@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 750d96442f59c29a8e565e6b57eda292656ad1f7
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 60d41398a37870d8be7a55003259b7cb2b9e48db
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770326"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099627"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Najlepsze praktyki dotyczące korzystania z wstawek kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ W kodzie we fragmencie kodu pokazano tylko najbardziej podstawową metodą coś 
 ## <a name="file-locations"></a>Lokalizacje plików  
  Podczas lokalizacji plików można przystosować do aplikacji, możesz pomyśleć o następujących czynności:  
   
--   Znajdowanie dostępnej lokalizacji. Użytkownicy mogą nie mieć dostępu do folderu Program Files na komputerze, dlatego przechowywanie plików za pomocą pliki aplikacji mogą nie działać.  
+- Znajdowanie dostępnej lokalizacji. Użytkownicy mogą nie mieć dostępu do folderu Program Files na komputerze, dlatego przechowywanie plików za pomocą pliki aplikacji mogą nie działać.  
   
--   Znajdowanie w bezpiecznej lokalizacji. Przechowywanie plików w folderze głównym (C:\\) nie jest bezpieczna. W przypadku danych aplikacji, firma Microsoft zaleca \Application folderu danych. W przypadku danych indywidualnego użytkownika aplikacji można utworzyć pliku dla każdego użytkownika w folderze dokumenty \My.  
+- Znajdowanie w bezpiecznej lokalizacji. Przechowywanie plików w folderze głównym (C:\\) nie jest bezpieczna. W przypadku danych aplikacji, firma Microsoft zaleca \Application folderu danych. W przypadku danych indywidualnego użytkownika aplikacji można utworzyć pliku dla każdego użytkownika w folderze dokumenty \My.  
   
--   Przy użyciu prawidłowej nazwy pliku. Możesz użyć <xref:System.Windows.Forms.OpenFileDialog> i <xref:System.Windows.Forms.SaveFileDialog> formantów, aby zmniejszyć prawdopodobieństwo nieprawidłowych nazw plików. Należy pamiętać, że między czasie użytkownik wybierze plik i czas, w kodzie manipuluje pliku, plik może być usunięty. Ponadto użytkownik nie może mieć uprawnienia do zapisu do pliku.  
+- Przy użyciu prawidłowej nazwy pliku. Możesz użyć <xref:System.Windows.Forms.OpenFileDialog> i <xref:System.Windows.Forms.SaveFileDialog> formantów, aby zmniejszyć prawdopodobieństwo nieprawidłowych nazw plików. Należy pamiętać, że między czasie użytkownik wybierze plik i czas, w kodzie manipuluje pliku, plik może być usunięty. Ponadto użytkownik nie może mieć uprawnienia do zapisu do pliku.  
   
 ## <a name="security"></a>Zabezpieczenia  
  Jak bezpieczne wstawka to zależy od tego, gdzie jest używana w kodzie źródłowym i jak zmienić po w kodzie. Poniższa lista zawiera kilka obszarów, które muszą być rozważone.  
@@ -56,15 +56,15 @@ W kodzie we fragmencie kodu pokazano tylko najbardziej podstawową metodą coś 
 ## <a name="downloaded-code-snippets"></a>Fragmenty kodu z pobranego  
  Fragmenty kodu IntelliSense instalowane przez Visual Studio nie są w sobie zagrożenie bezpieczeństwa. Jednak może być utworzona zagrożenia bezpieczeństwa w Twojej aplikacji. Fragmenty kodu, pobranego z Internetu, powinny być traktowane jak inne pobranej zawartości — z najwyższą ostrożnością.  
   
--   Pobierz fragmenty tylko z lokacji, której możesz zaufać i używać aktualnych przed wirusami.  
+- Pobierz fragmenty tylko z lokacji, której możesz zaufać i używać aktualnych przed wirusami.  
   
--   Otworzyć wszystkie pliki pobrane fragment kodu w Notatniku lub edytorze XML programu Visual Studio i uważnie przeczytać przed zainstalowaniem ich. Zwróć uwagę na następujące kwestie:  
+- Otworzyć wszystkie pliki pobrane fragment kodu w Notatniku lub edytorze XML programu Visual Studio i uważnie przeczytać przed zainstalowaniem ich. Zwróć uwagę na następujące kwestie:  
   
-    -   Fragment kodu uszkodzenie systemu, jeśli zostanie wykonana. Należy uważnie przeczytać kodu źródłowego, przed jego uruchomieniem.  
+    - Fragment kodu uszkodzenie systemu, jeśli zostanie wykonana. Należy uważnie przeczytać kodu źródłowego, przed jego uruchomieniem.  
   
-    -   Blok adresu URL pomocy plik fragmentu kodu może zawierać adresy URL, których wykonanie pliku złośliwy skrypt lub wyświetlić obraźliwe witryny sieci Web.  
+    - Blok adresu URL pomocy plik fragmentu kodu może zawierać adresy URL, których wykonanie pliku złośliwy skrypt lub wyświetlić obraźliwe witryny sieci Web.  
   
-    -   Fragment może zawierać odwołania, które są dodawane w trybie dyskretnym do projektu i mogą być ładowane z dowolnego miejsca w systemie. Te odwołania mógł zostać pobrany na komputer, z którego został pobrany fragmentu kodu. Fragment kodu może następnie wprowadzić wywołanie do metody odwołania, który jest wykonywany złośliwego kodu. Aby zabezpieczyć się przed takimi atakami, należy sprawdzić bloki Importy i odwołania do pliku fragmentu kodu.  
+    - Fragment może zawierać odwołania, które są dodawane w trybie dyskretnym do projektu i mogą być ładowane z dowolnego miejsca w systemie. Te odwołania mógł zostać pobrany na komputer, z którego został pobrany fragmentu kodu. Fragment kodu może następnie wprowadzić wywołanie do metody odwołania, który jest wykonywany złośliwego kodu. Aby zabezpieczyć się przed takimi atakami, należy sprawdzić bloki Importy i odwołania do pliku fragmentu kodu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Fragmenty kodu IntelliSense w języku Visual Basic](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   

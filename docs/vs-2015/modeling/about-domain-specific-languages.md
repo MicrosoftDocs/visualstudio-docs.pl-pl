@@ -11,12 +11,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: afa0cc3144840d547ea41cab21551fdcaae69980
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0ddfc51c54c04ad0d79d7ef180a027cbd253ac09
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796885"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043510"
 ---
 # <a name="about-domain-specific-languages"></a>Języki specyficzne dla domeny — informacje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,15 +62,15 @@ W przeciwieństwie do języka ogólnego przeznaczenia, takich jak C# lub UML ję
 ## <a name="aspects-of-graphical-domain-specific-development"></a>Aspekty graficznych programowania specyficznego dla domeny  
  Graficzny języka specyficznego dla domeny należy uwzględnić następujące funkcje:  
   
--   Notacja  
+- Notacja  
   
--   Model domeny  
+- Model domeny  
   
--   Generowanie artefaktu  
+- Generowanie artefaktu  
   
--   Serializacja  
+- Serializacja  
   
--   Integracja z programem Visual Studio  
+- Integracja z programem Visual Studio  
   
 ### <a name="notation"></a>Notacja  
  Języka specyficznego dla domeny musi mieć rozsądnie małe rozmiary zestaw elementów, które można łatwo definiować i rozszerzone do reprezentowania konstrukcje specyficznego dla domeny. Notacja składa się z kształtów, które reprezentują elementy, i łączników, które reprezentują relacje między elementami na powierzchni diagramu graficznego. W [!INCLUDE[dsl](../includes/dsl-md.md)], kształty, można ją rozszerzać oraz, aby reprezentować elementy języka specyficznego dla domeny.  
@@ -92,27 +92,27 @@ W przeciwieństwie do języka ogólnego przeznaczenia, takich jak C# lub UML ję
 ## <a name="benefits-of-domain-specific-development"></a>Zalety tworzenia specyficznego dla domeny  
  Języka specyficznego dla domeny zapewnia następujące korzyści:  
   
--   Zawiera konstrukcje, które dokładnie dopasowywane problem.  
+- Zawiera konstrukcje, które dokładnie dopasowywane problem.  
   
      W przeciwieństwie do ogólnego przeznaczenia języków języka specyficznego dla domeny składa się z elementy i relacje, które reprezentują bezpośrednio logikę obszar problemu. Na przykład aplikacja ubezpieczenia mogą zawierać elementy zasad i oświadczeń. Domain-specific language ułatwia projektowanie aplikacji i Znajdź i usuń błędy logiki.  
   
--   Umożliwia osoby niebędące deweloperami i osoby, które nie znają domeny zrozumieć ogólny projekt.  
+- Umożliwia osoby niebędące deweloperami i osoby, które nie znają domeny zrozumieć ogólny projekt.  
   
      Za pomocą graficznego języka specyficznego dla domeny, można utworzyć wizualną reprezentację domeny, aby użytkownicy niebędący deweloperami, może łatwo zrozumieć projekt aplikacji.  
   
--   Ułatwia tworzenie prototypów końcowego aplikacji.  
+- Ułatwia tworzenie prototypów końcowego aplikacji.  
   
      Deweloperzy mogą używać kodu, który generuje ich modelu, do tworzenia aplikacji prototypu, które pokazują do klientów.  
   
 ## <a name="the-process-of-domain-specific-development"></a>Proces tworzenia specyficznego dla domeny  
  Większość zespołów programistycznych korzystających z języków specyficznych dla domeny, wykonaj następujące kroki, tworzenie i używanie ich modeli:  
   
--   Zespół odróżnia zmiennej części domeny od elementów, które nigdy nie ulegną zmianie.  
+- Zespół odróżnia zmiennej części domeny od elementów, które nigdy nie ulegną zmianie.  
   
--   Deweloperzy pisanie kodu dla części stały i pozostawić punktów rozszerzeń dla zmiennej części.  
+- Deweloperzy pisanie kodu dla części stały i pozostawić punktów rozszerzeń dla zmiennej części.  
   
--   Główny deweloper oprogramowania lub architekta tworzy uwzględniająca wzorce projektowe stałej części domeny oraz punkty rozszerzenia dla części zmiennej języka specyficznego dla domeny.  
+- Główny deweloper oprogramowania lub architekta tworzy uwzględniająca wzorce projektowe stałej części domeny oraz punkty rozszerzenia dla części zmiennej języka specyficznego dla domeny.  
   
--   Główny deweloper oprogramowania lub architekta wdraża deweloperzy różne aplikacje, które zespół tworzy języka specyficznego dla domeny.  
+- Główny deweloper oprogramowania lub architekta wdraża deweloperzy różne aplikacje, które zespół tworzy języka specyficznego dla domeny.  
   
--   Każdy deweloper tworzy model, który ma zastosowanie do konkretnej aplikacji.
+- Każdy deweloper tworzy model, który ma zastosowanie do konkretnej aplikacji.

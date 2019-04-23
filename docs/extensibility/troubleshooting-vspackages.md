@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c04afe2d739b172e74da4ae38bd122468643e6e6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 64ebe3bc2d4d406d6144305b368d37613aef0158
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706993"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039736"
 ---
 # <a name="troubleshooting-vspackages"></a>Rozwiązywanie problemów z pakietami VSPackage
 Poniżej przedstawiono typowe problemy, które może być za pomocą Twojego pakietu VSPackage i porady, aby rozwiązać problemy.
@@ -56,7 +56,7 @@ Poniżej przedstawiono typowe problemy, które może być za pomocą Twojego pak
 
 ### <a name="to-troubleshoot-a-vspackage-that-does-not-register"></a>Aby rozwiązać pakietu VSPackage, która nie jest zarejestrowana
 
-1.  Upewnij się, że zestaw pakietu VSPackage znajduje się w zaufanej lokalizacji. RegPkg nie można zarejestrować zestawy w niezaufanych lub częściowo zaufanych lokalizacji, takiej jak udział sieciowy w domyślnej konfiguracji zabezpieczeń platformy .net. Mimo że w każdym przypadku, gdy użytkownik tworzy projekt w niezaufanej lokalizacji zostanie wyświetlone ostrzeżenie, zaznacz pole wyboru "nie pokazuj tego komunikatu ponownie" może uniemożliwić to ostrzeżenie występowaniu.
+1. Upewnij się, że zestaw pakietu VSPackage znajduje się w zaufanej lokalizacji. RegPkg nie można zarejestrować zestawy w niezaufanych lub częściowo zaufanych lokalizacji, takiej jak udział sieciowy w domyślnej konfiguracji zabezpieczeń platformy .net. Mimo że w każdym przypadku, gdy użytkownik tworzy projekt w niezaufanej lokalizacji zostanie wyświetlone ostrzeżenie, zaznacz pole wyboru "nie pokazuj tego komunikatu ponownie" może uniemożliwić to ostrzeżenie występowaniu.
 
 ### <a name="to-troubleshoot-a-command-that-is-not-visible-or-that-generates-an-error-when-you-click-a-command"></a>Aby rozwiązać polecenia, który nie jest widoczny i generuje błąd, po kliknięciu polecenia
 
@@ -64,44 +64,44 @@ Poniżej przedstawiono typowe problemy, które może być za pomocą Twojego pak
 
 2. Upewnij się, że [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] można znaleźć UI.dll Twojego pakietu VSPackage.
 
-   1.  Znajdź identyfikator CLSID pakietu VSPackage w sekcji pakiety rejestru:
+   1. Znajdź identyfikator CLSID pakietu VSPackage w sekcji pakiety rejestru:
 
         HKLM\Software\Microsoft\Visual Studio\\*\<version>* \Packages
 
-   2.  Sprawdź, czy ścieżka podana przez podklucz SatelliteDll jest poprawna.
+   2. Sprawdź, czy ścieżka podana przez podklucz SatelliteDll jest poprawna.
 
 ### <a name="to-troubleshoot-a-vspackage-that-behaves-unexpectedly"></a>Aby rozwiązać pakietu VSPackage, który zachowuje się nieoczekiwanie
 
-1.  Ustaw punkty przerwania w kodzie.
+1. Ustaw punkty przerwania w kodzie.
 
      Dobre punktów początkowych do debugowania są konstruktora, a także metoda inicjowania. Można również ustawić punkty przerwania, w obszarze, który chcesz ocenić, takie jak polecenie menu. Aby włączyć punkty przerwania, należy uruchomić w debugerze.
 
-    1.  Na **projektu** menu, kliknij przycisk **właściwości**.
+    1. Na **projektu** menu, kliknij przycisk **właściwości**.
 
-    2.  Na **stron właściwości** okno dialogowe, wybierz opcję **debugowania** kartę.
+    2. Na **stron właściwości** okno dialogowe, wybierz opcję **debugowania** kartę.
 
-    3.  W **argumenty wiersza polecenia** wpisz sufiks głównej środowiska deweloperskiego, elementy docelowe pakietu VSPackage. Na przykład, aby wybrać eksperymentalne kompilacji, wpisz: **RootSuffix Exp**.
+    3. W **argumenty wiersza polecenia** wpisz sufiks głównej środowiska deweloperskiego, elementy docelowe pakietu VSPackage. Na przykład, aby wybrać eksperymentalne kompilacji, wpisz: **RootSuffix Exp**.
 
-    4.  Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie** lub naciśnij klawisz F5.
+    4. Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie** lub naciśnij klawisz F5.
 
         > [!NOTE]
         >  Jeśli projekt jest debugowany, utworzyć lub załadować istniejące wystąpienie programu projekt teraz.
 
-2.  Korzystanie z dziennika aktywności.
+2. Korzystanie z dziennika aktywności.
 
      Śledzenie zachowania pakietu VSPackage, zapisując informacje dziennika aktywności w kluczowych punktach. Ta technika jest szczególnie przydatne podczas uruchamiania pakietu VSPackage w środowisku handlu detalicznego. Aby uzyskać więcej informacji, zobacz [jak: Korzystanie z dziennika aktywności](../extensibility/how-to-use-the-activity-log.md).
 
-3.  Użyj symboli publicznych.
+3. Użyj symboli publicznych.
 
      Aby poprawić czytelność podczas debugowania, można dołączyć symboli do debugera.
 
-    1.  Z **narzędzia/Opcje** menu, przejdź do **debugowanie/symbole** okno dialogowe.
+    1. Z **narzędzia/Opcje** menu, przejdź do **debugowanie/symbole** okno dialogowe.
 
-    2.  Dodaj tę **symboli (.pdb) lokalizacja_pliku**:
+    2. Dodaj tę **symboli (.pdb) lokalizacja_pliku**:
 
          [http://msdl.microsoft.com/download/symbols](http://msdl.microsoft.com/download/symbols)
 
-    3.  Aby zwiększyć wydajność, należy określić folder pamięci podręcznej symboli, na przykład:
+    3. Aby zwiększyć wydajność, należy określić folder pamięci podręcznej symboli, na przykład:
 
         ```
         C:\symbols
@@ -111,9 +111,9 @@ Poniżej przedstawiono typowe problemy, które może być za pomocą Twojego pak
 
 1. Dla kodu zarządzanego upewnij się, że ścieżki odwołania są poprawne.
 
-   1.  Na **projektu** menu, kliknij przycisk **właściwości**.
+   1. Na **projektu** menu, kliknij przycisk **właściwości**.
 
-   2.  Wybierz **odwołania** karcie **stron właściwości** okno dialogowe i upewnij się, że wszystkie ścieżki są prawidłowe. Alternatywnie, można użyć **przeglądarki obiektów** Aby przeglądać w poszukiwaniu przywoływanych obiektów.
+   2. Wybierz **odwołania** karcie **stron właściwości** okno dialogowe i upewnij się, że wszystkie ścieżki są prawidłowe. Alternatywnie, można użyć **przeglądarki obiektów** Aby przeglądać w poszukiwaniu przywoływanych obiektów.
 
         Dla kodu zarządzanego, możesz użyć [Fuslogvw.exe (Podgląd dziennika powiązań zestawów)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer) do wyświetlania szczegółów ładowania zestawu nie powiodło się.
 

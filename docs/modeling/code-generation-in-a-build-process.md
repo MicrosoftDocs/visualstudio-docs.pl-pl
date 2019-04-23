@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 02608d5bc1b2c03560b5d954084d84059c34224a
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 07f7c91c74961fa846abb70637f358de59d0eb94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324328"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117099"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generowanie kodu w procesie kompilacji
 
@@ -28,7 +28,7 @@ Istnieją pewne różnice w czynnościach, które mogą wykonać zadania kompila
 
 Oznacza to, że nie masz dostępu do elementów, takich jak nazwy plików projektu w taki sam sposób podczas kompilacji szablonu tekstu w MSBuild. Można jednak [przekazać informacje o środowisku do szablonów tekstowych i procesorów dyrektyw przy użyciu parametrów kompilacji](#parameters).
 
-##  <a name="buildserver"></a> Konfigurowanie maszyn
+## <a name="buildserver"></a> Konfigurowanie maszyn
 
 Aby włączyć zadania kompilacji na komputerze deweloperskim, należy zainstalować zestaw Modeling SDK for Visual Studio.
 
@@ -216,7 +216,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-##  <a name="parameters"></a> Przekazywanie danych kontekstu kompilacji w szablonach
+## <a name="parameters"></a> Przekazywanie danych kontekstu kompilacji w szablonach
 
 Można ustawić wartości parametrów w pliku projektu. Na przykład, można przekazać [kompilacji](../msbuild/msbuild-properties.md) właściwości i [zmienne środowiskowe](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -250,7 +250,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 > [!NOTE]
 > `ResolveParameterValue` pobiera dane z `T4ParameterValues` tylko kiedy używasz MSBuild. Kiedy przekształcasz szablon przy użyciu Visual Studio, parametry mają wartości domyślne.
 
-##  <a name="msbuild"></a> Użyj właściwości projektu w zestawie i dyrektyw include
+## <a name="msbuild"></a> Użyj właściwości projektu w zestawie i dyrektyw include
 
 Makra programu Visual Studio, takich jak **$(SolutionDir)** nie działają w MSBuild. Zamiast tego można użyć właściwości projektu.
 

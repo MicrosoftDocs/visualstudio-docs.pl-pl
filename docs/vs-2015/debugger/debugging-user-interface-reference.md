@@ -22,12 +22,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f84df26f2dbdd000c61f93b092e2150b2c2242f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 59cc4e96630be23ee864e3d5a03cbb6dde709695
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760490"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098851"
 ---
 # <a name="debugging-user-interface-reference"></a>Debugowanie odwołań do interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ Następujących okien dialogowych mogą wystąpić podczas debugowania aplikacji
   
  Wiele funkcji debugera można zautomatyzować za pomocą modelu rozszerzalności programu Visual Studio. Aby uzyskać więcej informacji zobacz Visual Studio SDK debugowania.  
   
--   [Wybieranie punktów przerwania, okno dialogowe](../debugger/choose-breakpoints-dialog-box.md)  
+- [Wybieranie punktów przerwania, okno dialogowe](../debugger/choose-breakpoints-dialog-box.md)  
   
--   [Debugowanie plików źródłowych, Typowe właściwości, Strony właściwości rozwiązania, okno dialogowe](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)  
+- [Debugowanie plików źródłowych, Typowe właściwości, Strony właściwości rozwiązania, okno dialogowe](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)  
   
--   [Debugowanie, Opcje, okno dialogowe](../debugger/debugging-options-dialog-box.md)  
+- [Debugowanie, Opcje, okno dialogowe](../debugger/debugging-options-dialog-box.md)  
   
--   [Edytuj i kontynuuj, okno dialogowe](../debugger/edit-and-continue-dialog-box.md)  
+- [Edytuj i kontynuuj, okno dialogowe](../debugger/edit-and-continue-dialog-box.md)  
   
--   [Trwa zatrzymywanie debugowania, okno dialogowe](../debugger/stop-debugging-in-progress-dialog-box.md)  
+- [Trwa zatrzymywanie debugowania, okno dialogowe](../debugger/stop-debugging-in-progress-dialog-box.md)  
   
--   [Błędy i ostrzeżenia debugowania, okna dialogowe](../debugger/debugging-errors-and-warning-dialog-boxes.md)  
+- [Błędy i ostrzeżenia debugowania, okna dialogowe](../debugger/debugging-errors-and-warning-dialog-boxes.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)   

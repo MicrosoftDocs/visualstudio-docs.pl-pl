@@ -8,12 +8,12 @@ ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cf661407273cfe731867fc79bef0f13d19c1f95
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b5151f739dfe464ae948eb4b4716f659b7a7913
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781301"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044190"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo — Element (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ Określa opcjonalne wyrażenie porównywania z jedną lub kilkoma funkcjami (zob
   
  Prawidłową składnię wyrażeń definiuje się następująco:  
   
--   Wyrażenie funkcji, takich jak "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
+- Wyrażenie funkcji, takich jak "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
   
--   "&#124;" Jest operatorem lub.  
+- "&#124;" Jest operatorem lub.  
   
--   "&" I "+" znaki są operatorami i.  
+- "&" I "+" znaki są operatorami i.  
   
--   Znak „!” jest operatorem NIE.  
+- Znak „!” jest operatorem NIE.  
   
--   Nawiasy wymuszają kolejność pierwszeństwa w ocenie.  
+- Nawiasy wymuszają kolejność pierwszeństwa w ocenie.  
   
--   Wyrażenie o wartości null lub puste jest interpretowane jako zgodność.  
+- Wyrażenie o wartości null lub puste jest interpretowane jako zgodność.  
   
--   Możliwości projektu może być dowolny znak z wyjątkiem następujących znaków zastrzeżonych: "'' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r  
+- Możliwości projektu może być dowolny znak z wyjątkiem następujących znaków zastrzeżonych: "'' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r  
   
 ## <a name="example"></a>Przykład  
  W przykładzie poniżej widać trzy różne szablony. `Template1` ma zastosowanie do wszystkich typów projektów języka C# lub dowolnego innego typu projektu, który obsługuje `WindowsAppContainer` możliwości. `Template2` ma zastosowanie do wszystkich projektów języka C# wszelkiego rodzaju. `Template3` mają zastosowanie do projektów C#, które nie są `WindowsAppContainer` projektów.  

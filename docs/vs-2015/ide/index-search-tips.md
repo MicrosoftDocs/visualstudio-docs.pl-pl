@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a05e767330f0c1df5b30af6660a3f6e5ba4971e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1072d38adac020a1b9976d17f98ddf8882d7cb22
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764981"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044216"
 ---
 # <a name="index-search-tips"></a>Wskazówki dotyczące wyszukiwania w Indeksie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,32 +31,32 @@ Od wprowadzenia słów kluczowych, można zlokalizować informacji o w indeksie.
   
 ### <a name="general-guidelines"></a>Ogólne wskazówki  
   
--   Przewiń wpisów indeksu. Nie wszystkie tematy są indeksowane w taki sam sposób i taki, który najbardziej może ułatwiać mogą być wyższe lub niższe na liście, niż oczekiwano.  
+- Przewiń wpisów indeksu. Nie wszystkie tematy są indeksowane w taki sam sposób i taki, który najbardziej może ułatwiać mogą być wyższe lub niższe na liście, niż oczekiwano.  
   
--   Pomiń artykułów, takich jak "" lub "", ponieważ indeks je ignoruje.  
+- Pomiń artykułów, takich jak "" lub "", ponieważ indeks je ignoruje.  
   
--   Odwróć wyrazy, które wprowadzisz, jeśli nie zostanie znaleziony wpisy, których oczekujesz.  
+- Odwróć wyrazy, które wprowadzisz, jeśli nie zostanie znaleziony wpisy, których oczekujesz.  
   
      Spróbuj na przykład jeśli "Debugowanie kodu zestawu wbudowanego" nie mają żadnych odpowiednimi wpisami, wpisując "kodu zestawu wbudowanego debugowanie".  
   
--   Użyj filtrów z **indeksu** kartę, aby zmniejszyć liczbę wyników.  
+- Użyj filtrów z **indeksu** kartę, aby zmniejszyć liczbę wyników.  
   
 ### <a name="syntax-tips"></a>Porady dotyczące składni  
  Jeśli nie znajdziesz wpis dla wyrazu lub frazy, które zostały wprowadzone, spróbuj wykonać następujące czynności:  
   
--   Wpisz kilka pierwszych liter, lub główny wyrazu. Przystępując do częściowego ciągu, możesz uzyskać do tematów, które zostały zaindeksowane ze słowami kluczowymi, które są liczby pojedynczej lub mnogiej.  
+- Wpisz kilka pierwszych liter, lub główny wyrazu. Przystępując do częściowego ciągu, możesz uzyskać do tematów, które zostały zaindeksowane ze słowami kluczowymi, które są liczby pojedynczej lub mnogiej.  
   
      Na przykład wprowadź "właściwości", aby rozpocząć wyszukiwanie powyżej właściwości i właściwości.  
   
--   Wprowadź gerund (-ing) formy czasownika dla zadania, aby wykonać. Aby uzyskać bardziej szczegółowe wpisów indeksu, Dołącz słowo opisujące dokładnie chcesz.  
+- Wprowadź gerund (-ing) formy czasownika dla zadania, aby wykonać. Aby uzyskać bardziej szczegółowe wpisów indeksu, Dołącz słowo opisujące dokładnie chcesz.  
   
      Na przykład, wpisz "uruchomiona", aby uzyskać więcej wpisów lub "Uruchamianie programów" Aby uzyskać mniej.  
   
--   Wprowadź określeniem autonomicznych. Aby zawęzić wyniki, należy dołączyć słowo opisujące dokładnie ma.  
+- Wprowadź określeniem autonomicznych. Aby zawęzić wyniki, należy dołączyć słowo opisujące dokładnie ma.  
   
      Na przykład, wprowadź "COM +" Aby uzyskać szeroką gamę wpisy lub "składników modelu COM +" Aby uzyskać mniej.  
   
--   Wprowadź synonim programu word lub zlecenie, którego szukasz.  
+- Wprowadź synonim programu word lub zlecenie, którego szukasz.  
   
      Na przykład, jeśli wprowadzono gerund "building" "Tworzenie" zamiast tego spróbuj wykonać.  
   

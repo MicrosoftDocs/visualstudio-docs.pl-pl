@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 043d6e743df1069e268e63e8ef8acb52555ce659
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0a6e551dd2f045684168947d2c5a4e63089928c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800424"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098444"
 ---
 # <a name="model-your-app39s-architecture"></a>Model aplikacji&#39;architektury s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,28 +32,28 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
   
  Architektura systemu można podzielić na dwóch obszarach:  
   
--   [Projektowania wysokiego poziomu](#Structure). Opisuje główne składniki i jak współdziałają ze sobą w celu spełnienia poszczególnych wymagań. Jeśli system jest duża, każdy składnik może mieć własną projektowania wysokiego poziomu, który pokazuje, jak jest zbudowany z mniejszych składników.  
+- [Projektowania wysokiego poziomu](#Structure). Opisuje główne składniki i jak współdziałają ze sobą w celu spełnienia poszczególnych wymagań. Jeśli system jest duża, każdy składnik może mieć własną projektowania wysokiego poziomu, który pokazuje, jak jest zbudowany z mniejszych składników.  
   
--   [Wzorce projektowe](#Patterns) i Konwencji używanych w całym projekty składników. Wzorzec opisuje sposób postępowania w osiąganiu celu programowania. Za pomocą tych samych wzorców w całym projekcie, Twój zespół może zmniejszyć kosztów wprowadzania zmian i tworzenie nowego oprogramowania.  
+- [Wzorce projektowe](#Patterns) i Konwencji używanych w całym projekty składników. Wzorzec opisuje sposób postępowania w osiąganiu celu programowania. Za pomocą tych samych wzorców w całym projekcie, Twój zespół może zmniejszyć kosztów wprowadzania zmian i tworzenie nowego oprogramowania.  
   
-##  <a name="Structure"></a> Projektowania wysokiego poziomu  
+## <a name="Structure"></a> Projektowania wysokiego poziomu  
  Projektowania wysokiego poziomu w tym artykule opisano główne składniki systemu i jak współdziałają ze sobą w celu osiągnięcia celów projektowania. Działania na poniższej liście są zaangażowane w opracowywaniu projektowania wysokiego poziomu, ale niekoniecznie w określonej kolejności.  
   
  Jeśli aktualizujesz istniejący kod może zacząć poprzez opisanie główne składniki. Upewnij się, zrozumieć wszelkie zmiany wymagań użytkowników i następnie dodać lub zmodyfikować interakcje między składnikami. Jeśli tworzysz nowy system begin przez opis najważniejszych funkcji potrzeb użytkowników. Następnie zapoznaj się z sekwencji interakcji dla przypadków użycia głównego i następnie konsolidowanie sekwencji do projektu składnika.  
   
  W każdym przypadku jest przydatne do tworzenia różnych działań równoległych i tworzenie kodu i testów na wczesnym etapie. Należy unikać próby wykonaj jedną z tych aspektów, przed rozpoczęciem korzystania z innej. Zazwyczaj wymagania i zrozumieć, najlepszym sposobem na projektowanie systemu zmieni się podczas pisania i testowania kodu. W związku z tym należy rozpocząć poprzez zrozumienie i kodowania najważniejszych funkcji, wymagań i projektu. Wypełnij szczegóły w późniejszej iteracji projektu.  
   
--   [Opis wymagań](#Requirements). Punkt początkowy dowolnego projektu jest jasne zrozumienie potrzeb użytkowników.  
+- [Opis wymagań](#Requirements). Punkt początkowy dowolnego projektu jest jasne zrozumienie potrzeb użytkowników.  
   
--   [Wzorce architektury](#BigDecisions). Opcje wprowadzone o podstawowych technologii i architektury elementów systemu.  
+- [Wzorce architektury](#BigDecisions). Opcje wprowadzone o podstawowych technologii i architektury elementów systemu.  
   
--   [Składniki oraz ich interfejsów](#Components). Rysowanie diagramów składników, aby pokazać główne części systemu i pokazanie interfejsów, które współdziałają ze sobą. Interfejsy, które poszczególnych składników zawierają wszystkie komunikaty, które można zidentyfikowane na diagramach sekwencji.  
+- [Składniki oraz ich interfejsów](#Components). Rysowanie diagramów składników, aby pokazać główne części systemu i pokazanie interfejsów, które współdziałają ze sobą. Interfejsy, które poszczególnych składników zawierają wszystkie komunikaty, które można zidentyfikowane na diagramach sekwencji.  
   
--   [Interakcje pomiędzy składnikami](#Interactions). Dla każdego przypadku użycia, zdarzenia lub komunikatu przychodzącego można narysować diagram sekwencji pokazujący sposób interakcji główne składniki systemu do osiągnięcia wymaganą reakcję.  
+- [Interakcje pomiędzy składnikami](#Interactions). Dla każdego przypadku użycia, zdarzenia lub komunikatu przychodzącego można narysować diagram sekwencji pokazujący sposób interakcji główne składniki systemu do osiągnięcia wymaganą reakcję.  
   
--   [Model danych składników i interfejsy](#Data). Możesz narysować diagramy klas do opisania informacje, które jest przekazywane między składnikami, a następnie przechowywane wewnątrz składników.  
+- [Model danych składników i interfejsy](#Data). Możesz narysować diagramy klas do opisania informacje, które jest przekazywane między składnikami, a następnie przechowywane wewnątrz składników.  
   
-##  <a name="Requirements"></a> Omówienie wymagań  
+## <a name="Requirements"></a> Omówienie wymagań  
  Ogólny projekt kompletnej aplikacji jest najbardziej efektywne opracowany wraz z modelem wymagania lub innych opis potrzeb użytkowników. Aby uzyskać więcej informacji na temat modeli wymagania, zobacz [modelowanie wymagań użytkowników](../modeling/model-user-requirements.md).  
   
  Jeśli system, który tworzysz składnik w systemie większe, część lub całość wymagań może zostać zawarte w interfejsów programistycznych.  
@@ -78,7 +78,7 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
   
   Ilość szczegółów, które należy umieścić w wymagania lub architektury model zależy od tego, skali projektu oraz wielkość i stopień rozproszenia zespołu. Małego zespołu nad projektem krótki mogą zostać przekazane żadne dodatkowe niż powstawać diagramu klas koncepcji biznesowych i niektórych wzorców projektowych; duży projekt rozproszone na więcej niż jeden region należałoby znacznie bardziej szczegółowo.  
   
-##  <a name="BigDecisions"></a> Wzorce architektury  
+## <a name="BigDecisions"></a> Wzorce architektury  
  Na wczesnym etapie projektowania należy wybrać technologie główne i elementów, od których zależy od projektu. Obszary, w których należy te opcje są następujące:  
   
 - Podstawowa Wybór technologii, takich jak wybrać między bazą danych i systemu plików i wybór między aplikację sieciową i klienta sieci Web i tak dalej.  
@@ -91,7 +91,7 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
   
   Wybrane opcje, które wpływają na sposób używania i interpretować architektury model. Na przykład w systemie, który korzysta z bazy danych, skojarzenia na diagramie klasy może reprezentować relacji lub klucze obce w bazie danych, natomiast w systemie, który jest oparty na plikach XML, skojarzenia może wskazywać odsyłaczy, które używają języka XPath. W rozproszonym systemie wiadomości w diagramie sekwencji może reprezentować komunikatów o komunikacji sieciowej; w przypadku aplikacji niezależna reprezentują wywołania funkcji.  
   
-##  <a name="Components"></a> Składniki oraz ich interfejsów  
+## <a name="Components"></a> Składniki oraz ich interfejsów  
  Główne zalecenia przedstawione w tej sekcji są następujące:  
   
 - Tworzenie diagramów składników, aby pokazać główne części systemu.  
@@ -111,17 +111,17 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
   
  Diagram składników typowym dla dużych systemu mogą być następujące składniki, takie jak te:  
   
--   Prezentacji. Składnik, który zapewnia dostęp do użytkownika, zwykle działających w przeglądarce sieci Web.  
+- Prezentacji. Składnik, który zapewnia dostęp do użytkownika, zwykle działających w przeglądarce sieci Web.  
   
--   Składniki usługi sieci Web. Zapewnia połączenie między klientami a serwerami.  
+- Składniki usługi sieci Web. Zapewnia połączenie między klientami a serwerami.  
   
--   Użyj przypadków kontrolerów. Prowadzi użytkownika przez kroki poszczególnych scenariuszy.  
+- Użyj przypadków kontrolerów. Prowadzi użytkownika przez kroki poszczególnych scenariuszy.  
   
--   Podstawowa biznesowych. Zawiera klasy, które są oparte na klasach w modelu wymagań, implementuje kluczowe operacje i nakłada ograniczeń biznesowych.  
+- Podstawowa biznesowych. Zawiera klasy, które są oparte na klasach w modelu wymagań, implementuje kluczowe operacje i nakłada ograniczeń biznesowych.  
   
--   Baza danych. Przechowuje obiektów biznesowych.  
+- Baza danych. Przechowuje obiektów biznesowych.  
   
--   Rejestrowanie i składniki obsługi błędów.  
+- Rejestrowanie i składniki obsługi błędów.  
   
 ### <a name="dependencies-between-components"></a>Zależności między składnikami  
  Oprócz samych elementów można wyświetlić zależności między nimi. Kształt strzałki zależności między składnikami dwóch pokazuje, że zmiany w projekcie jednego mogą mieć wpływ na projekt z drugiej strony. Zwykle dzieje się tak, ponieważ jeden składnik używa usług lub funkcji, które są dostarczane przez inny składnik, bezpośrednio lub pośrednio.  
@@ -178,7 +178,7 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
   
   Korzystanie z interfejsów wymagane zwykle lepiej jest użycie części. Mimo, że projekt może trwać dłużej, wynikowy system jest bardziej elastyczna. Jest również łatwiejsze testowanie składników oddzielnie. Dzięki temu mniej sprzężenia w swoich planach rozwoju.  
   
-##  <a name="Interactions"></a> Interakcje pomiędzy składnikami  
+## <a name="Interactions"></a> Interakcje pomiędzy składnikami  
  Główne zalecenia przedstawione w tej sekcji są następujące:  
   
 - Zidentyfikować przypadki użycia systemu.  
@@ -196,11 +196,11 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
 ### <a name="identifying-the-initiating-events"></a>Identyfikowanie inicjujący zdarzenia  
  Pracy wykonanej przez większość systemów oprogramowania może wygodnie podzielone przez odpowiedzi, które zapewnia inne dane wejściowe lub zdarzeń. Zainicjować zdarzenie może być jednym z następujących zdarzeń:  
   
--   Pierwszą akcją w przypadku użycia. Modelu wymagań może pojawiać się jako krok w przypadku użycia lub akcji w diagramie aktywności. Aby uzyskać więcej informacji [diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md) i [diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md).  
+- Pierwszą akcją w przypadku użycia. Modelu wymagań może pojawiać się jako krok w przypadku użycia lub akcji w diagramie aktywności. Aby uzyskać więcej informacji [diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md) i [diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md).  
   
--   Komunikat o interfejs programistyczny. Jeśli system, który tworzysz składnik w systemie większe, powinny być opisane jako operacji w jeden z interfejsów składnika. Zobacz [składników oraz ich interfejsów](#Components).  
+- Komunikat o interfejs programistyczny. Jeśli system, który tworzysz składnik w systemie większe, powinny być opisane jako operacji w jeden z interfejsów składnika. Zobacz [składników oraz ich interfejsów](#Components).  
   
--   Określony warunek, który jest monitorowany przez system lub regularne zdarzeń, takich jak porze dnia.  
+- Określony warunek, który jest monitorowany przez system lub regularne zdarzeń, takich jak porze dnia.  
   
 ### <a name="describe-the-computations"></a>Opisz obliczeń  
  Narysuj diagramy sekwencji, aby pokazać, jak składniki odpowiadać na zdarzenie początkowe.  
@@ -218,14 +218,14 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
   
  Jest to przydatne w celu dodawania komentarzy do diagramów aktywności lub sekwencji, należy pamiętać, zdobyła po zakończeniu każdej operacji. Można także napisać efekt każdej operacji w jego **lokalnego Postcondition** właściwości.  
   
-###  <a name="Data"></a> Model danych składników i interfejsów  
+### <a name="Data"></a> Model danych składników i interfejsów  
  Określ parametry i zwracane wartości każdej operacji w interfejsach składnika. Gdzie operacje reprezentują wywołania, takie jak żądania usługi sieci Web, parametry są tych rodzajów informacji, które są wysyłane jako część żądania. W przypadku, gdy kilka wartości są zwracane z operacją, można użyć parametrów za pomocą **kierunek** właściwością **się**.  
   
  Każdy parametr i wartość zwracana ma typ. Można zdefiniować tymi typami za pomocą diagramów klas UML. Nie masz do reprezentowania szczegółów implementacji w tych diagramów. Na przykład jeśli są opisującego dane, które są przesyłane w formacie XML, można użyć asocjacji do reprezentacji dowolnego rodzaju porównania między węzłami, XML i używanie klas do reprezentowania węzłów.  
   
  Komentarze służą do opisywania ograniczeń biznesowych skojarzenia i atrybutów. Na przykład jeśli wszystkie elementy w kolejności klienta muszą pochodzić z tego samego dostawcy, możesz opisać to przez odwołanie do skojarzenia między elementami kolejność i elementy w katalogu produktów oraz między elementami katalogu i jego dostawcy.  
   
-##  <a name="Patterns"></a> Wzorce projektowe  
+## <a name="Patterns"></a> Wzorce projektowe  
  Wzorzec projektowy jest konspektu sposobu projektowania danego aspekt tego oprogramowania, zwłaszcza taki, który występuje w różnych częściach systemu. Przyjmując jednolite podejście w projekcie, można zmniejszyć koszt projektu, zapewnienia spójności interfejsu użytkownika i zmniejszyć koszt zrozumienie i zmieniania kodu.  
   
  Niektóre wzorce projektowe ogólnych, takich jak obserwatora są dobrze znane i powszechnie stosowane. Ponadto są wzorce, które mają zastosowanie tylko do projektu. Na przykład w sieci Web system sprzedaży, nastąpi kilka operacji w kodzie gdzie zmian zamówienia klienta. W celu zapewnienia, że był wyświetlany stan zamówienia na każdym etapie, wszystkie czynności należy wykonać konkretnego protokołu aktualizacji bazy danych.  
@@ -236,25 +236,25 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
   
  Wzorzec projektowy jest opisane w dokumencie i zwykle obejmuje następujące elementy:  
   
--   Nazwa.  
+- Nazwa.  
   
--   Opis kontekst, w której ma zastosowanie. Jakie kryteria należy upewnić się deweloperem, należy rozważyć stosowanie tego wzorca?  
+- Opis kontekst, w której ma zastosowanie. Jakie kryteria należy upewnić się deweloperem, należy rozważyć stosowanie tego wzorca?  
   
--   Krótki opis problemów, które ona rozwiązuje.  
+- Krótki opis problemów, które ona rozwiązuje.  
   
--   Model głównych składników oraz ich wzajemne relacje. Może to być klasy lub składniki i interfejsy, za pomocą skojarzeń i zależności między nimi. Elementy zazwyczaj można podzielić na dwie kategorie:  
+- Model głównych składników oraz ich wzajemne relacje. Może to być klasy lub składniki i interfejsy, za pomocą skojarzeń i zależności między nimi. Elementy zazwyczaj można podzielić na dwie kategorie:  
   
-    -   Elementy, które muszą być replikowane przez dewelopera w każdej części kodu, w których wzorzec jest używany. Typy szablonów służy do opisywania tych. Aby uzyskać więcej informacji, zobacz [diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md).  
+    - Elementy, które muszą być replikowane przez dewelopera w każdej części kodu, w których wzorzec jest używany. Typy szablonów służy do opisywania tych. Aby uzyskać więcej informacji, zobacz [diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md).  
   
-    -   Elementy opisujące klasy framework, które należy używać projektanta.  
+    - Elementy opisujące klasy framework, które należy używać projektanta.  
   
--   Model interakcji między częściami, za pomocą diagramów sekwencji lub działania.  
+- Model interakcji między częściami, za pomocą diagramów sekwencji lub działania.  
   
--   Konwencje nazewnictwa.  
+- Konwencje nazewnictwa.  
   
--   Opis sposobu wzorzec rozwiązuje problem.  
+- Opis sposobu wzorzec rozwiązuje problem.  
   
--   Opis zmian, które deweloperzy mogą mieć możliwość przyjęcia.  
+- Opis zmian, które deweloperzy mogą mieć możliwość przyjęcia.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md)   

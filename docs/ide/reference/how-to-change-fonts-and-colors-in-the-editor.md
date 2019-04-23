@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4fba419605dd332346885dbf93460c1a4e53c9d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: f0ebc1e4707b0240791524cb0b6b4ba75be897cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223185"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050612"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Instrukcje: Zmiana czcionek i kolorów dla edytora w programie Visual Studio
 
@@ -33,20 +33,20 @@ Zmień krój czcionki domyślnej, Dostosuj rozmiar czcionki i zmienić kolory pi
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>Zmień krój czcionki domyślnej, rozmiar i kolory
 
-1.  Wybierz **opcje** z **narzędzia** menu, a następnie w **środowiska** folderu, wybierz **czcionki i kolory**.
+1. Wybierz **opcje** z **narzędzia** menu, a następnie w **środowiska** folderu, wybierz **czcionki i kolory**.
 
      [Czcionki i kolory, środowisko, opcje, okno dialogowe](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) zostanie otwarty.
 
-2.  W **Pokaż ustawienia dla**, wybierz opcję **edytora tekstów**.
+2. W **Pokaż ustawienia dla**, wybierz opcję **edytora tekstów**.
 
-3.  Modyfikowanie **czcionki** i **rozmiar** Zmień krój czcionki i rozmiar dla wszystkich elementów tekstu w edytorach wszystkie opcje.
+3. Modyfikowanie **czcionki** i **rozmiar** Zmień krój czcionki i rozmiar dla wszystkich elementów tekstu w edytorach wszystkie opcje.
 
-4.  Wybierz odpowiedni element w **wyświetlania elementów**, a następnie zmodyfikuj **pierwszy plan elementu** i **tła elementu** opcje.
+4. Wybierz odpowiedni element w **wyświetlania elementów**, a następnie zmodyfikuj **pierwszy plan elementu** i **tła elementu** opcje.
 
     > [!TIP]
     > Kliknij przycisk **Użyj ustawień domyślnych** Aby przywrócić ustawienia domyślne.
 
-5.  Kliknij przycisk **OK**.
+5. Kliknij przycisk **OK**.
 
 ## <a name="see-also"></a>Zobacz także
 

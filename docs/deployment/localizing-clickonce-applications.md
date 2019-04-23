@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ad065db8871696fe1068e85be1c06f4a5b99d1c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 529adc66ece75219e71d7ae8b17857f5036e1668
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624792"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097287"
 ---
 # <a name="localize-clickonce-applications"></a>Lokalizowanie aplikacji ClickOnce
 Lokalizacja jest procesem tworzenia aplikacji odpowiednie dla określonej kultury. Ten proces obejmuje tłumaczenie tekstu interfejsu użytkownika na język określonego regionu, przy użyciu poprawną datę i formatowania waluty, dopasowywanie rozmiaru formantów w formularzu, a dublowania kontrolki od prawej do lewej w razie potrzeby.
@@ -35,11 +35,11 @@ Lokalizacja jest procesem tworzenia aplikacji odpowiednie dla określonej kultur
 
  W tym temacie opisano trzy sposoby wdrożenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji dla innych języków:
 
--   Dołącz wszystkie zestawy satelickie pojedynczego wdrożenia.
+- Dołącz wszystkie zestawy satelickie pojedynczego wdrożenia.
 
--   Generowanie jedno wdrożenie dla każdej kultury za pomocą zestawu satelickiego pojedynczego uwzględnione w każdej.
+- Generowanie jedno wdrożenie dla każdej kultury za pomocą zestawu satelickiego pojedynczego uwzględnione w każdej.
 
--   Pobieranie zestawów satelickich na żądanie.
+- Pobieranie zestawów satelickich na żądanie.
 
 ## <a name="including-all-satellite-assemblies-in-a-deployment"></a>W przypadku wdrożenia w tym wszystkie zestawy satelickie
  Zamiast publikowanie wielu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia, możesz opublikować jeden [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia, który zawiera wszystkie zestawy satelickie.

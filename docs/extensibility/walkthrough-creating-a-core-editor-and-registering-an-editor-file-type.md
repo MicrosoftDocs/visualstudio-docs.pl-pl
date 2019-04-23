@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 437f5aecb2fe8f7bb953c9efb6eb33ccb945c9f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dd6514ec43cd3180d808c20d5589bf18e3a9b58b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721797"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048208"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Przewodnik: Tworzenie edytorze podstawowych i rejestrowania typu pliku w edytorze
 W tym instruktażu przedstawiono sposób tworzenia pakietu VSPackage, który rozpoczyna się [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podstawowy edytor, gdy plik za pomocą *.myext* rozszerzenie nazwy pliku jest ładowany.
@@ -26,11 +26,11 @@ W tym instruktażu przedstawiono sposób tworzenia pakietu VSPackage, który roz
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Lokalizacje dla szablonu projektu pakietu Visual Studio
  Szablon projektu pakietu Visual Studio można znaleźć w trzech różnych miejscach w **nowy projekt** okno dialogowe:
 
-1.  W obszarze **rozszerzalności programu Visual Basic**. Domyślny język projektu jest języka Visual Basic.
+1. W obszarze **rozszerzalności programu Visual Basic**. Domyślny język projektu jest języka Visual Basic.
 
-2.  W obszarze **rozszerzalność języka C#**. Domyślny język projektu jest C#.
+2. W obszarze **rozszerzalność języka C#**. Domyślny język projektu jest C#.
 
-3.  W obszarze **innych typów projektów rozszerzalności**. Domyślny język projektu jest w języku C++.
+3. W obszarze **innych typów projektów rozszerzalności**. Domyślny język projektu jest w języku C++.
 
 ### <a name="to-create-the-vspackage"></a>Do utworzenia pakietu VSPackage
 

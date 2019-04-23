@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9575effa2740620c585e1dddc64bb67a1d919d2f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2689f0d96189b496e147a074a38313c164b453d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939674"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099640"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Skróty klawiaturowe i klawisze modyfikujące w programie Blend
 
@@ -37,8 +37,8 @@ Aby uzyskać więcej informacji na temat ułatwień dostępu i funkcje, zobacz [
 
 Niektóre skróty klawiaturowe nie są skojarzone elementy menu, co oznacza, że nie używasz [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] interfejsu użytkownika do ich wykrycie. W poniższych sekcjach wymieniono skróty, które modyfikują zachowanie narzędzia lub akcji, takich jak zmiana rozmiaru obiektu, które modyfikują:
 
--   [Klawisze modyfikujące obszar kompozycji](../designers/artboard-modifier-keys-in-blend.md)
+- [Klawisze modyfikujące obszar kompozycji](../designers/artboard-modifier-keys-in-blend.md)
 
--   [Klawisze modyfikujące pióro](../designers/pen-tool-modifier-keys-in-blend.md)
+- [Klawisze modyfikujące pióro](../designers/pen-tool-modifier-keys-in-blend.md)
 
--   [Klawisze modyfikujące narzędzia Wybór bezpośredni](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+- [Klawisze modyfikujące narzędzia Wybór bezpośredni](../designers/direct-selection-tool-modifier-keys-in-blend.md)

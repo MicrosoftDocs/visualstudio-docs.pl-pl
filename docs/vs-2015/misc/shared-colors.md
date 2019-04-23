@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: brgeorge
-ms.openlocfilehash: 124c175aa75e7a75b137254afdff24539164cdfd
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c09419d1294d51fe0b566acc649bc3f9612acfca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58149677"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117179"
 ---
 # <a name="shared-colors"></a>Udostępnione kolory
-Tutaj należy wstawić wprowadzenie.  
+Tutaj wstaw wprowadzenie.  
   
 ## <a name="shared-colors"></a>Udostępnione kolory  
  Podczas projektowania interfejsu użytkownika, który używa wspólnych elementów powłoki programu Visual Studio lub chcesz, aby Twoje element interfejsu, aby były zgodne z podobne funkcje, umożliwia już istniejącymi nazwami tokenu w plikach definicji pakietu wybierz i przypisania kolorów. Gwarantuje to, że Twój interfejs użytkownika pozostaje zgodny z całego środowiska programu Visual Studio i że jest aktualizowana automatycznie po motywy są dodawane lub aktualizowane.  
@@ -24,40 +24,40 @@ Tutaj należy wstawić wprowadzenie.
   
  Upewnij się, że prawidłowo używać nazw tokenu:  
   
--   **Użyj tokenu nazw na podstawie funkcji, nie na samego koloru.** Typowe udostępnione kolory są skojarzone z elementami określonego interfejsu i są przeznaczone wyłącznie do użytku takie same lub podobne funkcje. Na przykład nie używaj ponownie plików kolor po naciśnięciu kombi dla Animacja postępu rotowania tylko dlatego, jak kolor. Funkcje pola kombi i animacji są różne, a Jeśli kolor skojarzony z zmiany pola kombi, mogą już być odpowiedni kolor w odniesieniu do danego elementu animacji. Spójnego używania koloru pomaga w poznaniu użytkowników i uniknąć pomyłek.  
+- **Użyj tokenu nazw na podstawie funkcji, nie na samego koloru.** Typowe udostępnione kolory są skojarzone z elementami określonego interfejsu i są przeznaczone wyłącznie do użytku takie same lub podobne funkcje. Na przykład nie używaj ponownie plików kolor po naciśnięciu kombi dla Animacja postępu rotowania tylko dlatego, jak kolor. Funkcje pola kombi i animacji są różne, a Jeśli kolor skojarzony z zmiany pola kombi, mogą już być odpowiedni kolor w odniesieniu do danego elementu animacji. Spójnego używania koloru pomaga w poznaniu użytkowników i uniknąć pomyłek.  
   
--   **Użyj kolorów tła i tekstu w poprawnej kombinacji.** Kolory tła, które są przeznaczone do użycia z tekstem będzie miał kolor tekstu. Nie używaj kolorów tekstu innego niż został określony dla w tle. Jeśli nie jest kolorem skojarzony tekst, nie należy używać tego kolor tła dla dowolnego powierzchni, w którym oczekujesz, że do wyświetlania tekstu. Inne kombinacje kolorów tekstu i tła może spowodować w interfejsie nie można go odczytać.  
+- **Użyj kolorów tła i tekstu w poprawnej kombinacji.** Kolory tła, które są przeznaczone do użycia z tekstem będzie miał kolor tekstu. Nie używaj kolorów tekstu innego niż został określony dla w tle. Jeśli nie jest kolorem skojarzony tekst, nie należy używać tego kolor tła dla dowolnego powierzchni, w którym oczekujesz, że do wyświetlania tekstu. Inne kombinacje kolorów tekstu i tła może spowodować w interfejsie nie można go odczytać.  
   
--   **Użyj kolorów kontrolki, które są odpowiednie dla ich lokalizacji.** W określonych stanach niektóre formanty programu Visual Studio nie mają osobne obramowania i kolory tła. Zamiast tego przejmą ich te kolory z powierzchni spodem. Upewnij się, zawsze używaj tokenów nazwy, które są odpowiednie dla lokalizacji, w którym umieszcza się kontrolka.  
+- **Użyj kolorów kontrolki, które są odpowiednie dla ich lokalizacji.** W określonych stanach niektóre formanty programu Visual Studio nie mają osobne obramowania i kolory tła. Zamiast tego przejmą ich te kolory z powierzchni spodem. Upewnij się, zawsze używaj tokenów nazwy, które są odpowiednie dla lokalizacji, w którym umieszcza się kontrolka.  
   
 > [!IMPORTANT]
 >  Nie używaj tokenów w kategorii "Stronę startową" lub "Jabłecznik"!  
   
 ### <a name="command-structures"></a>Polecenie struktury  
   
-####  <a name="BKMK_CommandMenus"></a> Menu  
+#### <a name="BKMK_CommandMenus"></a> Menu  
  Menu może wystąpić w kilku miejscach w programie Visual Studio 2013: główny pasek menu, osadzony w dokumencie lub narzędzia systemu windows lub kliknij prawym przyciskiem myszy w różnych miejscach w całej IDE. Implementacje menu skojarzone z innymi elementami interfejsu użytkownika zostały omówione w sekcji dla odpowiednich elementów. Zawsze należy używać implementacji standardowe menu oferowanych przez środowisko Visual Studio. Jednak w sporadycznych przypadkach możesz utracić dostęp do standardowego menu programu Visual Studio. W takich sytuacjach należy stosować następujących nazw tokenu, aby upewnić się, że Twój interfejs użytkownika są spójne z innych menu w programie Visual Studio.  
   
  ![Menu poprawek](../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303 000_MenuRedline")  
   
- Użyj...  
- -   Kiedy należy utworzyć niestandardowe menu.  
+Użyj...  
+- Kiedy należy utworzyć niestandardowe menu.  
   
 - Jeśli masz nowy składnik interfejsu użytkownika, który chcesz dopasować menu programu Visual Studio.  
   
-  Nie używaj...  
-  kolor tła samodzielnie. Zawsze użyj kombinacji tła/pierwszego planu, jak określono.  
+Nie używaj...  
+kolor tła samodzielnie. Zawsze użyj kombinacji tła/pierwszego planu, jak określono.  
   
 ##### <a name="menu-title"></a>Tytuł menu  
  Tytuły menu składają się z tła, obramowania i tekst tytułu, a także opcjonalnie symbol, zwykle w przypadku, gdy menu znajduje się na pasku poleceń.  
   
  ![Tytuł menu poprawek](../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303 001_MenuTitleRedline")  
   
- Użyj...  
- zawsze, gdy tworzysz tytuł menu niestandardowe.  
+Użyj...  
+zawsze, gdy tworzysz tytuł menu niestandardowe.  
   
- Nie używaj...  
- -   dla wszystkich elementów, które nie chcesz zawsze odpowiada tytuł menu.  
+Nie używaj...  
+- dla wszystkich elementów, które nie chcesz zawsze odpowiada tytuł menu.  
   
 - w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
   
@@ -105,9 +105,9 @@ Tutaj należy wstawić wprowadzenie.
  Użyj...  
  Aby uzyskać wszystkie listy rozwijanej, który jest uruchamiany z paska menu i paska poleceń.  
   
- Nie używaj...  
- -   Aby uzyskać wszystkie listy rozwijanej, która występuje w kontekście innego.  
-  
+Nie używaj...  
+- Aby uzyskać wszystkie listy rozwijanej, która występuje w kontekście innego.  
+
 - w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
   
   **Default**  
@@ -159,10 +159,10 @@ Tutaj należy wstawić wprowadzenie.
  Użyj...  
  w miejscach osadzone polecenia pasek ale są one nie można użyć standardowego implementacja paska poleceń programu Visual Studio.  
   
- Nie używaj...  
- -   dla elementów interfejsu użytkownika, które nie są podobne do paska poleceń.  
-  
--   Aby uzyskać inne niż te, dla których token nazwy zostały określone składniki paska poleceń.  
+Nie używaj...  
+- dla elementów interfejsu użytkownika, które nie są podobne do paska poleceń.  
+
+- Aby uzyskać inne niż te, dla których token nazwy zostały określone składniki paska poleceń.  
   
 ##### <a name="command-bar-group"></a>Grupy pasek poleceń  
  Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i może zawierać dowolną liczbę przyciski, Podziel przyciski, menu rozwijane, pola kombi lub menu. Kolory dla tych formantów jest regulowane przez oddzielne nazwy tokenu i są omówione oddzielnie w innym miejscu, w tym przewodniku. Linii separatora jest używane do dzielenia grupy pasek poleceń do powiązanych podgrupy.  
@@ -172,9 +172,9 @@ Tutaj należy wstawić wprowadzenie.
  Użyj...  
  w miejscach osadzone polecenia pasek ale są one nie można użyć standardowego implementacja paska poleceń programu Visual Studio.  
   
- Nie używaj...  
- -   dla elementów interfejsu użytkownika, które nie są podobne do paska poleceń.  
-  
+Nie używaj...  
+- dla elementów interfejsu użytkownika, które nie są podobne do paska poleceń.  
+
 - Aby uzyskać inne niż te, dla których token nazwy zostały określone składniki paska poleceń.  
   
   **Domyślne** (nie innych Państw)  
@@ -194,9 +194,9 @@ Tutaj należy wstawić wprowadzenie.
  Użyj...  
  dla przycisków, które zostaną umieszczone na pasku poleceń.  
   
- Nie używaj...  
- -   dla formantów, które mają własne nazwy tokenu.  
-  
+Nie używaj...  
+- dla formantów, które mają własne nazwy tokenu.  
+
 - w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
   
   **Default**  
@@ -204,8 +204,8 @@ Tutaj należy wstawić wprowadzenie.
 |Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Polecenie domyślną ikonę](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")<br /><br /> **Default**|Tło|N/d (dziedziczy tło paska poleceń)|  
-|![Polecenie domyślną ikonę](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")<br /><br /> **Domyślne**|Pierwszego planu (tekst)|`Environment.CommandBarTextActive`|  
-|![Polecenie domyślną ikonę](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")<br /><br /> **Domyślne**|Obramowanie|Brak|  
+|![Polecenie domyślną ikonę](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")<br /><br /> **Default**|Pierwszego planu (tekst)|`Environment.CommandBarTextActive`|  
+|![Polecenie domyślną ikonę](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")<br /><br /> **Default**|Obramowanie|Brak|  
 |![Polecenie ikonę domyślnie wybrana](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 024_CommandIconDefaultSelected")<br /><br /> **Wybrane**|Tło|`Environment.CommandBarSelected`|  
 |![Polecenie ikonę domyślnie wybrana](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 024_CommandIconDefaultSelected")<br /><br /> **Wybrane**|Pierwszego planu (tekst)|`Environment.CommandBarTextSelected`|  
 |![Polecenie ikonę domyślnie wybrana](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 024_CommandIconDefaultSelected")<br /><br /> **Wybrane**|Obramowanie|`Environment.CommandBarSelectedBorder`|  
@@ -237,21 +237,21 @@ Tutaj należy wstawić wprowadzenie.
 |![Ikona polecenia wyłączone](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 028_CommandIconDisabled")<br /><br /> **Ikona polecenia wyłączenia**|Pierwszego planu (tekst)|`Environment.CommandBarTextInactive`|  
 |![Ikona polecenia wyłączone](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 028_CommandIconDisabled")<br /><br /> **Ikona polecenia wyłączenia**|Obramowanie|Brak|  
   
-#####  <a name="BKMK_CommandComboBox"></a> Pole kombi  
+##### <a name="BKMK_CommandComboBox"></a> Pole kombi  
   
 > [!IMPORTANT]
 >  Pola kombi są podobne do list rozwijanych, ale zawierają region tekst do edycji. Jeśli z listy rozwijanej nie obejmuje regionu tekst do edycji, należy użyć tokenów kolor, znajdującym się [listy rozwijanej](../misc/shared-colors.md#BKMK_CommandDropDown).  
   
  ![Pole kombi poprawek](../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 029_ComboBoxRedline")  
   
- Użyj...  
- -   Podczas tworzenia pola kombi niestandardowych.  
-  
+Użyj...  
+- Podczas tworzenia pola kombi niestandardowych.  
+
 - Podczas tworzenia formantu paska poleceń, która jest podobna do pola kombi.  
-  
-  Nie używaj...  
-  -   dla wszystkich elementów, nie należy zawsze dopasować polecenia paska.  
-  
+
+Nie używaj...  
+- dla wszystkich elementów, nie należy zawsze dopasować polecenia paska.  
+
 - Jeśli masz dostęp do pola kombi ze stylem.  
   
   **Default**  
@@ -315,7 +315,7 @@ Tutaj należy wstawić wprowadzenie.
 |![Pole kombi&#47;porzucić&#45;naciśnięty przycisk wyłączone](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303 040_ComboBoxDropdownButtonDisabled")<br /><br /> **Przycisk listy rozwijanej**|Tło|Brak|  
 |![Pole kombi&#47;porzucić&#45;naciśnięty przycisk wyłączone](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303 040_ComboBoxDropdownButtonDisabled")<br /><br /> **Przycisk listy rozwijanej**|Pierwszego planu (symbol)|`Environment.ComboBoxDisabledGlyph`|  
   
-#####  <a name="BKMK_CommandDropDown"></a> Lista rozwijana  
+##### <a name="BKMK_CommandDropDown"></a> Lista rozwijana  
   
 > [!IMPORTANT]
 >  Listy rozwijane są podobne do pola kombi, ale brak regionów tekst do edycji. Jeśli z listy rozwijanej zawiera tekst do edycji regionu, należy użyć tokenów kolor, znajdującym się [pola kombi](../misc/shared-colors.md#BKMK_CommandComboBox).  
@@ -325,9 +325,9 @@ Tutaj należy wstawić wprowadzenie.
  Użyj...  
  Podczas tworzenia kontrolki niestandardowej listy rozwijanej.  
   
- Nie używaj...  
- -   dla wszystkich elementów, który nie jest podobna do listy rozwijanej.  
-  
+Nie używaj...  
+- dla wszystkich elementów, który nie jest podobna do listy rozwijanej.  
+
 - dla pola kombi lub przyciski dzielone.  
   
   **Default**  
@@ -378,7 +378,7 @@ Tutaj należy wstawić wprowadzenie.
 |![Upuść&#45;w dół do pola wyboru wyłączone](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")|Pierwszego planu (tekst)|`Environment.DropDownDisabledText`|  
 |![Upuść&#45;w dół do pola wyboru wyłączone](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")|Obramowanie|`Environment.DropDownDisabledBorder`|  
 |![Upuść&#45;w dół do pola wyboru wyłączone](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")|Separator|Nie separatora|  
-|![Upuść&#45;naciśnięty przycisk wyłączone](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303 052_DropdownButtonDisabled")|Tło|Nie dot.|  
+|![Upuść&#45;naciśnięty przycisk wyłączone](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303 052_DropdownButtonDisabled")|Tło|Brak|  
 |![Upuść&#45;naciśnięty przycisk wyłączone](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303 052_DropdownButtonDisabled")|Pierwszego planu (symbol)|`Environment.DropDownDisabledGlyph`|  
   
 ##### <a name="split-button"></a>Przycisk podziału  
@@ -389,9 +389,9 @@ Tutaj należy wstawić wprowadzenie.
  Użyj...  
  Kiedy tworzysz przycisku podziału niestandardowych.  
   
- Nie używaj...  
- -   dla innych rodzajów przycisków.  
-  
+Nie używaj...  
+- dla innych rodzajów przycisków.  
+
 - w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
   
   **Default**  
@@ -401,7 +401,7 @@ Tutaj należy wstawić wprowadzenie.
 |![Przycisk podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Przycisk podziału (ustawienie domyślne)**|Tło|Brak|  
 |![Przycisk podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Przycisk podziału (ustawienie domyślne)**|Pierwszego planu (tekst)|`Environment.CommandBarTextActive`|  
 |![Przycisk podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Przycisk podziału (ustawienie domyślne)**|Pierwszego planu (symbol)|`Environment.CommandBarSplitButtonGlyph`|  
-|![Przycisk podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Przycisk podziału (ustawienie domyślne)**|Obramowanie|Nie dot.|  
+|![Przycisk podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Przycisk podziału (ustawienie domyślne)**|Obramowanie|Brak|  
 |![Przycisk podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Przycisk podziału (ustawienie domyślne)**|Separator|Brak|  
   
  **Po wskazaniu wskaźnikiem**  
@@ -428,10 +428,10 @@ Tutaj należy wstawić wprowadzenie.
   
 |Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
-|![Przycisk podziału wyłączone](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **Przycisk podziału (wyłączony)**|Tło|Nie dot.|  
+|![Przycisk podziału wyłączone](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **Przycisk podziału (wyłączony)**|Tło|Brak|  
 |![Przycisk podziału wyłączone](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **Przycisk podziału (wyłączony)**|Pierwszego planu (tekst)|`Environment.ComboBoxItemTextInactive`|  
 |![Przycisk podziału wyłączone](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **Przycisk podziału (wyłączony)**|Pierwszego planu (symbol)|`Environment.CommandBarTextInactive`|  
-|![Przycisk podziału wyłączone](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **Przycisk podziału (wyłączony)**|Obramowanie|Nie dot.|  
+|![Przycisk podziału wyłączone](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **Przycisk podziału (wyłączony)**|Obramowanie|Brak|  
 |![Przycisk podziału wyłączone](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **Przycisk podziału (wyłączony)**|Separator|Brak|  
   
 ##### <a name="more-options-and-overflow-buttons"></a>Przyciski "Overflow ma wartość" i więcej opcji  
@@ -555,7 +555,7 @@ Tutaj należy wstawić wprowadzenie.
   Podczas tworzenia karty niestandardowego dokumentu.  
   
   Nie używaj...  
-  -   dla karty tymczasowe (wersja zapoznawcza).  
+  - dla karty tymczasowe (wersja zapoznawcza).  
   
 - dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycznie, jeśli powłoka ma aktualizacji motywu.  
   
@@ -579,7 +579,7 @@ Tutaj należy wstawić wprowadzenie.
 |![Po przeniesieniu fokusu kartę wybraną](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303 075_SelectedTabUnfocused")<br /><br /> **Karta wybrany dokument, po przeniesieniu fokusu**|Obramowanie dokumentu|`Environment.FileTabInactiveDocumentBorderBackground`|  
   
 ##### <a name="background-tab"></a>Karta tła  
- **Domyślne**  
+ **Default**  
   
 |Składnik|Element|Nazwa tokenu: Color.category|  
 |---------------|-------------|--------------------------------|  
@@ -603,9 +603,9 @@ Tutaj należy wstawić wprowadzenie.
  Użyj...  
  dowolne miejsce tworzenia tymczasowych (wersja zapoznawcza) i ma pewien element, aby dopasować bieżący kolor karcie podglądu.  
   
- Nie używaj...  
- -   dla każdego rodzaju dokumentu lub kartę, która nie jest tymczasowe (wersja zapoznawcza).  
-  
+Nie używaj...  
+- dla każdego rodzaju dokumentu lub kartę, która nie jest tymczasowe (wersja zapoznawcza).  
+
 - dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycznie, jeśli powłoka ma aktualizacji motywu.  
   
   **Karta wybranego (wersja zapoznawcza): Fokus**  
@@ -647,12 +647,12 @@ Tutaj należy wstawić wprowadzenie.
   
  ![Przepełnienie poprawek](../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303 083_OverflowRedline")  
   
- Użyj...  
- Podczas tworzenia niestandardowego dokumentu przycisku przepełnienia.  
-  
- Nie używaj...  
- -   dla interfejsu użytkownika, który nie jest podobne do przycisku przepełnienia.  
-  
+Użyj...  
+Podczas tworzenia niestandardowego dokumentu przycisku przepełnienia.  
+
+Nie używaj...  
+- dla interfejsu użytkownika, który nie jest podobne do przycisku przepełnienia.  
+
 - dla przycisków przepełnienie paska poleceń.  
   
   **Default**  
@@ -748,7 +748,7 @@ Tutaj należy wstawić wprowadzenie.
 |---------------|-------------|--------------------------------|  
 |![Po przeniesieniu fokusu paska tytułu](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")<br /><br /> **Pasek tytułu po przeniesieniu fokusu**|Tło|`Environment.TitleBarInactiveGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
 |![Po przeniesieniu fokusu paska tytułu](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")<br /><br /> **Pasek tytułu po przeniesieniu fokusu**|Pierwszego planu (tekst)|`Environment.TitleBarInactiveText`|  
-|![Po przeniesieniu fokusu paska tytułu](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")<br /><br /> **Pasek tytułu po przeniesieniu fokusu**|Obramowanie|Nie dot.|  
+|![Po przeniesieniu fokusu paska tytułu](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")<br /><br /> **Pasek tytułu po przeniesieniu fokusu**|Obramowanie|Brak|  
 |![Po przeniesieniu fokusu paska tytułu](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")<br /><br /> **Pasek tytułu po przeniesieniu fokusu**|Przeciągnij uchwyt|`Environment.TitleBarDragHandle`|  
   
 ##### <a name="title-bar-buttons"></a>Przyciski paska tytułu  
@@ -757,19 +757,19 @@ Tutaj należy wstawić wprowadzenie.
  Użyj...  
  przycisków, które są wyświetlane w interfejs użytkownika, który używa tokenów kolor z paski tytułu okna narzędzia.  
   
- Nie używaj...  
- -   w przypadku przycisków, które pojawiają się w innych lokalizacjach.  
-  
+Nie używaj...  
+- w przypadku przycisków, które pojawiają się w innych lokalizacjach.  
+
 - w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
   
   **Default**  
   
 |Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
-|![Tytuł paska przycisk skupia się](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")<br /><br /> **Fokus**|Tło|Nie dot.|  
+|![Tytuł paska przycisk skupia się](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")<br /><br /> **Fokus**|Tło|Brak|  
 |![Tytuł paska przycisk skupia się](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")<br /><br /> **Fokus**|Pierwszego planu (symbol)|`Environment.ToolWindowButtonActiveGlyph`|  
 |![Tytuł paska przycisk skupia się](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")<br /><br /> **Fokus**|Obramowanie|Brak|  
-|![Tytuł paska przycisku po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")<br /><br /> **Po przeniesieniu fokusu**|Tło|Nie dot.|  
+|![Tytuł paska przycisku po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")<br /><br /> **Po przeniesieniu fokusu**|Tło|Brak|  
 |![Tytuł paska przycisku po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")<br /><br /> **Po przeniesieniu fokusu**|Pierwszego planu (symbol)|`Environment.ToolWindowButtonInactiveGlyph`|  
 |![Tytuł paska przycisku po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")<br /><br /> **Po przeniesieniu fokusu**|Obramowanie|Brak|  
   
@@ -879,7 +879,7 @@ Tutaj należy wstawić wprowadzenie.
   Podczas projektowania pole wyszukiwania niestandardowego.  
   
   Nie używaj...  
-  -   dla wszystkich elementów, który nie jest pole wyszukiwania.  
+  - dla wszystkich elementów, który nie jest pole wyszukiwania.  
   
 - dla każdego elementu, który nie ma zawsze do dopasowania wyszukiwania polu interfejsu użytkownika.  
   
@@ -912,7 +912,7 @@ Tutaj należy wstawić wprowadzenie.
 |![Pole wejściowe wyszukiwania po przeniesieniu fokusu i nieaktywnych](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br /><br /> **Nieaktywne pola wejściowego**|Pierwszego planu (tekst)|`SearchControl.Unfocused`|  
 |![Pole wejściowe wyszukiwania po przeniesieniu fokusu i nieaktywnych](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br /><br /> **Nieaktywne pola wejściowego**|Obramowanie|`SearchControl.UnfocusedBorder`|  
 |![Pole wejściowe wyszukiwania po przeniesieniu fokusu i nieaktywnych](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br /><br /> **Nieaktywne pola wejściowego**|Separator|`SearchControl.DropDownSeparator`|  
-|![Przycisk wyszukiwania akcji po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")<br /><br /> **Akcja przycisku**|Tło|Nie dot.|  
+|![Przycisk wyszukiwania akcji po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")<br /><br /> **Akcja przycisku**|Tło|Brak|  
 |![Przycisk wyszukiwania akcji po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")<br /><br /> **Akcja przycisku**|Pierwszego planu (symbol wyszukiwania)|`SearchControl.SearchGlyph`|  
 |![Przycisk wyszukiwania akcji po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")<br /><br /> **Akcja przycisku**|Pierwszego planu (Zatrzymaj symbol)|`SearchControl.StopGlyph`|  
 |![Przycisk wyszukiwania akcji po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")<br /><br /> **Akcja przycisku**|Pierwszego planu (Wyczyść symbol)|`SearchControl.ClearGlyph`|  
@@ -961,14 +961,14 @@ Tutaj należy wstawić wprowadzenie.
   
  ![Listy wyszukiwania&#45;poprawek w dół](../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303 124_SearchDropdownRedline")  
   
- Użyj...  
- -   Podczas tworzenia listy rozwijanej wyszukiwania niestandardowego.  
-  
+Użyj...  
+- Podczas tworzenia listy rozwijanej wyszukiwania niestandardowego.  
+
 - Prawidłowe nazwy tokenu dla składników poprawnej listy.  
-  
-  Nie używaj...  
-  -   Aby uzyskać listy rozwijane, które pojawiają się w innych kontekstach.  
-  
+
+Nie używaj...  
+- Aby uzyskać listy rozwijane, które pojawiają się w innych kontekstach.  
+
 - w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
   
   **Domyślne (nie innych Państw)**  
@@ -1090,7 +1090,7 @@ Tutaj należy wstawić wprowadzenie.
  Nie używaj...  
  dla wszystkich elementów, nie chcesz zawsze odpowiadać paska przewijania interfejsu użytkownika.  
   
- **Domyślne**  
+ **Default**  
   
 |Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
@@ -1117,7 +1117,7 @@ Tutaj należy wstawić wprowadzenie.
 |![Paska kliknięciu strzałki przewijania](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303 146_ScrollbarArrowPressed")<br /><br /> **Strzałki przewijania**|Tło|`Environment.ScrollBarArrowPressedBackground`<br /><br /> Ustaw ten sam kolor jak pasek przewijania.|  
 |![Paska kliknięciu strzałki przewijania](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303 146_ScrollbarArrowPressed")<br /><br /> **Strzałki przewijania**|Pierwszego planu (symbol)|`Environment.ScrollBarArrowGlyphPressed`|  
   
-####  <a name="BKMK_TreeView"></a> Widok drzewa  
+#### <a name="BKMK_TreeView"></a> Widok drzewa  
  Kilkoma oknami narzędzi, w tym Eksploratora rozwiązań, Eksploratora serwera i widoku klasy implementuje hierarchiczne schematu organizacyjnego którego kolory są kontrolowane przez nazw kolorów w kategorii TreeView. Wszystkie elementy w widoku drzewa mają kolor tła i tekstu. Elementy, które zostały zagnieżdżone elementy podrzędne mają także symbole, które wskazują, czy element jest rozwijane czy zwijane.  
   
  ![Widok drzewa poprawek](../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303 147_TreeViewRedline")  
@@ -1125,9 +1125,9 @@ Tutaj należy wstawić wprowadzenie.
  Użyj...  
  wszędzie, musisz zaimplementować hierarchiczny widok organizacji.  
   
- Nie używaj...  
- -   dla wszystkich elementów, który nie jest podobny do widoku drzewa.  
-  
+Nie używaj...  
+- dla wszystkich elementów, który nie jest podobny do widoku drzewa.  
+
 - w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
   
   **Default**  
@@ -1284,12 +1284,12 @@ Tutaj należy wstawić wprowadzenie.
 #### <a name="drop-boxcombo-box-controls"></a>Upuść formantów pola kombi/pola  
  ![Upuść&#45;dół&#47;poprawek pola kombi](../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303 167_DropDownComboBoxRedline")  
   
- Użyj...  
- listy rozwijane i pole kombi pola, które są również częścią dokumentu.  
-  
- Nie używaj...  
- -   dla dowolnego interfejsu użytkownika, który nie jest listy rozwijanej lub pola kombi.  
-  
+Użyj...  
+listy rozwijane i pole kombi pola, które są również częścią dokumentu.  
+
+Nie używaj...  
+- dla dowolnego interfejsu użytkownika, który nie jest listy rozwijanej lub pola kombi.  
+
 - Aby uzyskać [listy rozwijanej](../misc/shared-colors.md#BKMK_CommandDropDown) lub [pola kombi](../misc/shared-colors.md#BKMK_CommandComboBox) na pasku poleceń.  
   
   **Default**  
@@ -1420,20 +1420,20 @@ Tutaj należy wstawić wprowadzenie.
   
  ![Projektant manifestu poprawek](../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303 175_ManifestDesignerRedline")  
   
- Użyj...  
- -   dla projektantów, które są podobne do projektanta manifestu.  
-  
+Użyj...  
+- dla projektantów, które są podobne do projektanta manifestu.  
+
 - zamiast przy użyciu karty wspólne kontroluje również w górnej części edytora w obrębie dokumentu.  
-  
-  Nie używaj...  
-  -   Jeśli masz więcej niż sześć kart.  
-  
+
+Nie używaj...  
+- Jeśli masz więcej niż sześć kart.  
+
 - dla wszelkich elementów interfejsu użytkownika, który nie ma struktury, takich jak projektant manifestów.  
   
 |Stan|Składnik|Element|Nazwa tokenu: Category.Color|  
 |-----------|---------------|-------------|--------------------------------|  
 |Domyślne (wybrane)|Tab|Tło|`ManifestDesigner.TabActive`|  
-|Domyślne (wybrane)|klawisz Tab,|Obramowanie|Brak|  
+|Domyślne (wybrane)|Tab|Obramowanie|Brak|  
 |Domyślne (wybrane)|Okienko opisu|Tło|`ManifestDesigner.DescriptionPane`|  
 |Domyślne (wybrane)|Strona zawartości|Tło|`ManifestDesigner.Background`|  
 |Domyślne (wybrane)|Strona zawartości|Tekst pomocy w oknie dialogowym|`ManifestDesigner.WatermarkText`<br /><br /> Ta nazwa tokenu jest niezgodna z jego funkcji.|  
@@ -1456,7 +1456,7 @@ Tutaj należy wstawić wprowadzenie.
 |Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303 177_Tag")<br /><br /> **Default**|Tło|`Tag.Background`|  
-|![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303 177_Tag")<br /><br /> **Domyślne**|Pierwszego planu (tekst)|`Tag.Background`|  
+|![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303 177_Tag")<br /><br /> **Default**|Pierwszego planu (tekst)|`Tag.Background`|  
 |![Tag po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-178-taghover.png "0303 178_TagHover")<br /><br /> **Po wskazaniu wskaźnikiem**|Tło|`Tag.HoverBackground`|  
 |![Tag po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-178-taghover.png "0303 178_TagHover")<br /><br /> **Po wskazaniu wskaźnikiem**|Pierwszego planu (tekst)|`Tag.HoverBackgroundText`|  
 |![Tag naciśnięty](../extensibility/ux-guidelines/media/0303-179-tagpressed.png "0303 179_TagPressed")<br /><br /> **Naciśnięto**|Tło|`Tag.PressedBackground`|  
@@ -1469,7 +1469,7 @@ Tutaj należy wstawić wprowadzenie.
   
 |Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
-|![Tag &#40;symbol&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 181_TagGlyph")<br /><br /> **Domyślne (ustawienie domyślne tagu)**|Tło|Nie dot.|  
+|![Tag &#40;symbol&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 181_TagGlyph")<br /><br /> **Domyślne (ustawienie domyślne tagu)**|Tło|Brak|  
 |![Tag &#40;symbol&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 181_TagGlyph")<br /><br /> **Domyślne (ustawienie domyślne tagu)**|Pierwszego planu (symbol)|`Tag.TagHoverGlyph`|  
   
  **Po wskazaniu wskaźnikiem**  
@@ -1492,7 +1492,7 @@ Tutaj należy wstawić wprowadzenie.
   
 |Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
-|![Zaznaczony tag](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303 184_TagSelected")<br /><br /> **Domyślne (wybrane tag)**|Tło|Nie dot.|  
+|![Zaznaczony tag](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303 184_TagSelected")<br /><br /> **Domyślne (wybrane tag)**|Tło|Brak|  
 |![Zaznaczony tag](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303 184_TagSelected")<br /><br /> **Domyślne (wybrane tag)**|Pierwszego planu (symbol)|`Tag.TagSelectedGlyph`|  
   
  **Wybrany symbol znacznika po wskazaniu wskaźnikiem**  
@@ -1521,10 +1521,10 @@ Tutaj należy wstawić wprowadzenie.
  Użyj...  
  dla miejsc, które chcesz dopasować tło środowiska Visual Studio.  
   
- Nie używaj...  
- -   jako wypełnienia dla miejsc, które nie są tła powierzchni.  
-  
--   jako tła, na którym chcesz umieścić elementy pierwszego planu.  
+Nie używaj...  
+- jako wypełnienia dla miejsc, które nie są tła powierzchni.  
+
+- jako tła, na którym chcesz umieścić elementy pierwszego planu.  
   
 |Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
@@ -1542,9 +1542,9 @@ Tutaj należy wstawić wprowadzenie.
   
  ![Polecenie półki poprawek](../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303 188_CommandShelfRedline")  
   
- Użyj...  
- -   dla obszarów, w którym umieszcza się menu i paski narzędzi.  
-  
+Użyj...  
+- dla obszarów, w którym umieszcza się menu i paski narzędzi.  
+
 - w tle poprawne / pierwszego planu token kombinacja nazwy.  
   
   Nie używaj...  

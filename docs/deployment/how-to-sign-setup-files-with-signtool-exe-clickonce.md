@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edc6630bfe8dd5ee1fc48fe0d5abe189a63ab330
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2f31ebeb18790ddf76c42585868aea8a04547bfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619969"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041070"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Instrukcje: Znak plików konfiguracji przy użyciu SignTool.exe (ClickOnce)
 Możesz użyć *SignTool.exe* się program instalacyjny (*setup.exe*). Ten proces pozwala upewnić się, że zmodyfikowany pliki nie są zainstalowane na komputerach użytkowników końcowych.
@@ -34,23 +34,23 @@ Możesz użyć *SignTool.exe* się program instalacyjny (*setup.exe*). Ten proce
 
 ### <a name="to-generate-an-unsigned-setup-program-and-sign-later"></a>Aby generować niepodpisane program instalacyjny i podpisać później
 
-1.  Na komputerze deweloperskim, należy zainstalować certyfikat, który ma znak manifesty za pomocą.
+1. Na komputerze deweloperskim, należy zainstalować certyfikat, który ma znak manifesty za pomocą.
 
-2.  Wybierz projekt w **Eksploratora rozwiązań**.
+2. Wybierz projekt w **Eksploratora rozwiązań**.
 
-3.  Na **projektu** menu, kliknij przycisk *ProjectName* **właściwości**.
+3. Na **projektu** menu, kliknij przycisk *ProjectName* **właściwości**.
 
-4.  W **podpisywanie** strony, wyczyść **Podpisz manifesty ClickOnce**.
+4. W **podpisywanie** strony, wyczyść **Podpisz manifesty ClickOnce**.
 
-5.  W **Publikuj** kliknij **wymagania wstępne**.
+5. W **Publikuj** kliknij **wymagania wstępne**.
 
-6.  Sprawdź, czy wszystkie wymagania wstępne są zaznaczone, a następnie kliknij **OK**.
+6. Sprawdź, czy wszystkie wymagania wstępne są zaznaczone, a następnie kliknij **OK**.
 
-7.  W **Publikuj** strony, sprawdź ustawienia publikowania, a następnie kliknij przycisk **Publikuj teraz**.
+7. W **Publikuj** strony, sprawdź ustawienia publikowania, a następnie kliknij przycisk **Publikuj teraz**.
 
      Rozwiązanie publikuje manifest aplikacji bez znaku, manifest wdrożenia bez znaku, specyficzny dla wersji plików i bez znaku program instalacyjny do publikowania lokalizacji folderu.
 
-8.  W **Publikuj** kliknij **wymagania wstępne**.
+8. W **Publikuj** kliknij **wymagania wstępne**.
 
 9. W **wymagania wstępne** okno dialogowe wyczyść **Utwórz program instalacyjny, aby zainstalować wstępnie wymagane składniki**.
 

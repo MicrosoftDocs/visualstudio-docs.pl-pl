@@ -24,12 +24,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1227dea199ebff465fc2dde3ec30568bb50e9ec6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e971271d17c88780ec543ffc12ed4c6ebcc48f23
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786165"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043683"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Zabezpieczenia, przechowywanie wersji i problemy z manifestami we wdrożeniach ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +67,11 @@ Istnieją różne problemy z [!INCLUDE[ndptecclick](../includes/ndptecclick-md.m
   
  Jeśli edytowano ręcznie swoje manifesty wdrożenia lub aplikacji, możesz mieć przypadkowo uszkodzony je. Uszkodzony manifest uniemożliwi poprawne [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] instalacji. Możesz debugować takie błędy w czasie wykonywania, klikając **szczegóły** na **błąd ClickOnce** okno dialogowe, a także odczytu komunikat o błędzie w dzienniku. Dziennik się lista jedną z następujących komunikatów:  
   
--   Opis błąd składni i numer wiersza oraz znak położenie, w którym wystąpił błąd.  
+- Opis błąd składni i numer wiersza oraz znak położenie, w którym wystąpił błąd.  
   
--   Nazwa elementu lub atrybutu używanego w naruszenie schematu manifestu. XML zostały dodane do Twojego manifesty ręcznie, należy porównać swoje dodatki do schematów manifestu. Aby uzyskać więcej informacji, zobacz [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md) i [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md).  
+- Nazwa elementu lub atrybutu używanego w naruszenie schematu manifestu. XML zostały dodane do Twojego manifesty ręcznie, należy porównać swoje dodatki do schematów manifestu. Aby uzyskać więcej informacji, zobacz [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md) i [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md).  
   
--   Wystąpi konflikt identyfikatorów. Odwołań do zależności w manifesty wdrażania i aplikacja muszą być unikatowe w obu ich `name` i `publicKeyToken` atrybutów. Jeśli oba atrybuty są zgodne między którychkolwiek dwóch elementów w obrębie manifestu, analizowania manifestu nie powiedzie się.  
+- Wystąpi konflikt identyfikatorów. Odwołań do zależności w manifesty wdrażania i aplikacja muszą być unikatowe w obu ich `name` i `publicKeyToken` atrybutów. Jeśli oba atrybuty są zgodne między którychkolwiek dwóch elementów w obrębie manifestu, analizowania manifestu nie powiedzie się.  
   
 ## <a name="precautions-when-manually-changing-manifests-or-applications"></a>Środki ostrożności, zmieniając ręcznie manifesty lub aplikacji  
  Podczas aktualizowania manifestu aplikacji, musisz ją ponownie podpisać manifest aplikacji i manifest wdrożenia. Manifest wdrożenia zawiera odwołanie do manifestu aplikacji, zawierający wartość skrótu tego pliku i jego podpis cyfrowy.  

@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b2d38c46d630f7deccaec8c093c2c4e75456eec0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5a889250e641e004bdb0d89f6965c43c3d6b8e2a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754829"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041401"
 ---
 # <a name="extract-method-refactoring-c"></a>Refaktoryzacja wyodrębniania metody (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +32,19 @@ ms.locfileid: "54754829"
   
  **Wyodrębnij metodę** ma następujące zalety:  
   
--   Zaleca najlepsze rozwiązania, podkreślając metody dyskretnych, wielokrotnego użytku.  
+- Zaleca najlepsze rozwiązania, podkreślając metody dyskretnych, wielokrotnego użytku.  
   
--   Zachęca własnym dokumentowanie kodu za pośrednictwem dobre organizacji.  
+- Zachęca własnym dokumentowanie kodu za pośrednictwem dobre organizacji.  
   
      Gdy opisowe nazwy są używane, wysokiego poziomu metody można Dowiedz się więcej, takich jak seria komentarzy.  
   
--   Zaleca się tworzenie bardziej szczegółowej metody, aby uprościć zastępowanie.  
+- Zaleca się tworzenie bardziej szczegółowej metody, aby uprościć zastępowanie.  
   
--   Zmniejsza zduplikowania kodu.  
+- Zmniejsza zduplikowania kodu.  
   
 ### <a name="to-use-extract-method"></a>Aby użyć Wyodrębnij metodę  
   
-1.  Utwórz aplikację konsoli o nazwie `ExtractMethod`, a następnie zastąp `Program` poniższym przykładowym kodem.  
+1. Utwórz aplikację konsoli o nazwie `ExtractMethod`, a następnie zastąp `Program` poniższym przykładowym kodem.  
   
     ```csharp  
     class A  
@@ -68,13 +68,13 @@ ms.locfileid: "54754829"
     }  
     ```  
   
-2.  Wybierz fragment kodu, które mają zostać wyodrębnione:  
+2. Wybierz fragment kodu, które mają zostać wyodrębnione:  
   
     ```csharp  
     double area = PI * radius * radius;  
     ```  
   
-3.  Na **Refaktoryzuj** menu, kliknij przycisk **Wyodrębnij metodę**.  
+3. Na **Refaktoryzuj** menu, kliknij przycisk **Wyodrębnij metodę**.  
   
      **Wyodrębnij metodę** pojawi się okno dialogowe.  
   
@@ -82,11 +82,11 @@ ms.locfileid: "54754829"
   
      Można również prawym przyciskiem myszy wybrane kodu, wskaż opcję **Refaktoryzuj**, a następnie kliknij przycisk **Wyodrębnij metodę** do wyświetlenia **Wyodrębnij metodę** okno dialogowe.  
   
-4.  Określ nazwę dla nowej metody, takie jak `CircleArea`w **nową nazwę metody** pole.  
+4. Określ nazwę dla nowej metody, takie jak `CircleArea`w **nową nazwę metody** pole.  
   
      Wersję zapoznawczą nowej sygnatury metody będzie wyświetlana **Podgląd sygnatury metody**.  
   
-5.  Kliknij przycisk **OK**.  
+5. Kliknij przycisk **OK**.  
   
 ## <a name="remarks"></a>Uwagi  
  Kiedy używasz **Wyodrębnij metodę** polecenia, dodaje się nową metodę następującego elementu członkowskiego źródła z tej samej klasy.  

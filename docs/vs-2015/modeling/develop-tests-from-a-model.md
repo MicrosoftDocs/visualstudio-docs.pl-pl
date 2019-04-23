@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5aa84c4f7a39a5e5b7a1ee3458c09397bc81f37
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1cd9619eae1f0c74cb7b8096d6c51163157d934c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799283"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042057"
 ---
 # <a name="develop-tests-from-a-model"></a>Opracowywanie testów na podstawie modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,17 +46,17 @@ Wymagania i modele architektury można użyć, aby ułatwić organizowanie test�
   
  Te wytyczne mogą być pomocne:  
   
--   Każdy przypadek użycia powinna mieć kilka testów, dla ścieżki głównej i wyjątkowe wyniki.  
+- Każdy przypadek użycia powinna mieć kilka testów, dla ścieżki głównej i wyjątkowe wyniki.  
   
--   Opisywane przypadek użycia w modelu wymagań jest niezwykle ważne do definiowania jego postcondition, oznacza to, że cel zostanie osiągnięty, niż do szczegółowego opisywania, procedury użytkownik wykona w celu osiągnięcia celu. Na przykład może być postcondition zamówienia posiłek, restauracja jest przygotowywana posiłek dla klienta, a klient zapłacił. Postcondition jest kryterium, które testy należy sprawdzić.  
+- Opisywane przypadek użycia w modelu wymagań jest niezwykle ważne do definiowania jego postcondition, oznacza to, że cel zostanie osiągnięty, niż do szczegółowego opisywania, procedury użytkownik wykona w celu osiągnięcia celu. Na przykład może być postcondition zamówienia posiłek, restauracja jest przygotowywana posiłek dla klienta, a klient zapłacił. Postcondition jest kryterium, które testy należy sprawdzić.  
   
--   Podstawowy oddzielnych testów na oddzielnych klauzul postcondition. Na przykład utworzyć osobne testów do powiadamiania restauracji kolejności i do celów płatności odbiorcy. Ten rozdział ma następujące zalety:  
+- Podstawowy oddzielnych testów na oddzielnych klauzul postcondition. Na przykład utworzyć osobne testów do powiadamiania restauracji kolejności i do celów płatności odbiorcy. Ten rozdział ma następujące zalety:  
   
-    -   Zmiany w różnych aspektów wymagania często występują, niezależnie od siebie. Dzieląc testy na różnych aspektach w ten sposób, możesz ułatwić aktualizowanie testów, gdy zmienią się wymagania.  
+    - Zmiany w różnych aspektów wymagania często występują, niezależnie od siebie. Dzieląc testy na różnych aspektach w ten sposób, możesz ułatwić aktualizowanie testów, gdy zmienią się wymagania.  
   
-    -   Jeśli plan rozwoju implementuje jednym aspekcie przypadek użycia przed inny, możesz włączyć testy oddzielnie, w miarę postępów rozwoju.  
+    - Jeśli plan rozwoju implementuje jednym aspekcie przypadek użycia przed inny, możesz włączyć testy oddzielnie, w miarę postępów rozwoju.  
   
--   Podczas projektowania testy, należy oddzielić wybór danych testowych, od kodu lub skryptu, który określa, czy osiągnięte zostały postcondition. Na przykład może być testu z prostą funkcją arytmetyczne: Dane wejściowe 4; Sprawdź, czy dane wyjściowe to 2. Zamiast tego należy projektować skryptu jako: Wybierz dane wejściowe mnożenia danych wyjściowych przez siebie i sprawdź, czy wynik jest oryginalne dane wejściowe. Ten styl umożliwia różne dane wejściowe testu bez wprowadzania zmian w głównej części testu.  
+- Podczas projektowania testy, należy oddzielić wybór danych testowych, od kodu lub skryptu, który określa, czy osiągnięte zostały postcondition. Na przykład może być testu z prostą funkcją arytmetyczne: Dane wejściowe 4; Sprawdź, czy dane wyjściowe to 2. Zamiast tego należy projektować skryptu jako: Wybierz dane wejściowe mnożenia danych wyjściowych przez siebie i sprawdź, czy wynik jest oryginalne dane wejściowe. Ten styl umożliwia różne dane wejściowe testu bez wprowadzania zmian w głównej części testu.  
   
 #### <a name="linking-tests-to-use-cases"></a>Łączenie testy z przypadkami użycia  
  Jeśli używasz [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] do projektowania i uruchomić testy, możesz organizować testy w ramach wymaganie, przypadek użycia lub elementów roboczych historii użytkownika. Można połączyć te elementy robocze z przypadkami użycia w modelu. Dzięki temu można szybko śledzenia zmiany do testów i przypadek użycia pomaga śledzić postęp każdego z nich.  
@@ -147,32 +147,32 @@ Assert (countAfter == countBefore = 1);
   
  Z testowania punktu widzenia modelu wymagań może być traktowany jako skrót do testów. W związku z tym jest ważne, aby zachować relacji między testy i modelu w całym projekcie.  
   
-##  <a name="Attaching"></a> Dołączanie przypadki testowe do elementów modelu  
+## <a name="Attaching"></a> Dołączanie przypadki testowe do elementów modelu  
  Jeśli projekt używa [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], testy można połączyć elementy w modelu. Umożliwia szybkie znajdowanie testów wpływ zmiany w wymaganiach i pomaga śledzić, do którego zostały zrealizowane wymagania w zakresie.  
   
  Testy można połączyć wszelkiego rodzaju elementu. Oto kilka przykładów:  
   
--   Łączenie przypadków użycia, aby testy, które jego wykonywania.  
+- Łączenie przypadków użycia, aby testy, które jego wykonywania.  
   
--   Zapis klauzule postcondition przypadków użycia lub celem na komentarze, które są połączone z przypadkiem użycia, a następnie połącz testy każdy komentarz.  
+- Zapis klauzule postcondition przypadków użycia lub celem na komentarze, które są połączone z przypadkiem użycia, a następnie połącz testy każdy komentarz.  
   
--   Napisz zasad niezmiennej komentarze na diagramach klas lub diagramów aktywności, a następnie połączyć testy.  
+- Napisz zasad niezmiennej komentarze na diagramach klas lub diagramów aktywności, a następnie połączyć testy.  
   
--   Połącz testy w diagramie aktywności lub poszczególne działania.  
+- Połącz testy w diagramie aktywności lub poszczególne działania.  
   
--   Zestaw testów połączyć składnik lub podsystem, który sprawdza.  
+- Zestaw testów połączyć składnik lub podsystem, który sprawdza.  
   
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Aby połączyć testy elementu modelu lub relacji  
   
-1.  W [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], Utwórz wymagania i podstawą zestaw testów. Aby dowiedzieć się, jak to zrobić, zobacz [testowanie aplikacji](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. W [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], Utwórz wymagania i podstawą zestaw testów. Aby dowiedzieć się, jak to zrobić, zobacz [testowanie aplikacji](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
      Wymagania, którą tworzysz jest element roboczy w [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Może być elementem pracy scenariusza użycia, wymagania lub przypadek użycia, w zależności od szablonu procesu, który projekt korzysta z [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Aby uzyskać więcej informacji, zobacz [śledzenie pracy za pomocą programu Visual Studio Team Services lub serwera Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
-2.  Elementem roboczym należy połączyć jeden lub więcej elementów w modelu.  
+2. Elementem roboczym należy połączyć jeden lub więcej elementów w modelu.  
   
      Na diagramie modelowania, kliknij prawym przyciskiem myszy element, komentarz lub relacji, a następnie kliknij przycisk **łącze do elementu roboczego**. Aby uzyskać więcej informacji, zobacz [łączenie elementów modeli i elementów roboczych](../modeling/link-model-elements-and-work-items.md).  
   
-3.  Dodaj do zestawu testów, przypadki testowe, które Sprawdź wymagań wyrażony w elemencie modelu.  
+3. Dodaj do zestawu testów, przypadki testowe, które Sprawdź wymagań wyrażony w elemencie modelu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)   

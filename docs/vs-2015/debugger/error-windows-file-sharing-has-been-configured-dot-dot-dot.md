@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7664c94f626b639f4d0330b938777d545128847d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 96d65ae615522bcee43ddf5e8181e96eecc0d958
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800037"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040860"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>Błąd: Udostępnianie plików systemu Windows zostało skonfigurowane...
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,16 +36,16 @@ Udostępnianie plików Windows został skonfigurowany, tak aby połączy się z 
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-1.  Zaloguj się na komputerze lokalnym komputera, który debugujesz, przy użyciu nazwy konta.  
+1. Zaloguj się na komputerze lokalnym komputera, który debugujesz, przy użyciu nazwy konta.  
   
      —lub—  
   
      . Rozłącz z komputera zdalnego, a następnie ponownie skonfiguruj Udostępnianie plików, połączyć się z innego komputera przy użyciu nazwy konta:  
   
-    1.  Na **Start** menu wskaż **Akcesoria**, a następnie kliknij przycisk **polecenia**.  
+    1. Na **Start** menu wskaż **Akcesoria**, a następnie kliknij przycisk **polecenia**.  
   
-    2.  W wierszu polecenia Windows wpisz:  
+    2. W wierszu polecenia Windows wpisz:  
   
          `net use /delete computer_name`  
   
-    3.  Zmień ustawienia udostępniania plików przy użyciu dowolnej z metod opisanych w Pomocy Windows.
+    3. Zmień ustawienia udostępniania plików przy użyciu dowolnej z metod opisanych w Pomocy Windows.

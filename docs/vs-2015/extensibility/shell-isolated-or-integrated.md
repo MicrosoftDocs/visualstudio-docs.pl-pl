@@ -14,12 +14,12 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9d8b08dfe812245a21160fa2f16b4c94728785ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 17da1ff036227b50e507fd564618c4f53cf430c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792572"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116384"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (Isolated lub Integrated)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Można utworzyć własną aplikację na podstawie programu Visual Studio w trybi
 >  W przypadku zbierania danych użycia osobnych od klientów za pośrednictwem aplikacji, musisz podać odpowiednie powiadomienie użytkowników aplikacji można zebrać.  Podczas dystrybucji oprogramowania powłoki izolowanej i zintegrowanej jako część aplikacji, zgodnie z licencji programu Visual Studio Software Development Kit, musi zawierać jedną z następujących czynności:  
 > 
 > - Umowa licencyjna użytkownika w ramach licencji na aplikację  
->   -   własne umowy licencyjnej, wymagającego klienci musieli się zgodzić na warunki, które chronią programu Visual Studio integrated lub isolated shell co najmniej taką ilość jako użytkownik końcowy postanowień licencyjnych firmy Microsoft oprogramowanie powłoki  
+>   - własne umowy licencyjnej, wymagającego klienci musieli się zgodzić na warunki, które chronią programu Visual Studio integrated lub isolated shell co najmniej taką ilość jako użytkownik końcowy postanowień licencyjnych firmy Microsoft oprogramowanie powłoki  
   
 ## <a name="additional-resources"></a>Dodatkowe zasoby  
  Aby uzyskać więcej informacji na temat pakietów redystrybucyjnych zobacz [pobieranie Visual Studio Extensibility](http://go.microsoft.com/fwlink/?LinkID=119298) witryny sieci Web.  

@@ -13,12 +13,12 @@ ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae61b261e9a613a2eee9ca8baca24773253a6df8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ca910038e35ee65e6d97999f08013f398eaec9e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936034"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117034"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Instrukcje: Zarządzanie zbiorami liczników za pomocą edytora testu obciążenia
 
@@ -35,9 +35,9 @@ Zarządzanie zbiorami liczników obejmuje, wybierając zestaw komputerów, któr
 
 ## <a name="to-manage-counter-sets"></a>Aby zarządzanie zbiorami liczników
 
-1.  Otwórz test obciążenia.
+1. Otwórz test obciążenia.
 
-2.  Wybierz **Zarządzaj zbiorem liczników** przycisku.
+2. Wybierz **Zarządzaj zbiorem liczników** przycisku.
 
      — lub —
 
@@ -45,20 +45,20 @@ Zarządzanie zbiorami liczników obejmuje, wybierając zestaw komputerów, któr
 
      **Zarządzaj zbiorem liczników** zostanie wyświetlone okno dialogowe.
 
-3.  (Opcjonalnie) W **wybrane komputery i zbiory liczników zostaną dodane następujące parametry uruchomieniowe** pola listy, wybierz inne ustawienie uruchamiania.
+3. (Opcjonalnie) W **wybrane komputery i zbiory liczników zostaną dodane następujące parametry uruchomieniowe** pola listy, wybierz inne ustawienie uruchamiania.
 
     > [!NOTE]
     > Dotyczy to tylko, jeśli masz więcej niż jedno ustawienie uruchamiania w teście obciążenia.
 
-4.  (Opcjonalnie) Wybierz **Dodaj komputer** należy dodać nowy komputer do monitorowania. Użytkownik jest monitowany o podanie nazwy. Wpisz nazwę komputera, a zobaczysz węzłów poniżej nowy wpis. Na przykład **ASP.NET**, **IIS**, **SQL**i innym osobom. Zaznacz pola wyboru przed węzły, które mają zostać zaznaczone. Nowe liczniki są wyświetlane w **podgląd zaznaczenia** okienka.
+4. (Opcjonalnie) Wybierz **Dodaj komputer** należy dodać nowy komputer do monitorowania. Użytkownik jest monitowany o podanie nazwy. Wpisz nazwę komputera, a zobaczysz węzłów poniżej nowy wpis. Na przykład **ASP.NET**, **IIS**, **SQL**i innym osobom. Zaznacz pola wyboru przed węzły, które mają zostać zaznaczone. Nowe liczniki są wyświetlane w **podgląd zaznaczenia** okienka.
 
-5.  (Opcjonalnie) W **tagów** pole tekstowe, wpisz znacznik do skojarzenia z komputera. Na przykład "TestMachine12 w lab3".
+5. (Opcjonalnie) W **tagów** pole tekstowe, wpisz znacznik do skojarzenia z komputera. Na przykład "TestMachine12 w lab3".
 
      Tagi komputera pozwalają zidentyfikować komputer o nazwie łatwy do rozpoznania.
 
      Znaczniki są wyświetlane w **mapowaniach zbioru liczników** węzeł w drzewie w edytorze testu obciążenia. Co ważniejsze, znaczniki są wyświetlane w raportach programu Excel, które pomagają identyfikować zainteresowane strony jaką rolę na komputerze nie ma w teście obciążeniowym. Na przykład "Web serwer1 w lab2" lub "SQL Server2 w pakiecie office Phoenix". Aby uzyskać więcej informacji, zobacz [testy obciążenia raport wyników dla potrzeb porównań testów lub analizy trendów](../test/compare-load-test-results.md).
 
-6.  Wybierz **OK**.
+6. Wybierz **OK**.
 
 ## <a name="see-also"></a>Zobacz także
 

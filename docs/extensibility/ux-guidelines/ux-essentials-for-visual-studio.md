@@ -8,56 +8,58 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 063818aa828305eedfc184231f2dc4de4eec981c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 2e97aa60a983eef3034eab28f7835edc1abb6734
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667458"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098665"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Podstawy interfejsu użytkownika dla programu Visual Studio
+
 ## <a name="best-practices"></a>Najlepsze rozwiązania
 
 ### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1. Zachowaj spójność w środowisku Visual Studio.
 
--   Postępuj zgodnie z istniejącą [wzorce interakcji](interaction-patterns-for-visual-studio.md) powłoki.
+- Postępuj zgodnie z istniejącą [wzorce interakcji](interaction-patterns-for-visual-studio.md) powłoki.
 
--   Projektowanie funkcji, aby były zgodne z językiem visual powłoki i [wymagania craftsmanship](evaluation-tools-for-visual-studio.md).
+- Projektowanie funkcji, aby były zgodne z językiem visual powłoki i [wymagania craftsmanship](evaluation-tools-for-visual-studio.md).
 
--   Użyj udostępnionego poleceń i kontrolek, jeśli takie istnieją.
+- Użyj udostępnionego poleceń i kontrolek, jeśli takie istnieją.
 
--   Dowiedz się, w hierarchii programu Visual Studio i jak ustanawia kontekst i dyski interfejsu użytkownika.
+- Dowiedz się, w hierarchii programu Visual Studio i jak ustanawia kontekst i dyski interfejsu użytkownika.
 
 ### <a name="2-use-the-environment-service-for-fonts-and-colors"></a>2. Usługa środowiska czcionek i kolorów.
 
--   Interfejs użytkownika, należy przestrzegać bieżącego [czcionka środowiska](fonts-and-formatting-for-visual-studio.md) ustawienia, chyba że jest uwidaczniany dla dostosowania na stronie czcionek i kolorów w oknie dialogowym Opcje.
+- Interfejs użytkownika, należy przestrzegać bieżącego [czcionka środowiska](fonts-and-formatting-for-visual-studio.md) ustawienia, chyba że jest uwidaczniany dla dostosowania na stronie czcionek i kolorów w oknie dialogowym Opcje.
 
--   Elementy interfejsu użytkownika, należy użyć [usługi VSColor](colors-and-styling-for-visual-studio.md), używana jest udostępniona tokeny środowiska lub tokenów specyficzne dla funkcji.
+- Elementy interfejsu użytkownika, należy użyć [usługi VSColor](colors-and-styling-for-visual-studio.md), używana jest udostępniona tokeny środowiska lub tokenów specyficzne dla funkcji.
 
 ### <a name="3-make-all-imagery-consistent-with-the-new-vs-style"></a>3. Wszystkie aplikacje należy zgodnie z nowym stylem programu VS.
 
--   Postępuj zgodnie z zasadami projektowania programu Visual Studio dla ikony, symbole i innych grafik.
+- Postępuj zgodnie z zasadami projektowania programu Visual Studio dla ikony, symbole i innych grafik.
 
--   Nie należy umieszczać tekstu w elementy graficzne.
+- Nie należy umieszczać tekstu w elementy graficzne.
 
 ### <a name="4-design-from-a-user-centric-perspective"></a>4. Projekt z punktu widzenia skoncentrowane na użytkowniku.
 
--   Utwórz przepływ zadań przed poszczególnych funkcji w nim.
+- Utwórz przepływ zadań przed poszczególnych funkcji w nim.
 
--   Należy zapoznać się z użytkownikami, a następnie udostępnią tę wiedzę jawne w swojej specyfikacji.
+- Należy zapoznać się z użytkownikami, a następnie udostępnią tę wiedzę jawne w swojej specyfikacji.
 
--   Podczas przeglądania interfejsu użytkownika, należy obliczyć pełnego środowiska pracy, a także szczegółowe informacje.
+- Podczas przeglądania interfejsu użytkownika, należy obliczyć pełnego środowiska pracy, a także szczegółowe informacje.
 
--   Interfejs użytkownika projektuje się tak, aby pozostaje funkcjonalny i atrakcyjne niezależnie od ustawień regionalnych i językowych.
+- Interfejs użytkownika projektuje się tak, aby pozostaje funkcjonalny i atrakcyjne niezależnie od ustawień regionalnych i językowych.
 
 ## <a name="screen-resolution"></a>Rozdzielczość ekranu
 
 ### <a name="minimum-resolution"></a>Minimalna rozdzielczość
- - Jest minimalna rozdzielczość dla programu Visual Studio Dev14 **1280 x 720**. Oznacza to, że jest *możliwe* używać programu Visual Studio w tym rozdzielczości, chociaż może nie być optymalne komfortu. Nie ma żadnej gwarancji, że wszystkie aspekty będzie użyteczny w rozdzielczości niższa niż 1280 x 720.
 
- - Rozdzielczość docelowego dla programu Visual Studio jest **1366 x 768**. Jest to rozwiązanie najniższy, jaką Obiecujemy, *dobre* środowisko użytkownika.
+- Minimalna rozdzielczość dla programu Visual Studio 2015 jest **1280 x 720**. Oznacza to, że jest *możliwe* używać programu Visual Studio w tym rozdzielczości, chociaż może nie być optymalne komfortu. Nie ma żadnej gwarancji, że wszystkie aspekty będzie użyteczny w rozdzielczości niższa niż 1280 x 720.
 
- - Wysokość początkowego okna dialogowego powinna być **mniejszych niż 700 pikseli**, więc mieści się w minimalna rozdzielczość klatki IDE przy rozdzielczości 96 dpi.
+- Rozdzielczość docelowego dla programu Visual Studio jest **1366 x 768**. Jest to rozwiązanie najniższy, jaką Obiecujemy, *dobre* środowisko użytkownika.
+
+- Wysokość początkowego okna dialogowego powinna być **mniejszych niż 700 pikseli**, więc mieści się w minimalna rozdzielczość klatki IDE przy rozdzielczości 96 dpi.
 
 ### <a name="high-density-displays"></a>Wyświetla o wysokiej gęstości
  Interfejs użytkownika w programie Visual Studio musi działać poprawnie na wszystkich urządzeniach skalowania DPI, obsługiwanych przez Windows gotowych: 150%, 200% i 250%.
@@ -69,9 +71,9 @@ ms.locfileid: "59667458"
 
 #### <a name="feature-team-goals"></a>Funkcja cele zespołu
 
--   Należy ostrzec użytkowników, że dodali element, który musi być skonfigurowany.
+- Należy ostrzec użytkowników, że dodali element, który musi być skonfigurowany.
 
--   Rysuj uwagi użytkownika do obszarów, które wymagają wprowadzania.
+- Rysuj uwagi użytkownika do obszarów, które wymagają wprowadzania.
 
 #### <a name="anti-pattern-solution"></a>Zapobieganie wzorzec rozwiązania
  Zaraz po użytkownik zainicjował akcję, a przed zakończenia zadania, natychmiast umieścić zatrzymanie krytyczne ikony obok obszarów, które wymagają konfiguracji.
@@ -84,13 +86,14 @@ ms.locfileid: "59667458"
  ![Wprowadzenie do interfejsu użytkownika w stanie błędu, domyślnie jest to wzorzec oprogramowanie Visual Studio. ](../../extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "ManifestDesignererrordeclarationsanti wzorzec")<br />Wprowadzenie do interfejsu użytkownika w stanie błędu, domyślnie jest to wzorzec oprogramowanie Visual Studio.
 
 #### <a name="alternatives"></a>Alternatywy
- Jest dużo lepszym rozwiązaniem tego problemu:
 
--   Zezwalaj użytkownikowi na dodawanie deklaracji bez ostrzeżenia, a następnie przesuń od razu do ustawiania właściwości w elemencie.
+Lepszym rozwiązaniem tego problemu jest:
 
--   Dodaj ikonę ostrzeżenia (trójkąt gold) po fokusu z elementu, takie jak dodanie innej deklaracji do listy lub podejmują próby zmiany karty w projektancie.
+- Zezwalaj użytkownikowi na dodawanie deklaracji bez ostrzeżenia, a następnie przesuń od razu do ustawiania właściwości w elemencie.
 
--   Jeśli użytkownik spróbuje kart przed ustawieniem właściwości na wszelkich deklaracji, pop, okno dialogowe wyjaśniające, że aplikacja nie zostanie skompilowany (lub dowolnego skutków) do momentu ostrzeżenia zostały rozwiązane. Jeśli użytkownik odrzuci okna dialogowego i zmienia karty mimo to następnie ikony (krytyczny lub ostrzegawczy, odpowiednio) jest dodawany do zakładki deklaracje.
+- Dodaj ikonę ostrzeżenia (trójkąt gold) po fokusu z elementu, takie jak dodanie innej deklaracji do listy lub podejmują próby zmiany karty w projektancie.
+
+- Jeśli użytkownik spróbuje kart przed ustawieniem właściwości na wszelkich deklaracji, pop, okno dialogowe wyjaśniające, że aplikacja nie zostanie skompilowany (lub dowolnego skutków) do momentu ostrzeżenia zostały rozwiązane. Jeśli użytkownik odrzuci okna dialogowego i zmienia karty mimo to następnie ikony (krytyczny lub ostrzegawczy, odpowiednio) jest dodawany do zakładki deklaracje.
 
 ### <a name="multiple-clicks-to-dismiss-ui"></a>Kilka kliknięć, aby zamknąć interfejs użytkownika
 
@@ -100,31 +103,30 @@ ms.locfileid: "59667458"
 #### <a name="anti-pattern"></a>Zapobieganie wzorzec
  Zespół Wstawianie wideo łącza do różnych miejscach interfejsu użytkownika programu VS zdecydowała się przed wspólny wzorzec "&times;" Zamknij objaśnienie przycisku i etykietek narzędzi, jak określone przez środowiska użytkownika i zamiast tego wykonuje listy rozwijanej, a link "Nie pokazuj ponownie".
 
-#### <a name="example-video-links-in-team-explorer"></a>Przykład: linki wideo w programie Team Explorer
+#### <a name="example-video-links-in-team-explorer"></a>Przykład: Linki wideo w programie Team Explorer
 Wymuszanie użytkownikowi odczyt tekst objaśnienia przed odrzucanie interfejsu użytkownika jest zapobieganie wzorzec, w programie Visual Studio. Prawidłowo zaprojektowana łącza wideo powinna zostać wyświetlona etykietka narzędzia z dodatkowymi informacjami na po wskazaniu wskaźnikiem, a następnie klikając polecenie "&times;" należy odrzucić wiadomości, bez konieczności dalszej interakcji.
 
  ![Tekst objaśniający ochrony przed złośliwym&#45;wzorzec &#45; niepoprawne](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Wzorzec niepoprawny link do wideo
 
-#### <a name="result"></a>Wynik
- Zamiast przycisku Zamknij proste (jednym kliknięciem) użytkownik jest zmuszony wystarczy zamknąć interfejs użytkownika w każdym miejscu, które wideo łącza są wyświetlane przy użyciu dwóch kliknięć.
+Zamiast przycisku Zamknij proste (jednym kliknięciem) użytkownik jest zmuszony wystarczy zamknąć interfejs użytkownika w każdym miejscu, które wideo łącza są wyświetlane przy użyciu dwóch kliknięć.
 
-#### <a name="alternatives"></a>Alternatywy
- Poprawny projekt w tej sytuacji może być oparte na wzorcu common Internet Explorer, pakietu Office i programu Visual Studio: po najechaniu wskaźnikiem, użytkownik może wyświetlić opis etykietki narzędzia i jednym kliknięciem ukrywa interfejs użytkownika.
+Poprawny projekt w tej sytuacji jest oparte na wzorcu common Internet Explorer, pakietu Office i programu Visual Studio: po najechaniu wskaźnikiem, użytkownik może wyświetlić opis etykietki narzędzia i jednym kliknięciem ukrywa interfejs użytkownika.
 
  ![Tekst objaśniający ochrony przed złośliwym&#45;wzorzec &#45; poprawne](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Popraw wzorzec Explanatorytextanti")<br />Wzorzec prawidłowy link do wideo
 
 ### <a name="using-command-bars-for-settings"></a>Za pomocą pasków poleceń dla ustawień
- **Rysunek** reprezentuje ten wzorzec niezalecane: umieszczanie ustawienie poniżej przycisku polecenia, który ma zastosowanie do więcej niż tylko polecenia. W tym szkic istnieją polecenia oprócz Rozpocznij debugowanie — Wyświetl w przeglądarce, Rozpocznij bez debugowania i Wkrocz, takich jak — która będzie uwzględniać wybrane ustawienie.
 
-  ![Rysunek Odp.: Wzorzec Układ paska poleceń](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "FigureA-Commandbaranti — wzorzec")<br />Rysunek Odp.: Wzorzec zapobieganie pasek poleceń
+**Rysunek** reprezentuje ten wzorzec niezalecane: umieszczanie ustawienie poniżej przycisku polecenia, który ma zastosowanie do więcej niż tylko polecenia. W tym szkic istnieją polecenia oprócz Rozpocznij debugowanie — Wyświetl w przeglądarce, Rozpocznij bez debugowania i Wkrocz, takich jak — która będzie uwzględniać wybrane ustawienie.
 
- Nieco lepiej, ale nadal niepożądanych, jest umieszczenie ustawienia tego typu w paski narzędzi, jak pokazano na **B rysunek**. Przyciski dzielone zajmują mniej miejsca i są w związku z tym poprawę za pośrednictwem list rozwijanych, oba projekty są nadal przy użyciu paska narzędzi do podwyższenia poziomu coś, co tak naprawdę nie jest poleceniem.
+![Rysunek Odp.: Wzorzec Układ paska poleceń](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "FigureA-Commandbaranti — wzorzec")<br />Rysunek Odp.: Wzorzec zapobieganie pasek poleceń
 
- ![Rysunek B: Lepsze, ale nadal wzorzec przed pasku polecenia](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "FigureB-Commandbaranti — wzorzec")<br />Rysunek B: Lepsze, ale nadal wzorzec zapobieganie pasek poleceń
+Nieco lepiej, ale nadal niepożądanych, jest umieszczenie ustawienia tego typu w paski narzędzi, jak pokazano na **B rysunek**. Przyciski dzielone zajmują mniej miejsca i są w związku z tym poprawę za pośrednictwem list rozwijanych, oba projekty są nadal przy użyciu paska narzędzi do podwyższenia poziomu coś, co tak naprawdę nie jest poleceniem.
 
-  W właściwe podejście pokazano w **rysunek C**, to ustawienie jest powiązany z serię poleceń. Nie ma żadnego ustawienia globalne, ustawiania i firma Microsoft jest po prostu przełączanie między czterech poleceń. Jest to tylko sytuacji, w którym polecenia na pasku narzędzi są akceptowane.
+![Rysunek B: Lepsze, ale nadal wzorzec przed pasku polecenia](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "FigureB-Commandbaranti — wzorzec")<br />Rysunek B: Lepsze, ale nadal wzorzec zapobieganie pasek poleceń
 
- ![Rysunek C: Popraw Użyj wzorca paska poleceń programu Visual Studio](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "FigureC-Commandbaranti — wzorzec")<br />Rysunek C: Prawidłowe użycie wzorca paska poleceń programu Visual Studio
+W właściwe podejście pokazano w **rysunek C**, to ustawienie jest powiązany z serię poleceń. Nie ma żadnego ustawienia globalne, ustawiania i firma Microsoft jest po prostu przełączanie między czterech poleceń. Jest to tylko sytuacji, w którym polecenia na pasku narzędzi są akceptowane.
+
+![Rysunek C: Popraw Użyj wzorca paska poleceń programu Visual Studio](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "FigureC-Commandbaranti — wzorzec")<br />Rysunek C: Prawidłowe użycie wzorca paska poleceń programu Visual Studio
 
 ### <a name="control-anti-patterns"></a>Niezalecane wzorce kontrolki
  Niektóre niezalecane wzorce są po prostu nieprawidłowe użycie lub prezentacji formantu lub grupy formantów.
@@ -132,9 +134,11 @@ Wymuszanie użytkownikowi odczyt tekst objaśnienia przed odrzucanie interfejsu 
 #### <a name="underlining-used-as-a-group-label-not-a-hyperlink"></a>Podkreślenie używana jako etykieta grupy, nie hiperłącza
  Podkreślenie tekst powinien być stosowany tylko dla hiperlinków.
 
- **Zły:** ![Podkreślony tekst, który nie jest hiperłącze to wzorzec oprogramowanie Visual Studio. ](../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "0102 g_GroupLabelIncorrect")<br />Podkreślony tekst, który nie jest hiperłącze to wzorzec oprogramowanie Visual Studio.
+ **Zły:**\
+ ![Podkreślony tekst, który nie jest hiperłącze to wzorzec oprogramowanie Visual Studio. ](../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "0102 g_GroupLabelIncorrect")<br />Podkreślony tekst, który nie jest hiperłącze to wzorzec oprogramowanie Visual Studio.
 
- **Dobre:** ![Różne poprawnie, bez hiperlink tekst jest wyświetlany unadorned czcionką środowiska. ](../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "0102 h_GroupLabelCorrect")<br />Różne poprawnie, bez hiperlink tekst jest wyświetlany unadorned czcionką środowiska.
+ **Dobre:**\
+ ![Różne poprawnie, bez hiperlink tekst jest wyświetlany unadorned czcionką środowiska. ](../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "0102 h_GroupLabelCorrect")<br />Różne poprawnie, bez hiperlink tekst jest wyświetlany unadorned czcionką środowiska.
 
 #### <a name="clicking-on-a-check-box-results-in-a-pop-up-dialog"></a>Kliknij pole wyboru skutkuje wyskakującego okna dialogowego
  Kliknięcie pola wyboru "Włącz pulpit zdalny dla wszystkich ról", w kreatorze "Publikowanie Windows Azure aplikacji" od razu powoduje wyświetlenie wyskakującego okna dialogowego wzorzec oprogramowanie Visual Studio. Ponadto, pole wyboru nie wypełniać pola wyboru po wybraniu, inny wzorca zapobieganie interakcji.
@@ -142,7 +146,7 @@ Wymuszanie użytkownikowi odczyt tekst objaśnienia przed odrzucanie interfejsu 
  ![Dzięki temu okno dialogowe po kliknięcie pola wyboru jest to wzorzec oprogramowanie Visual Studio. ](../../extensibility/ux-guidelines/media/0102-i_checkboxpopup.png "0102 i_CheckboxPopup")<br />Dzięki temu okno dialogowe po kliknięcie pola wyboru jest to wzorzec oprogramowanie Visual Studio.
 
 ### <a name="hyperlink-anti-patterns"></a>Niezalecane wzorce dotyczące hiperłącza
- Poniższy przykład zawiera dwa niezalecane wzorce.
+ Poniższy przykład zawiera dwa antywzorców:
 
 1. Pierwszego planu, włączając czerwony po najechaniu wskaźnikiem oznacza, że nie jest używany prawidłowy kolor udostępnionych usługi czcionki.
 
@@ -150,11 +154,11 @@ Wymuszanie użytkownikowi odczyt tekst objaśnienia przed odrzucanie interfejsu 
 
    ![Ignorowanie usługi kolorów i za pomocą "Dowiedz się więcej" dla hiperlinków są niezalecane wzorce dotyczące programu Visual Studio. ](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")<br />Ignorowanie usługi kolorów i za pomocą "Dowiedz się więcej" dla hiperlinków są niezalecane wzorce dotyczące programu Visual Studio.
 
-   **Lepszym rozwiązaniem:** Stanowić pytanie, na które użytkownik może zadać, klikając link.
+**Lepszym rozwiązaniem:** Stanowić pytanie, na które użytkownik może zadać, klikając link. Na przykład:
 
--   Jak działają usługi Windows Azure?
+- Jak działają usługi Windows Azure?
 
--   Jeśli potrzebny jest projekt Windows Azure Mobile Services?
+- Jeśli potrzebny jest projekt Windows Azure Mobile Services?
 
 #### <a name="using-click-here-for-links"></a>Za pomocą "Kliknij tutaj" dla łączy
  Hiperlinki powinien być samoopisowe. Jest to niezalecane wzorzec używaj "sformułowania kliknij tutaj" lub dowolnych wariantów podobne.

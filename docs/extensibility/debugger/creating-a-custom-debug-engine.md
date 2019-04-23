@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5273270905c99b565fe4fd455e9c5c505af9c878
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 67a58ab1bf508ba1b2edc7117412638de6c2231a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711101"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099549"
 ---
 # <a name="create-a-custom-debug-engine"></a>Tworzenie niestandardowego aparatu debugowania
 Aparat debugowania (DE) to składnik, który umożliwia debugowanie określonej architektury środowiska wykonawczego. Zazwyczaj jest tylko jedna implementacja DE na środowisku uruchomieniowym.
@@ -29,15 +29,15 @@ Aparat debugowania (DE) to składnik, który umożliwia debugowanie określonej 
 
  Tworzenie DE składa się z następujących czynności:
 
-1.  Zarejestruj DE z programem Visual Studio
+1. Zarejestruj DE z programem Visual Studio
 
-2.  Włącz program do debugowania
+2. Włącz program do debugowania
 
-3.  Implementowanie wykonanie kontroli i stan oceny
+3. Implementowanie wykonanie kontroli i stan oceny
 
-4.  Wysyłanie zdarzeń
+4. Wysyłanie zdarzeń
 
-5.  Konfigurowanie Kończenie i odłączanie
+5. Konfigurowanie Kończenie i odłączanie
 
 ## <a name="in-this-section"></a>W tej sekcji
  [Rejestrowanie niestandardowego aparatu debugowania](../../extensibility/debugger/registering-a-custom-debug-engine.md) wyjaśniono czynności wymaganych do zarejestrowania aparat debugowania za pomocą programu Visual Studio, dzięki czemu mogą być używane.

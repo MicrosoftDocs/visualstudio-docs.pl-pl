@@ -14,12 +14,12 @@ ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2bee266cb917f1e16bdebbdad52f2cc30055835e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ea32df892efa47c91d8292bdc9065080318a059
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798704"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044609"
 ---
 # <a name="running-document-table"></a>Uruchamianie tabeli dokumentu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,9 +54,9 @@ IDE utrzymuje listę wszystkich aktualnie otwarte dokumenty w wewnętrznej struk
   
  IDE używa również Normalizacją do resurface (przesuwanie do przodu) otwartego dokumentu, jeśli użytkownik zażąda tego dokumentu. Aby uzyskać więcej informacji, zobacz [wyświetlanie plików za pomocą polecenia Otwórz plik](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Aby ustalić, czy plik jest otwarty w Normalizacją, wykonaj jedną z następujących czynności.  
   
--   Kwerenda dotycząca moniker dokumentu (oznacza to ścieżki pełny dokument) sprawdzić, czy element jest otwarty.  
+- Kwerenda dotycząca moniker dokumentu (oznacza to ścieżki pełny dokument) sprawdzić, czy element jest otwarty.  
   
--   Identyfikator hierarchii lub element umożliwia poproś system projektu dla ścieżki pełny dokument, a następnie wyszukaj element Normalizacją.  
+- Identyfikator hierarchii lub element umożliwia poproś system projektu dla ścieżki pełny dokument, a następnie wyszukaj element Normalizacją.  
   
 ## <a name="see-also"></a>Zobacz też  
  [RDT_ReadLock Usage](../../extensibility/internals/rdt-readlock-usage.md)   

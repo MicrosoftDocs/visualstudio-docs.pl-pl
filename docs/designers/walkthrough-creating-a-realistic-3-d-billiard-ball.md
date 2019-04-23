@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 241416a8c874a131b4c766bc0a707019d9ea12f1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9f5788b2c6b2dab4b6f0f7a6c520aa1f2ab5f9ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946167"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050637"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Przewodnik: Tworzenie realistycznej kuli bilardowej w 3D
 
@@ -23,11 +23,11 @@ W tym przewodniku przedstawiono sposób tworzenia realistycznej kuli bilardowej 
 
 Potrzebne są następujące składniki i umiejętności w celu przeprowadzenia tego instruktażu:
 
--   Narzędzie do składania tekstur w mapę modułu, takie jak narzędzia DirectX Texture, który znajduje się w czerwca 2010 zestawu SDK programu DirectX.
+- Narzędzie do składania tekstur w mapę modułu, takie jak narzędzia DirectX Texture, który znajduje się w czerwca 2010 zestawu SDK programu DirectX.
 
--   Znajomość edytora obrazów w programie Visual Studio.
+- Znajomość edytora obrazów w programie Visual Studio.
 
--   Znajomość Shader Designer w programie Visual Studio.
+- Znajomość Shader Designer w programie Visual Studio.
 
 ## <a name="create-the-basic-appearance-with-shape-and-texture"></a>Tworzenie podstawowego wyglądu za pomocą kształtu i tekstury
 

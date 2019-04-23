@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a32de469c5b58ca2bf58901e30b81cfb70ed84b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ee221f0c1da32694e869177399981cc16ce901f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803530"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099471"
 ---
 # <a name="vsperf"></a>VSPerf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Użyj **VsPerf** narzędzie wiersza polecenia do:
   
    Aby uzyskać więcej informacji na temat opcji profilowania, zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-##  <a name="BKMK_In_this_topic"></a> W tym temacie  
+## <a name="BKMK_In_this_topic"></a> W tym temacie  
  W tym temacie opisano opcje używane z `vsperf.exe` narzędzia wiersza polecenia. Temat zawiera następujące sekcje:  
   
  [Tylko aplikacje Windows Store](#BKMK_windows_store_apps_only)  
@@ -36,7 +36,7 @@ Użyj **VsPerf** narzędzie wiersza polecenia do:
   
  [Wszystkie aplikacje](#BKMK_All_applications)  
   
-##  <a name="BKMK_windows_store_apps_only"></a> Tylko aplikacje Windows Store  
+## <a name="BKMK_windows_store_apps_only"></a> Tylko aplikacje Windows Store  
  Te opcje są stosowane tylko do aplikacji Windows Store.  
   
 |||  
@@ -47,7 +47,7 @@ Użyj **VsPerf** narzędzie wiersza polecenia do:
 |**/noclr**|Opcjonalna. Nie zbieraj danych CLR.<br /><br /> Użyj tylko przy użyciu przełącznika/Package lub / dołączyć.<br /><br /> Optymalizacja, symboli zarządzanych, nie zostanie rozwiązany.|  
 |**/listapps**|Lista zainstalowanych aplikacji, nazwy i PackageFullNames.|  
   
-##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Aplikacje klasyczne systemu Windows 8 i tylko w aplikacji systemu Windows Server 2012  
+## <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Aplikacje klasyczne systemu Windows 8 i tylko w aplikacji systemu Windows Server 2012  
  Te opcje nie działają w aplikacjach Windows Store.  
   
 |||  
@@ -56,7 +56,7 @@ Użyj **VsPerf** narzędzie wiersza polecenia do:
 |**przełącznika/args: {ExecutableArguments}**|Określa argumenty wiersza polecenia do przekazania **/uruchamianie** docelowej.|  
 |**/ Console**|Przebiegi **/uruchamianie** elementu docelowego w nowym oknie polecenia.|  
   
-##  <a name="BKMK_All_applications"></a> Wszystkie aplikacje  
+## <a name="BKMK_All_applications"></a> Wszystkie aplikacje  
  Te opcje stosowania się do aplikacji systemu Windows 8 lub Windows Server 2012.  
   
 |||  

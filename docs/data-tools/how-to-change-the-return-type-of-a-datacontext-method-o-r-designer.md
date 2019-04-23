@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e72c04d5d8ce4419938ca30c719e82c403ae0157
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 93d65574012d219d0f65d5b42600c75cf7a624fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940597"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046712"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Instrukcje: Zmiany zwracanego typu metody DataContext (O/R Designer)
 Zwracany typ <xref:System.Data.Linq.DataContext> — metoda (utworzonym w zależności od procedury składowanej lub funkcji) różni się w zależności od tego, gdzie porzucić procedury składowanej lub funkcji w elemencie **O/R Designer**. Jeśli usuniesz element bezpośrednio na istniejącej klasy jednostki, <xref:System.Data.Linq.DataContext> metodę, która ma typ zwracany klasy jednostki jest tworzony (Jeśli schemat danych zwróconych przez procedurę składowaną lub funkcję odpowiada kształt klasy jednostek). Jeśli usuniesz element na pustym obszarem **O/R Designer**, <xref:System.Data.Linq.DataContext> metodę, która zwraca automatycznie wygenerowany typ zostanie utworzony. Możesz zmienić typ zwracany <xref:System.Data.Linq.DataContext> metoda po dodaniu do okienka metod. Aby sprawdzić lub zmienić typ zwracany <xref:System.Data.Linq.DataContext> metody, zaznacz go i kliknij **typie zwracanym** właściwość **właściwości** okna.
@@ -25,19 +25,19 @@ Zwracany typ <xref:System.Data.Linq.DataContext> — metoda (utworzonym w zależ
 
 ## <a name="to-change-the-return-type-of-a-datacontext-method-from-the-auto-generated-type-to-an-entity-class"></a>Zmiany zwracanego typu metody DataContext ze typu automatycznie wygenerowana klasa jednostki
 
-1.  Wybierz <xref:System.Data.Linq.DataContext> metody w okienko metod.
+1. Wybierz <xref:System.Data.Linq.DataContext> metody w okienko metod.
 
-2.  Wybierz **typie zwracanym** w **właściwości** okna, a następnie wybierz jednostki dostępne klasy w **typie zwracanym** listy. Jeśli klasa odpowiedniej jednostki nie jest na liście, dodaj go do, lub utwórz go w **O/R Designer** ją dodać do listy.
+2. Wybierz **typie zwracanym** w **właściwości** okna, a następnie wybierz jednostki dostępne klasy w **typie zwracanym** listy. Jeśli klasa odpowiedniej jednostki nie jest na liście, dodaj go do, lub utwórz go w **O/R Designer** ją dodać do listy.
 
-3.  Zapisz *dbml* pliku.
+3. Zapisz *dbml* pliku.
 
 ## <a name="to-change-the-return-type-of-a-datacontext-method-from-an-entity-class-back-to-the-auto-generated-type"></a>Aby zmienić typ zwracany metody DataContext z klasy jednostki na typ wygenerowany automatycznie
 
-1.  Wybierz <xref:System.Data.Linq.DataContext> method in Class metoda **metody** okienku i usuń go.
+1. Wybierz <xref:System.Data.Linq.DataContext> method in Class metoda **metody** okienku i usuń go.
 
-2.  Przeciągnij obiekt bazy danych z **Eksploratora serwera** lub **Eksplorator bazy danych** na pustym obszarem **O/R Designer**.
+2. Przeciągnij obiekt bazy danych z **Eksploratora serwera** lub **Eksplorator bazy danych** na pustym obszarem **O/R Designer**.
 
-3.  Zapisz *dbml* pliku.
+3. Zapisz *dbml* pliku.
 
 ## <a name="see-also"></a>Zobacz także
 

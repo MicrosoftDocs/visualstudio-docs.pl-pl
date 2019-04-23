@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aa8b91ccdf4aaa5b46f167673007723938fc62ef
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: ecbdd8b9f1fb1696986672bb621567944910660f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268782"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041682"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Tworzenie formularza Windows Forms na potrzeby wyszukiwania danych
 
@@ -69,25 +69,25 @@ Utwórz nową **Windows Forms App** projekt albo C# lub Visual Basic. Nadaj proj
 
 Spowoduje to utworzenie źródła danych z bazy danych za pomocą **konfiguracji źródła danych** kreatora:
 
-1.  Aby otworzyć **źródeł danych** okna na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
+1. Aby otworzyć **źródeł danych** okna na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
 
-2.  W **źródeł danych** wybierz **Dodaj nowe źródło danych** można uruchomić **konfiguracji źródła danych** kreatora.
+2. W **źródeł danych** wybierz **Dodaj nowe źródło danych** można uruchomić **konfiguracji źródła danych** kreatora.
 
-3.  Wybierz **bazy danych** na **wybierz typ źródła danych** strony, a następnie kliknij przycisk **dalej**.
+3. Wybierz **bazy danych** na **wybierz typ źródła danych** strony, a następnie kliknij przycisk **dalej**.
 
-4.  Na **wybierz połączenie danych** wykonaj strony, jedną z następujących czynności:
+4. Na **wybierz połączenie danych** wykonaj strony, jedną z następujących czynności:
 
     - Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.
 
     - Wybierz **nowe połączenie** można uruchomić **Dodawanie/modyfikowanie połączenia** okno dialogowe.
 
-5.  Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie kliknij przycisk **dalej**.
+5. Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie kliknij przycisk **dalej**.
 
-6.  Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji** kliknij **dalej**.
+6. Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji** kliknij **dalej**.
 
-7.  Na **wybierz obiekty bazy danych** rozwiń **tabel** węzła.
+7. Na **wybierz obiekty bazy danych** rozwiń **tabel** węzła.
 
-8.  Wybierz **klientów** tabeli, a następnie kliknij przycisk **Zakończ**.
+8. Wybierz **klientów** tabeli, a następnie kliknij przycisk **Zakończ**.
 
      **NorthwindDataSet** zostanie dodany do projektu, a **klientów** tabela zostanie wyświetlona w **źródeł danych** okna.
 
@@ -95,9 +95,9 @@ Spowoduje to utworzenie źródła danych z bazy danych za pomocą **konfiguracji
 
 Można utworzyć formanty powiązane z danymi przez przeciąganie elementów z **źródeł danych** okna na formularzu:
 
-1.  Rozwiń **klientów** w węźle **źródeł danych** okna.
+1. Rozwiń **klientów** w węźle **źródeł danych** okna.
 
-2.  Przeciągnij **klientów** węzła z **źródeł danych** okna do formularza.
+2. Przeciągnij **klientów** węzła z **źródeł danych** okna do formularza.
 
      A <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania między rekordami wyświetlanymi w formularzu. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane w zasobniku składnika.
 
@@ -105,11 +105,11 @@ Można utworzyć formanty powiązane z danymi przez przeciąganie elementów z *
 
 Możesz dodać klauzulę WHERE do oryginalnego zapytania za pomocą **Konstruktor kryteriów wyszukiwania** okno dialogowe:
 
-1.  Wybierz <xref:System.Windows.Forms.DataGridView> sterowania, a następnie wybierz **Dodaj zapytanie** na **danych** menu.
+1. Wybierz <xref:System.Windows.Forms.DataGridView> sterowania, a następnie wybierz **Dodaj zapytanie** na **danych** menu.
 
-2.  Typ **FillByCity** w **Nowa nazwa zapytania** obszar na **Konstruktor kryteriów wyszukiwania** okno dialogowe.
+2. Typ **FillByCity** w **Nowa nazwa zapytania** obszar na **Konstruktor kryteriów wyszukiwania** okno dialogowe.
 
-3.  Dodaj `WHERE City = @City` do wykonywania zapytań w **tekst zapytania** obszaru.
+3. Dodaj `WHERE City = @City` do wykonywania zapytań w **tekst zapytania** obszaru.
 
      Zapytanie powinny wyglądać podobnie do następującego:
 
@@ -123,7 +123,7 @@ Możesz dodać klauzulę WHERE do oryginalnego zapytania za pomocą **Konstrukto
     > [!NOTE]
     > Źródła danych programu Access i OLE DB użyć znaku zapytania ("?") do określenia parametrów, dlatego klauzuli WHERE będzie wyglądać następująco: `WHERE City = ?`.
 
-4.  Kliknij przycisk **OK** zamknąć **Konstruktor kryteriów wyszukiwania** okno dialogowe.
+4. Kliknij przycisk **OK** zamknąć **Konstruktor kryteriów wyszukiwania** okno dialogowe.
 
      A **FillByCityToolStrip** zostanie dodany do formularza.
 
@@ -131,9 +131,9 @@ Możesz dodać klauzulę WHERE do oryginalnego zapytania za pomocą **Konstrukto
 
 Uruchamianie aplikacji zostanie otwarty formularz i sprawia, że chcesz przenieść swoją parametr jako dane wejściowe:
 
-1.  Naciśnij klawisz **F5** do uruchomienia aplikacji.
+1. Naciśnij klawisz **F5** do uruchomienia aplikacji.
 
-2.  Typ **Londyn** do **Miasto** polu tekstowym, a następnie kliknij przycisk **FillByCity**.
+2. Typ **Londyn** do **Miasto** polu tekstowym, a następnie kliknij przycisk **FillByCity**.
 
      Siatka danych jest wypełniana przy użyciu klientów, które spełniają kryteria. W tym przykładzie dane tylko są wyświetlane w siatce klientów, którzy mają wartość **Londyn** w ich **Miasto** kolumny.
 

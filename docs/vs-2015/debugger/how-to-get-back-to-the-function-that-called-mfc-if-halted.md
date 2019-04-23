@@ -25,12 +25,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4fcf169d901bff20b2b2b874cc8c57d9e3907f01
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a86efc2e181a7f692e84244eecb2355783b188bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798413"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039374"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>Instrukcje: Wróć do funkcji, która wywołała MFC przy zatrzymaniu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ UWAGA]
   
 ### <a name="to-navigate-to-the-function-from-which-mfc-was-called"></a>Aby przejść do funkcji, z którego wywołano MFC  
   
--   Użyj **stos wywołań** okna.  
+- Użyj **stos wywołań** okna.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)   

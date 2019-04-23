@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: d82776b72b1634e3645749c8a1fb8eaecbedf17c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 01b767e4b2aceeb50ca72ef6852934f4b0502b98
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657301"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114317"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Tworzenie aplikacji mobilnych na wiele platform w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ Można tworzyć aplikacje dla urządzeń z systemem Android, iOS i Windows przy 
 
  **W tym artykule:**
 
--   [Tworzenie aplikacji dla systemu Android, iOS i Windows (.NET Framework)](#NET)
+- [Tworzenie aplikacji dla systemu Android, iOS i Windows (.NET Framework)](#NET)
 
-    -   [Docelowe systemów Android, iOS i Windows z pojedynczą bazą kodu](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
+    - [Docelowe systemów Android, iOS i Windows z pojedynczą bazą kodu](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
 
-    -   [Docelowe urządzenia z systemem Windows 10](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
+    - [Docelowe urządzenia z systemem Windows 10](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
 
--   [Tworzenie aplikacji dla systemu Android, iOS i Windows (HTML/JavaScript)](#HTML)
+- [Tworzenie aplikacji dla systemu Android, iOS i Windows (HTML/JavaScript)](#HTML)
 
--   [Tworzenie aplikacji dla systemów Android i Windows (C++)](#CPP)
+- [Tworzenie aplikacji dla systemów Android i Windows (C++)](#CPP)
 
--   [Twórz gry dla wielu platform dla systemów Android, iOS i Windows za pomocą narzędzi Visual Studio tools for Unity](#Unity)
+- [Twórz gry dla wielu platform dla systemów Android, iOS i Windows za pomocą narzędzi Visual Studio tools for Unity](#Unity)
 
-##  <a name="NET"></a> Tworzenie aplikacji dla systemu Android, iOS i Windows (.NET Framework)
+## <a name="NET"></a> Tworzenie aplikacji dla systemu Android, iOS i Windows (.NET Framework)
  ![Urządzenia](../cross-platform/media/homedevices.png "HomeDevices")
 
  Za pomocą platformy Xamarin można wskazać systemów Android, iOS i Windows w tym samym rozwiązaniu, udostępniania kodu i nawet interfejsu użytkownika.
@@ -53,7 +53,7 @@ Można tworzyć aplikacje dla urządzeń z systemem Android, iOS i Windows przy 
 |[Dowiedz się więcej o podobieństwa Swift i C#](https://aka.ms/scposter) (witrynie download.microsoft.com)|
 |[Dowiedz się więcej o Visual Studio Emulator for Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (Visual Studio)|
 
-###  <a name="AndroidHTML"></a> Docelowe systemów Android, iOS i Windows z pojedynczą bazą kodu
+### <a name="AndroidHTML"></a> Docelowe systemów Android, iOS i Windows z pojedynczą bazą kodu
  Tworzyć natywne aplikacje dla systemów Android, iOS i Windows przy użyciu C# lub F# (Visual Basic nie jest obsługiwane w tej chwili).  Aby rozpocząć pracę, należy zainstalować program Visual Studio 2015, wybierz **niestandardowe** opcji w oknie Instalatora, a następnie zaznacz pole w obszarze **Cross Platform Mobile Development > C# / .NET (Xamarin)**. Można także uruchomić z [Instalatora platformy Xamarin](https://www.xamarin.com/download), co jest wymagane do instalacji Xamarin dla programu Visual Studio 2013.
 
  Jeśli masz już program Visual Studio 2015, uruchom Instalatora z **Panel sterowania > programy i funkcje** i wybierz taki sam **niestandardowe** opcji dla programu Xamarin opisanych powyżej.
@@ -67,7 +67,7 @@ Można tworzyć aplikacje dla urządzeń z systemem Android, iOS i Windows przy 
 #### <a name="design-one-set-of-pages-that-render-across-all-devices-by-using-xamarinforms"></a>Projektowanie jeden zestaw stron, które są renderowane dla wszystkich urządzeń za pomocą platformy Xamarin.Forms
  W zależności od złożoności projektu aplikacji, można rozważyć wbudowanie jej za pomocą *Xamarin.Forms* szablonów w **Mobile Apps** grupy szablonów projektu. Xamarin.Forms to zestaw narzędzi interfejsu użytkownika, który umożliwia tworzenie jednego interfejsu, którą można współdzielić między systemów Android, iOS i Windows.  Podczas kompilowania rozwiązania platformy Xamarin.Forms, uzyskasz aplikację systemu Android aplikacji systemu iOS i aplikacji Windows. Aby uzyskać więcej informacji, zobacz [Dowiedz się więcej o programowaniu rozwiązań mobilnych za pomocą platformy Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md).
 
-####  <a name="ShareHTML"></a> Współdziel kod między systemami Android, iOS i aplikacji Windows
+#### <a name="ShareHTML"></a> Współdziel kod między systemami Android, iOS i aplikacji Windows
  Jeśli nie będziesz jej używać zestawu narzędzi Xamarin.Forms i projektować pod kątem poszczególnych platform indywidualnie, możesz udostępniać większość kodu między projektami platform (systemów Android, iOS i Windows) bez interfejsu użytkownika. W tym wszelka logika biznesowa, integracja z chmurą, dostęp do bazy danych lub inny kod, który jest przeznaczony dla .NET Framework. Tylko kod, który nie mogą udostępniać jest kod, który jest przeznaczony dla określonej platformy.
 
  ![Udostępnianie kodu pomiędzy Windows, iOs i Android interfejsu użytkownika](../cross-platform/media/sharecode.png "ShareCode")
@@ -78,7 +78,7 @@ Można tworzyć aplikacje dla urządzeń z systemem Android, iOS i Windows przy 
 |--------------------|
 |Wybierz, czy można udostępnić swój kod za pomocą udostępnionych projektów i/lub projektów biblioteki klas przenośnych.<br /><br /> [Współdzielenie kodu między platformami](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (blog .NET Framework)<br /><br /> [Udostępnianie kodu opcje](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [Opcje udostępniania przy użyciu programu .NET Framework kodu](http://msdn.microsoft.com/library/dn720832.aspx) (Biblioteka MSDN)|
 
-###  <a name="WindowsHTML"></a> Docelowe urządzenia z systemem Windows 10
+### <a name="WindowsHTML"></a> Docelowe urządzenia z systemem Windows 10
  ![Urządzenia Windows](../cross-platform/media/windowsdevices.png "WindowsDevices")
 
  Jeśli chcesz utworzyć pojedynczą aplikacją, który jest przeznaczony dla rozmaitych urządzeniach z systemem Windows 10, należy utworzyć uniwersalnej aplikacji Windows. Będziesz projektowanie aplikacji przy użyciu pojedynczego projektu i stron sieci będą poprawnie renderowane niezależnie od tego, jakiego urządzenia służy do wyświetlania ich.
@@ -94,7 +94,7 @@ Można tworzyć aplikacje dla urządzeń z systemem Android, iOS i Windows przy 
 |[Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[Migrowanie aplikacji na platformie Universal Windows (UWP)](../misc/migrate-apps-to-the-universal-windows-platform-uwp.md)|
 
-##  <a name="HTML"></a> Tworzenie aplikacji dla systemu Android, iOS i Windows (HTML/JavaScript)
+## <a name="HTML"></a> Tworzenie aplikacji dla systemu Android, iOS i Windows (HTML/JavaScript)
  ![Urządzenia](../cross-platform/media/homedevices.png "HomeDevices")
 
  Jeśli jesteś deweloperem internetowym i znasz HTML i JavaScript, można wskazać Windows, Android i iOS przy użyciu programu Visual Studio Tools for Apache Cordova. Te aplikacje mogą są przeznaczone dla wszystkich trzech platformach, a następnie utworzyć je przy użyciu umiejętności i procesy, które znasz najbardziej.
@@ -119,7 +119,7 @@ Można tworzyć aplikacje dla urządzeń z systemem Android, iOS i Windows przy 
 |[Rozpoczynanie pracy z usługą Visual Studio Tools for Apache Cordova](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) (taco.visualstudio.com)|
 |[Dowiedz się więcej o Visual Studio Emulator for Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (Visual Studio)|
 
-##  <a name="CPP"></a> Tworzenie aplikacji dla systemów Android i Windows (C++)
+## <a name="CPP"></a> Tworzenie aplikacji dla systemów Android i Windows (C++)
  ![Użyj C&#43; &#43; kompilacji dla systemów Android, iOS i Windows](../cross-platform/media/cross-plat-cpp-intro-image.png "Cross_Plat_CPP_Intro_Image")
 
  Najpierw zainstaluj program Visual Studio 2015 i Visual C++ for Cross Platform Mobile Development tools. Następnie można utworzyć aplikacji działania natywnego dla systemu Android lub aplikacji, który jest przeznaczony dla Windows. Szablonów języka C++, przeznaczonych dla systemu iOS nie są jeszcze dostępne. Dla systemów Android i Windows można wskazać w tym samym rozwiązaniu, jeśli chcesz, a następnie udostępnianie kodu między nimi przy użyciu dla wielu platform statycznej lub dynamicznej biblioteki udostępnionej.
@@ -151,7 +151,7 @@ Można tworzyć aplikacje dla urządzeń z systemem Android, iOS i Windows przy 
 |[Przykłady programowania aplikacji mobilnych dla wielu platform w języku C++](https://msdn.microsoft.com/library/dn707596.aspx) (Biblioteka MSDN)|
 |[Przykłady dodatkowe opracowywania aplikacji mobilnych dla wielu platform w języku C++](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
 
-##  <a name="Unity"></a> Twórz gry dla wielu platform dla systemów Android, iOS i Windows za pomocą narzędzi Visual Studio tools for Unity
+## <a name="Unity"></a> Twórz gry dla wielu platform dla systemów Android, iOS i Windows za pomocą narzędzi Visual Studio tools for Unity
  Visual Studio Tools for Unity to bezpłatne rozszerzenie programu Visual Studio, która integruje się programu Visual Studio zaawansowane kodu do edycji, wydajności i narzędzia, za pomocą debugowania *Unity*, aparat popularnych Międzyplatformowe gry grafiki i środowisko projektowe dla wciągające aplikacje, których celem, Windows, iOS, Android i innych platform, w tym w sieci web.
 
  ![Środowisko deweloperskie w narzędziach VSTU](../cross-platform/media/vstu-overview.png "VSTU_Overview")

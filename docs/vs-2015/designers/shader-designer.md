@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d39f9da4d421591f6a45b4e3dcdccf73d3e1798c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 67429131e87aa414957bf01847e03af44468d0ab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805464"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116819"
 ---
 # <a name="shader-designer"></a>Shader Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +41,13 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
   
 #### <a name="to-add-a-dgsl-shader-to-your-project"></a>Aby dodać modułu cieniującego DGSL do projektu  
   
-1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, który chcesz dodać cieniowanie tak, aby, a następnie wybierz **Dodaj**, **nowy element**.  
+1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, który chcesz dodać cieniowanie tak, aby, a następnie wybierz **Dodaj**, **nowy element**.  
   
-2.  W **Dodaj nowy element** dialogowego **zainstalowane**, wybierz opcję **grafiki**, a następnie wybierz pozycję **wizualny wykres modułu cieniującego (.dgsl)**.  
+2. W **Dodaj nowy element** dialogowego **zainstalowane**, wybierz opcję **grafiki**, a następnie wybierz pozycję **wizualny wykres modułu cieniującego (.dgsl)**.  
   
-3.  Określ **nazwa** pliku programu do cieniowania i **lokalizacji** której ma zostać utworzony.  
+3. Określ **nazwa** pliku programu do cieniowania i **lokalizacji** której ma zostać utworzony.  
   
-4.  Wybierz **Dodaj** przycisku.  
+4. Wybierz **Dodaj** przycisku.  
   
 ### <a name="the-default-shader"></a>Domyślne cieniowanie  
  Za każdym razem, Tworzenie modułu cieniującego DGSL, rozpoczyna jej jako minimalny programu do cieniowania, który został właśnie **koloru punktu** węzeł, który jest podłączony do **ostateczny kolor** węzła. Mimo że ten program do cieniowania jest kompletne i funkcjonalne, nie wiele. W związku z tym, pierwszym krokiem w tworzeniu cieniowania pracy jest często usunięcie **koloru punktu** węzła lub odłącz je od **ostateczny kolor** węzeł, aby zwolnić miejsce na innych węzłach.  
@@ -91,19 +91,19 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
   
 ##### <a name="to-perform-basic-operations-in-select-mode"></a>Aby wykonywać podstawowe operacje w trybie wybierz  
   
--   Oto jak:  
+- Oto jak:  
   
-    -   Aby dodać węzła do wykresu, wybierz ją w **przybornika** i przenieś go do powierzchni projektowej.  
+    - Aby dodać węzła do wykresu, wybierz ją w **przybornika** i przenieś go do powierzchni projektowej.  
   
-    -   Aby usunąć węzeł z wykresu, zaznacz ją i naciśnij klawisz Delete.  
+    - Aby usunąć węzeł z wykresu, zaznacz ją i naciśnij klawisz Delete.  
   
-    -   Aby zmienić położenie węzeł, zaznacz ją, a następnie przenieś go do nowej lokalizacji.  
+    - Aby zmienić położenie węzeł, zaznacz ją, a następnie przenieś go do nowej lokalizacji.  
   
-    -   Aby połączyć z dwoma węzłami, Przenieś terminalu danych wyjściowych z jednym węzłem do terminal wejścia innego węzła. Może być połączona tylko terminale, które mają niezgodne typy. Linię między terminali Pokazuje połączenia.  
+    - Aby połączyć z dwoma węzłami, Przenieś terminalu danych wyjściowych z jednym węzłem do terminal wejścia innego węzła. Może być połączona tylko terminale, które mają niezgodne typy. Linię między terminali Pokazuje połączenia.  
   
-    -   Aby usunąć połączenie, w menu skrótów dla jednej z połączonych terminali, wybierz **Przerwij linki**.  
+    - Aby usunąć połączenie, w menu skrótów dla jednej z połączonych terminali, wybierz **Przerwij linki**.  
   
-    -   Aby skonfigurować właściwości węzła, wybierz węzeł, a następnie w **właściwości** okna, określ nowe wartości właściwości.  
+    - Aby skonfigurować właściwości węzła, wybierz węzeł, a następnie w **właściwości** okna, określ nowe wartości właściwości.  
   
 ### <a name="previewing-shaders"></a>Wyświetlanie podglądu programów do cieniowania  
  Aby lepiej zrozumieć, jak cieniowania pojawi się w aplikacji, można skonfigurować, jak Twoja efekt jest przeglądany. Zbliżenie aplikacji, można wybrać jedną z kilku kształtów do renderowania, skonfiguruj tekstury i inne parametry materiału, Włącz animacji opartych na czasie efekty i zbadać pod różnymi kątami w wersji zapoznawczej.  
@@ -113,9 +113,9 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
   
 ###### <a name="to-choose-a-preview-shape"></a>Aby wybrać kształt (wersja zapoznawcza)  
   
--   Na **tryby Projektant programu do cieniowania** narzędzi, wybierz kształt, którego chcesz.  
+- Na **tryby Projektant programu do cieniowania** narzędzi, wybierz kształt, którego chcesz.  
   
-####  <a name="WWS_MaterialParameters"></a> Tekstury i parametry materiału  
+#### <a name="WWS_MaterialParameters"></a> Tekstury i parametry materiału  
  Wiele modułów cieniujących zależą od tego, tekstury i właściwości materiału w celu wygenerowania unikatowego wyglądu dla każdego rodzaju obiektu w aplikacji. Aby zobaczyć, cieniowanie tak, jak będzie wyglądał w swojej aplikacji, można ustawić tekstury i właściwości materiału, które są używane do renderowania (wersja zapoznawcza), aby dopasować tekstury i parametry, które można wykorzystać w swojej aplikacji.  
   
 ###### <a name="to-bind-a-different-texture-to-a-texture-register-or-to-modify-other-material-parameters"></a>Aby powiązać różne tekstury rejestr tekstury lub zmodyfikuj inne parametry materiału  
@@ -140,14 +140,14 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
   
 ###### <a name="to-enable-real-time-rendering"></a>Aby włączyć renderowania w czasie rzeczywistym  
   
--   Na pasku narzędzi Projektanta modułu cieniującego wybierz **renderowania w czasie rzeczywistym**.  
+- Na pasku narzędzi Projektanta modułu cieniującego wybierz **renderowania w czasie rzeczywistym**.  
   
 #### <a name="examining-the-effect"></a>Badanie wpływu  
  Wiele programów do cieniowania są zagrożone zmiennych, takich jak wyświetlanie kąt lub kierunkowe oświetlenia. Aby sprawdzić, jak efekt reaguje po zmianie tych zmiennych, możesz swobodnie obróci prostokąt (wersja zapoznawcza) i obserwować zachowanie programu do cieniowania.  
   
 ###### <a name="to-rotate-the-shape"></a>Aby obrócić kształt  
   
--   Naciśnij i przytrzymaj klawisz Alt, a następnie wybierz dowolnym punkcie powierzchni projektowej i przenieś ją.  
+- Naciśnij i przytrzymaj klawisz Alt, a następnie wybierz dowolnym punkcie powierzchni projektowej i przenieś ją.  
   
 ### <a name="exporting-shaders"></a>Eksportowanie programów do cieniowania  
  Zanim użyjesz modułu cieniującego w swojej aplikacji, należy go wyeksportować w formacie, który rozumie DirectX.  

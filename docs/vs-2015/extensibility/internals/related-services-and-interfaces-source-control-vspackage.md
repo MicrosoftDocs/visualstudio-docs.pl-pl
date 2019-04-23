@@ -11,12 +11,12 @@ ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5497c74c75c9c5a97672152ab521e1ccf141b540
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0c5b040a8c5d0cbe2daff07f279cfd6a78cbd2b7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768062"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118113"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Powiązane usługi i interfejsy (pakiet VSPackage kontroli kodu źródłowego)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ W tej sekcji przedstawiono wszystkie interfejsy dotyczące pakietu VSPackage kon
   
  Interfejsy są:  
   
--   Wymagane: Odpowiednie jednostki (projektu kontroli źródła pakietu VSPackage, wycinka kontroli źródła,) musi implementować interfejs.  
+- Wymagane: Odpowiednie jednostki (projektu kontroli źródła pakietu VSPackage, wycinka kontroli źródła,) musi implementować interfejs.  
   
--   Zalecane: Jednostka powinna implementować ten interfejs; w przeciwnym razie funkcji kontroli źródła może być ograniczona.  
+- Zalecane: Jednostka powinna implementować ten interfejs; w przeciwnym razie funkcji kontroli źródła może być ograniczona.  
   
--   Opcjonalnie: jednostki można zaimplementować ten interfejs umożliwia korzystanie z bogatszego zestawu funkcji.  
+- Opcjonalnie: jednostki można zaimplementować ten interfejs umożliwia korzystanie z bogatszego zestawu funkcji.  
   
 |Interface|Cel|Zaimplementowane przez|Implementowanie?|  
 |---------------|-------------|--------------------|----------------|  

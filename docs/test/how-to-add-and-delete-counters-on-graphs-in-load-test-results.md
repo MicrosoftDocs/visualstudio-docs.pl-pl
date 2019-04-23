@@ -11,12 +11,12 @@ ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b73d0c9f056709bf393fd2e7ab23cf917d48ffc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 692ea254719f5ae14491ae81e2e6ab0f5740fc05
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936083"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048934"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Instrukcje: Dodawanie i usuwanie liczników na wykresach w wynikach testów obciążenia
 
@@ -51,25 +51,25 @@ Aby uzyskać więcej informacji, zobacz [jak: Określanie właściwości magazyn
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>Aby wyświetlić konkretnego licznika wydajności na wykresie testu obciążenia
 
-1.  Po zakończeniu testu obciążeniowego lub po załadowaniu wynik testu na pasku narzędzi analizatora testu obciążeniowego wybierz **wykresów**.
+1. Po zakończeniu testu obciążeniowego lub po załadowaniu wynik testu na pasku narzędzi analizatora testu obciążeniowego wybierz **wykresów**.
 
      **Liczniki** panel jest wyświetlany w widoku wykresu.
 
     > [!NOTE]
     > Jeśli **liczniki** panel nie jest widoczny, wybierz polecenie **Pokaż Panel liczników** na pasku narzędzi.
 
-2.  W **liczniki** panelu, rozwiń węzły w hierarchii, dopóki nie znajdziesz licznika wydajności, który ma zostać wyświetlone w formie graficznej.
+2. W **liczniki** panelu, rozwiń węzły w hierarchii, dopóki nie znajdziesz licznika wydajności, który ma zostać wyświetlone w formie graficznej.
 
      Na przykład, aby wyświetlić ilość dostępnej pamięci na komputerze, na którym uruchomiono testy, rozwiń węzeł **komputerów**, rozwiń węzeł komputera, a następnie rozwiń **pamięci**. Zostanie wyświetlony **dostępnej ilości megabajtów** licznika.
 
-3.  Wybierz wykres, na którym chcesz wyświetlić licznika wydajności.
+3. Wybierz wykres, na którym chcesz wyświetlić licznika wydajności.
 
-4.  Kliknij prawym przyciskiem myszy licznik wydajności w **liczniki** panelu, a następnie wybierz pozycję **Pokaż licznik na wykresie**.
+4. Kliknij prawym przyciskiem myszy licznik wydajności w **liczniki** panelu, a następnie wybierz pozycję **Pokaż licznik na wykresie**.
 
     > [!TIP]
     > Aby tymczasowo zatrzymać wyświetlanie danych licznika wydajności na wykresie, wyczyść pole wyboru dla licznika wydajności w legendzie. Dzięki temu statystyki minimalna, maksymalna i średnia, które mają być analizowane bez wyświetlania linię trendu na wykresie. Może to być przydatne, jeśli wykres zawiera kilka nakładających się wykresy liczników wydajności podczas analizowania problemów. Aby uzyskać więcej informacji, zobacz [analizowanie testów obciążenia przy użyciu legendy wykresu](../test/use-the-graphs-view-legend-to-analyze-load-tests.md).
 
-5.  Aby usunąć dane licznika wydajności z wykresu, kliknij prawym przyciskiem myszy licznik wydajności w **licznika** kolumny legendy, a następnie wybierz pozycję **Usuń**.
+5. Aby usunąć dane licznika wydajności z wykresu, kliknij prawym przyciskiem myszy licznik wydajności w **licznika** kolumny legendy, a następnie wybierz pozycję **Usuń**.
 
      \- lub —
 

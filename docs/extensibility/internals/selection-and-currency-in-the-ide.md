@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0db376b57c6f581137b2bf48fbc5d354651a8ef6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 612549e9aceb7a9bad6da2a5388dedd277469bad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653960"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098821"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Wybór i aktualność w środowisku IDE
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zintegrowanego środowiska programistycznego (IDE) przechowuje informacje o użytkownikach aktualnie wybrane obiekty za pomocą wyboru *kontekstu*. Za pomocą kontekst zaznaczenia pakietów VSPackage mogą brać udział w walucie śledzenia na dwa sposoby:
 
--   Poprzez propagowanie waluty informacji na temat pakietów VSPackage środowiska IDE.
+- Poprzez propagowanie waluty informacji na temat pakietów VSPackage środowiska IDE.
 
--   Monitorując wybory aktualnie aktywnych użytkowników w środowisku IDE.
+- Monitorując wybory aktualnie aktywnych użytkowników w środowisku IDE.
 
 ## <a name="selection-context"></a>Kontekst zaznaczenia
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE globalnie śledzi informacje o walucie IDE w obiekcie kontekstu własnego wyboru globalnego. W poniższej tabeli przedstawiono elementów, które tworzą kontekst zaznaczenia.
@@ -38,9 +38,9 @@ ms.locfileid: "56653960"
 
  Ponadto środowisko obsługuje dwie listy globalne:
 
--   Lista aktywnych identyfikatory poleceń interfejsu użytkownika
+- Lista aktywnych identyfikatory poleceń interfejsu użytkownika
 
--   Lista typów obecnie aktywnym elementem.
+- Lista typów obecnie aktywnym elementem.
 
 ### <a name="window-types-and-selection"></a>Typy okien i wybór
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE organizuje systemu windows na dwa ogólne typy:
@@ -58,9 +58,9 @@ ms.locfileid: "56653960"
 ### <a name="events-and-currency"></a>Zdarzenia i waluty
  Mogą wystąpić dwa typy zdarzeń, które mają wpływ na środowisko pojęcie waluty:
 
--   Zdarzenia, które są przenoszone na poziomie globalnym i Zmień kontekst zaznaczenia ramki okna. Przykłady tego typu zdarzeń okno podrzędne MDI, są otwarte okna narzędzi globalnego otwierana lub okna narzędzi typu projektu otwieranego.
+- Zdarzenia, które są przenoszone na poziomie globalnym i Zmień kontekst zaznaczenia ramki okna. Przykłady tego typu zdarzeń okno podrzędne MDI, są otwarte okna narzędzi globalnego otwierana lub okna narzędzi typu projektu otwieranego.
 
--   Zdarzenia, które zmieniają elementy śledzone w kontekście wybór ramki okna. Przykłady obejmują zmianę w obiekt DocObject lub zmianę w oknie typu projektu.
+- Zdarzenia, które zmieniają elementy śledzone w kontekście wybór ramki okna. Przykłady obejmują zmianę w obiekt DocObject lub zmianę w oknie typu projektu.
 
 ## <a name="see-also"></a>Zobacz też
 - [Wybór obiektów kontekstu](../../extensibility/internals/selection-context-objects.md)

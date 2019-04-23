@@ -8,12 +8,12 @@ ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 768695338f77943e44d5e1883ce5da9d9a6bc307
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12582aa4c1aa41aa0a38f652cf4841ba1f9953e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916690"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042029"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Instrukcje: Wybierz aktywne ustawienia uruchamiania dla testu obciążenia
 
@@ -32,11 +32,11 @@ W **edytora testu obciążenia**, aktywnego ustawienia uruchamiania jest identyf
 
 ## <a name="select-the-active-run-setting"></a>Wybierz aktywnego ustawienia uruchamiania
 
-1.  Otwórz test obciążenia.
+1. Otwórz test obciążenia.
 
-2.  Rozwiń **parametrów uruchomieniowych** folderu.
+2. Rozwiń **parametrów uruchomieniowych** folderu.
 
-3.  Kliknij prawym przyciskiem myszy węzeł parametrów uruchomieniowych, który ma być aktywnym węźle, a następnie kliknij **Ustaw jako aktywny**.
+3. Kliknij prawym przyciskiem myszy węzeł parametrów uruchomieniowych, który ma być aktywnym węźle, a następnie kliknij **Ustaw jako aktywny**.
 
      W **Edito testu obciążenia**r, węzeł dotyczy uruchomieniowy jest aktualizowany wraz z sufiksem "[aktywny]".
 

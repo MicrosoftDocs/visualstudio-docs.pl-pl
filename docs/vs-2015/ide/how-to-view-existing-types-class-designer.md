@@ -15,12 +15,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5eb3891026976c036fb48b16ed5ebfeba909100e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 582b3763cf2925e373bb3f71b843755ade49dcd2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758146"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046502"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Instrukcje: Wyświetlanie istniejących typów (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ Aby wyświetlić istniejący typ i jej elementów członkowskich, należy dodać
    >  Jeśli rozwiązanie ma projektu, który udostępnia kod przez wiele aplikacji, można przeciągnąć pliki lub kod do diagramu klasy tylko z tych źródeł:  
    > 
    > - Projekt aplikacji, który zawiera diagram  
-   >   -   Współdzielony projekt zaimportowany przez projekt aplikacji  
-   >   -   Projekt odwołania  
-   >   -   Zestaw  
+   >   - Współdzielony projekt zaimportowany przez projekt aplikacji  
+   >   - Projekt odwołania  
+   >   - Zestaw  
   
     Kształty przedstawiające typy zdefiniowane w pliku kodu źródłowego są wyświetlane na diagramie w miejscu, gdzie przeciągnąłeś plik.  
   
@@ -61,7 +61,7 @@ Aby wyświetlić istniejący typ i jej elementów członkowskich, należy dodać
   
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>Aby wyświetlić zawartość projektu na diagramie klasy  
   
-1.  W Eksploratorze rozwiązań lub w widoku klas kliknij prawym przyciskiem myszy projekt i wybierz polecenie **widoku**, następnie wybierz **Pokaż Diagram klas**.  
+1. W Eksploratorze rozwiązań lub w widoku klas kliknij prawym przyciskiem myszy projekt i wybierz polecenie **widoku**, następnie wybierz **Pokaż Diagram klas**.  
   
      Tworzony jest automatycznie wypełniony Diagram klas.  
   

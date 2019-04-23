@@ -27,49 +27,53 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3521f39227b5abcb51a4db6b61e6bf0d853e5afe
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 47287bdc5bf0081970f4077ee8749a1ed0d71dad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954061"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118243"
 ---
-# <a name="format-specifiers-in-c"></a>Specyfikatory formatu w C# #
+# <a name="format-specifiers-in-c"></a>Specyfikatory formatu w języku C\#
+
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Można zmienić format wyświetlania wartości w **Obejrzyj** okna przy użyciu specyfikatorów formatu. Możesz również użyć specyfikatorów formatu w **bezpośrednie** oknie **polecenia** okna, a nawet w oknach źródłowych. Jeśli zatrzymasz się na wyrażeniu w tych oknach, wynik pojawi się w poradzie dotyczącej danych. DataTips będzie odzwierciedlać specyfikatora formatu na wyświetlaczu DataTip.  
-  
- Aby użyć specyfikatora formatu, wpisz wyrażenie rozdzielanych przecinkami. Po przecinku Dodaj specyfikator odpowiednie.  
-  
-## <a name="using-format-specifiers"></a>Przy użyciu specyfikatorów formatu  
- Jeśli masz następujący kod:  
-  
-```  
-{  
-    int my_var1 = 0x0065;  
-    int my_var2 = 0x0066;  
-    int my_var3 = 0x0067;  
-}  
-```  
-  
- Dodaj `my_var1` zmiennej w oknie czujki (podczas debugowania, **debugowanie / Windows / Obejrzyj / obejrzeć 1**) i ustaw wyświetlania w postaci szesnastkowej (w **Obejrzyj** okna, kliknij prawym przyciskiem myszy zmienną i wybierz **Wyświetlanie szesnastkowe**). Teraz **Obejrzyj** okno pokazuje, że zawiera on wartości 0x0065. Aby zobaczyć tę wartość, wyrażone jako liczba całkowita dziesiętna zamiast Szesnastkowa liczba całkowita, w kolumnie Nazwa po nazwie zmiennej, Dodaj specyfikator formatu dziesiętnego: **, d**. Kolumna wartość wyświetla teraz wartość dziesiętną 101  
-  
- ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")  
-  
-## <a name="format-specifiers"></a>Specyfikatory formatu  
- W poniższej tabeli przedstawiono specyfikatory formatu C# rozpoznawanym przez debuger.  
-  
-|Specyfikator|Format|Oryginalnej wartości czujki|Wyświetla|  
-|---------------|------------|--------------------------|--------------|  
-|ac|Wymuś wyniku obliczenia wyrażenia. Może to być przydatne, gdy bezwarunkowa ocena właściwości i niejawne wywołania funkcji jest wyłączone. Zobacz [efekty uboczne i wyrażenia](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|Komunikat "niejawne Obliczanie funkcji zostało wyłączone przez użytkownika"|\<value>|  
-|d|Liczba całkowita dziesiętna|0x0065|101|  
-|dynamic|Wyświetla określony obiekt przy użyciu dynamicznego widoku|Wyświetla wszystkie elementy członkowskie obiektu, w tym widoku dynamicznego|Wyświetla tylko widoku dynamicznego|  
-|h|Szesnastkowa liczba całkowita|61541|0x0000F065|  
-|nq|ciąg znaków z nie cudzysłowów|"Mój String"|Moje ciągu|  
-|hidden|Wyświetla wszystkie publiczne i niepubliczne składowe|Wyświetla publiczne elementy członkowskie|Wyświetla wszystkie elementy członkowskie|  
-|nieprzetworzone|Wyświetla elementu, jak wygląda na to, w węźle pierwotne elementu. Prawidłowy tylko obiektów serwera proxy.|Słownik\<T >|Surowy widok tego słownika\<T >|  
-|wyniki|Używane z zmienną typu, który implementuje interfejs IEnumerable lub typ IEnumerable\<T >, zazwyczaj wynikiem wyrażenia zapytania. Wyświetla tylko elementów członkowskich, które zawierają wyniku zapytania.|Wyświetla wszystkie elementy członkowskie.|Wyświetla elementy Członkowskie spełniają warunki zapytania.|  
-  
-## <a name="see-also"></a>Zobacz też  
- [Wyrażenie kontrolne i QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)   
- [Windows zmiennej](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+Można zmienić format wyświetlania wartości w **Obejrzyj** okna przy użyciu specyfikatorów formatu. Możesz również użyć specyfikatorów formatu w **bezpośrednie** oknie **polecenia** okna, a nawet w oknach źródłowych. Jeśli zatrzymasz się na wyrażeniu w tych oknach, wynik pojawi się w poradzie dotyczącej danych. DataTips będzie odzwierciedlać specyfikatora formatu na wyświetlaczu DataTip.
+
+Aby użyć specyfikatora formatu, wpisz wyrażenie rozdzielanych przecinkami. Po przecinku Dodaj specyfikator odpowiednie.
+
+## <a name="using-format-specifiers"></a>Przy użyciu specyfikatorów formatu
+
+Jeśli masz następujący kod:
+
+```csharp
+{
+    int my_var1 = 0x0065;
+    int my_var2 = 0x0066;
+    int my_var3 = 0x0067;
+}
+```
+
+Dodaj `my_var1` zmiennej w oknie czujki (podczas debugowania, **debugowanie / Windows / Obejrzyj / obejrzeć 1**) i ustaw wyświetlania w postaci szesnastkowej (w **Obejrzyj** okna, kliknij prawym przyciskiem myszy zmienną i wybierz **Wyświetlanie szesnastkowe**). Teraz **Obejrzyj** okno pokazuje, że zawiera on wartości 0x0065. Aby zobaczyć tę wartość, wyrażone jako liczba całkowita dziesiętna zamiast Szesnastkowa liczba całkowita, w kolumnie Nazwa po nazwie zmiennej, Dodaj specyfikator formatu dziesiętnego: **, d**. Kolumna wartość wyświetla teraz wartość dziesiętną 101
+
+![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
+
+## <a name="format-specifiers"></a>Specyfikatory formatu
+
+W poniższej tabeli przedstawiono specyfikatory formatu C# rozpoznawanym przez debuger.
+
+|Specyfikator|Format|Oryginalnej wartości czujki|Wyświetla|
+|---------------|------------|--------------------------|--------------|
+|ac|Wymuś wyniku obliczenia wyrażenia. Może to być przydatne, gdy bezwarunkowa ocena właściwości i niejawne wywołania funkcji jest wyłączone. Zobacz [efekty uboczne i wyrażenia](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|Komunikat "niejawne Obliczanie funkcji zostało wyłączone przez użytkownika"|\<value>|
+|d|Liczba całkowita dziesiętna|0x0065|101|
+|dynamic|Wyświetla określony obiekt przy użyciu dynamicznego widoku|Wyświetla wszystkie elementy członkowskie obiektu, w tym widoku dynamicznego|Wyświetla tylko widoku dynamicznego|
+|h|Szesnastkowa liczba całkowita|61541|0x0000F065|
+|nq|ciąg znaków z nie cudzysłowów|"Mój String"|Moje ciągu|
+|hidden|Wyświetla wszystkie publiczne i niepubliczne składowe|Wyświetla publiczne elementy członkowskie|Wyświetla wszystkie elementy członkowskie|
+|nieprzetworzone|Wyświetla elementu, jak wygląda na to, w węźle pierwotne elementu. Prawidłowy tylko obiektów serwera proxy.|Słownik\<T >|Surowy widok tego słownika\<T >|
+|wyniki|Używane z zmienną typu, który implementuje interfejs IEnumerable lub typ IEnumerable\<T >, zazwyczaj wynikiem wyrażenia zapytania. Wyświetla tylko elementów członkowskich, które zawierają wyniku zapytania.|Wyświetla wszystkie elementy członkowskie.|Wyświetla elementy Członkowskie spełniają warunki zapytania.|
+
+## <a name="see-also"></a>Zobacz też
+
+- [Okna wyrażeń kontrolnych i szybkich wyrażeń kontrolnych](../debugger/watch-and-quickwatch-windows.md)
+- [Windows zmiennej](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a782fe1b69fba6a61b790cb5a6fa8c79f20e5e1d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: dd579e6bf434903ecc1e2fe60b1e62d54c165034
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649150"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114369"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Strona odwołań, Projektant projektu (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,9 +46,9 @@ Użyj **odwołania** strony **projektanta projektu** Zarządzanie odwołania, od
 >  Jeśli system projektu znajdzie odwołania do zestawu, system rozwiązuje odwołania przez wyszukiwanie w następujących lokalizacjach, w następującej kolejności:  
 > 
 > 1. Folder projektu. Pliki folderu projektu pojawiają się w **Eksploratora rozwiązań** podczas **Pokaż wszystkie pliki** nie ma zastosowania.  
->    2.  Foldery, które są określone w **ścieżki odwołania** okno dialogowe.  
->    3.  Foldery zawierające pliki w **Dodaj odwołanie** okno dialogowe.  
->    4.  Folder obj tego projektu. (Po dodaniu do projektu odwołanie COM, jeden lub więcej zestawów można dodać do folderu obj projektu.)  
+>    2. Foldery, które są określone w **ścieżki odwołania** okno dialogowe.  
+>    3. Foldery zawierające pliki w **Dodaj odwołanie** okno dialogowe.  
+>    4. Folder obj tego projektu. (Po dodaniu do projektu odwołanie COM, jeden lub więcej zestawów można dodać do folderu obj projektu.)  
   
  **Odwołania**  
  Ta lista zawiera wszystkie odwołania w projekcie, używane lub nieużywane.  
@@ -80,11 +80,11 @@ Użyj **odwołania** strony **projektanta projektu** Zarządzanie odwołania, od
  **Importowanie użytkowników aktualizacji**  
  Wybierz przestrzeń nazw określonych przez użytkownika na liście przestrzeni nazw, wpisz nazwę, którą chcesz zamienić go w **zaimportowane przestrzenie nazw** , a następnie kliknij ten przycisk, aby przejść do nowej przestrzeni nazw. Przycisk jest aktywny tylko wtedy, gdy w wybranej przestrzeni nazw to taki, który zostanie dodany do listy przy użyciu **dodać Import użytkownika** przycisku. Możesz dodać:  
   
--   Klas lub przestrzeni nazw, takich jak <xref:System.Math?displayProperty=fullName>.  
+- Klas lub przestrzeni nazw, takich jak <xref:System.Math?displayProperty=fullName>.  
   
--   Importuje aliasem, takich jak `VB=Microsoft.VisualBasic`.  
+- Importuje aliasem, takich jak `VB=Microsoft.VisualBasic`.  
   
--   Obszary nazw XML, takie jak `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.  
+- Obszary nazw XML, takie jak `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodawanie odwołania](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   

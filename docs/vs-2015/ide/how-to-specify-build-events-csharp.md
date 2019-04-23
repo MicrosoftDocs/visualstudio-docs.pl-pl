@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4f54d10bb366ced70347db8d154b0a132253c97
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ae43b6b1cdc5a3c94e6eb14d0aaa398c320c6274
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781088"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113862"
 ---
 # <a name="how-to-specify-build-events-c"></a>Instrukcje: Określanie zdarzeń kompilacji (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ Korzystanie ze zdarzeń kompilacji określić polecenia, które są uruchamiane 
   
 #### <a name="to-specify-a-build-event"></a>Aby określić zdarzenia kompilacji  
   
-1.  W **Eksploratora rozwiązań**, wybierz projekt, dla którego chcesz określić zdarzeń kompilacji.  
+1. W **Eksploratora rozwiązań**, wybierz projekt, dla którego chcesz określić zdarzeń kompilacji.  
   
-2.  Na **projektu** menu, kliknij przycisk **właściwości**.  
+2. Na **projektu** menu, kliknij przycisk **właściwości**.  
   
-3.  Wybierz **zdarzenia kompilacji** kartę.  
+3. Wybierz **zdarzenia kompilacji** kartę.  
   
-4.  W **wiersz polecenia zdarzenia sprzed kompilacji** Określ składnia zdarzenia kompilacji.  
+4. W **wiersz polecenia zdarzenia sprzed kompilacji** Określ składnia zdarzenia kompilacji.  
   
     > [!NOTE]
     >  Jeśli projekt jest aktualny, a nie kompilacja zostaje wyzwolona, nie należy uruchamiać zdarzenia prekompilacyjnego.  
   
-5.  W **wiersz polecenia zdarzenia po kompilacji** Określ składnia zdarzenia kompilacji.  
+5. W **wiersz polecenia zdarzenia po kompilacji** Określ składnia zdarzenia kompilacji.  
   
     > [!NOTE]
     >  Dodaj `call` instrukcję przed polecenia wszystkich wykonywanych po kompilacji, które uruchamiają pliki bat. Na przykład `call C:\MyFile.bat` lub `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
-6.  W **Uruchom zdarzenie po kompilacji** należy określić, na jakich warunkach, aby uruchomić zdarzenie mające miejsce po kompilacji.  
+6. W **Uruchom zdarzenie po kompilacji** należy określić, na jakich warunkach, aby uruchomić zdarzenie mające miejsce po kompilacji.  
   
     > [!NOTE]
     >  Aby dodać długiej składni lub wybrać dowolne makra z kompilacji [prekompilacji zdarzeń/po kompilacji — zdarzenie wiersza polecenia okno dialogowe](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), kliknij przycisk oznaczony wielokropkiem (**...** ) do wyświetlenia w polu edycji.  
@@ -145,15 +145,15 @@ Korzystanie ze zdarzeń kompilacji określić polecenia, które są uruchamiane 
   
 #### <a name="to-invoke-a-post-build-event-to-modify-the-application-manifest"></a>Aby wywołać zdarzenie po kompilacji, aby zmodyfikować manifest aplikacji  
   
-1.  Tworzenie aplikacji Windows dla projektu, które mają zostać opublikowane. Z **pliku** menu wskaż **New**, a następnie kliknij przycisk **projektu**.  
+1. Tworzenie aplikacji Windows dla projektu, które mają zostać opublikowane. Z **pliku** menu wskaż **New**, a następnie kliknij przycisk **projektu**.  
   
-2.  W **nowy projekt** okna dialogowego rozwiń **Visual C#**, kliknij przycisk **Windows**, a następnie kliknij przycisk **aplikacja interfejsu Windows Forms** szablonu. Nadaj projektowi nazwę `CSWinApp`.  
+2. W **nowy projekt** okna dialogowego rozwiń **Visual C#**, kliknij przycisk **Windows**, a następnie kliknij przycisk **aplikacja interfejsu Windows Forms** szablonu. Nadaj projektowi nazwę `CSWinApp`.  
   
-3.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
+3. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
   
-4.  W Projektancie projektu zlokalizuj **Publikuj** strony, a następnie ustaw **publikowania lokalizacji** do `C:\TEMP\`.  
+4. W Projektancie projektu zlokalizuj **Publikuj** strony, a następnie ustaw **publikowania lokalizacji** do `C:\TEMP\`.  
   
-5.  Opublikuj projekt, klikając **Publikuj teraz**.  
+5. Opublikuj projekt, klikając **Publikuj teraz**.  
   
      Plik manifestu zostanie utworzone i umieścić w `C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest`. Aby wyświetlić manifest, kliknij prawym przyciskiem myszy plik, kliknij przycisk **Otwórz za pomocą**, wybierz opcję **wybierz program, z listy**, a następnie kliknij przycisk **Notatnik**.  
   
@@ -163,9 +163,9 @@ Korzystanie ze zdarzeń kompilacji określić polecenia, które są uruchamiane 
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />  
     ```  
   
-6.  W Projektancie projektu kliknij **zdarzenia kompilacji** kartę, a następnie kliknij przycisk **edytować po kompilacji** przycisku.  
+6. W Projektancie projektu kliknij **zdarzenia kompilacji** kartę, a następnie kliknij przycisk **edytować po kompilacji** przycisku.  
   
-7.  W **wiersz polecenia zdarzenia po kompilacji** wpisz następujące polecenie:  
+7. W **wiersz polecenia zdarzenia po kompilacji** wpisz następujące polecenie:  
   
      `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`  
   
@@ -173,7 +173,7 @@ Korzystanie ze zdarzeń kompilacji określić polecenia, które są uruchamiane 
   
      Ponieważ `$(TargetPath)` — makro określa pełną ścieżkę do pliku wykonywalnego, trwa tworzenie `$(TargetPath)`.manifest określą manifestem aplikacji utworzonym w katalogu bin. Publikowanie skopiuje tego manifestu do lokalizacji publikowania, które zostały ustawione wcześniej.  
   
-8.  Opublikuj projekt ponownie. Przejdź do **Publikuj** strony, a następnie kliknij przycisk **Publikuj teraz**.  
+8. Opublikuj projekt ponownie. Przejdź do **Publikuj** strony, a następnie kliknij przycisk **Publikuj teraz**.  
   
      Ponownie wyświetlić manifest. Aby wyświetlić manifest, otwórz katalog publikacji, kliknij prawym przyciskiem myszy plik, kliknij przycisk **otwierających**, wybierz opcję **wybierz program, z listy**, a następnie kliknij przycisk **Notatnik**.  
   

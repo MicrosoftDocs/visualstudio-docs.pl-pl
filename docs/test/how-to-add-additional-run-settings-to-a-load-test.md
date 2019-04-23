@@ -9,12 +9,12 @@ ms.assetid: 257d2a24-d582-4cfe-8b2b-51f51ba9cc84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd5a7183589255d246fd299b9ec628330d948dcf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1d7f9d0c9ad07223d0b59d7aeca585b53432280
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917548"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114330"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Instrukcje: Dodawanie dodatkowych ustawień przebiegu testu obciążenia
 
@@ -26,21 +26,21 @@ Do testu obciążeniowego można dodać więcej parametrów uruchomieniowych z r
 
 ## <a name="to-add-another-run-setting"></a>Aby dodać kolejny parametr uruchomieniowy
 
-1.  Otwórz test obciążenia.
+1. Otwórz test obciążenia.
 
-2.  (Opcjonalnie) Rozwiń **parametrów uruchomieniowych** folderu.
+2. (Opcjonalnie) Rozwiń **parametrów uruchomieniowych** folderu.
 
-3.  Kliknij prawym przyciskiem myszy **parametrów uruchomieniowych** i wybierz polecenie **Dodaj parametry uruchomieniowe**.
+3. Kliknij prawym przyciskiem myszy **parametrów uruchomieniowych** i wybierz polecenie **Dodaj parametry uruchomieniowe**.
 
      Nowy parametr uruchomieniowy jest dodawany do **parametrów uruchomieniowych** folderu.
 
-4.  Na **widoku** menu, wybierz **okno właściwości**.
+4. Na **widoku** menu, wybierz **okno właściwości**.
 
      **Właściwości** zostanie wyświetlone okno z właściwościami, dla wybranego ustawienia uruchamiania.
 
-5.  W **właściwości** okna, użyj pola tekstowego dla **nazwa** właściwości nadaj nowemu Ustawianie nazwy, która opisuje przeznaczenie parametru uruchomieniowego (na przykład **parametr uruchomieniowy: Przebieg pięciominutowy**).
+5. W **właściwości** okna, użyj pola tekstowego dla **nazwa** właściwości nadaj nowemu Ustawianie nazwy, która opisuje przeznaczenie parametru uruchomieniowego (na przykład **parametr uruchomieniowy: Przebieg pięciominutowy**).
 
-6.  Użyj **właściwości** okna, aby zmienić parametry uruchomieniowe. Na przykład zmienić czas trwania testu na **00:05:00** Aby uruchomić test na pięć minut.
+6. Użyj **właściwości** okna, aby zmienić parametry uruchomieniowe. Na przykład zmienić czas trwania testu na **00:05:00** Aby uruchomić test na pięć minut.
 
     > [!NOTE]
     > Aby uzyskać pełną listę właściwości parametrów uruchomieniowych i ich opisów, zobacz [właściwości ustawień przebiegu testu obciążenia](../test/load-test-run-settings-properties.md).

@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3087353b4d8875d1933c285343c3f1460c0e276
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba45ba733f5447523b6793d4f5e2946c3507c82e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767339"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098692"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>Rozwiązywanie problemów z rozszerzeniami dla diagramów warstw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ W tym temacie omawia niektóre problemy, które można napotkać podczas tworzen
   
 #### <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>Pojawi się stara wersja mojego wyniku weryfikacji lub Moja metoda sprawdzania poprawności nie jest wywoływana.  
   
-1.  W doświadczalnym wystąpieniu programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]na **kompilacji** menu, kliknij przycisk **czyste rozwiązanie**. Czyści buforowane wyników poprzedniej analizy sprawdzania poprawności.  
+1. W doświadczalnym wystąpieniu programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]na **kompilacji** menu, kliknij przycisk **czyste rozwiązanie**. Czyści buforowane wyników poprzedniej analizy sprawdzania poprawności.  
   
-2.  Upewnij się, że warstwy w modelu są skojarzone z elementami kodu i że istnieje co najmniej jedno łącze zależności w modelu. Sprawdzanie poprawności nie jest wywoływana, jeśli nie ma nic do sprawdzania poprawności.  
+2. Upewnij się, że warstwy w modelu są skojarzone z elementami kodu i że istnieje co najmniej jedno łącze zależności w modelu. Sprawdzanie poprawności nie jest wywoływana, jeśli nie ma nic do sprawdzania poprawności.  
   
-3.  Regularne punkty przerwania mogą nie działać w metodzie sprawdzania poprawności, ponieważ jest uruchamiana w oddzielnym procesie. Należy wstawić wywołanie `System.Diagnostics.Debugger.Launch()` Jeśli chcesz przejść przez metodę.  
+3. Regularne punkty przerwania mogą nie działać w metodzie sprawdzania poprawności, ponieważ jest uruchamiana w oddzielnym procesie. Należy wstawić wywołanie `System.Diagnostics.Debugger.Launch()` Jeśli chcesz przejść przez metodę.  
   
-4.  W **source.extension.vsixmanifest** upewnij się, że dodano zarówno w projekcie sprawdzania poprawności warstwy **składnik MEF** elementu i **niestandardowy typ rozszerzenia** w obszarze **Zawartości**.  
+4. W **source.extension.vsixmanifest** upewnij się, że dodano zarówno w projekcie sprawdzania poprawności warstwy **składnik MEF** elementu i **niestandardowy typ rozszerzenia** w obszarze **Zawartości**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzone diagramy warstw](../modeling/extend-layer-diagrams.md)

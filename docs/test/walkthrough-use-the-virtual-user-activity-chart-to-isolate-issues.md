@@ -9,12 +9,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d8971546c0f51dc759731a90569d3f7dc3f0e142
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 5e25e9c5c92d32f2b68d8ce4b967fbf191e78554
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069947"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114356"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Przewodnik: Za pomocą wykresu wirtualnego aktywności użytkownika umożliwiającego Wyizolowanie problemów
 
@@ -26,19 +26,19 @@ Wykres aktywności wirtualnych użytkowników umożliwia wizualizowanie aktywno�
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Wykonaj następujące procedury:
+- Wykonaj następujące procedury:
 
-    -   [Rejestrowanie i uruchamianie testu wydajności sieci web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests).
+    - [Rejestrowanie i uruchamianie testu wydajności sieci web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests).
 
-    -   [Tworzenie i uruchamianie testu obciążenia](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
+    - [Tworzenie i uruchamianie testu obciążenia](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Otwórz rozwiązanie ColorWebApp utworzony w poprzednich — wskazówki
 
-1.  Otwórz program Visual Studio.
+1. Otwórz program Visual Studio.
 
-2.  Otwórz **ColorWebApp** rozwiązanie, które zawiera *testy LoadTest1.loadtest*. Obciążenie wyniki testów z czynności w trzech instruktażach wymienionych na początku tego tematu, w sekcji wymagania wstępne.
+2. Otwórz **ColorWebApp** rozwiązanie, które zawiera *testy LoadTest1.loadtest*. Obciążenie wyniki testów z czynności w trzech instruktażach wymienionych na początku tego tematu, w sekcji wymagania wstępne.
 
      Pozostałe kroki w tym przewodniku zakładają aplikację sieci web o nazwie ColorWebApp, test wydajności sieci web o nazwie *ColorWebAppTest.webtest* i obciążenia, test o nazwie *testy LoadTest1.loadtest*.
 
@@ -46,7 +46,7 @@ Wykres aktywności wirtualnych użytkowników umożliwia wizualizowanie aktywno�
 
 Uruchom test obciążeniowy, aby zbierać dane o aktywności użytkownika wirtualnego.
 
--   W **edytora testu obciążenia**, wybierz **Uruchom** przycisk na pasku narzędzi. LoadTest1 zaczyna być uruchamiana.
+- W **edytora testu obciążenia**, wybierz **Uruchom** przycisk na pasku narzędzi. LoadTest1 zaczyna być uruchamiana.
 
 ## <a name="isolate-issues-in-the-virtual-user-activity-chart"></a>Wyizolować problemy z wykres aktywności wirtualnych użytkowników
 
@@ -54,11 +54,11 @@ Po uruchomić test obciążenia i zebrane dane o aktywności wirtualnego użytko
 
 ### <a name="to-use-the-virtual-user-activity-chart-in-your-load-test-results"></a>Aby użyć wykres aktywności wirtualnych użytkowników, w wynikach testu obciążenia
 
-1.  Po załadowaniu zakończenia testu uruchomiony, **Podsumowanie** wyświetlana jest strona wyników testów obciążenia w **analizatora testu obciążenia**. Wybierz **wykresów** przycisk na pasku narzędzi.
+1. Po załadowaniu zakończenia testu uruchomiony, **Podsumowanie** wyświetlana jest strona wyników testów obciążenia w **analizatora testu obciążenia**. Wybierz **wykresów** przycisk na pasku narzędzi.
 
      Wyświetlany jest widok wykresów.
 
-2.  Na **czas odpowiedzi strony** wykres, kliknij prawym przyciskiem myszy w pobliżu jednej ikony naruszenia progu i wybierz **przejdź do szczegółów użytkownika**.
+2. Na **czas odpowiedzi strony** wykres, kliknij prawym przyciskiem myszy w pobliżu jednej ikony naruszenia progu i wybierz **przejdź do szczegółów użytkownika**.
 
     > [!NOTE]
     > Możesz użyć **szczegóły** znajdujący się w **edytora testu obciążenia** narzędzi, aby otworzyć zbyt wykresu aktywności użytkownika. Jednak jeśli używasz **przejdź do szczegółów użytkownika** opcji **wykres aktywności wirtualnych użytkowników** zostanie automatycznie powiększyć część testu, który kliknięto prawym przyciskiem myszy na wykresie.
@@ -67,37 +67,37 @@ Po uruchomić test obciążenia i zebrane dane o aktywności wirtualnego użytko
 
      Na osi y poziome wykresy reprezentują poszczególnych użytkowników wirtualnych. Oś x przedstawia oś czasu dla przebiegu testu obciążeniowego.
 
-3.  W **Powiększ do okresu czasu** narzędzie poniżej **wykres aktywności wirtualnych użytkowników**, dostosować po lewej stronie i prawego suwaki, dopóki oba są Zamknij, aby ikona naruszenia progu. Spowoduje to zmianę skali czasu w **wykres aktywności wirtualnych użytkowników**
+3. W **Powiększ do okresu czasu** narzędzie poniżej **wykres aktywności wirtualnych użytkowników**, dostosować po lewej stronie i prawego suwaki, dopóki oba są Zamknij, aby ikona naruszenia progu. Spowoduje to zmianę skali czasu w **wykres aktywności wirtualnych użytkowników**
 
-4.  W **Legenda szczegółów**, zaznacz pole wyboru dla **(Podświetl błędy)**. Należy zauważyć, że jest wyróżniona wirtualnego użytkownika, który spowodował naruszenie progu.
+4. W **Legenda szczegółów**, zaznacz pole wyboru dla **(Podświetl błędy)**. Należy zauważyć, że jest wyróżniona wirtualnego użytkownika, który spowodował naruszenie progu.
 
-5.  W **filtrowanie wyników** panelu, usuń zaznaczenie pól wyboru dla **Pokaż pomyślne wyniki** i **HttpError** , ale pozostawić **ValidationRuleError**zaznaczone pole wyboru.
+5. W **filtrowanie wyników** panelu, usuń zaznaczenie pól wyboru dla **Pokaż pomyślne wyniki** i **HttpError** , ale pozostawić **ValidationRuleError**zaznaczone pole wyboru.
 
      **Wykres aktywności wirtualnych użytkowników** wyświetla tylko użytkowników wirtualnych zrealizowanych przez więcej niż 3 sekundy *Red.aspx* stronie określony przez naruszenie progu skonfigurowana w poprzednim przewodniku.
 
-6.  Zatrzymaj wskaźnik myszy nad linii poziomej, reprezentujący wirtualnego użytkownika za pomocą błąd reguły sprawdzania poprawności dla naruszenie progu.
+6. Zatrzymaj wskaźnik myszy nad linii poziomej, reprezentujący wirtualnego użytkownika za pomocą błąd reguły sprawdzania poprawności dla naruszenie progu.
 
-7.  Etykietka narzędzia jest wyświetlana z następującymi informacjami:
+7. Etykietka narzędzia jest wyświetlana z następującymi informacjami:
 
-    -   **Identyfikator użytkownika**
+    - **Identyfikator użytkownika**
 
-    -   **Scenariusz**
+    - **Scenariusz**
 
-    -   **Test**
+    - **Test**
 
-    -   **Wynik**
+    - **Wynik**
 
-    -   **Sieci**
+    - **Sieci**
 
-    -   **Godzina rozpoczęcia**
+    - **Godzina rozpoczęcia**
 
-    -   **Czas trwania**
+    - **Czas trwania**
 
-    -   **Agent**
+    - **Agent**
 
-    -   **Dziennik testu**
+    - **Dziennik testu**
 
-8.  Należy zauważyć, że **Dziennik testu** łącze. Wybierz **Dziennik testu** łącza.
+8. Należy zauważyć, że **Dziennik testu** łącze. Wybierz **Dziennik testu** łącza.
 
 9. Test wydajności sieci web ColorWebTest, który jest skojarzony z dziennika zostanie otwarty w **Podgląd wyników testu wydajności sieci Web**. To pozwala izolować, gdzie wystąpiło naruszenie progowe.
 

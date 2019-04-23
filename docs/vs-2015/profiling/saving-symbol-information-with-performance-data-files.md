@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bd8b861b6501fda2ed0739725a05225e31343e1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e9d2e8b0414746523d0f76e8266f6463d9c05574
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780892"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098895"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Zapisywanie informacji o symbolach w plików danych dotyczących wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,9 +51,9 @@ Jeśli używasz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zintegrowanego śro
   
 - Upewnij się, że zostało ustawione ścieżkę pamięci podręcznej symboli Windows. Wykonaj jedną z następujących czynności, aby ustawić ścieżkę pamięci podręcznej symboli:  
   
-  -   Zestaw debuger -> symbole w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE do prawidłowej ścieżki.  
+  - Zestaw debuger -> symbole w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE do prawidłowej ścieżki.  
   
-  -   Dodaj opcję - symbolpath do wiersza polecenia VSPerfReport obejmujący symboli.  
+  - Dodaj opcję - symbolpath do wiersza polecenia VSPerfReport obejmujący symboli.  
   
 - Jeśli nie widzisz żadnych symboli w [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], upewnij się, że serwer symboli poprawnie skonfigurowane dla serwera ASP.  
   

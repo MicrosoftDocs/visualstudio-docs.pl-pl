@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eae8f49efbff2fd2219d0180db3a542f553a8027
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c30b0a190d2a2abfed56004e167f6ee5ef5ecf97
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775356"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046076"
 ---
 # <a name="draw-shapes-and-paths"></a>Rysowanie kształtów i ścieżek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ W Projektancie XAML *kształt* dokładnie to, czego można oczekiwać. Na przyk�
   
  **W tym temacie:**  
   
--   [Rysowanie kształtu](#Shape)  
+- [Rysowanie kształtu](#Shape)  
   
--   [Rysowanie ścieżki](#Path)  
+- [Rysowanie ścieżki](#Path)  
   
--   [Konwertowanie kształtu do ścieżki](#Convert)  
+- [Konwertowanie kształtu do ścieżki](#Convert)  
   
--   [Połącz ścieżki](#Combine)  
+- [Połącz ścieżki](#Combine)  
   
--   [Utwórz ścieżkę złożoną](#Compound)  
+- [Utwórz ścieżkę złożoną](#Compound)  
   
--   [Tworzenie ścieżki przycinania](#Clipping)  
+- [Tworzenie ścieżki przycinania](#Clipping)  
   
-##  <a name="Shape"></a> Rysowanie kształtu  
+## <a name="Shape"></a> Rysowanie kształtu  
  Możesz znaleźć kształty w **zasoby** panelu.  
   
  ![Kategoria kształtów w panelu Składniki](../designers/media/b4-shapes-assetspanel.png "b4_Shapes_AssetsPanel")  
@@ -46,7 +46,7 @@ W Projektancie XAML *kształt* dokładnie to, czego można oczekiwać. Na przyk�
   
  ![](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png "84261e83-3091-4490-ab58-4218b188439e")  
   
-##  <a name="Path"></a> Rysowanie ścieżki  
+## <a name="Path"></a> Rysowanie ścieżki  
  Ścieżka jest szereg podłączonych linii i krzywych. Użyj ścieżki, aby tworzyć interesujące kształty, które nie są dostępne w **zasoby** panelu.  
   
  Ścieżkę można zdefiniować przy użyciu linii, Pióro lub ołówka. Można znaleźć tych narzędzi w **narzędzia** panelu.  
@@ -96,12 +96,12 @@ W Projektancie XAML *kształt* dokładnie to, czego można oczekiwać. Na przyk�
   
  Użyj **wybór** narzędzie ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") aby wybrać ścieżkę. Użyj **pióra** narzędzie ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") kliknąć ścieżkę, w której chcesz dodać punkt w dowolnym miejscu.  
   
-##  <a name="Convert"></a> Konwertowanie kształtu do ścieżki  
+## <a name="Convert"></a> Konwertowanie kształtu do ścieżki  
  Aby zmodyfikować kształtu w taki sam sposób, aby zmodyfikować ścieżkę, konwertowanie kształtu do ścieżki.  
   
  **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pracy dzięki określeniu ścieżki: Konwertowanie kształtu na ścieżkę](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).  
   
-##  <a name="Combine"></a> Połącz ścieżki  
+## <a name="Combine"></a> Połącz ścieżki  
  Można połączyć kształtów i ścieżek w pojedynczą ścieżkę.  
   
  ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")  
@@ -114,7 +114,7 @@ W Projektancie XAML *kształt* dokładnie to, czego można oczekiwać. Na przyk�
   
  **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pracy dzięki określeniu ścieżki: Połącz ścieżki](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).  
   
-##  <a name="Compound"></a> Utwórz ścieżkę złożoną  
+## <a name="Compound"></a> Utwórz ścieżkę złożoną  
  Podczas tworzenia ścieżki złożonej żadnych przecinających się części ścieżki są odejmowane od wyniku, a wynikowe ścieżki zajmuje się we właściwościach visual znajdujących się najniżej ścieżki.  
   
  Możesz przerwać od siebie ścieżkę złożoną dowolnej chwili po jego utworzeniu.  
@@ -123,7 +123,7 @@ W Projektancie XAML *kształt* dokładnie to, czego można oczekiwać. Na przyk�
   
  **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pracy dzięki określeniu ścieżki: Utwórz ścieżkę złożoną](https://www.youtube.com/watch?v=Io5bC0-nH6Q).  
   
-##  <a name="Clipping"></a> Tworzenie ścieżki przycinania  
+## <a name="Clipping"></a> Tworzenie ścieżki przycinania  
  Ścieżki przycięcia jest ścieżka lub kształtu, który jest stosowany do innego obiektu, ukrywanie części maskowanego obiektu, które wykraczają poza przycinania.  
   
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")  
