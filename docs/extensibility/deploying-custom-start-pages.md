@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: ed8f06513b240719364539a24295a403b83265f4
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 3f09f03a3404bbde346370149f210bf45e6e2306
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873011"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078255"
 ---
 # <a name="deploy-custom-start-pages"></a>Wdrażanie niestandardowych stron Start
 
@@ -27,9 +27,9 @@ Niestandardowe strony Start można wdrożyć za pomocą VSIX wdrażania lub kopi
 
 Podczas tworzenia strony początkowej przy użyciu szablonu projektu strony początkowej, a następnie skompilowanie projektu, Visual Studio tworzy *.vsix* pliku, którą można dystrybuować. Pakowanie strony początkowej w *.vsix* plików udostępnia następujące opcje wdrażania, w zależności od Twojego odbiorców:
 
--   Możesz umieścić *.vsix* plik w udziale sieciowym lub w publicznej witrynie sieci Web. Gdy plik zostanie otwarty, strona startowa jest instalowana automatycznie.
+- Możesz umieścić *.vsix* plik w udziale sieciowym lub w publicznej witrynie sieci Web. Gdy plik zostanie otwarty, strona startowa jest instalowana automatycznie.
 
--   Możesz przekazać *.vsix* plik [Visual Studio Marketplace](https://marketplace.visualstudio.com/) witryny sieci Web, tak aby użytkownicy mogą zainstalować ją za pomocą **Menedżera rozszerzeń**.
+- Możesz przekazać *.vsix* plik [Visual Studio Marketplace](https://marketplace.visualstudio.com/) witryny sieci Web, tak aby użytkownicy mogą zainstalować ją za pomocą **Menedżera rozszerzeń**.
 
 Szablon projektu strona początkowa tworzy kopię domyślnego programu Visual Studio strony początkowej, można modyfikować, kopiować i zachować oryginalne.
 
@@ -62,9 +62,9 @@ Jeśli pakiet strona początkowa zawiera zestawy, należy dodać powiązanie śc
 
 ### <a name="to-create-an-all-users-deployment"></a>Aby utworzyć wdrożenie wszystkich użytkowników
 
-1.  Otwórz *extension.vsixmanifest* plików w widoku kodu.
+1. Otwórz *extension.vsixmanifest* plików w widoku kodu.
 
-2.  W `Identifier` element manifestu vsix dodawania `AllUsers` element, który ma wartość `true`.
+2. W `Identifier` element manifestu vsix dodawania `AllUsers` element, który ma wartość `true`.
 
     ```
     <AllUsers>true</AllUsers>
@@ -72,9 +72,9 @@ Jeśli pakiet strona początkowa zawiera zestawy, należy dodać powiązanie śc
 
      Powoduje to, że Instalator vsix monit o podanie uprawnień administratora, a następnie zainstalować pliki do *\Common7\IDE\Extensions*.
 
-3.  Otwórz *.pkgdef* pliku.
+3. Otwórz *.pkgdef* pliku.
 
-4.  Modyfikowanie *.pkgdef* do ustawiania domyślnej strony początkowej w obszarze HKLM, dodając następujące polecenie, gdzie *MyStartPage.xaml* nazywa się *.xaml* pliku, który zawiera uruchamiania Strona.
+4. Modyfikowanie *.pkgdef* do ustawiania domyślnej strony początkowej w obszarze HKLM, dodając następujące polecenie, gdzie *MyStartPage.xaml* nazywa się *.xaml* pliku, który zawiera uruchamiania Strona.
 
      [$RootKey$\StartPage\Default]
 
@@ -89,11 +89,11 @@ Jeśli pakiet strona początkowa zawiera zestawy, należy dodać powiązanie śc
 
 ### <a name="to-manually-install-a-custom-start-page"></a>Aby ręcznie zainstalować niestandardowej strony początkowej
 
-1.  Kopiuj *.xaml* pliku, który zawiera znaczniki strony początkowej, oraz wszelkie pliki pomocnicze, inne niż zestawy i wklej je w użytkownika * \StartPages\* folderu.
+1. Kopiuj *.xaml* pliku, który zawiera znaczniki strony początkowej, oraz wszelkie pliki pomocnicze, inne niż zestawy i wklej je w użytkownika * \StartPages\* folderu.
 
-2.  Jeśli strona startowa wymaga zestawów, skopiuj je i wklej je w *... \\\Common7\IDE\PrivateAssemblies {folder instalacji programu visual Studio}\\*.
+2. Jeśli strona startowa wymaga zestawów, skopiuj je i wklej je w *... \\\Common7\IDE\PrivateAssemblies {folder instalacji programu visual Studio}\\*.
 
-3.  W **Dostosuj stronę początkową** listy na **uruchamiania** opcji wybierz Nowa strona początkowa. Aby uzyskać więcej informacji, zobacz [Dostosuj stronę początkową](../ide/customizing-the-start-page-for-visual-studio.md).
+3. W **Dostosuj stronę początkową** listy na **uruchamiania** opcji wybierz Nowa strona początkowa. Aby uzyskać więcej informacji, zobacz [Dostosuj stronę początkową](../ide/customizing-the-start-page-for-visual-studio.md).
 
 ## <a name="see-also"></a>Zobacz także
 

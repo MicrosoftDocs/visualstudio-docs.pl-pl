@@ -8,24 +8,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c79f70129a21ab28c653ecfbef5e00a8050d9b0
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 6a310a1b92d5e4558e097cf82501960bf6a9a535
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323468"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078226"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumenty wiersza polecenia dla menedżera zawartości pomocy
 
 Można określić sposób wdrażania i zarządzania lokalną zawartością pomocy przy użyciu argumentów wiersza polecenia dla menedżera zawartości pomocy (*HlpCtntMgr.exe*). Należy uruchamiać skrypty dla tego narzędzia wiersza polecenia z uprawnieniami administratora, a te skrypty nie można uruchomić jako usługę. Za pomocą tego narzędzia, należy wykonać następujące zadania:
 
--   Dodaj lub Aktualizuj lokalną zawartość pomocy z dysku lub z chmury.
+- Dodaj lub Aktualizuj lokalną zawartość pomocy z dysku lub z chmury.
 
--   Usuń lokalną zawartość pomocy.
+- Usuń lokalną zawartość pomocy.
 
--   Przenieś magazynu zawartości lokalnej pomocy.
+- Przenieś magazynu zawartości lokalnej pomocy.
 
--   Dodawanie, aktualizowanie, usuń lub Przenieś lokalną zawartość pomocy dyskretnie.
+- Dodawanie, aktualizowanie, usuń lub Przenieś lokalną zawartość pomocy dyskretnie.
 
 Składnia:
 

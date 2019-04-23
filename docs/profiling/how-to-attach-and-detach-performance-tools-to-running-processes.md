@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f56121354e9c6e508ab591d306f7e210f6963694
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 699bf71da01a34cdb7e943d65d545ce0496f2b91
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603587"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078287"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Instrukcje: Dołączanie narzędzi do oceny wydajności do uruchomionych procesów i ich odłączanie
 Program profilujący może służyć do dołączenia do lub odłączyć od uruchomionego procesu, aby ułatwić pobierania próbek i zbieranie danych wydajności. Ta metoda umożliwia profilować proces w przypadku, gdy chcesz uniknąć zbierania danych o czas ładowania aplikacji lub do monitorowania wydajności procesu po nim osiągnie określony stan.
@@ -42,23 +42,23 @@ Program profilujący może służyć do dołączenia do lub odłączyć od uruch
 
 ### <a name="to-attach-to-a-running-process"></a>Aby dołączyć do uruchomionego procesu
 
-1.  Na **debugowania** menu wskaż **Profiler**, następnie **Eksplorator wydajności**, a następnie kliknij przycisk **Dołącz**.
+1. Na **debugowania** menu wskaż **Profiler**, następnie **Eksplorator wydajności**, a następnie kliknij przycisk **Dołącz**.
 
      **Dołączyć Profiler do procesu** pojawi się okno dialogowe.
 
-2.  Kliknij nazwę, którą chcesz dołączyć do procesu.
+2. Kliknij nazwę, którą chcesz dołączyć do procesu.
 
-3.  Kliknij przycisk **dołączyć**.
+3. Kliknij przycisk **dołączyć**.
 
 ### <a name="to-detach-from-a-running-process"></a>Można odłączyć od uruchomionego procesu
 
-1.  n **debugowania** menu wskaż **Profiler**, następnie **Eksplorator wydajności**, a następnie kliknij przycisk **Odłącz**.
+1. n **debugowania** menu wskaż **Profiler**, następnie **Eksplorator wydajności**, a następnie kliknij przycisk **Odłącz**.
 
      **Dołączyć Profiler do procesu** pojawi się okno dialogowe.
 
-2.  Kliknij nazwę obrazu, z którego chcesz odłączyć.
+2. Kliknij nazwę obrazu, z którego chcesz odłączyć.
 
-3.  Kliknij przycisk **odłączyć**.
+3. Kliknij przycisk **odłączyć**.
 
 ## <a name="see-also"></a>Zobacz także
 - [Sterowanie zbieraniem danych](../profiling/controlling-data-collection.md)

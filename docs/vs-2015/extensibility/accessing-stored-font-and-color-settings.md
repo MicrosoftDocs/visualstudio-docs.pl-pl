@@ -12,12 +12,12 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 88562da16a0c9803441b859b6498782e6e316fb6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6ff962a618ba0001441db748facac8af444cd255
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793451"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078099"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>Uzyskiwanie dostępu do przechowywanych czcionkę i kolor ustawienia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ ms.locfileid: "54793451"
   
  W związku z tym aby zainicjować trwałości, pakietu VSPackage musi:  
   
--   Uzyskaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu, wywołując `QueryService` względem dostawcy usługi global service.  
+- Uzyskaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu, wywołując `QueryService` względem dostawcy usługi global service.  
   
      `QueryService` musi zostać wywołana przy użyciu argumentu identyfikator usługi z `SID_SVsFontAndColorStorage` i argument identyfikator interfejsu `IID_IVsFontAndColorStorage`.  
   
--   Użyj <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> metodę, aby otworzyć kategorii w celu jego utrwalenia przy użyciu identyfikatora GUID danej kategorii i flagi trybu jako argumenty.  
+- Użyj <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> metodę, aby otworzyć kategorii w celu jego utrwalenia przy użyciu identyfikatora GUID danej kategorii i flagi trybu jako argumenty.  
   
      Tryb, określony przez `fFlags` argument, jest tworzony z wartości w <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> wyliczenia. W tym trybie kontrolki:  
   
-    -   Ustawienia, które mogą być udostępniane za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu.  
+    - Ustawienia, które mogą być udostępniane za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu.  
   
-    -   Wszystkie ustawienia lub tylko te, które zmodyfikować użytkowników i które można odzyskać <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu.  
+    - Wszystkie ustawienia lub tylko te, które zmodyfikować użytkowników i które można odzyskać <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu.  
   
-    -   Sposób propagowanie zmian ustawień użytkownika.  
+    - Sposób propagowanie zmian ustawień użytkownika.  
   
-    -   Format wartości kolorów, które są używane.  
+    - Format wartości kolorów, które są używane.  
   
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>Aby używać stanu trwałości czcionki i kolory  
  Utrwalanie czcionki i kolory obejmuje:  
