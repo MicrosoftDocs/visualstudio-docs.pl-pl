@@ -12,12 +12,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 63538797f335cab770f3748d946b08de6b44c609
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dfea4ecc735fbf91e623f6d40b287353e17ce7a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800105"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080608"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Wdrażanie rozszerzenia modelu warstwy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,40 +39,40 @@ Innym użytkownikom programu Visual Studio można zainstalować warstwę modelow
   
 #### <a name="to-uninstall-the-extension"></a>Aby odinstalować rozszerzenie  
   
-1.  W programie Visual Studio na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.  
+1. W programie Visual Studio na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.  
   
-2.  Kliknij nazwę rozszerzenia, a następnie kliknij przycisk **Odinstaluj**.  
+2. Kliknij nazwę rozszerzenia, a następnie kliknij przycisk **Odinstaluj**.  
   
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Instalowanie rozszerzenia na serwerze kompilacji Team Foundation  
  [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] serwery zwykle nie mają zainstalowanego programu Visual Studio, a więc nie można zainstalować VSIX, klikając go dwukrotnie. Instalacja [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] zawiera kilka składników, pozwalają rozszerzeniu VSIX do uruchomienia, ale należy ręcznie zainstalować rozszerzenia.  
   
 #### <a name="to-install-your-layer-extension-on-a-includeesprbuildincludesesprbuild-mdmd-server"></a>Aby zainstalować rozszerzenie warstwy na [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] serwera  
   
-1.  Kopiuj **.vsix** pliki z komputera dewelopera do [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] komputera.  
+1. Kopiuj **.vsix** pliki z komputera dewelopera do [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] komputera.  
   
      Umieść plik VSIX w jednej z następujących lokalizacji:  
   
-    -   Aby zainstalować dla wszystkich użytkowników i usług:  
+    - Aby zainstalować dla wszystkich użytkowników i usług:  
   
          %ProgramFiles%\Microsoft visual Studio [wersja] \Common7\IDE\Extensions\Microsoft  
   
-    -   Aby zainstalować tylko dla usługi sieciowej, która uruchamia [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]:  
+    - Aby zainstalować tylko dla usługi sieciowej, która uruchamia [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]:  
   
          %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
-    -   Jeśli skonfigurowano [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] do uruchamiania w trybie interakcyjnym jako określony użytkownik, można zainstalować tylko dla tego użytkownika:  
+    - Jeśli skonfigurowano [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] do uruchamiania w trybie interakcyjnym jako określony użytkownik, można zainstalować tylko dla tego użytkownika:  
   
          %LocalAppData%\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
         > [!NOTE]
         >  % LocalAppData % zazwyczaj znajduje *DriveName*: Użytkownicy*UserName*AppDataLocal.  
   
-2.  Rozwiń każdy pliku VSIX do folderu w tej samej lokalizacji:  
+2. Rozwiń każdy pliku VSIX do folderu w tej samej lokalizacji:  
   
-    1.  Zmień rozszerzenie nazwy pliku z **.vsix** do **zip**.  
+    1. Zmień rozszerzenie nazwy pliku z **.vsix** do **zip**.  
   
-    2.  Wyodrębnij zawartość pliku .zip do folderu.  
+    2. Wyodrębnij zawartość pliku .zip do folderu.  
   
-    3.  Usuń plik .zip.  
+    3. Usuń plik .zip.  
   
-3.  Uruchom ponownie [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].
+3. Uruchom ponownie [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].

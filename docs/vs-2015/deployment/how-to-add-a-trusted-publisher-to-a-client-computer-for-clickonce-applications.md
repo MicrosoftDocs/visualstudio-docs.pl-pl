@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f7aade658b3fbc70c244e99a6537746bdd4f3c88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b8c2bc30814af9cdc6181d08b313df20146f855e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786357"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080959"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Instrukcje: Dodawanie zaufanego wydawcy do komputera klienckiego dla aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,21 +39,21 @@ Za pomocą zaufanego wdrożenia aplikacji można skonfigurować komputery klienc
   
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-the-trusted-root"></a>Aby dodać certyfikat do magazynu zaufanych wydawców w obszarze zaufanego głównego  
   
-1.  Uzyskaj certyfikat z urzędu certyfikacji.  
+1. Uzyskaj certyfikat z urzędu certyfikacji.  
   
-2.  Wyeksportuj certyfikat w formacie Base64 X.509 (.cer). Aby uzyskać więcej informacji na temat formatów certyfikatów Zobacz [eksportowania certyfikatu](http://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Wyeksportuj certyfikat w formacie Base64 X.509 (.cer). Aby uzyskać więcej informacji na temat formatów certyfikatów Zobacz [eksportowania certyfikatu](http://go.microsoft.com/fwlink/?LinkId=164793).  
   
-3.  W wierszu polecenia na komputerach klienckich uruchom następujące polecenie:  
+3. W wierszu polecenia na komputerach klienckich uruchom następujące polecenie:  
   
      **certmgr.exe — Dodaj certificate.cer - c -s - r localMachine TrustedPublisher**  
   
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-a-different-root"></a>Aby dodać certyfikat do magazynu zaufanych wydawców w ramach różnych głównych  
   
-1.  Uzyskaj certyfikat z urzędu certyfikacji.  
+1. Uzyskaj certyfikat z urzędu certyfikacji.  
   
-2.  Wyeksportuj certyfikat w formacie Base64 X.509 (.cer). Aby uzyskać więcej informacji na temat formatów certyfikatów Zobacz [eksportowania certyfikatu](http://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Wyeksportuj certyfikat w formacie Base64 X.509 (.cer). Aby uzyskać więcej informacji na temat formatów certyfikatów Zobacz [eksportowania certyfikatu](http://go.microsoft.com/fwlink/?LinkId=164793).  
   
-3.  W wierszu polecenia na komputerach klienckich uruchom następujące polecenie:  
+3. W wierszu polecenia na komputerach klienckich uruchom następujące polecenie:  
   
      **certmgr.exe — Dodaj good.cer - c -s - r localMachine głównego**  
   

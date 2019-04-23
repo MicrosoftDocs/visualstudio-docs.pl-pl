@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33e6efb699d12cc58555cacede6a20c5b0091d0d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 25462a99bd3e773f03af3918a9e25d11ed006c1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785171"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084716"
 ---
 # <a name="error-sql-can39t-find-ssdebugps"></a>Błąd: Można SQL&#39;możemy znaleźć SSDEBUGPS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +39,9 @@ Biblioteka SSDEBUGPS.dll to składnik Host debugowania programu SQL Server.
   
 ### <a name="to-copy-ssdebugpsdll-onto-the-sql-server-2005-machine"></a>Aby skopiować Biblioteka SSDEBUGPS.dll na komputerze programu SQL Server 2005  
   
-1.  Skopiuj plik do katalogu z taką samą nazwę i ścieżkę na [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] maszyny.  
+1. Skopiuj plik do katalogu z taką samą nazwę i ścieżkę na [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] maszyny.  
   
-2.  Zarejestruj go, otwierając **polecenia**, a następnie uruchamiając następujące polecenie:  
+2. Zarejestruj go, otwierając **polecenia**, a następnie uruchamiając następujące polecenie:  
   
     ```  
     regsvr32 ssdebugps.dll  

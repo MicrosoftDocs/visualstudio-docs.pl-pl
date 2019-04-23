@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 514f4e3de9bd5b79387a17dffe0e016dc92ea91e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f9ae4de4f8dc044d578bb4f593dc9c6c77a7b0b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761119"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083897"
 ---
 # <a name="error-unable-to-initiate-dcom-communication"></a>Błąd: Nie można zainicjować komunikacji DCOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ Wystąpił błąd modelu DCOM podczas próby komunikacji z komputerem zdalnym ko
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Jeśli maszyna zdalna ma włączoną zaporę Windows, zobacz [Ustaw się narzędzi zdalnych na urządzeniu](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) instrukcje dotyczące sposobu konfigurowania zapory dla debugowania lokalnego.  
+- Jeśli maszyna zdalna ma włączoną zaporę Windows, zobacz [Ustaw się narzędzi zdalnych na urządzeniu](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) instrukcje dotyczące sposobu konfigurowania zapory dla debugowania lokalnego.  
   
--   Aby przywrócić uwierzytelniania Windows, spróbuj wykonać ponowny rozruch obu komputerach. Sprawdź dzienniki zdarzeń na komputerach lokalnych i zdalnych dla błędów protokołu Kerberos i skontaktuj się z administratorami domeny o znanych problemach.  
+- Aby przywrócić uwierzytelniania Windows, spróbuj wykonać ponowny rozruch obu komputerach. Sprawdź dzienniki zdarzeń na komputerach lokalnych i zdalnych dla błędów protokołu Kerberos i skontaktuj się z administratorami domeny o znanych problemach.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie zdalne](../debugger/remote-debugging.md)

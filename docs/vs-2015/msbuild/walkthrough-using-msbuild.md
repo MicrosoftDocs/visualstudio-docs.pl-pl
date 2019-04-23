@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a256a13d1840d2bf5f26635c5e572dce30434ae
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f03c7260899db9e463282e45ef5bc76badb8a483
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655013"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082805"
 ---
 # <a name="walkthrough-using-msbuild"></a>Przewodnik: Korzystanie z programu MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Program MSBuild jest platformę kompilacji firmy Microsoft i programu Visual Stu
   
 #### <a name="to-create-a-project-file"></a>Aby utworzyć plik projektu  
   
-1.  Otwórz program Visual Studio.  
+1. Otwórz program Visual Studio.  
   
-2.  Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **projektu**.  
+2. Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **projektu**.  
   
-3.  W **nowy projekt** okno dialogowe, wybierz opcję języka Visual C# typ projektu, a następnie wybierz **aplikacja interfejsu Windows Forms** szablonu. W **nazwa** wpisz `BuildApp`. Wprowadź **lokalizacji** dla rozwiązania, na przykład `D:\`. Zaakceptuj wartości domyślne **Utwórz katalog rozwiązania** (zaznaczone), **Dodaj do kontroli źródła** (nie jest zaznaczone), a **Nazwa rozwiązania** (`BuildApp`).  
+3. W **nowy projekt** okno dialogowe, wybierz opcję języka Visual C# typ projektu, a następnie wybierz **aplikacja interfejsu Windows Forms** szablonu. W **nazwa** wpisz `BuildApp`. Wprowadź **lokalizacji** dla rozwiązania, na przykład `D:\`. Zaakceptuj wartości domyślne **Utwórz katalog rozwiązania** (zaznaczone), **Dodaj do kontroli źródła** (nie jest zaznaczone), a **Nazwa rozwiązania** (`BuildApp`).  
   
      Kliknij przycisk **OK** do tworzenia pliku projektu.  
   
@@ -49,13 +49,13 @@ Program MSBuild jest platformę kompilacji firmy Microsoft i programu Visual Stu
   
 #### <a name="to-examine-the-project-file"></a>Aby zbadać pliku projektu  
   
-1.  W **Eksploratora rozwiązań**, kliknij węzeł projektu BuildApp.  
+1. W **Eksploratora rozwiązań**, kliknij węzeł projektu BuildApp.  
   
-2.  W **właściwości** przeglądarki, zwróć uwagę, że **pliku projektu** właściwość jest BuildApp.csproj. Wszystkie pliki projektu są nazywane z sufiksem "proj". Jeśli została utworzona projekt języka Visual Basic, nazwa pliku projektu będzie BuildApp.vbproj.  
+2. W **właściwości** przeglądarki, zwróć uwagę, że **pliku projektu** właściwość jest BuildApp.csproj. Wszystkie pliki projektu są nazywane z sufiksem "proj". Jeśli została utworzona projekt języka Visual Basic, nazwa pliku projektu będzie BuildApp.vbproj.  
   
-3.  Kliknij prawym przyciskiem myszy węzeł projektu, a następnie kliknij przycisk **Zwolnij projekt**.  
+3. Kliknij prawym przyciskiem myszy węzeł projektu, a następnie kliknij przycisk **Zwolnij projekt**.  
   
-4.  Ponownie kliknij prawym przyciskiem myszy węzeł projektu, a następnie kliknij przycisk **Edytuj BuildApp.csproj**.  
+4. Ponownie kliknij prawym przyciskiem myszy węzeł projektu, a następnie kliknij przycisk **Edytuj BuildApp.csproj**.  
   
      Plik projektu zostanie wyświetlony w edytorze kodu.  
   
@@ -136,17 +136,17 @@ Program MSBuild jest platformę kompilacji firmy Microsoft i programu Visual Stu
   
 #### <a name="to-build-the-target"></a>Aby zbudować obiekt docelowy  
   
-1.  Kliknij przycisk **Start**, następnie kliknij przycisk **wszystkie programy**. Zlokalizuj i kliknij **Visual Studio Command Prompt** w **Visual Studio Tools** folderu.  
+1. Kliknij przycisk **Start**, następnie kliknij przycisk **wszystkie programy**. Zlokalizuj i kliknij **Visual Studio Command Prompt** w **Visual Studio Tools** folderu.  
   
-2.  W oknie polecenia przejdź do folderu zawierającego plik projektu w tym przypadku D:\BuildApp\BuildApp.  
+2. W oknie polecenia przejdź do folderu zawierającego plik projektu w tym przypadku D:\BuildApp\BuildApp.  
   
-3.  Uruchom program msbuild z /t:HelloWorld przełącznik polecenia. Wybiera i tworzy element docelowy HelloWorld:  
+3. Uruchom program msbuild z /t:HelloWorld przełącznik polecenia. Wybiera i tworzy element docelowy HelloWorld:  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-4.  Sprawdź dane wyjściowe w **okna polecenia**. Powinny zostać wyświetlone dwa wiersze "Hello" i "World":  
+4. Sprawdź dane wyjściowe w **okna polecenia**. Powinny zostać wyświetlone dwa wiersze "Hello" i "World":  
   
     ```  
     Hello  
@@ -202,7 +202,7 @@ $(PropertyName)
   
 #### <a name="to-examine-a-property-value"></a>Aby sprawdzić wartość właściwości  
   
-1.  W edytorze kodu Zastąp element docelowy HelloWorld ten kod:  
+1. W edytorze kodu Zastąp element docelowy HelloWorld ten kod:  
   
     ```  
     <Target Name="HelloWorld">  
@@ -211,15 +211,15 @@ $(PropertyName)
     </Target>  
     ```  
   
-2.  Zapisz plik projektu.  
+2. Zapisz plik projektu.  
   
-3.  Z **okna polecenia**, wprowadź i wykonuje ten wiersz:  
+3. Z **okna polecenia**, wprowadź i wykonuje ten wiersz:  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-4.  Zbadaj dane wyjściowe. Powinny zostać wyświetlone następujące dwa wiersze (.NET Framework w wersji mogą się różnić):  
+4. Zbadaj dane wyjściowe. Powinny zostać wyświetlone następujące dwa wiersze (.NET Framework w wersji mogą się różnić):  
   
     ```  
     Configuration is Debug  
@@ -366,19 +366,19 @@ $(PropertyName)
   
 #### <a name="to-display-item-type-values-one-per-line"></a>Aby wyświetlić typ elementu wartości jeden na wiersz  
   
-1.  W edytorze kodu Zastąp zadanie komunikatu ten wiersz:  
+1. W edytorze kodu Zastąp zadanie komunikatu ten wiersz:  
   
     ```  
     <Message Text="Compile item type contains @(Compile, '%0A%0D')" />  
     ```  
   
-2.  Zapisz plik projektu.  
+2. Zapisz plik projektu.  
   
-3.  Z **okna polecenia**, wprowadź i wykonuje ten wiersz:  
+3. Z **okna polecenia**, wprowadź i wykonuje ten wiersz:  
   
      `msbuild buildapp.csproj /t:HelloWorld`  
   
-4.  Zbadaj dane wyjściowe. Powinny zostać wyświetlone następujące wiersze:  
+4. Zbadaj dane wyjściowe. Powinny zostać wyświetlone następujące wiersze:  
   
     ```  
     Compile item type contains Form1.cs  
@@ -436,13 +436,13 @@ $(PropertyName)
   
 ##### <a name="to-include-and-exclude-items"></a>Do dołączania i wykluczania elementów  
   
-1.  W edytorze kodu Zastąp zadanie komunikatu ten wiersz:  
+1. W edytorze kodu Zastąp zadanie komunikatu ten wiersz:  
   
     ```  
     <Message Text="Compile item type contains @(XFiles)" />  
     ```  
   
-2.  Dodaj tę grupę elementu zaraz po Import element:  
+2. Dodaj tę grupę elementu zaraz po Import element:  
   
     ```  
     <ItemGroup>  
@@ -450,15 +450,15 @@ $(PropertyName)
     </ItemGroup>  
     ```  
   
-3.  Zapisz plik projektu.  
+3. Zapisz plik projektu.  
   
-4.  Z **okna polecenia**, wprowadź i wykonuje ten wiersz:  
+4. Z **okna polecenia**, wprowadź i wykonuje ten wiersz:  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-5.  Zbadaj dane wyjściowe. Powinien zostać wyświetlony ten wiersz:  
+5. Zbadaj dane wyjściowe. Powinien zostać wyświetlony ten wiersz:  
   
     ```  
     Compile item type contains Form1.cs;Program.cs;Properties/Resources.resx  

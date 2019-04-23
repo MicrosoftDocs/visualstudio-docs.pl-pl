@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: fbe0942226e44e5ca2908f7c13f34595bef34887
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: ac2f040addb4c387afe0b325fe53b6a9c289f33a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069700"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079969"
 ---
 # <a name="create-an-android-native-activity-app"></a>Tworzenie aplikacji systemu Android działania natywnego
 
@@ -45,9 +45,9 @@ W tym samouczku zostanie najpierw utwórz nowy projekt dla systemu Android dzia�
 
    Nowe rozwiązanie aplikacji Android Native Activity obejmuje dwa projekty:
 
--   `MyAndroidApp.NativeActivity` zawiera odwołania i kodu pośredniczącego aplikacji do uruchamiania jako działania natywnego w systemie Android. Implementacja punkty wejścia z kodu pośredniczącego znajdują się w *main.cpp*. Prekompilowane nagłówki znajdują się w *pch.h*. Ten projekt aplikacji Native Activity jest skompilowany w bibliotece udostępnionej *SO* pliku, który zostaje pobrana przez projekt pakietu.
+- `MyAndroidApp.NativeActivity` zawiera odwołania i kodu pośredniczącego aplikacji do uruchamiania jako działania natywnego w systemie Android. Implementacja punkty wejścia z kodu pośredniczącego znajdują się w *main.cpp*. Prekompilowane nagłówki znajdują się w *pch.h*. Ten projekt aplikacji Native Activity jest skompilowany w bibliotece udostępnionej *SO* pliku, który zostaje pobrana przez projekt pakietu.
 
--   `MyAndroidApp.Packaging` Tworzy *.apk* plik dla wdrożenia na urządzeniu z systemem Android lub w emulatorze. Zawiera zasoby i *AndroidManifest.xml* pliku można ustawić właściwości manifestu. Zawiera ona także *build.xml* pliku, który kontroluje Ant procesu kompilacji. Ustawiana jest jako projekt startowy domyślnie, tak że można wdrożyć i uruchomić bezpośrednio z programu Visual Studio.
+- `MyAndroidApp.Packaging` Tworzy *.apk* plik dla wdrożenia na urządzeniu z systemem Android lub w emulatorze. Zawiera zasoby i *AndroidManifest.xml* pliku można ustawić właściwości manifestu. Zawiera ona także *build.xml* pliku, który kontroluje Ant procesu kompilacji. Ustawiana jest jako projekt startowy domyślnie, tak że można wdrożyć i uruchomić bezpośrednio z programu Visual Studio.
 
 ## <a name="build-and-run-the-default-android-native-activity-app"></a>Kompilowanie i uruchamianie aplikacji Android Native Activity domyślna
 
@@ -55,21 +55,21 @@ Kompilowanie i uruchamianie aplikacji wygenerowanych przez szablon, aby zweryfik
 
 ## <a name="to-build-and-run-the-default-native-activity-app"></a>Aby skompilować i uruchomić aplikację Native Activity domyślne
 
-1.  Jeśli nie została jeszcze wybrana, wybierz opcję **x86** z **platformy rozwiązania** listy rozwijanej.
+1. Jeśli nie została jeszcze wybrana, wybierz opcję **x86** z **platformy rozwiązania** listy rozwijanej.
 
      ![Wybór listy rozwijanej x86 platformy rozwiązania](../cross-platform/media/cppmdd_rc_na_solution_x86.png "CPPMDD_RC_NA_Solution_x86")
 
      Jeśli **platformy rozwiązania** lista nie jest wyświetlany, wybierz polecenie **platformy rozwiązania** z **Dodaj lub usuń przyciski** , a następnie wybierz platformy.
 
-2.  Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**.
+2. Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**.
 
      W oknie danych wyjściowych wyświetla dane wyjściowe z procesu kompilacji na dwa projekty w rozwiązaniu.
 
-3.  Wybierz jedną z emulatora VS profile telefon z systemem Android (x86) jako urządzenie docelowe wdrożenia.
+3. Wybierz jedną z emulatora VS profile telefon z systemem Android (x86) jako urządzenie docelowe wdrożenia.
 
      Jeśli masz zainstalowany innych emulatorów lub podłączone urządzenie z systemem Android, można je na liście rozwijanej docelowych wdrożenia.
 
-4.  Naciśnij klawisz **F5** rozpoczęcia debugowania lub Shift + F5, aby uruchomić bez debugowania.
+4. Naciśnij klawisz **F5** rozpoczęcia debugowania lub Shift + F5, aby uruchomić bez debugowania.
 
      Oto, jak domyślna aplikacja wygląda w emulatora programu Visual Studio dla systemu Android.
 
@@ -77,6 +77,6 @@ Kompilowanie i uruchamianie aplikacji wygenerowanych przez szablon, aby zweryfik
 
      Program Visual Studio uruchamia emulatora, który zajmuje kilka sekund, aby załadować i wdrażanie kodu. Po uruchomieniu aplikacji, możesz ustawić punkty przerwania i użyć debugera, aby przejść przez kod, Sprawdź zmienne lokalne i obejrzyj wartości.
 
-5.  Naciśnij klawisz **Shift**+**F5** Aby zatrzymać debugowanie.
+5. Naciśnij klawisz **Shift**+**F5** Aby zatrzymać debugowanie.
 
      Emulator jest oddzielny proces, który będzie nadal działać. Można edytować, skompiluj i wdróż swój kod wielokrotnie do tego samego emulatora.

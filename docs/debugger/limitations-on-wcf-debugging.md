@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e1733539c3f2da5d961a347e2f1c818d83257d2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 34b69ac69c580fbd40278b5b7a0c9be26d672fa3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721488"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082025"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Ograniczenia debugowania WCF
 Istnieją trzy sposoby, aby można było rozpocząć debugowanie usługi WCF:
@@ -37,13 +37,13 @@ Istnieją trzy sposoby, aby można było rozpocząć debugowanie usługi WCF:
 ## <a name="limitations-on-stepping-into-a-service"></a>Ograniczenia dotyczące Wkraczanie do usługi
  Aby wkraczać do usługi z aplikacji klienckich, które jest debugowany, muszą być spełnione następujące warunki:
 
--   Klient musi wywołać usługę za pomocą obiektu klienta synchroniczne.
+- Klient musi wywołać usługę za pomocą obiektu klienta synchroniczne.
 
--   Operacja Umowy nie może być jednokierunkowe.
+- Operacja Umowy nie może być jednokierunkowe.
 
--   Jeśli serwer jest asynchroniczne, nie można wyświetlić pełny stos wywołania, gdy są wykonywane kod wewnątrz usługi.
+- Jeśli serwer jest asynchroniczne, nie można wyświetlić pełny stos wywołania, gdy są wykonywane kod wewnątrz usługi.
 
--   Debugowanie musi być włączone w pliku Web.config lub app.config następującym kodem:
+- Debugowanie musi być włączone w pliku Web.config lub app.config następującym kodem:
 
     ```xml
     <system.web>

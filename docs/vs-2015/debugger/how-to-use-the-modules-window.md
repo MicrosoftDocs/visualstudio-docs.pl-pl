@@ -27,12 +27,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 105325341d8f93f9531c2c85deb8ef21266e872c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2f332ef1a52ae49e51025614745fc1b5c4a44e07
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769646"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078294"
 ---
 # <a name="how-to-use-the-modules-window"></a>Instrukcje: Korzystanie z okna modułów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,13 +44,13 @@ UWAGA]
   
 ### <a name="to-display-the-modules-window-in-break-mode-or-in-run-mode"></a>Aby wyświetlić okno modułów w trybie przerwania lub w trybie uruchamiania  
   
--   Na **debugowania** menu, wybierz **Windows**, a następnie kliknij przycisk **modułów**.  
+- Na **debugowania** menu, wybierz **Windows**, a następnie kliknij przycisk **modułów**.  
   
      Domyślnie **modułów** okna sortuje moduły według kolejności ładowania. Można sortować według dowolnej kolumny.  
   
 ### <a name="to-sort-by-any-column"></a>Aby sortować według dowolnej kolumny  
   
--   Kliknij przycisk u góry kolumny.  
+- Kliknij przycisk u góry kolumny.  
   
      Możesz załadować symbole lub określenie ścieżki symbolu z **modułów** oknie za pomocą menu skrótów.  
   
@@ -59,23 +59,23 @@ UWAGA]
   
 #### <a name="to-load-symbols-manually"></a>Aby ręcznie załadować symbole  
   
-1.  W **modułów** okna, kliknij prawym przyciskiem myszy moduł, dla której symbole nie zostały załadowane.  
+1. W **modułów** okna, kliknij prawym przyciskiem myszy moduł, dla której symbole nie zostały załadowane.  
   
-2.  Wskaż **Załaduj symbole z** a następnie kliknij przycisk **serwery symboli firmy Microsoft** lub **ścieżki symboli**.  
+2. Wskaż **Załaduj symbole z** a następnie kliknij przycisk **serwery symboli firmy Microsoft** lub **ścieżki symboli**.  
   
 #### <a name="to-change-symbol-load-settings"></a>Aby zmienić ustawienia ładowania symboli  
   
-1.  W **modułów** okna, kliknij prawym przyciskiem myszy dowolny moduł.  
+1. W **modułów** okna, kliknij prawym przyciskiem myszy dowolny moduł.  
   
-2.  Kliknij przycisk **ustawienia symboli**.  
+2. Kliknij przycisk **ustawienia symboli**.  
   
      Można teraz zmienić ustawienia ładowania symboli, zgodnie z opisem w [Określ lokalizacje symboli i zachowanie ładowania](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Specify_symbol_locations_and_loading_behavior). Zmiana zostanie wprowadzona dopiero po ponownym uruchomieniu sesji debugowania.  
   
 #### <a name="to-change-symbol-load-behavior-for-a-specific-module"></a>Aby zmienić zachowanie ładowania symboli dla określonego modułu  
   
-1.  W **modułów** okna, kliknij prawym przyciskiem myszy moduł.  
+1. W **modułów** okna, kliknij prawym przyciskiem myszy moduł.  
   
-2.  Wskaż **ustawienia automatycznego ładowania symboli** a następnie kliknij przycisk **zawsze obciążenia ręcznie** lub **domyślne**. Zmiana zostanie wprowadzona dopiero po ponownym uruchomieniu sesji debugowania.  
+2. Wskaż **ustawienia automatycznego ładowania symboli** a następnie kliknij przycisk **zawsze obciążenia ręcznie** lub **domyślne**. Zmiana zostanie wprowadzona dopiero po ponownym uruchomieniu sesji debugowania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przerwanie wykonywania](http://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   

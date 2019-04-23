@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 571c010aa8b9cda1002a152ed2d528e22b1aa57e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 7cb221715ef1c2a50bc60e1725db3b1d8721f165
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865791"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083034"
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>Instrukcje: Zapełnianie dokumentów danymi z obiektów
 
@@ -28,11 +28,11 @@ Dane w celu dostępu w obiekcie danych działa tak samo w projektach na poziomie
 
 Należy wykonać trzy podstawowe kroki, aby wypełnić dokumentu przy użyciu danych z obiektu:
 
--   Dodawanie formantu do dokumentu, który można powiązać z danymi.
+- Dodawanie formantu do dokumentu, który można powiązać z danymi.
 
--   Dodaj obiekt danych do dokumentu.
+- Dodaj obiekt danych do dokumentu.
 
--   Łączyć się z pomocą elementu BindingSource z obiektu danych.
+- Łączyć się z pomocą elementu BindingSource z obiektu danych.
 
 ## <a name="to-add-a-data-object"></a>Aby dodać obiekt danych
 
@@ -48,23 +48,23 @@ W projektach dodatku narzędzi VSTO tworzenia formantów i powiązać je w czasi
 
 Aby podłączyć obiekt danych do kontrolki BindingSource:
 
-1.  Przeciągnij pole danych z **źródeł danych** okna dokumentu. Powoduje to automatyczne utworzenie kontrolki.
+1. Przeciągnij pole danych z **źródeł danych** okna dokumentu. Powoduje to automatyczne utworzenie kontrolki.
 
-2.  W kodzie należy utworzyć wystąpienie typu obiektu, który został wybrany dla źródła danych.
+2. W kodzie należy utworzyć wystąpienie typu obiektu, który został wybrany dla źródła danych.
 
-3.  Przypisz wystąpienie do <xref:System.Windows.Forms.BindingSource.DataSource%2A> właściwość <xref:System.Windows.Forms.BindingSource>.
+3. Przypisz wystąpienie do <xref:System.Windows.Forms.BindingSource.DataSource%2A> właściwość <xref:System.Windows.Forms.BindingSource>.
 
 ### <a name="application-level-projects"></a>Projektów na poziomie aplikacji
 
 Aby podłączyć obiekt danych do kontrolki BindingSource:
 
-1.  W kodzie należy utworzyć wystąpienie typu obiektu, który jest skojarzony ze źródłem danych.
+1. W kodzie należy utworzyć wystąpienie typu obiektu, który jest skojarzony ze źródłem danych.
 
-2.  Utwórz wystąpienie obiektu <xref:System.Windows.Forms.BindingSource>.
+2. Utwórz wystąpienie obiektu <xref:System.Windows.Forms.BindingSource>.
 
-3.  Wystąpienie źródła danych, aby przypisać <xref:System.Windows.Forms.BindingSource.DataSource%2A> właściwość <xref:System.Windows.Forms.BindingSource>.
+3. Wystąpienie źródła danych, aby przypisać <xref:System.Windows.Forms.BindingSource.DataSource%2A> właściwość <xref:System.Windows.Forms.BindingSource>.
 
-4.  Dodaj źródło danych jako wiązanie danych do kontrolki.
+4. Dodaj źródło danych jako wiązanie danych do kontrolki.
 
 ## <a name="see-also"></a>Zobacz także
 

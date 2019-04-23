@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac447d3511365cf8e7f48344231d0ddb8d2a4374
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a05aba81292fba9520defe39af6977682452b850
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797326"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080634"
 ---
 # <a name="installshield-limited-edition"></a>InstallShield Limited Edition
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,10 +26,10 @@ Za pomocą programu InstallShield Limited Edition, można utworzyć pliku Instal
   
 ### <a name="to-enable-installshield-limited-edition"></a>Aby włączyć InstallShield Limited Edition  
   
-1.  Na pasku menu wybierz **pliku**, **New**, **projektu**.  
+1. Na pasku menu wybierz **pliku**, **New**, **projektu**.  
   
-2.  W **nowy projekt** okna dialogowego rozwiń **inne typy projektów** węzła, a następnie wybierz **instalacja i wdrożenie** węzła.  
+2. W **nowy projekt** okna dialogowego rozwiń **inne typy projektów** węzła, a następnie wybierz **instalacja i wdrożenie** węzła.  
   
-3.  Na liście szablonów wybierz **Włącz InstallShield Limited Edition**, a następnie wybierz **OK** przycisku.  
+3. Na liście szablonów wybierz **Włącz InstallShield Limited Edition**, a następnie wybierz **OK** przycisku.  
   
-4.  W oknie przeglądarki, zapoznaj się z instrukcjami, a następnie wybierz **przejdź do witryny sieci web pobierania** łącza.
+4. W oknie przeglądarki, zapoznaj się z instrukcjami, a następnie wybierz **przejdź do witryny sieci web pobierania** łącza.

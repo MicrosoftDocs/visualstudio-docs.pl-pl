@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2102bc7f91570bf68616eb62520e5b955204c26
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a8bd5c4612b59f909ae623eb4092a209798f98c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599574"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085275"
 ---
 # <a name="xmlnode-control"></a>formant XMLNode
   **Ważne** informacji zawartych w tym temacie dotyczące programu Microsoft Word jest prezentowane wyłącznie do korzyści i korzystanie z innym osobom oraz organizacjom, którzy znajdują się poza w Stanach Zjednoczonych i ich terytoriach lub korzystających z lub tworzenie programy, korzystających z produktów Microsoft Word, które są licencjonowane przez firmę Microsoft przed 2010 stycznia, po usunięciu implementację funkcji określonej przez Microsoft związane z niestandardowy kod XML z programu Microsoft Word. Te informacje dotyczące programu Microsoft Word nie mogą być odczytywane lub używane przez osoby i organizacje w Stanach Zjednoczonych lub jego terytoria, którzy za pomocą lub opracowywanie programów uruchamianych na produkty Microsoft Word, które są licencjonowane przez firmę Microsoft, po 10 stycznia 2010 r. ; te produkty będą nie działa tak samo jako produkty licencjonowane przed tą datą lub kupić i licencjonowane do użycia poza Stanami Zjednoczonymi.
@@ -37,23 +37,23 @@ ms.locfileid: "56599574"
 ## <a name="events"></a>Zdarzenia
  Następujące zdarzenia są dostępne dla <xref:Microsoft.Office.Tools.Word.XMLNode> sterowania:
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.AfterInsert>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.AfterInsert>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.BeforeDelete>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.BeforeDelete>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.ContextLeave>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.ContextLeave>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.Deselect>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.Deselect>
 
--   <xref:System.ComponentModel.IComponent.Disposed>
+- <xref:System.ComponentModel.IComponent.Disposed>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.Select>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.Select>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.ValidationError>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.ValidationError>
 
 ## <a name="compare-events"></a>Porównanie zdarzeń
  Można przechwycić zdarzenie, gdy użytkownik przesuwa kursor jej w kontekście określonego <xref:Microsoft.Office.Tools.Word.XMLNode> kontroli. Na przykład, Niewykluczone, że <xref:Microsoft.Office.Tools.Word.XMLNode> formantu o nazwie `Customer` ma element podrzędny <xref:Microsoft.Office.Tools.Word.XMLNode> formantu o nazwie `Company`, i `Company` ma dwa podrzędny <xref:Microsoft.Office.Tools.Word.XMLNode> kontrolki o nazwie `CompanyName` i `CompanyRegion` w następujący sposób:

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5424e813c5f1e3908c02dbc63798f5891edb8131
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 3beeb41d89f96cea8ab0f7f97bada815101f7e2f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526649"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079711"
 ---
 # <a name="graph-view"></a>Widok wykresu
 
@@ -120,11 +120,11 @@ Widok wykresu zawiera graficzną reprezentację globalnego schematu węzły i re
 
  Możliwość Cofnij/Ponów jest włączona w widoku wykresu następujące akcje:
 
--   Dodanie jednego węzła przez przeciąganie i upuszczanie.
+- Dodanie jednego węzła przez przeciąganie i upuszczanie.
 
--   Dodawanie wielu węzłów w oknie wyników wyszukiwania zapytań Eksploratora schematu lub uruchomić widoku.
+- Dodawanie wielu węzłów w oknie wyników wyszukiwania zapytań Eksploratora schematu lub uruchomić widoku.
 
--   Usunięcie jednego lub wielu węzłów.
+- Usunięcie jednego lub wielu węzłów.
 
 ## <a name="zoom"></a>Powiększenie
 
@@ -132,9 +132,9 @@ Widok wykresu zawiera graficzną reprezentację globalnego schematu węzły i re
 
  Powiększenie mogą być kontrolowane w następujący sposób:
 
--   Poprzez posiadanie **Ctrl** klucza i wirowania myszy kółka, gdy wskaźnik myszy znajduje się na powierzchni widoku wykresu.
+- Poprzez posiadanie **Ctrl** klucza i wirowania myszy kółka, gdy wskaźnik myszy znajduje się na powierzchni widoku wykresu.
 
--   Za pomocą suwaka. Suwak pokazuje bieżący poziom powiększenia.
+- Za pomocą suwaka. Suwak pokazuje bieżący poziom powiększenia.
 
 Suwak powiększenia jest nieprzezroczysta, zaznacz go, umieść kursor nad nim lub użyj **Ctrl** przy użyciu kółka myszy, aby powiększyć; w innym czasie, proces jest przezroczysty.
 

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a3fa4013a5fa9b3fb6ec17ee07277f5e4b7d996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 206cd77ae3c648add62b17c86a4966e6174c345c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645150"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082584"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importowanie elementów z istniejącej witryny programu SharePoint
   Importowanie pakietu rozwiązań programu SharePoint szablon projektu umożliwia ponowne używanie elementów, takich jak typy zawartości i pola z istniejącej witryny programu SharePoint, w nowym [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozwiązania programu SharePoint. Chociaż można uruchomić najbardziej importowanych rozwiązania bez żadnych modyfikacji, istnieją pewnych ograniczeń i zagadnień, które należy wziąć pod uwagę, zwłaszcza wtedy, gdy modyfikować elementów po ich zaimportowaniu.
@@ -119,9 +119,9 @@ ms.locfileid: "56645150"
 
  Jeśli ten błąd nie zostanie utworzony element. Ten problem występuje w większości przypadków z zaimportowanych modułów. Aby uniknąć tego problemu, wykonaj następujące czynności:
 
--   Użyj krótkich nazw dla projektu, po wprowadzeniu je w **Dodaj nowy projekt** okno dialogowe.
+- Użyj krótkich nazw dla projektu, po wprowadzeniu je w **Dodaj nowy projekt** okno dialogowe.
 
--   Utwórz projekt w lokalizacji co blisko folderu głównego, jak to możliwe, aby skrócić ścieżkę.
+- Utwórz projekt w lokalizacji co blisko folderu głównego, jak to możliwe, aby skrócić ścieżkę.
 
 ## <a name="the-sharepointproductversion-attribute"></a>Atrybut SharePointProductVersion
  Jeśli importujesz rozwiązania utworzone we wcześniejszej wersji programu SharePoint, takich jak [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] lub [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)], zmień wartość atrybutu SharePointProductVersion w manifeście pakietu do 12.0 lub wstawić kontrolki Menedżera skryptów do wszystkich importowanych aplikacji sieci Web strony i pozostaw SharePointProductVersion Ustaw 14.0. W przeciwnym razie importowanych formularzy sieci Web nie będą wyświetlane w programie SharePoint.

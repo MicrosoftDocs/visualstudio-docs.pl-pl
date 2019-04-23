@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1f302821b219266cf7080437a73cc577ffb0ffa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5449f0b5cb7d2310f7f71a93236bbe5fd62eacae
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920096"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103732"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Instrukcje: Konfigurowanie projektów pod kątem wielu platform docelowych
 
@@ -27,19 +27,19 @@ Program Visual Studio umożliwia rozwiązanie pod kątem kilku innej architektur
 
 **Programu Configuration Manager** okno dialogowe pozwala utworzyć i ustawić konfiguracje rozwiązania i na poziomie projektu i platformy. Każdej kombinacji konfiguracji na poziomie rozwiązania i elementy docelowe może mieć unikatowe zbiory właściwości skojarzonych z nią, dzięki czemu można łatwo przełączać się między, na przykład konfiguracja wydania przeznaczonego [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] platforma, konfiguracja wydania który jest przeznaczony dla x86 platformy i konfiguracji debugowania, który jest przeznaczony dla x86 platformy.
 
-1.  Na **kompilacji** menu, kliknij przycisk **programu Configuration Manager**.
+1. Na **kompilacji** menu, kliknij przycisk **programu Configuration Manager**.
 
-2.  W **pole platforma rozwiązania aktywnego**, wybierz platformę rozwiązania do obiektu docelowego, lub wybierz  **\<nowy >** do utworzenia nowej platformie. Visual Studio będzie kompilować aplikację pod kątem platformy, który jest ustawiony jako aktywnej platformy w **programu Configuration Manager** okno dialogowe.
+2. W **pole platforma rozwiązania aktywnego**, wybierz platformę rozwiązania do obiektu docelowego, lub wybierz  **\<nowy >** do utworzenia nowej platformie. Visual Studio będzie kompilować aplikację pod kątem platformy, który jest ustawiony jako aktywnej platformy w **programu Configuration Manager** okno dialogowe.
 
 ## <a name="remove-a-platform"></a>Usuń to platforma
 
 Jeśli okazuje się, że użytkownik nie ma potrzeby dla platformy, możesz usunąć go za pomocą **programu Configuration Manager** okno dialogowe. Spowoduje to usunięcie wszystkich ustawień rozwiązania i projektu, skonfigurowane dla tej kombinacji konfiguracji i docelowej.
 
-1.  Na **kompilacji** menu, kliknij przycisk **programu Configuration Manager**.
+1. Na **kompilacji** menu, kliknij przycisk **programu Configuration Manager**.
 
-2.  W **pole platforma rozwiązania aktywnego**, wybierz opcję  **\<Edytuj >**. **Edytuj platformy rozwiązań** zostanie otwarte okno dialogowe.
+2. W **pole platforma rozwiązania aktywnego**, wybierz opcję  **\<Edytuj >**. **Edytuj platformy rozwiązań** zostanie otwarte okno dialogowe.
 
-3.  Kliknij platformy, aby usunąć, a następnie kliknij przycisk **Usuń**.
+3. Kliknij platformy, aby usunąć, a następnie kliknij przycisk **Usuń**.
 
 ## <a name="target-multiple-platforms-with-one-solution"></a>Dla wielu platform za pomocą jednego rozwiązania
 
@@ -47,11 +47,11 @@ Ponieważ istnieje możliwość zmiany ustawień, oparte na kombinacji konfigura
 
 ### <a name="to-target-multiple-platforms"></a>Do wielu platform docelowych
 
-1.  Użyj **programu Configuration Manager** można dodać co najmniej dwóch platform dla rozwiązania.
+1. Użyj **programu Configuration Manager** można dodać co najmniej dwóch platform dla rozwiązania.
 
-2.  Wybierz platformę docelową z **aktywną platformą rozwiązania** listy.
+2. Wybierz platformę docelową z **aktywną platformą rozwiązania** listy.
 
-3.  Skompiluj rozwiązanie.
+3. Skompiluj rozwiązanie.
 
 ### <a name="to-build-multiple-solution-configurations-at-once"></a>Aby od razu kompilowanie wielu konfiguracji rozwiązania
 

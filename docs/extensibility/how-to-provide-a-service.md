@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c38f28ae99c2fb70f811b9d6b85e3c771512b17
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 40217c1cfcc2c7ae946e36aadb7a251436023b0a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723750"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078632"
 ---
 # <a name="how-to-provide-a-service"></a>Instrukcje: Oferuje usługi
 Pakietu VSPackage oferuje usługi, które można użyć innych pakietów VSPackage. Do świadczenia usług, pakietu VSPackage należy zarejestrować usługę za pomocą programu Visual Studio, a następnie Dodaj usługę.
@@ -76,7 +76,7 @@ Pakietu VSPackage oferuje usługi, które można użyć innych pakietów VSPacka
 
 ### <a name="register-a-service"></a>Zarejestruj usługę
 
-1.  Aby zarejestrować usługę, należy dodać <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> do pakietu VSPackage, która dostarcza usługę. Oto przykład:
+1. Aby zarejestrować usługę, należy dodać <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> do pakietu VSPackage, która dostarcza usługę. Oto przykład:
 
     ```csharp
     [ProvideService(typeof(SMyService))]
@@ -93,7 +93,7 @@ Pakietu VSPackage oferuje usługi, które można użyć innych pakietów VSPacka
 
 ### <a name="add-a-service"></a>Dodaj usługę
 
-1.  W inicjatorze pakietu VSPackage Dodaj usługę, a następnie dodaj metodę wywołania zwrotnego, trzeba utworzyć usługi. Oto zmiany do wprowadzenia <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody:
+1. W inicjatorze pakietu VSPackage Dodaj usługę, a następnie dodaj metodę wywołania zwrotnego, trzeba utworzyć usługi. Oto zmiany do wprowadzenia <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody:
 
     ```csharp
     protected override void Initialize()
@@ -105,7 +105,7 @@ Pakietu VSPackage oferuje usługi, które można użyć innych pakietów VSPacka
     }
     ```
 
-2.  Implementuje metody wywołania zwrotnego, które należy utworzyć i zwracać usługi lub wartość null, jeśli nie można utworzyć.
+2. Implementuje metody wywołania zwrotnego, które należy utworzyć i zwracać usługi lub wartość null, jeśli nie można utworzyć.
 
     ```csharp
     private object CreateService(IServiceContainer container, Type serviceType)
@@ -119,7 +119,7 @@ Pakietu VSPackage oferuje usługi, które można użyć innych pakietów VSPacka
     > [!NOTE]
     >  Program Visual Studio można odrzucić żądanie do świadczenia usług. Robi to jeśli innego pakietu VSPackage już zawiera usługę.
 
-3.  Teraz możesz pobrać usługę i użycie jej metod. W poniższym przykładzie przy użyciu usługi w inicjatorze, ale możesz uzyskać odpowiednią usługę dowolne miejsce do korzystania z usługi.
+3. Teraz możesz pobrać usługę i użycie jej metod. W poniższym przykładzie przy użyciu usługi w inicjatorze, ale możesz uzyskać odpowiednią usługę dowolne miejsce do korzystania z usługi.
 
     ```csharp
     protected override void Initialize()

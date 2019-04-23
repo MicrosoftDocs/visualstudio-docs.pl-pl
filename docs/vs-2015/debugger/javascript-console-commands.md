@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e30cee45bcb716e70e8b2e585079628b55daa8ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aeaba355e101bd8e48126bfa01f95668a37abe3e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781762"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081427"
 ---
 # <a name="javascript-console-commands"></a>Polecenia konsoli JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Badanie obiektów w oknie konsoli języka JavaScript  
  Możesz porozmawiać z dowolnego obiektu, który znajduje się w zakresie, korzystając z okna konsoli JavaScript. Aby przeprowadzić inspekcję obiekt poza zakresem w oknie konsoli, należy użyć `console.log` , `console.dir`, lub innych poleceń w kodzie. Alternatywnie możesz porozmawiać z obiektu z okna konsoli jest w zakresie przez ustawienie punktu przerwania w kodzie (**punktu przerwania** > **Wstaw punkt przerwania**).  
   
-##  <a name="ConsoleLog"></a> Formatowanie danych wyjściowych dziennika console.log  
+## <a name="ConsoleLog"></a> Formatowanie danych wyjściowych dziennika console.log  
  W przypadku przekazania wiele argumentów `console.log`, konsolę będzie traktować argumenty jako tablica i połącz dane wyjściowe.  
   
 ```javascript  

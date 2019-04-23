@@ -22,12 +22,12 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef556f71d03cf20767fcba38ff3579dda2627a1b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0a6945713d86c510112992be3fefd2d41280ef14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653678"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083502"
 ---
 # <a name="install-dotfuscator-community"></a>Instalowanie programu Dotfuscator Community
 
@@ -47,7 +47,7 @@ System Dotfuscator Community można zainstalować w środowisku IDE programu Vis
 1. W **pole wyszukiwania** (Ctrl + Q), typ `dotfuscator`. <br/> <br/> ![Pole wyszukiwania](media/install_in_vs19_12.png) <br/> <br/>
 
 2. W wynikach wyszukiwania, wyświetlane w obszarze *składniki* nagłówka, wybierz **instalowanie ochrony PreEmptive — Dotfuscator**.
-  * Jeśli widać, w obszarze *menu* nagłówkiem **PreEmptive ochrona — system Dotfuscator Community**, a następnie system Dotfuscator Community jest już zainstalowana. Wybierz tę opcję, aby [wprowadzenie][get-started].
+   * Jeśli widać, w obszarze *menu* nagłówkiem **PreEmptive ochrona — system Dotfuscator Community**, a następnie system Dotfuscator Community jest już zainstalowana. Wybierz tę opcję, aby [wprowadzenie][get-started].
 
 3. Instalator Visual Studio, który spowoduje uruchomienie okna, wstępnie skonfigurowany, aby zainstalować system Dotfuscator Community.
    > [!NOTE]

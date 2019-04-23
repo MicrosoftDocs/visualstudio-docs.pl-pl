@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe2a085306ca72170de22791cfa9e64514d45b4c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9efc655997a48e070ee60a1d66dc57be31362403
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599210"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080414"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Instrukcje: Dodaj zawartość formantów do dokumentów programu Word
   W projektach programu Word na poziomie dokumentu można dodać formanty zawartości do dokumentu w projekcie w czasie projektowania lub w czasie wykonywania. W projektach dodatku narzędzi VSTO programu Word można dodać formanty zawartości dowolnego otwartego dokumentu w czasie wykonywania.
@@ -48,7 +48,7 @@ ms.locfileid: "56599210"
 
   Aby uzyskać informacje o formantach zawartości, zobacz [udostępnia mechanizmy kontroli zawartości](../vsto/content-controls.md).
 
-##  <a name="designtime"></a> Dodaj zawartość kontrolki w czasie projektowania
+## <a name="designtime"></a> Dodaj zawartość kontrolki w czasie projektowania
  Istnieje kilka sposobów, aby dodać formanty zawartości do dokumentu w projekcie na poziomie dokumentu w czasie projektowania:
 
 - Dodaj kontrolkę zawartości z **formanty programu Word** karcie **przybornika**.
@@ -61,21 +61,21 @@ ms.locfileid: "56599210"
 
 ### <a name="to-add-a-content-control-to-a-document-by-using-the-toolbox"></a>Aby dodać kontrolkę zawartości w dokumencie za pomocą przybornika
 
-1.  W dokumencie, który znajduje się w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektanta, umieścić kursor, w której chcesz dodać formant zawartości lub zaznacz tekst, który ma formant zawartości w celu zastąpienia.
+1. W dokumencie, który znajduje się w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektanta, umieścić kursor, w której chcesz dodać formant zawartości lub zaznacz tekst, który ma formant zawartości w celu zastąpienia.
 
-2.  Otwórz **przybornika** i kliknij przycisk **formanty programu Word** kartę.
+2. Otwórz **przybornika** i kliknij przycisk **formanty programu Word** kartę.
 
-3.  Dodaj kontrolkę, jeden z następujących sposobów:
+3. Dodaj kontrolkę, jeden z następujących sposobów:
 
-    -   Kliknij dwukrotnie formant zawartości w **przybornika**.
-
-         lub
-
-    -   Kliknij kontrolkę zawartości w **przybornika** , a następnie naciśnij klawisz **Enter** klucza.
+    - Kliknij dwukrotnie formant zawartości w **przybornika**.
 
          lub
 
-    -   Przeciągnij formant zawartości z **przybornika** do dokumentu. Zawartość formant jest dodawany, bieżące zaznaczenie w dokumencie, a nie lokalizacja wskaźnika myszy.
+    - Kliknij kontrolkę zawartości w **przybornika** , a następnie naciśnij klawisz **Enter** klucza.
+
+         lub
+
+    - Przeciągnij formant zawartości z **przybornika** do dokumentu. Zawartość formant jest dodawany, bieżące zaznaczenie w dokumencie, a nie lokalizacja wskaźnika myszy.
 
 > [!NOTE]
 >  Nie można dodać <xref:Microsoft.Office.Tools.Word.GroupContentControl> przy użyciu **przybornika**. Możesz dodawać tylko <xref:Microsoft.Office.Tools.Word.GroupContentControl> w programie Word lub w czasie wykonywania.
@@ -85,16 +85,16 @@ ms.locfileid: "56599210"
 
 #### <a name="to-add-a-content-control-to-a-document-in-word"></a>Aby dodać kontrolkę zawartości do dokumentu programu Word
 
-1.  W dokumencie, który znajduje się w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektanta, umieścić kursor, w której chcesz dodać formant zawartości lub zaznacz tekst, który ma formant zawartości w celu zastąpienia.
+1. W dokumencie, który znajduje się w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektanta, umieścić kursor, w której chcesz dodać formant zawartości lub zaznacz tekst, który ma formant zawartości w celu zastąpienia.
 
-2.  Na wstążce kliknij **Developer** kartę.
+2. Na wstążce kliknij **Developer** kartę.
 
     > [!NOTE]
     >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-3.  W **formantów** grupy, kliknij ikonę formantu zawartości, który chcesz dodać.
+3. W **formantów** grupy, kliknij ikonę formantu zawartości, który chcesz dodać.
 
-##  <a name="runtimedoclevel"></a> Dodawanie formantów zawartości w czasie wykonywania w projekcie na poziomie dokumentu
+## <a name="runtimedoclevel"></a> Dodawanie formantów zawartości w czasie wykonywania w projekcie na poziomie dokumentu
  Można dodać formanty zawartości programowo do dokumentu w czasie wykonywania za pomocą metody <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> właściwość `ThisDocument` klasy w projekcie. Każda metoda charakteryzuje się trzech przeciążeń, które można użyć, aby dodać kontrolkę zawartości w następujący sposób:
 
 - Dodaj kontrolkę na bieżącym zaznaczeniu.
@@ -110,7 +110,7 @@ ms.locfileid: "56599210"
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>Aby dodać kontrolkę zawartości w bieżącym zaznaczeniu
 
-1.  Użyj <xref:Microsoft.Office.Tools.Word.ControlCollection> metody, która ma nazwę `Add` \< *kontrolować klasy*> (gdzie *kontrolować klasy* jest nazwą klasy z formantu zawartości, który chcesz dodać, takich jak <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), i który ma jeden parametr dla nazwy nowego formantu.
+1. Użyj <xref:Microsoft.Office.Tools.Word.ControlCollection> metody, która ma nazwę `Add` \< *kontrolować klasy*> (gdzie *kontrolować klasy* jest nazwą klasy z formantu zawartości, który chcesz dodać, takich jak <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), i który ma jeden parametr dla nazwy nowego formantu.
 
      Poniższy przykład kodu wykorzystuje <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> metodę, aby dodać nowy <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do początku dokumentu. Aby uruchomić ten kod, Dodaj kod, aby `ThisDocument` klasy w projekcie i Wywołaj `AddRichTextControlAtSelection` metody z `ThisDocument_Startup` programu obsługi zdarzeń.
 
@@ -119,7 +119,7 @@ ms.locfileid: "56599210"
 
 ### <a name="to-add-a-content-control-at-a-specified-range"></a>Aby dodać kontrolkę zawartości w określonym zakresie
 
-1.  Użyj <xref:Microsoft.Office.Tools.Word.ControlCollection> metody, która ma nazwę `Add` \< *kontrolować klasy*> (gdzie *kontrolować klasy* jest nazwą klasy formantu zawartości, którą chcesz dodać, takich jak <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), i ma <xref:Microsoft.Office.Interop.Word.Range> parametru.
+1. Użyj <xref:Microsoft.Office.Tools.Word.ControlCollection> metody, która ma nazwę `Add` \< *kontrolować klasy*> (gdzie *kontrolować klasy* jest nazwą klasy formantu zawartości, którą chcesz dodać, takich jak <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), i ma <xref:Microsoft.Office.Interop.Word.Range> parametru.
 
      Poniższy przykład kodu wykorzystuje <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> metodę, aby dodać nowy <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do początku dokumentu. Aby uruchomić ten kod, Dodaj kod, aby `ThisDocument` klasy w projekcie i Wywołaj `AddRichTextControlAtRange` metody z `ThisDocument_Startup` programu obsługi zdarzeń.
 
@@ -128,14 +128,14 @@ ms.locfileid: "56599210"
 
 ### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>Aby dodać kontrolkę zawartości, która opiera się na macierzystym formancie zawartości
 
-1.  Użyj <xref:Microsoft.Office.Tools.Word.ControlCollection> metody, która ma nazwę `Add` \< *kontrolować klasy*> (gdzie *kontrolować klasy* jest nazwą klasy formantu zawartości, którą chcesz dodać, takich jak <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), i ma `Microsoft.Office.Interop.Word.ContentControl` parametru.
+1. Użyj <xref:Microsoft.Office.Tools.Word.ControlCollection> metody, która ma nazwę `Add` \< *kontrolować klasy*> (gdzie *kontrolować klasy* jest nazwą klasy formantu zawartości, którą chcesz dodać, takich jak <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), i ma `Microsoft.Office.Interop.Word.ContentControl` parametru.
 
      Poniższy przykład kodu wykorzystuje <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> metodę, aby utworzyć nową <xref:Microsoft.Office.Tools.Word.RichTextContentControl> dla każdego formantu natywnych tekstu sformatowanego, który znajduje się w dokumencie. Aby uruchomić ten kod, Dodaj kod, aby `ThisDocument` klasy w projekcie i Wywołaj `CreateRichTextControlsFromNativeControls` metody z `ThisDocument_Startup` programu obsługi zdarzeń.
 
      [!code-csharp[Trin_ContentControlReference#702](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#702)]
      [!code-vb[Trin_ContentControlReference#702](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#702)]
 
-##  <a name="runtimeaddin"></a> Dodawanie formantów zawartości w czasie wykonywania w projekcie dodatku narzędzi VSTO
+## <a name="runtimeaddin"></a> Dodawanie formantów zawartości w czasie wykonywania w projekcie dodatku narzędzi VSTO
  Można dodać formanty zawartości programowo dowolnego otwartego dokumentu w czasie wykonywania za pomocą dodatku narzędzi VSTO. Aby to zrobić, należy wygenerować <xref:Microsoft.Office.Tools.Word.Document> elementu, która jest oparta na otwartym dokumencie hosta, a następnie użyj metod <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> właściwości tego elementu host. Każda metoda charakteryzuje się trzech przeciążeń, które można użyć, aby dodać kontrolkę zawartości w następujący sposób:
 
 - Dodaj kontrolkę na bieżącym zaznaczeniu.
@@ -153,7 +153,7 @@ ms.locfileid: "56599210"
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>Aby dodać kontrolkę zawartości w bieżącym zaznaczeniu
 
-1.  Użyj <xref:Microsoft.Office.Tools.Word.ControlCollection> metody, która ma nazwę `Add` \< *kontrolować klasy*> (gdzie *kontrolować klasy* jest nazwą klasy z formantu zawartości, który chcesz dodać, takich jak <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), i który ma jeden parametr dla nazwy nowego formantu.
+1. Użyj <xref:Microsoft.Office.Tools.Word.ControlCollection> metody, która ma nazwę `Add` \< *kontrolować klasy*> (gdzie *kontrolować klasy* jest nazwą klasy z formantu zawartości, który chcesz dodać, takich jak <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), i który ma jeden parametr dla nazwy nowego formantu.
 
      Poniższy przykład kodu wykorzystuje <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> metodę, aby dodać nowy <xref:Microsoft.Office.Tools.Word.RichTextContentControl> na początku aktywnego dokumentu. Aby uruchomić ten kod, Dodaj kod, aby `ThisAddIn` klasy w projekcie i Wywołaj `AddRichTextControlAtSelection` metody z `ThisAddIn_Startup` programu obsługi zdarzeń.
 
@@ -162,7 +162,7 @@ ms.locfileid: "56599210"
 
 ### <a name="to-add-a-content-control-at-a-specified-range"></a>Aby dodać kontrolkę zawartości w określonym zakresie
 
-1.  Użyj <xref:Microsoft.Office.Tools.Word.ControlCollection> metody, która ma nazwę `Add` \< *kontrolować klasy*> (gdzie *kontrolować klasy* jest nazwą klasy formantu zawartości, którą chcesz dodać, takich jak <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), i ma <xref:Microsoft.Office.Interop.Word.Range> parametru.
+1. Użyj <xref:Microsoft.Office.Tools.Word.ControlCollection> metody, która ma nazwę `Add` \< *kontrolować klasy*> (gdzie *kontrolować klasy* jest nazwą klasy formantu zawartości, którą chcesz dodać, takich jak <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), i ma <xref:Microsoft.Office.Interop.Word.Range> parametru.
 
      Poniższy przykład kodu wykorzystuje <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> metodę, aby dodać nowy <xref:Microsoft.Office.Tools.Word.RichTextContentControl> na początku aktywnego dokumentu. Aby uruchomić ten kod, Dodaj kod, aby `ThisAddIn` klasy w projekcie i Wywołaj `AddRichTextControlAtRange` metody z `ThisAddIn_Startup` programu obsługi zdarzeń.
 
@@ -171,7 +171,7 @@ ms.locfileid: "56599210"
 
 #### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>Aby dodać kontrolkę zawartości, która opiera się na macierzystym formancie zawartości
 
-1.  Użyj <xref:Microsoft.Office.Tools.Word.ControlCollection> metody, która ma nazwę `Add` \< *kontrolować klasy*> (gdzie *kontrolować klasy* jest nazwą klasy formantu zawartości, którą chcesz dodać, takich jak <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), i ma `Microsoft.Office.Interop.Word.ContentControl` parametru.
+1. Użyj <xref:Microsoft.Office.Tools.Word.ControlCollection> metody, która ma nazwę `Add` \< *kontrolować klasy*> (gdzie *kontrolować klasy* jest nazwą klasy formantu zawartości, którą chcesz dodać, takich jak <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), i ma `Microsoft.Office.Interop.Word.ContentControl` parametru.
 
      Poniższy przykład kodu wykorzystuje <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> metodę, aby utworzyć nową <xref:Microsoft.Office.Tools.Word.RichTextContentControl> dla każdego formantu natywnych tekstu sformatowanego, który znajduje się w dokumencie, po otwarciu dokumentu. Aby uruchomić ten kod, Dodaj kod, aby `ThisAddIn` klasy w projekcie.
 

@@ -53,12 +53,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 553d4f7ca61bbc01e72e8735b0007d2f08876e71
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d45fcbd8bd84bb9b6510d4143d3250e2e67ad1b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666510"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085380"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Narzędzia zestawu danych w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,23 +75,23 @@ UWAGA]
 ## <a name="dataset-workflow"></a>Zestaw danych przepływu pracy
  Program Visual Studio udostępnia wiele narzędzi w celu uproszczenia pracy z zestawami danych. Podstawowy przepływ pracy end-to-end jest:
 
--   Użyj **źródła danych** okna, aby utworzyć nowy zestaw danych z co najmniej jedno źródło danych. Użyj **Projektanta obiektów Dataset** do konfigurowania zestawu danych i ustaw jego właściwości. Na przykład należy określić tabel ze źródła danych do uwzględnienia, a które kolumny z każdej tabeli. Wybierz dokładnie oszczędzać ilość pamięci, która wymaga zestawu danych. Aby uzyskać więcej informacji, zobacz [tworzenie i konfigurowanie zestawów danych](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+- Użyj **źródła danych** okna, aby utworzyć nowy zestaw danych z co najmniej jedno źródło danych. Użyj **Projektanta obiektów Dataset** do konfigurowania zestawu danych i ustaw jego właściwości. Na przykład należy określić tabel ze źródła danych do uwzględnienia, a które kolumny z każdej tabeli. Wybierz dokładnie oszczędzać ilość pamięci, która wymaga zestawu danych. Aby uzyskać więcej informacji, zobacz [tworzenie i konfigurowanie zestawów danych](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
--   Określ relacje między tabelami i kluczy obcych są obsługiwane poprawnie. Aby uzyskać więcej informacji, zobacz [wypełnienia zestawów danych przy użyciu TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
+- Określ relacje między tabelami i kluczy obcych są obsługiwane poprawnie. Aby uzyskać więcej informacji, zobacz [wypełnienia zestawów danych przy użyciu TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
 
--   Użyj **Kreator konfiguracji TableAdapter** określić zapytanie lub procedura składowana, który zostanie wypełniony zestawu danych i jakie operacje bazy danych (update, delete itd.) do zaimplementowania. Aby uzyskać więcej informacji zobacz następujące tematy:
+- Użyj **Kreator konfiguracji TableAdapter** określić zapytanie lub procedura składowana, który zostanie wypełniony zestawu danych i jakie operacje bazy danych (update, delete itd.) do zaimplementowania. Aby uzyskać więcej informacji zobacz następujące tematy:
 
-    -   [Wypełnianie zestawów danych za pomocą adapterów TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
+    - [Wypełnianie zestawów danych za pomocą adapterów TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    -   [Edytowanie danych w zestawach danych](../data-tools/edit-data-in-datasets.md)
+    - [Edytowanie danych w zestawach danych](../data-tools/edit-data-in-datasets.md)
 
-    -   [Weryfikowanie danych w zestawach danych](../data-tools/validate-data-in-datasets.md)
+    - [Weryfikowanie danych w zestawach danych](../data-tools/validate-data-in-datasets.md)
 
-    -   [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)
+    - [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)
 
--   Zapytania i wyszukiwać dane w zestawie danych. Aby uzyskać więcej informacji, zobacz [zestawów danych zapytania](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] Włącza [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) nad danymi w <xref:System.Data.DataSet> obiektu. Aby uzyskać więcej informacji, zobacz [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
+- Zapytania i wyszukiwać dane w zestawie danych. Aby uzyskać więcej informacji, zobacz [zestawów danych zapytania](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] Włącza [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) nad danymi w <xref:System.Data.DataSet> obiektu. Aby uzyskać więcej informacji, zobacz [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
 
--   Użyj **źródeł danych** okna, aby powiązać formanty interfejsu użytkownika z zestawu danych lub jego poszczególnych kolumn i określić, które kolumny są można edytować użytkownika. Aby uzyskać więcej informacji, zobacz [powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
+- Użyj **źródeł danych** okna, aby powiązać formanty interfejsu użytkownika z zestawu danych lub jego poszczególnych kolumn i określić, które kolumny są można edytować użytkownika. Aby uzyskać więcej informacji, zobacz [powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
 ## <a name="datasets-and-n-tier-architecture"></a>Zestawy danych i N-warstwowej architektury
  Aby uzyskać informacji na temat zestawów danych w aplikacjach N-warstwowej, zobacz [Praca z zestawami danych w aplikacjach n warstwowych](../data-tools/work-with-datasets-in-n-tier-applications.md).

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89fba307b40d7e0b8ede2d437b214e3f58929c39
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 654fdb6a921a0d6a25490b17f6f0ce3ffafa4ae4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702489"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085587"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Instrukcje: Otwieranie edytorów dla otwartych dokumentów
 Przed projektu powoduje otwarcie okna dokumentów, projektu najpierw należy określić czy plik jest już otwarty w oknie dokumentu innym edytorze. Może to być plik albo otworzyć w edytorze specyficzne dla projektu lub jednego z standardowych edytorów zarejestrowane w usłudze [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
@@ -46,11 +46,11 @@ Przed projektu powoduje otwarcie okna dokumentów, projektu najpierw należy okr
 
 ### <a name="to-open-a-standard-editor-for-an-open-file"></a>Aby otworzyć Edytor standardowy dla otwartego pliku
 
-1.  Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.
+1. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.
 
      Ta metoda sprawdza najpierw, że dokument nie jest już otwarty przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>. Jeśli dokument jest już otwarty, to resurfaced jej okna edytora.
 
-2.  Jeśli dokument nie jest otwarty, wykonaj kroki [jak: Otwieranie standardowych edytorów](../extensibility/how-to-open-standard-editors.md).
+2. Jeśli dokument nie jest otwarty, wykonaj kroki [jak: Otwieranie standardowych edytorów](../extensibility/how-to-open-standard-editors.md).
 
 ## <a name="see-also"></a>Zobacz także
 - [Otwieranie i zapisywanie elementów projektu](../extensibility/internals/opening-and-saving-project-items.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 80c8d385e0c78461df5b7938d356ec43a481e46e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8fe6377de1be51ac0fc48904687b60ed8bbc95b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670423"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082961"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Tworzenie interfejsu użytkownika przy użyciu programu Blend for Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ Program Blend for Visual Studio ułatwia projektowanie oparte na XAML Windows pu
 
  **W tym temacie**:
 
--   [Samouczek panelu Narzędzia](#Tools)
+- [Samouczek panelu Narzędzia](#Tools)
 
--   [Samouczek panelu Zasoby](#Assets)
+- [Samouczek panelu Zasoby](#Assets)
 
--   [Przewodnik po przykładzie obiekty i oś czasu panelu](#Objects)
+- [Przewodnik po przykładzie obiekty i oś czasu panelu](#Objects)
 
--   [Samouczek Panelu właściwości](#Properties)
+- [Samouczek Panelu właściwości](#Properties)
 
-##  <a name="Tools"></a> Samouczek panelu Narzędzia
+## <a name="Tools"></a> Samouczek panelu Narzędzia
  Możesz użyć **narzędzia** panel w programie Blend for Visual Studio do tworzenia i modyfikowania obiektów w aplikacji. Możesz utworzyć obiekty, wybierając narzędzie i rysowanie w obszarze kompozycji przy użyciu myszy.
 
  ![Panel narzędzi](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
@@ -56,7 +56,7 @@ Program Blend for Visual Studio ułatwia projektowanie oparte na XAML Windows pu
 
  **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pasek narzędzi](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
-##  <a name="Assets"></a> Samouczek panelu Zasoby
+## <a name="Assets"></a> Samouczek panelu Zasoby
  Możesz znaleźć wszystkie formanty w **zasoby** panelu, podobnie jak **przybornika** w programie Visual Studio. Oprócz formantów, znajdziesz wszystko, czego możesz dodać do Twojego obszaru roboczego w **zasoby** panelu, w tym stylów, multimediów, zachowań i efektów.
 
  ![Panel zasobów](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
@@ -69,7 +69,7 @@ Program Blend for Visual Studio ułatwia projektowanie oparte na XAML Windows pu
 |![](../designers/media/b1-4.png "B1_4")|**Style** Pokaż wszystkie style, które są zawarte w słowniku zasobów.|
 |![](../designers/media/b1-5.png "B1_5")|**Opis** Wyświetl opis wybranej kategorii lub podkategorii zasobów.|
 
-##  <a name="Objects"></a> Przewodnik po przykładzie obiekty i oś czasu panelu
+## <a name="Objects"></a> Przewodnik po przykładzie obiekty i oś czasu panelu
  Użyj tego panelu do porządkowania obiektów w Twojego obszaru roboczego i, jeśli chcesz, aby animować je.
 
  ![Panel obiektów i osi czasu w trybie animacji](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
@@ -93,7 +93,7 @@ Program Blend for Visual Studio ułatwia projektowanie oparte na XAML Windows pu
 |![](../designers/media/b1-15.png "B1_15")|**Powiększenie osi czasu** Ustaw rozdzielczość powiększania osi czasu. Powiększanie pozwala bardziej szczegółowo edytować animację, a pomniejszenie przedstawia bardziej ogólny obraz zdarzeń w dłuższym okresie. Jeśli po powiększeniu nie można ustawić ramki kluczowej na żądanej pozycji w czasie, należy sprawdzić, czy ustawiono odpowiednio dużą rozdzielczość przyciągania.|
 |![Objaśnienie 16](../designers/media/b5-label-16.png "b5_label_16")|**Obszar kompozycji osi czasu** Wyświetl oś czasu i przesuwanie ramek kluczowych przez przeciąganie ich lub za pomocą menu skrótów.|
 
-##  <a name="Properties"></a> Samouczek Panelu właściwości
+## <a name="Properties"></a> Samouczek Panelu właściwości
  Ten panel umożliwia wyświetlanie i modyfikowanie właściwości obiektu. Można również ustawić je bezpośrednio w obszarze kompozycji. Jeśli to zrobisz, zmiany właściwości zostaną odzwierciedlone w **właściwości** panelu.
 
  ![Panel właściwości](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")

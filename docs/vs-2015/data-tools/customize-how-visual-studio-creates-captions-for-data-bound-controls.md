@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20611035ba37c509be7e41d8468d0c3d893334b2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1b3bba0d47e77b9e712a375627e2e4aebc6702b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647962"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079490"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Dostosowywanie sposobu tworzenia podpisów dla kontrolek powiązanych z danymi przez program Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,21 +60,21 @@ Podczas przeciągania elementów z [okna źródeł danych](http://msdn.microsoft
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Aby zmodyfikować zachowanie podpisów inteligentne okna źródeł danych
 
-1.  Otwórz okno polecenia, klikając **Start** i następnie **Uruchom**.
+1. Otwórz okno polecenia, klikając **Start** i następnie **Uruchom**.
 
-2.  Typ `regedit` w **Uruchom** okno dialogowe, a następnie kliknij przycisk **OK**.
+2. Typ `regedit` w **Uruchom** okno dialogowe, a następnie kliknij przycisk **OK**.
 
-3.  Rozwiń **HKEY_CURRENT_USER** węzła.
+3. Rozwiń **HKEY_CURRENT_USER** węzła.
 
-4.  Rozwiń **oprogramowania** węzła.
+4. Rozwiń **oprogramowania** węzła.
 
-5.  Rozwiń **Microsoft** węzła.
+5. Rozwiń **Microsoft** węzła.
 
-6.  Rozwiń **VisualStudio** węzła.
+6. Rozwiń **VisualStudio** węzła.
 
-7.  Kliknij prawym przyciskiem myszy **10.0** węzeł i Utwórz nowy **klucz** o nazwie `Data Designers`.
+7. Kliknij prawym przyciskiem myszy **10.0** węzeł i Utwórz nowy **klucz** o nazwie `Data Designers`.
 
-8.  Kliknij prawym przyciskiem myszy **projektantów danych** węzeł i Utwórz nowy **wartość ciągu** o nazwie `SmartCaptionExpression`.
+8. Kliknij prawym przyciskiem myszy **projektantów danych** węzeł i Utwórz nowy **wartość ciągu** o nazwie `SmartCaptionExpression`.
 
 9. Kliknij prawym przyciskiem myszy **projektantów danych** węzeł i Utwórz nowy **wartość ciągu** o nazwie `SmartCaptionReplacement`.
 
@@ -96,21 +96,21 @@ Podczas przeciągania elementów z [okna źródeł danych](http://msdn.microsoft
 
 ### <a name="to-turn-off-the-smart-captioning-feature"></a>Aby wyłączyć funkcję inteligentnych podpisów
 
-1.  Otwórz okno polecenia, klikając **Start** i następnie **Uruchom**.
+1. Otwórz okno polecenia, klikając **Start** i następnie **Uruchom**.
 
-2.  Typ `regedit` w **Uruchom** okno dialogowe, a następnie kliknij przycisk **OK**.
+2. Typ `regedit` w **Uruchom** okno dialogowe, a następnie kliknij przycisk **OK**.
 
-3.  Rozwiń **HKEY_CURRENT_USER** węzła.
+3. Rozwiń **HKEY_CURRENT_USER** węzła.
 
-4.  Rozwiń **oprogramowania** węzła.
+4. Rozwiń **oprogramowania** węzła.
 
-5.  Rozwiń **Microsoft** węzła.
+5. Rozwiń **Microsoft** węzła.
 
-6.  Rozwiń **VisualStudio** węzła.
+6. Rozwiń **VisualStudio** węzła.
 
-7.  Kliknij prawym przyciskiem myszy **10.0** węzeł i Utwórz nowy **klucz** o nazwie `Data Designers`.
+7. Kliknij prawym przyciskiem myszy **10.0** węzeł i Utwórz nowy **klucz** o nazwie `Data Designers`.
 
-8.  Kliknij prawym przyciskiem myszy **projektantów danych** węzeł i Utwórz nowy **wartość ciągu** o nazwie `SmartCaptionExpression`.
+8. Kliknij prawym przyciskiem myszy **projektantów danych** węzeł i Utwórz nowy **wartość ciągu** o nazwie `SmartCaptionExpression`.
 
 9. Kliknij prawym przyciskiem myszy **projektantów danych** węzeł i Utwórz nowy **wartość ciągu** o nazwie `SmartCaptionReplacement`.
 

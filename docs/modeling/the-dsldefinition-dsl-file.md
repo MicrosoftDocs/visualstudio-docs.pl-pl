@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c2198f0908e0ef8f7918d42f4ba256378e0e60
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c43ed1fa156c77edc89b8d40185cc7436cce5d7a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841847"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079483"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Plik DslDefinition.dsl
 
@@ -166,27 +166,27 @@ Każda klasa ma zestaw właściwości i może mieć klasy bazowej. W tym przykł
 
 Każda klasa domeny (w tym relacje, kształty, łączników i diagramy) może mieć tych atrybutów i węzłów podrzędnych:
 
--   **Id.** Ten atrybut jest identyfikatorem GUID. Jeśli nie zostanie określona wartość w pliku, projektanta języka specyficznego dla domeny utworzy wartość. (Na ilustracjach w tym dokumencie, ten atrybut jest zwykle pominąć, aby zaoszczędzić miejsce.)
+- **Id.** Ten atrybut jest identyfikatorem GUID. Jeśli nie zostanie określona wartość w pliku, projektanta języka specyficznego dla domeny utworzy wartość. (Na ilustracjach w tym dokumencie, ten atrybut jest zwykle pominąć, aby zaoszczędzić miejsce.)
 
--   **Nazwa i Namespace.** Te atrybuty Określ nazwę i przestrzeń nazw, klasy w wygenerowanym kodzie. Razem muszą być unikatowe w obrębie języka specyficznego dla domeny.
+- **Nazwa i Namespace.** Te atrybuty Określ nazwę i przestrzeń nazw, klasy w wygenerowanym kodzie. Razem muszą być unikatowe w obrębie języka specyficznego dla domeny.
 
--   **InheritanceModifier.** Ten atrybut to "abstrakcyjnego", "sealed" lub Brak.
+- **InheritanceModifier.** Ten atrybut to "abstrakcyjnego", "sealed" lub Brak.
 
--   **DisplayName.** Ten atrybut jest nazwą, która jest wyświetlana w **właściwości** okna. Atrybut DisplayName może zawierać spacje i inne znaki interpunkcyjne.
+- **DisplayName.** Ten atrybut jest nazwą, która jest wyświetlana w **właściwości** okna. Atrybut DisplayName może zawierać spacje i inne znaki interpunkcyjne.
 
--   **GeneratesDoubleDerived.** Jeśli ten atrybut jest ustawiony na wartość true, dwóch klas są generowane i jeden jest podklasą drugiego. Wygenerowane metody są w podstawowym, a konstruktory znajdują się w podklasy. Przez ustawienie tego atrybutu, można zastąpić dowolną metodę wygenerowanego w kodzie niestandardowym.
+- **GeneratesDoubleDerived.** Jeśli ten atrybut jest ustawiony na wartość true, dwóch klas są generowane i jeden jest podklasą drugiego. Wygenerowane metody są w podstawowym, a konstruktory znajdują się w podklasy. Przez ustawienie tego atrybutu, można zastąpić dowolną metodę wygenerowanego w kodzie niestandardowym.
 
--   **HasCustomConstructor**. Jeśli ten atrybut jest ustawiony na wartość true, Konstruktor pominięcia z wygenerowanego kodu, aby napisać własną wersję.
+- **HasCustomConstructor**. Jeśli ten atrybut jest ustawiony na wartość true, Konstruktor pominięcia z wygenerowanego kodu, aby napisać własną wersję.
 
--   **Atrybuty**. Ten atrybut zawiera atrybuty CLR wygenerowanej klasy.
+- **Atrybuty**. Ten atrybut zawiera atrybuty CLR wygenerowanej klasy.
 
--   **BaseClass**. Jeśli określono klasy bazowej, musi to być tego samego typu. Na przykład klasa domeny musi mieć innej klasy domeny jako jego podstawowy i kształt przedziału musi mieć kształtu przedziału. Jeśli klasa bazowa nie jest określona, klasy w wygenerowanym kodzie pochodzi od klasy framework standardowych. Na przykład klasy domeny jest pochodną `ModelElement`.
+- **BaseClass**. Jeśli określono klasy bazowej, musi to być tego samego typu. Na przykład klasa domeny musi mieć innej klasy domeny jako jego podstawowy i kształt przedziału musi mieć kształtu przedziału. Jeśli klasa bazowa nie jest określona, klasy w wygenerowanym kodzie pochodzi od klasy framework standardowych. Na przykład klasy domeny jest pochodną `ModelElement`.
 
--   **Właściwości**. Ten atrybut zawiera właściwości, które są obsługiwane pod kontrolą transakcji i zachowywane po zapisaniu modelu.
+- **Właściwości**. Ten atrybut zawiera właściwości, które są obsługiwane pod kontrolą transakcji i zachowywane po zapisaniu modelu.
 
--   **ElementMergeDirectives**. Każda dyrektywa scalania Określa, jak inne wystąpienie innej klasy jest dodawany do wystąpienia klasy nadrzędnej. Więcej szczegółów na temat dyrektywy scalania elementów można znaleźć w dalszej części tego tematu.
+- **ElementMergeDirectives**. Każda dyrektywa scalania Określa, jak inne wystąpienie innej klasy jest dodawany do wystąpienia klasy nadrzędnej. Więcej szczegółów na temat dyrektywy scalania elementów można znaleźć w dalszej części tego tematu.
 
--   Klasa C# jest generowane dla każdej klasy domeny, który znajduje się w `Classes` sekcji. Klas języka C# są generowane w Dsl\GeneratedCode\DomainClasses.cs.
+- Klasa C# jest generowane dla każdej klasy domeny, który znajduje się w `Classes` sekcji. Klas języka C# są generowane w Dsl\GeneratedCode\DomainClasses.cs.
 
 ### <a name="properties"></a>Właściwości
 
@@ -204,17 +204,17 @@ Typ musi odwoływać się do jednej z tych na liście `Types` sekcji. Ogólnie r
 
 Każda właściwość domeny może mieć również te atrybuty:
 
--   **IsBrowsable**. Ten atrybut określa, czy właściwość pojawia się w **właściwości** okna, gdy użytkownik kliknie obiekt klasy nadrzędnej.
+- **IsBrowsable**. Ten atrybut określa, czy właściwość pojawia się w **właściwości** okna, gdy użytkownik kliknie obiekt klasy nadrzędnej.
 
--   **IsUIReadOnly**. Ten atrybut określa, czy użytkownik może zmienić właściwość **właściwości** okna lub za pośrednictwem dekoratora, w której jest prezentowane właściwości.
+- **IsUIReadOnly**. Ten atrybut określa, czy użytkownik może zmienić właściwość **właściwości** okna lub za pośrednictwem dekoratora, w której jest prezentowane właściwości.
 
--   **Rodzaj**. Ten atrybut zostanie ustawiony na normalny, obliczona lub wartości CustomStorage. Jeśli ten atrybut jest ustawiony na obliczeniowe, musi podać kod niestandardowy, który określa wartość, a właściwość będzie tylko do odczytu. Jeśli ten atrybut jest ustawiony na wartości CustomStorage, musisz podać kod, który pobiera i ustawia wartości.
+- **Rodzaj**. Ten atrybut zostanie ustawiony na normalny, obliczona lub wartości CustomStorage. Jeśli ten atrybut jest ustawiony na obliczeniowe, musi podać kod niestandardowy, który określa wartość, a właściwość będzie tylko do odczytu. Jeśli ten atrybut jest ustawiony na wartości CustomStorage, musisz podać kod, który pobiera i ustawia wartości.
 
--   **IsElementName**. Jeśli ten atrybut jest ustawiony na wartość true, wartość jest automatycznie ustawiona na unikatową wartość po utworzeniu wystąpienia klasy nadrzędnej. Ten atrybut można ustawić wartość true dla tylko jednej właściwości w każdej klasie i musi mieć typ ciągu. W tym przykładzie Diagram składników `Name` właściwość `NamedElement` ma `IsElementName` ma wartość true. Zawsze, gdy użytkownik tworzy `Component` — element (który dziedziczy z `NamedElement`), jest inicjowana automatycznie na wartość podobną "Component6."
+- **IsElementName**. Jeśli ten atrybut jest ustawiony na wartość true, wartość jest automatycznie ustawiona na unikatową wartość po utworzeniu wystąpienia klasy nadrzędnej. Ten atrybut można ustawić wartość true dla tylko jednej właściwości w każdej klasie i musi mieć typ ciągu. W tym przykładzie Diagram składników `Name` właściwość `NamedElement` ma `IsElementName` ma wartość true. Zawsze, gdy użytkownik tworzy `Component` — element (który dziedziczy z `NamedElement`), jest inicjowana automatycznie na wartość podobną "Component6."
 
--   `DefaultValue`. Jeśli ten atrybut został określony, wartość określona zostanie przypisany do tego atrybutu dla nowych wystąpień tej klasy. Jeśli `IsElementName` jest ustawiony atrybut DefaultValue Określa początkowy część nowego ciągu znaków.
+- `DefaultValue`. Jeśli ten atrybut został określony, wartość określona zostanie przypisany do tego atrybutu dla nowych wystąpień tej klasy. Jeśli `IsElementName` jest ustawiony atrybut DefaultValue Określa początkowy część nowego ciągu znaków.
 
--   **Kategoria** jest nagłówkiem, w którym właściwość pojawi się w **właściwości** okna.
+- **Kategoria** jest nagłówkiem, w którym właściwość pojawi się w **właściwości** okna.
 
 ## <a name="relationships"></a>Relacje
 
@@ -226,11 +226,11 @@ Na przykład relacji połączenia łączy elementów członkowskich klasy elemen
 
 Każda relacja zawiera role źródłowe i docelowe, które mają następujące atrybuty:
 
--   `RolePlayer` Atrybut odwołuje się do klasy domeny połączonych wystąpień: Elementu outPort źródła InPort dla obiektu docelowego.
+- `RolePlayer` Atrybut odwołuje się do klasy domeny połączonych wystąpień: Elementu outPort źródła InPort dla obiektu docelowego.
 
--   `Multiplicity` Atrybut ma czterech możliwych wartości (wartości ZeroMany, wartość ZeroOne, co i OneMany). Ten atrybut odwołuje się do liczby łączy tę relację, która może być skojarzony z jednego obiektu pełniącego rolę.
+- `Multiplicity` Atrybut ma czterech możliwych wartości (wartości ZeroMany, wartość ZeroOne, co i OneMany). Ten atrybut odwołuje się do liczby łączy tę relację, która może być skojarzony z jednego obiektu pełniącego rolę.
 
--   `PropertyName` Atrybut określa nazwę, która jest używana w fabularne klasy dostępu do obiektów na drugim końcu. Ta nazwa jest używana w szablonie lub niestandardowego kodu na przechodzenie przez relację. Na przykład `PropertyName` ma ustawioną wartość atrybutu roli źródłowej `Targets`. W związku z tym poniższy kod będzie działać:
+- `PropertyName` Atrybut określa nazwę, która jest używana w fabularne klasy dostępu do obiektów na drugim końcu. Ta nazwa jest używana w szablonie lub niestandardowego kodu na przechodzenie przez relację. Na przykład `PropertyName` ma ustawioną wartość atrybutu roli źródłowej `Targets`. W związku z tym poniższy kod będzie działać:
 
     ```
     OutPort op = ...; foreach (InPort ip in op.Targets) ...
@@ -244,13 +244,13 @@ Każda relacja zawiera role źródłowe i docelowe, które mają następujące a
     ComponentPort p = ...; Component c = p.Component; if (c != null) ...
     ```
 
--   Rola `Name` jest nazwa, która jest używana w ramach klasy relacji do odwoływania się do końca tego łącza. Według Konwencji nazwy roli jest zawsze pojedynczej, ponieważ każde połączenie ma tylko jedno wystąpienie na każdym końcu. Poniższy kod będzie działać:
+- Rola `Name` jest nazwa, która jest używana w ramach klasy relacji do odwoływania się do końca tego łącza. Według Konwencji nazwy roli jest zawsze pojedynczej, ponieważ każde połączenie ma tylko jedno wystąpienie na każdym końcu. Poniższy kod będzie działać:
 
     ``` 
     Connection connectionLink = ...; OutPort op = connectionLink.Source;
     ```
 
--   Domyślnie `IsPropertyGenerator` atrybut jest ustawiony na wartość true. Jeśli ma wartość false, nie ma właściwości zostanie utworzony dla klasy obiektu pełniącego rolę. (W takim przypadku `op.Targets`, na przykład, nie będzie działać). Jednak nadal możliwe jest przechodzenie relacji lub uzyskania dostępu do łączy się, jeśli kod niestandardowy używa relacji jawnie przy użyciu niestandardowego kodu:
+- Domyślnie `IsPropertyGenerator` atrybut jest ustawiony na wartość true. Jeśli ma wartość false, nie ma właściwości zostanie utworzony dla klasy obiektu pełniącego rolę. (W takim przypadku `op.Targets`, na przykład, nie będzie działać). Jednak nadal możliwe jest przechodzenie relacji lub uzyskania dostępu do łączy się, jeśli kod niestandardowy używa relacji jawnie przy użyciu niestandardowego kodu:
 
     ``` 
     OutPort op = ...; foreach (InPort ip in Connection.GetTargets(op)) ...
@@ -261,9 +261,9 @@ Każda relacja zawiera role źródłowe i docelowe, które mają następujące a
 
 Oprócz atrybutów i węzłów podrzędnych, które są dostępne dla wszystkich klas każda relacja ma następujące atrybuty:
 
--   **IsEmbedding**. Ten atrybut logiczny określa, czy relacja jest częścią drzewa osadzania. Każdy model musi tworzą drzewa za pomocą jego relacji osadzania. Każda klasa domeny musi być celem co najmniej jednej relacji osadzania, w związku z tym, chyba że jest to główny modelu.
+- **IsEmbedding**. Ten atrybut logiczny określa, czy relacja jest częścią drzewa osadzania. Każdy model musi tworzą drzewa za pomocą jego relacji osadzania. Każda klasa domeny musi być celem co najmniej jednej relacji osadzania, w związku z tym, chyba że jest to główny modelu.
 
--   **AllowsDuplicates**. Ta logiczna atrybut, który ma wartość false, domyślnie, dotyczy tylko relacje, które mają liczebność "many" w pliku źródłowym i docelowym. Określa, czy użytkownicy języka mogą się łączyć jedna para elementów źródłowych i docelowych przez więcej niż jednego połączenia w tej samej relacji.
+- **AllowsDuplicates**. Ta logiczna atrybut, który ma wartość false, domyślnie, dotyczy tylko relacje, które mają liczebność "many" w pliku źródłowym i docelowym. Określa, czy użytkownicy języka mogą się łączyć jedna para elementów źródłowych i docelowych przez więcej niż jednego połączenia w tej samej relacji.
 
 ## <a name="designer-and-toolbox-tabs"></a>Projektant i karty przybornika
 
@@ -362,23 +362,23 @@ Większość wygenerowany kod, który `XmlSerializationBehavior` trwa wpływa `D
 
 Każdy `XmlClassData` węzła zawiera następujące węzły podrzędne i atrybuty:
 
--   Węzeł monikera, która odwołuje się do klasy, do której stosują się dane.
+- Węzeł monikera, która odwołuje się do klasy, do której stosują się dane.
 
--   **XmlPropertyData** dla każdej właściwości, która jest zdefiniowana w klasie.
+- **XmlPropertyData** dla każdej właściwości, która jest zdefiniowana w klasie.
 
--   **Element XmlRelationshipData** dla każdej relacji, który jest rozwijani w klasie. (Relacje również mieć własne węzłów XmlClassData).
+- **Element XmlRelationshipData** dla każdej relacji, który jest rozwijani w klasie. (Relacje również mieć własne węzłów XmlClassData).
 
--   **Element TypeName** atrybut ciągu, który określa nazwę klasy pomocnika serializacji w wygenerowanym kodzie.
+- **Element TypeName** atrybut ciągu, który określa nazwę klasy pomocnika serializacji w wygenerowanym kodzie.
 
--   **ElementName** ciąg, który określa tagu XML serializacji wystąpienia tej klasy. Zgodnie z Konwencją ElementName jest zwykle taka sama jak nazwa klasy z wyjątkiem pierwszej litery jest pisana małymi literami. Na przykład plik przykładowy model rozpoczyna się następująco:
+- **ElementName** ciąg, który określa tagu XML serializacji wystąpienia tej klasy. Zgodnie z Konwencją ElementName jest zwykle taka sama jak nazwa klasy z wyjątkiem pierwszej litery jest pisana małymi literami. Na przykład plik przykładowy model rozpoczyna się następująco:
 
     ```xml
     <componentModel ...
     ```
 
--   **MonikerElementName** w plikach modelu serializowane przez użytkownika. Ten atrybut wprowadza moniker elementu, który odwołuje się do tej klasy.
+- **MonikerElementName** w plikach modelu serializowane przez użytkownika. Ten atrybut wprowadza moniker elementu, który odwołuje się do tej klasy.
 
--   **Elementu MonikerAttributeName**, który identyfikuje nazwę atrybutu XML w ramach krótka. W tym fragmencie pliku Zserializowany użytkownika Autor języka specyficznego dla domeny zdefiniowane **MonikerElementName** jako "inPortMoniker" i **elementu MonikerAttributeName** jako "path":
+- **Elementu MonikerAttributeName**, który identyfikuje nazwę atrybutu XML w ramach krótka. W tym fragmencie pliku Zserializowany użytkownika Autor języka specyficznego dla domeny zdefiniowane **MonikerElementName** jako "inPortMoniker" i **elementu MonikerAttributeName** jako "path":
 
     ```xml
     <inPortMoniker path="//Component2/InPort1" />
@@ -478,9 +478,9 @@ Jeśli **OmitElement** atrybut jest ustawiony na wartość true, relacja nazwy r
 
 Plik DslDefinition.dsl jest sam to Zserializowany plik i jest zgodny z definicji języka specyficznego dla domeny. Poniżej przedstawiono kilka przykładów definicji serializacji XML:
 
--   **Język DSL** jest węzeł klasy RootClass i klasa diagramu. Klasa DomainClass, relacji DomainRelationship i inne elementy są osadzone w obszarze `Dsl`.
+- **Język DSL** jest węzeł klasy RootClass i klasa diagramu. Klasa DomainClass, relacji DomainRelationship i inne elementy są osadzone w obszarze `Dsl`.
 
--   **Klasy** jest **RoleElementName** relacji między języka specyficznego dla domeny i DomainClass.
+- **Klasy** jest **RoleElementName** relacji między języka specyficznego dla domeny i DomainClass.
 
 ```xml
 <Dsl Name="CmptDsl5" ...>
@@ -488,7 +488,7 @@ Plik DslDefinition.dsl jest sam to Zserializowany plik i jest zgodny z definicji
     <DomainClass Name="NamedElement" InheritanceModifier="Abstract" ...
 ```
 
--   **Elementu XmlSerializationBehavior** atrybutu jest osadzony w obszarze `Dsl` atrybutu, ale **OmitElement** atrybut został ustawiony w relacji osadzania. W związku z tym, bez `RoleElementName` uczestniczyło atrybutu. Z drugiej strony **danych klas** atrybut jest `RoleElementName` atrybut relacja osadzania między **elementu XmlSerializationBehavior** atrybutu i **XmlClassData** atrybutu.
+- **Elementu XmlSerializationBehavior** atrybutu jest osadzony w obszarze `Dsl` atrybutu, ale **OmitElement** atrybut został ustawiony w relacji osadzania. W związku z tym, bez `RoleElementName` uczestniczyło atrybutu. Z drugiej strony **danych klas** atrybut jest `RoleElementName` atrybut relacja osadzania między **elementu XmlSerializationBehavior** atrybutu i **XmlClassData** atrybutu.
 
 ```xml
 <Dsl Name="CmptDsl5" ...> ...
@@ -498,7 +498,7 @@ Plik DslDefinition.dsl jest sam to Zserializowany plik i jest zgodny z definicji
       <XmlClassData ...>...</XmlClassData>
 ```
 
--   ConnectorHasDecorators jest relacja osadzania między `Connector` i `Decorator`. `UseFullForm` zostało ustawione tak, aby nazwa relacji pojawia się z listą właściwości dla każdego linku z obiektu łącznika. Jednak `OmitElement` ma również ustawienie, aby nie `RoleElementName` zawiera wiele łączy, które są osadzone wewnątrz `Connector`:
+- ConnectorHasDecorators jest relacja osadzania między `Connector` i `Decorator`. `UseFullForm` zostało ustawione tak, aby nazwa relacji pojawia się z listą właściwości dla każdego linku z obiektu łącznika. Jednak `OmitElement` ma również ustawienie, aby nie `RoleElementName` zawiera wiele łączy, które są osadzone wewnątrz `Connector`:
 
 ```xml
 <Connector Name="AssociationLink" ...>
@@ -515,11 +515,11 @@ Plik DslDefinition.dsl jest sam to Zserializowany plik i jest zgodny z definicji
 
 Definicje kształtów i łączników atrybutów i węzłów podrzędnych dziedziczyć klasy domeny, oprócz następujących czynności:
 
--   `Color` i `Line``Style` atrybutów.
+- `Color` i `Line``Style` atrybutów.
 
--   **ExposesFillColorAsProperty** i kilku atrybutów podobne. Te atrybuty typu Boolean wprowadź odpowiednią zmienną właściwości przez użytkownika. Ogólnie rzecz biorąc, gdy użytkownik języka kliknie kształt na diagramie, właściwości wyświetlanych w **właściwości** okna są zależne od wystąpienia klasy domeny, na który jest mapowany kształt. Jeśli `ExposesFillColorAsProperty` ma wartość true, właściwość kształt pojawia się również.
+- **ExposesFillColorAsProperty** i kilku atrybutów podobne. Te atrybuty typu Boolean wprowadź odpowiednią zmienną właściwości przez użytkownika. Ogólnie rzecz biorąc, gdy użytkownik języka kliknie kształt na diagramie, właściwości wyświetlanych w **właściwości** okna są zależne od wystąpienia klasy domeny, na który jest mapowany kształt. Jeśli `ExposesFillColorAsProperty` ma wartość true, właściwość kształt pojawia się również.
 
--   **ShapeHasDecorators**. Wystąpienie tego atrybutu jest wykonywana dla każdego typu text, ikony lub dekoratora Rozwiń/Zwiń. (W plik DslDefinition.dsl `ShapeHasDecorators` relację z `UseFullForm` ma wartość true.)
+- **ShapeHasDecorators**. Wystąpienie tego atrybutu jest wykonywana dla każdego typu text, ikony lub dekoratora Rozwiń/Zwiń. (W plik DslDefinition.dsl `ShapeHasDecorators` relację z `UseFullForm` ma wartość true.)
 
 ## <a name="shape-maps"></a>Mapowania kształtów
 

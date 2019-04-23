@@ -20,27 +20,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d805333bd8a2cce43340e61573b082dfdff7db0e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cdfa5724b25a551a65318fea3ebcaf52d7f397ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610918"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084575"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office
   Mogą wystąpić problemy podczas wykonywania następujących zadań, podczas opracowywania rozwiązań pakietu Office w Visual Studio:
 
--   [Tworzenie, uaktualniania i otwierania projektów](#creating)
+- [Tworzenie, uaktualniania i otwierania projektów](#creating)
 
--   [Używanie projektantów](#designers)
+- [Używanie projektantów](#designers)
 
--   [Pisanie kodu](#code)
+- [Pisanie kodu](#code)
 
--   [Kompilowanie projektów](#building)
+- [Kompilowanie projektów](#building)
 
--   [Debugowanie projektów](#debugging)
+- [Debugowanie projektów](#debugging)
 
-##  <a name="creating"></a> Tworzenie, uaktualniania i otwierania projektów
+## <a name="creating"></a> Tworzenie, uaktualniania i otwierania projektów
  Podczas tworzenia lub otwierania projektów pakietu Office, mogą wystąpić następujące błędy.
 
 ### <a name="the-project-cannot-be-created"></a>Nie można utworzyć projektu
@@ -60,13 +60,13 @@ ms.locfileid: "56610918"
 
  Te błędy mogą występować, spróbuj utworzyć projekt, który jest oparty na skoroszyt, który miał jego informacje osobiste, które zostały usunięte przy użyciu Inspektora dokumentu. Aby uniknąć tego błędu, należy wykonać poniższe kroki przed utworzeniem projektu.
 
-1.  Otwórz skoroszyt w programie Excel.
+1. Otwórz skoroszyt w programie Excel.
 
-2.  W programie Excel otwórz Centrum zaufania.
+2. W programie Excel otwórz Centrum zaufania.
 
-3.  Na **opcje prywatności** kartę wyczyść **Usuń informacje osobiste z właściwości pliku przy zapisywaniu** pole wyboru.
+3. Na **opcje prywatności** kartę wyczyść **Usuń informacje osobiste z właściwości pliku przy zapisywaniu** pole wyboru.
 
-4.  Zapisz skoroszyt, a następnie zamknij program Excel.
+4. Zapisz skoroszyt, a następnie zamknij program Excel.
 
 ### <a name="cannot-open-a-project-after-migration"></a>Nie można otworzyć projektu po migracji
  Po pakietu Office, które rozwiązanie jest migrowana do pakietu Microsoft Office 2010 nie można otworzyć projektu na komputerze deweloperskim z tylko systemu Microsoft Office 2007, które są zainstalowane. Mogą pojawić się następujące błędy.
@@ -84,17 +84,17 @@ ms.locfileid: "56610918"
 
  Po zakończeniu uaktualniania projektu, można odinstalować Visual Studio 2005 Tools for Office Second Edition Runtime z komputera rozwoju Jeśli nie jest on używany przez inne rozwiązania pakietu Office.
 
-##  <a name="designers"></a> Używanie projektantów
+## <a name="designers"></a> Używanie projektantów
  Mogą wystąpić następujące błędy podczas pracy z dokumentu, skoroszytu lub arkusza projektanta w projektach na poziomie dokumentu.
 
 ### <a name="designer-failed-to-load-correctly"></a>Nie można prawidłowo załadować projektanta
  Program Visual Studio nie może otworzyć projektanta w następujących przypadkach:
 
--   Word lub Excel jest już otwarty i wyświetla modalne okno dialogowe. Aby otworzyć projektanta, sprawdź, czy programu Excel lub Word ma modalne okno dialogowe Otwórz i zamknij wszystkie otwarte modalne okna dialogowe. Jeśli żadne modalne okna dialogowe są otwarte, mogą istnieć inne działania, wymagany dla programu Excel lub Word odpowiada.
+- Word lub Excel jest już otwarty i wyświetla modalne okno dialogowe. Aby otworzyć projektanta, sprawdź, czy programu Excel lub Word ma modalne okno dialogowe Otwórz i zamknij wszystkie otwarte modalne okna dialogowe. Jeśli żadne modalne okna dialogowe są otwarte, mogą istnieć inne działania, wymagany dla programu Excel lub Word odpowiada.
 
--   Projekt jest obecnie debugowane. Aby otworzyć projektanta, Zatrzymaj lub Zakończ debugowania.
+- Projekt jest obecnie debugowane. Aby otworzyć projektanta, Zatrzymaj lub Zakończ debugowania.
 
--   Dodatek narzędzi VSTO dla programu Excel zainstalowanym na komputerze deweloperskim jest wyświetlanie okna dialogowego po uruchomieniu programu Excel. Aby utworzyć projekt poziomu dokumentu programu Excel, należy najpierw wyłączyć dodatku narzędzi VSTO.
+- Dodatek narzędzi VSTO dla programu Excel zainstalowanym na komputerze deweloperskim jest wyświetlanie okna dialogowego po uruchomieniu programu Excel. Aby utworzyć projekt poziomu dokumentu programu Excel, należy najpierw wyłączyć dodatku narzędzi VSTO.
 
 ### <a name="controls-appear-as-black-rectangles-on-the-document-or-worksheet"></a>Formanty są wyświetlane jako czarne prostokątów w dokumencie lub arkuszu
  Jeśli grupowanie formantów na dokument lub skoroszyt programu Visual Studio nie rozpoznaje już kontrolki. Nie można uzyskać dostępu do kontrolki zgrupowane w **właściwości** okna i są wyświetlane jako czarne prostokątów w dokumencie lub arkuszu. Formanty musi rozgrupować w celu przywrócenia ich funkcjonalności.
@@ -105,10 +105,10 @@ ms.locfileid: "56610918"
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>INSERT clip art polecenia nie działa w Projektancie Visual Studio
  Gdy programu Excel lub Word jest otwarty w Projektancie Visual Studio, klikając **clipart** znajdujący się na **ilustracje** nie można otworzyć kartę na wstążce **clipart** okienka zadań. Aby dodać obiekty clipart, należy otworzyć kopię skoroszytu lub dokument, który znajduje się w folderze głównym projektu (nie znajduje się w kopię *\bin* folder) poza programem Visual Studio Dodaj clipart, a następnie zapisz skoroszyt lub dokumentu.
 
-##  <a name="code"></a> Pisanie kodu
+## <a name="code"></a> Pisanie kodu
  Podczas pisania kodu w projektach pakietu Office, mogą wystąpić następujące błędy.
 
-### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Niektóre zdarzenia obiektów pakietu Office nie są dostępne przy użyciu języka C#
+### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Niektóre zdarzenia obiektów pakietu Office nie są dostępne, gdy za pomocą języka C\#
  W niektórych przypadkach można napotkać błąd kompilatora podobnie do następującego podczas próby dostępu do określonego zdarzenia wystąpienia w projektach Visual C# wpisz podstawowego zestawu międzyoperacyjnego (PIA) pakietu Office.
 
  "Niejednoznaczności między"Microsoft.Office.Interop.Excel._Application.NewWorkbook"i"Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook""
@@ -170,7 +170,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Nawet jeśli została zaimportowana z programu Word lub Excel przestrzeni nazw i mieć dostęp do wszystkich klas znajdującym się w nim, musi pełnej kwalifikacji wszystkich typów za pomocą programu Word lub Excel, aby usunąć niejednoznaczność przestrzeni nazw.
 
-##  <a name="building"></a> Kompilowanie projektów
+## <a name="building"></a> Kompilowanie projektów
  Mogą wystąpić następujące błędy podczas kompilowania projektów pakietu Office.
 
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Nie można skompilować projektu poziomie dokumentu, który jest oparty na dokumentów z ograniczonymi uprawnieniami
@@ -183,7 +183,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Błędy kompilatora występują po usunięciu kontrolki NamedRange
  Jeśli usuniesz <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki w arkuszu, który nie jest aktywny arkusz w Projektancie automatycznie wygenerowany kod nie może zostać usunięta z projektu i mogą wystąpić błędy kompilatora. Aby upewnić się, że kod zostanie usunięty, należy zawsze wybrać arkusz, który zawiera <xref:Microsoft.Office.Tools.Excel.NamedRange> celu nadania mu aktywnego arkusza przed usunięciem formantu. Automatycznie wygenerowany kod nie zostanie usunięta po usunięciu kontrolki, może spowodować projektanta Aby usunąć kod aktywacji arkusza i wprowadzenie zmiany, tak aby arkusz zostanie oznaczona jako zmodyfikowana. Podczas ponownego kompilowania projektu kodu jest usuwany.
 
-##  <a name="debugging"></a> Debugowanie projektów
+## <a name="debugging"></a> Debugowanie projektów
  Podczas debugowania w projektach pakietu Office, mogą wystąpić następujące błędy.
 
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>Podczas publikowania i zainstalowanie rozwiązania na komputerze programisty, zostanie wyświetlony monit, aby odinstalować

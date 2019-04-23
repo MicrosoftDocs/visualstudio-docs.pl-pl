@@ -16,12 +16,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87a9d344b6cad7d27979e73c73caf0dbf97f521d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6d4199b0f1daad60ea7fdcdf6405ae232a70d5b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779245"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082597"
 ---
 # <a name="replace-in-files"></a>Zastąp w plikach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ Zastąp w plikach ** umożliwia wyszukiwanie kodu określonego zestawu plików d
   
 ### <a name="to-display-replace-in-files"></a>Aby wyświetlić Zastąp w plikach  
   
-1.  Na **Edytuj** menu, rozwiń węzeł **Znajdź i Zamień**.  
+1. Na **Edytuj** menu, rozwiń węzeł **Znajdź i Zamień**.  
   
-2.  Wybierz **Zamień w plikach**.  
+2. Wybierz **Zamień w plikach**.  
   
      — lub —  
   

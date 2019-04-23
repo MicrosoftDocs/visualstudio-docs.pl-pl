@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1fa232ccefed20608ec2391f591ac0a8a6f31fe2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c3d0e7d30778580ac09bfd4476e44280c775a2c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931341"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079976"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Praca z elementami w projektancie XAML
 
@@ -61,11 +61,11 @@ A *snapline —* jest wskazówką wizualną, która ułatwia wyrównywanie eleme
 
 Aby wyrównać co najmniej dwa elementy za pomocą polecenia menu:
 
-1.  Wybierz elementy, które mają zostać wyrównane. Można wybrać więcej niż jeden element przez naciśnięcie i przytrzymanie **Ctrl** klucza podczas wybierania elementów.
+1. Wybierz elementy, które mają zostać wyrównane. Można wybrać więcej niż jeden element przez naciśnięcie i przytrzymanie **Ctrl** klucza podczas wybierania elementów.
 
-2.  Wybierz jedną z następujących właściwości w obszarze **HorizontalAlignment** w **układ** okna właściwości: **Po lewej stronie**, **Centrum**, **po prawej stronie**, lub **Stretch**.
+2. Wybierz jedną z następujących właściwości w obszarze **HorizontalAlignment** w **układ** okna właściwości: **Po lewej stronie**, **Centrum**, **po prawej stronie**, lub **Stretch**.
 
-3.  Wybierz jedną z następujących właściwości w obszarze **VerticalAlignment** w **układ** okna właściwości: **TOP**, **Centrum**, **dolnej**, lub **Stretch**.
+3. Wybierz jedną z następujących właściwości w obszarze **VerticalAlignment** w **układ** okna właściwości: **TOP**, **Centrum**, **dolnej**, lub **Stretch**.
 
 Aby wyrównać co najmniej dwa elementy za pomocą linii przyciągania, w Projektancie XAML w układzie, który zawiera co najmniej dwa elementy, przeciągnij lub jeden z elementów zmiany rozmiaru, dzięki czemu krawędzi jest powiązana z innego elementu.
 
@@ -77,9 +77,9 @@ Marginesy w Projektancie XAML określają ilość pustej przestrzeni wokół ele
 
 Aby zmienić marginesy elementu w oknie dialogowym właściwości:
 
-1.  Wybierz element, którego marginesy chcesz zmienić.
+1. Wybierz element, którego marginesy chcesz zmienić.
 
-2.  W obszarze **układ** w oknie Właściwości zmień wartość (w pikselach lub jednostek niezależnych od urządzenia, czyli około 1/96 cala) dla każdej z **margines** właściwości (**górnej**, **Po lewej stronie**, **po prawej stronie**, lub **dolnej**).
+2. W obszarze **układ** w oknie Właściwości zmień wartość (w pikselach lub jednostek niezależnych od urządzenia, czyli około 1/96 cala) dla każdej z **margines** właściwości (**górnej**, **Po lewej stronie**, **po prawej stronie**, lub **dolnej**).
 
 W obszarze kompozycji, aby zmienić marginesy elementu względem elementu kontener układu, kliknij przycisk *moduły definiowania układu marginesu* wyświetlanych wokół elementu, jeśli element jest zaznaczone i znajduje się w kontenerze układu. Ilustracja przedstawiająca moduły definiowania układu marginesu, znajduje się [Tworzenie interfejsu użytkownika przy użyciu projektanta XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 

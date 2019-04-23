@@ -8,12 +8,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 54ccd9ad0cfefe33be7c51d44e9adb6c15717a7a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 58bfe0a2a6c337081ebb96464a701decb73cc022
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803630"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080699"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Aktualizowanie kodowanych testów interfejsu użytkownika z Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Testowanie projektów zawierających kodowane testy interfejsu użytkownika, kt�
 
  **Wymagania**
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
 > [!NOTE]
 >  Visual Studio zawiera więcej niż jeden typ projektu testowego. Jeśli tworzysz nowy kodowany test interfejsu użytkownika, zostanie utworzony w typu projektu kodowanego testu interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [uaktualnianie testów ze starszych wersji programu Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
@@ -46,7 +46,7 @@ Testowanie projektów zawierających kodowane testy interfejsu użytkownika, kt�
 |Nowy kod interfejsu użytkownika testowania interfejsów API zostały dodane w [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]|**Kompilacja zakończy się niepowodzeniem**<br /><br /> Jeśli utworzysz kodowanych testów interfejsu użytkownika przy użyciu nowego interfejsu użytkownika testowanie interfejsu API w [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], nie można otworzyć te projekty w [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)].|Należy zarządzać projektami za pomocą nowego interfejsu API [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] tylko.|
 |W [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], odwołania zostały dodane wewnątrz instrukcji "Wybierz" w pliku csproj jest niewielki. W [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], firma Microsoft jest używany plik elementów docelowych opinii uwzględniał odwołania kodowanego interfejsu użytkownika zestawu testowego.|W [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], kodowanego testu interfejsu użytkownika nie można dodać do projektu testowego utworzone w [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] (lub z dodatkiem SP1), nie zawierała kodowanego testu interfejsu użytkownika.<br /><br /> Proces naprawy dodaje plik elementów docelowych i instrukcja wybierz. Jeśli kodowanego testu interfejsu użytkownika nie znajduje się w projekcie testu, projekt zostanie oznaczony jako naprawione i odpowiednie odwołania nie zostaną dodane przy dodawaniu kodowanego testu interfejsu użytkownika w [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Musisz utworzyć nowy projekt testowy do tego samego rozwiązania przy użyciu [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] i Dodaj nowego kodowanego testu interfejsu użytkownika. Alternatywnie można dodać kodowanych testów interfejsu użytkownika do projektu testu w [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] z dodatkiem SP1 i otwarcie projektu w [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|
 
-##  <a name="UpgradingCodedUIFromVS2010_Update"></a> Visual Studio 2010 z dodatkiem SP1 Update
+## <a name="UpgradingCodedUIFromVS2010_Update"></a> Visual Studio 2010 z dodatkiem SP1 Update
  Aktualizacja [!INCLUDE[vs2010](../includes/vs2010-md.md)] z obsługą zgodności dla programu Visual Studio 2012 i Windows 8 z dodatkiem SP1 jest dostępny do pobrania na [Microsoft Download Center](http://www.microsoft.com/download/details.aspx?id=34677) i zaktualizuj również jako programu Visual Studio.
 
  Po zastosowaniu aktualizacji, następujące [!INCLUDE[vs2010](../includes/vs2010-md.md)] funkcji narzędzia w kodowanych testów interfejsu użytkownika zostały udoskonalone specjalnie dla systemu Windows 8 z dodatkiem SP1:

@@ -12,12 +12,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f075f6a10e34080f6abf406a5f5828d2cf0ea444
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ee0cb763cdfcd049ac389b54a2348c0a733b907d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770930"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078983"
 ---
 # <a name="getting-started-with-performance-tools"></a>Wprowadzenie do narzędzia do oceny wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ Ta sekcja zawiera omówienie pojęć i zadań, które będą stosowane podczas z
   
  Te narzędzia umożliwiają kilka sposobów na zbieranie i analizowanie danych dotyczących wydajności. Ale w wielu przypadkach najlepszym sposobem rozpoczęcia do domyślnych ustawień kreatora wydajności, co pozwala na zbieranie statystyk aplikacji, który może wskazywać na problemy z wydajnością w kodzie.  
   
--   *Ostrzeżeń dotyczących wydajności* powiadamiają użytkownika o typowych problemach kodowania. Ostrzeżenia są wyświetlane w oknie błędów usługi Visual Studio. Możesz przejść z ostrzeżenie do kodu źródłowego i na szczegóły tematy pomocy, które ułatwiają pisanie kodu bardziej wydajne.  
+- *Ostrzeżeń dotyczących wydajności* powiadamiają użytkownika o typowych problemach kodowania. Ostrzeżenia są wyświetlane w oknie błędów usługi Visual Studio. Możesz przejść z ostrzeżenie do kodu źródłowego i na szczegóły tematy pomocy, które ułatwiają pisanie kodu bardziej wydajne.  
   
--   Raporty dotyczące wydajności zawierają widoki różnych poziomów struktury aplikacji ze źródła wierszy kodu do procesów — oraz dane wykonania programu z wywołujących i wywoływanych funkcji konkretną funkcję w drzewie całej aplikacji.  
+- Raporty dotyczące wydajności zawierają widoki różnych poziomów struktury aplikacji ze źródła wierszy kodu do procesów — oraz dane wykonania programu z wywołujących i wywoływanych funkcji konkretną funkcję w drzewie całej aplikacji.  
   
 ## <a name="common-tasks"></a>Typowe zadania  
   

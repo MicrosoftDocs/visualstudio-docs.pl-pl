@@ -9,48 +9,48 @@ caps.latest.revision: 4
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2f9799aa821c2281c8d7889009871e28a72dd5f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7b3b47264190afcc75431a55ad6b8b4512f26ea0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788082"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082694"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Nieobsługiwane scenariusze debugowania w Projektancie przepływu pracy
 Projektant przepływu pracy w [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] dodano wiele nowych funkcji, ale nadal istnieje kilka scenariuszy debugowania, które nie obsługuje. Ten dokument wyszczególnia nieobsługiwany projektanta przepływu pracy debugowania scenariuszy.  
   
--   Wykonywanie nie mogą być kontynuowane po kod został zmodyfikowany.  
+- Wykonywanie nie mogą być kontynuowane po kod został zmodyfikowany.  
   
--   Wykonywanie nie mogą być kontynuowane z dowolnego punktu w przepływie pracy (Ustaw dalej).  
+- Wykonywanie nie mogą być kontynuowane z dowolnego punktu w przepływie pracy (Ustaw dalej).  
   
--   Wykonanie nie może być kontynuowane, aż do osiągnięcia kursora (Uruchom do kursora).  
+- Wykonanie nie może być kontynuowane, aż do osiągnięcia kursora (Uruchom do kursora).  
   
--   Projektanta przepływu pracy nie może służyć do debugowania utworzonych w kodzie bez korzystania z projektanta przepływów pracy.  
+- Projektanta przepływu pracy nie może służyć do debugowania utworzonych w kodzie bez korzystania z projektanta przepływów pracy.  
   
--   Przepływy pracy utworzone we wcześniejszych wersjach programu [!INCLUDE[wf](../includes/wf-md.md)] nie można debugować w [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] projektanta.  
+- Przepływy pracy utworzone we wcześniejszych wersjach programu [!INCLUDE[wf](../includes/wf-md.md)] nie można debugować w [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] projektanta.  
   
--   Punkty przerwania nie może być zdefiniowana w łączach między działaniami lub <xref:System.Activities.Statements.Flowchart> węzłów.  
+- Punkty przerwania nie może być zdefiniowana w łączach między działaniami lub <xref:System.Activities.Statements.Flowchart> węzłów.  
   
--   Schowek nie jest dostępne podczas debugowania.  
+- Schowek nie jest dostępne podczas debugowania.  
   
--   Punkty przerwania nie są zachowywane podczas działania są kopiowane lub wklejone.  
+- Punkty przerwania nie są zachowywane podczas działania są kopiowane lub wklejone.  
   
--   Nie można ustawić punktów przerwania przepływu pracy w oknie stosu wywołań.  
+- Nie można ustawić punktów przerwania przepływu pracy w oknie stosu wywołań.  
   
--   Podczas tworzenia punktów przerwania w Projektancie **wiersza** i **znak** ustawienia w **nowego punktu przerwania** okna dialogowego nie są używane.  
+- Podczas tworzenia punktów przerwania w Projektancie **wiersza** i **znak** ustawienia w **nowego punktu przerwania** okna dialogowego nie są używane.  
   
--   Menu okna lub skrót punkt przerwania nie obsługuje następujących kolumn lub opcji dla debugowanie przepływu pracy:  
+- Menu okna lub skrót punkt przerwania nie obsługuje następujących kolumn lub opcji dla debugowanie przepływu pracy:  
   
-    -   Warunek  
+    - Warunek  
   
-    -   Liczba trafień  
+    - Liczba trafień  
   
-    -   Gdy trafiony  
+    - Gdy trafiony  
   
-    -   Funkcja  
+    - Funkcja  
   
-    -   Dane  
+    - Dane  
   
-    -   Proces  
+    - Proces  
   
-    -   Przejdź do demontażu
+    - Przejdź do demontażu

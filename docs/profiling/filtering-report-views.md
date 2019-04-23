@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7613eed6107f5be4909d57dd0ca617e1113ee0d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b2f06778de19c16df9d6e43108ecf4daba539c06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651595"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084391"
 ---
 # <a name="filter-report-views"></a>Filtrowanie widoków raportu
 Filtry można zastosować do pliku danych, aby ograniczyć dane profilowania, który jest wyświetlany w widokach raport dotyczący wydajności i wyeksportowane pliki raportu profilowania. Można ograniczyć raport, aby dane między wartości sygnatur czasowych i umożliwia ograniczenie danych do określonych procesów i wątków. Można zapisać w pliku filtrów i utworzenie filtru na inny plik danych profilowania, importując zapisany filtr.
@@ -28,11 +28,11 @@ Filtry można zastosować do pliku danych, aby ograniczyć dane profilowania, kt
 
 #### <a name="to-create-a-profiler-report-filter"></a>Aby utworzyć filtr raportów profilera
 
-1.  Jeśli nie zostanie wyświetlone okno Filtr widoku raportów wydajności, kliknij przycisk **Pokaż filtr** na pasku narzędzi w widoku raportu wydajności.
+1. Jeśli nie zostanie wyświetlone okno Filtr widoku raportów wydajności, kliknij przycisk **Pokaż filtr** na pasku narzędzi w widoku raportu wydajności.
 
      Filtr widoku raportów wydajności znajduje się tabela. Każdy wiersz w tabeli reprezentuje klauzuli filtru. Możesz dodać dowolną liczbę klauzul do filtru.
 
-2.  Dla każdej klauzuli, który chcesz dodać do filtru wybierz lub wprowadź wartości w następujących polach wiersza.
+2. Dla każdej klauzuli, który chcesz dodać do filtru wybierz lub wprowadź wartości w następujących polach wiersza.
 
     |Pole|Opis|
     |-----------|-----------------|
@@ -61,33 +61,33 @@ Filtry można zastosować do pliku danych, aby ograniczyć dane profilowania, kt
 
 #### <a name="to-load-an-existing-filter-from-a-file"></a>Aby załadować istniejący filtr z pliku
 
-1.  Kliknij na pasku narzędzi widoku raportu wydajności **filtru importu**.
+1. Kliknij na pasku narzędzi widoku raportu wydajności **filtru importu**.
 
      **Załaduj filtr** zostanie wyświetlone okno dialogowe.
 
-2.  Określ lokalizację i nazwę pliku filtru (.vspf) można załadować.
+2. Określ lokalizację i nazwę pliku filtru (.vspf) można załadować.
 
 #### <a name="to-execute-a-filter"></a>Wykonywanie filtru
 
--   Kliknij na pasku narzędzi widoku raportu wydajności **wykonaj filtr**.
+- Kliknij na pasku narzędzi widoku raportu wydajności **wykonaj filtr**.
 
 #### <a name="to-stop-a-filter-that-is-taking-too-long-to-execute"></a>Aby zatrzymać filtr, który trwa zbyt długo, można wykonać
 
--   Kliknij na pasku narzędzi widoku raportu wydajności **zatrzymać filtru**.
+- Kliknij na pasku narzędzi widoku raportu wydajności **zatrzymać filtru**.
 
 #### <a name="to-remove-a-filter-on-a-report-view"></a>Aby usunąć filtr w widoku raportu
 
-1.  Usuń wiersze klauzul filtr widoku raportów wydajności.
+1. Usuń wiersze klauzul filtr widoku raportów wydajności.
 
-2.  Kliknij na pasku narzędzi widoku raportu wydajności **wykonaj filtr**.
+2. Kliknij na pasku narzędzi widoku raportu wydajności **wykonaj filtr**.
 
 #### <a name="to-save-a-filter-to-a-file"></a>Aby zapisać filtr do pliku
 
-1.  Kliknij na pasku narzędzi widoku raportu wydajności **Eksportuj filtr**.
+1. Kliknij na pasku narzędzi widoku raportu wydajności **Eksportuj filtr**.
 
      **Zapisywanie filtru** zostanie wyświetlone okno dialogowe.
 
-2.  Określ lokalizację i nazwę pliku filtru (.vspf) można zapisać.
+2. Określ lokalizację i nazwę pliku filtru (.vspf) można zapisać.
 
 ## <a name="see-also"></a>Zobacz także
 - [Dostosowywanie widoków raportów narzędzi do oceny wydajności](../profiling/customizing-performance-tools-report-views.md)

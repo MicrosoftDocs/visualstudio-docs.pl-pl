@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e82246a750c26881a055e372baa7d5eb0386952
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 453952f52561a761ab4cf01825d07aa97595d0c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596091"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080205"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementowanie kolorowania składni
 Gdy usługa językowa udostępnia kolorowania składni, analizator konwertuje tablicę elementów z możliwością kolorowania wiersza tekstu i zwraca typy tokenów odpowiadający te elementy z możliwością kolorowania. Analizator powinien zwrócić typy tokenów, które należą do listy elementów z możliwością kolorowania. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Wyświetla każdy element z możliwością kolorowania w oknie kodu według atrybutów przypisanych przez obiekt colorizer do odpowiedniego typu tokenu.
@@ -31,33 +31,33 @@ Gdy usługa językowa udostępnia kolorowania składni, analizator konwertuje ta
 
 ## <a name="steps-followed-by-an-editor-to-colorize-text"></a>Kroki następuje edytor, którego można kolorować tekstu
 
-1.  Edytor pobiera colorizer, wywołując <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> obiektu.
+1. Edytor pobiera colorizer, wywołując <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> obiektu.
 
-2.  Wywołania edytora <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStateMaintenanceFlag%2A> metodę, aby ustalić, czy colorizer wymaga stanu każdego wiersza, aby zachować poza colorizer.
+2. Wywołania edytora <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStateMaintenanceFlag%2A> metodę, aby ustalić, czy colorizer wymaga stanu każdego wiersza, aby zachować poza colorizer.
 
-3.  Jeśli colorizer wymaga stanu, aby zachować poza colorizer, Edytor wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStartState%2A> metodę, aby uzyskać stan pierwszego wiersza.
+3. Jeśli colorizer wymaga stanu, aby zachować poza colorizer, Edytor wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStartState%2A> metodę, aby uzyskać stan pierwszego wiersza.
 
-4.  Dla każdego wiersza w buforze wywołuje edytora <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metody, która wykonuje następujące czynności:
+4. Dla każdego wiersza w buforze wywołuje edytora <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metody, która wykonuje następujące czynności:
 
-    1.  Wiersz tekstu jest przekazywany do skanera do konwertowania tekstu na tokeny. Każdy token Określa tekst tokenu i typ tokenu.
+    1. Wiersz tekstu jest przekazywany do skanera do konwertowania tekstu na tokeny. Każdy token Określa tekst tokenu i typ tokenu.
 
-    2.  Typ tokenu jest konwertowany na indeks listy elementów z możliwością kolorowania.
+    2. Typ tokenu jest konwertowany na indeks listy elementów z możliwością kolorowania.
 
-    3.  Dane tokenu jest używany do wypełnienia w tablicy w taki sposób, że każdy element tablicy odnosi się do znaku w wierszu. Wartości przechowywane w tablicy są indeksów do listy elementów z możliwością kolorowania.
+    3. Dane tokenu jest używany do wypełnienia w tablicy w taki sposób, że każdy element tablicy odnosi się do znaku w wierszu. Wartości przechowywane w tablicy są indeksów do listy elementów z możliwością kolorowania.
 
-    4.  Stan na końcu wiersza jest zwracany w każdym wierszu.
+    4. Stan na końcu wiersza jest zwracany w każdym wierszu.
 
-5.  Jeśli colorizer wymaga stanu, aby zachować, Edytor buforuje stan dla tej linii.
+5. Jeśli colorizer wymaga stanu, aby zachować, Edytor buforuje stan dla tej linii.
 
-6.  Edytor powoduje wyświetlenie wiersza tekstu przy użyciu informacje zwrócone ze <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metody. Wymagane jest wykonanie następujących kroków:
+6. Edytor powoduje wyświetlenie wiersza tekstu przy użyciu informacje zwrócone ze <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metody. Wymagane jest wykonanie następujących kroków:
 
-    1.  Dla każdego znaku w wierszu uzyskać indeks z możliwością kolorowania elementu.
+    1. Dla każdego znaku w wierszu uzyskać indeks z możliwością kolorowania elementu.
 
-    2.  Przy użyciu elementów z możliwością kolorowania domyślne, należy uzyskać dostęp do listy elementów z możliwością kolorowania edytora.
+    2. Przy użyciu elementów z możliwością kolorowania domyślne, należy uzyskać dostęp do listy elementów z możliwością kolorowania edytora.
 
-    3.  W przeciwnym razie wywołanie usługi językowej <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> metodę, aby uzyskać element z możliwością kolorowania.
+    3. W przeciwnym razie wywołanie usługi językowej <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> metodę, aby uzyskać element z możliwością kolorowania.
 
-    4.  Skorzystaj z informacji w elemencie z możliwością kolorowania do renderowania tekstu do wyświetlania.
+    4. Skorzystaj z informacji w elemencie z możliwością kolorowania do renderowania tekstu do wyświetlania.
 
 ## <a name="managed-package-framework-colorizer"></a>Colorizer Framework zarządzanego pakietu
  Środowiska pakietu zarządzanego (MPF) udostępnia wszystkie klasy, które są wymagane do zaimplementowania colorizer. Powinien dziedziczyć klasy usługi języka <xref:Microsoft.VisualStudio.Package.LanguageService> klasy i wdrożyć wymagane metody. Należy podać skanera i analizatora, implementując <xref:Microsoft.VisualStudio.Package.IScanner> interfejs i zwrócenia wystąpienia interfejsu z <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> — metoda (jednej z metod, które muszą zostać zaimplementowane w <xref:Microsoft.VisualStudio.Package.LanguageService> klasy). Aby uzyskać więcej informacji, zobacz [kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).

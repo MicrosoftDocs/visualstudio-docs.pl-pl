@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219d70f1a722a19017399ab851aa2e69c44d2b28
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e36b7cef0c24367292f7f9e60b86eb9138b12a64
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663365"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082948"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>Wstawianie kontrolek i modyfikowanie ich zachowania w programie Projektant XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Kontrolki umożliwiają użytkownikom na interakcję z aplikacją. Można użyć
   
  **W tym temacie:**  
   
--   [Dodawanie formantów do obszaru kompozycji](#Insert)  
+- [Dodawanie formantów do obszaru kompozycji](#Insert)  
   
--   [Umożliwianie wykonywały formantów](#Modify)  
+- [Umożliwianie wykonywały formantów](#Modify)  
   
-##  <a name="Insert"></a> Dodawanie formantów do obszaru kompozycji  
+## <a name="Insert"></a> Dodawanie formantów do obszaru kompozycji  
  Można przeciągać formantów z **zasoby** panelu na **obszaru kompozycji**, a następnie zmodyfikuj je w **właściwości** okna.  
   
  ![Blend &#45; Assets &#45; FlipView](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")  
@@ -53,7 +53,7 @@ Kontrolki umożliwiają użytkownikom na interakcję z aplikacją. Można użyć
   
  Aby utworzyć formant, zaznacz obiekt. Następnie na **narzędzia** menu, kliknij przycisk **wprowadzić formant**.  
   
-##  <a name="Modify"></a> Umożliwianie wykonywały formantów  
+## <a name="Modify"></a> Umożliwianie wykonywały formantów  
  Formanty może wykonywać akcje podczas interakcji z użytkownikiem. Na przykład mogą rozpocząć animacji, zaktualizować źródło danych lub odtwarzanie wideo.  
   
  Użyj *wyzwalaczy*, *zachowania*, i *zdarzenia* aby wykonywały kontrolki.  

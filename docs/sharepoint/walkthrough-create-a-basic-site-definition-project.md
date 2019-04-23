@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 078fcc4d30613e4fe19b493150ce4570196b73ac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d781b2fe3ab597760a397c6ff0ec3c946bbe7653
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608880"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083377"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Przewodnik: Tworzenie podstawowego projektu definicji witryny
   W tym instruktażu dowiesz się, jak utworzyć definicję podstawową witryny, zawierający wizualny składnik Web part za pomocą niektóre kontrolki. Dla jasności wizualny składnik Web part, które tworzysz ma tylko kilka formantów. Można jednak utworzyć bardziej złożone definicje witryn programu SharePoint, które zawierają więcej funkcji.
@@ -38,9 +38,9 @@ ms.locfileid: "56608880"
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
--   Obsługiwane wersje systemu Microsoft Windows i programu SharePoint. Aby uzyskać więcej informacji zobacz wymagania dotyczące opracowywania rozwiązań programu SharePoint.
+- Obsługiwane wersje systemu Microsoft Windows i programu SharePoint. Aby uzyskać więcej informacji zobacz wymagania dotyczące opracowywania rozwiązań programu SharePoint.
 
--   Program Visual Studio.
+- Program Visual Studio.
 
 ## <a name="create-a-site-definition-solution"></a>Tworzenie rozwiązania definicji witryny
  Najpierw utwórz projekt definicji witryny w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -80,19 +80,19 @@ ms.locfileid: "56608880"
 
 #### <a name="to-create-a-visual-web-part"></a>Aby utworzyć wizualny składnik web part
 
-1.  W **Eksploratora rozwiązań**, wybierz **Pokaż wszystkie pliki** przycisku.
+1. W **Eksploratora rozwiązań**, wybierz **Pokaż wszystkie pliki** przycisku.
 
-2.  Wybierz **SiteDefinition1** węzła projektu, a następnie na pasku menu wybierz **projektu** > **Dodaj nowy element**.
+2. Wybierz **SiteDefinition1** węzła projektu, a następnie na pasku menu wybierz **projektu** > **Dodaj nowy element**.
 
      **Dodaj nowy element** pojawi się okno dialogowe.
 
-3.  Rozwiń **Visual C#**  węzła lub **języka Visual Basic** węzła, rozwiń węzeł **SharePoint** węzła, a następnie wybierz **2010** węzła.
+3. Rozwiń **Visual C#**  węzła lub **języka Visual Basic** węzła, rozwiń węzeł **SharePoint** węzła, a następnie wybierz **2010** węzła.
 
-4.  Z listy szablonów wybierz **wizualny składnik Web Part** szablonu, zachowaj domyślną nazwę VisualWebPart1, a następnie wybierz **Dodaj** przycisku.
+4. Z listy szablonów wybierz **wizualny składnik Web Part** szablonu, zachowaj domyślną nazwę VisualWebPart1, a następnie wybierz **Dodaj** przycisku.
 
      *VisualWebPart1.ascx* plik zostanie otwarty.
 
-5.  W dolnej części *VisualWebPart1.ascx*, Dodaj następujący kod do dodawania trzech formantów do formularza: pole tekstowe, przycisk i etykietę:
+5. W dolnej części *VisualWebPart1.ascx*, Dodaj następujący kod do dodawania trzech formantów do formularza: pole tekstowe, przycisk i etykietę:
 
     ```aspx-csharp
     <table>
@@ -110,7 +110,7 @@ ms.locfileid: "56608880"
     </table>
     ```
 
-6.  W obszarze *VisualWebPart1.ascx*, otwórz *VisualWebPart1.ascx.cs* pliku (dla [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)]) lub *VisualWebPart1.ascx.vb* (dla [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]), a następnie dodaj Poniższy kod:
+6. W obszarze *VisualWebPart1.ascx*, otwórz *VisualWebPart1.ascx.cs* pliku (dla [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)]) lub *VisualWebPart1.ascx.vb* (dla [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]), a następnie dodaj Poniższy kod:
 
      [!code-vb[SP_SimpleSiteDef#1](../sharepoint/codesnippet/VisualBasic/testsitedefvb/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]
      [!code-csharp[SP_SimpleSiteDef#1](../sharepoint/codesnippet/CSharp/testsitedef/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]
@@ -122,7 +122,7 @@ ms.locfileid: "56608880"
 
 #### <a name="to-add-a-visual-web-part-to-the-default-aspx-page"></a>Aby dodać wizualny składnik web part do domyślnej strony ASPX
 
-1.  Otwórz stronę default.aspx, a następnie dodaj następujący wiersz w obszarze `WebPartPages` tag:
+1. Otwórz stronę default.aspx, a następnie dodaj następujący wiersz w obszarze `WebPartPages` tag:
 
     ```aspx-csharp
     <%@ Register Tagprefix="MyWebPartControls" Namespace="TestSiteDef.VisualWebPart1" Assembly="$SharePoint.Project.AssemblyFullName$" %>
@@ -130,7 +130,7 @@ ms.locfileid: "56608880"
 
      Ten wiersz kojarzy nazwę MyWebPartControls za pomocą składnika Web part i jego kodu. *Namespace* parametr odpowiada przestrzeni nazw, który jest używany w *VisualWebPart1.ascx* pliku kodu.
 
-2.  Po `</asp:Content>` elementu, Zastąp całą `ContentPlaceHolderId="PlaceHolderMain"` sekcji i jego zawartość następującym kodem:
+2. Po `</asp:Content>` elementu, Zastąp całą `ContentPlaceHolderId="PlaceHolderMain"` sekcji i jego zawartość następującym kodem:
 
     ```aspx-csharp
     <asp:Content ID="Content1" ContentPlaceHolderId="PlaceHolderMain" runat="server">
@@ -140,16 +140,16 @@ ms.locfileid: "56608880"
 
      Ten kod tworzy odwołanie do wizualny składnik Web part, który został utworzony wcześniej.
 
-3.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla **SiteDefinition1** węzła, a następnie wybierz **Ustaw jako element startowy**.
+3. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **SiteDefinition1** węzła, a następnie wybierz **Ustaw jako element startowy**.
 
 ## <a name="deploy-and-run-the-site-definition-solution"></a>Wdrażanie i uruchamianie rozwiązania definicji witryny
  Następnie wdrażanie projektu programu SharePoint, a następnie uruchomić projekt.
 
 #### <a name="to-deploy-and-run-the-site-definition"></a>Aby wdrożyć i uruchomić definicję witryny
 
--   Na pasku menu wybierz **kompilacji** > **wdrażanie TestSiteDef**.
+- Na pasku menu wybierz **kompilacji** > **wdrażanie TestSiteDef**.
 
--   Wybierz **F5** klucza.
+- Wybierz **F5** klucza.
 
      Program Visual Studio kompiluje kod, dodaje jej funkcje, pakiety wszystkie pliki w plik rozwiązania (WSP) programu SharePoint i wdrażania z plikiem WSP do serwera programu SharePoint. Program SharePoint następnie instaluje pliki, a następnie aktywuje funkcje.
 
@@ -158,17 +158,17 @@ ms.locfileid: "56608880"
 
 #### <a name="to-create-a-site-by-using-the-site-definition"></a>Aby utworzyć witrynę przy użyciu definicji witryny
 
-1.  W witrynie programu SharePoint zostanie wyświetlona strona nową witrynę programu SharePoint.
+1. W witrynie programu SharePoint zostanie wyświetlona strona nową witrynę programu SharePoint.
 
-2.  W **tytuł i opis** sekcji, wprowadź **Moje nowej lokacji** tytuł i opis witryny.
+2. W **tytuł i opis** sekcji, wprowadź **Moje nowej lokacji** tytuł i opis witryny.
 
-3.  W **adres witryny sieci Web** sekcji, wprowadź **MojaNowaWitryna** w **nazwa adresu URL** pole.
+3. W **adres witryny sieci Web** sekcji, wprowadź **MojaNowaWitryna** w **nazwa adresu URL** pole.
 
-4.  W **szablonu** wybierz pozycję **dostosowania SharePoint** kartę.
+4. W **szablonu** wybierz pozycję **dostosowania SharePoint** kartę.
 
-5.  W **wybierz szablon** wybierz **SiteDefinition1**.
+5. W **wybierz szablon** wybierz **SiteDefinition1**.
 
-6.  Pozostaw inne ustawienia ich wartości domyślne, a następnie wybierz **Utwórz** przycisku.
+6. Pozostaw inne ustawienia ich wartości domyślne, a następnie wybierz **Utwórz** przycisku.
 
      Pojawi się nowa lokacja.
 
@@ -177,7 +177,7 @@ ms.locfileid: "56608880"
 
 #### <a name="to-test-the-new-site"></a>Aby przetestować nową stronę
 
--   Na stronie domyślnej ASPX wprowadź jakiś tekst, a następnie wybierz **tekst etykiety zmiany** przycisk znajdujący się obok pola tekstowego.
+- Na stronie domyślnej ASPX wprowadź jakiś tekst, a następnie wybierz **tekst etykiety zmiany** przycisk znajdujący się obok pola tekstowego.
 
      Tekst jest wyświetlany w etykiecie po prawej stronie przycisku.
 

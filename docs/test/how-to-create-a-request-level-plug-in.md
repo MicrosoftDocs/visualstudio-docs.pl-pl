@@ -9,14 +9,14 @@ ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6aec2dfe707fb7c7cbae6a3220cedade47e0c0c5
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: fc1d609bab25b6a8e0dd573807aa02fefbe87a71
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415554"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081895"
 ---
-# <a name="how-to-create-a-request-level-plug-in"></a>Porady: Tworzenie wtyczki na poziomie żądania
+# <a name="how-to-create-a-request-level-plug-in"></a>Instrukcje: Tworzenie wtyczki na poziomie żądania
 
 *Żądania* są deklaratywne instrukcje, które stanowią testów wydajności sieci web. Wtyczki sieci Web wydajności testów umożliwiają izolowanie i ponowne użycie kodu poza głównym deklaracyjne oświadczeń do testu wydajności sieci web. Można tworzyć dodatki plug-in i dodać je do pojedynczego żądania także do testu wydajności sieci web, która go zawiera. Dostosowany *wtyczkę żądania* umożliwia wywoływanie kodu podczas uruchamiania poszczególnych żądań w teście wydajności sieci web.
 
@@ -30,23 +30,23 @@ Za pomocą dostosowanych web wydajności żądania wtyczki testu za pomocą test
 
 ## <a name="to-create-a-request-level-plug-in"></a>Do tworzenie wtyczki na poziomie żądania
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie, wybierz **Dodaj** , a następnie wybierz **nowy projekt**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie, wybierz **Dodaj** , a następnie wybierz **nowy projekt**.
 
 2. Utwórz nową **biblioteki klas** projektu.
 
-3.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** folderu w nową bibliotekę klas i wybierz pozycję **Dodaj odwołanie**.
+3. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** folderu w nową bibliotekę klas i wybierz pozycję **Dodaj odwołanie**.
 
      **Dodaj odwołanie** zostanie wyświetlone okno dialogowe.
 
-4.  Wybierz **.NET** , przewiń w dół, a następnie wybierz **Microsoft.VisualStudio.QualityTools.WebTestFramework** , a następnie wybierz **OK**
+4. Wybierz **.NET** , przewiń w dół, a następnie wybierz **Microsoft.VisualStudio.QualityTools.WebTestFramework** , a następnie wybierz **OK**
 
      Odwołanie do **Microsoft.VisualStudio.QualityTools.WebTestFramework** jest dodawany do **odwołania** folderu w **Eksploratora rozwiązań**.
 
-5.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy górny węzeł wydajności sieci web i załadować projekt testowy, który zawiera test obciążeniowy, do którego chcesz dodać wydajności testu żądania wtyczkę testu sieci web. Wybierz **Dodaj odwołanie**.
+5. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy górny węzeł wydajności sieci web i załadować projekt testowy, który zawiera test obciążeniowy, do którego chcesz dodać wydajności testu żądania wtyczkę testu sieci web. Wybierz **Dodaj odwołanie**.
 
      **Zostanie wyświetlone okno dialogowe Dodaj odwołanie**.
 
-6.  Wybierz **projektów** zaznacz **projekt biblioteki klas** , a następnie wybierz **OK** .
+6. Wybierz **projektów** zaznacz **projekt biblioteki klas** , a następnie wybierz **OK** .
 
 7. W **Edytor kodu**, wpisać kod wtyczkę. Najpierw utwórz nową klasę publiczną, która pochodzi od klasy <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
 

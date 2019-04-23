@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6426572ff346debba32029024a96c9cc5af52ff4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0485b6649396239d2b6501c65e801a03767d5df1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699681"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082298"
 ---
 # <a name="add-a-toolbar"></a>Dodawanie paska narzędzi
 W tym instruktażu pokazano, jak dodać pasek narzędzi środowiska IDE programu Visual Studio.
@@ -35,7 +35,7 @@ W tym instruktażu pokazano, jak dodać pasek narzędzi środowiska IDE programu
 
 ## <a name="create-a-toolbar-for-the-ide"></a>Utwórz pasek narzędzi dla środowiska IDE
 
-1.  W *ToolbarTestCommandPackage.vsct*, poszukaj sekcji symboli. W GuidSymbol, element o nazwie guidToolbarTestCommandPackageCmdSet Dodaj następujące deklaracje dla paska narzędzi i grupę paska narzędzi.
+1. W *ToolbarTestCommandPackage.vsct*, poszukaj sekcji symboli. W GuidSymbol, element o nazwie guidToolbarTestCommandPackageCmdSet Dodaj następujące deklaracje dla paska narzędzi i grupę paska narzędzi.
 
     ```xml
     <IDSymbol name="Toolbar" value="0x1000" />
@@ -43,7 +43,7 @@ W tym instruktażu pokazano, jak dodać pasek narzędzi środowiska IDE programu
 
     ```
 
-2.  W górnej części sekcji polecenia Utwórz sekcję menu. Dodaj Menu element do sekcji menu, aby zdefiniować paska narzędzi.
+2. W górnej części sekcji polecenia Utwórz sekcję menu. Dodaj Menu element do sekcji menu, aby zdefiniować paska narzędzi.
 
     ```xml
     <Menus>
@@ -60,7 +60,7 @@ W tym instruktażu pokazano, jak dodać pasek narzędzi środowiska IDE programu
 
      Nie można zagnieżdżać pasków narzędzi takich jak podmenu. W związku z tym nie trzeba przypisać grupę nadrzędną. Ponadto nie masz można ustawić priorytet, ponieważ użytkownik może poruszać się paski narzędzi. Zazwyczaj początkowe położenie paska narzędzi jest zdefiniowany programowo, ale kolejne zmiany przez użytkownika są zachowywane.
 
-3.  W [grup](../extensibility/groups-element.md) po istniejący wpis grupy sekcji zdefiniować [grupy](../extensibility/group-element.md) elementu, aby zawierał polecenia na pasku narzędzi.
+3. W [grup](../extensibility/groups-element.md) po istniejący wpis grupy sekcji zdefiniować [grupy](../extensibility/group-element.md) elementu, aby zawierał polecenia na pasku narzędzi.
 
     ```xml
     <Group guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarGroup"
@@ -69,7 +69,7 @@ W tym instruktażu pokazano, jak dodać pasek narzędzi środowiska IDE programu
     </Group>
     ```
 
-4.  Przyciskowi są wyświetlane na pasku narzędzi. W sekcji przyciski Zastąp nadrzędny blok przycisku na pasku narzędzi. Wynikowy blokowych przycisk powinien wyglądać następująco:
+4. Przyciskowi są wyświetlane na pasku narzędzi. W sekcji przyciski Zastąp nadrzędny blok przycisku na pasku narzędzi. Wynikowy blokowych przycisk powinien wyglądać następująco:
 
     ```xml
     <Button guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarTestCommandId" priority="0x0100" type="Button">
@@ -83,11 +83,11 @@ W tym instruktażu pokazano, jak dodać pasek narzędzi środowiska IDE programu
 
      Domyślnie jeśli pasek narzędzi ma żadne polecenia nie ma.
 
-5.  Skompiluj projekt, a następnie rozpocząć debugowanie. Wystąpienie eksperymentalne powinna zostać wyświetlona.
+5. Skompiluj projekt, a następnie rozpocząć debugowanie. Wystąpienie eksperymentalne powinna zostać wyświetlona.
 
-6.  Kliknij prawym przyciskiem myszy na pasku menu programu Visual Studio można pobrać listy pasków narzędzi. Wybierz **Test narzędzi**.
+6. Kliknij prawym przyciskiem myszy na pasku menu programu Visual Studio można pobrać listy pasków narzędzi. Wybierz **Test narzędzi**.
 
-7.  Pasek narzędzi powinna zostać wyświetlona jako ikony po prawej stronie Znajdź w plikach ikonę. Po kliknięciu ikony, powinien zostać wyświetlony komunikat informujący, że **ToolbarTestCommandPackage. Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.
+7. Pasek narzędzi powinna zostać wyświetlona jako ikony po prawej stronie Znajdź w plikach ikonę. Po kliknięciu ikony, powinien zostać wyświetlony komunikat informujący, że **ToolbarTestCommandPackage. Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.
 
 ## <a name="see-also"></a>Zobacz także
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

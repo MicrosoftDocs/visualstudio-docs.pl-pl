@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 304b61a7e0e11cf3b714fcc6f43855f5ded35713
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6b9b809750e658b6a5e496e2d90b7b396157f87a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641419"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079022"
 ---
 # <a name="program-vsto-add-ins"></a>Program dodatków narzędzi VSTO
   Podczas rozszerzania aplikacji pakietu Microsoft Office, tworzenia dodatku narzędzi VSTO dla programów, piszesz kod bezpośrednio przed `ThisAddIn` klasy w projekcie. Ta klasa służy do wykonywania zadań, takich jak uzyskiwanie dostępu do modelu obiektów programu Microsoft Office aplikacji hosta, dostosowywanie interfejsu użytkownika (UI), aplikacji i udostępnianie obiektów w dodatku narzędzi VSTO dla programów do innych rozwiązań pakietu Office.
@@ -91,21 +91,21 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
  Aby uzyskać więcej informacji na temat modeli obiektów określonych aplikacji pakietu Microsoft Office zobacz następujące tematy:
 
--   [Model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md)
+- [Model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md)
 
--   [Model obiektu Word — omówienie](../vsto/word-object-model-overview.md)
+- [Model obiektu Word — omówienie](../vsto/word-object-model-overview.md)
 
--   [Model obiektu Outlook ― omówienie](../vsto/outlook-object-model-overview.md)
+- [Model obiektu Outlook ― omówienie](../vsto/outlook-object-model-overview.md)
 
--   [Rozwiązania InfoPath](../vsto/infopath-solutions.md)
+- [Rozwiązania InfoPath](../vsto/infopath-solutions.md)
 
--   [PowerPoint — rozwiązania](../vsto/powerpoint-solutions.md)
+- [PowerPoint — rozwiązania](../vsto/powerpoint-solutions.md)
 
--   [Rozwiązania projektu](../vsto/project-solutions.md)
+- [Rozwiązania projektu](../vsto/project-solutions.md)
 
--   [Model obiektu Visio ― omówienie](../vsto/visio-object-model-overview.md)
+- [Model obiektu Visio ― omówienie](../vsto/visio-object-model-overview.md)
 
-###  <a name="AccessingDocuments"></a> Dostęp do dokumentu, podczas uruchamiania aplikacji pakietu Office
+### <a name="AccessingDocuments"></a> Dostęp do dokumentu, podczas uruchamiania aplikacji pakietu Office
  Nie wszystkie [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] aplikacje automatycznie otworzyć dokument po uruchomieniu je i żaden [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] aplikacje otworzyć dokument po ich uruchomieniu. W związku z tym, nie dodawaj kodu w `ThisAdd-In_Startup` programu obsługi zdarzeń, jeśli kod wymaga dokument jest otwarty. Zamiast tego należy dodać kod do zdarzenia, które wywołuje aplikacji pakietu Office, gdy użytkownik tworzy lub otwiera dokument. W ten sposób można gwarantuje, że dokument jest otwarty, zanim kod wykonuje operacje na nim.
 
  Poniższy przykład kodu współpracuje z dokumentu programu Word, tylko wtedy, gdy użytkownik tworzy dokument lub otwiera istniejący dokument.

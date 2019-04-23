@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa3d347c08ee73054d4b229d7d2598331e44c1d7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: faef5f2420f4abd30ecec9151212b8a731736886
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941377"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083832"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generowanie konstruktora w programie Visual Studio
 
@@ -30,11 +30,11 @@ Dotyczy to generowanie kodu:
 
 **Jak:** Istnieje kilka sposobów, aby wygenerować Konstruktor:
 
-   - [Generuj Konstruktor i wybierz elementy członkowskie](#pick)
-   - [Generuj Konstruktor z wybranych pól](#selection)
-   - [Generuj Konstruktor podczas korzystania z nowego](#usage)
-   - [Dodaj parametr do konstruktora istniejące](#addparameter)
-   - [Tworzenie i Inicjowanie pola/właściwości z parametru konstruktora](#create)
+- [Generuj Konstruktor i wybierz elementy członkowskie](#pick)
+- [Generuj Konstruktor z wybranych pól](#selection)
+- [Generuj Konstruktor podczas korzystania z nowego](#usage)
+- [Dodaj parametr do konstruktora istniejące](#addparameter)
+- [Tworzenie i Inicjowanie pola/właściwości z parametru konstruktora](#create)
 
 ## <a id = "pick"></a> Generuj Konstruktor i wybierz elementy członkowskie (tylko język C#)
 

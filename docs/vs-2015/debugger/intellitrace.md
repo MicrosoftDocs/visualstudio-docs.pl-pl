@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 28e1a926800bcd4c63bdc83336fbba41c38579eb
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: c9097a8c067ce4e04dd54f879a6c1388f854d7ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869397"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079308"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Spędzisz mniej czasu na debugowaniu aplikacji, jeśli będziesz używać Intell
 |**Zbieraj dane IntelliTrace z wdrożonych aplikacji**|-   [Przy użyciu autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**Uruchom debugowanie z pliku dziennika IntelliTrace (plik itrace).**|-   [Przy użyciu zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md)|  
   
-##  <a name="IntelliTraceSupport"></a> Jakie aplikacje można debugować za pomocą IntelliTrace?  
+## <a name="IntelliTraceSupport"></a> Jakie aplikacje można debugować za pomocą IntelliTrace?  
   
 |||  
 |-|-|  
@@ -64,7 +64,7 @@ Spędzisz mniej czasu na debugowaniu aplikacji, jeśli będziesz używać Intell
 > [!NOTE]
 >  Jeśli chcesz debugować proces, który jest już uruchomiony, nie możesz użyć IntelliTrace. IntelliTrace należy uruchomić, gdy proces jest uruchamiany.  
   
-##  <a name="IntelliTraceVSTraditional"></a> Dlaczego debugować za pomocą IntelliTrace?  
+## <a name="IntelliTraceVSTraditional"></a> Dlaczego debugować za pomocą IntelliTrace?  
  Tradycyjny lub *live* debugowania pokazuje tylko aplikacji bieżący stan, z ograniczoną ilością danych na temat przeszłych zdarzeń. Musisz albo wywnioskować te zdarzenia, w oparciu o bieżący stan aplikacji lub musisz odtworzyć te zdarzenia, ponownie uruchamiając aplikację.  
   
  IntelliTrace rozszerza standardowe debugowanie poprzez zapisywanie określonych zdarzeń i danych w konkretnym czasie. Dzięki temu możesz zobaczyć, co wydarzyło się w aplikacji bez konieczności ponownego uruchamiania, zwłaszcza, jeśli jest to krok w przeszłości w przypadku błędu. Funkcja IntelliTrace jest domyślnie włączana podczas standardowego debugowania i zbiera dane automatycznie i w sposób niewidoczny. W ten sposób można łatwo przełączać się między standardowym debugowaniem i debugowaniem IntelliTrace, aby wyświetlić zapisane informacje. Zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md) i [jakie dane są zbierane przez IntelliTrace?](#WhatData)  
@@ -101,7 +101,7 @@ Spędzisz mniej czasu na debugowaniu aplikacji, jeśli będziesz używać Intell
   
    Jest to przydatne, gdy chcesz zdiagnozować problemy z aplikacjami w trakcie wdrażania. Zobacz [przy użyciu autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  
   
-##  <a name="WhatData"></a> Jakie dane są zbierane przez IntelliTrace?  
+## <a name="WhatData"></a> Jakie dane są zbierane przez IntelliTrace?  
  **Zbieranie informacji o zdarzeniach**  
   
  Domyślnie IntelliTrace zapisuje tylko zdarzenia funkcji IntelliTrace: debugera, zdarzenia, wyjątki, zdarzenia .NET Framework i inne zdarzenia systemowe, które mogą pomóc w debugowaniu. Możesz wybrać typy zdarzeń IntelliTrace, które mają być zbierane, z wyjątkiem zdarzeń debugera i wyjątków, które są zawsze zbierane. Zobacz [skonfiguruj IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
@@ -112,27 +112,27 @@ Spędzisz mniej czasu na debugowaniu aplikacji, jeśli będziesz używać Intell
   
    Aby poprawić wydajność, IntelliTrace nie zapisuje każdej możliwej wartości dla zdarzenia debugera. Zamiast tego zapisuje następujące wartości:  
   
-  -   Wartości w **lokalne** okna. Zachowaj **lokalne** okna otwarte, aby zobaczyć te wartości.  
+  - Wartości w **lokalne** okna. Zachowaj **lokalne** okna otwarte, aby zobaczyć te wartości.  
   
-  -   Wartości w **Autos** tylko wtedy, gdy okno **Autos** jest otwarte okno  
+  - Wartości w **Autos** tylko wtedy, gdy okno **Autos** jest otwarte okno  
   
-  -   Wartości w DataTips, które są wyświetlane, gdy ustawisz wskaźnik myszy nad zmienną w oknie źródłowym, aby zobaczyć jej wartość. IntelliTrace nie zbiera wartości w unieruchomionych DataTips.  
+  - Wartości w DataTips, które są wyświetlane, gdy ustawisz wskaźnik myszy nad zmienną w oknie źródłowym, aby zobaczyć jej wartość. IntelliTrace nie zbiera wartości w unieruchomionych DataTips.  
   
 - **Wyjątki**  
   
    IntelliTrace zapisuje typ wyjątku i komunikat dla tego rodzaju wyjątków:  
   
-  -   Obsługiwane wyjątki, gdy wyjątek jest generowany i przechwycony  
+  - Obsługiwane wyjątki, gdy wyjątek jest generowany i przechwycony  
   
-  -   Nieobsługiwane wyjątki  
+  - Nieobsługiwane wyjątki  
   
 - **Zdarzenia .NET framework**  
   
    IntelliTrace domyślnie zapisuje najbardziej typowe zdarzenia .NET Framework. Na przykład:  
   
-  -   W przypadku zdarzenia dostępu do plików IntelliTrace zbiera nazwę pliku.  
+  - W przypadku zdarzenia dostępu do plików IntelliTrace zbiera nazwę pliku.  
   
-  -   W przypadku zdarzenia sprawdzania pola wyboru IntelliTrace zbiera stan pola wyboru i tekst.  
+  - W przypadku zdarzenia sprawdzania pola wyboru IntelliTrace zbiera stan pola wyboru i tekst.  
   
 - **Zdarzenia aplikacji programów SharePoint 2010 i SharePoint 2013**  
   
@@ -142,11 +142,11 @@ Spędzisz mniej czasu na debugowaniu aplikacji, jeśli będziesz używać Intell
   
    Zobacz:  
   
-  -   [Korzystanie z autonomicznego modułu zbierającego funkcji IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
+  - [Korzystanie z autonomicznego modułu zbierającego funkcji IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
-  -   [Korzystanie z zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md)  
+  - [Korzystanie z zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md)  
   
-  -   [Przewodnik: Debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  - [Przewodnik: Debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
   **Gromadzenie informacji o wywołaniach funkcji**  
   
@@ -169,7 +169,7 @@ Spędzisz mniej czasu na debugowaniu aplikacji, jeśli będziesz używać Intell
   
  Aby kontrolować, ile informacji na temat wywołania gromadzi IntelliTrace, określ tylko te moduły, która Cię interesują. Może to zwiększyć wydajność aplikacji podczas zbierania. Zobacz [skonfiguruj IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
-##  <a name="AffectPerformance"></a> IntelliTrace spowolni moją aplikację?  
+## <a name="AffectPerformance"></a> IntelliTrace spowolni moją aplikację?  
  IntelliTrace domyślnie zbiera dane tylko dla wybranych zdarzeń IntelliTrace. To może lub nie może spowolnić aplikację, w zależności od struktury i organizacji kodu. Na przykład jeśli funkcja IntelliTrace często zapisuje zdarzenie, może to spowolnić aplikację. To może również, że możesz rozważenia refaktoryzacji aplikacji.  
   
  Gromadzenie informacji o wywołaniach może znacznie spowolnić pracę aplikacji. Może to również zwiększyć rozmiar wszystkich plików dziennika IntelliTrace (iTrace) zapisywanych na dysku. Aby zminimalizować te skutki, zbieraj informacji o wywołaniach tylko interesujących Cię modułów.  Aby zmienić maksymalny rozmiar plików itrace, przejdź do **narzędzia**, **opcje**, **IntelliTrace**, **zaawansowane**. Zobacz [skonfiguruj IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  

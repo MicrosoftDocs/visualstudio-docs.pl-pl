@@ -12,12 +12,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1d02b8701f5740de8a747406fc18da3e9f8e6cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6004e7346ab4bb4bb8d95c04fbbbdd86e1527001
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755521"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079607"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Tworzenie systemu podstawowego projektu, część 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ Pierwszy instrukcje przedstawione w tej serii [Tworzenie podstawowego systemu pr
   
  Ten przewodnik omawia sposób wykonywania tych zadań:  
   
--   Tworzenie szablonu programu Visual Studio.  
+- Tworzenie szablonu programu Visual Studio.  
   
--   Wdróż szablon programu Visual Studio.  
+- Wdróż szablon programu Visual Studio.  
   
--   Tworzenie projektu typu węzeł podrzędny **nowy projekt** okno dialogowe.  
+- Tworzenie projektu typu węzeł podrzędny **nowy projekt** okno dialogowe.  
   
--   Włączyć Podstawienie parametru w szablonie programu Visual Studio.  
+- Włączyć Podstawienie parametru w szablonie programu Visual Studio.  
   
--   Tworzenie strony właściwości projektu.  
+- Tworzenie strony właściwości projektu.  
   
 > [!NOTE]
 >  Kroki opisane w tym przewodniku są oparte na projekcie języka C#. Jednak z wyjątkiem określonych kryteriów, takich jak rozszerzeń nazw plików i kodu, te same czynności można użyć w projekcie języka Visual Basic.  
@@ -120,9 +120,9 @@ Pierwszy instrukcje przedstawione w tej serii [Tworzenie podstawowego systemu pr
 ## <a name="adding-a-minimal-vsct-file"></a>Dodawanie pliku vsct minimalny  
  Program Visual Studio musi działać w trybie instalacji, rozpoznawał nowych lub zmodyfikowanych szablonu programu Visual Studio. Tryb instalacji wymaga pliku vsct być obecne. W związku z tym należy dodać plik minimalny vsct do projektu.  
   
-1.  Dodaj plik XML o nazwie SimpleProject.vsct do projektu SimpleProject.  
+1. Dodaj plik XML o nazwie SimpleProject.vsct do projektu SimpleProject.  
   
-2.  Zastąp zawartość pliku SimpleProject.vsct następującym kodem.  
+2. Zastąp zawartość pliku SimpleProject.vsct następującym kodem.  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -131,25 +131,25 @@ Pierwszy instrukcje przedstawione w tej serii [Tworzenie podstawowego systemu pr
     </CommandTable>  
     ```  
   
-3.  Ustaw **Build Action** tego pliku do **VSCTCompile**. Możesz to zrobić tylko w pliku csproj, nie w **właściwości** okna. Upewnij się, że **Build Action** tego pliku jest równa **Brak** w tym momencie.  
+3. Ustaw **Build Action** tego pliku do **VSCTCompile**. Możesz to zrobić tylko w pliku csproj, nie w **właściwości** okna. Upewnij się, że **Build Action** tego pliku jest równa **Brak** w tym momencie.  
   
-    1.  Kliknij prawym przyciskiem myszy węzeł SimpleProject, a następnie kliknij przycisk **Edytuj SimpleProject.csproj**.  
+    1. Kliknij prawym przyciskiem myszy węzeł SimpleProject, a następnie kliknij przycisk **Edytuj SimpleProject.csproj**.  
   
-    2.  W pliku .csproj Znajdź element SimpleProject.vsct.  
+    2. W pliku .csproj Znajdź element SimpleProject.vsct.  
   
         ```  
         <None Include="SimpleProject.vsct" />  
         ```  
   
-    3.  Zmienić akcję kompilacji na **VSCTCompile**.  
+    3. Zmienić akcję kompilacji na **VSCTCompile**.  
   
         ```  
         <VSCTCompile Include="SimpleProject.vsct" />  
         ```  
   
-    4.  plik projektu i zamknij Edytor.  
+    4. plik projektu i zamknij Edytor.  
   
-    5.  Zapisz węzła SimpleProject, a następnie w **Eksploratora rozwiązań** kliknij **Załaduj ponownie projekt**.  
+    5. Zapisz węzła SimpleProject, a następnie w **Eksploratora rozwiązań** kliknij **Załaduj ponownie projekt**.  
   
 ## <a name="examining-the-visual-studio-template-build-steps"></a>Badanie kroków kompilacji szablonu programu Visual Studio  
  System kompilacji projektu pakietu VSPackage jest zazwyczaj uruchamiany program Visual Studio w trybie instalacji po zmodyfikowaniu pliku .vstemplate lub projektu, który zawiera plik .vstemplate zostanie ponownie skompilowany. Możesz kontynuować pracę przez ustawienie poziomu szczegółowości MSBuild do normalnego lub nowszej.  
@@ -209,11 +209,11 @@ ZipProjects:
   
  W tej sekcji pokazano, jak utworzyć węzeł podrzędny konsoli SimpleProject typu projektu.  
   
-1.  Zmień nazwę folderu \Templates\Projects\SimpleProject\ na \Templates\Projects\ConsoleApp\\.  
+1. Zmień nazwę folderu \Templates\Projects\SimpleProject\ na \Templates\Projects\ConsoleApp\\.  
   
-2.  W **właściwości** okno, wybierz wszystkie pięć plików w folderze \Templates\Projects\ConsoleApp\ i upewnij się, że **Build Action** ustawiono **ZipProject**.  
+2. W **właściwości** okno, wybierz wszystkie pięć plików w folderze \Templates\Projects\ConsoleApp\ i upewnij się, że **Build Action** ustawiono **ZipProject**.  
   
-3.  W pliku SimpleProject.vstemplate, Dodaj następujący wiersz na końcu \<TemplateData > sekcji, tuż przed tagiem zamykającym.  
+3. W pliku SimpleProject.vstemplate, Dodaj następujący wiersz na końcu \<TemplateData > sekcji, tuż przed tagiem zamykającym.  
   
     ```  
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>  
@@ -221,11 +221,11 @@ ZipProjects:
   
      Powoduje to szablon Aplikacja konsoli się zarówno w konsoli węzeł podrzędny i SimpleProject węzła nadrzędnego, który jest jeden poziom wyżej węzeł podrzędny.  
   
-4.  Zapisz plik SimpleProject.vstemplate.  
+4. Zapisz plik SimpleProject.vstemplate.  
   
-5.  W pliku .csproj Dodaj \<OutputSubPath > do każdego z elementów ZipProject. Cofnij ładowanie projektu, jak poprzednio i wyedytuj plik projektu.  
+5. W pliku .csproj Dodaj \<OutputSubPath > do każdego z elementów ZipProject. Cofnij ładowanie projektu, jak poprzednio i wyedytuj plik projektu.  
   
-6.  Znajdź \<ZipProject > elementy. Do każdego \<ZipProject > elementu Dodawanie \<OutputSubPath > element i nadaj mu wartość konsoli. The ZipProject  
+6. Znajdź \<ZipProject > elementy. Do każdego \<ZipProject > elementu Dodawanie \<OutputSubPath > element i nadaj mu wartość konsoli. The ZipProject  
   
     ```  
     <ZipProject Include="Templates\Projects\ConsoleApp\AssemblyInfo.cs">  
@@ -245,7 +245,7 @@ ZipProjects:
         </ZipProject>  
     ```  
   
-7.  Dodaj tę \<PropertyGroup > do pliku projektu:  
+7. Dodaj tę \<PropertyGroup > do pliku projektu:  
   
     ```  
     <PropertyGroup>  
@@ -253,7 +253,7 @@ ZipProjects:
     </PropertyGroup>  
     ```  
   
-8.  Zapisz plik projektu i ponownie Załaduj projekt.  
+8. Zapisz plik projektu i ponownie Załaduj projekt.  
   
 ## <a name="testing-the-project-type-child-node"></a>Testowanie węzeł podrzędny typu projektu  
  Testowanie zmodyfikowany plik projektu aby zobaczyć, czy **konsoli** węzeł podrzędny pojawia się w **nowy projekt** okno dialogowe.  
@@ -285,15 +285,15 @@ ZipProjects:
   
 #### <a name="to-substitute-project-template-parameters"></a>Aby zastąpić parametry szablonu projektu  
   
-1.  W pliku SimpleProjectNode.cs Usuń `AddFileFromTemplate` metody.  
+1. W pliku SimpleProjectNode.cs Usuń `AddFileFromTemplate` metody.  
   
-2.  W pliku \Templates\Projects\ConsoleApp\SimpleProject.myproj zlokalizuj \<RootNamespace > właściwości i zmień jej wartość $safeprojectname $.  
+2. W pliku \Templates\Projects\ConsoleApp\SimpleProject.myproj zlokalizuj \<RootNamespace > właściwości i zmień jej wartość $safeprojectname $.  
   
     ```  
     <RootNamespace>$safeprojectname$</RootNamespace>  
     ```  
   
-3.  W pliku \Templates\Projects\SimpleProject\Program.cs Zastąp zawartość pliku następującym kodem:  
+3. W pliku \Templates\Projects\SimpleProject\Program.cs Zastąp zawartość pliku następującym kodem:  
   
     ```  
     using System;  
@@ -315,11 +315,11 @@ ZipProjects:
     }  
     ```  
   
-4.  Ponownie skompiluj projekt SimpleProject, a następnie rozpocząć debugowanie. Wystąpienie eksperymentalne powinna zostać wyświetlona.  
+4. Ponownie skompiluj projekt SimpleProject, a następnie rozpocząć debugowanie. Wystąpienie eksperymentalne powinna zostać wyświetlona.  
   
-5.  Utwórz nową aplikację Konsolową SimpleProject. (W **typów projektów** okienku wybierz **SimpleProject**. W obszarze **zainstalowane szablony programu Visual Studio**, wybierz opcję **aplikację Konsolową**.)  
+5. Utwórz nową aplikację Konsolową SimpleProject. (W **typów projektów** okienku wybierz **SimpleProject**. W obszarze **zainstalowane szablony programu Visual Studio**, wybierz opcję **aplikację Konsolową**.)  
   
-6.  W nowo utworzonym projekcie Otwórz plik Program.cs. Powinien on wyglądać podobnie do następującej (wartości identyfikatora GUID w pliku będą się różnić.):  
+6. W nowo utworzonym projekcie Otwórz plik Program.cs. Powinien on wyglądać podobnie do następującej (wartości identyfikatora GUID w pliku będą się różnić.):  
   
     ```  
     using System;  
@@ -348,11 +348,11 @@ ZipProjects:
   
  Na stronie właściwości, który zostanie utworzony w tej sekcji pozwala zmienić i zapisać te właściwości projektu:  
   
--   AssemblyName  
+- AssemblyName  
   
--   Atrybut OutputType  
+- Atrybut OutputType  
   
--   RootNamespace.  
+- RootNamespace.  
   
 1. W pliku SimpleProjectPackage.cs Dodaj `ProvideObject` atrybutu `SimpleProjectPackage` klasy:  
   

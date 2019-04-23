@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfefb49b2dea575a7a99c2531a6f241872cd4704
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 61fb1302ffb0a068122c333e196178dfa2b30d86
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629992"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078944"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>Instrukcje: Programowe tworzenie nowych dokumentów programu Visio
   Podczas tworzenia nowego rysunku programu Microsoft Office Visio dokumentu, należy dodać go do `Microsoft.Office.Interop.Visio.Documents` zbiór otwarte dokumenty programu Visio. W związku z tym `Microsoft.Office.Interop.Visio.Documents.Add` metoda tworzy nowy dokument rysunku programu Visio. Aby uzyskać więcej informacji, zobacz dokumentację referencyjną VBA [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) metody.
@@ -27,7 +27,7 @@ ms.locfileid: "56629992"
 
 ### <a name="to-create-a-new-document"></a>Aby utworzyć nowy dokument
 
--   Użyj `Microsoft.Office.Interop.Visio.Documents.Add` metodę, aby utworzyć nowy pusty dokument, który nie jest oparty na szablonie.
+- Użyj `Microsoft.Office.Interop.Visio.Documents.Add` metodę, aby utworzyć nowy pusty dokument, który nie jest oparty na szablonie.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#1](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#1)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#1](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#1)]
@@ -37,7 +37,7 @@ ms.locfileid: "56629992"
 
 ### <a name="to-create-a-new-document-that-is-copied-from-an-existing-document"></a>Aby utworzyć nowy dokument, który jest kopiowany z istniejącego dokumentu
 
--   Wywołaj `Microsoft.Office.Interop.Visio.Documents.Add` metody i określ ścieżkę na diagramie programu Visio.
+- Wywołaj `Microsoft.Office.Interop.Visio.Documents.Add` metody i określ ścieżkę na diagramie programu Visio.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#2)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#2)]
@@ -47,7 +47,7 @@ ms.locfileid: "56629992"
 
 ### <a name="to-create-a-new-stencil-that-is-copied-from-an-existing-stencil"></a>Aby utworzyć nowy wzornik skopiowane z istniejącego wzornika
 
--   Wywołaj `Microsoft.Office.Interop.Visio.Documents.Add` metody i określ ścieżkę wzornika.
+- Wywołaj `Microsoft.Office.Interop.Visio.Documents.Add` metody i określ ścieżkę wzornika.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#3)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#3)]
@@ -57,7 +57,7 @@ ms.locfileid: "56629992"
 
 ### <a name="to-create-a-new-document-that-is-based-on-an-existing-template"></a>Aby utworzyć nowy dokument, który jest oparty na podstawie istniejącego szablonu
 
--   Wywołaj `Microsoft.Office.Interop.Visio.Documents.Add` metody i określ ścieżkę do szablonu.
+- Wywołaj `Microsoft.Office.Interop.Visio.Documents.Add` metody i określ ścieżkę do szablonu.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#4](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#4)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#4](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#4)]
@@ -65,11 +65,11 @@ ms.locfileid: "56629992"
 ## <a name="compile-the-code"></a>Skompilować kod
  Ten przykład kodu wymaga następujących elementów:
 
--   Dokument programu Visio o nazwie `myDrawing.vsd` musi znajdować się w katalogu o nazwie `Test` w *Moje dokumenty* folder (Windows XP i starszych) lub *dokumenty* folder (Windows Vista).
+- Dokument programu Visio o nazwie `myDrawing.vsd` musi znajdować się w katalogu o nazwie `Test` w *Moje dokumenty* folder (Windows XP i starszych) lub *dokumenty* folder (Windows Vista).
 
--   Dokument programu Visio o nazwie `myStencil.vss` musi znajdować się w katalogu o nazwie `Test` w *Moje dokumenty* folder (Windows XP i starszych) lub *dokumenty* folder (Windows Vista).
+- Dokument programu Visio o nazwie `myStencil.vss` musi znajdować się w katalogu o nazwie `Test` w *Moje dokumenty* folder (Windows XP i starszych) lub *dokumenty* folder (Windows Vista).
 
--   Dokument programu Visio o nazwie `myTemplate.vst` musi znajdować się w katalogu o nazwie `Test` w *Moje dokumenty* folder (Windows XP i starszych) lub *dokumenty* folder (Windows Vista).
+- Dokument programu Visio o nazwie `myTemplate.vst` musi znajdować się w katalogu o nazwie `Test` w *Moje dokumenty* folder (Windows XP i starszych) lub *dokumenty* folder (Windows Vista).
 
 ## <a name="see-also"></a>Zobacz także
 - [Rozwiązania programu Visio](../vsto/visio-solutions.md)

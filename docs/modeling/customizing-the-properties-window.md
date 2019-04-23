@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 151b62062c6846902643deef2c6cc93c315d4f4a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d053bcd5e8b1824334f9953ac14881fdc0315be
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942599"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083339"
 ---
 # <a name="customizing-the-properties-window"></a>Dostosowywanie okna właściwości
 W języku specyficznym dla domeny (DSL) w programie Visual Studio, można dostosować wygląd i zachowanie w oknie właściwości. W definicji DSL definiuje się właściwości domeny na każdej klasy domeny. Domyślnie po wybraniu wystąpienia klasy w diagramie lub w Eksploratorze modelu, dla każdej właściwości domeny znajduje się w oknie dialogowym właściwości. Dzięki temu można wyświetlić i edytować wartości właściwości domeny, nawet jeśli ma nie mapowane do pól kształtów na diagramie.
@@ -47,13 +47,13 @@ W języku specyficznym dla domeny (DSL) w programie Visual Studio, można dostos
 ### <a name="default-property-forwarding-cases"></a>Domyślna właściwość przekazywania przypadków
  Gdy użytkownik wybierze kształtu lub łącznika lub element w Eksploratorze, następujące właściwości są wyświetlane w oknie dialogowym właściwości:
 
--   Właściwości domeny, które są zdefiniowane dla klasy domeny elementu modelu, w tym te, które są zdefiniowane w klasach bazowych. Wyjątek stanowi właściwości domeny, dla których ustawiono **jest możliwa do przeglądania** do `False`.
+- Właściwości domeny, które są zdefiniowane dla klasy domeny elementu modelu, w tym te, które są zdefiniowane w klasach bazowych. Wyjątek stanowi właściwości domeny, dla których ustawiono **jest możliwa do przeglądania** do `False`.
 
--   Nazwy elementów, które są połączone za pośrednictwem relacje, które mają liczebność 0.. 1. To zapewnia wygodny sposób wyświetlania opcjonalnie połączone elementy, nawet jeśli nie zdefiniowano mapowanie łącznika dla relacji.
+- Nazwy elementów, które są połączone za pośrednictwem relacje, które mają liczebność 0.. 1. To zapewnia wygodny sposób wyświetlania opcjonalnie połączone elementy, nawet jeśli nie zdefiniowano mapowanie łącznika dla relacji.
 
--   Właściwości domeny relacji osadzania, który jest przeznaczony dla elementu. Ponieważ relacji osadzania zwykle nie są wyświetlane jawnie, dzięki temu użytkownik widzi ich właściwości.
+- Właściwości domeny relacji osadzania, który jest przeznaczony dla elementu. Ponieważ relacji osadzania zwykle nie są wyświetlane jawnie, dzięki temu użytkownik widzi ich właściwości.
 
--   Właściwości domeny, które są zdefiniowane dla wybranego kształtu lub łącznika.
+- Właściwości domeny, które są zdefiniowane dla wybranego kształtu lub łącznika.
 
 ### <a name="adding-property-forwarding"></a>Dodawanie właściwości przekazywania
  Aby przesłać dalej właściwość, należy zdefiniować deskryptor typu domeny. Jeśli masz relacją domeny między dwoma klasami domeny, można użyć deskryptor typu domeny można ustawić właściwości domeny w pierwszej klasie do wartości właściwości domeny w drugim klasy domeny. Na przykład, jeśli mają relację między **książki** klasy domeny i **Autor** klasy domeny, można użyć deskryptor typu domeny się **nazwa** właściwość Książki **Autor** są wyświetlane w oknie dialogowym właściwości, gdy użytkownik wybierze książki.
@@ -112,14 +112,14 @@ W języku specyficznym dla domeny (DSL) w programie Visual Studio, można dostos
 
 2. Dodaj typ **typy domen** listy, o ile nie zostało jeszcze to zrobione.
 
-   1.  Otwórz DslDefinition.dsl, a następnie w **Eksplorator DSL**, kliknij prawym przyciskiem myszy węzeł główny, a następnie kliknij przycisk **dodać nowy typ zewnętrzny**.
+   1. Otwórz DslDefinition.dsl, a następnie w **Eksplorator DSL**, kliknij prawym przyciskiem myszy węzeł główny, a następnie kliknij przycisk **dodać nowy typ zewnętrzny**.
 
         Nowy wpis, który pojawia się w obszarze **typy domen** węzła.
 
        > [!WARNING]
        >  Element menu jest w węźle głównym języka DSL **typy domen** węzła.
 
-   2.  Ustaw nazwę i przestrzeń nazw nowego typu, w oknie dialogowym właściwości.
+   2. Ustaw nazwę i przestrzeń nazw nowego typu, w oknie dialogowym właściwości.
 
 3. Dodaj właściwość domeny do klasy domeny w zwykły sposób.
 
@@ -144,9 +144,9 @@ W języku specyficznym dla domeny (DSL) w programie Visual Studio, można dostos
 
 ##### <a name="to-define-a-file-name-domain-property"></a>Aby zdefiniować właściwość domeny nazwa pliku
 
-1.  Dodaj właściwość domeny do klasy domeny w definicji DSL.
+1. Dodaj właściwość domeny do klasy domeny w definicji DSL.
 
-2.  Wybierz nową właściwość. W **atrybut niestandardowy** pola w oknie dialogowym właściwości, należy wprowadzić następujący atrybut. Aby wprowadzić ten atrybut, kliknij przycisk wielokropka **[...]**  a następnie wprowadź nazwę i parametry oddzielnie:
+2. Wybierz nową właściwość. W **atrybut niestandardowy** pola w oknie dialogowym właściwości, należy wprowadzić następujący atrybut. Aby wprowadzić ten atrybut, kliknij przycisk wielokropka **[...]**  a następnie wprowadź nazwę i parametry oddzielnie:
 
     ```csharp
     [System.ComponentModel.Editor (
@@ -155,15 +155,15 @@ W języku specyficznym dla domeny (DSL) w programie Visual Studio, można dostos
 
     ```
 
-3.  Pozostaw typ właściwości domeny jego domyślne ustawienie **ciąg**.
+3. Pozostaw typ właściwości domeny jego domyślne ustawienie **ciąg**.
 
-4.  Aby przetestować edytora, sprawdź, czy użytkownicy mogą otwierać Edytor nazwy plików, aby edytować właściwości usługi domeny.
+4. Aby przetestować edytora, sprawdź, czy użytkownicy mogą otwierać Edytor nazwy plików, aby edytować właściwości usługi domeny.
 
-    1.  Naciśnij kombinację klawiszy CTRL + F5 lub F5. W rozwiązaniu do debugowania Otwórz plik testu. Utwórz element klasy domeny i wybierz ją.
+    1. Naciśnij kombinację klawiszy CTRL + F5 lub F5. W rozwiązaniu do debugowania Otwórz plik testu. Utwórz element klasy domeny i wybierz ją.
 
-    2.  W oknie dialogowym właściwości wybierz właściwość domeny. Pole wartości pokazuje wielokropek **[...]** .
+    2. W oknie dialogowym właściwości wybierz właściwość domeny. Pole wartości pokazuje wielokropek **[...]** .
 
-    3.  Kliknij przycisk wielokropka. Zostanie wyświetlone okno dialogowe pliku. Wybierz plik, a następnie zamknij okno dialogowe. Ścieżka pliku jest teraz wartość właściwości domeny.
+    3. Kliknij przycisk wielokropka. Zostanie wyświetlone okno dialogowe pliku. Wybierz plik, a następnie zamknij okno dialogowe. Ścieżka pliku jest teraz wartość właściwości domeny.
 
 ### <a name="defining-your-own-property-editor"></a>Definiowanie własnych Edytor właściwości
  Można określić własnego edytora. Można byłoby to zrobić, aby zezwolić użytkownikowi, aby edytować typu, który został zdefiniowany lub edytować standardowego typu w specjalny sposób. Na przykład można zezwolić użytkownikowi wprowadź ciąg, który reprezentuje formuły.

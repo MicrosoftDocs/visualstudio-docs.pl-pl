@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 484998916619a7dc72693d1854d29849bb62d833
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bbe703e54c6023a4d14a8610168438acc5c0e953
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612650"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085145"
 ---
 # <a name="word-solutions"></a>rozwiązania programu Word
   Program Visual Studio udostępnia szablony projektów, których można użyć do utworzenia dostosowań poziomu dokumentu i dodatków narzędzi VSTO dla programu Microsoft Office Word. Rozwiązania te można użyć do zautomatyzowania programu Word, Rozszerz funkcje programu Word i dostosowania interfejsu użytkownika (UI) programu Word. Aby uzyskać więcej informacji na temat różnic między dostosowań na poziomie dokumentu i dodatków narzędzi VSTO dla programów, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -43,20 +43,20 @@ ms.locfileid: "56612650"
 
  Ten temat zawiera następujące informacje:
 
--   [Automatyzowanie programu Word](#automating).
+- [Automatyzowanie programu Word](#automating).
 
--   [Opracowywanie dostosowań poziomu dokumentu dla programu Word](#doclevel).
+- [Opracowywanie dostosowań poziomu dokumentu dla programu Word](#doclevel).
 
--   [Tworzenie dodatków narzędzi VSTO dla programu Word](#applevel).
+- [Tworzenie dodatków narzędzi VSTO dla programu Word](#applevel).
 
--   [Dostosowywanie interfejsu użytkownika programu Word](#UI).
+- [Dostosowywanie interfejsu użytkownika programu Word](#UI).
 
-##  <a name="automating"></a> Automatyzowanie programu Word
+## <a name="automating"></a> Automatyzowanie programu Word
  Model obiektów programu Word uwidacznia wiele typów, których można użyć do zautomatyzowania programu Word. Na przykład możesz można programowo tworzyć tabele, formatować dokumenty i ustawiać tekst w zakresach i akapitach. Aby uzyskać więcej informacji, zobacz [model obiektu Word — omówienie](../vsto/word-object-model-overview.md).
 
  Podczas opracowywania rozwiązań programu Word w programie Visual Studio, możesz również użyć *hostować elementy* i *hostowania kontrolek* w posiadanych rozwiązaniach. Są to obiekty, które rozszerzają niektóre powszechnie używane obiekty w modelu obiektów programu Word, takie jak <xref:Microsoft.Office.Interop.Word.Document> i <xref:Microsoft.Office.Interop.Word.ContentControl> obiektów. Obiekty rozszerzone zachowują się jak obiekty programu Word, w których są one oparte na, ale dodają dodatkowe zdarzenia i możliwości wiązania danych do obiektów. Aby uzyskać więcej informacji, zobacz [automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md).
 
-##  <a name="doclevel"></a> Opracowywanie dostosowań poziomu dokumentu dla programu Word
+## <a name="doclevel"></a> Opracowywanie dostosowań poziomu dokumentu dla programu Word
  Dostosowania poziomu dokumentu dla programu Microsoft Office Word składa się z zestawu, który jest skojarzony z określonym dokumentem. Zestaw zazwyczaj rozszerza dokument przez dostosowanie interfejsu użytkownika i automatyzowanie programu Word. W przeciwieństwie do dodatku narzędzi VSTO, który jest skojarzony z samym programem Word, funkcja implementowana w dostosowaniu jest dostępna tylko wtedy, gdy skojarzony dokument jest otwarty w programie Word.
 
  Aby utworzyć projekt dostosowania poziomu dokumentu dla programu Word, korzystanie z szablonów projektów dokumentów programu Word lub szablon programu Word w **nowy projekt** okno dialogowe programu Visual Studio. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
@@ -68,7 +68,7 @@ ms.locfileid: "56612650"
 
  Aby uzyskać więcej informacji na temat `ThisDocument` klasy i inne funkcje, można użyć w projekcie na poziomie dokumentu, zobacz [Program dostosowań poziomu dokumentu](../vsto/programming-document-level-customizations.md).
 
-##  <a name="applevel"></a> Tworzenie dodatków narzędzi VSTO dla programu Word
+## <a name="applevel"></a> Tworzenie dodatków narzędzi VSTO dla programu Word
  Dodatek narzędzi VSTO dla programu Microsoft Office Word składa się z zestawu, który jest ładowany przez program Word. Zestaw zazwyczaj rozszerza program Word przez dostosowanie interfejsu użytkownika i automatyzowanie programu Word. W przeciwieństwie do dostosowywania poziomie dokumentu, który jest skojarzony z określonym dokumentem, funkcje implementowane w dodatku narzędzi VSTO dla programów nie jest ograniczone do pojedynczego dokumentu.
 
  Aby utworzyć projekt dodatku narzędzi VSTO dla programu Word, korzystanie z dodatku programu Word szablonów projektów w **nowy projekt** okno dialogowe programu Visual Studio. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
@@ -80,7 +80,7 @@ ms.locfileid: "56612650"
 
  Aby uzyskać więcej informacji na temat `ThisAddIn` klasy i inne funkcje, które można używać w dodatku narzędzi VSTO dla programów, zobacz [dodatków narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md).
 
-##  <a name="UI"></a> Dostosowywanie interfejsu użytkownika programu Word
+## <a name="UI"></a> Dostosowywanie interfejsu użytkownika programu Word
  Istnieje kilka różnych sposobów dostosowania interfejsu użytkownika programu Word. Niektóre opcje są dostępne dla wszystkich typów projektów, a inne opcje są dostępne tylko dla dodatków narzędzi VSTO dla programów lub dostosowań na poziomie dokumentu.
 
 ### <a name="options-for-all-project-types"></a>Opcje dla wszystkich typów projektów

@@ -9,20 +9,20 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5ca8c45d48776405b5c0602c44de368cd2899ca
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 3287bef750f25f3eb0b816488779d42d4505d8b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416360"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084469"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Instrukcje: Tworzenie dodatku programu Visual Studio dla podglądu wyników testu wydajności sieci Web
 
 Możesz rozszerzyć w interfejsie użytkownika dla **podglądu wyników testu wydajności sieci Web** przy użyciu następujących przestrzeni nazw:
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 
--   <xref:Microsoft.VisualStudio.TestTools.WebTesting>
+- <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
 Ponadto musisz dodać odwołanie do biblioteki DLL LoadTestPackage, która znajduje się w *% ProgramFiles (x86) %\Microsoft Visual Studio\\\<wersji > \Enterprise\Common7\IDE\PrivateAssemblies* folder.
 
@@ -109,31 +109,31 @@ Visual Studio dodatek utworzony w poprzedniej procedurze odwołuje się do proje
 
 ### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>Aby utworzyć formant ma być używany w podglądzie wyników testu sieci Web
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie, wybierz pozycję **Dodaj**, a następnie wybierz pozycję **nowy projekt**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie, wybierz pozycję **Dodaj**, a następnie wybierz pozycję **nowy projekt**.
 
 2. Utwórz nową **Biblioteka kontrolek formularzy Windows** projektu.
 
-3.  Z **przybornika**, przeciągnij <xref:System.Windows.Forms.DataGridView> na powierzchnię obiektu userControl1.
+3. Z **przybornika**, przeciągnij <xref:System.Windows.Forms.DataGridView> na powierzchnię obiektu userControl1.
 
 4. Kliknij symbol tagu akcji (![symbol tagu inteligentnego](../test/media/vs_winformsmttagglyph.gif)) w prawym górnym rogu <xref:System.Windows.Forms.DataGridView> i wykonaj następujące czynności:
 
-    1.  Wybierz **Zadokuj w kontenerze nadrzędnym**.
+    1. Wybierz **Zadokuj w kontenerze nadrzędnym**.
 
-    2.  Usuń zaznaczenie pól wyboru dla **Włącz dodawanie**, **Włącz edytowanie**, **Włącz usuwanie** i **Włącz zmienianie kolejności kolumn**.
+    2. Usuń zaznaczenie pól wyboru dla **Włącz dodawanie**, **Włącz edytowanie**, **Włącz usuwanie** i **Włącz zmienianie kolejności kolumn**.
 
-    3.  Wybierz **Dodaj kolumnę**.
+    3. Wybierz **Dodaj kolumnę**.
 
          **Dodaj kolumnę** zostanie wyświetlone okno dialogowe.
 
-    4.  W **typu** listy rozwijanej wybierz **DataGridViewTextBoxColumn**.
+    4. W **typu** listy rozwijanej wybierz **DataGridViewTextBoxColumn**.
 
-    5.  Wyczyść tekst "Kolumna1" w **tekst nagłówka**.
+    5. Wyczyść tekst "Kolumna1" w **tekst nagłówka**.
 
-    6.  Wybierz **Dodaj**.
+    6. Wybierz **Dodaj**.
 
-    7.  Wybierz **Zamknij**.
+    7. Wybierz **Zamknij**.
 
-5.  W **właściwości** oknie zmiany **(nazwa)** właściwość <xref:System.Windows.Forms.DataGridView> do **resultControlDataGridView**.
+5. W **właściwości** oknie zmiany **(nazwa)** właściwość <xref:System.Windows.Forms.DataGridView> do **resultControlDataGridView**.
 
 6. Kliknij prawym przyciskiem myszy projekt powierzchni i wybierz **Wyświetl kod**.
 
@@ -158,21 +158,21 @@ Visual Studio dodatek utworzony w poprzedniej procedurze odwołuje się do proje
 
 ## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>Dodaj kod do dodatku WebPerfTestResultsViewerAddin
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** węzeł w projekcie WebPerfTestResultsViewerAddin i wybierz pozycję **Dodaj odwołanie**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** węzeł w projekcie WebPerfTestResultsViewerAddin i wybierz pozycję **Dodaj odwołanie**.
 
-2.  W **Dodaj odwołanie** okna dialogowego wybierz **.NET** kartę.
+2. W **Dodaj odwołanie** okna dialogowego wybierz **.NET** kartę.
 
-3.  Przewiń w dół i wybierz **Microsoft.VisualStudio.QualityTools.WebTestFramework** i **System.Windows.Forms**.
+3. Przewiń w dół i wybierz **Microsoft.VisualStudio.QualityTools.WebTestFramework** i **System.Windows.Forms**.
 
-4.  Wybierz **OK**.
+4. Wybierz **OK**.
 
-5.  Kliknij prawym przyciskiem myszy **odwołania** ponownie, a następnie wybierz węzeł **Dodaj odwołanie**.
+5. Kliknij prawym przyciskiem myszy **odwołania** ponownie, a następnie wybierz węzeł **Dodaj odwołanie**.
 
-6.  W **Dodaj odwołanie** okna dialogowego wybierz **Przeglądaj** kartę.
+6. W **Dodaj odwołanie** okna dialogowego wybierz **Przeglądaj** kartę.
 
-7.  Wybierz listę rozwijaną dla **przeszukania** i przejdź do *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* i wybierz  *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll* pliku.
+7. Wybierz listę rozwijaną dla **przeszukania** i przejdź do *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* i wybierz  *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll* pliku.
 
-8.  Wybierz **OK**.
+8. Wybierz **OK**.
 
 9. Kliknij prawym przyciskiem myszy węzeł projektu WebPerfTestResultsViewerAddin i wybierz **Dodaj odwołanie**.
 
@@ -254,28 +254,28 @@ Visual Studio dodatek utworzony w poprzedniej procedurze odwołuje się do proje
 
 ## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>Dodaj kod do dodatku WebPerfTestResultsViewerControl
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu WebPerfTestResultsViewerControl i wybierz **właściwości**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu WebPerfTestResultsViewerControl i wybierz **właściwości**.
 
-2.  Wybierz **aplikacji** kartę, a następnie wybierz **platformę docelową** listy rozwijanej i wybierz pozycję **.NET Framework 4** i Zamknij **właściwości**.
+2. Wybierz **aplikacji** kartę, a następnie wybierz **platformę docelową** listy rozwijanej i wybierz pozycję **.NET Framework 4** i Zamknij **właściwości**.
 
      Jest to wymagane w celu obsługi odwołań biblioteki DLL, które są potrzebne do rozszerzania **podglądu wyników testu wydajności sieci Web**.
 
-3.  W **Eksploratora rozwiązań**, w projekcie WebPerfTestResultsViewerControl kliknij prawym przyciskiem myszy **odwołania** a następnie wybierz węzeł **Dodaj odwołanie**.
+3. W **Eksploratora rozwiązań**, w projekcie WebPerfTestResultsViewerControl kliknij prawym przyciskiem myszy **odwołania** a następnie wybierz węzeł **Dodaj odwołanie**.
 
-4.  W **Dodaj odwołanie** okno dialogowe, kliknij przycisk **.NET** kartę.
+4. W **Dodaj odwołanie** okno dialogowe, kliknij przycisk **.NET** kartę.
 
-5.  Przewiń w dół i wybierz **Microsoft.VisualStudio.QualityTools.WebTestFramework**.
+5. Przewiń w dół i wybierz **Microsoft.VisualStudio.QualityTools.WebTestFramework**.
 
-6.  Wybierz **OK**.
+6. Wybierz **OK**.
 
-7.  W *UserControl1.cs* Dodaj następujące instrukcje Using:
+7. W *UserControl1.cs* Dodaj następujące instrukcje Using:
 
     ```csharp
     using Microsoft.VisualStudio.TestTools.WebTesting;
     using Microsoft.VisualStudio.TestTools.WebTesting.Rules;
     ```
 
-8.  Dodaj metodę aktualizacji, która jest nazywana i przekazywana jako WebTestRequestResult z metody WebPerfTestResultsViewerAddin WebTestResultViewer_SelectedChanged w *Connect.cs* pliku. Metoda Aktualizuj zapełnia DataGridView różne właściwości przekazany w WebTestRequestResult.
+8. Dodaj metodę aktualizacji, która jest nazywana i przekazywana jako WebTestRequestResult z metody WebPerfTestResultsViewerAddin WebTestResultViewer_SelectedChanged w *Connect.cs* pliku. Metoda Aktualizuj zapełnia DataGridView różne właściwości przekazany w WebTestRequestResult.
 
     ```csharp
     public void Update(WebTestRequestResult WebTestResults)
@@ -304,27 +304,27 @@ Visual Studio dodatek utworzony w poprzedniej procedurze odwołuje się do proje
 
 ### <a name="to-build-the-solution"></a>Aby skompilować rozwiązanie
 
--   Na **kompilacji** menu, wybierz opcję **Kompiluj rozwiązanie**.
+- Na **kompilacji** menu, wybierz opcję **Kompiluj rozwiązanie**.
 
 ## <a name="register-the-webperftestresultsvieweraddin-add-in"></a>Zarejestruj dodatek WebPerfTestResultsViewerAddin
 
 ### <a name="to-register-the-add-in-using-the-add-in-manager"></a>Aby zarejestrować dodatek za pomocą Menedżera dodatków
 
-1.  Na **narzędzia** menu, wybierz opcję **Add-in Manager**.
+1. Na **narzędzia** menu, wybierz opcję **Add-in Manager**.
 
-2.  **Add-in Manager** zostanie wyświetlone okno dialogowe.
+2. **Add-in Manager** zostanie wyświetlone okno dialogowe.
 
-3.  Zaznacz pole wyboru dla dodatku WebPerfTestResultsViewerAddin w **dostępne dodatki** kolumny i wyczyść pola wyboru **uruchamiania** i **wiersza polecenia**kolumn.
+3. Zaznacz pole wyboru dla dodatku WebPerfTestResultsViewerAddin w **dostępne dodatki** kolumny i wyczyść pola wyboru **uruchamiania** i **wiersza polecenia**kolumn.
 
-4.  Wybierz **OK**.
+4. Wybierz **OK**.
 
 ## <a name="run-the-web-performance-test-using-the-build-the-webperftestresultsvieweraddin-add-in"></a>Uruchom test wydajności sieci web, korzystanie z kompilacji dodatku WebPerfTestResultsViewerAddin
 
 ### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>Aby uruchomić nowy program VS dodatek dla podglądu wyników testu sieci Web
 
-1.  Uruchamianie testu wydajności sieci web, a następnie zostanie wyświetlony dodatku WebPerfTestResultsViewerAddin w nowej karcie zatytułowaną przykład, wyświetlaną w **Podgląd wyników testu wydajności sieci Web**.
+1. Uruchamianie testu wydajności sieci web, a następnie zostanie wyświetlony dodatku WebPerfTestResultsViewerAddin w nowej karcie zatytułowaną przykład, wyświetlaną w **Podgląd wyników testu wydajności sieci Web**.
 
-2.  Wybierz kartę Aby wyświetlić właściwości przedstawione w formancie DataGridView.
+2. Wybierz kartę Aby wyświetlić właściwości przedstawione w formancie DataGridView.
 
 ## <a name="net-framework-security"></a>Zabezpieczenia.NET Framework
 
@@ -336,9 +336,9 @@ Ponadto ta strona opcji pozwala określić foldery, w których program Visual St
 
  Ustawienia na stronie opcje dla dodatku zabezpieczeń są następujące:
 
--   **Zezwalaj składnikom dodatku na ładowanie.** Domyślnie wybrana. Po wybraniu, dodatki mogą ładować w programie Visual Studio. Gdy nie dokonano zaznaczenia, dodatki mają zakaz załadunku w programie Visual Studio.
+- **Zezwalaj składnikom dodatku na ładowanie.** Domyślnie wybrana. Po wybraniu, dodatki mogą ładować w programie Visual Studio. Gdy nie dokonano zaznaczenia, dodatki mają zakaz załadunku w programie Visual Studio.
 
--   **Zezwalaj na składniki dodatku na ładowanie z adresu URL.** Nie jest zaznaczone domyślnie. Po wybraniu, dodatki mogą być ładowane z zewnętrznych witryn sieci Web. Gdy nie dokonano zaznaczenia, zdalne dodatki mają zakaz załadunku w programie Visual Studio. Jeśli z jakiegoś powodu nie można załadować dodatku, następnie go nie można załadować z sieci Web. To ustawienie kontroluje tylko ładowanie dodatku DLL. *. Dodatek* pliki rejestracji muszą się znajdować w systemie lokalnym.
+- **Zezwalaj na składniki dodatku na ładowanie z adresu URL.** Nie jest zaznaczone domyślnie. Po wybraniu, dodatki mogą być ładowane z zewnętrznych witryn sieci Web. Gdy nie dokonano zaznaczenia, zdalne dodatki mają zakaz załadunku w programie Visual Studio. Jeśli z jakiegoś powodu nie można załadować dodatku, następnie go nie można załadować z sieci Web. To ustawienie kontroluje tylko ładowanie dodatku DLL. *. Dodatek* pliki rejestracji muszą się znajdować w systemie lokalnym.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 51f4aeef55d20a728567b50e67c2232a0a77b1e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a6f1ecd427b1c715649bc2118be5ab384a74c585
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646060"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084316"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Instrukcje: Dodawanie właściwości do projektów SharePoint
   Można użyć rozszerzenia projektu, aby dodać właściwość do każdego projektu programu SharePoint. Właściwość pojawia się w **właściwości** okna, jeśli projekt jest wybrany w **Eksploratora rozwiązań**.
@@ -28,11 +28,11 @@ ms.locfileid: "56646060"
 
 ### <a name="to-add-a-property-to-a-sharepoint-project"></a>Aby dodać właściwość do projektu programu SharePoint
 
-1.  Zdefiniuj klasę z właściwością publiczną, reprezentujący właściwość, którą chcesz dodać do projektów programu SharePoint. Jeśli chcesz dodać wiele właściwości, można zdefiniować wszystkie właściwości w tej samej klasy lub w różnych klas.
+1. Zdefiniuj klasę z właściwością publiczną, reprezentujący właściwość, którą chcesz dodać do projektów programu SharePoint. Jeśli chcesz dodać wiele właściwości, można zdefiniować wszystkie właściwości w tej samej klasy lub w różnych klas.
 
-2.  W <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> metody usługi <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> implementacji, uchwyt <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> zdarzenia *projectService* parametru.
+2. W <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> metody usługi <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> implementacji, uchwyt <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> zdarzenia *projectService* parametru.
 
-3.  W procedurze obsługi zdarzeń dla <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> zdarzenia dodaje wystąpienie klasy właściwości do <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> zbiór parametr argumenty zdarzenia.
+3. W procedurze obsługi zdarzeń dla <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> zdarzenia dodaje wystąpienie klasy właściwości do <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> zbiór parametr argumenty zdarzenia.
 
 ## <a name="example"></a>Przykład
  Poniższy przykład kodu demonstruje sposób dodawania dwóch właściwości do projektów programu SharePoint. Jedna właściwość będzie się powtarzał swoje dane w pliku projektu użytkownika opcji ( *. csproj.user* pliku lub *. vbproj.user* pliku). Innych właściwości będzie się powtarzał swoje dane w pliku projektu (*.csproj* pliku lub *.vbproj* pliku).
@@ -54,28 +54,28 @@ ms.locfileid: "56646060"
 ### <a name="specify-the-behavior-of-custom-properties"></a>Określ zachowanie właściwości niestandardowe
  Można zdefiniować jak właściwość niestandardową wygląda i zachowuje się tak **właściwości** okna przez zastosowanie atrybutów z <xref:System.ComponentModel> przestrzeń nazw do definicji właściwości. Następujące atrybuty są przydatne w wielu scenariuszach:
 
--   <xref:System.ComponentModel.DisplayNameAttribute>: Określa nazwę właściwości, która pojawia się w **właściwości** okna.
+- <xref:System.ComponentModel.DisplayNameAttribute>: Określa nazwę właściwości, która pojawia się w **właściwości** okna.
 
--   <xref:System.ComponentModel.DescriptionAttribute>: Określa ciąg opisu, który pojawia się w dolnej części **właściwości** okno po wybraniu właściwości.
+- <xref:System.ComponentModel.DescriptionAttribute>: Określa ciąg opisu, który pojawia się w dolnej części **właściwości** okno po wybraniu właściwości.
 
--   <xref:System.ComponentModel.DefaultValueAttribute>: Określa domyślną wartość właściwości.
+- <xref:System.ComponentModel.DefaultValueAttribute>: Określa domyślną wartość właściwości.
 
--   <xref:System.ComponentModel.TypeConverterAttribute>: Określa niestandardowe konwersji między ciąg, który jest wyświetlany w **właściwości** okna, a wartość właściwości innych niż ciąg.
+- <xref:System.ComponentModel.TypeConverterAttribute>: Określa niestandardowe konwersji między ciąg, który jest wyświetlany w **właściwości** okna, a wartość właściwości innych niż ciąg.
 
--   <xref:System.ComponentModel.EditorAttribute>: Określa niestandardowy Edytor służące do modyfikowania właściwości.
+- <xref:System.ComponentModel.EditorAttribute>: Określa niestandardowy Edytor służące do modyfikowania właściwości.
 
 ## <a name="compile-the-code"></a>Skompilować kod
  Ten przykład wymaga odwołania do następujących zestawów:
 
--   Microsoft.VisualStudio.SharePoint
--
--   Microsoft.VisualStudio.Shell
--
--   Microsoft.VisualStudio.Shell.Interop
--
--   Microsoft.VisualStudio.Shell.Interop.8.0
--
--   System.ComponentModel.Composition
+- Microsoft.VisualStudio.SharePoint
+
+- Microsoft.VisualStudio.Shell
+
+- Microsoft.VisualStudio.Shell.Interop
+
+- Microsoft.VisualStudio.Shell.Interop.8.0
+
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>Wdrażanie rozszerzenia
  Aby wdrożyć rozszerzenie, należy utworzyć [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozszerzenie (VSIX), pakiet dla zestawu i innych plików, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).

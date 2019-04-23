@@ -9,12 +9,12 @@ ms.reviewer: karthiknadig
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 3fd7f8be7b2de02fb89c9eec3ea7859241beb0f2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c4d65388db0ef90f807ec85b8c9216d717c2b571
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945823"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079801"
 ---
 # <a name="remote-r-service-for-linux"></a>Usługa zdalnego języka R dla systemu Linux
 
@@ -166,5 +166,6 @@ W każdym przypadku komputera zdalnego musi mieć jedną z następujących inter
     ```bash
     az container create --image myimage:latest --name myaz-container --resource-group myaz-container-res --ip-address public --port 5444 --cpu 2 --memory 4 --command-line "rtvsd"
     ```
+
 1. Użyj `az container list` polecenie, aby sprawdzić stan. Wyszukaj `provisioningState`: `Succeeded`.
 1. Jeśli aprowizacja została wykonana pomyślnie, teraz można podłączyć do kontenera. Znajdź publiczny adres IP w `ipAddress` pola, które są używane przy użyciu poświadczeń w pliku platformy docker do łączenia się do kontenera z RTVS.

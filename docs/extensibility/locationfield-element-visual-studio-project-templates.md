@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dba30926b3afafae6cb32e159a98d4155438c08
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f55c67fbad80b05431ed13439584d3a94fa88c65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679961"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078307"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Locationfield — element (szablony projektu Visual Studio)
 Określa, czy **lokalizacji** polu tekstowym **nowy projekt** okno dialogowe jest włączone, wyłączone lub ukryty w przypadku szablonu projektu.
@@ -51,11 +51,11 @@ Określa, czy **lokalizacji** polu tekstowym **nowy projekt** okno dialogowe jes
 
  Tekst prawidłowe wartości to:
 
--   `Enabled`, która określa, że **lokalizacji** pole **nowy projekt** okno dialogowe jest włączona.
+- `Enabled`, która określa, że **lokalizacji** pole **nowy projekt** okno dialogowe jest włączona.
 
--   `Disabled`, która określa, że **lokalizacji** pole **nowy projekt** okno dialogowe jest wyłączona.
+- `Disabled`, która określa, że **lokalizacji** pole **nowy projekt** okno dialogowe jest wyłączona.
 
--   `Hidden`, która określa, że **lokalizacji** pole **nowy projekt** okno zostanie ukryte.
+- `Hidden`, która określa, że **lokalizacji** pole **nowy projekt** okno zostanie ukryte.
 
 ## <a name="remarks"></a>Uwagi
  Wartość domyślna to `Enabled`.

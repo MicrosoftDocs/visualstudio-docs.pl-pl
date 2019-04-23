@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fb50b9ed0c3debbde0ef41cd474df1f8fd9f4517
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e58acc6323f396f9b0755e84b369ce0fdf413c08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787597"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080517"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>Instrukcje: Debugowanie hostowania samoobsługowego WCF usługi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,29 +32,29 @@ A *usługi hosta samodzielnego* to usługa WCF, która nie jest uruchamiane w us
   
  Jeśli usługa WCF jest hostingu samodzielnego wewnątrz, czy Proces, który nie można uruchomić w ten sposób, takich jak usługa NT nie można użyć tej metody. Zamiast tego możesz wykonać jedną z następujących czynności:  
   
--   Ręcznie dołączyć debuger do procesu hostingu. Aby uzyskać więcej informacji, zobacz [dołączenia do uruchamiania procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+- Ręcznie dołączyć debuger do procesu hostingu. Aby uzyskać więcej informacji, zobacz [dołączenia do uruchamiania procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
      — lub —  
   
--   Rozpocznij debugowanie klienta, a następnie wejdź do wywołań do usługi. Ta migracja wymaga włączenia debugowania w pliku app.config. Aby uzyskać więcej informacji [ograniczenia debugowania WCF](../debugger/limitations-on-wcf-debugging.md).  
+- Rozpocznij debugowanie klienta, a następnie wejdź do wywołań do usługi. Ta migracja wymaga włączenia debugowania w pliku app.config. Aby uzyskać więcej informacji [ograniczenia debugowania WCF](../debugger/limitations-on-wcf-debugging.md).  
   
 ### <a name="to-start-both-client-and-host-from-visual-studio"></a>Można uruchomić zarówno klient, jak i hosta w programie Visual Studio  
   
-1.  Utwórz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania zawierającego projekty zarówno klient, jak i serwera.  
+1. Utwórz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania zawierającego projekty zarówno klient, jak i serwera.  
   
-2.  Konfigurowanie rozwiązania do uruchamiania procesów klienta i serwera, po wybraniu **Start** na **debugowania** menu.  
+2. Konfigurowanie rozwiązania do uruchamiania procesów klienta i serwera, po wybraniu **Start** na **debugowania** menu.  
   
-    1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy nazwę rozwiązania.  
+    1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy nazwę rozwiązania.  
   
-    2.  Kliknij przycisk **Ustaw projekty startowe**.  
+    2. Kliknij przycisk **Ustaw projekty startowe**.  
   
-    3.  W **rozwiązania \<name > właściwości** okno dialogowe, wybierz opcję **wiele projektów startowych**.  
+    3. W **rozwiązania \<name > właściwości** okno dialogowe, wybierz opcję **wiele projektów startowych**.  
   
-    4.  W **wiele projektów startowych** siatki w wierszu, który odnosi się do projektu serwera, kliknij przycisk **akcji** i wybierz polecenie **Start**.  
+    4. W **wiele projektów startowych** siatki w wierszu, który odnosi się do projektu serwera, kliknij przycisk **akcji** i wybierz polecenie **Start**.  
   
-    5.  W wierszu, który odnosi się do projektu klienta, kliknij przycisk **akcji** i wybierz polecenie **Start**.  
+    5. W wierszu, który odnosi się do projektu klienta, kliknij przycisk **akcji** i wybierz polecenie **Start**.  
   
-    6.  Kliknij przycisk **OK**.  
+    6. Kliknij przycisk **OK**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie usług WCF](../debugger/debugging-wcf-services.md)   

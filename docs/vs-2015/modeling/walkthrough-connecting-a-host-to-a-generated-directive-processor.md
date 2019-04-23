@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 00baf3697347f208c5bd6cd2aa1abfe02b6fa2cb
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 8832f31724d5e688b93dcca76cce8e1a496c9ced
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834309"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083221"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Przewodnik: Łączenie hosta z generowanym procesorem dyrektywy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Możesz napisać własnego hosta, który przetwarza szablonów tekstowych. Podst
   
  Ten instruktaż zawiera następujące zagadnienia:  
   
--   Za pomocą [!INCLUDE[dsl](../includes/dsl-md.md)] do generowania procesor dyrektywy, która jest oparta na modelu domeny.  
+- Za pomocą [!INCLUDE[dsl](../includes/dsl-md.md)] do generowania procesor dyrektywy, która jest oparta na modelu domeny.  
   
--   Łączenie niestandardowego hosta szablonu tekstowego generowanym procesorem dyrektywy.  
+- Łączenie niestandardowego hosta szablonu tekstowego generowanym procesorem dyrektywy.  
   
--   Testowanie niestandardowego hosta z generowanym procesorem dyrektywy.  
+- Testowanie niestandardowego hosta z generowanym procesorem dyrektywy.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby zdefiniować DSL, musisz mieć zainstalowane następujące składniki:  
@@ -87,27 +87,27 @@ Możesz napisać własnego hosta, który przetwarza szablonów tekstowych. Podst
   
 #### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>Aby połączyć niestandardowego hosta szablonu tekstowego generowanym procesorem dyrektywy  
   
-1.  Otwórz rozwiązanie CustomHost.  
+1. Otwórz rozwiązanie CustomHost.  
   
-2.  Na **projektu** menu, kliknij przycisk **Dodaj odwołanie**.  
+2. Na **projektu** menu, kliknij przycisk **Dodaj odwołanie**.  
   
      **Dodaj odwołanie** zostanie otwarte okno dialogowe z **.NET** karcie wyświetlane.  
   
-3.  Dodaj następujące odwołania:  
+3. Dodaj następujące odwołania:  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.11.0  
+    - Microsoft.VisualStudio.Modeling.Sdk.11.0  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0  
+    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0  
   
-    -   Microsoft.VisualStudio.TextTemplating.11.0  
+    - Microsoft.VisualStudio.TextTemplating.11.0  
   
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.11.0  
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0  
   
-    -   Microsoft.VisualStudio.TextTemplating.Modeling.11.0  
+    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0  
   
-    -   Microsoft.VisualStudio.TextTemplating.VSHost.11.0  
+    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0  
   
-4.  W górnej części pliku Program.cs lub Module1.vb Dodaj następujący wiersz kodu:  
+4. W górnej części pliku Program.cs lub Module1.vb Dodaj następujący wiersz kodu:  
   
     ```csharp  
     using Microsoft.Win32;  
@@ -117,7 +117,7 @@ Możesz napisać własnego hosta, który przetwarza szablonów tekstowych. Podst
     Imports Microsoft.Win32  
     ```  
   
-5.  Odszukaj kod dla właściwości `StandardAssemblyReferences`i zastąp go następującym kodem:  
+5. Odszukaj kod dla właściwości `StandardAssemblyReferences`i zastąp go następującym kodem:  
   
     > [!NOTE]
     >  W tym kroku należy dodać odwołania do zestawów, które są wymagane przez generowanym procesorem dyrektywy, obsługujących hosta.  
@@ -153,7 +153,7 @@ Możesz napisać własnego hosta, który przetwarza szablonów tekstowych. Podst
     }  
     ```  
   
-6.  Znajdź Kod funkcji `ResolveDirectiveProcessor`i zastąp go następującym kodem:  
+6. Znajdź Kod funkcji `ResolveDirectiveProcessor`i zastąp go następującym kodem:  
   
     > [!IMPORTANT]
     >  Ten kod zawiera zakodowanych odwołań do nazwy generowanym procesorem dyrektywy, do którego chcesz się połączyć. Można łatwo dokonać to bardziej ogólne, w którym to przypadku wyszukuje wszystkie procesory dyrektywy wymienionych w rejestrze i podejmie próbę odnalezienia dopasowania. W takim przypadku hosta będzie działać z dowolnym generowanym procesorem dyrektywy.  
@@ -227,18 +227,18 @@ Możesz napisać własnego hosta, który przetwarza szablonów tekstowych. Podst
             }  
     ```  
   
-7.  Na **pliku** menu, kliknij przycisk **Zapisz wszystko**.  
+7. Na **pliku** menu, kliknij przycisk **Zapisz wszystko**.  
   
-8.  Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
+8. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
   
 ## <a name="testing-the-custom-host-with-the-directive-processor"></a>Testowanie niestandardowego hosta z procesorem dyrektywy  
  Aby przetestować niestandardowego hosta szablonu tekstu, najpierw należy napisać szablon tekstowy, który wywołuje generowanym procesorem dyrektywy. Następnie uruchom niestandardowego hosta, Przekaż do niego nazwę szablonu tekstu i sprawdź, czy dyrektywa jest przetwarzany niepoprawnie.  
   
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Aby utworzyć szablon tekstowy w celu przetestowania niestandardowego hosta  
   
-1.  Utwórz plik tekstowy i nadaj mu nazwę `TestTemplateWithDP.tt`. Można użyć dowolnego edytora tekstów, takiego jak Notatnik, aby utworzyć plik.  
+1. Utwórz plik tekstowy i nadaj mu nazwę `TestTemplateWithDP.tt`. Można użyć dowolnego edytora tekstów, takiego jak Notatnik, aby utworzyć plik.  
   
-2.  Dodaj następującą zawartość do pliku tekstowego:  
+2. Dodaj następującą zawartość do pliku tekstowego:  
   
     > [!NOTE]
     >  Język programowania szablonu tekstu nie musi odpowiadać językowi niestandardowego hosta.  
@@ -310,15 +310,15 @@ Możesz napisać własnego hosta, który przetwarza szablonów tekstowych. Podst
     #>  
     ```  
   
-3.  W kodzie, Zastąp \<YOUR ŚCIEŻKA > ze ścieżką pliku Sample.min z języka specyficznego dla projektu utworzonego w pierwszej procedurze.  
+3. W kodzie, Zastąp \<YOUR ŚCIEŻKA > ze ścieżką pliku Sample.min z języka specyficznego dla projektu utworzonego w pierwszej procedurze.  
   
-4.  Zapisz i zamknij plik.  
+4. Zapisz i zamknij plik.  
   
 #### <a name="to-test-the-custom-host"></a>Aby przetestować niestandardowego hosta  
   
-1.  Otwórz okno wiersza polecenia.  
+1. Otwórz okno wiersza polecenia.  
   
-2.  Wpisz ścieżkę pliku wykonywalnego dla niestandardowego hosta, ale nie naciskaj jeszcze ENTER.  
+2. Wpisz ścieżkę pliku wykonywalnego dla niestandardowego hosta, ale nie naciskaj jeszcze ENTER.  
   
      Na przykład wpisz:  
   
@@ -327,9 +327,9 @@ Możesz napisać własnego hosta, który przetwarza szablonów tekstowych. Podst
     > [!NOTE]
     >  Zamiast wpisywać adres, możesz przejść do pliku CustomHost.exe w **Windows Explorer**, a następnie przeciągnij go do okna wiersza polecenia.  
   
-3.  Wpisz spację.  
+3. Wpisz spację.  
   
-4.  Wpisz ścieżkę do pliku szablonu tekstu, a następnie naciśnij ENTER.  
+4. Wpisz ścieżkę do pliku szablonu tekstu, a następnie naciśnij ENTER.  
   
      Na przykład wpisz:  
   
@@ -340,11 +340,11 @@ Możesz napisać własnego hosta, który przetwarza szablonów tekstowych. Podst
   
      Aplikacja niestandardowego hosta uruchamia i rozpoczyna proces przekształcania szablonu tekstu.  
   
-5.  W **Eksplorator Windows**, przejdź do folderu, który zawiera plik TestTemplateWithDP.txt.  
+5. W **Eksplorator Windows**, przejdź do folderu, który zawiera plik TestTemplateWithDP.txt.  
   
      Folder zawiera także plik TestTemplateWithDP1.txt.  
   
-6.  Otwórz ten plik, aby zobaczyć wyniki przekształcenia szablonu tekstu.  
+6. Otwórz ten plik, aby zobaczyć wyniki przekształcenia szablonu tekstu.  
   
      Wyniki wygenerowany tekst wyjściowy pojawi się i powinna wyglądać następująco:  
   
@@ -359,4 +359,4 @@ Możesz napisać własnego hosta, który przetwarza szablonów tekstowych. Podst
     ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: Tworzenie niestandardowego hosta szablonu tekstowego](../modeling/walkthrough-creating-a-custom-text-template-host.md)
+ [Przewodnik: Tworzenie niestandardowego hosta szablonu tekstu](../modeling/walkthrough-creating-a-custom-text-template-host.md)

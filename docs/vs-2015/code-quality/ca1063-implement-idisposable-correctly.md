@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 52e77762900a321cf547709d98d9856088580789
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 822ad7bea622400bfabd5a96a42d81ed4eabf0c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785470"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081401"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Poprawnie zaimplementuj interfejs IDisposable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,23 +59,23 @@ ms.locfileid: "54785470"
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Sprawdź swój kod, aby określić, które z następujących rozwiązań rozwiąże to naruszenie.
 
--   Usuń interfejs IDisposable z listy interfejsów implementowanych przez {0} i Przesłoń implementację metody Dispose w klasie bazowej, zamiast tego.
+- Usuń interfejs IDisposable z listy interfejsów implementowanych przez {0} i Przesłoń implementację metody Dispose w klasie bazowej, zamiast tego.
 
--   Usuń finalizator z typu {0}, Przesłoń metodę Dispose (bool disposing) i umieść logikę finalizowania w ścieżce kodu, w którym "disposing" ma wartość false.
+- Usuń finalizator z typu {0}, Przesłoń metodę Dispose (bool disposing) i umieść logikę finalizowania w ścieżce kodu, w którym "disposing" ma wartość false.
 
--   Usuń {0}, Przesłoń metodę Dispose (bool disposing) i umieść logikę rozporządzania w ścieżce kodu, w którym "disposing" ma wartość true.
+- Usuń {0}, Przesłoń metodę Dispose (bool disposing) i umieść logikę rozporządzania w ścieżce kodu, w którym "disposing" ma wartość true.
 
--   Upewnij się, że {0} jest zadeklarowany jako publiczny i zapieczętowany.
+- Upewnij się, że {0} jest zadeklarowany jako publiczny i zapieczętowany.
 
--   Zmień nazwę {0} do "Usuwania" i upewnij się, że jest on zadeklarowany jako publiczny i zapieczętowany.
+- Zmień nazwę {0} do "Usuwania" i upewnij się, że jest on zadeklarowany jako publiczny i zapieczętowany.
 
--   Upewnij się, że {0} jest zadeklarowany jako chroniony, wirtualny i niezapieczętowany.
+- Upewnij się, że {0} jest zadeklarowany jako chroniony, wirtualny i niezapieczętowany.
 
--   Modyfikowanie {0} tak, aby Dispose(true), następnie wywołuje GC. SuppressFinalize w bieżącym wystąpieniu obiektu ("this" lub "Me" w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]), a następnie zwraca.
+- Modyfikowanie {0} tak, aby Dispose(true), następnie wywołuje GC. SuppressFinalize w bieżącym wystąpieniu obiektu ("this" lub "Me" w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]), a następnie zwraca.
 
--   Modyfikowanie {0} tak, aby wywołuje metody Dispose(false), a następnie zwraca.
+- Modyfikowanie {0} tak, aby wywołuje metody Dispose(false), a następnie zwraca.
 
--   Jeśli piszesz klasę niezapieczętowany główny interfejs IDisposable, upewnij się, że implementacja interfejsu IDisposable jest zgodna z wzorcem, opisanego wcześniej w tej sekcji.
+- Jeśli piszesz klasę niezapieczętowany główny interfejs IDisposable, upewnij się, że implementacja interfejsu IDisposable jest zgodna z wzorcem, opisanego wcześniej w tej sekcji.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.

@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3f0359613586531a4cc7b80e25acc02be9ae37f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b29ddb0e88a58fbfd924c40134305cf33a3e170b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769186"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103800"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Instrukcje: Serializacja informacji o symbolach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ Może wykonywać serializację symboli, które są niezbędne do analizowania ap
   
 ### <a name="to-automatically-serialize-symbol-information"></a>Aby automatycznie serializuj informacje dotyczące symboli  
   
-1.  Na **narzędzia** menu, kliknij przycisk **opcje**.  
+1. Na **narzędzia** menu, kliknij przycisk **opcje**.  
   
      **Opcje** zostanie wyświetlone okno dialogowe.  
   
-2.  Kliknij przycisk **narzędzia do oceny wydajności**.  
+2. Kliknij przycisk **narzędzia do oceny wydajności**.  
   
-3.  W obszarze **ustawienia ogólne**, wybierz opcję **automatycznie serializuj informacje dotyczące symboli**.  
+3. W obszarze **ustawienia ogólne**, wybierz opcję **automatycznie serializuj informacje dotyczące symboli**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)   

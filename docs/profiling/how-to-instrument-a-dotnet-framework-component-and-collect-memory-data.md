@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5da700609ce16a66d34e16ce2569270eb2b4b5f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 81c63db861e6219c9c8eb7e2d5c2af238b60865d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651100"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083286"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>Instrukcje: Instrumentowanie składnika autonomicznego .NET Framework i zbieranie danych pamięci za pomocą wiersza polecenia profilera
 W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia narzędzi Profilujących do Instrumentacji składnik .NET Framework dla aplikacji autonomicznej, na przykład .exe lub .dll, plików i zbierania informacji o pamięci przy użyciu profilera.
@@ -39,7 +39,7 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
 
     **VSPerfClrEnv** {**/tracegc** &#124; **/tracegclife**}
 
-   -   **/Tracegc** i **/tracegclife** opcje zainicjować zmienne środowiskowe, aby zebrać tylko dane alokacji pamięci lub zbierać alokacji pamięci oraz danych o okresie istnienia obiektu.
+   - **/Tracegc** i **/tracegclife** opcje zainicjować zmienne środowiskowe, aby zebrać tylko dane alokacji pamięci lub zbierać alokacji pamięci oraz danych o okresie istnienia obiektu.
 
        |Opcja|Opis|
        |------------|-----------------|
@@ -73,7 +73,7 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
 
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych
 
--   Następujące pary **VSPerfCmd** opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
+- Następujące pary **VSPerfCmd** opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
 
     |Opcja|Opis|
     |------------|-----------------|
@@ -86,13 +86,13 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
 
 #### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania
 
-1.  Zamknij aplikację docelową.
+1. Zamknij aplikację docelową.
 
-2.  Zamknij program profilujący. Wpisz:
+2. Zamknij program profilujący. Wpisz:
 
      **Narzędzia VSPerfCmd/shutdown**
 
-3.  (Opcjonalnie) Wyczyść zmienne środowiskowe profilowania. Wpisz:
+3. (Opcjonalnie) Wyczyść zmienne środowiskowe profilowania. Wpisz:
 
      **Narzędzia VSPerfCmd / off**
 

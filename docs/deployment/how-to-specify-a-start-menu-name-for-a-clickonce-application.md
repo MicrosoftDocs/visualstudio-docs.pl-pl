@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ab55674cd1de54881eb46b47997a943678cbacd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4ef1675480182796e1fe8bbe29baa5ed6a9d5f63
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635621"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085119"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Instrukcje: Określanie nazwy menu Start dla aplikacji ClickOnce
 Gdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalacji aplikacji do użytku w trybie online i offline, wpis jest dodawany do **Start** menu i **apletu Dodaj lub usuń programy** listy. Domyślnie nazwa wyświetlana jest taka sama jak nazwa zestawu aplikacji, ale można zmienić nazwę wyświetlaną, ustawiając **nazwa produktu** w **opcji publikowania** okno dialogowe.
@@ -36,17 +36,17 @@ Gdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalacji
 
 ### <a name="to-specify-a-start-menu-name"></a>Aby określić nazwy menu Start
 
-1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
+1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
 
-2.  Kliknij przycisk **Publikuj** kartę.
+2. Kliknij przycisk **Publikuj** kartę.
 
-3.  Kliknij przycisk **opcje** przycisk, aby otworzyć **opcji publikowania** okno dialogowe.
+3. Kliknij przycisk **opcje** przycisk, aby otworzyć **opcji publikowania** okno dialogowe.
 
-4.  Kliknij przycisk **opis**.
+4. Kliknij przycisk **opis**.
 
-5.  W **opcji publikowania** okna dialogowego wprowadź nazwę, aby wyświetlić **nazwa produktu**.
+5. W **opcji publikowania** okna dialogowego wprowadź nazwę, aby wyświetlić **nazwa produktu**.
 
-6.  Opcjonalnie można wprowadzić nazwę wydawcy w **nazwę wydawcy**.
+6. Opcjonalnie można wprowadzić nazwę wydawcy w **nazwę wydawcy**.
 
 ## <a name="see-also"></a>Zobacz także
 - [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)

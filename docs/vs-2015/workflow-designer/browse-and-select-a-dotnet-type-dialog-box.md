@@ -12,23 +12,23 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 490a28e4f3fcd0b2bc2657a83a706090eafb16a8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b4c02c7dbce09383b5fc3cb1fd7f5eec6e9116b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796754"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079840"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Wyszukiwanie i wybieranie typu .NET, okno dialogowe
 W **właściwości** okien, okien dialogowych lub projektantów, takich jak projektanta zmiennych, po wybraniu **vyhledat typy...** z listy typów danych, jest **Wyszukaj i wybierz typ architektury .NET** okno dialogowe (określone w formie skróconej jako "Przeglądarka typu"). W tym oknie można wybrać typ z widoku drzewa, zespołów i projektów.  
   
  To okno dialogowe są stosowane w wielu scenariuszy użytkownika, w tym następujące czynności:  
   
--   Podczas ustawiania typ zmiennej lub argumentu.  
+- Podczas ustawiania typ zmiennej lub argumentu.  
   
--   Podczas wybierania typu ogólnego działania.  
+- Podczas wybierania typu ogólnego działania.  
   
--   Podczas dodawania instrukcji catch w <xref:System.Activities.Statements.TryCatch> działania.  
+- Podczas dodawania instrukcji catch w <xref:System.Activities.Statements.TryCatch> działania.  
   
 > [!NOTE]
 >  Przeglądarki typu można wyświetlić typy tablicowe nierówne w języku Visual Basic, ale typy nie wielowymiarowej tablicy. Zobacz [nierówne tablic](http://go.microsoft.com/fwlink/?LinkId=195226) i [tablic wielowymiarowych](http://go.microsoft.com/fwlink/?LinkId=195227) Aby uzyskać szczegółowe informacje.  
@@ -37,19 +37,19 @@ W **właściwości** okien, okien dialogowych lub projektantów, takich jak proj
   
 #### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Aby wybrać typ wartości lub odwołania za pomocą przeglądarki typu  
   
-1.  W **nazwy typu** wprowadź nazwę typu, którego chcesz używać.  
+1. W **nazwy typu** wprowadź nazwę typu, którego chcesz używać.  
   
-2.  Wykonaj jedną z następujących czynności:  
+2. Wykonaj jedną z następujących czynności:  
   
-    -   Gdy nazwa typu, którego chcesz używać pojawi się w drzewie w **nazwy typu** pole, kliknij dwukrotnie typu, aby go zaznaczyć.  
+    - Gdy nazwa typu, którego chcesz używać pojawi się w drzewie w **nazwy typu** pole, kliknij dwukrotnie typu, aby go zaznaczyć.  
   
-    -   Wpisz małej liczby znaków w **nazwy typu** pole, aby jednoznacznie identyfikują typ, który chcesz użyć, a następnie naciśnij klawisz enter, aby wybrać typ  
+    - Wpisz małej liczby znaków w **nazwy typu** pole, aby jednoznacznie identyfikują typ, który chcesz użyć, a następnie naciśnij klawisz enter, aby wybrać typ  
   
 #### <a name="to-select-a-generic-type-from-the-type-browser"></a>Aby wybrać typ ogólny z przeglądarki typu  
   
-1.  W **nazwy typu** , wpisz nazwę typu, którego chcesz używać.  
+1. W **nazwy typu** , wpisz nazwę typu, którego chcesz używać.  
   
-2.  Gdy nazwa typu, którego chcesz używać pojawi się w drzewie w **nazwy typu** pole, kliknij typ, wybierz ją, aby spowodować, że pola listy rozwijanej są wyświetlane.  
+2. Gdy nazwa typu, którego chcesz używać pojawi się w drzewie w **nazwy typu** pole, kliknij typ, wybierz ją, aby spowodować, że pola listy rozwijanej są wyświetlane.  
   
      Wybierz typ, który chcesz użyć do Zamknij ogólnego z list rozwijanych, a następnie kliknij przycisk **OK**.  
   
@@ -63,9 +63,9 @@ W **właściwości** okien, okien dialogowych lub projektantów, takich jak proj
   
  Na przykład:  
   
-1.  Wpisywanie **operacji** odpowiada <xref:System.OperationCanceledException> , ale nie <xref:System.InvalidOperationException>. Aby dopasować <xref:System.InvalidOperationException>, zacznij pisać System.I lub jest nieprawidłowy.  
+1. Wpisywanie **operacji** odpowiada <xref:System.OperationCanceledException> , ale nie <xref:System.InvalidOperationException>. Aby dopasować <xref:System.InvalidOperationException>, zacznij pisać System.I lub jest nieprawidłowy.  
   
-2.  Wpisywanie **ogólny** odpowiada <xref:System.GenericUriParser> , ale nie typy w <xref:System.Collections.Generic> przestrzeni nazw. Aby wyszukać typów w <xref:System.Collections.Generic> przestrzeni nazw, typu, w pełni kwalifikowaną nazwę przestrzeni nazw.  
+2. Wpisywanie **ogólny** odpowiada <xref:System.GenericUriParser> , ale nie typy w <xref:System.Collections.Generic> przestrzeni nazw. Aby wyszukać typów w <xref:System.Collections.Generic> przestrzeni nazw, typu, w pełni kwalifikowaną nazwę przestrzeni nazw.  
   
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Wybieranie kontraktu usługi, korzystając z okna dialogowego przeglądarki typu  
  Wybierając typ kontraktu usługi, przeglądarki typu zawiera tylko typy, które mają <xref:System.ServiceModel.ServiceContractAttribute> atrybutu.  

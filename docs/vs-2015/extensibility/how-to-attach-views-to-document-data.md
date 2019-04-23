@@ -10,12 +10,12 @@ ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 671a243f65c68660c98c3730ca90568882a824d6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 50b9ef50e077a4e335b0c4f0718a3c51624e09c8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755609"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080647"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>Instrukcje: Dołączanie widoków do danych dokumentów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,19 +24,19 @@ Jeśli masz nowy widok dokumentu, można dołączyć do istniejącego obiektu da
   
 ### <a name="to-determine-if-you-can-attach-a-view-to-an-existing-document-data-object"></a>Aby określić, jeśli widok można dołączyć do istniejącego obiektu danych dokumentu  
   
-1.  Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>.  
+1. Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>.  
   
-2.  W danej implementacji `IVsEditorFactory::CreateEditorInstance`, wywołaj `QueryInterface` na istniejący obiekt danych dokumentu, gdy wywołuje IDE swoje `CreateEditorInstance` implementacji.  
+2. W danej implementacji `IVsEditorFactory::CreateEditorInstance`, wywołaj `QueryInterface` na istniejący obiekt danych dokumentu, gdy wywołuje IDE swoje `CreateEditorInstance` implementacji.  
   
      Wywoływanie `QueryInterface` umożliwia zbadanie istniejący obiekt danych dokumentu, którą określono w `punkDocDataExisting` parametru.  
   
      Dokładne interfejsy, które musisz wykonać kwerendę zależy edytor, który jest otwarcie dokumentu, jednak zgodnie z opisem w kroku 4.  
   
-3.  Jeśli nie znajdziesz odpowiednich interfejsów na istniejący obiekt danych dokumentów, zwracają kod błędu do edytora wskazujący, że obiekt danych dokumentu jest niezgodna z edytora.  
+3. Jeśli nie znajdziesz odpowiednich interfejsów na istniejący obiekt danych dokumentów, zwracają kod błędu do edytora wskazujący, że obiekt danych dokumentu jest niezgodna z edytora.  
   
      W implementacji środowiska IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>, okno komunikatu informuje, że dokument jest otwarty w innym edytorze i pyta, czy go zamknąć.  
   
-4.  Jeśli ten dokument zostanie zamknięty, program Visual Studio wywołuje fabryką edytora raz drugi. W tym wywołaniu `DocDataExisting` parametr jest równy NULL. Wdrożenie fabryki edytora można otworzyć obiektu danych dokumentu w edytorze własne.  
+4. Jeśli ten dokument zostanie zamknięty, program Visual Studio wywołuje fabryką edytora raz drugi. W tym wywołaniu `DocDataExisting` parametr jest równy NULL. Wdrożenie fabryki edytora można otworzyć obiektu danych dokumentu w edytorze własne.  
   
     > [!NOTE]
     >  Aby ustalić, czy można pracować z istniejącego obiektu danych dokumentów, umożliwia również prywatne znajomości implementacji interfejsu przez rzutowanie wskaźnika do rzeczywistej [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] klasy implementacja prywatna. Na przykład zaimplementować wszystkich standardowych edytorów `IVsPersistFileFormat`, który dziedziczy z <xref:Microsoft.VisualStudio.OLE.Interop.IPersist>. W związku z tym, można wywołać `QueryInterface` dla <xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>, i czy identyfikator klasy na istniejący obiekt dokumentu w danych odpowiada Twoja implementacja identyfikator klasy, a następnie można pracować z obiektem danych dokumentu.  

@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d5858df00057298f961189173a3943f3e23d2b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 29ee765bfc11362a870d359ff0a9cdc3f633e464
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781483"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080803"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Instrukcje: Eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,30 +23,30 @@ Potok zawartości obrazu może generować tekstury, które są zgodne z konwencj
   
  Ten dokument przedstawia te działania:  
   
--   Konfigurowanie obrazu źródłowego, który ma być przetwarzana przez potok zawartości obrazu.  
+- Konfigurowanie obrazu źródłowego, który ma być przetwarzana przez potok zawartości obrazu.  
   
--   Konfigurowanie potoku zawartości obrazu do generowania tekstury, którego można używać w aplikacji Direct2D lub JavaScript.  
+- Konfigurowanie potoku zawartości obrazu do generowania tekstury, którego można używać w aplikacji Direct2D lub JavaScript.  
   
-    -   Generowanie pliku .DDS ze skompresowanym bloku.  
+    - Generowanie pliku .DDS ze skompresowanym bloku.  
   
-    -   Generowanie wstępnie przemnożonego kanału alfa.  
+    - Generowanie wstępnie przemnożonego kanału alfa.  
   
-    -   Wyłącz Generowanie mipmappingu.  
+    - Wyłącz Generowanie mipmappingu.  
   
 ## <a name="rendering-conventions-in-direct2d"></a>Konwencje renderowania w Direct2D  
  Tekstury, które są używane w kontekście Direct2D muszą spełniać te wewnętrzne konwencje renderowania Direct2D:  
   
--   Direct2D implementuje przezroczystość przy użyciu wstępnie przemnożonego kanału alfa. Tekstury używane z Direct2D musi zawierać wstępnie przemnożony kanał alfa, nawet jeśli Tekstura nie używa przezroczystości ani przejrzystości. Aby uzyskać więcej informacji dotyczących wstępnie przemnożonego kanału alfa, zobacz [jak: Eksportowanie tekstury wykorzystującej wstępnie przemnożony kanał alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).  
+- Direct2D implementuje przezroczystość przy użyciu wstępnie przemnożonego kanału alfa. Tekstury używane z Direct2D musi zawierać wstępnie przemnożony kanał alfa, nawet jeśli Tekstura nie używa przezroczystości ani przejrzystości. Aby uzyskać więcej informacji dotyczących wstępnie przemnożonego kanału alfa, zobacz [jak: Eksportowanie tekstury wykorzystującej wstępnie przemnożony kanał alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).  
   
--   Tekstury muszą być dostarczane w formacie .dds, przy użyciu jednej z tych formatów kompresji blokowej:  
+- Tekstury muszą być dostarczane w formacie .dds, przy użyciu jednej z tych formatów kompresji blokowej:  
   
-    -   Kompresja bc1_unorm  
+    - Kompresja bc1_unorm  
   
-    -   Kompresja bc2_unorm  
+    - Kompresja bc2_unorm  
   
-    -   Kompresja bc3_unorm  
+    - Kompresja bc3_unorm  
   
--   Mipmapy nie są obsługiwane.  
+- Mipmapy nie są obsługiwane.  
   
 #### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>Aby utworzyć teksturę, która jest zgodna z konwencjami renderowania Direct2D  
   

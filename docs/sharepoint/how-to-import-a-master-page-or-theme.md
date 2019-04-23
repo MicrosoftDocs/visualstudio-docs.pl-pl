@@ -13,39 +13,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a415a1021514a4d8b962e4a65a22b691edc66d9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1be553955abdc42c2a9b4d09ff857e9236b1a002
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635153"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081909"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Instrukcje: Importowanie tematu lub strony wzorcowej
   Można nadać strony w witrynie programu SharePoint spójny wygląd, tworząc i za pomocą stron wzorcowych i motywów. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nie zapewnia szablony dla tych elementów, ale można je utworzyć w programie SharePoint Designer, a następnie zaimportować je do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [bloków konstrukcyjnych: Strony i interfejs użytkownika](http://go.microsoft.com/fwlink/?LinkID=182095) w witrynie internetowej firmy Microsoft.
 
 ### <a name="to-import-a-master-page-or-theme"></a>Aby importowanie tematu lub strony wzorcowej
 
-1.  W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Utwórz lub Otwórz projekt programu SharePoint.
+1. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Utwórz lub Otwórz projekt programu SharePoint.
 
      Aby uzyskać informacje o sposobie tworzenia projektu programu SharePoint, zobacz [SharePoint szablony elementu projektu i projektu](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2.  Na pasku menu wybierz **projektu** > **Dodaj nowy element**.
+2. Na pasku menu wybierz **projektu** > **Dodaj nowy element**.
 
-3.  W **Dodaj nowy element** okna dialogowego rozwiń **SharePoint** węzła, a następnie wybierz **2010** węzła.
+3. W **Dodaj nowy element** okna dialogowego rozwiń **SharePoint** węzła, a następnie wybierz **2010** węzła.
 
-4.  Na liście szablonów programu SharePoint, wybierz opcję **modułu** szablonu, a następnie określ nazwę dla modułu.
+4. Na liście szablonów programu SharePoint, wybierz opcję **modułu** szablonu, a następnie określ nazwę dla modułu.
 
      Moduł zawiera pliki (na przykład strony wzorcowej lub plików) do wdrożenia w określonej lokalizacji w programie SharePoint.
 
-5.  W module, należy usunąć domyślny plik o nazwie *przykład.txt*.
+5. W module, należy usunąć domyślny plik o nazwie *przykład.txt*.
 
-6.  Wybierz węzeł modułu.
+6. Wybierz węzeł modułu.
 
-7.  Na pasku menu wybierz **projektu** > **Dodaj istniejący element**, a następnie wybierz plik główny tematu lub strony.
+7. Na pasku menu wybierz **projektu** > **Dodaj istniejący element**, a następnie wybierz plik główny tematu lub strony.
 
      Pliki strony wzorcowej z rozszerzeniem .master i plików z rozszerzeniem .thmx.
 
-8.  Jeśli dodano stronę wzorcową, zmienić jego **Rozwiązywanie konfliktów wdrażania** ustawienie **automatyczne** we właściwościach modułu.
+8. Jeśli dodano stronę wzorcową, zmienić jego **Rozwiązywanie konfliktów wdrażania** ustawienie **automatyczne** we właściwościach modułu.
 
     > [!NOTE]
     >  Mogą wystąpić błędy, jeśli nazwa strony wzorcowej jest taka sama jak nazwa istniejącej strony głównej, która jest oznaczona jako domyślna strona wzorcowa lub niestandardowej strony wzorcowej. Aby uzyskać informacje o sposobie rozwiązania tego problemu, zobacz [instruktażu: Importowanie niestandardowej strony wzorcowej oraz strony witryny z obrazem](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).

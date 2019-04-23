@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 850670e9d7994b754839c4fb0b1a8ccd07be5b24
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d2dfe0da64abb9540724c05d13b84715a684af0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646424"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082038"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Instrukcje: Oznaczanie kontrolek pojęciem bezpiecznych kontrolek
   Dla bezpieczeństwa SharePoint oddzieli kontrolki sieci Web, które są chronione przed uruchomienie skryptu kontrolki sieci Web, które nie są. Chronione formantów, lub *bezpiecznych kontrolek*, może zostać oceniony przez niezaufanym użytkownikom. Możesz oznaczyć kontrolek jako bezpiecznych właściwości wpisy bezpiecznych kontrolek elementu projektu programu SharePoint lub w **projektancie pakietu** po dodaniu zestawu do pakietu. Aby uzyskać więcej informacji, zobacz artykuł
@@ -33,47 +33,47 @@ ms.locfileid: "56646424"
 
 #### <a name="to-mark-controls-as-safe-or-unsafe-in-the-safe-control-entries-property"></a>Aby oznaczyć kontrolek jako bezpiecznych lub niebezpieczne we właściwości wpisy kontroli bezpiecznego
 
-1.  Tworzenie rozwiązań programu SharePoint w projekcie wizualny składnik Web Part.
+1. Tworzenie rozwiązań programu SharePoint w projekcie wizualny składnik Web Part.
 
-2.  Dodaj dwa formanty do składnika Web part: pole tekstowe i przycisk. Pozostaw nazwy wartości domyślnych, TextBox1 i Button1, odpowiednio.
+2. Dodaj dwa formanty do składnika Web part: pole tekstowe i przycisk. Pozostaw nazwy wartości domyślnych, TextBox1 i Button1, odpowiednio.
 
-3.  Dodania dwóch wpisów do składnika Web part **wpisy bezpiecznych kontrolek** właściwości. Aby to zrobić, wybierz przycisk wielokropka (![elipsy projektanta Mobile ASP.NET](../sharepoint/media/mwellipsis.gif "elipsy projektanta Mobile ASP.NET")) znajdujący się obok **wpisy bezpiecznych kontrolek** właściwość  **Właściwości** okna.
+3. Dodania dwóch wpisów do składnika Web part **wpisy bezpiecznych kontrolek** właściwości. Aby to zrobić, wybierz przycisk wielokropka (![elipsy projektanta Mobile ASP.NET](../sharepoint/media/mwellipsis.gif "elipsy projektanta Mobile ASP.NET")) znajdujący się obok **wpisy bezpiecznych kontrolek** właściwość  **Właściwości** okna.
 
      **Wpisy bezpiecznych kontrolek** pojawi się okno dialogowe.
 
-4.  W **wpisy bezpiecznych kontrolek** okna dialogowego wybierz **Dodaj** przycisk dwa razy, aby dodać dwa wpisy bezpiecznych kontrolek do **członków** okienka: jeden dla przycisku i jeden dla pola tekstowego.
+4. W **wpisy bezpiecznych kontrolek** okna dialogowego wybierz **Dodaj** przycisk dwa razy, aby dodać dwa wpisy bezpiecznych kontrolek do **członków** okienka: jeden dla przycisku i jeden dla pola tekstowego.
 
-5.  Wybierz pierwszy wpis bezpiecznej kontrolki, a następnie zmień wartość jego **bezpieczne** właściwości **False**, jego **nazwy typu** właściwość **Button1**, a jego **bezpieczne względem skryptu** właściwości **False**.
+5. Wybierz pierwszy wpis bezpiecznej kontrolki, a następnie zmień wartość jego **bezpieczne** właściwości **False**, jego **nazwy typu** właściwość **Button1**, a jego **bezpieczne względem skryptu** właściwości **False**.
 
      W tym kroku identyfikuje formant przycisku jako kontrolkę, która jest niebezpieczne.
 
-6.  Wybierz drugi wpis bezpiecznej kontrolki listy. Pozostaw wartość jego **bezpieczne** właściwość jako **True** i ustaw jego **nazwy typu** właściwości **TextBox1** i jego **bezpieczne Względem skryptu** właściwości **True**.
+6. Wybierz drugi wpis bezpiecznej kontrolki listy. Pozostaw wartość jego **bezpieczne** właściwość jako **True** i ustaw jego **nazwy typu** właściwości **TextBox1** i jego **bezpieczne Względem skryptu** właściwości **True**.
 
      Formant pola tekstowego jest teraz oznaczone jako formant, który jest zabezpieczony przed uruchomienie skryptu.
 
-7.  Wybierz **OK** przycisk, aby zamknąć okno dialogowe.
+7. Wybierz **OK** przycisk, aby zamknąć okno dialogowe.
 
 ## <a name="marking-safe-controls-in-the-package-designer"></a>Oznaczanie bezpiecznych kontrolek w Projektancie pakietu
 
 #### <a name="to-mark-controls-as-safe-or-unsafe-in-the-package-designer"></a>Aby oznaczyć kontroluje jako bezpieczny lub niebezpiecznych w Projektancie pakietu
 
-1.  Tworzenie rozwiązań programu SharePoint w projekcie wizualny składnik Web Part.
+1. Tworzenie rozwiązań programu SharePoint w projekcie wizualny składnik Web Part.
 
-2.  Dodaj dwa formanty do składnika Web part: pole tekstowe i przycisk. Pozostaw nazwy wartości domyślnych, TextBox1 i Button1, odpowiednio.
+2. Dodaj dwa formanty do składnika Web part: pole tekstowe i przycisk. Pozostaw nazwy wartości domyślnych, TextBox1 i Button1, odpowiednio.
 
      Zwróć uwagę na przestrzeń nazw formantu, ponieważ jest on używany później.
 
-3.  Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie** do skompilowania projektu.
+3. Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie** do skompilowania projektu.
 
-4.  Utwórz innego rozwiązania programu SharePoint.
+4. Utwórz innego rozwiązania programu SharePoint.
 
-5.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla *Package.Package* , a następnie wybierz **Otwórz** otworzyć **projektancie pakietu**.
+5. W **Eksploratora rozwiązań**, otwórz menu skrótów dla *Package.Package* , a następnie wybierz **Otwórz** otworzyć **projektancie pakietu**.
 
-6.  W **projektancie pakietu**, wybierz **zaawansowane** kartę.
+6. W **projektancie pakietu**, wybierz **zaawansowane** kartę.
 
-7.  W obszarze **dodatkowe zestawy**, wybierz **Dodaj** przycisk, a następnie wybierz **Dodaj istniejący zestaw** z listy.
+7. W obszarze **dodatkowe zestawy**, wybierz **Dodaj** przycisk, a następnie wybierz **Dodaj istniejący zestaw** z listy.
 
-8.  W **Dodaj istniejący zestaw** okno dialogowe, wybierz przycisk wielokropka (![elipsy projektanta Mobile ASP.NET](../sharepoint/media/mwellipsis.gif "elipsy projektanta Mobile ASP.NET")) znajdujący się obok  **Ścieżka źródłowa**.
+8. W **Dodaj istniejący zestaw** okno dialogowe, wybierz przycisk wielokropka (![elipsy projektanta Mobile ASP.NET](../sharepoint/media/mwellipsis.gif "elipsy projektanta Mobile ASP.NET")) znajdujący się obok  **Ścieżka źródłowa**.
 
 9. Wybierz zestaw z rozwiązania programu SharePoint, który został utworzony w kroku 1, a następnie wybierz **Otwórz** przycisku.
 

@@ -20,19 +20,19 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d77d06e720ebe9146f907d8868c46c94addd5d99
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a527a103b72d0026a7732a53b45d03793769058
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776610"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078710"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Instrukcje: Debugowanie metody OnStart
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Usługa Windows można debugować, uruchamiając usługi i dołączanie debugera do procesu usługi. Aby uzyskać więcej informacji, zobacz [jak: Debugowanie aplikacji usług Windows](http://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2). Jednak aby debugować <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> metody usługi Windows, można uruchomić debugera z wewnątrz metody.  
   
-1.  Dodaj wywołanie do <xref:System.Diagnostics.Debugger.Launch%2A> na początku `OnStart()`metody.  
+1. Dodaj wywołanie do <xref:System.Diagnostics.Debugger.Launch%2A> na początku `OnStart()`metody.  
   
     ```csharp  
     protected override void OnStart(string[] args)  
@@ -41,19 +41,19 @@ Usługa Windows można debugować, uruchamiając usługi i dołączanie debugera
      }  
     ```  
   
-2.  Uruchom usługę (możesz użyć `net start`, lub uruchomić go w **usług** okno).  
+2. Uruchom usługę (możesz użyć `net start`, lub uruchomić go w **usług** okno).  
   
      Powinny pojawić się okno dialogowe podobne do następującego:  
   
      ![OnStartDebug](../debugger/media/onstartdebug.png "OnStartDebug")  
   
-3.  Wybierz **tak, debugowanie \<nazwa usługi >.**  
+3. Wybierz **tak, debugowanie \<nazwa usługi >.**  
   
-4.  W oknie debugera just in Time wybierz wersję programu Visual Studio, którego chcesz użyć do debugowania.  
+4. W oknie debugera just in Time wybierz wersję programu Visual Studio, którego chcesz użyć do debugowania.  
   
      ![JustInTimeDebugger](../debugger/media/justintimedebugger.png "JustInTimeDebugger")  
   
-5.  Nowe wystąpienie programu Visual Studio uruchomi się i wykonywania jest zatrzymywany w `Debugger.Launch()` metody.  
+5. Nowe wystąpienie programu Visual Studio uruchomi się i wykonywania jest zatrzymywany w `Debugger.Launch()` metody.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   

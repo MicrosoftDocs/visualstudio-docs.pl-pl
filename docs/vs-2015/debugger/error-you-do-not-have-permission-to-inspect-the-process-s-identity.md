@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f173be87987cbc8bcfb3390dfdaaf5eab7501bb6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d66eacb1b7f5205ea430d7154f67d05bdd047a74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776216"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080751"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Błąd: Nie masz uprawnień do sprawdzania procesu&#39;tożsamości s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,23 +30,23 @@ Nie masz uprawnień do sprawdzania tożsamości procesu. Może to być spowodowa
   
 ### <a name="to-enable-terminal-services"></a>Aby włączyć usługi terminalowe  
   
-1.  Kliknij przycisk **Start** , a następnie wybierz **Panelu sterowania**.  
+1. Kliknij przycisk **Start** , a następnie wybierz **Panelu sterowania**.  
   
-2.  W Panelu sterowania wybierz **Przełącz na widok klasyczny**, jeśli to konieczne, a następnie kliknij dwukrotnie **narzędzia administracyjne**.  
+2. W Panelu sterowania wybierz **Przełącz na widok klasyczny**, jeśli to konieczne, a następnie kliknij dwukrotnie **narzędzia administracyjne**.  
   
-3.  W **narzędzia administracyjne** okna, kliknij dwukrotnie **Zarządzanie komputerem**.  
+3. W **narzędzia administracyjne** okna, kliknij dwukrotnie **Zarządzanie komputerem**.  
   
-4.  W oknie Zarządzanie komputerem rozwiń **usługi i aplikacje** węzła.  
+4. W oknie Zarządzanie komputerem rozwiń **usługi i aplikacje** węzła.  
   
-5.  W obszarze **usługi i aplikacje**, kliknij przycisk **usług**.  
+5. W obszarze **usługi i aplikacje**, kliknij przycisk **usług**.  
   
      W okienku po prawej stronie zostanie wyświetlona lista usług.  
   
-6.  W **usług** listy, kliknij prawym przyciskiem myszy **usług terminalowych** , a następnie wybierz **właściwości**.  
+6. W **usług** listy, kliknij prawym przyciskiem myszy **usług terminalowych** , a następnie wybierz **właściwości**.  
   
-7.  W **właściwości usług terminalowych** okna, przejdź do **ogólne** kartę i ustawić **uruchamiana** do **ręczne**.  
+7. W **właściwości usług terminalowych** okna, przejdź do **ogólne** kartę i ustawić **uruchamiana** do **ręczne**.  
   
-8.  Kliknij przycisk **OK**.  
+8. Kliknij przycisk **OK**.  
   
 9. Uruchom ponownie komputer.  
   
@@ -54,17 +54,17 @@ Nie masz uprawnień do sprawdzania tożsamości procesu. Może to być spowodowa
   
 ### <a name="to-enable-remote-desktop"></a>Aby włączyć Pulpit zdalny  
   
-1.  Kliknij przycisk **Start** i kliknij prawym przyciskiem myszy **Mój komputer**.  
+1. Kliknij przycisk **Start** i kliknij prawym przyciskiem myszy **Mój komputer**.  
   
-2.  Wybierz **właściwości**.  
+2. Wybierz **właściwości**.  
   
      **Właściwości systemu** zostanie wyświetlone okno.  
   
-3.  Kliknij przycisk **zdalnego**.  
+3. Kliknij przycisk **zdalnego**.  
   
-4.  W obszarze **pulpitu zdalnego**, wybierz opcję **umożliwiają użytkownikom zdalne łączenie się na tym komputerze**.  
+4. W obszarze **pulpitu zdalnego**, wybierz opcję **umożliwiają użytkownikom zdalne łączenie się na tym komputerze**.  
   
-5.  Kliknij przycisk **OK**.  
+5. Kliknij przycisk **OK**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)

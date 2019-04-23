@@ -13,12 +13,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14569a915dc1da4d8628283dfa1aae5338502de1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3765b9804224549c98b57cd1b0a44f0330d278b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779832"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080582"
 ---
 # <a name="messages-view"></a>Widok komunikatów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ Widok komunikatów programu Spy ++
   
 #### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Aby otworzyć widok wiadomości dla okna, proces lub wątek  
   
-1.  Przenieś fokus do [widoku Windows](../debugger/windows-view.md), [widok procesy](../debugger/processes-view.md), lub [Widok wątków](../debugger/threads-view.md) okna.  
+1. Przenieś fokus do [widoku Windows](../debugger/windows-view.md), [widok procesy](../debugger/processes-view.md), lub [Widok wątków](../debugger/threads-view.md) okna.  
   
-2.  Znajdź węzeł dla elementu, dla których wiadomości, które chcesz zbadać i zaznacz go.  
+2. Znajdź węzeł dla elementu, dla których wiadomości, które chcesz zbadać i zaznacz go.  
   
-3.  Z **Spy** menu, wybierz **komunikaty w dzienniku**.  
+3. Z **Spy** menu, wybierz **komunikaty w dzienniku**.  
   
      [Okno dialogowe opcji komunikatów](../debugger/message-options-dialog-box.md) zostanie otwarty.  
   
-4.  Wybierz opcje dla komunikatu, który chcesz wyświetlić.  
+4. Wybierz opcje dla komunikatu, który chcesz wyświetlić.  
   
-5.  Naciśnij klawisz **OK** aby rozpocząć rejestrowanie komunikatów.  
+5. Naciśnij klawisz **OK** aby rozpocząć rejestrowanie komunikatów.  
   
      Zostanie otwarte okno Widok wiadomości oraz w **wiadomości** menu jest dodawany do programu Spy ++ — pasek narzędzi. W zależności od opcji wybranych wiadomości było rozpocząć przesyłanie strumieniowe do aktywnego okna widoku komunikatów.  
   
-6.  Jeśli masz wystarczającej liczby wiadomości, wybierz **Zatrzymaj rejestrowanie** z **wiadomości** menu.  
+6. Jeśli masz wystarczającej liczby wiadomości, wybierz **Zatrzymaj rejestrowanie** z **wiadomości** menu.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Kontrolowanie widoku komunikatów](../debugger/how-to-control-messages-view.md)  

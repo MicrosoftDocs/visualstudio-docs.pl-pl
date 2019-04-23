@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 867c42d4afb35abcc1e37c86f85a01a7dd3fdf24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a8ea5d8a8120f8b78ec41ee7dbaf0221a549f15c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659829"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103878"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizowanie jakości kodu C++ w aplikacjach Store przy użyciu programu Visual Studio statycznej analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 > [!NOTE]
 > W programie Visual Studio Ultimate, Visual Studio Premium i Visual Studio Professional można użyć pełnej funkcjonalności narzędzi analizy kodu. Zobacz [analiza jakości aplikacji za pomocą narzędzi analizy kodu](http://msdn.microsoft.com/library/dd264897.aspx) w bibliotece MSDN.
 
-##  <a name="BKMK_Run"></a> Trwa uruchamianie analizy kodu
+## <a name="BKMK_Run"></a> Trwa uruchamianie analizy kodu
  Aby uruchomić analizę kodu w rozwiązaniu programu Visual Studio:
 
 - Na **kompilacji** menu, wybierz **Uruchom analizę kodu dla rozwiązania**.
@@ -43,7 +43,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 
    ![Okno analizy kodu](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-##  <a name="BKMK_Analyze"></a> Analizowanie i rozwiązywanie ostrzeżenia analizy kodu
+## <a name="BKMK_Analyze"></a> Analizowanie i rozwiązywanie ostrzeżenia analizy kodu
  Aby analizować szczególne ostrzeżenie, wybierz tytuł ostrzeżenia w oknie analizy kodu. Ostrzeżenie rozwija, aby wyświetlić szczegółowe informacje o problemie. Jeśli to możliwe, analizy kodu wyświetla wiersza numer i analizy logikę, która doprowadziła do ostrzeżenia.
 
  ![Rozwinięte ostrzeżenie analizy kodu](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
@@ -57,7 +57,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 > [!TIP]
 >  Możesz ponownie uruchomić analizę kodu w oknie analizy kodu. Wybierz **analizy** przycisk, a następnie wybierz zakres analizy. Możesz ponownie uruchomić analizy na całego rozwiązania lub wybranego projektu.
 
-##  <a name="BKMK_Suppress"></a> Pomijanie ostrzeżeń analizy kodu
+## <a name="BKMK_Suppress"></a> Pomijanie ostrzeżeń analizy kodu
  Istnieją terminy, gdy można zdecydować, Rezygnacja z naprawiania ostrzeżenie analizy kodu. Można zdecydować, rozpoznawanie ostrzeżenia wymaga zbyt dużo nagrywanie względem prawdopodobieństwo wystąpienia problemu w implementacji rzeczywistych swój kod. Lub może być uważa, że analizy, który jest używany w ostrzeżenia jest nieodpowiedni dla określonego kontekstu. Poszczególne ostrzeżenia można pominąć, tak aby nie były widoczne w oknie analizy kodu.
 
  Aby pominąć Ostrzeżenie:
@@ -70,12 +70,12 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 
    Pomijanie wiadomości wstawia `#pragma(warning:` *WarningId* `)` który umożliwia pominięcie ostrzeżenia dla wiersza kodu.
 
-##  <a name="BKMK_Search"></a> Wyszukiwanie i filtrowanie wyników analizy kodu
+## <a name="BKMK_Search"></a> Wyszukiwanie i filtrowanie wyników analizy kodu
  Możesz wyszukiwać długim spisem komunikaty ostrzegawcze i filtrować ostrzeżeń w rozwiązaniach dotyczących wielu projektów.
 
  ![Wyszukiwanie i filtrowanie oknie analizy kodu](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-##  <a name="Warnings"></a> Ostrzeżenia analizy kodu w języku C++
+## <a name="Warnings"></a> Ostrzeżenia analizy kodu w języku C++
  Analiza kodu generuje następujące ostrzeżenia dla kodu C++:
 
 |                                      Reguła                                      |                                                  Opis                                                  |

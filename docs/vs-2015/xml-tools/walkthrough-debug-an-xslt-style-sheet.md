@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1f211e2f13f710b66e33691dbc318349eddf15ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5e685e77dafe00b8cadd9b273ccc61c8e5d9e1e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753455"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085106"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Przewodnik: Debugowanie arkusza stylów XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ Kroki opisane w tym przewodniku pokazują, jak za pomocą debugera XSLT. Kroki o
   
 ### <a name="to-prepare-for-this-walkthrough"></a>Aby przygotować się do tego przewodnika  
   
-1.  Zamknij wszystkie otwarte rozwiązania.  
+1. Zamknij wszystkie otwarte rozwiązania.  
   
-2.  Skopiuj dwa pliki przykładowe do komputera lokalnego.  
+2. Skopiuj dwa pliki przykładowe do komputera lokalnego.  
   
 ## <a name="start-debugging"></a>Rozpocznij debugowanie  
   
@@ -59,19 +59,19 @@ Kroki opisane w tym przewodniku pokazują, jak za pomocą debugera XSLT. Kroki o
   
 #### <a name="to-use-the-watch-window"></a>Aby użyć okna czujki  
   
-1.  Z **debugowania** menu wskaż **Windows**, wskaż polecenie **Obejrzyj**i kliknij przycisk **Czujka 1**.  
+1. Z **debugowania** menu wskaż **Windows**, wskaż polecenie **Obejrzyj**i kliknij przycisk **Czujka 1**.  
   
      To sprawia, że w oknie Czujka 1 widoczne.  
   
-2.  Typ `$bookAverage` w **nazwa** pola, a następnie naciśnij klawisz ENTER.  
+2. Typ `$bookAverage` w **nazwa** pola, a następnie naciśnij klawisz ENTER.  
   
      Wartość `$bookAverage` zmienna jest wyświetlany w oknie.  
   
-3.  Typ `self::node()` w **nazwa** pola, a następnie naciśnij klawisz ENTER.  
+3. Typ `self::node()` w **nazwa** pola, a następnie naciśnij klawisz ENTER.  
   
      `self::node()` to wyrażenie XPath, które daje w wyniku bieżącego węzła kontekstu. Wartość `self::node()` wyrażenie XPath jest pierwszym węźle książki. To zmian w miarę postępów za pomocą transformacji.  
   
-4.  Rozwiń `self::node()` węzła, a następnie rozwiń węzeł `price` węzła.  
+4. Rozwiń `self::node()` węzła, a następnie rozwiń węzeł `price` węzła.  
   
      Dzięki temu można zobaczyć wartość ceny książki i należy go do łatwiejszego porównania `$bookAverage` wartość. Ponieważ cena książki jest poniżej średniej, `xsl:if` warunek ma być pomyślnie wykonane.  
   
@@ -80,19 +80,19 @@ Kroki opisane w tym przewodniku pokazują, jak za pomocą debugera XSLT. Kroki o
   
 #### <a name="to-step-through-the-code"></a>Aby przejść przez kod  
   
-1.  Naciśnij klawisz **F5** aby kontynuować.  
+1. Naciśnij klawisz **F5** aby kontynuować.  
   
      Ponieważ spełnione pierwszego węzła książki `xsl:if` warunku węzła książki jest dodawany do okna danych wyjściowych XSL. Debuger kontynuuje wykonywanie dopóki nie jest ponownie umieszczone na `xsl:if` elementu w arkuszu stylów. Debuger jest teraz umieszczony w drugim węźle książki w pliku books.xml.  
   
      W oknie Watch1 `self::node()` wartość zmienia się na drugiego węzła książki. Sprawdzając wartość elementu ceny, należy określić, że cena jest powyżej średniej, dlatego `xsl:if` warunku powinna zakończyć się niepowodzeniem.  
   
-2.  Naciśnij klawisz **F5** aby kontynuować.  
+2. Naciśnij klawisz **F5** aby kontynuować.  
   
      Ponieważ nie spełnia drugiego węzła książki `xsl:if` warunku węzła książki nie została dodana do okna danych wyjściowych XSL. Debuger kontynuuje wykonywanie dopóki nie jest ponownie umieszczone na `xsl:if` elementu w arkuszu stylów. Debuger jest teraz umieszczony w trzeciej `book` węzeł w pliku books.xml.  
   
      W oknie Watch1 `self::node()` zmiany wartości na trzeci węzła książki. Sprawdzając wartość `price` elementu, można określić czy cena wynosi poniżej średniej, dlatego `xsl:if` warunek ma być pomyślnie wykonane.  
   
-3.  Naciśnij klawisz **F5** aby kontynuować.  
+3. Naciśnij klawisz **F5** aby kontynuować.  
   
      Ponieważ `xsl:if` warunek był spełniony, trzeci książka zostanie dodana do okna danych wyjściowych XSL. Wszystkie książki w dokumencie XML zostały przetworzone i debuger zatrzymuje się.  
   

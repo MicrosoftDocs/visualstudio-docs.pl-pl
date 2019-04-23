@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 930252a509466fa65a7cbdf2eabac35cfeb25081
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: fe2e782723b35a8cdd5505c60f74d1be12bb2077
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865833"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083045"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Przewodnik: Dodawanie strony aplikacji do przepływu pracy
   W tym instruktażu pokazano, jak dodać stronę aplikacja wyświetlającą dane pochodzące z przepływu pracy do projektu przepływu pracy. Opiera się na projekt, opisana w temacie [instruktażu: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
@@ -38,22 +38,22 @@ ms.locfileid: "54865833"
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
--   Obsługiwane edycje [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i programu SharePoint.
+- Obsługiwane edycje [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i programu SharePoint.
 
--   Program Visual Studio.
+- Program Visual Studio.
 
--   Musisz też ukończenia projektu w temacie [instruktażu: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
+- Musisz też ukończenia projektu w temacie [instruktażu: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
 ## <a name="ammend-the-workflow-code"></a>Ammend kod przepływu pracy
  Najpierw dodaj wiersz kodu do przepływu pracy, aby ustawić wartość kolumny wynik ilość raportu wydatków. Ta wartość jest używana w dalszej części Obliczanie podsumowania raportu wydatków.
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Aby ustawić wartość kolumny wynik w przepływie pracy
 
-1.  Ładowanie ukończone projektu z tematu [instruktażu: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Ładowanie ukończone projektu z tematu [instruktażu: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  Otwórz kod *Workflow1.cs* lub *Workflow1.vb* (w zależności od języka programowania).
+2. Otwórz kod *Workflow1.cs* lub *Workflow1.vb* (w zależności od języka programowania).
 
-3.  Na koniec `createTask1_MethodInvoking` metody, Dodaj następujący kod:
+3. Na koniec `createTask1_MethodInvoking` metody, Dodaj następujący kod:
 
     ```vb
     createTask1_TaskProperties1.ExtendedProperties("Outcome") =
@@ -70,11 +70,11 @@ ms.locfileid: "54865833"
 
 #### <a name="to-add-an-application-page-to-the-project"></a>Aby dodać strony aplikacji do projektu
 
-1.  Wybierz projekt ExpenseReport, a następnie na pasku menu wybierz **projektu** > **Dodaj nowy element**.
+1. Wybierz projekt ExpenseReport, a następnie na pasku menu wybierz **projektu** > **Dodaj nowy element**.
 
-2.  W **szablony** okienku wybierz **strony aplikacji** szablon, użyj domyślnej nazwy dla elementu projektu (**ApplicationPage1.aspx**) i wybierz polecenie **Dodaj** przycisku.
+2. W **szablony** okienku wybierz **strony aplikacji** szablon, użyj domyślnej nazwy dla elementu projektu (**ApplicationPage1.aspx**) i wybierz polecenie **Dodaj** przycisku.
 
-3.  W [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ApplicationPage1.aspx, Zamień `PlaceHolderMain` sekcję poniższym kodem:
+3. W [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ApplicationPage1.aspx, Zamień `PlaceHolderMain` sekcję poniższym kodem:
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
@@ -88,7 +88,7 @@ ms.locfileid: "54865833"
 
      Ten kod dodaje tabelę do strony razem z tytułu.
 
-4.  Dodaj tytuł na stronie aplikacji, zastępując `PlaceHolderPageTitleInTitleArea` sekcję poniższym kodem:
+4. Dodaj tytuł na stronie aplikacji, zastępując `PlaceHolderPageTitleInTitleArea` sekcję poniższym kodem:
 
     ```aspx-csharp
     <asp:Content ID="PageTitleInTitleArea" ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server" >
@@ -101,9 +101,9 @@ ms.locfileid: "54865833"
 
 #### <a name="to-code-the-application-page"></a>Do kodu strony aplikacji
 
-1.  Wybierz **ApplicationPage1.aspx** węzła, a następnie na pasku menu wybierz **widoku** > **kodu** do wyświetlenia w kodzie strony aplikacji.
+1. Wybierz **ApplicationPage1.aspx** węzła, a następnie na pasku menu wybierz **widoku** > **kodu** do wyświetlenia w kodzie strony aplikacji.
 
-2.  Zastąp **przy użyciu** lub **importu** instrukcji (w zależności od języka programowania) w górnej części klasy następującym kodem:
+2. Zastąp **przy użyciu** lub **importu** instrukcji (w zależności od języka programowania) w górnej części klasy następującym kodem:
 
     ```vb
     Imports System
@@ -131,7 +131,7 @@ ms.locfileid: "54865833"
     using Microsoft.SharePoint.Navigation;
     ```
 
-3.  Dodaj następujący kod do `Page_Load` metody:
+3. Dodaj następujący kod do `Page_Load` metody:
 
     ```vb
     Try
@@ -343,9 +343,9 @@ ms.locfileid: "54865833"
 
  Możesz dowiedzieć się więcej o projektowaniu zawartości strony SharePoint przy użyciu Visual Web Designer w programie Visual Studio w tych tematach:
 
--   [Tworzenie składników web Part programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
+- [Tworzenie składników web Part programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
 
--   [Tworzenie formantów wielokrotnych dla części sieciowych lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
+- [Tworzenie formantów wielokrotnych dla części sieciowych lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
 ## <a name="see-also"></a>Zobacz także
 

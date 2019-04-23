@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4901a4a04a2d4702a365f9b1f65406c4537b1182
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 074b01e78fd398a43548febf81ba03b61a8646b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614327"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079639"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Instrukcje: Konfigurowanie pod kątem aplikacji pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych
   Podczas tworzenia nowego projektu pakietu Office, Visual Studio automatycznie dodaje odwołania do programu Microsoft Office podstawowe zestawy międzyoperacyjne (PIA), które są wymagane do kompilowania projektu. Należy dodać odwołania do innych zestawów PIA w następujących scenariuszach:
@@ -36,18 +36,18 @@ ms.locfileid: "56614327"
 
 ## <a name="to-add-a-reference-to-a-primary-interop-assembly"></a>Aby dodać odwołanie do podstawowego zestawu międzyoperacyjnego
 
-1.  Otwórz projekt pakietu Office i wybierz nazwę projektu w **Eksploratora rozwiązań**.
+1. Otwórz projekt pakietu Office i wybierz nazwę projektu w **Eksploratora rozwiązań**.
 
-2.  Na **projektu** menu, kliknij przycisk **Dodaj odwołanie**.
+2. Na **projektu** menu, kliknij przycisk **Dodaj odwołanie**.
 
-3.  Na **Framework** , a następnie wybierz PIA w **nazwa składnika** listy. Aby uzyskać więcej informacji na temat dostępnych podstawowych zestawów międzyoperacyjnych programu Microsoft Office, zobacz [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md).
+3. Na **Framework** , a następnie wybierz PIA w **nazwa składnika** listy. Aby uzyskać więcej informacji na temat dostępnych podstawowych zestawów międzyoperacyjnych programu Microsoft Office, zobacz [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md).
 
      Jeśli projekt jest ukierunkowany [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszym, **Osadź typy współdziałania** dla odwołania do zestawu jest właściwością **True** domyślnie. Za pomocą tego ustawienia, rozwiązanie nie wymaga PIA na komputerach użytkowników końcowych. Aby uzyskać więcej informacji, zobacz [projektowania i tworzenia rozwiązań dla pakietu Office](../vsto/designing-and-creating-office-solutions.md).
 
     > [!NOTE]
     >  W projektach pakietu Office, zawsze dodać odwołania do zestawów PIA pakietu Office za pomocą **.NET** karcie **Dodaj odwołanie** okna dialogowego, a nie od **COM** kartę. Aby uzyskać więcej informacji, zobacz [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md).
 
-4.  Kliknij przycisk **OK**.
+4. Kliknij przycisk **OK**.
 
      Nazwa zestawu, który pojawia się w **odwołania** folderu **Eksploratora rozwiązań**.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3a5fc9bb7b6e2d6813c4c571633ef46d4b9e1f48
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d8aa3ecd29180e01a7d6f254303d42ac328aceaa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651737"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085223"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Instrukcje: Rozszerzanie kodu wygenerowanego przez narzędzie Object Relational Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,25 +27,25 @@ Kod wygenerowany przez [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-
   
 #### <a name="to-create-a-partial-class-and-add-code-to-an-entity-class"></a>Utwórz klasę częściową i dodać kod do klasy jednostki  
   
-1.  Otwórz lub Utwórz nowy plik LINQ to SQL klas (**dbml** pliku) w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Kliknij dwukrotnie **dbml** w pliku **Eksploratora rozwiązań**/**Eksplorator bazy danych**.)  
+1. Otwórz lub Utwórz nowy plik LINQ to SQL klas (**dbml** pliku) w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Kliknij dwukrotnie **dbml** w pliku **Eksploratora rozwiązań**/**Eksplorator bazy danych**.)  
   
-2.  W [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], kliknij prawym przyciskiem myszy klasę, dla którego chcesz dodać sprawdzanie poprawności, a następnie kliknij przycisk **Wyświetl kod**.  
+2. W [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], kliknij prawym przyciskiem myszy klasę, dla którego chcesz dodać sprawdzanie poprawności, a następnie kliknij przycisk **Wyświetl kod**.  
   
      Zostanie otwarty Edytor kodu klasę częściową dla klasy wybranego obiektu.  
   
-3.  Dodaj swój kod w deklaracji klasy częściowej klasy jednostki.  
+3. Dodaj swój kod w deklaracji klasy częściowej klasy jednostki.  
   
 ## <a name="adding-code-to-a-datacontext"></a>Dodawanie kodu do elementu DataContext  
   
 #### <a name="to-create-a-partial-class-and-add-code-to-a-datacontext"></a>Utwórz klasę częściową i dodać kod do elementu DataContext  
   
-1.  Otwórz lub Utwórz nowy plik LINQ to SQL klas (**dbml** pliku) w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Kliknij dwukrotnie **dbml** w pliku **Eksploratora rozwiązań**/**Eksplorator bazy danych**.)  
+1. Otwórz lub Utwórz nowy plik LINQ to SQL klas (**dbml** pliku) w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Kliknij dwukrotnie **dbml** w pliku **Eksploratora rozwiązań**/**Eksplorator bazy danych**.)  
   
-2.  W [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], kliknij prawym przyciskiem myszy pusty obszar w projektancie, a następnie kliknij przycisk **Wyświetl kod**.  
+2. W [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], kliknij prawym przyciskiem myszy pusty obszar w projektancie, a następnie kliknij przycisk **Wyświetl kod**.  
   
      Edytor kodu otwiera częściowej klasy kontekstu danych.  
   
-3.  Dodaj swój kod w deklaracji klasy częściowej dla kontekstu danych.  
+3. Dodaj swój kod w deklaracji klasy częściowej dla kontekstu danych.  
   
 ## <a name="see-also"></a>Zobacz też  
  [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

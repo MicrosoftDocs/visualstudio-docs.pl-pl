@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eba3f66e55c06efad2a540b1be7d3ad66ddfa3d0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 52b04490a646c7ced27d4a2d7f2344e27cbbae8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599678"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082766"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>Zapisywanie danych w rozszerzeniach systemu projektu SharePoint
   Podczas rozszerzania systemu projektu programu SharePoint, możesz zapisać dane ciągu, która utrzymuje się po zamknięciu projektu programu SharePoint. Dane są zwykle skojarzone z elementem określonego projektu lub z samym projekcie.
@@ -35,9 +35,9 @@ ms.locfileid: "56599678"
 ## <a name="save-data-that-is-associated-with-a-project"></a>Zapisywanie danych, który jest skojarzony z projektem
  W przypadku danych na poziomie projektu, takich jak wartość właściwości, które dodajesz do projektów programu SharePoint, możesz zapisać dane do pliku projektu ( *.csproj* pliku lub *.vbproj* plików) lub opcji użytkownika projektu plik ( *. csproj.user* pliku lub *. vbproj.user* pliku). Plik, który chcesz zapisać dane w zależy od tego, jaki ma dane do użycia:
 
--   Jeśli chcesz, aby dane, które mają być dostępne dla wszystkich deweloperów, którzy Otwórz projekt programu SharePoint, należy zapisać danych do pliku projektu. Ten plik jest zawsze ewidencjonowane bazy danych kontroli źródła, więc dane w tym pliku jest dostępna dla innych deweloperów, którzy zapoznaj się z projektu.
+- Jeśli chcesz, aby dane, które mają być dostępne dla wszystkich deweloperów, którzy Otwórz projekt programu SharePoint, należy zapisać danych do pliku projektu. Ten plik jest zawsze ewidencjonowane bazy danych kontroli źródła, więc dane w tym pliku jest dostępna dla innych deweloperów, którzy zapoznaj się z projektu.
 
--   Jeśli chcesz, aby dane, które mają być dostępne tylko dla bieżącego Deweloper, który został otwarty w programie Visual Studio projekt programu SharePoint, należy zapisać danych do pliku projektu, opcja użytkownika. Ten plik jest zwykle niezaewidencjonowane do bazy danych kontroli źródła, więc dane w tym pliku nie jest dostępna dla innych deweloperów, którzy wyewidencjonować projekt.
+- Jeśli chcesz, aby dane, które mają być dostępne tylko dla bieżącego Deweloper, który został otwarty w programie Visual Studio projekt programu SharePoint, należy zapisać danych do pliku projektu, opcja użytkownika. Ten plik jest zwykle niezaewidencjonowane do bazy danych kontroli źródła, więc dane w tym pliku nie jest dostępna dla innych deweloperów, którzy wyewidencjonować projekt.
 
 ### <a name="save-data-to-the-project-file"></a>Zapisywanie danych w pliku projektu
  Aby zapisać dane w pliku projektu, należy przekonwertować <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> obiekt <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> obiektu, a następnie użyj <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> metody. Poniższy przykład kodu demonstruje sposób używania tej metody można zapisać wartości właściwości projektu do pliku projektu. Aby wyświetlić ten przykład w kontekście większego przykładu, zobacz [jak: Dodawanie właściwości do projektów SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).

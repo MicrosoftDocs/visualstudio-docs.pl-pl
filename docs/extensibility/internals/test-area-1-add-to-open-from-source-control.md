@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 686c7fbfae76d9f4006664aff9f79848eba563f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 699496825e272fc492bac8ef4fe472019b1935d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613325"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083520"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Obszar testowy 1: Dodaj / Otwórz z kontroli źródła
 Ta-wtyczka do kontroli źródła testów obszar obejmuje umieszczenie rozwiązań lub projektów pod kontrolą źródła i pobierania ich z kontroli źródła.
@@ -41,15 +41,15 @@ Ta-wtyczka do kontroli źródła testów obszar obejmuje umieszczenie rozwiąza�
 
 ## <a name="expected-behavior"></a>Oczekiwane zachowanie
 
--   Dla każdego typu obsługiwanych projektu użytkownik powinien móc "Dodawanie do" i "Otwórz w" kontroli źródła.
+- Dla każdego typu obsługiwanych projektu użytkownik powinien móc "Dodawanie do" i "Otwórz w" kontroli źródła.
 
--   Gdy projekt jest dodawany do kontroli źródła, odpowiedni \< *ProjectName*> .vspscc (plik projektu wskazówka) jest tworzony. Zawiera on wykluczenia pliku listy oraz informacje o połączeniu. Nie usuwaj tego pliku, ponieważ zawiera on informacje specyficzne dla projektu.
+- Gdy projekt jest dodawany do kontroli źródła, odpowiedni \< *ProjectName*> .vspscc (plik projektu wskazówka) jest tworzony. Zawiera on wykluczenia pliku listy oraz informacje o połączeniu. Nie usuwaj tego pliku, ponieważ zawiera on informacje specyficzne dla projektu.
 
--   Po dodaniu rozwiązania do kontroli źródła, odpowiedni \< *SolutionName*> zostanie utworzony plik .vssscc (triple S). Plik tekstowy zawiera informacje o połączeniu i pliku listy wykluczeń, podobne do pliku podpowiedzi projektu. Ten plik jest tymczasowe i istnieje tylko w bazie danych kontroli źródła.
+- Po dodaniu rozwiązania do kontroli źródła, odpowiedni \< *SolutionName*> zostanie utworzony plik .vssscc (triple S). Plik tekstowy zawiera informacje o połączeniu i pliku listy wykluczeń, podobne do pliku podpowiedzi projektu. Ten plik jest tymczasowe i istnieje tylko w bazie danych kontroli źródła.
 
--   Po otwarciu rozwiązania z kontroli źródła, \< *SolutionName*> plik .vsscc (podwójny S), który istnieje tylko w bazie danych kontroli źródła, jest tworzony lokalnie w pliku tymczasowym. Ten plik zawiera ścieżkę folderu połączenia rozwiązania do pliku rozwiązania. Ten plik jest tymczasowe i lokalna kopia jest usuwany po zakończeniu operacji "Otwórz z kontroli źródła".
+- Po otwarciu rozwiązania z kontroli źródła, \< *SolutionName*> plik .vsscc (podwójny S), który istnieje tylko w bazie danych kontroli źródła, jest tworzony lokalnie w pliku tymczasowym. Ten plik zawiera ścieżkę folderu połączenia rozwiązania do pliku rozwiązania. Ten plik jest tymczasowe i lokalna kopia jest usuwany po zakończeniu operacji "Otwórz z kontroli źródła".
 
--   Po projekt jest dodawany do kontroli źródła, można wykonać akcje kontroli źródła na nim (wyewidencjonowania, Pobierz i tak dalej).
+- Po projekt jest dodawany do kontroli źródła, można wykonać akcje kontroli źródła na nim (wyewidencjonowania, Pobierz i tak dalej).
 
 ## <a name="test-cases"></a>Przypadki testowe
  Poniżej przedstawiono określonych przypadków testowych do dodawania / Otwórz z kontroli źródła obszar testowy.

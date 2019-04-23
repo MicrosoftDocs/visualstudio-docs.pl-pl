@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47860775a6351cab83cd43975e94373c3558305a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 143cea7a60fd136777943e849713ca0bdfe171fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795350"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078320"
 ---
 # <a name="concurrency-visualizer-markers"></a>Znaczniki Concurrency Visualizer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,11 +26,11 @@ W Wizualizatorze współbieżności znaczniki są ikon reprezentujących zdarzen
 ## <a name="kinds-of-markers"></a>Rodzaje znaczników  
  Narzędzie Concurrency Visualizer używa trzy rodzaje znaczników, który reprezentuje zdarzenia aplikacji: flaguje wiadomości i obejmuje.  
   
-1.  Użyj *flagi* do wskazania interesujące punktu w czasie w swojej aplikacji.  Na przykład może użyć flagi do reprezentowania, że wartość zmiennej osiągnęła określony próg lub został zgłoszony wyjątek.  
+1. Użyj *flagi* do wskazania interesujące punktu w czasie w swojej aplikacji.  Na przykład może użyć flagi do reprezentowania, że wartość zmiennej osiągnęła określony próg lub został zgłoszony wyjątek.  
   
-2.  A *komunikat* również znaczniki punktu w czasie, ale możesz go używać stylu dziennika śledzenia.  Na przykład co może mieć zostały zrzucone do pliku dziennika, który teraz można opakować wywołanie wiadomości, aby można ją śledzić i wyświetlać go w Wizualizatorze współbieżności. Narzędzie Concurrency Visualizer umożliwia również wyeksportować te dane do pliku CSV.  
+2. A *komunikat* również znaczniki punktu w czasie, ale możesz go używać stylu dziennika śledzenia.  Na przykład co może mieć zostały zrzucone do pliku dziennika, który teraz można opakować wywołanie wiadomości, aby można ją śledzić i wyświetlać go w Wizualizatorze współbieżności. Narzędzie Concurrency Visualizer umożliwia również wyeksportować te dane do pliku CSV.  
   
-3.  A *span* reprezentuje przedział czasu w swojej aplikacji, na przykład jeden z jego faz.  
+3. A *span* reprezentuje przedział czasu w swojej aplikacji, na przykład jeden z jego faz.  
   
 ## <a name="marker-linkage-to-threads"></a>Powiązania znacznika dla wątków  
  Każdy wątek, który generuje znaczniki ma kanału oddzielne osi czasu.  Identyfikator wątku, który jest odpowiedzialny za wygenerowanie zdarzenia znacznik jest wyświetlany obok opis kanału znacznika.  Identyfikator, który jest wyświetlany po lewej stronie kanału znaczników zgodny z Identyfikatorem inny wątek w bieżącym procesie.  

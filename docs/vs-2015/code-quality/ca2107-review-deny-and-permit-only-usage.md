@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 425a7363e03dcc8a967853bbe574f29678df11a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7de14898c5fb2bb6f8e95a2af5fd6b39a54cdb1d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772461"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082155"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Przejrzyj przypadki użycia metod Deny i PermitOnly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "54772461"
 
  Kod, który opiera się na te akcje należy dokładnie ocenić dla luki w zabezpieczeniach ze względu na ograniczone użyteczność i zachowanie subtelne. Rozważ następujące opcje:
 
--   [Link zapotrzebowanie](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) nie dotyczy Deny lub PermitOnly.
+- [Link zapotrzebowanie](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) nie dotyczy Deny lub PermitOnly.
 
--   Jeśli Deny lub PermitOnly występuje w tej samej ramki stosu jako żądanie, która powoduje przejście przez stos, akcje zabezpieczeń nie mają wpływu.
+- Jeśli Deny lub PermitOnly występuje w tej samej ramki stosu jako żądanie, która powoduje przejście przez stos, akcje zabezpieczeń nie mają wpływu.
 
--   Zazwyczaj można określić wartości, które są używane do konstruowania uprawnień opartych na ścieżkę na wiele sposobów. Odmowa dostępu do tego samego formularza ścieżki nie odmowa dostępu do wszystkich formularzy. Na przykład jeśli udział pliku \\\Server\Share jest zamapowany dysk sieciowy X:, aby odmówić dostępu do plików w udziale, należy odmówić \\\Server\Share\File, X:\File i każdej innej ścieżki, który uzyskuje dostęp do pliku.
+- Zazwyczaj można określić wartości, które są używane do konstruowania uprawnień opartych na ścieżkę na wiele sposobów. Odmowa dostępu do tego samego formularza ścieżki nie odmowa dostępu do wszystkich formularzy. Na przykład jeśli udział pliku \\\Server\Share jest zamapowany dysk sieciowy X:, aby odmówić dostępu do plików w udziale, należy odmówić \\\Server\Share\File, X:\File i każdej innej ścieżki, który uzyskuje dostęp do pliku.
 
--   <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> Przed osiągnięciem Deny lub PermitOnly może zakończyć przeszukiwania stosu.
+- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> Przed osiągnięciem Deny lub PermitOnly może zakończyć przeszukiwania stosu.
 
--   Jeśli stan odmowa ma żadnego efektu, to znaczy, gdy obiekt wywołujący ma uprawnienie, który jest zablokowany przez Odmów, obiekt wywołujący można dostępu do chronionego zasobu bezpośrednio, pomijanie Odmów. Podobnie jeśli obiekt wywołujący nie ma odmowy uprawnień, przejście przez stos może zakończyć się niepowodzeniem bez Odmów.
+- Jeśli stan odmowa ma żadnego efektu, to znaczy, gdy obiekt wywołujący ma uprawnienie, który jest zablokowany przez Odmów, obiekt wywołujący można dostępu do chronionego zasobu bezpośrednio, pomijanie Odmów. Podobnie jeśli obiekt wywołujący nie ma odmowy uprawnień, przejście przez stos może zakończyć się niepowodzeniem bez Odmów.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Naruszenie zasad spowoduje, że każde użycie tych akcji zabezpieczeń. Aby naprawić naruszenie, nie należy używać tych akcji zabezpieczeń.

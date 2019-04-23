@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b046fb7aa11aa9ab917774dcf4fe3b4e47932afa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e2ade3e1b5a2317d16d668079275506509aeef7a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621607"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083104"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Concurrency Visualizer SDK
 Możliwe jest instrumentowanie kodu źródłowego za pomocą SDK narzędzia Concurrency Visualizer, aby wyświetlić dodatkowe informacje w Wizualizatorze współbieżności. Możesz skojarzyć dodatkowe dane przy użyciu etapy i zdarzenia w kodzie. Te dodatkowe wizualizacje, są znane jako *znaczniki*.  Aby uzyskać Przewodnik wprowadzający, zobacz [Przedstawiamy SDK narzędzia Concurrency Visualizer](http://go.microsoft.com/fwlink/?LinkId=235405).
@@ -31,11 +31,11 @@ Możliwe jest instrumentowanie kodu źródłowego za pomocą SDK narzędzia Conc
 
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>Aby dodać obsługę zestawu SDK do projektu C# lub Visual Basic
 
-1.  Na pasku menu wybierz **analizy**, **Concurrency Visualizer**, **Dodawanie zestawu SDK do projektu**.
+1. Na pasku menu wybierz **analizy**, **Concurrency Visualizer**, **Dodawanie zestawu SDK do projektu**.
 
-2.  Wybierz projekt, w której ma dostęp do zestawu SDK, a następnie wybierz polecenie **Dodawanie zestawu SDK do projektu wybrano** przycisku.
+2. Wybierz projekt, w której ma dostęp do zestawu SDK, a następnie wybierz polecenie **Dodawanie zestawu SDK do projektu wybrano** przycisku.
 
-3.  Dodaj import lub przy użyciu instrukcji w kodzie.
+3. Dodaj import lub przy użyciu instrukcji w kodzie.
 
     ```csharp
     using Microsoft.ConcurrencyVisualizer.Instrumentation;
@@ -46,23 +46,23 @@ Możliwe jest instrumentowanie kodu źródłowego za pomocą SDK narzędzia Conc
     ```
 
 ### <a name="c"></a>C++
- W języku C++, należy utworzyć [marker_series — klasa](../profiling/marker-series-class.md) obiektu i użyć go do wywołania funkcji.  `marker_series` Klasa udostępnia trzy funkcje generowania znaczników, [metoda marker_series::write_flag](../profiling/marker-series-write-flag-method.md), [metoda marker_series::write_message](../profiling/marker-series-write-message-method.md)i [znacznik_ Metoda Series::write_alert](../profiling/marker-series-write-alert-method.md).
+ W C++, Utwórz [marker_series — klasa](../profiling/marker-series-class.md) obiektu i użyć go do wywołania funkcji.  `marker_series` Klasa udostępnia trzy funkcje generowania znaczników, [metoda marker_series::write_flag](../profiling/marker-series-write-flag-method.md), [metoda marker_series::write_message](../profiling/marker-series-write-message-method.md)i [znacznik_ Metoda Series::write_alert](../profiling/marker-series-write-alert-method.md).
 
 ##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>Aby dodać obsługę zestawu SDK do projektu C++ lub C
 
-1.  Na pasku menu wybierz **analizy**, **Concurrency Visualizer**, **Dodawanie zestawu SDK do projektu**.
+1. Na pasku menu wybierz **analizy**, **Concurrency Visualizer**, **Dodawanie zestawu SDK do projektu**.
 
-2.  Wybierz projekt, w której ma dostęp do zestawu SDK, a następnie wybierz polecenie **Dodawanie zestawu SDK do projektu wybrano** przycisku.
+2. Wybierz projekt, w której ma dostęp do zestawu SDK, a następnie wybierz polecenie **Dodawanie zestawu SDK do projektu wybrano** przycisku.
 
-3.  Dla języka C++, obejmują `cvmarkersobj.h`. Dla języka C zawierają `cvmarkers.h`.
+3. Dla języka C++, obejmują `cvmarkersobj.h`. Dla języka C zawierają `cvmarkers.h`.
 
-4.  Dodaj przy użyciu instrukcji w kodzie.
+4. Dodaj przy użyciu instrukcji w kodzie.
 
     ```cpp
     using namespace Concurrency::diagnostic;
     ```
 
-5.  Tworzenie `marker_series` obiektu i przekazać ją do `span` konstruktora.
+5. Tworzenie `marker_series` obiektu i przekazać ją do `span` konstruktora.
 
     ```C++
 
@@ -76,19 +76,19 @@ Możliwe jest instrumentowanie kodu źródłowego za pomocą SDK narzędzia Conc
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>Aby użyć nowego dostawcę znaczników w projekcie języka C# lub Visual Basic
 
-1.  Tworzy obiekt <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>.  Konstruktor przyjmuje postać identyfikatora GUID.
+1. Tworzy obiekt <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>.  Konstruktor przyjmuje postać identyfikatora GUID.
 
-2.  Aby zarejestrować dostawcę, Otwórz narzędzie Concurrency Visualizer [Zaawansowane ustawienia](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) okno dialogowe.  Wybierz **znaczniki** kartę, a następnie wybierz **Dodaj nowego dostawcę** przycisku. W [Zaawansowane ustawienia](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) okna dialogowego wprowadź identyfikator GUID, który został użyty do utworzenia dostawcy i opis dostawcy.
+2. Aby zarejestrować dostawcę, Otwórz narzędzie Concurrency Visualizer [Zaawansowane ustawienia](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) okno dialogowe.  Wybierz **znaczniki** kartę, a następnie wybierz **Dodaj nowego dostawcę** przycisku. W [Zaawansowane ustawienia](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) okna dialogowego wprowadź identyfikator GUID, który został użyty do utworzenia dostawcy i opis dostawcy.
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>Aby użyć nowego dostawcę znaczników w projekcie języka C++ lub C
 
-1.  Użyj `CvInitProvider` funkcji, aby zainicjować PCV_PROVIDER.  Konstruktor przyjmuje identyfikator GUID *, a PCV_PROVIDER\*.
+1. Użyj `CvInitProvider` funkcji, aby zainicjować PCV_PROVIDER.  Konstruktor przyjmuje identyfikator GUID *, a PCV_PROVIDER\*.
 
-2.  Aby zarejestrować dostawcę, należy otworzyć [Zaawansowane ustawienia](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) okno dialogowe.  Wybierz **znaczniki** kartę, a następnie wybierz **Dodaj nowego dostawcę** przycisku. W tym oknie dialogowym Wprowadź identyfikator GUID, który został użyty do utworzenia dostawcy i opis dostawcy.
+2. Aby zarejestrować dostawcę, należy otworzyć [Zaawansowane ustawienia](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) okno dialogowe.  Wybierz **znaczniki** kartę, a następnie wybierz **Dodaj nowego dostawcę** przycisku. W tym oknie dialogowym Wprowadź identyfikator GUID, który został użyty do utworzenia dostawcy i opis dostawcy.
 
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>Aby użyć znaczników serii w projekcie języka C# lub Visual Basic
 
-1.  Aby użyć nowego <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>, najpierw utworzyć za pomocą <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> obiektu, a następnie wygeneruj znacznika zdarzenia bezpośrednio z poziomu nowej serii.
+1. Aby użyć nowego <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>, najpierw utworzyć za pomocą <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> obiektu, a następnie wygeneruj znacznika zdarzenia bezpośrednio z poziomu nowej serii.
 
     ```csharp
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries("Series 1");
@@ -102,7 +102,7 @@ Możliwe jest instrumentowanie kodu źródłowego za pomocą SDK narzędzia Conc
 
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>Aby użyć serii znacznika w projekcie C++.
 
-1.  Tworzy obiekt `marker_series`.  Zdarzenia można wygenerować z tej nowej serii.
+1. Tworzy obiekt `marker_series`.  Zdarzenia można wygenerować z tej nowej serii.
 
     ```scr
     marker_series series;
@@ -111,7 +111,7 @@ Możliwe jest instrumentowanie kodu źródłowego za pomocą SDK narzędzia Conc
 
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>Aby użyć znaczników serii w projekcie języka C
 
-1.  Użyj `CvCreateMarkerSeries` funkcji, aby utworzyć PCV_MARKERSERIES.
+1. Użyj `CvCreateMarkerSeries` funkcji, aby utworzyć PCV_MARKERSERIES.
 
     ```C++
     PCV_MARKERSERIES series;

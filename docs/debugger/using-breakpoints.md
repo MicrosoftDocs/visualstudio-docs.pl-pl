@@ -34,17 +34,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cfb3e68f1f967c3c74c93107b622c618a8af728
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 3f9150a815f424c0b4a7bfe5f2e92ea7cd424ddb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537601"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085262"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Używanie punktów przerwania w debugerze programu Visual Studio
 Punkty przerwania są jednym z najważniejszych technik debugowania dostępnych w przyborniku dla deweloperów. Ustaw punkty przerwania, wszędzie tam, gdzie chcesz wstrzymać wykonanie w debugerze. Na przykład można wyświetlić stan zmiennych kodu lub Spójrz na stos wywołań w niektórych punkcie przerwania. Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md) przed przejściem w tym artykule.
 
-##  <a name="BKMK_Overview"></a> Ustawianie punktów przerwania w kodzie źródłowym
+## <a name="BKMK_Overview"></a> Ustawianie punktów przerwania w kodzie źródłowym
  Możesz ustawić punkt przerwania w każdym wierszu kodu wykonywalnego. Na przykład w poniższym kodzie C#, można ustawić punkt przerwania w deklaracji zmiennej `for` pętli lub dowolny kod wewnątrz `for` pętli. Nie można ustawić punktu przerwania, deklaracje przestrzeni nazw lub klasy lub podpis metody.
 
  Aby ustawić punkt przerwania w kodzie źródłowym, kliknij na marginesie po lewej stronie obok wiersza kodu. Możesz również wybrać wiersza i naciśnij klawisz **F9**, wybierz opcję **debugowania** > **Przełącz punkt przerwania**, lub kliknij prawym przyciskiem myszy i wybierz polecenie **punktuprzerwania**  >  **Wstaw punkt przerwania**. Punkt przerwania pojawia się jako czerwona kropka na lewym marginesie.
@@ -67,7 +67,7 @@ W C# automatycznie wyróżniony kod, punkt przerwania i bieżącej linii wykonyw
 
 - Ustaw warunki i akcje, dodawanie i edytowanie etykiet lub wyeksportuj punkt przerwania, kliknij go prawym przyciskiem myszy i wybierając odpowiednie polecenie lub przenosząc kursor myszy nad nim i wybierając **ustawienia** ikony.
 
-##  <a name="BKMK_Set_a_breakpoint_in_a_function"></a> Ustawianie punktów przerwania w debugerze systemu windows
+## <a name="BKMK_Set_a_breakpoint_in_a_function"></a> Ustawianie punktów przerwania w debugerze systemu windows
 
 Można również ustawić punkty przerwania z **stos wywołań** i **dezasemblacji** debugera systemu windows.
 
@@ -97,7 +97,7 @@ Aby wizualnie śledzić punkty przerwania podczas wykonywania kodu, zobacz [meto
 
 2. W **dezasemblacji** kliknij na lewym marginesie instrukcji, aby przerwać. Możesz również wybrać go i naciśnij klawisz **F9**, lub kliknij prawym przyciskiem myszy i wybierz polecenie **punktu przerwania** > **Wstaw punkt przerwania**.
 
-##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Ustawianie punktów przerwania z — funkcja
+## <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Ustawianie punktów przerwania z — funkcja
 
   Aby przerwać wykonywanie, gdy funkcja jest wywoływana.
 
@@ -136,17 +136,18 @@ Aby wizualnie śledzić punkty przerwania podczas wykonywania kodu, zobacz [meto
 ### <a name="set-a-function-breakpoint-using-a-memory-address-native-c-only"></a>Ustaw punkt przerwania funkcji przy użyciu adresu pamięci (tylko w natywnym kodzie C++)
  Adres obiektu umożliwia ustawianie punktu przerwania funkcji metody wywoływane przez konkretnego wystąpienia klasy.  Na przykład, biorąc pod uwagę adresowalnych obiektu typu `my_class`, można ustawić punktu przerwania funkcji w `my_method` wystąpienie wywołania metody.
 
-1.  Ustaw punkt przerwania gdzieś po tworzone jest wystąpienie klasy.
+1. Ustaw punkt przerwania gdzieś po tworzone jest wystąpienie klasy.
 
-2.  Znajdź adres obiektu (na przykład `0xcccccccc`).
+2. Znajdź adres obiektu (na przykład `0xcccccccc`).
 
-3.  Wybierz **debugowania** > **nowego punktu przerwania** > **przerwania funkcji**, lub naciśnij **Alt** + **F9** > **Ctrl**+**B**.
+3. Wybierz **debugowania** > **nowego punktu przerwania** > **przerwania funkcji**, lub naciśnij **Alt** + **F9** > **Ctrl**+**B**.
 
-4.  Dodaj następujące polecenie, aby **nazwy funkcji** i zaznacz **C++** języka.
+4. Dodaj następujące polecenie, aby **nazwy funkcji** i zaznacz **C++** języka.
 
     ```C++
     ((my_class *) 0xcccccccc)->my_method
     ```
+
 ::: moniker range=">= vs-2019"
 
 ## <a name="BKMK_set_a_data_breakpoint_managed"></a>Ustaw punkty przerwania danych (.NET Core w wersji 3.0 lub nowszej)
@@ -185,16 +186,16 @@ Punkty przerwania danych w programie .NET Core, nie będzie działać dla:
 3. W **liczba bajtów** listy rozwijanej wybierz liczbę bajtów, które chcesz, aby debuger ma uważać. Na przykład w przypadku wybrania **4**, debuger będzie obserwował cztery bajty począwszy `&avar` i przerwie działanie, jeśli którykolwiek z tych bajtów zmienić wartość.
 
 Punkty przerwania danych nie działają w następujących warunkach:
--   Proces, który nie jest debugowany, zapisuje w lokalizacji pamięci.
--   Lokalizacja pamięci jest współużytkowana przez dwa lub więcej procesów.
--   Lokalizacja pamięci jest aktualizowana w jądrze. Na przykład, jeśli pamięć jest przekazywana do Windows 32-bitowych `ReadFile` funkcji, pamięć zostanie zaktualizowana z trybu jądra, debuger nie spowodują przerwania działania aktualizacji.
+- Proces, który nie jest debugowany, zapisuje w lokalizacji pamięci.
+- Lokalizacja pamięci jest współużytkowana przez dwa lub więcej procesów.
+- Lokalizacja pamięci jest aktualizowana w jądrze. Na przykład, jeśli pamięć jest przekazywana do Windows 32-bitowych `ReadFile` funkcji, pamięć zostanie zaktualizowana z trybu jądra, debuger nie spowodują przerwania działania aktualizacji.
 
 >[!NOTE]
 >- Punkty przerwania danych są zależne od adresów pamięci. Adres zmiennej zmiany między jedną sesją debugowania do następnego, dzięki czemu punkty przerwania danych są automatycznie wyłączane na koniec każdej sesji debugowania.
 >
 >- Jeśli punkt przerwania danych zostanie ustawiony na zmiennej lokalnej, punkt przerwania pozostaje włączony nawet gdy funkcja skończy działanie, ale adres pamięci nie ma już zastosowania, więc zachowanie punktu przerwania są nieprzewidywalne. Jeśli punkt przerwania danych zostanie ustawiony na zmiennej lokalnej, należy usunąć lub wyłącz punkt przerwania przed końcem działania funkcji.
 
-##  <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Zarządzanie punktami przerwania w oknie punktów przerwania
+## <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Zarządzanie punktami przerwania w oknie punktów przerwania
 
  Możesz użyć **punktów przerwania** okna, aby zobaczyć i wszystkie punkty przerwania w rozwiązaniu do zarządzania. Scentralizowane jest szczególnie przydatne w rozwiązaniach dużych lub złożonych scenariuszy debugowania, w których punkty przerwania mają kluczowe znaczenie.
 
@@ -206,7 +207,7 @@ Aby otworzyć **punktów przerwania** wybierz **debugowania** > **Windows** > **
 
 Aby wybrać kolumny do wyświetlenia w **punktów przerwania** wybierz **Pokaż kolumny**. Wybierz nagłówek kolumny w celu listę punktów przerwania można sortować według tej kolumny.
 
-###  <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Etykiety punktów przerwania
+### <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Etykiety punktów przerwania
 Etykiety można użyć do sortowania i filtrowania listy punktów przerwania w **punktów przerwania** okna.
 
 1. Aby dodać etykietę do punktu przerwania, kliknij prawym przyciskiem myszy punkt przerwania w kodzie źródłowym lub **punktów przerwania** okna, a następnie wybierz pozycję **Edytuj etykiety**. Dodaj nową etykietę lub wybierz istniejącą grupę, a następnie wybierz **OK**.
@@ -220,7 +221,7 @@ Etykiety można użyć do sortowania i filtrowania listy punktów przerwania w *
 - Aby wyeksportować wszystkie punkty przerwania, usuń zaznaczenie wszystkich pól i pozostawić **wyszukiwania** pole puste. Wybierz **Eksportuj wszystkie punkty przerwania zgodne z bieżącymi kryteriami wyszukiwania** ikonę, a następnie zapisz plik.
 - Można zaimportować punktów przerwania, w **punktów przerwania** wybierz **Importuj punkty przerwania z plikiem** ikony, przejdź do lokalizacji pliku XML, a następnie wybierz pozycję **Otwórz**.
 
-##  <a name="breakpoint-conditions"></a>Warunki punktu przerwania
+## <a name="breakpoint-conditions"></a>Warunki punktu przerwania
  Można kontrolować, kiedy i gdzie jest wykonywany punkt przerwania, ustawiając warunków. Warunek może być dowolne prawidłowe wyrażenie, które rozpoznaje debugera. Aby uzyskać więcej informacji dotyczących prawidłowych wyrażeń, zobacz [wyrażenia w debugerze](../debugger/expressions-in-the-debugger.md).
 
 **Aby ustawić warunek punktu przerwania:**
@@ -293,15 +294,15 @@ Można ograniczyć punkt przerwania, aby wyzwalać tylko dla określonego urząd
 
 W obszarze **warunki** w **ustawienia punktu przerwania** wybierz **filtru**, a następnie wprowadź co najmniej jedną z następujących wyrażeń:
 
--   MachineName = "name"
--   ProcessId = wartość
--   ProcessName = "name"
--   ThreadId = wartość
--   ThreadName = "name"
+- MachineName = "name"
+- ProcessId = wartość
+- ProcessName = "name"
+- ThreadId = wartość
+- ThreadName = "name"
 
 Wartości parametrów należy ująć w cudzysłów. Można połączyć klauzule za pomocą `&` (oraz) `||` (lub), `!` (nie) i nawiasy.
 
-##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Akcje punktu przerwania i punkty śledzenia
+## <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Akcje punktu przerwania i punkty śledzenia
  A *śledzenia* jest punktem przerwania, który drukuje wiadomość do **dane wyjściowe** okna. Tracepoint może zachowywać się jak tymczasowa instrukcja śledzenia w języku programowania.
 
 **Aby ustawić punkt śledzenia:**

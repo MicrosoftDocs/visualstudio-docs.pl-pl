@@ -8,12 +8,12 @@ ms.topic: article
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: b1ce9c317bb05e242f8bdc89d3e294858ba0ce21
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 490ad7e4ee8bcc59530a06ec4eba151e88806028
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567268"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079503"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Ciągła integracja w usługom DevOps platformy Azure przy użyciu projekty wdrażania grupy zasobów platformy Azure
 
@@ -172,6 +172,7 @@ Poniższe procedury opisują czynności niezbędne do skonfigurowania ciągłego
      ```
      -_artifactsLocation $(artifactsLocation) -_artifactsLocationSasToken (ConvertTo-SecureString -String "$(artifactsLocationSasToken)" -AsPlainText -Force)
      ```
+
      ![Konfigurowanie zadania wdrożenia grupy zasobów platformy Azure](media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough18.png)
 7. Po dodaniu wymagane elementy Zapisz potoku kompilacji i wybierz polecenie **nową kompilację w kolejce** u góry.
 

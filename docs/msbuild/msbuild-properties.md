@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c194531c5436549efa06ca93e987e55739276926
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: efd267de85cd8cd32ba442e2fd4f394b6c6209fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515210"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083273"
 ---
 # <a name="msbuild-properties"></a>właściwości programu MSBuild
 Właściwości to pary nazwa-wartość, których można używać do konfigurowania kompilacji. Stanową przydatny mechanizm przekazywania wartości do zadań, obliczania warunków i przechowywania wartości, do których będą prowadziły odwołania z różnych miejsc pliku projektu.
@@ -108,11 +108,11 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 ## <a name="create-properties-during-execution"></a>Tworzenie właściwości podczas wykonywania
  Właściwościom umieszczonym poza elementami `Target` wartości są przypisane w fazie obliczania kompilacji. W następnej fazie (wykonywania) właściwości można tworzyć i modyfikować w następujący sposób:
 
--   Właściwość może być emitowana przez dowolne zadanie. Aby było wyemitować właściwość, [zadań](../msbuild/task-element-msbuild.md) element musi mieć element podrzędny [dane wyjściowe](../msbuild/output-element-msbuild.md) element, który ma `PropertyName` atrybutu.
+- Właściwość może być emitowana przez dowolne zadanie. Aby było wyemitować właściwość, [zadań](../msbuild/task-element-msbuild.md) element musi mieć element podrzędny [dane wyjściowe](../msbuild/output-element-msbuild.md) element, który ma `PropertyName` atrybutu.
 
--   Właściwość może być emitowana przez [CreateProperty](../msbuild/createproperty-task.md) zadania. Takie użycie jest przestarzałe.
+- Właściwość może być emitowana przez [CreateProperty](../msbuild/createproperty-task.md) zadania. Takie użycie jest przestarzałe.
 
--   Począwszy od platformy .NET Framework w wersji 3.5, elementy `Target` mogą zawierać elementy `PropertyGroup` zawierające deklaracje właściwości.
+- Począwszy od platformy .NET Framework w wersji 3.5, elementy `Target` mogą zawierać elementy `PropertyGroup` zawierające deklaracje właściwości.
 
 ## <a name="store-xml-in-properties"></a>Store XML we właściwościach
  Właściwości mogą zawierać dowolny kod XML pomocny w przekazywaniu wartości do zadań albo wyświetlaniu informacji o logowaniu. W przykładzie poniżej pokazano właściwość `ConfigTemplate`, która ma wartość zawierającą kod XML oraz odwołania do innych właściwości. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zastępuje odwołania do właściwości przy użyciu ich odpowiednich wartości. Wartości właściwości są przypisywane w kolejności, w jakiej występują. Dlatego w tym przykładzie właściwości użyte w odwołaniach `$(MySupportedVersion)`, `$(MyRequiredVersion)` i `$(MySafeMode)` powinny już być zdefiniowane.

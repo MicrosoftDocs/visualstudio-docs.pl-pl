@@ -27,12 +27,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a284fc35a5a792171e5102518bcfa553337dd15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761212"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080744"
 ---
 # <a name="expressions-in-the-debugger"></a>Wyrażenia w debugerze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ int main()
   
 ```  
   
-###  <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Za pomocą funkcje wewnętrzne debugera do zarządzania stanem  
+### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Za pomocą funkcje wewnętrzne debugera do zarządzania stanem  
  Funkcje wewnętrzne debugera zapewniają sposób wywołać pewne funkcje języka C/C++ w wyrażeniach bez zmiany stanu aplikacji.  
   
  Funkcje wewnętrzne debugera:  
@@ -116,17 +116,17 @@ int main()
 |**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Te funkcje wymagają procesu, który jest debugowany należy uruchomić w systemie Windows 8. Debugowanie plików zrzutu generowane z urządzenia z systemem Windows 8 również wymaga, aby komputer z programem Visual Studio systemem operacyjnym Windows 8. Jednak jeśli przeprowadzasz debugowanie zdalne urządzenie Windows 8, komputer z programem Visual Studio może być uruchomiony Windows 7.|  
 |**Różne**|__log2<br /><br /> Zwraca dziennik podstawie 2 określona liczba całkowita zaokrąglona do najbliższej liczby całkowitej. niższe.|  
   
-## <a name="ccli---unsupported-expressions"></a>C + +/ interfejsu wiersza polecenia — nieobsługiwane wyrażenia  
+## <a name="ccli---unsupported-expressions"></a>C++/ Interfejs wiersza polecenia — nieobsługiwane wyrażenia  
   
--   Wzory, które obejmują wskaźniki lub zdefiniowanych przez użytkownika rzutowania, nie są obsługiwane.  
+- Wzory, które obejmują wskaźniki lub zdefiniowanych przez użytkownika rzutowania, nie są obsługiwane.  
   
--   Porównanie obiektów i przypisania nie są obsługiwane.  
+- Porównanie obiektów i przypisania nie są obsługiwane.  
   
--   Przeciążone operatory i funkcje przeciążone są nieobsługiwane.  
+- Przeciążone operatory i funkcje przeciążone są nieobsługiwane.  
   
--   Pakowanie i rozpakowywanie są nieobsługiwane.  
+- Pakowanie i rozpakowywanie są nieobsługiwane.  
   
--   `Sizeof` operator nie jest obsługiwany.  
+- `Sizeof` operator nie jest obsługiwany.  
   
 ## <a name="c---unsupported-expressions"></a>C# — nieobsługiwane wyrażenia  
   
@@ -135,19 +135,19 @@ int main()
   
  Następujące funkcje obiektów dynamicznych nie są obsługiwane:  
   
--   Złożone operatory `+=`, `-=`, `%=`, `/=`, i `*=`  
+- Złożone operatory `+=`, `-=`, `%=`, `/=`, i `*=`  
   
--   Wiele rzutowania, w tym rzutowania liczbowych i argument typu rzutowania  
+- Wiele rzutowania, w tym rzutowania liczbowych i argument typu rzutowania  
   
--   Wywołań metod z więcej niż dwóch argumentów  
+- Wywołań metod z więcej niż dwóch argumentów  
   
--   Metody pobierające właściwości z więcej niż dwóch argumentów  
+- Metody pobierające właściwości z więcej niż dwóch argumentów  
   
--   Metod ustawiających właściwości z argumentami  
+- Metod ustawiających właściwości z argumentami  
   
--   Przypisywanie do indeksatora  
+- Przypisywanie do indeksatora  
   
--   Operatory logiczne `&&` i `||`  
+- Operatory logiczne `&&` i `||`  
   
 ### <a name="anonymous-methods"></a>Metody anonimowe  
  Tworzenie nowych metod anonimowych nie jest obsługiwane.  
@@ -159,19 +159,19 @@ int main()
   
  Następujące funkcje obiektów dynamicznych nie są obsługiwane:  
   
--   Złożone operatory `+=`, `-=`, `%=`, `/=`, i `*=`  
+- Złożone operatory `+=`, `-=`, `%=`, `/=`, i `*=`  
   
--   Wiele rzutowania, w tym rzutowania liczbowych i argument typu rzutowania  
+- Wiele rzutowania, w tym rzutowania liczbowych i argument typu rzutowania  
   
--   Wywołań metod z więcej niż dwóch argumentów  
+- Wywołań metod z więcej niż dwóch argumentów  
   
--   Metody pobierające właściwości z więcej niż dwóch argumentów  
+- Metody pobierające właściwości z więcej niż dwóch argumentów  
   
--   Metod ustawiających właściwości z argumentami  
+- Metod ustawiających właściwości z argumentami  
   
--   Przypisywanie do indeksatora  
+- Przypisywanie do indeksatora  
   
--   Operatory logiczne `&&` i `||`  
+- Operatory logiczne `&&` i `||`  
   
 ### <a name="local-constants"></a>Stałe lokalne  
  Lokalne nie są obsługiwane.  
@@ -184,35 +184,35 @@ int main()
   
 ### <a name="unsupported-keywords"></a>Nieobsługiwana słów kluczowych  
   
--   `AddressOf`  
+- `AddressOf`  
   
--   `End`  
+- `End`  
   
--   `Error`  
+- `Error`  
   
--   `Exit`  
+- `Exit`  
   
--   `Goto`  
+- `Goto`  
   
--   `On Error`  
+- `On Error`  
   
--   `Resume`  
+- `Resume`  
   
--   `Return`  
+- `Return`  
   
--   `Select/Case`  
+- `Select/Case`  
   
--   `Stop`  
+- `Stop`  
   
--   `SyncLock`  
+- `SyncLock`  
   
--   `Throw`  
+- `Throw`  
   
--   `Try/Catch/Finally`  
+- `Try/Catch/Finally`  
   
--   `With`  
+- `With`  
   
--   Namespace lub modułu na poziomie słów kluczowych, takich jak `End Sub` lub `Module`.  
+- Namespace lub modułu na poziomie słów kluczowych, takich jak `End Sub` lub `Module`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Specyfikatory formatu w C++](../debugger/format-specifiers-in-cpp.md)   

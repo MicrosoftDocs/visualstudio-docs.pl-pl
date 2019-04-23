@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 168e136f3a50c5055a9b9fb6d05925dac3586a23
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: db5b2df99a887511351e6b5bd120968edf7c53cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869060"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080868"
 ---
 # <a name="display-data-in-blend"></a>Wyświetlanie danych w programie Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ Można wyświetlić przykładowe dane w projektanta, jak dostosować układ stro
   
  **W tym temacie:**  
   
--   [Generowanie przykładowych danych](#Scratch)  
+- [Generowanie przykładowych danych](#Scratch)  
   
--   [Generowanie przykładowych danych z klasy](#Existing)  
+- [Generowanie przykładowych danych z klasy](#Existing)  
   
--   [Pokaż dane na żywo w aplikacji WPF](#LiveWPF)  
+- [Pokaż dane na żywo w aplikacji WPF](#LiveWPF)  
   
--   [Pokaż dane na żywo w app Store lub numer telefonu](#LiveStore)  
+- [Pokaż dane na żywo w app Store lub numer telefonu](#LiveStore)  
   
-##  <a name="Scratch"></a> Generowanie przykładowych danych  
+## <a name="Scratch"></a> Generowanie przykładowych danych  
  Aby wygenerować dane przykładowe, należy otworzyć dokument XAML. W **danych** panelu, wybierz polecenie **utworzyć dane przykładowe**![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") przycisk, a następnie wybierz  **Nowe dane przykładowe**.  
   
  Definiują strukturę danych w **danych** panelu, a następnie powiązać elementy interfejsu użytkownika na każdej stronie.  
@@ -46,7 +46,7 @@ Można wyświetlić przykładowe dane w projektanta, jak dostosować układ stro
   
  **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [mieszanie się niektóre wiązania danych przy użyciu programu Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).  
   
-##  <a name="Existing"></a> Generowanie przykładowych danych z klasy  
+## <a name="Existing"></a> Generowanie przykładowych danych z klasy  
  Jeśli utworzono już klas, które opisują strukturę danych, można wygenerować przykładowych danych z nich.  
   
  Aby wygenerować dane przykładowe z klasy, należy otworzyć dokument XAML, a następnie w polu **danych** panelu, kliknij przycisk **utworzyć dane przykładowe** ![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png " 30540d76-7256-43ce-b5d9-4b2edf3d339f") przycisk, a następnie kliknij przycisk **Utwórz dane przykładowe z klas**.  
@@ -55,10 +55,10 @@ Można wyświetlić przykładowe dane w projektanta, jak dostosować układ stro
   
  **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [mieszanie się niektóre wiązania danych przy użyciu programu Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).  
   
-##  <a name="LiveWPF"></a> Pokaż dane na żywo w aplikacji WPF  
+## <a name="LiveWPF"></a> Pokaż dane na żywo w aplikacji WPF  
  **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [tworzenie źródła danych XML](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).  
   
-##  <a name="LiveStore"></a> Pokaż dane na żywo w app Store lub numer telefonu  
+## <a name="LiveStore"></a> Pokaż dane na żywo w app Store lub numer telefonu  
  Zobacz [pracę z danych i plików (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx).  
   
 ## <a name="see-also"></a>Zobacz też  
