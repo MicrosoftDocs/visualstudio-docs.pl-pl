@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5350c4cad7acf936d90698a99299757e13a7de3a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6a6c94382bd797b4c24057f623b334b2f2cd2983
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658831"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115578"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Instrukcje: Generowanie fragmentu kodu XML na podstawie schematu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ Edytor XML ma możliwość generowania fragmentów kodu XML na podstawie schemat
   
 - Bieżący element w edytorze może być pusty, bez atrybutów. Na przykład poniżej przedstawiono wszystkie ważne  
   
-  -   `<Account`  
+  - `<Account`  
   
-  -   `<Account>`  
+  - `<Account>`  
   
-  -   `<Account></Account>`  
+  - `<Account></Account>`  
   
 - Kursor musi znajdować się natychmiast na prawo od nazwy elementu.  
   
@@ -51,31 +51,31 @@ Edytor XML ma możliwość generowania fragmentów kodu XML na podstawie schemat
   
 #### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Aby utworzyć nowy plik XML i skojarzyć go z schematu XML  
   
-1.  Na **pliku** menu wskaż **New**i kliknij przycisk **pliku**.  
+1. Na **pliku** menu wskaż **New**i kliknij przycisk **pliku**.  
   
-2.  Wybierz **pliku XML** w **szablony** okienku i kliknij przycisk **Otwórz**.  
+2. Wybierz **pliku XML** w **szablony** okienku i kliknij przycisk **Otwórz**.  
   
      Nowy plik jest otwarty w edytorze. Ten plik zawiera deklarację XML domyślne `<?xml version="1.0" encoding="utf-8">`.  
   
-3.  W oknie dialogowym właściwości dokumentu, kliknij przycisk przeglądania (**...** ) na **schematów** pola.  
+3. W oknie dialogowym właściwości dokumentu, kliknij przycisk przeglądania (**...** ) na **schematów** pola.  
   
      **Schematy XSD** zostanie wyświetlone okno dialogowe.  
   
-4.  Kliknij przycisk **Dodaj**.  
+4. Kliknij przycisk **Dodaj**.  
   
      **Otwieranie schematu XSD** zostanie wyświetlone okno dialogowe.  
   
-5.  Wybierz plik schematu, a następnie kliknij przycisk **Otwórz**.  
+5. Wybierz plik schematu, a następnie kliknij przycisk **Otwórz**.  
   
-6.  Kliknij przycisk **OK**.  
+6. Kliknij przycisk **OK**.  
   
      Schemat XML jest teraz skojarzone z dokumentem XML.  
   
 #### <a name="to-generate-an-xml-snippet"></a>Aby wygenerować fragmentu kodu XML  
   
-1.  Typ `<` w okienku edytora.  
+1. Typ `<` w okienku edytora.  
   
-2.  Lista elementów członkowskich Wyświetla możliwych elementów:  
+2. Lista elementów członkowskich Wyświetla możliwych elementów:  
   
      **! —** Aby dodać komentarz.  
   
@@ -85,11 +85,11 @@ Edytor XML ma możliwość generowania fragmentów kodu XML na podstawie schemat
   
      **Skontaktuj się z pomocą** można dodać elementu głównego.  
   
-3.  Wybierz **skontaktuj się z pomocą** listę elementów członkowskich i naciśnij klawisz ENTER.  
+3. Wybierz **skontaktuj się z pomocą** listę elementów członkowskich i naciśnij klawisz ENTER.  
   
      Edytor dodaje tag początkowy `<Contact` i umieszcza kursor po nazwie elementu.  
   
-4.  Naciśnij klawisz TAB, aby wygenerować dane XML `Contact` elementu na podstawie jego schematu informacji.  
+4. Naciśnij klawisz TAB, aby wygenerować dane XML `Contact` elementu na podstawie jego schematu informacji.  
   
 ### <a name="input"></a>Dane wejściowe  
  Następujący plik schematu jest używany przez instruktażu.  

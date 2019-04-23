@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a283cfd34d0990a59bc5d8ce1109f2c0ae6b38bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4bb7245e57dedf6f94ce7766fcfae24ac930f608
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801054"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117554"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Instrukcje: Debugowanie w klastrze o wysokiej wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,31 +39,31 @@ Debugowanie programu przetwarzania wieloprocesowego w klastrze o wysokiej wydajn
   
 ### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Aby otworzyć okno dialogowe Filtr punktów przerwania  
   
-1.  Kliknij prawym przyciskiem myszy symbol punktu przerwania w oknie źródła, **dezasemblacji** oknie **stos wywołań** oknie lub **punktów przerwania** okna.  
+1. Kliknij prawym przyciskiem myszy symbol punktu przerwania w oknie źródła, **dezasemblacji** oknie **stos wywołań** oknie lub **punktów przerwania** okna.  
   
-2.  W menu skrótów kliknij **filtru**. Ta opcja może pojawić się u góry poziomie lub w podmenu w obszarze **punktów przerwania**.  
+2. W menu skrótów kliknij **filtru**. Ta opcja może pojawić się u góry poziomie lub w podmenu w obszarze **punktów przerwania**.  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-computer"></a>Aby ustawić punkt przerwania na określonym komputerze  
   
-1.  Pobierz nazwę komputera z **procesy** okna.  
+1. Pobierz nazwę komputera z **procesy** okna.  
   
-2.  Zaznacz punkt przerwania, a następnie otwórz **filtr punktów przerwania** okno dialogowe, zgodnie z opisem w poprzedniej procedurze.  
+2. Zaznacz punkt przerwania, a następnie otwórz **filtr punktów przerwania** okno dialogowe, zgodnie z opisem w poprzedniej procedurze.  
   
-3.  W **filtr punktów przerwania** okno dialogowe, typ:  
+3. W **filtr punktów przerwania** okno dialogowe, typ:  
   
      MachineName =*yourmachinename*  
   
      Aby utworzyć bardziej złożony filtr, można połączyć klauzule za pomocą `&`, operator i `||`, operatora OR `!`, operatora NOT i nawiasów.  
   
-4.  Kliknij przycisk **OK**.  
+4. Kliknij przycisk **OK**.  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-process"></a>Aby ustawić punkt przerwania w określonym procesie  
   
-1.  Pobierz nazwę procesu lub numer identyfikacyjny procesu z **procesy** okna.  
+1. Pobierz nazwę procesu lub numer identyfikacyjny procesu z **procesy** okna.  
   
-2.  Zaznacz punkt przerwania, a następnie otwórz **filtr punktów przerwania** okno dialogowe, jak w pierwszej procedurze.  
+2. Zaznacz punkt przerwania, a następnie otwórz **filtr punktów przerwania** okno dialogowe, jak w pierwszej procedurze.  
   
-3.  W **filtr punktów przerwania** okno dialogowe, typ:  
+3. W **filtr punktów przerwania** okno dialogowe, typ:  
   
      `ProcessName =`  *yourprocessname*  
   
@@ -73,15 +73,15 @@ Debugowanie programu przetwarzania wieloprocesowego w klastrze o wysokiej wydajn
   
      Aby utworzyć bardziej złożony filtr, można połączyć klauzule za pomocą `&`, operator i `||`, operatora OR `!`, operatora NOT i nawiasów.  
   
-4.  Kliknij przycisk **OK**.  
+4. Kliknij przycisk **OK**.  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-thread"></a>Aby ustawić punkt przerwania w określonym wątku  
   
-1.  Pobierz nazwę wątku lub numer identyfikacyjny wątku z **wątków** okna.  
+1. Pobierz nazwę wątku lub numer identyfikacyjny wątku z **wątków** okna.  
   
-2.  Zaznacz punkt przerwania, a następnie otwórz **filtr punktów przerwania** okno dialogowe, zgodnie z opisem w pierwszej procedurze.  
+2. Zaznacz punkt przerwania, a następnie otwórz **filtr punktów przerwania** okno dialogowe, zgodnie z opisem w pierwszej procedurze.  
   
-3.  W **filtr punktów przerwania** okno dialogowe, typ:  
+3. W **filtr punktów przerwania** okno dialogowe, typ:  
   
      `ThreadName =` *yourthreadname*  
   
@@ -91,7 +91,7 @@ Debugowanie programu przetwarzania wieloprocesowego w klastrze o wysokiej wydajn
   
      Aby utworzyć bardziej złożony filtr, można połączyć klauzule za pomocą `&`, operator i `||`, operatora OR `!`, operatora NOT i nawiasów.  
   
-4.  Kliknij przycisk **OK**.  
+4. Kliknij przycisk **OK**.  
   
 ## <a name="example"></a>Przykład  
  Poniższy przykład pokazuje, jak utworzyć filtr dla punktu przerwania na komputerze o nazwie `marvin` i wątek o nazwie `fourier1`.  

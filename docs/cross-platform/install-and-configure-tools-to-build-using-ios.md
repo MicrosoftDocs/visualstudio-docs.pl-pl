@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 990f14d76eabbf1b7ef252234a8625c66ffcdcba
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1bc67385a69f7f96288074afd4c7e5f9cefe8805
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58897585"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114711"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalowanie i Konfigurowanie narzędzia umożliwiające tworzenie za pomocą systemu iOS
 
@@ -66,13 +66,13 @@ Aby zainstalować i używać zdalnego agenta do tworzenia kodu dla systemu iOS, 
 
    `sudo npm install -g npm@latest`
 
-##  <a name="Install"></a> Zainstaluj agenta zdalnego dla systemu iOS
+## <a name="Install"></a> Zainstaluj agenta zdalnego dla systemu iOS
 
 Po zainstalowaniu programu Visual C++ for Cross-Platform Mobile Development w Visual Studio może komunikować się z [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), zdalnego agenta uruchomionego na komputerze Mac do transferu plików, tworzenie i uruchamianie aplikacji systemu iOS oraz wysyłania poleceń do debugowania.
 
 Przed zainstalowaniem agenta zdalnego, upewnij się, że zostały spełnione [wymagania wstępne](#prerequisites) i zainstalowane [Visual C++ dla opracowywania aplikacji mobilnych dla wielu platform](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools).
 
-###  <a name="DownloadInstall"></a> Aby pobrać i zainstalować agenta zdalnego
+### <a name="DownloadInstall"></a> Aby pobrać i zainstalować agenta zdalnego
 
 - W terminalu aplikacji na komputerze Mac wprowadź:
 
@@ -87,11 +87,11 @@ Przed zainstalowaniem agenta zdalnego, upewnij się, że zostały spełnione [wy
 
 Jeżeli zostanie zaktualizowany do nowej wersji programu Visual Studio, należy zaktualizować do bieżącej wersji agenta zdalnego. Aby zaktualizować agenta zdalnego, powtórz kroki, aby pobrać i zainstalować agenta zdalnego.
 
-##  <a name="Start"></a> Uruchom agenta zdalnego
+## <a name="Start"></a> Uruchom agenta zdalnego
 
 Agent zdalny musi być uruchomiony dla programu Visual Studio skompilować i uruchomić kod dla systemu iOS. Program Visual Studio muszą być skojarzone z agentem zdalnym, zanim będzie mogła komunikować się. Domyślnie agent zdalny jest uruchamiany w trybie bezpiecznego połączenia, który wymaga numeru PIN łączyć się z programu Visual Studio.
 
-###  <a name="RemoteAgentStartServer"></a> Aby uruchomić agenta zdalnego
+### <a name="RemoteAgentStartServer"></a> Aby uruchomić agenta zdalnego
 
 - W terminalu aplikacji na komputerze Mac wprowadź:
 
@@ -127,7 +127,7 @@ Po uruchomieniu agenta zdalnego można użyć go w programie Visual Studio, dop�
 
 - W oknie terminalu działa vcremote, wprowadź **kontroli**+**C**.
 
-##  <a name="ConfigureVS"></a> Konfigurowanie agenta zdalnego w programie Visual Studio
+## <a name="ConfigureVS"></a> Konfigurowanie agenta zdalnego w programie Visual Studio
 
 Aby połączyć się z agentem zdalnym z programu Visual Studio, należy określić konfigurację zdalnego w opcjach programu Visual Studio.
 
@@ -164,7 +164,7 @@ Aby połączyć się z agentem zdalnym z programu Visual Studio, należy określ
 
 Visual Studio używa te same informacje, aby nawiązać połączenie zdalnego agenta na komputerze Mac, zawsze możesz użyć. Nie trzeba wykonać parowania programu Visual Studio z agentem zdalnym ponownie chyba że Wygeneruj nowy certyfikat zabezpieczeń na komputerze Mac lub zmian adresów IP lub nazwy hosta.
 
-##  <a name="GeneratePIN"></a> Generowanie nowego zabezpieczającego numeru PIN
+## <a name="GeneratePIN"></a> Generowanie nowego zabezpieczającego numeru PIN
 
 Po uruchomieniu agenta zdalnego po raz pierwszy, wygenerowany kod PIN jest ważny przez ograniczony okres — domyślnie 10 minut. Visual Studio nie parowania z agentem zdalnym przed wygaśnięciem, należy wygenerować nowy kod PIN.
 
@@ -178,7 +178,7 @@ Po uruchomieniu agenta zdalnego po raz pierwszy, wygenerowany kod PIN jest ważn
 
    Agent zdalny generuje nowy tymczasowy numer PIN. Aby sparować programu Visual Studio za pomocą nowego numeru PIN, powtórz kroki opisane w [skonfigurować agenta zdalnego w programie Visual Studio](#ConfigureVS).
 
-##  <a name="GenerateCert"></a> Wygeneruj nowy certyfikat serwera
+## <a name="GenerateCert"></a> Wygeneruj nowy certyfikat serwera
 
 Ze względów bezpieczeństwa serwera certyfikatów tej pary programu Visual Studio z agentem zdalnym są powiązane z nazwy hosta lub adres IP Twojego komputera Mac. W przypadku zmiany tych wartości, należy wygenerować nowy certyfikat serwera i następnie ponownie skonfigurować program Visual Studio z nowymi wartościami.
 
@@ -200,7 +200,7 @@ Ze względów bezpieczeństwa serwera certyfikatów tej pary programu Visual Stu
 
 1. Aby sparować programu Visual Studio za pomocą nowego numeru PIN, powtórz kroki opisane w [skonfigurować agenta zdalnego w programie Visual Studio](#ConfigureVS).
 
-##  <a name="ConfigureMac"></a> Konfigurowanie zdalnego agenta na komputerze Mac
+## <a name="ConfigureMac"></a> Konfigurowanie zdalnego agenta na komputerze Mac
 
 Można skonfigurować agenta zdalnego przy użyciu różnych opcji wiersza polecenia. Na przykład można określić port do nasłuchiwania żądań kompilacji i określ maksymalną liczbę kompilacji do obsługi w systemie plików. Domyślnie limit wynosi 10 kompilacji. Spowoduje to usunięcie zdalnego agenta kompilacji, które przekraczają maksimum podczas zamykania.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 800fa29682460991ca28a0dacb6d5b5a4a9838d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 01366bfd0f32f9cbf731613339f2c592873e2623
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805498"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114109"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Przewodnik: Brak obiektów spowodowany błędnie skonfigurowanym potokiem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../includes/v
   
  Ten instruktaż ilustruje następujące zadania:  
   
--   Za pomocą **Lista zdarzeń graficznych** do lokalizowania potencjalnych źródeł problemu.  
+- Za pomocą **Lista zdarzeń graficznych** do lokalizowania potencjalnych źródeł problemu.  
   
--   Za pomocą **etapy potoku grafiki** okna, aby sprawdzić efekt `DrawIndexed` wywołania interfejsu API Direct3D.  
+- Za pomocą **etapy potoku grafiki** okna, aby sprawdzić efekt `DrawIndexed` wywołania interfejsu API Direct3D.  
   
--   Sprawdzanie kontekstu urządzenia, aby upewnić się, że etapu programu do cieniowania nie została ustawiona.  
+- Sprawdzanie kontekstu urządzenia, aby upewnić się, że etapu programu do cieniowania nie została ustawiona.  
   
--   Za pomocą **etapy potoku grafiki** okna razem z **stos wywołań zdarzenia grafiki** ułatwia znalezienie źródła programu do cieniowania pikseli nie ustawiono.  
+- Za pomocą **etapy potoku grafiki** okna razem z **stos wywołań zdarzenia grafiki** ułatwia znalezienie źródła programu do cieniowania pikseli nie ustawiono.  
   
 ## <a name="scenario"></a>Scenariusz  
  Gdy obiekt jest brak w 3-w aplikacji, jest czasami ponieważ jeden z etapów modułu cieniującego nie została ustawiona przed wyświetleniem obiektu. W aplikacjach, które mają potrzeby renderowania prosty źródłem tego błędu jest zazwyczaj znajduje się gdzieś w stosie wywołań wywołania rysowania obiektu. Jednak optymalizacji, niektóre aplikacje usługi batch razem obiektów, które mają programów do cieniowania, tekstury lub inne dane w typowych w celu zminimalizowania — zmiana stanu obciążenie. W tych aplikacjach źródła błędu może być ukryty w systemu przetwarzania wsadowego, a nie znajduje się w stosie wywołań wywołania rysowania. Scenariusz, w tym przewodniku przedstawiono aplikację, która ma potrzeby renderowania proste, a źródła błędu można znaleźć w stosie wywołań.  

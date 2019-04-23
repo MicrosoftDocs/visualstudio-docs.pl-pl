@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
-ms.openlocfilehash: e918c8e83909bb5a04d27f72cb07c7135b00daa9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a14fcb8e81261962e8851347a54d7c8d52565d20
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783360"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110443"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>Przewodnik: Wyświetlanie tagi inteligentne
 Tagi inteligentne są przestarzałe na rzecz żarówki. Zobacz [instruktażu: Wyświetlanie sugestie z żarówką](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
@@ -35,57 +35,57 @@ Tagi inteligentne są przestarzałe na rzecz żarówki. Zobacz [instruktażu: Wy
   
 #### <a name="to-create-a-mef-project"></a>Aby utworzyć projekt MEF  
   
-1.  Utwórz projekt Klasifikace edytora. Nazwij rozwiązanie `SmartTagTest`.  
+1. Utwórz projekt Klasifikace edytora. Nazwij rozwiązanie `SmartTagTest`.  
   
-2.  Otwórz plik source.extension.vsixmanifest w edytorze manifestu VSIX.  
+2. Otwórz plik source.extension.vsixmanifest w edytorze manifestu VSIX.  
   
-3.  Upewnij się, że **zasoby** sekcja zawiera `Microsoft.VisualStudio.MefComponent` typu **źródła** ustawiono `A project in current solution`, i **projektu** jest ustawiona na SmartTagTest.dll.  
+3. Upewnij się, że **zasoby** sekcja zawiera `Microsoft.VisualStudio.MefComponent` typu **źródła** ustawiono `A project in current solution`, i **projektu** jest ustawiona na SmartTagTest.dll.  
   
-4.  Zapisz i zamknij source.extension.vsixmanifest.  
+4. Zapisz i zamknij source.extension.vsixmanifest.  
   
-5.  Dodaj następujące odwołanie do projektu i ustaw **CopyLocal** do `false`:  
+5. Dodaj następujące odwołanie do projektu i ustaw **CopyLocal** do `false`:  
   
      Microsoft.VisualStudio.Language.Intellisense  
   
-6.  Usuń istniejące pliki klasy.  
+6. Usuń istniejące pliki klasy.  
   
 ## <a name="implementing-a-tagger-for-smart-tags"></a>Implementowanie moduł Tagujący tagi inteligentne  
   
 #### <a name="to-implement-a-tagger-for-smart-tags"></a>Aby zaimplementować moduł tagujący tagów inteligentnych  
   
-1.  Dodaj plik klasy i nadaj mu nazwę `TestSmartTag`.  
+1. Dodaj plik klasy i nadaj mu nazwę `TestSmartTag`.  
   
-2.  Dodaj następujące instrukcje importu:  
+2. Dodaj następujące instrukcje importu:  
   
      [!code-csharp[VSSDKSmartTagTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#1)]
      [!code-vb[VSSDKSmartTagTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#1)]  
   
-3.  Dodaj klasę o nazwie `TestSmartTag` tej, która dziedziczy <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
+3. Dodaj klasę o nazwie `TestSmartTag` tej, która dziedziczy <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
   
      [!code-csharp[VSSDKSmartTagTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#2)]
      [!code-vb[VSSDKSmartTagTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#2)]  
   
-4.  Dodaj Konstruktor dla tej klasy, która wywołuje konstruktora bazowego z <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> z <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, co spowoduje niebieska linia były wyświetlane pod pierwszego znaku słowa. (Jeśli używasz <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, czerwoną linią pojawią się w ostatnim znakiem słowa.)  
+4. Dodaj Konstruktor dla tej klasy, która wywołuje konstruktora bazowego z <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> z <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, co spowoduje niebieska linia były wyświetlane pod pierwszego znaku słowa. (Jeśli używasz <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, czerwoną linią pojawią się w ostatnim znakiem słowa.)  
   
      [!code-csharp[VSSDKSmartTagTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#3)]
      [!code-vb[VSSDKSmartTagTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#3)]  
   
-5.  Dodaj klasę o nazwie `TestSmartTagger` tej, która dziedziczy <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> typu `TestSmartTag`i implementuje <xref:System.IDisposable>.  
+5. Dodaj klasę o nazwie `TestSmartTagger` tej, która dziedziczy <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> typu `TestSmartTag`i implementuje <xref:System.IDisposable>.  
   
      [!code-csharp[VSSDKSmartTagTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#4)]
      [!code-vb[VSSDKSmartTagTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#4)]  
   
-6.  Dodaj następujące pola prywatne do klasy moduł tagujący.  
+6. Dodaj następujące pola prywatne do klasy moduł tagujący.  
   
      [!code-csharp[VSSDKSmartTagTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#5)]
      [!code-vb[VSSDKSmartTagTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#5)]  
   
-7.  Dodaj Konstruktor, który ustawia pola prywatne i subskrybuje <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> zdarzeń.  
+7. Dodaj Konstruktor, który ustawia pola prywatne i subskrybuje <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> zdarzeń.  
   
      [!code-csharp[VSSDKSmartTagTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#6)]
      [!code-vb[VSSDKSmartTagTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#6)]  
   
-8.  Implementowanie <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> tak, aby tagu jest tworzona dla bieżącego słowa. (Ta metoda wywołuje również metody prywatnej `GetSmartTagActions` , zostało wyjaśnione w dalszej części.)  
+8. Implementowanie <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> tak, aby tagu jest tworzona dla bieżącego słowa. (Ta metoda wywołuje również metody prywatnej `GetSmartTagActions` , zostało wyjaśnione w dalszej części.)  
   
      [!code-csharp[VSSDKSmartTagTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#7)]
      [!code-vb[VSSDKSmartTagTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#7)]  
@@ -114,17 +114,17 @@ Tagi inteligentne są przestarzałe na rzecz żarówki. Zobacz [instruktażu: Wy
   
 #### <a name="to-implement-the-smart-tag-tagger-provider"></a>Do implementowania dostawcy moduł tagujący tagów inteligentnych  
   
-1.  Dodaj klasę o nazwie `TestSmartTagTaggerProvider` tej, która dziedziczy <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>. Wyeksportuj go z <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> z "text" <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> z wcześniej = "default" i <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> z <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
+1. Dodaj klasę o nazwie `TestSmartTagTaggerProvider` tej, która dziedziczy <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>. Wyeksportuj go z <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> z "text" <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> z wcześniej = "default" i <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> z <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
   
      [!code-csharp[VSSDKSmartTagTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#12)]
      [!code-vb[VSSDKSmartTagTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#12)]  
   
-2.  Importuj <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> jako właściwość.  
+2. Importuj <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> jako właściwość.  
   
      [!code-csharp[VSSDKSmartTagTest#13](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#13)]
      [!code-vb[VSSDKSmartTagTest#13](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#13)]  
   
-3.  Implementowanie <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> metody.  
+3. Implementowanie <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> metody.  
   
      [!code-csharp[VSSDKSmartTagTest#14](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#14)]
      [!code-vb[VSSDKSmartTagTest#14](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#14)]  
@@ -168,19 +168,19 @@ Tagi inteligentne są przestarzałe na rzecz żarówki. Zobacz [instruktażu: Wy
   
 #### <a name="to-build-and-test-the-smarttagtest-solution"></a>Aby skompilować i przetestować rozwiązanie SmartTagTest  
   
-1.  Skompiluj rozwiązanie.  
+1. Skompiluj rozwiązanie.  
   
-2.  Po uruchomieniu tego projektu w debugerze drugiego wystąpienia programu Visual Studio jest uruchomiony.  
+2. Po uruchomieniu tego projektu w debugerze drugiego wystąpienia programu Visual Studio jest uruchomiony.  
   
-3.  Utwórz plik tekstowy i wpisz jakiś tekst.  
+3. Utwórz plik tekstowy i wpisz jakiś tekst.  
   
      Niebieska linia powinna być wyświetlana w obszarze pierwszą literę pierwszy wyraz tekstu.  
   
-4.  Przesuń wskaźnik myszy nad niebieska linia.  
+4. Przesuń wskaźnik myszy nad niebieska linia.  
   
      Przycisk powinien zostać wyświetlony obok wskaźnika.  
   
-5.  Po kliknięciu przycisku, powinny być wyświetlane dwie sugerowane akcje: **Konwertuj na wielkie litery** i **konwersji na małe litery**. Jeśli klikniesz pierwszą akcją, cały tekst w bieżącego słowa powinny być konwertowane na wielkie litery. Jeśli klikniesz drugiej akcji, cały tekst powinny być konwertowane na małe litery.  
+5. Po kliknięciu przycisku, powinny być wyświetlane dwie sugerowane akcje: **Konwertuj na wielkie litery** i **konwersji na małe litery**. Jeśli klikniesz pierwszą akcją, cały tekst w bieżącego słowa powinny być konwertowane na wielkie litery. Jeśli klikniesz drugiej akcji, cały tekst powinny być konwertowane na małe litery.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik: Łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

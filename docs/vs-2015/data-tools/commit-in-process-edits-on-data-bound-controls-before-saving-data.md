@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 813e49ab316f1fe74daa7a797dd6e16a878667d1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ae5d345da49ee33841a50622f3d1c59e2309890c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664586"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106296"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Zatwierdzanie edycji wewnątrzprocesowych w ramach kontrolek powiązanych z danymi przed zapisaniem danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +44,12 @@ Podczas edytowania wartości w formantach powiązanych z danymi, użytkownicy mu
   
 ## <a name="to-call-endedit-for-all-bindingsource-components-on-a-form"></a>Aby wywołać EndEdit — dla wszystkich składników BindingSource w formularzu  
   
-1.  Dodaj następujący kod do formularza, który zawiera <xref:System.Windows.Forms.BindingSource> składników.  
+1. Dodaj następujący kod do formularza, który zawiera <xref:System.Windows.Forms.BindingSource> składników.  
   
      [!code-csharp[VSProDataOrcasEndEditOnAll#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasEndEditOnAll/CS/Form1.cs#1)]
      [!code-vb[VSProDataOrcasEndEditOnAll#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasEndEditOnAll/VB/Form1.vb#1)]  
   
-2.  Dodaj następujący wiersz kodu, tuż przed wszelkie wywołania, aby zapisać dane formularza ( `TableAdapterManager.UpdateAll()` metoda):  
+2. Dodaj następujący wiersz kodu, tuż przed wszelkie wywołania, aby zapisać dane formularza ( `TableAdapterManager.UpdateAll()` metoda):  
   
      [!code-csharp[VSProDataOrcasEndEditOnAll#2](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasEndEditOnAll/CS/Form1.cs#2)]
      [!code-vb[VSProDataOrcasEndEditOnAll#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasEndEditOnAll/VB/Form1.vb#2)]  

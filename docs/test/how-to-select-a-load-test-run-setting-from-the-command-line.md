@@ -9,12 +9,12 @@ ms.assetid: 175d1d58-f09a-4449-b132-a29a394a7c8e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e022eec099682581f244ad426500a512c63035d4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 466ea9a7e0b877af55219be497eefde963e80853
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936164"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114161"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Instrukcje: Wybierz ustawienie, aby korzystać z wiersza polecenia do uruchomienia testu obciążenia
 
@@ -26,11 +26,11 @@ Jeśli test obciążeniowy zawiera tylko jedno ustawienie uruchamiania, zawsze j
 
 ## <a name="to-change-the-run-setting-from-the-command-line"></a>Aby zmienić parametr uruchomieniowy, z poziomu wiersza polecenia
 
-1.  Jeśli chcesz korzystać z zalet strategii parametru kontekstu przy użyciu różnych parametrów uruchomieniowych z wiersza polecenia, użyj następującego polecenia:
+1. Jeśli chcesz korzystać z zalet strategii parametru kontekstu przy użyciu różnych parametrów uruchomieniowych z wiersza polecenia, użyj następującego polecenia:
 
     `Set Test.UseRunSetting= CorporateStagingWebServer`
 
-2.  Uruchom test obciążenia przy użyciu przełącznika mstest:
+2. Uruchom test obciążenia przy użyciu przełącznika mstest:
 
     `mstest /testcontainer:loadtest1.loadtest`
 

@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a1a2ddeb3ab46bba30a505782fdd18d7df49574d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1052529bb743091398b55535b231597c6609add9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796869"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110495"
 ---
 # <a name="accessing-models-from-text-templates"></a>Uzyskiwanie dostępu do modeli z poziomu szablonów tekstu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,15 +57,15 @@ Here is a list of elements in the model:
   
  Zwróć uwagę na następujące kwestie dotyczące tego szablonu:  
   
--   Szablon można użyć klas domeny, właściwości i relacje, które są zdefiniowane w definicji DSL.  
+- Szablon można użyć klas domeny, właściwości i relacje, które są zdefiniowane w definicji DSL.  
   
--   Szablon ładuje plik modelu, który określisz w `requires` właściwości.  
+- Szablon ładuje plik modelu, który określisz w `requires` właściwości.  
   
--   Właściwość `this` zawiera element główny. W efekcie kodu można przejść do innych elementów modelu. Nazwa właściwości jest zwykle taka sama jak klasa domeny katalogu głównego DSL. W tym przykładzie jest to `this.ExampleModel`.  
+- Właściwość `this` zawiera element główny. W efekcie kodu można przejść do innych elementów modelu. Nazwa właściwości jest zwykle taka sama jak klasa domeny katalogu głównego DSL. W tym przykładzie jest to `this.ExampleModel`.  
   
--   Mimo że język, w którym zapisywane są fragmenty kodu C#, można wygenerować tekstu dowolnego rodzaju. Można także napisać kod w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] przez dodanie właściwości `language="VB"` do `template` dyrektywy.  
+- Mimo że język, w którym zapisywane są fragmenty kodu C#, można wygenerować tekstu dowolnego rodzaju. Można także napisać kod w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] przez dodanie właściwości `language="VB"` do `template` dyrektywy.  
   
--   Aby debugować szablonu, należy dodać `debug="true"` do `template` dyrektywy. Szablon zostanie otwarty w innym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Jeśli wystąpi wyjątek. Jeśli chcesz przerwać działanie debugera w określonym miejscu w kodzie, instrukcji insert `System.Diagnostics.Debugger.Break();`  
+- Aby debugować szablonu, należy dodać `debug="true"` do `template` dyrektywy. Szablon zostanie otwarty w innym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Jeśli wystąpi wyjątek. Jeśli chcesz przerwać działanie debugera w określonym miejscu w kodzie, instrukcji insert `System.Diagnostics.Debugger.Break();`  
   
      Aby uzyskać więcej informacji, zobacz [debugowanie szablonu tekstowego T4](../modeling/debugging-a-t4-text-template.md).  
   
@@ -80,9 +80,9 @@ Here is a list of elements in the model:
   
  Procesor dyrektywy DSL wykonuje dwa główne zadania:  
   
--   Wstawia skutecznie dyrektywach zestawu i importowania do szablonu, który odwołuje się do DSL. Dzięki temu można użyć klasy usługi domeny w kod szablonu.  
+- Wstawia skutecznie dyrektywach zestawu i importowania do szablonu, który odwołuje się do DSL. Dzięki temu można użyć klasy usługi domeny w kod szablonu.  
   
--   Ładuje plik który określisz w `requires` parametru i ustawia właściwość `this` odwołujący się do elementu głównego załadować modelu.  
+- Ładuje plik który określisz w `requires` parametru i ustawia właściwość `this` odwołujący się do elementu głównego załadować modelu.  
   
 ## <a name="validating-the-model-before-running-the-template"></a>Sprawdzanie poprawności modelu przed uruchomieniem tego szablonu  
  Może spowodować modelu zostanie wykonane sprawdzanie poprawności, zanim zostanie wykonany szablonu.  
@@ -100,7 +100,7 @@ Here is a list of elements in the model:
   
    Jeśli zostanie znaleziony błąd, będą raportowane w oknie błędów, a plik wynik będzie zawierać komunikat o błędzie.  
   
-##  <a name="Multiple"></a> Uzyskiwanie dostępu do wielu modeli z szablonu tekstowego  
+## <a name="Multiple"></a> Uzyskiwanie dostępu do wielu modeli z szablonu tekstowego  
   
 > [!NOTE]
 >  Ta metoda umożliwia odczyt wiele modeli, w tym samym szablonie, ale nie obsługuje odwołań ModelBus. Modele, które są powiązane przez odwołania ModelBus zamieszczono [przy użyciu programu Visual Studio ModelBus w szablonie tekstowym](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  

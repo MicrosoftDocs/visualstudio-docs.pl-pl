@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee56c4588bbbd3ec5cfca03bbd18c6dec1732fbf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a2c8d54b1625a4097d6b5a0acf6555d74fe83001
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766891"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116605"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Refaktoryzacja hermetyzowania pola (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "54766891"
   
 ### <a name="to-create-a-property-from-a-field"></a>Aby utworzyć właściwość z polem  
   
-1.  Utwórz aplikację konsoli o nazwie `EncapsulateFieldExample`, a następnie zastąp `Program` poniższym przykładowym kodem.  
+1. Utwórz aplikację konsoli o nazwie `EncapsulateFieldExample`, a następnie zastąp `Program` poniższym przykładowym kodem.  
   
     ```csharp  
     class Square  
@@ -58,13 +58,13 @@ ms.locfileid: "54766891"
     }  
     ```  
   
-2.  W [Edytor kodu](../ide/writing-code-in-the-code-and-text-editor.md), umieść kursor w deklaracji, nazwę pola, które mają do hermetyzacji. W poniższym przykładzie, umieść kursor na słowo `width`:  
+2. W [Edytor kodu](../ide/writing-code-in-the-code-and-text-editor.md), umieść kursor w deklaracji, nazwę pola, które mają do hermetyzacji. W poniższym przykładzie, umieść kursor na słowo `width`:  
   
     ```csharp  
     public int width, height;  
     ```  
   
-3.  Na **Refaktoryzuj** menu, kliknij przycisk **Hermetyzuj pole**.  
+3. Na **Refaktoryzuj** menu, kliknij przycisk **Hermetyzuj pole**.  
   
      **Hermetyzuj pole** pojawi się okno dialogowe.  
   
@@ -72,11 +72,11 @@ ms.locfileid: "54766891"
   
      Również kliknięciu prawym przyciskiem myszy kursora, wskaż polecenie **Refaktoryzuj**, a następnie kliknij przycisk **Hermetyzuj pole** do wyświetlenia **Hermetyzuj pole** okno dialogowe.  
   
-4.  Określ ustawienia.  
+4. Określ ustawienia.  
   
-5.  Naciśnij klawisz ENTER lub kliknij przycisk **OK** przycisku.  
+5. Naciśnij klawisz ENTER lub kliknij przycisk **OK** przycisku.  
   
-6.  W przypadku wybrania **podgląd zmian odwołania** opcji, a następnie **podgląd zmian odwołania** zostanie otwarte okno. Kliknij przycisk **Zastosuj** przycisku.  
+6. W przypadku wybrania **podgląd zmian odwołania** opcji, a następnie **podgląd zmian odwołania** zostanie otwarte okno. Kliknij przycisk **Zastosuj** przycisku.  
   
      Następujące `get` i `set` kod dostępu jest wyświetlany w pliku źródłowym:  
   

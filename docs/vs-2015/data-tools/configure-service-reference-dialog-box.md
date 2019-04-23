@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56e8a9210b842d6fe63140f643ac3c0712cd100d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 18ea294c204f1512aaa3eeae904eed52edf8e9f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656768"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114148"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Konfigurowanie odwołania do usługi — Okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,17 +34,17 @@ ms.locfileid: "59656768"
   
 ## <a name="task-list"></a>Lista zadań  
   
--   Aby zmienić adres, na którym jest hostowana usługa WCF, wprowadź nowy adres w **adres** pola.  
+- Aby zmienić adres, na którym jest hostowana usługa WCF, wprowadź nowy adres w **adres** pola.  
   
--   Aby zmienić poziom dostępu dla klas w klienta WCF, wybierz słowo kluczowe poziom dostępu w **poziom do wygenerowanych klas dostępu** listy.  
+- Aby zmienić poziom dostępu dla klas w klienta WCF, wybierz słowo kluczowe poziom dostępu w **poziom do wygenerowanych klas dostępu** listy.  
   
--   Aby asynchroniczne wywoływanie metod klasy usługi WCF, wybierz pozycję **Eneruj operacje asynchroniczne** pole wyboru.  
+- Aby asynchroniczne wywoływanie metod klasy usługi WCF, wybierz pozycję **Eneruj operacje asynchroniczne** pole wyboru.  
   
--   Aby wygenerować typy kontraktu komunikatu w klienta WCF, wybierz **zawsze Generuj kontrakty komunikatów** pole wyboru.  
+- Aby wygenerować typy kontraktu komunikatu w klienta WCF, wybierz **zawsze Generuj kontrakty komunikatów** pole wyboru.  
   
--   Aby określić typy kolekcji list lub słownika dla klienta programu WCF, wybierz typy z **— typ kolekcji** i **słownikowy typ kolekcji** listy.  
+- Aby określić typy kolekcji list lub słownika dla klienta programu WCF, wybierz typy z **— typ kolekcji** i **słownikowy typ kolekcji** listy.  
   
--   Aby wyłączyć, typ udostępniania, wyczyść **ponownie użyj typów w przywoływanych zestawach** pole wyboru. Aby włączyć udostępnianie dla podzbioru przywoływanych zestawach typu, wybierz **ponownie użyj typów w przywoływanych zestawach** pole wyboru, wybierz opcję **ponownie użyj typów w określonych przywoływanych zestawach**i wybierz żądany przywoływane w **przywoływane zestawy listy**.  
+- Aby wyłączyć, typ udostępniania, wyczyść **ponownie użyj typów w przywoływanych zestawach** pole wyboru. Aby włączyć udostępnianie dla podzbioru przywoływanych zestawach typu, wybierz **ponownie użyj typów w przywoływanych zestawach** pole wyboru, wybierz opcję **ponownie użyj typów w określonych przywoływanych zestawach**i wybierz żądany przywoływane w **przywoływane zestawy listy**.  
   
 ## <a name="uielement-list"></a>Lista elementów UI  
  **Adres**  

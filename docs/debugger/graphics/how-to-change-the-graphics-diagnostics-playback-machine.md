@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0af2fc0c847c88aa4cc7cb0b15a80e9bdfa4703d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 11f5c8e32086b32c0c7167a70588ee446ec409c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723347"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107245"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Instrukcje: Zmiana maszyny odtwarzania diagnostyki grafiki
 Można odtwarzać informacji graficznych przy użyciu komputera lokalnego lub za pomocą zdalnym komputerze lub urządzeniu.
@@ -23,27 +23,27 @@ Można odtwarzać informacji graficznych przy użyciu komputera lokalnego lub za
 
 #### <a name="to-use-the-local-machine-to-play-back-graphics-information"></a>Aby użyć komputera lokalnego do odtwarzania informacji graficznych
 
-1.  W oknie dokumentu dziennika grafiki, wybierz **maszynę odtwarzającą** łącza. **Połączenia zdalnego debugera** pojawi się okno dialogowe.
+1. W oknie dokumentu dziennika grafiki, wybierz **maszynę odtwarzającą** łącza. **Połączenia zdalnego debugera** pojawi się okno dialogowe.
 
-2.  W obszarze **Konfiguracja ręczna**w **adres** właściwości wprowadź `localhost`.
+2. W obszarze **Konfiguracja ręczna**w **adres** właściwości wprowadź `localhost`.
 
-3.  Ustaw **tryb uwierzytelniania** właściwości **Brak**.
+3. Ustaw **tryb uwierzytelniania** właściwości **Brak**.
 
-4.  Wybierz **wybierz** przycisku.
+4. Wybierz **wybierz** przycisku.
 
 #### <a name="to-use-a-remote-machine-to-play-back-graphics-information"></a>Aby użyć komputera zdalnego do odtwarzania informacji graficznych
 
-1.  W oknie dokumentu dziennika grafiki, wybierz **maszynę odtwarzającą** łącza. **Połączenia zdalnego debugera** pojawi się okno dialogowe.
+1. W oknie dokumentu dziennika grafiki, wybierz **maszynę odtwarzającą** łącza. **Połączenia zdalnego debugera** pojawi się okno dialogowe.
 
-2.  W obszarze **Konfiguracja ręczna**w **adres** właściwość, wprowadź nazwę domeny Windows lub adres IP komputera lub urządzenia, które chcesz użyć do odtwarzania informacji graficznych.
+2. W obszarze **Konfiguracja ręczna**w **adres** właściwość, wprowadź nazwę domeny Windows lub adres IP komputera lub urządzenia, które chcesz użyć do odtwarzania informacji graficznych.
 
-3.  Określ rodzaj autoryzacji, którego chcesz użyć do zabezpieczenia połączenia z komputerem odtwarzania.
+3. Określ rodzaj autoryzacji, którego chcesz użyć do zabezpieczenia połączenia z komputerem odtwarzania.
 
-    -   W przypadku uwierzytelniania Windows ustaw **tryb uwierzytelniania** właściwości **Windows**.
+    - W przypadku uwierzytelniania Windows ustaw **tryb uwierzytelniania** właściwości **Windows**.
 
-    -   Aby nie używać uwierzytelniania, należy ustawić **tryb uwierzytelniania** właściwości **Brak**.
+    - Aby nie używać uwierzytelniania, należy ustawić **tryb uwierzytelniania** właściwości **Brak**.
 
-4.  Wybierz **wybierz** przycisku.
+4. Wybierz **wybierz** przycisku.
 
 > [!NOTE]
 >  **Połączenia zdalnego debugera** okno dialogowe mogą być również wyświetlane obiekty docelowe debugowania zdalnego, które są podłączone bezpośrednio do komputera deweloperskiego lub znajdują się w tej samej podsieci. Można użyć jednej z tych celów zdalnego debugowania jako maszyny odtwarzania diagnostyki grafiki bez ręcznej konfiguracji. W **połączenia zdalnego debugera** okna dialogowego Wybierz element docelowy ma, a następnie wybierz **wybierz** przycisku.

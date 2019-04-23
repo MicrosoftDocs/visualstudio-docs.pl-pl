@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dbdb6c819ca8f6e109d7f58fb799b08378a963da
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 12a64f35e7d530b80e44f3098035093509766c60
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624675"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113032"
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Instrukcje: Programowe Aktualizowanie tekstu zakładki
   Tak, aby przywrócić tekst w późniejszym czasie lub zastępowanie tekstu w zakładce, można wstawić tekst do symbolu zastępczego zakładki w dokumencie programu Microsoft Office Word. Jeśli tworzysz dostosowywania poziomie dokumentu, ale też aktualizować tekstu w <xref:Microsoft.Office.Tools.Word.Bookmark> formant, który jest powiązany z danymi. Aby uzyskać więcej informacji, zobacz [wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).
@@ -42,7 +42,7 @@ ms.locfileid: "56624675"
 
 ### <a name="to-update-bookmark-contents-using-a-bookmark-control"></a>Aby zaktualizować zawartość zakładki przy użyciu formantu zakładki
 
-1.  Należy utworzyć procedurę, która przyjmuje `bookmark` argument nazwy zakładki, a `newText` argumentów dla ciągu można przypisać do <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> właściwości.
+1. Należy utworzyć procedurę, która przyjmuje `bookmark` argument nazwy zakładki, a `newText` argumentów dla ciągu można przypisać do <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> właściwości.
 
     > [!NOTE]
     >  Przypisywanie tekst <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> lub <xref:Microsoft.Office.Tools.Word.Bookmark.FormattedText%2A> właściwość <xref:Microsoft.Office.Tools.Word.Bookmark> formantu zakładki do usunięcia nie powoduje, że.
@@ -50,7 +50,7 @@ ms.locfileid: "56624675"
      [!code-vb[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#63)]
      [!code-csharp[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#63)]
 
-2.  Przypisz *newText* ciągu do <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> właściwość <xref:Microsoft.Office.Tools.Word.Bookmark>.
+2. Przypisz *newText* ciągu do <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> właściwość <xref:Microsoft.Office.Tools.Word.Bookmark>.
 
      [!code-vb[Trin_VstcoreWordAutomation#64](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#64)]
      [!code-csharp[Trin_VstcoreWordAutomation#64](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#64)]
@@ -59,7 +59,7 @@ ms.locfileid: "56624675"
 
 ### <a name="to-update-bookmark-contents-using-a-word-bookmark-object"></a>Aby zaktualizować zawartość zakładki przy użyciu obiektem Bookmark programu Word
 
-1.  Tworzenie procedury, która ma `bookmark` argument dla nazwy <xref:Microsoft.Office.Interop.Word.Bookmark>, a `newText` argumentów dla ciągu można przypisać do <xref:Microsoft.Office.Interop.Word.Range.Text%2A> właściwość zakładki.
+1. Tworzenie procedury, która ma `bookmark` argument dla nazwy <xref:Microsoft.Office.Interop.Word.Bookmark>, a `newText` argumentów dla ciągu można przypisać do <xref:Microsoft.Office.Interop.Word.Range.Text%2A> właściwość zakładki.
 
     > [!NOTE]
     >  Przypisywanie tekstu do natywnego programu Word <xref:Microsoft.Office.Interop.Word.Bookmark> obiektu powoduje, że zakładki do usunięcia.
@@ -67,7 +67,7 @@ ms.locfileid: "56624675"
      [!code-vb[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#65)]
      [!code-csharp[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#65)]
 
-2.  Przypisz *newText* ciągu do <xref:Microsoft.Office.Interop.Word.Range.Text%2A> właściwość zakładki, która automatycznie usuwa zakładki. Następnie ponownie dodać zakładkę do <xref:Microsoft.Office.Interop.Word.Bookmarks> kolekcji.
+2. Przypisz *newText* ciągu do <xref:Microsoft.Office.Interop.Word.Range.Text%2A> właściwość zakładki, która automatycznie usuwa zakładki. Następnie ponownie dodać zakładkę do <xref:Microsoft.Office.Interop.Word.Bookmarks> kolekcji.
 
      Poniższy przykład kodu może służyć w dostosowaniu na poziomie dokumentu.
 

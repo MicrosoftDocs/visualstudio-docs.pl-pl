@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ff50d721b55c4035b636f40d6ccb55cbbd6d79b6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9c4c8cea0b29994bb880dd0d93832da0e875cc56
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662273"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115604"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Instrukcje: Konfigurowanie dziedziczenia za pomocą narzędzia Object Relational Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,27 +27,27 @@ ms.locfileid: "59662273"
   
 ### <a name="to-create-inherited-data-classes"></a>Do tworzenia klas danych dziedziczonych  
   
-1.  Otwórz [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] , dodając **klasy LINQ do SQL** element do istniejącego projektu języka Visual Basic lub C#.  
+1. Otwórz [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] , dodając **klasy LINQ do SQL** element do istniejącego projektu języka Visual Basic lub C#.  
   
-2.  Przeciągnij tabelę, której chcesz użyć jako klasa bazowa na [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+2. Przeciągnij tabelę, której chcesz użyć jako klasa bazowa na [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
-3.  Przeciągnij drugiej kopii tabeli do [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] i zmień jego nazwę. Jest to klasa pochodna, lub podklasę.  
+3. Przeciągnij drugiej kopii tabeli do [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] i zmień jego nazwę. Jest to klasa pochodna, lub podklasę.  
   
-4.  Kliknij przycisk **dziedziczenia** w **Object Relational Designer** karcie **przybornika**, a następnie kliknij podklasy (tabela, nazwa została zmieniona) i połącz go z klasy bazowej.  
+4. Kliknij przycisk **dziedziczenia** w **Object Relational Designer** karcie **przybornika**, a następnie kliknij podklasy (tabela, nazwa została zmieniona) i połącz go z klasy bazowej.  
   
     > [!NOTE]
     >  Kliknij przycisk **dziedziczenia** pozycja **przybornika** i zwolnij przycisk myszy, kliknij drugą kopię klasy utworzonego w kroku 3, a następnie kliknij pierwszą klasą utworzony w kroku 2. Pierwsza klasa będzie wskazywać symbolu strzałki na linii dziedziczenia.  
   
-5.  W każdej klasy należy usunąć wszystkie właściwości obiektu, które nie mają być wyświetlane i które nie są używane do skojarzenia. Zostanie wyświetlony błąd, jeśli użytkownik podejmie próbę usunięcia właściwości obiektu, używany do skojarzenia: [Właściwość \<nazwa właściwości > nie można usunąć, ponieważ uczestniczy w skojarzeniu \<Nazwa skojarzenia >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
+5. W każdej klasy należy usunąć wszystkie właściwości obiektu, które nie mają być wyświetlane i które nie są używane do skojarzenia. Zostanie wyświetlony błąd, jeśli użytkownik podejmie próbę usunięcia właściwości obiektu, używany do skojarzenia: [Właściwość \<nazwa właściwości > nie można usunąć, ponieważ uczestniczy w skojarzeniu \<Nazwa skojarzenia >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
   
     > [!NOTE]
     >  Ponieważ klasa pochodna dziedziczy właściwości zdefiniowane w swojej klasie bazowej, te same kolumny nie można zdefiniować w każdej klasie. (Kolumny są implementowane jako właściwości). Tworzenie kolumny w klasie pochodnej można włączyć, ustawiając modyfikator dziedziczenia we właściwości w klasie bazowej. Aby uzyskać więcej informacji, zobacz [NOT IN kompilacji: Zastępowanie właściwości i metody](http://msdn.microsoft.com/2167e8f5-1225-4b13-9ebd-02591ba90213).  
   
-6.  Zaznacz wiersz dziedziczenia w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+6. Zaznacz wiersz dziedziczenia w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
-7.  W **właściwości** oknie **właściwość rozróżniacza** na nazwę kolumny, która służy do rozróżnienia rekordów w Twoich zajęciach.  
+7. W **właściwości** oknie **właściwość rozróżniacza** na nazwę kolumny, która służy do rozróżnienia rekordów w Twoich zajęciach.  
   
-8.  Ustaw **wartość dyskryminatora klasy pochodnej** właściwości do wartości w bazie danych, która określa rekord jako typ dziedziczone. (Jest to wartość przechowywaną w kolumna dyskryminatora i służący do wyznaczenia odziedziczoną klasę).  
+8. Ustaw **wartość dyskryminatora klasy pochodnej** właściwości do wartości w bazie danych, która określa rekord jako typ dziedziczone. (Jest to wartość przechowywaną w kolumna dyskryminatora i służący do wyznaczenia odziedziczoną klasę).  
   
 9. Ustaw **wartości dyskryminator klasy bazowej** właściwości wartość, która określa rekord jako typu podstawowego. (Jest to wartość przechowywaną w kolumna dyskryminatora i służący do wyznaczenia klasy podstawowej).  
   

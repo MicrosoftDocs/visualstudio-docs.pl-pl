@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3ebe13e2ffff64998638d2af39d6959fa1f2f20a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bb1b6d865063486aec91c6e3393a942b7ad4a67c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797545"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109273"
 ---
 # <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Błąd: Debugowanie w trybie mieszanym jest obsługiwane tylko w przypadku korzystania z programu Microsoft .NET Framework 2.0 lub nowszej wersji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Aby debugować kod mieszany natywnych i zarządzanych, konieczne jest posiadanie
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Uaktualnij [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] do wersji 2.0, 3.0, 3.5 lub 4.0.  
+- Uaktualnij [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] do wersji 2.0, 3.0, 3.5 lub 4.0.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Konfigurowanie narzędzi zdalnych na urządzeniu](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

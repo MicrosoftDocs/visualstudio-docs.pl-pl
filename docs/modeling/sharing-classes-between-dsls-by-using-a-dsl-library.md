@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 640936fbe0218bbb8e6d710547c39a4bfbf0bc9e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 36c49d3447a5f1fafcf4601057c66ebedcb193ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918120"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087485"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Udostępnianie klas między językami DSL za pomocą biblioteki DSL
 W Visual Studio Visualization i Modeling SDK można utworzyć niekompletne definicji DSL, który można zaimportować do innego języka DSL. Dzięki temu można wziąć pod uwagę części wspólnej podobne modeli.
@@ -21,11 +21,11 @@ W Visual Studio Visualization i Modeling SDK można utworzyć niekompletne defin
 
 #### <a name="to-create-a-dsl-library"></a>Aby utworzyć biblioteki DSL
 
-1.  Tworzenie nowego projektu DSL, a następnie wybierz szablon rozwiązania bibliotekę DSL.
+1. Tworzenie nowego projektu DSL, a następnie wybierz szablon rozwiązania bibliotekę DSL.
 
      Do tego pojedynczego projektu DSL zostanie utworzony przy użyciu modelu puste.
 
-2.  Można dodać klasy domeny, relacje, kształty i tak dalej.
+2. Można dodać klasy domeny, relacje, kształty i tak dalej.
 
      Elementy w bibliotece nie trzeba utworzyć pojedynczy drzewo osadzania.
 
@@ -33,15 +33,15 @@ W Visual Studio Visualization i Modeling SDK można utworzyć niekompletne defin
 
      Rozważ ustawienie **modyfikator dziedziczenia** klas domeny na potrzeby `Abstract`.
 
-3.  Możesz dodać elementy, które określają w Eksplorator DSL, takich jak konstruktory połączeń.
+3. Możesz dodać elementy, które określają w Eksplorator DSL, takich jak konstruktory połączeń.
 
-4.  Można dodać dostosowania, które wymagają dodatkowego kodu, takie jak ograniczenia sprawdzania poprawności.
+4. Można dodać dostosowania, które wymagają dodatkowego kodu, takie jak ograniczenia sprawdzania poprawności.
 
-5.  Kliknij przycisk **Transformuj wszystkie szablony**.
+5. Kliknij przycisk **Transformuj wszystkie szablony**.
 
-6.  Skompiluj projekt.
+6. Skompiluj projekt.
 
-7.  Podczas dystrybucji DSL, aby inne osoby mogły używać należy podać zarówno w skompilowanym zestawie (DLL), jak i plik `DslDefinition.dsl`. Skompilowanego zestawu można znaleźć w folderze w `Dsl\bin\*`
+7. Podczas dystrybucji DSL, aby inne osoby mogły używać należy podać zarówno w skompilowanym zestawie (DLL), jak i plik `DslDefinition.dsl`. Skompilowanego zestawu można znaleźć w folderze w `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>Aby zaimportować biblioteki DSL
 

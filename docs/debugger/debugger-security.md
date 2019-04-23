@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d23f3c2677f1e99a80b5a3f05d1f6f4f69294e27
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 384d7b3488e6ef90994e24e95fbe7a516428e2bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707370"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092360"
 ---
 # <a name="debugger-security"></a>Zabezpieczenia debugera
 Możliwość debugowania inny proces zapewnia bardzo szerokie uprawnienia, których możesz nie mieliby, szczególnie w przypadku debugowania zdalnego. Złośliwy debuger może skutkować problemem dla całego zniszczenia na maszynie debugowany.
@@ -59,11 +59,11 @@ Możliwość debugowania inny proces zapewnia bardzo szerokie uprawnienia, któr
 ### <a name="web-services-debugging-security"></a>Zabezpieczenia debugowania usług sieci Web
  Bezpieczniej jest Debuguj lokalnie, ale ponieważ prawdopodobnie nie masz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zainstalowany na serwerze sieci web, debugowanie lokalne może być niepraktyczne. Ogólnie rzecz biorąc debugowanie usług sieci Web jest wykonywane zdalnie, z wyjątkiem podczas tworzenia aplikacji, więc zalecenia dotyczące zdalnego debugowania zabezpieczeń dotyczą również usług sieci Web profilowanie. Poniżej przedstawiono pewne dodatkowe najlepsze rozwiązania. Aby uzyskać więcej informacji, zobacz [debugowanie usług XML sieci Web](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).
 
--   Nie należy włączać debugowania na serwerze sieci Web, którego bezpieczeństwo zostało naruszone.
+- Nie należy włączać debugowania na serwerze sieci Web, którego bezpieczeństwo zostało naruszone.
 
--   Upewnij się, że wiesz, że serwer sieci Web są bezpieczne, przed jej debugowanie. Jeśli nie masz pewności, że jest to bezpieczne, nie debugować go.
+- Upewnij się, że wiesz, że serwer sieci Web są bezpieczne, przed jej debugowanie. Jeśli nie masz pewności, że jest to bezpieczne, nie debugować go.
 
--   Uważaj, szczególnie Jeśli debugujesz usługi sieci Web, który jest uwidaczniany w Internecie.
+- Uważaj, szczególnie Jeśli debugujesz usługi sieci Web, który jest uwidaczniany w Internecie.
 
 ### <a name="external-components"></a>Składniki zewnętrzne
  Należy pamiętać o stanu zaufania składników zewnętrznych, które program wchodzi w interakcję z, zwłaszcza, jeśli nie napisać kod. Ponadto należy pamiętać o składniki, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lub użyć debugera.

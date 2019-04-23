@@ -13,12 +13,12 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 67a564b789d24b11b92b218c2a30673c6bd7baad
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 48d77b77367faa1ea1f59c1de7fdbad96d574e1b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834864"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117645"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalowanie programu Visual Studio wersje Side-by-Side
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Ta wersja programu Visual Studio można zainstalować na komputerze, na którym 
 
  Przed zainstalowaniem wersji obok siebie, przejrzyj następujące warunki:
 
--   Jeśli używasz programu Visual Studio 2015, aby otworzyć rozwiązanie utworzone w [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], można później otwierać i modyfikować rozwiązanie ponownie w starszej wersji, tak długo, jak jeszcze nie zaimplementowano żadnych funkcji, które są specyficzne dla programu Visual Studio 2015.
+- Jeśli używasz programu Visual Studio 2015, aby otworzyć rozwiązanie utworzone w [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], można później otwierać i modyfikować rozwiązanie ponownie w starszej wersji, tak długo, jak jeszcze nie zaimplementowano żadnych funkcji, które są specyficzne dla programu Visual Studio 2015.
 
--   Jeśli spróbujesz otworzyć rozwiązanie utworzone w przy użyciu programu Visual Studio 2015 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] lub starszej wersji, może być konieczne zmodyfikowanie projektów i plików, aby były zgodne z programem Visual Studio 2015. Aby uzyskać więcej informacji, zobacz [Port, migrowanie i uaktualnianie projektów programu Visual Studio](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015) strony.
+- Jeśli spróbujesz otworzyć rozwiązanie utworzone w przy użyciu programu Visual Studio 2015 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] lub starszej wersji, może być konieczne zmodyfikowanie projektów i plików, aby były zgodne z programem Visual Studio 2015. Aby uzyskać więcej informacji, zobacz [Port, migrowanie i uaktualnianie projektów programu Visual Studio](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015) strony.
 
--   Jeśli odinstalujesz daną wersję programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] na komputerze, który ma więcej niż jedna wersja zainstalowana, skojarzenia plików dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] są usuwane dla wszystkich wersji. Możesz ponownie zamapować te skojarzenia plików za pomocą **Przywróć skojarzenia plików** znajdujący się na **środowiska**, **ogólne** stronie [opcje](../ide/reference/general-environment-options-dialog-box.md) okno dialogowe.
+- Jeśli odinstalujesz daną wersję programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] na komputerze, który ma więcej niż jedna wersja zainstalowana, skojarzenia plików dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] są usuwane dla wszystkich wersji. Możesz ponownie zamapować te skojarzenia plików za pomocą **Przywróć skojarzenia plików** znajdujący się na **środowiska**, **ogólne** stronie [opcje](../ide/reference/general-environment-options-dialog-box.md) okno dialogowe.
 
--   Program Visual Studio nie aktualizuje automatycznie rozszerzeń, ponieważ nie wszystkie rozszerzenia są zgodne. Należy ponownie zainstalować rozszerzenia z [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=178891) lub od wydawcy oprogramowania.
+- Program Visual Studio nie aktualizuje automatycznie rozszerzeń, ponieważ nie wszystkie rozszerzenia są zgodne. Należy ponownie zainstalować rozszerzenia z [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=178891) lub od wydawcy oprogramowania.
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>Wersje programu .NET framework i instalacje Side-by-Side
 
--   Visual Basic, Visual C#i Visual F# projektów użyj **platformę docelową** opcji **projektanta projektu** do określenia, która wersja programu .NET Framework projekt używa. Dla projektu w języku C++ można ręcznie zmienić platformę docelową, modyfikując plik vcxproj. Aby uzyskać więcej informacji, zobacz [zgodność wersji](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f).
+- Visual Basic, Visual C#i Visual F# projektów użyj **platformę docelową** opcji **projektanta projektu** do określenia, która wersja programu .NET Framework projekt używa. Dla projektu w języku C++ można ręcznie zmienić platformę docelową, modyfikując plik vcxproj. Aby uzyskać więcej informacji, zobacz [zgodność wersji](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f).
 
      Podczas tworzenia projektu można określić, która wersja programu .NET Framework jest przeznaczony projekt **.NET Framework** listy w **nowy projekt** okno dialogowe.
 

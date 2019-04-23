@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 280b4f526bad3e0ba646058b3e2410a98ca910fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4def747f4077d7b847e7e87082dc4b0b96cf04c9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646008"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110794"
 ---
 # <a name="how-to-programmatically-send-email"></a>Instrukcje: Programowo Wyślij wiadomość e-mail
   W tym przykładzie wysyła wiadomość e-mail do kontaktów, które mają taką nazwę domeny **example.com** adresu e-mail.
@@ -33,7 +33,7 @@ ms.locfileid: "56646008"
 ## <a name="compile-the-code"></a>Skompilować kod
  Ten przykład wymaga:
 
--   Kontakty, które mają taką nazwę domeny **example.com** adresu e-mail.
+- Kontakty, które mają taką nazwę domeny **example.com** adresu e-mail.
 
 ## <a name="robust-programming"></a>Skuteczne programowanie
  Nie usuwaj kodu filtr, który wyszukuje nazwy domeny **example.com**. Rozwiązanie będzie wysyłać wiadomości e-mail do wszystkich kontaktów, jeśli usuniesz filtr.

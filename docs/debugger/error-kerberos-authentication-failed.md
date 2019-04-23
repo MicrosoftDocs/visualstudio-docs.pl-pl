@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb327ad703c744f94970162f493cb61dffb8fac3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 76a62a821a9b110be2ffd8e25cbdf6721f12bc08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701072"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087569"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Błąd: Uwierzytelnianie Kerberos nie powiodło się
 Gdy użytkownik próbuje przeprowadzać debugowanie zdalne, może uzyskać następujący komunikat o błędzie:
@@ -44,19 +44,19 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
 
 ### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>Aby sprawdzić, czy DNS na komputerze docelowym poprawnie mapuje nazwę komputera hosta debugera
 
-1.  Na komputerze docelowym, otwórz **Start** menu wskaż **Akcesoria** a następnie kliknij przycisk **polecenia**.
+1. Na komputerze docelowym, otwórz **Start** menu wskaż **Akcesoria** a następnie kliknij przycisk **polecenia**.
 
-2.  W **polecenia** okna, typ:
+2. W **polecenia** okna, typ:
 
     ```cmd
     ping <debugger_host_computer_name>
     ```
 
-3.  W pierwszym wierszu `ping` odpowiedzi zawiera pełną nazwę komputera i adres IP zwrócony przez serwer DNS dla określonego komputera.
+3. W pierwszym wierszu `ping` odpowiedzi zawiera pełną nazwę komputera i adres IP zwrócony przez serwer DNS dla określonego komputera.
 
-4.  Na komputerze-hoście debugera, otwarcie **polecenia** okna i uruchom `ipconfig`.
+4. Na komputerze-hoście debugera, otwarcie **polecenia** okna i uruchom `ipconfig`.
 
-5.  Porównaj wartości adresów IP.
+5. Porównaj wartości adresów IP.
 
 ## <a name="see-also"></a>Zobacz też
 - [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)

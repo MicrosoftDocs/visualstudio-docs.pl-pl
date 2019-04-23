@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e59864cabf638f4525165ed4f31c42fff748bf26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773808"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116748"
 ---
 # <a name="extract-interface-refactoring-c"></a>Refaktoryzacja wyodrębniania interfejsu (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Wyodrębnij interfejs jest operacji refaktoryzacji, która zapewnia łatwy spos�
   
 ### <a name="to-use-extract-interface"></a>Aby użyć Wyodrębnij interfejs  
   
-1.  Utwórz aplikację konsoli o nazwie `ExtractInterface`, a następnie zastąp `Program` następującym kodem  
+1. Utwórz aplikację konsoli o nazwie `ExtractInterface`, a następnie zastąp `Program` następującym kodem  
   
     ```csharp  
     // Invoke Extract Interface on ProtoA.  
@@ -45,7 +45,7 @@ Wyodrębnij interfejs jest operacji refaktoryzacji, która zapewnia łatwy spos�
     }  
     ```  
   
-2.  Umieść kursor w `MethodB`i kliknij przycisk **Wyodrębnij interfejs** na **Refaktoryzuj** menu.  
+2. Umieść kursor w `MethodB`i kliknij przycisk **Wyodrębnij interfejs** na **Refaktoryzuj** menu.  
   
      **Wyodrębnij interfejs** pojawi się okno dialogowe.  
   
@@ -53,9 +53,9 @@ Wyodrębnij interfejs jest operacji refaktoryzacji, która zapewnia łatwy spos�
   
      Również kliknięciu prawym przyciskiem myszy przycisk myszy, wskaż polecenie **Refaktoryzuj**, a następnie kliknij przycisk **Wyodrębnij interfejs** do wyświetlenia **Wyodrębnij interfejs** okno dialogowe.  
   
-3.  Kliknij przycisk **Zaznacz wszystko**.  
+3. Kliknij przycisk **Zaznacz wszystko**.  
   
-4.  Kliknij przycisk **OK**.  
+4. Kliknij przycisk **OK**.  
   
      Zostanie wyświetlony nowy plik, IProtoA.cs i następujący kod:  
   

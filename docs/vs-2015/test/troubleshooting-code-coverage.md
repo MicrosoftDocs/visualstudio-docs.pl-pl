@@ -8,12 +8,12 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5af016c0ef1e38a4ae7ca42d79ed2030821d0369
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8faf41bb838880b1f0f747f1feb9d3a318b2f1c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797369"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117411"
 ---
 # <a name="troubleshooting-code-coverage"></a>Pokrycie kodu — wyszukiwanie błędów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ Narzędzie analizy pokrycia kodu w programie Visual Studio zbiera dane dotycząc
 ### <a name="youre-looking-at-a-previous-result"></a>Patrzysz na poprzedni wynik  
  Podczas modyfikowania i ponownego uruchamiania testów poprzedni wynik pokrycia kodu może być nadal widoczny, włącznie z kolorowaniem kodu z tego starego uruchamiania.  
   
-1.  Uruchom analizę pokrycia kodu.  
+1. Uruchom analizę pokrycia kodu.  
   
-2.  Upewnij się, czy wybrano zestaw najbardziej aktualnych wyników w oknie wyników Pokrycia kodu.  
+2. Upewnij się, czy wybrano zestaw najbardziej aktualnych wyników w oknie wyników Pokrycia kodu.  
   
 ### <a name="pdb-symbol-files-are-unavailable"></a>Pliki .pdb (symbol) są niedostępne  
  Analiza  
@@ -107,17 +107,17 @@ Narzędzie analizy pokrycia kodu w programie Visual Studio zbiera dane dotycząc
  Rozwiązanie  
  Istnieją dwa typy możliwych błędów:  
   
--   **Błąd XML**  
+- **Błąd XML**  
   
      Otwórz plik .runsettings w edytorze XML programu Visual Studio. Poszukaj oznak błędów.  
   
--   **Błąd w wyrażeniu regularnym**  
+- **Błąd w wyrażeniu regularnym**  
   
      Każdy ciąg znaków w pliku jest wyrażeniem regularnym. Przejrzyj każdy z nich w poszukiwaniu błędów, a w szczególności zwróć uwagę na:  
   
-    -   Niedopasowane nawiasy (...) lub nawiasy \\(...) \\). Jeśli chcesz dopasować nawiasy w ciągu wyszukiwania, musisz dodać przed nimi znak ucieczki. Na przykład, aby dopasować użycie funkcji: `.*MyFunction\(double\)`  
+    - Niedopasowane nawiasy (...) lub nawiasy \\(...) \\). Jeśli chcesz dopasować nawiasy w ciągu wyszukiwania, musisz dodać przed nimi znak ucieczki. Na przykład, aby dopasować użycie funkcji: `.*MyFunction\(double\)`  
   
-    -   Gwiazdka lub plus na początku wyrażenia. Aby dopasować dowolny ciąg znaków, należy użyć kropki poprzedzającej gwiazdkę: `.*`  
+    - Gwiazdka lub plus na początku wyrażenia. Aby dopasować dowolny ciąg znaków, należy użyć kropki poprzedzającej gwiazdkę: `.*`  
   
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Niestandardowy plik .runsettings z niepoprawnymi wykluczeniami  
  Analiza  

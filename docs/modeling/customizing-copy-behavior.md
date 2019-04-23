@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 898c1e88e4fd1ac0fc5f3d1f338b70a2d038fe79
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 4a5543805741f1c64627aee15590d61635a89b1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416330"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109832"
 ---
 # <a name="customizing-copy-behavior"></a>Dostosowywanie zachowania dotyczącego kopiowania
 W języku specyficznym dla domeny (DSL) utworzone za pomocą Visual Studio Visualization i Modeling SDK można zmienić, co się dzieje, gdy użytkownik kopiuje i wkleja elementów.
@@ -284,9 +284,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 
  Zdefiniuj dwie metody w klasie ElementOperations:
 
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` który określa, czy element źródła można przeciągać docelowej kształtu, łącznika lub diagramu.
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` który określa, czy element źródła można przeciągać docelowej kształtu, łącznika lub diagramu.
 
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` które łączy elementu źródłowego do docelowego.
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` które łączy elementu źródłowego do docelowego.
 
 ### <a name="canmerge"></a>CanMerge()
  `CanMerge()` jest wywoływana, aby określić opinie, które należy nadać użytkownikowi, jako wskaźnik myszy porusza się na diagramie. Parametry metody są elementu, nad którym znajduje się kursor i dane dotyczące źródła, z którego została wykonana operacja przeciągania. Użytkownik można przeciągnąć z dowolnego miejsca na ekranie. W związku z obiektem źródłowym może mieć wiele różnych typów i może być serializowany w różnych formatach. Jeśli źródło jest modelu DSL lub UML, parametr danych jest serializacji <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Operacje przeciągania, kopiowanie i przybornika używają ElementGroupPrototypes do reprezentowania fragmenty modeli.

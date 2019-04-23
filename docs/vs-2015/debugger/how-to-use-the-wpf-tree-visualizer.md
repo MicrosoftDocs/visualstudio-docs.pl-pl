@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6d2fc99235c9001cd465236c82588e33a842c168
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 02f7c89db63fbd2276dd6e59a619a62e4b485870
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794755"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108188"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Instrukcje: Korzystanie z wizualizatora drzewa platformy WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,35 +33,35 @@ Można użyć wizualizatora drzewa WPF, aby zapoznać się z drzewa wizualnego o
   
 ### <a name="to-open-the-wpf-tree-visualizer"></a>Aby otworzyć z wizualizatora drzewa WPF  
   
-1.  W DataTip **Obejrzyj** oknie **automatyczne** oknie lub **lokalne** oknie obok nazwy obiektów programu WPF, kliknij strzałkę obok ikony lupy.  
+1. W DataTip **Obejrzyj** oknie **automatyczne** oknie lub **lokalne** oknie obok nazwy obiektów programu WPF, kliknij strzałkę obok ikony lupy.  
   
      Zostanie wyświetlona lista wizualizatorów.  
   
-2.  Kliknij przycisk **wizualizatora drzewa WPF**.  
+2. Kliknij przycisk **wizualizatora drzewa WPF**.  
   
 ### <a name="to-search-the-visual-tree"></a>Aby przeszukać drzewo wizualne  
   
--   W **drzewa wizualnego** okienko, wpisz ciąg, aby wyszukać w **wyszukiwania** pole.  
+- W **drzewa wizualnego** okienko, wpisz ciąg, aby wyszukać w **wyszukiwania** pole.  
   
      Z wizualizatora drzewa WPF natychmiast znajduje pierwszy obiekt w drzewie wizualnym, który pasuje do ciągu, które zostały wpisane. Wpisz więcej znaków, aby znaleźć bardziej dokładne dopasowanie.  
   
-    -   Aby przejść do następnego dopasowania w obrębie drzewa wizualnego, kliknij przycisk **dalej**.  
+    - Aby przejść do następnego dopasowania w obrębie drzewa wizualnego, kliknij przycisk **dalej**.  
   
-    -   Aby wrócić do poprzedniego dopasowania, kliknij przycisk **poprzedni**.  
+    - Aby wrócić do poprzedniego dopasowania, kliknij przycisk **poprzedni**.  
   
-    -   Aby wyczyścić kryteria wyszukiwania, kliknij pozycję **wyczyść**.  
+    - Aby wyczyścić kryteria wyszukiwania, kliknij pozycję **wyczyść**.  
   
 ### <a name="to-search-the-properties-list"></a>Lista właściwości wyszukiwania  
   
--   W **właściwości** _nazwa_**:**_typu_ okienko, wpisz ciąg chcesz wyszukać w **filtrowania**pole.  
+- W **właściwości** _nazwa_**:**_typu_ okienko, wpisz ciąg chcesz wyszukać w **filtrowania**pole.  
   
      Z wizualizatora drzewa WPF natychmiast wyszukuje właściwości, które pasuje do ciągu, które zostały wpisane; teraz na liście zostaną wyświetlone tylko te właściwości, które są dopasowywania ciągu, które zostały wpisane. Wpisz więcej znaków, aby znaleźć bardziej dokładne dopasowanie.  
   
-    -   Aby wyczyścić kryteria wyszukiwania, kliknij pozycję **wyczyść**.  
+    - Aby wyczyścić kryteria wyszukiwania, kliknij pozycję **wyczyść**.  
   
 ### <a name="to-close-the-visualizer"></a>Aby zamknąć wizualizatora  
   
--   Kliknij przycisk **Zamknij** ikonę w prawym górnym rogu okna dialogowego.  
+- Kliknij przycisk **Zamknij** ikonę w prawym górnym rogu okna dialogowego.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Instrukcje: Korzystanie z wizualizatora](../misc/how-to-use-a-visualizer.md)   

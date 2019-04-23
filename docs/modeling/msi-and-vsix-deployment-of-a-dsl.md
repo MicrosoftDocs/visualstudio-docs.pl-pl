@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 664d323976692d20a3f9f9bb8a7e66c0aa4f9761
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: e881ef4a016fa44bbb1e38e2bc3145fb11974c56
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069609"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087368"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Wdrażanie pakietów MSI i VSIX języka DSL
 Języka specyficznego dla domeny można zainstalować na komputerze lokalnym lub na innych komputerach. Program Visual Studio muszą być zainstalowane na komputerze docelowym.
@@ -33,9 +33,9 @@ Gdy DSL jest instalowany przez tę metodę, użytkownik może otwierać plik DSL
 
 1. Znajdź **.vsix** pliku, który został zbudowany przez projekt pakietu DSL:
 
-   1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **DslPackage** projektu, a następnie kliknij przycisk **Otwórz Folder w Eksploratorze plików**.
+   1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **DslPackage** projektu, a następnie kliknij przycisk **Otwórz Folder w Eksploratorze plików**.
 
-   2.  Zlokalizuj plik **bin\\\*\\**_YourProject_**. DslPackage.vsix**
+   2. Zlokalizuj plik **bin\\\*\\**_YourProject_**. DslPackage.vsix**
 
 2. Kopiuj **.vsix** plik na komputer docelowy, na którym chcesz zainstalować język DSL. Może to być Twój własny komputer lub innej.
 
@@ -74,9 +74,9 @@ Gdy DSL jest instalowany przez tę metodę, użytkownik może otwierać plik DSL
 
 1. Ustaw `InstalledByMsi` w manifeście rozszerzenia. Zapobiega to VSX jest instalowana i odinstalowywana z wyjątkiem za pomocą pakietu MSI. Jest to ważne, jeśli będzie obejmować inne składniki w pliku MSI.
 
-   1.  Open DslPackage\source.extension.tt
+   1. Open DslPackage\source.extension.tt
 
-   2.  Wstaw następujący wiersz przed `<SupportedProducts>`:
+   2. Wstaw następujący wiersz przed `<SupportedProducts>`:
 
        ```xml
        <InstalledByMsi>true</InstalledByMsi>
@@ -86,15 +86,15 @@ Gdy DSL jest instalowany przez tę metodę, użytkownik może otwierać plik DSL
 
 3. Upewnij się, że następujące atrybuty DSL są prawidłowe:
 
-   -   W Eksplorator DSL kliknij węzeł główny i przejrzyj w oknie właściwości:
+   - W Eksplorator DSL kliknij węzeł główny i przejrzyj w oknie właściwości:
 
-       -   Opis
+       - Opis
 
-       -   Wersja
+       - Wersja
 
-   -   Kliknij przycisk **edytora** węzła i w oknie dialogowym właściwości kliknij **ikonę**. Ustaw wartość na odwoływać się do pliku ikony w **DslPackage\Resources**, takich jak **File.ico**
+   - Kliknij przycisk **edytora** węzła i w oknie dialogowym właściwości kliknij **ikonę**. Ustaw wartość na odwoływać się do pliku ikony w **DslPackage\Resources**, takich jak **File.ico**
 
-   -   Na **kompilacji** menu Otwórz **programu Configuration Manager**i wybierz konfigurację, który chcesz utworzyć, takie jak **wersji** lub **debugowania** .
+   - Na **kompilacji** menu Otwórz **programu Configuration Manager**i wybierz konfigurację, który chcesz utworzyć, takie jak **wersji** lub **debugowania** .
 
 4. Przejdź do [wizualizacji i modelowania SDK strony głównej](http://go.microsoft.com/fwlink/?LinkID=186128)i z **pliki do pobrania** pozycję Pobierz **CreateMsiSetupProject.tt**.
 
@@ -122,16 +122,16 @@ Gdy DSL jest instalowany przez tę metodę, użytkownik może otwierać plik DSL
 
 11. Na komputerze docelowym Utwórz nowy plik, który ma rozszerzenie pliku DSL. Upewnij się, że:
 
-    -   W widoku listy Eksploratora Windows plik zostanie wyświetlony ikonę i opis, który został zdefiniowany.
+    - W widoku listy Eksploratora Windows plik zostanie wyświetlony ikonę i opis, który został zdefiniowany.
 
-    -   Gdy kliknij dwukrotnie plik, Visual Studio uruchomi się i otwiera plik DSL w edytorze języka DSL.
+    - Gdy kliknij dwukrotnie plik, Visual Studio uruchomi się i otwiera plik DSL w edytorze języka DSL.
 
     Jeśli wolisz, projektu Instalatora można utworzyć ręcznie, zamiast używać szablonu tekstu. Aby uzyskać wskazówki, która zawiera tę procedurę, zobacz rozdział 5 [wizualizacji i modelowania SDK laboratorium](http://go.microsoft.com/fwlink/?LinkId=208878).
 
 ### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>Aby odinstalować DSL, który został zainstalowany z pliku MSI
 
-1.  Windows, otwórz **programy i funkcje** Panelu sterowania.
+1. Windows, otwórz **programy i funkcje** Panelu sterowania.
 
-2.  Odinstaluj język DSL.
+2. Odinstaluj język DSL.
 
-3.  Uruchom ponownie program Visual Studio.
+3. Uruchom ponownie program Visual Studio.

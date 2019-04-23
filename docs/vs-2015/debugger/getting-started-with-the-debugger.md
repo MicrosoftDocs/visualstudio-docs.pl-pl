@@ -14,19 +14,19 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d30c45c0601b6e291604275fdc9cfc4f3b5def6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e093abd5e836bcb7ee236979c00d574a07ecfd3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763922"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109526"
 ---
 # <a name="getting-started-with-the-debugger"></a>Wprowadzenie do debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Debuger programu Visual Studio jest łatwa w użyciu w dowolnym języku. Tutaj pokażemy sposób debugowania prostego programu C#, ale te same kroki można stosować do kodu w innych językach, takich jak C++ i JavaScript.  
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a> Debugowanie projektu podstawowe języka C#  
+## <a name="BKMK_Start_debugging_a_VS_project"></a> Debugowanie projektu podstawowe języka C#  
  Zacznijmy od prostej aplikacji konsoli języka C# (**plik / nowy / Project**, a następnie wybierz **Visual C#** , a następnie wybierz **aplikację Konsolową**). Jeśli nigdy nie Pracowałem przy użyciu programu Visual Studio przed [instruktażu: Tworzenie prostej aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). **Main** metoda po prostu dodaje 1 na zmienną całkowitoliczbową 10 razy i drukuje wynik do konsoli:  
   
 ```csharp  
@@ -51,7 +51,7 @@ static void Main(string[] args)
   
  Aby uzyskać więcej informacji na temat punktów przerwania, zobacz [przy użyciu punktów przerwania](../debugger/using-breakpoints.md).  
   
-##  <a name="BKMK_Inspect_Variables"></a> Sprawdzanie zmiennych  
+## <a name="BKMK_Inspect_Variables"></a> Sprawdzanie zmiennych  
  Debugowanie często polega na znajdowaniu zmiennych, które nie zawierają wartości, których oczekujesz, że w określonym punkcie. W tekście objaśniono niektóre metody, można sprawdzić zmiennych.  
   
  Uruchom ponownie debugowanie. Wykonanie zatrzymuje się przed `Console.WriteLine` kod jest wykonywany. Może spowodować, że wykonanie przez przechodzenie do przodu (kliknij **debugowanie / krok Over** lub **F10**). W takim przypadku może wybrano **Step Into** (**F11**) i uzyskać ten sam wynik; wyjaśnimy różnica później. Wiersz z ostatni nawias klamrowy metody powinny włączyli żółty. Spójrz na okno konsoli. Powinien zostać wyświetlony **10**.  

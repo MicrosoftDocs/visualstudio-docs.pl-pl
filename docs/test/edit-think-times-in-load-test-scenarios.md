@@ -10,12 +10,12 @@ ms.assetid: 8e03bee5-ab7b-4b40-9497-9dbe91ccb90e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb5227c4b5f771747a43a7f0f12e0125b125604e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e19e1cb4f9b49c40923d96b177ceb4d6c31b746f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943379"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090028"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Edytowanie czasów reakcji w celu symulowania opóźnienia interakcja z witryny sieci Web w scenariuszach testów obciążenia
 
@@ -48,13 +48,13 @@ Czasy reakcji są używane, ale zróżnicowane na typową krzywą. Zapewnia bard
 
 ### <a name="to-change-a-think-profile-in-a-load-test-scenario"></a>Aby zmienić profil reakcji w scenariuszu testu obciążenia
 
-1.  Od wydajności sieci web i obciążenia projektu testowego, otwórz test obciążenia.
+1. Od wydajności sieci web i obciążenia projektu testowego, otwórz test obciążenia.
 
-2.  W **edytora testu obciążenia**, wybierz węzeł scenariusz, w której chcesz zmienić **profil reakcji**. **Profil reakcji** jest wyświetlany w **właściwości** okna. Naciśnij klawisz **F4** do wyświetlenia **właściwości** okna.
+2. W **edytora testu obciążenia**, wybierz węzeł scenariusz, w której chcesz zmienić **profil reakcji**. **Profil reakcji** jest wyświetlany w **właściwości** okna. Naciśnij klawisz **F4** do wyświetlenia **właściwości** okna.
 
-3.  Zmiana **profil reakcji** właściwość **właściwości** okna.
+3. Zmiana **profil reakcji** właściwość **właściwości** okna.
 
-4.  Po zmianie właściwości, wybierz **Zapisz** na **pliku** menu. Następnie można uruchomić test obciążenia przy użyciu nowego profilu reakcji.
+4. Po zmianie właściwości, wybierz **Zapisz** na **pliku** menu. Następnie można uruchomić test obciążenia przy użyciu nowego profilu reakcji.
 
 ## <a name="see-also"></a>Zobacz także
 

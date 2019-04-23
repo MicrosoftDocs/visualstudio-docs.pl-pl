@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 79fe01ada43b1ac8fe408a1427fd9e65f9cd37cb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5873033e160a8354db70565606dcb399da13e073
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766462"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109533"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Zdalne debugowanie platformy ASP.NET na komputerze zdalnym usług IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,6 +74,7 @@ Po zainstalowaniu, upewnij się, że debuger zdalny jest uruchomiony na komputer
       </system.web>
   
     ```
+
 1. Otwórz **Internet Information Services (IIS) Manager** i przejdź do **witryn**.
 1. Kliknij prawym przyciskiem myszy **domyślna witryna sieci Web** a następnie wybierz węzeł **Add Application**.
 1. Ustaw **Alias** pole **MyMVC** i pole puli aplikacji do **ASP.NET v4.0** (ASP.NET 4.5 nie jest opcją dla puli aplikacji). Ustaw **ścieżkę fizyczną** do **C:\Publish** (której skopiowany katalogu projektu programu ASP.NET).

@@ -9,12 +9,12 @@ ms.assetid: 867a9c21-0909-4963-bc02-d41e9393008c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94d996dbd069c258522418b9ca0be14bf54df156
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ec6ca0e39a7816d99377bc13e1274cbc96a663ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948696"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109429"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Instrukcje: Określanie właściwości magazynowania szczegółów chronometrażu dla ustawień przebiegu testu obciążeniowego
 
@@ -47,15 +47,15 @@ Możesz edytować ustawienia przebiegu **przechowywanie informacji** wartości w
 
 ## <a name="to-configure-the-timing-details-storage-property-in-a-load-test"></a>Aby skonfigurować właściwości magazynowania szczegółów chronometrażu w teście obciążeniowym
 
-1.  Otwórz test obciążenia w edytorze testu obciążenia.
+1. Otwórz test obciążenia w edytorze testu obciążenia.
 
-2.  Rozwiń **parametrów uruchomieniowych** węzła w teście obciążeniowym.
+2. Rozwiń **parametrów uruchomieniowych** węzła w teście obciążeniowym.
 
-3.  Wybierz polecenie dotyczące wykonywania ustawień, które chcesz skonfigurować, na przykład **Uruchom ustawienia1 [aktywne]**.
+3. Wybierz polecenie dotyczące wykonywania ustawień, które chcesz skonfigurować, na przykład **Uruchom ustawienia1 [aktywne]**.
 
-4.  Otwórz **właściwości** okna. Na **widoku** menu, wybierz opcję **okno właściwości**.
+4. Otwórz **właściwości** okna. Na **widoku** menu, wybierz opcję **okno właściwości**.
 
-5.  W obszarze **wyniki** kategorii, wybierz **przechowywanie informacji** właściwości i wybierz pozycję **wszystkie szczegółowe dane**.
+5. W obszarze **wyniki** kategorii, wybierz **przechowywanie informacji** właściwości i wybierz pozycję **wszystkie szczegółowe dane**.
 
      Po skonfigurowaniu **wszystkie szczegółowe dane** ustawienie **przechowywanie informacji** właściwości, można uruchamiać obciążenia testowania i wyświetlania **wykres aktywności wirtualnych użytkowników**. Aby uzyskać więcej informacji, zobacz [jak: Analizowanie, co robią użytkownicy wirtualni podczas testu obciążeniowego](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
 

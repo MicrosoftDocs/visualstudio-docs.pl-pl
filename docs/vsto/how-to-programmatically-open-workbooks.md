@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9d8ab4be67ffd84406869c956f9046a53d6ec79
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: facf3cbeb6635324e74244983fcb33138ad64cfe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611896"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107895"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>Instrukcje: Programowe otwieranie skoroszytów
   <xref:Microsoft.Office.Interop.Excel.Workbooks> Kolekcji w programie Microsoft Office Excel sprawia, że jest to możliwe do pracy ze skoroszytami wszystkie otwarte i otwieranie skoroszytów.
@@ -27,7 +27,7 @@ ms.locfileid: "56611896"
 
 ## <a name="to-open-an-existing-workbook"></a>Aby otworzyć istniejący skoroszyt
 
-1.  Użyj <xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A> metody <xref:Microsoft.Office.Interop.Excel.Workbooks> kolekcji, przekazując ścieżkę do skoroszytu.
+1. Użyj <xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A> metody <xref:Microsoft.Office.Interop.Excel.Workbooks> kolekcji, przekazując ścieżkę do skoroszytu.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#2)]
@@ -35,7 +35,7 @@ ms.locfileid: "56611896"
 ## <a name="compile-the-code"></a>Skompilować kod
  Ten przykład kodu wymaga następujących elementów:
 
--   Jest skoroszyt o nazwie `YourWorkbook.xls` muszą istnieć w katalogu o nazwie `Test` na dysku C.
+- Jest skoroszyt o nazwie `YourWorkbook.xls` muszą istnieć w katalogu o nazwie `Test` na dysku C.
 
 ## <a name="see-also"></a>Zobacz także
 - [Praca ze skoroszytami](../vsto/working-with-workbooks.md)

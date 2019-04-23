@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c71a23fc79b0d80c55418a9c7d78a48ebc76000e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 153773d27d4f27a6987f7984955dde26b187b65e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781337"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116520"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Przewodnik: Tworzenie niestandardowego programu inicjującego wyświetlającego monit o prywatności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
   
--   Visual Studio 2010.  
+- Visual Studio 2010.  
   
 ## <a name="creating-an-update-consent-dialog-box"></a>Tworzenie okna dialogowego zgody aktualizacji  
  Wyświetlenie monitu o prywatności, należy utworzyć aplikację, która prosi czytnik do wyrażenia zgody na automatyczne aktualizacje aplikacji.  
@@ -143,29 +143,29 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
   
  Ta procedura pokazuje, jak utworzyć niestandardowy pakiet programu inicjującego, tworząc następujące dokumenty:  
   
--   Product.xml manifest pliku, aby opisać zawartość program inicjujący.  
+- Product.xml manifest pliku, aby opisać zawartość program inicjujący.  
   
--   Package.xml plik manifestu do listy lokalizacji określonych aspektów pakietu, takich jak ciągi i postanowienia licencyjne dotyczące oprogramowania.  
+- Package.xml plik manifestu do listy lokalizacji określonych aspektów pakietu, takich jak ciągi i postanowienia licencyjne dotyczące oprogramowania.  
   
--   Dokument postanowienia licencyjne dotyczące oprogramowania.  
+- Dokument postanowienia licencyjne dotyczące oprogramowania.  
   
 #### <a name="step-1-to-create-the-bootstrapper-directory"></a>Krok 1. Można utworzyć katalogu programu inicjującego  
   
-1.  Utwórz katalog o nazwie **UpdateConsentDialog** w %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
+1. Utwórz katalog o nazwie **UpdateConsentDialog** w %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
   
     > [!NOTE]
     >  Uprawnienia administracyjne, aby utworzyć ten folder może być konieczne.  
   
-2.  W katalogu UpdateConsentDialog Utwórz podkatalog o nazwie en.  
+2. W katalogu UpdateConsentDialog Utwórz podkatalog o nazwie en.  
   
     > [!NOTE]
     >  Utwórz nowy katalog dla poszczególnych ustawień regionalnych. Na przykład można dodać podkatalogów dla ustawień regionalnych fr i "de". Te katalogi zawierałoby ciągi francuskim i niemieckim i pakietów językowych, jeśli to konieczne.  
   
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>Krok 2. Aby utworzyć plik manifestu product.xml  
   
-1.  Utwórz plik tekstowy o nazwie `product.xml`.  
+1. Utwórz plik tekstowy o nazwie `product.xml`.  
   
-2.  W pliku product.xml Dodaj następujący kod XML. Upewnij się, że nie zastępuj istniejącego kodu XML.  
+2. W pliku product.xml Dodaj następujący kod XML. Upewnij się, że nie zastępuj istniejącego kodu XML.  
   
     ```  
     <Product  
@@ -191,13 +191,13 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
     </Product>  
     ```  
   
-3.  Zapisz plik w katalogu program inicjujący UpdateConsentDialog.  
+3. Zapisz plik w katalogu program inicjujący UpdateConsentDialog.  
   
 #### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Krok 3. Aby utworzyć plik manifestu package.xml i postanowienia licencyjne dotyczące oprogramowania  
   
-1.  Utwórz plik tekstowy o nazwie `package.xml`.  
+1. Utwórz plik tekstowy o nazwie `package.xml`.  
   
-2.  W pliku package.xml Dodaj następujący kod XML do definiowania ustawień regionalnych i zawierają postanowienia licencyjne dotyczące oprogramowania. Upewnij się, że nie zastępuj istniejącego kodu XML.  
+2. W pliku package.xml Dodaj następujący kod XML do definiowania ustawień regionalnych i zawierają postanowienia licencyjne dotyczące oprogramowania. Upewnij się, że nie zastępuj istniejącego kodu XML.  
   
     ```  
     <Package   
@@ -219,87 +219,87 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
     </Package>  
     ```  
   
-3.  Zapisz plik do podkatalogu en w katalogu program inicjujący UpdateConsentDialog.  
+3. Zapisz plik do podkatalogu en w katalogu program inicjujący UpdateConsentDialog.  
   
-4.  Utwórz dokument o nazwie eula.rtf dla postanowienia licencyjne dotyczące oprogramowania.  
+4. Utwórz dokument o nazwie eula.rtf dla postanowienia licencyjne dotyczące oprogramowania.  
   
     > [!NOTE]
     >  Postanowienia licencyjne dotyczące oprogramowania powinny zawierać informacje dotyczące licencji, gwarancji, zobowiązania i prawa miejscowego. Pliki te powinny być specyficzne dla ustawień regionalnych, dlatego upewnij się, że plik jest zapisywany w formacie, który obsługuje znaki MBCS lub UNICODE. Zapoznaj się z działem prawnym o zawartości postanowienia licencyjne dotyczące oprogramowania.  
   
-5.  Zapisz dokument w podkatalogu en w katalogu program inicjujący UpdateConsentDialog.  
+5. Zapisz dokument w podkatalogu en w katalogu program inicjujący UpdateConsentDialog.  
   
-6.  Jeśli to konieczne, Utwórz nowy plik manifestu package.xml i nowy dokument eula.rtf dla postanowienia licencyjne dotyczące oprogramowania dla poszczególnych ustawień regionalnych. Na przykład jeśli utworzono podkatalogów dla ustawień regionalnych fr i "de" tworzą pliki manifestu package.xml oddzielnym i postanowień licencyjnych dotyczących oprogramowania i zapisują je do podkatalogów fr i "de".  
+6. Jeśli to konieczne, Utwórz nowy plik manifestu package.xml i nowy dokument eula.rtf dla postanowienia licencyjne dotyczące oprogramowania dla poszczególnych ustawień regionalnych. Na przykład jeśli utworzono podkatalogów dla ustawień regionalnych fr i "de" tworzą pliki manifestu package.xml oddzielnym i postanowień licencyjnych dotyczących oprogramowania i zapisują je do podkatalogów fr i "de".  
   
 ## <a name="setting-the-update-consent-application-as-a-prerequisite"></a>Ustawienia aktualizacji aplikacji zgody jako warunek wstępny  
  W programie Visual Studio można ustawić zgody aktualizacji aplikacji jako warunek wstępny.  
   
 #### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>Aby ustawić aktualizowanie zgody aplikacji jako warunek wstępny  
   
-1.  W **Eksploratora rozwiązań**, kliknij nazwę aplikacji, którą chcesz wdrożyć.  
+1. W **Eksploratora rozwiązań**, kliknij nazwę aplikacji, którą chcesz wdrożyć.  
   
-2.  Na **projektu** menu, kliknij przycisk *ProjectName* **właściwości**.  
+2. Na **projektu** menu, kliknij przycisk *ProjectName* **właściwości**.  
   
-3.  Kliknij przycisk **Publikuj** strony, a następnie kliknij przycisk **wymagania wstępne**.  
+3. Kliknij przycisk **Publikuj** strony, a następnie kliknij przycisk **wymagania wstępne**.  
   
-4.  Wybierz **aktualizacji dialogowe ze zgodą**.  
+4. Wybierz **aktualizacji dialogowe ze zgodą**.  
   
     > [!NOTE]
     >  Może być konieczne zamknięcie i ponowne otwarcie programu Visual Studio Update zgody okno dialogowe jest wyświetlane w oknie dialogowym wstępnie wymagane składniki.  
   
-5.  Kliknij przycisk **OK**.  
+5. Kliknij przycisk **OK**.  
   
 ## <a name="creating-and-testing-the-setup-program"></a>Tworzenie i testowanie Program instalacyjny  
  Po aktualizacji zgody aplikacji jest ustawiony jako warunek wstępny, można generować Instalatora i programu inicjującego dla swojej aplikacji.  
   
 #### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>Aby utworzyć i przetestować program instalacyjny, nie klikając zgadzam się  
   
-1.  W **Eksploratora rozwiązań**, kliknij nazwę aplikacji, którą chcesz wdrożyć.  
+1. W **Eksploratora rozwiązań**, kliknij nazwę aplikacji, którą chcesz wdrożyć.  
   
-2.  Na **projektu** menu, kliknij przycisk *ProjectName* **właściwości**.  
+2. Na **projektu** menu, kliknij przycisk *ProjectName* **właściwości**.  
   
-3.  Kliknij przycisk **Publikuj** strony, a następnie kliknij przycisk **Publikuj teraz**.  
+3. Kliknij przycisk **Publikuj** strony, a następnie kliknij przycisk **Publikuj teraz**.  
   
-4.  Jeśli dane wyjściowe publikowania nie jest otwierany automatycznie, przejdź do publikowanych danych wyjściowych.  
+4. Jeśli dane wyjściowe publikowania nie jest otwierany automatycznie, przejdź do publikowanych danych wyjściowych.  
   
-5.  Uruchom Setup.exe program.  
+5. Uruchom Setup.exe program.  
   
      Program instalacyjny zawiera umowy licencyjnej okna dialogowego zgody aktualizacji oprogramowania.  
   
-6.  Przeczytaj umowę licencyjną oprogramowania, a następnie kliknij przycisk **Akceptuj**.  
+6. Przeczytaj umowę licencyjną oprogramowania, a następnie kliknij przycisk **Akceptuj**.  
   
      Okno dialogowe zgody aktualizacji aplikacji pojawi się i pokaże następujący tekst: Sprawdza, czy aplikacji, które zamierzasz zainstalować najnowsze aktualizacje w sieci Web. Klikając zgadzam się, upoważniasz aplikacji, aby sprawdzić, czy są aktualizacje automatyczne w Internecie.  
   
-7.  Zamknij aplikację, lub przycisk Anuluj.  
+7. Zamknij aplikację, lub przycisk Anuluj.  
   
      Aplikacja zawiera błąd: Wystąpił błąd podczas instalowania składników systemowych dla *ApplicationName*. Instalator nie może kontynuować, dopóki wszystkie składniki systemowe zostały pomyślnie zainstalowane.  
   
-8.  Kliknij przycisk Szczegóły, aby wyświetlić komunikat o błędzie: Okno dialogowe zgody aktualizacji składników ma nie można zainstalować za pomocą następujący komunikat o błędzie: "Umowy automatyczna aktualizacja nie zostanie zaakceptowany." Nie można zainstalować następujące składniki: — okno dialogowe zgody aktualizacji  
+8. Kliknij przycisk Szczegóły, aby wyświetlić komunikat o błędzie: Okno dialogowe zgody aktualizacji składników ma nie można zainstalować za pomocą następujący komunikat o błędzie: "Umowy automatyczna aktualizacja nie zostanie zaakceptowany." Nie można zainstalować następujące składniki: — okno dialogowe zgody aktualizacji  
   
 9. Kliknij przycisk **Zamknij**.  
   
 #### <a name="to-create-and-test-the-setup-program-by-clicking-i-agree"></a>Aby utworzyć i przetestować program instalacyjny, klikając przycisk zgadzam się  
   
-1.  W **Eksploratora rozwiązań**, kliknij nazwę aplikacji, którą chcesz wdrożyć.  
+1. W **Eksploratora rozwiązań**, kliknij nazwę aplikacji, którą chcesz wdrożyć.  
   
-2.  Na **projektu** menu, kliknij przycisk *ProjectName* **właściwości**.  
+2. Na **projektu** menu, kliknij przycisk *ProjectName* **właściwości**.  
   
-3.  Kliknij przycisk **Publikuj** strony, a następnie kliknij przycisk **Publikuj teraz**.  
+3. Kliknij przycisk **Publikuj** strony, a następnie kliknij przycisk **Publikuj teraz**.  
   
-4.  Jeśli dane wyjściowe publikowania nie jest otwierany automatycznie, przejdź do publikowanych danych wyjściowych.  
+4. Jeśli dane wyjściowe publikowania nie jest otwierany automatycznie, przejdź do publikowanych danych wyjściowych.  
   
-5.  Uruchom Setup.exe program.  
+5. Uruchom Setup.exe program.  
   
      Program instalacyjny zawiera umowy licencyjnej okna dialogowego zgody aktualizacji oprogramowania.  
   
-6.  Przeczytaj umowę licencyjną oprogramowania, a następnie kliknij przycisk **Akceptuj**.  
+6. Przeczytaj umowę licencyjną oprogramowania, a następnie kliknij przycisk **Akceptuj**.  
   
      Okno dialogowe zgody aktualizacji aplikacji pojawi się i pokaże następujący tekst: Sprawdza, czy aplikacji, które zamierzasz zainstalować najnowsze aktualizacje w sieci Web. Klikając zgadzam się, upoważniasz aplikacji, aby sprawdzić, czy są aktualizacje automatyczne w Internecie.  
   
-7.  Kliknij przycisk **zgadzam się**, a następnie kliknij przycisk **Kontynuuj**.  
+7. Kliknij przycisk **zgadzam się**, a następnie kliknij przycisk **Kontynuuj**.  
   
      Aby zainstalować uruchamiania aplikacji.  
   
-8.  Jeśli pojawi się okno dialogowe instalowanie aplikacji, kliknij przycisk **zainstalować**.  
+8. Jeśli pojawi się okno dialogowe instalowanie aplikacji, kliknij przycisk **zainstalować**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wymagania wstępne wdrożenia aplikacji](../deployment/application-deployment-prerequisites.md)   

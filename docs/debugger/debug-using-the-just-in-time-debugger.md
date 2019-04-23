@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8a9661673adf6cdab2d9a880ce27197a4e53127
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: b2aff8e1b515f460e6fdc31a528e6730971b7853
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796559"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092283"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debugowanie w programie Visual Studio za pomocą debugera just in Time
 
@@ -26,7 +26,7 @@ Debugowanie Just In Time działa w przypadku aplikacji komputerowych Windows. Ni
 > [!TIP]
 > Jeśli chcesz zatrzymać okno dialogowe debuger just in Time pojawianiu się, ale nie ma zainstalowanego programu Visual Studio, zobacz [wyłączyć debuger just in Time](../debugger/just-in-time-debugging-in-visual-studio.md). Jeśli po był zainstalowany program Visual Studio, konieczne może być [wyłączyć Just-In-Time, debugowanie z rejestru Windows](#disable-just-in-time-debugging-from-the-windows-registry).
 
-##  <a name="BKMK_Enabling"></a> Włączanie lub wyłączanie debugowania w programie Visual Studio Just-In-Time
+## <a name="BKMK_Enabling"></a> Włączanie lub wyłączanie debugowania w programie Visual Studio Just-In-Time
 
 >[!NOTE]
 >Aby włączyć lub wyłączyć debugowanie Just In Time, że uruchomione programu Visual Studio jako administrator. Włączanie lub wyłączanie Just-In-Time debugging Ustawia klucz rejestru i może być wymagane uprawnienia administratora, aby zmienić ten klucz. Aby otworzyć program Visual Studio jako administrator, kliknij prawym przyciskiem myszy aplikację programu Visual Studio, a następnie wybierz **Uruchom jako administrator**.
@@ -51,25 +51,25 @@ Debugowanie Just In Time może być wciąż włączone, nawet jeśli program Vis
 
 **Aby wyłączyć debugowanie, edytując rejestr Just In Time:**
 
-1.  Od Windows **Start** menu, uruchom **Edytora rejestru** (*regedit.exe*).
+1. Od Windows **Start** menu, uruchom **Edytora rejestru** (*regedit.exe*).
 
-2.  W **Edytora rejestru** okna, zlokalizuj i Usuń następujące wpisy rejestru:
+2. W **Edytora rejestru** okna, zlokalizuj i Usuń następujące wpisy rejestru:
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger**
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
     ![Klucz rejestru JIT](../debugger/media/dbg-jit-registry.png "klucza rejestru JIT")
 
-3.  Jeśli komputer działa w 64-bitowym systemie operacyjnym, także Usuń następujące wpisy rejestru:
+3. Jeśli komputer działa w 64-bitowym systemie operacyjnym, także Usuń następujące wpisy rejestru:
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
     Upewnij się nie usunąć ani zmienić żadnych kluczy rejestru.
 
-5.  Zamknij **Edytora rejestru** okna.
+5. Zamknij **Edytora rejestru** okna.
 
 ## <a name="enable-just-in-time-debugging-of-a-windows-form"></a>Włącz Just-In-Time debugowanie formularza Windows
 
@@ -79,7 +79,7 @@ Domyślnie aplikacje Windows formularza mają program obsługi wyjątków najwy�
 
 Aby włączyć debugowanie zamiast standardowego obsługi błędów formularza Windows Just In Time, należy dodać te ustawienia:
 
--  W `system.windows.forms` części *machine.config* lub  *\<Nazwa aplikacji >. exe.config* plików, należy ustawić `jitDebugging` wartość `true`:
+- W `system.windows.forms` części *machine.config* lub  *\<Nazwa aplikacji >. exe.config* plików, należy ustawić `jitDebugging` wartość `true`:
 
     ```xml
     <configuration>
@@ -87,7 +87,7 @@ Aby włączyć debugowanie zamiast standardowego obsługi błędów formularza W
     </configuration>
     ```
 
--  W aplikacji formularzy Windows w języku C++, należy również ustawić `DebuggableAttribute` do `true` w *.config* plików lub w kodzie. Jeśli kompilujesz z opcją [/zi](/cpp/build/reference/z7-zi-zi-debug-information-format) i bez [/Og](/cpp/build/reference/og-global-optimizations), kompilator ustawia ten atrybut. Jeśli chcesz debugować kompilację niezoptymalizowanego wydania, jednak należy ustawić `DebuggableAttribute` , dodając następujący wiersz w swojej aplikacji *AssemblyInfo.cpp* pliku:
+- W aplikacji formularzy Windows w języku C++, należy również ustawić `DebuggableAttribute` do `true` w *.config* plików lub w kodzie. Jeśli kompilujesz z opcją [/zi](/cpp/build/reference/z7-zi-zi-debug-information-format) i bez [/Og](/cpp/build/reference/og-global-optimizations), kompilator ustawia ten atrybut. Jeśli chcesz debugować kompilację niezoptymalizowanego wydania, jednak należy ustawić `DebuggableAttribute` , dodając następujący wiersz w swojej aplikacji *AssemblyInfo.cpp* pliku:
 
    ```cpp
    [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -96,11 +96,11 @@ Aby włączyć debugowanie zamiast standardowego obsługi błędów formularza W
    Aby uzyskać więcej informacji, zobacz <xref:System.Diagnostics.DebuggableAttribute>.
 
 ## <a name="BKMK_Using_JIT"></a>Użyj Just-In-Time debugging
- W tym przykładzie przedstawiono w przypadku aplikacji zgłasza błąd debugowania Just In Time.
+W tym przykładzie przedstawiono w przypadku aplikacji zgłasza błąd debugowania Just In Time.
 
- - Konieczne jest posiadanie programu Visual Studio wykonaj następujące kroki. Jeśli nie masz programu Visual Studio, możesz pobrać bezpłatną [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).
+- Konieczne jest posiadanie programu Visual Studio wykonaj następujące kroki. Jeśli nie masz programu Visual Studio, możesz pobrać bezpłatną [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).
 
- - Upewnij się, że Just-In-Time debugging jest [włączone](#BKMK_Enabling) w **narzędzia** > **opcje** > **debugowanie**  >  **Just-In-Time**.
+- Upewnij się, że Just-In-Time debugging jest [włączone](#BKMK_Enabling) w **narzędzia** > **opcje** > **debugowanie**  >  **Just-In-Time**.
 
 Na przykład wprowadzisz aplikację konsoli C# w programie Visual Studio, które zgłasza [obiektu NullReferenceException](/dotnet/api/system.nullreferenceexception).
 

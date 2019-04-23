@@ -10,12 +10,12 @@ ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6d880ef434eafd7aee3ffbc5f7d8f80a68a4b25
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 304b26f8724413dceef8126434861bd7128d588c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790512"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085015"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generowanie testów jednostkowych dla kodu za pomocą funkcji IntelliTest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Funkcja IntelliTest analizuje kod .NET w celu wygenerowania danych testu i pakie
 ### <a name="explore-use-intellitest-to-explore-your-code-and-generate-unit-tests"></a>Poznaj usługę: Użyj testów funkcji IntelliTest, aby eksplorować kod i generowania testów jednostkowych  
  Do generowania testów jednostkowych, typów muszą być publiczne. W przeciwnym razie [Utwórz testy jednostkowe](#NoRun) pierwszy przed wygenerowaniem je.  
   
-1.  Otwórz swoje rozwiązanie w programie Visual Studio. Następnie otwórz plik klasy, który zawiera metody, które mają zostać przetestowane.  
+1. Otwórz swoje rozwiązanie w programie Visual Studio. Następnie otwórz plik klasy, który zawiera metody, które mają zostać przetestowane.  
   
-2.  Kliknij prawym przyciskiem myszy metodę w kodzie, a następnie wybierz **Uruchom test IntelliTest** do generowania testów jednostkowych dla kodu w metodzie.  
+2. Kliknij prawym przyciskiem myszy metodę w kodzie, a następnie wybierz **Uruchom test IntelliTest** do generowania testów jednostkowych dla kodu w metodzie.  
   
      ![Po prawej stronie&#45;kliknij w metodzie do generowania testów jednostkowych](../test/media/runpex.png "RunPEX")  
   
@@ -50,7 +50,7 @@ Funkcja IntelliTest analizuje kod .NET w celu wygenerowania danych testu i pakie
   
 ### <a name="persist-save-the-unit-tests-as-a-regression-suite"></a>Utrwalanie: Zapisz testów jednostkowych jako mechanizm regresji  
   
-1.  Wybierz wiersze danych, które chcesz zapisać za pomocą sparametryzowanego testu jednostkowego do projektu testowego.  
+1. Wybierz wiersze danych, które chcesz zapisać za pomocą sparametryzowanego testu jednostkowego do projektu testowego.  
   
      ![Wybierz testy; prawy&#45;kliknij przycisk, a następnie wybierz opcję Zapisz](../test/media/savepextests.png "SavePEXTests")  
   
@@ -64,13 +64,13 @@ Funkcja IntelliTest analizuje kod .NET w celu wygenerowania danych testu i pakie
   
 ### <a name="assist-use-intellitest-to-focus-code-exploration"></a>Assist: Użyj funkcji IntelliTest, aby fokus kod — Eksploracja  
   
-1.  W przypadku bardziej złożonego kodu funkcji IntelliTest pomaga z poziomu Eksploracja kodu. Na przykład jeśli masz metodę, która ma interfejs jako parametr, a istnieje więcej niż jedną klasę, która implementuje ten interfejs, IntelliTest umożliwia odnalezienie tych klas i zgłosi ostrzeżenie.  
+1. W przypadku bardziej złożonego kodu funkcji IntelliTest pomaga z poziomu Eksploracja kodu. Na przykład jeśli masz metodę, która ma interfejs jako parametr, a istnieje więcej niż jedną klasę, która implementuje ten interfejs, IntelliTest umożliwia odnalezienie tych klas i zgłosi ostrzeżenie.  
   
      Wyświetl ostrzeżenia zdecydować, co chcesz zrobić.  
   
      ![Wyświetlanie ostrzeżeń dotyczących](../test/media/pexviewwarning.png "PEXViewWarning")  
   
-2.  Po badanie kodu i zrozumieć, co chcesz przetestować, możesz rozwiązać je, aby wybrać klas, które można używać do testowania interfejsu.  
+2. Po badanie kodu i zrozumieć, co chcesz przetestować, możesz rozwiązać je, aby wybrać klas, które można używać do testowania interfejsu.  
   
      ![Po prawej stronie&#45;kliknij ostrzeżenie i wybierz polecenie Napraw](../test/media/pexfixwarning.png "PEXFixWarning")  
   
@@ -78,14 +78,14 @@ Funkcja IntelliTest analizuje kod .NET w celu wygenerowania danych testu i pakie
   
      `[assembly: PexUseType(typeof(Camera))]`  
   
-3.  Teraz można uruchomić program IntelliTest do generowania sparametryzowanego testu jednostkowego i po prostu przy użyciu klasy, która Naprawiono dane testowe.  
+3. Teraz można uruchomić program IntelliTest do generowania sparametryzowanego testu jednostkowego i po prostu przy użyciu klasy, która Naprawiono dane testowe.  
   
      ![Ponownie uruchom program IntelliTest w celu wygenerowania danych testowych](../test/media/pexwarningsfixed.png "PEXWarningsFixed")  
   
 ### <a name="specify-use-intellitest-to-validate-correctness-properties-that-you-specify-in-code"></a>Określ: Weryfikacja poprawności właściwości określone w kodzie za pomocą funkcji IntelliTest  
  Określ ogólne relacji między dane wejściowe i wyjściowe, które mają wygenerowane testy jednostkowe do sprawdzania poprawności. Ta specyfikacja jest hermetyzowany w metodzie, która wygląda jak metody testowej, ale ogólnie jest obliczana. Jest to metoda testowa sparametryzowanej jednostki i potwierdzenia, wszystkie wprowadzone muszą spełniać wszystkie możliwe wartości wejściowych, które mogą generować IntelliTest.  
   
-##  <a name="QandALink"></a> PYTANIA I ODPOWIEDZI  
+## <a name="QandALink"></a> PYTANIA I ODPOWIEDZI  
   
 ### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>PYT.: Można użyć funkcji IntelliTest dla niezarządzanego kodu?  
  **ODP.:** Nie, program IntelliTest działa tylko z kodu zarządzanego.  
@@ -95,13 +95,13 @@ Funkcja IntelliTest analizuje kod .NET w celu wygenerowania danych testu i pakie
   
  Jeśli masz test, który można przekazać, jeśli istnieją pewne wyjątki zgłaszane, możesz ustawić jedną z następujących atrybutów, w zależności od wymagań na metody testowej, w klasie testu lub zestawu poziomu:  
   
--   **PexAllowedExceptionAttribute**  
+- **PexAllowedExceptionAttribute**  
   
--   **PexAllowedExceptionFromTypeAttribute**  
+- **PexAllowedExceptionFromTypeAttribute**  
   
--   **PexAllowedExceptionFromTypeUnderTestAttribute**  
+- **PexAllowedExceptionFromTypeUnderTestAttribute**  
   
--   **PexAllowedExceptionFromAssemblyAttribute**  
+- **PexAllowedExceptionFromAssemblyAttribute**  
   
 ### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>PYT.: Czy mogę dodać założenia sparametryzowanego testu jednostkowego?  
  **ODP.:** Tak, użyj założenia, aby określić, które dane badania nie jest wymagana do testu jednostki dla określonej metody. Użyj <xref:Microsoft.Pex.Framework.PexAssume> klasy do dodania założeń. Na przykład można dodać założenie zmiennej długości nie jest null następująco.  
@@ -117,7 +117,7 @@ Funkcja IntelliTest analizuje kod .NET w celu wygenerowania danych testu i pakie
   
  Jeśli dodasz potwierdzenie, a następnie ponownie uruchom program IntelliTest, będzie sprawdzał, czy Twoje potwierdzenie jest prawidłowa, i test zakończy się niepowodzeniem, jeśli nie jest.  
   
-###  <a name="NoRun"></a> Q: Czy mogę wygenerować sparametryzowane testy jednostek bez konieczności uruchamiania programu IntelliTest najpierw?  
+### <a name="NoRun"></a> Q: Czy mogę wygenerować sparametryzowane testy jednostek bez konieczności uruchamiania programu IntelliTest najpierw?  
  **ODP.:** Tak, kliknij prawym przyciskiem myszy klasy lub metody, a następnie wybierz **tworzenie testów funkcji IntelliTest**.  
   
  ![Po prawej stronie&#45;kliknij przycisk edytora, wybierz tworzenie testów funkcji IntelliTest](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")  

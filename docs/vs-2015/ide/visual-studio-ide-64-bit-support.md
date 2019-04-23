@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ab42cd9466561f64ecb35e65621bcbb91004f8f3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8e424078580ff4a739046b2555c3fb94ee17dafa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775920"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089667"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Obsługa 64-bitowego środowiska IDE programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,23 +28,23 @@ ms.locfileid: "54775920"
 ## <a name="deploying-a-64-bit-application"></a>Wdrażanie aplikacji 64-bitowych
  W poniższych tematach omówiono wdrażanie aplikacji 64-bitowych.
 
--   [Wdrażanie wstępnie wymaganych składników dla aplikacji 64-bitowych](../deployment/deploying-prerequisites-for-64-bit-applications.md)
+- [Wdrażanie wstępnie wymaganych składników dla aplikacji 64-bitowych](../deployment/deploying-prerequisites-for-64-bit-applications.md)
 
--   [Instrukcje: Utworzyć Instalatora Windows dla platformy 64-bitowej](http://msdn.microsoft.com/232bfc64-f99a-4cc6-9806-ba70bb9a09ff)
+- [Instrukcje: Utworzyć Instalatora Windows dla platformy 64-bitowej](http://msdn.microsoft.com/232bfc64-f99a-4cc6-9806-ba70bb9a09ff)
 
 ## <a name="configuring-projects-as-64-bit-applications"></a>Konfigurowanie projektów jako aplikacji 64-bitowych
  W poniższych tematach omówiono konfigurowanie projektów, które mają zostać zbudowane dla aplikacji 64-bitowych.
 
--   [Instrukcje: Konfigurowanie projektów pod kątem platform docelowych](../ide/how-to-configure-projects-to-target-platforms.md)
+- [Instrukcje: Konfigurowanie projektów pod kątem platform docelowych](../ide/how-to-configure-projects-to-target-platforms.md)
 
 ## <a name="debugging-a-64-bit-application"></a>Debugowanie aplikacji 64-bitowych
  Edytuj i Kontynuuj nie działają po [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] działa w 64-bitowym systemie operacyjnym Windows. W poniższych tematach omówiono debugowanie aplikacji 64-bitowych.
 
--   [Instrukcje: Debugowanie na platformach 64-bitowych](http://msdn.microsoft.com/27495e23-a624-46fb-996f-043d0a816dd5)
+- [Instrukcje: Debugowanie na platformach 64-bitowych](http://msdn.microsoft.com/27495e23-a624-46fb-996f-043d0a816dd5)
 
--   [Debugowanie aplikacji 64-bitowych](../debugger/debug-64-bit-applications.md)
+- [Debugowanie aplikacji 64-bitowych](../debugger/debug-64-bit-applications.md)
 
--   [Używanie plików zrzutów](../debugger/using-dump-files.md)
+- [Używanie plików zrzutów](../debugger/using-dump-files.md)
 
 ## <a name="see-also"></a>Zobacz też
  [Instrukcje: Konfigurowanie projektów pod kątem platform docelowych](../ide/how-to-configure-projects-to-target-platforms.md)

@@ -11,12 +11,12 @@ ms.assetid: 58fc1a31-2aeb-441c-8e48-c7d5cbcfe501
 caps.latest.revision: 52
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 255afb948f7a7e00f1249c332eac7234800ae980
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 64ab627d785e8b00b5159969a01dc1102df30359
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797660"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117580"
 ---
 # <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>Dodawanie menu do paska menu programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,15 +34,15 @@ W tym instruktażu przedstawiono sposób dodawania menu na pasku menu programu V
 
 ## <a name="creating-a-vsix-project-that-has-a-custom-command-item-template"></a>Tworzenie projektu VSIX, zawierający szablon elementu niestandardowego polecenia
 
-1.  Utwórz projekt VSIX, o nazwie `TopLevelMenu`. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C#** / **rozszerzalności**.  Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Utwórz projekt VSIX, o nazwie `TopLevelMenu`. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C#** / **rozszerzalności**.  Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Po otwarciu projektu, Dodaj polecenie niestandardowe szablon elementu o nazwie **TestCommand**. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Add / nowy element**. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C# / rozszerzalności** i wybierz **polecenia niestandardowego**. W **nazwa** u dołu okna, Zmień nazwę pliku polecenia, aby **TestCommand.cs**.
+2. Po otwarciu projektu, Dodaj polecenie niestandardowe szablon elementu o nazwie **TestCommand**. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Add / nowy element**. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C# / rozszerzalności** i wybierz **polecenia niestandardowego**. W **nazwa** u dołu okna, Zmień nazwę pliku polecenia, aby **TestCommand.cs**.
 
 ## <a name="creating-a-menu-on-the-ide-menu-bar"></a>Tworzenie Menu na pasku Menu środowiska IDE
 
 #### <a name="to-create-a-menu"></a>Aby utworzyć menu
 
-1.  W **Eksploratora rozwiązań**, otwórz TestCommandPackage.vsct.
+1. W **Eksploratora rozwiązań**, otwórz TestCommandPackage.vsct.
 
      Na końcu pliku istnieje \<symbole > węzeł, który zawiera kilka \<GuidSymbol > węzłów. W węźle, nazwane guidTestCommandPackageCmdSet Dodaj nowy symbol w następujący sposób:
 
@@ -50,7 +50,7 @@ W tym instruktażu przedstawiono sposób dodawania menu na pasku menu programu V
     <IDSymbol name="TopLevelMenu" value="0x1021"/>
     ```
 
-2.  Utwórz pustą \<menu > w węźle \<polecenia > węzła, tuż przed \<grupy >. W \<menu > węzła, Dodaj \<Menu > węzła, w następujący sposób:
+2. Utwórz pustą \<menu > w węźle \<polecenia > węzła, tuż przed \<grupy >. W \<menu > węzła, Dodaj \<Menu > węzła, w następujący sposób:
 
     ```xml
     <Menus>
@@ -71,7 +71,7 @@ W tym instruktażu przedstawiono sposób dodawania menu na pasku menu programu V
 
      Wartość `CommandName` ciąg Określa, że tekst powinien pojawić się w elemencie menu.
 
-3.  W \<grupy > sekcji, Znajdź \<grupy > i zmień \<nadrzędnego > elementu, aby wskazać polecenie menu, który właśnie został dodany:
+3. W \<grupy > sekcji, Znajdź \<grupy > i zmień \<nadrzędnego > elementu, aby wskazać polecenie menu, który właśnie został dodany:
 
     ```csharp
     <Groups>
@@ -83,15 +83,15 @@ W tym instruktażu przedstawiono sposób dodawania menu na pasku menu programu V
 
      Dzięki temu grupy część nowego menu.
 
-4.  Znajdź `Buttons` sekcji. Należy zauważyć, że [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] został wygenerowany szablon pakietu `Button` element, który ma nadrzędnego równa `MyMenuGroup`. W wyniku tego polecenia pojawi się w menu.
+4. Znajdź `Buttons` sekcji. Należy zauważyć, że [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] został wygenerowany szablon pakietu `Button` element, który ma nadrzędnego równa `MyMenuGroup`. W wyniku tego polecenia pojawi się w menu.
 
 ## <a name="building-and-testing-the-extension"></a>Tworzenie i testowanie rozszerzenia
 
-1.  Skompiluj projekt, a następnie rozpocząć debugowanie. Wystąpienie doświadczalne wystąpienie powinna zostać wyświetlona.
+1. Skompiluj projekt, a następnie rozpocząć debugowanie. Wystąpienie doświadczalne wystąpienie powinna zostać wyświetlona.
 
-2.  Na pasku menu w eksperymentalnym wystąpieniu powinien zawierać **TestMenu** menu.
+2. Na pasku menu w eksperymentalnym wystąpieniu powinien zawierać **TestMenu** menu.
 
-3.  Na **TestMenu** menu, kliknij przycisk **Wywołaj polecenie Test**.
+3. Na **TestMenu** menu, kliknij przycisk **Wywołaj polecenie Test**.
 
      Okno komunikatu powinno pojawiają się i wyświetli komunikat "TestCommand pakietu wewnątrz TopLevelMenu.TestCommand.MenuItemCallback()". Oznacza to, że nowe polecenie działa.
 

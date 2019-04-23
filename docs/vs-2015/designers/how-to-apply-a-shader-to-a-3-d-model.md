@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cde839deb71358936410c4e4ca4269d3ce2ee88f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a55c1e71242e59c04066c09efa2375c4bafc485b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793468"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094780"
 ---
 # <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Instrukcje: Stosowanie cieniowania do modelu 3-D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ W tym dokumencie przedstawiono sposób stosowanie cieniowania kierowane wykres m
   
  W tym dokumencie przedstawiono to działanie:  
   
--   Stosowanie cieniowania do modelu 3-D  
+- Stosowanie cieniowania do modelu 3-D  
   
 ## <a name="applying-a-shader-to-a-3-d-model"></a>Stosowanie cieniowania do modelu 3-D  
  Efekt programu cieniującego można zastosować do modelu 3-D w celu nadania mu interesującym wyglądem.  

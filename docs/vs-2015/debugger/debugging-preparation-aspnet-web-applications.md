@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: baa5e454eec00c2530190834974cd946838a0947
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e7a2640d39c90dc36a3960d230df46ac75bdbce6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781303"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092425"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>Przygotowanie debugowania: Aplikacje internetowe ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ ms.locfileid: "54781303"
   
 ### <a name="to-create-a-web-forms-application"></a>Aby utworzyć aplikację formularzy sieci Web  
   
-1.  Na **pliku** menu, wybierz **nową witrynę sieci Web**.  
+1. Na **pliku** menu, wybierz **nową witrynę sieci Web**.  
   
-2.  W **nową witrynę sieci Web** okno dialogowe, wybierz opcję [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] **witryny sieci Web**.  
+2. W **nową witrynę sieci Web** okno dialogowe, wybierz opcję [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] **witryny sieci Web**.  
   
-3.  Kliknij przycisk **OK**.  
+3. Kliknij przycisk **OK**.  
   
 ### <a name="to-debug-your-web-form"></a>Aby debugować formularz sieci Web  
   
-1.  Ustaw co najmniej jednego punktu przerwania w funkcji i procedury obsługi zdarzeń.  
+1. Ustaw co najmniej jednego punktu przerwania w funkcji i procedury obsługi zdarzeń.  
   
      Aby uzyskać więcej informacji, zobacz [punkty przerwania i śledzenia](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
-2.  Po osiągnięciu punktu przerwania przejść przez kod wewnątrz funkcji. Obserwuj wykonywanie kodu, dopóki nie można ustalić przyczynę problemu.  
+2. Po osiągnięciu punktu przerwania przejść przez kod wewnątrz funkcji. Obserwuj wykonywanie kodu, dopóki nie można ustalić przyczynę problemu.  
   
      Aby uzyskać więcej informacji, zobacz [przechodzenie krok po kroku](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) i [debugowanie aplikacji sieci Web i skryptu](../debugger/debugging-web-applications-and-script.md).  
   
@@ -54,13 +54,13 @@ ms.locfileid: "54781303"
   
 #### <a name="to-change-the-default-debug-configuration"></a>Aby zmienić domyślną konfigurację debugowania  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy witrynę sieci Web i wybierz **stron właściwości** otworzyć **stron właściwości** okno dialogowe.  
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy witrynę sieci Web i wybierz **stron właściwości** otworzyć **stron właściwości** okno dialogowe.  
   
-2.  Kliknij przycisk **opcje uruchamiania**.  
+2. Kliknij przycisk **opcje uruchamiania**.  
   
-3.  Ustaw **Akcja uruchamiania** do strony sieci Web, które powinny być wyświetlane jako pierwsze.  
+3. Ustaw **Akcja uruchamiania** do strony sieci Web, które powinny być wyświetlane jako pierwsze.  
   
-4.  W obszarze **debugery**, upewnij się, że **debugowanie ASP.NET** jest zaznaczone.  
+4. W obszarze **debugery**, upewnij się, że **debugowanie ASP.NET** jest zaznaczone.  
   
      Aby uzyskać więcej informacji, zobacz [ustawienia stron właściwości dla projektów sieci Web](../debugger/property-pages-settings-for-web-projects.md).  
   

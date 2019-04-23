@@ -11,12 +11,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc91bff6819cc5a1ed1e22864157143843f88ba9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71593496613c75485fd30481777d0fcc1102c11c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790432"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117814"
 ---
 # <a name="how-to-configure-performance-rules"></a>Instrukcje: Konfigurowanie zasad wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,18 +25,18 @@ Ostrzeżeń dotyczących wydajności o tym Visual Studio Profiling Tools wskazuj
   
 ### <a name="to-configure-profiler-performance-warnings"></a>Aby skonfigurować ostrzeżeń dotyczących wydajności programu profilującego  
   
-1.  Na **narzędzia** menu, kliknij przycisk **opcje**.  
+1. Na **narzędzia** menu, kliknij przycisk **opcje**.  
   
-2.  Rozwiń **narzędzia do oceny wydajności**, a następnie kliknij przycisk **reguły**.  
+2. Rozwiń **narzędzia do oceny wydajności**, a następnie kliknij przycisk **reguły**.  
   
-3.  Aby włączyć lub wyłączyć ostrzeżenia, zaznacz lub wyczyść pole wyboru obok ostrzeżenie **identyfikator** i nazwę.  
+3. Aby włączyć lub wyłączyć ostrzeżenia, zaznacz lub wyczyść pole wyboru obok ostrzeżenie **identyfikator** i nazwę.  
   
-4.  Aby określić poziom warring regułę, kliknij przycisk **akcji** komórki obok reguły, a następnie kliknij przycisk poziom ostrzeżeń.  
+4. Aby określić poziom warring regułę, kliknij przycisk **akcji** komórki obok reguły, a następnie kliknij przycisk poziom ostrzeżeń.  
   
-    -   **Wyłączone** — wyłącza regułę (jest to taka sama jak wyczyścić pole wyboru obok identyfikator reguły).  
+    - **Wyłączone** — wyłącza regułę (jest to taka sama jak wyczyścić pole wyboru obok identyfikator reguły).  
   
-    -   **Ostrzeżenie** -Wyświetla reguły jako ostrzeżenie.  
+    - **Ostrzeżenie** -Wyświetla reguły jako ostrzeżenie.  
   
-    -   **Błąd** — zatrzymuje wykonywanie profilowania i wyświetla reguł jako błąd.  
+    - **Błąd** — zatrzymuje wykonywanie profilowania i wyświetla reguł jako błąd.  
   
-    -   **Informacje o** -Wyświetla reguły jako tylko informacje.
+    - **Informacje o** -Wyświetla reguły jako tylko informacje.

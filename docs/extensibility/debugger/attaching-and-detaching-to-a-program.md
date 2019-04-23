@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b81ea271e1ab5d44337ce111e89d5624efd452d0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9fe89c6106ab1b411974e44bb05128b2bfc99fc6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706018"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089606"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Dołączanie i odłączanie do programu
 Dołączanie debugera wymaga wysyłania odpowiedniej kolejności metod i zdarzeń z odpowiednich atrybutów.
@@ -31,11 +31,11 @@ Dołączanie debugera wymaga wysyłania odpowiedniej kolejności metod i zdarze�
 
     Jeśli `S_OK` ma zostać zwrócona, Niemcy, które ma być ładowane w tym samym procesie co SDM. SDM wykonuje następujące zadania:
 
-   1.  Wywołania [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) można pobrać informacji o aparacie programu DE.
+   1. Wywołania [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) można pobrać informacji o aparacie programu DE.
 
-   2.  Wspólnie tworzy DE.
+   2. Wspólnie tworzy DE.
 
-   3.  Wywołania [dołączyć](../../extensibility/debugger/reference/idebugengine2-attach.md).
+   3. Wywołania [dołączyć](../../extensibility/debugger/reference/idebugengine2-attach.md).
 
 2. Wysyła DE [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) do SDM z `EVENT_SYNC` atrybutu.
 

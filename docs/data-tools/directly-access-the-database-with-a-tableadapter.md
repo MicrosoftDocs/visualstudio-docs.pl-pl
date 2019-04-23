@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f120f29494b8c519253c98f889496189e7e2594f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 26bcab8d589c1fedcbbc4eb1f8b06bb1c04cac53
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931627"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113303"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Bezpośredni dostęp do bazy danych za pomocą adaptera TableAdapter
 
@@ -42,7 +42,7 @@ Wywołanie elementu TableAdapter `DbDirect` metodę, która wykonuje zadanie, kt
 
 ### <a name="to-insert-new-records-directly-into-a-database"></a>Aby wstawić nowe rekordy bezpośrednio do bazy danych
 
--   Wywołaj TableAdapter `Insert` jest metoda wartości dla każdej kolumny jako parametry. W poniższej procedurze użyto `Region` tabeli w bazie danych Northwind jako przykład.
+- Wywołaj TableAdapter `Insert` jest metoda wartości dla każdej kolumny jako parametry. W poniższej procedurze użyto `Region` tabeli w bazie danych Northwind jako przykład.
 
     > [!NOTE]
     > Jeśli nie masz dostępne wystąpienia, należy utworzyć wystąpienie TableAdapter, którego chcesz używać.
@@ -52,7 +52,7 @@ Wywołanie elementu TableAdapter `DbDirect` metodę, która wykonuje zadanie, kt
 
 ### <a name="to-update-records-directly-in-a-database"></a>Do aktualizowania rekordów bezpośrednio w bazie danych
 
--   Wywołaj TableAdapter `Update` jest metoda nowymi i oryginalnymi wartości dla każdej kolumny jako parametry.
+- Wywołaj TableAdapter `Update` jest metoda nowymi i oryginalnymi wartości dla każdej kolumny jako parametry.
 
     > [!NOTE]
     > Jeśli nie masz dostępne wystąpienia, należy utworzyć wystąpienie TableAdapter, którego chcesz używać.
@@ -62,7 +62,7 @@ Wywołanie elementu TableAdapter `DbDirect` metodę, która wykonuje zadanie, kt
 
 ### <a name="to-delete-records-directly-from-a-database"></a>Do usuwania rekordów bezpośrednio z bazy danych
 
--   Wywołaj TableAdapter `Delete` jest metoda wartości dla każdej kolumny jako parametry `Delete` metody. W poniższej procedurze użyto `Region` tabeli w bazie danych Northwind jako przykład.
+- Wywołaj TableAdapter `Delete` jest metoda wartości dla każdej kolumny jako parametry `Delete` metody. W poniższej procedurze użyto `Region` tabeli w bazie danych Northwind jako przykład.
 
     > [!NOTE]
     > Jeśli nie masz dostępne wystąpienia, należy utworzyć wystąpienie TableAdapter, którego chcesz używać.

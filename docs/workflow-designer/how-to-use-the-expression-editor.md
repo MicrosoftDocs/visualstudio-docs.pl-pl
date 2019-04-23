@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fee9738cfce003ef19d311856304d87f6a4b2f15
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce46f1db900aa5c37b49a1cc228290d7d99d29a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918913"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117255"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Instrukcje: Używanie edytora wyrażeń
 
@@ -36,18 +36,18 @@ Wyrażenia są wartości literałów lub kod języka Visual Basic, powiązany z 
 
 ## <a name="use-the-expression-editor"></a>Używanie edytora wyrażeń
 
-1.  W programie Visual Studio Otwórz projekt nowego lub istniejącego przepływu pracy.
+1. W programie Visual Studio Otwórz projekt nowego lub istniejącego przepływu pracy.
 
-2.  Dodaj na przykład <xref:System.Activities.Statements.Assign> działania przepływu pracy.
+2. Dodaj na przykład <xref:System.Activities.Statements.Assign> działania przepływu pracy.
 
     > [!NOTE]
     > Wiele działań przepływu pracy ma edytory wyrażenia. Obiekty wyrażeń TextBlock również zostać wyświetlony w Projektancie zmiennej, projektanta argumentów i projektanta argumentów dynamicznych. <xref:System.Activities.Statements.Assign> To działanie służy jako przykład.
 
-3.  Kliknij przycisk edytora wyrażeń po lewej stronie, w Projektancie działań dla <xref:System.Activities.Statements.Assign> działania.
+3. Kliknij przycisk edytora wyrażeń po lewej stronie, w Projektancie działań dla <xref:System.Activities.Statements.Assign> działania.
 
      Parametry szare znaku wodnego  **\<do >** i  **\<wprowadź wyrażenie VB >** są domyślne, ciągi tekstowe edytory wyrażenia w <xref:System.Activities.Statements.Assign> działania.
 
-4.  Wprowadź wyrażenie. Jeśli wprowadzisz ciąg, upewnij się umieścić ciąg w cudzysłowie. Jeśli chcesz powiązać argumentu wyrażenia do zmiennej, należy pozostawić znaki cudzysłowu.
+4. Wprowadź wyrażenie. Jeśli wprowadzisz ciąg, upewnij się umieścić ciąg w cudzysłowie. Jeśli chcesz powiązać argumentu wyrażenia do zmiennej, należy pozostawić znaki cudzysłowu.
 
      Gdy wszystko będzie gotowe, wybierz region lub obszar, aby przenieść fokus do innej części projektanta poza edytora wyrażeń. Przesunięcie fokus powoduje, że kompilator, aby sprawdzić poprawność wyrażenia, zgodnie z wcześniejszym opisem.
 

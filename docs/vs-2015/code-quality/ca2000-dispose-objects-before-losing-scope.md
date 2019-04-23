@@ -16,12 +16,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f3456ec773b233da3ef2be1dfa7731460bdf6b44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4cc41376905dd5bd5df5711d2de3edf1ea1d04dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762958"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085041"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Likwiduj obiekty przed utratą zakresu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ ms.locfileid: "54762958"
   
  Poniżej przedstawiono kilka sytuacji, w którym za pomocą instrukcji nie jest wystarczająco, aby chronić interfejs IDisposable obiektów i może spowodować, że CA2000 występuje.  
   
--   Zwraca obiekt rozporządzalny wymaga, że obiekt jest konstruowany w bloku try/finally poza za pomocą bloku.  
+- Zwraca obiekt rozporządzalny wymaga, że obiekt jest konstruowany w bloku try/finally poza za pomocą bloku.  
   
--   Inicjowanie elementów członkowskich obiektu możliwe do rozporządzania, nie należy wykonywać w Konstruktorze przy użyciu instrukcji.  
+- Inicjowanie elementów członkowskich obiektu możliwe do rozporządzania, nie należy wykonywać w Konstruktorze przy użyciu instrukcji.  
   
--   Zagnieżdżanie konstruktorów, które są chronione tylko przez jeden wyjątek procedury obsługi. Na przykład  
+- Zagnieżdżanie konstruktorów, które są chronione tylko przez jeden wyjątek procedury obsługi. Na przykład  
   
     ```  
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))  
@@ -59,7 +59,7 @@ ms.locfileid: "54762958"
   
      powoduje, że CA2000, ponieważ wystąpił błąd podczas tworzenia obiektu StreamReader może spowodować obiektu FileStream, nigdy nie jest zamknięty.  
   
--   Obiekty dynamiczne należy używać obiektu w tle do implementowania wzorca usuwania obiektów interfejsu IDisposable.  
+- Obiekty dynamiczne należy używać obiektu w tle do implementowania wzorca usuwania obiektów interfejsu IDisposable.  
   
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
  Nie pomijaj ostrzeżeń dla tej reguły, jeśli wywołujesz metodę na obiekcie, który wywołuje `Dispose`, takich jak <xref:System.IO.Stream.Close%2A>, lub jeśli metoda, który spowodował ostrzeżenie zwraca obiekt interfejsu IDisposable otacza obiekt.  

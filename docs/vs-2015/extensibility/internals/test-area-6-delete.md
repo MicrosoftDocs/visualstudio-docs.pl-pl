@@ -11,12 +11,12 @@ ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 206835d92a2fca27bed2cbb8a96b99e6b7c8a082
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3ffe786b5bc5f6d0bb0233fbb431988e0145611d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764059"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094875"
 ---
 # <a name="test-area-6-delete"></a>Obszar testowy 6: Usuwanie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Ten obszar testowy wtyczki kontroli źródła obejmuje akcje usuwania.
 ## <a name="expected-behavior"></a>Oczekiwane zachowanie  
  To oczekiwane zachowanie dla przypadków testowych, w obszarze badania delete:  
   
--   Usunięty element nie jest już widoczna w ramach **Eksploratora rozwiązań**.  
+- Usunięty element nie jest już widoczna w ramach **Eksploratora rozwiązań**.  
   
--   Element nadrzędny usuniętego projektu lub element jest wyewidencjonowany, zgodnie z potrzebami (prawdopodobnie wraz z monitem o.)  
+- Element nadrzędny usuniętego projektu lub element jest wyewidencjonowany, zgodnie z potrzebami (prawdopodobnie wraz z monitem o.)  
   
--   Po usunięciu zaznaczenia lub dodano element, nie ma w **oczekujące elementy do zaewidencjonowania** okna.  
+- Po usunięciu zaznaczenia lub dodano element, nie ma w **oczekujące elementy do zaewidencjonowania** okna.  
   
--   Element nadal istnieje w magazynie kontroli źródła, nawet po usunięciu i musi ręcznie przeczyścić.  
+- Element nadal istnieje w magazynie kontroli źródła, nawet po usunięciu i musi ręcznie przeczyścić.  
   
 |Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|  
 |------------|----------------|--------------------------------|  

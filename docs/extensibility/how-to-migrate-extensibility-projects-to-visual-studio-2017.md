@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: d2d54bf83cac677c09e63da6169e39100cbb30cc
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 3d55055734233a385f4a6d24f8925af2f0829fe3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324211"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087732"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017
 
@@ -38,7 +38,8 @@ Plik projektu (na przykład **.csproj*) zostaną zaktualizowane:
 
 ## <a name="update-the-microsoftvssdkbuildtools-nuget-package"></a>Aktualizacja pakietu Microsoft.VSSDK.BuildTools NuGet
 
->**Uwaga:** Jeśli rozwiązanie nie odwołuje się do pakietu Microsoft.VSSDK.BuildTools NuGet, możesz pominąć ten krok.
+> [!Note]
+> Jeśli rozwiązanie nie odwołuje się do pakietu Microsoft.VSSDK.BuildTools NuGet, możesz pominąć ten krok.
 
 Aby można było tworzyć rozszerzenia w nowych rozszerzeniu VSIX v3 (wersja 3), rozwiązania będzie muszą ma zostać utworzony za pomocą nowe narzędzia VSSDK kompilacji. To nie będą instalowane z Visual Studio 2017, ale v2 rozszerzenia VSIX może zawierający odwołanie do starszej wersji za pomocą narzędzia NuGet. Jeśli tak, należy ręcznie zainstalować aktualizację pakietu Microsoft.VSSDK.BuildTools NuGet dla Twojego rozwiązania.
 
@@ -55,13 +56,14 @@ Aby zaktualizować odwołania NuGet Microsoft.VSSDK.BuildTools:
 
 Aby upewnić się, że użytkownika instalacji programu Visual Studio ma wszystkie zestawy, które są wymagane do uruchomienia rozszerzenie, należy określić wszystkie wstępnie wymagane składniki lub pakietów w pliku manifestu rozszerzenia. Gdy użytkownik próbuje zainstalować rozszerzenie, Instalator VSIX sprawdzi, czy wszystkie wstępnie wymagane składniki są zainstalowane. Jeśli niektóre są spełnione, użytkownik zostanie wyświetlony monit zainstalowanie brakujących składników jako część procesu instalacji rozszerzenia.
 
->**Uwaga:** Co najmniej wszystkie rozszerzenia należy określić jako warunek wstępny, składnika edytora podstawowych funkcji programu Visual Studio.
+> [!Note]
+> Co najmniej wszystkie rozszerzenia należy określić jako warunek wstępny, składnika edytora podstawowych funkcji programu Visual Studio.
 
 * Edytuj plik manifestu rozszerzenia (zwykle nazywane *source.extension.vsixmanifest*).
 * Upewnij się, `InstallationTarget` obejmuje 15.0.
 * Dodaj wymagania wstępne instalacji wymagane (jak pokazano w poniższym przykładzie).
-  * Zalecane jest określenie tylko identyfikatory składnika wymagań wstępnych dotyczących instalacji.
-  * Zobacz sekcję na końcu tego dokumentu, aby [instrukcje dotyczące identyfikowania identyfikatorów składników](#find-component-ids).
+   * Zalecane jest określenie tylko identyfikatory składnika wymagań wstępnych dotyczących instalacji.
+   * Zobacz sekcję na końcu tego dokumentu, aby [instrukcje dotyczące identyfikowania identyfikatorów składników](#find-component-ids).
 
 Przykład:
 
@@ -81,23 +83,25 @@ Przykład:
 
 Zamiast bezpośrednio edytować plik manifestu XML, można użyć nowej **wymagania wstępne** karcie Manifest Designer, aby wybrać wymagań wstępnych i XML zostanie zaktualizowany dla Ciebie.
 
->**Uwaga:** Projektant manifestu tylko pozwoli wybrać składniki (obciążeń i pakietów), które są instalowane w bieżącym wystąpieniu programu Visual Studio. Jeśli potrzebujesz dodać wymaganiem wstępnym dla obciążenia, pakietem lub składnika, który nie jest obecnie zainstalowany bezpośrednio edytować kod XML manifestu.
+> [!Note]
+> Projektant manifestu tylko pozwoli wybrać składniki (obciążeń i pakietów), które są instalowane w bieżącym wystąpieniu programu Visual Studio. Jeśli potrzebujesz dodać wymaganiem wstępnym dla obciążenia, pakietem lub składnika, który nie jest obecnie zainstalowany bezpośrednio edytować kod XML manifestu.
 
 * Otwórz *source.extension.vsixmanifest [projekt]* pliku.
 * Wybierz **wymagania wstępne** kartę, a następnie naciśnij klawisz **New** przycisku.
 
-  ![Manifestu VSIX](media/vsix-manifest-designer.png)
+   ![Manifestu VSIX](media/vsix-manifest-designer.png)
 
 * **Dodawanie nowych wymagań wstępnych** zostanie otwarte okno.
 
-  ![Dodaj wstępnie wymaganego składnika vsix](media/add-vsix-prerequisite.png)
+   ![Dodaj wstępnie wymaganego składnika vsix](media/add-vsix-prerequisite.png)
 
 * Kliknij listę rozwijaną **nazwa** i wybierz żądany wymagań wstępnych.
-* Aktualizacja wersji, jeśli jest to wymagane.
+* Jeśli to konieczne, należy zaktualizować wersję.
 
-  >Uwaga: Pole wersji jest wstępnie wypełniony wersję aktualnie zainstalowany składnik z zakresu obejmujące do (z wyjątkiem) następnej wersji głównej składnika.
+   > [!Note]
+   > Pole wersji jest wstępnie wypełniony wersję aktualnie zainstalowany składnik z zakresu obejmujące do (z wyjątkiem) następnej wersji głównej składnika.
 
-  ![Dodaj warunek wstępny roslyn](media/add-roslyn-prerequisite.png)
+   ![Dodaj warunek wstępny roslyn](media/add-roslyn-prerequisite.png)
 
 * Naciśnij klawisz **OK**.
 
@@ -109,24 +113,26 @@ Może wyglądać: *C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterpris
 
 ![Uruchom zewnętrzny program](media/start-external-program.png)
 
->**Uwaga:** Akcja uruchamiania debugowania są zwykle przechowywane w *. csproj.user* pliku. Ten plik zwykle znajduje się w *.gitignore* plików i, w związku z tym, nie są zwykle zapisywane z innych plików projektów, gdy zatwierdzone do kontroli źródła. Jako takie jeśli zostały pobrane rozwiązania świeże z kontroli źródła prawdopodobnie projekt będzie miał żadne wartości, ustaw w przypadku ustawienia Akcja początkowa. Nowe projekty VSIX utworzonych za pomocą programu Visual Studio 2017 będzie miał *. csproj.user* plik utworzony przy użyciu ustawień domyślnych, wskazując w bieżącym katalogu instalacji programu Visual Studio. Jednak jeśli migrujesz rozszerzenie VSIX v2 jest prawdopodobne, że *. csproj.user* plik będzie zawierał odwołania do katalogu instalacyjnego poprzedniej wersji programu Visual Studio. Ustawienie wartości dla **debugowania** > **Akcja uruchamiania** umożliwi prawidłowe wystąpienie eksperymentalne programu Visual Studio, można uruchomić podczas próby debugowania rozszerzenia.
+> [!Note]
+> Akcja uruchamiania debugowania są zwykle przechowywane w *. csproj.user* pliku. Ten plik zwykle znajduje się w *.gitignore* plików i, w związku z tym, nie są zwykle zapisywane z innych plików projektów, gdy zatwierdzone do kontroli źródła. Jako takie jeśli zostały pobrane rozwiązania świeże z kontroli źródła prawdopodobnie projekt będzie miał żadne wartości, ustaw w przypadku ustawienia Akcja początkowa. Nowe projekty VSIX utworzonych za pomocą programu Visual Studio 2017 będzie miał *. csproj.user* plik utworzony przy użyciu ustawień domyślnych, wskazując w bieżącym katalogu instalacji programu Visual Studio. Jednak jeśli migrujesz rozszerzenie VSIX v2 jest prawdopodobne, że *. csproj.user* plik będzie zawierał odwołania do katalogu instalacyjnego poprzedniej wersji programu Visual Studio. Ustawienie wartości dla **debugowania** > **Akcja uruchamiania** umożliwi prawidłowe wystąpienie eksperymentalne programu Visual Studio, można uruchomić podczas próby debugowania rozszerzenia.
 
 ## <a name="check-that-the-extension-builds-correctly-as-a-vsix-v3"></a>Sprawdź, czy rozszerzenie tworzy poprawnie (jako rozszerzeniu VSIX v3)
 
 * Skompiluj projekt VSIX.
 * Rozpakuj wygenerowanego pliku VSIX.
-  * Domyślnie plik VSIX znajduje się wewnątrz *bin/Debug* lub *bin/Release* jako *.vsix [YourCustomExtension]*.
-  * Zmień nazwę *.vsix* do *zip* łatwe wyświetlanie zawartości.
+   * Domyślnie plik VSIX znajduje się wewnątrz *bin/Debug* lub *bin/Release* jako *.vsix [YourCustomExtension]*.
+   * Zmień nazwę *.vsix* do *zip* łatwe wyświetlanie zawartości.
 * Sprawdź, czy istnienie trzy pliki:
-  * *Extension.vsixmanifest*
-  * *manifest.json*
-  * *catalog.json*
+   * *Extension.vsixmanifest*
+   * *manifest.json*
+   * *catalog.json*
 
 ## <a name="check-when-all-required-prerequisites-are-installed"></a>Sprawdź, gdy wszystkie wymagane wstępnie wymagane składniki są zainstalowane
 
 Sprawdź, czy VSIX pomyślnie instaluje na komputerze przy użyciu wszystkich wymaganych wstępnie wymagane składniki, które są zainstalowane.
 
->**Uwaga:** Przed zainstalowaniem dowolnego rozszerzenia, zamknij wszystkie wystąpienia programu Visual Studio.
+> [!Note]
+> Przed zainstalowaniem dowolnego rozszerzenia, zamknij wszystkie wystąpienia programu Visual Studio.
 
 Próba zainstalowania rozszerzenia:
 
@@ -135,11 +141,11 @@ Próba zainstalowania rozszerzenia:
 ![VSIX installer on Visual Studio 2017](media/vsixinstaller-vs-2017.png)
 
 * Opcjonalne: Sprawdź w poprzednich wersjach programu Visual Studio.
-  * Okazuje się zgodności z poprzednimi wersjami.
-  * Powinna działać w przypadku programu Visual Studio 2012, Visual Studio 2013, Visual Studio 2015.
+   * Okazuje się zgodności z poprzednimi wersjami.
+   * Powinna działać w przypadku programu Visual Studio 2012, Visual Studio 2013, Visual Studio 2015.
 * Opcjonalne: Sprawdź, czy sprawdzanie wersji Instalator VSIX zapewnia szeroki wybór wersji.
-  * Zawiera poprzednie wersje programu Visual Studio (jeśli jest zainstalowana).
-  * Includes Visual Studio 2017.
+   * Zawiera poprzednie wersje programu Visual Studio (jeśli jest zainstalowana).
+   * Includes Visual Studio 2017.
 
 Ostatnio otwarto programu Visual Studio, może zostać wyświetlony okno dialogowe następująco:
 
@@ -147,7 +153,8 @@ Ostatnio otwarto programu Visual Studio, może zostać wyświetlony okno dialogo
 
 Poczekaj na zamknięcie procesów lub ręcznie zakończenia zadania. Można znaleźć procesy, przez nazwę listy lub o identyfikatorze PID wymienione w nawiasach.
 
->**Uwaga:** Te procesy nie automatycznie wyłączy po uruchomieniu wystąpienia programu Visual Studio. Upewnij się, zostało Zamknij wszystkie wystąpienia programu Visual Studio na komputerze — łącznie z tymi od innych użytkowników, następnie kontynuuj spróbować ponownie.
+> [!Note]
+> Te procesy nie automatycznie wyłączy po uruchomieniu wystąpienia programu Visual Studio. Upewnij się, zostało Zamknij wszystkie wystąpienia programu Visual Studio na komputerze — łącznie z tymi od innych użytkowników, następnie kontynuuj spróbować ponownie.
 
 ## <a name="check-when-missing-the-required-prerequisites"></a>Sprawdź, gdy brak wymagań wstępnych
 
@@ -163,7 +170,7 @@ Podczas wyszukiwania zależności, można zauważyć, że jedną zależność mo
 
 Aby zapewnić dalsze wskazówki, zidentyfikowaliśmy kilka popularnych typów rozszerzeń i ich sugerowane wymagania wstępne:
 
-Typ rozszerzenia | Nazwa wyświetlana | Id
+Typ rozszerzenia | Nazwa wyświetlana | Identyfikator
 --- | --- | ---
 Edytor | Edytor rdzeni programu Visual Studio | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# i Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
@@ -180,7 +187,7 @@ Jeśli wiesz, który składnik zawiera określonego pliku binarnego, Pobierz [sk
 
 Istnieją cztery kolumny w arkuszu programu Excel: **Nazwa składnika**, **ComponentId**, **wersji**, i **binarnego / nazwy plików**.  Filtry można użyć do wyszukiwania i znajdowania określonych składników i plikach binarnych.
 
-Dla wszystkich odwołań należy najpierw określić, które nie są w składniku core editor (Microsoft.VisualStudio.Component.CoreEditor).  Co najmniej wymagamy składnika edytora podstawowych, należy określić jako warunek wstępny dla wszystkich rozszerzeń. Odwołań, które są pozostawiane, które nie znajdują się w edytorze podstawowych funkcji, należy dodać filtry w **pliki binarne / nazwy plików** sekcję, aby znaleźć składników, które zawierają dowolne spośród podzbiór tych odwołań.
+Dla wszystkich odwołań należy najpierw określić, które nie są w składniku core editor (Microsoft.VisualStudio.Component.CoreEditor).  Co najmniej wymagamy składnika edytora podstawowych, należy określić jako warunek wstępny dla wszystkich rozszerzeń. Odwołań, które są pozostawiane, które nie znajdują się w edytorze podstawowych funkcji, należy dodać filtry w **pliki binarne / nazwy plików** sekcję, aby znaleźć składników, które nie ma żadnej z podzbiorów tych odwołań.
 
 Przykłady:
 

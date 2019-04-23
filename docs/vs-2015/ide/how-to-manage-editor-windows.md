@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e28232db66663cb668a28a33d12daa8ff3f210ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 107b42500bbe2daed0d03d3e23e4817c9c3b3fc4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761643"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089929"
 ---
 # <a name="how-to-manage-editor-windows"></a>Instrukcje: Zarządzaj Windows edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Możesz jest od razu pracować nad kodem w kilku lokalizacjach. W tym przez podz
   
 #### <a name="to-split-a-pane"></a>Aby podzielić okienko  
   
-1.  Kliknij w oknie edytora, aby ustawić fokus.  
+1. Kliknij w oknie edytora, aby ustawić fokus.  
   
-2.  Z **okna** menu, wybierz opcję **podziału**.  
+2. Z **okna** menu, wybierz opcję **podziału**.  
   
      Obszar edytowania dzieli się na dwie części oddzielone pasek podziału. Można przewijać te okienka niezależnie, aby wyświetlić i edytować różne części aktywnego dokumentu w tym samym czasie. Wszelkie zmiany wprowadzone w jednym okienku są odzwierciedlane w innych.  
   
@@ -45,14 +45,14 @@ Możesz jest od razu pracować nad kodem w kilku lokalizacjach. W tym przez podz
   
 #### <a name="to-return-to-single-pane-view"></a>Aby powrócić do widoku  
   
--   Z **okna** menu, wybierz opcję **Usuń podział**.  
+- Z **okna** menu, wybierz opcję **Usuń podział**.  
   
 ## <a name="creating-new-windows"></a>Tworzenie nowego Windows  
  Można również utworzyć wiele wystąpień okno edytora. Ta funkcja umożliwia otwarcie długich dokumentu w więcej niż jedno wystąpienie edytora, tak że można wyświetlać i edytować poszczególne sekcje jednocześnie w oknach Edytora oddzielny, pełny.  
   
 #### <a name="to-create-a-new-window"></a>Aby utworzyć nowe okno  
   
--   Na **okna** menu, kliknij przycisk **nowe okno**.  
+- Na **okna** menu, kliknij przycisk **nowe okno**.  
   
      Nowe wystąpienie z kartami edytora zostanie dodany.  
   

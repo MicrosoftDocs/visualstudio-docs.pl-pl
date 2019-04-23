@@ -11,11 +11,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 5c004b1db829f50b2fed435ad0202308ef3726c8
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58873020"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118787"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2019"></a>Edytor Visual Studio core (dołączone do programu Visual Studio Enterprise 2019)
 
@@ -363,7 +363,7 @@ Microsoft.Net.Component.4.6.1.SDK | Program .NET framework 4.6.1 zestawu SDK | 1
 Microsoft.Net.Component.4.6.1.TargetingPack | Platformy .NET framework 4.6.1 targeting pack | 16.0.28517.75 | Optional
 Microsoft.VisualStudio.Component.VC.140 | W wersji 140 MSVC — VS 2015 C++ narzędzia build tools (14.00) | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.VC.ATLMFC | C++ MFC dla narzędzia do kompilacji v142 (x86 & x64) | 16.0.28625.61 | Optional
-Microsoft.VisualStudio.Component.VC.CLI.Support | C + +/ interfejsu wiersza polecenia Obsługa v142 narzędzia do kompilacji | 16.0.28625.61 | Optional
+Microsoft.VisualStudio.Component.VC.CLI.Support | C++/ Obsługę interfejsu wiersza polecenia dla narzędzia do kompilacji v142 | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Moduły języka C++ dla v142 narzędzia build tools (x64/x86 — wersja eksperymentalna) | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.VC.v141.x86.x64 | Wersji 141 MSVC — narzędzia do kompilacji x64/x86 programu VS 2017 C++ (v14.16) | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299 | System Windows 10 SDK (10.0.16299.0) | 16.0.28517.75 | Optional
@@ -911,7 +911,7 @@ Microsoft.VisualStudio.Component.VC.v141.ATL.ARM.Spectre | C++ ATL dla narzędzi
 Microsoft.VisualStudio.Component.VC.v141.ATL.ARM64 | C++ ATL dla narzędzia kompilacji w wersji 141 (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.ARM64.Spectre | C++ ATL dla wersji 141 narzędzia build tools z krokami zaradczymi dla luki Spectre (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.Spectre | C++ ATL dla narzędzia kompilacji w wersji 141 z krokami zaradczymi dla luki Spectre (x86 & x64) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.CLI.Support | C + +/ interfejsu wiersza polecenia Obsługa wersji 141 narzędzia do kompilacji | 16.0.28625.61
+Microsoft.VisualStudio.Component.VC.v141.CLI.Support | C++/ Obsługę interfejsu wiersza polecenia dla narzędzia kompilacji w wersji 141 | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC | C++ MFC dla narzędzia do kompilacji wersji 141 (x86 & x64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM | C++ MFC dla narzędzia kompilacji w wersji 141 (ARM) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM.Spectre | C++ MFC dla narzędzia kompilacji w wersji 141 z krokami zaradczymi dla luki Spectre (ARM) | 16.0.28625.61
@@ -920,5 +920,5 @@ Microsoft.VisualStudio.Component.VC.v141.MFC.ARM64.Spectre | C++ MFC dla wersji 
 Microsoft.VisualStudio.Component.VC.v141.MFC.Spectre | C++ MFC dla narzędzia kompilacji w wersji 141 z krokami zaradczymi dla luki Spectre (x86 & x64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.x86.x64.Spectre | Wersji 141 MSVC — programu VS 2017 C++ x64/x86 skorygowane z krokami zaradczymi dla luki libs (v14.16) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VisualStudioData | Źródła danych i odwołania do usług | 16.0.28707.177
-Microsoft.VisualStudio.Component.WinXP | Obsługa języka C++ Windows XP narzędzi programu VS 2017 (w wersji 141) [przestarzałe] | 16.0.28625.61
+Microsoft.VisualStudio.Component.WinXP | C++Windows XP obsługę narzędzi programu VS 2017 (w wersji 141) [przestarzałe] | 16.0.28625.61
 Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 16.0.28621.142

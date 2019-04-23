@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e6ea971705b164a27fc7f65c3ac2d681b1569177
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 416baf8988f8d17a336f9fbef1eb0f9d9a72046b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758802"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109013"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Synchronizacja ustawień w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,27 +26,27 @@ Korzystając z tego samego konta personalizacji zalogować się do programu Visu
 ## <a name="synchronized-settings"></a>Zsynchronizowane ustawienia
  Domyślnie zsynchronizowane są następujące ustawienia.
 
--   Ustawienia środowiska deweloperskiego (musisz wybrać zestaw ustawień przy pierwszym uruchomieniu programu Visual Studio, ale możesz zmienić wybór w dowolnym momencie. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).)
+- Ustawienia środowiska deweloperskiego (musisz wybrać zestaw ustawień przy pierwszym uruchomieniu programu Visual Studio, ale możesz zmienić wybór w dowolnym momencie. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).)
 
--   Następujące opcje w **narzędzia &#124; opcje** strony:
+- Następujące opcje w **narzędzia &#124; opcje** strony:
 
-    -   **Motyw** i pasek wielkość liter ustawienia, w menu **środowiska**, **ogólne** strony opcji
+    - **Motyw** i pasek wielkość liter ustawienia, w menu **środowiska**, **ogólne** strony opcji
 
-    -   Wszystkie ustawienia na **środowiska**, **czcionki i kolory** strony opcji
+    - Wszystkie ustawienia na **środowiska**, **czcionki i kolory** strony opcji
 
-    -   Wszystkie skróty klawiaturowe, na **środowiska**, **klawiatury** strony opcji
+    - Wszystkie skróty klawiaturowe, na **środowiska**, **klawiatury** strony opcji
 
-    -   Wszystkie ustawienia na **środowiska, karty i Windows** strony opcji
+    - Wszystkie ustawienia na **środowiska, karty i Windows** strony opcji
 
-    -   Wszystkie ustawienia na **środowiska**, **uruchamiania** strony opcji
+    - Wszystkie ustawienia na **środowiska**, **uruchamiania** strony opcji
 
-    -   Wszystkie ustawienia na **edytora tekstów** Opcje strony
+    - Wszystkie ustawienia na **edytora tekstów** Opcje strony
 
--   Wszystkie ustawienia w Projektancie XAML Opcje strony
+- Wszystkie ustawienia w Projektancie XAML Opcje strony
 
--   Aliasy zdefiniowane przez użytkownika polecenia. Aby uzyskać więcej informacji o definiowaniu aliasów poleceń, zobacz [Visual Studio — aliasy poleceń](../ide/reference/visual-studio-command-aliases.md).
+- Aliasy zdefiniowane przez użytkownika polecenia. Aby uzyskać więcej informacji o definiowaniu aliasów poleceń, zobacz [Visual Studio — aliasy poleceń](../ide/reference/visual-studio-command-aliases.md).
 
--   Układów okien zdefiniowanych przez użytkownika w **okna &#124; Zarządzanie układami okien** strony
+- Układów okien zdefiniowanych przez użytkownika w **okna &#124; Zarządzanie układami okien** strony
 
 ## <a name="turning-synchronized-settings-off-for-a-particular-computer"></a>Włączanie synchronizacji ustawień, wyłączyć dla określonego komputera
  Synchronizacja ustawień dla programu Visual Studio są włączone domyślnie. Zsynchronizowane ustawienia na komputerze, można wyłączyć, przechodząc do **narzędzia &#124; opcje &#124; środowiska &#124; zsynchronizowane ustawienia** strony i usuwając zaznaczenie pola wyboru.  Na przykład, jeśli nie chcesz synchronizować ustawienia programu Visual Studio na komputerze A, zmiany ustawień wprowadzone na komputerze czy, nie pojawiają się na komputerze B lub komputerze C. komputerze B i C, będą nadal do synchronizacji ze sobą, ale nie z komputera A.

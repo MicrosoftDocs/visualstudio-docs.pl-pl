@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24ee1588555d51c20989d782375b32e5874df878
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 89559798e342c8993e523517e5c85fc38e1c0cf8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841753"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110878"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Przewodnik: Importowanie elementów z istniejącej witryny programu SharePoint
   W tym instruktażu pokazano, jak importować elementy z istniejącej witryny programu SharePoint do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint.
@@ -36,9 +36,9 @@ ms.locfileid: "56841753"
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
--   Obsługiwane edycje [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i programu SharePoint.
+- Obsługiwane edycje [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i programu SharePoint.
 
--   Program Visual Studio.
+- Program Visual Studio.
 
 ## <a name="customize-a-sharepoint-site"></a>Dostosowywanie witryny programu SharePoint
  W tym przykładzie utworzysz i dostosować podwitrynę programu SharePoint, dodając nowe kolumny witryny do niego i tworząc inną witrynę do użycia w przyszłości. Później będzie wyeksportować pierwszy podwitryny z plikiem WSP i zaimportowanie kolumny niestandardowej witryny do drugiego podwitryny przy użyciu WSP importowania projektu.
@@ -79,23 +79,23 @@ ms.locfileid: "56841753"
 
 ### <a name="to-export-an-existing-sharepoint-site"></a>Aby wyeksportować istniejącej witryny programu SharePoint
 
-1.  W witrynie programu SharePoint wybierz **ustawienia lokacji** na **Akcje witryny** kartę, aby wyświetlić stronę ustawień lokacji.
+1. W witrynie programu SharePoint wybierz **ustawienia lokacji** na **Akcje witryny** kartę, aby wyświetlić stronę ustawień lokacji.
 
-2.  W **Akcje witryny** sekcji strony Ustawienia lokacji wybierz **witrynę Zapisz jako szablon** łącza.
+2. W **Akcje witryny** sekcji strony Ustawienia lokacji wybierz **witrynę Zapisz jako szablon** łącza.
 
-3.  W **nazwy pliku** wprowadź **ExampleSite**, a następnie w **Nazwa szablonu** wprowadź **przykład witryny**.
+3. W **nazwy pliku** wprowadź **ExampleSite**, a następnie w **Nazwa szablonu** wprowadź **przykład witryny**.
 
-4.  W tym przykładzie należy pozostawić **dołączanie zawartości** wyczyść pole wyboru.
+4. W tym przykładzie należy pozostawić **dołączanie zawartości** wyczyść pole wyboru.
 
      Jeśli zaznaczysz to pole [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zapisuje wszystkie listy i biblioteki dokumentów i ich zawartość w pliku wsp. Mimo że jest to przydatne w pewnych okolicznościach, nie jest to wymagane dla tego przykładu.
 
-5.  Po pomyślnym zakończeniu operacji, wybierz **Galeria rozwiązań** link, aby wyświetlić plik .wsp.
+5. Po pomyślnym zakończeniu operacji, wybierz **Galeria rozwiązań** link, aby wyświetlić plik .wsp.
 
      Aby wyświetlić stronę Galeria rozwiązań nowszy, otwórz **Akcje witryny** menu, wybierz **ustawienia lokacji**, wybierz **przejdź do obszaru Ustawienia lokacji najwyższego poziomu** łącze w  **Administracja zbiorem lokacji** sekcji, a następnie wybierz **rozwiązania** łącze w **galerie** sekcji.
 
-6.  W galerii rozwiązań wybierz **ExampleSite** łącza.
+6. W galerii rozwiązań wybierz **ExampleSite** łącza.
 
-7.  W **pobieranie pliku** okna dialogowego wybierz **Zapisz** przycisk, aby zapisać plik w systemie lokalnym domyślnie w folderze pobrane.
+7. W **pobieranie pliku** okna dialogowego wybierz **Zapisz** przycisk, aby zapisać plik w systemie lokalnym domyślnie w folderze pobrane.
 
 ## <a name="import-the-wsp-file"></a>Importuj plik .wsp
  Teraz, gdy masz *.wsp* pliku, który zawiera element, który chcesz ponownie użyć (niestandardową witrynę kolumna kolumny testu), importowanie *.wsp* plik, aby uzyskać do niego dostęp.
@@ -130,13 +130,13 @@ ms.locfileid: "56841753"
 
 ### <a name="to-deploy-the-project"></a>Aby wdrożyć projekt
 
-1.  W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], wybierz **F5** klawisz, aby wdrożyć i uruchomić *.wsp* Importuj projekt.
+1. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], wybierz **F5** klawisz, aby wdrożyć i uruchomić *.wsp* Importuj projekt.
 
-2.  W witrynie programu SharePoint, otwórz **Akcje witryny** menu, a następnie wybierz **ustawienia lokacji** można wyświetlić strony ustawień lokacji.
+2. W witrynie programu SharePoint, otwórz **Akcje witryny** menu, a następnie wybierz **ustawienia lokacji** można wyświetlić strony ustawień lokacji.
 
-3.  W **galerie** wybierz pozycję **kolumny witryny** łącza.
+3. W **galerie** wybierz pozycję **kolumny witryny** łącza.
 
-4.  Przewiń w dół do **kolumn niestandardowych** sekcji.
+4. Przewiń w dół do **kolumn niestandardowych** sekcji.
 
      Należy zauważyć, że kolumny niestandardowej witryny, która został zaimportowany z pierwszej lokacji programu SharePoint pojawia się na liście.
 

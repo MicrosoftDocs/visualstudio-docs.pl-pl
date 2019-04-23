@@ -14,21 +14,21 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1f86605f3e76dc17fd8e404eb0d189f51ff2dc69
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 789c60da5be841721ab3a999120e2fe560ffd588
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652166"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108604"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Instrukcje: Rozszerzanie procesu kompilacji programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Procesu kompilacji jest definiowany przez szereg [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] plików .targets, które są importowane do pliku projektu. Jeden z tych plików zaimportowanych Microsoft.Common.targets, można rozszerzyć do umożliwiają uruchamianie niestandardowych zadań w kilku miejscach w procesie kompilacji. W tym temacie opisano dwie metody, można użyć, aby rozszerzyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] procesu kompilacji:
 
--   Zastępowanie określonych wstępnie zdefiniowanych obiektów docelowych określonych w Microsoft.Common.targets.
+- Zastępowanie określonych wstępnie zdefiniowanych obiektów docelowych określonych w Microsoft.Common.targets.
 
--   Zastępowanie właściwości "DependsOn" określonych w Microsoft.Common.targets.
+- Zastępowanie właściwości "DependsOn" określonych w Microsoft.Common.targets.
 
 ## <a name="overriding-predefined-targets"></a>Zastępowanie wstępnie zdefiniowanych obiektów docelowych
  Plik Microsoft.Common.targets zawiera zestaw wstępnie zdefiniowanych pusty obiektów docelowych, które są wywoływane przed i po nim niektóre z najważniejszych elementów docelowych w procesie kompilacji. Na przykład [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] wywołania `BeforeBuild` docelowej przed funkcją main `CoreBuild` docelowego i `AfterBuild` docelowe po `CoreBuild` docelowej. Domyślnie puste elementy docelowe w Microsoft.Common.targets nic nie rób, ale ich zachowanie domyślne można przesłonić, definiując elementy docelowe, które mają w pliku projektu, który importuje Microsoft.Common.targets. Dzięki temu można użyć [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zadań daje większą kontrolę nad procesem kompilacji.
@@ -109,13 +109,13 @@ ms.locfileid: "59652166"
 
 #### <a name="to-override-a-dependson-property"></a>Aby zastąpić właściwość "DependsOn"
 
-1.  Określ wstępnie zdefiniowaną właściwość "DependsOn" w Microsoft.Common.targets, który chcesz zastąpić. Znajdują się w tabeli poniżej, aby uzyskać listę właściwości często zastąpione "DependsOn".
+1. Określ wstępnie zdefiniowaną właściwość "DependsOn" w Microsoft.Common.targets, który chcesz zastąpić. Znajdują się w tabeli poniżej, aby uzyskać listę właściwości często zastąpione "DependsOn".
 
-2.  Zdefiniuj inne wystąpienie, właściwość lub właściwości na końcu pliku projektu. Zawiera właściwości oryginalnej, na przykład `$(BuildDependsOn)`, w nowej właściwości.
+2. Zdefiniuj inne wystąpienie, właściwość lub właściwości na końcu pliku projektu. Zawiera właściwości oryginalnej, na przykład `$(BuildDependsOn)`, w nowej właściwości.
 
-3.  Zdefiniuj niestandardowe elementy docelowe, przed lub po definicji właściwości.
+3. Zdefiniuj niestandardowe elementy docelowe, przed lub po definicji właściwości.
 
-4.  Tworzenie pliku projektu.
+4. Tworzenie pliku projektu.
 
 ### <a name="commonly-overridden-dependson-properties"></a>Powszechnie zastępowane właściwości "DependsOn"
 

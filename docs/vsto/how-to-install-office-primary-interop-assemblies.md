@@ -13,21 +13,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7ceba236859b61444546661c2b8395c75b8d792
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2ddba23ecb6007ff3b678932b118208742d1f0d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623050"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109507"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>Instrukcje: Instalowanie podstawowych zestawów międzyoperacyjnych pakietu Office
   Po zainstalowaniu pakietu Office, należy zainstalować podstawowe zestawy międzyoperacyjne Microsoft Office (PIA).
 
 ## <a name="to-install-the-pias-when-you-install-office"></a>Aby zainstalować PIA, podczas instalowania pakietu Office
 
-1.  Upewnij się, że została zainstalowana wersja programu .NET Framework, która nie jest starsza niż 2.0.
+1. Upewnij się, że została zainstalowana wersja programu .NET Framework, która nie jest starsza niż 2.0.
 
-2.  Zainstaluj program Microsoft Office i upewnij się, że **dodatkiem .NET Programmability Support** funkcji wybrano dla aplikacji, aby rozszerzyć (Ta funkcja jest dostępna w domyślnej instalacji).
+2. Zainstaluj program Microsoft Office i upewnij się, że **dodatkiem .NET Programmability Support** funkcji wybrano dla aplikacji, aby rozszerzyć (Ta funkcja jest dostępna w domyślnej instalacji).
 
     > [!WARNING]
     >  Domyślnie PIA firmy są osadzone w rozwiązaniu podczas kompilacji, dzięki czemu nie trzeba rozpowszechniać zestawów PIA dla użytkowników jako warunek wstępny do korzystania z dodatku narzędzi VSTO lub dostosowywania.

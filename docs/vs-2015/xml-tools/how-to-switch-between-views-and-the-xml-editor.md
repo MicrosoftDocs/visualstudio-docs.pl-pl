@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0bdc530656ef7e7a57b8e637aeca562eb483e0d9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c8d396efdc615ae954ef16453c9c5459f0685650
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667628"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107239"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>Instrukcje: Przełączanie się między widokami i edytorem XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,18 +23,18 @@ W tym temacie przedstawiono sposób przełączać się między widokami projekta
   
 ### <a name="to-switch-between-the-views-and-the-xml-editor"></a>Aby przełączać się między widokami i edytorem XML  
   
-1.  Aby tworzyć i edytować nowy plik schematu XML, wykonaj kroki opisane w [jak: Tworzenie i edytowanie pliku schematu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
+1. Aby tworzyć i edytować nowy plik schematu XML, wykonaj kroki opisane w [jak: Tworzenie i edytowanie pliku schematu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
   
-2.  Aby przełączyć się do projektanta schematu XML w edytorze XML, kliknij prawym przyciskiem myszy kliknij w dowolnym miejscu w edytorze XML, a następnie wybierz **Projektant widoków**.  
+2. Aby przełączyć się do projektanta schematu XML w edytorze XML, kliknij prawym przyciskiem myszy kliknij w dowolnym miejscu w edytorze XML, a następnie wybierz **Projektant widoków**.  
   
-3.  Aby przełączyć się do widoku wykresu przy użyciu znaku wodnego, kliknij przycisk **przy użyciu widoku wykresu można zobaczyć relację między węzłami** link widoku startowego.  
+3. Aby przełączyć się do widoku wykresu przy użyciu znaku wodnego, kliknij przycisk **przy użyciu widoku wykresu można zobaczyć relację między węzłami** link widoku startowego.  
   
-4.  Przeciągnij `USAddress` węzła z Eksploratora schematu XML na widoku wykresu. Kliknij prawym przyciskiem myszy `USAddress` węzeł w widoku wykresu i wybierz **Pokaż w widoku modelu zawartości** w menu kontekstowym.  
+4. Przeciągnij `USAddress` węzła z Eksploratora schematu XML na widoku wykresu. Kliknij prawym przyciskiem myszy `USAddress` węzeł w widoku wykresu i wybierz **Pokaż w widoku modelu zawartości** w menu kontekstowym.  
   
      Widok modelu zawartości ze szczegółami dotyczącymi `USAddress` węzeł jest dostępny.  
   
-5.  Aby przełączyć do widoku startowego z widoku modelu zawartości za pomocą paska narzędzi, kliknij przycisk Start widoku na pasku narzędzi XSD.  
+5. Aby przełączyć do widoku startowego z widoku modelu zawartości za pomocą paska narzędzi, kliknij przycisk Start widoku na pasku narzędzi XSD.  
   
-6.  Aby przełączyć się między widokami przy użyciu klawiszy dostępu, naciśnij klawisze CTRL + 1 dla widoku startowego, CTRL + 2 dla widoku wykresu i CTRL + 3 dla widoku modelu zawartości.  
+6. Aby przełączyć się między widokami przy użyciu klawiszy dostępu, naciśnij klawisze CTRL + 1 dla widoku startowego, CTRL + 2 dla widoku wykresu i CTRL + 3 dla widoku modelu zawartości.  
   
-7.  Aby przejść do edytora XML z widoku modelu zawartości, kliknij prawym przyciskiem myszy węzeł, a następnie wybierz **Wyświetl kod** w menu kontekstowym.
+7. Aby przejść do edytora XML z widoku modelu zawartości, kliknij prawym przyciskiem myszy węzeł, a następnie wybierz **Wyświetl kod** w menu kontekstowym.

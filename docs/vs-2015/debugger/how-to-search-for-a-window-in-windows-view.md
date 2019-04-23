@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 435f189d22abed9697953fc8b946deac64f86740
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 205ff44c44a73dc44d3a3493347a153fb52e712d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797569"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113043"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>Instrukcje: Wyszukiwanie okna w widoku okien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,16 +27,16 @@ Możesz wyszukać określonego okna w widoku Windows za pomocą jego uchwytu, po
   
 ### <a name="to-search-for-a-window-in-windows-view"></a>Wyszukiwanie okna w widoku Windows  
   
-1.  Rozmieść aplikacji dla systemu windows, więc tego programu Spy ++ [widoku Windows](../debugger/windows-view.md) okna i docelowy są widoczne.  
+1. Rozmieść aplikacji dla systemu windows, więc tego programu Spy ++ [widoku Windows](../debugger/windows-view.md) okna i docelowy są widoczne.  
   
-2.  Z **wyszukiwania** menu, wybierz **Znajdź okno**.  
+2. Z **wyszukiwania** menu, wybierz **Znajdź okno**.  
   
      [Okno dialogowe Wyszukiwanie](../debugger/window-search-dialog-box.md) zostanie otwarty.  
   
     > [!TIP]
     >  Aby zwiększyć czytelność ekranu, wybierz pozycję **Ukryj Spy** opcji. Ta opcja zawiera głównego okna programu Spy ++ i pozostawia tylko **wyszukiwanie okien** okno dialogowe widoczne na podstawie innych aplikacji. Okno główne programu Spy ++ jest przywracany po kliknięciu **OK** lub **anulować**, lub po usunięciu zaznaczenia **Ukryj Spy ++** opcji.  
   
-3.  Przeciągnij **Wyszukiwarka** przedziale docelowego. Przeciągnij narzędzie **wyszukiwanie okien** okno dialogowe wyświetla szczegóły wybranego okna.  
+3. Przeciągnij **Wyszukiwarka** przedziale docelowego. Przeciągnij narzędzie **wyszukiwanie okien** okno dialogowe wyświetla szczegóły wybranego okna.  
   
      — lub —  
   
@@ -46,8 +46,8 @@ Możesz wyszukać określonego okna w widoku Windows za pomocą jego uchwytu, po
   
      Znając podpisu i/lub klasy okna, które chcesz, możesz wpisać je w **podpis** i **klasy** pola tekstowe i wyczyść **obsługi** pola tekstowego.  
   
-4.  Wybierz **się** lub **dół** dla początkowej kierunek wyszukiwania.  
+4. Wybierz **się** lub **dół** dla początkowej kierunek wyszukiwania.  
   
-5.  Kliknij przycisk **OK**.  
+5. Kliknij przycisk **OK**.  
   
      Jeśli zgodne okno zostanie znaleziony, jest wyróżniona na [widoku Windows](../debugger/windows-view.md) okna.

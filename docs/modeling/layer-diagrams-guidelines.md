@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6908db6b111f2ff67f2e1ca3761b11c302f5d4
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: f5973643d8f87b4c992209e6512c51bc275de60b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223822"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090120"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramy zależności: wskazówki
 
@@ -39,21 +39,21 @@ W poniższych krokach przedstawiono omówienie sposobu używania diagramów zale
 > [!NOTE]
 > Te kroki są wyświetlane w kolejności przybliżone. Prawdopodobnie warto nakładać się na zadaniach, zmienić kolejność je do potrzeb swojej własnej sytuacji i ich ponowne przeanalizowanie wraz na początku każdej iteracji w projekcie.
 
-1.  [Utwórz diagram zależności](#Create) dla całej aplikacji lub dla warstwy znajdujący się w nim.
+1. [Utwórz diagram zależności](#Create) dla całej aplikacji lub dla warstwy znajdujący się w nim.
 
-2.  [Zdefiniuj warstwy do reprezentowania podstawowych obszarów funkcjonalnych lub składniki](#CreateLayers) aplikacji. Nazwy tych warstw, zgodnie z ich funkcji, na przykład "Prezentacji" lub "Usługi". Jeśli masz rozwiązanie programu Visual Studio, każda warstwa można skojarzyć z kolekcją *artefaktów*, takich jak projekty, przestrzenie nazw, pliki i tak dalej.
+2. [Zdefiniuj warstwy do reprezentowania podstawowych obszarów funkcjonalnych lub składniki](#CreateLayers) aplikacji. Nazwy tych warstw, zgodnie z ich funkcji, na przykład "Prezentacji" lub "Usługi". Jeśli masz rozwiązanie programu Visual Studio, każda warstwa można skojarzyć z kolekcją *artefaktów*, takich jak projekty, przestrzenie nazw, pliki i tak dalej.
 
-3.  [Odkryj istniejące zależności](#Generate) między warstwami.
+3. [Odkryj istniejące zależności](#Generate) między warstwami.
 
-4.  [Edytowanie warstw i zależności](#EditArchitecture) Aby wyświetlić zaktualizowany projekt ma kod, aby odzwierciedlić.
+4. [Edytowanie warstw i zależności](#EditArchitecture) Aby wyświetlić zaktualizowany projekt ma kod, aby odzwierciedlić.
 
-5.  [Projektowanie nowych obszarów aplikacji](#NewAreas) , tworząc warstwy do reprezentowania bloków architektury podmiotu zabezpieczeń lub składniki i definiowanie zależności, aby pokazać, jak każda warstwa używa innych.
+5. [Projektowanie nowych obszarów aplikacji](#NewAreas) , tworząc warstwy do reprezentowania bloków architektury podmiotu zabezpieczeń lub składniki i definiowanie zależności, aby pokazać, jak każda warstwa używa innych.
 
-6.  [Edytuj układ i wygląd diagramu](#EditLayout) ułatwiające omówić go współpracownikom.
+6. [Edytuj układ i wygląd diagramu](#EditLayout) ułatwiające omówić go współpracownikom.
 
-7.  [Walidować kod dla diagram zależności](#Validate) do wyróżnienia konfliktów między kodem i architektura potrzebujesz.
+7. [Walidować kod dla diagram zależności](#Validate) do wyróżnienia konfliktów między kodem i architektura potrzebujesz.
 
-8.  [Aktualizowanie kodu do nowej architektury](#UpdateCode). Wielokrotnie tworzenie i refaktoryzacji kodu, aż sprawdzanie poprawności pokazuje żadne konflikty.
+8. [Aktualizowanie kodu do nowej architektury](#UpdateCode). Wielokrotnie tworzenie i refaktoryzacji kodu, aż sprawdzanie poprawności pokazuje żadne konflikty.
 
 9. [Uwzględniając sprawdzanie poprawności warstwy w procesie kompilacji](#BuildValidation) aby upewnić się, że kod nadal stosować się do projektu.
 
@@ -79,11 +79,11 @@ Podczas aktualizowania nieznanych aplikacji, można również tworzyć mapy kodu
 
 Zobacz:
 
--   [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)
+- [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)
 
--   [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)
+- [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)
 
--   [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)
+- [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)
 
 ## <a name="Generate"></a> Odkryj istniejące zależności między warstwami
 
@@ -123,13 +123,13 @@ Jeśli nie jest to możliwe, kod będzie trudniejsze do zmieniają się przez ca
 
 Po uruchomieniu rozwoju nowy projekt lub nowy obszar w nowym projekcie można narysować warstw i zależności w celu identyfikowania głównych składników przed przystąpieniem do tworzenia kodu.
 
--   **Pokaż do zidentyfikowania wzorców architektonicznych** diagramy zależność, jeśli jest to możliwe. Na przykład diagram zależności, opisujący aplikacji pulpitu może obejmować warstw, takich jak prezentacja, logika domeny i Data Store. Diagram zależności, który obejmuje pojedynczej funkcji w aplikacji może być warstw, takich jak Model, widok i kontroler. Aby uzyskać więcej informacji o tych wzorcach, zobacz [wzorce i rozwiązania: Architektura aplikacji](http://go.microsoft.com/fwlink/?LinkId=145794).
+- **Pokaż do zidentyfikowania wzorców architektonicznych** diagramy zależność, jeśli jest to możliwe. Na przykład diagram zależności, opisujący aplikacji pulpitu może obejmować warstw, takich jak prezentacja, logika domeny i Data Store. Diagram zależności, który obejmuje pojedynczej funkcji w aplikacji może być warstw, takich jak Model, widok i kontroler. Aby uzyskać więcej informacji o tych wzorcach, zobacz [wzorce i rozwiązania: Architektura aplikacji](http://go.microsoft.com/fwlink/?LinkId=145794).
 
--   **Tworzenie artefaktu kodu, dla każdej warstwy** takich jak przestrzeń nazw, klasy lub składnika. Ułatwia podążają za kodem i łączenie artefaktów kodu do warstw. Zaraz po utworzeniu każdego artefaktu, połącz go do odpowiedniej warstwy.
+- **Tworzenie artefaktu kodu, dla każdej warstwy** takich jak przestrzeń nazw, klasy lub składnika. Ułatwia podążają za kodem i łączenie artefaktów kodu do warstw. Zaraz po utworzeniu każdego artefaktu, połącz go do odpowiedniej warstwy.
 
--   **Nie masz połączyć większość klas i innych artefaktów do warstw** ponieważ mieści się w ramach większych artefaktów, takich jak przestrzenie nazw, które zostały już połączone z warstwami.
+- **Nie masz połączyć większość klas i innych artefaktów do warstw** ponieważ mieści się w ramach większych artefaktów, takich jak przestrzenie nazw, które zostały już połączone z warstwami.
 
--   **Utwórz nowy diagram na nową funkcję**. Zazwyczaj będzie istnieć jeden lub więcej diagramów zależności opisujące całej aplikacji. W przypadku projektowania nowych funkcji w aplikacji, nie dodać do lub zmiana istniejących diagramów. Zamiast tego Utwórz własną diagram, który odzwierciedla nowej części kodu. Nowy diagram warstwy mogą obejmować prezentacja, logika domeny i warstwy bazy danych dla nowych funkcji.
+- **Utwórz nowy diagram na nową funkcję**. Zazwyczaj będzie istnieć jeden lub więcej diagramów zależności opisujące całej aplikacji. W przypadku projektowania nowych funkcji w aplikacji, nie dodać do lub zmiana istniejących diagramów. Zamiast tego Utwórz własną diagram, który odzwierciedla nowej części kodu. Nowy diagram warstwy mogą obejmować prezentacja, logika domeny i warstwy bazy danych dla nowych funkcji.
 
      W przypadku tworzenia aplikacji, kodu zostanie zweryfikowana, zarówno przed ogólny diagram i bardziej szczegółowe diagramu funkcji.
 
@@ -137,11 +137,11 @@ Po uruchomieniu rozwoju nowy projekt lub nowy obszar w nowym projekcie można na
 
 Aby pomóc Ci zidentyfikować warstw i zależności lub wdasz z członkami zespołu, należy zmodyfikować wygląd i układ diagramu w następujący sposób:
 
--   Zmień rozmiary, kształty i położenie warstw.
+- Zmień rozmiary, kształty i położenie warstw.
 
--   Zmień kolory warstw i zależności.
+- Zmień kolory warstw i zależności.
 
-    -   Wybierz jeden lub więcej warstw i zależności, kliknij prawym przyciskiem myszy, a następnie kliknij **właściwości**. W **właściwości** oknie edycji **kolor** właściwości.
+    - Wybierz jeden lub więcej warstw i zależności, kliknij prawym przyciskiem myszy, a następnie kliknij **właściwości**. W **właściwości** oknie edycji **kolor** właściwości.
 
 ## <a name="Validate"></a> Sprawdź poprawność kodu na podstawie diagramu
 
@@ -149,17 +149,17 @@ Po zakończeniu edycji diagramu, użytkownik może sprawdzić jego poprawność 
 
 Zobacz:
 
--   [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)
+- [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)
 
--   [Uwzględniając sprawdzanie poprawności warstwy w procesie kompilacji](#BuildValidation)
+- [Uwzględniając sprawdzanie poprawności warstwy w procesie kompilacji](#BuildValidation)
 
 ## <a name="UpdateCode"></a> Aktualizowanie kodu do nowej architektury
 
 Zazwyczaj błędy pojawią się sprawdzanie poprawności kodu na podstawie diagramu zaktualizowane zależności po raz pierwszy. Te błędy mogą mieć kilka przyczyn:
 
--   Artefakt jest przypisany do niewłaściwej warstwy. W takim przypadku przenieś artefakt.
+- Artefakt jest przypisany do niewłaściwej warstwy. W takim przypadku przenieś artefakt.
 
--   Artefakt, taki jak klasa, używa innej klasy w sposób, który powoduje konflikt z architekturą. W tym przypadku zrefaktoryzuj kod, aby usunąć zależność.
+- Artefakt, taki jak klasa, używa innej klasy w sposób, który powoduje konflikt z architekturą. W tym przypadku zrefaktoryzuj kod, aby usunąć zależność.
 
 Aby rozwiązać te błędy, aktualizuj kod, dopóki nie przestaną pojawiać się błędy podczas walidacji. Zazwyczaj jest procesem iteracyjnym. Aby uzyskać więcej informacji na temat tych błędów, zobacz [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md).
 
@@ -174,5 +174,5 @@ Aby upewnić się, że przyszłe zmiany w kodzie są zgodne z diagramów zależn
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)
+- [Diagramy zależności: informacje](../modeling/layer-diagrams-reference.md)
 - [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)

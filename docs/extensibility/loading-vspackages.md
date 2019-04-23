@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9878fea72c83cd6a466f2743f44d3eddca0bdba7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ce0f09c1749621838729e1e4f64feb3ca8b07628
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702060"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117567"
 ---
 # <a name="load-vspackages"></a>Ładowanie pakietów VSPackage
 Pakietów VSPackage są ładowane do programu Visual Studio, tylko wtedy, gdy ich funkcjonalność jest wymagana. Na przykład pakietu VSPackage jest ładowany, gdy program Visual Studio używa w fabryce projektu lub usługi, która implementuje pakietu VSPackage. Ta funkcja jest nazywana opóźnionego ładowania, która jest używana zawsze, gdy jest to możliwe zwiększyć wydajność.
@@ -28,7 +28,7 @@ Pakietów VSPackage są ładowane do programu Visual Studio, tylko wtedy, gdy ic
 
 ### <a name="autoload-a-vspackage-in-a-specific-context"></a>Załaduj VSPackage w określonym kontekście
 
--   Dodaj `ProvideAutoLoad` atrybutu atrybutów pakietu VSPackage:
+- Dodaj `ProvideAutoLoad` atrybutu atrybutów pakietu VSPackage:
 
     ```csharp
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]
@@ -41,11 +41,11 @@ Pakietów VSPackage są ładowane do programu Visual Studio, tylko wtedy, gdy ic
 
      Zobacz wyliczany pola <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> lista kontekstów interfejsu użytkownika i ich wartości identyfikatora GUID.
 
--   Ustaw punkt przerwania <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.
+- Ustaw punkt przerwania <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.
 
--   Tworzenie pakietu VSPackage, a następnie rozpocząć debugowanie.
+- Tworzenie pakietu VSPackage, a następnie rozpocząć debugowanie.
 
--   Załaduj rozwiązanie lub utworzyć nowe.
+- Załaduj rozwiązanie lub utworzyć nowe.
 
      Pakietu VSPackage ładuje i zatrzymuje się w punkcie przerwania.
 
@@ -54,7 +54,7 @@ Pakietów VSPackage są ładowane do programu Visual Studio, tylko wtedy, gdy ic
 
  Możesz użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> metodę wymuszania można załadować pakietu VSPackage.
 
--   Wstaw ten kod do <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metoda pakietu VSPackage, który wymusza innego pakietu VSPackage załadować:
+- Wstaw ten kod do <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metoda pakietu VSPackage, który wymusza innego pakietu VSPackage załadować:
 
     ```csharp
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;

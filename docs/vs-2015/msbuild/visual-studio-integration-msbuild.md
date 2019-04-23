@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2446320f1cbf0551fdfb1532df4fea23631b1131
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 048307c6c8117a77a57da6dc20f2615ae82feb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649267"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117502"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integracja z programem Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,20 +69,20 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="in-process-compilers"></a>Kompilatory wewnątrz–procesowe  
  Jeśli to możliwe, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] spróbuje użyć wewnątrzprocesowej wersji z [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kompilatora w celu zwiększenia wydajności. (Nie dotyczy [!INCLUDE[csprcs](../includes/csprcs-md.md)].) Aby to działało poprawnie muszą być spełnione następujące warunki:  
   
--   W obiekcie docelowym projektu musi być zadanie o nazwie `Vbc` dla [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projektów.  
+- W obiekcie docelowym projektu musi być zadanie o nazwie `Vbc` dla [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projektów.  
   
--   `UseHostCompilerIfAvailable` Parametr zadania musi być ustawiony na wartość true.  
+- `UseHostCompilerIfAvailable` Parametr zadania musi być ustawiony na wartość true.  
   
 ## <a name="design-time-intellisense"></a>Technologia IntelliSense — czas projektowania  
  Aby uzyskać obsługę technologii IntelliSense w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zanim kompilacja wygeneruje zestaw danych wyjściowych, muszą być spełnione następujące warunki:  
   
--   Musi istnieć obiekt docelowy o nazwie `Compile`.  
+- Musi istnieć obiekt docelowy o nazwie `Compile`.  
   
--   Albo `Compile` docelowego lub jednej z jego zależności musi wywołać zadanie zadanie kompilatora dla projektu, taki jak `Csc` lub `Vbc`.  
+- Albo `Compile` docelowego lub jednej z jego zależności musi wywołać zadanie zadanie kompilatora dla projektu, taki jak `Csc` lub `Vbc`.  
   
--   Albo `Compile` docelowego lub jednej z jego zależności musi spowodować, aby kompilator otrzymał wszystkie niezbędne parametry dla technologii IntelliSense, szczególnie wszystkie odwołania.  
+- Albo `Compile` docelowego lub jednej z jego zależności musi spowodować, aby kompilator otrzymał wszystkie niezbędne parametry dla technologii IntelliSense, szczególnie wszystkie odwołania.  
   
--   Warunki wymienione w sekcji "Kompilatory wewnątrzprocesowe" muszą być spełnione.  
+- Warunki wymienione w sekcji "Kompilatory wewnątrzprocesowe" muszą być spełnione.  
   
 ## <a name="building-solutions"></a>Tworzenie rozwiązań  
  W ramach [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], plik rozwiązania i kolejność kompilacji projektu są kontrolowane przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sam. Podczas kompilowania rozwiązania z msbuild.exe w wierszu polecenia [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] analizuje plik rozwiązania i porządkuje kompilacje projektu. W obu przypadkach projekty są kompilowane indywidualnie w kolejności wg zależności, a odwołania projekt-projekt-nie są przenoszone. Natomiast gdy poszczególne projekty są kompilowane z msbuild.exe, odwołania projekt-projekt-są przenoszone.  
@@ -127,22 +127,22 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-target-execution"></a>Wykonanie docelowego czasu projektowania  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] próbuje wykonać obiekty docelowe z niektórymi nazwami podczas ładowania projektu. Te obiekty docelowe obejmują `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths`, i `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uruchamia te obiekty docelowe, tak aby kompilator może zostać zainicjowana, aby dostarczyć IntelliSense, debuger może być inicjowany, a odwołania wyświetlane w Eksploratorze rozwiązań mogą być rozwiązane. Jeśli nie występują te obiekty docelowe, projekt będzie załadować i skompilowany poprawnie, ale doświadczenie projektowania w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nie będzie w pełni funkcjonalne.  
   
-##  <a name="BKMK_EditingProjects"></a> Edytowanie plików projektu w programie Visual Studio  
+## <a name="BKMK_EditingProjects"></a> Edytowanie plików projektu w programie Visual Studio  
  Aby edytować [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] projektu bezpośrednio, możesz otworzyć plik projektu w edytorze programu Visual Studio XML.  
   
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Aby rozładować i edytować plik projektu w programie Visual Studio  
   
-1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **Zwolnij projekt**.  
+1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **Zwolnij projekt**.  
   
      Projekt jest oznaczony jako **(niedostępna)**.  
   
-2.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla niedostępnego projektu, a następnie wybierz **Edytuj \<plik projektu >**.  
+2. W **Eksploratora rozwiązań**, otwórz menu skrótów dla niedostępnego projektu, a następnie wybierz **Edytuj \<plik projektu >**.  
   
      Plik projektu zostanie otwarty w edytorze XML programu Visual Studio.  
   
-3.  Edytuj, Zapisz i zamknij plik projektu.  
+3. Edytuj, Zapisz i zamknij plik projektu.  
   
-4.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla niedostępnego projektu, a następnie wybierz **Załaduj ponownie projekt**.  
+4. W **Eksploratora rozwiązań**, otwórz menu skrótów dla niedostępnego projektu, a następnie wybierz **Załaduj ponownie projekt**.  
   
 ## <a name="intellisense-and-validation"></a>Technologia IntelliSense i walidacja  
  Edytowanie plików projektu za pomocą edytora XML, technologia IntelliSense i sprawdzanie poprawności operają [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pliki schematów. Te pliki zostaną zainstalowane w pamięci podręcznej schematu, który można znaleźć w  *\<katalogu instalacyjnego programu Visual Studio >* \Xml\Schemas\1033\MSBuild.  
@@ -158,21 +158,21 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="reference-resolution"></a>Rozpoznawanie odwołania  
  Rozpoznawanie odwołania jest proces przy użyciu elementów odwołania zapisanych w pliku projektu do zlokalizowania rzeczywistych zestawów. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] musi wywołać rozdzielczość odniesienia w celu pokazania szczegółowych właściwości dla każdego odniesienia w **właściwości** okna. Na poniższej liście opisano trzy typy odwołań i jak są rozwiązywane.  
   
--   Odwołania do zestawów:  
+- Odwołania do zestawów:  
   
      System projektu wywołuje obiekt docelowy z dobrze znaną nazwą `ResolveAssemblyReferences`. Ten element docelowy powinien tworzyć elementy o nazwie typu elementu `ReferencePath`. Każdy z tych elementów powinien mieć specyfikację elementu (wartość `Include` atrybutu elementu) zawierającą pełną ścieżkę do odwołania. Elementy powinny mieć wszystkie metadane z elementów wejściowych przekazywanych wraz z następującymi nowymi metadanymi:  
   
-    -   `CopyLocal`, wskazujące, czy zestaw powinien być skopiowany do folderu wyjściowego, ustaw wartość true lub false.  
+    - `CopyLocal`, wskazujące, czy zestaw powinien być skopiowany do folderu wyjściowego, ustaw wartość true lub false.  
   
-    -   `OriginalItemSpec`, zawierające pierwotną specyfikację elementu odniesienia.  
+    - `OriginalItemSpec`, zawierające pierwotną specyfikację elementu odniesienia.  
   
-    -   `ResolvedFrom`, ustawiona na "{TargetFrameworkDirectory}", jeśli została rozwiązana z [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] katalogu.  
+    - `ResolvedFrom`, ustawiona na "{TargetFrameworkDirectory}", jeśli została rozwiązana z [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] katalogu.  
   
--   Odniesienia modelu COM:  
+- Odniesienia modelu COM:  
   
      System projektu wywołuje obiekt docelowy z dobrze znaną nazwą `ResolveCOMReferences`. Ten element docelowy powinien tworzyć elementy o nazwie typu elementu `ComReferenceWrappers`. Każdy z tych elementów powinien mieć specyfikację elementu zawierającą pełną ścieżkę do zestawu współdziałania dla odwołania COM. Elementy powinny mieć wszystkie metadane z elementów wejściowych przekazanych, dodatkowo do nowych metadanych o nazwie `CopyLocal`, wskazującą, czy zestaw powinien być skopiowany do folderu wyjściowego, ustaw wartość true lub false  
   
--   Odwołania natywne  
+- Odwołania natywne  
   
      System projektu wywołuje obiekt docelowy z dobrze znaną nazwą `ResolveNativeReferences`. Ten element docelowy powinien tworzyć elementy o nazwie typu elementu `NativeReferenceFile`. Elementy powinny mieć wszystkie metadane z elementów wejściowych przekazywanych wraz z nowym fragmentem metadanych o nazwie `OriginalItemSpec`, zawierające pierwotną specyfikację elementu odniesienia.  
   

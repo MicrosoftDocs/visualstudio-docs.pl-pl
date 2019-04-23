@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8e2f164135ab6b7f187b2b5967eca4faf747f37e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 31a17fdf51e838405c93efca79d7994cd40ece5c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871185"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107622"
 ---
 # <a name="secure-office-solutions"></a>Zabezpieczanie rozwiązań pakietu Office
   Model zabezpieczeń dla rozwiązań pakietu Office obejmuje kilka technologii: [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], Centrum zaufania w programie Microsoft Office i strefy witryn z ograniczeniami programu Internet Explorer. W poniższych sekcjach opisano, jak działają funkcje zabezpieczeń:
@@ -38,7 +38,7 @@ ms.locfileid: "54871185"
 
   [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-##  <a name="GrantingTrustToSolutions"></a> Udzielanie zaufania do rozwiązań pakietu Office
+## <a name="GrantingTrustToSolutions"></a> Udzielanie zaufania do rozwiązań pakietu Office
  Udzielanie zaufania do rozwiązań pakietu Office oznacza modyfikowanie zasad zabezpieczeń każdego użytkownika końcowego można ufać rozwiązania dla pakietu Office na podstawie dowodów następujące:
 
 - Certyfikat użyty do podpisania manifestu wdrażania.
@@ -47,16 +47,16 @@ ms.locfileid: "54871185"
 
   Aby uzyskać więcej informacji, zobacz [udzielenia zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md).
 
-##  <a name="GrantingTrustToDocuments"></a> Udzielanie zaufania do dokumentów
+## <a name="GrantingTrustToDocuments"></a> Udzielanie zaufania do dokumentów
  Dostosowania poziomu dokumentu wymaga, aby dokument w katalogu, który jest wyznaczone jako zaufaną lokalizację. Aby uzyskać więcej informacji, zobacz [udzielenia zaufania do dokumentów](../vsto/granting-trust-to-documents.md).
 
-##  <a name="GrantingTrustWindowsInstaller"></a> Udzielanie zaufania przy użyciu Instalatora Windows
+## <a name="GrantingTrustWindowsInstaller"></a> Udzielanie zaufania przy użyciu Instalatora Windows
  Instalator Windows można użyć do utworzenia pliku MSI do zainstalowania rozwiązań pakietu Office do katalogu Program Files, co wymaga uprawnień administratora. Dla rozwiązań pakietu Office w katalogu Program Files Visual Studio 2010 Tools dla pakietu Office runtime uwzględnia tych rozwiązań dla pakietu Office jest zaufany, a nie jest wyświetlany monit o udzielenie zaufania ClickOnce.
 
-##  <a name="Security"></a> Zagadnienia dotyczące zabezpieczeń określone dla rozwiązań pakietu Office
+## <a name="Security"></a> Zagadnienia dotyczące zabezpieczeń określone dla rozwiązań pakietu Office
  Funkcjach zabezpieczeń zapewnianych przez [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], i Microsoft Office może pomóc w ochronie przed różne potencjalne zagrożenia w rozwiązaniach pakietu Office. Aby uzyskać więcej informacji, zobacz [zagadnienia dotyczące zabezpieczeń określone dla rozwiązań pakietu Office](../vsto/specific-security-considerations-for-office-solutions.md).
 
-##  <a name="SecurityDuringDeployment"></a> Zabezpieczeń w czasie projektowania
+## <a name="SecurityDuringDeployment"></a> Zabezpieczeń w czasie projektowania
  Aby ułatwić proces programowania, program Visual Studio ustawia zasady zabezpieczeń, która jest wymagana do uruchamiania i debugowania rozwiązania na komputerze za każdym razem, gdy kompilujesz projekt. W niektórych scenariuszach może być konieczne podjąć kroki dodatkowe zabezpieczenia, aby tworzenie projektu.
 
 ### <a name="document-level-solutions"></a>Rozwiązaniach na poziomie dokumentu
@@ -75,7 +75,7 @@ ms.locfileid: "54871185"
 
  Może istnieć wiele certyfikatów tymczasowych jakiś czas, dlatego należy wyczyścić certyfikatów tymczasowych od czasu do czasu.
 
-##  <a name="VisualStudioToolsForOfficeRuntime"></a> Visual Studio Tools dla pakietu Office runtime
+## <a name="VisualStudioToolsForOfficeRuntime"></a> Visual Studio Tools dla pakietu Office runtime
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Zawiera funkcje, aby zweryfikować tożsamość wydawcy i uprawnień, które są przypisywane do dostosowania. Weryfikuje tych uprawnień za pośrednictwem sekwencji sprawdzanie zabezpieczeń.
 
 ### <a name="security-during-customization-loading"></a>Zabezpieczeń podczas dostosowywania ładowania

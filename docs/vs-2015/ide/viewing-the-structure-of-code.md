@@ -28,12 +28,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6a020ffcd3fa458bb0e1c5bdffd3716ed23f225
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4d80f8b9a6786d84d645a91dead2ac05a829718b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801215"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115071"
 ---
 # <a name="viewing-the-structure-of-code"></a>Wyświetlanie struktury kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Można zbadać obiektów i elementów członkowskich w projektach programu Visua
 > [!NOTE]
 >  Wersja Visual Studio i ustawienia, którego używasz może mieć wpływ na funkcje w IDE. Mogą się różnić od tych opisanych w tym temacie.  
   
-##  <a name="BKMK_ClassView"></a> Widok klas (Visual Basic, C#, C++)  
+## <a name="BKMK_ClassView"></a> Widok klas (Visual Basic, C#, C++)  
  **Widok klas** jest wyświetlany jako część **Eksploratora rozwiązań** jak również w osobnym oknie. **Widok klas** okno wyświetla elementy aplikacji. Górne okienko wyświetla przestrzenie nazw, typów, interfejsów, wyliczenia i klas oraz dolne okienko elementów członkowskich, które należą do wybranego w górnym okienku typu. Korzystając z tego okna, można przenieść do definicji elementu członkowskiego w kodzie źródłowym (lub **przeglądarki obiektów** Jeśli element jest zdefiniowane poza rozwiązania).  
   
  Nie masz do skompilowania projektu, aby wyświetlić jego elementy w **Widok klas**. Okno zostanie odświeżony, jak zmodyfikować kod w projekcie.  
@@ -110,7 +110,7 @@ Można zbadać obiektów i elementów członkowskich w projektach programu Visua
 |**Przejdź do odwołania**|Wyświetla odwołania do typu lub elementu członkowskiego w kodzie źródłowym, jeśli jest dostępna.|  
 |**Pokaż hierarchię wywołań**|Wyświetla wybranej metody w **hierarchię wywołań** okna.|  
   
-##  <a name="BKMK_CallHierarchy"></a> Wywołaj hierarchię (Visual Basic, C#, C++)  
+## <a name="BKMK_CallHierarchy"></a> Wywołaj hierarchię (Visual Basic, C#, C++)  
  **Hierarchię wywołań** okno pokazuje, gdzie danej metody (lub właściwości lub konstruktora), nosi nazwę i zawiera listę metod, które są wywoływane z tej metody. Można wyświetlić wiele poziomów Wykres wywołań, na którym przedstawiono relacje element wywołujący/wywoływany metody w określonym zakresie.  
   
  Możesz wyświetlić **hierarchię wywołań,** okna, wybierając metodę (lub właściwości lub konstruktora), a następnie wybierając **Widok hierarchii klas** w menu skrótów. Ekran powinien przypominać następujący obraz.  
@@ -135,7 +135,7 @@ Okno hierarchii wywołań
 |**Kopiuj**|Kopiuje wybrany węzeł (ale nie jego węzłów podrzędnych).|  
 |**Odśwież**|Odświeża informacje.|  
   
-##  <a name="BKMK_ObjectBrowser"></a> Przeglądarka obiektów  
+## <a name="BKMK_ObjectBrowser"></a> Przeglądarka obiektów  
  **Przeglądarki obiektów** Wyświetla opisy kodu w projektach.  
   
  Można filtrować, mają być wyświetlane w **przeglądarki obiektów**. Za pomocą listy rozwijanej w górnej części okna, możesz wybrać spośród następujących opcji:  
@@ -194,7 +194,7 @@ Okno hierarchii wywołań
 |**Przejdź do odwołania**|Wyświetla odwołania do typu lub elementu członkowskiego w kodzie źródłowym, jeśli jest dostępna.|  
 |**Pokaż hierarchię wywołań**|Wyświetla wybranej metody w **hierarchię wywołań** okna.|  
   
-##  <a name="BKMK_CodeDefinition"></a> Okno definicji kodu (C#, C++)  
+## <a name="BKMK_CodeDefinition"></a> Okno definicji kodu (C#, C++)  
  **Definicji kodu** definicji wybranego typu lub elementu członkowskiego w oknie zostaną wyświetlone w aktywnym projekcie. W edytorze kodu lub w oknie Widok kodu można wybrać typ lub element członkowski.  
   
  Chociaż w tym oknie jest tylko do odczytu, można ustawić punktów przerwania lub zakładki w nim. Aby zmodyfikować definicję wyświetlany, wybierz opcję **Edytuj definicję** w menu skrótów. To spowoduje otwarcie pliku źródłowego w edytorze kodu i przenosi punkt wstawiania do wiersza, w którym rozpoczyna się definicji.  

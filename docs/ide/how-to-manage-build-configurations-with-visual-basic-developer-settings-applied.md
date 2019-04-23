@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f4f1ef20a376c0f77f8ecbbea87ad9769870d60
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7ee2ecb5e501390dfc82d895bf6a81706f4297a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949295"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115240"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Instrukcje: Zarządzanie konfiguracjami kompilacji z zastosowanymi ustawieniami dewelopera języka Visual Basic
 
@@ -29,16 +29,16 @@ Domyślnie wszystkie opcje konfiguracji zaawansowanej kompilacji są ukryte, po 
 
 Domyślnie ustawień dewelopera Visual Basic Ukryj opcję, aby otworzyć **programu Configuration Manager** okno dialogowe i **konfiguracji** i **platformy** list w [ Projektant projektu](../ide/reference/application-page-project-designer-visual-basic.md).
 
-1.  Na **narzędzia** menu, kliknij przycisk **opcje**.
+1. Na **narzędzia** menu, kliknij przycisk **opcje**.
 
-2.  Rozwiń **projekty i rozwiązania**i kliknij przycisk **ogólne**.
+2. Rozwiń **projekty i rozwiązania**i kliknij przycisk **ogólne**.
 
     > [!NOTE]
     > **Ogólne** węzeł jest widoczny nawet wtedy, gdy **Pokaż wszystkie ustawienia** opcja jest zaznaczona. Jeśli chcesz zobaczyć każdej opcji, które są dostępne, kliknij przycisk **Pokaż wszystkie ustawienia**.
 
-3.  Kliknij przycisk **Pokaż zaawansowane konfiguracje kompilacji**.
+3. Kliknij przycisk **Pokaż zaawansowane konfiguracje kompilacji**.
 
-4.  Kliknij przycisk **OK**.
+4. Kliknij przycisk **OK**.
 
      **Configuration Manager** jest teraz dostępna w **kompilacji** menu i **konfiguracji** i **platformy** list są widoczne w  **Projektant projektu**.
 

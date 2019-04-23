@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 21697dd4d05b53648a1e77d9b7381973e5583250
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 15c6d6c904bbab27bac541894ed6cd4f9e1f80f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796768"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115253"
 ---
 # <a name="how-to-start-and-end-performance-data-collection"></a>Instrukcje: Rozpoczęcia i zakończenia zbierania danych o wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +30,15 @@ Docelowe dane binarne, które chcesz należy dodać do profilu do sesji wydajno�
   
 ### <a name="to-start-profiling"></a>Aby rozpocząć profilowanie  
   
-1.  Kliknij prawym przyciskiem myszy nazwę sesji wydajności **Eksplorator wydajności** okna i wybierz jedną z następujących opcji:  
+1. Kliknij prawym przyciskiem myszy nazwę sesji wydajności **Eksplorator wydajności** okna i wybierz jedną z następujących opcji:  
   
-    -   **Uruchamianie z profilowaniem** — uruchamia aplikację i natychmiast rozpoczyna się profilowanie.  
+    - **Uruchamianie z profilowaniem** — uruchamia aplikację i natychmiast rozpoczyna się profilowanie.  
   
-    -   **Uruchamianie przy użyciu profilowania wstrzymana** — uruchamia aplikację, ale nie rozpoczyna się profilowanie. Możesz rozpocząć profilowania, wybierając **Wznów zbieranie** w **kontroli zbierania danych** okna. Aby uzyskać więcej informacji, zobacz [jak: Wstrzymywanie i wznawianie zbierania danych o wydajności](../profiling/how-to-pause-and-resume-performance-data-collection.md).  
+    - **Uruchamianie przy użyciu profilowania wstrzymana** — uruchamia aplikację, ale nie rozpoczyna się profilowanie. Możesz rozpocząć profilowania, wybierając **Wznów zbieranie** w **kontroli zbierania danych** okna. Aby uzyskać więcej informacji, zobacz [jak: Wstrzymywanie i wznawianie zbierania danych o wydajności](../profiling/how-to-pause-and-resume-performance-data-collection.md).  
   
 ### <a name="to-end-profiling"></a>Aby zakończyć profilowania  
   
--   Kończenie sesji profilowania preferowaną metodą jest zakończyć działanie aplikacji. Natychmiast zatrzymać profilowanie na **Eksplorator wydajności** narzędzi, kliknij przycisk **zatrzymać**.  
+- Kończenie sesji profilowania preferowaną metodą jest zakończyć działanie aplikacji. Natychmiast zatrzymać profilowanie na **Eksplorator wydajności** narzędzi, kliknij przycisk **zatrzymać**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Kontrolowanie zbierania danych](../profiling/controlling-data-collection.md)   

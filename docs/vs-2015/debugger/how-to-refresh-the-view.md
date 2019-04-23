@@ -11,12 +11,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 46d6849aef52007368f742b25423a52c034d1475
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1d0170d11ffaba831fdd68caa7249d0002526414
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782795"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089617"
 ---
 # <a name="how-to-refresh-the-view"></a>Instrukcje: Odśwież widok
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Spy ++ tworzy "migawkę" tabel systemowych i odświeża widoku na podstawie tych
   
 ### <a name="to-refresh-the-currently-active-view"></a>Aby odświeżyć widok aktywne  
   
--   Wybierz **Odśwież** z **okna** menu lub kliknij przycisk **Odśwież** przycisku na pasku narzędzi.  
+- Wybierz **Odśwież** z **okna** menu lub kliknij przycisk **Odśwież** przycisku na pasku narzędzi.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md)   

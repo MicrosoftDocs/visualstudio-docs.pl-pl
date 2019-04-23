@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1e202f84fb3b4e0e865e2cebb96b6728289ff6b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d6c3410468a53b978165dfcae228b71985fcbe51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774117"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117762"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Instrukcje: Tworzenie cieniowania koloru podstawowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ W tym dokumencie przedstawiono sposób użycia języka programu do cieniowania w
   
  Ten dokument przedstawia te działania:  
   
--   Usuwanie węzłów z wykresu  
+- Usuwanie węzłów z wykresu  
   
--   Dodawanie węzłów do wykresu  
+- Dodawanie węzłów do wykresu  
   
--   Ustawianie właściwości węzła  
+- Ustawianie właściwości węzła  
   
--   Łączenie z węzłami  
+- Łączenie z węzłami  
   
 ## <a name="creating-a-flat-color-shader"></a>Tworzenie cieniowania koloru  
  Możesz zaimplementować cieniowania koloru, zapisując wartość koloru stałej kolor RGB kolor końcowych danych wyjściowych.  

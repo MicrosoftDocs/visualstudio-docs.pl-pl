@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63329433204af7c7fe7ae40366a376c9da16fdcd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6318108523f072beaae85c51604dbb45982a244f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627743"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094856"
 ---
 # <a name="events-in-office-projects"></a>Zdarzenia w projektach pakietu Office
   Każdy szablon projektu pakietu Office automatycznie generuje kilka programów obsługi zdarzeń. Programy obsługi zdarzeń w przypadku dostosowań na poziomie dokumentu są nieco inne niż dodatków narzędzi VSTO dla programów obsługi zdarzeń.
@@ -52,34 +52,34 @@ ms.locfileid: "56627743"
 
  Podczas tworzenia projektów dokumentów programu Visual Studio tworzy obsługę zdarzeń dla **uruchamiania** zdarzenia w plikach wygenerowanego kodu:
 
--   Dla projektów programu Microsoft Office Word, program obsługi zdarzeń o nazwie `ThisDocument_Startup`.
+- Dla projektów programu Microsoft Office Word, program obsługi zdarzeń o nazwie `ThisDocument_Startup`.
 
--   Dla projektów programu Microsoft Office Excel programy obsługi zdarzeń mają następujące nazwy:
+- Dla projektów programu Microsoft Office Excel programy obsługi zdarzeń mają następujące nazwy:
 
-    -   `Sheet1_Startup`
+    - `Sheet1_Startup`
 
-    -   `Sheet2_Startup`
+    - `Sheet2_Startup`
 
-    -   `Sheet3_Startup`
+    - `Sheet3_Startup`
 
-    -   `ThisWorkbook_Startup`
+    - `ThisWorkbook_Startup`
 
 ### <a name="shutdown-event"></a>Shutdown — Zdarzenie
  **Zamknięcia** zdarzenie jest wywoływane dla każdego z elementów hosta (dokument lub arkusz) po domenie aplikacji, które Twój kod jest ładowany w chcesz zwolnić. Jest ostatnim zadaniem, które ma zostać wywołana w klasie, ponieważ zwalnia.
 
  Podczas tworzenia projektów dokumentów programu Visual Studio tworzy obsługę zdarzeń dla **zamknięcia** zdarzenia w plikach wygenerowanego kodu:
 
--   Dla projektów programu Microsoft Office Word, program obsługi zdarzeń o nazwie `ThisDocument_Shutdown`.
+- Dla projektów programu Microsoft Office Word, program obsługi zdarzeń o nazwie `ThisDocument_Shutdown`.
 
--   Dla projektów programu Microsoft Office Excel programy obsługi zdarzeń mają następujące nazwy:
+- Dla projektów programu Microsoft Office Excel programy obsługi zdarzeń mają następujące nazwy:
 
-    -   `Sheet1_Shutdown`
+    - `Sheet1_Shutdown`
 
-    -   `Sheet2_Shutdown`
+    - `Sheet2_Shutdown`
 
-    -   `Sheet3_Shutdown`
+    - `Sheet3_Shutdown`
 
-    -   `ThisWorkbook_Shutdown`
+    - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
 >  Nie usuwaj programowo kontrole podczas **zamknięcia** program obsługi zdarzeń dokumentu. Elementy interfejsu użytkownika w pliku nie są już dostępne podczas **zamknięcia** wystąpi zdarzenie. Jeśli chcesz usunąć kontrolki przed zamknięciem aplikacji, Dodaj kod do innego programu obsługi zdarzeń, takich jak **BeforeClose** lub **BeforeSave**.
@@ -145,9 +145,9 @@ ms.locfileid: "56627743"
 #### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>Zdarzenie zamknięcia w dodatkach VSTO programu Outlook
  <xref:Microsoft.Office.Tools.AddInBase.Shutdown> Zdarzenie jest zgłaszane tylko wtedy, gdy użytkownik wyłącza dodatku narzędzi VSTO za pomocą okna dialogowego Dodatki COM w programie Outlook. Nie jest zgłaszany, gdy kończy działanie programu Outlook. Jeśli masz kod, który należy uruchomić, gdy kończy działanie programu Outlook, obsługują jedną z następujących zdarzeń:
 
--   <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> Zdarzenia <xref:Microsoft.Office.Interop.Outlook.Application> obiektu.
+- <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> Zdarzenia <xref:Microsoft.Office.Interop.Outlook.Application> obiektu.
 
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> Zdarzenia <xref:Microsoft.Office.Interop.Outlook.Explorer> obiektu.
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> Zdarzenia <xref:Microsoft.Office.Interop.Outlook.Explorer> obiektu.
 
 > [!NOTE]
 >  Można wymusić programu Outlook w celu podniesienia <xref:Microsoft.Office.Tools.AddInBase.Shutdown> zdarzenie, kiedy wychodzi przez modyfikację rejestru. Jednak jeśli administrator przywraca ustawienie, dowolny kod dodasz do `ThisAddIn_Shutdown` metoda jest już uruchamiany, gdy kończy działanie programu Outlook. Aby uzyskać więcej informacji, zobacz [zamykania zmian dla programu Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).

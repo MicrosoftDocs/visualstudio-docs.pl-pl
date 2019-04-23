@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a212250791ececddbf2227d67d1f4652dc7de466
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 50e91c47ef848eda51fe71c9dce09cd1ea4893a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661210"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106461"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>Właściwość &lt;nazwa właściwości&gt; nie można usunąć
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ Właściwość \<nazwa właściwości > nie można usunąć, ponieważ jest ona 
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-1.  W Projektancie obiektów relacyjnych wybierz linię dziedziczenia, który nawiązuje połączenie klas danych wskazany w komunikacie o błędzie.  
+1. W Projektancie obiektów relacyjnych wybierz linię dziedziczenia, który nawiązuje połączenie klas danych wskazany w komunikacie o błędzie.  
   
-2.  Ustaw **dyskryminatora** właściwości inną właściwość.  
+2. Ustaw **dyskryminatora** właściwości inną właściwość.  
   
-3.  Ponownie spróbuj usunąć właściwość.  
+3. Ponownie spróbuj usunąć właściwość.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Instrukcje: Skonfigurować dziedziczenie za pomocą Projektanta obiektów relacyjnych](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)   

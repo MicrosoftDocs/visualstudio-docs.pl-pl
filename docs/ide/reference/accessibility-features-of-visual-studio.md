@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abe8be0804877b4836a766f2c4fec37321534b5f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 342d3288d647018af7faf42ab3e669bb8a62594f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318592"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107817"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funkcje ułatwień dostępu programu Visual Studio
 
@@ -26,15 +26,15 @@ ms.locfileid: "56318592"
 
 Oprócz funkcji ułatwień dostępu i narzędzi w Windows następujące funkcje ułatwiają programu Visual Studio dostęp dla osób niepełnosprawnych:
 
--   Rozszerzenia narzędzi przycisk i tekst
+- Rozszerzenia narzędzi przycisk i tekst
 
--   Opcje rozmiaru tekstu w edytorach
+- Opcje rozmiaru tekstu w edytorach
 
--   Dostosowywanie kolorów w edytorach
+- Dostosowywanie kolorów w edytorach
 
--   Dostosowywanie skrótów klawiatury
+- Dostosowywanie skrótów klawiatury
 
--   Automatyczne uzupełnianie metody i parametrów
+- Automatyczne uzupełnianie metody i parametrów
 
 > [!NOTE]
 > Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [ułatwień dostępu dla programu Visual Studio dla komputerów Mac](/visualstudio/mac/accessibility).
@@ -44,15 +44,15 @@ Oprócz funkcji ułatwień dostępu i narzędzi w Windows następujące funkcje 
 
 Więcej informacji znajduje się w następujących tematach:
 
--   [Instrukcje: Ustawianie opcji ułatwień dostępu IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
+- [Instrukcje: Ustawianie opcji ułatwień dostępu IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [Instrukcje: Używanie wyłącznie klawiatury](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+- [Instrukcje: Używanie wyłącznie klawiatury](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
--   [Domyślne skróty klawiaturowe](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
+- [Domyślne skróty klawiaturowe](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
--   [Ułatwienia dostępu, porady i wskazówki](../../ide/reference/accessibility-tips-and-tricks.md)
+- [Ułatwienia dostępu, porady i wskazówki](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [Instrukcje: Zmiana czcionek i kolorów](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Instrukcje: Zmiana czcionek i kolorów](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>Zobacz także
 

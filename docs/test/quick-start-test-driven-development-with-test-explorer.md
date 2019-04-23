@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4b0692a790955c537c00e35be97d52583862e5a3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: cd80739f887a42c62af55bc06cfb65704f4755ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649579"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109247"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Szybki start: Programowanie sterowane testami za pomocą narzędzia Eksplorator testów
 
@@ -94,15 +94,15 @@ W tym instruktażu przedstawiono sposób opracować przetestowaną metodę w ję
 
 4. Wygeneruj metodę z testu.
 
-   1.  Umieść kursor w `Rooter`, a następnie w menu skrótów wybierz polecenie **Generuj** > **nowy typ**.
+   1. Umieść kursor w `Rooter`, a następnie w menu skrótów wybierz polecenie **Generuj** > **nowy typ**.
 
-   2.  W **Generuj nowy typ** okno dialogowe, zestaw **projektu** do projektu biblioteki klas. W tym przykładzie jest `MyMath`.
+   2. W **Generuj nowy typ** okno dialogowe, zestaw **projektu** do projektu biblioteki klas. W tym przykładzie jest `MyMath`.
 
-   3.  Umieść kursor w `SquareRoot`, a następnie w menu skrótów wybierz polecenie **Generuj** > **szkieletu metody**.
+   3. Umieść kursor w `SquareRoot`, a następnie w menu skrótów wybierz polecenie **Generuj** > **szkieletu metody**.
 
 5. Uruchom test jednostkowy.
 
-   1.  Na **testu** menu, wybierz **uruchomić testy jednostkowe** > **wszystkie testy**.
+   1. Na **testu** menu, wybierz **uruchomić testy jednostkowe** > **wszystkie testy**.
 
         Rozwiązanie zostanie skompilowane i działa.
 
@@ -122,7 +122,7 @@ W tym instruktażu przedstawiono sposób opracować przetestowaną metodę w ję
 
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Po każdej zmianie należy wprowadzić wszystkie testy.
 
-1.  W *MyMath\Rooter.cs*, Popraw kod metody `SquareRoot`:
+1. W *MyMath\Rooter.cs*, Popraw kod metody `SquareRoot`:
 
     ```csharp
     public double SquareRoot(double input)
@@ -131,7 +131,7 @@ W tym instruktażu przedstawiono sposób opracować przetestowaną metodę w ję
      }
     ```
 
-2.  W Eksploratorze testów wybierz **Uruchom wszystkie**.
+2. W Eksploratorze testów wybierz **Uruchom wszystkie**.
 
      Kod zostanie skompilowany, a test uruchomiony.
 
@@ -141,7 +141,7 @@ W tym instruktażu przedstawiono sposób opracować przetestowaną metodę w ję
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Dodaj testy, aby rozszerzyć zakres danych wejściowych
 
-1.  Aby zwiększyć pewność, że kod działa we wszystkich przypadkach, Dodaj testy, które sprawdzają szerszy zakres wartości wejściowych.
+1. Aby zwiększyć pewność, że kod działa we wszystkich przypadkach, Dodaj testy, które sprawdzają szerszy zakres wartości wejściowych.
 
     > [!TIP]
     > Unikaj zmieniania istniejących testów, które przekazują. Zamiast tego Dodaj nowe testy. Zmieniaj istniejące testy tylko wtedy, gdy zmienią się wymagania użytkownika. Te zasady ułatwiają upewnij się, że nie tracisz istniejących funkcji podczas pracy nad rozszerzeniem kodu.
@@ -172,13 +172,13 @@ W tym instruktażu przedstawiono sposób opracować przetestowaną metodę w ję
     }
     ```
 
-2.  W Eksploratorze testów wybierz **Uruchom wszystkie**.
+2. W Eksploratorze testów wybierz **Uruchom wszystkie**.
 
      Nowy test kończy się niepowodzeniem, chociaż nadal przechodzi pierwszy test.
 
      Aby znaleźć punkt awarii, zaznacz test niepowodzeniem, a następnie w dolnej części Eksploratora testów wybierz górny element w sekcji **ślad stosu**.
 
-3.  Sprawdź testowaną metodę test, aby zobaczyć, co może być źle. W `MyMath.Rooter` klasy, przepisz:
+3. Sprawdź testowaną metodę test, aby zobaczyć, co może być źle. W `MyMath.Rooter` klasy, przepisz:
 
     ```csharp
     public double SquareRoot(double input)
@@ -194,13 +194,13 @@ W tym instruktażu przedstawiono sposób opracować przetestowaną metodę w ję
     }
     ```
 
-4.  W Eksploratorze testów wybierz **Uruchom wszystkie**.
+4. W Eksploratorze testów wybierz **Uruchom wszystkie**.
 
      Teraz kod przechodzi oba testy.
 
 #### <a name="add-tests-for-exceptional-cases"></a>Dodawanie testów wyjątkowych przypadków
 
-1.  Dodaj test ujemnych danych wejściowych:
+1. Dodaj test ujemnych danych wejściowych:
 
     ```csharp
     [TestMethod]
@@ -219,15 +219,15 @@ W tym instruktażu przedstawiono sposób opracować przetestowaną metodę w ję
      }
     ```
 
-2.  W Eksploratorze testów wybierz **Uruchom wszystkie**.
+2. W Eksploratorze testów wybierz **Uruchom wszystkie**.
 
      Testowana metoda zapętla i musi zostać anulowana ręcznie.
 
-3.  Wybierz **anulować**.
+3. Wybierz **anulować**.
 
      Test zatrzyma się po 10 sekundach.
 
-4.  Napraw kod metody:
+4. Napraw kod metody:
 
     ```csharp
 
@@ -240,13 +240,13 @@ W tym instruktażu przedstawiono sposób opracować przetestowaną metodę w ję
     ...
     ```
 
-5.  W Eksploratorze testów wybierz **Uruchom wszystkie**.
+5. W Eksploratorze testów wybierz **Uruchom wszystkie**.
 
      Kod przechodzi wszystkie testy.
 
 #### <a name="refactor-without-changing-tests"></a>Refaktoryzacja bez zmieniania testów
 
-1.  Uprość kod, ale nie zmieniaj testów.
+1. Uprość kod, ale nie zmieniaj testów.
 
     > [!TIP]
     > A *refaktoryzacji* jest zmianę, która jest przeznaczona do wprowadzania działania kodu lub uczynienie go łatwiejszym do zrozumienia. Nie jest przeznaczone do zmiany zachowania kodu, a w związku z tym testy nie są zmieniane.
@@ -275,7 +275,7 @@ W tym instruktażu przedstawiono sposób opracować przetestowaną metodę w ję
     }
     ```
 
-2.  Wybierz **uruchomić wszystkie**.
+2. Wybierz **uruchomić wszystkie**.
 
      Kod nadal przechodzi wszystkie testy.
 

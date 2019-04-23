@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6821275f7511b48ac6472b468480e6248463b253
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6fb65b66bed790a306280a437a1722abea27848a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704881"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113446"
 ---
 # <a name="task-class---internal-members"></a>Task — klasa — składowe wewnętrzne
 W tym artykule opisano wewnętrznych członków <xref:System.Threading.Tasks.Task?displayProperty=fullName> klasy, które pomagają implementacji niestandardowego debugera. Aby uzyskać ogólne informacje dotyczące tej klasy, zobacz <xref:System.Threading.Tasks.Task> artykule dotyczącym struktury.
@@ -67,17 +67,17 @@ W tym artykule opisano wewnętrznych członków <xref:System.Threading.Tasks.Tas
 ## <a name="remarks"></a>Uwagi
  Następujące metody wewnętrznej są przydatne do aparat debugera, ponieważ ich oznaczenie wejścia do <xref:System.Threading.Tasks.Task> wykonanie kodu:
 
--   `Execute`
+- `Execute`
 
--   `ExecuteEntry`
+- `ExecuteEntry`
 
--   `ExecuteWithThreadLocal`
+- `ExecuteWithThreadLocal`
 
--   `Finish`
+- `Finish`
 
--   `InnerInvoke`
+- `InnerInvoke`
 
--   `InternalWait`
+- `InternalWait`
 
 ## <a name="see-also"></a>Zobacz także
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6b29e46a61a46ae5e986dec7b14733e3807064b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 178549a815fd9a17377986a5b19e02db12ec76d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615497"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115227"
 ---
 # <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Instrukcje: Programowe wyszukiwanie adresu e-mail w kontaktach
   W tym przykładzie wyszukuje skontaktuj się z folderu kontaktów, które mają taką nazwę domeny **example.com** w ich adresy e-mail.
@@ -32,7 +32,7 @@ ms.locfileid: "56615497"
 ## <a name="compile-the-code"></a>Skompilować kod
  Ten przykład wymaga:
 
--   Kontakty, które mają taką nazwę domeny **example.com** w ich adresy e-mail (na przykład `somebody@example.com`), których imiona i nazwiska.
+- Kontakty, które mają taką nazwę domeny **example.com** w ich adresy e-mail (na przykład `somebody@example.com`), których imiona i nazwiska.
 
 ## <a name="see-also"></a>Zobacz także
 - [Praca z elementami kontaktów](../vsto/working-with-contact-items.md)

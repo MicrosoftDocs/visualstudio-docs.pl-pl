@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 520113d97bdf41d750cad340c0ab8868eb85f603
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73b4350a2e7f277a11f4d6650d8089df0f87fe4d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805220"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116397"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Wdrażanie aplikacji Windows Store za pomocą programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Dotyczy tylko Windows] (.. /Image/windows_only_content.png "windows_only_content
 
 - Wdrażanie aplikacji, która będzie debugowany, gdy jest ona uruchamiana przez inną aplikację lub metody.
 
-##  <a name="BKMK_In_this_topic"></a> W tym temacie
+## <a name="BKMK_In_this_topic"></a> W tym temacie
  W tym temacie nauczysz:
 
  [Jak wdrożyć aplikację Windows Store](#BKMK_How_to_deploy_a_Windows_Store_app)
@@ -49,25 +49,25 @@ Dotyczy tylko Windows] (.. /Image/windows_only_content.png "windows_only_content
 
  [Opcje wdrażania](#BKMK_Deployment_options)
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Jak wdrożyć aplikację Windows Store
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Jak wdrożyć aplikację Windows Store
  Ręczne wdrażanie aplikacji jest prostym procesem:
 
-1.  Jeśli są wdrażane na urządzeniu zdalnym, należy określić nazwę lub adres IP urządzenia na stronie właściwości projektu z projektu do uruchamiania aplikacji. (Kroki, aby zrobić to są wymienione dalszych szczegółów, w tym temacie).
+1. Jeśli są wdrażane na urządzeniu zdalnym, należy określić nazwę lub adres IP urządzenia na stronie właściwości projektu z projektu do uruchamiania aplikacji. (Kroki, aby zrobić to są wymienione dalszych szczegółów, w tym temacie).
 
-2.  Na pasku narzędzi programu Visual Studio debugger wybierz cel wdrożenia z listy rozwijanej obok **Rozpocznij debugowanie** przycisku.
+2. Na pasku narzędzi programu Visual Studio debugger wybierz cel wdrożenia z listy rozwijanej obok **Rozpocznij debugowanie** przycisku.
 
      ![Uruchom na lokalnym komputerze](../debugger/media/vsrun-f5-local.png "VSRUN_F5_Local")
 
-3.  Na **kompilacji** menu, wybierz **wdrażania**
+3. Na **kompilacji** menu, wybierz **wdrażania**
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> Jak określić urządzenie zdalne
+## <a name="BKMK_How_to_specify_a_remote_device"></a> Jak określić urządzenie zdalne
  **Wymagania wstępne**
 
  Aby wdrożyć aplikację na urządzeniu zdalnym:
 
--   Licencja dewelopera musi być zainstalowany na urządzeniu zdalnym.
+- Licencja dewelopera musi być zainstalowany na urządzeniu zdalnym.
 
--   Narzędzia zdalne programu Visual Studio musi być zainstalowany na urządzeniu zdalnym, i Monitor zdalnego debugowania musi być uruchomiona.
+- Narzędzia zdalne programu Visual Studio musi być zainstalowany na urządzeniu zdalnym, i Monitor zdalnego debugowania musi być uruchomiona.
 
      Wdrożenie używa zdalny debuger kanał sieciowy do wysyłania plików aplikacji na urządzeniu zdalnym.
 
@@ -101,7 +101,7 @@ Dotyczy tylko Windows] (.. /Image/windows_only_content.png "windows_only_content
 
 8. Wprowadź nazwę sieciową urządzenia zdalnego w **maszyny zdalnej** lub przycisk **znaleźć** do wyboru urządzenia z **wybierz połączenie ze zdalnym debugerem** okno dialogowe.
 
-##  <a name="BKMK_Deployment_options"></a> Opcje wdrażania
+## <a name="BKMK_Deployment_options"></a> Opcje wdrażania
  Można ustawić następujące opcje wdrażania na stronie właściwości debugowania projektu startowego.
 
  **Zezwalaj na sprzężenie zwrotne sieci** ze względów bezpieczeństwa [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikację, która jest zainstalowana w standardowy sposób wykonywania wywołań sieci na urządzeniu jest zainstalowany na jest niedozwolone. Domyślnie wdrożenie programu Visual Studio tworzy wyjątek od tej reguły dla wdrożonej aplikacji. To wykluczenie umożliwia przetestowanie procedur komunikacji na jednym komputerze. Przed przesłaniem aplikacji do [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)], należy przetestować aplikację bez zwolnienia.

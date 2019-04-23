@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 678c09cca8f7b90c9be6dc2b7101ca04d9f94812
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b61492d992d37d7377e73185202bfbdd97063195
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774609"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116670"
 ---
 # <a name="navigate-the-uml-model"></a>Nawigowanie po modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ Ten temat wprowadza główne typy modelu UML.
   
  Wszystkie typy z wyjątkiem IElement dziedziczą właściwości z jednego lub kilku nadtypów.  
   
--   Aby uzyskać podsumowanie typów modeli, zobacz [typy elementów modelu UML](../modeling/uml-model-element-types.md).  
+- Aby uzyskać podsumowanie typów modeli, zobacz [typy elementów modelu UML](../modeling/uml-model-element-types.md).  
   
--   Aby uzyskać szczegółowe informacje o interfejsie API, zobacz [wykaz interfejsów API dla rozszerzalności modelowania UML](../modeling/api-reference-for-uml-modeling-extensibility.md).  
+- Aby uzyskać szczegółowe informacje o interfejsie API, zobacz [wykaz interfejsów API dla rozszerzalności modelowania UML](../modeling/api-reference-for-uml-modeling-extensibility.md).  
   
 ### <a name="relationships"></a>Relacje  
  Właściwości i relacje, które są zdefiniowane w specyfikacji UML są implementowane jako właściwości .NET.  
@@ -122,11 +122,11 @@ foreach (IShape<IInterface> in
 ## <a name="accessing-another-model-or-diagrams"></a>Uzyskiwanie dostępu do innego modelu lub diagramów  
  Można:  
   
--   Użyj [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modelu autobusu do tworzenia łączy między elementami w różnych modelach. Aby uzyskać więcej informacji, zobacz [modeli UML, integracja z innymi modelami i narzędziami](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
+- Użyj [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modelu autobusu do tworzenia łączy między elementami w różnych modelach. Aby uzyskać więcej informacji, zobacz [modeli UML, integracja z innymi modelami i narzędziami](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   
--   Załaduj projekt modelowania i diagramy w trybie tylko do odczytu bez uwidaczniania tego w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [odczytywanie modelu UML w kodzie programu](../modeling/read-a-uml-model-in-program-code.md).  
+- Załaduj projekt modelowania i diagramy w trybie tylko do odczytu bez uwidaczniania tego w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [odczytywanie modelu UML w kodzie programu](../modeling/read-a-uml-model-in-program-code.md).  
   
--   Otwórz projekt modelowania i jego diagramów w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], a następnie uzyskać dostęp do zawartości. Aby uzyskać więcej informacji, zobacz [Otwieranie modelu UML za pomocą interfejsu API programu Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).  
+- Otwórz projekt modelowania i jego diagramów w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], a następnie uzyskać dostęp do zawartości. Aby uzyskać więcej informacji, zobacz [Otwieranie modelu UML za pomocą interfejsu API programu Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzanie modeli i diagramów UML](../modeling/extend-uml-models-and-diagrams.md)   

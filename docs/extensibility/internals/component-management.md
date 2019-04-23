@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 887f71f5aabf7acfdeb822bb4e05c1b0debf63ab
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1ef2edb8996984f943ce3d7ec168eed0692f2493
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602003"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110079"
 ---
 # <a name="component-management"></a>Zarządzanie składnikami
 Jednostki zadań w Instalatorze Windows są określane jako składniki Instalatora Windows (czasami nazywany WICs lub po prostu składników). Identyfikator GUID identyfikuje każdy składnik WIC to podstawowa jednostka instalacji i zliczanie dla ustawień, które przy użyciu Instalatora Windows.
@@ -27,23 +27,23 @@ Jednostki zadań w Instalatorze Windows są określane jako składniki Instalato
 
 ## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Wytyczne dotyczące tworzenia Instalatora w celu instalacji side-by-side
 
--   Tworzenie plików i kluczy rejestru, które są współużytkowane przez wersje na ich własnych składniki.
+- Tworzenie plików i kluczy rejestru, które są współużytkowane przez wersje na ich własnych składniki.
 
      Dzięki temu można łatwo korzystać z nich w następnej wersji. Na przykład bibliotek typów, które są zarejestrowane na całym świecie, rozszerzenia plików, inne elementy, zarejestrowane w **HKEY_CLASSES_ROOT**i tak dalej.
 
--   Grupy składników udostępnionych do modułów scalania oddzielne.
+- Grupy składników udostępnionych do modułów scalania oddzielne.
 
      Ta strategia umożliwia tworzenie poprawnie na potrzeby instalacji side-by-side przenoszenie do przodu.
 
--   Zainstaluj udostępnione pliki i klucze rejestru przy użyciu tych samych składników Instalatora Windows w wersjach.
+- Zainstaluj udostępnione pliki i klucze rejestru przy użyciu tych samych składników Instalatora Windows w wersjach.
 
      Jeśli używasz innego składnika, pliki i wpisy rejestru są odinstalowywane po odinstalowaniu jednej określonej wersji pakietu VSPackage, ale innego pakietu VSPackage nadal jest zainstalowany.
 
--   Nie należy mieszać wersjonowana i udostępnionych elementów w jednym składniku.
+- Nie należy mieszać wersjonowana i udostępnionych elementów w jednym składniku.
 
      To sprawia, że niemożliwe do instalacji udostępnione elementy globalnej lokalizacji i wersjonowanych elementów do lokalizacje izolowanych.
 
--   Nie ma kluczy rejestru udostępnionego, które wskazują wersji plików.
+- Nie ma kluczy rejestru udostępnionego, które wskazują wersji plików.
 
      Jeśli to zrobisz, klucze współużytkowane zostaną zastąpione po zainstalowaniu innej wersji pakietu VSPackage. Po usunięciu druga wersja pliku, do którego wskazuje klucz został usunięty.
 

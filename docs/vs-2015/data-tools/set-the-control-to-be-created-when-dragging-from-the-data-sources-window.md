@@ -19,12 +19,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dffe803bc0b082f4f14c9010e165bd6b169674fe
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3c9902080ae501c1d77a59f152d7d272462d2264
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657457"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115422"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródeł danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,13 +57,13 @@ Możesz utworzyć formanty powiązane z danymi przez przeciąganie elementów z 
   
 #### <a name="to-set-the-controls-to-be-created-for-columns-or-properties"></a>Aby ustawić formanty, które ma zostać utworzony dla kolumny lub właściwości  
   
-1.  Upewnij się, że projektant WPF lub projektanta Windows Forms jest otwarty.  
+1. Upewnij się, że projektant WPF lub projektanta Windows Forms jest otwarty.  
   
-2.  W **źródeł danych** okna, rozwiń odpowiednią tabelę lub obiekt, aby wyświetlić jej właściwości lub kolumn.  
+2. W **źródeł danych** okna, rozwiń odpowiednią tabelę lub obiekt, aby wyświetlić jej właściwości lub kolumn.  
   
-3.  Wybierz każdej kolumny lub właściwości, dla którego chcesz ustawić formant, który ma zostać utworzony.  
+3. Wybierz każdej kolumny lub właściwości, dla którego chcesz ustawić formant, który ma zostać utworzony.  
   
-4.  Kliknij menu rozwijane dla kolumny lub właściwości, a następnie wybierz formant, który chcesz utworzyć, gdy element zostanie przeciągnięty do projektanta.  
+4. Kliknij menu rozwijane dla kolumny lub właściwości, a następnie wybierz formant, który chcesz utworzyć, gdy element zostanie przeciągnięty do projektanta.  
   
      Lista dostępnych kontrolek jest zależny, na których projektant otwartych, która wersja programu .NET Framework projekt jest ukierunkowany i które niestandardowe formanty obsługujące, możesz powiązania danych zostały dodane do **przybornika**. Jeśli formant, który ma zostać utworzona lista dostępnych kontrolek, możesz dodać formant do listy. Aby uzyskać więcej informacji, zobacz [Dodawanie niestandardowych formantów do okna źródeł danych](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   

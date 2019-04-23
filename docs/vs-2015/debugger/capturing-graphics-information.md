@@ -13,12 +13,12 @@ caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b64be59e1a962eb23ef12ba49e8b4fa73bd7a44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d0b98d57500ad2115abfcbd229d29009afdda059
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764753"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114233"
 ---
 # <a name="capturing-graphics-information"></a>Przechwytywanie informacji graficznych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,9 +60,9 @@ Przechwytywać informacje graficzne z aplikacji Direct3D, tak aby analizator gra
   
 ##### <a name="to-configure-graphics-diagnostics-capture-options"></a>Aby skonfigurować opcje przechwytywania diagnostyki grafiki  
   
-1.  Na pasku menu wybierz menu Narzędzia, opcje. Zostanie wyświetlone okno dialogowe Opcje.  
+1. Na pasku menu wybierz menu Narzędzia, opcje. Zostanie wyświetlone okno dialogowe Opcje.  
   
-2.  Na liście Kategoria opcji po lewej stronie wybierz pozycję Diagnostyka grafiki, a następnie skonfiguruj żądane opcje diagnostyki grafiki.  
+2. Na liście Kategoria opcji po lewej stronie wybierz pozycję Diagnostyka grafiki, a następnie skonfiguruj żądane opcje diagnostyki grafiki.  
   
      **Zbieraj stosy wywołań podczas przechwytywania (zwalnia przechwytywanie)**  
      Zaznacz to pole, aby zebrać stosy wywołań. Stosy wywołań nie są zbierane domyślnie. Aby przechwycić stosy wywołań, upewnij się, że **zbieranie wywołań stosów podczas przechwytywania (zwalnia Przechwytywanie** pole wyboru jest ustawiona na włączanie kolekcji, a następnie ustaw opcję **znaczników rysowania, wysyłania, obecny i wydajności**opcję (ustawienie domyślne), aby zbierać tylko najważniejsze stosy wywołań, lub **wszystko** opcję, aby zbierać wszystkie stosy wywołań. Aby zatrzymać zbieranie stosy wywołań później, należy wyczyścić **zbieranie wywołań stosów podczas przechwytywania (zwalnia Przechwytywanie** pola wyboru.  

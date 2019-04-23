@@ -11,14 +11,14 @@ ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8064ffec4b98c1a05d8236b11bec226a08f20321
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 90650b8b3c3432fce05b03a25033977e68f60fca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763516"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112953"
 ---
-# <a name="test-area-8-plug-in-switching"></a>Obszar testowy 8: Przełączanie wtyczki
+# <a name="test-area-8-plug-in-switching"></a>Obszar testowy 8: przełączanie wtyczki
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Zintegrowanego środowiska programistycznego (IDE) ma interfejs użytkownika (UI), aby zmienić bieżącą wtyczką kontroli źródła. Ten obszar testowy zawiera przypadki testowe dla procesu pobrania, który wtyczki do użycia rozwiązania kontroli źródła.  
@@ -26,9 +26,9 @@ ms.locfileid: "54763516"
 ## <a name="command-menu-access"></a>Dostęp do Menu polecenia  
  Następujące [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ścieżki menu środowiska zintegrowanego rozwoju są używane w przypadkach testowych.  
   
--   Bieżącą wtyczką kontroli źródła: **Narzędzia** -> **opcje** -> **kontroli źródła** -> **wybór wtyczki**.  
+- Bieżącą wtyczką kontroli źródła: **Narzędzia** -> **opcje** -> **kontroli źródła** -> **wybór wtyczki**.  
   
--   Zmień źródło powiązaniu kontroli: **Plik** -> **kontroli źródła** -> **Zmień kontrolę źródła**...  
+- Zmień źródło powiązaniu kontroli: **Plik** -> **kontroli źródła** -> **Zmień kontrolę źródła**...  
   
 ## <a name="common-expected-behavior"></a>Typowe oczekiwane zachowanie.  
  Zmiana wtyczka do kontroli źródła dla rozwiązania jest możliwa bez zamykania programu Visual Studio lub ponowne załadowanie rozwiązania. Ponadto bieżącą wtyczką kontroli źródła automatycznie zmieni się używaną przez rozwiązanie po załadowaniu tego rozwiązania.  

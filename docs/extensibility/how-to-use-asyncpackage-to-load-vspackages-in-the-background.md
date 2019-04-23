@@ -7,12 +7,12 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a0de1ccf4a75bb10ae120e9237ceb176a3794a1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 99b23c223d91678f03a52910ed4516be0839a338
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680987"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113966"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Instrukcje: Używanie klasy AsyncPackage do ładowania pakietów VSPackages w tle
 Ładowanie i Inicjowanie pakietu programu VS może spowodować We/Wy dysku. W przypadku takich operacji We/Wy na wątek interfejsu użytkownika, może to prowadzić do problemów z czasem odpowiedzi. Aby rozwiązać ten problem, Visual Studio 2015 wprowadzono <xref:Microsoft.VisualStudio.Shell.AsyncPackage> klasy, który umożliwia ładowanie pakiet w wątku tła.
@@ -75,11 +75,11 @@ public sealed class TestPackage : AsyncPackage
 ## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>Konwertowanie istniejącego pakietu VSPackage na AsyncPackage
  Większość pracy jest taka sama, jak podczas tworzenia nowego **AsyncPackage**. Wykonaj kroki od 1 do 5 powyżej. Należy również wykonać wyjątkową ostrożność przy użyciu następujące zalecenia:
 
-1.  Pamiętaj, aby usunąć `Initialize` zastąpienie miał w pakiecie.
+1. Pamiętaj, aby usunąć `Initialize` zastąpienie miał w pakiecie.
 
-2.  Należy unikać zakleszczenia: Może być ukryta zdalnych wywołań procedury w kodzie. teraz następują w wątku tła. Upewnij się, że jeśli wykonujesz zdalnego wywołania procedury (na przykład **GetService**), musisz albo (1) Przełącz do wątku głównego, lub (2) Użyj asynchroniczną wersję interfejsu API, jeśli taki istnieje (na przykład **element GetServiceAsync**).
+2. Należy unikać zakleszczenia: Może być ukryta zdalnych wywołań procedury w kodzie. teraz następują w wątku tła. Upewnij się, że jeśli wykonujesz zdalnego wywołania procedury (na przykład **GetService**), musisz albo (1) Przełącz do wątku głównego, lub (2) Użyj asynchroniczną wersję interfejsu API, jeśli taki istnieje (na przykład **element GetServiceAsync**).
 
-3.  Nie Przełączaj pomiędzy wątkami zbyt często. Próbuje zlokalizować pracy, która może nastąpić w wątku tła, aby skrócić czas ładowania.
+3. Nie Przełączaj pomiędzy wątkami zbyt często. Próbuje zlokalizować pracy, która może nastąpić w wątku tła, aby skrócić czas ładowania.
 
 ## <a name="querying-services-from-asyncpackage"></a>Podczas badania usługi AsyncPackage
  **AsyncPackage** może lub nie może załadować asynchronicznie w zależności od obiektu wywołującego. Na przykład

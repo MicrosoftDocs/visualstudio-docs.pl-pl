@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ad84f5a0db677ca9efa9d24b1963959010f25e3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 77fa9442289851aff91d8d9bfc55e581edfa774a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602029"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117547"
 ---
 # <a name="ribbon-xml"></a>XML — Wstążka
   Element wstążki (XML) umożliwia dostosowywanie wstążki przy użyciu języka XML. Jeśli chcesz dostosowania wstążki w taki sposób, że nie jest obsługiwany przez element wstążki (Projektant graficzny), należy użyć elementu wstążki (XML). Porównanie co można zrobić z każdym elementem, zobacz [Wstążka ― omówienie](../vsto/Ribbon-overview.md).
@@ -55,9 +55,9 @@ ms.locfileid: "56602029"
 ## <a name="define-the-behavior-of-the-custom-ribbon"></a>Zdefiniuj zachowanie niestandardowa Wstążka
  Pozwalające reagować na działania użytkownika, takie jak kliknięcie przycisku na Wstążce, tworząc *metody wywołania zwrotnego*. Metody wywołania zwrotnego przypominają zdarzenia w kontrolkach formularzy Windows Forms, ale są one zidentyfikowane przez atrybut w XML elementu interfejsu użytkownika. Pisanie metod w klasie Wstążki i kontrolki wywołuje metodę, która ma taką samą nazwę jak wartość atrybutu. Na przykład można utworzyć metody wywołania zwrotnego, która jest wywoływana, gdy użytkownik kliknie przycisk na Wstążce. Dwa kroki są wymagane do utworzenia metody wywołania zwrotnego:
 
--   Przypisz atrybut do formantu w pliku XML wstążki, który identyfikuje metodę wywołania zwrotnego w kodzie.
+- Przypisz atrybut do formantu w pliku XML wstążki, który identyfikuje metodę wywołania zwrotnego w kodzie.
 
--   Zdefiniuj metodę wywołania zwrotnego w klasie wstążki.
+- Zdefiniuj metodę wywołania zwrotnego w klasie wstążki.
 
 > [!NOTE]
 >  Program Outlook wymaga dodatkowego kroku. Aby uzyskać więcej informacji, zobacz [Dostosuj Wstążkę dla programu Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
@@ -77,7 +77,7 @@ ms.locfileid: "56602029"
 
  Istnieje wiele różnych typów, metod wywołania zwrotnego, które można przypisać do formantów wstążki. Pełną listę dostępnych metod wywołania zwrotnego dla każdego formantu, zobacz artykuł techniczny [Dostosowywanie interfejsu użytkownika wstążki pakietu Office (2007) dla deweloperów (część 3 z 3)](/previous-versions/office/developer/office-2007/aa722523(v=office.12)).
 
-###  <a name="CallBackMethods"></a> Definiowania metod wywoływania zwrotnego
+### <a name="CallBackMethods"></a> Definiowania metod wywoływania zwrotnego
  Zdefiniuj metody wywołania zwrotnego w klasie wstążki w pliku kodu wstążki. Metoda wywołania zwrotnego ma kilka wymagań:
 
 - Musi być zadeklarowany jako publiczny.
@@ -93,7 +93,7 @@ ms.locfileid: "56602029"
   [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
   [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]
 
-##  <a name="RibbonDescriptorFile"></a> Odwołanie do pliku XML wstążki
+## <a name="RibbonDescriptorFile"></a> Odwołanie do pliku XML wstążki
  Można zdefiniować swoje niestandardowa Wstążka przez dodanie elementów i atrybutów do pliku XML wstążki. Domyślnie plik XML wstążki zawiera następujący kod XML.
 
 ```xml
@@ -132,7 +132,7 @@ ms.locfileid: "56602029"
 
  Domyślne elementy i atrybuty w pliku XML wstążki są mały podzbiór elementów i atrybutów, które są dostępne. Aby uzyskać pełną listę dostępnych elementów i atrybutów, zobacz artykułu technicznego [Dostosowywanie interfejsu użytkownika wstążki pakietu Office (2007) dla deweloperów (część 2 z 3)](/previous-versions/office/developer/office-2007/aa338199(v=office.12)).
 
-##  <a name="RibbonExtensionClass"></a> Informacje o klasach wstążki
+## <a name="RibbonExtensionClass"></a> Informacje o klasach wstążki
  Program Visual Studio generuje klasę wstążki w pliku kodu wstążki. Dodaj metody wywołania zwrotnego dla formantów na Wstążce do tej klasy. Ta klasa implementuje <xref:Microsoft.Office.Core.IRibbonExtensibility> interfejsu.
 
  W poniższej tabeli opisano domyślnych metod w tej klasie.

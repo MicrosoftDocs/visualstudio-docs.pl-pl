@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d7ac06c15fb3b6e4370a3e785abe2ac94483a34
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f48dd69cf58a6ca3fbe292c5ed39aa3da51c4188
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756761"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111145"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>Instrukcje: Kopiowanie elementów diagramu klas do dokumentu pakietu Microsoft Office (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ Kształtów można skopiować z diagramu klasy (.cd plik) platformy .NET do inny
   
 ### <a name="to-copy-a-single-element"></a>Aby skopiować jeden element  
   
--   Kliknij prawym przyciskiem myszy kształt, a następnie wybierz **Kopiuj obraz**.  
+- Kliknij prawym przyciskiem myszy kształt, a następnie wybierz **Kopiuj obraz**.  
   
 ### <a name="to-copy-several-elements"></a>Aby skopiować kilka elementów  
   
-1.  Wybierz kształty na diagramie, który chcesz skopiować.  
+1. Wybierz kształty na diagramie, który chcesz skopiować.  
   
-2.  Kliknij prawym przyciskiem myszy zaznaczenie, a następnie wybierz **Kopiuj obraz**.  
+2. Kliknij prawym przyciskiem myszy zaznaczenie, a następnie wybierz **Kopiuj obraz**.  
   
 ### <a name="to-copy-all-the-elements-in-a-class-diagram"></a>Aby skopiować wszystkie elementy na diagramie klasy  
   
@@ -44,4 +44,4 @@ Kształtów można skopiować z diagramu klasy (.cd plik) platformy .NET do inny
   
 ## <a name="see-also"></a>Zobacz też  
  [Instrukcje: Drukowanie diagramów klas (Projektant klas)](../ide/how-to-print-class-diagrams-class-designer.md)   
- [Instrukcje: Eksportowanie diagramów klas jako obrazów (Projektant klas)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)
+ [Instrukcje: Eksportowanie diagramów klasy jako obrazów (Projektant klas)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)

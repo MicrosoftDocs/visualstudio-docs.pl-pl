@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 600166699a40ac91d403d7b76948ac924b4a35c2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d603d2435183581cac92a7c6dae6a4044d8f8fe5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789815"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087433"
 ---
 # <a name="debug-64-bit-applications"></a>Debugowanie aplikacji 64-bitowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,22 +40,22 @@ Można debugować aplikację 64-bitowych, która jest uruchomiona na komputerze 
 ## <a name="debug-a-64-bit-application"></a>Debugowanie aplikacji 64-bitowych  
  Aby wypróbować, debugowanie aplikacji 64-bitowych:  
   
-1.  Utwórz rozwiązanie programu Visual Studio, na przykład aplikacja konsolowa C#.  
+1. Utwórz rozwiązanie programu Visual Studio, na przykład aplikacja konsolowa C#.  
   
-2.  Ustaw konfigurację do 64-bitowego za pomocą programu Configuration Manager. Aby uzyskać więcej informacji, zobacz [jak: Konfigurowanie projektów pod kątem platform docelowych](../ide/how-to-configure-projects-to-target-platforms.md).  
+2. Ustaw konfigurację do 64-bitowego za pomocą programu Configuration Manager. Aby uzyskać więcej informacji, zobacz [jak: Konfigurowanie projektów pod kątem platform docelowych](../ide/how-to-configure-projects-to-target-platforms.md).  
   
-3.  W tym momencie zostanie uruchomiony 64-bitowej wersji zdalnego debugera (msvsmon.exe). Działa tak długo, jak rozwiązanie przy użyciu konfiguracji 64-bitowych jest otwarte.  
+3. W tym momencie zostanie uruchomiony 64-bitowej wersji zdalnego debugera (msvsmon.exe). Działa tak długo, jak rozwiązanie przy użyciu konfiguracji 64-bitowych jest otwarte.  
   
-4.  Rozpocznij debugowanie. Powinny mieć taki sam sposób, podobnie jak w przypadku konfiguracji 32-bitowych. Jeśli występują błędy, zobacz poniżej sekcję Rozwiązywanie problemów.  
+4. Rozpocznij debugowanie. Powinny mieć taki sam sposób, podobnie jak w przypadku konfiguracji 32-bitowych. Jeśli występują błędy, zobacz poniżej sekcję Rozwiązywanie problemów.  
   
 ## <a name="troubleshooting-64-bit-debugging"></a>Rozwiązywanie problemów z debugowaniem 64-bitowych  
  Może zostać wyświetlony błąd: "To operacja debugowania 64-bitowego trwa dłużej niż oczekiwano." W takim przypadku programu Visual Studio, który wysłał żądanie do 64-bitowej wersji msvsmon.exe i trzeba było poświęcić dużo czasu, w wyniku tego żądania, aby wrócić do tego.  
   
  Istnieją dwie główne przyczyny tego błędu:  
   
--   Masz oprogramowanie zabezpieczeń sieciowe zainstalowane na komputerze, który spowodował stosu sieciowego być zawodne i została obniżona, pakiety przesyłane za pośrednictwem hosta lokalnego. Spróbuj wyłączyć całe oprogramowanie zabezpieczeń sieci i zobacz, jeśli to rozwiązuje to. Jeśli tak, zgłoś się z dostawcą oprogramowania zabezpieczeń sieci, oprogramowania uniemożliwiać ruch hosta lokalnego.  
+- Masz oprogramowanie zabezpieczeń sieciowe zainstalowane na komputerze, który spowodował stosu sieciowego być zawodne i została obniżona, pakiety przesyłane za pośrednictwem hosta lokalnego. Spróbuj wyłączyć całe oprogramowanie zabezpieczeń sieci i zobacz, jeśli to rozwiązuje to. Jeśli tak, zgłoś się z dostawcą oprogramowania zabezpieczeń sieci, oprogramowania uniemożliwiać ruch hosta lokalnego.  
   
--   Zawieszanie się lub wydajności problem z programem Visual Studio zostały przekroczone. Jeśli ten problem występuje regularnie, można zbierać zrzuty programu Visual Studio (devenv.exe) i proces roboczy (msvsmon.exe) i wysyłać je do firmy Microsoft. 
+- Zawieszanie się lub wydajności problem z programem Visual Studio zostały przekroczone. Jeśli ten problem występuje regularnie, można zbierać zrzuty programu Visual Studio (devenv.exe) i proces roboczy (msvsmon.exe) i wysyłać je do firmy Microsoft. 
   
 ## <a name="see-also"></a>Zobacz też  
  [Aplikacje 64-bitowe](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   

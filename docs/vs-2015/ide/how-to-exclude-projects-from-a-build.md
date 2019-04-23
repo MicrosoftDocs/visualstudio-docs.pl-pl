@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04a3a45af932a34b89feb2726e7a137ceea2ac5a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6a0b46a4aaa780357faa38a9ee4b01d04b1a0ba1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780129"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110937"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Instrukcje: Wykluczanie projektów z kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,29 +31,29 @@ Możesz tworzyć rozwiązania, bez konieczności tworzenia wszystkie projekty, k
   
 ### <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>Aby tymczasowo usunięcie projektu z aktywnej konfiguracji rozwiązania  
   
-1.  Na pasku menu wybierz **kompilacji**, **programu Configuration Manager**.  
+1. Na pasku menu wybierz **kompilacji**, **programu Configuration Manager**.  
   
-2.  W **projektu kontekstów** tabeli, Znajdź projekt, które chcesz wykluczyć z kompilacji.  
+2. W **projektu kontekstów** tabeli, Znajdź projekt, które chcesz wykluczyć z kompilacji.  
   
-3.  W **kompilacji** kolumny dla projektu, usuń zaznaczenie pola wyboru.  
+3. W **kompilacji** kolumny dla projektu, usuń zaznaczenie pola wyboru.  
   
-4.  Wybierz **Zamknij** przycisk, a następnie ponownie skompiluj rozwiązanie.  
+4. Wybierz **Zamknij** przycisk, a następnie ponownie skompiluj rozwiązanie.  
   
 ### <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>Umożliwia utworzenie konfiguracji rozwiązania, który wyklucza projektu  
   
-1.  Na pasku menu wybierz **kompilacji**, **programu Configuration Manager**.  
+1. Na pasku menu wybierz **kompilacji**, **programu Configuration Manager**.  
   
-2.  W **Konfiguracja rozwiązania aktywnego** wybierz  **\<nowy >**.  
+2. W **Konfiguracja rozwiązania aktywnego** wybierz  **\<nowy >**.  
   
-3.  W **nazwa** wprowadź nazwę dla konfiguracji rozwiązania.  
+3. W **nazwa** wprowadź nazwę dla konfiguracji rozwiązania.  
   
-4.  W **Kopiuj ustawienia** wybierz konfiguracji rozwiązania, na którym chcesz utworzyć nową konfigurację (na przykład **debugowania**), a następnie wybierz **OK** przycisku .  
+4. W **Kopiuj ustawienia** wybierz konfiguracji rozwiązania, na którym chcesz utworzyć nową konfigurację (na przykład **debugowania**), a następnie wybierz **OK** przycisku .  
   
-5.  W **programu Configuration Manager** okno dialogowe, wyczyść pole wyboru w **kompilacji** kolumny dla projektu, który chcesz wykluczyć, a następnie wybierz **Zamknij** przycisku.  
+5. W **programu Configuration Manager** okno dialogowe, wyczyść pole wyboru w **kompilacji** kolumny dla projektu, który chcesz wykluczyć, a następnie wybierz **Zamknij** przycisku.  
   
-6.  Na **standardowa** narzędzi, sprawdź, czy nowa konfiguracja rozwiązania jest aktywna konfiguracja w **konfiguracje rozwiązania** pole.  
+6. Na **standardowa** narzędzi, sprawdź, czy nowa konfiguracja rozwiązania jest aktywna konfiguracja w **konfiguracje rozwiązania** pole.  
   
-7.  Na pasku menu wybierz **kompilacji**, **Kompiluj rozwiązanie**.  
+7. Na pasku menu wybierz **kompilacji**, **Kompiluj rozwiązanie**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Ogólne informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md)   

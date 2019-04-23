@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7ed7c1a072fdca6e0572ecb04350f5d64bed067d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e9ce3164a1a6659b4921139172afb9c5e3598821
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792556"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105139"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Przesłaniaj metodę GetHashCode w razie przesłaniania metody Equals
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,23 +38,23 @@ ms.locfileid: "54792556"
 ## <a name="rule-description"></a>Opis reguły
  <xref:System.Object.GetHashCode%2A> Zwraca wartość, w oparciu o bieżące wystąpienie, które jest odpowiednie dla algorytmów wyznaczania wartości skrótu i struktur danych, takich jak Tabela skrótów. Dwa obiekty są tego samego typu, które są takie same musi zwracać taki sam skrót, aby zapewnić prawidłowe działanie wystąpień z następujących typów:
 
--   <xref:System.Collections.Hashtable?displayProperty=fullName>
+- <xref:System.Collections.Hashtable?displayProperty=fullName>
 
--   <xref:System.Collections.SortedList?displayProperty=fullName>
+- <xref:System.Collections.SortedList?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName>
+- <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=fullName>
+- <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName>
+- <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName>
 
--   <xref:System.Collections.Specialized.HybridDictionary?displayProperty=fullName>
+- <xref:System.Collections.Specialized.HybridDictionary?displayProperty=fullName>
 
--   <xref:System.Collections.Specialized.ListDictionary?displayProperty=fullName>
+- <xref:System.Collections.Specialized.ListDictionary?displayProperty=fullName>
 
--   <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
+- <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
--   Typy, które implementują <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
+- Typy, które implementują <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, należy udostępnić implementację klasy <xref:System.Object.GetHashCode%2A>. Pary obiektów tego samego typu, należy upewnić się, że implementacja zwraca tę samą wartość, jeśli implementacja <xref:System.Object.Equals%2A> zwraca `true` dla pary.

@@ -12,12 +12,12 @@ ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b9a1d8e18802c91d1669d709d6236d69a4a7444c
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 63dd7f96e1d7af81b81a1b9d6a445356bb8de27e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869936"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117736"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Instrukcje: Generowanie informacji rejestru dla instalatora
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Narzędzie RegPkg.exe może służyć do generowania manifestu rejestracji dla z
   
 ### <a name="to-create-a-registration-manifest"></a>Aby utworzyć manifest rejestracji  
   
--   Uruchom RegPkg z **/regfile razem** przełącznika. Podaj inne przełączniki, nazwa pliku wyjściowego i ścieżkę pakietu VSPackage.  
+- Uruchom RegPkg z **/regfile razem** przełącznika. Podaj inne przełączniki, nazwa pliku wyjściowego i ścieżkę pakietu VSPackage.  
   
      Na przykład w wierszu polecenia należy wpisać podobny do poniższego:  
   
@@ -39,7 +39,7 @@ Narzędzie RegPkg.exe może służyć do generowania manifestu rejestracji dla z
   
 ### <a name="to-view-a-registration-manifest"></a>Aby wyświetlić manifest rejestracji  
   
--   Otwórz manifest rejestracji w dowolnym edytorze tekstów.  
+- Otwórz manifest rejestracji w dowolnym edytorze tekstów.  
   
      Poniższy przykład to manifest rejestracji, który RegPkg tworzy dla usługi w języka IronPython:  
   
@@ -100,7 +100,7 @@ Narzędzie RegPkg.exe może służyć do generowania manifestu rejestracji dla z
   
 ### <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Aby utworzyć zestaw narzędzi XML Instalatora Windows, Dołącz plik  
   
--   Uruchom RegPkg z **/wixfile** przełącznika. Podaj inne przełączniki, nazwa pliku wyjściowego i ścieżkę pakietu VSPackage.  
+- Uruchom RegPkg z **/wixfile** przełącznika. Podaj inne przełączniki, nazwa pliku wyjściowego i ścieżkę pakietu VSPackage.  
   
      Na przykład w wierszu polecenia należy wpisać podobny do poniższego:  
   
@@ -110,7 +110,7 @@ Narzędzie RegPkg.exe może służyć do generowania manifestu rejestracji dla z
   
 ### <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Aby wyświetlić zestaw narzędzi XML Instalatora Windows zawierają plik  
   
--   Otwórz zestaw narzędzi XML Instalatora Windows umieścić plik w dowolnym edytorze tekstów.  
+- Otwórz zestaw narzędzi XML Instalatora Windows umieścić plik w dowolnym edytorze tekstów.  
   
      Poniższy przykład jest pliku dołączonego, który tworzy RegPkg dla usługi w języka IronPython:  
   

@@ -10,12 +10,12 @@ ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 049d8500f9f3f2a8695d686484ea48f84f2e034b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3790d370e969a913db31c3bab139b2c42ef97d22
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777551"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105438"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Konfigurowanie diagnostyki dla usług w chmurze i maszyn wirtualnych platformy Azure
 Gdy zachodzi potrzeba Rozwiązywanie problemów z usługą w chmurze platformy Azure lub maszynie wirtualnej, można użyć programu Visual Studio na łatwiejsze konfigurowanie diagnostyki platformy Azure. Diagnostyka przechwytuje dane systemu i rejestrowania danych na maszynach wirtualnych i wystąpień maszyn wirtualnych, które są uruchamiane usługi w chmurze. Dane diagnostyczne jest przekazywany do wybranego konta magazynu. Aby uzyskać więcej informacji o diagnostyce rejestrowania na platformie Azure, zobacz [Włączanie rejestrowania diagnostycznego dla aplikacji sieci Web w usłudze Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -150,12 +150,13 @@ Jeśli używasz zestawu Azure SDK 2.6 lub nowszej, aby określić niestandardowe
 
 Jeśli używasz zestawu SDK Azure 2.5, aby określić niestandardowe źródło danych można dodać go do `WindowsEventLog` sekcji diagnostics.wadcfgx plików, takie jak w poniższym przykładzie:
 
-```
+```xml
 <WindowsEventLog scheduledTransferPeriod="PT1M">
    <DataSource name="Application!*" />
    <DataSource name="CustomDataSource!*" />
 </WindowsEventLog>
 ```
+
 ### <a name="performance-counters"></a>Liczniki wydajności
 Informacje o liczniku wydajności może pomóc w zlokalizować wąskie gardła systemu oraz dostosowywać wydajność systemu i aplikacji. Aby uzyskać więcej informacji, zobacz [tworzenia i używania liczników wydajności w aplikacji Azure](https://msdn.microsoft.com/library/azure/hh411542.aspx). Aby przechwycić liczników wydajności, wybierz **Włącz transferu liczników wydajności** pole wyboru. Aby zwiększyć lub zmniejszyć interwał między przekazywania dzienników zdarzeń do konta magazynu, należy zmienić **transferu okres (w min)** wartość. Zaznacz pola wyboru dla liczników wydajności, które mają być śledzone.
 

@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61276307516052673f07a6798673b9998cb609fb
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: d44ae7d3eb4c01434e2a8b6f2cf7c0391c749ad7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833839"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114577"
 ---
 # <a name="how-to-set-permissions"></a>Instrukcje: Ustawianie uprawnień
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,25 +42,25 @@ W tym temacie opisano, jak Administrator komputera przyznaje uprawnienia zabezpi
   
 ### <a name="to-create-a-user-account-that-has-user-permissions"></a>Aby utworzyć konto użytkownika, które ma uprawnienia użytkownika  
   
-1.  Kliknij prawym przyciskiem myszy **Mój komputer** a następnie kliknij przycisk **Zarządzaj**.  
+1. Kliknij prawym przyciskiem myszy **Mój komputer** a następnie kliknij przycisk **Zarządzaj**.  
   
      **Zarządzanie komputerem** zostanie otwarte okno.  
   
-2.  Rozwiń **lokalnych użytkowników i grup**.  
+2. Rozwiń **lokalnych użytkowników i grup**.  
   
-3.  Kliknij prawym przyciskiem myszy **użytkowników** folder, a następnie kliknij przycisk **nowego użytkownika**.  
+3. Kliknij prawym przyciskiem myszy **użytkowników** folder, a następnie kliknij przycisk **nowego użytkownika**.  
   
      **Nowego użytkownika** pojawi się okno dialogowe.  
   
-4.  Wypełnij pola w oknie dialogowym z informacjami dla konta użytkownika, czy tworzysz. Określ hasło. Opcjonalnie zaznacz pole wyboru, które wymaga, aby zmiany hasła przy następnym logowaniu użytkownika.  
+4. Wypełnij pola w oknie dialogowym z informacjami dla konta użytkownika, czy tworzysz. Określ hasło. Opcjonalnie zaznacz pole wyboru, które wymaga, aby zmiany hasła przy następnym logowaniu użytkownika.  
   
-5.  Kliknij przycisk **Utwórz** a następnie kliknij przycisk **Zamknij**.  
+5. Kliknij przycisk **Utwórz** a następnie kliknij przycisk **Zamknij**.  
   
      Nowy użytkownik pojawi się w grupie Użytkownicy, grupy użytkowników, którzy nie mają uprawnień administratora.  
   
 ### <a name="to-grant-access-to-shared-project-files"></a>Aby udzielić dostępu do udostępnionych plików projektu  
   
-1.  W Eksploratorze Windows (lub Eksploratora plików) Znajdź katalog główny drzewa folder dla projektu pliki używane przez tego użytkownika i udostępnione przez zespół projektu.  
+1. W Eksploratorze Windows (lub Eksploratora plików) Znajdź katalog główny drzewa folder dla projektu pliki używane przez tego użytkownika i udostępnione przez zespół projektu.  
   
      Ścieżka tego folderu może wyglądać w następujący sposób:  
   
@@ -68,17 +68,17 @@ W tym temacie opisano, jak Administrator komputera przyznaje uprawnienia zabezpi
     D:\ourProject  
     ```  
   
-2.  Kliknij prawym przyciskiem myszy folder, a następnie kliknij przycisk **właściwości**.  
+2. Kliknij prawym przyciskiem myszy folder, a następnie kliknij przycisk **właściwości**.  
   
      **\<Nazwę folderu > właściwości** pojawi się okno dialogowe.  
   
-3.  Kliknij przycisk **zabezpieczeń** kartę.  
+3. Kliknij przycisk **zabezpieczeń** kartę.  
   
-4.  Kliknij nazwę konta w **nazwy grupy lub użytkownika** pole.  
+4. Kliknij nazwę konta w **nazwy grupy lub użytkownika** pole.  
   
-5.  W **uprawnienia dla \<nazwa użytkownika >** zaznacz pole wyboru dla **Pełna kontrola**.  
+5. W **uprawnienia dla \<nazwa użytkownika >** zaznacz pole wyboru dla **Pełna kontrola**.  
   
-6.  Kliknij przycisk **OK**.  
+6. Kliknij przycisk **OK**.  
   
      Spowoduje to przydzielenie uprawnień dla użytkownika na potrzeby drzewa folder udostępniony, który rozpoczyna się od folderu wybrana w kroku 5.  
   
@@ -112,11 +112,11 @@ W tym temacie opisano, jak Administrator komputera przyznaje uprawnienia zabezpi
   
     To polecenie przyznaje \<nazwa_użytkownika > lub \<Nazwa grupy > konta dostępu do narzędzi profilowania. \<Prawo > Opcja określa profilowania funkcji użytkownik może uzyskać dostęp. \<Prawo > opcja może być co najmniej jeden z następujących wartości:  
   
-   -   FullAccess — zezwala na dostęp do wszystkich metod profilowania, zbieranie danych wydajności z usługi, w tym do pobierania próbek i obejmujące wiele sesji profilowania.  
+   - FullAccess — zezwala na dostęp do wszystkich metod profilowania, zbieranie danych wydajności z usługi, w tym do pobierania próbek i obejmujące wiele sesji profilowania.  
   
-   -   SampleProfiling — zezwala na dostęp do metod profilowania próbki  
+   - SampleProfiling — zezwala na dostęp do metod profilowania próbki  
   
-   -   CrossSession — zezwala na dostęp do wielu sesji profilowania, co jest wymagane dla usług profilowania.  
+   - CrossSession — zezwala na dostęp do wielu sesji profilowania, co jest wymagane dla usług profilowania.  
   
 5. (Opcjonalnie) Aby zachować wyniki dowolnego z poprzednich kroków, po ponownym uruchomieniu komputera, uruchom następujące polecenie:  
   

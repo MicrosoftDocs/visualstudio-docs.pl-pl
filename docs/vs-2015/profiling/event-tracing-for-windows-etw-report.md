@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba40e16f70451a288a17c138bdfa3b2070d56122
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5bfcb10bdbbfcb8e4b98f8d90d6652832059107d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752252"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108220"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Zdarzenia śledzenia dla systemu Windows (ETW) — Raport
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ Raport śledzenie zdarzeń dla Windows (ETW) zawiera listę zdarzeń ETW, które
 > [!NOTE]
 >  Nie można wyświetlić raporty ETW w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interfejsu.  
   
--   Aby uzyskać informacje dotyczące zbierania zdarzeń systemu Windows przy użyciu narzędzi profilowania z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interfejsu, zobacz [jak: Zbieranie zdarzeń śledzenia for Windows (ETW) — dane](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
+- Aby uzyskać informacje dotyczące zbierania zdarzeń systemu Windows przy użyciu narzędzi profilowania z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interfejsu, zobacz [jak: Zbieranie zdarzeń śledzenia for Windows (ETW) — dane](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
   
--   Aby uzyskać informacje dotyczące zbierania danych ETW przy użyciu [VSPerfCmd](../profiling/vsperfcmd.md) narzędzi wiersza polecenia, zobacz [zdarzenia](../profiling/events-vsperfcmd.md).  
+- Aby uzyskać informacje dotyczące zbierania danych ETW przy użyciu [VSPerfCmd](../profiling/vsperfcmd.md) narzędzi wiersza polecenia, zobacz [zdarzenia](../profiling/events-vsperfcmd.md).  
   
--   Generowanie raportu ETW za pomocą **VSReport / Summary: ETW** polecenia. Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md).  
+- Generowanie raportu ETW za pomocą **VSReport / Summary: ETW** polecenia. Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md).  
   
 |Kolumna|Opis|  
 |------------|-----------------|  

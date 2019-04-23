@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa5d123048b819c2b0b92951582bd9348cbdbab6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b447225580505959697e14f0c85855452906aa18
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713168"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108857"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Szablon usługi Visual Studio manifest odwołanie do schematu
 Ten schemat opisuje format manifestu szablonu Visual Studio (*vstman*) plików, które są generowane dla szablonów projektu lub elementu programu Visual Studio. Schemat opisuje także lokalizacji i inne istotne informacje o szablonie.
@@ -28,15 +28,15 @@ Ten schemat opisuje format manifestu szablonu Visual Studio (*vstman*) plików, 
 
 ### <a name="attributes"></a>Atrybuty
 
--   **Wersja**: Ciąg reprezentujący wersja manifestu szablonu. Wymagana.
+- **Wersja**: Ciąg reprezentujący wersja manifestu szablonu. Wymagana.
 
--   **Ustawienia regionalne**: Ciąg reprezentujący ustawień regionalnych lub ustawień regionalnych manifestu szablonu. Wartość ustawienia regionalne ma zastosowanie do wszystkich szablonów. Należy użyć oddzielnych manifestu dla poszczególnych ustawień regionalnych. Opcjonalna.
+- **Ustawienia regionalne**: Ciąg reprezentujący ustawień regionalnych lub ustawień regionalnych manifestu szablonu. Wartość ustawienia regionalne ma zastosowanie do wszystkich szablonów. Należy użyć oddzielnych manifestu dla poszczególnych ustawień regionalnych. Opcjonalna.
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
--   **VSTemplateContainer** Optional.
+- **VSTemplateContainer** Optional.
 
--   **VSTemplateDir** Optional.
+- **VSTemplateDir** Optional.
 
 ### <a name="parent-element"></a>Element nadrzędny
  Brak.
@@ -49,9 +49,9 @@ Ten schemat opisuje format manifestu szablonu Visual Studio (*vstman*) plików, 
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
--   **RelativePathOnDisk**:  Ścieżka względna pliku szablonu na dysku. Ta lokalizacja definiuje również umieszczania szablonu w drzewie szablonu wyświetlane w **nowy projekt** lub **nowy element** okna dialogowego. Dla wdrożonych jako katalog i poszczególnych plików szablonów ta ścieżka odwołuje się do katalogu zawierającego pliki szablonów. Dla szablonów wdrożony jako *zip* pliku, ścieżka ta powinna być ścieżką do *zip* pliku.
+- **RelativePathOnDisk**:  Ścieżka względna pliku szablonu na dysku. Ta lokalizacja definiuje również umieszczania szablonu w drzewie szablonu wyświetlane w **nowy projekt** lub **nowy element** okna dialogowego. Dla wdrożonych jako katalog i poszczególnych plików szablonów ta ścieżka odwołuje się do katalogu zawierającego pliki szablonów. Dla szablonów wdrożony jako *zip* pliku, ścieżka ta powinna być ścieżką do *zip* pliku.
 
--   **VSTemplateHeader: A [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) element, który opisuje nagłówka.
+- **VSTemplateHeader: A [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) element, który opisuje nagłówka.
 
 ### <a name="parent-element"></a>Element nadrzędny
  **VSTemplateManifest**
@@ -66,13 +66,13 @@ Ten schemat opisuje format manifestu szablonu Visual Studio (*vstman*) plików, 
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
--   **RelativePath**: Ścieżka szablonu. Może istnieć tylko jeden zapis dla ścieżki, więc pierwszy z nich zostanie zarejestrowane dla wszystkich manifestów.
+- **RelativePath**: Ścieżka szablonu. Może istnieć tylko jeden zapis dla ścieżki, więc pierwszy z nich zostanie zarejestrowane dla wszystkich manifestów.
 
--   **LocalizedName**: A **NameDescriptionIcon** element, który określa zlokalizowana nazwa. Opcjonalna.
+- **LocalizedName**: A **NameDescriptionIcon** element, który określa zlokalizowana nazwa. Opcjonalna.
 
--   **SortOrder**: Ciąg, który określa porządek sortowania. Opcjonalna.
+- **SortOrder**: Ciąg, który określa porządek sortowania. Opcjonalna.
 
--   **ParentFolderOverrideName**: Zastąpiona nazwa folderu nadrzędnego. Opcjonalna. Ten element ma **nazwa** atrybut, który jest wartością ciągu, który określa nazwę.
+- **ParentFolderOverrideName**: Zastąpiona nazwa folderu nadrzędnego. Opcjonalna. Ten element ma **nazwa** atrybut, który jest wartością ciągu, który określa nazwę.
 
 ### <a name="parent-element"></a>Element nadrzędny
  **VSTemplateManifest**
@@ -82,9 +82,9 @@ Ten schemat opisuje format manifestu szablonu Visual Studio (*vstman*) plików, 
 
 ### <a name="attributes"></a>Atrybuty
 
--   **Pakiet**: Wartość ciągu, który określa pakiet. Opcjonalna.
+- **Pakiet**: Wartość ciągu, który określa pakiet. Opcjonalna.
 
--   **ID**: Wartość ciągu, który określa identyfikator. Opcjonalna.
+- **ID**: Wartość ciągu, który określa identyfikator. Opcjonalna.
 
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak.

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9f6a27ea1f8d6c50b4b9b8eba07186f34eb143b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2153091b2b2abae05bf6f6c7856d2fa6d43f8967
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616641"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109026"
 ---
 # <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>Instrukcje: Programowe wyświetlanie listy wszystkich arkuszy w skoroszycie
   <xref:Microsoft.Office.Interop.Excel.Workbook> Klasa udostępnia <xref:Microsoft.Office.Interop.Excel.Worksheets> obiektu. Ten obiekt zawiera zbiór wszystkich <xref:Microsoft.Office.Interop.Excel.Worksheet> obiektów w skoroszycie.
@@ -27,14 +27,14 @@ ms.locfileid: "56616641"
 
 ## <a name="to-list-all-existing-worksheets-in-a-workbook-in-a-document-level-customization"></a>Aby wyświetlić listę wszystkich istniejących arkuszy w skoroszycie w dostosowaniu na poziomie dokumentu
 
-1.  Iteracyjne przeglądanie <xref:Microsoft.Office.Interop.Excel.Worksheets> kolekcji i Wyślij nazwę każdego arkusza do komórki odsuniętej od <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli.
+1. Iteracyjne przeglądanie <xref:Microsoft.Office.Interop.Excel.Worksheets> kolekcji i Wyślij nazwę każdego arkusza do komórki odsuniętej od <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#21](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreExcelAutomation#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#21)]
 
 ## <a name="to-list-all-existing-worksheets-in-a-workbook-in-a-vsto-add-in"></a>Aby wyświetlić listę wszystkich istniejących arkuszy w skoroszycie w dodatku narzędzi VSTO
 
-1.  Iteracyjne przeglądanie <xref:Microsoft.Office.Interop.Excel.Worksheets> kolekcji i Wyślij nazwę każdego arkusza do komórki odsuniętej od <xref:Microsoft.Office.Interop.Excel.Range> obiektu.
+1. Iteracyjne przeglądanie <xref:Microsoft.Office.Interop.Excel.Worksheets> kolekcji i Wyślij nazwę każdego arkusza do komórki odsuniętej od <xref:Microsoft.Office.Interop.Excel.Range> obiektu.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#13](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#13)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#13](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#13)]

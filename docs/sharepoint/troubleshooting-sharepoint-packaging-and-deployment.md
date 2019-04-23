@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed0801e9654e1d2f78f2ed49f47dabe6f0e619ab
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 0c949f9a5d8c56f44e0754715d056b4d3837f76a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868043"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087602"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Rozwiązywanie problemów z pakowaniem i wdrażaniem SharePoint
   W tym temacie omówiono różne problemy, które mogą wystąpić podczas pakowania i wdrażania rozwiązań programu SharePoint.
@@ -73,9 +73,9 @@ ms.locfileid: "54868043"
 ### <a name="resolution"></a>Rozwiązanie
  Aby obejść ten problem, wykonaj następujące czynności:
 
-1.  Zainstaluj aktualizację KB967535, zgodnie z opisem w artykule firmy Microsoft Support [NAPRAW: Poprawka jest dostępna rozwiązać dwa problemy w programie ASP.NET przez usługi IIS 7.0, Windows Vista i Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
+1. Zainstaluj aktualizację KB967535, zgodnie z opisem w artykule firmy Microsoft Support [NAPRAW: Poprawka jest dostępna rozwiązać dwa problemy w programie ASP.NET przez usługi IIS 7.0, Windows Vista i Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
 
-2.  Dodaj następujący wiersz do pliku Web.config:
+2. Dodaj następujący wiersz do pliku Web.config:
 
     ```xml
     <compilation batch="false" optimizeCompilations="true">

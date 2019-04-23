@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 412dee9ec920d4d94e2b4f2f176d1b1634a34eef
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0206f01df517c2dbd0c1c4052201dc8ded1bcbf9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648903"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115682"
 ---
 # <a name="runexit-devenvexe"></a>/Runexit (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ devenv /runexit {SolutionName|ProjectName}
 ## <a name="remarks"></a>Uwagi  
  Kompiluje i uruchamia określony projekt lub rozwiązanie, zgodnie z ustawieniami określonymi dla aktywnej konfiguracji rozwiązania. Ten przełącznik minimalizuje IDE, podczas projektu lub rozwiązania jest uruchomiona i zamknięcie IDE po projektu lub rozwiązania zakończy działanie.  
   
--   Należy ująć ciągi zawierające spacje w podwójny cudzysłów.  
+- Należy ująć ciągi zawierające spacje w podwójny cudzysłów.  
   
--   Podsumowanie informacji, w tym błędy, mogą być wyświetlane w **polecenia** okno lub pliku dziennika określony za pomocą `/out` przełącznika.  
+- Podsumowanie informacji, w tym błędy, mogą być wyświetlane w **polecenia** okno lub pliku dziennika określony za pomocą `/out` przełącznika.  
   
 ## <a name="example"></a>Przykład  
  W tym przykładzie uruchamia rozwiązanie `MySolution` w trybie zminimalizowanym IDE przy użyciu konfiguracji aktywnego wdrożenia, a następnie zamyka IDE.  

@@ -1,5 +1,5 @@
 ---
-title: 'CA3001: Przegląd kodu dla iniekcją SQL'
+title: 'CA3001: Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu SQL'
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: b743fa6c7c3189cd062328ab003f9eabe7874de9
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018834"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109221"
 ---
-# <a name="ca3001-review-code-for-sql-injection-vulnerabilities"></a>CA3001: Przegląd kodu dla iniekcją SQL
+# <a name="ca3001-review-code-for-sql-injection-vulnerabilities"></a>CA3001: Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu SQL
 
 |||
 |-|-|

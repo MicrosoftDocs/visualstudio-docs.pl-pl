@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20ca03e8d7a3c574501d879cf9949d26fd7ba3a3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7e62e397bd9f8c2a0e8e8c8b7ed6581e289a9efc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56595740"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113875"
 ---
 # <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>Instrukcje: Programowe przenoszenie arkuszy w obrębie skoroszytu
   Można programowo zmienić położenie arkuszy względem innych arkuszy w skoroszycie. Jeśli nie określisz lokalizacji przenoszony arkusz Excel utworzy nowy skoroszyt zawiera go.
@@ -27,14 +27,14 @@ ms.locfileid: "56595740"
 
 ## <a name="to-move-a-worksheet-in-a-document-level-customization"></a>Aby przenieść arkusza w dostosowaniu na poziomie dokumentu
 
-1.  Przypisz całkowita liczba arkuszy w skoroszycie do zmiennej, a następnie przenieś pierwszego arkusza, tak, aby stał się ostatni z nich.
+1. Przypisz całkowita liczba arkuszy w skoroszycie do zmiennej, a następnie przenieś pierwszego arkusza, tak, aby stał się ostatni z nich.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#24](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#24)]
      [!code-vb[Trin_VstcoreExcelAutomation#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#24)]
 
 ## <a name="to-move-a-worksheet-in-a-vsto-add-in"></a>Aby przenieść arkusza w dodatku narzędzi VSTO
 
-1.  Przypisz całkowita liczba arkuszy w skoroszycie do zmiennej, a następnie przenieś pierwszego arkusza, tak, aby stał się ostatni z nich.
+1. Przypisz całkowita liczba arkuszy w skoroszycie do zmiennej, a następnie przenieś pierwszego arkusza, tak, aby stał się ostatni z nich.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#16](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#16)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#16](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#16)]

@@ -8,12 +8,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ab2925024fdf9e4f0b4e93db34b375b89933a48
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ddbcac3073dec1e7f21d381d30978589f1cdd792
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58155946"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113914"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Stosowanie podkładek do izolowania aplikacji od innych zestawów w celu przeprowadzania testów jednostkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Typy podkładek ** są jedną z dwóch technologii używanych struktura sztuczny
   
   Zobacz [wideo (1 godz. 16): Testowanie kodu bez sprawdzalnego działa zgodnie z substytutami w programie Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
   
-##  <a name="BKMK_Example__The_Y2K_bug"></a> Przykład: Błąd Y2K  
+## <a name="BKMK_Example__The_Y2K_bug"></a> Przykład: Błąd Y2K  
  Rozważmy metodę, która zgłosiła wyjątek na 1 stycznia 2000:  
   
 ```csharp  
@@ -62,19 +62,19 @@ using (ShimsContext.Create()
   
 ```  
   
-##  <a name="BKMK_Fakes_requirements"></a> Jak używać podkładek  
+## <a name="BKMK_Fakes_requirements"></a> Jak używać podkładek  
   
-###  <a name="AddFakes"></a> Dodaj zestawy elementów sztucznych  
+### <a name="AddFakes"></a> Dodaj zestawy elementów sztucznych  
   
-1.  W Eksploratorze rozwiązań rozwiń projekt testów jednostkowych **odwołania**.  
+1. W Eksploratorze rozwiązań rozwiń projekt testów jednostkowych **odwołania**.  
   
-    -   Jeśli pracujesz w języku Visual Basic, musisz wybrać **Pokaż wszystkie pliki** na pasku narzędzi Eksploratora rozwiązań, aby zobaczyć listę odwołań.  
+    - Jeśli pracujesz w języku Visual Basic, musisz wybrać **Pokaż wszystkie pliki** na pasku narzędzi Eksploratora rozwiązań, aby zobaczyć listę odwołań.  
   
-2.  Wybierz zestaw zawierający definicje klas, dla których chcesz utworzyć podkładki. Na przykład jeśli chcesz chciał podłożyć daty/godziny, wybierz opcję System.dll  
+2. Wybierz zestaw zawierający definicje klas, dla których chcesz utworzyć podkładki. Na przykład jeśli chcesz chciał podłożyć daty/godziny, wybierz opcję System.dll  
   
-3.  W menu skrótów wybierz **Dodaj zestawy Substytuowane**.  
+3. W menu skrótów wybierz **Dodaj zestawy Substytuowane**.  
   
-###  <a name="ShimsContext"></a> Użyj ShimsContext  
+### <a name="ShimsContext"></a> Użyj ShimsContext  
  Używając typy podkładek w środowiska testów jednostkowych, należy wpisać kod testowy w `ShimsContext` kontrolować okres istnienia usługi podkładki. Jeśli firma Microsoft nie wymaga to, Twoje podkładki będzie wystarczą do momentu zamknięcia elementu AppDomain. Najprostszym sposobem utworzenia `ShimsContext` przy użyciu statycznych `Create()` metody, jak pokazano w poniższym kodzie:  
   
 ```csharp  
@@ -90,7 +90,7 @@ public void Y2kCheckerTest() {
   
  Koniecznie prawidłowo dispose w każdym kontekście podkładki. Jako ogólną regułę można przyjąć, zawsze wywołuj `ShimsContext.Create` wewnątrz `using` instrukcję, aby zapewnić właściwe rozliczanie zarejestrowanych podkładki. Na przykład, możesz zarejestrować podkładki dla metody testowej, która zastępuje `DateTime.Now` metody delegata, która zawsze zwraca pierwszy stycznia 2000. Jeśli zapomnisz wyczyść zarejestrowanych podkładki w metodzie testowej, pozostała część przebiegu testu zawsze zwróci wartość pierwszego 2000 stycznia jako DateTime.Now. Może to być suprising i kłopotliwe.  
   
-###  <a name="WriteShims"></a> Napisać test podkładek  
+### <a name="WriteShims"></a> Napisać test podkładek  
  W kodzie testowym Wstaw *przekierowania* dla metody, którą chcesz substytuować. Na przykład:  
   
 ```csharp  
@@ -159,10 +159,10 @@ End Class
   
  Możesz zobaczyć kompilacji o błędzie informującym, przestrzeń nazw elementów sztucznych nie istnieje. Ten błąd pojawia się czasami, gdy istnieją inne błędy kompilacji. Usuń inne błędy, a jego będą dopasowywane.  
   
-##  <a name="BKMK_Shim_basics"></a> Podkładki dla różnych rodzajów metod  
+## <a name="BKMK_Shim_basics"></a> Podkładki dla różnych rodzajów metod  
  Typy podkładek umożliwiają Zastąp dowolnej metody .NET, w tym metod statycznych i metod niewirtualnych, za pomocą własnych obiektów delegowanych.  
   
-###  <a name="BKMK_Static_methods"></a> Metody statyczne  
+### <a name="BKMK_Static_methods"></a> Metody statyczne  
  Właściwości, aby dołączyć podkładek do metody statyczne są umieszczane w typu shim. Każda właściwość ma setter, który może służyć do dołączania obiekt delegowany do metody docelowej. Na przykład, biorąc klasy `MyClass` przy użyciu statycznej metody `MyMethod`:  
   
 ```csharp  
@@ -181,7 +181,7 @@ public static class MyClass {
 ShimMyClass.MyMethod = () =>5;  
 ```  
   
-###  <a name="BKMK_Instance_methods__for_all_instances_"></a> Metody wystąpienia (dla wszystkich wystąpień)  
+### <a name="BKMK_Instance_methods__for_all_instances_"></a> Metody wystąpienia (dla wszystkich wystąpień)  
  Podobnie do metody statyczne metody wystąpienia można można użyć podkładki dla wszystkich wystąpień. Właściwości, które można dołączyć te podkładek są umieszczane w zagnieżdżony typ o nazwie wszystkich wystąpień, aby uniknąć mylenia go. Na przykład, biorąc klasy `MyClass` z metodą wystąpienia `MyMethod`:  
   
 ```csharp  
@@ -217,7 +217,7 @@ public class ShimMyClass : ShimBase<MyClass> {
   
  Należy zauważyć, że elementów sztucznych przekazuje wystąpienie środowiska IR w tym przypadku jako pierwszy argument delegata.  
   
-###  <a name="BKMK_Instance_methods__for_one_instance_"></a> Wystąpienie metody (jedno wystąpienie środowiska wykonawczego)  
+### <a name="BKMK_Instance_methods__for_one_instance_"></a> Wystąpienie metody (jedno wystąpienie środowiska wykonawczego)  
  Metody wystąpienia można również można użyć podkładki dla przez różne delegatów, oparte na odbiorcy wywołania. Dzięki temu tej samej metody wystąpienia, można mieć różne ustawienia dla każdego wystąpienia tego typu. Właściwości, aby skonfigurować te ustawienia są metody wystąpienia samego typu shim. Każdy typ podkładki wystąpień jest również skojarzony z wystąpieniem pierwotnych z typem zastąpionym podkładką.  
   
  Na przykład, biorąc klasy `MyClass` z metodą wystąpienia `MyMethod`:  
@@ -277,7 +277,7 @@ MyClass instance = shim; // implicit cast retrieves the runtime
                          // instance  
 ```  
   
-###  <a name="BKMK_Constructors"></a> Konstruktory  
+### <a name="BKMK_Constructors"></a> Konstruktory  
  Konstruktory mogą również można użyć podkładki dla Aby dołączyć typy podkładek do obiektów w przyszłości. Każdy Konstruktor jest ujawniona jako statycznej metody konstruktora do typu shim. Na przykład, biorąc klasy `MyClass` przy użyciu konstruktora, biorąc liczbą całkowitą:  
   
 ```csharp  
@@ -327,7 +327,7 @@ public class ShimMyClass : ShimBase<MyClass>
 }  
 ```  
   
-###  <a name="BKMK_Base_members"></a> Składowe bazowe  
+### <a name="BKMK_Base_members"></a> Składowe bazowe  
  Tworząc podkładki dla typu podstawowego, a następnie przekazując wystąpienia podrzędne jako parametr do konstruktora klasy bazowej podkładki można uzyskać dostępu do właściwości podkładki elementów podstawowych.  
   
  Na przykład, biorąc klasy `MyBase` z metodą wystąpienia `MyMethod` i podtypem `MyChild`:  
@@ -370,16 +370,16 @@ public class ShimMyBase : ShimBase<MyBase> {
 }  
 ```  
   
-###  <a name="BKMK_Static_constructors"></a> Konstruktory statyczne  
+### <a name="BKMK_Static_constructors"></a> Konstruktory statyczne  
  Typy podkładek ujawnia metody statyczne `StaticConstructor` chciał podłożyć statyczne konstruktora typu. Ponieważ konstruktory statyczne są wykonywane, gdy tylko, musisz upewnić się, że podkładka jest skonfigurowana, przed uzyskaniem dostępu do dowolnego członka typu.  
   
-###  <a name="BKMK_Finalizers"></a> Finalizatory  
+### <a name="BKMK_Finalizers"></a> Finalizatory  
  Finalizatory nie są obsługiwane w Fakes.  
   
-###  <a name="BKMK_Private_methods"></a> Metody prywatne  
+### <a name="BKMK_Private_methods"></a> Metody prywatne  
  Generator kodu pozornego spowoduje to utworzenie właściwości podkładki dla metody prywatne, którzy mają tylko typy widoczne dla podpisu, czyli typy parametrów i zwracany typ jest widoczny.  
   
-###  <a name="BKMK_Binding_interfaces"></a> Interfejsy powiązania  
+### <a name="BKMK_Binding_interfaces"></a> Interfejsy powiązania  
  Gdy typem zastąpionym podkładką implementuje interfejs, generator kodu emituje metodę, która umożliwi jednocześnie powiązać wszystkie elementy członkowskie z tego interfejsu.  
   
  Na przykład, biorąc klasy `MyClass` implementującej `IEnumerable<int>`:  
@@ -415,7 +415,7 @@ public class ShimMyClass : ShimBase<MyClass> {
   
 ```  
   
-##  <a name="BKMK_Changing_the_default_behavior"></a> Zmiana domyślnego zachowania  
+## <a name="BKMK_Changing_the_default_behavior"></a> Zmiana domyślnego zachowania  
  Każdy typ podkładki wygenerowanego posiada wystąpienie `IShimBehavior` interfejs, za pomocą `ShimBase<T>.InstanceBehavior` właściwości. To zachowanie jest używana zawsze, gdy klient wywołuje element członkowski wystąpienia, który nie został jawnie obsługiwane.  
   
  Jeśli zachowanie nie została jawnie ustawiona, zostanie użyty wystąpienia zwróconą przez statyczną `ShimsBehaviors.Current` właściwości. Domyślnie właściwość ta zwraca zachowanie, które zgłasza `NotImplementedException` wyjątku.  
@@ -441,7 +441,7 @@ ShimsBehaviors.Current =
   
 ```  
   
-##  <a name="BKMK_Detecting_environment_accesses"></a> Uzyskuje dostęp do środowiska wykrywanie  
+## <a name="BKMK_Detecting_environment_accesses"></a> Uzyskuje dostęp do środowiska wykrywanie  
  Istnieje możliwość dołączyć zachowanie dla wszystkich członków, w tym metody statyczne, określonego typu, przypisując `ShimsBehaviors.NotImplemented` zachowanie, aby właściwość statyczna `Behavior` odpowiedniego typu shim:  
   
 ```csharp  
@@ -453,10 +453,10 @@ ShimMyClass.BehaveAsNotImplemented();
   
 ```  
   
-##  <a name="BKMK_Concurrency"></a> Współbieżność  
+## <a name="BKMK_Concurrency"></a> Współbieżność  
  Typy podkładek stosowane do wszystkich wątków w domenie aplikacji i braku koligacji wątku. Jest to ważne faktów, jeśli planujesz użyć modułu uruchamiającego testy, która obsługuje współbieżność: testy obejmujące typy podkładek, nie można uruchomić jednocześnie. Ta właściwość nie jest enfored w czasie wykonywania elementów sztucznych.  
   
-##  <a name="BKMK_Calling_the_original_method_from_the_shim_method"></a> Wywoływanie oryginalną metodę z metodą podkładki  
+## <a name="BKMK_Calling_the_original_method_from_the_shim_method"></a> Wywoływanie oryginalną metodę z metodą podkładki  
  Wyobraź sobie, że Chcieliśmy, aby faktycznie wpisać tekst w systemie plików, po sprawdzania poprawności nazwy pliku przekazywany do metody. W takiej sytuacji firma Microsoft będzie chciała wywołać oryginalnej metody w środku metoda podkładki.  
   
  Pierwszym sposobem, aby rozwiązać ten problem jest powodującą otoczenie wywołania do oryginalnej metody za pomocą delegata i `ShimsContext.ExecuteWithoutShims()` zgodnie z poniższym kodem:  
@@ -498,7 +498,7 @@ ShimFile.WriteAllTextStringString = shim;
   
 ```  
   
-##  <a name="BKMK_Limitations"></a> Ograniczenia  
+## <a name="BKMK_Limitations"></a> Ograniczenia  
  Nie można użyć podkładki dla wszystkich typów z biblioteki klas podstawowych platformy .NET **mscorlib** i **systemu**.  
   
 ## <a name="external-resources"></a>Zasoby zewnętrzne  

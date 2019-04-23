@@ -11,12 +11,12 @@ ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8bff060ed373c4158afe8848ac248e8d28da38b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 705e0fa821000716dc9cd729901fbb7db5fd759c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779917"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117723"
 ---
 # <a name="mssccprjscc-file"></a>Plik MSSCCPRJ.SCC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ Umieszczeniem rozwiązania programu Visual Studio lub projektu objętego kontrol
   
  Wtyczka do kontroli źródła obsługującego MSSCCPRJ. Plik SCC muszą być zgodne z następującymi zasadami:  
   
--   Może istnieć tylko jeden MSSCCPRJ. Plik SCC dla katalogu.  
+- Może istnieć tylko jeden MSSCCPRJ. Plik SCC dla katalogu.  
   
--   MSSCCPRJ. Plik SCC może zawierać "AuxPath" i "ProjName", w przypadku wielu plików, które są pod kontrolą źródła w danym katalogu.  
+- MSSCCPRJ. Plik SCC może zawierać "AuxPath" i "ProjName", w przypadku wielu plików, które są pod kontrolą źródła w danym katalogu.  
   
--   Ciąg "AuxPath" nie może mieć cudzysłowy wewnątrz niego. Może on być ma ją w cudzysłowie jako ograniczników (na przykład para podwójnych cudzysłowów służy do wskazania ciągiem pustym). Środowisko IDE będzie paska wszystkich ofert z ciągu "AuxPath" przeczytaniu z MSSCCPRJ. Plik SCC.  
+- Ciąg "AuxPath" nie może mieć cudzysłowy wewnątrz niego. Może on być ma ją w cudzysłowie jako ograniczników (na przykład para podwójnych cudzysłowów służy do wskazania ciągiem pustym). Środowisko IDE będzie paska wszystkich ofert z ciągu "AuxPath" przeczytaniu z MSSCCPRJ. Plik SCC.  
   
--   Ciąg "ProjName" w MSSCCPRJ. Plik SCC musi być zgodna dokładnie ciąg zwracany z `SccGetProjPath` funkcji. Jeśli ciąg zwracany przez funkcję ma ją ciąg w MSSCCPRJ w cudzysłowie. Plik SCC musi mieć cudzysłowów wokół niej i na odwrót.  
+- Ciąg "ProjName" w MSSCCPRJ. Plik SCC musi być zgodna dokładnie ciąg zwracany z `SccGetProjPath` funkcji. Jeśli ciąg zwracany przez funkcję ma ją ciąg w MSSCCPRJ w cudzysłowie. Plik SCC musi mieć cudzysłowów wokół niej i na odwrót.  
   
--   MSSCCPRJ. SCC pliku jest tworzony lub aktualizowany, gdy plik zostanie umieszczony pod kontrolą źródła.  
+- MSSCCPRJ. SCC pliku jest tworzony lub aktualizowany, gdy plik zostanie umieszczony pod kontrolą źródła.  
   
--   Jeśli MSSCCPRJ. Plik SCC zostaje usunięte, dostawcy należy ponownie wygenerować go następnym razem wykonuje operacja kontroli źródła, dotyczących tego katalogu.  
+- Jeśli MSSCCPRJ. Plik SCC zostaje usunięte, dostawcy należy ponownie wygenerować go następnym razem wykonuje operacja kontroli źródła, dotyczących tego katalogu.  
   
--   MSSCCPRJ. Plik SCC musi ścisłe zdefiniowanym formacie.  
+- MSSCCPRJ. Plik SCC musi ścisłe zdefiniowanym formacie.  
   
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Ilustracja MSSCCPRJ. Format pliku SCC  
  Poniżej przedstawiono przykładowe MSSCCPRJ. Format pliku SCC (numery wierszy są podane tylko jako wskazówki i nie powinny znajdować się w treści pliku):  

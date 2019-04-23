@@ -12,11 +12,11 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: cf9125476a4fdc369cc22034e081f2151020f064
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366344"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109897"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Publikowanie w usłudze Azure App Service na Windows
 

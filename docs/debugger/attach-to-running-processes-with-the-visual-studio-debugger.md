@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dad698f2ba660b6848e614f13751335894a17ae0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f810761d088eaf6ec94524a7d76ec255c931686b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366409"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115162"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Dołączanie do uruchomionego procesu za pomocą debugera programu Visual Studio
 Debuger programu Visual Studio można dołączyć do procesu uruchomionego na komputerze lokalnym lub zdalnym. Po uruchomieniu procesu wybierz **debugowania** > **dołączyć do procesu** lub naciśnij **Ctrl**+**Alt** + **P** w programie Visual Studio oraz za pomocą **dołączyć do procesu** okno dialogowe, aby dołączyć debuger do procesu.
@@ -43,7 +43,7 @@ Możesz użyć **dołączyć do procesu** Aby debugować aplikacje uruchomione n
 > [!TIP]
 > Nie masz pewności czy użyć **dołączyć do procesu** dla danego scenariusza debugowania? Zobacz [typowych scenariuszy debugowania](#BKMK_Scenarios).
 
-##  <a name="BKMK_Attach_to_a_running_process"></a> Dołączanie do uruchomionego procesu na komputerze lokalnym
+## <a name="BKMK_Attach_to_a_running_process"></a> Dołączanie do uruchomionego procesu na komputerze lokalnym
 
 Szybko ponownie dołączyć do procesu dołączona do wcześniej, zobacz [ponownie dołączyć do procesu](#BKMK_reattach).
 
@@ -79,7 +79,7 @@ Aby debugować proces na komputerze zdalnym, zobacz [dołączyć do procesu na k
 >[!NOTE]
 >Użytkownik może zostać dołączony do wielu aplikacji na potrzeby debugowania, ale tylko jednej aplikacji jest aktywny w debugerze w danym momencie. Można ustawić aktywnej aplikacji w programie Visual Studio **Lokalizacja debugowania** paska narzędzi lub **procesy** okna.
 
-##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Dołącz do procesu na komputerze zdalnym
+## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Dołącz do procesu na komputerze zdalnym
 
 Możesz również wybrać komputer zdalny w **dołączyć do procesu** okno dialogowe, wyświetlić listę dostępnych procesów uruchomionych na tym komputerze i dołączyć do jednego lub kilku procesów debugowania. Zdalny debuger (*msvsmon.exe*) musi być uruchomiona na komputerze zdalnym. Aby uzyskać więcej informacji, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).
 
@@ -186,7 +186,7 @@ W przypadku scenariuszy debugowania zdalnego musi mieć kod źródłowy (lub kop
 
 W niektórych scenariuszach debugowania lokalnego można debugować w programie Visual Studio bez dostępu do źródła, jeśli pliki symboli poprawne znajdują się w aplikacji. Domyślnie ta migracja wymaga kompilacji debugowania. Aby uzyskać więcej informacji, zobacz [określanie plików symboli i źródeł](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-##  <a name="BKMK_Troubleshoot_attach_errors"></a> Rozwiązywanie problemów z błędami dołączenia
+## <a name="BKMK_Troubleshoot_attach_errors"></a> Rozwiązywanie problemów z błędami dołączenia
  Gdy debuger jest dołączony do uruchomionego procesu, proces może zawierać jeden lub więcej typów kodu. Typy kodu, do których może dołączyć debuger do są wyświetlane i zaznaczone w **Wybieranie typu kodu** okno dialogowe.
 
  Czasami debuger może pomyślnie dołączyć do jednego typu kodu, ale nie do innego typu kodu. Taka sytuacja może wystąpić, jeśli próbujesz dołączyć do procesu, który jest uruchomiony na komputerze zdalnym. Komputer zdalny może mieć zainstalowane dla niektórych typów kodu, ale nie dla innych składniki debugowania zdalnego. Może również wystąpić, jeśli próbujesz dołączyć do dwóch lub więcej rpocesów do bezpośredniego debugowania bazy danych. Debugowanie SQL obsługuje dołączanie do tylko jednego procesu.
@@ -199,19 +199,19 @@ W niektórych scenariuszach debugowania lokalnego można debugować w programie 
 
  **Aby uzyskać szczegółowe informacje na temat przyczyny niepowodzenia dołączenia typu kodu:**
 
-1.  Odłączyć od procesu. Na **debugowania** menu, wybierz opcję **Odłącz wszystkie**.
+1. Odłączyć od procesu. Na **debugowania** menu, wybierz opcję **Odłącz wszystkie**.
 
-1.  Ponownie Dołącz do procesu, wybierając tylko typy kodu, których nie można dołączyć.
+1. Ponownie Dołącz do procesu, wybierając tylko typy kodu, których nie można dołączyć.
 
-    1.  W **dołączyć do procesu** okna dialogowego Wybierz ten proces w **dostępne procesy** listy.
+    1. W **dołączyć do procesu** okna dialogowego Wybierz ten proces w **dostępne procesy** listy.
 
-    2.  Wybierz **wybierz**.
+    2. Wybierz **wybierz**.
 
-    3.  W **Wybieranie typu kodu** okno dialogowe, wybierz **debugowania tych typów kodu** i typy kodu, których nie można dołączyć. Usuń zaznaczenie innych typów kodu.
+    3. W **Wybieranie typu kodu** okno dialogowe, wybierz **debugowania tych typów kodu** i typy kodu, których nie można dołączyć. Usuń zaznaczenie innych typów kodu.
 
-    4.  Wybierz **OK**.
+    4. Wybierz **OK**.
 
-    5.  W **dołączyć do procesu** okno dialogowe, wybierz opcję **Dołącz**.
+    5. W **dołączyć do procesu** okno dialogowe, wybierz opcję **Dołącz**.
 
     Tym razem dołączanie nie powiedzie się całkowicie i otrzymasz komunikat o błędzie.
 

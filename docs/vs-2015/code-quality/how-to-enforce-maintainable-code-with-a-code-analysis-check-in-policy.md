@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5676bfaabb20ebf6dabea7bae66527d17891b362
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 27593a450f7c2a1b34c1c84bc1d4e7ea5bb5919f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753020"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091879"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Instrukcje: Wymuszanie kodu łatwego w utrzymaniu za pomocą zasad ewidencjonowania analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,35 +29,35 @@ Deweloperzy mogą używać narzędzia metryki kodu do mierzenie złożoności i 
   
 ### <a name="to-open-the-code-analysis-policy-editor"></a>Aby otworzyć Edytor zasad analizy kodu  
   
-1.  W **Team Explorer**, kliknij prawym przyciskiem myszy projekt zespołowy, kliknij przycisk **ustawienia projektu zespołowego**, a następnie kliknij przycisk **kontroli źródła**.  
+1. W **Team Explorer**, kliknij prawym przyciskiem myszy projekt zespołowy, kliknij przycisk **ustawienia projektu zespołowego**, a następnie kliknij przycisk **kontroli źródła**.  
   
      **Kontroli źródła** pojawi się okno dialogowe.  
   
-2.  Na **zasad ewidencjonowania** kartę, a następnie kliknij przycisk **Dodaj**.  
+2. Na **zasad ewidencjonowania** kartę, a następnie kliknij przycisk **Dodaj**.  
   
      **Dodaj zasady ewidencjonowania** pojawi się okno dialogowe.  
   
-3.  W **zasad ewidencjonowania** listy wybierz **analizy kodu** pole wyboru, a następnie kliknij przycisk **OK**.  
+3. W **zasad ewidencjonowania** listy wybierz **analizy kodu** pole wyboru, a następnie kliknij przycisk **OK**.  
   
      **Edytor zasad analizy kodu** pojawi się okno dialogowe.  
   
 ### <a name="to-enable-code-analysis-maintainability-rules"></a>Aby włączyć reguły utrzymania kodu analizy kodu  
   
-1.  W **Edytor zasad analizy kodu** dialogowego **ustawienia reguły**, rozwiń węzeł **reguły utrzymania kodu** węzła.  
+1. W **Edytor zasad analizy kodu** dialogowego **ustawienia reguły**, rozwiń węzeł **reguły utrzymania kodu** węzła.  
   
-2.  Zaznacz pola wyboru dla następujących reguł:  
+2. Zaznacz pola wyboru dla następujących reguł:  
   
-    -   Głębokość dziedziczenia: **CA1501 AvoidExcessiveInheritance** -progu: Ostrzeżenie o więcej niż 5 poziomów w głąb  
+    - Głębokość dziedziczenia: **CA1501 AvoidExcessiveInheritance** -progu: Ostrzeżenie o więcej niż 5 poziomów w głąb  
   
-    -   Złożoność: **CA1502 AvoidExcessiveComplexity** -progu: Ostrzeżenie na więcej niż 25  
+    - Złożoność: **CA1502 AvoidExcessiveComplexity** -progu: Ostrzeżenie na więcej niż 25  
   
-    -   Indeks łatwości utrzymania: **CA1505 AvoidUnmaintainableCode** - Threshold: Ostrzeżenie w mniej niż 20  
+    - Indeks łatwości utrzymania: **CA1505 AvoidUnmaintainableCode** - Threshold: Ostrzeżenie w mniej niż 20  
   
-    -   Sprzężenia klas: **CA1506 AvoidExcessiveClassCoupling** - Threshold: Ostrzeżenie na więcej niż 80 dla klasy i więcej niż 30 dla metody  
+    - Sprzężenia klas: **CA1506 AvoidExcessiveClassCoupling** - Threshold: Ostrzeżenie na więcej niż 80 dla klasy i więcej niż 30 dla metody  
   
-    -   Ponadto naruszenie reguły, aby uniemożliwić kompilacji, wybierz **Traktuj ostrzeżenie jako błąd** pole wyboru obok opis reguły.  
+    - Ponadto naruszenie reguły, aby uniemożliwić kompilacji, wybierz **Traktuj ostrzeżenie jako błąd** pole wyboru obok opis reguły.  
   
-3.  Kliknij przycisk **OK**. Nowe zasady ewidencjonowania dotyczy teraz przyszłych zaewidencjonowania.  
+3. Kliknij przycisk **OK**. Nowe zasady ewidencjonowania dotyczy teraz przyszłych zaewidencjonowania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wartości metryk kodów](../code-quality/code-metrics-values.md)   

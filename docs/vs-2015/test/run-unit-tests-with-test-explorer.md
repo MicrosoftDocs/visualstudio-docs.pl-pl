@@ -10,19 +10,19 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c8894239e1e1dd3979b9bb7c61e5aa1f294fe2b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bfadcb962e63a38f4f8190c2dd9c02f4e2ac4643
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805111"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107999"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Eksplorator testów umożliwia uruchamianie testów jednostkowych z Visual Studio lub projektów testów jednostkowych innych firm, grupowanie testów w kategorie, filtrowanie listy testów, tworzenie, zapisywanie i uruchamianie list odtwarzania testów. Możesz również debugować testy i analizowanie testów wydajność i pokrycie kodu.  
   
-##  <a name="BKMK_Contents"></a> Zawartość  
+## <a name="BKMK_Contents"></a> Zawartość  
  [Framework testów jednostkowych i projekty testowe](#BKMK_Unit_test_frameworks_and_test_projects)  
   
  [Uruchom testy w Eksploratorze testów](#BKMK_Run_tests_in_Test_Explorer)  
@@ -37,14 +37,14 @@ Eksplorator testów umożliwia uruchamianie testów jednostkowych z Visual Studi
   
  [Zasoby zewnętrzne](#BKMK_External_resources)  
   
-##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Framework testów jednostkowych i projekty testowe  
+## <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Framework testów jednostkowych i projekty testowe  
  Program Visual Studio obejmuje struktur testowania jednostek pochodzących od firmy Microsoft dla kodu zarządzanego i natywnego. Jednak Test Explorer można również uruchomić dowolnej jednostki struktury testów, które ma zaimplementowany adapter programu Test Explorer. Aby uzyskać więcej informacji na temat Instalowanie platform testów jednostkowych innych firm, zobacz [instalowanie platform testów jednostkowych innych firm](../test/install-third-party-unit-test-frameworks.md)  
   
  Eksplorator testów może uruchamiać testy z wielu projektów testów w rozwiązaniu i z klas testowych, które są częścią projektów kodu produkcyjnego. Projekty testów mogą używać innych struktur testów jednostek. Jeśli testowany kod jest przeznaczony dla .NET Framework, Projekt testowy można napisać tak w dowolnym języku, który również jest przeznaczony dla .NET Framework, bez względu na język docelowy kodu. Natywnych projektów kodu C/C++ muszą być przetestowany przy użyciu struktury testowej jednostki C++.  
   
  ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
-##  <a name="BKMK_Run_tests_in_Test_Explorer"></a> Uruchom testy w Eksploratorze testów  
+## <a name="BKMK_Run_tests_in_Test_Explorer"></a> Uruchom testy w Eksploratorze testów  
  [Uruchom testy](#BKMK_Run_tests) **&#124;** [uruchamiania testów po każdej kompilacji](#BKMK_Run_tests_after_every_build)  
   
  Podczas tworzenia projektu testowego, testy są wyświetlane w Eksploratorze testów. Eksplorator testów nie jest widoczny, wybierz opcję **testu** menu programu Visual Studio, wybierz **Windows**, a następnie wybierz **Eksplorator testów**.  
@@ -59,7 +59,7 @@ Eksplorator testów umożliwia uruchamianie testów jednostkowych z Visual Studi
   
  ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
-###  <a name="BKMK_Run_tests"></a> Uruchom testy  
+### <a name="BKMK_Run_tests"></a> Uruchom testy  
  Można uruchomić wszystkie testy w rozwiązaniu, wszystkie testy w grupie lub zestaw testów, które można wybrać. Wykonaj jedną z następujących czynności:  
   
 - Aby uruchomić wszystkie testy w rozwiązaniu, wybierz **Uruchom wszystkie**.  
@@ -74,7 +74,7 @@ Eksplorator testów umożliwia uruchamianie testów jednostkowych z Visual Studi
   
   ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
-###  <a name="BKMK_Run_tests_after_every_build"></a> Uruchamianie testów po każdej kompilacji  
+### <a name="BKMK_Run_tests_after_every_build"></a> Uruchamianie testów po każdej kompilacji  
   
 > [!WARNING]
 >  Uruchamianie testów jednostek po każdej kompilacji jest obsługiwane w programie Visual Studio Enterprise.  
@@ -85,12 +85,12 @@ Eksplorator testów umożliwia uruchamianie testów jednostkowych z Visual Studi
   
  ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
-##  <a name="BKMK_View_test_results"></a> Wyświetlanie wyników testu  
+## <a name="BKMK_View_test_results"></a> Wyświetlanie wyników testu  
  [Wyświetl szczegóły testu](#BKMK_View_test_details) **&#124;** [wyświetlić kodu źródłowego metody badawczej](#BKMK_View_the_source_code_of_a_test_method)  
   
  Podczas przeprowadzania, zapisywania i ponownego przeprowadzania testów Test Explorer wyświetla wyniki w grupach **testy zakończone niepomyślnie**, **testy zakończone powodzeniem**, **testy pominięte** i **nie uruchomione Testy**. Uruchom Podsumowanie testu w dolnej części Eksploratora testów jest wyświetlane w okienku szczegółów.  
   
-###  <a name="BKMK_View_test_details"></a> Pokaż szczegóły testu  
+### <a name="BKMK_View_test_details"></a> Pokaż szczegóły testu  
  Aby wyświetlić szczegółowe informacje o poszczególnych testach, wybierz test.  
   
  ![Szczegóły wykonywania testu](../test/media/ute-testdetails.png "UTE_TestDetails")  
@@ -111,17 +111,17 @@ Eksplorator testów umożliwia uruchamianie testów jednostkowych z Visual Studi
   
   ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
-###  <a name="BKMK_View_the_source_code_of_a_test_method"></a> Wyświetlanie kodu źródłowego metody badawczej  
+### <a name="BKMK_View_the_source_code_of_a_test_method"></a> Wyświetlanie kodu źródłowego metody badawczej  
  Aby wyświetlić kod źródłowy metody testowej w edytorze programu Visual Studio, wybierz test, a następnie wybierz **Otwórz Test** w menu kontekstowym (klawiatura: F12).  
   
  ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
-##  <a name="BKMK_Group_and_filter_the_test_list"></a> Grupuj i Filtruj listę testów  
+## <a name="BKMK_Group_and_filter_the_test_list"></a> Grupuj i Filtruj listę testów  
  [Grupowanie listy testów](#BKMK_Grouping_the_test_list) **&#124;** [Grupuj według cech](#BKMK_Group_by_traits) **&#124;** [wyszukiwania i filtrowania listy testów](#BKMK_Search_and_filter_the_test_list)  
   
  Eksplorator testów umożliwia grupowanie testów we wstępnie zdefiniowanych kategorii. Większość struktur testów jednostek, które działają w eksplorerze testu, można zdefiniować własne kategorie i kategorię/wartość pary do grupowania testu. Można również filtrować listę testów, za pomocą dopasowywania ciągów do właściwości testów.  
   
-###  <a name="BKMK_Grouping_the_test_list"></a> Grupowanie listy testów  
+### <a name="BKMK_Grouping_the_test_list"></a> Grupowanie listy testów  
  Aby zmienić sposób zorganizowania testów, wybierz strzałkę w dół **Group By** przycisk ![przycisk grupy Eksploratora testów](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn") i wybierz pozycję nowe grupowania kryteria.  
   
  ![Grupuj testy według kategorii w Eksploratorze testów](../test/media/ute-groupbycategory.png "UTE_GroupByCategory")  
@@ -137,7 +137,7 @@ Eksplorator testów umożliwia uruchamianie testów jednostkowych z Visual Studi
   
  ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
-###  <a name="BKMK_Group_by_traits"></a> Grupowanie według cech  
+### <a name="BKMK_Group_by_traits"></a> Grupowanie według cech  
  Cecha jest zazwyczaj pary nazwa/wartość kategorii, ale może też być jednej kategorii. Cechy mogą być przypisane do metod, które są identyfikowane jako metoda testowa przez strukturę testu jednostki. Struktura testu jednostkowego może określać kategorie cech. Można dodać wartości do kategorii cech w celu zdefiniowania własnych par nazwa/wartość kategorii. Składnia określająca kategorie i wartości cech jest zdefiniowana przez strukturę testu jednostki.  
   
  **Cechy w Microsoft testowania jednostkowego dla zarządzanego kodu**  
@@ -185,7 +185,7 @@ TEST_METHOD(Method1)
   
  ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
-###  <a name="BKMK_Search_and_filter_the_test_list"></a> Wyszukiwanie i filtrowanie listy testów  
+### <a name="BKMK_Search_and_filter_the_test_list"></a> Wyszukiwanie i filtrowanie listy testów  
  Filtry Test Explorer służy do ograniczenia metod testowych w swoich projektach, które możesz wyświetlać i uruchamiać.  
   
  Gdy wpisz ciąg w polu wyszukiwania Eksploratora testów i wybierz klawisz ENTER, lista testów jest filtrowany w celu wyświetlenia tylko te testy, których w pełni kwalifikowane nazwy zawierają ciąg znaków.  
@@ -229,7 +229,7 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
-##  <a name="BKMK_Create_custom_playlists"></a> Utwórz niestandardowe listy odtwarzania  
+## <a name="BKMK_Create_custom_playlists"></a> Utwórz niestandardowe listy odtwarzania  
  Można utworzyć i zapisać listę testów, które chcesz przeprowadzić lub zobaczyć jako grupę. Po wybraniu listy odtwarzania, testy na liście są wyświetlane Eksploratora testów. Test można dodać do więcej niż jednej listy odtwarzania, a wszystkie testy w projekcie są dostępne po wybraniu opcji domyślnej **wszystkie testy** listy odtwarzania.  
   
  ![Wybierz listę odtwarzania](../test/media/ute-playlist.png "UTE_Playlist")  
@@ -244,10 +244,10 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
-##  <a name="BKMK_Debug_and_analyze_unit_tests"></a> Debugowanie i analizowanie testów jednostkowych  
+## <a name="BKMK_Debug_and_analyze_unit_tests"></a> Debugowanie i analizowanie testów jednostkowych  
  [Debuguj testy jednostkowe](#BKMK_Debug_unit_tests) **&#124;** [diagnozowanie problemów z wydajnością metoda testu](#BKMK_Diagnose_test_method_performance_issues) **&#124;** [Analizuj pokrycie kodu testu jednostkowego](#BKMK_Analyzeunit_test_code_coverage)  
   
-###  <a name="BKMK_Debug_unit_tests"></a> Debuguj testy jednostkowe  
+### <a name="BKMK_Debug_unit_tests"></a> Debuguj testy jednostkowe  
  Eksplorator testów umożliwia uruchamianie sesji debugowania dla testów. Krokowe wykonywanie kodu za pomocą debugera programu Visual Studio bezproblemowe przejście i z powrotem między testami jednostek a testowanego projektu. Aby rozpocząć debugowanie:  
   
 1. W edytorze programu Visual Studio Ustaw punkt przerwania w metodach testów, które chcesz debugować.  
@@ -261,10 +261,10 @@ FullName:"MyClass" - FullName:"PerfTest"
   
    ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
-###  <a name="BKMK_Diagnose_test_method_performance_issues"></a> Diagnozowanie problemów z wydajnością metoda testu  
+### <a name="BKMK_Diagnose_test_method_performance_issues"></a> Diagnozowanie problemów z wydajnością metoda testu  
  Aby zdiagnozować, dlaczego metoda testowa zajmuje zbyt dużo czasu, należy wybrać metodę w Eksploratorze testów, a następnie wybierz profil z menu kontekstowego. Zobacz [Eksplorator wydajności](../profiling/performance-explorer.md).  
   
-###  <a name="BKMK_Analyzeunit_test_code_coverage"></a> Analizuj pokrycie kodu testu jednostkowego  
+### <a name="BKMK_Analyzeunit_test_code_coverage"></a> Analizuj pokrycie kodu testu jednostkowego  
   
 > [!NOTE]
 >  Pokrycie kodu testu jednostkowego jest dostępna tylko w programie Visual Studio Enterprise.  
@@ -277,9 +277,9 @@ FullName:"MyClass" - FullName:"PerfTest"
   
 2. Wybierz jedną z następujących poleceń z podmenu:  
   
-   -   **Wybrane testy** uruchamia metody testowe wybrane w Eksploratorze testów.  
+   - **Wybrane testy** uruchamia metody testowe wybrane w Eksploratorze testów.  
   
-   -   **Wszystkie testy** uruchamia metody testowe w rozwiązaniu.  
+   - **Wszystkie testy** uruchamia metody testowe w rozwiązaniu.  
   
    Okno wyniki pokrycia kodu Wyświetla procent bloków kodu produktu, które były wykonywane przez wiersz, funkcji, klasy, przestrzeni nazw i moduł.  
   
@@ -287,9 +287,9 @@ FullName:"MyClass" - FullName:"PerfTest"
   
    ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
-##  <a name="BKMK_External_resources"></a> Zasoby zewnętrzne  
+## <a name="BKMK_External_resources"></a> Zasoby zewnętrzne  
   
-###  <a name="BKMK_Guidance"></a> Wskazówki dotyczące  
+### <a name="BKMK_Guidance"></a> Wskazówki dotyczące  
  [Testowanie dostarczania ciągłego w programie Visual Studio 2012 — rozdział 2: Testy jednostkowe: Testowanie wnętrza](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Zobacz też  

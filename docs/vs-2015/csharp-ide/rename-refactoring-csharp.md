@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40e13682b6ff22a0052adc7db9f9db9f18d36cc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82f3d4a3ae9bc587fef038186afe9faef880571c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783291"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114735"
 ---
 # <a name="rename-refactoring-c"></a>Refaktoryzacja zmiany nazwy (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "54783291"
   
 #### <a name="to-rename-an-identifier"></a>Aby zmienić nazwę identyfikatora  
   
-1.  Utwórz aplikację konsoli o nazwie `RenameIdentifier`, a następnie zastąp `Program` poniższym przykładowym kodem.  
+1. Utwórz aplikację konsoli o nazwie `RenameIdentifier`, a następnie zastąp `Program` poniższym przykładowym kodem.  
   
     ```csharp  
     class ProtoClassA  
@@ -76,23 +76,23 @@ ms.locfileid: "54783291"
     }  
     ```  
   
-2.  Umieść kursor w `MethodB`, albo w deklaracji metody lub wywołania metody.  
+2. Umieść kursor w `MethodB`, albo w deklaracji metody lub wywołania metody.  
   
-3.  Z **Refaktoryzuj** menu, wybierz opcję **Zmień nazwę**. **Zmień nazwę** pojawi się okno dialogowe.  
+3. Z **Refaktoryzuj** menu, wybierz opcję **Zmień nazwę**. **Zmień nazwę** pojawi się okno dialogowe.  
   
      Również kliknięciu prawym przyciskiem myszy kursora, wskaż polecenie **Refaktoryzuj** na menu kontekstowe, a następnie kliknij **Zmień nazwę** do wyświetlenia **Zmień nazwę** okno dialogowe.  
   
-4.  W **nową nazwę** wpisz `MethodC`.  
+4. W **nową nazwę** wpisz `MethodC`.  
   
-5.  Wybierz **wyszukiwania w komentarzach** pole wyboru.  
+5. Wybierz **wyszukiwania w komentarzach** pole wyboru.  
   
-6.  Kliknij przycisk **OK**.  
+6. Kliknij przycisk **OK**.  
   
-7.  W **podgląd zmian** okno dialogowe, kliknij przycisk **Zastosuj**.  
+7. W **podgląd zmian** okno dialogowe, kliknij przycisk **Zastosuj**.  
   
 #### <a name="to-rename-an-identifier-using-smart-tags"></a>Aby zmienić nazwę identyfikatora przy użyciu tagów inteligentnych  
   
-1.  Utwórz aplikację konsoli o nazwie `RenameIdentifier`, a następnie zastąp `Program` poniższym przykładowym kodem.  
+1. Utwórz aplikację konsoli o nazwie `RenameIdentifier`, a następnie zastąp `Program` poniższym przykładowym kodem.  
   
     ```csharp  
     class ProtoClassA  
@@ -113,18 +113,18 @@ ms.locfileid: "54783291"
     }  
     ```  
   
-2.  W deklaracji pod kątem `MethodB`, wpisz lub backspace za pośrednictwem identyfikatora metody. Poniżej tego identyfikatora, zostanie wyświetlony monit z tagu inteligentnego.  
+2. W deklaracji pod kątem `MethodB`, wpisz lub backspace za pośrednictwem identyfikatora metody. Poniżej tego identyfikatora, zostanie wyświetlony monit z tagu inteligentnego.  
   
     > [!NOTE]
     >  Można wywołać tylko przy użyciu tagów inteligentnych na deklarację identyfikatora Refaktoryzacja zmiany nazwy.  
   
-3.  Wpisz skrót klawiaturowy, SHIFT + ALT + F10, a następnie naciśnij klawisz strzałki w dół, aby wyświetlić menu tagu inteligentnego.  
+3. Wpisz skrót klawiaturowy, SHIFT + ALT + F10, a następnie naciśnij klawisz strzałki w dół, aby wyświetlić menu tagu inteligentnego.  
   
      —lub—  
   
      Przesuń wskaźnik myszy nad wiersz tagów inteligentnych do wyświetlenia tagu inteligentnego. Następnie przesuń wskaźnik myszy nad tagów inteligentnych i kliknij strzałkę w dół, aby wyświetlić menu tagu inteligentnego.  
   
-4.  Wybierz **Zmień nazwę "\<identifer1 >" do "\<identifier2 >"** element menu do wywołania, Refaktoryzacja zmiany nazwy bez podgląd zmian w kodzie. Wszystkie odwołania do  **\<identifer1 >** zostaną automatycznie zaktualizowane do  **\<identifier2 >**.  
+4. Wybierz **Zmień nazwę "\<identifer1 >" do "\<identifier2 >"** element menu do wywołania, Refaktoryzacja zmiany nazwy bez podgląd zmian w kodzie. Wszystkie odwołania do  **\<identifer1 >** zostaną automatycznie zaktualizowane do  **\<identifier2 >**.  
   
      —lub—  
   

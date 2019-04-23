@@ -19,21 +19,21 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1322300992359f386a43c7feef41053611bb866
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2547c9edb501ac8536b06548ab23a5262515ca78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765170"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116787"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>Debugowanie aplikacji ASP.NET i AJAX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Debugowanie [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji sieci Web jest podobne do debugowania formularza Windows lub innej aplikacji Windows, ponieważ oba rodzaje aplikacji obejmują formantów i zdarzeń. Istnieją jednak również podstawowe różnice między dwoma rodzajami aplikacji:  
   
--   Rejestrowanie informacji o stanie jest bardziej złożone w aplikacji sieci Web.  
+- Rejestrowanie informacji o stanie jest bardziej złożone w aplikacji sieci Web.  
   
--   W aplikacji Windows można debugować kodu jest przede wszystkim w jednej lokalizacji. w aplikacji sieci Web kod może być na kliencie i na serwerze. Gdy [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] kod to wszystko na serwerze, mogą istnieć JavaScript lub [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kodu na komputerze klienckim.  
+- W aplikacji Windows można debugować kodu jest przede wszystkim w jednej lokalizacji. w aplikacji sieci Web kod może być na kliencie i na serwerze. Gdy [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] kod to wszystko na serwerze, mogą istnieć JavaScript lub [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kodu na komputerze klienckim.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Przygotowywanie do debugowania ASP.NET](../debugger/preparing-to-debug-aspnet.md)  

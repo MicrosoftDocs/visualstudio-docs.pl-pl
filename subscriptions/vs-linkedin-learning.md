@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat korzyści LinkedIn Learning dołączone jako część subskrypcji LinkedIn Premium zawarte w wybranych subskrypcjach programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: bdc7eaf4aa5c7105b996d25494643209b38f51d3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b6d60a5bedb960c2302a8823d1248b36849c604d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670046"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108161"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>LinkedIn Learning korzyści w ramach subskrypcji programu Visual Studio
 
@@ -110,8 +110,8 @@ Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://m
 Odp.:  Nie, oferta LinkedIn Learning jest dostępna tylko dla nowych subskrybentów.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
--  Potrzebujesz pomocy dotyczącej LinkedIn Learning?  Zapoznaj się z tymi zasobami:
+- Potrzebujesz pomocy dotyczącej LinkedIn Learning?  Zapoznaj się z tymi zasobami:
     - Pomoc dotycząca [za pomocą usługi LinkedIn Learning](https://www.linkedin.com/help/learning).
     - Pomoc w przypadku ogólnych pytań na temat [LinkedIn](https://www.linkedin.com/help/linkedin) takich jak tworzenie kont i profilów oraz utrzymanie sieci.
--  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
+- Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

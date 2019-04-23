@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4221489318e4cdd4268d5c5d00cbaa079838dcba
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6c159cd6fbd4f2fbfff414688e2ec865bcc8ddb4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940896"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109260"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Tworzenie niestandardowych procesorów dyrektywy T4 dotyczącej szablonu tekstowego
 
@@ -40,9 +40,9 @@ Szablony tekstowe różnych udostępnić funkcje, które zapewnia pojedynczy pro
 
 Przykładowe niestandardowe procesory dyrektyw może być:
 
--   Procesor dyrektywy, aby zwrócić dane z bazy danych, która przyjmuje jako parametry nazwę użytkownika i hasło.
+- Procesor dyrektywy, aby zwrócić dane z bazy danych, która przyjmuje jako parametry nazwę użytkownika i hasło.
 
--   Procesor dyrektywy, aby otworzyć i przeczytać plik, który przyjmuje nazwę pliku jako parametr.
+- Procesor dyrektywy, aby otworzyć i przeczytać plik, który przyjmuje nazwę pliku jako parametr.
 
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>Podmiot zabezpieczeń części niestandardowego procesora dyrektywy
 
@@ -50,19 +50,19 @@ Aby opracować procesor dyrektywy, należy utworzyć klasę, która dziedziczy z
 
 Najważniejsze `DirectiveProcessor` dostępne są następujące metody, które należy zaimplementować.
 
--   `bool IsDirectiveSupported(string directiveName)` -Return `true` Jeśli procesor dyrektywy poradzenie sobie z dyrektywy o nazwie.
+- `bool IsDirectiveSupported(string directiveName)` -Return `true` Jeśli procesor dyrektywy poradzenie sobie z dyrektywy o nazwie.
 
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` Aparatu szablonów wywołuje tę metodę dla każdego wystąpienia dyrektywy w szablonie. Procesor należy zapisać wyniki.
+- `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` Aparatu szablonów wywołuje tę metodę dla każdego wystąpienia dyrektywy w szablonie. Procesor należy zapisać wyniki.
 
 Po wszystkie wywołania element ProcessDirective() aparatu tworzenia szablonów będzie wywoływać tych metod:
 
--   `string[] GetReferencesForProcessingRun()` -Zwraca nazwy zestawów, których wymaga kod szablonu.
+- `string[] GetReferencesForProcessingRun()` -Zwraca nazwy zestawów, których wymaga kod szablonu.
 
--   `string[] GetImportsForProcessingRun()` -Przywrócić przestrzenie nazw, który może służyć kod szablonu.
+- `string[] GetImportsForProcessingRun()` -Przywrócić przestrzenie nazw, który może służyć kod szablonu.
 
--   `string GetClassCodeForProcessingRun()` -Zwrócić kod metody, właściwości i innych deklaracji, używających kod szablonu. W tym celu najłatwiej do tworzenia ciąg zawierający w języku C# lub kod języka Visual Basic. Aby procesor dyrektywy może być wywoływana z szablonu, który korzysta z dowolnego języka środowiska CLR, można skonstruować oświadczeń jako drzewo CodeDom, a następnie powróć wynik serializacji drzewa w język używany przez szablon.
+- `string GetClassCodeForProcessingRun()` -Zwrócić kod metody, właściwości i innych deklaracji, używających kod szablonu. W tym celu najłatwiej do tworzenia ciąg zawierający w języku C# lub kod języka Visual Basic. Aby procesor dyrektywy może być wywoływana z szablonu, który korzysta z dowolnego języka środowiska CLR, można skonstruować oświadczeń jako drzewo CodeDom, a następnie powróć wynik serializacji drzewa w język używany przez szablon.
 
--   Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie niestandardowego procesora dyrektywy](../modeling/walkthrough-creating-a-custom-directive-processor.md).
+- Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie niestandardowego procesora dyrektywy](../modeling/walkthrough-creating-a-custom-directive-processor.md).
 
 ## <a name="see-also"></a>Zobacz także
 

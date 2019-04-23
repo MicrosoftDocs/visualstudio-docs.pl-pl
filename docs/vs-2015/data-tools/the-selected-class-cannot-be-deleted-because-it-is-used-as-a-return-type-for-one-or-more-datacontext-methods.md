@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 02454e308a97f043caa6e85e1c4308c2d2a2402e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d8eb5f93ef3770b0d275d71d818e44d52a067f83
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649046"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094687"
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>Nie można usunąć wybranej klasy, ponieważ jest ona używana jako zwracany typ przez co najmniej jedną metodę DataContext
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Typ zwracany co najmniej jeden <xref:System.Data.Linq.DataContext> metody jest k
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-1.  Identyfikowanie <xref:System.Data.Linq.DataContext> metody, które używają klas jednostek jako zwracany typ, wybierając <xref:System.Data.Linq.DataContext> metody w metodach okienka i zapoznanie się **typie zwracanym** właściwości w **właściwości** okna .  
+1. Identyfikowanie <xref:System.Data.Linq.DataContext> metody, które używają klas jednostek jako zwracany typ, wybierając <xref:System.Data.Linq.DataContext> metody w metodach okienka i zapoznanie się **typie zwracanym** właściwości w **właściwości** okna .  
   
-2.  Ustaw **typie zwracanym** do klasy innej jednostki lub usuń <xref:System.Data.Linq.DataContext> metody z okienko metod.  
+2. Ustaw **typie zwracanym** do klasy innej jednostki lub usuń <xref:System.Data.Linq.DataContext> metody z okienko metod.  
   
 ## <a name="see-also"></a>Zobacz też  
  [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

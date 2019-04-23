@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e6b9776f94c802502bc393f2b8c262408d443e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 61f35521271df7d3f34e5f10ebf40d502c0f8596
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335626"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089756"
 ---
 # <a name="command-implementation"></a>Implementacja poleceń
 Aby zaimplementować polecenia w VSPackage, należy wykonać następujące zadania:
 
-1.  W *vsct* plików, skonfiguruj grupy poleceń, a następnie dodaj polecenie do niego. Aby uzyskać więcej informacji, zobacz [pliki tabeli (vsct) polecenia programu Visual Studio](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+1. W *vsct* plików, skonfiguruj grupy poleceń, a następnie dodaj polecenie do niego. Aby uzyskać więcej informacji, zobacz [pliki tabeli (vsct) polecenia programu Visual Studio](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
-2.  Polecenie należy zarejestrować w usłudze Visual Studio.
+2. Polecenie należy zarejestrować w usłudze Visual Studio.
 
-3.  Implementowanie polecenia.
+3. Implementowanie polecenia.
 
 W poniższych sekcjach opisano, jak się zarejestrować i wdrożyć poleceń.
 
@@ -61,29 +61,29 @@ if ( null != mcs )
 ## <a name="querystatus-methods"></a>Metody QueryStatus
  Przed zaimplementowaniem albo <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> metody, wyszukaj identyfikator GUID polecenia zestawu, do którego należy polecenia i identyfikator polecenia. Należy przestrzegać następujących wytycznych:
 
--   Jeśli nie zostanie rozpoznany identyfikator GUID, implementacja jednej z metod musi zwracać <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.
+- Jeśli nie zostanie rozpoznany identyfikator GUID, implementacja jednej z metod musi zwracać <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.
 
--   Jeśli implementacja jednej z metod rozpoznaje identyfikatora GUID, ale nie została zaimplementowana polecenia, a następnie metoda powinna zwrócić <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.
+- Jeśli implementacja jednej z metod rozpoznaje identyfikatora GUID, ale nie została zaimplementowana polecenia, a następnie metoda powinna zwrócić <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.
 
--   Jeśli implementacja jednej z metod rozpoznaje zarówno identyfikatora GUID, a polecenie, a następnie metoda powinna być ustawiona na pole flag poleceń każdego polecenia (w `prgCmds` parametr) przy użyciu następujących <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> flag:
+- Jeśli implementacja jednej z metod rozpoznaje zarówno identyfikatora GUID, a polecenie, a następnie metoda powinna być ustawiona na pole flag poleceń każdego polecenia (w `prgCmds` parametr) przy użyciu następujących <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> flag:
 
-    -   `OLECMDF_SUPPORTED`: Polecenie jest obsługiwane.
+    - `OLECMDF_SUPPORTED`: Polecenie jest obsługiwane.
 
-    -   `OLECMDF_INVISIBLE`: Polecenie nie powinny być widoczne.
+    - `OLECMDF_INVISIBLE`: Polecenie nie powinny być widoczne.
 
-    -   `OLECMDF_LATCHED`: Polecenie jest przełączona w i prawdopodobnie zostały zaewidencjonowane.
+    - `OLECMDF_LATCHED`: Polecenie jest przełączona w i prawdopodobnie zostały zaewidencjonowane.
 
-    -   `OLECMDF_ENABLED`: Polecenie jest włączone.
+    - `OLECMDF_ENABLED`: Polecenie jest włączone.
 
-    -   `OLECMDF_DEFHIDEONCTXTMENU`: Polecenie powinna być ukryta, jeśli jest wyświetlana w menu skrótów.
+    - `OLECMDF_DEFHIDEONCTXTMENU`: Polecenie powinna być ukryta, jeśli jest wyświetlana w menu skrótów.
 
-    -   `OLECMDF_NINCHED`: Polecenie kontroler menu i nie jest włączona, ale jego menu rozwijane listy nie jest pusta i jest nadal dostępna. (Ta flaga jest rzadko używany).
+    - `OLECMDF_NINCHED`: Polecenie kontroler menu i nie jest włączona, ale jego menu rozwijane listy nie jest pusta i jest nadal dostępna. (Ta flaga jest rzadko używany).
 
--   Jeśli polecenie została zdefiniowana w *vsct* plik z `TextChanges` Flaga, ustaw następujące parametry:
+- Jeśli polecenie została zdefiniowana w *vsct* plik z `TextChanges` Flaga, ustaw następujące parametry:
 
-    -   Ustaw `rgwz` elementu `pCmdText` parametr nowego tekstu polecenia.
+    - Ustaw `rgwz` elementu `pCmdText` parametr nowego tekstu polecenia.
 
-    -   Ustaw `cwActual` elementu `pCmdText` parametru, aby rozmiar ciągu polecenia.
+    - Ustaw `cwActual` elementu `pCmdText` parametru, aby rozmiar ciągu polecenia.
 
 Upewnij się również, że bieżący kontekst nie jest funkcją usługi automation, chyba że polecenie jest przeznaczony specjalnie do obsługi funkcji automatyzacji.
 

@@ -7,11 +7,11 @@ ms.date: 04/02/2019
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
 ms.openlocfilehash: 031ce885faa29e587fe5d48210d8e13b48fcdc4c
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856347"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109078"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Otwórz wielu rozwiązań lub wystąpienia programu Visual Studio dla komputerów Mac
 

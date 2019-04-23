@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10b0f05e758f71830d5377c738ff9dee683022b8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3dcbfbe7b6e6ac5bacb9e8e36e43d780d3051903
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641627"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108974"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>Instrukcje: Programowe przenoszenie elementów w programie Outlook
   W tym przykładzie przenosi nieprzeczytanych wiadomości e-mail z **skrzynki odbiorczej** w folderze o nazwie **testu**. Przykład dotyczy tylko przeniesienia wiadomości, które zawierają wyraz **testu** w `Subject` pola.
@@ -30,9 +30,9 @@ ms.locfileid: "56641627"
 ## <a name="compile-the-code"></a>Skompilować kod
  Ten przykład wymaga:
 
--   Folder poczty programu Outlook o nazwie **testu**.
+- Folder poczty programu Outlook o nazwie **testu**.
 
--   Wiadomość e-mail zawierająca nadejściu wyrazami **testu** w `Subject` pola.
+- Wiadomość e-mail zawierająca nadejściu wyrazami **testu** w `Subject` pola.
 
 ## <a name="see-also"></a>Zobacz także
 - [Praca z folderami](../vsto/working-with-folders.md)

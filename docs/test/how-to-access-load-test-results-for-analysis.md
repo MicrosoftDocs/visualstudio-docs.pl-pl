@@ -14,12 +14,12 @@ ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 958322e57340c356e8807deacb81e208441f4b4b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4b14be6df351a6975fb8a7cf6fa506a5d4f6041
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943080"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087550"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Instrukcje: Wyniki testu obciążeniowego dostęp do analizy
 
@@ -31,24 +31,24 @@ Wynik testu obciążenia dla ukończonego testu obciążenia zawiera próbki lic
 
 ## <a name="to-access-a-load-test-result"></a>Aby dostęp do wyniku testu obciążeniowego
 
-1.  Od wydajności sieci web i obciążenia projektu testowego, otwórz test obciążenia.
+1. Od wydajności sieci web i obciążenia projektu testowego, otwórz test obciążenia.
 
-2.  Na pasku narzędzi edytora testu obciążenia wybierz **Otwórz i Zarządzaj wynikami** przycisku.
+2. Na pasku narzędzi edytora testu obciążenia wybierz **Otwórz i Zarządzaj wynikami** przycisku.
 
      **Otwórz i Zarządzaj wynikami** pojawi się okno dialogowe.
 
-3.  W **wprowadź nazwę kontrolera Aby odnaleźć wyniki testu obciążeniowego**, wybierz kontroler. Wybierz  **\<lokalny >-bez kontrolera** aby przejść do wyników przechowywanych lokalnie.
+3. W **wprowadź nazwę kontrolera Aby odnaleźć wyniki testu obciążeniowego**, wybierz kontroler. Wybierz  **\<lokalny >-bez kontrolera** aby przejść do wyników przechowywanych lokalnie.
 
-4.  W **Pokaż wyniki następującego testu obciążeniowego**, zaznacz test obciążeniowy, którego wyniki chcesz wyświetlić. Wybierz  **\<Pokaż wyniki wszystkich testów >** aby zobaczyć wszystkie wyniki wszystkich testów.
+4. W **Pokaż wyniki następującego testu obciążeniowego**, zaznacz test obciążeniowy, którego wyniki chcesz wyświetlić. Wybierz  **\<Pokaż wyniki wszystkich testów >** aby zobaczyć wszystkie wyniki wszystkich testów.
 
      Jeśli wyniki testów obciążenia są dostępne, są wyświetlane w **wyniki testu obciążeniowego** listy. Kolumny są **czasu**, **czas trwania**, **użytkownika**, **wynik**, **testu**, i  **Opis elementu**. **Testowanie** zawiera nazwę testu, i **opis** zawiera opcjonalny opis dodawany przed uruchomieniem testu.
 
     > [!NOTE]
     > Wyniki są wyświetlane najnowsze wyniki w górnej części listy.
 
-5.  W **wyniki testu obciążeniowego** zaznacz wyniki testu obciążenia, aby analizować i wybierz pozycję **Otwórz**.
+5. W **wyniki testu obciążeniowego** zaznacz wyniki testu obciążenia, aby analizować i wybierz pozycję **Otwórz**.
 
-6.  **Analizatora testu obciążenia** pojawia się. Wynik testu obciążenia wybranego jest wyświetlany w widoku podsumowania. Aby uzyskać więcej informacji, zobacz [Przegląd podsumowania z wynikami testów obciążeniowych](../test/load-test-results-summary-overview.md).
+6. **Analizatora testu obciążenia** pojawia się. Wynik testu obciążenia wybranego jest wyświetlany w widoku podsumowania. Aby uzyskać więcej informacji, zobacz [Przegląd podsumowania z wynikami testów obciążeniowych](../test/load-test-results-summary-overview.md).
 
      Może zarządzać innymi aspektami wyników testów obciążenia w **Otwórz i Zarządzaj wynikami** okno dialogowe, w tym importowanie, eksportowanie i usuwanie wyników testu obciążenia. Aby uzyskać więcej informacji, zobacz [wyniki testu obciążeniowego Zarządzanie obciążenia test repozytorium wyników](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 

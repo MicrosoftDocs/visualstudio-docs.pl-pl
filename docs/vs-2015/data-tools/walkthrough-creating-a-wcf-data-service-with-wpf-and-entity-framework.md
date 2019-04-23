@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67b3034ee1d651289c167b894b0417d11b5995e8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 52a2d7c239c9a4f3508f4bdb2077928e44ff802a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653089"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107050"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Przewodnik: Tworzenie usługi danych programu WCF za pomocą struktur WPF i Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,22 +28,22 @@ W tym instruktażu przedstawiono sposób tworzenia prostej [!INCLUDE[ss_data_ser
   
  W instruktażu wykonasz następujące czynności:  
   
--   Tworzenie aplikacji internetowej do hosta [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
+- Tworzenie aplikacji internetowej do hosta [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
   
--   Utwórz [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] reprezentujący tabelę Klienci w bazie danych Northwind.  
+- Utwórz [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] reprezentujący tabelę Klienci w bazie danych Northwind.  
   
--   Utwórz [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
+- Utwórz [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
   
--   Utworzenie aplikacji klienckiej i dodanie odwołania do [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
+- Utworzenie aplikacji klienckiej i dodanie odwołania do [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
   
--   Utworzenie powiązania danych z usługą i wygenerowanie interfejsu użytkownika.  
+- Utworzenie powiązania danych z usługą i wygenerowanie interfejsu użytkownika.  
   
--   Opcjonalnie dodanie funkcji filtrowania do aplikacji.  
+- Opcjonalnie dodanie funkcji filtrowania do aplikacji.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
   
--   Przykładowa bazy danych Northwind.  
+- Przykładowa bazy danych Northwind.  
   
      Jeśli nie masz tej bazy danych na komputerze deweloperskim, możesz pobrać go z [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088). Aby uzyskać instrukcje, zobacz [Downloading Sample Databases](http://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).  
   
@@ -80,11 +80,11 @@ W tym instruktażu przedstawiono sposób tworzenia prostej [!INCLUDE[ss_data_ser
   
 5. Na **wybierz połączenie danych** strony, wykonaj jedną z następujących czynności:  
   
-   -   Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.  
+   - Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.  
   
         —lub—  
   
-   -   Wybierz **nowe połączenie** przycisk, aby skonfigurować nowe połączenie danych. Aby uzyskać więcej informacji, zobacz [dodać nowe połączenia](../data-tools/add-new-connections.md).  
+   - Wybierz **nowe połączenie** przycisk, aby skonfigurować nowe połączenie danych. Aby uzyskać więcej informacji, zobacz [dodać nowe połączenia](../data-tools/add-new-connections.md).  
   
 6. Jeśli baza danych wymaga hasła, wybierz opcję **tak, Dołącz dane poufne w parametrach połączenia** przycisk opcji, a następnie wybierz **dalej** przycisku.  
   
@@ -236,11 +236,11 @@ W tym instruktażu przedstawiono sposób tworzenia prostej [!INCLUDE[ss_data_ser
   
 #### <a name="to-add-filtering-by-city"></a>Aby dodać filtrowanie według miejscowości  
   
-1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla **Form1.vb** lub **Form1.cs** węzeł i wybierz polecenie **Otwórz**.  
+1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **Form1.vb** lub **Form1.cs** węzeł i wybierz polecenie **Otwórz**.  
   
-2.  Dodaj <xref:System.Windows.Forms.TextBox> kontroli i <xref:System.Windows.Forms.Button> z kontrolować **przybornika** do formularza.  
+2. Dodaj <xref:System.Windows.Forms.TextBox> kontroli i <xref:System.Windows.Forms.Button> z kontrolować **przybornika** do formularza.  
   
-3.  Otwórz menu skrótów dla <xref:System.Windows.Forms.Button> sterowania, a następnie wybierz **Wyświetl kod**, a następnie dodaj następujący kod w `Button1_Click` programu obsługi zdarzeń:  
+3. Otwórz menu skrótów dla <xref:System.Windows.Forms.Button> sterowania, a następnie wybierz **Wyświetl kod**, a następnie dodaj następujący kod w `Button1_Click` programu obsługi zdarzeń:  
   
     ```vb  
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click  
@@ -269,11 +269,11 @@ W tym instruktażu przedstawiono sposób tworzenia prostej [!INCLUDE[ss_data_ser
     }  
     ```  
   
-4.  W poprzednim kodzie Zastąp `http://localhost:53161/NorthwindCustomers.svc` za pomocą adresu URL z `Form1_Load` programu obsługi zdarzeń.  
+4. W poprzednim kodzie Zastąp `http://localhost:53161/NorthwindCustomers.svc` za pomocą adresu URL z `Form1_Load` programu obsługi zdarzeń.  
   
-5.  Na pasku menu wybierz **debugowania**, **Rozpocznij debugowanie** do uruchomienia aplikacji.  
+5. Na pasku menu wybierz **debugowania**, **Rozpocznij debugowanie** do uruchomienia aplikacji.  
   
-6.  W polu tekstowym wprowadź **Londyn**, a następnie wybierz przycisk. Zostaną wyświetleni tylko klienci z Londynu.  
+6. W polu tekstowym wprowadź **Londyn**, a następnie wybierz przycisk. Zostaną wyświetleni tylko klienci z Londynu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   

@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f82714ad03fc84f7112657aeafdbd257f426fc82
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 50375390b3a09ec18fcccd45e4eaee7e9fe102e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794925"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094791"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: Poprawnie wywołaj metodę GC.SuppressFinalize
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,16 +34,16 @@ ms.locfileid: "54794925"
 
 ## <a name="cause"></a>Przyczyna
 
--   Metody, która jest implementacją <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> nie mogą wywoływać <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+- Metody, która jest implementacją <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> nie mogą wywoływać <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
 
--   Metody, która nie jest implementacją <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> wywołania <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+- Metody, która nie jest implementacją <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> wywołania <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
 
--   Wywołuje metodę <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> i przekazuje na coś innego niż to (Me w języku Visual Basic).
+- Wywołuje metodę <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> i przekazuje na coś innego niż to (Me w języku Visual Basic).
 
 ## <a name="rule-description"></a>Opis reguły
  <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Metoda pozwala zwolnić zasoby w dowolnym momencie przed obiekt staje się dostępna dla wyrzucania elementów bezużytecznych. Jeśli <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> metoda jest wywoływana, zwalnia zasoby obiektu. To sprawia, że finalizacja niepotrzebne. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> należy wywołać <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> więc moduł odśmiecania pamięci nie mogą wywoływać finalizatora obiektu.
 
- Aby zapobiec typy pochodne z finalizatory mających potrzebę ponownego zaimplementowania interfejsu [System.IDisposable] (<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) i wywołać go, niezapieczętowane typy bez finalizatorów powinna nadal wywołać <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+ Aby zapobiec pochodną typy z finalizatory mających potrzebę ponownego zaimplementowania interfejsu () [System.IDisposable]<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) i wywołać go, niezapieczętowane typy bez finalizatorów powinna nadal wywołać <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady:

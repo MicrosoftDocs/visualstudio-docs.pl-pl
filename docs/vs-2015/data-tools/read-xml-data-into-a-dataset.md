@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1b384ad0dd8c121a03f8ee8840f55352d435218c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b858a6c513c1b9e1caa4f17c1bd8af067de47365
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653209"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114902"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Odczytywanie danych XML do zestawu danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ ADO.NET zapewnia proste metody do pracy z danymi XML. W tym instruktażu utworzy
   
  Ten przewodnik składa się z pięciu głównych kroków:  
   
-1.  Tworzenie nowego projektu  
+1. Tworzenie nowego projektu  
   
-2.  Tworzenie pliku XML do odczytu do zestawu danych  
+2. Tworzenie pliku XML do odczytu do zestawu danych  
   
-3.  Tworzenie interfejsu użytkownika  
+3. Tworzenie interfejsu użytkownika  
   
-4.  Tworzenie zestawu danych, podczas odczytywania pliku XML i wyświetlanie go w <xref:System.Windows.Forms.DataGridView> kontroli  
+4. Tworzenie zestawu danych, podczas odczytywania pliku XML i wyświetlanie go w <xref:System.Windows.Forms.DataGridView> kontroli  
   
-5.  Dodawanie kodu, aby wyświetlić schemat XML oparte na pliku XML w <xref:System.Windows.Forms.TextBox> kontroli  
+5. Dodawanie kodu, aby wyświetlić schemat XML oparte na pliku XML w <xref:System.Windows.Forms.TextBox> kontroli  
   
 > [!NOTE]
 >  Okna dialogowe i polecenia menu, które zostanie wyświetlona, może się różnić od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji korzystasz. Aby zmienić swoje ustawienia na **narzędzia** menu, wybierz opcję**Import i eksport ustawień**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -55,11 +55,11 @@ ADO.NET zapewnia proste metody do pracy z danymi XML. W tym instruktażu utworzy
   
 #### <a name="to-create-the-new-windows-project"></a>Aby utworzyć nowy projekt Windows  
   
-1.  Na **pliku** menu, Utwórz nowy projekt.  
+1. Na **pliku** menu, Utwórz nowy projekt.  
   
-2.  Nadaj projektowi nazwę `ReadingXML`.  
+2. Nadaj projektowi nazwę `ReadingXML`.  
   
-3.  Wybierz **aplikacji Windows**, a następnie wybierz pozycję **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Wybierz **aplikacji Windows**, a następnie wybierz pozycję **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **ReadingXML** projekt zostanie utworzony i dodany do **Eksploratora rozwiązań**.  
   
@@ -68,13 +68,13 @@ ADO.NET zapewnia proste metody do pracy z danymi XML. W tym instruktażu utworzy
   
 #### <a name="to-create-the-xml-file-that-will-be-read-into-the-dataset"></a>Aby utworzyć plik XML, który będzie odczytywany do zestawu danych  
   
-1.  Na **projektu** menu, wybierz opcję**Dodaj nowy element**.  
+1. Na **projektu** menu, wybierz opcję**Dodaj nowy element**.  
   
-2.  Wybierz **pliku XML**, nadaj plikowi nazwę `authors.xml`, a następnie wybierz pozycję **Dodaj**.  
+2. Wybierz **pliku XML**, nadaj plikowi nazwę `authors.xml`, a następnie wybierz pozycję **Dodaj**.  
   
      Plik XML ładuje do projektanta i jest gotowy do edycji.  
   
-3.  Wklej następujący kod do edytora poniżej deklaracji XML:  
+3. Wklej następujący kod do edytora poniżej deklaracji XML:  
   
     ```xml  
     <Authors_Table>  
@@ -136,34 +136,34 @@ ADO.NET zapewnia proste metody do pracy z danymi XML. W tym instruktażu utworzy
     </Authors_Table>  
     ```  
   
-4.  Na **pliku** menu, wybierz opcję**Zapisz authors.xml**.  
+4. Na **pliku** menu, wybierz opcję**Zapisz authors.xml**.  
   
 ## <a name="create-the-user-interface"></a>Tworzenie interfejsu użytkownika  
  Interfejs użytkownika dla tej aplikacji składa się z następujących czynności:  
   
--   A <xref:System.Windows.Forms.DataGridView> formant, który wyświetla zawartość pliku XML jako dane.  
+- A <xref:System.Windows.Forms.DataGridView> formant, który wyświetla zawartość pliku XML jako dane.  
   
--   A <xref:System.Windows.Forms.TextBox> kontrolkę wyświetlającą schematu XML w pliku XML.  
+- A <xref:System.Windows.Forms.TextBox> kontrolkę wyświetlającą schematu XML w pliku XML.  
   
--   Dwa <xref:System.Windows.Forms.Button> kontrolki.  
+- Dwa <xref:System.Windows.Forms.Button> kontrolki.  
   
-    -   Jeden przycisk odczytuje plik XML do zestawu danych i wyświetla go w <xref:System.Windows.Forms.DataGridView> kontroli.  
+    - Jeden przycisk odczytuje plik XML do zestawu danych i wyświetla go w <xref:System.Windows.Forms.DataGridView> kontroli.  
   
-    -   Drugi przycisk wyodrębnia schematu z zestawu danych, a także za pośrednictwem <xref:System.IO.StringWriter> wyświetla go w <xref:System.Windows.Forms.TextBox> kontroli.  
+    - Drugi przycisk wyodrębnia schematu z zestawu danych, a także za pośrednictwem <xref:System.IO.StringWriter> wyświetla go w <xref:System.Windows.Forms.TextBox> kontroli.  
   
 #### <a name="to-add-controls-to-the-form"></a>Aby dodać formanty do formularza  
   
-1.  Otwórz `Form1` w widoku Projekt.  
+1. Otwórz `Form1` w widoku Projekt.  
   
-2.  Z **przybornika**, przeciągnij następujące kontrolki na formularzu:  
+2. Z **przybornika**, przeciągnij następujące kontrolki na formularzu:  
   
-    -   Jeden <xref:System.Windows.Forms.DataGridView> kontroli  
+    - Jeden <xref:System.Windows.Forms.DataGridView> kontroli  
   
-    -   Jeden <xref:System.Windows.Forms.TextBox> kontroli  
+    - Jeden <xref:System.Windows.Forms.TextBox> kontroli  
   
-    -   Dwa <xref:System.Windows.Forms.Button> formantów  
+    - Dwa <xref:System.Windows.Forms.Button> formantów  
   
-3.  Ustaw następujące właściwości:  
+3. Ustaw następujące właściwości:  
   
     |formant|Właściwość|Ustawienie|  
     |-------------|--------------|-------------|  
@@ -179,46 +179,46 @@ ADO.NET zapewnia proste metody do pracy z danymi XML. W tym instruktażu utworzy
   
 #### <a name="to-create-a-new-dataset-that--receives-the-xml-data"></a>Aby utworzyć nowy zestaw danych, który odbiera dane XML  
   
-1.  W **Eksploratora rozwiązań**, wybierz plik źródłowy **Form1**, a następnie wybierz pozycję **Projektant widoków** znajdujący się na **Eksploratora rozwiązań** pasek narzędzi.  
+1. W **Eksploratora rozwiązań**, wybierz plik źródłowy **Form1**, a następnie wybierz pozycję **Projektant widoków** znajdujący się na **Eksploratora rozwiązań** pasek narzędzi.  
   
-2.  Z [przybornik, karta dane](../ide/reference/toolbox-data-tab.md), przeciągnij **DataSet** na **Form1**.  
+2. Z [przybornik, karta dane](../ide/reference/toolbox-data-tab.md), przeciągnij **DataSet** na **Form1**.  
   
-3.  W **Dodaj zestaw danych** okno dialogowe, wybierz opcję **Nietypizowany zestaw danych**, a następnie wybierz pozycję **OK**.  
+3. W **Dodaj zestaw danych** okno dialogowe, wybierz opcję **Nietypizowany zestaw danych**, a następnie wybierz pozycję **OK**.  
   
      **DataSet1** jest dodawana do zasobnika składnika.  
   
-4.  W **właściwości** oknie **nazwa** i <xref:System.Data.DataSet.DataSetName%2A> właściwości`AuthorsDataSet`.  
+4. W **właściwości** oknie **nazwa** i <xref:System.Data.DataSet.DataSetName%2A> właściwości`AuthorsDataSet`.  
   
 ## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>Utwórz procedurę obsługi zdarzeń do odczytania pliku XML do zestawu danych  
  **Odczytu XML** przycisk odczytuje plik XML do zestawu danych. Następnie ustawia właściwości w <xref:System.Windows.Forms.DataGridView> formant, który powiązać do zestawu danych.  
   
 #### <a name="to-add-code-to-the-readxmlbuttonclick-event-handler"></a>Aby dodać kod do narzędzia obsługi zdarzeń ReadXmlButton_Click  
   
-1.  W **Eksploratora rozwiązań**, wybierz opcję **Form1**, a następnie wybierz pozycję **Projektant widoków** znajdujący się na **Eksploratora rozwiązań** narzędzi.  
+1. W **Eksploratora rozwiązań**, wybierz opcję **Form1**, a następnie wybierz pozycję **Projektant widoków** znajdujący się na **Eksploratora rozwiązań** narzędzi.  
   
-2.  Wybierz **odczytu XML** przycisku.  
+2. Wybierz **odczytu XML** przycisku.  
   
      **Edytor kodu** o `ReadXmlButton_Click` programu obsługi zdarzeń.  
   
-3.  Wpisz następujący kod do `ReadXmlButton_Click` program obsługi zdarzeń:  
+3. Wpisz następujący kod do `ReadXmlButton_Click` program obsługi zdarzeń:  
   
      [!code-csharp[VbRaddataFillingAndExecuting#2](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/CS/Form1.cs#2)]
      [!code-vb[VbRaddataFillingAndExecuting#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/VB/Form1.vb#2)]  
   
-4.  W `ReadXMLButton_Click` kod procedury obsługi zdarzeń, zmiana `filepath =` wpisu do prawidłowej ścieżki.  
+4. W `ReadXMLButton_Click` kod procedury obsługi zdarzeń, zmiana `filepath =` wpisu do prawidłowej ścieżki.  
   
 ## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>Tworzenie obsługi zdarzeń, aby wyświetlić schemat w polu tekstowym  
  **Pokaż schemat** przycisk tworzy <xref:System.IO.StringWriter> obiekt, który zostanie wypełniony kolorem schematu i jest wyświetlany w <xref:System.Windows.Forms.TextBox>kontroli.  
   
 #### <a name="to-add-code-to-the-showschemabuttonclick-event-handler"></a>Aby dodać kod do narzędzia obsługi zdarzeń ShowSchemaButton_Click  
   
-1.  W **Eksploratora rozwiązań**, wybierz opcję **Form1**, a następnie wybierz pozycję **Projektant widoków** przycisku.  
+1. W **Eksploratora rozwiązań**, wybierz opcję **Form1**, a następnie wybierz pozycję **Projektant widoków** przycisku.  
   
-2.  Wybierz **Pokaż schemat** przycisku.  
+2. Wybierz **Pokaż schemat** przycisku.  
   
      **Edytor kodu** o `ShowSchemaButton_Click` programu obsługi zdarzeń.  
   
-3.  Wpisz następujący kod do `ShowSchemaButton_Click` programu obsługi zdarzeń.  
+3. Wpisz następujący kod do `ShowSchemaButton_Click` programu obsługi zdarzeń.  
   
      [!code-csharp[VbRaddataFillingAndExecuting#3](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/CS/Form1.cs#3)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/VB/Form1.vb#3)]  
@@ -227,13 +227,13 @@ ADO.NET zapewnia proste metody do pracy z danymi XML. W tym instruktażu utworzy
 
 Teraz można przetestować formularz, aby upewnić się, że działa zgodnie z oczekiwaniami.
   
-1.  Wybierz **F5** do uruchomienia aplikacji.  
+1. Wybierz **F5** do uruchomienia aplikacji.  
   
-2.  Wybierz **odczytu XML** przycisku.  
+2. Wybierz **odczytu XML** przycisku.  
   
      Zawartość pliku XML jest wyświetlana w formancie DataGridView.  
   
-3.  Wybierz **Pokaż schemat** przycisku.  
+3. Wybierz **Pokaż schemat** przycisku.  
   
      Pole tekstowe wyświetla schematu XML w pliku XML.  
   
@@ -241,9 +241,9 @@ Teraz można przetestować formularz, aby upewnić się, że działa zgodnie z o
 
 W tym instruktażu dowiesz się, podstawowe informacje dotyczące odczytywania pliku XML do zestawu danych, a także do tworzenia schematów na podstawie zawartości pliku XML. Poniżej przedstawiono niektóre zadania, które użytkownik może zrobić dalej:  
   
--   Edytowanie danych w zestawie danych i zapisu go wycofać jako XML. Aby uzyskać więcej informacji, zobacz <xref:System.Data.DataSet.WriteXml%2A>.  
+- Edytowanie danych w zestawie danych i zapisu go wycofać jako XML. Aby uzyskać więcej informacji, zobacz <xref:System.Data.DataSet.WriteXml%2A>.  
   
--   Edytowanie danych w zestawie danych, a następnie zapisać ją z bazą danych.
+- Edytowanie danych w zestawie danych, a następnie zapisać ją z bazą danych.
   
 ## <a name="see-also"></a>Zobacz też  
  [Wskazówki dotyczące danych](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf6e693bf216cedf2734d78ca13662739981f235
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a37c0f12943d60f67ee0d17b15315ac85af509d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639898"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092698"
 ---
 # <a name="how-to-map-listobject-columns-to-data"></a>Instrukcje: Mapowanie kolumn ListObject do danych
   Po powiązaniu <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolę <xref:System.Data.DataTable>, możesz nie chcieć wyświetlić wszystkie kolumny na liście lub może być określone kolumny, które nie są powiązane z danymi. Można mapować kolumny, które mają być wyświetlane w <xref:Microsoft.Office.Tools.Excel.ListObject> podczas wywoływania <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> metody.
@@ -31,17 +31,17 @@ ms.locfileid: "56639898"
 
 ### <a name="to-map-a-data-table-to-columns-in-a-list"></a>Do mapowania kolumn na liście tabeli danych
 
-1.  Utwórz <xref:System.Data.DataTable> na poziomie klasy.
+1. Utwórz <xref:System.Data.DataTable> na poziomie klasy.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#16)]
      [!code-vb[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#16)]
 
-2.  Dodawanie przykładowe kolumny i dane w `Startup` program obsługi zdarzeń `Sheet1` klasy (w projekcie poziomie dokumentu) lub `ThisAddIn` klasy (w projekcie dodatku narzędzi VSTO).
+2. Dodawanie przykładowe kolumny i dane w `Startup` program obsługi zdarzeń `Sheet1` klasy (w projekcie poziomie dokumentu) lub `ThisAddIn` klasy (w projekcie dodatku narzędzi VSTO).
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#17)]
      [!code-vb[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#17)]
 
-3.  Wywołaj <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> metody i przekazać w nazwach kolumn w kolejności, powinny one zostać wyświetlone. Obiekt listy, który zostanie powiązany do nowo utworzonego <xref:System.Data.DataTable>, ale kolejność kolumn w obiekcie listy różnią się od kolejności, pojawiają się na <xref:System.Data.DataTable>.
+3. Wywołaj <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> metody i przekazać w nazwach kolumn w kolejności, powinny one zostać wyświetlone. Obiekt listy, który zostanie powiązany do nowo utworzonego <xref:System.Data.DataTable>, ale kolejność kolumn w obiekcie listy różnią się od kolejności, pojawiają się na <xref:System.Data.DataTable>.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#18)]
      [!code-vb[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#18)]
@@ -51,7 +51,7 @@ ms.locfileid: "56639898"
 
 ### <a name="to-specify-an-unmapped-column-when-mapping-listobject-columns"></a>Aby określić niezamapowaną kolumnę, gdy mapowanie kolumn ListObject
 
-1.  Wywołaj <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> metody i przekazać w nazwach kolumn w kolejności, powinny one zostać wyświetlone. Użyj pustego ciągu, aby wskazać, gdzie jest dodać niezamapowaną kolumnę; w tym przypadku między kolumny title i ostatniej kolumnie Nazwa.
+1. Wywołaj <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> metody i przekazać w nazwach kolumn w kolejności, powinny one zostać wyświetlone. Użyj pustego ciągu, aby wskazać, gdzie jest dodać niezamapowaną kolumnę; w tym przypadku między kolumny title i ostatniej kolumnie Nazwa.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#19)]
      [!code-vb[Trin_VstcoreHostControlsExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#19)]

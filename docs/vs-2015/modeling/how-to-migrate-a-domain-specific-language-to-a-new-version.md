@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22addb1c98f72f265665ca5737180c24744b0f32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: acccb96f4d4092727e72d1d72103e26d7be96511
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784198"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110330"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Instrukcje: Migracja języka specyficznego dla domeny do nowej wersji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Projekty definiowanie i korzystanie z języka specyficznego dla domeny, które m
   
 #### <a name="to-prepare-projects-for-migration"></a>Aby przygotować projekty do migracji.  
   
--   Upewnij się, że **.csproj** i **.sln** można zapisywać pliki. Jeśli znajdują się pod kontrolą źródła, upewnij się, że ich są wyewidencjonowane.  
+- Upewnij się, że **.csproj** i **.sln** można zapisywać pliki. Jeśli znajdują się pod kontrolą źródła, upewnij się, że ich są wyewidencjonowane.  
   
--   Utwórz kopię foldery, które zamierzasz migrować.  
+- Utwórz kopię foldery, które zamierzasz migrować.  
   
 ## <a name="migrating-a-collection-of-projects"></a>Migrowanie kolekcji projektów  
   
@@ -42,7 +42,7 @@ Projekty definiowanie i korzystanie z języka specyficznego dla domeny, które m
   
 1. Uruchom narzędzie do migracji DSL.  
   
-   -   Kliknij dwukrotnie narzędzie w Eksploratorze Windows (lub Eksploratora plików) lub uruchomić narzędzie z wiersza polecenia. Narzędzie znajduje się w tej lokalizacji:  
+   - Kliknij dwukrotnie narzędzie w Eksploratorze Windows (lub Eksploratora plików) lub uruchomić narzędzie z wiersza polecenia. Narzędzie znajduje się w tej lokalizacji:  
   
         **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
@@ -54,37 +54,37 @@ Projekty definiowanie i korzystanie z języka specyficznego dla domeny, które m
   
 3. Przegląd drzewa projektów i usuń zaznaczenie pola wyboru projektów, których nie chcesz konwertować.  
   
-   -   Wybierz projekt lub rozwiązanie, aby wyświetlić listę zmian, które spowoduje, że narzędzie.  
+   - Wybierz projekt lub rozwiązanie, aby wyświetlić listę zmian, które spowoduje, że narzędzie.  
   
        > [!NOTE]
        >  Pola wyboru, które pojawiają się obok nazwy folderów nie mają wpływu. Należy rozwinąć foldery, aby sprawdzić, projekty i rozwiązania.  
   
 4. Konwertowanie projektów.  
   
-   1.  Kliknij przycisk **przekonwertować**.  
+   1. Kliknij przycisk **przekonwertować**.  
   
         Zanim każdy plik projektu jest konwertowany, kopię _projektu_**.csproj** zostanie zapisany jako _projektu_**. vs2008.csproj**  
   
         Kopia każdego _rozwiązania_**.sln** zostanie zapisany jako _rozwiązania_**. vs2008.sln**  
   
-   2.  Badanie zakończone niepowodzeniem konwersje, które są zgłaszane.  
+   2. Badanie zakończone niepowodzeniem konwersje, które są zgłaszane.  
   
         Błędy są zgłaszane w oknie tekstowym. Ponadto widok drzewa pokazuje czerwona flaga w każdym węźle, w której nie można przekonwertować. Możesz kliknąć węzeł, aby uzyskać więcej informacji na temat tego błędu.  
   
 5. **Transformuj wszystkie szablony** rozwiązania zawierającego pomyślnie przekonwertowany projektów.  
   
-   1.  Otwórz rozwiązanie.  
+   1. Otwórz rozwiązanie.  
   
-   2.  Kliknij przycisk **Przekształć wszystkie szablony** przycisku w nagłówku Eksploratora rozwiązań.  
+   2. Kliknij przycisk **Przekształć wszystkie szablony** przycisku w nagłówku Eksploratora rozwiązań.  
   
        > [!NOTE]
        >  Ten krok można wprowadzić niepotrzebne. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6. Zaktualizuj niestandardowy kod w projektach przekonwertowana.  
   
-   -   Spróbuj kompilować projekty i zbadać wszelkie błędy.  
+   - Spróbuj kompilować projekty i zbadać wszelkie błędy.  
   
-   -   Przetestuj projektanta.  
+   - Przetestuj projektanta.  
   
 ## <a name="see-also"></a>Zobacz też  
  [What's New in Visualisation i Modeling SDK](../misc/what-s-new-in-visualization-and-modeling-sdk.md)

@@ -3,78 +3,74 @@ title: Ułatwienia dostępu
 description: W tym artykule przedstawiono funkcje ułatwień dostępu w programie Visual Studio dla komputerów Mac i jak można ją włączyć.
 author: conceptdev
 ms.author: crdun
-ms.date: 08/15/2017
+ms.date: 04/17/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: f90f5fca9d68ed00162fd746ddf291343c8d51f7
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 383f9fb46341eec78fa2daa59bba31dde89ac437
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296349"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115084"
 ---
 # <a name="accessibility"></a>Ułatwienia dostępu
 
-Oprócz funkcji i narzędzi w systemie macOS Visual Studio for Mac oferuje następujące funkcje, dzięki czemu łatwiej dostępne dla osób niepełnosprawnych:
+Programu Visual Studio dla komputerów Mac ma następujące funkcje ułatwień dostępu, dzięki czemu łatwiej dostępne dla osób z różnymi możliwościami:
 
-- Rozszerzenia tekst w rozwiązaniu i okienka edytora
+- Rozszerzenia tekstu w okienka rozwiązanie i edytora
 - Opcje rozmiaru tekstu w edytorach
 - Dostosowywanie kolorów w edytorach
-- Dostosowywanie skrótów klawiatury
+- Nawigowanie przy użyciu klawiatury
+- Dostosowanie skrótów
 - Uzupełnianie kodu dla metody i parametrów
+
+Poza tymi funkcjami Apple udostępnia wiele narzędzi, aby ułatwić użytkownikom ze specjalnymi potrzebami, takie jak VoiceOver i dyktowanie.
 
 Aby uzyskać więcej informacji dotyczących funkcji ułatwień dostępu w systemie macOS, zobacz [witryny sieci Web firmy Apple](https://www.apple.com/accessibility/mac/).
 
-## <a name="using-accessibility-features-in-visual-studio-for-mac"></a>Korzystanie z funkcji ułatwień dostępu w programie Visual Studio dla komputerów Mac
+## <a name="enabling-macos-assistive-technologies-in-visual-studio-for-mac"></a>Włączanie systemu macOS technologiami pomocniczymi w programie Visual Studio dla komputerów Mac
 
-Funkcje ułatwień dostępu w programie Visual Studio dla komputerów Mac jest domyślnie wyłączona. Aby je włączyć, wykonaj następujące czynności:
+Program Visual Studio dla komputerów Mac obsługę technologii ułatwień dostępu systemu macOS jest domyślnie wyłączona. Aby włączyć ją wykonaj następujące kroki:
 
-1. Przejdź do **programu Visual Studio > Preferencje > Inne > ułatwień dostępu**.
+1. Przejdź do **programu Visual Studio (menu) > Preferencje > Inne > ułatwień dostępu**
 
-2. Wybierz **dostępności Włącz** pole wyboru, jak pokazano na poniższym diagramie:
+2. Sprawdź **dostępności Włącz** pola wyboru:
 
-    ![Włącz wyboru ułatwień dostępu](media/accessibility-image1.png)
+   ![Zaznacz pole wyboru preferencje ułatwień dostępu](media/accessibility-preferences.png)
 
-3. Naciśnij klawisz **Uruchom ponownie program Visual Studio** przycisk, aby zezwolić na te funkcje ułatwień dostępu, aby zaczęły obowiązywać.
+3. Wybierz **Uruchom ponownie program Visual Studio** przycisk, aby ponownie uruchomić program Visual Studio i włączyć obsługę technologii ułatwień dostępu firmy Apple.
 
-Alternatywnie można użyć wiersza polecenia do włączania funkcji ułatwień dostępu. Aby to zrobić, wprowadź następujące polecenie w terminalu:
+## <a name="how-to-use-keyboard-navigation"></a>Instrukcje: Korzystanie z nawigacji klawiatury
 
-```bash
-defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 1
-```
+Obsługa nawigacji klawiatury jest wbudowana bezpośrednio w systemie macOS, ale aby uzyskać najbardziej kompleksowe środowisko, możesz powinni macOS Przejdź **wszystkich kontrolek**:
 
-Po włączeniu ułatwień dostępu, musisz ponownie uruchomić program Visual Studio.
+![Preferencje systemowe klawiatury wszystkie kontrolki](media/accessibility-preferences-keyboard.png)
 
-## <a name="how-to-use-keyboard-navigation"></a>Porady: Korzystanie z nawigacji klawiatury
-
-Nawigowanie przy użyciu klawiatury, można włączyć przez ustawienie opcji pełny dostęp za pomocą klawiatury **preferencjach systemowych > klawiatury > Skróty** do **wszystkich kontrolek**:
-
-![Panel preferencji systemów w systemie macos](media/accessibility-image2.png)
-
-Ustawienia klawiatury pełnego dostępu do włącza prostokąt fokusu. Następnie możesz wybrać kontrolek przy użyciu:
+Ustawienie **pełny dostęp za pomocą klawiatury** do **wszystkich kontrolek** pozwala na przechodzenie przez wszystkie formanty w oknie lub w oknie dialogowym. Następnie możesz wybrać kontrolek przy użyciu:
 
 - TAB, aby przejść do przodu, za pomocą formantów
 - Shift + Tab, aby przejść wstecz przez kontrolę nad
-- Klawisze strzałek, aby przenieść między kontrolkami w kierunku strzałki.
+- Klawisze strzałek, aby przenieść między kontrolkami w kierunku strzałki
+- Karty Kontrola poza obszar tekstu pola
+- Naciskając klawisz spacji aktywuje kontrolkę obecnie w trybie koncentracji uwagi.
 
-Naciskając klawisz spacji aktywuje kontrolkę wąsko zdefiniowany.
+## <a name="how-to-enable-and-use-voiceover"></a>Instrukcje: Włączanie i używanie VoiceOver
 
-## <a name="how-to-enable-and-use-voice-over"></a>Porady: Włączanie i używanie Voice Over
+Aby włączyć lub wyłączyć naciśnij VoiceOver  **&#8984; + F5**
 
-Włącz VoiceOver, lub wyłącz naciśnij **Cmd + F5**
+Polecenia voiceOver pojawiają się w tym przewodniku jako **VO + * klucz*** zgodnie z którą **VO** odwołuje się do modyfikator w **VoiceOver narzędzie** aplikacji. Modyfikator domyślny jest **Ctrl + Alt**. Na przykład, w zależności od Twojego modyfikator VoiceOver **VO + M** oznacza **Ctrl + Alt + M**. Celu skrócenia programu, klawisze kursora będzie nazywany **po lewej stronie** i **po prawej stronie**itp.
 
-Aby przejść za pomocą poleceń VoiceOver interfejsu użytkownika, użyj następujących poleceń:
+Aby przejść z programu Visual Studio dla komputerów Mac interfejsu użytkownika, należy użyć następujących kombinacji klawiszy:
 
-- Przesunięcie kursora VoiceOver między kontrolkami: **Ctrl + Alt + po lewej stronie Strzałka / Strzałka w prawo**
+- **VO + prawo / lewo**: Przechodzenie między elementy interfejsu użytkownika
+    - VoiceOver ogłaszamy etykiety i typ kontrolki, a wyjaśniają, jak korzystać z niego.
+- **VO + Shift + dół / się**: Krok do / z elementu
+    - Po wewnątrz elementu można użyć **VO + lewym / prawym** do poruszania się jego elementy.
+- **VO + spacja**: Wybierz opcję / wchodzić w interakcje z kontrolką
+- **VO + M**: Korzystać z programu Visual Studio dla komputerów Mac, pasek Menu
 
-   VoiceOver odczytuje się nazwę kontrolki, niektóre szczegóły i co można zrobić z nim.
+Aby uzyskać więcej informacji na temat korzystania z VoiceOver i pełną listę poleceń można znaleźć w następujących przewodnikach:
 
-- Wprowadź grupy i formanty (na przykład konsola rozwiązań przybornika i inne konsole): **Ctrl + Alt + Shift + Strzałka w dół**
-
-   Gdy w formancie, można użyć **Ctrl + Alt + strzałki** Aby poruszać się wewnątrz niego.
-
-Ogólne informacje na temat używania VoiceOver w systemie macOS można znaleźć w następujących przewodnikach:
-
-- [Wprowadzenie do VoiceOver](https://help.apple.com/voiceover/info/guide/10.12/)
+- [Apple VoiceOver Wprowadzenie — przewodnik](https://support.apple.com/en-us/guide/voiceover-guide/welcome/web)
 - [VoiceOver poleceń w systemie macOS](http://lab.dotjay.com/notes/voiceover-commands/)
 
 ## <a name="see-also"></a>Zobacz także

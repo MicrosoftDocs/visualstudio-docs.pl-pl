@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ed3a4e4f67ef8a7cc1e13e513d2f03db5f755363
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 12a4f736217374eefa32dda30111da5e71fbab39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194981"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110482"
 ---
 # <a name="view-dom-event-listeners"></a>Podgląd odbiorników zdarzeń DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,23 +41,23 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 
 #### <a name="to-view-event-listeners"></a>Aby wyświetlić odbiornikiem zdarzeń
 
-1.  W programie Visual Studio należy utworzyć aplikację języka JavaScript, która używa szablon projektu aplikacja Pivot Windows Phone.
+1. W programie Visual Studio należy utworzyć aplikację języka JavaScript, która używa szablon projektu aplikacja Pivot Windows Phone.
 
-2.  Za pomocą szablonu Otwórz w programie Visual Studio, wybierz **Emulator 8.1 WVGA 4 w 512MB** na liście rozwijanej na pasku narzędzi debugowania w debugerze:
+2. Za pomocą szablonu Otwórz w programie Visual Studio, wybierz **Emulator 8.1 WVGA 4 w 512MB** na liście rozwijanej na pasku narzędzi debugowania w debugerze:
 
      ![Wybieranie obiektu docelowego debugowania](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")
 
-3.  Naciśnij klawisz F5, aby uruchomić aplikację w trybie debugowania.
+3. Naciśnij klawisz F5, aby uruchomić aplikację w trybie debugowania.
 
-4.  W uruchomionej aplikacji, przejdź do **sekcja 3** element przestawny.
+4. W uruchomionej aplikacji, przejdź do **sekcja 3** element przestawny.
 
-5.  Przełącz się do programu Visual Studio (Alt + Tab lub F12).
+5. Przełącz się do programu Visual Studio (Alt + Tab lub F12).
 
-6.  W Eksploratorze DOM, wybierz `Find` w prawym górnym rogu.
+6. W Eksploratorze DOM, wybierz `Find` w prawym górnym rogu.
 
-7.  Typ `ListView`, a następnie naciśnij klawisz Enter.
+7. Typ `ListView`, a następnie naciśnij klawisz Enter.
 
-8.  W razie potrzeby wybierz **dalej** przycisk, aby znaleźć `DIV` elementu, który reprezentuje `ListView` kontroli (ten element ma `data-win-control` wartość `WinJS.UI.ListView`).
+8. W razie potrzeby wybierz **dalej** przycisk, aby znaleźć `DIV` elementu, który reprezentuje `ListView` kontroli (ten element ma `data-win-control` wartość `WinJS.UI.ListView`).
 
      `DIV` Element powinny teraz być zaznaczone w programie DOM Explorer.
 
@@ -75,16 +75,16 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 
      **Zdarzenia** karta przedstawia detektorów zdarzeń dla każdego elementu wybranego na liście hierarchii.
 
-###  <a name="Tips"></a> Porady dotyczące rozwiązywania problemów z odbiornikiem zdarzeń
+### <a name="Tips"></a> Porady dotyczące rozwiązywania problemów z odbiornikiem zdarzeń
  W niektórych scenariuszach aplikacji detektorów zdarzeń musi być jawnie usunięte za pomocą [removeEventListener](http://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx). Użyj **zdarzenia** kartę w Eksploratorze DOM, aby sprawdzić, czy odbiorniki zdarzeń zostały usunięte z elementów DOM podczas uruchamiania kodu. Poniżej przedstawiono kilka wskazówek, aby pomóc rozwiązać tego rodzaju problemy:
 
--   Aplikacje korzystające z modelu nawigacji jednej strony można zaimplementować w programie Visual Studio [szablony projektów](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx), nie jest zazwyczaj konieczne jest usunięcie detektory zdarzenia zarejestrowane dla obiektów, takich jak elementy modelu DOM, które są częścią strony. W tym scenariuszu elementu modelu DOM i jego skojarzone ze zdarzeniem odbiorników mają ten sam okres istnienia i mogą być zebranych elementów bezużytecznych.
+- Aplikacje korzystające z modelu nawigacji jednej strony można zaimplementować w programie Visual Studio [szablony projektów](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx), nie jest zazwyczaj konieczne jest usunięcie detektory zdarzenia zarejestrowane dla obiektów, takich jak elementy modelu DOM, które są częścią strony. W tym scenariuszu elementu modelu DOM i jego skojarzone ze zdarzeniem odbiorników mają ten sam okres istnienia i mogą być zebranych elementów bezużytecznych.
 
--   Jeśli okres istnienia obiektu lub DOM element różni się od odbiornika skojarzone ze zdarzeniem, być może trzeba wywołać `removeEventListener` metody. Na przykład, jeśli używasz `window.onresize` zdarzeń, może być konieczne usunięcie odbiornik zdarzeń, jeśli przejdziesz do innej strony, gdzie obsługi zdarzeń.
+- Jeśli okres istnienia obiektu lub DOM element różni się od odbiornika skojarzone ze zdarzeniem, być może trzeba wywołać `removeEventListener` metody. Na przykład, jeśli używasz `window.onresize` zdarzeń, może być konieczne usunięcie odbiornik zdarzeń, jeśli przejdziesz do innej strony, gdzie obsługi zdarzeń.
 
--   Jeśli `removeEventListener` nie powiedzie się usunąć określony odbiornik, może być wprowadzenie nazywany w innym wystąpieniu obiektu. Możesz użyć [bind — metoda (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) metodę, aby rozwiązać ten problem, po dodaniu odbiornika.
+- Jeśli `removeEventListener` nie powiedzie się usunąć określony odbiornik, może być wprowadzenie nazywany w innym wystąpieniu obiektu. Możesz użyć [bind — metoda (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) metodę, aby rozwiązać ten problem, po dodaniu odbiornika.
 
--   Aby usunąć odbiornik zdarzeń, który został dodany za pomocą [bind — metoda (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) lub korzystając z funkcją anonimową, przechowywać wystąpienie funkcji po dodaniu odbiornika. Oto jeden ze sposobów, aby bezpiecznie korzystać z tego wzorca:
+- Aby usunąć odbiornik zdarzeń, który został dodany za pomocą [bind — metoda (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) lub korzystając z funkcją anonimową, przechowywać wystąpienie funkcji po dodaniu odbiornika. Oto jeden ze sposobów, aby bezpiecznie korzystać z tego wzorca:
 
     ```javascript
     // You could use the following code within the constructor function of an object, or
@@ -104,9 +104,9 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
     elem.addEventListener('mouseup', this._handlerFunc.bind(this));
     ```
 
--   Nie można usunąć odbiornik zdarzeń za pomocą `removeEventListener` Jeśli została dodana przy użyciu `obj.on<eventname>` atrybutów, takich jak `window.onresize = handlerFunc`.
+- Nie można usunąć odbiornik zdarzeń za pomocą `removeEventListener` Jeśli została dodana przy użyciu `obj.on<eventname>` atrybutów, takich jak `window.onresize = handlerFunc`.
 
--   Użyj analizatora pamięci JavaScript do [pamięci JavaScript](../profiling/javascript-memory.md) w swojej aplikacji. Odbiorniki zdarzeń, które muszą zostać jawnie usunięte mogą być wyświetlane jako przeciek pamięci.
+- Użyj analizatora pamięci JavaScript do [pamięci JavaScript](../profiling/javascript-memory.md) w swojej aplikacji. Odbiorniki zdarzeń, które muszą zostać jawnie usunięte mogą być wyświetlane jako przeciek pamięci.
 
 ## <a name="see-also"></a>Zobacz też
 
