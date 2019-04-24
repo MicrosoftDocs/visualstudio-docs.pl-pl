@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32c96bf9e206a70f5de38459460d8bdcaee571cc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666562"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045345"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Określanie plików symboli (.pdb) i plików źródłowych w debugerze programu Visual Studio (C#, C++, Visual Basic F#)
 
@@ -128,9 +128,9 @@ Na **narzędzia** > **opcje** > **debugowanie** > **symbole** strony, możesz:
 
 4. Określ moduły, które chcesz, aby debuger można załadować z **symboli (.pdb) lokalizacji** podczas uruchamiania.
 
-   -  Wybierz **Załaduj wszystkie moduły, chyba że wykluczone** (ustawienie domyślne), aby załadować wszystkie symbole dla wszystkich modułów w lokalizacji pliku symboli, z wyjątkiem wykluczania określonych modułów. Aby wykluczyć niektóre moduły, wybierz **Określ wyłączone moduły**, wybierz opcję **+** ikony, wpisz nazwy modułów, które chcesz wykluczyć i wybierz **OK**.
+   - Wybierz **Załaduj wszystkie moduły, chyba że wykluczone** (ustawienie domyślne), aby załadować wszystkie symbole dla wszystkich modułów w lokalizacji pliku symboli, z wyjątkiem wykluczania określonych modułów. Aby wykluczyć niektóre moduły, wybierz **Określ wyłączone moduły**, wybierz opcję **+** ikony, wpisz nazwy modułów, które chcesz wykluczyć i wybierz **OK**.
 
-   -  Aby załadować tylko te moduły, które określisz z lokalizacji plików symboli, wybierz **ładowania tylko określonych modułów**. Wybierz **Określ uwzględnione moduły**, wybierz opcję **+** ikony, wpisz nazwy modułów do uwzględnienia, a następnie wybierz pozycję **OK**. Pliki symboli dla innych modułów nie są ładowane.
+   - Aby załadować tylko te moduły, które określisz z lokalizacji plików symboli, wybierz **ładowania tylko określonych modułów**. Wybierz **Określ uwzględnione moduły**, wybierz opcję **+** ikony, wpisz nazwy modułów do uwzględnienia, a następnie wybierz pozycję **OK**. Pliki symboli dla innych modułów nie są ładowane.
 
 5. Wybierz **OK**.
 
@@ -199,7 +199,7 @@ Tworzenie za pomocą **/debug** utworzyć *.pdb* pliku. Możesz tworzyć aplikac
 
 Ustaw *web.config* pliku tryb debugowania aplikacji ASP.NET. Tryb debugowania powoduje, że ASP.NET generuje symbole dla dynamicznie generowanych plików i umożliwia debugerowi dołączenie do aplikacji ASP.NET. Program Visual Studio automatycznie ustawia to podczas uruchamiania debugowania, jeśli projekt jest utworzony z szablonu projektów sieci web.
 
-##  <a name="manage-symbols-while-debugging"></a>Zarządzanie symbole podczas debugowania
+## <a name="manage-symbols-while-debugging"></a>Zarządzanie symbole podczas debugowania
 
 Możesz użyć **modułów**, **stos wywołań**, **lokalne**, **Autos**, lub dowolnego **Obejrzyj** okna, aby załadować symbole lub zmień opcje symboli podczas debugowania. Aby uzyskać więcej informacji, zobacz [zapoznać się z jak dołącza debuger do swojej aplikacji](../debugger/debugger-tips-and-tricks.md#modules_window).
 
@@ -224,10 +224,10 @@ Podczas debugowania, **modułów** okno zawiera moduły kodu, Debuger jest trakt
 
 Istnieje kilka sposobów, aby debuger wszedł do kodu, który nie ma dostępnych plików symboli lub źródłowych:
 
--  Wejdź do kodu.
--  Podziel na kod z punktu przerwania lub wyjątku.
--  Przełącz do innego wątku.
--  Zmiana ramek stosu przez dwukrotne kliknięcie ramki w **stos wywołań** okna.
+- Wejdź do kodu.
+- Podziel na kod z punktu przerwania lub wyjątku.
+- Przełącz do innego wątku.
+- Zmiana ramek stosu przez dwukrotne kliknięcie ramki w **stos wywołań** okna.
 
 Gdy tak się stanie, debuger wyświetla **Brak załadowanych symboli** lub **Brak załadowanego źródła** strony, aby pomóc Ci znaleźć i załadować niezbędne symbole lub źródła.
 
@@ -235,11 +235,11 @@ Gdy tak się stanie, debuger wyświetla **Brak załadowanych symboli** lub **Bra
 
 **Na potrzeby pomocy Znajdź i załaduj symbole Brak strony dokumentu nie załadowano symboli:**
 
--   Aby zmienić ścieżki wyszukiwania, wybierz niezaznaczoną ścieżkę lub wybierz **nową ścieżkę** lub **Nowa ścieżka usługi VSTS** i wprowadź lub wybierz nową ścieżkę. Wybierz **obciążenia** wyszukać ponownie ścieżki i załadować plik symbolu, jeśli zostanie znaleziony.
--   Aby zastąpić wszelkie opcje symbolu i ponów próbę ścieżki wyszukiwania, wybierz **Przeglądaj i Przeszukuj \<nazwę pliku wykonywalnego >**. Plik symboli jest ładowany, jeśli zostanie znaleziony, lub **Eksploratora plików** zostanie otwarty, można ręcznie wybrać plik symboli.
--   Aby otworzyć **opcje** > **debugowanie** > **symbole** wybierz opcję **Zmień ustawienia symboli**.
--   Aby pokazać demontaż w nowym oknie jeden raz, wybierz pozycję **wyświetlić dezasemblację**, lub wybierz **okna dialogowego Opcje** ustawić opcję, aby zawsze pokazywać deasemblację, gdy nie znaleziono plików źródłowych lub symboli.
--   Aby wyświetlić lokalizacje przeszukiwane i wynik, rozwiń **informacje o ładowaniu symboli**.
+- Aby zmienić ścieżki wyszukiwania, wybierz niezaznaczoną ścieżkę lub wybierz **nową ścieżkę** lub **Nowa ścieżka usługi VSTS** i wprowadź lub wybierz nową ścieżkę. Wybierz **obciążenia** wyszukać ponownie ścieżki i załadować plik symbolu, jeśli zostanie znaleziony.
+- Aby zastąpić wszelkie opcje symbolu i ponów próbę ścieżki wyszukiwania, wybierz **Przeglądaj i Przeszukuj \<nazwę pliku wykonywalnego >**. Plik symboli jest ładowany, jeśli zostanie znaleziony, lub **Eksploratora plików** zostanie otwarty, można ręcznie wybrać plik symboli.
+- Aby otworzyć **opcje** > **debugowanie** > **symbole** wybierz opcję **Zmień ustawienia symboli**.
+- Aby pokazać demontaż w nowym oknie jeden raz, wybierz pozycję **wyświetlić dezasemblację**, lub wybierz **okna dialogowego Opcje** ustawić opcję, aby zawsze pokazywać deasemblację, gdy nie znaleziono plików źródłowych lub symboli.
+- Aby wyświetlić lokalizacje przeszukiwane i wynik, rozwiń **informacje o ładowaniu symboli**.
 
 Jeśli narzędzie debugger znajdzie *.pdb* pliku po wykonaj jedną z opcji, a można pobrać pliku źródłowego, korzystając z informacji podanych w *.pdb* pliku, wyświetlane źródło. W przeciwnym razie wyświetla **Brak załadowanego źródła** strona, która opisuje problem, wraz z łączami do akcji, które mogą rozwiązać problem.
 

@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ebf931773577add65a7479c7dcd90da9c58c556
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: fbd12f7579cc401284515de1f950ad2a9809dbca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770702"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116592"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Standardowe stereotypy dla modeli UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,37 +41,37 @@ Za dodawanie stereotypów do elementów modelu UML, aby podać dodatkowe informa
   
 #### <a name="to-link-a-profile-to-a-model-or-a-package"></a>Aby połączyć profil modelu lub pakietu  
   
-1.  Otwórz **Eksploratora modelu UML**. Na **architektury** menu wskaż **Windows**, a następnie kliknij przycisk **Eksploratora modelu UML**.  
+1. Otwórz **Eksploratora modelu UML**. Na **architektury** menu wskaż **Windows**, a następnie kliknij przycisk **Eksploratora modelu UML**.  
   
-2.  Zlokalizuj pakiet lub model, który zawiera wszystkie elementy, których można również zastosować stereotypy w profilu.  
+2. Zlokalizuj pakiet lub model, który zawiera wszystkie elementy, których można również zastosować stereotypy w profilu.  
   
-3.  Kliknij prawym przyciskiem myszy pakiet lub model, a następnie kliknij przycisk **właściwości**.  
+3. Kliknij prawym przyciskiem myszy pakiet lub model, a następnie kliknij przycisk **właściwości**.  
   
-4.  W **właściwości** oknie **profile** właściwości profilów, które chcesz.  
+4. W **właściwości** oknie **profile** właściwości profilów, które chcesz.  
   
 #### <a name="to-remove-the-link-between-a-profile-and-a-model-or-package"></a>Aby usunąć powiązanie profilu i modelu lub pakietu  
   
-1.  W Eksploratorze modelu UML, kliknij prawym przyciskiem myszy modelu lub pakietu, a następnie kliknij przycisk **właściwości**.  
+1. W Eksploratorze modelu UML, kliknij prawym przyciskiem myszy modelu lub pakietu, a następnie kliknij przycisk **właściwości**.  
   
-2.  W oknie właściwości ustaw **profile** właściwość pustą.  
+2. W oknie właściwości ustaw **profile** właściwość pustą.  
   
     > [!NOTE]
     >  Można odłączyć elementy od profilu, tylko wtedy, gdy żaden z elementów w modelu lub pakietu Użyj Stereotypy tego profilu.  
   
 #### <a name="to-apply-a-stereotype-to-a-model-element"></a>Aby zastosować stereotyp do elementu modelu  
   
-1.  Kliknij prawym przyciskiem myszy element modelu w diagramie lub w **Eksploratora modelu UML**, a następnie kliknij przycisk **właściwości**.  
+1. Kliknij prawym przyciskiem myszy element modelu w diagramie lub w **Eksploratora modelu UML**, a następnie kliknij przycisk **właściwości**.  
   
-2.  Kliknij przycisk **Stereotypy** właściwości i wybierz pozycję stereotypów, który chcesz zastosować.  
+2. Kliknij przycisk **Stereotypy** właściwości i wybierz pozycję stereotypów, który chcesz zastosować.  
   
      Wybrane Stereotypy pojawiają się ostrokątnego «» w element modelu, w przypadku większości elementu.  
   
     > [!NOTE]
     >  Jeśli nie widzisz **Stereotypy** właściwości, lub jeśli nie ma stereotyp ma, upewnij się, że element modelu znajduje się wewnątrz pakietu lub modelu, do którego został połączony odpowiedni profil.  
   
-3.  Niektóre Stereotypy umożliwiają ustawienie wartości dodatkowe właściwości dla elementu modelu. Aby wyświetlić te właściwości, rozwiń węzeł **Stereotypy** właściwości.  
+3. Niektóre Stereotypy umożliwiają ustawienie wartości dodatkowe właściwości dla elementu modelu. Aby wyświetlić te właściwości, rozwiń węzeł **Stereotypy** właściwości.  
   
-###  <a name="L2"></a> Profil standardowy UML pamięci podręcznej L2  
+### <a name="L2"></a> Profil standardowy UML pamięci podręcznej L2  
  Stereotypy następujące może służyć do specialize znaczenie elementów modelu UML, chyba, że link do profilu została usunięta z modelu.  
   
  Dokładne znaczenie tych stereotypów jest określana przez własnych Konwencji lokalnych i narzędzi, które można użyć do przetwarzania modelu.  
@@ -111,7 +111,7 @@ Za dodawanie stereotypów do elementów modelu UML, aby podać dodatkowe informa
 |— typ|Class|Określa zachowanie obiektu bez podania, jak jest zaimplementowana. Obiekt jest elementem członkowskim typu, jeśli są zgodne ze specyfikacją.|  
 |utility|Class|Kolekcja funkcji statycznych. Klasa nie ma żadnych wystąpień.|  
   
-###  <a name="L3"></a> L3 standardowy profil UML  
+### <a name="L3"></a> L3 standardowy profil UML  
  Stereotypy następujące może służyć do specialize znaczenie elementów modelu UML, jeśli profil nie zostało odłączone od modelu.  
   
  Dokładne znaczenie tych stereotypów jest określana przez własnych Konwencji lokalnych i narzędzi, które można użyć do przetwarzania modelu.  
@@ -122,7 +122,7 @@ Za dodawanie stereotypów do elementów modelu UML, aby podać dodatkowe informa
 |metaModel|Model|Określa język modelowania, takich jak wariant UML lub języka specyficznego dla domeny.|  
 |systemModel|Model|Model, który jest kolekcją modeli, które dotyczą tego samego systemu, na przykład specyfikację, realizacja i śledzenia relacji między nimi.|  
   
-##  <a name="NetProfile"></a> C# Profile  
+## <a name="NetProfile"></a> C# Profile  
  Stereotypy zdefiniowane w tym profilu pozwalają wskazać, że element modelu ma na celu translacji na kod programu. Każdy stereotyp definiuje dodatkowe właściwości, które można ustawić dla elementu modelu.  
   
  Aby udostępnić te stereotypów, połączyć modelu lub pakietu profil C#. Mogą następnie zastosować Stereotypy do elementów modelu, w tym modelu lub pakietu.  

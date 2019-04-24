@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: baa5381013e955dcf4b8e301bba52a28e39bfc18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 66e9e5a3f0a46f54346c71d85bad03846c12f937
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779775"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050313"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Instrukcje: Korzystanie z okna równoległego wyrażenia kontrolnego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,47 +45,47 @@ W oknie czujki równoległej może jednocześnie wyświetlać wartości, które 
   
 ### <a name="to-display-the-parallel-watch-window"></a>Aby wyświetlić okno czujki równoległej  
   
-1.  Ustaw punkt przerwania w kodzie.  
+1. Ustaw punkt przerwania w kodzie.  
   
-2.  Na pasku menu wybierz **debugowania**, **Rozpocznij debugowanie**. Poczekaj, aż aplikacja do osiągnięcia punktu przerwania.  
+2. Na pasku menu wybierz **debugowania**, **Rozpocznij debugowanie**. Poczekaj, aż aplikacja do osiągnięcia punktu przerwania.  
   
-3.  Na pasku menu wybierz **debugowania**, **Windows**, **równoległego wyrażenia kontrolnego**, a następnie wybierz Okno czujki. Możesz otworzyć maksymalnie cztery systemu windows.  
+3. Na pasku menu wybierz **debugowania**, **Windows**, **równoległego wyrażenia kontrolnego**, a następnie wybierz Okno czujki. Możesz otworzyć maksymalnie cztery systemu windows.  
   
 ### <a name="to-add-a-watch-expression"></a>Aby dodać wyrażenia kontrolnego  
   
--   Wybierz  **\<Dodaj wyrażenie kontrolne >** , a następnie określ wyrażenia kontrolnego.  
+- Wybierz  **\<Dodaj wyrażenie kontrolne >** , a następnie określ wyrażenia kontrolnego.  
   
 ### <a name="to-flag-or-unflag-a-thread"></a>Flaga lub usuń flagę wątku  
   
--   Wybierz kolumny flag wiersza, lub Otwórz menu skrótów dla wątku i wybierz **flagi** lub **Unflag**.  
+- Wybierz kolumny flag wiersza, lub Otwórz menu skrótów dla wątku i wybierz **flagi** lub **Unflag**.  
   
 ### <a name="to-display-only-flagged-threads"></a>Aby wyświetlić tylko oflagowane wątki  
   
--   Kliknij przycisk Pokaż tylko oflagowane w lewym górnym rogu **równoległego wyrażenia kontrolnego** okna.  
+- Kliknij przycisk Pokaż tylko oflagowane w lewym górnym rogu **równoległego wyrażenia kontrolnego** okna.  
   
 ### <a name="to-switch-frames"></a>Aby przełączyć ramki  
   
--   Kliknij dwukrotnie kolumnę ramki. (Klawiatura: Zaznacz wiersz i naciśnij klawisz Enter).  
+- Kliknij dwukrotnie kolumnę ramki. (Klawiatura: Zaznacz wiersz i naciśnij klawisz Enter).  
   
 ### <a name="to-sort-a-column"></a>Aby posortować kolumnę  
   
--   Wybierz nagłówek kolumny.  
+- Wybierz nagłówek kolumny.  
   
 ### <a name="to-group-threads"></a>Grupa wątków  
   
--   Otwórz menu skrótów dla okno czujki równoległej, wybierz polecenie **Group By**, a następnie wybierz element odpowiednie podmenu.  
+- Otwórz menu skrótów dla okno czujki równoległej, wybierz polecenie **Group By**, a następnie wybierz element odpowiednie podmenu.  
   
 ### <a name="to-freeze-or-thaw-threads"></a>Na blokowanie lub odblokowywanie wątków  
   
--   Otwórz menu skrótów dla wiersza, a następnie wybierz **Freeze** lub **Odblokuj**.  
+- Otwórz menu skrótów dla wiersza, a następnie wybierz **Freeze** lub **Odblokuj**.  
   
 ### <a name="to-export-the-data-in-the-parallel-watch-window"></a>Aby wyeksportować dane w oknie czujki równoległej  
   
--   Wybierz **Otwórz w programie Excel** przycisk, a następnie wybierz **Otwórz w programie Excel** lub **Eksportuj do pliku CSV**.  
+- Wybierz **Otwórz w programie Excel** przycisk, a następnie wybierz **Otwórz w programie Excel** lub **Eksportuj do pliku CSV**.  
   
 ### <a name="to-filter-by-a-boolean-expression"></a>Aby filtrować według wyrażenie warunkowe  
   
--   Wprowadź wyrażenie warunkowe w **filtr, używając wyrażenia warunkowego** pole. Debuger ocenia wyrażenia dla każdego kontekstu wątku. Tylko wiersze, w których wartość jest `true` są wyświetlane.  
+- Wprowadź wyrażenie warunkowe w **filtr, używając wyrażenia warunkowego** pole. Debuger ocenia wyrażenia dla każdego kontekstu wątku. Tylko wiersze, w których wartość jest `true` są wyświetlane.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   

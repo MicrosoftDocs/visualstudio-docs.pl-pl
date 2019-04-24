@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: efad4455ab5d3cb0daa16482e303cc82296cc2e4
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
-ms.translationtype: MT
+ms.openlocfilehash: 7c50bb7bf6c61a8061b3817c53027a3dd6e5b29f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323990"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102630"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Uaktualnianie niestandardowych szablonów projektów i elementów dla programu Visual Studio 2017
 
@@ -32,36 +32,36 @@ Do innych lokalizacji (niezwiązanych z użytkownikiem) musi zawierać plik mani
 
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>Jak zaktualizować rozszerzenia VSIX przy użyciu projektu lub szablonów elementów
 
-1.  Otwórz rozwiązanie w programie Visual Studio 2017. Użytkownik jest proszony o uaktualnienie kodu. Kliknij przycisk **OK**.
+1. Otwórz rozwiązanie w programie Visual Studio 2017. Użytkownik jest proszony o uaktualnienie kodu. Kliknij przycisk **OK**.
 
-2.  Po zakończeniu uaktualniania, konieczne może być zmiana wersji docelowej instalacji. W projekcie VSIX, otwórz plik source.extension.vsixmanifest, a następnie wybierz **Instaluj obiekty docelowe** kartę. Jeśli **zakres wersji** pole jest **[14.0]**, kliknij przycisk **Edytuj** i zmień go na obejmują program Visual Studio 2017. Na przykład można ustawić go **[14.0,15.0]** instalowania rozszerzenia do programu Visual Studio 2015 lub Visual Studio 2017 lub **[15.0]** go zainstalować, po prostu Visual Studio 2017.
+2. Po zakończeniu uaktualniania, konieczne może być zmiana wersji docelowej instalacji. W projekcie VSIX, otwórz plik source.extension.vsixmanifest, a następnie wybierz **Instaluj obiekty docelowe** kartę. Jeśli **zakres wersji** pole jest **[14.0]**, kliknij przycisk **Edytuj** i zmień go na obejmują program Visual Studio 2017. Na przykład można ustawić go **[14.0,15.0]** instalowania rozszerzenia do programu Visual Studio 2015 lub Visual Studio 2017 lub **[15.0]** go zainstalować, po prostu Visual Studio 2017.
 
-3.  Należy ponownie skompilować kod.
+3. Należy ponownie skompilować kod.
 
-4.  Zamknij program Visual Studio.
+4. Zamknij program Visual Studio.
 
-5.  Zainstalować VSIX.
+5. Zainstalować VSIX.
 
-6.  Aktualizację można sprawdzić, wykonując następujące czynności:
+6. Aktualizację można sprawdzić, wykonując następujące czynności:
 
-    1.  Skanowania zmian plików jest aktywowany przez następujący klucz rejestru:
+    1. Skanowania zmian plików jest aktywowany przez następujący klucz rejestru:
 
          **reg add hklm\software\microsoft\visualstudio\15.0\VSTemplate /v DisableTemplateScanning /t REG_DWORD /d 1 /reg:32**
 
-    2.  Po dodaniu klucza uruchomienia **devenv/installvstemplates**.
+    2. Po dodaniu klucza uruchomienia **devenv/installvstemplates**.
 
-    3.  Otwórz ponownie program Visual Studio. Szablon powinien znajdować się w oczekiwanej lokalizacji.
+    3. Otwórz ponownie program Visual Studio. Szablon powinien znajdować się w oczekiwanej lokalizacji.
 
     > [!NOTE]
     >  Szablony projektów Visual Studio Extensibility nie są dostępne, gdy klucz rejestru jest obecny. Należy usunąć klucz rejestru (i ponownie uruchom **devenv/installvstemplates**) z nich korzystać.
 
 ## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>Inne zalecenia dotyczące wdrażania szablonów projektów i elementów
 
--   Należy unikać używania plików zip szablonu. Pliki z rozszerzeniem zip szablonu, które pliki muszą mieć bez kompresji w celu pobrania zasobów i zawartości, więc będą one costlier do użycia. Zamiast tego należy wdrożyć szablonów projektów i elementów jako pojedyncze pliki, w ramach własnego katalogu w celu przyspieszenia inicjowanie szablonu. Rozszerzenia VSIX dla zadania kompilacji zestawu SDK zostanie automatycznie Rozpakuj dowolnego zip szablonu podczas tworzenia pliku VSIX.
+- Należy unikać używania plików zip szablonu. Pliki z rozszerzeniem zip szablonu, które pliki muszą mieć bez kompresji w celu pobrania zasobów i zawartości, więc będą one costlier do użycia. Zamiast tego należy wdrożyć szablonów projektów i elementów jako pojedyncze pliki, w ramach własnego katalogu w celu przyspieszenia inicjowanie szablonu. Rozszerzenia VSIX dla zadania kompilacji zestawu SDK zostanie automatycznie Rozpakuj dowolnego zip szablonu podczas tworzenia pliku VSIX.
 
--   Należy unikać wpisy identyfikatorów pakietu/zasobów dla szablonu nazwę, opis, ikona lub aby uniknąć niepotrzebnych zasobów załadowań zestawów podczas odnajdywania szablonów w wersji zapoznawczej. Zamiast tego można użyć zlokalizowane manifesty można utworzyć wpisu szablonu dla poszczególnych ustawień regionalnych, który używa właściwości lub zlokalizowanych nazw.
+- Należy unikać wpisy identyfikatorów pakietu/zasobów dla szablonu nazwę, opis, ikona lub aby uniknąć niepotrzebnych zasobów załadowań zestawów podczas odnajdywania szablonów w wersji zapoznawczej. Zamiast tego można użyć zlokalizowane manifesty można utworzyć wpisu szablonu dla poszczególnych ustawień regionalnych, który używa właściwości lub zlokalizowanych nazw.
 
--   Jeśli w tym szablony jako elementy pliku generowania manifestu może nie dać oczekiwanych wyników. W takim przypadku należy dodać ręcznie wygenerowanego manifestu do projektu VSIX.
+- Jeśli w tym szablony jako elementy pliku generowania manifestu może nie dać oczekiwanych wyników. W takim przypadku należy dodać ręcznie wygenerowanego manifestu do projektu VSIX.
 
 ## <a name="file-changes-in-project-and-item-templates"></a>Zmiany plików szablonów projektów i elementów
 Pokazujemy punkty różnica między Visual Studio 2015 i Visual Studio 2017 w wersji plików szablonów, aby mogli tworzyć nowe pliki poprawnie.
