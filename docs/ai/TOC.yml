@@ -1,52 +1,45 @@
-items:
 - name: Narzędzia Visual Studio Tools for AI
   href: index.yml
   items:
-  - name: Omówienie
-    items:
-    - name: Informacje o narzędziach Visual Studio Tools for AI
-      href: about-ai-tools.md
-  - name: Instalacja
-    href: installation.md
-  - name: Przewodniki Szybki Start
-    items:
-    - name: Tensorflow + Python
-      href: tensorflow-local.md
-  - name: Samouczki
-    items:
-    - name: TensorFlow + Maszyna wirtualna uczenia głębokiego platformy Azure
-      href: tensorflow-vm.md
-  - name: Przewodniki z instrukcjami
-    items:
-    - name: Tworzenie projektu
+    - name: Omówienie
       items:
-      - name: Tworzenie projektu z galerii przykładów
-        href: create-project-gallery.md
-      - name: Tworzenie projektu z istniejącego kodu
-        href: create-project-existing.md
-      - name: Tworzenie projektu z szablonu
-        href: create-project.md
-      - name: Tworzenie projektu z repozytorium GitHub
-        href: create-project-repo.md
-    - name: Uczenie modelu
-      href: train-model.md
-    - name: Wyświetlanie szczegółów zadania
-      href: job-details.md
-    - name: Monitorowanie użycia procesora GPU
-      href: monitor-gpu.md
-    - name: Monitorowanie aplikacji TensorBoard
-      href: monitor-tensorboard.md
-    - name: Zarządzanie magazynem
-      href: manage-storage.md
-  - name: Przykłady
-    items:
-    - name: GitHub
-      href: https://github.com/Microsoft/samples-for-ai
-    - name: Galeria usługi Machine Learning
-      href: https://gallery.cortanaintelligence.com/projects
-ms.openlocfilehash: 06ed7a4c59a97742f3055d0d5084f28f9022adc9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: HT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624389"
+        - name: Informacje o narzędziach Visual Studio Tools for AI
+          href: about-ai-tools.md
+    - name: Instalacja
+      href: installation.md
+    - name: Przewodniki Szybki Start
+      items:
+        - name: Tensorflow + Python
+          href: tensorflow-local.md
+    - name: Samouczki
+      items:
+        - name: TensorFlow + Maszyna wirtualna uczenia głębokiego platformy Azure
+          href: tensorflow-vm.md
+    - name: Przewodniki z instrukcjami
+      items:
+        - name: Tworzenie projektu
+          items:
+            - name: Tworzenie projektu z galerii przykładów
+              href: create-project-gallery.md
+            - name: Tworzenie projektu z istniejącego kodu
+              href: create-project-existing.md
+            - name: Tworzenie projektu z szablonu
+              href: create-project.md
+            - name: Tworzenie projektu z repozytorium GitHub
+              href: create-project-repo.md
+        - name: Uczenie modelu
+          href: train-model.md
+        - name: Wyświetlanie szczegółów zadania
+          href: job-details.md
+        - name: Monitorowanie użycia procesora GPU
+          href: monitor-gpu.md
+        - name: Monitorowanie aplikacji TensorBoard
+          href: monitor-tensorboard.md
+        - name: Zarządzanie magazynem
+          href: manage-storage.md
+    - name: Przykłady
+      items:
+        - name: GitHub
+          href: 'https://github.com/Microsoft/samples-for-ai'
+        - name: Galeria usługi Machine Learning
+          href: 'https://gallery.cortanaintelligence.com/projects'
