@@ -8,7 +8,7 @@
           href: overview-debug-interface-access-sdk.md
         - name: Używanie zapytań dotyczących pliku .Pdb
           href: querying-the-dot-pdb-file.md
-    - name: Symbole i tagi symboli
+    - name: Symbole i znaczniki symboli
       href: symbols-and-symbol-tags.md
       items:
         - name: Lokalizacje symboli

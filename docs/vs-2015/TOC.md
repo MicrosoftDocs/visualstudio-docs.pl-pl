@@ -1,6 +1,6 @@
 # [Visual Studio 2015 — Zapraszamy!](welcome-to-visual-studio-2015.md)
 ## [Co nowego w programie Visual Studio 2015](what-s-new-in-visual-studio-2015.md)
-## [Zainstaluj program Visual Studio 2015](install/install-visual-studio-2015.md)
+## [Instalowanie programu Visual Studio 2015](install/install-visual-studio-2015.md)
 ## [Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio](porting/porting-migrating-and-upgrading-visual-studio-projects.md)
 ## [Visual Studio IDE](ide/visual-studio-ide.md)
 ## [Rozszerzalność](extensibility/visual-studio-sdk.md)
