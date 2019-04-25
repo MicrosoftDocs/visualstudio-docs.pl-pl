@@ -12,12 +12,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e25ce519510f9b003784806bf6055b19c11ba285
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 21acd0970415db23da330ece46131cde72cd706a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793766"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118009"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Edycja zakodowanych testów interfejsu użytkownika za pomocą edytora kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,28 +26,28 @@ Edytor kodowanego testu interfejsu użytkownika umożliwia łatwe modyfikowanie 
   
  **Wymagania**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="why-should-i-do-this"></a>Dlaczego należy to zrobić?  
  Za pomocą edytora testu interfejsu użytkownika jest szybsza i bardziej efektywne niż edytowanie kodu w metodach testów kodowanego interfejsu użytkownika za pomocą edytora kodu. Za pomocą interfejsu użytkownika edytora kodowanego testu, można użyć narzędzi i menu skrótów szybko zlokalizować i modyfikować wartości właściwości skojarzone z działania interfejsu użytkownika i kontrolek. Na przykład służy interfejs użytkownika edytora kodowanego testu na pasku narzędzi do wykonywania następujących poleceń:  
   
  ![Edito testu interfejsu użytkownika](../test/media/uitesteditor.png "UITestEditor")  
   
-1.  [Znajdź](../ide/finding-and-replacing-text.md) ułatwia wykrywanie, akcje interfejsu użytkownika i kontrolek.  
+1. [Znajdź](../ide/finding-and-replacing-text.md) ułatwia wykrywanie, akcje interfejsu użytkownika i kontrolek.  
   
-2.  [Usuń](#CodedUITestEditor_DeleteUIActions) spowoduje usunięcie niepożądanych akcji UI.  
+2. [Usuń](#CodedUITestEditor_DeleteUIActions) spowoduje usunięcie niepożądanych akcji UI.  
   
-3.  **Zmień nazwę** zmiany nazwy dla metody testowe i formanty.  
+3. **Zmień nazwę** zmiany nazwy dla metody testowe i formanty.  
   
-4.  **Właściwości** zostanie otwarte okno właściwości dla wybranego elementu.  
+4. **Właściwości** zostanie otwarte okno właściwości dla wybranego elementu.  
   
-5.  [Podziel do nowej metody](#CodedUITestEditor_SplitMethods) umożliwia modularyzacji działania interfejsu użytkownika.  
+5. [Podziel do nowej metody](#CodedUITestEditor_SplitMethods) umożliwia modularyzacji działania interfejsu użytkownika.  
   
-6.  [Przenieś kod](#CodedUITestEditor_MoveMethods) dodaje niestandardowy kod do metod badania.  
+6. [Przenieś kod](#CodedUITestEditor_MoveMethods) dodaje niestandardowy kod do metod badania.  
   
-7.  [Wstaw opóźnienie przed](#CodedUITestEditor_InsertDelay) dodaje Wstrzymaj przed akcją UI wyrażona w milisekundach.  
+7. [Wstaw opóźnienie przed](#CodedUITestEditor_InsertDelay) dodaje Wstrzymaj przed akcją UI wyrażona w milisekundach.  
   
-8.  [Zlokalizuj formant interfejsu użytkownika](#CodedUITestEditor_LocateUIControl) identyfikuje położenie formantu w Interfejsie użytkownika aplikacji w ramach testu.  
+8. [Zlokalizuj formant interfejsu użytkownika](#CodedUITestEditor_LocateUIControl) identyfikuje położenie formantu w Interfejsie użytkownika aplikacji w ramach testu.  
   
 9. [Zlokalizuj wszystkie](#CodedUITestEditor_LocateDecendants) upewnieniu się, kontrolować właściwość i znaczące zmiany i kontrolki w aplikacji.  
   
@@ -67,7 +67,7 @@ Edytor kodowanego testu interfejsu użytkownika umożliwia łatwe modyfikowanie 
  *Nie widzę* edytora kodowanego testu interfejsu użytkownika.  
  Być może używasz wersji programu Visual Studio Enterprise wcześniejszych niż 2012. Edytor kodowanego testu interfejsu użytkownika było również dostępne w Visual Studio 2010 Feature Pack 2 z subskrypcją MSDN. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Microsoft Visual Studio 2010 Feature Pack 2](http://go.microsoft.com/fwlink/?LinkID=204119).  
   
-##  <a name="CodedUITestEditor_EditActionAndControlProperties"></a> Modyfikowanie właściwości akcji UI oraz odpowiadające im właściwości kontrolki  
+## <a name="CodedUITestEditor_EditActionAndControlProperties"></a> Modyfikowanie właściwości akcji UI oraz odpowiadające im właściwości kontrolki  
  Za pomocą edytora testu interfejsu użytkownika, możesz szybko znaleźć i wyświetlić wszystkie akcje interfejsu użytkownika w swoich metod testowych. Po wybraniu akcji interfejsu użytkownika w edytorze odpowiedni formant automatycznie zostanie wyróżniona. Podobnie jeśli wybranie kontrolki skojarzonych z nimi działań interfejsu użytkownika są wyróżnione. Po wybraniu akcji interfejsu użytkownika lub kontrolki, następnie jest łatwe do zmodyfikowania właściwości, które odnoszą się do jego oknie dialogowym właściwości.  
   
  ![Właściwości akcji UI](../test/media/codeduiedituiaction.png "CodedUIEditUIAction")  
@@ -75,7 +75,7 @@ Edycja właściwości akcji UI
   
  Aby zmodyfikować właściwości dla akcji interfejsu użytkownika w **działania interfejsu użytkownika** okienku rozwiń metody testowej, który zawiera działania interfejsu użytkownika, który chcesz edytować właściwości, wybierz działania interfejsu użytkownika, a następnie zmodyfikuj właściwości w oknie właściwości.  
   
- Na przykład jeśli serwer nie jest dostępny i ma akcji interfejsu użytkownika skojarzonego z przeglądarką sieci Web, stanów **przejdź do strony sieci Web "<http://Contoso1/default.aspx’>**, można zmienić adres URL do `‘http://Contoso2/default.aspx’`.  
+ Na przykład jeśli serwer nie jest dostępny i ma akcji interfejsu użytkownika skojarzonego z przeglądarką sieci Web, stanów **przejdź do strony sieci Web "<http://Contoso1/default.aspx’>**, można zmienić adres URL do `‘ http://Contoso2/default.aspx’`.  
   
  ![Właściwości formantu](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Edycja właściwości kontrolki  
@@ -89,24 +89,24 @@ Edycja właściwości kontrolki
  *Co jeszcze muszę wiedzieć?*  
  **Porady**  
   
--   ![Porada](../test/media/tip.png "Porada") , jeśli nie zostanie wyświetlone okno właściwości, naciśnij i przytrzymaj **Alt** podczas, gdy użytkownik naciśnie klawisz **Enter**, lub też nacisnąć klawisz **F4**.  
+- ![Porada](../test/media/tip.png "Porada") , jeśli nie zostanie wyświetlone okno właściwości, naciśnij i przytrzymaj **Alt** podczas, gdy użytkownik naciśnie klawisz **Enter**, lub też nacisnąć klawisz **F4**.  
   
--   ![Porada](../test/media/tip.png "Porada") Aby cofnąć wprowadzone zmiany właściwości, zaznacz **Cofnij** z **Edytuj** menu lub naciśnij klawisze Ctrl + Z.  
+- ![Porada](../test/media/tip.png "Porada") Aby cofnąć wprowadzone zmiany właściwości, zaznacz **Cofnij** z **Edytuj** menu lub naciśnij klawisze Ctrl + Z.  
   
--   ![Porada](../test/media/tip.png "Porada") można użyć **znaleźć** przycisk na pasku narzędzi edytora kodowanego testu interfejsu użytkownika, aby otworzyć narzędzie Znajdź i Zamień w programie Visual Studio. Znajdź formant można następnie użyć do zlokalizowania działania interfejsu użytkownika w edytorze kodowanego testu interfejsu użytkownika. Na przykład, możesz spróbować znaleźć "kliknij przycisk"Logowanie"." Może to być przydatne w testach dużych. Należy pamiętać, że nie można użyć funkcji replace, za pomocą narzędzia Znajdź i Zamień w interfejsie użytkownika edytora kodowanego testu. Aby uzyskać więcej informacji, zobacz Znajdź w kontrolce [Znajdowanie i zastępowanie tekstu](../ide/finding-and-replacing-text.md).  
+- ![Porada](../test/media/tip.png "Porada") można użyć **znaleźć** przycisk na pasku narzędzi edytora kodowanego testu interfejsu użytkownika, aby otworzyć narzędzie Znajdź i Zamień w programie Visual Studio. Znajdź formant można następnie użyć do zlokalizowania działania interfejsu użytkownika w edytorze kodowanego testu interfejsu użytkownika. Na przykład, możesz spróbować znaleźć "kliknij przycisk"Logowanie"." Może to być przydatne w testach dużych. Należy pamiętać, że nie można użyć funkcji replace, za pomocą narzędzia Znajdź i Zamień w interfejsie użytkownika edytora kodowanego testu. Aby uzyskać więcej informacji, zobacz Znajdź w kontrolce [Znajdowanie i zastępowanie tekstu](../ide/finding-and-replacing-text.md).  
   
--   ![Porada](../test/media/tip.png "Porada") czasami może być trudne do wizualizacji, gdzie kontrolki znajdują się w Interfejsie użytkownika aplikacji w ramach testu. Jest jedną z możliwości edytora kodowanego testu interfejsu użytkownika, można wybrać kontrolkę mapy formantów interfejsu użytkownika na liście i wyświetlić jego lokalizację w testowanej aplikacji. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Lokalizowanie kontrolki interfejsu użytkownika w aplikacji poddawanej testowi](#CodedUITestEditor_LocateUIControl) znajduje się dalej poniżej w tym temacie.  
+- ![Porada](../test/media/tip.png "Porada") czasami może być trudne do wizualizacji, gdzie kontrolki znajdują się w Interfejsie użytkownika aplikacji w ramach testu. Jest jedną z możliwości edytora kodowanego testu interfejsu użytkownika, można wybrać kontrolkę mapy formantów interfejsu użytkownika na liście i wyświetlić jego lokalizację w testowanej aplikacji. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Lokalizowanie kontrolki interfejsu użytkownika w aplikacji poddawanej testowi](#CodedUITestEditor_LocateUIControl) znajduje się dalej poniżej w tym temacie.  
   
--   ![Porada](../test/media/tip.png "Porada") może być konieczne rozwinąć kontrolki kontenera, który zawiera formant, który chcesz edytować. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Lokalizowanie formantu i jego elementy potomne](#CodedUITestEditor_LocateDecendants) znajduje się dalej poniżej w tym temacie.  
+- ![Porada](../test/media/tip.png "Porada") może być konieczne rozwinąć kontrolki kontenera, który zawiera formant, który chcesz edytować. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Lokalizowanie formantu i jego elementy potomne](#CodedUITestEditor_LocateDecendants) znajduje się dalej poniżej w tym temacie.  
   
-##  <a name="CodedUITestEditor_DeleteUIActions"></a> Usuwanie niepożądanych akcji UI  
+## <a name="CodedUITestEditor_DeleteUIActions"></a> Usuwanie niepożądanych akcji UI  
  Można łatwo usunąć niepożądanych akcji UI w kodowanego testu interfejsu użytkownika.  
   
  ![Usuń działania interfejsu użytkownika](../test/media/codeduideleteuiaction.png "CodedUIDeleteUIAction")  
   
  W **działania interfejsu użytkownika** okienku rozwiń metody testowej, który zawiera działania interfejsu użytkownika, który chcesz usunąć. Otwórz menu skrótów dla akcji interfejsu użytkownika, a następnie wybierz **Usuń**.  
   
-##  <a name="CodedUITestEditor_SplitMethods"></a> Podziel metody testowej na dwa odrębne metody  
+## <a name="CodedUITestEditor_SplitMethods"></a> Podziel metody testowej na dwa odrębne metody  
  Możesz podzielić metodę testową, aby zawęzić lub modularyzację działania interfejsu użytkownika. Na przykład test może być metodą jeden test za pomocą akcji interfejsu użytkownika w dwóch kontrolek w kontenerze. Akcje interfejsu użytkownika musi być lepiej modularized za pomocą dwóch metod, które odnoszą się do jednego kontenera.  
   
  ![Metoda testowa Splt](../test/media/codeduitestsplitmethod1.png "CodedUITestSplitMethod1")  
@@ -134,7 +134,7 @@ Edycja właściwości kontrolki
   
    Pojawi się okno dialogowe programu Microsoft Visual Studio. Zawiera ono ostrzeżenie, że należy zmodyfikować każdy kod odwołujący się do metody. Wybierz **tak**.  
   
-##  <a name="CodedUITestEditor_MoveMethods"></a> Przenieś metody testowej do pliku UIMap w celu ułatwienia dostosowywania  
+## <a name="CodedUITestEditor_MoveMethods"></a> Przenieś metody testowej do pliku UIMap w celu ułatwienia dostosowywania  
  Jeśli stwierdzisz, że jeden swoje metody testowe w interfejsie użytkownika usług kodowany test wymaga kodu niestandardowego, przenieś go do pliku UIMap.cs lub UIMap.vb. W przeciwnym razie kodu zostaną zastąpione po każdym kodowanego testu interfejsu użytkownika jest ponownie kompilowana. Jeśli metoda nie jest przeniesienie, niestandardowy kod zostaną zastąpione każdorazowo, gdy test jest ponownie kompilowana.  
   
  W **działania interfejsu użytkownika** okienku, wybierz metodę testową, która ma zostać przeniesiony do pliku UIMap.cs lub UIMap.vb w celu ułatwienia działania kodu niestandardowego zostaną zastąpione, gdy kod testu jest ponownie kompilowana. Następnie wybierz pozycję **Przenieś kod** znajdujący się na pasku narzędzi edytora testu interfejsu użytkownika lub Otwórz menu skrótów dla metody testu i wybierz pozycję **Przenieś kod**. Metoda testu jest usuwana z pliku UIMap.uitest i nie jest już wyświetlana w okienku Akcje interfejsu użytkownika. Aby edytować plik testu, który został przeniesiony, otwórz UIMap.cs lub UIMap.vb plik z Eksploratora rozwiązań.  
@@ -150,7 +150,7 @@ Edycja właściwości kontrolki
   
 - ![Porada](../test/media/tip.png "Porada") Aby cofnąć przeniesienie, zaznacz **Cofnij** z **Edytuj** menu lub naciśnij klawisze Ctrl + Z. Jednakże należy następnie ręcznie usunąć kod w pliku UIMap.cs lub UIMap.vb.  
   
-##  <a name="CodedUITestEditor_LocateUIControl"></a> Lokalizowanie kontrolki interfejsu użytkownika w testowanej aplikacji  
+## <a name="CodedUITestEditor_LocateUIControl"></a> Lokalizowanie kontrolki interfejsu użytkownika w testowanej aplikacji  
  Czasami może być trudne do wizualizacji, gdzie kontrolki znajdują się w Interfejsie użytkownika aplikacji w ramach testu. Jest jedną z możliwości edytora kodowanego testu interfejsu użytkownika, można wybrać kontrolkę mapy formantów interfejsu użytkownika na liście i wyświetlić jego lokalizację w testowanej aplikacji. Za pomocą **zlokalizuj formant interfejsu użytkownika** funkcję na testowaną aplikację można również sprawdzić wyszukiwania właściwości modyfikacje wprowadzone do formantu.  
   
  ![Zlokalizuj formant interfejsu użytkownika](../test/media/codeduilocatecontrol.png "CodedUILocateControl")  
@@ -168,7 +168,7 @@ Edycja właściwości kontrolki
   
 - ![Porada](../test/media/tip.png "Porada") Alternatywnie, można użyć **Znajdź wszystkie** opcję, aby sprawdzić, czy wszystkich kontrolek w kontenerze można przechowywać poprawnie. Ta opcja jest opisane w następnej sekcji.  
   
-##  <a name="CodedUITestEditor_LocateDecendants"></a> Lokalizowanie formantu i jego elementy podrzędne  
+## <a name="CodedUITestEditor_LocateDecendants"></a> Lokalizowanie formantu i jego elementy podrzędne  
  Możesz sprawdzić, czy wszystkich kontrolek w kontenerze można poprawnie znajdować w Interfejsie użytkownika aplikacji w ramach testu. Może to być przydatne podczas weryfikowania zmiany właściwości wyszukiwania, które mogły zostać wprowadzone w kontenerze. Ponadto jeśli miały miejsce znaczące zmiany w interfejsie użytkownika aplikacji poddawanej testowi, może się sprawdzić, czy istniejące właściwości wyszukiwania kontrolki są nadal prawidłowe.  
   
  ![Znajdź wszystkie formanty podrzędne](../test/media/codeduilocateall.png "CodedUILocateAll")  
@@ -180,9 +180,9 @@ Edycja właściwości kontrolki
  *Co jeszcze muszę wiedzieć?*  
  **Istotne problemy**  
   
--   ![Ikona ostrzegawcza](../test/media/caution.gif "Przestroga") **ostrzeżenia:** Przed lokalizować kontrolek interfejsu użytkownika, należy sprawdzić, czy aplikacja skojarzona z test jest uruchomiony.  
+- ![Ikona ostrzegawcza](../test/media/caution.gif "Przestroga") **ostrzeżenia:** Przed lokalizować kontrolek interfejsu użytkownika, należy sprawdzić, czy aplikacja skojarzona z test jest uruchomiony.  
   
-##  <a name="CodedUITestEditor_InsertDelay"></a> Wstawianie opóźnienia przed akcją UI  
+## <a name="CodedUITestEditor_InsertDelay"></a> Wstawianie opóźnienia przed akcją UI  
  Czasami możesz chcieć wykonać próbę, poczekaj, aż niektóre zdarzenia, takiego jak okna wyświetlany pasek postępu znikną i tak dalej. Za pomocą edytora kodowanego testu interfejsu użytkownika, można to zrobić, wstawiając opóźnienia przed akcją UI. Można określić, ile sekund ma opóźnienie za.  
   
  ![Wstaw opóźnienie przed akcją UI](../test/media/codeduidelay.png "CodedUIDelay")  
