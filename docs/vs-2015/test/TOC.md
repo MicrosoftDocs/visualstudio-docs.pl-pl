@@ -19,7 +19,7 @@
 ##### [Stosowanie podkładek do izolowania aplikacji od innych zestawów w celu przeprowadzania testów jednostkowych](using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
 ##### [Konwencje dotyczące generowania kodu, jego kompilowania i nazywania w Microsoft Fakes](code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)
 #### [Instrukcje: tworzenie testu jednostkowego opartego na danych](how-to-create-a-data-driven-unit-test.md)
-##### [Przewodnik: korzystanie z pliku konfiguracji do określania źródła danych](walkthrough-using-a-configuration-file-to-define-a-data-source.md)
+##### [Przewodnik: definiowanie źródła danych przy użyciu pliku konfiguracji](walkthrough-using-a-configuration-file-to-define-a-data-source.md)
 #### [Testy jednostkowe metod ogólnych](unit-tests-for-generic-methods.md)
 #### [Instrukcje: konfigurowanie pod kątem starszej wersji oprogramowania .NET](how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md)
 #### [Przykładowy projekt dotyczący tworzenia testów jednostkowych](sample-project-for-creating-unit-tests.md)
