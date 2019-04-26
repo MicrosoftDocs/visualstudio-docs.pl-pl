@@ -1,5 +1,5 @@
 # [Używanie środowiska programistycznego Visual Studio dla C#](using-the-visual-studio-development-environment-for-csharp.md)
-## [Instrukcje: Dodawanie pliku konfiguracji aplikacji do projektu C#](how-to-add-an-application-configuration-file-to-a-csharp-project.md)
+## [Instrukcje: dodawanie pliku konfiguracji aplikacji do projektu C#](how-to-add-an-application-configuration-file-to-a-csharp-project.md)
 ## [Metadane jako źródło](metadata-as-source.md)
 ## [Refaktoryzacja (C#)](refactoring-csharp.md)
 ### [Refaktoryzacja wyodrębniania metody (C#)](extract-method-refactoring-csharp.md)
