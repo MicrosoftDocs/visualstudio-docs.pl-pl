@@ -8,7 +8,7 @@
   href: capturing-graphics-information.md
 - name: Dokument dziennika grafiki
   href: graphics-log-document.md
-- name: Analiza klatek grafiki
+- name: Analiza ramek grafiki
   href: graphics-frame-analysis.md
   items:
     - name: Wariant rozmiaru 1x1 okienka ekranu
@@ -48,21 +48,21 @@
 - name: Przykłady diagnostyki grafiki
   href: graphics-diagnostics-examples.md
   items:
-    - name: 'Wskazówki: przechwytywanie informacji graficznych'
+    - name: 'Przewodnik: Przechwytywanie informacji graficznych'
       href: walkthrough-capturing-graphics-information.md
-    - name: 'Wskazówki: programowe przechwytywanie informacji graficznych'
+    - name: 'Przewodnik: programowe przechwytywanie informacji graficznych'
       href: walkthrough-capturing-graphics-information-programmatically.md
-    - name: 'Wskazówki: brak obiektów spowodowany stanem urządzenia'
+    - name: 'Przewodnik: brak obiektów spowodowany stanem urządzenia'
       href: walkthrough-missing-objects-due-to-device-state.md
-    - name: 'Wskazówki: brak obiektów spowodowany cieniowaniem wierzchołków'
+    - name: 'Przewodnik: brak obiektów spowodowany cieniowaniem wierzchołków'
       href: walkthrough-missing-objects-due-to-vertex-shading.md
-    - name: 'Wskazówki: brak obiektów spowodowany błędnie skonfigurowanym potokiem'
+    - name: 'Przewodnik: brak obiektów spowodowany błędnie skonfigurowanym potokiem'
       href: walkthrough-missing-objects-due-to-misconfigured-pipeline.md
-    - name: 'Wskazówki: debugowanie błędów renderowania spowodowanych cieniowaniem'
+    - name: 'Przewodnik: debugowanie błędów renderowania spowodowanych cieniowaniem'
       href: walkthrough-debugging-rendering-errors-due-to-shading.md
-    - name: 'Wskazówki: używanie diagnostyki grafiki do debugowania cieniowania obliczenia'
+    - name: 'Przewodnik: używanie diagnostyki grafiki do debugowania cieniowania obliczenia'
       href: walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md
-    - name: 'Porady: zmiana maszyny odtwarzania diagnostyki grafiki'
+    - name: 'Instrukcje: zmiana maszyny odtwarzania diagnostyki grafiki'
       href: how-to-change-the-graphics-diagnostics-playback-machine.md
 - name: Odwołanie (przechwycenie programowe)
   href: reference-programmatic-capture.md
