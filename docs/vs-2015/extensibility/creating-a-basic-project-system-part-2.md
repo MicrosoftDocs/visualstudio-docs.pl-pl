@@ -12,12 +12,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6004e7346ab4bb4bb8d95c04fbbbdd86e1527001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b4709cc5f011dd55445583c46dd96894b979647c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435548"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Tworzenie systemu podstawowego projektu, część 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Pierwszy instrukcje przedstawione w tej serii [Tworzenie podstawowego systemu pr
 - Tworzenie strony właściwości projektu.  
   
 > [!NOTE]
->  Kroki opisane w tym przewodniku są oparte na projekcie języka C#. Jednak z wyjątkiem określonych kryteriów, takich jak rozszerzeń nazw plików i kodu, te same czynności można użyć w projekcie języka Visual Basic.  
+> Kroki opisane w tym przewodniku są oparte na projekcie języka C#. Jednak z wyjątkiem określonych kryteriów, takich jak rozszerzeń nazw plików i kodu, te same czynności można użyć w projekcie języka Visual Basic.  
   
 ## <a name="creating-a-visual-studio-template"></a>Tworzenie szablonu programu Visual Studio  
  [Tworzenie podstawowego systemu projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md) pokazuje, jak utworzyć szablon podstawowy projekt i dodać go do systemu projektu. Pokazano również, jak zarejestrować ten szablon przy użyciu programu Visual Studio przy użyciu <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atrybut, który zapisuje pełną ścieżkę folderu \Templates\Projects\SimpleProject\ w rejestrze systemowym.  
@@ -100,7 +100,7 @@ Pierwszy instrukcje przedstawione w tej serii [Tworzenie podstawowego systemu pr
 - \<ProjectType > typ projektu w nazwy elementu **nowy projekt** okno dialogowe. Ta nazwa zastępuje atrybutu ProvideProjectFactory parametr nazwy projektu.  
   
   > [!NOTE]
-  >  \<ProjectType > element musi być zgodna `LanguageVsTemplate` argument `ProvideProjectFactory` atrybut w pliku SimpleProjectPackage.cs.  
+  > \<ProjectType > element musi być zgodna `LanguageVsTemplate` argument `ProvideProjectFactory` atrybut w pliku SimpleProjectPackage.cs.  
   
   \<TemplateContent > sekcji opisano te pliki, które są generowane podczas tworzenia nowego projektu:  
   
@@ -115,7 +115,7 @@ Pierwszy instrukcje przedstawione w tej serii [Tworzenie podstawowego systemu pr
   Aby uzyskać więcej informacji na temat elementów w schemacie szablon programu Visual Studio, zobacz [odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
   
 > [!NOTE]
->  Jeśli projekt zawiera więcej niż jeden szablon programu Visual Studio, każdy szablon jest w oddzielnym folderze. Każdy plik w tym folderze muszą mieć **Build Action** równa **ZipProject**.  
+> Jeśli projekt zawiera więcej niż jeden szablon programu Visual Studio, każdy szablon jest w oddzielnym folderze. Każdy plik w tym folderze muszą mieć **Build Action** równa **ZipProject**.  
   
 ## <a name="adding-a-minimal-vsct-file"></a>Dodawanie pliku vsct minimalny  
  Program Visual Studio musi działać w trybie instalacji, rozpoznawał nowych lub zmodyfikowanych szablonu programu Visual Studio. Tryb instalacji wymaga pliku vsct być obecne. W związku z tym należy dodać plik minimalny vsct do projektu.  

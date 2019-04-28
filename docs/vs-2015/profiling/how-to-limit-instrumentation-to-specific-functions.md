@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0c20918aab20b41a108242d91b20ec010be19bd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8923323a3aed96a9dd441a4a36b2084ffd8197e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432652"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Instrukcje: Ograniczenie Instrumentacji do określonych funkcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Można ograniczyć Instrumentacji i gromadzenia danych do co najmniej jedną fun
   Ograniczenie zbierania danych w ten sposób jest obsługiwana tylko wtedy, gdy metoda profilowania Instrumentacja jest zaznaczone.  
   
 > [!NOTE]
->  Można również użyć **zaawansowane** strony **sesji wydajności** strony właściwości można ustawić inne opcje, które są dostępne dla narzędzi profilowania [VSInstr](../profiling/vsinstr.md) wiersza polecenia Narzędzie do Instrumentacji.  
+> Można również użyć **zaawansowane** strony **sesji wydajności** strony właściwości można ustawić inne opcje, które są dostępne dla narzędzi profilowania [VSInstr](../profiling/vsinstr.md) wiersza polecenia Narzędzie do Instrumentacji.  
   
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-performance-session"></a>Ograniczenie Instrumentacji do określonych funkcji w ramach sesji wydajności  
   
@@ -47,7 +47,7 @@ Można ograniczyć Instrumentacji i gromadzenia danych do co najmniej jedną fun
     `FuncSpec` jest to nazwa przestrzeni nazw i funkcji. Ma on format `Namespace` **::**`FunctionName`. Użyj średnika do rozdzielenia wielu funkcji. Gwiazdka (\*) do określenia co najmniej jeden znak symbolu wieloznacznego. Na przykład **/ include: MyNS::\\*** określa wszystkie funkcje w obszarze nazw MyNS.  
   
    > [!NOTE]
-   >  Aby wyświetlić listę funkcji w pliku binarnym, Otwórz okno wiersza polecenia w katalogu instalacyjnym Profiling Tools (zazwyczaj tools\performance Tools katalogu w obszarze [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] katalog instalacyjny), a następnie wpisz **vsinstr / DumpFuncs**  
+   > Aby wyświetlić listę funkcji w pliku binarnym, Otwórz okno wiersza polecenia w katalogu instalacyjnym Profiling Tools (zazwyczaj tools\performance Tools katalogu w obszarze [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] katalog instalacyjny), a następnie wpisz **vsinstr / DumpFuncs**  
   
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>Ograniczenie Instrumentacji do określonych funkcji w pliku binarnym  
   
@@ -66,7 +66,7 @@ Można ograniczyć Instrumentacji i gromadzenia danych do co najmniej jedną fun
     `FuncSpec` jest to nazwa przestrzeni nazw i funkcji. Ma on format `Namespace` **::**`FunctionName`. Użyj średnika do rozdzielenia wielu funkcji. Gwiazdka (\*) do określenia co najmniej jeden znak symbolu wieloznacznego. Na przykład **/ include: MyNS::\\*** określa wszystkie funkcje w obszarze nazw MyNS.  
   
    > [!NOTE]
-   >  Aby wyświetlić listę funkcji w pliku binarnym, Otwórz okno wiersza polecenia w katalogu instalacyjnym Profiling Tools (zazwyczaj tools\performance Tools katalogu w obszarze [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] katalog instalacyjny), a następnie wpisz **vsinstr / DumpFuncs**  
+   > Aby wyświetlić listę funkcji w pliku binarnym, Otwórz okno wiersza polecenia w katalogu instalacyjnym Profiling Tools (zazwyczaj tools\performance Tools katalogu w obszarze [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] katalog instalacyjny), a następnie wpisz **vsinstr / DumpFuncs**  
   
 ## <a name="see-also"></a>Zobacz też  
  [Kontrolowanie zbierania danych](../profiling/controlling-data-collection.md)   

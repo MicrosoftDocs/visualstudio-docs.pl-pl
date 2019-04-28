@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a5543805741f1c64627aee15590d61635a89b1c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fcc08f9af3452289b3e0e76fe6970e75e8f854db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414813"
 ---
 # <a name="customizing-copy-behavior"></a>Dostosowywanie zachowania dotyczącego kopiowania
 W języku specyficznym dla domeny (DSL) utworzone za pomocą Visual Studio Visualization i Modeling SDK można zmienić, co się dzieje, gdy użytkownik kopiuje i wkleja elementów.
@@ -232,7 +232,7 @@ Zobacz [jak: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-
  Wiele aspektów zachowania DSL w odniesieniu do kopiowania, wklejania, tworzenia i usuwania obiektów są regulowane przez wystąpienie <xref:Microsoft.VisualStudio.Modeling.ElementOperations> , jest sprzężona do diagramu. Można zmodyfikować zachowanie DSL wyprowadzanie klasy z <xref:Microsoft.VisualStudio.Modeling.ElementOperations> i zastępowanie <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> właściwości diagramu klasy.
 
 > [!TIP]
->  Aby uzyskać więcej informacji na temat dostosowywania modelu przy użyciu kodu programu, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
+> Aby uzyskać więcej informacji na temat dostosowywania modelu przy użyciu kodu programu, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
  ![Diagram sekwencji operacji kopiowania](../modeling/media/dslcopyseqdiagram.png)
 

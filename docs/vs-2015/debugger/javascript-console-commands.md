@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aeaba355e101bd8e48126bfa01f95668a37abe3e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 45588d06cddd919d8ff0f96329cce5f6054edd00
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431432"
 ---
 # <a name="javascript-console-commands"></a>Polecenia konsoli JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
  Jeśli nastąpi zamknięcie okna konsoli języka JavaScript, możesz go otworzyć podczas debugowania w programie Visual Studio, wybierając **debugowania** > **Windows** > **języka JavaScript Konsola**.  
   
 > [!NOTE]
->  Jeśli okno nie jest dostępne podczas sesji debugowania, upewnij się, że typ debugera jest ustawiona na **skryptu** właściwości debugowania projektu.  
+> Jeśli okno nie jest dostępne podczas sesji debugowania, upewnij się, że typ debugera jest ustawiona na **skryptu** właściwości debugowania projektu.  
   
 ## <a name="console-object-commands"></a>Konsola obiektu polecenia  
  W poniższej tabeli przedstawiono składnię `console` obiekt polecenia, można użyć w oknie konsoli języka JavaScript lub służącego do wysyłania komunikatów do konsoli w kodzie. Ten obiekt udostępnia wiele form tak, aby rozróżnić komunikaty informacyjne i komunikaty o błędach, jeśli chcesz.  
@@ -43,7 +43,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
  Można użyć dłużej formy polecenia `window.console.[command]` Jeśli potrzebujesz uniknąć możliwa pomyłka z lokalnych obiektów o nazwie konsoli.  
   
 > [!TIP]
->  Starsze wersje programu Visual Studio nie obsługują kompletny zestaw poleceń. Użyj funkcji IntelliSense w obiekcie konsoli, aby pobrać skróconych informacji o obsługiwanych poleceniach.  
+> Starsze wersje programu Visual Studio nie obsługują kompletny zestaw poleceń. Użyj funkcji IntelliSense w obiekcie konsoli, aby pobrać skróconych informacji o obsługiwanych poleceniach.  
   
 |Polecenie|Opis|Przykład|  
 |-------------|-----------------|-------------|  

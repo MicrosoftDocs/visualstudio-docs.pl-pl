@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eae720bdd904c7b904c906022cea700512167617
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62434231"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn i GlobalOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ VSPerfCmd.exe **GlobalOff** i **GlobalOn** opcje wstrzymywanie i wznawianie prof
   
  Można określić **GlobalOn** i **GlobalOff** jak tylko opcje wiersza polecenia VSPerfCmd.exe lub uwzględnić je w wierszy polecenia, które również zawierać **Start**, **Uruchom**, lub **Dołącz** opcje.  
   
- **GlobalOn** i **GlobalOff** można również łączyć z **ProcessOn**, **ProcessOff**, **ThreadOn**i ** ThreadOff** opcje.  
+ **GlobalOn** i **GlobalOff** można również łączyć z **ProcessOn**, **ProcessOff**, **ThreadOn**i  **ThreadOff** opcje.  
   
  **GlobalOn** i **GlobalOff** opcji interakcji z **ProcessOn** i **ProcessOff** opcje, które kontrolują zbieranie danych dla określony proces, a za pomocą **ThreadOn** i **ThreadOff** opcje, które kontrolują zbieranie danych dla określonego wątku.  
   

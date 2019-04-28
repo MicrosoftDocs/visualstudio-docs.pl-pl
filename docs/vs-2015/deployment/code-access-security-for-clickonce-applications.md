@@ -24,12 +24,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b56f926006b952b0e92a791e36bb821f3df0197d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 54160bbdfe834a1b3226f4445b862c151bcf35c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423276"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Zabezpieczenia dostępu kodu dla aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Aplikacje ClickOnce są oparte na programie .NET Framework i podlegają ogranicz
 - Jeśli aplikacja wymaga uprawnień pełnego zaufania, użytkownik końcowy może być monitowani o nadanie uprawnień do aplikacji. Oznacza to, że aplikacja nie zapewnia naprawdę środowisko ClickOnce i monit może potencjalnie być mylące dla mniej doświadczonych użytkowników.  
   
   > [!NOTE]
-  >  Podczas instalowania aplikacji z nośników wymiennych, takich jak dysk CD-ROM, użytkownik nie jest monitowany. Ponadto administrator sieci można skonfigurować zasad sieciowych tak, aby użytkownicy nie będą monitowani podczas instalacji aplikacji z zaufanego źródła. Aby uzyskać więcej informacji, zobacz [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+  > Podczas instalowania aplikacji z nośników wymiennych, takich jak dysk CD-ROM, użytkownik nie jest monitowany. Ponadto administrator sieci można skonfigurować zasad sieciowych tak, aby użytkownicy nie będą monitowani podczas instalacji aplikacji z zaufanego źródła. Aby uzyskać więcej informacji, zobacz [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
   Aby ograniczyć uprawnienia dla aplikacji ClickOnce, można zmodyfikować uprawnienia zabezpieczeń dostępu kodu dla swojej aplikacji zażądać strefy, który najlepiej odpowiada wymaganiom uprawnienia wymagane przez aplikację. W większości przypadków można wybrać strefy, w którym aplikacja jest wdrażana. Na przykład, jeśli aplikacja jest aplikacja dla przedsiębiorstw, można użyć **lokalny Intranet** strefy. Jeśli aplikacja jest aplikacja internetowa, możesz użyć **Internet** strefy.  
   

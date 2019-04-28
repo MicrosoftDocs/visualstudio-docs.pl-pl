@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d49c062540b50e442f2ac32e69ee37934c53bf2c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b29b95b9c53f18d6f97ac2455dd30aa6e26ccde4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415478"
 ---
 # <a name="how-to-implement-undo-management"></a>Instrukcje: Implementowanie cofania zarządzania
 Podstawowy interfejs używany do zarządzania cofania jest <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, który jest implementowany przez środowisko. Do obsługi zarządzania cofania, implementować jednostek cofania oddzielne (oznacza to, <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, która może zawierać wiele poszczególne kroki.
@@ -75,7 +75,7 @@ Podstawowy interfejs używany do zarządzania cofania jest <xref:Microsoft.Visua
    `OleUndoManager` Klasa reprezentuje wystąpienie stosu pojedynczą czynność cofnięcia. W efekcie jest jeden obiekt menedżera cofania na jednostkę danych są śledzone dla cofania i ponawiania.
 
 > [!NOTE]
->  Gdy obiekt menedżera cofania jest często używany przez Edytor tekstu, jest ogólnego składnika, który nie obsługuje określonego edytora tekstu. Chcąc obsługuje wielopoziomowe cofnięcie ani ponownego wykonywania, można użyć tego obiektu, aby to zrobić.
+> Gdy obiekt menedżera cofania jest często używany przez Edytor tekstu, jest ogólnego składnika, który nie obsługuje określonego edytora tekstu. Chcąc obsługuje wielopoziomowe cofnięcie ani ponownego wykonywania, można użyć tego obiektu, aby to zrobić.
 
 ## <a name="see-also"></a>Zobacz także
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>

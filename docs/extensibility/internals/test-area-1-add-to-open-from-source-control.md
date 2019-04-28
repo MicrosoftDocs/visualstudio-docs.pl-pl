@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 699496825e272fc492bac8ef4fe472019b1935d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2ba64bdcf299f52d0200e1fa66dead11a8824c14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429984"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Obszar testowy 1: Dodaj / Otwórz z kontroli źródła
 Ta-wtyczka do kontroli źródła testów obszar obejmuje umieszczenie rozwiązań lub projektów pod kontrolą źródła i pobierania ich z kontroli źródła.
@@ -37,7 +37,7 @@ Ta-wtyczka do kontroli źródła testów obszar obejmuje umieszczenie rozwiąza�
 - Dla [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], Dodaj ze źródła kontrolki jest również dostępna z **pliku**, **Dodaj**, **istniejący projekt**; Szukaj w [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] lokalizacji.
 
   > [!NOTE]
-  >  Ścieżka pliku lokalnego lub lokalnych usług IIS (serwer sieci web) może służyć w tym teście.
+  > Ścieżka pliku lokalnego lub lokalnych usług IIS (serwer sieci web) może służyć w tym teście.
 
 ## <a name="expected-behavior"></a>Oczekiwane zachowanie
 

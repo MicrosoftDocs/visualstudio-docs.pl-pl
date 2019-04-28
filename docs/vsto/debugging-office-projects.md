@@ -17,23 +17,23 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59d9179bb0a3c3c2f08bbccafbca5db0202208e3
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: 8b48335ccaa8bd21cf9f6e108d043ecf706903bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441884"
 ---
 # <a name="debug-office-projects"></a>Debugowanie projektów pakietu Office
   Można debugować projektów pakietu Office przy użyciu tego samego programu Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] narzędzia, których używasz dla innych [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektów. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Funkcje debugera, takie jak możliwość Wstawianie punktów przerwania i wyświetlić zmienne w **lokalne** okna, są również dostępne podczas debugowania w projektach pakietu Office. Aby uzyskać więcej informacji na temat [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] narzędzia debugowania, zobacz [debugowania w programie Visual Studio](../debugger/debugging-in-visual-studio.md).
 
 > [!TIP]
->  Aby uprościć, debugowanie, zamknij wszystkie wystąpienia aplikacji pakietu Office, zanim twórz i Debuguj je.
+> Aby uprościć, debugowanie, zamknij wszystkie wystąpienia aplikacji pakietu Office, zanim twórz i Debuguj je.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 > [!NOTE]
->  Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.
+> Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.
 
 ## <a name="start-and-stop-the-debugger"></a>Uruchamianie i zatrzymywanie debugowania
  Możesz uruchomić debugowanie projektu programu pakietu Office, tak samo jak w rozpoczęciu debugowania innych [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektów; na przykład, możesz nacisnąć przycisk **F5** klucza. Po rozpoczęciu debugowania projektu dodatku narzędzi VSTO dla programów, jest uruchomiony nowy proces dla docelowych aplikacji pakietu Office i dodatku narzędzi VSTO jest ładowany.

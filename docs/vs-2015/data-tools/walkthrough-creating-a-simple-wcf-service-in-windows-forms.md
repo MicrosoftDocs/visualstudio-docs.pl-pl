@@ -14,12 +14,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5137464f253469e62bf4a22c415906a4a3f352a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 684afac90741bbac56a0fc295c21c96a2001859e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424943"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>Przewodnik: Tworzenie prostą usługę WCF w formularzach Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ W tym instruktażu przedstawiono sposób tworzenia prostej [!INCLUDE[vsindigo](.
      ![Projekt biblioteki usługi WCF](../data-tools/media/wcf1.PNG "wcf1")  
   
     > [!NOTE]
-    >  Spowoduje to utworzenie usługi pracy, przetestowane i używanych. Następujące dwa kroki pokazują, jak może zmodyfikować domyślną metodę, aby użyć innego typu danych. W rzeczywistej aplikacji należy również dodać własne funkcje do usługi.  
+    > Spowoduje to utworzenie usługi pracy, przetestowane i używanych. Następujące dwa kroki pokazują, jak może zmodyfikować domyślną metodę, aby użyć innego typu danych. W rzeczywistej aplikacji należy również dodać własne funkcje do usługi.  
   
 3. ![Plik IService1](../data-tools/media/wcf2.png "wcf2")  
   

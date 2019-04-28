@@ -10,12 +10,12 @@ ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 caps.latest.revision: 12
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 016f22591deb019718c8271cf0b307d3f4c597c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e0770654f564c57cf576666dcd9575f47d9ce1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432291"
 ---
 # <a name="fxcopcmd-errors"></a>FxCopCmd — Błędy
 Fxcopcmd — nie należy wziąć pod uwagę wszystkie błędy jako krytyczny. Jeśli FxCopCmd ma wystarczające informacje, aby przeprowadzić analizę częściowe, wykonuje błędów analizy i raporty, które wystąpiły. Kod błędu, który jest 32-bitową liczbę całkowitą, zawiera bitowa kombinacja wartości liczbowe, które odnoszą się do błędów.  
@@ -49,7 +49,7 @@ Fxcopcmd — nie należy wziąć pod uwagę wszystkie błędy jako krytyczny. Je
 - Nie określono opcji output lub nie można zapisać pliku.  
   
     > [!NOTE]
-    >  Fxcopcmd — kod powrotny "Odwołuje się zestaw błąd" 0x200 przez siebie to ostrzeżenie, a nie błąd. Ten kod powrotny wskazuje, znaleziono brakujące odwołania pośredniego, ale że FxCopCmd mógł je obsłużyć. Jest to ostrzeżenie, że istnieje możliwość, że niektóre wyniki analizy mogą zabezpieczenia mogły zostać naruszone. Należy wziąć pod uwagę kod powrotny "Odwołuje się zestaw błąd" jako błąd połączeniu z innymi kod powrotny.  
+    > Fxcopcmd — kod powrotny "Odwołuje się zestaw błąd" 0x200 przez siebie to ostrzeżenie, a nie błąd. Ten kod powrotny wskazuje, znaleziono brakujące odwołania pośredniego, ale że FxCopCmd mógł je obsłużyć. Jest to ostrzeżenie, że istnieje możliwość, że niektóre wyniki analizy mogą zabezpieczenia mogły zostać naruszone. Należy wziąć pod uwagę kod powrotny "Odwołuje się zestaw błąd" jako błąd połączeniu z innymi kod powrotny.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Błędy zgłaszane przez aplikację do analizy kodu](../code-quality/code-analysis-application-errors.md)

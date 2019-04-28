@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1d72d3da8adeff7b8280bda84eb92b730679fea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f9696640358626c254f1792fc29a31a41d4bafb3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427906"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Instrukcje: Dodawanie okienek akcji do dokumentów programu Word lub arkuszy programu Excel
   Aby dodać okienek akcji do dokumentu programu Microsoft Office Word lub skoroszytu programu Microsoft Excel, należy najpierw utworzyć formant użytkownika interfejsu Windows Forms. Następnie dodaj formant użytkownika do <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> właściwość `ThisDocument.ActionsPane` pola (w programie Word) lub `ThisWorkbook.ActionsPane` pola (Excel) w projekcie.
@@ -28,7 +28,7 @@ ms.locfileid: "60085847"
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 > [!NOTE]
->  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="creating-the-user-control"></a>Tworzenie kontrolki użytkownika
  Poniższa procedura pokazuje, jak utworzyć formant użytkownika w programie lub projektu w programie Excel. Ponadto dodaje przycisk do formantu użytkownika, który zapisuje tekst na dokument lub skoroszyt, po kliknięciu.
@@ -42,12 +42,12 @@ ms.locfileid: "60085847"
 3. W **Dodaj nowy element** okno dialogowe, wybierz opcję **kontrolki okienka akcji**, nadaj jej nazwę **HelloControl**i kliknij przycisk **Dodaj**.
 
     > [!NOTE]
-    >  Możesz też dodać **kontrolki użytkownika** elementu do projektu. Klasy generowane przez **kontrolki okienka akcji** i **kontrolki użytkownika** elementy są funkcjonalnie równoważne.
+    > Możesz też dodać **kontrolki użytkownika** elementu do projektu. Klasy generowane przez **kontrolki okienka akcji** i **kontrolki użytkownika** elementy są funkcjonalnie równoważne.
 
 4. Z **Windows Forms** karcie **przybornika** przeciągnij **przycisk** kontrolki na kontrolkę.
 
     > [!NOTE]
-    >  Jeśli formant nie jest widoczny w projektancie, kliknij dwukrotnie **HelloControl** w **Eksploratora rozwiązań**.
+    > Jeśli formant nie jest widoczny w projektancie, kliknij dwukrotnie **HelloControl** w **Eksploratora rozwiązań**.
 
 5. Dodaj kod, aby <xref:System.Windows.Forms.Control.Click> program obsługi zdarzeń przycisku. Poniższy przykład pokazuje kod dla dokumentu programu Microsoft Office Word.
 

@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89c4a4598b92096d968225f7420d46244aeca3dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a2354df7027f3aa73f13e830b9a85895e54c920
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419285"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Instrukcje: Programowe przechowywanie i pobieranie wartości daty w zakresach programu Excel
   Można przechowywać i pobierać wartości w <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu lub natywnego obiektu zakresu programu Excel.
@@ -34,7 +34,7 @@ ms.locfileid: "60082909"
  W przypadku przechowywania wartości daty, która znajduje się na lub po 1/1/1900 w zakresie za pomocą narzędzi programistycznych pakietu Office w programie Visual Studio znajduje się w formacie OLE automatyzacji OA. Należy użyć <xref:System.DateTime.FromOADate%2A> metodę, aby pobrać wartość daty OLE automatyzacji OA. Jeśli data jest wcześniejsza niż 1/1/1900, są przechowywane w postaci ciągu.
 
 > [!NOTE]
->  Daty Excel różnią się od daty automatyzacji OLE na pierwszych dwóch miesięcy 1900. Różnią się także jeśli **system daty 1904** opcja jest zaznaczona. Poniższe przykłady kodu nie dotyczą te różnice.
+> Daty Excel różnią się od daty automatyzacji OLE na pierwszych dwóch miesięcy 1900. Różnią się także jeśli **system daty 1904** opcja jest zaznaczona. Poniższe przykłady kodu nie dotyczą te różnice.
 
 ## <a name="use-a-namedrange-control"></a>Używanie formantu NamedRange
 

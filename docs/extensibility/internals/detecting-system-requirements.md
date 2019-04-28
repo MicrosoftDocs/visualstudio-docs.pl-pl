@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4232a057c97d3d457a60d97fa000090c18428f66
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c65df25645a13f58dce9ddec69acf6834a77210f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420706"
 ---
 # <a name="detect-system-requirements"></a>Wykrywanie wymagań systemowych
 Pakietu VSPackage nie może działać, jeśli nie zainstalowano programu Visual Studio. Gdy Instalator systemu Microsoft Windows umożliwia zarządzanie instalacjami Twojego pakietu VSPackage, można skonfigurować Instalatora aby wykryć, czy jest zainstalowany program Visual Studio. Można również skonfigurować ją do sprawdzania systemu pod kątem innych wymagań, na przykład konkretnej wersji systemu Windows lub określoną ilość pamięci RAM.
@@ -33,7 +33,7 @@ Pakietu VSPackage nie może działać, jeśli nie zainstalowano programu Visual 
 Nowsza wersja jest zainstalowana, klucze rejestru, w przypadku tej wersji są dodawane również jak w przypadku starszych wersji. Oznacza to, jeśli jest zainstalowany w wersji Enterprise, **zainstalować** jest ustawiona na *1* dla przedsiębiorstw, a także wersje Professional i społeczności. W związku z tym należy sprawdzić tylko w przypadku najnowszej wersji, których potrzebujesz.
 
 > [!NOTE]
->  W 64-bitową wersję Edytora rejestru w 32-bitowe klucze są wyświetlane w obszarze **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**. Klucze programu Visual Studio, podlegają **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.
+> W 64-bitową wersję Edytora rejestru w 32-bitowe klucze są wyświetlane w obszarze **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**. Klucze programu Visual Studio, podlegają **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.
 
 |Produkt|Key|
 |-------------|---------|

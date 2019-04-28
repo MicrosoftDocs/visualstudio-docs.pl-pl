@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 9e5d0418f09d208d8919a2c431c818e236b62b29
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433724"
 ---
 # <a name="expected-"></a>Oczekiwano znaku „;"
 Podjęto próbę umieścić więcej niż jedna instrukcja w wierszu, ale nie rozdziel średnikami. Średnikami służą do zakończenia instrukcji. Mimo że możesz umieścić kilka instrukcji w jednym wierszu, każdy z nich muszą być rozdzielane od następnego średnikiem.  

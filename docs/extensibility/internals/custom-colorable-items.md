@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95ebf093b8ed761f39cc3cac290a99708b7f417f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 35a3b7a82431354345c7a7b583b35891657350f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415175"
 ---
 # <a name="custom-colorable-items"></a>Niestandardowe elementy z możliwością kolorowania
 Lista typów można zastąpić dla kolorowanie, takich jak słowa kluczowe i komentarze, implementując niestandardowe elementy z możliwością kolorowania jako część usługi języka.
@@ -28,11 +28,11 @@ Lista typów można zastąpić dla kolorowanie, takich jak słowa kluczowe i kom
  Ponieważ IDE obsługuje napisanie użytkownika elementów z możliwością kolorowania **czcionki i kolory** okno dialogowe, należy tylko podać każdego elementu z możliwością kolorowania niestandardowego o nazwie. Ta nazwa jest wyświetlana w **wyświetlania elementów** listy. Elementy z możliwością kolorowania są wyświetlane w kolejności alfabetycznej. Aby zgrupować niestandardowe elementy z możliwością kolorowania usługi języka, możesz rozpocząć nazwy z Twoją nazwą języka na przykład **NewLanguage — komentarz** i **NewLanguage — słowo kluczowe**.
 
 > [!CAUTION]
->  Nazwa języka należy uwzględnić w nazwie elementu z możliwością kolorowania, aby uniknąć konfliktów z już istniejącymi nazwami elementów z możliwością kolorowania. Jeśli zmienisz nazwę jednego z elementów z możliwością kolorowania podczas projektowania należy zresetować pamięć podręczną, która została utworzona po raz pierwszy uzyskano elementów z możliwością kolorowania. Możesz zresetować eksperymentalne pamięci podręcznej przy użyciu **CreateExpInstance** narzędzia, które jest instalowany z programem Visual Studio SDK, zwykle znajduje się w katalogu:
+> Nazwa języka należy uwzględnić w nazwie elementu z możliwością kolorowania, aby uniknąć konfliktów z już istniejącymi nazwami elementów z możliwością kolorowania. Jeśli zmienisz nazwę jednego z elementów z możliwością kolorowania podczas projektowania należy zresetować pamięć podręczną, która została utworzona po raz pierwszy uzyskano elementów z możliwością kolorowania. Możesz zresetować eksperymentalne pamięci podręcznej przy użyciu **CreateExpInstance** narzędzia, które jest instalowany z programem Visual Studio SDK, zwykle znajduje się w katalogu:
 >
->  *C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
+> *C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
 >
->  Aby zresetować pamięć podręczną, należy wprowadzić **/reset CreateExpInstance**. Aby uzyskać więcej informacji na temat **CreateExpInstance**, zobacz [narzędzie CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md).
+> Aby zresetować pamięć podręczną, należy wprowadzić **/reset CreateExpInstance**. Aby uzyskać więcej informacji na temat **CreateExpInstance**, zobacz [narzędzie CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md).
 
  Nigdy nie odwołuje się do pierwszego elementu na liście elementów z możliwością kolorowania. Pierwszy element odnosi się do elementu z możliwością kolorowania indeksu 0, a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zawsze dostarcza domyślne kolory tekstu i atrybuty dla tego elementu. Najprostszy sposób radzenia sobie z tym elementem nieużywanej jest umożliwiają określanie wartości elementu z możliwością kolorowania symbolu zastępczego na liście jako pierwszy element.
 

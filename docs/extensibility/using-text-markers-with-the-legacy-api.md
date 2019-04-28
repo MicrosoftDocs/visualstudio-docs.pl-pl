@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6a3807dc91b129ba4b337f57e3f857e4f379581
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b443c4530a71897d11731c023af57215eac8706a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434202"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Znaczniki tekstu przy użyciu starszej wersji interfejsu API
 Znacznik tekstu jest ruchomy zakres tekstu w buforze, które mogą mieć wpływ na wyświetlanie i zachowanie region tekstu. Znaczniki zawierają punkty przerwania, zakładek, faliste podkreślenia i regionów tylko do odczytu. Znaczniki tekstu po prostu różnią się od kolorowanie składni. Kolorowanie składni to szybki sposób komunikowania się składni języka, która jest skojarzone z regionem tekstu. Kolorowanie składni ogólnie jest wymagany, gdy Windows odświeża ekran, gdy szybkość jest istotna. Kolorowanie składni zmienia kolor tekstu. Znaczniki tekst można zmienić innych właściwości tekstu. Znaczniki tekstu można "float" i zastosować specjalnego zachowania i kolorowania.
@@ -23,16 +23,16 @@ Znacznik tekstu jest ruchomy zakres tekstu w buforze, które mogą mieć wpływ 
  Ze względu na zmniejszenie wydajności związane ze znacznikami tekst nie należy tworzyć wielu znaczników swoje bufory tekstu. Każdy znacznik jest aktualizowana w każdym razem, gdy użytkownik dokona edycji zawartości buforu.
 
 > [!NOTE]
->  Użytkownicy mogą zmieniać kolor typu znacznika widoczne, ale nie jego kształtu i stylu. Aby uzyskać więcej informacji, zobacz [czcionki i kolory, środowisko, opcje, okno dialogowe](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
+> Użytkownicy mogą zmieniać kolor typu znacznika widoczne, ale nie jego kształtu i stylu. Aby uzyskać więcej informacji, zobacz [czcionki i kolory, środowisko, opcje, okno dialogowe](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
 | Tytuł | Opis |
 | - | - |
-| [Instrukcje: Dodaj znaczniki standardowy tekst](../extensibility/how-to-add-standard-text-markers.md) | W tym artykule opisano sposób dodawania tekstu standardowego typu znaczników, dostarczone przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edytorze podstawowych funkcji do widoku tekstu. |
-| [Instrukcje: Implementowanie znaczniki błędów](../extensibility/how-to-implement-error-markers.md) | W tym artykule opisano sposób wdrażania wystąpienia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] znacznik, który służy do sygnalizowania błędów przy użyciu czerwone faliste podkreślenia. |
-| [Instrukcje: Tworzenie niestandardowego tekstu znaczników](../extensibility/how-to-create-custom-text-markers.md) | W tym artykule opisano, jak utworzyć i dodać typ znacznika niestandardowego tekstu do widoku tekstu. |
-| [Instrukcje: Korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md) | Wyjaśnia, jak dodawać znaczniki tekstu. |
+| [Instrukcje: dodawanie standardowych znaczników tekstu](../extensibility/how-to-add-standard-text-markers.md) | W tym artykule opisano sposób dodawania tekstu standardowego typu znaczników, dostarczone przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edytorze podstawowych funkcji do widoku tekstu. |
+| [Instrukcje: implementowanie znaczników błędów](../extensibility/how-to-implement-error-markers.md) | W tym artykule opisano sposób wdrażania wystąpienia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] znacznik, który służy do sygnalizowania błędów przy użyciu czerwone faliste podkreślenia. |
+| [Instrukcje: tworzenie niestandardowych znaczników tekstu](../extensibility/how-to-create-custom-text-markers.md) | W tym artykule opisano, jak utworzyć i dodać typ znacznika niestandardowego tekstu do widoku tekstu. |
+| [Instrukcje: korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md) | Wyjaśnia, jak dodawać znaczniki tekstu. |
 | [Wewnątrz edytora podstawowego](../extensibility/inside-the-core-editor.md) | Opisuje funkcje edytora podstawowe i szczegółowe informacje na temat sposobu dostosowywania podstawowy edytor. |
 | [Funkcje edytora](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198) | W tym artykule opisano funkcje dostępne w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edytorze podstawowych funkcji. |
 

@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a457ba0dcc6fb7f8a95a982b6dabd93f9d0207e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: c2c9a8b15b5095ac346ba047d6668aada7647a31
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58150104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412439"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
 Powoduje, że bieżący wątek zablokować, a następnie wysyła powiadomienie z informacją o błędzie do debugera w IDE.  
@@ -66,7 +66,7 @@ HRESULT HandleRuntimeError(
  Aparat języka wywołuje tę metodę w kontekście wątku, która powoduje występowanie błędów czasu wykonywania. Ta metoda powoduje, że bieżący wątek zablokować i wysyła powiadomienia o błędzie do wysłania do debugera w IDE. Gdy debuger IDE powraca do aplikacji, ta metoda zwraca za pomocą akcji do wykonania.  
   
 > [!NOTE]
->  Podczas pracy w błędów czasu wykonywania, aparat języka może zostać wywołana przez wątek do wykonywania zadań, takich jak wyliczanie ramek stosu lub oceny wyrażenia.  
+> Podczas pracy w błędów czasu wykonywania, aparat języka może zostać wywołana przez wątek do wykonywania zadań, takich jak wyliczanie ramek stosu lub oceny wyrażenia.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   

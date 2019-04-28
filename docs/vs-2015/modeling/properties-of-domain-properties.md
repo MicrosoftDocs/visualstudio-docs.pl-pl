@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca7f4e44f1d40256e821091609752b48d8f204d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 372e19b9ebb1253bda28b4c7723a2366c90b7441
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412132"
 ---
 # <a name="properties-of-domain-properties"></a>Właściwości właściwości domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54760613"
 A *właściwość domeny* jest funkcją elementu modelu, który może zawierać wartości. Na przykład `Person` klasa domeny może mieć właściwości `Name` i `BirthDate`. W definicji DSL właściwości domeny są wyświetlane w polu Domena klas na diagramie, a w ramach klasy domeny w Eksplorator DSL. Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md).  
   
 > [!NOTE]
->  Wyraz "property" ma dwa zastosowania. A *właściwość domeny* to funkcja, która definiuje się na klasę domeny. Z kolei ma wiele elementów języka DSL *właściwości*, które są wymienione w **właściwości** okna w definicji DSL. Na przykład dla każdej właściwości domeny ma zestaw właściwości, które są opisane w tym temacie.  
+> Wyraz "property" ma dwa zastosowania. A *właściwość domeny* to funkcja, która definiuje się na klasę domeny. Z kolei ma wiele elementów języka DSL *właściwości*, które są wymienione w **właściwości** okna w definicji DSL. Na przykład dla każdej właściwości domeny ma zestaw właściwości, które są opisane w tym temacie.  
   
  W czasie wykonywania, gdy użytkownik tworzy wystąpienia klasy domeny, wartości właściwości domeny są widoczne w oknie dialogowym właściwości i mogą być wyświetlane na kształty.  
   

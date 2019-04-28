@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1f2d3f0bd70a4c7be82b991eb5397065fe3d4ee7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e78e23d7e176dffef1531da1af28d318253d9d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431442"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Debugowanie just in time w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ Działania należy podjąć, gdy pojawi się programu Visual Studio Just-in-Time
 5. Zamknij **Edytora rejestru** okna.
 
 > [!NOTE]
->  Jeśli próbujesz wyłączyć debugowanie po stronie serwera aplikacji Just-In-Time, a te kroki nie rozwiążą problemu, należy wyłączyć debugowanie po stronie serwera, w ustawieniach aplikacji usług IIS i spróbuj ponownie.
+> Jeśli próbujesz wyłączyć debugowanie po stronie serwera aplikacji Just-In-Time, a te kroki nie rozwiążą problemu, należy wyłączyć debugowanie po stronie serwera, w ustawieniach aplikacji usług IIS i spróbuj ponownie.
 
 #### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>Aby włączyć Just-In-Time, debugowanie formularza Windows
 
@@ -140,7 +140,7 @@ static void Main(string[] args)
 ```
 
 > [!IMPORTANT]
->  W kolejności do wykonania tej procedury do pracy w [konfiguracji wydania](../debugger/how-to-set-debug-and-release-configurations.md), należy wyłączyć [tylko mój kod](../debugger/just-my-code.md). W programie Visual Studio, kliknij przycisk **narzędzia / Opcje**. W **opcje** okno dialogowe, wybierz opcję **debugowanie**. Usuń zaznaczenie z **Włącz tylko mój kod**.
+> W kolejności do wykonania tej procedury do pracy w [konfiguracji wydania](../debugger/how-to-set-debug-and-release-configurations.md), należy wyłączyć [tylko mój kod](../debugger/just-my-code.md). W programie Visual Studio, kliknij przycisk **narzędzia / Opcje**. W **opcje** okno dialogowe, wybierz opcję **debugowanie**. Usuń zaznaczenie z **Włącz tylko mój kod**.
 
  Skompiluj rozwiązanie (w programie Visual Studio, wybierz **kompilacji / Rebuild rozwiązania**). Można wybrać debugowanie lub konfigurację zwolnienia. Aby uzyskać więcej informacji o konfiguracjach kompilacji, zobacz [ogólne informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md).
 
@@ -157,7 +157,7 @@ static void Main(string[] args)
  Nie klikaj **anulować**! Po kilku sekundach, powinien zostać wyświetlony dwa przyciski o **debugowania** i **Zamknij program**. Kliknij przycisk **debugowania**.
 
 > [!CAUTION]
->  Jeśli aplikacja zawiera niezaufanego kodu, pojawi się okno dialogowe z ostrzeżeniem o zabezpieczeniach. To okno dialogowe umożliwia podjęcie decyzji, czy chcesz kontynuować debugowanie. Przed kontynuowaniem debugowania, należy zdecydować, czy kodowi można zaufać. Czy napisałeś kod samodzielnie? Czy można ufać koderowi? Jeśli aplikacja jest uruchomiona na komputerze zdalnym, czy rozpoznajesz nazwę procesu? Nawet wtedy, gdy aplikacja jest uruchomiona lokalnie, który nie musi oznaczać, że można jej zaufać. Należy wziąć pod uwagę możliwość złośliwy kod uruchomiony na Twoim komputerze. Jeśli zdecydujesz, że kod masz zamiar debugowania jest godny zaufania, kliknij przycisk **debugowania**. W przeciwnym razie kliknij przycisk **nie Debuguj**.
+> Jeśli aplikacja zawiera niezaufanego kodu, pojawi się okno dialogowe z ostrzeżeniem o zabezpieczeniach. To okno dialogowe umożliwia podjęcie decyzji, czy chcesz kontynuować debugowanie. Przed kontynuowaniem debugowania, należy zdecydować, czy kodowi można zaufać. Czy napisałeś kod samodzielnie? Czy można ufać koderowi? Jeśli aplikacja jest uruchomiona na komputerze zdalnym, czy rozpoznajesz nazwę procesu? Nawet wtedy, gdy aplikacja jest uruchomiona lokalnie, który nie musi oznaczać, że można jej zaufać. Należy wziąć pod uwagę możliwość złośliwy kod uruchomiony na Twoim komputerze. Jeśli zdecydujesz, że kod masz zamiar debugowania jest godny zaufania, kliknij przycisk **debugowania**. W przeciwnym razie kliknij przycisk **nie Debuguj**.
 
  **Debuger just in Time programu Visual Studio** zostanie wyświetlone okno:
 

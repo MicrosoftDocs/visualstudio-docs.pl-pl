@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c21b3e03eba03503c769e07ca2a2d90c24c59dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3780558efae860ca54739a139bdffd04494a73b5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411372"
 ---
 # <a name="attach-to-the-program"></a>Dołącz do programu
 Po zarejestrowaniu programy wpisz odpowiedni port, należy dołączyć debuger do programu, który chcesz debugować.
@@ -50,12 +50,12 @@ Po zarejestrowaniu programy wpisz odpowiedni port, należy dołączyć debuger d
      Spowoduje to zwrócenie `GUID` używany do identyfikacji programu. `GUID` Muszą być przechowywane w obiekcie, że reprezentuje lokalnej do DE i programu musi zwracane, gdy `IDebugProgram2::GetProgramId` wywoływana jest metoda `IDebugProgram2` interfejsu.
 
     > [!NOTE]
-    >  W przypadku zaimplementowania `IDebugProgramNodeAttach2` interfejsu programu `GUID` jest przekazywany do `IDebugProgramNodeAttach2::OnAttach` metody. To `GUID` jest wykorzystywany przez program `GUID` zwrócone przez `IDebugProgram2::GetProgramId` metody.
+    > W przypadku zaimplementowania `IDebugProgramNodeAttach2` interfejsu programu `GUID` jest przekazywany do `IDebugProgramNodeAttach2::OnAttach` metody. To `GUID` jest wykorzystywany przez program `GUID` zwrócone przez `IDebugProgram2::GetProgramId` metody.
 
 3. Wyślij [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) zdarzeń obiektowi powiadomić SDM, lokalnej `IDebugProgram2` do reprezentowania program DE został utworzony obiekt. Aby uzyskać więcej informacji, zobacz [wysyłanie zdarzeń](../../extensibility/debugger/sending-events.md).
 
     > [!NOTE]
-    >  To nie jest taka sama `IDebugProgram2` obiektu, który został przekazany do `IDebugEngine2::Attach` metody. Wcześniej przekazane `IDebugProgram2` obiekt jest rozpoznawany przez tylko portu i jest oddzielnym obiektem.
+    > To nie jest taka sama `IDebugProgram2` obiektu, który został przekazany do `IDebugEngine2::Attach` metody. Wcześniej przekazane `IDebugProgram2` obiekt jest rozpoznawany przez tylko portu i jest oddzielnym obiektem.
 
 ## <a name="see-also"></a>Zobacz także
 - [Dołączanie na podstawie uruchamiania](../../extensibility/debugger/launch-based-attachment.md)

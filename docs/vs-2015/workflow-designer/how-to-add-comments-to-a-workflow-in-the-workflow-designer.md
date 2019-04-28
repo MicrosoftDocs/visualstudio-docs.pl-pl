@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f826168d3b198090ba58f409f096b4b12c760c70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 507bb70539019646f57f0aa9267573429d3fa202
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433561"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Instrukcje: Dodawanie komentarzy do przepływu pracy w Projektancie przepływu pracy
 Aby ułatwić tworzenie większych i bardziej skomplikowanych przepływów pracy [!INCLUDE[net_v45](../includes/net-v45-md.md)] umożliwia deweloperom Dodawanie adnotacji do następujących typów elementów w Projektancie:  
@@ -35,7 +35,7 @@ Aby ułatwić tworzenie większych i bardziej skomplikowanych przepływów pracy
 - <xref:System.Activities.Argument>  
   
 > [!IMPORTANT]
->  Zawartość adnotacji są zapisywane w postaci zwykłego tekstu do pliku XAML, skojarzone z przepływem pracy i potencjalnie może zostać odczytany przez innych użytkowników. Należy zachować ostrożność podczas wprowadzania informacji poufnych w adnotacji.  
+> Zawartość adnotacji są zapisywane w postaci zwykłego tekstu do pliku XAML, skojarzone z przepływem pracy i potencjalnie może zostać odczytany przez innych użytkowników. Należy zachować ostrożność podczas wprowadzania informacji poufnych w adnotacji.  
   
 ### <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Dodawanie adnotacji do działania w Projektancie  
   

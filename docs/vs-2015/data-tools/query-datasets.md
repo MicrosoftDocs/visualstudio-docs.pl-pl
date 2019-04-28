@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c392323905676706835a94bd86fcd53e3f6b8cc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 69ca24f45384ef650c4a692a8ec0afc079f19bac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425370"
 ---
 # <a name="query-datasets"></a>Tworzenie zapytań względem zestawów danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Aby wyszukać konkretne rekordy w zestawie danych, użyj metody FindBy DataTable
  W zestawie danych, nazwy tabel i kolumn domyślnie wielkość liter — oznacza to, tabeli w zestawie danych o nazwie "Klienci" może również określane jako "klientów." Odpowiada to konwencje nazewnictwa w wielu bazach danych, w tym program SQL Server.In SQL Server, domyślne zachowanie to, że nazwy elementów danych nie mogą być wyodrębnione tylko wielkością liter.  
   
 > [!NOTE]
->  W przeciwieństwie do zestawów danych dokumentów XML jest rozróżniana wielkość liter, więc nazwy elementów danych zdefiniowanych w schematach jest rozróżniana wielkość liter. Na przykład protokół schemat umożliwia schematu do definiowania tabeli o nazwie "Klientów" i inną tabelę o nazwie "klientów." Może to spowodować Kolizje nazw podczas schematu, który zawiera elementy, które różnią się tylko wielkością liter jest używany do generowania klasy dataset.  
+> W przeciwieństwie do zestawów danych dokumentów XML jest rozróżniana wielkość liter, więc nazwy elementów danych zdefiniowanych w schematach jest rozróżniana wielkość liter. Na przykład protokół schemat umożliwia schematu do definiowania tabeli o nazwie "Klientów" i inną tabelę o nazwie "klientów." Może to spowodować Kolizje nazw podczas schematu, który zawiera elementy, które różnią się tylko wielkością liter jest używany do generowania klasy dataset.  
   
  Wielkość liter, jednak może być czynnikiem, w jaki sposób interpretowania danych w zestawie danych. Na przykład w możesz filtrować dane w tabeli zestawu danych, kryteria wyszukiwania mogą zwracać różne wyniki w zależności od tego, czy wynikiem porównania jest uwzględniana wielkość liter. Można kontrolować rozróżnianie wielkości liter, filtrowanie, wyszukiwanie i sortowanie według ustawienia zestawu danych <xref:System.Data.DataSet.CaseSensitive%2A> właściwości. Domyślnie wszystkie tabele w zestawie danych dziedziczą wartość tej właściwości. (Można zastąpić tę właściwość, dla każdej pojedynczej tabeli, ustawiając w tabeli <xref:System.Data.DataTable.CaseSensitive%2A> właściwości.)  
   

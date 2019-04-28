@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ffb19e85d7294c082f7eecb0dbffd8aa436a03c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f2da5b3122bd97fcbef0db7124049372c21983f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422081"
 ---
 # <a name="debug-a-webview-control"></a>Debugowanie kontrolki WebView
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 4. (Opcjonalnie) Wersje non-Express programu Visual Studio można wyłączyć debugowanie just-in-time (JIT), wybierając **narzędzia**, **opcje**, **debugowanie**, **Just-In-Time**, a następnie wyłączenie JIT debugowania skryptu.  
   
     > [!NOTE]
-    >  Debugowanie JIT jest wyłączona, można ukryć, okna dialogowe dla nieobsłużonych wyjątków, które występują w niektórych witrynach sieci Web. W programie Visual Studio Express debugowanie JIT zawsze jest wyłączona.  
+    > Debugowanie JIT jest wyłączona, można ukryć, okna dialogowe dla nieobsłużonych wyjątków, które występują w niektórych witrynach sieci Web. W programie Visual Studio Express debugowanie JIT zawsze jest wyłączona.  
   
 5. Naciśnij klawisz F5, aby rozpocząć debugowanie.  
   
@@ -82,7 +82,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
      ![Docelowa wybierane w oknie konsoli JavaScript](../debugger/media/js-console-target.png "JS_Console_Target")  
   
     > [!NOTE]
-    >  Za pomocą konsoli, możesz wchodzić w interakcje za pomocą jednego `WebView`, `iFrame`, udostępnić kontraktu lub internetowych procesów roboczych w danym momencie. Każdy element wymaga oddzielnego wystąpienia hosta platformy sieci web (WWAHost.exe). Możesz korzystać z jednego hosta w danym momencie.  
+    > Za pomocą konsoli, możesz wchodzić w interakcje za pomocą jednego `WebView`, `iFrame`, udostępnić kontraktu lub internetowych procesów roboczych w danym momencie. Każdy element wymaga oddzielnego wystąpienia hosta platformy sieci web (WWAHost.exe). Możesz korzystać z jednego hosta w danym momencie.  
   
 6. Wyświetlanie i modyfikację zmiennych w swojej aplikacji lub użyj polecenia konsoli, zgodnie z opisem w [Szybki Start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) i [polecenia konsoli JavaScript](../debugger/javascript-console-commands.md).  
   

@@ -18,12 +18,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef782929b24d6f5e06c8e64aec53763481c503eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ddeb3fa5414208c610a7a21e176d55b0b0f985b5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435182"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Instrukcje: Podpisywanie aplikacji i manifestów wdrożenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Jeśli chcesz opublikować aplikację za pomocą wdrażania ClickOnce, manifest�
  Aby uzyskać informacje o tworzeniu plików kluczy, zobacz [jak: Tworzenie pary kluczy publiczny prywatny](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
 > [!NOTE]
->  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] obsługuje tylko te kluczowe pliki wymiany informacji osobistych (PFX), które mają rozszerzenie .pfx. Jednak można wybrać inne typy certyfikatów z magazynu certyfikatów Windows bieżącego użytkownika, klikając **wybierać Store** na **podpisywanie** strony właściwości projektu.  
+> [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] obsługuje tylko te kluczowe pliki wymiany informacji osobistych (PFX), które mają rozszerzenie .pfx. Jednak można wybrać inne typy certyfikatów z magazynu certyfikatów Windows bieżącego użytkownika, klikając **wybierać Store** na **podpisywanie** strony właściwości projektu.  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>Aby oznaczyć aplikację i wdrażania manifestów za pomocą certyfikatu  
   
@@ -48,7 +48,7 @@ Jeśli chcesz opublikować aplikację za pomocą wdrażania ClickOnce, manifest�
      **Wybierz certyfikat** okno dialogowe pojawia się i wyświetla zawartość w magazynie certyfikatów Windows.  
   
     > [!TIP]
-    >  Jeśli klikniesz **kliknij tutaj, aby wyświetlić właściwości certyfikatu**, **szczegóły certyfikatu** pojawi się okno dialogowe. To okno dialogowe zawiera szczegółowe informacje o certyfikacie i zawiera dodatkowe opcje. Możesz kliknąć pozycję **certyfikaty** Aby wyświetlić dodatkowe informacje pomocy.  
+    > Jeśli klikniesz **kliknij tutaj, aby wyświetlić właściwości certyfikatu**, **szczegóły certyfikatu** pojawi się okno dialogowe. To okno dialogowe zawiera szczegółowe informacje o certyfikacie i zawiera dodatkowe opcje. Możesz kliknąć pozycję **certyfikaty** Aby wyświetlić dodatkowe informacje pomocy.  
   
 3. Wybierz certyfikat, którego chcesz użyć do podpisania manifestów.  
   
@@ -65,7 +65,7 @@ Jeśli chcesz opublikować aplikację za pomocą wdrażania ClickOnce, manifest�
 3. W **okno dialogowe Wybierz plik** przejdź do lokalizacji pliku klucza (.pfx), który chcesz użyć, a następnie kliknij **Otwórz**.  
   
     > [!NOTE]
-    >  Ta opcja obsługuje tylko pliki, które mają rozszerzenie .pfx. Jeśli masz plik klucza lub certyfikat w innym formatu, zapisz go w magazynie certyfikatów Windows i wybierz certyfikat jest opisane w poprzedniej procedurze. Wybrany cel certyfikatu powinien zawierać oznaczanie kodu.  
+    > Ta opcja obsługuje tylko pliki, które mają rozszerzenie .pfx. Jeśli masz plik klucza lub certyfikat w innym formatu, zapisz go w magazynie certyfikatów Windows i wybierz certyfikat jest opisane w poprzedniej procedurze. Wybrany cel certyfikatu powinien zawierać oznaczanie kodu.  
   
      **Wprowadź hasło do otwarcia pliku** pojawi się okno dialogowe. (Plik PFX jest już przechowywany w magazynie certyfikatów Windows lub nie jest chroniony hasłem, możesz nie jest monitowany o podanie hasła.)  
   
@@ -83,7 +83,7 @@ Jeśli chcesz opublikować aplikację za pomocą wdrażania ClickOnce, manifest�
  Podpisywanie manifestów ClickOnce jest opcjonalne dla aplikacji opartych na .exe. Poniższe procedury pokazują, jak generować niepodpisane manifesty ClickOnce.  
   
 > [!IMPORTANT]
->  Nieoznaczone manifesty mogą uprościć rozwój i testowanie aplikacji. Jednak nieoznaczone manifesty stanowią znaczne zagrożenie dla bezpieczeństwa w środowisku produkcyjnym. Rozważ tylko użycie nieoznaczonych manifestów, jeśli aplikacja ClickOnce działa na komputerach w sieci intranet, która jest całkowicie odizolowana od Internetu lub innych źródeł złośliwego kodu.  
+> Nieoznaczone manifesty mogą uprościć rozwój i testowanie aplikacji. Jednak nieoznaczone manifesty stanowią znaczne zagrożenie dla bezpieczeństwa w środowisku produkcyjnym. Rozważ tylko użycie nieoznaczonych manifestów, jeśli aplikacja ClickOnce działa na komputerach w sieci intranet, która jest całkowicie odizolowana od Internetu lub innych źródeł złośliwego kodu.  
   
  Domyślnie ClickOnce automatycznie generuje podpisane manifesty, chyba że jeden lub więcej plików są szczególnie wyłączone z wygenerowanym mieszania. Innymi słowy, publikowanie aplikacji prowadzi do podpisanych manifestów, jeśli wszystkie pliki są uwzględnione w funkcji mieszającej, nawet wtedy, gdy **Podpisz manifesty ClickOnce** pole wyboru jest wyczyszczone.  
   
@@ -104,7 +104,7 @@ Jeśli chcesz opublikować aplikację za pomocą wdrażania ClickOnce, manifest�
 2. Otwórz **pliki aplikacji** okno dialogowe i ustaw **skrótu** do **wykluczyć** dla plików, które chcesz wykluczyć z wygenerowanego mieszania.  
   
     > [!NOTE]
-    >  Wykluczanie pliku ze skrótu konfiguruje funkcję ClickOnce, aby wyłączyć automatyczne oznaczanie manifestów, więc nie trzeba najpierw publikować oznaczonych manifestów jak pokazano w poprzedniej procedurze.  
+    > Wykluczanie pliku ze skrótu konfiguruje funkcję ClickOnce, aby wyłączyć automatyczne oznaczanie manifestów, więc nie trzeba najpierw publikować oznaczonych manifestów jak pokazano w poprzedniej procedurze.  
   
 3. Opublikuj aplikację.  
   

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f32f710b6e9749628716181ecf309f2520be041d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f02c4a98920fc575b5ab7c557dd469deb76a586
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427469"
 ---
 # <a name="saving-a-custom-document"></a>Zapisywanie niestandardowego dokumentu
 Obsługuje środowisko **Zapisz**, **Zapisz jako**, i **Zapisz wszystko** poleceń. Kiedy użytkownik kliknie **Zapisz**, **Zapisz jako**, **lub Zapisz wszystko** na **pliku** menu lub zamyka rozwiązania skutkuje Zapisz wszystko, następujące proces.
@@ -39,7 +39,7 @@ Obsługuje środowisko **Zapisz**, **Zapisz jako**, i **Zapisz wszystko** polece
      W przypadku niestandardowego edytora komunikacji między obiektem danych dokumentów i projektu jest prywatny. W efekcie wszelkie problemy dotyczące trwałości specjalne są obsługiwane między tymi dwoma obiektami.
 
     > [!NOTE]
-    >  W przypadku zastosowania własne trwałości, pamiętaj wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> metodę, aby zaoszczędzić czas. Ta metoda sprawdza się upewnić, że jest bezpieczne zapisać plik (na przykład plik nie jest tylko do odczytu).
+    > W przypadku zastosowania własne trwałości, pamiętaj wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> metodę, aby zaoszczędzić czas. Ta metoda sprawdza się upewnić, że jest bezpieczne zapisać plik (na przykład plik nie jest tylko do odczytu).
 
 ## <a name="see-also"></a>Zobacz też
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>

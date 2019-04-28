@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04867207ee8510a99ec19dc3f32175abedb39bf9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 13a26ec22060985705f6a1b54cf691c50ae07f1a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435212"
 ---
 # <a name="how-to-search-for-topics"></a>Instrukcje: Wyszukiwanie tematów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Funkcja wyszukiwania pełnotekstowego, aby znaleźć wszystkie tematy, które za
 2. W zapytaniu wyszukiwania należy określić które operatory logiczne i zaawansowane wyszukiwanie do zastosowania do wyszukiwania, jeśli istnieją. Aby wyszukać wszystkie dostępne pomocy, nie należy używać operatorów.  
   
     > [!NOTE]
-    >  W **Opcje podglądu** okno dialogowe, można określić dodatkowe preferencji, takich jak maksymalna liczba wyników wyszukiwania, aby wyświetlić w czasie i czy chcesz uwzględnić zawartość w języku angielskim, jeśli Twoje podstawowe ustawienia regionalne są inne niż angielskie.  
+    > W **Opcje podglądu** okno dialogowe, można określić dodatkowe preferencji, takich jak maksymalna liczba wyników wyszukiwania, aby wyświetlić w czasie i czy chcesz uwzględnić zawartość w języku angielskim, jeśli Twoje podstawowe ustawienia regionalne są inne niż angielskie.  
   
 3. Naciśnij klawisz Enter.  
   

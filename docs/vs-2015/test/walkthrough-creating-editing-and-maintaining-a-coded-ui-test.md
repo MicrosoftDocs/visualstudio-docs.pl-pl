@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8df705e1e4da6a54f060de45a90aed7c41691683
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 940a7551c83ec9a195ac0d54b430115ed926abf5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428233"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Przewodnik: Tworzenia, edytowania i utrzymywania kodowanego testu interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,7 +123,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 2. Utwórz na pulpicie skrót do aplikacji SimpleWPFApp. Kliknij prawym przyciskiem myszy SimpleWPFApp.exe i wybierz polecenie **kopiowania**. Na pulpicie kliknij prawym przyciskiem myszy i wybierz polecenie **Wklej skrót**.  
   
     > [!TIP]
-    >  Skrót do aplikacji ułatwia dodawanie lub modyfikowanie kodowanych testów interfejsu użytkownika dla aplikacji, ponieważ pozwala to na szybkie uruchamianie aplikacji.  
+    > Skrót do aplikacji ułatwia dodawanie lub modyfikowanie kodowanych testów interfejsu użytkownika dla aplikacji, ponieważ pozwala to na szybkie uruchamianie aplikacji.  
   
 3. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy rozwiązanie, wybierz polecenie **Dodaj** , a następnie wybierz **nowy projekt**.  
   
@@ -154,7 +154,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
      ![Wstrzymanie nagrywania](../test/media/cuit.png "CUIT_")  
   
     > [!WARNING]
-    >  Wszystkie akcje wykonywane na pulpicie będą rejestrowane. Wstrzymanie nagrywania, jeśli są wykonywane działania, które mogą prowadzić do danych poufnych jest zawarty w nagraniu.  
+    > Wszystkie akcje wykonywane na pulpicie będą rejestrowane. Wstrzymanie nagrywania, jeśli są wykonywane działania, które mogą prowadzić do danych poufnych jest zawarty w nagraniu.  
   
 9. Uruchamianie aplikacji za pomocą skrótu na pulpicie.  
   
@@ -203,7 +203,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 3. Aby rozwiązać ten problem, może wykonać kodowany test interfejsu użytkownika, poczekaj, aż formant CheckBox zostanie włączony przed przejściem do tego wiersza przy użyciu `WaitForControlEnabled()` metody.  
   
     > [!WARNING]
-    >  Nie należy modyfikować pliku UIMap.Designer.cs. Wszelkie zmiany kodu wprowadzone w pliku UIMapDesigner.cs zostaną każdorazowo zastąpione przy generowaniu kodu za pomocą UIMap — Konstruktora kodowanego testu interfejsu użytkownika. Jeśli trzeba zmodyfikować nagraną metodę, należy skopiować ją do pliku UIMap.cs i zmienić jej nazwę. Plik UIMap.cs może służyć do zastępowania metod i właściwości w pliku UIMapDesigner.cs. Musisz usunąć odwołanie do oryginalnej metody w pliku Coded UITest.cs, a następnie zastąpić je zmienioną nazwą metody.  
+    > Nie należy modyfikować pliku UIMap.Designer.cs. Wszelkie zmiany kodu wprowadzone w pliku UIMapDesigner.cs zostaną każdorazowo zastąpione przy generowaniu kodu za pomocą UIMap — Konstruktora kodowanego testu interfejsu użytkownika. Jeśli trzeba zmodyfikować nagraną metodę, należy skopiować ją do pliku UIMap.cs i zmienić jej nazwę. Plik UIMap.cs może służyć do zastępowania metod i właściwości w pliku UIMapDesigner.cs. Musisz usunąć odwołanie do oryginalnej metody w pliku Coded UITest.cs, a następnie zastąpić je zmienioną nazwą metody.  
   
 4. W Eksploratorze rozwiązań zlokalizuj **UIMap.uitest** w projekt kodowanego testu interfejsu użytkownika.  
   
@@ -224,7 +224,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
      Aktualizacje do metody testowej są zapisywane w pliku UIMap.Designer.  
   
     > [!CAUTION]
-    >  Po przeniesieniu metody nie będzie można edytować jej za pomocą Edytora kodowanego testu interfejsu użytkownika. Należy dodać niestandardowy kod i obsługiwać go za pomocą Edytora kodu.  
+    > Po przeniesieniu metody nie będzie można edytować jej za pomocą Edytora kodowanego testu interfejsu użytkownika. Należy dodać niestandardowy kod i obsługiwać go za pomocą Edytora kodu.  
   
 10. Zmień nazwę metody z `SimpleAppTest()` do `ModifiedSimpleAppTest()`  
   

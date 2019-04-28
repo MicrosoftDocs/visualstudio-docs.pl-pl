@@ -11,12 +11,12 @@ ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 66ca9a6176fc17784e79e5c4f3ad633a8c685854
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 163eb0f23716fa2f036d07612b741c0c9419b92e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408466"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Uzupełnianie instrukcji w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Uzupełnianie instrukcji jest procesem, za pomocą którego usługa językowa u�
  Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej na temat nowych sposobem realizowania uzupełniania instrukcji, zobacz [instruktażu: Wyświetlanie uzupełniania instrukcji](../../extensibility/walkthrough-displaying-statement-completion.md).  
   
 > [!NOTE]
->  Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.  
+> Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.  
   
 ## <a name="implementing-statement-completion"></a>Implementowanie uzupełnianie instrukcji  
  W edytorze podstawowych uzupełniania instrukcji aktywuje specjalny interfejs użytkownika, który interaktywnie pomaga łatwo i szybko napisać kod. Uzupełnianie instrukcji pomaga, wyświetlając odpowiednie obiekty lub klasy, gdy są one potrzebne, co pozwala uniknąć, trzeba pamiętać określone elementy lub do wyszukania w temacie pomocy odwołania.  

@@ -12,12 +12,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 600cae730cacad4f54433b8179b97eb131a64fab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7dde910c5622a67ad002a085ace746ebc68e8857
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439229"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Przewodnik: Korzystanie z pliku konfiguracji do określania źródła danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ W tym instruktażu pokazano, jak korzystających ze źródła danych, zdefiniowa
 ```  
   
 > [!NOTE]
->  Nazwa zestawu musi odpowiadać kompilacji programu Microsoft Visual Studio .NET Framework, którego używasz. Wybierz wersję odpowiadającą 9.0.0.0 korzystania z programu Visual Studio .NET Framework 3.5. Jeśli używasz programu Visual Studio .NET Framework 2.0, wybierz wersję odpowiadającą 8.0.0.0.  
+> Nazwa zestawu musi odpowiadać kompilacji programu Microsoft Visual Studio .NET Framework, którego używasz. Wybierz wersję odpowiadającą 9.0.0.0 korzystania z programu Visual Studio .NET Framework 3.5. Jeśli używasz programu Visual Studio .NET Framework 2.0, wybierz wersję odpowiadającą 8.0.0.0.  
   
 ## <a name="define-connection-strings"></a>Zdefiniuj parametry połączenia  
  Parametry połączenia zdefiniować określonych informacji o dostawcy do uzyskiwania dostępu do źródła danych. Parametry połączenia określone w plikach konfiguracji udostępnianie informacji o dostawcy danych wielokrotnego użytku w aplikacji. W tej sekcji utworzysz dwa ciągi połączeń, które będą używane przez źródła danych, które są zdefiniowane w sekcji Konfiguracja niestandardowa.  
@@ -266,10 +266,10 @@ W tym instruktażu pokazano, jak korzystających ze źródła danych, zdefiniowa
 4. Skompiluj rozwiązanie i uruchomić testy MyTestMethod i MyTestMethod2.  
   
 > [!IMPORTANT]
->  Wdróż elementy, takie jak źródła danych, tak aby były dostępne dla testów w katalogu wdrożenia.  
+> Wdróż elementy, takie jak źródła danych, tak aby były dostępne dla testów w katalogu wdrożenia.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Testowanie jednostek kodu](../test/unit-test-your-code.md)   
  [Tworzenie i Uruchamianie testów jednostkowych dla istniejącego kodu](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [Testowanie aplikacji](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
- [Instrukcje: Tworzenie testu jednostkowego opartego na danych](../test/how-to-create-a-data-driven-unit-test.md)
+ [Instrukcje: tworzenie testu jednostkowego opartego na danych](../test/how-to-create-a-data-driven-unit-test.md)

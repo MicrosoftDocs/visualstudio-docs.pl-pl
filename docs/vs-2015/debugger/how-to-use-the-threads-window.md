@@ -24,12 +24,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc40611a8ba5cded6d631e0f52157d4aadb45ff3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 280160127cc147cddd91a79c4290f80a311ee792
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434860"
 ---
 # <a name="how-to-use-the-threads-window"></a>Instrukcje: Korzystanie z okna wątków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,7 +132,7 @@ W **wątków** okna, możesz sprawdzić i Praca z wątkami w aplikacji, na któr
  W kodzie zarządzanym zawiesza się lub rozgrzewania wątku zmienić licznik wstrzymany. W kodzie zarządzanym zablokowanego wątku został wstrzymany liczbę 1. W kodzie natywnym zablokowanego wątku ma liczba wstrzymanych 0, chyba że wątek został wstrzymany `SuspendThread` wywołania.  
   
 > [!NOTE]
->  Podczas debugowania wywołań z kodu natywnego do zarządzanego kodu, kod zarządzany działa w tym samym wątku fizycznym jako kodu natywnego, która nazwała go. Zawieszanie lub zawiesza się Wątek macierzysty również zawiesza się kod zarządzany.  
+> Podczas debugowania wywołań z kodu natywnego do zarządzanego kodu, kod zarządzany działa w tym samym wątku fizycznym jako kodu natywnego, która nazwała go. Zawieszanie lub zawiesza się Wątek macierzysty również zawiesza się kod zarządzany.  
   
 #### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>Na blokowanie lub odblokowywanie wykonanie wątku  
   

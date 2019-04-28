@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a236b30552007112663ad9f985ddc94995fe1ef8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bb7ee0a937e6cb901704763e1f4ead478d99e0e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419445"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Instrukcje: Ukrywanie formantów w arkuszu podczas drukowania
   Podczas drukowania dokument programu Microsoft Office Excel, który zawiera formanty Windows Forms, formanty są widoczne na drukowanego arkusza. Można ukryć formantów podczas drukowania arkusza.
@@ -28,10 +28,10 @@ ms.locfileid: "60050027"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  Jeżeli ukrywanie formantów, które wyświetlają dane, takie jak <xref:Microsoft.Office.Tools.Excel.Controls.TextBox>, nie są widoczne w arkuszu drukowanych danych w formancie.
+> Jeżeli ukrywanie formantów, które wyświetlają dane, takie jak <xref:Microsoft.Office.Tools.Excel.Controls.TextBox>, nie są widoczne w arkuszu drukowanych danych w formancie.
 
 > [!NOTE]
->  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="to-hide-controls-when-a-worksheet-is-printed"></a>Ukrywanie formantów podczas arkusz zostanie wydrukowany
 

@@ -28,12 +28,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69e18d2baabd7bffcf794def593022b898bcd940
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 91223021ce6f05b91d47e7b7019fb0c5c02243db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416790"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Instrukcje: Dostosowywanie menu i pasków zadań w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60094531"
 Można dostosować Visual Studio nie tylko przez dodawanie i usuwanie pasków narzędzi i menu na pasku menu, ale także przez dodawanie i usuwanie poleceń dowolnego danego paska narzędzi lub menu.
 
 > [!WARNING]
->  Po dostosowaniu paska narzędzi lub menu, upewnij się, że jego pole wyboru pozostaje wybrane w **Dostosuj** okno dialogowe. W przeciwnym razie zmiany nie są zachowywane po zamknięciu i ponownym otwarciu Visual Studio.
+> Po dostosowaniu paska narzędzi lub menu, upewnij się, że jego pole wyboru pozostaje wybrane w **Dostosuj** okno dialogowe. W przeciwnym razie zmiany nie są zachowywane po zamknięciu i ponownym otwarciu Visual Studio.
 
  **W tym temacie:**
 
@@ -84,14 +84,14 @@ Można dostosować Visual Studio nie tylko przez dodawanie i usuwanie pasków na
     - Aby usunąć niestandardowy pasek narzędzi, wybierz je **pasków narzędzi** , a następnie wybierz **Usuń** przycisku.
 
         > [!IMPORTANT]
-        >  Możesz usunąć paski narzędzi, które utworzyłeś, ale nie domyślne paski narzędzi.
+        > Możesz usunąć paski narzędzi, które utworzyłeś, ale nie domyślne paski narzędzi.
 
     - Aby przenieść pasek narzędzi w inne miejsce dokowania, wybierz je **pasków narzędzi** wybierz **Modyfikuj zaznaczenie** przycisk, a następnie wybierz lokalizację na liście.
 
          Możesz również przeciągnąć pasek narzędzi za jego lewą krawędź, aby przenieść go w dowolne miejsce w głównym obszarze dokowania.
 
         > [!NOTE]
-        >  Aby uzyskać więcej informacji na temat sposobu zwiększania użyteczności i dostępności pasków narzędzi, zobacz [jak: Ustawianie opcji ułatwień dostępu IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Aby uzyskać więcej informacji na temat sposobu zwiększania użyteczności i dostępności pasków narzędzi, zobacz [jak: Ustawianie opcji ułatwień dostępu IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ## <a name="bkmk_customize"></a> Dostosowywanie menu lub paska narzędzi
 

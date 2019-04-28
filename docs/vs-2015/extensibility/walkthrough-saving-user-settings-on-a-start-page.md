@@ -8,12 +8,12 @@ ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 510d0c2144b2640f720bea004cdc44026f749310
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8976d329f6303d60cc00609bc9ed9471456c1b63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408760"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Przewodnik: Zapisywanie ustawień użytkownika na stronie początkowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Za utrwalanie ustawień użytkownika uzyskać swoją stronę początkową. Dzię
 ## <a name="prerequisites"></a>Wymagania wstępne  
   
 > [!NOTE]
->  Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+> Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
 >   
->  Szablon projektu strona startowa można pobrać przy użyciu **Menedżera rozszerzeń**.  
+> Szablon projektu strona startowa można pobrać przy użyciu **Menedżera rozszerzeń**.  
   
 ## <a name="setting-up-the-project"></a>Konfigurowanie projektu  
   

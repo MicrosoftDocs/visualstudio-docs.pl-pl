@@ -24,12 +24,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aba4d37d672d3e544d65f46c6f32062f9b2637eb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: df33215bab20be8744ed2455ef87f1a037871f95
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419719"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Przeglądarka sieci Web, środowisko, opcje — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,10 +37,10 @@ ms.locfileid: "59663982"
 Ustawia opcje dla wewnętrznej przeglądarki sieci Web i program Internet Explorer. Aby otworzyć to okno dialogowe, kliknij przycisk **opcje** na **narzędzia** menu, rozwiń węzeł **środowiska** folder, a następnie wybierz **przeglądarki sieci Web**.  
   
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!IMPORTANT]
->  Otwieranie określone pliki lub składniki z sieci Web może wykonać kod na komputerze.  
+> Otwieranie określone pliki lub składniki z sieci Web może wykonać kod na komputerze.  
   
  Strona główna  
  Ustawia stronę wyświetlaną po otwarciu przeglądarki sieci Web w środowisku IDE.  
@@ -61,7 +61,7 @@ Ustawia opcje dla wewnętrznej przeglądarki sieci Web i program Internet Explor
   Kliknij, aby zmienić opcje programu Internet Explorer w **właściwości internetowe** okno dialogowe. Zmiany wprowadzone w tym oknie dialogowym wpływa na wewnętrznej przeglądarki sieci Web i wystąpień programu Internet Explorer inicjowane poza programem Visual Studio IDE (na przykład z Start menu).  
   
 > [!NOTE]
->  Użyj okna dialogowego Przeglądanie za pomocą programu Visual Studio wewnętrznej przeglądarki sieci Web, czyli wersji programu Internet Explorer przy użyciu przeglądarki sieci Web innych, zewnętrzne zastąpienie.  
+> Użyj okna dialogowego Przeglądanie za pomocą programu Visual Studio wewnętrznej przeglądarki sieci Web, czyli wersji programu Internet Explorer przy użyciu przeglądarki sieci Web innych, zewnętrzne zastąpienie.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Okno dialogowe opcji środowiska](../../ide/reference/environment-options-dialog-box.md)   

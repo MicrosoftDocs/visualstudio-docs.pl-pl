@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae5d345da49ee33841a50622f3d1c59e2309890c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 03fab773ed6842bc21552d060797b331d9f73770
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437037"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Zatwierdzanie edycji wewnątrzprocesowych w ramach kontrolek powiązanych z danymi przed zapisaniem danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Podczas edytowania wartości w formantach powiązanych z danymi, użytkownicy mu
  Można skonfigurować aplikację do automatycznego zatwierdzania zmian, nawet wtedy, gdy użytkownik próbuje zapisać dane bez zatwierdzania zmian, Zapisz w ramach procesu.  
   
 > [!NOTE]
->  Projektant dodaje `BindingSource.EndEdit` kod tylko dla pierwszego elementu upuszczone na formularzu. W związku z tym, należy dodać wiersz kodu w celu wywołania <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metody dla każdego <xref:System.Windows.Forms.BindingSource> w formularzu. Można ręcznie dodać wiersz kodu w celu wywołania <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metody dla każdego <xref:System.Windows.Forms.BindingSource>. Alternatywnie, można dodać `EndEditOnAllBindingSources` metody do formularza, a następnie wywołaj ją przed wykonaniem zapisywania.  
+> Projektant dodaje `BindingSource.EndEdit` kod tylko dla pierwszego elementu upuszczone na formularzu. W związku z tym, należy dodać wiersz kodu w celu wywołania <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metody dla każdego <xref:System.Windows.Forms.BindingSource> w formularzu. Można ręcznie dodać wiersz kodu w celu wywołania <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metody dla każdego <xref:System.Windows.Forms.BindingSource>. Alternatywnie, można dodać `EndEditOnAllBindingSources` metody do formularza, a następnie wywołaj ją przed wykonaniem zapisywania.  
   
  Poniższy kod używa [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) zapytania do wszystkich iteracji <xref:System.Windows.Forms.BindingSource> składników i wywołania <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metody dla każdego <xref:System.Windows.Forms.BindingSource> w formularzu.  
   

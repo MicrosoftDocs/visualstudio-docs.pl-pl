@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8840c570d4de2544a5cdb4831f083e5a3598ca72
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f9a7d4288258ab3e90a7eec6ba3de7ac6892ee93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442889"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Używanie automatyzacji interfejsu użytkownika do testowania kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ Testy automatyczne, które kontrolują aplikację przez jej interfejs użytkowni
     **Aby Wstrzymaj nagrywanie**, na przykład jeśli masz do czynienia z przychodzących wiadomości e-mail, wybierz **wstrzymać**.
 
    > [!WARNING]
-   >  Wszystkie akcje wykonywane na pulpicie będą rejestrowane. Wstrzymanie nagrywania, jeśli są wykonywane działania, które mogą prowadzić do danych poufnych jest zawarty w nagraniu.
+   > Wszystkie akcje wykonywane na pulpicie będą rejestrowane. Wstrzymanie nagrywania, jeśli są wykonywane działania, które mogą prowadzić do danych poufnych jest zawarty w nagraniu.
 
     **Można usunąć akcji** zapisane przez pomyłkę, wybierz polecenie **edytować akcje**.
 
@@ -113,7 +113,7 @@ Testy automatyczne, które kontrolują aplikację przez jej interfejs użytkowni
     ![Kodowany test interfejsu użytkownika, przeznaczonych dla elementu](../test/media/codedui-1.png "CodedUI_1")
 
    > [!TIP]
-   >  Przełącza między rejestrowanie akcji i weryfikowanie wartości. Generowanie kodu na końcu każdego sekwencję akcji lub weryfikacji. Jeśli chcesz, będzie można później Wstaw nowe akcje i weryfikacji.
+   > Przełącza między rejestrowanie akcji i weryfikowanie wartości. Generowanie kodu na końcu każdego sekwencję akcji lub weryfikacji. Jeśli chcesz, będzie można później Wstaw nowe akcje i weryfikacji.
 
     Aby uzyskać więcej informacji, zobacz [sprawdzania poprawności właściwości formantów](#VerifyingCodeUsingCUITGenerateAssertions).
 
@@ -230,7 +230,7 @@ Testy automatyczne, które kontrolują aplikację przez jej interfejs użytkowni
   Aby użyć klawiatury, aby wybrać kontrolkę interfejsu użytkownika, umieść kursor nad kontrolką za pomocą myszy. Wciśnij klawisz **Ctrl** klucza i **I** klucza w tym samym czasie. Wydawanie kluczy. Kontrolka jest rejestrowana przez konstruktora kodowanego testu UT.
 
 > [!WARNING]
->  Jeśli używasz Microsoft Lync, należy zamknąć Lync, przed rozpoczęciem korzystania z konstruktora kodowanego testu interfejsu użytkownika. Microsoft Lync zakłóca **Ctrl + I** skróty klawiaturowe.
+> Jeśli używasz Microsoft Lync, należy zamknąć Lync, przed rozpoczęciem korzystania z konstruktora kodowanego testu interfejsu użytkownika. Microsoft Lync zakłóca **Ctrl + I** skróty klawiaturowe.
 
  *Nie można zarejestrować umieść kursor myszy na kontrolce. Czy istnieje rozwiązanie tego problemu?*
  **Ręcznie wskaźnika myszy nagrywanie**
@@ -255,7 +255,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
  Jeśli to konieczne, można skonfigurować domyślne przypisanie klawiatura Ctrl + Shift + R, który służy do stosowania aktywowania zdarzeń myszy w kodowanych testach interfejsu użytkownika do używania różnych kluczy.
 
 > [!WARNING]
->  Zmień przypisania klawiatury dla zdarzeń po wskazaniu wskaźnikiem myszy w zwykłych okolicznościach nie powinna mieć. Ponowne przypisywanie przypisania klawiatury, należy zachować ostrożność. Wybór mogą być już używany w ramach programu Visual Studio lub aplikacja poddawana testom.
+> Zmień przypisania klawiatury dla zdarzeń po wskazaniu wskaźnikiem myszy w zwykłych okolicznościach nie powinna mieć. Ponowne przypisywanie przypisania klawiatury, należy zachować ostrożność. Wybór mogą być już używany w ramach programu Visual Studio lub aplikacja poddawana testom.
 
  Aby zmienić przypisania klawiatury, należy zmodyfikować następującego pliku konfiguracji:
 
@@ -356,7 +356,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   ```
 
   > [!WARNING]
-  >  Nie należy edytować tego pliku, ponieważ zostaną wygenerowane, gdy tworzysz więcej testów.
+  > Nie należy edytować tego pliku, ponieważ zostaną wygenerowane, gdy tworzysz więcej testów.
 
    Można tworzyć dostosowane wersji tych metod, kopiując je do UIMap.cs. Na przykład można dokonać sparametryzowane wersji, który można wywołać z metody testowej:
 
@@ -487,7 +487,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Podnoszenie jakości kodu](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
-- [Przewodnik: Tworzenia, edytowania i utrzymywania kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [Przewodnik: tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Anatomia kodowanego testu interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md)
 - [Najlepsze praktyki dotyczące kodowanych testów interfejsu użytkownika](../test/best-practices-for-coded-ui-tests.md)
 - [Testowanie dużej aplikacji przy użyciu wielu map UI](../test/testing-a-large-application-with-multiple-ui-maps.md)

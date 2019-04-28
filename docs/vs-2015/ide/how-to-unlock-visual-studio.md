@@ -10,12 +10,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05153b7829281684ff9f27f2b5ac708903982b57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0e1fc8e9bcb6f70a2665303eb6cac353a3f87bd9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435100"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Jak odblokować program Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Możesz ocenić programu Visual Studio bezpłatnie do 30 dni. Po zalogowaniu si�
 2. Wprowadź poświadczenia dla konta Microsoft lub konta służbowego lub szkolnego. Program Visual Studio znajdzie subskrypcję MSDN lub Visual Studio Team Services skojarzonych z Twoim kontem.
 
 > [!IMPORTANT]
->  Program Visual Studio automatycznie wyszuka skojarzone subskrypcje w trybie online, po nawiązaniu połączenia z kontem usługi Visual Studio Team Services z okna narzędzia Team Explorer. Po nawiązaniu połączenia z kontem usługi Visual Studio Team Services, możesz zalogować się przy użyciu Microsoft i jej pracy lub kont służbowych. Jeśli istnieje subskrypcją w trybie online dla tego konta użytkownika, Visual Studio automatycznie odblokować środowisko IDE dla Ciebie.
+> Program Visual Studio automatycznie wyszuka skojarzone subskrypcje w trybie online, po nawiązaniu połączenia z kontem usługi Visual Studio Team Services z okna narzędzia Team Explorer. Po nawiązaniu połączenia z kontem usługi Visual Studio Team Services, możesz zalogować się przy użyciu Microsoft i jej pracy lub kont służbowych. Jeśli istnieje subskrypcją w trybie online dla tego konta użytkownika, Visual Studio automatycznie odblokować środowisko IDE dla Ciebie.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Aby odblokować program Visual Studio za pomocą klucza produktu
 
@@ -43,7 +43,7 @@ Możesz ocenić programu Visual Studio bezpłatnie do 30 dni. Po zalogowaniu si�
 2. Wprowadź klucz produktu, w tym miejscu.
 
 > [!TIP]
->  Wersje wstępne programu Visual Studio nie ma kluczy produktów. Musisz się zarejestrować się do IDE na używanie wersji wstępnej.
+> Wersje wstępne programu Visual Studio nie ma kluczy produktów. Musisz się zarejestrować się do IDE na używanie wersji wstępnej.
 
 ## <a name="addressing-license-problem-states"></a>Adresowanie stanów Problem licencji
 
@@ -63,7 +63,7 @@ Możesz ocenić programu Visual Studio bezpłatnie do 30 dni. Po zalogowaniu si�
    Jeśli nie ponownie wprowadzić swoje poświadczenia token zostanie uruchomiony do starych. W takim przypadku okno dialogowe Ustawienia konta informujący o tym ile dni pozostało przed pełni wygaśnięcia tokenu. Po wygaśnięciu tokenu programu, należy ponownie wprowadzić swoje poświadczenia dla tego konta lub aktywnej licencji przy użyciu innej metody powyżej, przed kontynuowaniem za pomocą programu Visual Studio.
 
 > [!IMPORTANT]
->  Jeśli używasz programu Visual Studio przez dłuższy czas, w środowiskach o ograniczonym lub Brak dostępu do Internetu, należy użyć klucza produktu odblokować program Visual Studio, aby uniknąć przerw w działaniu.
+> Jeśli używasz programu Visual Studio przez dłuższy czas, w środowiskach o ograniczonym lub Brak dostępu do Internetu, należy użyć klucza produktu odblokować program Visual Studio, aby uniknąć przerw w działaniu.
 
 ### <a name="updating-expired-licenses"></a>Aktualizowanie wygasłych licencji
  Jeśli Twoja subskrypcja wygasła całkowicie i nie jest już prawa dostępu do programu Visual Studio, musisz mieć:

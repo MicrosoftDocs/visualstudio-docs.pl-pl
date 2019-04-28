@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d7bf1be05ebabcaac319cce591cf82cd2ab5f5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6b6f0b1f3afec1231778a54c82422d6761995eb1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402799"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Instrukcje: Tworzenie skojarzenia między LINQ to SQL klas (Projektant O/R)
 Skojarzenia między klasami jednostki w [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] są analogiczne do relacji między tabelami w bazie danych. Można utworzyć skojarzenia między klasami jednostki przy użyciu **Edytor skojarzeń** okno dialogowe.
@@ -21,7 +21,7 @@ Skojarzenia między klasami jednostki w [!INCLUDE[vbtecdlinq](../data-tools/incl
 Gdy używasz należy wybrać klasy nadrzędnej i podrzędnej klasy **Edytor skojarzeń** okno dialogowe, aby utworzyć skojarzenie. Klasa nadrzędna jest klasa jednostki, który zawiera klucz podstawowy; Klasa potomna jest klasa jednostki, która zawiera klucz obcy. Na przykład, jeśli klas jednostek zostały utworzone mapowane na `Northwind Customers` i `Orders` tabel, `Customer` klasy będzie klasy nadrzędnej i `Order` klasy będzie klasy podrzędnej.
 
 > [!NOTE]
->  Podczas przeciągania tabel z **Eksploratora serwera** lub **Eksplorator bazy danych** na **Object Relational Designer** (**O/R Designer**), skojarzenia są tworzone automatycznie w oparciu o istniejące relacje klucza obcego w bazie danych.
+> Podczas przeciągania tabel z **Eksploratora serwera** lub **Eksplorator bazy danych** na **Object Relational Designer** (**O/R Designer**), skojarzenia są tworzone automatycznie w oparciu o istniejące relacje klucza obcego w bazie danych.
 
 ## <a name="association-properties"></a>Właściwości skojarzenia
 Po utworzeniu skojarzenia, po wybraniu skojarzenia w **O/R Designer**, istnieje kilka właściwości możliwych do skonfigurowania w **właściwości** okna. (Skojarzenie jest wiersz między powiązanymi klasami). Poniższa tabela zawiera opis właściwości skojarzenia.

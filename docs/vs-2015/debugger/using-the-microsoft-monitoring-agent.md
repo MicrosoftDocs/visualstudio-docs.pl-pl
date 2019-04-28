@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c6ea3c9a5ecb0fa10c6b020f3af8a51a65952c9a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 06db94841a45f648461822c5f205cb68bbb2b1c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437726"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Korzystanie z programu Microsoft Monitoring Agent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
      Upewnij się, utworzyć ten katalog, przed rozpoczęciem monitorowania. Aby nie spowalniać pracy swojej aplikacji, wybierz lokalizację na lokalnym dysku o dużej szybkości, który nie jest bardzo obciążony.  
   
     > [!IMPORTANT]
-    >  Dzienniki IntelliTrace może zawierać dane osobowe i wrażliwe. Dostęp do tego katalogu do tych tożsamości, które muszą pracować z plikami. Sprawdź zasady zachowania poufności informacji firmy.  
+    > Dzienniki IntelliTrace może zawierać dane osobowe i wrażliwe. Dostęp do tego katalogu do tych tożsamości, które muszą pracować z plikami. Sprawdź zasady zachowania poufności informacji firmy.  
   
 5. Uruchom szczegółowy poziom funkcji monitorowania lub do monitorowania aplikacji programu SharePoint, należy udzielić tej puli aplikacji, który jest hostem sieci web aplikacji lub aplikacji SharePoint uprawnienia odczytu i zapisu do katalogu dziennika funkcji IntelliTrace. [PYT.: Jak skonfigurować uprawnienia dla puli aplikacji?](#FullPermissionsITLog)  
   
@@ -259,7 +259,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
 3. Kopiuj dziennik do bezpiecznego folderu udostępnionego, a następnie otwórz dziennik z komputera, który ma Visual Studio Enterprise (ale nie w wersji Professional lub Community).  
   
    > [!IMPORTANT]
-   >  Należy zachować ostrożność podczas udostępniania dzienników IntelliTrace, ponieważ mogą one zawierać dane osobowe i wrażliwe. Upewnij się, kto mogą uzyskiwać dostęp do tych dzienników ma uprawnienia do wzięcia pod tych danych. Sprawdź zasady zachowania poufności informacji firmy.  
+   > Należy zachować ostrożność podczas udostępniania dzienników IntelliTrace, ponieważ mogą one zawierać dane osobowe i wrażliwe. Upewnij się, kto mogą uzyskiwać dostęp do tych dzienników ma uprawnienia do wzięcia pod tych danych. Sprawdź zasady zachowania poufności informacji firmy.  
   
    **Dalej:** [Diagnozowanie zarejestrowane zdarzenia w programie Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   

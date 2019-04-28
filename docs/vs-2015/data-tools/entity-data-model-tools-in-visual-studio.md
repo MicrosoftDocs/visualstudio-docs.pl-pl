@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db58bb1826aab9a26dcec6a9475c49fc99057891
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: e10279740d590b63bb3781afd3486f7952123664
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431935"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Narzędzia modelu danych jednostki w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Entity Framework to technologii mapowania obiektowo relacyjny, który umożliwia
 - Możesz użyć **Kreatora aktualizacji modelu** można zaktualizować swoje modelu koncepcyjnego, model magazynu i mapowania, jeśli wprowadzono zmiany do podstawowej bazy danych.
 
   > [!NOTE]
-  >  Począwszy od programu Visual Studio 2010, [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] narzędzia nie obsługują [!INCLUDE[ss2k](../includes/ss2k-md.md)].
+  > Począwszy od programu Visual Studio 2010, [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] narzędzia nie obsługują [!INCLUDE[ss2k](../includes/ss2k-md.md)].
 
   Narzędzia Generowanie lub modyfikowanie pliku edmx. Ten plik zawiera informacje opisujące modelu koncepcyjnego, model magazynu i mapowania między nimi. Aby uzyskać więcej informacji, zobacz [EDMX](https://msdn.microsoft.com/data/jj650889.aspx).
 

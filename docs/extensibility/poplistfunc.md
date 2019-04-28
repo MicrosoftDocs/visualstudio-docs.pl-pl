@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54b73a7f34c663661ae9cc2e2805e5fb6bd11480
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 83e54cf1b0e6f15b1a6c5dc0af379a8b88bd77f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434238"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 To wywołanie zwrotne jest dostarczony do [SccPopulateList](../extensibility/sccpopulatelist-function.md) IDE i jest używany przez wtyczka do kontroli źródła do aktualizowania listy plików lub katalogów (również dostarczane do `SccPopulateList` funkcji).
@@ -56,7 +56,7 @@ typedef BOOL (*POPLISTFUNC) (
  Dla każdego pliku, który chce wtyczka do kontroli źródła, dodawanie do lub usuwanie z listy plików, wywołuje tę funkcję, przekazując `lpFileName`. `fAddRemove` Flaga wskazuje nowy plik, aby dodać do listy lub stary plik do usunięcia. `nStatus` Parametr zapewnia stan pliku. Po zakończeniu SCC wtyczki, dodawanie i usuwanie plików, zwraca od [SccPopulateList](../extensibility/sccpopulatelist-function.md) wywołania.
 
 > [!NOTE]
->  `SCC_CAP_POPULATELIST` Bit możliwości jest wymagany dla programu Visual Studio.
+> `SCC_CAP_POPULATELIST` Bit możliwości jest wymagany dla programu Visual Studio.
 
 ## <a name="see-also"></a>Zobacz także
 - [Funkcje wywołania zwrotnego implementowane przez środowisko IDE](../extensibility/callback-functions-implemented-by-the-ide.md)

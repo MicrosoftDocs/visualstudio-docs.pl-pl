@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a9298f57e3b1f4a05effcb82a39e14503c9cbf74
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7097311c3d1aae718096c3bf74ec04c3e5ea8818
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433587"
 ---
 # <a name="item-definitions"></a>Definicje elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60090762"
  Metadane elementu, który jest zdefiniowany w ItemDefinitionGroup — jest po prostu deklarację domyślnej metadanych. Metadane nie ma zastosowania, chyba że zdefiniujesz elementu, który używa ItemGroup zawiera wartości metadanych.  
   
 > [!NOTE]
->  W wielu przykładach w niniejszym temacie ItemDefinitionGroup — element jest wyświetlane, ale jego odpowiedniej definicji ItemGroup została pominięta w celu przejrzystości.  
+> W wielu przykładach w niniejszym temacie ItemDefinitionGroup — element jest wyświetlane, ale jego odpowiedniej definicji ItemGroup została pominięta w celu przejrzystości.  
   
  Metadane jawnie zdefiniowany w ItemGroup mają pierwszeństwo przed metadanych w ItemDefinitionGroup —. Metadane w ItemDefinitionGroup — są stosowane tylko w przypadku niezdefiniowane metadanych w ItemGroup. Na przykład:  
   
@@ -61,7 +61,7 @@ ms.locfileid: "60090762"
  W tym przykładzie domyślne metadanych "m" jest stosowany do elementu "i", ponieważ metadane "m" nie jest jawnie zdefiniowany przez element "i". Jednak domyślne metadanych "n" nie ma zastosowania do elementu "i", ponieważ metadane "n" jest już zdefiniowany przez element "i".  
   
 > [!NOTE]
->  Nazwy elementu XML i parametru jest uwzględniana wielkość\-poufnych. Element metadanych i elementu\/nazwy właściwości nie są przypadków\-poufnych. W związku z tym ItemDefinitionGroup — elementy, których nazwy różnią się tylko wielkością liter powinny być traktowane jako ten sam element ItemGroup.  
+> Nazwy elementu XML i parametru jest uwzględniana wielkość\-poufnych. Element metadanych i elementu\/nazwy właściwości nie są przypadków\-poufnych. W związku z tym ItemDefinitionGroup — elementy, których nazwy różnią się tylko wielkością liter powinny być traktowane jako ten sam element ItemGroup.  
   
 ## <a name="value-sources"></a>Wartość źródła  
  Wartości metadanych, który jest zdefiniowany w ItemDefinitionGroup — mogą pochodzić z różnych źródeł, w następujący sposób:  
@@ -83,7 +83,7 @@ ms.locfileid: "60090762"
 - Sekcja CDATA \< \! \[CDATA\[tutaj niczego nie jest analizowana\]\]\>  
   
 > [!NOTE]
->  Metadane elementu z ItemGroup nie jest przydatne w deklaracji metadanych ItemDefinitionGroup —, ponieważ ItemDefinitionGroup — elementy są przetwarzane przed ItemGroup elementów.  
+> Metadane elementu z ItemGroup nie jest przydatne w deklaracji metadanych ItemDefinitionGroup —, ponieważ ItemDefinitionGroup — elementy są przetwarzane przed ItemGroup elementów.  
   
 ## <a name="additive-and-multiple-definitions"></a>Dodatek i wiele definicji  
  Podczas dodawania definicji lub użyć wielu ItemDefinitionGroups, pamiętaj o następujących kwestiach:  
@@ -128,7 +128,7 @@ ms.locfileid: "60090762"
  W tym przykładzie wartością uprzednio zdefiniowany dla metadanych "m" \(m1\) jest dodawana do nowej wartości \(m2\), dzięki czemu jest końcowa wartość "m1; m2".  
   
 > [!NOTE]
->  To może również wystąpić w ten sam element ItemDefinitionGroup.  
+> To może również wystąpić w ten sam element ItemDefinitionGroup.  
   
  Podczas zastąpienia wcześniej zdefiniowane metadane specyfikację ostatni ma pierwszeństwo. W poniższym przykładzie końcowa wartość metadanych "m" przechodzi od "m1" do "m1a".  
   
@@ -159,7 +159,7 @@ ms.locfileid: "60090762"
  W tym przypadku metadane domyślny "m1" w elemencie "i" są dołączone, tylko wtedy, gdy wartość właściwości "Konfiguracja" "Debug".  
   
 > [!NOTE]
->  Tylko odwołania do metadanych lokalnego są obsługiwane w warunkach.  
+> Tylko odwołania do metadanych lokalnego są obsługiwane w warunkach.  
   
  Odwołania do metadanych zdefiniowanych w starszych ItemDefinitionGroup — są lokalne do elementu, a nie grupy definicji. Oznacza to, że zakres odwołania są elementu\-określone. Na przykład:  
   

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fcdd4e2253652246e3d0cb3fcd829c8e5d7786bf
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 2b3138e148ea44371c7bd9b5fb82c583cd00e832
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436424"
 ---
 # <a name="create-sharepoint-solutions"></a>Tworzenie rozwiązań SharePoint
   Można tworzyć aplikacje SharePoint w programie Visual Studio jako alternatywę do tworzenia ich w programie SharePoint Designer. Visual Studio promuje szybki rozwój programu SharePoint, udostępniając takie funkcje jak zaawansowane narzędzia do debugowania, IntelliSense, dokańczanie instrukcji i szablony projektów. Program Visual Studio również korzysta z zaawansowanych języków i narzędzi opartych na programie .NET Framework. Można rozwijać projekty programu SharePoint przy użyciu języka Visual Basic lub Visual C# i można opracować aplikację dla projektów programu SharePoint przy użyciu języka JavaScript.
@@ -25,7 +25,7 @@ ms.locfileid: "57869918"
  Aby uzyskać informacje na temat programu SharePoint 2013 i dodatków programu SharePoint, zobacz [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) i [Tworzenie aplikacji dla programu SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 > [!NOTE]
->  Dowiedz się, jak korzystać z nowego [modelu dodatków programu SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins), aby wzbogacić doświadczenia użytkowników z obsługą programu SharePoint. Dodatki te mają bardzo mały wpływ na zużycie zasobów w porównaniu z rozwiązaniami programu SharePoint i można tworzyć je przy użyciu niemal dowolnych technologii programowania dla sieci web, takich jak HTML5, JavaScript, CSS3 i XML.
+> Dowiedz się, jak korzystać z nowego [modelu dodatków programu SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins), aby wzbogacić doświadczenia użytkowników z obsługą programu SharePoint. Dodatki te mają bardzo mały wpływ na zużycie zasobów w porównaniu z rozwiązaniami programu SharePoint i można tworzyć je przy użyciu niemal dowolnych technologii programowania dla sieci web, takich jak HTML5, JavaScript, CSS3 i XML.
 
 |||
 |-|-|

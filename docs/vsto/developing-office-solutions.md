@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf2ef7aac4b9e9b54beeed0d4a6d6be31983c30e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6d4ee308c5c689644c9fd9ca6e85493a081e2cdf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440750"
 ---
 # <a name="develop-office-solutions"></a>Opracowywania rozwiązań pakietu Office
   Po Projektowanie projektu przy użyciu narzędzi Office developer tools w programie Visual Studio i konfigurowanie plików projektu, możesz rozpocząć koncentrować się na realizacji kodu i niestandardowego interfejsu użytkownika (UI).
@@ -27,7 +27,7 @@ ms.locfileid: "56602263"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 > [!NOTE]
->  Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.
+> Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.
 
 ## <a name="office-solutions-programming-model"></a>Model programowania rozwiązań dla pakietu Office
  Model obiektów programu pakietu Office ujawnia różnych obiektów, które można programować względem. Zawsze, gdy programujesz rozwiązań pakietu Office przy użyciu kodu zarządzanego, możesz napisać kod, który korzysta z typów podstawowych zestawów międzyoperacyjnych pakietu Office. W przypadku rozwiązań tworzonych przy użyciu szablonów projektów pakietu Office w programie Visual Studio możesz także napisać kod bezpośrednio w odniesieniu do wygenerowanych klas w projekcie. Aby uzyskać więcej informacji, zobacz [pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md).

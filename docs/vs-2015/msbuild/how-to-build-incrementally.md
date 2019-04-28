@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4aba200bff4bc8a017756ece6576e589f33e9df6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c4b2e6dd825cfcf67ffffd9ace27017c8d01aa33
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431406"
 ---
 # <a name="how-to-build-incrementally"></a>Instrukcje: Kompilacja przyrostowa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Podczas kompilowania dużych projektów, ważne jest, że poprzednio skompilowan
  Jeśli dane wejściowe i wyjściowe są określone w elemencie docelowym, każdy dane wyjściowe można mapować tylko jeden zestaw danych wejściowych lub może być bez bezpośredniego mapowania między dane wejściowe i dane wyjściowe. W ciągu poprzednich [CSC — zadanie](../msbuild/csc-task.md), na przykład danych wyjściowych, hello.exe, nie można mapować do pojedynczej udziału — jest to uzależnione od wszystkich z nich.  
   
 > [!NOTE]
->  Obiekt docelowy, w którym znajduje się bez bezpośredniego mapowania między wejściami i wyjściami zawsze Kompiluj częściej niż docelowy, w którym każdy dane wyjściowe można mapować tylko jeden zestaw danych wejściowych ponieważ [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] nie może określić, której dane wyjściowe, należy ponownie utworzyć Jeśli niektóre dane wejściowe zostały zmienione .  
+> Obiekt docelowy, w którym znajduje się bez bezpośredniego mapowania między wejściami i wyjściami zawsze Kompiluj częściej niż docelowy, w którym każdy dane wyjściowe można mapować tylko jeden zestaw danych wejściowych ponieważ [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] nie może określić, której dane wyjściowe, należy ponownie utworzyć Jeśli niektóre dane wejściowe zostały zmienione .  
   
  Zadania, w których można zidentyfikować bezpośrednie mapowanie między danych wyjściowych i wejściowych, takich jak [LC — zadanie](../msbuild/lc-task.md), są najbardziej odpowiednie dla kompilacje przyrostowe, w przeciwieństwie do zadań, takich jak `Csc` i [Vbc](../msbuild/vbc-task.md), które produktu jeden wyjściowy zestawu z danych wejściowych.  
   
@@ -70,7 +70,7 @@ Podczas kompilowania dużych projektów, ważne jest, że poprzednio skompilowan
   Ten plik projektu zawiera zarówno `Convert` i `Build` elementów docelowych. `GenerateContentFiles` i `BuildHelp` zadania są umieszczane w `Convert` i `Build` jest przeznaczony dla odpowiednio, tak aby w każdym obiekcie docelowym może być kompilowana przyrostowo. Za pomocą `Output` element, dane wyjściowe `GenerateContentFiles` zadania są umieszczane w `ContentFile` listy elementów, gdzie mogą być używane jako dane wejściowe dla `BuildHelp` zadania. Za pomocą `Output` element w ten sposób automatycznie udostępnia dane wyjściowe z jednego zadania jako dane wejściowe dla innego zadania tak, aby nie miały wyświetlić listę pojedynczych elementów lub elementów listy ręcznie w każdym zadaniu.  
   
 > [!NOTE]
->  Mimo że `GenerateContentFiles` docelowych można kompilować przyrostowo, zawsze wszystkie dane wyjściowe, z których obiektem docelowym są wymagane jako dane wejściowe dla `BuildHelp` docelowej. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] automatycznie zapewnia wszystkie dane wyjściowe z jeden element docelowy jako dane wejściowe dla innego elementu docelowego gdy używasz `Output` elementu.  
+> Mimo że `GenerateContentFiles` docelowych można kompilować przyrostowo, zawsze wszystkie dane wyjściowe, z których obiektem docelowym są wymagane jako dane wejściowe dla `BuildHelp` docelowej. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] automatycznie zapewnia wszystkie dane wyjściowe z jeden element docelowy jako dane wejściowe dla innego elementu docelowego gdy używasz `Output` elementu.  
   
 ```  
 <Project DefaultTargets="Build"  

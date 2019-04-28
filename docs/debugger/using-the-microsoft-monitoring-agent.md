@@ -8,19 +8,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb9f1ec1eafb0dbea7ca5437d80a32e4fe9d9dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c8f136b28c30c1fe79eda2f7c97540cb60a3ffda
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407549"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Korzystanie z programu Microsoft Monitoring Agent (C#, Visual Basic)
 
 Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 2010 lub 2013 aplikacje błędy, problemy z wydajnością lub inne problemy można monitorować lokalnie za pomocą **Microsoft Monitoring Agent**. Zdarzenia diagnostyczne z poziomu agenta można zapisać do pliku dziennika (.iTrace) funkcji IntelliTrace. Następnie możesz otworzyć dziennika w Visual Studio Enterprise (ale nie w wersji Professional lub Community) do debugowania problemów ze wszystkim narzędziami diagnostyki programu Visual Studio. Istnieje też możliwość gromadzenia danych diagnostycznych IntelliTrace i metoda dane, uruchamiając agenta w **śledzenia** trybu. Program Microsoft Monitoring Agent można zintegrować z [usługi Application Insights](/azure/application-insights/) i [System Center Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12)). Program Microsoft Monitoring Agent zmienić środowiska systemu docelowego, po jej zainstalowaniu.
 
 > [!NOTE]
->  Może również zbierać dane diagnostyczne i metody funkcji IntelliTrace dla sieci web programu SharePoint, WPF i Windows aplikacje formularza na komputerach zdalnych, bez wprowadzania zmian w środowisku docelowym przy użyciu **autonomiczny moduł zbierający IntelliTrace**. Autonomiczny moduł zbierający ma większy wpływ na wydajność niż uruchomienie programu Microsoft Monitoring Agent **Monitor** trybu. Zobacz [przy użyciu autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
+> Może również zbierać dane diagnostyczne i metody funkcji IntelliTrace dla sieci web programu SharePoint, WPF i Windows aplikacje formularza na komputerach zdalnych, bez wprowadzania zmian w środowisku docelowym przy użyciu **autonomiczny moduł zbierający IntelliTrace**. Autonomiczny moduł zbierający ma większy wpływ na wydajność niż uruchomienie programu Microsoft Monitoring Agent **Monitor** trybu. Zobacz [przy użyciu autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
  Jeśli używasz programu System Center 2012, za pomocą programu Microsoft Monitoring Agent programu Operations Manager Otrzymuj alerty dotyczące problemów i tworzenie elementów roboczych serwera Team Foundation Server wraz z łączami do zapisane dzienniki IntelliTrace. Następnie można przypisać te elementy robocze z inne potrzeby dalszego debugowania. Zobacz [Integrowanie programu Operations Manager z procesami programowania](/previous-versions/system-center/system-center-2012-R2/jj614609(v=sc.12)) i [monitorowanie przy użyciu programu Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465153(v=sc.12)).
 
@@ -59,7 +59,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
      Upewnij się, utworzyć ten katalog, przed rozpoczęciem monitorowania. Aby nie spowalniać pracy swojej aplikacji, wybierz lokalizację na lokalnym dysku o dużej szybkości, który nie jest bardzo obciążony.
 
     > [!IMPORTANT]
-    >  Dzienniki IntelliTrace może zawierać dane osobowe i wrażliwe. Dostęp do tego katalogu do tych tożsamości, które muszą pracować z plikami. Sprawdź zasady zachowania poufności informacji firmy.
+    > Dzienniki IntelliTrace może zawierać dane osobowe i wrażliwe. Dostęp do tego katalogu do tych tożsamości, które muszą pracować z plikami. Sprawdź zasady zachowania poufności informacji firmy.
 
 5. Uruchom szczegółowy poziom funkcji monitorowania lub do monitorowania aplikacji programu SharePoint, należy udzielić tej puli aplikacji, który jest hostem sieci web aplikacji lub aplikacji SharePoint uprawnienia odczytu i zapisu do katalogu dziennika funkcji IntelliTrace. [PYT.: Jak skonfigurować uprawnienia dla puli aplikacji?](#FullPermissionsITLog)
 
@@ -257,7 +257,7 @@ Agent zapisuje wartości dla `id`, `Employee.Id`, `Employee.Name` i `Employee` o
 3. Kopiuj dziennik do bezpiecznego folderu udostępnionego, a następnie otwórz dziennik z komputera, który ma Visual Studio Enterprise (ale nie w wersji Professional lub Community).
 
    > [!IMPORTANT]
-   >  Należy zachować ostrożność podczas udostępniania dzienników IntelliTrace, ponieważ mogą one zawierać dane osobowe i wrażliwe. Upewnij się, kto mogą uzyskiwać dostęp do tych dzienników ma uprawnienia do wzięcia pod tych danych. Sprawdź zasady zachowania poufności informacji firmy.
+   > Należy zachować ostrożność podczas udostępniania dzienników IntelliTrace, ponieważ mogą one zawierać dane osobowe i wrażliwe. Upewnij się, kto mogą uzyskiwać dostęp do tych dzienników ma uprawnienia do wzięcia pod tych danych. Sprawdź zasady zachowania poufności informacji firmy.
 
    **Dalej:** [Diagnozowanie zarejestrowane zdarzenia w programie Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)
 

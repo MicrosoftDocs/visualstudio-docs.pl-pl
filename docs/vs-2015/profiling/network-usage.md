@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 62f6847e03484838f232a9b64f392ca0938f213d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 33e5dbeced93ddfd1a1eec817d205a7be80d0e60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441896"
 ---
 # <a name="network-usage"></a>Użycie sieci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacje
  Narzędzie do sieci obsługuje tylko platformy Universal Windows apps. Inne platformy nie są obsługiwane w tej chwili.  
   
 > [!NOTE]
->  Aby uzyskać bardziej szczegółowy opis narzędzie do sieci, zobacz [wprowadzenie do programu Visual Studio narzędzie sieci](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx).  
+> Aby uzyskać bardziej szczegółowy opis narzędzie do sieci, zobacz [wprowadzenie do programu Visual Studio narzędzie sieci](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx).  
   
 ## <a name="collecting-network-tool-data"></a>Zbieranie danych z narzędzia do sieci  
  Należy uruchomić **sieci** narzędzie z otwartym projekcie programu Visual Studio na komputerze programu Visual Studio.  

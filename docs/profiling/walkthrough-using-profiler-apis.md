@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58c68f8b61adab90f8437658d6efd04f0ca47818
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5b1b6817b31272bf01c92e77ff5b04dfff35f6ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428128"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Przewodnik: Korzystanie z interfejsów API profilera
 
@@ -63,7 +63,7 @@ DataCollection.CurrentId);
 1. Utwórz nowy projekt C# w programie Visual Studio, lub użyć kompilacji wiersza polecenia, w zależności od preferencji.
 
     > [!NOTE]
-    >  Musi odwoływać się do kompilacji *Microsoft.VisualStudio.Profiler.dll* biblioteki, na terenie *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* katalogu.
+    > Musi odwoływać się do kompilacji *Microsoft.VisualStudio.Profiler.dll* biblioteki, na terenie *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* katalogu.
 
 2. Skopiuj i wklej następujący kod do projektu:
 

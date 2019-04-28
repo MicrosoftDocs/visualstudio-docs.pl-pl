@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 3118ce72cd75baaf15fc66eedc5f2cd48c6f43d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 10b57508c498607533a9a9b1fbbcf3b15b6f7a4f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422729"
 ---
 # <a name="making-custom-projects-version-aware"></a>Tworzenie niestandardowych projektów rozpoznający wersje
 W systemie niestandardowego projektu można zezwolić projektów tego typu są ładowane w wielu wersjach programu Visual Studio. Projekty tego typu mogą również uniemożliwić ładowanie we wcześniejszej wersji programu Visual Studio. Można również włączyć tego projektu w celu zidentyfikowania się względem nowszej wersji. w przypadku, gdy projekt wymaga naprawy, konwersji i wycofywania.  
@@ -37,7 +37,7 @@ W systemie niestandardowego projektu można zezwolić projektów tego typu są �
 6. `VSPUVF_PROJECT_DEPRECATED`: Wskazuje, że ten projekt nie jest już obsługiwana.  
   
 > [!NOTE]
->  Aby uniknąć nieporozumień, nie łączyć flagi uaktualniania po ich wprowadzeniu. Na przykład nie należy tworzyć niejednoznaczne stan uaktualnienia takich jak `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`.  
+> Aby uniknąć nieporozumień, nie łączyć flagi uaktualniania po ich wprowadzeniu. Na przykład nie należy tworzyć niejednoznaczne stan uaktualnienia takich jak `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`.  
   
  Podtypy projektów może wdrożyć funkcję `UpgradeProjectFlavor_CheckOnly` z `IVsProjectFlavorUpgradeViaFactory2` interfejsu. Aby ta funkcja działa, `IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly` implementacji, o których wspomniano wcześniej, należy wywołać go. To wywołanie jest już zaimplementowany w systemie projektu podstawowego języka Visual Basic lub C#. Wpływ ta funkcja umożliwia podtypy projektów można również określić wymagania dotyczące uaktualnienia projektu, oprócz systemu podstawowego projektu, co stwierdził. Okno dialogowe zgodności zawiera najpoważniejsze z poniższych wymagań.  
   
@@ -72,7 +72,7 @@ W systemie niestandardowego projektu można zezwolić projektów tego typu są �
      W przypadku zastosowania tego kodu, pojawi się okno dialogowe zgodność projektu. Zostanie okno dialogowe prosi użytkownika o zezwolenie na oznaczenie wszystkich określonych projektów jako niezgodne. Za zgodą użytkownika, `AskForUserConsentToBreakAssetCompat` zwraca `S_OK`; w przeciwnym razie `AskForUserConsentToBreakAssetCompat` zwraca `OLE_E_PROMPTSAVECANCELLED`.  
   
     > [!WARNING]
-    >  W najbardziej typowych scenariuszy `IVsHierarchy` tablicy będzie zawierać tylko jeden element.  
+    > W najbardziej typowych scenariuszy `IVsHierarchy` tablicy będzie zawierać tylko jeden element.  
   
 3. Jeśli `AskForUserConsentToBreakAssetCompat` zwraca `S_OK`, składnik sprawia, że lub akceptuje zmiany naruszające zgodności.  
   
@@ -98,7 +98,7 @@ W systemie niestandardowego projektu można zezwolić projektów tego typu są �
      Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>.  
   
 > [!IMPORTANT]
->  Musisz zaimplementować `VSHPROPID_MinimumDesignTimeCompatVersion` właściwości, aby oznaczyć projektu jako zgodne lub niezgodne. Na przykład, jeśli system projektu używa pliku projektu programu MSBuild, Dodaj do pliku projektu `<MinimumVisualStudioVersion>` kompilacji właściwość, która ma wartość równą do odpowiednich `VSHPROPID_MinimumDesignTimeCompatVersion` wartości właściwości.  
+> Musisz zaimplementować `VSHPROPID_MinimumDesignTimeCompatVersion` właściwości, aby oznaczyć projektu jako zgodne lub niezgodne. Na przykład, jeśli system projektu używa pliku projektu programu MSBuild, Dodaj do pliku projektu `<MinimumVisualStudioVersion>` kompilacji właściwość, która ma wartość równą do odpowiednich `VSHPROPID_MinimumDesignTimeCompatVersion` wartości właściwości.  
   
 ## <a name="detecting-whether-a-project-is-incompatible"></a>Wykrywanie czy projekt jest niezgodny  
  Projekt, który jest niezgodny z bieżącą wersją programu Visual Studio muszą być przechowywane z ładowania. Ponadto projekt, który jest niezgodny nie można uaktualnić lub naprawy. W związku z tym, projekt musi być zaznaczone dla zgodności dwa razy: pierwszy, gdy jest rozważane dla uaktualnienie lub naprawy, a drugie, przed jego załadowaniu.  
@@ -129,7 +129,7 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
    Nowe implementacje w `IVsProjectUpgradeViaFactory4` i `IVsProjectFlavorUpgradeViaFactory2` umożliwić bardziej precyzyjne określanie typu migracji.  
   
 > [!NOTE]
->  Może buforować wynik sprawdzania zgodności przez `UpgradeProject_CheckOnly` metodę, tak że można również przez kolejne wywołanie `CreateProject`.  
+> Może buforować wynik sprawdzania zgodności przez `UpgradeProject_CheckOnly` metodę, tak że można również przez kolejne wywołanie `CreateProject`.  
   
  Na przykład jeśli `UpgradeProject_CheckOnly` i `CreateProject` metody, które zostały napisane dla [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] z dodatkiem SP1, system projektu badania pliku projektu i okazać, że `<MinimumVisualStudioVersion>` właściwość kompilacji "11.0", nie można załadować projektu programu Visual Studio 2010 z dodatkiem SP1. Ponadto **Nawigator rozwiązania** wskazują, że projekt jest "niezgodne" i nie można go załadować.  
   

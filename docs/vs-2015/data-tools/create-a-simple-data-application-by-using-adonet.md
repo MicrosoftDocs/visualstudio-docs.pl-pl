@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 234c289cd039485163aa201516c418bacaed590b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b41d199ab634ef5eeb2a6baaef8401919870b63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436979"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Tworzenie prostej aplikacji danych przy użyciu pakietu ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Gdy tworzysz aplikację, która manipuluje danymi w bazie danych, wykonujesz pod
  W tym artykule przedstawiono prosty sposób pobrać dane z bazy danych w sposób bardzo szybko. Jeśli aplikacja musi modyfikować dane w sposób nietrywialnymi i aktualizują bazę danych, należy rozważyć używający narzędzia Entity Framework i korzystanie z danych powiązywanie kontrolek interfejsu użytkownika na zmiany w danych bazowych są synchronizowane automatycznie.  
   
 > [!IMPORTANT]
->  W celu uproszczenia kodu nie zawiera obsługi wyjątków gotowych do produkcji.  
+> W celu uproszczenia kodu nie zawiera obsługi wyjątków gotowych do produkcji.  
   
  **W tym temacie**  
   
@@ -78,7 +78,7 @@ Gdy tworzysz aplikację, która manipuluje danymi w bazie danych, wykonujesz pod
 3. Dla każdego formularza należy dodać pola tekstowe, przyciski i inne formanty, które pojawiają się na poniższych ilustracjach. Dla każdego formantu należy ustawić właściwości opisywane przez tabele.  
   
    > [!NOTE]
-   >  Formanty etykiety i pole grupy zwiększają przejrzystość, ale nie są używane w kodzie.  
+   > Formanty etykiety i pole grupy zwiększają przejrzystość, ale nie są używane w kodzie.  
   
    **Formularz nawigacji**  
   
@@ -135,7 +135,7 @@ Gdy tworzysz aplikację, która manipuluje danymi w bazie danych, wykonujesz pod
 5. W **wartość** kolumny, wprowadź parametry połączenia (bez żadnego poza cudzysłowy), a następnie zapisz zmiany.  
   
 > [!NOTE]
->  W rzeczywistej aplikacji, należy przechowywać parametry połączenia bezpieczne, zgodnie z opisem w [parametry połączenia i pliki konfiguracyjne](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
+> W rzeczywistej aplikacji, należy przechowywać parametry połączenia bezpieczne, zgodnie z opisem w [parametry połączenia i pliki konfiguracyjne](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
   
 ## <a name="BKMK_retrievetheconnectionstring"></a> Pobieranie parametrów połączenia  
   

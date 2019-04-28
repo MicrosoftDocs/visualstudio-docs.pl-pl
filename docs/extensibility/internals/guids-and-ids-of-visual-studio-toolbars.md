@@ -16,18 +16,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 552f14885a95bf5c8461d6ca9db7ef2dbe204c73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 4a9dc406665dc754f0c57c401f672cd4799183ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418459"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Identyfikatory GUID i identyfikatory programu Visual Studio pasków narzędzi
 W tym temacie wylicza wartości Identyfikator GUID i identyfikator pasków narzędzi, które są zawarte w programie Visual Studio zintegrowane środowisko programistyczne (IDE) i grupy mogą zawierać. Te wartości są zdefiniowane w *vsct* pliki, które są zainstalowane jako część programu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [polecenia definiowane w IDE, menu i grupy](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
 
 > [!NOTE]
->  Wiele pasków narzędzi dostępnych w programie Visual Studio nie są zdefiniowane przez program Visual Studio i ich identyfikatorów GUID i identyfikator wartości nie są publiczne. W tym temacie wymieniono tylko paski narzędzi, które są zdefiniowane w programie Visual Studio SDK *vsct* plików.
+> Wiele pasków narzędzi dostępnych w programie Visual Studio nie są zdefiniowane przez program Visual Studio i ich identyfikatorów GUID i identyfikator wartości nie są publiczne. W tym temacie wymieniono tylko paski narzędzi, które są zdefiniowane w programie Visual Studio SDK *vsct* plików.
 
  Aby uzyskać więcej informacji na temat sposobu pracy z obiektami środowiska IDE, które są zdefiniowane w *vsct* plików, zobacz [rozszerzenia menu i poleceń](../../extensibility/extending-menus-and-commands.md).
 
@@ -49,7 +49,7 @@ W tym temacie wylicza wartości Identyfikator GUID i identyfikator pasków narz�
 ### <a name="special-toolbars"></a>Specjalne pasków narzędzi
  Te paski narzędzi są definiowane przez program Visual Studio IDE, ale obsługiwać wyspecjalizowane funkcje i nie jest hostem grup poleceń.
 
-|Pasek narzędzi|ID|
+|Pasek narzędzi|Identyfikator|
 |-------------|--------|
 |Polecenie Add|IDM_VS_TOOL_ADDCOMMAND|
 |Niezdefiniowane|IDM_VS_TOOL_UNDEFINED|
@@ -108,7 +108,7 @@ W tym temacie wylicza wartości Identyfikator GUID i identyfikator pasków narz�
  Paski narzędzi mogą być wyświetlane bezpośrednio w środowisku IDE lub w oknach narzędzi takich jak **Eksploratora rozwiązań**. Ponieważ nie zdefiniowano okna narzędzi w *vsct* pliki, paskach narzędzi okna nie mają zdefiniowane elementy nadrzędne. Zamiast tego są umieszczane w kodzie. W poniższej tabeli przedstawiono pasków narzędzi, które pojawiają się na okien narzędzi w IDE i grup poleceń, które zawierają.
 
 > [!NOTE]
->  Paski narzędzi i grup Użyj identyfikatora GUID `guidSHLMainMenu`, z wyjątkiem w przypadku, gdy określono inaczej, używając składni GUID:ID. W przypadku, gdy identyfikator GUID jest określony dla paska narzędzi, ma również zastosowanie do grupy, które jest elementem podrzędnym elementu tego paska narzędzi.
+> Paski narzędzi i grup Użyj identyfikatora GUID `guidSHLMainMenu`, z wyjątkiem w przypadku, gdy określono inaczej, używając składni GUID:ID. W przypadku, gdy identyfikator GUID jest określony dla paska narzędzi, ma również zastosowanie do grupy, które jest elementem podrzędnym elementu tego paska narzędzi.
 
 |Okna narzędzi|Pasek narzędzi|Grupy|
 |-----------------|-------------|------------|

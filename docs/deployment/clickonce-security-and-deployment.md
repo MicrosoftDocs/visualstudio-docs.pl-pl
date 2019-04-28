@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29659af4fa05c6556656a0a11f13377119f9df9e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 86c69070a6c954ccf01581690e11237fea4e52c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406771"
 ---
 # <a name="clickonce-security-and-deployment"></a>Wdrażania i zabezpieczeń ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] jest to technologia wdrażania umożliwiająca tworzenie automatycznie aktualizowane aplikacje z systemem Windows, które można instalować i uruchamiać z interakcji z użytkownikiem minimalny. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zapewnia pełną obsługę publikowanie i aktualizowanie aplikacji wdrożonych przy użyciu technologii ClickOnce, jeśli opracowano Twoich projektów w języku Visual Basic i Visual C#. Aby dowiedzieć się, jak wdrażanie aplikacji Visual C++, zobacz [wdrożenie rozwiązania ClickOnce dla aplikacji Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
@@ -75,13 +75,13 @@ ms.locfileid: "56612910"
  Aplikację można dodać do użytkownika **Start** menu i **apletu Dodaj lub usuń programy** w **Panelu sterowania**. W przeciwieństwie do innych technologii wdrażania, nic nie zostanie dodany do **Program Files** folder lub rejestru i nie prawa administracyjne są wymagane do instalacji
 
 > [!NOTE]
->  Istnieje również możliwość zapobiec aplikacji, z którego jest dodawany **Start** menu i **apletu Dodaj lub usuń programy** grupy, ułatwiając obowiązuje zachowują się jak aplikacja sieci Web. Aby uzyskać więcej informacji, zobacz [Wybieranie strategii wdrażania ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
+> Istnieje również możliwość zapobiec aplikacji, z którego jest dodawany **Start** menu i **apletu Dodaj lub usuń programy** grupy, ułatwiając obowiązuje zachowują się jak aplikacja sieci Web. Aby uzyskać więcej informacji, zobacz [Wybieranie strategii wdrażania ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
 ### <a name="update-clickonce-applications"></a>Aktualizowanie aplikacji ClickOnce
  Deweloperzy aplikacji, tworząc zaktualizowaną wersję aplikacji, wygenerować nowy manifest aplikacji i skopiuj pliki do lokalizacji wdrożenia — zwykle równorzędny folder do folderu początkowego wdrożenia aplikacji. Administrator aktualizuje manifestu wdrażania, aby wskazać lokalizację nowej wersji aplikacji.
 
 > [!NOTE]
->  **Kreatora publikacji** w programie Visual Studio może służyć do wykonania tych kroków.
+> **Kreatora publikacji** w programie Visual Studio może służyć do wykonania tych kroków.
 
  Oprócz lokalizacji wdrożenia manifest wdrożenia zawiera również lokalizacji aktualizacji (strony sieci Web lub udostępnianie plików sieciowych), gdzie aplikacja sprawdza, czy zaktualizowane wersje. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] **Publikowanie** właściwości są używane do określania, kiedy i jak często aplikacja ma sprawdzać dostępność aktualizacji. Zachowanie aktualizacji można określić w pliku manifestu wdrożenia lub może pojawić się w interfejsie użytkownika aplikacji przez użytkownika [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] interfejsów API. Ponadto **Publikuj** właściwości można zastosować do wprowadzania obowiązkowych aktualizacji lub wrócić do wcześniejszej wersji. Aby uzyskać więcej informacji, zobacz [Wybieranie strategii aktualizacji ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 

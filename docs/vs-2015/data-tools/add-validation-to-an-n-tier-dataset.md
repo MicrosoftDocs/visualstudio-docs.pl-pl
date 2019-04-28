@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 45f650283c850a9dce3ae71c7eefbff2ef378535
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 773af4469f8d72acb6768e62cd2091c396d36b45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439539"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Dodawanie walidacji do n-warstwowego zestawu danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Dodawanie walidacji do zestawu danych, który jest podzielony na rozwiązanie n 
 Projektant obiektów DataSet oferuje funkcje w celu tworzenia klas częściowych, do których można dodać kod użytkownika do kolumn i wierszy — zmieniający wydarzenia tabel danych w zestawie danych. Aby uzyskać więcej informacji na temat dodawania kodu zestawu danych w rozwiązaniu wielowarstwowym, zobacz [Dodawanie kodu do zestawów danych w aplikacjach n warstwowa](../data-tools/add-code-to-datasets-in-n-tier-applications.md), i [Dodawanie kodu do TableAdapters w aplikacjach n warstwowych](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Aby uzyskać więcej informacji na temat częściowych klas, zobacz [jak: Podział klasy na klasy częściowe (Projektant klas)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) lub [klasy częściowe i metody](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1).  
   
 > [!NOTE]
->  Kiedy oddzielisz zestawy danych z TableAdapters (przez ustawienie **projektu DataSet** właściwości), istniejące częściowe klasy zestawu danych w projekcie nie będą przenoszone automatycznie. Istniejące klasy częściowego zestawu danych należy przenieść ręcznie do projektu zestawu danych.  
+> Kiedy oddzielisz zestawy danych z TableAdapters (przez ustawienie **projektu DataSet** właściwości), istniejące częściowe klasy zestawu danych w projekcie nie będą przenoszone automatycznie. Istniejące klasy częściowego zestawu danych należy przenieść ręcznie do projektu zestawu danych.  
   
 > [!NOTE]
->  Projektant zestawu danych nie tworzy automatycznie obsługi zdarzeń w języku C# dla <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.RowChanging> zdarzenia. Należy ręcznie utworzyć program obsługi zdarzenia i podpiąć procedurę obsługi zdarzeń do zdarzenia bazowego. W poniższych procedurach opisano sposób tworzenia procedury obsługi zdarzeń wymagane zarówno w Visual Basic i C#.  
+> Projektant zestawu danych nie tworzy automatycznie obsługi zdarzeń w języku C# dla <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.RowChanging> zdarzenia. Należy ręcznie utworzyć program obsługi zdarzenia i podpiąć procedurę obsługi zdarzeń do zdarzenia bazowego. W poniższych procedurach opisano sposób tworzenia procedury obsługi zdarzeń wymagane zarówno w Visual Basic i C#.  
   
 ## <a name="validatechanges-to-individual-columns"></a>Validatechanges do poszczególnych kolumn  
  Sprawdź poprawność wartości w poszczególnych kolumnach obsługi <xref:System.Data.DataTable.ColumnChanging> zdarzeń. <xref:System.Data.DataTable.ColumnChanging> Zdarzenie jest wywoływane, gdy wartość w kolumnie jest modyfikowana. Utwórz procedurę obsługi zdarzeń dla <xref:System.Data.DataTable.ColumnChanging> zdarzeń, klikając dwukrotnie odpowiednią kolumnę w zestawie danych.  
@@ -52,7 +52,7 @@ End Sub
 ```  
   
 > [!NOTE]
->  W projektach C# Projektant obiektów Dataset tworzy tylko częściowe klasy dla zestawu danych i poszczególnych tabel w zestawie danych. Projektant zestawu danych nie tworzy automatycznie obsługi zdarzeń dla <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.RowChanging> zdarzeń w języku C# tak jak to robi w języku Visual Basic. W projektach C# musisz ręcznie utworzyć metodę obsługi zdarzenia i podpiąć metodę do zdarzenia bazowego. Poniższa procedura zawiera kroki, aby utworzyć procedury obsługi zdarzeń wymagane zarówno w Visual Basic i C#.  
+> W projektach C# Projektant obiektów Dataset tworzy tylko częściowe klasy dla zestawu danych i poszczególnych tabel w zestawie danych. Projektant zestawu danych nie tworzy automatycznie obsługi zdarzeń dla <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.RowChanging> zdarzeń w języku C# tak jak to robi w języku Visual Basic. W projektach C# musisz ręcznie utworzyć metodę obsługi zdarzenia i podpiąć metodę do zdarzenia bazowego. Poniższa procedura zawiera kroki, aby utworzyć procedury obsługi zdarzeń wymagane zarówno w Visual Basic i C#.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -63,7 +63,7 @@ End Sub
 2. Kliknij dwukrotnie kolumnę, którą chcesz zweryfikować. Ta akcja powoduje utworzenie <xref:System.Data.DataTable.ColumnChanging> programu obsługi zdarzeń.  
   
     > [!NOTE]
-    >  Projektant zestawu danych nie tworzy automatycznie zdarzenia obsługi dla zdarzenia języka C#. Kod, który jest niezbędny do obsługi zdarzeń w języku C# znajduje się w następnej sekcji. `SampleColumnChangingEvent` jest tworzony i następnie podłączone do <xref:System.Data.DataTable.ColumnChanging> zdarzenia w <xref:System.Data.DataTable.EndInit%2A> metody.  
+    > Projektant zestawu danych nie tworzy automatycznie zdarzenia obsługi dla zdarzenia języka C#. Kod, który jest niezbędny do obsługi zdarzeń w języku C# znajduje się w następnej sekcji. `SampleColumnChangingEvent` jest tworzony i następnie podłączone do <xref:System.Data.DataTable.ColumnChanging> zdarzenia w <xref:System.Data.DataTable.EndInit%2A> metody.  
   
 3. Dodaj kod, aby sprawdzić, czy `e.ProposedValue` zawiera dane, które spełniają wymagania aplikacji. Jeżeli proponowana wartość jest nieakceptowana, należy ustawić kolumny, aby wskazać, że zawiera błąd.  
   
@@ -124,7 +124,7 @@ End Sub
      Częściowa klasa jest tworzona przy użyciu `RowChanging` program obsługi zdarzeń i zostanie otwarty w edytorze kodu.  
   
     > [!NOTE]
-    >  Projektant zestawu danych nie tworzy automatycznie zdarzenia obsługi dla <xref:System.Data.DataTable.RowChanging> zdarzenia w projektach C#. Należy utworzyć metody, aby obsłużyć <xref:System.Data.DataTable.RowChanging> zdarzeń i wykonywania kodu, aby zaczepić zdarzenie w metodzie inicjalizacji tabeli.  
+    > Projektant zestawu danych nie tworzy automatycznie zdarzenia obsługi dla <xref:System.Data.DataTable.RowChanging> zdarzenia w projektach C#. Należy utworzyć metody, aby obsłużyć <xref:System.Data.DataTable.RowChanging> zdarzeń i wykonywania kodu, aby zaczepić zdarzenie w metodzie inicjalizacji tabeli.  
   
 3. Dodaj kod użytkownika wewnątrz deklaracji klasy częściowej.  
   

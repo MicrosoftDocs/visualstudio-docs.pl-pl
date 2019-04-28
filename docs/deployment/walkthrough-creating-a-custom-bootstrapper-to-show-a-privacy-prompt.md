@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1973d5d71308cc5fda6e48acfc60d256775ff2cc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 00c5266d57ae5633313465796c718d989f783ea6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406860"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Przewodnik: Tworzenie niestandardowego programu inicjującego wyświetlającego monit o zasadach ochrony prywatności
 Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zestawy za pomocą nowszej wersji plików i wersje zestawów stają się dostępne. Aby upewnić się, że klienci wyrazić zgodę na to zachowanie, możesz wyświetlić monit o prywatności do nich. Następnie mogą wybrać, czy można udzielić uprawnienia do aplikacji w celu automatycznej aktualizacji. Jeśli aplikacja nie może być aktualizowane automatycznie, nie jest instalowana.
@@ -125,7 +125,7 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
     6. W **obiekt początkowy** menu rozwijanego wybierz opcję **Module1**.
 
        > [!NOTE]
-       >  Wyłączenie struktury aplikacji powoduje wyłączenie funkcji, takich jak stylów wizualnych Windows XP, zdarzenia aplikacji, ekran powitalny i aplikacja pojedynczego wystąpienia. Aby uzyskać więcej informacji, zobacz [strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
+       > Wyłączenie struktury aplikacji powoduje wyłączenie funkcji, takich jak stylów wizualnych Windows XP, zdarzenia aplikacji, ekran powitalny i aplikacja pojedynczego wystąpienia. Aby uzyskać więcej informacji, zobacz [strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
 
        Visual C# tylko dla deweloperów:
 
@@ -151,12 +151,12 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
 1. Utwórz katalog o nazwie **UpdateConsentDialog** w *%PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*.
 
     > [!NOTE]
-    >  Uprawnienia administracyjne, aby utworzyć ten folder może być konieczne.
+    > Uprawnienia administracyjne, aby utworzyć ten folder może być konieczne.
 
 2. W *UpdateConsentDialog* katalogu, Utwórz podkatalog o nazwie *en*.
 
     > [!NOTE]
-    >  Utwórz nowy katalog dla poszczególnych ustawień regionalnych. Na przykład można dodać podkatalogów dla ustawień regionalnych fr i "de". Te katalogi zawierałoby ciągi francuskim i niemieckim i pakietów językowych, jeśli to konieczne.
+    > Utwórz nowy katalog dla poszczególnych ustawień regionalnych. Na przykład można dodać podkatalogów dla ustawień regionalnych fr i "de". Te katalogi zawierałoby ciągi francuskim i niemieckim i pakietów językowych, jeśli to konieczne.
 
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>Krok 2. Aby utworzyć plik manifestu product.xml
 
@@ -221,7 +221,7 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
 4. Utwórz dokument o nazwie *eula.rtf* na postanowienia licencyjne dotyczące oprogramowania.
 
     > [!NOTE]
-    >  Postanowienia licencyjne dotyczące oprogramowania powinny zawierać informacje dotyczące licencji, gwarancji, zobowiązania i prawa miejscowego. Pliki te powinny być specyficzne dla ustawień regionalnych, dlatego upewnij się, że plik jest zapisywany w formacie, który obsługuje znaki MBCS lub UNICODE. Zapoznaj się z działem prawnym o zawartości postanowienia licencyjne dotyczące oprogramowania.
+    > Postanowienia licencyjne dotyczące oprogramowania powinny zawierać informacje dotyczące licencji, gwarancji, zobowiązania i prawa miejscowego. Pliki te powinny być specyficzne dla ustawień regionalnych, dlatego upewnij się, że plik jest zapisywany w formacie, który obsługuje znaki MBCS lub UNICODE. Zapoznaj się z działem prawnym o zawartości postanowienia licencyjne dotyczące oprogramowania.
 
 5. Zapisz dokument w podkatalogu en *UpdateConsentDialog* katalogu programu inicjującego.
 
@@ -241,7 +241,7 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
 4. Wybierz **aktualizacji dialogowe ze zgodą**.
 
     > [!NOTE]
-    >  Może być konieczne zamknięcie i ponowne otwarcie programu Visual Studio Update zgody okno dialogowe jest wyświetlane w oknie dialogowym wstępnie wymagane składniki.
+    > Może być konieczne zamknięcie i ponowne otwarcie programu Visual Studio Update zgody okno dialogowe jest wyświetlane w oknie dialogowym wstępnie wymagane składniki.
 
 5. Kliknij przycisk **OK**.
 

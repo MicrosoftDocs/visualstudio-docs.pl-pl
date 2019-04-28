@@ -10,12 +10,12 @@ ms.assetid: d2928498-f27c-46b4-a9cd-cba41fd85a10
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c94963b0ebfc6df454870222059a460b2868427d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 58b4350812900bc11e8aaa3222b3b0898db19e13
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440789"
 ---
 # <a name="vspackage-setup-scenarios"></a>Scenariusze instalacji pakietu VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ Udostępnione Instalatora pakietu VSPackage
  Jak pokazano na ilustracji, składników udostępnionych stają się częścią funkcji Feat_Common, która będzie zawsze instalowana. Przez funkcje Feat_VS2002 i Feat_VS2003 widoczności, użytkownicy mogą wybrać w momencie instalacji w wersjach programu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] mają pakietu VSPackage, aby zintegrować. Użytkownicy mogą także skorzystać z trybu konserwacji Instalatora Windows, dodawanie i usuwanie funkcji, która w tym przypadku dodaje lub usuwa informacje o rejestracji pakietu VSPackage z różnych wersji [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
 > [!NOTE]
->  Ustawienie funkcji kolumnę wyświetlaną na wartość 0 powoduje ukrycie go. Wartość w kolumnie poziom niski, taką jak 1, gwarantuje, że zawsze zostanie ona zainstalowana. Aby uzyskać więcej informacji, zobacz [właściwość INSTALLLEVEL](http://msdn.microsoft.com/library/aa369536\(VS.85\).aspx) i [tabeli funkcji](http://msdn.microsoft.com/library/aa368585.aspx).  
+> Ustawienie funkcji kolumnę wyświetlaną na wartość 0 powoduje ukrycie go. Wartość w kolumnie poziom niski, taką jak 1, gwarantuje, że zawsze zostanie ona zainstalowana. Aby uzyskać więcej informacji, zobacz [właściwość INSTALLLEVEL](http://msdn.microsoft.com/library/aa369536\(VS.85\).aspx) i [tabeli funkcji](http://msdn.microsoft.com/library/aa368585.aspx).  
   
 ## <a name="scenario-2-shared-vspackage-update"></a>Scenariusz 2: Udostępnione aktualizacji pakietu VSPackage  
  W tym scenariuszu jest dostarczany zaktualizowaną wersję Instalatora pakietu VSPackage w scenariuszu 1. Rozważań aktualizacja dodaje obsługę [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], ale mogą być również prostsze zabezpieczeń poprawki lub poprawka błędu dodatku service pack. Instalowanie składników nowszej zasady Instalatora Windows wymagają, że niezmienione składniki już w systemie nie są ponownie kopiowane. W takim przypadku system w wersji 1.0 już istnieje zastąpić aktualizowanego składnika Comp_MyVSPackage.dll i Pozwól użytkownikom wybrać, można dodać nowej funkcji Feat_VS2005 za jego pomocą Comp_VS2005_Reg składnika.  
   
 > [!CAUTION]
->  Zawsze, gdy pakietu VSPackage jest współużytkowana przez wiele wersji [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], istotne jest, że kolejne wersje pakietu VSPackage zachowania zgodności z poprzednimi wersjami z wcześniejszych wersji programu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. W przypadku, gdy nie można zachować zgodności z poprzednimi wersjami, należy użyć pakietów VSPackage side-by-side przypadku wartość prywatna. Aby uzyskać więcej informacji, zobacz [obsługi wielu wersji programu Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).  
+> Zawsze, gdy pakietu VSPackage jest współużytkowana przez wiele wersji [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], istotne jest, że kolejne wersje pakietu VSPackage zachowania zgodności z poprzednimi wersjami z wcześniejszych wersji programu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. W przypadku, gdy nie można zachować zgodności z poprzednimi wersjami, należy użyć pakietów VSPackage side-by-side przypadku wartość prywatna. Aby uzyskać więcej informacji, zobacz [obsługi wielu wersji programu Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).  
   
  ![VS Shared VS Package Update Image](../../extensibility/internals/media/vs-sharedpackageupdate.gif "VS_SharedPackageUpdate")  
 Udostępnione Instalatora aktualizacji pakietu VSPackage  

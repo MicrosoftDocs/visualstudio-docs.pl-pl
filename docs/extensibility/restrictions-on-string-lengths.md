@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b989fc18ae14790b001b7eca9b403a65c0dfa9b9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 8ade5e9ac188cd6c1b721ed276e0c4e2aff71f32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434724"
 ---
 # <a name="restrictions-on-string-lengths"></a>Ograniczenia długości ciągów
 Interfejs API wtyczki kontroli źródła ogranicza długości ciągów używanych w różnych funkcji.
@@ -30,7 +30,7 @@ Interfejs API wtyczki kontroli źródła ogranicza długości ciągów używanyc
 |`SCC_PRJPATH_LEN`|300|
 
 > [!NOTE]
->  Długość nie obejmuje kończących się `null`. Inne stałych z sufiksem "_rozmiar" zamiast "_LEN" uwzględnić miejsce do zakończenia `null`.
+> Długość nie obejmuje kończących się `null`. Inne stałych z sufiksem "_rozmiar" zamiast "_LEN" uwzględnić miejsce do zakończenia `null`.
 
 |Stała|Wartość|
 |--------------|-----------|

@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ae2bb442edbeb49de25b44056263607fa4f26111
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7224dc1ddcffc203c930a3ead01c2f541af2122f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433173"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Przewodnik: Zwiększanie czasu odpowiedzi interfejsu użytkownika (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Ten instruktaż poprowadzi Cię przez proces identyfikowanie i rozwiązywanie pr
 1. W programie Visual Studio Utwórz nowy projekt Windows Universal JavaScript. (Wybierz **plik / nowy / Project**. Wybierz **JavaScript** w okienku po lewej stronie, a następnie wybierz **Windows**, **systemu Windows 10**, a następnie **Universal**, lub  **Windows Phone**.  
   
 2. > [!IMPORTANT]
-    >  Wyniki diagnostyki, przedstawione w tym temacie przedstawiono aplikacji systemu Windows 8.  
+    > Wyniki diagnostyki, przedstawione w tym temacie przedstawiono aplikacji systemu Windows 8.  
   
 3. Wybierz jeden z szablonów pustego projektu w środkowym okienku, taki jak **pusta aplikacja**.  
   

@@ -14,12 +14,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ad9a30f5a54177a9df955cbe78d0ad0bc5d99ac3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7fcea011f78688630a94cff64f9d2a627acea88c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408484"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ W tym przewodniku krok po kroku tworzenia, uruchamiania i dostosowywać serie te
   [Użyj testów jednostkowych, aby poprawić kod](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)  
   
 > [!NOTE]
->  W tym instruktażu wykorzystano środowisko testów jednostkowych Microsoft dla kodu zarządzanego. Eksplorator testów można również uruchomić testy z innej struktury testów, które posiada adaptery dla Eksploratora testów. Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](../test/install-third-party-unit-test-frameworks.md)  
+> W tym instruktażu wykorzystano środowisko testów jednostkowych Microsoft dla kodu zarządzanego. Eksplorator testów można również uruchomić testy z innej struktury testów, które posiada adaptery dla Eksploratora testów. Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](../test/install-third-party-unit-test-frameworks.md)  
   
 > [!NOTE]
->  Aby uzyskać informacje o sposobach uruchamiania testów z wiersza polecenia, zobacz [wskazówki: Korzystanie z narzędzia testu wiersza polecenia](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).  
+> Aby uzyskać informacje o sposobach uruchamiania testów z wiersza polecenia, zobacz [wskazówki: Korzystanie z narzędzia testu wiersza polecenia](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
   
@@ -71,12 +71,12 @@ W tym przewodniku krok po kroku tworzenia, uruchamiania i dostosowywać serie te
 5. W **nazwa** wpisz `Bank` a następnie kliknij przycisk **OK**.  
   
    > [!NOTE]
-   >  Jeśli nazwa "Bank" jest już używana, wybierz inną nazwę dla projektu.  
+   > Jeśli nazwa "Bank" jest już używana, wybierz inną nazwę dla projektu.  
   
     Nowy projekt o nazwie Bank, jest tworzony i wyświetlany w Eksploratorze rozwiązań z plikiem Class1.cs, otwartym w edytorze kodu.  
   
    > [!NOTE]
-   >  Jeśli plik Class1.cs nie jest otwarty w edytorze kodu, kliknij dwukrotnie plik Class1.cs w oknie Solution Explorer, aby go otworzyć.  
+   > Jeśli plik Class1.cs nie jest otwarty w edytorze kodu, kliknij dwukrotnie plik Class1.cs w oknie Solution Explorer, aby go otworzyć.  
   
 6. Skopiuj kod źródłowy z [przykładowy projekt dotyczący tworzenia testów jednostkowych](../test/sample-project-for-creating-unit-tests.md).  
   

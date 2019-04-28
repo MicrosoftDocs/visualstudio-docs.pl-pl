@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5873033e160a8354db70565606dcb399da13e073
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c43f392cddfd5ea36180d9b2675db82469f86ce0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446076"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Zdalne debugowanie platformy ASP.NET na komputerze zdalnym usług IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Po zainstalowaniu, upewnij się, że debuger zdalny jest uruchomiony na komputer
 1. Skopiuj katalog projektu ASP.NET z komputera, program Visual Studio do katalogu lokalnego (którym Zadzwonimy **C:\Publish**) na komputerze z systemem Windows Server. Można ręcznie skopiować projektu, użyj polecenia Xcopy, narzędzie Web Deploy, Robocopy, programu Powershell lub innych opcji.
 
     > [!CAUTION]
-    >  Jeśli musisz wprowadzić zmiany w kodzie lub ponownej kompilacji, należy ponownie opublikować i powtórz ten krok. Plik wykonywalny, który został skopiowany na komputerze zdalnym musi dokładnie odpowiadać, lokalne źródła i symboli.
+    > Jeśli musisz wprowadzić zmiany w kodzie lub ponownej kompilacji, należy ponownie opublikować i powtórz ten krok. Plik wykonywalny, który został skopiowany na komputerze zdalnym musi dokładnie odpowiadać, lokalne źródła i symboli.
 1. Upewnij się, że plik web.config zawiera poprawną wersję programu .NET Framework.  Na przykład wersja programu .NET Framework, instalowany domyślnie w systemie Windows Server 2008 R2 jest 4.0.30319, ale utworzyliśmy platformy ASP.NET 4.5.2 wersji. Aplikacja ASP.NET 4.0 jest uruchomiona na komputerze z systemem Windows Server, musisz zmienić wersję:
   
     ```xml

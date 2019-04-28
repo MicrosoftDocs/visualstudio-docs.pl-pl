@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87dda9c975f35ac8b48e60acd3e692f9b3a070d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25b30db78706dce95188289187ce55011ce1362d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441739"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Instrukcje: Ochrona części dokumentów za pomocą formantów zawartości
   W przypadku ochrony części dokumentu, można uniemożliwić użytkownikom zmienianie lub usuwanie zawartości w tej części dokumentu. Istnieje kilka sposobów, w części dokumentu Microsoft Word pakietu Office można chronić za pomocą formantów zawartości:
@@ -73,7 +73,7 @@ ms.locfileid: "60103522"
 - Chcesz chronić obszar, który zawiera już formanty zawartości, ale tekst lub inne elementy, które mają być chronione nie znajdują się w zawartości kontrolki.
 
 > [!NOTE]
->  Jeśli tworzysz <xref:Microsoft.Office.Tools.Word.GroupContentControl> zawierającą osadzone formanty zawartości, embedded formanty zawartości nie są automatycznie chronione. Aby uniemożliwić użytkownikom edytowanie osadzonego formantu zawartości, należy użyć **LockContents** właściwości formantu.
+> Jeśli tworzysz <xref:Microsoft.Office.Tools.Word.GroupContentControl> zawierającą osadzone formanty zawartości, embedded formanty zawartości nie są automatycznie chronione. Aby uniemożliwić użytkownikom edytowanie osadzonego formantu zawartości, należy użyć **LockContents** właściwości formantu.
 
 ### <a name="to-protect-an-area-of-a-document-at-design-time"></a>Aby chronić obszar dokumentu w czasie projektowania
 
@@ -82,7 +82,7 @@ ms.locfileid: "60103522"
 2. Na wstążce kliknij **Developer** kartę.
 
     > [!NOTE]
-    >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 3. W **kontrolki** grupy, kliknij przycisk **grupy** przycisk listy rozwijanej, a następnie kliknij **grupy**.
 

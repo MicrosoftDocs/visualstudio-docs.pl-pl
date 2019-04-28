@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 316243f53871c9411af08d6721f2ca590fadea99
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5d49b870b83eeb4bce48c562f3944aacef871cd2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431068"
 ---
 # <a name="application-timeline"></a>Oś czasu aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Użyj **oś czasu aplikacji** profiler, aby znaleźć i naprawić interakcji apl
 5. Windows 7  
   
 > [!NOTE]
->  Można zbierać i analizować dane użycia procesora CPU i dane zużycia energii, wraz z **ApplicationTimeline** danych. Zobacz [uruchamianie narzędzi profilowania bez debugowania](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
+> Można zbierać i analizować dane użycia procesora CPU i dane zużycia energii, wraz z **ApplicationTimeline** danych. Zobacz [uruchamianie narzędzi profilowania bez debugowania](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
 ## <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Zbieranie danych oś czasu aplikacji  
  Czas reakcji aplikacji można profilować na komputerze lokalnym, podłączone urządzenie, symulatorze programu Visual Studio lub emulatorach lub urządzenie zdalne. Zobacz [uruchamianie narzędzi profilowania bez debugowania](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
   
 > [!TIP]
->  Jeśli to możliwe Uruchom aplikację bezpośrednio na urządzeniu. Wydajność aplikacji obserwowana na symulatorze lub za pośrednictwem połączenia pulpitu zdalnego może nie być taka sama jak rzeczywista wydajność na urządzeniu. Z drugiej strony zbieranie danych przy użyciu narzędzia zdalne programu Visual Studio nie wpływa na dane wydajności.  
+> Jeśli to możliwe Uruchom aplikację bezpośrednio na urządzeniu. Wydajność aplikacji obserwowana na symulatorze lub za pośrednictwem połączenia pulpitu zdalnego może nie być taka sama jak rzeczywista wydajność na urządzeniu. Z drugiej strony zbieranie danych przy użyciu narzędzia zdalne programu Visual Studio nie wpływa na dane wydajności.  
   
  Poniżej przedstawiono podstawowe kroki:  
   
@@ -55,7 +55,7 @@ Użyj **oś czasu aplikacji** profiler, aby znaleźć i naprawić interakcji apl
 3. Wybierz **oś czasu aplikacji** a następnie kliknij przycisk **Start** w dolnej części okna.  
   
     > [!NOTE]
-    >  Może widzieć okno Kontrola konta użytkownika żądaniem udzielenia uprawnienia do uruchamiania VsEtwCollector.exe. Kliknij przycisk **Tak**.  
+    > Może widzieć okno Kontrola konta użytkownika żądaniem udzielenia uprawnienia do uruchamiania VsEtwCollector.exe. Kliknij przycisk **Tak**.  
   
 4. Uruchom scenariuszu jesteś zainteresowany profilowania w aplikacji, aby zbierać dane dotyczące wydajności.  
   
@@ -107,7 +107,7 @@ Użyj **oś czasu aplikacji** profiler, aby znaleźć i naprawić interakcji apl
 |**XAML — inne**|Czas poświęcony na wykonywanie kodu czasu wykonywania XAML.|  
   
 > [!TIP]
->  Wybierz **użycie procesora CPU** narzędzia wraz z **oś czasu aplikacji** narzędzia w przypadku uruchamiania profilowania na przeglądanie aplikacji metod, które są wykonywane w wątku interfejsu użytkownika. Przenoszenie kodu aplikacji długotrwałych do wątku w tle może poprawić czas odpowiedzi interfejsu użytkownika.  
+> Wybierz **użycie procesora CPU** narzędzia wraz z **oś czasu aplikacji** narzędzia w przypadku uruchamiania profilowania na przeglądanie aplikacji metod, które są wykonywane w wątku interfejsu użytkownika. Przenoszenie kodu aplikacji długotrwałych do wątku w tle może poprawić czas odpowiedzi interfejsu użytkownika.  
   
 #### <a name="BKMK_Customizing_Timeline_details_"></a> Dostosowywanie szczegóły osi czasu  
  Użyj **szczegóły osi czasu** narzędzi, aby sortowanie, filtrowanie i podaj adnotacje **szczegóły osi czasu** zapisy.  

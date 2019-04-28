@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0bbfa139605a6196cf57a5a887d9cb74f54527f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b54a341cd9dd949f892537ee384afb4984aecc02
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419694"
 ---
 # <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Instrukcje: Dodawanie formantów XMLNodes do dokumentów programu Word
   **Ważne** informacji zawartych w tym temacie dotyczące programu Microsoft Word jest prezentowane wyłącznie do korzyści i korzystanie z innym osobom oraz organizacjom, którzy znajdują się poza w Stanach Zjednoczonych i ich terytoriach lub korzystających z lub tworzenie programy, korzystających z produktów Microsoft Word, które są licencjonowane przez firmę Microsoft przed 2010 stycznia, po usunięciu implementację funkcji określonej przez Microsoft związane z niestandardowy kod XML z programu Microsoft Word. Te informacje dotyczące programu Microsoft Word nie mogą być odczytywane lub używane przez osoby i organizacje w Stanach Zjednoczonych lub jego terytoria, którzy za pomocą lub opracowywanie programów uruchamianych na produkty Microsoft Word, które są licencjonowane przez firmę Microsoft, po 10 stycznia 2010 r. ; te produkty będą nie działa tak samo jako produkty licencjonowane przed tą datą lub kupić i licencjonowane do użycia poza Stanami Zjednoczonymi.
@@ -30,7 +30,7 @@ ms.locfileid: "60090735"
  Aby dowiedzieć się, jak mapowanie niepowtarzający elementy schematu XML, zobacz [jak: Dodawanie formantów XMLNode do dokumentów programu Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md).
 
 > [!NOTE]
->  <xref:Microsoft.Office.Tools.Word.XMLNodes> Formant nie jest dostępny z **przybornika** lub **źródeł danych** okna, ani nie może być utworzony programowo.
+> <xref:Microsoft.Office.Tools.Word.XMLNodes> Formant nie jest dostępny z **przybornika** lub **źródeł danych** okna, ani nie może być utworzony programowo.
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "60090735"
 1. Dokument w Projektancie Visual Studio na wstążce kliknij **Developer** kartę.
 
     > [!NOTE]
-    >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 2. W **XML** grupy, kliknij przycisk **schematu**.
 

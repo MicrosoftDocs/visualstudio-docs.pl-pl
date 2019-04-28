@@ -10,25 +10,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ab8e0712e5bb6f504b5b71a5ef6a3eca59167cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e45d6cadbc74ddcc7b46ee53d2d8cdc8cce63a47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434220"
 ---
 # <a name="open-a-dynamic-tool-window"></a>Otwieranie dynamicznego okna narzędzi
 Okna narzędzi zwykle są otwierane polecenie menu lub równoważne skrót klawiaturowy. Czasami jednak możesz potrzebować okna narzędzi, które otwiera za każdym razem kontekstowi interfejsu użytkownika stosuje się i zostanie zamknięte po kontekstu interfejsu użytkownika nie ma już zastosowania. Tego rodzaju okna narzędzi są nazywane *dynamiczne* lub *automatycznie widoczne*.
 
 > [!NOTE]
->  Aby uzyskać listę wstępnie zdefiniowane konteksty interfejsu użytkownika, zobacz <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>.
+> Aby uzyskać listę wstępnie zdefiniowane konteksty interfejsu użytkownika, zobacz <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>.
 
  Jeśli chcesz otworzyć dynamicznego okna narzędzi w momencie uruchamiania i jest możliwe do utworzenia nie powiedzie się, należy zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwnerEx> interfejs i przetestować warunki błędów w <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwnerEx.QueryShowTool%2A> metody. Aby powłoki dowiedzieć się, że masz dynamicznego okna narzędzi, który powinien zostać otwarty podczas uruchamiania, należy dodać `SupportsDynamicToolOwner` ma wartość (1) do rejestracji pakietu. Ta wartość nie jest częścią standardu <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>, dlatego należy utworzyć atrybut niestandardowy, aby ją dodać. Aby uzyskać więcej informacji na temat atrybutów niestandardowych, zobacz [Użyj atrybutu niestandardowego rejestracji, aby zarejestrować rozszerzenie](../extensibility/registering-and-unregistering-vspackages.md#using-a-custom-registration-attribute-to-register-an-extension).
 
  Użyj <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> można otworzyć okna narzędzi. Okno narzędzia jest tworzony, zgodnie z potrzebami.
 
 > [!NOTE]
->  Dynamicznego okna narzędzi, może zostać zamknięty przez użytkownika. Jeśli chcesz utworzyć polecenie menu, dzięki czemu użytkownik może ponownie otworzyć okna narzędzi, polecenia menu powinno być włączone w tym samym kontekście interfejsu użytkownika, który otwiera okno narzędzi oraz wyłączone, w przeciwnym razie.
+> Dynamicznego okna narzędzi, może zostać zamknięty przez użytkownika. Jeśli chcesz utworzyć polecenie menu, dzięki czemu użytkownik może ponownie otworzyć okna narzędzi, polecenia menu powinno być włączone w tym samym kontekście interfejsu użytkownika, który otwiera okno narzędzi oraz wyłączone, w przeciwnym razie.
 
 ## <a name="to-open-a-dynamic-tool-window"></a>Aby otworzyć dynamicznego okna narzędzi
 

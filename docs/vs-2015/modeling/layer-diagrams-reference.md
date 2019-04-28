@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c9ea6398ca02291bb9dc11693c98336cd33b14b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d281b0ddb15a2acc455acd037c088c133c74c1f1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440985"
 ---
 # <a name="layer-diagrams-reference"></a>Diagramy warstw: Tematy pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ W programie Visual Studio, można użyć *diagramu warstwowego* aby zwizualizowa
      **Eksplorator warstw** otwiera się i pokazuje artefaktów, które są połączone z wybranej warstwy. **Eksplorator warstw** zawiera kolumnę, który pokazuje poszczególne właściwości łącza artefaktu.  
   
     > [!NOTE]
-    >  Jeśli nie widzisz wszystkie te właściwości, rozwiń **Eksplorator warstw** okna.  
+    > Jeśli nie widzisz wszystkie te właściwości, rozwiń **Eksplorator warstw** okna.  
   
     |**Kolumna w Eksploratorze warstw**|**Opis**|  
     |----------------------------------|---------------------|  

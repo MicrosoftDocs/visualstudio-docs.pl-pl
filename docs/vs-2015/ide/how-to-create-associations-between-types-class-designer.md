@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f70b18bb2b648231e3cada312fd241375be3193
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2d152ce38c445955988ec76a2e328691eac152ca
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416952"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>Instrukcje: Tworzenie skojarzeń między typami (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Linie skojarzenia w Konstruktorze klasy pokazują relacje klas na diagramie. Lin
  Podczas gdy można wyświetlić wszystkie pola i właściwości jako skojarzenia, więcej sensu ma wyświetlanie tylko ważnych elementów członkowskich jako skojarzeń, w zależności od tego, co zamierzasz podkreślić na diagramie. (Można wyświetlić mniej ważne elementy członkowskie jako zwykłe elementy członkowskie lub je całkowicie ukryć.)  
   
 > [!NOTE]
->  Projektant klasy obsługuje tylko jednokierunkowe skojarzenia.  
+> Projektant klasy obsługuje tylko jednokierunkowe skojarzenia.  
   
 ### <a name="to-define-an-association-line-in-the-class-diagram"></a>Aby zdefiniować linię skojarzenia na Diagramie klasy  
   

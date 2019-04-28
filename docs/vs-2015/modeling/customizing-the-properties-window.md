@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c346cc488966448cc1b77b624c80fe602555840
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e391e21ac16bdbee9fc2881b264f964a4b28cc0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433219"
 ---
 # <a name="customizing-the-properties-window"></a>Dostosowywanie okna właściwości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ W języku specyficznym dla domeny (DSL) można dostosować wygląd i zachowanie 
  Aby przesłać dalej właściwość, należy zdefiniować deskryptor typu domeny. Jeśli masz relacją domeny między dwoma klasami domeny, można użyć deskryptor typu domeny można ustawić właściwości domeny w pierwszej klasie do wartości właściwości domeny w drugim klasy domeny. Na przykład, jeśli mają relację między **książki** klasy domeny i **Autor** klasy domeny, można użyć deskryptor typu domeny się **nazwa** właściwość Książki **Autor** są wyświetlane w oknie dialogowym właściwości, gdy użytkownik wybierze książki.  
   
 > [!NOTE]
->  Przekazywanie własności ma wpływ na oknie dialogowym właściwości po użytkownik edytuje modelu. Odbieranie klasy nie definiuje właściwości domeny. Jeśli chcesz uzyskać dostęp właściwości domeny przekazywane w innych częściach definicji DSL lub w kodzie programu, możesz uzyskać dostęp elementu przekazywania.  
+> Przekazywanie własności ma wpływ na oknie dialogowym właściwości po użytkownik edytuje modelu. Odbieranie klasy nie definiuje właściwości domeny. Jeśli chcesz uzyskać dostęp właściwości domeny przekazywane w innych częściach definicji DSL lub w kodzie programu, możesz uzyskać dostęp elementu przekazywania.  
   
  W poniższej procedurze przyjęto, że utworzono języka DSL. Pierwsze kroki kilka Podsumowanie wymagań wstępnych.  
   
@@ -121,7 +121,7 @@ W języku specyficznym dla domeny (DSL) można dostosować wygląd i zachowanie 
         Nowy wpis, który pojawia się w obszarze **typy domen** węzła.  
   
        > [!WARNING]
-       >  Element menu jest w węźle głównym języka DSL **typy domen** węzła.  
+       > Element menu jest w węźle głównym języka DSL **typy domen** węzła.  
   
    2. Ustaw nazwę i przestrzeń nazw nowego typu, w oknie dialogowym właściwości.  
   
@@ -182,7 +182,7 @@ W języku specyficznym dla domeny (DSL) można dostosować wygląd i zachowanie 
   Możesz też podać graficzną reprezentację wartości właściwości, która będzie wyświetlana w siatce właściwości. Aby to zrobić, należy zastąpić `GetPaintValueSupported`, i `PaintValue`.  Aby uzyskać więcej informacji, zobacz <xref:System.Drawing.Design.UITypeEditor>.  
   
 > [!NOTE]
->  Dodaj kod w osobnym pliku kodu w **Dsl** projektu.  
+> Dodaj kod w osobnym pliku kodu w **Dsl** projektu.  
   
  Na przykład:  
   
@@ -214,7 +214,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
  Możesz podać listę wartości, które użytkownik może wybrać.  
   
 > [!NOTE]
->  Ta technika zawiera listę wartości, które można zmienić w czasie wykonywania. Jeśli chcesz udostępnić listę, która nie zmienia, należy wziąć pod uwagę zamiast przy użyciu typu wyliczeniowego, jako typ właściwości domeny.  
+> Ta technika zawiera listę wartości, które można zmienić w czasie wykonywania. Jeśli chcesz udostępnić listę, która nie zmienia, należy wziąć pod uwagę zamiast przy użyciu typu wyliczeniowego, jako typ właściwości domeny.  
   
  Aby zdefiniować listę standardowe wartości, należy dodać do swojej właściwości domeny atrybutu CLR, który ma następującą postać:  
   

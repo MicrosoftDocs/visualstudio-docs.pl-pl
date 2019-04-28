@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2cff118e31a10780a4573608a6516ddea9e4f73a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: df645fc7f53bbcd0ad5294182d13e96b57b5d42d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431590"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Typ funkcji według aplikacji pakietu Office i projekt
   Program Visual Studio zawiera kilka typów szablonów projektu obsługi różnych scenariuszy biznesowych aplikacji pakietu Microsoft Office, w tym następujących typów:
@@ -36,7 +36,7 @@ ms.locfileid: "56626755"
   Nie wszystkie aplikacje mogą używać każdego typu projektu. Na przykład projektów na poziomie dokumentu są dostępne tylko dla programu Microsoft Office Word i Microsoft Office Excel. Podobnie niektóre funkcje są dostępne tylko dla niektórych typów projektów lub aplikacji. Na przykład w okienku Akcje jest dostępna tylko w projektach na poziomie dokumentu i wstążki rozszerzenia są dostępne tylko dla niektórych aplikacji. Aby uzyskać więcej informacji o różnych typach projektów, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
 > [!NOTE]
->  Szablony projektów pakietu Office są dostępne tylko w niektórych wersjach [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
+> Szablony projektów pakietu Office są dostępne tylko w niektórych wersjach [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
 ## <a name="project-types-available-for-different-microsoft-office-applications"></a>Typy projektów dostępnych w innej aplikacji pakietu Microsoft Office
  W poniższej tabeli przedstawiono aplikacje korzystające z każdym typem projektu.

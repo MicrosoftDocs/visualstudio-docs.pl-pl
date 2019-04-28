@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 43f13ebc6a3f7a430b3608eba37284a85c3c5eab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 70b20a463563c54ce0b8ac81b9acab042b0389eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443964"
 ---
 # <a name="addressing-dpi-issues"></a>Rozwiązywanie problemów z technologią DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 ```  
   
 > [!NOTE]
->  Nie należy używać funkcji pomocnika modułu poziomie klasy lub statycznych zmiennych. Biblioteka również używa danych statycznych dla synchronizacji wątków i możesz napotkać problemy z zainicjowaniem zamówienia. Przekonwertuj te elementy statyczne zmienne Członkowskie Niestatyczne lub opakowywanie ich do funkcji (dzięki czemu mogą uzyskać skonstruowany na dostęp pierwszy).  
+> Nie należy używać funkcji pomocnika modułu poziomie klasy lub statycznych zmiennych. Biblioteka również używa danych statycznych dla synchronizacji wątków i możesz napotkać problemy z zainicjowaniem zamówienia. Przekonwertuj te elementy statyczne zmienne Członkowskie Niestatyczne lub opakowywanie ich do funkcji (dzięki czemu mogą uzyskać skonstruowany na dostęp pierwszy).  
   
  Dostęp do funkcji pomocnika DPI z kodu zarządzanego, który będzie uruchamiany w środowisku Visual Studio:  
   

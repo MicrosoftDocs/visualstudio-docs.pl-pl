@@ -23,23 +23,23 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 35a5fc722a0d7b2ececa4aaa198381cdd3390a7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 529fd979912d1743967109a11933140b482c2caf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435724"
 ---
 # <a name="how-to-debug-optimized-code"></a>Instrukcje: Debugowanie zoptymalizowanego kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 UWAGA]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!NOTE]
->  [/Zo (Rozszerzanie zoptymalizowane pod kątem debugowanie)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)(zostanie wprowadzony w programie Visual Studio Update 3) — opcja kompilatora generuje bogatsze informacje debugowania dla zoptymalizowanego kodu (projekty, które nie są tworzone za pomocą **/Od** — Opcja kompilatora. Zobacz [/O opcje (Optymalizuj kod)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). W tym Ulepszona obsługa debugowania zmienne lokalne i funkcje śródwierszowe.  
+> [/Zo (Rozszerzanie zoptymalizowane pod kątem debugowanie)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)(zostanie wprowadzony w programie Visual Studio Update 3) — opcja kompilatora generuje bogatsze informacje debugowania dla zoptymalizowanego kodu (projekty, które nie są tworzone za pomocą **/Od** — Opcja kompilatora. Zobacz [/O opcje (Optymalizuj kod)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). W tym Ulepszona obsługa debugowania zmienne lokalne i funkcje śródwierszowe.  
 >   
->  [Edytuj i Kontynuuj](../debugger/edit-and-continue-visual-csharp.md) jest wyłączona, gdy **/Zo** ocompiler opcja jest używana.  
+> [Edytuj i Kontynuuj](../debugger/edit-and-continue-visual-csharp.md) jest wyłączona, gdy **/Zo** ocompiler opcja jest używana.  
   
  Gdy kompilator optymalizuje kod, powoduje przeniesienie i Reorganizuje instrukcje. Skutkuje to bardziej wydajne skompilowanego kodu. Z powodu ta zmiana położenia debuger zawsze nie może zidentyfikować kod źródłowy, który odnosi się do zestawu instrukcji.  
   
@@ -80,7 +80,7 @@ UWAGA]
 9. Wybierz właściwości konfiguracji, C/C++, węzeł wiersza polecenia na stronie właściwości projektu i Dodaj `(` [/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` do **dodatkowe opcje** pola tekstowego.  
   
     > [!WARNING]
-    >  `/Zo` wymaga programu Visual Studio 2013 Update 3 lub nowszej wersji.  
+    > `/Zo` wymaga programu Visual Studio 2013 Update 3 lub nowszej wersji.  
     >   
     >  Dodawanie `/Zo` spowoduje wyłączenie [Edytuj i Kontynuuj](../debugger/edit-and-continue-visual-csharp.md).  
   

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 279b9cc03b79efe2fbf9daa7457f5dce88e7a432
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 16871ba1115407e2665886d84b72594470f91287
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420627"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Menu identyfikatory GUID i identyfikatory programu Visual Studio
 W tym artykule wylicza wartości Identyfikator GUID i identyfikator menu i grup na pasku menu programu Visual Studio. Te wartości są zdefiniowane w *vsct* pliki, które są zainstalowane jako część programu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [polecenia definiowane w IDE, menu i grupy](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -178,7 +178,7 @@ W tym artykule wylicza wartości Identyfikator GUID i identyfikator menu i grup 
  Następującej hierarchii zawiera podmenu, które są skojarzone z menu na pasku menu programu Visual Studio. Ponieważ tylko grupa może mieć menu jako klasy nadrzędnej, co podmenu musi jest elementem podrzędnym elementu z grupy menu, zamiast bezpośrednio z menu. Aby uzyskać więcej informacji na temat relacji między menu, grup i podmenu, zobacz [dodawanie podmenu do menu](../../extensibility/adding-a-submenu-to-a-menu.md).
 
 > [!NOTE]
->  Nazwy menu na pasku menu programu Visual Studio nie są oddzielnie wyświetlane w tej hierarchii, ponieważ ich można wywnioskować na podstawie konwencji nazewnictwa dla grup w IDE, w następujący sposób: *IDG_VS_\<nazwy Menu\>_\<nazwę grupy\>*.
+> Nazwy menu na pasku menu programu Visual Studio nie są oddzielnie wyświetlane w tej hierarchii, ponieważ ich można wywnioskować na podstawie konwencji nazewnictwa dla grup w IDE, w następujący sposób: *IDG_VS_\<nazwy Menu\>_\<nazwę grupy\>*.
 
 |Grupa nadrzędna|Podmenu|Grupy podrzędne|
 |------------------|-------------|------------------|

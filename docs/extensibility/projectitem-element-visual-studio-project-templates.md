@@ -14,18 +14,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fae92cd0a2903753f5b02ca33308a83cdab67c7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 1bb7766d96e142fc9208b2e102c2dc57059212d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434808"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>Projectitem — element (szablony projektu Visual Studio)
 Określa plik, który znajduje się w szablonie projektu.
 
 > [!NOTE]
->  `ProjectItem` Akceptuje różnych atrybutów w zależności od tego, czy szablon projektu lub elementu. W tym temacie opisano `ProjectItem` element dla szablonów projektu. Aby uzyskać informacje o `ProjectItem` element dla szablonów elementów, zobacz [ProjectItem, Element (element szablony programu Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md).
+> `ProjectItem` Akceptuje różnych atrybutów w zależności od tego, czy szablon projektu lub elementu. W tym temacie opisano `ProjectItem` element dla szablonów projektu. Aby uzyskać informacje o `ProjectItem` element dla szablonów elementów, zobacz [ProjectItem, Element (element szablony programu Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md).
 
  \<VSTemplate> \<TemplateContent> \<Project> \<ProjectItem>
 

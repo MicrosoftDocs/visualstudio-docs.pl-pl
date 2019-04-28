@@ -11,12 +11,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b432dd6dd0a19f6509ad1ff133424fcbc387fb6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f732fd66439897b67f150ddb9603b7d67003eff2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431372"
 ---
 # <a name="workflow-designer-shell-features"></a>Funkcje powłoki Projektanta przepływu pracy
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] składa się z trzech głównych obszarach interfejsu użytkownika: powierzchni projektanta i nad nim za pomocą paska nawigacji powłoki poniżej. Na pasku nawigacji, umieszczony w górnej części ekranu służy do wyświetlania listy elementów nadrzędnych bieżącego działania głównego. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Jak: Użyj do stron nadrzędnych](../workflow-designer/how-to-use-breadcrumb-navigation.md). Powierzchni projektanta umieszczony na środku ekranu jest używana do tworzenia przepływów pracy. Powłoka, umieszczony w dolnej części ekranu zawiera szereg przyciski umożliwiające zarządzanie bieżącym widokiem.  
@@ -28,7 +28,7 @@ ms.locfileid: "54790545"
  Mapowanie przeglądów wyświetla małą wersję działanie całej głównym bieżącego łączy do stron nadrzędnych, w tym wszystkie jego elementy podrzędne i wszystkie rozwinięte dzieci. Ma okienka ekranu, prostokąt z obramowaniem pomarańczowego, które przedstawia część działania aktualnie wyświetlany w edytorze. Przeciągnięcie prostokąt wokół mapowanie przeglądów Przewija projektanta przepływów pracy i zmiany widoku edytora.  
   
 > [!NOTE]
->  [!INCLUDE[wfd2](../includes/wfd2-md.md)] Jest Zwirtualizowana interfejsu użytkownika. Projektanci działań są renderowane tylko wtedy, gdy jest to wymagane. Jeśli nigdy nie został wystawiony przez część przepływu pracy na powierzchni projektowej, część pojawia się jako białe na mapie Przegląd. Przewijanie wokół mapowanie przeglądów całkowicie rysuje przepływu pracy.  
+> [!INCLUDE[wfd2](../includes/wfd2-md.md)] Jest Zwirtualizowana interfejsu użytkownika. Projektanci działań są renderowane tylko wtedy, gdy jest to wymagane. Jeśli nigdy nie został wystawiony przez część przepływu pracy na powierzchni projektowej, część pojawia się jako białe na mapie Przegląd. Przewijanie wokół mapowanie przeglądów całkowicie rysuje przepływu pracy.  
   
 ## <a name="copying-or-saving-workflows-as-images"></a>Kopiowanie lub zapisywanie przepływów pracy jako obrazów  
  Przepływy pracy można skopiować format mapy bitowej lub zapisane w formacie mapy bitowej lub wektora. Kopiowanie lub zapisywanie obrazu umożliwia eksportowanie widoku całej aktywności głównym bieżącego łączy do stron nadrzędnych, w tym wszystkie jego elementy podrzędne i wszystkie rozwinięte dzieci do innego programu.  

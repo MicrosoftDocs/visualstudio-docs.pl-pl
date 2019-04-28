@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7c53d7bd1264ff21866746796d598b27cfac5984
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 510d923d2503aeb6e07859813537c9094fe25b09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419700"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Instrukcje: Dane z pamięci podręcznej do użytku w trybie offline lub na serwerze
   Można oznaczyć elementu danych w pamięci podręcznej w dokumencie, więc, że jest on dostępny w trybie offline. To również umożliwia dla danych w dokumencie, aby być manipulowane przez inny kod, gdy dokument jest przechowywany na serwerze.
@@ -32,7 +32,7 @@ ms.locfileid: "60094544"
  Można oznaczyć elementu danych, można buforować, gdy element danych jest zadeklarowana w kodzie lub, jeśli używasz <xref:System.Data.DataSet>, ustawiając właściwość w **właściwości** okna. Jeśli są buforowanie elementu danych, który nie jest <xref:System.Data.DataSet> lub <xref:System.Data.DataTable>, upewnij się, że spełnia kryteria są buforowane w dokumencie. Aby uzyskać więcej informacji, zobacz [dane z pamięci podręcznej](../vsto/caching-data.md).
 
 > [!NOTE]
->  Zestawy danych utworzone za pomocą Visual Basic, które są oznaczone jako **pamięci podręcznej** i **WithEvents** (w tym zestawy danych, które są przeciągnięte z **źródeł danych** okna lub **Przybornika** , które mają **CacheInDocument** właściwością **True**) ma znaku podkreślenia z poprzedzone ich nazwy w pamięci podręcznej. Na przykład, jeśli utworzysz zestaw danych i nadaj mu nazwę **klientów**, <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> nazwa będzie **_Customers** w pamięci podręcznej. Kiedy używasz <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Aby uzyskać dostęp do tego elementu w pamięci podręcznej, należy określić **_Customers** zamiast **klientów**.
+> Zestawy danych utworzone za pomocą Visual Basic, które są oznaczone jako **pamięci podręcznej** i **WithEvents** (w tym zestawy danych, które są przeciągnięte z **źródeł danych** okna lub **Przybornika** , które mają **CacheInDocument** właściwością **True**) ma znaku podkreślenia z poprzedzone ich nazwy w pamięci podręcznej. Na przykład, jeśli utworzysz zestaw danych i nadaj mu nazwę **klientów**, <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> nazwa będzie **_Customers** w pamięci podręcznej. Kiedy używasz <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Aby uzyskać dostęp do tego elementu w pamięci podręcznej, należy określić **_Customers** zamiast **klientów**.
 
 ### <a name="to-cache-data-in-the-document-using-code"></a>Do buforowania danych w dokumencie przy użyciu kodu
 

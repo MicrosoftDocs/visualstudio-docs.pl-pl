@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a331e94ad57fc4ca23dc859415c61609025f799b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c58762c1060475a85de643ed52fffcc9f311bd96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430382"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Przewodnik: Tworzenie składnika web part programu Silverlight, na który wyświetlającego dane OData dla programu SharePoint
   SharePoint 2010 udostępnia swoje dane listy za pomocą protokołu OData. W programie SharePoint usługi OData jest implementowany przez usługi RESTful ListData.svc. W tym instruktażu przedstawiono sposób tworzenia składnika web part programu SharePoint, na który jest hostem aplikacji Silverlight. Aplikacja Silverlight Wyświetla informacje o liście anons programu SharePoint przy użyciu ListData.svc. Aby uzyskać więcej informacji, zobacz [interfejsu REST w programie SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) i [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).
@@ -35,7 +35,7 @@ ms.locfileid: "60058255"
  Najpierw utwórz aplikacji Silverlight w programie Visual Studio. Aplikacji Silverlight pobiera dane z listy anonsów programu SharePoint przy użyciu usługi ListData.svc.
 
 > [!NOTE]
->  Nie wersji dodatku Silverlight przed 4.0 obsługuje interfejsami wymaganymi do odwoływania się do danych z listy programu SharePoint.
+> Nie wersji dodatku Silverlight przed 4.0 obsługuje interfejsami wymaganymi do odwoływania się do danych z listy programu SharePoint.
 
 #### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>Aby utworzyć aplikację Silverlight i składnika web part Silverlight
 
@@ -73,7 +73,7 @@ ms.locfileid: "60058255"
 2. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **odwołania**, a następnie wybierz **Dodaj odwołanie do usługi**.
 
     > [!NOTE]
-    >  Jeśli używasz języka Visual Basic, należy wybrać **Pokaż wszystkie pliki** ikonę u góry **Eksploratora rozwiązań** do wyświetlenia **odwołania** węzła.
+    > Jeśli używasz języka Visual Basic, należy wybrać **Pokaż wszystkie pliki** ikonę u góry **Eksploratora rozwiązań** do wyświetlenia **odwołania** węzła.
 
 3. W polu adresu **Dodaj odwołanie do usługi** okna dialogowego wprowadź adres URL witryny programu SharePoint, takich jak **http://MySPSite**, a następnie wybierz **Przejdź** przycisku.
 
@@ -228,7 +228,7 @@ ms.locfileid: "60058255"
      Składnik web part Silverlight powinny teraz wyświetlanie danych anonsu z witryny programu SharePoint. Domyślnie strony znajduje się na liście stron witryny w programie SharePoint.
 
     > [!NOTE]
-    >  Podczas uzyskiwania dostępu do danych w technologii Silverlight w domenach, Silverlight chroni przed luki w zabezpieczeniach, których można użyć w celu wykorzystania aplikacji sieci web. Jeśli napotkasz problemy podczas uzyskiwania dostępu do danych zdalnych w programie Silverlight, zobacz [wprowadzania Service Available Across Domain Boundaries](http://go.microsoft.com/fwlink/?LinkId=223276).
+    > Podczas uzyskiwania dostępu do danych w technologii Silverlight w domenach, Silverlight chroni przed luki w zabezpieczeniach, których można użyć w celu wykorzystania aplikacji sieci web. Jeśli napotkasz problemy podczas uzyskiwania dostępu do danych zdalnych w programie Silverlight, zobacz [wprowadzania Service Available Across Domain Boundaries](http://go.microsoft.com/fwlink/?LinkId=223276).
 
 ## <a name="see-also"></a>Zobacz także
 - [Tworzenie składników web Part programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)

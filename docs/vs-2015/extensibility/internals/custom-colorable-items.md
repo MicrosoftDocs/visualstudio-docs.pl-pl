@@ -11,12 +11,12 @@ ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e210d8c03d3e99cf1e37608f5b65d5a4ab0656f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 24a4db907ec859c6075c06956f86939047379897
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409369"
 ---
 # <a name="custom-colorable-items"></a>Niestandardowe elementy z możliwością kolorowania
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Lista typów można zastąpić dla kolorowanie, takich jak słowa kluczowe i kom
  Ponieważ IDE obsługuje napisanie użytkownika elementów z możliwością kolorowania **czcionki i kolory** okno dialogowe, należy tylko podać każdego elementu z możliwością kolorowania niestandardowego o nazwie. Ta nazwa jest wyświetlana w **wyświetlania elementów** listy. Elementy z możliwością kolorowania są wyświetlane w kolejności alfabetycznej. Aby zgrupować niestandardowe elementy z możliwością kolorowania usługi języka, możesz rozpocząć nazwy z Twoją nazwą języka na przykład **NewLanguage — komentarz** i **NewLanguage — słowo kluczowe**.  
   
 > [!CAUTION]
->  Nazwa języka należy uwzględnić w nazwie elementu z możliwością kolorowania, aby uniknąć konfliktów z już istniejącymi nazwami elementów z możliwością kolorowania. Jeśli zmienisz nazwę jednego z elementów z możliwością kolorowania podczas projektowania należy zresetować pamięć podręczną, która została utworzona po raz pierwszy uzyskano elementów z możliwością kolorowania. Możesz zresetować eksperymentalne pamięci podręcznej za pomocą narzędzia CreateExpInstance został zainstalowany przy użyciu programu Visual Studio SDK, zwykle znajduje się w katalogu  
+> Nazwa języka należy uwzględnić w nazwie elementu z możliwością kolorowania, aby uniknąć konfliktów z już istniejącymi nazwami elementów z możliwością kolorowania. Jeśli zmienisz nazwę jednego z elementów z możliwością kolorowania podczas projektowania należy zresetować pamięć podręczną, która została utworzona po raz pierwszy uzyskano elementów z możliwością kolorowania. Możesz zresetować eksperymentalne pamięci podręcznej za pomocą narzędzia CreateExpInstance został zainstalowany przy użyciu programu Visual Studio SDK, zwykle znajduje się w katalogu  
 >   
->  **C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
+> **C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
 >   
->  Aby zresetować pamięć podręczną, należy wywołać `CreateExpInstance /Reset`. Aby uzyskać więcej informacji na temat CreateExpInstance zobacz [narzędzie CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md).  
+> Aby zresetować pamięć podręczną, należy wywołać `CreateExpInstance /Reset`. Aby uzyskać więcej informacji na temat CreateExpInstance zobacz [narzędzie CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md).  
   
  Nigdy nie odwołuje się do pierwszego elementu na liście elementów z możliwością kolorowania. Pierwszy element odnosi się do elementu z możliwością kolorowania indeksu 0, a [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zawsze dostarcza domyślne kolory tekstu i atrybuty dla tego elementu. Najprostszy sposób radzenia sobie z tym elementem nieużywanej jest umożliwiają określanie wartości elementu z możliwością kolorowania symbolu zastępczego na liście jako pierwszy element.  
   
@@ -71,4 +71,4 @@ Lista typów można zastąpić dla kolorowanie, takich jak słowa kluczowe i kom
  [Kolorowanie składni w edytorach niestandardowych](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [Kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [Implementowanie kolorowania składni](../../extensibility/internals/implementing-syntax-coloring.md)   
- [Instrukcje: Używanie wbudowanych elementów z możliwością kolorowania](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+ [Instrukcje: korzystanie z wbudowanych elementów z możliwością kolorowania](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

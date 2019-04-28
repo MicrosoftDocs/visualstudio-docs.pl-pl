@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 074b01e78fd398a43548febf81ba03b61a8646b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 02a69cb91a24b60e8161948a650a6993a634b665
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421042"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Instrukcje: Konfigurowanie pod kątem aplikacji pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych
   Podczas tworzenia nowego projektu pakietu Office, Visual Studio automatycznie dodaje odwołania do programu Microsoft Office podstawowe zestawy międzyoperacyjne (PIA), które są wymagane do kompilowania projektu. Należy dodać odwołania do innych zestawów PIA w następujących scenariuszach:
@@ -45,7 +45,7 @@ ms.locfileid: "60079639"
      Jeśli projekt jest ukierunkowany [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszym, **Osadź typy współdziałania** dla odwołania do zestawu jest właściwością **True** domyślnie. Za pomocą tego ustawienia, rozwiązanie nie wymaga PIA na komputerach użytkowników końcowych. Aby uzyskać więcej informacji, zobacz [projektowania i tworzenia rozwiązań dla pakietu Office](../vsto/designing-and-creating-office-solutions.md).
 
     > [!NOTE]
-    >  W projektach pakietu Office, zawsze dodać odwołania do zestawów PIA pakietu Office za pomocą **.NET** karcie **Dodaj odwołanie** okna dialogowego, a nie od **COM** kartę. Aby uzyskać więcej informacji, zobacz [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md).
+    > W projektach pakietu Office, zawsze dodać odwołania do zestawów PIA pakietu Office za pomocą **.NET** karcie **Dodaj odwołanie** okna dialogowego, a nie od **COM** kartę. Aby uzyskać więcej informacji, zobacz [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md).
 
 4. Kliknij przycisk **OK**.
 

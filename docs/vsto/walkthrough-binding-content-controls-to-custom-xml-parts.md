@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65cadbde0cde939d45161e3b8dc69685ae31fa69
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 52366cc268335df98da53701e5cde283c67a022d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438704"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Przewodnik: Powiązywanie kontrolek zawartości do niestandardowych części XML
   W tym instruktażu pokazano, jak powiązać formanty zawartości w dostosowaniu na poziomie dokumentu dla programu Word z danymi XML, który znajduje się w dokumencie.
@@ -85,7 +85,7 @@ ms.locfileid: "60041621"
 5. Na Wstążce, wybierz **Developer** kartę.
 
    > [!NOTE]
-   >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+   > Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 6. W **kontrolki** grupy, wybierz **tekstu** przycisk ![PlainTextContentControl —](../vsto/media/plaintextcontrol.gif "PlainTextContentControl —") dodać <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>do pierwszej komórki.
 

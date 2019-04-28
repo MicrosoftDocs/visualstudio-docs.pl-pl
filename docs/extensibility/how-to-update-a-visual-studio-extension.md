@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04af0f7a24cc4fc50cb65ac75f085ebf3385eeca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4eb438db5fd911ed93f7072902281815633d06a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415449"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Instrukcje: Aktualizacja rozszerzenia programu Visual Studio
 Można zaktualizować rozszerzenia programu Visual Studio w systemie przy użyciu **rozszerzenia i aktualizacje** zainstalować zaktualizowaną wersję. Jeśli tworzysz zaktualizowaną wersję rozszerzenia, oznaczyć go jako zaktualizowany przez zwiększenie numeru wersji manifestu VSIX.
@@ -43,7 +43,7 @@ Można zaktualizować rozszerzenia programu Visual Studio w systemie przy użyci
 1. W programie Visual Studio Otwórz rozwiązanie dla rozszerzenia, które chcesz zaktualizować. Wprowadź zmiany.
 
     > [!IMPORTANT]
-    >  Niepodpisane wszystkie rozszerzenia użytkowników nie zostaje zaktualizowana automatycznie. Należy zawsze utworzyć rozszerzeń.
+    > Niepodpisane wszystkie rozszerzenia użytkowników nie zostaje zaktualizowana automatycznie. Należy zawsze utworzyć rozszerzeń.
 
 2. W **Eksploratora rozwiązań**, otwórz *source.extension.manifest*.
 
@@ -58,7 +58,7 @@ Można zaktualizować rozszerzenia programu Visual Studio w systemie przy użyci
      Można włączyć lub wyłączyć automatyczne sprawdzanie dostępności aktualizacji w dolnej części **aktualizacje** okienko (**Włącz/Wyłącz automatyczne wykrywanie dostępnych aktualizacji**), które zmiany **Wyszukaj aktualizacje** w **narzędzia** > **opcje** > **środowiska**  >  **Rozszerzenia i aktualizacje**.
 
     > [!NOTE]
-    >  Począwszy od programu Visual Studio 2015 Update 2, można określić (w **narzędzia** > **opcje** > **środowiska**  >  **Rozszerzenia i aktualizacje**) czy będzie automatyczne aktualizacje dla rozszerzenia dla poszczególnych użytkowników, wszystkie rozszerzenia użytkowników lub obie (ustawienie domyślne).
+    > Począwszy od programu Visual Studio 2015 Update 2, można określić (w **narzędzia** > **opcje** > **środowiska**  >  **Rozszerzenia i aktualizacje**) czy będzie automatyczne aktualizacje dla rozszerzenia dla poszczególnych użytkowników, wszystkie rozszerzenia użytkowników lub obie (ustawienie domyślne).
 
 ## <a name="see-also"></a>Zobacz także
 - [Anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md)

@@ -19,12 +19,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 256489e41c769452f9505f95ec64ec9aee853c67
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 45f8d742af1cd6a0ed73f3beda24e829b417e81f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424318"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>Diagramy przypadków użycia UML: Tematy pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ W programie Visual Studio *diagram przypadków użycia* znajduje się podsumowan
  Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  W tym temacie opisano elementy, które są dostępne w diagramy przypadków użycia. Aby uzyskać więcej informacji na temat narysować diagramy przypadków użycia, zobacz [diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md). Aby uzyskać więcej informacji o sposobie tworzenia i narysować diagramy modelowania, zobacz [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
+> W tym temacie opisano elementy, które są dostępne w diagramy przypadków użycia. Aby uzyskać więcej informacji na temat narysować diagramy przypadków użycia, zobacz [diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md). Aby uzyskać więcej informacji o sposobie tworzenia i narysować diagramy modelowania, zobacz [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
   
 ## <a name="reading-use-case-diagrams"></a>Diagramy przypadków użycia odczytu  
  W tabelach w poniższych sekcjach opisano elementy, które są dostępne na diagramie przypadku użycia wraz z ich właściwości głównego. Aby uzyskać pełną listę właściwości, zobacz [właściwości elementów na UML, diagramy przypadków użycia](../modeling/properties-of-elements-on-uml-use-case-diagrams.md).  
@@ -70,4 +70,4 @@ W programie Visual Studio *diagram przypadków użycia* znajduje się podsumowan
  [Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)   
  [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)   
  [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)   
- [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)
+ [Diagramy składników UML: informacje](../modeling/uml-component-diagrams-reference.md)

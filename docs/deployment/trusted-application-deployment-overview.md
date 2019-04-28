@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65b06ada96387ac4bff022c92e4025718b0291d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8222c6526d54ffb7721c2f2799458fe5c8277cd7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406633"
 ---
 # <a name="trusted-application-deployment-overview"></a>Zaufane wdrożenie aplikacji — omówienie
 Ten temat zawiera omówienie sposobu wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, które mają podwyższony poziom uprawnień przy użyciu technologii zaufanego wdrożenia aplikacji.
@@ -29,7 +29,7 @@ Ten temat zawiera omówienie sposobu wdrażania [!INCLUDE[ndptecclick](../deploy
  Zaufane wdrożenie aplikacji, część [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] technologii wdrażania ułatwia organizacjom o dowolnym rozmiarze, aby udzielić dodatkowych uprawnień do zarządzanej aplikacji w sposób, bezpieczeństwo, bardziej bezpiecznymi bez monitowania użytkownika. Za pomocą zaufanego wdrożenia aplikacji organizacji można skonfigurować tylko na kliencie, aby wyświetlić listę zaufanych wydawców, którzy są identyfikowane za pomocą certyfikatów Authenticode. Następnie dowolne [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji podpisanej przez jedną z tych zaufanych wydawców odbiera wyższego poziomu zaufania.
 
 > [!NOTE]
->  Zaufane wdrożenie aplikacji wymaga jednorazowej konfiguracji komputera użytkownika. W zarządzanych środowiskach pulpitu tej konfiguracji można wykonać przy użyciu zasad globalnych. Jeśli to nie chcemy dla aplikacji, należy użyć podnoszenia poziomu uprawnień. Aby uzyskać więcej informacji, zobacz [zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md).
+> Zaufane wdrożenie aplikacji wymaga jednorazowej konfiguracji komputera użytkownika. W zarządzanych środowiskach pulpitu tej konfiguracji można wykonać przy użyciu zasad globalnych. Jeśli to nie chcemy dla aplikacji, należy użyć podnoszenia poziomu uprawnień. Aby uzyskać więcej informacji, zobacz [zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md).
 
 ## <a name="trusted-application-deployment-basics"></a>Zaufanej podstawy wdrażania aplikacji
  W poniższej tabeli przedstawiono obiekty i role, które są zaangażowane w zaufanego wdrożenia aplikacji.
@@ -88,7 +88,7 @@ Należy wykonać następujące kroki, aby móc korzystać z zaufanego wdrożenia
  Po uzyskaniu certyfikatu, musisz podać go do podpisania wdrożenia. Jeśli aplikacja jest wdrażana przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Kreator publikacji, Kreator automatycznie wygeneruje certyfikat testowy dla Ciebie, jeśli nie podano certyfikatu samodzielnie. Można również użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okno projektanta projektu, jednak podać certyfikat podany przez urząd certyfikacji.  Zobacz też [jak: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 > [!CAUTION]
->  Zaleca się, że aplikacja jest wdrożona za pomocą certyfikatu testu.
+> Zaleca się, że aplikacja jest wdrożona za pomocą certyfikatu testu.
 
  Możesz też zarejestrować aplikację za pomocą *Mage.exe* lub *MageUI.exe* narzędzi zestawu SDK. Aby uzyskać więcej informacji, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Aby uzyskać pełną listę opcji wiersza polecenia, które dotyczą wdrażania podpisywania, zobacz [Mage.exe (Manifest Generation i narzędzia do edytowania)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 

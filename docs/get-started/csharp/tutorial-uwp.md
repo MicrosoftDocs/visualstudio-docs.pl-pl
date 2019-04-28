@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: cbb5eeaaa69852b43d2189c4ca9d308cff75ba98
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: a2a65534cda2571c36bb0c2caa16bf2f3394a804
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435061"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Samouczek: Tworzenie pierwszej aplikacji Universal Windows Platform w programie Visual Studio przy użyciu XAML i C&#35;
 
@@ -70,7 +70,7 @@ Najpierw utwórz projekt Universal Windows Platform. Typ projektu jest dostarcza
 
    > [!NOTE]
    > Jeśli po raz pierwszy używasz programu Visual Studio do tworzenia aplikacji platformy uniwersalnej systemu Windows, **ustawienia** może zostać wyświetlone okno dialogowe. Wybierz **tryb dewelopera**, a następnie wybierz **tak**.<br><br>
-   ![Włącz tryb dewelopera w oknie dialogowym Ustawienia platformy uniwersalnej systemu Windows](media/enable-developer-mode.png)<br><br>Program Visual Studio zainstaluje dodatkowego pakietu tryb dewelopera. Po zakończeniu instalacji pakietu aktualizacji Zamknij **ustawienia** okno dialogowe.
+   > ![Włącz tryb dewelopera w oknie dialogowym Ustawienia platformy uniwersalnej systemu Windows](media/enable-developer-mode.png)<br><br>Program Visual Studio zainstaluje dodatkowego pakietu tryb dewelopera. Po zakończeniu instalacji pakietu aktualizacji Zamknij **ustawienia** okno dialogowe.
 
 ## <a name="create-the-application"></a>Tworzenie aplikacji
 

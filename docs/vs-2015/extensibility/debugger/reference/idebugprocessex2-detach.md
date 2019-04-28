@@ -1,52 +1,51 @@
 ---
 title: IDebugProcessEx2::Detach | Dokumentacja firmy Microsoft
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IDebugProcessEx2::Detach
 helpviewer_keywords:
 - IDebugProcessEx2::Detach method
 ms.assetid: 66d54c2c-9302-47c8-9975-f30ed988ab29
-caps.latest.revision: 16
+author: gregvanl
 ms.author: gregvanl
 manager: jillfra
+ms.workload:
+- vssdk
 ms.openlocfilehash: b79f1f80f9b6849c37fc9b6c4c8669f1397f0227
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538151"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Ta metoda informuje proces, czy sesja jest już debugowanie procesu.
 
-Ta metoda informuje proces, czy sesja jest już debugowanie procesu.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp#  
-HRESULT Detach(   
-   IDebugSession2* pSession  
-);  
-```  
-  
-```csharp  
-int Detach(  
-   IDebugSession2 pSession  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pSession`  
- [in] Wartość, która jednoznacznie identyfikuje sesję Aby odłączyć ten proces z.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="remarks"></a>Uwagi  
- Interfejs przekazanej `pSession` jest należy traktować tylko jako plik cookie, wartość, która jednoznacznie identyfikuje Menedżer debugowania sesji, który pierwotnie dołączony do tego procesu; Brak metody w interfejsie podane są funkcjonalne.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT Detach( 
+   IDebugSession2* pSession
+);
+```
+
+```csharp
+int Detach(
+   IDebugSession2 pSession
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pSession`
+
+ [in] Wartość, która jednoznacznie identyfikuje sesję Aby odłączyć ten proces z.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="remarks"></a>Uwagi
+ Interfejs przekazanej `pSession` jest należy traktować tylko jako plik cookie, wartość, która jednoznacznie identyfikuje Menedżer debugowania sesji, który pierwotnie dołączony do tego procesu; Brak metody w interfejsie podane są funkcjonalne.
+
+## <a name="see-also"></a>Zobacz też
+- [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

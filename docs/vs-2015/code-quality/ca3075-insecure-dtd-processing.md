@@ -8,12 +8,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3664061cf8c1233f3aa25341b5c77c21de51d2c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1923b2c41675bfcf20ca1f9c0035dd1e500debe4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425436"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Niezabezpieczone przetwarzanie definicji DTD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "54785120"
 - Upewnij się, że metoda Load() przyjmuje instancję XmlReader we wszystkich przypadkach elementu.
 
 > [!NOTE]
->  Ta zasada może raportować pewnych wystąpień z prawidłową XmlSecureResolver wyników fałszywie dodatnich. Pracujemy nad rozwiązywania tego problemu przez mid 2016.
+> Ta zasada może raportować pewnych wystąpień z prawidłową XmlSecureResolver wyników fałszywie dodatnich. Pracujemy nad rozwiązywania tego problemu przez mid 2016.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Jeśli nie masz pewności, że dane wejściowe jest znany jako z zaufanego źródła, nie Pomijaj reguły z tego ostrzeżenia.

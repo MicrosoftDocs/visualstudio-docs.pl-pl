@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 99fdded48ab720e7b5efbe0e4801926fe4c4c64a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4a13d0b648be87f1378ae74e6f321c1c369d7795
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427061"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Wprowadzenie do języków specyficznych dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i korzystanie
     To rozwiązanie jest generowany, która zawiera dwa projekty. Są one nazywane Dsl i DslPackage. Plik diagramu zostanie otwarty to znaczy DslDefinition.dsl nazwanych.  
   
    > [!NOTE]
-   >  Większość kodu, który można zobaczyć w foldery w dwóch projektów jest generowany na podstawie DslDefinition.dsl. Z tego powodu większość modyfikacji DSL zostały wprowadzone w tym pliku.  
+   > Większość kodu, który można zobaczyć w foldery w dwóch projektów jest generowany na podstawie DslDefinition.dsl. Z tego powodu większość modyfikacji DSL zostały wprowadzone w tym pliku.  
   
    Interfejs użytkownika jest teraz podobny do poniższej ilustracji.  
   
@@ -104,7 +104,7 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i korzystanie
 1. Kliknij przycisk **Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań. Większość kodu źródłowego z DslDefinition.dsl to generuje.  
   
    > [!NOTE]
-   >  Zawsze, gdy zmienisz DslDefinition.dsl, należy kliknąć przycisk **Przekształć wszystkie szablony** przed Kompiluj rozwiązanie. Możesz zautomatyzować ten krok. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+   > Zawsze, gdy zmienisz DslDefinition.dsl, należy kliknąć przycisk **Przekształć wszystkie szablony** przed Kompiluj rozwiązanie. Możesz zautomatyzować ten krok. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 2. Naciśnij klawisz F5, lub na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.  
   
@@ -171,7 +171,7 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i korzystanie
    Można dodać dowolną liczbę plików szablonów tekstu do projektu. Każdy szablon generuje jednego pliku wyników.  
   
 > [!NOTE]
->  Po zmianie definicji DSL przykładowego kodu szablonu tekstu nie będzie działać, o ile go zaktualizować.  
+> Po zmianie definicji DSL przykładowego kodu szablonu tekstu nie będzie działać, o ile go zaktualizować.  
   
  Aby uzyskać więcej informacji, zobacz [generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md) i [pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
@@ -179,7 +179,7 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i korzystanie
  Jeśli chcesz zmodyfikować definicję DSL, zamknij wystąpienie doświadczalne i zaktualizuj definicję w oknie głównym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wystąpienia.  
   
 > [!NOTE]
->  Po zmodyfikowaniu definicji DSL, mogą utracić informacji w modelach testów, które zostały utworzone za pomocą wcześniejszych wersji.  Na przykład debugowania rozwiązań zawiera plik o nazwie przykładowy, który zawiera niektóre kształtów i łączników. Po rozpoczęciu tworzenia definicji DSL, nie będą widoczne, a zostaną one utracone podczas zapisywania pliku.  
+> Po zmodyfikowaniu definicji DSL, mogą utracić informacji w modelach testów, które zostały utworzone za pomocą wcześniejszych wersji.  Na przykład debugowania rozwiązań zawiera plik o nazwie przykładowy, który zawiera niektóre kształtów i łączników. Po rozpoczęciu tworzenia definicji DSL, nie będą widoczne, a zostaną one utracone podczas zapisywania pliku.  
   
  Istnieje możliwość szerokiej gamy rozszerzenia DSL. W poniższych przykładach przedstawiono pojęcie o możliwościach.  
   
@@ -285,7 +285,7 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i korzystanie
          Ustaw jego nazwę, na przykład **miejscowość**.  
   
         > [!NOTE]
-        >  Każda klasa domeny, z wyjątkiem głównym modelu musi być elementem docelowym co najmniej jedna relacja osadzania lub ten typ musi dziedziczyć z klasy, która jest lokalizacją docelową osadzania. Z tego powodu często wygodne jest Utwórz klasę domeny przy użyciu narzędzia do relacji osadzania.  
+        > Każda klasa domeny, z wyjątkiem głównym modelu musi być elementem docelowym co najmniej jedna relacja osadzania lub ten typ musi dziedziczyć z klasy, która jest lokalizacją docelową osadzania. Z tego powodu często wygodne jest Utwórz klasę domeny przy użyciu narzędzia do relacji osadzania.  
   
     2. Dodaj właściwość domeny do nowej klasy, na przykład **nazwa**.  
   
@@ -296,7 +296,7 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i korzystanie
          ![Fragment definicji DSL: katalogu głównego drzewa rodziny](../modeling/media/familyt-root.png "FamilyT_Root")  
   
         > [!NOTE]
-        >  Relacje odniesienia reprezentuje odsyłacze z jednej części drzewa modelu do innego.  
+        > Relacje odniesienia reprezentuje odsyłacze z jednej części drzewa modelu do innego.  
   
 3. Dodawanie kształtu do reprezentowania miast na diagramach modelu.  
   

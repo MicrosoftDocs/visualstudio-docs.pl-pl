@@ -34,12 +34,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc5dfaa203e3e915075ad819fa859be46b9e2b7a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dd61ea128093735a69ad9b1f30cddc593b5856a4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440440"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Uruchamianie sesji debugowania dla aplikacji Store w programie Visual Studio (VB, C#, C++ i XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
  W tym temacie opisano sposób uruchamiania sesji debugowania dla aplikacji Store w XAML i Visual C++, Visual C# lub Visual Basic. Debugowanie aplikacji obejmuje zarówno Konfigurowanie sesji debugowania, jak i wybierając sposób, aby uruchomić aplikację.
 
 > [!NOTE]
->  Aplikacje napisane w języku JavaScript i HTML można znaleźć [rozpocząć sesję debugowania (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md).
+> Aplikacje napisane w języku JavaScript i HTML można znaleźć [rozpocząć sesję debugowania (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md).
 
 ## <a name="BKMK_In_this_topic"></a> W tym temacie
  [Prosty sposób Rozpocznij debugowanie](#BKMK_The_easy_way_to_start_debugging)
@@ -152,7 +152,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
     ![Okno dialogowe Wybierz połączenie ze zdalnym debugerem](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
 
   > [!NOTE]
-  >  **Wybierz połączenie ze zdalnym debugerem** wyświetlone okno dialogowe, które znajdują się w lokalnej podsieci i maszyn, które są podłączone bezpośrednio do maszyny programu Visual Studio za pomocą kabla Ethernet. Aby określić inną maszynę, wprowadź nazwę w **NazwaKomputera** pole.
+  > **Wybierz połączenie ze zdalnym debugerem** wyświetlone okno dialogowe, które znajdują się w lokalnej podsieci i maszyn, które są podłączone bezpośrednio do maszyny programu Visual Studio za pomocą kabla Ethernet. Aby określić inną maszynę, wprowadź nazwę w **NazwaKomputera** pole.
 
   ![Dotyczy tylko Windows Phone](../debugger/media/phone-only-content.png "phone_only_content")
 
@@ -210,7 +210,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
  Domyślnie musisz podać poświadczenia, aby uruchomić zdalny debuger.
 
 > [!IMPORTANT]
->  Istnieje możliwość uruchomienia zdalnego debugera w trybie bez uwierzytelnienia, ale używanie tego trybu jest zdecydowanie odradzane. Po uruchomieniu w tym trybie nie ma zabezpieczeń sieci. Wybierz tryb Bez uwierzytelniania tylko wtedy, gdy masz pewność, że sieć nie jest zagrożona przez złośliwe lub wrogie działania.
+> Istnieje możliwość uruchomienia zdalnego debugera w trybie bez uwierzytelnienia, ale używanie tego trybu jest zdecydowanie odradzane. Po uruchomieniu w tym trybie nie ma zabezpieczeń sieci. Wybierz tryb Bez uwierzytelniania tylko wtedy, gdy masz pewność, że sieć nie jest zagrożona przez złośliwe lub wrogie działania.
 
  Aby usunąć wymaganie uwierzytelniania:
 
@@ -250,7 +250,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
  Aby ustawić zainstalowanej aplikacji do uruchamiania w trybie debugowania, wykonaj następujące czynności:
 
 > [!NOTE]
->  Aplikacja nie może być uruchomiona, po uruchomieniu tej procedury.
+> Aplikacja nie może być uruchomiona, po uruchomieniu tej procedury.
 
 1. Na **debugowania** menu, wybierz **pakietu debugowania zainstalowanej aplikacji**
 

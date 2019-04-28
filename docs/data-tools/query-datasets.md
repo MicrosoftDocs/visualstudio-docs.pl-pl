@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ccd8bd0cb37aaa2d4bfad7ea20979987048bf862
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bec1c878dce59ccb5444d74ba0255c9ceb705780
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402742"
 ---
 # <a name="query-datasets"></a>Tworzenie zapytań względem zestawów danych
 Aby wyszukać konkretne rekordy w zestawie danych, należy użyć `FindBy` metody w elemencie DataTable pisania własnych instrukcji foreach do pętli kolekcji wierszy w tabeli lub użyj [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -25,7 +25,7 @@ Aby wyszukać konkretne rekordy w zestawie danych, należy użyć `FindBy` metod
 W zestawie danych, nazwy tabel i kolumn domyślnie wielkość liter — oznacza to, tabeli w zestawie danych o nazwie "Klienci" może również określane jako "klientów." Odpowiada to konwencje nazewnictwa w wielu bazach danych, w tym program SQL Server. W programie SQL Server domyślne zachowanie to, że nazwy elementów danych nie mogą być wyodrębnione tylko wielkością liter.
 
 > [!NOTE]
->  W przeciwieństwie do zestawów danych dokumentów XML jest rozróżniana wielkość liter, więc nazwy elementów danych zdefiniowanych w schematach jest rozróżniana wielkość liter. Na przykład protokół schemat umożliwia schematu do definiowania tabeli o nazwie "Klientów" i inną tabelę o nazwie "klientów." Może to spowodować Kolizje nazw podczas schematu, który zawiera elementy, które różnią się tylko wielkością liter jest używany do generowania klasy dataset.
+> W przeciwieństwie do zestawów danych dokumentów XML jest rozróżniana wielkość liter, więc nazwy elementów danych zdefiniowanych w schematach jest rozróżniana wielkość liter. Na przykład protokół schemat umożliwia schematu do definiowania tabeli o nazwie "Klientów" i inną tabelę o nazwie "klientów." Może to spowodować Kolizje nazw podczas schematu, który zawiera elementy, które różnią się tylko wielkością liter jest używany do generowania klasy dataset.
 
 Wielkość liter, jednak może być czynnikiem, w jaki sposób interpretowania danych w zestawie danych. Na przykład w możesz filtrować dane w tabeli zestawu danych, kryteria wyszukiwania mogą zwracać różne wyniki w zależności od tego, czy wynikiem porównania jest uwzględniana wielkość liter. Można kontrolować rozróżnianie wielkości liter, filtrowanie, wyszukiwanie i sortowanie według ustawienia zestawu danych <xref:System.Data.DataSet.CaseSensitive%2A> właściwości. Domyślnie wszystkie tabele w zestawie danych dziedziczą wartość tej właściwości. (Można zastąpić tę właściwość, dla każdej pojedynczej tabeli, ustawiając w tabeli <xref:System.Data.DataTable.CaseSensitive%2A> właściwości.)
 
@@ -68,7 +68,7 @@ Możesz użyć <xref:System.Data.DataRelation> obiekt do zlokalizowania rekordy 
 Ta strona zawiera przykłady użycia typizowanych zestawów danych. Aby dowiedzieć się, jak nawigowanie po relacjach w nietypizowane zbiory danych, zobacz [przejść elementów DataRelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations).
 
 > [!NOTE]
->  Jeśli pracujesz w aplikacji Windows Forms i przy użyciu funkcji wiązania danych, aby wyświetlić dane, wygenerowany przez projektanta formularzy może zapewnić wystarczającą ilość funkcjonalność dla aplikacji. Aby uzyskać więcej informacji, zobacz [powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). W szczególności zobacz [relacje w zestawach danych](relationships-in-datasets.md).
+> Jeśli pracujesz w aplikacji Windows Forms i przy użyciu funkcji wiązania danych, aby wyświetlić dane, wygenerowany przez projektanta formularzy może zapewnić wystarczającą ilość funkcjonalność dla aplikacji. Aby uzyskać więcej informacji, zobacz [powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). W szczególności zobacz [relacje w zestawach danych](relationships-in-datasets.md).
 
 Poniższe przykłady kodu pokazują, jak poruszać się po relacjach w typizowanych zestawów danych. Użyj przykłady kodu wpisane <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) i wygenerowanego FindBy*PrimaryKey* (`FindByCustomerID`) metody znajdź żądany wiersz i zwracać powiązanych rekordów. Przykłady skompilować i uruchomić się poprawnie, tylko wtedy, gdy masz:
 

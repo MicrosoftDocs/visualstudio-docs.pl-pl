@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4635030dad4b43aa27294c8425a70d3f53e5715e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 910ee20cf08c1d5a42e6b6a430f7b51ccddf4925
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429377"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Przewodnik: Pobieranie listy zainstalowanych fragmentów kodu (starsza wersja implementacji)
 Fragment kodu jest fragmentem kodu, które mogą być wstawiane do bufor źródłowy za pomocą polecenia menu (umożliwiającą wybierania listy zainstalowanych fragmentów kodu) lub przez wybranie skrótów fragmentu kodu z poziomu listy uzupełniania IntelliSense.
@@ -106,7 +106,7 @@ Fragment kodu jest fragmentem kodu, które mogą być wstawiane do bufor źród�
 1. Poniższa metoda przedstawiono sposób wywoływania `GetSnippets` metoda po zakończeniu operacji analizowania. <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> Metoda jest wywoływana po operacji analizowania, która została uruchomiona z powodu <xref:Microsoft.VisualStudio.Package.ParseReason>.
 
 > [!NOTE]
->  `expansionsList` Listy tablicy jest buforowana ze względu na wydajność. Zmiany fragmenty kodu nie są odzwierciedlane na liście, dopóki usługa języka jest zatrzymana i ponownie załadować (np. przez zatrzymanie i ponowne uruchomienie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).
+> `expansionsList` Listy tablicy jest buforowana ze względu na wydajność. Zmiany fragmenty kodu nie są odzwierciedlane na liście, dopóki usługa języka jest zatrzymana i ponownie załadować (np. przez zatrzymanie i ponowne uruchomienie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).
 
 ```csharp
 class TestLanguageService : LanguageService

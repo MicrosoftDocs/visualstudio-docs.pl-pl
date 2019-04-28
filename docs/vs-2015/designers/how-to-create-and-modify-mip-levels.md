@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac8612530ad7a28fef76b3339b9207408842aa8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1c1d0babfec4a2fd56e2ed40c5f2c75329ccb6d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434459"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Instrukcje: Tworzenie i modyfikacja poziomów MIP
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ W tym dokumencie przedstawiono sposób użycia **edytora obrazów** do generowan
 2. Po wybraniu poziom MIP, który chcesz zmodyfikować, można użyć narzędzi do rysowania go zmodyfikować bez zmiany zawartości innych poziomów MCI. Narzędzia do rysowania są dostępne na **edytora obrazów** paska narzędzi. Po wybraniu narzędzia, możesz zmienić jego właściwości w **właściwości** okna. Aby uzyskać informacji na temat narzędzi do rysowania i ich właściwości, zobacz [edytora obrazów](../designers/image-editor.md).  
   
 > [!NOTE]
->  Jeśli nie trzeba modyfikować zawartość poszczególnych poziomów MIP — co możesz zrobić, aby uzyskać pewne efekty — firma Microsoft zaleca generowanie mipmap z tekstury źródłowej w czasie kompilacji. Pomaga to zapewnić, że poziomy MCI pozostają zsynchronizowane z teksturą źródła, ponieważ modyfikacje poziomu MIP nie są propagowane do innych poziomów automatycznie. Aby uzyskać więcej informacji na temat generowania mipmap w czasie kompilacji, zobacz [jak: Eksportowanie tekstury zawierającej mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md).  
+> Jeśli nie trzeba modyfikować zawartość poszczególnych poziomów MIP — co możesz zrobić, aby uzyskać pewne efekty — firma Microsoft zaleca generowanie mipmap z tekstury źródłowej w czasie kompilacji. Pomaga to zapewnić, że poziomy MCI pozostają zsynchronizowane z teksturą źródła, ponieważ modyfikacje poziomu MIP nie są propagowane do innych poziomów automatycznie. Aby uzyskać więcej informacji na temat generowania mipmap w czasie kompilacji, zobacz [jak: Eksportowanie tekstury zawierającej mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Tworzenie tekstury podstawowej](../designers/how-to-create-a-basic-texture.md)
+ [Instrukcje: tworzenie tekstury podstawowej](../designers/how-to-create-a-basic-texture.md)

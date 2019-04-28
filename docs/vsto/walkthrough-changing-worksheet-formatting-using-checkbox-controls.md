@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aba73d5fc6c1609a3347178765ba516840b5176e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e2a7cd6143b9c97bbcd06337d38ae169dfa94305
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438616"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Przewodnik: Zmiana formatowania arkusza za pomocą formantów CheckBox
   W tym instruktażu przedstawiono podstawy używania pola wyboru w arkuszu kalkulacyjnym programu Microsoft Office Excel, aby zmienić formatowanie. Użyjesz narzędzi programistycznych pakietu Office w programie Visual Studio do tworzenia i dodać kod do projektu. Aby wyświetlić wynik, jako przykład ukończone, zobacz przykład formanty programu Excel w [Office development ― przykłady i wskazówki dotyczące](../vsto/office-development-samples-and-walkthroughs.md).
@@ -35,7 +35,7 @@ ms.locfileid: "60061692"
 - Testowanie projektu.
 
 > [!NOTE]
->  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
@@ -94,7 +94,7 @@ ms.locfileid: "60061692"
      Następnie możesz przeciągnąć <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu do arkusza.
 
     > [!NOTE]
-    >  Można również dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki, wpisując **textFont** do **nazwa** pole.
+    > Można również dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki, wpisując **textFont** do **nazwa** pole.
 
 #### <a name="to-add-text-to-a-namedrange-control"></a>Aby dodać tekst do kontrolki NamedRange
 

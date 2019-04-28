@@ -112,18 +112,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99c81952ee150e185f52edc624663c3cca9a9164
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fb4f60c9e36b7c8c7a918b2298d7522e7c5d3793
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407886"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Ustawienia projektu dla konfiguracji debugowania w języku C++
 Możesz zmienić ustawienia projektu dla konfiguracji debugowania języka Visual C++ lub C w **stron właściwości** okno dialogowe, zgodnie z opisem w [jak: Zestaw debugowania i zwalniania konfiguracji](../debugger/how-to-set-debug-and-release-configurations.md). W poniższej tabeli przedstawiono, gdzie można znaleźć ustawienia związane z debugerem w **stron właściwości** okno dialogowe.
 
 > [!NOTE]
->  Ustawienia projektu debugowania w **właściwości konfiguracji/debugowanie** kategorii różnią się dla aplikacji platformy uniwersalnej systemu Windows i składników napisanych w języku C++. Zobacz [uruchomić sesję debugowania (VB, C#, C++ i XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
+> Ustawienia projektu debugowania w **właściwości konfiguracji/debugowanie** kategorii różnią się dla aplikacji platformy uniwersalnej systemu Windows i składników napisanych w języku C++. Zobacz [uruchomić sesję debugowania (VB, C#, C++ i XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
  Każde ustawienie właściwości debugowania jest automatycznie zapisywane i zapisywane w pliku "wg użytkownika" (. vcxproj.user) dla rozwiązania, gdy zapisujesz rozwiązania.
 
@@ -190,4 +190,4 @@ Aby debugować bibliotek DLL, które są zewnętrzne w stosunku do projektu, zob
 - [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)
 - [Tworzenie i zarządzanie projektami Visual C++](/cpp/ide/creating-and-managing-visual-cpp-projects)
 - [/ASSEMBLYDEBUG (Dodaj DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute)
-- [Typowe makra dla poleceń kompilacji oraz właściwości](/cpp/ide/common-macros-for-build-commands-and-properties)
+- [Typowe makra dla właściwości i poleceń kompilacji](/cpp/ide/common-macros-for-build-commands-and-properties)

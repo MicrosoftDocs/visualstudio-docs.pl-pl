@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be7cad9034f67a00d8f795a5c4f4f9ad45c1abe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: e5dfb9a6489fed2c21d05799e9196c813a224571
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422958"
 ---
 # <a name="t4-assembly-directive"></a>Dyrektywa T4 dotycząca zestawu
 
@@ -21,7 +21,7 @@ W szablonie tekstowym czasu projektowania programu Visual Studio `assembly` dyre
  Aby uzyskać ogólne omówienie pisania szablonów tekstowych, zobacz [pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
->  Nie ma potrzeby `assembly` dyrektywy w szablonie tekstowym (wstępnie przetworzony) czasu wykonywania. Zamiast tego, Dodaj potrzebne zestawy do **odwołania** projektu programu Visual Studio.
+> Nie ma potrzeby `assembly` dyrektywy w szablonie tekstowym (wstępnie przetworzony) czasu wykonywania. Zamiast tego, Dodaj potrzebne zestawy do **odwołania** projektu programu Visual Studio.
 
 ## <a name="using-the-assembly-directive"></a>Używanie dyrektywy Assembly
  Składnia tej dyrektywy jest następująca:

@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 773a9f5a990b3432484c1ff13012b173c9fac1cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 50febcb027ec51b62bdde7ea06a7112470cdc247
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405832"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Przewodnik: Ręczne wdrażanie aplikacji ClickOnce, które nie wymagają ponownego podpisywania i zachowują informacje o znakowaniu
 Po utworzeniu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji i nadaj mu klientowi do publikowania i wdrażania, tradycyjnie miał odbiorcy do manifestu wdrażania aktualizacji i ponownie zaloguj się. Która nadal jest preferowaną metodą w większości przypadków, .NET Framework 3.5 pozwala na tworzenie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń, które mogą być wdrażane przez klientów bez konieczności ponownie wygenerować nowy manifest wdrożenia. Aby uzyskać więcej informacji, zobacz [aplikacji wdrażania technologii ClickOnce do testowania i produkcji serwerów bez ponownego podpisywania](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -35,7 +35,7 @@ Po utworzeniu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 
  Po utworzeniu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji i nadać mu klientowi do publikowania i wdrażania, można użyć znakowania przez klienta lub można zachować znakowanie aplikacji. Na przykład jeśli aplikacja jest pojedynczą aplikacją własności, warto zachować znakowanie. Jeśli aplikacja jest wysoce dostosowane dla każdego klienta, możesz chcieć użyć znakowania przez klienta. .NET Framework 3.5 umożliwia zachowanie znakowanie, informacje o wydawcy i sygnatury bezpieczeństwa po zapewnieniu umożliwia wdrażanie aplikacji dla organizacji. Aby uzyskać więcej informacji, zobacz [ClickOnce tworzenie aplikacji dla innych użytkowników wdrożyć](../deployment/creating-clickonce-applications-for-others-to-deploy.md).
 
 > [!NOTE]
->  W tym instruktażu utworzysz wdrożeń ręcznie za pomocą narzędzia wiersza polecenia *Mage.exe* lub graficznego narzędzia *MageUI.exe*. Aby uzyskać więcej informacji na temat ręcznego wdrożenia, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+> W tym instruktażu utworzysz wdrożeń ręcznie za pomocą narzędzia wiersza polecenia *Mage.exe* lub graficznego narzędzia *MageUI.exe*. Aby uzyskać więcej informacji na temat ręcznego wdrożenia, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Aby wykonać kroki opisane w tym przewodniku potrzebne są następujące elementy:
@@ -51,7 +51,7 @@ Po utworzeniu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 
 2. Utwórz katalog o nazwie po bieżąca wersja wdrożenia. Jeśli po raz pierwszy, aplikacja jest wdrażana, prawdopodobnie wybierzesz opcję **1.0.0.0**.
 
    > [!NOTE]
-   >  Wersja wdrożenie może się różnić od wersji plików aplikacji.
+   > Wersja wdrożenie może się różnić od wersji plików aplikacji.
 
 3. Utwórz podkatalog o nazwie **bin** i skopiuj wszystkie pliki aplikacji w tym miejscu, w tym pliki wykonywalne, zestawy, zasobów i plików danych.
 
@@ -101,7 +101,7 @@ Po utworzeniu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 
 3. Tworzenie podkatalogu nazwanym tak bieżąca wersja wdrożenia. Jeśli po raz pierwszy, aplikacja jest wdrażana, prawdopodobnie wybierzesz opcję **1.0.0.0**.
 
    > [!NOTE]
-   >  Wersja wdrożenie może się różnić od wersji plików aplikacji.
+   > Wersja wdrożenie może się różnić od wersji plików aplikacji.
 
 4. Przenieś \\ **bin** katalog do katalogu, który został utworzony w kroku 2.
 

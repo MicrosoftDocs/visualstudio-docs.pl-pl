@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 85bdd48f37d8b8d60df6821934980bf46ebf29cd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f7e9aee38208a96ab75318a86810359392b5b8e1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433354"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>Dostosowywanie modelu za pomocą profilów i stereotypów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ W programie Visual Studio można dostosować standardowe elementy modelu UML, ta
  ![Klasa UML, stereotypu. ](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")  
   
 > [!NOTE]
->  Jeśli używasz profilu do tworzenia modelu, a następnie udostępnisz model innym osobom, będą mogli zobaczyć stereotypów, chyba że zainstalowali ten sam profil na swoich komputerach.  
+> Jeśli używasz profilu do tworzenia modelu, a następnie udostępnisz model innym osobom, będą mogli zobaczyć stereotypów, chyba że zainstalowali ten sam profil na swoich komputerach.  
   
 ## <a name="related-topics"></a>Tematy pokrewne  
   

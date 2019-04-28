@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc42301901c6642a54dcb6b84de52a4acc198b4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 4953c8478e25a1534691e99c41dce03930ac46ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434661"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo function
 Ta funkcja sprawdza, czy lista katalogów w pełni kwalifikowaną ich bieżący stan.
@@ -66,7 +66,7 @@ LPLONG  lpStatus
  Tej funkcji używa środowiska IDE, zanim katalogu została zmieniona, aby sprawdzić, czy katalog znajduje się pod kontrolą źródła, badając, czy ma ona odpowiedniego projektu. Jeśli katalog nie jest pod kontrolą źródła, IDE może zapewnić odpowiednie ostrzeżenie dla użytkownika.
 
 > [!NOTE]
->  Jeśli wtyczka do kontroli źródła nie zaimplementować jedną lub więcej wartości stanu, niezaimplementowana bity powinny być ustawione na zero.
+> Jeśli wtyczka do kontroli źródła nie zaimplementować jedną lub więcej wartości stanu, niezaimplementowana bity powinny być ustawione na zero.
 
 ## <a name="see-also"></a>Zobacz także
 - [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)

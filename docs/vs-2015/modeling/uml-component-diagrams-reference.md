@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 91300aea88c86d0791db5bd73b91c3b5069ad607
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 581906741bb43eb221c6a0b6f6bb9aeccd2f3945
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424384"
 ---
 # <a name="uml-component-diagrams-reference"></a>Diagramy składników UML: Tematy pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ W programie Visual Studio *diagram składników* pokazuje części projektu dla 
  Aby uzyskać więcej informacji o sposobie używania diagramów składników w procesie projektowania, zobacz [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md).  
 
 > [!NOTE]
->  W tym temacie opisano elementy, które można używać w diagramach składników. Aby uzyskać bardziej szczegółowe informacje o tym, jak Rysowanie diagramów składników zobacz [diagramy składników UML: Wytyczne dotyczące](../modeling/uml-component-diagrams-guidelines.md). Aby uzyskać więcej informacji na temat narysować diagramy modelowania ogólnie rzecz biorąc, zobacz [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
+> W tym temacie opisano elementy, które można używać w diagramach składników. Aby uzyskać bardziej szczegółowe informacje o tym, jak Rysowanie diagramów składników zobacz [diagramy składników UML: Wytyczne dotyczące](../modeling/uml-component-diagrams-guidelines.md). Aby uzyskać więcej informacji na temat narysować diagramy modelowania ogólnie rzecz biorąc, zobacz [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
 
 ## <a name="reading-component-diagrams"></a>Odczytywanie diagramów składników  
  W poniższej tabeli opisano elementy, które można użyć na diagramie składników, wraz z ich właściwości głównego. Aby uzyskać pełną listę właściwości elementów, zobacz [właściwości elementów na diagramach składników UML](../modeling/properties-of-elements-on-uml-component-diagrams.md).  

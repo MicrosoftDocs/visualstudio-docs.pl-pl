@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d4f42793c061436fee83e007def9f1d7e1d8f7c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: facf9b32553ada46ed969aa6e616f20eb378fd60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430431"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint
   Podczas wdrażania projektu programu SharePoint, programu Visual Studio wykonuje szereg kroków wdrożenia w określonej kolejności. Program Visual Studio obejmuje wiele kroków wdrożenia wbudowanych, ale można także tworzyć własne.
@@ -74,7 +74,7 @@ ms.locfileid: "60040175"
 3. W **nowy projekt** okna dialogowego rozwiń **Visual C#** lub **języka Visual Basic** węzłów, a następnie wybierz **rozszerzalności** węzła.
 
     > [!NOTE]
-    >  **Rozszerzalności** węzeł jest dostępny tylko w przypadku instalowania programu Visual Studio SDK. Aby uzyskać więcej informacji zobacz sekcję wymagania wstępne niniejszego tematu.
+    > **Rozszerzalności** węzeł jest dostępny tylko w przypadku instalowania programu Visual Studio SDK. Aby uzyskać więcej informacji zobacz sekcję wymagania wstępne niniejszego tematu.
 
 4. W górnej części okna dialogowego wybierz **.NET Framework 4.5** na liście wersji programu .NET Framework.
 
@@ -147,7 +147,7 @@ ms.locfileid: "60040175"
 1. W **DeploymentStepExtension** projektu, otwórz plik kodu UpgradeStep i wklej następujący kod do niego.
 
     > [!NOTE]
-    >  Po dodaniu tego kodu, projekt będzie miał pewne błędy kompilacji, ale znikną po dodaniu kodu w dalszych krokach.
+    > Po dodaniu tego kodu, projekt będzie miał pewne błędy kompilacji, ale znikną po dodaniu kodu w dalszych krokach.
 
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#1)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#1)]
@@ -205,7 +205,7 @@ ms.locfileid: "60040175"
 6. W **typu** wybierz **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Ta wartość odpowiada `MefComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Ta wartość odpowiada `MefComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.
 
@@ -218,7 +218,7 @@ ms.locfileid: "60040175"
 10. W **typu** listy, wprowadź **SharePoint.Commands.v4**.
 
     > [!NOTE]
-    >  Ten element określa niestandardowe rozszerzenie, które mają zostać uwzględnione w rozszerzeniu Visual Studio. Aby uzyskać więcej informacji, zobacz [zawartości elementu (schemat VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Ten element określa niestandardowe rozszerzenie, które mają zostać uwzględnione w rozszerzeniu Visual Studio. Aby uzyskać więcej informacji, zobacz [zawartości elementu (schemat VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
 11. W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.
 
@@ -262,7 +262,7 @@ ms.locfileid: "60040175"
 6. W obszarze **co to jest poziom zaufania dla tego rozwiązania programu SharePoint**, wybierz **Wdróż jako rozwiązanie farmy** przycisku opcji.
 
    > [!NOTE]
-   >  Krok wdrożenia uaktualnienia nie obsługuje rozwiązania w trybie piaskownicy.
+   > Krok wdrożenia uaktualnienia nie obsługuje rozwiązania w trybie piaskownicy.
 
 7. Wybierz **Zakończ** przycisku.
 

@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e105ef33202781dcf3a2f82706827156e76548eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 560ab40811bc53c97e7097e510144d62aeddfbb2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421824"
 ---
 # <a name="just-my-code"></a>Tylko mój kod
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Deweloperzy korzystający z języków .NET Framework znają tylko mój kod funkc
  ![Włącz opcję tylko mój kod w oknie dialogowym Opcje](../debugger/media/dbg-justmycode-options.png "DBG_JustMyCode_Options")  
   
 > [!NOTE]
->  **Włącz tylko mój kod** ustawienie jest ustawieniem globalnym, która jest stosowana do wszystkich projektów programu Visual Studio, we wszystkich językach.  
+> **Włącz tylko mój kod** ustawienie jest ustawieniem globalnym, która jest stosowana do wszystkich projektów programu Visual Studio, we wszystkich językach.  
   
 ### <a name="BKMK_Override_call_stack_filtering"></a> Zastąp filtrowanie stosu wywołań  
  W wyświetlaniu stosu wywołań, takich jak okna stosu wywołań i zadań, tylko mój kod zwinięte niebędący kodem użytkownika do ramka z adnotacją etykietą `[External Code]`. Aby wyświetlić zwinięte ramek, wybierz **Pokaż kod zewnętrzny** na menu kontekstowe stosu wywołań wyświetlane.  
   
 > [!NOTE]
->  **Pokaż kod zewnętrzny** ustawienia są zapisywane do profilera bieżącego użytkownika. Jest stosowana do wszystkich projektów we wszystkich językach, które są otwierane przez użytkownika.  
+> **Pokaż kod zewnętrzny** ustawienia są zapisywane do profilera bieżącego użytkownika. Jest stosowana do wszystkich projektów we wszystkich językach, które są otwierane przez użytkownika.  
   
 ## <a name="BKMK__NET_Framework_Just_My_Code"></a> .NET framework tylko mój kod  
   

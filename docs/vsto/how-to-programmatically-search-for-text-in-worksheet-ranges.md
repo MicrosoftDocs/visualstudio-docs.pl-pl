@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 800dcfaa7ae171d1bf3812bef3a8bedda3f2bd21
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3e0befc61b39030bd7144cef10b54e70dc71e33a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419546"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Instrukcje: Programowe wyszukiwanie tekstu w zakresach arkusza
   <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Metody <xref:Microsoft.Office.Interop.Excel.Range> obiektu umożliwia wyszukiwanie tekstu w zakresie. Ten tekst może być również dowolne ciągi błędów, które mogą wystąpić w komórce arkusza, takich jak `#NULL!` lub `#VALUE!`. Aby uzyskać więcej informacji na temat ciągi błędów, zobacz [komórki wartości błędów](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).
@@ -29,7 +29,7 @@ ms.locfileid: "56616979"
  Poniższy przykład wyszukuje zakres o nazwie `Fruits` i modyfikuje czcionki komórek zawierających wyraz "apples". Ta procedura korzysta również <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> metody, która korzysta z poprzednio ustawionych ustawienia, aby powtórzyć wyszukiwanie wyszukiwania. Określ komórki, po którym do wyszukiwania, a <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> obsługiwała pozostałe.
 
 > [!NOTE]
->  <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> Metody wyszukiwania jest zawijany do początku zakresu wyszukiwania po osiągnięciu końca zakresu. Kod należy się upewnić, że wyszukiwanie nie otacza w pętli nieskończonej. Przykładowa procedura pokazuje, jak rozwiązać przy użyciu <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> właściwości.
+> <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> Metody wyszukiwania jest zawijany do początku zakresu wyszukiwania po osiągnięciu końca zakresu. Kod należy się upewnić, że wyszukiwanie nie otacza w pętli nieskończonej. Przykładowa procedura pokazuje, jak rozwiązać przy użyciu <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> właściwości.
 
  ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Użyj metody Find, w dodatku programu Excel? ](http://go.microsoft.com/fwlink/?LinkID=130294).
 

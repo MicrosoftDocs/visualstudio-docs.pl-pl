@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a409ee1e8d1b633689a0c33e39e300071b9b4d83
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848079"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>Jak utrzymać fokus przy przechodzeniu przez moją aplikację?
 ## <a name="description"></a>Opis

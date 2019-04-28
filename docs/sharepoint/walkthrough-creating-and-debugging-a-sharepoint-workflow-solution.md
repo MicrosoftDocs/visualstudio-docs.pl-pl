@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15bb3c7bca9db7e268dde998e210629a8167497f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ad39c8b8bad373cd7892a1eeda89b149622913a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430364"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Przewodnik: Tworzenie i debugowanie rozwiązania przepływu pracy programu SharePoint
   W tym instruktażu pokazano, jak utworzyć szablon podstawowy sekwencyjny przepływ pracy. Właściwość Biblioteka dokumentów udostępnionych w celu ustalenia, czy dokument został przejrzany sprawdza, czy przepływ pracy. Jeśli dokument został przejrzany, przepływ pracy zakończy się.
@@ -35,9 +35,9 @@ ms.locfileid: "60109559"
 - Obsługa zdarzeń działania przepływu pracy.
 
 > [!NOTE]
->  Chociaż ten przewodnik korzysta z projektem sekwencyjnego przepływu pracy, ten proces jest taka sama dla projektu przepływu pracy stanu komputera.
+> Chociaż ten przewodnik korzysta z projektem sekwencyjnego przepływu pracy, ten proces jest taka sama dla projektu przepływu pracy stanu komputera.
 >
->  Ponadto komputer może wyświetlać różne nazwy lub lokalizacje dla niektórych użytkowników programu Visual Studio elementy interfejsu w poniższych instrukcjach. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Ponadto komputer może wyświetlać różne nazwy lub lokalizacje dla niektórych użytkowników programu Visual Studio elementy interfejsu w poniższych instrukcjach. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:

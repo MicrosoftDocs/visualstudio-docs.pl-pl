@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1cde6d36a1244976a2cc95dd9c1d3698be40df0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: a0ce02a76d32a967e2c7e5f06818b5838337f9b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433677"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Okno dialogowe Opcje, projekty i rozwiązania, kompilowanie i uruchamianie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ W tym oknie można określić maksymalną liczbę projektów Visual C++ lub Visu
   
  **Przy starcie, gdy projekty są nieaktualne**  
  > [!NOTE]
->  Ta lista dotyczy [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] wyłącznie dla projektów.  
+> Ta lista dotyczy [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] wyłącznie dla projektów.  
   
  Domyślnie, pojawi się komunikat z konfiguracji projektu jest nieaktualna, kiedy wybierz klawisz F5 lub wybierz **debugowania**, **Start** na pasku menu. Można określić, czy mimo to skompilować projekt i tego, czy komunikat jest wyświetlany. Użyj tej opcji, aby określić, czy komunikat jest wyświetlany, i co zachowanie kompilacji należy wiadomość, nie są wyświetlane.  
   
@@ -54,7 +54,7 @@ W tym oknie można określić maksymalną liczbę projektów Visual C++ lub Visu
  Jeśli wystąpią błędy kompilacji podczas kompilacji z **kompilacji** menu, zostanie wyświetlony komunikat. Można określić, czy kontynuować poprzez uruchomienie aplikacji i tego, czy komunikat jest wyświetlany za każdym razem, gdy, błędy kompilacji. Użyj tej opcji, aby określić czy komunikat jest wyświetlany, i jakie zachowanie powinny być wiadomość, nie są wyświetlane.  
   
 > [!NOTE]
->  Ta opcja dotyczy [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] wyłącznie dla projektów.  
+> Ta opcja dotyczy [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] wyłącznie dla projektów.  
   
  **Monituj o uruchomienie**  
  Wyświetla okno komunikatu, za każdym razem, gdy, błędy kompilacji wystąpić.  
@@ -73,7 +73,7 @@ W tym oknie można określić maksymalną liczbę projektów Visual C++ lub Visu
   
  **Poziom szczegółowości pliku dziennika MSBuild projektu kompilacji**  
  > [!NOTE]
->  Ta opcja dotyczy tylko projektów Visual C++.  
+> Ta opcja dotyczy tylko projektów Visual C++.  
   
  Określa, ile informacji ma są zapisywane do pliku dziennika kompilacji, który znajduje się w folderze \\... \\ *ProjectName*\Debug\\*ProjectName*. log.  
   

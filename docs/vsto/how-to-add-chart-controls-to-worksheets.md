@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e3d51f35be039c5eafe15956b2d403c11005b68
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fccd328c521789c8ebb4b32c49b2a03a46027eb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427763"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Instrukcje: Dodawanie formantów wykresu do arkuszy
   Możesz dodać <xref:Microsoft.Office.Tools.Excel.Chart> kontrolek do arkusza programu Microsoft Office Excel, w czasie projektowania i w czasie wykonywania w dostosowaniach na poziomie dokumentu. Można również dodać <xref:Microsoft.Office.Tools.Excel.Chart> formantów w czasie wykonywania w dodatkach VSTO.
@@ -39,7 +39,7 @@ ms.locfileid: "60056318"
  Możesz dodać <xref:Microsoft.Office.Tools.Excel.Chart> formantu do arkusza w taki sam sposób, należy dodać wykres z poziomu aplikacji.
 
 > [!NOTE]
->  <xref:Microsoft.Office.Tools.Excel.Chart> Formant nie jest dostępny z **przybornika** lub **źródeł danych** okna.
+> <xref:Microsoft.Office.Tools.Excel.Chart> Formant nie jest dostępny z **przybornika** lub **źródeł danych** okna.
 
 ### <a name="to-add-a-chart-host-control-to-a-worksheet-in-excel"></a>Aby dodać kontrolki hosta wykresu do arkusza programu Excel
 

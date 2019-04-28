@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4591c6b794905eb0b8742292c752762cdea991e0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e1fd14dcbe2ed5840fdaa2da755fe6a95d7c8e68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402924"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Instrukcje: Dodawanie, aktualizowanie lub usuwanie odwołań usługi danych WCF
 A *sług* umożliwia dostęp do co najmniej jeden projekt [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Użyj **Dodaj odwołanie do usługi** okno dialogowe, aby wyszukać [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] w bieżącym rozwiązaniu lokalnie, w sieci lokalnej lub w Internecie.
@@ -37,7 +37,7 @@ A *sług* umożliwia dostęp do co najmniej jeden projekt [!INCLUDE[ssAstoria](.
 2. W **adres** , wprowadź adres URL dla usługi, a następnie kliknij **Przejdź** wyszukiwania dla usługi. Jeśli usługa implementuje zabezpieczenia nazwę i hasło użytkownika, może się monit o nazwę użytkownika i hasło.
 
     > [!NOTE]
-    >  Użytkownik powinien odwoływać się tylko do usług z zaufanego źródła. Dodawanie odwołań z niezaufanego źródła może naruszyć bezpieczeństwo.
+    > Użytkownik powinien odwoływać się tylko do usług z zaufanego źródła. Dodawanie odwołań z niezaufanego źródła może naruszyć bezpieczeństwo.
 
      Możesz również wybrać adres URL z **adres** listy, w którym przechowywane są poprzednie 15 adresów URL, pod którymi — znaleziono metadane prawidłową usługę.
 
@@ -88,7 +88,7 @@ A *sług* umożliwia dostęp do co najmniej jeden projekt [!INCLUDE[ssAstoria](.
      Klient usługi zostanie usunięty z rozwiązania oraz metadane opisujące usługi zostaną usunięte z *app.config* pliku.
 
     > [!NOTE]
-    >  Każdy kod odwołujący się do odwołania do usługi muszą zostać usunięte ręcznie.
+    > Każdy kod odwołujący się do odwołania do usługi muszą zostać usunięte ręcznie.
 
 ## <a name="see-also"></a>Zobacz także
 

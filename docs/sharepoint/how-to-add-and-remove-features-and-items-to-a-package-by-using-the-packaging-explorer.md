@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f62181909afef7f404270a085f9bbb1a5341c115
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ae44f7d4631316fc1250a79b9a8424c3731f1329
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431236"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Instrukcje: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu Eksploratora pakietów
   Aby skonfigurować pakiet do wdrożenia programu SharePoint elementy i funkcje, można użyć Eksploratora pakietów. Elementów projektu programu SharePoint i funkcje można dostosować w pliku wsp.
@@ -51,7 +51,7 @@ ms.locfileid: "60104463"
     - Otwórz menu skrótów dla funkcji, wybierz polecenie **Wytnij**, otwórz menu skrótów dla projektu, do którego chcesz przenieść tę funkcję, a następnie wybierz **Wklej**.
 
     > [!NOTE]
-    >  Użyj tej procedury, jeśli masz więcej niż jeden projekt programu SharePoint w rozwiązaniu.
+    > Użyj tej procedury, jeśli masz więcej niż jeden projekt programu SharePoint w rozwiązaniu.
 
 ## <a name="validate-a-feature-or-package"></a>Sprawdzanie poprawności funkcji lub pakietów
  Potencjalne problemy w funkcji programu SharePoint i pakietów można zidentyfikować, sprawdzając poprawność plików. Ostrzeżenia i błędy są wyświetlane w oknie danych wyjściowych i oknie Lista błędów.

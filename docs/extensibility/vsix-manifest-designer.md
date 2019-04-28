@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85b9d20dd67ff11f5bded7060440f2e768a205a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 84f82ab6e5cca57a1fabd600cecc7a5ee505c150
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411097"
 ---
 # <a name="vsix-manifest-designer"></a>Projektant manifestu VSIX
 Modyfikuje VSIX plik manifestu pakietu, który określa zachowanie podczas instalacji rozszerzenia programu Visual Studio.
@@ -29,7 +29,7 @@ Modyfikuje VSIX plik manifestu pakietu, który określa zachowanie podczas insta
  Aby otworzyć **Projektant manifestu VSIX**, zlokalizuj *source.extension.vsixmanifest* w pliku **Eksploratora rozwiązań**i Otwórz plik. Jeśli plik nie zawiera prawidłowy kod XML, nie będzie można otworzyć projektanta manifestu.
 
 > [!NOTE]
->  *Source.extension.vsixmanifest* plików znajdują się dane wyjściowe do *extension.vsixmanifest* podczas kompilowania pakietu.
+> *Source.extension.vsixmanifest* plików znajdują się dane wyjściowe do *extension.vsixmanifest* podczas kompilowania pakietu.
 
 ## <a name="uielement-list"></a>Lista elementów interfejsu użytkownika
  **Projektant manifestu VSIX** zawiera cztery sekcje, które odnoszą się do tych elementów najwyższego poziomu schematu:

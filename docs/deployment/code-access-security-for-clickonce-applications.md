@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a47ef550f18a0d26e6e0cea9894382ff8fdecb4a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 33ee57dc2576a9f8f40f1baa7c95f9e3bede2f7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629511"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406581"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Zabezpieczenia dostępu kodu dla aplikacji ClickOnce
 Aplikacje ClickOnce są oparte na programie .NET Framework i podlegają ograniczeniom zabezpieczeń dostępu kodu. Z tego powodu jest ważne, że rozumiesz implikacje kodu dostępu zabezpieczeń i w związku z tym zapisu aplikacji ClickOnce.
@@ -43,7 +43,7 @@ Aplikacje ClickOnce są oparte na programie .NET Framework i podlegają ogranicz
 - Jeśli aplikacja wymaga uprawnień pełnego zaufania, użytkownik końcowy może być monitowani o nadanie uprawnień do aplikacji. Oznacza to, że aplikacja nie zapewnia naprawdę środowisko ClickOnce i monit może potencjalnie być mylące dla mniej doświadczonych użytkowników.
 
   > [!NOTE]
-  >  Podczas instalowania aplikacji z nośników wymiennych, takich jak dysk CD-ROM, użytkownik nie jest monitowany. Ponadto administrator sieci można skonfigurować zasad sieciowych tak, aby użytkownicy nie będą monitowani podczas instalacji aplikacji z zaufanego źródła. Aby uzyskać więcej informacji, zobacz [Przegląd wdrażania aplikacji zaufanego](../deployment/trusted-application-deployment-overview.md).
+  > Podczas instalowania aplikacji z nośników wymiennych, takich jak dysk CD-ROM, użytkownik nie jest monitowany. Ponadto administrator sieci można skonfigurować zasad sieciowych tak, aby użytkownicy nie będą monitowani podczas instalacji aplikacji z zaufanego źródła. Aby uzyskać więcej informacji, zobacz [Przegląd wdrażania aplikacji zaufanego](../deployment/trusted-application-deployment-overview.md).
 
   Aby ograniczyć uprawnienia dla aplikacji ClickOnce, można zmodyfikować uprawnienia zabezpieczeń dostępu kodu dla swojej aplikacji zażądać strefy, który najlepiej odpowiada wymaganiom uprawnienia wymagane przez aplikację. W większości przypadków można wybrać strefy, w którym aplikacja jest wdrażana. Na przykład, jeśli aplikacja jest aplikacja dla przedsiębiorstw, można użyć **lokalny Intranet** strefy. Jeśli aplikacja jest aplikacja internetowa, możesz użyć **Internet** strefy.
 

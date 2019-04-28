@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d930ab12d6ac1338ec112091ed9ea8fb11a25587
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422095"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Wizualizowanie zdarzeń EventSource w postaci znaczników
 Narzędzie Concurrency Visualizer można wyświetlać zdarzeń EventSource w postaci znaczników i możesz kontrolować sposób wyświetlania znaczników. Aby wyświetlić znaczników EventSource, należy zarejestrować identyfikator GUID dostawcy ETW za pomocą [Zaawansowane ustawienia](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) okno dialogowe. Narzędzie Concurrency Visualizer zawiera domyślnych Konwencji do reprezentowania zdarzeń EventSource jako [znaczniki typu Flaga](../profiling/flag-markers.md), [znaczniki zakresu](../profiling/span-markers.md), i [znaczniki komunikatu](../profiling/message-markers.md). Można dostosować sposób wyświetlania zdarzeń EventSource, dodając pola niestandardowe do zdarzenia. Aby uzyskać więcej informacji na temat znaczników, zobacz [znaczniki Concurrency Visualizer](../profiling/concurrency-visualizer-markers.md). Aby uzyskać więcej informacji na temat zdarzeń EventSource, zobacz <xref:System.Diagnostics.Tracing>.
@@ -91,7 +91,7 @@ Narzędzie Concurrency Visualizer można wyświetlać zdarzeń EventSource w pos
  Używają pola cvSpanId, int, aby dopasować pary zdarzeń. Wartość dla każdej pary uruchamianie i zatrzymywanie wydarzeń, które reprezentują zakres musi być unikatowa. Zazwyczaj współbieżnych kodu to wymaga użycia elementów podstawowych synchronizacji takich jak <xref:System.Threading.Interlocked.Exchange%2A> aby upewnić się, że klucz (wartość jest używana do CvSpanID) jest poprawny.
 
 > [!NOTE]
->  Użycie SpanID Aby zagnieździć zakresy, zezwolić im na częściowo nakładają się na tym samym wątku, lub zezwolić im na uruchomienie na jeden wątek i zakończenia od innego nie jest obsługiwane.
+> Użycie SpanID Aby zagnieździć zakresy, zezwolić im na częściowo nakładają się na tym samym wątku, lub zezwolić im na uruchomienie na jeden wątek i zakończenia od innego nie jest obsługiwane.
 
 ## <a name="see-also"></a>Zobacz także
 - [Znaczniki CONCURRENCY visualizer](../profiling/concurrency-visualizer-markers.md)

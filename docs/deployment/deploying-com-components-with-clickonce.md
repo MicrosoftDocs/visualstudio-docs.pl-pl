@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3428a5aeca92d8c56634b3221bd35a0e8d0bb926
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7032ec5ae03febf6c54978020379769ac742a136
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406627"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Wdrażanie składników COM za pomocą technologii ClickOnce
 Wdrażanie składników COM, starszy tradycyjnie było trudne zadanie. Składniki potrzebne do zarejestrowania globalnie i ten sposób może spowodować niepożądane skutki uboczne między nakładającymi się aplikacje. Ta sytuacja zwykle nie jest to problem występujący w aplikacjach .NET Framework, ponieważ składniki są całkowicie odizolowane do aplikacji lub są zgodne z side-by-side. Program Visual Studio umożliwia wdrażanie izolowane składniki COM na wyższe system operacyjny lub Windows XP.
@@ -62,7 +62,7 @@ Wdrażanie składników COM, starszy tradycyjnie było trudne zadanie. Składnik
 2. W **nowy projekt** okno dialogowe, wybierz opcję **języka Visual Basic** a następnie wybierz węzeł **ActiveX DLL** projektu. W **nazwa** wpisz `VB6Hello`.
 
     > [!NOTE]
-    >  Obsługiwane są tylko typy projektu ActiveX biblioteki DLL i kontrolki ActiveX z COM bez rejestrowania; Typy projektu ActiveX EXE i dokumentu ActiveX nie są obsługiwane.
+    > Obsługiwane są tylko typy projektu ActiveX biblioteki DLL i kontrolki ActiveX z COM bez rejestrowania; Typy projektu ActiveX EXE i dokumentu ActiveX nie są obsługiwane.
 
 3. W **Eksploratora rozwiązań**, kliknij dwukrotnie **Class1.vb** można otworzyć edytora tekstu.
 
@@ -77,7 +77,7 @@ Wdrażanie składników COM, starszy tradycyjnie było trudne zadanie. Składnik
 5. Utwórz składnik. Z **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
 > [!NOTE]
->  COM bez rejestrowania obsługuje tylko bibliotek DLL i COM kontroluje typów projektów. Nie można używać pliku exe z rejestracji wolnego modelu COM.
+> COM bez rejestrowania obsługuje tylko bibliotek DLL i COM kontroluje typów projektów. Nie można używać pliku exe z rejestracji wolnego modelu COM.
 
  Teraz możesz utworzyć aplikację z systemem Windows i dodać odwołanie do składnika modelu COM do niego.
 
@@ -125,7 +125,7 @@ Wdrażanie składników COM, starszy tradycyjnie było trudne zadanie. Składnik
    Teraz, po naciśnięciu klawisza F5, działa aplikacja, zgodnie z oczekiwaniami, ale teraz działa on w ramach rejestracji wolnego modelu COM. W celu potwierdzenia, spróbuj wyrejestrowywanie składników VB6Hello.dll i uruchomić RegFreeComDemo1.exe poza programem Visual Studio IDE. Tym razem po kliknięciu przycisku nadal działa. Jeśli zmienisz tymczasowo manifest aplikacji, ponownie powiedzie.
 
 > [!NOTE]
->  Brak składnika modelu COM można symulować tymczasowo wyrejestrowując go. Otwórz wiersz polecenia, przejdź do folderu systemu, wpisując `cd /d %windir%\system32`, następnie należy wyrejestrować składnika, wpisując `regsvr32 /u VB6Hello.dll`. Można zarejestrować go ponownie, wpisując `regsvr32 VB6Hello.dll`.
+> Brak składnika modelu COM można symulować tymczasowo wyrejestrowując go. Otwórz wiersz polecenia, przejdź do folderu systemu, wpisując `cd /d %windir%\system32`, następnie należy wyrejestrować składnika, wpisując `regsvr32 /u VB6Hello.dll`. Można zarejestrować go ponownie, wpisując `regsvr32 VB6Hello.dll`.
 
  Ostatnim krokiem jest do publikowania aplikacji przy użyciu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]:
 

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ac57569802bbab5317f59e5311e4871a6e74ba1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f82e469997a7d072ab04e4c5ef6df0f36a8dc9ec
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419480"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Instrukcje: Programowe zapisywanie skoroszytów
   Istnieje kilka sposobów, aby zapisać skoroszyt. Skoroszyt programu bez wprowadzania zmian w ścieżce. Jeśli skoroszyt nie zostały zapisane, zanim należy zapisać skoroszyt, określając ścieżkę. Bez jawnej ścieżki program Microsoft Office Excel zapisuje plik w bieżącym folderze o nazwie, które podano podczas jej tworzenia. Można również zapisać kopię skoroszytu bez modyfikowania Otwórz skoroszyt w pamięci.
@@ -46,7 +46,7 @@ ms.locfileid: "60093062"
  Można zapisać skoroszyt określony do nowej lokalizacji lub pod nową nazwą, opcjonalnie określając format pliku, hasła, tryb dostępu i inne.
 
 > [!NOTE]
->  Warto ustawić <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> właściwości **False** przed zapisanie skoroszytu przy użyciu nowej ścieżki, ponieważ zapisywanie w niektóre formaty wymaga interakcji. Ustawienie tej właściwości na **False** powoduje, że program Excel użyj wszystkich ustawień domyślnych.
+> Warto ustawić <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> właściwości **False** przed zapisanie skoroszytu przy użyciu nowej ścieżki, ponieważ zapisywanie w niektóre formaty wymaga interakcji. Ustawienie tej właściwości na **False** powoduje, że program Excel użyj wszystkich ustawień domyślnych.
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Aby zapisać skoroszyt, skojarzone z dostosowywania poziomie dokumentu
 

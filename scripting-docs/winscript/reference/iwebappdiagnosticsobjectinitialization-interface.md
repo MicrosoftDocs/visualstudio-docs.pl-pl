@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67cf59965d47b2a0e29bbe6280d69acf0000a20d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: a992f8512d4927eeb58d6437ccb830abda688b28
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58149578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443681"
 ---
 # <a name="iwebappdiagnosticsobjectinitialization-interface"></a>Interfejs IWebAppDiagnosticsObjectInitialization
 Można zaimplementować ten interfejs dla klasy, które implementują [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md). [Interfejs IWebAppDiagnosticsSetup](../../winscript/reference/iwebappdiagnosticssetup-interface.md) jest implementowany przez obiekt, który implementuje [interfejs IDebugApplication](../../winscript/reference/idebugapplication-interface.md). W większości przypadków ten obiekt jest menedżerów PDM.  
@@ -26,7 +26,7 @@ Można zaimplementować ten interfejs dla klasy, które implementują [IWebAppDi
  Po utworzeniu obiektu [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) jest wywoływana z odwołaniem do menedżerów PDM debugowania aplikacji i `hPassToObject` parametru `CreateObjectWithSiteAtWebApp`.  
   
 > [!IMPORTANT]
->  `IWebAppDiagnosticsObjectInitialization` znajduje się w zestawie activdbg100.h.  
+> `IWebAppDiagnosticsObjectInitialization` znajduje się w zestawie activdbg100.h.  
   
 ## <a name="methods"></a>Metody  
  Ten interfejs udostępnia następujące metody.  

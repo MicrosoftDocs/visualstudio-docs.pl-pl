@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 199f89d7c2ce4c9674ed9d79ec13a1b392b70371
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 8e9fe393f7b0ad52a8d713c0f41f25f03bb056ff
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434770"
 ---
 # <a name="sccaddfromscc-function"></a>Funkcja SccAddFromScc
 Ta funkcja umożliwia użytkownikowi przeglądanie w poszukiwaniu plików, które znajdują się już w systemie kontroli źródła i następnie wprowadzić tych plików będących częścią bieżącego projektu. Na przykład tej funkcji można uzyskać z wspólnego pliku nagłówkowego do bieżącego projektu bez kopiowania pliku. Zwracana tablica plików, `lplpFileNames`, zawiera listę plików, które użytkownik chce, aby dodać do projektu środowiska IDE.
@@ -69,7 +69,7 @@ SCCRTN SccAddFromScc (
  `lplpFileNames` jest `char ***` wskaźnika. Wtyczka do kontroli źródła umieszcza wskaźnik do tablicy wskaźników do nazw plików, w związku z tym przekazanie na liście w sposób standardowy dla tego interfejsu API.
 
 > [!NOTE]
->  Początkowej wersji interfejsu API VSSCI nie podał sposób, aby wskazać projekt docelowy dla dodanych plików. Aby uwzględnić to semantykę `lplpFIleNames` parametru zostały rozszerzone i ułatwiają parametrem wchodzącym/wychodzącym zamiast parametru wyjściowego. Jeśli tylko jeden plik zostanie określony, oznacza to, że wartość wskazywana przez `lpnFiles` = 1, a następnie pierwszy element `lplpFileNames` zawiera folder docelowy. Aby użyć tych nowych semantyki wywołania IDE `SccSetOption` funkcją `nOption`parametr `SCC_OPT_SHARESUBPROJ`. Jeśli wtyczka do kontroli źródła nie obsługuje semantykę, zwraca `SCC_E_OPTNOTSUPPORTED`. Wykonując tak wyłącza użycie **Dodaj z kontroli źródła** funkcji. Jeśli wtyczka obsługuje **Dodaj z kontroli źródła** funkcji (`SCC_CAP_ADDFROMSCC`), a następnie musi obsługują semantyki nowego i wróć `SCC_I_SHARESUBPROJOK`.
+> Początkowej wersji interfejsu API VSSCI nie podał sposób, aby wskazać projekt docelowy dla dodanych plików. Aby uwzględnić to semantykę `lplpFIleNames` parametru zostały rozszerzone i ułatwiają parametrem wchodzącym/wychodzącym zamiast parametru wyjściowego. Jeśli tylko jeden plik zostanie określony, oznacza to, że wartość wskazywana przez `lpnFiles` = 1, a następnie pierwszy element `lplpFileNames` zawiera folder docelowy. Aby użyć tych nowych semantyki wywołania IDE `SccSetOption` funkcją `nOption`parametr `SCC_OPT_SHARESUBPROJ`. Jeśli wtyczka do kontroli źródła nie obsługuje semantykę, zwraca `SCC_E_OPTNOTSUPPORTED`. Wykonując tak wyłącza użycie **Dodaj z kontroli źródła** funkcji. Jeśli wtyczka obsługuje **Dodaj z kontroli źródła** funkcji (`SCC_CAP_ADDFROMSCC`), a następnie musi obsługują semantyki nowego i wróć `SCC_I_SHARESUBPROJOK`.
 
 ## <a name="see-also"></a>Zobacz także
 - [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)

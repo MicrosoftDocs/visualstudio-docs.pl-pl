@@ -36,12 +36,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ef2d97b0e3b15accdeb267513b38ef6d5bd729d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e9bd569f41ae15b6e95cc92fe969a4263c760735
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427972"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Host formantów Przegląd obiektów hosta i
   Obiekty hosta i kontrolek hosta są typy, które pomagają modelu programowania rozwiązań pakietu Office, które są tworzone za pomocą narzędzi programistycznych pakietu Office w programie Visual Studio. Obiekty hosta i kontrolek hosta upewnij się, interakcji z modeli obiektów programu Microsoft Office Word i Microsoft Office Excel, które są oparte na modelu COM, bardziej jak interakcji z obiektami zarządzanymi, takie jak kontrolek formularzy Windows.
@@ -113,7 +113,7 @@ ms.locfileid: "56607112"
   Umożliwia także kontrolek formularzy Windows Forms w rozwiązaniach pakietu Office, dodając je bezpośrednio do powierzchni dokument programu Word i Excel. Aby uzyskać więcej informacji, zobacz [kontrolek formularzy Windows w przegląd dokumentów pakietu Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
 > [!NOTE]
->  Dodawanie kontrolki hosta lub kontrolek formularzy Windows Forms do dokumentu programu Word nie jest obsługiwana.
+> Dodawanie kontrolki hosta lub kontrolek formularzy Windows Forms do dokumentu programu Word nie jest obsługiwana.
 
 ### <a name="add-host-controls-to-your-documents"></a>Dodawanie hosta formantów do dokumentów
  W projektach na poziomie dokumentu można dodać kontrolki hosta do dokumentów programu Word lub arkuszy programu Excel w czasie projektowania w następujący sposób:
@@ -148,7 +148,7 @@ ms.locfileid: "56607112"
  Przeciągnięcie formantu hosta z **przybornika** do dokumentu, kontrolka ma automatycznie nadawaną nazwę z liczbą przyrostową na koniec za pomocą typu formantu. Na przykład zakładki są nazywane **bookmark1**, **bookmark2**i tak dalej. Jeśli używasz macierzystą funkcjonalność programu Word lub Excel, aby dodać kontrolkę, można mu nazwę w czasie jego tworzenia. Można również zmienić nazwę kontrolki, zmieniając wartość **nazwa** właściwość **właściwości** okna.
 
 > [!NOTE]
->  Nie można użyć słowa zastrzeżone do nazwy hosta formantów. Na przykład jeśli dodasz <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli do arkusza i Zmień nazwę na **systemu**, wystąpi błąd podczas tworzenia projektu.
+> Nie można użyć słowa zastrzeżone do nazwy hosta formantów. Na przykład jeśli dodasz <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli do arkusza i Zmień nazwę na **systemu**, wystąpi błąd podczas tworzenia projektu.
 
 ### <a name="delete-host-controls"></a>Usuń kontrolki hosta
  W projektach na poziomie dokumentu, można usunąć kontrolki hosta w czasie projektowania, zaznaczenie kontrolki w arkuszu programu Excel lub dokumentu programu Word, a następnie naciskając klawisz **Usuń** klucza. Jednakże, należy użyć **Definiowanie nazwy** okno dialogowe w programie Excel, aby usunąć <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki.
@@ -160,13 +160,13 @@ ms.locfileid: "56607112"
  Jeśli użytkownicy końcowi usunęli kontrolki hosta z dokumentu w czasie wykonywania, rozwiązanie może zakończyć się niepowodzeniem w nieoczekiwany sposób. Funkcje ochrony dokumentu w programach Word i Excel można użyć do ochrony kontrolki hosta przed usunięciem. Aby uzyskać więcej informacji, zobacz [Office development ― przykłady i wskazówki dotyczące](../vsto/office-development-samples-and-walkthroughs.md).
 
 > [!NOTE]
->  Nie usuwaj programowo kontrole podczas `Shutdown` programu obsługi zdarzeń w dokumencie lub arkuszu. Elementy interfejsu użytkownika nie są już dostępne podczas `Shutdown` wystąpi zdarzenie. Jeśli chcesz usunąć kontrolki przed zamknięciem aplikacji, Dodaj kod do innego programu obsługi zdarzeń takich jak `BeforeClose` lub `BeforeSave`.
+> Nie usuwaj programowo kontrole podczas `Shutdown` programu obsługi zdarzeń w dokumencie lub arkuszu. Elementy interfejsu użytkownika nie są już dostępne podczas `Shutdown` wystąpi zdarzenie. Jeśli chcesz usunąć kontrolki przed zamknięciem aplikacji, Dodaj kod do innego programu obsługi zdarzeń takich jak `BeforeClose` lub `BeforeSave`.
 
 ### <a name="program-against-host-control-events"></a>Program w odniesieniu do zdarzeń kontrolki hosta
  Jednym ze sposobów, że formanty hosta rozszerzyć obiektów pakietu Office jest dodanie zdarzenia. Na przykład <xref:Microsoft.Office.Interop.Excel.Range> obiektu w programie Excel i <xref:Microsoft.Office.Interop.Word.Bookmark> obiektu w programie Word braku zdarzenia, ale [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] rozszerza te obiekty, dodając programowalny zdarzenia. Masz dostęp i kod dla tych zdarzeń, taki sam sposób dostępu zdarzeń formantów na formularzach Windows Forms: za pomocą listy rozwijanej zdarzeń w języku Visual Basic i na stronie właściwości zdarzenia w języku C#. Aby uzyskać więcej informacji, zobacz [instruktażu: Program w odniesieniu do zdarzeń kontrolki NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).
 
 > [!NOTE]
->  Nie należy ustawiać <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> właściwość <xref:Microsoft.Office.Interop.Excel.Application> obiektu w programie Excel, aby **false**. Ustawienie tej właściwości na **false** zapobiega podnoszenie żadnych wydarzeń, takich jak zdarzenia kontrolki hosta programu Excel.
+> Nie należy ustawiać <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> właściwość <xref:Microsoft.Office.Interop.Excel.Application> obiektu w programie Excel, aby **false**. Ustawienie tej właściwości na **false** zapobiega podnoszenie żadnych wydarzeń, takich jak zdarzenia kontrolki hosta programu Excel.
 
 ## <a name="see-also"></a>Zobacz także
 - [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

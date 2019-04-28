@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c690e0c009e50cbb98b6dc4f61c1dc6284443edf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f79ece781db19f2483ef1dd6cb0a81ff7cf78e06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430969"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Nawigowanie po kodzie za pomocą debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Zapoznaj się z poleceń i skrótów, przechodzenie do kodu w debugerze i który
  Aby zatrzymać w każdym wierszu kodu (każda instrukcja) podczas debugowania, użyj **F11** skróty klawiaturowe (lub **debugowania** / **Step Into** menu).  
   
 > [!TIP]
->  Podczas wykonywania wszystkich wierszy kodu, możesz umieścić kursor zmienne, aby zobaczyć ich wartości lub użyć [lokalne](../debugger/autos-and-locals-windows.md) i [Obejrzyj](../debugger/autos-and-locals-windows.md) systemu windows, aby obejrzeć ich wartości, Zmień.  
+> Podczas wykonywania wszystkich wierszy kodu, możesz umieścić kursor zmienne, aby zobaczyć ich wartości lub użyć [lokalne](../debugger/autos-and-locals-windows.md) i [Obejrzyj](../debugger/autos-and-locals-windows.md) systemu windows, aby obejrzeć ich wartości, Zmień.  
   
  Poniżej przedstawiono niektóre szczegóły na temat zachowania **Step Into**:  
   
@@ -87,7 +87,7 @@ Zapoznaj się z poleceń i skrótów, przechodzenie do kodu w debugerze i który
 |**Shift+F11**|**Wyjdź**|**Step Out** kontynuuje wykonywanie kodu, a następnie zawiesza wykonywanie, gdy bieżąca funkcja zwróci wartość (pomija debugera za pomocą bieżącej funkcji).|  
   
 > [!TIP]
->  Jeśli musisz odnaleźć punktu wejścia w swojej aplikacji, skorzystaj z **F10** lub **F11**. Te polecenia są często pomocne podczas sprawdzania stanu usługi aplikacji i podjęcie próby dowiedzieć się więcej na temat jego przepływ wykonania.  
+> Jeśli musisz odnaleźć punktu wejścia w swojej aplikacji, skorzystaj z **F10** lub **F11**. Te polecenia są często pomocne podczas sprawdzania stanu usługi aplikacji i podjęcie próby dowiedzieć się więcej na temat jego przepływ wykonania.  
   
 ## <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Uruchamianie do określonej lokalizacji lub funkcji  
  Często preferowaną metodą debugowania kodu, te metody są przydatne, gdy wiesz, jaki dokładnie kod chcesz sprawdzić lub co najmniej wiesz, gdzie chcesz rozpocząć debugowanie.  
@@ -140,7 +140,7 @@ Zapoznaj się z poleceń i skrótów, przechodzenie do kodu w debugerze i który
 - W oknie demontażu Ustaw kursor na instrukcji montażu, którą chcesz wykonać w następnej kolejności, kliknij prawym przyciskiem myszy i wybierz polecenie **Ustaw następną instrukcję**.  
   
 > [!CAUTION]
->  Ustawienie następnej instrukcji powoduje, że licznik programu przechodzi bezpośrednio do nowej lokalizacji. Użyj tego polecenia ostrożnie:  
+> Ustawienie następnej instrukcji powoduje, że licznik programu przechodzi bezpośrednio do nowej lokalizacji. Użyj tego polecenia ostrożnie:  
 > 
 > - Instrukcje między stary i nowymi punktami wykonania nie są wykonywane.  
 >   - Jeśli przeniesiesz punkt wykonania Wstecz, instrukcje interwencyjne nie zostaną cofnięte.  
@@ -149,7 +149,7 @@ Zapoznaj się z poleceń i skrótów, przechodzenie do kodu w debugerze i który
 >   - Gdy Edytuj i Kontynuuj jest włączona, **Ustaw następną instrukcję** kończy się niepowodzeniem, jeśli zostały wprowadzone zmiany, których Edytuj i Kontynuuj nie może od razu ponownie zamapować. Może to występować, na przykład, jeśli edytowano kod wewnątrz bloku catch. W takim przypadku zobaczysz komunikat o błędzie informujący o tym, że ta operacja nie jest obsługiwane.  
 > 
 > [!NOTE]
->  W kodzie zarządzanym nie można przenieść następnej instrukcji w następujących warunkach:  
+> W kodzie zarządzanym nie można przenieść następnej instrukcji w następujących warunkach:  
 > 
 > - Następna instrukcja znajduje się w innej metodzie niż bieżąca instrukcja.  
 >   - Debugowanie zostało uruchomione przy użyciu Just-In-Time debugowania.  
@@ -166,7 +166,7 @@ Zapoznaj się z poleceń i skrótów, przechodzenie do kodu w debugerze i który
  Po wyłączeniu tylko mój kod debuger można wkroczyć do kodu niepochodzącego od użytkownika, a kod niezwiązany z użytkownikiem, który pojawia się w oknach debugera.  
   
 > [!NOTE]
->  Tylko mój kod nie jest obsługiwana dla projektów urządzenia.  
+> Tylko mój kod nie jest obsługiwana dla projektów urządzenia.  
   
  **Wejdź do wywołań systemowych**  
   

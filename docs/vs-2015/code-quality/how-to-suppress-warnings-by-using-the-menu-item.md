@@ -12,18 +12,18 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a8fbc314580b106f5e1e8dae5a0a78d043d3940b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5097ecb0f7458e739def275d616eb344a2a6db0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426567"
 ---
 # <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Instrukcje: Pomijanie ostrzeżeń przy użyciu pozycji menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 UWAGA]
->  W źródle pomijanie nie jest obsługiwana dla projektów witryny sieci web.  
+> W źródle pomijanie nie jest obsługiwana dla projektów witryny sieci web.  
   
  Okno analizy kodu na pomijanie ostrzeżeń analizy kodu. Pomijanie ostrzeżenie nie jest taka sama jak wyłączenie go. Gdy możesz pominąć ostrzeżenia, ma zastosowanie tylko do konkretnego wystąpienia naruszenia. Inne naruszenia tego samego ostrzeżenia nadal będą raportowane w oknie Lista błędów.  
   
@@ -42,4 +42,4 @@ UWAGA]
      Pomijane jest szczególne ostrzeżenie i ostrzeżenie jest wyświetlane w oknie analizy kodu za pomocą przekreślenia.  
   
 > [!NOTE]
->  Ograniczeń, które nie mają na celu pojawiają się w pliku pominięć globalnych.
+> Ograniczeń, które nie mają na celu pojawiają się w pliku pominięć globalnych.

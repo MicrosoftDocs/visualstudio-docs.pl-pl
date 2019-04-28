@@ -13,12 +13,12 @@ ms.assetid: a992f2c9-f68b-4146-8cc2-027753bf7ce6
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ac639798ae5d1016b7d1c04753b6e0e758a7fe17
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 63e4f1a3621dde3fba5e8a2dabf45eaceb5d8ea4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418056"
 ---
 # <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ int GetHostMachineName_V7 ( 
 ## <a name="remarks"></a>Uwagi  
   
 > [!WARNING]
->  Począwszy od programu [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)], ta metoda nie jest już używany i powinien zawsze zwracają `E_NOTIMPL`.  
+> Począwszy od programu [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)], ta metoda nie jest już używany i powinien zawsze zwracają `E_NOTIMPL`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

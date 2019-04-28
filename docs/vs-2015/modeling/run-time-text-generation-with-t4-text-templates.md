@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 37fa7bafb77c67d29ff9625fa04388f9dd826f8e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 586ad1d68ce1d0310b30b8bdac8aa2fb55acdeb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411881"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ This report is Company Confidential.
 3. Wpisz nazwę dla pliku szablonu.  
   
     > [!NOTE]
-    >  Nazwa pliku szablonu będzie służyć jako nazwy klasy w wygenerowanym kodzie. W związku z tym nie powinna ona mieć spacji i znaków przestankowych.  
+    > Nazwa pliku szablonu będzie służyć jako nazwy klasy w wygenerowanym kodzie. W związku z tym nie powinna ona mieć spacji i znaków przestankowych.  
   
 4. Wybierz **Dodaj**.  
   
@@ -84,7 +84,7 @@ This report is Company Confidential.
 2. Ustaw plik **narzędzia niestandardowe** właściwości **TextTemplatingFilePreprocessor**. W Eksploratorze rozwiązań w menu skrótów pliku, wybierz **właściwości**.  
   
     > [!NOTE]
-    >  Jeśli właściwość została już ustawiona, upewnij się, że jest **TextTemplatingFilePreprocessor** i nie **TextTemplatingFileGenerator**. Może się to zdarzyć, jeśli dołączyć plik, który ma już rozszerzenie **.tt**.  
+    > Jeśli właściwość została już ustawiona, upewnij się, że jest **TextTemplatingFilePreprocessor** i nie **TextTemplatingFileGenerator**. Może się to zdarzyć, jeśli dołączyć plik, który ma już rozszerzenie **.tt**.  
   
 3. Zmień rozszerzenie nazwy pliku **.tt**. Mimo że ten krok jest opcjonalny, pomaga uniknąć, otwierając plik w edytorze niepoprawne.  
   

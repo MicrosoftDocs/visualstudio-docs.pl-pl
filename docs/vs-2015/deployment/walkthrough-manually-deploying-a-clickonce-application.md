@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: df11af5dee9ce510af01dab037a47a1bdd2f2880
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: baa62dc48b329cd3639c0623fccfdbe2325cf9e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429123"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Przewodnik: Ręczne wdrażanie aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Jeśli nie możesz użyć programu Visual Studio, aby wdrożyć swoje [!INCLUDE[
      Utwórz wdrożenie za pomocą certyfikatu Authenticode. Można wygenerować certyfikatu testowego przy użyciu narzędzi programu Visual Studio i MageUI.exe, lub MakeCert.exe Pvk2Pfx.exe lub certyfikat można uzyskać z urząd certyfikacji (CA). Wybranie opcji użycia zaufanego wdrożenia aplikacji, należy również wykonać jednorazowe Instalacja certyfikatu na wszystkich komputerach klienckich. Aby uzyskać więcej informacji, zobacz [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
     > [!NOTE]
-    >  Możesz też zarejestrować wdrożenia przy użyciu certyfikatów CNG, który można uzyskać od urzędu certyfikacji.  
+    > Możesz też zarejestrować wdrożenia przy użyciu certyfikatów CNG, który można uzyskać od urzędu certyfikacji.  
   
 - Upewnij się, czy aplikacja nie ma manifestu za pomocą informacji o funkcji Kontrola konta użytkownika.  
   
@@ -76,7 +76,7 @@ Jeśli nie możesz użyć programu Visual Studio, aby wdrożyć swoje [!INCLUDE[
 2. W katalogu wdrażania, który został utworzony Utwórz podkatalog wersji. Jeśli po raz pierwszy, aplikacja jest wdrażana, nazwę podkatalogu wersji **1.0.0.0**.  
   
     > [!NOTE]
-    >  Wersja wdrożenie może się różnić od wersji aplikacji.  
+    > Wersja wdrożenie może się różnić od wersji aplikacji.  
   
 3. Skopiuj wszystkie pliki aplikacji do podkatalogu wersji, w tym pliki wykonywalne, zestawy, zasobów i plików danych. Jeśli to konieczne, możesz utworzyć dodatkowe podkatalogów, które zawierają dodatkowe pliki.  
   
@@ -89,7 +89,7 @@ Jeśli nie możesz użyć programu Visual Studio, aby wdrożyć swoje [!INCLUDE[
     ```  
   
     > [!NOTE]
-    >  Pamiętaj uwzględnić znaku kropki (.) po `-FromDirectory` opcja, która wskazuje bieżący katalog. Jeśli nie zostanie uwzględniony kropki (.), należy określić ścieżkę do plików aplikacji.  
+    > Pamiętaj uwzględnić znaku kropki (.) po `-FromDirectory` opcja, która wskazuje bieżący katalog. Jeśli nie zostanie uwzględniony kropki (.), należy określić ścieżkę do plików aplikacji.  
   
 6. Zaloguj się w manifeście aplikacji za pomocą certyfikatu Authenticode. Zastąp *mycert.pfx* ze ścieżką do pliku certyfikatu. Zastąp *haseł* przy użyciu hasła dla pliku certyfikatu.  
   
@@ -134,7 +134,7 @@ Jeśli nie możesz użyć programu Visual Studio, aby wdrożyć swoje [!INCLUDE[
 2. W katalogu wdrażania, który został utworzony Utwórz podkatalog wersji. Jeśli po raz pierwszy, aplikacja jest wdrażana, nazwę podkatalogu wersji **1.0.0.0**.  
   
     > [!NOTE]
-    >  Wersja wdrożenia prawdopodobnie różni się od wersji aplikacji.  
+    > Wersja wdrożenia prawdopodobnie różni się od wersji aplikacji.  
   
 3. Skopiuj wszystkie pliki aplikacji do podkatalogu wersji, w tym pliki wykonywalne, zestawy, zasobów i plików danych. Jeśli to konieczne, możesz utworzyć dodatkowe podkatalogów, które zawierają dodatkowe pliki.  
   

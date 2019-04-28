@@ -12,12 +12,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 75438b5a2ffa5917f667ab3fdc3a9bd3528f0e55
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 607eda7550819e4150f026a0671ed744ba9c10a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427041"
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>Generowanie plików za pomocą narzędzia TextTransform
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54802107"
 TextTransform.exe jest narzędziem wiersza polecenia, można użyć do przekształcania szablonu tekstu. Jeśli chcesz wywołać TextTransform.exe, należy określić nazwę pliku szablonu tekstu jako argument. TextTransform.exe wywołuje aparat przekształcenia tekstu i przetwarza szablonu tekstu. TextTransform.exe zwykle jest wywoływana przez skrypty. Jednak nie jest zazwyczaj wymagane, ponieważ można dokonać przekształcenia tekstu, w programie Visual Studio lub w procesie kompilacji.  
   
 > [!NOTE]
->  Jeśli chcesz wykonywać przekształcenia tekstu jako część procesu kompilacji, rozważ użycie zadanie przekształcenia tekstu w MSBuild. Aby uzyskać więcej informacji, zobacz [generowanie kodu w procesie kompilacji](../modeling/code-generation-in-a-build-process.md). W komputerze, na którym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] jest zainstalowana, można także napisać aplikację lub [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenia, które umożliwiają przekształcanie szablonów tekstowych. Aby uzyskać więcej informacji, zobacz [przetwarzanie szablonów tekstowych przy użyciu hosta niestandardowego](../modeling/processing-text-templates-by-using-a-custom-host.md).  
+> Jeśli chcesz wykonywać przekształcenia tekstu jako część procesu kompilacji, rozważ użycie zadanie przekształcenia tekstu w MSBuild. Aby uzyskać więcej informacji, zobacz [generowanie kodu w procesie kompilacji](../modeling/code-generation-in-a-build-process.md). W komputerze, na którym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] jest zainstalowana, można także napisać aplikację lub [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenia, które umożliwiają przekształcanie szablonów tekstowych. Aby uzyskać więcej informacji, zobacz [przetwarzanie szablonów tekstowych przy użyciu hosta niestandardowego](../modeling/processing-text-templates-by-using-a-custom-host.md).  
   
  TextTransform.exe znajduje się w następującym katalogu:  
   

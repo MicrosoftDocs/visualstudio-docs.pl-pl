@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 395e2a6233c1b6187d9089459cb8f267c4c3c904
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d4d2218337153418ef201ee7896eeb095c4778fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424920"
 ---
 # <a name="upgrade-mdf-files"></a>Uaktualnianie plików mdf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ W tym temacie opisano opcje uaktualniania pliku bazy danych (.mdf), po zainstalo
   Użytkownik może również monit uaktualnić plik bazy danych, który został utworzony za pomocą starszej wersji programu SQL Server Express lub LocalDB, jeśli wersja pliku nie jest zgodna z wystąpieniem programu SQL Server Express lub LocalDB, który jest aktualnie zainstalowany. Aby rozwiązać ten problem, Visual Studio wyświetli monit o uaktualnienie pliku.  
   
 > [!IMPORTANT]
->  Firma Microsoft zaleca tworzenie kopii zapasowej plików bazy danych przed przystąpieniem do uaktualniania.  
+> Firma Microsoft zaleca tworzenie kopii zapasowej plików bazy danych przed przystąpieniem do uaktualniania.  
   
 > [!WARNING]
->  Jeśli zaktualizujesz plik mdf, który został utworzony w programie LocalDB 2014 (V12) 32-bitowych do LocalDB 2016 (V13), nie można otworzyć go ponownie w 32-bitowej wersji programu LocalDB.  W wersji Update 2 LocalDB V13 jest tylko wersja 64-bitowa.  
+> Jeśli zaktualizujesz plik mdf, który został utworzony w programie LocalDB 2014 (V12) 32-bitowych do LocalDB 2016 (V13), nie można otworzyć go ponownie w 32-bitowej wersji programu LocalDB.  W wersji Update 2 LocalDB V13 jest tylko wersja 64-bitowa.  
   
  Przed rozpoczęciem uaktualnienia bazy danych należy wziąć pod uwagę następujące kryteria:  
   

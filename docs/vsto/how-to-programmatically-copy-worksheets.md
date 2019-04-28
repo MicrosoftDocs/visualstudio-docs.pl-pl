@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 305f24204c1be7186b2d2d49fa61a0c32c52c8cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 17d248fb0805c83feb64b2f0a28a645b1fa29d49
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422492"
 ---
 # <a name="how-to-programmatically-copy-worksheets"></a>Instrukcje: Programowe kopiowanie arkuszy
   Możesz utworzyć kopię arkusza i Wstaw ten arkusz, przed lub po istniejącego arkusza w skoroszycie. Jeśli nie określisz miejsca do wstawienia w arkuszu Excel utworzy nowy skoroszyt w celu uwzględnienia nowego arkusza.
@@ -26,7 +26,7 @@ ms.locfileid: "60104398"
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 > [!NOTE]
->  Czy programowe Kopiowanie arkusza, użytkownik końcowy kopiuje arkusza ręcznie, istnieje nie kod związany z nowego arkusza i formantów na nowy arkusz nie działają. Jest to spowodowane nowo skopiowany arkusz jest <xref:Microsoft.Office.Interop.Excel.Worksheet> obiektu i nie <xref:Microsoft.Office.Tools.Excel.Worksheet> element hosta. Kontrolek formularzy Windows Forms i kontrolek hosta może być dodane tylko do elementów hosta. Aby uzyskać więcej informacji, zobacz [ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+> Czy programowe Kopiowanie arkusza, użytkownik końcowy kopiuje arkusza ręcznie, istnieje nie kod związany z nowego arkusza i formantów na nowy arkusz nie działają. Jest to spowodowane nowo skopiowany arkusz jest <xref:Microsoft.Office.Interop.Excel.Worksheet> obiektu i nie <xref:Microsoft.Office.Tools.Excel.Worksheet> element hosta. Kontrolek formularzy Windows Forms i kontrolek hosta może być dodane tylko do elementów hosta. Aby uzyskać więcej informacji, zobacz [ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
 ## <a name="to-add-a-copied-worksheet-to-a-workbook-in-a-document-level-customization"></a>Aby dodać skopiowany arkusz w skoroszycie w dostosowaniu na poziomie dokumentu
 

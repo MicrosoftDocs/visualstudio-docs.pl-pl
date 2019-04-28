@@ -11,12 +11,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f8de4432f1d0b4ab4bf24159744d20708d732fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d4381edb42e2aef53c00aea619eea34ee20060d5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424329"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Opis modeli, klas i relacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ Języka specyficznego dla domeny (DSL) jest definiowany przez jego pliku definic
  Po zapisaniu modelu do pliku w postaci XML, osadzone elementy są zagnieżdżone wewnątrz nadrzędnych, chyba że dostosowano serializacji.  
   
 > [!NOTE]
->  Osadzanie nie jest taka sama jak dziedziczenie. Elementy podrzędne w relacji osadzania dziedziczy właściwości elementu nadrzędnego. Osadzanie jest typu łącza między elementami modelu. Dziedziczenie jest relacja między klasami i nie tworzyć łącza między elementami modelu.  
+> Osadzanie nie jest taka sama jak dziedziczenie. Elementy podrzędne w relacji osadzania dziedziczy właściwości elementu nadrzędnego. Osadzanie jest typu łącza między elementami modelu. Dziedziczenie jest relacja między klasami i nie tworzyć łącza między elementami modelu.  
   
 ### <a name="embedding-rules"></a>Osadzanie reguły  
  Każdy element w modelu wystąpień musi być elementem docelowym dokładnie jeden link osadzania, z wyjątkiem korzeń modelu.  

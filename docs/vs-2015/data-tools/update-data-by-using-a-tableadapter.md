@@ -21,12 +21,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56b01eb64d38563178d6af947174d0c4d2720bea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 906dd308f4341b89153d7a9acaf79e815422ee16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424905"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Aktualizowanie danych za pomocą adaptera TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60113827"
 Po ukończeniu zmodyfikowane i sprawdzania poprawności danych w zestawie danych, może wysyłać zaktualizowane dane do wywoływania databaseby `Update` metody TableAdapter. `Update` Metoda aktualizuje jednej tabeli danych i uruchamia odpowiednie polecenie (INSERT, UPDATE lub DELETE), na podstawie <xref:System.Data.DataRow.RowState%2A> każdego wiersza danych w tabeli. Gdy zestaw danych zawiera tabele powiązane relacjami, program Visual Studio generuje klasę TableAdapterManager, która służy do aktualizacji. Klasa TableAdapterManager gwarantuje, że aktualizacje zostały wprowadzone w odpowiedniej kolejności, na podstawie ograniczeń klucza obcego, które są zdefiniowane w bazie danych. Korzystając z formantów powiązanych z danymi, architektura wiązania z danymi tworzy zmienną składową klasy TableAdapterManager, o nazwie tableAdapterManager. Aby uzyskać więcej informacji, zobacz [hierarchiczna aktualizacja — Przegląd](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6).  
   
 > [!NOTE]
->  Podczas próby aktualizacji źródła danych przy użyciu zawartości zestawu danych można uzyskać błędów. Aby uniknąć błędów, zaleca się thatyou umieść kod, który wywołuje karty `Update` metody w ramach `try` / `catch` bloku.  
+> Podczas próby aktualizacji źródła danych przy użyciu zawartości zestawu danych można uzyskać błędów. Aby uniknąć błędów, zaleca się thatyou umieść kod, który wywołuje karty `Update` metody w ramach `try` / `catch` bloku.  
   
  Dokładna procedura aktualizowanie źródła danych mogą się różnić w zależności od potrzeb biznesowych, ale obejmuje następujące kroki:  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9967b0cb47bd397b7b0fa752eb2fff2518865b14
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: MT
+ms.openlocfilehash: 4886a23272962d2dee03576504d60d64067faf20
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433405"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Generowanie kodu i szablony tekstowe T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ namespace Fabrikam.FirstJob
  Aby uzyskać więcej informacji, zobacz [generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Aby uzyskać więcej informacji na temat składni szablonów, zobacz [pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md).  
   
 > [!NOTE]
->  Termin *modelu* jest czasami używane do opisywania danych odczytanych przez co najmniej jeden szablon. Model może być w dowolnym formacie, w dowolnych plików lub bazy danych. Nie ma być modelu UML lub model języka specyficznego dla domeny. Po prostu "Model" wskazuje, czy danych można zdefiniować w warunkach użytkowania koncepcji biznesowych, a nie przypominającą kod.  
+> Termin *modelu* jest czasami używane do opisywania danych odczytanych przez co najmniej jeden szablon. Model może być w dowolnym formacie, w dowolnych plików lub bazy danych. Nie ma być modelu UML lub model języka specyficznego dla domeny. Po prostu "Model" wskazuje, czy danych można zdefiniować w warunkach użytkowania koncepcji biznesowych, a nie przypominającą kod.  
   
  Funkcja przekształcania szablonu tekstu o nazwie *T4*.  
   

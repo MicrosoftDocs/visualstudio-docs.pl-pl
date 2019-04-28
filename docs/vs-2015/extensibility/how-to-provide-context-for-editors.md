@@ -10,12 +10,12 @@ ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e5900d5c818883ffc78b2399b937c80307b52c36
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 11a98599a9812cd00650d113170ff55c01ac44db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435897"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Instrukcje: Dostarczanie kontekstu edytorów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ W edytorze kontekst jest aktywne, tylko wtedy, gdy Edytor ma fokus lub były wcz
      Gdy **dynamiczna Pomoc** wywołania okna <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> aby wskazać, że jest on aktualizowany, edytora lub projektanta, można zaktualizować kontekstu odpowiednio do zbioru kontekst nadrzędnego i wszystkie zbiory kontekst podrzędny w tej chwili.  
   
     > [!NOTE]
-    >  `SetDirty` Flaga jest automatycznie ustawiana na `true` zawsze, gdy kontekst jest dodane lub usunięte z pakietu kontekstu. **Dynamiczna Pomoc** okna tylko wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> na zbiór kontekstu Jeśli `SetDirty` flaga jest ustawiona na `true`. Jest resetowana do `false` po aktualizacji.  
+    > `SetDirty` Flaga jest automatycznie ustawiana na `true` zawsze, gdy kontekst jest dodane lub usunięte z pakietu kontekstu. **Dynamiczna Pomoc** okna tylko wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> na zbiór kontekstu Jeśli `SetDirty` flaga jest ustawiona na `true`. Jest resetowana do `false` po aktualizacji.  
   
 3. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> dodać kontekstowego do kolekcji aktywnego kontekstu lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.RemoveAttribute%2A> usunąć kontekst.  
   
@@ -75,7 +75,7 @@ W edytorze kontekst jest aktywne, tylko wtedy, gdy Edytor ma fokus lub były wcz
  Jeśli piszesz własnego edytora, należy wykonać wszystkie trzy procedury przedstawione w tym temacie, aby zapewnić kontekst dla edytora.  
   
 > [!NOTE]
->  Aby prawidłowo Uaktywnij okno edytora lub projektanta i upewnij się, że routing poleceń są zaktualizowane prawidłowo, należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> w składniku dokonanie okien fokus.  
+> Aby prawidłowo Uaktywnij okno edytora lub projektanta i upewnij się, że routing poleceń są zaktualizowane prawidłowo, należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> w składniku dokonanie okien fokus.  
   
  SEID to zbiór właściwości, które zmieniają się na podstawie wyboru. SEID informacje są dostępne za pośrednictwem globalnej zaznaczenia. Wybór globalnego jest podłączona do zdarzenia wyzwolone przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> interfejsu, i zawiera listę wszystkich elementów, która jest zaznaczone (bieżącego edytora, bieżącego okna narzędzi, bieżącej hierarchii i tak dalej).  
   

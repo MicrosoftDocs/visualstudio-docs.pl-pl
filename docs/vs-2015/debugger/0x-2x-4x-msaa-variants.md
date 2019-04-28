@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4b188be0a8ff3c8bac6dc8fd2b5474756a1565f3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f6cc62e4ba56cb7be461bbf3cee5435cb404b7fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439986"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0 x / 2 x / 4 x MSAA wariantów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Zastąpienia wielu przykładowe Wygładzanie (MSAA) ustawień dla wszystkich ele
  Jeśli aplikacja nie ma jeszcze MSAA włączone, 2 x MSAA i 4 wariantów x MSAA wskazują koszt względnej wydajności umożliwiające im w swojej aplikacji. Gdy koszt jest zadowalająco niski, należy rozważyć włączenie MSAA zwiększyć jakość obrazu aplikacji.  
   
 > [!NOTE]
->  Sprzęt nie może w pełni obsługuje MSAA we wszystkich formatach. Ograniczenie sprzętu, który nie pracuje w całym wszystkich tych wariantów wystąpienia, kolumny w tabeli podsumowania wydajności jest pusta i jest generowany komunikat o błędzie.  
+> Sprzęt nie może w pełni obsługuje MSAA we wszystkich formatach. Ograniczenie sprzętu, który nie pracuje w całym wszystkich tych wariantów wystąpienia, kolumny w tabeli podsumowania wydajności jest pusta i jest generowany komunikat o błędzie.  
   
 ## <a name="remarks"></a>Uwagi  
  Te wariantów Zastąp przykładowe jakość próbkowania i liczba argumentów dla wywołań `ID3DDevice::CreateTexture2D` które tworzą elementy docelowe renderowania. W szczególności te parametry zostaną zastąpione, gdy:  

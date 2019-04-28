@@ -22,18 +22,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd2900544fe2c33cfaaf9d1a0da5d4ff1ac41ab4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 406647ae086285df8dfdfc00daf4b62be66e74a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402692"
 ---
 # <a name="allocation-hook-functions"></a>Funkcje punktu zaczepienia alokacji
 Funkcja punktu zaczepienia alokacji instalowana za pomocą funkcji [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook) jest wywoływana za każdym razem, gdy pamięć jest przydzielana, ponownie przydzielana lub zwalniana. Ten typ punktu zaczepienia służy do wielu różnych celów. Używaj go do testowania, jak aplikacja obsługuje sytuacje braku pamięci, a także do badania wzorców przydziału lub rejestrowania informacji o przydziale do późniejszej analizy.
 
 > [!NOTE]
->  Należy pamiętać o ograniczeniu dotyczącym używania funkcji biblioteki wykonawczej języka C w funkcji punktu zaczepienia alokacji, opisanego w artykule [Punkty zaczepienia alokacji i alokacja pamięci środowiska wykonawczego języka C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).
+> Należy pamiętać o ograniczeniu dotyczącym używania funkcji biblioteki wykonawczej języka C w funkcji punktu zaczepienia alokacji, opisanego w artykule [Punkty zaczepienia alokacji i alokacja pamięci środowiska wykonawczego języka C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).
 
  Funkcja punktu zaczepienia alokacji powinna mieć prototyp, jak w poniższym przykładzie:
 

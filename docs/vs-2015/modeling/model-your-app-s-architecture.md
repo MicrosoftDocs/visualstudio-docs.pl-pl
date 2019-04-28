@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a6e551dd2f045684168947d2c5a4e63089928c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: be66bf02294c12d39bcfd28793bb036696296476
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417778"
 ---
 # <a name="model-your-app39s-architecture"></a>Model aplikacji&#39;architektury s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
  Cel modelu jest zmniejszenie niejasności, występujących w opisach języka naturalnego, ułatwienie Ty i Twoi współpracownicy wizualizacji projektu i w celu omówienia alternatywnych projektów. Model powinien być używany razem z innych dokumentów lub dyskusji. Przez siebie model nie reprezentuje pełną specyfikację architektury.  
   
 > [!NOTE]
->  W tym temacie "system" oznacza, że oprogramowanie, które tworzysz. Może być duży zbiór wielu składników oprogramowania i sprzętu, lub pojedynczej aplikacji lub jej część aplikacji.  
+> W tym temacie "system" oznacza, że oprogramowanie, które tworzysz. Może być duży zbiór wielu składników oprogramowania i sprzętu, lub pojedynczej aplikacji lub jej część aplikacji.  
   
  Architektura systemu można podzielić na dwóch obszarach:  
   

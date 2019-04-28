@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 08fd0d6e33de0c032ab63f013fca7ee3174b260e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eba06da32c04fa0ac8824d3cd1c8d024d96c3091
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434406"
 ---
 # <a name="image-editor"></a>Edytor obrazów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
  Przed rozpoczęciem pracy z obrazem, który został utworzony, można zmienić konfiguracji domyślnej. Na przykład możesz zmienić jego wymiary lub format koloru, która jest używana. Aby uzyskać informacje o sposobie konfigurowania tych i innych właściwości obrazu, zobacz [właściwości obrazu](#ImageProperties).  
   
 > [!NOTE]
->  Aby zapisać swoją pracę, należy ustawić **Format koloru** właściwość, jeśli chcesz użyć formatu określony kolor. Jeśli format pliku obsługuje kompresję, można dostosować ustawienia kompresji podczas zapisywania pliku po raz pierwszy lub po wybraniu **Zapisz jako**.  
+> Aby zapisać swoją pracę, należy ustawić **Format koloru** właściwość, jeśli chcesz użyć formatu określony kolor. Jeśli format pliku obsługuje kompresję, można dostosować ustawienia kompresji podczas zapisywania pliku po raz pierwszy lub po wybraniu **Zapisz jako**.  
   
 ## <a name="working-with-the-image-editor"></a>Praca z edytora obrazów  
  W tej sekcji opisano, jak można użyć edytora obrazów, aby zmodyfikować teksturami i obrazami.  
@@ -136,7 +136,7 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
 |**TRIM**|Przycina obraz do aktywnego zaznaczenia.|  
   
 ### <a name="working-with-mip-levels"></a>Praca z poziomów MIP  
- Niektóre formaty obrazów — na przykład, DirectDraw Surface (.dds) — Obsługa poziomów MIP przestrzeni tekstury poziomu z Detail (poziomu). Aby uzyskać informacje o tym, jak generować i pracować z poziomami MIP, zobacz [jak: Tworzenie i modyfikacja poziomów MIP](../designers/how-to-create-and-modify-mip-levels.md)  
+ Niektóre formaty obrazów — na przykład, DirectDraw Surface (.dds) — Obsługa poziomów MIP przestrzeni tekstury poziomu z Detail (poziomu). Aby uzyskać informacje o tym, jak generować i pracować z poziomami MIP, zobacz [jak: tworzenie i modyfikacja poziomów MIP](../designers/how-to-create-and-modify-mip-levels.md)  
   
 ### <a name="working-with-transparency"></a>Praca z przezroczystością  
  Niektóre formaty obrazów — na przykład, DirectDraw Surface (.dds) — obsługuje przezroczystość. Istnieje kilka sposobów, że jawność mogą być używane, w zależności od narzędzie, którego używasz. Aby określić stopień przejrzystości dla wyboru koloru w **właściwości** oknie **A** składnik (alfa) wybór koloru. Oto jak różne rodzaje kontroli narzędzi, jak przezroczystości są stosowane:  
@@ -166,7 +166,7 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
 |Wycinek głębokości|Bieżącego wycinka głębi. Mogą być wyświetlane tylko pierwszy wycinek; wszystkie inne wycinki zostaną utracone przy zapisywaniu obrazu.|  
   
 > [!NOTE]
->  Ponieważ **obrócić** właściwość ma zastosowanie do wszystkich narzędzi i wybranych regionach, zawsze pojawia się w dolnej części **właściwości** okna wraz z innymi właściwości narzędzia. **Obróć przez** zawsze jest wyświetlany, ponieważ obraz całej niejawnie zostaje wybrany, gdy nie ma żadnych wyboru ani narzędzie active. Aby uzyskać więcej informacji na temat **obrócić** właściwości, zobacz [właściwości narzędzia](#ToolProperties).  
+> Ponieważ **obrócić** właściwość ma zastosowanie do wszystkich narzędzi i wybranych regionach, zawsze pojawia się w dolnej części **właściwości** okna wraz z innymi właściwości narzędzia. **Obróć przez** zawsze jest wyświetlany, ponieważ obraz całej niejawnie zostaje wybrany, gdy nie ma żadnych wyboru ani narzędzie active. Aby uzyskać więcej informacji na temat **obrócić** właściwości, zobacz [właściwości narzędzia](#ToolProperties).  
   
 #### <a name="resizing-images"></a>Zmiana rozmiaru obrazów  
  Poniżej przedstawiono dwa sposoby zmiany rozmiaru obrazu. W obu przypadkach edytora obrazów używa interpolacji liniowej Power bi do próbkowania obrazu.  

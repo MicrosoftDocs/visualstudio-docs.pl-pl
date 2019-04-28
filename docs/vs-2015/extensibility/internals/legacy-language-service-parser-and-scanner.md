@@ -11,12 +11,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1db922974c587cdeadc131d17c44cbab4b49af0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 64f9a9f4d0785f033191ab527084f0dddb1ff104
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434362"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analizator i skaner starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ namespace MyNamespace
  W przeciwieństwie do analizatora, która jest używana jako część kompilatora (gdzie tokeny są konwertowane na jakiegoś kodu wykonywalnego) analizatora usług języka może być wywoływana wiele różnych powodów i w wielu różnych kontekstach. Jak zaimplementować to podejście w <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.LanguageService> klasy zależy od użytkownika. Ważne jest, aby pamiętać, że <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metoda może być wywoływana w wątku tła.  
   
 > [!CAUTION]
->  <xref:Microsoft.VisualStudio.Package.ParseRequest> Struktura zawiera odwołanie do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> obiektu. To <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> obiektu nie można używać w wątku w tle. W rzeczywistości wielu klas bazowych MPF nie można używać w wątku w tle. Obejmują one <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> klasy i inne klasy, który bezpośrednio lub pośrednio komunikuje się z widoku.  
+> <xref:Microsoft.VisualStudio.Package.ParseRequest> Struktura zawiera odwołanie do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> obiektu. To <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> obiektu nie można używać w wątku w tle. W rzeczywistości wielu klas bazowych MPF nie można używać w wątku w tle. Obejmują one <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> klasy i inne klasy, który bezpośrednio lub pośrednio komunikuje się z widoku.  
   
  Ten parser zazwyczaj analizuje czas pliku pierwszy całego źródła, jest on nazywany lub podczas analizy przyczyny wartość <xref:Microsoft.VisualStudio.Package.ParseReason> otrzymuje. Kolejne wywołania <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metody obsługi niewielką część przeanalizowany kodu i mogą być wykonywane szybciej przy użyciu wyników poprzedniej operacji pełnej analizy. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Metoda komunikuje się wyniki operacji analizowania za pośrednictwem <xref:Microsoft.VisualStudio.Package.AuthoringSink> i <xref:Microsoft.VisualStudio.Package.AuthoringScope> obiektów. <xref:Microsoft.VisualStudio.Package.AuthoringSink> Obiekt jest używany do zbierania informacji z określonego powodu analizy, na przykład informacje o zakresy dopasowywanie nawiasów zwykłych lub podpisy metody, które ma listy parametrów. <xref:Microsoft.VisualStudio.Package.AuthoringScope> Zawiera kolekcje deklaracje i podpisy metod oraz pomocy technicznej przejdź do zaawansowanej edycji opcji (**przejdź do definicji**, **przejdź do deklaracji**, **przejdź do Odwołanie**).  
   

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2643c88eaf133d41fba7a8112f9b92150be3148
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 37b3f3105280ec384b6c180a65d2492ffd3bb02c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411112"
 ---
 # <a name="vsct-xml-schema-reference"></a>Odwołanie do schematu VSCT XML
 Zapewnia tabelę polecenia tabeli kompilatora elementów schematu, dozwolone podrzędnych elementów i atrybutów dla każdego.
@@ -24,7 +24,7 @@ Zapewnia tabelę polecenia tabeli kompilatora elementów schematu, dozwolone pod
  Plik konfiguracji (vsct) tabeli polecenia opartego na języku XML definiuje elementy polecenia, które zapewnia pakietu VSPackage do zintegrowanego środowiska programistycznego (IDE). Należą do nich elementy menu, menu, paski narzędzi i pola kombi.
 
 > [!NOTE]
->  Kompilatora VSCT można uruchomić preprocesora do pliku vsct. Ponieważ jest to zazwyczaj zawiera preprocesora, można zdefiniować C++ i makra, które mają tej samej składni, który jest używany w plikach języka C++. Przykłady tego znajdują się w vsct pliku, który **nowy projekt** Kreator tworzy dla projektu pakietu VSPackage.
+> Kompilatora VSCT można uruchomić preprocesora do pliku vsct. Ponieważ jest to zazwyczaj zawiera preprocesora, można zdefiniować C++ i makra, które mają tej samej składni, który jest używany w plikach języka C++. Przykłady tego znajdują się w vsct pliku, który **nowy projekt** Kreator tworzy dla projektu pakietu VSPackage.
 
 ## <a name="optional-elements"></a>Elementy opcjonalne
  Niektóre elementy VSCT są opcjonalne. Jeśli `Parent` argument nie zostanie określony, Group_Undefined:0 będzie wynikać. Jeśli `Icon` argument nie zostanie określony, zostanie też dorozumianych guidOfficeIcon:msotcidNoIcon. Po zdefiniowaniu klawisza skrótu emulacji, która jest zwykle używana, jest opcjonalne.

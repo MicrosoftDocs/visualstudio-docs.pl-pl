@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b464fd4e8c1748adf50e9997dbbac553288043da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61e71f31ce887c7e1ea9ec57b0aa3f24a45be364
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414281"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Przewodnik: Wstawianie tekstu do dokumentu z okienka akcji
   W tym przewodniku pokazano, jak utworzyć okienka akcji w dokumencie programu Microsoft Office Word. W okienku Akcje zawiera dwie kontrolki, które gromadzenia danych wejściowych, a następnie wyślij tekstu do dokumentu.
@@ -34,7 +34,7 @@ ms.locfileid: "60088525"
 - Wyświetlany w okienku Akcje, gdy aplikacja zostanie otwarta.
 
 > [!NOTE]
->  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
@@ -78,7 +78,7 @@ ms.locfileid: "60088525"
 2. Zaznacz wyraz **nazwa**, bez wybierając znak akapitu i kliknij przycisk **OK**.
 
     > [!NOTE]
-    >  Znak powinien znajdować się poza zakładki. Znaczniki akapitu nie są widoczne w dokumencie, kliknij przycisk **narzędzia** menu wskaż **narzędzi pakietu Microsoft Office Word** a następnie kliknij przycisk **opcje**. Kliknij przycisk **widoku** , a następnie wybierz pozycję **znaczniki akapitów** pole wyboru w **znaczniki formatowania** części **opcje** okno dialogowe.
+    > Znak powinien znajdować się poza zakładki. Znaczniki akapitu nie są widoczne w dokumencie, kliknij przycisk **narzędzia** menu wskaż **narzędzi pakietu Microsoft Office Word** a następnie kliknij przycisk **opcje**. Kliknij przycisk **widoku** , a następnie wybierz pozycję **znaczniki akapitów** pole wyboru w **znaczniki formatowania** części **opcje** okno dialogowe.
 
 3. W **właściwości** oknie zmiany **nazwa** właściwość **Bookmark1** do **showName**.
 

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf0462b4d6aac29c87d71506e3a535f21e2b91a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 717badcc52088568ae348dbb1b712b2202cc7a72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415561"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Instrukcje: Tworzenie niestandardowego tekstu znaczników
 Jeśli chcesz utworzyć znacznika niestandardowego tekstu, aby podkreślić lub organizowanie kodu, należy wykonać następujące czynności:
@@ -41,7 +41,7 @@ Jeśli chcesz utworzyć znacznika niestandardowego tekstu, aby podkreślić lub 
     `<PackageGUID>` Identyfikator GUID pakietu VSPackage implementuje obiektu automatyzacji.
 
    > [!NOTE]
-   >  Ścieżka katalogu głównego **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<wersji >** może zostać zastąpiona przez główny alternatywne po zainicjowaniu powłoki programu Visual Studio, aby uzyskać więcej informacji, zobacz [Przełączniki wiersza polecenia](../extensibility/command-line-switches-visual-studio-sdk.md).
+   > Ścieżka katalogu głównego **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<wersji >** może zostać zastąpiona przez główny alternatywne po zainicjowaniu powłoki programu Visual Studio, aby uzyskać więcej informacji, zobacz [Przełączniki wiersza polecenia](../extensibility/command-line-switches-visual-studio-sdk.md).
 
 2. Utwórz cztery wartości w obszarze **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<wersji > \Text Editor\External znaczniki\\\<MarkerGUID >**
 

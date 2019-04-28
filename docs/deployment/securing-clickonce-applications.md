@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab627b09c1544b69a8834711e51a3bbbdd63e5a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 2b23e10dfd00f4e1b9bde8520ef50aa60cd18b35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58866789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406741"
 ---
 # <a name="secure-clickonce-applications"></a>Zabezpieczanie aplikacji ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje podlegają ograniczenia zabezpieczeń dostępu kodu na platformie .NET Framework, co pomaga ograniczyć dostęp tego kodu do chronionych zasobów i operacji. Dlatego ważne jest, że rozumiesz implikacje zabezpieczenia dostępu kodu, aby zapisać swoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji odpowiednio. W celu ograniczenia dostępu aplikacje mogą używać pełnego zaufania lub stref częściowych, takich jak strefy Internet i Intranet.
@@ -71,7 +71,7 @@ ms.locfileid: "58866789"
  Nigdy nie należy przekazywać argumentów odebranych za pośrednictwem ciągu zapytania do bazy danych lub wiersza polecenia bez sprawdzenia, czy argumenty są bezpieczne. Argumentami niebezpiecznymi są argumenty zawierające znaki ucieczki bazy danych lub wiersza polecenia, które mogłyby umożliwić złośliwemu użytkownikowi „zmuszenie” aplikacji do wykonywania dowolnie wybranych przez niego poleceń.
 
 > [!NOTE]
->  Argumenty ciągu zapytania to jedyny sposób przekazywania argumentów do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji podczas uruchamiania. Nie można przekazywać argumentów do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji z poziomu wiersza polecenia.
+> Argumenty ciągu zapytania to jedyny sposób przekazywania argumentów do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji podczas uruchamiania. Nie można przekazywać argumentów do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji z poziomu wiersza polecenia.
 
 ## <a name="deploying-obfuscated-assemblies"></a>Wdrażanie zestawów zasłoniętych
  Program Visual Studio obejmuje bezpłatną [PreEmptive ochrona — system Dotfuscator Community](../ide/dotfuscator/index.md), którego można użyć do ochrony aplikacji ClickOnce za pomocą środków aktywnej ochrony i zaciemniania kodu.  Aby uzyskać więcej informacji, zobacz [ClickOnce części podręcznika użytkownika system Dotfuscator Community](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html).

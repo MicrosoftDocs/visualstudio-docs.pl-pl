@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7b4d5e914566cc019a3882ed53923f84ecdddf85
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d8239b0ccbedfdb2965d8dc5f7738c50f9548e94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431515"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Instrukcje: Pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie online
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ ms.locfileid: "60069539"
  Dwie następujące procedury przedstawiają sposób użycia [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji, aby uzyskać informacje o parametrach zapytania.  
   
 > [!NOTE]
->  Informacje można przekazać w ciągu zapytania tylko, gdy aplikacja jest półtora przy użyciu protokołu HTTP zamiast przy użyciu udziału plików lub lokalnego systemu plików.  
+> Informacje można przekazać w ciągu zapytania tylko, gdy aplikacja jest półtora przy użyciu protokołu HTTP zamiast przy użyciu udziału plików lub lokalnego systemu plików.  
   
  Pierwszy pokazuje procedury jak Twoje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacja może użyć niewielkim fragmentem kodu do odczytu tych wartości, po uruchomieniu aplikacji.  
   
  Następna procedura przedstawia sposób konfigurowania usługi [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji przy użyciu MageUI.exe, aby akceptował parametry ciągu zapytania. Należy to zrobić, gdy publikujesz aplikację.  
   
 > [!NOTE]
->  Przed wprowadzeniem decyzji, aby włączyć tę funkcję, zobacz sekcję "Zabezpieczenia" w dalszej części tego tematu.  
+> Przed wprowadzeniem decyzji, aby włączyć tę funkcję, zobacz sekcję "Zabezpieczenia" w dalszej części tego tematu.  
   
  Aby uzyskać informacje o sposobie tworzenia [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenie za pomocą Mage.exe lub MageUI.exe, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 > [!NOTE]
->  Począwszy od programu .NET Framework 3.5 z dodatkiem SP1, istnieje możliwość przekazać argumenty wiersza polecenia do trybu offline [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji. Jeśli chcesz podać argumenty do aplikacji, możesz przekazać parametry w pliku skrótu, za pomocą. Rozszerzenie APPREF MS.  
+> Począwszy od programu .NET Framework 3.5 z dodatkiem SP1, istnieje możliwość przekazać argumenty wiersza polecenia do trybu offline [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji. Jeśli chcesz podać argumenty do aplikacji, możesz przekazać parametry w pliku skrótu, za pomocą. Rozszerzenie APPREF MS.  
   
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>Aby uzyskać informacje o parametrach zapytania z aplikacji ClickOnce  
   
@@ -71,7 +71,7 @@ ms.locfileid: "60069539"
 4. Z **pliku** menu, wybierz opcję **Zapisz**.  
   
 > [!NOTE]
->  Alternatywnie można włączyć ciągu zapytania, przekazując [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Wybierz **Zezwalaj na adres URL parametry do przekazania do aplikacji** pola wyboru, które można znaleźć, otwierając **właściwości projektu**, wybierając opcję **Publikuj** kartę, klikając przycisk **Opcje** przycisk, a następnie wybierając **manifesty**.  
+> Alternatywnie można włączyć ciągu zapytania, przekazując [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Wybierz **Zezwalaj na adres URL parametry do przekazania do aplikacji** pola wyboru, które można znaleźć, otwierając **właściwości projektu**, wybierając opcję **Publikuj** kartę, klikając przycisk **Opcje** przycisk, a następnie wybierając **manifesty**.  
   
 ## <a name="robust-programming"></a>Niezawodne programowanie  
  Używając parametrów ciągu zapytania, musisz udzielić szczególną uwagę na jak zainstalować i uaktywnić aplikację. Jeśli Twoja aplikacja jest skonfigurowana do zainstalowania na komputerze użytkownika z sieć Web lub udziału sieciowego, istnieje prawdopodobieństwo, że użytkownik będzie aktywowania aplikacji tylko raz za pomocą adresu URL. Po tym, użytkownik będzie zazwyczaj uaktywnić swoją aplikację przy użyciu skrótu w **Start** menu. W rezultacie aplikacja jest gwarantowane otrzymują argumenty ciągu zapytania tylko raz podczas jego okres istnienia. Jeśli chcesz przechowywać tych argumentów na komputerze użytkownika do użytku w przyszłości, ponosisz odpowiedzialność za przechowywanie ich w bezpieczny sposób.  

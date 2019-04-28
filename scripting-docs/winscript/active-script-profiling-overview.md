@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6152e374aee2eac273e0feca28c068c666e23d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 777d20ecb51b09b282f88dc08464727b9ff2a945
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432976"
 ---
 # <a name="active-script-profiling-overview"></a>Przegląd profilowania aktywnego skryptu
 [Aktywne interfejsy Profiler skryptu](../winscript/reference/active-script-profiler-interfaces.md) Włącz profilowanie aparatu obsługi skryptów. Profilowanie aktywnego skryptu składa się z następujących elementów:  
@@ -35,7 +35,7 @@ ms.locfileid: "60110989"
  Implementuje aparat języka [interfejs IActiveScriptProfilerControl](../winscript/reference/iactivescriptprofilercontrol-interface.md).  
   
 > [!NOTE]
->  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] Aparatu plików wykonywalnych języka sprawdza, czy zmienna środowiskowa JS_PROFILER przy tworzeniu, aby ustalić, czy należy włączyć profilowanie. Jeśli ustawiono tę zmienną do identyfikatora CLSID programu profiler, środowisko uruchomieniowe języka tworzy wystąpienie obiektu COM profiler, za pomocą wartość zmiennej, aby określić, które program profilujący do utworzenia.  
+> [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] Aparatu plików wykonywalnych języka sprawdza, czy zmienna środowiskowa JS_PROFILER przy tworzeniu, aby ustalić, czy należy włączyć profilowanie. Jeśli ustawiono tę zmienną do identyfikatora CLSID programu profiler, środowisko uruchomieniowe języka tworzy wystąpienie obiektu COM profiler, za pomocą wartość zmiennej, aby określić, które program profilujący do utworzenia.  
   
 ## <a name="host"></a>Host  
  Host tworzy aparat języka i zapewnia aparat języka skryptów do wykonania. Jest host inteligentny także kontekstu dokumentu, używany przez debugera i profilera w celu zapewnienia lepszej informacji podczas debugowania i profilowania.  

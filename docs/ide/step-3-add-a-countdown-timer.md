@@ -8,18 +8,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a703c7d4e28dd2287dff301727872b64e40b9ce
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7d99987a16d0e4f6ff67e92fdb900600cd7943a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430768"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Krok 3. Dodawanie czasomierza odliczania
 W trzeciej części tego samouczka dodasz licznik czasu, aby śledzić liczbę sekund, które pozostają uczestnikowi quizu do zakończenia.
 
 > [!NOTE]
->  Ten temat jest częścią serii samouczków na temat podstawowych pojęć kodowania. Aby uzyskać omówienie samouczka, zobacz [samouczek 2: Utwórz quiz matematyczny](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Ten temat jest częścią serii samouczków na temat podstawowych pojęć kodowania. Aby uzyskać omówienie samouczka, zobacz [samouczek 2: Utwórz quiz matematyczny](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-add-a-countdown-timer"></a>Aby dodać minutnik
 
@@ -54,7 +54,7 @@ W trzeciej części tego samouczka dodasz licznik czasu, aby śledzić liczbę s
      Właśnie dodałeś `if else` instrukcję, która wskazuje, jak sprawdzić programy do podejmowania decyzji. `if else` Instrukcji wygląda podobnie do następującej.
 
     > [!NOTE]
-    >  Poniższy przykład jest wyłącznie do celów informacyjnych — nie należy dodawać go do projektu.
+    > Poniższy przykład jest wyłącznie do celów informacyjnych — nie należy dodawać go do projektu.
 
     ```vb
     If (something that your program will check) Then

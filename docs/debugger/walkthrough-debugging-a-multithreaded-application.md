@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d55d4ae23b2fd8bf03e6aa9ad7301531aedcfcac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fddd8efd11d2a3d61f0cff33cb832ebd8a0c5d2a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406940"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Wyświetl wątki w debugerze programu Visual Studio za pomocą okna wątki (C#, Visual Basic, C++)
 W **wątków** okna, możesz sprawdzić i Praca z wątkami w aplikacji, który debugujesz. Aby uzyskać szczegółowe instrukcje dotyczące sposobu używania **wątków** okna, zobacz [instruktażu: Debugowanie za pomocą okna wątki](../debugger/how-to-use-the-threads-window.md).
@@ -85,7 +85,7 @@ W **wątków** okna, możesz sprawdzić i Praca z wątkami w aplikacji, który d
  W kodzie zarządzanym licznik wstrzymany ulega zmianie po użytkownik blokowanie lub odblokowywanie wątków. Jeśli w kodzie zarządzanym można zablokować wątek, jego licznik wstrzymany to 1. Po zablokowaniu wątków w kodzie macierzystym jego licznik wstrzymany ma wartość 0, o ile nie użyto `SuspendThread` wywołania.
 
 > [!NOTE]
->  Podczas debugowania wywołań z kodu natywnego do zarządzanego kodu, kod zarządzany działa w tym samym wątku fizycznym jako kodu natywnego, która nazwała go. Zawieszanie lub zawiesza się Wątek macierzysty również zawiesza się kod zarządzany.
+> Podczas debugowania wywołań z kodu natywnego do zarządzanego kodu, kod zarządzany działa w tym samym wątku fizycznym jako kodu natywnego, która nazwała go. Zawieszanie lub zawiesza się Wątek macierzysty również zawiesza się kod zarządzany.
 
 ### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>Na blokowanie lub odblokowywanie wykonanie wątku
 

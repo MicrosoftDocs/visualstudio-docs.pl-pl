@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c59824594a783ad952a7b15c47ee3f781aba79d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8a29c813a5217e68541fd076eadf62bf54710014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436486"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Zagadnienia dotyczące zabezpieczeń określone dla rozwiązań pakietu Office
   Funkcjach zabezpieczeń zapewnianych przez program Microsoft .NET Framework i Microsoft Office może pomóc chronić swoje rozwiązania pakietu Office na potencjalne zagrożenia. W tym temacie opisano niektóre z tych zagrożeń i zapewnia zalecenia, aby zapewnić ochronę przed nimi. Zawiera także informacje o wpływie ustawienia zabezpieczeń Microsoft Office na rozwiązań pakietu Office.
@@ -74,7 +74,7 @@ ms.locfileid: "60081323"
  [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]
 
 > [!NOTE]
->  Jeśli program Outlook jest używany z programem Exchange, uzyskiwanie wszystkich obiektów programu Outlook z `ThisAddIn.Application` nie gwarantuje, że dodatku narzędzi VSTO dla programów będzie mogli korzystać z całej modelu obiektów programu Outlook. Na przykład jeśli administrator programu Exchange Outlook automatycznie ustawia Odmów wszystkie próby uzyskania dostępu do informacji dotyczących adresów za pomocą modelu obiektów programu Outlook, a następnie program Outlook nie pozwoli na poprzednim przykładzie kodu w celu dostępu do właściwości na, mimo że w przykładzie kodu użyto zaufanej `ThisAddIn.Application` pola.
+> Jeśli program Outlook jest używany z programem Exchange, uzyskiwanie wszystkich obiektów programu Outlook z `ThisAddIn.Application` nie gwarantuje, że dodatku narzędzi VSTO dla programów będzie mogli korzystać z całej modelu obiektów programu Outlook. Na przykład jeśli administrator programu Exchange Outlook automatycznie ustawia Odmów wszystkie próby uzyskania dostępu do informacji dotyczących adresów za pomocą modelu obiektów programu Outlook, a następnie program Outlook nie pozwoli na poprzednim przykładzie kodu w celu dostępu do właściwości na, mimo że w przykładzie kodu użyto zaufanej `ThisAddIn.Application` pola.
 
 ### <a name="specify-which-add-ins-to-trust-when-using-exchange"></a>Określ, które dodatków do sytuacji, gdy program Exchange jest używany
  Gdy program Outlook jest używany z programem Exchange, Administratorzy mogą określić, że niektóre dodatków narzędzi VSTO dla programów może działać bez napotkania strażnik modelu obiektów. Program Outlook dodatków narzędzi VSTO utworzone za pomocą rozwiązań pakietu Office w programie Visual Studio nie jest zaufany. może być tylko zaufane jako grupa.

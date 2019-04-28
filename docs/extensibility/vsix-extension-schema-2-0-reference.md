@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a029345afb8b54c85d35e500e4ada48c02c54ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cf2840c22bcddb9090cb078be6a8ad53d1ca1aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411140"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Odwołanie do schematu 2.0 rozszerzenia VSIX
 Plik manifestu VSIX wdrożenia w tym artykule opisano zawartość pakietu VSIX. Format pliku jest regulowane przez schemat. W wersji 2.0 tego schematu obsługuje dodawanie niestandardowych typów i atrybutów.  Schematu manifestu jest rozszerzalny. Moduł ładujący manifestu ignoruje elementów XML oraz atrybuty, które go nie rozumie.
 
 > [!IMPORTANT]
->  Program Visual Studio 2015 można ładować plików VSIX w formatach programu Visual Studio 2010, Visual Studio 2012 lub Visual Studio 2013.
+> Program Visual Studio 2015 można ładować plików VSIX w formatach programu Visual Studio 2010, Visual Studio 2012 lub Visual Studio 2013.
 
 ## <a name="package-manifest-schema"></a>Schematu manifestu pakietu
  Element główny pliku manifestu XML jest `<PackageManifest>`. Ma jeden atrybut `Version`, która jest wersją format manifestu. W przypadku istotnych zmian do formatu, format wersji zostanie zmieniony. W tym artykule opisano format manifestu w wersji 2.0, określany w manifeście, ustawiając `Version` atrybutu wartość wersji = "w wersji 2.0".

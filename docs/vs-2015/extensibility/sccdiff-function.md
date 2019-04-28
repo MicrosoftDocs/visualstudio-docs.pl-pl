@@ -12,12 +12,12 @@ ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c17064d2d14fe072a4f5215ac06c9f7e38fa8e51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: aa5ea0a269cdbfe678328dc652b4177bdc667b99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432462"
 ---
 # <a name="sccdiff-function"></a>SccDiff, funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ SCCRTN SccDiff(
  Jak zoptymalizować wydajność, wtyczka do kontroli źródła może użyć zamiast na podstawie sumy kontrolnej lub sygnatury czasowej zamiast porównania bajt po bajcie, wymagane przez `SCC_DIFF_CONTENTS`: te rodzaje porównania są oczywiście szybsze, ale mniej niezawodne. Nie wszystkie systemów kontroli źródła może obsługiwać te metody porównania alternatywny, a wtyczka może być konieczne wracać do porównania zawartości. Wtyczek kontroli wszystkie źródła muszą co najmniej obsługiwać porównania zawartości.  
   
 > [!NOTE]
->  Flagi szybkiego różnica wzajemnie się wykluczają. Jest on prawidłowy do przekazania bez flag, ale nie jest prawidłową jednocześnie przekazać więcej niż jeden. `SCC_DIFF_QUICK_DIFF`, która jest maską, który łączy wszystkie flagi mogą służyć do testowania, ale nigdy nie powinien być przekazywany jako parametr.  
+> Flagi szybkiego różnica wzajemnie się wykluczają. Jest on prawidłowy do przekazania bez flag, ale nie jest prawidłową jednocześnie przekazać więcej niż jeden. `SCC_DIFF_QUICK_DIFF`, która jest maską, który łączy wszystkie flagi mogą służyć do testowania, ale nigdy nie powinien być przekazywany jako parametr.  
   
 |`fOption`|Znaczenie|  
 |---------------|-------------|  

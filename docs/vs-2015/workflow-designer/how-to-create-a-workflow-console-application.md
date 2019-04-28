@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 33666c0e5d63d8d4d33d544fcfe18d8c185ce843
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a436027fc4194f762fc4b28545fdf5d4bd3b95b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444614"
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>Instrukcje: Tworzenie aplikacji konsoli przepływu pracy
 [!INCLUDE[wf](../includes/wf-md.md)] Umożliwia tworzenie przepływów pracy na potrzeby wykonywania systemu lub procesów przez ludzi. [!INCLUDE[wfd1](../includes/wfd1-md.md)] Udostępnia na powierzchnię projektową do tworzenia tych przepływów pracy. [!INCLUDE[wfd2](../includes/wfd2-md.md)] Może służyć do tworzenia przepływów pracy z poziomu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lub może być zintegrowane do innych aplikacji, których ponowne hostowanie projektanta.  
@@ -40,7 +40,7 @@ ms.locfileid: "60044355"
 7. W **rozwiązania** wprowadź nazwę dla nowego rozwiązania. Kliknij przycisk **OK** do tworzenia aplikacji.  
   
     > [!NOTE]
-    >  Jeśli chcesz dodać aplikację konsoli przepływu pracy do istniejącego rozwiązania, otwórz rozwiązanie w [!INCLUDE[vs2010](../includes/vs2010-md.md)], kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań**i wybierz **Dodaj**, następnie  **Nowy projekt...** Aby otworzyć **nowy projekt** okno dialogowe. Należy postępować zgodnie z powyższym opisem w tej procedurze.  
+    > Jeśli chcesz dodać aplikację konsoli przepływu pracy do istniejącego rozwiązania, otwórz rozwiązanie w [!INCLUDE[vs2010](../includes/vs2010-md.md)], kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań**i wybierz **Dodaj**, następnie  **Nowy projekt...** Aby otworzyć **nowy projekt** okno dialogowe. Należy postępować zgodnie z powyższym opisem w tej procedurze.  
   
 8. Szablon projektu umożliwia utworzenie definicji przepływu pracy w XAML i definicji aplikacji konsoli jest w kodzie źródłowym. [!INCLUDE[wfd2](../includes/wfd2-md.md)] Otwiera i wyświetla obszar roboczy został utworzony przepływ pracy.  
   

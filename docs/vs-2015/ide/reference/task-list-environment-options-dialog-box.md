@@ -24,12 +24,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e4010d474c2f1ab1997b372fa551e168fe618021
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0d24556be75547a4944ad1faca47c4545f8812ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410054"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Lista zadań, środowisko, opcje — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Ta strona opcji pozwala na dodawanie, usuwanie i zmienianie tokenami komentarzy,
  Po wybraniu wyświetlane jest okno wiadomości, zawsze wtedy, gdy zadanie użytkownika są usuwane z **listy zadań**, co pozwala potwierdzić usunięcie. Ta opcja jest domyślnie wybrana.  
   
 > [!NOTE]
->  Aby usunąć komentarza do zadania, użyj linku, aby znaleźć komentarz, a następnie usuń go z kodu.  
+> Aby usunąć komentarza do zadania, użyj linku, aby znaleźć komentarz, a następnie usuń go z kodu.  
   
  Pokazuj tylko nazwy plików  
  Po wybraniu **pliku** kolumny **listy zadań** wyświetla tylko nazwy plików, które można edytować, nie ich pełnej ścieżki.  
@@ -53,7 +53,7 @@ Ta strona opcji pozwala na dodawanie, usuwanie i zmienianie tokenami komentarzy,
  Wyświetla listę tokenów i umożliwia dodawanie lub usuwanie tokeny niestandardowe. Tokeny komentarza to wielkości liter w Visual C# i Visual C++, ale nie w języku Visual Basic.  
   
 > [!NOTE]
->  Jeśli nie wpiszesz żądanego tokenu dokładnie tak, jak pojawiają się one w **lista tokenów**, komentarz zadania nie będą wyświetlane w **listy zadań**.  
+> Jeśli nie wpiszesz żądanego tokenu dokładnie tak, jak pojawiają się one w **lista tokenów**, komentarz zadania nie będą wyświetlane w **listy zadań**.  
   
  Priorytet  
  Ustawia priorytet zadania korzystające z wybranego tokenu. Komentarze do zadań, które zaczynają się od tego tokenu są automatycznie przypisywane wyznaczonym priorytet w **listy zadań**.  
@@ -71,7 +71,7 @@ Ta strona opcji pozwala na dodawanie, usuwanie i zmienianie tokenami komentarzy,
  Kliknij, aby wprowadzić zmiany do istniejącego tokenu przy użyciu wartościami podanymi w **nazwa** i **priorytet** pola.  
   
 > [!NOTE]
->  Nie można zmienić ani usunąć domyślny token komentarz, ale można zmienić jego priorytet.  
+> Nie można zmienić ani usunąć domyślny token komentarz, ale można zmienić jego priorytet.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Korzystanie z listy zadań](../../ide/using-the-task-list.md)   

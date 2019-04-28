@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64ebe3bc2d4d406d6144305b368d37613aef0158
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d89c3181757a0ed95b818ba2e73197511bf06e4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434248"
 ---
 # <a name="troubleshooting-vspackages"></a>Rozwiązywanie problemów z pakietami VSPackage
 Poniżej przedstawiono typowe problemy, które może być za pomocą Twojego pakietu VSPackage i porady, aby rozwiązać problemy.
@@ -46,7 +46,7 @@ Poniżej przedstawiono typowe problemy, które może być za pomocą Twojego pak
 4. Otwórz **dane wyjściowe** okno wystąpienia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , nie może załadować pakietu VSPackage. Informacji na temat przyczyn nieudanego pakietu VSPackage załadować mogą być wyświetlane w tym oknie.
 
    > [!NOTE]
-   >  Jeśli rozpoczynasz wersji doświadczalnej [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE), sprawdź **dane wyjściowe** okna obie wersje.
+   > Jeśli rozpoczynasz wersji doświadczalnej [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE), sprawdź **dane wyjściowe** okna obie wersje.
 
 5. Sprawdź dziennik aktywności.
 
@@ -85,7 +85,7 @@ Poniżej przedstawiono typowe problemy, które może być za pomocą Twojego pak
     4. Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie** lub naciśnij klawisz F5.
 
         > [!NOTE]
-        >  Jeśli projekt jest debugowany, utworzyć lub załadować istniejące wystąpienie programu projekt teraz.
+        > Jeśli projekt jest debugowany, utworzyć lub załadować istniejące wystąpienie programu projekt teraz.
 
 2. Korzystanie z dziennika aktywności.
 

@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7987b4da158572d22d609b095877f6d125512c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d5974bc962faf439af8de5d50bf51bad3d824647
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439088"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>Instrukcje: Wyszukiwanie wątku w widoku wątków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Możesz wyszukać określonego wątku w widoku wątków, za pomocą ciągu Ident
 4. Wyczyść wszystkie pola, dla których nie chcesz określać wartości.  
   
    > [!TIP]
-   >  Aby znaleźć wszystkie wątki, które są własnością modułu, należy wyczyścić **wątku** pole tekstowe i wpisz moduł nazwy **modułu** pole. Następnie użyj **Znajdź następny** kontynuować wyszukiwanie wątków.  
+   > Aby znaleźć wszystkie wątki, które są własnością modułu, należy wyczyścić **wątku** pole tekstowe i wpisz moduł nazwy **modułu** pole. Następnie użyj **Znajdź następny** kontynuować wyszukiwanie wątków.  
   
 5. Wybierz **się** lub **dół** dla początkowej kierunek wyszukiwania.  
   

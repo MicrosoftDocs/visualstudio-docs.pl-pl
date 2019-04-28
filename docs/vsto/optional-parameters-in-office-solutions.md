@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d6baf0c32d087ea804bb8e221745337c73b64114
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e8684ad4b9429a5499660ef4ad6fdd8133dccaa5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442415"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Parametry opcjonalne w rozwiązaniach pakietu Office
   Wiele metod w modele obiektów w aplikacji pakietu Microsoft Office akceptuje następujące parametry opcjonalne. Jeśli używasz języka Visual Basic do opracowywania rozwiązań pakietu Office w programie Visual Studio, nie masz do przekazania wartości dla parametrów opcjonalnych, ponieważ wartości domyślne są automatycznie używane dla każdego brakującego parametru. W większości przypadków można również pominąć parametry opcjonalne w projektach Visual C#. Jednak nie można pominąć opcjonalne **ref** parametry `ThisDocument` klas w projektach programu Word w poziomie dokumentu.
@@ -33,7 +33,7 @@ ms.locfileid: "56639271"
  Aby uzyskać więcej informacji na temat pracy z opcjonalnymi parametrami w projektach Visual C# i Visual Basic, zobacz [nazwane i opcjonalne argumenty &#40;C&#35; Podręcznik programowania&#41; ](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments) i [ &#40;Języka Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters).
 
 > [!NOTE]
->  We wcześniejszych wersjach programu Visual Studio należy przekazać wartość dla każdego opcjonalnego parametru, w projektach Visual C#. Dla wygody te projekty zawierają zmienna globalna o nazwie `missing` , można przekazać do parametru opcjonalnego użyć wartości domyślnej parametru. Projekty Visual C# dla pakietu Office w programie Visual Studio nadal zawierają `missing` zmienną, ale zwykle nie trzeba używać go podczas opracowywania rozwiązań pakietu Office w [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], z wyjątkiem sytuacji, gdy wywołujesz metody z opcjonalnymi **ref** Parametry w `ThisDocument` klasy w projektów na poziomie dokumentu dla programu Word.
+> We wcześniejszych wersjach programu Visual Studio należy przekazać wartość dla każdego opcjonalnego parametru, w projektach Visual C#. Dla wygody te projekty zawierają zmienna globalna o nazwie `missing` , można przekazać do parametru opcjonalnego użyć wartości domyślnej parametru. Projekty Visual C# dla pakietu Office w programie Visual Studio nadal zawierają `missing` zmienną, ale zwykle nie trzeba używać go podczas opracowywania rozwiązań pakietu Office w [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], z wyjątkiem sytuacji, gdy wywołujesz metody z opcjonalnymi **ref** Parametry w `ThisDocument` klasy w projektów na poziomie dokumentu dla programu Word.
 
 ## <a name="example-in-excel"></a>Przykład w programie Excel
  <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> Metoda ma wiele parametrów opcjonalnych. Można określić wartości dla niektórych parametrów i zaakceptuj wartość domyślną innych, jak pokazano w poniższym przykładzie kodu. W tym przykładzie wymaga projektów dokumentów z arkusza klasę o nazwie `Sheet1`.

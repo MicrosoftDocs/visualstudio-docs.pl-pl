@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: brgeorge
-ms.openlocfilehash: c09419d1294d51fe0b566acc649bc3f9612acfca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 421ff85831bb611b655de2bc35f01423b61921a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436570"
 ---
 # <a name="shared-colors"></a>Udostępnione kolory
 Tutaj wstaw wprowadzenie.  
@@ -31,7 +31,7 @@ Tutaj wstaw wprowadzenie.
 - **Użyj kolorów kontrolki, które są odpowiednie dla ich lokalizacji.** W określonych stanach niektóre formanty programu Visual Studio nie mają osobne obramowania i kolory tła. Zamiast tego przejmą ich te kolory z powierzchni spodem. Upewnij się, zawsze używaj tokenów nazwy, które są odpowiednie dla lokalizacji, w którym umieszcza się kontrolka.  
   
 > [!IMPORTANT]
->  Nie używaj tokenów w kategorii "Stronę startową" lub "Jabłecznik"!  
+> Nie używaj tokenów w kategorii "Stronę startową" lub "Jabłecznik"!  
   
 ### <a name="command-structures"></a>Polecenie struktury  
   
@@ -240,7 +240,7 @@ Nie używaj...
 ##### <a name="BKMK_CommandComboBox"></a> Pole kombi  
   
 > [!IMPORTANT]
->  Pola kombi są podobne do list rozwijanych, ale zawierają region tekst do edycji. Jeśli z listy rozwijanej nie obejmuje regionu tekst do edycji, należy użyć tokenów kolor, znajdującym się [listy rozwijanej](../misc/shared-colors.md#BKMK_CommandDropDown).  
+> Pola kombi są podobne do list rozwijanych, ale zawierają region tekst do edycji. Jeśli z listy rozwijanej nie obejmuje regionu tekst do edycji, należy użyć tokenów kolor, znajdującym się [listy rozwijanej](../misc/shared-colors.md#BKMK_CommandDropDown).  
   
  ![Pole kombi poprawek](../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 029_ComboBoxRedline")  
   
@@ -318,7 +318,7 @@ Nie używaj...
 ##### <a name="BKMK_CommandDropDown"></a> Lista rozwijana  
   
 > [!IMPORTANT]
->  Listy rozwijane są podobne do pola kombi, ale brak regionów tekst do edycji. Jeśli z listy rozwijanej zawiera tekst do edycji regionu, należy użyć tokenów kolor, znajdującym się [pola kombi](../misc/shared-colors.md#BKMK_CommandComboBox).  
+> Listy rozwijane są podobne do pola kombi, ale brak regionów tekst do edycji. Jeśli z listy rozwijanej zawiera tekst do edycji regionu, należy użyć tokenów kolor, znajdującym się [pola kombi](../misc/shared-colors.md#BKMK_CommandComboBox).  
   
  ![Upuść&#45;poprawek w dół](../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")  
   

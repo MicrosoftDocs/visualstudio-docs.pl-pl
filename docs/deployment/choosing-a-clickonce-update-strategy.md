@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edba26d951afb0ba2215af4c0a0eac09b1c31513
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: cbddf759841dbe9626868d6c00f42a0849d70520
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406819"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>Wybieranie strategii aktualizacji ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] może dostarczać automatyczne aktualizacje aplikacji. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji co jakiś czas odczytuje swój plik manifestu wdrożenia, aby zobaczyć, czy są dostępne aktualizacje do aplikacji. Jeśli są dostępne, jest pobierana i uruchamiana nowa wersja aplikacji. W celu zwiększenia wydajności pobierane są tylko pliki, które uległy zmianie.
@@ -31,10 +31,10 @@ ms.locfileid: "56608499"
  Ponadto można określić, jak często aplikacja będzie sprawdzać, czy są dostępne aplikacje, oraz że aktualizacje są wymagane.
 
 > [!NOTE]
->  Aktualizacje aplikacji wymagają łączności sieciowej. W przypadku braku połączenia sieciowego aplikacja zostanie uruchomiona bez sprawdzania, czy są dostępne aktualizacje, niezależnie od wybranej strategii aktualizacji.
+> Aktualizacje aplikacji wymagają łączności sieciowej. W przypadku braku połączenia sieciowego aplikacja zostanie uruchomiona bez sprawdzania, czy są dostępne aktualizacje, niezależnie od wybranej strategii aktualizacji.
 
 > [!NOTE]
->  W .NET Framework 2.0 i .NET Framework 3.0 dowolny czas Aplikacja sprawdza, czy aktualizacje, przed lub po uruchomieniu lub za pomocą \<xref:System.Deployment.Application > interfejsy API, należy ustawić `deploymentProvider` w manifeście wdrożenia. `deploymentProvider` Odnosi się element w programie Visual Studio do **zaktualizować lokalizację** na **aktualizacje** okna dialogowego **Publikuj** kartę. Ta reguła przestała obowiązywać w programie .NET Framework 3.5. Aby uzyskać więcej informacji, zobacz [wdrażania ClickOnce aplikacji do testowania i obsługi serwerów produkcyjnych bez Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
+> W .NET Framework 2.0 i .NET Framework 3.0 dowolny czas Aplikacja sprawdza, czy aktualizacje, przed lub po uruchomieniu lub za pomocą \<xref:System.Deployment.Application > interfejsy API, należy ustawić `deploymentProvider` w manifeście wdrożenia. `deploymentProvider` Odnosi się element w programie Visual Studio do **zaktualizować lokalizację** na **aktualizacje** okna dialogowego **Publikuj** kartę. Ta reguła przestała obowiązywać w programie .NET Framework 3.5. Aby uzyskać więcej informacji, zobacz [wdrażania ClickOnce aplikacji do testowania i obsługi serwerów produkcyjnych bez Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
 
 ## <a name="check-for-updates-after-application-startup"></a>Sprawdź dostępność aktualizacji po uruchomieniu aplikacji
  Gdy jest używana ta strategia, aplikacja będzie podejmować próby zlokalizowania i odczytania pliku manifestu wdrożenia w tle, podczas gdy inne jej funkcje będą normalnie działać. Jeśli będzie dostępna aktualizacja, po następnym uruchomieniu aplikacji użytkownik będzie monitowany o pobranie i zainstalowanie aktualizacji.
@@ -76,7 +76,7 @@ ms.locfileid: "56608499"
  Możliwe są sytuacje, w których autor aplikacji będzie wymagał, aby użytkownicy używali zaktualizowanej wersji aplikacji. Na przykład może to być spowodowane wprowadzeniem zmian w zasobie zewnętrznym, takim jak usługa sieci Web, które uniemożliwią poprawne działanie wcześniejszych wersji aplikacji. W takim przypadku należy oznaczyć aktualizację jako wymaganą i uniemożliwić użytkownikom uruchamianie wcześniejszych wersji.
 
 > [!NOTE]
->  Mimo że można wymagać aktualizacji, używając innych strategii aktualizacji, sprawdzanie **przed uruchomieniem aplikacji** jest jedynym sposobem zagwarantowania, że nie można uruchomić starszej wersji. Gdy podczas uruchamiania zostanie wykryta obowiązkowa aktualizacja, użytkownik będzie musiał zaakceptować aktualizację lub zamknąć aplikację.
+> Mimo że można wymagać aktualizacji, używając innych strategii aktualizacji, sprawdzanie **przed uruchomieniem aplikacji** jest jedynym sposobem zagwarantowania, że nie można uruchomić starszej wersji. Gdy podczas uruchamiania zostanie wykryta obowiązkowa aktualizacja, użytkownik będzie musiał zaakceptować aktualizację lub zamknąć aplikację.
 
  Aby oznaczyć aktualizację jako wymagane, kliknij przycisk **określanie minimalnej wymaganej wersji tej aplikacji** w **aplikacja aktualizuje** okna dialogowego pole, a następnie określ wersję publikacji (**główna**, **Pomocnicza**, **kompilacji**, **poprawki**), która określa najniższy numer wersji aplikacji, którą można zainstalować.
 

@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 15aedcc3-c79a-460b-b620-43223f1ae81e
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: d8e2bbf51aa6266411558e91f3c17905d0c8605c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 75f7cb153a976614ff790095141a820af80b5834
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422754"
 ---
 # <a name="managed-package-framework-classes"></a>Zarządzane klasy Framework pakietu
 Pakiet zarządzanych klas framework (MPF) może służyć do tworzenia pakietów VSPackage przy użyciu kodu zarządzanego. Zapewniają one domyślnej implementacji dla wielu interfejsów pakietu VSPackage. Ukrywając szczegółów implementacji i złożoności MPF pozwala na tworzenie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integracji produktów za pomocą minimalnej ilości kodu.  
   
 > [!WARNING]
->  Większość zestawów zawierających klasy środowiska pakietu zarządzanego są dostarczane za pomocą programu Visual Studio SDK. Możesz pobrać kod źródłowy dla zarządzanych w pakiecie struktury dla projektów w [zarządzanego środowiska pakietu dla projektów](http://mpfproj11.codeplex.com/).  
+> Większość zestawów zawierających klasy środowiska pakietu zarządzanego są dostarczane za pomocą programu Visual Studio SDK. Możesz pobrać kod źródłowy dla zarządzanych w pakiecie struktury dla projektów w [zarządzanego środowiska pakietu dla projektów](http://mpfproj11.codeplex.com/).  
   
 ## <a name="mpf-namespaces"></a>Przestrzenie nazw MPF  
  W poniższej tabeli wymieniono MPF przestrzenie nazw, dostarczone przez [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  

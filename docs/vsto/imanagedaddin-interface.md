@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed55c42211222ca94587b4358bb904f9637cb3f4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 320b20fa40250ca47dd414b362059e152eba2c3b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420992"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin — interfejs
   Implementowanie imanagedaddin — interfejs do tworzenia składnika, który ładuje zarządzanych dodatków narzędzi VSTO. Ten interfejs został dodany w Microsoft Office system 2007.
@@ -82,7 +82,7 @@ interface IManagedAddin : IUnknown
  Aplikacje Microsoft Office Użyj tego identyfikatora CLSID, aby utworzyć obiekt COM, który implementuje imanagedaddin —.
 
 > [!CAUTION]
->  Ten identyfikator CLSID jest również używany przez *VSTOLoader.dll* w [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. W związku z tym, jeśli używasz imanagedaddin — do tworzenia własnych dodatku narzędzi VSTO programu ładującego i składnika środowiska uruchomieniowego, nie można wdrożyć składnika na komputerach, na których działają dodatków narzędzi VSTO dla programów, które zależą od [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+> Ten identyfikator CLSID jest również używany przez *VSTOLoader.dll* w [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. W związku z tym, jeśli używasz imanagedaddin — do tworzenia własnych dodatku narzędzi VSTO programu ładującego i składnika środowiska uruchomieniowego, nie można wdrożyć składnika na komputerach, na których działają dodatków narzędzi VSTO dla programów, które zależą od [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
 ## <a name="see-also"></a>Zobacz także
 - [Niezarządzany wykaz interfejsów API &#40;programowanie Office w Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)

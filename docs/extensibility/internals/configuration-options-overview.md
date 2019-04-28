@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ce45aea2f39751822a3dda6f388bd2d8095775
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 791c50e6839190fa3700c335896f24f0714a64bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415153"
 ---
 # <a name="configuration-options-overview"></a>Omówienie opcji konfiguracji
 Projekty w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] może obsługiwać wiele konfiguracji, które może być kompilowana, debugowania, wykonywania i/lub wdrożone. Konfiguracja jest opisane nazwany zestaw właściwości, zwykle przełączniki kompilatora i lokalizacje plików typu kompilacji. Domyślnie nowe rozwiązania zawiera dwie konfiguracje *debugowania* i *wersji*. Te konfiguracje mogą być stosowane przy użyciu ustawień domyślnych lub zmodyfikowane w celu spełnienia określonych wymagań rozwiązania lub projektu. Niektóre pakiety można tworzyć na dwa sposoby: jako edytora ActiveX lub jako składnik w miejscu. Projekty nie trzeba jednak obsługuje wiele konfiguracji. Jeśli jest dostępna tylko w jednej konfiguracji, że konfiguracja jest mapowany do wszystkich konfiguracji rozwiązania.
@@ -36,7 +36,7 @@ Projekty w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] może ob
 |*MyConfig*|Brak|\<Ustawienia MyConfig Win64 >|
 
 > [!NOTE]
->  Nie można utworzyć *MyConfig* konfiguracji rozwiązania, który nie obejmuje platformy Win32, chyba, że celem projektu nie obsługuje systemu Win32.
+> Nie można utworzyć *MyConfig* konfiguracji rozwiązania, który nie obejmuje platformy Win32, chyba, że celem projektu nie obsługuje systemu Win32.
 
  Zmiana aktywnej konfiguracji rozwiązania wybiera zestaw konfiguracje projektu, które jest wbudowane, uruchamiania, debugowania lub wdrożone w ramach tego rozwiązania. Na przykład, jeśli zmienisz konfigurację aktywngo rozwiązania z *wersji* do *debugowania*, wszystkie projekty w ramach tego rozwiązania są automatycznie tworzone za pomocą konfiguracji projektów w Konfiguracja debugowania rozwiązania. Konfiguracje projektów są również nazywane *debugowania* , chyba że użytkownik wprowadził ręczne zmiany w środowisku programu Configuration Manager.
 

@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 092c07e9aa5f2999bcf3a28977151878123f6bfc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bba638a595a01f17e4b7e4f8269a69cb6e466a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043649"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430491"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Dodawanie stereotypów do elementów modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,14 +44,14 @@ Możesz dodać stereotyp modelu UML, aby dodać adnotacje ją i udostępniać sp
 1. Kliknij prawym przyciskiem myszy element modelu lub relacji, na diagramie lub w **Eksploratora modelu UML**, a następnie kliknij przycisk **właściwości**.  
   
     > [!NOTE]
-    >  Aby dodać ten sam Stereotypy do kilku elementów, można wybrać wiele elementów i kliknij prawym przyciskiem myszy jeden z nich.  
+    > Aby dodać ten sam Stereotypy do kilku elementów, można wybrać wiele elementów i kliknij prawym przyciskiem myszy jeden z nich.  
   
 2. Kliknij przycisk **Stereotypy** właściwości i wybierz pozycję stereotypów, które chcesz zastosować.  
   
      Wybrane Stereotypy pojawiają się ostrokątnego «» w element modelu, w przypadku większości elementów i relacji.  
   
     > [!NOTE]
-    >  Jeśli nie widzisz **Stereotypy** właściwości, lub jeśli nie ma stereotyp ma, upewnij się, że element modelu znajduje się wewnątrz pakietu lub modelu, do którego został połączony odpowiedni profil.  
+    > Jeśli nie widzisz **Stereotypy** właściwości, lub jeśli nie ma stereotyp ma, upewnij się, że element modelu znajduje się wewnątrz pakietu lub modelu, do którego został połączony odpowiedni profil.  
   
 3. Niektóre Stereotypy umożliwiają ustawienie wartości dodatkowe właściwości dla elementu modelu. Aby wyświetlić te właściwości, rozwiń węzeł **Stereotypy** właściwości.  
   

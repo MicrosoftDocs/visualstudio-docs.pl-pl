@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bdd39b0ffa59342df669fa619ea5a86a41cef79b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ec01b49ca61fcf295884deafa280c8ee33a2b4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437441"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Dostosowywanie wstążki do InfoPath
   Podczas dostosowywania wstążki w programie Microsoft InfoPath pakietu Office, należy rozważyć, gdzie Twoje niestandardowa Wstążka pojawią się w aplikacji. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] może wyświetlać wstążki w trzech następujących rodzajów InfoPath aplikacji systemu windows:
@@ -36,7 +36,7 @@ ms.locfileid: "56602238"
   Okno podglądu wydruku umożliwia projektantów i użytkowników wyświetlić podgląd strony formularza lub szablonu formularza, przed ich drukowanie.
 
 > [!NOTE]
->  **AddIns** karta nie pojawi się w oknie Podgląd wydruku. Jeśli chcesz, aby niestandardowej karty pojawią się w oknie Podgląd wydruku, upewnij się, że **OfficeId** nie ustawiono właściwości karty **TabAddIns**.
+> **AddIns** karta nie pojawi się w oknie Podgląd wydruku. Jeśli chcesz, aby niestandardowej karty pojawią się w oknie Podgląd wydruku, upewnij się, że **OfficeId** nie ustawiono właściwości karty **TabAddIns**.
 
  Należy określić typ wstążki każdego okna, w którym chcesz Wstążkę w taki sposób, w celu są wyświetlane.
 

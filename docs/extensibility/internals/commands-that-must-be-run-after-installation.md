@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d336e4a65178ff09f5db01dffeb5bedd3b5b946e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 76960ae9ffce9cc43510ae1ffd34b8350d58214c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418708"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Polecenia uruchamiane po zakończeniu instalacji
 W przypadku wdrożenia rozszerzenia w ramach *.msi* pliku, należy uruchomić **devenv/Setup** jako część instalacji w kolejności dla programu Visual Studio odnaleźć rozszerzeń.
 
 > [!NOTE]
->  Informacje przedstawione w tym temacie mają zastosowanie do wyszukiwania *devenv.exe* za pomocą programu Visual Studio 2008 i starszych wersji. Aby uzyskać informacje na temat odnajdywania *devenv.exe* przy użyciu nowszej wersji programu Visual Studio, zobacz [wykrywanie wymagań systemowych](../../extensibility/internals/detecting-system-requirements.md).
+> Informacje przedstawione w tym temacie mają zastosowanie do wyszukiwania *devenv.exe* za pomocą programu Visual Studio 2008 i starszych wersji. Aby uzyskać informacje na temat odnajdywania *devenv.exe* przy użyciu nowszej wersji programu Visual Studio, zobacz [wykrywanie wymagań systemowych](../../extensibility/internals/detecting-system-requirements.md).
 
 ## <a name="find-devenvexe"></a>Znajdź devenv.exe
  Możesz znaleźć, każda wersja *devenv.exe* z rejestru wartości [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zapisu pliki instalacyjne, za pomocą tabeli RegLocator i AppSearch powoduje niepoprawne obcięcie tabel do przechowywania wartości rejestru jako właściwości. Aby uzyskać więcej informacji, zobacz [wykrywanie wymagań systemowych](../../extensibility/internals/detecting-system-requirements.md).
@@ -58,7 +58,7 @@ W przypadku wdrożenia rozszerzenia w ramach *.msi* pliku, należy uruchomić **
 
 ### <a name="customaction-table-rows-to-run-devenvexe"></a>Akcja niestandardowa wiersze tabeli, aby uruchomić devenv.exe
 
-|Akcja|Typ|Źródło|Cel|
+|Akcja|Typ|Source|Cel|
 |------------|----------|------------|------------|
 |CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|
 |CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|
@@ -68,7 +68,7 @@ W przypadku wdrożenia rozszerzenia w ramach *.msi* pliku, należy uruchomić **
  Akcje niestandardowe musi zostać utworzona do tabeli InstallExecuteSequence, aby zaplanować ich wykonanie w trakcie instalacji. Zapobiegaj akcji niestandardowej z są uruchamiane, czy za pomocą odpowiednich właściwości w każdym wierszu w kolumnie warunek wersję [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nie jest zainstalowany w systemie.
 
 > [!NOTE]
->  Właściwości zwracające wartość null, być `False` przypadku użycia w warunkach.
+> Właściwości zwracające wartość null, być `False` przypadku użycia w warunkach.
 
  Wartość kolumny sekwencji dla każdej akcji niestandardowej jest zależny od innych wartości sekwencji do pakietu Instalatora Windows. Sekwencja wartości powinny być tak, aby *devenv.exe* akcje niestandardowe, Uruchom jako najbliżej bezpośrednio przed działań standardowych InstallFinalize.
 

@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 82f3d4a3ae9bc587fef038186afe9faef880571c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 971ca4e94f28016335483a03f4b0121de587f00d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439954"
 ---
 # <a name="rename-refactoring-c"></a>Refaktoryzacja zmiany nazwy (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60114735"
 **Zmień nazwę** jest funkcją refaktoryzacji w programie Visual Studio zintegrowane środowisko programistyczne (IDE), która zapewnia łatwy sposób można zmienić nazwy identyfikatorów dla kodu symbole, takie jak pola, zmienne lokalne, metody, przestrzenie nazw, właściwości i typów. **Zmień nazwę** może służyć do zmiany nazwy w komentarzach, a także w ciągach oraz zmienić deklaracje i wywołania identyfikatora.  
   
 > [!NOTE]
->  Korzystając z kontroli źródła dla programu Visual Studio, Pobierz najnowszą wersję źródła, przed podjęciem próby wykonania Refaktoryzacja zmiany nazwy.  
+> Korzystając z kontroli źródła dla programu Visual Studio, Pobierz najnowszą wersję źródła, przed podjęciem próby wykonania Refaktoryzacja zmiany nazwy.  
   
  Refaktoryzacja zmiany nazwy jest dostępna w następujących funkcji programu Visual Studio:  
   
@@ -116,7 +116,7 @@ ms.locfileid: "60114735"
 2. W deklaracji pod kątem `MethodB`, wpisz lub backspace za pośrednictwem identyfikatora metody. Poniżej tego identyfikatora, zostanie wyświetlony monit z tagu inteligentnego.  
   
     > [!NOTE]
-    >  Można wywołać tylko przy użyciu tagów inteligentnych na deklarację identyfikatora Refaktoryzacja zmiany nazwy.  
+    > Można wywołać tylko przy użyciu tagów inteligentnych na deklarację identyfikatora Refaktoryzacja zmiany nazwy.  
   
 3. Wpisz skrót klawiaturowy, SHIFT + ALT + F10, a następnie naciśnij klawisz strzałki w dół, aby wyświetlić menu tagu inteligentnego.  
   
@@ -144,7 +144,7 @@ ms.locfileid: "60114735"
  Jeśli **Zmień nazwę przeciążenia** jest zaznaczona, zmienia nazwę aparatu zrefaktoryzuj `Derived.Method(int i)` ponieważ przeciąża `Derived.Method()`, `Base.Method(int i)` ponieważ zostanie on przesłonięty przez `Derived.Method(int i)`, i `Base.Method()` ponieważ przeciążenia `Base.Method(int i)`.  
   
 > [!NOTE]
->  Po zmianie nazwy elementu członkowskiego, która została zdefiniowana w zestawie odwołania, okno dialogowe wyjaśnia, że zmiana nazwy spowoduje błędy kompilacji.  
+> Po zmianie nazwy elementu członkowskiego, która została zdefiniowana w zestawie odwołania, okno dialogowe wyjaśnia, że zmiana nazwy spowoduje błędy kompilacji.  
   
 ## <a name="renaming-properties-of-anonymous-types"></a>Zmiana nazwy właściwości anonimowych typów  
  Po zmianie nazwy właściwości anonimowych typów operacji zmiany nazwy będzie propagowany do właściwości na inne typy anonimowe, które mają te same właściwości. Poniższe przykłady pokazują to zachowanie.  

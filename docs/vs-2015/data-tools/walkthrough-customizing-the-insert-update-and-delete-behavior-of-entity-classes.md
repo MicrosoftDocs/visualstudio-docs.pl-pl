@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df77c65d116bf0e44b700d15d0b810e9adf04c78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a753ac6691e419267fdca34ed5e78a9a5b3cfdd3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424799"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Przewodnik: Dostosowywanie wstawiania, aktualizowania i usuwania zachowanie klas jednostek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "60112120"
 2. Nadaj projektowi nazwę **UpdatingwithSProcsWalkthrough**.  
   
     > [!NOTE]
-    >  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Jest obsługiwana w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] i projektów języka C#. W związku z tym Utwórz nowy projekt w jeden z tych języków.  
+    > [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Jest obsługiwana w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] i projektów języka C#. W związku z tym Utwórz nowy projekt w jeden z tych języków.  
   
 3. Kliknij przycisk **aplikacja interfejsu Windows Forms** szablon i kliknij przycisk **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
@@ -89,7 +89,7 @@ ms.locfileid: "60112120"
      Klasa jednostki o nazwie **klienta** zostanie utworzony. Posiada właściwości, które odnoszą się do kolumn w tabeli Customers. Klasa jednostki nosi nazwę **klienta** (nie **klientów**), ponieważ reprezentuje on jednego klienta z tabeli Customers.  
   
     > [!NOTE]
-    >  Zmiana nazwy jest to *pluralizacja*. Można je włączyć lub wyłączyć [okno dialogowe Opcje](../ide/reference/options-dialog-box-visual-studio.md). Aby uzyskać więcej informacji, zobacz [jak: Włącz pluralizacja włączać i wyłączać (O/R Designer)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).  
+    > Zmiana nazwy jest to *pluralizacja*. Można je włączyć lub wyłączyć [okno dialogowe Opcje](../ide/reference/options-dialog-box-visual-studio.md). Aby uzyskać więcej informacji, zobacz [jak: Włącz pluralizacja włączać i wyłączać (O/R Designer)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).  
   
 3. Na **kompilacji** menu, kliknij przycisk **kompilacji UpdatingwithSProcsWalkthrough** do skompilowania projektu.  
   
@@ -102,7 +102,7 @@ ms.locfileid: "60112120"
 7. Rozwiń **UpdatingwithSProcsWalkthrough** węzła i Znajdź i zaznacz **klienta** klasy.  
   
     > [!NOTE]
-    >  Jeśli **klienta** klasy nie jest dostępna, Anuluj kreatora, skompiluj projekt i uruchom ponownie kreatora.  
+    > Jeśli **klienta** klasy nie jest dostępna, Anuluj kreatora, skompiluj projekt i uruchom ponownie kreatora.  
   
 8. Kliknij przycisk **Zakończ** Utwórz źródło danych i dodać **klienta** klasy jednostki **źródeł danych** okna.  
   
@@ -116,7 +116,7 @@ ms.locfileid: "60112120"
 2. Z **źródeł danych** okna, przeciągnij **klienta** węzła na formularz Form1.  
   
     > [!NOTE]
-    >  Aby wyświetlić **źródeł danych** okna, kliknij przycisk **Pokaż źródła danych** na **danych** menu.  
+    > Aby wyświetlić **źródeł danych** okna, kliknij przycisk **Pokaż źródła danych** na **danych** menu.  
   
 3. Otwórz formularz Form1 w edytorze kodu.  
   
@@ -192,7 +192,7 @@ ms.locfileid: "60112120"
 9. Kliknij przycisk **Zastosuj** można zapisać konfiguracji dla wybranej klasy lub zachowania.  
   
     > [!NOTE]
-    >  Można kontynuować, skonfiguruj zachowanie dla każdej kombinacji klasy/zachowania, tak długo, jak możesz kliknąć pozycję **Zastosuj** po wprowadzeniu każdej zmiany. Jeśli zmienisz klasy lub zachowania przed kliknięciem przycisku **Zastosuj**, okno dialogowe ostrzeżenia, zapewniając pojawi się możliwości, aby zastosować zmiany.  
+    > Można kontynuować, skonfiguruj zachowanie dla każdej kombinacji klasy/zachowania, tak długo, jak możesz kliknąć pozycję **Zastosuj** po wprowadzeniu każdej zmiany. Jeśli zmienisz klasy lub zachowania przed kliknięciem przycisku **Zastosuj**, okno dialogowe ostrzeżenia, zapewniając pojawi się możliwości, aby zastosować zmiany.  
   
 10. Wybierz **aktualizacji** w **zachowanie** listy.  
   
@@ -205,7 +205,7 @@ ms.locfileid: "60112120"
 13. Mapa **Original_CustomerID** argument metody **CustomerID (oryginalny)** właściwości klasy.  
   
     > [!NOTE]
-    >  Domyślnie argumenty metody będzie zmapowana do właściwości klasy, gdy nazwy są zgodne. Jeśli nazwy właściwości zostały zmienione, a nie są już zgodne w tabeli i Klasa jednostki, Niewykluczone, że właściwość odpowiednik klasy do mapowania na, jeśli O/R Designer nie może określić poprawne mapowania. Ponadto, jeśli argumenty metody nie ma właściwości prawidłową klasę do mapowania, możesz ustawić **właściwości klasy** wartość **(Brak)**.  
+    > Domyślnie argumenty metody będzie zmapowana do właściwości klasy, gdy nazwy są zgodne. Jeśli nazwy właściwości zostały zmienione, a nie są już zgodne w tabeli i Klasa jednostki, Niewykluczone, że właściwość odpowiednik klasy do mapowania na, jeśli O/R Designer nie może określić poprawne mapowania. Ponadto, jeśli argumenty metody nie ma właściwości prawidłową klasę do mapowania, możesz ustawić **właściwości klasy** wartość **(Brak)**.  
   
 14. Kliknij przycisk **Zastosuj** można zapisać konfiguracji dla wybranej klasy lub zachowania.  
   
@@ -220,7 +220,7 @@ ms.locfileid: "60112120"
 19. Kliknij przycisk **OK**.  
   
 > [!NOTE]
->  Chociaż nie jest to problem dla tego konkretnego przewodnika, warto zauważyć, że [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] obsługuje wygenerowanych w bazie danych wartości automatycznie tożsamości (automatycznego przyrostu), rowguidcol (identyfikator GUID generowany przez bazy danych) i kolumn sygnatur czasowych podczas wstawiania i aktualizacje. Wartości generowanych przez bazę danych w innych typów kolumn spowoduje nieoczekiwane wartości null. Aby zwrócić wartości wygenerowanych w bazie danych, należy ręcznie ustawić <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> do `true` i <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> do jednej z następujących czynności: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, lub <xref:System.Data.Linq.Mapping.AutoSync>.  
+> Chociaż nie jest to problem dla tego konkretnego przewodnika, warto zauważyć, że [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] obsługuje wygenerowanych w bazie danych wartości automatycznie tożsamości (automatycznego przyrostu), rowguidcol (identyfikator GUID generowany przez bazy danych) i kolumn sygnatur czasowych podczas wstawiania i aktualizacje. Wartości generowanych przez bazę danych w innych typów kolumn spowoduje nieoczekiwane wartości null. Aby zwrócić wartości wygenerowanych w bazie danych, należy ręcznie ustawić <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> do `true` i <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> do jednej z następujących czynności: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, lub <xref:System.Data.Linq.Mapping.AutoSync>.  
   
 ## <a name="testing-the-application"></a>Testowanie aplikacji  
  Uruchom aplikację ponownie, aby sprawdzić, czy **UpdateCustomers** procedury składowanej poprawnie aktualizuje rekord klienta w bazie danych.  

@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1f4788ab9fa23049ded8107fe1d33a9419b79c00
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b14a374214a605ec718ad60c6942752f3134edd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416723"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Instrukcje: Znajdź i organizowania projektów i szablonów elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Pliki szablonu muszą być umieszczone w rozpoznawaną przez program Visual Stud
  Kategorie w **nowy projekt** i **Dodaj nowy element** okna dialogowe odzwierciedlają struktur katalogów, które istnieją w lokalizacje szablonów zainstalowanych i niestandardowe. Można modyfikować tych struktur katalogów w celu uporządkować w najwygodniejszy dla siebie sposób.  
   
 > [!NOTE]
->  Nie można utworzyć nową kategorię na poziomie języka programowania. Nowe kategorie można tworzyć tylko w ramach każdego z języków.  
+> Nie można utworzyć nową kategorię na poziomie języka programowania. Nowe kategorie można tworzyć tylko w ramach każdego z języków.  
   
  Jeśli struktur katalogów dla zainstalowanych szablonów niestandardowych dla danego języka nie mają tę samą strukturę (oznacza to, że istnieją katalogi w ramach jednego folderu, w których nie ma pod innymi) zestawu kategorii, które pojawiają się w **New Projekt** okno dialogowe będzie łączenia wszystkich kategorii.  
   

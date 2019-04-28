@@ -13,24 +13,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e1855c64e88cdf45715654eede780aaa20d0258
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6a9a11f42acae44c441aca8cb06a1a363fea5a73
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418854"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Instrukcje: Pokazywanie karty dewelopera na Wstążce
   Aby uzyskać dostęp do **Developer** karty na Wstążce aplikacji pakietu Office, musisz skonfigurować je, aby pokazywała tę kartę, ponieważ nie jest wyświetlane domyślnie. Na przykład musisz wyświetlić tę kartę, jeśli chcesz dodać <xref:Microsoft.Office.Tools.Word.GroupContentControl> do dostosowywania poziomie dokumentu dla programu Word.
 
 > [!NOTE]
->  Niniejsze wytyczne mają zastosowanie do pakietu Office 2010 lub nowszej tylko aplikacji. Jeśli chcesz wyświetlić tę kartę w pakietu Microsoft Office 2007, zobacz następującą wersję tego tematu [jak: Pokazywanie karty dewelopera na wstążce](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+> Niniejsze wytyczne mają zastosowanie do pakietu Office 2010 lub nowszej tylko aplikacji. Jeśli chcesz wyświetlić tę kartę w pakietu Microsoft Office 2007, zobacz następującą wersję tego tematu [jak: Pokazywanie karty dewelopera na wstążce](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
 ).
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 > [!NOTE]
->  Dostęp nie ma **Developer** kartę.
+> Dostęp nie ma **Developer** kartę.
 
 ## <a name="to-show-the-developer-tab"></a>Aby wyświetlić kartę Deweloper
 

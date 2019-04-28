@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f00005afb86103ab137454fe423195d1522b46f4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4404541327aa5e42290847784f9faf3b35b51054
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412447"
 ---
 # <a name="how-to-programmatically-create-new-workbooks"></a>Instrukcje: Programowe tworzenie nowych skoroszytów
   Programowo utworzyć skoroszyt jest natywny <xref:Microsoft.Office.Interop.Excel.Workbook> obiektu nie <xref:Microsoft.Office.Tools.Excel.Workbook> element hosta.
@@ -35,7 +35,7 @@ ms.locfileid: "60048908"
      [!code-vb[Trin_VstcoreExcelAutomation#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#1)]
 
     > [!NOTE]
-    >  Można utworzyć na podstawie szablonu innym niż domyślny szablon skoroszytu: szablonu, którego chcesz użyć jako parametru, aby przekazać <xref:Microsoft.Office.Interop.Excel.Workbooks.Add%2A> metody.
+    > Można utworzyć na podstawie szablonu innym niż domyślny szablon skoroszytu: szablonu, którego chcesz użyć jako parametru, aby przekazać <xref:Microsoft.Office.Interop.Excel.Workbooks.Add%2A> metody.
 
 ## <a name="see-also"></a>Zobacz także
 - [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)

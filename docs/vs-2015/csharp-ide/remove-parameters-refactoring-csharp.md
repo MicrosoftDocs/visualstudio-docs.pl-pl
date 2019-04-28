@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a28076b8c394818c248a5a18c7bc91d484f2c28a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 40a884fe2ae6aaf73256d8edbcbd083a193b0342
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444622"
 ---
 # <a name="remove-parameters-refactoring-c"></a>Refaktoryzacja usuwania parametrów (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60045801"
  Wykonujesz operację usunięcia parametrów przez pierwszy ustawieniu kursora na metoda, indeksator lub delegata. Gdy kursor znajduje się w stanie wywołać Usuń `Parameters` operacji, kliknij przycisk **Refaktoryzuj** menu, naciśnij klawisz skrótu klawiaturowego lub wybierz polecenie z menu skrótów.  
   
 > [!NOTE]
->  Nie można usunąć pierwszy parametr metody rozszerzenia.  
+> Nie można usunąć pierwszy parametr metody rozszerzenia.  
   
 ### <a name="to-remove-parameters"></a>Aby usunąć parametrów  
   
@@ -73,7 +73,7 @@ ms.locfileid: "60045801"
  Parametry można usunąć z deklaracji metody lub wywołania metody. Umieść kursor w nazwie metody deklaracji lub delegata i wywoływać Usuń parametry.  
   
 > [!CAUTION]
->  Usuń parametry umożliwia możesz usunąć parametr, do którego odwołuje się w treści elementu członkowskiego, ale nie powoduje usunięcia odwołania do tego parametru w treści metody. Może to powodować błędy kompilacji kodu. Można jednak użyć **podgląd zmian** okno dialogowe, aby sprawdzić kod przed wykonaniem operacji refaktoryzacji.  
+> Usuń parametry umożliwia możesz usunąć parametr, do którego odwołuje się w treści elementu członkowskiego, ale nie powoduje usunięcia odwołania do tego parametru w treści metody. Może to powodować błędy kompilacji kodu. Można jednak użyć **podgląd zmian** okno dialogowe, aby sprawdzić kod przed wykonaniem operacji refaktoryzacji.  
   
  Jeśli parametr usuwany jest modyfikowana podczas wywołania metody, usunięcie parametru spowoduje również usunięcie modyfikacji. Na przykład jeśli wywołanie metody została zmieniona z  
   

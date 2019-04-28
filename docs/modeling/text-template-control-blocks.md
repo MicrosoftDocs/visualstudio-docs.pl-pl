@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344975f0f28c8fc8ee6f8a213b519f0b17e5880a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a3396caf4f1ade860f4727095d3305d86e837c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434175"
 ---
 # <a name="text-template-control-blocks"></a>Bloki formantów szablonów tekstowych
 Bloki sterujące umożliwiają pisanie kodu w szablonie tekstowym w celu różnią się w danych wyjściowych. Istnieją trzy rodzaje bloki sterujące, które są rozróżniane na podstawie ich otwierające nawiasy:
@@ -62,11 +62,11 @@ Found another one!
 ```
 
 > [!WARNING]
->  Zawsze używaj {...} Aby ograniczyć zagnieżdżonych instrukcji, które zawierają osadzony zwykły tekst. Poniższy przykład może nie działać prawidłowo:
+> Zawsze używaj {...} Aby ograniczyć zagnieżdżonych instrukcji, które zawierają osadzony zwykły tekst. Poniższy przykład może nie działać prawidłowo:
 >
->  `<# if (ShouldPrint) #> Some text. -- WRONG`
+> `<# if (ShouldPrint) #> Some text. -- WRONG`
 >
->  Zamiast tego powinien zawierać {nawiasów klamrowych}, w następujący sposób:
+> Zamiast tego powinien zawierać {nawiasów klamrowych}, w następujący sposób:
 
 ```
 
@@ -115,7 +115,7 @@ Some text.
 ```
 
 > [!NOTE]
->  Blok sterowania cechami klasy nie musi następować standardowe bloki sterujące w tym samym pliku szablonu. Jednak to ograniczenie nie ma zastosowania do wyniku za pomocą `<#@include#>` dyrektywy. Każdy dołączony plik może mieć standardowe bloki, a następnie przez bloki cech klas.
+> Blok sterowania cechami klasy nie musi następować standardowe bloki sterujące w tym samym pliku szablonu. Jednak to ograniczenie nie ma zastosowania do wyniku za pomocą `<#@include#>` dyrektywy. Każdy dołączony plik może mieć standardowe bloki, a następnie przez bloki cech klas.
 
  Można utworzyć funkcję, która generuje dane wyjściowe, osadzając blokami tekstu i wyrażenia wewnątrz blok sterowania cechami klasy. Na przykład:
 

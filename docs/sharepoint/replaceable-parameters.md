@@ -14,12 +14,12 @@ author: John-Hart
 ms.author: johnhart
 manager: jillfra
 ms.workload: office
-ms.openlocfilehash: d85e125ee09d459d23b3b709f58d5af43e76e984
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 165ef1256a0150e0942d85c4f876c8b3f5e15c72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422914"
 ---
 # <a name="replaceable-parameters"></a>Parametry wymienne
   Parametry wymienne lub *tokenów*, może służyć w plikach projektu o podanie wartości elementów rozwiązania programu SharePoint, w których rzeczywiste wartości nie są znany w czasie projektowania. Są one podobne w funkcji standardu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokenów szablonu. Aby uzyskać więcej informacji, zobacz [parametry szablonu](../ide/template-parameters.md).
@@ -86,7 +86,7 @@ ms.locfileid: "56611870"
   Można jednak dodać dodatkowe rozszerzenia plików do listy. Dodaj `<TokenReplacementFileExtensions>` elementu do dowolnego PropertyGroup w pliku projektu programu SharePoint, która jest zdefiniowana przed \<Import > pliku obiektów docelowych programu SharePoint.
 
 > [!NOTE]
->  Ponieważ zastępowania tokenu odbywa się to skompilowany projekt, nie należy dodawać rozszerzenia plików dla typów plików, które są kompilowane, takich jak *.cs*, *.vb* lub *resx*. Tokeny są zastępowane tylko w plikach, które nie są kompilowane.
+> Ponieważ zastępowania tokenu odbywa się to skompilowany projekt, nie należy dodawać rozszerzenia plików dla typów plików, które są kompilowane, takich jak *.cs*, *.vb* lub *resx*. Tokeny są zastępowane tylko w plikach, które nie są kompilowane.
 
  Na przykład, aby dodać rozszerzenia nazw plików (*.myextension* i *.yourextension*) do listy rozszerzeń nazw plików zastępowania tokenu, należy dodać następujące polecenie, aby projekt (*csproj* ) pliku:
 

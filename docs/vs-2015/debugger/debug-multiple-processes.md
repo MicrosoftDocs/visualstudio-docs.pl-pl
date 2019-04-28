@@ -20,12 +20,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb9ff8e31004a3b314102ad6b0e64cd72cab6467
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9a2679825d41a6360dde05e7511d607f8be69dfa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434107"
 ---
 # <a name="debug-multiple-processes"></a>Debugowanie wielu procesów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Oto jak rozpocząć debugowanie procesów, przełączać się między procesami,
 - [Uruchamianie debugowania wielu procesów w rozwiązaniu Visual Studio](#BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution) • [Zmień projekt startup](#BKMK_Change_the_startup_project) • [uruchamianie określonego projektu w rozwiązaniu](#BKMK_Start_a_specific_project_in_a_solution) • [uruchamianie wiele projektów w rozwiązanie](#BKMK_Start_multiple_projects_in_a_solution) • [Dołącz do procesu](#BKMK_Attach_to_a_process) • [automatycznie uruchamia proces w debugerze](#BKMK_Automatically_start_an_process_in_the_debugger)  
   
 > [!NOTE]
->  Debuger nie dołącza automatycznie do procesu podrzędnego uruchomionego przez proces debugowania, nawet jeśli projekt podrzędny znajduje się w tym samym rozwiązaniu. Aby debugować proces podrzędny:  
+> Debuger nie dołącza automatycznie do procesu podrzędnego uruchomionego przez proces debugowania, nawet jeśli projekt podrzędny znajduje się w tym samym rozwiązaniu. Aby debugować proces podrzędny:  
 > 
 > - Dołącz do procesu podrzędnego, po jego uruchomieniu.  
 > 
@@ -166,7 +166,7 @@ Oto jak rozpocząć debugowanie procesów, przełączać się między procesami,
 ### <a name="BKMK_Break__step__and_continue_commands"></a> BREAK, step and Kontynuuj  
   
 > [!NOTE]
->  Domyślnie przerwa, kontynuować i poleceń debugera krok wpływają na wszystkie procesy, które są debugowane. Aby zmienić to zachowanie, zobacz [skonfiguruj zachowanie wykonania wielu procesów](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
+> Domyślnie przerwa, kontynuować i poleceń debugera krok wpływają na wszystkie procesy, które są debugowane. Aby zmienić to zachowanie, zobacz [skonfiguruj zachowanie wykonania wielu procesów](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
   
 ||||  
 |-|-|-|  
@@ -197,7 +197,7 @@ Oto jak rozpocząć debugowanie procesów, przełączać się między procesami,
   Na przykład jeśli uruchomisz debugowanie procesu z rozwiązania programu Visual Studio, dołączysz do innego procesu, który jest już uruchomiony, a następnie wybierz **Zatrzymaj debugowanie**, sesja debugowania kończy proces, który został uruchomiony w programie Visual Studio znaków jest zakończony, gdy proces, który zostanie dołączony zostanie pozostawiony jako uruchomiony. Można użyć poniższych procedur, aby kontrolować sposób zatrzymywania debugowania.  
   
 > [!NOTE]
->  **Przerwij wszystkie procesy, gdy jeden proces ulegnie przerwaniu** opcja wpływa na zatrzymywanie debugowania ani Kończenie i odłączanie od procesów.  
+> **Przerwij wszystkie procesy, gdy jeden proces ulegnie przerwaniu** opcja wpływa na zatrzymywanie debugowania ani Kończenie i odłączanie od procesów.  
   
  **Aby zmienić oddziaływanie zatrzymania debugowania poszczególnych procesów**  
   

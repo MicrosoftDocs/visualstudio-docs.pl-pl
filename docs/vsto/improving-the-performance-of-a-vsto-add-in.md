@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df17245a398c71e7ae9ce0077352f47b0b70ab9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2add0dfced6a3b8e8263dafe133ee3a2f86637f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420937"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Poprawianie wydajności dodatku VSTO
   Można zapewnić użytkownikom lepsze środowisko, optymalizując dodatków narzędzi VSTO, które tworzysz dla aplikacji, aby szybko rozpocząć, zamknij usługi Office, Otwórz elementy i wykonywać inne zadania. W przypadku dodatku narzędzi VSTO dla programu Outlook, można także zmniejszyć ryzyko, że dodatku narzędzi VSTO dla programów będzie wyłączona z powodu niskiej wydajności. Aby zwiększyć wydajność dodatku narzędzi VSTO dla programów, należy wykonania następujących strategii:
@@ -93,7 +93,7 @@ ms.locfileid: "60071824"
 - Weryfikowanie podpisów cyfrowych w manifesty wdrożenia.
 
   > [!NOTE]
-  >  To podejście nie jest konieczne, jeśli wdrożenie dodatku narzędzi VSTO dla programów do bezpiecznej lokalizacji na komputerach użytkowników.
+  > To podejście nie jest konieczne, jeśli wdrożenie dodatku narzędzi VSTO dla programów do bezpiecznej lokalizacji na komputerach użytkowników.
 
   Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązania pakietu Office przy użyciu Instalatora Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
@@ -111,7 +111,7 @@ ms.locfileid: "60071824"
  Uwzględnić w harmonogramie czasochłonnych zadań (na przykład długotrwałe zadania, połączenia z bazą danych lub inne rodzaje wywołań sieci) w oddzielnym wątku. Aby uzyskać więcej informacji, zobacz [Obsługa wątkowości w Office](../vsto/threading-support-in-office.md).
 
 > [!NOTE]
->  Cały kod, który wywołuje w modelu obiektów programu pakietu Office muszą być wykonywane w wątku głównym.
+> Cały kod, który wywołuje w modelu obiektów programu pakietu Office muszą być wykonywane w wątku głównym.
 
 ## <a name="see-also"></a>Zobacz także
 

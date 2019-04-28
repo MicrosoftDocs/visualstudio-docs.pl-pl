@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d98755912674670d614d4b063075500427c1d996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2a0858a3f1f1e98f7f6d0bde87036126ec31320f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428827"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Pomoc techniczna dotycząca właściwości projektu i konfiguracji
 **Właściwości** okna [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE) można wyświetlić właściwości projektu i konfiguracji. Strony właściwości można określić dla typu projektu co użytkownik może ustawić właściwości dla aplikacji.
@@ -51,7 +51,7 @@ ms.locfileid: "56604681"
  Jest odpowiedzialny za projekt, aby zachować właściwości projektu i konfiguracji w pliku projektu.
 
 > [!NOTE]
->  Projekt można zoptymalizować trwałości przez utrwalanie tylko wartości właściwości, które różnią się od wartości domyślnych.
+> Projekt można zoptymalizować trwałości przez utrwalanie tylko wartości właściwości, które różnią się od wartości domyślnych.
 
 ## <a name="support-for-project-and-configuration-properties"></a>Pomoc techniczna dotycząca właściwości projektu i konfiguracji
  `Microsoft.VisualStudio.Package.SettingsPage` Klasa implementuje strony właściwości projektu i konfiguracji. Domyślna implementacja klasy `SettingsPage` oferuje właściwości publiczne dla użytkownika w siatce właściwości ogólnych. `Microsoft.VisualStudio.Package.HierarchyNode.GetPropertyPageGuids` Metoda wybiera klasy pochodne `SettingsPage` dla siatki właściwości projektu. `Microsoft.VisualStudio.Package.ProjectNode.GetConfigPropertyPageGuids` Metoda wybiera klasy pochodne `SettingsPage` dla siatki właściwości konfiguracji. Typu projektu powinny przesłaniać tych metod, aby zaznaczyć odpowiednie właściwości strony.
@@ -63,7 +63,7 @@ ms.locfileid: "56604681"
 - `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` i `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` utrwalanie właściwości konfiguracji.
 
   > [!NOTE]
-  >  Implementacje `Microsoft.VisualStudio.Package.SettingsPage` i `Microsoft.VisualStudio.Package.ProjectNode` klasy użyj `Microsoft.Build.BuildEngine` (MSBuild) metody do pobierania i ustawiania właściwości projektu i konfiguracji z pliku projektu.
+  > Implementacje `Microsoft.VisualStudio.Package.SettingsPage` i `Microsoft.VisualStudio.Package.ProjectNode` klasy użyj `Microsoft.Build.BuildEngine` (MSBuild) metody do pobierania i ustawiania właściwości projektu i konfiguracji z pliku projektu.
 
   Klasa pochodzi od `SettingsPage` musi implementować `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` i `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` można utrwalić projektu lub konfiguracji właściwości pliku projektu.
 
@@ -81,7 +81,7 @@ ms.locfileid: "56604681"
  <xref:System.ComponentModel.CategoryAttribute>, <xref:System.ComponentModel.DisplayNameAttribute>, I <xref:System.ComponentModel.DescriptionAttribute> atrybuty określają układ, etykietowania i opis właściwości projektu i konfiguracji na stronie właściwości ogólnych. Te atrybuty ustalenia kategorii, nazwę wyświetlaną i opis opcji, odpowiednio.
 
 > [!NOTE]
->  Atrybuty równoważne, SRCategory, LocDisplayName i SRDescription, korzystać z zasobów ciągu dla lokalizacji i są definiowane w [MPF projektów — Visual Studio 2013](https://github.com/tunnelvisionlabs/MPFProj10).
+> Atrybuty równoważne, SRCategory, LocDisplayName i SRDescription, korzystać z zasobów ciągu dla lokalizacji i są definiowane w [MPF projektów — Visual Studio 2013](https://github.com/tunnelvisionlabs/MPFProj10).
 
  Rozważmy następujący fragment kodu:
 

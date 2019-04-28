@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0ebd89937eedfc2851c3b57998ef2628f9e8904
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c7e352dcaccd328b4794389726277701014da7be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436810"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Dołączanie do uruchomionego procesu za pomocą debugera programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,10 +133,10 @@ W przypadku niektórych typów aplikacji (takich jak aplikacje Windows Store), n
 |Debugowanie aplikacji Windows (UWP, Universal), OneCore, HoloLens i IoT, która nie została uruchomiona z programu Visual Studio|Debugowanie zainstalowanego pakietu aplikacji|Brak|Użyj **Debuguj / inne cele debugowania / Debug zainstalowany pakiet aplikacji** zamiast **dołączyć do procesu**|
 
 > [!WARNING]
->  Aby dołączyć do aplikacji Windows Universal, która jest napisany w języku JavaScript, należy najpierw włączyć debugowanie dla aplikacji. Zobacz [dołączyć debuger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) w Centrum deweloperów Windows.
+> Aby dołączyć do aplikacji Windows Universal, która jest napisany w języku JavaScript, należy najpierw włączyć debugowanie dla aplikacji. Zobacz [dołączyć debuger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) w Centrum deweloperów Windows.
 
 > [!NOTE]
->  Aby debuger dołączał do kodu napisanego w języku C++, kod musi wysyłać właściwość `DebuggableAttribute`. Można dodać to w kodzie automatycznie przez powiązanie z [/assemblydebug](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) — opcja konsolidatora.
+> Aby debuger dołączał do kodu napisanego w języku C++, kod musi wysyłać właściwość `DebuggableAttribute`. Można dodać to w kodzie automatycznie przez powiązanie z [/assemblydebug](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) — opcja konsolidatora.
 
 ## <a name="what-debugger-features-can-i-use"></a>Jakie funkcje debugera można używać?
 

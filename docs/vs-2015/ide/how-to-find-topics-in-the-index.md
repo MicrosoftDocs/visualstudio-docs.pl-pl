@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c2ad1e97302a822bacc2fbbc983002626adb78a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: 67eb54d06297458915edfe34718948b085c6e86b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416833"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>Instrukcje: Znajdowanie tematów w indeksie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Indeks zawiera listę słów kluczowych, które są skojarzone z tematów w zain
       Wybierając przycisk filtru w górnej części karty, możesz wyświetlić wszystkie wpisy, które zawierają tekst, który określisz albo tylko wpisy, rozpoczynających się od tekstu, który określisz.  
   
      > [!NOTE]
-     >  Gdy przycisk filtru pojawi się na tle ciemniejszego z obramowaniem, wpisy muszą zawierać tekst, który określisz. Jeśli nie ma tło i obramowanie, wpisy musi rozpoczynać tekst, który określisz.  
+     > Gdy przycisk filtru pojawi się na tle ciemniejszego z obramowaniem, wpisy muszą zawierać tekst, który określisz. Jeśli nie ma tło i obramowanie, wpisy musi rozpoczynać tekst, który określisz.  
   
    - Przewiń do indeksu, a następnie wybierz słowem kluczowym.  
   

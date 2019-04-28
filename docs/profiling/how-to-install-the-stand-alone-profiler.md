@@ -11,18 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f69e73274429a0da032760ab563d5aadf71a655
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 2ac7a0ace5c4d6e31516d372baabec9883603300
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426843"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Instrukcje: Instalowanie autonomicznego profilera
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] udostępnia w wierszu polecenia zależności autonomicznym programem profilującym, które mogą być uruchamiane bez konieczności instalowania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Ta sytuacja występuje, gdy komputer nie obsługuje lub nie może mieć zainstalowane środowisko programistyczne. Na przykład nie należy instalować Środowisko deweloperskie na serwerze sieci web w środowisku produkcyjnym.
 
 > [!NOTE]
->  Podczas korzystania z autonomicznego profilera do zbierania danych wydajności dla witryny sieci web ASP.NET, [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) narzędzie wiersza są zalecane przez [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia.
+> Podczas korzystania z autonomicznego profilera do zbierania danych wydajności dla witryny sieci web ASP.NET, [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) narzędzie wiersza są zalecane przez [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia.
 
 ### <a name="to-install-the-stand-alone-profiler"></a>Aby zainstalować autonomiczny profilera
 
@@ -33,12 +33,12 @@ ms.locfileid: "57867259"
 2. Dodaj ścieżki dla *vsintr.exe* i *msdis150.dll* do ścieżki systemowej.
 
    > [!NOTE]
-   >  Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie.
+   > Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie.
 
 3. W wierszu polecenia wpisz **VSInstr**.
 
    > [!NOTE]
-   >  Jeśli zostanie wyświetlone informacje o użyciu dla vsinstr.exe, wszystko jest poprawnie skonfigurowany. Jeśli zostanie wyświetlony komunikat o błędzie informujący vsinstr.exe lub jednej z jego zależności nie zostanie znaleziony, upewnij się, że Twoje ścieżki poprawnie skonfigurowane zgodnie z opisem w kroku 2.
+   > Jeśli zostanie wyświetlone informacje o użyciu dla vsinstr.exe, wszystko jest poprawnie skonfigurowany. Jeśli zostanie wyświetlony komunikat o błędzie informujący vsinstr.exe lub jednej z jego zależności nie zostanie znaleziony, upewnij się, że Twoje ścieżki poprawnie skonfigurowane zgodnie z opisem w kroku 2.
 
 4. Skonfigurować serwer symboli, ustawiając swoje **_NT_SYMBOL_PATH** zmienną **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols**
 
@@ -47,7 +47,7 @@ ms.locfileid: "57867259"
     **Rozpocznij COMSPEC %**
 
    > [!NOTE]
-   >  Aby uzyskać szczegółowe instrukcje dotyczące sposobu konfigurowania pakietu serwera symboli, zobacz [jak: Odwoływać się do informacji o symbolach Windows](../profiling/how-to-reference-windows-symbol-information.md).
+   > Aby uzyskać szczegółowe instrukcje dotyczące sposobu konfigurowania pakietu serwera symboli, zobacz [jak: Odwoływać się do informacji o symbolach Windows](../profiling/how-to-reference-windows-symbol-information.md).
 
 6. Użyj [VSPerfReport](../profiling/vsperfreport.md) narzędzie do wykonywania serializacji symboli do pliku danych (Vsp) profilowania. Użyj **packsymbols której VSPerfReport** przełączników. Jeśli nie masz symboli wstawione w pliku danych, upewnij się, że masz zestaw zmiennych środowiskowych _NT_SYMBOL_PATH.
 

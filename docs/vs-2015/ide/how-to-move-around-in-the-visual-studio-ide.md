@@ -18,12 +18,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 269b6bba8c832d240813641317b8f0aa61fa0f34
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: df45f28076bb520a3b1e8055d9c6fbac08cb7669
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435244"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Instrukcje: Poruszanie się w środowisku IDE programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60069515"
 Zintegrowanego środowiska programistycznego (IDE) został zaprojektowany umożliwia przenoszenie okna okna i plikami na kilka różnych sposobów, w zależności od wymagań preferencji lub projektu. Można przełączać się między otwartych plików w edytorze lub przechodzić przez wszystkie aktywne okna narzędzi w IDE. Możesz również przełączyć bezpośrednio do dowolnego otwartego pliku w edytorze, niezależnie od kolejności, w którym ostatniego dostępu. Te funkcje może pomóc zwiększyć produktywność podczas pracy w środowisku IDE.
 
 > [!NOTE]
->  Dostępne opcje w oknach dialogowych i nazwy i lokalizacje poleceń menu, który zostanie wyświetlony, mogą różnić się od opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Ta strona pomocy został napisany z **ogólnych ustawieniach projektowych** na uwadze. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Dostępne opcje w oknach dialogowych i nazwy i lokalizacje poleceń menu, który zostanie wyświetlony, mogą różnić się od opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Ta strona pomocy został napisany z **ogólnych ustawieniach projektowych** na uwadze. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
  Prawie wszystkie polecenia menu w programie Visual Studio ma skrót klawiaturowy. Można również utworzyć własne skróty niestandardowe. Aby uzyskać więcej informacji, zobacz [określenie i dostosowywanie skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
@@ -48,7 +48,7 @@ Zintegrowanego środowiska programistycznego (IDE) został zaprojektowany umożl
 - Aby aktywować otwartymi dokumentami w odwrotnej kolejności niż kolejność, naciśnij klawisze CTRL + SHIFT + ZNAK MINUS.
 
   > [!NOTE]
-  >  **Przejdź wstecz** i **Nawiguj do przodu** również znajduje się na **widoku** menu.
+  > **Przejdź wstecz** i **Nawiguj do przodu** również znajduje się na **widoku** menu.
 
   Możesz również przełączyć się do określonego pliku, Otwórz w edytorze, niezależnie od tego, kiedy ostatniego dostępu do pliku, przy użyciu **Nawigator IDE**, **aktywnych plików** listy w edytorze lub **Windows** okno dialogowe.
 
@@ -59,14 +59,14 @@ Zintegrowanego środowiska programistycznego (IDE) został zaprojektowany umożl
   `Window.PreviousDocumentWindowNav` Umożliwia przeniesienie do pliku, który został ostatnio używane i `Window.NextDocumentWindowNav` umożliwia przeniesienie w odwrotnej kolejności. Przypisuje ogólnych ustawieniach projektowych, CTRL + SHIFT + TAB, aby `Window.PreviousDocumentWindowNav` i CTRL + TAB, aby `Window.NextDocumentWindowNav`.
 
 > [!NOTE]
->  Kombinację ustawień, którego używasz nie ma jeszcze kombinacji klawiszy skrótów, przypisany do tego polecenia, można przypisać własne niestandardowe polecenie wartości za pomocą **klawiatury** strony **opcje** okna dialogowego pole. Aby uzyskać więcej informacji, zobacz [określenie i dostosowywanie skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+> Kombinację ustawień, którego używasz nie ma jeszcze kombinacji klawiszy skrótów, przypisany do tego polecenia, można przypisać własne niestandardowe polecenie wartości za pomocą **klawiatury** strony **opcje** okna dialogowego pole. Aby uzyskać więcej informacji, zobacz [określenie i dostosowywanie skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 #### <a name="to-switch-to-specific-files-in-the-editor"></a>Aby przełączyć się do określonych plików w edytorze
 
 - Naciśnij klawisze CTRL + TAB, aby wyświetlić **Nawigator IDE**. Naciśnij i przytrzymaj klawisz CTRL i naciskaj klawisz TAB dopiero po wybraniu pliku, który chcesz przełączyć się do.
 
     > [!TIP]
-    >  Aby odwrócić kolejność, w którym można przejść przez **aktywnych plików** listy, naciśnij i przytrzymaj klawisze CTRL + SHIFT i naciśnij klawisz TAB.
+    > Aby odwrócić kolejność, w którym można przejść przez **aktywnych plików** listy, naciśnij i przytrzymaj klawisze CTRL + SHIFT i naciśnij klawisz TAB.
 
      \- lub —
 
@@ -82,14 +82,14 @@ Zintegrowanego środowiska programistycznego (IDE) został zaprojektowany umożl
  **Nawigator IDE** również otworzyć pozwala przechodzić do okna narzędzi, masz w środowisku IDE. Jedno z dwóch poleceń uzyskiwać dostęp do **Nawigator IDE** umożliwia przechodzenie między okien narzędzi w zależności od kolejności, w której chcesz przechodzić między. `Window.PreviousToolWindowNav` Umożliwia przeniesienie do pliku, który został ostatnio używane i `Window.NextToolWindowNav` umożliwia przeniesienie w odwrotnej kolejności. Przypisuje ogólnych ustawieniach projektowych, SHIFT + ALT + F7, aby `Window.PreviousDocumentWindowNav` i ALT + F7, aby `Window.NextDocumentWindowNav`.
 
 > [!NOTE]
->  Kombinację ustawień, którego używasz nie ma jeszcze kombinacji klawiszy skrótów, przypisany do tego polecenia, można przypisać własne niestandardowe polecenie wartości za pomocą **klawiatury** strony **opcje** okna dialogowego pole. Aby uzyskać więcej informacji, zobacz [określenie i dostosowywanie skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+> Kombinację ustawień, którego używasz nie ma jeszcze kombinacji klawiszy skrótów, przypisany do tego polecenia, można przypisać własne niestandardowe polecenie wartości za pomocą **klawiatury** strony **opcje** okna dialogowego pole. Aby uzyskać więcej informacji, zobacz [określenie i dostosowywanie skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 #### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>Aby przełączyć się do okna narzędzi określonych w środowisku IDE
 
 - Naciśnij klawisze ALT + F7, aby wyświetlić **Nawigator IDE**. Naciśnij i przytrzymaj klawisz ALT i naciskaj klawisz F7, dopóki nie wybierzesz okna, które zamierzasz przejdź do.
 
     > [!TIP]
-    >  Aby odwrócić kolejność, w którym można przejść przez **Active narzędzie Windows** listy, naciśnij i przytrzymaj klawisze ALT + SHIFT i naciśnij klawisz F7.
+    > Aby odwrócić kolejność, w którym można przejść przez **Active narzędzie Windows** listy, naciśnij i przytrzymaj klawisze ALT + SHIFT i naciśnij klawisz F7.
 
 ## <a name="see-also"></a>Zobacz też
  [Dostosowywanie układów okien](../ide/customizing-window-layouts-in-visual-studio.md) [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md)

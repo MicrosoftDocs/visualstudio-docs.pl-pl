@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f9d3cf030ca0e996365963e5dad419b19ff67596
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830066"
 ---
 # <a name="modules-view---contention-data"></a>Widok modułów — dane rywalizacji
 Widok modułów danych rywalizacji o zasoby współbieżności dane są pogrupowane według modułów, które zostały poddane próbkowaniu w danych profilowania. Każdy moduł jest katalogiem głównym drzewa hierarchicznego. Funkcji modułu, w którym wystąpiło zdarzenia rywalizacji są wyświetlane w węźle modułu.

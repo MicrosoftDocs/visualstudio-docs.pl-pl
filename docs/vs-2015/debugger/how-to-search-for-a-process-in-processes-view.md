@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0accb5165b1aded6318012ffb07755a63222283c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e39168e36e9540ec8c5e23a9030d996b81c4097c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431730"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Instrukcje: Wyszukiwanie procesu w widoku procesów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Możesz wyszukać określonego procesu w widoku procesów za pomocą ciągu Iden
 4. Wyczyść wszystkie pola, dla których nie chcesz określać wartości.  
   
    > [!TIP]
-   >  Aby znaleźć wszystkie procesy, które są własnością modułu, należy wyczyścić **procesu** pole, a następnie wpisz nazwę modułu w **modułu** pole. Następnie użyj **Znajdź następny** kontynuować wyszukiwanie procesów.  
+   > Aby znaleźć wszystkie procesy, które są własnością modułu, należy wyczyścić **procesu** pole, a następnie wpisz nazwę modułu w **modułu** pole. Następnie użyj **Znajdź następny** kontynuować wyszukiwanie procesów.  
   
 5. Wybierz **się** lub **dół** dla początkowej kierunek wyszukiwania.  
   

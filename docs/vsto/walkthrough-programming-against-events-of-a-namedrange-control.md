@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dee6c5dadb1634f384fd04d67cb0701b2e972799
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b510e7464708891db0cab23d61cb22896a74602
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446923"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Przewodnik: Program w odniesieniu do zdarzeń formantu NamedRange
   W tym instruktażu przedstawiono sposób dodawania <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolę do arkusza programu Microsoft Office Excel i programowanie ze zdarzeniami przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio.
@@ -37,7 +37,7 @@ ms.locfileid: "60049935"
 - Testowanie projektu.
 
 > [!NOTE]
->  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
@@ -119,7 +119,7 @@ ms.locfileid: "60049935"
      [!code-vb[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#26)]
 
     > [!NOTE]
-    >  Ponieważ dwukrotnie komórkę w zakresie programu Excel przejdzie do trybu edycji, <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> zdarzenie występuje, gdy wybór zostanie przeniesiony poza zakresem, nawet wtedy, gdy wystąpił brak zmian do tekstu.
+    > Ponieważ dwukrotnie komórkę w zakresie programu Excel przejdzie do trybu edycji, <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> zdarzenie występuje, gdy wybór zostanie przeniesiony poza zakresem, nawet wtedy, gdy wystąpił brak zmian do tekstu.
 
 ## <a name="add-code-to-respond-to-the-selectionchange-event"></a>Dodaj kod, aby odpowiedzieć na SelectionChange, zdarzenie
 
@@ -131,7 +131,7 @@ ms.locfileid: "60049935"
      [!code-vb[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#27)]
 
     > [!NOTE]
-    >  Dwukrotne kliknięcie komórki w zakresie programu Excel powoduje, że zaznaczenie, aby przenieść do zakresu, <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> zdarzenie występuje przed <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> wystąpi zdarzenie.
+    > Dwukrotne kliknięcie komórki w zakresie programu Excel powoduje, że zaznaczenie, aby przenieść do zakresu, <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> zdarzenie występuje przed <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> wystąpi zdarzenie.
 
 ## <a name="test-the-application"></a>Testowanie aplikacji
  Teraz możesz przetestować skoroszytu, aby zweryfikować ten tekst opisem zdarzeń <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki są wstawiane do innego nazwany zakres, gdy zdarzenia są wywoływane.

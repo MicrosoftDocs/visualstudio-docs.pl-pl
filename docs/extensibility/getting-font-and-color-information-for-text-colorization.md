@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f6e55c99d874bd18f0045746bbab4ac96370bc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8f03b23076b1eea203166bb0322f05927480a278
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417171"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Uzyskaj informacje czcionek i kolorów tekstu kolorowania
 Proces, który renderuje lub wyświetla wyróżnione kolorem tekstu w elementach interfejsu użytkownika zależy od typu projektu, jego technologii i dla deweloperów preferencji. **Czcionki i kolory** strona właściwości są przechowywane ustawienia.
@@ -24,7 +24,7 @@ Proces, który renderuje lub wyświetla wyróżnione kolorem tekstu w elementach
  Większość implementacji, które są wyświetlane wyróżnione kolorem tekstu muszą <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> i skojarzone interfejsy, dla ustawienia wyświetlania prezentacji, pobieranie i przechowywanie tekstu.
 
 > [!NOTE]
->  Podczas dostosowywania podstawowy edytor (który obsługuje **EditorCategory tekstu**), zaleca się używać technologii kolorowanie usługi języka. Aby uzyskać więcej informacji, zobacz [Przegląd czcionek i kolorów](../extensibility/font-and-color-overview.md).
+> Podczas dostosowywania podstawowy edytor (który obsługuje **EditorCategory tekstu**), zaleca się używać technologii kolorowanie usługi języka. Aby uzyskać więcej informacji, zobacz [Przegląd czcionek i kolorów](../extensibility/font-and-color-overview.md).
 
 ## <a name="get-default-font-and-color-information"></a>Uzyskaj informacje czcionkę i kolor domyślny
  Wszystkie **czcionki i kolory** należy określić ustawienia okna wyświetlania tekstu w **Wyświetle elementy** jednego **kategorii**. Aby uzyskać więcej informacji, zobacz [czcionki i kolory, środowisko, okno dialogowe Opcje](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).

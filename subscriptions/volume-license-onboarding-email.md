@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Przykład dołączania komunikacji udostępniane Administratorzy centrum VLSC
 searchscope: VS Subscription
 ms.openlocfilehash: 2f2b376ca3a7de91f67d45f7a138dbefd6b65988
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427951"
 ---
 # <a name="onboarding-email-communications-for-administrators"></a>Dołączanie do wiadomości e-mail dla administratorów
 

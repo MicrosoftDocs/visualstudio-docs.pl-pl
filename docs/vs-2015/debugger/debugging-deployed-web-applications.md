@@ -21,12 +21,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d7b7a95af1922f5ad57d15fb53dcba561a9f139e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 9608643801255d6c2cbf278cbfd96908f1f3911d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444075"
 ---
 # <a name="debugging-deployed-web-applications"></a>Debugowanie wdrożonych aplikacji internetowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Jeśli potrzebujesz debugować aplikację sieci Web, która jest uruchomiona na 
  Aby użyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] debugowanie wdrożonej aplikacji, należy dołączyć do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu roboczego przetwarzania i upewnij się, że debuger ma dostęp do symboli dla aplikacji. Należy również zlokalizować i Otwórz pliki źródłowe dla aplikacji. Aby uzyskać więcej informacji, zobacz [Określ symboli (.pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [jak: Znajdowanie nazwy procesu ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md), i [wymagania systemowe](../debugger/aspnet-debugging-system-requirements.md).  
   
 > [!NOTE]
->  Wiele [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] bibliotek DLL, które zawierają logikę biznesową lub inny kod przydatne odwoływać się do aplikacji sieci Web. Odniesienie automatycznie kopiuje bibliotekę DLL z komputera lokalnego do folderu \bin katalog wirtualny dla aplikacji sieci Web. Podczas debugowania, należy pamiętać, że aplikacja sieci Web odwołuje się do tej kopii biblioteki dll, a nie kopię na komputerze lokalnym.  
+> Wiele [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] bibliotek DLL, które zawierają logikę biznesową lub inny kod przydatne odwoływać się do aplikacji sieci Web. Odniesienie automatycznie kopiuje bibliotekę DLL z komputera lokalnego do folderu \bin katalog wirtualny dla aplikacji sieci Web. Podczas debugowania, należy pamiętać, że aplikacja sieci Web odwołuje się do tej kopii biblioteki dll, a nie kopię na komputerze lokalnym.  
   
  Dołączanie do procesu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu roboczego jest taki sam jak dołączanie do zdalnego procesu. Gdy użytkownik jest podłączony, jeśli nie masz odpowiedni projekt, Otwórz, pojawi się okno dialogowe, gdy aplikacja zostanie przerwany. To okno dialogowe poprosi o podanie lokalizacji plików źródłowych dla aplikacji. Nazwa pliku, który określisz w oknie dialogowym musi odpowiadać nazwa pliku określona w symbole debugowania na serwerze sieci Web. Aby uzyskać więcej informacji, zobacz [dołączenia do uruchamiania procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   

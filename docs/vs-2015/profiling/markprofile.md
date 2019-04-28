@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 105e81ed15a540a0c008eb94cb4af49caa099879
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: 566cb2e7222aacbf992dc1693d8ce1de102605a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434965"
 ---
 # <a name="markprofile"></a>MarkProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
  Stan profilowania dla wątku, który zawiera funkcję profilu znacznika musi być na, jeśli znaczniki i komentarze wstawione za pomocą polecenia znaku lub za pomocą interfejsu API funkcji (CommentMarkAtProfile, CommentMarkProfile lub MarkProfile).  
   
 > [!IMPORTANT]
->  Metoda MarkProfile należy używać z tylko profilowanie instrumentacji.  
+> Metoda MarkProfile należy używać z tylko profilowanie instrumentacji.  
   
 ## <a name="net-framework-equivalent"></a>Odpowiednik w programie .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  

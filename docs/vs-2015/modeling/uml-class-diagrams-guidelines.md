@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7a57e7e42e1cfc2690732881e6702315d1b0f4d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 363a9eda86a55da2dd773a2cef5a40fc53f0a81e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424497"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>Diagramy klas UML: Wytyczne dotyczące
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ W programie Visual Studio, można użyć *diagram klas UML* do opisu typów dany
  Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  Ten temat dotyczy diagramów klas UML. Istnieje inny rodzaj diagramów klas, które można tworzyć i używać w celu wizualizacji kodu programu. Zobacz [projektowanie i wyświetlanie klas i typów](http://go.microsoft.com/fwlink/?LinkId=142231).  
+> Ten temat dotyczy diagramów klas UML. Istnieje inny rodzaj diagramów klas, które można tworzyć i używać w celu wizualizacji kodu programu. Zobacz [projektowanie i wyświetlanie klas i typów](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
 ## <a name="Using"></a> Używanie diagramów klas UML  
  Można używać diagramu klas UML do różnych celów:  
@@ -82,7 +82,7 @@ W programie Visual Studio, można użyć *diagram klas UML* do opisu typów dany
  Aby uzyskać informacje na temat elementów na diagramach klas UML, zobacz [diagramów klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md).  
   
 > [!NOTE]
->  Szczegółowe kroki tworzenia dowolnego diagramu modelowania zawiera są opisane w [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
+> Szczegółowe kroki tworzenia dowolnego diagramu modelowania zawiera są opisane w [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-uml-class-diagram"></a>Aby utworzyć diagram klas UML  
   
@@ -185,7 +185,7 @@ W programie Visual Studio, można użyć *diagram klas UML* do opisu typów dany
   Możesz także wpisać nazwę typu, który nie został jeszcze zdefiniowany w modelu. Nazwa będzie wyświetlana w obszarze **nieokreślonym** w Eksploratorze modelu UML.  
   
 > [!NOTE]
->  Jeśli klasa lub interfejs o tej nazwie zostaną następnie zdefiniowane w modelu, starsze atrybuty i operacje będą nadal odwoływały się do elementu o typie Nieokreślonym. Jeśli chcesz, ab odwoływały się do nowej klasy, dla każdego atrybutu lub operacji musisz zresetować typ, wybierając nową klasę z menu rozwijalnego.  
+> Jeśli klasa lub interfejs o tej nazwie zostaną następnie zdefiniowane w modelu, starsze atrybuty i operacje będą nadal odwoływały się do elementu o typie Nieokreślonym. Jeśli chcesz, ab odwoływały się do nowej klasy, dla każdego atrybutu lub operacji musisz zresetować typ, wybierając nową klasę z menu rozwijalnego.  
   
 #### <a name="multiple-types"></a>Typy wielokrotne  
  Można ustawić liczebność dowolnego atrybutu, operacji lub typu parametru.  
@@ -273,9 +273,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
  Każdy typ może być typem zdefiniowanym w modelu, typem standardowym, takim jak Integer albo String, lub nazwą nowego typu, który nie został jeszcze zdefiniowany.  
   
 > [!NOTE]
->  Jeśli na liście parametrów zostanie wpisana nazwa bez typu, wskazuje ona nazwę parametru, a nie jego typ. W tym przykładzie MenuItem oraz Integer stają się nazwami dwóch parametrów o nieokreślonych typach:  
+> Jeśli na liście parametrów zostanie wpisana nazwa bez typu, wskazuje ona nazwę parametru, a nie jego typ. W tym przykładzie MenuItem oraz Integer stają się nazwami dwóch parametrów o nieokreślonych typach:  
 >   
->  `AddItem(MenuItem, Integer) /* parameter names, not types! */`  
+> `AddItem(MenuItem, Integer) /* parameter names, not types! */`  
   
  Aby ustawić liczebności typu w podpisie, wpisz liczebność w nawiasach kwadratowych po nazwie typu, na przykład:  
   

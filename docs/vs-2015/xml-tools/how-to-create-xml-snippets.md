@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6e6ec0cb8affbb820886f2bca163aae00d8536f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2c7eecfb6d56d4db378882f6cd45f96454a086dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421732"
 ---
 # <a name="how-to-create-xml-snippets"></a>Instrukcje: Tworzenie fragmentów kodu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawi
  `Code` Element definiuje tekstu XML, który zostanie wstawiony podczas wywoływania fragmencie kodu.  
   
 > [!NOTE]
->  Tekst fragment kodu XML muszą być ujęte w `<![CDATA[...]]>` sekcji.  
+> Tekst fragment kodu XML muszą być ujęte w `<![CDATA[...]]>` sekcji.  
   
  Poniżej przedstawiono `Code` element, który jest tworzony przez fragment kodu standardowy.  
   

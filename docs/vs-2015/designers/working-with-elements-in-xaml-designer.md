@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5a6e0ae31068144cb7de5ff83ac562db8f833d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1063a94ad2ff08942ec191e9162b4b2d506bb048
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403458"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Praca z elementami w Projektancie XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ Możesz dodawać elementy — kontrolki, układy i kształty — do aplikacji w 
      Gdy otworzysz marginesu przeciwny margines nie jest ustawiony, przeciwny margines jest ustawiony na prawidłową wartość zgodnie z lokalizacją elementu w obszarze kompozycji. Marginesy przeciwnej takich jak **po lewej stronie** i **po prawej stronie** marginesy, co najmniej jedna właściwość ma zawsze wartość.  
   
     > [!IMPORTANT]
-    >  Elementy umieszczone wewnątrz niektóre kontenery układów, takich jak <xref:Windows.UI.Xaml.Controls.Canvas>, nie masz moduły definiowania układu marginesu. Elementy są umieszczone wewnątrz <xref:Windows.UI.Xaml.Controls.StackPanel> ma moduły definiowania układu marginesu, jeden lewego i prawego marginesu lub marginesy górny i dolny, w zależności od orientację `StackPanel`.  
+    > Elementy umieszczone wewnątrz niektóre kontenery układów, takich jak <xref:Windows.UI.Xaml.Controls.Canvas>, nie masz moduły definiowania układu marginesu. Elementy są umieszczone wewnątrz <xref:Windows.UI.Xaml.Controls.StackPanel> ma moduły definiowania układu marginesu, jeden lewego i prawego marginesu lub marginesy górny i dolny, w zależności od orientację `StackPanel`.  
   
 ## <a name="grouping-and-ungrouping-elements"></a>Grupowanie i rozgrupowywanie elementów  
  Grupowanie dwóch lub więcej elementami w Projektancie XAML tworzy nowy kontener układu i umieszcza te elementy w tym kontenerze. Umieszczenie co najmniej dwa elementy razem w kontener układu umożliwia łatwe wybierz, przenoszenie i przekształcanie grupy jak elementy w tej grupie gdyby jeden element. Grupowanie jest również przydatny do identyfikowania elementów, które są ze sobą powiązane w jakiś sposób, takie jak przyciski, które tworzą element nawigacyjny. Podczas rozgrupowywania elementów po prostu usuwasz kontener układu, który zawiera elementy.  
@@ -106,7 +106,7 @@ Możesz dodawać elementy — kontrolki, układy i kształty — do aplikacji w 
 2. Kliknij prawym przyciskiem myszy wybranych elementów, wskaż opcję **Grupuj**, a następnie kliknij typ kontener układu, w którym chcesz umieścić grupę.  
   
     > [!TIP]
-    >  Jeśli wybierzesz <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, lub <xref:Windows.UI.Xaml.Controls.ScrollViewer> do grupowania elementów, elementy są umieszczane w nowym <xref:Windows.UI.Xaml.Controls.Grid> panelu w ramach <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, lub <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Jeśli użytkownik rozgrupuje elementów w jednym z tych kontenery układów tylko <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, lub <xref:Windows.UI.Xaml.Controls.ScrollViewer> zostanie usunięty, a <xref:Windows.UI.Xaml.Controls.Grid> panelu pozostaje. Aby usunąć `Grid` panelu, ponownie Rozgrupuj elementów.  
+    > Jeśli wybierzesz <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, lub <xref:Windows.UI.Xaml.Controls.ScrollViewer> do grupowania elementów, elementy są umieszczane w nowym <xref:Windows.UI.Xaml.Controls.Grid> panelu w ramach <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, lub <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Jeśli użytkownik rozgrupuje elementów w jednym z tych kontenery układów tylko <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, lub <xref:Windows.UI.Xaml.Controls.ScrollViewer> zostanie usunięty, a <xref:Windows.UI.Xaml.Controls.Grid> panelu pozostaje. Aby usunąć `Grid` panelu, ponownie Rozgrupuj elementów.  
   
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>Aby rozgrupować elementy i usunąć układ  
   

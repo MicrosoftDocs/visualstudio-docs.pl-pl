@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a24fde5f04a88de7eec34836df38bc1cca8669ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e04f3b4420cc8f3b56eee304ae199cf87fa4a3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412574"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Instrukcje: Programowe Wstawianie tekstu w dokumentach programu Word
   Istnieją trzy podstawowe sposoby Wstawianie tekstu w dokumentach programu Microsoft Office Word:
@@ -33,7 +33,7 @@ ms.locfileid: "60060635"
 - Użyj <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> metody <xref:Microsoft.Office.Interop.Word.Selection> obiektu, aby wstawić tekst na kursora lub zaznaczenia.
 
 > [!NOTE]
->  Można także wstawianie tekstu w formantach zawartości i zakładki. Aby uzyskać więcej informacji, zobacz [udostępnia mechanizmy kontroli zawartości](../vsto/content-controls.md) i [Bookmark, formant](../vsto/bookmark-control.md).
+> Można także wstawianie tekstu w formantach zawartości i zakładki. Aby uzyskać więcej informacji, zobacz [udostępnia mechanizmy kontroli zawartości](../vsto/content-controls.md) i [Bookmark, formant](../vsto/bookmark-control.md).
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 

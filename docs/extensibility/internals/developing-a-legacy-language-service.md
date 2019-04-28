@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a4cbc68e84c6593ca61be9234fcec3e88f3f333
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 9603c8d7955a34ae42dd7339a708c12441e98634
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418661"
 ---
 # <a name="develop-a-legacy-language-service"></a>Tworzenie starszej wersji usługi językowej
 Sekcja Łącze do tematów, które ułatwiają tworzenie starszej wersji usługi językowej.
@@ -29,7 +29,7 @@ Sekcja Łącze do tematów, które ułatwiają tworzenie starszej wersji usługi
  Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej o nowym sposobie implementacji usługi języka, zobacz [Edytor i język rozszerzenia usługi](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
->  Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.
+> Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [Model starszej wersji usługi językowej](../../extensibility/internals/model-of-a-legacy-language-service.md)

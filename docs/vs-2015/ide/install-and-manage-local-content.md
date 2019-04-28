@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c549beaf58e64d8026b3f6bd39a3b69922d6b7f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a5ad9c363a590ef692bdcd1d8c00727d55113b97
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412359"
 ---
 # <a name="install-and-manage-local-content"></a>Instalowanie zawartości lokalnej i zarządzanie nią
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Za pomocą Podglądu pomocy firmy Microsoft, możesz dodać, usunąć, aktualiza
 1. Na **zarządzanie zawartością** kartę, wybrać **dysku** przycisku opcji.  
   
     > [!NOTE]
-    >  **Dysku** opcji nie będzie dostępny, jeśli administrator uniemożliwił Ci modyfikowanie źródła instalacji zawartości. Aby uzyskać więcej informacji, zobacz [Podręcznik administratora programu Podgląd Pomocy](../ide/help-viewer-administrator-guide.md).  
+    > **Dysku** opcji nie będzie dostępny, jeśli administrator uniemożliwił Ci modyfikowanie źródła instalacji zawartości. Aby uzyskać więcej informacji, zobacz [Podręcznik administratora programu Podgląd Pomocy](../ide/help-viewer-administrator-guide.md).  
   
 2. Wykonaj jedną z następujących czynności:  
   
@@ -60,7 +60,7 @@ Za pomocą Podglądu pomocy firmy Microsoft, możesz dodać, usunąć, aktualiza
  Jeżeli pobierzesz i zainstalujesz zawartość na komputerze lokalnym, można wyświetlić tematy bez połączenia internetowego.  
   
 > [!IMPORTANT]
->  Aby zainstalować zawartość, należy zalogować się przy użyciu konta z uprawnieniami administracyjnymi.  
+> Aby zainstalować zawartość, należy zalogować się przy użyciu konta z uprawnieniami administracyjnymi.  
   
  Jeśli programu Visual Studio IDE jest ustawiony na język inny niż angielski, można zainstalować zawartość w języku angielskim i/lub zlokalizowanej zawartości. Jednakże, wyświetli się żadna zawartość, po zainstalowaniu tylko angielskiej wersji i **zawartości Zawrzyj w języku angielskim we wszystkich kartach nawigacji i żądaniach F1** pole wyboru w **Opcje podglądu** okno dialogowe zostanie wyczyszczona.  
   
@@ -80,7 +80,7 @@ Za pomocą Podglądu pomocy firmy Microsoft, możesz dodać, usunąć, aktualiza
  Można zaoszczędzić miejsce na dysku przez usunięcie niepożądanych elementów ze swojego komputera.  
   
 > [!IMPORTANT]
->  Musi mieć uprawnienia administracyjne, aby usunąć zawartość.  
+> Musi mieć uprawnienia administracyjne, aby usunąć zawartość.  
   
  Wyświetli się żadna zawartość, jeśli programu Visual Studio IDE jest ustawiony na język inny niż angielski, usuniesz zlokalizowaną zawartości i **zawartości Zawrzyj w języku angielskim we wszystkich kartach nawigacji i żądaniach F1** pole wyboru w **Opcje podglądu**  okno dialogowe zostanie wyczyszczona.  
   
@@ -100,7 +100,7 @@ Za pomocą Podglądu pomocy firmy Microsoft, możesz dodać, usunąć, aktualiza
  Pasek stanu wskazuje, kiedy są dostępne aktualizacje zainstalowanej zawartości.  
   
 > [!IMPORTANT]
->  Jeśli chcesz, aby Podgląd pomocy automatycznie sprawdzaj aktualizacje w trybie online, należy otworzyć **Opcje podglądu** okno dialogowe, a następnie wybierz pozycję **przejdź do trybu online, aby sprawdzić, czy są dostępne aktualizacje zawartości** pole wyboru.  
+> Jeśli chcesz, aby Podgląd pomocy automatycznie sprawdzaj aktualizacje w trybie online, należy otworzyć **Opcje podglądu** okno dialogowe, a następnie wybierz pozycję **przejdź do trybu online, aby sprawdzić, czy są dostępne aktualizacje zawartości** pole wyboru.  
   
 #### <a name="to-update-local-content"></a>Aby zaktualizować zawartość lokalną  
   
@@ -112,7 +112,7 @@ Za pomocą Podglądu pomocy firmy Microsoft, możesz dodać, usunąć, aktualiza
  Przenosząc zainstalowaną zawartość z komputera lokalnego do udziału sieciowego lub na inną partycję na komputerze lokalnym, można zaoszczędzić miejsce na dysku.  
   
 > [!IMPORTANT]
->  Aby przenieść zawartość, należy zalogować się przy użyciu konta z uprawnieniami administracyjnymi.  
+> Aby przenieść zawartość, należy zalogować się przy użyciu konta z uprawnieniami administracyjnymi.  
   
 #### <a name="to-move-local-content"></a>Aby przenieść zawartość lokalną  
   

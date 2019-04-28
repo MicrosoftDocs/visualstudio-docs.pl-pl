@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12a5f19574974ce8d3928997a6b02bbf59062d89
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0213df05e12ae69b4e24841971a518acc008599f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419415"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Instrukcje: Udostępnianie kodu z VBA w projektach Visual Basic
   Można udostępnić kod w [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] projekt języka Visual Basic for Applications (VBA) kod Jeśli chcesz, aby dwa typy kodu do ze sobą współdziałać.
@@ -50,7 +50,7 @@ ms.locfileid: "60101329"
      Aby uzyskać więcej informacji na temat formatów plików dokumentów, które obsługuje makr, zobacz [łączenie VBA i dostosowywanie na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md).
 
     > [!NOTE]
-    >  Nie można użyć tej funkcji w projektach szablon programu Word.
+    > Nie można użyć tej funkcji w projektach szablon programu Word.
 
 2. Upewnij się, że kod VBA w dokumencie może być uruchamiane bez monitowania użytkownika o włączenie makr. Kod VBA przez dodanie lokalizacji projektu pakietu Office do listy zaufanych lokalizacji w ustawieniach Centrum zaufania dla programu Word lub Excel można ufać.
 
@@ -65,7 +65,7 @@ ms.locfileid: "60101329"
      Po ustawieniu tej właściwości program Visual Studio automatycznie ustawia **ReferenceAssemblyFromVbaProject** właściwości **True**.
 
     > [!NOTE]
-    >  Jeśli skoroszyt lub dokument nie zawiera kodu VBA lub jeżeli kod VBA w dokumencie nie jest zaufane do uruchamiania, otrzymasz komunikat o błędzie, gdy ustawisz **EnableVbaCallers** właściwości **True**. Jest to spowodowane programu Visual Studio nie można modyfikować projektu VBA w dokumencie w takiej sytuacji.
+    > Jeśli skoroszyt lub dokument nie zawiera kodu VBA lub jeżeli kod VBA w dokumencie nie jest zaufane do uruchamiania, otrzymasz komunikat o błędzie, gdy ustawisz **EnableVbaCallers** właściwości **True**. Jest to spowodowane programu Visual Studio nie można modyfikować projektu VBA w dokumencie w takiej sytuacji.
 
 5. Kliknij przycisk **OK** wiadomości, która jest wyświetlana. Ten komunikat przypomina o tym, że jeśli dodasz kod VBA do skoroszytu lub dokumentu, podczas uruchamiasz projekt z [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], kod VBA zostaną utracone podczas następnego, skompiluj projekt. Jest to spowodowane dokumentu w folderze wyjściowym kompilacji jest zastępowany za każdym razem, gdy kompilujesz projekt.
 
@@ -83,7 +83,7 @@ ms.locfileid: "60101329"
      Aby uzyskać więcej informacji na temat formatów plików dokumentów, które obsługuje makr, zobacz [łączenie VBA i dostosowywanie na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md).
 
     > [!NOTE]
-    >  Nie można użyć tej funkcji w projektach szablon programu Word.
+    > Nie można użyć tej funkcji w projektach szablon programu Word.
 
 2. Upewnij się, że kod VBA w dokumencie może być uruchamiane bez monitowania użytkownika o włączenie makr. Kod VBA przez dodanie lokalizacji projektu pakietu Office do listy zaufanych lokalizacji w ustawieniach Centrum zaufania dla programu Word lub Excel można ufać.
 
@@ -109,7 +109,7 @@ ms.locfileid: "60101329"
 7. W **właściwości** wybierz **ReferenceAssemblyFromVbaProject** właściwości i zmień wartość na **True**.
 
     > [!NOTE]
-    >  Jeśli skoroszyt lub dokument nie zawiera kodu VBA lub jeżeli kod VBA w dokumencie nie jest zaufane do uruchamiania, otrzymasz komunikat o błędzie, gdy ustawisz **ReferenceAssemblyFromVbaProject** właściwość **True** . Jest to spowodowane programu Visual Studio nie można modyfikować projektu VBA w dokumencie w takiej sytuacji.
+    > Jeśli skoroszyt lub dokument nie zawiera kodu VBA lub jeżeli kod VBA w dokumencie nie jest zaufane do uruchamiania, otrzymasz komunikat o błędzie, gdy ustawisz **ReferenceAssemblyFromVbaProject** właściwość **True** . Jest to spowodowane programu Visual Studio nie można modyfikować projektu VBA w dokumencie w takiej sytuacji.
 
 8. Kliknij przycisk **OK** wiadomości, która jest wyświetlana. Ten komunikat przypomina o tym, że jeśli dodasz kod VBA do skoroszytu lub dokumentu, podczas uruchamiasz projekt z [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], kod VBA zostaną utracone podczas następnego, skompiluj projekt. Jest to spowodowane dokumentu w folderze wyjściowym kompilacji jest zastępowany za każdym razem, gdy kompilujesz projekt.
 

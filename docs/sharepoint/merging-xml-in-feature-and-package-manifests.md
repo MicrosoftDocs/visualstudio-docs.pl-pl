@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8af9386d192c6dd96669dbfada298317cf5fe0e5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 1378cddbc9770af923a98f1b7083a8792874b5b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429282"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Scalanie XML w funkcji i wykazu manifestów
   Funkcji i pakietów, które są definiowane przez [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pliki manifestu. Te manifesty spakowanych są kombinacją danych generowanych przez projektantów i niestandardowe [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] wprowadzone w szablonie manifestu przez użytkowników. W czasie tworzenia pakietów [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] scala niestandardowej [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instrukcje z warunkiem projektanta [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] w celu utworzenia spakowanych [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pliku manifestu. Podobnych elementów, z wyjątkiem wymienionych w dalszej części scalania wyjątków, są scalane w celu uniknięcia [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] błędy sprawdzania poprawności po wdrażanie plików w programie SharePoint i zapewnienie manifest pliki mniejszy i wydajniejszy.
@@ -55,7 +55,7 @@ ms.locfileid: "56646307"
 |CustomUpgradeActionParameter|Nazwa|
 
 > [!NOTE]
->  Ponieważ jest jedynym sposobem, aby zmodyfikować CustomUpgradeAction element niestandardowej [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] edytora scalania nie powoduje niski.
+> Ponieważ jest jedynym sposobem, aby zmodyfikować CustomUpgradeAction element niestandardowej [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] edytora scalania nie powoduje niski.
 
 ## <a name="package-manifest-elements"></a>Elementy manifestu pakietu
  Poniższa tabela jest lista wszystkich elementów manifestu pakietu, które mogą zostać scalone ich Unikatowy klucz, który jest używany do dopasowania.

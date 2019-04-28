@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61c56636eec92f28468533b7c4d9a51e6f120363
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0588d887cc1ba36a1ebb71df933686f68be524fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426623"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Uruchamianie Windows Store apps w symulatorze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Symulatorze programu Visual Studio dla aplikacji Windows Store to aplikacja komp
  Zobacz [aplikacji Windows Phone uruchamianie w emulatorze](../debugger/run-windows-phone-apps-in-the-emulator.md) informacji Windows Phone.  
   
 > [!IMPORTANT]
->  Symulator programu Visual Studio 2015 nie ma przycisku geolokalizacji. Jest to spowodowane symulator systemu Windows 10 nie zawiera geograficzną symulacji. Jeśli zachodzi potrzeba zrobić tego rodzaju symulacji, można użyć symulatora programu Visual Studio 2013 na Windows 8.1 lub starszymi systemami operacyjnymi.  
+> Symulator programu Visual Studio 2015 nie ma przycisku geolokalizacji. Jest to spowodowane symulator systemu Windows 10 nie zawiera geograficzną symulacji. Jeśli zachodzi potrzeba zrobić tego rodzaju symulacji, można użyć symulatora programu Visual Studio 2013 na Windows 8.1 lub starszymi systemami operacyjnymi.  
   
 ## <a name="BKMK_Set_the_simulator_as_the_target"></a> Ustaw symulator jako element docelowy  
  Aby uruchomić aplikację Windows Store w symulatorze, zaznacz **symulator** z listy rozwijanej obok listy **Rozpocznij debugowanie** przycisku w debugerze **standardowa** narzędzi.  
@@ -86,10 +86,10 @@ Symulatorze programu Visual Studio dla aplikacji Windows Store to aplikacja komp
  Możesz przełączać orientacji urządzenia między pionowa i pozioma obracając symulatora w dowolnym kierunku o 90 stopni.  
   
 > [!NOTE]
->  Symulator nie przestrzega [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) właściwość projektu. Na przykład, jeśli projekt Ustawia orientację `Landscape`i następnie obracać simulator do orientacji pionowej, symulator wyświetlany obraz będzie również obracać i zmienić jego rozmiaru. Przetestuj te ustawienia na urządzeniu z systemem rzeczywistych.  
+> Symulator nie przestrzega [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) właściwość projektu. Na przykład, jeśli projekt Ustawia orientację `Landscape`i następnie obracać simulator do orientacji pionowej, symulator wyświetlany obraz będzie również obracać i zmienić jego rozmiaru. Przetestuj te ustawienia na urządzeniu z systemem rzeczywistych.  
   
 > [!NOTE]
->  Symulator jest obracania, tak aby jednej krawędzi symulator jest większy niż ekranu, na którym jest wyświetlany na, symulator jest automatycznie dopasowane do ekranu. Symulator nie jest rozmiar oryginalnego rozmiaru obrócenie go ponownie.  
+> Symulator jest obracania, tak aby jednej krawędzi symulator jest większy niż ekranu, na którym jest wyświetlany na, symulator jest automatycznie dopasowane do ekranu. Symulator nie jest rozmiar oryginalnego rozmiaru obrócenie go ponownie.  
   
 ## <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Zmienianie rozmiaru ekranu symulowanego i rozwiązania  
  Aby zmienić rozmiar ekranu symulowanego i rozwiązanie, wybierz **zmiana rozdzielczości** znajdujący się na palecie kolorów i wybierz z listy nowy rozmiar i rozwiązanie.  
@@ -97,13 +97,13 @@ Symulatorze programu Visual Studio dla aplikacji Windows Store to aplikacja komp
  Rozmiar ekranu i rozwiązanie, które są wyświetlane jako *cali szerokość ekranu, piksel szerokość i wysokość pikseli*. Należy pamiętać, symulowane rozmiar ekranu i rozwiązania. Współrzędne lokalizacji w symulatorze są tłumaczone na współrzędne rozmiaru wybranego urządzenia i rozdzielczości.  
   
 > [!NOTE]
->  Może zapisywać skalowanych wersje obrazy mapy bitowej w swojej aplikacji i Windows będzie ładować prawidłowy obraz dla bieżącego skalowania. Aby uzyskać więcej informacji, zobacz [dynamiczny projekt 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). Jednakże jeśli zmienisz rozwiązania symulatora, tak że Windows wybierze inny obraz, aby dopasować rozwiązanie, należy zatrzymać i ponownie uruchomić sesję debugowania, aby wyświetlić nowy obraz.  
+> Może zapisywać skalowanych wersje obrazy mapy bitowej w swojej aplikacji i Windows będzie ładować prawidłowy obraz dla bieżącego skalowania. Aby uzyskać więcej informacji, zobacz [dynamiczny projekt 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). Jednakże jeśli zmienisz rozwiązania symulatora, tak że Windows wybierze inny obraz, aby dopasować rozwiązanie, należy zatrzymać i ponownie uruchomić sesję debugowania, aby wyświetlić nowy obraz.  
   
 ## <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Przechwycić zrzut ekranu aplikacji do przesłania do Windows Store  
  Podczas przesyłania aplikacji do Sklepu Windows, musi zawierać zrzuty ekranu aplikacji.  
   
 > [!NOTE]
->  Zrzut ekranu zostanie zapisany w bieżącym rozdzielczości symulatora. Aby zmienić rozwiązanie, wybierz **zmiana rozdzielczości** przycisku.  
+> Zrzut ekranu zostanie zapisany w bieżącym rozdzielczości symulatora. Aby zmienić rozwiązanie, wybierz **zmiana rozdzielczości** przycisku.  
   
 - Aby utworzyć zrzuty ekranu aplikacji w symulatorze, wybierz **Przechwyć zrzut ekranu do Schowka** przycisku.  
   

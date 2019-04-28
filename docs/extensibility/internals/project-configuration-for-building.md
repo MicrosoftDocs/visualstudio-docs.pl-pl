@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 179192e5935f3a97f38dc3a1b78dd1bd760c303d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3ecbed7e1f57150e798818c24cb36a1de24e58aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423825"
 ---
 # <a name="project-configuration-for-building"></a>Konfigurowanie projektu do kompilowania
 Lista konfiguracje rozwiązania dla danego rozwiązania jest zarządzany przez okna dialogowego konfiguracje rozwiązania.
@@ -26,7 +26,7 @@ Lista konfiguracje rozwiązania dla danego rozwiązania jest zarządzany przez o
  Jeśli użytkownik tworzy nowa konfiguracja rozwiązania o nazwie MyConfig2, projektu Project1 wiąże swoją konfigurację debugowania konfiguracji rozwiązania domyślnie. O nazwie Project2 także wiąże jego konfigurację MyConfig2 konfiguracji rozwiązania domyślnie.
 
 > [!NOTE]
->  Powiązanie jest rozróżniana wielkość liter.
+> Powiązanie jest rozróżniana wielkość liter.
 
  Gdy użytkownik wybierze **wybór wielokrotny** elementu na liście rozwijanej Konfiguracja środowiska wyświetlane jest okno dialogowe, które zawiera listę dostępnych konfiguracji.
 
@@ -43,7 +43,7 @@ Lista konfiguracje rozwiązania dla danego rozwiązania jest zarządzany przez o
  Zależności projektu określają kolejność, w którym projekty są kompilowane. Karta kolejność kompilacji w oknie dialogowym dokładnie kolejność, w którym projektów w rozwiązaniu zostaną kompilacji i użyj karty zależności Aby zmodyfikować kolejność kompilacji.
 
 > [!NOTE]
->  Projekty na liście, ich wybrane pola wyboru, które są wyszarzone, zostały dodane przez środowisko z powodu jawne zależności, określony przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfejsy i nie można zmienić. Na przykład dodanie odwołania do projektu z [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projektu do innego projektu automatycznie dodaje zależność kompilacji, które mogą zostać usunięte tylko przez usunięcie odwołania. Nie można wybrać projekty, których pola wyboru są wyraźne, a są wyszarzone, ponieważ to spowodowałoby utworzenie pętli zależności (na przykład projektu Project1 są zależne od Project2 i o nazwie Project2 są zależne od projektu Project1), który będzie zatrzymania kompilacji.
+> Projekty na liście, ich wybrane pola wyboru, które są wyszarzone, zostały dodane przez środowisko z powodu jawne zależności, określony przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfejsy i nie można zmienić. Na przykład dodanie odwołania do projektu z [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projektu do innego projektu automatycznie dodaje zależność kompilacji, które mogą zostać usunięte tylko przez usunięcie odwołania. Nie można wybrać projekty, których pola wyboru są wyraźne, a są wyszarzone, ponieważ to spowodowałoby utworzenie pętli zależności (na przykład projektu Project1 są zależne od Project2 i o nazwie Project2 są zależne od projektu Project1), który będzie zatrzymania kompilacji.
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] procesy kompilacji obejmują typowe kompilacji i operacje łącze, które są wywoływane przy użyciu jednego polecenia kompilacji. Dwa procesy kompilacji mogą być również obsługiwane: operacji czyszczenia, aby usunąć wszystkie elementy wyjściowe z poprzedniej kompilacji i Sprawdzanie aktualności, aby ustalić, czy element danych wyjściowych w konfiguracji został zmieniony.
 

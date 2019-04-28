@@ -12,12 +12,12 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 234f8ffbb3fdde48ca844386d5e5a716f74e8969
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ac07a2c6becd46a2536e6a9b3340d075d5f078f2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403242"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Dodawanie polecenia do paska narzędzi Eksploratora rozwiązań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ W tym instruktażu pokazano, jak dodać przycisk, aby **Eksploratora rozwiązań
  Aby uzyskać więcej informacji na temat menu, poleceń paska narzędzi i plików vsct zobacz [polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md).  
   
 > [!NOTE]
->  Pliki tabeli poleceń XML (vsct) zamiast pliki konfiguracji (.ctc) tabeli poleceń mogą być używane do definiowania sposobu wyświetlania menu i poleceń w swojej pakietów VSPackage. Aby uzyskać więcej informacji, zobacz [tabeli poleceń w usłudze Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+> Pliki tabeli poleceń XML (vsct) zamiast pliki konfiguracji (.ctc) tabeli poleceń mogą być używane do definiowania sposobu wyświetlania menu i poleceń w swojej pakietów VSPackage. Aby uzyskać więcej informacji, zobacz [tabeli poleceń w usłudze Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4016597d6c88cfe03ebf823e2fea17730b69562
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: aaa7288d46b57204a637dc81d1d8b943debd87fa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417458"
 ---
 # <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>Instrukcje: Tworzenie aplikacji konsoli sekwencyjnego przepływu pracy (starsza wersja)
 Wykonaj następujące kroki, aby utworzyć projekt sekwencyjne Aplikacja konsoli przepływu pracy za pomocą starszego [!INCLUDE[wfd1](../includes/wfd1-md.md)] dostarczone przez [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -34,7 +34,7 @@ Wykonaj następujące kroki, aby utworzyć projekt sekwencyjne Aplikacja konsoli
 3. Wybierz opcję **.NET Framework 3.0** opcji lub **.NET Framework 3.5** opcji na liście rozwijanej listy w górnej części **nowy projekt** okna, aby uzyskać dostęp starsza wersja projektanta.  
   
     > [!NOTE]
-    >  Opcją domyślną w [!INCLUDE[vs2010](../includes/vs2010-md.md)] jest **.NET Framework 4**. Ta opcja służy do tworzenia [!INCLUDE[wf](../includes/wf-md.md)] aplikacji przeznaczonych dla [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] i używasz starszej wersji projektanta.  
+    > Opcją domyślną w [!INCLUDE[vs2010](../includes/vs2010-md.md)] jest **.NET Framework 4**. Ta opcja służy do tworzenia [!INCLUDE[wf](../includes/wf-md.md)] aplikacji przeznaczonych dla [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] i używasz starszej wersji projektanta.  
   
 4. W **typów projektów** okienku Wybierz projekty Visual C# lub projekty języka Visual Basic (w obszarze **inne języki**), a następnie wybierz pozycję **przepływu pracy**.  
   

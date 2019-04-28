@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12c5fb2db92c70144e38aa3ca2110b8b3d5c354e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 630b2896e7446cf62982dd62ed12f9f7b7ca4aa9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427297"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>Uruchamianie sesji debugowania dla aplikacji Store w programie Visual Studio (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
  W tym temacie opisano sposób uruchamiania sesji debugowania dla aplikacji Windows Store napisanych w języku JavaScript i HTML5. Można uruchomić debugowania za pomocą pojedynczego naciśnięcia klawisza lub możesz skonfigurować sesję debugowania dla konkretnych scenariuszy, a następnie wybrać sposób, aby uruchomić aplikację.
 
 > [!NOTE]
->  Aby uzyskać aplikacje napisane w XAML i Visual C#, Visual C++ lub Visual Basic, zobacz [uruchomić sesję debugowania (VB, C#, C++ i XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+> Aby uzyskać aplikacje napisane w XAML i Visual C#, Visual C++ lub Visual Basic, zobacz [uruchomić sesję debugowania (VB, C#, C++ i XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
 ## <a name="BKMK_In_this_topic"></a> W tym temacie
  [W tym temacie](#BKMK_In_this_topic)
@@ -117,7 +117,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
    ![Wybierz połączenie zdalnego debugera](../debugger/media/vsrun-pro-selectremotedebuggerdlg.png "VSRUN_PRO_SelectRemoteDebuggerDlg")
 
   > [!NOTE]
-  >  Okno dialogowe Wybierz połączenie ze zdalnym debugerem Wyświetla znajdujących się w lokalnej podsieci i maszyn, które są podłączone bezpośrednio do maszyny programu Visual Studio za pomocą kabla Ethernet. Aby określić inną maszynę, wprowadź nazwę w **NazwaKomputera** pole.
+  > Okno dialogowe Wybierz połączenie ze zdalnym debugerem Wyświetla znajdujących się w lokalnej podsieci i maszyn, które są podłączone bezpośrednio do maszyny programu Visual Studio za pomocą kabla Ethernet. Aby określić inną maszynę, wprowadź nazwę w **NazwaKomputera** pole.
 
   ![Dotyczy tylko Windows Phone](../debugger/media/phone-only-content.png "phone_only_content")
 
@@ -178,7 +178,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
  Aby ustawić zainstalowanej aplikacji do uruchamiania w trybie debugowania, wykonaj następujące czynności:
 
 > [!NOTE]
->  Aplikacja nie może być uruchomiona, po uruchomieniu tej procedury.
+> Aplikacja nie może być uruchomiona, po uruchomieniu tej procedury.
 
 1. Na **debugowania** menu, wybierz **pakietu debugowania zainstalowanej aplikacji**
 
@@ -226,9 +226,9 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 ### <a name="BKMK_Attach_the_debugger"></a> Dołącz debuger
 
 > [!TIP]
->  Uruchamianie aplikacji JavaScript w wystąpieniu procesu wwahost.exe. Innym aplikacjom JavaScript są uruchomione po dołączeniu do aplikacji, musisz jest znany identyfikator liczbowych procesu (PID) wwahost.exe działający w aplikacji.
+> Uruchamianie aplikacji JavaScript w wystąpieniu procesu wwahost.exe. Innym aplikacjom JavaScript są uruchomione po dołączeniu do aplikacji, musisz jest znany identyfikator liczbowych procesu (PID) wwahost.exe działający w aplikacji.
 >
->  Najprostszym sposobem, aby rozwiązać ten problem dotyczy Zamknij wszystkie inne aplikacje języka JavaScript. W przeciwnym razie można otworzyć Menedżera zadań Windows, aby uruchomić aplikację i zanotuj identyfikatorów procesów wwahost.exe. Po określeniu proces do dołączenia w **dostępne procesy** okno dialogowe wwahost.exe aplikacji będzie mieć identyfikator, który jest inny niż te, które zostały zanotowane.
+> Najprostszym sposobem, aby rozwiązać ten problem dotyczy Zamknij wszystkie inne aplikacje języka JavaScript. W przeciwnym razie można otworzyć Menedżera zadań Windows, aby uruchomić aplikację i zanotuj identyfikatorów procesów wwahost.exe. Po określeniu proces do dołączenia w **dostępne procesy** okno dialogowe wwahost.exe aplikacji będzie mieć identyfikator, który jest inny niż te, które zostały zanotowane.
 
  Aby dołączyć debuger:
 

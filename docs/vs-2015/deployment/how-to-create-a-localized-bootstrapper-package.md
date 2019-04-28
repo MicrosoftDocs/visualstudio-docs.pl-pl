@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 71fbafb46db563c56bafb926b66b88bc39fda2ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ec3cd1365826c1a06b2d0f7bd6da377c8dc4d46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440656"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Instrukcje: Tworzenie zlokalizowanego pakietu programu inicjującego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Po utworzeniu pakietu programu inicjującego, tworząc dwie więcej plików dla 
 3. Tworzenie manifestu pakietu o nazwie package.xml, zaktualizuj ciągi i kultury i umieścić ten plik w nowym folderze. Jeśli program inicjujący programu Visual Studio zostały już utworzone w języku docelowym, można skopiować pliku package.xml programu Visual Studio i zmodyfikuj go w tym kroku.  
   
 > [!NOTE]
->  Jeśli używasz projektów Instalatora do wdrażania aplikacji, można zlokalizować aplikację, zmieniając **lokalizacji** właściwości.  
+> Jeśli używasz projektów Instalatora do wdrażania aplikacji, można zlokalizować aplikację, zmieniając **lokalizacji** właściwości.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   

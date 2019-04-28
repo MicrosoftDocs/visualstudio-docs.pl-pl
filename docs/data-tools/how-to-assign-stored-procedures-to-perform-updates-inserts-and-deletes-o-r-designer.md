@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 05dd21bbb423d75cd175f13ca945516024db01eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: da666f237824ccae349a023611f7e7b78fdaf684
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402834"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Instrukcje: Przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)
 
@@ -59,7 +59,7 @@ Domyślnie logika aktualizacji bazy danych (operacje wstawiania, aktualizacji i 
 10. Kliknij przycisk **OK** lub **zastosować**.
 
     > [!NOTE]
-    >  Można kontynuować, skonfiguruj zachowanie dla każdej kombinacji klasę i zachowanie, tak długo, jak możesz kliknąć pozycję **Zastosuj** po wprowadzeniu każdej zmiany. Jeśli zmienisz klasy lub zachowania przed kliknięciem przycisku **Zastosuj**, okno dialogowe ostrzeżenia pojawia się i oferuje możliwość zastosowania zmian.
+    > Można kontynuować, skonfiguruj zachowanie dla każdej kombinacji klasę i zachowanie, tak długo, jak możesz kliknąć pozycję **Zastosuj** po wprowadzeniu każdej zmiany. Jeśli zmienisz klasy lub zachowania przed kliknięciem przycisku **Zastosuj**, okno dialogowe ostrzeżenia pojawia się i oferuje możliwość zastosowania zmian.
 
 Aby przywrócić za pomocą domyślnej logiki czasu wykonywania aktualizacji, kliknij przycisk wielokropka **Wstaw**, **aktualizacji**, lub **Usuń** polecenia w pliku **właściwości**  okna, a następnie wybierz **korzystania ze środowiska uruchomieniowego** w **Konfigurowanie zachowania** okno dialogowe.
 

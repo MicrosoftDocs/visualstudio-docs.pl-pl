@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9531e3e36c6689e4a162649fcb9364067e5f6a13
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cc268136e898b7ef348b2910e080323347eb5716
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438635"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Przewodnik: Wywoływanie kodu w dodatku VSTO z kodu VBA
   W tym przewodniku pokazano, jak udostępnić obiektu w dodatku narzędzi VSTO dla programów do innych rozwiązań programu Microsoft Office, w tym Visual Basic for Applications (VBA) i dodatki COM, VSTO.
@@ -113,7 +113,7 @@ ms.locfileid: "60106621"
 3. Na wstążce kliknij **Developer** kartę.
 
     > [!NOTE]
-    >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 4. W **kodu** grupy, kliknij przycisk **języka Visual Basic**.
 

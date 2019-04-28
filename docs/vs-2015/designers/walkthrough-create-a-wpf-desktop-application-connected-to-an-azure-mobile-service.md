@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4d4d6a8399d3d40eaefe86ed9cbb3105729f08a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 126aa1ad57aa5f8961803b8443365c208f5623ff
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421252"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Przewodnik: Tworzenie aplikacji WPF pulpitu podłączone do usługi mobilnej Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,14 +56,14 @@ Windows Presentation Foundation (WPF) umożliwia szybkie tworzenie nowoczesnych 
 3. W okienku po lewej stronie wybierz **WindowsAzure.MobileServices**, a następnie w okienku po prawej stronie wybierz **zainstalować** przycisku.  
   
     > [!NOTE]
-    >  Jeśli **Podgląd** zostanie wyświetlone okno dialogowe, przejrzyj proponowane zmiany, a następnie wybierz **OK** przycisku.  
+    > Jeśli **Podgląd** zostanie wyświetlone okno dialogowe, przejrzyj proponowane zmiany, a następnie wybierz **OK** przycisku.  
   
 4. W **akceptacja licencji** okno dialogowe, przejrzyj licencję warunki, a następnie zaakceptuj je, wybierając **akceptuję** przycisku.  
   
      Niezbędne odwołania zostaną dodane do **Eksploratora rozwiązań**.  
   
     > [!NOTE]
-    >  Jeśli nie zgadzasz się z postanowieniami licencyjnymi, wybierz **odrzucam** przycisku. Nie można zakończyć pozostałej części przewodnika.  
+    > Jeśli nie zgadzasz się z postanowieniami licencyjnymi, wybierz **odrzucam** przycisku. Nie można zakończyć pozostałej części przewodnika.  
   
 ## <a name="create-the-user-interface"></a>Tworzenie interfejsu użytkownika  
  Następnym krokiem jest do tworzenia interfejsu użytkownika dla aplikacji. Najpierw utworzysz formant użytkownika do wielokrotnego użytku, który wyświetla układ okienko dwa standardowe side-by-side. Można będzie Dodaj formant użytkownika do okna głównego aplikacji i dodawanie formantów do wprowadzania i wyświetlania danych, a następnie pisanie kodu służącego do definiowania interakcji z zapleczem usługi mobilnej.  
@@ -288,7 +288,7 @@ Windows Presentation Foundation (WPF) umożliwia szybkie tworzenie nowoczesnych 
      ![Główne w Projektancie](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
   
     > [!NOTE]
-    >  Podczas kolejnych kilku procedur mogą być wyświetlane błędy w **lista błędów** Jeśli jest otwarty. Nie martw się; te błędy znikną po zakończeniu procedury pozostałych.  
+    > Podczas kolejnych kilku procedur mogą być wyświetlane błędy w **lista błędów** Jeśli jest otwarty. Nie martw się; te błędy znikną po zakończeniu procedury pozostałych.  
   
 6. W **Eksploratora rozwiązań**, rozwiń węzeł **MainWindow.xaml** węzła i Otwórz **MainWindow.xaml.cs** lub **MainWindow.xaml.vb** pliku.  
   
@@ -482,7 +482,7 @@ Windows Presentation Foundation (WPF) umożliwia szybkie tworzenie nowoczesnych 
 3. W **nowej usługi MOBILNEJ** okno dialogowe, wybierz **adresu URL** pole tekstowe i wpisz `wpfquickstart01`.  
   
     > [!NOTE]
-    >  Może być konieczna zmiana liczbowej części adresu URL. Platforma Microsoft Azure wymaga unikatowego adresu URL dla każdej usługi mobilnej.  
+    > Może być konieczna zmiana liczbowej części adresu URL. Platforma Microsoft Azure wymaga unikatowego adresu URL dla każdej usługi mobilnej.  
   
      To ustawienie adresu URL usługi `https://wpfquickstart01.azure-mobile.net/`.  
   
@@ -491,7 +491,7 @@ Windows Presentation Foundation (WPF) umożliwia szybkie tworzenie nowoczesnych 
 5. W **REGION** wybierz centrum danych, w której chcesz wdrożyć usługę mobilną, a następnie wybierz **dalej** przycisku (Strzałka w prawo).  
   
     > [!NOTE]
-    >  Dla tej usługi użyje domyślnej **ZAPLECZA** ustawienie **JavaScript**.  
+    > Dla tej usługi użyje domyślnej **ZAPLECZA** ustawienie **JavaScript**.  
   
 6. W przypadku tworzenia nowej bazy danych na **Określ ustawienia bazy danych** strony w **serwera** listy wybierz **serwer bazy danych SQL na nowy**, wprowadź swoje **identyfikator logowania SQL Nazwa** i **hasło**, a następnie wybierz **Complete** przycisku (znacznik wyboru).  
   

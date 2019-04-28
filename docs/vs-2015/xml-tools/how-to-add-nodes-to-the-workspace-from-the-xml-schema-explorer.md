@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d4afaab4b0e687d1343e810002ae4ad46c869b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1fef367b36a683111369b656c8c1ba5a285fe6df
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417467"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Instrukcje: Dodawanie węzłów do obszaru roboczego z eksploratora schematu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60043977"
 W tym temacie opisano sposób dodawania węzłów do [obszar roboczy Projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md) z Eksploratora schematu XML. Można to osiągnąć przez przeciąganie i upuszczanie węzłów z Eksploratora schematu XML na widok Projektant XSD lub za pomocą menu kontekstowego Eksploratora schematu XML. Można również dodać węzły, które są wyróżnione w wyniku wyszukiwania z zastosowaniem Eksploratora schematu XML. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie węzłów wyników wyszukiwania zestawu schematu do obszaru roboczego](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).  
   
 > [!NOTE]
->  Tylko globalne węzły mogą być dodawane do [obszar roboczy Projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md).  
+> Tylko globalne węzły mogą być dodawane do [obszar roboczy Projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md).  
   
 ### <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>Aby dodać węzły za pomocą Menu kontekstowego Eksploratora XML  
   

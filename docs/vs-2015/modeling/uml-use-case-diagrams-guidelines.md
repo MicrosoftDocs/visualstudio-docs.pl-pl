@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc5415452c6837fa92e1a37ca5d8dfe2a4dd40f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd0ba9030d658abb78605cf2e14b5afaa9678f78
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424304"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagramy przypadków użycia UML: Wytyczne dotyczące
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
 ## <a name="BasicSteps"></a> Podstawowe kroki rysowania diagramów przypadków użycia  
   
 > [!NOTE]
->  Szczegółowe kroki tworzenia dowolnego diagramu modelowania zawiera są opisane w [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
+> Szczegółowe kroki tworzenia dowolnego diagramu modelowania zawiera są opisane w [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-new-use-case-diagram"></a>Aby utworzyć nowy diagram przypadków użycia  
   
@@ -133,7 +133,7 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
  Wyspecjalizowane aktora może mieć własną przypadków dodatkowe użycie, które nie są dostępne dla innych aktorów.  
   
 > [!CAUTION]
->  Nie należy podejmować pętli relacji Generalizacja, które powoduje Aktor uogólnianie sam. Pętli może generować błędy.  
+> Nie należy podejmować pętli relacji Generalizacja, które powoduje Aktor uogólnianie sam. Pętli może generować błędy.  
   
 ### <a name="alternative-actor-icons"></a>Ikony alternatywnych aktora  
  Niestandardowe ikony służy do reprezentowania aktora, zamiast standardowego kreska. Na przykład można zmienić go na podobny urządzenia, restauracji, bank i tak dalej.  
@@ -160,7 +160,7 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
  ![W przypadku jeden-do-jednego za pomocą aktora](../modeling/media/uml-ucguidemulti1.png "UML_UCGuideMulti1")  
   
 > [!NOTE]
->  Liczebność punktów skojarzenia na diagramie przypadków użycia są ukryte, jeśli są one zarówno **1**.  
+> Liczebność punktów skojarzenia na diagramie przypadków użycia są ukryte, jeśli są one zarówno **1**.  
   
  Domyślnie każdy liczebność jest **1**. Ścisłe interpretacji modelu liczebnością 1 oznacza, że, na przykład tylko jednego klienta są zaangażowane w kolejności każdy posiłek, i czy każdy klient porządkuje posiłku tylko jeden w danym momencie.  
   
@@ -197,7 +197,7 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
    - **\\*** Aby stwierdzać, że zero lub więcej wystąpień tej roli uczestniczyć w linku.  
   
 > [!NOTE]
->  Wiele zespołów nie należy umieszczać informacje liczebność na diagramy przypadków użycia, pozostawiając Liczebność punktów na wartość domyślną 1. Zamiast tego zapewniają informacje przedstawione w osobnym opisy przypadki użycia. W takim przypadku zostaną ukryte wszystkich Liczebność punktów diagramy przypadków użycia.  
+> Wiele zespołów nie należy umieszczać informacje liczebność na diagramy przypadków użycia, pozostawiając Liczebność punktów na wartość domyślną 1. Zamiast tego zapewniają informacje przedstawione w osobnym opisy przypadki użycia. W takim przypadku zostaną ukryte wszystkich Liczebność punktów diagramy przypadków użycia.  
   
 ### <a name="using-an-actor-or-use-case-on-multiple-diagrams"></a>Za pomocą przypadek aktora lub użyj na wiele diagramów  
  Można wyświetlić tych samych podmiotów i kilka diagramów przypadków użycia. Na przykład:  
@@ -215,7 +215,7 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
 3. Przeciągnij aktora lub przypadek użycia poza **Eksploratora modelu** na nowego diagramu.  
   
     > [!NOTE]
-    >  Jeśli umieścisz przy nowym diagramie aktora i przypadek użycia, które są już skojarzone, skojarzenie między nimi będzie wyświetlał nowego diagramu.  
+    > Jeśli umieścisz przy nowym diagramie aktora i przypadek użycia, które są już skojarzone, skojarzenie między nimi będzie wyświetlał nowego diagramu.  
   
 ## <a name="Details"></a> Zastosowań szczegółowo opisujący  
  Reprezentuje przypadek użycia:  
@@ -277,7 +277,7 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
 3. Za pomocą nowego artefaktu wybrane, wpisz lub wklej adres URL do **hiperłącze** właściwości.  
   
 > [!NOTE]
->  Możesz kliknąć dwukrotnie artefakt Otwórz diagram lub dokumentów, do której łączy.  
+> Możesz kliknąć dwukrotnie artefakt Otwórz diagram lub dokumentów, do której łączy.  
   
 ### <a name="linking-use-cases-to-work-items"></a>Łączenie przypadków użycia z elementami roboczymi  
  Jeśli projekt używa [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] i masz [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], możesz połączyć każdego przypadku użycia elementu roboczego na [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Aby dowiedzieć się, jak te łącza, zobacz [łączenie elementów modeli i elementów roboczych](../modeling/link-model-elements-and-work-items.md).  
@@ -309,7 +309,7 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
  Użyj **Include** relacji, aby wyświetlić ten przypadek użycia jednego opisano niektóre szczegóły każdego innego. Na ilustracji **zamówienie posiłku** obejmuje **płacić**, **wybierz Menu**, i **wybierz element Menu**. Każdy z przypadkami użycia uwzględniona, bardziej szczegółowe jest krokiem, który aktora lub aktorów, może być konieczne przeprowadzenie do osiągnięcia celu ogólnej, w tym przypadku użycia. Strzałkę powinien wskazywać w przypadku użycia bardziej szczegółowe, dołączone.  
   
 > [!CAUTION]
->  Nie należy podejmować pętli obejmują relacje, które powodują w przypadku użycia wraz z tym elementem. Pętle może powodować generowanie błędów.  
+> Nie należy podejmować pętli obejmują relacje, które powodują w przypadku użycia wraz z tym elementem. Pętle może powodować generowanie błędów.  
   
  Możesz udostępnić przypadki użycia uwzględniona. W tym przykładzie **zamówienie posiłku** i **subskrybować przeglądy** zastosowań oferują **płacić**.  
   
@@ -346,7 +346,7 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
  Na przykład **płacić** uogólnia **zapłacić kartą kredytową** i **płacić za**.  
   
 > [!CAUTION]
->  Nie należy podejmować pętli relacji Generalizacja prowadzących Aktor uogólnianie sam. Pętli może generować błędy.  
+> Nie należy podejmować pętli relacji Generalizacja prowadzących Aktor uogólnianie sam. Pętli może generować błędy.  
   
  Zastosowań specjalnych może pomóc w przedstawiono różne sposoby, że system może osiągnąć ten sam cel.  
   
@@ -374,7 +374,7 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
  ![Przypadek użycia jednej, innej rozszerzanie](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")  
   
 > [!CAUTION]
->  Nie należy podejmować pętli rozszerzyć relacji prowadzących Aktor uogólnianie sam. Pętli może generować błędy.  
+> Nie należy podejmować pętli rozszerzyć relacji prowadzących Aktor uogólnianie sam. Pętli może generować błędy.  
   
  Na przykład **logowania** przypadek użycia typowych witryny sieci Web mogą zawierać **rejestrowanie nowego użytkownika** —, ale tylko po użytkownik nie ma jeszcze konta usługi.  
   
@@ -391,7 +391,7 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
    3. Kliknij przycisk przypadku rozszerzonego użycia (**logowania** w przykładzie).  
   
        > [!NOTE]
-       >  Unikaj tworzenia pętlę relacji rozszerzenie na diagramie. Jest niepoprawny dla przypadek użycia jako rozszerzenie samego siebie.  
+       > Unikaj tworzenia pętlę relacji rozszerzenie na diagramie. Jest niepoprawny dla przypadek użycia jako rozszerzenie samego siebie.  
   
 3. Jeśli masz już utworzoną rozszerzone scenariusze przypadków użycia, Przenieś odpowiednie kroki w scenariuszu rozszerzenia.  
   
@@ -425,7 +425,7 @@ W programie Visual Studio, można narysować *diagram przypadków użycia* do po
    Aby utworzyć nowy przypadek użycia bezpośrednio w podsystemie, kliknij przycisk **przypadek użycia** w przyborniku, następnie kliknij wewnątrz podsystemu.  
   
 > [!NOTE]
->  **Przedmioty** właściwości przypadku użycia wskazuje, jakie podsystemu znajduje się w.  
+> **Przedmioty** właściwości przypadku użycia wskazuje, jakie podsystemu znajduje się w.  
   
 ### <a name="use-cases-outside-the-system-scope"></a>Przypadki użycia poza zakresem systemu  
  Jest często przydatny diagram przypadków użycia, które należą do firmy, ale nie zajmuje się przez system, który tworzysz. Dzięki temu deweloperzy rozumiesz jeszcze kontekst ich pracy. Na przykład dostarczanie posiłku można pokazać jako przypadek użycia udziałem aktorów restauracjach i klienta, ale poza programem odpowiedzialność z posiłku porządkowanie witryny sieci Web.  

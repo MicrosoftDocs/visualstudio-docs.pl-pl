@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d030b4a59f2140b99df19e141f2d872c1e8fc394
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a7ac9c63a8524de17541a46f4fecb9e8d9a5ff69
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423303"
 ---
 # <a name="project-configuration-for-output"></a>Konfigurowanie projektu dla danych wyjściowych
 Każdej konfiguracji może obsługiwać zestaw procesów kompilacji, które generują dane wyjściowe elementów, takich jak pliki wykonywalne lub zasobu. Te elementy danych wyjściowych są prywatne dla użytkownika i można umieścić w grupach, które łączą powiązanych typów danych wyjściowych, takich jak pliki wykonywalne (.exe, .dll, .lib) i pliki źródłowe (.idl, pliki .h).
@@ -25,7 +25,7 @@ Każdej konfiguracji może obsługiwać zestaw procesów kompilacji, które gene
  Konstrukcja opracowane przez zaimplementowanie `IVsOutputGroup` umożliwia projekty do grupy danych wyjściowych, zgodnie z użycia. Na przykład biblioteki DLL mogą być pogrupowane ze swojej bazy danych programu (PDB).
 
 > [!NOTE]
->  Plik PDB zawiera informacje o debugowaniu i jest tworzona, gdy określono opcję "Generuj informacje debugowania", podczas kompilowania .dll lub .exe. Plik .pdb zazwyczaj zostanie wygenerowany tylko Konfiguracja projektu debugowania.
+> Plik PDB zawiera informacje o debugowaniu i jest tworzona, gdy określono opcję "Generuj informacje debugowania", podczas kompilowania .dll lub .exe. Plik .pdb zazwyczaj zostanie wygenerowany tylko Konfiguracja projektu debugowania.
 
  Projekt musi zwracać taką samą liczbę grup dla każdej konfiguracji, który ją obsługuje, nawet jeśli liczba wyjść zawarty w grupie będzie zależeć od konfiguracja. Na przykład projektu Matt biblioteki DLL mogą dotyczyć mattd.dll i mattd.pdb w konfiguracji debugowania, ale tylko matt.dll w konfiguracji sieci sprzedaży.
 

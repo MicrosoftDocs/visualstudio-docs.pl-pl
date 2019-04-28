@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8572deb32ea5fab2ce8ad831deeaba783496cbc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a1e9a3abd6b16ae0365279a6eb9cb067bfeb225
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430851"
 ---
 # <a name="microsoft-help-viewer"></a>Podgląd Pomocy firmy Microsoft
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60104333"
 Można zainstalować i wyświetlić zawartość dla różnych produktów i technologii na komputerze lokalnym przy użyciu Podglądu pomocy firmy Microsoft.  
   
 > [!WARNING]
->  Po zainstalowaniu programu Visual Studio, możesz uzyskać podgląd pomocy. Aby rozpocząć, Odczyt tematów pomocy w Podglądzie pomocy, a nie w witrynie pobierania MSDN, przejdź do **pomocy** menu w programie Visual Studio, wybierz **Ustaw preferencje pomocy**, a następnie wybierz **Uruchom w pomocy Podgląd**. Offline tematy pomocy dla danej wersji programu Visual Studio są dostępne tylko po ostatecznej wersji tej wersji.  
+> Po zainstalowaniu programu Visual Studio, możesz uzyskać podgląd pomocy. Aby rozpocząć, Odczyt tematów pomocy w Podglądzie pomocy, a nie w witrynie pobierania MSDN, przejdź do **pomocy** menu w programie Visual Studio, wybierz **Ustaw preferencje pomocy**, a następnie wybierz **Uruchom w pomocy Podgląd**. Offline tematy pomocy dla danej wersji programu Visual Studio są dostępne tylko po ostatecznej wersji tej wersji.  
   
  Możesz wykonać następujące czynności:  
   

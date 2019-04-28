@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0535ec606722ec162804718e7ee14bdd4714f4b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 047ac897931cbb93d8a06406e300d39cd83a9fe4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406749"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Instrukcje: Instalowanie wymagań wstępnych przy użyciu aplikacji ClickOnce
 Wszystkie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje wymagają poprawną wersję programu .NET Framework jest zainstalowanie na komputerze przed zadania mogą być uruchamiane; wiele aplikacji ma również inne wymagania wstępne. Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, można wybrać zestaw wstępnie wymagane składniki do umieszczenia w pakiecie wraz z aplikacji. W trakcie instalacji będą sprawdzane dla poszczególnych wymagań wstępnych określić, jeśli już istnieje; Jeśli nie zostanie zainstalowany przed zainstalowaniem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.
@@ -29,12 +29,12 @@ Wszystkie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] apli
  Zamiast pakowanie i publikowania wymagań wstępnych, można również określić lokalizację pobierania dla składników. Na przykład, zamiast w tym wstępnie wymaganych składników w każdej publikowanej aplikacji, można na przykład udział scentralizowanego pliku lub lokalizacji w sieci Web, który zawiera pliki instalacyjne, wszystkie Twoje wymagania wstępne — w czasie instalacji składników zostaną pobrane i instalowane z tej lokalizacji.
 
 > [!IMPORTANT]
->  Należy dodać pakietów wymagań wstępnych Instalatora na komputerze dewelopera, przed opublikowaniem pierwszej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. Aby uzyskać więcej informacji, zobacz [jak: Uwzględnianie wstępnie wymaganych składników w aplikacji ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).
+> Należy dodać pakietów wymagań wstępnych Instalatora na komputerze dewelopera, przed opublikowaniem pierwszej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. Aby uzyskać więcej informacji, zobacz [jak: Uwzględnianie wstępnie wymaganych składników w aplikacji ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).
 
  Wymagania wstępne są zarządzane w **wymagania wstępne** okno dialogowe, dostępna z **Publikuj** okienku **projektanta projektu**.
 
 > [!NOTE]
->  Oprócz listy wstępnie zdefiniowanych wymagań wstępnych można dodać własne składniki do listy. Aby uzyskać więcej informacji, zobacz [tworzenie pakietów programu inicjującego](../deployment/creating-bootstrapper-packages.md).
+> Oprócz listy wstępnie zdefiniowanych wymagań wstępnych można dodać własne składniki do listy. Aby uzyskać więcej informacji, zobacz [tworzenie pakietów programu inicjującego](../deployment/creating-bootstrapper-packages.md).
 
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Aby określić wymagania wstępne dotyczące instalacji za pomocą aplikacji ClickOnce
 
@@ -65,7 +65,7 @@ Wszystkie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] apli
 6. Wybierz lokalizację z listy rozwijanej lub wprowadź adres URL, ścieżkę pliku lub lokalizację FTP, a następnie kliknij **OK.**
 
     > [!NOTE]
-    >  Upewnij się, że instalatory dla określone składniki istnieje w określonej lokalizacji.
+    > Upewnij się, że instalatory dla określone składniki istnieje w określonej lokalizacji.
 
 ## <a name="see-also"></a>Zobacz także
 - [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)

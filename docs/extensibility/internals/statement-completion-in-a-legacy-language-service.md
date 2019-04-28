@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a8301bb5daf0334a48078690a15b1f3d2991698
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: dcc86d8c43703b0274c5282c9f4f843f760e697c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428907"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Uzupełnianie instrukcji w starszej wersji usługi językowej
 Uzupełnianie instrukcji jest procesem, za pomocą którego usługa językowa ułatwiają zakończyć słowem kluczowym języka lub element, który zostały uruchomione, wpisz w edytorze podstawowych. W tym temacie omówiono, jak działa uzupełniania instrukcji i sposobie jego implementowania w usłudze języka.
@@ -24,7 +24,7 @@ Uzupełnianie instrukcji jest procesem, za pomocą którego usługa językowa u�
  Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej na temat nowych sposobem realizowania uzupełniania instrukcji, zobacz [instruktażu: Wyświetlanie uzupełniania instrukcji](../../extensibility/walkthrough-displaying-statement-completion.md).
 
 > [!NOTE]
->  Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.
+> Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.
 
 ## <a name="implementing-statement-completion"></a>Implementowanie uzupełnianie instrukcji
  W edytorze podstawowych uzupełniania instrukcji aktywuje specjalny interfejs użytkownika, który interaktywnie pomaga łatwo i szybko napisać kod. Uzupełnianie instrukcji pomaga, wyświetlając odpowiednie obiekty lub klasy, gdy są one potrzebne, co pozwala uniknąć, trzeba pamiętać określone elementy lub do wyszukania w temacie pomocy odwołania.

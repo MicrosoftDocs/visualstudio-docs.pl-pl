@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d07ba77739b4ff9749591405daf12fa66bae94e5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 255d752e09a14e784de276fbed0d86a587bc4512
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411241"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Instrukcje: Debugowanie niestandardowego aparatu debugowania
 Typ projektu spowoduje uruchomienie aparatu debugowania (DE) z <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> metody. Oznacza to, że DE jest uruchamiane pod kontrolą programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kontrolowanie tego typu projektu. Jednak to wystąpienie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nie można debugować DE. Poniżej przedstawiono kroki, które umożliwiają debugowanie Twojego niestandardowego DE.
 
 > [!NOTE]
->  :     W procedurze "Debugowanie niestandardowego aparatu debugowania" należy poczekać DE do uruchomienia, zanim będzie możliwe dołączenie do niej. Jeśli na początku swoje DE, który jest wyświetlany, gdy rozpoczyna się DE okno komunikatu, możesz dołączyć w tym momencie, a następnie wyczyść okno komunikatu, aby kontynuować. W ten sposób możesz przechwytywać wszystkie zdarzenia DE.
+> :     W procedurze "Debugowanie niestandardowego aparatu debugowania" należy poczekać DE do uruchomienia, zanim będzie możliwe dołączenie do niej. Jeśli na początku swoje DE, który jest wyświetlany, gdy rozpoczyna się DE okno komunikatu, możesz dołączyć w tym momencie, a następnie wyczyść okno komunikatu, aby kontynuować. W ten sposób możesz przechwytywać wszystkie zdarzenia DE.
 
 > [!WARNING]
->  Konieczne jest posiadanie zdalne debugowanie, przed rozpoczęciem poniższej procedury. Zobacz [zdalne debugowanie](../../debugger/remote-debugging.md) Aby uzyskać szczegółowe informacje.
+> Konieczne jest posiadanie zdalne debugowanie, przed rozpoczęciem poniższej procedury. Zobacz [zdalne debugowanie](../../debugger/remote-debugging.md) Aby uzyskać szczegółowe informacje.
 
 ## <a name="debug-a-custom-debug-engine"></a>Debugowanie niestandardowego aparatu debugowania
 

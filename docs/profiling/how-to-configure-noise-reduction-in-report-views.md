@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99a844bbc32b3b974469fea832aaaebdcefb24f9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b55587bfde894c6104d805d9aae291191d1200ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439146"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Instrukcje: Konfigurowanie redukcji szumu w widoku raportu
 Raporty dotyczące wydajności można skonfigurować dla obniżenia poziomu hałasu, ograniczając ilość danych, które są prezentowane w widokach drzewo wywołań i alokacji. Za pomocą redukcji szumu, problemy z wydajnością są lepiej widoczne. Jest to przydatne podczas analizowania raportów wydajności.
@@ -41,7 +41,7 @@ Raporty dotyczące wydajności można skonfigurować dla obniżenia poziomu hał
     1. Wybierz **Włącz przycinanie**. To jest ustawienie domyślne.
 
         > [!NOTE]
-        >  Jeśli włączono redukcję szumów pasek informacji będą wyświetlane w raporcie. Aby uzyskać więcej informacji, zobacz [widok drzewa wywołań](../profiling/call-tree-view.md) i [Widok alokacji](../profiling/dotnet-memory-allocations-view.md).
+        > Jeśli włączono redukcję szumów pasek informacji będą wyświetlane w raporcie. Aby uzyskać więcej informacji, zobacz [widok drzewa wywołań](../profiling/call-tree-view.md) i [Widok alokacji](../profiling/dotnet-memory-allocations-view.md).
 
     2. Skonfiguruj ustawienie wartości przy użyciu **wartość** listy rozwijanej i wybierając odpowiednie ustawienie.
 
@@ -64,7 +64,7 @@ Raporty dotyczące wydajności można skonfigurować dla obniżenia poziomu hał
     1. Wybierz **Włącz zwijanie**. To jest ustawienie domyślne.
 
         > [!NOTE]
-        >  Jeśli włączono redukcję szumów pasek informacji będą wyświetlane w raporcie. Aby uzyskać więcej informacji, zobacz [widok drzewa wywołań](../profiling/call-tree-view.md) i [Widok alokacji](../profiling/dotnet-memory-allocations-view.md).
+        > Jeśli włączono redukcję szumów pasek informacji będą wyświetlane w raporcie. Aby uzyskać więcej informacji, zobacz [widok drzewa wywołań](../profiling/call-tree-view.md) i [Widok alokacji](../profiling/dotnet-memory-allocations-view.md).
 
     2. Skonfiguruj ustawienie wartości przy użyciu **wartość** listy rozwijanej i wybierając odpowiednie ustawienie.
 

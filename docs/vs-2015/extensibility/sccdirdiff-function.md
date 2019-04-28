@@ -12,12 +12,12 @@ ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f80636e8dd16d372ceaf3d6032e861738d97b46c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 81279e0fdb0df6600686adc57bb1c5489e8e7aab
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432456"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff, funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ SCCRTN SccDirDiff(
 |SCC_DIFF_QD_TIME|Jeśli obsługiwane przez dodatek typu plug-in, dyskretnie porównuje katalogiem, za pośrednictwem jego sygnatura czasowa lub, jeśli nie jest obsługiwane, powraca na SCC_DIFF_QD_CHECKSUM lub SCC_DIFF_QD_CONTENTS.|  
   
 > [!NOTE]
->  Ta funkcja używa tego samego flag poleceń jako [SccDiff](../extensibility/sccdiff-function.md). Jednak nie obsługuje operacji "szybkie diff" w przypadku katalogów wybrać wtyczki kontroli źródła.  
+> Ta funkcja używa tego samego flag poleceń jako [SccDiff](../extensibility/sccdiff-function.md). Jednak nie obsługuje operacji "szybkie diff" w przypadku katalogów wybrać wtyczki kontroli źródła.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25c4359a5ff64a3ddd229e872aa8a52303c22bf2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fef5d4ab83d22b31b64c6e6ec509cab47a426f9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426960"
 ---
 # <a name="understanding-the-dsl-code"></a>Znajomość kodu DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Rozwiązania języka specyficznego dla domeny (DSL) generuje interfejs API, któ
  Aby utworzyć rozwiązanie, który jest źródłem Większość przykładów w tym temacie, należy utworzyć DSL z **modeli składnika** szablonu rozwiązania. Jest to jeden z szablonów standardowych, które pojawia się podczas tworzenia nowego rozwiązania języka DSL.  
   
 > [!NOTE]
->  Szablon języka DSL diagramów składników nie jest związana z diagramy składników UML, które można utworzyć za pomocą menu architektury w programie Visual Studio. W **nowy projekt** okna dialogowego rozwiń **inne Types\Extensibility projektu** a następnie kliknij przycisk **projektanta języka specyficznego dla domeny**.  
+> Szablon języka DSL diagramów składników nie jest związana z diagramy składników UML, które można utworzyć za pomocą menu architektury w programie Visual Studio. W **nowy projekt** okna dialogowego rozwiń **inne Types\Extensibility projektu** a następnie kliknij przycisk **projektanta języka specyficznego dla domeny**.  
   
  Naciśnij klawisz F5 i eksperymentowania, jeśli nie jesteś zaznajomiony z tym szablonie rozwiązania. Należy zauważyć w szczególności utworzyć portów, przeciągając narzędzie portu na składnik, a następnie połączyć porty.  
   
@@ -133,7 +133,7 @@ Rozwiązania języka specyficznego dla domeny (DSL) generuje interfejs API, któ
   Klasa, która reprezentuje modelu domeny. Jest pochodną <xref:Microsoft.VisualStudio.Modeling.DomainModel>.  
   
 > [!NOTE]
->  Nie jest taka sama jak klasa główna modelu.  
+> Nie jest taka sama jak klasa główna modelu.  
   
  Kopiuj i Usuń zamknięcia definiują, co inne elementy powinny być włączone, gdy element zostanie skopiowany lub usunięty. To zachowanie można kontrolować przez ustawienie **propaguje kopiowania** i **propaguje usunąć** właściwości ról na każdej stronie każda relacja. Jeśli chcesz, aby wartości, które mają być określany dynamicznie, można napisać kod, aby przesłonić metody klasy zamknięcia. Aby uzyskać więcej informacji, zobacz [jak: Program kopiowania i wklejania zachowanie — przekierowanie](../misc/how-to-program-copy-and-paste-behavior-redirect.md).  
   
@@ -344,7 +344,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  Aby dostosować ten plik, Edytuj `.tt` pliku.  
   
 > [!WARNING]
->  Po zmodyfikowaniu pliku .tt, aby uwzględnić zasoby, takie jak ikony lub obrazów, upewnij się, czy zasób jest uwzględniony w kompilacji VSIX. W Eksploratorze rozwiązań wybierz plik, a następnie upewnij się, że **Include w VSIX** właściwość `True`.  
+> Po zmodyfikowaniu pliku .tt, aby uwzględnić zasoby, takie jak ikony lub obrazów, upewnij się, czy zasób jest uwzględniony w kompilacji VSIX. W Eksploratorze rozwiązań wybierz plik, a następnie upewnij się, że **Include w VSIX** właściwość `True`.  
   
  Ten plik Określa, jak język DSL jest spakowany w Visual Studio Integration rozszerzenie (VSIX). Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](../modeling/deploying-domain-specific-language-solutions.md).  
   

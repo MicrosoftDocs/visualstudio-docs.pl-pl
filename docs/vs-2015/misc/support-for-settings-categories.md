@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: 833783267c70c0a201e4b84bc5031bce517dc0a2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b66724542d45aa6f57b7c2748c7c1cab1ec8c064
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436563"
 ---
 # <a name="support-for-settings-categories"></a>Obsługa ustawień kategorii
 Kategoria Ustawienia składa się z grupą opcje umożliwiające dostosowanie zintegrowanego środowiska programistycznego (IDE). Na przykład ustawienia można kontrolować układ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] systemów windows i zawartość elementu menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -25,7 +25,7 @@ Kategoria Ustawienia składa się z grupą opcje umożliwiające dostosowanie zi
  Kontrolka drzewa w okienku nawigacji strony Wyświetla listę kategorii. Kategoria jest grupą powiązanych ustawień, które są wyświetlane jako "punkt niestandardowe ustawienia", oznacza to, jak pole wyboru. Użyjesz tych pól wyboru do wybierz kategorie, aby zachować w pliku .vsettings. Kreator umożliwia .vsettings plikowi nazwę i wprowadź jego ścieżkę.  
   
 > [!NOTE]
->  Ustawienia są zapisywane lub przywrócone jako kategorii i nazwy poszczególnych ustawień nie są wyświetlane w kreatorze.  
+> Ustawienia są zapisywane lub przywrócone jako kategorii i nazwy poszczególnych ustawień nie są wyświetlane w kreatorze.  
   
  Środowiska pakietu zarządzanego (MPF) obsługuje tworzenie kategorii ustawień z co najmniej dodatkowego kodu.  
   
@@ -48,7 +48,7 @@ Kategoria Ustawienia składa się z grupą opcje umożliwiające dostosowanie zi
  Ścieżka rejestru kategorii ustawień jest określana przez łączenie <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, wyraz, ustawienia użytkownika, kategoria ustawienia i nazwę punktu ustawienia niestandardowe. Nazwy kategorii ustawień i punktu ustawienia niestandardowe są przyłączone do i oddzielone znakiem podkreślenia w celu utworzenia canonical, niezlokalizowana Nazwa wyświetlana w rejestrze. Na przykład jeśli kategoria ustawień jest "Mój Category", "Moje ustawienia nazwy" i ApplicationRegistryRoot HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp punktu niestandardowe ustawienia, a następnie kategorii ustawień ma klucz rejestru, HKEY_LOCAL_ Ustawienia Category_My MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\UserSettings\My.  
   
 > [!NOTE]
->  Nazwa kanoniczna nie są wyświetlane w interfejsie użytkownika (UI). Służy do kojarzenia można odczytać nazwy z kategorii ustawienia, podobnie jak identyfikator programowy (ProgID).  
+> Nazwa kanoniczna nie są wyświetlane w interfejsie użytkownika (UI). Służy do kojarzenia można odczytać nazwy z kategorii ustawienia, podobnie jak identyfikator programowy (ProgID).  
   
 ### <a name="settings-category-attribute"></a>Atrybutu kategorii ustawień  
  <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> Określa mapowanie kategorii do punktów ustawienia niestandardowe w **Kreatora importowania i eksportowania ustawień** kategorii można skojarzyć z pakietu VSPackage, który ją obsługuje. Rozważmy następujący fragment kodu:  

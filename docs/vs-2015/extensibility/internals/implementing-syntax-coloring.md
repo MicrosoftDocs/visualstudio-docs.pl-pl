@@ -12,12 +12,12 @@ ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d2b47598e4102eefaa671fd5f362975aae0f4d53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 90ff340efb4cbdbe6e2ac43b5b459642120cc099
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447278"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementowanie kolorowania składni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Gdy usługa językowa udostępnia kolorowania składni, analizator konwertuje ta
  Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej o nowym sposobie Implementowanie kolorowania składni, zobacz [instruktażu: Wyróżnianie tekstu](../../extensibility/walkthrough-highlighting-text.md).  
   
 > [!NOTE]
->  Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.  
+> Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.  
   
 ## <a name="steps-followed-by-an-editor-to-colorize-text"></a>Kroki następuje edytor, którego można kolorować tekstu  
   

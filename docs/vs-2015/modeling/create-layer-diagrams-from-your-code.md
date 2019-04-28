@@ -14,12 +14,12 @@ caps.latest.revision: 64
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a3ff96a68d66c95d4f1302ba2f419c873e8f077d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8fd8188ef0efbe540e086ca6ce284a49b71444ed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433376"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Tworzenie diagramów warstw z kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Aby zwizualizować systemu oprogramowania logiczną architekturę wysokiego, Utw
  Przed utworzeniem diagramu warstwowego upewnij się, że rozwiązanie ma projektu modelowania. Zobacz [UML tworzenie projektów i diagramów modelowania](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
 > [!IMPORTANT]
->  Nie dodawaj, nie przeciągaj ani nie kopiuj istniejącego diagramu warstwowego z projektu modelowania do innego projektu modelowania ani do innej lokalizacji w rozwiązaniu. Pozwala to zachować odniesienia z oryginalnego diagramu nawet po zmianie diagramu. Mogłoby to także uniemożliwić prawidłowe działanie walidacji warstwy i spowodować wystąpienie innych problemów, takich jak brakujące elementy lub inne błędy, przy próbie otwarcia diagramu.  
+> Nie dodawaj, nie przeciągaj ani nie kopiuj istniejącego diagramu warstwowego z projektu modelowania do innego projektu modelowania ani do innej lokalizacji w rozwiązaniu. Pozwala to zachować odniesienia z oryginalnego diagramu nawet po zmianie diagramu. Mogłoby to także uniemożliwić prawidłowe działanie walidacji warstwy i spowodować wystąpienie innych problemów, takich jak brakujące elementy lub inne błędy, przy próbie otwarcia diagramu.  
 >   
->  Zamiast tego dodaj nowy diagram warstwowy do projektu modelowania. Skopiuj elementy z diagramu źródłowego do nowego diagramu. Zapisz zarówno projekt modelowania, jak i nowy diagram warstwowy.  
+> Zamiast tego dodaj nowy diagram warstwowy do projektu modelowania. Skopiuj elementy z diagramu źródłowego do nowego diagramu. Zapisz zarówno projekt modelowania, jak i nowy diagram warstwowy.  
   
 #### <a name="to-add-a-new-layer-diagram-to-a-modeling-project"></a>Aby dodać nowy diagram warstwowy do projektu modelowania  
   
@@ -53,7 +53,7 @@ Aby zwizualizować systemu oprogramowania logiczną architekturę wysokiego, Utw
      Wybierz **Utwórz nowy projekt modelowania** Aby dodać nowy projekt modelowania w rozwiązaniu.  
   
     > [!NOTE]
-    >  Diagram warstwowy musi istnieć w projekcie modelowania. Możesz jednak połączyć elementy w innym miejscu rozwiązania.  
+    > Diagram warstwowy musi istnieć w projekcie modelowania. Możesz jednak połączyć elementy w innym miejscu rozwiązania.  
   
 5. Pamiętaj, aby zapisać zarówno projekt modelowania, jak i diagram warstwowy.  
   
@@ -106,7 +106,7 @@ Aby zwizualizować systemu oprogramowania logiczną architekturę wysokiego, Utw
  Zależność istnieje wszędzie tam, gdzie artefakt, który jest skojarzony z jedną warstwą zawiera odwołanie do artefaktu skojarzonego z inną warstwą. Na przykład klasa w jednej warstwie deklaruje zmienną, która zawiera klasę w innej warstwie. Możesz odtwarzać istniejące zależności dla artefaktów, które są połączone z warstwami na diagramie.  
   
 > [!NOTE]
->  Zależności nie mogą być odtwarzane dla niektórych rodzajów artefaktów. Na przykład nie zostaną odtworzone żadne zależności z lub do warstwy, która jest połączona z plikiem tekstowym. Aby zobaczyć, które artefakty mają zależności można odtworzyć, otwórz menu skrótów dla jednej lub wielu warstw, a następnie wybierz **Wyświetl łącza**. W **Eksplorator warstw**, sprawdź **obsługuje walidację** kolumny. Zależności nie będą odtwarzane dla artefaktów, dla których ta kolumna zawiera **False**.  
+> Zależności nie mogą być odtwarzane dla niektórych rodzajów artefaktów. Na przykład nie zostaną odtworzone żadne zależności z lub do warstwy, która jest połączona z plikiem tekstowym. Aby zobaczyć, które artefakty mają zależności można odtworzyć, otwórz menu skrótów dla jednej lub wielu warstw, a następnie wybierz **Wyświetl łącza**. W **Eksplorator warstw**, sprawdź **obsługuje walidację** kolumny. Zależności nie będą odtwarzane dla artefaktów, dla których ta kolumna zawiera **False**.  
   
 - Zaznacz jedną lub wiele warstw, otwórz menu skrótów dla zaznaczonej warstwy, a następnie wybierz **Wygeneruj zależności**.  
   

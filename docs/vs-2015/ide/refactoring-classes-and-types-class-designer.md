@@ -20,12 +20,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1fae6a503323d42d4f759a30b4db790a88079815
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eaee3dae25f5f2e5544a2521a7bce0201b45a3e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441157"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refaktoryzacja klas i typów (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60048401"
 Refaktoryzacja kodu możesz ułatwić zrozumienie, obsługa i bardziej wydajne, zmieniając jego wewnętrzną strukturę i sposób jej obiektów są zaprojektowane nie jego zachowanie zewnętrznych. Umożliwia ograniczenie prac, które należy wykonać i ryzyko wprowadzenia błędów podczas refaktoryzacji kodu języka Visual C# .NET, Visual Basic .NET lub C++ w projekcie programu Visual Studio w Projektancie klas i oknie Szczegóły klasy.  
   
 > [!NOTE]
->  Pliki projektu może być tylko do odczytu, ponieważ projekt jest pod kontrolą kodu źródłowego i nie został wyewidencjonowany; jest to projekt odwołania; lub jego pliki są oznaczone jako tylko do odczytu na dysku. Podczas pracy w projekcie w jeden z tych stanów, zostaną wyświetlone różne sposoby, aby zapisać swoją pracę w zależności od stanu projektu. Dotyczy to refaktoryzacji kodu, a także kod, który możesz zmienić w inny sposób, na przykład bezpośrednio edytując ją. Aby uzyskać więcej informacji, zobacz [wyświetlanie informacji tylko do odczytu (Projektant klas)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
+> Pliki projektu może być tylko do odczytu, ponieważ projekt jest pod kontrolą kodu źródłowego i nie został wyewidencjonowany; jest to projekt odwołania; lub jego pliki są oznaczone jako tylko do odczytu na dysku. Podczas pracy w projekcie w jeden z tych stanów, zostaną wyświetlone różne sposoby, aby zapisać swoją pracę w zależności od stanu projektu. Dotyczy to refaktoryzacji kodu, a także kod, który możesz zmienić w inny sposób, na przykład bezpośrednio edytując ją. Aby uzyskać więcej informacji, zobacz [wyświetlanie informacji tylko do odczytu (Projektant klas)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
   
 ## <a name="common-tasks"></a>Typowe zadania  
   
@@ -65,7 +65,7 @@ Refaktoryzacja kodu możesz ułatwić zrozumienie, obsługa i bardziej wydajne, 
 3. Aby przenieść fokus od komórki, naciśnij klawisz **ENTER** klucza, lub kliknij przycisk od komórki.  
   
     > [!NOTE]
-    >  W oknie Szczegóły klasy można zmienić nazwę elementu członkowskiego, ale nie jest typem.  
+    > W oknie Szczegóły klasy można zmienić nazwę elementu członkowskiego, ale nie jest typem.  
   
 ##### <a name="to-rename-a-name-in-the-properties-window"></a>Aby zmienić nazwę w oknie dialogowym właściwości  
   

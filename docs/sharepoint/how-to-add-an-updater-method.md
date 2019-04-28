@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26b917b04314c99ba6575842b8e102113b22b469
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8204b13aa0405d01590e4aeb0fe43a92b41c226f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431262"
 ---
 # <a name="how-to-add-an-updater-method"></a>Instrukcje: Dodawanie metody Updater
   Możesz umożliwić użytkownikom zaktualizować dane biznesowe na liście programu SharePoint zewnętrznych, tworząc *Updater* metody. Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -50,7 +50,7 @@ ms.locfileid: "56596962"
      Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).
 
    > [!NOTE]
-   >  Jeśli identyfikator typu jednostki reprezentuje pole w tabeli bazy danych, który jest automatycznie generowany, ustaw **pole elementu Pre-Updater** właściwości **True**.
+   > Jeśli identyfikator typu jednostki reprezentuje pole w tabeli bazy danych, który jest automatycznie generowany, ustaw **pole elementu Pre-Updater** właściwości **True**.
 
 4. W **Eksploratora rozwiązań**, otwórz menu skrótów pliku kodu usługi, który został wygenerowany dla jednostki, a następnie wybierz **Wyświetl kod**.
 
@@ -59,7 +59,7 @@ ms.locfileid: "56596962"
 5. Dodaj kod do metody aktualizacji, aby zaktualizować dane. Poniższy przykład aktualizuje informacje dotyczące kontaktu w przykładowej bazy danych AdventureWorks programu SQL Server.
 
    > [!NOTE]
-   >  Zastąp wartość `ServerName` pole z nazwą serwera.
+   > Zastąp wartość `ServerName` pole z nazwą serwera.
 
     [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
     [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]

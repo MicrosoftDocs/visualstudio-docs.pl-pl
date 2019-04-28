@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b05288a8863b2c555493d4a3f7ea8e2b7537d5a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 5e3444e6eedde9576216552e41abb0e97aafa2d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58146724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412377"
 ---
 # <a name="idebugapplicationhandlebreakpoint"></a>IDebugApplication::HandleBreakPoint
 Powoduje, że bieżący wątek zablokować, a następnie wysyła powiadomienie z informacją o punkt przerwania do debugera w IDE.  
@@ -54,7 +54,7 @@ HRESULT HandleBreakPoint(
  Aparat języka wywołuje tę metodę w kontekście wątku, który trafienia punktu przerwania. Ta metoda blokują bieżący wątek i wysyła powiadomienie punkt przerwania do debugera w IDE. Gdy debuger wznowieniu działania aplikacji, `pbra` parametr określa, jaką akcję należy podjąć.  
   
 > [!NOTE]
->  Aparat języka może zostać wywołana przez wątek wykonywania zadań, takich jak wyliczanie stosu ramki lub obliczać wyrażeń podczas punkt przerwania.  
+> Aparat języka może zostać wywołana przez wątek wykonywania zadań, takich jak wyliczanie stosu ramki lub obliczać wyrażeń podczas punkt przerwania.  
   
  Ta metoda powoduje `IApplicationDebugger::onHandleBreakPoint` do wywołania.  
   

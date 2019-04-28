@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b2be6fbafc1520e190cc52bea839c6cf9e208ca4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9ad16165924a33a25dab2b1cfb49a0a7bbfe0875
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421535"
 ---
 # <a name="xmlnodes-control"></a>formant XMLNodes
   **Ważne** informacji zawartych w tym temacie dotyczące programu Microsoft Word jest prezentowane wyłącznie do korzyści i korzystanie z innym osobom oraz organizacjom, którzy znajdują się poza w Stanach Zjednoczonych i ich terytoriach lub korzystających z lub tworzenie programy, korzystających z produktów Microsoft Word, które są licencjonowane przez firmę Microsoft przed 2010 stycznia, po usunięciu implementację funkcji określonej przez Microsoft związane z niestandardowy kod XML z programu Microsoft Word. Te informacje dotyczące programu Microsoft Word nie mogą być odczytywane lub używane przez osoby i organizacje w Stanach Zjednoczonych lub jego terytoria, którzy za pomocą lub opracowywanie programów uruchamianych na produkty Microsoft Word, które są licencjonowane przez firmę Microsoft, po 10 stycznia 2010 r. ; te produkty będą nie działa tak samo jako produkty licencjonowane przed tą datą lub kupić i licencjonowane do użycia poza Stanami Zjednoczonymi.
@@ -30,7 +30,7 @@ ms.locfileid: "60090583"
  Gdy program Visual Studio utworzy kolekcję węzłów XML, można programować względem kontrolki bezpośrednio, bez konieczności przechodzenia z modelu obiektów programu Word. <xref:Microsoft.Office.Tools.Word.XMLNodes> Kontroli można usunąć tylko wtedy, usuwając mapowania elementu z dokumentu.
 
 > [!NOTE]
->  Jeśli masz dostępu do elementu podrzędnego <xref:Microsoft.Office.Tools.Word.XMLNodes> kontrolować za pośrednictwem <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> właściwość zwraca <xref:Microsoft.Office.Interop.Word.XMLNode> obiektu zamiast <xref:Microsoft.Office.Tools.Word.XMLNode> kontroli. Aby uzyskać więcej informacji, zobacz [ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+> Jeśli masz dostępu do elementu podrzędnego <xref:Microsoft.Office.Tools.Word.XMLNodes> kontrolować za pośrednictwem <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> właściwość zwraca <xref:Microsoft.Office.Interop.Word.XMLNode> obiektu zamiast <xref:Microsoft.Office.Tools.Word.XMLNode> kontroli. Aby uzyskać więcej informacji, zobacz [ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
 ## <a name="bind-data-to-the-control"></a>Wiązanie danych do kontrolki
  <xref:Microsoft.Office.Tools.Word.XMLNodes> Formant nie obsługuje powiązanie danych. Jest to spowodowane <xref:Microsoft.Office.Tools.Word.XMLNodes> formant nie ma powiązania możliwości złożonych danych i proste powiązanie danych nie może reprezentować powtarzających się danych.

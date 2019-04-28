@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bbc2135f292197a1856eaea8d80c03d1c41adff3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 96d18ae0684dab5b6dc5c4001b93804bb13aa75e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444261"
 ---
 # <a name="walkthrough-using-intellitrace"></a>Przewodnik: Używanie funkcji IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Dodatkowo do zebrania informacji dotyczących określonych zdarzeń lub kategori
 5. Rozpocznij standardowe debugowanie. (Naciśnij klawisz **F5** lub kliknij przycisk **debugowania / uruchamiania debugowania**.  
   
     > [!TIP]
-    >  Zachowaj **lokalne** i **Autos** otwarte okna podczas debugowania można zobaczyć i zapisać wartości w tych oknach.  
+    > Zachowaj **lokalne** i **Autos** otwarte okna podczas debugowania można zobaczyć i zapisać wartości w tych oknach.  
   
 6. Zatrzymuje wykonywanie w punkcie przerwania. Jeśli nie widzisz **narzędzia diagnostyczne** okna, kliknij przycisk **debugowanie / Windows / zdarzenia IntelliTrace**.  
   
@@ -87,7 +87,7 @@ Dodatkowo do zebrania informacji dotyczących określonych zdarzeń lub kategori
 1. Włącz kolekcję wywołań. (Na **narzędzia / Opcje / IntelliTrace / ogólne**, wybierz opcję **zdarzenia IntelliTrace i wywołania informacji**. IntelliTrace rozpocznie się zbieranie tych informacji, po rozpoczęciu następnej sesji debugowania.  
   
     > [!TIP]
-    >  Może to spowolnić aplikację i zwiększyć rozmiar wszystkich plików dziennika IntelliTrace (itrace) zapisywanych na dysku. Aby uzyskać większość danych wywołań, ale zminimalizować skutki, Zapisz dane tylko z tych modułów, które Cię interesują. Aby zmienić maksymalny rozmiar plików itrace, przejdź do **narzędzia / Opcje / IntelliTrace / zaawansowane**, a następnie określ maksymalną ilość miejsca na dysku. Wartość domyślna to 250 MB.  
+    > Może to spowolnić aplikację i zwiększyć rozmiar wszystkich plików dziennika IntelliTrace (itrace) zapisywanych na dysku. Aby uzyskać większość danych wywołań, ale zminimalizować skutki, Zapisz dane tylko z tych modułów, które Cię interesują. Aby zmienić maksymalny rozmiar plików itrace, przejdź do **narzędzia / Opcje / IntelliTrace / zaawansowane**, a następnie określ maksymalną ilość miejsca na dysku. Wartość domyślna to 250 MB.  
   
 2. Rozpocznij debugowanie aplikacji konsolowej C# utworzony w poprzedniej sekcji. Zatrzymuje wykonywanie w punkcie przerwania. Jeśli nie widzisz **narzędzia diagnostyczne** okna, kliknij przycisk **debugowanie / Windows / zdarzenia IntelliTrace**.  
   
@@ -98,6 +98,6 @@ Dodatkowo do zebrania informacji dotyczących określonych zdarzeń lub kategori
      Wybierz jedną z wywołania funkcji, a następnie kliknij go dwukrotnie. Punkty wejścia i wyjścia funkcji, a także wywołania, bieżącego wywołania innych funkcji i zdarzenia IntelliTrace wygenerowane przez wywołanie powinno być widoczne. Jeśli nie masz, debugowanie historyczne włączona, ta akcja powoduje włączenie. Aby dowiedzieć się więcej na temat debugowania historycznego, zobacz [debugowania historycznego](../debugger/historical-debugging.md).  
   
     > [!NOTE]
-    >  Możesz zobaczyć, że niektóre połączenia są wygaszone. Jest to spowodowane IntelliTrace nie zapisał danych z odpowiednich modułów. Aby wyświetlić te dane, należy mieć IntelliTrace zebrał dane z tych modułów. Aby uzyskać informacji na temat określania modułów, zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).  
+    > Możesz zobaczyć, że niektóre połączenia są wygaszone. Jest to spowodowane IntelliTrace nie zapisał danych z odpowiednich modułów. Aby wyświetlić te dane, należy mieć IntelliTrace zebrał dane z tych modułów. Aby uzyskać informacji na temat określania modułów, zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).  
   
 ## <a name="next-steps"></a>Następne kroki

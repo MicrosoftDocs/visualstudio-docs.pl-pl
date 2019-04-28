@@ -7,12 +7,12 @@ ms.date: 04/03/2019
 ms.topic: conceptual
 description: Dowiedz się, jak pobrać i zainstalować program Visual Studio IDE, zawarte w Twojej subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: ecd0baa87b2fd7cfddcc3e5f9bd1298393b5d7ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: af721e567e451c50533d0e476ec01acfa4022a53
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420811"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Za pośrednictwem korzyści z programu Visual Studio 2019 r.
 
@@ -55,17 +55,19 @@ Aby pobrać IDE:
 14. Zostanie otwarty program Visual Studio. Jesteś gotowy rozpocząć korzystanie z programu Visual Studio!
 
     ::: moniker range="vs-2017"
+
     > [!div class="mx-imgBorder"]
     > ![Rozpoczynanie korzystania z programu Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
+
     ::: moniker-end
 
 ## <a name="eligibility"></a>Uprawnienie
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Program Visual Studio Enterprise (standardowy, miesięczną w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Yes          |
-| Program Visual Studio Professional (standardowy, miesięczną w chmurze) | VL, Azure, Retail                                       | Dostępne                                                            |  Yes          |
-| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne                                             |  Yes         |
+| Program Visual Studio Enterprise (standardowy, miesięczną w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Tak          |
+| Program Visual Studio Professional (standardowy, miesięczną w chmurze) | VL, Azure, Retail                                       | Dostępne                                                            |  Tak          |
+| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne                                             |  Tak         |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                              |  Brak          |
 | Visual Studio Dev Essentials | Brak  | Visual Studio Community |Yes |
 

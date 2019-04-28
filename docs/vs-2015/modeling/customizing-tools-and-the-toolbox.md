@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 47b108cfbef8831f9650c7e1af29d528aa8abaa2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2a91615fc711d98970c1aace57cbef814e6fc2a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433210"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Dostosowywanie narzędzi i przybornika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Editor
 - Usuń karty i narzędzi.  
   
 > [!IMPORTANT]
->  Aby dodać lub wkleić elementy w Eksplorator DSL, kliknij prawym przyciskiem myszy pokolenia nowego węzła. Na przykład, aby dodać narzędzia, kliknij prawym przyciskiem myszy kartę, a nie **narzędzia** węzła. Aby dodać kartę, kliknij prawym przyciskiem myszy **edytora** węzła.  
+> Aby dodać lub wkleić elementy w Eksplorator DSL, kliknij prawym przyciskiem myszy pokolenia nowego węzła. Na przykład, aby dodać narzędzia, kliknij prawym przyciskiem myszy kartę, a nie **narzędzia** węzła. Aby dodać kartę, kliknij prawym przyciskiem myszy **edytora** węzła.  
   
  **Ikonę przybornika** właściwości każdego narzędzia odwołuje się do pliku mapy bitowej 16 x 16. Pliki te są zwykle przechowywane w **Dsl\Resources** folderu.  
   
@@ -191,7 +191,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   Należy podać niektóre kodu programu, aby wykonać te dostosowania. Aby sprawdzić, jaki kod, musisz podać, zaznacz jeden z tych pól, kliknij Przekształć wszystkie szablony, a następnie Skompiluj rozwiązanie. Powoduje, że raport o błędach. Kliknij dwukrotnie raport o błędach można wyświetlić komentarz, który objaśnia, jaki kod należy dodać.  
   
 > [!NOTE]
->  Aby dodać niestandardowy kod, Utwórz definicję klasy częściowej w pliku kodu niezależnie od plików kodu w folderach GeneratedCode. Aby uniknąć utraty wyników pracy, nie należy edytować pliki wygenerowanego kodu. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).  
+> Aby dodać niestandardowy kod, Utwórz definicję klasy częściowej w pliku kodu niezależnie od plików kodu w folderach GeneratedCode. Aby uniknąć utraty wyników pracy, nie należy edytować pliki wygenerowanego kodu. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).  
   
 #### <a name="creating-custom-connection-code"></a>Tworzenie połączenia niestandardowego kodu  
  W każdym odnośniku dyrektywa, łączenia **dyrektywy ról źródłowych** definiuje kartę co typów można przeciągnąć. Podobnie **dyrektywy ról docelowych** definiuje kartę co typów można przeciągnąć. Dla każdego typu, możesz podać, czy zezwolić na połączenia (dla dyrektywy łączenia tego linku), ustawiając **akceptowanie niestandardowe** Flaga, a następnie podając dodatkowego kodu.  

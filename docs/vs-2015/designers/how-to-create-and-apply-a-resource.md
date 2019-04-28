@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6b387acd7494396d118915f94a93ca88ec67199
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 47c7385ba54e432e42575f5b8cbae29172ddf62b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434471"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Jak utworzyć i stosowanie zasobów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Style i szablony dla elementów w Projektancie XAML są przechowywane w jednostk
    - Stosowanie zasobu szablon stylu lub kontrolki do formantu. Otwórz menu kontekstowe dla formantu w oknie konspekt dokumentu, wybierz opcję **Edytuj szablon** lub **Edytuj dodatkowe szablony**, wybierz **Zastosuj zasób**, a następnie wybierz pozycję Nazwa szablonu kontrolki z wyświetlonej listy.  
   
      > [!NOTE]
-     >  **Edytuj szablon** służy do stosowania szablonów kontrolek. **Edytuj dodatkowe szablony** służy do stosowania innego typu szablonu.  
+     > **Edytuj szablon** służy do stosowania szablonów kontrolek. **Edytuj dodatkowe szablony** służy do stosowania innego typu szablonu.  
   
      Zasoby mogą być stosowane wszędzie tam, gdzie są one zgodne. Na przykład, można zastosować do zasobu pędzla **pierwszego planu** właściwość <xref:Windows.UI.Xaml.Controls.TextBox> kontroli.  
   

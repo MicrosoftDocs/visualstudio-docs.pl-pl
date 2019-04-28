@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 653c2760c369381162f519223b75ce8a7468c507
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4c02e9dc3b1f355cc2c0f580ce88893ce7f34b46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433160"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definiowanie procedury obsługi gestów na diagramie modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ W programie Visual Studio można zdefiniować polecenia, które są wykonywane, 
 3. Dodaj plik klasy do projektu i ustawi jego zawartość do następującego kodu.  
   
    > [!NOTE]
-   >  Zmień nazwę przestrzeni nazw i klasy, zgodnie z preferencjami.  
+   > Zmień nazwę przestrzeni nazw i klasy, zgodnie z preferencjami.  
   
    ```  
    using System.ComponentModel.Composition;  

@@ -13,12 +13,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a9874379586dd077f857a58800010391da36d19f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7ff078649703eef438ff7f4b14a51e7f7d155231
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428202"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla aplikacji Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60069853"
 Program Visual Studio obejmuje obsługę testów jednostkowych zarządzanych [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacji i zawiera szablony bibliotek testów jednostkowych dla języka Visual C#, Visual Basic i Visual C++.  
   
 > [!TIP]
->  Aby uzyskać więcej informacji o tworzeniu [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacji, zobacz [Rozpoczynanie pracy z aplikacjami Windows Store](http://go.microsoft.com/fwlink/?LinkID=241410).  
+> Aby uzyskać więcej informacji o tworzeniu [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacji, zobacz [Rozpoczynanie pracy z aplikacjami Windows Store](http://go.microsoft.com/fwlink/?LinkID=241410).  
   
  Program Visual Studio oferuje następujące funkcje testowania jednostki:  
   
@@ -54,7 +54,7 @@ Program Visual Studio obejmuje obsługę testów jednostkowych zarządzanych [!I
 2. W obszarze Szablony wybierz język programowania, aby utworzyć test jednostki, a następnie wybierz polecenie skojarzonego [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] Biblioteka testów jednostkowych. Na przykład wybrać **Visual C#** , następnie wybierz **Windows Store**, a następnie wybierz **Biblioteka testów jednostkowych (Windows Store apps)**.  
   
     > [!NOTE]
-    >  Visual Studio zawiera szablony bibliotek testów jednostkowych dla języka Visual C#, Visual Basic i Visual C++.  
+    > Visual Studio zawiera szablony bibliotek testów jednostkowych dla języka Visual C#, Visual Basic i Visual C++.  
   
 3. (Opcjonalnie) W **nazwa** polu tekstowym wprowadź nazwę, którego chcesz użyć dla [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]projekt testów jednostkowych.  
   
@@ -84,7 +84,7 @@ Program Visual Studio obejmuje obsługę testów jednostkowych zarządzanych [!I
 3. Na liście w obszarze **możliwości**, wybierz możliwości potrzebne do testu jednostkowego i kod jej ma mieć test. Na przykład wybierz **Internet** pole wyboru, jeśli testy jednostkowe i kod jest testowanie muszą mieć możliwość dostępu do Internetu.  
   
     > [!NOTE]
-    >  Wybranych funkcji powinny znajdować się możliwości, które są niezbędne do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] testu jednostkowego, aby działo poprawnie. Nigdy nie mają możliwości uwzględnić możliwości, które nie są częścią [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacji przetestowane i zwykle powinny być podzestawem funkcji określonych dla [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]testowanej aplikacji.  
+    > Wybranych funkcji powinny znajdować się możliwości, które są niezbędne do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] testu jednostkowego, aby działo poprawnie. Nigdy nie mają możliwości uwzględnić możliwości, które nie są częścią [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacji przetestowane i zwykle powinny być podzestawem funkcji określonych dla [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]testowanej aplikacji.  
   
      Aby uzyskać więcej informacji dotyczących projektanta manifestów, zobacz [skonfigurować pakiet aplikacji Windows 8.1 przy użyciu manifest designer](http://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
   
@@ -111,22 +111,22 @@ Program Visual Studio obejmuje obsługę testów jednostkowych zarządzanych [!I
      Taki test jednostki znajduje się teraz.  
   
     > [!NOTE]
-    >  Należy utworzyć rozwiązanie, które można zaktualizować listy testów jednostkowych w Eksploratorze testów.  
+    > Należy utworzyć rozwiązanie, które można zaktualizować listy testów jednostkowych w Eksploratorze testów.  
   
     > [!WARNING]
-    >  Znany problem programu Visual Studio: Test Explorer należy otworzyć przed utworzeniem projektu testu.  
+    > Znany problem programu Visual Studio: Test Explorer należy otworzyć przed utworzeniem projektu testu.  
   
 3. W Eksploratorze testów wybierz utworzony test jednostki.  
   
     > [!TIP]
-    >  Test Explorer zawiera łącze do kodu źródłowego obok **źródło:**.  
+    > Test Explorer zawiera łącze do kodu źródłowego obok **źródło:**.  
   
 4. Wybierz **uruchomić wszystkie**.  
   
      ![Unit Test Explorer &#45; run unit test](../test/media/unit-test-win8-unittestexplorer-contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")  
   
     > [!TIP]
-    >  Można wybrać jeden lub więcej testów wymienionych w Eksploratorze i kliknij prawym przyciskiem myszy i wybierz **Uruchom wybrane testy**.  
+    > Można wybrać jeden lub więcej testów wymienionych w Eksploratorze i kliknij prawym przyciskiem myszy i wybierz **Uruchom wybrane testy**.  
     >   
     >  Ponadto istnieje możliwość **Debuguj wybrane testy**, **Otwórz Test**i użyj **właściwości** opcji.  
     >   

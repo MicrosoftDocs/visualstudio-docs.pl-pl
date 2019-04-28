@@ -18,12 +18,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e96d1db524d5a80a9f298fa84ca1ccf27e28fbf4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 54469f2e255ff9ea726ea1b6c13abcb55c33252d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444114"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Używanie starszej wersji Projektanta przepływu pracy automatu stanów
 Podczas tworzenia nowego projektu przepływu pracy maszyny stanu w [!INCLUDE[vs2010](../includes/vs2010-md.md)] który jest przeznaczony dla jednej [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], możesz użyć **Aplikacja konsoli przepływu pracy maszyny w stanie** lub  **Stan biblioteki przepływu pracy automatu** szablonu projektu w starszej wersji. Jeśli zostanie wybrana jedna z tych szablonów projektu maszyny stanu, Projektant machine stanu jest przedstawiany jako interfejsu użytkownika projektanta przepływu pracy w starszej wersji. Aby dowiedzieć się, szablony projektów maszyny stanu starszej wersji, zobacz [jak: Tworzenie aplikacji konsoli przepływu pracy automatu stanów (starsza wersja)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) i [jak: Tworzenie biblioteki przepływu pracy automatu stanów (starsza wersja)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
@@ -53,9 +53,9 @@ Podczas tworzenia nowego projektu przepływu pracy maszyny stanu w [!INCLUDE[vs2
  Przeciągnięcie nowego **działanie StateActivity** na powierzchnię projektu przepływu pracy, można dodać [EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029), [StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044), [ StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043), lub dodatkowe **działanie StateActivity** działań jako działania podrzędne.  
   
 > [!CAUTION]
->  Korzystając z projektanta przepływu pracy stanu komputera do tworzenia przepływów pracy, należy monitorować strukturę przepływu pracy są projektowanie z uwzględnieniem **konspekt dokumentu** okno widoku. Wyświetlanie struktury przepływ pracy automatu stanów w **konspekt dokumentu** widoku okna odzwierciedla logiczne układ działania w pliku znaczników przepływu pracy. Fizycznego układu działań przepływu pracy w jakiej występują na powierzchni projektowej może nie dublowanie logiczne układ działania w pliku znaczników przepływu pracy.  
+> Korzystając z projektanta przepływu pracy stanu komputera do tworzenia przepływów pracy, należy monitorować strukturę przepływu pracy są projektowanie z uwzględnieniem **konspekt dokumentu** okno widoku. Wyświetlanie struktury przepływ pracy automatu stanów w **konspekt dokumentu** widoku okna odzwierciedla logiczne układ działania w pliku znaczników przepływu pracy. Fizycznego układu działań przepływu pracy w jakiej występują na powierzchni projektowej może nie dublowanie logiczne układ działania w pliku znaczników przepływu pracy.  
 >   
->  Aby otworzyć **konspekt dokumentu** okna na **widoku** menu, wskaż **Windows inne**, a następnie wybierz pozycję **konspekt dokumentu**.  
+> Aby otworzyć **konspekt dokumentu** okna na **widoku** menu, wskaż **Windows inne**, a następnie wybierz pozycję **konspekt dokumentu**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Instrukcje: Tworzenie aplikacji konsoli przepływu pracy automatu stanów (starsza wersja)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   

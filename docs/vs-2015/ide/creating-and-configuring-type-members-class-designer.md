@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5cee90bd16f0b7a151ca826517f081a89518ff5b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d443a38750904df26fdfffc65104bcde31c8d6fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437607"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Tworzenie i konfigurowanie typów członków (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Możesz dodać te składowe do typów w klasie na diagramie i skonfigurować te 
 |Moduł (tylko w języku VB)|metoda, właściwość, pole, zdarzenie, konstruktor, stała|  
   
 > [!NOTE]
->  Utwórz bardziej zwartą deklarację właściwości, gdy akcesory właściwości get i set nie potrzebują dodatkowej logiki, za pomocą automatycznie wdrożonych właściwości (tylko C#). Aby wyświetlić pełny podpis z **Diagram klas** menu, wybierz **Zmień Format elementów członkowskich**, **Wyświetl pełną sygnaturę**. Aby uzyskać więcej informacji dotyczących automatycznie implementowanych właściwości, zobacz [implemented Properties](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
+> Utwórz bardziej zwartą deklarację właściwości, gdy akcesory właściwości get i set nie potrzebują dodatkowej logiki, za pomocą automatycznie wdrożonych właściwości (tylko C#). Aby wyświetlić pełny podpis z **Diagram klas** menu, wybierz **Zmień Format elementów członkowskich**, **Wyświetl pełną sygnaturę**. Aby uzyskać więcej informacji dotyczących automatycznie implementowanych właściwości, zobacz [implemented Properties](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
   
 ## <a name="common-tasks"></a>Typowe zadania  
   
@@ -85,10 +85,10 @@ Możesz dodać te składowe do typów w klasie na diagramie i skonfigurować te 
 - Okno Szczegóły klasy  
   
 > [!NOTE]
->  Można również utworzyć konstruktory i destruktory przy użyciu procedur opisanych w tej sekcji. Należy pamiętać, że konstruktory i destruktory to szczególne rodzaje metod i jako takie pojawiają się na **metody** przedziału w kształtach diagramu klas i w **metody** sekcji klasy Siatki okna Szczegóły.  
+> Można również utworzyć konstruktory i destruktory przy użyciu procedur opisanych w tej sekcji. Należy pamiętać, że konstruktory i destruktory to szczególne rodzaje metod i jako takie pojawiają się na **metody** przedziału w kształtach diagramu klas i w **metody** sekcji klasy Siatki okna Szczegóły.  
   
 > [!NOTE]
->  Jedyna jednostka, jaką można dodać do obiektu delegowanego, to parametr. Należy zauważyć, że procedura „Aby utworzyć składową przy użyciu paska narzędzi okna Szczegóły klasy” nie jest prawidłowa dla tej czynności.  
+> Jedyna jednostka, jaką można dodać do obiektu delegowanego, to parametr. Należy zauważyć, że procedura „Aby utworzyć składową przy użyciu paska narzędzi okna Szczegóły klasy” nie jest prawidłowa dla tej czynności.  
   
 #### <a name="to-create-a-member-using-class-designer"></a>Aby utworzyć składową za pomocą Projektanta klas  
   
@@ -182,7 +182,7 @@ Możesz dodać te składowe do typów w klasie na diagramie i skonfigurować te 
 3. Edytuj wartości w polach w siatce okna Szczegóły klasy. Po każdej modyfikacji naciśnij klawisz ENTER lub w inny sposób przenieś fokus kursora z edytowanego pola, na przykład, naciskając klawisz TAB. Zmiany odzwierciedlają się bezpośrednio w kodzie.  
   
     > [!NOTE]
-    >  Jeśli chcesz zmodyfikować jedynie nazwę elementu członkowskiego, możesz to zrobić za pomocą edycji w miejscu.  
+    > Jeśli chcesz zmodyfikować jedynie nazwę elementu członkowskiego, możesz to zrobić za pomocą edycji w miejscu.  
   
 ## <a name="AddMethodParams"></a> Dodawanie parametrów do metod  
  Dodaj parametry do metod przy użyciu okna Szczegóły klasy. Parametry mogą być skonfigurowane jako wymagane lub opcjonalne. Podanie wartości dla **opcjonalny domyślny** właściwości parametru powoduje, że projektant generuje kod jako parametr opcjonalny.  
@@ -216,10 +216,10 @@ Możesz dodać te składowe do typów w klasie na diagramie i skonfigurować te 
   Okno właściwości wyświetla te same właściwości parametru wyświetlane w oknie Szczegóły klasy: **Nazwa**, **typu**, **modyfikator**, **Podsumowanie**, jak również **opcjonalny domyślny** właściwości. Zmiana właściwości w jednej lokalizacji aktualizuje globalnie wartość właściwości, włącznie z wyświetlaniem jej wartości w innej lokalizacji.  
   
 > [!NOTE]
->  Aby dodać parametr do delegata, zobacz [tworzenie elementów członkowskich](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
+> Aby dodać parametr do delegata, zobacz [tworzenie elementów członkowskich](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
   
 > [!NOTE]
->  Chociaż destruktor jest metodą, to nie może mieć parametrów.  
+> Chociaż destruktor jest metodą, to nie może mieć parametrów.  
   
 ### <a name="HowToAddParameterToMethod"></a> Aby dodać parametr do metody  
   
@@ -254,7 +254,7 @@ Możesz dodać te składowe do typów w klasie na diagramie i skonfigurować te 
 4. W oknie właściwości wpisz wartość dla **opcjonalny domyślny** właściwości. Ustawienie właściwości Opcjonalny domyślny parametru powoduje, że ten parametr staje się opcjonalny.  
   
     > [!NOTE]
-    >  Opcjonalne parametry muszą być ostatnimi parametrami na liście parametrów.  
+    > Opcjonalne parametry muszą być ostatnimi parametrami na liście parametrów.  
   
 ## <a name="ClassDetailsUsageNotes"></a> Uwagi dotyczące użycia okna Szczegóły klasy  
  Zwróć uwagę na poniższe porady dotyczące korzystania z okna Szczegóły klasy.  

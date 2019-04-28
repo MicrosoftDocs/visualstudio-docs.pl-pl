@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1edfb882838907503a0df106da2181c283f29d9a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5a67fa921c5fedf5d37585036b2c5e55c7497434
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432632"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Instrukcje: Wstrzymywanie i wznawianie zbierania danych o wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ W oknie strony sesji profilowania można kontrolować zbierania danych profilowa
  ![Stronie sesji profilowania](../profiling/media/prof-profilingsessionpage.png "PROF_ProfilingSessionPage")  
   
 > [!NOTE]
->  Można również uruchomić sesję wydajności za pomocą profilowania wstrzymana, a następnie Wznów profilowanie w dalszej części wykonywania programu. Aby uruchomić wydajność wstrzymany, wybierz sesję profilowania **uruchomić analizy wydajności przy użyciu profilowania wstrzymana** polecenie **debugowania** menu.  
+> Można również uruchomić sesję wydajności za pomocą profilowania wstrzymana, a następnie Wznów profilowanie w dalszej części wykonywania programu. Aby uruchomić wydajność wstrzymany, wybierz sesję profilowania **uruchomić analizy wydajności przy użyciu profilowania wstrzymana** polecenie **debugowania** menu.  
   
 ### <a name="to-pause--resume-or-stop-profiling"></a>Aby wstrzymać, wznowić, lub Zatrzymaj profilowanie  
   

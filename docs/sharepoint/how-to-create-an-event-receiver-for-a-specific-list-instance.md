@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: deba5e493f58a99e672e362977406670e1eee0e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 34114c12ef47fb796de7354aa3133af1fc704267
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408549"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Instrukcje: Tworzenie obsługiwanego odbiornika dla określonej listy formularzy
   Odbiornik zdarzeń wystąpienia listy reaguje na zdarzenia występujące w żadnym wystąpieniu definicji listy. Choć szablonu odbiorcy zdarzenia nie przeznaczonych dla określonej listy formularzy, możesz zmodyfikować odbiorcy zdarzeń, które są ograniczone do definicji listy w celu reagowania na zdarzenia w określonej listy formularzy.
@@ -43,7 +43,7 @@ ms.locfileid: "60094349"
 6. W **jakiego typu odbiorcę zdarzeń chcesz wykonać?** wybierz **zdarzenia elementu listy**.
 
     > [!NOTE]
-    >  Możesz również wybrać dowolny inny rodzaj odbiorcy zdarzeń, który zakresów w definicji listy, na przykład **listę zdarzeń poczty E-mail** lub **zdarzenia przepływu pracy listy**.
+    > Możesz również wybrać dowolny inny rodzaj odbiorcy zdarzeń, który zakresów w definicji listy, na przykład **listę zdarzeń poczty E-mail** lub **zdarzenia przepływu pracy listy**.
 
 7. W **jaki element ma być źródła zdarzeń?** wybierz **anonsów**.
 

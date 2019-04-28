@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 940cf70047437c8aa3182121e8b1585b448018f8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9e5c6282c446fbc9ef24433e40452cca2b1b905a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441854"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Wdrażanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce
   Można wdrożyć rozwiązania pakietu Office w mniejszej liczby czynności, jeśli użycie technologii ClickOnce. Podczas publikowania aktualizacji rozwiązanie automatycznie je wykryje i zainstaluje. Niedogodność polega na tym, że w technologii ClickOnce rozwiązanie trzeba zainstalować osobno dla każdego użytkownika komputera. W związku z tym, należy rozważyć użycie Instalatora Windows (*.msi*) Jeśli więcej niż jeden użytkownik uruchomi swoje rozwiązanie na tym samym komputerze.
@@ -83,7 +83,7 @@ ms.locfileid: "60060744"
 9. Jeśli rozwiązanie jest przeznaczony dla .NET Framework 4.5, również wybrać opcję **Visual Studio 2010 Tools for Office Runtime** pole wyboru.
 
     > [!NOTE]
-    >  Domyślnie nie jest wyświetlane to pole wyboru. Aby było widoczne, należy utworzyć pakiet programu inicjującego. Zobacz [Tworzenie pakietu programu inicjującego dla dodatku pakietu Office 2013 VSTO za pomocą programu Visual Studio 2012](create-vsto-add-ins-for-office-by-using-visual-studio.md).
+    > Domyślnie nie jest wyświetlane to pole wyboru. Aby było widoczne, należy utworzyć pakiet programu inicjującego. Zobacz [Tworzenie pakietu programu inicjującego dla dodatku pakietu Office 2013 VSTO za pomocą programu Visual Studio 2012](create-vsto-add-ins-for-office-by-using-visual-studio.md).
 
 10. W obszarze **Określ lokalizację instalacji wstępnie wymaganych składników**, wybierz jedną z opcji, które są wyświetlane, a następnie wybierz **OK** przycisku.
 
@@ -100,7 +100,7 @@ ms.locfileid: "60060744"
 11. Wybierz **aktualizacje** przycisk, określ, jak często chcesz każdego użytkownika końcowego dodatku narzędzi VSTO lub dostosowywania sprawdzać dostępność aktualizacji, a następnie wybierz **OK** przycisku.
 
     > [!NOTE]
-    >  Jeśli instalujesz z dysku CD lub dysku wymiennego, wybierz **nigdy nie sprawdzaj aktualizacji** przycisku opcji.
+    > Jeśli instalujesz z dysku CD lub dysku wymiennego, wybierz **nigdy nie sprawdzaj aktualizacji** przycisku opcji.
 
      Aby uzyskać informacje o sposobie publikowania aktualizacji, zobacz [publikowanie aktualizacji](#Update).
 
@@ -129,7 +129,7 @@ ms.locfileid: "60060744"
       ![Struktura folderu publikowania](../vsto/media/publishfolderstructure.png "strukturę folderu publikowania")
 
     > [!NOTE]
-    >  Funkcja ClickOnce dołącza *.deploy* rozszerzenia do zestawów, tak aby bezpieczna instalacja programu Internetowe usługi informacyjne (IIS) nie blokowała plików z powodu niebezpiecznego rozszerzenia. Po zainstalowaniu rozwiązania ClickOnce usuwa *.deploy* rozszerzenia.
+    > Funkcja ClickOnce dołącza *.deploy* rozszerzenia do zestawów, tak aby bezpieczna instalacja programu Internetowe usługi informacyjne (IIS) nie blokowała plików z powodu niebezpiecznego rozszerzenia. Po zainstalowaniu rozwiązania ClickOnce usuwa *.deploy* rozszerzenia.
 
 14. Skopiuj pliki rozwiązania do lokalizacji instalacji określonej wcześniej w tej procedurze.
 
@@ -164,7 +164,7 @@ ms.locfileid: "60060744"
 6. W **typ MIME** oknie wprowadź **.vsto** jako rozszerzenie wprowadź **application/x-ms-vsto** jako MIME typu, a następnie Zastosuj nowe ustawienia.
 
     > [!NOTE]
-    >  Aby zmiany zaczęły obowiązywać, należy ponownie uruchomić usługę publikowania w sieci World Wide Web lub poczekać na wykonanie cyklu odświeżania w procesie roboczym. Należy następnie opróżnić pamięć podręczną dysku w przeglądarce i spróbuj otworzyć *.vsto* plik ponownie.
+    > Aby zmiany zaczęły obowiązywać, należy ponownie uruchomić usługę publikowania w sieci World Wide Web lub poczekać na wykonanie cyklu odświeżania w procesie roboczym. Należy następnie opróżnić pamięć podręczną dysku w przeglądarce i spróbuj otworzyć *.vsto* plik ponownie.
 
 ##### <a name="to-add-the-vsto-mime-type-to-iis-70"></a>Aby dodać typ MIME .vsto do usług IIS 7.0
 
@@ -185,7 +185,7 @@ ms.locfileid: "60060744"
     ```
 
     > [!NOTE]
-    >  Aby zmiany zaczęły obowiązywać, należy ponownie uruchomić usługę publikowania w sieci World Wide Web lub poczekać na wykonanie cyklu odświeżania w procesie roboczym. Należy następnie opróżnić pamięć podręczną dysku w przeglądarce i spróbuj otworzyć *.vsto* plik ponownie.
+    > Aby zmiany zaczęły obowiązywać, należy ponownie uruchomić usługę publikowania w sieci World Wide Web lub poczekać na wykonanie cyklu odświeżania w procesie roboczym. Należy następnie opróżnić pamięć podręczną dysku w przeglądarce i spróbuj otworzyć *.vsto* plik ponownie.
 
 ## <a name="Put"></a> Umieszczanie dokumentu rozwiązania na komputerze użytkownika końcowego (tylko dostosowania na poziomie dokumentu)
  Tworząc akcję powdrożeniową, możesz skopiować dokumentu rozwiązania na komputerze użytkownika końcowego dla nich. Dzięki temu użytkownik nie musi ręcznie kopiować dokumentu z lokalizacji instalacji do swojego komputera po zainstalowaniu rozwiązania. Należy utworzyć klasę definiującą akcję powdrożeniową, kompilacji i opublikować rozwiązanie, zmodyfikować manifest aplikacji i ponownie podpisać manifesty aplikacji i wdrażania.
@@ -300,7 +300,7 @@ ms.locfileid: "60060744"
     ```
 
     > [!NOTE]
-    >  W poprzednim przykładzie, Zamień wartość elementu MostRecentVersionNumber numer wersji najnowszej opublikowanej wersji rozwiązania (na przykład **1_0_0_4**).
+    > W poprzednim przykładzie, Zamień wartość elementu MostRecentVersionNumber numer wersji najnowszej opublikowanej wersji rozwiązania (na przykład **1_0_0_4**).
 
      Zostanie wyświetlony komunikat „Plik ExcelWorkbook.dll.vsto został pomyślnie podpisany”.
 
@@ -386,7 +386,7 @@ ms.locfileid: "60060744"
   Aby zmienić ścieżkę instalacji rozwiązania, należy zaktualizować program instalacyjny, po czym użytkownicy muszą go uruchomić. W przypadku dostosowań na poziomie dokumentu użytkownicy muszą również w swoich dokumentach tak zaktualizować odnośną właściwość, aby wskazywała nową lokalizację.
 
 > [!NOTE]
->  Jeśli nie chcesz poprosić użytkowników o właściwości dokumentów, możesz poprosić użytkownikom pobranie zaktualizowanego dokumentu z lokalizacji instalacji.
+> Jeśli nie chcesz poprosić użytkowników o właściwości dokumentów, możesz poprosić użytkownikom pobranie zaktualizowanego dokumentu z lokalizacji instalacji.
 
 #### <a name="to-change-the-installation-path-in-the-setup-program"></a>Aby zmienić ścieżkę instalacji w programie instalacyjnym
 
@@ -401,10 +401,10 @@ ms.locfileid: "60060744"
    ```
 
    > [!NOTE]
-   >  Jeśli pojawi się komunikat z informacją, że podpis pliku wykonywalnego zostanie unieważniony, certyfikat użyty do podpisania rozwiązania jest nieważny, a wydawca nieznany. W rezultacie przed zainstalowaniem rozwiązania użytkownicy będą musieli potwierdzić, że ufają jego źródłu.
+   > Jeśli pojawi się komunikat z informacją, że podpis pliku wykonywalnego zostanie unieważniony, certyfikat użyty do podpisania rozwiązania jest nieważny, a wydawca nieznany. W rezultacie przed zainstalowaniem rozwiązania użytkownicy będą musieli potwierdzić, że ufają jego źródłu.
 
    > [!NOTE]
-   >  Aby wyświetlić bieżącą wartość adresu URL, należy uruchomić `setup.exe /url`.
+   > Aby wyświetlić bieżącą wartość adresu URL, należy uruchomić `setup.exe /url`.
 
    Przypadku dostosowań na poziomie dokumentu użytkownicy muszą otworzyć dokument, a następnie zaktualizować jego właściwość _AssemblyLocation. Poniżej zamieszczono odpowiednią procedurę.
 
@@ -454,7 +454,7 @@ ms.locfileid: "60060744"
      Gdy użytkownik następnym razem otworzy aplikację lub dostosowany dokument, zostanie wykryta zmiana manifestu wdrażania. Starsza wersja rozwiązania dla pakietu Office jest uruchamiana z pamięci podręcznej funkcji ClickOnce.
 
 > [!NOTE]
->  Dane lokalne są zapisywane tylko dla jednej poprzedniej wersji rozwiązania. W przypadku wycofania dwie wersje lokalne dane nie zostaną zachowane. Aby uzyskać więcej informacji na temat danych lokalnych, zobacz [dostęp do danych lokalnych i zdalnych w aplikacjach ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).
+> Dane lokalne są zapisywane tylko dla jednej poprzedniej wersji rozwiązania. W przypadku wycofania dwie wersje lokalne dane nie zostaną zachowane. Aby uzyskać więcej informacji na temat danych lokalnych, zobacz [dostęp do danych lokalnych i zdalnych w aplikacjach ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).
 
 ## <a name="see-also"></a>Zobacz także
 

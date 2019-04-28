@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b920706a6a43f52ab861d392efe4b30f28c4ca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: aee8be6904452cc40ab68130f98cf63caf0fc7fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406992"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Instrukcje: Publikowanie projektu o specyficznych ustawieniach regionalnych
 Nie jest niczym niezwykłym aplikacji zawierają składniki, które mają różnych ustawień regionalnych. W tym scenariuszu może utworzyć rozwiązanie, które ma kilka projektów, a następnie opublikuj oddzielnych projektów dla poszczególnych ustawień regionalnych. Ta procedura pokazuje, jak publikować pierwszego projektu w rozwiązaniu przy użyciu ustawień regionalnych "PL" za pomocą makra. Jeśli chcesz wypróbować tę procedurę za pomocą ustawień regionalnych innych niż "en", upewnij się ustawić `localeString` w makrze zgodne z ustawieniami regionalnymi, którego używasz (na przykład, "de" lub "de-DE").
 
 > [!NOTE]
->  Użycie tego makra, Opublikuj Lokalizacja powinna być udział prawidłowy adres URL lub Universal Naming Convention (UNC). Ponadto usługi Internet Information Services (IIS) musi być zainstalowany na tym komputerze. Aby zainstalować usługi IIS, na **Start** menu, kliknij przycisk **Panelu sterowania**. Kliknij dwukrotnie **Dodaj lub usuń programy**. W **apletu Dodaj lub usuń programy**, kliknij przycisk **Dodaj/Usuń składniki Windows**. W **Kreatora składników Windows**, wybierz opcję **Internet Information Services (IIS)** pole wyboru w **składniki** listy. Następnie kliknij przycisk **Zakończ** aby zamknąć kreatora.
+> Użycie tego makra, Opublikuj Lokalizacja powinna być udział prawidłowy adres URL lub Universal Naming Convention (UNC). Ponadto usługi Internet Information Services (IIS) musi być zainstalowany na tym komputerze. Aby zainstalować usługi IIS, na **Start** menu, kliknij przycisk **Panelu sterowania**. Kliknij dwukrotnie **Dodaj lub usuń programy**. W **apletu Dodaj lub usuń programy**, kliknij przycisk **Dodaj/Usuń składniki Windows**. W **Kreatora składników Windows**, wybierz opcję **Internet Information Services (IIS)** pole wyboru w **składniki** listy. Następnie kliknij przycisk **Zakończ** aby zamknąć kreatora.
 
 ### <a name="to-create-the-publishing-macro"></a>Aby utworzyć publikowania — makro
 

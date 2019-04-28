@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5756047dc88dc01e044787cd5e3a71456e3e85c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 0d7640b4f846dd4fa5a9f8b16ead7019ca3ba821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430936"
 ---
 # <a name="markprofile"></a>MarkProfile
 `MarkProfile` Metoda wstawia znacznik profilu w. *Vsp* pliku. Profilowanie w przypadku wątku zawierający `MarkProfile` funkcja musi być ON znak do wstawienia.
@@ -52,7 +52,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
  Stan profilowania dla wątku, który zawiera funkcję profilu znacznika musi być na, jeśli znaczniki i komentarze wstawione za pomocą polecenia znaku lub za pomocą interfejsu API funkcji (CommentMarkAtProfile, CommentMarkProfile lub MarkProfile).
 
 > [!IMPORTANT]
->  Metoda MarkProfile należy używać z tylko profilowanie instrumentacji.
+> Metoda MarkProfile należy używać z tylko profilowanie instrumentacji.
 
 ## <a name="net-framework-equivalent"></a>Równoważne z .NET framework
  *Microsoft.VisualStudio.Profiler.dll*

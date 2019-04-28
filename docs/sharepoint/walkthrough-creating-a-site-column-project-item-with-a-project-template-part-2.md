@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8301a4ecae71bfa2b215e20dfabf73e058c48dc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e1b6477c112de7b19b00bcd173984533f5737014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436719"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Przewodnik: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 2
   Po zdefiniowaniu niestandardowy typ elementu projektu programu SharePoint i skojarzyć go z szablonem projektu w programie Visual Studio, można również podać Kreatora szablonu. Kreator służy do zbierania informacji od użytkowników, używając szablonu do utworzenia nowego projektu, który zawiera element projektu. Informacje zbierane, może służyć do zainicjowania elementu projektu.
@@ -222,7 +222,7 @@ ms.locfileid: "60059113"
  Dodaj XAML zdefiniować interfejsu użytkownika w oknie kreatora i kontrolki użytkownika dwóch, które udostępniają interfejs użytkownika dla stron kreatora, a następnie dodać kod do określania zachowania kontrolki okna i użytkownika. Kreator, którą tworzysz przypomina wbudowanego kreatora dla projektów programu SharePoint w programie Visual Studio.
 
 > [!NOTE]
->  W poniższych krokach projekt będzie miał pewne błędy kompilacji, po dodaniu XAML lub kodu do projektu. Te błędy znikną po dodaniu kodu w dalszych krokach.
+> W poniższych krokach projekt będzie miał pewne błędy kompilacji, po dodaniu XAML lub kodu do projektu. Te błędy znikną po dodaniu kodu w dalszych krokach.
 
 #### <a name="to-create-the-wizard-window-ui"></a>Aby utworzyć okno Kreatora interfejsu użytkownika
 
@@ -233,7 +233,7 @@ ms.locfileid: "60059113"
      [!code-xml[SPExtensibility.ProjectItem.SiteColumn#10](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml#10)]
 
     > [!NOTE]
-    >  Okno, który jest tworzony w tym XAML jest tworzony na podstawie <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> klasy bazowej. Po dodaniu niestandardowe okno dialogowe WPF w programie Visual Studio, firma Microsoft zaleca, pochodzi z okna dialogowego z tej klasy mają spójnego stylów z innych oknach dialogowych programu Visual Studio i uniknąć problemów modalne okno dialogowe, które mogłyby wystąpić. Aby uzyskać więcej informacji, zobacz [tworzenie i zarządzanie modalne okna dialogowe](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
+    > Okno, który jest tworzony w tym XAML jest tworzony na podstawie <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> klasy bazowej. Po dodaniu niestandardowe okno dialogowe WPF w programie Visual Studio, firma Microsoft zaleca, pochodzi z okna dialogowego z tej klasy mają spójnego stylów z innych oknach dialogowych programu Visual Studio i uniknąć problemów modalne okno dialogowe, które mogłyby wystąpić. Aby uzyskać więcej informacji, zobacz [tworzenie i zarządzanie modalne okna dialogowe](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
 
 3. Jeśli tworzysz projekt języka Visual Basic, Usuń `ProjectTemplateWizard` przestrzeni nazw z `WizardWindow` nazwy klasy w `x:Class` atrybutu `Window` elementu. Ten element jest w pierwszym wierszu XAML. Gdy wszystko będzie gotowe, pierwszy wiersz powinien wyglądać podobnie jak w poniższym przykładzie.
 
@@ -513,7 +513,7 @@ ms.locfileid: "60059113"
      Kolumny witryny zostaną spakowane i wdrożone dla programu SharePoint witryny **adres URL witryny** Określa właściwość projektu. Przeglądarka sieci web zostanie otwarta domyślna strona tej lokacji.
 
     > [!NOTE]
-    >  Jeśli **wyłączenia debugowania skryptu** pojawi się okno dialogowe, wybierz **tak** przycisk, aby kontynuować debugowanie projektu.
+    > Jeśli **wyłączenia debugowania skryptu** pojawi się okno dialogowe, wybierz **tak** przycisk, aby kontynuować debugowanie projektu.
 
 2. Na **Akcje witryny** menu, wybierz **ustawienia lokacji**.
 
@@ -543,4 +543,4 @@ ms.locfileid: "60059113"
 - [Definiowanie niestandardowych typów elementów projektu SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Tworzenie szablonów elementów i szablonów projektu dla elementów projektu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Odwołanie do schematu szablonu Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [Instrukcje: Korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Instrukcje: korzystanie z kreatorów z szablonami projektów](../extensibility/how-to-use-wizards-with-project-templates.md)

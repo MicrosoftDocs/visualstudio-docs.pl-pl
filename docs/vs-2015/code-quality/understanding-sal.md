@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: e4c9884517120647e8d0d5bff263496900c2318c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0a898096c282a22201d60995693144cc0e187812
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435405"
 ---
 # <a name="understanding-sal"></a>Poznanie SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -246,7 +246,7 @@ void OutOptCaller()
  `_Inout_` Umożliwia dodawanie adnotacji do parametru wskaźnika, który może zostać zmieniona przez funkcję. Wskaźnik musi wskazywać prawidłowe dane zainicjowany przed wywołaniem, a nawet w przypadku jego zmiany, nadal musi mieć prawidłową wartość przy powrocie. Adnotacja Określa, czy funkcja mogą swobodnie odczytu i zapisu w buforze jeden element. Obiekt wywołujący, musisz podać buforu i zainicjować go.  
   
 > [!NOTE]
->  Podobnie jak `_Out_`, `_Inout_` należy zastosować do modyfikowalnych wartości.  
+> Podobnie jak `_Out_`, `_Inout_` należy zastosować do modyfikowalnych wartości.  
   
 ```cpp  
   

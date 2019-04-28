@@ -8,12 +8,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 332926de13053339c4e98f2d533d9e39213be4d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9d6162f26bbfcf3f3bce8f2a3db649fbf1b63a52
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416520"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Włącz testowanie kodowanego interfejsu użytkownika dla Twoich kontrolek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Kontrolki można łatwo przetestować w przypadku zastosowania pomocy techniczne
 4. Zastąp <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A>, i <xref:System.Windows.Forms.AccessibleObject.Select%2A> właściwości i metody dla obiektu ułatwień dostępu kontrolki podrzędnej.  
   
 > [!NOTE]
->  W tym temacie, który rozpoczyna się od przykładu ułatwień dostępu w <xref:System.Windows.Forms.AccessibleObject> w tej procedury i następnie kompilacje na tym pozostałe procedur. Jeśli chcesz utworzyć działającą wersją próbki ułatwień dostępu, Utwórz aplikację konsolową i następnie Zastąp kod w pliku Program.cs z przykładowym kodem. Należy dodać odwołania do ułatwień dostępu, System.Drawing i przestrzeń nazw System.Windows.Forms. Należy zmienić **Osadź typy współdziałania** ułatwień dostępu do **False** , aby wyeliminować ostrzeżenia kompilacji. Można zmienić typu danych wyjściowych projektu na z **aplikację Konsolową** do **aplikacji Windows** okno konsoli nie będą wyświetlane po uruchomieniu aplikacji.  
+> W tym temacie, który rozpoczyna się od przykładu ułatwień dostępu w <xref:System.Windows.Forms.AccessibleObject> w tej procedury i następnie kompilacje na tym pozostałe procedur. Jeśli chcesz utworzyć działającą wersją próbki ułatwień dostępu, Utwórz aplikację konsolową i następnie Zastąp kod w pliku Program.cs z przykładowym kodem. Należy dodać odwołania do ułatwień dostępu, System.Drawing i przestrzeń nazw System.Windows.Forms. Należy zmienić **Osadź typy współdziałania** ułatwień dostępu do **False** , aby wyeliminować ostrzeżenia kompilacji. Można zmienić typu danych wyjściowych projektu na z **aplikację Konsolową** do **aplikacji Windows** okno konsoli nie będą wyświetlane po uruchomieniu aplikacji.  
   
 ## <a name="customproprties"></a> Obsługuje sprawdzanie poprawności właściwości niestandardowe poprzez implementację dostawcy właściwości  
  Po zastało zaimplementowane podstawowa pomoc techniczna dla rekordu i odtwarzania oraz właściwości sprawdzania poprawności, można udostępnić kontroli nad właściwości niestandardowych do zakodowanych testów interfejsu użytkownika poprzez implementację <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> wtyczki. Na przykład poniższa procedura tworzy dostawcy właściwości, który umożliwia kodowane testy interfejsu użytkownika do dostępu do właściwości stanu formantów podrzędnych CurveLegend formantu wykresu.  
@@ -324,7 +324,7 @@ Kontrolki można łatwo przetestować w przypadku zastosowania pomocy techniczne
 11. Tworzenie plików binarnych i skopiować je do **%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages**.  
   
 > [!NOTE]
->  Ten pakiet rozszerzenia zostaną zastosowane do żadnego formantu, który jest typu "Text". Jeśli testujesz wielu formantów tego samego typu, należy przetestować je oddzielnie i zarządzać pakietów rozszerzeń, które są wdrażane po zarejestrowaniu testów.  
+> Ten pakiet rozszerzenia zostaną zastosowane do żadnego formantu, który jest typu "Text". Jeśli testujesz wielu formantów tego samego typu, należy przetestować je oddzielnie i zarządzać pakietów rozszerzeń, które są wdrażane po zarejestrowaniu testów.  
   
 ## <a name="codegeneration"></a> Obsługuje generowanie kodu poprzez implementację klasę umożliwiającą dostęp do właściwości niestandardowe  
  Gdy kodowanego testu interfejsu użytkownika generuje kod z nagrania sesji, używa <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> klasy, aby dostęp do kontrolek.  
@@ -512,7 +512,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 4. Tworzenie plików binarnych, a następnie skopiuj je do %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.  
   
 > [!NOTE]
->  Filtr akcji zależy od implementacji dostępności lub Dostawca właściwości.  
+> Filtr akcji zależy od implementacji dostępności lub Dostawca właściwości.  
   
 ## <a name="debug-your-property-provider-or-action-filter"></a>Debuguj z usługodawcą właściwości lub filtr akcji  
  Właściwości filtru akcji i dostawcy są implementowane w pakiecie rozszerzenia, który jest ładowany i uruchamiane przez konstruktora kodowanego testu interfejsu użytkownika w ramach procesu niezależnie od aplikacji.  

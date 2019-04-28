@@ -15,12 +15,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 582b3763cf2925e373bb3f71b843755ade49dcd2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 45a4dd40e00182084686841279f81eb1de9d8a28
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424580"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Instrukcje: Wyświetlanie istniejących typów (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Aby wyświetlić istniejący typ i jej elementów członkowskich, należy dodać
 2. Z projektu w oknie Eksploratora rozwiązań przeciągnij plik z kodem źródłowym do diagramu klasy.  
   
    > [!WARNING]
-   >  Jeśli rozwiązanie ma projektu, który udostępnia kod przez wiele aplikacji, można przeciągnąć pliki lub kod do diagramu klasy tylko z tych źródeł:  
+   > Jeśli rozwiązanie ma projektu, który udostępnia kod przez wiele aplikacji, można przeciągnąć pliki lub kod do diagramu klasy tylko z tych źródeł:  
    > 
    > - Projekt aplikacji, który zawiera diagram  
    >   - Współdzielony projekt zaimportowany przez projekt aplikacji  
@@ -50,12 +50,12 @@ Aby wyświetlić istniejący typ i jej elementów członkowskich, należy dodać
    Typy można także wyświetlić w projekcie, przeciągając jeden lub więcej typów z węzła projektu w Widoku klas do diagramu klasy.  
   
 > [!TIP]
->  Jeśli widok klas nie jest otwarty, otwórz widok klas z **widoku** menu. Aby uzyskać więcej informacji dotyczących widoku klas, zobacz [Viewing Classes and Their Members](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
+> Jeśli widok klas nie jest otwarty, otwórz widok klas z **widoku** menu. Aby uzyskać więcej informacji dotyczących widoku klas, zobacz [Viewing Classes and Their Members](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
   
  Aby wyświetlić typy w lokalizacjach domyślnych na diagramie, zaznacz jeden lub więcej typów w widoku klas kliknij prawym przyciskiem myszy wybrane typy i wybierz **Pokaż Diagram klas**.  
   
 > [!NOTE]
->  Jeśli zamknięty diagram klas zawierający typ już istnieje w projekcie, diagram klas się otworzy, aby wyświetlić kształt typu. Jednakże, jeśli w projekcie nie istnieje diagram klas zawierający typ, Projektant klasy tworzy nowy diagram klas w projekcie i otwiera go, aby wyświetlić typ.  
+> Jeśli zamknięty diagram klas zawierający typ już istnieje w projekcie, diagram klas się otworzy, aby wyświetlić kształt typu. Jednakże, jeśli w projekcie nie istnieje diagram klas zawierający typ, Projektant klasy tworzy nowy diagram klas w projekcie i otwiera go, aby wyświetlić typ.  
   
  Przy pierwszym wyświetleniu typu na diagramie, jego kształt pojawia się domyślnie zwinięty. Można rozwinąć kształt, aby wyświetlić jego zawartość.  
   

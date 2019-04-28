@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5114e7b32bd22b341489e15ac354cc24b3c6d7d7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f795928677f4a232c3ae3cec0d3bab9d9266cb35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437459"
 ---
 # <a name="validate-your-uml-model"></a>Weryfikacja modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Niektóre modele UML, które można narysować w programie Visual Studio może z
 - **Polecenie sprawdzania poprawności.** Aby wywołać sprawdzania poprawności w dowolnym momencie, kliknij przycisk **Sprawdź poprawność modelu UML** na **architektury** menu.  
   
   > [!NOTE]
-  >  Polecenie będą wyświetlane tylko wtedy, gdy ograniczenia sprawdzania poprawności są zainstalowane.  
+  > Polecenie będą wyświetlane tylko wtedy, gdy ograniczenia sprawdzania poprawności są zainstalowane.  
   
 - **Przy zapisywaniu modelu.** Po zapisaniu modelu można zastosować ograniczenia sprawdzania poprawności. Te ograniczenia ma na celu pomóc, upewnij się, nie należy zapisywać modelu, który jest nieprawidłowa przy uwzględnieniu interpretacji projektu.  
   

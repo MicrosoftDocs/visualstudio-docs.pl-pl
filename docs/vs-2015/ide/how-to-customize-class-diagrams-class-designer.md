@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 442181aa78e539471aa35feb96ec7503e09a97ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 53f65b54888c254c93e72aafa00e239f95d85ddf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416857"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Instrukcje: Dostosowywanie diagramów klas (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Można zmienić sposób wyświetlania informacji na diagramach klas. Można dost
  Na przykład, można dostosować poziom powiększenia całego diagramu klasy, zmienić grupowanie i sortowanie poszczególnych składowych typu, ukrywać lub pokazywać relacje i przenieść pojedyncze typy lub zestawy typów w dowolne miejsce na diagramie.  
   
 > [!NOTE]
->  Dostosowywanie sposobu wyświetlania kształtów na diagramie nie zmienia podstawowego kodu dla typów reprezentowanych na diagramie.  
+> Dostosowywanie sposobu wyświetlania kształtów na diagramie nie zmienia podstawowego kodu dla typów reprezentowanych na diagramie.  
   
  Sekcje, które zawierają składowe typu, na przykład sekcja Właściwości w klasie, są nazywane przedziałami. Można ukryć lub pokazać poszczególne przedziały i elementy członkowskie typu.  
   
@@ -64,7 +64,7 @@ Można zmienić sposób wyświetlania informacji na diagramach klas. Można dost
      Określ konkretną wartość stopnia powiększenia. Możesz użyć **powiększenia** listy rozwijanej lub wpisać prawidłowy poziom powiększenia (prawidłowy zakres to od 10% do 400%).  
   
     > [!NOTE]
-    >  Zmiana powiększenia nie wpływa na skalę wydruku diagramu klasy.  
+    > Zmiana powiększenia nie wpływa na skalę wydruku diagramu klasy.  
   
 ## <a name="CustomizeGroupingSorting"></a> Dostosowywanie grupowania i sortowania elementów członkowskich typu  
   

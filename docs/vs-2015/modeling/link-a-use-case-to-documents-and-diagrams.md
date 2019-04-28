@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 012ab6828364af155b52bc19d9a83564b2126a6b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ee7657b12741cf65583317ba87bd465e15eb02bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440969"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Łączenie przypadków użycia z dokumentami i diagramami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ Możesz połączyć przypadek użycia na diagramie przypadku użycia innego diag
 3. Za pomocą nowego artefaktu wybrane, wpisz lub wklej adres URL do **hiperłącze** właściwości.  
   
     > [!NOTE]
-    >  Jeśli chcesz podać ścieżkę do pliku, najlepiej w typowych obszaru roboczego wybierz plik (począwszy od "\\\\"), lub pliku w ramach rozwiązania Visual Studio. Dzięki temu ścieżkę pliku pozostanie prawidłowe dla komputera innego członka zespołu, czy rozwiązanie jest przenoszony. Aby dodać dokument, takie jak dokument programu Word do rozwiązania, kliknij prawym przyciskiem myszy rozwiązanie w Eksploratorze rozwiązań, wskaż opcję **Dodaj** a następnie kliknij przycisk **istniejący element**.  
+    > Jeśli chcesz podać ścieżkę do pliku, najlepiej w typowych obszaru roboczego wybierz plik (począwszy od "\\\\"), lub pliku w ramach rozwiązania Visual Studio. Dzięki temu ścieżkę pliku pozostanie prawidłowe dla komputera innego członka zespołu, czy rozwiązanie jest przenoszony. Aby dodać dokument, takie jak dokument programu Word do rozwiązania, kliknij prawym przyciskiem myszy rozwiązanie w Eksploratorze rozwiązań, wskaż opcję **Dodaj** a następnie kliknij przycisk **istniejący element**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)   

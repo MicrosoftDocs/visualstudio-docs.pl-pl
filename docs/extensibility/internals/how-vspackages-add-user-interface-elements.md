@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca4e817ae33d3129259de619e07bf256e6f544bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b392c962a2ddbed57ca1af934c0ef9d8b5175595
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418394"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Jak dodać elementy interfejsu użytkownika w pakietach VSPackage
 Dodać elementy interfejsu użytkownika, na przykład menu, paski narzędzi i narzędzi systemu windows, do programu Visual Studio poprzez pakietu VSPackage *vsct* pliku.
@@ -63,7 +63,7 @@ Dodać elementy interfejsu użytkownika, na przykład menu, paski narzędzi i na
  Element najwyższego poziomu `Symbols` sekcja [GuidSymbol, element](../../extensibility/guidsymbol-element.md). `GuidSymbol` elementy nazwy są mapowane na identyfikatory GUID, które są używane przez IDE, aby zidentyfikować pakiety i ich części składowe.
 
 > [!NOTE]
->  Identyfikatory GUID są automatycznie generowane przez szablon pakietu Visual Studio. Unikatowy identyfikator GUID można również utworzyć, klikając **Utwórz GUID** na **narzędzia** menu.
+> Identyfikatory GUID są automatycznie generowane przez szablon pakietu Visual Studio. Unikatowy identyfikator GUID można również utworzyć, klikając **Utwórz GUID** na **narzędzia** menu.
 
  Pierwszy `GuidSymbol` elementu `guid<PackageName>Pkg`, to identyfikator GUID pakietu. Jest to identyfikator GUID, który jest używany przez program Visual Studio można załadować pakietu. Zazwyczaj nie ma elementów podrzędnych.
 

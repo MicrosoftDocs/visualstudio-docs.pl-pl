@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4c02c7dbce09383b5fc3cb1fd7f5eec6e9116b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7a4169d57cd5b004ded9fbc9b8a16bf7537754b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417566"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Wyszukiwanie i wybieranie typu .NET, okno dialogowe
 W **właściwości** okien, okien dialogowych lub projektantów, takich jak projektanta zmiennych, po wybraniu **vyhledat typy...** z listy typów danych, jest **Wyszukaj i wybierz typ architektury .NET** okno dialogowe (określone w formie skróconej jako "Przeglądarka typu"). W tym oknie można wybrać typ z widoku drzewa, zespołów i projektów.  
@@ -31,7 +31,7 @@ W **właściwości** okien, okien dialogowych lub projektantów, takich jak proj
 - Podczas dodawania instrukcji catch w <xref:System.Activities.Statements.TryCatch> działania.  
   
 > [!NOTE]
->  Przeglądarki typu można wyświetlić typy tablicowe nierówne w języku Visual Basic, ale typy nie wielowymiarowej tablicy. Zobacz [nierówne tablic](http://go.microsoft.com/fwlink/?LinkId=195226) i [tablic wielowymiarowych](http://go.microsoft.com/fwlink/?LinkId=195227) Aby uzyskać szczegółowe informacje.  
+> Przeglądarki typu można wyświetlić typy tablicowe nierówne w języku Visual Basic, ale typy nie wielowymiarowej tablicy. Zobacz [nierówne tablic](http://go.microsoft.com/fwlink/?LinkId=195226) i [tablic wielowymiarowych](http://go.microsoft.com/fwlink/?LinkId=195227) Aby uzyskać szczegółowe informacje.  
   
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Wybranie wartości lub typem referencyjnym, za pomocą przeglądarki typu  
   

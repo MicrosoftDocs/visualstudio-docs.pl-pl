@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4caede15b17478bb9649f09d9341931511b655f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: edb3a1bfaad8d662fb51a8527da6bef183fd05c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428181"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Instrukcje: Programowe automatyczne wypełnienie zakresów przyrostowo zmieniającymi się danymi
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Metody <xref:Microsoft.Office.Interop.Excel.Range> obiektu umożliwia automatyczne wypełnianie zakres w arkuszu za pomocą wartości. W większości przypadków <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> metoda jest używana do przechowywania przyrostowo zwiększenie lub zmniejszenie wartości w zakresie. Można określić zachowanie, podając opcjonalną stałą z <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> wyliczenia.
@@ -34,7 +34,7 @@ ms.locfileid: "60117892"
 - Zakres, który chcesz wypełnić, przekazana jako parametr do <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> metody. Ten zakres docelowy musi zawierać zakres, który zawiera wartość początkową.
 
     > [!NOTE]
-    >  Nie można przekazać <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolować zamiast <xref:Microsoft.Office.Interop.Excel.Range>. Aby uzyskać więcej informacji, zobacz [ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+    > Nie można przekazać <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolować zamiast <xref:Microsoft.Office.Interop.Excel.Range>. Aby uzyskać więcej informacji, zobacz [ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
 ## <a name="example"></a>Przykład
  [!code-csharp[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)]

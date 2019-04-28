@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1a6b131e75e61e319a691a0b132bb57b7d0c227
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 856ea1e59a32a64c6a48b52c3ef1dcad9e0bbb80
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406822"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Instrukcje: Tworzenie zlokalizowanego pakietu programu inicjującego
 Po utworzeniu pakietu programu inicjującego, tworząc dwie więcej plików dla poszczególnych ustawień regionalnych, można utworzyć zlokalizowane wersje pakietu programu inicjującego: postanowienia licencyjne dotyczące oprogramowania plików (takich jak *eula.rtf*) oraz manifest pakietu (*package.xml*).
@@ -31,7 +31,7 @@ Po utworzeniu pakietu programu inicjującego, tworząc dwie więcej plików dla 
 3. Tworzenie manifestu pakietu o nazwie *package.xml*, zaktualizuj ciągi i kultury i umieścić ten plik w nowym folderze. Jeśli utworzono już program inicjujący programu Visual Studio w języku docelowym, możesz skopiować programu Visual Studio *package.xml* plik i zmodyfikować go w tym kroku.
 
 > [!NOTE]
->  Jeśli używasz projektów Instalatora do wdrażania aplikacji, można zlokalizować aplikację, zmieniając **lokalizacji** właściwości.
+> Jeśli używasz projektów Instalatora do wdrażania aplikacji, można zlokalizować aplikację, zmieniając **lokalizacji** właściwości.
 
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

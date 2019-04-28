@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14a1c072cb8415e8e0a20615c0c963e683f48b56
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6d312a213f630c3cc94a5a58ab41ed2014ca13bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406566"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Instrukcje: Określanie alternatywnej lokalizacji aktualizacji wdrażania
 Można zainstalować usługi [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja początkowo z dysku CD lub udział plików, ale aplikacja musi sprawdzić okresowe aktualizacje w sieci Web. Tak, aby aplikacja może automatycznie zaktualizowana z sieci Web po jego wstępnej instalacji, można określić alternatywną lokalizację aktualizacji w manifeście wdrożenia.
 
 > [!NOTE]
->  Twoja aplikacja musi być skonfigurowana do zainstalowania lokalnie, aby użyć tej funkcji. Aby uzyskać więcej informacji, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Ponadto, jeśli zainstalujesz [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] na ustawienie lokalizacji alternatywnej powoduje, że sieci [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] można użyć tej lokalizacji dla początkowej instalacji i wszystkich kolejnych aktualizacji. Po zainstalowaniu aplikacji w środowisku lokalnym (na przykład z dysku CD), początkowej instalacji odbywa się przy użyciu oryginalnego nośnika, a wszystkie kolejne aktualizacje użyje lokalizacji alternatywnej.
+> Twoja aplikacja musi być skonfigurowana do zainstalowania lokalnie, aby użyć tej funkcji. Aby uzyskać więcej informacji, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Ponadto, jeśli zainstalujesz [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] na ustawienie lokalizacji alternatywnej powoduje, że sieci [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] można użyć tej lokalizacji dla początkowej instalacji i wszystkich kolejnych aktualizacji. Po zainstalowaniu aplikacji w środowisku lokalnym (na przykład z dysku CD), początkowej instalacji odbywa się przy użyciu oryginalnego nośnika, a wszystkie kolejne aktualizacje użyje lokalizacji alternatywnej.
 
 ### <a name="specify-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Określanie alternatywnej lokalizacji aktualizacji za pomocą MageUI.exe (narzędzie oparte na formularzach Windows)
 
@@ -53,7 +53,7 @@ Można zainstalować usługi [!INCLUDE[ndptecclick](../deployment/includes/ndpte
 3. Zapisz plik.
 
    > [!NOTE]
-   >  Teraz należy ponownie podpisać plik za pomocą *Mage.exe*. Aby uzyskać więcej informacji, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+   > Teraz należy ponownie podpisać plik za pomocą *Mage.exe*. Aby uzyskać więcej informacji, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 ## <a name="net-framework-security"></a>Zabezpieczenia.NET Framework
  Jeśli instalowanie aplikacji w trybie offline średnie, takich jak dysk CD, a komputer jest w trybie online [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] najpierw sprawdza ją pod adres URL określony przez `<deploymentProvider>` tag w manifeście wdrożenia, aby ustalić, czy lokalizacji aktualizacji zawiera nowszą wersję aplikacja. Jeśli tak jest, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instaluje aplikację bezpośrednio stamtąd, a nie z katalogu instalacji początkowej i środowisko uruchomieniowe języka wspólnego (CLR) określa zaufania aplikacji przy użyciu na poziomie `<deploymentProvider>`. Jeśli komputer jest w trybie offline lub `<deploymentProvider>` jest nieosiągalny, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalacji z dysku CD, a środowisko CLR przyznaje zaufania, w oparciu o punkt instalacji; w przypadku instalacji z dysku CD, oznacza to, Twoja aplikacja otrzyma pełnego zaufania. Wszystkie kolejne aktualizacje będą dziedziczyć ten poziom zaufania.

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b97999b7a6aa56dc9be17d853c306c71a5ff290
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 36e310688b8305b2d5986a1b29d34895f02bc4d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411008"
 ---
 # <a name="usingtask-element-msbuild"></a>Usingtask — element (MSBuild)
 Mapuje zadanie, które odwołują się [zadań](../msbuild/task-element-msbuild.md) element do zestawu zawierającego implementację zadania.
@@ -69,7 +69,7 @@ Mapuje zadanie, które odwołują się [zadań](../msbuild/task-element-msbuild.
  Zmienne środowiskowe, właściwości wiersza polecenia, właściwości na poziomie projektu i elementy na poziomie projektu może być przywoływany w `UsingTask` elementy zawarte w pliku projektu, albo plik bezpośrednio lub za pośrednictwem importowanym projekcie. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).
 
 > [!NOTE]
->  Właściwości na poziomie projektu i elementy nie mają znaczenia jeśli `UsingTask` element pochodzi z jednego z *.tasks* pliki, które są globalnie zarejestrowane w usłudze aparatu MSBuild. Wartości na poziomie projektu nie są globalne do programu MSBuild.
+> Właściwości na poziomie projektu i elementy nie mają znaczenia jeśli `UsingTask` element pochodzi z jednego z *.tasks* pliki, które są globalnie zarejestrowane w usłudze aparatu MSBuild. Wartości na poziomie projektu nie są globalne do programu MSBuild.
 
  W wersji 4.0 programu MSBuild, przy użyciu zadań mogą być ładowane z *.overridetask* plików.
 

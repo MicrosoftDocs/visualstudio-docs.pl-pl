@@ -17,25 +17,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4fc4d69e8bf0a3ef13a8a06e652c8be217a1c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e132ea3592f18aad9b7b96bb32e8d7b6dac712cf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406980"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Instrukcje: Dostosowywanie domyślnej strony sieci Web dla aplikacji ClickOnce
 Podczas publikowania aplikacji ClickOnce w sieci Web, strony sieci Web jest automatycznie generowany i opublikowanych wraz z aplikacji. Domyślna strona zawiera nazwę aplikacji i linki do zainstalowania aplikacji, instalowanie wstępnie wymaganego oprogramowania lub dostępu do pomocy w witrynie MSDN.
 
 > [!NOTE]
->  Rzeczywiste łącza, widocznych na stronie zależy od komputera, na którym wyświetlania strony i wymagania wstępne są włącznie.
+> Rzeczywiste łącza, widocznych na stronie zależy od komputera, na którym wyświetlania strony i wymagania wstępne są włącznie.
 
  Nazwa domyślnej strony sieci Web jest *Publish.htm*; możesz zmienić nazwę w **projektanta projektu**. Aby uzyskać więcej informacji, zobacz [jak: Określanie strony publikowania dla aplikacji ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).
 
  *Publish.htm* strony sieci Web jest publikowany, tylko wtedy, gdy Wykryto nowszą wersję.
 
 > [!NOTE]
->  Zmiany wprowadzone do usługi **publikowania** nie wpłynie na ustawienia *Publish.htm* strony z jednym wyjątkiem: Jeśli dodasz lub usuniesz wymagania wstępne po początkowym opublikowaniu, będzie listę wymagań wstępnych już nie być dokładna. Należy edytować tekst łącza wymagań wstępnych odzwierciedlić zmiany.
+> Zmiany wprowadzone do usługi **publikowania** nie wpłynie na ustawienia *Publish.htm* strony z jednym wyjątkiem: Jeśli dodasz lub usuniesz wymagania wstępne po początkowym opublikowaniu, będzie listę wymagań wstępnych już nie być dokładna. Należy edytować tekst łącza wymagań wstępnych odzwierciedlić zmiany.
 
 ### <a name="to-customize-the-publish-web-page"></a>Aby dostosować strony sieci Web publikowania
 

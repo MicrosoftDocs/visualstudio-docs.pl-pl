@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: becc123cab729aff7d1306bb0ee13aee521444ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fc8bcd7a373ab6ee63e32b5873fd149001137511
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433184"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definiowanie niestandardowego elementu przybornika modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorca, które 
 - Para klas połączone przez skojarzenie, aby reprezentować wzorzec obserwatora.  
   
 > [!NOTE]
->  Ta metoda umożliwia tworzenie narzędzi elementów. Oznacza to można utworzyć narzędzia, które zostaną przeciągnięte z przybornika do diagramu. Nie można utworzyć narzędzia Łącznik.  
+> Ta metoda umożliwia tworzenie narzędzi elementów. Oznacza to można utworzyć narzędzia, które zostaną przeciągnięte z przybornika do diagramu. Nie można utworzyć narzędzia Łącznik.  
   
 ## <a name="DefineTool"></a> Definiowanie niestandardowego narzędzia modelowania  
   
@@ -136,7 +136,7 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorca, które 
  Edytuj plik mapy bitowej w programie Visual Studio i równa jego wysokości i szerokości 16 w oknie dialogowym właściwości.  
   
 > [!NOTE]
->  W przypadku uruchomienia przy użyciu pliku .tbxinfo po eksperymentowanie z używaniem plików diagramu na ich własnych, może się okazać, że Przybornik zawiera zarówno stare i nowe wersje elementu przybornika. Może to także wystąpić, jeśli nazwa pliku diagramu została wpisana z błędem w pliku .tbxinfo. Jeśli ten problem wystąpi, w menu skrótów w przyborniku wybierz **resetowania przybornika**. Elementy do przybornika niestandardowego znikną. Uruchom ponownie program Visual Studio i pojawi się odpowiednie elementy niestandardowe.  
+> W przypadku uruchomienia przy użyciu pliku .tbxinfo po eksperymentowanie z używaniem plików diagramu na ich własnych, może się okazać, że Przybornik zawiera zarówno stare i nowe wersje elementu przybornika. Może to także wystąpić, jeśli nazwa pliku diagramu została wpisana z błędem w pliku .tbxinfo. Jeśli ten problem wystąpi, w menu skrótów w przyborniku wybierz **resetowania przybornika**. Elementy do przybornika niestandardowego znikną. Uruchom ponownie program Visual Studio i pojawi się odpowiednie elementy niestandardowe.  
   
 ## <a name="Extension"></a> Jak dystrybuować elementów przybornika w rozszerzenia programu Visual Studio  
  Można rozpowszechniać elementów przybornika z innymi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] użytkowników upakowanie je do programu Visual Studio rozszerzenia (VSIX). Można spakować poleceń, profile i inne rozszerzenia, w tym samym pliku VSIX. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160780).  
@@ -164,7 +164,7 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorca, które 
     - W Eksploratorze rozwiązań w menu skrótów projektu VSIX wybierz **Dodaj**, **istniejący element**. W oknie dialogowym Ustaw **obiekty typu: Wszystkie pliki**. Znajdź pliki, zaznacz je, a następnie wybierz **Dodaj**.  
   
         > [!NOTE]
-        >  W tym projekcie nie można otworzyć plików diagramu w edytorze modeli.  
+        > W tym projekcie nie można otworzyć plików diagramu w edytorze modeli.  
   
 5. Ustaw następujące właściwości wszystkich plików, które zostały dodane. W tym samym czasie można ustawiać ich właściwości, wybierając je w Eksploratorze rozwiązań. Należy zachować ostrożność nie należy zmieniać właściwości inne pliki w projekcie.  
   
@@ -185,7 +185,7 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorca, które 
     - Typ = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
   
         > [!NOTE]
-        >  Nie jest jedną z opcji na liście rozwijanej. Musisz wprowadzić go za pomocą klawiatury.  
+        > Nie jest jedną z opcji na liście rozwijanej. Musisz wprowadzić go za pomocą klawiatury.  
   
     - **Źródło** = **plików w systemie plików**.  
   

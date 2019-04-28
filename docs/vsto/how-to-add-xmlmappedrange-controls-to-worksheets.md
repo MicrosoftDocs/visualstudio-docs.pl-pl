@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cef35cd1aa19ad27e7c47227b726a44756b0fae8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60f1fe8330e3a40676738c4187273ee60215db6d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427436"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Instrukcje: Dodawanie formantów XMLMappedRange do arkuszy
   Kiedy mapujesz — element XML do komórki w programie Microsoft Excel pakietu Office, Visual Studio automatycznie dodaje <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> formantu do arkusza.
@@ -26,7 +26,7 @@ ms.locfileid: "60085723"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Formant nie jest dostępny na **przybornika** lub **źródeł danych** okna. Ponadto nie można utworzyć <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> kontroluje programowo.
+> <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Formant nie jest dostępny na **przybornika** lub **źródeł danych** okna. Ponadto nie można utworzyć <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> kontroluje programowo.
 
 ## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>Aby dodać kontrolkę XMLMappedRange do arkusza
 
@@ -37,7 +37,7 @@ ms.locfileid: "60085723"
 3. Na **Developer** kliknij pozycję **źródła**.
 
     > [!NOTE]
-    >  Jeśli **Developer** karta nie jest widoczna na Wstążce, należy je włączyć. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Jeśli **Developer** karta nie jest widoczna na Wstążce, należy je włączyć. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
      **Źródła XML** pojawi się okienko zadań.
 
@@ -58,7 +58,7 @@ ms.locfileid: "60085723"
      <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Zostanie utworzony i dodany do projektu.
 
     > [!NOTE]
-    >  Jeśli przeciągniesz element nadrzędny z **źródła XML** okienka zadań <xref:Microsoft.Office.Tools.Excel.ListObject> formant zostanie utworzony.
+    > Jeśli przeciągniesz element nadrzędny z **źródła XML** okienka zadań <xref:Microsoft.Office.Tools.Excel.ListObject> formant zostanie utworzony.
 
 ## <a name="see-also"></a>Zobacz także
 - [Xmlmappedrange — formant](../vsto/xmlmappedrange-control.md)

@@ -14,12 +14,12 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 350f0c873a0b6692d16dcbc987db32b63f68be72
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 643ffd8dc48eb6b0fc35ea035c8c599efbea85c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438957"
 ---
 # <a name="options-and-options-pages"></a>Opcje i strony opcji
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Klikając **opcje** na **narzędzia** zostanie otwarte menu **opcje** okno dialo
 - <xref:System.ComponentModel.DescriptionAttribute> Określa opis opcji.  
   
   > [!NOTE]
-  >  Atrybuty równoważne, SRCategory, LocDisplayName i SRDescription, korzystać z zasobów ciągu dla lokalizacji i są definiowane w [przykładowym projekcie zarządzanych](http://go.microsoft.com/fwlink/?LinkId=122774).  
+  > Atrybuty równoważne, SRCategory, LocDisplayName i SRDescription, korzystać z zasobów ciągu dla lokalizacji i są definiowane w [przykładowym projekcie zarządzanych](http://go.microsoft.com/fwlink/?LinkId=122774).  
   
   Rozważmy następujący fragment kodu:  
   
@@ -86,4 +86,4 @@ Klikając **opcje** na **narzędzia** zostanie otwarte menu **opcje** okno dialo
  Ścieżka rejestru właściwości automatyzacji jest określana przez łączenie <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, wyraz, AutomationProperties i opcje strony kategorii i nazwę. Na przykład, jeśli strona opcji posiada kategorii Moje kategorii, nazwę Moje strony siatki i <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, a następnie właściwość automatyzacji zawiera klucz rejestru HKEY_LOCAL_MACHINE\SOFTWARE\ Strona siatki Category\My Microsoft\VisualStudio\8.0Exp\AutomationProperties\My.  
   
 > [!NOTE]
->  Nazwa kanoniczna Moje Category.My stronie siatki, to wartość podklucza nazwę tego klucza.
+> Nazwa kanoniczna Moje Category.My stronie siatki, to wartość podklucza nazwę tego klucza.

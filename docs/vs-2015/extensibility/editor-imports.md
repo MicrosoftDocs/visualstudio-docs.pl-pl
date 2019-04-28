@@ -10,12 +10,12 @@ ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 461687e5d1e9570ea2e03610f838f6114fbc7643
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4805bff12d284dc5a54451e157c9e8fb92deeae2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432131"
 ---
 # <a name="editor-imports"></a>Importy edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Można zaimportować szereg usług edytora, fabryk i brokerzy, umożliwiające r
  Aby użyć importu edytora, zaimportować jako pole lub właściwość klasy, które eksportuje część Managed Extensibility Framework.  
   
 > [!NOTE]
->  Aby uzyskać więcej informacji na temat Managed Extensibility Framework, zobacz [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+> Aby uzyskać więcej informacji na temat Managed Extensibility Framework, zobacz [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 ## <a name="import-syntax"></a>Składnia importu  
  Poniższy przykład pokazuje, jak zaimportować edytora opcje fabryki usługi.  
@@ -44,17 +44,17 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  Aby uzyskać więcej przykładów użycia importów zobacz następujące instruktaże:  
   
- [Przewodnik: Tworzenie marginesie](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [Przewodnik: tworzenie symbolu na marginesie](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
- [Przewodnik: Dostosowywanie widoku tekstu](../extensibility/walkthrough-customizing-the-text-view.md)  
+ [Przewodnik: dostosowywanie widoku tekstu](../extensibility/walkthrough-customizing-the-text-view.md)  
   
- [Przewodnik: Wyróżnianie tekstu](../extensibility/walkthrough-highlighting-text.md)  
+ [Przewodnik: wyróżnianie tekstu](../extensibility/walkthrough-highlighting-text.md)  
   
- [Przewodnik: Wyświetlanie etykietek narzędzi Szybkieinfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Przewodnik: wyświetlanie etykietek narzędzi SzybkieInfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [Przewodnik: Wyświetlanie pomocy dotyczącej sygnatur](../extensibility/walkthrough-displaying-signature-help.md)  
+ [Przewodnik: wyświetlanie pomocy dotyczącej podpisów](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [Przewodnik: Wyświetlanie uzupełniania instrukcji](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [Przewodnik: wyświetlanie uzupełniania składni](../extensibility/walkthrough-displaying-statement-completion.md)  
   
  [Przewodnik: Wyświetlanie tagi inteligentne](../misc/walkthrough-displaying-smarttags.md)  
   

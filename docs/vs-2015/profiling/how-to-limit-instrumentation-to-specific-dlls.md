@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1806e39e70d98ce7f47dda6bbc32a8f261b96acd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5dc2fe8e6f9b0ed1e6970943ab5eedf1b62eb961
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432674"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Instrukcje: Ograniczenie Instrumentacji do określonych bibliotek DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Za pomocą metody profilowania instrumentacji, można ograniczyć zbierania dany
 7. Opcjonalna. Aby dodać więcej plików .dll, kliknij prawym przyciskiem myszy **cele** , a następnie wybierz **Dodaj binarne docelowej**. Wybierz pliki z **Dodaj binarne docelowej** okno dialogowe.  
   
     > [!NOTE]
-    >  Nie należy określać plik wykonywalny (.exe), która wykonuje operacje biblioteki dll.  
+    > Nie należy określać plik wykonywalny (.exe), która wykonuje operacje biblioteki dll.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Kontrolowanie zbierania danych](../profiling/controlling-data-collection.md)   

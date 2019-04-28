@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4eadb8c9553873f43ad9435ad43fae00f57affcb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0cb2d42db65c5eb77aae324d2c10c25010eb8b8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444739"
 ---
 # <a name="devenv-command-line-switches"></a>Przełączniki wiersza polecenia Devenv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ ms.locfileid: "60050715"
 Devenv pozwala ustawić różne opcje zintegrowanego środowiska programistycznego (IDE) i również tworzenia, debugowania i wdrażania projektów, w wierszu polecenia. Używaj tych przełączników, aby uruchomić środowisko IDE z skrypt lub plik .bat, na przykład skrypt nocna kompilacja, lub aby uruchomić środowisko IDE w określonej konfiguracji.  
   
 > [!NOTE]
->  Dla zadania związane z kompilacji teraz zalecane jest używanie programu MSBuild zamiast devenv. Aby uzyskać więcej informacji, zobacz [odwołanie do wiersza polecenia](../../msbuild/msbuild-command-line-reference.md).  
+> Dla zadania związane z kompilacji teraz zalecane jest używanie programu MSBuild zamiast devenv. Aby uzyskać więcej informacji, zobacz [odwołanie do wiersza polecenia](../../msbuild/msbuild-command-line-reference.md).  
   
 > [!NOTE]
->  Devenv musi działać jako administrator, aby można było używać [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) i [/installvstemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) przełączników.  
+> Devenv musi działać jako administrator, aby można było używać [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) i [/installvstemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) przełączników.  
   
 ## <a name="devenv-switch-syntax"></a>Składnia — przełącznik Devenv  
  Domyślnie polecenia devenv przekazać przełączników do narzędzia devenv.com.  
@@ -57,7 +57,7 @@ Devenv pozwala ustawić różne opcje zintegrowanego środowiska programistyczne
 - Jeśli podasz nazwę pliku projektu, a nie nazwę pliku rozwiązania `devenv` polecenia wyszuka folderu nadrzędnego pliku projektu plik rozwiązania, który ma taką samą nazwę. Na przykład polecenie `devenv /build myproject1.vbproj` wyszuka folder nadrzędny do pliku rozwiązania, który nosi nazwę "myproject1.sln".  
   
     > [!NOTE]
-    >  Jeden i tylko jeden plik rozwiązania, który odwołuje się do tego projektu powinna znajdować się w folderu nadrzędnego. Jeśli folder nadrzędny zawiera nie pliku rozwiązania, który odwołuje się do tego projektu lub jeśli folder nadrzędny zawiera dwa lub więcej plików rozwiązania, które ją przywołują, następnie rozwiązanie tymczasowe zostanie utworzony plik, nosi nazwę dla tego projektu, a następnie odwołuje się do niej.  
+    > Jeden i tylko jeden plik rozwiązania, który odwołuje się do tego projektu powinna znajdować się w folderu nadrzędnego. Jeśli folder nadrzędny zawiera nie pliku rozwiązania, który odwołuje się do tego projektu lub jeśli folder nadrzędny zawiera dwa lub więcej plików rozwiązania, które ją przywołują, następnie rozwiązanie tymczasowe zostanie utworzony plik, nosi nazwę dla tego projektu, a następnie odwołuje się do niej.  
   
 - Gdy nazwy pliku i ścieżki plików zawiera spacje, należy ująć je w znaki podwójnego cudzysłowu (""). Na przykład "c:\project\\".  
   

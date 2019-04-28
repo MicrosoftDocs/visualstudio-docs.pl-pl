@@ -10,12 +10,12 @@ ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8daa7922b1f1ba7cb90cca9a77a6db14977c7518
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fb3bb85ab172404262c147cce285cebaf756afc9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432081"
 ---
 # <a name="solutions-overview"></a>Omówienie rozwiązań
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Rozwiązanie to grupa jeden lub więcej projektów, które współpracują ze so
  Dowolnego pakietu VSPackage można zapisać do dowolnego typu pliku rozwiązania. Ze względu na charakter pliki istnieją dwa różne interfejsy implementowane był na nich zapis. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> Interfejsu zapisuje informacje tekstowe do pliku .sln i <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> interfejsu zapisuje plik .suo strumieni binarnych.  
   
 > [!NOTE]
->  Projekt nie ma jawnie zapisu wykorzystywany do pliku rozwiązania. środowisko sobie z nimi poradzi dla projektu. W związku z tym chyba że chcesz dodać dodatkową zawartość do pliku rozwiązania, nie trzeba zarejestrować Twojego pakietu VSPackage w ten sposób.  
+> Projekt nie ma jawnie zapisu wykorzystywany do pliku rozwiązania. środowisko sobie z nimi poradzi dla projektu. W związku z tym chyba że chcesz dodać dodatkową zawartość do pliku rozwiązania, nie trzeba zarejestrować Twojego pakietu VSPackage w ten sposób.  
   
  Każdego pakietu VSPackage obsługi trwałości rozwiązanie używa trzech interfejsów <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> interfejs, który jest implementowany przez środowisko i wywoływany przez pakietu VSPackage, i `IVsPersistSolutionProps` i `IVsPersistSolutionOpts`, które są zarówno implementowane przez pakietu VSPackage. `IVsPersistSolutionOpts` Interfejsu tylko musi zostać wdrożone, jeśli ma on zostać zapisany przez pakietu VSPackage plik .suo informacje prywatne.  
   
@@ -44,7 +44,7 @@ Rozwiązanie to grupa jeden lub więcej projektów, które współpracują ze so
    Szczegółowe informacje dotyczące korzystania z tych plików można znaleźć w [rozwiązania (. Plik sln)](../../extensibility/internals/solution-dot-sln-file.md) i [opcje użytkownika rozwiązania (. Plik suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
   
 > [!NOTE]
->  Jeśli chcesz utworzyć nową konfigurację rozwiązania składający się z dwóch projektów konfiguracje z wyłączeniem trzecią z kompilacji, należy użyć interfejsu użytkownika strony właściwości lub automatyzacji. Nie można zmienić konfiguracji Menedżera kompilacji rozwiązania i ich właściwości bezpośrednio, ale można manipulować Menedżera kompilacji rozwiązania przy użyciu `SolutionBuild` klasy z obiektu DTE w modelu automatyzacji. Aby uzyskać więcej informacji na temat konfigurowania rozwiązania, zobacz [konfiguracji rozwiązania](../../extensibility/internals/solution-configuration.md).  
+> Jeśli chcesz utworzyć nową konfigurację rozwiązania składający się z dwóch projektów konfiguracje z wyłączeniem trzecią z kompilacji, należy użyć interfejsu użytkownika strony właściwości lub automatyzacji. Nie można zmienić konfiguracji Menedżera kompilacji rozwiązania i ich właściwości bezpośrednio, ale można manipulować Menedżera kompilacji rozwiązania przy użyciu `SolutionBuild` klasy z obiektu DTE w modelu automatyzacji. Aby uzyskać więcej informacji na temat konfigurowania rozwiązania, zobacz [konfiguracji rozwiązania](../../extensibility/internals/solution-configuration.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>   

@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: 662ee0ba4659e09b02f120bac5b3eaa728add6d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cc465ca5bc9474aaba51042d453a57ee7ec124ec
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60037898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432299"
 ---
 # <a name="creating-your-own-start-page"></a>Tworzenie własną stronę początkową
 Za pomocą szablonu projektu strony Start lub tworząc pustą stronę początkową, można utworzyć niestandardowej strony początkowej.  
@@ -31,7 +31,7 @@ Za pomocą szablonu projektu strony Start lub tworząc pustą stronę początkow
 1. Pobierz i zainstaluj [szablonu projektu strona startowa](http://go.microsoft.com/fwlink/?LinkId=186204) z galerii Visual Studio.  
   
     > [!WARNING]
-    >  W tej chwili nie został uaktualniony szablon projektu Visual Studio 2010 strony początkowej. Aby uzyskać informacje o sposobie uaktualniania tego szablonu, zobacz [jak: Uaktualnienie programu Visual Studio niestandardową stronę początkową](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
+    > W tej chwili nie został uaktualniony szablon projektu Visual Studio 2010 strony początkowej. Aby uzyskać informacje o sposobie uaktualniania tego szablonu, zobacz [jak: Uaktualnienie programu Visual Studio niestandardową stronę początkową](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
   
 2. Po zainstalowaniu szablonu, należy utworzyć nowy projekt strony start z nim.  
   
@@ -101,4 +101,4 @@ Za pomocą szablonu projektu strony Start lub tworząc pustą stronę początkow
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowanie strony początkowej](../ide/customizing-the-start-page-for-visual-studio.md)   
- [Przewodnik: Dodawanie niestandardowych XAML do strony początkowej](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+ [Przewodnik: dodawanie niestandardowych elementów XAML do strony początkowej](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

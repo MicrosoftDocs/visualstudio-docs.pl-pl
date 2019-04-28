@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ba5603fe759f55a85425bc61da0a470aa38d636c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c57b3de77c2b32d7589fe50d55b3e81db08facd1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422488"
 ---
 # <a name="how-to-resize-namedrange-controls"></a>Instrukcje: Zmiana rozmiaru formantów NamedRange
   Można ustawić rozmiar <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli po dodaniu go do dokumentu programu Microsoft Office Excel; Jednakże, możesz chcieć zmienić jej rozmiar w późniejszym czasie.
@@ -59,7 +59,7 @@ ms.locfileid: "60099614"
  Możesz zmienić rozmiar nazwany zakres programowo przy użyciu <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> właściwości.
 
 > [!NOTE]
->  W **właściwości** oknie <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> właściwość jest oznaczona jako tylko do odczytu.
+> W **właściwości** oknie <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> właściwość jest oznaczona jako tylko do odczytu.
 
 ### <a name="to-resize-a-named-range-programmatically"></a>Aby programowo zmienić rozmiar nazwany zakres
 

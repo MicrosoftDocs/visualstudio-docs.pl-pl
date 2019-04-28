@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 0795ee94-17a8-4327-bf57-27cd5e312a4c
 caps.latest.revision: 29
 manager: jillfra
-ms.openlocfilehash: 2cbb93c5ecb3caf38b686a958d6daed845bdaec7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 53ff7b49414e3473c74a41008f381bb207e45fd0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414674"
 ---
 # <a name="hresult-information-in-managed-code"></a>Informacje o HRESULT w kodzie zarządzanym
 Interakcja między kodem zarządzanym i COM może powodować problemy, gdy wystąpią zwracane wartości HRESULT.  
@@ -42,7 +42,7 @@ Interakcja między kodem zarządzanym i COM może powodować problemy, gdy wyst�
  Domyślnie <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> zgłasza wyjątek, gdy jest przekazywana wartość HRESULT, która ma wartość niższą niż zero. W przypadkach, takich wartości HRESULT są dopuszczalne wartości i nie należy zgłosić wyjątek, wartości dodatkowe wartości HRESULT powinien zostać przekazany do <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> po wartości są badane. Jeśli HRESULT testowana pasuje do dowolnej wartości HRESULT jawnie przekazany do <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>, jest zgłaszany żaden wyjątek.  
   
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.VSConstants> Klasa zawiera stałe dla typowych wartości HRESULT, na przykład <xref:Microsoft.VisualStudio.VSConstants.S_OK> i <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, i [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wartości HRESULT, na przykład <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> i <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants> udostępnia również <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> i <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> metod, które odnoszą się do makra Powodzenie, a nie powiodło się w modelu COM.  
+> <xref:Microsoft.VisualStudio.VSConstants> Klasa zawiera stałe dla typowych wartości HRESULT, na przykład <xref:Microsoft.VisualStudio.VSConstants.S_OK> i <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, i [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wartości HRESULT, na przykład <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> i <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants> udostępnia również <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> i <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> metod, które odnoszą się do makra Powodzenie, a nie powiodło się w modelu COM.  
   
  Na przykład, należy wziąć pod uwagę poniższe wywołanie funkcji, w którym <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> jest mniejsza niż zero reprezentuje błąd akceptowalną wartość zwracana, ale inne HRESULT.  
   
@@ -60,7 +60,7 @@ Interakcja między kodem zarządzanym i COM może powodować problemy, gdy wyst�
  Jeśli nie jesteś niektórych który wyjątków zgłaszają, ale wiesz HRESULT chcesz wrócić do modelu COM, można użyć <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> metodę, aby zgłosić wyjątek odpowiednie. Dzieje się tak nawet w przypadku błędów niestandardowych, na przykład <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> próbuje zamapować HRESULT przekazany do silnie typizowanego wyjątku. Jeśli jest ona nieosiągalna, zgłosi wyjątek ogólny COM zamiast tego. Ostateczny wynik jest HRESULT, były przekazywane do <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> z kodu zarządzanego jest zwracany do funkcji COM, która nazwała go.  
   
 > [!NOTE]
->  Wyjątki wpłynąć na wydajność i są przeznaczone do wskazania niewłaściwym warunków. Warunki, które często występują powinny być obsługiwane w tekście, a nie zgłoszony wyjątek.  
+> Wyjątki wpłynąć na wydajność i są przeznaczone do wskazania niewłaściwym warunków. Warunki, które często występują powinny być obsługiwane w tekście, a nie zgłoszony wyjątek.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Managed VSPackages](../misc/managed-vspackages.md)   

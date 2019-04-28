@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c681a67b48baf89e1e601943c6cafd25e91ff332
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0b63060e82767f18bdda5a7df21972d23666f258
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419793"
 ---
 # <a name="toolbox-data-tab"></a>Przybornik, karta Dane
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "59663918"
 Wyświetla obiekty danych możesz dodać do formularzy i składników. **Danych** karcie **przybornika** pojawia się podczas tworzenia projektu, który ma skojarzony projektanta. **Przybornika** pojawia się domyślnie w programie Visual Studio zintegrowanego środowiska programistycznego; Jeśli chcesz wyświetlić **przybornika**, wybierz opcję **przybornika** z **Widoku** menu.  
   
 > [!TIP]
->  Uruchamianie Kreatora konfiguracji źródła danych zostaną automatycznie tworzą i konfigurują większość elementów danych. Aby uzyskać więcej informacji, zobacz [tworzenia aplikacji przetwarzających dane z programu Visual Studio](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293).  
+> Uruchamianie Kreatora konfiguracji źródła danych zostaną automatycznie tworzą i konfigurują większość elementów danych. Aby uzyskać więcej informacji, zobacz [tworzenia aplikacji przetwarzających dane z programu Visual Studio](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293).  
   
 ## <a name="ui-element-list"></a>Lista elementów interfejsu użytkownika  
  Aby przejść bezpośrednio na stronie dokumentacji .NET Framework dla składnika, naciśnij klawisz **F1** element **przybornika** lub element składnika w zasobniku projektanta.  

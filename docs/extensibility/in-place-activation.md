@@ -6,12 +6,12 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 manager: jillfra
-ms.openlocfilehash: 9952cc804e548896fb4dec9f6c1a447835ba251e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 284a0da3aaf0b88f7f0d2c7fc3983ca3c6aacbc6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415269"
 ---
 # <a name="in-place-activation"></a>Aktywacja w miejscu
 Jeśli widok Edytor obsługuje ActiveX lub inne aktywne kontrolki, należy zaimplementować widoku edytora jako formant ActiveX, lub jako obiekt danych aktywnego dokumentu przy użyciu modelu aktywacji w miejscu.
@@ -22,7 +22,7 @@ Jeśli widok Edytor obsługuje ActiveX lub inne aktywne kontrolki, należy zaimp
  W przypadku zaimplementowania formant ActiveX może obsługiwać inne obiekty osadzone. W przypadku zaimplementowania obiektu danych dokumentu ramki okna ogranicza możliwość korzystania z formantów ActiveX.
 
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> i <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> interfejsy umożliwiają do oddzielania danych oraz widoku. Jednak program Visual Studio nie obsługuje tej funkcji, a te interfejsy są używane tylko do reprezentowania obiekt widoku dokumentu.
+> <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> i <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> interfejsy umożliwiają do oddzielania danych oraz widoku. Jednak program Visual Studio nie obsługuje tej funkcji, a te interfejsy są używane tylko do reprezentowania obiekt widoku dokumentu.
 
  Edytory, które używają <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> usługi może zapewnić menu, pasek narzędzi i integracja polecenia przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> interfejs implementowany przez <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> usługi. Edytory również oferują inne funkcje programu Visual Studio, takie jak wybór śledzenia i Cofnij zarządzania. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych edytorów i projektantów](../extensibility/creating-custom-editors-and-designers.md).
 
@@ -32,7 +32,7 @@ Jeśli widok Edytor obsługuje ActiveX lub inne aktywne kontrolki, należy zaimp
  ![W&#45;umieść Edytor aktywacji](../extensibility/media/vsinplaceactivationeditor.gif "vsInPlaceActivationEditor") Edytor aktywacji w miejscu
 
 > [!NOTE]
->  Obiekty w tym rysowania, tylko `CYourEditorFactory` obiektu jest wymagana do utworzenia edytora standardowego. Jeśli tworzysz niestandardowy edytor, nie należy implementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> ponieważ edytor prawdopodobnie będzie mieć własny mechanizm prywatnej trwałości. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych edytorów i projektantów](../extensibility/creating-custom-editors-and-designers.md).
+> Obiekty w tym rysowania, tylko `CYourEditorFactory` obiektu jest wymagana do utworzenia edytora standardowego. Jeśli tworzysz niestandardowy edytor, nie należy implementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> ponieważ edytor prawdopodobnie będzie mieć własny mechanizm prywatnej trwałości. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych edytorów i projektantów](../extensibility/creating-custom-editors-and-designers.md).
 
  Wszystkie interfejsy, które są wdrożone w celu tworzenia edytora Aktywacja w miejscu są wyświetlane w pojedynczej precyzji `CYourEditorDocument` obiekt, ale ta konfiguracja obsługuje tylko pojedynczy widok danych dokumentu. Aby uzyskać więcej informacji na temat obsługi wielu widoków danych dokumentu, zobacz [obsługi wielu widoków dokumentu](../extensibility/supporting-multiple-document-views.md).
 

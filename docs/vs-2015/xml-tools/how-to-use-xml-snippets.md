@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a6c48d878f2bacd8317878366980ecc317f7adb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ba4d98a1d6a59a35bf4aa279831036eecec99989
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440584"
 ---
 # <a name="how-to-use-xml-snippets"></a>Instrukcje: Używanie fragmentów kodu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Możesz wywołać fragmentów kodu XML za pomocą dwóch poniższych poleceń w 
  W poniższych procedurach opisano sposób uzyskiwania dostępu do **Wstaw fragment kodu** polecenia.  
   
 > [!NOTE]
->  **Wstaw fragment kodu** polecenia jest także dostępny za pomocą skrótu klawiaturowego (CTRL + K, a następnie klawisze CTRL + X).  
+> **Wstaw fragment kodu** polecenia jest także dostępny za pomocą skrótu klawiaturowego (CTRL + K, a następnie klawisze CTRL + X).  
   
 #### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Aby wstawić fragmentów kodu z menu skrótów  
   
@@ -60,7 +60,7 @@ Możesz wywołać fragmentów kodu XML za pomocą dwóch poniższych poleceń w 
 4. Naciśnij klawisz TAB, TAB, aby wywołać fragment kodu XML.  
   
 > [!NOTE]
->  Można wykluczyć sytuacji podczas wywoływania fragmencie kodu XML nie uzyskać. Na przykład, jeśli podczas próby wstawienia `xs:complexType` element wewnątrz `xs:element` węzła, edytor nie generuje fragmentu kodu XML. Gdy `xs:complexType` elementu jest używana wewnątrz `xs:element` węzła, brak wymaganych atrybutów i dozwolone podelementy, więc edytor nie ma żadnych danych, aby wstawić.  
+> Można wykluczyć sytuacji podczas wywoływania fragmencie kodu XML nie uzyskać. Na przykład, jeśli podczas próby wstawienia `xs:complexType` element wewnątrz `xs:element` węzła, edytor nie generuje fragmentu kodu XML. Gdy `xs:complexType` elementu jest używana wewnątrz `xs:element` węzła, brak wymaganych atrybutów i dozwolone podelementy, więc edytor nie ma żadnych danych, aby wstawić.  
   
 #### <a name="to-insert-snippets-using-the-shortcut-name"></a>Aby wstawić fragmentów kodu przy użyciu nazwy skrótu  
   
@@ -76,7 +76,7 @@ Możesz wywołać fragmentów kodu XML za pomocą dwóch poniższych poleceń w 
  W poniższych procedurach opisano sposób uzyskiwania dostępu do **Otocz** polecenia.  
   
 > [!NOTE]
->  **Otocz** polecenia jest także dostępny za pomocą skrótu klawiaturowego (CTRL + K, a następnie klawisze CTRL + S).  
+> **Otocz** polecenia jest także dostępny za pomocą skrótu klawiaturowego (CTRL + K, a następnie klawisze CTRL + S).  
   
 #### <a name="to-use-surround-with-from-the-context-menu"></a>Aby użyć umieszczanie w menu kontekstowym  
   

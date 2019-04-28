@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc50da1cec68103045365a021e039dd18eced85e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 2621b88622e99ac95533e388197e483f2925f897
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420827"
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
 Określa rodzaj informacji o symbolach w celu pobrania.
@@ -51,7 +51,7 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
  Te flagi są przekazywane jako parametr do [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) zwracany przez metodę, aby określić ilość informacji.
 
 > [!NOTE]
->  Obecnie tylko `SSIF_VERBOSE_SEARCH_INFO` jest obsługiwany, a musi być określona jako `dwFlags` parametr `IDebugModule3::GetSymbolInfo`. Wszystkie pozostałe wartości zwróci błąd.
+> Obecnie tylko `SSIF_VERBOSE_SEARCH_INFO` jest obsługiwany, a musi być określona jako `dwFlags` parametr `IDebugModule3::GetSymbolInfo`. Wszystkie pozostałe wartości zwróci błąd.
 
 ## <a name="requirements"></a>Wymagania
  Header: msdbg.h

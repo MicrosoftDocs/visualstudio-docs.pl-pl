@@ -11,12 +11,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2aef2183cde96bfb5faa1bb62fa341f901dd7018
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 274aa497e004ddafee9a56b028f3001bb8deb630
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437077"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Tworzenie zasad ewidencjonowania analizy kodu i korzystanie z nich
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Gdy używasz Team Foundation Version Control (TFVC), można utworzyć zasad anal
  Zasady zostają spełnione, gdy lokalna kompilacja jest aktualna oraz analiza kodu została uruchomiona na najnowszych plikach źródłowych. Co najmniej reguły analizy kodu, które są włączone w projekcie kodu musi zawierać te same reguły jako te, które są definiowane w team project zasad ewidencjonowania. Reguły, które zostały określone jako błędy w ustawieniach projektu zespołowego musi być także określona jako błędy w projekcie kodu  
   
 > [!IMPORTANT]
->  Nie można zastosować zasad ewidencjonowania analizy kodu do projektów witryny sieci web. Mogą być stosowane do projektów aplikacji sieci web.  
+> Nie można zastosować zasad ewidencjonowania analizy kodu do projektów witryny sieci web. Mogą być stosowane do projektów aplikacji sieci web.  
   
  Tworzenie zasad ewidencjonowania analizy kodu za pomocą ustawień projektu zespołowego [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Zasady ewidencjonowania są określone i wymuszane dla projektu zespołowego, ale przebiegi analizy kodu są skonfigurowane i uruchamiane dla poszczególnych projektów kodu, na komputerach rozwoju lokalnego. W tej sekcji opisano sposób określania zasad ewidencjonowania analizy kodu dla projektu zespołowego oraz sposób implementacji niestandardowych zasad analizy kodu dla kodu zarządzanego.  
   

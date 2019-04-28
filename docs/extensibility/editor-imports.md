@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99619efa5181fbcf299e99cde60b8879731c0c74
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b11ef172cdd8fb4b1c72b72b43198ad7ad8f74e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417346"
 ---
 # <a name="editor-imports"></a>Importy edytora
 Można zaimportować szereg usług edytora, fabryk i brokerzy, umożliwiające rozszerzenie z różnymi rodzajami dostępu do podstawowy edytor. Na przykład można importować <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> zapewnienie użytkownikowi <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> dla danego typu zawartości. (To navigator pozwala wykonywać różne rodzaje wyszukiwania dla bufora tekstowego.)
@@ -23,7 +23,7 @@ Można zaimportować szereg usług edytora, fabryk i brokerzy, umożliwiające r
  Aby użyć importu edytora, zaimportować jako pole lub właściwość klasy, które eksportuje część Managed Extensibility Framework.
 
 > [!NOTE]
->  Aby uzyskać więcej informacji na temat Managed Extensibility Framework, zobacz [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
+> Aby uzyskać więcej informacji na temat Managed Extensibility Framework, zobacz [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
 
 ## <a name="import-syntax"></a>Składnia importu
  Poniższy przykład pokazuje, jak zaimportować edytora opcje fabryki usługi.
@@ -73,7 +73,7 @@ internal SVsServiceProvider ServiceProvider = null;
 |------------|--------------|
 |<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|Relacja między rozszerzeniami plików i <xref:Microsoft.VisualStudio.Utilities.IContentType> obiektów.|
 |<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Kolekcja <xref:Microsoft.VisualStudio.Utilities.IContentType> obiektów.|
-|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformationService>|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformation>obiekty.|
+|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformationService>|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformation> Obiekty.|
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>|Wiele obiektów karta edytora:<br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|
 |<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearchFactoryService>|<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearch> Obiektu w celu wyświetlenia danego tekstu.|
 |<xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>|<xref:Microsoft.VisualStudio.Text.ITextBuffer>.|

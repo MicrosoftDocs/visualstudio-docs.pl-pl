@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70563378ca3599c1e558cd9e359979383e10f78b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: a2ae77a390553fc95c7a29d24eff70fde231b7b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410037"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomia pakietu VSIX
 Pakiet VSIX jest *.vsix* pliku, który zawiera jeden lub więcej rozszerzeń programu Visual Studio, razem z metadanymi programu Visual Studio używa do klasyfikowania i zainstalować rozszerzenia. Tych metadanych znajduje się w manifestu VSIX i *[Content_Types] .xml* pliku. Pakiet VSIX może również zawierać co najmniej jeden *Extension.vsixlangpack* plików w celu zapewnienia zlokalizowane w tekście Instalatora i może zawierać dodatkowe pakiety VSIX, aby zainstalować zależności.
@@ -25,7 +25,7 @@ Pakiet VSIX jest *.vsix* pliku, który zawiera jeden lub więcej rozszerzeń pro
  Formacie pakietu VSIX postępuje zgodnie ze standardowym otwarte konwencje tworzenia pakietów (OPC). Pakiet zawiera pliki binarne i pliki pomocnicze, wraz z *[Content_Types] .xml* pliku i *.vsix* pliku manifestu. Jeden pakiet VSIX może zawierać dane wyjściowe z wieloma projektami lub nawet utworzyć wiele pakietów, które mają własne manifestów.
 
 > [!NOTE]
->  Nazwy plików zawarte w pakietów VSIX nie może zawierać spacji ani znaków, które są zastrzeżone w identyfikatorach URI (Uniform Resource), zdefiniowane w obszarze [ \[specyfikacja RFC 2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).
+> Nazwy plików zawarte w pakietów VSIX nie może zawierać spacji ani znaków, które są zastrzeżone w identyfikatorach URI (Uniform Resource), zdefiniowane w obszarze [ \[specyfikacja RFC 2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).
 
 ## <a name="the-vsix-manifest"></a>VSIX manifest
  VSIX manifest zawiera informacje dotyczące rozszerzenia do zainstalowania, a schemat VSX w następujący sposób. Aby uzyskać więcej informacji, zobacz [odwołanie do schematu 1.0 rozszerzenia VSIX](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Aby uzyskać przykład manifestu VSIX, zobacz [PackageManifest elementu (element główny, schemat VSX)](https://msdn.microsoft.com/library/f8ae42ba-775a-4d2b-976a-f556e147f187).

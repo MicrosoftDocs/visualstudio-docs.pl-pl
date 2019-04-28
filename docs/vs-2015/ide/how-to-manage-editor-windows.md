@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 107b42500bbe2daed0d03d3e23e4817c9c3b3fc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 29047f53b08472a0ff65960bfe694789f7f7cbe1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430511"
 ---
 # <a name="how-to-manage-editor-windows"></a>Instrukcje: Zarządzaj Windows edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60089929"
 Możesz jest od razu pracować nad kodem w kilku lokalizacjach. W tym przez podział okna edytora lub przez otwarcie kilka wystąpień okna edytora.  
   
 > [!NOTE]
->  Nie wszystkie okna edytora obsługują wiele wystąpień.  
+> Nie wszystkie okna edytora obsługują wiele wystąpień.  
   
 ## <a name="splitting-an-editor-window"></a>Dzielenie okna edytora  
  Wystąpienie okno edytora można podzielić na dwa oddzielne widoki w celu ułatwienia edycji.  
@@ -41,7 +41,7 @@ Możesz jest od razu pracować nad kodem w kilku lokalizacjach. W tym przez podz
      Obszar edytowania dzieli się na dwie części oddzielone pasek podziału. Można przewijać te okienka niezależnie, aby wyświetlić i edytować różne części aktywnego dokumentu w tym samym czasie. Wszelkie zmiany wprowadzone w jednym okienku są odzwierciedlane w innych.  
   
     > [!TIP]
-    >  Aby powiększyć jedno okienko niż ten drugi, przeciągnij pasek podziału rosnące i malejące.  
+    > Aby powiększyć jedno okienko niż ten drugi, przeciągnij pasek podziału rosnące i malejące.  
   
 #### <a name="to-return-to-single-pane-view"></a>Aby powrócić do widoku  
   

@@ -11,12 +11,12 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47f752f00e1efe130f029a3cabdd2e3e3bf19449
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 638c9c0f0d024830124445485dcf9991678bd4d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429012"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Dodawanie poleceń programu Visual Studio do strony początkowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ```  
   
 > [!NOTE]
->  `x:` Alias, który odwołuje się do schematu XAML, jest wymagany na początku wszystkich poleceń.  
+> `x:` Alias, który odwołuje się do schematu XAML, jest wymagany na początku wszystkich poleceń.  
   
  Można ustawić wartość `Command` właściwości do dowolnego polecenia, które są dostępne z **polecenia** okna. Aby uzyskać listę dostępnych poleceń, zobacz [Visual Studio — aliasy poleceń](../ide/reference/visual-studio-command-aliases.md).  
   
@@ -65,7 +65,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
  Polecenia można wywołać z zarejestrowanych pakietów VSPackage przy użyciu tej samej składni, która służy do wywoływania innych poleceń programu Visual Studio. Na przykład, jeśli dodaje zainstalowanego pakietu VSPackage **strony głównej** polecenie **widoku** menu, można wywołać tego polecenia, ustawiając `CommandParameter` do `View.HomePage`.  
   
 > [!NOTE]
->  Wywołanie polecenia, który jest skojarzony z pakietu VSPackage można załadować pakietu, gdy polecenie jest wywoływany.  
+> Wywołanie polecenia, który jest skojarzony z pakietu VSPackage można załadować pakietu, gdy polecenie jest wywoływany.  
   
 ## <a name="adding-commands-from-assemblies"></a>Dodawanie poleceń z zestawów  
  Aby wywołać polecenie z zestawu lub kod dostępu w pakietu VSPackage, który nie jest skojarzony z polecenia menu, możesz utworzyć alias dla zestawu, a następnie wywołać aliasu.  
@@ -89,7 +89,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
     ```  
   
 > [!NOTE]
->  Należy skopiować zestaw, a następnie wklej go w... \\ *Folder instalacji programu visual Studio*\Common7\IDE\PrivateAssemblies\ się upewnić, że jest załadowany, przed jego wywołaniem.  
+> Należy skopiować zestaw, a następnie wklej go w... \\ *Folder instalacji programu visual Studio*\Common7\IDE\PrivateAssemblies\ się upewnić, że jest załadowany, przed jego wywołaniem.  
   
 ## <a name="adding-commands-with-the-dte-object"></a>Dodawanie poleceń za pomocą obiektu DTE  
  Ze strony Start, zarówno w znaczników i kodu, możesz uzyskać dostęp obiekt DTE.  

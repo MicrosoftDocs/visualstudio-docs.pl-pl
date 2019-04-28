@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ee28eba43bd323679b4175d8144b1836ac606a8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 41a3313f6393290a5f55c47653d11dba646dbb1b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430984"
 ---
 # <a name="step-9-try-other-features"></a>Krok 9. Spróbuj innych funkcji
 Aby dowiedzieć się więcej, spróbuj zmienić ikony i kolory, dodać czasomierz gry i dźwięki. Aby gra była bardziej wymagająca, spróbuj zwiększyć planszę i dostosować czasomierz.
@@ -25,22 +25,22 @@ Aby dowiedzieć się więcej, spróbuj zmienić ikony i kolory, dodać czasomier
 - Zamień ikony i kolory na własne.
 
     > [!TIP]
-    >  Spójrz etykiety [Forecolor](<xref:System.Windows.Forms.Control.ForeColor%2A>) właściwości.
+    > Spójrz etykiety [Forecolor](<xref:System.Windows.Forms.Control.ForeColor%2A>) właściwości.
 
 - Dodaj czasomierz gry, który śledzi, jak długo graczowi zajmuje zakończenie gry.
 
     > [!TIP]
-    >  Aby to zrobić, należy dodać etykietę wyświetlającą czas, który upłynął w powyższym formularzu <xref:System.Windows.Forms.TableLayoutPanel>, i Dodaj inny czasomierz do formularza w celu śledzenia czasu. Użyj kodu uruchamiającego czasomierz, gdy gracz rozpoczyna grę, i zatrzymującego czasomierz po dopasowaniu ostatnich dwóch ikon.
+    > Aby to zrobić, należy dodać etykietę wyświetlającą czas, który upłynął w powyższym formularzu <xref:System.Windows.Forms.TableLayoutPanel>, i Dodaj inny czasomierz do formularza w celu śledzenia czasu. Użyj kodu uruchamiającego czasomierz, gdy gracz rozpoczyna grę, i zatrzymującego czasomierz po dopasowaniu ostatnich dwóch ikon.
 
 - Dodaj dźwięk, gdy gracz znajdzie dopasowanie, inny dźwięk, gdy gracz odkrywa dwie ikony, które nie pasują, a trzeci dźwięk, gdy program ukrywa ikony ponownie.
 
     > [!TIP]
-    >  Aby odtwarzać dźwięki, możesz użyć <xref:System.Media> przestrzeni nazw. Zobacz [odtwarzać dźwięki w aplikacji Windows Forms (C#)](http://youtu.be/qOh4ooHg1UU) lub [odtwarzanie dźwięku w języku Visual Basic](http://youtu.be/-4oPDeQrtMs) Aby uzyskać więcej informacji.
+    > Aby odtwarzać dźwięki, możesz użyć <xref:System.Media> przestrzeni nazw. Zobacz [odtwarzać dźwięki w aplikacji Windows Forms (C#)](http://youtu.be/qOh4ooHg1UU) lub [odtwarzanie dźwięku w języku Visual Basic](http://youtu.be/-4oPDeQrtMs) Aby uzyskać więcej informacji.
 
 - Utrudnij grę, zwiększając planszę.
 
     > [!TIP]
-    >  Należy do więcej niż tylko dodać wiersze i kolumny do TableLayoutPanel — należy także wziąć pod uwagę liczbę ikon, które tworzysz.
+    > Należy do więcej niż tylko dodać wiersze i kolumny do TableLayoutPanel — należy także wziąć pod uwagę liczbę ikon, które tworzysz.
 
 - Utrudnij grę, ukrywając pierwszą ikonę, jeśli gracz reaguje zbyt wolno i nie wybiera drugiej ikony w określonym czasie.
 

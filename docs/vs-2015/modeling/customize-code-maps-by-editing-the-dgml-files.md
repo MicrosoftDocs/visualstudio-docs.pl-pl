@@ -22,12 +22,12 @@ caps.latest.revision: 93
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 980b7e0f54c058650a393c35467a73d926ec6638
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c5976f2d701ecf051625c93ab6b70fb88ed15108
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433329"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Dostosowanie map kodu przez edycję plików DGML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Aby dostosować mapę kodu, można edytować plik Directed Graph Markup Language
  Edytuj plik .dgml mapy kodu w edytorze tekstu lub edytorze XML. Jeśli mapa jest częścią rozwiązania programu Visual Studio, wybierz ją w **Eksploratora rozwiązań**, otwórz menu skrótów i wybierz **Otwórz za pomocą**, **Edytor (tekstu) XML**.  
   
 > [!NOTE]
->  Aby utworzyć map kodu, musi mieć program Visual Studio Enterprise. Podczas edytowania mapy kodu w programie Visual Studio go czyści wszelkie atrybuty i nieużywane elementy DGML, usuwając je podczas zapisywania pliku .dgml. Tworzy również elementy kodu automatycznie podczas ręcznego dodawania nowych łączy. Podczas zapisywania pliku .dgml wszelkie atrybuty, które są dodawane do elementu, mogą się ponownie rozmieszczać w kolejności alfabetycznej.  
+> Aby utworzyć map kodu, musi mieć program Visual Studio Enterprise. Podczas edytowania mapy kodu w programie Visual Studio go czyści wszelkie atrybuty i nieużywane elementy DGML, usuwając je podczas zapisywania pliku .dgml. Tworzy również elementy kodu automatycznie podczas ręcznego dodawania nowych łączy. Podczas zapisywania pliku .dgml wszelkie atrybuty, które są dodawane do elementu, mogą się ponownie rozmieszczać w kolejności alfabetycznej.  
   
 ## <a name="OrganizeNodes"></a> Grupować elementy kodu  
  Można dodać nowe grupy lub przekonwertować istniejące węzły w grupie.  
@@ -120,7 +120,7 @@ Aby dostosować mapę kodu, można edytować plik Directed Graph Markup Language
 - Grupy elementów kodu i linków na podstawie określonych warunków  
   
 > [!TIP]
->  Jeśli masz powtarzające się style w wielu elementów kodu lub łączy, można rozważyć zastosowanie kategorii do tych elementów kodu lub łącza, a następnie zastosowanie stylu do tej kategorii. Aby uzyskać więcej informacji, zobacz [Przypisz kategorie do elementów kodu i linków](#AssignCategories) i [przypisz właściwości do elementów kodu i linków](#AssignProperties).  
+> Jeśli masz powtarzające się style w wielu elementów kodu lub łączy, można rozważyć zastosowanie kategorii do tych elementów kodu lub łącza, a następnie zastosowanie stylu do tej kategorii. Aby uzyskać więcej informacji, zobacz [Przypisz kategorie do elementów kodu i linków](#AssignCategories) i [przypisz właściwości do elementów kodu i linków](#AssignProperties).  
   
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>Aby zastosować styl niestandardowy do pojedynczego elementu kodu  
   
@@ -558,7 +558,7 @@ Aby dostosować mapę kodu, można edytować plik Directed Graph Markup Language
  Możesz połączyć dokumenty lub adresy URL do elementów kodu lub łącza, edytując plik .dgml mapy i dodawanie `Reference` atrybutu `<Node/>` elementu dla elementu kodu lub `<Link/>` dla łącza. Następnie można otworzyć i wyświetlić tę zawartość z elementu kodu lub łącza. `Reference` Atrybut określa ścieżkę tej zawartości. Może to być ścieżka względem lokalizacji pliku .dgml lub ścieżka bezwzględna.  
   
 > [!CAUTION]
->  Jeśli używane są ścieżki względne, a plik .dgml zostanie przeniesiony do innej lokalizacji, ścieżki te nie zostaną rozpoznane. Podczas próby otwarcia i wyświetlenia połączonej zawartości pojawi się komunikat o błędzie z informacją, że nie można wyświetlić zawartości.  
+> Jeśli używane są ścieżki względne, a plik .dgml zostanie przeniesiony do innej lokalizacji, ścieżki te nie zostaną rozpoznane. Podczas próby otwarcia i wyświetlenia połączonej zawartości pojawi się komunikat o błędzie z informacją, że nie można wyświetlić zawartości.  
   
  Na przykład można połączyć następujące elementy kodu:  
   
@@ -583,7 +583,7 @@ Aby dostosować mapę kodu, można edytować plik Directed Graph Markup Language
    - W `<Node/>` lub `<Link/>` elementu Dodawanie `Reference` atrybutu, aby określić lokalizację elementu kodu.  
   
      > [!NOTE]
-     >  Może mieć tylko jeden `Reference` atrybutu dla każdego elementu.  
+     > Może mieć tylko jeden `Reference` atrybutu dla każdego elementu.  
   
      Na przykład:  
   

@@ -11,12 +11,12 @@ ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9d95275f5b4ffd91f993fc3e5a650d3d160fa2a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e56de828d3b357762da98cde3b9591033c6b5d19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441478"
 ---
 # <a name="vsct-xml-schema-reference"></a>Odwołanie do schematu XML VSCT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,10 +26,10 @@ Zapewnia tabelę polecenia tabeli kompilatora elementów schematu, dozwolone pod
  Plik konfiguracji (vsct) tabeli polecenia opartego na języku XML definiuje elementy polecenia, które zapewnia pakietu VSPackage do zintegrowanego środowiska programistycznego (IDE). Należą do nich elementy menu, menu, paski narzędzi i pola kombi.  
   
 > [!NOTE]
->  Kompilatora VSCT można uruchomić preprocesora do pliku vsct. Ponieważ jest to zazwyczaj zawiera preprocesora, można zdefiniować C++ i makra, które mają tej samej składni, który jest używany w plikach języka C++. Przykłady tego znajdują się w vsct pliku, który **nowy projekt** Kreator tworzy dla projektu pakietu VSPackage.  
+> Kompilatora VSCT można uruchomić preprocesora do pliku vsct. Ponieważ jest to zazwyczaj zawiera preprocesora, można zdefiniować C++ i makra, które mają tej samej składni, który jest używany w plikach języka C++. Przykłady tego znajdują się w vsct pliku, który **nowy projekt** Kreator tworzy dla projektu pakietu VSPackage.  
   
 ## <a name="optional-elements"></a>Elementy opcjonalne  
- Niektóre elementy VSCT są opcjonalne. Jeśli `Parent` argument nie zostanie określony, zostanie też dorozumianych Group_Undefined:0. Jeśli `Icon` argument nie zostanie określony, zostanie też dorozumianych guidOfficeIcon:msotcidNoIcon. Po zdefiniowaniu klawisza skrótu emulacji, która jest zwykle używana, jest opcjonalne.  
+ Niektóre elementy VSCT są opcjonalne. Jeśli `Parent` argument nie zostanie określony, Group_Undefined:0 będzie wynikać. Jeśli `Icon` argument nie zostanie określony, zostanie też dorozumianych guidOfficeIcon:msotcidNoIcon. Po zdefiniowaniu klawisza skrótu emulacji, która jest zwykle używana, jest opcjonalne.  
   
  Elementy mapy bitowej może być osadzony w czasie kompilacji, określając lokalizację paska mapy bitowej w `href` argumentu. Usuń mapy bitowej jest kopiowane podczas scalania zamiast wyodrębniane z zasobów biblioteki DLL. Gdy `href` argument zostanie podany, `usedList` argument staje się opcjonalny, a wszystkie gniazda na pasku mapy bitowej są traktowane jako używane.  
   

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49e4618e2262575ffaa642d55ae140529f86942b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c8f746c3ee084613a10b89bd492a6174ffb49012
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421291"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Omówienie modelu programowania programu SharePoint rozszerzeń narzędzi
   Po utworzeniu rozszerzeń dla narzędzi SharePoint w programie Visual Studio, należy rozpocząć od implementacja interfejsów rozszerzeń, które są udostępniane przez narzędzia programu SharePoint. W większości przypadków będzie również użyć innych typów dostarczonych przez narzędzia programu SharePoint do zaimplementowania funkcji w rozszerzeniu. W niektórych przypadkach można także użyć typów w innych modeli obiektów, dostarczone przez program Visual Studio i programu SharePoint. Konieczne jest zrozumienie przeznaczenia każdego z tych modeli obiektów oraz wiedzieć, jak za ich pomocą ze sobą tworzenia rozszerzeń dla narzędzi SharePoint.
@@ -50,7 +50,7 @@ ms.locfileid: "60038473"
 - *Visual Studio Automatyzacja i integracja modele do obiektów*. Te modele obiektów umożliwia dostęp do funkcji programu Visual Studio, które wykraczają poza zakres modelu obiektów przy użyciu narzędzi programu SharePoint.
 
     > [!NOTE]
-    >  Możesz przekonwertować niektóre obiekty w modelu obiektu narzędzi programu SharePoint do obiektów w automatyzacji programu Visual Studio i modeli obiektów integracji i odwrotnie, korzystając z usługi projektu programu SharePoint. Aby uzyskać więcej informacji, zobacz [konwersji między typami systemu projektu SharePoint a innymi typami projektu Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
+    > Możesz przekonwertować niektóre obiekty w modelu obiektu narzędzi programu SharePoint do obiektów w automatyzacji programu Visual Studio i modeli obiektów integracji i odwrotnie, korzystając z usługi projektu programu SharePoint. Aby uzyskać więcej informacji, zobacz [konwersji między typami systemu projektu SharePoint a innymi typami projektu Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
 
 - *Modele obiektów serwera i klienta programu SharePoint*. Użyj tych modeli obiektów, do modyfikowania witryny programu SharePoint lub odbierać dane z witryny programu SharePoint z kontekstu rozszerzenia narzędzi programu SharePoint.
 

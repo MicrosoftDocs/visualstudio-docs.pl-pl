@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b561a4aebe34ac943b0163e66dfbf2edf423eedb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f53083c49504146aca545da73bd38950493efcd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429209"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>Właściwości MsBuild obsługiwane przez program SharePoint
   Wszelkie [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] właściwości zdefiniowane w pliku, plik projektu lub pliku użytkownika projektu Microsoft.VisualStudio.SharePoint.targets mogą być używane w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektów programu SharePoint. Oprócz typowe [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] właściwości dostarczonych przez projekt programu SharePoint definiuje dodatkowe właściwości, które są specyficzne dla projektów programu SharePoint.
@@ -49,7 +49,7 @@ ms.locfileid: "56599691"
  Aby zapewnić elastyczność, zamiast zakodowane sprzętowo ciągi w **wiersz polecenia przed wdrożeniem** i **wiersz polecenia po wdrożeniu** pola na stronie właściwości programu SharePoint, można użyć programu SharePoint właściwości argumentów. Na przykład, zamiast określania określonego [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] ciąg witryny programu SharePoint, należy użyć `$(SharePointSiteUrl)`.
 
 > [!NOTE]
->  Można użyć dowolnego [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] składni zmiennych `$(` *propertyName* `)` lub składni zmiennych środowiskowych `%` *propertyName* `%` Aby określić właściwości.
+> Można użyć dowolnego [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] składni zmiennych `$(` *propertyName* `)` lub składni zmiennych środowiskowych `%` *propertyName* `%` Aby określić właściwości.
 
 ## <a name="see-also"></a>Zobacz także
 

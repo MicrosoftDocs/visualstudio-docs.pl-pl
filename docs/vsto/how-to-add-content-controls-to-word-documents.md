@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9efc655997a48e070ee60a1d66dc57be31362403
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6c7746137cf10e0146ff68eeb2cec9005b72a670
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427624"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Instrukcje: Dodaj zawartość formantów do dokumentów programu Word
   W projektach programu Word na poziomie dokumentu można dodać formanty zawartości do dokumentu w projekcie w czasie projektowania lub w czasie wykonywania. W projektach dodatku narzędzi VSTO programu Word można dodać formanty zawartości dowolnego otwartego dokumentu w czasie wykonywania.
@@ -78,10 +78,10 @@ ms.locfileid: "60080414"
     - Przeciągnij formant zawartości z **przybornika** do dokumentu. Zawartość formant jest dodawany, bieżące zaznaczenie w dokumencie, a nie lokalizacja wskaźnika myszy.
 
 > [!NOTE]
->  Nie można dodać <xref:Microsoft.Office.Tools.Word.GroupContentControl> przy użyciu **przybornika**. Możesz dodawać tylko <xref:Microsoft.Office.Tools.Word.GroupContentControl> w programie Word lub w czasie wykonywania.
+> Nie można dodać <xref:Microsoft.Office.Tools.Word.GroupContentControl> przy użyciu **przybornika**. Możesz dodawać tylko <xref:Microsoft.Office.Tools.Word.GroupContentControl> w programie Word lub w czasie wykonywania.
 
 > [!NOTE]
->  Program Visual Studio nie zapewnia kontrolkę zawartości pola wyboru w przyborniku. Aby dodać kontrolkę zawartości pola wyboru do dokumentu, należy utworzyć <xref:Microsoft.Office.Tools.Word.ContentControl> obiektu programowo. Aby uzyskać więcej informacji, zobacz [udostępnia mechanizmy kontroli zawartości](../vsto/content-controls.md).
+> Program Visual Studio nie zapewnia kontrolkę zawartości pola wyboru w przyborniku. Aby dodać kontrolkę zawartości pola wyboru do dokumentu, należy utworzyć <xref:Microsoft.Office.Tools.Word.ContentControl> obiektu programowo. Aby uzyskać więcej informacji, zobacz [udostępnia mechanizmy kontroli zawartości](../vsto/content-controls.md).
 
 #### <a name="to-add-a-content-control-to-a-document-in-word"></a>Aby dodać kontrolkę zawartości do dokumentu programu Word
 
@@ -90,7 +90,7 @@ ms.locfileid: "60080414"
 2. Na wstążce kliknij **Developer** kartę.
 
     > [!NOTE]
-    >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 3. W **formantów** grupy, kliknij ikonę formantu zawartości, który chcesz dodać.
 
@@ -106,7 +106,7 @@ ms.locfileid: "60080414"
   Tworzone dynamicznie zawartość, którą formanty nie są zachowywane w dokumencie, gdy dokument zostanie zamknięty. Jednak macierzystym formancie zawartości pozostaje w dokumencie. Można ponownie utworzyć kontrolkę zawartości, która opiera się na macierzystym formancie zawartości przy następnym otwarciu dokumentu. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w środowisku uruchomieniowym](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 > [!NOTE]
->  Aby dodać kontrolkę zawartości pola wyboru do dokumentu w projekcie programu Word 2010, należy utworzyć <xref:Microsoft.Office.Tools.Word.ContentControl> obiektu. Aby uzyskać więcej informacji, zobacz [udostępnia mechanizmy kontroli zawartości](../vsto/content-controls.md).
+> Aby dodać kontrolkę zawartości pola wyboru do dokumentu w projekcie programu Word 2010, należy utworzyć <xref:Microsoft.Office.Tools.Word.ContentControl> obiektu. Aby uzyskać więcej informacji, zobacz [udostępnia mechanizmy kontroli zawartości](../vsto/content-controls.md).
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>Aby dodać kontrolkę zawartości w bieżącym zaznaczeniu
 
@@ -149,7 +149,7 @@ ms.locfileid: "60080414"
   Aby uzyskać więcej informacji na temat generowania elementów hosta w projektach dodatku narzędzi VSTO dla programów, zobacz [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 > [!NOTE]
->  Aby dodać kontrolkę zawartości pola wyboru do dokumentu, należy utworzyć <xref:Microsoft.Office.Tools.Word.ContentControl> obiektu. Aby uzyskać więcej informacji, zobacz [udostępnia mechanizmy kontroli zawartości](../vsto/content-controls.md).
+> Aby dodać kontrolkę zawartości pola wyboru do dokumentu, należy utworzyć <xref:Microsoft.Office.Tools.Word.ContentControl> obiektu. Aby uzyskać więcej informacji, zobacz [udostępnia mechanizmy kontroli zawartości](../vsto/content-controls.md).
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>Aby dodać kontrolkę zawartości w bieżącym zaznaczeniu
 

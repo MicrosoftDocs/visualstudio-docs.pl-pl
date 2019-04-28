@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 829e219056b7c0a74226dd933ab38b8559ebd6b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c296be2e3a00efcdf48bdd6e4442e88fc32b3695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422539"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Opisywanie przepływu sterowania przy użyciu fragmentów w diagramach sekwencji UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Na diagramie sekwencji UML *połączone fragmenty* pozwalają wyświetlić pętl
  Połączony fragment składa się z co najmniej jeden *operandy interakcji*, a każdy z nich zawiera co najmniej jeden wiadomości, zastosowania interakcji lub połączonego fragmentu.  
   
 > [!NOTE]
->  Ten temat dotyczy fragmentów w diagramach sekwencji. Aby uzyskać więcej informacji o tym, jak odczytać diagramy sekwencji UML, zobacz [UML Sequence Diagrams: Odwołanie](../modeling/uml-sequence-diagrams-reference.md). Aby uzyskać więcej informacji na temat narysować diagramy sekwencji UML, zobacz [UML Sequence Diagrams: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
+> Ten temat dotyczy fragmentów w diagramach sekwencji. Aby uzyskać więcej informacji o tym, jak odczytać diagramy sekwencji UML, zobacz [UML Sequence Diagrams: Odwołanie](../modeling/uml-sequence-diagrams-reference.md). Aby uzyskać więcej informacji na temat narysować diagramy sekwencji UML, zobacz [UML Sequence Diagrams: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
   
  ![Połączone fragmentu przyjmuje dwa argumenty operacji interakcji](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   
@@ -45,7 +45,7 @@ Na diagramie sekwencji UML *połączone fragmenty* pozwalają wyświetlić pętl
 3. Każdy argument interakcji można wybrać, klikając pozycję wewnątrz niego oddzielnie. W tym przykładzie argument najważniejsze interakcji jest zaznaczone, tak, aby jego granicę są widoczne. Zwykle tylko jednoznaczny interakcji z operandów jest widoczna.  
   
     > [!NOTE]
-    >  Aby wybrać operand najważniejsze interakcji, możesz nie powinien klikać za blisko początku połączonego fragmentu.  
+    > Aby wybrać operand najważniejsze interakcji, możesz nie powinien klikać za blisko początku połączonego fragmentu.  
   
 4. Osłony. Każdy argument interakcji można nadać ochrony. Opisuje warunku w ramach której zostanie wykonane komunikaty wewnątrz operand interakcji.  
   
@@ -57,7 +57,7 @@ Na diagramie sekwencji UML *połączone fragmenty* pozwalają wyświetlić pętl
 1. Wybierz jeden komunikat lub sekwencję wiadomości, wszystkie rozpoczyna się w tej samej linii życia lub wykonywania wystąpienia.  
   
    > [!NOTE]
-   >  Jeśli wybierzesz więcej niż jeden komunikat, tworzą one muszą nieprzerwanie sekwencji.  
+   > Jeśli wybierzesz więcej niż jeden komunikat, tworzą one muszą nieprzerwanie sekwencji.  
   
 2. Kliknij prawym przyciskiem myszy jeden z komunikatów, wskaż opcję **Otocz**, a następnie kliknij typ połączonego fragmentu, który ma, takich jak **fragmentu połączone Alt**.  
   
@@ -100,7 +100,7 @@ Na diagramie sekwencji UML *połączone fragmenty* pozwalają wyświetlić pętl
 - Kliknij prawym przyciskiem myszy w tytule połączonego fragmentu, a następnie kliknij przycisk **właściwości**.  
   
     > [!NOTE]
-    >  Różne rodzaje połączonego fragmentu mają różne właściwości.  
+    > Różne rodzaje połączonego fragmentu mają różne właściwości.  
   
 ## <a name="KindsOfFragment"></a> Rodzaje połączony Fragment  
   

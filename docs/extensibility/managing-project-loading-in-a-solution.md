@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a383096d164f1b08e2411a7bc808e96f8a6262e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5dcd8293bc11645b8ad934d1826286a8df51e5e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431316"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>Zarządzanie ładowaniem projektu w rozwiązaniu
 Rozwiązania programu Visual Studio mogą zawierać dużą liczbę projektów. Domyślne zachowanie programu Visual Studio jest można załadować wszystkich projektów w rozwiązaniu w czasie, które rozwiązanie jest otwierane, a nie Zezwalaj użytkownikowi dostępu do żadnego z projektów wszystkich z nich ma zakończenie ładowania. Podczas procesu ładowania projektu trwa więcej niż dwie minuty, jest wyświetlany pasek postępu, przedstawiający liczbę projektów i łącznej liczby projektów. Użytkownik może zwolnienia projektów podczas pracy w ramach rozwiązania z wieloma projektami, ale ta procedura ma pewne wady: zwolniono projekty są kompilowane jako część polecenia Kompiluj rozwiązanie i zamknięcie IntelliSense opisy typów i elementów członkowskich projekty nie są wyświetlane.
@@ -44,7 +44,7 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
  Jeśli Menedżera obciążenia rozwiązania jest przeznaczona do zarządzania ogólnie rzecz biorąc ładowania rozwiązania, można zaimplementować jako część pakietu VSPackage. Pakiet powinna być ustawiona na automatyczne ładowanie, dodając <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> na VSPackage o wartości <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid>. Następnie można aktywować Menedżera obciążenia rozwiązania <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.
 
 > [!NOTE]
->  Aby uzyskać więcej informacji na temat pakietów autoloading zobacz [ładowanie pakietów VSPackage](../extensibility/loading-vspackages.md).
+> Aby uzyskać więcej informacji na temat pakietów autoloading zobacz [ładowanie pakietów VSPackage](../extensibility/loading-vspackages.md).
 
  Ponieważ program Visual Studio rozpoznaje tylko ostatni rozwiązania obciążenia Menedżera aktywacji, menedżerów obciążenia ogólne rozwiązanie powinien zawsze wykrywa, czy przed aktywowaniem samodzielnie jest istniejącego menedżera obciążenia. Jeśli wywołanie `GetProperty()` usłudze rozwiązania dla [__VSPROPID4. VSPROPID_ActiveSolutionLoadManager](<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4.VSPROPID_ActiveSolutionLoadManager>) zwraca `null`, istnieje nie aktywne rozwiązanie Menedżera obciążenia. Jeśli nie zwróci wartość null, sprawdź, czy obiekt jest taki sam jak Menedżer ładowania rozwiązania.
 

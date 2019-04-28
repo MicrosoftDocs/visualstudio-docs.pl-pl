@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8aefab319b9b197b9b7df0e23fec71aa3cb64d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c729896083c7d32a48ba39906d8e9a0ebde4b59
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420956"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Instrukcje: Walidacja danych po dodaniu nowego rzędu do kontrolki ListObject
   Użytkownicy mogą dodawać nowe wiersze do <xref:Microsoft.Office.Tools.Excel.ListObject> formant, który jest powiązany z danymi. Możesz walidować dane użytkownika przed zatwierdzeniem zmian w źródle danych.
@@ -30,7 +30,7 @@ ms.locfileid: "60039314"
  Zawsze, gdy wiersz zostanie dodany do <xref:Microsoft.Office.Tools.Excel.ListObject> , jest powiązany z danymi, <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> zdarzenie jest wywoływane. Może obsługiwać to zdarzenie, aby wykonać walidację danych. Na przykład jeśli aplikacja wymaga, że tylko pracownicy między w wieku od 18 i 65 można dodać do źródła danych, sprawdź, czy wiek wprowadzono mieści się w zakresie przed dodaniem wiersza.
 
 > [!NOTE]
->  Należy zawsze sprawdzić dane wejściowe użytkownika na serwerze, oprócz klienta. Aby uzyskać więcej informacji, zobacz [zabezpieczanie aplikacje klienckich](/dotnet/framework/data/adonet/secure-client-applications).
+> Należy zawsze sprawdzić dane wejściowe użytkownika na serwerze, oprócz klienta. Aby uzyskać więcej informacji, zobacz [zabezpieczanie aplikacje klienckich](/dotnet/framework/data/adonet/secure-client-applications).
 
 ### <a name="to-validate-data-when-a-new-row-is-added-to-data-bound-listobject"></a>Aby sprawdzić poprawność danych, gdy nowy wiersz jest dodawany do powiązanych z danymi ListObject
 

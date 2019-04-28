@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 979ca1b0422cf3a333164570aec0a0b0dee39960
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: ca5c9294924b99f830ed05234c68bdba0e7a61a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693649"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412893"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 Ten interfejs reprezentuje uruchomionego procesu i jego programów. Ten interfejs istnieje jako zamiennika dla kilku metod w [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfejsu. Zapewnia kontrolę nad wszystkie programy, w tym procesie.
 
 > [!NOTE]
->  [Kontynuuj](../../../extensibility/debugger/reference/idebugprogram2-continue.md), [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), i [kroku](../../../extensibility/debugger/reference/idebugprogram2-step.md) metody są przestarzałe i nie powinna być używana. Użyj odpowiedniej metody na `IDebugProcess3` zamiast tego interfejsu.
+> [Kontynuuj](../../../extensibility/debugger/reference/idebugprogram2-continue.md), [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), i [kroku](../../../extensibility/debugger/reference/idebugprogram2-step.md) metody są przestarzałe i nie powinna być używana. Użyj odpowiedniej metody na `IDebugProcess3` zamiast tego interfejsu.
 
 ## <a name="syntax"></a>Składnia
 

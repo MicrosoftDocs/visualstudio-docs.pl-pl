@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf47b5c6aa84cb5d5cc961e34161435dc27dd517
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9978e12d5b4d94a5f860bfdd5d3dc90ae6fef3ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431029"
 ---
 # <a name="windows-installer-basics"></a>Podstawowe informacje dotyczące Instalatora Windows
 Instalator Windows instaluje i odinstalowuje aplikacje lub produkty oprogramowania na komputerze użytkownika wykonywania tych zadań w jednostce o nazwie składniki Instalatora Windows (czasami nazywany WICs lub po prostu składników). Identyfikator GUID identyfikuje każdy składnik WIC to podstawowa jednostka instalacji i zliczanie dla konfiguracji za pomocą Instalatora Windows.
@@ -53,7 +53,7 @@ Instalator Windows instaluje i odinstalowuje aplikacje lub produkty oprogramowan
  Dwa zestawy reguł określają wdrażanie zasobów za pomocą składników z konfiguracją. Jeden zestaw reguł jest obsługiwana przez Instalatora Windows, podczas gdy powinien wymuszać drugiego zestawu jako autor instalacji.
 
 > [!NOTE]
->  Wymuszanie reguł Instalatora Windows występuje tylko wtedy, gdy jest sprawdzana poprawność pliku msi. Niemniej jednak to ostrzeżenie, że traktować te reguły jako najlepsze rozwiązanie. Aby uzyskać więcej informacji, zobacz [sprawdzanie poprawności instalacji bazy danych](/windows/desktop/Msi/validating-an-installation-database) i [sprawdzanie poprawności pakietu](/windows/desktop/Msi/package-validation).
+> Wymuszanie reguł Instalatora Windows występuje tylko wtedy, gdy jest sprawdzana poprawność pliku msi. Niemniej jednak to ostrzeżenie, że traktować te reguły jako najlepsze rozwiązanie. Aby uzyskać więcej informacji, zobacz [sprawdzanie poprawności instalacji bazy danych](/windows/desktop/Msi/validating-an-installation-database) i [sprawdzanie poprawności pakietu](/windows/desktop/Msi/package-validation).
 
 #### <a name="installer-enforced-rules"></a>Reguły wymuszane przez Instalatora
 

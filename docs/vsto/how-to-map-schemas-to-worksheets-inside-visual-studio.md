@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae63dd41e18b9226967b77b8adec2f45d05d9447
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 80a19924aaf4fa0afe8e809006ada7fada0288f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428117"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Instrukcje: Mapowanie schematów z arkuszami w programie Visual Studio
   Gdy arkusz jest otwarty w programie Visual Studio, możesz zamapować schematu XML do arkusza. Możesz użyć tych samych narzędzi Microsoft Office Excel, których używasz, gdy skoroszyt jest otwarty poza programem Visual Studio. Office project tworzy te same obiekty, czy mapowanie schematu na arkusz, przed lub po utworzeniu rozwiązania programu Excel.
@@ -30,7 +30,7 @@ ms.locfileid: "60057176"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  Nie można użyć wieloczęściowego schematów XML w rozwiązaniach programu Excel.
+> Nie można użyć wieloczęściowego schematów XML w rozwiązaniach programu Excel.
 
 ## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Aby zamapować schematu XML do arkusza programu Excel w programie Visual Studio
 
@@ -41,7 +41,7 @@ ms.locfileid: "60057176"
 3. Na wstążce kliknij **Developer** kartę.
 
     > [!NOTE]
-    >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 4. W **XML** grupy, kliknij przycisk **źródła**.
 

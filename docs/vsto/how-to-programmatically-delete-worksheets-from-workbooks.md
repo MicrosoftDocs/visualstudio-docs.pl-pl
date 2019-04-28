@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ea87ac85ed187becb2f463dfe95fd3dcb812f28
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9ecc39e72a336c390c85f1caf2c80c6643acbb61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412534"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Instrukcje: Programowe usuwanie arkuszy ze skoroszytu
   Możesz usunąć dowolnego arkusza w skoroszycie. Aby usunąć arkusza, użyj element hosta arkusza lub dostęp do arkusza za pomocą kolekcji arkuszy skoroszytu.
@@ -29,7 +29,7 @@ ms.locfileid: "60066555"
  Jeśli arkusz został dodany w czasie projektowania w dostosowaniu na poziomie dokumentu, należy użyć <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> metodę, aby usunąć określonego arkusza. Poniższy kod usuwa arkusz ze skoroszytu, odwołując się bezpośrednio element hosta arkusza.
 
 > [!IMPORTANT]
->  Ten kod zadziała tylko w projektach, które tworzysz przy użyciu dowolnej z poniższych szablonów projektu:
+> Ten kod zadziała tylko w projektach, które tworzysz przy użyciu dowolnej z poniższych szablonów projektu:
 >
 > - Skoroszyt programu Excel 2013
 > - Szablon programu Excel 2013
@@ -55,7 +55,7 @@ ms.locfileid: "60066555"
   Poniższy kod usuwa arkusz ze skoroszytu, odwołując się do arkusza za pomocą numer indeksu **arkusze** kolekcji. Ten kod zakłada, że nowy arkusz został utworzony programowo.
 
 > [!IMPORTANT]
->  Jeśli chcesz wykonać to zadanie w typie projektu, należy dodać odwołanie do **Microsoft.Office.Interop.Excel** zestawu, a następnie należy użyć klas z tego zestawu do otwierania skoroszytu i usuwanie arkusza. Aby uzyskać więcej informacji, zobacz [jak: Konfigurowanie pod kątem aplikacji pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) i [odwołanie do zestawu podstawowej usługi międzyoperacyjnej Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).
+> Jeśli chcesz wykonać to zadanie w typie projektu, należy dodać odwołanie do **Microsoft.Office.Interop.Excel** zestawu, a następnie należy użyć klas z tego zestawu do otwierania skoroszytu i usuwanie arkusza. Aby uzyskać więcej informacji, zobacz [jak: Konfigurowanie pod kątem aplikacji pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) i [odwołanie do zestawu podstawowej usługi międzyoperacyjnej Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).
 
 ### <a name="to-delete-a-worksheet-by-using-the-sheets-collection-of-the-excel-workbook"></a>Aby usunąć arkusza za pomocą kolekcji arkuszy skoroszytu programu Excel
 

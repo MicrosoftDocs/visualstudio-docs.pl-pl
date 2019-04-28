@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19f426d60ea8ee3d9326fa9b13adfff115c169d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 93791cda512ee8d74664e1b8b04890da74e399ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420614"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Instrukcje: Uwidacznianie listy symboli udostępnianych przez bibliotekę dla Menedżera obiektów
 Narzędzia przeglądania symboli **Widok klas**, **przeglądarki obiektów**, **przeglądarce wywołań** i **wyniki wyszukiwania symboli**, przekazywać żądania do nowych danych [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów. Menedżer obiektów umożliwia znalezienie odpowiednich bibliotek i żąda nowych list symboli. Biblioteki odpowiedzieć w żądanych danych do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfejsu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów wywołania metody, w <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> współpracować w celu uzyskania danych i używa ich do wypełnienia lub aktualizowanie widoków narzędzi do przeglądania symboli.
@@ -27,9 +27,9 @@ Narzędzia przeglądania symboli **Widok klas**, **przeglądarki obiektów**, **
  Biblioteka może zostać żądań dotyczących danych, narzędzie zostanie wywołana, węzeł jest rozwinięty lub odświeżyć widoku. Gdy narzędzie do przeglądania symboli jest wywoływany po raz pierwszy, Menedżer obiektów żądań biblioteki, aby udostępnić listę najwyższego poziomu. Gdy użytkownik rozwija węzeł listy, biblioteki zawiera listę elementów podrzędnych w tym węźle. Każdy obiekt menedżera zapytanie zawiera indeks elementu zainteresowania. Aby wyświetlić nową listę, Menedżer obiektów należy określić, ile elementów znajdują się na liście, typ elementów, nazwami, ułatwień dostępu i inne właściwości.
 
 > [!NOTE]
->  W poniższych przykładach kodu zarządzanego pokazują, jak zawierają listy symboli wdrożenie <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfejsu. Menedżer obiektów wywołania metody, w tym interfejsie i używa danych uzyskanych do wypełnienia lub aktualizowanie narzędzi do przeglądania symboli.
+> W poniższych przykładach kodu zarządzanego pokazują, jak zawierają listy symboli wdrożenie <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfejsu. Menedżer obiektów wywołania metody, w tym interfejsie i używa danych uzyskanych do wypełnienia lub aktualizowanie narzędzi do przeglądania symboli.
 >
->  Implementacja dostawcy symboli dla kodu natywnego, można użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfejsu.
+> Implementacja dostawcy symboli dla kodu natywnego, można użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfejsu.
 
 ## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>Aby uzyskać listę symboli do Menedżera obiektów
 

@@ -14,12 +14,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fa0fac38c79e4c54cb461ef51e016508d043f202
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e53e05d9df5a7bbdca5fd8a9b74dd9325dc7aae5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426474"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Uruchamianie aplikacji ze Sklepu Windows na maszynie zdalnej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Dotyczy tylko Windows] (.. /Image/windows_only_content.png "windows_only_content
  Domyślnie debuger zdalny używa uwierzytelniania Windows.  
   
 > [!WARNING]
->  Istnieje również możliwość uruchomienia zdalnego debugera w trybie bez uwierzytelnienia, ale używanie tego trybu jest zdecydowanie odradzane. Po uruchomieniu w tym trybie nie ma zabezpieczeń sieci. Wybierz tryb Bez uwierzytelniania tylko wtedy, gdy masz pewność, że sieć nie jest zagrożona przez złośliwe lub wrogie działania.  
+> Istnieje również możliwość uruchomienia zdalnego debugera w trybie bez uwierzytelnienia, ale używanie tego trybu jest zdecydowanie odradzane. Po uruchomieniu w tym trybie nie ma zabezpieczeń sieci. Wybierz tryb Bez uwierzytelniania tylko wtedy, gdy masz pewność, że sieć nie jest zagrożona przez złośliwe lub wrogie działania.  
   
 ## <a name="BKMK_DirectConnect"></a> Jak połączyć się bezpośrednio na urządzeniu zdalnym  
  Aby połączyć się bezpośrednio na urządzeniu zdalnym, należy połączyć komputer z programem Visual Studio na urządzeniu za pomocą standardowego kabla Ethernet. Jeśli urządzenie nie ma portu Ethernet, można użyć USB do adaptera Ethernet do łączenia z kablem.  
@@ -74,15 +74,15 @@ Dotyczy tylko Windows] (.. /Image/windows_only_content.png "windows_only_content
 ## <a name="BKMK_Installing_the_Remote_Tools"></a> Instalowanie narzędzi zdalnych  
   
 > [!NOTE]
->  **Wersje i aktualizacje**  
+> **Wersje i aktualizacje**  
 >   
->  **Remote Tools for Visual Studio 2015** nie są obsługiwane we wcześniejszych wersjach programu Visual Studio.  
+> **Remote Tools for Visual Studio 2015** nie są obsługiwane we wcześniejszych wersjach programu Visual Studio.  
 >   
->  Firma Microsoft zaleca, zainstaluj zaktualizowaną wersję narzędzi Remote Tools for Visual Studio 2015, która jest zgodna z wersją aktualizacji instalacji programu Visual Studio.  
+> Firma Microsoft zaleca, zainstaluj zaktualizowaną wersję narzędzi Remote Tools for Visual Studio 2015, która jest zgodna z wersją aktualizacji instalacji programu Visual Studio.  
 >   
->  Debuger VS jest zgodny z dowolną kombinacją wersji VS 2015 i Remote Tools for VS 2015. Najnowsze funkcje w programie Visual Studio wymagają jednak zarówno Visual Studio, jak i narzędzi zdalnych, aby mieć najbardziej aktualne wersje.  
+> Debuger VS jest zgodny z dowolną kombinacją wersji VS 2015 i Remote Tools for VS 2015. Najnowsze funkcje w programie Visual Studio wymagają jednak zarówno Visual Studio, jak i narzędzi zdalnych, aby mieć najbardziej aktualne wersje.  
 >   
->  Inne narzędzia diagnostyczne mogą wymagać tych samych wersji narzędzi zdalnych i programu Visual Studio.  
+> Inne narzędzia diagnostyczne mogą wymagać tych samych wersji narzędzi zdalnych i programu Visual Studio.  
   
  **Instalowanie składników zdalnego debugowania na urządzeniu zdalnym**  
   
@@ -101,7 +101,7 @@ Dotyczy tylko Windows] (.. /Image/windows_only_content.png "windows_only_content
 ## <a name="BKMK_Starting_the_Remote_Debugger_Monitor"></a> Uruchamianie monitora debugera zdalnego  
   
 > [!NOTE]
->  Ponieważ zdalny debuger konfiguruje zaporę, aby umożliwić komunikację z hostem programu Visual Studio, musisz być administratorem na urządzeniu zdalnym podczas uruchamiania zdalnego debugera po raz pierwszy.  
+> Ponieważ zdalny debuger konfiguruje zaporę, aby umożliwić komunikację z hostem programu Visual Studio, musisz być administratorem na urządzeniu zdalnym podczas uruchamiania zdalnego debugera po raz pierwszy.  
   
  Po zainstalowaniu narzędzi zdalnych wybierz **zdalny debuger** na **Start** ekranu. **Konfiguracja zdalnego debugowania** pojawia się podczas pierwszego uruchomienia zdalnego debugera.  
   
@@ -125,7 +125,7 @@ Dotyczy tylko Windows] (.. /Image/windows_only_content.png "windows_only_content
    2. Wybierz **uprawnienia** do dodawania lub usuwania użytkowników, którzy mają uprawnienia do zdalnego debugowania.  
   
        > [!NOTE]
-       >  Muszą mieć uprawnienia do wszystkich kont użytkowników, które debuguje zdalnie.  
+       > Muszą mieć uprawnienia do wszystkich kont użytkowników, które debuguje zdalnie.  
   
    Możesz użyć **Kreatora konfiguracji zdalnego debugera** Aby ustawić zaawansowane opcje dla zdalnego debugera. Aby otworzyć kreatora, wybierz opcję **Kreatora konfiguracji zdalnego debugera** na ekranie startowym.  
   
@@ -141,7 +141,7 @@ Dotyczy tylko Windows] (.. /Image/windows_only_content.png "windows_only_content
  Okno dialogowe wyświetla listę tylko tych urządzeń, które są w lokalnej podsieci komputera Visual Studio i działają zdalnego debugera.  
   
 > [!TIP]
->  Jeśli masz problemy z nawiązaniem połączenia z urządzeniem zdalnym, spróbuj wprowadzić adres IP urządzenia. Aby określić adres IP urządzenia, Otwórz okno polecenia, a następnie wpisz **ipconfig**. Adres IP jest wymieniony jako **adres IPv4**.  
+> Jeśli masz problemy z nawiązaniem połączenia z urządzeniem zdalnym, spróbuj wprowadzić adres IP urządzenia. Aby określić adres IP urządzenia, Otwórz okno polecenia, a następnie wpisz **ipconfig**. Adres IP jest wymieniony jako **adres IPv4**.  
   
 ### <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Wybieranie urządzenia zdalnego dla projektów C# i Visual Basic  
  ![Właściwości projektu dla zdalnego debugowania zarządzane](../debugger/media/vsrun-managed-projprop-remote.png "VSRUN_Managed_ProjProp_Remote")  

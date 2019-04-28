@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d70a0c279c0720e79477b518ab63cf0326ca5237
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 227c9c84022e3c3340b4821df9dbd2dbe9465a03
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414686"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Instrukcje: Tworzenie podstawowego modułu cieniującego Lamberta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ W tym dokumencie przedstawiono sposób użycia Shader Designer i język programu
    Poniższej ilustracji ukończone programu do cieniowania programu graph i wersję zapoznawczą programu do cieniowania, zastosowano do modelu czajniczek.  
   
 > [!NOTE]
->  Aby lepiej zaprezentować efekt programu cieniującego na tej ilustracji, została określona za pomocą koloru pomarańczowego **MaterialDiffuse** parametr programu do cieniowania. Gry lub aplikacji można Użyj tego parametru, aby podać wartość koloru unikatowy dla każdego obiektu. Informacje o parametrach materiału sekcja Podgląd cieniowania w [Shader Designer](../designers/shader-designer.md).  
+> Aby lepiej zaprezentować efekt programu cieniującego na tej ilustracji, została określona za pomocą koloru pomarańczowego **MaterialDiffuse** parametr programu do cieniowania. Gry lub aplikacji można Użyj tego parametru, aby podać wartość koloru unikatowy dla każdego obiektu. Informacje o parametrach materiału sekcja Podgląd cieniowania w [Shader Designer](../designers/shader-designer.md).  
   
  ![Wykres modułu cieniującego i wersją zapoznawczą jego wpływu. ](../designers/media/digit-lambert-effect-graph.png "Cyfry Lamberta — efekt Graph")  
   

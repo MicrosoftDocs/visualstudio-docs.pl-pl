@@ -15,12 +15,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b4a5e7e626e7cf9510047f0b016ff80ea8203e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ef8a152293ef5e1cf9137540abb5590eb43c057a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424450"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>Diagramy składników UML: Wytyczne dotyczące
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ W programie Visual Studio, można narysować *diagram składników* Aby wyświet
  Aby uzyskać więcej informacji o sposobie używania diagramów składników w procesie projektowania, zobacz [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md).  
   
 > [!NOTE]
->  Szczegółowe kroki tworzenia dowolnego diagramu modelowania zawiera są opisane w [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
+> Szczegółowe kroki tworzenia dowolnego diagramu modelowania zawiera są opisane w [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-component-diagram"></a>Aby utworzyć diagram składników  
   
@@ -157,7 +157,7 @@ W programie Visual Studio, można narysować *diagram składników* Aby wyświet
          Podany interfejs pojawi się w składniku. W pobliżu pojawi się Tag akcji.  
   
         > [!NOTE]
-        >  Jeśli używasz **Wklej** zamiast **Wklej odwołanie**, zostanie utworzony nowy interfejs z nową nazwą.  
+        > Jeśli używasz **Wklej** zamiast **Wklej odwołanie**, zostanie utworzony nowy interfejs z nową nazwą.  
   
     3. Jeśli chcesz utworzyć interfejs wymagany, kliknij tag akcja, a następnie kliknij przycisk **przekonwertuj na interfejs wymagany**.  
   

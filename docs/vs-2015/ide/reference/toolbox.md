@@ -16,12 +16,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98670f99779804cec87bc4afc03ab7d126024378
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 47f0567b07f12d17d721881c98c670ad74800190
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419739"
 ---
 # <a name="toolbox"></a>Przybornik
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60105620"
  **Przybornika** wyświetlane tylko te elementy, które są odpowiednie dla typu pliku, w którym pracujesz. Możesz wyszukiwać w przyborniku, aby dodatkowo filtrować widoczne elementy. Jeśli Twój projekt wymaga formantu, który nie jest obsługiwany przez profil klienta, można ustawić projekt przeznaczony dla całego środowiska, edytując właściwości projektu.  
   
 > [!NOTE]
->  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="help-on-toolbox-tabs"></a>Pomoc na temat kart przybornika  
  Poniższe dokumenty zawierają dodatkowe informacje o określonych **przybornika** karty.  

@@ -11,23 +11,23 @@ ms.assetid: ee2d955b-12ca-4f27-89aa-c2d0e768b6b6
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4a7b35c2a96ae31d698ff2294878adc45e3d6572
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6a7f8f8c352db4f2fcd0230f4eac66e8bddb94e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436684"
 ---
 # <a name="sample-implementation-of-changing-values"></a>Przykład implementacji zmieniania wartości
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacji dotyczących implementowania ewaluatory wyrażeń CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykładowe ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacji dotyczących implementowania ewaluatory wyrażeń CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykładowe ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Każdy lokalny wyświetlane w **lokalne** okno ma [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) obiekt skojarzony z nim. To `IDebugProperty2` obiekt zawiera nazwę, wartość i typ lokalnego. Gdy użytkownik zmienia wartość zmiennej lokalnej, Visual Studio wywołuje [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) można zaktualizować wartości elementu lokalnego w pamięci. W tym przykładzie lokalnej jest reprezentowany przez `CFieldProperty` klasę, która implementuje `IDebugProperty2` interfejsu.  
   
 > [!NOTE]
->  Dla **Obejrzyj** i **QuickWatch** wyrażeń, wartości zmieniany jest reprezentowany przez `CValueProperty` klasy w przykładzie MyCEE. Jednak implementacja `IDebugProperty2::SetValueAsString` jest taka sama, jak pokazano poniżej.  
+> Dla **Obejrzyj** i **QuickWatch** wyrażeń, wartości zmieniany jest reprezentowany przez `CValueProperty` klasy w przykładzie MyCEE. Jednak implementacja `IDebugProperty2::SetValueAsString` jest taka sama, jak pokazano poniżej.  
   
  Ta implementacja `IDebugProperty2::SetValueAsString` wykonuje następujące zadania:  
   

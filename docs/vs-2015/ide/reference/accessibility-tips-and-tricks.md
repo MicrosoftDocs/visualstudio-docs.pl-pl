@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f60f952b5784b0901c89f0c1f846ac39e6212a6b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c375a015576202ff8e5d0f9815d534a81aa7b185
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441102"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Porady i wskazówki związane z ułatwieniami dostępu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "59660155"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] obejmuje wbudowanych funkcji ułatwień dostępu, aby można było łatwo pracować z klawiatury i czytniki zawartości ekranu lub inne urządzenia technologii pomocniczej. Temat zawiera kilka sugestii dotyczących optymalizowania [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ułatwień dostępu, a także niektóre kombinacje klawiszy skrótu przydatne.  
   
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="save-your-ide-settings"></a>Zapisz ustawienia IDE  
  Aby dostosować swoje środowisko IDE, należy zapisywanie układu okna, schemat mapowania klawiatury i inne preferencje. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

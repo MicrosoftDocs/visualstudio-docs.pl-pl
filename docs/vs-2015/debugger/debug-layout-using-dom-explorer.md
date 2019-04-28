@@ -18,12 +18,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2e9292464ee117cf79a249c1c1a0636edb931c1d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8b9d0d2a3250785e5ff60d65a6bf1264892c6f98
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434123"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Debugowanie układu przy użyciu eksploratora modelu DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
  **Układ** karta Narzędzia DOM Explorer pokazuje [modelu pudełkowego CSS](http://go.microsoft.com/fwlink/?LinkID=238778) dla wybranego elementu w [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] app, aplikacji Windows Phone Store lub aplikacja utworzona za pomocą programu Visual Studio Tools for Apache Cordova. Ta wizualnej reprezentacji modelu pudełkowego służy do identyfikowania i zmodyfikuj wartości związane z układem, które wpływają na wygląd elementów.  
   
 > [!TIP]
->  Zmiany wprowadzone w oknie **układ** karty nie są trwałe. Można wprowadzić trwałe zmiany do kodu źródłowego, a następnie Odśwież aplikację za pomocą **aplikacji Windows Odśwież** przycisku (tylko aplikacje Windows Store i Windows Phone Store) na pasku narzędzi debugowania. Dzięki temu można uniknąć ponownego uruchamiania debugera.  
+> Zmiany wprowadzone w oknie **układ** karty nie są trwałe. Można wprowadzić trwałe zmiany do kodu źródłowego, a następnie Odśwież aplikację za pomocą **aplikacji Windows Odśwież** przycisku (tylko aplikacje Windows Store i Windows Phone Store) na pasku narzędzi debugowania. Dzięki temu można uniknąć ponownego uruchamiania debugera.  
   
  Aby użyć narzędzia DOM Explorer, aby zmodyfikować aspektów układu, które nie są wyświetlane w modelu pudełkowego, zobacz [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md) i [stylów CSS debugowania przy użyciu narzędzia DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md).  
   
@@ -76,21 +76,21 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 7. Otwórz przewijania lub flicking sekcja 4.  
   
     > [!TIP]
-    >  Pozycja prawo emulatora telefonu lub symulatora obok okna programu Visual Studio, dzięki czemu można natychmiast zobaczyć wyniki wyborów i zmiany wprowadzone w stylach CSS.  
+    > Pozycja prawo emulatora telefonu lub symulatora obok okna programu Visual Studio, dzięki czemu można natychmiast zobaczyć wyniki wyborów i zmiany wprowadzone w stylach CSS.  
   
      Po załadowaniu sekcji 4, zobaczysz niższe obrazy wyglądają niewłaściwie. Każdy element pojawi się wycinania połowę (z lewej połowie brakujący).  
   
 8. Przejdź do programu Visual Studio i wybierz **zaznacz Element** w Eksploratorze DOM (albo naciśnij klawisze Ctrl + B). Spowoduje to zmianę trybu zaznaczania, dzięki czemu będzie można zaznaczyć element, klikając go, i przenieść aplikację na pierwszy plan. Jednym kliknięciem można powrócić do poprzedniego trybu.  
   
     > [!TIP]
-    >  Aby wybrać elementy HTML bezpośrednio w Eksploratorze DOM, można użyć klawiszy strzałek lub innych metod. Aby uzyskać więcej informacji dotyczących zaznaczania elementów, zobacz [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md).  
+    > Aby wybrać elementy HTML bezpośrednio w Eksploratorze DOM, można użyć klawiszy strzałek lub innych metod. Aby uzyskać więcej informacji dotyczących zaznaczania elementów, zobacz [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md).  
   
 9. W emulatorze telefonu lub symulator wybierz szary prawej połowie ekranu jeden z obrazów, które są skrócił się o połowę. Wyróżnianie pojawia się wokół wybranego elementu, jak pokazano w Emulator Windows Phone:  
   
      ![Wybieranie elementu DOM](../debugger/media/js-css-layout-select.png "JS_CSS_Layout_Select")  
   
     > [!TIP]
-    >  Symulator obsługuje, przenosząc kursor myszy nad elementy, aby pokazać pole wyróżnienie wokół elementów DOM, można wybrać. Emulator Windows Phone nie obsługuje tego.  
+    > Symulator obsługuje, przenosząc kursor myszy nad elementy, aby pokazać pole wyróżnienie wokół elementów DOM, można wybrać. Emulator Windows Phone nie obsługuje tego.  
   
      Po wybraniu elementu DOM, Eksplorator DOM automatycznie zaznaczy odpowiedni element IMG w programie Visual Studio. Elementu zaznaczonego w Eksploratorze DOM wygląda następująco:  
   
@@ -114,7 +114,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 11. Aby zobaczyć sposób zastosowania reguły lewy margines, wybierz **obliczane** kartę i sprawdź w obszarze reguła lewy margines. Widać, że ta zasada została ustawiona za pomocą wartości 5em obliczoną wartością jest jednak 66.66px lub 146.66px, w zależności od urządzenia docelowego.  
   
     > [!TIP]
-    >  **Obliczane** karta pokazuje, że reguła lewy margines jest ustawiony w `..hubpage .hub. section4 .sub-image-row img` selektora CSS, znaleziono w hub.css. W tej wersji demonstracyjnej aplikacji to, gdzie musisz wprowadzić poprawkę.  
+    > **Obliczane** karta pokazuje, że reguła lewy margines jest ustawiony w `..hubpage .hub. section4 .sub-image-row img` selektora CSS, znaleziono w hub.css. W tej wersji demonstracyjnej aplikacji to, gdzie musisz wprowadzić poprawkę.  
   
      Można również użyć **układ** kartę, aby przetestować modyfikacje wartościom układu.  
   

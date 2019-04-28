@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49cb0af47f34abbda5bd212d8ce535e98c44d6b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4e998b2367929f788ace5fb6a8de7fc5bb96c3e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438773"
 ---
 # <a name="office-project-templates-overview"></a>Omówienie szablonów projektu pakietu Office
   Microsoft Office developer tools w programie Visual Studio obejmują szablony projektów umożliwiające tworzenie następujących typów rozwiązań dla pakietu Office:
@@ -77,7 +77,7 @@ ms.locfileid: "60054576"
   Szablony projektów programów Word i Excel zachowują się identycznie jak szablony projektów dokumentów programu Word i skoroszytów programów Excel. Jednak szablony projektów programów Word i Excel bardzo ułatwiają użytkownikom tworzenie nowych spersonalizowanych lokalnych kopii dokumentów lub skoroszytów w rozwiązaniu. Funkcje w rozwiązaniu są dostępne z nowego dokumentu, który użytkownik utworzył na podstawie szablonu.
 
 > [!NOTE]
->  Szablony programu Word, które odwołują się rozszerzenia kodu zarządzanego nie można użyć jako globalnych dodatków narzędzi VSTO dla programów. Wywołanie zestawu nie następuje, jeśli szablon jest ładowany z katalogu Startup programu Word. Aby uzyskać więcej informacji, zobacz [ograniczenia szablonów globalnych i dodatków programu Excel (plików .xla)](#Limitations)
+> Szablony programu Word, które odwołują się rozszerzenia kodu zarządzanego nie można użyć jako globalnych dodatków narzędzi VSTO dla programów. Wywołanie zestawu nie następuje, jeśli szablon jest ładowany z katalogu Startup programu Word. Aby uzyskać więcej informacji, zobacz [ograniczenia szablonów globalnych i dodatków programu Excel (plików .xla)](#Limitations)
 
  Informacje na temat rozpoczynania pracy z tego typu projektami znajdują się w następujących tematach:
 

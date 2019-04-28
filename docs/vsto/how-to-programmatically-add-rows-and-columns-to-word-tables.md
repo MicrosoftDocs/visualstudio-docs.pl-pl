@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c590ed271897ac6aebb875bafcb1b6b50a753629
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 780d794874ae87f3310810f2b46127fdf2eb46c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419580"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Instrukcje: Programowe Dodawanie wierszy i kolumn do tabel programu Word
   W tabeli programu Microsoft Office Word komórki są zorganizowane w wiersze i kolumny. Możesz użyć <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> metody <xref:Microsoft.Office.Interop.Word.Rows> obiektu, aby dodać wiersze do tabeli i <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> metody <xref:Microsoft.Office.Interop.Word.Columns> obiektu, aby dodać kolumny.
@@ -30,7 +30,7 @@ ms.locfileid: "60078022"
  Poniższe przykłady kodu może służyć w dostosowaniu na poziomie dokumentu. Aby użyć tych przykładów, uruchomić je z `ThisDocument` klasy w projekcie. W przykładach założono, że dokument skojarzony z dostosowywaniem w już ma co najmniej jedna tabela.
 
 > [!IMPORTANT]
->  Ten kod zadziała tylko w projektach, które tworzysz przy użyciu dowolnej z poniższych szablonów projektu:
+> Ten kod zadziała tylko w projektach, które tworzysz przy użyciu dowolnej z poniższych szablonów projektu:
 >
 > - Dokument programu Word 2013
 > - Word 2013 Template
@@ -57,9 +57,9 @@ ms.locfileid: "60078022"
  Poniższe przykłady kodu może służyć w dodatku VSTO. Aby użyć w przykładach, uruchomić je z `ThisAddIn` klasy w projekcie. W przykładach założono, że aktywny dokument ma już co najmniej jedna tabela.
 
 > [!IMPORTANT]
->  Ten kod zadziała tylko w projektach, które tworzysz przy użyciu szablonów w dodatku narzędzi VSTO programu Word.
+> Ten kod zadziała tylko w projektach, które tworzysz przy użyciu szablonów w dodatku narzędzi VSTO programu Word.
 >
->  Jeśli chcesz wykonać to zadanie w typie projektu, należy dodać odwołanie do **Microsoft.Office.Interop.Word** zestawu, a następnie należy użyć klas z tego zestawu na dodawanie wierszy i kolumn do tabel. Aby uzyskać więcej informacji, zobacz [jak: Konfigurowanie pod kątem aplikacji pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) i [odwołanie do zestawu podstawowej usługi międzyoperacyjnej Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).
+> Jeśli chcesz wykonać to zadanie w typie projektu, należy dodać odwołanie do **Microsoft.Office.Interop.Word** zestawu, a następnie należy użyć klas z tego zestawu na dodawanie wierszy i kolumn do tabel. Aby uzyskać więcej informacji, zobacz [jak: Konfigurowanie pod kątem aplikacji pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) i [odwołanie do zestawu podstawowej usługi międzyoperacyjnej Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).
 
 ### <a name="to-add-a-row-to-a-table"></a>Aby dodać wiersz do tabeli
 

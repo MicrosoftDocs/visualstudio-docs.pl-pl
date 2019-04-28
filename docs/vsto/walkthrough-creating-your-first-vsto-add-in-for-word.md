@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b68884d5cf5b6603d3b0ecdb9885e3466859001b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ed5c5e5b03ce7ee0ffbd361b896f288f6b93a806
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438500"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Word
   Ten Przewodnik wprowadzający przedstawia sposób tworzenia dodatku narzędzi VSTO dla programu Microsoft Office Word. Funkcje, które tworzysz w tego rodzaju rozwiązania są dostępne dla aplikacji, niezależnie od tego, które są otwarte dokumenty.
@@ -83,7 +83,7 @@ ms.locfileid: "60079295"
     [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]
 
    > [!NOTE]
-   >  Ten kod zawiera wartość indeksu, od 1 do dostępu do pierwszego akapitu w <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> kolekcji. Chociaż Visual Basic i Visual C# należy używać tablic oparty na 0, niższe granice tablicy w większości kolekcji w modelu obiektów programu Word to 1. Aby uzyskać więcej informacji, zobacz [pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md).
+   > Ten kod zawiera wartość indeksu, od 1 do dostępu do pierwszego akapitu w <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> kolekcji. Chociaż Visual Basic i Visual C# należy używać tablic oparty na 0, niższe granice tablicy w większości kolekcji w modelu obiektów programu Word to 1. Aby uzyskać więcej informacji, zobacz [pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md).
 
 2. Jeśli używasz języka C#, Dodaj następujący kod wymagany do `ThisAddIn_Startup` programu obsługi zdarzeń. Ten kod służy do łączenia `Application_DocumentBeforeSave` programu obsługi zdarzeń z <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> zdarzeń.
 

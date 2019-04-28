@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d1e7bfd074b0ed7f6f1bcef99acf28f478a9c51
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 24bbd859b4867225e5ec5df95d298dd04146df46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421014"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Instrukcje: Aktualizowanie źródła danych danymi z kontrolki hosta
   Można powiązać kontrolki hosta ze źródłem danych i zaktualizować źródło danych ze zmianami, które zostały wprowadzone do danych w formancie. Istnieją dwa podstawowe kroki w ramach tego procesu:
@@ -61,7 +61,7 @@ ms.locfileid: "60097495"
    - Aby zaktualizować źródło danych, po zmianie wartości właściwości powiązanych z danymi formantu, należy ustawić tę właściwość na System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged.
 
      > [!NOTE]
-     >  Opcja System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged nie dotyczą kontrolki hosta programu Word, ponieważ program Word jest nie oferty dokumentu zmian lub zmiana sterowania powiadomień. Jednak ta opcja może służyć dla formantów Windows Forms w dokumentach programu Word.
+     > Opcja System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged nie dotyczą kontrolki hosta programu Word, ponieważ program Word jest nie oferty dokumentu zmian lub zmiana sterowania powiadomień. Jednak ta opcja może służyć dla formantów Windows Forms w dokumentach programu Word.
 
      Poniższy przykład umożliwia skonfigurowanie <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli można automatycznie zaktualizować źródła danych, po zmianie wartości w kontrolce. W tym przykładzie przyjęto założenie, iż <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu o nazwie `namedRange1` z jego <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> właściwości powiązany z polem w źródle danych.
 
@@ -85,7 +85,7 @@ ms.locfileid: "60097495"
     - Aby zaktualizować źródło danych, po zmianie wartości właściwości powiązanych z danymi formantu, wybierz **onpropertychanged —**.
 
         > [!NOTE]
-        >  **Onpropertychanged —** opcji nie ma zastosowania do kontrolki hosta programu Word, ponieważ program Word jest nie oferty dokumentu zmian lub zmiana sterowania powiadomień. Jednak ta opcja może służyć dla formantów Windows Forms w dokumentach programu Word.
+        > **Onpropertychanged —** opcji nie ma zastosowania do kontrolki hosta programu Word, ponieważ program Word jest nie oferty dokumentu zmian lub zmiana sterowania powiadomień. Jednak ta opcja może służyć dla formantów Windows Forms w dokumentach programu Word.
 
 6. Zamknij **formatowanie i powiązywanie zaawansowane** okno dialogowe.
 

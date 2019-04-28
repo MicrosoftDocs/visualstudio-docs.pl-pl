@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 192fdd737816d2239b15530e2d5c03d73f82e0d5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: bd65f12c065ee1d96934c6790779c8b4ca87b393
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426303"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Zestaw narzędzi MSBuild (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ Program MSBuild używa narzędzi zadania, celów i narzędzi do tworzenia aplika
  Zgodnie z opisem we wcześniejszej części tego tematu, program MSBuild używa klucza rejestru, aby określić ścieżkę podstawowe narzędzia. Jeśli klucz ma podklucza, program MSBuild używa do określenia ścieżki podzestawu narzędzi, które zawiera dodatkowe narzędzia. W tym przypadku zestaw narzędzi jest zdefiniowany, łącząc definicji właściwości, które są zdefiniowane w obydwu kluczy.  
   
 > [!NOTE]
->  W przypadku kolizji nazw właściwości zestawu narzędzi, wartość, która jest zdefiniowana dla ścieżki podkluczy zastępuje wartość, która jest zdefiniowana dla ścieżki klucza głównego.  
+> W przypadku kolizji nazw właściwości zestawu narzędzi, wartość, która jest zdefiniowana dla ścieżki podkluczy zastępuje wartość, która jest zdefiniowana dla ścieżki klucza głównego.  
   
  Zestawy narzędzi Sub stają się aktywne, w przypadku obecności `VisualStudioVersion` właściwości kompilacji. Ta właściwość może mieć jedną z następujących wartości:  
   

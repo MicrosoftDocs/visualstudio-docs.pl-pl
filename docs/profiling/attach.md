@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be197adc10cf02839b5c61c02f5327fc6115d343
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f080957774b33ca00787f061708426a62bd7768f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440296"
 ---
 # <a name="attach"></a>Dołącz
 *VSPerfCmd.exe* **Dołącz** opcji rozpoczyna się profilowanie przykładowe uruchomionego procesu określonego przez identyfikator procesu (PID).
@@ -21,7 +21,7 @@ ms.locfileid: "60101499"
  Do użycia **Attach** opcji, należy określić **przykładowe** metody w opcji uruchamiania.
 
 > [!NOTE]
->  Jeśli **Start** została określona opcja **Crosssession** opcji wszelkie wywołania **VSPerfCmd /Attach** lub **VSPerfCmd/detach** musi również określić **Crosssession**.
+> Jeśli **Start** została określona opcja **Crosssession** opcji wszelkie wywołania **VSPerfCmd /Attach** lub **VSPerfCmd/detach** musi również określić **Crosssession**.
 
 ## <a name="syntax"></a>Składnia
 

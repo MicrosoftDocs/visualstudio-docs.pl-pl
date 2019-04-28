@@ -11,12 +11,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9591875b525d44e343f8326b7f5a145b04b57cff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4107a5fb88392f9d02cca8f41b0f53d5844d9490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422722"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definiowanie ograniczeń walidacji dla modeli UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Można zdefiniować ograniczenia sprawdzania poprawności, które sprawdzić, cz
     Aby uzyskać więcej informacji, zobacz [oceny ograniczenie sprawdzania poprawności](#Implementing).  
   
    > [!IMPORTANT]
-   >  Upewnij się, że Twoje **.cs** pliki zawierają następujące `using` instrukcji:  
+   > Upewnij się, że Twoje **.cs** pliki zawierają następujące `using` instrukcji:  
    >   
    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
@@ -223,7 +223,7 @@ using Microsoft.VisualStudio.Uml.Classes;
  Metoda sprawdzania poprawności powinna ustalić, czy ograniczenie sprawdzania poprawności, które chcesz zastosować jest wartość PRAWDA lub FAŁSZ. W przypadku opcji true nie powinny nic robić. Jeśli ma wartość FAŁSZ, należy zgłosić błąd przy użyciu metod dostarczonych przez `ValidationContext` parametru.  
   
 > [!NOTE]
->  Metody sprawdzania poprawności nie powinny zmieniać modelu. Nie ma gwarancji po lub w jakiej kolejności ograniczenia zostaną wykonane. Jeśli masz do przekazywania informacji między kolejnymi wykonaniami metody sprawdzania poprawności w ramach przebiegu weryfikacji, można użyć pamięci podręcznej kontekstu opisanej w obszarze [koordynacja wielokrotnego sprawdzania poprawności](#ContextCache).  
+> Metody sprawdzania poprawności nie powinny zmieniać modelu. Nie ma gwarancji po lub w jakiej kolejności ograniczenia zostaną wykonane. Jeśli masz do przekazywania informacji między kolejnymi wykonaniami metody sprawdzania poprawności w ramach przebiegu weryfikacji, można użyć pamięci podręcznej kontekstu opisanej w obszarze [koordynacja wielokrotnego sprawdzania poprawności](#ContextCache).  
   
  Na przykład jeśli chcesz upewnić się, że każdy typ (klasą, interfejsem lub moduł wyliczający) ma nazwę, która ma co najmniej trzech znaków, można użyć tej metody:  
   

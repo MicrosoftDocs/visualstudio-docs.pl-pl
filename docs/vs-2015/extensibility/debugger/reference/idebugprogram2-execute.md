@@ -12,12 +12,12 @@ ms.assetid: f7205ce8-0ac6-4fcd-b6ec-b720b4fcaccf
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 00dac8c76a290adf877640a5fe3465d24826ec2e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f6134c10f30d66011dca5e40c28b6cbe6a7c94ed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430555"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54790780"
 Nadal uruchomiony ten program w stanie zatrzymania. Jest wyczyszczone wszelkie poprzedni stan wykonania (np. krok), i ponownym wykonaniem uruchamiania programu.  
   
 > [!NOTE]
->  Ta metoda jest przestarzała. Użyj [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md) metody zamiast tego.  
+> Ta metoda jest przestarzała. Użyj [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md) metody zamiast tego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -46,7 +46,7 @@ int Execute();
  Gdy użytkownik rozpoczyna wykonywanie w stanie zatrzymania wątku przez inny program, ta metoda jest wywoływana dla tego programu. Ta metoda również jest wywoływana, gdy użytkownik wybierze **Start** polecenia **debugowania** menu w środowisku IDE. Implementacja tej metody może być proste co wywołanie metody [Wznów](../../../extensibility/debugger/reference/idebugthread2-resume.md) metody w bieżącym wątku w programie.  
   
 > [!WARNING]
->  Nie wysyłaj zdarzeń zatrzymywania lub natychmiastowego zdarzenia (synchroniczne) w celu [zdarzeń](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) podczas obsługi tego wywołania; w przeciwnym razie debuger może się zawiesić.  
+> Nie wysyłaj zdarzeń zatrzymywania lub natychmiastowego zdarzenia (synchroniczne) w celu [zdarzeń](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) podczas obsługi tego wywołania; w przeciwnym razie debuger może się zawiesić.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

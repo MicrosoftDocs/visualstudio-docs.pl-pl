@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: caf878f6ea43a7f041285fb02b2f32175ca862b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cc876426c18184c966c277e8dafb5a373da332b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408380"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Instrukcje: Używanie edytora wyrażeń
 Edytor wyrażeń jest [!INCLUDE[wfd1](../includes/wfd1-md.md)] formant, który jest używany w wielu działań przepływu pracy jako sposób wprowadzania i tych wyrażeń. Edytora wyrażeń zapewnia w pełni funkcjonalnego środowiska IDE, środowisko, w tym funkcji IntelliSense, edytowania kolorowanie, ParamInfo, między innymi funkcjami zygzaki sygnalizujące błędy. Kompilator sprawdza się wyrażenie po jej wprowadzeniu. Jeśli wyrażenie jest nieprawidłowe, jest wyświetlana ikona błędu. Można również otworzyć Edytor jako **edytora wyrażeń** okno dialogowe.  
@@ -32,7 +32,7 @@ Edytor wyrażeń jest [!INCLUDE[wfd1](../includes/wfd1-md.md)] formant, który j
 - Jeśli możesz skoncentrować się na edytorze wyrażeń w rehostowanym projektancie przepływu pracy, następnie go zachowuje się jak pole tekstowe. Gdy fokus jest utracone w rehostowanym projektancie przepływu pracy, edytora wyrażeń będzie wyglądać regularne TextBlock ponownie.  
   
 > [!NOTE]
->  Funkcja IntelliSense edytora wyrażeń jest dostępna tylko wewnątrz elementu [!INCLUDE[vs2010](../includes/vs2010-md.md)]. W obu [!INCLUDE[vs2010](../includes/vs2010-md.md)] i rehostowanym przypadkach kompilator sprawdza poprawność wyrażenia po wprowadzeniu go i Edytor wyrażeń Wyświetla ikonę błędu, jeśli wyrażenie jest nieprawidłowe.  
+> Funkcja IntelliSense edytora wyrażeń jest dostępna tylko wewnątrz elementu [!INCLUDE[vs2010](../includes/vs2010-md.md)]. W obu [!INCLUDE[vs2010](../includes/vs2010-md.md)] i rehostowanym przypadkach kompilator sprawdza poprawność wyrażenia po wprowadzeniu go i Edytor wyrażeń Wyświetla ikonę błędu, jeśli wyrażenie jest nieprawidłowe.  
   
 ### <a name="using-the-expression-editor"></a>Za pomocą edytora wyrażeń  
   
@@ -41,7 +41,7 @@ Edytor wyrażeń jest [!INCLUDE[wfd1](../includes/wfd1-md.md)] formant, który j
 2. Dodaj na przykład <xref:System.Activities.Statements.Assign> działania przepływu pracy.  
   
     > [!NOTE]
-    >  Wiele działań przepływu pracy ma edytory wyrażenia. Obiekty wyrażeń TextBlock również zostać wyświetlony w Projektancie zmiennej, projektanta argumentów i projektanta argumentów dynamicznych. <xref:System.Activities.Statements.Assign> To działanie służy jako przykład.  
+    > Wiele działań przepływu pracy ma edytory wyrażenia. Obiekty wyrażeń TextBlock również zostać wyświetlony w Projektancie zmiennej, projektanta argumentów i projektanta argumentów dynamicznych. <xref:System.Activities.Statements.Assign> To działanie służy jako przykład.  
   
 3. Kliknij przycisk edytora wyrażeń po lewej stronie, w Projektancie działań dla <xref:System.Activities.Statements.Assign> działania.  
   

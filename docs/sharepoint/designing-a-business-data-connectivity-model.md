@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf2fd868927a7e8380d5c079c2f8dc86d5385961
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8f322d18afdb8e14ee87ae31d30dd6bdd57b07c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431279"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Projektowanie modelu łączności danych biznesowych
   Model usługi łączności danych biznesowych (BDC) można utworzyć przez dodanie jednostek i metody w pliku modelu. Jednostki w tym artykule opisano kolekcji pól danych. Na przykład jednostka może reprezentować tabelę w bazie danych. Metoda wykonuje zadania, takie jak dodawanie, usuwanie lub aktualizowanie danych reprezentowane przez jednostki. Aby uzyskać więcej informacji, zobacz [integrowanie danych biznesowych programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -96,7 +96,7 @@ ms.locfileid: "56628419"
  Można również ustawić uprawnień zabezpieczeń dla poszczególnych modeli lub typów zawartości zewnętrznej. Aby uzyskać więcej informacji na temat sposobu ustawiania uprawnień zabezpieczeń w modelu, zobacz [zarządzania modelu usługi łączności danych biznesowych](http://go.microsoft.com/fwlink/?LinkID=178884). Aby uzyskać więcej informacji na temat sposobu ustawiania uprawnień zabezpieczeń zewnętrznego typu zawartości, zobacz [zarządzania zewnętrznego typu zawartości](http://go.microsoft.com/fwlink/?LinkID=178885).
 
 > [!NOTE]
->  Użyj tych ustawień, aby debugować rozwiązanie na lokalnym serwerze programu SharePoint. Aby uzyskać więcej informacji o sposobie konfigurowania ustawień zabezpieczeń związane z usługi łączności danych biznesowych na serwerze programu SharePoint w środowisku produkcyjnym, zobacz [Omówienie zabezpieczeń usługi łączności danych biznesowych](http://go.microsoft.com/fwlink/?LinkID=178886).
+> Użyj tych ustawień, aby debugować rozwiązanie na lokalnym serwerze programu SharePoint. Aby uzyskać więcej informacji o sposobie konfigurowania ustawień zabezpieczeń związane z usługi łączności danych biznesowych na serwerze programu SharePoint w środowisku produkcyjnym, zobacz [Omówienie zabezpieczeń usługi łączności danych biznesowych](http://go.microsoft.com/fwlink/?LinkID=178886).
 
 ### <a name="retract-models-that-become-corrupt"></a>Wycofaj modeli, które są uszkodzone
  Podczas pierwszego uruchomienia debugera, program Visual Studio wdroży cały model do programu SharePoint. Modelu w programie SharePoint za każdym razem po tej dacie jest aktualizacje ze wszystkimi zmianami, które wprowadzasz między wdrożeniami programu Visual Studio.

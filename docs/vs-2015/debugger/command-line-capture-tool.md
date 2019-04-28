@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: be0b661c85165ff348eccf7d55507ce228100091
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 208ff7f9bbfc2d07669a8b485edffc8dfc4cd54f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437804"
 ---
 # <a name="command-line-capture-tool"></a>Narzędzie wiersza polecenia do przechwytywania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ DXCap.exe –info
  W trybie weryfikacji `events` określa zestaw zdarzenia grafiki, którego wyniki wprowadzenia są porównywane. Na przykład `-examine present,draw,copy,clear` ogranicza porównanie z tylko zdarzenia należące do tych kategorii.  
   
 > [!TIP]
->  Zalecamy rozpoczęcie od `-examine present,draw,copy,clear` ponieważ spowoduje to ujawnić większości problemów, ale trwać znacznie krócej niż szerszy zestaw zdarzeń. Jeśli to konieczne, można określić zestaw większy lub różnych zdarzeń, aby zweryfikować te zdarzenia i wyświetlić inne rodzaje problemów.  
+> Zalecamy rozpoczęcie od `-examine present,draw,copy,clear` ponieważ spowoduje to ujawnić większości problemów, ale trwać znacznie krócej niż szerszy zestaw zdarzeń. Jeśli to konieczne, można określić zestaw większy lub różnych zdarzeń, aby zweryfikować te zdarzenia i wyświetlić inne rodzaje problemów.  
   
  `-haltonfail`  
  W trybie weryfikacji `-haltonfail` zatrzymuje sprawdzania poprawności po wykryciu różnic między sprzętem i renderowanie WARP. Sprawdzanie poprawności zostanie wznowione po naciśnięciu klawisza.  
@@ -140,7 +140,7 @@ DXCap.exe –c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.co
  Polecenia w powyższym przykładzie przechwytuje informacje graficzne z wersji klasycznej programu Internet Explorer podczas wyświetlania strony sieci Web, znajduje się w www.fishgl.com korzystającego z interfejsu API WebGL do renderowania zawartości 3D.  
   
 > [!NOTE]
->  Ponieważ argumenty wiersza polecenia, które pojawiają się po aplikacji są przekazywane do niego, należy określić argumenty przeznaczonych do DXCap.exe przed rozpoczęciem korzystania z `–c` opcji.  
+> Ponieważ argumenty wiersza polecenia, które pojawiają się po aplikacji są przekazywane do niego, należy określić argumenty przeznaczonych do DXCap.exe przed rozpoczęciem korzystania z `–c` opcji.  
   
 ### <a name="capture-graphics-information-from-a-windows-store-app"></a>Przechwytywać informacje graficzne z aplikacji Windows Store.  
  Można przechwytywać informacje graficzne z aplikacji Windows Store.  

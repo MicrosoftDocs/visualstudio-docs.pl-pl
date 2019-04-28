@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7daee59d754b8b09ed8684ff16a6bae81fa3bf8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 246ce82eef63559060c9c4ea4daabd3ae1e5a284
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435121"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Instrukcje: Rozwiązywanie problemów z szablonami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Jeśli szablon nie są ładowane w środowisku deweloperskim, istnieją zlokaliz
 5. Sprawdź, czy kod XML w pliku .vstemplate działa zgodnie z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] schemat szablonu. Aby uzyskać więcej informacji na temat schematu .vstemplate, zobacz [odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
   
     > [!NOTE]
-    >  Aby uzyskać obsługę technologii IntelliSense podczas tworzenia pliku .vstemplate, Dodaj `xmlns` atrybutu `VSTemplate` elementu i przypisz jej wartość http://schemas.microsoft.com/developer/vstemplate/2005.  
+    > Aby uzyskać obsługę technologii IntelliSense podczas tworzenia pliku .vstemplate, Dodaj `xmlns` atrybutu `VSTemplate` elementu i przypisz jej wartość http://schemas.microsoft.com/developer/vstemplate/2005.  
   
 6. Zapisz i zamknij plik .vstemplate.  
   

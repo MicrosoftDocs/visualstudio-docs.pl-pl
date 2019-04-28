@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a686d2a43fed0fdb8c5c1e8f21d4b35fd63f3a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8e6f2d0da758a8897f28a22dec8adf1f8e05a36c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419465"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Instrukcje: Dostosowywanie wbudowanej karty
   Grupy i formanty można dodać do wbudowanej karty. Wbudowana karty to karta, która jest już na Wstążce aplikacji Microsoft Office. Na przykład **danych** karty to karta wbudowana w programie Excel. Podczas tworzenia grup niestandardowych, zostanie wyświetlone ostatnie na karcie, ale można przenieść grupy dowolne miejsce na karcie.
@@ -26,14 +26,14 @@ ms.locfileid: "60075665"
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 > [!NOTE]
->  Można dodać grupy do wbudowanej karty, ale nie można usunąć wbudowanych grup z wbudowanej karty.
+> Można dodać grupy do wbudowanej karty, ale nie można usunąć wbudowanych grup z wbudowanej karty.
 
 ### <a name="to-add-groups-to-a-built-in-tab"></a>Aby dodać grupy do wbudowanej karty
 
 1. Kliknij prawym przyciskiem myszy plik kodu wstążki w **Eksploratora rozwiązań**, a następnie kliknij przycisk **Projektant widoków**.
 
     > [!NOTE]
-    >  Jeśli nie ma plik kodu wstążki **Eksploratora rozwiązań**, należy dodać **element wstążki** do projektu. Zobacz [jak: Wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md).
+    > Jeśli nie ma plik kodu wstążki **Eksploratora rozwiązań**, należy dodać **element wstążki** do projektu. Zobacz [jak: Wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
 2. Kliknij prawym przyciskiem myszy dowolną kartę w Projektancie wstążki, a następnie kliknij przycisk **właściwości**.
 
@@ -48,7 +48,7 @@ ms.locfileid: "60075665"
 5. Z **formanty wstążki Office** karcie **przybornika**, przeciągnij grupy na karcie.
 
     > [!NOTE]
-    >  Wbudowane grupy nie są wyświetlane w projektancie. W związku z tym, jedynym sposobem ustalenia, czy użytkownik korzysta z wbudowanej karty jest zbadanie **ControlId** właściwości karty.
+    > Wbudowane grupy nie są wyświetlane w projektancie. W związku z tym, jedynym sposobem ustalenia, czy użytkownik korzysta z wbudowanej karty jest zbadanie **ControlId** właściwości karty.
 
 ### <a name="to-position-groups-on-a-built-in-tab"></a>Aby zmienić położenie grupy na karcie wbudowanej
 

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6f52caf33820b230eb00b1be2999fe7f972176f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8fdd467f2b3a06398198f6fd8452c6a548bf0872
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431269"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Instrukcje: Dodawanie określonej metody wyszukiwania
   Może zwrócić wystąpienia pojedynczej jednostki, tworząc *określonej metody wyszukiwania* metody. Usługa łączności danych biznesowych (BDC) wykonuje konkretną metodę wyszukiwania, gdy użytkownik wybierze jednostki w części sieci web danych biznesowych lub listy zewnętrznej. Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -58,10 +58,10 @@ ms.locfileid: "56615289"
 5. Deskryptor typu parametru zwracanego należy skonfigurować jako deskryptora typu. Aby uzyskać informacje o sposobach tworzenia deskryptora typu, zobacz [jak: Określanie deskryptora typu parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
    > [!NOTE]
-   >  Nie trzeba wykonać ten krok, jeśli metoda wyszukiwania zostały dodane do jednostki. Visual Studio używa deskryptora typu, który zostały zdefiniowane w metodę wyszukiwania.
+   > Nie trzeba wykonać ten krok, jeśli metoda wyszukiwania zostały dodane do jednostki. Visual Studio używa deskryptora typu, który zostały zdefiniowane w metodę wyszukiwania.
 
    > [!NOTE]
-   >  Jeśli pole identyfikatora typu jednostki reprezentuje pole w tabeli bazy danych, która jest generowana automatycznie, ustaw **tylko do odczytu** właściwości pola Identyfikator **True**.
+   > Jeśli pole identyfikatora typu jednostki reprezentuje pole w tabeli bazy danych, która jest generowana automatycznie, ustaw **tylko do odczytu** właściwości pola Identyfikator **True**.
 
 6. W **szczegóły metody** okna, wybierz wystąpienie metody metody.
 
@@ -80,7 +80,7 @@ ms.locfileid: "56615289"
      Poniższy przykład zwraca kontakt z przykładowej bazy danych AdventureWorks programu SQL Server.
 
      > [!NOTE]
-     >  Zastąp wartość `ServerName` pole z nazwą serwera.
+     > Zastąp wartość `ServerName` pole z nazwą serwera.
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]

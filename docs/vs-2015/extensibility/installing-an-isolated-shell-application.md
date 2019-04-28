@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 55c4ebc96d93d9b068c29d24727d40975518b1ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60862d631d93788f10c372310da9eb3d181943ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414543"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Instalowanie aplikacji Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ Aby zainstalować aplikację powłoki należy wykonać następujące czynności.
 2. Zidentyfikuj składniki, które wymagają powłoka i aplikacji powłoki, co ilustruje poniższy przykład.  
   
     > [!NOTE]
-    >  Niektóre elementy mogą odwoływać się do definicji w innych plikach .wxs.  
+    > Niektóre elementy mogą odwoływać się do definicji w innych plikach .wxs.  
   
     ```xml  
     <Feature Id="ProductFeature" Title="$(var.ShortProductName)Shell" Level="1">  
@@ -159,7 +159,7 @@ Aby zainstalować aplikację powłoki należy wykonać następujące czynności.
         ```  
   
     > [!NOTE]
-    >  Dostępne są następujące zależności wymagane dla aplikacji, Shell (Isolated): DebuggerProxy, MasterPkgDef, zasoby (szczególnie plik .winprf), aplikacji i PkgDefs.  
+    > Dostępne są następujące zależności wymagane dla aplikacji, Shell (Isolated): DebuggerProxy, MasterPkgDef, zasoby (szczególnie plik .winprf), aplikacji i PkgDefs.  
   
 ### <a name="registry-entries"></a>Wpisy rejestru  
  Szablon projektu Shell (Isolated) zawiera *ProjectName*plik reg dla kluczy rejestru w celu scalenia w instalacji. Te wpisy rejestru musi być częścią pliku MSI dla instalacji i czyszczenia celów. Należy także utworzyć pasującego bloki rejestru w ApplicationRegistry.wxs.  
@@ -211,7 +211,7 @@ Aby zainstalować aplikację powłoki należy wykonać następujące czynności.
  Aby ustalić, czy Visual Studio Shell (izolowany) musi być zainstalowany, należy najpierw określić, czy jest już zainstalowany, sprawdzając wartość rejestru HKLM\Software\Microsoft\DevDiv\vs\Servicing\ShellVersion\isoshell\LCID\Install.  
   
 > [!NOTE]
->  Te wartości również są odczytywane przez blok wykrywania powłoki w Product.wxs.  
+> Te wartości również są odczytywane przez blok wykrywania powłoki w Product.wxs.  
   
  HKLM\Software\Microsoft\AppEnv\14.0\ShellFolder Określa lokalizację, w którym został zainstalowany program Visual Studio Shell i możesz sprawdzić, czy dla plików istnieje.  
   
@@ -369,4 +369,4 @@ dwResult = ExecCmd(boutiqueInstallCmd, FALSE);
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: Tworzenie podstawowej aplikacji Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+ [Przewodnik: tworzenie podstawowej aplikacji Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 485684486c8d58dc9c7cbd3e679138360d02fdbb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 2de204f3d95147d3250e570fa785ecccf68b4634
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412772"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
 Ta metoda pobiera aktualizację Edytuj i Kontynuuj (ENC) dla tego programu. Zawsze zwraca niestandardowego aparatu debugowania `E_NOTIMPL`.
@@ -45,7 +45,7 @@ int GetENCUpdate(
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
 > [!NOTE]
->  Niestandardowego aparatu debugowania zawsze powinna zwrócić `E_NOTIMPL`.
+> Niestandardowego aparatu debugowania zawsze powinna zwrócić `E_NOTIMPL`.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

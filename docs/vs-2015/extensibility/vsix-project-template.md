@@ -11,12 +11,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e8bc80e28979a1adf86f4b0490f84cc393450521
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2386f1be805f6347fc32fba4ee8bfe57c8602329
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436906"
 ---
 # <a name="vsix-project-template"></a>Szablon projektu VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ Można użyć szablonu projektu VSIX do opakowania jedno lub więcej rozszerzeń
  Wdrożenie VSIX obsługuje pakietów VSPackage, zestawy, składniki MEF, szablony projektów, szablonów elementów, kontrolki przybornika i typy rozszerzeń niestandardowych.  
   
 > [!NOTE]
->  Aby korzystać z projektów VSIX, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji na temat zestawu SDK programu Visual Studio, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+> Aby korzystać z projektów VSIX, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji na temat zestawu SDK programu Visual Studio, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="where-to-find-the-vsix-project-template"></a>Gdzie można znaleźć szablonu projektu VSIX  
  Szablon projektu VSIX jest dostępny w **nowy projekt** okno dialogowe. Rozwiń **języka Visual Basic** węzła lub **Visual C#** węzła, a następnie wybierz **rozszerzalności**.  
   
 > [!TIP]
->  Upewnij się, że program .NET Framework 4.5 lub nowszy, jest określony na liście rozwijanej w górnej części **nowy projekt** okno dialogowe.  
+> Upewnij się, że program .NET Framework 4.5 lub nowszy, jest określony na liście rozwijanej w górnej części **nowy projekt** okno dialogowe.  
   
 ## <a name="uses-of-the-vsix-project-template"></a>Używa szablonu projektu VSIX  
  Szablon projektu VSIX ma dwa podstawowe zastosowania:  

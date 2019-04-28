@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a44a6a3474d56b1254333731d79b2172fd6143b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5ff893f5603d3156d4ed6fe09848682ab5d04b06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407629"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Przy użyciu autonomicznego modułu zbierającego IntelliTrace (C#, Visual Basic)
 
@@ -26,10 +26,10 @@ ms.locfileid: "60077658"
  Obejrzyj działanie IntelliTrace: [Zbieranie i analizowanie danych IntelliTrace w produkcji do debugowania (wideo Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
 
 > [!NOTE]
->  Może również zbierać te same dane funkcji IntelliTrace dla sieci web i aplikacje programu SharePoint uruchomionych na komputerach zdalnych przy użyciu **Microsoft Monitoring Agent** w **śledzenia** trybu.
+> Może również zbierać te same dane funkcji IntelliTrace dla sieci web i aplikacje programu SharePoint uruchomionych na komputerach zdalnych przy użyciu **Microsoft Monitoring Agent** w **śledzenia** trybu.
 >
->  Zdarzenia związane z wydajnością w danych funkcji IntelliTrace można zbierać, uruchamiając agenta w **Monitor** trybu. **Monitor** tryb ma mniejszy wpływ na wydajność niż **śledzenia** tryb lub **autonomiczny moduł zbierający IntelliTrace**. Program Microsoft Monitoring Agent zmienić środowiska systemu docelowego, po jej zainstalowaniu. Zobacz [przy użyciu programu Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
->  Autonomiczny moduł zbierający IntelliTrace nie obsługuje przetwarzania migawek.
+> Zdarzenia związane z wydajnością w danych funkcji IntelliTrace można zbierać, uruchamiając agenta w **Monitor** trybu. **Monitor** tryb ma mniejszy wpływ na wydajność niż **śledzenia** tryb lub **autonomiczny moduł zbierający IntelliTrace**. Program Microsoft Monitoring Agent zmienić środowiska systemu docelowego, po jej zainstalowaniu. Zobacz [przy użyciu programu Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
+> Autonomiczny moduł zbierający IntelliTrace nie obsługuje przetwarzania migawek.
 
  **Wymagania**
 
@@ -38,7 +38,7 @@ ms.locfileid: "60077658"
 - Visual Studio Enterprise (ale nie Professional lub Community Edition) na komputerze deweloperskim lub innym komputerze, aby otworzyć pliki .iTrace
 
   > [!NOTE]
-  >  Upewnij się, że zapisano symbole plików (.pdb). Aby debugować za pomocą IntelliTrace i przejść przez kod, musisz mieć pasujące pliki źródłowe i pliki symboli. Zobacz [diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md).
+  > Upewnij się, że zapisano symbole plików (.pdb). Aby debugować za pomocą IntelliTrace i przejść przez kod, musisz mieć pasujące pliki źródłowe i pliki symboli. Zobacz [diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md).
 
   **Często zadawane pytania**
 
@@ -111,7 +111,7 @@ ms.locfileid: "60077658"
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       >  Okres (**.**) zachowuje podfoldery, które zawierają zlokalizowane plany kolekcji.
+       > Okres (**.**) zachowuje podfoldery, które zawierają zlokalizowane plany kolekcji.
 
 ## <a name="ConfigurePermissionsRunningCollector"></a> Skonfiguruj uprawnienia dla katalogu kolektora
 
@@ -216,7 +216,7 @@ ms.locfileid: "60077658"
      `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
     > [!IMPORTANT]
-    >  Po uruchomieniu tego polecenia, wpisz **Y** aby upewnić się, że chcesz rozpocząć zbieranie danych.
+    > Po uruchomieniu tego polecenia, wpisz **Y** aby upewnić się, że chcesz rozpocząć zbieranie danych.
 
      Na przykład, aby zbierać dane z aplikacji programu SharePoint w **SharePoint — 80** puli aplikacji:
 
@@ -247,7 +247,7 @@ ms.locfileid: "60077658"
      `Stop-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
     > [!IMPORTANT]
-    >  Po uruchomieniu tego polecenia, wpisz **Y** aby upewnić się, że chcesz zatrzymać zbieranie danych. W przeciwnym razie moduł zbierający może nadal zbierać dane, w pliku iTrace plik pozostanie zablokowany lub plik nie może zawierać żadnych użytecznych danych.
+    > Po uruchomieniu tego polecenia, wpisz **Y** aby upewnić się, że chcesz zatrzymać zbieranie danych. W przeciwnym razie moduł zbierający może nadal zbierać dane, w pliku iTrace plik pozostanie zablokowany lub plik nie może zawierać żadnych użytecznych danych.
 
 6. [Otwórz plik .iTrace w Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files)
 
@@ -275,7 +275,7 @@ ms.locfileid: "60077658"
 ## <a name="BKMK_View_IntelliTrace_Log_Files"></a> Otwórz plik .iTrace w Visual Studio Enterprise
 
 > [!NOTE]
->  Aby debugować za pomocą IntelliTrace i przejść przez kod, musisz mieć pasujące pliki źródłowe i pliki symboli. Zobacz [diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md).
+> Aby debugować za pomocą IntelliTrace i przejść przez kod, musisz mieć pasujące pliki źródłowe i pliki symboli. Zobacz [diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md).
 
 1. Przenieś plik .iTrace lub skopiuj go do komputera za pomocą programu Visual Studio Enterprise (ale nie Professional lub Community).
 
@@ -284,7 +284,7 @@ ms.locfileid: "60077658"
      Visual Studio Wyświetla **krótki opis IntelliTrace** strony. W większości sekcji, można przejrzeć zdarzenia lub inne elementy, wybierz element i Rozpocznij debugowanie z IntelliTrace w punkcie gdzie i kiedy miało miejsce zdarzenie. Zobacz [używanie zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md).
 
     > [!NOTE]
-    >  Aby debugować za pomocą IntelliTrace i przejść przez kod, musisz mieć pasujące pliki źródłowe i pliki na komputerze deweloperskim z symbolami. Zobacz [diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md).
+    > Aby debugować za pomocą IntelliTrace i przejść przez kod, musisz mieć pasujące pliki źródłowe i pliki na komputerze deweloperskim z symbolami. Zobacz [diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md).
 
 ## <a name="Minimizing"></a> Jak uzyskać większość danych bez spowalniania mojej aplikacji?
  IntelliTrace może zbierać dużą ilość danych, więc wpływ na wydajność aplikacji zależy od IntelliTrace zbiera dane i rodzaju kodu, który analizuje. Zobacz [Optymalizacja kolekcji IntelliTrace na serwerach produkcyjnych](http://go.microsoft.com/fwlink/?LinkId=255233).

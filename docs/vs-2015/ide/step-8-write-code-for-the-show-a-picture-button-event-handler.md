@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4d0eb491a2dbe0b6fc290cefb665bcb931f8a1a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2f162f827fa1866b5ca241bd9aaae2aadffb56e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428610"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8. Pisanie kodu obsługi zdarzeń przycisku Pokaż obraz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Kod Visual C#
     3. Wpisz kropkę (`.`) (wielu programistów nazywa to kropką.) Ponieważ wpisano kropkę na prawo po **openFileDialog1**, **IntelliSense** zostanie wyświetlone okno dialogowe, wypełnionymi wszystkimi **OpenFileDialog** metodami i właściwościami składnika. Są to te same właściwości, które pojawiają się w **właściwości** okna po wybraniu ich programie Windows Forms Designer. Możesz również wybrać metody, które informują składnik, aby wykonywały (np. otwarcie okna dialogowego).  
   
         > [!NOTE]
-        >  **IntelliSense** okna można wyświetlić właściwości i metody. Aby ustalić, co jest pokazywane, spójrz na ikonę po lewej stronie każdej pozycji w **IntelliSense** okna. Obok każdej właściwości widzisz obraz bloku przy każdej metodzie i obraz klucza (lub klucz). Istnieje również ikonę pioruna obok każdego zdarzenia. Te obrazy wyświetlane są w następujący sposób.  
+        > **IntelliSense** okna można wyświetlić właściwości i metody. Aby ustalić, co jest pokazywane, spójrz na ikonę po lewej stronie każdej pozycji w **IntelliSense** okna. Obok każdej właściwości widzisz obraz bloku przy każdej metodzie i obraz klucza (lub klucz). Istnieje również ikonę pioruna obok każdego zdarzenia. Te obrazy wyświetlane są w następujący sposób.  
   
          ![Ikona metody](../ide/media/express-iconmethod.png "Express_IconMethod")  
 Ikona metody  
@@ -72,21 +72,21 @@ Ikona zdarzenie
     5. Kiedy używasz metody na kontrolce lub składnik (nazywane *wywołanie metody*), musisz dodać nawiasy. Wprowadź nawiasy otwierające i zamykające natychmiast po "g" w `ShowDialog`: `()` Teraz powinien on wyglądać "openFileDialog1.ShowDialog()".  
   
         > [!NOTE]
-        >  Metody są ważną częścią dowolnego programu, a ten samouczek pokazał kilka sposobów wykorzystania metod. Można wywołać metodę składnika, aby nakazać mu coś, tak jak Wywołałeś **OpenFileDialog** składnika `ShowDialog()` metody. Można tworzyć swoje własne metody, które umożliwiają programowi wykonywanie czynności, jak ta, którą tworzymy teraz, o nazwie `showButton_Click()` metody, która otwiera okno dialogowe i obraz, gdy użytkownik wybierze przycisk.  
+        > Metody są ważną częścią dowolnego programu, a ten samouczek pokazał kilka sposobów wykorzystania metod. Można wywołać metodę składnika, aby nakazać mu coś, tak jak Wywołałeś **OpenFileDialog** składnika `ShowDialog()` metody. Można tworzyć swoje własne metody, które umożliwiają programowi wykonywanie czynności, jak ta, którą tworzymy teraz, o nazwie `showButton_Click()` metody, która otwiera okno dialogowe i obraz, gdy użytkownik wybierze przycisk.  
   
     6. Dla języka Visual C# Dodaj spację, a następnie dodaj dwa znaki równości (`==`). Dla języka Visual Basic Dodaj spację, a następnie użyj pojedynczego znaku równości (`=`). (Visual C# i Visual Basic używają różnych operatorów porównania).  
   
     7. Dodaj kolejną spację. Jak najszybciej zrobisz, inny **IntelliSense** zostanie otwarte okno. Rozpocznij wpisywanie `DialogResult` i wybierz klawisz TAB, aby dodać go.  
   
         > [!NOTE]
-        >  Podczas pisania kodu w celu wywołania metody czasami zwraca wartość. W tym przypadku **OpenFileDialog** składnika `ShowDialog()` metoda zwraca wartość DialogResult. DialogResult jest wartością specjalną, która informuje, co wydarzyło się w oknie dialogowym. **OpenFileDialog** składnika może spowodować wybór użytkownika **OK** lub **anulować**, więc jego `ShowDialog()` metoda zwraca albo DialogResult.OK lub DialogResult.Cancel.  
+        > Podczas pisania kodu w celu wywołania metody czasami zwraca wartość. W tym przypadku **OpenFileDialog** składnika `ShowDialog()` metoda zwraca wartość DialogResult. DialogResult jest wartością specjalną, która informuje, co wydarzyło się w oknie dialogowym. **OpenFileDialog** składnika może spowodować wybór użytkownika **OK** lub **anulować**, więc jego `ShowDialog()` metoda zwraca albo DialogResult.OK lub DialogResult.Cancel.  
   
     8. Wpisz kropkę, aby otworzyć wartość DialogResult **IntelliSense** okna. Wprowadź literę `O` i wybierz klawisz TAB, aby wstawić **OK**.  
   
          Aby dowiedzieć się więcej na temat `DialogResult`, zobacz [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx).  
   
         > [!NOTE]
-        >  Pierwszy wiersz kodu powinien być kompletny. Dla języka Visual C#, należy go poniżej.  
+        > Pierwszy wiersz kodu powinien być kompletny. Dla języka Visual C#, należy go poniżej.  
         >   
         >  `if (openFileDialog1.ShowDialog() == DialogResult.OK)`  
         >   

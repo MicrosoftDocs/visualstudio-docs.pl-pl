@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2c1591e3d859bd768e39d0db461cc0402c57258
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3388e275385f94b4fcd9a1f0091de6ada2d85108
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406071"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Przewodnik: Pobieranie zestawów na żądanie z wdrożeniem ClickOnce interfejsu API przy użyciu narzędzia Projektant
 Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji zostaną pobrane po pierwszym uruchomieniu aplikacji. Jednak może być częścią aplikacji, które są używane w małej grupie użytkowników. W tym przypadku chcesz pobrać zestaw tylko wtedy, gdy tworzysz w jednym z jej typów. Następujące Instruktaż pokazuje, jak oznaczyć określone zestawy w aplikacji jako "opcjonalny", jak je pobrać za pomocą klasy i w <xref:System.Deployment.Application> przestrzenią nazw, gdy wymagane przez środowisko uruchomieniowe języka wspólnego.
@@ -40,7 +40,7 @@ Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/incl
 1. Utwórz nowy projekt Windows Forms w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Na **pliku** menu wskaż **Dodaj**, a następnie kliknij przycisk **nowy projekt**. Wybierz **biblioteki klas** projektu w oknie dialogowym, a następnie nadaj mu nazwę `ClickOnceLibrary`.
 
    > [!NOTE]
-   >  W języku Visual Basic, zaleca się zmodyfikowanie właściwości projektu, aby zmienić przestrzeń nazw korzenia dla tego projektu do `Microsoft.Samples.ClickOnceOnDemand` lub do wybranej przestrzeni nazw. Dla uproszczenia dwa projekty w tym przewodniku znajdują się w tej samej przestrzeni nazw.
+   > W języku Visual Basic, zaleca się zmodyfikowanie właściwości projektu, aby zmienić przestrzeń nazw korzenia dla tego projektu do `Microsoft.Samples.ClickOnceOnDemand` lub do wybranej przestrzeni nazw. Dla uproszczenia dwa projekty w tym przewodniku znajdują się w tej samej przestrzeni nazw.
 
 2. Zdefiniuj klasę o nazwie `DynamicClass` za pomocą pojedynczej właściwości o nazwie `Message`.
 
@@ -50,7 +50,7 @@ Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/incl
 3. Wybierz projekt Windows Forms w **Eksploratora rozwiązań**. Dodaj odwołanie do <xref:System.Deployment.Application> zestawu i projekt odwołuje się do `ClickOnceLibrary` projektu.
 
    > [!NOTE]
-   >  W języku Visual Basic, zaleca się zmodyfikowanie właściwości projektu, aby zmienić przestrzeń nazw korzenia dla tego projektu do `Microsoft.Samples.ClickOnceOnDemand` lub do wybranej przestrzeni nazw. Dla uproszczenia dwa projekty w tym przewodniku znajdują się w tej samej przestrzeni nazw.
+   > W języku Visual Basic, zaleca się zmodyfikowanie właściwości projektu, aby zmienić przestrzeń nazw korzenia dla tego projektu do `Microsoft.Samples.ClickOnceOnDemand` lub do wybranej przestrzeni nazw. Dla uproszczenia dwa projekty w tym przewodniku znajdują się w tej samej przestrzeni nazw.
 
 4. Kliknij prawym przyciskiem myszy formularz, kliknij przycisk **Wyświetl kod** z menu i dodaj następujące odwołania do formularza.
 

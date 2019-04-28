@@ -12,12 +12,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aa41d340aff0c56975d2af66031b5d0d2343a0ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1d6c0a8fd4110b2e75d634a8ecfd5e397bb459f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441141"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Ułatwienia dostępu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Oprócz funkcji ułatwień dostępu i narzędzi w Windows następujące funkcje 
 - Automatyczne uzupełnianie metody i parametrów
 
 > [!IMPORTANT]
->  Informacje przedstawione w tej sekcji dotyczy tylko użytkowników licencjonujących produkty firmy Microsoft w Stanach Zjednoczonych. Jeśli użytkownik uzyskał produkt poza Stanami Zjednoczonymi, można użyć karty informacji zależnej od firmy Microsoft, dołączonej do pakietu oprogramowania lub mogą odwiedzić [skontaktuj się z nami stronę Microsoft Support](http://support.microsoft.com/ContactUs) i kliknij przycisk  **Znajdź oddziałów firmy Microsoft na całym świecie** łącza (w pobliżu dolnej części strony). Ta strona zawiera listę numerów telefonów i adresów dla firmy Microsoft pomoc techniczną. Możesz skontaktować się z oddziałem, aby dowiedzieć się, czy typy produktów i usług, które są opisane w tej sekcji są dostępne w Twojej okolicy. Informacje o ułatwieniach dostępu są dostępne również w innych językach, między innymi w japońskim i francuskim.
+> Informacje przedstawione w tej sekcji dotyczy tylko użytkowników licencjonujących produkty firmy Microsoft w Stanach Zjednoczonych. Jeśli użytkownik uzyskał produkt poza Stanami Zjednoczonymi, można użyć karty informacji zależnej od firmy Microsoft, dołączonej do pakietu oprogramowania lub mogą odwiedzić [skontaktuj się z nami stronę Microsoft Support](http://support.microsoft.com/ContactUs) i kliknij przycisk  **Znajdź oddziałów firmy Microsoft na całym świecie** łącza (w pobliżu dolnej części strony). Ta strona zawiera listę numerów telefonów i adresów dla firmy Microsoft pomoc techniczną. Możesz skontaktować się z oddziałem, aby dowiedzieć się, czy typy produktów i usług, które są opisane w tej sekcji są dostępne w Twojej okolicy. Informacje o ułatwieniach dostępu są dostępne również w innych językach, między innymi w japońskim i francuskim.
 
  Więcej informacji znajduje się w następujących tematach:
 

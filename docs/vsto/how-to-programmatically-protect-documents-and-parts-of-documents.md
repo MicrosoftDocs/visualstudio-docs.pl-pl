@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ac93b71d67bc842b2498fbd4d017b17d9ddcf00c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 62d84dcb7ce22f1199d12a958250a465cd25a49c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412464"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Instrukcje: Programowe Włączanie ochrony dokumentów i części dokumentów
   Można dodać ochrony do dokumentów programu Microsoft Office Word, aby uniemożliwić użytkownikom wprowadzanie żadnych zmian w dokumencie.
@@ -29,7 +29,7 @@ ms.locfileid: "60062621"
  Niektóre obszary dokumentu można również oznaczyć jako wyjątki, aby określeni użytkownicy mogą edytować tylko te części dokumentu. Na przykład można chronić całego dokumentu, z wyjątkiem określonym zakładki. Możesz opcjonalnie dodać hasła, tak aby użytkownicy nie mogli usunąć ochronę dokumentu, chyba że hasło, które znają.
 
 > [!NOTE]
->  Poniższy przykład nie korzysta z ochrony haseł. Jednak warto wziąć pod uwagę przy użyciu hasła, podczas dodawania ochrony dokumentu. Aby uzyskać więcej informacji, zobacz przykład ochrony dokumentu w [Office development ― przykłady i wskazówki dotyczące](../vsto/office-development-samples-and-walkthroughs.md).
+> Poniższy przykład nie korzysta z ochrony haseł. Jednak warto wziąć pod uwagę przy użyciu hasła, podczas dodawania ochrony dokumentu. Aby uzyskać więcej informacji, zobacz przykład ochrony dokumentu w [Office development ― przykłady i wskazówki dotyczące](../vsto/office-development-samples-and-walkthroughs.md).
 
  Formanty zawartości umożliwia również ochrona części dokumentów. Aby uzyskać więcej informacji, zobacz [jak: Ochrona części dokumentów za pomocą formantów zawartości](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
 

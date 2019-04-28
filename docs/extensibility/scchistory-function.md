@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c22583890d476f6ada0838877360c1405e911db
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: d84de96181018858515bd74156f844ed6022f0a9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434612"
 ---
 # <a name="scchistory-function"></a>SccHistory, funkcja
 Funkcja ta wyświetla historię określonych plików.
@@ -80,7 +80,7 @@ SCCRTN SccHistory(
  Należy pamiętać, że w pewnych okolicznościach pliku sprawdzane mogą się zmieniać podczas wykonywania tego wywołania. Na przykład [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] polecenie history zapewnia możliwość pobrania starej wersji pliku. W takiej sytuacji zwraca wtyczki kontroli źródła `SCC_I_RELOAD` ostrzec IDE, że trzeba ponownie załadować plik.
 
 > [!NOTE]
->  Jeśli wtyczka do kontroli źródła nie obsługuje tej funkcji dla plików, można wyświetlić pliku historii pierwszego pliku.
+> Jeśli wtyczka do kontroli źródła nie obsługuje tej funkcji dla plików, można wyświetlić pliku historii pierwszego pliku.
 
 ## <a name="see-also"></a>Zobacz też
 - [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)

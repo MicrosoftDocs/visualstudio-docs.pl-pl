@@ -26,18 +26,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 17ca737e0796230b9af207bf2f203700676ac630
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e103b07b82d587ac00e2ff53e9ed7ea344267a85
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440339"
 ---
 # <a name="build-office-solutions"></a>Tworzenie rozwiązań pakietu Office
   Ogólnie rzecz biorąc kompilowanie i debugowanie projektów pakietu Office jest taka sama jak kompilowania i debugowania innych rodzajów projektów w programie Visual Studio, takich jak Windows Forms. W tematach w tej sekcji opisano różnice, które istnieją. Aby uzyskać ogólne informacje o sposobie tworzenia aplikacji, zobacz [skompilować i utworzyć w programie Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
 
 > [!NOTE]
->  Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.
+> Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.
 
 ## <a name="project-output-for-office-projects"></a>Dane wyjściowe projektu dla projektów pakietu Office
  Lokalizacja danych wyjściowych dla projektów pakietu Office jest *projectname*\bin\release lub *projectname*\bin\debug. Nie można przeprowadzić kompilacji do katalogu wdrażania.
@@ -56,7 +56,7 @@ ms.locfileid: "60078931"
 - Bazę danych programu (*PDB*) pliku.
 
 > [!NOTE]
->  W przypadku tworzenia rozwiązania poziomu dokumentu do lokalizacji zdalnej, zamiast komputera lokalnego, należy dodać w pełni kwalifikowaną ścieżkę do listy zaufanych lokalizacji w Centrum zaufania w aplikacji. Aby uzyskać więcej informacji, zobacz sekcję o nazwie udzielanie zaufania do dokumentów w [rozwiązań Secure Office](../vsto/securing-office-solutions.md).
+> W przypadku tworzenia rozwiązania poziomu dokumentu do lokalizacji zdalnej, zamiast komputera lokalnego, należy dodać w pełni kwalifikowaną ścieżkę do listy zaufanych lokalizacji w Centrum zaufania w aplikacji. Aby uzyskać więcej informacji, zobacz sekcję o nazwie udzielanie zaufania do dokumentów w [rozwiązań Secure Office](../vsto/securing-office-solutions.md).
 
 ### <a name="application-level-projects"></a>Projektów na poziomie aplikacji
  Podczas tworzenia dodatku narzędzi VSTO dla programów project w danych wyjściowych projektu obejmuje następujące elementy:

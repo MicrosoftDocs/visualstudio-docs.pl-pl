@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40217c1cfcc2c7ae946e36aadb7a251436023b0a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2be56d37ddcd1047e776df2652c7e874e260a806
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417099"
 ---
 # <a name="how-to-provide-a-service"></a>Instrukcje: Oferuje usługi
 Pakietu VSPackage oferuje usługi, które można użyć innych pakietów VSPackage. Do świadczenia usług, pakietu VSPackage należy zarejestrować usługę za pomocą programu Visual Studio, a następnie Dodaj usługę.
@@ -25,7 +25,7 @@ Pakietu VSPackage oferuje usługi, które można użyć innych pakietów VSPacka
  Aby uzyskać więcej informacji na temat usług, zobacz [usługa essentials](../extensibility/internals/service-essentials.md) .
 
 > [!NOTE]
->  Gdy pakietu VSPackage ma zostać zwolniony, Visual Studio czeka, aż wszystkie żądania dotyczące usług, które zapewnia pakietu VSPackage zostały dostarczone. Nie zezwalaj na nowe żądania dla tych usług. Nie należy jawnie wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> metody, aby można było odwołać usługi podczas zwalniania.
+> Gdy pakietu VSPackage ma zostać zwolniony, Visual Studio czeka, aż wszystkie żądania dotyczące usług, które zapewnia pakietu VSPackage zostały dostarczone. Nie zezwalaj na nowe żądania dla tych usług. Nie należy jawnie wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> metody, aby można było odwołać usługi podczas zwalniania.
 
 ## <a name="implement-a-service"></a>Implementowanie usługi
 
@@ -89,7 +89,7 @@ Pakietu VSPackage oferuje usługi, które można użyć innych pakietów VSPacka
      Ten atrybut rejestruje `SMyService` z programem Visual Studio.
 
     > [!NOTE]
-    >  Aby zarejestrować to usługa, która zastępuje inną usługę o takiej samej nazwie, użyj <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>. Uwaga dozwolony jest tylko jeden zastąpienie usługi.
+    > Aby zarejestrować to usługa, która zastępuje inną usługę o takiej samej nazwie, użyj <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>. Uwaga dozwolony jest tylko jeden zastąpienie usługi.
 
 ### <a name="add-a-service"></a>Dodaj usługę
 
@@ -117,7 +117,7 @@ Pakietu VSPackage oferuje usługi, które można użyć innych pakietów VSPacka
     ```
 
     > [!NOTE]
-    >  Program Visual Studio można odrzucić żądanie do świadczenia usług. Robi to jeśli innego pakietu VSPackage już zawiera usługę.
+    > Program Visual Studio można odrzucić żądanie do świadczenia usług. Robi to jeśli innego pakietu VSPackage już zawiera usługę.
 
 3. Teraz możesz pobrać usługę i użycie jej metod. W poniższym przykładzie przy użyciu usługi w inicjatorze, ale możesz uzyskać odpowiednią usługę dowolne miejsce do korzystania z usługi.
 

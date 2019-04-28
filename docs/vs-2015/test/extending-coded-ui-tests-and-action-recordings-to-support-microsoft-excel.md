@@ -8,12 +8,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4852dc5b65f00f7d298f5f1a15d39ff041022578
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 61c802ebca49c15a3a7baa785400f90621a27e9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416468"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Rozszerzanie zakodowanych testów interfejsu użytkownika i nagrywanie akcji obsługujących program Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Struktura testowania kodowane testy interfejsu użytkownika i nagrywania akcji n
   Pobierz próbkę z tego [wpis w blogu](http://go.microsoft.com/fwlink/?LinkID=185592).  
   
 > [!NOTE]
->  Przykład jest przeznaczony do użytku z programem Microsoft Excel 2010. Próbki mogą działać z innymi wersjami programu Microsoft Excel, ale nie jest obecnie obsługiwane.  
+> Przykład jest przeznaczony do użytku z programem Microsoft Excel 2010. Próbki mogą działać z innymi wersjami programu Microsoft Excel, ale nie jest obecnie obsługiwane.  
   
 ## <a name="details-about-the-sample"></a>Szczegółowe informacje o przykładzie  
  Poniższe sekcje zawierają informacje o przykładu i jego strukturę.  

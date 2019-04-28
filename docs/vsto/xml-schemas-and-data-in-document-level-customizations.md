@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb56d2f9b6d2d5c08956d48f4f53a46305d9fd26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eb8bc9b9d3149112517d893cd3a704826b6d92d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421695"
 ---
 # <a name="xml-schemas-and-data-in-document-level-customizations"></a>Schematy XML i dane dostosowywane na poziomie dokumentu
   **Ważne** informacji zawartych w tym temacie dotyczące programu Microsoft Word jest prezentowane wyłącznie do korzyści i korzystanie z innym osobom oraz organizacjom, którzy znajdują się poza w Stanach Zjednoczonych i ich terytoriach lub korzystających z lub tworzenie programy, korzystających z produktów Microsoft Word, które są licencjonowane przez firmę Microsoft przed 2010 stycznia, po usunięciu implementację funkcji określonej przez Microsoft związane z niestandardowy kod XML z programu Microsoft Word. Te informacje dotyczące programu Microsoft Word nie mogą być odczytywane lub używane przez osoby i organizacje w Stanach Zjednoczonych lub jego terytoria, którzy za pomocą lub opracowywanie programów uruchamianych na produkty Microsoft Word, które są licencjonowane przez firmę Microsoft, po 10 stycznia 2010 r. ; te produkty będą nie działa tak samo jako produkty licencjonowane przed tą datą lub kupić i licencjonowane do użycia poza Stanami Zjednoczonymi.
@@ -33,7 +33,7 @@ ms.locfileid: "60117932"
  Visual Studio udostępnia zamapowane elementy schematu w dostosowaniach na poziomie dokumentu jako formanty w modelu programowania. Dla programu Excel programu Visual Studio dodaje obsługę powiązanie kontrolek z danymi w bazach danych, usług sieci Web i obiektów. Dla programów Word i Excel programu Visual Studio dodaje obsługę okienka akcji, które mogą być używane do utworzenia większą wygodę dla rozwiązań za pomocą zamapowany schematu dokumentu. Aby uzyskać więcej informacji, zobacz [okienko akcji ― omówienie](../vsto/actions-pane-overview.md).
 
 > [!NOTE]
->  Nie można użyć wieloczęściowego schematów XML w rozwiązaniach programu Excel.
+> Nie można użyć wieloczęściowego schematów XML w rozwiązaniach programu Excel.
 
 ## <a name="objects-created-when-schemas-are-attached-to-excel-workbooks"></a>Obiekty tworzone podczas schematy są dołączone do skoroszytów programu Excel
  Po dołączeniu schematu do skoroszytu programu Visual Studio tworzy kilka obiektów i automatycznie dodaje je do projektu. Te obiekty nie powinny być usuwane przy użyciu narzędzi programu Visual Studio, ponieważ są one zarządzane przez program Excel. Aby je usunąć, Usuń zamapowane elementy z arkusza lub odłącz schematu przy użyciu narzędzi programu Excel.
@@ -52,13 +52,13 @@ ms.locfileid: "60117932"
 - BindingSource. Po utworzeniu <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> przez mapowanie elementu schematu niepowtarzający w arkuszu <xref:System.Windows.Forms.BindingSource> jest tworzony i <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> kontrolka jest powiązana z <xref:System.Windows.Forms.BindingSource>. Musi być powiązany <xref:System.Windows.Forms.BindingSource> do wystąpienia źródła danych, które pasuje do schematu mapowane do dokumentu, takiego jak wystąpienie wpisanego <xref:System.Data.DataSet> klasę, która została utworzona. Utwórz powiązanie, ustawiając <xref:System.Windows.Forms.BindingSource.DataSource%2A> i <xref:System.Windows.Forms.BindingSource.DataMember%2A> właściwości, które są widoczne w **właściwości** okna.
 
     > [!NOTE]
-    >  <xref:System.Windows.Forms.BindingSource> Nie został utworzony dla <xref:Microsoft.Office.Tools.Excel.ListObject> obiektów. Należy samodzielnie ręcznie powiązali <xref:Microsoft.Office.Tools.Excel.ListObject> ze źródłem danych, ustawiając <xref:System.Windows.Forms.BindingSource.DataSource%2A> i <xref:System.Windows.Forms.BindingSource.DataMember%2A> właściwości w **właściwości** okna.
+    > <xref:System.Windows.Forms.BindingSource> Nie został utworzony dla <xref:Microsoft.Office.Tools.Excel.ListObject> obiektów. Należy samodzielnie ręcznie powiązali <xref:Microsoft.Office.Tools.Excel.ListObject> ze źródłem danych, ustawiając <xref:System.Windows.Forms.BindingSource.DataSource%2A> i <xref:System.Windows.Forms.BindingSource.DataMember%2A> właściwości w **właściwości** okna.
 
 ### <a name="office-mapped-schemas-and-the-visual-studio-data-sources-window"></a>Office mapowane schematy i okna źródeł danych w usłudze Visual Studio
  Funkcje zamapowanego schematu pakietu Office i programu Visual Studio **źródeł danych** okna może pomóc w przedstawienie danych w arkuszu programu Excel, raportowanie i edytowania. W obu przypadkach można przeciągnąć elementy danych, na arkuszu programu Excel. Obie metody tworzenia formantów, które są danymi powiązanymi za pośrednictwem <xref:System.Windows.Forms.BindingSource> ze źródłem danych, takich jak <xref:System.Data.DataSet> lub usługi sieci web.
 
 > [!NOTE]
->  Kiedy mapujesz powtarzający się element schematu do arkusza programu Visual Studio tworzy <xref:Microsoft.Office.Tools.Excel.ListObject>. <xref:Microsoft.Office.Tools.Excel.ListObject> Automatycznie nie jest powiązany z danymi za pośrednictwem <xref:System.Windows.Forms.BindingSource>. Należy samodzielnie ręcznie powiązali <xref:Microsoft.Office.Tools.Excel.ListObject> ze źródłem danych, ustawiając <xref:System.Windows.Forms.BindingSource.DataSource%2A> i <xref:System.Windows.Forms.BindingSource.DataMember%2A> właściwości w **właściwości** okna.
+> Kiedy mapujesz powtarzający się element schematu do arkusza programu Visual Studio tworzy <xref:Microsoft.Office.Tools.Excel.ListObject>. <xref:Microsoft.Office.Tools.Excel.ListObject> Automatycznie nie jest powiązany z danymi za pośrednictwem <xref:System.Windows.Forms.BindingSource>. Należy samodzielnie ręcznie powiązali <xref:Microsoft.Office.Tools.Excel.ListObject> ze źródłem danych, ustawiając <xref:System.Windows.Forms.BindingSource.DataSource%2A> i <xref:System.Windows.Forms.BindingSource.DataMember%2A> właściwości w **właściwości** okna.
 
  W poniższej tabeli przedstawiono niektóre różnice między obiema metodami.
 

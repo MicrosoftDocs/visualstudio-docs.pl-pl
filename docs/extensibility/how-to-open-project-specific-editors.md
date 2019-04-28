@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11374ca0a65a5b430b819a9ef1bdf57f7434e923
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8482f2704fe81482d95c2c8e73ae6e8c8ffd272d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417138"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Instrukcje: Otwieranie edytorów specyficznych dla projektu
 Jeśli plik elementu otwierana przez projekt wewnętrznie jest powiązany z określonego edytora dla tego projektu, projekt musi otworzyć plik za pomocą edytora specyficznych dla projektu. Plik nie może być delegowane do środowiska IDE mechanizm wybierania edytora. Na przykład zamiast za pomocą edytora standardowego mapy bitowej służy tej opcji edytora specyficznych dla projektu do określenia Edytor mapa bitowa szczególnych, który rozpoznaje informacje zawarte w pliku, który jest unikatowy dla projektu.
@@ -29,7 +29,7 @@ Jeśli plik elementu otwierana przez projekt wewnętrznie jest powiązany z okre
 1. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> — metoda (`RDT_EditLock`) do określenia, czy plik (obiekt danych dokumentu), jest już otwarty.
 
     > [!NOTE]
-    >  Aby uzyskać więcej informacji na temat danych dokumentów i obiektów widoku dokumentu, zobacz [widok danych i dokumentu w edytorach niestandardowych dokumentu](../extensibility/document-data-and-document-view-in-custom-editors.md).
+    > Aby uzyskać więcej informacji na temat danych dokumentów i obiektów widoku dokumentu, zobacz [widok danych i dokumentu w edytorach niestandardowych dokumentu](../extensibility/document-data-and-document-view-in-custom-editors.md).
 
 2. Jeśli plik jest już otwarty, można go resurface przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> metody i określając wartość IDO_ActivateIfOpen dla `grfIDO` parametru.
 

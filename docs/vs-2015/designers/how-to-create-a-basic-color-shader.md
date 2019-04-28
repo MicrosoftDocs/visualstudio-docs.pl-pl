@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d6c3410468a53b978165dfcae228b71985fcbe51
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 59259d8186803d966e79f27012e6be6c22b47dd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414708"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Instrukcje: Tworzenie cieniowania koloru podstawowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ W tym dokumencie przedstawiono sposób użycia języka programu do cieniowania w
    Poniższej ilustracji ukończone programu do cieniowania programu graph i wersję zapoznawczą programu do cieniowania stosowane do modułu.  
   
 > [!NOTE]
->  Na ilustracji koloru pomarańczowego określono lepiej wykazać efekt programu do cieniowania.  
+> Na ilustracji koloru pomarańczowego określono lepiej wykazać efekt programu do cieniowania.  
   
  ![Wykres modułu cieniującego i jego wynik na 3&#45;modelu D](../designers/media/digit-flat-color-effect.png "cyfrę — stosowana jest stała — — efekt koloru")  
   

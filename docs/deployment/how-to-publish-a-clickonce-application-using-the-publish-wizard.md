@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5937a54c43cf972dcebb25c12cddf6b76b2cb4bc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2eac5778320b45b841cdff2c8d95f6a591386712
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406732"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Instrukcje: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji
 Aby udostępnić aplikację ClickOnce użytkownikom, możesz opublikować go do udziału plików lub ścieżki, serwer FTP lub nośnik wymienny. Aplikację można opublikować za pomocą Kreatora publikacji; dodatkowe właściwości związanych z publikowaniem są dostępne na **Publikuj** strony **projektanta projektu**. Aby uzyskać więcej informacji, zobacz [publikowania ClickOnce applications](../deployment/publishing-clickonce-applications.md).
@@ -80,7 +80,7 @@ Przed uruchomieniem Kreatora publikowania należy odpowiednio ustawić właściw
 4. Na **sposób będą użytkownicy instalować aplikację?** stronie, kliknij polecenie **dysku CD-ROM lub DVD-ROM**, a następnie kliknij przycisk **dalej**.
 
    > [!NOTE]
-   >  Jeśli chcesz, aby instalacja do automatycznego uruchamiania podczas dysku CD-ROM jest wstawiany do stacji, otwórz **Publikuj** strony w **projektanta projektu** i kliknij przycisk **opcje** przycisk, a następnie w **opcji publikowania** kreatora wybierz **dla instalacji z dysku CD, automatycznie Rozpocznij instalację po włożeniu dysku CD**.
+   > Jeśli chcesz, aby instalacja do automatycznego uruchamiania podczas dysku CD-ROM jest wstawiany do stacji, otwórz **Publikuj** strony w **projektanta projektu** i kliknij przycisk **opcje** przycisk, a następnie w **opcji publikowania** kreatora wybierz **dla instalacji z dysku CD, automatycznie Rozpocznij instalację po włożeniu dysku CD**.
 
 5. Jeśli dystrybucji aplikacji na dysku CD-ROM, można dostarczać aktualizacje z witryny sieci Web. W **gdzie aplikacja będzie sprawdzać aktualizacje?** stronie, wybierz opcję aktualizacji:
 
@@ -95,7 +95,7 @@ Przed uruchomieniem Kreatora publikowania należy odpowiednio ustawić właściw
     Stan publikowania jest wyświetlany w obszarze powiadomień stanu.
 
    > [!NOTE]
-   >  Po ukończeniu publikacji, należy użyć nagrywarki dysków CD lub nagrywarka DVD, aby skopiować pliki z lokalizacji określonej w kroku 3 do stacji CD-ROM lub DVD-ROM multimediów.
+   > Po ukończeniu publikacji, należy użyć nagrywarki dysków CD lub nagrywarka DVD, aby skopiować pliki z lokalizacji określonej w kroku 3 do stacji CD-ROM lub DVD-ROM multimediów.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -20,12 +20,12 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0c76ed1b24350a10891df69687080988603553fa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4945efddb91142ce04f5b117129428ec4a054fc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427257"
 ---
 # <a name="application-deployment-prerequisites"></a>Wstępnie wymagane składniki wdrażania aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Aby upewnić się, że Twoja aplikacja zostanie zainstalowana i wykonane pomyśl
   [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] może wykryć brakujących wymagań wstępnych i wymagań wstępnych można zainstalować za pomocą programu inicjującego. Aby uzyskać więcej informacji, zobacz [jak: Instalowanie wymagań wstępnych przy użyciu aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
->  Aby zmienić wartości w manifestach wygenerowanych przez narzędzia takie jak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i MageUI.exe, należy edytować manifest aplikacji w edytorze tekstów, a następnie ponownie podpisać manifesty aplikacji i wdrażania. Aby uzyskać więcej informacji, zobacz [jak: Ponowne podpisywanie aplikacji i manifestów wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+> Aby zmienić wartości w manifestach wygenerowanych przez narzędzia takie jak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i MageUI.exe, należy edytować manifest aplikacji w edytorze tekstów, a następnie ponownie podpisać manifesty aplikacji i wdrażania. Aby uzyskać więcej informacji, zobacz [jak: Ponowne podpisywanie aplikacji i manifestów wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
  Jeśli używasz programu Visual Studio i technologii ClickOnce do wdrażania aplikacji, pakietów programu inicjującego, które są wybrane domyślnie są zależne od wersji programu .NET Framework w rozwiązaniu. Jednak jeśli zmienisz .NET Framework w wersji docelowej, należy zaktualizować opcje w **wstępnie wymagane składniki, okno dialogowe** ręcznie.  
   

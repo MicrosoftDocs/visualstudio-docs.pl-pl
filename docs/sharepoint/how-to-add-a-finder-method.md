@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc61db134063c1e300a2620f611d62497fffe6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 49f494fa2c0fb35f7d2a65dc2ccb6b6d2d761cbe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428725"
 ---
 # <a name="how-to-add-a-finder-method"></a>Instrukcje: Dodawanie metody wyszukiwania
   Aby włączyć usługi łączności danych biznesowych (BDC) wyświetlić listę jednostek w części sieci web lub na liście, należy utworzyć *wyszukiwania* metody. Metoda wyszukiwania jest specjalne metody, które zwraca kolekcję wystąpień jednostek. Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -44,7 +44,7 @@ ms.locfileid: "56608074"
 4. Skonfiguruj deskryptor typu jako deskryptora typu kolekcji. Aby uzyskać więcej informacji o sposobach tworzenia deskryptora typu kolekcji, zobacz [jak: Określanie deskryptora typu parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
    > [!NOTE]
-   >  Nie trzeba wykonać ten krok, jeśli określonej metody wyszukiwania zostały dodane do jednostki. Visual Studio używa deskryptora typu, który zostały zdefiniowane w określonej metody wyszukiwania.
+   > Nie trzeba wykonać ten krok, jeśli określonej metody wyszukiwania zostały dodane do jednostki. Visual Studio używa deskryptora typu, który zostały zdefiniowane w określonej metody wyszukiwania.
 
 5. W **Eksploratora rozwiązań**, otwórz menu skrótów pliku kodu usługi, który został wygenerowany dla jednostki, a następnie wybierz **Wyświetl kod**. Aby uzyskać więcej informacji na temat pliku kodu usługi, zobacz [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md).
 
@@ -57,7 +57,7 @@ ms.locfileid: "56608074"
      Poniższy przykład zwraca kolekcję `Contact` jednostek przy użyciu danych z przykładowej bazy danych AdventureWorks programu SQL Server.
 
    > [!NOTE]
-   >  Zastąp wartość `ServerName` pole z nazwą serwera.
+   > Zastąp wartość `ServerName` pole z nazwą serwera.
 
     [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
     [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]

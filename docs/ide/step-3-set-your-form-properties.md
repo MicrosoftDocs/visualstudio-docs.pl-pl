@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a26d6f72cee0f2718e84a9e2b671c2be7977bbd5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 941bf3329b0724e19048afa6c93a9a9c3762d1c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430743"
 ---
 # <a name="step-3-set-your-form-properties"></a>Krok 3. Ustawianie właściwości formularza
 Następnie użyj **właściwości** okna, aby zmienić wygląd formularza.
@@ -27,7 +27,7 @@ Następnie użyj **właściwości** okna, aby zmienić wygląd formularza.
 2. Wybierz dowolne miejsce wewnątrz formularza **Form1** aby go zaznaczyć. Przyjrzyj się **właściwości** okna, które powinno teraz pokazywać właściwości dla formularza. Formularze mają różne właściwości. Na przykład można ustawić pierwszego planu i kolor tła, tekst tytułu, który pojawia się w górnej części formularza, rozmiar formularza i inne właściwości.
 
    > [!NOTE]
-   >  Jeśli **właściwości** okno nie jest wyświetlane, Zatrzymaj program, wybierając kwadratowy **Zatrzymaj debugowanie** znajdujący się na pasku narzędzi lub zamknij okno. Jeśli program został zatrzymany, i nadal nie widzisz **właściwości** okna, na pasku menu wybierz **widoku** > **okno właściwości**.
+   > Jeśli **właściwości** okno nie jest wyświetlane, Zatrzymaj program, wybierając kwadratowy **Zatrzymaj debugowanie** znajdujący się na pasku narzędzi lub zamknij okno. Jeśli program został zatrzymany, i nadal nie widzisz **właściwości** okna, na pasku menu wybierz **widoku** > **okno właściwości**.
 
 3. Po wybraniu formularza Znajdź **tekstu** właściwość **właściwości** okna. W zależności od tego, jak lista jest sortowana konieczne może być przewinięcie w dół. Wybierz **tekstu**, typ **Picture Viewer**, a następnie wybierz **Enter**.  Formularz powinien mieć teraz tekst **Picture Viewer** na pasku tytułu, a **właściwości** okno powinno wyglądać podobnie do poniższej ilustracji.
 
@@ -35,7 +35,7 @@ Następnie użyj **właściwości** okna, aby zmienić wygląd formularza.
    **właściwości** okna
 
    > [!NOTE]
-   >  Właściwości można porządkować według **kategorii** lub **alfabetycznie** widoku. Możesz przełączać się między tymi dwoma widokami, korzystając z przycisków w **właściwości** okna. W tym samouczku jest łatwiej znaleźć właściwości za pomocą **alfabetycznie** widoku.
+   > Właściwości można porządkować według **kategorii** lub **alfabetycznie** widoku. Możesz przełączać się między tymi dwoma widokami, korzystając z przycisków w **właściwości** okna. W tym samouczku jest łatwiej znaleźć właściwości za pomocą **alfabetycznie** widoku.
 
 4. Wróć do **Windows Forms Designer**. Wybierz formularz przeciągnij prawy dolny uchwyt, który jest białym kwadracikiem w dolnym rogu formularza i pojawia się w następujący sposób.
 

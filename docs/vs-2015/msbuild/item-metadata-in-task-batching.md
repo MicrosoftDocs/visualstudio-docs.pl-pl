@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 862e89ad775d28669ed21e3fe2d292aefb363a91
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 15a6eeea6ebf75513419cc763b2e29a6b6264391
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436794"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadane elementu w przetwarzaniu wsadowym zadań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ ms.locfileid: "59668197"
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] można podzielić wiele list elementów na partie na podstawie tych samych metadanych. Dzięki temu można łatwo podzielić listy różnych elementów partii do tworzenia wielu zestawów. Na przykład można mieć listy elementów pliku .cs podzielony na aplikacji i usługi batch i batch zestawu, listy elementów plików zasobów, które dzielą aplikacji usługi batch i batch zestawu. Przetwarzanie wsadowe można następnie użyć do przekazać te listy elementów do jednego zadania i tworzenie aplikacji i zestawu.  
   
 > [!NOTE]
->  Jeśli lista elementów, które są przekazywane do zadania nie zawiera elementów przy użyciu metadanych, której dotyczy odwołanie, każdy element na tej liście elementów jest przekazywany do każdej partii.  
+> Jeśli lista elementów, które są przekazywane do zadania nie zawiera elementów przy użyciu metadanych, której dotyczy odwołanie, każdy element na tej liście elementów jest przekazywany do każdej partii.  
   
  Poniższy przykład pokazuje, jak podzielić wielu listy elementów na partie na podstawie metadanych elementu. `ExampColl` i `ExampColl2` listy elementów każdego dzielą się na trzy partie na podstawie `Number` metadanych elementu. Obecność `%(Number)`w `Text` powiadamia atrybutu [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] , należy wykonać przetwarzanie wsadowe. `ExampColl` i `ExampColl2` listy elementów są podzielone na trzy partie na podstawie `Number` metadanych i każdej partii jest przekazywana oddzielnie do zadania.  
   

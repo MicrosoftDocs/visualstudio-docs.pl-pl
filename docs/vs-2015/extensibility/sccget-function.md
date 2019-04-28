@@ -12,12 +12,12 @@ ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3f8317405c52850eceb816b958718835c029c6c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2a5d5065ca427f0319174aa59e6b87d356816d4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432430"
 ---
 # <a name="sccget-function"></a>SccGet, funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ SCCRTN SccGet(
  `SCC_GET_ALL` Flagi mogą być łączone z `SCC_GET_RECURSIVE` flagę, aby pobrać wszystkie pliki w danym katalogów i wszystkie podkatalogi również.  
   
 > [!NOTE]
->  `SCC_GET_RECURSIVE` nigdy nie powinien być przekazywany bez `SCC_GET_ALL`. Należy również zauważyć, że jeśli katalogi C:\A i C:\A\B Pobierz zarówno przekazywane na rekursywny, C:\A\B i jego podkatalogach faktycznie pobierany dwa razy. Odpowiada za IDE — i nie źródło sterowania dodatku plug-in — Aby upewnić się, że duplikaty takich są przechowywane poza tablicy.  
+> `SCC_GET_RECURSIVE` nigdy nie powinien być przekazywany bez `SCC_GET_ALL`. Należy również zauważyć, że jeśli katalogi C:\A i C:\A\B Pobierz zarówno przekazywane na rekursywny, C:\A\B i jego podkatalogach faktycznie pobierany dwa razy. Odpowiada za IDE — i nie źródło sterowania dodatku plug-in — Aby upewnić się, że duplikaty takich są przechowywane poza tablicy.  
   
  Na koniec, nawet jeśli wtyczka kontroli źródła określony `SCC_CAP_GET_NOUI` flagi na inicjowanie, wskazujący, że nie ma interfejsu użytkownika dla polecenia Get, ta funkcja nadal może zostać wywołana przez środowisko IDE do pobierania plików. Flaga po prostu oznacza, że środowisko IDE nie wyświetla element menu Get, wtyczka nie powinien zapewniać wszelkich elementów interfejsu użytkownika.  
   

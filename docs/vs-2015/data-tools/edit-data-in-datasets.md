@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1549cf23f87a56f724a0b5e56b7b59f4fa88ac2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9962bb1dbeef089d409cbe100daa37777b45e67d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425385"
 ---
 # <a name="edit-data-in-datasets"></a>Edytowanie danych w zestawach danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Możesz edytować dane w tabelach danych tak, jak edytować dane w tabeli w dowo
      Ta metoda nie usuwa fizycznie rekordu. Zamiast tego oznacza rekord do usunięcia.  
   
     > [!NOTE]
-    >  Jeśli liczba własności <xref:System.Data.DataRowCollection>, wynikowa liczba zawiera rekordy, które zostały oznaczone do usunięcia. Aby uzyskać dokładne liczba rekordów, które nie są oznaczone do usunięcia, można pętli kolekcji patrząc <xref:System.Data.DataRow.RowState%2A> właściwości każdego rekordu. (Rekordy oznaczone do usunięcia mają <xref:System.Data.DataRow.RowState%2A> z <xref:System.Data.DataRowState>.) Można utworzyć widok danych zestawu danych, który filtry oparte na stanie wiersza i pobieranie właściwości z tego miejsca.  
+    > Jeśli liczba własności <xref:System.Data.DataRowCollection>, wynikowa liczba zawiera rekordy, które zostały oznaczone do usunięcia. Aby uzyskać dokładne liczba rekordów, które nie są oznaczone do usunięcia, można pętli kolekcji patrząc <xref:System.Data.DataRow.RowState%2A> właściwości każdego rekordu. (Rekordy oznaczone do usunięcia mają <xref:System.Data.DataRow.RowState%2A> z <xref:System.Data.DataRowState>.) Można utworzyć widok danych zestawu danych, który filtry oparte na stanie wiersza i pobieranie właściwości z tego miejsca.  
   
      Poniższy przykład pokazuje sposób wywoływania <xref:System.Data.DataRow.Delete%2A> metodę, aby oznaczyć pierwszy wiersz `Customers` tabeli jako usunięty:  
   

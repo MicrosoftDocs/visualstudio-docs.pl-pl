@@ -126,12 +126,12 @@ caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: f16859b3c879e2d3abb64105c50f8ec4934d17e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6d36b01ca84558d0d3d45251884e5598becfa1b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429195"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Dodawanie adnotacji do parametrów funkcji i zwracanych wartości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -318,7 +318,7 @@ W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji pro
   W poniższej tabeli dodatkowe podciągi są wstawiane do nazwę adnotacji, aby bardziej szczegółowo. znaczenie adnotacji.  Różne podciągi są `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, i `_to_`.  
   
 > [!IMPORTANT]
->  Jeśli interfejs, który jest dodawanie adnotacji do modelu COM, należy użyć formy COM tych adnotacji. Nie należy używać adnotacje COM za pomocą dowolnego typu interfejsu.  
+> Jeśli interfejs, który jest dodawanie adnotacji do modelu COM, należy użyć formy COM tych adnotacji. Nie należy używać adnotacje COM za pomocą dowolnego typu interfejsu.  
   
  **Adnotacje i opisów**  
   
@@ -474,7 +474,7 @@ W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji pro
      Parametr, pole lub wynik jest z zakresu (włącznie) z `low` do `hi`.  Odpowiednikiem `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` mający zastosowanie do adnotacjami obiektu wraz z odpowiednią wstępnie stanu lub stanu końcowego warunków.  
   
     > [!IMPORTANT]
-    >  Mimo że nazwy zawierają "in" i "out", semantyka `_In_` i `_Out_` czy **nie** dotyczy tych adnotacji.  
+    > Mimo że nazwy zawierają "in" i "out", semantyka `_In_` i `_Out_` czy **nie** dotyczy tych adnotacji.  
   
 - `_Pre_equal_to_(expr)`  
   

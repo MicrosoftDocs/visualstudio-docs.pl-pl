@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b71b092bcadef24e564b14dd215bc9c328aa8e7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d9170c6ed32c7a807af8c869ca9616db3bdff683
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430467"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Przewodnik: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu — część 2
   Po zdefiniowaniu niestandardowy typ elementu projektu programu SharePoint i skojarzyć go z szablonem elementu w programie Visual Studio, można również podać Kreatora szablonu. Kreator służy do zbierania informacji od użytkowników, używając szablonu można dodać nowe wystąpienie elementu projektu do projektu. Informacje zbierane, może służyć do zainicjowania elementu projektu.
@@ -34,7 +34,7 @@ ms.locfileid: "60081141"
 - Debugowanie i testowanie kreatora.
 
 > [!NOTE]
->  Możesz pobrać próbkę z [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) pokazujący sposób tworzenia działań niestandardowych do przepływu pracy.
+> Możesz pobrać próbkę z [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) pokazujący sposób tworzenia działań niestandardowych do przepływu pracy.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Aby wykonać ten Instruktaż, należy najpierw utworzyć rozwiązanie CustomActionProjectItem, wykonując [instruktażu: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
@@ -125,12 +125,12 @@ ms.locfileid: "60081141"
 2. W widoku XAML Zastąp bieżący XAML następujące XAML. XAML definiuje interfejs użytkownika, który zawiera nagłówek, kontrolki do określania zachowania akcję niestandardową i przycisków nawigacji w dolnej części okna.
 
     > [!NOTE]
-    >  Projekt będzie miał pewne błędy kompilacji, po dodaniu tego kodu. Te błędy znikną po dodaniu kodu w dalszych krokach.
+    > Projekt będzie miał pewne błędy kompilacji, po dodaniu tego kodu. Te błędy znikną po dodaniu kodu w dalszych krokach.
 
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    >  Okno, który jest tworzony w tym XAML jest tworzony na podstawie <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> klasy bazowej. Po dodaniu niestandardowe okno dialogowe WPF w programie Visual Studio, firma Microsoft zaleca, pochodzi z okna dialogowego z tej klasy mają spójnego stylów z innych oknach dialogowych w programie Visual Studio i uniknąć problemów, które mogłyby wystąpić z modalnych okien dialogowych. Aby uzyskać więcej informacji, zobacz [tworzenie i zarządzanie modalne okna dialogowe](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
+    > Okno, który jest tworzony w tym XAML jest tworzony na podstawie <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> klasy bazowej. Po dodaniu niestandardowe okno dialogowe WPF w programie Visual Studio, firma Microsoft zaleca, pochodzi z okna dialogowego z tej klasy mają spójnego stylów z innych oknach dialogowych w programie Visual Studio i uniknąć problemów, które mogłyby wystąpić z modalnych okien dialogowych. Aby uzyskać więcej informacji, zobacz [tworzenie i zarządzanie modalne okna dialogowe](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
 
 3. Jeśli tworzysz projekt języka Visual Basic, Usuń `ItemTemplateWizard` przestrzeni nazw z `WizardWindow` nazwy klasy w `x:Class` atrybutu `Window` elementu. Ten element jest w pierwszym wierszu XAML. Gdy wszystko będzie gotowe, pierwszy wiersz powinien przypominać następujący kod:
 
@@ -314,7 +314,7 @@ ms.locfileid: "60081141"
      Akcja niestandardowa zostaje spakowany i wdrożyć w witrynie programu SharePoint, określony przez **adres URL witryny** właściwości projektu i przeglądarki sieci web otworzy stronę domyślnej witryny.
 
     > [!NOTE]
-    >  Jeśli **wyłączenia debugowania skryptu** pojawi się okno dialogowe, wybierz **tak** przycisku.
+    > Jeśli **wyłączenia debugowania skryptu** pojawi się okno dialogowe, wybierz **tak** przycisku.
 
 2. W obszarze listy w witrynie programu SharePoint wybierz **zadania** łącza.
 
@@ -346,5 +346,5 @@ ms.locfileid: "60081141"
 - [Definiowanie niestandardowych typów elementów projektu SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Tworzenie szablonów elementów i szablonów projektu dla elementów projektu programu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Odwołanie do schematu szablonu Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [Instrukcje: Korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Instrukcje: korzystanie z kreatorów z szablonami projektów](../extensibility/how-to-use-wizards-with-project-templates.md)
 - [Identyfikatory i domyślne lokalizacje niestandardową akcję](http://go.microsoft.com/fwlink/?LinkId=181964)

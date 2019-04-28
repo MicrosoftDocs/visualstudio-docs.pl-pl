@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77fa9442289851aff91d8d9bfc55e581edfa774a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9ce2388dbf61ef3af524f0debc776891dca004f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436496"
 ---
 # <a name="ribbon-xml"></a>XML — Wstążka
   Element wstążki (XML) umożliwia dostosowywanie wstążki przy użyciu języka XML. Jeśli chcesz dostosowania wstążki w taki sposób, że nie jest obsługiwany przez element wstążki (Projektant graficzny), należy użyć elementu wstążki (XML). Porównanie co można zrobić z każdym elementem, zobacz [Wstążka ― omówienie](../vsto/Ribbon-overview.md).
@@ -60,7 +60,7 @@ ms.locfileid: "60117547"
 - Zdefiniuj metodę wywołania zwrotnego w klasie wstążki.
 
 > [!NOTE]
->  Program Outlook wymaga dodatkowego kroku. Aby uzyskać więcej informacji, zobacz [Dostosuj Wstążkę dla programu Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+> Program Outlook wymaga dodatkowego kroku. Aby uzyskać więcej informacji, zobacz [Dostosuj Wstążkę dla programu Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
  Aby wskazówki, który demonstruje sposób automatyzacja aplikacji z poziomu wstążki, zobacz [instruktażu: Tworzenie kart niestandardowych za pomocą XML wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).
 

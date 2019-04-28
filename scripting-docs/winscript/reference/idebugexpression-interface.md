@@ -13,18 +13,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 589c231afbc149c4eeface784d3cdbd43c4e5e40
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 1757317e9ab148b508bfed95107b5c3b3369b598
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58156349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430027"
 ---
 # <a name="idebugexpression-interface"></a>Interfejs IDebugExpression
 Reprezentuje asynchronicznie obliczane wyrażenie. Aparaty skryptów zwykle implementują ten interfejs. Debuger IDE zazwyczaj używa tego interfejsu do włączenia okna natychmiastowego wykonania lub okno czujki.  
   
 > [!NOTE]
->  `IDebugExpression` Interfejs jest dostępny tylko z ramki stosu.  
+> `IDebugExpression` Interfejs jest dostępny tylko z ramki stosu.  
   
  Oprócz metod odziedziczone `IUnknown`, `IDebugExpression` interfejsu udostępnia następujące metody.  
   

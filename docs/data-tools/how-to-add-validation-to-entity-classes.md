@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ce3658f93df11b83f89e89931d03f35b0fa801a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b91fc7fb356ebd0db4a0bd7960ac060e7d152ec1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402845"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Instrukcje: Dodawanie walidacji do klas jednostek
 *Sprawdzanie poprawności* klas jednostek jest procesem potwierdzania, że wartości wprowadzone w obiektach danych są zgodne z ograniczeniami w schemacie obiektu, a także zasadami ustanowionymi dla aplikacji. Sprawdzanie poprawności danych, aby wysłać aktualizacje do podstawowej bazy danych jest dobrą praktyką, która zmniejsza błędy. Zmniejsza to także potencjalną liczbę rund między aplikacją a bazą danych.
@@ -24,7 +24,7 @@ ms.locfileid: "60070241"
  [LINQ to SQL tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) dostarcza metod częściowych, które umożliwiają użytkownikom Rozszerz kod wygenerowany przez projektanta, który jest uruchamiany podczas operacji wstawiania, aktualizacji i usuwa pełną jednostek, a także podczas i po poszczególnych kolumn zmiany.
 
 > [!NOTE]
->  Ten temat zawiera podstawowe kroki Dodawanie walidacji do klas jednostek za pomocą **O/R Designer**. Ponieważ może być trudne do tych kroków ogólny bez odwołujące się do klasy określonej jednostki, znajduje się przewodnik, który korzysta z rzeczywistych danych.
+> Ten temat zawiera podstawowe kroki Dodawanie walidacji do klas jednostek za pomocą **O/R Designer**. Ponieważ może być trudne do tych kroków ogólny bez odwołujące się do klasy określonej jednostki, znajduje się przewodnik, który korzysta z rzeczywistych danych.
 
 ## <a name="add-validation-for-changes-to-the-value-in-a-specific-column"></a>Dodawanie sprawdzania poprawności zmian do wartości w określonej kolumnie
  Ta procedura pokazuje sposób sprawdzania poprawności danych, po zmianie wartości w kolumnie. Ponieważ Weryfikacja odbywa się wewnątrz definicji klasy (zamiast interfejsu użytkownika), jest zgłaszany wyjątek, jeśli wartość powoduje, że weryfikacja nie powiedzie się. Implementuje obsługę błędów dla kodu w aplikacji, który podejmie próbę zmiany wartości w kolumnach.
@@ -75,7 +75,7 @@ ms.locfileid: "60070241"
  Oprócz sprawdzania wartości podczas wprowadzania zmian, możesz również walidować dane podczas próby aktualizacji klasy całą jednostkę. Sprawdzanie poprawności podczas próby aktualizacji umożliwia porównanie wartości w wielu kolumnach, jeśli reguły biznesowe tego wymagać. Poniższa procedura pokazuje, jak sprawdzania poprawności, gdy podejmowana jest próba aktualizacja klasy całą jednostkę.
 
 > [!NOTE]
->  Kod sprawdzania poprawności na zakończenie klas jednostek aktualizacji jest wykonywana w części <xref:System.Data.Linq.DataContext> klasy (a nie w klasie częściowej klasy określonej jednostce).
+> Kod sprawdzania poprawności na zakończenie klas jednostek aktualizacji jest wykonywana w części <xref:System.Data.Linq.DataContext> klasy (a nie w klasie częściowej klasy określonej jednostce).
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Aby sprawdzić poprawność danych podczas aktualizacji do klasy jednostki
 

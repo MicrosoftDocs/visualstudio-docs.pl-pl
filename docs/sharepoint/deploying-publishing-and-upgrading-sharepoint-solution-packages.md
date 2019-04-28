@@ -16,18 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 093016b3924d7882901a2b2c1bda060571d5bff4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a49ad82cc6cbb2eef8a8746b2c94575925ab1ddd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436736"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Wdrażanie, publikowanie oraz aktualizowanie pakietów rozwiązania SharePoint
   Po opracowywania rozwiązania programu SharePoint w programie Visual Studio, możesz wdrożyć jego pliku pakietu (wsp) na lokalnym serwerze programu SharePoint lub opublikować ją w lokalnym lub zdalnym serwerem programu SharePoint. Jeśli pliki są wdrożone, można dostosować, jak wdrożonych plików pakietu (wsp).
 
 > [!NOTE]
->  Obecnie tylko rozwiązania w trybie piaskownicy mogą być publikowane do serwerów zdalnych programu SharePoint. Aby uzyskać więcej informacji, zobacz [uwagi dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md).
+> Obecnie tylko rozwiązania w trybie piaskownicy mogą być publikowane do serwerów zdalnych programu SharePoint. Aby uzyskać więcej informacji, zobacz [uwagi dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md).
 
 ## <a name="deploy-publish-and-upgrade"></a>Wdrażanie, publikowanie oraz aktualizowanie
  *Wdrażanie* odwołuje się do kopiowania pliku rozwiązania programu SharePoint, utworzony na podstawie projektu programu SharePoint w programie Visual Studio do hosta lokalnego. W wdrożonym rozwiązaniem należy skonfigurować kroków wdrażania, takie jak odtwarzanie puli usług Internet Information Services (IIS), aktywowanie rozwiązania po wdrożeniu i tak dalej. Aby wdrożyć, użyj **Wdróż** polecenie **kompilacji** menu. Aby uzyskać więcej informacji, zobacz [jak: Edytowanie konfiguracji wdrażania SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) i [jak: Wdrażanie oraz publikowanie rozwiązania SharePoint w witrynie programu SharePoint w lokalnej](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).

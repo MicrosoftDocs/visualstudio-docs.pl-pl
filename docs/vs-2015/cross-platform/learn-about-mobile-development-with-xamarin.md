@@ -6,12 +6,12 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 346cc2b68193a72d532ba0542cc406e4afa75234
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d709dc2b5262f4fbad341b0b77d45a90b138ed6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443984"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Informacje dotyczące programowania mobilnego za pomocą platformy Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -19,9 +19,9 @@ ms.locfileid: "60097391"
 Ten temat kieruje do materiału Przegląd, który pomoże Ci zrozumieć, opracowywanie aplikacji mobilnych dla wielu platform za pomocą platformy Xamarin. Jeśli nie zainstalowano jeszcze programu Visual Studio i Xamarin, uruchom [Instalator i instalacja](../cross-platform/setup-and-install.md) procesu po pierwsze, następnie wróć tutaj i pracować za pośrednictwem tych zasobów, gdy instalatory są uruchomione.  
   
 > [!NOTE]
->  Jeśli nie określono inaczej, zalecamy początkowo odczytu tylko te strony połączone bezpośrednio w tym miejscu i nie przedstawicielstwach stron. Jeśli proces instalacji jest nadal uruchomione po ukończeniu tej listy, możesz przejść wstecz i Poznaj dodatkowe tematy.  
+> Jeśli nie określono inaczej, zalecamy początkowo odczytu tylko te strony połączone bezpośrednio w tym miejscu i nie przedstawicielstwach stron. Jeśli proces instalacji jest nadal uruchomione po ukończeniu tej listy, możesz przejść wstecz i Poznaj dodatkowe tematy.  
 >   
->  Także swobodnie zapoznaj się z tematami, oznaczone jako "Essentials" i wróć do tematów "Bardziej zgłębić temat" później.  
+> Także swobodnie zapoznaj się z tematami, oznaczone jako "Essentials" i wróć do tematów "Bardziej zgłębić temat" później.  
   
 ## <a name="essentials-introduction-to-xamarin"></a>Essentials: Wprowadzenie do platformy Xamarin  
  *10-20 minut*  

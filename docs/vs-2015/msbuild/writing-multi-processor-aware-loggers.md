@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ec8cefeaf005c17ecb09d109c161b5cbae3dc03a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0d2eaf41ac66cd1bdf680145bef43b17cc29a505
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425882"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Zapisywanie rejestratorów uwzględniających wiele procesorów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.
 ```  
   
 > [!NOTE]
->  Znak gwiazdki (*) muszą być rozdzielone nazwy dwóch rejestratora w `/dl` przełącznika.  
+> Znak gwiazdki (*) muszą być rozdzielone nazwy dwóch rejestratora w `/dl` przełącznika.  
   
  Za pomocą ConfigurableForwardingLogger przypomina przy użyciu innych rejestratora (zgodnie z opisem w [uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)), z tą różnicą, że możesz dołączyć rejestratora ConfigurableForwardingLogger zamiast typowej [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] i rejestratora Określ jako parametry zdarzeń, które chcesz ConfigurableForwardingLogger w celu przekazania ich węźle centralnym.  
   

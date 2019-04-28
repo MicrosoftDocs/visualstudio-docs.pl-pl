@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ff4faf3fdd6bd4b9398e3448a63e4c6061d79cfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 503f97d1530f8d22184f42a2452046782a997c18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432998"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Pakiety języka interfejsu użytkownika (LIP) firmy Microsoft a program Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Za pomocą pakietu interfejsu Windows Language (LIP), można zainstalować Windo
  Visual Studio korzysta z pakietu językowego ujednoliconego. Aby zainstalować więcej niż jedną wersję językową tych produktów, należy najpierw zainstalować produkt z pełną obsługą języka, a następnie zainstaluj jeden lub więcej pakietów językowych.
 
 > [!NOTE]
->  Program Visual Studio nie obsługuje instalowanie wielu wersji językowych produktu z pełną obsługą języka na tym samym komputerze. Po zainstalowaniu jeden produkt z pełną obsługą języka, należy dodać wersje językowe przy użyciu pakietów językowych. Nadal można zainstalować wiele produktów pełną obsługą języka w wersji Express na tym samym komputerze.
+> Program Visual Studio nie obsługuje instalowanie wielu wersji językowych produktu z pełną obsługą języka na tym samym komputerze. Po zainstalowaniu jeden produkt z pełną obsługą języka, należy dodać wersje językowe przy użyciu pakietów językowych. Nadal można zainstalować wiele produktów pełną obsługą języka w wersji Express na tym samym komputerze.
 
 ### <a name="support-for-code-pages"></a>Obsługa stron kodowych
  Niektóre narzędzia programu Visual Studio nie są wyświetlane tekst poprawnie, gdy tekst zawiera znaki, które nie znajdują się w bieżącej stronie kodowej. Zamiast tego są wyświetlane znaki zapytania lub tekstu jest uszkodzony. Uwzględnione są następujące narzędzia lub obszarów:
@@ -76,7 +76,7 @@ Za pomocą pakietu interfejsu Windows Language (LIP), można zainstalować Windo
 1. Kliknij przycisk **Start**, kliknij przycisk **Panelu sterowania**, a następnie otwórz **Opcje regionalne i językowe** (lub **Region** w [!INCLUDE[win8](../includes/win8-md.md)]).
 
     > [!NOTE]
-    >  Musi być administratorem na komputerze, wykonaj następujące kroki.
+    > Musi być administratorem na komputerze, wykonaj następujące kroki.
 
 2. Kliknij przycisk **zaawansowane** kartę.
 
@@ -88,7 +88,7 @@ Za pomocą pakietu interfejsu Windows Language (LIP), można zainstalować Windo
  Podczas instalowania wielu wersji językowych [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] na tym samym komputerze [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interfejsu użytkownika, wartość domyślna to **taki sam jak Microsoft Windows**. To ustawienie wskazuje, że [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wyświetli tekst interfejsu użytkownika w języku, który jest określony jako język wyświetlania systemu operacyjnego.
 
 > [!NOTE]
->  Jeśli program Visual Studio jest skonfigurowany do używania **taki sam jak Microsoft Windows**i dopasowywania pakiet językowy programu Visual Studio nie jest zainstalowany, program Visual Studio będzie używać języka pierwszej instalacji programu Visual Studio.
+> Jeśli program Visual Studio jest skonfigurowany do używania **taki sam jak Microsoft Windows**i dopasowywania pakiet językowy programu Visual Studio nie jest zainstalowany, program Visual Studio będzie używać języka pierwszej instalacji programu Visual Studio.
 
 #### <a name="to-set-the-language-that-is-used-for-the-ui-text-in-visual-studio"></a>Aby ustawić język, który jest używany tekst interfejsu użytkownika w programie Visual Studio
 

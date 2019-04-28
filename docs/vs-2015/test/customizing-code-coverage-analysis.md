@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 404192923d25e3eccc0bb40064569bec3e6c6cec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416644"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Dostosowywanie analizy pokrycia kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ Domyślnie narzędzie Visual Studio Code Coverage analizuje wszystkie zestawy ro
 ```  
   
 > [!WARNING]
->  Rozpoznawanie symboli może potrwać, szczególnie przy używaniu zdalnej lokalizacji pliku z wieloma zestawami. W związku z tym należy wziąć pod uwagę kopiowanie zdalnych plików .pdb do tej samej lokalizacji lokalnej co pliki binarne (.dll i .exe).  
+> Rozpoznawanie symboli może potrwać, szczególnie przy używaniu zdalnej lokalizacji pliku z wieloma zestawami. W związku z tym należy wziąć pod uwagę kopiowanie zdalnych plików .pdb do tej samej lokalizacji lokalnej co pliki binarne (.dll i .exe).  
   
 ### <a name="excluding-and-including"></a>Uwzględnianie i wykluczanie  
  Określone zestawy można wykluczyć z analizy pokrycia kodu. Na przykład:  
@@ -134,7 +134,7 @@ Domyślnie narzędzie Visual Studio Code Coverage analizuje wszystkie zestawy ro
 ```  
   
 > [!WARNING]
->  Jeśli występuje błąd w wyrażeniu regularnym, taki jak nawiasy niedopasowane lub o niezmienionym znaczeniu, analiza pokrycia kodu nie będzie działać.  
+> Jeśli występuje błąd w wyrażeniu regularnym, taki jak nawiasy niedopasowane lub o niezmienionym znaczeniu, analiza pokrycia kodu nie będzie działać.  
   
 ### <a name="other-ways-to-include-or-exclude-elements"></a>Inne sposoby, aby dołączyć lub wykluczyć elementy  
  Zobacz [próbki na końcu tego tematu](#sample) przykłady.  

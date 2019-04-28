@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3434e9baaeb483e60087aec1b8536108c8af4471
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 1acbc364e9ee2a5a4911564eb6d2c7d4c34de458
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58157766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415999"
 ---
 # <a name="windows-script-engines"></a>Aparaty skryptów systemu Windows
 Aby zaimplementować aparatu programu Microsoft Windows Script, należy utworzyć obiekt OLE COM, który obsługuje następujące interfejsy.  
@@ -31,7 +31,7 @@ Aby zaimplementować aparatu programu Microsoft Windows Script, należy utworzy�
 |IPersist *|Zapewnia obsługę trwałości. Wymagana jest implementacja co najmniej jeden z następujących interfejsów, jeśli [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) nie jest zaimplementowana.<br /><br /> IPersistStorage: Zapewnia obsługę danych = {url} atrybut w tagu obiektu.<br /><br /> IPersistStreamInit: Dodano obsługę taka sama jak `IPersistStorage` oraz danych = "strumień zakodowany w formacie ciągu bajtów" atrybut w tagu obiektu.<br /><br /> IPersistPropertyBag: Zapewnia obsługę PARAMETR = atrybut w tagu obiektu.|  
   
 > [!NOTE]
->  Istnieje możliwość, że aparat skryptów będą nigdy nie zobowiązane do zapisania lub przywrócenia stanu skrypt, za pośrednictwem `IPersist*`. Zamiast tego [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) jest używany przez wywołanie metody [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) Aby utworzyć skrypt pusta, następnie skryptlety są dodawane i podłączone do zdarzenia przy użyciu [IActiveScriptParse:: AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md) i ogólne kod dodaje się [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md). Niemniej jednak silnik wykonywania skryptów w pełni zaimplementować co najmniej jeden `IPersist*` interfejsu (najlepiej `IPersistStreamInit`), ponieważ inne aplikacje hosta mogą próbować wprowadzić je wykorzystać.  
+> Istnieje możliwość, że aparat skryptów będą nigdy nie zobowiązane do zapisania lub przywrócenia stanu skrypt, za pośrednictwem `IPersist*`. Zamiast tego [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) jest używany przez wywołanie metody [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) Aby utworzyć skrypt pusta, następnie skryptlety są dodawane i podłączone do zdarzenia przy użyciu [IActiveScriptParse:: AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md) i ogólne kod dodaje się [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md). Niemniej jednak silnik wykonywania skryptów w pełni zaimplementować co najmniej jeden `IPersist*` interfejsu (najlepiej `IPersistStreamInit`), ponieważ inne aplikacje hosta mogą próbować wprowadzić je wykorzystać.  
   
  W poniższych sekcjach opisano Implementowanie to aparat obsługi skryptów Windows bardziej szczegółowo.  
   

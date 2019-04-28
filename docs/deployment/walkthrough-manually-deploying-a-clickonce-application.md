@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d482b6e2b0e2cdd9fce553a1cb11b1b27e9467
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 60173bd8a48b067757bbccfad42a2feaf5633082
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405792"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Przewodnik: Ręczne wdrażanie aplikacji ClickOnce
 Jeśli nie możesz użyć programu Visual Studio, aby wdrożyć swoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji lub jeśli trzeba korzystać z zaawansowanego wdrożenia funkcji, takich jak wdrażanie zaufanych aplikacji, należy użyć *Mage.exe* narzędzie wiersza polecenia, aby utworzyć swoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestów. W tym przewodniku opisano sposób tworzenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia przy użyciu wiersza polecenia wersji (*Mage.exe*) lub wersji graficznego (*MageUI.exe*) generowania manifestu i Narzędzia do edycji.
@@ -54,7 +54,7 @@ Jeśli nie możesz użyć programu Visual Studio, aby wdrożyć swoje [!INCLUDE[
    Utwórz wdrożenie za pomocą certyfikatu Authenticode. Za pomocą programu Visual Studio można wygenerować certyfikat testowy *MageUI.exe*, lub *MakeCert.exe* i *Pvk2Pfx.exe* narzędzia lub uzyskać certyfikat z certyfikatu Urzędu certyfikacji. Wybranie opcji użycia zaufanego wdrożenia aplikacji, należy również wykonać jednorazowe Instalacja certyfikatu na wszystkich komputerach klienckich. Aby uzyskać więcej informacji, zobacz [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).
 
   > [!NOTE]
-  >  Możesz też zarejestrować wdrożenia przy użyciu certyfikatów CNG, który można uzyskać od urzędu certyfikacji.
+  > Możesz też zarejestrować wdrożenia przy użyciu certyfikatów CNG, który można uzyskać od urzędu certyfikacji.
 
 - Upewnij się, czy aplikacja nie ma manifestu za pomocą informacji o funkcji Kontrola konta użytkownika.
 
@@ -73,7 +73,7 @@ Jeśli nie możesz użyć programu Visual Studio, aby wdrożyć swoje [!INCLUDE[
 2. W katalogu wdrażania, który został utworzony Utwórz podkatalog wersji. Jeśli po raz pierwszy, aplikacja jest wdrażana, nazwę podkatalogu wersji **1.0.0.0**.
 
    > [!NOTE]
-   >  Wersja wdrożenie może się różnić od wersji aplikacji.
+   > Wersja wdrożenie może się różnić od wersji aplikacji.
 
 3. Skopiuj wszystkie pliki aplikacji do podkatalogu wersji, w tym pliki wykonywalne, zestawy, zasobów i plików danych. Jeśli to konieczne, możesz utworzyć dodatkowe podkatalogów, które zawierają dodatkowe pliki.
 
@@ -86,7 +86,7 @@ Jeśli nie możesz użyć programu Visual Studio, aby wdrożyć swoje [!INCLUDE[
    ```
 
    > [!NOTE]
-   >  Pamiętaj uwzględnić znaku kropki (.) po `-FromDirectory` opcja, która wskazuje bieżący katalog. Jeśli nie zostanie uwzględniony kropki (.), należy określić ścieżkę do plików aplikacji.
+   > Pamiętaj uwzględnić znaku kropki (.) po `-FromDirectory` opcja, która wskazuje bieżący katalog. Jeśli nie zostanie uwzględniony kropki (.), należy określić ścieżkę do plików aplikacji.
 
 6. Zaloguj się w manifeście aplikacji za pomocą certyfikatu Authenticode. Zastąp *mycert.pfx* ze ścieżką do pliku certyfikatu. Zastąp *haseł* przy użyciu hasła dla pliku certyfikatu.
 
@@ -121,7 +121,7 @@ Jeśli nie możesz użyć programu Visual Studio, aby wdrożyć swoje [!INCLUDE[
 2. W katalogu wdrażania, który został utworzony Utwórz podkatalog wersji. Jeśli po raz pierwszy, aplikacja jest wdrażana, nazwę podkatalogu wersji **1.0.0.0**.
 
    > [!NOTE]
-   >  Wersja wdrożenia prawdopodobnie różni się od wersji aplikacji.
+   > Wersja wdrożenia prawdopodobnie różni się od wersji aplikacji.
 
 3. Skopiuj wszystkie pliki aplikacji do podkatalogu wersji, w tym pliki wykonywalne, zestawy, zasobów i plików danych. Jeśli to konieczne, możesz utworzyć dodatkowe podkatalogów, które zawierają dodatkowe pliki.
 

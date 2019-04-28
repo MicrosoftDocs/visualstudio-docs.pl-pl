@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a614a90fe6388d9189d2b63e02f9bf63f83f0b7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e949dd566a065b266bfdbf8eae36a099fa229ef7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403416"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Powiązanie danych WPF za pomocą LINQ to XML — Przegląd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ W tym temacie przedstawiono funkcje powiązania danych dynamicznych w <xref:Syst
  Właściwości dynamiczne są specjalne właściwości czasu wykonywania, które duplikują funkcjonalność istniejących metod i właściwości w <xref:System.Xml.Linq.XAttribute> i <xref:System.Xml.Linq.XElement> klasy. Zostały one dodane do tych klas wyłącznie w celu umożliwienia im na działanie jako źródła danych dynamicznych dla WPF. Aby spełnić te wymagania, te właściwości dynamicznych zaimplementować powiadomienia o zmianach. Szczegółową dokumentację dla tych właściwości dynamicznych znajduje się w następnej sekcji [XML właściwości dynamiczne LINQ to](../designers/linq-to-xml-dynamic-properties.md).  
   
 > [!NOTE]
->  Znaleziono wiele standardowych właściwości publicznej, w różnych klas w <xref:System.Xml.Linq> przestrzeni nazw może służyć do wiązania danych jednorazowego. Należy jednak pamiętać, że źródłowego ani docelowego nie zostaną dynamicznie zaktualizowane zgodnie z tym systemem.  
+> Znaleziono wiele standardowych właściwości publicznej, w różnych klas w <xref:System.Xml.Linq> przestrzeni nazw może służyć do wiązania danych jednorazowego. Należy jednak pamiętać, że źródłowego ani docelowego nie zostaną dynamicznie zaktualizowane zgodnie z tym systemem.  
   
 ### <a name="accessing-dynamic-properties"></a>Uzyskiwanie dostępu do właściwości dynamicznej  
  Właściwości dynamiczne w <xref:System.Xml.Linq.XAttribute> i <xref:System.Xml.Linq.XElement> klasy nie można uzyskać dostępu, takich jak standardowe właściwości. Na przykład w CLR zgodne języków, takich jak C#, mogą nie może być:  

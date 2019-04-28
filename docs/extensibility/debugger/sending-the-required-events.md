@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcff0d559894e8d4ba322e4e8ebab71000a3809e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 45a65259c88eb9e8e946aa226eecc7cffa053552
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415605"
 ---
 # <a name="send-the-required-events"></a>Wysyłanie wymaganych zdarzeń
 Użyj tej procedury związane z przesyłaniem zdarzeń wymagane.
@@ -34,7 +34,7 @@ Użyj tej procedury związane z przesyłaniem zdarzeń wymagane.
 5. Jeśli nie uruchomiono aplikacji przeznaczonej do debugowania, Wyślij [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) obiekt zdarzenia do SDM, gdy pierwsza instrukcja kodu w architekturze środowiska wykonawczego ma zostać wykonana. To zdarzenie jest zawsze zdarzeń zatrzymywania. Po przejściu do sesji debugowania, IDE zatrzymuje się na to zdarzenie.
 
 > [!NOTE]
->  Wiele języków użycia inicjatorów globalnych lub zewnętrznymi, wstępnie skompilowanych funkcji (od biblioteki CRT lub _Main) na początku swój kod. Jeśli język programu debugowania zawierają dowolne z tych typów elementów przed punktu wejścia początkowej, ten kod jest uruchamiany i jest wysyłane zdarzenie punktu wejścia po użytkownik punkt wejścia, takich jak **głównego** lub `WinMain`, jest osiągnięta.
+> Wiele języków użycia inicjatorów globalnych lub zewnętrznymi, wstępnie skompilowanych funkcji (od biblioteki CRT lub _Main) na początku swój kod. Jeśli język programu debugowania zawierają dowolne z tych typów elementów przed punktu wejścia początkowej, ten kod jest uruchamiany i jest wysyłane zdarzenie punktu wejścia po użytkownik punkt wejścia, takich jak **głównego** lub `WinMain`, jest osiągnięta.
 
 ## <a name="see-also"></a>Zobacz także
 - [Włączanie programu do debugowania](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6b060f35abf79d76e17f847e6b4b296c253a4b30
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 437e541fab1559c65c410d94a8911c158aa3592e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438935"
 ---
 # <a name="memory-usage"></a>Użycie pamięci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,18 +34,18 @@ Podczas debugowania za pomocą zintegrowane z debugerem umożliwia znajdowanie p
   Można również użyć narzędzia pamięci poza debugerem. Zobacz [użycie pamięci bez debugowania](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0).  
   
 > [!NOTE]
->  **Niestandardowe obsługi alokatora** profiler pamięci natywnej polega na zbieraniu alokacji [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) dane zdarzenia wyemitowane przez w czasie wykonywania.  Puli buforów w CRT i zestaw Windows SDK ma została oznaczona na poziomie źródła przechwycić swoje dane alokacji.  Jeśli piszesz własnego buforów niż wszystkie funkcje, które zwracają wskaźnik do nowo przydzielonego stosu pamięci może być dekorowane za pomocą [__declspec](http://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)(alokatora), jak pokazano w następującym przykładzie myMalloc:  
+> **Niestandardowe obsługi alokatora** profiler pamięci natywnej polega na zbieraniu alokacji [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) dane zdarzenia wyemitowane przez w czasie wykonywania.  Puli buforów w CRT i zestaw Windows SDK ma została oznaczona na poziomie źródła przechwycić swoje dane alokacji.  Jeśli piszesz własnego buforów niż wszystkie funkcje, które zwracają wskaźnik do nowo przydzielonego stosu pamięci może być dekorowane za pomocą [__declspec](http://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)(alokatora), jak pokazano w następującym przykładzie myMalloc:  
 >   
->  `__declspec(allocator) void* myMalloc(size_t size)`  
+> `__declspec(allocator) void* myMalloc(size_t size)`  
   
 ## <a name="analyze-memory-use-with-the-debugger"></a>Analiza użycia pamięci za pomocą debugera  
   
 > [!NOTE]
->  Ponieważ zbieranie danych może mieć wpływ na wydajność debugowania aplikacji natywnej lub trybu mieszanego pamięci, migawki pamięci są domyślnie wyłączone. Aby włączyć migawek aplikacje natywne lub trybu mieszanego, Rozpocznij sesję debugowania (klawisz skrótu: **F5**). Gdy **narzędzia diagnostyczne** zostanie wyświetlone okno, wybierz kartę użycie pamięci, a następnie wybierz **Włącz migawki**.  
+> Ponieważ zbieranie danych może mieć wpływ na wydajność debugowania aplikacji natywnej lub trybu mieszanego pamięci, migawki pamięci są domyślnie wyłączone. Aby włączyć migawek aplikacje natywne lub trybu mieszanego, Rozpocznij sesję debugowania (klawisz skrótu: **F5**). Gdy **narzędzia diagnostyczne** zostanie wyświetlone okno, wybierz kartę użycie pamięci, a następnie wybierz **Włącz migawki**.  
 >   
->  ![Włącz migawki](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
+> ![Włącz migawki](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
 >   
->  Zatrzymaj (klawisz skrótu: **SHIFT + F5**) i uruchom ponownie debugowanie.  
+> Zatrzymaj (klawisz skrótu: **SHIFT + F5**) i uruchom ponownie debugowanie.  
   
  Zawsze, gdy chcesz przechwytywać stan pamięci, wybierać **wykonaj migawkę** na **użycie pamięci** paska narzędzi.  
   
@@ -53,7 +53,7 @@ Podczas debugowania za pomocą zintegrowane z debugerem umożliwia znajdowanie p
   
 > [!TIP]
 > - Aby utworzyć punkt odniesienia dla porównania pamięci, należy rozważyć wykonanie migawki podczas uruchamiania sesji debugowania.  
->   -   Ponieważ może stanowić wyzwanie do przechwytywania profilu pamięci operacji, która Cię interesuje, gdy aplikacja często przydziela i zwalnia pamięć, ustawianie punktów przerwania na początku i końca operacji lub krok za pomocą operacji, aby znaleźć konkretny punkt Pamięć zmieniła się.  
+>   - Ponieważ może stanowić wyzwanie do przechwytywania profilu pamięci operacji, która Cię interesuje, gdy aplikacja często przydziela i zwalnia pamięć, ustawianie punktów przerwania na początku i końca operacji lub krok za pomocą operacji, aby znaleźć konkretny punkt Pamięć zmieniła się.  
   
 ## <a name="viewing-memory-snapshot-details"></a>Wyświetlanie szczegółów migawki pamięci  
  Wiersze tabeli podsumowania użycia pamięci zawiera listę migawek, które miały podczas sesji debugowania.  
@@ -104,13 +104,13 @@ Podczas debugowania za pomocą zintegrowane z debugerem umożliwia znajdowanie p
   
  **Widok typów** Wyświetla liczbę i rozmiar typów w migawce.  
   
--   Wybierz ikonę wystąpienia (![ikonę wystąpienia, w kolumnie Typ obiektu](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) dla wybranego typu, aby wyświetlić informacje o obiektach wybranego typu w migawce.  
+- Wybierz ikonę wystąpienia (![ikonę wystąpienia, w kolumnie Typ obiektu](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) dla wybranego typu, aby wyświetlić informacje o obiektach wybranego typu w migawce.  
   
      **Wystąpień** widok zawiera każde wystąpienie wybranego typu. Wybranie wystąpienia przedstawia stos wywołań, które spowodowało utworzenie wystąpienia w **stos wywołań alokacji** okienka.  
   
      ![Wystąpienia widoku](../profiling/media/dbgdiag-mem-native-instances.png "DBGDIAG_MEM_Native_Instances")  
   
--   Wybierz **widok stosów** w **tryb widoku** listy w celu wyświetlenia alokacji stosu dla wybranego typu.  
+- Wybierz **widok stosów** w **tryb widoku** listy w celu wyświetlenia alokacji stosu dla wybranego typu.  
   
      ![Widok stosów](../profiling/media/dbgdiag-mem-native-stacksview.png "DBGDIAG_MEM_Native_StacksView")  
   

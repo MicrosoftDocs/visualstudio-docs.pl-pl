@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 965f8d9661d30d23365fe324f7102e15fafec77c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0e455df89a3dfece2c5d4c8cd36a26af816f720a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419463"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Instrukcje: Programowe zapisywanie dokumentów
   Istnieje kilka sposobów, aby zapisać dokumenty Microsoft Word pakietu Office. Można zapisać dokumentu, bez zmiany nazwy dokumentu lub zapisaniu dokumentu pod nową nazwą.
@@ -54,14 +54,14 @@ ms.locfileid: "60056279"
  Należy użyć metody Zapisz jako, aby zapisać dokument pod nową nazwą. Można użyć tej metody <xref:Microsoft.Office.Tools.Word.Document> element hosta w projekcie programu Word poziomie dokumentu lub natywny <xref:Microsoft.Office.Interop.Word.Document> obiektu w każdym projekcie programu Word. Ta metoda wymaga, aby określić nową nazwę pliku, ale inne argumenty są opcjonalne.
 
 > [!NOTE]
->  Jeśli wyświetlisz **Zapisz jako** okna dialogowego wewnątrz <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> program obsługi zdarzeń `ThisDocument` i ustaw *anulować* parametr **false**, aplikacja może został nieoczekiwanie zakończony. Jeśli ustawisz *anulować* parametr **true**, wyświetlony komunikat o błędzie wskazujący, że zapisywania został wyłączony.
+> Jeśli wyświetlisz **Zapisz jako** okna dialogowego wewnątrz <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> program obsługi zdarzeń `ThisDocument` i ustaw *anulować* parametr **false**, aplikacja może został nieoczekiwanie zakończony. Jeśli ustawisz *anulować* parametr **true**, wyświetlony komunikat o błędzie wskazujący, że zapisywania został wyłączony.
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization-with-a-new-name"></a>Aby zapisać dokument skojarzony z dostosowania poziomu dokumentu pod nową nazwą
 
 1. Wywołaj <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> metody `ThisDocument` klasy w projekcie, przy użyciu w pełni kwalifikowaną ścieżkę i nazwę pliku. Jeśli plik o tej nazwie już istnieje w tym folderze, jest zastąpione w trybie dyskretnym. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisDocument` klasy.
 
     > [!NOTE]
-    >  <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> Metoda zgłasza wyjątek, jeśli katalog docelowy nie istnieje, lub jeśli występują inne problemy podczas zapisywania pliku. Jest dobrą praktyką, aby użyć **try... catch** block wokół <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> metody lub wewnątrz wywołania metody.
+    > <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> Metoda zgłasza wyjątek, jeśli katalog docelowy nie istnieje, lub jeśli występują inne problemy podczas zapisywania pliku. Jest dobrą praktyką, aby użyć **try... catch** block wokół <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> metody lub wewnątrz wywołania metody.
 
      [!code-vb[Trin_VstcoreWordAutomation#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#10)]
      [!code-csharp[Trin_VstcoreWordAutomation#10](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#10)]
@@ -73,7 +73,7 @@ ms.locfileid: "60056279"
      Poniższy przykład kodu Zapisuje aktywny dokument pod nową nazwą. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisDocument` lub `ThisAddIn` klasy w projekcie.
 
     > [!NOTE]
-    >  <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> Metoda zgłasza wyjątek, jeśli katalog docelowy nie istnieje, lub jeśli występują inne problemy podczas zapisywania pliku. Jest dobrą praktyką, aby użyć **try... catch** block wokół <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> metody lub wewnątrz wywołania metody.
+    > <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> Metoda zgłasza wyjątek, jeśli katalog docelowy nie istnieje, lub jeśli występują inne problemy podczas zapisywania pliku. Jest dobrą praktyką, aby użyć **try... catch** block wokół <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> metody lub wewnątrz wywołania metody.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#10)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#10)]

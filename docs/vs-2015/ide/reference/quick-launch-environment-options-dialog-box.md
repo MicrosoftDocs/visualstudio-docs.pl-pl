@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 91b62fa8384bd2e0e9e90e9c9057a89e61869a2a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: a35e1498c4f2e6a10f56f1ab7687bd8516eb6808
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416699"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Szybkie uruchamianie, środowisko, opcje — okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Możesz użyć **Szybkie uruchamianie** do szybkiego wyszukiwania i wykonywanie 
 |Dokumenty|@doc<br /><br /> Na przykład:`@doc font`|Ogranicza wyszukiwanie do nazw plików oraz ścieżek otwarte dokumenty kryteriów wyszukiwania, ale nie wyszukuje tekst wewnątrz same pliki.|  
   
 > [!NOTE]
->  Klawisze skrótów można zmienić na **ogólne**, **klawiatury** strony w **opcje** okno dialogowe.  
+> Klawisze skrótów można zmienić na **ogólne**, **klawiatury** strony w **opcje** okno dialogowe.  
   
 ## <a name="show-previous-results"></a>Pokaż poprzednie wyniki  
  Domyślnie termin wyszukiwania, które można wprowadzić nie są utrwalane między sesjami wyszukiwania. Ciąg wyszukiwania jest wyczyszczone, jeśli wyszukasz termin, przesuń kursor poza **Szybkie uruchamianie** obszaru, a następnie przejdź kopii. Do przechowywania wyników wyszukiwania, przejdź do **opcje** okna dialogowego wybierz **Szybkie uruchamianie**, a następnie wybierz pozycję **Pokaż wyniki poprzedniego wyszukiwania gdy pasek Szybkie uruchamianie jest aktywny.** Pole wyboru. Następnym razem, przeprowadź wyszukiwanie lub pozostaw obszaru szybkiego uruchamiania, a wrócić, szybkiego uruchamiania będzie zachowują wyszukiwany termin, ostatnio używane i również wyświetlanie wyników wyszukiwania.  

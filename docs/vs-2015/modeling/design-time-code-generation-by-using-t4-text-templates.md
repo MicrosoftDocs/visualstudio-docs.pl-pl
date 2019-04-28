@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f2bd66ca5e5cc7e5884e98ddf4d5c2ba5df15742
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d74b989c5615f1fca079b9d8b41fdc7560e4e274
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422446"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inn
  Na przykład można mieć modelu, który definiuje przepływ pracy, jako tabelę lub diagram. Z modelu można wygenerować oprogramowania, który wykonuje przepływ pracy. Gdy zmienią się wymagania użytkowników, jest łatwa w celu omówienia nowy przepływ pracy z użytkownikami. Ponowne generowanie kodu z przepływu pracy jest bardziej niezawodną metodą od ręcznego aktualizowania kodu.  
   
 > [!NOTE]
->  A *modelu* jest źródłem danych, który opisuje danego aspekt aplikacji. Może być każdym formularzu, dowolny rodzaj pliku lub bazy danych. Nie musi znajdować się w dowolnym danego formularza, takie jak modelu UML lub model języka specyficznego dla domeny. Typowe są modele w formie tabel lub plików XML.  
+> A *modelu* jest źródłem danych, który opisuje danego aspekt aplikacji. Może być każdym formularzu, dowolny rodzaj pliku lub bazy danych. Nie musi znajdować się w dowolnym danego formularza, takie jak modelu UML lub model języka specyficznego dla domeny. Typowe są modele w formie tabel lub plików XML.  
   
  Prawdopodobnie znasz generowania kodu. Podczas definiowania zasobów w **resx** plików w Twojej [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania, zestaw klas i metod jest generowana automatycznie. Plik zasobów umożliwia łatwiejsze i bardziej niezawodny, aby edytować zasoby niż byłaby, jeśli trzeba było edytować klasy i metody. Przy użyciu szablonów tekstowych może wygenerować kod w taki sam sposób, ze źródła własnego projektu.  
   
@@ -74,7 +74,7 @@ Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inn
 6. W **Eksploratora rozwiązań**, rozwiń węzeł pliku szablonu, a plik, który ma rozszerzenie **.txt**. Plik zawiera wygenerowane z szablonu.  
   
     > [!NOTE]
-    >  Jeśli projekt jest projekt języka Visual Basic, należy kliknąć przycisk **Pokaż wszystkie pliki** aby można było wyświetlić plik wyjściowy.  
+    > Jeśli projekt jest projekt języka Visual Basic, należy kliknąć przycisk **Pokaż wszystkie pliki** aby można było wyświetlić plik wyjściowy.  
   
 ### <a name="regenerating-the-code"></a>Trwa ponowne generowanie kodu  
  Szablon zostanie wykonana, generowanie plików pomocniczych, w dowolnym z następujących przypadkach:  
@@ -141,9 +141,9 @@ Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inn
   Szablon ma uruchamiać i zatrzymywał w punktach przerwania. Można zbadać zmienne i przejść przez kod w zwykły sposób.  
   
 > [!TIP]
->  `debug="true"` sprawia, że wygenerowany kod mapowania dokładniej szablonu tekstu, wstawiając więcej dyrektywy numerację wierszy w wygenerowanym kodzie. Pozostawienie go punktów przerwania może spowodować zatrzymanie wykonywania w nieodpowiednim stanie.  
+> `debug="true"` sprawia, że wygenerowany kod mapowania dokładniej szablonu tekstu, wstawiając więcej dyrektywy numerację wierszy w wygenerowanym kodzie. Pozostawienie go punktów przerwania może spowodować zatrzymanie wykonywania w nieodpowiednim stanie.  
 >   
->  Ale nawet wtedy, gdy nie jest debugowany, można pozostawić klauzuli w dyrektywie szablonu. Powoduje to bardzo mały spadek wydajności.  
+> Ale nawet wtedy, gdy nie jest debugowany, można pozostawić klauzuli w dyrektywie szablonu. Powoduje to bardzo mały spadek wydajności.  
   
 ## <a name="generating-code-or-resources-for-your-solution"></a>Generowanie kodu lub zasobów dla rozwiązania  
  Można wygenerować pliki programów, które różnią się w zależności od tego modelu. Model jest wartością wejściową, takich jak bazy danych, pliku konfiguracji, modelu UML, modelu DSL lub innego źródła. Możesz wygenerować zazwyczaj kilka plików programów pochodzą z tego samego modelu. Aby to osiągnąć, Utwórz plik szablonu dla każdego pliku wygenerowanego programu, a wszystkie szablony po ich przeczytaniu tego samego modelu.  
@@ -293,7 +293,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ```  
   
 > [!TIP]
->  Szablon tekstowy, który jest uruchamiany w domenie aplikacji i usług używanych przez kierowanie. W takiej sytuacji GetCOMService() jest bardziej niezawodną metodą od GetService().  
+> Szablon tekstowy, który jest uruchamiany w domenie aplikacji i usług używanych przez kierowanie. W takiej sytuacji GetCOMService() jest bardziej niezawodną metodą od GetService().  
   
 ## <a name="Regenerating"></a> Automatyczne ponowne generowanie kodu  
  Zazwyczaj kilka plików w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania są generowane przy użyciu jednego modelu danych wejściowych. Każdy plik jest generowany na podstawie własnego szablonu, ale szablony, które wszystkie odnoszą się do tego samego modelu.  

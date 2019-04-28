@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7eac5329fb5bfacb036e8f0ed585b96ded2a069
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b5c3f8995d5bfbbbfe890100b0ec1a1230450bb6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431318"
 ---
 # <a name="how-to-manage-multiple-threads-in-managed-code"></a>Instrukcje: Zarządzanie wieloma wątkami w kodzie zarządzanym
 Jeśli masz zarządzanych rozszerzenia pakietu VSPackage, który wywołuje metody asynchronicznej lub operacji, które są wykonywane w wątkach, innego niż wątek interfejsu użytkownika usługi Visual Studio, należy postępować zgodnie z wytycznymi podanymi poniżej. Wątek interfejsu użytkownika umożliwia zachowanie elastyczny, ponieważ nie trzeba czekać do pracy na inny wątek, aby zakończyć. Użytkownik może uczynić kod bardziej efektywne, ponieważ nie masz dodatkowe wątki, które zajmują miejsce na stosie i możesz przekształcić ją w bardziej niezawodne i łatwiejsze do debugowania, ponieważ uniknięcia zakleszczenia i zawiesza się.
@@ -21,7 +21,7 @@ Jeśli masz zarządzanych rozszerzenia pakietu VSPackage, który wywołuje metod
  Ogólnie rzecz biorąc, możesz przełączyć się z wątku interfejsu użytkownika do innego wątku, lub na odwrót. Gdy metoda zwróci wartość, bieżący wątek jest wątek, w którym była pierwotnie używana.
 
 > [!IMPORTANT]
->  Poniższe wskazówki przy użyciu interfejsów API w <xref:Microsoft.VisualStudio.Threading> przestrzeni nazw, w szczególności <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> klasy. Interfejsy API w tej przestrzeni nazw są nowością w programie [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]. Można pobrać wystąpienia <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> z <xref:Microsoft.VisualStudio.Shell.ThreadHelper> właściwość `ThreadHelper.JoinableTaskFactory`.
+> Poniższe wskazówki przy użyciu interfejsów API w <xref:Microsoft.VisualStudio.Threading> przestrzeni nazw, w szczególności <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> klasy. Interfejsy API w tej przestrzeni nazw są nowością w programie [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]. Można pobrać wystąpienia <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> z <xref:Microsoft.VisualStudio.Shell.ThreadHelper> właściwość `ThreadHelper.JoinableTaskFactory`.
 
 ## <a name="switch-from-the-ui-thread-to-a-background-thread"></a>Przełącz z wątku interfejsu użytkownika do wątku w tle
 

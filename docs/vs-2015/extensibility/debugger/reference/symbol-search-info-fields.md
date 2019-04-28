@@ -12,12 +12,12 @@ ms.assetid: bce35af0-722d-46d4-afa6-eaae598c51ff
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9fc7f91ee5cbb2d0661309a8d7275bb75c7c321a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a988e8f5409a3a9e1f9fd8a4b5bd863a3309acc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429031"
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
  Te flagi są przekazywane jako parametr do [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) zwracany przez metodę, aby określić ilość informacji.  
   
 > [!NOTE]
->  Obecnie tylko `SSIF_VERBOSE_SEARCH_INFO` jest obsługiwany, a musi być określona jako `dwFlags` parametr `IDebugModule3::GetSymbolInfo`. Wszystkie pozostałe wartości zwróci błąd.  
+> Obecnie tylko `SSIF_VERBOSE_SEARCH_INFO` jest obsługiwany, a musi być określona jako `dwFlags` parametr `IDebugModule3::GetSymbolInfo`. Wszystkie pozostałe wartości zwróci błąd.  
   
 ## <a name="requirements"></a>Wymagania  
  Header: msdbg.h  

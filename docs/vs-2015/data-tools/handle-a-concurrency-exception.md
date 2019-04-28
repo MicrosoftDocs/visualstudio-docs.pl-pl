@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ee82187adac74f90b6f5cb8485c68452d8329b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 421360421a732935d452053630c17cda319f4b0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434501"
 ---
 # <a name="handle-a-concurrency-exception"></a>Obsługiwanie wyjątku współbieżności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Wyjątki współbieżności (<xref:System.Data.DBConcurrencyException>) są wywo
 - Dostęp do przykładowej bazy danych Northwind z uprawnieniami do wykonywania aktualizacji.
   
 > [!NOTE]
->  Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji, którego używasz. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji, którego używasz. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu  
  Swoje Instruktaż należy rozpocząć od tworzenia nowej aplikacji Windows.  
@@ -86,7 +86,7 @@ Wyjątki współbieżności (<xref:System.Data.DBConcurrencyException>) są wywo
 3. Wybierz połączenie z przykładową bazą danych Northwind, z listy dostępnych połączeń. Jeśli połączenie nie jest dostępne na liście połączeń, wybierz opcję**nowe połączenie**  
   
     > [!NOTE]
-    >  Jeśli łączysz się z plikiem lokalnej bazy danych, wybierz opcję **nie** po wyświetleniu monitu, jeśli w przypadku chcesz dodać plik do projektu.  
+    > Jeśli łączysz się z plikiem lokalnej bazy danych, wybierz opcję **nie** po wyświetleniu monitu, jeśli w przypadku chcesz dodać plik do projektu.  
   
 4. Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji**ekranu, wybierz opcję **dalej**.  
   
@@ -149,7 +149,7 @@ Wyjątki współbieżności (<xref:System.Data.DBConcurrencyException>) są wywo
  W tej sekcji dodasz kod, który próbuje zaktualizować bazę danych. Możesz również obsługiwać dowolne <xref:System.Data.DBConcurrencyException> , może uzyskać wywołane, a także inne wyjątki.  
   
 > [!NOTE]
->  `CreateMessage` i `ProcessDialogResults` metody zostaną dodane w dalszej części tego przewodnika.  
+> `CreateMessage` i `ProcessDialogResults` metody zostaną dodane w dalszej części tego przewodnika.  
   
 ##### <a name="to-add-error-handling-for-the-concurrency-error"></a>Aby dodać obsługę błędów dla błąd współbieżności  
   
@@ -201,7 +201,7 @@ Wyjątki współbieżności (<xref:System.Data.DBConcurrencyException>) są wywo
 6. W pierwszym rekordzie (`ALFKI`) Zmień `ContactName` do `Maria Anders2`.  
   
     > [!NOTE]
-    >  Przejdź do innego wiersza, aby zatwierdzić zmiany.  
+    > Przejdź do innego wiersza, aby zatwierdzić zmiany.  
   
 7. Przełącz się do `ConcurrencyWalkthrough`korzysta z formularza.  
   

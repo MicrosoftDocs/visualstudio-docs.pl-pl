@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ca8537e6e28461bfd2e3b3d6d116571d15c04ea5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 504fe863c746a788e797d3a84c4cd0b3d6c3d19b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422471"
 ---
 # <a name="how-to-programmatically-close-documents"></a>Instrukcje: Programowe zamykanie dokumentów
   Możesz zamknąć aktywny dokument, lub można określić dokumentu, aby zamknąć.
@@ -33,7 +33,7 @@ ms.locfileid: "60084443"
 1. Wywołaj <xref:Microsoft.Office.Tools.Word.Document.Close%2A> metody `ThisDocument` klasy w projekcie, aby zamknąć dokument służącej do dostosowywania. Aby użyć w poniższym przykładzie kodu, należy uruchomić go z `ThisDocument` klasy.
 
     > [!NOTE]
-    >  Ten przykład przekazuje <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> wartość *SaveChanges* parametru, aby zamknąć bez zapisywania zmian lub monitowania użytkownika.
+    > Ten przykład przekazuje <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> wartość *SaveChanges* parametru, aby zamknąć bez zapisywania zmian lub monitowania użytkownika.
 
      [!code-vb[Trin_VstcoreWordAutomation#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#3)]
      [!code-csharp[Trin_VstcoreWordAutomation#3](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#3)]
@@ -43,7 +43,7 @@ ms.locfileid: "60084443"
 1. Wywołaj <xref:Microsoft.Office.Interop.Word._Document.Close%2A> metody <xref:Microsoft.Office.Interop.Word._Application.ActiveDocument%2A> właściwość, aby zamknąć aktywny dokument. Aby użyć w poniższym przykładzie kodu, należy uruchomić go z `ThisAddIn` klasy w projekcie.
 
     > [!NOTE]
-    >  Ten przykład przekazuje <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> wartość *SaveChanges* parametru, aby zamknąć bez zapisywania zmian lub monitowania użytkownika.
+    > Ten przykład przekazuje <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> wartość *SaveChanges* parametru, aby zamknąć bez zapisywania zmian lub monitowania użytkownika.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#3)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#3](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#3)]
@@ -56,7 +56,7 @@ ms.locfileid: "60084443"
 1. Określona nazwa dokumentu jako argument do <xref:Microsoft.Office.Interop.Word._Application.Documents%2A> kolekcji, a następnie wywołania <xref:Microsoft.Office.Interop.Word._Document.Close%2A> metody. Poniższy przykład kodu zakłada, że dokument o nazwie **NewDocument** jest otwarty w programie Word.
 
     > [!NOTE]
-    >  Ten przykład przekazuje <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> wartość *SaveChanges* parametru, aby zamknąć bez zapisywania zmian lub monitowania użytkownika.
+    > Ten przykład przekazuje <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> wartość *SaveChanges* parametru, aby zamknąć bez zapisywania zmian lub monitowania użytkownika.
 
      [!code-vb[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#4)]
      [!code-csharp[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#4)]

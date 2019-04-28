@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52e0dc775e5e9413fb251261a319e529f36393eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6b4ed387d00c96c1d66fdac0bb92a0bfbae7c530
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406679"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>Wybieranie strategii wdrażania ClickOnce
 Istnieją trzy różne strategie wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, a wybrana strategia zależy głównie od typu aplikacji, w której przeprowadzasz wdrożenie. Poniżej przedstawiono wszystkie trzy strategie wdrażania:
@@ -32,7 +32,7 @@ Istnieją trzy różne strategie wdrażania [!INCLUDE[ndptecclick](../deployment
 - Uruchamianie aplikacji z sieci Web lub udziału sieciowego
 
     > [!NOTE]
-    >  Oprócz wybrania strategii wdrażania, warto również wybrać strategię dostarczania aktualizacji aplikacji. Aby uzyskać więcej informacji, zobacz [Wybieranie strategii aktualizacji ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
+    > Oprócz wybrania strategii wdrażania, warto również wybrać strategię dostarczania aktualizacji aplikacji. Aby uzyskać więcej informacji, zobacz [Wybieranie strategii aktualizacji ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
 ## <a name="install-from-the-web-or-a-network-share"></a>Instalowanie z sieci Web lub udziału sieciowego
  Gdy jest używana ta strategia, aplikacja jest wdrażana na serwerze sieci Web lub w sieciowym udziale plików. Gdy użytkownik końcowy chce zainstalować aplikację, klika ikonę na stronie sieci Web lub klika dwukrotnie ikonę w udziale plików. Aplikacja jest następnie pobierana, instalowana i uruchamiana na komputerze użytkownika końcowego. Elementy są dodawane do **Start** menu i **apletu Dodaj lub usuń programy** w **Panelu sterowania**.
@@ -49,7 +49,7 @@ Istnieją trzy różne strategie wdrażania [!INCLUDE[ndptecclick](../deployment
  Ta strategia jest podobna do pierwszej, z tym że aplikacja zachowuje się jak aplikacja internetowa. Gdy użytkownik kliknie łącze na stronie sieci Web (lub kliknie dwukrotnie ikonę w udziale plików), aplikacja jest uruchamiana. Gdy użytkownicy zamykają aplikację, nie jest już dostępny na swoim komputerze lokalnym; nic nie zostanie dodany do **Start** menu lub **apletu Dodaj lub usuń programy** w **Panelu sterowania**.
 
 > [!NOTE]
->  Technicznie aplikacja jest pobierana i instalowana w pamięci podręcznej aplikacji na komputerze lokalnym, tak samo jak aplikacja internetowa jest pobierana do internetowej pamięci podręcznej. Podobnie jak w przypadku pamięci podręcznej sieci Web, pliki są na końcu usuwane z pamięci podręcznej aplikacji. Jednak z punktu widzenia użytkownika aplikacja jest uruchamiana z sieci Web lub udziału plików.
+> Technicznie aplikacja jest pobierana i instalowana w pamięci podręcznej aplikacji na komputerze lokalnym, tak samo jak aplikacja internetowa jest pobierana do internetowej pamięci podręcznej. Podobnie jak w przypadku pamięci podręcznej sieci Web, pliki są na końcu usuwane z pamięci podręcznej aplikacji. Jednak z punktu widzenia użytkownika aplikacja jest uruchamiana z sieci Web lub udziału plików.
 
  Ta strategia najlepiej sprawdza się w przypadku aplikacji, które są rzadko używane, takich jak na przykład narzędzie do obliczania nagród dla pracowników, które zazwyczaj jest używane raz do roku.
 

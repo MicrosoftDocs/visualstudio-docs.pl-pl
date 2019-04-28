@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 046ae576880c6749c6bb033f66124c0085dfab16
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bb3632e1ed7bf07e236322700ba8553b53a75cb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426599"
 ---
 # <a name="in-source-suppression-overview"></a>Ograniczanie w kodzie źródłowym - Omówienie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Pomijanie w źródła jest możliwość pominąć lub zignorować naruszeń anal
  Nie należy używać w źródłowej pominięcia kompilacji do wydania aby zapobiec przypadkowo wysyłania metadanych pomijanie w źródła. Ze względu na koszt przetwarzania pomijanie-source wydajność aplikacji może być znacznie umieszczając metadanych pomijanie w źródła.  
   
 > [!NOTE]
->  Nie masz ręcznie kod te atrybuty samodzielnie. Aby uzyskać więcej informacji, zobacz [jak: Pomijanie ostrzeżeń przy użyciu elementu Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). Element menu nie jest dostępne dla kodu C++.  
+> Nie masz ręcznie kod te atrybuty samodzielnie. Aby uzyskać więcej informacji, zobacz [jak: Pomijanie ostrzeżeń przy użyciu elementu Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). Element menu nie jest dostępne dla kodu C++.  
   
 ## <a name="suppressmessage-attribute"></a>Atrybutu SuppressMessage  
  Po kliknięciu prawym przyciskiem myszy ostrzeżenia analizy kodu w **lista błędów** a następnie kliknij przycisk **Pomijaj komunikaty**, **SuppressMessage** jest dodawany atrybut, w kodzie lub do Plik pominięć globalnych projektu.  
@@ -109,7 +109,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`  
   
 > [!NOTE]
->  Ostrzeżenie o zakresie przestrzeni nazw zostanie pominięty, powoduje pominięcie ostrzeżenie przed samej przestrzeni nazw. Ostrzeżenie typów w przestrzeni nazw, nie są odrzuca.  
+> Ostrzeżenie o zakresie przestrzeni nazw zostanie pominięty, powoduje pominięcie ostrzeżenie przed samej przestrzeni nazw. Ostrzeżenie typów w przestrzeni nazw, nie są odrzuca.  
   
  Wszelkie pomijanie może być wyrażona przez określenie zakresu jawnego. Pominięcia na te muszą znajdować się na poziomie globalnym. Nie można określić poziom elementu członkowskiego pomijanie przez urządzanie typu.  
   
@@ -118,7 +118,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`  
   
 > [!NOTE]
->  Docelowy zawsze zawiera nazwę elementu w pełni kwalifikowana.  
+> Docelowy zawsze zawiera nazwę elementu w pełni kwalifikowana.  
   
 ## <a name="global-suppression-file"></a>Plik globalne pomijanie  
  Plik pominięć globalnych zachowuje ograniczeń, które są pominięcia na poziomie globalnym lub pominięcia, których nie określono elementu docelowego. Na przykład ograniczeń dla zestawu poziomu naruszeń są przechowywane w tym pliku. Ponadto niektórych ograniczeń ASP.NET są przechowywane w tego pliku, ponieważ ustawienia na poziomie projektu nie są dostępne dla kod związany z formularzem. Globalne pomijanie jest tworzone i dodawane do projektu po raz pierwszy wybierzesz **w pliku pominięć projektu** opcji **Pomijaj komunikaty** polecenia w oknie Lista błędów. Aby uzyskać więcej informacji, zobacz [jak: Pomijanie ostrzeżeń przy użyciu elementu Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  

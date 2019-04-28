@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6c0d6928236c151e182c90056641432e4706952
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 101bc22cd33b3438e0dc82542c20b1bb103cb617
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418694"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Dodawanie elementów do okna dialogowego Dodaj nowy element
 Proces dodawania elementów do **Dodaj nowy element** okno dialogowe zaczyna się od kluczy rejestru. Jak pokazano w następujących wpisach rejestru **AddItemTemplates** sekcja zawiera ścieżkę i nazwę katalogu, w które elementy udostępnione w **Dodaj nowy element** są umieszczane okno dialogowe.
 
 > [!NOTE]
->  Tabela natychmiast po segment kodu zawiera dodatkowe informacje na temat wpisu rejestru.
+> Tabela natychmiast po segment kodu zawiera dodatkowe informacje na temat wpisu rejestru.
 
  W tej sekcji znajduje się w folderze **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**.
 
@@ -42,7 +42,7 @@ Proces dodawania elementów do **Dodaj nowy element** okno dialogowe zaczyna si�
 | Val SortPriority | REG_DWORD | 100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)]) | Określa porządek sortowania w węźle drzewa pliki wyświetlane w **Dodaj nowy element** okno dialogowe. |
 
 > [!NOTE]
->  Identyfikatory GUID dla języka Visual C# i typów projektów języka Visual Basic są następujące:
+> Identyfikatory GUID dla języka Visual C# i typów projektów języka Visual Basic są następujące:
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
@@ -53,7 +53,7 @@ Proces dodawania elementów do **Dodaj nowy element** okno dialogowe zaczyna si�
  Jednakże, nie trzeba mieć wszystko w jednym *.vsdir* pliku. Może mieć jeden *.vsdir* pliku dla każdego elementu w katalogu. Aby uzyskać więcej informacji, zobacz [pliku kreatora (.vsz —)](../../extensibility/internals/wizard-dot-vsz-file.md) i [pliki (vsdir) opis katalogu szablonu](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).
 
 > [!NOTE]
->  *.Vsdir* plików w katalogach szablonu są opcjonalne. Jeśli chcesz tylko umieścić element projektu w katalogu i wyświetl ją w **Dodaj nowy element** okno dialogowe, mogą umieścić ten plik w katalogu szablonów, określonym w **TemplatesDir** instrukcji. Plik zostanie wyświetlony w okienku po prawej stronie od **Dodaj nowy element** okno dialogowe dla tego projektu. Jednak jeśli chcesz wyświetlić podpis zlokalizowane dla pliku lub ikona, musisz dołączyć co najmniej jeden *.vsdir* pliku w katalogu szablonów.
+> *.Vsdir* plików w katalogach szablonu są opcjonalne. Jeśli chcesz tylko umieścić element projektu w katalogu i wyświetl ją w **Dodaj nowy element** okno dialogowe, mogą umieścić ten plik w katalogu szablonów, określonym w **TemplatesDir** instrukcji. Plik zostanie wyświetlony w okienku po prawej stronie od **Dodaj nowy element** okno dialogowe dla tego projektu. Jednak jeśli chcesz wyświetlić podpis zlokalizowane dla pliku lub ikona, musisz dołączyć co najmniej jeden *.vsdir* pliku w katalogu szablonów.
 
 ## <a name="group-project-items"></a>Grupowanie elementów projektu
  Jeśli ma zawierać szablon grup w folderach w **Dodaj nowy element** drzewa okno dialogowe, konieczne jest posiadanie podkatalogów w katalogu głównym szablonu z elementami w nich. Gdy **Dodaj nowy element** użytkownikom zostanie wyświetlone okno dialogowe, będzie również obejrzeć podfoldery i mieć możliwość wyboru elementów projektu z nich.
