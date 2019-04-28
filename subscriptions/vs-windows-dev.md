@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Więcej informacji na temat konta dewelopera Windows, które są dołączone do subskrypcji programu Visual Studio.
 searchscope: VS Subscription
 ms.openlocfilehash: a497db64345cffe4f87e768a83816489ebd4c21a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978725"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Konto dewelopera Windows w subskrypcji programu Visual Studio
 
@@ -52,7 +52,7 @@ Zaleca się utworzenie okna przeglądarki "private" dla tego procesu.  Na przyk�
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dołączono       |  Yes|
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Dołączono                                                            |Yes|
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Dołączono                                                            |Tak|
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                            |  Nie dotyczy|
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              |  Niedostępne                                            |  Nie dotyczy|
 | Visual Studio Dev Essentials | Nie dotyczy  | Niedostępne                                            |  Nie dotyczy|

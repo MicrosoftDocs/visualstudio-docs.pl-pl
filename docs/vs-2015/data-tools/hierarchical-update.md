@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 17eb5c1ca2ad35b7a510c5a70d3ad5c5f741c69d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 666b5acaae84a1b16c1b4bdfeb7cb1b8f4bcfb64
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386009"
 ---
 # <a name="hierarchical-update"></a>Hierarchiczna aktualizacja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Hierarchiczna aktualizacja * odnosi się do procesu zapisywanie zaktualizowanych
  Ustawienie kolejności do przeprowadzania aktualizacji ustawia kolejność poszczególnych wstawia, aktualizacji i usunięć, które są wymagane do zapisania zmodyfikowanych danych we wszystkich tabelach zestawu danych. Po włączeniu aktualizacji hierarchicznej wstawia są wykonane jako pierwsze, a następnie aktualizuje, a następnie usuwa. `TableAdapterManager` Zapewnia `UpdateOrder` właściwości, które mogą być zestawem do przeprowadzania aktualizacji po pierwsze, a następnie wstawiania i usuwania.  
   
 > [!NOTE]
->  Jest ważne dowiedzieć się, że kolejność aktualizacji jest z uwzględnieniem wszystkich. Oznacza to kiedy aktualizacje są wykonywane, wstawiania i usuwania są wykonywane dla wszystkich tabel w zestawie danych.  
+> Jest ważne dowiedzieć się, że kolejność aktualizacji jest z uwzględnieniem wszystkich. Oznacza to kiedy aktualizacje są wykonywane, wstawiania i usuwania są wykonywane dla wszystkich tabel w zestawie danych.  
   
  Aby ustawić `UpdateOrder` właściwości po przeciąganie elementów z [okna źródeł danych](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) w formularzu Wybierz `TableAdapterManager` w zasobniku składnika, a następnie ustaw `UpdateOrder` właściwości w **właściwości** okna. Aby uzyskać więcej informacji, zobacz [jak: Ustawianie kolejności podczas przeprowadzania hierarchicznej aktualizacji](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).  
   
@@ -71,7 +71,7 @@ Hierarchiczna aktualizacja * odnosi się do procesu zapisywanie zaktualizowanych
  Jednak czasami warto przywrócić zestawu danych z kopii zapasowej. Przykładem takiej mogą wystąpić podczas korzystania z automatycznego przyrostu wartości. Na przykład, jeśli zapisywania operacja zakończy się niepowodzeniem, automatycznego przyrostu wartości nie są resetowane w zestawie danych i zestaw danych w dalszym ciągu Utwórz auto, zwiększenie wartości. Spowoduje to, że przerwa w numerowania identyfikatorów, które mogą nie być niedopuszczalne w aplikacji. W sytuacjach, w przypadku, gdy jest to problem `TableAdapterManager` zapewnia `BackupDataSetBeforeUpdate` właściwość, która zastępuje istniejący zestaw danych z kopii zapasowej, jeśli transakcja nie powiedzie się.  
   
 > [!NOTE]
->  Kopia zapasowa jest tylko w pamięci podczas `TableAdapterManager.UpdateAll` metoda jest uruchomiona. Dlatego ma nie programowy dostęp do tego zestawu kopii zapasowych danych, ponieważ jego albo zastępuje oryginalnego zestawu danych lub wykracza poza zakres jak najszybciej `TableAdapterManager.UpdateAll` metoda odliczania.  
+> Kopia zapasowa jest tylko w pamięci podczas `TableAdapterManager.UpdateAll` metoda jest uruchomiona. Dlatego ma nie programowy dostęp do tego zestawu kopii zapasowych danych, ponieważ jego albo zastępuje oryginalnego zestawu danych lub wykracza poza zakres jak najszybciej `TableAdapterManager.UpdateAll` metoda odliczania.  
   
 ## <a name="modify-the-generated-save-code-to-perform-the-hierarchical-update"></a>Modyfikowanie wygenerowany Zapisz kod do wykonywania hierarchicznej aktualizacji  
  Zapisz zmiany z tabel powiązanych danych w zestawie danych w bazie danych przez wywołanie metody `TableAdapterManager.UpdateAll` metody i przekazywać nazwę zestawu danych, który zawiera powiązane tabele. Na przykład uruchomić `TableAdapterManager.UpdateAll(NorthwindDataset)` metodę, aby wysyłać aktualizacje ze wszystkich tabel w NorthwindDataset do wewnętrznej bazy danych.  
@@ -81,7 +81,7 @@ Hierarchiczna aktualizacja * odnosi się do procesu zapisywanie zaktualizowanych
  Zapisz wygenerowany kod zawiera również linię kodu, który wywołuje `CustomersBindingSource.EndEdit` metody. W szczególności wywołuje <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Metoda pierwszego <xref:System.Windows.Forms.BindingSource>który został dodany do formularza. Innymi słowy, ten kod jest generowany tylko jako pierwszą tabelę, która zostanie przeciągnięty z **źródeł danych** okna na formularzu. <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Wywołanie zatwierdza wszystkie zmiany, które jest obecnie w toku w żadnych formantów powiązanych z danymi, które są aktualnie edytowanym. W związku z tym, jeśli formant powiązany z danymi nadal ma fokus i kliknij przycisk **Zapisz** przycisk wszystkie oczekujące zmiany, w tym, że kontrolki są zatwierdzane przed rzeczywiste Zapisz ( `TableAdapterManager.UpdateAll` metody).  
   
 > [!NOTE]
->  Dodawanie tylko w Projektancie obiektów Dataset `BindingSource.EndEdit` kod dla pierwszej tabeli, który został upuszczony na formularz. W związku z tym, należy dodać wiersz kodu w celu wywołania `BindingSource.EndEdit` metody dla każdej tabeli powiązanej na formularzu. W tym przewodniku, oznacza to, należy dodać wywołanie `OrdersBindingSource.EndEdit` metody.  
+> Dodawanie tylko w Projektancie obiektów Dataset `BindingSource.EndEdit` kod dla pierwszej tabeli, który został upuszczony na formularz. W związku z tym, należy dodać wiersz kodu w celu wywołania `BindingSource.EndEdit` metody dla każdej tabeli powiązanej na formularzu. W tym przewodniku, oznacza to, należy dodać wywołanie `OrdersBindingSource.EndEdit` metody.  
   
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Aby zaktualizować kod w celu zatwierdzenia zmian w tabelach pokrewnych przed zapisaniem  
   
@@ -95,7 +95,7 @@ Hierarchiczna aktualizacja * odnosi się do procesu zapisywanie zaktualizowanych
    Oprócz zatwierdzania zmian w pokrewnej tabeli podrzędnej przed zapisaniem danych do bazy danych, również może być konieczne rekordów nadrzędnych zatwierdzenia nowo utworzony przed dodaniem nowych rekordów podrzędnych do zestawu danych. Innymi słowy trzeba będzie dodać nowy rekord nadrzędny (klienta) do zestawu danych przed ograniczenia klucza obcego włączyć nowe rekordy podrzędne (zamówienia), który ma zostać dodany do zestawu danych. Aby to osiągnąć, należy użyć elementu podrzędnego `BindingSource.AddingNew` zdarzeń.  
   
 > [!NOTE]
->  Czy masz do zatwierdzenia nowych rekordów nadrzędnych, zależy od typu formantu, który służy do tworzenia powiązania ze źródłem danych. W tym przewodniku umożliwia pojedynczych formantów powiązania tabeli nadrzędnej. Wymaga to dodatkowego kodu, aby zatwierdzić nowy rekord nadrzędny. Jeśli rekordów nadrzędnych zamiast były wyświetlane w kontrolce złożone powiązanie <xref:System.Windows.Forms.DataGridView>, tym dodatkowe <xref:System.Windows.Forms.BindingSource.EndEdit%2A> wywołania dla rekordu nadrzędnego nie jest konieczne. Jest to spowodowane obsługuje podstawową funkcjonalność powiązanie danych kontrolki, zatwierdzanie nowych rekordów.  
+> Czy masz do zatwierdzenia nowych rekordów nadrzędnych, zależy od typu formantu, który służy do tworzenia powiązania ze źródłem danych. W tym przewodniku umożliwia pojedynczych formantów powiązania tabeli nadrzędnej. Wymaga to dodatkowego kodu, aby zatwierdzić nowy rekord nadrzędny. Jeśli rekordów nadrzędnych zamiast były wyświetlane w kontrolce złożone powiązanie <xref:System.Windows.Forms.DataGridView>, tym dodatkowe <xref:System.Windows.Forms.BindingSource.EndEdit%2A> wywołania dla rekordu nadrzędnego nie jest konieczne. Jest to spowodowane obsługuje podstawową funkcjonalność powiązanie danych kontrolki, zatwierdzanie nowych rekordów.  
   
 #### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Aby dodać kod, aby zatwierdzić rekordów nadrzędnych w zestawie danych przed dodaniem nowych rekordów podrzędnych  
   

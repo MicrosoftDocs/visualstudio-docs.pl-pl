@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09c16e55766c0239346540dfcc74b99b2ed8579b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fcc35f74625b17762656451e598d131dfe85417e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385850"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Sprawdzanie poprawności w języku specyficznym dla domeny
 Autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczenia sprawdzania poprawności, aby sprawdzić, czy model utworzony przez użytkownika jest znaczący. Na przykład modem DSL umożliwia użytkownikom rysowanie drzewa rodziny osób oraz ich elementów nadrzędnych, można zapisać ograniczenie, które gwarantuje, że elementy podrzędne daty urodzenia po ich elementy nadrzędne.
@@ -25,7 +25,7 @@ Autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczenia sp
  Sprawdzanie poprawności jest szczególnie ważne, jeśli piszesz szablony tekstowe lub innych narzędzi, które przetwarzają modeli użytkowników. Sprawdzanie poprawności zapewnia, że modele spełniają warunki wstępne, zakłada, że za pomocą tych narzędzi.
 
 > [!WARNING]
->  Można również zezwolić ograniczenia sprawdzania poprawności, należy zdefiniować w oddzielnym rozszerzenia DSL, wraz z rozszerzenia poleceń menu i program obsługi gestów. Użytkownicy mogą wybierać do zainstalowania tych rozszerzeń, oprócz DSL. Aby uzyskać więcej informacji, zobacz [rozszerzanie DSL za pomocą MEF](../modeling/extend-your-dsl-by-using-mef.md).
+> Można również zezwolić ograniczenia sprawdzania poprawności, należy zdefiniować w oddzielnym rozszerzenia DSL, wraz z rozszerzenia poleceń menu i program obsługi gestów. Użytkownicy mogą wybierać do zainstalowania tych rozszerzeń, oprócz DSL. Aby uzyskać więcej informacji, zobacz [rozszerzanie DSL za pomocą MEF](../modeling/extend-your-dsl-by-using-mef.md).
 
 ## <a name="running-validation"></a>Uruchamianie sprawdzania poprawności
  Gdy użytkownik edytuje modelu, oznacza to, wystąpienie języka specyficznego dla domeny następujące akcje można uruchomić sprawdzania poprawności:
@@ -48,7 +48,7 @@ Autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczenia sp
  Każda metoda sprawdzania poprawności zgłasza wszelkie błędy, które znajdzie.
 
 > [!NOTE]
->  Metody sprawdzania poprawności raportowania błędów, ale nie należy zmieniać modelu. Jeśli chcesz dostosować lub uniemożliwić pewnych zmian, zobacz [alternatywy dla weryfikacji](#alternatives).
+> Metody sprawdzania poprawności raportowania błędów, ale nie należy zmieniać modelu. Jeśli chcesz dostosować lub uniemożliwić pewnych zmian, zobacz [alternatywy dla weryfikacji](#alternatives).
 
 #### <a name="to-define-a-validation-constraint"></a>Aby zdefiniować ograniczenie sprawdzania poprawności
 
@@ -310,7 +310,7 @@ private void TestForCircularLinks(ValidationContext context)
 ```
 
 > [!NOTE]
->  Można poprzedzić metodę z dowolnej liczby `[ValidationMethod()]` atrybuty jak chcesz. Możesz dodać metodę do standardowych i niestandardowych kategorii.
+> Można poprzedzić metodę z dowolnej liczby `[ValidationMethod()]` atrybuty jak chcesz. Możesz dodać metodę do standardowych i niestandardowych kategorii.
 
  Aby wywołać niestandardowego sprawdzania poprawności:
 

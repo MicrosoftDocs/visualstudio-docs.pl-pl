@@ -9,11 +9,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c1e94bb6da2786b989208ea1104d509883bc0724
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970669"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Instrukcje: Określ częstotliwość próbkowania dla testu obciążenia, ustawienia uruchamiania
 

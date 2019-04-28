@@ -1,5 +1,5 @@
 ---
-title: Konwertowanie funkcji lokalnej na metodę
+title: Konwertuj funkcją lokalną do metody
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -10,39 +10,39 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 96064b16e53081e0456ed43275acd5edf7ead468
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a580077528c87e62f81e840ed6dee76ff1eac57f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58152957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968295"
 ---
-# <a name="convert-local-function-to-method"></a>Konwertowanie funkcji lokalnej na metodę
+# <a name="convert-a-local-function-to-a-method"></a>Konwertuj funkcją lokalną do metody
 
 Ta Refaktoryzacja mają zastosowanie do:
 
 - C#
 - Visual Basic
 
-**Co:** Konwertuj funkcją lokalną do metody
+**Co:** Konwertuj funkcją lokalną do metody.
 
 **Kiedy:** Masz lokalne funkcja, która ma zostać zdefiniowana poza bieżący kontekst lokalnego.
 
-**Dlaczego:** Może chcesz przekonwertować funkcją lokalną do metody, można więc wywoływać go poza lokalnego kontekstu. Możesz konwertować do metody, pobierając lokalnych funkcji jest zbyt długa. Zdefiniowaniem go w oddzielnych metodach sprawia, że Twój kod łatwiejsza do odczytania.
+**Dlaczego:** Chcesz przekonwertować funkcją lokalną do metody, aby wywołując poza lokalnego kontekstu. Można przekonwertować do metody, pobierając lokalnych funkcji jest zbyt długa. Po zdefiniowaniu funkcji w oddzielnych metodach kod jest łatwiejsza do odczytania.
 
 ## <a name="convert-local-function-to-method-refactoring"></a>Konwertuj funkcję lokalnego do refaktoryzacji — metoda
 
 1. Umieść kursor w funkcji lokalnej.
 
-    ![Konwertowanie funkcji lokalnej na metodę](media/convert-local-function-to-method.png)
+    ![Konwertuj funkcją lokalną do przykładowego kodu — metoda](media/convert-local-function-to-method.png)
 
 2. Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
 
-    ![Konwertuj funkcję lokalnego do poprawki kodu — metoda](media/convert-local-function-to-method-codefix.png)
+    ![Konwertuj funkcję lokalnych na przykład poprawki kodu — metoda](media/convert-local-function-to-method-codefix.png)
 
-2. Naciśnij klawisz **Enter** do akceptowania refaktoryzacji.
+2. Naciśnij klawisz Enter, aby zaakceptować refaktoryzacji.
 
-    ![Konwertuj funkcję lokalnego do wyniku — metoda](media/convert-local-function-to-method-result.png)
+    ![Konwertuj funkcję lokalnego próbkę wynik, metoda](media/convert-local-function-to-method-result.png)
 
 ## <a name="see-also"></a>Zobacz także
 

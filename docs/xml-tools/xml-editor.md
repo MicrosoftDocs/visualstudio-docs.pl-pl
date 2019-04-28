@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 39e069dfd65294ed3d40342816e871757378a57b
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002485"
 ---
 # <a name="xml-editor"></a>Edytor XML
 
@@ -42,15 +42,15 @@ Edytor XML oferuje następujące funkcje:
 
 Edytor XML jest wywoływany dla rozszerzenia znanych plików, takich jak *.xml*, *XSD*, *XSL*, i *.config*. Również jest ono wywoływane na każde rozszerzenie nieznanym pliku, jeśli plik może zawierać kod XML.
 
-## <a name="xslt-intellisense"></a>XSLT IntelliSense
+## <a name="xslt-intellisense"></a>Funkcja IntelliSense XSLT
 
 [XSLT IntelliSense](../xml-tools/xml-editor-intellisense-features.md) umożliwia nazwy zestawu atrybutów automatycznego uzupełniania, tryby szablonu i nazwy, a nazwy parametrów dla określonego trybu lub określoną nazwę szablonu.
 
-## <a name="xslt-profiler"></a>XSLT profiler
+## <a name="xslt-profiler"></a>Profiler XSLT
 
 [XSLT profiler](../xml-tools/xslt-profiler.md) tworzy szczegółowe wydajności XSLT, raporty, które ułatwiają mierzyć, szacować i wybierać problemy związane z wydajnością w kodzie XSLT. Profiler XSLT zawiera także przydatne wskazówki dotyczące optymalizacji o arkusza stylów XSL i XSLT.
 
-## <a name="xslt-hierarchy"></a>Hierarchii XSLT
+## <a name="xslt-hierarchy"></a>Hierarchia XSLT
 
 [Narzędzia hierarchii XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md) pozwala dodać punkty przerwania w arkusze stylów dołączone i/lub wbudowany szablon reguły.
 

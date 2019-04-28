@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e2ade3e1b5a2317d16d668079275506509aeef7a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001107"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Concurrency Visualizer SDK
 Możliwe jest instrumentowanie kodu źródłowego za pomocą SDK narzędzia Concurrency Visualizer, aby wyświetlić dodatkowe informacje w Wizualizatorze współbieżności. Możesz skojarzyć dodatkowe dane przy użyciu etapy i zdarzenia w kodzie. Te dodatkowe wizualizacje, są znane jako *znaczniki*.  Aby uzyskać Przewodnik wprowadzający, zobacz [Przedstawiamy SDK narzędzia Concurrency Visualizer](http://go.microsoft.com/fwlink/?LinkId=235405).

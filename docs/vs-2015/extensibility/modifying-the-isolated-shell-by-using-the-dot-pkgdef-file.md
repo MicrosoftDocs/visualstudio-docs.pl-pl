@@ -10,12 +10,12 @@ ms.assetid: 69e8f78e-bcf1-46cb-8866-7de37d134997
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6f2ed846e8644f5f6e391d9c850016721186021e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0f8ac7b6cea0896c597dc46b8b5edd7072069840
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386035"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>Modyfikowanie programu Isolated Shell przy użyciu. Pliku Pkgdef
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "59663969"
 Plik .pkgdef obsługuje ustawienia, które umożliwia dostosowywanie aplikacji isolated shell. Określa wartości, które są tworzone, gdy aplikacja jest zainstalowana na komputerze, na które są przywoływane przez powłokę programu Visual Studio po uruchomieniu aplikacji. Ustawienia są zorganizowane w pliku na podstawie kluczy rejestru dotyczy.  
 
 > [!WARNING]
->  Należy pamiętać, że .pkgdef pliki, które nie są zadeklarowane w pliku .vsixmanifest pakietu VSPackage, nie są wykrywane po uruchomieniu programu Visual Studio.  
+> Należy pamiętać, że .pkgdef pliki, które nie są zadeklarowane w pliku .vsixmanifest pakietu VSPackage, nie są wykrywane po uruchomieniu programu Visual Studio.  
 
  Plik .pkgdef zawiera sekcje, które są identyfikowanych za pomocą klucza albo `[$RootKey$]` lub `[$RootKey$\` *podklucz*`]`, gdzie $RootKey$ to klucz główny dla aplikacji.  
 
@@ -53,7 +53,7 @@ Plik .pkgdef obsługuje ustawienia, które umożliwia dostosowywanie aplikacji i
  W poniższych sekcjach opisano konkretne wartości rejestru, które mają wpływ na zachowanie powłoki programu Visual Studio w trybie izolowanym. Można również zdefiniować dodatkowe rejestru wartości dla aplikacji, w tym pliku.  
 
 > [!NOTE]
->  Jeśli to ustawienie nie zostanie podany w pliku .pkgdef, nie odpowiadający mu wpis zostanie przeprowadzona w rejestrze.  
+> Jeśli to ustawienie nie zostanie podany w pliku .pkgdef, nie odpowiadający mu wpis zostanie przeprowadzona w rejestrze.  
 
 ## <a name="settings"></a>Ustawienia  
  W poniższej tabeli opisano wartości zdefiniowane w obszarze [$RootKey$].  

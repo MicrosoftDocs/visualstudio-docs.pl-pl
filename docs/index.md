@@ -3,15 +3,9 @@ layout: HubPage
 hide_bc: true
 title: Dokumentacja programu Visual Studio | Dokumentacja firmy Microsoft
 titleSuffix: ''
-description: Dowiedz się, jak używać programu Visual Studio do opracowywania aplikacji, usług i narzędzi w języku wybranym dla platform i urządzeń.
+description: 'Dowiedz się, jak używać programu Visual Studio do opracowywania aplikacji, usług i narzędzi w języku wybranym dla platform i urządzeń.'
 ms.topic: hub-page
 ms.custom: seodec18
-ms.openlocfilehash: f63b848481a43a9684424b31fe36c3436faff021
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
-ms.translationtype: MT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515327"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">

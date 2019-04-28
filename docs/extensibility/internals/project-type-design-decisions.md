@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5e420261810cec793cc553eac83bbc97edd1fb1c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909110"
 ---
 # <a name="project-type-design-decisions"></a>Decyzje projektowe dotyczące typów projektów
 Przed przystąpieniem do tworzenia nowych typów projektów należy kilka decyzji projektowych dotyczących danego typu projektu. Należy zdecydować, jakie rodzaje elementów, który będzie zawarty w projekcie, jak pliki projektu zostaną utrwalone i jakie modelu zobowiązania będą używane.
@@ -57,7 +57,7 @@ Przed przystąpieniem do tworzenia nowych typów projektów należy kilka decyzj
  Po otwarciu obiektów danych przy użyciu trybu transakcyjne, zmiany są zapisywane do tymczasowej lokalizacji w pamięci i nie są przekazywane, dopóki użytkownik chce ręcznie Zapisz plik. W tym czasie wszystkie zmiany muszą występować razem lub nie zostaną wprowadzone nie zmiany.
 
 ## <a name="see-also"></a>Zobacz też
-- [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Lista kontrolna: tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Otwieranie i zapisywanie elementów projektu](../../extensibility/internals/opening-and-saving-project-items.md)
 - [Trwałość projektu](../../extensibility/internals/project-persistence.md)
 - [Elementy modelu projektu](../../extensibility/internals/elements-of-a-project-model.md)

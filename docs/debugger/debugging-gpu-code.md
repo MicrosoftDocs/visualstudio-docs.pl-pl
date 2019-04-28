@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1de8b942b64de56b93b2fece3f46b23413b6981
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ea3286c2d4ae27afc7422700bd4f745ab28520fa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399441"
 ---
 # <a name="debugging-gpu-code"></a>Debugowanie kodu GPU
 Można debugować kodu C++, który działa na jednostka przetwarzania grafiki (GPU). Obsługa w programie Visual Studio do debugowania GPU obejmuje wykrywania wyścigu, uruchamianie procesów i dołączanie do, a Integracja debugowania systemu windows.
@@ -27,7 +27,7 @@ Można debugować kodu C++, który działa na jednostka przetwarzania grafiki (G
  Debugowanie jest obsługiwane w [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)], i [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)]. Do debugowania na emulatorze oprogramowania [!INCLUDE[win8](../debugger/includes/win8_md.md)], lub [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] jest wymagana. Do debugowania na sprzęcie, należy zainstalować sterowniki dla karty graficznej. Nie wszyscy dostawcy sprzętu zaimplementuj wszystkie funkcje debugera. W dokumentacji dostawcy ograniczenia.
 
 > [!NOTE]
->  Niezależnych dostawców sprzętu, którzy mają być obsługiwane debugowania GPU w programie Visual Studio, należy utworzyć bibliotekę DLL, która implementuje interfejs VSD3DDebug i elementy docelowe swoje własne sterowniki.
+> Niezależnych dostawców sprzętu, którzy mają być obsługiwane debugowania GPU w programie Visual Studio, należy utworzyć bibliotekę DLL, która implementuje interfejs VSD3DDebug i elementy docelowe swoje własne sterowniki.
 
 ## <a name="configuring-gpu-debugging"></a>Konfigurowanie debugowania GPU
  Debuger nie można przerwać w kodzie procesora CPU i procesora GPU kodu w tym samym wykonywanie aplikacji. Domyślnie debuger przerywa na kodzie procesora CPU. Debugowanie kodu GPU, użyj jednej z tych dwóch kroków:
@@ -80,6 +80,6 @@ Można debugować kodu C++, który działa na jednostka przetwarzania grafiki (G
  Istnieje możliwość dla obliczeń C++ AMP może przekroczyć domyślny interwał czasu jest ustawiana przez proces odzyskiwania (TDR) i wykrywania limitu czasu Windows. Jeśli tak się stanie, obliczenie zostanie anulowane, a dane zostaną utracone. Aby uzyskać więcej informacji, zobacz [obsługi TDR w bibliotece C++ AMP](http://go.microsoft.com/fwlink/p/?LinkId=249154).
 
 ## <a name="see-also"></a>Zobacz też
-- [Przewodnik: Debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [Przewodnik: debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
 - [Ustawienia projektu dla konfiguracji debugowania w języku C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Rozpocznij debugowanie GPU w programie Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=255381)

@@ -36,11 +36,11 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 7c65662d054b8c3dd9e650fe088f7048cc3b4071
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62930029"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Rozpoczynanie sesji debugowania aplikacji platformy UWP
 

@@ -29,17 +29,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aadc0cfb66226f463ff8a2049d4dbf81e7bcf62b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975563"
 ---
 # <a name="class-designer-errors"></a>Błędy Projektanta klas
 
 **Projektant klasy** "nie Śledź" lokalizację plików źródłowych, więc modyfikowania do struktury projektu i przenoszenie plików źródłowych w projekcie może spowodować **projektanta klas** utratę informacji o typie, na przykład, jest często Zmodyfikuj typ źródła typedef, klas podstawowych i skojarzenia typów. Może zostać wyświetlony błąd taki jak **Projektant klas nie może wyświetlić tego typu**. Aby naprawić błąd, przeciągnij kod źródłowy zmodyfikowany lub przenoszone do diagramu klas ponownie, aby go wyświetlić.
 
-## <a name="resources"></a>Resources
+## <a name="resources"></a>Zasoby
 
 Pomoc dotyczącą inne błędy i ostrzeżenia można znaleźć w następujących zasobach:
 

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d5d1acc40b23c979a5746c50be50a584d11112b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966916"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Porady: Dodawanie i usuwanie folderów mapowanych
   Niektóre często używane foldery w programie SharePoint, takich jak obrazy i układy, głęboko są osadzone w hierarchii plików. Te foldery można mapować do projektu programu SharePoint do nich łatwiejszy dostęp. Mapowane foldery są foldery w projekcie programu SharePoint, które odnoszą się do fizycznej lokalizacji plików w instalacji programu SharePoint Server.

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 52b2efa5e5def8214736d648e2b90906fe720dbe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956033"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Dane w wskazówki dotyczące rozwiązań pakietu Office
   Poniższe instruktaże przedstawiają sposób pracy z danymi w dostosowaniach na poziomie dokumentu i dodatków narzędzi VSTO dla programu Microsoft Office Word i Microsoft Office Excel.

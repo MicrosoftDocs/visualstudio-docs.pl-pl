@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 24e7d3674712a17d940b94637db808c0d91d2d6a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982119"
 ---
 # <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Rozwiązania VBA i pakietu Office w Visual Studio
   Microsoft Visual Basic for Applications (VBA) używa kod niezarządzany, który jest ściśle zintegrowany z aplikacjami pakietu Office. Projekty programu Microsoft Office utworzone przy użyciu programu Visual Studio umożliwiają korzystanie z zalet platformy .NET Framework i narzędzi projektowania programu Visual Studio.

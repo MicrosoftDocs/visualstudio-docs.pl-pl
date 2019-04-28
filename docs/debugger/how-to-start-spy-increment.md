@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85e253491a4cb3713b5920c9abd09f9396298319
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cc247a6391df0357905e2cbdb895bec4e469a248
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387537"
 ---
 # <a name="how-to-start-spy"></a>Instrukcje: Uruchamianie programu Spy++
 
@@ -24,7 +24,7 @@ Można uruchomić programu Spy ++ w programie Visual Studio lub w wierszu polece
  Po uruchomieniu programu Spy ++, jeśli zostanie wyświetlony komunikat o uprawnienia do wprowadzania zmian do komputera, wybierz opcję **tak**.
 
 > [!NOTE]
->  Można uruchomić tylko jedno wystąpienie programu Spy ++. Jeśli zostanie podjęta próba uruchomienia drugiego wystąpienia, powoduje po prostu aktualnie uruchomione wystąpienie, którego można pobrać fokus.
+> Można uruchomić tylko jedno wystąpienie programu Spy ++. Jeśli zostanie podjęta próba uruchomienia drugiego wystąpienia, powoduje po prostu aktualnie uruchomione wystąpienie, którego można pobrać fokus.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -42,7 +42,7 @@ Na **narzędzia** menu, wybierz opcję **Spy ++**.
 Fakt, że narzędzie Spy ++ działają niezależnie, po jego uruchomieniu możesz zamknąć program Visual Studio.
 
 > [!NOTE]
->  Podczas rejestrowania komunikatów z programem Spy ++, może to spowodować systemu operacyjnego działać wolniej.
+> Podczas rejestrowania komunikatów z programem Spy ++, może to spowodować systemu operacyjnego działać wolniej.
 
 ## <a name="start-spy-at-a-command-prompt"></a>Uruchom narzędzie Spy ++ w wierszu polecenia
 

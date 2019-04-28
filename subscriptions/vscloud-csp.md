@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Informacje dla dostawców rozwiązań w chmurze o tym, jak kupić i zarządzać subskrypcjami chmury programu Visual Studio dla swoich klientów.
 searchscope: VS Subscription
 ms.openlocfilehash: 6f5c760ad67fb92367f971b973f3af0ed6d41785
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978513"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Kupowanie i zarządzać subskrypcjami chmury programu Visual Studio dla klientów
 

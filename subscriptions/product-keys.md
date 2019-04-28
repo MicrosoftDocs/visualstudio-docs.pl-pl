@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Dowiedz się, jak uzyskać i zarządzać kluczami produktu w ramach subskrypcji programu Visual Studio.
 searchscope: VS Subscription
 ms.openlocfilehash: 74d13602dd27669233cd40ebdd2f5e165c09079a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977731"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Korzystanie z kluczy produktów w subskrypcji programu Visual Studio
 

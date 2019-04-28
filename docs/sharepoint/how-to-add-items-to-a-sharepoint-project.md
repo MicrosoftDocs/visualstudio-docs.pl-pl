@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 572b466907fdbe43c5b9f094b74837ca05d1b212
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966955"
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>Instrukcje: Dodawanie elementów do projektu programu SharePoint
   Rozwiązania programu SharePoint zawiera jeden lub więcej projektów, z których każdy zawiera wiele elementów projektu programu SharePoint. Po otwarciu lub tworzyć rozwiązania programu SharePoint, można dodać nowych lub istniejących elementów, do tych projektów. Na przykład nowe projekty przepływu pracy dostarczane z domyślnego formularza, który nosi nazwę default.aspx, ale można zastąpić tworzące formularz nowego ani innego lub dodać innej formy ASPX.

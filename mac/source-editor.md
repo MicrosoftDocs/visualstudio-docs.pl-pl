@@ -1,20 +1,20 @@
 ---
-title: Edytor źródła
+title: Edytor źródeł
 description: Za pomocą edytora źródła w programie Visual Studio dla komputerów Mac
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
 ms.openlocfilehash: b284cde511b17863861908d9967bbea7672e297b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000259"
 ---
 # <a name="source-editor"></a>Edytor źródła
 
-Edytor wiarygodnego źródła ma zasadnicze znaczenie dla pisania kodu, zwięzły i wydajne. Program Visual Studio dla komputerów Mac udostępnia edytora zaawansowanego źródła, który znajduje się w środku interakcje ze środowiskiem IDE programu. Edytor źródła zawiera funkcje, które mogą spodziewać się i potrzebują do wykonania swojej pracy z łatwością: od podstawowych takich wyróżniania składni, fragmenty kodu i składanie kodu, do korzyści z integracji kompilator Roslyn, takie jak IntelliSense w pełni funkcjonalne kodu ukończenie.
+Edytor wiarygodnego źródła ma zasadnicze znaczenie dla pisania kodu, zwięzły i wydajne. Program Visual Studio dla komputerów Mac udostępnia edytora zaawansowanego źródła, który znajduje się w środku interakcje ze środowiskiem IDE programu. Edytor źródła zawiera funkcje, które mogą spodziewać się i potrzebują do wykonania swojej pracy z łatwością: Od podstawowych takich wyróżniania składni, fragmenty kodu i składanie kodu, aby korzyści z integracji kompilator Roslyn, takie jak IntelliSense w pełni funkcjonalne uzupełnianie kodu.
 
 Edytor źródła w programie Visual Studio dla komputerów Mac umożliwia bezproblemowe środowisko z wszystkimi funkcjami w środowisku IDE, takie jak debugowania, refaktoryzacji i integrację kontroli wersji.
 
@@ -50,7 +50,7 @@ Ten element menu można również włączyć lub wyłączyć składanie kodu.
 
 Może być konieczne w celu wyświetlania niewidoczne znaki w kodzie źródłowym. Jest widoczny sposób, aby upewnić się, że one być przestrzega standardy kodowania i nie niepotrzebnie Marnowanie miejsca. Jest to również przydatne podczas pisania F#, która jest zależna od dokładnie w pozycji wcięcia wierszy dla oceny kodu.
 
-Ustawianie opcji, aby wyświetlić białe znaki, przechodząc do **programu Visual Studio > Preferencje > Edytor tekstu > Znaczniki i linijki**. Wybranie tej opcji umożliwia ustawienie _podczas_ będą wyświetlane niewidoczne znaki: nigdy, w zaznaczeniu lub zawsze:
+Ustawianie opcji, aby wyświetlić białe znaki, przechodząc do **programu Visual Studio > Preferencje > Edytor tekstu > Znaczniki i linijki**. Wybranie tej opcji umożliwia ustawienie _podczas_ będą wyświetlane niewidoczne znaki: Nie, na wybór lub zawsze:
 
 ![Pokaż opcje niewidoczne znaki](media/source-editor-image3.png)
 

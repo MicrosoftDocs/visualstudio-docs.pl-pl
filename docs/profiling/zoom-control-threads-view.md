@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb1521623880712211ea04e5c572c7cf4bd85133
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960163"
 ---
 # <a name="zoom-control-threads-view"></a>Formant powiększania (Widok wątków)
 Kontrolka powiększenia jest suwaka, ułatwiające powiększać i pomniejszać na osi czasu, dzięki czemu możesz skupić się na obszarach zainteresowań danego. Ponieważ ta kontrolka powiększa środek widoku osi czasu, Centrum obszar zainteresowania, zanim powiększania.

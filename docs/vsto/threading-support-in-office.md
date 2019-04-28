@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3218a12add86739c76cd50f82fdda5d845e2b069
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978770"
 ---
 # <a name="threading-support-in-office"></a>Obsługa wątkowości w Office
   Ten artykuł zawiera informacje dotyczące sposobu wątkowości jest obsługiwana w modelu obiektów programu Microsoft Office. Model obiektów programu pakietu Office nie jest bezpieczny dla wątków, ale można pracować z wieloma wątkami w rozwiązań pakietu Office. Aplikacje pakietu Office są serwery Component Object Model (COM). COM umożliwia klientom wywoływanie serwerów COM na dowolnych wątków. W przypadku serwerów COM, które nie są bezpieczne dla wątków COM zapewnia mechanizm serializacji współbieżnych wywołań, tak aby tylko jeden wątek logicznych jest wykonywana na serwerze w dowolnym momencie. Ten mechanizm jest określany jako model apartamentem jednowątkowym (przedziale STA). Ponieważ wywołania są serializowane, wywołań może być blokowany przez czas, gdy serwer jest zajęty lub obsługuje inne wywołania w wątku tła.

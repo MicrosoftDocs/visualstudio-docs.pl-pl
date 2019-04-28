@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4c170b533b1eadb60be2ec1ca5d5fe000c5b4d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 76a45297062b42b559f07867b20bdadac79cc082
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386843"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Instrukcje: Wyświetlanie i edytowanie kodu za pomocą polecenia Zobacz definicję (Alt + F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Możesz użyć **Peek Definition** polecenie, aby wyświetlić i edytować kod b
  Możesz użyć **Peek Definition** przy użyciu kodu C#, Visual Basic i C++. W języku Visual Basic **Peek Definition** Wyświetla łącze do **przeglądarki obiektów** dla symboli, które nie mają metadanych definicji (na przykład typów programu .NET Framework, które są wbudowane).  
   
 > [!IMPORTANT]
->  Tego polecenia nie można użyć w dowolnej wersji Express programu Visual Studio 2013.  
+> Tego polecenia nie można użyć w dowolnej wersji Express programu Visual Studio 2013.  
   
 ## <a name="working-with-peek-definition"></a>Praca z funkcją Zobacz definicję  
   
@@ -76,7 +76,7 @@ Możesz użyć **Peek Definition** polecenie, aby wyświetlić i edytować kod b
     |Przełączanie się między oknem edytora kodu i oknem definicji|Shift + Esc|  
   
     > [!NOTE]
-    >  Można również użyć tych samych skrótów klawiaturowych do edycji kodu w **Peek Definition** oknie używasz w innym miejscu w programie Visual Studio.  
+    > Można również użyć tych samych skrótów klawiaturowych do edycji kodu w **Peek Definition** oknie używasz w innym miejscu w programie Visual Studio.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wskazówki dotyczące produktywności](../ide/productivity-tips-for-visual-studio.md)

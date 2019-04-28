@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 073e62b473ebfcec5f71ae1907e8f9e385333411
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967549"
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>Różnice między piaskownicy oraz rozwiązaniami farmy
   Podczas kompilowania rozwiązania programu SharePoint, wdraża ją do serwera programu SharePoint i debuger dołącza do debugowania. Proces używany do debugowania rozwiązania zależy od ustawienia właściwości rozwiązanie w trybie piaskownicy: rozwiązanie w trybie piaskownicy lub rozwiązaniu farmy.

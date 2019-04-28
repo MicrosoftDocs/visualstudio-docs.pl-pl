@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 62b3c9185226512ff28c8d028cd0ba7d33b0f12f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977455"
 ---
 # <a name="activity-views-legacy"></a>Widoki działania (starsza wersja)
 Wiele działań, dostarczone przez [!INCLUDE[wf](../includes/wf-md.md)], które przepływy pracy są składane, zawiera kilka widoków projektu dostępne w starszych [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Podczas przeciągania projektanta działań z **przybornika** na powierzchnię projektu, a następnie zawsze wtedy, gdy działanie zostanie wybrana, można przełączać się między widokami różnorodności przy użyciu **przepływu pracy**menu lub klikając prawym przyciskiem myszy wybrane działanie. Ponadto podczas przesuwania wskaźnika nad nazwa wybranego działania, listy rozwijanej zbiór kart pojawia się której można przełączać się między różnymi widokami.  

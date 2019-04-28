@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 44e12e616e453dcdc0390e8a6eb5b2065a51a6bb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 31bbc54b08fc053d10bd79d6a6b24e7605bc0351
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384045"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL Tools w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ LINQ do SQL była pierwszym technologii mapowania obiektowo relacyjny, wydane pr
  ![LINQ do SQL projektanta](../data-tools/media/raddata-linq-to-sql-designer.png "raddata LINQ do SQL projektanta")
 
 > [!IMPORTANT]
->  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Jest mapowania relacyjnych prostego obiektu, ponieważ obsługuje on tylko relacji mapowanie 1:1. Innymi słowy klasa jednostka może mieć tylko relacji mapowanie 1:1 z tabeli bazy danych lub widoku. Mapowanie złożonych, takie jak mapowanie klasę jednostki do tabeli dołączonym do nie jest obsługiwana; na użytek złożonych mapowania Entity Framework. Ponadto projektanta jest generator kodu jednokierunkowe. Oznacza to, że tylko zmiany wprowadzone do powierzchni projektanta są odzwierciedlane w pliku kodu. Ręczne zmiany w pliku kodu nie są odzwierciedlane w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Wszelkie zmiany wprowadzone ręcznie w pliku kodu zostaną zastąpione, gdy projektant jest zapisywana i wygenerowania kodu. Aby uzyskać informacje o tym, jak dodać kod użytkownika i rozszerzać klasy generowane przez [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], zobacz [jak: Rozszerzanie kodu wygenerowanego przez projektanta O/R](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
+> [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Jest mapowania relacyjnych prostego obiektu, ponieważ obsługuje on tylko relacji mapowanie 1:1. Innymi słowy klasa jednostka może mieć tylko relacji mapowanie 1:1 z tabeli bazy danych lub widoku. Mapowanie złożonych, takie jak mapowanie klasę jednostki do tabeli dołączonym do nie jest obsługiwana; na użytek złożonych mapowania Entity Framework. Ponadto projektanta jest generator kodu jednokierunkowe. Oznacza to, że tylko zmiany wprowadzone do powierzchni projektanta są odzwierciedlane w pliku kodu. Ręczne zmiany w pliku kodu nie są odzwierciedlane w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Wszelkie zmiany wprowadzone ręcznie w pliku kodu zostaną zastąpione, gdy projektant jest zapisywana i wygenerowania kodu. Aby uzyskać informacje o tym, jak dodać kod użytkownika i rozszerzać klasy generowane przez [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], zobacz [jak: Rozszerzanie kodu wygenerowanego przez projektanta O/R](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
 
 ## <a name="creating-and-configuring-the-datacontext"></a>Tworzenie i konfigurowanie kontekstu danych
  Po dodaniu **klasy LINQ do SQL** elementu do projektu i Otwórz [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], powierzchni projektowej pusty reprezentuje pusty <xref:System.Data.Linq.DataContext> gotowe do skonfigurowania. <xref:System.Data.Linq.DataContext> jest skonfigurowany z informacjami o połączeniu, dostarczone przez pierwszy element, który jest zostało przeciągnięte na powierzchnię projektu... W związku z tym <xref:System.Data.Linq.DataContext> jest konfigurowana przy użyciu informacji o połączeniu z pierwszego elementu na powierzchni projektowej. Aby uzyskać więcej informacji na temat <xref:System.Data.Linq.DataContext> , zobacz klasę [metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
@@ -53,7 +53,7 @@ LINQ do SQL była pierwszym technologii mapowania obiektowo relacyjny, wydane pr
  Możesz utworzyć <xref:System.Data.Linq.DataContext> metody, które wywołują (są mapowane na) procedur składowanych i funkcji, przeciągając je z **Eksploratora serwera**/**Eksplorator bazy danych** na [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Procedury składowane i funkcje, które są dodawane do [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] jako metody <xref:System.Data.Linq.DataContext>.
 
 > [!NOTE]
->  Podczas przeciągania procedur przechowywanych i funkcji z **Eksploratora serwera**/**Eksplorator bazy danych** na [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], zwracany typ wygenerowany <xref:System.Data.Linq.DataContext> metoda różni się w zależności od tego, gdzie można upuścić elementu. Aby uzyskać więcej informacji, zobacz [metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
+> Podczas przeciągania procedur przechowywanych i funkcji z **Eksploratora serwera**/**Eksplorator bazy danych** na [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], zwracany typ wygenerowany <xref:System.Data.Linq.DataContext> metoda różni się w zależności od tego, gdzie można upuścić elementu. Aby uzyskać więcej informacji, zobacz [metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
 ## <a name="configuring-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>Konfigurowanie DataContext zapisują dane pomiędzy klasami jednostki i bazy danych za pomocą procedur składowanych
  Jak wspomniano wcześniej, możesz utworzyć <xref:System.Data.Linq.DataContext> metody, które wywołują procedur przechowywanych i funkcji. Ponadto można także przypisać procedury składowane, które mogą być używane dla domyślnej [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] zachowania w czasie wykonywania, który wykonuje wstawiania, aktualizacji i usuwa. Aby uzyskać więcej informacji, zobacz [jak: Przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).

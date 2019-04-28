@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f8037e4d91aa7706c7ffd7b9f32778dfeac79488
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961644"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Instrukcje: Programowe używanie wbudowanych okien dialogowych w programie Word
   Podczas pracy z programu Microsoft Office Word, istnieją razy, gdy zachodzi potrzeba wyświetlanie okien dialogowych na dane wejściowe użytkownika. Mimo że można tworzyć własne, można także podejścia użycia wbudowanych okien dialogowych w programie Word, które są widoczne w <xref:Microsoft.Office.Interop.Word.Dialogs> zbiór <xref:Microsoft.Office.Interop.Word.Application> obiektu. Umożliwia dostęp do ponad 200 wbudowanych okien dialogowych, które są reprezentowane jako wyliczenia.

@@ -7,11 +7,11 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: 297D9094-B40F-4C1A-BF19-B14CB735003A
 ms.openlocfilehash: 909f2e2e8ac569b7fde1de1008f0cbd22171e3b6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971422"
 ---
 # <a name="troubleshooting-why-can-i-not-see-all-available-templates"></a>Rozwiązywanie problemów: Dlaczego nie można wyświetlić wszystkie dostępne szablony?
 

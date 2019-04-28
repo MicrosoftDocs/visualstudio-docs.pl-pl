@@ -6,12 +6,12 @@ ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 8dd993f918d9f2d884b9e2d082a71c9c4eebc9cf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5373f1fa9d6bb596e099f3b7396ef13c91ee5a51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387641"
 ---
 # <a name="verify-your-xamarin-environment"></a>Sprawdzanie środowiska Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Po ukończeniu ma instalatorów (zobacz [Instalator i instalacja](../cross-platf
  ![Wyniki tworzenia nowego projektu z pustą aplikację &#40;przenośnego macierzystego&#41; szablonu](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Xamarin Sprawdź 1")  
   
 > [!NOTE]
->  Jeśli szablony nie są tam widoczne [szablonów projektu Xamarin, Brak? Skorzystaj z tej](#missing) u dołu tej strony.  
+> Jeśli szablony nie są tam widoczne [szablonów projektu Xamarin, Brak? Skorzystaj z tej](#missing) u dołu tej strony.  
   
 ## <a name="android"></a>Android  
   
@@ -59,7 +59,7 @@ Po ukończeniu ma instalatorów (zobacz [Instalator i instalacja](../cross-platf
         - Windows 7 i starszych: Wybierz odtwarzacza Xamarin dla systemu Android w menu rozwijanego zamiast tego i naciśnij klawisz F5, aby uruchomić. Szczegółowe informacje dotyczące programu Xamarin Player, jego Menedżera urządzeń i rozwiązywanie problemów z porad, przeczytaj [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (strony xamarin.com).  
   
 > [!NOTE]
->  W programie Visual Studio można zauważyć obecność przycisk Menedżera emulatora systemu Android (AVD) na pasku narzędzi (wyświetlane poniżej), co spowoduje otwarcie Menedżera urządzeń, w szczególności służąca do konfigurowania emulator systemu Google Android.  Nie ma to wpływu na albo Visual Studio Emulator dla systemu Android lub Xamarin Player, z których każdy ma swoje własne Menedżera urządzeń dotyczące konfigurowania profilów.  Zobacz [wprowadzenie do programu Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (blog Visual Studio ALM) i [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (strony xamarin.com) Aby uzyskać szczegółowe informacje.  
+> W programie Visual Studio można zauważyć obecność przycisk Menedżera emulatora systemu Android (AVD) na pasku narzędzi (wyświetlane poniżej), co spowoduje otwarcie Menedżera urządzeń, w szczególności służąca do konfigurowania emulator systemu Google Android.  Nie ma to wpływu na albo Visual Studio Emulator dla systemu Android lub Xamarin Player, z których każdy ma swoje własne Menedżera urządzeń dotyczące konfigurowania profilów.  Zobacz [wprowadzenie do programu Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (blog Visual Studio ALM) i [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (strony xamarin.com) Aby uzyskać szczegółowe informacje.  
 > ![CrossPlat Xamarin Sprawdź 7](../cross-platform/media/crossplat-xamarin-verify-7.png "CrossPlat Xamarin Sprawdź 7")  
   
 ## <a name="windows-phone"></a>Windows Phone  

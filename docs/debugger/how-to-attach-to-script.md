@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72ae0ff0b4958e831f96a0eb62b4a1a4a453ece7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 993d1b3b6b4db6b435064a873142f563a950f4db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387860"
 ---
 # <a name="how-to-attach-to-script"></a>Instrukcje: Dołączanie do skryptu
 W tym temacie wyjaśniono, jak ręczne dołączenie debugera programu Visual Studio do pliku skryptu w celu debugowania.
@@ -61,7 +61,7 @@ W tym temacie wyjaśniono, jak ręczne dołączenie debugera programu Visual Stu
    Wszystkie **debugowania** poleceń menu wpływają na aktywny program. W oknie dialogowym procesów, może przerwać dowolnego debugowanego programu. Zobacz [używanie punktów przerwania](../debugger/using-breakpoints.md).
 
 > [!NOTE]
->  Jeśli próbujesz dołączyć do procesu, którego właścicielem jest niezaufane konto użytkownika, pojawi się ostrzeżenie okna dialogowego potwierdzenia zabezpieczeń. Aby uzyskać więcej informacji, zobacz [ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub niepewne, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).
+> Jeśli próbujesz dołączyć do procesu, którego właścicielem jest niezaufane konto użytkownika, pojawi się ostrzeżenie okna dialogowego potwierdzenia zabezpieczeń. Aby uzyskać więcej informacji, zobacz [ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub niepewne, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).
 
  W niektórych przypadkach podczas debugowania w sesji usług terminalowych (pulpitu zdalnego), lista dostępnych procesów nie będą wyświetlane wszystkie dostępne procesy. Na [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] lub nowsze wersje, jeśli używasz programu Visual Studio jako użytkownik, lista dostępnych procesów będą wyświetlały procesy uruchomione w sesji 0, które jest używane w przypadku usług i innych procesów serwera, w tym w3wp.exe. Problem można rozwiązać, uruchamiając program Visual Studio przy użyciu konta administratora lub przez uruchomienie programu Visual Studio z konsoli serwera zamiast sesji usług terminalowych. Jeśli żadna z tych obejść nie jest możliwe, trzecią opcją jest dołączenie do procesu, wpisując polecenie vsjitdebugger.exe -p ProcessId w wierszu polecenia Windows. Za pomocą tlist.exe, należy określić identyfikator procesu. Aby uzyskać tlist.exe, Pobierz i zainstaluj debugowanie Tools for Windows, dostępne pod adresem [Windows Hardware Developer Central](/windows-hardware/drivers/dashboard/).
 

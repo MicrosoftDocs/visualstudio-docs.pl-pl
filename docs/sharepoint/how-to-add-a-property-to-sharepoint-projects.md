@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a6f1ecd427b1c715649bc2118be5ab384a74c585
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967217"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Instrukcje: Dodawanie właściwości do projektów SharePoint
   Można użyć rozszerzenia projektu, aby dodać właściwość do każdego projektu programu SharePoint. Właściwość pojawia się w **właściwości** okna, jeśli projekt jest wybrany w **Eksploratora rozwiązań**.

@@ -26,12 +26,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: b0a10d720e911f80aa5ef7b4a42f521bfd9c31bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3bee60a54576ab816c63cf60f2226ebbbaf50c44
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388484"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Instrukcje: Włączanie i wyłączanie funkcji Edytuj i Kontynuuj (C#, VB, C++)
 
@@ -46,7 +46,7 @@ Dla natywnych języka C++ **Edytuj i Kontynuuj** wymaga użycia `/INCREMENTAL` o
 1. W **narzędzia** > **opcje** > (lub **debugowania** > **opcje**) > **debugowania**  >  **Ogólne**, wybierz opcję **Edytuj i Kontynuuj** w okienku po prawej stronie.
 
     > [!NOTE]
-    >  Jeśli zbieranie zdarzeń IntelliTrace i informacje o wywołaniach funkcji IntelliTrace jest włączony, Edytuj i Kontynuuj jest wyłączona. Aby uzyskać więcej informacji, zobacz [IntelliTrace](../debugger/intellitrace.md).
+    > Jeśli zbieranie zdarzeń IntelliTrace i informacje o wywołaniach funkcji IntelliTrace jest włączony, Edytuj i Kontynuuj jest wyłączona. Aby uzyskać więcej informacji, zobacz [IntelliTrace](../debugger/intellitrace.md).
 
 1. Dla kodu C++, upewnij się, **Włączanie natywnego Edytuj i Kontynuuj** jest zaznaczone, a także określ dodatkowe opcje:
     - **Zastosuj zmiany przy kontynuowaniu (tylko natywne)**

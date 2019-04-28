@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d486ae5c056be37c0284d39fabaa6945f5c91659
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d629c0049966d0520e0e40d23b0fd41798ccf2b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386981"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Opis modeli, klas i relacji
 Języka specyficznego dla domeny (DSL) jest definiowany przez jego pliku definicji DSL, wraz z wszelki kod niestandardowy program, który może zapisać. Większość kodu programu w rozwiązaniu DSL jest generowany na podstawie tego pliku.
@@ -93,7 +93,7 @@ Języka specyficznego dla domeny (DSL) jest definiowany przez jego pliku definic
  Po zapisaniu modelu do pliku w postaci XML, osadzone elementy są zagnieżdżone wewnątrz nadrzędnych, chyba że dostosowano serializacji.
 
 > [!NOTE]
->  Osadzanie nie jest taka sama jak dziedziczenie. Elementy podrzędne w relacji osadzania dziedziczy właściwości elementu nadrzędnego. Osadzanie jest typu łącza między elementami modelu. Dziedziczenie jest relacja między klasami i nie tworzyć łącza między elementami modelu.
+> Osadzanie nie jest taka sama jak dziedziczenie. Elementy podrzędne w relacji osadzania dziedziczy właściwości elementu nadrzędnego. Osadzanie jest typu łącza między elementami modelu. Dziedziczenie jest relacja między klasami i nie tworzyć łącza między elementami modelu.
 
 ### <a name="embedding-rules"></a>Osadzanie reguły
  Każdy element w modelu wystąpień musi być elementem docelowym dokładnie jeden link osadzania, z wyjątkiem korzeń modelu.

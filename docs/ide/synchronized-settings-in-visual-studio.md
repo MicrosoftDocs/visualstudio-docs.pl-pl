@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58c03bc81c9455cf33a439ca6e80fc646212cfd4
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 1ff663a7d2a22f152b3a0b9081623766535f9a53
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950427"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Synchronizuj ustawienia programu Visual Studio na wielu komputerach
 
@@ -75,7 +75,7 @@ Jeśli obecnie masz instalacje side-by-side programu Visual Studio i chcesz uży
 
 3. Otwórz **wiersz polecenia programisty dla programu VS 2017** i uruchom `devenv /resetuserdata`.
 
-1. Uruchom program Visual Studio i zaimportuj zapisane ustawienia z wyeksportowanego pliku ustawień.
+1. Otwórz program Visual Studio i zaimportuj zapisane ustawienia z wyeksportowanego pliku ustawień.
 
 ::: moniker-end
 

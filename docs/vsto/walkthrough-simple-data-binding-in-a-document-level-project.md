@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981065"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Przewodnik: Proste powiązanie danych w projekcie na poziomie dokumentu
   W tym instruktażu przedstawiono podstawy powiązanie danych w projektach na poziomie dokumentu. Jedno pole danych w bazie danych programu SQL Server jest powiązana z nazwanym zakresem w programie Microsoft Office Excel. Przewodnik pokazuje także sposobu dodawania formantów, które umożliwiają użytkownikowi przewiń wszystkie rekordy w tabeli.

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: df36d255f5277ff9c91901b1ebe12daaef3c7c19
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950942"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Odwołanie do schematu szablonu Visual Studio
 Ta sekcja zawiera informacje o elementach języka XML w *.vstemplate* pliki, które są plikami, które przechowują metadane szablonów projektów, szablonów elementów i startowe.
@@ -37,18 +37,18 @@ Ta sekcja zawiera informacje o elementach języka XML w *.vstemplate* pliki, kt�
 |[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|--|Nazwa<br /><br /> Wartość|
 |[Customparameters —](../extensibility/customparameters-element-visual-studio-templates.md)|CustomParameter|--|
 |[Defaultname —](../extensibility/defaultname-element-visual-studio-templates.md)|--|--|
-|[Opis](../extensibility/description-element-visual-studio-templates.md)|--|Package<br /><br /> ID|
+|[Opis](../extensibility/description-element-visual-studio-templates.md)|--|Package<br /><br /> Identyfikator|
 |[EnableEditOfLocationField](../extensibility/enableeditoflocationfield-element-visual-studio-templates.md)|--|--|
 |[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|--|--|
 |[Folder](../extensibility/folder-element-visual-studio-project-templates.md)|ProjectItem<br /><br /> Folder|Nazwa|
 ||[przestarzały]|--|
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|--|--|
 |[Ukryte](../extensibility/hidden-element-visual-studio-templates.md)|--|--|
-|[Ikona](../extensibility/icon-element-visual-studio-templates.md)|--|Package<br /><br /> ID|
+|[Ikona](../extensibility/icon-element-visual-studio-templates.md)|--|Package<br /><br /> Identyfikator|
 |[Locationfield —](../extensibility/locationfield-element-visual-studio-project-templates.md)|--|--|
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|--|--|
 |[MaxFrameworkVersion](../extensibility/maxframeworkversion-element-visual-studio-templates.md)|--|--|
-|[Nazwa](../extensibility/name-element-visual-studio-templates.md)|--|Package<br /><br /> ID|
+|[Nazwa](../extensibility/name-element-visual-studio-templates.md)|--|Package<br /><br /> Identyfikator|
 |[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|--|--|
 |[PreviewImage](../extensibility/previewimage-element-visual-studio-templates.md)|--|--|
 |[Project](../extensibility/project-element-visual-studio-templates.md)|Folder<br /><br /> ProjectItem|Plik<br /><br /> TargetFileName<br /><br /> ReplaceParameters|

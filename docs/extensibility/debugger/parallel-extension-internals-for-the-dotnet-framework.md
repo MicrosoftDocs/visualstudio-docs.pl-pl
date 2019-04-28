@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0437363dd7d45b95a04a9e58edd45229f14b4c93
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925365"
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>Równoległe elementy wewnętrzne rozszerzeń dla programu .NET Framework
 W tej sekcji opisano wewnętrznych typów, metod i pól klasy, które ułatwiają wdrożenie niestandardowego debugera dla rozszerzenia równoległe w .NET Framework.

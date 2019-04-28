@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3095bccd25548e55f750ee11f26d20fdc9fe603d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 39137d5fe60a3c91c8fd3904e797eb83420a8f5d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384025"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Instrukcje: Korzystanie z funkcji Edytuj i kontynuuj [C#]
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Z funkcją Edytuj i Kontynuuj dla języka C# można wprowadzić zmiany do kodu w
  Edytuj i Kontynuuj jest wywoływane automatycznie, gdy możesz wprowadzać zmiany w trybie przerwania, a następnie wybierz wykonywania debugera polecenia, takie jak **Kontynuuj**, **kroku**, lub **Ustaw następną instrukcję**, lub oceń funkcję w oknie debugera.  
   
 > [!NOTE]
->  Edytuj i Kontynuuj nie jest obsługiwane podczas debugowania platformy kompaktowej, zoptymalizowanego kodu mieszanego natywnego/zarządzanego lub kodu integracji środowiska uruchomieniowego (języka wspólnego CLR) wspólnego języka programu SQL Server. Jeśli spróbujesz zastosować zmiany kodu w jednym z tych scenariuszy, debuger wstawia się okno dialogowe wyjaśniające, że Edytuj i Kontynuuj nie jest obsługiwany.  
+> Edytuj i Kontynuuj nie jest obsługiwane podczas debugowania platformy kompaktowej, zoptymalizowanego kodu mieszanego natywnego/zarządzanego lub kodu integracji środowiska uruchomieniowego (języka wspólnego CLR) wspólnego języka programu SQL Server. Jeśli spróbujesz zastosować zmiany kodu w jednym z tych scenariuszy, debuger wstawia się okno dialogowe wyjaśniające, że Edytuj i Kontynuuj nie jest obsługiwany.  
   
 ### <a name="to-invoke-edit-and-continue-automatically"></a>Aby wywołać Edytuj i Kontynuuj automatycznie  
   

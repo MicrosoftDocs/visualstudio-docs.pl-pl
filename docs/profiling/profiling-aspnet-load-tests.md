@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: e78aa662d8bd90f3b2d11766d3a43f42dc1bbccf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994966"
 ---
 # <a name="profile-aspnet-load-tests"></a>Testów obciążenia ASP.NET profilu
 Możesz zbierać profilowania danych z automatycznych [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] testy uruchamiane nad projektami witryny sieci Web platformy ASP.NET sieci web. Można zebrać danych o interakcji między pobierania próbek i warstwy. Więcej informacji znajduje się w następujących tematach:

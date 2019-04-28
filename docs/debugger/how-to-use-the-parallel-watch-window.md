@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e41e3df54245b023a86f20921c4bfd4de74a952
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6026ab6d0d59fb3a8f945e554fda26f10d98f952
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388471"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Ustawianie wyrażenia kontrolnego na zmiennych w równoległych wątków w programie Visual Studio (C#, Visual Basic, C++)
 W oknie czujki równoległej może jednocześnie wyświetlać wartości, które zawiera jedno wyrażenie, w wielu wątkach. Każdy wiersz reprezentuje wątek, który jest uruchomiony w aplikacji, ale wątek może być reprezentowany w wielu wierszach. Dokładniej mówiąc każdy wiersz reprezentuje wywołanie funkcji, w których funkcja Podpis pasuje do funkcji w bieżącej ramki stosu. Można sortować, zmienić kolejność, Usuń i grupować elementy, które w kolumnach. Możesz Flaga, Usuń flagę, blokowanie (zawieszenie) i Odblokuj wątki (Wznów). Następujące kolumny są wyświetlane w **równoległego wyrażenia kontrolnego** okna:
@@ -34,7 +34,7 @@ W oknie czujki równoległej może jednocześnie wyświetlać wartości, które 
 - Konfigurowalna kolumna, która może wyświetlać maszynę, proces, kafelków, zadania i wątku.
 
   > [!TIP]
-  >  Aby wyświetlić informacje o zadaniu w **równoległego wyrażenia kontrolnego** okna, należy najpierw otworzyć **zadań** okna.
+  > Aby wyświetlić informacje o zadaniu w **równoległego wyrażenia kontrolnego** okna, należy najpierw otworzyć **zadań** okna.
 
 - Pustą *Dodaj wyrażenie kontrolne* kolumn, w których można wprowadzić wyrażenia, aby obejrzeć.
 
@@ -87,4 +87,4 @@ W oknie czujki równoległej może jednocześnie wyświetlać wartości, które 
 ## <a name="see-also"></a>Zobacz też
 - [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Instrukcje: Korzystanie z okna wątków procesora GPU](../debugger/how-to-use-the-gpu-threads-window.md)
-- [Przewodnik: Debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [Przewodnik: debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

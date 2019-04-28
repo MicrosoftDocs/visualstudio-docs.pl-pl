@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 03b96f80a6b595a3f037bd0b08111540fa5b4ca2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976723"
 ---
 # <a name="themes-workflow-designer-options-dialog-box-legacy"></a>Motywy, Projektant przepływu pracy, Opcje, okno dialogowe (starsza wersja)
 W tym temacie opisano sposób użycia **motywy, Projektant przepływu pracy, opcje** okno dialogowe w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

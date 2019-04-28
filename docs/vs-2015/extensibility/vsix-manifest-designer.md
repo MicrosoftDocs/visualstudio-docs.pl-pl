@@ -14,12 +14,12 @@ ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 308259e7addcf41ae6e15191934a8c37ac3f57b5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 450d306718906c3b76bf05982594045e7fd215f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387566"
 ---
 # <a name="vsix-manifest-designer"></a>Projektant manifestu VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Modyfikuje VSIX plik manifestu pakietu, który określa zachowanie podczas insta
  Aby otworzyć **Projektant manifestu VSIX**, zlokalizuj plik source.extension.vsixmanifest w **Eksploratora rozwiązań**i Otwórz plik. Jeśli plik nie zawiera prawidłowy kod XML, Projektant manifestu nie zostanie otwarty.  
   
 > [!NOTE]
->  Source.Extension.vsixmanifest przekazywane są do extension.vsixmanifest podczas tworzenia pakietu.  
+> Source.Extension.vsixmanifest przekazywane są do extension.vsixmanifest podczas tworzenia pakietu.  
   
 ## <a name="uielement-list"></a>Lista elementów UI  
  **Projektant manifestu VSIX** zawiera cztery sekcje, które odnoszą się do tych elementów najwyższego poziomu schematu:  

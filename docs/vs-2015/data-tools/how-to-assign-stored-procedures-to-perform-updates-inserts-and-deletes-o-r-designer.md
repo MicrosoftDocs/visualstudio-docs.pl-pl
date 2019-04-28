@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84aa3400eb6b64e8904d95e0fce7b43ae9351ad8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1b5834e00cfaf43d1e5230ffbb221dbd5044d687
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386838"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Instrukcje: Przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,10 +22,10 @@ ms.locfileid: "60060868"
 Procedury składowane, które mogą być dodawane do Projektanta obiektów relacyjnych lub wykonywane co typowe <xref:System.Data.Linq.DataContext> metody. One może również zastąpić to ustawienie domyślne [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] zachowania w czasie wykonywania, który wykonuje wstawiania, aktualizacji i usuwa podczas zmiany są zapisywane z klas jednostek bazy danych (na przykład w przypadku, gdy wywołanie <xref:System.Data.Linq.DataContext.SubmitChanges%2A> metody).  
   
 > [!NOTE]
->  Jeśli Twoja procedura składowana ma zwracać wartości, które muszą zostać odesłany do klienta (na przykład wartości obliczane w procedurze składowanej), utworzyć parametry wyjściowe w przechowywanych procedur. Jeśli nie możesz użyć parametrów wyjściowych, zapisu przesłonięcia implementację metody częściowej, zamiast polegania na generowany przez projektanta O/R. Wartości wygenerowanych w bazie danych elementów członkowskich muszą być podane odpowiednie wartości po pomyślnym ukończeniu operacji WSTAWIANIA lub aktualizacji. Aby uzyskać więcej informacji, zobacz [obowiązki dewelopera w zastępowanie domyślne zachowanie](http://msdn.microsoft.com/library/c6909ddd-e053-46a8-980c-0e12a9797be1).  
+> Jeśli Twoja procedura składowana ma zwracać wartości, które muszą zostać odesłany do klienta (na przykład wartości obliczane w procedurze składowanej), utworzyć parametry wyjściowe w przechowywanych procedur. Jeśli nie możesz użyć parametrów wyjściowych, zapisu przesłonięcia implementację metody częściowej, zamiast polegania na generowany przez projektanta O/R. Wartości wygenerowanych w bazie danych elementów członkowskich muszą być podane odpowiednie wartości po pomyślnym ukończeniu operacji WSTAWIANIA lub aktualizacji. Aby uzyskać więcej informacji, zobacz [obowiązki dewelopera w zastępowanie domyślne zachowanie](http://msdn.microsoft.com/library/c6909ddd-e053-46a8-980c-0e12a9797be1).  
   
 > [!NOTE]
->  [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] uchwyty wygenerowanych w bazie danych wartości automatycznie tożsamości (automatycznego przyrostu), rowguidcol (identyfikator GUID generowany przez bazy danych) i kolumn sygnatur czasowych. Wartości generowanych przez bazę danych w innych typów kolumn spowoduje nieoczekiwane wartości null. Aby zwrócić wartości wygenerowanych w bazie danych, należy ręcznie ustawić <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> do `true` i <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> do jednej z następujących czynności: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, lub <xref:System.Data.Linq.Mapping.AutoSync>.  
+> [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] uchwyty wygenerowanych w bazie danych wartości automatycznie tożsamości (automatycznego przyrostu), rowguidcol (identyfikator GUID generowany przez bazy danych) i kolumn sygnatur czasowych. Wartości generowanych przez bazę danych w innych typów kolumn spowoduje nieoczekiwane wartości null. Aby zwrócić wartości wygenerowanych w bazie danych, należy ręcznie ustawić <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> do `true` i <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> do jednej z następujących czynności: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, lub <xref:System.Data.Linq.Mapping.AutoSync>.  
   
 ## <a name="configuring-the-update-behavior-of-an-entity-class"></a>Konfigurowanie zachowania aktualizacji klasę jednostki  
  Domyślnie, logika aktualizacji bazy danych (operacje wstawiania, aktualizacji i usunięć) za pomocą zmian wprowadzonych do danych w [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] klas jednostek są dostarczane przez [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] środowiska uruchomieniowego. Środowisko uruchomieniowe tworzy domyślne polecenia Insert, Update i Delete, które opierają się na schemat tabeli (kolumny i informacje o kluczu podstawowym). Gdy zachowanie domyślne jest niepożądany, możesz skonfigurować zachowanie aktualizacji, przypisując określonych procedur składowanych do wykonania niezbędnych operacji wstawiania, aktualizacji, i usuwa wymagane do manipulowania danymi w tabeli. Ponadto można to zrobić, jeśli domyślne zachowanie nie jest generowany, na przykład, gdy Twoje klas jednostek mapy do widoków. Na koniec można zastąpić domyślne zachowanie aktualizacji, gdy baza danych wymaga dostępu do tabel za pomocą procedur składowanych.  
@@ -55,12 +55,12 @@ Procedury składowane, które mogą być dodawane do Projektanta obiektów relac
 9. Sprawdź listę **argumenty metody** i **właściwości klasy** do sprawdzenia, czy **argumenty metody** mapy do odpowiedniego **właściwości klasy**. Mapowanie oryginalnego argumenty metody (Original_*ArgumentName*) do oryginalne właściwości (*PropertyName* (oryginalne)) dla polecenia Update i Delete.  
   
     > [!NOTE]
-    >  Domyślnie argumenty metody są mapowane na właściwości klasy, gdy nazwy są zgodne. Zmieniona właściwość, których nazwy nie są już zgodne między tabelą i Klasa jednostki, trzeba wybrać właściwość odpowiednik klasy do mapowania na, jeśli projektant nie może określić poprawne mapowania.  
+    > Domyślnie argumenty metody są mapowane na właściwości klasy, gdy nazwy są zgodne. Zmieniona właściwość, których nazwy nie są już zgodne między tabelą i Klasa jednostki, trzeba wybrać właściwość odpowiednik klasy do mapowania na, jeśli projektant nie może określić poprawne mapowania.  
   
 10. Kliknij przycisk **OK** lub **zastosować**.  
   
     > [!NOTE]
-    >  Można kontynuować, skonfiguruj zachowanie dla każdej kombinacji klasy/zachowania, tak długo, jak możesz kliknąć pozycję **Zastosuj** po wprowadzeniu każdej zmiany. Jeśli zmienisz klasy lub zachowania przed kliknięciem przycisku **Zastosuj**, okno dialogowe ostrzeżenia, zapewniając pojawi się możliwości, aby zastosować zmiany.  
+    > Można kontynuować, skonfiguruj zachowanie dla każdej kombinacji klasy/zachowania, tak długo, jak możesz kliknąć pozycję **Zastosuj** po wprowadzeniu każdej zmiany. Jeśli zmienisz klasy lub zachowania przed kliknięciem przycisku **Zastosuj**, okno dialogowe ostrzeżenia, zapewniając pojawi się możliwości, aby zastosować zmiany.  
   
      Aby przywrócić za pomocą domyślnej logiki czasu wykonywania aktualizacji, kliknij wielokropek obok Insert, Update, lub Usuń polecenie w **właściwości** okna, a następnie wybierz **korzystania ze środowiska uruchomieniowego** w  **Konfigurowanie zachowania** okno dialogowe.  
   

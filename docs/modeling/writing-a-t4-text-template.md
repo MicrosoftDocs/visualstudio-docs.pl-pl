@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68bb68160b78df4abe1b6874080c9a3ec91a3e31
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2549ad27f0f05d3425dd6625e9d48fdfab4db3a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386065"
 ---
 # <a name="writing-a-t4-text-template"></a>Pisanie szablonu tekstowego T4
 Szablon tekstu zawiera tekst, który zostanie z niego wygenerowany. Na przykład szablon, który tworzy stronę sieci web będzie zawierać "\<html >..." i wszystkie inne standardowe elementy strony HTML. Dodaje do szablonu są *bloki sterujące*, które stanowią fragmenty kodu programu. Bloki sterujące zawierają zmienne wartości i umożliwiają warunkowość oraz powtarzalność części tekstu.
@@ -94,7 +94,7 @@ Hello!
  Blok tekstu można wstawić w każdym miejscu kodu, gdzie jest dozwolona instrukcja `Write();`.
 
 > [!NOTE]
->  Osadzenie blok tekstu wewnątrz instrukcji złożonej, takich jak pętli lub warunku, zawsze ujmować w nawiasy klamrowe {...} aby zawierała blok tekstu.
+> Osadzenie blok tekstu wewnątrz instrukcji złożonej, takich jak pętli lub warunku, zawsze ujmować w nawiasy klamrowe {...} aby zawierała blok tekstu.
 
 ### <a name="expression-control-blocks"></a>Bloki sterowania wyrażeniami
  Blok sterowania wyrażeniem oblicza wartość wyrażenia i konwertuje ją na ciąg. Powstały ciąg jest wstawiany do pliku wyjściowego.

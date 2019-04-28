@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edffb60e59d2f8a9c8c9fe417bedb4d578215c9c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a00c52b9c167d1fbffc64135b0454110dc929286
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388581"
 ---
-# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Przewodnik: Brak obiektów spowodowany błędnie skonfigurowanym potokiem
+# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Przewodnik: brak obiektów spowodowany błędnie skonfigurowanym potokiem
 W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] narzędziami diagnostyki grafiki do zbadania obiekt, który nie istnieje ze względu na program do cieniowania pikseli nie ustawiono.
 
  Ten instruktaż ilustruje następujące zadania:
@@ -61,7 +61,7 @@ W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-qu
     W **etapy potoku grafiki** oknie **asemblera dane wejściowe** etapu obiektu, który pokazuje, zanim jest przekształcane i **program do cieniowania wierzchołków** etap zawiera takie same obiekt po jest przekształcane. W tym scenariuszu należy zauważyć, że **etapy potoku grafiki** Pokazuje okno **asemblera dane wejściowe** i **program do cieniowania wierzchołków** przygotowuje, ale nie **programu do cieniowania pikseli**  etapu dla jednego wywołania rysowania.
 
    > [!NOTE]
-   >  Jeśli inne etapy potoku — na przykład, moduł cieniujący kadłuba, program do cieniowania domeny lub etapów modułu cieniującego geometrii — przetworzyć obiektu, żadnego z nich mogą być przyczyną tego problemu. Zazwyczaj problem dotyczy najwcześniejszym etapie, w którym nie jest wyświetlany wynik, lub jest wyświetlany w nieoczekiwany sposób.
+   > Jeśli inne etapy potoku — na przykład, moduł cieniujący kadłuba, program do cieniowania domeny lub etapów modułu cieniującego geometrii — przetworzyć obiektu, żadnego z nich mogą być przyczyną tego problemu. Zazwyczaj problem dotyczy najwcześniejszym etapie, w którym nie jest wyświetlany wynik, lub jest wyświetlany w nieoczekiwany sposób.
 
 4. Zatrzymaj po przejściu do wywołania rysowania, która odnosi się do nieistniejącego obiektu. W tym scenariuszu **etapy potoku grafiki** okno wskazuje, czy geometrii został wydany do procesora GPU (wskazywane przez obecność **asemblera dane wejściowe** etapu) i po przekształceniu (wskazywanym przez  **Program do cieniowania wierzchołków** etapu), ale nie będzie wyświetlany w obiektu docelowego renderowania, ponieważ ma się nie podoba się program do cieniowania pikseli aktywne (wskazywanym przez brak **programu do cieniowania pikseli** etapu). W tym scenariuszu może nawet zobaczysz nakładające nieistniejącego obiektu w **scalanie danych wyjściowych** etapu:
 
@@ -84,7 +84,7 @@ W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-qu
 1. Znajdź `PSSetShader` wywołania, które odnosi się do nieistniejącego obiektu. W **Lista zdarzeń graficznych** oknie wprowadź "Draw; PSSetShader"w **wyszukiwania** polu w prawym górnym rogu **Lista zdarzeń graficznych** okna. Filtruje listę, tak aby zawierała tylko zdarzenia "PSSetShader" i zdarzenia, które mają "Draw" w tytułach. Wybierz pierwsze `PSSetShader` wywołania, które pojawia się przed wywołaniem rysowania brakuje obiektu.
 
    > [!NOTE]
-   >  `PSSetShader` nie będzie wyświetlane w **Lista zdarzeń graficznych** okna, jeśli nie została ustawiona podczas tej ramki. Zwykle dzieje się tak tylko wtedy, gdy program do cieniowania pikseli tylko jeden jest używany dla wszystkich obiektów lub jeśli `PSSetShader` wywołanie przypadkowo została pominięta podczas tej ramki. W obu przypadkach firma Microsoft zaleca, wyszukiwanie kod źródłowy aplikacji `PSSetShader` wywołania i użyciu tradycyjnych technik debugowania, aby sprawdzić zachowanie tych wywołań.
+   > `PSSetShader` nie będzie wyświetlane w **Lista zdarzeń graficznych** okna, jeśli nie została ustawiona podczas tej ramki. Zwykle dzieje się tak tylko wtedy, gdy program do cieniowania pikseli tylko jeden jest używany dla wszystkich obiektów lub jeśli `PSSetShader` wywołanie przypadkowo została pominięta podczas tej ramki. W obu przypadkach firma Microsoft zaleca, wyszukiwanie kod źródłowy aplikacji `PSSetShader` wywołania i użyciu tradycyjnych technik debugowania, aby sprawdzić zachowanie tych wywołań.
 
 2. Otwórz **stos wywołań zdarzenia grafiki** okna. Na **Graphics Diagnostics** narzędzi, wybierz **stos wywołań zdarzenia grafiki**.
 
@@ -93,7 +93,7 @@ W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-qu
     ![Kod, który nie zainicjowania programu do cieniowania pikseli](media/gfx_diag_demo_misconfigured_pipeline_step_5.png "gfx_diag_demo_misconfigured_pipeline_step_5")
 
    > [!NOTE]
-   >  Jeśli po prostu, sprawdzając stos wywołań, nie można zlokalizować źródła wartość null, zaleca się Ustaw warunkowego punktu przerwania na `PSSetShader` wywołań w taki sposób, że wykonywanie programu przerwanie wykonywania przy programu do cieniowania pikseli zostanie ustawiona na wartość null. Następnie ponownie uruchom aplikację w trybie debugowania i użyj tradycyjne techniki debugowania, aby zlokalizować źródła wartości null.
+   > Jeśli po prostu, sprawdzając stos wywołań, nie można zlokalizować źródła wartość null, zaleca się Ustaw warunkowego punktu przerwania na `PSSetShader` wywołań w taki sposób, że wykonywanie programu przerwanie wykonywania przy programu do cieniowania pikseli zostanie ustawiona na wartość null. Następnie ponownie uruchom aplikację w trybie debugowania i użyj tradycyjne techniki debugowania, aby zlokalizować źródła wartości null.
 
    Aby rozwiązać ten problem, należy przypisać program do cieniowania pikseli poprawne za pomocą pierwszego parametru `ID3D11DeviceContext::PSSetShader` wywołania interfejsu API.
 

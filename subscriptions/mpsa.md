@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Subskrypcje programu Visual Studio w produkty firmy Microsoft i umowy o świadczenie usług (MPSA)
 searchscope: VS Subscription
 ms.openlocfilehash: cf0a6c0c7f09cefa70edd0af1dcedf46afdf81bf
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002321"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Subskrypcje programu Visual Studio w Microsoft Products and Services Agreement (MPSA)
 

@@ -6,11 +6,11 @@ author: bytesguy
 ms.author: adhartle
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
 ms.openlocfilehash: a19c63b2ce32095a3af4aa4586b8ab0d604a14dc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58157857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982707"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Domyślne skróty klawiaturowe w programie Visual Studio dla komputerów Mac
 
@@ -54,14 +54,14 @@ Wiele poleceń w programie Visual Studio dla komputerów Mac dostęp przy użyci
 |-|-|
 |Przełączaj między powiązanymi plikami|**⌃⌘↑**|
 
-## <a name="edit"></a>Edycja
+## <a name="edit"></a>Edytowanie
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
 |Tryb edytowania ograniczenia|**⌘E**|
 |Kopiuj|**⌘C**|
 |Wytnij|**⌘X**|
-|Usuń|**⌘⌫**|
+|Usuwanie|**⌘⌫**|
 |Formatuj dokument|**⌃I**|
 |Zwiększ wcięcie zaznaczenia|**⌘]**|
 |Wklej|**⌘V**|
@@ -105,7 +105,7 @@ Wiele poleceń w programie Visual Studio dla komputerów Mac dostęp przy użyci
 |Zapisanie|**⌘S**|
 |Zapisz wszystko|**⇧⌘S**|
 
-## <a name="help"></a>Pomoc
+## <a name="help"></a>Help
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
@@ -119,7 +119,7 @@ Wiele poleceń w programie Visual Studio dla komputerów Mac dostęp przy użyci
 |Implementuj komunikaty aparatu Unity|**⇧⌘M**|
 |Sprawdzanie|**⌥⌘I**|
 
-## <a name="project"></a>Project
+## <a name="project"></a>Projekt
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|

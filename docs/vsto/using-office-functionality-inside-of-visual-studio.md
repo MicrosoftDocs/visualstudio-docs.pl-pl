@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c47ed9639a33ecdea3451c63b729d959f6855e5d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982329"
 ---
 # <a name="use-office-functionality-inside-of-visual-studio"></a>Użyj funkcji pakietu Office w Visual Studio
   Podczas tworzenia projektu na poziomie dokumentu, dokument i skojarzonej aplikacji znajdują się w programie Visual Studio umożliwiające projektowanie i współpracować bezpośrednio z dokumentu. W przypadku programu Microsoft Office aplikacji Otwórz w programie Visual Studio zazwyczaj działa zgodnie z oczekiwaniami. Jednak niektóre funkcje aplikacji jest inny lub niedostępny.

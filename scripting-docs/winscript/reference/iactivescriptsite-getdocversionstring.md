@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7327b71329c1f476eab9c27d5e0d5a047664abfa
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58147959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992742"
 ---
 # <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
 Pobiera ciąg zdefiniowany przez hosta, który unikatowo identyfikuje bieżącej wersji dokumentu. Jeśli powiązany dokument został zmieniony poza zakresem skrypt Windows (tak jak w przypadku edytowany przy użyciu programu Notepad strony HTML), aparat skryptów zapisać to wraz z jego utrwalonego stanu wymuszania ponownej kompilacji podczas następnego załadowaniu skryptu.  

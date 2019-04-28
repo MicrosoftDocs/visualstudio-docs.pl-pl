@@ -17,11 +17,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 2d995818ec5b8ac01c9776bbf2290da39d2cc40b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59018106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970946"
 ---
 # <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Krok 5. Wdrażanie aplikacji platformy ASP.NET Core na platformie Azure
 

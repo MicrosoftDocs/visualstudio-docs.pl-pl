@@ -9,11 +9,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e20b2f7ebe351aa050ea66468fb33aba8e4a31bc
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969270"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Opcje, Edytor tekstu, XML, formatowanie
 

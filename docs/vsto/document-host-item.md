@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8710fb703b353b267e7057973865cf845ebf79a9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976487"
 ---
 # <a name="document-host-item"></a>Element hosta dokumentu
   <xref:Microsoft.Office.Tools.Word.Document> Hosta elementu to typ, który rozszerza <xref:Microsoft.Office.Interop.Word.Document> typu na podstawie podstawowego zestawu międzyoperacyjnego dla programu Word. <xref:Microsoft.Office.Tools.Word.Document> Element hosta zawiera wszystkie właściwości, metody i zdarzenia jako <xref:Microsoft.Office.Interop.Word.Document> obiektu, ale również udostępnia dodatkowe zdarzenia i działa jako kontener dla formantów hosta i kontrolek formularzy Windows Forms.

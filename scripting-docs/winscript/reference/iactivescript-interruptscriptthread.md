@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: aa46bc95087b3defaf739cc3473c58e29a93071c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58155933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935511"
 ---
 # <a name="iactivescriptinterruptscriptthread"></a>IActiveScript::InterruptScriptThread
 Przerwanie wykonywania uruchomionemu wątkowi skryptu (obiekt sink zdarzenia, natychmiastowe wykonanie lub wywołanie makra). Ta metoda może służyć do zakończenia skryptu, który jest zablokowany (na przykład w pętli nieskończonej). Mogą być wywoływane z wątków-base bez skutkuje objaśnienia-base na obiektach hosta lub do [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) metody.  

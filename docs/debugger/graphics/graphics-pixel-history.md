@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23bdabcdd19bd12729d7b505ef4897d38ba8ad69
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 23ada46a28d692daf238147ea07f34d440a99869
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388585"
 ---
 # <a name="graphics-pixel-history"></a>Historia pikseli grafiki
 Okno Historia pikseli grafiki w analizatora grafiki programu Visual Studio pomaga zrozumieć wpływ piksela określone przez zdarzenia Direct3D występujących podczas ramki grach i aplikacjach.
@@ -59,7 +59,7 @@ Okno Historia pikseli grafiki w analizatora grafiki programu Visual Studio pomag
 3. W obszarze podstawowego interesuje Cię, skorzystaj z linku tytuł programu do cieniowania — na przykład, kliknij link **obj:30 program do cieniowania wierzchołków** Aby wyświetlić kod źródłowy modułu cieniującego wierzchołek.
 
     > [!TIP]
-    >  Liczba obiektów **obj:30**, identyfikuje ten program do cieniowania w całym interfejsu analizatora grafiki przykład w oknie etapy potoku i tabela obiektu.
+    > Liczba obiektów **obj:30**, identyfikuje ten program do cieniowania w całym interfejsu analizatora grafiki przykład w oknie etapy potoku i tabela obiektu.
 
 ##### <a name="to-debug-a-shader"></a>Do debugowania cieniowania
 

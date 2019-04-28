@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 421cc23fb807a571b2b36f5f1def5df46a99492b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946618"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>Instrukcja „continue" nie może występować poza pętlą
 Podjęto próbę użycia **nadal** instrukcji poza pętlą. **Nadal** instrukcja może być używana tylko w treści Odp.:  

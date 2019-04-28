@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 4442143b2766ed3608a852d0f811a6b943fd19df
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007109"
 ---
 # <a name="function-expected"></a>Oczekiwana funkcja
 Albo próbowałeś wywołać za pomocą jednego z **prototypu funkcji** metody na obiekt, który nie był `Function` obiektu lub możesz użyć obiektu w kontekście wywołań funkcji. Na przykład, poniższy kod generuje ten błąd, ponieważ **przykład** nie jest funkcją.  

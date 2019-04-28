@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Szczegółowe informacje dotyczące subskrypcji, które są oferowane za pośrednictwem firmy Microsoft dla programów próbnych programu.
 searchscope: VS Subscription
 ms.openlocfilehash: 06bd2dac43adbfbbd48aad6fff796a3dbdd023ca
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007787"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Subskrypcje programu Visual Studio jest oferowana dla startupów
 Kwalifikowana startupów, którzy dołączają do firmy Microsoft dla programów próbnych program kwota zobowiązania, tym 5 [miesięczne subskrypcje chmury programu Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/). Są to same subskrypcje, które są oferowane w komercyjnie, bez ograniczenia specjalne lub ograniczenia. Każda subskrypcja musi być przypisana do użytkownika końcowego, (który jest licencjonowanego użytkownika) zanim użytkownik może uruchomić program Visual Studio i być rozpoznany jako subskrybenta programu Visual Studio Enterprise w usługom DevOps platformy Azure.

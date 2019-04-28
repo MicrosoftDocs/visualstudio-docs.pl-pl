@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 036a99fc0f25f2302c82d043fa20cf6e35687668
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929753"
 ---
 # <a name="spy-menu-commands"></a>Polecenia w menu Spy
 **Spy** menu zawiera polecenia służące do pracy z programu Spy ++ Windows i widoków.

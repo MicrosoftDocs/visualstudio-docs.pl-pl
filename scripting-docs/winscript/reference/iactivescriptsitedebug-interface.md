@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3cd8043648586ed3c614cbb137e51d992d7ae29b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58145781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992465"
 ---
 # <a name="iactivescriptsitedebug-interface"></a>Interfejs IActiveScriptSiteDebug
 Implementowanie hostów inteligentnych `IActiveScriptSiteDebug` interfejsu, aby wykonać Zarządzanie dokumentami i do wzięcia udziału w debugowaniu. `IActiveScriptSite` Obiekt zwykle zawiera implementację `IActiveScriptSiteDebug` interfejsu. Jeśli zostanie to zrobione, należy wywołać `IActiveScriptSite::QueryInterface` metodę, aby uzyskać `IActiveScriptSiteDebug` interfejsu.  

@@ -1,16 +1,16 @@
 ---
-title: Edytor motywów
+title: Motywy edytora
 description: W tym artykule opisano sposób edycji motywu edytora lub dodać własne w programie Visual Studio dla komputerów Mac
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 11/06/2018
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
-ms.openlocfilehash: 55ef6a5de9ed0876228d7cca2344b639342e4b91
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
-ms.translationtype: HT
+ms.openlocfilehash: 0b9b9ba5697b68aab87133d05a8f8112decb3b09
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62983769"
 ---
 # <a name="editor-themes"></a>Edytor motywów
 
@@ -28,7 +28,7 @@ Mogą być dodawane nowe motywy kolorów, pod warunkiem, że są one w jednym z 
 
 Po znaleźć lub utworzyć nowy motyw i pobrany na komputer lokalny należy dodać go, wykonując następujące czynności:
 
-1. Wybierz **Dodaj** przycisk w oknie dialogowym opcji motywy kolorów: ![Dodaj motyw kolorów](media/source-editor-image20.png)
+1. Wybierz **Dodaj** przycisk w oknie dialogowym opcji motywy kolorów:  ![Dodaj motyw kolorów](media/source-editor-image20.png)
 2. Przeglądanie w poszukiwaniu motyw na komputerze lokalnym i naciśnij klawisz **Otwórz**.
-3. Motyw jest dodawany do dolnej części listy wstępnie zainstalowane kompozycje. Aby wyświetlić podgląd motywu, wybierz ją: ![podglądu motywu kolorów](media/source-editor-image21.png)
+3. Motyw jest dodawany do dolnej części listy wstępnie zainstalowane kompozycje. Aby wyświetlić podgląd motywu, wybierz ją: ![Kolor motywów w wersji zapoznawczej](media/source-editor-image21.png)
 4. Aby zastosować motyw, naciśnij **OK** przycisku.

@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e4b14be6df351a6975fb8a7cf6fa506a5d4f6041
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979435"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Instrukcje: Wyniki testu obciążeniowego dostęp do analizy
 

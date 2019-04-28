@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cdf4d9657832c2dc1e7691eed5c334e770de5700
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976982"
 ---
 # <a name="creating-a-workflow-project"></a>Tworzenie projektu przepływu pracy
 Przepływy pracy, [!INCLUDE[indigo1](../includes/indigo1-md.md)] usług przepływu pracy, działań niestandardowych i projektanci mogą być tworzone za pomocą działania niestandardowego [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablony projektów. W tej sekcji opisano sposób tworzenia bibliotek i aplikacji przy użyciu szablonów projektu dostępne w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -28,7 +28,7 @@ Przepływy pracy, [!INCLUDE[indigo1](../includes/indigo1-md.md)] usług przepły
  Ostatnie temacie opisano sposób dodawania działań przepływu pracy, projektantów i usługi lub innego [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu elementy do istniejącego przepływu pracy (lub inną).  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Instrukcje: Tworzenie aplikacji konsoli przepływu pracy](../workflow-designer/how-to-create-a-workflow-console-application.md)  
+ [Instrukcje: Tworzenie aplikacji konsolowej przepływu pracy](../workflow-designer/how-to-create-a-workflow-console-application.md)  
  W tym artykule opisano sposób tworzenia aplikacji konsoli przepływu pracy.  
   
  [Instrukcje: Tworzenie aplikacji usługi przepływu pracy WCF](../workflow-designer/how-to-create-a-wcf-workflow-service-application.md)  
@@ -40,7 +40,7 @@ Przepływy pracy, [!INCLUDE[indigo1](../includes/indigo1-md.md)] usług przepły
  [Instrukcje: Tworzenie biblioteki projektanta działań](../workflow-designer/how-to-create-an-activity-designer-library.md)  
  W tym artykule opisano sposób tworzenia projektantach, które są dostosowane do wielu odbiorców.  
   
- [Instrukcje: Dodaj nowy element do projektu przepływu pracy](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)  
+ [Instrukcje: Dodawanie nowego elementu do projektu przepływu pracy](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)  
  W tym artykule opisano sposób dodawania działań przepływu pracy dodatkowe lub projektantów i innych [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] elementy, takie jak działania kodu do istniejącego projektu.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  

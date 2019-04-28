@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05fd28e6b47d74c28edc491458b73b487d282a45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a2418df5a831416d74328e4ca926cdf8c3a721e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383428"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015 — Zapraszamy!
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "60067732"
 Witamy w programie Visual Studio! Mamy wszystko, czego potrzebujesz do tworzenia atrakcyjnych aplikacji dla urządzeń lub aplikacji komputerowych, sieci Web i w chmurze. Pisanie kodu dla systemów iOS, Android i Windows w jednym środowisku IDE. Uzyskaj wspaniałych technologii IntelliSense, nawigowanie po kodzie łatwe, szybkie kompilacje i szybkiego wdrożenia. Visual Studio zwiększa produktywność i można łatwo wykonywać swoją pracę, samodzielnie lub jako część większy zespół.
 
 > [!NOTE]
->  Kliknij tutaj, aby uzyskać informacje o wersji dla [programu Visual Studio 2015 update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
+> Kliknij tutaj, aby uzyskać informacje o wersji dla [programu Visual Studio 2015 update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
 >
->  Kliknij tutaj, aby uzyskać informacje o wersji dla [programu Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
+> Kliknij tutaj, aby uzyskać informacje o wersji dla [programu Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
 
  Pobierz [programu Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=517106) bezpłatnie, aby razu Rozpocznij kodowanie. Jeśli chcesz zrobić wieloplatformowego opracowywania aplikacji, upewnij się, że należy zainstalować pakiety opcjonalne. (Można uzyskać większą liczbą funkcji za pomocą [inne wersje programu Visual Studio](http://www.visualstudio.com/products/compare-visual-studio-products-vs).)
 

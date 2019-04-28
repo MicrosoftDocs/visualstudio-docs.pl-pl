@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 569f1027163d5651d184254b4e6f57a02df2a39a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007844"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>Użyj modułów, aby uwzględnić pliki w rozwiązaniu
   Mogą wystąpić sytuacje, kiedy warto wdrożyć pliki do serwera programu SharePoint, niezależnie od ich typu pliku, na przykład nowe strony wzorcowej. Aby to zrobić, można użyć *modułów* (nie należy mylić z [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] modułów kodu). Moduły są kontenerami dla plików w rozwiązaniu programu SharePoint. Po wdrożeniu rozwiązania plików w module są kopiowane do określonych folderów na serwerze programu SharePoint.

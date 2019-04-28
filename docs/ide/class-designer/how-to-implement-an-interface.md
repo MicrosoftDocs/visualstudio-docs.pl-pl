@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e76aeea4c6779e97d882705e8680cd7a3b00d129
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975180"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>Instrukcje: Implementowanie interfejsu w Projektancie klas
 

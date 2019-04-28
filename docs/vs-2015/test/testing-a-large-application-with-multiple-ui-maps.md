@@ -11,12 +11,12 @@ ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5a6a3247ed53b6a84feb203ce0e9b480e7f9ce5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 18180ee3277cdff60d11c0ae35e8aa3c990764de
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386048"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Testowanie dużej aplikacji przy użyciu wielu map UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ W tym temacie omówiono sposób używania kodowanych testów interfejsu użytkow
     **Dodaj nowy element** zostanie wyświetlone okno dialogowe.  
   
    > [!NOTE]
-   >  Musisz być w projektu kodowanego testu interfejsu użytkownika można dodać nowej mapy kodowanego testu interfejsu użytkownika.  
+   > Musisz być w projektu kodowanego testu interfejsu użytkownika można dodać nowej mapy kodowanego testu interfejsu użytkownika.  
   
 3. Wybierz **kodowanego interfejsu użytkownika testu mapy** z listy.  
   

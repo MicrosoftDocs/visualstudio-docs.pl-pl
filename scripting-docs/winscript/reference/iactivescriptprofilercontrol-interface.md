@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 86f4fb8dea97930f717800a14a27740b76eb6c2e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58160761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993062"
 ---
 # <a name="iactivescriptprofilercontrol-interface"></a>Interfejs IActiveScriptProfilerControl
 Implementowany przez aparat skryptów, który obsługuje profilowania. Zazwyczaj obiekt, który implementuje `IActiveScriptProfilerControl` implementuje również [IActiveScript](../../winscript/reference/iactivescript.md) interfejsu. W takim przypadku można uzyskać dojścia do `IActiveScriptProfilerControl` interfejsu, wywołując `IUnknown::QueryInterface` metody dla obiektu. Interfejs zapewnia metody niezbędne do zatrzymywania i uruchamiania profilowania w silnik wykonywania skryptów.  

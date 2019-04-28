@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: eeef19a04245d74d99050930cc3f66da627ffdd9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961787"
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>Instrukcje: Programowe sortowanie danych w arkuszach
   Można sortować dane znajdujące się na listach i zakresach arkusza w czasie wykonywania. Poniższy kod sortuje zakres wielokolumnowych o nazwie `Fruits` przez dane w pierwszej kolumnie, a następnie dane w drugiej kolumnie.

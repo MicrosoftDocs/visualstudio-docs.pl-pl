@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8ce41d6532a7c389d20872c35a216a96910578
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c2ff6d38ef4fcce400888121ef12883b00bcc0c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386707"
 ---
 # <a name="understanding-the-dsl-code"></a>Znajomość kodu DSL
 
@@ -131,7 +131,7 @@ Naciśnij klawisz **F5** i eksperymentowania, jeśli nie jesteś zaznajomiony z 
   Klasa, która reprezentuje modelu domeny. Jest pochodną <xref:Microsoft.VisualStudio.Modeling.DomainModel>.
 
 > [!NOTE]
->  Nie jest taka sama jak klasa główna modelu.
+> Nie jest taka sama jak klasa główna modelu.
 
  Kopiuj i Usuń zamknięcia definiują, co inne elementy powinny być włączone, gdy element zostanie skopiowany lub usunięty. To zachowanie można kontrolować przez ustawienie **propaguje kopiowania** i **propaguje usunąć** właściwości ról na każdej stronie każda relacja. Jeśli chcesz, aby wartości, które mają być określany dynamicznie, można napisać kod, aby przesłonić metody klasy zamknięcia.
 
@@ -340,7 +340,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  Aby dostosować ten plik, Edytuj `.tt` pliku.
 
 > [!WARNING]
->  Po zmodyfikowaniu pliku .tt, aby uwzględnić zasoby, takie jak ikony lub obrazów, upewnij się, czy zasób jest uwzględniony w kompilacji VSIX. W Eksploratorze rozwiązań wybierz plik, a następnie upewnij się, że **Include w VSIX** właściwość `True`.
+> Po zmodyfikowaniu pliku .tt, aby uwzględnić zasoby, takie jak ikony lub obrazów, upewnij się, czy zasób jest uwzględniony w kompilacji VSIX. W Eksploratorze rozwiązań wybierz plik, a następnie upewnij się, że **Include w VSIX** właściwość `True`.
 
  Ten plik Określa, jak język DSL jest spakowany w Visual Studio Integration rozszerzenie (VSIX). Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](../modeling/deploying-domain-specific-language-solutions.md).
 

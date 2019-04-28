@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: da7b1f1bda7fac222d0d47c6bf2a15eaf3a8396f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fa3a91df779094e3e11722dfc7bfc03c58bcea7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383421"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Przewodnik: Konfigurowanie niestandardowego zestawu reguł i korzystanie z niego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Ten poradnik pokazuje jak używać narzędzi analizy kodu, które zostały skonf
     W menu Plik kliknij polecenie **Zapisz wybrane elementy** można zaktualizować pliku projektu przy użyciu informacji o zestawie reguł, które wybrano i jego ustawień.  
   
    > [!TIP]
-   >  W rzeczywistych sytuacji, dobrą praktyką jest nadawanie priorytetów problemy, które chcesz przeanalizować za pomocą analizy kodu na użytek jest rozpoczęcie od **Minimum Rules zalecane** zestaw reguł i rozwiązać problemy żądaną i stopniowo dodawać więcej reguł lub reguła ustawia znaleźć i poprawić dodatkowe problemy.  
+   > W rzeczywistych sytuacji, dobrą praktyką jest nadawanie priorytetów problemy, które chcesz przeanalizować za pomocą analizy kodu na użytek jest rozpoczęcie od **Minimum Rules zalecane** zestaw reguł i rozwiązać problemy żądaną i stopniowo dodawać więcej reguł lub reguła ustawia znaleźć i poprawić dodatkowe problemy.  
   
    Następnie dodasz kod do biblioteki klas, które będzie używane w celu wykazania naruszeń CA1704 "Identyfikatory powinny być zapisane poprawnie" reguł analizy kodu. Aby uzyskać więcej informacji, zobacz [CA1704: Identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
   

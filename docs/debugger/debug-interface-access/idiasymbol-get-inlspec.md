@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b82196d2440c3bf5d5c5c24471bc094f8bc5b7b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8860668452a22413db8c6fc3d0fdc664c7ba36dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401387"
 ---
 # <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
 Ta funkcja pobiera flagę wskazującą, czy funkcja została oznaczona jako wbudowane (przy użyciu jednej z [w tekście, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp) atrybutów).
@@ -39,7 +39,7 @@ HRESULT get_inlSpec(
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
->  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="requirements"></a>Wymagania
 

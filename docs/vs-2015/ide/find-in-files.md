@@ -21,12 +21,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 430f2a55f180428c781e7a8cbe1f78d3a0355128
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1d9c456c22b4d3003d9435f813a4c3c1dc47881
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383387"
 ---
 # <a name="find-in-files"></a>Znajdź w plikach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Znajdź w plikach ** umożliwia wyszukiwanie określonego zestawu plików. Liczb
    Aby anulować operację wyszukiwania, naciśnij klawisze CTRL + BREAK.  
   
 > [!NOTE]
->  Znajdź i Zamień narzędzie nie wyszukuje katalogów przy użyciu `Hidden` lub `System` atrybut.  
+> Znajdź i Zamień narzędzie nie wyszukuje katalogów przy użyciu `Hidden` lub `System` atrybut.  
   
 ## <a name="find-what"></a>Znajdź  
  Aby wyszukać nowy ciąg tekstowy lub wyrażenie, należy je określić w polu. Aby wyszukać dowolne z 20 ciągów, które wyszukiwane ostatnio, Otwórz listę, a następnie wybierz parametry, dla której chcesz wyszukać. Wybierz sąsiadujących **Konstruktor wyrażeń** przycisk, jeśli chcesz użyć co najmniej jednego wyrażenia regularne w wyszukiwanym ciągu. Aby uzyskać więcej informacji, zobacz [za pomocą wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).  
@@ -53,10 +53,10 @@ Znajdź w plikach ** umożliwia wyszukiwanie określonego zestawu plików. Liczb
  Opcja wybrana z **Szukaj w** listy rozwijanej określa, czy **Znajdź w plikach** wyszukiwanie tylko w obecnie aktywnych plików lub wszystkie pliki przechowywane w określonych folderach. Z listy wybierz zakres wyszukiwania lub kliknij przycisk **przeglądania (...)**  przycisk, aby wyświetlić **Choose Search Folders** okno dialogowe i wprowadzania własnego zestawu katalogów. Możesz również wpisać ścieżkę bezpośrednio do **przeszukania** pole.  
   
 > [!WARNING]
->  Za pomocą **całe rozwiązanie** lub **bieżący projekt** pliki opcje, projektów i rozwiązań nie są przeszukiwane. Jeśli chcesz zobaczyć w plikach projektu wybierz folder wyszukiwania.  
+> Za pomocą **całe rozwiązanie** lub **bieżący projekt** pliki opcje, projektów i rozwiązań nie są przeszukiwane. Jeśli chcesz zobaczyć w plikach projektu wybierz folder wyszukiwania.  
   
 > [!NOTE]
->  Jeśli **przeszukania** wybrana opcja powoduje, że użytkownik może wyszukiwać pliku, który został wyewidencjonowany z kontrolą kodu źródłowego, przeszukiwany jest tylko wersja tego pliku, który został pobrany na komputer lokalny.  
+> Jeśli **przeszukania** wybrana opcja powoduje, że użytkownik może wyszukiwać pliku, który został wyewidencjonowany z kontrolą kodu źródłowego, przeszukiwany jest tylko wersja tego pliku, który został pobrany na komputer lokalny.  
   
 ## <a name="include-subfolders"></a>Uwzględnij podfoldery  
  Określa, że podfoldery **przeszukania** folderu zostaną przeszukane.  

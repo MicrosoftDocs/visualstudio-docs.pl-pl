@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a18082810feeabe0dcb17796f65e3dbd744e2da2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996716"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Rozwiązywanie zestawów w czasie projektowania
 Po dodaniu odwołania do zestawu za pomocą **.NET** karcie **Dodaj odwołanie** okno dialogowe, punkty odniesienia do pośrednie odwołanie do zestawu, czyli zestaw, który zawiera wszystkie typy i informacje o podpisie, ale niekoniecznie nie zawiera żadnego kodu. **.NET** karcie znajduje się lista zestawów odwołań, które odpowiadają zestawom środowiska uruchomieniowego w .NET Framework. Ponadto Wyświetla listę zestawów odwołań, które odpowiadają zestawom środowiska uruchomieniowego w zarejestrowanych folderach AssemblyFoldersEx używanych przez osoby trzecie.

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8c3a43cfff286e43d099258913b816491527da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d435ff9970748e8debe5edfd15514cde4f531b86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63389709"
 ---
 # <a name="capturing-graphics-information"></a>Przechwytywanie informacji graficznych
 Przechwytywać informacje graficzne z aplikacji Direct3D, tak aby analizator grafiki programu Visual Studio można użyć do diagnozowania problemów z renderowaniem i problemy z wydajnością.
@@ -40,7 +40,7 @@ Przechwytywać informacje graficzne z aplikacji Direct3D, tak aby analizator gra
 - Na klawiaturze naciśnij klawisz Print Screen.
 
   > [!NOTE]
-  >  Gdy aplikacja jest uruchomiona w ramach **Graphics Diagnostics**, klawisz Print Screen należy używać tylko do przechwytywania informacji graficznych; nie wykonuje swojego normalnego działania. To pozostaje, dopóki nie zatrzymasz przechwytywania informacji graficznych — zwykle przez zatrzymanie debugowania lub normalne wyjście z aplikacji — nawet wtedy, gdy fokus jest na innej aplikacji.
+  > Gdy aplikacja jest uruchomiona w ramach **Graphics Diagnostics**, klawisz Print Screen należy używać tylko do przechwytywania informacji graficznych; nie wykonuje swojego normalnego działania. To pozostaje, dopóki nie zatrzymasz przechwytywania informacji graficznych — zwykle przez zatrzymanie debugowania lub normalne wyjście z aplikacji — nawet wtedy, gdy fokus jest na innej aplikacji.
 
 - W interfejsie przechwytywania programu Visual Studio, należy wybrać **Przechwyć ramkę** znajdujący się poniżej **sesji diagnostycznej** osi czasu, lub wybierz dużych **Przechwyć ramkę** przycisku znajdujący się poniżej **klatek na sekundę** torach pływackich i w prawo wszystkie wcześniej przechwycone ramki. Przyciski są wyróżnione na poniższej ilustracji.
 

@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: d9bb59a383db46fdfc3b7e5a9a2f429399630873
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952779"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Używanie planów testowych platformy Azure zamiast Lab Management potrzeby testowania automatycznego
 
