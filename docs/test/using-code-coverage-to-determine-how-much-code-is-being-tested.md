@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a76b40e2a9848b0f80e755d15a9bd6e65fcf51da
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973108"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom
 
@@ -240,7 +240,7 @@ Użyj następujących makr:
 - Wykluczenia muszą być skompilowane jako kod niezarządzany (natywny), przez ustawienie opcji kompilatora albo za pomocą `#pragma managed(off)`.
 
 > [!NOTE]
-> Aby wyłączyć funkcje w języku C + +/ CLI kodu, zastosuj atrybut `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` do funkcji. To jest tak samo jak w języku C#.
+> Aby wyłączyć funkcje w C++sposób niezamierzony kodu, zastosuj atrybut `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` do funkcji. To jest tak samo jak w języku C#.
 
 ### <a name="include-or-exclude-additional-elements"></a>Dołącz lub Wyklucz dodatkowe elementy
 

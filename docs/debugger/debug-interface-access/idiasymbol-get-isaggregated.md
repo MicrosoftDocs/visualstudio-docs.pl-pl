@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac588314b69c6be8b31cc5719a4be8add3cad33
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: db6c2e47d9f316f758b854e5ce40dfc19acb592b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400009"
 ---
 # <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
 Pobiera flagę określającą, czy symbol danych jest częścią funkcję agregującą lub kolekcję symboli; kompilator będzie traktować zagregowane symboli jako osobne jednostki, ale są one naprawdę częścią jednego symbol większe.
@@ -39,7 +39,7 @@ HRESULT get_isAggregated(
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
 
 > [!NOTE]
->  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
  [Idiasymbol::get_issplitted —](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md) metodą jest `TRUE` dla symbolu, który jest elementem nadrzędnym zagregowane symboli.

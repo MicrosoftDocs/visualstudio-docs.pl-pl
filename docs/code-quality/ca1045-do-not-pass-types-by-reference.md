@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f64a7f7c018863e85900da2b09e018d29da4dfe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d5174d00593b44d51b5628851039b1d0a37753c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387495"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: Nie przekazuj typów przez odwołanie
 
@@ -43,7 +43,7 @@ ms.locfileid: "55922878"
  Mimo że wartości zwracane są powszechne i intensywnie używane, odpowiednia `out` i `ref` parametrów wymaga pośrednich projektu i umiejętności kodowania. Architektów biblioteki, którzy tworzą dla wszystkich nie powinni oczekiwać od użytkowników do wzorca pracę z `out` lub `ref` parametrów.
 
 > [!NOTE]
->  Podczas pracy z parametrami, które są duże struktury dodatkowe zasoby, które są wymagane, aby skopiować te struktury może spowodować wpływ na wydajność podczas przekazywania przez wartość. W takich przypadkach należy rozważyć przy użyciu `ref` lub `out` parametrów.
+> Podczas pracy z parametrami, które są duże struktury dodatkowe zasoby, które są wymagane, aby skopiować te struktury może spowodować wpływ na wydajność podczas przekazywania przez wartość. W takich przypadkach należy rozważyć przy użyciu `ref` lub `out` parametrów.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej reguły, która jest spowodowany przez typ wartości, należy mieć metoda może zwracać obiektu jako jego wartość zwracaną. Jeśli metoda musi zwracać wiele wartości, należy ponownie zaprojektować go do zwrócenia pojedynczego wystąpienia obiektu, który przechowuje wartości.

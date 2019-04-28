@@ -1,6 +1,6 @@
 ---
 title: Zestawy reguł analizatora
-ms.date: 07/20/2018
+ms.date: 04/22/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, rule sets
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da5eab1424ac6f6fe580ec0f71ec3efd6e120020
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 32ed328cb399f0cd3e9a2a147d29fad56b845399
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387699"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Zestawy reguł na potrzeby analizatorów Roslyn
 
@@ -25,7 +25,7 @@ W przypadku migrowania ze starszego "FxCop" statycznej analizy kodu do analizato
 
 ## <a name="use-analyzer-rule-sets"></a>Korzystanie z zestawów reguł analizatora
 
-Po zakończeniu [zainstaluj pakiet analizatora NuGet](install-roslyn-analyzers.md), zlokalizuj wstępnie zdefiniowany zestaw reguł jego *zestawów reguł* katalogu, na przykład *% USERPROFILE %\\.nuget\packages\ Microsoft.codequality.analyzers\<wersji > \rulesets*. Z tego miejsca możesz można przeciągnij i upuść, lub skopiuj i Wklej, co najmniej jeden z zestawów reguł do projektu programu Visual Studio w **Eksploratora rozwiązań**.
+Po zakończeniu [zainstaluj pakiet analizatora NuGet](install-roslyn-analyzers.md), zlokalizuj wstępnie zdefiniowany zestaw reguł jego *zestawów reguł* katalogu. Na przykład, jeśli odwołujesz `Microsoft.CodeAnalysis.FxCopAnalyzers` analizatora pakietów, a następnie można znaleźć jego katalog zestawów reguł w *% USERPROFILE %\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<wersji \>\rulesets*. Z tego miejsca możesz można przeciągnij i upuść, lub skopiuj i Wklej, co najmniej jeden z zestawów reguł do projektu programu Visual Studio w **Eksploratora rozwiązań**.
 
 Aby aktywny zestaw reguł dla analizy zestaw reguł, kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz polecenie **właściwości**. Na stronach właściwości projektu, wybierz **analizy kodu** kartę. W obszarze **Uruchom ten zestaw reguł**, wybierz opcję **Przeglądaj**, a następnie wybierz odpowiednią regułę zestaw, który został skopiowany do katalogu projektu. Teraz widoczne tylko naruszeń zasady dla tych reguł, które są włączone w wybranym zestawem reguł.
 

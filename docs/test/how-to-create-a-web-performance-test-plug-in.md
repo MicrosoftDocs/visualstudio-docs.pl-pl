@@ -12,13 +12,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c107e6dcba9be92b738bb4756806d584b9abdb50
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949984"
 ---
-# <a name="how-to-create-a-web-performance-test-plug-in"></a>Porady: Tworzenie wtyczki testu wydajności sieci web
+# <a name="how-to-create-a-web-performance-test-plug-in"></a>Instrukcje: Tworzenie wtyczki testu wydajności sieci web
 
 Wtyczki sieci Web wydajności testów umożliwiają izolowanie i ponowne użycie kodu poza głównym deklaracyjne oświadczeń do testu wydajności sieci web. Dostosowane testu wydajności cieci web wtyczki oferuje możliwość wywołania kodu podczas uruchamiania testu wydajności sieci web. Wtyczki testu wydajności sieci web jest uruchamiane jeden raz dla każdej iteracji testu. Ponadto Jeśli zastąpisz PreRequest lub PostRequest metod w wtyczkę testu, te wtyczki żądania zostanie uruchomiony przed lub po każdym żądaniu odpowiednio.
 

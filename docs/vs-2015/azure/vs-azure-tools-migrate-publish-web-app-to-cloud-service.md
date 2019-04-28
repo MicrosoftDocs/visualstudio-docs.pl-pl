@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
 ms.openlocfilehash: 2bd574fe6a3a75a46d827f459bbbdf0f3c4f807e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952861"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Instrukcje: Migrowanie i publikowanie aplikacji internetowej w usłudze w chmurze platformy Azure z poziomu programu Visual Studio
 

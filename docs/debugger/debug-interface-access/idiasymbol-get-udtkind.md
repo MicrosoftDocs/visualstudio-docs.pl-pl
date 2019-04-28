@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92266de7c372fc6bcf7d0775ebb5ab01ea2e0308
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 34faf217f77bd30ba707f5ae17886b05dac8ab4f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401346"
 ---
 # <a name="idiasymbolgetudtkind"></a>IDiaSymbol::get_udtKind
 Pobiera różne typu zdefiniowanego przez użytkownika (UDT).
@@ -39,7 +39,7 @@ HRESULT get_udtKind ( 
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
->  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

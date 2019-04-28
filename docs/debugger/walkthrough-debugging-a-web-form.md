@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901639"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Przewodnik: Debugowanie formularza internetowego
 Kroki opisane w tym instruktażu pokazano, jak można debugować [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacja internetowa, znany także jako formularz sieci Web. Pokazuje jak uruchomić i zatrzymać wykonywanie, ustawiać punkty przerwania i sprawdzić zmienne w **Obejrzyj** okna.

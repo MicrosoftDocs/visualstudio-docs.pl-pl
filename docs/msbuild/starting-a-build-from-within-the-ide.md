@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ae3478aef733d106fa075a51edce4af91b404149
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939405"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>Uruchom kompilację z poziomu środowiska IDE
 Niestandardowe systemy projektu muszą używać <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> do uruchomienia kompilacji. W tym artykule opisano przyczyny tego wymagania i opisano procedurę.

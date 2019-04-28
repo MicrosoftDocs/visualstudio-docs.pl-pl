@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Więcej informacji na temat korzyści społeczności platformy Azure, zawarte w wybranych subskrypcjach programu Visual Studio.
 searchscope: VS Subscription
 ms.openlocfilehash: 154c0164f5126fc38d0e0af5ec5703faacb9f94f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948327"
 ---
 # <a name="azure-community"></a>Społeczność platformy Azure
 

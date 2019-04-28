@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1bbcbc2411d261b4ddec9423896dc21acc3e0033
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939567"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Wiązanie danych do kontrolek w rozwiązaniach pakietu Office
   Możesz powiązać kontrolek formularzy Windows Forms i *hostowania kontrolek* na dokument programu Microsoft Office Word lub skoroszyt programu Microsoft Office Excel ze źródłem danych, więc formanty automatycznie wyświetlać dane. Dane można powiązać formanty w projektach na poziomie dokumentu i poziomie aplikacji.
