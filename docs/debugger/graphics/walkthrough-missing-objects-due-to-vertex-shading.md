@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14a7ffd3542fd9562488b3b442f1efe19f44a869
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cc3bd288044c9fea1da648b64cabc87148b8463a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388599"
 ---
-# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Przewodnik: Brak obiektów spowodowany cieniowaniem wierzchołków
+# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Przewodnik: brak obiektów spowodowany cieniowaniem wierzchołków
 W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] narzędziami diagnostyki grafiki do zbadania obiekt, który nie istnieje ze względu na błąd występujący podczas etapu programu do cieniowania wierzchołków.
 
  Ten instruktaż ilustruje następujące zadania:
 
--   Za pomocą **Lista zdarzeń graficznych** do lokalizowania potencjalnych źródeł problemu.
+- Za pomocą **Lista zdarzeń graficznych** do lokalizowania potencjalnych źródeł problemu.
 
--   Za pomocą **etapy potoku grafiki** okna, aby sprawdzić efekt skonfigurowania `DrawIndexed` wywołań interfejsu API Direct3D.
+- Za pomocą **etapy potoku grafiki** okna, aby sprawdzić efekt skonfigurowania `DrawIndexed` wywołań interfejsu API Direct3D.
 
--   Za pomocą **Debuger języka HLSL** do zbadania cieniowania wierzchołków.
+- Za pomocą **Debuger języka HLSL** do zbadania cieniowania wierzchołków.
 
--   Za pomocą **stos wywołań zdarzenia grafiki** ułatwia znalezienie źródła Nieprawidłowa stała HLSL.
+- Za pomocą **stos wywołań zdarzenia grafiki** ułatwia znalezienie źródła Nieprawidłowa stała HLSL.
 
 ## <a name="scenario"></a>Scenariusz
  Jedną z najczęstszych przyczyn nieistniejącego obiektu w 3-w aplikacji występuje, gdy program do cieniowania wierzchołków przekształca wierzchołki obiektu w sposób niepoprawne lub nieoczekiwanego — obiekt może na przykład skalować do bardzo małym rozmiarze, lub przekształcane w taki sposób, że wydaje się za zaporą aparatu , a nie przed nim.
@@ -61,7 +61,7 @@ W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-qu
     W **etapy potoku grafiki** oknie **asemblera dane wejściowe** etapu pokazuje geometrii obiektu przed jego przekształcone i **program do cieniowania wierzchołków** etap zawiera takie same obiekt po jest przekształcane. W tym scenariuszu, wiesz, że Ci się znaleźć nieistniejącego obiektu pojawi się w **asemblera dane wejściowe** etapu i nic nie jest wyświetlana w **program do cieniowania wierzchołków** etapu.
 
    > [!NOTE]
-   >  Jeśli inne etapy geometrii — na przykład, moduł cieniujący kadłuba, program do cieniowania domeny lub program do cieniowania geometrii etapy — przetworzyć obiektu, mogą one być przyczyną tego problemu. Zazwyczaj problem dotyczy najwcześniejszym etapie, w którym nie jest wyświetlany wynik, lub jest wyświetlany w nieoczekiwany sposób.
+   > Jeśli inne etapy geometrii — na przykład, moduł cieniujący kadłuba, program do cieniowania domeny lub program do cieniowania geometrii etapy — przetworzyć obiektu, mogą one być przyczyną tego problemu. Zazwyczaj problem dotyczy najwcześniejszym etapie, w którym nie jest wyświetlany wynik, lub jest wyświetlany w nieoczekiwany sposób.
 
 4. Zatrzymaj po przejściu do wywołania rysowania, która odnosi się do nieistniejącego obiektu. W tym scenariuszu **etapy potoku grafiki** okno wskazuje, czy geometrii został wydany do procesora GPU (wskazywanym przez miniaturę asemblera dane wejściowe), ale nie ma obiektu docelowego renderowania, ponieważ wystąpił błąd podczas etapu programu do cieniowania wierzchołków (wskazywanym przez miniaturę program do cieniowania wierzchołków):
 
@@ -104,7 +104,7 @@ W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-qu
     ![Kod, który ustawia obiektu stałego buforu](media/gfx_diag_demo_missing_object_shader_step_7.png "gfx_diag_demo_missing_object_shader_step_7")
 
    > [!TIP]
-   >  Jeśli jednocześnie debugujesz aplikację, w tym miejscu można ustawić punktu przerwania i zostanie uruchomiona, podczas renderowania następnej ramki. Następnie można sprawdzić członkowie `m_marbleConstantBufferData` do upewnij się, że wartość `projection` elementu członkowskiego jest ustawiony na samych zer, jeśli stałego buforu.
+   > Jeśli jednocześnie debugujesz aplikację, w tym miejscu można ustawić punktu przerwania i zostanie uruchomiona, podczas renderowania następnej ramki. Następnie można sprawdzić członkowie `m_marbleConstantBufferData` do upewnij się, że wartość `projection` elementu członkowskiego jest ustawiony na samych zer, jeśli stałego buforu.
 
    Po znalezieniu lokalizacji, w którym zostanie wypełnione stały bufor i odnajdywanie, że jego wartości pochodzą ze zmiennych `m_marbleConstantBufferData`, następnym krokiem jest, aby dowiedzieć się, gdzie `m_marbleConstantBufferData.projection` element członkowski jest ustawiany na samych zer. Możesz użyć **Znajdź wszystkie odwołania** do szybkiego skanowania w poszukiwaniu kod, który zmienia wartość `m_marbleConstantBufferData.projection`.
 

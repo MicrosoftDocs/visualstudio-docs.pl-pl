@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: c7c2cb57dc96d7bb0df09248eb7a877820e50521
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999041"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Narzędzia języka R dla programu Visual Studio, opcje
 
@@ -78,7 +78,7 @@ Te opcje umożliwiają kontrolowanie sposobu obsługi wartości w [narzędzie Va
 | --- | --- | --- |
 | Obliczanie dynamiczne | `False` | Domyślnie `View(<expression>)` funkcja tworzy migawkę danych jako ramkę danych, która może zużywać znaczną pamięć z dużymi zestawami danych. Ustawienie tej opcji na `True` oznacza, że wyrażenie jest oceniane podczas odświeżania siatki w celu pobrania tylko tych danych, która jest wyświetlana. Jednak jeśli zmiany wyrażeń również zmieniają się dane, które może być nieodpowiedni dla dplyr pip wyrażeń. |
 
-### <a name="help"></a>Pomoc
+### <a name="help"></a>Help
 
 | Opcja | Wartość domyślna | Opis |
 | --- | --- | --- |

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6ba36b62aa9f4330cc88eaa198d0488d7e43b341
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982089"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Przewodnik: Powiąż z danymi z usług w projektach dodatku narzędzi VSTO
   Dane można powiązać kontrolki hosta w projektach dodatku narzędzi VSTO. W tym instruktażu pokazano, jak dodać kontrolki do dokumentu programu Microsoft Office Word, powiązać formanty danych pobranych z usługi zawartości MSDN i reagowania na zdarzenia w czasie wykonywania.

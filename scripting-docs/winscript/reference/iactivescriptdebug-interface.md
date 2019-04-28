@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6341b5c3763d6e4c836b3bdc0539552fcbe7f980
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58151027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955032"
 ---
 # <a name="iactivescriptdebug-interface"></a>Interfejs IActiveScriptDebug
 Implementowany przez aparatów skryptów, w tym obsługę debugowania. Zazwyczaj obiekt, który implementuje `IActiveScriptDebug` również interfejs implementuje `IActiveScript` interfejsu. Jeśli jest to możliwe, należy wywołać `IActiveScript::QueryInterface` metodę, aby uzyskać `IActiveScriptDebug` interfejsu.  

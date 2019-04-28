@@ -15,11 +15,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: 58b7348a1bd46b426339effbe259e6f5058c769b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979243"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Instrukcje: Tworzenie testu jednostkowego opartego na danych
 
@@ -128,7 +128,7 @@ Atrybut źródła danych ma trzy konstruktory.
 
 Konstruktor z jednym parametrem używa informacji o połączeniu, która jest przechowywana w *app.config* pliku rozwiązania. *DataSourceSettingsName* jest nazwa elementu Xml w pliku konfiguracji, który określa informacje o połączeniu.
 
-Za pomocą *app.config* plików umożliwia zmianę lokalizacji źródła danych bez wprowadzania zmian w same testy jednostek. Aby uzyskać informacje dotyczące tworzenia i używania *app.config* plików, zobacz [instruktażu: Korzystanie z pliku konfiguracji do określania źródła danych](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
+Za pomocą *app.config* plików umożliwia zmianę lokalizacji źródła danych bez wprowadzania zmian w same testy jednostek. Aby uzyskać informacje dotyczące tworzenia i używania *app.config* plików, zobacz [instruktażu: definiowanie źródła danych przy użyciu pliku konfiguracji](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
 
 ```csharp
 [DataSource(connectionString, tableName)]

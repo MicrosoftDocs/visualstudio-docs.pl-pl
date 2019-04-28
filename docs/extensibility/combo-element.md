@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7cfce045531a871e4630a6175d2fc24f4a50ebd8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926621"
 ---
 # <a name="combo-element"></a>Combo, element
 Określa polecenia, które są wyświetlane w polu kombi. Istnieją cztery rodzaje pola kombi w następujący sposób: Typu pole kombi, DynamicCombo, IndexCombo i MRUCombo.
@@ -43,7 +43,7 @@ Określa polecenia, które są wyświetlane w polu kombi. Istnieją cztery rodza
 |defaultWidth|Wymagana. Liczba całkowita, która określa szerokość pikseli dla pola kombi.|
 |idCommandList|Wymagana. Identyfikator wysłaniu do docelowego polecenia active można pobrać listy elementów, które mają być wyświetlane w polu kombi. Identyfikator jest w tym samym zakresie identyfikatora GUID jako formant.|
 |priority|Opcjonalna. Wartość liczbowa określająca priorytet.|
-| — typ|Opcjonalna. Wartość wyliczana, który określa typ przycisku.<br /><br /> Jeśli nie zostanie podana, używa przycisku.<br /><br /> DropDownCombo<br /> Pakietu VSPackage jest odpowiedzialny za wypełnianie zawartość dla tego pola kombi. Użytkownik nie może wpisać cokolwiek w polu tekstowym w tym listy rozwijanej.<br /><br /> DynamicCombo<br /> Pakietu VSPackage jest odpowiedzialny za wypełnianie zawartość tego pola kombi. Użytkownik może edytować ten kombi i również wybrać elementy w nim.<br /><br /> IndexCombo<br /> Taka sama jak DynamicCombo, z wyjątkiem że zgłasza indeks elementu, a nie jego tekstu.<br /><br /> MRUCombo<br /> Wypełnione przez zintegrowanego środowiska programistycznego (IDE) w imieniu pakietu VSPackage.  Użytkownik może edytować w tym polu kombi. IDE zapamiętuje maksymalnie 16 ostatnich wpisów na pola kombi.<br /><br /> Gdy użytkownik wybierze element w polu kombi lub wprowadza coś nowego, IDE powiadamia odpowiednie pakietu VSPackage.|
+|— typ|Opcjonalna. Wartość wyliczana, który określa typ przycisku.<br /><br /> Jeśli nie zostanie podana, używa przycisku.<br /><br /> DropDownCombo<br /> Pakietu VSPackage jest odpowiedzialny za wypełnianie zawartość dla tego pola kombi. Użytkownik nie może wpisać cokolwiek w polu tekstowym w tym listy rozwijanej.<br /><br /> DynamicCombo<br /> Pakietu VSPackage jest odpowiedzialny za wypełnianie zawartość tego pola kombi. Użytkownik może edytować ten kombi i również wybrać elementy w nim.<br /><br /> IndexCombo<br /> Taka sama jak DynamicCombo, z wyjątkiem że zgłasza indeks elementu, a nie jego tekstu.<br /><br /> MRUCombo<br /> Wypełnione przez zintegrowanego środowiska programistycznego (IDE) w imieniu pakietu VSPackage.  Użytkownik może edytować w tym polu kombi. IDE zapamiętuje maksymalnie 16 ostatnich wpisów na pola kombi.<br /><br /> Gdy użytkownik wybierze element w polu kombi lub wprowadza coś nowego, IDE powiadamia odpowiednie pakietu VSPackage.|
 |Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne

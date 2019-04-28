@@ -10,12 +10,12 @@ ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2426ba49a3ef0035adc04b5b3267bedc9c51b366
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6e81a95cffebc9e26821b9cc6157627100343452
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383367"
 ---
 # <a name="debug-engine"></a>Aparat debugowania
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ Aparat debugowania (DE) współpracuje z interpreter lub systemu operacyjnego w 
  Na przykład środowisko uruchomieniowe języka wspólnego (CLR) dostarcza mechanizmów monitorowania za pośrednictwem interfejsów ICorDebugXXX uruchomionego programu. DE, który obsługuje środowisko CLR używa odpowiednich interfejsów ICorDebugXXX do śledzenia kodu zarządzanego debugowanego. Następnie przesyła zmiany stanu do Menedżer debugowania sesji (SDM), która przekazuje informacje do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  
   
 > [!NOTE]
->  Aparat debugowania jest przeznaczony dla określonego środowiska uruchomieniowego, oznacza to, w którym program debugowany uruchomienia systemu. Środowisko CLR jest środowiskiem uruchomieniowym na potrzeby kodu zarządzanego, a środowisko wykonawcze systemu Win32 jest dla natywnych aplikacji Windows. Jeśli język, możesz utworzyć można wskazać jeden z tych dwóch środowisk uruchomieniowych [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dostarcza już aparaty debugowania konieczne. Wszystko, co trzeba implementować to ewaluatora wyrażeń.  
+> Aparat debugowania jest przeznaczony dla określonego środowiska uruchomieniowego, oznacza to, w którym program debugowany uruchomienia systemu. Środowisko CLR jest środowiskiem uruchomieniowym na potrzeby kodu zarządzanego, a środowisko wykonawcze systemu Win32 jest dla natywnych aplikacji Windows. Jeśli język, możesz utworzyć można wskazać jeden z tych dwóch środowisk uruchomieniowych [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dostarcza już aparaty debugowania konieczne. Wszystko, co trzeba implementować to ewaluatora wyrażeń.  
   
 ## <a name="debug-engine-operation"></a>Operacja aparatu debugowania  
  Usługi monitorowania są implementowane za pośrednictwem interfejsów DE i może spowodować, że debugowanie pakietu, do którego nastąpi przejście między różne tryby operacyjne. Aby uzyskać więcej informacji, zobacz [tryby operacyjne](../../extensibility/debugger/operational-modes.md). Zazwyczaj jest tylko jedna implementacja DE na środowisku uruchomieniowym.  
   
 > [!NOTE]
->  Istnieją osobne implementacje DE języka Transact-SQL i [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)], VBScript i [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] udostępniać pojedynczy DE.  
+> Istnieją osobne implementacje DE języka Transact-SQL i [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)], VBScript i [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] udostępniać pojedynczy DE.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugowanie umożliwia debugowanie silników na jeden z dwóch sposobów: w tym samym procesie co [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] powłoki lub w tym samym procesie co program docelowy debugowania. Drugim formularzu występuje przeważnie debugowanego procesu jest faktycznie skrypt uruchomiony w ramach tłumacza, gdy aparat debugowania musi mieć wiedzy na temat obsługi interpreter, aby monitorować skryptu. Należy pamiętać, że w tym przypadku interpreter faktycznie środowisko uruchomieniowe aparaty debugowania są przeznaczone dla implementacji określonego środowiska uruchomieniowego. Ponadto implementacji pojedynczej DE może zostać podzielony granic procesu i maszynowo, (na przykład, zdalne debugowanie).  
   

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29b730bacd589e7b42b9f87086eda91d9e199622
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8579504f549cb078fee178127c7396896fce5313
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59504422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399402"
 ---
 # <a name="general-debugging-options"></a>Ogólne opcje debugowania
 
@@ -85,7 +85,7 @@ W warunkach, 2 i 3, wyjątek jest czasami zgłoszony przez kod zarządzany w `ms
 **Włącz obsługę Source Link**: Informuje debuger programu Visual Studio w celu pobrania plików źródłowych dla *.pdb* pliki, które zawierają informacje o Linku źródłowego. Aby uzyskać więcej informacji dotyczących Linku źródłowego, zobacz [określenie linku źródłowego](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md).
 
 > [!IMPORTANT]
->  Ponieważ Link źródłowy zostanie pobrany plików przy użyciu protokołu http lub https, upewnij się, że ufasz *.pdb* pliku.
+> Ponieważ Link źródłowy zostanie pobrany plików przy użyciu protokołu http lub https, upewnij się, że ufasz *.pdb* pliku.
 
 - **Należą do uwierzytelniania usługi Git Credential Manager dla wszystkich żądań dotyczących Linku źródłowego**:   Obsługa Linku źródłowego jest włączona, gdy żądanie Linku źródłowego niepowodzenia uwierzytelniania, Visual Studio wywołuje program Git Credential Manager.
 

@@ -8,12 +8,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2514454f1aa1c1899c45edac80f7990d8208fdd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9e27478255ccd8f3d5c2786fdfc806fa4f5c0a15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387014"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testowanie aplikacji platformy UWP i 8.1 Phone systemu Windows za pomocą kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,7 +125,7 @@ Użyj tego przewodnika dotyczący tworzenia testów interfejsu użytkownika dla 
      W Eksploratorze rozwiązań Otwórz plik CodedUITest1.vb. W CodedUITestMethod1() przetestować kod metody, kliknij prawym przyciskiem myszy wywołanie metody asercji, do której została dodana automatycznie `Me.UIMap.AssertMethod1()` i wybierz polecenie **przejdź do definicji**. Spowoduje to otwarcie plik UIMap.Designer.vb w edytorze kodu, aby można było wyświetlić kod, który został dodany dla metody assert i formantów.  
   
     > [!WARNING]
-    >  Nie należy modyfikować pliku UIMap.designer.cs lub UIMap.Designer.vb bezpośrednio. Jeśli to zrobisz, zmiany w pliku zostaną zastąpione każdorazowo, gdy test jest generowany.  
+    > Nie należy modyfikować pliku UIMap.designer.cs lub UIMap.Designer.vb bezpośrednio. Jeśli to zrobisz, zmiany w pliku zostaną zastąpione każdorazowo, gdy test jest generowany.  
   
      **Assert — metoda**  
   

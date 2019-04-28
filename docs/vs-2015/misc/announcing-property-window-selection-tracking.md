@@ -14,11 +14,11 @@ ms.assetid: a7536f82-afd7-4894-9a60-84307fb92b7e
 caps.latest.revision: 13
 manager: jillfra
 ms.openlocfilehash: 6296993d3a1f5039024556f09b721daa82ca4f53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002455"
 ---
 # <a name="announcing-property-window-selection-tracking"></a>Ogłoszenie wybór okna właściwości śledzenia
 Jeśli chcesz pracować z **właściwości** okna lub **właściwość** strony, na przykład formularz, tekst lub zaznaczenia, dla którego chcesz wyświetlić właściwości, należy zastosować pełną wiedzy na temat możesz koordynowanie zaznaczenia. Na przykład musisz wiedzieć, czy masz zaznaczenia jednego lub wiele zaznaczeń. Następnie należy poinformować o danego typu wyboru (jednego lub wielu) do środowiska IDE, za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interfejsu. Ten interfejs zapewnia informacje wymagane przez **właściwości** okna.  

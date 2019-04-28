@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fa5a6da8d45435fc7c755905a19e95e90a98ad57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000148"
 ---
 # <a name="legacy-workflow-activities"></a>Działania przepływu pracy w starszej wersji
 [!INCLUDE[wf](../includes/wf-md.md)] zawiera domyślny zestaw działań, które zapewniają funkcje przepływu sterowania, warunki, obsługa zdarzeń, zarządzanie stanem i komunikacji z aplikacjami i usługami. Podczas projektowania przepływów pracy, można użyć działań dostarczane przez system, które są dostarczane przez [!INCLUDE[wfd1](../includes/wfd1-md.md)], lub możesz utworzyć własne niestandardowe działania.  

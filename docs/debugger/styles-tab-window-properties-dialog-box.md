@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 581ad210e5e8b11fec35e2171f4e8c4b5553baa5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929676"
 ---
 # <a name="styles-tab-window-properties-dialog-box"></a>Karta stylów, okno dialogowe właściwości okna
 Użyj **style** kartę, aby pokazać stylów zastosowana do wybranego okna. Aby wyświetlić [okno dialogowe właściwości](../debugger/window-properties-dialog-box.md), Przenieś fokus do [widoku Windows](../debugger/windows-view.md) okna. Zaznacz dowolny węzeł okna w drzewie, a następnie wybierz **właściwości** z **widoku** menu.

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fac4c65047c51d1213d8be4352c1b8e6efc35c8e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62924802"
 ---
 # <a name="bpresifields"></a>BPRESI_FIELDS
 Określa informacje, które mają zostać pobrane informacje pomyślnego rozwiązania punktu przerwania.

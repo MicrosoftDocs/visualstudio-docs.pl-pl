@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: aabbe05d31a9c95dcf8e5eb5d03caf60e923c65c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982401"
 ---
 # <a name="user-interface-reference-office-development-in-visual-studio"></a>Odwołanie do interfejsu użytkownika (Office development w programie Visual Studio)
   Następujące elementy interfejsu użytkownika są częścią projektów pakietu Office w Visual Studio.

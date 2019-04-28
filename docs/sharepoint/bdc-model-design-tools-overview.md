@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb2f257feaa8faa6acf58c8e8763d15d08a1079e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7a2531f1cc6352a03acf0b3d6af82c35e47c2743
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387728"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Omówienie narzędzi projektowania modelu BDC
   Można zaprojektować modelu łączności danych biznesowych (BDC) przy użyciu projektanta łączności danych biznesowych **szczegóły metody BDC** oknie i **Eksplorator BDC**.
@@ -63,13 +63,13 @@ ms.locfileid: "56596571"
  Podczas wybierania węzły w **Eksplorator BDC**, właściwości każdego węzła, który wybierzesz są wyświetlane w **właściwości** okna. Wiele z tych właściwości odnoszą się do atrybutów w pliku modelu. Możesz wyszukiwać modelu przy użyciu pola wyszukiwania w górnej części **Eksplorator BDC**.
 
 > [!NOTE]
->  **Eksplorator BDC** nie wyświetla identyfikatorów, właściwości niestandardowe, zlokalizowanych ciągów, grup skojarzeń, akcje, deskryptory filtrów, list kontroli akcji i wartości domyślne parametrów.
+> **Eksplorator BDC** nie wyświetla identyfikatorów, właściwości niestandardowe, zlokalizowanych ciągów, grup skojarzeń, akcje, deskryptory filtrów, list kontroli akcji i wartości domyślne parametrów.
 
 ### <a name="define-type-descriptors"></a>Zdefiniuj deskryptory typu
  Użyj **Eksplorator BDC** do definiowania deskryptory typu. Eksplorator BDC pozwala zdefiniować deskryptor typu jeden raz i ponownie użyć tego deskryptora typu, gdzie indziej w modelu. Aby to osiągnąć, skopiuj deskryptor typu i wkleić go do innych parametrów lub deskryptor typu.
 
 > [!NOTE]
->  Oryginalny deskryptor typu zmiany nie wpływają na kopie ten deskryptor typu.
+> Oryginalny deskryptor typu zmiany nie wpływają na kopie ten deskryptor typu.
 
  Aby uzyskać więcej informacji, zobacz [jak: Określanie deskryptora typu parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 

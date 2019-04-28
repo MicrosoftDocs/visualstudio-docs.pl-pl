@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 468850a441cfd0bc87155fd746d8578c6b763e66
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912929"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion, metoda
 Ustawia lub czyści stan TASK_STATE_WAIT_COMPLETION_NOTIFICATION.

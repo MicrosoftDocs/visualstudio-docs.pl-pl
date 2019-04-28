@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e4a56249c0a87b2516dc233818208f7c7c4b696e
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002057"
 ---
 # <a name="how-to-use-xml-snippets"></a>Instrukcje: Używanie fragmentów kodu XML
 

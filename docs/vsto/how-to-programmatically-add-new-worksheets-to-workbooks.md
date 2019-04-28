@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e1b45196fa70328809aa5da3a1f56ea57fce2085
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967647"
 ---
 # <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>Instrukcje: Programowe Dodawanie nowych arkuszy do skoroszytu
   Można programowo utworzyć arkusz, a następnie dodaj arkusz do kolekcji arkuszy w skoroszycie.
