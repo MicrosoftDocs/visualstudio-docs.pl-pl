@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af6789bc858a9281084523b2e99c7daca38c4159
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e67f41bc4e30f0790e672a241dfe478a13ded9b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407566"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 `CommentMarkAtProfile` Metoda wstawia wartość sygnatury czasowej, liczbowych znakiem i ciąg komentarza w. *Vsp* pliku. Wartość znacznika czasu może służyć do synchronizowania zdarzenia zewnętrzne. Dla tego znaku i komentarz do wstawienia profilowania dla wątków, która zawiera funkcję CommentMarkAtProfile musi mieć wartość ON.
@@ -60,7 +60,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
  Stan profilowania dla wątku, który zawiera funkcję profilu znacznika musi być na, jeśli znaczniki i komentarze wstawione za pomocą polecenia znaku lub za pomocą interfejsu API funkcji (CommentMarkAtProfile, CommentMarkProfile lub MarkProfile). Znaczniki profilu są globalne w zakresie. Na przykład profilu znacznik wstawiony w jednym wątku może służyć do oznaczania początku lub końcu segmentu data w żadnym z wątków w pliku Vsp.
 
 > [!IMPORTANT]
->  Należy używać metod CommentMarkAtProfile z Instrumentacją tylko.
+> Należy używać metod CommentMarkAtProfile z Instrumentacją tylko.
 
 ## <a name="net-framework-equivalent"></a>Równoważne z .NET framework
  *Microsoft.VisualStudio.Profiler.dll*

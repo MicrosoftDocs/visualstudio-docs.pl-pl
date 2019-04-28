@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d0946efb15758c76c078ff234717af6fd1fac15c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792575"
 ---
 # <a name="add-existing-project-command"></a>Dodaj istniejący projekt — Polecenie
 Dodaje istniejący projekt do bieżącego rozwiązania.

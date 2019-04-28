@@ -21,12 +21,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e60fe59b4d515f37593175f0b76d1562f170abfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2198ed401f714353be2dd18846dd527cc433e695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447310"
 ---
 # <a name="error-aspnet-not-installed"></a>Błąd: ASP.NET nie jest zainstalowany
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Ten błąd występuje, gdy [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] nie 
      gdzie *wersji* reprezentuje numer wersji .NET Framework zainstalowanej na komputerze, na przykład v1.0.370. Można określić framework w wersji, przeszukując `\WINDOWS\Microsoft.NET\Framework` katalogu.  
   
     > [!NOTE]
-    >  Windows Server 2003, można zainstalować [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] przy użyciu **apletu Dodaj lub usuń programy** w Panelu sterowania.  
+    > Windows Server 2003, można zainstalować [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] przy użyciu **apletu Dodaj lub usuń programy** w Panelu sterowania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 684d7b0c16d203bad66fe24911406798d78aea30
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: 2aa32579b7e1f3ad1129fb4be116555b8bb5d790
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434320"
 ---
 # <a name="c-library-reference"></a>Odwołanie do biblioteki C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54794231"
 Ta sekcja zawiera informacje dotyczące SDK narzędzia Concurrency Visualizer.  
   
 > [!NOTE]
->  Standard języka C++ zastrzega stosowanie identyfikatorów, które zaczynają się od znaku podkreślenia (`_`) znak do implementacji takich jak biblioteki. Nie należy używać nazwy rozpoczynające się od znaku podkreślenia w kodzie. Zachowanie kodu, elementy, które stosują taką konwencję nazw, których nie jest gwarantowane i mogą ulec zmianie w przyszłych wersjach. Z tego względu takie elementy kodu zostały pominięte w tej dokumentacji.  
+> Standard języka C++ zastrzega stosowanie identyfikatorów, które zaczynają się od znaku podkreślenia (`_`) znak do implementacji takich jak biblioteki. Nie należy używać nazwy rozpoczynające się od znaku podkreślenia w kodzie. Zachowanie kodu, elementy, które stosują taką konwencję nazw, których nie jest gwarantowane i mogą ulec zmianie w przyszłych wersjach. Z tego względu takie elementy kodu zostały pominięte w tej dokumentacji.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Przestrzeń nazwy współbieżności (Concurrency Visualizer)](../profiling/concurrency-namespace-concurrency-visualizer.md)  

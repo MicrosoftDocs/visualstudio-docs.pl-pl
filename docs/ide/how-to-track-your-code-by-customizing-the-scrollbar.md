@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 77f7db396b814eb9163c055b8fadb8793432acee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62548363"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>Instrukcje: Dostosowywanie paska przewijania
 

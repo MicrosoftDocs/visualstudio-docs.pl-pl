@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 768bfc5de11f8b7fa6c3cd8988dbcc70633dde89
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b104a7a0451da7f772077d2f566b36b9f601c17
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433807"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Instrukcje: Włączanie ustawień zabezpieczeń aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Zabezpieczenia dostępu kodu dla aplikacji ClickOnce musi być włączony, aby m
      Możesz teraz dostosować ustawienia zabezpieczeń dla aplikacji na stronie zabezpieczenia.  
   
     > [!NOTE]
-    >  To pole wyboru jest wybierana z każdym opublikowaniu aplikacji za pomocą **Publikuj** kreatora.  
+    > To pole wyboru jest wybierana z każdym opublikowaniu aplikacji za pomocą **Publikuj** kreatora.  
   
 ### <a name="to-disable-clickonce-security-settings"></a>Aby wyłączyć ustawień zabezpieczeń technologii ClickOnce  
   
@@ -57,7 +57,7 @@ Zabezpieczenia dostępu kodu dla aplikacji ClickOnce musi być włączony, aby m
      Twoja aplikacja będzie uruchamiana za pomocą ustawień zabezpieczeń w trybie pełnego zaufania; wszystkie ustawienia na **zabezpieczeń** strony zostaną zignorowane.  
   
     > [!NOTE]
-    >  Każdorazowo, gdy aplikacja została opublikowana przy użyciu Kreatora publikowania tego pola wyboru zostanie wybrany; należy usunąć je ponownie po każdej publikacji pomyślnie.  
+    > Każdorazowo, gdy aplikacja została opublikowana przy użyciu Kreatora publikowania tego pola wyboru zostanie wybrany; należy usunąć je ponownie po każdej publikacji pomyślnie.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)   

@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4f71bbc725d6c9f9fe90f0e4421892fa34ed886
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 46f88b47e135331e5f1dc010aa4a73abed520f51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438655"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Przewodnik: Wywoływanie kodu z VBA w wizualizacji C# projektu
   W tym instruktażu przedstawiono sposób wywołania metody w dostosowaniu na poziomie dokumentu dla programu Microsoft Office Excel z Visual Basic for Applications (VBA) kod w skoroszycie. Procedura obejmuje trzy podstawowe kroki: Dodaj metodę, która `Sheet1` hosta klasa elementu, ujawnia metody dla kodu VBA w skoroszycie i następnie wywołaj metodę z kodu VBA w skoroszycie.
@@ -48,7 +48,7 @@ ms.locfileid: "60082272"
 - Wywołanie metody z kodu VBA.
 
 > [!NOTE]
->  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
@@ -71,7 +71,7 @@ ms.locfileid: "60082272"
 3. Na wstążce kliknij **Developer** kartę.
 
     > [!NOTE]
-    >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 4. W **kodu** grupy, kliknij przycisk **języka Visual Basic**.
 
@@ -209,7 +209,7 @@ ms.locfileid: "60082272"
  Teraz można wywołać `CreateVstoNamedRange` metody z kodu VBA w skoroszycie.
 
 > [!NOTE]
->  W tym przewodniku dodasz kod VBA w skoroszycie podczas debugowania projektu. Kod VBA dodawany do tego dokumentu zostaną zastąpione przy następnym uruchomieniu kompilacji projektu, ponieważ program Visual Studio zastępuje dokument w folderze wyjściowym kompilacji kopię dokumentu z folderu głównego projektu. Jeśli chcesz zapisać ten kod, skopiuj go do dokumentu w folderze projektu. Aby uzyskać więcej informacji, zobacz [łączenie VBA i dostosowywanie na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md).
+> W tym przewodniku dodasz kod VBA w skoroszycie podczas debugowania projektu. Kod VBA dodawany do tego dokumentu zostaną zastąpione przy następnym uruchomieniu kompilacji projektu, ponieważ program Visual Studio zastępuje dokument w folderze wyjściowym kompilacji kopię dokumentu z folderu głównego projektu. Jeśli chcesz zapisać ten kod, skopiuj go do dokumentu w folderze projektu. Aby uzyskać więcej informacji, zobacz [łączenie VBA i dostosowywanie na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md).
 
 ### <a name="to-call-the-method-from-vba-code"></a>Aby wywołać metodę z kodu VBA
 

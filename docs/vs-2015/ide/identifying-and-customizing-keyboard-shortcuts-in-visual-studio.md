@@ -19,12 +19,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a39a2ef42463bd781f6bb8a24e3cfbc10b937b90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 74c08f7ee338a38267ba0b259fbd8cb207b64d71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432307"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identyfikowanie i dostosowywanie skrótów klawiaturowych w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Można zidentyfikować skróty klawiaturowe dla poleceń programu Visual Studio,
   Jeśli skrót jest przypisany do polecenia wyłącznie w kontekście globalnym, ten skrót zawsze będzie wywoływał dane polecenie. Jednak skrót może być przypisany do jednego polecenia w kontekście globalnym i innego polecenia w określonym kontekście. Gdy korzystasz z takiego skrótu podczas pracy w określonym kontekście, skrót wywołuje polecenie odpowiadające temu kontekstowi, a nie kontekstowi globalnemu.
 
 > [!NOTE]
->  Twoje ustawienia i wersja programu Visual Studio mogą zmienić nazwy i lokalizacje poleceń menu oraz opcje, które pojawiają się w oknach dialogowych. Ten temat opiera się na **ogólnych ustawieniach projektowych**.
+> Twoje ustawienia i wersja programu Visual Studio mogą zmienić nazwy i lokalizacje poleceń menu oraz opcje, które pojawiają się w oknach dialogowych. Ten temat opiera się na **ogólnych ustawieniach projektowych**.
 
 ## <a name="bkmk_identify"></a> Identyfikowanie skrótu klawiaturowego
 
@@ -91,12 +91,12 @@ Można zidentyfikować skróty klawiaturowe dla poleceń programu Visual Studio,
      Na przykład, można wybrać **Global** Jeśli chcesz, aby skrót działał we wszystkich kontekstach. Można użyć dowolnego skrótu, który nie jest mapowany (jako globalny) w innym edytorze. W przeciwnym razie edytor zastępuje skrót.
 
     > [!NOTE]
-    >  Nie można przypisać następujących klawiszy jako części skrótów klawiaturowych w **Global**: Drukuj podręcznego/Sys Rq, Scroll Lock, Pause/Break, kartę, włączony klawisz Caps Lock, Insert, Home, End, Page Up, Page Down, klawiszy logo Windows, klucz aplikacji, za pomocą klawiszy strzałek lub Enter; Num Lock, Delete lub Clear na klawiaturze numerycznej; lub Ctrl + Alt + Delete.
+    > Nie można przypisać następujących klawiszy jako części skrótów klawiaturowych w **Global**: Drukuj podręcznego/Sys Rq, Scroll Lock, Pause/Break, kartę, włączony klawisz Caps Lock, Insert, Home, End, Page Up, Page Down, klawiszy logo Windows, klucz aplikacji, za pomocą klawiszy strzałek lub Enter; Num Lock, Delete lub Clear na klawiaturze numerycznej; lub Ctrl + Alt + Delete.
 
 6. W **naciśnij klawisze skrótu** wprowadź skrót, którego chcesz użyć.
 
     > [!NOTE]
-    >  Można utworzyć skrót, który łączy literę z klawiszem Alt, Ctrl lub oboma. Można też utworzyć skrót, który łączy klawisz Shift i literę z klawiszem Alt, Ctrl lub oboma.
+    > Można utworzyć skrót, który łączy literę z klawiszem Alt, Ctrl lub oboma. Można też utworzyć skrót, który łączy klawisz Shift i literę z klawiszem Alt, Ctrl lub oboma.
 
      Jeśli skrót jest już przypisany do innego polecenia, pojawia się w **skrót aktualnie używany przez** pole. W takim przypadku należy wybrać klawisz Backspace, aby usunąć skrót, przed wpisaniem innego.
 
@@ -105,7 +105,7 @@ Można zidentyfikować skróty klawiaturowe dla poleceń programu Visual Studio,
 7. Wybierz **przypisać** przycisku.
 
     > [!NOTE]
-    >  Jeśli określisz inny skrót dla polecenia, wybierz **przypisać** przycisk, a następnie wybierz **anulować** przycisku, okno dialogowe zostanie zamknięte, ale zmiany nie zostanie wycofana.
+    > Jeśli określisz inny skrót dla polecenia, wybierz **przypisać** przycisk, a następnie wybierz **anulować** przycisku, okno dialogowe zostanie zamknięte, ale zmiany nie zostanie wycofana.
 
 ## <a name="bkmk_transfer"></a> Udostępnianie niestandardowych skrótów klawiaturowych
  Możesz udostępniać własne skróty, eksportując je do pliku, a następnie przekazując plik innym osobom, aby mogły importować dane.

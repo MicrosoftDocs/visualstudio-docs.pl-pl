@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a2637e801ba0d317e4c0abec8bd12197656dc844
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564141"
 ---
 # <a name="assertions-in-managed-code"></a>Potwierdzenia w zarządzanym kodzie
 Na potwierdzenie lub `Assert` instrukcji sprawdza warunek, który jest określony jako argument do `Assert` instrukcji. Jeśli warunek jest spełniony, występuje żadna akcja. Gdy warunek jest spełniony, potwierdzenie nie powiedzie się. Jeśli korzystasz z kompilacji debugowania, programach przechodzi w tryb podziału.

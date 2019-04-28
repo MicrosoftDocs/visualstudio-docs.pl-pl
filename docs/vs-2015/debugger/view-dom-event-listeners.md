@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12a4f736217374eefa32dda30111da5e71fbab39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 945edb462b1ba849a3a1b9fd6797c8393b651163
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437685"
 ---
 # <a name="view-dom-event-listeners"></a>Podgląd odbiorników zdarzeń DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
  Na liście **zdarzenia** karta jest dynamiczny. Jeśli dodasz odbiornik zdarzeń, gdy aplikacja jest uruchomiona, nowy odbiornik zdarzenia będą tam wyświetlane. Aby uzyskać informacje dotyczące dodawania i usuwania detektorów zdarzeń, zobacz [porady dotyczące rozwiązywania problemów z odbiornikiem zdarzeń](#Tips) w tym temacie.
 
 > [!NOTE]
->  Odbiorniki zdarzeń dla elementów kodu, które nie są elementy modelu DOM, takich jak `xhr`, nie pojawiają się na **zdarzenia** kartę.
+> Odbiorniki zdarzeń dla elementów kodu, które nie są elementy modelu DOM, takich jak `xhr`, nie pojawiają się na **zdarzenia** kartę.
 
 ## <a name="view-event-listeners-for-dom-elements"></a>Widok detektorów zdarzeń elementów dom.
  W tym przykładzie przedstawiono aplikację Windows Phone Store. Tu funkcji Eksploratora DOM opisane w tym miejscu są również obsługiwane dla aplikacji Windows Store.

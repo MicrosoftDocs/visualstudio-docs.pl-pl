@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d7d37db61f49db19d952cf5b45699b604a91e090
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4282b865bbe85a70e1565e17987600da5c7960e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444054"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54752916"
 Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd.exe) służy do zbierania śladów z wiersza polecenia, aby wyświetlić w Wizualizatorze współbieżności dla programu Visual Studio. Ule może służyć na komputerach, które nie mają zainstalowanego programu Visual Studio.  
   
 > [!NOTE]
->  Narzędzie Concurrency Visualizer, począwszy od programu Visual Studio 2013 to opcjonalne rozszerzenie. (Wcześniej on miał została uwzględniona w programie Visual Studio.) Możesz pobrać [Concurrency Visualizer Collection Tools for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) z Centrum pobierania.  
+> Narzędzie Concurrency Visualizer, począwszy od programu Visual Studio 2013 to opcjonalne rozszerzenie. (Wcześniej on miał została uwzględniona w programie Visual Studio.) Możesz pobrać [Concurrency Visualizer Collection Tools for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) z Centrum pobierania.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Pobierz narzędzie wiersza polecenia Concurrency Visualizer  
  Aby pobrać i zainstalować narzędzia wiersza polecenia, przejdź do [Concurrency Visualizer Collection Tools for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) i postępuj zgodnie z instrukcjami. Domyślnie CVCollectionCmd.exe jest zainstalowany w folderze %ProgramFiles%\Microsoft SDKs\Windows\v8.0a\bin\netfx kolekcji wizualizatora współbieżności (% ProgramFiles (x86) %\Microsoft Concurrency Visualizer kolekcji SDKs\Windows\v8.0a\bin\netfx na x64 komputerów).  
@@ -57,7 +57,7 @@ Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd.exe) służ
  Jeśli używasz CVCollectionCmd zbierać dane śledzenia, i chcesz dostosować ustawienia kolekcji, a następnie określ je przy użyciu pliku konfiguracji.  
   
 > [!NOTE]
->  Gdy zbieranie danych śledzenia przy użyciu programu Visual Studio, nie należy bezpośrednio modyfikować pliku konfiguracji.  Zamiast tego należy użyć [Zaawansowane ustawienia](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) okno dialogowe, aby zmodyfikować ustawienia.  
+> Gdy zbieranie danych śledzenia przy użyciu programu Visual Studio, nie należy bezpośrednio modyfikować pliku konfiguracji.  Zamiast tego należy użyć [Zaawansowane ustawienia](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) okno dialogowe, aby zmodyfikować ustawienia.  
   
  Aby zmodyfikować ustawienia zbierania, należy utworzyć plik konfiguracji na komputerze, w którym będą uruchamiane narzędzie CVCollectionCmd. Plik konfiguracji można utworzyć od podstaw lub można skopiować pliku konfiguracji na komputerze, na którym jest zainstalowany program Visual Studio i zmodyfikować to. Plik `UserConfig.xml` i znajduje się w **lokalnych danych aplikacji** folderu. Po uruchomieniu narzędzia, należy użyć opcji konfiguracji, w połączeniu z polecenia uruchomienia, Dołącz lub analizy.  W parametr, który jest skojarzony z opcją konfiguracji należy określić ścieżkę do pliku konfiguracji.  
   
@@ -75,7 +75,7 @@ Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd.exe) służ
 |Znaczniki|Zawiera listę dostawców znaczników.|Może zawierać zero lub więcej elementów MarkerProvider.|  
 |MarkerProvider|Określa dostawcę jednego znacznika.|Musi zawierać następujące elementy:<br /><br /> -Level<br />— IDENTYFIKATOR GUID<br />— Nazwa<br /><br /> Może zawierać następujące elementy:<br /><br /> -Kategorii<br />-IsEnabled|  
 |Poziom|Ustawia poziom ważności MarkerProvider.|-Niski<br />-Normalny<br />-Wysoka<br />-Krytyczne<br />— Wszystko|  
-|Identyfikator GUID|Globalnie unikatowy identyfikator znacznika dostawcy funkcji ETW.|IDENTYFIKATOR GUID.|  
+|Guid|Globalnie unikatowy identyfikator znacznika dostawcy funkcji ETW.|IDENTYFIKATOR GUID.|  
 |Nazwa|Określa opis dostawcę znaczników.|Ciąg.|  
 |Kategorie|Określa kategorie zbierane na potrzeby dostawcę znaczników.|Rozdzielana przecinkami ciąg liczb lub zakresy liczb.|  
 |isEnabled|Ustawia wartość określającą, czy dostawca znacznika jest włączony dla kolekcji.|— Wartość true<br />— Wartość false|  

@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b457bf6491a9b82fc981c66722f4c6e19a517065
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 245a6c994d87ecfa9c5ef877563b70100e5eef6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438992"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Projekt SharePoint oraz szablony elementów projektu
   W poniższych sekcjach opisano dostępnych projektów programu SharePoint i elementu projektu, szablonów i sposobu ich używania.
@@ -80,7 +80,7 @@ ms.locfileid: "60040341"
  *Typ zawartości* elementy pozwalają tworzyć niestandardowe typy zawartości na podstawie istniejącego typu zawartości (podstawowy) takie jak dokument, anonsu lub zadania. Niestandardowy typ zawartości zawiera te same atrybuty i pola jako podstawowym typem zawartości wraz z dowolnej kolumny witryny (pola) można zdefiniować. Na przykład można utworzyć niestandardowe skontaktuj się z typem zawartości oparty na podstawowym typem zawartości kontaktu, których można użyć w programie SharePoint. Typ zawartości można dostosować, zmieniając istniejące kolumny witryny lub dodając większą liczbę kolumn witryny z tymi, które już uwzględniony w podstawowym typem zawartości.
 
 > [!NOTE]
->  Ze względu na ograniczenie programu SharePoint nie można utworzyć farmę rozwiązania typu zawartości na podstawie typu zawartości rozwiązania w trybie piaskownicy.
+> Ze względu na ograniczenie programu SharePoint nie można utworzyć farmę rozwiązania typu zawartości na podstawie typu zawartości rozwiązania w trybie piaskownicy.
 
  Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie kolumny witryny, typu zawartości oraz list dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) i [bloków konstrukcyjnych: Typ zawartości](http://go.microsoft.com/fwlink/?LinkId=179413).
 

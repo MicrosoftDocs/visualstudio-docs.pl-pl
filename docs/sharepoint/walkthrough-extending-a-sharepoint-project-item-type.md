@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a88bfb7d117f646a74c4242cbf851711e9179196
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f4922b791ea3ad7ab58c231342e11b5c175d4895
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430343"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Przewodnik: Rozszerzanie typu elementu projektu SharePoint
   Możesz użyć **Model usługi łączności danych biznesowych** elementu projektu, aby utworzyć model usługi łączności danych biznesowych (BDC) w programie SharePoint. Domyślnie podczas tworzenia modelu przy użyciu tego elementu projektu danych w modelu jest niewidoczne dla użytkowników. Należy także utworzyć listy zewnętrznej w SharePoint, aby umożliwić użytkownikom wyświetlanie danych.
@@ -67,7 +67,7 @@ ms.locfileid: "60057865"
 3. W **nowy projekt** okna dialogowego rozwiń **Visual C#** lub **języka Visual Basic** węzłów, a następnie wybierz **rozszerzalności** węzła.
 
     > [!NOTE]
-    >  **Rozszerzalności** węzeł jest dostępny tylko w przypadku instalowania programu Visual Studio SDK. Aby uzyskać więcej informacji zobacz sekcję wymagania wstępne niniejszego tematu.
+    > **Rozszerzalności** węzeł jest dostępny tylko w przypadku instalowania programu Visual Studio SDK. Aby uzyskać więcej informacji zobacz sekcję wymagania wstępne niniejszego tematu.
 
 4. Na liście u góry **nowy projekt** okna dialogowego wybierz **.NET Framework 4.5**.
 
@@ -132,7 +132,7 @@ ms.locfileid: "60057865"
 1. Wklej następujący kod do pliku kodu ProjectItemExtension.
 
     > [!NOTE]
-    >  Po dodaniu tego kodu, projekt będzie miał pewne błędy kompilacji. Te błędy znikną po dodaniu kodu w dalszych krokach.
+    > Po dodaniu tego kodu, projekt będzie miał pewne błędy kompilacji. Te błędy znikną po dodaniu kodu w dalszych krokach.
 
      [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/projectitemextension.cs#1)]
      [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/projectitemextension.vb#1)]
@@ -176,7 +176,7 @@ ms.locfileid: "60057865"
 6. W **typu** wybierz **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Ta wartość odpowiada `MefComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Ta wartość odpowiada `MefComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.
 

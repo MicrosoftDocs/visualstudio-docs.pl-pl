@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d22db963f895c4ca53a44e20bc0babd0dff49853
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa7db2f55a89bd6c542bff0cf30ee058e339f15c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433287"
 ---
 # <a name="customizing-deletion-behavior"></a>Dostosowywanie zachowania dotyczącego usuwania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ Usuwanie elementu zwykle powoduje, że powiązanych elementów można również 
  Opcje w pliku definicji DSL umożliwiają tylko wybrać, czy usunięcie propaguje do natychmiastowego sąsiada. Aby zaimplementować bardziej złożone schemat propagacji delete, można pisać kod programu.  
   
 > [!NOTE]
->  Aby dodać kod programu do swojej definicji DSL, Utwórz plik osobnego kodu w **Dsl** projektu, a następnie zapisz definicje częściowe rozszerzyć klasy w folderze wygenerowany kod. Aby uzyskać więcej informacji, zobacz [pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
+> Aby dodać kod programu do swojej definicji DSL, Utwórz plik osobnego kodu w **Dsl** projektu, a następnie zapisz definicje częściowe rozszerzyć klasy w folderze wygenerowany kod. Aby uzyskać więcej informacji, zobacz [pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ## <a name="closure"></a> Definiowanie zamknięcia Delete  
  Operacja usunięcia używa klasy _YourModel_**DeleteClosure** ustalenie, które elementy, aby usunąć, biorąc pod uwagę wartości początkowe. Wywołuje `ShouldVisitRelationship()` i `ShouldVisitRolePlayer()` wielokrotnie, zalet Graf relacji. Można zastąpić tych metod. ShouldVisitRolePlayer znajduje się za pomocą tożsamości łącze i element w jednej z ról łącza. Powinien zostać zwrócony jeden z następujących wartości:  
@@ -213,7 +213,7 @@ partial class Artist
      Aby uzyskać więcej informacji, zobacz [obsługi propagowanie zmian poza Model zdarzeń](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
     > [!WARNING]
-    >  Po usunięciu elementu dostęp można uzyskać wartości właściwości domeny, ale nie można nawigować relacji łączy. Jednak jeśli ustawisz to zdarzenie usunięte na relacji, można także przejść dwa elementy, które były jej obiekty pełniące role. W związku z tym jeśli chcesz odpowiedzieć na usunięcie elementu modelu, ale chcesz uzyskiwanie dostępu do elementu, do którego został połączony nastavit zdarzenie usuwania relacji, a nie klasę domeny elementu modelu.  
+    > Po usunięciu elementu dostęp można uzyskać wartości właściwości domeny, ale nie można nawigować relacji łączy. Jednak jeśli ustawisz to zdarzenie usunięte na relacji, można także przejść dwa elementy, które były jej obiekty pełniące role. W związku z tym jeśli chcesz odpowiedzieć na usunięcie elementu modelu, ale chcesz uzyskiwanie dostępu do elementu, do którego został połączony nastavit zdarzenie usuwania relacji, a nie klasę domeny elementu modelu.  
   
 ### <a name="example-deletion-rules"></a>Przykład usunięcia reguły  
   

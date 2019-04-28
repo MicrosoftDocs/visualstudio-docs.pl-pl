@@ -12,11 +12,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.openlocfilehash: 2bb6de32188abb11e0286c200383bdb1e8fb12f7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58856823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62549212"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Instrukcje: Odblokować program Visual Studio
 

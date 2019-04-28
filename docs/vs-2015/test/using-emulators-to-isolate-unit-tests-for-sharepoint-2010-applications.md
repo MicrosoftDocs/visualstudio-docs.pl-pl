@@ -8,12 +8,12 @@ ms.assetid: b681164c-c87a-4bd7-be48-ed77e1578471
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: badf8d53a73c86bac9422fd2bb7e1f073dd291eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 689ff79fb35f7b84c976fed85e4af10a8e252f3c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445872"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Izolowanie testów jednostkowych aplikacji SharePoint 2010 przy użyciu emulatorów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -340,7 +340,7 @@ public string GetAppointmentsForToday(string listName, SPWeb web)
  Oto modyfikacja istniejącej metody testowej, `GetAppointmentsForTodayReturnsOnlyTodaysAppointments`, która implementuje delegata substytuty. Wymagane zmiany są wywoływane w komentarzach:  
   
 > [!IMPORTANT]
->  Metody testowe, które jawnie tworzą podkładki substytutów wyrzucają `ShimNotSupported` wyjątku, gdy test jest wykonywany w `EmulationMode.Passthrough` kontekstu. Aby uniknąć tego problemu, należy użyć zmiennej do ustawiania `EmulationMode` wartości i zawijania kodu substytutów w `if` instrukcji, która sprawdza wartość.  
+> Metody testowe, które jawnie tworzą podkładki substytutów wyrzucają `ShimNotSupported` wyjątku, gdy test jest wykonywany w `EmulationMode.Passthrough` kontekstu. Aby uniknąć tego problemu, należy użyć zmiennej do ustawiania `EmulationMode` wartości i zawijania kodu substytutów w `if` instrukcji, która sprawdza wartość.  
   
 ```csharp  
 // class level field to set emulation mode  

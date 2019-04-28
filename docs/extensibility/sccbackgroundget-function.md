@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51e1768e23eb61a5a6463d8d48f64683987f431a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 4a831c06af503646b29f462a9e52436ce157cc86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434708"
 ---
 # <a name="sccbackgroundget-function"></a>Funkcja SccBackgroundGet
 Ta funkcja pobiera z kontroli źródła każdego określonych plików bez interakcji użytkownika.
@@ -48,7 +48,7 @@ SCCRTN SccBackgroundGet(
 [out w] Tablica nazwy plików do pobrania.
 
 > [!NOTE]
->  Nazwy muszą być w pełni kwalifikowanej nazwy lokalnego.
+> Nazwy muszą być w pełni kwalifikowanej nazwy lokalnego.
 
  Flagidw
 

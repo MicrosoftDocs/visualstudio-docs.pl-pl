@@ -8,12 +8,12 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9644aeed1df42aa3a73af7d2cd7d7fa81bd27684
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 246464baea7e07e4d97e3483b423d200cf2b960c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430041"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Typowe wzorce kontrolki dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -325,7 +325,7 @@ ms.locfileid: "60040834"
  Niektóre przyciski należy zawsze używać graficzny i nigdy nie dołączaj tekstu, aby zaoszczędzić miejsce i uniknąć problemów z lokalizacji. Są one często używane w innych sortowanie list i formanty pola wyboru.
 
 > [!NOTE]
->  Użytkownicy muszą kartę w tych przycisków (nie ma żadnych kluczy dostępu), więc umieść je w kolejności rozsądne. Właściwość name przycisku są mapowane na akcję, która zajmuje się tak, aby czytniki zawartości ekranu poprawnie interpretować Akcja przycisku.
+> Użytkownicy muszą kartę w tych przycisków (nie ma żadnych kluczy dostępu), więc umieść je w kolejności rozsądne. Właściwość name przycisku są mapowane na akcję, która zajmuje się tak, aby czytniki zawartości ekranu poprawnie interpretować Akcja przycisku.
 
 |||
 |-|-|

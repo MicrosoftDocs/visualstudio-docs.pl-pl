@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18f03e2bd37d8275685f34a65c9ab96740ed80a3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dbd746a52084d2a2fc90a0c6890e20687fe7ee26
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405628"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Instrukcje: Ustawianie opcji ułatwień dostępu IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60051625"
  Ponadto [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] obsługuje układy klawiatury Dvoraka, które powodują, że najczęściej wpisane znaki łatwiej dostępne. Można również dostosować domyślne klawiszy skrótu dostępnych z [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [określenie i dostosowywanie skrótów klawiaturowych](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
   
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="editors-dialogs-and-tool-windows"></a>Edytory, okna dialogowe i narzędzie Windows  
  Domyślnie, okna dialogowe i okna narzędzi w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] używać tego samego rozmiaru czcionki i kolory jako systemu operacyjnego. Ustawienia kolorów dla ramki w IDE, okna dialogowe, paski narzędzi i okien narzędzi opierają się schemat kolorów: jasny i ciemny. Możesz zmienić bieżący motyw kolorów w [ogólne, środowisko, opcje, okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md).  
@@ -63,7 +63,7 @@ ms.locfileid: "60051625"
 6. W **rozmiar**, wybierz nowy rozmiar czcionki.  
   
     > [!NOTE]
-    >  Aby zresetować rozmiar okna narzędzi tekstowych i edytorów, wybierz **Użyj ustawień domyślnych**.  
+    > Aby zresetować rozmiar okna narzędzi tekstowych i edytorów, wybierz **Użyj ustawień domyślnych**.  
   
 7. Wybierz **OK**.  
   
@@ -71,7 +71,7 @@ ms.locfileid: "60051625"
  Możesz również zmienić kolory domyślne tekstu, wskaźniki margines, biały i elementy kodu w edytorze.  
   
 > [!NOTE]
->  Aby użyć dużego kontrastu kolorów dla wszystkich aplikacji systemu windows w systemie operacyjnym, naciśnij klawisz po lewej stronie <strong>ALT +</strong>po lewej stronie **SHIFT + PRINT SCREEN**. Jeśli [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] jest otworzyć, zamknij i otwórz ponownie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] do pełnego wdrożenia dużego kontrastu kolorów.  
+> Aby użyć dużego kontrastu kolorów dla wszystkich aplikacji systemu windows w systemie operacyjnym, naciśnij klawisz po lewej stronie <strong>ALT +</strong>po lewej stronie **SHIFT + PRINT SCREEN**. Jeśli [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] jest otworzyć, zamknij i otwórz ponownie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] do pełnego wdrożenia dużego kontrastu kolorów.  
   
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>Aby zmienić kolor elementów w edytorze  
   

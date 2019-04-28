@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d93c18f1b62ef7171fb35af896a8e9adbc461680
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: bc11af7d259f252d7659f559be15b85f4af90149
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437940"
 ---
 # <a name="graphics-frame-analysis"></a>Analiza ramek grafiki
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60053536"
 Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do analizowania i zoptymalizować wydajność renderowania Direct3D grach i aplikacjach.  
   
 > [!IMPORTANT]
->  Analizator grafiki programu obsługuje analizy klatek aplikacji, które używają programu Direct3D 11 na obsługiwanych platformach, w tym Windows 10. Analiza klatek nie jest obecnie obsługiwane w przypadku aplikacji korzystających z programu Direct3D 12.  
+> Analizator grafiki programu obsługuje analizy klatek aplikacji, które używają programu Direct3D 11 na obsługiwanych platformach, w tym Windows 10. Analiza klatek nie jest obecnie obsługiwane w przypadku aplikacji korzystających z programu Direct3D 12.  
   
 ## <a name="frame-analysis"></a>Analiza klatek  
  Analiza klatek używa informacje, które są przechwytywane w pliku dziennika grafiki do celów diagnostycznych, ale używa go do podsumowania wydajność renderowania w zamian. Informacje o wydajności nie jest rejestrowane w dzienniku podczas przechwytywania. Zamiast tego informacje o wydajności jest generowany później, podczas analizy klatek przez zdarzenia czasowe i zbieranie statystyk jak odtworzyć ramki. Takie podejście ma kilka zalet w stosunku do rejestrowania informacji o wydajności podczas przechwytywania:  
@@ -118,7 +118,7 @@ Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do ana
  Informacje o liczniku sprzętu zawiera bardzo szczegółowe widok zachowań określonych platforma sprzętowa dla każdego wywołania rysowania, które mogą pomóc Ci przyczynie wąskich gardeł wydajności bardzo dokładnie.  
   
 > [!NOTE]
->  Platformy sprzętowe obsługują różne liczniki; nie istnieje standard. Liczniki i ich znaczenie są określane wyłącznie przez każdego producenta procesora GPU.  
+> Platformy sprzętowe obsługują różne liczniki; nie istnieje standard. Liczniki i ich znaczenie są określane wyłącznie przez każdego producenta procesora GPU.  
   
 ### <a name="marker-regions-and-events"></a>Znacznik regionów i zdarzenia  
  Analiza klatek obsługuje znaczniki zdarzenie zdefiniowane przez użytkownika i grupy zdarzeń. Są one wyświetlane w tabeli podsumowania, a w tabelach szczegółów.  
@@ -145,7 +145,7 @@ Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do ana
  Sygnatury czasowe są obsługiwane na wszystkich platformach, które obsługują analizy klatek. Głębokość zamknięcia zapytania — wymagana dla licznika zamknięte pikseli — są obsługiwane na platformach, które obsługują poziom funkcji 9.2 lub nowszej.  
   
 > [!NOTE]
->  Choć sygnatur czasowych są obsługiwane na wszystkich platformach, które obsługują analizy klatek, dokładność i spójność sygnatury czasowe różni się w zależności od platformy.  
+> Choć sygnatur czasowych są obsługiwane na wszystkich platformach, które obsługują analizy klatek, dokładność i spójność sygnatury czasowe różni się w zależności od platformy.  
   
 ### <a name="gpu-counters"></a>Liczniki procesora GPU  
  Pomoc dotycząca liczników sprzętowych procesora GPU jest zależna od sprzętu.  
@@ -159,7 +159,7 @@ Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do ana
   Żadna inna platforma, która obsługuje analizy klatek zbiera dane liczników sprzętowych procesora GPU.  
   
 > [!NOTE]
->  Ponieważ liczników sprzętowych procesora GPU zasobów sprzętowych, może upłynąć wielu przebiegów, aby zebrać pełny zestaw liczników sprzętowych dla poszczególnych wariantu renderowania. W rezultacie kolejność, w którym procesor GPU zbieranymi licznikami jest nieokreślona.  
+> Ponieważ liczników sprzętowych procesora GPU zasobów sprzętowych, może upłynąć wielu przebiegów, aby zebrać pełny zestaw liczników sprzętowych dla poszczególnych wariantu renderowania. W rezultacie kolejność, w którym procesor GPU zbieranymi licznikami jest nieokreślona.  
   
 ### <a name="windows-phone"></a>Windows phone  
  Sygnatury czasowe, zamknięcia zapytania i liczników sprzętowych procesora GPU są obsługiwane tylko w aparaty telefoniczne Windows Phone, które dostarczonych z systemem Windows Phone 8.1. Analiza klatek wymaga je w celu odtwarzania, że plik dziennika grafiki. Aparaty telefoniczne Windows Phone, dostarczonych pierwotnie wraz z programem Windows Phone 8 nie obsługują analizy ramek, nawet w przypadku aparaty telefoniczne, które zostały zaktualizowane do wersji Windows Phone 8.1.  
@@ -174,13 +174,13 @@ Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do ana
  W analizatorze grafiki podczas odtwarzania pliku dziennika grafiki, która używa wyższy poziom funkcji nie obsługuje maszynę odtwarzającą, jego automatycznie powraca do WARP. Analiza klatek go jawnie nie wracały do WARP i generuje błąd, — WARP jest przydatne, sprawdzając poprawność aplikacja Direct3D, ale nie sprawdzenie jego wydajności.  
   
 > [!NOTE]
->  Chociaż jest to ważne, aby pamiętać, poziom funkcji problemów, można przechwytywać i odtwarzać że dziennika grafiki plików na urządzeniach i różne konfiguracje sprzętu. Na przykład można przechwytywać informacje graficzne na Windows Phone i odtwarzać je z powrotem na komputerze stacjonarnym i odwrotnie jest również obsługiwany. W obu przypadkach dziennik grafiki można odtwarzać ponownie tak długo, jak w pliku dziennika nie zawiera interfejsów API lub użyć poziomów funkcji, które nie są obsługiwane na maszynie odtwarzającej.  
+> Chociaż jest to ważne, aby pamiętać, poziom funkcji problemów, można przechwytywać i odtwarzać że dziennika grafiki plików na urządzeniach i różne konfiguracje sprzętu. Na przykład można przechwytywać informacje graficzne na Windows Phone i odtwarzać je z powrotem na komputerze stacjonarnym i odwrotnie jest również obsługiwany. W obu przypadkach dziennik grafiki można odtwarzać ponownie tak długo, jak w pliku dziennika nie zawiera interfejsów API lub użyć poziomów funkcji, które nie są obsługiwane na maszynie odtwarzającej.  
   
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 i niższy  
  Analiza klatek jest obsługiwana tylko dla interfejsu API programu Direct3D 11. Jeśli aplikacja wymaga interfejsu API Direct3D 10, analiza klatek nie rozpoznaje lub ich profil, nawet jeśli ich rozpoznawany i używany przez inne narzędzia Analizator grafiki programu. Jeśli aplikacja używa Direct3D11 i interfejsów API Direct3D 10, są profilowane tylko wywołania Direct3D 11.  
   
 > [!NOTE]
->  Dotyczy to tylko do wywołań interfejsu API Direct3D, których używasz, nie poziomów funkcji. Tak długo, jak długo używasz Direct3D 11, Direct3D 11.1 i Direct3D 11.2 API, można użyć dowolnego poziomu funkcji, które chcesz i analiza klatek tylko będą działać.  
+> Dotyczy to tylko do wywołań interfejsu API Direct3D, których używasz, nie poziomów funkcji. Tak długo, jak długo używasz Direct3D 11, Direct3D 11.1 i Direct3D 11.2 API, można użyć dowolnego poziomu funkcji, które chcesz i analiza klatek tylko będą działać.  
   
 ## <a name="Variants"></a> Wariantów  
  Każda zmiana, który sprawia, że funkcja analizy klatek sposób renderowania ramki podczas odtwarzania jest znany jako *wariant*. Warianty, które sprawdza, czy analiza klatek odnoszą się do wspólnego, stosunkowo łatwa zmiany, które można wprowadzić ulepszenia wydajności renderowania i jakość wizualną aplikacji — na przykład, zmniejszenie rozmiaru tekstury, przy użyciu kompresji tekstury lub włączenie różne rodzaje wygładzanie. Warianty zastąpić kontekstu zwykle renderowania i parametrów w aplikacji. Poniżej przedstawiono podsumowanie:  

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93acd8466ae90a6db4d1f25d93460e501335af50
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7d6fb66684bd51c75e655bc2403cb6a9fb5846a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438816"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Instrukcje: Programowe Włączanie ochrony arkuszy
   Funkcja ochrony w programie Microsoft Office Excel uniemożliwia użytkownikom i kod modyfikowanie obiektów w arkuszu. Domyślnie wszystkie komórki są blokowane po włączeniu ochrony.
@@ -30,7 +30,7 @@ ms.locfileid: "60062220"
  W dostosowaniach na poziomie dokumentu można chronić arkuszy, za pomocą projektanta programu Excel. Arkusz umożliwia również ochronę programowo w czasie wykonywania w dowolnym typem projektu.
 
 > [!NOTE]
->  Nie można dodać kontrolek formularzy Windows Forms obszary arkusza, które są chronione.
+> Nie można dodać kontrolek formularzy Windows Forms obszary arkusza, które są chronione.
 
 ## <a name="use-the-designer"></a>Za pomocą projektanta
 

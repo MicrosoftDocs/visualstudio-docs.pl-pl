@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40e2e4f3882a6bd3b3f7ce9b70aec45f244377d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f0967f50c9dce325ff1595fec9d50138aa0a8d74
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438139"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Przewodnik: Tworzenie środowiska kompilacji na wielu komputerach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ Można utworzyć środowisko budowania w obrębie organizacji przez zainstalowan
   Należy zauważyć, że nazwa folderu Program Files zależy od systemu operacyjnego, który jest zainstalowany. Na x86 komputera, nazwa to \Program Files\\; x64 komputera, nazwa to \Program Files (x86)\\. Niezależnie od architektury systemu ten instruktażu odwołuje się do folderu Program Files jako % ProgramFiles %.  
   
 > [!NOTE]
->  Na komputerze kompilacji wszystkie odpowiednie pliki muszą być na tym samym dysku; litera dysku może być jednak różni się od litery dysku dla dysku, na którym zainstalowano program Visual Studio na komputerze-hoście. W każdym przypadku konieczne jest uwzględnienie lokalizacji plików podczas tworzenia wpisów rejestru zgodnie z opisem w dalszej części tego dokumentu.  
+> Na komputerze kompilacji wszystkie odpowiednie pliki muszą być na tym samym dysku; litera dysku może być jednak różni się od litery dysku dla dysku, na którym zainstalowano program Visual Studio na komputerze-hoście. W każdym przypadku konieczne jest uwzględnienie lokalizacji plików podczas tworzenia wpisów rejestru zgodnie z opisem w dalszej części tego dokumentu.  
   
 #### <a name="to-copy-the-windows-sdk-files-to-the-build-computer"></a>Aby skopiować pliki zestawu Windows SDK do komputera kompilacji  
   
@@ -223,7 +223,7 @@ Można utworzyć środowisko budowania w obrębie organizacji przez zainstalowan
 1. Określ folder nadrzędny do wpisów rejestru. Wszystkie wpisy rejestru są tworzone w ramach tego samego klucza nadrzędnego. Na x86 komputera, klucz nadrzędny to HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. Na x64 komputer klucza nadrzędnego jest HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. Niezależnie od architektury systemu ten instruktażu odwołuje się do klucza nadrzędnego jako % RegistryRoot %.  
   
    > [!NOTE]
-   >  Jeśli architektura komputera hosta różni się od architektury komputera kompilacji, upewnij się, że używasz właściwego klucza nadrzędnego na każdym komputerze. Jest to szczególnie ważne, jeśli automatyzujesz proces eksportowania.  
+   > Jeśli architektura komputera hosta różni się od architektury komputera kompilacji, upewnij się, że używasz właściwego klucza nadrzędnego na każdym komputerze. Jest to szczególnie ważne, jeśli automatyzujesz proces eksportowania.  
    >   
    >  Jeśli używasz innej litery dysku na komputerze kompilacji niż ten, którego używasz na komputerze-hoście, upewnij się również zmienić wartości wpisów rejestru w celu dopasowania.  
   
@@ -334,7 +334,7 @@ Można utworzyć środowisko budowania w obrębie organizacji przez zainstalowan
      **gacutil -i \<pliku >**  
   
     > [!NOTE]
-    >  Ponowne uruchomienie komputera może być wymagane dla zestawu w pełni zainstalować w GAC.  
+    > Ponowne uruchomienie komputera może być wymagane dla zestawu w pełni zainstalować w GAC.  
   
 ## <a name="BuildingProjects"></a> Kompilowanie projektów  
  Team Foundation Build można użyć do tworzenia [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] projektów i rozwiązań lub można utworzyć je w wiersza polecenia. Korzystając z Team Foundation Build do tworzenia projektów, wywołuje on MSBuild pliku wykonywalnego, który odpowiada architekturze systemu.  W wierszu polecenia można użyć 32-bitowej platformy MSBuild lub 64-bitowej platformy MSBuild i można wybrać architekturę programu MSBuild przez ustawienie zmiennej środowiskowej PATH lub bezpośrednie wywołanie pliku wykonywalnego architektury programu MSBuild.  
@@ -346,17 +346,17 @@ Można utworzyć środowisko budowania w obrębie organizacji przez zainstalowan
  Aby uzyskać więcej informacji na temat sposobu użycia MSBuild w wierszu polecenia, zobacz [odwołanie do wiersza polecenia](../msbuild/msbuild-command-line-reference.md).  
   
 > [!NOTE]
->  Aby zbudować [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] projektów, należy użyć zestawu narzędzi platformy "v110". Jeśli nie chcesz edytować [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] plików projektu, należy określić zestaw narzędzi platformy, przy użyciu tego argumentu wiersza polecenia:  
+> Aby zbudować [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] projektów, należy użyć zestawu narzędzi platformy "v110". Jeśli nie chcesz edytować [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] plików projektu, należy określić zestaw narzędzi platformy, przy użyciu tego argumentu wiersza polecenia:  
 >   
->  **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
+> **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
   
 ## <a name="CreatingForSourceControl"></a> Tworzenie środowiska kompilacji, dzięki czemu mogą być sprawdzone w formancie źródła  
  Można utworzyć środowisko budowania, które mogą być rozmieszczone na różnych komputerach i nie wymaga i plików GAC'ing lub modyfikowania ustawień rejestru. Następujące kroki są tylko jeden ze sposobów osiągnięcia tego. Dostosuj te procedury do unikalnych cech środowiska kompilacji.  
   
 > [!NOTE]
->  Należy wyłączyć przyrostowe kompilowanie, tak aby tracker.exe nie zgłosi błąd podczas kompilacji. Aby wyłączyć przyrostowe kompilowanie, ustaw ten parametr kompilacji:  
+> Należy wyłączyć przyrostowe kompilowanie, tak aby tracker.exe nie zgłosi błąd podczas kompilacji. Aby wyłączyć przyrostowe kompilowanie, ustaw ten parametr kompilacji:  
 >   
->  **msbuild** *solution.sln* **/p:TrackFileAccess=false**  
+> **msbuild** *solution.sln* **/p:TrackFileAccess=false**  
   
 #### <a name="to-create-a-build-environment-that-can-be-checked-into-source-control"></a>Aby utworzyć środowisko budowania, które mogą być sprawdzone w formancie źródła  
   

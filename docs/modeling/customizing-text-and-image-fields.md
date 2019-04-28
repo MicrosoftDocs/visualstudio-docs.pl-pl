@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a31544c256c8160eba2c18afb102205a921e0b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 607809b05688931b139b27fec1803719b928dfea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445816"
 ---
 # <a name="customizing-text-and-image-fields"></a>Dostosowywanie pól tekstowych i obrazu
 Po zdefiniowaniu dekoratora tekstu w kształcie jest reprezentowana przez element TextField. Przykłady inicjalizacji TextFields i innych ShapeFields należy sprawdzić Dsl\GeneratedCode\Shapes.cs w rozwiązaniu języka DSL.
@@ -88,7 +88,7 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
  Jeśli nie, następnie zastąpić `InitializeShapeFields` metodę klasy kształt i przypisywanie wartości do odpowiedniego `Default...` właściwości pola tekstowego.
 
 > [!WARNING]
->  Aby zastąpić `InitializeShapeFields()`, należy ustawić **Generates Double Derived** właściwość klasy kształtu do `true` w definicji DSL.
+> Aby zastąpić `InitializeShapeFields()`, należy ustawić **Generates Double Derived** właściwość klasy kształtu do `true` w definicji DSL.
 
  W tym przykładzie kształt ma pola tekstowego, który będzie używany dla komentarzy do użytkownika. Chcemy używana czcionka standardowa komentarz. Ponieważ istnieje standardowa czcionkę z zestaw stylów, możemy ustawić domyślny identyfikator czcionki:
 
@@ -195,7 +195,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  W tym przykładzie sprawia, że ikona zmiany jest zależny od stanu elementu modelu kształtu.
 
 > [!WARNING]
->  W tym przykładzie pokazano, jak wprowadzić dekoratora dynamiczny obraz. Jednak jeżeli chcesz przełączać się między co najmniej dwa obrazy w zależności od stanu zmiennej modelu, jest łatwiejsze tworzenie kilku dekoratory obrazu, zlokalizuj je w tym samym położeniu na kształcie, a następnie ustaw filtr widoczności, aby była zależna od określonej wartości modelu Zmienna. Ustawienie tego filtru, wybierz mapowanie kształtów w definicji DSL, Otwórz okno Szczegóły języka DSL, i kliknij kartę Dekoratory.
+> W tym przykładzie pokazano, jak wprowadzić dekoratora dynamiczny obraz. Jednak jeżeli chcesz przełączać się między co najmniej dwa obrazy w zależności od stanu zmiennej modelu, jest łatwiejsze tworzenie kilku dekoratory obrazu, zlokalizuj je w tym samym położeniu na kształcie, a następnie ustaw filtr widoczności, aby była zależna od określonej wartości modelu Zmienna. Ustawienie tego filtru, wybierz mapowanie kształtów w definicji DSL, Otwórz okno Szczegóły języka DSL, i kliknij kartę Dekoratory.
 
  Aby uruchomić ten przykładowy kod, Utwórz nowe rozwiązanie języka DSL za pomocą szablonu minimalnego języka. Dodaj właściwość logiczna domeny `AlternateState` ExampleElement klasy domeny. Dodaj ikonę dekoratora klasy ExampleShape i ustaw jego obraz w pliku mapy bitowej. Kliknij przycisk **Transformuj wszystkie szablony**. Dodaj nowy plik kodu w projekcie języka DSL i Wstaw następujący kod.
 

@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b109be00f7b165a131244ed1ddb886739bcdce55
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7a3d731939f7497faa9c767e02e404c5ac75518
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405912"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Instrukcje: Używanie wyłącznie klawiatury
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60051586"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] udostępnia wiele domyślne kombinacji klawiszy skrótów ułatwia nawigowanie do kodu w ramach zintegrowanego środowiska programistycznego (IDE). Aby uzyskać pełną listę skrótów klawiaturowych używane w programie Visual Studio, zobacz [domyślne skróty klawiaturowe](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Aby uzyskać informacje na skróty klawiaturowe są dostępne dla innych produktów firmy Microsoft, zobacz [ http://www.microsoft.com/enable/products/keyboard.aspx ](http://go.microsoft.com/fwlink/?LinkID=40400).  
   
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="toolbox-controls"></a>Kontrolki przybornika  
  Formularz lub Projektant za pomocą klawiatury, można dodać kontrolki w przyborniku.  

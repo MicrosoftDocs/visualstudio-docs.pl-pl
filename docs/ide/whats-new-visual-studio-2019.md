@@ -2,7 +2,7 @@
 title: Co nowego w programie Visual Studio 2019
 titleSuffix: ''
 description: Dowiedz się więcej o nowych funkcjach w programie Visual Studio 2019 r.
-ms.date: 04/11/2019
+ms.date: 04/23/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: ca411e0c66033ea923a979f68ed19c1ec02b6ed9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3093641ad07ad3ae0f4796c2064c3e6901ae03ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432028"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
@@ -84,7 +84,7 @@ Aby uzyskać więcej informacji na temat IntelliCode zobacz [więcej kodu, przew
 
 Sparowane z wskaźnik kondycji dokumentu jest nowe polecenie czyszczenia kodu. To nowe polecenie służy do identyfikowania i następnie Rozwiąż ostrzeżenia i sugestie dotyczące kliknięciem przycisku.
 
-Oczyszczanie będzie formatowania kodu i stosowanie poprawek kodu zgodnie z sugestią podaną przez [bieżące ustawienia](code-styles-and-quick-actions.md), [plików editorconfig](create-portable-custom-editor-options.md), lub [analizatorów Roslyn](../code-quality/roslyn-analyzers-overview.md).
+Oczyszczanie będzie formatowania kodu i stosowanie poprawek kodu zgodnie z sugestią podaną przez [bieżące ustawienia](code-styles-and-quick-actions.md) i [plików editorconfig](create-portable-custom-editor-options.md).
 
    ![Zrzut ekranu przedstawiający nowy formant oczyszczania kodu w Visual Studio 2019 r.](media/vs-2019/code-cleanup-profile.png)
 

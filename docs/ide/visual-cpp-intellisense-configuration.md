@@ -8,11 +8,11 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 188b1f8e96dca3ba76a9334f04156a1e30ededa9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582608"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Konfigurowanie projektu w języku C++ pod kątem funkcji IntelliSense
 

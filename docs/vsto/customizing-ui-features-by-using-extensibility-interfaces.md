@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 041e33f04c3f9d376dbc82839e2256b4000147f6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d28c9456afdc60b1bddadf759ec3090ba37f2040
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445479"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Dostosowywanie funkcji interfejsu użytkownika, korzystając z rozszerzalności interfejsów
   Narzędzi programistycznych pakietu Office w programie Visual Studio zawierają klasy i projektantów, które obsługują wiele szczegółów implementacji, gdy ich użyć do tworzenia niestandardowych okienek zadań, dostosowań Wstążki i regionach formularzy programu Outlook w dodatku VSTO. Jednak możesz również wdrożyć *interfejsu rozszerzalności* dla każdej funkcji samodzielnie, jeśli masz specjalne wymagania.
@@ -63,7 +63,7 @@ ms.locfileid: "56622933"
 - `TaskPaneUI` Klasa udostępnia interfejs użytkownika okienka zadań. Wartości atrybutów `TaskPaneUI` klasy widoczności klasy COM, który umożliwia aplikacji Microsoft Office odnaleźć klasy. W tym przykładzie interfejs użytkownika jest pusta <xref:System.Windows.Forms.UserControl>, ale można dodać formanty, modyfikując kod.
 
   > [!NOTE]
-  >  Aby udostępnić `TaskPaneUI` klasy dla modelu COM, należy także ustawić **Zarejestruj dla współdziałania COM** właściwość dla projektu.
+  > Aby udostępnić `TaskPaneUI` klasy dla modelu COM, należy także ustawić **Zarejestruj dla współdziałania COM** właściwość dla projektu.
 
   [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
   [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]

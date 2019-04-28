@@ -12,12 +12,12 @@ ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 303947c2299601e68ae830b13e6b6753c5e0dd79
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60ae3ad958ca97250ba74ac2c7aada7dddcf91d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434796"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Korzystanie z zestawów międzyoperacyjnych programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Visual Studio, zestawy międzyoperacyjne Zezwalaj na dostęp do interfejsów COM
  Domyślnie <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> zgłasza wyjątek, gdy jest przekazywana wartość HRESULT, która ma wartość niższą niż zero. W przypadkach, takich wartości HRESULT są dopuszczalne wartości i nie należy zgłosić wyjątek, wartości dodatkowe wartości HRESULT powinien zostać przekazany do <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> po wartości są badane. Jeśli HRESULT testowana pasuje do dowolnej wartości HRESULT jawnie przekazany do <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>, jest zgłaszany żaden wyjątek.
 
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.VSConstants> Klasa zawiera stałe dla typowych wartości HRESULT, na przykład <xref:Microsoft.VisualStudio.VSConstants.S_OK> i <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, i [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] wartości HRESULT, na przykład <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> i <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants> udostępnia również <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> i <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> metod, które odnoszą się do makra Powodzenie, a nie powiodło się w modelu COM.
+> <xref:Microsoft.VisualStudio.VSConstants> Klasa zawiera stałe dla typowych wartości HRESULT, na przykład <xref:Microsoft.VisualStudio.VSConstants.S_OK> i <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, i [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] wartości HRESULT, na przykład <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> i <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants> udostępnia również <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> i <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> metod, które odnoszą się do makra Powodzenie, a nie powiodło się w modelu COM.
 
  Na przykład, należy wziąć pod uwagę poniższe wywołanie funkcji, w którym <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> jest mniejsza niż zero reprezentuje błąd akceptowalną wartość zwracana, ale inne HRESULT.
 
@@ -48,7 +48,7 @@ Visual Studio, zestawy międzyoperacyjne Zezwalaj na dostęp do interfejsów COM
  Jeśli nie jesteś niektórych który wyjątków zgłaszają, ale wiesz HRESULT chcesz wrócić do modelu COM, można użyć <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> metodę, aby zgłosić wyjątek odpowiednie. Dzieje się tak nawet w przypadku błędów niestandardowych, na przykład <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> próbuje zamapować HRESULT przekazany do silnie typizowanego wyjątku. Jeśli jest ona nieosiągalna, zgłosi wyjątek ogólny COM zamiast tego. Ostateczny wynik jest HRESULT, były przekazywane do <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> z kodu zarządzanego jest zwracany do funkcji COM, która nazwała go.
 
 > [!NOTE]
->  Wyjątki wpłynąć na wydajność i są przeznaczone do wskazania niewłaściwym warunków. Warunki, które często występują powinny być obsługiwane w tekście, a nie zgłoszony wyjątek.
+> Wyjątki wpłynąć na wydajność i są przeznaczone do wskazania niewłaściwym warunków. Warunki, które często występują powinny być obsługiwane w tekście, a nie zgłoszony wyjątek.
 
 ## <a name="iunknown-parameters-passed-as-type-void"></a>IUnknown parametry przekazywane jako typ void **
  Wyszukaj [out] Parametry, które są zdefiniowane jako typ `void **` w COM interfejs, ale są definiowane jako `[``iid_is``]` w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zestawu międzyoperacyjnego metody prototypu.
@@ -56,7 +56,7 @@ Visual Studio, zestawy międzyoperacyjne Zezwalaj na dostęp do interfejsów COM
  Czasami generuje interfejsu COM `IUnknown` obiektu i interfejsu COM następnie przekazuje ją jako typ `void **`. Te interfejsy są szczególnie ważne, ponieważ jeśli zmienna jest zdefiniowana jako [out] w pliku IDL, a następnie `IUnknown` obiekt jest zliczonych odwołań z `AddRef` metody. Jeśli obiekt nie jest obsługiwany poprawnie występuje przeciek pamięci.
 
 > [!NOTE]
->  `IUnknown` Obiekt utworzony przy użyciu interfejsu COM i zwracane w zmiennej [out] powoduje przeciek pamięci, jeśli nie jest jawnie zwalniane.
+> `IUnknown` Obiekt utworzony przy użyciu interfejsu COM i zwracane w zmiennej [out] powoduje przeciek pamięci, jeśli nie jest jawnie zwalniane.
 
  Zarządzanych metod, które obsługują takie obiekty powinny traktować <xref:System.IntPtr> jako wskaźnik do `IUnknown` obiektu, a następnie wywołaj <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> metody do uzyskiwania obiektu. Obiekt wywołujący powinien następnie rzutowanie zwracanej wartości do dowolnego typu, jest odpowiednie. Gdy obiekt nie jest już potrzebny, wywołaj <xref:System.Runtime.InteropServices.Marshal.Release%2A> do jego zwolnienia.
 
@@ -87,7 +87,7 @@ else
 ```
 
 > [!NOTE]
->  Wiadomo, że następujące metody przekazywania `IUnknown` obiektu wskaźników jako typ <xref:System.IntPtr>. Je obsłużyć zgodnie z opisem w tej sekcji.
+> Wiadomo, że następujące metody przekazywania `IUnknown` obiektu wskaźników jako typ <xref:System.IntPtr>. Je obsłużyć zgodnie z opisem w tej sekcji.
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>
 

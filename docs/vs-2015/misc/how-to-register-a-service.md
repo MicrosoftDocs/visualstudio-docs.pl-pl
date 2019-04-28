@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: d086be78-ec3c-43cc-b799-5180a71e19f1
 caps.latest.revision: 16
 manager: jillfra
-ms.openlocfilehash: 0ec69fa123775cb477195d4022fb439fb990f415
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: f41578f2522487f746a469933a2269a621390f3c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408414"
 ---
 # <a name="how-to-register-a-service"></a>Instrukcje: Zarejestruj usługę
 Środowiska pakietu zarządzanego (MPF) zawiera atrybuty kontrolować rejestracji usług zarządzanych. Narzędzie RegPkg korzysta z tych atrybutów do zarejestrowania usługi za pomocą [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -38,7 +38,7 @@ ms.locfileid: "57872852"
  <xref:System.Runtime.InteropServices.ComVisibleAttribute> Jest wymagana do uzyskania interfejsu z niezarządzanego kodu.  
   
 > [!NOTE]
->  Mimo że można użyć tego samego typu lub identyfikator GUID dla usługi oraz interfejs, firma Microsoft zaleca, oddziel dwa, ponieważ usługa może narazić różne interfejsy.  
+> Mimo że można użyć tego samego typu lub identyfikator GUID dla usługi oraz interfejs, firma Microsoft zaleca, oddziel dwa, ponieważ usługa może narazić różne interfejsy.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rejestrowanie pakietów VSPackage](../extensibility/internals/registering-vspackages.md)   

@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f03c7260899db9e463282e45ef5bc76badb8a483
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6e77934f8e565800eb4a7a753df4beb3b003fbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445581"
 ---
 # <a name="walkthrough-using-msbuild"></a>Przewodnik: Korzystanie z programu MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,7 +132,7 @@ Program MSBuild jest platformę kompilacji firmy Microsoft i programu Visual Stu
  Uruchom program MSBuild z **Visual Studio Command Prompt** do tworzenia pod kątem HelloWorld zdefiniowanych powyżej. Użyj przełącznika wiersza polecenia/TARGET lub/t, aby wybrać element docelowy.  
   
 > [!NOTE]
->  Będziemy nazywać **Visual Studio Command Prompt** jako **okna polecenia** w poniższych sekcjach.  
+> Będziemy nazywać **Visual Studio Command Prompt** jako **okna polecenia** w poniższych sekcjach.  
   
 #### <a name="to-build-the-target"></a>Aby zbudować obiekt docelowy  
   
@@ -154,12 +154,12 @@ Program MSBuild jest platformę kompilacji firmy Microsoft i programu Visual Stu
     ```  
   
 > [!NOTE]
->  Jeśli zamiast tego zostanie wyświetlony `The target "HelloWorld" does not exist in the project` , a następnie prawdopodobnie, że nie można zapisać pliku projektu w edytorze kodu. Zapisz plik i spróbuj ponownie.  
+> Jeśli zamiast tego zostanie wyświetlony `The target "HelloWorld" does not exist in the project` , a następnie prawdopodobnie, że nie można zapisać pliku projektu w edytorze kodu. Zapisz plik i spróbuj ponownie.  
   
  Przez przełączanie między Edytorem kodu a oknie wiersza polecenia, można zmienić w pliku projektu i szybko wyświetlić wyniki.  
   
 > [!NOTE]
->  Jeśli uruchamiasz program msbuild bez opcji/t, msbuild tworzy docelowej, określone przez atrybut DefaultTarget elementu projektu, w tym przypadku "Kompilacja". Powoduje to skompilowanie aplikacji Windows Forms BuildApp.exe.  
+> Jeśli uruchamiasz program msbuild bez opcji/t, msbuild tworzy docelowej, określone przez atrybut DefaultTarget elementu projektu, w tym przypadku "Kompilacja". Powoduje to skompilowanie aplikacji Windows Forms BuildApp.exe.  
   
 ## <a name="build-properties"></a>Właściwości kompilacji  
  Właściwości kompilacji są pary nazwa wartość, które przeprowadzą kompilacji. Kilka właściwości kompilacji są już zdefiniowane w górnej części pliku projektu:  
@@ -227,7 +227,7 @@ $(PropertyName)
     ```  
   
 > [!NOTE]
->  Jeśli nie widzisz te wiersze następnie prawdopodobnie, że nie można zapisać pliku projektu w edytorze kodu. Zapisz plik i spróbuj ponownie.  
+> Jeśli nie widzisz te wiersze następnie prawdopodobnie, że nie można zapisać pliku projektu w edytorze kodu. Zapisz plik i spróbuj ponownie.  
   
 ### <a name="conditional-properties"></a>Właściwości warunkowych  
  Zdefiniowano wiele właściwości, takich jak konfiguracja warunkowo, oznacza to, że atrybut warunku pojawia się w elemencie właściwości. Warunkowe właściwości są zdefiniowane lub zdefiniować jej ponownie tylko wtedy, gdy wyrażenie zwróci wartość "true". Należy pamiętać, że podane są niezdefiniowanymi właściwościami domyślna wartość pustego ciągu. Na przykład  
@@ -319,7 +319,7 @@ $(PropertyName)
  Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).  
   
 > [!NOTE]
->  Ścieżki plików są względne wobec folderu zawierającego plik projektu programu MSBuild.  
+> Ścieżki plików są względne wobec folderu zawierającego plik projektu programu MSBuild.  
   
 ## <a name="examining-item-type-values"></a>Badanie wartości typu elementu  
  Aby uzyskać wartości typu elementu, należy użyć następującej składni, gdzie ItemType to nazwa typu elementu:  

@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59e00fb6b4db879ed70904397ba9a54c8bc25a6f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b256971cd327098e22b243a1c171b0c9e82d32bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433132"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definiowanie profilu w celu rozszerzenia kodu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Można zdefiniować *profil UML* dostosować standardowe elementy modelu do okre
   Można dystrybuować własne profile do swojego zespołu. Każdy członek zespołu może zainstalować profil. Umożliwia to edytowanie i tworzenie modeli, które używają tych stereotypów.  
   
 > [!NOTE]
->  Jeśli zastosujesz Stereotypy profili w modelu edytowanym, a następnie udostępnisz model innym osobom, powinni oni zainstalować ten sam profil na swoich komputerach. W przeciwnym razie nie będą mogli zobaczyć stereotypów, które były używane.  
+> Jeśli zastosujesz Stereotypy profili w modelu edytowanym, a następnie udostępnisz model innym osobom, powinni oni zainstalować ten sam profil na swoich komputerach. W przeciwnym razie nie będą mogli zobaczyć stereotypów, które były używane.  
   
  Profil jest często częścią większego [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] rozszerzenia. Na przykład można zdefiniować polecenie, które tłumaczy niektóre części modelu do kodu. Można zdefiniować profil, który użytkownicy muszą stosować się do pakietów, które chcą tłumaczyć. Będziesz dystrybuować swoje nowe polecenie wraz z profilem w jednym [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] rozszerzenia.  
   
@@ -83,7 +83,7 @@ Można zdefiniować *profil UML* dostosować standardowe elementy modelu do okre
 1. Utwórz projekt rozszerzenia Visual Studio.  
   
    > [!NOTE]
-   >  Musisz mieć zainstalowane [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Aby użyć tej procedury.  
+   > Musisz mieć zainstalowane [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Aby użyć tej procedury.  
   
    1. Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **projektu**.  
   
@@ -194,7 +194,7 @@ Można zdefiniować *profil UML* dostosować standardowe elementy modelu do okre
 2. Dodaj nowy katalog, w tym samym katalogu co plik profilu domyślnego.  
   
     > [!NOTE]
-    >  Jeśli tworzysz rozszerzenie za pomocą projektu rozszerzenia Visual Studio, należy używać Eksploratora rozwiązań, aby dodać nowy folder do projektu.  
+    > Jeśli tworzysz rozszerzenie za pomocą projektu rozszerzenia Visual Studio, należy używać Eksploratora rozwiązań, aby dodać nowy folder do projektu.  
   
 3. Zmień nazwę nowego katalogu na krótki kod ISO dla zlokalizowanej kultury, takie jak `bg` dla języka bułgarskiego lub `fr` francuski. Należy używać kodu kultury neutralnej, zazwyczaj dwóch liter, określonej kultury takiej jak `fr-CA`. Aby uzyskać więcej informacji na temat kodów kultury, zobacz [metoda CultureInfo.GetCultures](http://go.microsoft.com/fwlink/?LinkId=160782), który zawiera pełną listę kodów kultur.  
   
@@ -211,7 +211,7 @@ Można zdefiniować *profil UML* dostosować standardowe elementy modelu do okre
      `de\MyProfile.profile`  
   
     > [!NOTE]
-    >  Nie należy wstawiać do `extension.vsixmanifest` odwołanie do zlokalizowanych wersji profilów. Pliki kopiowanego profilu muszą mieć taką samą nazwę jak profil w folderze nadrzędnym.  
+    > Nie należy wstawiać do `extension.vsixmanifest` odwołanie do zlokalizowanych wersji profilów. Pliki kopiowanego profilu muszą mieć taką samą nazwę jak profil w folderze nadrzędnym.  
   
 5. Edytuj tę nową kopię profilu, co przekłada się język docelowy wszystkich części, które będą widoczne dla użytkownika, takie jak `displayName` atrybutów.  
   
@@ -247,7 +247,7 @@ Można zdefiniować *profil UML* dostosować standardowe elementy modelu do okre
 ```  
   
 > [!NOTE]
->  Atrybut o nazwie `name` nie może zawierać spacji i znaków przestankowych. Ten atrybut `displayName`, która jest wyświetlana w interfejsie użytkownika powinna być prawidłowym ciągiem XML.  
+> Atrybut o nazwie `name` nie może zawierać spacji i znaków przestankowych. Ten atrybut `displayName`, która jest wyświetlana w interfejsie użytkownika powinna być prawidłowym ciągiem XML.  
   
  Każdy profil zawiera trzy główne sekcje. W odwrotnej kolejności są one w następujący sposób:  
   
@@ -310,7 +310,7 @@ Można zdefiniować *profil UML* dostosować standardowe elementy modelu do okre
  `name` Atrybutu `metaclassMoniker` łącze do elementu w `<metaClasses>` sekcji.  
   
 > [!NOTE]
->  Nazwa monikera musi zaczynać się `/yourProfileName/`, gdzie `yourProfileName` jest zdefiniowany w `name` atrybut profilu ("CSharpProfile" w tym przykładzie). Moniker kończy się nazwą jednego z wpisów w sekcji metadanych.  
+> Nazwa monikera musi zaczynać się `/yourProfileName/`, gdzie `yourProfileName` jest zdefiniowany w `name` atrybut profilu ("CSharpProfile" w tym przykładzie). Moniker kończy się nazwą jednego z wpisów w sekcji metadanych.  
   
  Każdy stereotyp może zawierać zero lub więcej właściwości, które dodaje do dowolnego elementu modelu, do którego jest stosowany. `<propertyType>` Zawiera łącze do jednego z typów, które są zdefiniowane w `<propertyTypes>` sekcji. Łącze musi być albo `<externalTypeMoniker>` do odwoływania się do `<externalType>,` lub `<enumerationTypeMoniker>` do odwoływania się do `<enumerationType>`. Ponownie łącze zaczyna się od nazwy profilu.  
   

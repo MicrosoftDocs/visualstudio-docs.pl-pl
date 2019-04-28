@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ca6fc205585d832f4dadc5f4ce4709a71c7b6fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c2aef08695d2cea04d23a343d318680bc53f44c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432598"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizowanie obiektów w kontenery układów w projektancie XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Wyobraź sobie, gdzie ma się obiekty na stronie; obiekty, takie jak obrazy, prz
  Ta strona opisuje panele układów i kontrolek, a następnie kieruje krótkie filmy wideo, które ułatwiają Rozpoczynanie pracy z nimi.  
   
 > [!NOTE]
->  Niektóre filmy wideo mogą odwoływać się do mieszania lub Expression Blend, która za pomocą tego samego projektanta XAML programu Visual Studio i Blend for Visual Studio.  
+> Niektóre filmy wideo mogą odwoływać się do mieszania lub Expression Blend, która za pomocą tego samego projektanta XAML programu Visual Studio i Blend for Visual Studio.  
   
 ## <a name="layout-panels"></a>Panele układów  
  Twoja strona początkowa, wybierając jedną z tych paneli układu. Strona może mieć więcej niż jeden. Na przykład możesz zacząć od **siatki** Układ panelu, a następnie dodaj **StackPanel** do obszaru w **siatki** , dzięki czemu można rozmieścić formanty w pionie w tym elemencie.  

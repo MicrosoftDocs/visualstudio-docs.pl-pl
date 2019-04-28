@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 384d7b3488e6ef90994e24e95fbe7a516428e2bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852766"
 ---
 # <a name="debugger-security"></a>Zabezpieczenia debugera
 Możliwość debugowania inny proces zapewnia bardzo szerokie uprawnienia, których możesz nie mieliby, szczególnie w przypadku debugowania zdalnego. Złośliwy debuger może skutkować problemem dla całego zniszczenia na maszynie debugowany.

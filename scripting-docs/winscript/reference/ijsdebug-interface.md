@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 20d755250960ad2f5b22cc7b645ad24b91c4875f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58160082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583649"
 ---
 # <a name="ijsdebug-interface"></a>IJsDebug — Interfejs
 Punkt wejścia do debugowania kodu JavaScript.  

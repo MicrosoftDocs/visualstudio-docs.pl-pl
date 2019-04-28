@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 34e40863883643955c4517337de5410f0745703d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a7b9733a47b4763a0f28ee4b24b54fdfd44bf066
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435003"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Zastępowanie i rozszerzanie wygenerowanych klas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Definicji DSL jest platformy, na której można budować z zaawansowanego zestaw
  `} }`  
   
 > [!NOTE]
->  Aby zastąpić metody w generowanej klasie, należy zawsze pisanie kodu w pliku, który jest oddzielony od wygenerowanych plików. Zazwyczaj plik znajduje się w folderze, który jest nazwany atrybut CustomCode. Jeśli wprowadzisz zmiany w wygenerowanym kodzie mogą zostaną utracone podczas ponownego generowania kodu z definicji DSL.  
+> Aby zastąpić metody w generowanej klasie, należy zawsze pisanie kodu w pliku, który jest oddzielony od wygenerowanych plików. Zazwyczaj plik znajduje się w folderze, który jest nazwany atrybut CustomCode. Jeśli wprowadzisz zmiany w wygenerowanym kodzie mogą zostaną utracone podczas ponownego generowania kodu z definicji DSL.  
   
  Aby dowiedzieć się, jakie metody, można zastąpić, wpisz **zastąpienia** w klasie, następuje spacja. Etykietka funkcji IntelliSense poinformuje, jakie metody może zostać zastąpiona.  
   

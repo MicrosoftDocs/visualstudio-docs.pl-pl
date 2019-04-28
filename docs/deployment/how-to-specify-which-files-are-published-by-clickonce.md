@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cdf8668b6a34ca6f663b83640e71951f0cb7c255
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c04f500ceb8a1c95f643fe43c292bb668d54c2aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406572"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Instrukcje: Określanie plików publikowanych za pomocą technologii ClickOnce
 Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pliki aplikacji, a wszystkie inne niż kod w projekcie są wdrażane wraz z aplikacji. W niektórych przypadkach mogą nie ma lub musisz opublikować określone pliki lub można zainstalować niektórych plików, na podstawie warunków. Program Visual Studio oferuje możliwości Wyklucz pliki oznaczyć pliki jako pliki danych lub wstępnie wymagane składniki oraz tworzenie grup plików dla warunkowego instalacji.
@@ -92,7 +92,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 4. W **pliki aplikacji** okno dialogowe, wybierz opcję **grupy** pola dla pliku, który chcesz dołączyć do nowej grupy.
 
     > [!NOTE]
-    >  Pliki muszą mieć **Build Action** właściwością **zawartości** przed nazwami plików są wyświetlane w **pliki aplikacji** okno dialogowe.
+    > Pliki muszą mieć **Build Action** właściwością **zawartości** przed nazwami plików są wyświetlane w **pliki aplikacji** okno dialogowe.
 
 5. W **grupa pobierania** pól, zaznacz  **\<nowy... >** z listy rozwijanej.
 
@@ -111,7 +111,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 5. W **grupa pobierania** wybierz grupę z listy rozwijanej.
 
     > [!NOTE]
-    >  Nie można zmienić **grupa pobierania** dla plików, które są wymagane przez aplikację do uruchamiania.
+    > Nie można zmienić **grupa pobierania** dla plików, które są wymagane przez aplikację do uruchamiania.
 
 ## <a name="see-also"></a>Zobacz także
 - [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)

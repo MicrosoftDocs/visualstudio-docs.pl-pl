@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: de300a7af8492e6431f6b8513cde84a15895ad96
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58148428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786311"
 ---
 # <a name="isetnextstatement-interface"></a>Interfejs ISetNextStatement
 Ten interfejs jest implementowany przez tłumacza, aby umożliwić Menedżer debugowania procesów do zaktualizowania bieżącej instrukcji. Jest implementowany z obiekt w ramce stosu i menedżerów PDM uzyskuje ten interfejs, za pomocą funkcji QueryInterface.  

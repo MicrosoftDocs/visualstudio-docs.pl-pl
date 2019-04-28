@@ -9,11 +9,11 @@ ms.topic: landing-page
 ms.workload:
 - data-storage
 ms.openlocfilehash: a31d151b22e65449c15537b0f9a29c268b5e9787
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569211"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Użyj narzędzia danych w programie Visual Studio do opracowywania rozwiązań danych
 

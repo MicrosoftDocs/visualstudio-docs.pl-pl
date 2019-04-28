@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f601c9cc404d605d5fb0ddf7ad149a595f77ef77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c3fec670f7516d28e20b43b0e1968782a496ef49
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428580"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Krok 9. Przeglądanie, komentowanie i testowanie kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,10 +55,10 @@ Następnie dodaj komentarz do kodu. Należy zauważyć, że nie zmienia sposób,
      [!code-vb[VbExpressTutorial1Step9_10#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/vb/form1.vb#1)]  
   
     > [!NOTE]
-    >  Twoje **showButton** kliknięcia przycisku program obsługi zdarzeń jest zakończony i działa. Rozpocząłeś pisanie kodu, rozpoczynając od `if` instrukcji. `if` Instrukcja jest, jak sprawdzić program, "Sprawdź to jedno i jeśli to PRAWDA, wykonaj te akcje". W tym przypadku powiesz programowi w taki sposób, aby otworzyć **Otwórz plik** okno dialogowe, a jeśli użytkownik wybierze plik i wybierze **OK** przycisk, załadował ten pliku w elemencie PictureBox.  
+    > Twoje **showButton** kliknięcia przycisku program obsługi zdarzeń jest zakończony i działa. Rozpocząłeś pisanie kodu, rozpoczynając od `if` instrukcji. `if` Instrukcja jest, jak sprawdzić program, "Sprawdź to jedno i jeśli to PRAWDA, wykonaj te akcje". W tym przypadku powiesz programowi w taki sposób, aby otworzyć **Otwórz plik** okno dialogowe, a jeśli użytkownik wybierze plik i wybierze **OK** przycisk, załadował ten pliku w elemencie PictureBox.  
   
     > [!TIP]
-    >  IDE zostało zbudowane ułatwia pisanie kodu, i *fragmenty kodu* jest jednym ze sposobów, tak. Wstawka to skrót, który rozwija się w małych blokach kodu.  
+    > IDE zostało zbudowane ułatwia pisanie kodu, i *fragmenty kodu* jest jednym ze sposobów, tak. Wstawka to skrót, który rozwija się w małych blokach kodu.  
     >   
     >  Możesz zobaczyć wszystkie dostępne wstawki. Na pasku menu wybierz **narzędzia**, **Menedżera wstawek kodu**. Dla języka Visual C# `if` fragmentu kodu znajduje się w **Visual C#** . Dla języka Visual Basic `if` fragmenty znajdują się w **instrukcje warunkowe i pętle**, **wzorców kodu**. Można użyć tego menedżera do przeglądania istniejących wstawek lub dodać własne wstawki.  
     >   
@@ -83,7 +83,7 @@ Podgląd obrazów
 2. Wybierz **Pokaż obraz** przycisk, aby uruchomić napisany właśnie kod. Najpierw program otworzy **Otwórz plik** okno dialogowe. Sprawdź, czy filtry są widoczne w **pliki typu** listy rozwijanej w dolnej części okna dialogowego. Następnie przejdź do obrazu i otwórz go. Zwykle można znaleźć przykładowe obrazy, które są dostarczane z systemem operacyjnym Windows w Twojej **Moje dokumenty** folderu, wewnątrz **My Pictures\Sample Pictures** folderu.  
   
     > [!NOTE]
-    >  Jeśli nie widzisz żadnych obrazów w **wybierz plik obrazu** okno dialogowe, upewnij się, że "wszystkie pliki (*.\*)" filtr jest zaznaczony na liście rozwijanej u dołu po prawej stronie okna dialogowego.  
+    > Jeśli nie widzisz żadnych obrazów w **wybierz plik obrazu** okno dialogowe, upewnij się, że "wszystkie pliki (*.\*)" filtr jest zaznaczony na liście rozwijanej u dołu po prawej stronie okna dialogowego.  
   
 3. Zdjęcia i pojawia się w obiekcie PictureBox. Spróbuj zmienić rozmiar formularza przeciągając jego obramowania. Ponieważ Twoje PictureBox zadokowano wewnątrz elementu TableLayoutPanel, który sam jest zadokowany wewnątrz formularza, Twój obszar obrazu będzie zmieniany tak jak szerokość całego formularza i wypełni najważniejsze 90 procent firm z formularza. Dlatego użyłeś pojemników TableLayoutPanel i FlowLayoutPanel: Prowadzą użyłeś pojemników, gdy użytkownik zmienia jego rozmiar formularza.  
   

@@ -10,12 +10,12 @@ ms.assetid: 9a641d8f-211e-4486-a1b1-4a89fafe7ee8
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 65efd5a864863fb18f26d8fdfc3736423aad7aeb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ea55039de769598b26868727a93cfa11726e4838
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443922"
 ---
 # <a name="extending-the-isolated-shell"></a>Rozszerzanie programu Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60054095"
 Powłoka programu Visual Studio, izolowany można rozszerzyć przez dodanie pakietu VSPackage, część Managed Extensibility Framework (MEF) lub ogólny projekt VSIX do Twojej aplikacji isolated shell.  
   
 > [!NOTE]
->  Poniższe kroki zakładają, że utworzono podstawowej aplikacji isolated shell przy użyciu programu Visual Studio Shell izolowane szablonu projektu. Aby uzyskać więcej informacji na temat tego szablonu projektu, zobacz [instruktażu: Tworzenie prostej Isolated Shell aplikacji](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+> Poniższe kroki zakładają, że utworzono podstawowej aplikacji isolated shell przy użyciu programu Visual Studio Shell izolowane szablonu projektu. Aby uzyskać więcej informacji na temat tego szablonu projektu, zobacz [instruktażu: Tworzenie prostej Isolated Shell aplikacji](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Lokalizacje szablon projektu pakietu Visual Studio  
  Szablon projektu pakietu Visual Studio można znaleźć w trzech różnych miejscach w **nowy projekt** okno dialogowe:  
@@ -121,4 +121,4 @@ Powłoka programu Visual Studio, izolowany można rozszerzyć przez dodanie paki
 8. Skompiluj i uruchom rozwiązanie.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: Tworzenie podstawowej aplikacji Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+ [Przewodnik: tworzenie podstawowej aplikacji Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

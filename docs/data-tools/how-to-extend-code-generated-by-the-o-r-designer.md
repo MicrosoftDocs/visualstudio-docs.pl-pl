@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: e82166ab336023812c63045c031b81d94dea67e0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566999"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Instrukcje: Rozszerzanie kodu wygenerowanego przez projektanta O/R
 Kod wygenerowany przez **O/R Designer** zostanie ponownie wygenerowany, gdy zmiany zostaną wprowadzone do klas jednostek i innych obiektów na powierzchni projektowej. Ze względu na to ponowne generowanie kodu każdy kod, który dodasz do wygenerowanego kodu jest zazwyczaj zastąpione, gdy projektant generuje kod. **O/R Designer** umożliwia generowanie plików klasy częściowej, w których można dodać kod, który nie jest zastępowany. Przykładem dodając własny kod do kodu generowanego przez **O/R Designer** jest dodawanie sprawdzania poprawności danych do programu LINQ do klas SQL (jednostka). Aby uzyskać więcej informacji, zobacz [jak: Dodawanie walidacji do klas jednostek](../data-tools/how-to-add-validation-to-entity-classes.md).

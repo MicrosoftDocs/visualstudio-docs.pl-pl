@@ -6,12 +6,12 @@ ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: b1e34fa5d4f49d0dfa415e0ac47e55cea236307e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 646d8949004f44041fe75d1c6fed2e6f989b92c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435287"
 ---
 # <a name="setup-and-install"></a>Instalator i instalacja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Do tworzenia natywnych dla systemów iOS, Android i Windows aplikacje z poziomu 
 Jeśli masz problemy po wykonaniu tego Instalator i instalacja przy użyciu platformy Xamarin, opublikuj swoje pytanie na [forums.xamarin.com](http://forums.xamarin.com/).
   
 > [!NOTE]
->  31 marca 2016 r. wszystkie platformy Xamarin jest dołączony do wszystkich wersji programu Visual Studio nie wymagają ponoszenia dodatkowych kosztów i nie wymaga osobnej licencji. Program Xamarin Studio Community for Mac jest również dostępny bezpłatnie dla uczniów, deweloperzy OSS i małych zespołów. Należy pamiętać, że w dla istniejącej instalacji programu Visual Studio, które są skonfigurowane przy użyciu starszych licencje środowiska Xamarin, Xamarin należy zaktualizować do wersji 4.0.3.214 lub nowszej. Aby to zrobić, przejdź do **Narzędzia > Opcje > Xamarin > inne**, kliknij przycisk **Sprawdź teraz** łącze i pobierania 4.0.3.214 update. Po ponownym uruchomieniu programu Visual Studio, przejdź do **Narzędzia > konto usługi Xamarin...**  powinien zostać wyświetlony zaktualizowany stan.  
+> 31 marca 2016 r. wszystkie platformy Xamarin jest dołączony do wszystkich wersji programu Visual Studio nie wymagają ponoszenia dodatkowych kosztów i nie wymaga osobnej licencji. Program Xamarin Studio Community for Mac jest również dostępny bezpłatnie dla uczniów, deweloperzy OSS i małych zespołów. Należy pamiętać, że w dla istniejącej instalacji programu Visual Studio, które są skonfigurowane przy użyciu starszych licencje środowiska Xamarin, Xamarin należy zaktualizować do wersji 4.0.3.214 lub nowszej. Aby to zrobić, przejdź do **Narzędzia > Opcje > Xamarin > inne**, kliknij przycisk **Sprawdź teraz** łącze i pobierania 4.0.3.214 update. Po ponownym uruchomieniu programu Visual Studio, przejdź do **Narzędzia > konto usługi Xamarin...**  powinien zostać wyświetlony zaktualizowany stan.  
   
  **W tym temacie:**  
   
@@ -56,7 +56,7 @@ Jeśli masz problemy po wykonaniu tego Instalator i instalacja przy użyciu plat
 ## <a name="windows"></a> Instalator Windows (Visual Studio i Xamarin)  
   
 > [!TIP]
->  Te instrukcje dotyczą programu Visual Studio 2015. Aby korzystać z platformy Xamarin w programie Visual Studio 2013 (wymagana jest aktualizacja 2), postępuj zgodnie z instrukcjami dotyczącymi [bezpośredniej instalacji Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (strony xamarin.com).  
+> Te instrukcje dotyczą programu Visual Studio 2015. Aby korzystać z platformy Xamarin w programie Visual Studio 2013 (wymagana jest aktualizacja 2), postępuj zgodnie z instrukcjami dotyczącymi [bezpośredniej instalacji Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (strony xamarin.com).  
   
 1. [Pobierz i uruchom Instalatora programu Visual Studio 2015 w każdej wersji](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx) (Community, Professional lub Enterprise). Visual Studio 2015 Community jest bezpłatną; wersje Professional i Enterprise może służyć do wypróbowania przez 30 dni, po upływie których musisz zakupić licencję.  
   
@@ -83,7 +83,7 @@ Jeśli masz problemy po wykonaniu tego Instalator i instalacja przy użyciu plat
     ![Sprawdzanie, czy są aktualizacje platformy Xamarin w opcjach programu Visual Studio](../cross-platform/media/cross-plat-xamarin-setup-3.png "3 instalacji Xamarin Cross-Plat")  
   
    > [!NOTE]
-   >  Jak wspomniano wcześniej, należy upewnić się, że Xamarin do wersji 4.0.3.214 lub nowszej, aby uniknąć problemów z wcześniejszych licencje środowiska Xamarin.  
+   > Jak wspomniano wcześniej, należy upewnić się, że Xamarin do wersji 4.0.3.214 lub nowszej, aby uniknąć problemów z wcześniejszych licencje środowiska Xamarin.  
 
    Jeśli nie widzisz opcji dla platformy Xamarin w **Narzędzia > Opcje**, dokładnie sprawdzić instalację lub ponowne uruchomienie programu Visual Studio. Możesz również wyszukać platformy Xamarin w oknie dialogowym Opcje.
       

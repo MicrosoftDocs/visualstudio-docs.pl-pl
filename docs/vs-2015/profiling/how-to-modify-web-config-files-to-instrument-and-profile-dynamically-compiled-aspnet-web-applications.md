@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a16ad46722213a703785d08209d68b3c4ee6b04f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d9e4fc4dfdff336b9ddcbd04bd031b48a8acc4dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432613"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Instrukcje: Modyfikowanie plików Web.Config do Instrumentowania i profilowania dynamicznie skompilowanych aplikacji sieci Web ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Możesz użyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] metody Instrumentacj
  W tym temacie opisano sposób modyfikowania pliku konfiguracji web.config, aby włączyć Instrumentację oraz profilowanie [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji sieci Web.  
   
 > [!NOTE]
->  Nie musisz zmodyfikować plik web.config w przypadku użycia metoda profilowania próbkowanie, lub gdy chcesz Instrumentacji wstępnie skompilowanych [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] modułu.  
+> Nie musisz zmodyfikować plik web.config w przypadku użycia metoda profilowania próbkowanie, lub gdy chcesz Instrumentacji wstępnie skompilowanych [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] modułu.  
   
  Główny plik web.config jest **konfiguracji** elementu. Celu instrumentowania i profilowania dynamicznie skompilowanych [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacja internetowa, należy dodać lub zmodyfikować następujące elementy:  
   

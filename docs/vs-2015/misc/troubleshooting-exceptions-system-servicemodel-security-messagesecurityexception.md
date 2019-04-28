@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce4b5671d0e10d2f524ee96494d37cb68babe72a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6852b12e8a3cbc902770a2825d12697c12fc1760
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436554"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Rozwiązywanie problemów z wyjątkami: System.ServiceModel.Security.MessageSecurityException
 A <xref:System.ServiceModel.Security.MessageSecurityException> wyjątek jest generowany, gdy [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] Określa, że komunikat nie jest poprawnie zabezpieczony lub została naruszona. Ten błąd występuje najczęściej, gdy wszystkie spełnione są następujące warunki:  
@@ -35,7 +35,7 @@ A <xref:System.ServiceModel.Security.MessageSecurityException> wyjątek jest gen
  Jeśli użytkownik zdalny może uruchomić witryny sieci Web przy użyciu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server oraz pracy z usługą sieci Web lub usługi WCF, możesz utworzyć powiązania usługi niestandardowych lub wyłączyć zabezpieczenie NTLM.  
   
 > [!IMPORTANT]
->  Wyłączenie zabezpieczeń NTLM nie jest zalecane i może stanowić zagrożenie bezpieczeństwa.  
+> Wyłączenie zabezpieczeń NTLM nie jest zalecane i może stanowić zagrożenie bezpieczeństwa.  
   
  Jeśli tworzysz powiązania niestandardowej usługi, nadal są chronione przez uwierzytelnianie NTLM.  
   
@@ -74,7 +74,7 @@ A <xref:System.ServiceModel.Security.MessageSecurityException> wyjątek jest gen
    Można wykonaj następujące kroki, aby wyłączyć zabezpieczenie NTLM, gdy pracujesz z odwołania do usługi WCF.  
   
 > [!IMPORTANT]
->  Wyłączenie zabezpieczeń NTLM nie jest zalecane i może stanowić zagrożenie bezpieczeństwa.  
+> Wyłączenie zabezpieczeń NTLM nie jest zalecane i może stanowić zagrożenie bezpieczeństwa.  
   
 #### <a name="to-turn-off-ntlm-security"></a>Aby wyłączyć zabezpieczenie NTLM  
   

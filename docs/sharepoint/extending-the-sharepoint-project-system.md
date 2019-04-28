@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7dce10c2bc44eb4fde6a6e38417d136ea5e9ba41
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557027"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>Rozszerzanie systemu projektu SharePoint
   Możesz tworzyć rozwiązania programu SharePoint przy użyciu zestawu szablonów elementów i szablonów projektu w programie Visual Studio. Te szablony wymagań wiele scenariuszy programowania, ale można wykryć niektórych przypadkach, gdy nie zapewniają funkcji, która jest wymagana. W takich przypadkach można rozszerzyć systemu projektu programu SharePoint.

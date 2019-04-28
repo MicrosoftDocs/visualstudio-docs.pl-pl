@@ -19,12 +19,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f7e119eccb31774bc5b300bf9608cb2e23eb83d7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 9f8edefc8e097f7ada67041b807231f594774548
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433558"
 ---
 # <a name="import-element-msbuild"></a>Import — Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,9 +75,9 @@ Importuje zawartość pliku jednego projektu do innego pliku projektu.
  Schemat importowanym projekcie jest identyczna jak standardowy projekt. Mimo że [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] może być zdolny do skompilowania importowanym projekcie, jest mało prawdopodobne, ponieważ importowanym projekcie zwykle nie zawiera informacji na temat właściwości, które z zestawem lub kolejność, w którym ma być uruchamiany elementów docelowych. Zaimportowanego projektu zależy od projektu, do którego jest importowany, aby podać te informacje.  
   
 > [!NOTE]
->  Instrukcje warunkowe importu współdziałanie w MSBuilds wiersza polecenia, nie działają z użyciem MSBuild w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zintegrowanego środowiska programistycznego (IDE). Importy warunkowego są oceniane przy użyciu wartości konfiguracji i platformy, które są ustawione, gdy projekt jest ładowany. Jeśli następnie wprowadzono zmiany wymagające ponownej oceny instrukcje warunkowe w pliku projektu, na przykład zmiana platformę [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] reevaluates warunki na właściwości i elementów, ale nie w przypadku importów. Ponieważ nie jest ponownie szacowane warunkowe importu, importowania zostanie pominięta.  
+> Instrukcje warunkowe importu współdziałanie w MSBuilds wiersza polecenia, nie działają z użyciem MSBuild w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zintegrowanego środowiska programistycznego (IDE). Importy warunkowego są oceniane przy użyciu wartości konfiguracji i platformy, które są ustawione, gdy projekt jest ładowany. Jeśli następnie wprowadzono zmiany wymagające ponownej oceny instrukcje warunkowe w pliku projektu, na przykład zmiana platformę [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] reevaluates warunki na właściwości i elementów, ale nie w przypadku importów. Ponieważ nie jest ponownie szacowane warunkowe importu, importowania zostanie pominięta.  
 >   
->  Aby obejść ten problem, umieść warunkowego Importy w plikach .targets lub umieść kod w bloku warunkowego, takich jak [wybierz Element (MSBuild)](../msbuild/choose-element-msbuild.md) bloku.  
+> Aby obejść ten problem, umieść warunkowego Importy w plikach .targets lub umieść kod w bloku warunkowego, takich jak [wybierz Element (MSBuild)](../msbuild/choose-element-msbuild.md) bloku.  
   
 ## <a name="wildcards"></a>Symboli wieloznacznych  
  W programie .NET Framework 4 program MSBuild umożliwia symboli wieloznacznych w atrybucie projektu. W przypadku symboli wieloznacznych znalezione wszystkie dopasowania są sortowane (w przypadku odtwarzaniem), a następnie są importowane w tej kolejności tak, jakby kolejność ma jawnie ustawione.  
@@ -116,4 +116,4 @@ Importuje zawartość pliku jednego projektu do innego pliku projektu.
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)   
- [Instrukcje: Użyj tej samej wartości docelowej w wielu plikach projektów](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [Instrukcje: użycie tej samej wartości docelowej w wielu plikach projektów](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

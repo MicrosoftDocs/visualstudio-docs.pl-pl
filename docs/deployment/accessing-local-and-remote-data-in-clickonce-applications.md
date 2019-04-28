@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1b52628b016893353c83e998a1e395118807a31
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 1feb0dc2282dff39b3895ed0e63a0fdefeb65872
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406619"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Dostęp do danych lokalnych i zdalnych w aplikacjach ClickOnce
 Większość aplikacji tworzą lub wykorzystują dane. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zapewnia różne opcje do odczytywania i zapisywania danych, zarówno lokalnie, jak i zdalnie.
@@ -40,7 +40,7 @@ Większość aplikacji tworzą lub wykorzystują dane. [!INCLUDE[ndptecclick](..
  Katalog danych jest przeznaczona dla danych zarządzanych aplikacji, które to dane, które aplikacja jawnie zapisuje i przechowuje. Wszystkie statyczne nondependency pliki nie są oznaczone jako "dane" w manifeście aplikacji będzie zamiast tego znajdują się w katalogu aplikacji. Jest to katalog, gdzie aplikacja pliku wykonywalnym (*.exe*) znajdują się pliki oraz zestawy.
 
 > [!NOTE]
->  Gdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] odinstalowania aplikacji, katalog danych zostaną również usunięte. Nie wolno używać katalogu danych do przechowywania danych zarządzanych przez użytkowników końcowych, takich jak dokumenty.
+> Gdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] odinstalowania aplikacji, katalog danych zostaną również usunięte. Nie wolno używać katalogu danych do przechowywania danych zarządzanych przez użytkowników końcowych, takich jak dokumenty.
 
 #### <a name="mark-data-files-in-a-clickonce-distribution"></a>Oznacz pliki danych w dystrybucji ClickOnce
  Aby przełączyć istniejącego pliku w katalogu danych, należy oznaczyć istniejący plik jako plik danych w Twojej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pliku manifestu aplikacji aplikacji. Aby uzyskać więcej informacji, zobacz [jak: Uwzględnianie pliku danych w aplikacji ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
@@ -49,7 +49,7 @@ Większość aplikacji tworzą lub wykorzystują dane. [!INCLUDE[ndptecclick](..
  Odczytywanie ich z katalogu danych wymaga, aby Twoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] żądanie aplikacji uprawnienia do odczytu; podobnie zapisu do katalogu wymaga uprawnień do zapisu. Aplikacja będzie automatycznie mają to uprawnienie, jeśli jest skonfigurowany do uruchamiania przy użyciu pełnego zaufania. Aby uzyskać więcej informacji na temat wzrasta uprawnień dla aplikacji przy użyciu zaufanego wdrożenia aplikacji lub podnoszenia poziomu uprawnień, zobacz [aplikacji Secure ClickOnce](../deployment/securing-clickonce-applications.md).
 
 > [!NOTE]
->  Jeśli Twoja organizacja nie korzysta z zaufanego wdrożenia aplikacji i została wyłączona podnoszenia poziomu uprawnień, Potwierdzanie uprawnienia zakończy się niepowodzeniem.
+> Jeśli Twoja organizacja nie korzysta z zaufanego wdrożenia aplikacji i została wyłączona podnoszenia poziomu uprawnień, Potwierdzanie uprawnienia zakończy się niepowodzeniem.
 
  Po aplikacja ma te uprawnienia, go uzyskać dostęp do katalogu danych za pomocą wywołań metod w klasach w ramach <xref:System.IO>. Możesz uzyskać ścieżkę katalogu danych w formularzach Windows [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikację za pomocą <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> właściwości zdefiniowane w <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> właściwość <xref:System.Deployment.Application.ApplicationDeployment>. Jest to wygodne i najbardziej zalecany sposób uzyskiwać dostęp do danych. Poniższy przykład kodu pokazuje, jak to zrobić w pliku tekstowym o nazwie *CSV.txt* zawierającego w danym wdrożeniu, jak plik danych.
 

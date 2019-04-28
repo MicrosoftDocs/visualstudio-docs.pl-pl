@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac9352af6bd22ca2cc21545945d56a10db2c458f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bef6c5a742c4bf6acc15a6326190686e46fef79b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410183"
 ---
 # <a name="hlsl-shader-debugger"></a>Debuger programu do cieniowania HLSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Debuger HLSL w analizatora grafiki programu Visual Studio pomaga zrozumieć, jak
 2. Poniżej tytułu etapu potoku wybierz **Rozpocznij debugowanie**, które pojawia się jako mała zielona strzałka.  
   
     > [!NOTE]
-    >  Ten punkt wejścia do debugera HLSL debuguje tylko pierwszy wątek modułu cieniującego dla odpowiedniego etapu, czyli pierwszy wierzchołek lub piksel, który jest przetwarzany. Historia pikseli umożliwia dostęp do innych wątków z tych etapów modułu cieniującego.  
+    > Ten punkt wejścia do debugera HLSL debuguje tylko pierwszy wątek modułu cieniującego dla odpowiedniego etapu, czyli pierwszy wierzchołek lub piksel, który jest przetwarzany. Historia pikseli umożliwia dostęp do innych wątków z tych etapów modułu cieniującego.  
   
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pixel-history"></a>Aby uruchomić debuger HLSL z okna Historia pikseli grafiki  
   
@@ -71,7 +71,7 @@ Debuger HLSL w analizatora grafiki programu Visual Studio pomaga zrozumieć, jak
     Z prawej strony wybranego modułu cieniującego wybierz **Rozpocznij debugowanie**, które pojawia się jako mała zielona strzałka.  
   
    > [!NOTE]
-   >  Ten punkt wejścia do debugera HLSL debuguje program cieniowania pikseli, który odpowiada wybranemu wywołaniu rysowania, prymitywowi i pikselowi lub wątkom cieniowania wierzchołków, których wyniki są interpolowane przez wywołanie wybranego rysowania, prymitywu i piksela. W przypadku programów do cieniowania wierzchołków można dodatkowo dostosować punkt wejścia do konkretnego przez rozwijanie szczegółów modułu cieniującego wierzchołek.  
+   > Ten punkt wejścia do debugera HLSL debuguje program cieniowania pikseli, który odpowiada wybranemu wywołaniu rysowania, prymitywowi i pikselowi lub wątkom cieniowania wierzchołków, których wyniki są interpolowane przez wywołanie wybranego rysowania, prymitywu i piksela. W przypadku programów do cieniowania wierzchołków można dodatkowo dostosować punkt wejścia do konkretnego przez rozwijanie szczegółów modułu cieniującego wierzchołek.  
   
    Aby uzyskać przykłady o sposobach używania debugera HLSL w celu debugowania błędów modułu cieniującego, zobacz [przykłady](../debugger/graphics-diagnostics-examples.md) lub powiązane instruktaże w sekcji Zobacz też.  
   

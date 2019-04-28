@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb0502128b95716b0598b373be81519a06911f06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 863df1da686e56a8b38c0652baf0aafab7436d08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434354"
 ---
 # <a name="define-packages-and-namespaces"></a>Definiowanie pakietów i przestrzeni nazw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ W programie Visual Studio *pakietu* jest kontenerem dla definicji elementów UML
 2. Kliknij prawym przyciskiem myszy pakiet lub model, do którego chcesz dodać nowy pakiet.  
   
    > [!NOTE]
-   >  Można zagnieżdżać pakietu wewnątrz innego pakietu.  
+   > Można zagnieżdżać pakietu wewnątrz innego pakietu.  
   
 3. Wskaż **Dodaj** a następnie kliknij przycisk **pakietu**.  
   
@@ -95,7 +95,7 @@ W programie Visual Studio *pakietu* jest kontenerem dla definicji elementów UML
 - Przeciągnij pakietu z Eksploratora modelu UML na diagram klas.  
   
     > [!NOTE]
-    >  Spowoduje to utworzenie widoku pakietu na tym diagramie. Go nie zawsze wyświetli wszystkie elementy pakiet zawiera. Aby wyświetlić wszystkie zawartości pakietu, należy go wyświetlić w Eksploratorze modelu UML.  
+    > Spowoduje to utworzenie widoku pakietu na tym diagramie. Go nie zawsze wyświetli wszystkie elementy pakiet zawiera. Aby wyświetlić wszystkie zawartości pakietu, należy go wyświetlić w Eksploratorze modelu UML.  
   
 ## <a name="Elements"></a> Tworzenie modelu elementów wewnątrz pakietów  
  Istnieją cztery sposoby, w których można umieścić elementy modelu w pakiecie:  
@@ -123,7 +123,7 @@ W programie Visual Studio *pakietu* jest kontenerem dla definicji elementów UML
 4. Wpisz nazwę dla nowego elementu.  
   
     > [!NOTE]
-    >  Nowy element nie jest wyświetlana na dowolny diagram. Aby utworzyć widok nowego elementu, można przeciągnąć go z Eksploratora modelu UML na diagram. Diagram musi być typem, który będzie wyświetlany ten rodzaj elementu.  
+    > Nowy element nie jest wyświetlana na dowolny diagram. Aby utworzyć widok nowego elementu, można przeciągnąć go z Eksploratora modelu UML na diagram. Diagram musi być typem, który będzie wyświetlany ten rodzaj elementu.  
   
 #### <a name="to-create-an-element-in-a-package-on-a-uml-class-diagram"></a>Można utworzyć elementu w pakiecie na diagramie klas UML  
   
@@ -173,7 +173,7 @@ W programie Visual Studio *pakietu* jest kontenerem dla definicji elementów UML
      Kwalifikowana nazwa elementu zostaną zmieniają się jej nowy pakiet będący właścicielem.  
   
     > [!NOTE]
-    >  Jeśli przeciągniesz element z pakietu do pustą część diagramu, jej właścicielem pakietu nie zmienia się. Dzięki temu można utworzyć diagram pokazujący elementy z kilka pakietów, bez konieczności Pokaż pakiety, samodzielnie.  
+    > Jeśli przeciągniesz element z pakietu do pustą część diagramu, jej właścicielem pakietu nie zmienia się. Dzięki temu można utworzyć diagram pokazujący elementy z kilka pakietów, bez konieczności Pokaż pakiety, samodzielnie.  
   
 ## <a name="Pasting"></a> Wklejanie elementów do pakietu  
  Element można wkleić do pakietu. Jeśli wklejasz grupą powiązanych elementów do pakietu, również można wkleić relacje między nimi.  
@@ -185,7 +185,7 @@ W programie Visual Studio *pakietu* jest kontenerem dla definicji elementów UML
 2. Kliknij prawym przyciskiem myszy pakiet, a następnie kliknij przycisk **Wklej**.  
   
     > [!NOTE]
-    >  Pakiet może być na innym diagramie.  
+    > Pakiet może być na innym diagramie.  
   
 ## <a name="Import"></a> Importuj relacje między pakietami  
  Można zdefiniować importu relacja pakietów, za pomocą **zaimportować** narzędzia.  

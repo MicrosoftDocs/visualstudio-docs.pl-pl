@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ca0c160cb9a1cb6f76f64293db7858c0609d2d5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 46fa903b0025279fec3b33d3c14ce1661d076926
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438667"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Przewodnik: Wywoływanie kodu z VBA w projektach Visual Basic
   W tym instruktażu przedstawiono sposób wywołania metody w dostosowaniu na poziomie dokumentu dla programu Microsoft Office Word z Visual Basic for Applications (VBA) kod w dokumencie. Procedura obejmuje trzy podstawowe kroki: Dodaj metodę, która `ThisDocument` hosta klasy elementu, ujawnia metody dla kodu VBA, a następnie wywołaj metodę z kodu VBA w dokumencie.
@@ -46,7 +46,7 @@ ms.locfileid: "60069981"
 - Wywołanie metody z kodu VBA.
 
 > [!NOTE]
->  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
@@ -69,7 +69,7 @@ ms.locfileid: "60069981"
 3. Na wstążce kliknij **Developer** kartę.
 
     > [!NOTE]
-    >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 4. W **kodu** grupy, kliknij przycisk **języka Visual Basic**.
 
@@ -180,7 +180,7 @@ ms.locfileid: "60069981"
  Teraz można wywołać `CreateTable` metody z kodu VBA w dokumencie.
 
 > [!NOTE]
->  W tym przewodniku dodasz kod VBA w dokumencie podczas debugowania projektu. Kod VBA dodawany do tego dokumentu zostaną zastąpione przy następnym uruchomieniu kompilacji projektu, ponieważ program Visual Studio zastępuje dokument w folderze wyjściowym kompilacji kopię dokumentu z folderu głównego projektu. Jeśli chcesz zapisać ten kod, skopiuj go do dokumentu w folderze projektu. Aby uzyskać więcej informacji, zobacz [łączenie VBA i dostosowywanie na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md).
+> W tym przewodniku dodasz kod VBA w dokumencie podczas debugowania projektu. Kod VBA dodawany do tego dokumentu zostaną zastąpione przy następnym uruchomieniu kompilacji projektu, ponieważ program Visual Studio zastępuje dokument w folderze wyjściowym kompilacji kopię dokumentu z folderu głównego projektu. Jeśli chcesz zapisać ten kod, skopiuj go do dokumentu w folderze projektu. Aby uzyskać więcej informacji, zobacz [łączenie VBA i dostosowywanie na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md).
 
 ### <a name="to-call-the-method-from-vba-code"></a>Aby wywołać metodę z kodu VBA
 

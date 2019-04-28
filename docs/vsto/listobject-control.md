@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1df66fcc2e7844bb05ff9a09e8fc71b6fb59ea9f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 323286555bf1ed932b85ed6da84a344787fae265
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438789"
 ---
 # <a name="listobject-control"></a>ListObject — formant
   <xref:Microsoft.Office.Tools.Excel.ListObject> Formant jest listę, która udostępnia zdarzenia i może być powiązana z danymi. Po dodaniu listy do arkusza programu Visual Studio tworzy <xref:Microsoft.Office.Tools.Excel.ListObject> formant, który można programować względem bezpośrednio, bez konieczności przechodzenia z modelu obiektów programu Microsoft Office Excel.
@@ -34,13 +34,13 @@ ms.locfileid: "60073635"
  W projektach na poziomie dokumentu, można dodać <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolek do arkusza w czasie projektowania lub w czasie wykonywania. W projektach dodatku narzędzi VSTO dla programów, można dodać <xref:Microsoft.Office.Tools.Excel.ListObject> formantów do arkuszy tylko w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie formantów ListObject do arkuszy](../vsto/how-to-add-listobject-controls-to-worksheets.md).
 
 > [!NOTE]
->  Domyślnie, dynamicznie utworzoną listę obiektów, nie są zachowywane w arkuszu zgodnie z kontrolki hosta po zamknięciu arkusza. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w środowisku uruchomieniowym](../vsto/adding-controls-to-office-documents-at-run-time.md).
+> Domyślnie, dynamicznie utworzoną listę obiektów, nie są zachowywane w arkuszu zgodnie z kontrolki hosta po zamknięciu arkusza. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w środowisku uruchomieniowym](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 ## <a name="bind-data-to-the-control"></a>Wiązanie danych do kontrolki
  A <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolka obsługuje powiązanie danych proste i złożone. <xref:Microsoft.Office.Tools.Excel.ListObject> Kontroli można powiązać źródła danych przy użyciu <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> i <xref:Microsoft.Office.Tools.Excel.ListObject.DataMember%2A> właściwości w czasie projektowania lub <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> metody w czasie wykonywania.
 
 > [!NOTE]
->  <xref:Microsoft.Office.Tools.Excel.ListObject> Jest aktualizowana automatycznie, gdy jest powiązany ze źródłem danych, takich jak <xref:System.Data.DataTable>, która wywołuje zdarzenia, po zmianie danych. Jeżeli powiążesz <xref:Microsoft.Office.Tools.Excel.ListObject> ze źródłem danych, który nie powoduje zdarzenia po zmianie danych, należy wywołać <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRow%2A> lub <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRows%2A> metodę, aby zaktualizować <xref:Microsoft.Office.Tools.Excel.ListObject>.
+> <xref:Microsoft.Office.Tools.Excel.ListObject> Jest aktualizowana automatycznie, gdy jest powiązany ze źródłem danych, takich jak <xref:System.Data.DataTable>, która wywołuje zdarzenia, po zmianie danych. Jeżeli powiążesz <xref:Microsoft.Office.Tools.Excel.ListObject> ze źródłem danych, który nie powoduje zdarzenia po zmianie danych, należy wywołać <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRow%2A> lub <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRows%2A> metodę, aby zaktualizować <xref:Microsoft.Office.Tools.Excel.ListObject>.
 
  Po dodaniu <xref:Microsoft.Office.Tools.Excel.ListObject> do komórki arkusza przez mapowanie elementu schematu powtarzające się do tej komórki, Visual Studio automatycznie mapuje <xref:Microsoft.Office.Tools.Excel.ListObject> do wygenerowanego zestawu danych. Jednak <xref:Microsoft.Office.Tools.Excel.ListObject> automatycznie nie jest powiązany z danymi. Możesz wykonać kroki, aby powiązać <xref:Microsoft.Office.Tools.Excel.ListObject> do zestawu danych w czasie projektowania lub w czasie wykonywania w projekcie na poziomie dokumentu. Możesz programowo powiązać <xref:Microsoft.Office.Tools.Excel.ListObject> do zestawu danych w czasie wykonywania w dodatku VSTO.
 
@@ -49,7 +49,7 @@ ms.locfileid: "60073635"
  Można szybko wypełniać <xref:Microsoft.Office.Tools.Excel.ListObject> kontroli przez powiązanie <xref:Microsoft.Office.Tools.Excel.ListObject> ze źródłem danych. Jeśli edytujesz danych powiązanych z danymi <xref:Microsoft.Office.Tools.Excel.ListObject>, zmiany zostaną zastosowane automatycznie ze źródła danych. Jeśli chcesz wypełnić <xref:Microsoft.Office.Tools.Excel.ListObject> , a następnie Włącz użytkownikowi na zmianę danych w <xref:Microsoft.Office.Tools.Excel.ListObject> bez modyfikowania źródła danych, możesz użyć <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> metodę, aby odłączyć <xref:Microsoft.Office.Tools.Excel.ListObject> ze źródła danych. Aby uzyskać więcej informacji, zobacz [jak: Wypełnianie formantów ListObject danymi](../vsto/how-to-fill-listobject-controls-with-data.md).
 
 > [!NOTE]
->  Powiązanie danych nie jest obsługiwana w nakładających się <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolki.
+> Powiązanie danych nie jest obsługiwana w nakładających się <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolki.
 
 ### <a name="improve-performance-in-listobject-controls"></a>Poprawić wydajność w formantów ListObject
  Odczytywanie pliku XML do powiązanych z danymi <xref:Microsoft.Office.Tools.Excel.ListObject> formant jest zwykle wolniej, jeśli najpierw powiązać formant, a następnie wywołaj <xref:System.Data.DataSet.ReadXml%2A> do wypełniania zestawu danych. Aby zwiększyć wydajność, należy wywołać <xref:System.Data.DataSet.ReadXml%2A> przed powiązać formant.

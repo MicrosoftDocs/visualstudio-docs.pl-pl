@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2d8ecd09487248b4c4be05b354133c710febf30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cfc486401792afc7d2c6295cacca843aa6c5b11b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445023"
 ---
 # <a name="securing-clickonce-applications"></a>Zabezpieczanie aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ ms.locfileid: "60076201"
  Nigdy nie należy przekazywać argumentów odebranych za pośrednictwem ciągu zapytania do bazy danych lub wiersza polecenia bez sprawdzenia, czy argumenty są bezpieczne. Argumentami niebezpiecznymi są argumenty zawierające znaki ucieczki bazy danych lub wiersza polecenia, które mogłyby umożliwić złośliwemu użytkownikowi „zmuszenie” aplikacji do wykonywania dowolnie wybranych przez niego poleceń.  
   
 > [!NOTE]
->  Argumenty ciągu zapytania to jedyny sposób przekazywania argumentów do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji podczas uruchamiania. Nie można przekazywać argumentów do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji z poziomu wiersza polecenia.  
+> Argumenty ciągu zapytania to jedyny sposób przekazywania argumentów do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji podczas uruchamiania. Nie można przekazywać argumentów do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji z poziomu wiersza polecenia.  
   
 ## <a name="deploying-obfuscated-assemblies"></a>Wdrażanie zestawów zasłoniętych  
  Można zasłonić swoją aplikację, używając narzędzia Dotfuscator, aby uniemożliwić innym osobom odtworzenie kodu. Jednak funkcja zasłaniania zestawu nie jest zintegrowana ze środowiskiem IDE programu Visual Studio i procesem wdrażania technologii ClickOnce. Dlatego zasłanianie trzeba będzie wykonać poza procesem wdrażania, być może w ramach kroków wykonywanych po kompilacji. Po skompilowaniu projektu można wykonać następujące kroki ręcznie poza programem Visual Studio:  

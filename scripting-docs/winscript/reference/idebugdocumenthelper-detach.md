@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 74b6ce51e78cb376263227461d653169fd6a406b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58151326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783473"
 ---
 # <a name="idebugdocumenthelperdetach"></a>IDebugDocumentHelper::Detach
 Usuwa ten dokument z drzewa dokumentu.  

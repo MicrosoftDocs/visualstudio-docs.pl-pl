@@ -15,12 +15,12 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: fcc31e2f7fb06f58f07b0af58a1375466b16cc23
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 646bba541e18fd372bd5236f7ebb6b91d1472d55
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435082"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analizowanie użycia procesora CPU w aplikacji Windows Universal
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
  Jeśli musisz zbadać problemy z wydajnością w aplikacji, dobrym miejscem do rozpoczęcia jest zrozumienie, sposobem użycia procesora CPU. **Użycie procesora CPU** narzędzie pokazuje, gdzie Procesor spędza kodu w czasie wykonywania. Aby skoncentrować się na konkretnych scenariuszy, użycie procesora CPU można uruchomić z [czasu odpowiedzi interfejsu użytkownika XAML](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480) narzędzia [zużycie energii](../profiling/analyze-energy-use-in-store-apps.md) narzędzia lub oba narzędzia w pojedynczej sesji diagnostycznej.  
   
 > [!NOTE]
->  **Użycie procesora CPU** narzędzia nie można używać z aplikacji Windows Phone Silverlight 8.1.  
+> **Użycie procesora CPU** narzędzia nie można używać z aplikacji Windows Phone Silverlight 8.1.  
   
  Ten przewodnik przeprowadzi Cię przez zbieranie i analizowanie użycia procesora CPU dla prostej aplikacji Windows Universal XAML.  
   

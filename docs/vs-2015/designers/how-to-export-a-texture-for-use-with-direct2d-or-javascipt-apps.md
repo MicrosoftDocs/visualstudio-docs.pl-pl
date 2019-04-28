@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 29ee765bfc11362a870d359ff0a9cdc3f633e464
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 44d877f7ff6774e8e52428f4a44acab99816c480
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434422"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Instrukcje: Eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Potok zawartości obrazu może generować tekstury, które są zgodne z konwencj
 3. Ustaw format wyjściowy na jeden z formatów skompresowanego bloku. Na **właściwości konfiguracji**, **potok zawartości obrazu**, **ogólne** ustaw **skompresować** właściwości  **Kompresja bc3_unorm (/ compress: BC3_UNORM)**. Możesz wybrać dowolny z innych formantów BC1, BC2 lub BC3 formatów w zależności od wymagań. Direct2D nie obsługuje obecnie tekstur BC4, BC5, BC6 lub BC7 tekstury. Aby uzyskać więcej informacji o różnych formatach kompresji Blokowej, zobacz [kompresja blokowa (Direct3D 10)](http://msdn.microsoft.com/library/windows/desktop/bb694531.aspx).  
   
    > [!NOTE]
-   >  Format kompresji, który jest określony, określa format pliku, który jest wytwarzany przez potok zawartości obrazu. Stanowi to odmianę **Format** właściwości obrazu źródłowego w edytorze obrazu, który określa format pliku obrazu źródłowego, ponieważ przechowywane na dysku — czyli *formatu roboczego*. Nie ma zazwyczaj format roboczy był skompresowany.  
+   > Format kompresji, który jest określony, określa format pliku, który jest wytwarzany przez potok zawartości obrazu. Stanowi to odmianę **Format** właściwości obrazu źródłowego w edytorze obrazu, który określa format pliku obrazu źródłowego, ponieważ przechowywane na dysku — czyli *formatu roboczego*. Nie ma zazwyczaj format roboczy był skompresowany.  
   
 4. Konfigurowanie potoku zawartości obrazu do generowania danych wyjściowych, która używa wstępnie przemnożonego kanału alfa. Na **właściwości konfiguracji**, **potok zawartości obrazu**, **ogólne** ustaw **przekonwertować wstępnie przemnożonego alfa format** Właściwość **tak (/ generatepremultipliedalpha)**.  
   

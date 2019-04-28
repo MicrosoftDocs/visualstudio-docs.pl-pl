@@ -10,12 +10,12 @@ ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: eb14a2031b89f2a7deeb7d98cc483e90125b1905
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: bbd47969a7a48be817e8e2f5359705e03b5d0dc2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432095"
 ---
 # <a name="solution-configuration"></a>Konfiguracja rozwiązania
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Konfiguracje rozwiązania przechowywania właściwości poziomie rozwiązania. B
  Standardowy pasek narzędzi programu Visual Studio zawiera przycisk Start i Konfiguracja rozwiązania listy rozwijanej z prawej strony przycisk Start. Ta lista pozwala użytkownikom wybrać konfigurację można uruchomić po naciśnięciu klawisza F5, tworzyć własne konfiguracje rozwiązań lub Edytuj istniejącą konfigurację.  
   
 > [!NOTE]
->  Nie ma żadnych interfejsów rozszerzalności do tworzenia lub edytowania konfiguracje rozwiązania. Należy użyć `DTE.SolutionBuilder`. Istnieją jednak rozszerzalności interfejsów API do zarządzania budowanie rozwiązania. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.  
+> Nie ma żadnych interfejsów rozszerzalności do tworzenia lub edytowania konfiguracje rozwiązania. Należy użyć `DTE.SolutionBuilder`. Istnieją jednak rozszerzalności interfejsów API do zarządzania budowanie rozwiązania. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.  
   
  Poniżej przedstawiono, jak można implementować konfiguracje rozwiązania obsługiwany przez użytkownika typ projektu:  
   

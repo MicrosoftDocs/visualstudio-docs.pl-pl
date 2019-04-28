@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9bec38846f7703ff3958aa1c0fcc9a660a5e080d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: daf77a60256e59cabd176990f3642a2206a7f0d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444550"
 ---
 # <a name="reorder-parameters-refactoring-c"></a>Refaktoryzacja zmiany kolejności parametrów (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "54784133"
  Aby wykonać `Reorder Parameters` operacji, umieść kursor na lub obok metoda, indeksator lub delegata. Gdy kursor znajduje się w miejscu, należy wywołać `Reorder Parameters` operacji, naciskając klawisz skrótu klawiaturowego lub przez kliknięcie przycisku polecenia z menu skrótów.  
   
 > [!NOTE]
->  Nie można zmienić kolejności pierwszy parametr w metodzie rozszerzenia.  
+> Nie można zmienić kolejności pierwszy parametr w metodzie rozszerzenia.  
   
 ### <a name="to-reorder-parameters"></a>Aby zmienić kolejność parametrów  
   
-1.  Utwórz bibliotekę klas o nazwie `ReorderParameters`, a następnie zastąp `Class1` poniższym przykładowym kodem.  
+1. Utwórz bibliotekę klas o nazwie `ReorderParameters`, a następnie zastąp `Class1` poniższym przykładowym kodem.  
   
     ```csharp  
     class ProtoClassA  
@@ -56,21 +56,21 @@ ms.locfileid: "54784133"
     }  
     ```  
   
-2.  Umieść kursor w `MethodB`, albo w deklaracji metody lub wywołania metody.  
+2. Umieść kursor w `MethodB`, albo w deklaracji metody lub wywołania metody.  
   
-3.  Na **Refaktoryzuj** menu, kliknij przycisk **Zmień kolejność parametrów**.  
+3. Na **Refaktoryzuj** menu, kliknij przycisk **Zmień kolejność parametrów**.  
   
      **Zmień kolejność parametrów** pojawi się okno dialogowe.  
   
-4.  W **Zmień kolejność parametrów** okno dialogowe, wybierz opcję `int i` w **parametry** listy, a następnie kliknij przycisk w dół.  
+4. W **Zmień kolejność parametrów** okno dialogowe, wybierz opcję `int i` w **parametry** listy, a następnie kliknij przycisk w dół.  
   
      Alternatywnie, można przeciągnąć `int i` po `bool b` w **parametry** listy.  
   
-5.  W **Zmień kolejność parametrów** okno dialogowe, kliknij przycisk **OK**.  
+5. W **Zmień kolejność parametrów** okno dialogowe, kliknij przycisk **OK**.  
   
      Jeśli **podgląd zmian odwołania** jest zaznaczona opcja **Zmień kolejność parametrów** okno dialogowe **podgląd zmian — Zmień kolejność parametrów** zostanie wyświetlone okno dialogowe. Umożliwia podgląd zmian w liście parametrów dla `MethodB` zarówno podpis, jak i wywołania metody.  
   
-    1.  Jeśli **podgląd zmian — Zmień kolejność parametrów** pojawi się okno dialogowe, kliknij przycisk **Zastosuj**.  
+    1. Jeśli **podgląd zmian — Zmień kolejność parametrów** pojawi się okno dialogowe, kliknij przycisk **Zastosuj**.  
   
          W tym przykładzie deklaracji metody i wszystkie metody wywołania dla `MethodB` są aktualizowane.  
   

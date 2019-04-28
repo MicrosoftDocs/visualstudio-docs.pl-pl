@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ae4c5281386cb43d4dddb55db8578aea7515dce1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793984"
 ---
 # <a name="performance-report-view-filter"></a>Filtr widoku raportów wydajności
 **Filtr widoku raportów Profiler** okna znajduje się w górnej części **raport dotyczący wydajności** okna. Jeśli nie widzisz, kliknij pozycję **Pokaż filtr** przycisku.

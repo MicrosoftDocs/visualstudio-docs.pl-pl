@@ -12,12 +12,12 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6ff962a618ba0001441db748facac8af444cd255
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0debf1a5996d39a6cb52cdc843afabf0b4107c59
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403256"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>Uzyskiwanie dostępu do przechowywanych czcionkę i kolor ustawienia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "60078099"
   Generowanie zdarzeń nie jest włączona domyślnie. Aby włączyć generowanie zdarzeń, kategorii muszą być otwarte przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>. Powoduje to, że środowisko IDE do wywołania odpowiednie <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> metody, która implementuje pakietu VSPackage.  
   
 > [!NOTE]
->  Modyfikacje za pośrednictwem **czcionek i kolorów** stronie właściwości generowanie zdarzeń niezależnie od <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>. Możesz użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interfejsu, aby ustalić, czy aktualizację pamięci podręcznej ustawienia czcionek i kolorów jest wymagana przed wywołaniem metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> klasy.  
+> Modyfikacje za pośrednictwem **czcionek i kolorów** stronie właściwości generowanie zdarzeń niezależnie od <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>. Możesz użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interfejsu, aby ustalić, czy aktualizację pamięci podręcznej ustawienia czcionek i kolorów jest wymagana przed wywołaniem metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> klasy.  
   
 ### <a name="storing-and-retrieving-information"></a>Przechowywanie i pobieranie informacji  
  Uzyskać lub skonfigurować informacje, które użytkownik może modyfikować dla nazwanego wyświetlanego elementu w kategorii otwarte, wywołaj pakietów VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.SetItem%2A> metody.  
@@ -69,12 +69,12 @@ ms.locfileid: "60078099"
  Informacje o czcionki atrybuty dla określonej kategorii są uzyskiwane przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.SetFont%2A> metody.  
   
 > [!NOTE]
->  `fFlags` Argument, który jest przekazywany do <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> metody w momencie otwarcia tej kategorii definiuje zachowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> metody. Domyślnie te metody zwrócić tylko informacje aboutdisplay itemsthat uległy zmianie. Jednak jeśli kategoria jest otwarty za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> Flaga zarówno zaktualizowane i Wyświetl niezmienione elementy może zostać oceniony przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>.  
+> `fFlags` Argument, który jest przekazywany do <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> metody w momencie otwarcia tej kategorii definiuje zachowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> metody. Domyślnie te metody zwrócić tylko informacje aboutdisplay itemsthat uległy zmianie. Jednak jeśli kategoria jest otwarty za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> Flaga zarówno zaktualizowane i Wyświetl niezmienione elementy może zostać oceniony przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>.  
   
  Domyślnie tylko zmienione **Wyświetle elementy** informacje są przechowywane w rejestrze. <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Interfejsu nie może służyć do pobierania wszystkich ustawień czcionek i kolorów.  
   
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> metody zwracają REGDB_E_KEYMISSING, (0x80040152L) możesz użyć do pobrania informacji o zmianie **Wyświetle elementy**.  
+> <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> metody zwracają REGDB_E_KEYMISSING, (0x80040152L) możesz użyć do pobrania informacji o zmianie **Wyświetle elementy**.  
   
  Ustawienia wszystkich **Wyświetle elementy** w szczególności **kategorii** można uzyskać za pomocą metody `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults` interfejsu.  
   

@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91c4da26d202e1a23ff70a7c655f64fd6c05a340
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: de757e7022339b11f6d7c04ea7315abf685da24c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57875086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428042"
 ---
 # <a name="donotloadprojects-devenvexe"></a>/DoNotLoadProjects (devenv.exe)
 
-Otwiera określone rozwiązanie bez ładowania jakiegokolwiek projektu.
+Otwiera określone rozwiązanie bez ładowania jakiegokolwiek projektu. Aby uzyskać więcej informacji, zobacz [filtrowane rozwiązań w programie Visual Studio](../filtered-solutions.md).
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,19 +30,19 @@ devenv /DoNotLoadProjects SolutionName
 
 ## <a name="arguments"></a>Argumenty
 
-- *SolutionName*
+*SolutionName*
 
-  Wymagana. Pełną ścieżkę i nazwę rozwiązania, które ma zostać otwarty.
+Wymagana. Pełną ścieżkę i nazwę rozwiązania, które ma zostać otwarty.
 
 ## <a name="example"></a>Przykład
 
-Przykład otwiera tego rozwiązania MySln.sln bez ładowania jakiegokolwiek projektu.
+Przykład otwiera rozwiązanie MySln.sln bez ładowania jakiegokolwiek projektu.
 
 ```shell
 devenv /donotloadprojects MySln.sln
-
 ```
 
 ## <a name="see-also"></a>Zobacz także
 
+- [Filtrowane rozwiązań w programie Visual Studio](../filtered-solutions.md)
 - [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fae2dc72c44b90068212c09086c63c9e00fd2d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 63f86011b7794ca0ddd17b890e3374327db3af0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446933"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualizowanie dostosowań Wstążki w projektach pakietu Office, które przenoszonych do oprogramowania .NET Framework 4 lub .NET Framework 4.5
   Jeśli projekt zawiera dostosowania wstążki, który został utworzony przy użyciu **Wstążka (Projektant graficzny)** elementu projektu, należy wprowadzić następujące zmiany do kodu projektu, zmiana platformy docelowej na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub później.
@@ -75,7 +75,7 @@ ms.locfileid: "60096546"
 3. W `InitializeComponent` metody, zmodyfikować każdy kod, który konstruuje formantu wstążki, aby kod zamiast tego używa jednej z metod Pomocnika <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> obiektu.
 
     > [!NOTE]
-    >  W projektach Visual C#, należy rozwinąć region, który nosi nazwę `Component Designer generated code` się `InitializeComponent` metody.
+    > W projektach Visual C#, należy rozwinąć region, który nosi nazwę `Component Designer generated code` się `InitializeComponent` metody.
 
      Na przykład załóżmy, że plik zawiera następujący wiersz kodu, która tworzy wystąpienie <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> o nazwie `button1` w projekcie, który jest przeznaczony dla .NET Framework 3.5.
 

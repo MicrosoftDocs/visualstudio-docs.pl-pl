@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c6af35b4532b14adc914ab2358745df53f68804
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 7fccae7d42d9e8f99c78fd55f74466e2f83e5dfa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581788"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Porady dotyczące wydajności programu Visual Studio i wskazówki
 
@@ -105,7 +105,17 @@ Aby uzyskać informacje dotyczące wydajności platformy kompilatora .NET ("Rosl
 
     Rozszerzenia są dodatkowych składników oprogramowania dodane do programu Visual Studio, które zapewniają nowe funkcje lub rozszerzanie istniejących funkcji. Rozszerzenia można źródłem problemów zasobów pamięci. Jeśli występują problemy z zasobami pamięci, spróbuj wyłączyć rozszerzenia jeden w czasie, aby zobaczyć, jak wpływa na scenariuszu lub przepływu pracy.
 
+   ::: moniker range="vs-2017"
+
     Aby wyłączyć rozszerzenia, przejdź do **narzędzia** > **rozszerzenia i aktualizacje**i Wyłącz określonego rozszerzenia.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+    Aby wyłączyć rozszerzenia, przejdź do **rozszerzenia** > **Zarządzaj rozszerzeniami**i Wyłącz określonego rozszerzenia.
+
+   ::: moniker-end
 
 - **Wyłącz projektanta XAML**
 

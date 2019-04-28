@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c0f21042a7b49780dae3a46ec5a1f284dc0430a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435628"
 ---
 # <a name="manage-channels"></a>Zarządzanie kanałami
 W **Widok wątków** w Wizualizatorze współbieżności można organizować kanały dla procesu, dzięki czemu można sprawdzić określonego wzorców. Można sortować kanały, przenieś je w górę i w dół i ukryć lub pokazać je.
@@ -33,7 +33,7 @@ W **Widok wątków** w Wizualizatorze współbieżności można organizować kan
 |Synchronizacja|Sortuje wątki według wartości procentowej czasu spędzonego w synchronizacji.|
 |WE/WY|Sortuje wątki według wartości procentowej czasu spędzonego w operacji We/Wy (odczytywania i zapisywania danych).|
 |Stan uśpienia|Sortuje wątki według wartości procentowej czasu spędzonego w trybie uśpienia.|
-|Stronicowania|Sortuje wątki według wartości procentowej czasu spędzonego w stronicowania.|
+|Stronicowanie|Sortuje wątki według wartości procentowej czasu spędzonego w stronicowania.|
 |Wywłaszczania|Sortuje wątki według wartości procentowej czasu spędzonego w wywłaszczania.|
 |Przetwarzanie interfejsu użytkownika|Sortuje wątki według wartości procentowej czasu spędzonego w przetwarzania interfejsu użytkownika.|
 
@@ -47,7 +47,7 @@ W **Widok wątków** w Wizualizatorze współbieżności można organizować kan
  Wybierz tę kontrolkę, gdy chcesz ukryć kanałów. Na przykład jeśli wątek jest synchronizacja 100 procent dla cyklu życia procesu zarządzanego, należy można go ukryć jak inne wątki.
 
 > [!NOTE]
->  Ukrywanie wątku spowoduje również usunięcie go z czas obliczeń, który jest wyświetlany w legendzie aktywnego i w profilu, raportów.
+> Ukrywanie wątku spowoduje również usunięcie go z czas obliczeń, który jest wyświetlany w legendzie aktywnego i w profilu, raportów.
 
 ## <a name="show-all-channels"></a>Pokaż wszystkie kanały
  Ten formant jest aktywny, jeśli co najmniej jednego kanału są ukryte. Jeśli został wybrany, wszystkie ukryte elementy są wyświetlane i są zwracane do obliczeń czasu.

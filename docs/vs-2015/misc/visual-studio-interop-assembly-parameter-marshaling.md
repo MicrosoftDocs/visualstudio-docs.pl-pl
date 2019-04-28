@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: 209f5956d77e714f7f663693f9ac22241d428480
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b0ad8fce0fc582b42cc64944677f7b680aa96541
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436522"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Parametr zestawu międzyoperacyjnego programu Visual Studio Marshalingu
 Pakietów VSPackage, które są zapisywane w kodzie zarządzanym może być konieczne wywoływanie lub można wywoływać za pomocą kodu niezarządzanego COM. Argumenty metody są zazwyczaj transformowany lub zorganizować automatycznie, organizator międzyoperacyjny. Jednak czasami argumenty nie mogą zostać przekształcone w prosty sposób. W takich przypadkach parametrów prototypu zestawu międzyoperacyjnego metody są używane do możliwie najdokładniej dopasować parametrów funkcji COM. Aby uzyskać więcej informacji, zobacz [Marshaling międzyoperacyjności](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
@@ -46,7 +46,7 @@ Pakietów VSPackage, które są zapisywane w kodzie zarządzanym może być koni
  Czasami generuje interfejsu COM `IUnknown` obiektu i interfejsu COM następnie przekazuje ją jako typ `void **`. Te interfejsy są szczególnie ważne, ponieważ jeśli zmienna jest zdefiniowana jako [out] w pliku IDL, a następnie `IUnknown` obiekt jest zliczonych odwołań z `AddRef` metody. Jeśli obiekt nie jest obsługiwany poprawnie występuje przeciek pamięci.  
   
 > [!NOTE]
->  `IUnknown` Obiekt utworzony przy użyciu interfejsu COM i zwracane w zmiennej [out] powoduje przeciek pamięci, jeśli nie jest jawnie zwalniane.  
+> `IUnknown` Obiekt utworzony przy użyciu interfejsu COM i zwracane w zmiennej [out] powoduje przeciek pamięci, jeśli nie jest jawnie zwalniane.  
   
  Zarządzanych metod, które obsługują takie obiekty powinny traktować <xref:System.IntPtr> jako wskaźnik do `IUnknown` obiektu, a następnie wywołaj <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> metody do uzyskiwania obiektu. Obiekt wywołujący powinien następnie rzutowanie zwracanej wartości do dowolnego typu, jest odpowiednie. Gdy obiekt nie jest już potrzebny, wywołaj <xref:System.Runtime.InteropServices.Marshal.Release%2A> do jego zwolnienia.  
   
@@ -77,7 +77,7 @@ else
 ```  
   
 > [!NOTE]
->  Wiadomo, że następujące metody przekazywania `IUnknown` obiektu wskaźników jako typ <xref:System.IntPtr>. Je obsłużyć zgodnie z opisem w tej sekcji.  
+> Wiadomo, że następujące metody przekazywania `IUnknown` obiektu wskaźników jako typ <xref:System.IntPtr>. Je obsłużyć zgodnie z opisem w tej sekcji.  
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
   

@@ -11,22 +11,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: f8fd108e71a49e8860a0fd4fec8751da4bc81644
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ff7f1596d9b3336cb7fdbc02de7d1bc10172f94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405753"
 ---
 # <a name="collect-statistics-for-aspnet-web-apps"></a>Zbieranie statystyk aplikacji sieci web ASP.NET
 
 W tej sekcji opisano procedury składowane i zbieranie statystyk wydajności dla aplikacji sieci Web platformy ASP.NET przy użyciu opcji **VSPerfASPNETCmd** i **VSPerfCmd** narzędzie wiersza polecenia i Metoda profilowania próbkowanie.
 
 > [!NOTE]
->  Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
 > [!NOTE]
->  Mimo że **VSPerfCmd** narzędzie zapewnia pełny dostęp do funkcje Profiling Tools, w tym wstrzymywanie i wznawianie profilowania i zbieranie dodatkowych danych z procesora i liczniki wydajności Windows, należy użyć **VSPerfASPNETCmd** narzędzia wiersza polecenia, jeśli nie potrzebujesz tej funkcji. **VSPerfASPNETCmd** narzędzia wiersza polecenia jest to preferowana metoda gdy jesteś profilowania witryn sieci Web platformy ASP.NET przy użyciu autonomicznego profilera. W porównaniu z [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia wiersza polecenia, żadne zmienne środowiskowe, które należy skonfigurować i ponowne uruchomienie komputera nie jest wymagane. Aby uzyskać więcej informacji, zobacz [profilowania szybkie witryn sieci web za pomocą polecenia VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
+> Mimo że **VSPerfCmd** narzędzie zapewnia pełny dostęp do funkcje Profiling Tools, w tym wstrzymywanie i wznawianie profilowania i zbieranie dodatkowych danych z procesora i liczniki wydajności Windows, należy użyć **VSPerfASPNETCmd** narzędzia wiersza polecenia, jeśli nie potrzebujesz tej funkcji. **VSPerfASPNETCmd** narzędzia wiersza polecenia jest to preferowana metoda gdy jesteś profilowania witryn sieci Web platformy ASP.NET przy użyciu autonomicznego profilera. W porównaniu z [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia wiersza polecenia, żadne zmienne środowiskowe, które należy skonfigurować i ponowne uruchomienie komputera nie jest wymagane. Aby uzyskać więcej informacji, zobacz [profilowania szybkie witryn sieci web za pomocą polecenia VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
 
 ## <a name="common-tasks"></a>Wspólne zadania
 

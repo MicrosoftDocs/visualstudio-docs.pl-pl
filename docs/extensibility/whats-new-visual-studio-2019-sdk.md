@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f818d89a51603bf2698e6c1db034f5341f23098
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30ab0004a492316ff9cbe11016e24b1a28dadf16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444893"
 ---
 # <a name="whats-new-in-the-visual-studio-2019-sdk"></a>What's New in Visual Studio SDK 2019 r
 

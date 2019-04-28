@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afb835c883050064d96c32c80de75d58299892f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c639ecc19f99f25fb5cb38539d2322131ddc2e0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446326"
 ---
 # <a name="accessing-models-from-text-templates"></a>Uzyskiwanie dostępu do modeli z poziomu szablonów tekstu
 Przy użyciu szablonów tekstowych, można utworzyć raport plików, pliki kodu źródłowego i inne pliki tekstowe, które są oparte na modelach języka specyficznego dla domeny. Aby uzyskać podstawowe informacje na temat szablonów tekstu, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md). Szablonów tekstowych będzie działać w trybie doświadczalnym podczas debugowania DSL, a także będą działać na komputerze, na którym wdrożono język DSL.
 
 > [!NOTE]
->  Po utworzeniu rozwiązania DSL, przykładowy szablon tekstu  **\*.tt** pliki są generowane w projekcie debugowania. Po zmianie nazwy klas domeny, te szablony nie będą już działać. Niemniej jednak zawierają one podstawowe dyrektyw, które są potrzebne i zawierają przykłady, które można zaktualizować, aby dopasować DSL.
+> Po utworzeniu rozwiązania DSL, przykładowy szablon tekstu  **\*.tt** pliki są generowane w projekcie debugowania. Po zmianie nazwy klas domeny, te szablony nie będą już działać. Niemniej jednak zawierają one podstawowe dyrektyw, które są potrzebne i zawierają przykłady, które można zaktualizować, aby dopasować DSL.
 
  Dostęp do modelu z szablonu tekstu:
 
@@ -97,7 +97,7 @@ Here is a list of elements in the model:
 ## <a name="Multiple"></a> Uzyskiwanie dostępu do wielu modeli z szablonu tekstowego
 
 > [!NOTE]
->  Ta metoda umożliwia odczyt wiele modeli, w tym samym szablonie, ale nie obsługuje odwołań ModelBus. Modele, które są powiązane przez odwołania ModelBus zamieszczono [przy użyciu programu Visual Studio ModelBus w szablonie tekstowym](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
+> Ta metoda umożliwia odczyt wiele modeli, w tym samym szablonie, ale nie obsługuje odwołań ModelBus. Modele, które są powiązane przez odwołania ModelBus zamieszczono [przy użyciu programu Visual Studio ModelBus w szablonie tekstowym](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
  Jeśli chcesz uzyskać dostęp do więcej niż jednego modelu z tego samego szablonu tekstu, należy wywołać generowanym procesorem dyrektywy jeden raz dla każdego modelu. Należy określić nazwę pliku każdego modelu w `requires` parametru. Należy określić nazwy, które chcesz użyć dla klasy domeny katalogu głównego w `provides` parametru. Należy określić różne wartości `provides` parametrom poszczególnych wywołań dyrektywy. Na przykład załóżmy, że masz trzy pliki modelu o nazwie Library.xyz School.xyz i Work.xyz. Aby uzyskiwać do nich dostęp z tego samego szablonu tekstu, należy napisać trzech wywołań dyrektywy, podobne do poniższych.
 
@@ -108,7 +108,7 @@ Here is a list of elements in the model:
 ```
 
 > [!NOTE]
->  Ten przykładowy kod jest dla języka, który jest oparty na szablonie rozwiązania minimalny języka.
+> Ten przykładowy kod jest dla języka, który jest oparty na szablonie rozwiązania minimalny języka.
 
  Aby uzyskać dostęp do modeli w szablonie tekstowym, można teraz napisać kod podobny do kodu, w poniższym przykładzie.
 

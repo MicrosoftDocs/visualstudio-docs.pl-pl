@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e27892859dd58add2f505fa04e21faac5576a80b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 91f81036345e647820353911356c01b7c4caff99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426549"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Wdrażanie niestandardowych zasad ewidencjonowania analizy kodu dla kodu zarządzanego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Analiza kodu, że zasady ewidencjonowania określa zestaw reguł, które członk
  Aby utworzyć niestandardowy zestaw reguł dla projektu zespołowego, należy najpierw utworzyć specjalny folder zestaw reguł zasad ewidencjonowania **Eksploratora kontroli źródła**. Następnie utworzysz pliku zestawu reguł i dodaj go do kontroli wersji. Na koniec należy określić regułę, Ustaw jako zasady analizy kodu ewidencjonowania projektu zespołowego.  
   
 > [!NOTE]
->  Aby utworzyć folder w projekcie zespołowym, najpierw należy zamapować katalog główny projektu zespołowego do lokalizacji na komputerze lokalnym. Aby uzyskać więcej informacji, zobacz [tworzenie i Praca z obszarami roboczymi (stare)](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+> Aby utworzyć folder w projekcie zespołowym, najpierw należy zamapować katalog główny projektu zespołowego do lokalizacji na komputerze lokalnym. Aby uzyskać więcej informacji, zobacz [tworzenie i Praca z obszarami roboczymi (stare)](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Aby utworzyć folder kontroli wersji dla zestawu reguł zasad ewidencjonowania  
   
@@ -72,7 +72,7 @@ Analiza kodu, że zasady ewidencjonowania określa zestaw reguł, które członk
 4. W **ewidencjonowania** okno dialogowe, masz opcję, aby dodać komentarz, a następnie kliknij przycisk **Zaewidencjonuj**.  
   
     > [!NOTE]
-    >  Jeśli zasady analizy kodu ewidencjonowania została już skonfigurowana dla projektu zespołowego i po wybraniu **wymusić zaewidencjonowanie obejmowało tylko pliki, które są częścią bieżącego rozwiązania**, spowoduje wyzwolenie ostrzeżenie o niepowodzeniu zasady. W oknie dialogowym błędu zasad, wybierz **Przesłoń błąd zasad i Kontynuuj ewidencjonowanie**. Dodaj wymagane komentarz, a następnie kliknij przycisk **OK**.  
+    > Jeśli zasady analizy kodu ewidencjonowania została już skonfigurowana dla projektu zespołowego i po wybraniu **wymusić zaewidencjonowanie obejmowało tylko pliki, które są częścią bieżącego rozwiązania**, spowoduje wyzwolenie ostrzeżenie o niepowodzeniu zasady. W oknie dialogowym błędu zasad, wybierz **Przesłoń błąd zasad i Kontynuuj ewidencjonowanie**. Dodaj wymagane komentarz, a następnie kliknij przycisk **OK**.  
   
 #### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>Aby określić regułę Ustaw plik jako zasady ewidencjonowania  
   
@@ -91,7 +91,7 @@ Analiza kodu, że zasady ewidencjonowania określa zestaw reguł, które członk
      **$/** `TeamProjectName` **/** `VersionControlPath`  
   
     > [!NOTE]
-    >  Możesz skopiować ścieżkę przy użyciu jednej z poniższych procedur w programie **Eksploratora kontroli źródła**:  
+    > Możesz skopiować ścieżkę przy użyciu jednej z poniższych procedur w programie **Eksploratora kontroli źródła**:  
   
     - W **folderów** okienku, kliknij folder zawierający plik zestawu reguł. Kopiuj ścieżkę kontroli wersji, folderu, który pojawia się w **źródła** polu, a następnie wpisz nazwę pliku zestawu reguł ręcznie.  
   

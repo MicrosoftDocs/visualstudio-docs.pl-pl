@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3572e48328317634f036e8c1301d81c38314a21c
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547887"
 ---
 # <a name="target-older-versions-of-net-f"></a>Docelowa starszej wersji platformy .NET (F#)
 

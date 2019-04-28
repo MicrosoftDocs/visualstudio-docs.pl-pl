@@ -11,12 +11,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7d1bfcfc3176e14900553504a66307ff6e8dcf5a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f3bae21baa0c484f2deeb8406a703b92cadc874b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439040"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Inicjowanie projektanta i konfiguracja metadanych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Manipulowanie atrybutów metadanych i filtrów skojarzonych z projektanta lub sk
 1. Tworzenie, wdrażanie obiektu <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> klasy.  
   
    > [!NOTE]
-   >  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Klasy nigdy nie powinny zostać wdrożone na tym samym obiekcie jako <xref:Microsoft.VisualStudio.Shell.Package> klasy.  
+   > <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Klasy nigdy nie powinny zostać wdrożone na tym samym obiekcie jako <xref:Microsoft.VisualStudio.Shell.Package> klasy.  
   
 2. Rejestrowanie klasy wykonania <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> jako świadczenie pomocy technicznej dla projektanta rozszerzenia pakietu VSPackage, stosując wystąpień <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>, <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> i <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> do klasy, zapewniając wdrożenia pakietu VSPackage <xref:Microsoft.VisualStudio.Shell.Package> .  
   
@@ -93,7 +93,7 @@ Manipulowanie atrybutów metadanych i filtrów skojarzonych z projektanta lub sk
   `internal class MyPackage : Package {}`  
   
 > [!NOTE]
->  W chwili obecnej powierzchni projektowej obsługuje tylko tworzenie składników, a więc metadanymi lokalnymi tylko te elementy. W powyższym przykładzie mamy próba modyfikowanie właściwości, takie jak `Color` właściwości obiektu. Jeśli `false` została przekazana dla flagę globalną `CustomBrowser` nigdy nie zostanie wyświetlony, ponieważ projektant nigdy tworzone jest wystąpienie `Color`. Ustawienie flagi globalne `false` przydaje się do składników, takich jak formanty, czasomierze i oknach dialogowych.  
+> W chwili obecnej powierzchni projektowej obsługuje tylko tworzenie składników, a więc metadanymi lokalnymi tylko te elementy. W powyższym przykładzie mamy próba modyfikowanie właściwości, takie jak `Color` właściwości obiektu. Jeśli `false` została przekazana dla flagę globalną `CustomBrowser` nigdy nie zostanie wyświetlony, ponieważ projektant nigdy tworzone jest wystąpienie `Color`. Ustawienie flagi globalne `false` przydaje się do składników, takich jak formanty, czasomierze i oknach dialogowych.  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   

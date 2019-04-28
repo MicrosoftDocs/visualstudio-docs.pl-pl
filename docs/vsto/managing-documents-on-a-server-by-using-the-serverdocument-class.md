@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 595c9127aad71cac6f446f356c309809b7172d94
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 82763f78673391ab6a308ba026a6b9e53c3b474b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438830"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>Zarządzanie dokumentami na serwerze za pomocą klasy ServerDocument
   Możesz użyć `ServerDocument` klasy w [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Zarządzanie kilka aspektów dostosowywania poziomie dokumentu, nawet jeśli nie zainstalowano programu Microsoft Office Word i Microsoft Office Excel. Można wykonać następujące zadania:
@@ -38,7 +38,7 @@ ms.locfileid: "60045490"
  Aby uzyskać więcej informacji o Visual Studio 2010 Tools for Office Runtime oraz rozszerzeń pakietu Office dla programu .NET Framework, zobacz [Visual Studio Tools dla pakietu Office runtime ― omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
 > [!NOTE]
->  Jeśli masz starszą aplikację, która używa `ServerDocument` klasy w `Visual Studio Tools for Office` system (w wersji 3.0 Runtime), `Visual Studio Tools for Office` system (wersja 3.0 runtime) musi być zainstalowany na komputerach z pakietem aplikacji. `Visual Studio 2010 Tools for Office runtime` Nie mogą uruchamiać tych aplikacji.
+> Jeśli masz starszą aplikację, która używa `ServerDocument` klasy w `Visual Studio Tools for Office` system (w wersji 3.0 Runtime), `Visual Studio Tools for Office` system (wersja 3.0 runtime) musi być zainstalowany na komputerach z pakietem aplikacji. `Visual Studio 2010 Tools for Office runtime` Nie mogą uruchamiać tych aplikacji.
 
 ## <a name="CachedData"></a> Praca z pamięci podręcznej danych w dokumencie
  `ServerDocument` Klasa oferuje elementy członkowskie, można użyć do pracy z pamięcią podręczną danych w dokumentach dostosowane. Aby uzyskać więcej informacji dotyczących buforowanych danych, zobacz [dane z pamięci podręcznej](../vsto/caching-data.md) i [dostęp do danych w dokumentach na serwerze](../vsto/accessing-data-in-documents-on-the-server.md).

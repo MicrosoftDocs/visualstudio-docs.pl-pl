@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dbae3a1e003c0d9381b80fc24227e65a18c1c8f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ca692e85396b11647c507b18c95ca095b3f8072
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438756"
 ---
 # <a name="visio-object-model-overview"></a>Model obiektu Visio ― omówienie
   Do opracowywania rozwiązań pakietu Office dla programu Microsoft Office Visio, możesz korzystać z modelu obiektów programu Visio. Ten model obiektów składa się z klasy i interfejsy, które znajdują się w podstawowy zestaw międzyoperacyjny dla programu Visio i są definiowane w `Microsoft.Office.Interop.Visio` przestrzeni nazw.
@@ -67,7 +67,7 @@ ms.locfileid: "60096559"
  Wszystkie obiekty i elementy członkowskie w dokumentacja modelu obiektów VBA odnoszą się do typów i członków w programie Visio podstawowego zestawu międzyoperacyjnego (PIA). Na przykład `Document` obiektu w dokumentacja modelu obiektów VBA odpowiada typowi Microsoft.Office.Interop.Visio.Document w PIA programu Visio. Mimo że dokumentacja modelu obiektów VBA zawiera przykłady kodu dla większości właściwości, metody i zdarzenia, należy translacji kodu VBA w ramach tego odwołania do Visual Basic lub Visual C# Jeśli chcesz używać ich w projekcie dodatku narzędzi VSTO programu Visio utworzonego za pomocą Program Visual Studio.
 
 > [!NOTE]
->  W tej chwili brak Dokumentacja referencyjna dla podstawowego zestawu międzyoperacyjnego programu Visio.
+> W tej chwili brak Dokumentacja referencyjna dla podstawowego zestawu międzyoperacyjnego programu Visio.
 
  Przykłady kodu powiązany i dodatkowych narzędzi do tworzenia rozwiązania programu Visio można znaleźć [zestaw Visio 2010 software development kit](http://go.microsoft.com/fwlink/?LinkId=196501).
 

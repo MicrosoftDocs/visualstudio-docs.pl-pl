@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9e12894a6c526e70e9d2ea814c2634a271098d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 315a0e2f6c68a98eac8bb2c36d184ef68998e5ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435136"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Instrukcje: Określanie zdarzeń kompilacji (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Zdarzenia kompilacji, w języku Visual Basic mogą służyć do uruchamiania skr
  Tworzenie zdarzenia są określone w **zdarzenia kompilacji** dostępne okno dialogowe **skompilować** strony **projektanta projektu**.  
   
 > [!NOTE]
->  Visual Basic Express nie obsługuje zapis zdarzeń kompilacji. Jest to obsługiwane tylko w przypadku pełnego produktu Visual Studio.  
+> Visual Basic Express nie obsługuje zapis zdarzeń kompilacji. Jest to obsługiwane tylko w przypadku pełnego produktu Visual Studio.  
   
 ## <a name="how-to-specify-pre-build-and-post-build-events"></a>Jak określić zdarzenia sprzed kompilacji i po kompilacji  
   
@@ -45,10 +45,10 @@ Zdarzenia kompilacji, w języku Visual Basic mogą służyć do uruchamiania skr
 4. Wprowadź argumenty wiersza polecenia dla akcji kompilacji przed lub po kompilacji, a następnie kliknij przycisk **OK**.  
   
     > [!NOTE]
-    >  Dodaj `call` instrukcję przed polecenia wszystkich wykonywanych po kompilacji, które uruchamiają pliki bat. Na przykład `call C:\MyFile.bat` lub `call C:\MyFile.bat call C:\MyFile2.bat`.  
+    > Dodaj `call` instrukcję przed polecenia wszystkich wykonywanych po kompilacji, które uruchamiają pliki bat. Na przykład `call C:\MyFile.bat` lub `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
     > [!NOTE]
-    >  Jeśli zdarzenia sprzed kompilacji lub po kompilacji nie zostanie ukończone pomyślnie, możesz zakończyć działanie kompilacji przez akcję zdarzenia zakończyć pracę z kodem niż zero (0), co oznacza pomyślne akcji.  
+    > Jeśli zdarzenia sprzed kompilacji lub po kompilacji nie zostanie ukończone pomyślnie, możesz zakończyć działanie kompilacji przez akcję zdarzenia zakończyć pracę z kodem niż zero (0), co oznacza pomyślne akcji.  
   
 ## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Przykład: Jak zmienić informacje manifestu za pomocą zdarzenia mające miejsce po kompilacji  
  Poniższa procedura pokazuje, jak ustawienie wersji minimalnej wersji systemu operacyjnego w manifeście aplikacji za pomocą polecenia .exe wywoływane z zdarzenia postkompilacyjnego (. exe.manifest pliku w katalogu projektu). Wersja minimalna wersja systemu operacyjnego jest Czteroczęściowy numer, takich jak 4.10.0.0. Aby to zrobić, polecenia zmieni `<dependentOS>` sekcji manifestu:  

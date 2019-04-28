@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: d6a16b8f0752ca2ab063f8bbbaa966836856eb4f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565811"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Typizowane i nietypizowane zestawy danych
 Typizowany zestaw danych jest zestaw danych, który najpierw pochodzą od podstawy <xref:System.Data.DataSet> klasy, a następnie używa informacji z **Projektanta obiektów Dataset**, który jest przechowywany w pliku XSD, aby wygenerować nowy, silnie typizowanej klasy zestawu danych. Informacje ze schematu (tabele, kolumny i tak dalej) jest wygenerowany i kompilowane do tej nowej klasy dataset jako zbiór obiektów najwyższej klasy i właściwości. Ponieważ typizowany zestaw danych dziedziczy od podstawy <xref:System.Data.DataSet> klasy typizowanej klasy przyjęto założenie, wszystkie funkcje <xref:System.Data.DataSet> klasy i mogą być używane z metod, dla których wystąpienie <xref:System.Data.DataSet> klasy jako parametr.

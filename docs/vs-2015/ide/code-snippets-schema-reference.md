@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 994b87de61aaa0b303b0b0bf8454dad716c9978f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b49b1aa1022b12dc2d409037a1241f51b469a14c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436242"
 ---
 # <a name="code-snippets-schema-reference"></a>Fragmenty kodu — Odwołanie do schematu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Fragmenty kodu IntelliSense to wstępnie przygotowane wycinki kodu źródłowego
  Określa nazwę zestawu, do którego się odwołuje fragment kodu.  
   
 > [!NOTE]
->  `Assembly` Jest obsługiwany tylko przez fragmenty kodu Visual Basic.  
+> `Assembly` Jest obsługiwany tylko przez fragmenty kodu Visual Basic.  
   
  Wartość tekstowa elementu **zestawu** element jest albo przyjazna tekstowa Nazwa zestawu, taką jak `System.dll`, lub jego silna nazwa, taka jak `System,Version=1.0.0.1,Culture=neutral,PublicKeyToken=9b35aa323c18d4fb1`.  
   
@@ -240,7 +240,7 @@ is a great color. I love Blue.
  Określa funkcję do wykonania, gdy w programie Visual Studio na literale lub obiekcie zostanie ustawiony fokus.  
   
 > [!NOTE]
->  `Function` Jest obsługiwany tylko w fragmentach kodu języka Visual C#.  
+> `Function` Jest obsługiwany tylko w fragmentach kodu języka Visual C#.  
   
 ```xml  
 <Function>  
@@ -289,7 +289,7 @@ is a great color. I love Blue.
  Określa adres URL strony zawierającej poszerzone informacje o fragmencie kodu.  
   
 > [!NOTE]
->  Visual Studio nie wykorzystuje `HelpUrl` elementu. Element jest częścią schematu XML fragmentu kodu IntelliSense. Wszystkie fragmenty kodu zawierające element będą weryfikowane, ale wartość elementu nigdy nie jest używana.  
+> Visual Studio nie wykorzystuje `HelpUrl` elementu. Element jest częścią schematu XML fragmentu kodu IntelliSense. Wszystkie fragmenty kodu zawierające element będą weryfikowane, ale wartość elementu nigdy nie jest używana.  
   
 ```xml  
 <HelpUrl>  
@@ -325,7 +325,7 @@ is a great color. I love Blue.
  Określa zaimportowaną przestrzeń nazw używaną przez fragment kodu IntelliSense.  
   
 > [!NOTE]
->  `Import` Element jest obsługiwany tylko dla projektów języka Visual Basic.  
+> `Import` Element jest obsługiwany tylko dla projektów języka Visual Basic.  
   
 ```xml  
 <Import>  
@@ -346,7 +346,7 @@ is a great color. I love Blue.
  Grupuje poszczególne `Import` elementów.  
   
 > [!NOTE]
->  `Imports` Element jest obsługiwany tylko dla projektów języka Visual Basic.  
+> `Imports` Element jest obsługiwany tylko dla projektów języka Visual Basic.  
   
 ```xml  
 <Imports>  
@@ -428,7 +428,7 @@ is a great color. I love Blue.
  Określa przestrzeń nazw, którą należy zaimportować, aby fragment kodu został skompilowany i działał. Przestrzeń nazw określona w `Namespace` element jest automatycznie dodawany do `Imports` instrukcji na początku kodu, jeśli jeszcze nie istnieje.  
   
 > [!NOTE]
->  `Namespace` Element jest obsługiwany tylko dla projektów języka Visual Basic.  
+> `Namespace` Element jest obsługiwany tylko dla projektów języka Visual Basic.  
   
 ```xml  
 <Namespace>  
@@ -475,7 +475,7 @@ is a great color. I love Blue.
  Określa informacje o odwołaniach do zestawów wymaganych przez fragment kodu.  
   
 > [!NOTE]
->  `Reference` Element jest obsługiwany tylko dla projektów języka Visual Basic.  
+> `Reference` Element jest obsługiwany tylko dla projektów języka Visual Basic.  
   
 ```xml  
 <Reference>  
@@ -497,7 +497,7 @@ is a great color. I love Blue.
  Grupuje poszczególne `Reference` elementów.  
   
 > [!NOTE]
->  `References` Element jest obsługiwany tylko dla projektów języka Visual Basic.  
+> `References` Element jest obsługiwany tylko dla projektów języka Visual Basic.  
   
 ```xml  
 <References>  
@@ -517,7 +517,7 @@ is a great color. I love Blue.
  Określa tekst skrótu służący do wstawiania fragmentu kodu. Wartość tekstowa elementu `Shortcut` element może zawierać tylko znaki alfanumeryczne, łączniki (-) i podkreślenia (_).  
   
 > [!CAUTION]
->  Znaki _ i — nie są obsługiwane w skrótach do fragmentów kodu języka C++.  
+> Znaki _ i — nie są obsługiwane w skrótach do fragmentów kodu języka C++.  
   
 ```xml  
 <Shortcut>  
@@ -644,7 +644,7 @@ is a great color. I love Blue.
  Określa adres URL strony z dodatkowymi informacjami o zestawie, do którego prowadzi odwołanie.  
   
 > [!NOTE]
->  `Url` Element jest obsługiwany tylko dla projektów języka Visual Basic.  
+> `Url` Element jest obsługiwany tylko dla projektów języka Visual Basic.  
   
 ```xml  
 <Url>  

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25ed4c8032133f08b975a22d56de4911efbd50a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 34efc198b1237028c84e86e8cb34db9270b6d646
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426659"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Użycie pamięci miar w programie Visual Studio
 
@@ -46,7 +46,7 @@ W tym samouczku wykonasz następujące czynności:
     Jeśli masz obszar, w którym podejrzewasz problem pamięci, należy ustawić pierwszy punkt przerwania przed wystąpieniem problemu pamięci.
 
     > [!TIP]
-    >  Ponieważ może stanowić wyzwanie do przechwytywania profilu pamięci operacji, która Cię interesuje, gdy aplikacja często przydziela i zwalnia pamięć, ustawić punkty przerwania na początku i końca operacji (lub wykonać krok po kroku) aby znaleźć konkretny punkt Pamięć zmieniła się.
+    > Ponieważ może stanowić wyzwanie do przechwytywania profilu pamięci operacji, która Cię interesuje, gdy aplikacja często przydziela i zwalnia pamięć, ustawić punkty przerwania na początku i końca operacji (lub wykonać krok po kroku) aby znaleźć konkretny punkt Pamięć zmieniła się.
 
 2. Ustaw drugi punkt przerwania na końcu funkcji lub regionu kod, który chcesz analizować (lub po wystąpieniu problemu podejrzanych pamięci).
 
@@ -63,7 +63,7 @@ W tym samouczku wykonasz następujące czynności:
      ![Karta Podsumowanie narzędzia do diagnostyki](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
-     >  Ponieważ zbieranie danych może mieć wpływ na wydajność debugowania aplikacji natywnej lub trybu mieszanego pamięci, migawki pamięci są domyślnie wyłączone. Aby włączyć migawek w aplikacji natywnej lub trybu mieszanego, Rozpocznij sesję debugowania (klawisz skrótu: **F5**). Gdy **narzędzia diagnostyczne** zostanie wyświetlone okno, wybierz **użycie pamięci** kartę, a następnie wybierz **profilowanie sterty**.
+     > Ponieważ zbieranie danych może mieć wpływ na wydajność debugowania aplikacji natywnej lub trybu mieszanego pamięci, migawki pamięci są domyślnie wyłączone. Aby włączyć migawek w aplikacji natywnej lub trybu mieszanego, Rozpocznij sesję debugowania (klawisz skrótu: **F5**). Gdy **narzędzia diagnostyczne** zostanie wyświetlone okno, wybierz **użycie pamięci** kartę, a następnie wybierz **profilowanie sterty**.
      >
      >  ![Włącz migawki](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
      >
@@ -74,7 +74,7 @@ W tym samouczku wykonasz następujące czynności:
     ![Wykonaj migawkę](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
 
      > [!TIP]
-     >  Aby utworzyć punkt odniesienia dla porównania pamięci, należy rozważyć wykonanie migawki podczas uruchamiania sesji debugowania.
+     > Aby utworzyć punkt odniesienia dla porównania pamięci, należy rozważyć wykonanie migawki podczas uruchamiania sesji debugowania.
 
 6. Uruchom scenariusz, który spowoduje, że pierwszy punkt przerwania na.
 

@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e344fa63a9778d0db45ceeb0e313faa4c6448241
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e4ac17ba5bc828e7974ced9519728aa5de15db94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424537"
 ---
 # <a name="managing-references-in-a-project"></a>Zarządzanie odwołaniami w projekcie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,10 +68,10 @@ Pisanie kodu w stosunku do składnika zewnętrznego lub połączone usługi, pro
 2. Przejdź do witryny dostawcy, który jest właścicielem nieobsługiwanego zestawu SDK rozszerzeń i zainstaluj wersję zestawu SDK rozszerzeń z zależnościami, które są zgodne z wersją platformy, dla której projekt jest adresowany.  
   
     > [!NOTE]
-    >  Jednym ze sposobów, aby dowiedzieć się, czy zestaw SDK rozszerzeń ma zależności od innych zestawów SDK rozszerzeń jest ponownie program Visual Studio, Utwórz nowy projekt C# Windows Store, kliknij prawym przyciskiem myszy nad projektem i wybierz **Dodaj odwołanie**, przejdź do  **Windows** karty, wróć do **rozszerzenia** podkartę, zaznacz SDK rozszerzeń i przyjrzyj się okienku po prawej stronie w **Menadżer odwołań**. Jeśli ma zależności, zostaną wyświetlone istnieje.  
+    > Jednym ze sposobów, aby dowiedzieć się, czy zestaw SDK rozszerzeń ma zależności od innych zestawów SDK rozszerzeń jest ponownie program Visual Studio, Utwórz nowy projekt C# Windows Store, kliknij prawym przyciskiem myszy nad projektem i wybierz **Dodaj odwołanie**, przejdź do  **Windows** karty, wróć do **rozszerzenia** podkartę, zaznacz SDK rozszerzeń i przyjrzyj się okienku po prawej stronie w **Menadżer odwołań**. Jeśli ma zależności, zostaną wyświetlone istnieje.  
   
     > [!IMPORTANT]
-    >  Jeśli projekt jest przeznaczony dla systemu Windows 10 oraz zestaw SDK rozszerzeń zainstalowany w poprzednim kroku ma zależność od pakietu Microsoft Visual C++ Runtime wersja pakietu Microsoft Visual C++ Runtime zgodnego z systemem Windows 10 jest v14.0 i jest zainstalowany za pomocą programu Visual Studio 2015.  
+    > Jeśli projekt jest przeznaczony dla systemu Windows 10 oraz zestaw SDK rozszerzeń zainstalowany w poprzednim kroku ma zależność od pakietu Microsoft Visual C++ Runtime wersja pakietu Microsoft Visual C++ Runtime zgodnego z systemem Windows 10 jest v14.0 i jest zainstalowany za pomocą programu Visual Studio 2015.  
   
 3. Jeśli zestaw SDK rozszerzeń zainstalowany w poprzednim kroku ma zależności od innych zestawów SDK rozszerzeń, przejdź do witryn dostawców, którzy są właścicielami zależności i zainstaluj wersje tych zależności, które są zgodne z wersją platformy, usługi Projekt jest adresowany.  
   
@@ -89,9 +89,9 @@ Pisanie kodu w stosunku do składnika zewnętrznego lub połączone usługi, pro
 - Inne katalogi projektu w tym samym rozwiązaniu. (Zestawy te można znaleźć na **projektów** karty.)  
   
 > [!NOTE]
->  Wszystkie projekty zawierają odwołanie domniemane do mscorlib. Projekty języka Visual Basic zawierają odwołanie domniemane do `Microsoft.VisualBasic`.  
+> Wszystkie projekty zawierają odwołanie domniemane do mscorlib. Projekty języka Visual Basic zawierają odwołanie domniemane do `Microsoft.VisualBasic`.  
 >   
->  Wszystkie projekty w programie Visual Studio zawierają odwołanie domniemane do `System.Core`nawet wtedy, gdy `System.Core` zostanie usunięty z listy odwołań.  
+> Wszystkie projekty w programie Visual Studio zawierają odwołanie domniemane do `System.Core`nawet wtedy, gdy `System.Core` zostanie usunięty z listy odwołań.  
   
 ## <a name="references-to-shared-components-at-run-time"></a>Odwołania do udostępnionych składników w czasie wykonywania  
  W czasie wykonywania, składniki muszą się znajdować albo w ścieżce wyjściowej projektu lub w [Global Assembly Cache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC). Jeśli projekt zawiera odwołanie do obiektu, który nie znajduje się w jednej z tych lokalizacji, należy skopiować odwołanie do ścieżki wyjściowej projektu podczas kompilowania projektu. <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> Właściwość wskazuje, czy ta kopia musi zostać wykonana. Jeśli wartość jest **True**, odwołanie jest kopiowane do katalogu projektu podczas kompilowania projektu. Jeśli wartość jest **False**, odwołanie nie jest kopiowany.  
@@ -111,7 +111,7 @@ Pisanie kodu w stosunku do składnika zewnętrznego lub połączone usługi, pro
  Jeśli masz projekt, który tworzy zestaw, należy odwoływać się do projektu i używaj odwołanie do pliku (patrz poniżej). Zaletą odwołania projektu do projektu jest to, że tworzy ono zależność między projektami w systemie kompilacji. Projekt zależny zostanie skompilowany, jeśli została zmieniona od czasu ostatniego konstruowania projektu z odwołaniem. Odwołanie pliku nie tworzy zależność kompilacji, więc istnieje możliwość skompilowania projektu z odwołaniem bez kompilowania projektu zależnego, a odwołanie może się okazać zbędne. (Oznacza to, że projekt może odwoływać się do uprzednio utworzonej wersji projektu.) Może to spowodować, że kilka wersjach pojedynczego pliku DLL jest wymagana w katalogu bin, który nie jest możliwe. Po wystąpieniu takiego konfliktu pojawi komunikat takich jak [Ostrzeżenie: nie można skopiować zależności 'Plik' w projekcie 'projekt' do katalogu uruchomienia, ponieważ zastąpiłaby ona odwołanie 'Plik'. ](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md). Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z odwołaniami uszkodzone](../ide/troubleshooting-broken-references.md) i [jak: Tworzenie i usuwanie zależności projektu](../ide/how-to-create-and-remove-project-dependencies.md).  
   
 > [!NOTE]
->  Odwołanie pliku zamiast odwołania projektu do projektu jest tworzony, jeśli wersji docelowej programu .NET Framework jednego projektu jest wersja 4.5 i wersję docelową innego projektu jest w wersji 2, 3, 3.5 lub 4.0.  
+> Odwołanie pliku zamiast odwołania projektu do projektu jest tworzony, jeśli wersji docelowej programu .NET Framework jednego projektu jest wersja 4.5 i wersję docelową innego projektu jest w wersji 2, 3, 3.5 lub 4.0.  
   
 ## <a name="file-references"></a>Odwołania do pliku  
  Odwołania do plików są bezpośrednimi odwołaniami do zestawów poza kontekstem projektu programu Visual Studio; Tworzenie przy użyciu **Przeglądaj** karcie **Menadżer odwołań**. Użyj odwołania pliku po po prostu zestaw lub składnik i nie masz projektu, który tworzy go jako dane wyjściowe.  

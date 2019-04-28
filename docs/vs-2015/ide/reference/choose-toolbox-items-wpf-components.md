@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4cbfaea72633f6f4bbeb7da3bf6e7c02069889f9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0d4ebb383e7dfb18ed4e119e9b34111ac809e2a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433684"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Wybierz elementy paska narzędzi, składniki WPF
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,12 +29,12 @@ Ta karta **wybierz elementy przybornika** okno dialogowe wyświetla listę forma
 - Gdy zaznaczone jest pole wyboru obok składnika, ikona tych składników, będą wyświetlane w **przybornika**.  
   
   > [!TIP]
-  >  Aby dodać wystąpienie kontrolki WPF do projektu dokument otwarty do edycji, przeciągnij jego **przybornika** ikony na powierzchnię projektową widoku. Domyślne znaczników i kodu dla składnika są wstawiane do projektu, możesz zmodyfikować. Aby uzyskać więcej informacji, zobacz [jak: Zarządzanie oknem przybornika](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) i [jak: Karty przybornika manipulowania](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
+  > Aby dodać wystąpienie kontrolki WPF do projektu dokument otwarty do edycji, przeciągnij jego **przybornika** ikony na powierzchnię projektową widoku. Domyślne znaczników i kodu dla składnika są wstawiane do projektu, możesz zmodyfikować. Aby uzyskać więcej informacji, zobacz [jak: Zarządzanie oknem przybornika](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) i [jak: Karty przybornika manipulowania](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
 - Po wyczyszczeniu pola wyboru obok składnika odpowiednią ikonę zostaną usunięte z **przybornika.**  
   
   > [!NOTE]
-  >  Składniki .NET Framework zainstalowana na danym komputerze pozostaną dostępne, czy ich ikony są wyświetlane w **przybornika**.  
+  > Składniki .NET Framework zainstalowana na danym komputerze pozostaną dostępne, czy ich ikony są wyświetlane w **przybornika**.  
   
   Kolumny na **składniki WPF** karta zawiera następujące informacje:  
   

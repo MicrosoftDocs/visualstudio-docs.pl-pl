@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 59e8206bd1110a06c8b94b71ac9da8253a3a4b25
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: f27e09cd66c05a10648205850a9547d7b191d2de
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787585"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Rozpoczynanie pracy z usługą Live Unit Testing w programie Visual Studio
 
@@ -34,7 +34,7 @@ Kompletne rozwiązanie programu Visual Basic można go pobrać ze [MicrosoftDocs
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Ten samouczek wymaga, że po zainstalowaniu programu Visual Studio Enterprise Edition z obciążeniem programu .NET Core 2.0.
+Ten samouczek wymaga, że po zainstalowaniu programu Visual Studio Enterprise edition z obciążeniem programu .NET Core 2.0.
 
 ## <a name="create-the-solution-and-the-class-library-project"></a>Utwórz rozwiązanie i projekt biblioteki klas
 
@@ -94,11 +94,11 @@ Teraz, po utworzeniu rozwiązania, utworzysz biblioteki klas o nazwie `StringLib
 
    `StringLibrary` ma trzy metody statyczne:
 
-      - `StartsWithUpper` Zwraca `true` Jeśli ciąg rozpoczyna się od wielkiej litery; w przeciwnym razie zwraca `false`.
+   - `StartsWithUpper` Zwraca `true` Jeśli ciąg rozpoczyna się od wielkiej litery; w przeciwnym razie zwraca `false`.
 
-      - `StartsWithLower`Zwraca `true` Jeśli ciąg rozpoczyna się od małej litery; w przeciwnym razie zwraca `false`.
+   - `StartsWithLower`Zwraca `true` Jeśli ciąg rozpoczyna się od małej litery; w przeciwnym razie zwraca `false`.
 
-      - `HasEmbeddedSpaces` Zwraca `true` Jeśli ciąg zawiera znak spacji osadzonych; w przeciwnym razie zwraca `false`.
+   - `HasEmbeddedSpaces` Zwraca `true` Jeśli ciąg zawiera znak spacji osadzonych; w przeciwnym razie zwraca `false`.
 
 6. Wybierz **kompilacji** > **Kompiluj rozwiązanie** menu najwyższego poziomu programu Visual Studio. Program Visual Studio pomyślnie należy utworzyć bibliotekę.
 
@@ -140,11 +140,11 @@ Teraz, po utworzeniu rozwiązania, utworzysz biblioteki klas o nazwie `StringLib
 
    `StringLibrary` ma trzy metody statyczne:
 
-      - `StartsWithUpper` Zwraca `true` Jeśli ciąg rozpoczyna się od wielkiej litery; w przeciwnym razie zwraca `false`.
+   - `StartsWithUpper` Zwraca `true` Jeśli ciąg rozpoczyna się od wielkiej litery; w przeciwnym razie zwraca `false`.
 
-      - `StartsWithLower`Zwraca `true` Jeśli ciąg rozpoczyna się od małej litery; w przeciwnym razie zwraca `false`.
+   - `StartsWithLower`Zwraca `true` Jeśli ciąg rozpoczyna się od małej litery; w przeciwnym razie zwraca `false`.
 
-      - `HasEmbeddedSpaces` Zwraca `true` Jeśli ciąg zawiera znak spacji osadzonych; w przeciwnym razie zwraca `false`.
+   - `HasEmbeddedSpaces` Zwraca `true` Jeśli ciąg zawiera znak spacji osadzonych; w przeciwnym razie zwraca `false`.
 
 6. Kliknij prawym przyciskiem myszy nad projektem StringLibrary w **Eksploratora rozwiązań** i wybierz **właściwości**. W **aplikacji** karcie, usuń tekst w **głównej przestrzeni nazw** pola tekstowego, jak przedstawiono na poniższym rysunku. Główna przestrzeń nazw jest definiowany przez [Namespace, instrukcja](/dotnet/visual-basic/language-reference/statements/namespace-statement) w kodzie źródłowym.
 

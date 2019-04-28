@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d8b9c04d1cabd44418c70725ef331c9c4b5ec67e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580512"
 ---
 # <a name="processes-view"></a>Widok procesów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

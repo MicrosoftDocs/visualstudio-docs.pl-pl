@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5c763e18f30bec27837e248a27546df821ef33f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b0a34505cf32e0e3fd4dc18bfeab4588856dba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409952"
 ---
 # <a name="attach-after-a-launch"></a>Dołączanie po uruchomieniu
 Po uruchomieniu programu sesji debugowania jest gotowy do dołączania aparat debugowania (DE) do wspomnianej programu.
@@ -28,7 +28,7 @@ Po uruchomieniu programu sesji debugowania jest gotowy do dołączania aparat de
 - Jeśli więcej sensu do skonfigurowania komunikacji między DE i program, środowiska wykonawczego powoduje utworzenie wspólnej DE. W tym projekcie pozostawia SDM w jedną przestrzeń adresową i Niemcy, środowiska wykonawczego i program razem w innym. Ten projekt jest typowy dla DE, który jest implementowany przy użyciu tłumacza do uruchamiania przy użyciu skryptu języków.
 
     > [!NOTE]
-    >  Jak DE dołącza do programu zależy od implementacji. Komunikacja między DE i program jest również zależna od implementacji.
+    > Jak DE dołącza do programu zależy od implementacji. Komunikacja między DE i program jest również zależna od implementacji.
 
 ## <a name="implementation"></a>Implementacja
  Programistycznie, gdy Menedżer debugowania sesji (SDM) otrzymuje najpierw [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) wywołuje obiekt, który reprezentuje program do uruchomienia, [Attach](../../extensibility/debugger/reference/idebugprogram2-attach.md) metody, podając mu [ IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) obiektu, który jest późniejsza służy do przekazywania zdarzenia debugowania do SDM. `IDebugProgram2::Attach` Następnie wywołuje metodę [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) metody. Aby uzyskać więcej informacji na temat sposobu odbiera SDM `IDebugProgram2` interfejsu, zobacz [powiadamianie portu](../../extensibility/debugger/notifying-the-port.md).

@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8e5be853d75fd1aa7ed701c428cdb15822d867cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a8213aeba3d9b1b0577e7639725642d574189b1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434130"
 ---
 # <a name="usingnamespace"></a>UsingNameSpace
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "54781744"
 Niektóre symbole mogą być przywoływane przez przestrzeń nazw, a następnie może zostać zidentyfikowane na podstawie `SymTagUsingNameSpace` tagu.  
   
 > [!NOTE]
->  Usingnamespace — tag symbolu pojawia się tylko w kodzie zarządzanym.  
+> Usingnamespace — tag symbolu pojawia się tylko w kodzie zarządzanym.  
   
 ## <a name="properties"></a>Właściwości  
  W poniższej tabeli przedstawiono właściwości, które są prawidłowe dla tego typu symbolu.  

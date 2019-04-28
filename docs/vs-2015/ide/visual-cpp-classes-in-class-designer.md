@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04392545b5b5c352a35b9a3d523f0c6ff5d98b01
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: c1fb81261f52fa5aaf73c30579332779ae5bfa17
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443180"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Klasy Visual C++ w Projektancie klas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "54787079"
 Projektant klas obsługuje klasy języka C++ i umożliwia wizualizowanie klas natywnych języka C++ w taki sam sposób jak kształty klasy Visual Basic i Visual C#, z tą różnicą, że klasy C++ może istnieć wiele relacji dziedziczenia. Można rozwinąć kształt klasy, aby wyświetlić więcej pól i metod w klasie lub Zwiń go do oszczędzania przestrzeni dyskowej.  
   
 > [!NOTE]
->  Projektant klas nie obsługuje Unii (specjalny typ klasy, w której pamięć przydzielona jest niezbędne dla Unii zajmuje największy element członkowski danych ilość).  
+> Projektant klas nie obsługuje Unii (specjalny typ klasy, w której pamięć przydzielona jest niezbędne dla Unii zajmuje największy element członkowski danych ilość).  
   
 ## <a name="simple-inheritance"></a>Proste dziedziczenie  
  Przeciągnij więcej niż jednej klasy na diagramie klasy, gdy klasy mają relację dziedziczenia klasy, Strzałka łączy je. Wskazuje strzałka w kierunku klasy bazowej. Na przykład gdy następujące klasy są wyświetlane na diagramie klasy, Strzałka łączy je, wskazującą z B na A:  
@@ -52,7 +52,7 @@ class Penguin : public Bird, public Swimmer {};
  Kliknij prawym przyciskiem myszy kształt klasy, a następnie klikając polecenie **Pokaż klasy podstawowe** Wyświetla klas bazowych dla wybranej klasy.  
   
 > [!NOTE]
->  **Pokaż klasy pochodne** polecenie nie jest obsługiwane dla kodu C++. Klasy pochodne można wyświetlić, przechodząc do widoku klas, rozwijając węzeł typu, rozszerzając **typów pochodnych** podfolder, a następnie przeciągając tych typów na diagramie klasy.  
+> **Pokaż klasy pochodne** polecenie nie jest obsługiwane dla kodu C++. Klasy pochodne można wyświetlić, przechodząc do widoku klas, rozwijając węzeł typu, rozszerzając **typów pochodnych** podfolder, a następnie przeciągając tych typów na diagramie klasy.  
   
  Aby uzyskać więcej informacji na temat dziedziczenia klas wielu zobacz [dziedziczenie wielokrotne (NOTINBUILD)](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) i [wiele klas podstawowych](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
   

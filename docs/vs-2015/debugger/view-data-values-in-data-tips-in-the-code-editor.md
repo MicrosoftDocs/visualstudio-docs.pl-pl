@@ -21,12 +21,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c6c6407c038c7d6847db073c1f00c103d9483e78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 689d01c7e22cca430693a85e6dedcc7706fda41d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437692"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Podgląd wartości danych w poradach dotyczących danych w edytorze kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ DataTips zapewniają wygodny sposób wyświetlania informacji na temat zmiennych
     Pojawi się DataTip.  
   
    > [!NOTE]
-   >  Porady dotyczące danych są zawsze obliczane w kontekście, w przypadku, gdy wykonanie programu jest zawieszone, a nie w przypadku, gdy kursor znajduje się. Po umieszczeniu wskaźnika myszy nad zmienną w innej funkcji o tej samej nazwie jako zmiennej, która znajduje się w bieżącym kontekście, wartość zmiennej w innych funkcji jest wyświetlany jako wartość zmiennej w bieżącym kontekście.  
+   > Porady dotyczące danych są zawsze obliczane w kontekście, w przypadku, gdy wykonanie programu jest zawieszone, a nie w przypadku, gdy kursor znajduje się. Po umieszczeniu wskaźnika myszy nad zmienną w innej funkcji o tej samej nazwie jako zmiennej, która znajduje się w bieżącym kontekście, wartość zmiennej w innych funkcji jest wyświetlany jako wartość zmiennej w bieżącym kontekście.  
   
 2. DataTip zniknie po usunięciu wskaźnika myszy. Aby przypiąć DataTip pozostaje otwarty, kliknij przycisk **Przypnij do źródła** ikony, lub  
   

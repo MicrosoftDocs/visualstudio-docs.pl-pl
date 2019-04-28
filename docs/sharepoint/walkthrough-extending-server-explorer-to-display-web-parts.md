@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29fcd40a2fc64a12ed7b29845b0a9f0ea3db5589
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ef444d78e5a486f9e384ea02d1eb88461e3fce2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430340"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Przewodnik: Rozszerzanie Eksploratora serwera na potrzeby wyświetlania składników web Part
   W programie Visual Studio, można użyć **połączeń SharePoint** węźle **Eksploratora serwera** do wyświetlania składników w witrynach programu SharePoint. Jednak **Eksploratora serwera** nie jest wyświetlany domyślnie niektóre składniki. W tym przewodniku możesz rozszerzać **Eksploratora serwera** tak, aby wyświetlał galerii składników Web Part na każdy połączony witryny programu SharePoint.
@@ -40,7 +40,7 @@ ms.locfileid: "60040575"
 - Debugowanie i testowanie rozszerzenia.
 
 > [!NOTE]
->  Alternatywne wersja tego przewodnika, która używa modelu obiektów klienta dla programu SharePoint zamiast jego modelu obiektów serwera dla [instruktażu: Wywołania w modelu obiektu klienta SharePoint w rozszerzeniu Eksploratora serwera](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).
+> Alternatywne wersja tego przewodnika, która używa modelu obiektów klienta dla programu SharePoint zamiast jego modelu obiektów serwera dla [instruktażu: Wywołania w modelu obiektu klienta SharePoint w rozszerzeniu Eksploratora serwera](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Potrzebne są następujące składniki na komputerze deweloperskim w celu przeprowadzenia tego instruktażu:
@@ -75,7 +75,7 @@ ms.locfileid: "60040575"
 3. W **nowy projekt** okna dialogowego rozwiń **Visual C#** lub **języka Visual Basic** węzłów, a następnie wybierz **rozszerzalności** węzła.
 
     > [!NOTE]
-    >  **Rozszerzalności** węzeł jest dostępny tylko w przypadku instalowania programu Visual Studio SDK. Aby uzyskać więcej informacji zobacz sekcję wymagania wstępne niniejszego tematu.
+    > **Rozszerzalności** węzeł jest dostępny tylko w przypadku instalowania programu Visual Studio SDK. Aby uzyskać więcej informacji zobacz sekcję wymagania wstępne niniejszego tematu.
 
 4. W górnej części okna dialogowego wybierz **.NET Framework 4.5** na liście wersji programu .NET Framework.
 
@@ -211,7 +211,7 @@ ms.locfileid: "60040575"
 1. W projekcie WebPartNodeExtension Otwórz plik kodu SiteNodeExtension, a następnie wklej następujący kod do niego.
 
     > [!NOTE]
-    >  Po dodaniu tego kodu, projekt będzie miał pewne błędy kompilacji, ale znikną po dodaniu kodu w dalszych krokach.
+    > Po dodaniu tego kodu, projekt będzie miał pewne błędy kompilacji, ale znikną po dodaniu kodu w dalszych krokach.
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs#1)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
@@ -266,7 +266,7 @@ ms.locfileid: "60040575"
 1. Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**.
 
     > [!WARNING]
-    >  W tym momencie projektu WebPartNode może być błąd kompilacji, ponieważ plik manifestu VSIX nie ma wartości dla autora. Ten błąd znikną po dodaniu wartości w kolejnych krokach.
+    > W tym momencie projektu WebPartNode może być błąd kompilacji, ponieważ plik manifestu VSIX nie ma wartości dla autora. Ten błąd znikną po dodaniu wartości w kolejnych krokach.
 
 ## <a name="create-a-vsix-package-to-deploy-the-extension"></a>Utwórz pakiet VSIX, aby wdrożyć rozszerzenie
  Aby wdrożyć rozszerzenie, należy użyć projektu VSIX w rozwiązaniu Aby utworzyć pakiet VSIX. Najpierw należy skonfigurować pakiet VSIX modyfikując plik source.extension.vsixmanifest w projekcie VSIX. Następnie należy utworzyć pakiet VSIX przez utworzenie rozwiązania.
@@ -290,7 +290,7 @@ ms.locfileid: "60040575"
 6. W **typu** wybierz **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Ta wartość odpowiada `MefComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Ta wartość odpowiada `MefComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.
 
@@ -303,7 +303,7 @@ ms.locfileid: "60040575"
 10. W **typu** wprowadź **SharePoint.Commands.v4**.
 
     > [!NOTE]
-    >  Ten element określa niestandardowe rozszerzenie, które mają zostać uwzględnione w rozszerzeniu Visual Studio. Aby uzyskać więcej informacji, zobacz [zawartości elementu (schemat VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Ten element określa niestandardowe rozszerzenie, które mają zostać uwzględnione w rozszerzeniu Visual Studio. Aby uzyskać więcej informacji, zobacz [zawartości elementu (schemat VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
 11. W **źródła** wybierz **projekt w bieżącym rozwiązaniu** elementu listy.
 

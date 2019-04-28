@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2971a13e82e4b31f985be6db2a8a32167a3f74b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 51430c78dcf694a602ce6b8904262647a257ac32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403477"
 ---
 # <a name="math-nodes"></a>Węzły matematyczne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "54796225"
 W projektancie programu do cieniowania algebraicznych, wykonaj węzły matematyczne logiki trygonometryczne i inne operacje matematyczne.  
   
 > [!NOTE]
->  Promocja typu jest szczególnie oczywiste, podczas pracy z węzły matematyczne w projektancie programu do cieniowania. Aby dowiedzieć się, jak promocja typu ma wpływ na parametry wejściowe, zobacz sekcję "Podwyższania poziomu danych wejściowych" w [węzły projektanta cieniowania](../designers/shader-designer-nodes.md).  
+> Promocja typu jest szczególnie oczywiste, podczas pracy z węzły matematyczne w projektancie programu do cieniowania. Aby dowiedzieć się, jak promocja typu ma wpływ na parametry wejściowe, zobacz sekcję "Podwyższania poziomu danych wejściowych" w [węzły projektanta cieniowania](../designers/shader-designer-nodes.md).  
   
 ## <a name="math-node-reference"></a>Odwołanie do węzła matematyczne  
   

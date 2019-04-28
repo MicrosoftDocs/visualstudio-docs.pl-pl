@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5eedfa6104b5462b0fe61682635338cb9337a408
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c205a3c8e88603153ec4bfabaa2545d8ae8c62d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430793"
 ---
 # <a name="step-2-run-your-program"></a>Krok 2. Uruchom program
 Podczas tworzenia nowego rozwiązania, w rzeczywistości skompilowano program, który uruchamia. Większość nie robi jeszcze — po prostu wyświetla puste okno, które pokazuje **Form1** na pasku tytułu. Ale działał, zgodnie z którą chcesz dowiedzieć się.
@@ -52,7 +52,7 @@ Podczas tworzenia nowego rozwiązania, w rzeczywistości skompilowano program, k
     - Wybierz **X** przycisk w prawym górnym rogu **Form1** okna.
 
     > [!NOTE]
-    >  Kiedy uruchamiasz program z wewnątrz IDE, jest wywoływana, debugowania, ponieważ jest to zazwyczaj Aby znaleźć i naprawić usterki (błędy) w programie. Chociaż program ten jest mały i naprawdę nic jeszcze nie, nadal jest to prawdziwy program. Postępuj zgodnie z tą samą procedurą, aby uruchomić i debugować inne programy. Aby dowiedzieć się więcej na temat debugowania, zobacz [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md).
+    > Kiedy uruchamiasz program z wewnątrz IDE, jest wywoływana, debugowania, ponieważ jest to zazwyczaj Aby znaleźć i naprawić usterki (błędy) w programie. Chociaż program ten jest mały i naprawdę nic jeszcze nie, nadal jest to prawdziwy program. Postępuj zgodnie z tą samą procedurą, aby uruchomić i debugować inne programy. Aby dowiedzieć się więcej na temat debugowania, zobacz [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md).
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 

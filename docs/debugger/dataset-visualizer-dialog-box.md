@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e4086c473270befcf2213f003e516128b45c4227
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563549"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Dataset Visualizer — Okno dialogowe
 Wizualizator zestawu danych służy do wyświetlania zawartości obiektu DataSet, DataTable, widoku danych lub DataViewManager. Ten Wizualizator dostęp, klikając ikonę lupy, który pojawia się obok wartości dla jednej z tych obiektów w oknie zmiennych debugera, lub w poradzie dotyczącej danych.

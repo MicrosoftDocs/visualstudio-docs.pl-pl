@@ -16,21 +16,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c693b85eb7441749300181da8108dae353e91ad1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 72f00a5235ac30c65c16da2fd5ef1d900779dbac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436458"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Uaktualnianie i migracja rozwiązań pakietu Office
   Jeśli masz projekt Microsoft Office, który został utworzony we wcześniejszej wersji programu Visual Studio, musisz uaktualnić projekt, aby używać go w bieżącej wersji programu Visual Studio. Aby uaktualnić projekt Microsoft Office, otwórz go w wersji programu Visual Studio, który zawiera narzędzia Microsoft Office developer tools. Aby uzyskać więcej informacji na temat wersji programu Visual Studio, obejmujących Microsoft Office developer tools, zobacz [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
 > [!NOTE]
->  Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.
+> Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.
 
 > [!NOTE]
->  Program Visual Studio nie może uaktualnić InfoPath z projektów szablonu, które zostały utworzone przy użyciu poprzedniej wersji programu Visual Studio. Te typy projektów nie są obsługiwane w bieżącej wersji programu Visual Studio.
+> Program Visual Studio nie może uaktualnić InfoPath z projektów szablonu, które zostały utworzone przy użyciu poprzedniej wersji programu Visual Studio. Te typy projektów nie są obsługiwane w bieżącej wersji programu Visual Studio.
 
 ## <a name="changes-to-upgraded-projects"></a>Zmiany do uaktualnionych projektów
  Kiedy uaktualniasz projekt Microsoft Office, Visual Studio modyfikuje projekt, aby docelowe były następujące elementy:
@@ -56,7 +56,7 @@ ms.locfileid: "60089376"
  Po uaktualnieniu projektu Visual Studio 2013, Visual Studio modyfikuje projekt docelowy: [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] lub [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Wersja programu .NET framework docelowa dla projektu zależy od tego, jakie wersje pakietu Office jest zainstalowany na tym komputerze. Jeśli [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] jest zainstalowany, Visual Studio modyfikuje projekt, który ma być przeznaczony [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. W przeciwnym razie program Visual Studio modyfikuje projekt, który ma być przeznaczony [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)].
 
 > [!NOTE]
->  Może być konieczne wykonanie dodatkowych kroków, aby uruchomić przekierowane rozwiązanie na komputerach deweloperskich i komputerach użytkowników końcowych, a projekt będzie nie się kompilował jeżeli będzie używał pewnych funkcji. Aby uzyskać więcej informacji, zobacz [Migrowanie rozwiązań pakietu Office do wersji programu .NET Framework 4 lub nowszej](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).
+> Może być konieczne wykonanie dodatkowych kroków, aby uruchomić przekierowane rozwiązanie na komputerach deweloperskich i komputerach użytkowników końcowych, a projekt będzie nie się kompilował jeżeli będzie używał pewnych funkcji. Aby uzyskać więcej informacji, zobacz [Migrowanie rozwiązań pakietu Office do wersji programu .NET Framework 4 lub nowszej](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).
 
  Jeśli platformą docelową jest [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub później w projekcie programu pakietu Office, można użyć niektórych funkcji, które nie są dostępne, gdy platformą docelową jest program .NET Framework 3.5. Aby uzyskać więcej informacji, zobacz [projektowania i tworzenia rozwiązań dla pakietu Office](../vsto/designing-and-creating-office-solutions.md).
 
@@ -66,12 +66,12 @@ ms.locfileid: "60089376"
  Projekty pakietu Office w Visual Studio 2013 można wskazać [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] i [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] aplikacji. Visual Studio modyfikuje projekt przeznaczony dla najnowszej wersji pakietu office, który został zainstalowany. Jeśli żadna z tych wersji pakietu Office są zainstalowane, program Visual Studio nie uaktualnia projektu.
 
 > [!NOTE]
->  Jeśli uaktualniasz projekt dodatku narzędzi VSTO do obiektu docelowego [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] lub nowszym, upewnij się, że `ThisAddIn_Startup` program obsługi zdarzeń dodatku narzędzi VSTO dla programów nie zawiera kodu, który uzyskuje dostęp do dokumentu w aplikacji. Aby uzyskać więcej informacji, zobacz [dostęp do dokumentu, podczas uruchamiania aplikacji Office](../vsto/programming-vsto-add-ins.md#AccessingDocuments).
+> Jeśli uaktualniasz projekt dodatku narzędzi VSTO do obiektu docelowego [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] lub nowszym, upewnij się, że `ThisAddIn_Startup` program obsługi zdarzeń dodatku narzędzi VSTO dla programów nie zawiera kodu, który uzyskuje dostęp do dokumentu w aplikacji. Aby uzyskać więcej informacji, zobacz [dostęp do dokumentu, podczas uruchamiania aplikacji Office](../vsto/programming-vsto-add-ins.md#AccessingDocuments).
 
  W przypadku dostosowań poziomu dokumentu [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] Konwertuje dokumenty w projekcie, które mają format binarny, takich jak dokumenty, które mają *xls* lub *doc* rozszerzenia na format Office Open XML. Aby uzyskać więcej informacji dotyczących Open XML, zobacz [wprowadzenie do nowych rozszerzeń nazw plików i Open XML formatuje](https://support.office.com/en-nz/article/Introduction-to-new-file-name-extensions-eca81dcb-5626-4e5b-8362-524d13ae4ec1).
 
 > [!NOTE]
->  Tagi inteligentne są przestarzałe w programie Excel 2010 i Word 2010. W związku z tym jeśli rozwiązanie używa inteligentnych tagów, należy usunąć je przed przeprowadzeniem testu i debugowania go w programie Visual Studio 2013 lub Visual Studio 2015.
+> Tagi inteligentne są przestarzałe w programie Excel 2010 i Word 2010. W związku z tym jeśli rozwiązanie używa inteligentnych tagów, należy usunąć je przed przeprowadzeniem testu i debugowania go w programie Visual Studio 2013 lub Visual Studio 2015.
 
 ## <a name="upgrade-microsoft-office-2003-projects"></a>Uaktualnianie projektów Microsoft Office 2003
  Istnieją pewne dodatkowe zagadnienia dotyczące uaktualniania dostosowań na poziomie dokumentu i dodatków narzędzi VSTO dla programów, przeznaczonych dla programu Microsoft Office 2003.

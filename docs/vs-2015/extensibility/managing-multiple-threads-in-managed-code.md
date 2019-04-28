@@ -8,12 +8,12 @@ ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e1cde9cf66979815a804868f481910a2d0a21efa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4e7198623283fa3ef9c82d6a39a1f7c1db6c760c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433059"
 ---
 # <a name="managing-multiple-threads-in-managed-code"></a>Zarządzanie wieloma wątkami w kodzie zarządzanym
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Jeśli masz zarządzanych rozszerzenia pakietu VSPackage, który wywołuje metod
  Ogólnie rzecz biorąc, możesz przełączyć się z wątku interfejsu użytkownika do innego wątku, lub na odwrót. Gdy metoda zwróci wartość, bieżący wątek jest wątek, w którym była pierwotnie używana.  
   
 > [!IMPORTANT]
->  Poniższe wskazówki przy użyciu interfejsów API w <xref:Microsoft.VisualStudio.Threading> przestrzeni nazw, w szczególności <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> klasy. Interfejsy API w tej przestrzeni nazw są nowością w programie [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Można pobrać wystąpienia <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> z <xref:Microsoft.VisualStudio.Shell.ThreadHelper> właściwość `ThreadHelper.JoinableTaskFactory`.  
+> Poniższe wskazówki przy użyciu interfejsów API w <xref:Microsoft.VisualStudio.Threading> przestrzeni nazw, w szczególności <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> klasy. Interfejsy API w tej przestrzeni nazw są nowością w programie [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Można pobrać wystąpienia <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> z <xref:Microsoft.VisualStudio.Shell.ThreadHelper> właściwość `ThreadHelper.JoinableTaskFactory`.  
   
 ## <a name="switching-from-the-ui-thread-to-a-background-thread"></a>Przełączenie z wątku interfejsu użytkownika na wątku w tle  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e32d96451e2494816ddd5f7a66591f40f847e85
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f12436f9f129c6fb8a0fe3a4b6c853a9e58e650
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438129"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Instrukcje: Tworzenie schematu XML na podstawie dokumentu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Edytor XML służy do tworzenia schematu języka (XSD) definicji schematu XML z 
      Schematy mogą być zapisywane na dysku, dodane do projektu lub odrzucone.  
   
     > [!NOTE]
-    >  **Create Schema** polecenia jest także dostępny z menu kontekstowego edytora XML i w obszarze **XML** menu.  
+    > **Create Schema** polecenia jest także dostępny z menu kontekstowego edytora XML i w obszarze **XML** menu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytor XML](../xml-tools/xml-editor.md)

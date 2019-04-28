@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb6793855fc4df4080a7f94799cfe2372308a5a0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ced39d928b2d0d02c7008d6b44c934ccd053b09b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409992"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Tworzenie systemu podstawowego projektu, część 1
 W programie Visual Studio projekty są kontenerami, używanych przez deweloperów do organizowania plików kodu źródłowego i inne zasoby. Projekty są traktowane jako elementy podrzędne rozwiązań w **Eksploratora rozwiązań**. Projekty umożliwiają organizowanie, tworzenie, debugowanie i wdrażanie kodu źródłowego i utworzyć odwołania do usług sieci Web, baz danych i innych zasobów.
@@ -25,7 +25,7 @@ W programie Visual Studio projekty są kontenerami, używanych przez deweloperó
  Projekty są zdefiniowane w plikach projektu, na przykład *.csproj* plik projektu języka Visual C#. Można utworzyć swój własny typ projektu, który ma własne rozszerzenia nazw plików projektu. Aby uzyskać więcej informacji na temat typów projektów, zobacz [typów projektów](../extensibility/internals/project-types.md).
 
 > [!NOTE]
->  Jeśli zachodzi potrzeba Rozszerzanie programu Visual Studio przy użyciu typu niestandardowego projektu, zdecydowanie zalecamy korzystanie z [systemu projektu programu Visual Studio](https://github.com/Microsoft/VSProjectSystem) (VSPS) który ma kilka zalet w stosunku do tworzenia projektu systemu od zera:
+> Jeśli zachodzi potrzeba Rozszerzanie programu Visual Studio przy użyciu typu niestandardowego projektu, zdecydowanie zalecamy korzystanie z [systemu projektu programu Visual Studio](https://github.com/Microsoft/VSProjectSystem) (VSPS) który ma kilka zalet w stosunku do tworzenia projektu systemu od zera:
 >
 > - Łatwiejsze dołączanie.  Nawet systemu podstawowego projektu wymaga dziesiątki tysięcy wierszy kodu.  Wykorzystując VSPS zmniejsza koszty dołączania do kilku kliknięć, zanim można przystąpić do go dostosować do swoich potrzeb.
 > - Łatwiejsze konserwacji.  Dzięki wykorzystaniu VSPS, wystarczy do obsługi własnych scenariuszy.  My zajmujemy utrzymania wszystkich infrastruktury systemu projektu.
@@ -35,7 +35,7 @@ W programie Visual Studio projekty są kontenerami, używanych przez deweloperó
  W tym instruktażu dowiesz się, jak utworzyć typ projektu, który ma rozszerzenie nazwy pliku projektu *.myproj*. W tym przewodniku pożycza z istniejącego systemu projektów języka Visual C#.
 
 > [!NOTE]
->  Aby uzyskać więcej przykładów projektów rozszerzeń, zobacz [przykłady VSSDK](https://aka.ms/vs2015sdksamples).
+> Aby uzyskać więcej przykładów projektów rozszerzeń, zobacz [przykłady VSSDK](https://aka.ms/vs2015sdksamples).
 
  Ten przewodnik omawia sposób wykonywania tych zadań:
 
@@ -101,7 +101,7 @@ W programie Visual Studio projekty są kontenerami, używanych przez deweloperó
    ```
 
    > [!IMPORTANT]
-   >  Nie jest ostatnim formie *Program.cs* kod; zastąpienia parametrów, zostaną omówione w dalszej części. Może zostać wyświetlony błędy kompilacji, ale tak długo, jak plik **BuildAction** jest **zawartości**, powinno być możliwe skompilować i uruchomić projekt w zwykły sposób.
+   > Nie jest ostatnim formie *Program.cs* kod; zastąpienia parametrów, zostaną omówione w dalszej części. Może zostać wyświetlony błędy kompilacji, ale tak długo, jak plik **BuildAction** jest **zawartości**, powinno być możliwe skompilować i uruchomić projekt w zwykły sposób.
 
 7. Zapisz plik.
 
@@ -110,7 +110,7 @@ W programie Visual Studio projekty są kontenerami, używanych przez deweloperó
 9. W *Projects\SimpleProject* folderu Dodaj plik XML o nazwie *SimpleProject.myproj*.
 
    > [!NOTE]
-   >  Rozszerzenie nazwy pliku dla wszystkich projektów tego typu jest *.myproj*. Jeśli chcesz ją zmienić, należy zmienić go wszędzie tam, gdzie jest wymieniony w instruktażu.
+   > Rozszerzenie nazwy pliku dla wszystkich projektów tego typu jest *.myproj*. Jeśli chcesz ją zmienić, należy zmienić go wszędzie tam, gdzie jest wymieniony w instruktażu.
 
 10. Zastąp istniejącą zawartość z następującymi wierszami.
 
@@ -255,7 +255,7 @@ Templates
         ```
 
         > [!IMPORTANT]
-        >  Nie zapomnij ukośnik odwrotny na końcu ścieżki.
+        > Nie zapomnij ukośnik odwrotny na końcu ścieżki.
 
     3. Ponownie Załaduj projekt.
 

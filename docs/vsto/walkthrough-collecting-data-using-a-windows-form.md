@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efb36d9ee21d5769c7ddd35461e09934b87d5c33
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 893418ca5eb82e9466ea13a12088b38fd496e695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438590"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Przewodnik: Zbieranie danych przy użyciu formularza Windows
   W tym instruktażu pokazano, jak otworzyć formularz Windows z dostosowywania poziomie dokumentu dla programu Microsoft Office Excel, zbiera informacje o użytkowniku i zapisanie tych informacji w komórce arkusza.
@@ -37,7 +37,7 @@ ms.locfileid: "60116137"
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] lub [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 > [!NOTE]
->  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu
  Pierwszym krokiem jest utworzenie projektu skoroszytu programu Excel.
@@ -91,7 +91,7 @@ ms.locfileid: "60116137"
 2. W <xref:Microsoft.Office.Tools.Excel.Workbook.Open> program obsługi zdarzeń `ThisWorkbook`, Dodaj następujący kod, aby zadeklarować zmienną formularza `GetInputString` i wyświetlić formularz.
 
    > [!NOTE]
-   >  W języku C#, należy dodać program obsługi zdarzeń, jak pokazano na <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> poniższe zdarzenie. Aby dowiedzieć się, jak tworzenie procedur obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+   > W języku C#, należy dodać program obsługi zdarzeń, jak pokazano na <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> poniższe zdarzenie. Aby dowiedzieć się, jak tworzenie procedur obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
     [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]

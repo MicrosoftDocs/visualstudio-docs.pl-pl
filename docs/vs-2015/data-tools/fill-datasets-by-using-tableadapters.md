@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4c036cac8fa60e3f0353815cb3790f0f74ddc77
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0d4fca66296f4437d3c9af55142d9fdbc56f21b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431944"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Wypełnij zestawów danych za pomocą adapterów TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "59656781"
 Składnik TableAdapter wypełnia zestawu danych danymi z bazy danych na podstawie jednego lub więcej zapytań lub procedur składowanych, które określisz. TableAdapters można również wykonać dodaje, aktualizuje i usuwa w bazie danych, aby zachować zmiany wprowadzone do zestawu danych. Można także wystawić polecenia globalne, które nie są związane z żadną z tabel.  
   
 > [!NOTE]
->  TableAdapters są generowane przez projektantów programu Visual Studio. Jeśli programowe tworzenie zestawów danych użyj DataAdapter jest klasą .NET Framework.  
+> TableAdapters są generowane przez projektantów programu Visual Studio. Jeśli programowe tworzenie zestawów danych użyj DataAdapter jest klasą .NET Framework.  
   
  Aby uzyskać szczegółowe informacje o operacjach TableAdapter możesz pominąć bezpośrednio do jednego z tych tematów:  
   
@@ -98,7 +98,7 @@ Składnik TableAdapter wypełnia zestawu danych danymi z bazy danych na podstawi
  Używając TableAdapter skutecznie wykonuje te same operacje za pomocą poleceń, które zazwyczaj będzie wykonywać. Na przykład gdy wywołujesz karty `Fill` metody, karta uruchamia polecenie danych jego `SelectCommand` właściwości i używa czytnik danych (na przykład <xref:System.Data.SqlClient.SqlDataReader>) można załadować zestawu wyników do tabeli danych. Podobnie, gdy zostanie wywołana karty `Update` metody uruchamia odpowiednie polecenie (w `UpdateCommand`, `InsertCommand`, i `DeleteCommand` właściwości) dla każdej zmianie rekordu w tabeli danych.  
   
 > [!NOTE]
->  Jeśli ma wystarczającej ilości informacji w głównym zapytaniu `InsertCommand`, `UpdateCommand`, i `DeleteCommand` poleceń są domyślnie tworzone po wygenerowaniu TableAdapter. Jeśli zapytanietableadapter głównej jest więcej niż jednej tabeli instrukcji SELECT, jest to możliwe, Projektant nie będzie mógł wygenerować `InsertCommand`, `UpdateCommand`, i `DeleteCommand`. Jeśli te polecenia nie są generowane, być może otrzymasz komunikat o błędzie podczas uruchamiania `TableAdapter.Update` metody.  
+> Jeśli ma wystarczającej ilości informacji w głównym zapytaniu `InsertCommand`, `UpdateCommand`, i `DeleteCommand` poleceń są domyślnie tworzone po wygenerowaniu TableAdapter. Jeśli zapytanietableadapter głównej jest więcej niż jednej tabeli instrukcji SELECT, jest to możliwe, Projektant nie będzie mógł wygenerować `InsertCommand`, `UpdateCommand`, i `DeleteCommand`. Jeśli te polecenia nie są generowane, być może otrzymasz komunikat o błędzie podczas uruchamiania `TableAdapter.Update` metody.  
   
 ## <a name="tableadapter-generatedbdirectmethods"></a>TableAdapter GenerateDbDirectMethods  
  Oprócz `InsertCommand`, `UpdateCommand`, i `DeleteCommand`, TableAdapters są tworzone za pomocą metod, które można uruchamiać bezpośrednio w bazie danych. Te metody (`TableAdapter.Insert`, `TableAdapter.Update`, i `TableAdapter.Delete`) może być wywoływany bezpośrednio do manipulowania danymi w bazie danych. Oznacza to, że może wywoływać te poszczególne metody w kodzie zamiast wywoływać metodę `TableAdapter.Update` do obsługi operacji wstawiania, aktualizacji i usuwa oczekujące dla tabeli powiązane dane.  

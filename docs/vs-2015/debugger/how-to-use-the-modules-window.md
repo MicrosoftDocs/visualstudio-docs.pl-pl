@@ -27,18 +27,18 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f332ef1a52ae49e51025614745fc1b5c4a44e07
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7b19237b94ed3d53c49f248e22b86d3af8180625
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445055"
 ---
 # <a name="how-to-use-the-modules-window"></a>Instrukcje: Korzystanie z okna modułów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 UWAGA]
->  Ta funkcja nie jest dostępna dla bazy danych SQL lub debugowania skryptu.  
+> Ta funkcja nie jest dostępna dla bazy danych SQL lub debugowania skryptu.  
   
  **Modułów** okno zawiera listę bibliotek DLL i EXE, które są używane przez program i ukazuje istotne informacje dla każdego.  
   

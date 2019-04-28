@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c629d82d208f45433564c1b36bb5aa889e402915
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d08a7eb20c01568b3501f16348eb19afdcaefa2c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444382"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Konfiguracje standardowego i niestandardowego zestawu narzędzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Zestaw narzędzi MSBuild zawiera odwołania do zadania, celów i narzędzi, któ
  `VisualStudioVersion` Właściwość kompilacji wskazuje, czy podzestawu narzędzi stanie się aktywny. Na przykład `VisualStudioVersion` wartość "12.0" Określa podzestawu narzędzi MSBuild 12.0. Aby uzyskać więcej informacji, zobacz sekcję zestawy narzędzi Sub [zestaw narzędzi (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).  
 
 > [!NOTE]
->  Zaleca się unikać zmiany tych ustawień. Można jednak dodać własne ustawienia i zdefiniuj definicje niestandardowego zestawu narzędzi całego komputera, zgodnie z opisem w następnej sekcji.  
+> Zaleca się unikać zmiany tych ustawień. Można jednak dodać własne ustawienia i zdefiniuj definicje niestandardowego zestawu narzędzi całego komputera, zgodnie z opisem w następnej sekcji.  
 
 ## <a name="custom-toolset-definitions"></a>Definicje niestandardowego zestawu narzędzi  
  Podczas standardowych narzędzi nie spełnia wymagań dotyczących kompilacji, można utworzyć niestandardowego zestawu narzędzi. Na przykład masz scenariusza laboratorium kompilacji, w którym konieczne jest posiadanie oddzielnego systemu do kompilowania [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] projektów. Za pomocą niestandardowego zestawu narzędzi, można przypisać wartości niestandardowych w celu `ToolsVersion` atrybutu podczas tworzenia projektów lub uruchamiania MSBuild.exe. Dzięki temu można również użyć `$(MSBuildToolsPath)` właściwości, aby zaimportować pliki .targets z tego katalogu, jak również Definiowanie własnych właściwości niestandardowego zestawu narzędzi, których można użyć dla każdego projektu, który używa tego zestawu narzędzi.  
@@ -86,12 +86,12 @@ Zestaw narzędzi MSBuild zawiera odwołania do zadania, celów i narzędzi, któ
 ```  
 
 > [!NOTE]
->  Można odczytać poprawnie, `<configSections>` musi być pierwszym podsekcję w `<configuration>` sekcji.  
+> Można odczytać poprawnie, `<configSections>` musi być pierwszym podsekcję w `<configuration>` sekcji.  
 
  `ToolsetConfigurationSection` jest sekcji niestandardowej konfiguracji, który może służyć przez dowolnego hosta MSBuild konfiguracji niestandardowej. Jeśli używasz niestandardowego zestawu narzędzi, host nie ma nic robić, aby zainicjować aparatu kompilacji, z wyjątkiem zapewniają konfigurację we wpisach w plikach. Definiując wpisy w rejestrze, można określić zestawy narzędzi całego komputera, które są stosowane do MSBuild.exe, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]i na wszystkich hostach MSBuild.  
 
 > [!NOTE]
->  Jeśli plik konfiguracji definiuje ustawienia `ToolsVersion` została już zdefiniowana w rejestrze, dwie definicje nie są scalane. Definicja w pliku konfiguracyjnym ma pierwszeństwo i ustawienia rejestru dla tego `ToolsVersion` są ignorowane.  
+> Jeśli plik konfiguracji definiuje ustawienia `ToolsVersion` została już zdefiniowana w rejestrze, dwie definicje nie są scalane. Definicja w pliku konfiguracyjnym ma pierwszeństwo i ustawienia rejestru dla tego `ToolsVersion` są ignorowane.  
 
  Następujące właściwości są specyficzne dla wartości `ToolsVersion` oznacza to używane w projektach:  
 

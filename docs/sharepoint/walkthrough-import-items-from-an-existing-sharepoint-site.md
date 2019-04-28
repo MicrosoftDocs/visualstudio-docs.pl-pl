@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89559798e342c8993e523517e5c85fc38e1c0cf8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a2727f0f3a5f2b46c5110a33e63b102f9d26bdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446611"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Przewodnik: Importowanie elementów z istniejącej witryny programu SharePoint
   W tym instruktażu pokazano, jak importować elementy z istniejącej witryny programu SharePoint do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint.
@@ -75,7 +75,7 @@ ms.locfileid: "60110878"
  Następnie uzyskaj plik Instalatora (wsp) programu SharePoint, który zawiera elementy programu SharePoint i elementy, które chcesz zaimportować do usługi [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint. Jeśli nie masz już plik .wsp, następnie można należy utworzyć z istniejącej witryny programu SharePoint. W tym przykładzie zostaną wyeksportowane domyślnej witryny programu SharePoint w pliku wsp.
 
 > [!IMPORTANT]
->  Jeśli zostanie wyświetlony błąd środowiska uruchomieniowego, wykonując następującą procedurę, musisz wykonać procedurę na komputerze, który ma dostęp do witryny programu SharePoint.
+> Jeśli zostanie wyświetlony błąd środowiska uruchomieniowego, wykonując następującą procedurę, musisz wykonać procedurę na komputerze, który ma dostęp do witryny programu SharePoint.
 
 ### <a name="to-export-an-existing-sharepoint-site"></a>Aby wyeksportować istniejącej witryny programu SharePoint
 
@@ -117,7 +117,7 @@ ms.locfileid: "60110878"
 6. W **Określanie nowego źródła projektu** strony, przejdź do lokalizacji w systemie, w której zapisano *.wsp* wcześniej pliku, a następnie wybierz **dalej** przycisku.
 
    > [!NOTE]
-   >  Jeśli wybierzesz **Zakończ** przycisku na tej stronie, a wszystkie dostępne elementy w *.wsp* można zaimportować pliku.
+   > Jeśli wybierzesz **Zakończ** przycisku na tej stronie, a wszystkie dostępne elementy w *.wsp* można zaimportować pliku.
 
 7. W **Wybieranie elementów do zaimportowania** polu, usuń zaznaczenie wszystkich pól wyboru na liście, z wyjątkiem **kolumny testu**, a następnie wybierz **Zakończ** przycisku.
 

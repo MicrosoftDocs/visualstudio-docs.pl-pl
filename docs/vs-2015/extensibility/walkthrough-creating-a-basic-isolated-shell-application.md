@@ -12,12 +12,12 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8eec2db11d97cec957e16f29838564a729370eeb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e92fa99a266dc1d1b537387f3dae848a6ecb285d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442283"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Przewodnik: Tworzenie podstawowej aplikacji Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,25 +30,25 @@ W tym instruktażu pokazano, jak utworzyć rozwiązanie izolowanej powłoki, dos
 ## <a name="creating-an-isolated-shell-solution"></a>Tworzenie rozwiązań Isolated Shell  
  W tej sekcji pokazano, jak używać programu Visual Studio Shell izolowane szablonu projektu do tworzenia rozwiązania izolowanej powłoki. Rozwiązanie zawiera następujące projekty:  
   
--   *SolutionName*. Projekt AboutBoxPackage umożliwia dostosowanie wyglądu pomocy/pole informacji.  
+- *SolutionName*. Projekt AboutBoxPackage umożliwia dostosowanie wyglądu pomocy/pole informacji.  
   
--   Projekt ShellExtensionsVSIX, który zawiera plik source.extension.vsixmanifest, który definiuje różne składniki aplikacji isolated shell.  
+- Projekt ShellExtensionsVSIX, który zawiera plik source.extension.vsixmanifest, który definiuje różne składniki aplikacji isolated shell.  
   
--   *SolutionName* projektu, który tworzy plik wykonywalny, który wywołuje aplikacji isolated shell. Ten projekt zawiera folder dostosowania powłoki, który umożliwia dostsowywanie wygląd i zachowanie aplikacji isolated shell.  
+- *SolutionName* projektu, który tworzy plik wykonywalny, który wywołuje aplikacji isolated shell. Ten projekt zawiera folder dostosowania powłoki, który umożliwia dostsowywanie wygląd i zachowanie aplikacji isolated shell.  
   
--   *SolutionName* projekt interfejsu użytkownika, który tworzy definiujący aktywne menu poleceń i możliwych do zlokalizowania ciągi zestawu satelickiego.  
+- *SolutionName* projekt interfejsu użytkownika, który tworzy definiujący aktywne menu poleceń i możliwych do zlokalizowania ciągi zestawu satelickiego.  
   
 #### <a name="to-create-a-basic-isolated-shell-solution"></a>Aby utworzyć rozwiązanie podstawowe izolowane powłoki  
   
-1.  Otwórz program Visual Studio i Utwórz nowy projekt.  
+1. Otwórz program Visual Studio i Utwórz nowy projekt.  
   
-2.  W **nowy projekt** okna, rozwiń węzeł **inne typy projektów** i następnie **rozszerzalności**. Wybierz **Visual Studio Shell izolowane** szablonu projektu.  
+2. W **nowy projekt** okna, rozwiń węzeł **inne typy projektów** i następnie **rozszerzalności**. Wybierz **Visual Studio Shell izolowane** szablonu projektu.  
   
-3.  Nadaj projektowi nazwę `MyVSShellStub` i określ lokalizację. Upewnij się, że **Utwórz katalog rozwiązania** jest zaznaczone, a następnie kliknij przycisk **OK**.  
+3. Nadaj projektowi nazwę `MyVSShellStub` i określ lokalizację. Upewnij się, że **Utwórz katalog rozwiązania** jest zaznaczone, a następnie kliknij przycisk **OK**.  
   
      Nowe rozwiązanie jest wyświetlana w **Eksploratora rozwiązań**.  
   
-4.  Skompiluj rozwiązanie, a następnie rozpocząć debugowanie aplikacji isolated shell.  
+4. Skompiluj rozwiązanie, a następnie rozpocząć debugowanie aplikacji isolated shell.  
   
      Program Visual Studio, pojawi się w izolowanej powłoki. Na pasku tytułu odczytuje **MyVSShellStub**. Ikonę na pasku tytułu jest generowany na podstawie \MyVSShellStub\Resource Files\ApplicationIcon.ico.  
   
@@ -57,13 +57,13 @@ W tym instruktażu pokazano, jak utworzyć rozwiązanie izolowanej powłoki, dos
   
 #### <a name="to-customize-the-application-name-and-icon"></a>Aby dostosować nazwy aplikacji i ikony  
   
-1.  W projekcie MyVSShellStub Otwórz \Shell Customization\MyVSShellStub.Application.pkgdef.  
+1. W projekcie MyVSShellStub Otwórz \Shell Customization\MyVSShellStub.Application.pkgdef.  
   
-2.  Zmiana `AppName` wartość elementu do **"AppName" = "Fabrikam utworów muzycznych Editor"**  
+2. Zmiana `AppName` wartość elementu do **"AppName" = "Fabrikam utworów muzycznych Editor"**  
   
-3.  Aby zmienić ikony aplikacji, skopiuj inną ikonę w katalogu \MyVSShellStub\MyVSShellStub\MyVSShellStub\. Zmień nazwę istniejącego pliku ApplicationIcon.ico ApplicationIcon1.ico. Zmień nazwę nowego pliku ApplicationIcon.ico.  
+3. Aby zmienić ikony aplikacji, skopiuj inną ikonę w katalogu \MyVSShellStub\MyVSShellStub\MyVSShellStub\. Zmień nazwę istniejącego pliku ApplicationIcon.ico ApplicationIcon1.ico. Zmień nazwę nowego pliku ApplicationIcon.ico.  
   
-4.  Skompiluj rozwiązanie, a następnie rozpocząć debugowanie. Środowisko IDE programu isolated shell pojawia się. Na pasku tytułu ma Twoja nowa ikona obok słowa **edytora utworów muzycznych Fabrikam**.  
+4. Skompiluj rozwiązanie, a następnie rozpocząć debugowanie. Środowisko IDE programu isolated shell pojawia się. Na pasku tytułu ma Twoja nowa ikona obok słowa **edytora utworów muzycznych Fabrikam**.  
   
 ## <a name="customizing-the-default-web-browser-home-page"></a>Dostosowanie strony domowej przeglądarki sieci Web domyślne  
  W tej sekcji pokazano, jak zmienić domyślną stronę główną programu **przeglądarki sieci Web** okna, zmieniając plik definicji pakietu.  
@@ -87,46 +87,46 @@ W tym instruktażu pokazano, jak utworzyć rozwiązanie izolowanej powłoki, dos
   
 #### <a name="to-remove-the-print-command"></a>Aby usunąć polecenia drukowania  
   
-1.  Upewnij się, że **drukowania** polecenia pojawi się w **pliku** menu w aplikacji isolated shell.  
+1. Upewnij się, że **drukowania** polecenia pojawi się w **pliku** menu w aplikacji isolated shell.  
   
-2.  W projekcie MyVSShellStubUI Otwórz \Resource Files\MyVSShellStubUI.vsct do edycji.  
+2. W projekcie MyVSShellStubUI Otwórz \Resource Files\MyVSShellStubUI.vsct do edycji.  
   
-3.  Usuń znaczniki komentarza tego wiersza:  
+3. Usuń znaczniki komentarza tego wiersza:  
   
     ```  
     <!-- <Define name="No_PrintChildrenCommand"/> -->  
     ```  
   
-4.  Spowoduje to usunięcie polecenia drukowania.  
+4. Spowoduje to usunięcie polecenia drukowania.  
   
-5.  Rozpocznij debugowanie aplikacji isolated shell. Upewnij się, że **pliku / drukowanie** polecenia został usunięty.  
+5. Rozpocznij debugowanie aplikacji isolated shell. Upewnij się, że **pliku / drukowanie** polecenia został usunięty.  
   
 ## <a name="removing-features-from-the-isolated-shell"></a>Usuwanie funkcji z programu Isolated Shell  
  Możesz usunąć niektóre pakiety, które są ładowane z programem Visual Studio, edytując plik pkgundef, jeśli nie chcesz tych funkcji w aplikacji niestandardowej izolowane powłoki. Należy określić pakiet w jeden z podkluczy klucza rejestru \Packages $ $RootKey.  
   
 > [!NOTE]
->  Aby znaleźć funkcje identyfikatorów GUID programu Visual Studio, zobacz [identyfikatorów GUID programu Visual Studio funkcje pakietu](../extensibility/package-guids-of-visual-studio-features.md).  
+> Aby znaleźć funkcje identyfikatorów GUID programu Visual Studio, zobacz [identyfikatorów GUID programu Visual Studio funkcje pakietu](../extensibility/package-guids-of-visual-studio-features.md).  
   
  Poniższa procedura pokazuje, jak można usunąć pliku XML edytora z programu isolated shell.  
   
 #### <a name="to-remove-the-xml-editor"></a>Aby usunąć edytora XML  
   
-1.  Otwórz plik MyVSShellStub.pkgundef w folderze projektu MyVSShellStub dostosowania powłoki.  
+1. Otwórz plik MyVSShellStub.pkgundef w folderze projektu MyVSShellStub dostosowania powłoki.  
   
-2.  Usuń komentarz następujący wiersz:  
+2. Usuń komentarz następujący wiersz:  
   
      [$RootKey$ \Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
-3.  Ponownie skompiluj rozwiązanie, a następnie rozpocząć debugowanie programu isolated shell. Otwórz plik XML, na przykład \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct. Sprawdź, czy słowa kluczowe XML w pliku nie jest pokolorowany i że wpisanie "<" w wierszu nie uaktywnia etykietki narzędzi XML.  
+3. Ponownie skompiluj rozwiązanie, a następnie rozpocząć debugowanie programu isolated shell. Otwórz plik XML, na przykład \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct. Sprawdź, czy słowa kluczowe XML w pliku nie jest pokolorowany i że wpisanie "<" w wierszu nie uaktywnia etykietki narzędzi XML.  
   
 ## <a name="customizing-the-helpabout-box"></a>Dostosowywanie Pomoc/informacje pole  
  Można dostosować pomoc/o polu, którym zostanie utworzony jako część szablonu projektu shell w trybie izolowanym.  
   
 #### <a name="to-customize-the-company-name"></a>Aby dostosować nazwę firmy  
   
-1.  Nazwa firmy, informacje o prawach autorskich, wersja produktu i opis produktu znajdują się w projekcie MyVSShellStub.AboutBoxPackage w pliku \Properties\AssemblyInfo.cs. Otwórz ten plik.  
+1. Nazwa firmy, informacje o prawach autorskich, wersja produktu i opis produktu znajdują się w projekcie MyVSShellStub.AboutBoxPackage w pliku \Properties\AssemblyInfo.cs. Otwórz ten plik.  
   
-2.  Zmiany `AssemblyCompany` wartość, która **Fabrikam**, `AssemblyProduct` i `AssemblyTitle` wartości **edytora utworów muzycznych Fabrikam**i `AssemblyCopyright` wartość, która **Copyright © Firma Fabrikam 2015**:  
+2. Zmiany `AssemblyCompany` wartość, która **Fabrikam**, `AssemblyProduct` i `AssemblyTitle` wartości **edytora utworów muzycznych Fabrikam**i `AssemblyCopyright` wartość, która **Copyright © Firma Fabrikam 2015**:  
   
     ```  
     [assembly: AssemblyTitle("Fabrikam Music Editor")]  
@@ -139,15 +139,15 @@ W tym instruktażu pokazano, jak utworzyć rozwiązanie izolowanej powłoki, dos
     [assembly: AssemblyCopyright("Copyright © Fabrikam 2015”)]  
     ```  
   
-3.  Aby dodać opis produktu, należy zmienić `AssemblyDescription` wartość **opis edytora muzyka firmy Fabrikam.**:  
+3. Aby dodać opis produktu, należy zmienić `AssemblyDescription` wartość **opis edytora muzyka firmy Fabrikam.**:  
   
     ```  
     [assembly: AssemblyDescription("The description of Fabrikam Music editor.”)]  
     ```  
   
-4.  Rozpocznij debugowanie i Otwórz w aplikacji isolated shell **Pomoc / informacje** pole. Zmieniono parametry powinny być widoczne. Tytuł Pomoc/informacje pola jest taka sama jak `AssemblyTitle` wartość AssemblyInfo.cs.  
+4. Rozpocznij debugowanie i Otwórz w aplikacji isolated shell **Pomoc / informacje** pole. Zmieniono parametry powinny być widoczne. Tytuł Pomoc/informacje pola jest taka sama jak `AssemblyTitle` wartość AssemblyInfo.cs.  
   
-5.  Właściwości **Pomoc/informacje** pola znajdują się w pliku MyVSShellStub.AboutBoxPackage\AboutBox.xaml. Aby zmienić szerokość pomocy/pole informacji, przejdź do `AboutDialogStyle` blokowania i ustaw `Width` właściwości do 200:  
+5. Właściwości **Pomoc/informacje** pola znajdują się w pliku MyVSShellStub.AboutBoxPackage\AboutBox.xaml. Aby zmienić szerokość pomocy/pole informacji, przejdź do `AboutDialogStyle` blokowania i ustaw `Width` właściwości do 200:  
   
     ```  
     <Style x:Key="AboutDialogStyle" TargetType="Window">  
@@ -160,7 +160,7 @@ W tym instruktażu pokazano, jak utworzyć rozwiązanie izolowanej powłoki, dos
     </Style>  
     ```  
   
-6.  Ponownie skompiluj rozwiązanie, a następnie rozpocząć debugowanie programu isolated shell. Pomoc/pole informacji powinny być mniej więcej w kształcie kwadratu.  
+6. Ponownie skompiluj rozwiązanie, a następnie rozpocząć debugowanie programu isolated shell. Pomoc/pole informacji powinny być mniej więcej w kształcie kwadratu.  
   
 ## <a name="before-you-deploy-the-isolated-shell-application"></a>Przed wdrożeniem aplikacji Isolated Shell  
  Usługi aplikacji isolated shell można zainstalować na dowolnym komputerze, który zawiera pakiet redystrybucyjny programu Visual Studio Shell (Isolated). Aby uzyskać więcej informacji na temat pakietu redystrybucyjnego, zobacz [pobieranie Visual Studio Extensibility](http://go.microsoft.com/fwlink/?LinkID=119298) witryny sieci Web.  
@@ -185,50 +185,50 @@ W tym instruktażu pokazano, jak utworzyć rozwiązanie izolowanej powłoki, dos
     Jeśli nie zainstalowano jeszcze programu InstallShield Limited Edition, zostanie wyświetlona strona pobierania programu InstallShield. Postępuj zgodnie z instrukcjami, aby pobrać i zainstalować produkt, wybierając wersję InstallShield, który jest zgodny z wersją programu Visual Studio. Należy określić, czy można zarejestrować instalacji programu InstallShield lub użyć go w wersji ewaluacyjnej. Po zakończeniu instalacji należy ponownie uruchomić program Visual Studio.  
   
    > [!IMPORTANT]
-   >  Przed utworzeniem projektu InstallShield, należy uruchomić program Visual Studio jako administrator. Jeśli nie zrobisz, zostanie wyświetlony błąd, podczas kompilowania projektu.  
+   > Przed utworzeniem projektu InstallShield, należy uruchomić program Visual Studio jako administrator. Jeśli nie zrobisz, zostanie wyświetlony błąd, podczas kompilowania projektu.  
   
    Następne kroki pokazują, jak skonfigurować projekt Instalatora.  
   
 > [!IMPORTANT]
->  Upewnij się, czy został wcześniej utworzony konfiguracji wydania projektu izolowanej powłoki co najmniej raz przed rozpoczęciem konfigurowania projektu Instalatora.  
+> Upewnij się, czy został wcześniej utworzony konfiguracji wydania projektu izolowanej powłoki co najmniej raz przed rozpoczęciem konfigurowania projektu Instalatora.  
   
 #### <a name="to-configure-the-setup-project"></a>Aby skonfigurować Projekt instalacji  
   
-1.  W **Eksploratora rozwiązań**w obszarze **MySetup** projektu, wybierz **Asystent projektu**. W dolnym wierszu **Asystent projektu** oknie Wybierz **informacje o aplikacji**. Wprowadź **Fabrikam** jako nazwę swojej firmy i **edytora utworów muzycznych Fabrikam** jako nazwę swojej aplikacji. Wybierz do przodu strzałkę w prawym dolnym rogu **Asystent projektu**.  
+1. W **Eksploratora rozwiązań**w obszarze **MySetup** projektu, wybierz **Asystent projektu**. W dolnym wierszu **Asystent projektu** oknie Wybierz **informacje o aplikacji**. Wprowadź **Fabrikam** jako nazwę swojej firmy i **edytora utworów muzycznych Fabrikam** jako nazwę swojej aplikacji. Wybierz do przodu strzałkę w prawym dolnym rogu **Asystent projektu**.  
   
-2.  Wybierz **tak** w obszarze **aplikacji wymaga oprogramowania do zainstalowania na maszynie?** , a następnie wybierz **programu Microsoft .NET Framework 4.5 pełny pakiet**.  
+2. Wybierz **tak** w obszarze **aplikacji wymaga oprogramowania do zainstalowania na maszynie?** , a następnie wybierz **programu Microsoft .NET Framework 4.5 pełny pakiet**.  
   
-3.  Wybierz **pliki aplikacji** znajdujący się w dolnej części okna i upewnij się, że **edytora utworów muzycznych Fabrikam** jest wybrany folder.  
+3. Wybierz **pliki aplikacji** znajdujący się w dolnej części okna i upewnij się, że **edytora utworów muzycznych Fabrikam** jest wybrany folder.  
   
-4.  Wybierz **Dodaj pliki** przycisku. W **Dodaj pliki** okna dialogowego Dodaj następujące pliki z **MyVSShellStub\Release** folderu:  
+4. Wybierz **Dodaj pliki** przycisku. W **Dodaj pliki** okna dialogowego Dodaj następujące pliki z **MyVSShellStub\Release** folderu:  
   
-    1.  MyVSShellStub.exe.config  
+    1. MyVSShellStub.exe.config  
   
-    2.  DebuggerProxy.dll  
+    2. DebuggerProxy.dll  
   
-    3.  DebuggerProxy.dll.manifest  
+    3. DebuggerProxy.dll.manifest  
   
-    4.  MyVSShellStub.pkgdef  
+    4. MyVSShellStub.pkgdef  
   
-    5.  MyVSShellStub.pkgundef  
+    5. MyVSShellStub.pkgundef  
   
-    6.  MyVSShellStub.winprf  
+    6. MyVSShellStub.winprf  
   
-    7.  Splash.bmp  
+    7. Splash.bmp  
   
-5.  Kliknij przycisk **Dodaj dane wyjściowe projektu** przycisku i Dodaj **MyVSShellStub/podstawowe wyjście**. Kliknij przycisk **OK**.  
+5. Kliknij przycisk **Dodaj dane wyjściowe projektu** przycisku i Dodaj **MyVSShellStub/podstawowe wyjście**. Kliknij przycisk **OK**.  
   
-6.  W okienku po lewej stronie w obszarze **komputera docelowego**, kliknij prawym przyciskiem myszy **Fabrikam utworów muzycznych edytora [INSTALLDIR]** węzeł i Dodaj **nowy Folder** o nazwie **rozszerzenia** .  
+6. W okienku po lewej stronie w obszarze **komputera docelowego**, kliknij prawym przyciskiem myszy **Fabrikam utworów muzycznych edytora [INSTALLDIR]** węzeł i Dodaj **nowy Folder** o nazwie **rozszerzenia** .  
   
-7.  Kliknij prawym przyciskiem myszy **rozszerzenia** węzła w okienku po lewej stronie i Dodaj nowy folder o nazwie **aplikacji**.  
+7. Kliknij prawym przyciskiem myszy **rozszerzenia** węzła w okienku po lewej stronie i Dodaj nowy folder o nazwie **aplikacji**.  
   
-8.  Wybierz **aplikacji** folder i kliknij przycisk **Dodaj dane wyjściowe projektu** przycisk, a następnie wybierz główny wynik projektu MyVSShellStub.AboutBoxPackage.  
+8. Wybierz **aplikacji** folder i kliknij przycisk **Dodaj dane wyjściowe projektu** przycisk, a następnie wybierz główny wynik projektu MyVSShellStub.AboutBoxPackage.  
   
 9. Kliknij przycisk **Dodaj pliki** znajdujący się i w folderze \MyVSShellStub\Release\Extensions\Application\ należy dodać następujące pliki:  
   
-    -   MyVSShellStub.AboutBoxPackage.pkgdef  
+    - MyVSShellStub.AboutBoxPackage.pkgdef  
   
-    -   MyVSShellStub.Application.pkgdef  
+    - MyVSShellStub.Application.pkgdef  
   
 10. Kliknij prawym przyciskiem myszy **Fabrikam utworów muzycznych edytora [INSTALLDIR]** węzła w okienku po lewej stronie i Dodaj nowy folder o nazwie **1033**.  
   

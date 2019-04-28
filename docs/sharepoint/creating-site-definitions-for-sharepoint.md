@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2abf61bbc960e342a395e9c0ff3395ecde852137
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580980"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Tworzenie definicji witryny dla SharePoint
   Projekt definicji witryny programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umożliwia tworzenie *definicji witryny*, który służy jako podstawa nową witrynę programu SharePoint. Te definicje określić nie tylko wyglądu i zachowania witryny programu SharePoint, ale również jego domyślnej zawartości i funkcji. W definicji można umieścić wstępnie skonfigurowanej listy, typy zawartości, odbiorcy zdarzeń, obrazów i innych elementów. Program SharePoint zawiera niektóre definicje witryn, blogów, np. na przykład. Podczas tworzenia witryny, na podstawie definicji witryny blogów lokacja zawiera listy, składniki Web Part i inne elementy, które wymaga lokacji do obsługi blogów.

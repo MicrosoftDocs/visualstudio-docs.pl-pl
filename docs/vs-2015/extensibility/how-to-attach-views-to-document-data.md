@@ -10,12 +10,12 @@ ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 50b9ef50e077a4e335b0c4f0718a3c51624e09c8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6bc1b57e189902624c13149d0264142ff66af050
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436003"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>Instrukcje: Dołączanie widoków do danych dokumentów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Jeśli masz nowy widok dokumentu, można dołączyć do istniejącego obiektu da
 4. Jeśli ten dokument zostanie zamknięty, program Visual Studio wywołuje fabryką edytora raz drugi. W tym wywołaniu `DocDataExisting` parametr jest równy NULL. Wdrożenie fabryki edytora można otworzyć obiektu danych dokumentu w edytorze własne.  
   
     > [!NOTE]
-    >  Aby ustalić, czy można pracować z istniejącego obiektu danych dokumentów, umożliwia również prywatne znajomości implementacji interfejsu przez rzutowanie wskaźnika do rzeczywistej [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] klasy implementacja prywatna. Na przykład zaimplementować wszystkich standardowych edytorów `IVsPersistFileFormat`, który dziedziczy z <xref:Microsoft.VisualStudio.OLE.Interop.IPersist>. W związku z tym, można wywołać `QueryInterface` dla <xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>, i czy identyfikator klasy na istniejący obiekt dokumentu w danych odpowiada Twoja implementacja identyfikator klasy, a następnie można pracować z obiektem danych dokumentu.  
+    > Aby ustalić, czy można pracować z istniejącego obiektu danych dokumentów, umożliwia również prywatne znajomości implementacji interfejsu przez rzutowanie wskaźnika do rzeczywistej [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] klasy implementacja prywatna. Na przykład zaimplementować wszystkich standardowych edytorów `IVsPersistFileFormat`, który dziedziczy z <xref:Microsoft.VisualStudio.OLE.Interop.IPersist>. W związku z tym, można wywołać `QueryInterface` dla <xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>, i czy identyfikator klasy na istniejący obiekt dokumentu w danych odpowiada Twoja implementacja identyfikator klasy, a następnie można pracować z obiektem danych dokumentu.  
   
 ## <a name="robust-programming"></a>Niezawodne programowanie  
  Gdy program Visual Studio wywołuje implementacji <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metody przekazuje powrót wskaźnika do istniejącego obiektu danych dokumentu w `punkDocDataExisting` parametru, jeśli taki istnieje. Sprawdź obiekt danych dokumentu, które są zwracane w `punkDocDataExisting` do ustalenia, czy obiekt danych dokumentu jest odpowiednie dla Twojego edytora, zgodnie z opisem w Uwaga w kroku 4 procedury przedstawione w tym temacie. Jeśli jest odpowiednia, a następnie fabryką edytora powinien zapewnić drugi widok danych zgodnie z opisem w [Obsługa wielu widoków dokumentu](../extensibility/supporting-multiple-document-views.md). Jeśli nie, następnie powinna zostać wyświetlona odpowiedni komunikat o błędzie.  

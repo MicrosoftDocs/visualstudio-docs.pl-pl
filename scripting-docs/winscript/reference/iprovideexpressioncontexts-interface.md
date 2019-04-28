@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b40825884b3c63af6be6d8bc852a5da4805f8975
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: b6ec0d5e17b0d3527252352c2e789adfac4fa859
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58152054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410045"
 ---
 # <a name="iprovideexpressioncontexts-interface"></a>Interfejs IProvideExpressionContexts
 Zapewnia sposób wyliczyć kontekstów wyrażenie znane niektórych składników. Aparaty skryptów zwykle implementują ten interfejs.  
@@ -26,7 +26,7 @@ Zapewnia sposób wyliczyć kontekstów wyrażenie znane niektórych składników
  Menedżer debugowania procesów używa tego interfejsu, aby znaleźć wszystkie konteksty wyrażenia globalnego skojarzone z danym wątku.  
   
 > [!NOTE]
->  Ten interfejs jest wywoływana z wewnątrz wątku zainteresowania. Jest implementujący do identyfikowania bieżącego wątku i zwraca moduł wyliczający odpowiednie.  
+> Ten interfejs jest wywoływana z wewnątrz wątku zainteresowania. Jest implementujący do identyfikowania bieżącego wątku i zwraca moduł wyliczający odpowiednie.  
   
 ## <a name="methods"></a>Metody  
  Oprócz metod odziedziczone `IUnknown`, `IProvideExpressionContexts` interfejsu udostępnia następujące metody.  

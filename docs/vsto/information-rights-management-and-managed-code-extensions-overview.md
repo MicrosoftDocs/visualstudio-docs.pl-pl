@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 109f6b85653a842f7c6fc9ce2d2c09b74113bbc7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583923"
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>Zarządzanie prawami do informacji i przegląd rozszerzeń kodu zarządzanego
   Program Microsoft Office Word i Microsoft Office Excel umożliwiają zarządzanie prawami informacji (IRM), funkcja, która może pomóc uniknąć nieupoważnione osoby z wyświetlania lub zmieniania informacji poufnych. Aby uzyskać szczegółowe informacje o tym, jak działa Zarządzanie prawami do informacji zobacz Pomoc w określonej aplikacji pakietu Office.

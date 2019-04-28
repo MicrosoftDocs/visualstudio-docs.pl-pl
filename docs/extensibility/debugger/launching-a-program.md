@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46d35961e1db1acf11d544b7523a264470340de0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: c069e082d4bd9a11278a63d33a68822e528db795
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409974"
 ---
 # <a name="launch-a-program"></a>Uruchom program
 Użytkownicy, którzy chcą do debugowania programu, można nacisnąć klawisz **F5** do uruchamiania debugera z poziomu środowiska IDE. Spowoduje to rozpoczęcie szereg zdarzeń, które ostatecznie powoduje IDE nawiązywania połączenia z aparatu debugowania (DE), który z kolei jest połączony, lub dołączone do programu w następujący sposób:
@@ -30,12 +30,12 @@ Użytkownicy, którzy chcą do debugowania programu, można nacisnąć klawisz *
     Jeśli nie określono DE, port wywołuje systemu operacyjnego, aby uruchomić program, który powoduje, że środowisko wykonawcze programu do załadowania.
 
    > [!NOTE]
-   >  Jeśli DE jest używany do uruchomienia programu, duże prawdopodobieństwo, że tego samego DE zostanie dołączony do programu.
+   > Jeśli DE jest używany do uruchomienia programu, duże prawdopodobieństwo, że tego samego DE zostanie dołączony do programu.
 
 3. W zależności od tego, czy DE lub port uruchamiany program Niemcy lub środowiska wykonawczego następnie tworzy opis programu lub węzeł i powiadamia port, na którym działa program.
 
    > [!NOTE]
-   >  Zalecane jest, środowiska wykonawczego Utwórz węzeł program ponieważ węzeł program jest uproszczone reprezentacja program, który może być debugowany. Nie ma potrzeby ładowania całego DE tak, aby utworzyć i zarejestrować węzła programu. Jeśli DE jest przeznaczony do uruchamiania w trakcie IDE, ale nie środowiska IDE jest uruchomione, musi istnieć składnik, który można dodać węzła programu do portu.
+   > Zalecane jest, środowiska wykonawczego Utwórz węzeł program ponieważ węzeł program jest uproszczone reprezentacja program, który może być debugowany. Nie ma potrzeby ładowania całego DE tak, aby utworzyć i zarejestrować węzła programu. Jeśli DE jest przeznaczony do uruchamiania w trakcie IDE, ale nie środowiska IDE jest uruchomione, musi istnieć składnik, który można dodać węzła programu do portu.
 
    Nowo utworzony programu, oraz innych programów, związane z niezwiązanych ze sobą, uruchomić lub powiązany z tym samym środowisku IDE, tworzenia sesji debugowania.
 

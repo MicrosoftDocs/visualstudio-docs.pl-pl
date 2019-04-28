@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ea48e1807291e935081f01e821cffafa794104f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8de573e8d5f46988868f18114fdabb07f62690e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443167"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Visual C# IntelliSense jest dostępna podczas kodowania w edytorze i podczas deb
  W języku Visual C# na liście uzupełniania zawiera metody rozszerzenia, które znajdują się w zakresie.  
   
 > [!NOTE]
->  Na liście uzupełniania nie są wyświetlane wszystkie metody rozszerzenia dla <xref:System.String> obiektów.  
+> Na liście uzupełniania nie są wyświetlane wszystkie metody rozszerzenia dla <xref:System.String> obiektów.  
   
  Metody rozszerzające użyj ikony innego niż metody wystąpienia. Aby uzyskać listę ikon na liście, zobacz [widoku klas i przeglądarka obiektów ― ikony](../ide/class-view-and-object-browser-icons.md). Gdy metoda wystąpienia i metodę rozszerzenia o tej samej nazwie znajdują się zarówno w zakresie, na liście uzupełniania Wyświetla ikonę metody rozszerzenia.  
   
@@ -148,12 +148,12 @@ Visual C# IntelliSense jest dostępna podczas kodowania w edytorze i podczas deb
  ![Generuj procedury obsługi zdarzeń](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")  
   
 > [!NOTE]
->  Jeśli nowy delegat, który jest tworzony przez funkcję IntelliSense odwołuje się do istniejącego programu obsługi zdarzeń, funkcja IntelliSense komunikuje się te informacje w etykietce narzędzia. Następnie można zmodyfikować tego odwołania; tekst jest zaznaczony w edytorze kodu. W przeciwnym razie zaczep zdarzenia automatycznego zakończeniu w tym momencie.  
+> Jeśli nowy delegat, który jest tworzony przez funkcję IntelliSense odwołuje się do istniejącego programu obsługi zdarzeń, funkcja IntelliSense komunikuje się te informacje w etykietce narzędzia. Następnie można zmodyfikować tego odwołania; tekst jest zaznaczony w edytorze kodu. W przeciwnym razie zaczep zdarzenia automatycznego zakończeniu w tym momencie.  
   
  Jeśli użytkownik naciśnie klawisz TAB, IntelliSense zastępczych metodę o prawidłowej sygnaturze i umieszcza kursor w ciele obsługi zdarzenia.  
   
 > [!NOTE]
->  Użyj **Nawiguj wstecz** polecenie **widoku** menu (CTRL +-) aby wrócić do instrukcji obsługi zdarzeń.  
+> Użyj **Nawiguj wstecz** polecenie **widoku** menu (CTRL +-) aby wrócić do instrukcji obsługi zdarzeń.  
   
  Następujące zadanie pokazuje, jak technologia IntelliSense automatycznie przechwytuje się program obsługi zdarzeń o nazwie `button1_Click` z polem zdarzeń o nazwie `button1.Click`.  
   

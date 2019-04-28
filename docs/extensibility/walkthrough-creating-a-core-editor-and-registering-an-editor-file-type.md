@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd6514ec43cd3180d808c20d5589bf18e3a9b58b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4aac1298c13cb931eba889e6323faff9b1640f8b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411037"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Przewodnik: Tworzenie edytorze podstawowych i rejestrowania typu pliku w edytorze
 W tym instruktażu przedstawiono sposób tworzenia pakietu VSPackage, który rozpoczyna się [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podstawowy edytor, gdy plik za pomocą *.myext* rozszerzenie nazwy pliku jest ładowany.
@@ -325,7 +325,7 @@ W tym instruktażu przedstawiono sposób tworzenia pakietu VSPackage, który roz
 3. Otwórz **VSPackage.resx** pliku, Dodaj nowy ciąg, ustaw nazwę na **101**, a następnie ustaw wartość `IDS_EDITORNAME`. Ten krok obejmuje pakiet o identyfikatorze zasobu, do uzyskania dostępu ciąg, który został utworzony.
 
    > [!NOTE]
-   >  Jeśli **VSPackage.resx** plik zawiera inny ciąg, który `name` ustawioną wartość atrybutu **101**, zastąpić inną wartość liczbową, unikatową, w tym miejscu i w poniższych krokach.
+   > Jeśli **VSPackage.resx** plik zawiera inny ciąg, który `name` ustawioną wartość atrybutu **101**, zastąpić inną wartość liczbową, unikatową, w tym miejscu i w poniższych krokach.
 
 4. W **Eksploratora rozwiązań**, otwórz **MyPackagePackage.cs** pliku.
 

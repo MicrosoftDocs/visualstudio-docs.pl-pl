@@ -19,12 +19,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 50b9fcb98b64e36d37ec2153588dcbb388ea960b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 017414bdbf8e0e1a3a664782aab1ea44bda030c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432836"
 ---
 # <a name="how-to-choose-sampling-events"></a>Instrukcje: Wybieranie zdarzeń pobierania próbek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Domyślnie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling Tools zbiera d
 - Licznik wydajności - liczniki procesora CPU dla problemów z wydajnością niskiego poziomu.  
   
 > [!IMPORTANT]
->  Przypadku zbierania danych pamięci .NET (alokacje czasów istnienia obiektów i/lub) przy użyciu metody próbkowania zdarzeń próbkowania wszystkie określone przez użytkownika są ignorowane i alokacje odpowiedniej ilości pamięci i/lub zdarzenia odzyskiwania pamięci, które są używane do zbierania danych.  
+> Przypadku zbierania danych pamięci .NET (alokacje czasów istnienia obiektów i/lub) przy użyciu metody próbkowania zdarzeń próbkowania wszystkie określone przez użytkownika są ignorowane i alokacje odpowiedniej ilości pamięci i/lub zdarzenia odzyskiwania pamięci, które są używane do zbierania danych.  
   
 ### <a name="to-select-a-sample-event"></a>Aby wybrać zdarzenie próbkowania  
   
@@ -51,7 +51,7 @@ Domyślnie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling Tools zbiera d
 3. Z **zdarzenie próbkowania** listy rozwijanej wybierz zdarzenie próbkowania, którego chcesz użyć do profilu aplikacji.  
   
     > [!NOTE]
-    >  **Dostępnych liczników wydajności** są włączone tylko wtedy, gdy wybierzesz **licznika wydajności** z **zdarzenie próbkowania** listy rozwijanej.  
+    > **Dostępnych liczników wydajności** są włączone tylko wtedy, gdy wybierzesz **licznika wydajności** z **zdarzenie próbkowania** listy rozwijanej.  
   
 4. Jeśli wybierzesz **licznika wydajności**, Wybieranie określonego licznika Procesora z **dostępnych liczników wydajności** kontrolki widoku drzewa.  
   

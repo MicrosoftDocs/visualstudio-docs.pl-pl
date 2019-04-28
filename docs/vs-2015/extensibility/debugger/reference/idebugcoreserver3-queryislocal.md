@@ -1,43 +1,41 @@
 ---
 title: IDebugCoreServer3::QueryIsLocal | Dokumentacja firmy Microsoft
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IDebugCoreServer3::QueryIsLocal
 helpviewer_keywords:
 - IDebugCoreServer3::QueryIsLocal
 ms.assetid: cca030de-f853-4ed7-b2fb-395f08a6b884
-caps.latest.revision: 7
+author: gregvanl
 ms.author: gregvanl
 manager: jillfra
+ms.workload:
+- vssdk
 ms.openlocfilehash: 26bed2a60d7412682588a5a39fd6f1301005da01
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569084"
 ---
 # <a name="idebugcoreserver3queryislocal"></a>IDebugCoreServer3::QueryIsLocal
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Określa, czy serwer lokalny do obiektu wywołującego.
 
-Określa, czy serwer lokalny do obiektu wywołującego.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp#  
-HRESULT QueryIsLocal(  
-   void  
-);  
-```  
-  
-```csharp  
-int QueryIsLocal();  
-```  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Zwraca `S_OK` aby wskazać serwer lokalny. Zwraca `S_FALSE` Jeśli serwer jest uruchomiony z wystąpienia msvsmon.exe, który jest zazwyczaj używany do zdalnego debugowania.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT QueryIsLocal(
+   void
+);
+```
+
+```csharp
+int QueryIsLocal();
+```
+
+## <a name="return-value"></a>Wartość zwracana
+ Zwraca `S_OK` aby wskazać serwer lokalny. Zwraca `S_FALSE` Jeśli serwer jest uruchomiony z wystąpienia msvsmon.exe, który jest zazwyczaj używany do zdalnego debugowania.
+
+## <a name="see-also"></a>Zobacz też
+- [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e6ebd09188e737e75c9e5f66ed95411e1a9453d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4ab27c27873fc0addf1dbdbdbca81613d3015cc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445543"
 ---
 # <a name="custom-task-panes"></a>Niestandardowe okienka zadań
   Panele interfejsu użytkownika, które zwykle są zadokowane po jednej stronie okna aplikacji Microsoft Office są okienka zadań. Niestandardowe okienka zadań zapewniają możliwość tworzenia własnych okienka zadań i użytkownikom znany interfejs dostęp do funkcji tego rozwiązania. Na przykład interfejs może zawierać mechanizmy uruchamianie kodu na modyfikowanie dokumentów lub wyświetlania danych ze źródła danych.
@@ -38,7 +38,7 @@ ms.locfileid: "60106205"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 > [!NOTE]
->  Niestandardowego okienka zadań różni się w okienku Akcje. W okienku Akcje stanowi część dostosowań poziomu dokumentu dla programu Microsoft Office Word i Microsoft Office Excel. Aby uzyskać więcej informacji, zobacz [okienko akcji ― omówienie](../vsto/actions-pane-overview.md).
+> Niestandardowego okienka zadań różni się w okienku Akcje. W okienku Akcje stanowi część dostosowań poziomu dokumentu dla programu Microsoft Office Word i Microsoft Office Excel. Aby uzyskać więcej informacji, zobacz [okienko akcji ― omówienie](../vsto/actions-pane-overview.md).
 
 ## <a name="benefits-of-custom-task-panes"></a>Zalety niestandardowych okienek zadań
  Niestandardowe okienka zadań umożliwiają integrowanie funkcji interfejsu użytkownika z dobrze znanych. Możesz szybko tworzyć niestandardowego okienka zadań, za pomocą narzędzi Visual Studio.

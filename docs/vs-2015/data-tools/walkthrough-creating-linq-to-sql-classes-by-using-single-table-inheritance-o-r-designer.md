@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7dfd293f5b2219eab6c3a2896c800a1337f2c8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2dac656f9a765875fc552739b814538582200cc8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424697"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Przewodnik: Tworzenie klasy LINQ do SQL za pomocą pojedynczej tabeli dziedziczenia (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60111977"
 1. W **Eksploratora serwera**/**Eksplorator bazy danych**, kliknij prawym przyciskiem myszy **tabel** węzła i kliknij przycisk **Dodaj nową tabelę**.  
   
     > [!NOTE]
-    >  Można użyć bazy danych Northwind lub innej bazy danych można dodać do tabeli.  
+    > Można użyć bazy danych Northwind lub innej bazy danych można dodać do tabeli.  
   
 2. W Projektancie tabel należy dodać następujące kolumny w tabeli:  
   
@@ -96,7 +96,7 @@ ms.locfileid: "60111977"
 2. Nadaj projektowi nazwę **InheritanceWalkthrough**.  
   
     > [!NOTE]
-    >  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Jest obsługiwane w projektach Visual Basic i C#. Utwórz nowy projekt w jednym z tych języków.  
+    > [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Jest obsługiwane w projektach Visual Basic i C#. Utwórz nowy projekt w jednym z tych języków.  
   
 3. Kliknij przycisk **aplikacja interfejsu Windows Forms** szablonu, a następnie kliknij przycisk **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   

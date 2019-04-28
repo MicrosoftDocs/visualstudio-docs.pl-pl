@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 66580d29c50332d32554334e1315d7be88810a0b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9a38d3ae806439c286a5230ee704acedf2070e27
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438512"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word
   Ten Przewodnik wprowadzający dowiesz się, jak utworzyć dostosowywania poziomie dokumentu dla programu Microsoft Office Word. Funkcje, które tworzysz w tego rodzaju rozwiązania są dostępne tylko wtedy, gdy określony dokument jest otwarty. Nie możesz użyć dostosowywania poziomie dokumentu do zmiany całej aplikacji, na przykład wyświetlanie Nowa karta wstążki, gdy dowolny dokument jest otwarty.
@@ -112,7 +112,7 @@ ms.locfileid: "60095467"
      [!code-csharp[Trin_WordDocumentTutorial#1](../vsto/codesnippet/CSharp/FirstDocumentCustomization/ThisDocument.cs#1)]
 
     > [!NOTE]
-    >  Ten kod używa wartości indeksu 1, aby dostęp do pierwszego akapitu w <xref:Microsoft.Office.Tools.Word.Document.Paragraphs%2A> właściwości. Chociaż Visual Basic i Visual C# należy używać tablic oparty na 0, niższe granice tablicy w większości kolekcji w modelu obiektów programu Word to 1. Aby uzyskać więcej informacji, zobacz [pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md).
+    > Ten kod używa wartości indeksu 1, aby dostęp do pierwszego akapitu w <xref:Microsoft.Office.Tools.Word.Document.Paragraphs%2A> właściwości. Chociaż Visual Basic i Visual C# należy używać tablic oparty na 0, niższe granice tablicy w większości kolekcji w modelu obiektów programu Word to 1. Aby uzyskać więcej informacji, zobacz [pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md).
 
 ## <a name="test-the-project"></a>Projekt testowy
 

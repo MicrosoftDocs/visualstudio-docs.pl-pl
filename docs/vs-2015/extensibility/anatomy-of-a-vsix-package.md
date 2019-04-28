@@ -12,12 +12,12 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d4e46a74651a838a2f9badfc8b9d43d00250ea1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 68ed49b2b22a8302fad0355dde3f937f6b67794b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443935"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomia pakietu VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Pakiet VSIX jest plik .vsix, który zawiera jeden lub więcej rozszerzeń progra
  Formacie pakietu VSIX postępuje zgodnie ze standardowym otwarte konwencje tworzenia pakietów (OPC). Pakiet zawiera pliki binarne i pliki pomocnicze, wraz z pliku [Content_Types] .xml i plikiem typu .vsix pliku manifestu. Jeden pakiet VSIX może zawierać dane wyjściowe z wieloma projektami lub nawet utworzyć wiele pakietów, które mają własne manifestów.  
   
 > [!NOTE]
->  Nazwy plików zawarte w pakietów VSIX nie może zawierać spacji ani znaków, które są zastrzeżone w identyfikatorach URI (Uniform Resource), zdefiniowane w obszarze [ \[specyfikacja RFC 2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
+> Nazwy plików zawarte w pakietów VSIX nie może zawierać spacji ani znaków, które są zastrzeżone w identyfikatorach URI (Uniform Resource), zdefiniowane w obszarze [ \[specyfikacja RFC 2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
   
 ## <a name="the-vsix-manifest"></a>VSIX Manifest  
  VSIX manifest zawiera informacje dotyczące rozszerzenia do zainstalowania, a schemat VSX w następujący sposób. Aby uzyskać więcej informacji, zobacz [odwołania 1.0 schematu rozszerzenia VSIX](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Aby uzyskać przykład manifestu VSIX, zobacz [PackageManifest elementu (Element główny, schemat VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  

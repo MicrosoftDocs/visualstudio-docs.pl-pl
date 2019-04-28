@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a505194a71058d791b7d67d74cd203c43298d684
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778417"
 ---
 # <a name="csc-task"></a>Csc — Zadanie
 Opakowuje *csc.exe*i tworzy pliki wykonywalne (*.exe* plików), bibliotek dołączanych dynamicznie (*.dll* plików), lub modułów kodu (*.netmodule* pliki). Aby uzyskać więcej informacji na temat *csc.exe*, zobacz [opcje kompilatora C#](/dotnet/csharp/language-reference/compiler-options/index).

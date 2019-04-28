@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 88f04720610bad5064f7f9d7a43beef2410b045f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6ceec5e44ade219f069e72f712129a137d70875f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437521"
 ---
 # <a name="encodings-and-line-breaks"></a>Kodowania i linie podziału
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "54787469"
 W programie Visual Studio można używać **pliku/zaawansowane opcje zapisywania** ma ustawienia, aby określić typ podział wiersza znakami możesz. Można również zmienić kodowanie pliku przy użyciu tych samych ustawień.  
   
 > [!NOTE]
->  W przypadku niektórych typów ustawień środowiska deweloperskiego (Visual Basic F#, tworzenie aplikacji sieci Web) mogą nie być widoczne **zaawansowane opcje zapisywania** w menu. Aby zmienić swoje ustawienia (na przykład aby ogólne), otwórz **narzędzia / Import i eksport ustawień**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> W przypadku niektórych typów ustawień środowiska deweloperskiego (Visual Basic F#, tworzenie aplikacji sieci Web) mogą nie być widoczne **zaawansowane opcje zapisywania** w menu. Aby zmienić swoje ustawienia (na przykład aby ogólne), otwórz **narzędzia / Import i eksport ustawień**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  W programie Visual Studio, następujące znaki są interpretowane jako podziały wierszy:  
   

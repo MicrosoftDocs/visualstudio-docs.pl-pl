@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: af0d57e39fa8d1312032bacbbd9af95d44449ca1
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852473"
 ---
 # <a name="debugging-and-the-hosting-process"></a>Debugowanie i proces hostingu
 Procesu hostingu Visual Studio zwiększa wydajność debugera i włącza nowe funkcje debugera, takich jak debugowanie częściowego zaufania i Obliczanie wyrażenia czasu projektowania. Jeśli chcesz, możesz wyłączyć procesu hostingu. W poniższych sekcjach opisano niektóre różnice między debugowania i bez procesu hostingu.

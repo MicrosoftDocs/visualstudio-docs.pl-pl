@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0f814623d8084619ccbe82d6660900055f81b3ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2399ff36639732f20babef368a1d9e2f6758a1c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437876"
 ---
 # <a name="msbuild-properties1"></a>MSBuild Properties1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Właściwości to pary nazwa-wartość, których można używać do konfigurowan
  Aby odczytać bieżące wartości zmiennych środowiskowych z uruchomionego narzędzia, należy użyć [funkcji właściwości](../msbuild/property-functions.md) o nazwie System.Environment.GetEnvironmentVariable. Jednak preferowaną metodą jest użycie parametru zadania <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A>. Właściwości środowiska ustawione w tej tablicy ciągów można przekazywać do zainicjowanego narzędzia bez wpływania na zmienne środowiskowe systemu.  
   
 > [!TIP]
->  Nie wszystkie zmienne środowiskowe są wczytywane jako właściwości początkowe. Wszystkie zmienne środowiskowe o nazwach niebędących prawidłowymi nazwami właściwości programu MSBuild, np. „386”, są ignorowane.  
+> Nie wszystkie zmienne środowiskowe są wczytywane jako właściwości początkowe. Wszystkie zmienne środowiskowe o nazwach niebędących prawidłowymi nazwami właściwości programu MSBuild, np. „386”, są ignorowane.  
   
  Aby uzyskać więcej informacji, zobacz [jak: Użycie zmiennych środowiskowych w kompilacji](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   

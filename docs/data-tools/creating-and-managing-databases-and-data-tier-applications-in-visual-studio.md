@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 2a86d9511e470c9a810ff58e80e4cae1f9a0cb11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567243"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>Projekty baz danych i aplikacji warstwy danych
 

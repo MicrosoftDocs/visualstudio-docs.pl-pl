@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b84fd126ebd4d311264efa5d2156f9d83961fee9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 71d4501fff04b62abe392c6684a4a0551dea9ee8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58148753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443667"
 ---
 # <a name="iwebappdiagnosticssetup-interface"></a>Interfejs IWebAppDiagnosticsSetup
 Ten interfejs jest implementowany przez program PDM w debugowaniu aplikacji w języku do tworzenia obiektów COM w procesie, który jest debugowany i włączanie diagnostyki sieci web. Jeśli program PDM debugowania aplikacji obiekt implementuje [IObjectWithSite](http://go.microsoft.com/fwlink/?LinkId=232438), wymaga programu Internet Explorer [setsite —](http://go.microsoft.com/fwlink/?LinkId=232439) go po jego utworzeniu i przebiegów w odwołaniu do [IWebBrowser2](http://go.microsoft.com/fwlink/?LinkId=232449). Aplikacja WWA wywołuje [setsite —](http://go.microsoft.com/fwlink/?LinkId=232439) i przebiegów w WWA interfejsu IWebApplicationHost zamiast tego. Jeśli [setsite —](http://go.microsoft.com/fwlink/?LinkId=232439) została wywołana z wartością NIEZEROWĄ [IWebAppDiagnosticsSetup::DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) zwraca wartość true. Jeśli nie, zwraca wartość false i wywołania [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) się nie powieść.  
   
 > [!IMPORTANT]
->  `IWebAppDiagnosticsSetup` jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
+> `IWebAppDiagnosticsSetup` jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="methods"></a>Metody  
  Ten interfejs udostępnia następujące metody.  

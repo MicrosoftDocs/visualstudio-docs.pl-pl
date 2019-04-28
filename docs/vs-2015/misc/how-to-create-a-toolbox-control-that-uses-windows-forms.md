@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: a2b51b8f07a1cc049e4761001bfea754b6ca1819
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 33b4d8f1932429838f701df1f6ffaaceef321c4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442919"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Instrukcje: Tworzenie kontrolki przybornika korzystającej z Windows Forms
 Szablon kontrolki formularzy Windows Forms przybornika, który znajduje się w [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] umożliwia tworzenie formantów Windows Forms, które są automatycznie dodawane do **przybornika** po zainstalowaniu rozszerzenia. W tym temacie pokazano, jak używać szablonu do tworzenia **przybornika** formant, który można rozdystrybuować innym użytkownikom...  
   
 > [!NOTE]
->  Aby dowiedzieć się, jak pobrać zestawu SDK programu Visual Studio, zobacz [Centrum deweloperów programu Visual Studio Extensibility](http://go.microsoft.com/fwlink/?linkid=121964) w witrynie MSDN w sieci Web.  
+> Aby dowiedzieć się, jak pobrać zestawu SDK programu Visual Studio, zobacz [Centrum deweloperów programu Visual Studio Extensibility](http://go.microsoft.com/fwlink/?linkid=121964) w witrynie MSDN w sieci Web.  
   
 ## <a name="creating-a-toolbox-control"></a>Tworzenie kontrolki przybornika  
  Użyj szablonu kontrolki Przybornika formularzy Windows, aby utworzyć projekt, a następnie utworzyć interfejs użytkownika (UI), w projektancie.  

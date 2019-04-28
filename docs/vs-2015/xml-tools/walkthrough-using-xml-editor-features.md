@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 27e9d1ce86064c23e3a293382ff7f83389d693f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 55e7cdc06b1876fe40310f5af44152a70e4a4375
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438878"
 ---
 # <a name="walkthrough-using-xml-editor-features"></a>Przewodnik: Korzystanie z funkcji edytora XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60109062"
 Kroki opisane w tym przewodniku opisano można utworzyć nowego dokumentu XML. Przewodnik używa także niektóre funkcje edytora XML, które ułatwiają cenny na potrzeby tworzenia XML.  
   
 > [!NOTE]
->  Przed rozpoczęciem instruktażu, należy zapisać plik hireDate.xsd (przedstawionym poniżej w tym temacie) na komputerze lokalnym.  
+> Przed rozpoczęciem instruktażu, należy zapisać plik hireDate.xsd (przedstawionym poniżej w tym temacie) na komputerze lokalnym.  
   
 ### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Aby utworzyć nowy plik XML i skojarzyć go z schematu XML  
   

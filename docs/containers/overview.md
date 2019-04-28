@@ -7,13 +7,13 @@ ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
 ms.openlocfilehash: 4b03ccddadf954b8430b7ad9b5a4ed765fccc3f5
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825013"
 ---
-# <a name="container-tools-in-visual-studio"></a>Narzędzia kontenerów programu Visual Studio
+# <a name="container-tools-in-visual-studio"></a>Narzędzia kontenerów w programie Visual Studio
 
 Narzędzi dostępnych w programie Visual Studio do programowania z użyciem kontenery są łatwe w użyciu i znacznie upraszczają tworzenie, debugowanie i wdrażanie konteneryzowanych aplikacji. Praca z kontener dla jednego projektu lub użyć aranżacji kontenerów przy użyciu narzędzia Docker Compose, Usługa Service Fabric lub Kubernetes do pracy z wieloma usługami w kontenerach.
 

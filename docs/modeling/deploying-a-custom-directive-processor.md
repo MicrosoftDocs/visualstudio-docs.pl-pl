@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21efca0d922087281f94facfdaf04a12606bc4db
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ba106bd28db63b6215abd02ea00aff0b3c0c00e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432231"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Wdrażanie niestandardowego procesora dyrektywy
 
@@ -144,7 +144,7 @@ Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje je
 ```
 
 > [!NOTE]
->  Ten atrybut jest umieszczany w klasie pakietu, a nie w klasie procesora dyrektywy.
+> Ten atrybut jest umieszczany w klasie pakietu, a nie w klasie procesora dyrektywy.
 
  Plik .pkgdef zostanie wygenerowany podczas tworzenia projektu. Podczas instalowania pakietu VSPackage plik .pkgdef zarejestruje procesor dyrektywy.
 
@@ -156,7 +156,7 @@ Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje je
  Ta metoda instalacji procesora dyrektywy niestandardowej jest najmniej polecana. Nie zapewnia wygodnego sposobu włączania i wyłączania procesora dyrektywy i nie zapewnia metody dystrybucji procesora dyrektywy do innych użytkowników.
 
 > [!CAUTION]
->  Niepoprawne edytowanie rejestru może spowodować poważne uszkodzenie systemu. Przed wprowadzeniem zmian w rejestrze należy wykonać kopię zapasową wszystkich cennych danych, które znajdują się na komputerze.
+> Niepoprawne edytowanie rejestru może spowodować poważne uszkodzenie systemu. Przed wprowadzeniem zmian w rejestrze należy wykonać kopię zapasową wszystkich cennych danych, które znajdują się na komputerze.
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Aby zarejestrować procesor dyrektywy przez ustawienie klucza rejestru
 

@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce3cfa8762c6202a7c36bd9606a0fa77ccdd94a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d6dec053e1075865b51c14df951915308852f8a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445428"
 ---
 # <a name="managing-external-tools"></a>Zarządzanie narzędziami zewnętrznymi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ Możesz wywołać zewnętrznych narzędzi z poziomu programu Visual Studio. Kilk
 6. Edytor konfiguracji usługi WCF: Umożliwia tworzenie i modyfikowanie ustawień konfiguracji usługi WCF.  
   
 > [!WARNING]
->  Może pojawić się różne listy zewnętrznych narzędzi w zależności od wersji programu Visual Studio zainstalowane a profilu ustawień zostały zastosowane. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Może pojawić się różne listy zewnętrznych narzędzi w zależności od wersji programu Visual Studio zainstalowane a profilu ustawień zostały zastosowane. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="adding-new-tools"></a>Dodawanie nowych narzędzi  
  Możesz dodać do zewnętrznego narzędzia **narzędzia** menu. Otwórz **zewnętrznych narzędzi** dialogowym i kliknij przycisk **Dodaj**, a następnie wypełnij informacje. Na przykład następujący wpis powoduje Eksploratora Windows, aby otworzyć znajduje się w katalogu pliku, który aktualnie otwarte w programie Visual Studio:  
@@ -100,7 +100,7 @@ Możesz wywołać zewnętrznych narzędzi z poziomu programu Visual Studio. Kilk
  Następujące argumenty są zmiennymi programu Visual Studio, które przypisano podczas uruchamiania narzędzia zewnętrznego. Łącza do zewnętrznych narzędzi, takich jak Notatnik lub Spy ++, które mogą być wyświetlane na **narzędzia** menu, w oknie dialogowym narzędzia zewnętrzne.  
   
 > [!NOTE]
->  Na pasku stanu IDE Wyświetla zmienne bieżący wiersz i bieżącej kolumny, aby wskazać, gdzie znajduje się w edytorze kodu aktywnego punktu wstawiania. Zmienna aktualny tekst zwraca tekst lub kod wybrane w tej lokalizacji.  
+> Na pasku stanu IDE Wyświetla zmienne bieżący wiersz i bieżącej kolumny, aby wskazać, gdzie znajduje się w edytorze kodu aktywnego punktu wstawiania. Zmienna aktualny tekst zwraca tekst lub kod wybrane w tej lokalizacji.  
   
 |Nazwa|Argument|Opis|  
 |----------|--------------|-----------------|  

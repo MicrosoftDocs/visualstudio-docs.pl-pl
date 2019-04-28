@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eef55dd0e5af443379b2685ccab9bd2de8074e0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b7dee579f726a1edfc81e1f3e1ec62bf7d8beba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437952"
 ---
 # <a name="gpu-usage"></a>Użycie procesora GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Użyj narzędzie użycie procesora GPU w programie Visual Studio Centrum wydajno
 - Procesora GPU i sterowników, które obsługują Instrumentacji niezbędne chronometrażu.  
   
   > [!NOTE]
-  >  Aby uzyskać więcej informacji na temat obsługiwanego sprzętu i sterowniki, zobacz [sprzętu i sterowników, które obsługują](#hwsupport) na końcu tego dokumentu.  
+  > Aby uzyskać więcej informacji na temat obsługiwanego sprzętu i sterowniki, zobacz [sprzętu i sterowników, które obsługują](#hwsupport) na końcu tego dokumentu.  
   
   Aby uzyskać więcej informacji na temat wymagań dotyczących diagnostyki grafiki, zobacz [wprowadzenie](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md).  
   
@@ -47,7 +47,7 @@ Użyj narzędzie użycie procesora GPU w programie Visual Studio Centrum wydajno
     ![Wybierz narzędzia diagnostyczne, którego chcesz użyć. ](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
    > [!NOTE]
-   >  Nie wszystkie narzędzia wydajności i diagnostyki, można w tym samym czasie.  
+   > Nie wszystkie narzędzia wydajności i diagnostyki, można w tym samym czasie.  
   
 3. Wybierz niebieski **Start** znajdujący się u dołu Centrum wydajności i diagnostyki, aby uruchomić aplikację w obszarze narzędzia wybrane.  
   
@@ -110,7 +110,7 @@ Użyj narzędzie użycie procesora GPU w programie Visual Studio Centrum wydajno
 |**Identyfikator wątku**|Identyfikator wątku, z której pochodzi zdarzenie.|  
   
 > [!IMPORTANT]
->  Windows 8.1 jest wymagany dla zdarzeń: uznanie autorstwa. Ponadto jeśli sterownik lub procesora GPU, na których nie obsługują funkcji niezbędne instrumentacji, wszystkie zdarzenia będą wyświetlane jako "unattributed". Pamiętaj zaktualizować sterownik procesora GPU i spróbuj ponownie. Jeśli wystąpi ten problem. Aby uzyskać więcej informacji, zobacz [sprzętu i sterowników, które obsługują](#hwsupport) poniżej.  
+> Windows 8.1 jest wymagany dla zdarzeń: uznanie autorstwa. Ponadto jeśli sterownik lub procesora GPU, na których nie obsługują funkcji niezbędne instrumentacji, wszystkie zdarzenia będą wyświetlane jako "unattributed". Pamiętaj zaktualizować sterownik procesora GPU i spróbuj ponownie. Jeśli wystąpi ten problem. Aby uzyskać więcej informacji, zobacz [sprzętu i sterowników, które obsługują](#hwsupport) poniżej.  
   
 ## <a name="gpu-usage-settings"></a>Ustawienia użycia procesora GPU  
  Można skonfigurować narzędzie użycie procesora GPU można odroczyć kolekcji profilowania informacje, a nie od umożliwiają zebranie informacji dotyczących zaraz po uruchomieniu aplikacji. Ponieważ rozmiar profilowania informacje mogą być istotne, jest to przydatne, gdy wiesz, że spowolnienie wydajności Twojej aplikacji nie będzie wyświetlane dopiero po pewnym czasie.  
@@ -126,7 +126,7 @@ Użyj narzędzie użycie procesora GPU w programie Visual Studio Centrum wydajno
      ![Skonfiguruj, kiedy rozpoczyna się zbieranie użycia procesora GPU](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
->  Odracza profilowania nie jest obecnie obsługiwane w przypadku aplikacji Direct3D 12.  
+> Odracza profilowania nie jest obecnie obsługiwane w przypadku aplikacji Direct3D 12.  
   
  Odroczysz zbierania informacji profilowania za pomocą tego ustawienia dodatkowe łącze staje się dostępna w dolnej części okna narzędzia użycie procesora GPU po uruchomieniu aplikacji w narzędziu użycie procesora GPU. Aby rozpocząć zbieranie informacji o profilowania, wybierz opcję **Start** łącze w **Start zbieranie dodatkowych szczegółowych danych użycia procesora GPU** wiadomości.  
   

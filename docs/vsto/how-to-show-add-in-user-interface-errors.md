@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34727c0949ab4ad6baf8e91b27b20115cf074b92
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 78cc4d2e85e2f7a5347fe0c8927c855160fbb511
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441794"
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>Instrukcje: Pokaż błędy interfejsu użytkownika dodatku
   Domyślnie jeśli dodatku narzędzi VSTO prób do manipulowania Microsoft Office interfejsu użytkownika (UI) i kończy się niepowodzeniem, żaden komunikat o błędzie jest wyświetlany. Można jednak skonfigurować aplikacje Microsoft Office, aby wyświetlić komunikaty błędów, które odnoszą się do interfejsu użytkownika. Te komunikaty można użyć w celu określenia, dlaczego niestandardowa Wstążka jest niewidoczny, lub dlaczego Wstążka pojawia się, ale nie formanty są wyświetlane.
@@ -40,7 +40,7 @@ ms.locfileid: "60096364"
 5. W okienku szczegółów wybierz **błędów interfejsu użytkownika dodatku narzędzi VSTO dla programów Pokaż**, a następnie kliknij przycisk **OK**.
 
     > [!NOTE]
-    >  Dla programu Outlook **błędów interfejsu użytkownika dodatku narzędzi VSTO dla programów Pokaż** pole wyboru znajduje się w **Developer** części okienka szczegółów. Dla innych aplikacji, pole wyboru znajduje się w **ogólne** części okienka szczegółów.
+    > Dla programu Outlook **błędów interfejsu użytkownika dodatku narzędzi VSTO dla programów Pokaż** pole wyboru znajduje się w **Developer** części okienka szczegółów. Dla innych aplikacji, pole wyboru znajduje się w **ogólne** części okienka szczegółów.
 
 ## <a name="see-also"></a>Zobacz także
 - [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)

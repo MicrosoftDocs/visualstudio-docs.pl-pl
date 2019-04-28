@@ -10,11 +10,11 @@ ms.workload:
 - data-science
 monikerRange: vs-2017
 ms.openlocfilehash: 4b505b1a8669c0eff14e7afcdb88275cd1502f95
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581249"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Jak zainstalować narzędzia języka R dla programu Visual Studio
 

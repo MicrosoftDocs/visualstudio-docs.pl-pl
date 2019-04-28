@@ -11,12 +11,12 @@ ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 484aa854a8e0987bf034e829a3acf02d6d637870
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 31d03f12a31953cbc0e20d06820dd49b5f9827e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441970"
 ---
 # <a name="registering-the-program"></a>Rejestrowanie programu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Po aparat debugowania uzyskała portu, reprezentowane przez [IDebugPort2](../../
      Aparat debugowania, uruchamiając program i rejestrując ją za pomocą portu można znaleźć w poniższym przykładzie.  
   
     > [!NOTE]
-    >  Nie jest jedynym sposobem, aby uruchomić i wznowić procesu; to przede wszystkim na przykład rejestrowanie programu z portem.  
+    > Nie jest jedynym sposobem, aby uruchomić i wznowić procesu; to przede wszystkim na przykład rejestrowanie programu z portem.  
   
     ```cpp#  
     // This is an IDebugEngineLaunch2 method.  

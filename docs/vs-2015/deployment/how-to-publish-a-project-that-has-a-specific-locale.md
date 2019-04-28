@@ -21,12 +21,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6d5bb4be34a6a476e975c240f8a9d99114b870f0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 76d0b61ba3eb8c0ff995aef4118fe21a83fc94c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442689"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Instrukcje: Publikowanie projektu o specyficznych ustawieniach regionalnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60092919"
 Nie jest niczym niezwykłym aplikacji zawierają składniki, które mają różnych ustawień regionalnych. W tym scenariuszu może utworzyć rozwiązanie, które ma kilka projektów, a następnie opublikuj oddzielnych projektów dla poszczególnych ustawień regionalnych. Ta procedura pokazuje, jak publikować pierwszego projektu w rozwiązaniu przy użyciu ustawień regionalnych "PL" za pomocą makra. Jeśli chcesz wypróbować tę procedurę za pomocą ustawień regionalnych innych niż "en", upewnij się ustawić `localeString` w makrze zgodne z ustawieniami regionalnymi, którego używasz (na przykład, "de" lub "de-DE").  
   
 > [!NOTE]
->  Użycie tego makra, Opublikuj Lokalizacja powinna być udział prawidłowy adres URL lub Universal Naming Convention (UNC). Ponadto usługi Internet Information Services (IIS) musi być zainstalowany na tym komputerze. Aby zainstalować usługi IIS, na **Start** menu, kliknij przycisk **Panelu sterowania**. Kliknij dwukrotnie **Dodaj lub usuń programy**. W **apletu Dodaj lub usuń programy**, kliknij przycisk **Dodaj/Usuń składniki Windows**. W **Kreatora składników Windows**, wybierz opcję **Internet Information Services (IIS)** pole wyboru w **składniki** listy. Następnie kliknij przycisk **Zakończ** aby zamknąć kreatora.  
+> Użycie tego makra, Opublikuj Lokalizacja powinna być udział prawidłowy adres URL lub Universal Naming Convention (UNC). Ponadto usługi Internet Information Services (IIS) musi być zainstalowany na tym komputerze. Aby zainstalować usługi IIS, na **Start** menu, kliknij przycisk **Panelu sterowania**. Kliknij dwukrotnie **Dodaj lub usuń programy**. W **apletu Dodaj lub usuń programy**, kliknij przycisk **Dodaj/Usuń składniki Windows**. W **Kreatora składników Windows**, wybierz opcję **Internet Information Services (IIS)** pole wyboru w **składniki** listy. Następnie kliknij przycisk **Zakończ** aby zamknąć kreatora.  
   
 ### <a name="to-create-the-publishing-macro"></a>Aby utworzyć publikowania — makro  
   

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f48ba44d41286f1cf5eda6ececb68d21d39abd14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62552791"
 ---
 # <a name="current-tab"></a>Aktualna karta
 Klikając **bieżącego** karcie, możesz zobaczyć stos wywołań (jeśli jest dostępny) jest najbardziej zbliżony do bieżącego zaznaczenia punktu na osi czasu zaznaczenie segment wątku procesora CPU.  W tym przypadku punktu zaznaczenia jest reprezentowana przez czarną strzałkę lub daszek powyżej osi czasu. Po wybraniu segment blokujący karetkę nie jest wyświetlany, ponieważ nie było żadnych wykonywania. Jednak segmentu nadal jest wyróżniona i stos wywołań jest wyświetlany.

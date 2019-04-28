@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca7a85bf7ace1f9aeb0e47e031cda5f793df2331
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa8fbfd8837fb35617b79089fffd11ea3b8d2e93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444531"
 ---
 # <a name="refactoring-c"></a>Refaktoryzacja (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Refaktoryzacja to proces po została zapisana przez zmianę wewnętrznej struktu
  Jeśli kompilator nie ma dokładnego zrozumienia działania programu i jest możliwe, aparat refaktoryzacji może nie zaktualizować wszystkie odpowiednie odwołania, zostanie wyświetlone okno dialogowe ostrzeżenia. To okno dialogowe Ostrzeżenie udostępnia również możliwość nad wersją zapoznawczą swój kod w **podgląd zmian** okno dialogowe, aby zatwierdzić zmiany.  
   
 > [!NOTE]
->  Jeśli metoda zawiera błąd składniowy (która IDE wskazuje czerwoną linią falistą), następnie aparat refaktoryzacji nie zaktualizuje wszystkie odwołania do elementu w ramach tej metody. W poniższym przykładzie przedstawiono to zachowanie.  
+> Jeśli metoda zawiera błąd składniowy (która IDE wskazuje czerwoną linią falistą), następnie aparat refaktoryzacji nie zaktualizuje wszystkie odwołania do elementu w ramach tej metody. W poniższym przykładzie przedstawiono to zachowanie.  
   
  Domyślnie jeśli można wykonać operacji refaktoryzacji, bez odwołania podgląd zmian wykryto błąd kompilacji w programie, a następnie środowisko programistyczne wyświetla to okno dialogowe ostrzeżenia.  
   

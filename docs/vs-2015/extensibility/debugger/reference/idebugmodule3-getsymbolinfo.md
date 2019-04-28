@@ -13,12 +13,12 @@ ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a500b84f04f5f9dce37515edae71fda509a63bbb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 48dd08b8ef1a8b32497d03dc7989b32a22ee5a9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426354"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ int GetSymbolInfo(
  Jeśli metoda się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 > [!NOTE]
->  Zwracany ciąg (w `MODULE_SYMBOL_SEARCH_INFO` struktury) może być pusta nawet wtedy, gdy `S_OK` jest zwracana. W tym przypadku nie było żadnych informacji, aby zwrócić.  
+> Zwracany ciąg (w `MODULE_SYMBOL_SEARCH_INFO` struktury) może być pusta nawet wtedy, gdy `S_OK` jest zwracana. W tym przypadku nie było żadnych informacji, aby zwrócić.  
   
 ## <a name="remarks"></a>Uwagi  
  Jeśli `bstrVerboseSearchInfo` pole `MODULE_SYMBOL_SEARCH_INFO` struktura nie jest pusty, a następnie zawiera listę ścieżek przeszukiwane i wyniki tego wyszukiwania. Lista jest formatowana ze ścieżką, w którym następuje wielokropek ("..."), a następnie wynik. W przypadku więcej niż jedną parę wynik ścieżki każdej pary jest oddzielony przez parę "\r\n" (powrót karetki return/wysuw wiersza). Wzorzec wygląda następująco:  
@@ -66,7 +66,7 @@ int GetSymbolInfo(
  W tym przykładzie metoda ta zwraca trzy ścieżki na trzy inne wyniki wyszukiwania. Każdy wiersz jest kończony przy użyciu pary karetki return/wysuw wiersza. Przykładowe dane wyjściowe po prostu wyświetla wyniki wyszukiwania jako pojedynczy ciąg.  
   
 > [!NOTE]
->  Wynik stanu to wszystko, co natychmiast po "..." do końca wiersza.  
+> Wynik stanu to wszystko, co natychmiast po "..." do końca wiersza.  
   
 ```cpp#  
 void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)  

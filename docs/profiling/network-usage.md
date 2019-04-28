@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9fb62abc7765d65c394e92b9a5e4cfa5fbe3fd1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2d0a806ef6e6c3fb20ce4d2697f3b4fe6ff6674e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403556"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analizowanie użycia sieci w aplikacjach platformy UWP
 Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacje sieciowe, wykonywane przy użyciu [Windows.Web.Http API](/uwp/api/windows.web.http). Analizowanie danych może pomóc rozwiązać problemy, takie jak problemy dostępu i uwierzytelniania, nieprawidłowe użycie pamięci podręcznej i wyświetlania jest niska i pobrać wydajności.
@@ -22,7 +22,7 @@ Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacje
  Narzędzie do sieci obsługuje tylko aplikacje platformy uniwersalnej systemu Windows. Inne platformy nie są obsługiwane w tej chwili.
 
 > [!NOTE]
->  Aby uzyskać bardziej szczegółowy opis narzędzie do sieci, zobacz [wprowadzenie do programu Visual Studio narzędzie sieci](https://devblogs.microsoft.com/visualstudio/introducing-visual-studios-network-tool/).
+> Aby uzyskać bardziej szczegółowy opis narzędzie do sieci, zobacz [wprowadzenie do programu Visual Studio narzędzie sieci](https://devblogs.microsoft.com/visualstudio/introducing-visual-studios-network-tool/).
 
 ## <a name="collect-network-tool-data"></a>Zbieranie danych narzędzie sieci
  Należy uruchomić **sieci** narzędzie z otwartym projekcie programu Visual Studio na komputerze programu Visual Studio.

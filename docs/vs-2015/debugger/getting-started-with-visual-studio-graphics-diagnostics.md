@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 49a27141fb8d681f2b3f91b5bf32818fd2cd5045
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a69b6fd2f96f737d032676e5cd250a985bf69fb6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446467"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Wprowadzenie do diagnostyki grafiki w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ W tej sekcji umożliwią przygotowanie skorzystać z Graphics Diagnostics po raz
    Funkcja narzędzi graficznych jest również instalowany automatycznie podczas instalacji zestawu Windows 10 SDK.
 
 > [!TIP]
->  Opcjonalna funkcja narzędzi graficznych w systemu Windows 10 oferuje uproszczone przechwytywanie i odtwarzanie funkcje — takie jak program wiersza polecenia do przechwytywania **dxcap.exe**— które mogą być używane w pomocy technicznej, testowania i diagnostycznych scenariusze maszyny, na którym nie są zainstalowane narzędzia dla deweloperów. Aby uzyskać więcej informacji, zobacz [narzędzia wiersza polecenia do przechwytywania](../debugger/command-line-capture-tool.md) tematu.
+> Opcjonalna funkcja narzędzi graficznych w systemu Windows 10 oferuje uproszczone przechwytywanie i odtwarzanie funkcje — takie jak program wiersza polecenia do przechwytywania **dxcap.exe**— które mogą być używane w pomocy technicznej, testowania i diagnostycznych scenariusze maszyny, na którym nie są zainstalowane narzędzia dla deweloperów. Aby uzyskać więcej informacji, zobacz [narzędzia wiersza polecenia do przechwytywania](../debugger/command-line-capture-tool.md) tematu.
 
 ## <a name="using-graphics-diagnostics-for-the-first-time"></a>Używanie Graphics Diagnostics po raz pierwszy
  Teraz, gdy masz wszystko, czego potrzebujesz, możesz rozpocząć korzystanie z diagnostyki grafiki. Po prostu wykonaj następujące kroki.
@@ -80,7 +80,7 @@ W tej sekcji umożliwią przygotowanie skorzystać z Graphics Diagnostics po raz
  Teraz możesz uruchomić sesję pierwszy diagnostyki grafiki. W programie Visual Studio, w menu głównym wybierz **debugowania grafiki, Rozpocznij diagnostykę**, lub po prostu naciśnij **klawisze Alt + F5**. Spowoduje to uruchomienie aplikacji w obszarze Diagnostyka grafiki i wyświetla okien sesji diagnostyki w programie Visual Studio.
 
 > [!IMPORTANT]
->  Jeśli Twoja aplikacja działa w systemie Windows 10 i nie został jeszcze zainstalowany opcjonalna funkcja narzędzi graficznych, monit będzie Zrób to teraz. Należy go zainstalować, aby skorzystać z Graphics Diagnostics, w systemie Windows 10.
+> Jeśli Twoja aplikacja działa w systemie Windows 10 i nie został jeszcze zainstalowany opcjonalna funkcja narzędzi graficznych, monit będzie Zrób to teraz. Należy go zainstalować, aby skorzystać z Graphics Diagnostics, w systemie Windows 10.
 
 ### <a name="3---capture-frames"></a>3 — przechwytywanie ramek
  Możesz przechwycić ramki, zaraz po uruchomieniu aplikacji.

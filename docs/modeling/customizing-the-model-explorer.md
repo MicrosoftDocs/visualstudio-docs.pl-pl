@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 745fea2ebaba478d9c405ab51db607e5eb025cc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 65ada4a061fd928a074c9fcdb24fab60a277c457
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445844"
 ---
 # <a name="customizing-the-model-explorer"></a>Dostosowywanie Eksploratora modelu
 Możesz zmienić wygląd i zachowanie Eksploratora dla projektanta języka specyficznego dla domeny w następujący sposób:
@@ -59,7 +59,7 @@ Możesz zmienić wygląd i zachowanie Eksploratora dla projektanta języka specy
     Eksplorator powinny być widoczne trzy **aktora** węzły, które mają ikona.
 
 > [!NOTE]
->  Jeśli zostały ustawione ikoną węzła dla każdego elementu wyświetlanego w Eksploratorze wygenerowane, wszystkie węzły w Eksploratorze zostanie wyświetlona ikona. Jeśli nie ustawiono żadnej ikony, węzły, zostanie wyświetlona ikona domyślna.
+> Jeśli zostały ustawione ikoną węzła dla każdego elementu wyświetlanego w Eksploratorze wygenerowane, wszystkie węzły w Eksploratorze zostanie wyświetlona ikona. Jeśli nie ustawiono żadnej ikony, węzły, zostanie wyświetlona ikona domyślna.
 
 ## <a name="changing-the-name-displayed-on-an-explorer-node"></a>Zmiana nazwy wyświetlane w węźle Explorer
  Możesz zmienić sposób wyświetlania nazwy elementów modelu w Eksploratorze. Poniższa procedura przedstawia sposób wyświetlania nazwy **zadań** która odwołuje się do niej **komentarz** w węźle komentarz.

@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3409cf6f5f86ea4e4649049f3cc1c49fbb1f5c7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 549c4f5225773a7d9ac40c16a9db6ca9309c7d6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437776"
 ---
 # <a name="using-saved-intellitrace-data"></a>Korzystanie z zapisanych danych funkcji IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz 
     - W obszarze **kroki odtwarzania**, wybierz **IntelliTrace** łącza.  
   
 > [!TIP]
->  Jeśli plik IntelliTrace został zamknięty podczas debugowania, możesz uruchomić go w łatwy sposób. Przejdź do **debugowania** menu, wybierz **IntelliTrace**, **Pokaż podsumowanie dziennika**. Można również wybrać **Pokaż podsumowanie dziennika** w **IntelliTrace** okna. Jest on dostępny tylko podczas debugowania przy użyciu funkcji IntelliTrace.  
+> Jeśli plik IntelliTrace został zamknięty podczas debugowania, możesz uruchomić go w łatwy sposób. Przejdź do **debugowania** menu, wybierz **IntelliTrace**, **Pokaż podsumowanie dziennika**. Można również wybrać **Pokaż podsumowanie dziennika** w **IntelliTrace** okna. Jest on dostępny tylko podczas debugowania przy użyciu funkcji IntelliTrace.  
   
 ## <a name="Understand"></a> Informacje w dzienniku IntelliTrace  
  Niektóre z poniższych sekcji w pliku .iTrace są wyświetlane tylko wtedy, gdy zostały zebrane dane z określonego źródła, na przykład z programu Test Manager lub aplikacji programu SharePoint.  
