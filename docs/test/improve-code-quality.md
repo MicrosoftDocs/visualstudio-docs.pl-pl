@@ -11,11 +11,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: 7bcb75da8a21090450c18080240f76ae17c10281
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820999"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Narzędzia do testowania w programie Visual Studio
 

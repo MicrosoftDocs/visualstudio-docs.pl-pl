@@ -18,12 +18,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 835bab46a9537a3a54d0155d9835ab11eaa4c834
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 27090998a7afa6f99da9152e1f5bb7407fed6aa0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423269"
 ---
 # <a name="clickonce-security-and-deployment"></a>Wskazówki dotyczące wdrażania ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,13 +78,13 @@ ms.locfileid: "54753930"
  Aplikację można dodać do użytkownika **Start** menu i **apletu Dodaj lub usuń programy** w **Panelu sterowania**. W przeciwieństwie do innych technologii wdrażania, nic nie zostanie dodany do **Program Files** folder lub rejestru i nie prawa administracyjne są wymagane do instalacji  
   
 > [!NOTE]
->  Istnieje również możliwość zapobiec aplikacji, z którego jest dodawany **Start** menu i **apletu Dodaj lub usuń programy** grupy, ułatwiając obowiązuje zachowują się jak aplikacja sieci Web. Aby uzyskać więcej informacji, zobacz [Wybieranie strategii wdrażania ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  
+> Istnieje również możliwość zapobiec aplikacji, z którego jest dodawany **Start** menu i **apletu Dodaj lub usuń programy** grupy, ułatwiając obowiązuje zachowują się jak aplikacja sieci Web. Aby uzyskać więcej informacji, zobacz [Wybieranie strategii wdrażania ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  
   
 ### <a name="updating-clickonce-applications"></a>Aktualizowanie aplikacji ClickOnce  
  Deweloperzy aplikacji, tworząc zaktualizowaną wersję aplikacji, wygenerować nowy manifest aplikacji i skopiuj pliki do lokalizacji wdrożenia — zwykle równorzędny folder do folderu początkowego wdrożenia aplikacji. Administrator aktualizuje manifestu wdrażania, aby wskazać lokalizację nowej wersji aplikacji.  
   
 > [!NOTE]
->  **Kreatora publikacji** w programie Visual Studio może służyć do wykonania tych kroków.  
+> **Kreatora publikacji** w programie Visual Studio może służyć do wykonania tych kroków.  
   
  Oprócz lokalizacji wdrożenia manifest wdrożenia zawiera również lokalizacji aktualizacji (strony sieci Web lub udostępnianie plików sieciowych), gdzie aplikacja sprawdza, czy zaktualizowane wersje. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] **Publikowanie** właściwości są używane do określania, kiedy i jak często aplikacja ma sprawdzać dostępność aktualizacji. Zachowanie aktualizacji można określić w pliku manifestu wdrożenia lub może pojawić się w interfejsie użytkownika aplikacji przez użytkownika [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] interfejsów API. Ponadto **Publikuj** właściwości można zastosować do wprowadzania obowiązkowych aktualizacji lub wrócić do wcześniejszej wersji. Aby uzyskać więcej informacji, zobacz [Wybieranie strategii aktualizacji ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
   

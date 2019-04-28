@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1134ac538487487834b754407a3cc1a90175c56b
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849945"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Wyrażenia w debugerze programu Visual Studio
 Debuger programu Visual Studio zawiera ewaluatory wyrażeń, które działają przy wprowadzaniu wyrażenia w **QuickWatch** okno dialogowe **Obejrzyj** oknie lub **bezpośrednie** okna. Ewaluatory wyrażeń są również w pracy w **punktów przerwania** okna i wielu innych miejscach w debugerze.
@@ -106,7 +106,7 @@ Funkcje wewnętrzne debugera:
 |**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Te funkcje wymagają procesu, który jest debugowany należy uruchomić w systemie Windows 8. Debugowanie plików zrzutu generowane z urządzenia z systemem Windows 8 również wymaga, aby komputer z programem Visual Studio systemem operacyjnym Windows 8. Jednak jeśli przeprowadzasz debugowanie zdalne urządzenie Windows 8, komputer z programem Visual Studio może być uruchomiony Windows 7.|
 |**Różne**|__log2<br /><br /> Zwraca dziennik podstawie 2 określona liczba całkowita zaokrąglona do najbliższej liczby całkowitej. niższe.|
 
-## <a name="ccli---unsupported-expressions"></a>C + +/ interfejsu wiersza polecenia — nieobsługiwane wyrażenia
+## <a name="ccli---unsupported-expressions"></a>C++/ Interfejs wiersza polecenia — nieobsługiwane wyrażenia
 
 - Wzory, które obejmują wskaźniki lub zdefiniowanych przez użytkownika rzutowania, nie są obsługiwane.
 

@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 29d4ee5455a05bfac98debc2f6ebdbb06b813f31
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8b1d3a5209490c253f4646210d4eeeda9d807155
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417803"
 ---
 # <a name="model-user-requirements"></a>Wymagania modelu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Program Visual Studio pozwala zrozumieć, omówienia i komunikują się potrzeby
   Modelu wymagań zapewnia największe korzyści, jeśli go użyć do dyskusji fokus z użytkowników lub ich przedstawicieli, a go ponownie na początku każdej iteracji. Nie masz Oznacz go jako ukończony szczegółowo przed napisaniem kodu. Częściowo działającą aplikację, nawet wtedy, gdy znacznie uproszczone, zazwyczaj są podstawą najbardziej pobudzania dyskusję na temat wymagań użytkowników. Model jest efektywny sposób podsumowywania wyniki tych dyskusji. Aby uzyskać więcej informacji, zobacz [używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md).  
   
 > [!NOTE]
->  W tych tematach "system" oznacza system lub aplikację, którą tworzysz. Może być duży zbiór wielu składniki sprzętu i oprogramowania; lub pojedynczej aplikacji; lub składnik oprogramowania w systemie większe. W każdym przypadku modelu wymagań w tym artykule opisano zachowanie, które nie jest widoczny spoza systemu, czy za pośrednictwem interfejsu użytkownika lub interfejsu API.  
+> W tych tematach "system" oznacza system lub aplikację, którą tworzysz. Może być duży zbiór wielu składniki sprzętu i oprogramowania; lub pojedynczej aplikacji; lub składnik oprogramowania w systemie większe. W każdym przypadku modelu wymagań w tym artykule opisano zachowanie, które nie jest widoczny spoza systemu, czy za pośrednictwem interfejsu użytkownika lub interfejsu API.  
   
 ## <a name="common-tasks"></a>Typowe zadania  
  Można utworzyć kilka różnych widoków wymagań użytkowników.  Każdy widok zawiera określonego typu informacji.  Podczas tworzenia tych widoków, najlepiej jest często przenieść z jednego do drugiego. Można uruchomić w dowolnym widoku.  

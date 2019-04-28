@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Dowiedz się, jak maksymalnie wykorzystać możliwości subskrypcji programu Visual Studio
 searchscope: VS Subscription
 ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833974"
 ---
 # <a name="managing-subscriptions"></a>Zarządzanie subskrypcjami
 
@@ -153,7 +153,7 @@ Odp.: W zależności od kanału zakupu firma Microsoft udostępnia danych klient
 |--------------------------------------------------------|-----------------|
 |    Handlu detalicznego (np. przez Microsoft Store)               |    360          |
 |    Wolumin licencjonowania Service Center (VLSC)              |    180          |
-|    Produkty firmy Microsoft i umowy o świadczenie usług (MPSA)    |    180          |
+|    Microsoft Products and Services Agreement (MPSA)    |    180          |
 |    Subskrypcje chmury programu Visual Studio                   |    180          |
 |    Program (np. MCT, MPN, BizSpark, Imagine)          |    180          |
 |    Nie do odsprzedaży (np. MVP, MSP)                      |    180          |

@@ -10,12 +10,12 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cd99d223d8071b4f0c10052b0b42c421d2360e2a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a6598e2f1a178845b3ad2017716576439185379e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426453"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Zarządzanie ładowaniem projektu w rozwiązaniu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
  Jeśli Menedżera obciążenia rozwiązania jest przeznaczona do zarządzania ogólnie rzecz biorąc ładowania rozwiązania, można zaimplementować jako część pakietu VSPackage. Pakiet powinna być ustawiona na automatyczne ładowanie, dodając <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> na VSPackage o wartości <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid>. Następnie można aktywować Menedżera obciążenia rozwiązania <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.  
   
 > [!NOTE]
->  Aby uzyskać więcej informacji na temat pakietów autoloading zobacz [ładowanie pakietów VSPackage](../extensibility/loading-vspackages.md).  
+> Aby uzyskać więcej informacji na temat pakietów autoloading zobacz [ładowanie pakietów VSPackage](../extensibility/loading-vspackages.md).  
   
  Ponieważ program Visual Studio rozpoznaje tylko ostatni rozwiązania obciążenia Menedżera aktywacji, menedżerów obciążenia ogólne rozwiązanie powinien zawsze wykrywa, czy przed aktywowaniem samodzielnie jest istniejącego menedżera obciążenia. Jeśli wywołanie GetProperty() usłudze rozwiązania dla <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> zwraca `null`, istnieje nie aktywne rozwiązanie Menedżera obciążenia. Jeśli nie zwróci wartość null, sprawdź, czy obiekt jest taki sam jak Menedżer ładowania rozwiązania.  
   
@@ -114,4 +114,4 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: wywołanie tej metody wymusza projektu w `guidProjectID` załadować przed powrotem z metody.  
   
 > [!NOTE]
->  . Domyślnie tylko projekty, które mają zapotrzebowanie obciążenia i priorytety obciążenia w tle są załadowane, ale jeśli <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> flaga jest przekazywany do metody, zostaną załadowane wszystkie projekty z wyjątkiem tych, które zostaną oznaczone, aby jawnie załadować.
+> . Domyślnie tylko projekty, które mają zapotrzebowanie obciążenia i priorytety obciążenia w tle są załadowane, ale jeśli <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> flaga jest przekazywany do metody, zostaną załadowane wszystkie projekty z wyjątkiem tych, które zostaną oznaczone, aby jawnie załadować.

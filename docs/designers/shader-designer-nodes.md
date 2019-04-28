@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7bd7282a0826f10a0438f95164600419e0784a2a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844232"
 ---
 # <a name="shader-designer-nodes"></a>Węzły projektanta cieniowania
 Artykuły w tej sekcji dokumentacji zawierają informacje dotyczące różnych węzłów programu Shader Designer używanych do tworzenia efektów grafiki.

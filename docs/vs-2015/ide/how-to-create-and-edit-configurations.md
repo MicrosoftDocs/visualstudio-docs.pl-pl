@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c507bb2ea6fa231b2b3f3d92cebb3ca78bb4eb5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b76ad8ed6e0cc8bdf60a2053dd11106b5e03a7d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422898"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Instrukcje: Tworzenie i edytowanie konfiguracji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Można utworzyć kilka konfiguracji kompilacji dla rozwiązania. Na przykład mo
 - W **Eksploratora rozwiązań**, otwórz menu skrótów dla rozwiązania, a następnie wybierz **programu Configuration Manager**.  
   
   > [!NOTE]
-  >  Jeśli **programu Configuration Manager** polecenie nie pojawi się w menu skrótów, Szukaj w obszarze **kompilacji** menu na pasku menu. Jeśli nie pojawia się ona tam żadnego z nich, na pasku menu wybierz **narzędzia**, **opcje**, a następnie w okienku po lewej stronie **opcje** okna dialogowego rozwiń **projekty i Rozwiązania**, **ogólne**i w okienku po prawej stronie wybierz **Pokaż zaawansowane konfiguracje kompilacji** pole wyboru.  
+  > Jeśli **programu Configuration Manager** polecenie nie pojawi się w menu skrótów, Szukaj w obszarze **kompilacji** menu na pasku menu. Jeśli nie pojawia się ona tam żadnego z nich, na pasku menu wybierz **narzędzia**, **opcje**, a następnie w okienku po lewej stronie **opcje** okna dialogowego rozwiń **projekty i Rozwiązania**, **ogólne**i w okienku po prawej stronie wybierz **Pokaż zaawansowane konfiguracje kompilacji** pole wyboru.  
   
    W **programu Configuration Manager** okno dialogowe, można użyć **Konfiguracja rozwiązania aktywnego** listy rozwijanej wybierz konfigurację kompilacji całego rozwiązania, zmodyfikować istniejące lub Utwórz nową Konfiguracja. Możesz użyć **aktywną platformą rozwiązania** listy rozwijanej, aby wybrać platformy, obiekty docelowe konfiguracji, zmodyfikuj istniejącą grupę lub Dodaj nową platformę. **Projektu kontekstów** okienko zawiera listę projektów w rozwiązaniu. Dla każdego projektu można wybrać konfiguracji specyficznych dla projektu i platform, zmodyfikuj istniejące, lub Utwórz nową konfigurację lub Dodaj nową platformę. Możesz również wybrać pola wyboru, które wskazują, czy każdy projekt jest dołączana w przypadku korzystania z konfiguracji całego rozwiązania do kompilacji lub wdrożenia rozwiązania.  
   

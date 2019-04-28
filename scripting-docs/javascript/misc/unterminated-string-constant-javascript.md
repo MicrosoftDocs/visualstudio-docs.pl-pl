@@ -14,18 +14,18 @@ ms.assetid: 5083809e-9828-4aea-b9b0-80f46d6f3812
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23d8f922d169cf9f52b46ac052edd6bef863a65b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c3c5f38ba41e2cadfd0a8234413c63cc96b6744a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435645"
 ---
 # <a name="unterminated-string-constant-javascript"></a>Niezakończona stała typu string (JavaScript)
 Nie zakończył swojej stała typu string z cudzysłowu zamykającego. Stałe typu String muszą być ujęte w dwa znaki cudzysłowu.  
   
 > [!NOTE]
->  Można użyć dopasowania pary pojedynczych lub podwójnych cudzysłowów. Znaki podwójnego cudzysłowu mogą być zawarte w ciągach znaków objętych pojedynczymi znakami cudzysłowu, a znaki pojedynczego cudzysłowu mogą być zawarte w ciągach ujęty w podwójny cudzysłów.  
+> Można użyć dopasowania pary pojedynczych lub podwójnych cudzysłowów. Znaki podwójnego cudzysłowu mogą być zawarte w ciągach znaków objętych pojedynczymi znakami cudzysłowu, a znaki pojedynczego cudzysłowu mogą być zawarte w ciągach ujęty w podwójny cudzysłów.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   

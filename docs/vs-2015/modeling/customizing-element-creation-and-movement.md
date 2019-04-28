@@ -13,12 +13,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ccf761521d43e3f5ff9d12a4af7fbae4addcddc9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f956f492c3dc690ef2edb67d9a7c75e6c0108820
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433270"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Dostosowywanie tworzenia i przesuwania elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,9 +72,9 @@ Możesz zezwolić elementu można przeciągać innym, z przybornika lub wklejeni
    Na przykład można ustawić właściwości w elemencie scalony przy użyciu danych z nowej lokalizacji w modelu.  
   
 > [!NOTE]
->  Jeśli piszesz kod niestandardowy scalania, dotyczy tylko scaleń, które są wykonywane przy użyciu tego EMD. Czy istnieją inne EMDs, które łączą się ten sam typ obiektu, w przypadku innych kodu niestandardowego, który tworzy te obiekty bez użycia EMD następnie one pozostaną nienaruszone przez kod niestandardowy scalania.  
+> Jeśli piszesz kod niestandardowy scalania, dotyczy tylko scaleń, które są wykonywane przy użyciu tego EMD. Czy istnieją inne EMDs, które łączą się ten sam typ obiektu, w przypadku innych kodu niestandardowego, który tworzy te obiekty bez użycia EMD następnie one pozostaną nienaruszone przez kod niestandardowy scalania.  
 >   
->  Jeśli chcesz upewnić się, że nowy element lub nową relację zawsze jest przetwarzany przez kod niestandardowy, należy wziąć pod uwagę definiowanie `AddRule` relacji osadzania i `DeleteRule` dla klasy domeny elementu. Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).  
+> Jeśli chcesz upewnić się, że nowy element lub nową relację zawsze jest przetwarzany przez kod niestandardowy, należy wziąć pod uwagę definiowanie `AddRule` relacji osadzania i `DeleteRule` dla klasy domeny elementu. Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).  
   
 ## <a name="example-defining-an-emd-without-custom-code"></a>Przykład: Definiowanie EMD bez konieczności pisania kodu niestandardowego  
  Poniższy przykład pozwala użytkownikom na tworzenie elementu i łącznik w tym samym czasie, przeciągając je z przybornika do istniejącego kształtu. W przykładzie dodano EMD do definicji DSL. Przed tą modyfikacją użytkowników można przeciągnąć narzędzia na diagram, ale nie do kształtów.  

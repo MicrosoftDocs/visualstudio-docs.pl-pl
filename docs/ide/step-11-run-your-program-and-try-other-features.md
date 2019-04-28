@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ae2894a60392b444a9415a4951170be097ef61a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ee62d8c5b9a657b09feda01d6275a79ee91b487d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430818"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Krok 11. Uruchamianie programu i próbowanie innych funkcji
 Program jest gotowy i gotowa do uruchomienia. Możesz uruchomić program i ustawić kolor tła <xref:System.Windows.Forms.PictureBox>. Aby dowiedzieć się więcej, spróbuj poprawić program zmieniając kolor formularza, dostosowując przyciski i pole wyboru i zmieniając właściwości formularza.
@@ -34,7 +34,7 @@ Program jest gotowy i gotowa do uruchomienia. Możesz uruchomić program i ustaw
 3. Wybierz kolor, aby ustawić kolor tła PictureBox. Przyjrzyj się bliżej `backgroundButton_Click()` metodę, aby zrozumieć, jak to działa.
 
     > [!NOTE]
-    >  Możesz załadować obraz z Internetu wklejając jego adres URL do **Otwórz plik** okno dialogowe. Spróbuj odnaleźć obraz z przezroczystym tłem, więc pojawia się kolor tła.
+    > Możesz załadować obraz z Internetu wklejając jego adres URL do **Otwórz plik** okno dialogowe. Spróbuj odnaleźć obraz z przezroczystym tłem, więc pojawia się kolor tła.
 
 4. Wybierz **Wyczyść obraz** przycisk, aby upewnić się, czy to powoduje wyczyszczenie. Następnie zamknij program, wybierając **Zamknij** przycisku.
 

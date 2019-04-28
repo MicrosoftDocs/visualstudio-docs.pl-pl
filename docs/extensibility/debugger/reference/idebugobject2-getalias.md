@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7d08d9108ed4a433bcbcb17d6d4587532542b303
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62872466"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 Pobiera alias skojarzony z tym obiektem, jeśli istnieje.

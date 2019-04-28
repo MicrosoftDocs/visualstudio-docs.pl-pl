@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3a888605cfae6b5430782defd198f83988c31870
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895957"
 ---
 # <a name="copy-programmatic-capture"></a>Kopiowanie (przechwycenie programowe)
 Kopiuje zawartość active grafiki (.vsglog) pliku do nowego pliku.

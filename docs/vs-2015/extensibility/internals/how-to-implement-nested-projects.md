@@ -11,12 +11,12 @@ ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5100fb42cba7c993861ef5b9fa0682400b0cfa4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 427ef425c64323246ffe1141d081fd7d921506a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435237"
 ---
 # <a name="how-to-implement-nested-projects"></a>Instrukcje: Implementowanie zagnieżdżonych projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Podczas tworzenia projektu zagnieżdżonego typu są kilka dodatkowych kroków, 
 1. Zintegrowanego środowiska programistycznego (IDE) ładuje informacje plików i uruchamiania projektów projektu nadrzędnego, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interfejsu. Projekt nadrzędny zostanie utworzony i dodany do rozwiązania.  
   
    > [!NOTE]
-   >  W tym momencie jest zbyt wczesny procesu dla projektu nadrzędnego do utworzenia projektu zagnieżdżonego, ponieważ projekt nadrzędny musi zostać utworzony przed utworzeniem projektów podrzędnych. Po tej sekwencji projekt nadrzędny można stosować ustawienia dla projektów podrzędnych, i projektów podrzędnych można pobrać informacji z projektów nadrzędnego, w razie potrzeby. Ta sekwencja jest, jeśli jest ona potrzebna w przez klientów, takich jak kontroli kodu źródłowego (SCC) i Eksplorator rozwiązań.  
+   > W tym momencie jest zbyt wczesny procesu dla projektu nadrzędnego do utworzenia projektu zagnieżdżonego, ponieważ projekt nadrzędny musi zostać utworzony przed utworzeniem projektów podrzędnych. Po tej sekwencji projekt nadrzędny można stosować ustawienia dla projektów podrzędnych, i projektów podrzędnych można pobrać informacji z projektów nadrzędnego, w razie potrzeby. Ta sekwencja jest, jeśli jest ona potrzebna w przez klientów, takich jak kontroli kodu źródłowego (SCC) i Eksplorator rozwiązań.  
   
     Projekt nadrzędny musi czekać <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> metoda wywoływana przez środowisko IDE, zanim można utworzyć jego zagnieżdżonych (podrzędny) w projekcie lub w projektach.  
   
@@ -57,7 +57,7 @@ Podczas tworzenia projektu zagnieżdżonego typu są kilka dodatkowych kroków, 
     Jeśli go jeszcze nie istnieje, projekt nadrzędny tworzy identyfikator GUID dla każdego projektu zagnieżdżonego, wywołując `CoCreateGuid`.  
   
    > [!NOTE]
-   >  `CoCreateGuid` Interfejs API modelu COM jest wywoływana, gdy ma zostać utworzony identyfikator GUID. Aby uzyskać więcej informacji, zobacz `CoCreateGuid` i identyfikatory GUID w bibliotece MSDN.  
+   > `CoCreateGuid` Interfejs API modelu COM jest wywoływana, gdy ma zostać utworzony identyfikator GUID. Aby uzyskać więcej informacji, zobacz `CoCreateGuid` i identyfikatory GUID w bibliotece MSDN.  
   
     Ten identyfikator GUID są zapisane w projekcie nadrzędnej w pliku projektu mają być pobrane przy następnym, który jest otwierany w środowisku IDE. Zobacz krok 4, aby uzyskać więcej informacji dotyczących wywołania `AddVirtualProjectEX` można pobrać `guidProjectID` dla projektu podrzędnego.  
   
@@ -66,7 +66,7 @@ Podczas tworzenia projektu zagnieżdżonego typu są kilka dodatkowych kroków, 
      Ponieważ nadrzędne i podrzędne projekty są tworzone programowo, można ustawić właściwości dla zagnieżdżonych projektów w tym momencie.  
   
     > [!NOTE]
-    >  Nie tylko, czy są wyświetlane informacje o kontekście z projektu zagnieżdżonego, ale można również zadawać, jeśli projekt nadrzędny ma dowolnego kontekstu dla tego elementu, sprawdzając <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. W ten sposób możesz dodać dodatkowe atrybuty dynamiczna Pomoc i opcje menu określonych dla poszczególnych projektów zagnieżdżonych.  
+    > Nie tylko, czy są wyświetlane informacje o kontekście z projektu zagnieżdżonego, ale można również zadawać, jeśli projekt nadrzędny ma dowolnego kontekstu dla tego elementu, sprawdzając <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. W ten sposób możesz dodać dodatkowe atrybuty dynamiczna Pomoc i opcje menu określonych dla poszczególnych projektów zagnieżdżonych.  
   
 10. Hierarchia zaprojektowano pod kątem wyświetlania w oknie Eksploratora rozwiązań z wywołaniem <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> metody.  
   

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9953190220acf572ac04b18e9018c1d45a3b2c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 59b8ed5c74d998b47ff4a187b420695eab5be035
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807725"
 ---
 # <a name="xml-document-validation"></a>Walidacja dokumentów XML
 
@@ -21,21 +21,21 @@ Edytor XML sprawdza składni XML 1.0 i wykonuje sprawdzanie poprawności danych 
 
  Schematy używane podczas sprawdzania poprawności znajdują się przez dopasowanie `targetNamespace` skompilowanych schematu z deklaracją xmlns elementu. Skompilowany schematy są załadowane z jednej z następujących lokalizacji, w kolejności priorytetu:
 
--   Z pliku o nazwie określonej w **schematów** pola dokumentu **właściwości** okna.
+- Z pliku o nazwie określonej w **schematów** pola dokumentu **właściwości** okna.
 
--   Wbudowany schemat lub DTD.
+- Wbudowany schemat lub DTD.
 
--   Zewnętrznej definicji DTD lub `xsd:schemaLocation` i `xsd:noNamespaceSchemaLocation` atrybutu
+- Zewnętrznej definicji DTD lub `xsd:schemaLocation` i `xsd:noNamespaceSchemaLocation` atrybutu
 
--   "X-schema" XDR schematu identyfikatora URI obszaru nazw.
+- "X-schema" XDR schematu identyfikatora URI obszaru nazw.
 
 Schematy można także znaleźć w następujących lokalizacjach dodatkowych, jeśli schemat zawiera pusty docelowego obszaru nazw:
 
--   Inne okno edytora, która zawiera schemat.
+- Inne okno edytora, która zawiera schemat.
 
--   Schemat w bieżącym rozwiązaniu.
+- Schemat w bieżącym rozwiązaniu.
 
--   Schemat z katalogu pamięci podręcznej schematu.
+- Schemat z katalogu pamięci podręcznej schematu.
 
 ## <a name="xslt-files"></a>Pliki XSLT
  Podczas edytowania pliku XSLT *xslt.xsd* plik znajdujący się w pamięci podręcznej schematu jest używany do sprawdzania poprawności. Błędy sprawdzania poprawności są wyświetlane jako niebieskie faliste podkreślenia. Błędy kompilatora XSLT są wyświetlane jako czerwone faliste podkreślenia.

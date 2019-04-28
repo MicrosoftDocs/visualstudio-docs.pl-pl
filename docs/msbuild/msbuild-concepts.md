@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 12f0c8f2235db4c5eb332d52a454bd0093a34b68
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842792"
 ---
 # <a name="msbuild-concepts"></a>Pojęcia dotyczące programu MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zawiera podstawowe schematu XML, który służy do kontrolowania, jak platforma kompilacji tworzy oprogramowanie. Aby określić składniki w kompilacji i jak są one ma zostać utworzony, należy użyć tych czterech części programu MSBuild: właściwości, elementy, zadania i elementy docelowe.
@@ -31,6 +31,6 @@ ms.locfileid: "56606681"
 | [Porównanie właściwości i elementów](../msbuild/comparing-properties-and-items.md) | Porównanie właściwości programu MSBuild i elementów. Oba są używane do przekazywania informacji do zadań, oceny warunków i przechowywania wartości, które można się odwoływać w całym pliku projektu. |
 | [Znaki specjalne w MSBuild](../msbuild/msbuild-special-characters.md) | Wyjaśnia, jak jako znak ucieczki dla niektórych znaków, które [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] rezerwy dla specjalnych użycia w określonych kontekstach. |
 | [Przewodnik: Tworzenie pliku projektu MSBuild od zera](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Przedstawia sposób tworzenia podstawowego pliku projektu przyrostowo, używając tylko tekst edytora. |
-| [Przewodnik: Korzystanie z programu MSBuild](../msbuild/walkthrough-using-msbuild.md) | Wprowadza bloki konstrukcyjne programu MSBuild i pokazuje, jak napisać, modyfikowania i debugowania projektów programu MSBuild bez zamknięcia programu Visual Studio zintegrowane środowisko programistyczne (IDE). |
+| [Przewodnik: korzystanie z programu MSBuild](../msbuild/walkthrough-using-msbuild.md) | Wprowadza bloki konstrukcyjne programu MSBuild i pokazuje, jak napisać, modyfikowania i debugowania projektów programu MSBuild bez zamknięcia programu Visual Studio zintegrowane środowisko programistyczne (IDE). |
 | [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md) | Zawiera łącza do dokumentów, które zawierają informacje odniesienia. |
 | [MSBuild](../msbuild/msbuild.md) | Przedstawia omówienie schematu XML w pliku projektu i pokazuje, jak kontroluje procesów, które tworzy oprogramowanie. |

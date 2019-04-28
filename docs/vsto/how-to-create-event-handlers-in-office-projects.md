@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 577b12be220e2a695609db6c508d7aaf69c79f92
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 537bae766b71744a61e5158b1a859cade4cdcda7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419651"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Instrukcje: Tworzenie obsługi zdarzeń w projektach pakietu Office
   Istnieje kilka sposobów, aby utworzyć procedury obsługi zdarzeń w języku Visual Basic i C#. W widoku Projekt, możesz utworzyć domyślny procedury obsługi zdarzeń dla kontrolek przez dwukrotne kliknięcie formantu lub za pomocą okienka zdarzenia z **właściwości** okna, aby utworzyć procedury obsługi dla dowolnego zdarzenia w formancie. Jednak jeśli jesteś w widoku kodu, może nie chcesz przełączyć do widoku projektu, aby utworzyć program obsługi zdarzeń.
@@ -34,7 +34,7 @@ ms.locfileid: "60054524"
 1. Z **Nazwa klasy** listy rozwijanej u góry strony edytora kodu, zaznacz obiekt, który chcesz utworzyć program obsługi zdarzeń dla.
 
     > [!NOTE]
-    >  Jeśli chcesz tworzyć programy obsługi zdarzeń dla `ThisDocument` lub `ThisWorkbook`, musisz wybrać **(ThisDocument zdarzenia)** lub **(ThisWorkbook zdarzenia)** w **Nazwa klasy**listy rozwijanej
+    > Jeśli chcesz tworzyć programy obsługi zdarzeń dla `ThisDocument` lub `ThisWorkbook`, musisz wybrać **(ThisDocument zdarzenia)** lub **(ThisWorkbook zdarzenia)** w **Nazwa klasy**listy rozwijanej
 
 2. Z **nazwę metody** listy rozwijanej u góry strony edytora kodu, wybierz zdarzenie.
 

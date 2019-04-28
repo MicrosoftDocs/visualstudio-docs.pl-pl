@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67c9b9aed677e83cd8012b53530b4c474922108e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 00a5194abfcabac37e49a2e35ed025fd0f85dbe4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424818"
 ---
 # <a name="validate-data-in-datasets"></a>Weryfikowanie danych w zestawach danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Sprawdzanie poprawności danych jest procesem potwierdzania, że wartości wprow
   Domyślnie każda zmiana z kolumną w związku z tym wywołuje cztery zdarzenia. Pierwsza to <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.ColumnChanged> zdarzenia dla określonej kolumny, która jest zmieniany. Następnie są <xref:System.Data.DataTable.RowChanging> i <xref:System.Data.DataTable.RowChanged> zdarzenia. Jeśli wiersz wprowadzono wiele zmian, zdarzenia zostanie wygenerowany dla każdej zmiany.  
   
 > [!NOTE]
->  Wiersz danych <xref:System.Data.DataRow.BeginEdit%2A> metoda wyłącza <xref:System.Data.DataTable.RowChanging> i <xref:System.Data.DataTable.RowChanged> zdarzenia po każdej zmianie poszczególnych kolumn. W takim przypadku zdarzenie nie zostanie wywołane do momentu <xref:System.Data.DataRow.EndEdit%2A> metoda została wywołana, gdy <xref:System.Data.DataTable.RowChanging> i <xref:System.Data.DataTable.RowChanged> zdarzenia są wywoływane tylko raz. Aby uzyskać więcej informacji, zobacz [wyłączanie ograniczeń podczas zapełniania zestawu danych](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
+> Wiersz danych <xref:System.Data.DataRow.BeginEdit%2A> metoda wyłącza <xref:System.Data.DataTable.RowChanging> i <xref:System.Data.DataTable.RowChanged> zdarzenia po każdej zmianie poszczególnych kolumn. W takim przypadku zdarzenie nie zostanie wywołane do momentu <xref:System.Data.DataRow.EndEdit%2A> metoda została wywołana, gdy <xref:System.Data.DataTable.RowChanging> i <xref:System.Data.DataTable.RowChanged> zdarzenia są wywoływane tylko raz. Aby uzyskać więcej informacji, zobacz [wyłączanie ograniczeń podczas zapełniania zestawu danych](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
   
  Zdarzenia, które wybierzesz, zależy od tego, szczegółowość sprawdzenie poprawności jako. Jeśli jest to ważne, wychwycić błąd, natychmiast podczas zmiany kolumny, Tworzenie weryfikacji za pomocą <xref:System.Data.DataTable.ColumnChanging> zdarzeń. W przeciwnym razie użyj <xref:System.Data.DataTable.RowChanging> zdarzenie, które może prowadzić do przechwytywania kilka błędów od razu. Ponadto, jeśli dane mają strukturę, aby wartość jednej kolumny jest weryfikowana, na podstawie zawartości innej kolumny, następnie Przeprowadź walidację podczas <xref:System.Data.DataTable.RowChanging> zdarzeń.  
   
@@ -86,7 +86,7 @@ Sprawdzanie poprawności danych jest procesem potwierdzania, że wartości wprow
 ## <a name="validate-data-during-column-changes"></a>Sprawdzanie poprawności danych podczas zmiany kolumn  
   
 > [!NOTE]
->  **Projektanta obiektów Dataset** tworzy częściową klas, które weryfikacji logiki może być dodana do zestawu danych. Zestaw wygenerowany przez projektanta danych nie usuniesz lub zmienisz każdy kod w klasie częściowej.  
+> **Projektanta obiektów Dataset** tworzy częściową klas, które weryfikacji logiki może być dodana do zestawu danych. Zestaw wygenerowany przez projektanta danych nie usuniesz lub zmienisz każdy kod w klasie częściowej.  
   
  Można sprawdzić poprawność danych po zmianie wartości w kolumnie danych odpowiedzi na <xref:System.Data.DataTable.ColumnChanging> zdarzeń. Gdy wywoływane, zdarzenie to przekazuje argument zdarzeń (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>) zawierający wartość, która jest proponowany dla bieżącej kolumny. Oparte na zawartości `e.ProposedValue`, możesz:  
   
@@ -108,7 +108,7 @@ Sprawdzanie poprawności danych jest procesem potwierdzania, że wartości wprow
 2. Kliknij dwukrotnie pasek tytułu tabeli, którą chcesz zweryfikować. Ta akcja powoduje automatyczne utworzenie <xref:System.Data.DataTable.RowChanging> program obsługi zdarzeń <xref:System.Data.DataTable> w pliku częściowej klasy zestawu danych.  
   
     > [!TIP]
-    >  Kliknij dwukrotnie po lewej stronie nazwy tabeli, aby utworzyć procedury obsługi zdarzeń zmiany wiersza. Jeśli klikniesz dwukrotnie nazwę tabeli, można go edytować.  
+    > Kliknij dwukrotnie po lewej stronie nazwy tabeli, aby utworzyć procedury obsługi zdarzeń zmiany wiersza. Jeśli klikniesz dwukrotnie nazwę tabeli, można go edytować.  
   
      [!code-vb[VbRaddataValidating#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataValidating/VB/NorthwindDataSet.vb#3)]  
   
@@ -119,7 +119,7 @@ Sprawdzanie poprawności danych jest procesem potwierdzania, że wartości wprow
 2. Kliknij dwukrotnie pasek tytułu tabeli, którą chcesz zweryfikować. Ta akcja tworzy plik częściowy klasy dla <xref:System.Data.DataTable>.  
   
     > [!NOTE]
-    >  **Projektanta obiektów Dataset** nie tworzy automatycznie zdarzenia obsługi dla <xref:System.Data.DataTable.RowChanging> zdarzeń. Należy utworzyć metody, aby obsłużyć <xref:System.Data.DataTable.RowChanging> zdarzeń i wykonywania kodu, aby zaczepić zdarzenie w metodzie inicjalizacji tabeli.  
+    > **Projektanta obiektów Dataset** nie tworzy automatycznie zdarzenia obsługi dla <xref:System.Data.DataTable.RowChanging> zdarzeń. Należy utworzyć metody, aby obsłużyć <xref:System.Data.DataTable.RowChanging> zdarzeń i wykonywania kodu, aby zaczepić zdarzenie w metodzie inicjalizacji tabeli.  
   
 3. Skopiuj następujący kod do klasy częściowej:  
   
@@ -147,7 +147,7 @@ Sprawdzanie poprawności danych jest procesem potwierdzania, że wartości wprow
  Każdy wiersz w tabeli danych ma <xref:System.Data.DataRow.RowState%2A> właściwość, która przechowuje informacje o bieżący stan tego wiersza przy użyciu wartości w <xref:System.Data.DataRowState> wyliczenia. Może zwrócić zmienionych wierszy z tabeli zestawu danych lub dane, wywołując `GetChanges` metody <xref:System.Data.DataSet> lub <xref:System.Data.DataTable>. Możesz sprawdzić, czy istnieją zmiany przed wywołaniem `GetChanges` przez wywołanie metody <xref:System.Data.DataSet.HasChanges%2A> metoda zestawu danych. Aby uzyskać więcej informacji na temat <xref:System.Data.DataSet.HasChanges%2A>, zobacz [jak: Wyszukiwanie zmienionych wierszy](http://msdn.microsoft.com/library/af160d20-472b-4c13-8f15-75480c39a653).  
   
 > [!NOTE]
->  Po zatwierdzeniu zmiany do zestawu danych lub danych tabeli (przez wywołanie metody <xref:System.Data.DataSet.AcceptChanges%2A> metoda), `GetChanges` metoda nie zwraca żadnych danych. Jeśli Twoja aplikacja potrzebuje do przetwarzania zmienionych wierszy, musisz przetwarzać zmiany przed wywołaniem `AcceptChanges` metody.  
+> Po zatwierdzeniu zmiany do zestawu danych lub danych tabeli (przez wywołanie metody <xref:System.Data.DataSet.AcceptChanges%2A> metoda), `GetChanges` metoda nie zwraca żadnych danych. Jeśli Twoja aplikacja potrzebuje do przetwarzania zmienionych wierszy, musisz przetwarzać zmiany przed wywołaniem `AcceptChanges` metody.  
   
  Wywoływanie <xref:System.Data.DataSet.GetChanges%2A> metoda zestawu danych lub danych tabeli zwraca nową tabelę zestawu danych lub danych, która zawiera tylko rekordy, które zostały zmienione. Jeśli chcesz uzyskać konkretne rekordy — na przykład tylko nowe rekordy lub tylko zmodyfikowanych rekordów — można przekazać wartość z zakresu od <xref:System.Data.DataRowState> wyliczenia jako parametr do `GetChanges` metody.  
   
@@ -189,7 +189,7 @@ Sprawdzanie poprawności danych jest procesem potwierdzania, że wartości wprow
  Gdy zostaną wprowadzone zmiany do wierszy danych, zestaw danych zachowuje zarówno oryginał (<xref:System.Data.DataRowVersion>) i nowe (<xref:System.Data.DataRowVersion>) wersje wiersza. Na przykład przed wywołaniem `AcceptChanges` metody, Twoja aplikacja ma dostęp do różnych wersji rekordu (zgodnie z definicją w <xref:System.Data.DataRowVersion> wyliczenie) i odpowiednio przetworzyć zmiany.  
   
 > [!NOTE]
->  Istnieją różne wersje wiersza, tylko wtedy, gdy był edytowany i przed `AcceptChanges` została wywołana metoda. Po `AcceptChanges` wywołano metodę, bieżąca i oryginalna wersja są takie same.  
+> Istnieją różne wersje wiersza, tylko wtedy, gdy był edytowany i przed `AcceptChanges` została wywołana metoda. Po `AcceptChanges` wywołano metodę, bieżąca i oryginalna wersja są takie same.  
   
  Przekazywanie <xref:System.Data.DataRowVersion> wartości wraz z indeks kolumny (lub nazwy kolumny jako ciąg) zwraca wartość z tej kolumny określonego wiersza wersji. Zmieniona kolumna jest określana w trakcie <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.ColumnChanged> zdarzenia. Jest to dobry moment, aby sprawdzić wersje innego wiersza do celów sprawdzania poprawności. Jednak jeśli ograniczenia zostały tymczasowo zawieszone, te zdarzenia nie będą wywoływane i trzeba będzie programowo zidentyfikować, kolumny, które zostały zmienione. Można to zrobić przez iterację <xref:System.Data.DataTable.Columns%2A> zbieranie i porównywanie różnych <xref:System.Data.DataRowVersion> wartości.  
   

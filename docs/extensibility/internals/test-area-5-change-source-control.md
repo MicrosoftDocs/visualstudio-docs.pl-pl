@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0a9c13a1b1bb9c8240faeaaf8d67b0b8df259227
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62857682"
 ---
 # <a name="test-area-5-change-source-control"></a>Obszar testowy 5: zmiana kontroli kodu źródłowego
 Ten obszar testowy wtyczki kontroli źródła obejmuje zmiany kontroli źródła, za pośrednictwem **Zmień kontrolę źródła** polecenia.

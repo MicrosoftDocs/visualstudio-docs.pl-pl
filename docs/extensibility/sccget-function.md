@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b773fc52da702f2563276b4a8e51b6c3651f596
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fad29d305d3657f9ed6372769a85d84260c1e77b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434652"
 ---
 # <a name="sccget-function"></a>Funkcja SccGet
 Ta funkcja pobiera kopię jeden lub więcej plików do przeglądania i kompilacji, ale nie do edycji. W większości systemów pliki są oznaczone jako tylko do odczytu.
@@ -81,7 +81,7 @@ SCCRTN SccGet(
  `SCC_GET_ALL` Flagi mogą być łączone z `SCC_GET_RECURSIVE` flagę, aby pobrać wszystkie pliki w danym katalogów i wszystkie podkatalogi również.
 
 > [!NOTE]
->  `SCC_GET_RECURSIVE` nigdy nie powinien być przekazywany bez `SCC_GET_ALL`. Należy również zauważyć, że jeśli katalogi *C:\A* i *C:\A\B* na get cykliczne, są przekazywane *C:\A\B* i jego podkatalogach faktycznie zostanie pobrany dwa razy. Odpowiada za IDE — i nie źródło sterowania dodatku plug-in — Aby upewnić się, że duplikaty takich są przechowywane poza tablicy.
+> `SCC_GET_RECURSIVE` nigdy nie powinien być przekazywany bez `SCC_GET_ALL`. Należy również zauważyć, że jeśli katalogi *C:\A* i *C:\A\B* na get cykliczne, są przekazywane *C:\A\B* i jego podkatalogach faktycznie zostanie pobrany dwa razy. Odpowiada za IDE — i nie źródło sterowania dodatku plug-in — Aby upewnić się, że duplikaty takich są przechowywane poza tablicy.
 
  Na koniec, nawet jeśli wtyczka kontroli źródła określony `SCC_CAP_GET_NOUI` flagi na inicjowanie, wskazujący, że nie ma interfejsu użytkownika dla polecenia Get, ta funkcja nadal może zostać wywołana przez środowisko IDE do pobierania plików. Flaga po prostu oznacza, że środowisko IDE nie wyświetla element menu Get, wtyczka nie powinien zapewniać wszelkich elementów interfejsu użytkownika.
 

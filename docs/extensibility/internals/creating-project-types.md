@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2c3d983da91fadbb0eb78eab6d0fa5bb02cca193
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910010"
 ---
 # <a name="create-project-types"></a>Tworzenie typów projektów
 Możesz rozszerzyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , tworząc nowy typ projektu. Aby utworzyć nowy typ projektu, należy zrozumieć kilka koncepcji i wykonać kilka czynności. Omówienie sposobu tworzenia typów projektów można znaleźć w następujących tematach.

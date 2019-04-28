@@ -11,18 +11,18 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fddc41d264f30f6de5a2f69b098865cf3d997147
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: df06a17ecc093cf24a64e7c3aa11a096a61ee44f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436837"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Instrukcje: Włączanie i wyłączanie pełnej analizy rozwiązania dla kodu zarządzanego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 UWAGA]
->  Ten temat dotyczy tylko programu Visual Studio 2015 Update 3 RC lub nowszego.  
+> Ten temat dotyczy tylko programu Visual Studio 2015 Update 3 RC lub nowszego.  
   
  *Pełnej analizy rozwiązania* jest funkcją programu Visual Studio, która umożliwia wybranie, czy wyświetlać tylko w otwartych plików języka Visual C# lub Visual Basic w rozwiązaniu lub w otwartych i zamkniętych plikach języka Visual C# lub Visual Basic w rozwiązaniu, problemów z analizą kodu.  
   

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c7ce5ab06eb641e94d6f972b888882ac1e53e2ee
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892226"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Dodawanie menu na pasku menu programu Visual Studio
 

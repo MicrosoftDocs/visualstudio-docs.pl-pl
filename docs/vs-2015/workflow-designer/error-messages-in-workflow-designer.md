@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 005a1db9d99b5eb91fb49d1694610cdc4ace9826
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823315"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Komunikaty o błędach w Projektancie przepływu pracy
 W tym temacie opisano rodzaje komunikatów o błędach, które można napotkać podczas pracy z [!INCLUDE[wfd1](../includes/wfd1-md.md)].  

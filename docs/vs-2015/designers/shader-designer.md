@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67429131e87aa414957bf01847e03af44468d0ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 00b3a24e2e10672a2f25fdf42a3993f75c378c86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432588"
 ---
 # <a name="shader-designer"></a>Shader Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
 |**Zaawansowane**|Zawiera zaawansowane polecenia i opcje.<br /><br /> **Eksportuj**: Umożliwia eksportowanie cieniowania w różnych formatach.<br /><br /> **Eksportuj jako**: Eksportuje programu do cieniowania, jako kod źródłowy albo HLSL lub kodu bajtowego skompilowanego modułu cieniującego. Aby uzyskać więcej informacji na temat eksportowania programów do cieniowania, zobacz [jak: Eksport cieniowania](../designers/how-to-export-a-shader.md).<br /><br /> **Aparaty grafiki**: Umożliwia wybór modułu renderowania, który służy do wyświetlania na powierzchnię projektową.<br /><br /> **Renderowanie z D3D11**: Używa programu Direct3D 11 do renderowania powierzchni projektowej projektanta modułu cieniującego.<br /><br /> **Renderowanie z D3D11WARP**: Używa programu Direct3D 11 Windows Advanced rasteryzacji platformy WARP () do renderowania powierzchni projektowej projektanta modułu cieniującego.<br /><br /> **Widok**: Umożliwia wybór dodatkowe informacje na temat Shader Designer.<br /><br /> **Klatki, szybkości**: Po włączeniu Wyświetla bieżąca szybkość odtwarzania w prawym górnym rogu powierzchni projektowej. Szybkość odtwarzania to liczba ramek wyświetlanych na sekundę.  Ta opcja jest przydatna po włączeniu **tryb renderowania w czasie rzeczywistym** opcji.|  
   
 > [!TIP]
->  Możesz wybrać **zaawansowane** przycisk, aby ponownie uruchomić ostatnie polecenie.  
+> Możesz wybrać **zaawansowane** przycisk, aby ponownie uruchomić ostatnie polecenie.  
   
 ### <a name="working-with-nodes-and-connections"></a>Praca z połączeniami i węzłów  
  Użyj **wybierz** tryb do dodawania, usuwania, zmienić położenie, łączenie i konfigurowanie węzłów. Poniżej przedstawiono sposób wykonywania tych operacji podstawowe:  

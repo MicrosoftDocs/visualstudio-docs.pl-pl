@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 79d116cfb7c9b6514032aa12d916b21b38ae94b3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811690"
 ---
 # <a name="create-models-for-your-app"></a>Tworzenie modeli aplikacji
 
@@ -38,7 +38,7 @@ Aby zwizualizować architektury systemu lub istniejącego kodu, należy utworzy�
 
 |**Diagram**|**Pokazuje**|
 |-|-|
-|[Diagramy zależności: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)|Architektura wysokiego poziomu systemu|
+|[Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramy zależności: informacje](../modeling/layer-diagrams-reference.md)|Architektura wysokiego poziomu systemu|
 |Mapy kodu<br /><br /> [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)|Zależności i inne relacje w istniejącym kodzie|
 |Diagramy klas wygenerowany kod<br /><br /> [Praca z diagramami klas (Projektant klas)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|Typy i ich relacje w kodzie .NET|
 
@@ -53,7 +53,7 @@ Aby zwizualizować architektury systemu lub istniejącego kodu, należy utworzy�
 |[Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)<br /><br /> [Używaj modeli w Agile development](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Używanie modeli, aby pomóc Ci zrozumieć i zmienić systemu podczas jego tworzenia.|
 |[Tworzenie struktury rozwiązania modelowania](../modeling/structure-your-modeling-solution.md)|Organizowania modeli w dużych i średnich projektu.|
 
-## <a name="resources"></a>Resources
+## <a name="resources"></a>Zasoby
 
 - [Program Visual Studio visualization and Modeling Tools Forum](http://go.microsoft.com/fwlink/?LinkId=184720)
 - [Forum dotyczące rozszerzania programu Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)

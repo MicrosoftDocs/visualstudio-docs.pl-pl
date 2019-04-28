@@ -16,12 +16,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d4199b0f1daad60ea7fdcdf6405ae232a70d5b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 20e2b63e98969241dc91a24da81d4c170ef98b47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419724"
 ---
 # <a name="replace-in-files"></a>Zastąp w plikach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60082597"
 Zastąp w plikach ** umożliwia wyszukiwanie kodu określonego zestawu plików dla ciągu lub wyrażenia i zmienić niektóre lub wszystkie znalezione dopasowania. Liczba znalezionych dopasowań i akcje wykonywane są wymienione w **Find Results** wybranego w oknie **wyniku opcje**.  
   
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Można użyć dowolnej z następujących metod, do wyświetlenia **Zamień w plikach** w **Znajdź i Zamień** okna.  
   
@@ -53,7 +53,7 @@ Zastąp w plikach ** umożliwia wyszukiwanie kodu określonego zestawu plików d
  Opcja wybrana z **Szukaj w** listy rozwijanej określa, czy **Zamień w plikach** przeszukuje tylko aktualnie aktywnych plików lub przeszukuje wszystkie pliki przechowywane w określonych folderach. Wybierz zakres wyszukiwania na liście, wpisz ścieżkę folderu lub kliknij **przeglądania (...)**  przycisk, aby wyświetlić **Choose Search Folders** okna dialogowego pole, a następnie wybierz zestaw folderów do wyszukiwania. Możesz również wpisać ścieżkę bezpośrednio do **przeszukania** pole.  
   
 > [!NOTE]
->  Jeśli **przeszukania** wybrana opcja powoduje, że użytkownik może wyszukiwać pliku, który został wyewidencjonowany z kontrolą kodu źródłowego, przeszukiwany jest tylko wersja tego pliku, który został pobrany na komputer lokalny.  
+> Jeśli **przeszukania** wybrana opcja powoduje, że użytkownik może wyszukiwać pliku, który został wyewidencjonowany z kontrolą kodu źródłowego, przeszukiwany jest tylko wersja tego pliku, który został pobrany na komputer lokalny.  
   
 ## <a name="find-options"></a>Opcje znajdowania  
  Można rozwinąć lub zwinąć **opcje szukania** sekcji. Następujące opcje można zaznaczyć lub wyczyścić:  
@@ -88,7 +88,7 @@ Zastąp w plikach ** umożliwia wyszukiwanie kodu określonego zestawu plików d
  Po wybraniu pozostawia otwarty wszystkie pliki, w których zamiany wprowadzono, dzięki czemu można cofnąć lub zapisać zmiany. Ograniczenia pamięci może ograniczać liczbę plików, które mogą pozostawać otwarte po operacji Zastąp.  
   
 > [!CAUTION]
->  Możesz użyć **Cofnij** tylko na plikach, które pozostają otwarte do edycji. Jeśli ta opcja nie jest zaznaczone, pliki, które nie zostały już otworzyć do edycji pozostanie zamknięty, a nie **Cofnij** opcja będzie dostępna w tych plikach.  
+> Możesz użyć **Cofnij** tylko na plikach, które pozostają otwarte do edycji. Jeśli ta opcja nie jest zaznaczone, pliki, które nie zostały już otworzyć do edycji pozostanie zamknięty, a nie **Cofnij** opcja będzie dostępna w tych plikach.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Znajdowanie i zastępowanie tekstu](../ide/finding-and-replacing-text.md)   

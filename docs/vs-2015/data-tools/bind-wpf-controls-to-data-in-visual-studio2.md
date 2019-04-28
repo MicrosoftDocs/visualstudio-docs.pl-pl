@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 003b010ed5b1e3bf442be778b6cbb7d6e35efe1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c1733d6d4e60aad10896dbd2fcad16406830b83
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437038"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Powiązywanie kontrolek WPF z danymi w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ Można tworzyć powiązane z danymi [!INCLUDE[TLA#tla_titlewinclient](../include
      Aby wybrać inną kontrolkę, kliknij strzałkę listy rozwijanej obok elementu, a następnie wybierz kontrolkę. Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
     > [!NOTE]
-    >  Jeśli nie chcesz wyświetlać określonej kolumny lub właściwości, rozwiń element, aby wyświetlić jego elementy podrzędne. Kliknij strzałkę listy rozwijanej obok kolumny lub właściwości, które chcesz wyświetlić, a następnie kliknij przycisk **Brak**.
+    > Jeśli nie chcesz wyświetlać określonej kolumny lub właściwości, rozwiń element, aby wyświetlić jego elementy podrzędne. Kliknij strzałkę listy rozwijanej obok kolumny lub właściwości, które chcesz wyświetlić, a następnie kliknij przycisk **Brak**.
 
 3. Przeciągnij element do prawidłowego kontenera w projektancie, takich jak <xref:System.Windows.Controls.Grid>. Aby uzyskać więcej informacji na temat kontenerów prawidłowy zobacz [WPF powiązać kontrolki z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
@@ -96,7 +96,7 @@ Można tworzyć powiązane z danymi [!INCLUDE[TLA#tla_titlewinclient](../include
 2. Kliknij strzałkę listy rozwijanej obok elementu i wybierz pozycję **szczegóły**.
 
     > [!NOTE]
-    >  Jeśli nie chcesz wyświetlać określonej kolumny lub właściwości, rozwiń element, aby wyświetlić jego elementy podrzędne. Kliknij strzałkę listy rozwijanej obok kolumny lub właściwości, które chcesz wyświetlić, a następnie kliknij przycisk **Brak**.
+    > Jeśli nie chcesz wyświetlać określonej kolumny lub właściwości, rozwiń element, aby wyświetlić jego elementy podrzędne. Kliknij strzałkę listy rozwijanej obok kolumny lub właściwości, które chcesz wyświetlić, a następnie kliknij przycisk **Brak**.
 
 3. Przeciągnij element do prawidłowego kontenera w projektancie, takich jak <xref:System.Windows.Controls.Grid>. Aby uzyskać więcej informacji na temat kontenerów prawidłowy zobacz [WPF powiązać kontrolki z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
@@ -118,7 +118,7 @@ Można tworzyć powiązane z danymi [!INCLUDE[TLA#tla_titlewinclient](../include
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] i kod, aby powiązać kontrolki z danymi. Aby uzyskać więcej informacji, zobacz [WPF powiązać kontrolki z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
     > [!NOTE]
-    >  Jeśli formant jest już powiązany z danymi, powiązanie danych kontrolki jest resetowany do elementu, który został ostatnio zostało przeciągnięte na formant.
+    > Jeśli formant jest już powiązany z danymi, powiązanie danych kontrolki jest resetowany do elementu, który został ostatnio zostało przeciągnięte na formant.
 
 ## <a name="see-also"></a>Zobacz też
  [Powiązywanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [Tworzenie tabel wyszukiwania w aplikacjach WPF](../data-tools/create-lookup-tables-in-wpf-applications.md) [wyświetlanie powiązanych danych w aplikacjach WPF](../data-tools/display-related-data-in-wpf-applications.md) [do zestawu danychformantypowiązaniaWPF](../data-tools/bind-wpf-controls-to-a-dataset.md) [WPF powiązać formanty do usługi danych WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) [instruktażu: Wyświetlanie powiązanych danych w aplikacji WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

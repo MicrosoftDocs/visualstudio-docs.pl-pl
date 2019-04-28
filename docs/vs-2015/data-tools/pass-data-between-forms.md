@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e95a2170bd90fbd2610cefb8ff986111ff0480a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 27d4b1ec935444009be1f85f4c1ad95f9da91f68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425494"
 ---
 # <a name="pass-data-between-forms"></a>Przekazywanie danych między formularzami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60107076"
 Ten przewodnik zawiera instrukcje krok po kroku do przekazywania danych z jednego formularza do innego. Przy użyciu klientów i zamówień tabel z Northwind, jeden formularz pozwala użytkownikom na wybór klienta, a drugi formularz zawiera wybranego zamówienia. W tym instruktażu przedstawiono sposób tworzenia metody na drugi formularz, który odbiera dane z pierwszego formularza.  
   
 > [!NOTE]
->  W tym instruktażu pokazano tylko jeden sposób przekazywania danych między formularzami. Istnieją inne opcje przekazywania danych do postaci, w tym tworzenie drugi Konstruktor na odbieranie danych, lub tworzenie właściwości publicznej, które można ustawić za pomocą danych z pierwszego formularza.  
+> W tym instruktażu pokazano tylko jeden sposób przekazywania danych między formularzami. Istnieją inne opcje przekazywania danych do postaci, w tym tworzenie drugi Konstruktor na odbieranie danych, lub tworzenie właściwości publicznej, które można ustawić za pomocą danych z pierwszego formularza.  
   
  Zadania zilustrowane w tym przewodniku obejmują:  
   
@@ -142,7 +142,7 @@ Ten przewodnik zawiera instrukcje krok po kroku do przekazywania danych z jedneg
     ```  
   
     > [!NOTE]
-    >  Sprawdź składnię odpowiedni parametr dla bazy danych. Na przykład w programie Microsoft Access klauzuli WHERE będzie wyglądać: `WHERE CustomerID = ?`.  
+    > Sprawdź składnię odpowiedni parametr dla bazy danych. Na przykład w programie Microsoft Access klauzuli WHERE będzie wyglądać: `WHERE CustomerID = ?`.  
   
 6. Kliknij przycisk **Dalej**.  
   

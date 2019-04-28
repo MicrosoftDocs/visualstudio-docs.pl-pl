@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 955968137e1f8d2ba1322f5ccf9be2eac6196580
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62845823"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Bezpośrednie zaznaczenie klawisze modyfikujące w programie Blend
 W poniższej tabeli przedstawiono skróty, które służy do modyfikowania kształt istniejące ścieżki **Zaznaczanie bezpośrednie** narzędzie ![narzędzia Zaznaczanie bezpośrednie](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Aby dodać lub usunąć punkty w istniejącej ścieżki lub Dołącz dwa istniejące ścieżki, użyj **pióra** narzędzia.

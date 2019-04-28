@@ -12,12 +12,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b32966dd8a64c4688878ab2843893a1f2a9a3cff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5923bc99906cf4bcad8ea92ad74a30470fb41a1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432732"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Instrukcje: Instalowanie autonomiczny Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60069669"
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] udostępnia w wierszu polecenia zależności autonomicznym programem profilującym, które mogą być uruchamiane bez konieczności instalowania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE. Ta sytuacja występuje, gdy komputer nie obsługuje lub nie może mieć zainstalowane środowisko programistyczne. Na przykład nie należy instalować Środowisko deweloperskie na serwerze sieci Web w środowisku produkcyjnym.  
   
 > [!NOTE]
->  Podczas korzystania z autonomicznego profilera do zbierania danych wydajności dla witryny sieci Web ASP.NET [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) narzędzie wiersza są zalecane przez [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia.  
+> Podczas korzystania z autonomicznego profilera do zbierania danych wydajności dla witryny sieci Web ASP.NET [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) narzędzie wiersza są zalecane przez [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia.  
   
 ### <a name="to-install-the-stand-alone-profiler"></a>Aby zainstalować autonomiczny profilera  
   
@@ -34,12 +34,12 @@ ms.locfileid: "60069669"
 2. Dodaj ścieżki vsintr.exe i msdis150.dll do ścieżki systemowej.  
   
     > [!NOTE]
-    >  W domyślnej instalacji [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vsinstr.exe i msdis150.dll znajdują się w \Program Files\Visual Studio 10\Team narzędzia Tools.  
+    > W domyślnej instalacji [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vsinstr.exe i msdis150.dll znajdują się w \Program Files\Visual Studio 10\Team narzędzia Tools.  
   
 3. W wierszu polecenia wpisz **VSInstr**.  
   
     > [!NOTE]
-    >  Jeśli zostanie wyświetlone informacje o użyciu dla vsinstr.exe, wszystko jest poprawnie skonfigurowany. Jeśli zostanie wyświetlony komunikat o błędzie informujący vsinstr.exe lub jednej z jego zależności nie zostanie znaleziony, upewnij się, że Twoje ścieżki poprawnie skonfigurowane zgodnie z opisem w kroku 2.  
+    > Jeśli zostanie wyświetlone informacje o użyciu dla vsinstr.exe, wszystko jest poprawnie skonfigurowany. Jeśli zostanie wyświetlony komunikat o błędzie informujący vsinstr.exe lub jednej z jego zależności nie zostanie znaleziony, upewnij się, że Twoje ścieżki poprawnie skonfigurowane zgodnie z opisem w kroku 2.  
   
 4. Skonfigurować serwer symboli, ustawiając swoje **_NT_SYMBOL_PATH** zmienną **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols**  
   
@@ -48,7 +48,7 @@ ms.locfileid: "60069669"
      **Rozpocznij COMSPEC %**  
   
     > [!NOTE]
-    >  Aby uzyskać szczegółowe instrukcje dotyczące sposobu konfigurowania pakietu serwera symboli, zobacz [jak: Informacje o symbolach Windows odwołanie](../profiling/how-to-reference-windows-symbol-information.md).  
+    > Aby uzyskać szczegółowe instrukcje dotyczące sposobu konfigurowania pakietu serwera symboli, zobacz [jak: Informacje o symbolach Windows odwołanie](../profiling/how-to-reference-windows-symbol-information.md).  
   
 6. Użyj [VSPerfReport](../profiling/vsperfreport.md) narzędzie do wykonywania serializacji symboli do pliku danych (Vsp) profilowania. Użyj **packsymbols której VSPerfReport** przełączników. Jeśli nie masz symboli wstawione w pliku danych, upewnij się, że masz zestaw zmiennych środowiskowych _NT_SYMBOL_PATH.  
   

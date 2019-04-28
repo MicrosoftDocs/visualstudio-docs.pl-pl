@@ -8,12 +8,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0f1aee9fb3790a5ba7b766eba22f2ec6420dacfd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 004b09c471ea163a17391a8ad51abcc0aefee1ed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430707"
 ---
 # <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: Nie używaj słabych algorytmów kryptograficznych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60041772"
 |Zmiana kluczowa|Bez podziału|  
   
 > [!NOTE]
->  To ostrzeżenie Data ostatniej aktualizacji listopada 2015 r.  
+> To ostrzeżenie Data ostatniej aktualizacji listopada 2015 r.  
   
 ## <a name="cause"></a>Przyczyna  
  Algorytmy szyfrowania, takich jak <xref:System.Security.Cryptography.TripleDES> i algorytmy wyznaczania wartości skrótu takich jak <xref:System.Security.Cryptography.SHA1> i <xref:System.Security.Cryptography.RIPEMD160> są uważane za słabe.  

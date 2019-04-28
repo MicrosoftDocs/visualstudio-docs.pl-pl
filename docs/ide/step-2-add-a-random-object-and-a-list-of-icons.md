@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ee92ad3c65c81849e70f7e76b93b9a3b6195156
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 23117079dd0cd593446ce8af277670a643c820b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430808"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Krok 2. Dodawanie obiektu Random i listy ikon
 W tym kroku utworzysz zestaw pasujących symboli dla gry. Każdy symbol jest dodawany do dwóch losowych komórek w TableLayoutPanel na formularzu. Aby to zrobić, użyj dwóch `new` instrukcji, aby utworzyć dwa obiekty. Pierwsza to <xref:System.Random> obiektu, takiego jak używany w grze quiz matematyczny. Jest używany w tym kodzie, aby losowo wybierać komórki w TableLayoutPanel. Drugi obiekt, który może być dla Ciebie nowe, jest <xref:System.Collections.Generic.List%601> obiektu, który jest używany do przechowywania losowo wybranych symboli.
@@ -36,7 +36,7 @@ W tym kroku utworzysz zestaw pasujących symboli dla gry. Każdy symbol jest dod
      ![Okno właściwości pokazujące kliknij zdarzenie](../ide/media/express_listintellisense.png) okno technologii IntelliSense
 
     > [!NOTE]
-    >  Okno IntelliSense pojawia się tylko wtedy, gdy wprowadzasz kod ręcznie. Nie pojawia się, jeśli kopiujesz i wklejasz kod.
+    > Okno IntelliSense pojawia się tylko wtedy, gdy wprowadzasz kod ręcznie. Nie pojawia się, jeśli kopiujesz i wklejasz kod.
 
      Jeśli spojrzysz na kod (i uwagi) w krótkich sekcjach, jest bardziej zrozumiały. Programy mogą korzystać z listy obiektów, aby śledzić wiele różnych typów elementów. Lista może zawierać liczby, wartości true/false, tekst lub inne obiekty. Można nawet mieć obiekt listy, który przechowuje inne obiekty listy. Elementy na liście są nazywane elementami, a każda lista zawiera tylko jeden typ elementu. Tak więc, lista liczb może zawierać tylko liczby — nie można dodać tekstu do tej listy. Podobnie nie można dodać liczb do listy wartości true/false.
 
@@ -47,7 +47,7 @@ W tym kroku utworzysz zestaw pasujących symboli dla gry. Każdy symbol jest dod
      Kiedy używasz inicjatora kolekcji z `new` instrukcji, po utworzeniu nowego obiektu listy program wypełnia go danymi dostarczonymi wewnątrz nawiasów klamrowych. W takim przypadku otrzymujesz listę ciągów o nazwie ikon, a ta lista zostanie zainicjowana tak, aby zawierała szesnaście ciągów. Każdy z tych ciągów jest pojedynczą literą, a odpowiadają one wszystkim ikonom, które będą w etykietach. Tak więc gra będzie miała parę wykrzykników, parę wielkich liter N, parę przecinków itd. (Kiedy te znaki są ustawione na czcionkę Webdings, będą one występować jako symbole, takie jak autobus, rower, pająk i tak dalej). Obiekt listy będzie miał razem szesnaście ciągów we wszystkich, jeden dla każdej komórki w panelu TableLayoutPanel.
 
     > [!NOTE]
-    >  W języku Visual Basic uzyskujesz ten sam wynik, ale najpierw ciągi są wprowadzane do tablicy tymczasowej, która jest następnie przekształcana w obiekt listy. Tablica jest podobna do listy, z tym wyjątkiem, że np. tablice są tworzone z ustalonym rozmiarem. Listy można zmniejszać i zwiększać stosownie do potrzeb, co jest istotne w tym programie.
+    > W języku Visual Basic uzyskujesz ten sam wynik, ale najpierw ciągi są wprowadzane do tablicy tymczasowej, która jest następnie przekształcana w obiekt listy. Tablica jest podobna do listy, z tym wyjątkiem, że np. tablice są tworzone z ustalonym rozmiarem. Listy można zmniejszać i zwiększać stosownie do potrzeb, co jest istotne w tym programie.
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 

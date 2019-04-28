@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a28c4aef9284148379d65f3f8bef1b035f8580c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 583731e311f6e6257bfb43c9f21ac2db143145eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434590"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList, funkcja
 Ta funkcja aktualizuje listę pliki dla polecenia kontroli konkretnego źródła i dostarcza stan kontroli źródła na wszystkie pliki danego.
@@ -87,7 +87,7 @@ SCCRTN SccPopulateList (
  Wtyczka w dalszym ciągu wywołania `pfnPopulate` funkcji, która dodaje i usuwa pliki, dopóki nie zostało zakończone, a następnie zwraca z `SccPopulateList` funkcji. IDE może następnie wyświetlić jego listy. `lpStatus` Tablicy reprezentuje wszystkie pliki w oryginalnej listy, które są przekazywane w IDE. Użyj wtyczki wypełnia stan wszystkich tych plików dodatkowo na rzecz uczynienia funkcji wywołania zwrotnego.
 
 > [!NOTE]
->  Wtyczka do kontroli źródła zawsze może po prostu natychmiastowy powrót z tej funkcji, pozostawiając na liście, ponieważ jest. Jeśli wtyczka implementuje tę funkcję, może on wskazywać na to, ustawiając `SCC_CAP_POPULATELIST` flag bitowych możliwości, w pierwszym wywołaniu [SccInitialize](../extensibility/sccinitialize-function.md). Domyślnie wtyczka powinna zawsze zakładaj, że wszystkie elementy przekazywany czy pliki. Jednak jeśli ustawia IDE `SCC_PL_DIR` znacznik w `fOptions` parametru, wszystkie elementy przekazywany mają być traktowane jako katalogów. Wtyczkę należy dodać wszystkie pliki, które należy w katalogach. IDE nigdy nie będą przekazywane w kombinacji plików i katalogów.
+> Wtyczka do kontroli źródła zawsze może po prostu natychmiastowy powrót z tej funkcji, pozostawiając na liście, ponieważ jest. Jeśli wtyczka implementuje tę funkcję, może on wskazywać na to, ustawiając `SCC_CAP_POPULATELIST` flag bitowych możliwości, w pierwszym wywołaniu [SccInitialize](../extensibility/sccinitialize-function.md). Domyślnie wtyczka powinna zawsze zakładaj, że wszystkie elementy przekazywany czy pliki. Jednak jeśli ustawia IDE `SCC_PL_DIR` znacznik w `fOptions` parametru, wszystkie elementy przekazywany mają być traktowane jako katalogów. Wtyczkę należy dodać wszystkie pliki, które należy w katalogach. IDE nigdy nie będą przekazywane w kombinacji plików i katalogów.
 
 ## <a name="see-also"></a>Zobacz też
 - [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)

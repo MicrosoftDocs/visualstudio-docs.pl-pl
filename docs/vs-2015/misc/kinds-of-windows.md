@@ -23,11 +23,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 25ed7d2609f478881bce13ac60aecae5ecb8acff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838701"
 ---
 # <a name="kinds-of-windows"></a>Rodzaje okien
 Ta zawartość została przeniesiona do [dostosowywanie układów okien](../ide/customizing-window-layouts-in-visual-studio.md)

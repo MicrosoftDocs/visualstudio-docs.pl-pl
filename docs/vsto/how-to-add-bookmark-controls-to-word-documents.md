@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f4a6a5de3ccd10c7444b03aca2faaa0ae17c4f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7948af3a6a77fd100a6965f9e50cda70ac7b868d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427770"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Instrukcje: Dodawanie formantów zakładek do dokumentów programu Word
   W projektach na poziomie dokumentu, można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu w projekcie w czasie projektowania lub w czasie wykonywania. W projektach dodatku narzędzi VSTO dla programów, można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> formantów dowolnego otwartego dokumentu w czasie wykonywania.
@@ -94,7 +94,7 @@ ms.locfileid: "60104528"
      [!code-vb[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#1)]
 
     > [!NOTE]
-    >  Jeśli chcesz utworzyć <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki z istniejącego <xref:Microsoft.Office.Interop.Word.Bookmark>, użyj <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> metody i przekazać w istniejącym <xref:Microsoft.Office.Interop.Word.Bookmark>.
+    > Jeśli chcesz utworzyć <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki z istniejącego <xref:Microsoft.Office.Interop.Word.Bookmark>, użyj <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> metody i przekazać w istniejącym <xref:Microsoft.Office.Interop.Word.Bookmark>.
 
 ## <a name="runtimeaddin"></a> Dodawanie formantów zakładek w czasie wykonywania w projekcie dodatku narzędzi VSTO
  Możesz dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki programowo do dowolnego otwartego dokumentu w czasie wykonywania za pomocą dodatku narzędzi VSTO. Aby to zrobić, należy wygenerować <xref:Microsoft.Office.Tools.Word.Document> elementu, która jest oparta na otwartym dokumencie hosta, a następnie użyj metod <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> właściwości tego elementu host. Istnieją dwa przeciążenia metody, których można użyć, aby dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontroli w następujący sposób:

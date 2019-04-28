@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc5ddb4561c2c353271babe590a9e5b2b3c2e510
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a783d19136998bbc9a18daa975c1db87bda19779
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428733"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Powiadomienia i postęp dla programu Visual Studio
 ## <a name="BKMK_NotificationSystems"></a> Systemy powiadomień
@@ -417,7 +417,7 @@ private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiEl
 - W ramach karty dokumentu
 
 > [!IMPORTANT]
->  Istnieje możliwość pozycji pasek informacyjny zapewnienie komunikat o kontekście globalnym. Ten pojawi się pomiędzy paskami narzędzi i dobrze dokumentu. Nie jest to zalecane, ponieważ powoduje problemy z "szybkiego dostępu i jerk" środowiska IDE i należy ich unikać, chyba że absolutnie konieczne i właściwe.
+> Istnieje możliwość pozycji pasek informacyjny zapewnienie komunikat o kontekście globalnym. Ten pojawi się pomiędzy paskami narzędzi i dobrze dokumentu. Nie jest to zalecane, ponieważ powoduje problemy z "szybkiego dostępu i jerk" środowiska IDE i należy ich unikać, chyba że absolutnie konieczne i właściwe.
 
 #### <a name="placing-an-infobar-in-a-toolwindowpane"></a>Umieszczenie pasek informacyjny w obiektu ToolWindowPane
  Metoda ToolWindowPane.AddInfoBar(IVsInfoBar) może służyć do dodawania pasek informacyjny do okna narzędzi. Ten interfejs API albo dodać IVsInfoBar, (które InfoBarModel jest domyślna implementacja) lub elementu IVsUIElement.

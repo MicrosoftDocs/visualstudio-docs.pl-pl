@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8dd2e677cae2e54a8dff716aef72f1d6abc6b40
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2c671467f220e61de5ca9de56a2515a2e4836020
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418468"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Instrukcje: Tworzenie pliku vsct
 
@@ -80,7 +80,7 @@ Można tworzyć oparte na języku XML *vsct* plików z istniejącej tabeli polec
     Ta akcja powoduje utworzenie nowego *vsct* plik źródłowy tabeli poleceń XML. Plik można skompilować przy użyciu *Vsct.exe*, kompilatora VSCT, jak będą inne *vsct* pliku.
 
    > [!NOTE]
-   >  Można zwiększyć czytelność *vsct* pliku przez ponowne formatowanie komentarze XML.
+   > Można zwiększyć czytelność *vsct* pliku przez ponowne formatowanie komentarze XML.
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
@@ -90,13 +90,13 @@ Można tworzyć oparte na języku XML *vsct* plik z istniejących danych binarny
 
 ### <a name="to-create-a-vsct-file-from-a-cto-file"></a>Do utworzenia pliku vsct z pliku .cto
 
-1.  Uzyskaj kopię *.cto* plików i odpowiadającymi mu dostawcami *.ctsym* pliku.
+1. Uzyskaj kopię *.cto* plików i odpowiadającymi mu dostawcami *.ctsym* pliku.
 
-2.  Umieść pliki w tym samym katalogu co *vsct.exe* kompilatora.
+2. Umieść pliki w tym samym katalogu co *vsct.exe* kompilatora.
 
-3.  W wierszu polecenia programu Visual Studio, przejdź do katalogu, który zawiera *.cto* i *.ctsym* plików.
+3. W wierszu polecenia programu Visual Studio, przejdź do katalogu, który zawiera *.cto* i *.ctsym* plików.
 
-4.  Typ
+4. Typ
 
     ```
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
@@ -111,9 +111,9 @@ Można tworzyć oparte na języku XML *vsct* plik z istniejących danych binarny
 
 ### <a name="to-add-a-vsct-file-to-project-compilation"></a>Aby dodać pliku vsct do kompilacji projektu
 
-1.  Otwórz plik projektu w edytorze. Jeśli projekt jest ładowany, należy go najpierw zwolnienia.
+1. Otwórz plik projektu w edytorze. Jeśli projekt jest ładowany, należy go najpierw zwolnienia.
 
-2.  Dodaj [itemgroup — element](../../msbuild/itemgroup-element-msbuild.md) zawierający `VSCTCompile` elementu, jak pokazano w poniższym przykładzie.
+2. Dodaj [itemgroup — element](../../msbuild/itemgroup-element-msbuild.md) zawierający `VSCTCompile` elementu, jak pokazano w poniższym przykładzie.
 
     ```xml
     <ItemGroup>
@@ -126,7 +126,7 @@ Można tworzyć oparte na języku XML *vsct* plik z istniejących danych binarny
 
      `ResourceName` Element powinien być zawsze ustawiony na `Menus.ctmenu`.
 
-3.  Jeśli projekt zawiera *resx* Dodaj `EmbeddedResource` element, który zawiera `MergeWithCTO` elementu, jak pokazano w poniższym przykładzie:
+3. Jeśli projekt zawiera *resx* Dodaj `EmbeddedResource` element, który zawiera `MergeWithCTO` elementu, jak pokazano w poniższym przykładzie:
 
     ```xml
     <EmbeddedResource Include="VSPackage.resx">
@@ -138,9 +138,9 @@ Można tworzyć oparte na języku XML *vsct* plik z istniejących danych binarny
 
      Ten kod znaczników powinien przeprowadzić wewnątrz `ItemGroup` zawierający zasoby osadzone.
 
-4.  Otwórz plik pakietu, zwykle o nazwie  *\<ProjectName\>Package.cs* lub  *\<ProjectName\>Package.vb*, w edytorze.
+4. Otwórz plik pakietu, zwykle o nazwie  *\<ProjectName\>Package.cs* lub  *\<ProjectName\>Package.vb*, w edytorze.
 
-5.  Dodaj `ProvideMenuResource` atrybutów do klasy pakietu, jak pokazano w poniższym przykładzie.
+5. Dodaj `ProvideMenuResource` atrybutów do klasy pakietu, jak pokazano w poniższym przykładzie.
 
     ```csharp
     [ProvideMenuResource("Menus.ctmenu", 1)]

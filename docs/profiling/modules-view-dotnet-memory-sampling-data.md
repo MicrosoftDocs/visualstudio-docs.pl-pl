@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0b4870a17988c4f926e04aca24e50419c4a27165
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829960"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Widok modułów — dane próbkowania pamięci platformy .NET
 Widok modułów danych alokacji pamięci .NET, które są zbierane przy użyciu metody próbkowania grupuje dane pamięci przez moduły, które zostały wykonane w trakcie uruchomienia profilowania. Każdy moduł jest katalogiem głównym drzewa hierarchicznego. Funkcji modułu są wyświetlane poniżej tego węzła modułu.

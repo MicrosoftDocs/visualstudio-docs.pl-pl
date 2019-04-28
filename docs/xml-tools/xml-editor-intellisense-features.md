@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 312c304855a450a648b000b8306b80ade969c785
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807985"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funkcje IntelliSense w edytorze XML
 
@@ -129,4 +129,4 @@ Funkcje IntelliSense i automatycznego uzupełniania są domyślnie włączone. J
 
 - [Edytor XML](../xml-tools/xml-editor.md)
 - [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)
-- [Przewodnik: Używanie XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)
+- [Przewodnik: Używanie funkcji IntelliSense XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md)

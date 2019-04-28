@@ -12,12 +12,12 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9f56de9b3ce3f1faf5a63fa6b8fd8574a57b82f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 63e0140b752adda02aba6126580ec08ee1f7536a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436632"
 ---
 # <a name="registering-a-project-type"></a>Rejestrowanie typu projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Gdy tworzysz nowy typ projektu, należy utworzyć wpisy rejestru, które umożli
  W poniższym przykładzie instrukcji z rejestru zapewnienia domyślnych ścieżek i danych w przypadku, gdy to stosowne, a następnie tabeli, która zawiera wpisy z rejestru skryptu dla każdej instrukcji. Tabele zawierają wpisy skryptu i dodatkowe informacje na temat oświadczeń.  
   
 > [!NOTE]
->  Następujące informacje do rejestru jest przeznaczonych do przykładu i celów wpisów w skryptach rejestru, który będzie zapisywać do zarejestrowania typu projektu. Rzeczywiste wpisy i ich zastosowań mogą się różnić w zależności od określonych wymagań tego typu projektu. Należy przejrzeć przykłady można znaleźć taki, który przypomina typu projektu, które tworzysz, a następnie przejrzyj skrypt rejestru dla tego przykładu.  
+> Następujące informacje do rejestru jest przeznaczonych do przykładu i celów wpisów w skryptach rejestru, który będzie zapisywać do zarejestrowania typu projektu. Rzeczywiste wpisy i ich zastosowań mogą się różnić w zależności od określonych wymagań tego typu projektu. Należy przejrzeć przykłady można znaleźć taki, który przypomina typu projektu, które tworzysz, a następnie przejrzyj skrypt rejestru dla tego przykładu.  
   
  Poniższe przykłady pochodzą z HKEY_CLASSES_ROOT.  
   

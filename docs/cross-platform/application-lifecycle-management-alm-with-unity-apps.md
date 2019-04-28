@@ -10,11 +10,11 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: d52e02947a9148463396260afd3e389fa1d248ee
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824708"
 ---
 # <a name="devops-with-unity-apps"></a>Metodyka DevOps dla aplikacji Unity
 
@@ -32,11 +32,11 @@ Komentarz ogólny: wszystkie planowania i śledzenia funkcji są niezależne od 
 
 |Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
-|Zarządzanie zaległości i sprintów|Tak||
-|Śledzenie pracy|Tak||
-|Współpraca pokoju zespołu|Tak||
-|Tablice Kanban|Tak||
-|Tworzenie raportów i wizualizowanie postępu|Tak||
+|Zarządzanie zaległości i sprintów|Yes||
+|Śledzenie pracy|Yes||
+|Współpraca pokoju zespołu|Yes||
+|Tablice Kanban|Yes||
+|Tworzenie raportów i wizualizowanie postępu|Yes||
 
 ## <a name="modeling"></a>Modelowanie
 
@@ -59,10 +59,10 @@ Komentarz ogólny: Chociaż te funkcje projektu są albo, niezależnie od język
 
 |Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
-|[Użyj Team Foundation Version Control (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) lub repozytoriów platformy Azure|Tak|Projekty Unity są po prostu zbiorem plików, które mogą być umieszczane systemów kontroli wersji, takich jak każdy inny projekt, ale istnieje kilka specjalnych okoliczności opisane tą tabelą.|
+|[Użyj Team Foundation Version Control (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) lub repozytoriów platformy Azure|Yes|Projekty Unity są po prostu zbiorem plików, które mogą być umieszczane systemów kontroli wersji, takich jak każdy inny projekt, ale istnieje kilka specjalnych okoliczności opisane tą tabelą.|
 |[Wprowadzenie do usługi Git w repozytoriach platformy Azure](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|Tak|Zobacz uwagi pod tabelą.|
-|[Podnoszenie jakości kodu](../test/improve-code-quality.md)|Tak||
-|[Znajdowanie zmian w kodzie i innych elementów historii](../ide/find-code-changes-and-other-history-with-codelens.md)|Tak||
+|[Podnoszenie jakości kodu](../test/improve-code-quality.md)|Yes||
+|[Znajdowanie zmian w kodzie i innych elementów historii](../ide/find-code-changes-and-other-history-with-codelens.md)|Yes||
 |[Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)|Tak||
 
 Specjalne uwagi dotyczące kontroli wersji przy użyciu aparatu Unity:

@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: cdde44b5d960a3f9ef462e06b55260477a8933c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 227d4ba765dbea3be5306f05995cc29d075e6a66
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434147"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalowanie i konfigurowanie narzędzi do kompilacji przy użyciu systemu iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60097079"
 Możesz używać Visual C++ for Cross-Platform Mobile Development, edytowanie, debugowanie i wdrażanie kodu z systemem iOS w narzędziu iOS Simulator lub na urządzeniu z systemem iOS, ale z powodu ograniczeń licencyjnych, kod musi można skompilować i uruchomić zdalnie na komputerach Mac. Aby skompilować i uruchomić aplikacje dla systemu iOS przy użyciu programu Visual Studio, musisz Instalowanie i Konfigurowanie agenta zdalnego [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), na komputerze Mac. Obsługuje zdalnego agenta kompilacji żądania z programu Visual Studio i uruchamia aplikację na urządzeniu z systemem iOS podłączone do komputera Mac lub w narzędziu iOS Simulator na komputerze Mac.  
   
 > [!NOTE]
->  Aby uzyskać informacji na temat korzystania z usług hostowanych w chmurze Mac zamiast komputera Mac, zobacz [tworzenie i symulowanie systemu iOS w chmurze](https://taco.visualstudio.com/docs/build_ios_cloud/). Instrukcje dotyczą tworzenia przy użyciu programu Visual Studio Tools for Apache Cordova. W celu postępuj zgodnie z instrukcjami, aby kompilować przy użyciu języka Visual C++ for Cross-Platform Mobile Development, należy zastąpić vcremote dla programu vs-mda-remote.  
+> Aby uzyskać informacji na temat korzystania z usług hostowanych w chmurze Mac zamiast komputera Mac, zobacz [tworzenie i symulowanie systemu iOS w chmurze](https://taco.visualstudio.com/docs/build_ios_cloud/). Instrukcje dotyczą tworzenia przy użyciu programu Visual Studio Tools for Apache Cordova. W celu postępuj zgodnie z instrukcjami, aby kompilować przy użyciu języka Visual C++ for Cross-Platform Mobile Development, należy zastąpić vcremote dla programu vs-mda-remote.  
   
  Po zainstalowaniu narzędzia do tworzenia przy użyciu systemu iOS można znaleźć w tym temacie, aby poznać sposoby szybko skonfigurować i zaktualizować agenta zdalnego dla programowania w systemie iOS w programie Visual Studio i na komputerze Mac.  
   
@@ -93,7 +93,7 @@ Możesz używać Visual C++ for Cross-Platform Mobile Development, edytowanie, d
    Podczas instalacji vcremote zainstalowano i włączono tryb dewelopera na komputerze Mac. [Homebrew](http://brew.sh/) i dwa pakiety npm vcremote lib i vcremote utils, są również instalowane.  
   
   > [!NOTE]
-  >  Aby zainstalować program Homebrew, musi mieć dostęp "sudo" (administrator). Jeśli musisz zainstalować vcremote bez "sudo", można ręcznie zainstalować Homebrew w lokalizacji usr/elementu lokalnego i dodać jego folder bin do ścieżki. Aby uzyskać więcej informacji, zobacz [dokumentacji Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation). Aby ręcznie włączyć tryb dewelopera, wprowadź polecenie w terminalu aplikacji: `DevToolsSecurity –enable`  
+  > Aby zainstalować program Homebrew, musi mieć dostęp "sudo" (administrator). Jeśli musisz zainstalować vcremote bez "sudo", można ręcznie zainstalować Homebrew w lokalizacji usr/elementu lokalnego i dodać jego folder bin do ścieżki. Aby uzyskać więcej informacji, zobacz [dokumentacji Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation). Aby ręcznie włączyć tryb dewelopera, wprowadź polecenie w terminalu aplikacji: `DevToolsSecurity –enable`  
   
   Jeżeli zostanie zaktualizowany do nowej wersji programu Visual Studio, należy zaktualizować do bieżącej wersji agenta zdalnego. Aby zaktualizować agenta zdalnego, powtórz kroki, aby pobrać i zainstalować agenta zdalnego.  
   
@@ -154,7 +154,7 @@ Możesz używać Visual C++ for Cross-Platform Mobile Development, edytowanie, d
 5. W **nazwy hosta** i **portu** wprowadź wartości określonych przez agenta zdalnego, po jego uruchomieniu. Nazwa hosta może zawierać nazwy DNS lub adres IP Twojego komputera Mac. Domyślny port to 3030.  
   
    > [!NOTE]
-   >  Nie można wykonać polecenie ping Mac przy użyciu nazwy hosta, może być konieczne używanie adresu IP.  
+   > Nie można wykonać polecenie ping Mac przy użyciu nazwy hosta, może być konieczne używanie adresu IP.  
   
 6. Jeśli używasz zdalnego agenta w domyślnym trybie bezpiecznego połączenia, sprawdź **bezpiecznego** pole wyboru, wprowadź wartość numeru PIN, określony przez agenta zdalnego w **numeru Pin** pola. Jeśli używasz zdalnego agenta w trybie niezabezpieczone połączenie, wyczyść **bezpiecznego** pole wyboru i pozostawić **numeru Pin** pole puste.  
   

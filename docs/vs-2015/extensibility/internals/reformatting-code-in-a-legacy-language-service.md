@@ -11,12 +11,12 @@ ms.assetid: 08bb3375-8fef-4f4e-9efa-0d7333bab0eb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8b4307caf3f76087867a942654b47bfe85c5011e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: eb0dac5e1282d544df9c04bf4c12303fb391739d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436647"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Ponowne formatowanie kodu w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54755680"
 W [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kod źródłowy może ponownie sformatowane, przez normalizowanie stosowania wcięć i białe znaki. Może to obejmować wstawiania lub usuwając spacje lub tabulatory na początku każdego wiersza, dodawanie nowych wierszy między liniami lub zastępowania miejsca do magazynowania za pomocą karty lub kart przy użyciu miejsc do magazynowania.  
   
 > [!NOTE]
->  **Uwaga** Wstawianie i usuwanie znaków nowego wiersza może mieć wpływ na znaczników, takich jak punkty przerwania i zakładki, ale dodając lub usuwając spacje lub tabulatory nie ma wpływu na znaczników.  
+> **Uwaga** Wstawianie i usuwanie znaków nowego wiersza może mieć wpływ na znaczników, takich jak punkty przerwania i zakładki, ale dodając lub usuwając spacje lub tabulatory nie ma wpływu na znaczników.  
   
  Użytkownicy mogą uruchamiać operację reformatting, wybierając **Formatuj zaznaczenie** lub **Formatuj dokument** z **zaawansowane** menu **Edytuj**menu. Operacja reformatting mogą być też wywoływane po wstawieniu fragmentu kodu lub określonego znaku. Na przykład po wpisaniu zamykającego nawiasu klamrowego w języku C# wszystko pomiędzy otwierający nawias klamrowy dopasowania i zamknij nawiasów klamrowych jest automatycznie z wcięciami, aby zapewnić odpowiedni poziom.  
   

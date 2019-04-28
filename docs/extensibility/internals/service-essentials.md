@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6e867c9e83bf353e57d75ee611fe1074efcc9cfe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859112"
 ---
 # <a name="service-essentials"></a>Podstawowe informacje o usłudze
 Usługa jest Umowa między dwoma pakietami VSPackage. Jednego pakietu VSPackage udostępnia określony zestaw interfejsów dla innego pakietu VSPackage korzystać. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jest to zbiór pakietów VSPackage, które świadczy usługi do innych pakietów VSPackage.

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d6487f4a6021f36cecd490504075cdba2ac2293
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ef65019223ba1978ea31fbdb9020993a166da89b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422196"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>Narzędzia do rozwiązywania problemów z wydajnością
 Może wystąpić jeden z następujących problemów, korzystając z narzędzi profilowania:
@@ -45,4 +45,4 @@ Może wystąpić jeden z następujących problemów, korzystając z narzędzi pr
 - Osadzanie informacji o symbolach w danych profilowania (. *Vsp*) pliku. Aby uzyskać więcej informacji, zobacz [zapisywanie informacji o symbolach wydajności pliki danych](../profiling/saving-symbol-information-with-performance-data-files.md).
 
 > [!NOTE]
->  Aparat analizy wymaga. *pdb* plik jest w tej samej wersji co plik skompilowanej aplikacji. ELEMENT. *pdb* pliku z wcześniejszych lub nowszej kompilacji pliku aplikacji nie będą działać.
+> Aparat analizy wymaga. *pdb* plik jest w tej samej wersji co plik skompilowanej aplikacji. ELEMENT. *pdb* pliku z wcześniejszych lub nowszej kompilacji pliku aplikacji nie będą działać.

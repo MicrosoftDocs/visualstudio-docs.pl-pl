@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 829ceea8f4acf0f884e3345e05053d368489d9ea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: acb18a6471a7d2debbb20107dc780f67857327ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415562"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Wprowadzenie do usługi i Edytor rozszerzenia językowe
 Rozszerzenia edytora służy do dodawania funkcji języka, np. Tworzenie konspektu, parowanie nawiasów klamrowych, funkcja IntelliSense i żarówki, język programowania lub dowolnego typu zawartości. Można również dostosować wygląd i zachowanie edytora programu Visual Studio, na przykład tekst kolorowanie, marginesy, zakończeń i inne elementy wizualne. Można również zdefiniować własny typ zawartości i określ wygląd i zachowanie widoki tekstowe, w których zawartość zostanie wyświetlona.
@@ -23,7 +23,7 @@ Rozszerzenia edytora służy do dodawania funkcji języka, np. Tworzenie konspek
  Aby rozpocząć pisanie rozszerzenia edytora, korzystanie z szablonów projektów edytora, które są zainstalowane jako część programu Visual Studio SDK. Visual Studio SDK jest dostępny do pobrania zestaw narzędzi, które ułatwiają tworzenie rozszerzeń programu Visual Studio przy użyciu pakietów VSPackage lub za pomocą Managed Extensibility Framework (MEF).
 
 > [!NOTE]
->  Aby uzyskać więcej informacji na temat zestawu SDK programu Visual Studio, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+> Aby uzyskać więcej informacji na temat zestawu SDK programu Visual Studio, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
  Firma Microsoft zaleca, Dowiedz się o następujących pojęć i technologii przed przystąpieniem do napisania własnego rozszerzenia edytora.
 
@@ -34,7 +34,7 @@ Rozszerzenia edytora służy do dodawania funkcji języka, np. Tworzenie konspek
  Edytor programu Visual Studio używa Managed Extensibility Framework (MEF) do zarządzania komponentami i rozszerzeń. MEF umożliwia również deweloperom więcej łatwe tworzenie rozszerzeń dla aplikacji hosta, takimi jak Visual Studio. Ta struktura służy do definiowania rozszerzenia zgodnie z kontrakt MEF i wyeksportuj go jako składnik MEF. Aplikacja hosta zarządza części składowe, ich znajdowanie, rejestrowania ich i upewniając się, że są one stosowane do poprawnego kontekstu.
 
 > [!NOTE]
->  Aby uzyskać więcej informacji na temat MEF w edytorze, zobacz [Managed Extensibility Framework, w edytorze](../extensibility/managed-extensibility-framework-in-the-editor.md).
+> Aby uzyskać więcej informacji na temat MEF w edytorze, zobacz [Managed Extensibility Framework, w edytorze](../extensibility/managed-extensibility-framework-in-the-editor.md).
 
 ## <a name="visual-studio-editor-extension-points-and-extensions"></a>Punkty rozszerzenia edytora programu Visual Studio i rozszerzenia
  Punkty rozszerzenia edytora są składniki MEF, które można dostosować i rozszerzyć. W niektórych przypadkach można rozszerzyć punktu rozszerzenia przez implementację interfejs i wyeksportować go wraz z prawidłowych metadanych. W innych przypadkach można po prostu zadeklarować rozszerzenie i wyeksportuj go jako określonego typu.
@@ -59,7 +59,7 @@ Rozszerzenia edytora służy do dodawania funkcji języka, np. Tworzenie konspek
  Po zainstalowaniu rozszerzenia na komputerze obejmują pliki binarne i manifest w podfolderze folderu, który jest znany dla programu Visual Studio.
 
 > [!WARNING]
->  Nie trzeba martwić o szczegóły manifesty i lokalizacji wdrożenia, jeśli używasz jednego z szablonów rozszerzania edytora, które znajdują się w programie Visual Studio. Szablony zawierają wszystko, co jest wymagane, aby zarejestrować i wdrożyć rozszerzenie.
+> Nie trzeba martwić o szczegóły manifesty i lokalizacji wdrożenia, jeśli używasz jednego z szablonów rozszerzania edytora, które znajdują się w programie Visual Studio. Szablony zawierają wszystko, co jest wymagane, aby zarejestrować i wdrożyć rozszerzenie.
 
 ## <a name="run-extensions-in-the-experimental-instance"></a>Uruchamianie rozszerzenia w doświadczalnym wystąpieniu
  Można związane z działającą wersją programu Visual Studio, gdy rozszerzenie jest tworzona przez wdrożenie jej w następującym folderze eksperymentalne (w systemach Windows Vista i Windows 7):

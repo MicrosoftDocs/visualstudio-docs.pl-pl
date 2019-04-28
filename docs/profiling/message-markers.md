@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b668f0331345e6a1022ef79105614f4a22e91d9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830081"
 ---
 # <a name="message-markers"></a>Znaczniki komunikatu
 Znacznik komunikat reprezentuje dane wyjściowe dziennika. Komunikat jest ciąg, który wystawia określonym wątku w określonym czasie. Komunikaty można eksportować do pliku tekstowego do użycia z innymi narzędziami. Wskaźnik w komunikacie w Wizualizatorze współbieżności, aby wyświetlić ciąg komunikatu. Można także wyświetlić wszystkie znaczniki komunikatu w [raport dotyczący znaczników](../profiling/markers-report.md).  Poniższa ilustracja przedstawia znacznika wiadomości.

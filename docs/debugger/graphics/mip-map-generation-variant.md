@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 06017a3feb3faa667b469c0075e561b2104785b5
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895602"
 ---
 # <a name="mip-map-generation-variant"></a>Wariant generowania mipmapy
 Umożliwia mapy mip na tekstury, które nie są renderowane elementów docelowych.

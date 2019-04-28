@@ -11,11 +11,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 1a08e54025ac0826b88a3d3fcee299beef245d13
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812012"
 ---
 # <a name="quick-actions"></a>Szybkie akcje
 

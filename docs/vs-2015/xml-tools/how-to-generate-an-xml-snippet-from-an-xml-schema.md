@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6a6c94382bd797b4c24057f623b334b2f2cd2983
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b0e1ea270511a92df96fdb4cc38367074f224060
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431015"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Instrukcje: Generowanie fragmentu kodu XML na podstawie schematu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Edytor XML ma możliwość generowania fragmentów kodu XML na podstawie schemat
  Kroki opisane w tej sekcji pokazują, jak używać wygenerować schematu XML fragmentu kodu funkcji edytora XML.  
   
 > [!NOTE]
->  Przed rozpoczęciem tych procedur, należy zapisać plik schematu na komputerze lokalnym.  
+> Przed rozpoczęciem tych procedur, należy zapisać plik schematu na komputerze lokalnym.  
   
 #### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Aby utworzyć nowy plik XML i skojarzyć go z schematu XML  
   

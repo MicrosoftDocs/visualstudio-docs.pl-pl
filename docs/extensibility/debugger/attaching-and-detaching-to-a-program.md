@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9fe89c6106ab1b411974e44bb05128b2bfc99fc6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62890785"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Dołączanie i odłączanie do programu
 Dołączanie debugera wymaga wysyłania odpowiedniej kolejności metod i zdarzeń z odpowiednich atrybutów.

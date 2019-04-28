@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbd637fa78e9290402990bdbbc237e0f431e14d7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 2a0638b0e644242e471ff30bc58d550675089695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434683"
 ---
 # <a name="sccdirdiff-function"></a>Funkcja SccDirDiff
 Funkcja ta wyświetla różnice między bieżącym katalogu lokalnym na dysku klienta i odpowiedniego projektu objętego kontrolą źródła.
@@ -83,7 +83,7 @@ SCCRTN SccDirDiff(
 |SCC_DIFF_QD_TIME|Jeśli obsługiwane przez dodatek typu plug-in, dyskretnie porównuje katalogiem, za pośrednictwem jego sygnatura czasowa lub, jeśli nie jest obsługiwane, powraca na SCC_DIFF_QD_CHECKSUM lub SCC_DIFF_QD_CONTENTS.|
 
 > [!NOTE]
->  Ta funkcja używa tego samego flag poleceń jako [SccDiff](../extensibility/sccdiff-function.md). Jednak nie obsługuje operacji "szybkie diff" w przypadku katalogów wybrać wtyczki kontroli źródła.
+> Ta funkcja używa tego samego flag poleceń jako [SccDiff](../extensibility/sccdiff-function.md). Jednak nie obsługuje operacji "szybkie diff" w przypadku katalogów wybrać wtyczki kontroli źródła.
 
 ## <a name="see-also"></a>Zobacz także
 - [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
