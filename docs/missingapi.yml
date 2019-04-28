@@ -1,10 +1,4 @@
 ### YamlMime:XRefMap
-ms.openlocfilehash: 5090b0484e37f85bb2d5d8c7b50c92ab7b4531a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969309"
 hrefUpdated: true
 references:
 - uid: EnvDTE80
@@ -24,14 +18,14 @@ references:
 - uid: Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke*
   commentId: M:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke(System.Threading.CancellationToken)
   href: https://msdn.microsoft.com/library/microsoft.visualstudio.language.intellisense.isuggestedaction.invoke.aspx
-  name: wywoływanie
+  name: Invoke
   name.vb: Invoke
   fullName: ISuggestedAction.Invoke
   fullName.vb: ISuggestedAction.Invoke
 - uid: Microsoft.VisualStudio.Shell.OleMenuCommand.Text*
   commentId: P:Microsoft.VisualStudio.Shell.OleMenuCommand.Text
   href: https://msdn.microsoft.com/library/microsoft.visualstudio.shell.olemenucommand.text.aspx
-  name: Tekst
+  name: Text
   name.vb: Text
   fullName: OleMenuCommand.Text
   fullName.vb: OleMenuCommand.Text
@@ -73,7 +67,7 @@ references:
 - uid: Microsoft.Office.Tools.Excel.ControlCollection.AddControl*
   commentId: Overload:Microsoft.Office.Tools.Excel.ControlCollection.AddControl
   href: https://msdn.microsoft.com/library/microsoft.office.tools.excel.controlcollection.addcontrol.aspx
-  name: addControl
+  name: AddControl
   name.vb: AddControl
   fullName: ControlCollection.AddControl
   fullName.vb: ControlCollection.AddControl
@@ -94,7 +88,7 @@ references:
 - uid: Microsoft.Office.Tools.Word.ControlCollection.AddControl*
   commentId: Overload:Microsoft.Office.Tools.Word.ControlCollection.AddControl
   href: https://msdn.microsoft.com/library/microsoft.office.tools.word.controlcollection.addcontrol.aspx
-  name: addControl
+  name: AddControl
   name.vb: AddControl
   fullName: ControlCollection.AddControl
   fullName.vb: ControlCollection.AddControl
@@ -122,7 +116,7 @@ references:
 - uid: Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.Add*
   commentId: Overload:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.Add
   href: https://msdn.microsoft.com/library/microsoft.visualstudio.sharepoint.iannotationdictionary.add.aspx
-  name: Dodaj
+  name: Add
   name.vb: Add
   fullName: IAnnotationDictionary.Add
   fullName.vb: IAnnotationDictionary.Add
@@ -143,14 +137,14 @@ references:
 - uid: Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add*
   commentId: Overload:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add
   href: https://msdn.microsoft.com/library/microsoft.visualstudio.sharepoint.isharepointprojectitemcollection.add.aspx
-  name: Dodaj
+  name: Add
   name.vb: Add
   fullName: ISharePointProjectItemCollection.Add
   fullName.vb: ISharePointProjectItemCollection.Add
 - uid: Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add*
   commentId: Overload:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add
   href: https://msdn.microsoft.com/library/microsoft.visualstudio.sharepoint.features.ipropertycollection.add.aspx
-  name: Dodaj
+  name: Add
   name.vb: Add
   fullName: IPropertyCollection.Add
   fullName.vb: IPropertyCollection.Add
@@ -255,14 +249,14 @@ references:
 - uid: Microsoft.Office.Tools.CustomTaskPaneCollection.Add*
   commentId: Overload:Microsoft.Office.Tools.CustomTaskPaneCollection.Add
   href: https://msdn.microsoft.com/library/microsoft.office.tools.customtaskpanecollection.add.aspx
-  name: Dodaj
+  name: Add
   name.vb: Add
   fullName: CustomTaskPaneCollection.Add
   fullName.vb: CustomTaskPaneCollection.Add
 - uid: Microsoft.Office.Tools.CustomTaskPane.Dispose*
   commentId: Overload:Microsoft.Office.Tools.CustomTaskPane.Dispose
   href: https://msdn.microsoft.com/library/microsoft.office.tools.customtaskpane.dispose.aspx
-  name: Metody Dispose
+  name: Dispose
   name.vb: Dispose
   fullName: CustomTaskPane.Dispose
   fullName.vb: CustomTaskPane.Dispose
