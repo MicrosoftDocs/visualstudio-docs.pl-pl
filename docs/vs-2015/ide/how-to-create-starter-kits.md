@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fb7b601c04c73cd1f617e42c848edaf7dc65bde8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429369"
 ---
 # <a name="how-to-create-starter-kits"></a>Instrukcje: Tworzenie pakietów startowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Zestaw startowy zawiera kod kompletnej aplikacji i dokumentacją dotyczącą jak
   
  Poniższe tematy zawierają informacje dotyczące tworzenia szablonów.  
   
- [Instrukcje: Create Project Templates](../ide/how-to-create-project-templates.md)  
+ [Instrukcje: Tworzenie szablonów projektu](../ide/how-to-create-project-templates.md)  
  Opis sposobu użycia **Eksportuj szablon** kreatora w celu utworzenia szablonu.  
   
  [Instrukcje: Aktualizowanie istniejących szablonów](../ide/how-to-update-existing-templates.md)  

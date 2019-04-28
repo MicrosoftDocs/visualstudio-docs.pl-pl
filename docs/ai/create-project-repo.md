@@ -8,11 +8,11 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 73f1595e0e6c8f182f0bedcece51011390964ed2
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539661"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Klonowanie repozytorium kodu w języku Python w programie Visual Studio
 

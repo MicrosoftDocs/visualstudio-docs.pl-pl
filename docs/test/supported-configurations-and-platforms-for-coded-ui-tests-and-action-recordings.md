@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: 43153f86ca9ee9a26465ad910b6918aee5292a87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431253"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji
 

@@ -24,12 +24,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07930dc31651d11aedccc6c597070bbba62ff0b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2be23466642357d19dad52407fcb9bf82e843c5b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424486"
 ---
 # <a name="uml-class-diagrams-reference"></a>Diagramy klas UML: Tematy pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "54796751"
 Diagram klas UML w tym artykule opisano obiektu i informacje struktury używane przez aplikację, zarówno wewnętrznie, jak i komunikuje się z jej użytkowników. Opisano w nim informacji bez odwołania do konkretnej implementacji. Jego klas i relacji można zaimplementować na wiele sposobów, np. tabele bazy danych, węzłów XML lub kompozycje obiektów oprogramowania.  
   
 > [!NOTE]
->  Ten temat dotyczy diagramów klas UML. Istnieje inny rodzaj diagramów klas, diagram klas platformy .NET, który jest używany w celu wizualizacji kodu programu. Aby uzyskać więcej informacji, zobacz [projektowanie i wyświetlanie klas i typów](http://go.microsoft.com/fwlink/?LinkId=142231).  
+> Ten temat dotyczy diagramów klas UML. Istnieje inny rodzaj diagramów klas, diagram klas platformy .NET, który jest używany w celu wizualizacji kodu programu. Aby uzyskać więcej informacji, zobacz [projektowanie i wyświetlanie klas i typów](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
  Aby utworzyć diagram klasy UML na **architektury** menu, wybierz **nowe UML lub diagramu warstwowego**. Aby uzyskać więcej informacji o tym, jak Rysowanie diagramów klas UML, zobacz [diagramów klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md). Aby uzyskać więcej informacji o sposobie tworzenia i narysować diagramy modelowania, zobacz [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
   

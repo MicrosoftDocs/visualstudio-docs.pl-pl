@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af1484bef2baadf961eb00c952a50abec5c4a9f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 84a630a679e95d8a6848592b183749c2ace3ea86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412311"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
 - [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)], Jeśli pracujesz w aplikacji internetowej ASP.NET z włączoną obsługą technologii AJAX.
 
     > [!NOTE]
-    >  Funkcja IntelliSense nie jest obsługiwana dla skryptu w atrybutach programu obsługi zdarzeń dla elementów HTML, lub który jest zdefiniowany w `href` atrybutów.
+    > Funkcja IntelliSense nie jest obsługiwana dla skryptu w atrybutach programu obsługi zdarzeń dla elementów HTML, lub który jest zdefiniowany w `href` atrybutów.
 
 ## <a name="ProcessingIntelliSenseInformation"></a> Przetwarzanie informacji IntelliSense
  Aby zapewnić JavaScript IntelliSense, usługa językowa wykonuje następujące operacje:
@@ -189,7 +189,7 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
  `/// <reference path="~/Services/MyService.asmx" />`
 
 > [!NOTE]
->  JavaScript IntelliSense nie jest obsługiwana dla skryptu, który jest zawarty w plikach usługi internetowej (.asmx) w projektach aplikacji internetowej (WAP).
+> JavaScript IntelliSense nie jest obsługiwana dla skryptu, który jest zawarty w plikach usługi internetowej (.asmx) w projektach aplikacji internetowej (WAP).
 
  Poniższy przykład pokazuje, jak utworzyć odwołanie do skryptu opartego na stronie.
 
@@ -233,18 +233,18 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
   W większości scenariuszy nie trzeba modyfikować grup odwołań. Jednakże, jeśli chcesz wprowadzić zmiany,możesz użyć opcji konfiguracji dla Edytora kodu JavaScript w celu określenia plików znajdujących się w grupach odwołań. Aby uzyskać instrukcje na temat używania tej funkcji, zobacz [opcje, Edytor tekstu, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).
 
 > [!TIP]
->  Odwołania IntelliSense są zazwyczaj używane do obsługi technologii IntelliSense dla obiektów globalnych i dla technologii IntelliSense [rozszerzenia](#Extensibility). Ta funkcja służy również dla skryptów, które muszą być ładowane w czasie wykonywania za pomocą programu ładującego skrypt.
+> Odwołania IntelliSense są zazwyczaj używane do obsługi technologii IntelliSense dla obiektów globalnych i dla technologii IntelliSense [rozszerzenia](#Extensibility). Ta funkcja służy również dla skryptów, które muszą być ładowane w czasie wykonywania za pomocą programu ładującego skrypt.
 
 ### <a name="remote-file-references"></a>Odwołania do pliku zdalnego
  Można poinstruować Visual Studio, aby pobierał zdalne pliki JavaScript, do których istnieją odwołania w pliku JavaScript, w celu zapewnienia obsługi technologii IntelliSense dla zdalnego pliku lub biblioteki. Gdy korzystasz z tej funkcji, pliki zostaną pobrane po włączeniu ich jako odwołania w pliku JavaScript.
 
 > [!NOTE]
->  Z wyjątkiem projektów sieci Web, funkcja ta działa tylko dla plików JavaScript, które są otwierane poza kontekstem projektu. Dla projektów sieci Web domyślnie pobierane są pliki zdalne, do których odwołuje się projekt.
+> Z wyjątkiem projektów sieci Web, funkcja ta działa tylko dla plików JavaScript, które są otwierane poza kontekstem projektu. Dla projektów sieci Web domyślnie pobierane są pliki zdalne, do których odwołuje się projekt.
 
  Aby uzyskać instrukcje na temat używania tej funkcji, zobacz [opcje, Edytor tekstu, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).
 
 > [!WARNING]
->  Jeśli włączysz tę funkcję i obserwujesz mniejszą wydajność w Edytorze kodu, zalecamy jej wyłączenie.
+> Jeśli włączysz tę funkcję i obserwujesz mniejszą wydajność w Edytorze kodu, zalecamy jej wyłączenie.
 
 ### <a name="XMLDocComments"></a> Komentarze dokumentacji XML
  Komentarze dokumentacji XML to opisy tekstowe elementów kodu, które można dodać do skryptu. Te opisy tekstowe są wyświetlane w IntelliSense podczas tworzenia odwołania do komentowanego skryptu. Na przykład można dostarczyć informacji na temat parametrów funkcji i wartości zwracanej. Komentarze dokumentacji XML są dostępne tylko z odnośnych plików, zestawów i usług. Aby uzyskać więcej informacji, zobacz [komentarze dokumentacji XML](../ide/xml-documentation-comments-javascript.md) i [tworzyć komentarze dokumentacji XML](../ide/create-xml-documentation-comments-for-javascript-intellisense.md).
@@ -263,7 +263,7 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
  ASP.NET AJAX również obsługuje technologię JavaScript IntelliSense. ASP.NET AJAX obejmuje strukturę klienta, która rozszerza standardowe typy, które są dostępne w języku ECMAScript (JavaScript). Aby umożliwić technologii JavaScript IntelliSense dostarczanie szczegółowych informacji o obiektach ASP.NET AJAX, komentarze dokumentacji XML zostały dodane w całej [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)]. Te komentarze dokumentacji XML są wyświetlane podczas korzystania z typów i elementów członkowskich, które są zawarte w bibliotece programu ASP.NET AJAX.
 
 > [!NOTE]
->  Prywatne elementy członkowskie nie są wyświetlane przez JavaScript IntelliSense. Prywatne elementy członkowskie są oznaczone w technologii ASP.NET AJAX jako elementy członkowskie, które rozpoczynają się od znaku podkreślenia (_).
+> Prywatne elementy członkowskie nie są wyświetlane przez JavaScript IntelliSense. Prywatne elementy członkowskie są oznaczone w technologii ASP.NET AJAX jako elementy członkowskie, które rozpoczynają się od znaku podkreślenia (_).
 
 ## <a name="Extensibility"></a> Rozszerzalność JavaScript IntelliSense
  Usługa języka JavaScript zawiera obiekty i funkcje, które umożliwiają modyfikowanie doświadczenia IntelliSense dla programistów, którzy korzystają z bibliotek innych firm. Funkcje te są szczególnie przydatne, gdy usługa języka domyślnego nie jest w stanie dostarczyć wszystkich informacji, które chcesz dostarczać klientom. Aby uzyskać więcej informacji, zobacz [rozszerzanie JavaScript IntelliSense](../ide/extending-javascript-intellisense.md).

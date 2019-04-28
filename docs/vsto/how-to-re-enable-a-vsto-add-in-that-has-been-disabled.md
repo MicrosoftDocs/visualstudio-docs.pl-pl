@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8da3d003ea156ea3182ddbb5a5fd0da3c2681304
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9cdb05328d2a59eb61c57f8f028ade1af0f7ce2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418814"
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Instrukcje: Ponowne włączanie dodatku narzędzi VSTO dla programów, która została wyłączona
   Aplikacje Microsoft Office może spowodować wyłączenie dodatków narzędzi VSTO dla programów, które nieoczekiwane zachowanie. Jeśli aplikacja nie można załadować dodatku narzędzi VSTO dla programów podczas próby debugowania aplikacji może być twardych wyłączone lub wyłączone nietrwałego dodatku narzędzi VSTO dla programów.
@@ -53,7 +53,7 @@ ms.locfileid: "60095077"
  Wyłączanie nietrwałego może wystąpić, gdy dodatku narzędzi VSTO generuje błąd, który nie powoduje nieoczekiwanego zamknięcia aplikacji. Na przykład aplikacja nietrwałe może wyłączyć dodatku narzędzi VSTO dla programów, jeśli wyniku weryfikacji zgłasza wyjątek nieobsługiwany wyjątek podczas <xref:Microsoft.Office.Tools.AddIn.Startup> programu obsługi zdarzeń jest wykonywany.
 
 > [!NOTE]
->  Po ponownym włączeniu dodatku narzędzi VSTO wyłączone nietrwałego aplikacji natychmiast próbuje załadować dodatku narzędzi VSTO. Jeśli nie został rozwiązany problem powodujący początkowo aplikacji nietrwałego wyłączenia dodatku narzędzi VSTO dla programów, aplikacja będzie nietrwałe ponownie go wyłączyć dodatku narzędzi VSTO.
+> Po ponownym włączeniu dodatku narzędzi VSTO wyłączone nietrwałego aplikacji natychmiast próbuje załadować dodatku narzędzi VSTO. Jeśli nie został rozwiązany problem powodujący początkowo aplikacji nietrwałego wyłączenia dodatku narzędzi VSTO dla programów, aplikacja będzie nietrwałe ponownie go wyłączyć dodatku narzędzi VSTO.
 
 ### <a name="to-re-enable-a-vsto-add-in"></a>Aby ponownie włączyć funkcję dodatku narzędzi VSTO
 

@@ -13,13 +13,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f0b3211352dc16e51b64196e13f7378bf2a423c
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429552"
 ---
-# <a name="how-to-distribute-code-snippets"></a>Porady: Dystrybuowanie fragmentów kodu
+# <a name="how-to-distribute-code-snippets"></a>Instrukcje: Dystrybuowanie fragmentów kodu
 
 Możesz udostępnić swoje fragmenty kodu programu znajomym i je zainstalowali na swoich komputerach przy użyciu **Menedżera wstawek kodu**. Jednak jeśli masz kilka fragmentów do dystrybucji lub chcesz przekazać je szerzej, może zawierać pliki fragmentu kodu w rozszerzeniu Visual Studio. Użytkowników usługi Visual Studio można zainstalować rozszerzenia Aby uzyskać fragmenty kodu.
 

@@ -11,13 +11,13 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 39d562509a62874a32e8442e18dece8e3c26fbfc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58155592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430450"
 ---
-# <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
+# <a name="visual-studio-tools-for-ai"></a>Narzędzia Visual Studio Tools for AI
 
 Visual Studio Tools for AI to rozszerzenie do tworzenia, testowania i wdrażania uczenia głębokiego / sztucznej Inteligencji rozwiązania. Go bezproblemowo integrują się z usługą Azure Machine Learning dla możliwości niezawodne eksperymenty, w tym między innymi przesyłanie przygotowania danych i zadań szkoleniowych modelu w sposób niewidoczny dla użytkownika do różnych obliczeniowych elementów docelowych. Ponadto zapewnia obsługę metryki niestandardowe i uruchom historii śledzenia, umożliwiając odtwarzaniem do nauki o danych i inspekcji. Enterprise gotowe współpracy, umożliwia bezpieczną współpracę nad projektem w innym osobom.
 

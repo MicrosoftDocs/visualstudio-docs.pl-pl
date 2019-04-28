@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5bde22809af69071f5484e25717a5aea7d78a603
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428537"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity&gt; — Element (aplikacja ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,4 +72,4 @@ Identyfikuje aplikacji wdrożonej w [!INCLUDE[ndptecclick](../includes/ndpteccli
   
 ## <a name="see-also"></a>Zobacz też  
  [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)   
- [\<assemblyIdentity> Element](../deployment/assemblyidentity-element-clickonce-deployment.md)
+ [\<assemblyIdentity>, element](../deployment/assemblyidentity-element-clickonce-deployment.md)

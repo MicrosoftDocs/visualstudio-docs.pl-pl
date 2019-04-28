@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Dowiedz się więcej o korzyściach zawarte w Twojej subskrypcji programu Visual Studio
 searchscope: VS Subscription
 ms.openlocfilehash: c7616bc468aad5b4753fb3a05652f976bae6299b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56839711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427796"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Korzyści zawarte w Twojej subskrypcji programu Visual Studio
 
@@ -32,7 +32,7 @@ Ułatwiają ciągłe zwiększyć swoje umiejętności wykorzystać i na bieżąc
 - Projektowanie rozwiązań z zakresu bazy danych programu SQL Server w witrynie Microsoft Virtual Academy
 - LinkedIn Learning przeniesienie dostęp do osób, szczegółowych informacji i umiejętności, których potrzebujesz do programu excel.
 
-## <a name="support"></a>Obsługa
+## <a name="support"></a>Pomoc techniczna
 Jako subskrybent programu Visual Studio również masz dostęp do różnych rodzajów pomocy technicznej w przypadku, gdy masz pytania lub potrzebujesz pomocy technicznej.
 - Płatne subskrypcje oferują dostęp do zdarzeń profesjonalnej pomocy technicznej, aby rozwiązać problemy z narzędziami i aplikacji działających w środowisku deweloperskim/testowym.
 - Potrzebujesz informacji technicznych dokumentacji bądź w produktach?  Uzyskaj pomoc natychmiastowego usługi Concierge Chat.

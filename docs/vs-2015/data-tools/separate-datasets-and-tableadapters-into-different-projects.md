@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9228eaec55dc936d44eeccd55e6a05559aea27e4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c90943f64166cfd5113032d14c2c66be1db858eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425095"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Rozdzielanie zestawów danych i adapterów TableAdapter do różnych projektów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Typizowane zestawy danych zostały rozszerzone, aby [TableAdapters](http://msdn.
 1. Otwórz rozwiązanie, które zawiera zestaw danych (plik XSD).  
   
    > [!NOTE]
-   >  Jeśli rozwiązanie zawiera projekt, do którego chcesz rozdzielić swój kod w zestawie danych, tworzenia projektu lub dodać istniejący projekt do rozwiązania.  
+   > Jeśli rozwiązanie zawiera projekt, do którego chcesz rozdzielić swój kod w zestawie danych, tworzenia projektu lub dodać istniejący projekt do rozwiązania.  
   
 2. Kliknij dwukrotnie plik typizowany zestaw danych (plik XSD) **Eksploratora rozwiązań** można otworzyć zestawu danych w **Projektanta obiektów Dataset**.  
   
@@ -54,7 +54,7 @@ Typizowane zestawy danych zostały rozszerzone, aby [TableAdapters](http://msdn.
     Po wybraniu projektu, do którego chcesz wygenerować kod zestawu danych **plik zestawu danych** właściwość jest wypełniana przy użyciu domyślnej nazwy pliku. Jeśli to konieczne, możesz zmienić tę nazwę. Ponadto, jeśli chcesz wygenerować kod zestawu danych w określonym katalogu, można ustawić **folderu projektu** właściwość na nazwę folderu.  
   
    > [!NOTE]
-   >  Kiedy oddzielisz zestawy danych i TableAdapters (przez ustawienie **projektu DataSet** właściwości), istniejące częściowe klasy zestawu danych w projekcie nie będą przenoszone automatycznie. Istniejące klasy częściowego zestawu danych należy przenieść ręcznie do projektu zestawu danych.  
+   > Kiedy oddzielisz zestawy danych i TableAdapters (przez ustawienie **projektu DataSet** właściwości), istniejące częściowe klasy zestawu danych w projekcie nie będą przenoszone automatycznie. Istniejące klasy częściowego zestawu danych należy przenieść ręcznie do projektu zestawu danych.  
   
 6. Zapisz zestaw danych.  
   
@@ -63,7 +63,7 @@ Typizowane zestawy danych zostały rozszerzone, aby [TableAdapters](http://msdn.
    Domyślnie po rozdzielenie zestawu danych i `TableAdapter` kod, wynik jest plik klasy dyskretnych w każdym projekcie. Oryginalny projekt zawiera plik o nazwie DatasetName.Designer.vb (lub DatasetName.Designer.cs) zawierający `TableAdapter` kodu. Projekt, który jest wyznaczone w **projektu Dataset** właściwość zawiera plik o nazwie DatasetName.DataSet.Designer.vb (lub DatasetName.DataSet.Designer.cs) zawierający kod zestawu danych.  
   
 > [!NOTE]
->  Aby wyświetlić plik wygenerowanej klasy, wybierz zestaw danych lub `TableAdapter` projektu. Następnie w **Eksploratora rozwiązań**, wybierz opcję **Pokaż wszystkie pliki** .  
+> Aby wyświetlić plik wygenerowanej klasy, wybierz zestaw danych lub `TableAdapter` projektu. Następnie w **Eksploratora rozwiązań**, wybierz opcję **Pokaż wszystkie pliki** .  
   
 ## <a name="see-also"></a>Zobacz też  
  [Omówienie aplikacji N-warstwowa danych](../data-tools/n-tier-data-applications-overview.md)   

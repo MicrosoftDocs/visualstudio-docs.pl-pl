@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9279257f238adf92ad560d2f2e1aa7f769905305
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58789708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537417"
 ---
 # <a name="manage-project-and-solution-properties"></a>Zarządzanie właściwościami projektów i rozwiązań
 

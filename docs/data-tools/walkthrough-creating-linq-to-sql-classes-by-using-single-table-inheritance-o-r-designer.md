@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2b270d742cab45bebc48e37dd557ce4cdb2470b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7bb6562c0eb74f537efb25be031e9c9be46d64b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402691"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Przewodnik: Tworzenie typu LINQ do klas SQL za pomocą pojedynczej tabeli dziedziczenia (O/R Designer)
 [LINQ to SQL tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) obsługuje dziedziczenie pojedynczej tabeli, ponieważ jest on zwykle implementowany w systemach relacyjnych. W tym przewodniku rozszerza ogólne kroki podane w [jak: Skonfigurować dziedziczenie za pomocą Projektanta obiektów relacyjnych](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) tematu i zawiera dane rzeczywiste, aby zademonstrować użycie dziedziczenie w [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
@@ -45,7 +45,7 @@ ms.locfileid: "60114343"
 1. W **Eksploratora serwera** lub **Eksplorator bazy danych**, kliknij prawym przyciskiem myszy **tabel** węzła i kliknij przycisk **Dodaj nową tabelę**.
 
     > [!NOTE]
-    >  Można użyć bazy danych Northwind lub innej bazy danych można dodać do tabeli.
+    > Można użyć bazy danych Northwind lub innej bazy danych można dodać do tabeli.
 
 2. W **projektanta tabel**, Dodaj następujące kolumny w tabeli:
 

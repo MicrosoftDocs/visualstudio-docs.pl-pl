@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e84312518c19ef2a041091c5e2439dd7fb312c69
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948891"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433971"
 ---
 # <a name="transactionscope-activity-designer"></a>TransactionScope, projektant działań
 

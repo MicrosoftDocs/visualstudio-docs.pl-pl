@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba6d709dae3b2a20332b3122585ad2060628016e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7aa01918b8de718fc26c0dc0249615b327150020
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422877"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Zwijanie w starszej wersji usługi językowej
 Konspekt umożliwia zwijane złożony program Przegląd lub konspektu. Na przykład w języku C# może zostać zwinięty wszystkie metody w jeden wiersz, pokazujący tylko podpis metody. Ponadto aby pokazać tylko nazwy klasy i struktury może zostać zwinięty struktury i klasy. Wewnątrz pojedynczej metody złożonej logiki może zostać zwinięty będzie wyświetlana ogólny przepływ, takich jak wyświetlanie tylko pierwszy wiersz instrukcji `foreach`, `if`, i `while`.
@@ -25,7 +25,7 @@ Konspekt umożliwia zwijane złożony program Przegląd lub konspektu. Na przyk�
  Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej, zobacz [instruktażu: Konspekt](../../extensibility/walkthrough-outlining.md).
 
 > [!NOTE]
->  Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.
+> Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.
 
 ## <a name="enabling-support-for-outlining"></a>Włączanie obsługi konspekt
  `AutoOutlining` Wpis rejestru jest ustawiona na 1, aby włączyć automatyczne tworzenie konspektu. Automatyczne tworzenie konspektu konfiguruje analizy całego źródła podczas ładowania lub zmienione w celu identyfikowania ukryte obszary i Pokaż symbole konspektu pliku. Tworzenie konspektu można także kontrolować ręcznie przez użytkownika.

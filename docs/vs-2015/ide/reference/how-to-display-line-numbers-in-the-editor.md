@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7873d54ecdf3ce96ab64d94e9b1864c7ef2904b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 33dfcd989a71785918cf4d121e2a2624654a5101
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405668"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Instrukcje: Wyświetl numery wierszy w edytorze
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60088265"
 Możesz wyświetlać lub ukrywać numerację wierszy w kodzie.  
   
 > [!NOTE]
->  W zależności od aktywnych ustawień okna dialogowe i polecenia menu, które pojawiają się mogą różnić się od tych, które są opisane poniżej. Aby zmienić swoje ustawienia, otwórz **narzędzia / Import i eksport ustawień**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> W zależności od aktywnych ustawień okna dialogowe i polecenia menu, które pojawiają się mogą różnić się od tych, które są opisane poniżej. Aby zmienić swoje ustawienia, otwórz **narzędzia / Import i eksport ustawień**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="display-line-numbers-in-code"></a>Wyświetl numery wierszy w kodzie  
  Numery wierszy nie są dodawane do kodu; są one tylko dla odniesienia. Jeśli chcesz, aby numery wierszy były drukowane, w **drukowanie** okno dialogowe, wybierz opcję **dołączyć numery wierszy** pole wyboru.  
@@ -39,7 +39,7 @@ Możesz wyświetlać lub ukrywać numerację wierszy w kodzie.
 2. ![Opcje wyświetlania numerów wierszy w edytorze](../../ide/reference/media/vs-displaylinenumbers.png "VS_DisplayLineNumbers")  
   
 > [!NOTE]
->  W zależności od języka lub ustawień, może być konieczne wybranie **Pokaż wszystkie ustawienia** pole wyboru w **opcje** okno dialogowe, aby wyświetlić **wszystkie języki** węzła podrzędnego.  
+> W zależności od języka lub ustawień, może być konieczne wybranie **Pokaż wszystkie ustawienia** pole wyboru w **opcje** okno dialogowe, aby wyświetlić **wszystkie języki** węzła podrzędnego.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dopasowywanie edytora](../../ide/customizing-the-editor.md)   

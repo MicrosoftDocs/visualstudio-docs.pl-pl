@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22cada0aaf77edd241992229c2bd6733be3ccc81
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: a8f2a4047fb44e2967e281becd90c78f66de9fdb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410018"
 ---
 # <a name="deleting-a-breakpoint"></a>Usuwanie punktu przerwania
 Poniżej przedstawiono ten proces, podczas usuwania oczekujący punkt przerwania:
@@ -25,7 +25,7 @@ Poniżej przedstawiono ten proces, podczas usuwania oczekujący punkt przerwania
  Menedżer debugowania sesji (SDM) wywołuje [IDebugPendingBreakpoint2::Delete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) metodę, aby usunąć oczekujący punkt przerwania i wszystkie powiązane punkty przerwania powiązany z niego.
 
 > [!NOTE]
->  Pojedynczy powiązany punkt przerwania mogą być również usuwane przez wywołanie [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).
+> Pojedynczy powiązany punkt przerwania mogą być również usuwane przez wywołanie [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).
 
 ## <a name="see-also"></a>Zobacz także
 - [Wywoływanie zdarzeń debugera](../../extensibility/debugger/calling-debugger-events.md)

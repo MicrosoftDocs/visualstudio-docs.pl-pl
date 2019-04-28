@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5979ccf8cafedb849b7ae9f7af6b0b35096e624f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62434166"
 ---
 # <a name="gpu-activity-paging"></a>Aktywność GPU (Stronicowanie)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -11,16 +11,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f466473bcc811a688f06e6cf4cdd8b4fc8e80648
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: e6fdbdcdf292d90fc63758c2b7d183225e63a850
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411318"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>Typowe obliczenia środowiska uruchomieniowego i wyrażenia języka
 > [!IMPORTANT]
->  W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacje o implementowaniu ewaluatory wyrażeń CLR, zobacz [ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykładowe ewaluatora wyrażeń zarządzane](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacje o implementowaniu ewaluatory wyrażeń CLR, zobacz [ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykładowe ewaluatora wyrażeń zarządzane](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Kompilatory, takie jak Visual Basic i C# (Wymowa C sharp), przeznaczonych dla środowiska uruchomieniowego języka wspólnego (CLR), należy utworzyć Microsoft Intermediate Language (MSIL), która jest nowsza kompilowane do kodu natywnego. Środowisko CLR oferuje aparat debugowania (DE), aby debugować kod wynikowy. Jeśli planujesz integracji własności język programowania w środowisku IDE programu Visual Studio można skompilować do MSIL i dlatego nie trzeba napisać własne DE. Należy zapisać ewaluatora wyrażeń (EE), który jest w stanie oceny wyrażenia w kontekście języka programowania.
 

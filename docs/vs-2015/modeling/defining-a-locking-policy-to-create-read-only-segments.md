@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed3eeb8e2907eb71a75884a19f174774055783c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6044e9c47a0dcbc95fd1503906cbd81ac8e44526
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422654"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definiowanie zasad blokowania na potrzeby tworzenia segmentów tylko do odczytu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Interfejs API niezmienności [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wizual
  Ponadto, ponieważ autor DSL, można zdefiniować *zasad blokowania.* Zasad blokowania definiuje, które blokady są dozwolone, niedozwolone lub obowiązkowe. Na przykład podczas publikowania DSL może zachęcać deweloperom firm rozbudowuj je przy użyciu nowych poleceń. Ale zasad blokowania można również użyć, aby uniemożliwić zmianę stanu tylko do odczytu określonego części modelu.  
   
 > [!NOTE]
->  Może zostać ominięte zasad blokowania przy użyciu odbicia. Udostępnia wyraźne granice dla deweloperów innych firm, ale nie zapewnia silne zabezpieczenia.  
+> Może zostać ominięte zasad blokowania przy użyciu odbicia. Udostępnia wyraźne granice dla deweloperów innych firm, ale nie zapewnia silne zabezpieczenia.  
   
  Więcej informacji i przykłady są dostępne pod adresem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [wizualizacji i modelowania SDK](http://go.microsoft.com/fwlink/?LinkId=186128) witryny sieci Web.  
   

@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 38a12f851bb99eb553856556608aaf029c91c40d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429239"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>Tworzenie zawartości dla określonej wersji programu .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ W programie Visual Studio można określić wersji lub profilu .NET Framework, d
  [Wielowersyjność kodu w programie Visual Studio ― przegląd](../ide/visual-studio-multi-targeting-overview.md)  
  Zawiera omówienie funkcji wielowersyjności kodu w programie Visual Studio.  
   
- [Instrukcje: Docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)  
+ [Instrukcje: Określanie wersji docelowej programu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)  
  Szczegółowo opisuje sposób określi się konkretny [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] dla języka Visual Basic, Visual C# i wizualizacjach F# projektu.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  

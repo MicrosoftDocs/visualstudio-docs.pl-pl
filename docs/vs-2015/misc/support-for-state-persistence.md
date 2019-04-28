@@ -12,11 +12,11 @@ ms.assetid: d25866f2-8d1f-477f-8aa5-3af3fbbf6e97
 caps.latest.revision: 15
 manager: jillfra
 ms.openlocfilehash: 6dc542d2e410b79a21e436a1881c06bd3cc4eef8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62434322"
 ---
 # <a name="support-for-state-persistence"></a>Obsługa stanu trwałości
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] można zachować stanu obiektów. Na przykład właściwości rozwiązania i projektu zapisany i przywrócony z plików rozwiązania i projektu. Ustawienia użytkownika można eksportować do i zaimportowane z plików ustawień.  

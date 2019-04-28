@@ -10,12 +10,12 @@ ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2571054e2fc90e770aec89b22c6a0b5e52786ba7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f3e95200cf29c8561798c858635c3864d635fb40
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424513"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Dokumentacja interfejsu API (Debugowanie w programie Visual Studio)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,10 +39,10 @@ Ta część zawiera omówienie interfejsu API, przewodnik, który pokazuje skła
 |E_ACCESSDENIED|Ogólny błąd odmowy dostępu.|0x80070005|  
   
 > [!NOTE]
->  Gdy [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] debugowania metoda zwraca `S_OK`, zakłada się, że wszystkie out parametru wskaźniki są prawidłowe, oznacza to, że nie nastąpi sprawdzanie poprawności jest przeprowadzane na się wskaźniki parametru podczas `S_OK` jest zwracana.  
+> Gdy [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] debugowania metoda zwraca `S_OK`, zakłada się, że wszystkie out parametru wskaźniki są prawidłowe, oznacza to, że nie nastąpi sprawdzanie poprawności jest przeprowadzane na się wskaźniki parametru podczas `S_OK` jest zwracana.  
   
 > [!NOTE]
->  Nieprawidłowy lub `NULL` [parametry out] może spowodować, że środowisko IDE ulega awarii.  
+> Nieprawidłowy lub `NULL` [parametry out] może spowodować, że środowisko IDE ulega awarii.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)   

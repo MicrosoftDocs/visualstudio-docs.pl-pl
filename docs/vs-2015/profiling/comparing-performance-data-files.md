@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 132a3cb5f7d4257aa0728960cb5bfd50c5ee3066
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62420002"
 ---
 # <a name="comparing-performance-data-files"></a>Porównywanie plików danych dotyczących wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

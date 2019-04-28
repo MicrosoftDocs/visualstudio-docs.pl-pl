@@ -22,11 +22,11 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 07ba2c64be0af987b82c870b89d3451b5d48d28f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540830"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Analiza kodu C/C++ — Przegląd
 

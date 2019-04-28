@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 14015c01b487bfe7963d36154ff2dc9b599d7c49
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430892"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Krok 3. Korzystanie z okna interaktywnego REPL
 

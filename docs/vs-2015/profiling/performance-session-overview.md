@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce2c8f124b30d7ff85a96d857894bd84578b318c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422113"
 ---
 # <a name="performance-session-overview"></a>Sesja wydajności — Omówienie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

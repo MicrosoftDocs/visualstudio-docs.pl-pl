@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bc91ec6cd91cdd0785580d57782ae57ccee1839
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25e19aff472547f2d151d5d252bc98a1c4fb3c71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420606"
 ---
 # <a name="handle-specialized-deployment"></a>Obsługa specjalne wdrożenia
 Wdrożenie jest operacją opcjonalne dla projektów. Projekt sieci Web, na przykład obsługuje wdrożenia, aby umożliwić projektu, zaktualizuj serwer sieci Web. Podobnie **urządzeń inteligentnych** projekt obsługuje wdrożenia można skopiować zbudowanych aplikacji na urządzeniu docelowym. Podtypy projektów można podać sposób działania wdrożenia specjalistycznych implementując <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfejsu. Ten interfejs definiuje pełnego zestawu operacji wdrażania:
@@ -287,7 +287,7 @@ Wdrożenie jest operacją opcjonalne dla projektów. Projekt sieci Web, na przyk
     ```
 
 > [!NOTE]
->  Wszystkie przykłady kodu, podane w tym temacie stanowią część większego przykładu w [przykłady VSSDK](https://aka.ms/vs2015sdksamples).
+> Wszystkie przykłady kodu, podane w tym temacie stanowią część większego przykładu w [przykłady VSSDK](https://aka.ms/vs2015sdksamples).
 
 ## <a name="see-also"></a>Zobacz także
 - [Podtypy projektów](../../extensibility/internals/project-subtypes.md)

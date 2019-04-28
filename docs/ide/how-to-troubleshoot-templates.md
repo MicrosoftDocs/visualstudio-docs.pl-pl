@@ -8,13 +8,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 70782646a52a5bca5741a864eee1f965941bb34b
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547596"
 ---
-# <a name="how-to-troubleshoot-templates"></a>Porady: Rozwiązywanie problemów z szablonami
+# <a name="how-to-troubleshoot-templates"></a>Instrukcje: Rozwiązywanie problemów z szablonami
 
 Jeśli szablon nie są ładowane w środowisku deweloperskim, istnieją zlokalizowania problemu na kilka sposobów.
 

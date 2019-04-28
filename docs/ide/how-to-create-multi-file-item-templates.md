@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 745f371fa0461c2dc0dcedac0e06d160bbf7e209
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428992"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>Porady: Tworzenie szablonów elementów obejmujących wiele plików
+# <a name="how-to-create-multi-file-item-templates"></a>Instrukcje: Tworzenie szablonów elementów obejmujących wiele plików
 
 Szablony elementów może określić tylko jeden element, ale czasami element składa się z wielu plików. Na przykład szablon elementu formularze Windows wymaga następujących trzech plików:
 

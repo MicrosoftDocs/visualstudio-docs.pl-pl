@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 56004b22c77fe1388a666e175171579e60ffb3ad
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431449"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Testowanie wymagania agenta kontrolera i testu do testowania obciążenia
 
