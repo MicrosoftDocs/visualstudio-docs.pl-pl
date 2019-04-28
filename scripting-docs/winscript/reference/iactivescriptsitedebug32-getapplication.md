@@ -11,11 +11,11 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: c71e33445db7745f71e374c586d079a9665776b2
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992496"
 ---
 # <a name="iactivescriptsitedebug32getapplication"></a>IActiveScriptSiteDebug32::GetApplication
 Zwraca obiekt aplikacji debugowania, które są skojarzone z tą lokacją skryptu.  
@@ -44,5 +44,5 @@ HRESULT GetApplication(
  `GetApplication` Metoda oferuje hosta inteligentnego zdefiniować obiekt aplikacji, do której należy każdego skryptu. Aparaty skryptów powinien próbować wywołać tę metodę w celu ich zawierającego aplikacji i zastosuje poważniejsze `IProcessDebugManager::GetDefaultApplication` w przypadku niepowodzenia.  
   
 ## <a name="see-also"></a>Zobacz też  
- [IActiveScriptSiteDebug32, interfejs](../../winscript/reference/iactivescriptsitedebug32-interface.md)   
+ [IActiveScriptSiteDebug32 Interface](../../winscript/reference/iactivescriptsitedebug32-interface.md)   
  [IProcessDebugManager::GetDefaultApplication](../../winscript/reference/iprocessdebugmanager-getdefaultapplication.md)

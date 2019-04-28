@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9ab9315c428944de0b047192a789eac6aa654073
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a446e91095d9498a6182d1f80d046382b64e876e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384303"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Instrukcje: Pluralizacja Włączanie i wyłączanie (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60098626"
 Domyślnie podczas przeciągania obiektów bazy danych, które mają nazwy kończące się na s lub ię od **Eksploratora serwera**/**Eksplorator bazy danych** na [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), nazwy wygenerowanych klas jednostek zostaną zmienione w liczbie mnogiej na liczbę pojedynczą. W ten sposób bardziej przedstawiać fakt, że klasa wystąpień jednostki mapowany na pojedynczy rekord danych. Na przykład dodanie tabeli Customers [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] wyniki w klasie jednostki o nazwie odbiorcy, ponieważ klasa przechowuje dane dla jednego klienta.  
   
 > [!NOTE]
->  Pluralizacja jest domyślnie tylko w języku angielskim wersji programu Visual Studio.  
+> Pluralizacja jest domyślnie tylko w języku angielskim wersji programu Visual Studio.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -33,7 +33,7 @@ Domyślnie podczas przeciągania obiektów bazy danych, które mają nazwy końc
 2. W **opcje** okna dialogowego rozwiń **narzędzia graficzne bazy danych**.  
   
 > [!NOTE]
->  Wybierz **Pokaż wszystkie ustawienia** Jeśli **narzędzia graficzne bazy danych** węzeł nie jest widoczny.  
+> Wybierz **Pokaż wszystkie ustawienia** Jeśli **narzędzia graficzne bazy danych** węzeł nie jest widoczny.  
   
 1. Kliknij przycisk **O/R Designer**.  
   

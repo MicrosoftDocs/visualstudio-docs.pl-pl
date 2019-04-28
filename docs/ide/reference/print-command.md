@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: df609011250cebc097d3d356242302dbe41f8007
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969088"
 ---
 # <a name="print-command"></a>Print — Polecenie
 

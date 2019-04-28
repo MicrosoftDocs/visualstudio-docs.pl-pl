@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0798a23b4c8ad4e5859bec73ebfed47a56b322d6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58151300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993106"
 ---
 # <a name="iactivescriptprofilercallback3setwebworkerid-method"></a>Metoda IActiveScriptProfilerCallback3::SetWebWorkerId
 Powiadamia program profilujący o identyfikatorze procesów roboczych dla tej sesji profilowania. Jeśli funkcja nie może być wykonane w kontekście strony, ta metoda nie jest wywoływana. Wartość `webWorkerId` przyrosty o 1 dla każdego procesu roboczego, zaczynając od 1. Identyfikator wartości nie są przeznaczone do być stabilna poza sesję, a odpowiadają ich kolejność, w której utworzono pracowników.  

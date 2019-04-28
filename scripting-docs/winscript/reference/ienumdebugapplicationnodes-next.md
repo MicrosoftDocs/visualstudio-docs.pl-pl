@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f826ce91ba99c5bb697a346b40a6b7f97b6f5914
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58159208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951622"
 ---
 # <a name="ienumdebugapplicationnodesnext"></a>IEnumDebugApplicationNodes::Next
 Pobiera określoną liczbę segmentów w kolejności wyliczenia.  

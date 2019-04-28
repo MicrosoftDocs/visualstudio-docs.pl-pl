@@ -12,14 +12,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7810889d4af411477573c71aa694d797a90763f3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896022"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>Interfejsu API grafiki i statystyki pamięci
-<!-- VERSIONLESS --> Program Visual Studio 2017 i lepsze wsparcie Statystyka interfejsu API grafiki i narzędzia statystyki pamięci.  Te dwa narzędzia umożliwiają wyświetlanie różnych bity informacji na użycie interfejsu API Direct3D, a także użycie pamięci procesora GPU z różnych zasobów.
+<!-- VERSIONLESS -->
+Program Visual Studio 2017 i lepsze wsparcie Statystyka interfejsu API grafiki i narzędzia statystyki pamięci.  Te dwa narzędzia umożliwiają wyświetlanie różnych bity informacji na użycie interfejsu API Direct3D, a także użycie pamięci procesora GPU z różnych zasobów.
 
 ## <a name="graphics-api-statistics"></a>Statystyka interfejsu API grafiki
 Statystyka interfejsu API grafiki w programie Visual Studio Graphics Diagnostics umożliwia wyświetlanie wszystkich połączeń Direct3D, które zostały wprowadzone i liczba każde wywołanie.  Zaznacz, aby wyświetlić okno **Widok > Statystyka interfejsu API** elementu menu.

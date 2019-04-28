@@ -10,11 +10,11 @@ author: steved0x
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5efc22f6254ec0040dc4d767d7ac2831b4bd96f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949165"
 ---
 # <a name="state-machine-activity-designers"></a>Projektanci działań automatu stanów
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] obejmuje pewną liczbę Projektanci działań, używane podczas tworzenia przepływów pracy. Ta sekcja zawiera projektantów działań dostarczane przez system, używany do tworzenia i zarządzania nimi przepływów pracy automatu stanów. Poniższe tematy opisują te projektantów i wytyczne dotyczące sposobu ich używania.  

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c0579ec43d46698f4ba1ba40a9bc7610263cc996
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58151092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963536"
 ---
 # <a name="ienumdebugexpressioncontextsclone"></a>IEnumDebugExpressionContexts::Clone
 Tworzy moduł wyliczający, który zawiera ten sam stan jako bieżący modułu wyliczającego.  

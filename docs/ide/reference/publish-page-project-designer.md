@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 731ed637c8c728f51dd318e6c06b980e512b7d57
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968893"
 ---
 # <a name="publish-page-project-designer"></a>Strona publikowania, Projektant projektu
 **Publikuj** strony **projektanta projektu** służy do konfigurowania właściwości dla wdrażania ClickOnce.

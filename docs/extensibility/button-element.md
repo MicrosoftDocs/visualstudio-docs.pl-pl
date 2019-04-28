@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1e62436d32d85c76685c86ea0da396dacae1bf3f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891703"
 ---
 # <a name="button-element"></a>Button, element
 Definiuje element, który użytkownik może interakcyjnie przeprowadzić. Przyciski może być różnego rodzaju: Przycisk, przycisk menu i SplitDropDown.
@@ -42,7 +42,7 @@ Definiuje element, który użytkownik może interakcyjnie przeprowadzić. Przyci
 |Identyfikator GUID|Wymagana. Identyfikator GUID identyfikatora polecenia identyfikator GUID/ID.|
 |identyfikator|Wymagana. Identyfikator GUID/ID identyfikator polecenia.|
 |priority|Opcjonalna. Wartość liczbowa określająca priorytet.|
-| — typ|Opcjonalna. Wartość wyliczana, który określa typ przycisku.<br /><br /> Jeśli nie zostanie podana, używa przycisku.<br /><br /> Przycisk<br /> Standardowe polecenie, które pojawia się na paskach narzędzi (zwykle jako ikony przycisku), menu i menu kontekstowego.<br /><br /> Przycisk menu<br /> Element menu, który nie jest wykonywane polecenie, ale daje innym menu.<br /><br /> SplitDropDown<br /> Formanty, takie jak przyciski Cofnij i ponów na standardowym pasku narzędzi, które są dostępne w programie Microsoft Word.|
+|— typ|Opcjonalna. Wartość wyliczana, który określa typ przycisku.<br /><br /> Jeśli nie zostanie podana, używa przycisku.<br /><br /> Przycisk<br /> Standardowe polecenie, które pojawia się na paskach narzędzi (zwykle jako ikony przycisku), menu i menu kontekstowego.<br /><br /> Przycisk menu<br /> Element menu, który nie jest wykonywane polecenie, ale daje innym menu.<br /><br /> SplitDropDown<br /> Formanty, takie jak przyciski Cofnij i ponów na standardowym pasku narzędzi, które są dostępne w programie Microsoft Word.|
 |Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne

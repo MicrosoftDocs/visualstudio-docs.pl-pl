@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Więcej informacji na temat korzyści LinkedIn Learning dołączone jako część subskrypcji LinkedIn Premium zawarte w wybranych subskrypcjach programu Visual Studio.
 searchscope: VS Subscription
 ms.openlocfilehash: b6d60a5bedb960c2302a8823d1248b36849c604d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948686"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>LinkedIn Learning korzyści w ramach subskrypcji programu Visual Studio
 

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ee5d76060789118e9051c2d8dcc5fc570617f6a8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58151274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954957"
 ---
 # <a name="iactivescriptparseaddscriptlet"></a>IActiveScriptParse::AddScriptlet
 Dodaje skryptletu kodu do skryptu. Ta metoda jest używana w środowiskach, gdzie trwały stan skryptu jest sprzężony z dokumentem hosta, a host jest odpowiedzialny za Przywracanie skryptu, a nie za pomocą `IPersist*` interfejsu. Podstawowe przykłady są języków skryptów HTML, umożliwiające skryptlety kodu osadzane w dokumencie HTML do podłączenia do zdarzenia wewnętrzne (na przykład ONCLICK="button1.text='Exit" ").  

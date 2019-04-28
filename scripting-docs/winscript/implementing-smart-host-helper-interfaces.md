@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a9a5b94a25a838845acab2ce1c49295b0b28d425
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976193"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>Implementacja interfejsów pomocnika inteligentnego hosta
 [Interfejs IDebugDocumentHelper](../winscript/reference/idebugdocumenthelper-interface.md) interfejsu znacznie upraszcza zadanie tworzenia hosta inteligentnego dla aktywnego debugowania, ponieważ zawiera implementacje dla wielu interfejsów wymaganych do hostowania inteligentnych.  

@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 037c422befd9ba9103e6a80580bf814fb4b68333
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62937332"
 ---
 # <a name="send-activity-designer"></a>Send, projektant działań
 **Wysyłania** projektanta działań służy do tworzenia i konfigurowania <xref:System.ServiceModel.Activities.Send> działania.  

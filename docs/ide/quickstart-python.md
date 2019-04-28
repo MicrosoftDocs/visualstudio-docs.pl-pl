@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: f81ca0d5c41f08174adfc891055939414e1bfe6f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953962"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Szybki start: Tworzenie pierwszej aplikacji sieci web języka Python za pomocą programu Visual Studio
 

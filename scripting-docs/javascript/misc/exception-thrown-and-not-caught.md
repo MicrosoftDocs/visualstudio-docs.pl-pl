@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bae4ed0a335a9c12d16cb46208f77c4b66f12547
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946332"
 ---
 # <a name="exception-thrown-and-not-caught"></a>Wyjątek zgłoszony i nieprzechwycony
 Możesz się `throw` instrukcji w kodzie, ale nie znajdował się w obrębie **spróbuj** bloku, lub nie skojarzono nie **catch** bloku, aby można było wyłapać błąd. Wyjątki są zgłaszane z poziomu **spróbuj** zablokowane, używając **throw** instrukcji i przechwycony poza **spróbuj** blokowania z **catch** Instrukcja.  

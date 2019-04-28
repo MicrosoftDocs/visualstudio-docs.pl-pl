@@ -6,11 +6,11 @@ ms.author: crdun
 ms.date: 04/17/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
 ms.openlocfilehash: 383f9fb46341eec78fa2daa59bba31dde89ac437
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62985305"
 ---
 # <a name="accessibility"></a>Ułatwienia dostępu
 

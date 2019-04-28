@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Dowiedz się, jak ponownie przypisanie subskrypcji dla subskrybentów z manage.visualstudio.com lub centrum VLSC
 searchscope: VS Subscription
 ms.openlocfilehash: 12348428304892d4a4bc248d94bb5d0b484c7684
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951235"
 ---
 # <a name="how-to-resend-subscription-assignment-emails-in-the-visual-studio-subscription-management-portal"></a>Jak ponownie subskrypcję wiadomości e-mail dotyczących przypisania w portalu zarządzania subskrypcjami programu Visual Studio
 

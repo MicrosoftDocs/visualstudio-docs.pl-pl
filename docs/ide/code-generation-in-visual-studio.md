@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 11e82560b5dc049643df013d840b709da5446b56
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974998"
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Funkcje generowania kodu w programie Visual Studio
 

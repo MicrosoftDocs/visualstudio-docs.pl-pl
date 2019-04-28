@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 16c785534b843977f28c9a1383ac93f33e216947
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908952"
 ---
 # <a name="source-control-integration-essentials"></a>Podstawowe informacje o integracji kontroli kodu źródłowego
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje dwa typy Integracja kontroli źródła: wtyczka do kontroli źródła zapewnia podstawowe funkcje, który został skompilowany przy użyciu interfejsu API wtyczki kontroli źródła (znanego wcześniej jako interfejs API MSSCCI) i rozwiązania integracji kontroli źródła opartych na VSPackage, zapewnia bardziej niezawodne funkcje.

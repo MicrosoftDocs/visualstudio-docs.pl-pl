@@ -1,5 +1,5 @@
 ---
-title: Co to jest nowego w dziedzinie projektowania w programie Visual Studio 2017
+title: Co nowego w dziedzinie projektowania w programie Visual Studio 2017
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,13 +14,13 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: fb7ef710d117318d475e32f19b5ca2511b94f8bc
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386924"
 ---
-# <a name="whats-new-for-design-in-visual-studio-2017"></a>Co to jest nowego w dziedzinie projektowania w programie Visual Studio 2017
+# <a name="whats-new-for-design-in-visual-studio-2017"></a>Co nowego w dziedzinie projektowania w programie Visual Studio 2017
 
 ## <a name="live-dependency-validation"></a>Weryfikacja zależności na żywo
 

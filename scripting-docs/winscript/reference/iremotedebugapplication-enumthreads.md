@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 9f6f3102e12a20aa9f7be7a66938b5a34b2cc348
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58154286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944320"
 ---
 # <a name="iremotedebugapplicationenumthreads"></a>IRemoteDebugApplication::EnumThreads
 Wylicza wszystkie wątki, o których wiadomo, że są skojarzone z aplikacją.  

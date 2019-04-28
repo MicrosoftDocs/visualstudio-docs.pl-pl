@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1006fdb766c4c375c93a97f17cccd4e95568677
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998970"
 ---
 # <a name="properties-of-geometry-shapes"></a>Właściwości kształtów geometrycznych
 Aby określić, jak wystąpień klasy domeny są wyświetlane w języku specyficznym dla domeny, można użyć kształtów geometrycznych. Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji o tym, jak korzystać z tych właściwości, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).

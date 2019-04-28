@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3c96f0d87f5a49add1f0e8cebb61bab9659277e6
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972398"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Manifesty wdrożenia dla rozwiązań pakietu Office
   Manifest wdrożenia jest plikiem XML, w tym artykule opisano ustawienia wdrażania rozwiązania pakietu Office, która identyfikuje bieżąca wersja aplikacji.

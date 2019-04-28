@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 607c5f2c3cda64e7407203b0c45287a58342b807
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974686"
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup — element (MSBuild)
 Zawiera zestaw zdefiniowanych przez użytkownika [właściwość](../msbuild/property-element-msbuild.md) elementów. Każdy `Property` elementu używanego przy [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu musi być obiektem podrzędnym obiektu `PropertyGroup` elementu.

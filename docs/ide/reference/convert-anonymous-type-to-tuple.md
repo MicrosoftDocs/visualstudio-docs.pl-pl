@@ -10,11 +10,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: b6f5dd8e53ed2e0695370a1cdcb837609be30035
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58154442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968581"
 ---
 # <a name="convert-anonymous-type-to-tuple"></a>Konwertowanie typu anonimowego na krotkę
 

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 307e8e5285dd0023d30772c5eac7a4e351287aa5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909182"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Utrwalanie danych w pliku projektu programu MSBuild
 Podtypu projektu może być konieczne do utrwalenia danych specyficznych dla podtypu do pliku projektu do późniejszego użycia. Podtypu projektu używa trwałość plików projektu, aby spełniać następujące wymagania:

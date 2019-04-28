@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 69cbef53bcca74cceba4f9409b578fca45a58806
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970073"
 ---
 # <a name="disk-operations-report-threads-view"></a>Raport dotyczący operacji na dysku (Widok wątków)
 Raport operacji dyskowych pokazuje operacje We/Wy dysku w kanałach dysku.

@@ -13,11 +13,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 3ba5cdf7ba627bc1d6a75368d90da5ce8a726a5e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973224"
 ---
 # <a name="repair-visual-studio"></a>Napraw program Visual Studio
 

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d3f453770dbb389a688db0a9edcc8e97e179858
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952750"
 ---
 # <a name="create-sharepoint-features"></a>Tworzenie funkcji SharePoint
   Funkcja programu SharePoint można użyć do grupowania powiązanych elementów projektu programu SharePoint dla łatwiejsze wdrażanie. Możesz tworzyć funkcje, ustaw zakresy i oznaczyć inne funkcje za pomocą programu SharePoint Designer funkcji jako zależności. Projektant generuje również manifest, który jest plikiem XML, który opisuje każdą z funkcji.
