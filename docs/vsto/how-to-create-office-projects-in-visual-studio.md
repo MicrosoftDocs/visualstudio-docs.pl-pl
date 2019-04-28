@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 27b0a4c93d6b8143b81b960a9b5f4a2158e7b721
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: e41b7714ce5f9a98e50092c1507457b848201773
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419612"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Instrukcje: Tworzenie projektów Office w Visual Studio
   Możesz użyć [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] do tworzenia dodatku narzędzi VSTO i na poziomie dokumentu dostosowania aplikacji pakietu Microsoft Office. Aby uzyskać więcej informacji na temat tych typów projektów, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -44,7 +44,7 @@ ms.locfileid: "57868175"
     **Nowy projekt** pojawi się okno dialogowe.
 
    > [!NOTE]
-   >  Office Project jest docelowy [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] domyślnie. Aby uzyskać więcej informacji, zobacz [profil klienta .NET Framework](/dotnet/framework/deployment/client-profile).
+   > Office Project jest docelowy [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] domyślnie. Aby uzyskać więcej informacji, zobacz [profil klienta .NET Framework](/dotnet/framework/deployment/client-profile).
 
 2. W okienku szablonów, w obszarze węzła dla języka, którego chcesz użyć, rozwiń **Office/SharePoint**.
 
@@ -53,7 +53,7 @@ ms.locfileid: "57868175"
 4. Na liście szablonów projektu wybierz szablon projektu dodatku narzędzi VSTO. Aby uzyskać listę dostępnych szablonów dodatku narzędzi VSTO dla programów project, zobacz [Przegląd szablony projektu pakietu Office](../vsto/office-project-templates-overview.md).
 
    > [!NOTE]
-   >  Jeśli szablony projektu nie są widoczne po wybraniu **dodatków pakietu Office** węzła, upewnij się, że **.NET Framework 4** lub nowszej jest zaznaczona w polu kombi na górze okna dialogowego. Szablony projektów pakietu Office są widoczne dla obu wersji systemu .NET Framework.
+   > Jeśli szablony projektu nie są widoczne po wybraniu **dodatków pakietu Office** węzła, upewnij się, że **.NET Framework 4** lub nowszej jest zaznaczona w polu kombi na górze okna dialogowego. Szablony projektów pakietu Office są widoczne dla obu wersji systemu .NET Framework.
 
 5. W **nazwa** wpisz nazwę dla projektu. Domyślnie nazwa projektu jest również używany jako nazwa rozwiązania.
 
@@ -147,7 +147,7 @@ ms.locfileid: "57868175"
    - Znak procentu (%)
 
    > [!NOTE]
-   >  Jeśli używasz istniejącego dokumentu w [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] projektu, używaj tylko dokumentów, które zostały utworzone w lub przekonwertowane na [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Podobnie jeśli używasz istniejącego dokumentu w programie 2010 project, używaj tylko dokumentów, które zostały utworzone w lub przekonwertowane na Word 2010. Niektóre funkcje zostanie wyłączona w dokumencie, jeśli korzystasz z dokumentu, który został utworzony we wcześniejszej wersji programu Word. Jeśli próbujesz napisać kod, który używa tych funkcji, mogą wystąpić błędy w projekcie. Aby przekonwertować dokument, otwórz go w [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] lub Word 2010 na **pliku** karty na Wstążce, wybierz polecenie **informacje** > **przekonwertować**.
+   > Jeśli używasz istniejącego dokumentu w [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] projektu, używaj tylko dokumentów, które zostały utworzone w lub przekonwertowane na [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Podobnie jeśli używasz istniejącego dokumentu w programie 2010 project, używaj tylko dokumentów, które zostały utworzone w lub przekonwertowane na Word 2010. Niektóre funkcje zostanie wyłączona w dokumencie, jeśli korzystasz z dokumentu, który został utworzony we wcześniejszej wersji programu Word. Jeśli próbujesz napisać kod, który używa tych funkcji, mogą wystąpić błędy w projekcie. Aby przekonwertować dokument, otwórz go w [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] lub Word 2010 na **pliku** karty na Wstążce, wybierz polecenie **informacje** > **przekonwertować**.
 
 8. Wybierz **Zakończ**.
 

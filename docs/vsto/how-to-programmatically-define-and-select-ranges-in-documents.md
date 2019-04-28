@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6cdfe722e957eaae97b587940a1b8fb3db1112c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62574863"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Instrukcje: Programowe definiowanie i zaznaczanie zakresów w dokumentach
   Można zdefiniować zakres w dokumencie programu Microsoft Word pakietu Office za pomocą <xref:Microsoft.Office.Interop.Word.Range> obiektu. Wybierz cały dokument na wiele sposobów, na przykład za pomocą <xref:Microsoft.Office.Interop.Word.Range.Select%2A> metody <xref:Microsoft.Office.Interop.Word.Range> obiektu lub przy użyciu właściwość Content <xref:Microsoft.Office.Tools.Word.Document> klasy (w dostosowaniu na poziomie dokumentu) lub <xref:Microsoft.Office.Interop.Word.Document> klasy (w Dodatek narzędzi VSTO dla).

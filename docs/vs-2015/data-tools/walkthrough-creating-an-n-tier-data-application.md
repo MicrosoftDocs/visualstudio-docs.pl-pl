@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b1f585aaa3677955cef61a923061a62dcdc1e62
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b6c4ae0082d76b4eb9e58561daec48d196438bac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424745"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Przewodnik: Tworzenie aplikacji warstwowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,14 +64,14 @@ N-warstwy * dane aplikacji są aplikacjom dostęp do danych i są rozdzielone na
  Pierwszym krokiem w tym instruktażu jest tworzyć rozwiązania i dwa projekty bibliotek klas. Najwyższej klasy biblioteki będzie przechowywać zestawu danych (wygenerowany wpisanych klasy DataSet i DataTable, który będzie przechowywać dane aplikacji). Ten projekt jest używany jako warstwy jednostek danych, aplikacji i zwykle znajduje się w warstwie środkowej. Projektanta obiektów Dataset służy do tworzenia początkowego zestawu danych i automatycznie odseparowania kodu w bibliotekach klas dwa.  
   
 > [!NOTE]
->  Pamiętaj poprawnie nazwę projektu i rozwiązania, zanim klikniesz pozycję **OK**. Ten sposób ułatwi służących do przeprowadzenia tego instruktażu.  
+> Pamiętaj poprawnie nazwę projektu i rozwiązania, zanim klikniesz pozycję **OK**. Ten sposób ułatwi służących do przeprowadzenia tego instruktażu.  
   
 #### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>Aby utworzyć rozwiązanie n warstwowe i biblioteki klas DataEntityTier  
   
 1. Z **pliku** menu, Utwórz nowy projekt.  
   
     > [!NOTE]
-    >  **Projektanta obiektów Dataset** jest obsługiwana w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] i projektów języka C#. Utwórz nowy projekt w jednym z tych języków.  
+    > **Projektanta obiektów Dataset** jest obsługiwana w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] i projektów języka C#. Utwórz nowy projekt w jednym z tych języków.  
   
 2. W **nowy projekt** dialogowym **typów projektów** okienku kliknij **Windows**.  
   
@@ -125,7 +125,7 @@ N-warstwy * dane aplikacji są aplikacjom dostęp do danych i są rozdzielone na
 6. Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie kliknij przycisk **dalej**.  
   
     > [!NOTE]
-    >  W przypadku wybrania lokalnego pliku bazy danych (zamiast nawiązywania połączenia z SQL Server) może zostać poproszony, jeśli chcesz dodać plik do projektu. Kliknij przycisk **tak** możesz dodać do projektu plik bazy danych.  
+    > W przypadku wybrania lokalnego pliku bazy danych (zamiast nawiązywania połączenia z SQL Server) może zostać poproszony, jeśli chcesz dodać plik do projektu. Kliknij przycisk **tak** możesz dodać do projektu plik bazy danych.  
   
 7. Kliknij przycisk **dalej** na **Zapisz parametry połączenia do pliku konfiguracji aplikacji** strony.  
   
@@ -153,7 +153,7 @@ N-warstwy * dane aplikacji są aplikacjom dostęp do danych i są rozdzielone na
    Zestaw danych i TableAdapters są podzielone na dwie klasy projekty biblioteki. Projekt, który pierwotnie zawierał teraz całego zestawu danych (DataAccessTier) zawiera tylko adapterów TableAdapter. Projekt umieszczoną **projektu DataSet** właściwość (DataEntityTier) zawiera typizowany zestaw danych: NorthwindDataSet.Dataset.Designer.vb (lub NorthwindDataSet.Dataset.Designer.cs).  
   
 > [!NOTE]
->  Kiedy oddzielisz zestawy danych i TableAdapters (przez ustawienie **projektu DataSet** właściwości), istniejące częściowe klasy zestawu danych w projekcie nie zostaną automatycznie przeniesione. Istniejące klasy częściowego zestawu danych należy przenieść ręcznie do projektu zestawu danych.  
+> Kiedy oddzielisz zestawy danych i TableAdapters (przez ustawienie **projektu DataSet** właściwości), istniejące częściowe klasy zestawu danych w projekcie nie zostaną automatycznie przeniesione. Istniejące klasy częściowego zestawu danych należy przenieść ręcznie do projektu zestawu danych.  
   
 ## <a name="creating-a-new-service-application"></a>Tworzenie nowej aplikacji usługi  
  Ponieważ w tym instruktażu pokazano, jak dostęp do warstwy dostępu do danych przy użyciu usługi WCF, należy utworzyć nową aplikację usługi WCF.  
@@ -220,7 +220,7 @@ N-warstwy * dane aplikacji są aplikacjom dostęp do danych i są rozdzielone na
  Teraz, gdy warstwa dostępu do danych zawiera metody, aby zwrócić dane, tworzyć metody w usłudze danych do wywołania metody w warstwie dostępu do danych.  
   
 > [!NOTE]
->  Dla projektów C#, należy dodać odwołanie do `System.Data.DataSetExtensions` zestawu dla następujący kod do skompilowania.  
+> Dla projektów C#, należy dodać odwołanie do `System.Data.DataSetExtensions` zestawu dla następujący kod do skompilowania.  
   
 #### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>Aby utworzyć funkcji GetCustomers i GetOrders usługi danych  
   
@@ -322,7 +322,7 @@ N-warstwy * dane aplikacji są aplikacjom dostęp do danych i są rozdzielone na
 3. Wybierz **Service1** i kliknij przycisk **OK**.  
   
     > [!NOTE]
-    >  Jeśli masz wiele usług na bieżącym komputerze, wybierz usługę, utworzony wcześniej w tym przewodniku (usługa zawiera metody GetCustomers i GetOrders).  
+    > Jeśli masz wiele usług na bieżącym komputerze, wybierz usługę, utworzony wcześniej w tym przewodniku (usługa zawiera metody GetCustomers i GetOrders).  
   
 ## <a name="adding-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>Dodawanie DataGridViews do formularza w celu wyświetlania danych zwróconych przez usługę danych  
  Po dodaniu odwołania do usługi do usługi danych **źródeł danych** okno zostanie automatycznie wypełniona danych, który jest zwracany przez usługę.  
@@ -361,7 +361,7 @@ N-warstwy * dane aplikacji są aplikacjom dostęp do danych i są rozdzielone na
  Ponieważ usługa zwraca dane z tabel Klienci i zamówienia, wartość domyślna właściwości MaxReceivedMessageSize nie jest wystarczająco duży, aby pomieścić dane i musi zostać zwiększona. W tym przewodniku zostanie Zmień wartość na 6553600. Zmieni wartość na komputerze klienckim i odwołanie do usługi spowoduje automatyczne zaktualizowanie.  
   
 > [!NOTE]
->  Niższe domyślny rozmiar ma na celu ograniczenia narażenia na ataki (DoS). Aby uzyskać więcej informacji, zobacz <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.  
+> Niższe domyślny rozmiar ma na celu ograniczenia narażenia na ataki (DoS). Aby uzyskać więcej informacji, zobacz <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.  
   
 #### <a name="to-increase-the-maxreceivedmessagesize-value"></a>Aby zwiększyć wartości maxReceivedMessageSize  
   

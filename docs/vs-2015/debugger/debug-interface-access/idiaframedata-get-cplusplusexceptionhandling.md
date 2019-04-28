@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 12ccb2770cc15962f3899b99f14dd8c7f342c3cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553035"
 ---
 # <a name="idiaframedatagetcplusplusexceptionhandling"></a>IDiaFrameData::get_cplusplusExceptionHandling
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ HRESULT get_cplusplusExceptionHandling ( 
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca `TRUE` Jeśli obsługa wyjątków języka C++ jest obowiązywały; w przeciwnym razie zwraca `FALSE`.  
+ [out] Zwraca `TRUE` Jeśli C++ obsługi wyjątków jest obowiązywały; w przeciwnym razie zwraca `FALSE`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Aby ustalić, czy wyjątków strukturalnych obsługi jest aktywna (czyli bardzo różnią się od obsługi wyjątków C++), wywołania [idiaframedata::get_systemexceptionhandling —](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) metody.  
+ Do określenia, czy wyjątków strukturalnych obsługi obowiązuje (który jest bardzo różnią się od C++ obsługę wyjątków), wywołania [idiaframedata::get_systemexceptionhandling —](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) metody.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   

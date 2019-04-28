@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1105e6c68e1ec9083fd790ad8a38b09870345af2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580954"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Tworzenie składników web Part programu SharePoint
   Za pomocą składników web Part, można zmodyfikować zawartość, wygląd i zachowanie stron witryny programu SharePoint za pomocą przeglądarki. Części sieci Web to formanty po stronie serwera, które są uruchamiane wewnątrz strona składników web part: są blokami konstrukcyjnymi stron, które pojawiają się w witrynie programu SharePoint. Zobacz [bloków konstrukcyjnych: Składniki Web Part](http://go.microsoft.com/fwlink/?LinkID=182097).

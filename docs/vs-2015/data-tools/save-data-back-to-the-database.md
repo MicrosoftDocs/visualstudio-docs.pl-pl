@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0489dec1c2d6cb3d7559a2bdd029ccab6c3ce5f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dbbb730af965b414a907bb230a58291ec53084a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425348"
 ---
 # <a name="save-data-back-to-the-database"></a>Zapisywanie danych z powrotem w bazie danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +96,7 @@ Aktualizacja dwuetapowego procesu i roli DataRowVersion w Pomyślna aktualizacja
 |bieżący|Jim Wilson|James C. Wilson|  
   
 > [!CAUTION]
->  W `preserveChanges = true` scenariusz, jeśli <xref:System.Data.DataSet.RejectChanges%2A> metoda jest wywoływana w rekordu w zestawie danych docelowych, a następnie przywraca pierwotne dane z *źródła* zestawu danych. Oznacza to, że próbujesz zaktualizować oryginalnego źródła danych przy użyciu docelowy dataset nie prawdopodobnie może znaleźć oryginalnego wiersza do zaktualizowania. Można zapobiec Naruszenie współbieżności, wypełniając inny zestaw danych przy użyciu zaktualizowanych rekordów ze źródła danych, a następnie wykonuje scalania, aby zapobiec Naruszenie współbieżności. (Naruszenie współbieżności występuje, gdy inny użytkownik modyfikuje rekord w źródle danych, po napełnieniu zestawu danych.)  
+> W `preserveChanges = true` scenariusz, jeśli <xref:System.Data.DataSet.RejectChanges%2A> metoda jest wywoływana w rekordu w zestawie danych docelowych, a następnie przywraca pierwotne dane z *źródła* zestawu danych. Oznacza to, że próbujesz zaktualizować oryginalnego źródła danych przy użyciu docelowy dataset nie prawdopodobnie może znaleźć oryginalnego wiersza do zaktualizowania. Można zapobiec Naruszenie współbieżności, wypełniając inny zestaw danych przy użyciu zaktualizowanych rekordów ze źródła danych, a następnie wykonuje scalania, aby zapobiec Naruszenie współbieżności. (Naruszenie współbieżności występuje, gdy inny użytkownik modyfikuje rekord w źródle danych, po napełnieniu zestawu danych.)  
   
 ## <a name="update-constraints"></a>Aktualizuj ograniczenia  
  Aby wprowadzić zmiany do istniejącego wiersza danych, należy dodać lub zaktualizować dane w poszczególnych kolumnach. Jeśli zestaw danych zawiera ograniczeń (takich jak klucze obce lub ograniczenia innych niż null), istnieje możliwość, że rekord tymczasowo może być w stanie błędu, w przypadku aktualizowania. Oznacza to może być w stanie błędu po zakończeniu aktualizowania jedną kolumnę, ale przed zagłębieniem się do następnego.  
@@ -110,7 +110,7 @@ Aktualizacja dwuetapowego procesu i roli DataRowVersion w Pomyślna aktualizacja
   Po zakończeniu aktualizacji, można ponownie włączyć ograniczenia sprawdzania, który również ponownie włączy zdarzeń aktualizacji i podnosi je.  
   
 > [!NOTE]
->  W formularzach Windows Forms, architektura powiązania danych, która jest wbudowana w elemencie datagrid wstrzymuje ograniczenia sprawdzania do momentu fokusu poza wierszem, a nie trzeba jawnie wywołać <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, lub <xref:System.Data.DataRow.CancelEdit%2A> metody.  
+> W formularzach Windows Forms, architektura powiązania danych, która jest wbudowana w elemencie datagrid wstrzymuje ograniczenia sprawdzania do momentu fokusu poza wierszem, a nie trzeba jawnie wywołać <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, lub <xref:System.Data.DataRow.CancelEdit%2A> metody.  
   
  Ograniczenia są automatycznie wyłączane, gdy <xref:System.Data.DataSet.Merge%2A> metoda jest wywoływana w zestawie danych. Po zakończeniu scalania, jeśli zestaw danych, który nie może być włączone, wszelkie ograniczenia <xref:System.Data.ConstraintException> zgłaszany. W takiej sytuacji <xref:System.Data.DataSet.EnforceConstraints%2A> właściwość jest ustawiona na `false,` i wszystkie naruszenia ograniczeń muszą zostać rozwiązane przed zresetowaniem <xref:System.Data.DataSet.EnforceConstraints%2A> właściwość `true`.  
   
@@ -182,12 +182,12 @@ Aktualizacja dwuetapowego procesu i roli DataRowVersion w Pomyślna aktualizacja
 - Po zakończeniu ładowania zestawu danych. Jeśli załadujesz zestawu danych, przez wywołanie metody TableAdapter `Fill` metody, a następnie kartę automatycznie zatwierdza zmiany za Ciebie. Jednakże jeśli zestaw danych jest załadowany przez scalenie inny zestaw danych, następnie należy ręcznie zatwierdzić zmiany.  
   
   > [!NOTE]
-  >  Można zapobiec automatycznego zatwierdzania zmian po wywołaniu przez adapter `Fill` metody, ustawiając `AcceptChangesDuringFill` właściwości karty do `false`. Jeśli jest równa `false`, a następnie <xref:System.Data.DataRow.RowState%2A> każdego wiersza, który jest wstawiany podczas wypełnienia ustawiono <xref:System.Data.DataRowState>.  
+  > Można zapobiec automatycznego zatwierdzania zmian po wywołaniu przez adapter `Fill` metody, ustawiając `AcceptChangesDuringFill` właściwości karty do `false`. Jeśli jest równa `false`, a następnie <xref:System.Data.DataRow.RowState%2A> każdego wiersza, który jest wstawiany podczas wypełnienia ustawiono <xref:System.Data.DataRowState>.  
   
 - Po wysłaniu zmian w zestawie do innego procesu, takich jak usługi XML sieci Web.  
   
   > [!CAUTION]
-  >  Zatwierdzanie zmian w ten sposób usuwa wszystkie informacje o zmianach. Nie zmiany aż po zakończenia wykonywania operacji, które wymagają aplikacji w taki sposób, aby dowiedzieć się, jakie zmiany zostały wprowadzone w zestawie danych.  
+  > Zatwierdzanie zmian w ten sposób usuwa wszystkie informacje o zmianach. Nie zmiany aż po zakończenia wykonywania operacji, które wymagają aplikacji w taki sposób, aby dowiedzieć się, jakie zmiany zostały wprowadzone w zestawie danych.  
   
   Ta metoda wykonuje następujące czynności:  
   
@@ -208,7 +208,7 @@ Aktualizacja dwuetapowego procesu i roli DataRowVersion w Pomyślna aktualizacja
 |<xref:System.Data.DataSet.AcceptChanges%2A?displayProperty=fullName>|Zmiany zostały wprowadzone we wszystkich wierszach we wszystkich tabelach zestawu danych.|  
   
 > [!NOTE]
->  Jeśli załadujesz zestawu danych, przez wywołanie metody TableAdapter `Fill` metody, nie trzeba jawnie zaakceptować zmiany. Domyślnie `Fill` wywołania metody `AcceptChanges` metoda po jej zakończeniu, wypełnianie tabeli danych.  
+> Jeśli załadujesz zestawu danych, przez wywołanie metody TableAdapter `Fill` metody, nie trzeba jawnie zaakceptować zmiany. Domyślnie `Fill` wywołania metody `AcceptChanges` metoda po jej zakończeniu, wypełnianie tabeli danych.  
   
  Powiązana metoda `RejectChanges`, cofa efekt zmiany przez skopiowanie <xref:System.Data.DataRowVersion> wersji do <xref:System.Data.DataRowVersion> wersji rekordów. Ustawia również <xref:System.Data.DataRow.RowState%2A> z każdego rekordu Wstecz, aby <xref:System.Data.DataRowState>.  
   
@@ -224,7 +224,7 @@ Aktualizacja dwuetapowego procesu i roli DataRowVersion w Pomyślna aktualizacja
 - W danych zaplecza, na wysyłanie danych do źródła danych — na przykład baza danych —, dzięki czemu jej o zaakceptowanie lub odrzucenie danych. Jeśli pracujesz z bazą danych, który zawiera zaawansowane funkcje służące do sprawdzania poprawności danych, a także informacje o błędzie, może to być praktyczne podejście, ponieważ można sprawdzić poprawność danych niezależnie od tego, gdzie pochodzi on z. Jednak to podejście nie może uwzględnić wymagania sprawdzania poprawności specyficznych dla aplikacji. Ponadto posiadanie źródła danych sprawdzania poprawności danych może spowodować wiele rund do źródła danych, w zależności od tego, jak ułatwia rozpoznawanie błędów sprawdzania poprawności wygenerowane przez usługę zaplecza w aplikacji.  
   
   > [!IMPORTANT]
-  >  Korzystając z polecenia danych za pomocą <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> właściwość, która jest równa <xref:System.Data.CommandType>, należy dokładnie sprawdzić informacje przesyłane przez klienta przed przekazaniem go do bazy danych. Złośliwi użytkownicy mogą próby wysłania przez użytkownika (wstrzyknąć) zmodyfikowany lub dodatkowych instrukcji SQL w celu uzyskania nieautoryzowanego dostępu lub uszkodzenia bazy danych. Przed przeniesieniem danych wejściowych użytkownika do bazy danych zawsze sprawdzić, czy informacje są prawidłowe. Jest najlepszym rozwiązaniem jest zawsze używaj sparametryzowanych zapytań lub procedur przechowywanych, gdy jest to możliwe. Aby uzyskać więcej informacji, zobacz [Przegląd wykorzystuje skryptu](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  > Korzystając z polecenia danych za pomocą <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> właściwość, która jest równa <xref:System.Data.CommandType>, należy dokładnie sprawdzić informacje przesyłane przez klienta przed przekazaniem go do bazy danych. Złośliwi użytkownicy mogą próby wysłania przez użytkownika (wstrzyknąć) zmodyfikowany lub dodatkowych instrukcji SQL w celu uzyskania nieautoryzowanego dostępu lub uszkodzenia bazy danych. Przed przeniesieniem danych wejściowych użytkownika do bazy danych zawsze sprawdzić, czy informacje są prawidłowe. Jest najlepszym rozwiązaniem jest zawsze używaj sparametryzowanych zapytań lub procedur przechowywanych, gdy jest to możliwe. Aby uzyskać więcej informacji, zobacz [Przegląd wykorzystuje skryptu](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
   Po zmiany zostały dokonane w zestawie danych, mogą przesyłać zmiany ze źródłem danych. Najczęściej, możesz to zrobić, wywołując `Update` metodę TableAdapter (lub adapter danych). Metoda pętlę każdy rekord w tabeli danych określa, jakiego rodzaju aktualizacji jest wymagana (aktualizowania, wstawiania lub usuwania), jeśli są dostępne, a następnie uruchamia odpowiednie polecenie.  
   
@@ -256,7 +256,7 @@ Aktualizacja dwuetapowego procesu i roli DataRowVersion w Pomyślna aktualizacja
 - Przesyłane instrukcja SQL zawiera klauzuli SET do ustawiania nowych wartości kolumn zmodyfikowane.  
   
     > [!NOTE]
-    >  Jeśli TableAdapter `UpdateCommand` właściwość została ustawiona na nazwę procedury składowanej, karta nie konstruowania instrukcji SQL. Zamiast tego wywołuje procedurę składowaną z odpowiednimi parametrami, które są przekazywane w.  
+    > Jeśli TableAdapter `UpdateCommand` właściwość została ustawiona na nazwę procedury składowanej, karta nie konstruowania instrukcji SQL. Zamiast tego wywołuje procedurę składowaną z odpowiednimi parametrami, które są przekazywane w.  
   
 ## <a name="passing-parameters"></a>Przekazywanie parametrów  
  Zazwyczaj używasz parametry do przekazania wartości dla rekordów, które mają zostać zaktualizowane w bazie danych.  Gdy TableAdapter `Update` metoda uruchamia się instrukcji UPDATE, należy ją podać wartości parametrów. Pobiera wartości te `Parameters` kolekcję dla polecenia odpowiednie dane — w tym przypadku `UpdateCommand` obiektu w metodzie TableAdapter.  
@@ -268,7 +268,7 @@ Aktualizacja dwuetapowego procesu i roli DataRowVersion w Pomyślna aktualizacja
  W instrukcji UPDATE należy określić zarówno nowe wartości (te, które będą zapisywane do rekordu) również stare wartości (tak, aby rekord może znajdować się w bazie danych). Istnieją dwa parametry dla każdej wartości: jeden dla klauzuli SET i inna dla klauzuli WHERE. Oba parametry odczytywać dane z rekordu, która jest aktualizowana, ale staną się różne wersje wartości kolumny, na podstawie parametru [właściwość SqlParameter.SourceVersion](https://msdn.microsoft.com/library/system.data.sqlclient.sqlparameter.sourceversion.aspx). Parametr dla klauzuli SET pobiera bieżącą wersję, a następnie parametrów dla klauzuli WHERE pobiera oryginalnej wersji.  
   
 > [!NOTE]
->  Można również ustawić wartości w `Parameters` kolekcji samodzielnie w kodzie, co zwykle należy w obsłudze zdarzeń adaptera danych <xref:System.Data.DataTable.RowChanging> zdarzeń.  
+> Można również ustawić wartości w `Parameters` kolekcji samodzielnie w kodzie, co zwykle należy w obsłudze zdarzeń adaptera danych <xref:System.Data.DataTable.RowChanging> zdarzeń.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Aktualizowanie danych za pomocą adaptera TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)   

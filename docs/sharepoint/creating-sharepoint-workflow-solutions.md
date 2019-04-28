@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 756b1b1171c18fe435d318d5fb4bccf278aecc58
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: d78d82a51f88bfaf076b56692629e801689e103e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443527"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Tworzenie rozwiązań przepływu pracy SharePoint
 
@@ -57,7 +57,7 @@ Aby uzyskać więcej informacji na temat programu SharePoint, zobacz [Microsoft 
  Po utworzeniu przepływu pracy, można zmodyfikować jego właściwości w oknie dialogowym właściwości. Mimo że większość właściwości przepływu pracy można zmienić bezpośrednio w oknie dialogowym właściwości, niektóre wymagają kliknij przycisk wielokropka (![elipsy projektanta Mobile ASP.NET](../sharepoint/media/mwellipsis.gif "elipsy projektanta Mobile ASP.NET")) do modyfikowanie ich wartości. Kliknięcie tego przycisku powoduje ponowne uruchomienie **Kreator ustawień niestandardowych SharePoint**. Po wprowadzeniu właściwości wartość zmiany, wybierz **Zakończ** przycisk, aby zakończyć je.
 
 > [!NOTE]
->  **Przepływu pracy typu** właściwość jest tylko do odczytu i nie można jej zmienić. Jeśli chcesz zmienić typ przepływu pracy, należy utworzyć inny przepływ pracy.
+> **Przepływu pracy typu** właściwość jest tylko do odczytu i nie można jej zmienić. Jeśli chcesz zmienić typ przepływu pracy, należy utworzyć inny przepływ pracy.
 
 ## <a name="design-a-sharepoint-workflow"></a>Projekt przepływu pracy programu SharePoint
  Po zdefiniowaniu wszystkich czynności w procesie biznesowym za pomocą [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektanta przepływu pracy do projektowania przepływu pracy programu SharePoint. Aby otworzyć projektanta, kliknij dwukrotnie Workflow1.cs lub Workflow1.vb w **Eksploratora rozwiązań**, lub Otwórz menu skrótów dla jednej z tych plików, a następnie wybierz **Otwórz**.

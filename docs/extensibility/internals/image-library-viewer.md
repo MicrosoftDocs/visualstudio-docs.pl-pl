@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 749441e960363fe208e3ad67288180c1935db35f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860605"
 ---
 # <a name="image-library-viewer"></a>Przeglądarka biblioteki obrazów
 Narzędzie przeglądarka biblioteki obrazów programu Visual Studio można załadować i wyszukaj obraz o nazwie manifesty umożliwienie użytkownikowi nimi manipulować w taki sam sposób, który będzie programu Visual Studio. Użytkownik może zmienić tła, rozmiary, DPI, duży kontrast i inne ustawienia. Narzędzie również Wyświetla informacje ładowania dla każdego z manifestu obrazu i wyświetla informacje dotyczące źródła dla każdego obrazu w manifeście obrazu. To narzędzie jest przydatne w przypadku:

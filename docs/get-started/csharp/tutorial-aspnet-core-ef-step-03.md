@@ -17,11 +17,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: c1d95d7621a97a36fdf737e7d3dd4f8baf713645
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59018184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553946"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>Krok 3. Praca z danymi przy użyciu platformy Entity Framework
 

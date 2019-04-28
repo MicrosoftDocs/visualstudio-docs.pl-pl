@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d20b8938f4d841bb42299b7aa9abaf633f72e7d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1f02018ed9ddb6f91f965d28767cde55e4c3e524
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437308"
 ---
 # <a name="introduction-to-wpf"></a>Wprowadzenie do WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -208,7 +208,7 @@ End Namespace
   <xref:System.Windows.Controls.DockPanel> Umożliwia podrzędne <xref:System.Windows.Controls.TextBox> formantów stwierdzenie, sposobu ich rozmieszczenia. Aby to zrobić, <xref:System.Windows.Controls.DockPanel> implementuje <xref:System.Windows.Controls.DockPanel.Dock%2A> właściwość, która jest widoczna dla formantów podrzędnych, aby umożliwić każdej z nich, aby określić styl dokowania.  
   
 > [!NOTE]
->  Wywołuje się, właściwość, która jest implementowany przez kontrolki nadrzędnej, używany przez formanty podrzędne to konstrukcja WPF [dołączona właściwość](https://msdn.microsoft.com/library/ms749011\(v=vs.100\).aspx).  
+> Wywołuje się, właściwość, która jest implementowany przez kontrolki nadrzędnej, używany przez formanty podrzędne to konstrukcja WPF [dołączona właściwość](https://msdn.microsoft.com/library/ms749011\(v=vs.100\).aspx).  
   
  Na poniższej ilustracji przedstawiono wynik znaczników XAML w poprzednim przykładzie.  
   

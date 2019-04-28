@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 451464cd2576c1dd70c7b8235cead327b2f05ca2
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582115"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio wielowersyjnością kodu — Przegląd
 

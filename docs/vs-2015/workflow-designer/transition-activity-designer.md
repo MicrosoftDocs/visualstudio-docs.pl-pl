@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69e918eae56d35d134b9b7c3093d5f0599a12c5e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 026ee7af3c60b3832449f5f2ed996f00c75a1c87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435383"
 ---
 # <a name="transition-activity-designer"></a>Transition, projektant działań
 A <xref:System.Activities.Statements.Transition> reprezentuje przejścia między dwoma stanami.  
@@ -40,7 +40,7 @@ A <xref:System.Activities.Statements.Transition> reprezentuje przejścia między
  Przejścia są tworzone przez przeciąganie linii z jednego stanu do innego lub odrzucając stan na trójkąty, które są wyświetlane, gdy jeden stan jest przeciągany nad inny stan. Aby utworzyć przejście przez przeciąganie, umieść kursor myszy nad krawędzi stanu źródła i przeciągnij linię od stanu źródłowego do stanu docelowego. Aby utworzyć przejście przez porzucenie, przeciągnij stan docelowy kursor stanu źródła i upuść go na jeden z czterech trójkątów, które pojawiają się wokół stanu źródła. Stan docelowy może być albo nowy stan przeciągnięte z **przybornika**, lub istniejący stan przeciągnięte z projektanta przepływów pracy.  
   
 > [!NOTE]
->  Pojedynczy stan w automacie stanów może mieć maksymalnie 76 przejścia utworzone za pomocą projektanta przepływów pracy. Limit przejścia dla stanu utworzony poza projektanta przepływów pracy jest ograniczony tylko ilością zasobów systemowych.  
+> Pojedynczy stan w automacie stanów może mieć maksymalnie 76 przejścia utworzone za pomocą projektanta przepływów pracy. Limit przejścia dla stanu utworzony poza projektanta przepływów pracy jest ograniczony tylko ilością zasobów systemowych.  
   
  Udostępnione wyzwalacza przejścia są zestawu przejść, które mają te same zdarzenia wyzwalacza. Wyzwalacz udostępnionego umożliwia warunkowego przejście do stanu docelowego, na podstawie oceny wyrażenia skonfigurowane dla wielu przejścia, które mają wspólne zdarzenie wyzwalacza. Aby dodać dodatkowe akcje do przejścia i tworzenia udostępnionych przejść, kliknij przycisk koła, który wskazuje początek żądanego przejścia i przeciągnij go do żądanego stanu. Nowe przejście współużytkują tego samego wyzwalacza jako przejściu początkowym, ale będzie mieć unikatowy warunków i akcji. Udostępnione przejścia można również utworzyć z w Projektancie przejścia, klikając **Dodaj udostępnionych przejść wyzwalaczy** w dolnej części projektanta przejścia, a następnie wybierając stanu wybraną docelową z  **Stany połączyć** listy rozwijanej.  
   

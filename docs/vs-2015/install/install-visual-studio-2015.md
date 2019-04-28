@@ -19,12 +19,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 8e6f39e420981615f391103c6cee431f930190bf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 677a72f0378c62f2ca65515ec563069f22b9ff09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433011"
 ---
 # <a name="install-visual-studio-2015"></a>Instalowanie programu Visual Studio 2015
 
@@ -53,7 +53,7 @@ Przed rozpoczęciem omawiania szczegółach poniżej przedstawiono listę nasze 
  Składniki niestandardowe obejmują Visual C++, Visual F#, SQL Server Data Tools, narzędzia mobilnych dla wielu platform i zestawów SDK i innych firm zestawy SDK i rozszerzeń. Można zainstalować dowolny niestandardowych składników w późniejszym czasie, jeśli nie zaznaczysz je podczas początkowej konfiguracji.
 
 > [!NOTE]
->  Instalacja niestandardowa automatycznie zawiera składniki, które znajdują się w przypadku instalacji domyślnej.
+> Instalacja niestandardowa automatycznie zawiera składniki, które znajdują się w przypadku instalacji domyślnej.
 
  Pełną listę składników niestandardowych jest następująca:
 
@@ -70,7 +70,7 @@ Przed rozpoczęciem omawiania szczegółach poniżej przedstawiono listę nasze 
  Przy użyciu nośnika instalacyjnego (DVD), można zainstalować program Visual Studio, za pomocą usługi subskrypcji programu Visual Studio z [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) witryny sieci Web, pobierając Instalator sieci web z [programu Visual Studio Pliki do pobrania](http://go.microsoft.com/fwlink/?LinkId=517106) witryny sieci Web, lub przez tworzenie układu instalacji w trybie offline (zobacz [Offline instalacji programu Visual Studio Utwórz](../install/create-an-offline-installation-of-visual-studio.md) strony, aby uzyskać więcej informacji).
 
 > [!IMPORTANT]
->  Musisz mieć uprawnienia administratora, aby zainstalować [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Jednak nie są potrzebne do użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] po jej zainstalowaniu.
+> Musisz mieć uprawnienia administratora, aby zainstalować [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Jednak nie są potrzebne do użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] po jej zainstalowaniu.
 
  Konto administratora lokalnego musi mieć następujące uprawnienia, które są włączone, aby zainstalować wszystkie elementy w programie Visual Studio.
 

@@ -19,11 +19,11 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: eabfb7ffd365ab377bc80997138a4f3368db488d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583493"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Co nowego w programie Visual Studio 2017
 

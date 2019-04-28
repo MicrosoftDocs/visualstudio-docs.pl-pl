@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4884ef313d969ae59b8aea704490eeb2e4e5a91c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8a505fe3428a8e16c321eee4764f8a62fff65511
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431106"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Instrukcje: Ręczne tworzenie szablonów sieci Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54782213"
 Tworzenie szablonu sieci Web jest inny niż tworzenie innych rodzajów szablonów. Ponieważ szablony projektów internetowych są wyświetlane w **Dodaj nową witrynę sieci Web** okno dialogowe, a elementy projektu sieci Web są pogrupowane według języka programowania, w pliku .vstemplate, należy określić szablon jako szablon sieci Web i zidentyfikować programowanie język.  
   
 > [!NOTE]
->  Szablony sieci Web musi zawierać plik .webproj pusty, który jest określony za pomocą `File` atrybutu `Project` elementu. Chociaż projekty sieci Web nie jest wymagane pliki projektu, ten plik jest wymagany, aby możliwe było poprawnie szablonu sieci Web.  
+> Szablony sieci Web musi zawierać plik .webproj pusty, który jest określony za pomocą `File` atrybutu `Project` elementu. Chociaż projekty sieci Web nie jest wymagane pliki projektu, ten plik jest wymagany, aby możliwe było poprawnie szablonu sieci Web.  
   
 ### <a name="to-manually-create-a-web-template"></a>Aby ręcznie utworzyć szablon sieci Web  
   

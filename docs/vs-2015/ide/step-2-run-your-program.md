@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6f5b57b4246a7e047f64ca79c9a0021cbfc0766f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7e8a28180270a5093bdeb59f45fde9e6838a6ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434058"
 ---
 # <a name="step-2-run-your-program"></a>Krok 2. Uruchamianie programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Pasek narzędzi debugowania
     - Kliknij przycisk X w prawym górnym rogu **Form1** okna.  
   
     > [!NOTE]
-    >  Kiedy uruchamiasz program z wewnątrz IDE, nazywa *debugowania* ponieważ jest to zazwyczaj Aby znaleźć i naprawić usterki (błędy) w programie. Chociaż program ten jest mały i naprawdę nic jeszcze nie, nadal jest to prawdziwy program. Postępuj zgodnie z tą samą procedurą, aby uruchomić i debugować inne programy. Aby dowiedzieć się więcej na temat debugowania, zobacz [podstawy debugera](../debugger/debugger-basics.md).  
+    > Kiedy uruchamiasz program z wewnątrz IDE, nazywa *debugowania* ponieważ jest to zazwyczaj Aby znaleźć i naprawić usterki (błędy) w programie. Chociaż program ten jest mały i naprawdę nic jeszcze nie, nadal jest to prawdziwy program. Postępuj zgodnie z tą samą procedurą, aby uruchomić i debugować inne programy. Aby dowiedzieć się więcej na temat debugowania, zobacz [podstawy debugera](../debugger/debugger-basics.md).  
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   

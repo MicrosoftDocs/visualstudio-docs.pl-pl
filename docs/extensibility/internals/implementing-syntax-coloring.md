@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 453952f52561a761ab4cf01825d07aa97595d0c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 15659cc8061601776e3a3197a49f14e2c824aa7b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420424"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementowanie kolorowania składni
 Gdy usługa językowa udostępnia kolorowania składni, analizator konwertuje tablicę elementów z możliwością kolorowania wiersza tekstu i zwraca typy tokenów odpowiadający te elementy z możliwością kolorowania. Analizator powinien zwrócić typy tokenów, które należą do listy elementów z możliwością kolorowania. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Wyświetla każdy element z możliwością kolorowania w oknie kodu według atrybutów przypisanych przez obiekt colorizer do odpowiedniego typu tokenu.
@@ -27,7 +27,7 @@ Gdy usługa językowa udostępnia kolorowania składni, analizator konwertuje ta
  Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej o nowym sposobie Implementowanie kolorowania składni, zobacz [instruktażu: Wyróżnianie tekstu](../../extensibility/walkthrough-highlighting-text.md).
 
 > [!NOTE]
->  Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.
+> Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.
 
 ## <a name="steps-followed-by-an-editor-to-colorize-text"></a>Kroki następuje edytor, którego można kolorować tekstu
 
@@ -63,7 +63,7 @@ Gdy usługa językowa udostępnia kolorowania składni, analizator konwertuje ta
  Środowiska pakietu zarządzanego (MPF) udostępnia wszystkie klasy, które są wymagane do zaimplementowania colorizer. Powinien dziedziczyć klasy usługi języka <xref:Microsoft.VisualStudio.Package.LanguageService> klasy i wdrożyć wymagane metody. Należy podać skanera i analizatora, implementując <xref:Microsoft.VisualStudio.Package.IScanner> interfejs i zwrócenia wystąpienia interfejsu z <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> — metoda (jednej z metod, które muszą zostać zaimplementowane w <xref:Microsoft.VisualStudio.Package.LanguageService> klasy). Aby uzyskać więcej informacji, zobacz [kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).
 
 ## <a name="see-also"></a>Zobacz też
-- [Instrukcje: Używanie wbudowanych elementów z możliwością kolorowania](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+- [Instrukcje: korzystanie z wbudowanych elementów z możliwością kolorowania](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
 - [Niestandardowe elementy z możliwością kolorowania](../../extensibility/internals/custom-colorable-items.md)
 - [Tworzenie starszej wersji usługi językowej](../../extensibility/internals/developing-a-legacy-language-service.md)
 - [Kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

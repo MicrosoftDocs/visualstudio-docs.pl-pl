@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ecae68c3c5d9569f2c63d484c53696bbec42e55
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 24378a9aa5bb78fdc2ae18a2793dafcf87be2605
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443138"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Zapis procesorów uwzględniających rejestratorów
 Zdolność [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] może korzystać z wielu procesorów skrócić czas tworzenia projektu, ale również dodaje złożoności do tworzenia rejestrowania zdarzeń. W środowisku jednoprocesorowym zdarzenia, komunikaty, ostrzeżenia i błędy przybyć rejestratora w sposób przewidywalny i sekwencyjne. Jednak w środowisku wielu procesorów zdarzeń z różnych źródeł mogą pojawić się w tym samym czasie lub poza sekwencją. Aby zapewnić w tym celu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] udostępnia procesorów uwzględniających rejestratora i nowy model rejestrowania i umożliwia utworzenie niestandardowego "przekazywanie rejestratorów."
@@ -78,7 +78,7 @@ msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 ```
 
 > [!NOTE]
->  Znak gwiazdki (*) muszą być rozdzielone nazwy dwóch rejestratora w `-dl` przełącznika.
+> Znak gwiazdki (*) muszą być rozdzielone nazwy dwóch rejestratora w `-dl` przełącznika.
 
  Za pomocą ConfigurableForwardingLogger przypomina przy użyciu innych rejestratora (zgodnie z opisem w [dzienniki kompilacji uzyskiwanie](../msbuild/obtaining-build-logs-with-msbuild.md)), z tą różnicą, że możesz dołączyć rejestratora ConfigurableForwardingLogger zamiast typowej [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] rejestratora i Określ jako parametry zdarzeń, które chcesz ConfigurableForwardingLogger w celu przekazania ich węźle centralnym.
 

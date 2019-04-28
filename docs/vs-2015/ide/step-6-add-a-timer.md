@@ -9,12 +9,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59bdcbd3cefe185a8809e471be22f00ea2478857
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d6833e9735aa6a360ce0642e991bd019df347d16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442507"
 ---
 # <a name="step-6-add-a-timer"></a>Krok 6. Dodawanie czasomierza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Następnie dodaj **czasomierza** formantu do gry w dopasowywanie. Czasomierz cze
 Czasomierz  
   
     > [!NOTE]
-    >  Jeśli przybornik jest pusty, należy wybrać Projektant formularzy, a nie kod związany z formularzem, przed otwarciem przybornika.  
+    > Jeśli przybornik jest pusty, należy wybrać Projektant formularzy, a nie kod związany z formularzem, przed otwarciem przybornika.  
   
 2. Wybierz **Timer1** ikonę, aby wybrać czasomierz. W **właściwości** okna, przejdź z wyświetlania zdarzeń do wyświetlania właściwości. Następnie należy skonfigurować czasomierz **interwał** właściwości **750**, ale pozostawić jego **włączone** właściwością **False**. **Interwał** właściwość mówi czasomierzowi, o ile ma czekać między *impulsów*, lub kiedy ma wyzwolić zdarzenie taktu. Wartość 750 mówi czasomierzowi, aby czekał trzy czwarte sekundy (750 milisekund), zanim uruchomi zdarzenie Taktu. Wywołasz `Start()` metodę, aby uruchomić timer tylko wtedy, gdy gracz wybierze drugą etykietę.  
   
@@ -41,7 +41,7 @@ Czasomierz
      Program obsługi zdarzeń taktu wykonuje trzy rzeczy: Po pierwsze, sprawdza, czy czasomierz nie jest uruchomiony, wywołując `Stop()` metody. Następnie wykorzystuje dwie zmienne odniesienia, `firstClicked` i `secondClicked`, aby ponownie ukryć ikony dwóch etykiet, które wybrał gracz. Na koniec resetuje `firstClicked` i `secondClicked` odwoływać się do zmiennych do `null` w języku Visual C# i `Nothing` w języku Visual Basic. Ten krok jest ważny, ponieważ w ten sposób program się resetuje. Teraz go jest nie rejestrowanie informacji o dowolnej `Label` kontrolek, a jego gracz jest gotowy do ponownie wybrać etykietę.  
   
     > [!NOTE]
-    >  A `Timer` obiekt ma `Start()` metodę, która uruchamia czasomierz, i `Stop()` metody, która go zatrzymuje. Po ustawieniu czasomierza **włączone** właściwości **True** w **właściwości** oknie zacznie jak należy jak najszybciej rozpoczyna się program. Ale gdy pozostawisz równa **False**, nie rozpoczyna odliczania, dopóki nie jego `Start()` metoda jest wywoływana. Normalnie, czasomierz wyzwala zdarzenie taktu cyklicznie wielokrotnie, za pomocą **interwał** właściwości w celu określenia liczby milisekund między taktami. Być może zauważono, jak czasomierza `Stop()` metoda jest wywoływana wewnątrz zdarzenia takt. To przestawia czasomierz w *tryb jednego zadziałania*, co oznacza, że w przypadku `Start()` metoda jest wywoływana, jego czeka przez określony interwał, wyzwala pojedyncze zdarzenie taktu i się zatrzymuje.  
+    > A `Timer` obiekt ma `Start()` metodę, która uruchamia czasomierz, i `Stop()` metody, która go zatrzymuje. Po ustawieniu czasomierza **włączone** właściwości **True** w **właściwości** oknie zacznie jak należy jak najszybciej rozpoczyna się program. Ale gdy pozostawisz równa **False**, nie rozpoczyna odliczania, dopóki nie jego `Start()` metoda jest wywoływana. Normalnie, czasomierz wyzwala zdarzenie taktu cyklicznie wielokrotnie, za pomocą **interwał** właściwości w celu określenia liczby milisekund między taktami. Być może zauważono, jak czasomierza `Stop()` metoda jest wywoływana wewnątrz zdarzenia takt. To przestawia czasomierz w *tryb jednego zadziałania*, co oznacza, że w przypadku `Start()` metoda jest wywoływana, jego czeka przez określony interwał, wyzwala pojedyncze zdarzenie taktu i się zatrzymuje.  
   
 4. Aby wyświetlić działa nowy czasomierz, przejdź do edytora kodu, a następnie dodaj następujący kod do górnej i dolnej części `label_Click()` metody obsługi zdarzeń. (Dodajesz `if` instrukcji na górze i trzy instrukcje na dole, pozostała część metody pozostaje taka sama.)  
   

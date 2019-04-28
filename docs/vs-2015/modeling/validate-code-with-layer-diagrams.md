@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 143daa7f54179867325206f62a852fd685852a6f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e1a0ce9cfaa09a5332d0bce39b31f946b7b5a177
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437487"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Weryfikacja kodu przy użyciu diagramów warstw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Aby upewnić się, że kod jest zgodny z projektem, Przeprowadź walidację kodu
   Możesz walidować kod ręcznie z otwartego diagramu warstwowego w Visual Studio lub z wiersza polecenia. Kod możesz również walidować automatycznie podczas uruchamiania lokalnych kompilacji lub programu Team Foundation Build. Zobacz [wideo Channel 9: Projektowanie i Walidacja architektury za pomocą diagramów warstwowych](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
 > [!IMPORTANT]
->  Jeśli chcesz uruchomić walidację warstwy za pomocą programu Team Foundation Build, należy również zainstalować tę samą wersję programu Visual Studio na serwerze kompilacji.  
+> Jeśli chcesz uruchomić walidację warstwy za pomocą programu Team Foundation Build, należy również zainstalować tę samą wersję programu Visual Studio na serwerze kompilacji.  
   
 - [Zobacz, czy element obsługuje walidację](#SupportsValidation)  
   
@@ -92,14 +92,14 @@ Aby upewnić się, że kod jest zgodny z projektem, Przeprowadź walidację kodu
 1. Kliknij prawym przyciskiem myszy powierzchnię diagramu, a następnie kliknij przycisk **sprawdzanie poprawności architektury**.  
   
     > [!NOTE]
-    >  Domyślnie **Build Action** właściwość warstwy plik diagramu (.layerdiagram) jest ustawiona na **weryfikacji** tak, aby diagram znajduje się w trakcie procesu walidacji.  
+    > Domyślnie **Build Action** właściwość warstwy plik diagramu (.layerdiagram) jest ustawiona na **weryfikacji** tak, aby diagram znajduje się w trakcie procesu walidacji.  
   
      **Lista błędów** okna raporty o błędach. Aby uzyskać więcej informacji na temat błędów sprawdzania poprawności, zobacz [omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors).  
   
 2. Aby wyświetlić źródło każdego błędu, klikaj dwukrotnie poszczególne błędy w **lista błędów** okna.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] może wyświetlać mapę kodu, zamiast źródła błędu. Dzieje się tak, gdy kod ma zależność z zestawem, która nie jest określona przez diagram warstwowy, lub gdy w kodzie brakuje zależności, która jest określona przez diagram warstwowy. Przejrzyj mapy kodu lub kod w celu określenia, czy powinna istnieć zależność. Aby uzyskać więcej informacji na temat map kodu, zobacz [mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).  
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] może wyświetlać mapę kodu, zamiast źródła błędu. Dzieje się tak, gdy kod ma zależność z zestawem, która nie jest określona przez diagram warstwowy, lub gdy w kodzie brakuje zależności, która jest określona przez diagram warstwowy. Przejrzyj mapy kodu lub kod w celu określenia, czy powinna istnieć zależność. Aby uzyskać więcej informacji na temat map kodu, zobacz [mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).  
   
 3. Aby zarządzać błędami, zobacz [zarządzanie błędami walidacji](#ManageErrors).  
   
@@ -145,7 +145,7 @@ Aby upewnić się, że kod jest zgodny z projektem, Przeprowadź walidację kodu
  Podczas procesu projektowania możesz pominąć niektóre konflikty zgłoszone podczas walidacji. Na przykład możesz pominąć błędy, które są już poprawiane lub które nie są istotne w konkretnym scenariuszu. Błąd zostanie pominięty, jest dobrym rozwiązaniem do dziennika element roboczy [!INCLUDE[esprfound](../includes/esprfound-md.md)].  
   
 > [!WARNING]
->  Możesz musi już być podłączony do TFS źródła kodu kontrolki (SCC) można utworzyć lub połączyć elementu roboczego. Jeśli próbujesz nawiązać połączenie z inną SCC TFS, Visual Studio powoduje zamknięcie bieżącego rozwiązania automatycznie. Upewnij się, że jesteś podłączony do odpowiednich SCC przed przystąpieniem do tworzenia lub łącze do elementu roboczego. W kolejnych wersjach programu Visual Studio polecenia menu nie są dostępne, jeśli nie są połączone SCC.  
+> Możesz musi już być podłączony do TFS źródła kodu kontrolki (SCC) można utworzyć lub połączyć elementu roboczego. Jeśli próbujesz nawiązać połączenie z inną SCC TFS, Visual Studio powoduje zamknięcie bieżącego rozwiązania automatycznie. Upewnij się, że jesteś podłączony do odpowiednich SCC przed przystąpieniem do tworzenia lub łącze do elementu roboczego. W kolejnych wersjach programu Visual Studio polecenia menu nie są dostępne, jeśli nie są połączone SCC.  
   
 ##### <a name="to-create-a-work-item-for-a-validation-error"></a>Aby utworzyć element roboczy dla błędu walidacji  
   

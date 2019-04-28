@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bcde97691a2a3cec0e7b2452cfcac9b335a170f6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62559911"
 ---
 # <a name="or-designer-messages"></a>Komunikaty Projektanta obiektów relacyjnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

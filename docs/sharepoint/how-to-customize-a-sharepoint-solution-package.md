@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 567eba3da4856cd88a583bf614d5afbc13e77b0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0aa124d25e279b7e44292645d81d80829f5d3f8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420199"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Instrukcje: Dostosowywanie pakietu rozwiązania SharePoint
   W Projektancie pakietu można użyć do tworzenia i dostosowywania pakietu (*.wsp*). Na przykład można dodać elementów projektu programu SharePoint i funkcje, określić, czy serwer sieci Web jest zresetować po wdrożeniu rozwiązania i Ustaw typ serwera wdrożenia.
@@ -47,7 +47,7 @@ ms.locfileid: "60074924"
 2. Rozwiń węzeł pakietu, rozwiń Package.package, a następnie otwórz *Package.Template.xml* pliku.
 
     > [!NOTE]
-    >  Po otwarciu pliku manifestu XML dla szablonu pakietu, pliki są automatycznie zweryfikowana, i można zignorować te ostrzeżenia, które pojawiają się w oknie Lista błędów.
+    > Po otwarciu pliku manifestu XML dla szablonu pakietu, pliki są automatycznie zweryfikowana, i można zignorować te ostrzeżenia, które pojawiają się w oknie Lista błędów.
 
 ## <a name="change-the-manifest-template"></a>Zmiana szablonu manifestu
  Możesz zmienić kod XML dla pakowanego pliku manifestu w edytorze XML programu Visual Studio lub w okienku manifestu szablonu. Wszelkie zmiany w kodzie XML są scalane w pakowanego pliku manifestu pakietu.
@@ -68,7 +68,7 @@ ms.locfileid: "60074924"
  Można wyłączyć projektanta pakietów i utworzyć *manifest.xml* plik ręcznie. Aby wykonać tę procedurę, po raz pierwszy bieżące ustawienia w Projektancie pakietu są zapisywane w pliku XML pakietu szablonu. Następnie można zmodyfikować lub zastąpić ten kod XML.
 
 > [!NOTE]
->  Jeśli dodawanie lub usuwanie elementów projektu programu SharePoint i funkcji w pliku XML, gdy projektant pakietu jest wyłączony, nie są spakowane te elementy projektu i funkcje.
+> Jeśli dodawanie lub usuwanie elementów projektu programu SharePoint i funkcji w pliku XML, gdy projektant pakietu jest wyłączony, nie są spakowane te elementy projektu i funkcje.
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Aby zastąpić spakowany plik manifestu poprzez wyłączenie projektanta
 

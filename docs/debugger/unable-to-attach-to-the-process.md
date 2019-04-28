@@ -1,63 +1,67 @@
 ---
 title: Nie można dołączyć do procesu | Dokumentacja firmy Microsoft
-ms.date: 11/04/2016
-ms.topic: reference
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.unable2attach
 dev_langs:
-- CSharp
-- VB
 - FSharp
+- VB
+- CSharp
 - C++
-author: mikejo5000
+ms.assetid: 0468de6c-3ff1-4979-a8c6-8afb53f37547
+caps.latest.revision: 13
+author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: 117d9c57ae5c4a4fbb76a6168fdd6667f3ed6869
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ee917e10809f07ac7c93f924711b0ed42c28135b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407744"
 ---
 # <a name="unable-to-attach-to-the-process"></a>Nie można dołączyć do procesu
-Nie można dołączyć do procesu. Składnik debugera na serwerze Odebrano odmowa dostępu podczas łączenia z tą maszyną.
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
- Istnieją dwa typowe scenariusze, które przyczyny wystąpienia tego błędu:
-
- **Scenariusz 1:** A maszynie jest uruchomiony Windows XP. Komputer B jest uruchomiony system Windows Server 2003. Rejestr na komputerze B zawiera następującą wartość DWORD:
-
- `HKLM\Software\Microsoft\MachineDebugManager\AllowLaunchAsOtherUser=1`
-
- Użytkownik 1 uruchamia sesję serwera terminali (sesja 1) na komputerze B i uruchamia aplikację zarządzaną z tej sesji.
-
- Użytkownik 2, który jest administratorem na obu komputerach, jest zalogowany do komputera A. W efekcie użytkownik próbuje dołączyć do aplikacji uruchomionej w sesji 1 na maszynie B.
-
- **Scenariusz 2:** Jeden użytkownik jest zalogowany na dwóch komputerach, A i B, w tej samej grupie roboczej, za pomocą tego samego hasła na obu komputerach. Debuger jest uruchomiony na komputerze A, a następnie próbujesz podłączyć się do zarządzanej aplikacji uruchomionych na maszynie B. maszyny, A ma **dostęp sieciowy: Udostępnianie i model zabezpieczeń dla kont lokalnych** równa **gościa**.
-
-### <a name="to-solve-scenario-1"></a>Aby rozwiązać scenariusz 1
-
-- Uruchom debuger i zarządzanych aplikacji w ramach tej samej nazwy konta użytkownika i hasło.
-
-### <a name="to-solve-scenario-2"></a>Aby rozwiązać scenariuszu 2
-
-1. Z **Start** menu, wybierz **Panelu sterowania**.
-
-2. W Panelu sterowania kliknij dwukrotnie **narzędzia administracyjne**.
-
-3. W oknie Narzędzia administracyjne kliknij dwukrotnie **zasady zabezpieczeń lokalnych**.
-
-4. W oknie lokalne zasady zabezpieczeń wybierz **zasady lokalne**.
-
-5. W **zasady** kolumny, kliknij dwukrotnie **dostęp sieciowy: Udostępnianie i model zabezpieczeń dla kont lokalnych**.
-
-6. W **dostęp sieciowy: Udostępnianie i model zabezpieczeń dla kont lokalnych** okna dialogowego pole, zmień ustawienie zabezpieczeń lokalnych, aby **klasycznego**i kliknij przycisk **OK**.
-
+Nie można dołączyć do procesu. Składnik debugera na serwerze Odebrano odmowa dostępu podczas łączenia z tą maszyną.  
+  
+ Istnieją dwa typowe scenariusze, które przyczyny wystąpienia tego błędu:  
+  
+ **Scenariusz 1:** A maszynie jest uruchomiony Windows XP. Komputer B jest uruchomiony system Windows Server 2003. Rejestr na komputerze B zawiera następującą wartość DWORD:  
+  
+ `HKLM\Software\Microsoft\MachineDebugManager\AllowLaunchAsOtherUser=1`  
+  
+ Użytkownik 1 uruchamia sesję serwera terminali (sesja 1) na komputerze B i uruchamia aplikację zarządzaną z tej sesji.  
+  
+ Użytkownik 2, który jest administratorem na obu komputerach, jest zalogowany do komputera A. W efekcie użytkownik próbuje dołączyć do aplikacji uruchomionej w sesji 1 na maszynie B.  
+  
+ **Scenariusz 2:** Jeden użytkownik jest zalogowany na dwóch komputerach, A i B, w tej samej grupie roboczej, za pomocą tego samego hasła na obu komputerach. Debuger jest uruchomiony na komputerze A, a następnie próbujesz podłączyć się do zarządzanej aplikacji uruchomionych na maszynie B. maszyny, A ma **dostęp sieciowy: Udostępnianie i model zabezpieczeń dla kont lokalnych** równa **gościa**.  
+  
+### <a name="to-solve-scenario-1"></a>Aby rozwiązać scenariusz 1  
+  
+- Uruchom debuger i zarządzanych aplikacji w ramach tej samej nazwy konta użytkownika i hasło.  
+  
+### <a name="to-solve-scenario-2"></a>Aby rozwiązać scenariuszu 2  
+  
+1. Z **Start** menu, wybierz **Panelu sterowania**.  
+  
+2. W Panelu sterowania kliknij dwukrotnie **narzędzia administracyjne**.  
+  
+3. W oknie Narzędzia administracyjne kliknij dwukrotnie **zasady zabezpieczeń lokalnych**.  
+  
+4. W oknie lokalne zasady zabezpieczeń wybierz **zasady lokalne**.  
+  
+5. W **zasady** kolumny, kliknij dwukrotnie **dostęp sieciowy: Udostępnianie i model zabezpieczeń dla kont lokalnych**.  
+  
+6. W **dostęp sieciowy: Udostępnianie i model zabezpieczeń dla kont lokalnych** okna dialogowego pole, zmień ustawienie zabezpieczeń lokalnych, aby **klasycznego**i kliknij przycisk **OK**.  
+  
     > [!CAUTION]
-    >  Zmiana modelu zabezpieczeń do klasycznego modelu może spowodować nieoczekiwany dostęp do udostępnionych plików i składników DCOM components. W przypadku wprowadzenia tej zmiany użytkownika zdalnego mogą uwierzytelniać za pomocą Twojego konta użytkownika lokalnego, a nie gościa. Jeśli użytkownik zdalny pasuje do nazwy użytkownika i hasło, ten użytkownik będzie można uzyskać dostęp do dowolnego folderu lub udostępnione się obiekt modelu DCOM. Jeśli używasz tego modelu zabezpieczeń, upewnij się, że wszystkie konta użytkowników na komputerze silnych haseł lub konfigurowanie sieci izolowanej wyspie debugowanie i debugować maszyn w celu uniemożliwienia nieupoważnionego dostępu.
-
-7. Zamknij wszystkie okna.
-
-## <a name="see-also"></a>Zobacz też
-- [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)
+    > Zmiana modelu zabezpieczeń do klasycznego modelu może spowodować nieoczekiwany dostęp do udostępnionych plików i składników DCOM components. W przypadku wprowadzenia tej zmiany użytkownika zdalnego mogą uwierzytelniać za pomocą Twojego konta użytkownika lokalnego, a nie gościa. Jeśli użytkownik zdalny pasuje do nazwy użytkownika i hasło, ten użytkownik będzie można uzyskać dostęp do dowolnego folderu lub udostępnione się obiekt modelu DCOM. Jeśli używasz tego modelu zabezpieczeń, upewnij się, że wszystkie konta użytkowników na komputerze silnych haseł lub konfigurowanie sieci izolowanej wyspie debugowanie i debugować maszyn w celu uniemożliwienia nieupoważnionego dostępu.  
+  
+7. Zamknij wszystkie okna.  
+  
+## <a name="see-also"></a>Zobacz też  
+ [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)

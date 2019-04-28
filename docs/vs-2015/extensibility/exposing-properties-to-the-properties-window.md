@@ -12,12 +12,12 @@ ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0b7b9e352c3042e5175b7420a9d4203ca7f59e7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c28a0520680951920ee19e91f3df098066f432dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432122"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>Uwidacznianie właściwości w oknie właściwości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -177,7 +177,7 @@ Ten przewodnik udostępnia publiczne właściwości obiektu do **właściwości*
 10. Zaznacz to pole wyboru **MyToolWindow** okna. **IsChecked** w **właściwości** okno zmienia się na **True**. Usuń zaznaczenie pola wyboru w **MyToolWindow** okna. **IsChecked** w **właściwości** okno zmienia się na **False**. Zmień wartość właściwości **IsChecked** w **właściwości** okna. Pole wyboru w **MyToolWindow** okno zmiany, aby pasowała do nowej wartości.  
   
     > [!NOTE]
-    >  Jeśli użytkownik musi dysponować obiektu, który jest wyświetlany w **właściwości** okna, wywołanie `OnSelectChange` z `null` kontener wyboru pierwszego. Po disposing właściwość lub obiekt, można zmienić na kontenerze zaznaczenia, który został zaktualizowany <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> i <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> listy.  
+    > Jeśli użytkownik musi dysponować obiektu, który jest wyświetlany w **właściwości** okna, wywołanie `OnSelectChange` z `null` kontener wyboru pierwszego. Po disposing właściwość lub obiekt, można zmienić na kontenerze zaznaczenia, który został zaktualizowany <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> i <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> listy.  
   
 ## <a name="changing-selection-lists"></a>Zmiana listy wyboru  
  W tej sekcji możesz dodać listę wyboru dla klasy podstawowe właściwości i wybierz które listy wyboru, aby wyświetlić za pomocą interfejsu okna narzędzia.  
@@ -261,7 +261,7 @@ Ten przewodnik udostępnia publiczne właściwości obiektu do **właściwości*
 6. Zaznacz pole wyboru w **MyToolWindow** okna. **Właściwości** jest wyświetlana w oknie `Simple` obiektu właściwości **SomeText** i **tylko do odczytu**. Usuń zaznaczenie pola wyboru. Właściwości publiczne okna pojawiają się w **właściwości** okna.  
   
     > [!NOTE]
-    >  Nazwa wyświetlana **SomeText** jest **Mój tekst**.  
+    > Nazwa wyświetlana **SomeText** jest **Mój tekst**.  
   
 ## <a name="best-practice"></a>Najlepszym rozwiązaniem jest  
  W tym przewodniku <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> jest implementowany kolekcji obiektów można wybierać i kolekcji wybranego obiektu są tej samej kolekcji. Wybranego obiektu pojawia się na liście przeglądarkę właściwości. Bardziej kompletny wykonania ISelectionContainer Zobacz przykłady Reference.ToolWindow.  

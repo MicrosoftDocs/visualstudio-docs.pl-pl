@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6980ecc7676afd978f8dfd243ef8f383413ad83d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c079d3f85dbab87e30edb059c76202dd727f715c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425061"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Zapisywanie danych z obiektu w bazie danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Można zapisać danych w obiektach do bazy danych przez przekazanie wartości z 
  Domyślnie dbdirect — metody są tworzone na obiekt TableAdapter, który można uruchomić bezpośrednio w bazie danych. Te metody może być wywoływana bezpośrednio i nie wymagają <xref:System.Data.DataSet> lub <xref:System.Data.DataTable> obiektów uzgadniają zmiany w celu wysyłania aktualizacji do bazy danych.  
   
 > [!NOTE]
->  Podczas konfiguracji TableAdapter główne zapytanie musi dostarczać wystarczających informacji dla dbdirect — metody ma zostać utworzony. Na przykład jeśli TableAdapter jest skonfigurowany do zapytania o dane z tabeli, która nie ma kolumny klucza podstawowego zdefiniowane, go nie generuje dbdirect — metody.  
+> Podczas konfiguracji TableAdapter główne zapytanie musi dostarczać wystarczających informacji dla dbdirect — metody ma zostać utworzony. Na przykład jeśli TableAdapter jest skonfigurowany do zapytania o dane z tabeli, która nie ma kolumny klucza podstawowego zdefiniowane, go nie generuje dbdirect — metody.  
   
 |TableAdapter dbdirect — metody|Opis|  
 |----------------------------------|-----------------|  
@@ -57,7 +57,7 @@ Można zapisać danych w obiektach do bazy danych przez przekazanie wartości z 
 - Modyfikowanie rekordów, wywołując `TableAdapter.Update` metody, przekazując nowe wartości w celu zaktualizowania rekordu, a w oryginalnych wartości, aby zlokalizować rekordu.  
   
     > [!NOTE]
-    >  Trzeba zachować oryginalne wartości, aby można było przekazać je do obiektu `Update` metody. W tym przykładzie użyto właściwości `orig` prefiks do przechowywania oryginalnych wartości.  
+    > Trzeba zachować oryginalne wartości, aby można było przekazać je do obiektu `Update` metody. W tym przykładzie użyto właściwości `orig` prefiks do przechowywania oryginalnych wartości.  
   
      Poniższy przykład aktualizuje istniejący rekord w `Customers` tabeli przez przekazanie wartości nowymi i oryginalnymi `Customer` obiekt `TableAdapter.Update` metody.  
   
@@ -69,7 +69,7 @@ Można zapisać danych w obiektach do bazy danych przez przekazanie wartości z 
 - Usuń rekordy przez wywołanie metody `TableAdapter.Delete` metody i przekazywanie w oryginalnej wartości do wyszukania w rekordzie.  
   
     > [!NOTE]
-    >  Trzeba zachować oryginalne wartości, aby można było przekazać je do obiektu `Delete` metody. W tym przykładzie użyto właściwości `orig` prefiks do przechowywania oryginalnych wartości.  
+    > Trzeba zachować oryginalne wartości, aby można było przekazać je do obiektu `Delete` metody. W tym przykładzie użyto właściwości `orig` prefiks do przechowywania oryginalnych wartości.  
   
      Poniższy przykład usuwa rekord na podstawie `Customers` tabeli, przekazując oryginalnych wartości w `Customer` obiekt `TableAdapter.Delete` metody.  
   

@@ -27,12 +27,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6be45876174afa00a58ea9948661f051f8df1ddc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8e6c234b622dcc335a6fe42fd57f1f815a5fd9d9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447301"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Określanie plików symboli (.pdb) i plików źródłowych w debugerze programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Plik bazy danych programu (.pdb), nazywany także plikiem symboli, mapuje identy
 4. Aby zwiększyć symbolu wydajność ładowania, wpisz ścieżkę do katalogu lokalnego, gdzie symbole mogą być kopiowane przez serwery symboli w **pamięci podręcznej symboli w tym katalogu** polu, które symbole mogą być kopiowane do katalogu lokalnego.
 
    > [!NOTE]
-   >  Pamięci podręcznej symboli nie należy umieszczać w folderze chronionym (na przykład C:\Windows lub jednym z jego podfolderów). Zamiast tego użyj folderu przeznaczonego do odczytu i zapisu.
+   > Pamięci podręcznej symboli nie należy umieszczać w folderze chronionym (na przykład C:\Windows lub jednym z jego podfolderów). Zamiast tego użyj folderu przeznaczonego do odczytu i zapisu.
 
    **Określanie zachowania ładowania symboli**
 
@@ -116,7 +116,7 @@ Plik bazy danych programu (.pdb), nazywany także plikiem symboli, mapuje identy
  Inni dostawcy aplikacji systemu Windows i bibliotek mogą zapewnić dostęp do serwera symboli w Internecie. Wprowadzasz również adres URL tych serwerów symboli na **debugowanie**/**symbole** strony
 
 > [!NOTE]
->  Jeśli używasz serwera symboli innego niż publiczne serwery symboli Microsoft, upewnij się, że serwer symboli i jego ścieżka są godne zaufania. Pliki symboli mogą zawierać dowolny kod wykonywalny, dlatego możesz być narażony na zagrożenia bezpieczeństwa.
+> Jeśli używasz serwera symboli innego niż publiczne serwery symboli Microsoft, upewnij się, że serwer symboli i jego ścieżka są godne zaufania. Pliki symboli mogą zawierać dowolny kod wykonywalny, dlatego możesz być narażony na zagrożenia bezpieczeństwa.
 
 ### <a name="BKMK_Find_and_load_symbols_while_debugging"></a> Znajdź i załaduj symbole podczas debugowania
  W dowolnym momencie, gdy debuger jest w trybie przerwania, można załadować symbole dla modułu, który wcześniej został wykluczony przez opcje debugera lub których kompilator nie mógł odnaleźć. Możesz załadować symbole z menu skrótów okien Stos wywołań, Moduły, Elementy lokalne, Automatyczne i wszystkich okien Czujka. Jeśli debuger przerwie działanie na kodzie, który nie zawiera dostępnych plików symboli lub źródłowych, pojawi się okno dokumentu. Tutaj można znaleźć informacje o brakujących plikach i podjąć działania w celu odszukania i załadowania ich.
@@ -224,7 +224,7 @@ Plik bazy danych programu (.pdb), nazywany także plikiem symboli, mapuje identy
  Gdy na komputerze lokalnym nie ma kodu źródłowego lub plik .pdb nie pasuje do kodu źródłowego, możesz użyć Serwera źródłowego, aby pomóc w debugowaniu aplikacji. Serwer źródłowy przyjmuje żądania dotyczące plików i zwraca rzeczywiste pliki. Serwer źródłowy jest uruchamiany za pomocą pliku DLL, o nazwie srcsrv.dll. Serwer źródłowy odczytuje plik .pdb aplikacji, który zawiera wskazówki do repozytorium kodu źródłowego, a także polecenia używane do pobierania kodu źródłowego z repozytorium. Możesz ograniczyć, jakie polecenia mogą być wykonywane z pliku .pdb aplikacji, poprzez wymienienie dozwolonych poleceń wewnątrz pliku o nazwie srcsrv.ini, który musi być umieszczony w tym samym katalogu, co srcsrv.dll i devenv.exe.
 
 > [!IMPORTANT]
->  Dowolne polecenia mogą być osadzone w pliku .pdb aplikacji, więc upewnij się, że można umieścić tylko te, które chcesz wykonać w pliku srcsrv.ini. Każda próba wykonania polecenia nie w pliku srcsvr.ini spowoduje pojawienie się okna dialogowego potwierdzenia. Aby uzyskać więcej informacji, zobacz [ostrzeżenie o zabezpieczeniach: Debuger musi wykonać polecenie niezaufane](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Nie jest sprawdzana poprawność parametrów poleceń, więc należy być ostrożnym z poleceniami zaufanymi. Na przykład, jeśli użytkownik zaufał narzędziu cmd.exe, złośliwy użytkownik może określić parametry, które czyniłyby polecenie niebezpiecznym.
+> Dowolne polecenia mogą być osadzone w pliku .pdb aplikacji, więc upewnij się, że można umieścić tylko te, które chcesz wykonać w pliku srcsrv.ini. Każda próba wykonania polecenia nie w pliku srcsvr.ini spowoduje pojawienie się okna dialogowego potwierdzenia. Aby uzyskać więcej informacji, zobacz [ostrzeżenie o zabezpieczeniach: Debuger musi wykonać polecenie niezaufane](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Nie jest sprawdzana poprawność parametrów poleceń, więc należy być ostrożnym z poleceniami zaufanymi. Na przykład, jeśli użytkownik zaufał narzędziu cmd.exe, złośliwy użytkownik może określić parametry, które czyniłyby polecenie niebezpiecznym.
 
  **Aby włączyć korzystanie z serwera źródłowego**
 

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8978d02bd7ca9ca2be49493edede7bf90af5a421
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62776870"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>Widok wywołujący/wywoływany - dane Instrumentacji
 Widok wywołujący/wywoływany Wyświetla profilowania informacji na temat wybranej funkcji i jej funkcji nadrzędnymi i podrzędnymi w drzewie wywołań. Widok wywołujący/wywoływany zawiera trzy siatki.

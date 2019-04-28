@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07586cd9b839a514ebe3a0677fb894a8d6e9c71f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f5fe9f47fca2b83e0095c67e59c2db54a4a04159
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447057"
 ---
 # <a name="project-solutions"></a>Rozwiązania projektu
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] zawiera szablony projektów, służących do tworzenia dodatków narzędzi VSTO dla programu Microsoft Office Project. Za pomocą dodatków narzędzi VSTO dla programów do projektu automatyzacji, Rozszerz funkcje projektu lub dostosować projekt interfejsu użytkownika (UI).
@@ -32,7 +32,7 @@ ms.locfileid: "56642199"
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]
 
 > [!NOTE]
->  Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.
+> Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.
 
 ## <a name="automate-project-by-using-the-project-object-model"></a>Automatyzacja projektu przy użyciu modelu obiektu projektu
  Model obiektu projektu uwidacznia wiele typów, których można użyć do zautomatyzowania projektu. Te typy umożliwiają pisanie kodu w celu wykonywania typowych zadań, takich jak programowo tworzenia i modyfikowania zadań w projekcie.
@@ -47,7 +47,7 @@ ms.locfileid: "56642199"
  Wszystkie obiekty i elementy członkowskie w dokumentacja modelu obiektów VBA odnoszą się do typów i członków w projekcie zestawu podstawowej usługi międzyoperacyjnej (PIA). Na przykład obiekt kalendarza w dokumentacja modelu obiektów VBA odnosi się do `Microsoft.Office.Interop.MSProject.Calendar` wpisz PIA projektu. Mimo że dokumentacja modelu obiektów VBA zawiera przykłady kodu dla większości właściwości, metod i zdarzeń, należy translacji kodu VBA w ramach tego odwołania do kodu języka Visual Basic lub Visual C#, jeśli chcesz użyć ich w projekcie dodatku narzędzi VSTO projektu, które tworzysz przy użyciu programu Visual Studio.
 
 > [!NOTE]
->  W tej chwili brak Dokumentacja referencyjna dla projektu podstawowego zestawu międzyoperacyjnego.
+> W tej chwili brak Dokumentacja referencyjna dla projektu podstawowego zestawu międzyoperacyjnego.
 
 ### <a name="infrastructure-types-in-the-project-primary-interop-assembly"></a>Typy infrastruktury w projekcie podstawowy zestaw międzyoperacyjny
  Podczas pisania kodu, który używa PIA projektu, można zauważyć wiele typów, które nie zostały opisane w dokumentacji języka VBA. Te dodatkowe typy pomóc w tłumaczeniu obiekty w modelu opartym na modelu COM obiektu projektu do kodu zarządzanego, nie są przeznaczone do użycia bezpośrednio w kodzie.

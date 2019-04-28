@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: de301a380eb93cd1f4dd27150f631be58f59b3eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ac7d0896d501803a04da5bf9626e2b9e4716d41a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442651"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Krok 11. Uruchamianie programu i wypróbowywanie innych funkcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Okno dialogowe kolorów
 3. Wybierz kolor, aby ustawić kolor tła PictureBox. Przyjrzyj się bliżej `backgroundButton_Click()` metodę, aby zrozumieć, jak to działa.  
   
     > [!NOTE]
-    >  Możesz załadować obraz z Internetu wklejając jego adres URL do **Otwórz plik** okno dialogowe. Spróbuj odnaleźć obraz z przezroczystym tłem, więc pojawia się kolor tła.  
+    > Możesz załadować obraz z Internetu wklejając jego adres URL do **Otwórz plik** okno dialogowe. Spróbuj odnaleźć obraz z przezroczystym tłem, więc pojawia się kolor tła.  
   
 4. Wybierz **Wyczyść obraz** przycisk, aby upewnić się, czy to powoduje wyczyszczenie. Następnie zamknij program, wybierając **Zamknij** przycisku.  
   

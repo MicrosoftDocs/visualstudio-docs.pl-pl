@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afe5ff877f83d9aae9b1da52b7836fb07afacf44
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: d2ca4e45c83aa3291b922694ebd16df5ab7fc35e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581642"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Przewodnik: tworzenie środowiska kompilowania na wielu komputerach
 
@@ -264,7 +264,7 @@ W tej tabeli opisano obsługiwane argumenty dla *vcvarsall.bat*:
 |x86_amd64|x64 Cross|x86, x64|X64|
 |amd64|x64 Native|X64|X64|
 
-Jeśli *vcvarsall.bat* zostanie uruchomiony pomyślnie — to znaczy bez komunikatu o błędzie jest wyświetlany — można pominąć następny krok i kontynuować [instalowanie zestawów programu MSBuild do globalnej pamięci podręcznej zestawów (GAC) na komputerze kompilacji](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)części tego dokumentu.
+Jeśli *vcvarsall.bat* zostanie uruchomiony pomyślnie — to znaczy bez komunikatu o błędzie jest wyświetlany — można pominąć następny krok i kontynuować [instalowanie zestawów programu MSBuild do globalnej pamięci podręcznej zestawów (GAC) na komputerze kompilacji](#install-msbuild-to-gac)części tego dokumentu.
 
 ### <a name="manually-set-environment-variables"></a>Ręczne ustawianie zmiennych środowiskowych
 
@@ -286,7 +286,7 @@ Jeśli *vcvarsall.bat* zostanie uruchomiony pomyślnie — to znaczy bez komunik
 
    - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a>Instalowanie zestawów programu MSBuild do globalnej pamięci podręcznej zestawów (GAC) na komputerze kompilacji
+## <a name="a-nameinstall-msbuild-to-gac--install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="install-msbuild-to-gac" /> Instalowanie zestawów programu MSBuild do globalnej pamięci podręcznej zestawów (GAC) na komputerze kompilacji
 
 Program MSBuild wymaga kilku dodatkowych zestawów do zainstalowania GAC na komputerze kompilacji.
 

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 969945260ee453e84ae2aeec0f28559ca11933a0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777014"
 ---
 # <a name="call-tree-view---contention-data"></a>Widok drzewa wywołań — dane rywalizacji
 Widok drzewa wywołania Wyświetla ścieżki wykonywania funkcji, które zostały przesunięta w profilowanej aplikacji. Główny drzewa jest punktem wejścia do aplikacji lub składnika. Każdy węzeł funkcji zawiera listę wszystkich funkcji, które go wywołały, ile razy funkcja została zablokowana i ilość czasu, że funkcja została zablokowana, ponieważ został on rywalizacji o zasób z innych wątkach lub procesach.

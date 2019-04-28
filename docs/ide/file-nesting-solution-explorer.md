@@ -9,11 +9,11 @@ author: angelosp
 ms.author: angelpe
 manager: jillfra
 ms.openlocfilehash: 58e727c6335dd391abab4f50a110d361a658e00a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62548956"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>Dostosowywanie zagnieżdżania plików w Eksploratorze rozwiązań
 
@@ -34,7 +34,7 @@ Dostępne opcje zagnieżdżanie plików bez dostosowania są następujące:
 
 * **Web**: Ta opcja ma zastosowanie **Web** pliku zagnieżdżenia zachowanie dla wszystkich projektów w bieżącym rozwiązaniu. Ma ona wiele reguł, a firma Microsoft zachęca do go wyewidencjonować i powiedz nam, co myślisz. Poniższy zrzut ekranu pokazuje kilka przykładów zachowanie zagnieżdżania plików, której można korzystać z tej opcji:
 
-   ![Plik zagnieżdżania w Eksploratorze rozwiązań](media/filenesting.png)
+   ![Zagnieżdżanie plików w Eksploratorze rozwiązań](media/filenesting.png)
 
 ## <a name="customize-file-nesting"></a>Dostosowywanie zagnieżdżanie plików
 

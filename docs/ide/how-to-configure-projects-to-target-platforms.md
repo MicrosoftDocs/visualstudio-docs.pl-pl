@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f605e761380b3dc856926dff5bd1712753a8ba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a014e4210f1c94637564e5db86846ed2ade29468
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438189"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Instrukcje: Konfigurowanie projektów pod kątem platform docelowych
 
@@ -46,7 +46,7 @@ Program Visual Studio umożliwia ustawianie aplikacji przeznaczonych dla różny
     2. W **wpisz lub wybierz nową platformę** wybierz **x64**.
 
         > [!NOTE]
-        >  Jeśli nadasz konfiguracji nową nazwę, może być konieczne zmodyfikować ustawienia w **projektanta projektu** pod kątem odpowiedniej platformy.
+        > Jeśli nadasz konfiguracji nową nazwę, może być konieczne zmodyfikować ustawienia w **projektanta projektu** pod kątem odpowiedniej platformy.
 
     3. Jeśli chcesz skopiować ustawienia z bieżącej konfiguracji platformy, wybierz go, a następnie wybierz **OK** przycisku.
 

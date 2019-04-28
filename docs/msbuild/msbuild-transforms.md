@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2fe127a98236c321db9d1e7450ab006e09badba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3be16c2ccbd7cfe5d26507037e4238870e59d83b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414698"
 ---
 # <a name="msbuild-transforms"></a>Przekształcenia w programie MSBuild
 Transformacja jest konwersją jeden do jednego jeden element listy do innej. Oprócz włączenia projektu można przekonwertować listy elementów, przekształcenia umożliwia docelowego w celu identyfikowania bezpośrednie mapowanie między ich dane wejściowe i wyjściowe. W tym temacie opisano przekształceń i w jaki sposób [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] są one używane do kompilowania projektów wydajniej.
@@ -33,7 +33,7 @@ W poniższym przykładzie lista *resx* plików jest przekształcana na listę *R
 Na przykład, jeśli elementy na liście elementu @(RESXFile) *Form1.resx*, *Form2.resx*, i *Form3.resx*, będą dane wyjściowe na liście po przekształceniu  *Form1.resources*, *Form2.resources*, i *Form3.resources*.
 
 > [!NOTE]
->  Można określić niestandardowe separatora listy elementów przekształcone w taki sam sposób określ separatora listy standardowych elementów. Na przykład aby rozdzielić listę elementów przekształcony za pomocą przecinka (,) zamiast domyślnej średnika (;), należy użyć następujący kod XML: `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
+> Można określić niestandardowe separatora listy elementów przekształcone w taki sam sposób określ separatora listy standardowych elementów. Na przykład aby rozdzielić listę elementów przekształcony za pomocą przecinka (,) zamiast domyślnej średnika (;), należy użyć następujący kod XML: `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
 
 ## <a name="use-multiple-modifiers"></a>Użyj wiele modyfikatorów
  Wyrażenie przekształcania może zawierać wiele modyfikatorów, których można łączyć w dowolnej kolejności i można powtarzać. W poniższym przykładzie nazwę katalogu, który zawiera pliki jest zmieniany, ale pliki zachować oryginalne rozszerzenie nazwy i pliku nazwy.

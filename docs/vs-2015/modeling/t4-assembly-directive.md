@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9fa00e8b5aafa131a9ca64b6fdaa7cba79fcb3b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 164f049b5ed1133acfd1f4e66f805b1510d29d5d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411504"
 ---
 # <a name="t4-assembly-directive"></a>Dyrektywa T4 dotycząca zestawu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablon tekstowy czasu projektowa
  Aby uzyskać ogólne omówienie pisania szablonów tekstowych, zobacz [pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md).  
   
 > [!NOTE]
->  Nie ma potrzeby `assembly` dyrektywy w szablonie tekstowym (wstępnie przetworzony) czasu wykonywania. Zamiast tego, Dodaj potrzebne zestawy do **odwołania** z Twojej [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu.  
+> Nie ma potrzeby `assembly` dyrektywy w szablonie tekstowym (wstępnie przetworzony) czasu wykonywania. Zamiast tego, Dodaj potrzebne zestawy do **odwołania** z Twojej [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu.  
   
 ## <a name="using-the-assembly-directive"></a>Używanie dyrektywy Assembly  
  Składnia tej dyrektywy jest następująca:  

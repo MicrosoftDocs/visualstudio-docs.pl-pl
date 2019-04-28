@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 08303b672fe45db4b6ccfcb5a64be5115e660186
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 85a45da13594a6f204e91f93ddcee64acb29c493
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419389"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>Instrukcje: Programowe zapisywanie dokumentów programu Visio
   Istnieje kilka sposobów na zapisywanie dokumentów programu Microsoft Office Visio:
@@ -40,7 +40,7 @@ ms.locfileid: "60069441"
      Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisAddIn` klasy w projekcie.
 
     > [!NOTE]
-    >  `Microsoft.Office.Interop.Visio.Document.Save` Metoda zgłasza wyjątek, jeśli nowy dokument programu Visio nie został jeszcze zapisany.
+    > `Microsoft.Office.Interop.Visio.Document.Save` Metoda zgłasza wyjątek, jeśli nowy dokument programu Visio nie został jeszcze zapisany.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#11](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#11)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#11](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#11)]

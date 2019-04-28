@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4916f51c3044bbd0a6cb8f8dd283c741a216c015
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7afdf40c660a7433c51d2fa1130ef5f2cca616bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437838"
 ---
 # <a name="mt-task"></a>MT — Zadanie
 Opakowuje narzędziu manifestu Microsoft *mt.exe*. Aby uzyskać więcej informacji, zobacz [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).
@@ -38,7 +38,7 @@ Opakowuje narzędziu manifestu Microsoft *mt.exe*. Aby uzyskać więcej informac
  W poniższej tabeli opisano parametry **MT** zadania. Większość parametrów zadania oraz kilka zestawów parametrów, odpowiada opcji wiersza polecenia.
 
 > [!NOTE]
->  *Mt.exe* dokumentacja używa łącznika (**-**) jako prefiks dla opcji wiersza polecenia, ale w tym temacie używa ukośnika (**/**). Dopuszczalne jest albo prefiksu.
+> *Mt.exe* dokumentacja używa łącznika (**-**) jako prefiks dla opcji wiersza polecenia, ale w tym temacie używa ukośnika (**/**). Dopuszczalne jest albo prefiksu.
 
 |Parametr|Opis|
 |---------------|-----------------|

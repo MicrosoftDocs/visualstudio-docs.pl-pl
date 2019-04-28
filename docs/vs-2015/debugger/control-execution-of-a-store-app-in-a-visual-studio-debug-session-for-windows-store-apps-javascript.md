@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c23bbb74a4f166ebe33cc45f40f42f9847316d30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9238bd4f42291af23a1279c9caa83f1039c8f249
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437758"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Kontrolowanie wykonywania aplikacji Store w trakcie sesji debugowania programu Visual Studio dla aplikacji Windows Store (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ Ten przewodnik Szybki start pokazuje, jak przechodzić w debugerze programu Visu
  **Debuger skróty klawiaturowe.** Nawigacja w debugerze programu Visual Studio jest zoptymalizowany, myszy i klawiatury. Wiele z tych kroków w tym temacie obejmują klawiszem skrótu lub klawisza skrótu w nawiasach uwagi. Na przykład (klawiatury: F5) wskazuje, że wpisanie klawisza F5 rozpoczyna się lub kontynuuje wykonywanie debugera.
 
 > [!NOTE]
->  **Wzorzec modułu**
+> **Wzorzec modułu**
 >
->  Aplikacje Windows Store często używają JavaScript *wzorzec modułu* do hermetyzacji danych i funkcji na stronie. Wzorzec modułu używa zamknięcia pojedynczego własnym wykonywania i anonimowe być oddzielone od globalnej przestrzeni nazw funkcji strony. W tym temacie nazywamy tej funkcji *modułu*.
+> Aplikacje Windows Store często używają JavaScript *wzorzec modułu* do hermetyzacji danych i funkcji na stronie. Wzorzec modułu używa zamknięcia pojedynczego własnym wykonywania i anonimowe być oddzielone od globalnej przestrzeni nazw funkcji strony. W tym temacie nazywamy tej funkcji *modułu*.
 
 ## <a name="in-this-topic"></a>W tym temacie:
  Możesz dowiedzieć się jak:

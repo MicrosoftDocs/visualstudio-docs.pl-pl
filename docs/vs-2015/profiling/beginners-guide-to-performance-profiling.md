@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3b2421a8c1002e8fed1830a9de51383c35c01393
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ecfd329e0e5c096e6e0c2011b60cd97dcd1c2937
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433820"
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Profilowanie wydajności — Przewodnik dla początkujących
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Za pomocą programu Visual Studio Profiling Tools do analizowania problemów z w
  Jeśli **próbkowania** nie oferują danych, których potrzebują, innych metod profilowania kolekcji tools zapewniają różne rodzaje informacji, które mogą być pomocne dla użytkownika. Aby uzyskać więcej informacji o tych innych metodach, zobacz [jak: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md).  
   
 > [!TIP]
->  Jeśli profilowany kod wywołuje funkcje Windows, należy upewnić się, że najbardziej aktualne pliki PDB. Bez tych plików widok raportu wyświetli listę nazw funkcji Windows, które są tajemnicze i trudne do zrozumienia. Aby uzyskać więcej informacji na temat upewnij się, że pliki potrzebne Ci zobacz [jak: Informacje o symbolach Windows odwołanie](../profiling/how-to-reference-windows-symbol-information.md).  
+> Jeśli profilowany kod wywołuje funkcje Windows, należy upewnić się, że najbardziej aktualne pliki PDB. Bez tych plików widok raportu wyświetli listę nazw funkcji Windows, które są tajemnicze i trudne do zrozumienia. Aby uzyskać więcej informacji na temat upewnij się, że pliki potrzebne Ci zobacz [jak: Informacje o symbolach Windows odwołanie](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ## <a name="Step1"></a> Tworzenie i uruchamianie sesji wydajności  
  Aby uzyskać dane potrzebne do analizowania, należy najpierw utworzyć sesję wydajności, a następnie uruchom sesji. **Kreatora wydajności** pozwala wykonać obie czynności.  
@@ -46,7 +46,7 @@ Za pomocą programu Visual Studio Profiling Tools do analizowania problemów z w
 1. Otwórz rozwiązanie w programie Visual Studio. Ustaw konfigurację do wydania. (Znajdź **konfiguracje rozwiązania** na pasku narzędzi, który jest ustawiony na **debugowania** domyślnie. Zmień ją na **wersji**.)  
   
     > [!IMPORTANT]
-    >  Jeśli nie jesteś administratorem na komputerze, którego używasz, należy uruchamiać Visual Studio jako administrator, podczas korzystania z programu profilującego. (Kliknij prawym przyciskiem myszy ikonę aplikacji Visual Studio, a następnie kliknij przycisk **Uruchom jako administrator**.  
+    > Jeśli nie jesteś administratorem na komputerze, którego używasz, należy uruchamiać Visual Studio jako administrator, podczas korzystania z programu profilującego. (Kliknij prawym przyciskiem myszy ikonę aplikacji Visual Studio, a następnie kliknij przycisk **Uruchom jako administrator**.  
   
 2. Na **debugowania** menu, kliknij przycisk **Profiler wydajności**.  
   

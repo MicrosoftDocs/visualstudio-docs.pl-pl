@@ -24,11 +24,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0554c1494bec757d1baecd78cdc302608e5b6b3e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62573050"
 ---
 # <a name="debug-hook-function-writing"></a>Pisanie debugowanie funkcji punktów zaczepienia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

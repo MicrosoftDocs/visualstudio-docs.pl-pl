@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: c19ba7ea458f7922f5e82e3277b9ab305090a5cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 57aa9011043ab30e465e03beffe54e6abcc706a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444581"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Instalowanie języka Visual C++ dla opracowywania aplikacji mobilnych na wiele platform
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Wizualne C++ for Cross-Platform Mobile Development] (http://go.microsoft.com/fwl
 - Aby uzyskać wymagania dotyczące instalacji, zobacz [wymagania systemowe programu Visual Studio 2015](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs).  
   
   > [!IMPORTANT]
-  >  Jeśli używasz, Windows 7 lub Windows Server 2008 R2, możesz tworzyć kod dla aplikacji klasycznych Windows i aplikacji Android Native Activity i bibliotek, aplikacji i bibliotek kodu dla systemu iOS, ale nie aplikacje Windows Store lub Universal Windows.  
+  > Jeśli używasz, Windows 7 lub Windows Server 2008 R2, możesz tworzyć kod dla aplikacji klasycznych Windows i aplikacji Android Native Activity i bibliotek, aplikacji i bibliotek kodu dla systemu iOS, ale nie aplikacje Windows Store lub Universal Windows.  
   
   Aby tworzyć aplikacje dla konkretnych platform sprzętowych, istnieją pewne dodatkowe wymagania:  
   
@@ -75,12 +75,12 @@ Wizualne C++ for Cross-Platform Mobile Development] (http://go.microsoft.com/fwl
 4. Po ukończeniu instalacji zamknij Instalatora i uruchom ponownie komputer. Niektóre akcje instalacji składników innych firm obowiązują do momentu ponownego uruchomienia komputera.  
   
     > [!IMPORTANT]
-    >  Należy ponownie uruchomić upewnij się, że wszystko jest poprawnie zainstalowane.  
+    > Należy ponownie uruchomić upewnij się, że wszystko jest poprawnie zainstalowane.  
   
      W przypadku niepowodzenia instalacji programu Microsoft Visual Studio Emulator for składnika zestawu Android komputera nie może mieć włączone funkcji Hyper-V. Użyj **Windows Włącz lub wyłącz funkcje** aplikacji Panelu sterowania, aby umożliwić funkcji Hyper-V, a następnie ponownie uruchom Instalatora programu Visual Studio.  
   
     > [!NOTE]
-    >  Jeśli komputer lub używanej wersji systemu Windows nie obsługuje funkcji Hyper-V, nie można użyć programu Microsoft Visual Studio Emulator dla składnika zestawu Android. Strona główna wersja systemu Windows nie obejmuje obsługę funkcji Hyper-V.  
+    > Jeśli komputer lub używanej wersji systemu Windows nie obsługuje funkcji Hyper-V, nie można użyć programu Microsoft Visual Studio Emulator dla składnika zestawu Android. Strona główna wersja systemu Windows nie obejmuje obsługę funkcji Hyper-V.  
   
 5. Otwórz program Visual Studio. Jeśli to przy pierwszym uruchomieniu programu Visual Studio, potrwać trochę czasu, aby skonfigurować i zaloguj się. Po wykonaniu tych czynności w Visual Studio **narzędzia** menu, wybierz opcję **rozszerzenia i aktualizacje**, **aktualizacje**. W przypadku programu Visual Studio aktualizacje dostępne dla języka Visual C++ for Cross-Platform Mobile Development lub programu Microsoft Visual Studio Emulator dla systemu Android, należy je zainstalować.  
   
@@ -91,7 +91,7 @@ Wizualne C++ for Cross-Platform Mobile Development] (http://go.microsoft.com/fwl
  Jeśli nie chcesz zainstalować jedną lub więcej zależności innych firm za pomocą Instalatora programu Visual Studio, po zainstalowaniu opcji programowania aplikacji mobilnych Visual C++, można zainstalować je później wykonując kroki opisane w [zainstalować narzędzia](#InstallTheTools). Można także zainstalować lub zaktualizować je niezależnie od programu Visual Studio.  
   
 > [!CAUTION]
->  Zależności można zainstalować w dowolnej kolejności, z wyjątkiem języka Java. Należy zainstalować i skonfigurować zestaw JDK, przed zainstalowaniem zestawu Android SDK.  
+> Zależności można zainstalować w dowolnej kolejności, z wyjątkiem języka Java. Należy zainstalować i skonfigurować zestaw JDK, przed zainstalowaniem zestawu Android SDK.  
   
  Przeczytaj poniższe informacje, a następnie użyj poniższych linków, aby ręcznie zainstalować zależności.  
   

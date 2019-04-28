@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 65e766193838060d4c856b6a530a688ef8cd2d1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584699"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Wprowadzenie do korzystania z Visual C# i Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Jeśli dopiero stawiasz pierwsze kroki w Visual C# lub Microsoft Visual Basic, o
  [Samouczek 1: Tworzenie przeglądarki obrazów](../ide/tutorial-1-create-a-picture-viewer.md)  
  Stwórz program, który ładuje obraz z pliku i wyświetla go w oknie. Dowiedz się, jak przeciągać na formularz formanty, takie jak przyciski i pola obrazu, ustawiać ich właściwości i używać kontenerów, aby sprawnie zmieniać rozmiar formularza. Rozpocznij pisanie kodu.  
   
- [Samouczek 2: Utwórz Quiz matematyczny](../ide/tutorial-2-create-a-timed-math-quiz.md)  
+ [Samouczek 2: Tworzenie testu matematycznego z limitem czasu](../ide/tutorial-2-create-a-timed-math-quiz.md)  
  Stwórz quiz matematyczny na czas, gdzie gracz musi rozwiązać cztery losowe problemy arytmetyczne w określonym czasie. Dowiedz się, jak generować liczby losowe przy użyciu `Random` klasy, wyzwalać zdarzenia za pomocą `Timer` sterowania, sterować przepływem programu za pomocą `if else` instrukcji i wykonywać podstawowe operacje arytmetyczne.  
   
  [Samouczek 3: Tworzenie gry w dopasowywanie](../ide/tutorial-3-create-a-matching-game.md)  

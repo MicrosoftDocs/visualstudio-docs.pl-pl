@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 216854833a142dba7275f7e5e7cccd111641a036
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d44d1b83776cdd69c659ebed0bc2a1caaa53e123
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433505"
 ---
 # <a name="how-to-create-a-sequential-workflow-library-legacy"></a>Instrukcje: Tworzenie biblioteki sekwencyjnego przepływu pracy (starsza wersja)
 Wykonaj następujące kroki, aby utworzyć projekt biblioteki sekwencyjnego przepływu pracy za pomocą starszego [!INCLUDE[wfd1](../includes/wfd1-md.md)] dostarczone przez [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -35,7 +35,7 @@ Wykonaj następujące kroki, aby utworzyć projekt biblioteki sekwencyjnego prze
 3. Wybierz opcję **.NET Framework 3.0** opcji lub **.NET Framework 3.5** opcji na liście rozwijanej listy w górnej części **nowy projekt** okna, aby uzyskać dostęp starsza wersja projektanta.  
   
     > [!NOTE]
-    >  Opcją domyślną w [!INCLUDE[vs2010](../includes/vs2010-md.md)] jest **.NET Framework 4**. Ta opcja służy do tworzenia [!INCLUDE[wf](../includes/wf-md.md)] aplikacji przeznaczonych dla [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] i używasz starszej wersji projektanta.  
+    > Opcją domyślną w [!INCLUDE[vs2010](../includes/vs2010-md.md)] jest **.NET Framework 4**. Ta opcja służy do tworzenia [!INCLUDE[wf](../includes/wf-md.md)] aplikacji przeznaczonych dla [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] i używasz starszej wersji projektanta.  
   
 4. W **typów projektów** okienku wybierz pozycję Visual C# lub Visual Basic (w obszarze **inne języki**), a następnie wybierz pozycję **przepływu pracy**.  
   

@@ -11,12 +11,12 @@ ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 812862c3eaf99b7459bb422e174f8fe155ea384a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d450e02d23159f186fd85bf1b687a2fb2c18e82a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432577"
 ---
 # <a name="how-to-use-the-activity-log"></a>Instrukcje: Korzystanie z dziennika aktywności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60042590"
 Pakietów VSPackage może zapisywać komunikaty w dzienniku aktywności. Ta funkcja jest szczególnie przydatna podczas debugowania pakietów VSPackage w środowisku handlu detalicznego.  
   
 > [!TIP]
->  Dziennik aktywności jest zawsze włączone. Visual Studio przechowuje stopniowe buforu wpisy ostatnio sto, a także pierwszych dziesięciu zapisów, które udostępniają informacje o konfiguracji ogólnej.  
+> Dziennik aktywności jest zawsze włączone. Visual Studio przechowuje stopniowe buforu wpisy ostatnio sto, a także pierwszych dziesięciu zapisów, które udostępniają informacje o konfiguracji ogólnej.  
   
 ### <a name="to-write-an-entry-to-the-activity-log"></a>Aby zapisać wpis w dzienniku aktywności  
   

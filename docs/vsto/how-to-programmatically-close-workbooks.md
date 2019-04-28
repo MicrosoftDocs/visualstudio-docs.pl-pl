@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ea2ec3162ae7ffdee20f65452f67b0ddf4cc2dd1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575406"
 ---
 # <a name="how-to-programmatically-close-workbooks"></a>Instrukcje: Programowe zamykanie skoroszytów
   Możesz zamknąć aktywny skoroszyt, lub można określić skoroszytu, aby zamknąć.

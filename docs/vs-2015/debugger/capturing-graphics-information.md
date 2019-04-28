@@ -13,12 +13,12 @@ caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0b98d57500ad2115abfcbd229d29009afdda059
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9fbdaf845d780935b238bac2ba2c2e7cb0c53b59
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437825"
 ---
 # <a name="capturing-graphics-information"></a>Przechwytywanie informacji graficznych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Przechwytywać informacje graficzne z aplikacji Direct3D, tak aby analizator gra
 - Na klawiaturze naciśnij klawisz Print Screen.  
   
   > [!NOTE]
-  >  Gdy aplikacja jest uruchomiona w ramach **Graphics Diagnostics**, klawisz Print Screen należy używać tylko do przechwytywania informacji graficznych; nie wykonuje swojego normalnego działania. To pozostaje, dopóki nie zatrzymasz przechwytywania informacji graficznych — zwykle przez zatrzymanie debugowania lub normalne wyjście z aplikacji — nawet wtedy, gdy fokus jest na innej aplikacji.  
+  > Gdy aplikacja jest uruchomiona w ramach **Graphics Diagnostics**, klawisz Print Screen należy używać tylko do przechwytywania informacji graficznych; nie wykonuje swojego normalnego działania. To pozostaje, dopóki nie zatrzymasz przechwytywania informacji graficznych — zwykle przez zatrzymanie debugowania lub normalne wyjście z aplikacji — nawet wtedy, gdy fokus jest na innej aplikacji.  
   
 - W interfejsie przechwytywania programu Visual Studio, należy wybrać **Przechwyć ramkę** znajdujący się powyżej **sesji diagnostycznej** osi czasu, lub wybierz dużych **Przechwyć ramkę** przycisku znajdujący się poniżej **klatek na sekundę** torach pływackich i w prawo wszystkie wcześniej przechwycone ramki. Przyciski są wyróżnione na poniższej ilustracji.  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e259328b2c9b7e2abcd5decead3560cb184fa930
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d3827ef20ae5eb67c1052b6c7f6147d736013490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438888"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Edytor zestawu reguł, okno dialogowe (starsza wersja)
 W tym temacie opisano sposób użycia **Edytor zestawu reguł** okno dialogowe w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -26,12 +26,12 @@ W tym temacie opisano sposób użycia **Edytor zestawu reguł** okno dialogowe w
  **Edytor zestawu reguł** okno dialogowe służy do tworzenia i modyfikowania [działania PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) zestawy, które są serializowane w pliku Rules reguły.  
   
 > [!NOTE]
->  Jeśli chcesz otworzyć plik Rules z **Edytor XML z kodowaniem**, należy zamknąć skojarzone okno projektanta przepływu pracy lub działania.  
+> Jeśli chcesz otworzyć plik Rules z **Edytor XML z kodowaniem**, należy zamknąć skojarzone okno projektanta przepływu pracy lub działania.  
   
  Aby uzyskać informacje o tym, jak uzyskać dostęp do **Edytor zestawu reguł** okno dialogowe, zobacz [jak: Tworzenie zestawu reguł działania PolicyActivity (starsza wersja)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
   
 > [!WARNING]
->  W edytorze zasad starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] umożliwiający docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] nie obsługuje wielowersyjności kodu w programie.  
+> W edytorze zasad starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] umożliwiający docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] nie obsługuje wielowersyjności kodu w programie.  
   
  W poniższej tabeli opisano elementy interfejsu użytkownika **Edytor zestawu reguł** okno dialogowe.  
   

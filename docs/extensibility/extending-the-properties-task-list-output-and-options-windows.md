@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3bf289a20f206db5aede2de01ddc2030c52b8fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a0e38daa68999da32c3b667a5e220c622b012667
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417234"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Rozszerzanie właściwości, listy zadań, danych wyjściowych i opcji systemu windows
 Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W tym przewodniku pokazano, jak zintegrować informacji na temat okna narzędzia nową **opcje** strony i nowe ustawienie na **właściwości** strony, a także zapisywać **listy zadań** i **dane wyjściowe** systemu windows.
@@ -33,7 +33,7 @@ Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W
 1. Utwórz projekt o nazwie **TodoList** przy użyciu szablonu VSIX, a następnie dodaj niestandardowe narzędzie szablon elementu okno o nazwie **TodoWindow**.
 
     > [!NOTE]
-    >  Aby uzyskać więcej informacji na temat tworzenia rozszerzenia za pomocą okna narzędzi, zobacz [Tworzenie rozszerzenia za pomocą okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).
+    > Aby uzyskać więcej informacji na temat tworzenia rozszerzenia za pomocą okna narzędzi, zobacz [Tworzenie rozszerzenia za pomocą okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 ## <a name="set-up-the-tool-window"></a>Konfigurowanie okna narzędzi
  Dodaj pole tekstowe, w którym można wpisać nowy element ToDo, przycisk, aby dodać nowy element do listy i pola listy w celu wyświetlenia elementów na liście.
@@ -41,7 +41,7 @@ Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W
 1. W *TodoWindow.xaml*, usuwanie kontrolek przycisku, pola tekstowego i StackPanel UserControl.
 
     > [!NOTE]
-    >  Nie spowoduje to usunięcia **button1_Click** obsługi zdarzeń, który zostanie ponownie użyty w kolejnym kroku.
+    > Nie spowoduje to usunięcia **button1_Click** obsługi zdarzeń, który zostanie ponownie użyty w kolejnym kroku.
 
 2. Z **wszystkie formanty WPF** części **przybornika**, przeciągnij **kanwy** formant do siatki.
 

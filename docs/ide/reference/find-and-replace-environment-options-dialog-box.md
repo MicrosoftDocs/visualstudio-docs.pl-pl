@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7bc2d1a97676416c040c11c3b55f5adef7a0a3cc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790638"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Znajdź i zamień, Środowisko, Opcje — Okno dialogowe
 

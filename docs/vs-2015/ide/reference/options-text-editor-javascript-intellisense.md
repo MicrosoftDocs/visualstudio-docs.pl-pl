@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c01514a1f3a27c5e155bd9c3c5e0dc72e6dec0fe
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: cc0a254f13c4689dd6526646ddd2ff30b6094411
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432982"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Opcje, edytor tekstu, JavaScript, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Użyj **IntelliSense** strony **opcje** okno dialogowe, aby zmodyfikować ustawi
  Gdy to pole wyboru jest zaznaczone i gdy masz plik JavaScript otwarty poza kontekstem projektu, Visual Studio pobierze zdalne pliki JavaScript, do których odwołuje się plik w celu dostarczania informacji w technologii IntelliSense. Gdy ta opcja jest zaznaczona, pliki zostaną pobrane po włączeniu ich jako odwołania w pliku JavaScript.  
   
 > [!NOTE]
->  Dla projektów sieci Web domyślnie pobierane są pliki zdalne, do których odwołuje się projekt.  
+> Dla projektów sieci Web domyślnie pobierane są pliki zdalne, do których odwołuje się projekt.  
   
 ## <a name="statement-completion"></a>Dokańczanie instrukcji  
  Możesz użyć tych opcji do zmiany zachowania dokańczania instrukcji IntelliSense.  
@@ -74,7 +74,7 @@ Użyj **IntelliSense** strony **opcje** okno dialogowe, aby zmodyfikować ustawi
   Ta opcja określa kolejność, w której pliki są ładowane do kontekstu usługi języka. Kolejność można skonfigurować za pomocą **Usuń**, **Przenieś w górę**, i **Przenieś w dół** przycisków. Aby technologia IntelliSense działała poprawnie, plik, który jest zależny od innego, musi być załadowany po pliku, od którego zależy.  
   
 > [!CAUTION]
->  Jeśli obiekt jest zdefiniowany bezwarunkowo w dwóch lub więcej odwołań niejawnych, ostatnie odwołanie na tej liście będzie używane do określenia obiektu.  
+> Jeśli obiekt jest zdefiniowany bezwarunkowo w dwóch lub więcej odwołań niejawnych, ostatnie odwołanie na tej liście będzie używane do określenia obiektu.  
   
  **Dodaj odwołanie do grupy**  
  Ta opcja umożliwia dodawanie dodatkowych plików .js IntelliSense przez przechodzenie do odpowiednich plików.  

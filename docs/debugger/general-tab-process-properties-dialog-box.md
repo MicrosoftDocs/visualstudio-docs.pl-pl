@@ -1,34 +1,37 @@
 ---
 title: Karta Ogólne, okno dialogowe właściwości procesu | Dokumentacja firmy Microsoft
-ms.date: 11/04/2016
-ms.topic: reference
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Process properties for Windows NT
 ms.assetid: 86f4d61d-a594-4aac-8960-c5279b4a10fd
-author: mikejo5000
+caps.latest.revision: 7
+author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.workload:
-- multiple
 ms.openlocfilehash: 6116beb67baf072d9c9762a1e8c67408cc915f29
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849819"
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>Karta ogólna, okno dialogowe właściwości procesu
-Użyj **ogólne** kartę, aby dowiedzieć się więcej na temat określonego procesu. Aby wyświetlić [okno dialogowe właściwości procesu](../debugger/process-properties-dialog-box.md), Przenieś fokus do [widok procesy](../debugger/processes-view.md) okna. Zaznacz dowolny węzeł procesu w drzewie, a następnie wybierz **właściwości** z **widoku** menu.
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
- Następujące ustawienia są dostępne na **ogólne** karty:
-
-|Wpis|Opis|
-|-----------|-----------------|
-|**Nazwa modułu**|Nazwa modułu.|
-|**Identyfikator procesu**|Unikatowy identyfikator tego procesu. Numery identyfikatorów procesów są używane ponownie, więc identyfikują one proces tylko w przypadku istnienia tego procesu. Typ obiektu procesu jest tworzony po uruchomieniu programu. Wszystkie wątki w procesie udostępnianie tej samej przestrzeni adresowej i mieć dostęp do tych samych danych.|
-|**Priorytet podstawowy**|Bieżący priorytet bazowy tego procesu. Wątki w procesie można podnieść i Obniż swoje własne podstawowy priorytet względem priorytet podstawowy.|
-|**Wątki**|Liczba aktywnych wątków w tym procesie.|
-|**Czas procesora CPU**|Łączny czas Procesora poświęcony ten proces i wątków. Taki sam jak czas użytkownika, a także czas uprzywilejowany.|
-|**Czas użytkownika**|Skumulowany czas, który upłynął, wątki tego procesu ma poświęcony na wykonywanie kodu w trybie użytkownika-wątki. Aplikacje są wykonywane w trybie użytkownika, tak jak podsystemy, takie jak Menedżer okien i aparat grafiki.|
-|**Czas uprzywilejowany**|Całkowity czas ten proces jest uruchomiony w trybie uprzywilejowanym-wątki. Warstwy usług, procedury wykonawczy i jądra należy wykonać w trybie uprzywilejowanym. Sterowniki urządzeń dla większości urządzeń innych niż kart graficznych i drukarki również wykonać w trybie uprzywilejowanym. Pewnej pracy, który Windows wykonuje aplikacji mogą zostać wyświetlone inne procesy podsystemu, oprócz czasu uprzywilejowanego.|
+Użyj **ogólne** kartę, aby dowiedzieć się więcej na temat określonego procesu. Aby wyświetlić [okno dialogowe właściwości procesu](../debugger/process-properties-dialog-box.md), Przenieś fokus do [widok procesy](../debugger/processes-view.md) okna. Zaznacz dowolny węzeł procesu w drzewie, a następnie wybierz **właściwości** z **widoku** menu.  
+  
+ Następujące ustawienia są dostępne na **ogólne** karty:  
+  
+|Wpis|Opis|  
+|-----------|-----------------|  
+|**Nazwa modułu**|Nazwa modułu.|  
+|**Identyfikator procesu**|Unikatowy identyfikator tego procesu. Numery identyfikatorów procesów są używane ponownie, więc identyfikują one proces tylko w przypadku istnienia tego procesu. Typ obiektu procesu jest tworzony po uruchomieniu programu. Wszystkie wątki w procesie udostępnianie tej samej przestrzeni adresowej i mieć dostęp do tych samych danych.|  
+|**Priorytet podstawowy**|Bieżący priorytet bazowy tego procesu. Wątki w procesie można podnieść i Obniż swoje własne podstawowy priorytet względem priorytet podstawowy.|  
+|**Wątki**|Liczba aktywnych wątków w tym procesie.|  
+|**Czas procesora CPU**|Łączny czas Procesora poświęcony ten proces i wątków. Taki sam jak czas użytkownika, a także czas uprzywilejowany.|  
+|**Czas użytkownika**|Skumulowany czas, który upłynął, wątki tego procesu ma poświęcony na wykonywanie kodu w trybie użytkownika-wątki. Aplikacje są wykonywane w trybie użytkownika, tak jak podsystemy, takie jak Menedżer okien i aparat grafiki.|  
+|**Czas uprzywilejowany**|Całkowity czas ten proces jest uruchomiony w trybie uprzywilejowanym-wątki. Warstwy usług, procedury wykonawczy i jądra należy wykonać w trybie uprzywilejowanym. Sterowniki urządzeń dla większości urządzeń innych niż kart graficznych i drukarki również wykonać w trybie uprzywilejowanym. Pewnej pracy, który Windows wykonuje aplikacji mogą zostać wyświetlone inne procesy podsystemu, oprócz czasu uprzywilejowanego.|  
 |**Czas, który upłynął**|Całkowity czas wykonywania tego procesu.|

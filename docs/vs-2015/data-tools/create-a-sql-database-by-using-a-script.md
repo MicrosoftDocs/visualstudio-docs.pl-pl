@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fd0bf5c0e95b4c859dc2d6470ab6f922041b20ba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c0dc7b406f7e04aaa9848e2f5dcb96f17430f6d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436956"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Tworzenie bazy danych SQL za pomocą skryptu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -234,7 +234,7 @@ W tym przewodniku używasz programu Visual Studio do tworzenia małej bazy danyc
 2. W obszarze **zainstalowane**, rozwiń węzeł **szablony** węzła, rozwiń węzeł **inne języki** węzeł **programu SQL Server** kategorii, a następnie Wybierz **projekt bazy danych programu SQL Server** szablonu.  
   
     > [!NOTE]
-    >  **Inne języki** węzeł nie jest wyświetlane we wszystkich instalacjach programu Visual Studio.  
+    > **Inne języki** węzeł nie jest wyświetlane we wszystkich instalacjach programu Visual Studio.  
   
 3. W **nazwa** wprowadź `Small Database`.  
   

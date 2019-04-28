@@ -6,12 +6,12 @@ ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 54297754fcc85484a90e25686b0fd14aa7841946
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 543401b0e3fcebee22c1c9581f22ec96a76000af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433889"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Instalator, instalacja i weryfikacja dla użytkowników komputerów Mac
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ W tym temacie jest przeznaczona dla deweloperów pracy przede wszystkim na kompu
      ![Sprawdzanie, czy są aktualizacje platformy Xamarin w opcjach programu Visual Studio](../cross-platform/media/cross-plat-xamarin-setup-3.png "3 instalacji Xamarin Cross-Plat")  
   
     > [!NOTE]
-    >  Należy upewnić się, że Xamarin do wersji 4.0.3.214 lub nowszej, aby uniknąć problemów z wcześniejszych licencje środowiska Xamarin.  Jeśli użytkownik podejmie próbę Sprawdź dostępność aktualizacji i wyświetlony komunikat o błędzie informacje o Microsoft narzędzia do kompilacji, zobacz wątku na [fora platformy Xamarin](http://forums.xamarin.com/discussion/69015/xamarin-update-on-vs-2013-says-i-need-the-build-tools-for-vs-2015).
+    > Należy upewnić się, że Xamarin do wersji 4.0.3.214 lub nowszej, aby uniknąć problemów z wcześniejszych licencje środowiska Xamarin.  Jeśli użytkownik podejmie próbę Sprawdź dostępność aktualizacji i wyświetlony komunikat o błędzie informacje o Microsoft narzędzia do kompilacji, zobacz wątku na [fora platformy Xamarin](http://forums.xamarin.com/discussion/69015/xamarin-update-on-vs-2013-says-i-need-the-build-tools-for-vs-2015).
   
 6. Po zakończeniu instalacji Xamarin na komputerach Mac i Windows, postępuj zgodnie z instrukcjami [nawiązywania połączenia z komputerem Mac przy użyciu XMA](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA) (strony xamarin.com), dzięki czemu można pracować z systemem iOS w programie Visual Studio.  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b2b3f87084d4bb1a64f2c43f860c7b8bcaae64c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4d53cdee5d92a92bb7405d1ecfb669e6de25a5a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432391"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Dodawanie właściwości śledzenia do definicji języka specyficznego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -248,7 +248,7 @@ W tym instruktażu przedstawiono sposób dodawania właściwości śledzenia do 
  Implementowanie `GetCustomProperties` metodę dla deskryptora typu dla `ExampleModel` klasy domeny.  
   
 > [!NOTE]
->  Kod generowany przez narzędzia języka Specyficznego dla niestandardowego deskryptora typu dla `ExampleModel` wywołania `GetCustomProperties`; jednak narzędzia DSL nie generują kodu, która implementuje metodę.  
+> Kod generowany przez narzędzia języka Specyficznego dla niestandardowego deskryptora typu dla `ExampleModel` wywołania `GetCustomProperties`; jednak narzędzia DSL nie generują kodu, która implementuje metodę.  
   
  Definiowanie ta metoda tworzy śledzenia deskryptor właściwość Namespace śledzenia właściwości. Ponadto umożliwia zapewnienie atrybuty dla właściwości śledzenia **właściwości** okno, aby poprawnie wyświetlić właściwości.  
   
@@ -344,7 +344,7 @@ W tym instruktażu przedstawiono sposób dodawania właściwości śledzenia do 
  Implementowanie `GetCustomElementsValue` metodę `ExampleModel` klasy domeny.  
   
 > [!NOTE]
->  Kod generowany przez narzędzia języka Specyficznego dla `ExampleModel` wywołania `GetCustomElementsValue`; jednak narzędzia DSL nie generują kodu, która implementuje metodę.  
+> Kod generowany przez narzędzia języka Specyficznego dla `ExampleModel` wywołania `GetCustomElementsValue`; jednak narzędzia DSL nie generują kodu, która implementuje metodę.  
   
  Definiowanie `GetCustomElementsValue` metoda zapewnia logiki dla właściwości CustomElements obliczane `ExampleModel`. Ta metoda zlicza `ExampleElement` klas domeny, które mają Namespace, śledzenie właściwość, która ma wartość użytkownik zaktualizował i zwraca ciąg, który reprezentuje ta liczba jako część łączna liczba elementów w modelu.  
   
@@ -425,7 +425,7 @@ W tym instruktażu przedstawiono sposób dodawania właściwości śledzenia do 
  Ponadto Dodaj magazyn i metody get i set dla właściwości magazynu niestandardowego Namespace `ExampleElement` klasy domeny.  
   
 > [!NOTE]
->  Kod, który Generowanie narzędzia DSL `ExampleModel` wywołuje get i ustawianie metody; jednak narzędzia DSL nie generują kod, który implementuje metody.  
+> Kod, który Generowanie narzędzia DSL `ExampleModel` wywołuje get i ustawianie metody; jednak narzędzia DSL nie generują kod, który implementuje metody.  
   
 #### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>Aby dodać metodę dla deskryptora typu niestandardowego  
   
@@ -591,7 +591,7 @@ W tym instruktażu przedstawiono sposób dodawania właściwości śledzenia do 
  Dodaj kod do obsługi niestandardowe zachowanie po załadowaniu do serializacji XML.  
   
 > [!NOTE]
->  Kod, że narzędzia DSL generować wywołania `OnPostLoadModel` i `OnPostLoadModelAndDiagram` metod; jednak narzędzia DSL nie generują kod, który implementuje te metody.  
+> Kod, że narzędzia DSL generować wywołania `OnPostLoadModel` i `OnPostLoadModelAndDiagram` metod; jednak narzędzia DSL nie generują kod, który implementuje te metody.  
   
 #### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>Aby dodać kod do obsługi niestandardowe zachowanie po załadowaniu  
   

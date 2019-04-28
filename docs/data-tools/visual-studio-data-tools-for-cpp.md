@@ -11,11 +11,11 @@ ms.workload:
 - data-storage
 - cplusplus
 ms.openlocfilehash: 5157f1d6a851e0784e79dfbfe5b94aef0490a026
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565239"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Narzędzia Visual Studio data tools dla języka C++
 

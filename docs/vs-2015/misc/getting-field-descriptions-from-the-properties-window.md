@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 7d92bb6a-b9b9-4cd8-99e9-b5ee129b52a3
 caps.latest.revision: 9
 manager: jillfra
-ms.openlocfilehash: 0fa07029ee1b96f3b8f1328d654b4d5d83953142
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 77da71c6762927610900feedeeae20421a14c4d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432270"
 ---
 # <a name="getting-field-descriptions-from-the-properties-window"></a>Wprowadzenie opisy pól z okna właściwości
 W dolnej części **właściwości** , obszar opisu wyświetlane są informacje związane z pól wybranych właściwości. Ta funkcja jest włączona domyślnie. Jeśli chcesz ukryć pole opisu, kliknij prawym przyciskiem myszy **właściwości** oknie i kliknij przycisk **opis**. Ten sposób spowoduje również usunięcie znacznik wyboru obok pozycji **opis** tytuł w oknie menu. Wyświetlanie pola ponownie, wykonując te same kroki, aby przełączyć **opis** ponownie.  
@@ -26,7 +26,7 @@ W dolnej części **właściwości** , obszar opisu wyświetlane są informacje 
 1. Dodaj `helpstringdll` atrybutu po instrukcji library w bibliotece typów (`typelib`).  
   
    > [!NOTE]
-   >  Ten krok jest opcjonalny, jeśli biblioteka typów znajduje się w pliku biblioteki (.olb) obiektu.  
+   > Ten krok jest opcjonalny, jeśli biblioteka typów znajduje się w pliku biblioteki (.olb) obiektu.  
   
 2. Określ `helpstringcontext` atrybuty dla ciągów. Można również określić `helpstring` atrybutów.  
   

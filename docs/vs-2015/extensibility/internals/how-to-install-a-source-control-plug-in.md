@@ -11,12 +11,12 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fe03499200d3528a1aed286550191fd9dfcc1451
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 997e734f6d2ab6bcf70e3a4843ac66564683c79b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443316"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Instrukcje: Instalowanie wtyczki kontroli kodu źródłowego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
     |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\SCCServerPath|c:\vss\win32\ssscc.dll|  
   
     > [!NOTE]
-    >  SCCServerPath jest pełną ścieżką do we wtyczce programu SourceSafe. Wtyczka do kontroli źródła użyje różne nazwy firmy i produkt, ale tej samej ścieżki wpisu rejestru.  
+    > SCCServerPath jest pełną ścieżką do we wtyczce programu SourceSafe. Wtyczka do kontroli źródła użyje różne nazwy firmy i produkt, ale tej samej ścieżki wpisu rejestru.  
   
 2. Następujące wpisy rejestru opcjonalnie może służyć do modyfikowania zachowania wtyczka do kontroli źródła. Te wpisy go w tym samym podkluczu SccServerName oraz SccServerPath.  
   
@@ -75,7 +75,7 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
     |HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey|SOFTWARE\Microsoft\SourceSafe|  
   
     > [!NOTE]
-    >  Wtyczka do kontroli źródła będzie używać tego samego podklucz i nazwy wpisów, ale wartość będzie inny.  
+    > Wtyczka do kontroli źródła będzie używać tego samego podklucz i nazwy wpisów, ale wartość będzie inny.  
   
 4. Utwórz podklucz o nazwie InstalledSCCProviders w podkluczu SourceCodeControlProvider, a następnie umieścić jednego wpisu tego podklucza.  
   
@@ -88,7 +88,7 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
     |HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\Microsoft Visual SourceSafe|SOFTWARE\Microsoft\SourceSafe|  
   
     > [!NOTE]
-    >  Może istnieć wiele źródła wtyczek kontroli zarejestrowanych w ten sposób. Jest to jak [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] znajduje wszystkie zainstalowane wtyczki oparte na interfejsie API wtyczki kontroli źródła.  
+    > Może istnieć wiele źródła wtyczek kontroli zarejestrowanych w ten sposób. Jest to jak [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] znajduje wszystkie zainstalowane wtyczki oparte na interfejsie API wtyczki kontroli źródła.  
   
 ## <a name="how-an-ide-locates-the-dll"></a>Sposoby lokalizowania IDE przez biblioteki DLL  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE ma dwa sposoby znajdowania źródła kontrolować biblioteki DLL dodatku plug-in:  
@@ -100,14 +100,14 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
   Aby zlokalizować biblioteki DLL w pierwszym sposobie, IDE wygląda ProviderRegKey wpis w podkluczu HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider. Wskazuje wartość tego wpisu do innego podklucza. Następnie IDE szuka wpisu o nazwie SccServerPath w tym drugiego podklucza w kluczu HKEY_LOCAL_MACHINE. Wartość tego wpisu wskazuje IDE biblioteki DLL.  
   
 > [!NOTE]
->  IDE nie załadować biblioteki dll z ścieżek względnych (na przykład.\NewProvider.DLL). Należy określić pełną ścieżkę do biblioteki DLL (na przykład c:\Providers\NewProvider.DLL). To wzmacnia zabezpieczenia środowiska IDE, zapobiegając ładowanie nieautoryzowani lub spersonifikowanego wtyczki bibliotek DLL.  
+> IDE nie załadować biblioteki dll z ścieżek względnych (na przykład.\NewProvider.DLL). Należy określić pełną ścieżkę do biblioteki DLL (na przykład c:\Providers\NewProvider.DLL). To wzmacnia zabezpieczenia środowiska IDE, zapobiegając ładowanie nieautoryzowani lub spersonifikowanego wtyczki bibliotek DLL.  
   
  Aby zlokalizować bibliotekę DLL w druga metoda, IDE wygląda dla wszystkich wpisów w podkluczu HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders<em>.</em> Każdy wpis ma nazwę i wartość. Środowisko IDE Wyświetla listę tych nazw użytkownika<em>.</em> Gdy użytkownik wybierze nazwę, IDE wyszukuje wartość dla wybranej nazwy, która wskazuje podklucza. IDE szuka wpisu o nazwie SccServerPath w tym podklucza w kluczu HKEY_LOCAL_MACHINE. Wartość tego wpisu wskazuje IDE poprawne biblioteki DLL.  
   
  Wtyczka do kontroli źródła musi obsługiwać obie metody wyszukiwania biblioteki DLL i w związku z tym, ustaw ProviderRegKey, zastępując wszystkie poprzednie ustawienia. Co ważniejsze jego należy dodać się do listy InstalledSccProviders, dzięki czemu użytkownik może mieć szeroki wybór wtyczki kontroli źródła do użycia.  
   
 > [!NOTE]
->  Ponieważ są używane w kluczu HKEY_LOCAL_MACHINE, wtyczka do kontroli źródła tylko jedna może być rejestrowany jako domyślna wtyczka do kontroli źródła na danym komputerze (jednak [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] umożliwia użytkownikom określić, które wtyczka do kontroli źródła mają być faktycznie na użytek konkretnego rozwiązania). Podczas procesu instalacji sprawdź, jeśli wtyczka do kontroli źródła jest już skonfigurowana; Jeśli tak, poproś użytkownika, czy można ustawić nowych kontroli źródła wtyczek instalowanych domyślnie. Podczas dezinstalacji nie usuwaj innych podkluczy rejestru, które są wspólne dla wszystkich źródła wtyczek kontroli w HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider; Usuń tylko z określonego podklucza SCC.  
+> Ponieważ są używane w kluczu HKEY_LOCAL_MACHINE, wtyczka do kontroli źródła tylko jedna może być rejestrowany jako domyślna wtyczka do kontroli źródła na danym komputerze (jednak [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] umożliwia użytkownikom określić, które wtyczka do kontroli źródła mają być faktycznie na użytek konkretnego rozwiązania). Podczas procesu instalacji sprawdź, jeśli wtyczka do kontroli źródła jest już skonfigurowana; Jeśli tak, poproś użytkownika, czy można ustawić nowych kontroli źródła wtyczek instalowanych domyślnie. Podczas dezinstalacji nie usuwaj innych podkluczy rejestru, które są wspólne dla wszystkich źródła wtyczek kontroli w HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider; Usuń tylko z określonego podklucza SCC.  
   
 ## <a name="how-the-ide-detects-version-1213-support"></a>Jak IDE wykrywa pomocy technicznej w wersji 1.2/1.3  
  Jak jest [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] wykryć, czy wtyczka obsługuje funkcjonalność w wersji 1.2 i 1.3 interfejsu API wtyczki kontroli źródła? Aby zadeklarować zaawansowana funkcja, wtyczka do kontroli źródła musi implementować odpowiednich funkcji.  

@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8fe6377de1be51ac0fc48904687b60ed8bbc95b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 78d4f63e2dbe84b878916757d1015e3c6d534258
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436183"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Tworzenie interfejsu użytkownika przy użyciu programu Blend for Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Program Blend for Visual Studio ułatwia projektowanie oparte na XAML Windows pu
  Jeśli jesteś nowym użytkownikiem programu Blend for Visual Studio, Poświęć chwilę na zapoznanie się z unikatowych funkcji obszaru roboczego. W tym temacie przejmuje krótkiego przewodnika.
 
 > [!NOTE]
->  Aby poznasz funkcje projektu udostępnionego, takie jak obszaru kompozycji, okno konspektu dokumentu i okno urządzenia, zobacz [Tworzenie interfejsu użytkownika przy użyciu projektanta XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
+> Aby poznasz funkcje projektu udostępnionego, takie jak obszaru kompozycji, okno konspektu dokumentu i okno urządzenia, zobacz [Tworzenie interfejsu użytkownika przy użyciu projektanta XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
  **W tym temacie**:
 

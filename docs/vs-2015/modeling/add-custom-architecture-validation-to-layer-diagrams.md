@@ -11,12 +11,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b91f89bc6c3db52526c8c5e64549b08310a17313
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 920b15d1cd4f7ed0ec11614a50f5dd32e050995a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432409"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Dodawanie niestandardowej weryfikacji architektury do diagramów warstw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,12 +26,12 @@ W programie Visual Studio użytkownicy mogą sprawdzić poprawność kodu źród
  Gdy użytkownik wybierze **sprawdzanie poprawności architektury** polecenia na diagramie warstwy, wywoływana jest standardowa metoda sprawdzania poprawności, następuje wszystkie rozszerzenia sprawdzania poprawności, które zostały zainstalowane.  
   
 > [!NOTE]
->  Sprawdzanie poprawności na diagramie warstwy nie jest taka sama, jak sprawdzanie poprawności na diagramach UML. Na diagramie warstwowym głównym celem jest porównanie diagramu z kodem programu w innych częściach rozwiązania.  
+> Sprawdzanie poprawności na diagramie warstwy nie jest taka sama, jak sprawdzanie poprawności na diagramach UML. Na diagramie warstwowym głównym celem jest porównanie diagramu z kodem programu w innych częściach rozwiązania.  
   
  Można spakować swoje rozszerzenie sprawdzania poprawności warstwy do Visual Studio Integration rozszerzenie (VSIX), który można rozdystrybuować innym użytkownikom programu Visual Studio. Teraz można umieścić swój moduł w VSIX przez siebie lub połączyć go w tym samym VSIX jako inne rozszerzenia. Należy wpisać kod modułu sprawdzania poprawności we własnym projekcie programu Visual Studio, a nie w tym samym projekcie jako inne rozszerzenia.  
   
 > [!WARNING]
->  Po utworzeniu projektu sprawdzania poprawności, należy skopiować [przykładowy kod](#example) na końcu tego tematu, a następnie Edytuj, że do własnych potrzeb.  
+> Po utworzeniu projektu sprawdzania poprawności, należy skopiować [przykładowy kod](#example) na końcu tego tematu, a następnie Edytuj, że do własnych potrzeb.  
   
 ## <a name="requirements"></a>Wymagania  
  Zobacz [wymagania](../modeling/extend-layer-diagrams.md#prereqs).  
@@ -48,7 +48,7 @@ W programie Visual Studio użytkownicy mogą sprawdzić poprawność kodu źród
     Ten szablon tworzy projekt zawierający krótki przykład.  
   
    > [!WARNING]
-   >  Do szablonu makethe działać prawidłowo:  
+   > Do szablonu makethe działać prawidłowo:  
    > 
    > - Edytuj wywołania `LogValidationError` Aby usunąć opcjonalne argumenty `errorSourceNodes` i `errorTargetNodes`.  
    >   - Jeśli używasz właściwości niestandardowych, Zastosuj aktualizacje wymienione w [Dodawanie właściwości niestandardowych do diagramów warstw](../modeling/add-custom-properties-to-layer-diagrams.md).  
@@ -58,7 +58,7 @@ W programie Visual Studio użytkownicy mogą sprawdzić poprawność kodu źród
 4. Aby przetestować rozszerzenie, zobacz [debugowanie walidacji warstwowej](#debugging).  
   
    > [!NOTE]
-   >  Metoda zostanie wywołana tylko w szczególnych okolicznościach, a punkty przerwania nie będą działać automatycznie. Aby uzyskać więcej informacji, zobacz [debugowanie walidacji warstwowej](#debugging).  
+   > Metoda zostanie wywołana tylko w szczególnych okolicznościach, a punkty przerwania nie będą działać automatycznie. Aby uzyskać więcej informacji, zobacz [debugowanie walidacji warstwowej](#debugging).  
   
 5. Aby zainstalować rozszerzenie w głównym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], lub na innym komputerze, należy znaleźć **.vsix** w pliku *bin\\*. Skopiuj go na komputerze, na którym chcesz go zainstalować i kliknij go dwukrotnie. Aby odinstalować go, należy użyć **rozszerzenia i aktualizacje** na **narzędzia** menu.  
   
@@ -115,7 +115,7 @@ W programie Visual Studio użytkownicy mogą sprawdzić poprawność kodu źród
 7. Aby przetestować rozszerzenie, zobacz [debugowanie walidacji warstwowej](#debugging).  
   
     > [!NOTE]
-    >  Metoda zostanie wywołana tylko w szczególnych okolicznościach, a punkty przerwania nie będą działać automatycznie. Aby uzyskać więcej informacji, zobacz [debugowanie walidacji warstwowej](#debugging).  
+    > Metoda zostanie wywołana tylko w szczególnych okolicznościach, a punkty przerwania nie będą działać automatycznie. Aby uzyskać więcej informacji, zobacz [debugowanie walidacji warstwowej](#debugging).  
   
 8. Aby zainstalować VSIX w głównym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], lub na innym komputerze, należy znaleźć **.vsix** w pliku **bin** katalogu projektów VSIX. Skopiuj go do komputera, na którym chcesz zainstalować VSIX. Kliknij dwukrotnie plik VSIX w Eksploratorze Windows. (Eksplorator plików w systemie Windows 8).  
   
@@ -147,7 +147,7 @@ W programie Visual Studio użytkownicy mogą sprawdzić poprawność kodu źród
 - Po wykryciu błędu, możesz go zgłosić za pomocą `LogValidationError()`.  
   
   > [!WARNING]
-  >  Nie używaj parametrów opcjonalnych `LogValidationError`.  
+  > Nie używaj parametrów opcjonalnych `LogValidationError`.  
   
   Kiedy użytkownik wywoła **sprawdzanie poprawności architektury** polecenia menu, system plików środowiska uruchomieniowego warstwy analizuje warstwy i ich artefakty w celu przedstawienia na wykresie. Wykres ma cztery części:  
   
@@ -162,7 +162,7 @@ W programie Visual Studio użytkownicy mogą sprawdzić poprawność kodu źród
   Gdy wykres został skonstruowany, wywoływana jest standardowa metoda sprawdzania poprawności. Po zakończeniu tej operacji, wszystkie metody sprawdzania poprawności zainstalowanych rozszerzeń są wywoływane w nieokreślonej kolejności. Wykres jest przekazywany do każdej `ValidateArchitecture` metody, która pozwala na skanowanie wykresu i zgłasza wszelkie błędy, które znajdzie.  
   
 > [!NOTE]
->  To nie jest taki sam jak proces sprawdzania poprawności, który jest stosowany do diagramów UML i nie jest taki sam jak proces sprawdzania poprawności, który może służyć w językach specyficznych dla domeny.  
+> To nie jest taki sam jak proces sprawdzania poprawności, który jest stosowany do diagramów UML i nie jest taki sam jak proces sprawdzania poprawności, który może służyć w językach specyficznych dla domeny.  
   
  Metody sprawdzania poprawności nie powinny zmieniać warstwy modelu lub kod, który jest weryfikowany.  
   

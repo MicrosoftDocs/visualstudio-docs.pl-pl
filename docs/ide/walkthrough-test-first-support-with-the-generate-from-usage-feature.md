@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2084b2768a4b93b6174dfdb637b91d69a2072902
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3085e2f9b27d587f26fd93db06bc837527a78ff1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432035"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Przewodnik: Rozwoju pierwszego badania za pomocą funkcji generowania na podstawie sposobu użycia
 
@@ -65,7 +65,7 @@ W tym temacie przedstawiono sposób użycia [Generowanie z użycia](../ide/visua
 2. Znajdź w deklaracji klasy `UnitTest1` i zmień jej nazwę na `AutomobileTest`.
 
    > [!NOTE]
-   >  Technologia IntelliSense zawiera teraz dwa warianty dla instrukcji IntelliSense: *trybem uzupełniania* i *trybem sugestii*. Tryb sugestii w sytuacjach, w których klas i składowych są wykorzystywane przed są zdefiniowane. Gdy **IntelliSense** jest otwarte okno, możesz nacisnąć przycisk **Ctrl**+**Alt**+**miejsca** się przełączać między trybem uzupełniania a trybem sugestii. Zobacz [IntelliSense użyj](../ide/using-intellisense.md) Aby uzyskać więcej informacji. Tryb sugestii pomoże podczas wpisywania `Automobile` w następnym kroku.
+   > Technologia IntelliSense zawiera teraz dwa warianty dla instrukcji IntelliSense: *trybem uzupełniania* i *trybem sugestii*. Tryb sugestii w sytuacjach, w których klas i składowych są wykorzystywane przed są zdefiniowane. Gdy **IntelliSense** jest otwarte okno, możesz nacisnąć przycisk **Ctrl**+**Alt**+**miejsca** się przełączać między trybem uzupełniania a trybem sugestii. Zobacz [IntelliSense użyj](../ide/using-intellisense.md) Aby uzyskać więcej informacji. Tryb sugestii pomoże podczas wpisywania `Automobile` w następnym kroku.
 
 3. Znajdź `TestMethod1()` metody i zmień jej nazwę na `DefaultAutomobileIsInitializedCorrectly()`. Tej metody, Utwórz nowe wystąpienie klasy o nazwie `Automobile`, jak pokazano na poniższych zrzutach ekranu. Pojawi się linią falistą, co oznacza błąd w czasie kompilacji i [szybkie akcje](../ide/quick-actions.md) żarówki błąd pojawia się na lewym marginesie, lub bezpośrednio pod wężyk po umieszczeniu wskaźnika myszy nad nim.
 

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c31fe758d9c1a9a99fb71144f93c7145ea466ad0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3f6345e7627549c672aa28fac8cba5f6d9658a23
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435446"
 ---
 # <a name="sandboxed-solution-considerations"></a>Uwagi dotyczące rozwiązania typu piaskownica
   *Rozwiązania piaskownicy* to funkcja programu Microsoft SharePoint 2010, umożliwiająca użytkownikom kolekcji witryny do przekazania własnych rozwiązań kodu niestandardowego. Typowe rozwiązanie w trybie piaskownicy jest użytkownikom przekazywanie własnych składników Web Part.
@@ -34,7 +34,7 @@ ms.locfileid: "56621698"
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] obsługuje rozwiązania w trybie piaskownicy za pomocą właściwości projektu logiczną o nazwie *rozwiązanie w trybie piaskownicy*. Tę właściwość można ustawić w dowolnym momencie w projekcie lub można określić, podczas tworzenia projektu w **Kreator ustawień niestandardowych SharePoint**.
 
 > [!NOTE]
->  Zmiana *rozwiązanie w trybie piaskownicy* właściwość projektu po jego utworzeniu może spowodować błędy sprawdzania poprawności.
+> Zmiana *rozwiązanie w trybie piaskownicy* właściwość projektu po jego utworzeniu może spowodować błędy sprawdzania poprawności.
 
  To rozwiązanie jest uznawana za rozwiązania z zakresu farmy, jeśli *rozwiązanie w trybie piaskownicy* właściwość jest ustawiona na **false** lub można wybrać **Wdróż jako rozwiązanie farmy** opcji. Jednak rozwiązanie jest traktowany inaczej w rozwiązaniu farmy *rozwiązanie w trybie piaskownicy* właściwość jest ustawiona na **true** lub można wybrać **Wdróż jako rozwiązanie w trybie piaskownicy** Opcja w kreatorze.
 
@@ -131,7 +131,7 @@ ms.locfileid: "56621698"
 
 - Funkcji należących do zakresu farmy
 
-- `HideCustomAction` — element
+- `HideCustomAction`, element
 
 - Funkcje o zakresie aplikacji sieci Web
 

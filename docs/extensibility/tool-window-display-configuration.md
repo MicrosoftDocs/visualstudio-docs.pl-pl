@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 663bc7a2add5e436cb7b0166387d6e3638087a1a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432164"
 ---
 # <a name="tool-window-display-configuration"></a>Konfiguracja ekranu okna narzędzi
 Kiedy pakietu VSPackage rejestruje okna narzędzi, domyślne położenie, rozmiar, styl dokowania i inne informacje o widoczności określono opcjonalnych wartości. Aby uzyskać więcej informacji na temat rejestrowanie okna narzędzi, zobacz [narzędzie Windows w rejestrze](../extensibility/tool-windows-in-the-registry.md)
@@ -38,7 +38,7 @@ HKEY_LOCAL_MACHINE\
 | Nazwa | Typ | Dane | Opis |
 |-----------------|-----------| - | - |
 | Nazwa | REG_SZ | "Krótką nazwę miejsce" | Krótka nazwa opisująca okna narzędzia. Używany tylko w przypadku odwołania w rejestrze. |
-| float | REG_SZ | "X1, Y1, X2, Y2" | Cztery wartości rozdzielonych przecinkami. X1, Y1 jest współrzędnych w lewym górnym rogu okna narzędzia. X2, Y2 jest współrzędną prawym dolnym rogu. Wszystkie wartości są we współrzędnych ekranu. |
+| Float | REG_SZ | "X1, Y1, X2, Y2" | Cztery wartości rozdzielonych przecinkami. X1, Y1 jest współrzędnych w lewym górnym rogu okna narzędzia. X2, Y2 jest współrzędną prawym dolnym rogu. Wszystkie wartości są we współrzędnych ekranu. |
 | Styl | REG_SZ | "MDI"<br /><br /> "Float"<br /><br /> "Połączone"<br /><br /> "Tabbed"<br /><br /> "AlwaysFloat" | Słowo kluczowe określający początkowej wyświetlenia stanu okna narzędzi.<br /><br /> "MDI" = zadokowane okna MDI.<br /><br /> "Float" = liczb zmiennoprzecinkowych.<br /><br /> "Połączone" = powiązanym z innego okna (określony we wpisie okno).<br /><br /> "Z kartami" = w połączeniu z innego okna narzędzi.<br /><br /> "AlwaysFloat" = nie może być zadokowane.<br /><br /> Aby uzyskać więcej informacji zobacz sekcję uwagi poniżej. |
 | Okno | REG_SZ | *\<GUID>* | Identyfikator GUID okna, do którego okna narzędzi mogą być połączone lub z zakładkami. Identyfikator GUID może należeć do jednej z własnego systemu windows, czy systemu windows w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. |
 | Orientacja | REG_SZ | "Left"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Dolnej" | Zobacz sekcję uwagi poniżej. |

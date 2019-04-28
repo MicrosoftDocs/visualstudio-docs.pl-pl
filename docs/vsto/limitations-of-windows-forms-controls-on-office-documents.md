@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 610ee5e18054b6da35a3098b851d1585c70b6bc3
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583779"
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Ograniczenia kontrolek Windows Forms w dokumentach pakietu Office
 

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3e9ff4acbfd6df1980a3882311b3d3c4611e064
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: dd20552a72775723c4ad006708ce1fb7f18d4181
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758124"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424630"
 ---
 # <a name="managing-project-and-solution-properties"></a>Zarządzanie właściwościami projektów i rozwiązań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Projekty mają właściwości, które zarządzają wiele aspektów kompilacji, d
  ![Właściwości węzła w drzewie Eksploratora rozwiązań](../ide/media/vs2015-props-se.png "VS2015_Props_SE")  
   
 > [!TIP]
->  Rozwiązania mają kilka właściwości, a więc elementy; projektu te właściwości są dostępne w [okno właściwości](../ide/reference/properties-window.md), a nie **projektanta projektu**.  
+> Rozwiązania mają kilka właściwości, a więc elementy; projektu te właściwości są dostępne w [okno właściwości](../ide/reference/properties-window.md), a nie **projektanta projektu**.  
   
 ## <a name="project-properties"></a>Właściwości projektu  
  Właściwości projektu są zorganizowane w grupy każda grupa ma swoją własną stronę właściwości i strony mogą być różne dla różnych języków i typów projektów.  

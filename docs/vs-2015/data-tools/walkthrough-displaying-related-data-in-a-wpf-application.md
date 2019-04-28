@@ -19,12 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 400e16918f01697eecce2af608ba89e041ca6449
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7cd8a48092c39048d52a7ebe9cd27163ba32110
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424790"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Przewodnik: Wyświetlanie powiązanych danych w aplikacji WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -167,7 +167,7 @@ W tym instruktażu utworzysz aplikację programu WPF, która wyświetla dane z t
 1. W **źródeł danych** oknie Znajdź **SalesOrderDetails** węzeł, który jest elementem podrzędnym **SalesOrderHeaders** węzła.  
   
    > [!NOTE]
-   >  Istnieje również **SalesOrderDetails** węzła, który jest elementem równorzędnym **SalesOrderHeaders** węzła. Upewnij się, że wybrano węzeł podrzędny **SalesOrderHeaders** węzła.  
+   > Istnieje również **SalesOrderDetails** węzła, który jest elementem równorzędnym **SalesOrderHeaders** węzła. Upewnij się, że wybrano węzeł podrzędny **SalesOrderHeaders** węzła.  
   
 2. Rozwiń węzeł podrzędny **SalesOrderDetails** węzła.  
   

@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a1e4f59b672049ee8148c94dbbf51e560e22c31e
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582017"
 ---
-# <a name="visual-studio-customer-experience-improvement-program"></a>Program poprawy jakości obsługi klienta programu Visual Studio
+# <a name="visual-studio-customer-experience-improvement-program"></a>Program poprawy jakości obsługi klienta systemu Visual Studio
 
 Visual Studio klienta środowiska Improvement Program (VSCEIP) zaprojektowano w celu pomóc firmie Microsoft w ulepszaniu programu Visual Studio wraz z upływem czasu. Ten program [zbiera informacje o błędach](../ide/diagnostic-data-collection.md), sprzęt komputerowy i jak użytkownicy korzystają programu Visual Studio, bez zakłócania pracy użytkowników w ich zadań na komputerze. Informacje zbierane pomaga firma Microsoft może identyfikować, które funkcje, aby poprawić. W tym dokumencie opisano sposób korzystania z opcji w lub poza nią VSCEIP.
 

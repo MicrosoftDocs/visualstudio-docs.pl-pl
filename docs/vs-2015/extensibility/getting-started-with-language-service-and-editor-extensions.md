@@ -10,12 +10,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4695e5f866ce9161ca9f90a0f39be441f5d71a44
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a29bb95b4b3e05097f2bf095e9312fe0704c31bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421126"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Wprowadzenie do rozszerzeń usługi językowej i edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Rozszerzenia edytora służy do dodawania funkcji języka, np. Tworzenie konspek
  Aby rozpocząć pisanie rozszerzenia edytora, korzystanie z szablonów projektów edytora, które są zainstalowane jako część programu Visual Studio SDK. Visual Studio SDK jest dostępny do pobrania zestaw narzędzi, które ułatwiają tworzenie rozszerzeń programu Visual Studio przy użyciu pakietów VSPackage lub za pomocą Managed Extensibility Framework (MEF).  
   
 > [!NOTE]
->  Aby uzyskać więcej informacji na temat zestawu SDK programu Visual Studio, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+> Aby uzyskać więcej informacji na temat zestawu SDK programu Visual Studio, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
  Firma Microsoft zaleca, Dowiedz się o następujących pojęć i technologii przed przystąpieniem do napisania własnego rozszerzenia edytora.  
   
@@ -36,7 +36,7 @@ Rozszerzenia edytora służy do dodawania funkcji języka, np. Tworzenie konspek
  Edytor programu Visual Studio używa Managed Extensibility Framework (MEF) do zarządzania komponentami i rozszerzeń. MEF umożliwia również deweloperom więcej łatwe tworzenie rozszerzeń dla aplikacji hosta, takimi jak Visual Studio. Ta struktura służy do definiowania rozszerzenia zgodnie z kontrakt MEF i wyeksportuj go jako składnik MEF. Aplikacja hosta zarządza części składowe, ich znajdowanie, rejestrowania ich i upewniając się, że są one stosowane do poprawnego kontekstu.  
   
 > [!NOTE]
->  Aby uzyskać więcej informacji na temat MEF w edytorze, zobacz [Managed Extensibility Framework, w edytorze](../extensibility/managed-extensibility-framework-in-the-editor.md).  
+> Aby uzyskać więcej informacji na temat MEF w edytorze, zobacz [Managed Extensibility Framework, w edytorze](../extensibility/managed-extensibility-framework-in-the-editor.md).  
   
 ## <a name="visual-studio-editor-extension-points-and-extensions"></a>Punkty rozszerzenia edytora programu Visual Studio i rozszerzenia  
  Punkty rozszerzenia edytora są składniki MEF, które można dostosować i rozszerzyć. W niektórych przypadkach można rozszerzyć punktu rozszerzenia przez implementację interfejs i wyeksportować go wraz z prawidłowych metadanych. W innych przypadkach można po prostu zadeklarować rozszerzenie i wyeksportuj go jako określonego typu.  
@@ -61,7 +61,7 @@ Rozszerzenia edytora służy do dodawania funkcji języka, np. Tworzenie konspek
  Po zainstalowaniu rozszerzenia na komputerze obejmują pliki binarne i manifest w podfolderze folderu, który jest znany dla programu Visual Studio.  
   
 > [!WARNING]
->  Nie trzeba martwić o szczegóły manifesty i lokalizacji wdrożenia, jeśli używasz jednego z szablonów rozszerzania edytora, które znajdują się w programie Visual Studio. Szablony zawierają wszystko, co jest wymagane, aby zarejestrować i wdrożyć rozszerzenie.  
+> Nie trzeba martwić o szczegóły manifesty i lokalizacji wdrożenia, jeśli używasz jednego z szablonów rozszerzania edytora, które znajdują się w programie Visual Studio. Szablony zawierają wszystko, co jest wymagane, aby zarejestrować i wdrożyć rozszerzenie.  
   
 ## <a name="running-extensions-in-the-experimental-instance"></a>Uruchamianie rozszerzenia w doświadczalnym wystąpieniu  
  Można związane z działającą wersją programu Visual Studio, gdy rozszerzenie jest tworzona przez wdrożenie jej w następującym folderze eksperymentalne (w systemach Windows Vista i Windows 7):  
@@ -84,9 +84,9 @@ Rozszerzenia edytora służy do dodawania funkcji języka, np. Tworzenie konspek
   
  Można również utworzyć edytora składników MEF z rozszerzeniem pakiet rozszerzeń Visual Studio. Zobacz poniższe poradniki, aby uzyskać szczegółowe informacje:  
   
-- [Przewodnik: Używanie polecenia programu PowerShell z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+- [Przewodnik: używanie polecenia powłoki z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
-- [Przewodnik: Używanie klawisza skrótu z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
+- [Przewodnik: używanie klawisza skrótu z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Punkty rozszerzeń usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)
