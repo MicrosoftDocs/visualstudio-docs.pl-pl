@@ -9,12 +9,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aa18bed0ff4dfa24de114f0b15c109dfba777c56
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.openlocfilehash: b090833d766e36ba597bb32e8a6c793d674add88
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383946"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Znajdowanie zmian w kodzie i innych elementów historii kodu za pomocą funkcji CodeLens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60055239"
 Skoncentrowanie się na pracy, chociaż możesz dowiedzieć się, co się stało z twoim kodzie — bez opuszczania edytora. Znajdować odwołania i zmian kodu, połączone usterki, elementy robocze, przeglądy kodu i testów jednostkowych.  
   
 > [!NOTE]
->  Funkcja CodeLens jest dostępna tylko w wersjach programu Visual Studio Enterprise i Visual Studio Professional. Nie jest dostępne w programie Visual Studio Community edition.  
+> Funkcja CodeLens jest dostępna tylko w wersjach programu Visual Studio Enterprise i Visual Studio Professional. Nie jest dostępne w programie Visual Studio Community edition.  
   
  Zobacz, gdzie i w jaki sposób poszczególne fragmenty kodu są używane w rozwiązaniu:  
   
@@ -124,7 +124,7 @@ Skoncentrowanie się na pracy, chociaż możesz dowiedzieć się, co się stało
 #### <a name="find-incoming-changes-from-other-branches"></a>Znajdź zmiany przychodzące z innych gałęzi  
  ![CodeLens: Znajdowanie zmian w kodzie w innych gałęzi,](../ide/media/codelensbranchchangecheckinconceptual.png "CodeLensBranchChangeCheckinConceptual")  
   
- .. .tak jak tej poprawki w Deweloper gałęzi w tym miejscu:  
+ ...tak jak tej poprawki w Deweloper gałęzi w tym miejscu:  
   
  ![CodeLens: Zmień zaznaczone ich z inną gałęzią](../ide/media/codelensbranchchangedevscreenshot.png "CodeLensBranchChangeDevScreenshot")  
   
