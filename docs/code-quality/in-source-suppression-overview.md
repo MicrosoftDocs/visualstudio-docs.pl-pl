@@ -15,11 +15,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825827"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Pomijanie ostrzeżeń analizy kodu
 
@@ -27,7 +27,7 @@ Często jest to użyteczne, aby wskazać, że ostrzeżenie nie ma zastosowania. 
 
 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> Atrybut jest atrybutem warunkowym znajduje się w metadanych IL zestawu kodu zarządzanego, tylko wtedy, gdy zdefiniowano symbol kompilacji CODE_ANALYSIS w czasie kompilacji.
 
-W języku C + +/ interfejsu wiersza polecenia, użyj makra urzędu certyfikacji\_POMIŃ\_wiadomości lub urzędu certyfikacji\_GLOBAL\_SUPPRESS_MESSAGE w pliku nagłówkowym, aby dodać ten atrybut.
+W C++sposób niezamierzony, użyj makra urzędu certyfikacji\_POMIŃ\_wiadomości lub urzędu certyfikacji\_GLOBAL\_SUPPRESS_MESSAGE w pliku nagłówkowym, aby dodać ten atrybut.
 
 > [!NOTE]
 > Nie należy używać pominięć w źródła kompilacji do wydania, aby zapobiec przypadkowo wysyłania metadanych pomijanie w źródła. Ponadto ze względu na koszt przetwarzania pomijanie-source, może być znacznie wydajności aplikacji.

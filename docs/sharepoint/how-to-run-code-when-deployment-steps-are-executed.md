@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 581f9c0b9907fd59863f6a468a45ef67d9966475
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813155"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>Instrukcje: Uruchamianie kodu, gdy są wykonywane kroki związane z wdrażaniem
   Jeśli chcesz wykonać dodatkowe zadania dla kroku wdrożenia w projekcie programu SharePoint, możesz obsłużyć zdarzenia, które są wywoływane przez elementów projektu programu SharePoint przed i po programu Visual Studio wykonuje każdy krok wdrażania. Aby uzyskać więcej informacji, zobacz [rozszerzanie pakowania i wdrażania SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).

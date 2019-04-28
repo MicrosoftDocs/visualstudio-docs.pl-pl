@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 287f906ab947f549748865899a5ced52e0c53562
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852747"
 ---
 # <a name="debugger-settings-and-preparation"></a>Ustawienia debugera i przygotowanie
 W tej sekcji opisano ustawienia właściwości związane z debugerem i przygotowania potrzebne debugowaniem programu za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugera. Jeśli tworzysz swój program w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przy użyciu szablonów projektu, te ustawienia są ustawione prawidłowo dla Ciebie w konfiguracji debugowania.

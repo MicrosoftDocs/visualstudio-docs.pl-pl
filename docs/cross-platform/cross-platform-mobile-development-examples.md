@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - xplat-cplusplus
 ms.openlocfilehash: b3980273e746b5f6dacd2d8d612a5e5e7dfe2a8e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819422"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Przykłady programowania aplikacji mobilnych dla wielu platform
 Kompletne przykłady, których można użyć, aby dowiedzieć się więcej z kilku szablonów instalowane przez Visual C++ for Cross-Platform Mobile Development wygenerować. Ponadto Centrum deweloperów Windows ma kilka przykładowe aplikacje, które można pobrać i wypróbować w programie Visual Studio.

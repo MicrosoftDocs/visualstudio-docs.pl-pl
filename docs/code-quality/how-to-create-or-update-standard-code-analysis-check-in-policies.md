@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 768efb3e874f6427cd23f63f14671aa2db1bea71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816360"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Instrukcje: Tworzenie lub aktualizowanie standardowych zasad ewidencjonowania analizy kodu
 

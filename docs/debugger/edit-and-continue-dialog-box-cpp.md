@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 6e7183845e9c0b9b50b8feaedf9e6327b06678ad
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851420"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Edytuj i Kontynuuj — okno dialogowe (C++)
 Edytuj i Kontynuuj nie może zastosować zmiany wprowadzone w kodzie natywnym. Może to być tymczasowa sytuacja. Czasami Edytuj i Kontynuuj nie można zastosować zmian w kodzie macierzystym natychmiast, ale można stosować je później, podczas sesji debugowania (na przykład po bieżącym wywołaniu procedury wykonywania teraz). Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj](../debugger/edit-and-continue.md).

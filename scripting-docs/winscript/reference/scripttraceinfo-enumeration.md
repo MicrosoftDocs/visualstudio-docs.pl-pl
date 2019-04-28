@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2ed2c6566db8209280be7f102a55c7de8cf85c44
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58155813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840151"
 ---
 # <a name="scripttraceinfo-enumeration"></a>Wyliczenie SCRIPTTRACEINFO
 Reprezentuje zdarzenie skryptu, które jest śledzone. Używane w [metoda IActiveScriptSiteTraceInfo::SendScriptTraceInfo](../../winscript/reference/iactivescriptsitetraceinfo-sendscripttraceinfo-method.md).  

@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bfaf520658edfdcf5b80fb89f89489a47c7fffa3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852697"
 ---
 # <a name="debugger-project-settings"></a>Ustawienia projektu debugowania
 Niektóre ustawienia projektu wpływa również na debugowanie. Te ustawienia określają takich zadań jak katalogów, jaki debuger będzie wyglądać na polecenie i argumenty wiersza polecenia używane do uruchomienia programu, a typ informacji o debugowaniu utworzonych dla programu. Możesz zmienić te ustawienia w **stron właściwości** okno dialogowe.

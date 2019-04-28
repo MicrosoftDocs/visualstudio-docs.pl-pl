@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a59e05932b9e2e20f06a02614f8153b665b8fd51
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3a6350c16da79bc102f85a382ce57aa6924bb2c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831446"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Korzystanie z metod profilowania do zbierania danych o wydajności z wiersza polecenia
 Wybór [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] opcje i narzędzi wiersza poleceń Profiling Tools jest zależna od czynników, takich jak typ aplikacji, profilowany, metody profilowania, którego chcesz użyć, i czy aplikacji docelowej jest zapisywany w natywnym, czy [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]kodu.
@@ -37,17 +37,17 @@ Wybór [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] opcje i narzęd
 
  **Typ aplikacji docelowej**
 
--   [Składniki autonomicznej .NET framework](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)
+- [Składniki autonomicznej .NET framework](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)
 
--   [Składnikami macierzystymi autonomiczny](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)
+- [Składnikami macierzystymi autonomiczny](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)
 
--   [Statycznie skompilowanej aplikacji sieci web ASP.NET](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)
+- [Statycznie skompilowanej aplikacji sieci web ASP.NET](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)
 
--   [Dynamicznie skompilowanej aplikacji sieci web ASP.NET](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
+- [Dynamicznie skompilowanej aplikacji sieci web ASP.NET](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
 
--   [Usługi platformy .NET](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
+- [Usługi platformy .NET](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
--   [Natywnych usług](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
+- [Natywnych usług](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
 ## <a name="use-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a>Umożliwia zbieranie danych pamięci alokacji i obiekt okresu istnienia metod pamięci .NET
  Metoda pamięci Profiling Tools .NET umożliwia zbieranie [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dane alokacji pamięci oraz informacje o okresie istnienia obiektów w [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].

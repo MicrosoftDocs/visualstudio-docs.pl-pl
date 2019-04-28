@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: cb3117ff480e124aab6333eaed612c0438ed3911
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830049"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Widok modułów - dane Instrumentacji pamięci platformy .NET
 Widok modułów dane alokacji pamięci .NET zbierane za pomocą metody Instrumentacji grupuje pamięci i danych o chronometrażu przez moduły, które zostały wykonane w trakcie uruchomienia profilowania. Danych profilowania dla funkcji modułu znajduje się poniżej tego węzła modułu.

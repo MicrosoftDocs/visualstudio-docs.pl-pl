@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: dbd4cf06a5d51a668acc5c980e7e93a94f2992f2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816469"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Instrukcje: Włączanie i wyłączanie pełnej analizy rozwiązania dla kodu zarządzanego
 

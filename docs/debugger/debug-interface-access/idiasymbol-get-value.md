@@ -1,73 +1,75 @@
 ---
 title: Idiasymbol::get_value — | Dokumentacja firmy Microsoft
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_value method
 ms.assetid: 2e40174a-2a61-4e5f-bb32-9e0ceec2178a
-author: mikejo5000
+caps.latest.revision: 12
+author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.workload:
-- multiple
 ms.openlocfilehash: 0f7eee2acc1c131e146f115d75130eabbb5fd1a8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834548"
 ---
 # <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
-Pobiera wartość stałą.
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Składnia
-
-```C++
-HRESULT get_value (
-    VARIANT* pRetVal
-);
-```
-
-#### <a name="parameters"></a>Parametry
-`pRetVal`
-
-[out w] A `VARIANT` obiekt, który jest wypełniane wartością stałą.
-
-## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
-
+Pobiera wartość stałą.  
+  
+## <a name="syntax"></a>Składnia  
+  
+```cpp#  
+HRESULT get_value (   
+   VARIANT* pRetVal  
+);  
+```  
+  
+#### <a name="parameters"></a>Parametry  
+ `pRetVal`  
+ [out w] A `VARIANT` obiekt, który jest wypełniane wartością stałą.  
+  
+## <a name="return-value"></a>Wartość zwracana  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
+  
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
-
-## <a name="remarks"></a>Uwagi
-Podany typ VARIANT musi być zainicjowany, zanim zostanie on przekazany do tej metody. Aby uzyskać więcej informacji zobacz przykład.
-
-## <a name="example"></a>Przykład
-
-```C++
-void ProcessValue(IDiaSymbol *pSymbol)
-{
-    VARIANT value;
-    value.vt = VT_EMPTY;    // Initialize variant for use.
-    if (pSymbol->get_value(&value) == S_OK)
-    {
-        // Do something with value.
-    }
-}
-
-//----------------------------------------------------
-// Alternate approach
-void ProcessValue2(IDiaSymbol *pSymbol)
-{
-    CComVariant value;
-    if (pSymbol->get_value(&value) == S_OK)
-    {
-        // Do something with value
-    }
-}
-```
-
-## <a name="see-also"></a>Zobacz też
-- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
+  
+## <a name="remarks"></a>Uwagi  
+ Podany typ VARIANT musi być zainicjowany, zanim zostanie on przekazany do tej metody. Aby uzyskać więcej informacji zobacz przykład.  
+  
+## <a name="example"></a>Przykład  
+  
+```cpp#  
+void ProcessValue(IDiaSymbol *pSymbol)  
+{  
+    VARIANT value;  
+    value.vt = VT_EMPTY;    // Initialize variant for use.  
+    if (pSymbol->get_value(&value) == S_OK)  
+    {  
+        // Do something with value.  
+    }  
+}  
+  
+//----------------------------------------------------  
+// Alternate approach  
+void ProcessValue2(IDiaSymbol *pSymbol)  
+{  
+    CComVariant value;  
+    if (pSymbol->get_value(&value) == S_OK)  
+    {  
+        // Do something with value  
+    }  
+}  
+```  
+  
+## <a name="see-also"></a>Zobacz też  
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

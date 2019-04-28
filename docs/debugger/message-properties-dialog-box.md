@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f590f40e4e3361f4dbeb46a3a9b8758b8ab5075
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846118"
 ---
 # <a name="message-properties-dialog-box"></a>Właściwości komunikatu — Okno dialogowe
 Aby dowiedzieć się więcej na temat szczegółowy komunikat o błędzie, należy użyć tego okna dialogowego. Aby wyświetlić to okno dialogowe, Przenieś fokus do [widoku komunikatów](../debugger/messages-view.md) okna. Zaznacz dowolny węzeł wiadomości w drzewie, a następnie wybierz **właściwości** z **widoku** menu.

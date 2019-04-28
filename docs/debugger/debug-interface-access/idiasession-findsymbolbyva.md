@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ecb0db40f1179722b5ca315853dc3953a105b45b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62827261"
 ---
 # <a name="idiasessionfindsymbolbyva"></a>IDiaSession::findSymbolByVA
 Pobiera typ określony symbol, który zawiera lub jest najbardziej zbliżony do określonego adresu wirtualnego.

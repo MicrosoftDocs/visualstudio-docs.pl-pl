@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ffab5f43bf026bd410c72694716148d4d368c69a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859947"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 Manifest za pomocą narzędzia zasobów jest aplikacja konsolowa która przyjmuje listę zasobów obrazu (PNG lub .xaml plików) i generuje plik .imagemanifest umożliwiająca tych obrazów do użycia z usługą obrazów programu Visual Studio. To narzędzie można dodatkowo dodać obrazy do istniejących .imagemanifest. To narzędzie jest przydatne w przypadku dodawania wysokiej rozdzielczości DPI i motywów obsługę dla obrazów w celu rozszerzenia programu Visual Studio. Pliku wygenerowanego .imagemanifest należy objęte i wdrażane jako część rozszerzenia programu Visual Studio (.vsix).

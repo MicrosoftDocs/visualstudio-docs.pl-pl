@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d4769224cfb26c4b1d55362fea006f55ba8845da
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852877"
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>Narzędzia do debugowania wątków i procesów w programie Visual Studio
 *Wątki* i *procesy* to pojęcia pokrewne w dziedzinie informatyki. Oba reprezentują sekwencje instrukcji, które muszą być wykonywane w określonej kolejności. Instrukcje w oddzielnych wątkach lub procesach można jednak wykonać równolegle.

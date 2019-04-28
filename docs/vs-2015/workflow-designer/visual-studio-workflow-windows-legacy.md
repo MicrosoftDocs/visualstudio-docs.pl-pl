@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0036c861638c4a0d5d2b7de4500eb00368efe447
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62857545"
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Okna przepływów pracy programu Visual Studio (starsza wersja)
 Starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] dostarczone przez [!INCLUDE[vs2010](../includes/vs2010-md.md)] może służyć do obiektu docelowego [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Starsza wersja projektanta jest projektanta wizualnego, który służy do tworzenia przepływu pracy. Można przeciągnąć działania z **przybornika** projektu powierzchni i ma je skonfigurować. Jako [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okna edytora zajmuje obszaru okno główne, używane przez inne [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okna edytora. Nazwa przepływu pracy jest wyświetlana w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pasek tytułu okna.  

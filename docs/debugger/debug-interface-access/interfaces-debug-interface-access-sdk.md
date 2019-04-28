@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7f60f4b9018f5b2fff9a5426c28dba40177d9ae9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840694"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)
 Metody są wymieniane alfabetycznie w ramach każdego interfejsu w tabeli treści i na stronie interfejsu w Vtable kolejności.

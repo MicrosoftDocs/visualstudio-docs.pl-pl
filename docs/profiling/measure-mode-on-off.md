@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd3eaf1df585ac9c95355c0677934bee1ba3c09a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830827"
 ---
 # <a name="measure-mode-onoff"></a>Tryb pomiarowy wł. / wył.
 Za pomocą tego narzędzia, należy dokładnie mierzyć długość czasu na osi czasu. Aby włączyć tryb miary, kliknij przycisk miary (który zawiera ikonę linijki), a następnie przeciągnij na osi czasu. Podczas przeciągania Zwróć uwagę, że w obszarze poniżej wskaźnik jest wyróżniony na żółto i czas, który pojawia się na pasku narzędzi po prawej stronie przycisku. Ta wartość jest obliczana dynamicznie podczas przeciągania, dzięki czemu można natychmiast zobaczyć, jak długo trwa określonego zdarzenia. Po zwolnieniu przycisku myszy wartość czasu pozostaje widoczna.

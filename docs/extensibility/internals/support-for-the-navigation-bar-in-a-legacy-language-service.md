@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: eccbf178b3515cd23695d899749beb478e942ff7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62858115"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Obsługa paska nawigacyjnego w starszej wersji usługi językowej
 Pasek nawigacyjny u góry widoku edytora Wyświetla typy i elementy członkowskie w pliku. Typy są wyświetlane na liście rozwijanej po lewej stronie, a elementy członkowskie są wyświetlane w prawo rozwijanej. Gdy użytkownik wybierze typ, karetkę jest umieszczany w pierwszym wierszu tego typu. Gdy użytkownik wybierze element członkowski, karetkę jest umieszczany w definicji elementu członkowskiego. Pola listy rozwijanej, są aktualizowane zgodnie z bieżącym położeniem karetki.

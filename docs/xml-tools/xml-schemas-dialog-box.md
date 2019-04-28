@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f5323582bfe945bc031b9fd02fcf96bb615bcceb
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57524926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807948"
 ---
-# <a name="xml-schemas-dialog-box"></a>Okno dialogowe schematy XML
+# <a name="xml-schemas-dialog-box"></a>Schematy XML, okno dialogowe
 
 **Schematów XML** okno dialogowe służy do wybierania które schematy XML schematu definicji języka (XSD) do skojarzenia z dokumentu XML. Wybierz schemat z pamięci podręcznej schematów lub określ schemat, który nie znajduje się w pamięci podręcznej. Wybrane schematy są traktowane jako część zestawu schematu. Zestaw schematu jest używany dla funkcji IntelliSense, a także Walidacja dokumentów XML.
 

@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e734a500d12c15022421383743c1fe1f45794d1b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852583"
 ---
 # <a name="debugging-preparation-windows-services"></a>Przygotowanie debugowania: Usługi systemu Windows
 Usługa Windows to program, który działa w tle w ramach programu Microsoft Windows. Przykłady obejmują usługi Telnet i usługi Czas Windows, która aktualizuje widoczne zegar komputera. Usługa Windows nie można uruchamiać z poziomu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; musi być uruchamiane w kontekście Menedżera sterowania usługami. Aby uzyskać więcej informacji, zobacz [tworzenia usług Windows](/dotnet/framework/windows-services/how-to-create-windows-services), [debugowanie aplikacji usług Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications), i [aplikacji usług Windows](/dotnet/framework/windows-services/index).

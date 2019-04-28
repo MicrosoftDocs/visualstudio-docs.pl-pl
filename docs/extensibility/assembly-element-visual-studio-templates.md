@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5caa0804ae4d90a23ae59195d2e610653437babe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843548"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly — element (szablony Visual Studio)
 Określa informacje o zestawie używany w tym szablonie, aby dodać odwołanie do tego zestawu do projektów.

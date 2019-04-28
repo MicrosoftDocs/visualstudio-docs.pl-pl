@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a54b95130479a2f8091c3618ac32e48c261e5e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 9f6ccc0284f89891ff686e456abdcccb1b5296e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821588"
 ---
 # <a name="use-the-task-list"></a>Korzystanie z listy zadań
 
@@ -83,6 +83,9 @@ Aby utworzyć niestandardowy token:
 4. W **priorytet** listy rozwijanej wybierz domyślny priorytet dla nowego tokenu.
 
 5. Wybierz **Dodaj**.
+
+> [!TIP]
+> **Dodaj** przycisk staje się dostępny po podaniu nazwy. Należy wprowadzić nazwę przed kliknięciem przycisku **Dodaj**.
 
 ### <a name="c-todo-comments"></a>Komentarze C++ TODO
 

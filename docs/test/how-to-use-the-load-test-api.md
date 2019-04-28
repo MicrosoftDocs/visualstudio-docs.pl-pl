@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 47707e0430d51a754f7e458ebf68e08124c1e7b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821499"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Instrukcje: Użyj interfejsu API testu obciążeniowego
 

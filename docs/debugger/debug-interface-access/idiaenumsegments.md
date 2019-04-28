@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 255c55dff0dab0c7b36f5029de9e688db949a1fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833431"
 ---
 # <a name="idiaenumsegments"></a>IDiaEnumSegments
 Wylicza różnych segmentów znajdujących się w źródle danych.

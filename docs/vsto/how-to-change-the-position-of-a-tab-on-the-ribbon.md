@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 512dfda8c95ecd56fe44eb6878e6abc0d942a782
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826735"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Instrukcje: Zmiana położenia zakładki na Wstążce
   Można zmienić kolejność niestandardowych kart na Wstążce za pomocą **Edotor kolekcji zakładek**. Można określić położenie niestandardowych kart przed lub po wbudowanej karcie na Wstążce. Wbudowana karty to karta, która jest już na Wstążce aplikacji Microsoft Office. Na przykład **danych** karty to karta wbudowana w programie Excel.

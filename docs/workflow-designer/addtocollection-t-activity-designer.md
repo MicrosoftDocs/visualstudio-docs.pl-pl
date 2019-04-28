@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7e339e2639d85f89d4110c36710ab9c19e0fe333
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842088"
 ---
 # <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T > Projektant działań
 
@@ -46,6 +46,6 @@ W poniższej tabeli przedstawiono <xref:System.Activities.Statements.AddToCollec
 
 - [Kolekcja](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T > Projektant działań](../workflow-designer/addtocollection-t-activity-designer.md)
-- [ClearCollection\<T >](../workflow-designer/clearcollection-t-activity-designer.md)
-- [ExistsInCollection\<T >](../workflow-designer/existsincollection-t-activity-designer.md)
+- [ClearCollection\<T>](../workflow-designer/clearcollection-t-activity-designer.md)
+- [ExistsInCollection\<T>](../workflow-designer/existsincollection-t-activity-designer.md)
 - [RemoveFromCollection\<T>](../workflow-designer/removefromcollection-t-activity-designer.md)

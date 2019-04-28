@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2fb4d0dfaeb944700757c9ceec222dbd62dab9dd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850685"
 ---
 # <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Błąd: Debugowanie w trybie mieszanym jest obsługiwane tylko w przypadku korzystania z programu Microsoft .NET Framework 2.0 lub nowszej wersji
 Aby debugować kod mieszany natywnych i zarządzanych, konieczne jest posiadanie [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wersji 2.0, 3.0 lub nowszej. 3.5 lub 4.0. Debugowanie w trybie mieszanym z wcześniejszymi wersjami programu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] nie jest obsługiwane.

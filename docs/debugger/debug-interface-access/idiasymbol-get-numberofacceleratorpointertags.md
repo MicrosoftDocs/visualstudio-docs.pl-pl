@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 283533b20614ea727be620669ea5ab66cf00e5ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62835777"
 ---
 # <a name="idiasymbolgetnumberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
 Zwraca liczbę znaczników wskaźnika akceleratora w funkcji skrótową, C++ AMP.
@@ -30,7 +30,7 @@ HRESULT get_numberOfAcceleratorPointerTags(
 #### <a name="parameters"></a>Parametry
  `count`
 
-[out] Wskaźnik do `DWORD` przechowuje wskaźnik tagi liczba akceleratora w funkcji skrótową, C++ AMP.
+[out] Wskaźnik do `DWORD` przechowuje liczbę akceleratora tagów wskaźnika w C++ funkcji klasy zastępczej AMP.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.

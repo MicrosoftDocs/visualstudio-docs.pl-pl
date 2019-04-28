@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2938da8f5f24c5c60cfe8d09423be886de1d0c86
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843855"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Dodawanie kontrolera menu do paska narzędzi
 W tym przewodniku opiera się na [dodać pasek narzędzi do okna narzędzi](../extensibility/adding-a-toolbar-to-a-tool-window.md) instruktażu przedstawiono sposób dodawania kontrolera menu do paska narzędzi okna narzędzia. Kroki opisane w tym miejscu można zastosować także do narzędzi, który jest tworzony w [dodać pasek narzędzi](../extensibility/adding-a-toolbar.md) wskazówki.

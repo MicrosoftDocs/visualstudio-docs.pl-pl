@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bfe4578b4896c137f3bcef8418c5dc0cafd70798
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910663"
 ---
 # <a name="add-directories-to-the-add-new-item-dialog-box"></a>Dodawanie katalogów do okna dialogowego Dodaj nowy element
 Poniższy przykład kodu pokazuje, jak zarejestrować nowy zestaw katalogów **Dodaj nowy element** okno dialogowe. Katalogi dla **Dodaj nowy element** okno dialogowe różnią się dla każdego projektu. W związku z tym, katalogi są zarejestrowane w obszarze **projektów** podklucza, znaleziono w **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects**.
@@ -50,7 +50,7 @@ NoRemove Projects
  `SortPriority` Wartość określa priorytet sortowania.
 
 ## <a name="add-items-to-an-existing-project"></a>Dodaj elementy do istniejącego projektu
- Można również dodać elementy do istniejącego projektu. Na przykład w przypadku [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projektu, można dodać elementów do  *\<główny > \Program Files\Microsoft Visual Studio\VC #\CSharpProjectItems\LocalProjectItems* folderu. W tym przypadku `%GUID_Project%` to identyfikator GUID projektu C# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).
+ Można również dodać elementy do istniejącego projektu. Na przykład w przypadku [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projektu, można dodać elementów do  *\<główny > \Program Files\Microsoft Visual Studio\VC#\CSharpProjectItems\LocalProjectItems* folderu. W tym przypadku `%GUID_Project%` to identyfikator GUID projektu C# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).
 
  Można także rozszerzyć istniejący projekt, Programując podtypu projektu. Za pomocą podtypem projektu można rozszerzyć projektu bez konieczności pisania nowych typów projektów. Aby uzyskać więcej informacji na temat podtypy projektów, zobacz [podtypy projektów](../../extensibility/internals/project-subtypes.md).
 

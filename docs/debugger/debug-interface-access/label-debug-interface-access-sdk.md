@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b445c5f8be55d5290feb1318a3b937980a3e5c06
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834344"
 ---
 # <a name="label-debug-interface-access-sdk"></a>Etykieta (Zestaw SDK dostępu do interfejsu debugowania)
 Lokalizacja w kodzie programu jest identyfikowane za pomocą `SymTagLabel` symboli.

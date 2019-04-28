@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fc0c61b766b6f93fd1321b15861000d7c628f124
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850401"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>Błąd: Serwer internetowy nie został poprawnie skonfigurowany
 

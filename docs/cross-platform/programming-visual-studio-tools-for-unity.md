@@ -11,11 +11,11 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 0811445e2dcf985aef7b6449ff3fb86c5ac9a1c8
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818218"
 ---
 # <a name="program-visual-studio-tools-for-unity"></a>Programowanie za pomocą narzędzi Visual Studio Tools for Unity
 W tej sekcji znajdziesz przykłady dotyczące korzystania z programu Visual Studio Tools dla interfejsu API aparatu Unity.
@@ -24,7 +24,7 @@ W tej sekcji znajdziesz przykłady dotyczące korzystania z programu Visual Stud
  Poniżej przedstawiono kilka przykładów, które pokazują, jak można użyć programu Visual Studio Tools dla interfejsów API aparatu Unity.
 
 ### <a name="customize-project-files-created-by-vstu"></a>Dostosowywanie plików projektu utworzonych za pomocą rozszerzenia VSTU
- Visual Studio Tools for Unity zapewnia wywołanie zwrotne stylu aparatu Unity w trakcie Generowanie pliku projektu. Aby dowiedzieć się, jak zmodyfikować plik projektu w każdym przypadku, gdy zostanie ponownie wygenerowany, zobacz [przykład: generowanie pliku projektu](../cross-platform/customize-project-files-created-by-vstu.md).
+ Visual Studio Tools for Unity zapewnia wywołanie zwrotne stylu aparatu Unity w trakcie Generowanie pliku projektu. Aby dowiedzieć się, jak zmodyfikować plik projektu w każdym przypadku, gdy zostanie ponownie wygenerowany, zobacz [przykładu: Generowanie pliku projektu](../cross-platform/customize-project-files-created-by-vstu.md).
 
 ### <a name="share-the-unity-log-callback-with-vstu"></a>Udostępnianie wywołania zwrotnego dziennika środowiska Unity za pomocą rozszerzenia VSTU
- Visual Studio Tools for Unity rejestruje wywołanie zwrotne dziennika przy użyciu aparatu Unity, aby móc przesyłać strumieniowo jego konsoli w programie Visual Studio. Edytor skryptów również zarejestrować wywołanie zwrotne dziennika przy użyciu aparatu Unity, wywołanie zwrotne w narzędziach VSTU może zakłócać go. Aby dowiedzieć się, jak można udostępnić wywołania zwrotnego dziennika środowiska Unity za pomocą rozszerzenia VSTU, zobacz [przykład: wywołanie zwrotne dziennika](../cross-platform/share-the-unity-log-callback-with-vstu.md).
+ Visual Studio Tools for Unity rejestruje wywołanie zwrotne dziennika przy użyciu aparatu Unity, aby móc przesyłać strumieniowo jego konsoli w programie Visual Studio. Edytor skryptów również zarejestrować wywołanie zwrotne dziennika przy użyciu aparatu Unity, wywołanie zwrotne w narzędziach VSTU może zakłócać go. Aby dowiedzieć się, jak można udostępnić wywołania zwrotnego dziennika środowiska Unity za pomocą rozszerzenia VSTU, zobacz [przykładu: Wywołanie zwrotne dziennika](../cross-platform/share-the-unity-log-callback-with-vstu.md).

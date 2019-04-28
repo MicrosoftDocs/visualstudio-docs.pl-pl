@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0365c253626546d824459c580fdf2be1b87ed4ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829085"
 ---
 # <a name="idiaframedatagetsystemexceptionhandling"></a>IDiaFrameData::get_systemExceptionHandling
 Pobiera flagę wskazującą, czy system obsługi wyjątków jest aktywna.
@@ -41,7 +41,7 @@ HRESULT get_systemExceptionHandling ( 
 ## <a name="remarks"></a>Uwagi
  Obsługa wyjątków system jest bardziej znany jako strukturalna Obsługa wyjątków.
 
- Aby określić, jeśli obsługa wyjątków języka C++ jest aktywna, należy wywołać [idiaframedata::get_cplusplusexceptionhandling —](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) metody.
+ Aby ustalić, czy C++ obsługi wyjątków jest aktywna, wywołaj [idiaframedata::get_cplusplusexceptionhandling —](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) metody.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

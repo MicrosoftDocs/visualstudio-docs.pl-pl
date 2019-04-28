@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 9d188729b68f8086da62d40ca28fc29945c8be7f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58152239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840060"
 ---
 # <a name="textdocumentarray-structure"></a>Struktura TEXT_DOCUMENT_ARRAY
 Tablica [interfejs IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md) obiektów. Elementy członkowskie są przydzielane przy użyciu CoTaskMemAlloc.  

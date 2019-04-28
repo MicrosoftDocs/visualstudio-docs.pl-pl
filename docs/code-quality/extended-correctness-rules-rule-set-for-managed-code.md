@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 19dec66e4f281af37a0ef66a114b9c26b48ce163
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816637"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Rozszerzony zestaw reguł poprawności dla zarządzanego kodu
 Reguły poprawności firmy Microsoft z rozszerzony zestaw reguł maksymalizuje błędy użycia logiki i struktury, które są zgłaszane przez analizę kodu. Dodatkowy nacisk jest kładziony na określone scenariusze, takie jak współdziałanie COM i aplikacji mobilnych. Należy rozważyć dołączenie tego zestawu, jeśli jeden z tych scenariuszy dotyczy projektu lub w celu znalezienia dodatkowych problemów w projekcie reguł.

@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849314"
 ---
-# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Przewodnik: Debugowanie błędów renderowania spowodowanych cieniowaniem
+# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Przewodnik: debugowanie błędów renderowania spowodowanych cieniowaniem
 W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostyki grafiki do zbadania obiekt, który jest niepoprawnie kolorowe z powodu usterki programu do cieniowania.
 
  W tym instruktażu przedstawiono sposób:

@@ -8,11 +8,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: 9685d1621f0e81adbbb034c250974b7bc9b36993
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822764"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Konwencje dotyczące generowania, kompilowania i nazywania w Microsoft Fakes
 

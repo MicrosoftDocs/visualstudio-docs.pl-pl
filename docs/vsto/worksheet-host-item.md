@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e4a5287648d515d1aca340ab55d5f21b494610b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814734"
 ---
 # <a name="worksheet-host-item"></a>Element hosta arkusza
   <xref:Microsoft.Office.Tools.Excel.Worksheet> Hosta elementu to typ, który rozszerza <xref:Microsoft.Office.Interop.Excel.Worksheet> typu na podstawie podstawowego zestawu międzyoperacyjnego dla programu Excel. <xref:Microsoft.Office.Tools.Excel.Worksheet> Element hosta zawiera wszystkie właściwości, metody i zdarzenia jako <xref:Microsoft.Office.Interop.Excel.Worksheet> obiektu, ale również udostępnia dodatkowe zdarzenia i działa jako kontener dla formantów hosta i kontrolek formularzy Windows Forms.

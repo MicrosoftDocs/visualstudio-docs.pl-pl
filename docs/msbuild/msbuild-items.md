@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e7000e8a95dbe115e5afe853c9dd55a797d23ec3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842308"
 ---
 # <a name="msbuild-items"></a>Elementy programu MSBuild
 Elementy programu MSBuild to wejścia do systemu kompilacji i zazwyczaj reprezentują pliki (pliki zostały określone w `Include` atrybutu). Elementy są grupowane w typy elementów na podstawie ich nazw elementu. Typy elementów są nazywane listy elementów, które mogą być używane jako parametry dla zadań. Zadania umożliwiają wartości elementu wykonaj kroki procesu kompilacji.

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dd56fc50dda1dcbc7eee01ebca8f1e789a839851
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822992"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Tworzenie wielu projektów wykonywane równolegle za pomocą narzędzia MSBuild
 Można użyć programu MSBuild do kompilacji wielu projektów przez uruchomienie ich równolegle. Aby uruchomić kompilacje równolegle, należy użyć następujących ustawień na komputerze z wieloma procesorami lub procesorem o wielu rdzeniach:
@@ -43,7 +43,7 @@ msbuild.exe myproj.proj -maxcpucount:3
 ```
 
 ## <a name="buildinparallel-task-parameter"></a>Parametr zadania BuildInParallel
-`BuildInParallel` to opcjonalny parametr typu boolean w zadaniu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Gdy `BuildInParallel` ustawiono `true` (jego wartość domyślna to `false`), wiele procesów roboczych są generowane w celu kompilacji tak wielu projektów w tym samym czasie jak to możliwe. Do poprawnego działania przełącznik `-maxcpucount` musi być ustawiony na wartość większą niż 1, a system musi posiadać co najmniej dwa procesory lub procesor dwurdzeniowy.
+`BuildInParallel` to opcjonalny parametr typu boolean na [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zadania. Gdy `BuildInParallel` ustawiono `true` (jego wartość domyślna to `false`), wiele procesów roboczych są generowane w celu kompilacji tak wielu projektów w tym samym czasie jak to możliwe. Do poprawnego działania przełącznik `-maxcpucount` musi być ustawiony na wartość większą niż 1, a system musi posiadać co najmniej dwa procesory lub procesor dwurdzeniowy.
 
 Oto przykład, pobrany z *microsoft.common.targets*, jak ustawić `BuildInParallel` parametru.
 

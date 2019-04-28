@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3e10c76d40efefe28decd9efd554e928ffea20c5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834014"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Przewodnik: Profil aplikacji programu SharePoint
   Ten poradnik pokazuje jak używać narzędzi profilowania w programie Visual Studio w celu zoptymalizowania wydajności aplikacji programu SharePoint. Przykładowa aplikacja jest zawierający pętli bezczynności, który obniża wydajność odbiorcę zdarzeń funkcji odbiorcy zdarzeń funkcji programu SharePoint. Profilera Visual Studio umożliwia znalezienie i wyeliminować najbardziej kosztowne (najwolniejsze wykonanie) części projektu, znany także jako *ścieżka aktywna*.

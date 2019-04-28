@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6e60c314a6886831758f403402958cfe97c4a4fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855427"
 ---
 # <a name="using-the-workflow-designer"></a>Używanie projektanta przepływu pracy
 W tej sekcji szczegółowo opisuje sposób tworzenia nowych działań i projektów przepływu pracy przy użyciu wbudowanych projektantów i wyrażenie edytor, który jest obsługiwany przez kilka Projektanci działań.  
@@ -41,5 +41,5 @@ W tej sekcji szczegółowo opisuje sposób tworzenia nowych działań i projekt�
  [Instrukcje: Używanie projektanta importów](../workflow-designer/how-to-use-the-imports-designer.md)  
  Pokazuje, jak wprowadzić przestrzeni nazw dla typów używanych w wyrażeniach utworzonych przez użytkownika.  
   
- [Instrukcje: Użyj do stron nadrzędnych](../workflow-designer/how-to-use-breadcrumb-navigation.md)  
+ [Instrukcje: Używanie nawigacji za pomocą linków do stron nadrzędnych](../workflow-designer/how-to-use-breadcrumb-navigation.md)  
  Pokazuje, jak przechodzić między działaniami.

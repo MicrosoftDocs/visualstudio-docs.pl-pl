@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fc3ec9052a9d912e5563e4db1f8afc8d9daf9d6e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843635"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly — element (rozszerzenie Kreatora szablonów programu Visual Studio)
 Określa nazwę lub silna nazwa zestawu, który implementuje `IWizard` interfejsu.

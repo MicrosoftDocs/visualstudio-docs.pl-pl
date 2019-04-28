@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d37a028fb5af099484d81374e52cfd12af727f94
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847541"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Instrukcje: Ustawianie nazw wątków w kodzie natywnym
 Nazwy wątków jest możliwe w dowolnej wersji programu Visual Studio. Wątek nazewnictwa jest przydatny do identyfikowania wątków zainteresowanie **wątków** okna podczas debugowania uruchomionego procesu. Posiadanie uznane o silnych nazwach wątków przydatne może być również podczas wykonywania po zakończeniu działania debugowania za pomocą inspekcji zrzutu awaryjnego i analizowania wydajności przechwytuje przy użyciu różnych narzędzi.

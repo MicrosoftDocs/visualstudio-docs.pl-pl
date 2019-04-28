@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4051a02de6a046621e62c21b4d2399b5a2703cb8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895195"
 ---
 # <a name="vsgdbg-class"></a>VsgDbg — Klasa
 Reprezentuje interfejs dla programistyczną kontrolę składnika w aplikacji, diagnostyki grafiki.

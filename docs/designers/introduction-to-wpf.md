@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: d15f0e8e5c5cbdac5a130804977adf90385adfe1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893926"
 ---
 # <a name="wpf-overview"></a>Omówienie podsystemu WPF
 

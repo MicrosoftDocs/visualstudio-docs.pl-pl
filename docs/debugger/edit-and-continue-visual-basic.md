@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f73b67ac4268c04dfa9ff7ab020891623f528f9b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851252"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Edytuj i kontynuuj (Visual Basic)
 Edytuj i Kontynuuj jest funkcją, aby uzyskać [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] debugowania, która umożliwia zmianę kodu, podczas wykonywania w trybie przerwania. Po zastosowaniu edycji kodu można wznowić wykonywania kodu za pomocą nowego edycji w miejscu i zobaczyć efekt.

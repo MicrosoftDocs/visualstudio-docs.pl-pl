@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b5dfbeb3c45e05c93554aae9b17a42c265408bc3
-ms.sourcegitcommit: f17e3afa5c324595afccf15a8a69df8c33b873d5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58658882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839039"
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints, element
 VisibilityConstraints, element określa statyczne widoczność grupy poleceń i paski narzędzi. Widoczność najpierw jest kontrolowana przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE) bez załadowania pakietu VSPackage.

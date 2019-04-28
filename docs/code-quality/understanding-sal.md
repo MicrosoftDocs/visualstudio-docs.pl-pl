@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f79796d186f5a365c37a8e24a3e523aba7ceb72
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: f306e0a30dc8faa8f961cb7096a31a049547a70e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820409"
 ---
 # <a name="understanding-sal"></a>Poznanie SAL
 
@@ -110,9 +110,9 @@ Ta implementacja zawiera typowych błędów wyłączona po drugim. Na szczęści
 
 #### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Aby użyć narzędzia analizy programu Visual Studio code i SAL
 
-1.  W programie Visual Studio Otwórz projekt C++, który zawiera adnotacji SAL.
+1. W programie Visual Studio Otwórz projekt C++, który zawiera adnotacji SAL.
 
-2.  Na pasku menu wybierz **kompilacji**, **Uruchom analizę kodu dla rozwiązania**.
+2. Na pasku menu wybierz **kompilacji**, **Uruchom analizę kodu dla rozwiązania**.
 
      Należy wziąć pod uwagę \_w\_ przykładzie w tej sekcji. To ostrzeżenie jest wyświetlane, po uruchomieniu analizy kodu na nim:
 
@@ -122,15 +122,15 @@ Ta implementacja zawiera typowych błędów wyłączona po drugim. Na szczęści
 
 `_In_` Adnotacja wskazuje, że:
 
--   Parametr musi być prawidłowy i nie zostaną zmodyfikowane.
+- Parametr musi być prawidłowy i nie zostaną zmodyfikowane.
 
--   Funkcja odczyta tylko z jednym elementem buforu.
+- Funkcja odczyta tylko z jednym elementem buforu.
 
--   Obiekt wywołujący, musisz podać buforu i zainicjować go.
+- Obiekt wywołujący, musisz podać buforu i zainicjować go.
 
--   `_In_` Określa "read-only". Powszechnym błędem jest do zastosowania `_In_` do parametru, którą powinien posiadać `_Inout_` adnotacji zamiast tego.
+- `_In_` Określa "read-only". Powszechnym błędem jest do zastosowania `_In_` do parametru, którą powinien posiadać `_Inout_` adnotacji zamiast tego.
 
--   `_In_` jest dozwolone, ale jest ignorowana przez analizator na nie będącego wskaźnikiem wartości skalarnych.
+- `_In_` jest dozwolone, ale jest ignorowana przez analizator na nie będącego wskaźnikiem wartości skalarnych.
 
 ```cpp
 void InCallee(_In_ int *pInt)

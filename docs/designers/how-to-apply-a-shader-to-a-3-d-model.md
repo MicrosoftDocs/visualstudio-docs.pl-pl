@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 896cc39ae3e9f53d96a30f6485c40afc8259e270
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62845052"
 ---
 # <a name="how-to-apply-a-shader-to-a-3d-model"></a>Instrukcje: Stosowanie cieniowania do modelu 3D
 

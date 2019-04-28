@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d3ae795b464d8a693371b1ebb9238a897debbf02
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892627"
 ---
 # <a name="xaml-errors-and-warnings"></a>Błędy i ostrzeżenia XAML
 

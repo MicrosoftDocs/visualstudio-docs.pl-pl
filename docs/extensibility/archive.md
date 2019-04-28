@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 05911005a0ad64687b4381684609c0aecb9005f2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721891"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843621"
 ---
 # <a name="archive"></a>Archiwum
 Ta sekcja zawiera dyskusje technologii rozszerzalności programu Visual Studio, nadal są obsługiwane, ale mają zastąpienie technologie, które są nowsze.
