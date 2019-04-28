@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: eede5f76a9689f79e769d23572a1d92f3ae3a867
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891907"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Dodawanie menu skrótów w oknie narzędzi
 W tym przewodniku umieszcza menu skrótów w oknie narzędzi. Menu podręczne jest menu, który jest wyświetlany, gdy użytkownik kliknie prawym przyciskiem myszy przycisk, pole tekstowe lub tło okna. Polecenia menu skrótów zachowują się taka sama jak poleceń na inne menu i paski narzędzi. Aby zapewnić obsługę menu skrótów, określ ją w *vsct* plików i wyświetl ją w odpowiedzi na prawym przyciskiem myszy kursora myszy.

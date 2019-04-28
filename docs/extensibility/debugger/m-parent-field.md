@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7de88b41615e2d42a13d8b5ee78b564409a79022
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62889575"
 ---
 # <a name="mparent-field"></a>pole m_parent
 

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5749875a440a3122a06b81ae9d721e75ded6202c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862020"
 ---
 # <a name="command-routing-in-vspackages"></a>Routing poleceń w pakietach VSPackage
 Polecenie odbywa się w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] na podstawie kontekstu, w którym jest wykonywany. Z kontekstu początkową na zewnątrz jest kierowany do kontekstu globalnego.

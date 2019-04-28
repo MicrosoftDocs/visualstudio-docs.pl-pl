@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5f07d4e2dc52ff05d67ec18d7f40f1119db582c0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894011"
 ---
 # <a name="get-started-with-wpf"></a>Rozpoczynanie pracy z aparatem WPF
 
@@ -21,7 +21,7 @@ Windows Presentation Foundation (WPF) to struktura interfejsu użytkownika, któ
 
 ## <a name="where-should-i-start"></a>Gdzie mam zacząć?
 
-|Podmiot|Artykuły|
+|Subject|Artykuły|
 |-|-|
 |Chcę, aby przejść bezpośrednio...|[Przewodnik: Mój pierwszy aplikacji klasycznej WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
 |Chcę porównanie narzędzi do projektowania XAML...|[Projektowanie XAML w programie Visual Studio i Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md)|

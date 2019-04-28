@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 504c985bd276a891b76e8c9b2a7c0ef51c3a490a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576731"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Identyfikatory nie powinny zawierać nazw typów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "54785123"
 
  Każdy token dyskretnych nazwę parametru lub elementu członkowskiego jest porównywany następujące nazwy typów danych specyficznych dla języka, bez uwzględniania wielkości liter:
 
-- wartość logiczna
+- Bool
 
 - WChar
 
@@ -72,7 +72,7 @@ ms.locfileid: "54785123"
 
 - Podpisany
 
-- float
+- Float
 
 - float32
 
@@ -126,7 +126,7 @@ ms.locfileid: "54785123"
 
 - Wartość dziesiętna
 
-- Identyfikator GUID
+- Guid
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  **Jeśli uruchamiany dla parametru:**

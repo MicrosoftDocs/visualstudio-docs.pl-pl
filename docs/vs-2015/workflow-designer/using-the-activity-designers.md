@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ce8d963d56a6ad79562db22ab0e59885730c24b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62858430"
 ---
 # <a name="using-the-activity-designers"></a>Używanie projektantów działań
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] Obejmuje pewną liczbę działań dostarczane przez system, które można użyć podczas tworzenia swojej działalności i przepływów pracy. W tej sekcji opisano kategorie działań dostarczane przez system i ich projektantów, które są dostępne. Tematy dotyczące poszczególnych działań i ich odpowiednich projektantów w ramach każdej z tych kategorii opisano, co te działania są i wytyczne dotyczące sposobu ich używania.  

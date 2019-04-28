@@ -9,11 +9,11 @@ manager: justinclareburt
 ms.workload:
 - willbrown
 ms.openlocfilehash: 1014d76473511df9b73cae371e5e5dea2364f8b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862824"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Instrukcje: Dzięki rozszerzenia jest zgodny z programu Visual Studio 2017 i Visual Studio 2015
 

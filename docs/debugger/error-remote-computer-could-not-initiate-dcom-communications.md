@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ceb796b3a4b3cbc2b239a09ac8c173e746f194c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850908"
 ---
 # <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>Błąd: Zdalny komputer nie mógł zainicjować komunikacji DCOM
 Wystąpił błąd modelu DCOM podczas próby komunikacji z komputera lokalnego komputera zdalnego. Komputer lokalny to komputer, na którym jest

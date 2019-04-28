@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 595f44403d5dc8062bea86504a74ed0d7e0ee565
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893965"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Instrukcje: Tworzenie podstawowego cieniowania Lamberta
 
@@ -53,7 +53,7 @@ Przed rozpoczęciem upewnij się, że **właściwości** okna i **przybornika** 
 ## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: Stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Instrukcje: Eksport cieniowania](../designers/how-to-export-a-shader.md)
-- [Instrukcje: Tworzenie podstawowego modułu cieniowanie Phong](../designers/how-to-create-a-basic-phong-shader.md)
+- [Instrukcje: eksportowanie cieniowania](../designers/how-to-export-a-shader.md)
+- [Instrukcje: tworzenie podstawowego cieniowania Phonga](../designers/how-to-create-a-basic-phong-shader.md)
 - [Projektant cieniowania](../designers/shader-designer.md)
 - [Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cf7b693c058cd69ab2dcb79be787cf5a16d8f8a0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864026"
 ---
 # <a name="taskscheduler-class---internal-members"></a>TaskScheduler, klasa — składowe wewnętrzne
 W tym artykule opisano wewnętrznych członków <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> klasy, które pomagają implementacji niestandardowego debugera. Aby uzyskać ogólne informacje dotyczące tej klasy, zobacz <xref:System.Threading.Tasks.TaskScheduler> artykule dotyczącym struktury.

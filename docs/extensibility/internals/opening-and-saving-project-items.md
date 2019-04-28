@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7ca83cb6d2913e0c0a91f4a6e874640ae57c7708
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860010"
 ---
 # <a name="opening-and-saving-project-items"></a>Otwieranie i zapisywanie elementów projektu
 Po dodaniu nowych typów projektów, należy zarządzać otwieranie i zapisywanie plików projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE). W poniższych tematach omówiono różne podejścia do otwierania i zapisywania plików.
@@ -31,15 +31,15 @@ Po dodaniu nowych typów projektów, należy zarządzać otwieranie i zapisywani
 
  Zapewnia szczegółowe, krok po kroku wyjaśnienie sposobu obsługi IDE **Otwórz za pomocą** polecenie otwarcia pliku, który ma kilka wybór standardowych edytorów monitowania.
 
-- [Instrukcje: Otwieranie edytorów specyficznych dla projektu](../../extensibility/how-to-open-project-specific-editors.md)
+- [Instrukcje: otwieranie edytorów specyficznych dla projektu](../../extensibility/how-to-open-project-specific-editors.md)
 
  Instrukcje krok po kroku do określania, że pliki określonego typu projektu powinien zostać otwarty przy użyciu edytora specyficznych dla projektu.
 
-- [Instrukcje: Otwieranie standardowych edytorów](../../extensibility/how-to-open-standard-editors.md)
+- [Instrukcje: otwieranie standardowych edytorów](../../extensibility/how-to-open-standard-editors.md)
 
  Instrukcje krok po kroku do określania sposobu włączania IDE otworzyć Edytor standardowy dla plików typu projektu.
 
-- [Instrukcje: Otwieranie edytorów dla otwartych dokumentów](../../extensibility/how-to-open-editors-for-open-documents.md)
+- [Instrukcje: otwieranie edytorów dla otwartych dokumentów](../../extensibility/how-to-open-editors-for-open-documents.md)
 
  Instrukcje krok po kroku można otworzyć edytora specyficznych dla projektu, dla otwartego pliku.
 

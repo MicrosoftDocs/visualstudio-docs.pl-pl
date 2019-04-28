@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 511beae100529f0db555eca0a8ddb995d7a335d1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62853513"
 ---
 # <a name="udtkind"></a>UdtKind
 W tym artykule opisano różne typy zdefiniowane przez użytkownika (UDT).

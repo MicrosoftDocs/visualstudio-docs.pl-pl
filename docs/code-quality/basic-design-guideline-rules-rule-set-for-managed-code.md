@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7c2a9570eeae6d9545bb91f7f1ed0c57df3a9c92
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62571371"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Podstawowe reguły zasad projektowania dla zarządzanego kodu
 Można użyć reguły podstawowe reguły wskazówek dotyczących projektowania firmy Microsoft, równa się koncentrować na łatwiejsze do zrozumienia i użycia kodu. Powinien być dołączany do tej reguły, jeśli projekt zawiera kod biblioteki lub jeśli chcesz wymuszać najlepsze rozwiązania dla kodu, który jest łatwa w obsłudze.
