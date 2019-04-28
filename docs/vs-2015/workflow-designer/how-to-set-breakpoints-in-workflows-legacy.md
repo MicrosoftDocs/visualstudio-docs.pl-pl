@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 92950247420f49c4a5295d25aec2c8697efb3534
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cec06813890523e604234ccefdbcd7d1de31653
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444186"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Instrukcje: Ustawianie punktów przerwania w przepływach pracy (starsza wersja)
 W tym temacie opisano sposób ustawiania punktów przerwania [!INCLUDE[wf](../includes/wf-md.md)] aplikacje tworzyć zawartość przy użyciu starszego [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] podczas Twojej [!INCLUDE[wf2](../includes/wf2-md.md)] aplikację pod kątem albo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -39,7 +39,7 @@ W tym temacie opisano sposób ustawiania punktów przerwania [!INCLUDE[wf](../in
      Ta opcja umożliwia również ustawić nowy punkt przerwania podczas debugowania, gdy debuger zatrzymuje się w punkcie przerwania.  
   
     > [!NOTE]
-    >  Ustawianie punktów przerwania w przepływach pracy, wywoływane jest nieobsługiwana.  
+    > Ustawianie punktów przerwania w przepływach pracy, wywoływane jest nieobsługiwana.  
   
 ### <a name="to-set-a-breakpoint-using-the-new-breakpoint-option-on-the-debug-menu"></a>Aby ustawić punkt przerwania przy użyciu opcji nowy punkt przerwania w menu Debugowanie  
   
@@ -52,7 +52,7 @@ W tym temacie opisano sposób ustawiania punktów przerwania [!INCLUDE[wf](../in
 3. Określ nazwę działania w **funkcja** pola tekstowego przy użyciu następującej składni: `QualifiedActivityId[:[FullClassName][:InstanceId]]`.  
   
     > [!NOTE]
-    >  Opcjonalnie zamiast przy użyciu nazwy działania w **funkcja** pole tekstowe, można ustawić punktu przerwania, określając ścieżkę bezwzględną działania przepływu pracy. Załóżmy, że masz rozwiązaniu usprawniającym przepływ pracy o nazwie **WorkflowConsoleApplication1** i przepływu pracy w rozwiązaniu o nazwie **Workflow1** używającej działania o nazwie **Delay1**. Możesz użyć nazwy działania **Delay1** lub określ ścieżkę jako **Delay1:WorkflowConsoleApplication1.Workflow1** lub **Delay1:WorkflowConsoleApplication1.Workflow1: { 6614886A-608E-412B-BF98-99FF1559DDDF}**.  
+    > Opcjonalnie zamiast przy użyciu nazwy działania w **funkcja** pole tekstowe, można ustawić punktu przerwania, określając ścieżkę bezwzględną działania przepływu pracy. Załóżmy, że masz rozwiązaniu usprawniającym przepływ pracy o nazwie **WorkflowConsoleApplication1** i przepływu pracy w rozwiązaniu o nazwie **Workflow1** używającej działania o nazwie **Delay1**. Możesz użyć nazwy działania **Delay1** lub określ ścieżkę jako **Delay1:WorkflowConsoleApplication1.Workflow1** lub **Delay1:WorkflowConsoleApplication1.Workflow1: { 6614886A-608E-412B-BF98-99FF1559DDDF}**.  
   
 4. Wybierz **IntelliSense użyj** pole wyboru, aby sprawdzić nazwę funkcji.  
   

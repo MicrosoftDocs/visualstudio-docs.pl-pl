@@ -23,12 +23,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ad6fa498fe9b89854f7fe3c74af9636b5b59e47f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 56a11c24ad8a38cc837659ac063987573c0ba492
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444309"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Przewodnik: Debugowanie formularza internetowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60053822"
 Kroki opisane w tym instruktażu pokazano, jak można debugować [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacja internetowa, znany także jako formularz sieci Web. Pokazuje jak uruchomić i zatrzymać wykonywanie, ustawiać punkty przerwania i sprawdzić zmienne w **Obejrzyj** okna.  
   
 > [!NOTE]
->  Do przeprowadzenia tego instruktażu, musi mieć uprawnienia administratora na komputerze serwera. Domyślnie [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu, aspnet_wp.exe lub w3wp.exe, działa jako [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu. Aby debugować [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], musi mieć uprawnienia administratora na komputerze, gdzie [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , uruchomi go. Aby uzyskać więcej informacji, zobacz [wymagania systemowe](../debugger/aspnet-debugging-system-requirements.md).  
+> Do przeprowadzenia tego instruktażu, musi mieć uprawnienia administratora na komputerze serwera. Domyślnie [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu, aspnet_wp.exe lub w3wp.exe, działa jako [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu. Aby debugować [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], musi mieć uprawnienia administratora na komputerze, gdzie [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , uruchomi go. Aby uzyskać więcej informacji, zobacz [wymagania systemowe](../debugger/aspnet-debugging-system-requirements.md).  
   
  Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   

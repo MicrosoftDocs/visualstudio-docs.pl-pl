@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3950540edb7ab17bafa5ed5c9e7b0f3660ad436a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a27dac0c82b2784eac84b174f5cb67719093aace
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444634"
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>Instrukcje: Tworzenie biblioteki projektanta działań
 Niestandardowi Projektanci działań umożliwiają tworzenie interfejsu użytkownika dla standardowego lub niestandardowego działania. Kontrolowania złożoności interfejsu użytkownika i mieć możliwość utworzenia więcej niż jeden projektanta działań dla działania. Ten scenariusz umożliwia tworzenie projektantów, które są dostosowane do wielu odbiorców.  
@@ -36,14 +36,14 @@ Niestandardowi Projektanci działań umożliwiają tworzenie interfejsu użytkow
 7. W **rozwiązania** polu, wpisz nazwę opisową dla danego rozwiązania, a następnie kliknij przycisk **OK**.  
   
     > [!NOTE]
-    >  Jeśli chcesz dodać aplikację konsoli przepływu pracy do istniejącego rozwiązania, otwórz rozwiązanie w [!INCLUDE[vs2010](../includes/vs2010-md.md)], kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań**i wybierz **Dodaj**, a następnie **Nowy projekt...** Aby otworzyć **nowy projekt** okno dialogowe. Należy postępować zgodnie z powyższym opisem w tej procedurze.  
+    > Jeśli chcesz dodać aplikację konsoli przepływu pracy do istniejącego rozwiązania, otwórz rozwiązanie w [!INCLUDE[vs2010](../includes/vs2010-md.md)], kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań**i wybierz **Dodaj**, a następnie **Nowy projekt...** Aby otworzyć **nowy projekt** okno dialogowe. Należy postępować zgodnie z powyższym opisem w tej procedurze.  
   
 8. Szablon projektu tworzy definicji działania projektanta XAML i kodem pliku implementacji w kodzie źródłowym. [!INCLUDE[wfd1](../includes/wfd1-md.md)] Otwiera i wyświetla kanwy dla projektanta działań.  
   
 9. Przeciągnij [!INCLUDE[avalon1](../includes/avalon1-md.md)] kontrolki z **przybornika** do powierzchni projektu, który z nich korzystać w swojej niestandardowego projektanta działań.  Na przykład sposób implementacji niestandardowego projektanta działań zobacz [jak: Tworzenie niestandardowego projektanta działań](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
   
     > [!WARNING]
-    >  Niestandardowi Projektanci działań może służyć do niestandardowych działań, jak również jak w przypadku domyślnej [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]działań.  
+    > Niestandardowi Projektanci działań może służyć do niestandardowych działań, jak również jak w przypadku domyślnej [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]działań.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie projektu przepływu pracy](../workflow-designer/creating-a-workflow-project.md)

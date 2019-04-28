@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5cc00d56b0abf02f99c7ab320ab0353d1b4b2317
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447142"
 ---
 # <a name="office-development-samples"></a>Office development ― przykłady
   Visual Studio zawiera przykładowe aplikacje, które pokazują, jak utworzyć rozwiązania pakietu Office za pomocą programu Microsoft Office developer tools. Kod w tych przykładach przedstawiono składnię, struktury i techniki używane do tworzenia rozwiązań dla pakietu Office.

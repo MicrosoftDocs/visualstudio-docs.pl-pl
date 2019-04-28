@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eb5a9e6806c76cbb072090c35444d936ce50bb79
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b589050c156e4c3d1e322bfa5996364016cbe38e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446732"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Przewodnik: Debugowanie szablonu tekstowego uzyskującego dostęp do modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60087121"
 W przypadku modyfikowania lub dodać szablonów tekstowych w rozwiązaniu języka dotyczącego określonej domeny mogą wystąpić błędy, gdy aparat przekształcenia szablonu do kodu źródłowego lub kompiluje wygenerowanego kodu. Następujące Instruktaż pokazuje niektóre rzeczy, które można zrobić, aby debugowanie szablonu tekstowego.  
   
 > [!NOTE]
->  Aby uzyskać więcej informacji na temat tekstu, szablony ogólnie rzecz biorąc, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md). Aby uzyskać więcej informacji na temat debugowania szablonów tekstowych, patrz [instruktażu: Debugowanie szablonu tekstowego](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
+> Aby uzyskać więcej informacji na temat tekstu, szablony ogólnie rzecz biorąc, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md). Aby uzyskać więcej informacji na temat debugowania szablonów tekstowych, patrz [instruktażu: Debugowanie szablonu tekstowego](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
   
 ## <a name="creating-a-domain-specific-language-solution"></a>Tworzenie rozwiązania języka dotyczącego określonej domeny  
  Ta procedura służy do tworzenia rozwiązania języka dotyczącego określonej domeny, które ma następujące cechy:  
@@ -58,7 +58,7 @@ W przypadku modyfikowania lub dodać szablonów tekstowych w rozwiązaniu język
 1. Zastąp kod w DebugTest.tt następującym kodem:  
   
     > [!NOTE]
-    >  Ten kod zawiera błąd. Błąd są wprowadza w celu jej debugowania.  
+    > Ten kod zawiera błąd. Błąd są wprowadza w celu jej debugowania.  
   
     ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
@@ -122,7 +122,7 @@ W przypadku modyfikowania lub dodać szablonów tekstowych w rozwiązaniu język
 1. Zastąp kod w DebugTest.tt następującym kodem:  
   
     > [!NOTE]
-    >  Ten kod zawiera błąd. Błąd są wprowadza w celu jej debugowania.  
+    > Ten kod zawiera błąd. Błąd są wprowadza w celu jej debugowania.  
   
     ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  

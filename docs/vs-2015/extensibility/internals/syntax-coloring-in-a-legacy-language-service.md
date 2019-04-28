@@ -11,12 +11,12 @@ ms.assetid: f65ff67e-8c20-497a-bebf-5e2a5b5b012f
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2ee09c334394e363d9621ddec887bd5d83726fba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 59d25c338cb0c7406c533afeceaf3675fbd16e96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441271"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Kolorowanie składni w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60103579"
 Colorizer prostego modelu  
   
 > [!NOTE]
->  Kolorowania usługi jest niezależne od ogólnego [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] mechanizm Kolorowanie tekstu. Aby uzyskać więcej informacji na temat ogólnych [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] mechanizm obsługi, kolorowanie, zobacz [przy użyciu czcionki i kolory](../../extensibility/using-fonts-and-colors.md).  
+> Kolorowania usługi jest niezależne od ogólnego [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] mechanizm Kolorowanie tekstu. Aby uzyskać więcej informacji na temat ogólnych [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] mechanizm obsługi, kolorowanie, zobacz [przy użyciu czcionki i kolory](../../extensibility/using-fonts-and-colors.md).  
   
  Oprócz colorizer usługa językowa może dostarczyć niestandardowe elementy z możliwością kolorowania, które są używane przez Edytor przez reklamy, dostarcza mu niestandardowe elementy z możliwością kolorowania. Można to zrobić poprzez implementację <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> interfejsu na ten sam obiekt, który implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfejsu. Zwraca liczbę niestandardowych elementów z możliwością kolorowania, gdy wywołuje edytora <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> metody, a zwraca pojedynczy element z możliwością kolorowania niestandardowych, gdy wywołuje edytora <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> metody.  
   
@@ -51,7 +51,7 @@ Colorizer prostego modelu
 2. Pakietu VSPackage teraz uzyskania i używania obiektu colorizer w następujący sposób:  
   
     > [!NOTE]
-    >  Pakietów VSPackage, które używają podstawowy edytor nie trzeba uzyskać języka, obiekty colorizer usługi jawnie. Jak najszybciej wystąpienie podstawowy edytor uzyskuje usługi odpowiedni język, wykonuje zadania kolorowanie pokazano poniżej.  
+    > Pakietów VSPackage, które używają podstawowy edytor nie trzeba uzyskać języka, obiekty colorizer usługi jawnie. Jak najszybciej wystąpienie podstawowy edytor uzyskuje usługi odpowiedni język, wykonuje zadania kolorowanie pokazano poniżej.  
   
     1. Uzyskaj obiekt colorizer usługa języka, który implementuje `T:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer`, i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2> interfejsów, wywołując <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> metody na usłudze językowej <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> obiektu.  
   
@@ -62,13 +62,13 @@ Colorizer prostego modelu
     3. Użyj dane kolorowania zwrócony przez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metodę w celu wyświetlenia zaznaczonego tekstu.  
   
 > [!NOTE]
->  Oprócz używania colorizer usługi języka, pakietu VSPackage można również użyć ogólnego przeznaczenia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kolorowania mechanizm tekstu. Aby uzyskać więcej informacji na temat tego mechanizmu, zobacz [przy użyciu czcionki i kolory](../../extensibility/using-fonts-and-colors.md).  
+> Oprócz używania colorizer usługi języka, pakietu VSPackage można również użyć ogólnego przeznaczenia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kolorowania mechanizm tekstu. Aby uzyskać więcej informacji na temat tego mechanizmu, zobacz [przy użyciu czcionki i kolory](../../extensibility/using-fonts-and-colors.md).  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Implementowanie kolorowania składni](../../extensibility/internals/implementing-syntax-coloring.md)  
  W tym artykule omówiono, jak edytor uzyskuje dostęp do, kolorowanie składni i jakie usługa językowa musi Implementowanie obsługi składni kolorowania usługi języka.  
   
- [Instrukcje: Używanie wbudowanych elementów z możliwością kolorowania](../../extensibility/internals/how-to-use-built-in-colorable-items.md)  
+ [Instrukcje: korzystanie z wbudowanych elementów z możliwością kolorowania](../../extensibility/internals/how-to-use-built-in-colorable-items.md)  
  Pokazuje, jak korzystać z wbudowanych elementów z możliwością kolorowania usługi języka.  
   
  [Niestandardowe elementy z możliwością kolorowania](../../extensibility/internals/custom-colorable-items.md)  

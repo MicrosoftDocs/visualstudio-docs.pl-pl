@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1e8f3e5b87879d34ab61f0b50e5e4b91e84933b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c74799daf57ca031c4b3ce6bf76f72e453eeb0b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446544"
 ---
 # <a name="unable-to-attach-to-the-process"></a>Nie można dołączyć do procesu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Nie można dołączyć do procesu. Składnik debugera na serwerze Odebrano odmow
 6. W **dostęp sieciowy: Udostępnianie i model zabezpieczeń dla kont lokalnych** okna dialogowego pole, zmień ustawienie zabezpieczeń lokalnych, aby **klasycznego**i kliknij przycisk **OK**.  
   
     > [!CAUTION]
-    >  Zmiana modelu zabezpieczeń do klasycznego modelu może spowodować nieoczekiwany dostęp do udostępnionych plików i składników DCOM components. W przypadku wprowadzenia tej zmiany użytkownika zdalnego mogą uwierzytelniać za pomocą Twojego konta użytkownika lokalnego, a nie gościa. Jeśli użytkownik zdalny pasuje do nazwy użytkownika i hasło, ten użytkownik będzie można uzyskać dostęp do dowolnego folderu lub udostępnione się obiekt modelu DCOM. Jeśli używasz tego modelu zabezpieczeń, upewnij się, że wszystkie konta użytkowników na komputerze silnych haseł lub konfigurowanie sieci izolowanej wyspie debugowanie i debugować maszyn w celu uniemożliwienia nieupoważnionego dostępu.  
+    > Zmiana modelu zabezpieczeń do klasycznego modelu może spowodować nieoczekiwany dostęp do udostępnionych plików i składników DCOM components. W przypadku wprowadzenia tej zmiany użytkownika zdalnego mogą uwierzytelniać za pomocą Twojego konta użytkownika lokalnego, a nie gościa. Jeśli użytkownik zdalny pasuje do nazwy użytkownika i hasło, ten użytkownik będzie można uzyskać dostęp do dowolnego folderu lub udostępnione się obiekt modelu DCOM. Jeśli używasz tego modelu zabezpieczeń, upewnij się, że wszystkie konta użytkowników na komputerze silnych haseł lub konfigurowanie sieci izolowanej wyspie debugowanie i debugować maszyn w celu uniemożliwienia nieupoważnionego dostępu.  
   
 7. Zamknij wszystkie okna.  
   

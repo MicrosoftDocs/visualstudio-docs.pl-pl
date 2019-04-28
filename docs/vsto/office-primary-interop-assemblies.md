@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 528a57ddf6dd9b193e767a4942d26e43789043c0
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 1f6a8c3ca6c6c4015acc6c8be3914d4c458dfeb0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447092"
 ---
 # <a name="office-primary-interop-assemblies"></a>podstawowe zestawy międzyoperacyjne pakietu Office
 
@@ -84,7 +84,7 @@ W większości przypadków należy dodać odwołania do zestawów PIA, które s�
 Jeśli masz zainstalowane i zarejestrowane zestawy PIA w globalnej pamięci podręcznej, te wersje zestawów są wyświetlane na **COM** karcie **Menadżer odwołań** okno dialogowe. Dodawanie odwołania do tych wersji zespołów, należy unikać, ponieważ istnieją pewne problemy projektowe, które mogą wystąpić podczas korzystania z nich. Na przykład, jeśli zarejestrowano różne wersje zestawów PIA w globalnej pamięci podręcznej zestawów, projekt będzie automatycznie wiązany wersji zestawu, która została zarejestrowana jako ostatnia — nawet jeśli określisz inną wersję zestawu na  **COM** karcie **Menadżer odwołań** okno dialogowe.
 
 > [!NOTE]
->  Niektóre zestawy są automatycznie dodawane do projektu po dodaniu zestawu, który odwołuje się do nich. Na przykład odwołuje się do *zestawów Office.dll* i *Microsoft.Vbe.Interop.dll* zestawy są dodawane automatycznie po dodaniu odwołania do programu Word, Excel, Outlook, Microsoft Forms lub Graph zestawy.
+> Niektóre zestawy są automatycznie dodawane do projektu po dodaniu zestawu, który odwołuje się do nich. Na przykład odwołuje się do *zestawów Office.dll* i *Microsoft.Vbe.Interop.dll* zestawy są dodawane automatycznie po dodaniu odwołania do programu Word, Excel, Outlook, Microsoft Forms lub Graph zestawy.
 
 <a name="pialist"></a>
 

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b4873085a4e4508b40b866eee79e79f624f3c01d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 9f3da13858507a3ff176aaa0a44051674fd5285f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443556"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>Tworzenie modelu łączności danych biznesowych
   Można Tworzenie modelu łączności danych biznesowych (BDC) lub dostosować istniejący model usługi łączności danych biznesowych przy użyciu programu Visual Studio. Każdy projekt programu SharePoint może zawierać tylko jeden model. Aby uzyskać więcej informacji, zobacz [integrowanie danych biznesowych programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -29,7 +29,7 @@ ms.locfileid: "56605734"
  Aby utworzyć nowy model, Utwórz **Model usługi łączności danych biznesowych** projektu lub dodać **Model usługi łączności danych biznesowych** elementu do **pusty projekt programu SharePoint**.
 
 > [!NOTE]
->  Konieczne jest posiadanie [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] zainstalowana na danym komputerze.
+> Konieczne jest posiadanie [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] zainstalowana na danym komputerze.
 
  Visual Studio dodaje folder do projektu. Ten folder zawiera nazwę która jest określona dla **Model usługi łączności danych biznesowych** pozycja **Dodaj nowy element** okno dialogowe. Jeśli tworzysz nową **Model usługi łączności danych biznesowych** projektu, Visual Studio nazwy folderu **BdcModel1**.
 
@@ -47,7 +47,7 @@ ms.locfileid: "56605734"
  Podczas kompilowania projektu programu Visual Studio tworzy zestaw. Upewnij się, że nie należy dodawać innych elementów do projektu, który Dodaj kod, aby zestaw projektu (na przykład: **sekwencyjnego przepływu pracy** elementu lub **składnika Web Part** elementu). Kod dla tego elementu nie będzie działać w przypadku wdrażania rozwiązania, ponieważ pakiet rozwiązania nie kopiuje zestawu do globalnej pamięci podręcznej.  Pakiet rozwiązania wdraża zestaw usługi łączności danych biznesowych tylko na bazę danych w programie SharePoint.
 
 > [!NOTE]
->  Program Visual Studio kopiuje zestawu do obu lokalizacjach na komputerze lokalnym podczas debugowania projektu.
+> Program Visual Studio kopiuje zestawu do obu lokalizacjach na komputerze lokalnym podczas debugowania projektu.
 
 ## <a name="add-an-existing-model"></a>Dodawanie istniejącego modelu
  Można zaimportować modelu, który został utworzony przy użyciu innych narzędzi, takich jak SharePoint Designer. Można także zaimportować istniejący model do projektu w następujących sytuacjach:

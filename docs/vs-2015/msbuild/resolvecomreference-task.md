@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 830d2d7d077b65e205536e1b10579fe64633b21a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: fc9ca34d8b8afc01787db594ffba5a1a36ec190e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439349"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ Przyjmuje listę nazw bibliotek typów lub plików .tlb i jest rozpoznawana jako
 |`WrapperTool`|Opcjonalny element metadanych.<br /><br /> Określa narzędzie otoki, który jest używany do generowania otoki zestawu dla tego typu biblioteki. Jeśli ten element metadanych nie jest określona, zadanie używa domyślnego narzędzia otoki "tlbimp". Dostępne są następujące opcje dostępności, bez uwzględniania wielkości liter typelibs:<br /><br /> -   `Primary`: To narzędzie otoki użyć już wygenerowany podstawowy zestaw międzyoperacyjny dla składnika COM. Korzystając z tego narzędzia otoki, nie należy określać katalog wyjściowy otoki ponieważ który spowoduje, że zadanie nie powiedzie się.<br />-   `TLBImp`: To narzędzie otoki wygenerować zestaw międzyoperacyjny dla składnika COM.<br />-   `AXImp`: To narzędzie otoki wygenerować zestaw międzyoperacyjny dla formantu ActiveX.|  
   
 > [!NOTE]
->  Więcej informacji podasz do unikatowego identyfikowania bibliotekę typów, tym większa możliwość, że zadanie zostanie rozwiązany do prawidłowego pliku na dysku.  
+> Więcej informacji podasz do unikatowego identyfikowania bibliotekę typów, tym większa możliwość, że zadanie zostanie rozwiązany do prawidłowego pliku na dysku.  
   
 ## <a name="remarks"></a>Uwagi  
  Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [klasa podstawowa zadania](../msbuild/task-base-class.md).  

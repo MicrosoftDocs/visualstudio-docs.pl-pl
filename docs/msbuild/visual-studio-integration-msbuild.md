@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc915136f64000da94132c0d10e153a206ed1ec0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8d396d56aea8be3724078223261a3b6eb8835692
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445380"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integracja programu Visual Studio (MSBuild)
 Visual Studio zawiera [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do ładowania i kompilacji projektów zarządzanych. Ponieważ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] jest odpowiedzialna za projekt, niemal każdy projekt w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] formatu może być pomyślnie używany w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], nawet jeśli projekt został utworzony przez inne narzędzie i ma niestandardowy proces kompilacji.
@@ -63,7 +63,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ```
 
 > [!NOTE]
->  Niektóre nazwy typu elementu są charakterystyczne dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , ale nie są wymienione na tej liście rozwijanej.
+> Niektóre nazwy typu elementu są charakterystyczne dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , ale nie są wymienione na tej liście rozwijanej.
 
 ## <a name="in-process-compilers"></a>Wewnątrz – procesowe
  Jeśli to możliwe, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] spróbuje użyć wewnątrzprocesowej wersji z [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kompilatora w celu zwiększenia wydajności. (Nie dotyczy [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].) Aby to działało poprawnie muszą być spełnione następujące warunki:

@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6e30fd7500c0f9dd216b630ea79ebfb79c964fab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0d8ba826e332141a3ee53a70185f0e8e18e465f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443220"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uprawnienia użytkownika i program Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,14 +27,14 @@ ms.locfileid: "60101889"
 Ze względów bezpieczeństwa należy uruchamiać Visual Studio jako zwykły użytkownik w każdym przypadku, gdy jest to możliwe.
 
 > [!WARNING]
->  Należy również pamiętać, aby nie kompilować, uruchamiać lub debugować żadnego rozwiązania Visual Studio, które nie pochodzi od zaufanej osoby lub z zaufanej lokalizacji.
+> Należy również pamiętać, aby nie kompilować, uruchamiać lub debugować żadnego rozwiązania Visual Studio, które nie pochodzi od zaufanej osoby lub z zaufanej lokalizacji.
 
  Jako zwykły użytkownik możesz zrobić w środowisku IDE programu Visual Studio prawie wszystko, ale musisz mieć uprawnienia administratora, aby wykonać następujące zadania:
 
 |Obszar|Zadanie|Więcej informacji|
 |----------|----------|--------------------------|
 |Instalacja|Instalowanie programu Visual Studio.|[Instalowanie programu Visual Studio 2015](../install/install-visual-studio-2015.md)|
-||Aktualizacja z wersji próbnej Visual Studio.|[Instrukcje: Uaktualnienie z wersji próbnej programu Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
+||Aktualizacja z wersji próbnej Visual Studio.|[Instrukcje: aktualizacja z wersji próbnej wersji programu Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
 ||Instalowanie, aktualizowanie lub usuwanie lokalnej zawartości Pomocy.|[Instalowanie zawartości lokalnej i zarządzanie nią](../ide/install-and-manage-local-content.md)|
 |Typy aplikacji|Tworzenie rozwiązań dla programu SharePoint 2010.|[Wymagania związane z opracowywaniem rozwiązań SharePoint](http://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
 ||Pobieranie licencji deweloperskiej dla [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].|[Uzyskaj licencję dewelopera (aplikacje Windows Store)](http://go.microsoft.com/fwlink/?LinkID=241313)|

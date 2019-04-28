@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5549bd0047b38ef8f0dff5fa420d4b5ce0ae4ce9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790264"
 ---
 # <a name="find-in-files-command"></a>Znajdź w plikach — Polecenie
 Wyszukiwanie plików za pomocą podzestawu opcji dostępnych w **Znajdź w plikach** karcie **Znajdź i Zamień** okna.

@@ -11,12 +11,12 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c328b8522913dcb8095c09a031b2a2c80f58030
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0fc24dc76e59a04b9485a71ba4dff44e0c7ba64d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442805"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Tworzenie i Uruchamianie testów jednostkowych dla aplikacji Store w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60086770"
 Narzędzia do testów jednostkowych programu Visual Studio 2012 Express for Windows 8 są przeznaczone do wsparcia programistów oraz zespołów, które włączają testowanie jednostek w swoich praktyk tworzenia oprogramowania. Testy jednostkowe pozwalają deweloperom i testerom wydajnego i łatwego w utrzymaniu sposób sprawdzić występowanie błędów logicznych w metodach klas w projektach Visual C#, Visual Basic i Visual C++.
 
 > [!NOTE]
->  W tematach w tej sekcji opisano funkcje programu Visual Studio 2012 Express for Windows 8. Visual Studio Ultimate, Premium programu VS i VS Professional zapewnia dodatkowe funkcje testów jednostkowych.
+> W tematach w tej sekcji opisano funkcje programu Visual Studio 2012 Express for Windows 8. Visual Studio Ultimate, Premium programu VS i VS Professional zapewnia dodatkowe funkcje testów jednostkowych.
 >
 > - W programie VS Ultimate, Premium programu VS i VS Professional można użyć dowolnego środowiska testów jednostkowych innych firm lub otwartego źródła został utworzony karty dodatku dla programu Microsoft Test Explorer. Można również analizować i wyświetlanie informacji o pokryciu kodu dla testów za pomocą programu VS Ultimate i Premium programu VS.
 >   - W programie VS Ultimate można uruchomić testów po każdej kompilacji. Można również użyć Microsoft Fakes framework izolacji dla kodu zarządzanego skoncentrować się testy na własny kod, zastępując kod testu systemu i innych firm funkcjonalność.

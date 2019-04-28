@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e99e07f2f39ef4e01a2b79e5a391c32f6510e3a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: bb72f491046d16f028561c19995a27a6ab64a830
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59232596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557323"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Konwencje nazewnictwa platformy .NET dla wtyczki EditorConfig
 
-Konwencje nazewnictwa dotyczą nazewnictwa elementów kodu, takich jak klasy, właściwości i metody. Na przykład można określić, czy publiczne elementy Członkowskie musi być napisane wielkimi literami oraz że metod asynchronicznych może kończyć się "Async". Te zasady można wymusić, określając je w [pliku .editorconfig](../ide/create-portable-custom-editor-options.md). Naruszeń zasady nazewnictwa są wyświetlane w **lista błędów** lub jako sugestię w obszarze nazwy, w zależności od ważności można wybrać dla tej reguły. Nie ma potrzeby do skompilowania projektu, aby można było wyświetlić naruszenia.
+Konwencje nazewnictwa dotyczą nazewnictwa elementów kodu, takich jak klasy, właściwości i metody. Na przykład można określić, czy publiczne elementy Członkowskie musi być napisane wielkimi literami lub że metod asynchronicznych może kończyć się "Async". Te zasady można wymusić, określając je w [pliku .editorconfig](../ide/create-portable-custom-editor-options.md). Naruszeń zasady nazewnictwa są wyświetlane w **lista błędów** lub jako sugestię w obszarze nazwy, w zależności od ważności można wybrać dla tej reguły. Nie ma potrzeby do skompilowania projektu, aby można było wyświetlić naruszenia.
 
-Konwencje nazewnictwa powinny być uporządkowane od najbardziej specyficznych do najmniej specyficznych w *.editorconfig* pliku. Pierwszą regułę napotkano, które mogą być stosowane jest tylko reguła, która jest stosowana.
+Konwencje nazewnictwa powinny być uporządkowane od najbardziej specyficznych do najmniej specyficznych dla w pliku EditorConfig. Pierwszą regułę napotkano, które mogą być stosowane jest tylko reguła, która jest stosowana. Jednak w przypadku wielu reguł *właściwości* o takiej samej nazwie ostatnio odnaleziono pierwszeństwo ma właściwość o tej nazwie. Aby uzyskać więcej informacji, zobacz [plików hierarchii i pierwszeństwo](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
 
 Dla każdego konwencji nazewnictwa należy określić symbole, których on obowiązuje, styl nazewnictwa i ważność wymuszania Konwencji, za pomocą właściwości opisanych poniżej. Kolejność właściwości nie jest ważna.
 

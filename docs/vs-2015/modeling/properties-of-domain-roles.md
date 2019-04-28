@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2e9cef8726ad690508948ac0a9878df1bd85c96e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b78c409a761a98439cbbbfdf088e052eca745f32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444468"
 ---
 # <a name="properties-of-domain-roles"></a>Właściwości ról w domenie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ W poniższej tabeli przedstawiono właściwości są skojarzone z rolą domeny. 
 |Wyświetlana nazwa właściwości|Nazwa która jest wyświetlana w wygenerowanym projektancie dla właściwości wygenerowanej roli.|Skorygowaną wartość właściwości nazwy właściwości.|  
   
 > [!NOTE]
->  Wartością domyślną nazwę wyświetlaną opiera się na wartości właściwości skojarzonej, wstawiając spacje przed znakiem każdego wielkie litery, który jest poprzedzony znakiem małe i który nie następuje inny znak wielkie litery.  
+> Wartością domyślną nazwę wyświetlaną opiera się na wartości właściwości skojarzonej, wstawiając spacje przed znakiem każdego wielkie litery, który jest poprzedzony znakiem małe i który nie następuje inny znak wielkie litery.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Właściwości relacji domeny](../modeling/properties-of-domain-relationships.md)

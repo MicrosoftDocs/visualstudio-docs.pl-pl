@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56a3f450cd41db34596c6fd5bbe9b07292aa5070
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e4dbaf445e52ba6a15ad07dfa061dbd3aef7c7fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442760"
 ---
 # <a name="save-and-export-performance-tools-data"></a>Zapisywanie i eksportowanie danych dotyczących narzędzi wydajności
 W tym artykule opisano, jak zapisywanie i eksportowanie plików danych dotyczących wydajności.
@@ -47,7 +47,7 @@ W tym artykule opisano, jak zapisywanie i eksportowanie plików danych dotycząc
  Możesz wyeksportować jeden lub więcej widoków raportu z. *vsp* pliku lub. *vsps* profilowania plik danych jako rozdzielany przecinkami lub plik XML. Można filtrować dane w oknie Widok raportu, możesz wyeksportować lub możesz wyeksportować raport widoki całego pliku danych z **Eksplorator wydajności** okna.
 
 > [!NOTE]
->  Można również skopiuj i Wklej wybrane wiersze z okna widoku raportu jako wartości rozdzielane tabulatorami.
+> Można również skopiuj i Wklej wybrane wiersze z okna widoku raportu jako wartości rozdzielane tabulatorami.
 
 #### <a name="to-export-performance-reports-from-the-performance-explorer-window"></a>Aby eksportować raporty dotyczące wydajności w oknie Eksploratora wydajności
 

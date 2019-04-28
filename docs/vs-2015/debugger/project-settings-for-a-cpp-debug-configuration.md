@@ -112,12 +112,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ea5740b66187f97cacb43edfc1ea0d77d6cb8d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 87b8913a95203d082a76e8b18a92d2f509cace16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446174"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Ustawienia projektu dla konfiguracji debugowania w C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,7 +125,7 @@ ms.locfileid: "54799191"
 Możesz zmienić ustawienia projektu dla konfiguracji debugowania języka Visual C++ lub C w **stron właściwości** okno dialogowe, zgodnie z opisem w [jak: Ustaw wartość Debug i Release konfiguracje](../debugger/how-to-set-debug-and-release-configurations.md). W poniższej tabeli przedstawiono, gdzie można znaleźć ustawienia związane z debugerem w **stron właściwości** okno dialogowe.  
   
 > [!WARNING]
->  Ustawienia projektu debugowania w **właściwości konfiguracji/debugowanie** kategorii dla aplikacji Windows Store i składników napisanych w języku C++ są różne. Zobacz [uruchomić sesję debugowania (VB, C#, C++ i XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) w Centrum deweloperów Windows.  
+> Ustawienia projektu debugowania w **właściwości konfiguracji/debugowanie** kategorii dla aplikacji Windows Store i składników napisanych w języku C++ są różne. Zobacz [uruchomić sesję debugowania (VB, C#, C++ i XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) w Centrum deweloperów Windows.  
   
  Określ, który debuger do użycia w **debuger do uruchomienia** pola listy. Wybór ten wpłynie właściwości, które są widoczne.  
   

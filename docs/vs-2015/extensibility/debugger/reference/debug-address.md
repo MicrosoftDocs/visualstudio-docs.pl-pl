@@ -12,12 +12,12 @@ ms.assetid: 79f5e765-9aac-4b6e-82ef-bed88095e9ba
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f9057b8c19c1e1763b29fe40fc77bfc0be064159
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d001d29433573fedde3b4310f989667538b4b69c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444959"
 ---
 # <a name="debugaddress"></a>DEBUG_ADDRESS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ public struct DEBUG_ADDRESS {
  Token, który identyfikuje klasy lub typ tego adresu.  
   
 > [!NOTE]
->  Ta wartość jest specyficzne dla dostawcy symboli i dlatego nie ma znaczenia ogólne innych niż jako identyfikator dla typu klasy.  
+> Ta wartość jest specyficzne dla dostawcy symboli i dlatego nie ma znaczenia ogólne innych niż jako identyfikator dla typu klasy.  
   
  addr  
  A [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struktury, która zawiera sumę struktur, które opisują typy poszczególnych adresów. Wartość `addr`.`dwKind` pochodzi z [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) wyliczenia, w którym wyjaśniono, jak interpretować Unii.  
@@ -63,7 +63,7 @@ public struct DEBUG_ADDRESS {
 ## <a name="remarks"></a>Uwagi  
  Ta struktura jest przekazywany do [getaddress —](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) metodę, aby wypełnić.  
   
- **Ostrzeżenie [tylko w języku C++]**  
+ **Ostrzeżenie [C++ tylko]**  
   
  Jeśli `addr.dwKind` jest `ADDRESS_KIND_METADATA_LOCAL` i, jeśli `addr.addr.addrLocal.pLocal` nie jest wartością null, a następnie należy wywołać `Release` tokenu wskaźnika:  
   

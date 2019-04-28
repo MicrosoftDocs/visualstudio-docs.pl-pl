@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3562b74939fe9207ddcf10e98bd0b4d0d7d1bead
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e2b2d4ee5feb0bed25ad41931f151e81db6edd3c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442597"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Krok 3. Przypisywanie losowej ikony do każdej etykiety
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Jeśli ikony w każdej grze są wyświetlane w tych samych komórkach, gra nie n
      [!code-vb[VbExpressTutorial4Step2_3_4#14](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#14)]  
   
     > [!NOTE]
-    >  Używane są nazwy „iconLabel” (etykieta ikony) i „control” (formant), ponieważ są opisowe. Można zamiast nich użyć innych nazw, a kod zadziała dokładnie tak samo, o ile zmieni się nazwę w każdej instrukcji wewnątrz pętli.  
+    > Używane są nazwy „iconLabel” (etykieta ikony) i „control” (formant), ponieważ są opisowe. Można zamiast nich użyć innych nazw, a kod zadziała dokładnie tak samo, o ile zmieni się nazwę w każdej instrukcji wewnątrz pętli.  
   
      `AssignIconsToSquares()` Metoda iteruje przez każdy formant etykiety w TableLayoutPanel i wykonuje te same instrukcje dla każdego z nich. Te instrukcje pobierają losową ikonę z listy, dodanej w [krok 2: Dodawanie obiektu losowego i listy ikon](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). (Dlatego dołączono dwie z każdej ikony na liście, aby istniała para ikon przypisanych do losowych formantów etykiet.)  
   
@@ -71,7 +71,7 @@ Gra w dopasowywanie z losowymi ikonami
      Ikony są teraz widoczne, ponieważ nie zostały ukryte. Aby ukryć je przed graczem, możesz ustawić każdej etykiety `Forecolor` właściwość sam kolor jak kolor jego `BackColor` właściwości.  
   
     > [!TIP]
-    >  Innym sposobem na ukrycie formantów, takich jak etykiety, jest ustalenie ich **Visible** właściwość `False`.  
+    > Innym sposobem na ukrycie formantów, takich jak etykiety, jest ustalenie ich **Visible** właściwość `False`.  
   
 6. Aby ukryć ikony, należy zatrzymać program i usunąć znaki komentarza dla zakomentowanego wiersza kodu wewnątrz `For Each` pętli.  
   

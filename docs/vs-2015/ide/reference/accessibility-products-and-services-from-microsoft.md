@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae91a057dc983044caa9544030571a8be34deef7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8d1991ad3b99e3ab46e6ebea527ff839ef960ac7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441095"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkty i usługi firmy Microsoft związane z ułatwieniami dostępu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Firma Microsoft poświęca wiele uwagi ułatwiając wszystkim użytkownikom korz
 - [Aby uzyskać więcej informacji](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)  
   
 > [!NOTE]
->  Informacje w tym rozdziale mogą dotyczyć wyłącznie użytkowników, którzy uzyskali licencje na produkty firmy Microsoft w Stanach Zjednoczonych. Jeśli użytkownik uzyskał produkt poza Stanami Zjednoczonymi, może użyć karty informacji o przedstawicielstwach dołączonej do pakietu oprogramowania lub odwiedzić [witryny sieci Web Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) listę Microsoft pomocy technicznej numerów telefonów i adresów. Można się skontaktować z oddziałem firmy Microsoft i sprawdzić, czy produkty i usługi opisane w tym rozdziale są dostępne na danym terenie. Informacje o ułatwieniach dostępu są dostępne również w innych językach, między innymi w japońskim i francuskim.  
+> Informacje w tym rozdziale mogą dotyczyć wyłącznie użytkowników, którzy uzyskali licencje na produkty firmy Microsoft w Stanach Zjednoczonych. Jeśli użytkownik uzyskał produkt poza Stanami Zjednoczonymi, może użyć karty informacji o przedstawicielstwach dołączonej do pakietu oprogramowania lub odwiedzić [witryny sieci Web Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) listę Microsoft pomocy technicznej numerów telefonów i adresów. Można się skontaktować z oddziałem firmy Microsoft i sprawdzić, czy produkty i usługi opisane w tym rozdziale są dostępne na danym terenie. Informacje o ułatwieniach dostępu są dostępne również w innych językach, między innymi w japońskim i francuskim.  
   
 ## <a name="windows"></a> Funkcje ułatwień dostępu systemu Windows  
  System operacyjny Windows ma wiele wbudowanych funkcji ułatwień dostępu, są przydatne dla osób mających trudności z pisaniem na klawiaturze lub używaniem myszy, niewidomych lub niedowidzących lub niesłyszących lub twardych z przesłuchania. Funkcje są instalowane podczas instalacji. Aby uzyskać więcej informacji o tych funkcjach, zobacz temat Pomocy programu Windows i [witryny sieci Web Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).  

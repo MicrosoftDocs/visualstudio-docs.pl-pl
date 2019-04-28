@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f24b86f51d658ea2f228f1e72d18394fcba4b47b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a83207633d60348d664e3c9337b48288bb6c1baf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447039"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Zmiany wymagane w celu uruchamiania projektów pakietu Office, które przenoszonych do oprogramowania .NET Framework 4 lub .NET Framework 4.5
   Jeśli platforma docelowa projektu pakietu Office jest zmieniana na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszy z wcześniejszej wersji programu .NET Framework, należy wykonać następujące zadania, aby upewnić się, że rozwiązanie można uruchomić na komputerze deweloperskim i na komputerach użytkowników końcowych:
@@ -44,7 +44,7 @@ ms.locfileid: "60072822"
 2. W obszarze **właściwości** węzeł (C#) lub **mój projekt** węzeł (Visual Basic), kliknij dwukrotnie plik kodu AssemblyInfo, aby otworzyć go w edytorze kodu.
 
     > [!NOTE]
-    >  W projektach języka Visual Basic, należy kliknąć przycisk **Pokaż wszystkie pliki** znajdujący się w **Eksploratora rozwiązań** aby zobaczyć plik kodu AssemblyInfo.
+    > W projektach języka Visual Basic, należy kliknąć przycisk **Pokaż wszystkie pliki** znajdujący się w **Eksploratora rozwiązań** aby zobaczyć plik kodu AssemblyInfo.
 
 3. Znajdź <xref:System.Security.SecurityTransparentAttribute> i usuń go z pliku lub komentarz dotyczący działanie.
 

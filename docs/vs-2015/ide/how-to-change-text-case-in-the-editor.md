@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c6743f7466f1b6d2e17c1dbf9da523c87e63e77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0beb86e3cb939a33a6b0fab3922b2a31a88a3307
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439254"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Instrukcje: Zmiana wielkości liter w edytorze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60060322"
 Polecenia menu lub skróty klawiaturowe umożliwia konwertowanie wielkości zaznaczony tekst na wielkie litery, lub na małe litery.  
   
 > [!NOTE]
->  Polecenia menu, zostanie wyświetlony i okien dialogowych mogą różnić się od tych opisanych w **pomocy** w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Polecenia menu, zostanie wyświetlony i okien dialogowych mogą różnić się od tych opisanych w **pomocy** w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="procedure"></a>Procedura  
   
@@ -42,7 +42,7 @@ Polecenia menu lub skróty klawiaturowe umożliwia konwertowanie wielkości zazn
      Aby przekonwertować tekst na małe litery, wybierz opcję **wprowadzić małymi**, lub naciśnij **CTRL**+**U**.  
   
     > [!TIP]
-    >  Aby przywrócić poprzednią etykietę case, formatowanie przed wprowadzeniem tej zmiany, wybierz **Cofnij** z **Edytuj** menu.  
+    > Aby przywrócić poprzednią etykietę case, formatowanie przed wprowadzeniem tej zmiany, wybierz **Cofnij** z **Edytuj** menu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dopasowywanie edytora](../ide/customizing-the-editor.md)   

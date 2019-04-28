@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2545db069db73fed59c95b3b4adc576facd51bc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b3517322087c940636be07f50a013fe79307f0b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446715"
 ---
 # <a name="writing-a-t4-text-template"></a>Pisanie szablonu tekstowego T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ Hello!
  Blok tekstu można wstawić w każdym miejscu kodu, gdzie jest dozwolona instrukcja `Write();`.  
   
 > [!NOTE]
->  Osadzenie blok tekstu wewnątrz instrukcji złożonej, takich jak pętli lub warunku, zawsze ujmować w nawiasy klamrowe {...} aby zawierała blok tekstu.  
+> Osadzenie blok tekstu wewnątrz instrukcji złożonej, takich jak pętli lub warunku, zawsze ujmować w nawiasy klamrowe {...} aby zawierała blok tekstu.  
   
 ### <a name="expression-control-blocks"></a>Bloki sterowania wyrażeniami  
  Blok sterowania wyrażeniem oblicza wartość wyrażenia i konwertuje ją na ciąg. Powstały ciąg jest wstawiany do pliku wyjściowego.  

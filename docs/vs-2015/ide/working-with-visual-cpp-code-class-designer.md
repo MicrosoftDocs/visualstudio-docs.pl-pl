@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 836f3485eb923476271d6a2bae7899d66bd67db7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: faf99505c556594ad1281b0341ac1cad9acbae81
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443391"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Praca z kodem Visual C++ (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Projektant klasy Wyświetla powierzchni projektowej o nazwie *diagram klas* zape
 - Element TypeDef  
   
 > [!NOTE]
->  Nie jest taka sama jak diagram klas UML, który można utworzyć w projekcie modelowania. Aby uzyskać więcej informacji, zobacz [diagramów klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md).  
+> Nie jest taka sama jak diagram klas UML, który można utworzyć w projekcie modelowania. Aby uzyskać więcej informacji, zobacz [diagramów klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md).  
   
 ## <a name="troubleshooting-type-resolution-and-display-issues"></a>Rozpoznawanie typu do rozwiązywania problemów i problemów z wyświetlaniem  
   

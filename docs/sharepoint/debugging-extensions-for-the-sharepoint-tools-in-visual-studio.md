@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3340c55b99f9d2507bb129eff689cc1b510843f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e170a5ed703a9bf5aae2e73126de52ecf88e8084
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443521"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Debugowanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio
   Można debugować rozszerzenia narzędzi programu SharePoint w wystąpieniu doświadczalnym lub regularnych wystąpieniach programu Visual Studio. Jeśli potrzebujesz rozwiązać problem zachowania rozszerzenia, możesz zmodyfikować wartości rejestru, aby wyświetlić dodatkowe informacje o błędzie i skonfigurować, jak Visual Studio wykonuje polecenia programu SharePoint.
@@ -102,7 +102,7 @@ ms.locfileid: "60094401"
 3. W **dostępne procesy** wybierz *vssphost.exe*.
 
     > [!NOTE]
-    >  Jeśli vssphost.exe nie ma na liście, należy uruchomić *vssphost4.exe* procesu w wystąpieniu programu Visual Studio, w którym są uruchomione rozszerzenia. Zazwyczaj można to zrobić, wykonując akcję wywołującą Visual Studio, aby połączyć się z witryną programu SharePoint na komputerze deweloperskim. Na przykład programu Visual Studio uruchamia *vssphost4.exe* po rozwinięciu węzła połączenia witryny (węzła, który wyświetla adres URL witryny) w obszarze **połączeń SharePoint** w węźle **Eksploratora serwera**  oknie lub podczas dodawania niektórych elementów projektu programu SharePoint, takich jak **wystąpienie listy** lub **odbiorcy zdarzeń** elementy do projektu programu SharePoint.
+    > Jeśli vssphost.exe nie ma na liście, należy uruchomić *vssphost4.exe* procesu w wystąpieniu programu Visual Studio, w którym są uruchomione rozszerzenia. Zazwyczaj można to zrobić, wykonując akcję wywołującą Visual Studio, aby połączyć się z witryną programu SharePoint na komputerze deweloperskim. Na przykład programu Visual Studio uruchamia *vssphost4.exe* po rozwinięciu węzła połączenia witryny (węzła, który wyświetla adres URL witryny) w obszarze **połączeń SharePoint** w węźle **Eksploratora serwera**  oknie lub podczas dodawania niektórych elementów projektu programu SharePoint, takich jak **wystąpienie listy** lub **odbiorcy zdarzeń** elementy do projektu programu SharePoint.
 
 4. Wybierz **Dołącz** przycisku.
 

@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d5b7e8dbe12f9c57c101c8f877dfcb0c6ee3196f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a37350cf274fbb551326ac96387330b0f3956e7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439700"
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Przewodnik: Wiersza polecenia, profilowania przy użyciu metody Instrumentacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Ten przewodnik przeprowadzi Cię przez profilowanie [!INCLUDE[dnprdnshort](../in
  Instrumentacja jest metody profilowania za pomocą którego specjalnie utworzone wersje profilowanych danych binarnych zawiera funkcje sondy, które zbierają informacje o czasie na wejścia i wyjścia funkcji w moduł instrumentowany. Ponieważ ta metoda profilowania jest bardziej inwazyjne niż próbkowanie, spowoduje naliczenie większej ilości obciążenia. Instrumentowane pliki binarne są również większych niż Debuguj lub zwolnij pliki binarne i nie są przeznaczone do wdrożenia.  
   
 > [!NOTE]
->  Nie wysyłaj instrumentowanych danych binarnych dla klientów. Instrumentowanych danych binarnych mogą zawierać kilka zagrożeń. Pliki binarne obejmują informacje, które ułatwia aplikacji odtwarzania, a także zagrożenia dla bezpieczeństwa.  
+> Nie wysyłaj instrumentowanych danych binarnych dla klientów. Instrumentowanych danych binarnych mogą zawierać kilka zagrożeń. Pliki binarne obejmują informacje, które ułatwia aplikacji odtwarzania, a także zagrożenia dla bezpieczeństwa.  
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-instrumentation-method"></a>Aplikacja ma być profilowana peopletrax — przy użyciu metody Instrumentacji  
   

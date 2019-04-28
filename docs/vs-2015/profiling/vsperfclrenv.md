@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7387f2bc55d00695e85df3b023914e8d6fe9696d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: afee2c56a7f29d50f46c7cbb734bc0297223845c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446691"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,12 +34,12 @@ VsPerfCLREnv [/option]
  Możesz wybrać opcję zależy od tego, której te trzy rodzaje profilowania, należy użyć: próbkowanie, Instrumentacja, lub globalnego. Osobną opcją jest wymagany do uwzględnienia danych o interakcji między warstwami w danych profilowania. W poniższych tabelach opisano składnię dla każdej opcji.  
   
 > [!NOTE]
->  Po zakończeniu profilowania, uruchom **VSPerfCLREnv** z **/ off** lub **/globaloff** możliwość usuwanie zmiennych środowiskowych niezbędnych do profilowania. Aby uzyskać więcej informacji zobacz Opcje polecenia VSPerfCLREnv do ustawienia środowiska Usuń pokazano poniżej.  
+> Po zakończeniu profilowania, uruchom **VSPerfCLREnv** z **/ off** lub **/globaloff** możliwość usuwanie zmiennych środowiskowych niezbędnych do profilowania. Aby uzyskać więcej informacji zobacz Opcje polecenia VSPerfCLREnv do ustawienia środowiska Usuń pokazano poniżej.  
   
  **Opcje polecenia VSPerfCLREnv, w tym dane interakcji między warstwami**  
   
 > [!WARNING]
->  Informacje o profilowaniu interakcji między warstwami można zbierać w programach [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] i [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)], Natomiast obejrzeć takie dane można wyświetlić tylko w [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] i [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
+> Informacje o profilowaniu interakcji między warstwami można zbierać w programach [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] i [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)], Natomiast obejrzeć takie dane można wyświetlić tylko w [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] i [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
   
  Profilowanie interakcji pomiędzy warstwami zawiera dodatkowe informacje na temat zapytań ADO.NET w aplikacjach wielowarstwowych. Dane są zbierane tylko w przypadku wywołania funkcji synchronicznej. Dane interakcji między można dodać do dowolnej profilowania przy użyciu dowolnej metody profilowania.  
   

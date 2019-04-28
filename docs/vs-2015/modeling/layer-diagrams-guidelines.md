@@ -14,12 +14,12 @@ caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 255843682034ab784f8271b2f454a60fdd4a77fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 373b5c8fd108e783123440820b38edf94a272a1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440994"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagramy warstw: Wytyczne dotyczące
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Opis architektury aplikacji na wysokim poziomie, tworząc *diagramy warstw* w pr
  W poniższych krokach przedstawiono omówienie sposobu używania diagramów warstwowych w ramach procesu tworzenia. Kolejnych sekcjach, w tym temacie opisano bardziej szczegółowo o każdym kroku. Jeśli tworzysz nowy projekt, należy pominąć kroki, które odwołują się do istniejącego kodu.  
   
 > [!NOTE]
->  Te kroki są wyświetlane w kolejności przybliżone. Prawdopodobnie warto nakładać się na zadaniach, zmienić kolejność je do potrzeb swojej własnej sytuacji i ich ponowne przeanalizowanie wraz na początku każdej iteracji w projekcie.  
+> Te kroki są wyświetlane w kolejności przybliżone. Prawdopodobnie warto nakładać się na zadaniach, zmienić kolejność je do potrzeb swojej własnej sytuacji i ich ponowne przeanalizowanie wraz na początku każdej iteracji w projekcie.  
   
 1. [Tworzenie diagramu warstwowego](#Create) dla całej aplikacji lub dla warstwy znajdujący się w nim.  
   
@@ -59,7 +59,7 @@ Opis architektury aplikacji na wysokim poziomie, tworząc *diagramy warstw* w pr
  Diagram warstwowy musi zostać utworzona w projekcie modelowania. Możesz dodać nowy diagram warstwowy do istniejącego projektu modelowania, Utwórz nowy projekt modelowania do diagramu warstwowego lub Kopiuj istniejącego diagramu warstwowego w tym samym projekcie modelowania.  
   
 > [!IMPORTANT]
->  Nie dodawać, przeciągnij lub Kopiuj istniejącego diagramu warstwowego z projektu modelowania do innego projektu modelowania lub w innej lokalizacji w rozwiązaniu. Diagram warstwy, które są kopiowane w ten sposób mają te same odwołania, co oryginalny diagram, nawet wtedy, gdy modyfikować diagram. To uniemożliwi uniemożliwić prawidłowe działanie walidacji warstwy i spowodować innych problemów, takich jak brakujące elementy lub inne błędy podczas próby otwarcia diagramu.  
+> Nie dodawać, przeciągnij lub Kopiuj istniejącego diagramu warstwowego z projektu modelowania do innego projektu modelowania lub w innej lokalizacji w rozwiązaniu. Diagram warstwy, które są kopiowane w ten sposób mają te same odwołania, co oryginalny diagram, nawet wtedy, gdy modyfikować diagram. To uniemożliwi uniemożliwić prawidłowe działanie walidacji warstwy i spowodować innych problemów, takich jak brakujące elementy lub inne błędy podczas próby otwarcia diagramu.  
   
  Zobacz [tworzenie diagramów warstw z kodu](../modeling/create-layer-diagrams-from-your-code.md).  
   
@@ -69,7 +69,7 @@ Opis architektury aplikacji na wysokim poziomie, tworząc *diagramy warstw* w pr
  Ogólną wytyczną, nazwa warstwy zgodnie z ich funkcji, na przykład "Prezentacji" lub "Usługi". Jeśli artefakty są ściśle wzajemnie, należy je umieścić w tej samej warstwie. Jeśli artefakty mogą być aktualizowane oddzielnie lub używany w aplikacjach w oddzielnych, umieść je w różnych warstwach. Aby dowiedzieć się więcej na temat wzorców warstwowe, znaleźć wzorce i praktyki [ http://go.microsoft.com/fwlink/?LinkId=145794 ](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 > [!TIP]
->  Brak niektórych rodzajów artefaktów, które można połączyć z warstwy, ale nie obsługują sprawdzania poprawności na podstawie diagramu warstwowego. Aby sprawdzić, czy artefakt obsługuje walidację, otwórz **Eksplorator warstw** zbadanie **obsługuje walidację** właściwości łącza artefaktu. Zobacz [odnajdywanie istniejące zależności między warstwami](#Generate).  
+> Brak niektórych rodzajów artefaktów, które można połączyć z warstwy, ale nie obsługują sprawdzania poprawności na podstawie diagramu warstwowego. Aby sprawdzić, czy artefakt obsługuje walidację, otwórz **Eksplorator warstw** zbadanie **obsługuje walidację** właściwości łącza artefaktu. Zobacz [odnajdywanie istniejące zależności między warstwami](#Generate).  
   
  Podczas aktualizowania nieznanych aplikacji, można również tworzyć mapy kodu. Te diagramy ułatwia odnajdowanie wzorców i zależności, chociaż możesz zapoznać się z kodu. Aby zapoznać się z przestrzeni nazw i klasy, które często dobrze odpowiadają istniejącym warstwom jednak używać Eksploratora rozwiązań. Przypisz te artefakty kodu do warstwy, przeciągając je w Eksploratorze rozwiązań do diagramów warstw. Następnie można użyć diagramów warstwowych, aby ułatwić aktualizowanie kodu i Utrzymaj spójne z projektu.  
   
@@ -85,7 +85,7 @@ Opis architektury aplikacji na wysokim poziomie, tworząc *diagramy warstw* w pr
  Zależność istnieje wszędzie tam, gdzie artefakt, który jest skojarzony z jedną warstwą zawiera odwołanie do artefaktu skojarzonego z inną warstwą. Na przykład klasa w jednej warstwie deklaruje zmienną, która zawiera klasę w innej warstwie. Można sprawdzić istniejące zależności, odtwarzania je.  
   
 > [!NOTE]
->  Zależności nie mogą być odtwarzane dla niektórych rodzajów artefaktów. Na przykład nie zostaną odtworzone żadne zależności z lub do warstwy, która jest połączona z plikiem tekstowym. Aby zobaczyć, które artefakty mają zależności, które można odtwarzać, kliknij prawym przyciskiem myszy jednego lub wielu warstw, a następnie kliknij przycisk **Wyświetl łącza**. W **Eksplorator warstw**, sprawdź **obsługuje walidację** kolumny. Zależności nie będą odtwarzane dla artefaktów, dla których ta kolumna zawiera **False**.  
+> Zależności nie mogą być odtwarzane dla niektórych rodzajów artefaktów. Na przykład nie zostaną odtworzone żadne zależności z lub do warstwy, która jest połączona z plikiem tekstowym. Aby zobaczyć, które artefakty mają zależności, które można odtwarzać, kliknij prawym przyciskiem myszy jednego lub wielu warstw, a następnie kliknij przycisk **Wyświetl łącza**. W **Eksplorator warstw**, sprawdź **obsługuje walidację** kolumny. Zależności nie będą odtwarzane dla artefaktów, dla których ta kolumna zawiera **False**.  
   
 #### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>Aby odtwarzać istniejące zależności między warstwami  
   
@@ -155,7 +155,7 @@ Opis architektury aplikacji na wysokim poziomie, tworząc *diagramy warstw* w pr
   Aby rozwiązać te błędy, aktualizuj kod, dopóki nie przestaną pojawiać się błędy podczas walidacji. Zazwyczaj jest procesem iteracyjnym. Aby uzyskać więcej informacji na temat tych błędów, zobacz [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md).  
   
 > [!NOTE]
->  Tworzenie lub refaktoryzować kod, Niewykluczone, że nowe artefaktów połączyć diagram warstwy. Jednak może to nie być konieczne, na przykład w przypadku warstwy, które reprezentują istniejącej przestrzeni nazw, a nowy kod dodaje więcej materiału tylko z tymi przestrzeniami nazw.  
+> Tworzenie lub refaktoryzować kod, Niewykluczone, że nowe artefaktów połączyć diagram warstwy. Jednak może to nie być konieczne, na przykład w przypadku warstwy, które reprezentują istniejącej przestrzeni nazw, a nowy kod dodaje więcej materiału tylko z tymi przestrzeniami nazw.  
   
  Podczas procesu projektowania możesz pominąć niektóre konflikty zgłoszone podczas walidacji. Na przykład możesz pominąć błędy, które są już poprawiane lub które nie są istotne w konkretnym scenariuszu. Błąd zostanie pominięty, jest dobrym rozwiązaniem do dziennika element roboczy [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Aby wykonać to zadanie, zobacz [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md).  
   

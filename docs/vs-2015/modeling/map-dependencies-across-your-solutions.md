@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1601853a99ebea5ef687fbe5679fd74b45d5c381
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1d74fc577044cd11ca161f099e2432fd03ecfad2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440937"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Zależności mapy w ramach rozwiązań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Jeśli chcesz poznać zależności w kodzie, utwórz ich wizualizację przez utw
 - Visual Studio Professional: Otwieranie map kodu, wprowadzanie ograniczonych zmian edycyjnych i przechodzenie do kodu.  
   
 > [!WARNING]
->  Przed udostępnieniem map utworzone w programie Visual Studio Enterprise z innymi osobami, którzy korzystają z programu Visual Studio Professional, upewnij się, że wszystkie elementy na mapie (takich jak elementy ukryte, rozwinięte grupy i łącza grupy współzależności) są widoczne.  
+> Przed udostępnieniem map utworzone w programie Visual Studio Enterprise z innymi osobami, którzy korzystają z programu Visual Studio Professional, upewnij się, że wszystkie elementy na mapie (takich jak elementy ukryte, rozwinięte grupy i łącza grupy współzależności) są widoczne.  
   
  **Można mapować zależności dla kodu w tych językach**:  
   
@@ -142,7 +142,7 @@ Jeśli chcesz poznać zależności w kodzie, utwórz ich wizualizację przez utw
     Lub za pomocą klawiatury, wybierając element, a następnie naciskając klawisz znaku plus (**+**). Aby zapoznać się z bardziej poziomy kodu, zrób to samo dla przestrzeni nazw, typów i elementów członkowskich.  
   
    > [!TIP]
-   >  Aby uzyskać więcej informacji o pracy z kodem mapy za pomocą myszy, klawiatury i dotyku, zobacz [przeglądanie i zmianę położenia map kodu](../modeling/browse-and-rearrange-code-maps.md).  
+   > Aby uzyskać więcej informacji o pracy z kodem mapy za pomocą myszy, klawiatury i dotyku, zobacz [przeglądanie i zmianę położenia map kodu](../modeling/browse-and-rearrange-code-maps.md).  
   
 5. Aby uprościć mapy i skupić się na poszczególnych częściach, wybierz opcję **filtry** na pasku narzędzi Mapa kodu i po prostu wybierz typy węzłów i łączy Cię interesuje. Na przykład można ukryć kontenerów w folderze rozwiązania i zestawu.  
   
@@ -157,7 +157,7 @@ Jeśli chcesz poznać zależności w kodzie, utwórz ich wizualizację przez utw
     W tym przykładzie purpurowy łącza są wywołania kropkowana łącza są odwołaniami i dostęp do pola są światła łącza niebieski. Zielony mogą to być dziedziczenie lub mogą one być *zagregowane łącza* wskazujące więcej niż jeden typ relacji (lub *kategorii*).  
   
    > [!TIP]
-   >  Jeśli zostanie wyświetlony link zielony, nie może oznaczać jest po prostu relacji dziedziczenia. Może również być wywołania metody, ale są one ukryte przez relację dziedziczenia. Aby wyświetlić określone typy łączy, użyj pól wyboru w **filtry** okienko, aby ukryć typy nie są zainteresowani.  
+   > Jeśli zostanie wyświetlony link zielony, nie może oznaczać jest po prostu relacji dziedziczenia. Może również być wywołania metody, ale są one ukryte przez relację dziedziczenia. Aby wyświetlić określone typy łączy, użyj pól wyboru w **filtry** okienko, aby ukryć typy nie są zainteresowani.  
   
 7. Aby uzyskać więcej informacji dotyczących łącza lub elementu, umieść kursor na on, aż pojawi się etykietka narzędzia. To pokazuje szczegóły elementu kodu lub kategorii, które reprezentuje łącze.  
   
@@ -196,7 +196,7 @@ Jeśli chcesz poznać zależności w kodzie, utwórz ich wizualizację przez utw
 2. Przeciągnij zestawy lub pliki binarne, które chcesz mapować z poza programem Visual Studio na mapę. Na przykład przeciągać zestawy lub pliki binarne z Eksploratora Windows lub Eksploratora plików.  
   
 > [!NOTE]
->  Tylko wtedy, gdy na tym samym poziomie uprawnień kontroli dostępu użytkownika (UAC) są uruchomione i programu Visual Studio można przeciągnąć z zestawy lub pliki binarne z Eksploratora Windows lub Eksploratora plików. Na przykład jeśli jest włączona funkcja Kontrola konta użytkownika i korzystasz z programu Visual Studio jako Administrator, Eksplorator Windows lub Eksploratora plików zablokuje operację przeciągania. Aby obejść ten problem, upewnij się, że zarówno są uruchomione na tym samym poziomie uprawnień lub wyłączyć funkcji Kontrola konta użytkownika.  
+> Tylko wtedy, gdy na tym samym poziomie uprawnień kontroli dostępu użytkownika (UAC) są uruchomione i programu Visual Studio można przeciągnąć z zestawy lub pliki binarne z Eksploratora Windows lub Eksploratora plików. Na przykład jeśli jest włączona funkcja Kontrola konta użytkownika i korzystasz z programu Visual Studio jako Administrator, Eksplorator Windows lub Eksploratora plików zablokuje operację przeciągania. Aby obejść ten problem, upewnij się, że zarówno są uruchomione na tym samym poziomie uprawnień lub wyłączyć funkcji Kontrola konta użytkownika.  
   
 ## <a name="SeeSpecificSource"></a> Zobacz określonych zależności  
  Na przykład załóżmy, że Przegląd kodu do wykonania w niektórych plików z oczekującymi zmianami. Aby wyświetlić zależności w tych zmian, można utworzyć mapy kodu z tych plików.  
@@ -218,7 +218,7 @@ Jeśli chcesz poznać zależności w kodzie, utwórz ich wizualizację przez utw
      Można również przeciągać elementy z Eksploratora rozwiązań, widoku klas lub przeglądarki obiektów do pustego lub istniejącą mapę kodu. Aby utworzyć pustą mapę, zobacz [utworzyć mapę kodu pusty](#GetStarted). Aby dołączyć hierarchię nadrzędną elementów, naciśnij i przytrzymaj **CTRL** klucza podczas przeciągania elementów lub użyj **obejmują elementy nadrzędne** przycisk na pasku narzędzi mapy kodu, aby określić domyślną akcję.  
   
     > [!NOTE]
-    >  Po dodaniu elementów z projektu, który jest współużytkowany przez wiele aplikacji, takich jak Windows Phone lub Sklep Windows, elementy te są widoczne na mapie z projektem aktualnie aktywnych aplikacji. Po zmianie kontekstu do innego projektu aplikacji i dodaniu większej liczby elementów z udostępnionego projektu pojawiają się elementy z projektem nowych aktywnych aplikacji. Operacje wykonywane za pomocą elementu na mapie dotyczą tylko tych elementów, które współużytkują ten sam kontekst.  
+    > Po dodaniu elementów z projektu, który jest współużytkowany przez wiele aplikacji, takich jak Windows Phone lub Sklep Windows, elementy te są widoczne na mapie z projektem aktualnie aktywnych aplikacji. Po zmianie kontekstu do innego projektu aplikacji i dodaniu większej liczby elementów z udostępnionego projektu pojawiają się elementy z projektem nowych aktywnych aplikacji. Operacje wykonywane za pomocą elementu na mapie dotyczą tylko tych elementów, które współużytkują ten sam kontekst.  
   
 4. Aby sprawdzić elementy, je rozwinąć. Przesuń wskaźnik myszy na górze elementu, a następnie kliknij ikonę cudzysłów ostrokątny (strzałkę), gdy się pojawi.  
   
@@ -353,13 +353,13 @@ Jeśli chcesz poznać zależności w kodzie, utwórz ich wizualizację przez utw
  Program Visual Studio zapisuje mapy jako plik .dgml, który można udostępniać innym użytkownikom programu Visual Studio Enterprise i Visual Studio Professional.  
   
 > [!NOTE]
->  Przed udostępnieniem map użytkownikom korzystającym z programu Visual Studio Professional, pamiętaj Rozwiń wszystkie grupy, Pokaż ukryte węzły i łącza między grupami i Pobierz wszelkie usunięte węzły, które inni mają zobaczyć na mapie. W przeciwnym razie inni użytkownicy nie będą mogli zobaczyć tych elementów.  
+> Przed udostępnieniem map użytkownikom korzystającym z programu Visual Studio Professional, pamiętaj Rozwiń wszystkie grupy, Pokaż ukryte węzły i łącza między grupami i Pobierz wszelkie usunięte węzły, które inni mają zobaczyć na mapie. W przeciwnym razie inni użytkownicy nie będą mogli zobaczyć tych elementów.  
 >   
->  Po zapisaniu mapę, która znajduje się w projekcie modelowania lub został skopiowany z projektu modelowania w inne miejsce, mógł wystąpić następujący błąd:  
+> Po zapisaniu mapę, która znajduje się w projekcie modelowania lub został skopiowany z projektu modelowania w inne miejsce, mógł wystąpić następujący błąd:  
 >   
->  "Nie można zapisać *fileName* poza katalogiem projektu. Elementy połączone nie są obsługiwane”.  
+> "Nie można zapisać *fileName* poza katalogiem projektu. Elementy połączone nie są obsługiwane”.  
 >   
->  Program Visual Studio pokazuje błąd, ale mimo to tworzy zapisaną wersję. Aby uniknąć tego błędu, należy utworzyć mapy poza projektem modelowania. Można następnie zapisać go w dowolnej lokalizacji. Skopiowanie pliku do innej lokalizacji w rozwiązaniu, a następnie próba zapisu zakończą się niepowodzeniem.  
+> Program Visual Studio pokazuje błąd, ale mimo to tworzy zapisaną wersję. Aby uniknąć tego błędu, należy utworzyć mapy poza projektem modelowania. Można następnie zapisać go w dowolnej lokalizacji. Skopiowanie pliku do innej lokalizacji w rozwiązaniu, a następnie próba zapisu zakończą się niepowodzeniem.  
   
 ### <a name="export-the-map-as-an-image-so-you-can-copy-it-into-other-applications-such-as-microsoft-word-or-powerpoint"></a>Eksportuj mapy jako obraz, aby można było skopiować do innych aplikacji, takich jak Microsoft Word lub PowerPoint  
   

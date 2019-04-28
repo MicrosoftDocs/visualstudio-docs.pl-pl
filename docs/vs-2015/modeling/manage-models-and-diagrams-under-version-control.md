@@ -11,12 +11,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a7ba74c18097f7eb4b2f8ff50780dfd5ffb57df
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4c29b7e3279513e2876396abd5083c3ddefa0baf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440934"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Zarządzanie modelami i diagramami w ramach kontroli wersji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Zarządzać różne wersje usługi projektów i diagramów modelowania, łączni
  Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!IMPORTANT]
->  Kilku użytkowników pracuje nad tym samym projekcie modelowania, należy zachować ostrożność. Dowiedz się, jak można [organizowania modeli w średnich i dużych projektach](../modeling/structure-your-modeling-solution.md).  
+> Kilku użytkowników pracuje nad tym samym projekcie modelowania, należy zachować ostrożność. Dowiedz się, jak można [organizowania modeli w średnich i dużych projektach](../modeling/structure-your-modeling-solution.md).  
   
 ## <a name="ModelingProjects"></a> Pliki w projekcie modelowania  
  Więcej niż jeden użytkownik może pracować nad projektem modelowania w tym samym czasie, pod warunkiem, że działają na różnych plikach.  
@@ -42,7 +42,7 @@ Zarządzać różne wersje usługi projektów i diagramów modelowania, łączni
     - **DiagramName.classdiagram.layout** — Jeśli ten plik zostanie usunięty, kształty będą nadal pojawiać się na diagramie, ale utracą swoje rozmiary i położenie. Każdy plik układu jest zależny od pliku diagramu. Aby sprawdzić, kliknij przycisk [+] obok pliku diagramu w Eksploratorze rozwiązań.  
   
 > [!NOTE]
->  Jest to ważne, aby zachować spójność między plikami. Na przykład, jeśli używasz kontroli źródła do wycofania zmian w pliku .uml, należy wycofać odpowiednie zmiany. * diagram i .layout pliki w tym samym czasie. Elementy reprezentowane w. \*plik diagramu zostaną utracone, jeśli nie są one również reprezentowane w pliku .uml.  
+> Jest to ważne, aby zachować spójność między plikami. Na przykład, jeśli używasz kontroli źródła do wycofania zmian w pliku .uml, należy wycofać odpowiednie zmiany. * diagram i .layout pliki w tym samym czasie. Elementy reprezentowane w. \*plik diagramu zostaną utracone, jeśli nie są one również reprezentowane w pliku .uml.  
   
 ## <a name="Shared"></a> Praca na udostępnionych projektach modelowania  
  Aby zminimalizować konflikty między równoczesną pracą na różnych części projektu:  
@@ -68,7 +68,7 @@ Zarządzać różne wersje usługi projektów i diagramów modelowania, łączni
 - Zawsze zamykaj wszystkie diagramy przed wykonaniem **uzyskać** operacji.  
   
     > [!NOTE]
-    >  Jeśli plik jest otwarty podczas wykonywania **uzyskać**, i operacja powoduje zmiany lokalne, a następnie zostanie wyświetlony monit, aby ponownie załadować plik. W tym przypadku kliknij **nie**, a następnie ponownie załaduj pełen projekt. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy modelowania węzła projektu, kliknij przycisk **Zwolnij projekt**, a następnie kliknij przycisk **Załaduj ponownie projekt**.  
+    > Jeśli plik jest otwarty podczas wykonywania **uzyskać**, i operacja powoduje zmiany lokalne, a następnie zostanie wyświetlony monit, aby ponownie załadować plik. W tym przypadku kliknij **nie**, a następnie ponownie załaduj pełen projekt. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy modelowania węzła projektu, kliknij przycisk **Zwolnij projekt**, a następnie kliknij przycisk **Załaduj ponownie projekt**.  
   
 ### <a name="Exclusive"></a> Zmiany wymaganie wyłącznego dostępu do modelu  
  Zanim dokonasz następujących rodzajów zmian, upewnij się, że masz blokadę Wyewidencjonuj dla całego projektu.  
@@ -94,7 +94,7 @@ Zarządzać różne wersje usługi projektów i diagramów modelowania, łączni
      W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy folder docelowy lub projekt, wskaż opcję **Dodaj**, a następnie kliknij przycisk **istniejący element**. W oknie dialogowym Wybierz plik diagramu, a następnie kliknij przycisk **Dodaj**. Plik układu zostanie dodany automatycznie.  
   
     > [!NOTE]
-    >  Nie można przenieść pliku do innego projektu.  
+    > Nie można przenieść pliku do innego projektu.  
   
 ## <a name="Merging"></a> Scalanie zmian w plikach i diagramach modelu  
  Po więcej niż jeden użytkownik pracował w modelu jednocześnie, [!INCLUDE[esprscc](../includes/esprscc-md.md)] wyświetli monit o scalenie zmian w plikach modelu. Praca nad osobnymi projektami zgodnie z opisem w poprzednich sekcjach pozwoli uniknąć większości scaleń. Zwykle pozostałe konflikty mogą być bezpiecznie scalane automatycznie. Następujące rodzaje zmian, powinny powodować żadnych trudności:  

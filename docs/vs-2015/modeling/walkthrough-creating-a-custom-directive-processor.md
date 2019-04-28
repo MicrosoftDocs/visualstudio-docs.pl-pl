@@ -12,12 +12,12 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d71c820435ccf5bd131c11bc79844ac157561c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 438dd372cc2d70ecb8d1d41602751b6ce0cdf821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446750"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Przewodnik: Tworzenie niestandardowego procesora dyrektywy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ End Property
 1. W Visual Studio utwórz projekt biblioteki klas C# lub Visual Basic o nazwie CustomDP.  
 
     > [!NOTE]
-    >  Jeśli chcesz zainstalować procesor dyrektywy na więcej niż jednym komputerze, to lepiej używać [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenia (VSIX) projektu, a następnie dołącz do rozszerzenia plik .pkgdef. Aby uzyskać więcej informacji, zobacz [wdrażanie niestandardowego procesora dyrektywy](../modeling/deploying-a-custom-directive-processor.md).  
+    > Jeśli chcesz zainstalować procesor dyrektywy na więcej niż jednym komputerze, to lepiej używać [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenia (VSIX) projektu, a następnie dołącz do rozszerzenia plik .pkgdef. Aby uzyskać więcej informacji, zobacz [wdrażanie niestandardowego procesora dyrektywy](../modeling/deploying-a-custom-directive-processor.md).  
 
 2. Dodawanie odwołań do następujących zestawów:  
 
@@ -619,7 +619,7 @@ End Property
  Zanim wywołasz dyrektywę z szablonu tekstu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], należy dodać klucz rejestru dla procesora dyrektywy.  
 
 > [!NOTE]
->  Jeśli chcesz zainstalować procesor dyrektywy na więcej niż jednym komputerze, to lepiej zdefiniować [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenie (VSIX), który zawiera plik .pkgdef wraz z zestawem. Aby uzyskać więcej informacji, zobacz [wdrażanie niestandardowego procesora dyrektywy](../modeling/deploying-a-custom-directive-processor.md).  
+> Jeśli chcesz zainstalować procesor dyrektywy na więcej niż jednym komputerze, to lepiej zdefiniować [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenie (VSIX), który zawiera plik .pkgdef wraz z zestawem. Aby uzyskać więcej informacji, zobacz [wdrażanie niestandardowego procesora dyrektywy](../modeling/deploying-a-custom-directive-processor.md).  
 
  Klucze dla procesorów dyrektyw istnieją w rejestrze w następującej lokalizacji:  
 
@@ -636,7 +636,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
  W tej sekcji dodajesz klucz dla niestandardowego procesora dyrektywy do rejestru w tej samej lokalizacji.  
 
 > [!CAUTION]
->  Niepoprawne edytowanie rejestru może spowodować poważne uszkodzenie systemu. Przed wprowadzeniem zmian w rejestrze wykonaj kopię zapasową wszystkich cennych danych, które znajdują się na komputerze.  
+> Niepoprawne edytowanie rejestru może spowodować poważne uszkodzenie systemu. Przed wprowadzeniem zmian w rejestrze wykonaj kopię zapasową wszystkich cennych danych, które znajdują się na komputerze.  
 
 #### <a name="to-add-a-registry-key-for-the-directive-processor"></a>Aby dodać klucz rejestru dla procesora dyrektywy  
 
@@ -649,7 +649,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 3. Dodaj nowy klucz o nazwie CustomDirectiveProcessor.  
 
    > [!NOTE]
-   >  Jest to nazwa, która będzie używana w polu Procesor niestandardowych dyrektyw. Ta nazwa nie musi odpowiadać nazwie dyrektywy, nazwie klasy procesora dyrektywy ani przestrzeni nazw procesora dyrektywy.  
+   > Jest to nazwa, która będzie używana w polu Procesor niestandardowych dyrektyw. Ta nazwa nie musi odpowiadać nazwie dyrektywy, nazwie klasy procesora dyrektywy ani przestrzeni nazw procesora dyrektywy.  
 
 4. Dodaj nową wartość ciągu o nazwie Class, która ma wartość CustomDP.CustomDirectiveProcessor dla nazwy nowego ciągu znaków.  
 
@@ -687,7 +687,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 1. Utwórz plik tekstowy o nazwie `DocFile.xml` za pomocą dowolnego edytora tekstów (na przykład w Notatniku).  
 
     > [!NOTE]
-    >  Ten plik można utworzyć w dowolnym miejscu (na przykład C:\Test\DocFile.xml).  
+    > Ten plik można utworzyć w dowolnym miejscu (na przykład C:\Test\DocFile.xml).  
 
 2. Dodaj następującą zawartość do pliku tekstowego:  
 
@@ -743,7 +743,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 4. Zmień zawartość TestDP.tt na następujący tekst.  
 
     > [!NOTE]
-    >  Pamiętaj zamienić ciąg <`YOUR PATH>` ze ścieżką do pliku DocFile.xml.  
+    > Pamiętaj zamienić ciąg <`YOUR PATH>` ze ścieżką do pliku DocFile.xml.  
 
      Język szablonu tekstu nie musi odpowiadać językowi procesora dyrektywy.  
 
@@ -830,7 +830,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     ```  
 
     > [!NOTE]
-    >  W tym przykładzie wartość `Processor` parametr `CustomDirectiveProcessor`. Wartość `Processor` parametru musi pasować do nazwy klucza rejestru procesora.  
+    > W tym przykładzie wartość `Processor` parametr `CustomDirectiveProcessor`. Wartość `Processor` parametru musi pasować do nazwy klucza rejestru procesora.  
 
 5. Na **pliku** menu, kliknij przycisk **Zapisz wszystko**.  
 
@@ -882,7 +882,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 1. Zastąp kod w TestDP.tt następującym kodem. Kod HTML jest podświetlony. Pamiętaj zamienić ciąg `YOUR PATH` ze ścieżką do pliku DocFile.xml.  
 
     > [!NOTE]
-    >  Otwórz dodatkowe \<# i zamykające #> oddzielają Kod instrukcji od znaczników HTML.  
+    > Otwórz dodatkowe \<# i zamykające #> oddzielają Kod instrukcji od znaczników HTML.  
 
     ```csharp  
     <#@ assembly name="System.Xml" #>  

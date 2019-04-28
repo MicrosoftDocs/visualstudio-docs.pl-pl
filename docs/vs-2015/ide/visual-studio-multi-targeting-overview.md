@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a0964e390455b2225ec35debe79cdc79c38ed931
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MT
+ms.openlocfilehash: cb538360992a77dac66e4135647890e2a7732df4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443155"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Wielowersyjność kodu Visual Studio ― Omówienie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58194564"
 W tej wersji programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], można określić wersję [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] jest wymagane dla danej aplikacji. W związku z tym jeśli chcesz używać tej wersji [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do dalszego opracowywania projektu rozpoczętego w starszej wersji, nie należy zmieniać celu struktury. Można również utworzyć rozwiązania zawierającego projekty tego kierują do różnych wersji Framework. Adresowanie pozwala zagwarantować, że aplikacja używa tylko te funkcje, które są dostępne w określonej wersji Framework.
 
 > [!TIP]
->  Można również przeznaczać aplikacje dla różnych platform. Aby uzyskać więcej informacji, zobacz [wielowersyjności kodu w programie](../msbuild/msbuild-multitargeting-overview.md)
+> Można również przeznaczać aplikacje dla różnych platform. Aby uzyskać więcej informacji, zobacz [wielowersyjności kodu w programie](../msbuild/msbuild-multitargeting-overview.md)
 
 ## <a name="framework-targeting-features"></a>Funkcji określania wartości docelowej Framework
  Adresowanie obejmuje następujące funkcje:
@@ -57,19 +57,19 @@ W tej wersji programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], można okre�
 - W przypadku kompilacji wykorzystuje wersję kompilatora i opcje kompilatora, które są odpowiednie dla wersji docelowej.
 
 > [!NOTE]
->  Adresowanie nie gwarantuje, że Twoja aplikacja będzie działać poprawnie. Należy przetestować aplikację w taki sposób, aby upewnić się, że jest uruchamiana w wersji docelowej. Nie można wskazywać wersji struktury, które są starsze niż .NET Framework 2.0.
+> Adresowanie nie gwarantuje, że Twoja aplikacja będzie działać poprawnie. Należy przetestować aplikację w taki sposób, aby upewnić się, że jest uruchamiana w wersji docelowej. Nie można wskazywać wersji struktury, które są starsze niż .NET Framework 2.0.
 
 ## <a name="selecting-a-target-framework-version"></a>Wybieranie wersji platformy docelowej
  Podczas tworzenia projektu wybierz docelową [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersja **nowy projekt** okno dialogowe. Lista dostępnych szablonów projektów zostanie odfiltrowana według wyboru. W istniejącym projekcie można zmienić docelową [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersji w oknie dialogowym właściwości projektu. Aby uzyskać więcej informacji, zobacz [jak: Docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 > [!NOTE]
->  W wersjach Express programu Visual Studio, nie można ustawić platformę docelową **nowy projekt** okno dialogowe.
+> W wersjach Express programu Visual Studio, nie można ustawić platformę docelową **nowy projekt** okno dialogowe.
 
 ## <a name="resolving-system-and-user-assembly-references"></a>System rozpoznawania i odwołania do zestawów użytkownika
  Aby skierować je do wersji programu .NET Framework, należy najpierw zainstalować odpowiednie odwołania do zestawów. Odwołania do zestawów dla .NET Framework w wersji 2.0, 3.0 i 3.5 są zawarte w .NET Framework 3.5 SP1, który można pobrać z [Microsoft Download Center, programu Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150) witryny sieci Web. Odwołania do zestawów dla .NET Framework 3.5 Client Profile, .NET Framework 4, .NET Framework 4 Client Profile i Silverlight są również dostępne [pobieranie Visual Studio](http://go.microsoft.com/fwlink/?LinkId=179687) witryny sieci Web.
 
 > [!NOTE]
->  Profil klienta .NET Framework jest podzbiorem .NET Framework, która zapewnia ograniczony zestaw funkcji i bibliotek. Aby uzyskać więcej informacji na temat profili klientów, zobacz [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).
+> Profil klienta .NET Framework jest podzbiorem .NET Framework, która zapewnia ograniczony zestaw funkcji i bibliotek. Aby uzyskać więcej informacji na temat profili klientów, zobacz [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).
 
  **Dodaj odwołanie** okno dialogowe wyłącza zestawy systemowe, które nie odnoszą się do obiektu docelowego [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersji, aby nie można ich dodać do projektu przypadkowo. (Zestawy systemowe to pliki .dll, które są objęte [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersji.) Odwołania, które należą do wersji szablonu, która jest nowsza niż wersja docelowa nie zostanie rozwiązany, a nie można dodać formanty, które są zależne od takiego odwołania. Jeśli chcesz włączyć takie odwołanie, zresetuj [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] obiekcie docelowym projektu na taki, który zawiera odwołanie.  Aby uzyskać więcej informacji, zobacz [wprowadzenie do projektanta projektu](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).
 

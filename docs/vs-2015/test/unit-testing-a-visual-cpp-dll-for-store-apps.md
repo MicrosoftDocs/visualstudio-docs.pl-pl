@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 716e6141d9f5ae76773a47b81ae54f5d7b70a9ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4da615971004cb499fb6bab414517474c2bf6265
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445960"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Biblioteki DLL Visual C++ Store aplikacji testów jednostkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -220,7 +220,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
     ```  
   
     > [!TIP]
-    >  Firma Microsoft zaleca, nie należy zmieniać testy, które zostały przekazane. Zamiast tego Dodaj nowy test, zaktualizować kod, tak aby test zakończy się pomyślnie, a następnie dodaj innego testu, i tak dalej.  
+    > Firma Microsoft zaleca, nie należy zmieniać testy, które zostały przekazane. Zamiast tego Dodaj nowy test, zaktualizować kod, tak aby test zakończy się pomyślnie, a następnie dodaj innego testu, i tak dalej.  
     >   
     >  Użytkownicy zmiany ich wymagań, wyłącz testy, które nie są już prawidłowe. Zapisz nowe testy i ich działania pojedynczo, w taki sam sposób przyrostowego.  
   
@@ -231,7 +231,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
      ![Kończy się niepowodzeniem RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  Upewnij się, że każdy test zakończy się niepowodzeniem, natychmiast, po napisaniu go. Dzięki temu można uniknąć łatwe Błąd zapisywania testu, który nigdy nie zakończy się niepowodzeniem.  
+    > Upewnij się, że każdy test zakończy się niepowodzeniem, natychmiast, po napisaniu go. Dzięki temu można uniknąć łatwe Błąd zapisywania testu, który nigdy nie zakończy się niepowodzeniem.  
   
 4. Tak, aby nowy test zakończy się pomyślnie, należy zwiększyć testowany kod. Dodaj następujące polecenie, aby **RooterLib.cpp**:  
   
@@ -259,7 +259,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
      Kod przechodzi oba testy.  
   
 > [!TIP]
->  Tworzenie kodu, dodając jeden testów w danym momencie. Upewnij się, że po każdej iteracji kod przechodzi wszystkie testy.  
+> Tworzenie kodu, dodając jeden testów w danym momencie. Upewnij się, że po każdej iteracji kod przechodzi wszystkie testy.  
   
 ## <a name="BKMK_Debug_a_failing_test"></a> Debuguj test niepowodzeniem  
   
@@ -346,6 +346,6 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
 2. Wybierz **Uruchom wszystkie** wycofanej metoda testowa, i upewnij się, że nie zostały wprowadzone regresji.  
   
     > [!TIP]
-    >  Stabilne zestawy testów jednostkowych dobre daje pewność, że użytkownik nie wprowadzają błędów po zmianie kodu.  
+    > Stabilne zestawy testów jednostkowych dobre daje pewność, że użytkownik nie wprowadzają błędów po zmianie kodu.  
     >   
     >  Zachowaj refaktoryzacji oddzielnie od innych zmian.

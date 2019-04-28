@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dca65a4ec1fecd885c97ce80d9827fe78c5ce9b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60b94274404c82695628dc72bd88bdf48145b7c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443442"
 ---
 # <a name="how-to-edit-xml-files"></a>Instrukcje: Edytowanie plików XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60110508"
 Edytor XML jest nowym edytorze plików XML. Może służyć autonomiczny plik XML lub plik skojarzony z projektu programu Visual Studio. Edytor XML jest skojarzony z następujących rozszerzeń pliku: .config, .dtd, XML i XSD, a także .xdr, XSL, .xslt i .vssettings. Edytor XML jest powiązany z pliku innego typu ma nie określonych Edytor zarejestrowany i zawiera zawartość DTD lub XML.  
   
 > [!NOTE]
->  XHTML dokumentów są obsługiwane w edytorze HTML.  
+> XHTML dokumentów są obsługiwane w edytorze HTML.  
   
 ### <a name="to-edit-an-xml-file"></a>Aby edytować plik XML  
   

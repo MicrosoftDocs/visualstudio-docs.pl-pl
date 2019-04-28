@@ -12,12 +12,12 @@ ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 42b5df2f6d3ff0958784463c5c48d457597945a5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 3c6c7bb6d149281048d281cb7af13fe51d75ffd5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443897"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Wewnątrz zestawu Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ Ogólny widok architektury programu Visual Studio
   
  Projekty mogą również zbierać do rozwiązania, która to grupa jeden lub więcej projektów, które współpracują ze sobą, aby utworzyć aplikację. Projektu i stan informacje, które odnoszą się do rozwiązania są przechowywane w dwa pliki rozwiązań, plik tekstowy rozwiązania (.sln) i plik opcji (suo) użytkownika binarne rozwiązania. Te pliki są podobne do pliki grupy (.vbg), które były używane w starszych wersjach [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], i obszar roboczy (.dsw) i opcje plików (.opt), które były używane w starszych wersjach [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
   
- Aby uzyskać więcej informacji, zobacz [projektów](../../extensibility/internals/projects.md) i [rozwiązania](../../extensibility/internals/solutions.md).  
+ Aby uzyskać więcej informacji, zobacz [projektów](../../extensibility/internals/projects.md) i [rozwiązania](../../extensibility/internals/solutions-overview.md).  
   
 ## <a name="project-and-item-templates"></a>Szablony projektów i elementów  
  Program Visual Studio obejmuje szablony projektów wstępnie zdefiniowanych i szablonów elementów projektów. Można również tworzyć własne szablony lub pobrać szablony od społeczności i zintegrować je do programu Visual Studio. [Galerii kodu MSDN](https://code.msdn.microsoft.com/site/search?query=visual%20studio) jest miejscem, aby przejść do szablonów i rozszerzenia.  
@@ -98,7 +98,7 @@ Ogólny widok architektury programu Visual Studio
  Szablony zawierają struktury projektu i podstawowe pliki, które są wymagane do utworzenia określonego rodzaju aplikacji, kontrolki, biblioteki lub klas. Do tworzenia oprogramowania, podobny do jednego z szablonów, należy utworzyć projekt, który jest oparty na szablonie, a następnie zmodyfikować pliki, w tym projekcie.  
   
 > [!NOTE]
->  Ta architektura szablonu nie jest obsługiwana dla [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projektów. Aby uzyskać informacje o sposobie tworzenia [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] szablony projektów, zobacz [projektowania kreatora](http://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b).  
+> Ta architektura szablonu nie jest obsługiwana dla [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projektów. Aby uzyskać informacje o sposobie tworzenia [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] szablony projektów, zobacz [projektowania kreatora](http://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b).  
   
  Aby uzyskać więcej informacji, zobacz [Dodawanie projektu i szablonów elementów projektów](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   

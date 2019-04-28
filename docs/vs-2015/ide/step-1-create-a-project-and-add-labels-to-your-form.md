@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 226f2281af2ccdb288ff2c186da280b329a2af1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e58471c1676ce67e96ef2c325f5ec461f54cfc9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441984"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1. Tworzenie projektu i dodawanie etykiet do formularza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60071879"
 Jako pierwsze kroki w projektowaniu tego quizu tworzysz projekt i dodać etykiety, przycisk i inne formanty do formularza. Można również ustawić właściwości dla każdego dodawanego formantu. Projekt będzie zawierać formularz, formanty oraz (później w samouczku) kod. Przycisk uruchamia quiz, etykiety pokazują problemy quizu, a pozostałe formanty pokazują odpowiedzi do quizu oraz czas pozostały do jego zakończenia.  
   
 > [!NOTE]
->  Ten temat jest częścią serii samouczków na temat podstawowych pojęć kodowania. Aby uzyskać omówienie samouczka, zobacz [samouczek 2: Utwórz Quiz matematyczny](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+> Ten temat jest częścią serii samouczków na temat podstawowych pojęć kodowania. Aby uzyskać omówienie samouczka, zobacz [samouczek 2: Utwórz Quiz matematyczny](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-create-a-project-and-set-properties-for-a-form"></a>Aby utworzyć projekt i ustawić właściwości dla formularza  
   
@@ -145,7 +145,7 @@ Pierwszy wiersz kwizu matematycznego z limitem
 9. Na czwartym wierszu, nazwij pierwszą etykietę **dividedLeftLabel**, zmień drugiej etykiety **tekstu** właściwości **÷** (znak dzielenia), nazwij trzecią etykietę  **dividedRightLabel**i nazwij formant NumericUpDown **iloraz**.  
   
     > [!NOTE]
-    >  Można skopiować z tego samouczka × znak mnożenia i ÷ znak dzielenia i wklej je do formularza.  
+    > Można skopiować z tego samouczka × znak mnożenia i ÷ znak dzielenia i wklej je do formularza.  
   
 ### <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>Aby dodać przycisk start i ustawić kolejność kolejność tabulacji  
   
@@ -162,7 +162,7 @@ Pierwszy wiersz kwizu matematycznego z limitem
 6. Ustaw wartość **TabIndex** właściwość **startButton** kontrolę **1**.  
   
     > [!NOTE]
-    >  **TabIndex** właściwość ustawia kolejność formantów, gdy uczestnik quizu wybiera klawisz Tab. Aby zobaczyć, jak to działa, otwórz dowolne okno dialogowe (na przykład, na pasku menu należy wybrać **pliku**, **Otwórz**), a następnie wybierz klawisz Tab kilka razy. Obejrzyj, jak Twoja kursor przesuwa się między formantami każdorazowo, naciśnij klawisz Tab. Programista zdecydował o kolejności podczas tworzenia tego formularza.  
+    > **TabIndex** właściwość ustawia kolejność formantów, gdy uczestnik quizu wybiera klawisz Tab. Aby zobaczyć, jak to działa, otwórz dowolne okno dialogowe (na przykład, na pasku menu należy wybrać **pliku**, **Otwórz**), a następnie wybierz klawisz Tab kilka razy. Obejrzyj, jak Twoja kursor przesuwa się między formantami każdorazowo, naciśnij klawisz Tab. Programista zdecydował o kolejności podczas tworzenia tego formularza.  
   
 7. Ustaw wartość **TabIndex** właściwość sumy numericupdown na **2**, dla formantu różnicy na **3**, dla formantu iloczynu na **4**, a dla formantu ilorazu na **5**.  
   

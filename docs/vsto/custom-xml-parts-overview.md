@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 517cd2230430bf0758b729f50b1d947685aaf6be
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b94deacad38f40d76b4c8485186bfd563808d912
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445523"
 ---
 # <a name="custom-xml-parts-overview"></a>Niestandardowe części XML ― omówienie
   Dane XML można osadzić w dokumentach niektórych aplikacji pakietu Microsoft Office. Osadzenie danych XML w dokumencie, dane o nazwie *niestandardowym elementem XML*.
@@ -38,7 +38,7 @@ ms.locfileid: "60052782"
  **Dotyczy:** Informacje przedstawione w tym temacie dotyczą projektów na poziomie dokumentu i projektów dodatku VSTO dla programów Excel, PowerPoint i Word. Aby uzyskać więcej informacji, zobacz [funkcje, które są dostępne przez typ aplikacji i projektów pakietu Office](../vsto/features-available-by-office-application-and-project-type.md).
 
 > [!NOTE]
->  Program Visual Studio umożliwia także do obiektów danych w pamięci podręcznej dostosowywane na poziomie dokumentu. Ta funkcja jest inny niż niestandardowe elementy XML, chociaż istnieją pewne podobieństwa. Aby uzyskać więcej informacji, zobacz [dane dostosowywane na poziomie dokumentu z pamięci podręcznej](../vsto/cached-data-in-document-level-customizations.md).
+> Program Visual Studio umożliwia także do obiektów danych w pamięci podręcznej dostosowywane na poziomie dokumentu. Ta funkcja jest inny niż niestandardowe elementy XML, chociaż istnieją pewne podobieństwa. Aby uzyskać więcej informacji, zobacz [dane dostosowywane na poziomie dokumentu z pamięci podręcznej](../vsto/cached-data-in-document-level-customizations.md).
 
 ## <a name="understand-custom-xml-parts"></a>Omówienie niestandardowych części XML
  Niestandardowe elementy XML zostały wprowadzone w programie Microsoft Office system 2007, wraz z otwartych formatów XML. Te formaty obejmują nowe formaty plików oparty na składni XML dla programu Excel, PowerPoint i Word (takie jak *xlsx*, *pptx*, i *.docx*). Dokumenty w tych formatach składają się z plikami XML (o nazwie *części XML*), są zorganizowane w foldery w archiwum ZIP. Większość części XML to wbudowane części, które pomogą Ci określić strukturę i stanu dokumentu. Jednak dokumenty mogą także zawierać niestandardowe elementy XML, których można użyć, aby przechowywać dowolne dane XML w dokumentach.
@@ -56,7 +56,7 @@ ms.locfileid: "60052782"
 - [Tworzenie dokumentów programu Word 2007 za pomocą formatów Open XML](/previous-versions/office/developer/office-2007/bb264572(v=office.12))
 
 > [!NOTE]
->  Program Excel, Word i PowerPoint również włączyć przy użyciu niestandardowych części XML w dokumentach, które są zapisane w formacie plików binarnych. Jednak jeśli dokument zostanie zapisany w formacie binarnym, nie możesz dodawać ani modyfikować niestandardowe elementy XML bez uruchamiania aplikacji programu Microsoft Office.
+> Program Excel, Word i PowerPoint również włączyć przy użyciu niestandardowych części XML w dokumentach, które są zapisane w formacie plików binarnych. Jednak jeśli dokument zostanie zapisany w formacie binarnym, nie możesz dodawać ani modyfikować niestandardowe elementy XML bez uruchamiania aplikacji programu Microsoft Office.
 
 ## <a name="create-and-modify-custom-xml-parts"></a>Tworzenie i modyfikowanie niestandardowe elementy XML
  Można tworzyć lub modyfikować niestandardowe elementy XML w przypadku, gdy dokument jest otwarty w aplikacji pakietu Office lub w przypadku, gdy dokument zostanie zamknięty — nawet jeśli nie zainstalowano programu Microsoft Office.

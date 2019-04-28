@@ -20,12 +20,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7271b9cb45e2a8bf53e5f5aedc10eefc05830e3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: fc37f11d5f01af041610e066a9896f8e0e244fcc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443375"
 ---
 # <a name="options-text-editor-all-languages"></a>Opcje, edytor tekstu, wszystkie języki
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,12 +33,12 @@ ms.locfileid: "59661454"
 To okno dialogowe pozwala zmienić domyślne zachowanie edytora kodu. Te ustawienia mają zastosowanie również do innych edytorów oparte na kod edytora, takiego jak widok źródła w Projektancie HTML. Aby otworzyć to okno dialogowe, wybierz **opcje** z **narzędzia** menu. W ramach **edytora tekstów** folder, rozwiń węzeł **wszystkie języki** podfolder, a następnie wybierz **ogólne**.  
   
 > [!CAUTION]
->  Ta strona ustawia domyślne opcje dla wszystkich języków programowania. Należy pamiętać, że zresetowanie opcji, w tym oknie dialogowym przywróci ogólne opcje we wszystkich językach niezależnie od opcji wybranych są w tym miejscu. Aby zmienić opcje edytora tekstowego dla tylko jednego języka, rozwiń podfolder dla danego języka, a następnie wybierz jego stron opcji.  
+> Ta strona ustawia domyślne opcje dla wszystkich języków programowania. Należy pamiętać, że zresetowanie opcji, w tym oknie dialogowym przywróci ogólne opcje we wszystkich językach niezależnie od opcji wybranych są w tym miejscu. Aby zmienić opcje edytora tekstowego dla tylko jednego języka, rozwiń podfolder dla danego języka, a następnie wybierz jego stron opcji.  
   
  Wygaszone znacznik wyboru jest wyświetlane, gdy po wybraniu opcji na stronach opcji ogólnych dla niektórych języków programowania, ale nie dla innych użytkowników.  
   
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="statement-completion"></a>Dokańczanie instrukcji  
  Automatyczna lista członków  
@@ -58,7 +58,7 @@ To okno dialogowe pozwala zmienić domyślne zachowanie edytora kodu. Te ustawie
  Po wybraniu dowolnej części wiersza, który mieści się w poziomie w obszarze edytora w widoczne jest automatycznie wyświetlana w następnym wierszu. Wybranie tej opcji umożliwia **Pokaż zualne przy zawijaniu wierszy** opcji.  
   
 > [!NOTE]
->  **Wirtualną przestrzenią** włączenia funkcji wyłączone podczas **zawijanie** znajduje się na.  
+> **Wirtualną przestrzenią** włączenia funkcji wyłączone podczas **zawijanie** znajduje się na.  
   
  Pokaż zualne przy zawijaniu wierszy  
  Po wybraniu wskaźnik zwracany strzałkę jest wyświetlany, gdy długi wiersz zawijana drugi wiersz.  
@@ -68,7 +68,7 @@ To okno dialogowe pozwala zmienić domyślne zachowanie edytora kodu. Te ustawie
  Usuń zaznaczenie tej opcji, jeśli nie chcesz wyświetlić te wskaźniki.  
   
 > [!NOTE]
->  Tych strzałek monitu nie są dodawane do kodu, a nie do drukowania. Są one tylko do celów referencyjnych.  
+> Tych strzałek monitu nie są dodawane do kodu, a nie do drukowania. Są one tylko do celów referencyjnych.  
   
  Zastosuj poleceń Wytnij lub Kopiuj do pustych wierszy, jeśli nie zaznaczono żadnego fragmentu  
  Ta opcja ustawia zachowanie edytora, gdy umieścisz kursor w pustym wierszu, wybierz nothing, a następnie skopiować lub wyciąć.  
@@ -80,14 +80,14 @@ To okno dialogowe pozwala zmienić domyślne zachowanie edytora kodu. Te ustawie
   To ustawienie nie ma wpływu na Kopiuj lub Wytnij gdy wiersz nie jest pusty. Jeśli nic nie jest zaznaczone, cały wiersz jest skopiować lub wyciąć. Jeśli następnie wkleić, tekst cały wiersz i jej znak endline zostaną wklejone.  
   
 > [!TIP]
->  Aby wyświetlić wskaźniki dla miejsca do magazynowania oraz o końców linii, a zatem odróżnienia wiersze z wcięciami wiersze, które są całkowicie pusty, wybierz **zaawansowane** z **Edytuj** menu i wybierz polecenie **widoku biały Miejsce**.  
+> Aby wyświetlić wskaźniki dla miejsca do magazynowania oraz o końców linii, a zatem odróżnienia wiersze z wcięciami wiersze, które są całkowicie pusty, wybierz **zaawansowane** z **Edytuj** menu i wybierz polecenie **widoku biały Miejsce**.  
   
 ## <a name="display"></a>Monitor  
  Numery wierszy  
  Po wybraniu numer wiersza obok każdego wiersza kodu.  
   
 > [!NOTE]
->  Te numery wierszy nie są dodawane do kodu, a nie do drukowania. Są one tylko do celów referencyjnych.  
+> Te numery wierszy nie są dodawane do kodu, a nie do drukowania. Są one tylko do celów referencyjnych.  
   
  Włącz nawigację adresów URL jednym kliknięciem  
  Po wybraniu myszy przybiera postać dłoni przekazywanego za pośrednictwem adresu URL w edytorze. Możesz kliknąć adres URL, aby wyświetlić stronę wskazany w przeglądarce sieci Web.  

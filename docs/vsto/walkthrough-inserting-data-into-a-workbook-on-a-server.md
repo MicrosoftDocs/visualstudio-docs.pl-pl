@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b68e2f01cae577c7d0913e448aa832b586aa22b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: daf5251aa32f4101bfba21d053d72abceef1eb15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440854"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Przewodnik: Wstawianie danych do skoroszytu na serwerze
   W tym instruktażu pokazano, jak wstawić dane do zestawu danych, który jest buforowany w skoroszytu programu Microsoft Excel pakietu Office bez uruchamiania programu Excel przy użyciu <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy.
@@ -43,7 +43,7 @@ ms.locfileid: "60071697"
   Chociaż w tym przewodniku przyjęto założenie, że uruchomieniu kodu na komputerze deweloperskim, kod przedstawiona w tym instruktażu może być używany w taki sposób, na serwerze, który nie ma zainstalowanego programu Excel.
 
 > [!NOTE]
->  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
@@ -251,7 +251,7 @@ ms.locfileid: "60071697"
    - A <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> obiekt na potrzeby dostępu do pamięci podręcznej danych w skoroszycie.
 
      > [!NOTE]
-     >  Poniższy kod przyjęto założenie, że używasz skoroszytu, który ma *xlsx* rozszerzenie pliku. Jeśli skoroszyt w projekcie ma inne rozszerzenie pliku, zmodyfikuj ścieżkę zgodnie z potrzebami.
+     > Poniższy kod przyjęto założenie, że używasz skoroszytu, który ma *xlsx* rozszerzenie pliku. Jeśli skoroszyt w projekcie ma inne rozszerzenie pliku, zmodyfikuj ścieżkę zgodnie z potrzebami.
 
      [!code-csharp[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#3)]
      [!code-vb[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#3)]

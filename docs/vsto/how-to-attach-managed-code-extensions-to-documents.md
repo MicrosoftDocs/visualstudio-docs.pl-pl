@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 18ca5e0cbf341f27454377c544e20cd2aba1388f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f56d51817491726e6011e965bfd6d68630bb0dbf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441804"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Instrukcje: Dołączanie rozszerzenia kodu zarządzanego do dokumentów
   Zestaw dostosowania można dołączyć do istniejącego dokumentu Microsoft Office Word lub skoroszytu programu Microsoft Office Excel. Dokument lub skoroszyt może być w dowolnym formacie pliku, który jest obsługiwany przez program Microsoft Office projektów i narzędzi programistycznych w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [Architektura dostosowywania na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md).
@@ -28,7 +28,7 @@ ms.locfileid: "60044267"
  Aby dołączyć dostosowanie do dokumentu programu Word lub Excel, należy użyć <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> metody <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy. Ponieważ <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy jest przeznaczony do uruchamiania na komputerze, który nie ma programu Microsoft Office zainstalowany, możesz użyć tej metody w rozwiązaniach, które nie są bezpośrednio związane z Microsoft Office development (na przykład konsoli lub aplikacji Windows Forms).
 
 > [!NOTE]
->  Dostosowanie nie będzie można załadować, jeśli kod oczekuje formantów, które nie ma określonego dokumentu.
+> Dostosowanie nie będzie można załadować, jeśli kod oczekuje formantów, które nie ma określonego dokumentu.
 
  ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Dołączanie lub odłączanie zestaw narzędzi VSTO dla programów z dokumentu programu Word? ](http://go.microsoft.com/fwlink/?LinkId=136782).
 

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8162e44d92399a4b2031f6dc30b1f9dc56ae22e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6de3313dad06c009244a8b784e81bf7d2a768c3b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443112"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Instrukcje: Dołączanie niestandardowego zestawu w funkcji BDC
   Projekt można odwołuje się do zestawów z innych projektów w tym samym rozwiązaniu. Jednakże, należy dodać te zestawy do pliku funkcji projektu, przy użyciu **Przypisz przywoływane zestawy do elementów LobSystem** okno dialogowe.
@@ -40,12 +40,12 @@ ms.locfileid: "60059626"
 4. W **wybierz zestaw** wybierz zestaw niestandardowy.
 
     > [!NOTE]
-    >  Zestawy są wyświetlane tylko w **Przypisz przywoływane zestawy do elementów LobSystem** okno dialogowe, jeśli zostały dodane odwołanie do projektu, który zawiera zestaw. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodaj odwołanie](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+    > Zestawy są wyświetlane tylko w **Przypisz przywoływane zestawy do elementów LobSystem** okno dialogowe, jeśli zostały dodane odwołanie do projektu, który zawiera zestaw. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodaj odwołanie](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
 5. W **właściwości odwołania** grupy, Otwórz listę, która pojawia się dla **zakres elementu LobSystem** właściwość, należy wybrać System LOB metod, które zestaw niestandardowy, a następnie wybierz **OK**  przycisku.
 
     > [!NOTE]
-    >  Aby debugować kod w zestaw niestandardowy, należy dodać zestaw do pakietu rozwiązań. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie i usuwanie zestawów dodatkowych](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
+    > Aby debugować kod w zestaw niestandardowy, należy dodać zestaw do pakietu rozwiązań. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie i usuwanie zestawów dodatkowych](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
 
 ## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości oraz uprawnień](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)

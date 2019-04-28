@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 488551d9b86ec7bd09adadd92d515cac1a53e841
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d885ba9d32126e0d77828047adbde84d557fd821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447078"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>Ograniczenia programowe elementów hosta i kontrolek hosta
   Każdy element hosta i kontrolki hosta jest przeznaczony do zachowują się jak odpowiedni natywnego Microsoft Office Word lub obiektu programu Microsoft Office Excel z dodatkowymi funkcjami. Istnieją jednak pewne podstawowe różnice między zachowanie elementów hosta i kontrolek hosta i natywnego obiektów pakietu Office w czasie wykonywania.
@@ -57,7 +57,7 @@ ms.locfileid: "56596154"
  Nie można dodać kontrolki hosta do macierzystej <xref:Microsoft.Office.Interop.Word.Document> lub <xref:Microsoft.Office.Interop.Excel.Worksheet>.
 
 > [!NOTE]
->  Następujące kontrolki hosta nie można programowo dodać do arkuszy lub dokumenty: <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>, i <xref:Microsoft.Office.Tools.Word.XMLNodes>.
+> Następujące kontrolki hosta nie można programowo dodać do arkuszy lub dokumenty: <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>, i <xref:Microsoft.Office.Tools.Word.XMLNodes>.
 
 ## <a name="understand-type-differences-between-host-items-host-controls-and-native-office-objects"></a>Opis typu różnic między elementów hosta, formanty hosta i natywnego obiektów pakietu Office
  Dla każdego elementu hosta i kontrolki hosta istnieje podstawowych natywnych obiektów Microsoft Office Word lub Microsoft Office Excel. Obiekt źródłowy dostęp za pomocą właściwości InnerObject elementu hosta lub kontrolki hosta. Jednak nie ma możliwości można rzutować natywnego obiektu pakietu Office, na jej odpowiadający element hosta lub kontrolki hosta. Jeśli zostanie podjęta próba rzutowania natywnych obiektów pakietu Office do typu element hosta lub kontrolki hosta <xref:System.InvalidCastException> zgłaszany.

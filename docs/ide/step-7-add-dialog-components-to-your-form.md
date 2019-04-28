@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e93bd1c254f16b8034a267be90a90573b7ac86e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a1b4ef99f6b8e4dbe9d334fea0e8f5c34d5c6ffa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442066"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Krok 7. Dodawanie składników okna dialogowego do formularza
 Aby umożliwić programowi otwieranie plików obrazów i Wybieranie koloru tła, w tym kroku należy dodać <xref:System.Windows.Forms.OpenFileDialog> składnika i <xref:System.Windows.Forms.ColorDialog> składnika do formularza.
@@ -27,7 +27,7 @@ Aby umożliwić programowi otwieranie plików obrazów i Wybieranie koloru tła,
 1. Wybierz **Windows Forms Designer** (**Form1.cs [projekt]** lub **Form1.vb [projekt]**), a następnie otwórz **okien dialogowych** w  **Przybornik**.
 
     > [!NOTE]
-    >  **Okien dialogowych** w **przybornika** zawiera składniki, które otwierają wiele przydatnych okien dialogowych, które mogą służyć do otwierania i zapisywania plików, przeglądania folderów i wybierania czcionek i kolorów. Używasz dwóch elementów dialogu w tym projekcie: OpenFileDialog i ColorDialog.
+    > **Okien dialogowych** w **przybornika** zawiera składniki, które otwierają wiele przydatnych okien dialogowych, które mogą służyć do otwierania i zapisywania plików, przeglądania folderów i wybierania czcionek i kolorów. Używasz dwóch elementów dialogu w tym projekcie: OpenFileDialog i ColorDialog.
 
 2. Aby dodać składnik o nazwie **openFileDialog1** do formularza, kliknij dwukrotnie **OpenFileDialog**. Aby dodać składnik o nazwie **colorDialog1** do formularza, kliknij dwukrotnie **ColorDialog** w **przybornika**. (Możesz użyć go w następnym kroku samouczka). Powinieneś widzieć obszar w dolnej części **Windows Forms Designer** (poniżej **Picture Viewer** formularza), zawiera ikonę dla każdego z dwóch składników dialogu, które dodałeś, jak pokazano na poniższej ilustracji.
 
@@ -47,7 +47,7 @@ Aby umożliwić programowi otwieranie plików obrazów i Wybieranie koloru tła,
          **Filtru** ustawienia właściwości określają rodzaje typów plików, które będą wyświetlane w **wybierz obraz** okno dialogowe pliku.
 
     > [!NOTE]
-    >  Aby zobaczyć przykład **Otwórz plik** okno dialogowe w innej aplikacji, otwórz **Notatnik** lub **Paint**, a na pasku menu wybierz **pliku**  >  **Otwórz**. Zwróć uwagę, jak istnieje **pliki typu** listy rozwijanej u dołu. Użyłeś właśnie **filtru** właściwość **OpenFileDialog** składnik to skonfigurować. Zauważ również, jak **tytuł** i **filtru** właściwości są pogrubione w **właściwości** okna. IDE robi to, aby pokazać wszystkie właściwości, które zostały zmienione z wartościami domyślnymi.
+    > Aby zobaczyć przykład **Otwórz plik** okno dialogowe w innej aplikacji, otwórz **Notatnik** lub **Paint**, a na pasku menu wybierz **pliku**  >  **Otwórz**. Zwróć uwagę, jak istnieje **pliki typu** listy rozwijanej u dołu. Użyłeś właśnie **filtru** właściwość **OpenFileDialog** składnik to skonfigurować. Zauważ również, jak **tytuł** i **filtru** właściwości są pogrubione w **właściwości** okna. IDE robi to, aby pokazać wszystkie właściwości, które zostały zmienione z wartościami domyślnymi.
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 

@@ -10,11 +10,11 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: a2e4f990df5531b3b17b1cca2204aa10ae959db1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62550272"
 ---
 # <a name="optimizing-your-azure-code"></a>Optymalizacja kodu platformy Azure
 Podczas programowania używasz aplikacje korzystające z Microsoft Azure, istnieją pewne praktyk kodowania, które należy wykonać, aby pomóc uniknąć problemów z skalowalność aplikacji, zachowanie i wydajność w środowisku chmury. Firma Microsoft udostępnia narzędzia do analizy kodu platformy Azure, rozpoznaje i identyfikuje kilka z tych problemów często napotykanych i pomoże Ci je rozwiązać. Możesz pobrać narzędzia w programie Visual Studio za pomocą narzędzia NuGet.

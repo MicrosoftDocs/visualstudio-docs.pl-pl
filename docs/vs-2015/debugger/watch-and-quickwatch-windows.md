@@ -24,12 +24,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1a6167759d35dd67142e1919423df6aa380fe88
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c3f79e492440f98f733488afb241fa6f86e220b9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444228"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Wyrażenie kontrolne i QuickWatch Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -162,7 +162,7 @@ var1 = var2
  Istnieją momenty, gdy zachodzi potrzeba przyjrzeć się zachowaniu określonego obiektu; na przykład można śledzić obiekt określony przez zmienną lokalną przeszedł do tej zmiennej poza zakres tej asysty. W języku C# i Visual Basic można utworzyć obiektu identyfikatory dla konkretnych wystąpień typów referencyjnych i używać ich w oknie czujki i warunków punktu przerwania. Identyfikator obiektu jest generowany przez środowisko uruchomieniowe języka wspólnego (CLR) debugowanie usług i powiązane z obiektem.  
   
 > [!NOTE]
->  Identyfikatory obiektów Utwórz słabe odwołania i uniemożliwia obiektu jako elementu bezużytecznego zbierane. Są one prawidłowe tylko dla bieżącej sesji debugowania.  
+> Identyfikatory obiektów Utwórz słabe odwołania i uniemożliwia obiektu jako elementu bezużytecznego zbierane. Są one prawidłowe tylko dla bieżącej sesji debugowania.  
   
  Poniższy kod tworzy jedną metodę `Person` przy użyciu zmiennej lokalnej, ale chcesz dowiedzieć się, jakie `Person`jego nazwa jest w innej metodzie:  
   
@@ -215,7 +215,7 @@ public class Program
 6. Kontynuuj debugowanie i zatrzymania wykonywania w `DoSomething()` metody **Obejrzyj** jest wyświetlana w oknie `Person` obiektu.  
   
 > [!NOTE]
->  Jeśli chcesz wyświetlić właściwości tego obiektu, takie jak `Person.Name` w powyższym przykładzie muszą mieć włączone właściwości oceny.  
+> Jeśli chcesz wyświetlić właściwości tego obiektu, takie jak `Person.Name` w powyższym przykładzie muszą mieć włączone właściwości oceny.  
   
 ## <a name="using-registers-in-the-watch-window-c-only"></a>Korzystanie z rejestrów w okno czujki (tylko C++)  
  Jeśli debugujesz kod macierzysty, można dodać nazwy rejestru, a także nazw zmiennych, przy użyciu  **$ \<zarejestrować nazwę >** lub  **@ \<zarejestrować nazwę >**.  Aby uzyskać więcej informacji, zobacz [Pseudozmienne](../debugger/pseudovariables.md).  

@@ -13,12 +13,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3b619421c2d1eb9d8c2a4853c7a6ce5c3fbb7ea7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6b3c2a7e23aba13cbe843c33510a81b66ba2b815
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445411"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Wybieranie zestawu reguł, okno dialogowe (starsza wersja)
 W tym temacie opisano sposób użycia **wybierz zestaw reguł** okno dialogowe w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -39,7 +39,7 @@ W tym temacie opisano sposób użycia **wybierz zestaw reguł** okno dialogowe w
  Aby uzyskać więcej informacji o sposobie tworzenia i edytowania zestawów reguł, zobacz [reguły Ustaw edytora okno dialogowe (starsza wersja)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).  
   
 > [!WARNING]
->  W edytorze zasad starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] umożliwiający docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] nie obsługuje wielowersyjności kodu w programie.  
+> W edytorze zasad starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] umożliwiający docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] nie obsługuje wielowersyjności kodu w programie.  
   
  Aby uzyskać więcej informacji o warunkach, zobacz [za pomocą warunków w przepływach pracy](http://go.microsoft.com/fwlink?LinkID=65009).  
   

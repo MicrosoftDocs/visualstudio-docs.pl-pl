@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f5d6c78f7d5c931272bb66b2706d3b5e531785cc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8dd8627c4e9baaa790a5d97a8021220a820356fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442433"
 ---
 # <a name="namedrange-control"></a>NamedRange — formant
   <xref:Microsoft.Office.Tools.Excel.NamedRange> Kontrolka jest w zakresie, który ma unikatową nazwę, udostępnia zdarzenia i może być powiązana z danymi. Aby uzyskać więcej informacji, zobacz [model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md).
@@ -35,7 +35,7 @@ ms.locfileid: "60062641"
  Możesz dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolek do arkusza w czasie wykonywania w dodatku VSTO. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie formantów NamedRange do arkuszy](../vsto/how-to-add-namedrange-controls-to-worksheets.md).
 
 > [!NOTE]
->  Domyślnie przez utworzony dynamicznie nazwane zakresy nie są zachowywane w arkuszu zgodnie z kontrolki hosta po zamknięciu arkusza. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w środowisku uruchomieniowym](../vsto/adding-controls-to-office-documents-at-run-time.md).
+> Domyślnie przez utworzony dynamicznie nazwane zakresy nie są zachowywane w arkuszu zgodnie z kontrolki hosta po zamknięciu arkusza. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w środowisku uruchomieniowym](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
  <xref:Microsoft.Office.Tools.Excel.NamedRange> Formanty może zawierać wyłącznie z zakresów określonych arkuszy. <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki nie mogą mieć względne nazwy, które są stosowane do wszystkich arkuszy, a nie składają się one z zakresów, które rozciągają się dwa lub więcej arkuszy w skoroszycie (3-zakresami).
 

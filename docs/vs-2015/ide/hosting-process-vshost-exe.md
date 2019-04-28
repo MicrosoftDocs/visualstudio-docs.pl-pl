@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3b5ce753b0e3e7523f7c88eac3ad20afc7b0c953
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 90aa5e77c6541b36619615fc253c55f5d78a6b45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445706"
 ---
 # <a name="hosting-process-vshostexe"></a>Proces hostingu (vshost.exe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54788137"
 Proces hostingu to funkcja w programie Visual Studio, który poprawia wydajność debugowania, włącza debugowanie częściowej relacji zaufania i umożliwia obliczenie wyrażenia czasu projektowania. Pliki procesu hostingu zawierać vshost w nazwie pliku i są umieszczane w folderze danych wyjściowych projektu. Aby uzyskać więcej informacji, zobacz [debugowanie i proces hostingu](../debugger/debugging-and-the-hosting-process.md).  
   
 > [!NOTE]
->  Pliki procesu hostingu (. vshost.exe) są przeznaczone do użytku przez program Visual Studio i nie należy uruchamiać bezpośrednio lub wdrożony z aplikacją.  
+> Pliki procesu hostingu (. vshost.exe) są przeznaczone do użytku przez program Visual Studio i nie należy uruchamiać bezpośrednio lub wdrożony z aplikacją.  
   
 ## <a name="improved-debugging-performance"></a>Zwiększona wydajność debugowania  
  Proces hostingu tworzy domenę aplikacji i kojarzy debugera z aplikacją. Wykonywania tych zadań mogą wprowadzać zauważalnego opóźnienia między debugowanie w czasie została uruchomiona i czas aplikacja rozpoczyna wykonywanie. Proces hostingu pomaga zwiększyć wydajność tworzenia domeny aplikacji i kojarzenie debugera w tle i zapisując domeny aplikacji i stan debugera między uruchomieniami aplikacji. Aby uzyskać więcej informacji na temat domen aplikacji, zobacz [domen aplikacji](http://msdn.microsoft.com/library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8).  

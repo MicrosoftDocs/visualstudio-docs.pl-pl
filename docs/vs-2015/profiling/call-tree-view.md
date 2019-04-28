@@ -16,12 +16,12 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5bf3e8998abe18a4d40e031b85ffb6683fa62dc7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 105f16c0d9deb8d94a102818c5335af18685c675
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439335"
 ---
 # <a name="call-tree-view"></a>Widok drzewa wywołań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Widok drzewa wywołania Wyświetla ścieżki wykonywania funkcji, które został
  Widok drzewa wywołania można skonfigurować dla obniżenia poziomu hałasu, ograniczając ilość danych, które są prezentowane. Za pomocą redukcji szumu, problemy z wydajnością, są lepiej widoczne w widoku. W przypadku łatwo odróżnić problemy z wydajnością analizy jest łatwiejsze. Aby uzyskać więcej informacji, zobacz [jak: Konfigurowanie redukcji szumu w widokach raportu](../profiling/how-to-configure-noise-reduction-in-report-views.md).  
   
 > [!NOTE]
->  Jeśli redukcja szumów jest skonfigurowana do wyświetlania ostrzeżenia, gdy jest włączone, pasek informacji będą wyświetlane w raporcie.  
+> Jeśli redukcja szumów jest skonfigurowana do wyświetlania ostrzeżenia, gdy jest włączone, pasek informacji będą wyświetlane w raporcie.  
   
  Aby uzyskać więcej informacji o definicjach kolumn w widoku drzewa wywołań zobacz następujące tematy:  
   

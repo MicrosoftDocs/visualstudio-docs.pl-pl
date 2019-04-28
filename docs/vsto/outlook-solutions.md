@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1cf32a7fde4ebcc4f8a702c8f250018b6e7e68f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 4150751cbb8de64fc237335bc26407f932276075
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442391"
 ---
 # <a name="outlook-solutions"></a>rozwiązania programu Outlook
   Program Visual Studio udostępnia szablony projektów, służących do tworzenia dodatków narzędzi VSTO dla programu Microsoft Office Outlook. Za pomocą dodatków narzędzi VSTO dla programów Automatyzacja programu Outlook, Rozszerz funkcje programu Outlook lub dostosowywanie interfejsu użytkownika (UI) programu Outlook. Aby uzyskać więcej informacji na temat dodatków narzędzi VSTO zobacz [architektury VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
@@ -31,7 +31,7 @@ ms.locfileid: "56606241"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 > [!NOTE]
->  Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.
+> Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.
 
 ## <a name="create-an-outlook-vsto-add-in-project"></a>Tworzenie narzędzi VSTO dla programów Outlook dodatku projektu
  Tworzenie projektów programu Outlook przy użyciu **dodatku programu Outlook** szablonu projektu w **nowy projekt** okno dialogowe. Ten szablon zawiera odwołania do zestawów wymagane i pliki projektu.

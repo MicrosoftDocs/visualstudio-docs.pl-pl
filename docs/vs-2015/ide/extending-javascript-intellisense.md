@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94e2186fa13f7fe125457dc6f04d6d31d0bcc65d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e995d9cfd37c625c03df0b607a9dd5184bec5d08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441465"
 ---
 # <a name="extending-javascript-intellisense"></a>Rozszerzanie JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
  Dodatkowe przykłady można znaleźć \\ \\ *ścieżka instalacji programu Visual Studio*\JavaScript\References folderu. Plik showPlainComments.js, w tym folderze zawiera przykłady użycia innych zdarzeń, aby zapewnić obsługę funkcji IntelliSense domyślny dla standardowych znaczników komentarza JavaScript (/ /). Podobnie jak underscorefilter.js showPlainComments.js jest już dostępna jako rozszerzenie pracy, a widać wynikowy informacji IntelliSense, używając znaczników komentarzy w kodzie dla zmienne, funkcje i obiekty. Aby uzyskać więcej przykładów, zobacz [przykłady kodu](#CodeExamples).  
   
 > [!WARNING]
->  Jeśli zmodyfikujesz plików rozszerzeń dołączone do programu Visual Studio, można wyłączyć funkcji IntelliSense języka JavaScript lub funkcji obsługiwanej przez rozszerzenie.  
+> Jeśli zmodyfikujesz plików rozszerzeń dołączone do programu Visual Studio, można wyłączyć funkcji IntelliSense języka JavaScript lub funkcji obsługiwanej przez rozszerzenie.  
   
  W kodzie rozszerzenia można utworzyć procedury obsługi dla następujących typów zdarzeń za pomocą `addEventListener`:  
   
@@ -88,7 +88,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   Przykłady pokazujące, funkcje IntelliSense, takich jak uzupełnianie instrukcji i informacje o parametrach, szybkie informacje, zobacz [za pomocą funkcji IntelliSense](../ide/using-intellisense.md).  
   
 > [!NOTE]
->  W języku JavaScript szybkie informacje odnosi się do wyskakujące okno, który pojawia się po prawej stronie listy uzupełniania. Nie można ręcznie wywołać Quick Info.  
+> W języku JavaScript szybkie informacje odnosi się do wyskakujące okno, który pojawia się po prawej stronie listy uzupełniania. Nie można ręcznie wywołać Quick Info.  
   
 ## <a name="intellisenseObject"></a> Obiekt IntelliSense  
  W poniższej tabeli przedstawiono funkcje, które są dostępne dla `intellisense` obiektu. `intellisense` Obiekt jest dostępny tylko w czasie projektowania.  

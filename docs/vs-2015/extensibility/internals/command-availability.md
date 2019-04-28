@@ -11,12 +11,12 @@ ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 56aeb6a43cea18513a422741289a08a5b7c901c5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f060f6c49fc02c75b3fe9f792133c9ee88c6d56c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441588"
 ---
 # <a name="command-availability"></a>Dostępność poleceń
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Kontekst programu Visual Studio Określa, jakie polecenia są dostępne. Konteks
 3. Włączanie i wyłączanie identyfikatorów GUID w kontekście przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> metody.  
   
     > [!CAUTION]
-    >  Upewnij się, że Twoje pakietu VSPackage nie wpływa na wszystkich kontekstach istniejące identyfikatory GUID ponieważ innych pakietów VSPackage może zależeć od ich.  
+    > Upewnij się, że Twoje pakietu VSPackage nie wpływa na wszystkich kontekstach istniejące identyfikatory GUID ponieważ innych pakietów VSPackage może zależeć od ich.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wybór obiektów kontekstu](../../extensibility/internals/selection-context-objects.md)   

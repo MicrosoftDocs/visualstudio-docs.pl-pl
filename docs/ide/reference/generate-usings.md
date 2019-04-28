@@ -10,11 +10,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0ce1b620a6d8aba7e4aea767745891dff6d9f869
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790051"
 ---
 # <a name="generate-usings-in-visual-studio"></a>Generowanie z użycia w programie Visual Studio
 

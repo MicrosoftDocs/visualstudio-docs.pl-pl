@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c5c907885e91cc3b7765ff94528a30a84b17ee46
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909578"
 ---
 # <a name="legacy-language-service-interfaces"></a>Interfejsy starszej wersji usługi językowej
 Dla określonego języka programowania jednocześnie może istnieć tylko jedno wystąpienie usługi języka. Jednak usługa jeden język może obsługiwać więcej niż jeden z nich.
@@ -52,4 +52,4 @@ Dla określonego języka programowania jednocześnie może istnieć tylko jedno 
 
 ## <a name="see-also"></a>Zobacz też
 - [Tworzenie starszej wersji usługi językowej](../../extensibility/internals/developing-a-legacy-language-service.md)
-- [Lista kontrolna: Tworzenie starszej wersji usługi językowej](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+- [Lista kontrolna: tworzenie starszej wersji usługi językowej](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)

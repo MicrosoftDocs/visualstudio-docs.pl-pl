@@ -8,12 +8,12 @@ ms.assetid: f1502b51-d6db-4894-9fbf-4a5723e4bb1a
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 63e6be6a6b7c3e739ab590dd9f952fbb5988176b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c66d8ba2f630812b08358fa3557035f58266ef00
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445911"
 ---
 # <a name="upgrade-visual-studio-2010-unit-test-projects"></a>Uaktualnianie projektów testów jednostkowych programu Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ ms.locfileid: "54788642"
  [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] wprowadzono kilka zmian w celu przeprowadzania testów jednostkowych. W związku z tym ważne jest, aby zrozumieć problemy ze zgodnością między poprzednich wersji programu Visual Studio i [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Wśród zmiany testy jednostkowe, znaczące zmiany jest fakt, że [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] zawiera więcej niż jeden szablon projektu testu, łącznie z szablonem projektu testu jednostki. Nowe testy jednostkowe są dodawane do nowego szablonu projektu testu jednostki. Testy jednostkowe można również uwzględnić w innym nowego szablonu projektu testu o nazwie szablon projektu kodowanego testu interfejsu użytkownika. Aby uzyskać więcej informacji na temat nowych szablonów projektu testowego, zobacz [uaktualnianie testów ze starszych wersji programu Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52). Domyślnie nowe projekty testów jednostkowych już nie zawierają pliku ustawień testu. Z wyjątkiem pliku ustawień testu, zwiększa wydajność testów jednostkowych. Aby zapewnić zgodność można nadal używać istniejących projektów testów, które zostały utworzone za pomocą programu Visual Studio 2010. Jednak zaleca się, że usuniesz plik ustawień testu, które są skojarzone z projektu testowego, ze względu na wydajność, chyba że istnieje konkretna potrzeba użycia pliku ustawień testu. Na przykład można przechowywać plik ustawień testu, jeśli testy jednostkowe działają w środowisku rozproszonym, lub należy zebrać szczegółowe dane diagnostyczne. Jeśli masz potrzebę podobne, przy użyciu nowego szablonu projektu testu jednostki lub kodowanego testu interfejsu użytkownika szablonu projektu, ręcznie dodaniem pliku ustawień testu do nich również.
 
 > [!NOTE]
->  Testów jednostkowych istniejącej w Twojej [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] projekty testowe z dodatkiem SP1 będzie działać bezproblemowo między [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] z dodatkiem SP1 i [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Po otwarciu projektu testowego programu Visual Studio 2010 zawierający testy jednostkowe w plikach projektu testu są wprowadzane żadne zmiany [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], lub na odwrót.
+> Testów jednostkowych istniejącej w Twojej [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] projekty testowe z dodatkiem SP1 będzie działać bezproblemowo między [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] z dodatkiem SP1 i [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Po otwarciu projektu testowego programu Visual Studio 2010 zawierający testy jednostkowe w plikach projektu testu są wprowadzane żadne zmiany [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], lub na odwrót.
 
 > [!CAUTION]
->  Nie można otworzyć programu Visual Studio 2010 w języku C + +/ CLI projektu tego zestawu narzędzi 11.0 elementy docelowe — oznacza to, że projekt utworzony w programie Visual Studio 2012. To ograniczenie obowiązuje dla wszystkich C + +/ CLI projektów nie po prostu C + +/ projektów testów jednostkowych interfejsu wiersza polecenia.
+> Nie można otworzyć programu Visual Studio 2010 w języku C + +/ CLI projektu tego zestawu narzędzi 11.0 elementy docelowe — oznacza to, że projekt utworzony w programie Visual Studio 2012. To ograniczenie obowiązuje dla wszystkich C + +/ CLI projektów nie po prostu C + +/ projektów testów jednostkowych interfejsu wiersza polecenia.
 
 > [!NOTE]
->  Można uruchomić nowe testy jednostkowe przy użyciu vstest.console.exe z wiersza polecenia. Aby uzyskać więcej informacji o używaniu vstest.console.exe, zobacz [opcje wiersza poleceń VSTest.Console.exe](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11), lub uruchomić polecenie przy użyciu przełącznika pomocy: **vstest.console.exe /?**. Można uruchomić testy jednostkowe istniejących przy użyciu MStest.exe. Aby uzyskać więcej informacji, zobacz [Uruchamianie testów automatycznych z wiersza polecenia przy użyciu przełącznika MSTest](http://msdn.microsoft.com/library/39b61ad0-0055-44b5-963f-25d8a6b51581) i [opcje wiersza polecenia MSTest.exe](http://msdn.microsoft.com/library/8813ba7f-e790-4e92-9f91-7080508a1c36).
+> Można uruchomić nowe testy jednostkowe przy użyciu vstest.console.exe z wiersza polecenia. Aby uzyskać więcej informacji o używaniu vstest.console.exe, zobacz [opcje wiersza poleceń VSTest.Console.exe](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11), lub uruchomić polecenie przy użyciu przełącznika pomocy: **vstest.console.exe /?**. Można uruchomić testy jednostkowe istniejących przy użyciu MStest.exe. Aby uzyskać więcej informacji, zobacz [Uruchamianie testów automatycznych z wiersza polecenia przy użyciu przełącznika MSTest](http://msdn.microsoft.com/library/39b61ad0-0055-44b5-963f-25d8a6b51581) i [opcje wiersza polecenia MSTest.exe](http://msdn.microsoft.com/library/8813ba7f-e790-4e92-9f91-7080508a1c36).
 
  Inna ważna różnica jest nowym Eksploratorze testów. W [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], niektóre z testów systemu windows może być znane z poprzedniej wersji programu Visual Studio zostały wycofane, takich jak okna widoku testu. Eksplorator testów zaprojektowano w celu lepszej obsługi deweloperów i zespołów, które włączają testowanie jednostek w swoich praktyk tworzenia oprogramowania. Aby uzyskać więcej informacji, zobacz [Uruchamianie testów jednostkowych w Eksploratorze testów](../test/run-unit-tests-with-test-explorer.md).
 

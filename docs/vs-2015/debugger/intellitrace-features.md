@@ -22,12 +22,12 @@ caps.latest.revision: 73
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b1fc7da90eb4f263aaf3de19eb37cfa3272a249
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5c5c775dc309c02ca24d27e8b8ac19d2c9d9d588
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440177"
 ---
 # <a name="intellitrace-features"></a>Funkcje IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Można użyć funkcji IntelliTrace do rejestrowania zdarzeń i aplikacji, dzięk
  Aby upewnić się, że IntelliTrace jest włączony, należy otworzyć **narzędzia / Opcje / IntelliTrace** Strona opcji. **Włączenie funkcji IntelliTrace** powinno być zaznaczone domyślnie.  
   
 > [!NOTE]
->  Zakres wszystkie ustawienia na **IntelliTrace** strona opcje to program Visual Studio jako całości, nie do poszczególnych projektów lub rozwiązań. Zmiany w tych ustawieniach mają zastosowanie do wszystkich wystąpień programu Visual Studio, wszystkie debugowania sesji i wszystkich projektów i rozwiązań.  
+> Zakres wszystkie ustawienia na **IntelliTrace** strona opcje to program Visual Studio jako całości, nie do poszczególnych projektów lub rozwiązań. Zmiany w tych ustawieniach mają zastosowanie do wszystkich wystąpień programu Visual Studio, wszystkie debugowania sesji i wszystkich projektów i rozwiązań.  
   
 ## <a name="ChooseEvents"></a> Wybierz zdarzenia przez IntelliTrace  
  Można włączyć lub wyłączyć rejestrowanie dla określonych zdarzeń IntelliTrace.  
@@ -54,9 +54,9 @@ Można użyć funkcji IntelliTrace do rejestrowania zdarzeń i aplikacji, dzięk
  Dzięki temu można wyświetlić historię stosu wywołań, poruszać i wywołań w kodzie. IntelliTrace zapisuje dane, takie jak nazwy metod, punkty wejścia i wyjścia metody i niektóre wartości parametrów i zwracanych wartości.  
   
 > [!TIP]
->  Ta opcja nie jest włączona domyślnie, ponieważ dodaje znaczne obciążenie. Nie tylko ma IntelliTrace do przechwycenia wywołania metody, co sprawia, że aplikacja, ale ma również radzenia sobie z dużo większego zbioru danych, jeśli chodzi o jej wyświetlanie na ekranie lub utrwalanie go na dysku.  
+> Ta opcja nie jest włączona domyślnie, ponieważ dodaje znaczne obciążenie. Nie tylko ma IntelliTrace do przechwycenia wywołania metody, co sprawia, że aplikacja, ale ma również radzenia sobie z dużo większego zbioru danych, jeśli chodzi o jej wyświetlanie na ekranie lub utrwalanie go na dysku.  
 >   
->  Można zmniejszyć obciążenie przez ograniczenie możliwości wykonywania listy zdarzeń przez IntelliTrace i przechowując liczba modułów są zbierane do minimum. Aby uzyskać więcej informacji, zobacz [kontroli ilości informacji o wywołaniach funkcji IntelliTrace rejestruje](../debugger/intellitrace-features.md#ControlCallData).  
+> Można zmniejszyć obciążenie przez ograniczenie możliwości wykonywania listy zdarzeń przez IntelliTrace i przechowując liczba modułów są zbierane do minimum. Aby uzyskać więcej informacji, zobacz [kontroli ilości informacji o wywołaniach funkcji IntelliTrace rejestruje](../debugger/intellitrace-features.md#ControlCallData).  
   
 ### <a name="using-the-navigation-gutter"></a>Za pomocą trasę nawigacji  
  Można użyć marginesu nawigacyjnego pojawiającego się po lewej stronie okna kodu. Jeśli nie widzisz marginesu nawigacyjnego pojawiającego, przejdź do strony **narzędzia / Opcje / IntelliTrace / zaawansowane**i wybierz **Wyświetl Margines nawigacyjny w trybie debugowania**.  
@@ -88,7 +88,7 @@ Można użyć funkcji IntelliTrace do rejestrowania zdarzeń i aplikacji, dzięk
  Możesz skonfigurować IntelliTrace, aby automatycznie zapisać do pliku, przechodząc do **narzędzia / Opcje / IntelliTrace / zaawansowane** i wybierając polecenie **nagrania Store IntelliTrace w tym katalogu**. Można również skonfigurować Ustaw rozmiar generowanego pliku, co powoduje, że IntelliTrace, aby móc starszych danych, gdy zabraknie mu miejsca. Program Visual Studio utworzy dwa pliki, dla każdej sesji IntelliTrace, gdy są one automatycznie zapisywane i programu Visual Studio, proces hostingu (vshost.exe) jest włączona.  
   
 > [!TIP]
->  Aby zaoszczędzić miejsce na dysku, wyłącz zapisywanie plików automatycznie, gdy użytkownik nie są już potrzebne. Wszelkie istniejące pliki nie zostaną usunięte. Można zapisać do pliku na żądanie z poziomu menu kontekstowego.  
+> Aby zaoszczędzić miejsce na dysku, wyłącz zapisywanie plików automatycznie, gdy użytkownik nie są już potrzebne. Wszelkie istniejące pliki nie zostaną usunięte. Można zapisać do pliku na żądanie z poziomu menu kontekstowego.  
   
  Po zapisaniu danych funkcji IntelliTrace do pliku, uzyskujesz jeden plik .itrace dla każdego procesu, które funkcji IntelliTrace zebrane. Można następnie otwórz plik .itrace w Visual Studio, przechodząc do **pliku / Otwórz / pliku** i wybierając plik .itrace z okna dialogowego otwierania pliku. Aby uzyskać więcej informacji, zobacz [używanie zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md).  
   

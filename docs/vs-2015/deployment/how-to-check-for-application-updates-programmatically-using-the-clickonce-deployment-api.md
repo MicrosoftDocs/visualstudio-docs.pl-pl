@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e0c2b544a72f8a50000b48092658254c6b978a1c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9c713b9e2fe78f8e9c499c1af5e60a21fd3aea13
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442169"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Instrukcje: Sprawdzanie aktualizacji aplikacji, programowo przy użyciu wdrażania interfejsu API ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ClickOnce udostępnia dwa sposoby, aby zaktualizować aplikację po jej wdrożen
  Aby można było zaktualizować programowo aplikacji ClickOnce, należy określić lokalizację dla aktualizacji. Jest to czasami określane się jako dostawca wdrożenia. Aby uzyskać więcej informacji na temat ustawienia tej właściwości, zobacz [Wybieranie strategii aktualizacji ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
   
 > [!NOTE]
->  Można również użyć techniki opisane poniżej, aby wdrożyć aplikację z jednej lokalizacji, ale została zaktualizowana z innego. Aby uzyskać więcej informacji, zobacz [jak: Określanie alternatywnej lokalizacji aktualizacji wdrażania](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md).  
+> Można również użyć techniki opisane poniżej, aby wdrożyć aplikację z jednej lokalizacji, ale została zaktualizowana z innego. Aby uzyskać więcej informacji, zobacz [jak: Określanie alternatywnej lokalizacji aktualizacji wdrażania](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md).  
   
 ### <a name="to-check-for-updates-programmatically"></a>Aby wyszukać aktualizacje programowo  
   

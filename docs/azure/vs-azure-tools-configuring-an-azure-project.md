@@ -4,17 +4,19 @@ description: Dowiedz się, jak skonfigurować projekt usługi w chmurze platform
 author: ghogen
 manager: jillfra
 assetId: 609d6965-05cc-47b1-82dc-c76a92d4f295
-ms.custom: seodec18
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/06/2017
 ms.author: ghogen
 ms.openlocfilehash: 77985de756274793c99673c79dac26e59129a7ea
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56952738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62572487"
 ---
 # <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>Konfigurowanie projektu usługi w chmurze platformy Azure przy użyciu programu Visual Studio
 Projekt usługi w chmurze platformy Azure, można skonfigurować w zależności od wymagań dla tego projektu. Można ustawić właściwości dla projektów w ramach następujących kategorii:

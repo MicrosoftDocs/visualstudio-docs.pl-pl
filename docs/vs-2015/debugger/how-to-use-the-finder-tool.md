@@ -11,12 +11,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c14fdcc5d58c62eebf993ba336a109adac5b7106
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 00535fd336f504afcebdd24a4d009a10f7f6ff33
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440303"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Instrukcje: Korzystanie z narzędzia wyszukiwania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Narzędzie do wyszukiwania w oknie dialogowym Znajdź okno
      Jeśli uchwyt okna, które chcesz zbadać (na przykład, które są kopiowane z debugera), wpisz go w **obsługi** pola tekstowego.  
   
     > [!TIP]
-    >  Aby zwiększyć czytelność ekranu, wybierz pozycję **Ukryj Spy** opcji. Ta opcja zawiera narzędzie Spy ++ oknie głównym, pozostawiając tylko **Znajdź okno** okno dialogowe widoczne na podstawie innych aplikacji. Okno główne programu Spy ++ jest przywracany po kliknięciu **OK** lub **anulować**, lub po usunięciu zaznaczenia **Ukryj Spy ++** opcji.  
+    > Aby zwiększyć czytelność ekranu, wybierz pozycję **Ukryj Spy** opcji. Ta opcja zawiera narzędzie Spy ++ oknie głównym, pozostawiając tylko **Znajdź okno** okno dialogowe widoczne na podstawie innych aplikacji. Okno główne programu Spy ++ jest przywracany po kliknięciu **OK** lub **anulować**, lub po usunięciu zaznaczenia **Ukryj Spy ++** opcji.  
   
 4. W obszarze **Pokaż**, wybierz opcję **właściwości** lub **wiadomości**.  
   

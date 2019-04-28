@@ -8,12 +8,12 @@ ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6ce207776fe2f3dfe00ddc764546a370dbb53dca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a765896ef8b4eb645c04536105bc2284fc5c3d16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446052"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Ustawianie unikatowej właściwości automatyzacji dla kontrolek Sklepu Windows przeznaczonych do testowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ Jeśli chcesz uruchomić kodowane testy interfejsu użytkownika dla aplikacji op
  **Blend for Visual Studio:** Użyj jednej z następujących metod, w tym celu z programu Blend for Visual Studio.  
   
 > [!NOTE]
->  Tej metody można używać tylko dla formantów, które są tworzone statycznie przy użyciu XAML.  
+> Tej metody można używać tylko dla formantów, które są tworzone statycznie przy użyciu XAML.  
   
  **Aby nadać unikatową nazwę istniejących formantów**  
   
@@ -136,7 +136,7 @@ Jeśli chcesz uruchomić kodowane testy interfejsu użytkownika dla aplikacji op
  Dla obu tych przykładach należy następnie zastąpić metodę ToString() właściwości ItemSource, jak pokazano, używając następującego kodu. Ten kod sprawdza, czy ustawiono wartość AutomationProperties.Name, a jest unikatowa, ponieważ nie można ustawić unikatowej właściwości automatyzacji dla każdego elementu listy powiązanych danych, za pomocą powiązania. Ustawianie unikatową wartość dla Properties.Name automatyzacji wystarcza w tym przypadku.  
   
 > [!NOTE]
->  W ten sposób zawartość wewnętrzny elementu listy, można również ustawić na ciąg w klasie pracowników za pośrednictwem powiązania. Jak pokazano w przykładzie, formant przycisku wewnątrz każdego elementu listy jest przypisany identyfikator unikatowy automatyzacji, który jest identyfikatorem pracownika.  
+> W ten sposób zawartość wewnętrzny elementu listy, można również ustawić na ciąg w klasie pracowników za pośrednictwem powiązania. Jak pokazano w przykładzie, formant przycisku wewnątrz każdego elementu listy jest przypisany identyfikator unikatowy automatyzacji, który jest identyfikatorem pracownika.  
   
 ```  
   

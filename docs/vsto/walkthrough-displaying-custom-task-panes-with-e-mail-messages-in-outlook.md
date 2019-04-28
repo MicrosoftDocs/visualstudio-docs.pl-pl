@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 583c15a5b605671e09ac47a42d49b068393ffe2e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8127b35c7b3c861ce0568acc5c0459d6d31eee08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440887"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Przewodnik: Wyświetlanie niestandardowych okienek zadań z wiadomościami e-mail w programie Outlook
   W tym instruktażu przedstawiono sposób wyświetlania unikatowego wystąpienia niestandardowego okienka zadań z każdej wiadomości e-mail, który został utworzony lub otwarty. Użytkowników można wyświetlić lub ukryć niestandardowego okienka zadań, za pomocą przycisku na Wstążce każdej wiadomości e-mail.
@@ -31,7 +31,7 @@ ms.locfileid: "60062559"
  Aby wyświetlić niestandardowego okienka zadań z wielu Eksploratora lub Inspektora systemu windows, należy utworzyć wystąpienia niestandardowego okienka zadań dla każdego okna, który jest otwierany. Aby uzyskać więcej informacji o zachowaniu niestandardowych okienek zadań w programie Outlook w systemie windows, zobacz [niestandardowych okienek zadań](../vsto/custom-task-panes.md).
 
 > [!NOTE]
->  W tym instruktażu przedstawiono kod dodatku narzędzi VSTO dla programów w krótkich sekcjach, aby ułatwić omówić logiki stojącej za kod.
+> W tym instruktażu przedstawiono kod dodatku narzędzi VSTO dla programów w krótkich sekcjach, aby ułatwić omówić logiki stojącej za kod.
 
  W instruktażu przedstawiono następujące zagadnienia:
 
@@ -48,7 +48,7 @@ ms.locfileid: "60062559"
 - Synchronizowanie przycisk przełączania wstążki z niestandardowego okienka zadań.
 
 > [!NOTE]
->  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:

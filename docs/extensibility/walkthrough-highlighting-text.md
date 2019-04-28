@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99dbc928834cddade1c434f9d5d5d8e68c40825b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 085d2aff138be1d6beecc5e0895437e92d88da87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445006"
 ---
 # <a name="walkthrough-highlight-text"></a>Przewodnik: Wyróżnianie tekstu
 Możesz dodać różne efekty do edytora, tworząc części składowe Managed Extensibility Framework (MEF). W tym instruktażu przedstawiono sposób zaznacz każde wystąpienie bieżącego słowa w pliku tekstowym. Jeśli słowa występuje więcej niż jeden raz w pliku tekstowym, a następnie pozycji karetki w jedno wystąpienie, każde wystąpienie jest wyróżniona.
@@ -351,7 +351,7 @@ Możesz dodać różne efekty do edytora, tworząc części składowe Managed Ex
  Aby utworzyć swoje moduł tagujący, należy zaimplementować <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>. Ta klasa jest część MEF, musisz więc ustawić prawidłowe atrybuty tak, aby to rozszerzenie jest rozpoznawane.
 
 > [!NOTE]
->  Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
+> Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
 
 ### <a name="to-create-a-tagger-provider"></a>Aby utworzyć dostawcę moduł tagujący
 

@@ -18,12 +18,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c0fa386d6f6df813cfbed1d4a618414f2810f86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b7f446d2c9a1b22488746eff9ba04044d2621013
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439672"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Używanie map kodu do debugowania aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Mapy kodu może pomóc uniknąć zagubienia w dużych bazach kodu, w nieznanym k
  ![Mapy kodu &#45; Pokaż metody i powiązanych pól](../modeling/media/codemapstoryboardpaint3.png "CodeMapStoryboardPaint3")  
   
 > [!TIP]
->  Zielone podświetlenie pokazuje ostatnie elementy dodane do mapy. Zielona strzałka wskazuje pozycję kursora w kodzie. Strzałki między elementami reprezentują różne relacje. Przesuwanie wskaźnika myszy nad nimi, a następnie badanie ich etykietki narzędzi, można uzyskać więcej informacji o elementach na mapie.  
+> Zielone podświetlenie pokazuje ostatnie elementy dodane do mapy. Zielona strzałka wskazuje pozycję kursora w kodzie. Strzałki między elementami reprezentują różne relacje. Przesuwanie wskaźnika myszy nad nimi, a następnie badanie ich etykietki narzędzi, można uzyskać więcej informacji o elementach na mapie.  
   
  ![Mapy kodu &#45; pokazuje etykietki narzędzi](../modeling/media/codemapstoryboardpaint4.png "CodeMapStoryboardPaint4")  
   
@@ -65,7 +65,7 @@ Mapy kodu może pomóc uniknąć zagubienia w dużych bazach kodu, w nieznanym k
  ![Mapy kodu &#45; Sprawdź definicję pola](../modeling/media/codemapstoryboardpaint5a.png "CodeMapStoryboardPaint5A")  
   
 > [!TIP]
->  Zieloną strzałkę na mapie możesz również przesunąć, przesuwając kursor w edytorze kodu.  
+> Zieloną strzałkę na mapie możesz również przesunąć, przesuwając kursor w edytorze kodu.  
   
 ## <a name="understand-relationships-between-pieces-of-code"></a>Omówienie relacji między fragmentami kodu  
  Teraz chcesz wiedzieć, który inny kod współdziała z `history` i `paintObjects` pola. Możesz dodać do mapy wszystkie metody odwołujące się do tych pól. Można to zrobić z mapy albo z poziomu edytora kodu.  
@@ -75,14 +75,14 @@ Mapy kodu może pomóc uniknąć zagubienia w dużych bazach kodu, w nieznanym k
  ![Otwórz mapę kodów z edytora kodu](../modeling/media/codemapstoryboardpaint6a.PNG "CodeMapStoryboardPaint6A")  
   
 > [!NOTE]
->  Po dodaniu elementów z projektu, który jest współużytkowany przez wiele aplikacji, takich jak Windows Phone lub Windows Store, a następnie te elementy zawsze pojawiają się z projektem aktualnie aktywnych aplikacji na mapie. Dlatego jeśli zmienić kontekst do innego projektu aplikacji, a następnie zmienia także kontekst na mapie dla dowolnego nowo dodane elementy z udostępnionego projektu. Operacje wykonywane za pomocą elementu na mapie dotyczą tylko tych elementów, które współużytkują ten sam kontekst.  
+> Po dodaniu elementów z projektu, który jest współużytkowany przez wiele aplikacji, takich jak Windows Phone lub Windows Store, a następnie te elementy zawsze pojawiają się z projektem aktualnie aktywnych aplikacji na mapie. Dlatego jeśli zmienić kontekst do innego projektu aplikacji, a następnie zmienia także kontekst na mapie dla dowolnego nowo dodane elementy z udostępnionego projektu. Operacje wykonywane za pomocą elementu na mapie dotyczą tylko tych elementów, które współużytkują ten sam kontekst.  
   
  Zmień układ, aby przeorganizować przepływ relacji i poprawić czytelność mapy. Elementy na mapie możesz również przesuwać, przeciągając je.  
   
  ![Mapy kodu &#45; Zmień układ](../modeling/media/codemapstoryboardpaint7a.png "CodeMapStoryboardPaint7A")  
   
 > [!TIP]
->  Domyślnie **układ Przyrostowy** jest włączona. Dzięki temu mapa jest reorganizowana w możliwie najmniejszym stopniu przy dodawaniu nowych elementów. Aby zreorganizować całą mapę przy każdym dodawaniu nowych elementów, należy wyłączyć opcję **układ Przyrostowy**.  
+> Domyślnie **układ Przyrostowy** jest włączona. Dzięki temu mapa jest reorganizowana w możliwie najmniejszym stopniu przy dodawaniu nowych elementów. Aby zreorganizować całą mapę przy każdym dodawaniu nowych elementów, należy wyłączyć opcję **układ Przyrostowy**.  
   
  ![Mapy kodu &#45; Zmień układ](../modeling/media/codemapstoryboardpaint7.png "CodeMapStoryboardPaint7")  
   
@@ -136,7 +136,7 @@ Mapy kodu może pomóc uniknąć zagubienia w dużych bazach kodu, w nieznanym k
  ![Mapy kodu &#45; mapy zaktualizowane przy użyciu wywołania metody](../modeling/media/codemapstoryboardpaint17.png "CodeMapStoryboardPaint17")  
   
 > [!NOTE]
->  Po zaktualizowaniu mapy, może pojawić się komunikat o zaktualizowaniu indeksu kodu użytego do utworzenia mapy. Oznacza to, że ktoś zmienił kod, co powoduje, że mapa nie pasuje do bieżącego kodu. Nie zatrzymuje to aktualizowania mapy, ale może być konieczne ponowne utworzenie mapy w celu potwierdzenia, że pasuje do kodu.  
+> Po zaktualizowaniu mapy, może pojawić się komunikat o zaktualizowaniu indeksu kodu użytego do utworzenia mapy. Oznacza to, że ktoś zmienił kod, co powoduje, że mapa nie pasuje do bieżącego kodu. Nie zatrzymuje to aktualizowania mapy, ale może być konieczne ponowne utworzenie mapy w celu potwierdzenia, że pasuje do kodu.  
   
  Dochodzenie zostało zakończone. Problem został znaleziony i rozwiązany pomyślnie dzięki mapowaniu kodu. Istnieje również mapa pomagająca w nawigowaniu po kodzie, zapamiętaniu nowych informacji, a także pokazująca kroki, które zostały podjęte w celu rozwiązania problemu.  
   

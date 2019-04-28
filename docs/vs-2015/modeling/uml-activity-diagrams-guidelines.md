@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 626be40ed9889ff7d16c07d511cbd060232412af
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 16bc3bf0f2cb7fa51a42986ee99976410ca7874a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439737"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagramy aktywności UML: Wytyczne dotyczące
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ W programie Visual Studio można narysować diagram aktywności, aby opisują pr
      Rozpocznij od wprowadzania główne czynności na diagramie, łącząc je, a następnie dodając wprowadzania ostatecznych poprawek, takich jak węzłów początkowych i końcowych.  
   
     > [!NOTE]
-    >  Nie można przeciągać istniejące elementy na diagram, z Eksploratora modelu UML.  
+    > Nie można przeciągać istniejące elementy na diagram, z Eksploratora modelu UML.  
   
 2. Aby połączyć elementy, wykonaj następujące kroki:  
   
@@ -87,7 +87,7 @@ W programie Visual Studio można narysować diagram aktywności, aby opisują pr
     3. Kliknij element docelowy.  
   
         > [!NOTE]
-        >  Aby użyć narzędzia wielokrotnie, kliknij dwukrotnie narzędzie w przyborniku.  
+        > Aby użyć narzędzia wielokrotnie, kliknij dwukrotnie narzędzie w przyborniku.  
   
 #### <a name="to-move-an-activity-to-another-package"></a>Aby przenieść działanie do innego pakietu  
   
@@ -98,7 +98,7 @@ W programie Visual Studio można narysować diagram aktywności, aby opisują pr
 - W **Eksploratora modelu UML**, kliknij prawym przyciskiem myszy działanie i kliknij przycisk **Wytnij**. Następnie kliknij prawym przyciskiem myszy pakiet i kliknij przycisk **Wklej**.  
   
     > [!NOTE]
-    >  Działania będą wyświetlane w Eksploratorze modelu UML tylko po dodaniu pierwszego elementu na diagram.  
+    > Działania będą wyświetlane w Eksploratorze modelu UML tylko po dodaniu pierwszego elementu na diagram.  
   
 ## <a name="SimpleControlFlow"></a> Opisywanie przepływu sterowania  
  Diagram aktywności opisuje algorytm procesu lub oprogramowania firmy jako szereg działań. Łącznik strzałki pokazują, jak kontrola jest przekazywana sekwencyjnie w ramach jednej akcji do następnego. Zazwyczaj akcji można uruchomić tylko po poprzedniej akcji.  
@@ -112,7 +112,7 @@ W programie Visual Studio można narysować diagram aktywności, aby opisują pr
 - Tworzenie **akcji** (1) dla każdego zadania główne, które jest wykonywane przez użytkownika i/lub system we współpracy.  
   
   > [!NOTE]
-  >  Spróbuj opis procesu algorytmu, gdy tylko kilka akcji. Możesz użyć **wywołać akcje zachowania** do definiowania każdej akcji w bardziej szczegółowo w oddzielnym diagramie, zgodnie z opisem w [opisujące działań podrzędnych za pomocą wywołania akcji zachowanie](#Subactivities).  
+  > Spróbuj opis procesu algorytmu, gdy tylko kilka akcji. Możesz użyć **wywołać akcje zachowania** do definiowania każdej akcji w bardziej szczegółowo w oddzielnym diagramie, zgodnie z opisem w [opisujące działań podrzędnych za pomocą wywołania akcji zachowanie](#Subactivities).  
   
 - Upewnij się, że tytuł każdej akcji jasno nie wskazuje, co powoduje to zazwyczaj osiągnięcie.  
   
@@ -133,12 +133,12 @@ W programie Visual Studio można narysować diagram aktywności, aby opisują pr
 - Użyj **scalania węzła** (5), aby zebrać co najmniej dwóch alternatywnych przepływów, które rozgałęzione w **węzła decyzji**.  
   
     > [!NOTE]
-    >  Należy używać **scalania węzła** ze sobą alternatywnych przepływów, zamiast łączące przepływów w akcji. W tym przykładzie nie jest poprawna połączyć się z węzłem decyzji bezpośrednio z powrotem do **wybierz element Menu**. Jest to spowodowane akcji nie uruchamia się, dopóki wątków kontroli mogły przybyć wszystkich przychodzących łączników. W związku z tym można należy zebrać tylko przepływy współbieżne w akcji. Aby uzyskać więcej informacji, zobacz [przepływy współbieżne](#Concurrent).  
+    > Należy używać **scalania węzła** ze sobą alternatywnych przepływów, zamiast łączące przepływów w akcji. W tym przykładzie nie jest poprawna połączyć się z węzłem decyzji bezpośrednio z powrotem do **wybierz element Menu**. Jest to spowodowane akcji nie uruchamia się, dopóki wątków kontroli mogły przybyć wszystkich przychodzących łączników. W związku z tym można należy zebrać tylko przepływy współbieżne w akcji. Aby uzyskać więcej informacji, zobacz [przepływy współbieżne](#Concurrent).  
   
 - Używanie gałęzi do opisania pętli, jak pokazano w przykładzie.  
   
     > [!NOTE]
-    >  Spróbuj zagnieździć pętli w sposób bezpieczny dobrze, jak w przypadku w kodzie programu. Jeśli są opisujące istniejący proces biznesowy, to może ujawnić niektóre możliwości poprawienia go.  
+    > Spróbuj zagnieździć pętli w sposób bezpieczny dobrze, jak w przypadku w kodzie programu. Jeśli są opisujące istniejący proces biznesowy, to może ujawnić niektóre możliwości poprawienia go.  
   
 ### <a name="starting-the-activity"></a>Uruchamianie działania  
  Istnieją dwa sposoby, aby wskazać punkty wejścia do działania:  
@@ -182,7 +182,7 @@ W programie Visual Studio można narysować diagram aktywności, aby opisują pr
 - Użyj **Pin wyjściowy** i **wprowadzania numeru Pin**. Ta metoda umożliwia oddzielnie opisują dane wyjściowe z akcji i dane wejściowe do innego. Numery PIN są podobne parametry w programie. Numery PIN reprezentują porty, których obiekty można wprowadzać i pozostaw akcji.  
   
     > [!NOTE]
-    >  Omówienie elementy używane w tej sekcji, zobacz przepływu danych w sekcji tego tematu zobacz [diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md).  
+    > Omówienie elementy używane w tej sekcji, zobacz przepływu danych w sekcji tego tematu zobacz [diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md).  
   
 ### <a name="describing-data-flow-with-object-nodes"></a>Opisujący przepływ danych za pomocą węzłów obiektowych  
  Większość przepływów sterowania przesyłania danych. Na przykład przepływ danych wyjściowych z akcji "Klienta zawiera szczegółowe informacje" zawiera odwołanie do adresu do wysyłki.  
@@ -198,7 +198,7 @@ W programie Visual Studio można narysować diagram aktywności, aby opisują pr
  Możesz ustawić **typu** węzła obiektu, w oknie dialogowym właściwości. Typ może być typem pierwotnym, takie jak liczba całkowita, lub klasą, interfejsem lub wyliczenie, które zostały zdefiniowane na diagramie klasy. Na przykład można utworzyć klasy adres dostawy z atrybutami adres ulicy, miejscowości i tak dalej, wraz z skojarzenia z innej klasy, który nosi nazwę klienta. Aby uzyskać więcej informacji, zobacz [diagramów klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md).  
   
 > [!NOTE]
->  Wpisz nazwę typu, który nie został jeszcze zdefiniowany element zostanie dodany w obszarze **nieokreślonym** w Eksploratorze modelu UML. Po zdefiniowaniu typu o takiej nazwie następnie na diagramie klasy, możesz zresetować typ węzła obiektu, dzięki czemu odwołuje się do nowego typu.  
+> Wpisz nazwę typu, który nie został jeszcze zdefiniowany element zostanie dodany w obszarze **nieokreślonym** w Eksploratorze modelu UML. Po zdefiniowaniu typu o takiej nazwie następnie na diagramie klasy, możesz zresetować typ węzła obiektu, dzięki czemu odwołuje się do nowego typu.  
   
 #### <a name="buffering-data-in-object-nodes"></a>Buforowanie danych w węzłów obiektowych  
  Węzeł obiektu może działać jako bufor dla wielu obiektów. Na poniższej ilustracji, przepływ sterowania pokazuje, że użytkownik może go [Więcej opcji] pętli (1) wiele razy, podczas gdy elementy Menu wybrany węzeł obiektu (2) gromadzi wyborów użytkownika. Na koniec po ukończeniu jego wybór użytkownika kontrola przechodzi do akcji potwierdzenia zamówienia (3), która przyjmuje pełną listę wyboru z buforu wybrane elementy Menu.  
@@ -265,7 +265,7 @@ W programie Visual Studio można narysować diagram aktywności, aby opisują pr
 4. Ustaw **zachowanie** właściwość **wywołanie zachowanie** do odwoływania się do diagramu o nazwie zachowanie.  
   
     > [!NOTE]
-    >  Diagram aktywności podrzędne muszą mieć niektóre elementy na nim lub diagram nie będą dostępne na liście rozwijanej **zachowanie** właściwości. Ponadto trident ikony nie będą wyświetlane na Twojej **wywołanie zachowanie** kształtu, dopóki nie zostanie ustawiony jego **zachowanie** właściwości.  
+    > Diagram aktywności podrzędne muszą mieć niektóre elementy na nim lub diagram nie będą dostępne na liście rozwijanej **zachowanie** właściwości. Ponadto trident ikony nie będą wyświetlane na Twojej **wywołanie zachowanie** kształtu, dopóki nie zostanie ustawiony jego **zachowanie** właściwości.  
   
 5. Ustaw **jest synchroniczne** właściwość akcji, aby wskazać, czy Twoje działanie ma oczekiwać na zakończenie działania o nazwie.  
   
@@ -279,7 +279,7 @@ W programie Visual Studio można narysować diagram aktywności, aby opisują pr
 - Na diagramie aktywności podrzędnych, należy utworzyć **węzła parametru działania** (2) dla każdego wejściowe i wyjściowe numeru pin w przypadku wywoływania akcji. Nadaj każdy węzeł taką samą nazwę jak odpowiedni numer pin.  
   
   > [!NOTE]
-  >  Węzeł parametru działania przypomina węzeł obiektu. Aby sprawdzić, jakiego rodzaju węzeł, który jest wyświetlany, kliknij prawym przyciskiem myszy węzeł, a następnie kliknij przycisk **właściwości**. Typ węzła jest wyświetlany w nagłówku w oknie właściwości.  
+  > Węzeł parametru działania przypomina węzeł obiektu. Aby sprawdzić, jakiego rodzaju węzeł, który jest wyświetlany, kliknij prawym przyciskiem myszy węzeł, a następnie kliknij przycisk **właściwości**. Typ węzła jest wyświetlany w nagłówku w oknie właściwości.  
   
 - Na diagramie aktywności podrzędnych narysuj łączników, które pokazują przepływ obiektów do i z każdego węzła parametru działania.  
   

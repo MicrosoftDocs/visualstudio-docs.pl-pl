@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd579e6bf434903ecc1e2fe60b1e62d54c165034
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a714c3b3b282d37e4f8c9e73a593c9a35298f151
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443849"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Strona odwołań, Projektant projektu (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Użyj **odwołania** strony **projektanta projektu** Zarządzanie odwołania, od
  Kliknij ten przycisk, aby uzyskać dostęp do **ścieżki odwołania** okno dialogowe.  
   
 > [!NOTE]
->  Jeśli system projektu znajdzie odwołania do zestawu, system rozwiązuje odwołania przez wyszukiwanie w następujących lokalizacjach, w następującej kolejności:  
+> Jeśli system projektu znajdzie odwołania do zestawu, system rozwiązuje odwołania przez wyszukiwanie w następujących lokalizacjach, w następującej kolejności:  
 > 
 > 1. Folder projektu. Pliki folderu projektu pojawiają się w **Eksploratora rozwiązań** podczas **Pokaż wszystkie pliki** nie ma zastosowania.  
 >    2. Foldery, które są określone w **ścieżki odwołania** okno dialogowe.  

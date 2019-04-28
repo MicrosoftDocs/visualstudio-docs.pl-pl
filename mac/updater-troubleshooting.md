@@ -7,11 +7,11 @@ ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 31AF914A-C66B-4CD3-9429-39695E0E94AE
 ms.openlocfilehash: 2b89ea7155b27f9c5b54dae38d4e823895fad705
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59586368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783308"
 ---
 # <a name="troubleshooting-updater-has-errors-retrieving-information"></a>Rozwiązywanie problemów: Aktualizator ma błędy podczas pobierania informacji
 

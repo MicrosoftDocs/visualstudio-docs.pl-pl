@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fadc901ce09c6e85541956d800201a53b6d73490
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ee57e0fb78eadce226a7fa8371d395181c6060a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445296"
 ---
 # <a name="walkthrough-use-msbuild"></a>Przewodnik: Użyj programu MSBuild
 
@@ -130,7 +130,7 @@ Zadanie komunikatu przyjmuje wartość ciągu atrybutu tekstu jako danych wejśc
  Uruchom program MSBuild z **wiersz polecenia dla deweloperów** dla programu Visual Studio do tworzenia pod kątem HelloWorld zdefiniowanych powyżej. Użyj - docelowego lub -t przełącznik wiersza polecenia do wybierz docelową.
 
 > [!NOTE]
->  Będziemy nazywać **wiersz polecenia dla deweloperów** jako **okna polecenia** w poniższych sekcjach.
+> Będziemy nazywać **wiersz polecenia dla deweloperów** jako **okna polecenia** w poniższych sekcjach.
 
 **Aby zbudować obiekt docelowy**
 
@@ -156,7 +156,7 @@ Zadanie komunikatu przyjmuje wartość ciągu atrybutu tekstu jako danych wejśc
     ```
 
 > [!NOTE]
->  Jeśli zamiast tego zostanie wyświetlony `The target "HelloWorld" does not exist in the project` , a następnie prawdopodobnie, że nie można zapisać pliku projektu w edytorze kodu. Zapisz plik i spróbuj ponownie.
+> Jeśli zamiast tego zostanie wyświetlony `The target "HelloWorld" does not exist in the project` , a następnie prawdopodobnie, że nie można zapisać pliku projektu w edytorze kodu. Zapisz plik i spróbuj ponownie.
 
  Przez przełączanie między Edytorem kodu a oknie wiersza polecenia, można zmienić w pliku projektu i szybko wyświetlić wyniki.
 
@@ -239,7 +239,7 @@ $(PropertyName)
     ::: moniker-end
 
 > [!NOTE]
->  Jeśli nie widzisz te wiersze następnie prawdopodobnie, że nie można zapisać pliku projektu w edytorze kodu. Zapisz plik i spróbuj ponownie.
+> Jeśli nie widzisz te wiersze następnie prawdopodobnie, że nie można zapisać pliku projektu w edytorze kodu. Zapisz plik i spróbuj ponownie.
 
 ### <a name="conditional-properties"></a>Właściwości warunkowych
 
@@ -337,7 +337,7 @@ Aby uzyskać więcej informacji, zobacz [znaki specjalne MSBuild](../msbuild/msb
 Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).
 
 > [!NOTE]
->  Ścieżki plików są względne wobec folderu zawierającego plik projektu programu MSBuild.
+> Ścieżki plików są względne wobec folderu zawierającego plik projektu programu MSBuild.
 
 ## <a name="examine-item-type-values"></a>Sprawdź wartości typu elementu
 

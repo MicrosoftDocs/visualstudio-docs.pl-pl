@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2fd0e329e6cf3434348fba1d3282921ee8c1f57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0d685dc39f5e07840a5995f7fe67988840c3f50a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441655"
 ---
 # <a name="threads-view-parallel-performance"></a>Widok wątków (Parallel Performance)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ Widok wątków jest najbardziej szczegółowy i bogate widoku w Wizualizatorze w
  Po wybraniu punktu w segmencie wykonywania Concurrency Visualizer szuka tego punktu w czasie w stosie wywołań odpowiednie wyświetla czarny daszek powyżej wybranym punkcie w segmencie wykonywania i przedstawia stos wywołań, sam na  **Bieżący stos** kartę. Możesz wybrać wiele punktów do tego segmentu wykonania.  
   
 > [!NOTE]
->  Narzędzie Concurrency Visualizer nie można rozpoznać zaznaczenia w segmencie wykonywania. Zwykle dzieje się po czas trwania segmentu mniejszym niż jedna Milisekunda.  
+> Narzędzie Concurrency Visualizer nie można rozpoznać zaznaczenia w segmencie wykonywania. Zwykle dzieje się po czas trwania segmentu mniejszym niż jedna Milisekunda.  
   
  Aby uzyskać profil wykonania wszystkie włączone (odkrywanie) wątków w aktualnie wybranym zakresie czasu, wybierz **wykonywania** przycisk aktywna Legenda.  
   

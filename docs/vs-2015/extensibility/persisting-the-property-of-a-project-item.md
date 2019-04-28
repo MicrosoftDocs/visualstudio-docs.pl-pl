@@ -11,12 +11,12 @@ ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ccb468c5eca88207594a66d956717caf260666db
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4adcf0f5c5770f5d3ffc0e0ed9bffdb108869c7f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441545"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>Utrwalanie właściwości elementu projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Można utrwalić właściwości dodawane do elementu projektu, takich jak tworze
   
 ### <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Aby uzyskać hierarchii projektu obiektu DTE  
   
-1.  Dodaj następujący kod do Twojego pakietu VSPackage:  
+1. Dodaj następujący kod do Twojego pakietu VSPackage:  
   
     ```csharp  
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));  
@@ -43,7 +43,7 @@ Można utrwalić właściwości dodawane do elementu projektu, takich jak tworze
   
 ### <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Aby zachować właściwości elementu projektu obiektu DTE  
   
-1.  Dodaj następujący kod do kodu podanego w metodzie w poprzedniej procedurze:  
+1. Dodaj następujący kod do kodu podanego w metodzie w poprzedniej procedurze:  
   
     ```csharp  
     IVsBuildPropertyStorage buildPropertyStorage =   
@@ -60,7 +60,7 @@ Można utrwalić właściwości dodawane do elementu projektu, takich jak tworze
   
 ### <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>Aby uzyskać hierarchii projektu przy użyciu IVsMonitorSelection  
   
-1.  Dodaj następujący kod do Twojego pakietu VSPackage:  
+1. Dodaj następujący kod do Twojego pakietu VSPackage:  
   
     ```csharp  
     IVsHierarchy hierarchy = null;  
@@ -102,11 +102,11 @@ Można utrwalić właściwości dodawane do elementu projektu, takich jak tworze
     }  
     ```  
   
-2.  
+2. 
   
 ### <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>Można utrwalić właściwość elementu wybranego projektu, biorąc pod uwagę hierarchii projektu  
   
-1.  Dodaj następujący kod do kodu podanego w metodzie w poprzedniej procedurze:  
+1. Dodaj następujący kod do kodu podanego w metodzie w poprzedniej procedurze:  
   
     ```  
     IVsBuildPropertyStorage buildPropertyStorage =   
@@ -119,16 +119,16 @@ Można utrwalić właściwości dodawane do elementu projektu, takich jak tworze
   
 ### <a name="to-verify-that-the-property-is-persisted"></a>Aby sprawdzić, czy właściwość jest trwały.  
   
-1.  Rozpocznij [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i otworzyć lub utworzyć rozwiązanie.  
+1. Rozpocznij [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i otworzyć lub utworzyć rozwiązanie.  
   
-2.  Wybierz projekt elementu VsPkg.cs w **Eksploratora rozwiązań**.  
+2. Wybierz projekt elementu VsPkg.cs w **Eksploratora rozwiązań**.  
   
-3.  Użyj punktu przerwania lub w przeciwnym razie określenia załadowaniu Twojego pakietu VSPackage i że SetItemAttribute działa.  
+3. Użyj punktu przerwania lub w przeciwnym razie określenia załadowaniu Twojego pakietu VSPackage i że SetItemAttribute działa.  
   
     > [!NOTE]
-    >  Można automatycznie załadować pakietu VSPackage w kontekście interfejsu użytkownika <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Aby uzyskać więcej informacji, zobacz [ładowanie pakietów VSPackage](../extensibility/loading-vspackages.md).  
+    > Można automatycznie załadować pakietu VSPackage w kontekście interfejsu użytkownika <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Aby uzyskać więcej informacji, zobacz [ładowanie pakietów VSPackage](../extensibility/loading-vspackages.md).  
   
-4.  Zamknij [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a następnie otwórz plik projektu w programie Notatnik. Powinien zostać wyświetlony \<autor > tag z wartością Tomasz, w następujący sposób:  
+4. Zamknij [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a następnie otwórz plik projektu w programie Notatnik. Powinien zostać wyświetlony \<autor > tag z wartością Tomasz, w następujący sposób:  
   
     ```  
     <Compile Include="VsPkg.cs">  

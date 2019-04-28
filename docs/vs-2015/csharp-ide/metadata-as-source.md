@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d1a4d269b0b7e1afb151bea5bbd97d5ab770d00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5883708d0ed32f636c5e229147676cf1545f8a47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444595"
 ---
 # <a name="metadata-as-source"></a>Metadane jako źródło
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "54791052"
 Metadane jako źródło umożliwia wyświetlenie metadanych, który jest wyświetlany jako kod źródłowy języka C# w buforze tylko do odczytu. Dzięki temu widok deklaracji typów i elementów członkowskich (bez implementacji). Można wyświetlić metadane jako źródło, uruchamiając **przejdź do definicji** polecenie, aby uzyskać typy lub elementy członkowskie, których kod źródłowy nie jest dostępna do projektu lub rozwiązania.  
   
 > [!NOTE]
->  Jeśli zostanie podjęta próba uruchomienia **przejdź do definicji** polecenia dla typów ani elementów członkowskich, które są oznaczone jako wewnętrzne, zintegrowanego środowiska programistycznego (IDE) nie są wyświetlane metadane jako źródło, niezależnie od tego, czy zestaw odwołujący się jest znajomego, czy nie.  
+> Jeśli zostanie podjęta próba uruchomienia **przejdź do definicji** polecenia dla typów ani elementów członkowskich, które są oznaczone jako wewnętrzne, zintegrowanego środowiska programistycznego (IDE) nie są wyświetlane metadane jako źródło, niezależnie od tego, czy zestaw odwołujący się jest znajomego, czy nie.  
   
  Można wyświetlić metadane jako źródło w dowolnym edytorze kodu lub **definicji kodu** okna.  
   

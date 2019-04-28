@@ -20,12 +20,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b03f7c69e5eac71f9edc790df31d9704a141e590
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 313c189a05ae2a4e338c6f6bb9d7e9341e34284c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446120"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Szybki Start: Debugowanie kodu JavaScript przy użyciu konsoli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 - [Przełączanie kontekstu wykonywania skryptu](#Switching)  
   
 > [!TIP]
->  Jeśli okno konsoli JavaScript jest zamknięta, wybierz **debugowania**>**Windows** > **konsoli JavaScript** otworzyć go ponownie. Okno jest wyświetlane tylko podczas sesji debugowania skryptu.  
+> Jeśli okno konsoli JavaScript jest zamknięta, wybierz **debugowania**>**Windows** > **konsoli JavaScript** otworzyć go ponownie. Okno jest wyświetlane tylko podczas sesji debugowania skryptu.  
   
  Korzystanie z okna konsoli języka JavaScript, możesz porozmawiać z aplikacji bez zatrzymywania i ponownego uruchamiania debugera. Aby uzyskać więcej informacji, zobacz [odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md). Aby uzyskać informacje na temat innych debugowanie funkcji, takich jak za pomocą narzędzia DOM Explorer oraz ustawiania punktów przerwania, JavaScript, zobacz [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md) i [debugowanie aplikacji w programie Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
@@ -67,7 +67,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
  Poniższe kroki umożliwiają utworzenie `FlipView` aplikacji i pokazują, jak interaktywnie debugowanie kodu JavaScript, błąd kodowania.  
   
 > [!CAUTION]
->  Przykładowa aplikacja w tym miejscu jest aplikacji Windows Store. Jednak funkcje konsoli opisane w tym miejscu dotyczą również aplikacje utworzone przy użyciu programu Visual Studio Tools for Apache Cordova.  
+> Przykładowa aplikacja w tym miejscu jest aplikacji Windows Store. Jednak funkcje konsoli opisane w tym miejscu dotyczą również aplikacje utworzone przy użyciu programu Visual Studio Tools for Apache Cordova.  
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>Aby debugować kod JavaScript w aplikacji FlipView  
   
@@ -182,7 +182,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
      Skopiuj i wklej ten kod w wierszu polecenia konsoli JavaScript danych wejściowych.  
   
     > [!TIP]
-    >  Podczas wklejania wiele wierszy kodu w konsoli JavaScript danych wejściowych wiersza, wiersz danych wejściowych konsoli automatycznie wykona przełączenie do trybu wielowierszowego. Można nacisnąć klawisze Ctrl + Alt + M, aby włączyć tryb wielowierszowy włączać i wyłączać. Aby uruchomić skrypt w trybu wielowierszowego, naciśnij klawisze Ctrl + Enter lub wybierz symbol strzałki w prawym dolnym rogu okna. Aby uzyskać więcej informacji, zobacz [trybu jednowierszowego i trybu wielowierszowego w oknie konsoli JavaScript](#SinglelineMultilineMode).  
+    > Podczas wklejania wiele wierszy kodu w konsoli JavaScript danych wejściowych wiersza, wiersz danych wejściowych konsoli automatycznie wykona przełączenie do trybu wielowierszowego. Można nacisnąć klawisze Ctrl + Alt + M, aby włączyć tryb wielowierszowy włączać i wyłączać. Aby uruchomić skrypt w trybu wielowierszowego, naciśnij klawisze Ctrl + Enter lub wybierz symbol strzałki w prawym dolnym rogu okna. Aby uzyskać więcej informacji, zobacz [trybu jednowierszowego i trybu wielowierszowego w oknie konsoli JavaScript](#SinglelineMultilineMode).  
   
 12. Popraw `push` funkcja wywołuje w wierszu polecenia, zastępując `pages.push` z `Data.items.setAt`. Poprawiony kod powinien wyglądać następująco:  
   
@@ -193,7 +193,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
     ```  
   
     > [!TIP]
-    >  Jeśli chcesz używać `pages` zamiast obiektu `Data.items`, należy ustawić punkt przerwania w kodzie, aby zachować `pages` obiekt w zakresie.  
+    > Jeśli chcesz używać `pages` zamiast obiektu `Data.items`, należy ustawić punkt przerwania w kodzie, aby zachować `pages` obiekt w zakresie.  
   
 13. Wybierz symbol zieloną strzałkę, aby uruchomić skrypt.  
   

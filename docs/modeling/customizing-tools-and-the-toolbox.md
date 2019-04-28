@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e06317aa91cf71d109a2e90bc955aa28cc4b4903
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 37bba294dde27fad19122ee281057607f6abc6c8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445797"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Dostosowywanie narzędzi i przybornika
 
@@ -175,7 +175,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   Należy podać niektóre kodu programu, aby wykonać te dostosowania. Aby sprawdzić, jaki kod, musisz podać, zaznacz jeden z tych pól, kliknij Przekształć wszystkie szablony, a następnie Skompiluj rozwiązanie. Powoduje, że raport o błędach. Kliknij dwukrotnie raport o błędach można wyświetlić komentarz, który objaśnia, jaki kod należy dodać.
 
 > [!NOTE]
->  Aby dodać niestandardowy kod, Utwórz definicję klasy częściowej w pliku kodu niezależnie od plików kodu w folderach GeneratedCode. Aby uniknąć utraty wyników pracy, nie należy edytować pliki wygenerowanego kodu. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).
+> Aby dodać niestandardowy kod, Utwórz definicję klasy częściowej w pliku kodu niezależnie od plików kodu w folderach GeneratedCode. Aby uniknąć utraty wyników pracy, nie należy edytować pliki wygenerowanego kodu. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).
 
 #### <a name="creating-custom-connection-code"></a>Tworzenie połączenia niestandardowego kodu
  W każdym odnośniku dyrektywa, łączenia **dyrektywy ról źródłowych** definiuje kartę co typów można przeciągnąć. Podobnie **dyrektywy ról docelowych** definiuje kartę co typów można przeciągnąć. Dla każdego typu, możesz podać, czy zezwolić na połączenia (dla dyrektywy łączenia tego linku), ustawiając **akceptowanie niestandardowe** Flaga, a następnie podając dodatkowego kodu.

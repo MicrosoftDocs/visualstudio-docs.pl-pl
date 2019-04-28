@@ -10,12 +10,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 43521b940d786902f4d502c93b5c0eb54922422f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 76faef002162576cec6b598e499c937caa0c4fbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445984"
 ---
 # <a name="unit-test-basics"></a>Podstawowe informacje o teście jednostkowym
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ Sprawdź, czy kod działa zgodnie z oczekiwaniami, tworzenie i Uruchamianie test
 ### <a name="BKMK_Quick_starts"></a> Przewodniki Szybki Start  
  Aby zapoznać się z wprowadzeniem do testów jednostkowych, które umożliwia przejście bezpośrednio do kodowania zobacz jeden z tych tematów:  
   
-- [Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
+- [Przewodnik: tworzenie i uruchamianie testów jednostkowych zarządzanego kodu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
   
-- [Szybki Start: Programowanie sterowane za pomocą narzędzia Eksplorator testów testami](../test/quick-start-test-driven-development-with-test-explorer.md)  
+- [Szybki start: programowanie sterowane testami za pomocą narzędzia Eksplorator testów](../test/quick-start-test-driven-development-with-test-explorer.md)  
   
 - [Testy jednostkowe kodu natywnego za pomocą narzędzia Eksplorator testów](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
   
@@ -124,7 +124,7 @@ public void Withdraw(double amount)
 7. Aby użyć jednego z platform testów jednostkowych firmy Microsoft, wybierz opcję **projektu testu jednostkowego** z listy szablonów projektu. W przeciwnym razie wybierz szablon projektu jednostki środowiskiem testowym, którego chcesz użyć. Aby przetestować `Accounts` projekt naszego przykładu, czy nazwa projektu `AccountsTests`.  
   
    > [!WARNING]
-   >  Nie wszystkie platform testów jednostkowych innych firm i open source udostępniają szablon projektu Visual Studio. Zapoznaj się z dokumentem framework, aby uzyskać informacje o tworzeniu projektu.  
+   > Nie wszystkie platform testów jednostkowych innych firm i open source udostępniają szablon projektu Visual Studio. Zapoznaj się z dokumentem framework, aby uzyskać informacje o tworzeniu projektu.  
   
 8. W projekcie testu jednostki Dodaj odwołanie do projektu kodu, w ramach badania, w tym przykładzie do projektu kont.  
   
@@ -238,7 +238,7 @@ public void My_Test ()
 ### <a name="BKMK_Running_tests_after_every_build"></a> Uruchamianie testów po każdej kompilacji  
   
 > [!WARNING]
->  Uruchamianie testów jednostek po każdej kompilacji jest obsługiwane tylko w programie Visual Studio Enterprise.  
+> Uruchamianie testów jednostek po każdej kompilacji jest obsługiwane tylko w programie Visual Studio Enterprise.  
   
 |||  
 |-|-|  
@@ -263,7 +263,7 @@ public void My_Test ()
 1. W edytorze programu Visual Studio Ustaw punkt przerwania w metodach testów, które chcesz debugować.  
   
    > [!NOTE]
-   >  Ponieważ metody testowe można uruchomić w dowolnej kolejności, ustaw punkty przerwania w wszystkich metodach testowych, które chcesz debugować.  
+   > Ponieważ metody testowe można uruchomić w dowolnej kolejności, ustaw punkty przerwania w wszystkich metodach testowych, które chcesz debugować.  
   
 2. W Eksploratorze testów Wybierz metody badania, a następnie wybierz **Debuguj wybrane testy** z menu skrótów.  
   
@@ -280,7 +280,7 @@ public void My_Test ()
    **ODP.:** Tak. *Metody testowe opartych na danych* pozwala testować zakres wartości z metodą testową pojedyncza jednostka. Użyj `DataSource` atrybut metody testowej, który określa źródło danych i tabelę, która zawiera wartości zmiennych, które mają zostać przetestowane.  W treści metody, przypisz wartości wierszy do zmiennych, przy użyciu `TestContext.DataRow[` *ColumnName* `]` indeksatora.  
   
 > [!NOTE]
->  Te procedury dotyczą tylko metody testowe, które piszesz za pomocą środowiska testów jednostkowych Microsoft dla kodu zarządzanego. Jeśli używasz innej struktury, zajrzyj do dokumentacji framework równoważne funkcje.  
+> Te procedury dotyczą tylko metody testowe, które piszesz za pomocą środowiska testów jednostkowych Microsoft dla kodu zarządzanego. Jeśli używasz innej struktury, zajrzyj do dokumentacji framework równoważne funkcje.  
   
  Załóżmy na przykład, możemy dodać metodę niepotrzebne `CheckingAccount` klasę, która nosi nazwę `AddIntegerHelper`. `AddIntegerHelper` dodaje dwie liczby całkowite.  
   

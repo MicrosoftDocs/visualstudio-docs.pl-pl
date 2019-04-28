@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4530b12ff3c5fa05d63d845cf4d364d2c238ff77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9f0a185ce4f78a81d1ed806e38b102296093f48
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441006"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrowanie modeli za pomocą Visual Studio Modelbus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60041292"
  ModelBus umożliwia utworzenie unikatowych odwołania do modelu lub do określonego elementu w modelu. To odwołanie mogą być przechowywane poza modelem, na przykład w elemencie w innym modelem. Gdy przy późniejszej okazji, narzędzie chce, aby uzyskać dostęp do elementu, infrastruktury Model Bus odpowiedni model obciążenia i zwraca element. Jeśli chcesz, możesz wyświetlić modelu do użytkownika. Jeśli plik nie jest dostępny w poprzedniej lokalizacji, ModelBus będzie monitować użytkownika o znalezienie go. Jeśli użytkownik znajduje się plik, ModelBus naprawi wszystkie odwołania do tego pliku.
 
 > [!NOTE]
->  W bieżącym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] implementacji ModelBus, połączone modele musi być elementów w tym samym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania.
+> W bieżącym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] implementacji ModelBus, połączone modele musi być elementów w tym samym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania.
 
  Aby uzyskać dodatkowe informacje i przykładowy kod zobacz:
 
@@ -130,7 +130,7 @@ ms.locfileid: "60041292"
 5. Kliknij przycisk **OK**, a następnie kliknij przycisk **Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań.
 
     > [!WARNING]
-    >  Jeśli nie wybrano prawidłowego modelu lub jednostki przycisku OK nie wpłyną, mimo że może pojawić się włączone.
+    > Jeśli nie wybrano prawidłowego modelu lub jednostki przycisku OK nie wpłyną, mimo że może pojawić się włączone.
 
 6. Jeśli określono listę typów docelowych, takich jak Company.FamilyTree.Person, następnie należy dodać odwołanie do zestawu do projektu DSL odwołuje się do elementu docelowego DSL, na przykład Company.FamilyTree.Dsl.dll biblioteki DLL
 
@@ -143,7 +143,7 @@ ms.locfileid: "60041292"
 3. W projekcie debugowanie w doświadczalnym wystąpieniu programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], dodać pliki, które są wystąpieniami każdego DSL.
 
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus tylko może rozpoznać odwołania do modeli, które są elementy w tym samym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania. Na przykład nie można utworzyć odwołania do pliku modelu w innej części systemu plików.
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus tylko może rozpoznać odwołania do modeli, które są elementy w tym samym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania. Na przykład nie można utworzyć odwołania do pliku modelu w innej części systemu plików.
 
 4. Utwórz niektóre elementy i łącza w wystąpieniu narażonych DSL i zapisz go.
 
@@ -163,7 +163,7 @@ ms.locfileid: "60041292"
  Aby utworzyć odwołanie do elementu, potrzebna jest karta pliku modelu i element, którego ma dotyczyć.
 
 > [!NOTE]
->  Za pomocą [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus, można utworzyć odwołania tylko do elementów w tym samym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania.
+> Za pomocą [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus, można utworzyć odwołania tylko do elementów w tym samym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania.
 
 ### <a name="import-the-exposed-dsl-assemblies"></a>Importowanie narażonych zestawów języka DSL
  W projekcie odbierająca komunikaty należy dodać odwołania projektu do zestawów DSL i elementu ModelBusAdapter narażonych DSL.
@@ -197,7 +197,7 @@ using System.Linq;
  Z AdapterManager można uzyskać karty, która zapewnia dostęp do poszczególnych elementów w modelu.
 
 > [!NOTE]
->  Po zakończeniu z nim, musi dysponować karty. Jest Najwygodniejszym sposobem osiągnięcia tego `using` instrukcji. Ilustruje to poniższy przykład.
+> Po zakończeniu z nim, musi dysponować karty. Jest Najwygodniejszym sposobem osiągnięcia tego `using` instrukcji. Ilustruje to poniższy przykład.
 
 ```
 // The file path of a model instance of the FamilyTree DSL:

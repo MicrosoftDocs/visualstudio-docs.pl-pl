@@ -28,12 +28,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d80f8b9a6786d84d645a91dead2ac05a829718b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1277370ca14044755988affc5ccf2bf1fb851a09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443209"
 ---
 # <a name="viewing-the-structure-of-code"></a>Wyświetlanie struktury kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Można zbadać obiektów i elementów członkowskich w projektach programu Visua
  Jeśli masz program Visual Studio Enterprise umożliwia mapy kodu wizualizować strukturę kodu oraz jego zależności dla całego rozwiązania, a następnie przejść do części kodu, które Cię interesują. Aby uzyskać więcej informacji, zobacz [mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).  
   
 > [!NOTE]
->  Wersja Visual Studio i ustawienia, którego używasz może mieć wpływ na funkcje w IDE. Mogą się różnić od tych opisanych w tym temacie.  
+> Wersja Visual Studio i ustawienia, którego używasz może mieć wpływ na funkcje w IDE. Mogą się różnić od tych opisanych w tym temacie.  
   
 ## <a name="BKMK_ClassView"></a> Widok klas (Visual Basic, C#, C++)  
  **Widok klas** jest wyświetlany jako część **Eksploratora rozwiązań** jak również w osobnym oknie. **Widok klas** okno wyświetla elementy aplikacji. Górne okienko wyświetla przestrzenie nazw, typów, interfejsów, wyliczenia i klas oraz dolne okienko elementów członkowskich, które należą do wybranego w górnym okienku typu. Korzystając z tego okna, można przenieść do definicji elementu członkowskiego w kodzie źródłowym (lub **przeglądarki obiektów** Jeśli element jest zdefiniowane poza rozwiązania).  

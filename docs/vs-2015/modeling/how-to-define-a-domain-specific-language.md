@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ab840dfac15b917ff1b87a17d4a0670c3f275343
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9df436b51619211c1f79e7176479c7466f3de427
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441062"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Porady: definiowanie języka właściwego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
    - Wybierz **minimalny języka** w innych przypadkach lub sprawdzić.  
   
        > [!NOTE]
-       >  Jeśli chcesz utworzyć diagram klasy lub diagramie składników, należy wziąć pod uwagę przy użyciu modeli UML. Narzędzia modelowania UML zapewniają zestaw diagramów, które są zintegrowane w jednym modelu. Są rozszerzalne i może zostać zintegrowany z DSL za pomocą ModelBus. Aby uzyskać więcej informacji, zobacz [tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md).  
+       > Jeśli chcesz utworzyć diagram klasy lub diagramie składników, należy wziąć pod uwagę przy użyciu modeli UML. Narzędzia modelowania UML zapewniają zestaw diagramów, które są zintegrowane w jednym modelu. Są rozszerzalne i może zostać zintegrowany z DSL za pomocą ModelBus. Aby uzyskać więcej informacji, zobacz [tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md).  
   
    - Wybierz **minimalny projektanta formularza systemu Windows** lub **minimalny WPF Designer** utworzyć DSL, który jest wyświetlany na powierzchni Windows Forms i WPF. Należy napisać kod, aby zdefiniować edytora. Więcej informacji znajduje się w następujących tematach:  
   
@@ -108,7 +108,7 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
  Zamknij wystąpienie doświadczalne programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 > [!NOTE]
->  Nie będzie można wyświetlić kształty, na przykład plik testu, modyfikacji język DSL. Jednak można utworzyć nowych elementów.  
+> Nie będzie można wyświetlić kształty, na przykład plik testu, modyfikacji język DSL. Jednak można utworzyć nowych elementów.  
   
 ### <a name="modifying-the-template-dsl"></a>Modyfikowanie szablonu DSL  
  Zmień nazwę i zachować niektóre lub wszystkie z klasami domeny i kształt klasy w szablonie definicji DSL. Nowe nazwy klasy powinna być prawidłowych nazw środowiska CLR, bez spacji i znaków przestankowych.  
@@ -137,7 +137,7 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
   Poniżej opisano sposób tworzenia najbardziej przydatne rodzaju funkcje języka DSL. Istnieje wiele innych wzorców za pomocą których można skonstruować DSL, ale są one używane najczęściej.  
   
 > [!NOTE]
->  Po dodaniu funkcji, nie zapomnij kliknąć **Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań, przed kompilowanie i uruchamianie DSL.  
+> Po dodaniu funkcji, nie zapomnij kliknąć **Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań, przed kompilowanie i uruchamianie DSL.  
   
  Na poniższej ilustracji przedstawiono klasy i relacje część DSL, który służy jako przykład w tym temacie.  
   
@@ -148,7 +148,7 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
  ![Wystąpienie modelu DSL wygenerowanego](../modeling/media/music-instance.png "Music_Instance")  
   
 > [!NOTE]
->  "Model" odnosi się do wystąpienia użytkownikom tworzenie, która zwykle jest wyświetlany jako diagram DSL. W tym temacie omówiono diagramem definicji DSL i diagramy modelu, które są wyświetlane, gdy jest używana DSL.  
+> "Model" odnosi się do wystąpienia użytkownikom tworzenie, która zwykle jest wyświetlany jako diagram DSL. W tym temacie omówiono diagramem definicji DSL i diagramy modelu, które są wyświetlane, gdy jest używana DSL.  
   
 ## <a name="classes"></a> Definiowanie klas domeny  
  Klasy domeny reprezentują koncepcji DSL. Wystąpienia są *elementów modelu*. Na przykład w **MusicLibrary** DSL może być klasami domeny o nazwie **albumu** i **utworu**.  
@@ -185,7 +185,7 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
  Aby uzyskać więcej informacji, zobacz [właściwości relacji domeny](../modeling/properties-of-domain-relationships.md) i [ról właściwości domeny](../modeling/properties-of-domain-roles.md).  
   
 > [!NOTE]
->  Osadzanie nie jest taka sama jak dziedziczenie. Elementy podrzędne w relacji osadzania dziedziczy funkcje z obiektów nadrzędnych.  
+> Osadzanie nie jest taka sama jak dziedziczenie. Elementy podrzędne w relacji osadzania dziedziczy funkcje z obiektów nadrzędnych.  
   
 ### <a name="add-domain-properties-to-each-domain-class"></a>Dodawanie właściwości domeny do każdej klasy domeny  
  Właściwości domeny przechowywać wartości. Oto przykłady: Nazwa, nazwa, Data publikacji.  
@@ -296,7 +296,7 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
    2. Kliknij prawym przyciskiem myszy węzeł w węźle **karty przybornika** który ma taką samą nazwę jak DSL, na przykład MusicLibrary. Kliknij przycisk **narzędzie elementu Dodawanie**.  
   
        > [!NOTE]
-       >  Kliknięcie prawym przyciskiem myszy **narzędzia** węzła, nie będzie mógł przeglądać **narzędzia elementu Dodawanie**. Zamiast tego kliknij węzeł powyżej.  
+       > Kliknięcie prawym przyciskiem myszy **narzędzia** węzła, nie będzie mógł przeglądać **narzędzia elementu Dodawanie**. Zamiast tego kliknij węzeł powyżej.  
   
    3. W oknie dialogowym właściwości nowego elementu wybierz narzędzie, należy ustawić **klasy** do klasy domeny, która została ostatnio dodana.  
   
@@ -464,7 +464,7 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
          W obszarze **Właściwość wyświetlania**, wybierz właściwość, która powinna być wyświetlana na liście. W tym przykładzie jest tytuł.  
   
 > [!NOTE]
->  Za pomocą pól ścieżki w mapowaniu Dekoratora i przedziału Mapuj pola, można tworzyć bardziej złożone relacje między klasami domeny i kształt przedziału.  
+> Za pomocą pól ścieżki w mapowaniu Dekoratora i przedziału Mapuj pola, można tworzyć bardziej złożone relacje między klasami domeny i kształt przedziału.  
   
 #### <a name="to-define-a-tool-for-creating-the-shape"></a>Aby zdefiniować narzędzie do tworzenia kształtu  
   
@@ -475,7 +475,7 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
 3. Kliknij prawym przyciskiem myszy węzeł w węźle **karty przybornika** który ma taką samą nazwę jak DSL, na przykład MusicLibrary. Kliknij przycisk **narzędzie elementu Dodawanie**.  
   
     > [!NOTE]
-    >  Kliknięcie prawym przyciskiem myszy **narzędzia** węzła, nie będzie mógł przeglądać **narzędzia elementu Dodawanie**. Zamiast tego kliknij węzeł powyżej.  
+    > Kliknięcie prawym przyciskiem myszy **narzędzia** węzła, nie będzie mógł przeglądać **narzędzia elementu Dodawanie**. Zamiast tego kliknij węzeł powyżej.  
   
 4. W oknie dialogowym właściwości nowego elementu wybierz narzędzie, należy ustawić **klasy** do klasy domeny, która została ostatnio dodana.  
   

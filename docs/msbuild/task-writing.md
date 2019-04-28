@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac45a955c1d6545fa0d2052843c3d48b92e4083
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: de860c8d177a12d8283ae4f3a9b0f36dab1cc96d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439997"
 ---
 # <a name="task-writing"></a>Wpisywanie zadania
 Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Zadania są zawarte w elementów docelowych. Bibliotekę typowych zadań jest dołączana [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], możesz również tworzyć własnych zadań. Aby uzyskać więcej informacji na temat biblioteki zadań, które są dołączone [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], zobacz [zadania, odwołanie](../msbuild/msbuild-task-reference.md).
@@ -97,7 +97,7 @@ namespace MyTasks
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Pliku *Microsoft.Common.Tasks* plik projektu, który zawiera listę `UsingTask` elementy, które rejestrują wszystkie zadania, które są dostarczane z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Ten plik jest automatycznie dołączane podczas tworzenia każdego projektu. Jeśli zadanie, który jest zarejestrowany w *Microsoft.Common.Tasks* również jest zarejestrowany w bieżącym pliku projektu, pierwszeństwo ma bieżącego pliku projektu; oznacza to, że można przesłonić domyślnego zadania przy użyciu własnych zadań, który ma taką samą nazwę.
 
 > [!TIP]
->  Można wyświetlić listę zadań, które są dostarczane z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , wyświetlając zawartość *Microsoft.Common.Tasks*.
+> Można wyświetlić listę zadań, które są dostarczane z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , wyświetlając zawartość *Microsoft.Common.Tasks*.
 
 ## <a name="raise-events-from-a-task"></a>Wywoływanie zdarzeń od zadania
  Jeśli zadanie jest pochodną <xref:Microsoft.Build.Utilities.Task> klasy pomocnika, umożliwia dowolny z następujących metod pomocnika na <xref:Microsoft.Build.Utilities.Task> klasy, aby wywołać zdarzenia, które będą przechwytywane i wyświetlane przez dowolnego rejestratorów zarejestrowanych:

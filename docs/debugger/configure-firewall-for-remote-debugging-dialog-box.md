@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 75342630e347eaabe6854498c43294599afae5a5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563737"
 ---
 # <a name="configure-firewall-for-remote-debugging-dialog-box"></a>Konfigurowanie zapory do zdalnego debugowania — Okno dialogowe
 To okno dialogowe pojawia się, gdy Zapora Windows zablokuje debugera na odbieranie informacji za pośrednictwem sieci. Aby kontynuować, zdalne debugowanie, możesz otworzyć dziury w zaporze aby debuger może odbierać informacje.

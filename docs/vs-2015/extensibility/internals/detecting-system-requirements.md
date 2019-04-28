@@ -11,12 +11,12 @@ ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 51
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cdc69441de852e16adc047465aeec30003fe5170
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 467554b8e50878bcdf1029e4792bbf168a09fa11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445246"
 ---
 # <a name="detecting-system-requirements"></a>Wykrywanie wymagań systemowych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Pakietu VSPackage nie może działać, jeśli nie zainstalowano programu Visual 
    Po zainstalowaniu wersji "wyżej" klucze rejestru, w przypadku tej wersji, a także jak w przypadku wersji "niżej" są dodawane. Oznacza to jeśli jest zainstalowany w wersji Enterprise, klucz instalacji jest równa 1 dla przedsiębiorstw, a także wersje Professional i społeczności. W związku z tym należy sprawdzić tylko w przypadku wersji "najwyższą", których potrzebujesz.  
   
 > [!NOTE]
->  W 64-bitową wersję Edytora rejestru w 32-bitowe klucze są wyświetlane w obszarze HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\. Klucze programu Visual Studio, podlegają HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\.  
+> W 64-bitową wersję Edytora rejestru w 32-bitowe klucze są wyświetlane w obszarze HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\. Klucze programu Visual Studio, podlegają HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\.  
   
 |Produkt|Key|  
 |-------------|---------|  

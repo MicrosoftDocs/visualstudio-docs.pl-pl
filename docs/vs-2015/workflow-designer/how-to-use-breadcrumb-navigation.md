@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97cfb7ddba95ccf4c2f74e7c924c6f62b91254a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 64f84d33a814937df74002ffeb2fe7453694377e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444136"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Instrukcje: Używanie nawigacji za pomocą linków do stron nadrzędnych
 Istnieją trzy podstawowe sposoby zmianę zestawu działań, które są wyświetlane w [!INCLUDE[wfd1](../includes/wfd1-md.md)]:  
@@ -38,7 +38,7 @@ Istnieją trzy podstawowe sposoby zmianę zestawu działań, które są wyświet
 2. Po zmianie stanu stanu rozszerzenia, klikając przycisk Nowy stan rozszerzenia jest zapisywany w XAML.  
   
     > [!WARNING]
-    >  Nie wszystkie działania można rozszerzać w miejscu. Istnieją dwa przypadki, gdy działanie nie może być rozwinięty w miejscu: albo nadrzędnym działania nie zezwala na jego elementów podrzędnych do wyodrębnienia w miejscu, (na przykład działania w elemencie Schemat blokowy nie może być rozwinięty w miejscu), lub nie zezwala na się Projektant działań można rozwinąć w miejscu. Mimo że żaden z Projektanci działań objętych [!INCLUDE[wfd2](../includes/wfd2-md.md)] ostatnie zachowanie, niektóre działania niestandardowe mogą stosować tego zachowania.  
+    > Nie wszystkie działania można rozszerzać w miejscu. Istnieją dwa przypadki, gdy działanie nie może być rozwinięty w miejscu: albo nadrzędnym działania nie zezwala na jego elementów podrzędnych do wyodrębnienia w miejscu, (na przykład działania w elemencie Schemat blokowy nie może być rozwinięty w miejscu), lub nie zezwala na się Projektant działań można rozwinąć w miejscu. Mimo że żaden z Projektanci działań objętych [!INCLUDE[wfd2](../includes/wfd2-md.md)] ostatnie zachowanie, niektóre działania niestandardowe mogą stosować tego zachowania.  
   
 ### <a name="expanding-all-or-collapsing-all-activities"></a>Wszystkie rozwijanie lub zwijanie wszystkich działań  
   
@@ -47,7 +47,7 @@ Istnieją trzy podstawowe sposoby zmianę zestawu działań, które są wyświet
 2. Po zastosowaniu wszystkich rozwiń lub Zwiń wszystkie stany, możesz kliknąć **przywrócić** przycisk, który pojawia się, aby wrócić do wyszukiwania w stanie uprzednio zastosowane do każdego działania.  
   
     > [!WARNING]
-    >  Jeśli działania, takie jak <xref:System.Activities.Statements.Flowchart>, wybrał poza rozwiń w miejscu, funkcje skojarzone z **Rozwiń wszystko** i **Zwiń wszystko** przycisków jest wyłączona na **schematu blokowego**  projektanta. [!INCLUDE[crabout](../includes/crabout-md.md)] **schemat blokowy** projektanta, zobacz [schemat blokowy](../workflow-designer/flowchart-activity-designer.md) tematu.  
+    > Jeśli działania, takie jak <xref:System.Activities.Statements.Flowchart>, wybrał poza rozwiń w miejscu, funkcje skojarzone z **Rozwiń wszystko** i **Zwiń wszystko** przycisków jest wyłączona na **schematu blokowego**  projektanta. [!INCLUDE[crabout](../includes/crabout-md.md)] **schemat blokowy** projektanta, zobacz [schemat blokowy](../workflow-designer/flowchart-activity-designer.md) tematu.  
   
     > [!WARNING]
-    >  Rozwiń wszystkie efekty specjalne zawiera również w **przełącznika** i **TryCatch** Projektanci działań. Po kliknięciu **Rozwiń wszystko**, zostaną wyświetlone wszystkie przypadki przełącznika i wszystkie bloki try/catch/finally. Klikając **przywrócić** lub **Zwiń wszystko** zwraca te projektantów do stanu domyślnego, z którego możesz kliknąć poszczególne przypadek/bloku, aby wyświetlić jego zawartość.
+    > Rozwiń wszystkie efekty specjalne zawiera również w **przełącznika** i **TryCatch** Projektanci działań. Po kliknięciu **Rozwiń wszystko**, zostaną wyświetlone wszystkie przypadki przełącznika i wszystkie bloki try/catch/finally. Klikając **przywrócić** lub **Zwiń wszystko** zwraca te projektantów do stanu domyślnego, z którego możesz kliknąć poszczególne przypadek/bloku, aby wyświetlić jego zawartość.

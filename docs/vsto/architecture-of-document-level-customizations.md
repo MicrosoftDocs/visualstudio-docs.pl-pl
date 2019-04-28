@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ec9dcc6f5458e33e5ea215d65aacd48c622f111
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0d8b99a547ebe80494d80aa26903c58060d44947
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440373"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architektura dostosowywania na poziomie dokumentu
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] zawiera projekty do tworzenia dostosowań poziomie dokumentu dla programu Microsoft Office Word i Microsoft Office Excel. W tym temacie opisano następujące aspekty dostosowań poziomu dokumentu:
@@ -49,7 +49,7 @@ ms.locfileid: "60052003"
  Jeśli użytkownik otworzy wielu dostosowań na poziomie dokumentu, w tym samym czasie, każdy zestaw jest ładowany w domenie innej aplikacji. Oznacza to, że jedno rozwiązanie, który zachowuje się nieprawidłowo nie może powodować inne rozwiązania, aby zakończyć się niepowodzeniem. Dostosowania na poziomie dokumentu są przeznaczone do pracy z pojedynczego dokumentu w domenie pojedynczej aplikacji. Nie są przeznaczone do komunikacji dla wielu dokumentów. Aby uzyskać więcej informacji o domenach aplikacji, zobacz [domen aplikacji](/dotnet/framework/app-domains/application-domains).
 
 > [!NOTE]
->  Dostosowania na poziomie dokumentu, które tworzysz przy użyciu narzędzi Office developer tools w programie Visual Studio są przeznaczone do użycia tylko wtedy, gdy aplikacja jest uruchamiana przez użytkownika końcowego. Jeśli aplikacja jest uruchamiana programowo, na przykład za pomocą automatyzacji, dostosowań mogą nie działać zgodnie z oczekiwaniami.
+> Dostosowania na poziomie dokumentu, które tworzysz przy użyciu narzędzi Office developer tools w programie Visual Studio są przeznaczone do użycia tylko wtedy, gdy aplikacja jest uruchamiana przez użytkownika końcowego. Jeśli aplikacja jest uruchamiana programowo, na przykład za pomocą automatyzacji, dostosowań mogą nie działać zgodnie z oczekiwaniami.
 
 ### <a name="design-time-and-run-time-experiences"></a>Środowiska w czasie projektowania i w czasie wykonywania
  Aby zrozumieć, Architektura dostosowywania na poziomie dokumentu, pomaga to zrozumieć środowiska projektowania rozwiązania i uruchamianie rozwiązania.
@@ -118,7 +118,7 @@ ms.locfileid: "60052003"
  ![Architektura dostosowywania pakietu office 2007](../vsto/media/office07-custom.png "Architektura dostosowywania pakietu Office 2007")
 
 > [!NOTE]
->  W rozwiązaniach pakietu Office, których platformą docelową [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], rozwiązania mogą wywoływać model obiektów aplikacji hosta, za pomocą podstawowego zestawu międzyoperacyjnego (PIA) informacje o typie osadzony w zestawie rozwiązania, zamiast wywoływać metodę do PIA bezpośrednio. Aby uzyskać więcej informacji, zobacz [projektowania i tworzenia rozwiązań dla pakietu Office](../vsto/designing-and-creating-office-solutions.md).
+> W rozwiązaniach pakietu Office, których platformą docelową [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], rozwiązania mogą wywoływać model obiektów aplikacji hosta, za pomocą podstawowego zestawu międzyoperacyjnego (PIA) informacje o typie osadzony w zestawie rozwiązania, zamiast wywoływać metodę do PIA bezpośrednio. Aby uzyskać więcej informacji, zobacz [projektowania i tworzenia rozwiązań dla pakietu Office](../vsto/designing-and-creating-office-solutions.md).
 
 ### <a name="loading-process"></a>Proces ładowania
  Gdy użytkownik otwiera dokument, który jest częścią rozwiązania Microsoft Office, wykonywane są następujące kroki.

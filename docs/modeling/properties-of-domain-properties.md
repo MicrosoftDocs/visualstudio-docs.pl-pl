@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 310a12b51987d9a324be24757ba3346b8b0303ee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 23bac93b6e5892e8a4d4680e6829240fed9a03d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443134"
 ---
 # <a name="properties-of-domain-properties"></a>Właściwości właściwości domeny
 A *właściwość domeny* jest funkcją elementu modelu, który może zawierać wartości. Na przykład `Person` klasa domeny może mieć właściwości `Name` i `BirthDate`. W definicji DSL właściwości domeny są wyświetlane w polu Domena klas na diagramie, a w ramach klasy domeny w Eksplorator DSL. Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md).
 
 > [!NOTE]
->  Wyraz "property" ma dwa zastosowania. A *właściwość domeny* to funkcja, która definiuje się na klasę domeny. Z kolei ma wiele elementów języka DSL *właściwości*, które są wymienione w **właściwości** okna w definicji DSL. Na przykład dla każdej właściwości domeny ma zestaw właściwości, które są opisane w tym temacie.
+> Wyraz "property" ma dwa zastosowania. A *właściwość domeny* to funkcja, która definiuje się na klasę domeny. Z kolei ma wiele elementów języka DSL *właściwości*, które są wymienione w **właściwości** okna w definicji DSL. Na przykład dla każdej właściwości domeny ma zestaw właściwości, które są opisane w tym temacie.
 
  W czasie wykonywania, gdy użytkownik tworzy wystąpienia klasy domeny, wartości właściwości domeny są widoczne w oknie dialogowym właściwości i mogą być wyświetlane na kształty.
 

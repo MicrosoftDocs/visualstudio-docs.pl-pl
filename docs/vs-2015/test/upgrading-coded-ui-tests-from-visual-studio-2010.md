@@ -8,12 +8,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 58bfe0a2a6c337081ebb96464a701decb73cc022
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 42db6024353e3b26ddcaf6b5fa838ff791d964f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445895"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Aktualizowanie kodowanych testów interfejsu użytkownika z Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ Testowanie projektów zawierających kodowane testy interfejsu użytkownika, kt�
 - Visual Studio Enterprise
 
 > [!NOTE]
->  Visual Studio zawiera więcej niż jeden typ projektu testowego. Jeśli tworzysz nowy kodowany test interfejsu użytkownika, zostanie utworzony w typu projektu kodowanego testu interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [uaktualnianie testów ze starszych wersji programu Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
+> Visual Studio zawiera więcej niż jeden typ projektu testowego. Jeśli tworzysz nowy kodowany test interfejsu użytkownika, zostanie utworzony w typu projektu kodowanego testu interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [uaktualnianie testów ze starszych wersji programu Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
 
 > [!WARNING]
->  [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Projekty testowe, które zawiera kodowane testy interfejsu użytkownika musi zostać zrekompilowany, po otwarciu projektu testowego w [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] lub [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] side-by-side przy użyciu [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
+> [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Projekty testowe, które zawiera kodowane testy interfejsu użytkownika musi zostać zrekompilowany, po otwarciu projektu testowego w [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] lub [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] side-by-side przy użyciu [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
 
 > [!WARNING]
->  Jeśli projekt testowy, który został utworzony w [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] i zawiera tylko testów jednostkowych jest otwarty w [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], kodowane testy interfejsu użytkownika nie można dodać do niego. Podobnie nie można dodać kodowanego testu interfejsu użytkownika do projektu testu jednostkowego, który został utworzony w [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
+> Jeśli projekt testowy, który został utworzony w [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] i zawiera tylko testów jednostkowych jest otwarty w [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], kodowane testy interfejsu użytkownika nie można dodać do niego. Podobnie nie można dodać kodowanego testu interfejsu użytkownika do projektu testu jednostkowego, który został utworzony w [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
 
 ## <a name="compatibility-issues-between-visual-studio-2010-and-visual-studio-2012"></a>Problemy ze zgodnością między Visual Studio 2010 i Visual Studio 2012
  Poniższa lista zawiera problemy, które należy wiedzieć podczas migrowania kodowane testy interfejsu użytkownika między [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] i [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
 
 > [!CAUTION]
->  Jest to znany problem dotyczący odwołania w projektach testów interfejsu użytkownika kodowany nie są wyświetlane w Eksploratorze rozwiązań. Aby uzyskać więcej informacji, zobacz plik ReadMe dołączonym [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] nośnika instalacyjnego.
+> Jest to znany problem dotyczący odwołania w projektach testów interfejsu użytkownika kodowany nie są wyświetlane w Eksploratorze rozwiązań. Aby uzyskać więcej informacji, zobacz plik ReadMe dołączonym [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] nośnika instalacyjnego.
 
 |Kodowany interfejs użytkownika funkcji|Problem|Rozwiązanie|
 |----------------------------|-----------|--------------|

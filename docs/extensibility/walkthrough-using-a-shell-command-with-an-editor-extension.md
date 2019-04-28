@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3011664cc2261b0213e7ce743167579b2b0786
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d0eade1bf17955bce52ea53b159f23102afb74b8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444919"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Przewodnik: Użyj polecenia powłoki z rozszerzeniem edytora
 Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora. W tym instruktażu przedstawiono sposób dodawania zakończeń widoku tekstu w edytorze za pomocą wywołania polecenia menu.
@@ -52,7 +52,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
  Ponieważ dodajesz składnik MEF do pakietu VSPackage, należy określić obu rodzajów zasobów w manifeście.
 
 > [!NOTE]
->  Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
+> Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
 
 ### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>Aby odwołać się do składnik listy MEF projektu pakietu VSPackage
 

@@ -10,12 +10,12 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b09ebf838b33eaddff485e179209a564ae81807a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 299cca5249872b1be7f20cf4fca8c0dcd563794c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784249"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Edytowanie wzorców obciążenia w celu modelu aktywności wirtualnych użytkowników
 
@@ -128,27 +128,27 @@ Wzorzec obciążenia jest składnikiem scenariusza. Scenariusze, wraz z ich wzor
 
 ### <a name="to-change-the-load-pattern"></a>Aby zmienić wzorzec obciążenia
 
-1.  Otwórz test obciążenia.
+1. Otwórz test obciążenia.
 
-2.  W **edytorze testu obciążeniowego**w *scenariuszy* folder, rozwiń węzeł scenariusz, aby edytować wzorzec obciążenia i wybrać wzorzec obciążenia dla scenariusza.
+2. W **edytorze testu obciążeniowego**w *scenariuszy* folder, rozwiń węzeł scenariusz, aby edytować wzorzec obciążenia i wybrać wzorzec obciążenia dla scenariusza.
 
     > [!NOTE]
     > Treść węzła wzorca obciążenia, jest wyświetlany w drzewie scenariusza w teście obciążenia odzwierciedla profilu obciążenia, można wybrać podczas tworzenia obciążenia testu. Może być albo **stałej Załaduj profil** lub **kroku Załaduj profil**.
 
-3.  Naciśnij klawisz **F4** do wyświetlenia **właściwości** okna.
+3. Naciśnij klawisz **F4** do wyświetlenia **właściwości** okna.
 
      **Wzorca obciążenia** i **parametry** kategorii są wyświetlane w **właściwości** okna.
 
-4.  (Opcjonalnie) Zmiana **wzorzec** właściwość **wzorca obciążenia** kategorii.
+4. (Opcjonalnie) Zmiana **wzorzec** właściwość **wzorca obciążenia** kategorii.
 
      Wybrane opcje dla **wzorzec** właściwości są **kroku**, **stałej**, i **na podstawie celem**. Aby uzyskać więcej informacji na temat typów wzorca obciążenia, zobacz [Określ liczbę użytkowników wirtualnych przy użyciu wzorców obciążenia w scenariuszu testu obciążenia](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-5.  (Opcjonalnie) W **parametry** kategorii, zmień wartości.
+5. (Opcjonalnie) W **parametry** kategorii, zmień wartości.
 
     > [!NOTE]
     > Wartości można ustawić dla **parametry** różnią się w zależności od wartości, które zostały wybrane do **wzorzec** właściwości.
 
-6.  Po zmianie właściwości, wybierz **Zapisz** na **pliku** menu. Następnie można uruchomić test obciążenia przy użyciu nowego wzorca obciążenia.
+6. Po zmianie właściwości, wybierz **Zapisz** na **pliku** menu. Następnie można uruchomić test obciążenia przy użyciu nowego wzorca obciążenia.
 
 ## <a name="see-also"></a>Zobacz także
 

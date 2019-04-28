@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c9097a8c067ce4e04dd54f879a6c1388f854d7ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dfa2d0cb454dba07a036883a296d364cb3182afc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440145"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Spędzisz mniej czasu na debugowaniu aplikacji, jeśli będziesz używać Intell
 |**Nieobsługiwane**|-C++, inne języki i skryptu<br />— Usługi Windows, Silverlight, Xbox lub [!INCLUDE[winmobile](../includes/winmobile-md.md)] aplikacji|  
   
 > [!NOTE]
->  Jeśli chcesz debugować proces, który jest już uruchomiony, nie możesz użyć IntelliTrace. IntelliTrace należy uruchomić, gdy proces jest uruchamiany.  
+> Jeśli chcesz debugować proces, który jest już uruchomiony, nie możesz użyć IntelliTrace. IntelliTrace należy uruchomić, gdy proces jest uruchamiany.  
   
 ## <a name="IntelliTraceVSTraditional"></a> Dlaczego debugować za pomocą IntelliTrace?  
  Tradycyjny lub *live* debugowania pokazuje tylko aplikacji bieżący stan, z ograniczoną ilością danych na temat przeszłych zdarzeń. Musisz albo wywnioskować te zdarzenia, w oparciu o bieżący stan aplikacji lub musisz odtworzyć te zdarzenia, ponownie uruchamiając aplikację.  
@@ -161,7 +161,7 @@ Spędzisz mniej czasu na debugowaniu aplikacji, jeśli będziesz używać Intell
 - Wskaźniki do pierwszego poziomu obiektów podrzędnych, ale nie ich wartości inne, niż gdyby były równe null lub nie  
   
 > [!NOTE]
->  IntelliTrace zbiera tylko 256 pierwszych obiektów w tablicach i pierwszych 256 znaków w ciągach.  
+> IntelliTrace zbiera tylko 256 pierwszych obiektów w tablicach i pierwszych 256 znaków w ciągach.  
   
  Zobacz [skonfiguruj IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   

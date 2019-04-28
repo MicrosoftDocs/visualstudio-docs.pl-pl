@@ -14,12 +14,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b089cd468b9b4a69a22a3be31059be51e05ee24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: ed2e8ad333121a489c450a35daf81a368cd4aba8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444726"
 ---
 # <a name="services-page-project-designer"></a>Strona usług, Projektant projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Usługi aplikacji klienta zapewniają uproszczony dostęp do [!INCLUDE[ajax_curr
  Aby uzyskać dostęp do **usług** wybierz węzeł projektu w **Eksploratora rozwiązań**, a następnie kliknij przycisk **właściwości** na **projektu** menu. Podczas **projektanta projektu** zostanie wyświetlona, kliknij przycisk **usług** kartę.  
   
 > [!NOTE]
->  Usługi aplikacji klienta wymaga pełnej wersji programu .NET Framework i nie są obsługiwane w programie .NET Framework Client Profile. Jeśli **włączyć usługi aplikacji klienckiej** pole wyboru jest wyłączone, upewnij się, że **platformę docelową** jest ustawiony do wersji programu .NET Framework 3.5 lub nowszej. Aby wyświetlić **platformę docelową** ustawienie w języku C#, otwórz projektanta projektu, a następnie kliknij przycisk **aplikacji** strony. Aby wyświetlić **platformę docelową** ustawienie w języku Visual Basic, otwórz projektanta projektu, kliknij przycisk **skompilować** strony, a następnie kliknij przycisk **zaawansowane opcje kompilacji**.  
+> Usługi aplikacji klienta wymaga pełnej wersji programu .NET Framework i nie są obsługiwane w programie .NET Framework Client Profile. Jeśli **włączyć usługi aplikacji klienckiej** pole wyboru jest wyłączone, upewnij się, że **platformę docelową** jest ustawiony do wersji programu .NET Framework 3.5 lub nowszej. Aby wyświetlić **platformę docelową** ustawienie w języku C#, otwórz projektanta projektu, a następnie kliknij przycisk **aplikacji** strony. Aby wyświetlić **platformę docelową** ustawienie w języku Visual Basic, otwórz projektanta projektu, kliknij przycisk **skompilować** strony, a następnie kliknij przycisk **zaawansowane opcje kompilacji**.  
   
 ## <a name="task-list"></a>Lista zadań  
  [Instrukcje: Konfigurowanie usług aplikacji klienta](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)  

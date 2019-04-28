@@ -12,12 +12,12 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3aa3058c20fe0d5697b56adb72769f5f6962da1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: caccf8923a8614ceedb7198e218ca2bb14bb7ec0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444866"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Dodawanie listy ostatnio używanych elementów do podmenu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -199,7 +199,7 @@ W tym przewodniku opiera się na pokazach w [dodawanie podmenu do Menu](../exten
 2. Na **TestMenu** menu, kliknij przycisk **wywołania TestCommand**. W ten sposób Wyświetla okno komunikatu, który wskazuje, że wybrano polecenie.  
   
     > [!NOTE]
-    >  Ten krok jest wymagany, aby wymusić pakietu VSPackage, aby załadować i poprawnego wyświetlania listy ostatnio używanych. Jeśli pominiesz ten krok nie jest wyświetlana na liście MRU.  
+    > Ten krok jest wymagany, aby wymusić pakietu VSPackage, aby załadować i poprawnego wyświetlania listy ostatnio używanych. Jeśli pominiesz ten krok nie jest wyświetlana na liście MRU.  
   
 3. Na **Test Menu** menu, kliknij przycisk **podmenu**. Na koniec podmenu, poniżej separator zostanie wyświetlona lista cztery elementy. Po kliknięciu **3 elementu**, okno komunikatu powinno wyświetlane i wyświetlić tekst "Wybrany element 3". (Jeśli nie zostanie wyświetlona lista cztery elementy, upewnij się, że zostały wykonane z instrukcjami wyświetlanymi w poprzednim kroku.)  
   

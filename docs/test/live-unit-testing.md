@@ -10,11 +10,11 @@ ms.author: ronpet
 ms.workload:
 - dotnet
 ms.openlocfilehash: ce9a1a2da7397dbc7ce4235391c962cada7d59eb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786554"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing w programie Visual Studio
 

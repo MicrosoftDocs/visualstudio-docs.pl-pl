@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a994db84762a18b4bf5201b5e1253d25d7a701b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c679f9a322d079f5037cea1e48fa8690daceb496
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446978"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Przewodnik: Importowanie regionów formularzy zaprojektowanych w programie Outlook
   W tym instruktażu pokazano, jak projektowanie regionów formularzy w programie Microsoft Office Outlook, a następnie zaimportuj regionu formularza w projekcie dodatku narzędzi VSTO dla programu Outlook, za pomocą **nowy Region formularza** kreatora. Projektowanie regionów formularzy programu Outlook umożliwia dodanie natywne kontrolki programu Outlook do regionu formularza, który należy powiązać dane programu Outlook. Po zaimportowaniu region formularza można obsługiwać zdarzenia każdej kontrolki.
@@ -43,7 +43,7 @@ ms.locfileid: "60101083"
 - [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] lub [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].
 
 > [!NOTE]
->  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
  ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Tworzenie regionów formularzy programu Outlook przy użyciu programu Visual Studio 2008? ](http://go.microsoft.com/fwlink/?LinkID=130305).
 ## <a name="design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Projektowanie regionów formularzy przy użyciu projektanta regionów formularza w programie Outlook

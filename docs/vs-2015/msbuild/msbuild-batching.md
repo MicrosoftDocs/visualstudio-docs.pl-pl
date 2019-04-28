@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 823b853363e3044383da4673d7e88a96d9e5ea6a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d96330c01ab340d4db67694f358717a2dae0bce3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439375"
 ---
 # <a name="msbuild-batching"></a>Przetwarzanie wsadowe w programie MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59664339"
  Określ, czy program [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] do wykonywania przetwarzania wsadowego za pomocą zadania przy użyciu %(*ItemMetaDataName*) Notacja w jeden z atrybutów zadania. Poniższy przykład dzieli `Example` na podstawie listy elementów w partie `Color` wartość metadanych elementu i przekazuje partii do `MyTask` zadań oddzielnie.  
   
 > [!NOTE]
->  Jeśli użytkownik nie odwołują się do listy elementów w innym miejscu w atrybutach zadania lub nazwa metadanych może być niejednoznaczna, możesz użyć %(*ItemCollection.ItemMetaDataName*) Notacja do pełnej kwalifikacji wartość elementu metadanych na potrzeby przetwarzania wsadowego.  
+> Jeśli użytkownik nie odwołują się do listy elementów w innym miejscu w atrybutach zadania lub nazwa metadanych może być niejednoznaczna, możesz użyć %(*ItemCollection.ItemMetaDataName*) Notacja do pełnej kwalifikacji wartość elementu metadanych na potrzeby przetwarzania wsadowego.  
   
 ```  
 <Project  

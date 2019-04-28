@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 578fd81c41d2c46130cf80f7e55e71a0d0f196de
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: b344621ea7980ce24c56a59a67edfe72f871f5ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443403"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Praca z diagramami klas (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,30 +35,30 @@ Klasa diagramy pomogą zorientować się w strukturze klas projektów innych uż
  Po mają dostosowaniu jeden lub więcej diagramów klas, możesz skopiować je do dokumentów programu Microsoft Office i drukowanie lub wyeksportować je jako pliki obrazów. Aby uzyskać więcej informacji, zobacz [jak: Kopiowanie elementów diagramu klas do dokumentu pakietu Microsoft Office (Projektant klas)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md), [jak: Drukowanie diagramów klas (Projektant klas)](../ide/how-to-print-class-diagrams-class-designer.md) i [jak: Eksportowanie diagramów klas jako obrazów (Projektant klas)](../ide/how-to-export-class-diagrams-as-images-class-designer.md).  
   
 > [!NOTE]
->  Projektant klas nie śledzi lokalizację plików źródłowych, więc zmiany do struktury projektu, lub przenoszenia plików źródłowych w projekcie może spowodować projektanta klas, utratę informacji typu, szczególnie typ źródła typedef, klasy bazowe lub typu powiązania. Możesz otrzymać błąd, takich jak **Projektant klas nie może wyświetlić tego typu**. Jeśli to zrobisz, przeciągnij kod źródłowy zmodyfikowany lub przenoszone do diagramu klas, aby ją wyświetlić ją ponownie.  
+> Projektant klas nie śledzi lokalizację plików źródłowych, więc zmiany do struktury projektu, lub przenoszenia plików źródłowych w projekcie może spowodować projektanta klas, utratę informacji typu, szczególnie typ źródła typedef, klasy bazowe lub typu powiązania. Możesz otrzymać błąd, takich jak **Projektant klas nie może wyświetlić tego typu**. Jeśli to zrobisz, przeciągnij kod źródłowy zmodyfikowany lub przenoszone do diagramu klas, aby ją wyświetlić ją ponownie.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Instrukcje: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+ [Instrukcje: Dodawanie diagramów klasy do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
  W tym artykule opisano sposób dodawania diagramów klas do projektów.  
   
- [Instrukcje: Dostosowywanie diagramów klas (Projektant klas)](../ide/how-to-customize-class-diagrams-class-designer.md)  
+ [Instrukcje: Dostosowywanie diagramów klasy (Projektant klas)](../ide/how-to-customize-class-diagrams-class-designer.md)  
   
  Zawiera informacje o sposobie dostosowywania diagramów klas.  
   
- [Instrukcje: Kopiowanie elementów diagramu klas do dokumentu pakietu Microsoft Office (Projektant klas)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md)  
+ [Instrukcje: Kopiowanie elementów diagramu klasy do dokumentu pakietu Microsoft Office (Projektant klas)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md)  
   
  Wyjaśnia, jak skopiować z diagramu klas do dokumentu pakietu Office.  
   
- [Instrukcje: Eksportowanie diagramów klas jako obrazów (Projektant klas)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)  
+ [Instrukcje: Eksportowanie diagramów klasy jako obrazów (Projektant klas)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)  
   
  Opisuje sposób Eksportowanie diagramów klas jako obrazów.  
   
- [Instrukcje: Drukowanie diagramów klas (Projektant klas)](../ide/how-to-print-class-diagrams-class-designer.md)  
+ [Instrukcje: Drukowanie diagramów klasy (Projektant klas)](../ide/how-to-print-class-diagrams-class-designer.md)  
   
  Wyjaśnia, jak drukowanie diagramów klas.  
   
- [Instrukcje: Dodawanie komentarzy do diagramów klas (Projektant klas)](../ide/how-to-add-comments-to-class-diagrams-class-designer.md)  
+ [Instrukcje: Dodawanie komentarzy do diagramów klasy (Projektant klas)](../ide/how-to-add-comments-to-class-diagrams-class-designer.md)  
   
  W tym artykule opisano sposób dodawania komentarzy do diagramu klas.  
   

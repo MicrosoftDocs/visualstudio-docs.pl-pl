@@ -16,12 +16,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 4d6bb7092dfbd9ef1d3d8263305496eef86e264b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3cdd9f0b46c578f713b7f2af2940f4d7742df19a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557219"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>.NET coding convention ustawienia dla wtyczki EditorConfig
 
@@ -329,13 +329,14 @@ W poniższej tabeli przedstawiono nazwy reguł, identyfikatory reguł, dotyczy j
 
 **dotnet\_style\_require\_accessibility_modifiers**
 
-Ta zasada nie akceptuje **true** lub **false** wartość; zamiast tego przyjmuje wartości z poniższej tabeli:
+Ta reguła akceptuje wartości z poniższej tabeli:
 
 | Wartość | Opis |
 | ----- |:----------- |
 | zawsze | Preferuj modyfikatory dostępności należy określić |
-| for\_non\_interface_members | Preferuj modyfikatory dostępności być zadeklarowany z wyjątkiem elementów członkowskich interfejsu publicznego. To jest taka sama jak **zawsze** i została dodana do przyszłych sprawdzających, jeśli C# doda domyślne metody interfejsu. |
+| for\_non\_interface_members | Preferuj modyfikatory dostępności być zadeklarowany z wyjątkiem elementów członkowskich interfejsu publicznego. (To jest taka sama jak **zawsze** i dodano do sprawdzania w przyszłości, gdy C# dodaje domyślnych metod interfejsu.) |
 | nigdy nie | Nie Preferuj kwalifikatora modyfikatory dostępności należy określić |
+| omit_if_default | Preferuj modyfikatory dostępności należy określić z wyjątkiem, jeśli są one modyfikator domyślny |
 
 Przykłady kodu:
 

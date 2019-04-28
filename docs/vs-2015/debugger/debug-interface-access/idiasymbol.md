@@ -13,12 +13,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 19280ccd2564cdbec14a1d74ae8babb9447c05e7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e190360b4441a937e9bfa9fb317f9d07de506040
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447236"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ IDiaSymbol : IUnknown
  W poniższej tabeli przedstawiono metody `IDiaSymbol`.  
   
 > [!NOTE]
->  Symbole zwróci istotnych danych dla tylko niektóre z tych metod, w zależności od typu symbolu. Jeśli metoda zwraca `S_OK`, zwracana tej metody zawiera istotnych danych.  
+> Symbole zwróci istotnych danych dla tylko niektóre z tych metod, w zależności od typu symbolu. Jeśli metoda zwraca `S_OK`, zwracana tej metody zawiera istotnych danych.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
@@ -264,7 +264,7 @@ IDiaSymbol : IUnknown
  Ten przykład przedstawia sposób wyświetlania zmiennych lokalnych dla funkcji w danym względny adres wirtualny. Pokazuje również, jak symbole różne typy są ze sobą powiązane.  
   
 > [!NOTE]
->  `CDiaBSTR` jest klasą, która otacza `BSTR` i automatycznie obsługuje zwalnianie ciągu, gdy podczas tworzenia wystąpienia wykracza poza zakres.  
+> `CDiaBSTR` jest klasą, która otacza `BSTR` i automatycznie obsługuje zwalnianie ciągu, gdy podczas tworzenia wystąpienia wykracza poza zakres.  
   
 ```cpp#  
 void DumpLocalVars( DWORD rva, IDiaSession *pSession )  

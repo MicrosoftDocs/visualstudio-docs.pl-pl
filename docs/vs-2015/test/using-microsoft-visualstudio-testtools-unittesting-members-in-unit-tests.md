@@ -8,12 +8,12 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 37ca201f071d4cd9eda595a6fee6b95a23b4f05e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ef42f7710598906310b77bd834adf04b21d6bfc2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445856"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Korzystanie z członków Microsoft.VisualStudio.TestTools.UnitTesting w testach jednostkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Framework testów jednostkowych obsługuje testowanie jednostek w [!INCLUDE[vspr
 > [!NOTE]
 > Atrybut elementów, których nazwy zawierają ciąg atrybutu, można z lub bez ciągu atrybutu. Na przykład poniższe dwa przykłady kodu działać tak samo:
 >
->  `[TestClass()]`
+> `[TestClass()]`
 >
->  `[TestClassAttribute()]`
+> `[TestClassAttribute()]`
 
 ### <a name="elements-used-for-data-driven-testing"></a>Elementy używane do testowania opartego na danych
  Konfigurowanie testów jednostkowych opartych na danych za pomocą następujących elementów. Aby uzyskać więcej informacji, zobacz [How to: Tworzenie testu jednostkowego opartego na danych](../test/how-to-create-a-data-driven-unit-test.md) i [instruktażu: Korzystanie z pliku konfiguracji do określania źródła danych](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).

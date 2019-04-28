@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 311fdca1d56133d85e7b6daa36fe8e4d3a50d5ad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5f660a7b457f8ba70439321d3eb619389e50fe97
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445709"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Instrukcje: Dodawanie lub usuwanie importowanych przestrzeni nazw (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Importowanie przestrzeni nazw pozwala na używanie elementów z tej przestrzeni 
 3. W **zaimportowane przestrzenie nazw** listy, zaznacz pole wyboru dla przestrzeni nazw, który chcesz dodać.  
   
     > [!NOTE]
-    >  W celu zaimportowania, przestrzeń nazw musi być w składnika. Przestrzeń nazw nie ma na liście, należy dodać odwołanie do składnika, który go zawiera. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodaj odwołanie](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+    > W celu zaimportowania, przestrzeń nazw musi być w składnika. Przestrzeń nazw nie ma na liście, należy dodać odwołanie do składnika, który go zawiera. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodaj odwołanie](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ### <a name="to-remove-an-imported-namespace"></a>Aby usunąć importowanych przestrzeni nazw  
   
@@ -64,7 +64,7 @@ Importowanie przestrzeni nazw pozwala na używanie elementów z tej przestrzeni 
 4. Kliknij przycisk **dodać import użytkownika** przycisk, aby dodać przestrzeń nazw w celu **zaimportowane przestrzenie nazw** listy.  
   
     > [!NOTE]
-    >  **Dodać import użytkownika** przycisk będzie wyłączony, jeśli przestrzeń nazw pasuje do już na liście; nie można dodać importu, dwa razy.  
+    > **Dodać import użytkownika** przycisk będzie wyłączony, jeśli przestrzeń nazw pasuje do już na liście; nie można dodać importu, dwa razy.  
   
 #### <a name="to-update-a-user-import"></a>Aby zaktualizować importu użytkowników  
   

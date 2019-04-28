@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af4b6ba85982c926230100aac5c7a451df79b825
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4ec7d42fe5f1db8a44f17cf3dffdfd6174a58995
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445933"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Testowanie jednostek kodu języka Visual C# w Store app
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla kla
  W tym temacie tworzy również jedno rozwiązanie Visual Studio i oddzielnych projektów dla testów jednostkowych i biblioteki DLL, która ma zostać przetestowana. Możesz również uwzględnić testy jednostkowe bezpośrednio w projekcie biblioteki DLL lub można utworzyć oddzielne rozwiązania dla testów jednostkowych i biblioteki DLL.  
   
 > [!NOTE]
->  Visual Studio Community, Enterprise. i Professional zapewniają dodatkowe funkcje testów jednostkowych.  
+> Visual Studio Community, Enterprise. i Professional zapewniają dodatkowe funkcje testów jednostkowych.  
 > 
 > - Użyj dowolnego środowiska testów jednostkowych innych firm i open source, który utworzył karty dodatku dla programu Microsoft Test Explorer. Można również analizować i wyświetlić informacje o pokryciu kodu dla testów.  
 >   - Uruchom testy po każdej kompilacji.  
@@ -211,7 +211,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla kla
     ```  
   
     > [!TIP]
-    >  Firma Microsoft zaleca, nie należy zmieniać testy, które zostały przekazane. Zamiast tego Dodaj nowy test, zaktualizować kod, tak aby test zakończy się pomyślnie, a następnie dodaj innego testu, i tak dalej.  
+    > Firma Microsoft zaleca, nie należy zmieniać testy, które zostały przekazane. Zamiast tego Dodaj nowy test, zaktualizować kod, tak aby test zakończy się pomyślnie, a następnie dodaj innego testu, i tak dalej.  
     >   
     >  Użytkownicy zmiany ich wymagań, wyłącz testy, które nie są już prawidłowe. Zapisz nowe testy i ich działania pojedynczo, w taki sam sposób przyrostowego.  
   
@@ -222,7 +222,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla kla
      ![Kończy się niepowodzeniem RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  Po napisaniu go Sprawdź, czy każdy test zakończy się niepowodzeniem. Dzięki temu można uniknąć łatwe Błąd zapisywania testu, który nigdy nie zakończy się niepowodzeniem.  
+    > Po napisaniu go Sprawdź, czy każdy test zakończy się niepowodzeniem. Dzięki temu można uniknąć łatwe Błąd zapisywania testu, który nigdy nie zakończy się niepowodzeniem.  
   
 4. Tak, aby nowy test zakończy się pomyślnie, należy zwiększyć testowany kod. Zmiana `SqareRoot` działa w programach **Rooter.cs** do tego:  
   
@@ -247,7 +247,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla kla
      Teraz kod przechodzi wszystkie trzy testy.  
   
 > [!TIP]
->  Tworzenie kodu, dodając jeden testów w danym momencie. Upewnij się, że po każdej iteracji kod przechodzi wszystkie testy.  
+> Tworzenie kodu, dodając jeden testów w danym momencie. Upewnij się, że po każdej iteracji kod przechodzi wszystkie testy.  
   
 ## <a name="BKMK_Debug_a_failing_test"></a> Debuguj test niepowodzeniem  
   
@@ -332,7 +332,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla kla
 2. Wybierz **Uruchom wszystkie** wycofanej metoda testowa, i upewnij się, że nie zostały wprowadzone regresji.  
   
 > [!TIP]
->  Stabilne zestawy testów jednostkowych dobre daje pewność, że użytkownik nie wprowadzają błędów po zmianie kodu.  
+> Stabilne zestawy testów jednostkowych dobre daje pewność, że użytkownik nie wprowadzają błędów po zmianie kodu.  
   
  **Refaktoryzuj kod testu, aby wyeliminować zduplikowany kodem.**  
   
@@ -365,4 +365,4 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla kla
 2. Wybierz **Uruchom wszystkie** wycofanej metoda testowa, i upewnij się, że nie zostały wprowadzone błąd.  
   
 > [!NOTE]
->  Aby dodać metodę pomocnika do klasy testowej, nie należy dodawać `[TestMethod]` atrybutu do metody. Eksplorator testów nie rejestruje metody do uruchomienia.
+> Aby dodać metodę pomocnika do klasy testowej, nie należy dodawać `[TestMethod]` atrybutu do metody. Eksplorator testów nie rejestruje metody do uruchomienia.

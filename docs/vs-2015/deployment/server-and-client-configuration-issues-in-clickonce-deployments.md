@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 008e7991c8f88fb1c5a8b2eb99659ebe9134df26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 90772785297b84a12cc98d6ce21a2cd2e65743f9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444973"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemy konfiguracji serwera i klienta we wdrożeniach ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Jeśli używasz usług Internet Information Services (IIS) w systemie Windows Se
  Obecnie [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] instalacje będą uruchamiane tylko wtedy, gdy adres URL do manifestu wdrażania jest otwierane przy użyciu programu Internet Explorer. Wdrożenia, którego adres URL jest uruchamiane w innej aplikacji, takich jak Microsoft Office Outlook, zostanie uruchomiony pomyślnie tylko wtedy, gdy program Internet Explorer jest ustawiony jako domyślnej przeglądarki sieci Web.  
   
 > [!NOTE]
->  Mozilla Firefox jest obsługiwana, gdy dostawca wdrożenia nie jest pusty lub zainstalowaniu rozszerzenia Asystenta ustawień programu Microsoft .NET Framework. To rozszerzenie jest dostarczana z .NET Framework 3.5 SP1. Do obsługi XBAP NPWPF wtyczki jest uaktywniany w razie potrzeby.  
+> Mozilla Firefox jest obsługiwana, gdy dostawca wdrożenia nie jest pusty lub zainstalowaniu rozszerzenia Asystenta ustawień programu Microsoft .NET Framework. To rozszerzenie jest dostarczana z .NET Framework 3.5 SP1. Do obsługi XBAP NPWPF wtyczki jest uaktywniany w razie potrzeby.  
   
 ## <a name="activating-clickonce-applications-through-browser-scripting"></a>Aktywacja aplikacji ClickOnce za pomocą skryptów w przeglądarce  
  Jeśli projektujesz niestandardowy strona internetowa, która uruchamia [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji przy użyciu wykonywanie aktywnych skryptów może się okazać, że aplikacja nie uruchomi się na niektórych maszynach. Program Internet Explorer zawiera ustawienia o nazwie **automatycznego monitowania do pobierania plików**, co ma wpływ na to zachowanie. To ustawienie jest dostępne na **zabezpieczeń** karcie jego **opcje** menu, który wpływa na to zachowanie. Jest on nazywany **automatycznego monitowania do pobierania plików**, i znajduje się poniżej **pliki do pobrania** kategorii. Właściwość jest ustawiona na **Włącz** domyślnie dla stron sieci Web w sieci intranet i **wyłączyć** domyślnie dla stron sieci Web. Jeśli to ustawienie jest równa **wyłączyć**, próby aktywacji [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji programowo (na przykład, przypisując jej adres URL do `document.location` właściwość) zostanie zablokowane. W takiej sytuacji użytkownicy mogą uruchamiać aplikacje wyłącznie za pośrednictwem pobierania zainicjowanego przez użytkownika, na przykład, klikając hiperłącze Ustaw adres URL aplikacji.  
@@ -78,7 +78,7 @@ Jeśli używasz usług Internet Information Services (IIS) w systemie Windows Se
 ```  
   
 > [!NOTE]
->  Aby włączyć uwierzytelnianie NTLM (NT żądanie odpowiedź) działać, jeśli witryna monituje o podanie poświadczeń innych niż poświadczenia domyślne, a w oknie dialogowym Zabezpieczenia, kliknij **OK** po wyświetleniu monitu, jeśli chcesz zapisać podane poświadczenia na potrzeby przyszłych sesji. To rozwiązanie nie będzie działać dla uwierzytelniania podstawowego.  
+> Aby włączyć uwierzytelnianie NTLM (NT żądanie odpowiedź) działać, jeśli witryna monituje o podanie poświadczeń innych niż poświadczenia domyślne, a w oknie dialogowym Zabezpieczenia, kliknij **OK** po wyświetleniu monitu, jeśli chcesz zapisać podane poświadczenia na potrzeby przyszłych sesji. To rozwiązanie nie będzie działać dla uwierzytelniania podstawowego.  
   
 ## <a name="using-third-party-web-servers"></a>Korzystanie z serwerów sieci Web innych firm  
  Jeżeli wdrażasz [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji z serwera sieci Web innej niż IIS, problem może występować, jeśli serwer zwraca nieprawidłowy typ zawartości dla klucza [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] plików, takich jak manifesty wdrożenia i manifest aplikacji. Aby rozwiązać ten problem, zobacz Pomoc dla serwera sieci Web, dokumentację, jak dodać nowe typy zawartości do serwera i upewnij się, że wszystkie plik rozszerzenia mapowania nazw są wymienione w poniższej tabeli znajdują się w miejscu.  

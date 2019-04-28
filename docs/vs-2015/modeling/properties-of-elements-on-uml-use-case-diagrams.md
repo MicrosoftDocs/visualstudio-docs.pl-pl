@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbe2a9f3d46be72ae1e463da7c6173ef0571bc89
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b52afab80bc22c03dc5ff980b937cad53869f5db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444421"
 ---
 # <a name="properties-of-elements-on-uml-use-case-diagrams"></a>Właściwości elementów na diagramach przypadków użycia UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54762002"
 Na diagramie przypadków użycia UML każdego elementu na diagramie ma właściwości. Aby wyświetlić właściwości elementu, kliknij prawym przyciskiem myszy element na diagramie lub w **Eksploratora modelu UML** a następnie kliknij przycisk **właściwości**. Właściwości są wyświetlane w **właściwości** okna.  
   
 > [!NOTE]
->  Ten temat dotyczy właściwości elementów w diagramach przypadków użycia UML. Aby uzyskać więcej informacji o tym, jak odczytać diagramy aktywności UML, zobacz [diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md). Aby uzyskać więcej informacji na temat narysować diagramy aktywności UML, zobacz [diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md).  
+> Ten temat dotyczy właściwości elementów w diagramach przypadków użycia UML. Aby uzyskać więcej informacji o tym, jak odczytać diagramy aktywności UML, zobacz [diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md). Aby uzyskać więcej informacji na temat narysować diagramy aktywności UML, zobacz [diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md).  
   
 ## <a name="properties-of-elements"></a>Właściwości elementów  
   
@@ -49,4 +49,4 @@ Na diagramie przypadków użycia UML każdego elementu na diagramie ma właściw
   
 ## <a name="see-also"></a>Zobacz też  
  [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md)
+ [Diagramy przypadków użycia UML: wskazówki](../modeling/uml-use-case-diagrams-guidelines.md)

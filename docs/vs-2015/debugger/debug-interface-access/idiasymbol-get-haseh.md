@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b851661449c358fdfc4245ce55ec4ffbef24dd0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e4badf13f21bae028ee782d23bc26b1c1348ebeb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446293"
 ---
 # <a name="idiasymbolgethaseh"></a>IDiaSymbol::get_hasEH
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ HRESULT get_hasEH(
   
 #### <a name="parameters"></a>Parametry  
  `pFlag`  
- [out] Zwraca `TRUE` Jeśli funkcja ma żadnych wyjątków języka c++; w przeciwnym razie zwraca `FALSE`.  
+ [out] Zwraca `TRUE` Jeśli funkcja ma jakiekolwiek C++-stylu wyjątek obsługi; w przeciwnym razie zwraca `FALSE`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
+> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="requirements"></a>Wymagania  
   

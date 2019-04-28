@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 11c26b9a3aa25688958e784d88d0b494ef893909
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e05bd9173b83ec3303a058dcf61ea48a7ef7675c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438576"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Przewodnik: Tworzenie kart niestandardowych za pomocą XML wstążki
   W tym instruktażu pokazano, jak utworzyć niestandardową kartę Wstążki przy użyciu **wstążki (XML)** elementu.
@@ -36,7 +36,7 @@ ms.locfileid: "60085236"
 - Automatyzowanie programu Microsoft Office Word za pomocą przycisków na **Add-Ins** kartę.
 
 > [!NOTE]
->  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:

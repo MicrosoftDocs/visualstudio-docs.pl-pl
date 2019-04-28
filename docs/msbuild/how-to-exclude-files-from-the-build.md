@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f30454cb88b9310e78af70997949d970a161027a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e16b11d2c54c500bc2b4e7d52e0bc5a46492ab5e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446557"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Instrukcje: Wykluczanie plików z kompilacji
 W pliku projektu można używać symboli wieloznacznych, aby uwzględnić wszystkie pliki w jednym katalogu lub zagnieżdżone zestawu katalogów jako dane wejściowe dla kompilacji. Jednak może być jeden plik w katalogu lub w katalogu w zestawie zagnieżdżonych katalogów, których nie chcesz dodać jako dane wejściowe dla kompilacji. Można jawnie wykluczone tego pliku lub katalogu, z listy danych wejściowych. W projekcie, który chcesz uwzględnić w pewnych okolicznościach również może być plikiem. Można jawnie zadeklarować warunków, w których plik jest uwzględniony w kompilacji.
@@ -73,7 +73,7 @@ W pliku projektu można używać symboli wieloznacznych, aby uwzględnić wszyst
     ```
 
     > [!NOTE]
-    >  Należy określić ścieżkę dla obu atrybutów. Jeśli używasz ścieżki bezwzględnej do określenia lokalizacji plików w `Include` atrybutu, należy również użyć ścieżką bezwzględną `Exclude` atrybutu; Jeśli używasz ścieżki względnej `Include` atrybutu, należy również użyć ścieżki względnej w `Exclude`atrybutu.
+    > Należy określić ścieżkę dla obu atrybutów. Jeśli używasz ścieżki bezwzględnej do określenia lokalizacji plików w `Include` atrybutu, należy również użyć ścieżką bezwzględną `Exclude` atrybutu; Jeśli używasz ścieżki względnej `Include` atrybutu, należy również użyć ścieżki względnej w `Exclude`atrybutu.
 
 ## <a name="use-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Użyj warunków, aby wykluczyć z danych wejściowych na potrzeby kompilacji pliku lub katalogu
  W przypadku elementów, które mają zostać uwzględnione na przykład, w kompilacji debugowania, ale nie kompilację wydania, można użyć `Condition` atrybutu, aby określić warunki, w którym należy dołączyć element.

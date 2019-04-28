@@ -12,12 +12,12 @@ ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e370f48559638e8c68ea5ac8e04eca6960983475
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6143b21884bc92ac79ae0fd7292a11780fec4478
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439757"
 ---
 # <a name="localizing-vsix-packages"></a>Lokalizowanie pakietów VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Można lokalizować pakiet VSIX przez utworzenie pliku Extension.vsixlangpack dl
  Extension.vsixlangpack  
   
 > [!NOTE]
->  Szablony projektu VSIX, obsługiwane w [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] generowania manifestu VSIX i nadaj mu nazwę source.extension.vsixmanifest. Gdy program Visual Studio tworzy projekt, kopiuje zawartość tego pliku do Extension.VsixManifest w pakiecie VSIX.  
+> Szablony projektu VSIX, obsługiwane w [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] generowania manifestu VSIX i nadaj mu nazwę source.extension.vsixmanifest. Gdy program Visual Studio tworzy projekt, kopiuje zawartość tego pliku do Extension.VsixManifest w pakiecie VSIX.  
   
 ## <a name="the-extensionvsixlangpack-file"></a>Plik Extension.vsixlangpack  
  Plik Extension.vsixlangpack [VSIX Language Pack schematu](../extensibility/vsx-language-pack-schema-reference.md). Ten schemat zawiera [VSIXLanguagePack](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md) element główny i te elementy podrzędne cztery: [LocalizedName](../extensibility/localizedname-element-vsix-language-pack-schema.md), [LocalizedDescription](../extensibility/localizeddescription-element-vsix-language-pack-schema.md), [MoreInfoURL](../extensibility/moreinfourl-element-vsix-language-pack-schema.md), i [licencji](../extensibility/license-element-vsix-language-pack-schema.md). Te elementy podrzędne odpowiadają `Name`, `Description`, `MoreInfoURL`, i `License` elementów podrzędnych `Identifier` element pliku Extension.vsixmanifest.  

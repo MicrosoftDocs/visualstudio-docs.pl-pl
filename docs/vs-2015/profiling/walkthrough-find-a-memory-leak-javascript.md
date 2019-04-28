@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0533ed4a4d1fc45b41f1e324b087cc0e249e1083
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5617dc6cbe4b7ba096afe1f308d06e7f4aaf9c6a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439660"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Przewodnik: Znajdowanie wycieku pamięci (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 2. Wybierz **JavaScript** w okienku po lewej stronie, a następnie wybierz **Windows**, **systemu Windows 8**, a następnie **Universal** lub  **Windows Phone aplikacje**.  
   
     > [!IMPORTANT]
-    >  Wyniki użycia pamięci, które są wyświetlane w tym temacie są sprawdzane pod względem aplikacji systemu Windows 8.  
+    > Wyniki użycia pamięci, które są wyświetlane w tym temacie są sprawdzane pod względem aplikacji systemu Windows 8.  
   
 3. Wybierz **pusta aplikacja** szablonu projektu w środkowym okienku.  
   
@@ -55,7 +55,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
     ```  
   
     > [!IMPORTANT]
-    >  Jeśli używasz szablonu aplikacji uniwersalnej dla Windows 8.1, musisz zaktualizować kod HTML i CSS w obu. Windows i. Projekty WindowsPhone.  
+    > Jeśli używasz szablonu aplikacji uniwersalnej dla Windows 8.1, musisz zaktualizować kod HTML i CSS w obu. Windows i. Projekty WindowsPhone.  
   
 6. Otwórz default.css i Dodaj następujący kod CSS:  
   
@@ -137,7 +137,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 1. Na **debugowania** narzędzi w **Rozpocznij debugowanie** wybierz cel debugowania dla zaktualizowanego projektu: jeden z emulatory Windows Phone lub **symulator**.  
   
    > [!TIP]
-   >  Dla aplikacji Windows Store, możesz również **komputera lokalnego** lub **maszyny zdalnej** na tej liście. Jednak zaletą przy użyciu emulatora lub symulator jest można umieścić go obok programu Visual Studio i łatwo przełączać się między uruchomionej aplikacji i analizatora pamięci JavaScript. Aby uzyskać więcej informacji, zobacz [uruchamiać aplikacje w programie Visual Studio](../debugger/run-store-apps-from-visual-studio.md) i [Uruchom Windows Store apps na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+   > Dla aplikacji Windows Store, możesz również **komputera lokalnego** lub **maszyny zdalnej** na tej liście. Jednak zaletą przy użyciu emulatora lub symulator jest można umieścić go obok programu Visual Studio i łatwo przełączać się między uruchomionej aplikacji i analizatora pamięci JavaScript. Aby uzyskać więcej informacji, zobacz [uruchamiać aplikacje w programie Visual Studio](../debugger/run-store-apps-from-visual-studio.md) i [Uruchom Windows Store apps na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 2. Na **debugowania** menu, wybierz **Profiler wydajności...** .  
   
@@ -152,7 +152,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
     Po wybraniu przycisku, kod w pracy ma default.js, która spowoduje przeciek pamięci do obsługi zdarzeń. Służy to do celów diagnostycznych.  
   
    > [!TIP]
-   >  Powtórzenie tego scenariusza, który chcesz przetestować przeciek pamięci ułatwia odfiltrować postrzegać informacji, takich jak obiekty, które są dodawane do stosu podczas inicjowania aplikacji lub podczas ładowania strony.  
+   > Powtórzenie tego scenariusza, który chcesz przetestować przeciek pamięci ułatwia odfiltrować postrzegać informacji, takich jak obiekty, które są dodawane do stosu podczas inicjowania aplikacji lub podczas ładowania strony.  
   
 5. W uruchomionej aplikacji Przełącz się do programu Visual Studio (Alt + Tab).  
   
@@ -171,14 +171,14 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
     ![Linia bazowa migawka i migawka 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
   
    > [!NOTE]
-   >  Emulator Windows Phone nie są wyświetlane zrzut ekranu przedstawiający aplikację w momencie utworzenia migawki.  
+   > Emulator Windows Phone nie są wyświetlane zrzut ekranu przedstawiający aplikację w momencie utworzenia migawki.  
   
 9. Przejdź do aplikacji i wybierz **przeciek pamięci** ponownie przycisk.  
   
 10. Przejdź do programu Visual Studio i wybierz **wykonaj migawkę sterty** po raz trzeci.  
   
     > [!TIP]
-    >  Wykonując trzecią migawki w tym przepływie pracy można odfiltrować zmian z migawką będącą punktem odniesienia do drugiego migawki, które nie są skojarzone z przecieków pamięci. Na przykład może być oczekiwany zmiany, takie jak Aktualizowanie nagłówków i stopek na stronie spowoduje wygenerowanie pewnych zmian użycia pamięci, ale może być powiązana przecieków pamięci.  
+    > Wykonując trzecią migawki w tym przepływie pracy można odfiltrować zmian z migawką będącą punktem odniesienia do drugiego migawki, które nie są skojarzone z przecieków pamięci. Na przykład może być oczekiwany zmiany, takie jak Aktualizowanie nagłówków i stopek na stronie spowoduje wygenerowanie pewnych zmian użycia pamięci, ale może być powiązana przecieków pamięci.  
   
      Ta ilustracja przedstawia migawki nr 2 i 3 migawki.  
   
@@ -191,7 +191,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
     - Rozmiar sterty (przedstawione przez czerwony Strzałka po lewej stronie w górę) został zwiększony przez kilka bazy wiedzy, w porównaniu z migawki nr 1.  
   
       > [!IMPORTANT]
-      >  Wartości użycia pamięci dokładny rozmiar sterty zależą od docelowego debugowania.  
+      > Wartości użycia pamięci dokładny rozmiar sterty zależą od docelowego debugowania.  
   
     - Liczba obiektów na stosie (przedstawione przez czerwony Strzałka w górę na prawo) został zwiększony w porównaniu do migawki nr 1. Jeden obiekt został dodany (+ 1) i żadne obiekty nie zostały usunięte (-0).  
   
@@ -222,7 +222,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
       Pewną wiedzę na temat aplikacji pomaga w tym momencie: Wybieranie **przeciek pamięci** przycisk powinien usunąć DIV element i Dodaj element, dzięki czemu kod nie wygląda na działający bezpośrednio (czyli go występuje przeciek pamięci). Następna sekcja wyjaśnia, jak rozwiązać ten problem.  
   
     > [!TIP]
-    >  Czasami, lokalizowanie obiektu w odniesieniu do `Global` obiektu może pomóc w zidentyfikowaniu tego obiektu. Aby to zrobić, otwórz menu skrótów dla identyfikatora, a następnie wybierz **Pokaż w widoku elementów głównych**.  
+    > Czasami, lokalizowanie obiektu w odniesieniu do `Global` obiektu może pomóc w zidentyfikowaniu tego obiektu. Aby to zrobić, otwórz menu skrótów dla identyfikatora, a następnie wybierz **Pokaż w widoku elementów głównych**.  
   
 ## <a name="FixingMemory"></a> Rozwiązywanie problemu pamięci  
   

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3a77797cb519294c16329a432cf742746293c13
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
-ms.translationtype: MT
+ms.openlocfilehash: a8d3e78e4bd49c36174280c62ca8f24cdbd7f648
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440040"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Standardowe i niestandardowe konfiguracje zestawu narzędzi
 Zestaw narzędzi MSBuild zawiera odwołania do zadania, celów i narzędzi, które służą do tworzenia projektu aplikacji. Program MSBuild zawiera standardowy zestaw narzędzi, ale można również tworzyć niestandardowe zestawy narzędzi. Aby uzyskać informacje o sposobie określania zestaw narzędzi, zobacz [zestaw narzędzi (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
@@ -68,7 +68,7 @@ Program Visual Studio 2017 i nowsze wersje nie należy używać klucza rejestru 
  `VisualStudioVersion` Właściwość kompilacji wskazuje, czy podzestawu narzędzi stanie się aktywny. Na przykład `VisualStudioVersion` wartość "12.0" Określa podzestawu narzędzi MSBuild 12.0. Aby uzyskać więcej informacji, zobacz sekcję zestawy narzędzi Sub [zestaw narzędzi (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
 
 > [!NOTE]
->  Zaleca się unikać zmiany tych ustawień. Można jednak dodać własne ustawienia i Zdefiniuj niestandardowe definicje zestawu narzędzi całego komputera, zgodnie z opisem w następnej sekcji.
+> Zaleca się unikać zmiany tych ustawień. Można jednak dodać własne ustawienia i Zdefiniuj niestandardowe definicje zestawu narzędzi całego komputera, zgodnie z opisem w następnej sekcji.
 
 ## <a name="custom-toolset-definitions"></a>Niestandardowe definicje zestawu narzędzi
  Podczas standardowych narzędzi nie spełnia wymagań dotyczących kompilacji, można utworzyć niestandardowego zestawu narzędzi. Na przykład masz scenariusza laboratorium kompilacji, w którym konieczne jest posiadanie oddzielnego systemu do kompilowania [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektów. Za pomocą niestandardowego zestawu narzędzi, można przypisać wartości niestandardowych w celu `ToolsVersion` atrybutu podczas tworzenia projektów lub uruchamiania *MSBuild.exe*. Dzięki temu można również użyć `$(MSBuildToolsPath)` właściwość do zaimportowania *.targets* pliki z tego katalogu, jak również Definiowanie własnych właściwości zestawu narzędzi niestandardowych, które mogą być używane dla każdego projektu, który używa tego zestawu narzędzi.
@@ -97,12 +97,12 @@ Program Visual Studio 2017 i nowsze wersje nie należy używać klucza rejestru 
 ```
 
 > [!NOTE]
->  Można odczytać poprawnie, `<configSections>` musi być pierwszym podsekcję w `<configuration>` sekcji.
+> Można odczytać poprawnie, `<configSections>` musi być pierwszym podsekcję w `<configuration>` sekcji.
 
  `ToolsetConfigurationSection` jest sekcji niestandardowej konfiguracji, który może służyć przez dowolnego hosta MSBuild konfiguracji niestandardowej. Jeśli używasz niestandardowego zestawu narzędzi, host nie ma nic robić, aby zainicjować aparatu kompilacji, z wyjątkiem zapewniają konfigurację we wpisach w plikach. Definiując wpisy w rejestrze, można określić zestawy narzędzi całego komputera, które są stosowane do *MSBuild.exe*, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]i na wszystkich hostach MSBuild.
 
 > [!NOTE]
->  Jeśli plik konfiguracji definiuje ustawienia `ToolsVersion` została już zdefiniowana w rejestrze, dwie definicje nie są scalane. Definicja w pliku konfiguracyjnym ma pierwszeństwo i ustawienia rejestru dla tego `ToolsVersion` są ignorowane.
+> Jeśli plik konfiguracji definiuje ustawienia `ToolsVersion` została już zdefiniowana w rejestrze, dwie definicje nie są scalane. Definicja w pliku konfiguracyjnym ma pierwszeństwo i ustawienia rejestru dla tego `ToolsVersion` są ignorowane.
 
  Następujące właściwości są specyficzne dla wartości `ToolsVersion` oznacza to używane w projektach:
 

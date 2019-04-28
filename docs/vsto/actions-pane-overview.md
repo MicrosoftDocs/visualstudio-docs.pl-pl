@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 628620005c43ae465107e43572684cb74c8d1aa9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c088078ce594ab1333eb4ec2316e120cc153ced
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440384"
 ---
 # <a name="actions-pane-overview"></a>Okienko akcji ― omówienie
   Okienka akcji jest dostosowywany **akcji dla dokumentów** okienka zadań, który jest dołączony do określonego dokumentu Microsoft Office Word lub skoroszytu programu Microsoft Office Excel. W okienku Akcje znajduje się wewnątrz okienka zadań pakietu Office oraz inne okienka wbudowanego zadania, takie jak **źródła XML** okienka zadań w programie Excel lub **style i formatowanie** okienka zadań w programie Word. Formanty Windows Forms lub kontrolek WPF umożliwia projektowanie interfejsu użytkownika w okienku Akcje.
@@ -30,7 +30,7 @@ ms.locfileid: "60099744"
  Okienka akcji można utworzyć tylko w przypadku dostosowywania poziomie dokumentu dla programu Word lub Excel. Nie można utworzyć okienka akcji w dodatku VSTO. Aby uzyskać więcej informacji, zobacz [funkcje, które są dostępne przez typ aplikacji i projektów pakietu Office](../vsto/features-available-by-office-application-and-project-type.md).
 
 > [!NOTE]
->  W okienku Akcje różni się od niestandardowych okienek zadań. Niestandardowe okienka zadań są skojarzone z aplikacją, określony dokument. Możesz utworzyć niestandardowe okienka zadań w dodatkach VSTO niektórych aplikacji pakietu Microsoft Office. Aby uzyskać więcej informacji, zobacz [niestandardowych okienek zadań](../vsto/custom-task-panes.md).
+> W okienku Akcje różni się od niestandardowych okienek zadań. Niestandardowe okienka zadań są skojarzone z aplikacją, określony dokument. Możesz utworzyć niestandardowe okienka zadań w dodatkach VSTO niektórych aplikacji pakietu Microsoft Office. Aby uzyskać więcej informacji, zobacz [niestandardowych okienek zadań](../vsto/custom-task-panes.md).
 
  ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Użyj kontrolek WPF w okienku akcji programu Excel? ](http://go.microsoft.com/fwlink/?LinkId=132763).
 
@@ -50,7 +50,7 @@ ms.locfileid: "60099744"
 2. Dodaj formanty Windows Forms do <xref:System.Windows.Forms.UserControl> za pomocą projektanta lub napisanie kodu.
 
    > [!NOTE]
-   >  Można również dodać kontrolki WPF w okienku Akcje, dodając WPF <xref:System.Windows.Controls.UserControl> do formularzy Windows Forms <xref:System.Windows.Forms.UserControl>. Aby uzyskać więcej informacji, zobacz [WPF Użyj kontrolki w rozwiązaniach pakietu Office](../vsto/using-wpf-controls-in-office-solutions.md).
+   > Można również dodać kontrolki WPF w okienku Akcje, dodając WPF <xref:System.Windows.Controls.UserControl> do formularzy Windows Forms <xref:System.Windows.Forms.UserControl>. Aby uzyskać więcej informacji, zobacz [WPF Użyj kontrolki w rozwiązaniach pakietu Office](../vsto/using-wpf-controls-in-office-solutions.md).
 
 3. Dodaje wystąpienie kontrolki użytkownika niestandardowego do formantów, które są zawarte w `ActionsPane` pole `ThisWorkbook` (dla programu Excel) lub `ThisDocument` (dla programu Word) klasy w projekcie.
 
@@ -141,7 +141,7 @@ ms.locfileid: "60099744"
  [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]
 
 > [!NOTE]
->  Użytkownicy końcowi mogą ręcznie zmienić położenie okienka zadań w dowolnym momencie. Nie istnieje żaden sposób zapewnić, że w okienku zadań pozostaną zadokowany w położeniu wskazanej programowo. Jednak możesz sprawdzić zmiany orientacji i upewnij się, czy kontrolek w okienku Akcje są ułożone w odpowiednim kierunku. Aby uzyskać więcej informacji, zobacz [jak: Zarządzanie układem formantu w okienkach akcji](../vsto/how-to-manage-control-layout-on-actions-panes.md).
+> Użytkownicy końcowi mogą ręcznie zmienić położenie okienka zadań w dowolnym momencie. Nie istnieje żaden sposób zapewnić, że w okienku zadań pozostaną zadokowany w położeniu wskazanej programowo. Jednak możesz sprawdzić zmiany orientacji i upewnij się, czy kontrolek w okienku Akcje są ułożone w odpowiednim kierunku. Aby uzyskać więcej informacji, zobacz [jak: Zarządzanie układem formantu w okienkach akcji](../vsto/how-to-manage-control-layout-on-actions-panes.md).
 
  Ustawienie <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> i <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> właściwości <xref:Microsoft.Office.Tools.ActionsPane> nie powoduje zmiany położenia, ponieważ <xref:Microsoft.Office.Tools.ActionsPane> obiekt jest osadzony w okienku zadań.
 

@@ -24,12 +24,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 714a4307f6885dbfd8c1bed4ccd8f0cccc173c07
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: fbbfbe17fa5dfb9a10f530981643be7a0042d6fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440447"
 ---
 # <a name="create-custom-views-of-managed-objects"></a>Tworzenie niestandardowych widoków obiektów zarządzanych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Można dostosować sposób, w programie Visual Studio Wyświetla typy danych w o
  Dla kodu natywnego można dodać rozszerzenia typu danych niestandardowych do autoexp.dat — plik, który znajduje się w katalogu 11.0\Common7\Packages\Debugger Program Files\Microsoft Visual Studio. Instrukcje dotyczące sposobu pisania `autoexp` zasady znajdują się w samym pliku.  
   
 > [!CAUTION]
->  Struktura tego pliku i składnię autoexp reguł mogą ulec zmianie z jednej wersji programu Visual Studio do następnego.  
+> Struktura tego pliku i składnię autoexp reguł mogą ulec zmianie z jednej wersji programu Visual Studio do następnego.  
   
  Typ natywny widoków można dostosować w taki sposób, przez napisanie expression evaluator dodatku. Aby uzyskać więcej informacji, zobacz [EEAddIn próbki: Debugowanie Expression Evaluator dodatek](http://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
   

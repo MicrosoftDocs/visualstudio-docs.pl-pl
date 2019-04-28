@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2d06098d1643f4c9b5e64206cdf94362a2c97b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8697a49c57840d358eeaa597fe984b6671958b09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446970"
 ---
 # <a name="ribbon-overview"></a>Wstążka — omówienie
   Wstążka jest sposób organizowania powiązane polecenia, aby były one łatwiej znaleźć. Polecenia są wyświetlane jako formanty na Wstążce. Formanty są zorganizowane w *grup* wzdłuż poziomy pasek do górnej krawędzi okna aplikacji. Powiązane grupy są zorganizowane na kartach.
@@ -49,7 +49,7 @@ ms.locfileid: "60040149"
 - Dodawanie niestandardowych grup niestandardowych lub wbudowane karty.
 
   > [!NOTE]
-  >  Wbudowanej karty lub grupy to taki, który już istnieje na Wstążce aplikacji Microsoft Office. Na przykład **danych** karty to karta wbudowana w programie Excel. **Połączeń** grupy Grupa jest wbudowana w **danych** kartę.
+  > Wbudowanej karty lub grupy to taki, który już istnieje na Wstążce aplikacji Microsoft Office. Na przykład **danych** karty to karta wbudowana w programie Excel. **Połączeń** grupy Grupa jest wbudowana w **danych** kartę.
 
 - Dodawanie niestandardowych formantów do grupy niestandardowej.
 
@@ -96,7 +96,7 @@ ms.locfileid: "60040149"
 - Tworzenie Wstążki programu Outlook *inspektorzy*. Aby uzyskać więcej informacji, zobacz [Dostosuj Wstążkę dla programu Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
     > [!NOTE]
-    >  Inspektor jest oknem, która zostanie otwarta, gdy użytkownicy wykonają pewnych zadań, takich jak tworzenie wiadomości e-mail.
+    > Inspektor jest oknem, która zostanie otwarta, gdy użytkownicy wykonają pewnych zadań, takich jak tworzenie wiadomości e-mail.
 
 - Wybierz, które wstążki do wyświetlenia w czasie wykonywania.
 
@@ -106,7 +106,7 @@ ms.locfileid: "60040149"
  Aby wybrać wstążki do wyświetlenia w czasie wykonywania, należy zastąpić `CreateRibbonExtensibilityObject` method in Class metoda `ThisAddin`, `ThisWorkbook`, lub `ThisDocument` klasy projektu i zwrócenia wstążki, który chcesz wyświetlić. Poniższy przykład sprawdza wartość pola o nazwie `myCondition` i zwraca odpowiednią wstążki.
 
 > [!NOTE]
->  Składnią używaną w tym przykładzie zwraca wstążki, który został utworzony przy użyciu **Wstążka (Projektant graficzny)** elementu. Składnia służąca do zwracania wstążki, która jest tworzona przy użyciu **wstążki (XML)** elementu jest nieco inne. Aby uzyskać więcej informacji na temat zwracanie **wstążki (XML)** elementu, zobacz [kodu XML wstążki](../vsto/ribbon-xml.md).
+> Składnią używaną w tym przykładzie zwraca wstążki, który został utworzony przy użyciu **Wstążka (Projektant graficzny)** elementu. Składnia służąca do zwracania wstążki, która jest tworzona przy użyciu **wstążki (XML)** elementu jest nieco inne. Aby uzyskać więcej informacji na temat zwracanie **wstążki (XML)** elementu, zobacz [kodu XML wstążki](../vsto/ribbon-xml.md).
 
  Dodaj następujący kod:
 

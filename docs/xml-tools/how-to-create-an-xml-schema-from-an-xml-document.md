@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0e93155f230ee4a564116f5d1357a97923706c36
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783496"
 ---
-# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Instrukcje: Tworzenie schematu XML z dokumentu XML
+# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Instrukcje: Tworzenie schematu XML na podstawie dokumentu XML
 
 Edytor XML umożliwia tworzenie schematu języka (XSD) definicji schematu XML z dokumentu XML. Określa plik XML, jak schemat jest generowany w następujący sposób:
 

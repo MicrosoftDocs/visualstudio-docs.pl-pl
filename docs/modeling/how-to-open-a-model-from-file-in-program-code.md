@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18956cd3f4fa1a550808577f9e7fec9c9b193b4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 092af518cc6c6fb1d98025cda54a6a1d491940c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445126"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Instrukcje: Otwieranie modelu z pliku w kodzie programu
 W dowolnej aplikacji, możesz otworzyć modeli języka DSL.
@@ -31,7 +31,7 @@ W dowolnej aplikacji, możesz otworzyć modeli języka DSL.
 3. W oknie dialogowym właściwości projektu na **aplikacji** kartę, należy ustawić **platformę docelową** pole **.NET Framework 4**.
 
 > [!NOTE]
->  Konieczne może być nawet wtedy, gdy wybrano **.NET Framework 4** w oknie dialogowym tworzenia projektu. Platforma docelowa nie powinny być **.NET Framework 4 Client Profile**.
+> Konieczne może być nawet wtedy, gdy wybrano **.NET Framework 4** w oknie dialogowym tworzenia projektu. Platforma docelowa nie powinny być **.NET Framework 4 Client Profile**.
 
 ## <a name="references"></a>Odwołania
  Należy dodać te odwołania do projektu aplikacji Visual Studio:

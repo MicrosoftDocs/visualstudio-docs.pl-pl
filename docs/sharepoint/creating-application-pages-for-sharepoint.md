@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8f02fbff9ed727359adbc5db1b25ee14dbccb3a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8ac9340ea853a1852d039f05a3ecbb100845ab84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443543"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Tworzenie stron aplikacji dla programu SharePoint
   *Strony aplikacji* jest to strona sieci Web platformy ASP.NET, który jest przeznaczony do użytku w witrynie sieci Web programu SharePoint. Strony aplikacji są specjalistyczną odmianą strony ASP.NET. Główną różnicą między strony aplikacji i standardowej strony ASP.NET jest to, że na stronie aplikacji zawiera zawartość, która jest połączone ze stroną wzorcową programu SharePoint. Strona wzorcowa umożliwia stron aplikacji do udostępniania tego samego wygląd i zachowanie jak innych stron w witrynie.
@@ -36,7 +36,7 @@ ms.locfileid: "56644448"
  Strony aplikacji nie może korzystać z tych możliwości. Jednak na stronie aplikacji jest najlepszy typ strony, aby utworzyć stronę, aby zawierać kod niestandardowy. Chociaż możesz dodać niestandardowy kod do strony witryny, kod zatrzymane, kiedy użytkownik dostosowuje strony za pomocą narzędzi, takich jak SharePoint Designer.
 
 > [!NOTE]
->  Program Visual Studio nie zapewnia szablony, które ułatwiają tworzenie stron witryny dla witryny programu SharePoint. Aby uzyskać więcej informacji, zobacz [typy stron SharePoint](http://go.microsoft.com/fwlink/?LinkID=211584).
+> Program Visual Studio nie zapewnia szablony, które ułatwiają tworzenie stron witryny dla witryny programu SharePoint. Aby uzyskać więcej informacji, zobacz [typy stron SharePoint](http://go.microsoft.com/fwlink/?LinkID=211584).
 
 ## <a name="create-an-application-page"></a>Tworzenie strony aplikacji
  Aby utworzyć stronę aplikacji, należy dodać **strony aplikacji** elementu do projektu programu SharePoint. Po utworzeniu strony aplikacji programu Visual Studio dodaje następujące foldery do projektu:
@@ -58,7 +58,7 @@ ms.locfileid: "56644448"
  Projektowanie zawartość strony aplikacji przy użyciu projektanta widoku w programie Visual Studio. Projektant pojawia się po otwarciu strony aplikacji w projekcie (klikając je dwukrotnie lub otwierając jego menu skrótów, a następnie wybierając **Otwórz**), a następnie wybierz **projektowania** znajdujący się u dołu Edytor.
 
 > [!NOTE]
->  Można zaprojektować strony tylko w **źródła** Widok projektanta. **Projektowania** Widok projektanta jest wyłączona w przypadku stron aplikacji.
+> Można zaprojektować strony tylko w **źródła** Widok projektanta. **Projektowania** Widok projektanta jest wyłączona w przypadku stron aplikacji.
 
  Można debugować strony aplikacji, tak samo, jak debuguje się inne elementy projektu programu SharePoint w programie Visual Studio. Po uruchomieniu debugera programu Visual Studio, Visual Studio otwiera witrynę programu SharePoint.
 

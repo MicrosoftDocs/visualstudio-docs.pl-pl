@@ -22,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7fa5073fca476159aa756b7a5527dd1007ab66b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6159a7763176be236b925dce9fae66e5fc915682
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440400"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania
   Można dodać kontrolki do dokumentu Microsoft Office Word i Microsoft Office Excel skoroszyt w czasie wykonywania. Można również usunąć je w czasie wykonywania. Formanty, które są dodawane lub usuwane w czasie wykonywania są nazywane *kontrolek dynamicznych*.
@@ -74,7 +74,7 @@ ms.locfileid: "60075808"
  Nie można usunąć formantów statycznych w czasie wykonywania. Jeśli spróbujesz użyć `Delete` lub `Remove` metodę, aby usunąć formant statyczny <xref:Microsoft.Office.Tools.CannotRemoveControlException> zostanie zgłoszony.
 
 > [!NOTE]
->  Nie usuwaj programowo kontrolek w `Shutdown` programu obsługi zdarzeń dokumentu. Elementy interfejsu użytkownika w pliku nie są już dostępne podczas `Shutdown` zdarzenie jest wywoływane. Jeśli chcesz usunąć kontrolki przed zamknięciem dokumentu, Dodaj swój kod obsługi zdarzeń dla innego zdarzenia, takie jak <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> lub <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> dla programu Word, lub <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>, lub <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> dla programu Excel.
+> Nie usuwaj programowo kontrolek w `Shutdown` programu obsługi zdarzeń dokumentu. Elementy interfejsu użytkownika w pliku nie są już dostępne podczas `Shutdown` zdarzenie jest wywoływane. Jeśli chcesz usunąć kontrolki przed zamknięciem dokumentu, Dodaj swój kod obsługi zdarzeń dla innego zdarzenia, takie jak <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> lub <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> dla programu Word, lub <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>, lub <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> dla programu Excel.
 
 ## <a name="HostControls"></a> Dodawanie hosta formantów do dokumentów
 
@@ -103,7 +103,7 @@ Po zapisaniu dokumentu i następnie zamknięte, wszystkie formanty hosta dynamic
  Po zapisaniu dokumentu i następnie zamknięte, wszystkie kontrolki Windows Forms utworzony dynamicznie są usuwane z dokumentu. Można dodać kod do rozwiązania, aby ponownie utworzyć formanty, po otwarciu dokumentu. Jeśli tworzysz dynamiczne kontrolek Windows Forms przy użyciu dodatku narzędzi VSTO otoki ActiveX dla formantów są pozostawiane w dokumencie. Aby uzyskać więcej informacji, zobacz [kontrolek dynamicznych w dokumentach pakietu Office utrwalenia](../vsto/persisting-dynamic-controls-in-office-documents.md).
 
 > [!NOTE]
->  Nie można programowo dodać kontrolek formularzy Windows Forms do dokumentów chronionych. Programowe wyłączanie dokumentu programu Word lub arkusza programu Excel, aby dodać kontrolkę, należy napisać dodatkowy kod, aby usunąć otoki ActiveX kontrolki gdy dokument zostanie zamknięty. Kontrolki ActiveX otoki nie zostanie automatycznie usunięta z chronionych dokumentów.
+> Nie można programowo dodać kontrolek formularzy Windows Forms do dokumentów chronionych. Programowe wyłączanie dokumentu programu Word lub arkusza programu Excel, aby dodać kontrolkę, należy napisać dodatkowy kod, aby usunąć otoki ActiveX kontrolki gdy dokument zostanie zamknięty. Kontrolki ActiveX otoki nie zostanie automatycznie usunięta z chronionych dokumentów.
 
 ### <a name="add-custom-controls"></a>Dodaj formanty niestandardowe
  Jeśli chcesz dodać <xref:System.Windows.Forms.Control> nie jest obsługiwana przez metody pomocnika dostępne, takie jak formant użytkownika niestandardowego, należy użyć następujących metod:

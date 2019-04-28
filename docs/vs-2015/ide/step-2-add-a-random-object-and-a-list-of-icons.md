@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e71debec563aa54d5232686b599f286d147b1a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7a4af2e5cc4119c85570246e1908c111cc0b7d75
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442631"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Krok 2. Dodawanie obiektu losowego i listy ikon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ W tym kroku utworzysz zestaw pasujących symboli dla gry. Każdy symbol jest dod
 Okno technologii IntelliSense  
   
     > [!NOTE]
-    >  Okno Intellisense pojawia się tylko wtedy, gdy wprowadzasz kod ręcznie. Nie pojawia się, jeśli kopiujesz i wklejasz kod.  
+    > Okno Intellisense pojawia się tylko wtedy, gdy wprowadzasz kod ręcznie. Nie pojawia się, jeśli kopiujesz i wklejasz kod.  
   
      Jeśli spojrzysz na kod (i uwagi) w krótkich sekcjach, jest bardziej zrozumiały. Programy mogą korzystać `List` obiekty do śledzenia wielu różnych typów elementów. Lista może zawierać liczby, wartości true/false, tekst lub inne obiekty. Można nawet mieć `List` obiekt, który przechowuje inne `List` obiektów. Elementy na liście są nazywane *elementy*, a każda lista zawiera tylko jeden typ elementu. Tak więc, lista liczb może zawierać tylko liczby — nie można dodać tekstu do tej listy. Podobnie nie można dodać liczb do listy wartości true/false.  
   
@@ -51,7 +51,7 @@ Okno technologii IntelliSense
      Kiedy używasz inicjatora kolekcji z `new` instrukcji po nowym `List` obiekt zostanie utworzony, program wypełnia go danymi dostarczonymi wewnątrz nawiasów klamrowych. W takim przypadku otrzymujesz listę ciągów o nazwie **ikony**, oraz że lista zostanie zainicjowana tak, aby zawierała szesnaście ciągów. Każdy z tych ciągów jest pojedynczą literą, a odpowiadają one wszystkim ikonom, które będą w etykietach. Tak więc gra będzie miała parę wykrzykników, parę wielkich liter N, parę przecinków itd. (Kiedy te znaki są ustawione na czcionkę Webdings, będą one występować jako symbole, takie jak autobus, rower, pająk i tak dalej). Twoje `List` obiekt będzie miał razem szesnaście ciągów we wszystkich, jeden dla każdej komórki w panelu TableLayoutPanel.  
   
     > [!NOTE]
-    >  W języku Visual Basic, uzyskujesz ten sam wynik, ale najpierw ciągi są wprowadzane do tablicy tymczasowej, która jest następnie przekształcana w `List` obiektu. Tablica jest podobna do listy, z tym wyjątkiem, że np. tablice są tworzone z ustalonym rozmiarem. Listy można zmniejszać i zwiększać stosownie do potrzeb, co jest istotne w tym programie.  
+    > W języku Visual Basic, uzyskujesz ten sam wynik, ale najpierw ciągi są wprowadzane do tablicy tymczasowej, która jest następnie przekształcana w `List` obiektu. Tablica jest podobna do listy, z tym wyjątkiem, że np. tablice są tworzone z ustalonym rozmiarem. Listy można zmniejszać i zwiększać stosownie do potrzeb, co jest istotne w tym programie.  
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   

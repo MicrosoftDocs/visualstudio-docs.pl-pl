@@ -1,5 +1,5 @@
 ---
-title: Dostosowywanie IDE
+title: Dostosowywanie środowiska IDE
 description: Programu Visual Studio dla komputerów Mac można dostosować na różne sposoby, pozwalając użytkownikom na tworzenie aplikacji w środowisku, które spełnia ich wydajność i estetycznych potrzeb. W tym temacie przedstawiono różne sposoby programu Visual Studio for Mac można dostosować do własnych potrzeb.
 author: conceptdev
 ms.author: crdun
@@ -7,13 +7,13 @@ ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
 ms.openlocfilehash: b8386e5d27c2ddf6abd93ac93266f58869cd6c79
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58572956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931746"
 ---
-# <a name="customizing-the-ide"></a>Dostosowywanie IDE
+# <a name="customizing-the-ide"></a>Dostosowywanie środowiska IDE
 
 Visual Studio dla komputerów Mac można dostosować różne sposoby, dzięki czemu użytkownicy mogą tworzyć aplikacje w środowisku, które odpowiadają ich potrzebom zarówno efektywność, jak i wyglądu. W tym artykule przedstawiono różne sposoby, w programie Visual Studio for Mac można dostosować do własnych potrzeb.
 

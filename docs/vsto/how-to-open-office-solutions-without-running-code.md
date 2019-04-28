@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b9a88aff9cd587f695ace56c44eaf9c8fcb8875
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 366416e4f18435bd01391657eb2fc4f65f8a4d62
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441779"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Instrukcje: Otwieranie rozwiązań pakietu Office bez uruchamiania kodu
   Rozwiązania Microsoft Office, utworzone za pomocą rozszerzeń kodu zarządzanego jest uruchamiany nawet wtedy, gdy ustawienia zabezpieczeń w aplikacji pakietu Office przez użytkownika końcowego jest ustawiony na wysoki. Jest to spowodowane zabezpieczenie kodu zestawu .NET jest zarządzana przez program Microsoft .NET Framework, nie przez Microsoft Office.
@@ -39,7 +39,7 @@ ms.locfileid: "60117203"
 - Otwórz dokumenty i skoroszyty z **pliku** menu, przytrzymując naciśnięty **Shift** klawisz, aby uniemożliwić wywoływanie zdarzeń inicjowania, podczas otwierania dokumentu programu Word i Excel.
 
     > [!NOTE]
-    >  Jeśli możesz otworzyć dokument lub skoroszyt z **wprowadzenie** okienka zadań, przytrzymując **Shift** kodu nie obejścia. Ponadto przytrzymując wciśnięty klawisz SHIFT nie zapobiega zdarzenia są zgłaszane po otwarciu dokumentu.
+    > Jeśli możesz otworzyć dokument lub skoroszyt z **wprowadzenie** okienka zadań, przytrzymując **Shift** kodu nie obejścia. Ponadto przytrzymując wciśnięty klawisz SHIFT nie zapobiega zdarzenia są zgłaszane po otwarciu dokumentu.
 
      Ta metoda jest przydatna, jeśli chcesz otworzyć dokument, aby wprowadzić zmiany, bez konieczności pisania kodu, uruchamiania i zmieniania dokumentu najpierw.
 

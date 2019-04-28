@@ -8,12 +8,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f45e9c466bcb99dd0fecb00702441d3d97899a52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b3c709c2d7a83e4b144232a491dabf205ea46f7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446195"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Szybki start: Programowanie sterowane za pomocą narzędzia Eksplorator testów testami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,10 +62,10 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
    **Aby debugować test:** Otwórz menu skrótów dla jednego lub więcej testów, a następnie wybierz **Debuguj wybrane testy**.  
   
 > [!IMPORTANT]
->  Wyświetlane wyniki dotyczą ostatniego działają. Kolorowe paski wyników pokazują jedynie wyniki wykonanych testów. Na przykład jeśli uruchomisz kilka testów i niektóre z nich zakończyć się niepowodzeniem, a następnie uruchom testy zakończone powodzeniem, następnie paski wyników zostaną wyświetlone wszystkie zielony.  
+> Wyświetlane wyniki dotyczą ostatniego działają. Kolorowe paski wyników pokazują jedynie wyniki wykonanych testów. Na przykład jeśli uruchomisz kilka testów i niektóre z nich zakończyć się niepowodzeniem, a następnie uruchom testy zakończone powodzeniem, następnie paski wyników zostaną wyświetlone wszystkie zielony.  
   
 > [!NOTE]
->  Jeśli pojawi się żaden test, upewnij się, że zainstalowano adapter do połączenia Eksploratora testów ze środowiskiem testowym, którego używasz. Aby uzyskać więcej informacji, zobacz [Użyj platformę testową różnych](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
+> Jeśli pojawi się żaden test, upewnij się, że zainstalowano adapter do połączenia Eksploratora testów ze środowiskiem testowym, którego używasz. Aby uzyskać więcej informacji, zobacz [Użyj platformę testową różnych](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
 ## <a name="walkthrough"></a> Wskazówki: Za pomocą testów jednostkowych do opracowania metody  
  W tym instruktażu przedstawiono sposób opracować przetestowaną metodę w języku C# za pomocą środowiska testów jednostkowych firmy Microsoft. Możesz ją łatwo przystosować do innych języków i używać innych środowisk testowych, takich jak NUnit. Aby uzyskać więcej informacji, zobacz [struktury testowej różnych Usa](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
@@ -152,7 +152,7 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
 1. Aby zwiększyć pewność, że kod działa we wszystkich przypadkach, Dodaj testy, które sprawdzają szerszy zakres wartości wejściowych.  
   
     > [!TIP]
-    >  Unikaj zmieniania istniejących testów, które przekazują. Zamiast tego Dodaj nowe testy. Zmieniaj istniejące testy tylko wtedy, gdy zmienią się wymagania użytkownika. Zasada ta pomaga upewnić się, że nie tracisz istniejących funkcji podczas pracy nad rozszerzeniem kodu.  
+    > Unikaj zmieniania istniejących testów, które przekazują. Zamiast tego Dodaj nowe testy. Zmieniaj istniejące testy tylko wtedy, gdy zmienią się wymagania użytkownika. Zasada ta pomaga upewnić się, że nie tracisz istniejących funkcji podczas pracy nad rozszerzeniem kodu.  
   
      W klasie testów Dodaj następujący test, który sprawdzi zakres wartości wejściowych:  
   
@@ -257,7 +257,7 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
 1. Uprość kod, ale nie zmieniaj testów.  
   
     > [!TIP]
-    >  A *refaktoryzacji* jest zmianę, która jest przeznaczona do wprowadzania działania kodu lub uczynienie go łatwiejszym do zrozumienia. Nie jest przeznaczone do zmiany zachowania kodu, a w związku z tym testy nie są zmieniane.  
+    > A *refaktoryzacji* jest zmianę, która jest przeznaczona do wprowadzania działania kodu lub uczynienie go łatwiejszym do zrozumienia. Nie jest przeznaczone do zmiany zachowania kodu, a w związku z tym testy nie są zmieniane.  
     >   
     >  Firma Microsoft zaleca, aby wykonać kroki refaktoryzacji oddzielnie od kroków, które rozszerzają funkcjonalność. Utrzymywanie testów w niezmienionej postaci daje pewność, że możesz mieć nie zostaną przypadkowo wprowadzone usterki podczas refaktoryzacji.  
   

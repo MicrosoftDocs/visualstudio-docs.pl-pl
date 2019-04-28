@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9e67b6e999078523c11ba2b59175743e4a8f3d33
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 865cd15416fbc901b6c5e58e1d83385f64f6a5a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441080"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Instrukcje: Przechwytywanie kliknięć w kształcie lub elemencie Decorator
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ public partial class MyShape // change
 ```  
   
 > [!NOTE]
->  Ustaw `e.Handled` do `true`, chyba że chcesz, aby zdarzenia, które mają być przekazane do zawierający kształt lub diagram.  
+> Ustaw `e.Handled` do `true`, chyba że chcesz, aby zdarzenia, które mają być przekazane do zawierający kształt lub diagram.  
   
 ## <a name="to-intercept-clicks-on-decorators"></a>Aby przechwycić kliknięć dekoratorów  
  Dekoratory obrazu są przenoszone w wystąpieniu klasy ImageField, która ma metodę OnDoubleClick. Jeśli piszesz podklasy ImageField można przechwycić kliknięć. Pola są konfigurowane w metodzie InitializeShapeFields. W związku z tym należy zmienić tej metody, aby utworzyć wystąpienie usługi podklasy zamiast regularnego ImageField. Metoda InitializeShapeFields jest w wygenerowanym kodzie klasy kształtu. Można zastąpić klasę kształtu, jeśli ustawisz jego `Generates Double Derived` właściwości zgodnie z opisem w poniższej procedurze.  

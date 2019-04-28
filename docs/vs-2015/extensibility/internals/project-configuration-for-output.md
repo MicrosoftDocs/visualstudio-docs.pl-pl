@@ -10,12 +10,12 @@ ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a2b3a4e904fa6ca45dc207c4b713577b1e29f840
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d14435917e982328220aa6b778d081a8837f0396
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443881"
 ---
 # <a name="project-configuration-for-output"></a>Konfigurowanie projektu dla danych wyjściowych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Każdej konfiguracji może obsługiwać zestaw procesów kompilacji, które gene
  Konstrukcja opracowane przez zaimplementowanie `IVsOutputGroup` umożliwia projekty do grupy danych wyjściowych, zgodnie z użycia. Na przykład biblioteki DLL mogą być pogrupowane ze swojej bazy danych programu (PDB).  
   
 > [!NOTE]
->  Plik PDB zawiera informacje o debugowaniu i jest tworzona, gdy określono opcję "Generuj informacje debugowania", podczas kompilowania .dll lub .exe. Plik .pdb zazwyczaj zostanie wygenerowany tylko Konfiguracja projektu debugowania.  
+> Plik PDB zawiera informacje o debugowaniu i jest tworzona, gdy określono opcję "Generuj informacje debugowania", podczas kompilowania .dll lub .exe. Plik .pdb zazwyczaj zostanie wygenerowany tylko Konfiguracja projektu debugowania.  
   
  Projekt musi zwracać taką samą liczbę grup dla każdej konfiguracji, który ją obsługuje, nawet jeśli liczba wyjść zawarty w grupie będzie zależeć od konfiguracja. Na przykład projektu Matt biblioteki DLL mogą dotyczyć mattd.dll i mattd.pdb w konfiguracji debugowania, ale tylko matt.dll w konfiguracji sieci sprzedaży.  
   

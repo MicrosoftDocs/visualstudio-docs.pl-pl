@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 957805caa946dced54d52f1aa6b4a7f96e75b31a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 401ce9b8421cd636fc72c59dcd6641ff4e05d968
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440345"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Architektura dodatków narzędzi VSTO
   Dodatków narzędzi VSTO utworzony przy użyciu narzędzi Office developer tools w programie Visual Studio oferuje funkcje architektury, które podkreślić stabilność i bezpieczeństwo i umożliwia im ściśle współpracować z programem Microsoft Office. W tym temacie opisano następujące aspekty dodatków narzędzi VSTO dla programów:
@@ -44,7 +44,7 @@ ms.locfileid: "60091086"
  W przypadku instalowania wielu dodatków narzędzi VSTO dla aplikacji każdego dodatku narzędzi VSTO jest ładowany w domenie innej aplikacji. Oznacza to, że jeden dodatku narzędzi VSTO który zachowuje się nieprawidłowo nie może spowodować innych dodatków narzędzi VSTO nie powiedzie się. Pozwala ona również od tego, upewnij się, że po zamknięciu aplikacji wszystkie dodatku narzędzi VSTO zestawy są usuwane z pamięci. Aby uzyskać więcej informacji o domenach aplikacji, zobacz [domen aplikacji](/dotnet/framework/app-domains/application-domains).
 
 > [!NOTE]
->  Dodatków narzędzi VSTO, które tworzysz przy użyciu narzędzi Office developer tools w programie Visual Studio są przeznaczone do użycia tylko wtedy, gdy host aplikacji Microsoft Office jest uruchamiana przez użytkownika końcowego. Jeśli aplikacja jest uruchamiana programowo (na przykład za pomocą automatyzacji), dodatku narzędzi VSTO mogą nie działać zgodnie z oczekiwaniami.
+> Dodatków narzędzi VSTO, które tworzysz przy użyciu narzędzi Office developer tools w programie Visual Studio są przeznaczone do użycia tylko wtedy, gdy host aplikacji Microsoft Office jest uruchamiana przez użytkownika końcowego. Jeśli aplikacja jest uruchamiana programowo (na przykład za pomocą automatyzacji), dodatku narzędzi VSTO mogą nie działać zgodnie z oczekiwaniami.
 
 ## <a name="AddinComponents"></a> Składniki dodatków narzędzi VSTO
  Mimo że zestaw dodatku narzędzi VSTO dla programów główny składnik, jest wiele składników, które odgrywa ważną rolę w jaki sposób aplikacje Microsoft Office wykrycie i załadowanie dodatków narzędzi VSTO.
@@ -70,7 +70,7 @@ ms.locfileid: "60091086"
  ![Architektura dodatków pakietu office 2007](../vsto/media/office07addin.png "architektura dodatku pakietu Office 2007")
 
 > [!NOTE]
->  W rozwiązaniach pakietu Office, których platformą docelową [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], rozwiązania mogą wywoływać model obiektów aplikacji hosta, za pomocą informacji o typie PIA osadzone w zestawie rozwiązania, zamiast wywoływać metodę do PIA bezpośrednio. Aby uzyskać więcej informacji, zobacz [projektowania i tworzenia rozwiązań dla pakietu Office](../vsto/designing-and-creating-office-solutions.md).
+> W rozwiązaniach pakietu Office, których platformą docelową [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], rozwiązania mogą wywoływać model obiektów aplikacji hosta, za pomocą informacji o typie PIA osadzone w zestawie rozwiązania, zamiast wywoływać metodę do PIA bezpośrednio. Aby uzyskać więcej informacji, zobacz [projektowania i tworzenia rozwiązań dla pakietu Office](../vsto/designing-and-creating-office-solutions.md).
 
 ### <a name="loading-process"></a>Proces ładowania
  Gdy użytkownik uruchamia aplikację, wykonywane są następujące kroki:
@@ -100,7 +100,7 @@ ms.locfileid: "60091086"
      Opcjonalnie można zastąpić tę metodę, aby rozszerzyć pakietu Microsoft Office, zwracając obiekt, który implementuje interfejs rozszerzalności. Aby uzyskać więcej informacji, zobacz [dostosowywanie funkcji interfejsu użytkownika, korzystając z rozszerzalności interfejsów](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md).
 
     > [!NOTE]
-    >  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Sprawia, że oddzielne wywołania do <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> metody dla każdego interfejsu rozszerzalności, która jest obsługiwana przez aplikację hosta. Mimo że pierwsze wywołanie do <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> metoda zazwyczaj ma miejsce przed wywołaniem do `ThisAddIn_Startup` metody dodatku narzędzi VSTO dla programów powinna nie należy czynić żadnych założeń o tym, kiedy <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> metoda zostanie wywołana lub ile razy zostanie wywołany.
+    > [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Sprawia, że oddzielne wywołania do <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> metody dla każdego interfejsu rozszerzalności, która jest obsługiwana przez aplikację hosta. Mimo że pierwsze wywołanie do <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> metoda zazwyczaj ma miejsce przed wywołaniem do `ThisAddIn_Startup` metody dodatku narzędzi VSTO dla programów powinna nie należy czynić żadnych założeń o tym, kiedy <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> metoda zostanie wywołana lub ile razy zostanie wywołany.
 
 11. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Wywołania `ThisAddIn_Startup` metody w dodatku VSTO. Ta metoda jest domyślny program obsługi zdarzeń dla <xref:Microsoft.Office.Tools.AddInBase.Startup> zdarzeń. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
 

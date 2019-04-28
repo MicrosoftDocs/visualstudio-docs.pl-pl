@@ -4,17 +4,19 @@ description: Informacje o sposobie instalowania i konfigurowania ról dla usług
 author: ghogen
 manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
-ms.custom: seodec18
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: 86a86a097bc5e9d3cd567502ec94aae3cbafd324
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62552448"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurowanie ról usług w chmurze platformy Azure przy użyciu programu Visual Studio
 Usługi w chmurze platformy Azure może mieć jedną lub więcej procesów roboczych lub role sieci web. Dla każdej roli musisz zdefiniować sposób konfigurowania tej roli, a także skonfigurować, jak działa tej roli. Aby dowiedzieć się więcej na temat ról w usługach cloud services, zobacz wideo [wprowadzenie do usług Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -48,6 +50,8 @@ W programie Visual Studio, można skonfigurować usługi w chmurze platformy Azu
 
     > [!IMPORTANT]
     > Jeśli wybierzesz konfigurację określonej usługi, niektóre właściwości są wyłączone, ponieważ ich można ustawić tylko w przypadku wszystkich konfiguracji. Aby edytować te właściwości, należy wybrać **wszystkie konfiguracje**.
+    >
+    >
 
     ![Lista konfiguracji usługi dla usługi w chmurze platformy Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
 

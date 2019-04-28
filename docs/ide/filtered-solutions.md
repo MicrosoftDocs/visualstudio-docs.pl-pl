@@ -1,6 +1,6 @@
 ---
 title: Ładowanie podzestaw projektów
-ms.date: 12/04/2018
+ms.date: 04/22/2019
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +10,16 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 67ebbd94298c3325560b64945bed51c09db93833
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
-ms.translationtype: MT
+ms.openlocfilehash: 2612770b760bec70ec9ee6c679c47804d4e69f42
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439852"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Filtrowane rozwiązań w programie Visual Studio
 
-**Nowość w programie Visual Studio 2019 r.**
-
-Duże zespoły programistów często współpracować przy użyciu jednego rozwiązania dużych z wielu projektów. Jednak indywidualni Deweloperzy zazwyczaj działa na mały podzbiór tych projektów. W celu poprawy wydajności podczas otwierania dużych rozwiązań programu Visual Studio 2019 wprowadza *filtrowanie rozwiązań*. Rozwiązanie Filtrowanie umożliwia otwarciu rozwiązania przy użyciu tylko selektywne projektów możliwych do przeanalizowania. Trwa ładowanie podzestaw projektów w rozwiązaniu zmniejsza ładowania rozwiązań, kompilacji i testowania, w czasie wykonywania i umożliwia bardziej ukierunkowane przeglądu.
+Duże zespoły programistów często współpracować przy użyciu jednego rozwiązania dużych z wielu projektów. Jednak indywidualni Deweloperzy zazwyczaj działa na mały podzbiór tych projektów. W celu poprawy wydajności podczas otwierania dużych rozwiązań programu Visual Studio 2019 wprowadzone *filtrowanie rozwiązań*. Rozwiązanie Filtrowanie umożliwia otwarciu rozwiązania przy użyciu tylko selektywne projektów możliwych do przeanalizowania. Trwa ładowanie podzestaw projektów w rozwiązaniu zmniejsza ładowania rozwiązań, kompilacji i testowania, w czasie wykonywania i umożliwia bardziej ukierunkowane przeglądu.
 
 Dostępne są następujące funkcje:
 
@@ -33,7 +31,11 @@ Dostępne są następujące funkcje:
 
 ## <a name="open-a-filtered-solution"></a>Otwórz rozwiązanie filtrowane
 
-Aby otworzyć rozwiązanie z tylko niektóre z jego projektów, wykonaj następujące kroki:
+Można otworzyć rozwiązanie bez ładowania jeden z jego projektów bezpośrednio z **Otwórz projekt** okna dialogowego lub za pomocą [wiersza polecenia](#command-line).
+
+### <a name="open-project-dialog"></a>Otwórz okno dialogowe projektu
+
+Aby otworzyć rozwiązanie bez ładowania jeden z jego projektów za pomocą **Otwórz projekt** okno dialogowe:
 
 1. Wybierz **pliku** > **Otwórz** > **projekt/rozwiązanie** z paska menu.
 
@@ -51,15 +53,31 @@ Aby otworzyć rozwiązanie z tylko niektóre z jego projektów, wykonaj następu
 
    Program Visual Studio zapamiętuje, projekty, które są ładowane przy następnym otwarciu rozwiązania lokalnie.
 
+### <a name="command-line"></a>Wiersz polecenia
+
+(Nowość w programie Visual Studio 2019 wersji 16.1.)
+
+Aby otworzyć rozwiązanie bez ładowania jeden z jego projektów z wiersza polecenia, należy użyć [ `/donotloadprojects` ](../ide/reference/donotloadprojects-devenv-exe.md) przełącznika, jak pokazano w poniższym przykładzie:
+
+```cmd
+devenv /donotloadprojects MySln.sln
+```
+
 ## <a name="toggle-unloaded-project-visibility"></a>Przełącz widoczność zwolnionego projektu
 
 Można wybrać wyświetlić wszystkie projekty w rozwiązaniu albo tylko tych załadowany przy użyciu jednej z następujących opcji w **Eksploratora rozwiązań**:
 
 - Kliknij prawym przyciskiem myszy rozwiązanie i wybierz **Pokaż zwolnione projektów** lub **Ukryj zwolnione projektów**.
 
-- Wybierz **Pokaż wszystkie pliki** przycisk, aby przełączyć widoczność zwolnione projektów.
+- Wybierz węzeł rozwiązania, aby umożliwić **Pokaż wszystkie pliki** przycisk; następnie kliknij przycisk, aby przełączyć widoczność zwolnione projektów.
 
    ![Pokaż wszystkie pliki w Eksploratorze rozwiązań w usłudze Visual Studio](media/filtered-solutions/show-all-files.PNG)
+
+## <a name="load-project-dependencies"></a>Ładowanie zależności projektu
+
+W ramach rozwiązania, gdy są ładowane tylko wybrane projekty nie masz wszystkie zależności projektu projektów załadowanych. Użyj **załadować zależności projektu** opcję menu, aby upewnić się, że wszystkie projekty, które zależy od projektu również są ładowane. Kliknij prawym przyciskiem myszy na co najmniej jeden projekt załadowany w **Eksploratora rozwiązań** i wybierz polecenie **załadować zależności projektu**.
+
+![Ładowanie zależności projektu w programie Visual Studio 2019 r.](media/filtered-solutions/load-project-dependencies.png)
 
 ## <a name="solution-filter-files"></a>Pliki filtrów rozwiązania
 

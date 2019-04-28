@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f0353234e5a266ca1a344ce7bc304f27d8c3af95
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906287"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Instrukcje: Testowanie i debugowanie Wizualizera
 Po napisaniu wizualizatora, należy do debugowania i testowania.

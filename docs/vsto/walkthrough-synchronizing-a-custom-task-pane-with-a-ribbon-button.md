@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdbcf16139c1f0b48554b3bf14f314a73a641012
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fb74c56536a749629def4654f90206808e3b87e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443970"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Przewodnik: Synchronizuj niestandardowego okienka zadań z przyciskiem wstążki
   Ten przewodnik przedstawia sposób tworzenia niestandardowego okienka zadań, które użytkownicy mogą ukryć lub wyświetlić, klikając przycisk przełącznika na Wstążce. Należy zawsze utworzyć elementu interfejsu użytkownika, takie jak przycisk, który można kliknąć, aby wyświetlić lub ukryć niestandardowego okienka zadań, ponieważ aplikacje Microsoft Office nie umożliwiają domyślne użytkownikom wyświetlanie lub ukrywanie niestandardowych okienek zadań.
@@ -46,7 +46,7 @@ ms.locfileid: "60040667"
 - Synchronizowanie przycisk przełączania z niestandardowego okienka zadań.
 
 > [!NOTE]
->  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:

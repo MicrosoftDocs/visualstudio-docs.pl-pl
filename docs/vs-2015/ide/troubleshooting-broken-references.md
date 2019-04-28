@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed23ea566bb27eaa8a315473fdf5345764ad5384
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 45a3f55e826133ce0fd55764e216824810ae45c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443271"
 ---
 # <a name="troubleshooting-broken-references"></a>Rozwiązywanie problemów z przerwanymi odwołaniami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Jeśli aplikacja próbuje użyć uszkodzone odwołanie, generowany jest błąd w
   Dostępne są następujące środki zaradcze tych problemów.  
   
 > [!NOTE]
->  Pliki w zestawach są przywoływane przy użyciu ścieżek bezwzględnych w pliku projektu. Dlatego jest możliwe dla użytkowników, którzy pracują w środowisku projektowanie brakuje przywoływanego zestawu w środowisku lokalnym. Aby uniknąć tych błędów, lepiej jest w takich przypadkach można dodać odwołania projektu do projektu. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodaj odwołanie](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) i [programowanie za pomocą zestawów](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  
+> Pliki w zestawach są przywoływane przy użyciu ścieżek bezwzględnych w pliku projektu. Dlatego jest możliwe dla użytkowników, którzy pracują w środowisku projektowanie brakuje przywoływanego zestawu w środowisku lokalnym. Aby uniknąć tych błędów, lepiej jest w takich przypadkach można dodać odwołania projektu do projektu. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okno dialogowe Dodaj odwołanie](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) i [programowanie za pomocą zestawów](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  
   
 ## <a name="reference-path-is-incorrect"></a>Ścieżka odwołania jest nieprawidłowy  
  Jeśli projekty są współdzielone na różnych komputerach, niektóre odwołania nie będzie można znaleźć gdy składnik znajduje się w innym katalogu na każdym komputerze. Odwołania są przechowywane w nazwie pliku składnika (na przykład MyComponent). Po dodaniu odwołania do projektu, lokalizacja folderu pliku składnika (na przykład C:\MyComponents\\) jest dołączany do **ReferencePath** właściwość projektu.  
@@ -50,7 +50,7 @@ Jeśli aplikacja próbuje użyć uszkodzone odwołanie, generowany jest błąd w
  Aby rozwiązać ten problem, możesz usunąć uszkodzone odwołanie i zastąp go za pomocą okna dialogowego Dodaj odwołanie. Innym rozwiązaniem jest użycie **ścieżkę odwołania** elementów na stronach właściwości projektu i zmodyfikować foldery na liście, aby wskazywał poprawne lokalizacje. **Ścieżkę odwołania** właściwość jest trwały dla każdego użytkownika na każdym komputerze. W związku z tym modyfikując ścieżki odniesienia nie ma wpływu na innych użytkowników projektu.  
   
 > [!TIP]
->  Odwołania projekt projekt nie ma tych problemów. Z tego powodu ich używać zamiast odwołania do pliku, jeśli to możliwe.  
+> Odwołania projekt projekt nie ma tych problemów. Z tego powodu ich używać zamiast odwołania do pliku, jeśli to możliwe.  
   
 #### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>Aby naprawić uszkodzone odwołanie, poprawiając ścieżkę odwołania  
   

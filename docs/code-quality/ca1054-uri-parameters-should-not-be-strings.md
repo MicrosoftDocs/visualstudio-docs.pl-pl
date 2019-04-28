@@ -19,11 +19,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 03d850eeb668f6c2b47d663b55e5461cabf9cbbf
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57867464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784177"
 ---
 # <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054: Parametry identyfikatora URI nie powinny być ciągami
 

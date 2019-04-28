@@ -19,12 +19,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d2aefe68761d31f87d84c9215a6187c28e7b471b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3541dada6167bd2f0a95913d9ccc385dc3e5ccc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439473"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Powiązywanie kontrolek Windows Forms z danymi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "59668993"
  ![Powiązywanie źródła danych do szczegółów](../data-tools/media/raddata-bind-data-source-to-details.png "źródła danych powiązania raddata tak, aby uzyskać szczegółowe informacje")  
   
 > [!IMPORTANT]
->  Należy pamiętać, że na poprzedniej ilustracji, możesz przeciągnąć z właściwości zamówienia w tabeli Customers, nie z tabeli zamówienia. Przez powiązanie z właściwością Customer.Orders, polecenia nawigacji w formancie DataGridView są natychmiast odzwierciedlone w kontrolkach szczegółowe informacje. Jeśli został przeciągnięty z tabeli Orders, formanty, nadal będzie można powiązać do zestawu danych, ale nie ich może nie zostać zsynchronizowany z formantu DataGridView.  
+> Należy pamiętać, że na poprzedniej ilustracji, możesz przeciągnąć z właściwości zamówienia w tabeli Customers, nie z tabeli zamówienia. Przez powiązanie z właściwością Customer.Orders, polecenia nawigacji w formancie DataGridView są natychmiast odzwierciedlone w kontrolkach szczegółowe informacje. Jeśli został przeciągnięty z tabeli Orders, formanty, nadal będzie można powiązać do zestawu danych, ale nie ich może nie zostać zsynchronizowany z formantu DataGridView.  
   
  Poniższa ilustracja przedstawia domyślne formantów powiązanych z danymi, które są dodawane do formularza, po właściwości zamówienia w tabeli Customers jest powiązany z "Szczegóły" w **źródeł danych** okna.  
   

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a3d9de68392bbb7f8e4f9c1ecd43211725f61d8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 826dbefea0a2eb7fa9758631abaf6e5da84d6862
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443413"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Zadania wbudowane programu MSBuild z RoslynCodeTaskFactory
 Podobnie jak [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), RoslynCodeTaskFactory używa kompilatory Roslyn dla wielu platform, aby wygenerować zestawy zadań w pamięci do użycia jako zadań w tekście.  Zadania RoslynCodeTaskFactory docelowych .NET Standard i może pracować nad środowiska uruchomieniowe platformy .NET Framework i .NET Core, a także innych platformach, takich jak Linux i Mac OS.
@@ -65,7 +65,7 @@ Pozostałe elementy `DoNothing` zadania są puste, znajdują się w celu zilustr
 `Reference` i `Using` elementy są one niezależne od języka. Zadania wbudowane można pisać w jednym z obsługiwanych języków .NET CodeDom, na przykład Visual Basic lub Visual C#.
 
 > [!NOTE]
->  Elementy zawarte w `Task` elementu są specyficzne dla fabryki zadań, w tym przypadku fabryki zadań kodu.
+> Elementy zawarte w `Task` elementu są specyficzne dla fabryki zadań, w tym przypadku fabryki zadań kodu.
 
 ### <a name="code-element"></a>Element Code
 Ostatni element podrzędny, które mają być wyświetlane w `Task` element jest `Code` elementu. `Code` Element zawiera lub lokalizuje kod, który ma być skompilowane w ramach zadania. Umieść w `Code` element zależy od tego, jak chcesz napisać zadanie.
@@ -85,7 +85,7 @@ Sam kod zwykle pojawia się między `<![CDATA[` znaczników i `]]>` znacznika. P
 Alternatywnie, można użyć `Source` atrybutu `Code` element, aby określić lokalizację pliku, który zawiera kod dla zadania. Kod w pliku źródłowym musi być typu, który jest określony przez `Type` atrybutu. Jeśli `Source` atrybut był obecny, wartość domyślna `Type` jest `Class`. Jeśli `Source` jest nieobecna, wartość domyślna to `Fragment`.
 
 > [!NOTE]
->  Podczas definiowania klasy zadań w pliku źródłowym, nazwa klasy należy uzgodnić z `TaskName` atrybut odpowiadającego [UsingTask](../msbuild/usingtask-element-msbuild.md) elementu.
+> Podczas definiowania klasy zadań w pliku źródłowym, nazwa klasy należy uzgodnić z `TaskName` atrybut odpowiadającego [UsingTask](../msbuild/usingtask-element-msbuild.md) elementu.
 
 ## <a name="hello-world"></a>Witaj Świecie
  Poniżej przedstawiono bardziej niezawodne zadania wbudowanego z RoslynCodeTaskFactory. Wyświetla zadania HelloWorld "Hello, world!" na domyślne urządzenie rejestrowania błędów, który jest zazwyczaj konsoli systemowej lub Visual Studio **dane wyjściowe** okna. `Reference` Elementu w przykładzie jest dołączony tylko do celów ilustracyjnych.

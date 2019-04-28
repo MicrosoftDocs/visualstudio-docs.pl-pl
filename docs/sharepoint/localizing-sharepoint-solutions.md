@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71d22bb6210bb515941ca00ebb8b8655a6c089e0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 90da60cb904ba6e3db2be3805256fcf4eb9122ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444352"
 ---
 # <a name="localize-sharepoint-solutions"></a>Lokalizowanie rozwiązań SharePoint
 
@@ -31,7 +31,7 @@ ms.locfileid: "56639924"
  Aby zlokalizować rozwiązanie, Usuń niezmienne ciągi z kodu i wyciągnij je do plików zasobów. Plik zasobów jest [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-oparty na pliku z *resx* rozszerzenia. Plik źródłowy zawiera tłumaczone wersje ciągów wykorzystanych w Twoim rozwiązaniu. Aby uzyskać więcej informacji, zobacz [zasoby w aplikacjach](http://go.microsoft.com/fwlink/?LinkID=155844).
 
 > [!NOTE]
->  Dodaj tylko zasoby ciągu do plików zasobów rozwiązanie programu SharePoint. Chociaż Edytor zasobów umożliwia dodawanie zasobów niebędących ciągami, zasoby bez ciągów nie są wdrażane do programu SharePoint.
+> Dodaj tylko zasoby ciągu do plików zasobów rozwiązanie programu SharePoint. Chociaż Edytor zasobów umożliwia dodawanie zasobów niebędących ciągami, zasoby bez ciągów nie są wdrażane do programu SharePoint.
 
 ## <a name="resource-files"></a>Pliki zasobów
  Istnieją trzy rodzaje plików zasobów: domyślny, neutralny językowo i specyficznych dla języka.
@@ -76,7 +76,7 @@ $Resources:String ID
  Ustaw **typu wdrożenia** właściwości każdego pliku zasobu na **AppGlobalResource**. To powoduje, że pliki zasobów wdrożyć do folderu App_GlobalResources, gdzie są dostępne dla wszystkich stron ASPX i kontrolek w rozwiązaniu. App_GlobalResources folder znajduje się w C:\inetpub\wwwroot\wss\VirtualDirectories\\< numer portu\>\App_GlobalResources.
 
 > [!NOTE]
->  Jeśli używasz plików zasobów nieglobalnych, przenieś je do folderu elementu projektu, aby włączyć właściwość wdrożenia i inne właściwości specyficzne dla programu SharePoint.
+> Jeśli używasz plików zasobów nieglobalnych, przenieś je do folderu elementu projektu, aby włączyć właściwość wdrożenia i inne właściwości specyficzne dla programu SharePoint.
 
  Pliki zasobów znaczników ASPX może również służyć do zlokalizowania kodu. Jeśli używasz zasobów do lokalizowania kodu Oprócz oznakowania aspx, pozostaw ustawienie właściwości Akcja kompilacji każdego pliku jako zasób osadzony, aby spowodować, że zasób można skompilować do zestawu satelickiego. Jednak jeśli używasz plików zasobów tylko do zlokalizowania znaczników, opcjonalnie można zmienić akcji kompilacji do zawartości, aby uniemożliwić pliku są kompilowane do zestawu głównej aplikacji.
 

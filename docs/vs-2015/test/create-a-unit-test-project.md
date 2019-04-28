@@ -8,12 +8,12 @@ ms.assetid: a608bfba-1a43-4a60-b73a-1fe53ef58098
 caps.latest.revision: 10
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca472a8db08f337d873f0e43475a9231f2999b13
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f792c29b50be5bbadf34980b81f7c5dd329cccfb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442830"
 ---
 # <a name="create-a-unit-test-project"></a>Tworzenie projektu testu jednostkowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -21,7 +21,7 @@ ms.locfileid: "60096624"
 Testy jednostkowe dublowanie często struktury kodu w ramach testu. Na przykład projekt testu jednostkowego zostałyby utworzone dla każdego projektu kodu, w ramach produktu. Projekt testowy może znajdować się w tym samym rozwiązaniu, jak kod w środowisku produkcyjnym lub może być w oddzielnym rozwiązaniu. Może mieć wiele jednostek projekty testowe w rozwiązaniu.  
   
 > [!NOTE]
->  Lokalizacja jednostek testów dla kodu natywnego i struktura projektu testowego może być inna niż strukturę, która jest opisane w tym temacie. Aby uzyskać więcej informacji, zobacz [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md).  
+> Lokalizacja jednostek testów dla kodu natywnego i struktura projektu testowego może być inna niż strukturę, która jest opisane w tym temacie. Aby uzyskać więcej informacji, zobacz [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md).  
   
 ## <a name="to-create-a-unit-test-project"></a>Aby utworzyć projekt testów jednostkowych:  
   

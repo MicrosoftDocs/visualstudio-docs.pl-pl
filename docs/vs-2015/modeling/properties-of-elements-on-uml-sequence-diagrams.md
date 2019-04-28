@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6de88572b685b5a432b4f73b125a464f125218b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a6008566f71a241fb5daccab8d6a5dcb68882452
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444398"
 ---
 # <a name="properties-of-elements-on-uml-sequence-diagrams"></a>Właściwości elementów w diagramach sekwencji UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "54802110"
 Na diagramie sekwencji UML każdego elementu na diagramie ma właściwości. Aby wyświetlić właściwości elementu, kliknij prawym przyciskiem myszy element na diagramie lub w **Eksploratora modelu UML** a następnie kliknij przycisk **właściwości**. Właściwości są wyświetlane w **właściwości** okna.  
   
 > [!NOTE]
->  Ten temat dotyczy właściwości elementów w diagramach sekwencji UML. Aby uzyskać więcej informacji o tym, jak odczytać diagramy sekwencji UML, zobacz [UML Sequence Diagrams: Odwołanie](../modeling/uml-sequence-diagrams-reference.md). Aby uzyskać więcej informacji na temat narysować diagramy sekwencji UML, zobacz [UML Sequence Diagrams: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
+> Ten temat dotyczy właściwości elementów w diagramach sekwencji UML. Aby uzyskać więcej informacji o tym, jak odczytać diagramy sekwencji UML, zobacz [UML Sequence Diagrams: Odwołanie](../modeling/uml-sequence-diagrams-reference.md). Aby uzyskać więcej informacji na temat narysować diagramy sekwencji UML, zobacz [UML Sequence Diagrams: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 ## <a name="properties-of-elements"></a>Właściwości elementów  
   

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbd6adeba6d2c131da10ce028c12c6f50b827444
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 21ca64f6661c4f0d7182bf20887ff8bdf754a6fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440319"
 ---
 # <a name="chart-control"></a>Kontrolka wykresu
   <xref:Microsoft.Office.Tools.Excel.Chart> Kontroli jest obiektem wykresu, który opisuje zdarzenia. Po dodaniu wykresu w arkuszu programu Visual Studio tworzy <xref:Microsoft.Office.Tools.Excel.Chart> obiektu, że można programować względem bezpośrednio, bez konieczności przechodzenia z modelu obiektów programu Microsoft Office Excel.
@@ -34,7 +34,7 @@ ms.locfileid: "60088785"
  Możesz dodać <xref:Microsoft.Office.Tools.Excel.Chart> kontrolek do arkusza w czasie wykonywania w dodatku VSTO. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie formantów wykresu do arkuszy](../vsto/how-to-add-chart-controls-to-worksheets.md).
 
 > [!NOTE]
->  Obiekty dynamicznie utworzoną wykresu nie są zachowywane w arkuszu zgodnie z kontrolki hosta po zamknięciu arkusza. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w środowisku uruchomieniowym](../vsto/adding-controls-to-office-documents-at-run-time.md).
+> Obiekty dynamicznie utworzoną wykresu nie są zachowywane w arkuszu zgodnie z kontrolki hosta po zamknięciu arkusza. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w środowisku uruchomieniowym](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 ## <a name="formatting"></a>Formatowanie
  Wszystkie formatowania, który można zastosować do <xref:Microsoft.Office.Interop.Excel.Chart> również będą stosowane do <xref:Microsoft.Office.Tools.Excel.Chart> kontroli. W tym obramowania, czcionki, typ wykresu, linie siatki, legendy i etykiety danych.

@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b2473654bf05a66ef94bd0e88f06ae3e27dbf12
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a9806bad150a5d03a942c7dfb36753f91d10536e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442572"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>Krok 4. Dodawanie metody CheckTheAnswer()
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60060543"
 W czwartej części tego samouczka będziesz pisać metodę `CheckTheAnswer()`, która określa, czy odpowiedzi na problemy matematyczne są poprawne. Ten temat jest częścią serii samouczków na temat podstawowych pojęć kodowania. Aby uzyskać omówienie samouczka, zobacz [samouczek 2: Utwórz Quiz matematyczny](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 > [!NOTE]
->  Jeśli piszesz w Visual Basic użyjesz `Function` słowa kluczowego zamiast zwykłego `Sub` — słowo kluczowe, ponieważ ta metoda zwraca wartość. Jest naprawdę proste: sub nie zwraca wartości, natomiast funkcja.  
+> Jeśli piszesz w Visual Basic użyjesz `Function` słowa kluczowego zamiast zwykłego `Sub` — słowo kluczowe, ponieważ ta metoda zwraca wartość. Jest naprawdę proste: sub nie zwraca wartości, natomiast funkcja.  
   
 ### <a name="to-verify-whether-the-answers-are-correct"></a>Aby sprawdzić, czy odpowiedzi są poprawne  
   
@@ -45,7 +45,7 @@ W czwartej części tego samouczka będziesz pisać metodę `CheckTheAnswer()`, 
 3. Zapisz swój program, uruchom go, uruchom quiz i Podaj poprawną odpowiedź na problem dodawania.  
   
     > [!NOTE]
-    >  Po wprowadzeniu swojej odpowiedzi, musisz wybrać wartość domyślną przed rozpoczęciem wprowadzania odpowiedzi lub musisz usunąć zero ręcznie. W dalszej części tego samouczka skorygujesz to zachowanie.  
+    > Po wprowadzeniu swojej odpowiedzi, musisz wybrać wartość domyślną przed rozpoczęciem wprowadzania odpowiedzi lub musisz usunąć zero ręcznie. W dalszej części tego samouczka skorygujesz to zachowanie.  
   
      Jeśli podasz poprawną odpowiedź, zostanie otwarte okno komunikatu **Start** przycisk staje się dostępny, a timer się zatrzyma.  
   

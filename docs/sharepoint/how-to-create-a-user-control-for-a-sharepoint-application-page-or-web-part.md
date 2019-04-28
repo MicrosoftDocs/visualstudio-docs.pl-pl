@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6e0cc6ee8df5285555760521b415ce8f6679fc2f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 17f8acd38df810d0ea7e5c0da2293a5de31eb281
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446507"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Instrukcje: Tworzenie kontrolki użytkownika dla części strony lub sieci web aplikacji programu SharePoint
   Można tworzyć niestandardowe kontrolki użytkownika, które dostarczają niestandardowych funkcjonalności dla rozwiązania SharePoint oraz można używać tych funkcjonalności ponownie w obrębie projektu. Można dołączyć kontrolki użytkownika do części sieci lub strony aplikacji, dodać inne kontrolki ASP.NET oraz SharePoint oraz zdefiniować właściwości o metody dla kontrolki. Aby uzyskać więcej informacji dotyczących kontrolek użytkownika, zobacz [Tworzenie formantów wielokrotnych dla części sieciowych lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) i [kontrolki użytkownika oraz serwera w programie SharePoint](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).
@@ -40,7 +40,7 @@ ms.locfileid: "60072048"
 5. Na liście szablonów programu SharePoint, wybierz opcję **kontrolki użytkownika (tylko rozwiązanie farmy)**.
 
     > [!NOTE]
-    >  Kontrolki użytkownika działają tylko w rozwiązaniach farmy.
+    > Kontrolki użytkownika działają tylko w rozwiązaniach farmy.
 
 6. W **nazwa** , określ nazwę dla kontrolki użytkownika, a następnie wybierz **Dodaj** przycisku.
 

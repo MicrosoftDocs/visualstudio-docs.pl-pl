@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fab26a750dab2a1099280b886342731fe8a4612e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: eaf927b1049709a04d8a883615d1997e9316599e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445389"
 ---
 # <a name="task-writing"></a>Wpisywanie zadania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ namespace MyTasks
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] Plik Microsoft.Common.Tasks znajduje się plik projektu, który zawiera listę `UsingTask` elementy, które rejestrują wszystkie zadania, które są dostarczane z [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Ten plik jest automatycznie dołączane podczas tworzenia każdego projektu. Jeśli zadanie, który jest zarejestrowany w Microsoft.Common.Tasks również jest zarejestrowany w bieżącym pliku projektu, bieżący plik projektu ma pierwszeństwo przed; oznacza to, że można zastąpić domyślnego zadania przy użyciu własnych zadań, który ma taką samą nazwę.  
   
 > [!TIP]
->  Można wyświetlić listę zadań, które są dostarczane z [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] , wyświetlając zawartość Microsoft.Common.Tasks.  
+> Można wyświetlić listę zadań, które są dostarczane z [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] , wyświetlając zawartość Microsoft.Common.Tasks.  
   
 ## <a name="raising-events-from-a-task"></a>Wywoływanie zdarzeń z zadania  
  Jeśli zadanie jest pochodną <xref:Microsoft.Build.Utilities.Task> klasy pomocnika, umożliwia dowolny z następujących metod pomocnika na <xref:Microsoft.Build.Utilities.Task> klasy, aby wywołać zdarzenia, które będą przechwytywane i wyświetlane przez dowolnego rejestratorów zarejestrowanych:  

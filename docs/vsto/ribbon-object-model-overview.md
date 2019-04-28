@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5958eb6fb8fd14dd510fa87d900efa76cb6f6a87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 83f906ad9e5ded349250fe5324076527975c9bf6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446983"
 ---
 # <a name="ribbon-object-model-overview"></a>Model obiektu Wstążka ― omówienie
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Udostępnia model silnie typizowany obiekt, który służy do pobierania i ustawiania właściwości formantów wstążki w czasie wykonywania. Na przykład użytkownik może dynamicznie wypełnianie kontrolek menu lub wyświetlania i ukrywania kontrolek kontekstowe. Na Wstążce, ale tylko w przypadku, przed załadowaniem wstążki według aplikacji pakietu Office, można dodać karty, grupy i formanty. Aby uzyskać informacje, zobacz [Ustaw właściwości, które stają się tylko do odczytu](#SettingReadOnlyProperties).
@@ -130,7 +130,7 @@ ms.locfileid: "60040719"
  W poniższej tabeli przedstawiono właściwości, które można ustawić tylko przed ładuje wstążki.
 
 > [!NOTE]
->  W dowolnym momencie można ustawić właściwości kontrolek na menu dynamiczne. Ta tabela nie ma zastosowania w takiej sytuacji.
+> W dowolnym momencie można ustawić właściwości kontrolek na menu dynamiczne. Ta tabela nie ma zastosowania w takiej sytuacji.
 
 |Właściwość|Klasa formantów wstążki|
 |--------------|--------------------------|
@@ -163,7 +163,7 @@ ms.locfileid: "60040719"
  Jeśli masz logikę warunkową, która ustawia żadnej z tych właściwości na inną wartość, gdy tworzone są inne wystąpienia wstążki, ten kod odniesie żadnego skutku.
 
 > [!NOTE]
->  Upewnij się, że **nazwa** właściwość jest ustawiona dla każdego formantu, który dodasz do Wstążki programu Outlook. Jeśli dodasz formant do Wstążki programu Outlook w czasie wykonywania, należy ustawić tę właściwość w kodzie. Jeśli dodasz formant do Wstążki programu Outlook w czasie projektowania, nazwa właściwości jest ustawiana automatycznie.
+> Upewnij się, że **nazwa** właściwość jest ustawiona dla każdego formantu, który dodasz do Wstążki programu Outlook. Jeśli dodasz formant do Wstążki programu Outlook w czasie wykonywania, należy ustawić tę właściwość w kodzie. Jeśli dodasz formant do Wstążki programu Outlook w czasie projektowania, nazwa właściwości jest ustawiana automatycznie.
 
 ## <a name="ribbon-control-events"></a>Zdarzeń kontrolek wstążki
  Każda klasa formantu zawiera jeden lub więcej zdarzeń. W poniższej tabeli opisano te zdarzenia.

@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 020dd35d225d8629a8061d1a74b234b62960c830
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c95a361f00e9b744aa78f443ad7c173209a5a0bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442431"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generowanie kodu na podstawie diagramów klas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +101,7 @@ Aby wygenerować kod Visual C# .NET z diagramów klas UML w programie Visual Stu
 2. W **właściwości** okna, wybierz strzałkę listy rozwijanej w **Stereotypy** właściwości, a następnie zaznacz pole wyboru dla stereotypu, który chcesz zastosować.  
 
    > [!TIP]
-   >  Jeśli stereotypy języka C# nie są wyświetlane, włącz profil C# dla modelu lub pakietu, który zawiera stosowne elementy modelu. Wybierz pakiet lub korzeń modelu w **Eksploratora modelu UML**. Następnie w **właściwości** oknie Wybierz **profilu**, a następnie włącz profil C#.  
+   > Jeśli stereotypy języka C# nie są wyświetlane, włącz profil C# dla modelu lub pakietu, który zawiera stosowne elementy modelu. Wybierz pakiet lub korzeń modelu w **Eksploratora modelu UML**. Następnie w **właściwości** oknie Wybierz **profilu**, a następnie włącz profil C#.  
 
 3. Rozwiń **Stereotypy** właściwość, aby wyświetlić dodatkowe właściwości, które można ustawić.  
 
@@ -144,7 +144,7 @@ Aby wygenerować kod Visual C# .NET z diagramów klas UML w programie Visual Stu
  Do elementu modelu można zastosować więcej niż jeden szablon. Z każdego elementu modelu można wygenerować więcej niż jeden plik.  
 
 > [!NOTE]
->  Powiązania dołączone do korzenia modelu działają jako ustawienia domyślne dla wszystkich elementów w modelu. Aby wyświetlić te domyślne powiązania, otwórz **Eksploratora modelu UML**. Otwórz menu skrótów projektu modelowania, a następnie wybierz **zapasowych generowanie kodu**. Alternatywnie możesz wybrać korzeń modelu w Eksploratorze modelu UML. W oknie dialogowym właściwości wybierz **[...]**  w **powiązania szablonów tekstu** właściwości. Powiązania nie będą widoczne, dopóki nie używano **Generuj kod** polecenia co najmniej raz. Szablony powiązań nie mogą być dołączone do diagramu.  
+> Powiązania dołączone do korzenia modelu działają jako ustawienia domyślne dla wszystkich elementów w modelu. Aby wyświetlić te domyślne powiązania, otwórz **Eksploratora modelu UML**. Otwórz menu skrótów projektu modelowania, a następnie wybierz **zapasowych generowanie kodu**. Alternatywnie możesz wybrać korzeń modelu w Eksploratorze modelu UML. W oknie dialogowym właściwości wybierz **[...]**  w **powiązania szablonów tekstu** właściwości. Powiązania nie będą widoczne, dopóki nie używano **Generuj kod** polecenia co najmniej raz. Szablony powiązań nie mogą być dołączone do diagramu.  
 
 #### <a name="to-attach-text-template-bindings-to-a-package-or-other-model-element"></a>Aby dołączyć powiązanie szablony tekstu do pakietu lub innego elementu modelu  
 

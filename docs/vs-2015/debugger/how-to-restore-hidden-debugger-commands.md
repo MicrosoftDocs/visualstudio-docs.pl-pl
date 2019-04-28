@@ -22,12 +22,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a882a1523d89f547f98389e6ad3e6baf32cbb01c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 297be3a3a4ad3c70ad28c627d5dc8d64c6ba1c7a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442073"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Instrukcje: Przywracanie ukrytych poleceń debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Podczas konfigurowania programu Visual Studio zostanie wyświetlony monit o wybr
 7. Kliknij przycisk **Zamknij** Kiedy zakończysz dodawanie poleceń do menu.  
   
     > [!WARNING]
-    >  Niektóre elementy menu są wyświetlane, gdy debuger jest w trybach określonych, takie jak tryb uruchamiania lub trybie przerwania. W związku z tym nie może być od razu widoczne element, który został dodany, po wykonaniu tych kroków.  
+    > Niektóre elementy menu są wyświetlane, gdy debuger jest w trybach określonych, takie jak tryb uruchamiania lub trybie przerwania. W związku z tym nie może być od razu widoczne element, który został dodany, po wykonaniu tych kroków.  
   
 ## <a name="restoring-commands-not-available-from-the-customize-dialog-box"></a>Przywracanie poleceń, które nie są dostępne w oknie dialogowym Dostosuj  
  Nie można przywrócić niektórych poleceń, zwłaszcza tych, które dostępnych w menu hierarchiczne z **Dostosuj** okno dialogowe. Aby przywrócić tych poleceń, należy zaimportować nową kolekcję ustawień środowiska IDE.  

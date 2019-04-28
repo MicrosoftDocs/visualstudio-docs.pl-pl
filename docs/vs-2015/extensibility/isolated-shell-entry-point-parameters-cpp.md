@@ -11,12 +11,12 @@ ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6089c4ef32ef0d0b0bce081cef6d16bd569c0901
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9e736343212c4bf6acd833f5740b996c6c032c3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439808"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>Parametry punktu wejścia Isolated Shell (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
  Aby zastąpić co najmniej jedno ustawienie, należy przekazać ciąg Unicode, który zawiera ustawienia do zastąpienia. Ten ciąg jest rozdzieloną średnikami listę par nazwa wartość. Każda para zawiera nazwę ustawienie, aby zastąpić, następuje znak równości (=), a następnie według wartości, aby zastosować ustawienia.  
   
 > [!NOTE]
->  Nie dołączaj białe znaki w ciągach znaków Unicode.  
+> Nie dołączaj białe znaki w ciągach znaków Unicode.  
   
  Wartość logiczna ustawień następujące ciągi reprezentować wartość true; inne ciągi reprezentować wartość false. Tych ciągów jest rozróżniana wielkość liter.  
   

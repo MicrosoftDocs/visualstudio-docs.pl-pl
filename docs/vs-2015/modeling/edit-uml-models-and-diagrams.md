@@ -21,12 +21,12 @@ caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 157e605ae16167317e02e92070d859870b4709cf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0dafd91a832fd4098fb19a26750310135723216f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442968"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Edytowanie modeli i diagramów UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ Można tworzyć i edytować modelu UML za pomocą widoków, dostarczone przez r�
 3. W **Dodaj do projektu modelowania**, wybierz istniejący projekt modelowania lub **Utwórz nowy projekt modelowania**.  
   
    > [!NOTE]
-   >  Na diagramie modelowania, musi istnieć w projekcie modelowania.  
+   > Na diagramie modelowania, musi istnieć w projekcie modelowania.  
   
    Diagram można również dodać do istniejącego projektu modelowania w Eksploratorze rozwiązań. Kliknij prawym przyciskiem myszy projekt modelowania, wskaż opcję **Dodaj**, a następnie kliknij przycisk **nowy element**.  
   
@@ -97,7 +97,7 @@ Można tworzyć i edytować modelu UML za pomocą widoków, dostarczone przez r�
  Istnieją dwa rodzaje narzędzia: jeden dla elementów, a drugi dla relacji. Na przykład w diagramie klas UML przybornika **klasy** jest narzędziem elementu i **skojarzenia** to narzędzie relacji.  
   
 > [!NOTE]
->  Aby uzyskać informacje, które są specyficzne dla typów określonego diagram zobacz [tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md).  
+> Aby uzyskać informacje, które są specyficzne dla typów określonego diagram zobacz [tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md).  
   
 #### <a name="to-create-elements-and-relationships-in-a-uml-modeling-diagram"></a>Aby utworzyć elementów i relacji na diagramie modelowania UML  
   
@@ -106,14 +106,14 @@ Można tworzyć i edytować modelu UML za pomocą widoków, dostarczone przez r�
     W niektórych przypadkach można umieścić nowy element wewnątrz innego elementu. Na przykład na diagramie klas UML, można umieścić klasy w pakiecie.  
   
    > [!NOTE]
-   >  Jeśli przybornik jest niewidoczny, kliknij przycisk **przybornika** na **widoku** menu.  
+   > Jeśli przybornik jest niewidoczny, kliknij przycisk **przybornika** na **widoku** menu.  
   
 2. Można utworzyć relacji, kliknij narzędzie relację, kliknij element, którego relacji, aby rozpocząć, a następnie kliknij element, gdzie ma się zakończyć.  
   
     Różne typy relacji mogą początku ani na końcu na różnych typach elementów. Na diagramie klas UML, relacja skojarzenia nie może na przykład uruchomić ani kończyć się w elemencie komentarz.  
   
    > [!NOTE]
-   >  Aby użyć tego samego narzędzia kilka razy, kliknij dwukrotnie narzędzie. Po zakończeniu kliknij przycisk **wskaźnik** narzędzia.  
+   > Aby użyć tego samego narzędzia kilka razy, kliknij dwukrotnie narzędzie. Po zakończeniu kliknij przycisk **wskaźnik** narzędzia.  
   
    Na niektóre rodzaje diagramów można rysować kształty proste. Kształty te nie są częścią modelu, ale można je zwrócić uwagę czytelnika na części diagramu lub podziel go na różnych obszarach.  
   
@@ -121,14 +121,14 @@ Można tworzyć i edytować modelu UML za pomocą widoków, dostarczone przez r�
  Podczas zmiany rozmiaru lub kolor kształtu lub przekierowywanie łącznika nie ma żadnego wpływu na odpowiedni model. Jednak po użytkownik zmieni nazwę kształtu na diagramie lub w Eksploratorze modelu UML, odpowiadający mu element jest zmieniana w Eksploratorze modelu UML i inne diagramy, które są dostępne z tego elementu.  
   
 > [!NOTE]
->  Brak prosty sposób, aby nowe elementy paska narzędzi, z których możesz utworzyć grupy elementów lub elementów z wybranym właściwości. Aby uzyskać więcej informacji, zobacz [Definiowanie niestandardowego elementu przybornika modelowania](../modeling/define-a-custom-modeling-toolbox-item.md).  
+> Brak prosty sposób, aby nowe elementy paska narzędzi, z których możesz utworzyć grupy elementów lub elementów z wybranym właściwości. Aby uzyskać więcej informacji, zobacz [Definiowanie niestandardowego elementu przybornika modelowania](../modeling/define-a-custom-modeling-toolbox-item.md).  
   
  Poniższa ilustracja pokazuje, jak zmienić rozmiar kształtu lub jego nazwę.  
   
  ![Dostosowywanie elementu modelu](../modeling/media/uml-drawadjust1.png "UML_DrawAdjust1")  
   
 > [!TIP]
->  Wbudowane polecenia nie zawierają polecenia starannego wyrównywania kształtów. Jednak łatwo można utworzyć polecenia wyrównanie, kopiując kod w przykładzie w [wyświetlanie modelu UML na diagramach](../modeling/display-a-uml-model-on-diagrams.md).  
+> Wbudowane polecenia nie zawierają polecenia starannego wyrównywania kształtów. Jednak łatwo można utworzyć polecenia wyrównanie, kopiując kod w przykładzie w [wyświetlanie modelu UML na diagramach](../modeling/display-a-uml-model-on-diagrams.md).  
   
  Na poniższej ilustracji przedstawiono, jak dostosować trasy i położenia łącznika lub jej etykiet.  
   
@@ -178,12 +178,12 @@ Można tworzyć i edytować modelu UML za pomocą widoków, dostarczone przez r�
      Na **Edytuj** menu wskaż **Znajdź i Zamień**, a następnie kliknij przycisk **szybkie znajdowanie**.  
   
     > [!NOTE]
-    >  W **Znajdź i Zamień** okno dialogowe, musi zostawić **przeszukania** pola **bieżący dokument**. Inne opcje nie są obsługiwane.  
+    > W **Znajdź i Zamień** okno dialogowe, musi zostawić **przeszukania** pola **bieżący dokument**. Inne opcje nie są obsługiwane.  
   
 2. Wpisz tekst, który chcesz odnaleźć, a następnie kliknij przycisk **Znajdź następny**.  
   
     > [!NOTE]
-    >  Jeśli tekst, który ma zostać odnaleziona znajduje się wewnątrz zwiniętego kształtu, kształt zostanie wyróżniona. Rozwiń kształt, a następnie kliknij przycisk **Znajdź następny** ponownie.  
+    > Jeśli tekst, który ma zostać odnaleziona znajduje się wewnątrz zwiniętego kształtu, kształt zostanie wyróżniona. Rozwiń kształt, a następnie kliknij przycisk **Znajdź następny** ponownie.  
   
 ## <a name="Undo"></a> Cofanie zmian do modelu  
  Można cofnąć i wykonaj ponownie zmiany wprowadzone do modelu i diagramy za pomocą **Cofnij** i **wykonaj ponownie** polecenia na **Edytuj** menu.  
@@ -216,7 +216,7 @@ Można tworzyć i edytować modelu UML za pomocą widoków, dostarczone przez r�
      Kształt z warunkiem, że zostanie wyświetlony widok elementu modelu, które mogą być oprócz widoków na inne diagramy lub ten sam schemat.  
   
     > [!NOTE]
-    >  Efekt różni się po przeciągnięciu klasy lub składnik na diagramie sekwencji. W takim przypadku nowy linii życia jest tworzony, którego typem jest tej klasy lub składnika. Aby uzyskać więcej informacji, zobacz [UML Sequence Diagrams: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
+    > Efekt różni się po przeciągnięciu klasy lub składnik na diagramie sekwencji. W takim przypadku nowy linii życia jest tworzony, którego typem jest tej klasy lub składnika. Aby uzyskać więcej informacji, zobacz [UML Sequence Diagrams: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 #### <a name="to-add-a-new-view-of-a-model-element-by-using-paste-reference"></a>Aby dodać nowy widok elementu modelu przy użyciu Wklej odwołanie  
   
@@ -229,23 +229,23 @@ Można tworzyć i edytować modelu UML za pomocą widoków, dostarczone przez r�
      Zostanie wyświetlony inny widok tego samego elementu.  
   
     > [!NOTE]
-    >  To różni się od **Wklej** polecenia, które tworzy nowy element w modelu. Aby uzyskać więcej informacji, zobacz [kopiowanie elementów i grupuje pokrewne elementy](#Copying).  
+    > To różni się od **Wklej** polecenia, które tworzy nowy element w modelu. Aby uzyskać więcej informacji, zobacz [kopiowanie elementów i grupuje pokrewne elementy](#Copying).  
   
 > [!NOTE]
->  Jeśli dodasz do widoków diagramu, dwa elementy modelu, które są już połączone poprzez relację, widok relacji również pojawi się na diagramie. W tym widoku można usunąć tylko przez usunięcie jednego z elementów z diagramu lub przez usunięcie zależności od modelu.  
+> Jeśli dodasz do widoków diagramu, dwa elementy modelu, które są już połączone poprzez relację, widok relacji również pojawi się na diagramie. W tym widoku można usunąć tylko przez usunięcie jednego z elementów z diagramu lub przez usunięcie zależności od modelu.  
   
 ## <a name="Copying"></a> Kopiowanie elementów i grup powiązanych elementów  
  Można skopiować i wkleić elementy modelu, a także można skopiować i wkleić grup elementów wraz z relacji między nimi.  
   
 > [!NOTE]
->  **Wklej** i **Wklej odwołanie** polecenia mają różne efekty. **Wklej** tworzy nowe elementy, których właściwości są podobne do tych skopiowane elementy. **Wklej odwołanie** tworzy nowe widoki te same elementy.  
+> **Wklej** i **Wklej odwołanie** polecenia mają różne efekty. **Wklej** tworzy nowe elementy, których właściwości są podobne do tych skopiowane elementy. **Wklej odwołanie** tworzy nowe widoki te same elementy.  
   
 #### <a name="to-copy-elements-and-their-relationships"></a>Aby skopiować elementy i ich relacji  
   
 1. Na diagramie z elementami, które chcesz skopiować zaznacz jeden lub więcej elementów.  
   
     > [!NOTE]
-    >  Nie można skopiować relacje z wyjątkiem jako część grupy elementów.  
+    > Nie można skopiować relacje z wyjątkiem jako część grupy elementów.  
   
 2. Na **Edytuj** menu, kliknij przycisk **kopiowania**.  
   
@@ -260,7 +260,7 @@ Można tworzyć i edytować modelu UML za pomocą widoków, dostarczone przez r�
 5. Dostosuj stanowiska, nazwy i inne właściwości nowych elementów i relacji.  
   
 > [!NOTE]
->  Nie można skopiować elementu modelu z jednego modelu, do innego, na przykład jeśli masz dwa modele w tym samym rozwiązaniu. Jednak elementy z jednym diagramie można skopiować do innego.  
+> Nie można skopiować elementu modelu z jednego modelu, do innego, na przykład jeśli masz dwa modele w tym samym rozwiązaniu. Jednak elementy z jednym diagramie można skopiować do innego.  
   
 #### <a name="to-copy-an-entire-diagram"></a>Aby skopiować cały diagram  
   
@@ -276,7 +276,7 @@ Można tworzyć i edytować modelu UML za pomocą widoków, dostarczone przez r�
  Z drugiej strony podczas usuwania relacji z diagramu zawsze usuwasz je z modelu.  
   
 > [!NOTE]
->  Niektóre rodzaje elementów na diagramie UML ma etykiety. Po wybraniu takie elementy za pomocą rysowania prostokąt wokół nich jest możliwe do wybrania etykiety, ale nie elementy, które są właścicielami tych etykiet. Usuwanie podzbiór elementów, które są wybrane w ten sposób nie jest obsługiwane. Aby wybrać podzbiór tych elementów, naciśnij i przytrzymaj klawisz **CTRL** klucza podczas klikania każdego elementu.  
+> Niektóre rodzaje elementów na diagramie UML ma etykiety. Po wybraniu takie elementy za pomocą rysowania prostokąt wokół nich jest możliwe do wybrania etykiety, ale nie elementy, które są właścicielami tych etykiet. Usuwanie podzbiór elementów, które są wybrane w ten sposób nie jest obsługiwane. Aby wybrać podzbiór tych elementów, naciśnij i przytrzymaj klawisz **CTRL** klucza podczas klikania każdego elementu.  
   
 #### <a name="to-remove-a-classifiers-view-from-a-diagram"></a>Aby usunąć widok klasyfikatora z diagramu  
   
@@ -303,7 +303,7 @@ Można tworzyć i edytować modelu UML za pomocą widoków, dostarczone przez r�
 - Kliknij prawym przyciskiem myszy relację na diagramie lub w **Eksploratora modelu UML**, a następnie kliknij przycisk **usunięte z modelu**.  
   
     > [!CAUTION]
-    >  Nie można usunąć relacji z diagramu, bez usuwania go z modelu.  
+    > Nie można usunąć relacji z diagramu, bez usuwania go z modelu.  
   
      Relacja zostanie usunięta z modelu i zostanie usunięta z każdy diagram, na którym jest wyświetlana.  
   

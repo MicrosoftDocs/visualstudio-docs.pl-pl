@@ -19,12 +19,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc6c7af3732f2f96ad53651b146898b655b68fdd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 91b438e8646a215aeed3390e87ce9c20ca923fae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441282"
 ---
 # <a name="security-page-project-designer"></a>Strona zabezpieczeń, Projektant projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "59647937"
  Określa, czy ustawienia zabezpieczeń są włączone w czasie projektowania. Jeśli ta opcja jest wyczyszczone, wszystkie inne opcje na **zabezpieczeń** strony są niedostępne.  
   
 > [!NOTE]
->  Po opublikowaniu aplikacji za pomocą **Publikuj** kreatora, ta opcja jest automatycznie włączona.  
+> Po opublikowaniu aplikacji za pomocą **Publikuj** kreatora, ta opcja jest automatycznie włączona.  
   
  Po wybraniu tej opcji, użytkownik może wybrać jedną z dwóch przycisków radiowych: **Jest to aplikacja w trybie pełnego zaufania** lub **to częściowo zaufanych aplikacji**.  
   

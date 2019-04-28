@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 500364d42c3c47b471102deee8f95193648183b8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c8dac5a999b4f11fb066edfc1b1d4c057a999bae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442984"
 ---
 # <a name="domain-property-value-change-handlers"></a>Obsługa zmian wartości właściwości domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,7 +111,7 @@ if (newValue > 10)
  ChangeRule umożliwia również dostosować nowe wartości właściwości, aby utrzymać ją do określonego zakresu.  
   
 > [!WARNING]
->  Jeśli reguła sprawia, że zmiany do zawartości ze sklepu, inne zasady i procedury obsługi właściwości mogą być wyzwalane. Jeśli reguła zmieni się właściwość, która je wyzwoliło, zostanie ponownie wywołana. Upewnij się, że definicji reguły nie powodują wyzwolenie nieskończone.  
+> Jeśli reguła sprawia, że zmiany do zawartości ze sklepu, inne zasady i procedury obsługi właściwości mogą być wyzwalane. Jeśli reguła zmieni się właściwość, która je wyzwoliło, zostanie ponownie wywołana. Upewnij się, że definicji reguły nie powodują wyzwolenie nieskończone.  
   
 ```  
 using Microsoft.VisualStudio.Modeling;   

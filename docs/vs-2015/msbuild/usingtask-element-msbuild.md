@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95e0d070bb69bd6918025298f865236a382d16e0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: bf2882120f2e4c27e33b105585ba56261122055d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445653"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask — Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Mapuje zadanie, które odwołują się [zadań](../msbuild/task-element-msbuild.
  Zmienne środowiskowe, właściwości wiersza polecenia i właściwości na poziomie projektu może znajdować się gdziekolwiek w `UsingTask` element, jeśli występuje on w pliku projektu jawne lub za pośrednictwem zaimportowanego pliku projektu. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).  
   
 > [!NOTE]
->  Właściwości na poziomie projektu nie mają znaczenia jeśli `UsingTask` element pochodzi z jednego z plików .tasks, które są globalnie zarejestrowane w usłudze aparatu MSBuild. Właściwości na poziomie projektu nie są globalne do programu MSBuild.  
+> Właściwości na poziomie projektu nie mają znaczenia jeśli `UsingTask` element pochodzi z jednego z plików .tasks, które są globalnie zarejestrowane w usłudze aparatu MSBuild. Właściwości na poziomie projektu nie są globalne do programu MSBuild.  
   
  W wersji 4.0 programu MSBuild przy użyciu zadań może być załadowany z .overridetask plików.  
   

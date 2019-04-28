@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e1c58cae9983cc14878ba548177bf9ba6ad44255
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783994"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Edytuj test mieszany, aby określić, które wydajności sieci web, jednostki i kodowane testy interfejsu użytkownika można uwzględnić w scenariuszu testu obciążenia
 

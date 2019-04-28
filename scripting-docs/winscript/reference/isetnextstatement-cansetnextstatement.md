@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: eb65faaf107c42b44201ea18c1150f8093b1654c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58158948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786618"
 ---
 # <a name="isetnextstatementcansetnextstatement"></a>ISetNextStatement::CanSetNextStatement
 Ta metoda określa, czy punkt wykonania, która określa następną instrukcję na wykonanie kodu, można ustawić w określonej lokalizacji.  

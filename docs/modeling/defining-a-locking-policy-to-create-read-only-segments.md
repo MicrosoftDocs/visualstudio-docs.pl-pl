@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b38f81b3269d0a456c077023d23861a55ac06a4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 22eaa971035b4b202ecb76b3f1d29e286516a69b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445830"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definiowanie zasad blokowania na potrzeby tworzenia segmentów tylko do odczytu
 Interfejs API niezmienności programu Visual Studio Visualization i Modeling SDK umożliwia programowi można zablokować część lub całość model języka specyficznego dla domeny (DSL), tak aby można go odczytać ale niezmienione. Tej opcji tylko do odczytu może służyć, na przykład, aby poprosić współpracowników, aby dodać adnotacje i przejrzeć modelu DSL użytkownika, ale może zabronić im zmianę oryginału.
@@ -20,7 +20,7 @@ Interfejs API niezmienności programu Visual Studio Visualization i Modeling SDK
  Ponadto, ponieważ autor DSL, można zdefiniować *zasad blokowania.* Zasad blokowania definiuje, które blokady są dozwolone, niedozwolone lub obowiązkowe. Na przykład podczas publikowania DSL może zachęcać deweloperom firm rozbudowuj je przy użyciu nowych poleceń. Ale zasad blokowania można również użyć, aby uniemożliwić zmianę stanu tylko do odczytu określonego części modelu.
 
 > [!NOTE]
->  Może zostać ominięte zasad blokowania przy użyciu odbicia. Udostępnia wyraźne granice dla deweloperów innych firm, ale nie zapewnia silne zabezpieczenia.
+> Może zostać ominięte zasad blokowania przy użyciu odbicia. Udostępnia wyraźne granice dla deweloperów innych firm, ale nie zapewnia silne zabezpieczenia.
 
  Więcej informacji i przykłady są dostępne w Visual Studio [wizualizacji i modelowania SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) witryny sieci Web.
 

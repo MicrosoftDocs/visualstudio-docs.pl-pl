@@ -8,12 +8,12 @@ ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 211741a94623ede593c7f6ba9e5988cea094ae90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a33d7928e6e2555f0cfd484059b062ae801d8633
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442085"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulator programu Visual Studio dla systemu Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Visual Studio Emulator for Android to aplikacja komputerowa, która emuluje urz�
  Można odinstalować Visual Studio Emulator dla systemu Android za pomocą opcji Dodaj/Usuń programy w Panelu sterowania.  
   
 > [!NOTE]
->  Odinstalowywanie programu Visual Studio nie spowoduje odinstalowania emulatora. Należy odinstalować emulator oddzielnie.  
+> Odinstalowywanie programu Visual Studio nie spowoduje odinstalowania emulatora. Należy odinstalować emulator oddzielnie.  
   
  Po odinstalowaniu programu Visual Studio Emulator for Android funkcji Hyper-V wirtualne karty Ethernet utworzone dla emulatora do użycia nie są automatycznie usuwane. Można ręcznie usunąć tych wirtualnych kart sieciowych (jeśli jest nieużywany), otwierając Menedżera funkcji Hyper-V, wybierając jedną z emulator obrazów wirtualnych dysków Twardych, wybierając kartę Sieć i wybierając **Usuń** dla wszystkich przełączników, które pojawia się na tej karcie.  
   

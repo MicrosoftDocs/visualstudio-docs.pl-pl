@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c1596213b618ba67cd4bf1406f63c0754fd9b96
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 38312384c3e6ce51aa1b5b0b16df378286fc58b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443585"
 ---
 # <a name="how-to-add-a-creator-method"></a>Instrukcje: Dodawanie metody Creator
   Metody Creator dodaje nowe dane do źródła danych jednostki. Usługa łączności danych biznesowych (BDC) wywołuje tę metodę, gdy użytkownicy wybiorą **nowy element** znajdujący się na **wstążki** listy, która jest oparta na modelu. Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -58,7 +58,7 @@ ms.locfileid: "56619319"
 5. Dodaj kod do metody Creator, który dodaje dane do źródła danych. Poniższy przykład dodaje kontakt do przykładowej bazy danych AdventureWorks programu SQL Server.
 
    > [!NOTE]
-   >  Zastąp wartość `ServerName` pole z nazwą serwera.
+   > Zastąp wartość `ServerName` pole z nazwą serwera.
 
     [!code-csharp[SP_BDC#4](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#4)]
     [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]

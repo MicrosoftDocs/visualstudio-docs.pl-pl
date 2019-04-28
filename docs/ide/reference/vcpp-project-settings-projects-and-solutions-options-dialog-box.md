@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 2d3f81659930f75cda3c4ec0873837f7486e8b60
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789332"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Ustawienia projektu VC++, projekty i rozwiązania, opcje — Okno dialogowe
 To okno dialogowe pozwala zdefiniować [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] kompilacji i ustawienia związane z rejestrowania, wydajności i obsługi typów plików projektu.

@@ -19,12 +19,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee820bc246e11b722d663ecc6a6037f182bc2c33
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 12cbeca740fd81292109183468a304fc2d3da30c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439494"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Powiązanie obiektów w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60053120"
 Visual Studio zapewnia narzędzia projektowania do pracy z niestandardowych obiektów jako źródło danych w aplikacji. Jeśli chcesz przechowywać dane z bazy danych w obiekcie, który możesz powiązać formanty interfejsu użytkownika, zalecanym podejściem jest używać programu Entity Framework do generowania klasy lub klas. Jednostka Frameworkautogenerates wszystkich standardowy śledzenia zmian kodu, co oznacza, że wszelkie zmiany lokalne obiekty automatycznie są zachowywane do bazy danych, po wywołaniu funkcji AcceptChanges w obiekcie DbSet.    Aby uzyskać więcej informacji, zobacz [dokumentacja programu Entity Framework](https://ef.readthedocs.org/en/latest/).
 
 > [!TIP]
->  Podejścia do powiązania obiektu, w tym artykule należy rozważyć tylko, jeśli aplikacja już opiera się na zestawach danych. Te metody mogą również jeśli już znasz z zestawami danych, a dane, które będą przetwarzać jest tabelarycznym i nie jest zbyt złożony lub zbyt duży. Aby uzyskać przykład jeszcze prostsze, dotyczące ładowania danych bezpośrednio do obiektów przy użyciu elementu DataReader i ręczne aktualizowanie interfejsu użytkownika bez wiązania danych, zobacz [Tworzenie prostej aplikacji danych przy użyciu pakietu ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md).
+> Podejścia do powiązania obiektu, w tym artykule należy rozważyć tylko, jeśli aplikacja już opiera się na zestawach danych. Te metody mogą również jeśli już znasz z zestawami danych, a dane, które będą przetwarzać jest tabelarycznym i nie jest zbyt złożony lub zbyt duży. Aby uzyskać przykład jeszcze prostsze, dotyczące ładowania danych bezpośrednio do obiektów przy użyciu elementu DataReader i ręczne aktualizowanie interfejsu użytkownika bez wiązania danych, zobacz [Tworzenie prostej aplikacji danych przy użyciu pakietu ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md).
 
 ## <a name="object-requirements"></a>Wymagania dotyczące obiektu
  Jedynym wymaganiem dla obiektów niestandardowych pracować z danymi narzędzia do projektowania w programie Visual Studio jest, że obiekt wymaga co najmniej jedną właściwość publiczną.
@@ -55,7 +55,7 @@ Visual Studio zapewnia narzędzia projektowania do pracy z niestandardowych obie
 - Zapisywanie danych z obiektów w bazie danych.
 
 > [!NOTE]
->  Aby lepiej zrozumieć i dostarczanie kontekstu przykładach na tej stronie, zalecamy wykonanie następujących czynności: [Przewodnik: O łączeniu z danymi w obiektach (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Ten przewodnik tworzy obiekty omówionych w tym miejscu.
+> Aby lepiej zrozumieć i dostarczanie kontekstu przykładach na tej stronie, zalecamy wykonanie następujących czynności: [Przewodnik: O łączeniu z danymi w obiektach (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Ten przewodnik tworzy obiekty omówionych w tym miejscu.
 
 ### <a name="loaddata-into-objects"></a>Loaddata na obiekty
  W tym przykładzie dane zostały załadowane do obiektów za pomocą adapterów TableAdapter. Domyślnie TableAdapters są tworzone za pomocą dwóch rodzajów metod, które pobierania danych z bazy danych i wypełnianie tabel danych.
@@ -67,7 +67,7 @@ Visual Studio zapewnia narzędzia projektowania do pracy z niestandardowych obie
   Najprostszym sposobem załadowania niestandardowych obiektów z danymi jest wywołać `TableAdapter.GetData` metody w pętli poprzez Kolekcja wierszy w tabeli zwracanych danych i wypełnić każdego obiektu z wartościami w każdym wierszu. Możesz utworzyć `GetData` metodę zwracającą tabelę danych wypełnione dla dowolnego zapytania, które dodano do TableAdapter.
 
 > [!NOTE]
->  Visual Studio nazw zapytań TableAdapter `Fill` i `GetData` domyślnie, ale można zmienić tych nazw z nazwą prawidłowej metody.
+> Visual Studio nazw zapytań TableAdapter `Fill` i `GetData` domyślnie, ale można zmienić tych nazw z nazwą prawidłowej metody.
 
  Poniższy przykład pokazuje, jak w pętli poprzez wierszy w tabeli danych w celu wypełnienia obiektu z danymi:
 
@@ -82,7 +82,7 @@ Visual Studio zapewnia narzędzia projektowania do pracy z niestandardowych obie
  Automatycznie generowanych przez kolekcję w <xref:System.Windows.Forms.BindingSource> używa <xref:System.ComponentModel.BindingList%601> dla jego typizowaną kolekcją. Jeśli aplikacja nie wymaga dodatkowych funkcji, a następnie może zachować kolekcji w ramach <xref:System.Windows.Forms.BindingSource>. Aby uzyskać więcej informacji, zobacz <xref:System.Windows.Forms.BindingSource.List%2A> właściwość <xref:System.Windows.Forms.BindingSource> klasy.
 
 > [!NOTE]
->  Jeśli Twoja kolekcja wymaga funkcji, nie został dostarczony przez implementację podstawową <xref:System.ComponentModel.BindingList%601>, należy utworzyć kolekcję niestandardową, więc można dodać do klasy, zgodnie z potrzebami.
+> Jeśli Twoja kolekcja wymaga funkcji, nie został dostarczony przez implementację podstawową <xref:System.ComponentModel.BindingList%601>, należy utworzyć kolekcję niestandardową, więc można dodać do klasy, zgodnie z potrzebami.
 
  Poniższy kod przedstawia sposób tworzenia klasy kolekcji silnie typizowane `Order` obiektów:
 
@@ -97,7 +97,7 @@ Visual Studio zapewnia narzędzia projektowania do pracy z niestandardowych obie
  Na przykład dodawania obiektów do niestandardowej kolekcji, zobacz `LoadOrders` method in Class metoda [instruktażu: O łączeniu z danymi w obiektach (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
 
 > [!NOTE]
->  `Add` Metody jest dostarczana automatycznie dla niestandardowej kolekcji, gdy dziedziczą z <xref:System.ComponentModel.BindingList%601>.
+> `Add` Metody jest dostarczana automatycznie dla niestandardowej kolekcji, gdy dziedziczą z <xref:System.ComponentModel.BindingList%601>.
 
  Poniższy kod przedstawia sposób dodawania obiektów do typizowaną kolekcją w <xref:System.Windows.Forms.BindingSource>:
 
@@ -107,7 +107,7 @@ Visual Studio zapewnia narzędzia projektowania do pracy z niestandardowych obie
  Poniższy kod przedstawia sposób dodawania obiektów do typizowaną kolekcją, której dziedziczy <xref:System.ComponentModel.BindingList%601>:
 
 > [!NOTE]
->  W tym przykładzie `Orders` kolekcji jest właściwością `Customer` obiektu.
+> W tym przykładzie `Orders` kolekcji jest właściwością `Customer` obiektu.
 
  [!code-csharp[VbRaddataConnecting#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Class1.cs#6)]
  [!code-vb[VbRaddataConnecting#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Class1.vb#6)]
@@ -116,7 +116,7 @@ Visual Studio zapewnia narzędzia projektowania do pracy z niestandardowych obie
  Usuwanie obiektów z kolekcji, wywołując `Remove` lub `RemoveAt` metody klasy kolekcji niestandardowej lub z <xref:System.Windows.Forms.BindingSource>.
 
 > [!NOTE]
->  `Remove` i `RemoveAt` metody automatycznie dostarczane dla niestandardowej kolekcji dziedziczą z <xref:System.ComponentModel.BindingList%601>.
+> `Remove` i `RemoveAt` metody automatycznie dostarczane dla niestandardowej kolekcji dziedziczą z <xref:System.ComponentModel.BindingList%601>.
 
  Poniższy kod przedstawia sposób Znajdź i usuwanie obiektów z kontrolą typów kolekcji w <xref:System.Windows.Forms.BindingSource> z <xref:System.Windows.Forms.BindingSource.RemoveAt%2A> metody:
 

@@ -10,12 +10,12 @@ ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: dd999fe10da48f91482976ade56681ee53346802
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0fe2f26a959fc6a185bf244bfa4571846b7991a5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447187"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Określanie programów obsługi plików dla rozszerzeń nazw plików
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ HKEY_CLASSES_ROOT\
 ```  
   
 > [!NOTE]
->  Klucze, określając aplikacje są na liście w obszarze HKEY_CLASSES_ROOT\Applications.  
+> Klucze, określając aplikacje są na liście w obszarze HKEY_CLASSES_ROOT\Applications.  
   
  Dodanie klucza OpenWithList, zadeklarować, że aplikacja obsługuje rozszerzenie pliku, nawet wtedy, gdy inna aplikacja przejmuje na własność rozszerzenia. Może to być przyszłej wersji aplikacji lub innej aplikacji.  
   
@@ -52,7 +52,7 @@ HKEY_CLASSES_ROOT\
  Możesz zarejestrować różne aplikacje, które można otworzyć konkretnego rozszerzenia pliku, dodając numerów wersji ProgID jako wartości przekierowywanie wpisów z HKEY_CLASSES_ROOT\\*\<rozszerzenia >* \OpenWithProgids klucza. Ten klucz rejestru zawiera listę alternatywnych ProgID skojarzone z rozszerzeniem pliku. Aplikacje skojarzone z wymienionych ProgID pojawiają się w **Otwórz za pomocą**_nazwa produktu_ podmenu. Jeśli ta sama aplikacja jest określona w obu `OpenWithList` i `OpenWithProgids` klucze, system operacyjny scala duplikaty.  
   
 > [!NOTE]
->  `OpenWithProgids` Klucz jest obsługiwany tylko w Windows XP. Ponieważ inne systemy operacyjne zignorować ten klucz, nie należy używać go jako rejestrację tylko dla programów obsługi plików. Użyj tego klucza, aby zapewnić lepsze środowisko użytkownika w Windows XP.  
+> `OpenWithProgids` Klucz jest obsługiwany tylko w Windows XP. Ponieważ inne systemy operacyjne zignorować ten klucz, nie należy używać go jako rejestrację tylko dla programów obsługi plików. Użyj tego klucza, aby zapewnić lepsze środowisko użytkownika w Windows XP.  
   
  Dodaj żądaną ProgID jako wartości typu REG_NONE. Poniższy kod stanowi przykład rejestrowanie ProgID dla rozszerzenia pliku (. *ext*).  
   

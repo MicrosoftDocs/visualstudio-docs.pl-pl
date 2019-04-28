@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 75a51cbe851b6566ab210a3c8ae12a9b7c2e0d2b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e78cefa9778e2889130f865e4c61cc8a97014db7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444659"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analiza problemów pamięci .NET Framework
 Wyszukiwanie przecieków pamięci i pamięci nieefektywne, użyj w kodzie .NET Framework za pomocą programu Visual Studio zarządzany analizator pamięci. Minimalna wersja systemu .NET Framework kod docelowy jest .NET Framework 4.5.  
@@ -59,7 +59,7 @@ Wyszukiwanie przecieków pamięci i pamięci nieefektywne, użyj w kodzie .NET F
  Narzędzia analizy pamięci analizuje informacje zawarte w *pliki zrzutu* zawierających informacje o stercie. Można tworzyć pliki zrzutu w programie Visual Studio lub można użyć narzędzia, takiego jak [ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx) z [Windows Sysinternals](http://technet.microsoft.com/sysinternals). Zobacz [co to jest zrzut, i jak mogę utworzyć jeden?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) na blogu zespołu debugera Visual Studio.  
   
 > [!NOTE]
->  Większość narzędzi może zbierać informacji zrzutu z lub bez niego dane pamięci sterty ukończone. Analizator pamięci programu Visual Studio wymaga informacji pełnego stosu.  
+> Większość narzędzi może zbierać informacji zrzutu z lub bez niego dane pamięci sterty ukończone. Analizator pamięci programu Visual Studio wymaga informacji pełnego stosu.  
   
  **Aby zebrać zrzut z programu Visual Studio**  
   

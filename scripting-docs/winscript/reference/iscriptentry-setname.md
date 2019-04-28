@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f6476869a54921cfdac34e9f1ed202adef909ddf
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58155605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787604"
 ---
 # <a name="iscriptentrysetname"></a>IScriptEntry::SetName
 Wpisy, które reprezentują pojedynczy obiekt (na przykład funkcja) ustawia nazwę obiektu.  

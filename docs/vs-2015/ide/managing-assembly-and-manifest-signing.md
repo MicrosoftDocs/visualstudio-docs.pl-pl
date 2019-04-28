@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 63a2e1b98baa61ef0a83c1de65653dd2e57a8b2c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: d3f842d45df1525cb3f736019eeec52dd65b67aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443738"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Zarządzanie zestawem i podpisywanie manifestu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Podpisywania silnymi zawiera składnik oprogramowania globalnie unikatową tożs
   
  Aby uzyskać informacje na temat podpisywania zestawów w projektach Visual Basic i C#, zobacz [tworzenie i zestawy Using Strong-Named](http://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
   
- Aby uzyskać informacji na temat podpisywania zestawów w projektach języka Visual C++, zobacz [zestawy o silnej nazwach (podpisywanie zestawów) (C + +/ interfejsu wiersza polecenia)](http://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc).  
+ Dla informacji na temat podpisywania zestawów w elemencie wizualnym C++ projektów, zobacz [zestawy o silnej nazwach (podpisywanie zestawów) (C++sposób niezamierzony)](http://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc).  
   
 ## <a name="asset-types-and-signing"></a>Typy zasobów i podpisywania  
  Można podpisać manifesty aplikacji i zestawy .NET. Należą do nich między innymi:  
@@ -59,7 +59,7 @@ Podpisywania silnymi zawiera składnik oprogramowania globalnie unikatową tożs
  Określ plik klucza. Jeśli zdecydujesz się utworzyć nowy plik klucza, należy pamiętać, że zawsze zostaną utworzone nowe pliki klucza w formacie pfx. Należy nazwę i hasło dla nowego pliku.  
   
 > [!WARNING]
->  Zawsze należy chronić Twojego pliku klucza o hasło, aby uniemożliwić korzystanie z jej przez kogoś innego. Możesz również klucze można zabezpieczyć przy użyciu dostawców lub magazynów certyfikatów.  
+> Zawsze należy chronić Twojego pliku klucza o hasło, aby uniemożliwić korzystanie z jej przez kogoś innego. Możesz również klucze można zabezpieczyć przy użyciu dostawców lub magazynów certyfikatów.  
   
  Możesz też wskazać w kluczu już utworzony. Aby uzyskać więcej informacji na temat tworzenia kluczy, zobacz [jak: Tworzenie pary kluczy publiczny prywatny](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   

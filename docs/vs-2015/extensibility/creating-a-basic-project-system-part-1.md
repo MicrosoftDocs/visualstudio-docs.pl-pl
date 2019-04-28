@@ -12,12 +12,12 @@ ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 caps.latest.revision: 48
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1fcf05377545100dfffe2db2385ea80fef4106eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8304719a4b15b5f23957c99244796999d7b3f55c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439396"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>Tworzenie systemu podstawowego projektu, część 1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ W programie Visual Studio projekty są kontenerami, używanych przez deweloperó
  Projekty są zdefiniowane w plikach projektu, na przykład plik csproj projektu Visual C#. Można utworzyć swój własny typ projektu, który ma własne rozszerzenia nazw plików projektu. Aby uzyskać więcej informacji na temat typów projektów, zobacz [typów projektów](../extensibility/internals/project-types.md).  
   
 > [!NOTE]
->  Jeśli zachodzi potrzeba Rozszerzanie programu Visual Studio przy użyciu typu niestandardowego projektu, zdecydowanie zalecamy korzystanie z [System projektu usługi Visual Studio](https://github.com/Microsoft/VSProjectSystem) która ma kilka zalet w stosunku do tworzenia projektu systemu od zera:  
+> Jeśli zachodzi potrzeba Rozszerzanie programu Visual Studio przy użyciu typu niestandardowego projektu, zdecydowanie zalecamy korzystanie z [System projektu usługi Visual Studio](https://github.com/Microsoft/VSProjectSystem) która ma kilka zalet w stosunku do tworzenia projektu systemu od zera:  
 > 
 > - Łatwiejsze dołączanie.  Nawet systemu podstawowego projektu wymaga dziesiątki tysięcy wierszy kodu.  Wykorzystując CPS zmniejsza koszty dołączania do kilku kliknięć, zanim można przystąpić do go dostosować do swoich potrzeb.  
 >   - Łatwiejsze konserwacji.  Dzięki wykorzystaniu CPS, wystarczy do obsługi własnych scenariuszy.  My zajmujemy utrzymania wszystkich infrastruktury systemu projektu.  
@@ -37,7 +37,7 @@ W programie Visual Studio projekty są kontenerami, używanych przez deweloperó
  W tym instruktażu dowiesz się, jak utworzyć typ projektu, który ma .myproj rozszerzenie nazwy pliku projektu. W tym przewodniku pożycza z istniejącego systemu projektów języka Visual C#.  
   
 > [!NOTE]
->  System projektu języka pełną, na przykład end-to-end, można znaleźć w artykule IronPython przykładowe Deep Dive w [przykłady VSSDK](../misc/vssdk-samples.md).  
+> System projektu języka pełną, na przykład end-to-end, można znaleźć w artykule IronPython przykładowe Deep Dive w [przykłady VSSDK](../misc/vssdk-samples.md).  
   
  Ten przewodnik omawia sposób wykonywania tych zadań:  
   
@@ -103,7 +103,7 @@ W programie Visual Studio projekty są kontenerami, używanych przez deweloperó
    ```  
   
    > [!IMPORTANT]
-   >  Nie jest ostatnim formularza kod pliku Program.cs; Parametry zamiany zostaną omówione w dalszej części. Może zostać wyświetlony błędy kompilacji, ale tak długo, jak plik **BuildAction** jest **zawartości**, powinno być możliwe skompilować i uruchomić projekt w zwykły sposób.  
+   > Nie jest ostatnim formularza kod pliku Program.cs; Parametry zamiany zostaną omówione w dalszej części. Może zostać wyświetlony błędy kompilacji, ale tak długo, jak plik **BuildAction** jest **zawartości**, powinno być możliwe skompilować i uruchomić projekt w zwykły sposób.  
   
 7. Zapisz plik.  
   
@@ -112,7 +112,7 @@ W programie Visual Studio projekty są kontenerami, używanych przez deweloperó
 9. W **Projects\SimpleProject** folderu Dodaj plik XML o nazwie `SimpleProject.myproj`.  
   
    > [!NOTE]
-   >  Rozszerzenie nazwy pliku dla wszystkich projektów tego typu jest .myproj. Jeśli chcesz ją zmienić, należy zmienić go wszędzie tam, gdzie jest wymieniony w instruktażu.  
+   > Rozszerzenie nazwy pliku dla wszystkich projektów tego typu jest .myproj. Jeśli chcesz ją zmienić, należy zmienić go wszędzie tam, gdzie jest wymieniony w instruktażu.  
   
 10. Zastąp istniejącą zawartość z następującymi wierszami.  
   
@@ -269,7 +269,7 @@ W programie Visual Studio projekty są kontenerami, używanych przez deweloperó
         ```  
   
         > [!IMPORTANT]
-        >  Nie zapomnij ukośnik odwrotny na końcu ścieżki.  
+        > Nie zapomnij ukośnik odwrotny na końcu ścieżki.  
   
     3. Ponownie Załaduj projekt.  
   

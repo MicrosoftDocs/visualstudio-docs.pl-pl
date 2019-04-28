@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2dad172ad21a57d406f0bb9ef9b42d0e27a13d6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0a9d809c901458782a8f7f9f3fff2c8e14069083
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444036"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Wysoki współczynnik rywalizacji o blokadę
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [DA0038: Wy
  Ta reguła jest uruchamiana, gdy pomiarów dokonanych podczas uruchomienia profilowania wskazuje jest zbyt wysoki stopień Rywalizacja o blokady. Rywalizacji blokad opóźnienie wykonania wątków, które oczekują na blokadę. Należy zbadać nawet stosunkowo małe ilości Rywalizacja o blokady w testach jednostkowych lub w testach obciążenia uruchomione na dolnej sprzętowych zakończenia.  
   
 > [!NOTE]
->  Po bardzo wysoka liczba rywalizacji blokad zgłoszone w danych profilowania [DA0039: Bardzo wysoki współczynnik rywalizacji o blokadę](../profiling/da0039-very-high-rate-of-lock-contentions.md) komunikat ostrzegawczy jest uruchamiany zamiast komunikat z informacjami.  
+> Po bardzo wysoka liczba rywalizacji blokad zgłoszone w danych profilowania [DA0039: Bardzo wysoki współczynnik rywalizacji o blokadę](../profiling/da0039-very-high-rate-of-lock-contentions.md) komunikat ostrzegawczy jest uruchamiany zamiast komunikat z informacjami.  
   
 ## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie  
  Kliknij dwukrotnie komunikat, aby przejść do [znaczniki](../profiling/marks-view.md) widoku danych profilowania.  Znajdź **.NET CLR LocksAndThreads\Contention szybkość / sec** kolumny. Określa, czy określone faz wykonywania programu Rywalizacja o blokady w przypadku większych niż pozostałych faz.  
