@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f24f63612b5d4dcb1c6a5a65e0ad38f8056cf842
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d689b7b2a252b208ae578f9bfd95ab93777f7cc5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58159390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385954"
 ---
 # <a name="iactivescriptpropertysetproperty"></a>IActiveScriptProperty::SetProperty
 Ustawia właściwość, która jest określona przez parametr.  
@@ -76,7 +76,7 @@ HRESULT SetProperty(
  Aby wybrać zestaw funkcji języka, które są obsługiwane podczas [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] silnik wykonywania skryptów jest inicjowany, wywołaj `SetProperty` i przekaż wartość, która odnosi się do języka zestaw funkcji, który można włączyć dla SCRIPTPROP_INVOKEVERSIONING. Jeśli ta właściwość jest ustawiona na 1 (SCRIPTLANGUAGEVERSION_5_7), funkcje językowe dostępne są takie same, jak te, które znajdowały się w wersji 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] silnik wykonywania skryptów. Jeśli jest ustawiona na 2 (SCRIPTLANGUAGEVERSION_5_8), funkcje językowe dostępne są te, które znajdowały się w wersji 5.7 Oprócz nowych funkcji, które zostały dodane w wersji 5.8. Domyślnie właściwość ta jest równa 0 (SCRIPTLANGUAGEVERSION_DEFAULT), który jest odpowiednikiem zestawu funkcji języka, które pojawiło się w wersji 5.7, chyba że host obsługuje różne domyślne zachowanie. Na przykład programu Internet Explorer 8 zdecyduje się na [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] funkcje językowe, które są obsługiwane przez wersję 5.8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] silnik wykonywania skryptów domyślnie, gdy domyślny tryb dokumentu dla programu Internet Explorer 8 to tryb "Standardów programu Internet Explorer 8". Przełączanie trybu dokumentu programu Internet Explorer 8, aby standardów programu Internet Explorer 7 lub tryb Osobliwości resetuje [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] silnik wykonywania skryptów do obsługi tylko zestaw funkcji języka autonomiczności występujące w wersji 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] silnik wykonywania skryptów.  
   
 > [!NOTE]
->  SCRIPTPROP_INVOKEVERSIONING powinna być ustawiona tylko wtedy, gdy [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] silnik wykonywania skryptów jest inicjowany.  
+> SCRIPTPROP_INVOKEVERSIONING powinna być ustawiona tylko wtedy, gdy [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] silnik wykonywania skryptów jest inicjowany.  
   
 ## <a name="example"></a>Przykład  
  Poniższy przykład pokazuje sposób wymusić silnik wykonywania skryptów, aby użyć dzielenie liczby całkowitej i umożliwić przeciążanie funkcji porównania.  
