@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c138bcdb14b1f645a68407fac320f2688250c55b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6df598717685d3f198b61e4a750c3133e50f5a2d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388717"
 ---
-# <a name="graphics-frame-analysis"></a>Analiza klatek grafiki
+# <a name="graphics-frame-analysis"></a>Analiza ramek grafiki
 Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do analizowania i zoptymalizować wydajność renderowania Direct3D grach i aplikacjach.
 
 ## <a name="frame-analysis"></a>Analiza klatek
@@ -111,7 +111,7 @@ Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do ana
  Informacje o liczniku sprzętu zawiera bardzo szczegółowe widok zachowań określonych platforma sprzętowa dla każdego wywołania rysowania, które mogą pomóc Ci przyczynie wąskich gardeł wydajności bardzo dokładnie.
 
 > [!NOTE]
->  Platformy sprzętowe obsługują różne liczniki; nie istnieje standard. Liczniki i ich znaczenie są określane wyłącznie przez każdego producenta procesora GPU.
+> Platformy sprzętowe obsługują różne liczniki; nie istnieje standard. Liczniki i ich znaczenie są określane wyłącznie przez każdego producenta procesora GPU.
 
 ### <a name="marker-regions-and-events"></a>Znacznik regionów i zdarzenia
  Analiza klatek obsługuje znaczniki zdarzenie zdefiniowane przez użytkownika i grupy zdarzeń. Są one wyświetlane w tabeli podsumowania, a w tabelach szczegółów.
@@ -132,13 +132,13 @@ Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do ana
 
  Analiza klatek ogranicza liczbę ponownych prób do 10. Jeśli platformą zarządzania energią agresywne lub uzyskania bramowego zegara, może spowodować analizy klatek zakończyć się niepowodzeniem i zgłoś błąd, ponieważ przekroczyła limit ponownych prób. Może być w stanie rozwiązać ten problem, resetując używanej platformy zarządzania energią i zegara, szybkość ograniczania jako łagodniej, umożliwia platformie.
 
-##  <a name="HardwareSupport"></a> Pomoc techniczna dotycząca sprzętu
+## <a name="HardwareSupport"></a> Pomoc techniczna dotycząca sprzętu
 
 ### <a name="timestamps-and-occlusion-queries"></a>Zapytania sygnatury czasowe i zamknięcia.
  Sygnatury czasowe są obsługiwane na wszystkich platformach, które obsługują analizy klatek. Głębokość zamknięcia zapytania — wymagana dla licznika zamknięte pikseli — są obsługiwane na platformach, które obsługują poziom funkcji 9.2 lub nowszej.
 
 > [!NOTE]
->  Choć sygnatur czasowych są obsługiwane na wszystkich platformach, które obsługują analizy klatek, dokładność i spójność sygnatury czasowe różni się w zależności od platformy.
+> Choć sygnatur czasowych są obsługiwane na wszystkich platformach, które obsługują analizy klatek, dokładność i spójność sygnatury czasowe różni się w zależności od platformy.
 
 ### <a name="gpu-counters"></a>Liczniki procesora GPU
  Pomoc dotycząca liczników sprzętowych procesora GPU jest zależna od sprzętu.
@@ -150,7 +150,7 @@ Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do ana
   Żadna inna platforma, która obsługuje analizy klatek zbiera dane liczników sprzętowych procesora GPU.
 
 > [!NOTE]
->  Ponieważ liczników sprzętowych procesora GPU zasobów sprzętowych, może upłynąć wielu przebiegów, aby zebrać pełny zestaw liczników sprzętowych dla poszczególnych wariantu renderowania. W rezultacie kolejność, w którym procesor GPU zbieranymi licznikami jest nieokreślona.
+> Ponieważ liczników sprzętowych procesora GPU zasobów sprzętowych, może upłynąć wielu przebiegów, aby zebrać pełny zestaw liczników sprzętowych dla poszczególnych wariantu renderowania. W rezultacie kolejność, w którym procesor GPU zbieranymi licznikami jest nieokreślona.
 
 ## <a name="unsupported-scenarios"></a>Nieobsługiwane scenariusze
  Niektóre sposoby korzystania z analizy klatek nie są obsługiwane lub są dobrym pomysłem.
@@ -159,18 +159,18 @@ Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do ana
  W analizatorze grafiki podczas odtwarzania pliku dziennika grafiki, która używa wyższy poziom funkcji nie obsługuje maszynę odtwarzającą, jego automatycznie powraca do WARP. Analiza klatek go jawnie nie wracały do WARP i generuje błąd, — WARP jest przydatne, sprawdzając poprawność aplikacja Direct3D, ale nie sprawdzenie jego wydajności.
 
 > [!NOTE]
->  Chociaż jest to ważne, aby pamiętać, poziom funkcji problemów, można przechwytywać i odtwarzać że dziennika grafiki plików na urządzeniach i różne konfiguracje sprzętu. Dziennik grafiki można odtwarzać ponownie tak długo, jak w pliku dziennika nie zawiera interfejsów API lub użyć poziomów funkcji, które nie są obsługiwane na maszynie odtwarzającej.
+> Chociaż jest to ważne, aby pamiętać, poziom funkcji problemów, można przechwytywać i odtwarzać że dziennika grafiki plików na urządzeniach i różne konfiguracje sprzętu. Dziennik grafiki można odtwarzać ponownie tak długo, jak w pliku dziennika nie zawiera interfejsów API lub użyć poziomów funkcji, które nie są obsługiwane na maszynie odtwarzającej.
 
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 i niższy
  Jeśli aplikacja wymaga interfejsu API Direct3D 10, analiza klatek nie rozpoznaje lub ich profil, nawet jeśli ich rozpoznawany i używany przez inne narzędzia Analizator grafiki programu.
 
 > [!NOTE]
->  Dotyczy to tylko do wywołań interfejsu API Direct3D, których używasz, nie poziomów funkcji.
+> Dotyczy to tylko do wywołań interfejsu API Direct3D, których używasz, nie poziomów funkcji.
 
 ### <a name="warp"></a>WARP
  Analiza klatek jest przeznaczona do użycia na potrzeby profilowania i poprawić wydajność renderowania na sprzęt rzeczywisty. Uruchomiona analiza klatek na urządzenia WARP nie uniemożliwia, ale nie jest zazwyczaj zwiększonej wykonywania, ponieważ WARP systemem wysokiej klasy procesora CPU jest mniejsza niż nawet zdolne do najmniejszej nowoczesnych procesorów GPU i WARP wydajność może się znacznie różnić w zależności od określonego procesora CPU działa on.
 
-##  <a name="Variants"></a> Wariantów
+## <a name="Variants"></a> Wariantów
  Każda zmiana, który sprawia, że funkcja analizy klatek sposób renderowania ramki podczas odtwarzania jest znany jako *wariant*. Warianty, które sprawdza, czy analiza klatek odnoszą się do wspólnego, stosunkowo łatwa zmiany, które można wprowadzić ulepszenia wydajności renderowania i jakość wizualną aplikacji — na przykład, zmniejszenie rozmiaru tekstury, przy użyciu kompresji tekstury lub włączenie różne rodzaje wygładzanie. Warianty zastąpić kontekstu zwykle renderowania i parametrów w aplikacji. Poniżej przedstawiono podsumowanie:
 
 |Variant|Opis|

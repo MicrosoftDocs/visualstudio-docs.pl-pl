@@ -8,11 +8,11 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.openlocfilehash: 3fe365b56d35202e7755e93219eeaf45f51509d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998124"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Install Visual Studio 2017 for Mac
 
