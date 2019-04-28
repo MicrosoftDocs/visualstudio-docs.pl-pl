@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5ccdd4cd8bafc4bc4a899ea47d62ec10e578569c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58148207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909317"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>Generowanie nowego projektu: Kulisami część druga
+# <a name="new-project-generation-under-the-hood-part-two"></a>Generowanie nowego projektu: szczegółowe informacje (część druga)
 
 W [Generowanie nowego projektu: Kulisami, część 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) widzieliśmy sposób, w jaki **nowy projekt** okna dialogowego pole zostanie wypełnione. Załóżmy, że wybrano **Visual C# Windows Application**, wypełnionego **nazwa** i **lokalizacji** pola tekstowe i kliknięto OK.
 
@@ -156,5 +156,5 @@ namespace Simple
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Generowanie nowego projektu: Kulisami część pierwsza](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
+- [Generowanie nowego projektu: szczegółowe informacje (część pierwsza)](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

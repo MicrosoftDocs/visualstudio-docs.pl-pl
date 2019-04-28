@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905275"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Rozpoczęcie korzystania z rozszerzenia Snapshot Debugger
 

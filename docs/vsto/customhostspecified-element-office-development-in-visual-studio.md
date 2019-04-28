@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 26597796c99d3ab8740812819cf3aa5568e2985b
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956182"
 ---
 # <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;customhostspecified —&gt; — element (Office development w programie Visual Studio)
   `customHostSpecified` Element wskazuje, że to rozwiązanie nie jest autonomiczną aplikację. Rozwiązania dla pakietu Office zawierają składniki, które są hostowane wewnątrz aplikacji Microsoft Office.

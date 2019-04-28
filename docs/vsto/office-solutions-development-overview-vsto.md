@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 45b9dba16a0a8ebf6baaf2f1d7660035294fd80d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977942"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Omówienie programowania rozwiązań pakietu Office (VSTO)
   Za pomocą programu Microsoft Office jako fronton dla rozwiązania, możesz korzystać z zalet dobrze znanych interfejsów użytkownika Microsoft Office i narzędzi, takich jak funkcje przetwarzania tekstu w programach Word, funkcje analizy danych programu Excel i funkcje zarządzania pocztą e-mail programu Outlook . Można opracować rozwiązania w programie Visual Studio, aby dostosować aplikacje pakietu Office, a następnie dodaj określonych funkcji, czego potrzebujesz do procesów biznesowych. Na przykład można przekształcić w programie Word generator kontraktu, który składa umów się istniejące elementy, które mogą być wykonane edytowalne i nieedytowalne. Za pomocą programu Excel można utworzyć arkusz automatycznych budżetu dostosowane do różnych projektów. Użytkownicy mogą skorzystać z rozwiązań pakietu office w trybie offline, co sprawia, że złożonych rozwiązań jest praktyczniejsze w taki sposób, niż byłoby ich, jeśli używasz architektury opartej na sieci web.

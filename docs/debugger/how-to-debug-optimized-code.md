@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 756b8859c2f13c53eb46a0d9ae9d32836997f70f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9b498bdb491e3a15dddf005d43435d84b837fcd0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387745"
 ---
 # <a name="how-to-debug-optimized-code"></a>Instrukcje: Debugowanie zoptymalizowanego kodu
 
@@ -77,7 +77,7 @@ ms.locfileid: "55035929"
 9. Wybierz właściwości konfiguracji, C/C++, węzeł wiersza polecenia na stronie właściwości projektu i Dodaj `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` do **dodatkowe opcje** pola tekstowego.
 
     > [!WARNING]
-    >  `/Zo` wymaga programu Visual Studio 2013 Update 3 lub nowszej wersji.
+    > `/Zo` wymaga programu Visual Studio 2013 Update 3 lub nowszej wersji.
     >
     >  Dodawanie `/Zo` spowoduje wyłączenie [Edytuj i Kontynuuj](../debugger/edit-and-continue-visual-csharp.md).
 

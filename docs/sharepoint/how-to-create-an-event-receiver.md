@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bc42a92e1d7dcc73bb6bc0433da4e6a31d7fefb2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966760"
 ---
 # <a name="how-to-create-an-event-receiver"></a>Instrukcje: Tworzenie obsługiwanego odbiornika
   Tworząc *odbiorcy zdarzeń*, mogą odpowiadać, gdy użytkownik korzysta z elementów programu SharePoint, takich jak listy lub elementów listy. Na przykład kod w odbiorcy zdarzeń mogą być wyzwalane, gdy użytkownik zmienia kalendarza lub usuwa nazwę z listy kontaktów. Korzystając z tego tematu, można poznać sposoby dodawania odbiorców zdarzenia do wystąpienia listy.

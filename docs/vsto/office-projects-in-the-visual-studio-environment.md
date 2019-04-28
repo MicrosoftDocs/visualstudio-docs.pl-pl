@@ -42,11 +42,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 65f3a3abfe7e49872c7131a247d74612200bf42a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978061"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Projekty pakietu Office w środowisku Visual Studio
   Dla projektów pakietu Microsoft Office przygotowano środowisko programistyczne podobne jak do innych typów projektów w programie, np. projektów interfejsu Windows Forms. Podczas tworzenia lub otwierania projektu pakietu Office elementy projektu pojawiają się w **Eksploratora rozwiązań**. W projektach na poziomie dokumentu dokument (tzn. dokument programu Word lub skoroszyt programu Excel) jest otwierany w programie Visual Studio i zachowuje się jak projektant wizualny.

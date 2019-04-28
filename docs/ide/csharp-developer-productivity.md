@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 07584f9e04be805ed699676c678b2147ec3679ff
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
-ms.translationtype: MT
+ms.openlocfilehash: 3e1f82a58dac3b0a6f607d1de7f881c5de9e91aa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973368"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Przewodnik dotyczący programu Visual Studio zwiększa produktywność C# deweloperów
 
@@ -154,10 +154,12 @@ Pobierz [rozszerzenia IntelliCode](https://marketplace.visualstudio.com/items?it
 Począwszy od programu Visual Studio 2017, istnieją liczne ulepszenia dotyczące testowania środowiska. Możesz przetestować przy użyciu MSTest w wersji 1, MSTest w wersji 2, NUnit oraz XUnit środowisk testowych.
 
 - **Eksplorator testów** odnajdywanie testów jest szybkie.
-- Organizowanie testów w **Eksplorator testów** z *hierarchiczne sortowanie*.
-- [Testowanie jednostek na żywo](../test/live-unit-testing.md) stale uruchamia testy, których dotyczą zmiany kodu i aktualizuje wbudowanego edytora ikon z informacją, stan testów. Uwzględnić lub wykluczyć określonych testów lub testowanie projektów z zestawu testów na żywo.
 
-![Widok hierarchii w Eksploratorze tekstu w programie Visual Studio](../ide/media/VSGuide_Testing.png)
+- Organizowanie testów w **Eksplorator testów** z *hierarchiczne sortowanie*.
+
+   ![Widok hierarchii w Eksploratorze tekstu w programie Visual Studio](../ide/media/VSGuide_Testing.png)
+
+- [Testowanie jednostek na żywo](../test/live-unit-testing.md) stale uruchamia testy, których dotyczą zmiany kodu i aktualizuje wbudowanego edytora ikon z informacją, stan testów. Uwzględnić lub wykluczyć określonych testów lub testowanie projektów z zestawu testów na żywo. (Tylko wersja programu visual Studio Enterprise).
 
 ## <a name="debugging"></a>Debugowanie
 
@@ -211,5 +213,5 @@ Poniżej przedstawiono listę funkcji edytora i produktywności, aby wprowadzić
 | Włączanie pełnej analizy rozwiązania | Zobacz wszystkie błędy w rozwiązaniu w **lista błędów** | **Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **zaawansowane**   >  **Włączanie pełnej analizy rozwiązania** |
 | Włącz nawigację do dekompilowanych źródeł | Zezwalaj na przechodzenie do definicji na typy/członków ze źródeł zewnętrznych i użyj decompiler użyciu narzędzia do dekompilacji do wyświetlenia treści metod | **Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **zaawansowane**   >  **Włącz nawigację do dekompilowanych źródeł** |
 | Tryb uzupełniania/sugestii | Zmienia zachowanie uzupełnianie przez funkcję IntelliSense. Deweloperom tła IntelliJ zwykle użyć innych niż domyślne ustawień w tym miejscu. | **Menu** > **Edytuj** > **IntelliSense** > **Przełącz tryb uzupełniania** |
-| [Funkcja CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Wyświetla informacje referencyjne kodu i zmień historii w edytorze | **Narzędzia** > **opcje** > **edytora tekstów** > **wszystkie języki**  >   **Funkcja CodeLens** |
+| [Funkcja CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Wyświetla kod informacje i zmieniać historię w edytorze. (Formant CodeLens źródła wskaźniki nie są dostępne w programie Visual Studio Community edition.) | **Narzędzia** > **opcje** > **edytora tekstów** > **wszystkie języki**  >   **Funkcja CodeLens** |
 | [Fragmenty kodu](../ide/visual-csharp-code-snippets.md) | Pomoc namiastki wspólnej standardowy kod | Wpisz nazwy fragmentu kodu i naciśnij klawisz **kartę** dwa razy. |

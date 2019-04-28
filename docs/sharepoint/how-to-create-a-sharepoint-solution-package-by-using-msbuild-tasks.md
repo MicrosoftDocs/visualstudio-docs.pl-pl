@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 91cef3ad04ca7b1713f7e48f87dbefe1a84d8fca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966838"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Instrukcje: Tworzenie pakietu rozwiązania SharePoint przy użyciu zadań MSBuild
   Kompilacji, czyszczenia i sprawdzanie poprawności pakietu programu SharePoint (*.wsp*) przy użyciu wiersza polecenia zadania programu MSBuild na komputerze deweloperskim. Te polecenia umożliwia również Automatyzowanie procesu kompilacji za pomocą programu Team Foundation Server na komputerze kompilacji.

@@ -10,13 +10,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23ed63846eb11fd8eba95219aecaae3210e161fd
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56800534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62980191"
 ---
-# <a name="overview-report-a-problem"></a>Przegląd: Zgłoś Problem
+# <a name="overview-report-a-problem"></a>Przegląd: Zgłaszanie problemu
 
 Raport narzędzia Problem umożliwia społeczności deweloperów programu Visual Studio, aby przesyłać problemy. Każdej z nich raporty o problemach staje się elementu roboczego na naszych podstawowych inżynierii systemu, co pozwala na angażowanie bezpośrednio z naszych zespołów produktu, aby pomóc nam identyfikować i rozwiązywać problemy z atrakcyjnych. Twoja opinia przesłane zawierających rozbudowane informacje diagnostyczne jest krytyczne dla poprawy rodziny produktów Visual Studio. Naprawdę Doceniamy poświęcenie czasu na zgłaszanie problemów.
 

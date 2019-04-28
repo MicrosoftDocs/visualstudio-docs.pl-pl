@@ -15,11 +15,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: ea01ff2671212c8dfeb023d145cfd224a5feb2f8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954754"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki start: Tworzenie pierwszej aplikacji sieci web platformy ASP.NET Core przy użyciu programu Visual Studio
 

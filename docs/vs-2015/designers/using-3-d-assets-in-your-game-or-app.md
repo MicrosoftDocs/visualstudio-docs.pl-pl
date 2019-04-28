@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c475366c190e5ac008394f8642f64da022532a0a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 20076e4f8cc05ad971a1cbe710c95f444b80938b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386888"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Korzystanie z obiektów 3-D w grach i aplikacjach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ W tym artykule opisano, jak można użyć [!INCLUDE[vsprvs](../includes/vsprvs-m
 3. W obszarze **właściwości konfiguracji**, wybierz **ogólne**, a następnie w siatce właściwości w obszarze **ogólne**ustaw **typu elementu** właściwości typem elementu potoku zawartości. Na przykład pliku obrazu lub tekstury wybierz **potok zawartości obrazu**.  
   
    > [!IMPORTANT]
-   >  Domyślnie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] przyjęto założenie, że wiele rodzajów plików obrazu należy podzielić na kategorie za pomocą **obraz** typu, która jest wbudowana w elementu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. W związku z tym, należy zmienić **typu elementu** właściwość każdego obrazu, który ma być przetwarzany przez potok zawartości obrazu. Inne typy zawartości potoku pliki źródłowe dla modeli 3D i wizualnego modułu cieniującego grafiki domyślnie poprawny **typu elementu**.  
+   > Domyślnie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] przyjęto założenie, że wiele rodzajów plików obrazu należy podzielić na kategorie za pomocą **obraz** typu, która jest wbudowana w elementu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. W związku z tym, należy zmienić **typu elementu** właściwość każdego obrazu, który ma być przetwarzany przez potok zawartości obrazu. Inne typy zawartości potoku pliki źródłowe dla modeli 3D i wizualnego modułu cieniującego grafiki domyślnie poprawny **typu elementu**.  
   
 4. Wybierz **OK** przycisku.  
   
@@ -202,8 +202,8 @@ cbuffer MiscVars : register(b3)
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Instrukcje: Eksportowanie tekstury zawierającej mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Informacje dotyczące używania potoku zawartości obrazu do wyeksportowania tekstury, które zawierają wstępnie obliczone mipmapy.|  
-|[Instrukcje: Eksportowanie tekstury wykorzystującej wstępnie przemnożony kanał alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Informacje dotyczące używania potoku zawartości obrazu do eksportowania tekstur, które zawierają wstępnie przemnożone wartości alfa.|  
-|[Instrukcje: Eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Informacje dotyczące używania potoku zawartości obrazu do wyeksportowania tekstury, które mogą być używane w aplikacji Direct2D lub JavaScript.|  
+|[Instrukcje: eksportowanie tekstury zawierającej mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Informacje dotyczące używania potoku zawartości obrazu do wyeksportowania tekstury, które zawierają wstępnie obliczone mipmapy.|  
+|[Instrukcje: eksportowanie tekstury wykorzystującej wstępnie przemnożony kanał alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Informacje dotyczące używania potoku zawartości obrazu do eksportowania tekstur, które zawierają wstępnie przemnożone wartości alfa.|  
+|[Instrukcje: eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Informacje dotyczące używania potoku zawartości obrazu do wyeksportowania tekstury, które mogą być używane w aplikacji Direct2D lub JavaScript.|  
 |[Praca z obiektami 3-D do gier i aplikacji](../designers/working-with-3-d-assets-for-games-and-apps.md)|Opisuje narzędzia edycji programu Visual Studio udostępnia do tworzenia i manipulowania zestawami 3D, które obejmują tekstury i obrazy, modele 3D i programów do cieniowania.|  
-|[Instrukcje: Eksport cieniowania](../designers/how-to-export-a-shader.md)|Opisuje sposób eksportowania modułu cieniującego od projektanta modułu cieniującego.|
+|[Instrukcje: eksportowanie cieniowania](../designers/how-to-export-a-shader.md)|Opisuje sposób eksportowania modułu cieniującego od projektanta modułu cieniującego.|

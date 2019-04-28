@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Dowiedz się więcej o pakiecie ModernRequirements zawartego w wybranych subskrypcjach programu Visual Studio Enterprise.
 searchscope: VS Subscription
 ms.openlocfilehash: 77729e8e5bf39d252ebd570d7d6d514e9ffdcdbb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947810"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Korzyść MODERNRequirements4TFS w subskrypcji programu Visual Studio
 

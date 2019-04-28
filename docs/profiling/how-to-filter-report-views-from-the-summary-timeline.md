@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 57065a7b258e8f9a2491332250cb38919bcb7910
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973802"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Instrukcje: Filtrowanie widoków raportu z podsumowania osi czasu
 Można filtrować dane wyświetlane w raportach wydajności, określając segment czasu na wykresie widoku podsumowania osi czasu. Podczas filtrowania raportów, obejmujący segmentu czas, który określiłeś reanalyzed jest plik danych profilowania.

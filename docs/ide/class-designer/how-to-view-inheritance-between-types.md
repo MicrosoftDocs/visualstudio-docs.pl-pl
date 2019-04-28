@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d1a15765bff6d391afc7395be03172bf5d5fc32
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975102"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Instrukcje: Wyświetlanie dziedziczenia między typami w Projektancie klas
 

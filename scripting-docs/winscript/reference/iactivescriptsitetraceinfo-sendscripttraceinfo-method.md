@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c2b444afa22e38694166f7d7522dbe6d0d3774d4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58147682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992277"
 ---
 # <a name="iactivescriptsitetraceinfosendscripttraceinfo-method"></a>Metoda IActiveScriptSiteTraceInfo::SendScriptTraceInfo
 Wysyła informacje o śledzeniu, zawierający typ zdarzenia, kontekstu i instrukcji skryptu.  

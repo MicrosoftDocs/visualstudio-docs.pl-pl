@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9a2c1869791b250fb90c6a634f057797f3c57a62
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62987974"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Kojarzenie danych niestandardowych z rozszerzeniami narzędzi SharePoint
   Możesz dodać niestandardowe dane do niektórych obiektów w rozszerzenia narzędzi programu SharePoint. Jest to przydatne, gdy masz dane w jednej części Twojego rozszerzenia, który chcesz uzyskać dostęp później z innym kodem Twojego rozszerzenia. Zamiast wykonywania niestandardowych sposób przechowywania i dostępu do danych, można skojarzyć dane z obiektu w rozszerzeniu i następnie później pobrać dane z tego samego obiektu.

@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 430551002bc7603d86f9c7fb624ec438734bd766
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58150624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963253"
 ---
 # <a name="ienumremotedebugapplications-interface"></a>Interfejs IEnumRemoteDebugApplications
 Wyliczenie obiektów aplikacji. Ten interfejs może służyć do wyliczenia uruchomionych aplikacji na komputerze dla okna dialogowego "Dołączanie do aplikacji".  

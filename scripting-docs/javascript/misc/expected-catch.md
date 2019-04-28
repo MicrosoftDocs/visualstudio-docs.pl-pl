@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 941d49a530b14e2af64ddcb599dd775feb347de0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935402"
 ---
 # <a name="expected-catch"></a>Oczekiwano instrukcji „catch"
 Została użyta Obsługa wyjątków **spróbuj** blokują, ale nie zapisano skojarzonego **catch** instrukcji. Mechanizm obsługi wyjątków wymaga zawinięta kod, który może zakończyć się niepowodzeniem, wraz z kodem, który nie powinien zostać wykonany, jeżeli wystąpi wyjątek, wewnątrz **spróbuj** bloku. Wyjątki są zgłaszane z poziomu **spróbuj** zablokowane, używając **throw** instrukcji, a przechwycony poza **spróbuj** blok z co najmniej jeden **catch**instrukcji.  

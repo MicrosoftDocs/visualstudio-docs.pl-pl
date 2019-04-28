@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8de49ac5a2355d184babbd38b914ceeda3a61336
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62924924"
 ---
 # <a name="bpresolutioncode"></a>BP_RESOLUTION_CODE
 W tym artykule opisano lokalizacji punktu przerwania w kodzie.

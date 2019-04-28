@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f60c95418379399196c461e055645ae7c85a473e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967399"
 ---
 # <a name="extend-sharepoint-project-items"></a>Rozszerzanie elementów projektu programu SharePoint
   Tworzenie rozszerzenia elementu projektu, jeśli chcesz dodać funkcje do typu elementu projektu programu SharePoint, która jest już zainstalowana w programie Visual Studio. Na przykład można utworzyć rozszerzenia dla wbudowanej **odbiorcy zdarzeń** lub **definicji listy** elementy projektu w programie Visual Studio lub można utworzyć rozszerzenia dla typu elementu niestandardowego projektu. Można również utworzyć rozszerzenia dla wszystkich typów elementów projektu programu SharePoint.

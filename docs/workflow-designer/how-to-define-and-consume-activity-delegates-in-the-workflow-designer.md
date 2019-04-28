@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c455f36d17b761fe02b7d78e96fbf2c4582d490d
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 25f844acefed50b5bb35e3b1d8c6a570e11ca194
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949525"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Instrukcje: Definiowanie i stosowanie delegowania działania w Projektancie przepływu pracy
 
@@ -70,17 +70,17 @@ ms.locfileid: "58415814"
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>Używanie niestandardowych działań w przepływie pracy
 
-1.  Skompiluj projekt, naciskając klawisz **Ctrl**+**Shift**+**B**.
+1. Skompiluj projekt, naciskając klawisz **Ctrl**+**Shift**+**B**.
 
-2.  W **Eksploratora rozwiązań**, otwórz **Workflow1.xaml** w projektancie.
+2. W **Eksploratora rozwiązań**, otwórz **Workflow1.xaml** w projektancie.
 
-3.  Przeciągnij **MyForEach** działania z przybornika do powierzchni projektanta. Działanie znajduje się w sekcji przybornika z taką samą nazwę jak projektu.
+3. Przeciągnij **MyForEach** działania z przybornika do powierzchni projektanta. Działanie znajduje się w sekcji przybornika z taką samą nazwę jak projektu.
 
-4.  Ustaw **elementów** właściwość **MyForEach** działanie **nowy obiekt [] {1, "abc"}**.
+4. Ustaw **elementów** właściwość **MyForEach** działanie **nowy obiekt [] {1, "abc"}**.
 
-5.  Przeciągnij <xref:System.Activities.Statements.WriteLine> działanie z **podstawowych** sekcji przybornika, aby **delegata: treść** części **MyForEach** działania.
+5. Przeciągnij <xref:System.Activities.Statements.WriteLine> działanie z **podstawowych** sekcji przybornika, aby **delegata: treść** części **MyForEach** działania.
 
-6.  Ustaw **tekstu** właściwość <xref:System.Activities.Statements.WriteLine> działanie **Argument.ToString()**.
+6. Ustaw **tekstu** właściwość <xref:System.Activities.Statements.WriteLine> działanie **Argument.ToString()**.
 
 Gdy przepływ pracy ma miejsce, w konsoli wyświetlone zostaną następujące dane wyjściowe:
 

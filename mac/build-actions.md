@@ -1,18 +1,18 @@
 ---
-title: Akcja kompilacji
+title: Akcje kompilacji
 description: W tym artykule opisano różne akcje kompilacji, których można użyć dla projektów C#
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: a5b1175caf0ac7f6654fbe20b5300327679eccbc
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
-ms.translationtype: HT
+ms.openlocfilehash: 16617f8de15fbef40941c4f9409497da142c9e8a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62983421"
 ---
-# <a name="build-actions"></a>Akcja kompilacji
+# <a name="build-actions"></a>Akcje kompilacji
 
 Wszystkie pliki w programie Visual Studio dla komputerów Mac projektu mają akcji kompilacji. Kontroluje, co się dzieje z pliku podczas kompilacji. To zachowanie można ustawić, klikając prawym przyciskiem myszy dowolny plik i przechodząc do **Build Action**, jak pokazano poniżej:
 
@@ -28,3 +28,7 @@ Akcje niektóre typowe kompilacji dla projektów języka C#:
 Użytkownik może wybrać więcej niż jeden plik w Eksploratorze rozwiązań, co pozwala ustawić akcji kompilacji do wielu plików jednocześnie.
 
 Ponadto istnieją akcje kompilacji dla konkretnych projektów. Projekty Xamarin.iOS mają **BundleResource** tworzenie akcji, która doda go jako część pakietu aplikacji. Informacje o akcjach określonej kompilacji platformy Xamarin.Android znajdują się w [proces kompilacji](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions) przewodnik.
+
+## <a name="see-also"></a>Zobacz także
+
+- [Tworzenie akcji (Visual Studio Windows)](/visualstudio/ide/build-actions)

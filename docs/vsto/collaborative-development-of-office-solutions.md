@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 76c26a110d88d3dee8bf7540647ea0bfde4e7c4f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949490"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Programowanie zespołowe rozwiązań pakietu Office
   Wielu deweloperów pracować w projekcie programu pakietu Office w taki sam sposób, jak współpracują w innych projektów programu Visual Studio. Program Visual Studio poprawnie lokalizuje instalacji pakietu Microsoft Office, na każdym komputerze, nawet jeśli Office jest zainstalowana w różnych lokalizacjach. Istnieją jednak pewne istotne kwestie, w których trzeba pamiętać.

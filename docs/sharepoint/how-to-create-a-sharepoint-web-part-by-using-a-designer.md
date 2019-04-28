@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 354fe62914a8708ac63acdde7d30060aca8d52fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966828"
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Instrukcje: Tworzenie części sieciowej SharePoint za pomocą projektanta
   Można utworzyć składnik web part, dodając **wizualny składnik Web Part** element do każdego projektu programu SharePoint. Spowoduje to otwarcie projektanta Visual Web Developer w Visual Studio, w którym można dodać formanty i kod do składnika web part. Wizualne części sieci web działają tak samo, jak części sieci web. Jedyna różnica polega na projektowania wizualnego składnika web Part w Projektancie Visual Web Developer.

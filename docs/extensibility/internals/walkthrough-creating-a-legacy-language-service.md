@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7d58234dbe503f8d086e081464c2e38f759a75e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907924"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Przewodnik: Tworzenie starszej wersji usługi językowej
 Używanie klas języka zarządzanego pakietu framework (MPF) do wdrożenia usługi w języka [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] jest bardzo proste. Należy VSPackage do hostowania usługi językowej, sama usługa języka i analizatora dla danego języka.

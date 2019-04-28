@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ea260a6286c8a923d56ab7a5088b55de57004489
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982237"
 ---
 # <a name="use-local-database-files-in-office-solutions-overview"></a>Korzystać z plików lokalnej bazy danych w rozwiązań Office ― omówienie
   Można dołączyć plik bazy danych, takich jak SQL Server Express (*.mdf*) pliku lub Microsoft Office Access (*.mdb*) pliku w rozwiązania pakietu Office. To umożliwia użytkownikom końcowym zachować lokalnej bazy danych w sytuacji, w której obsługa scentralizowanej bazie danych nie jest wymagane, na przykład w przypadku rozwiązania lokalnego magazynu, jaka jest używana na pojedynczym komputerze.

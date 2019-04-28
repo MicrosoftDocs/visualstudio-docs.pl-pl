@@ -13,11 +13,11 @@ ms.custom: video
 ms.workload:
 - azure
 ms.openlocfilehash: 48cf25a7164fabc96924897c0a4a28bbbe4bea74
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62988586"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Publikowanie aplikacji sieci Web w usłudze Azure App Service przy użyciu programu Visual Studio dla komputerów Mac
 

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bb8cf959d5f1d915f5614dc2b92d74a603493f7e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955979"
 ---
 # <a name="data-in-office-solutions"></a>Dane w rozwiązaniach pakietu Office
   Wiele rozwiązań pakietu Office pozwalają użytkownikom na pobieranie i modyfikowanie danych. Podczas tworzenia rozwiązań dla pakietu Office przy użyciu programu Visual Studio, istnieje kilka różnych sposobów, które można pracować z danymi.

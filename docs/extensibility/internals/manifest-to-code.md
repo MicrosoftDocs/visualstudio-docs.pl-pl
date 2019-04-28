@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7fab8a42d5559c23ce6816d5a247561a4376a7fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909151"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 Manifest, aby narzędzie do obsługi kodu jest aplikacja konsolowa która przyjmuje plik .imagemanifest dla usługi obrazów programu Visual Studio i generuje plik z otoką lub plików do odwoływania się do wartości manifestu obrazu w języku C++, C#, VB lub vsct plików dla programu Visual Studio rozszerzenia. To narzędzie generuje pliki otoki, których można użyć dla obrazów żądania z usługi Visual Studio obraz bezpośrednio lub do przekazywania wartości manifestu za pośrednictwem interfejsów API, jeśli kod nie obsługuje żadnego interfejsu użytkownika i renderowania.

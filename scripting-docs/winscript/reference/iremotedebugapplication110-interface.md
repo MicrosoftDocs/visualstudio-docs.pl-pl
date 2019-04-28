@@ -13,18 +13,18 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d702699aa2e980c3be9d4d05eef96261a788788
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ea8f3f983cf7279cf6dc9600813a08268cef8301
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58145099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383491"
 ---
 # <a name="iremotedebugapplication110-interface"></a>Interfejs IRemoteDebugApplication110
 Używane do zapewnienia nowe możliwości, które mogą być wywoływane przez debugery skryptu i obiekty wywołujące w procesie.  
   
 > [!IMPORTANT]
->  Interfejs jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
+> Interfejs jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="methods"></a>Metody  
  `IRemoteDebugApplication110` Interfejsu udostępnia następujące metody.  

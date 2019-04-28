@@ -6,11 +6,11 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
 ms.openlocfilehash: 7f130f5dec77e0a1965c68cf71e642fdb636832f
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62983363"
 ---
 # <a name="understanding-build-configurations"></a>Ogólne informacje o konfiguracjach kompilacji
 
@@ -63,7 +63,7 @@ Poniższa lista zawiera przykładowe dane, które mogą zostać uwzględnione w 
     * Tryb (normalny, pobieranie w tle)
 * Projekt rozszerzenia systemu iOS
     * Uruchamianie aplikacji: domyślne lub niestandardowe
-* Projekt WatchKit
+* WatchKit project
     * Tryb (rzut oka, powiadomień)
     * Ładunek powiadomienia
 

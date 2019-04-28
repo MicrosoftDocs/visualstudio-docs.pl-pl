@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 0fc18fab56f5b46ef097cdf699e4f0569dc190c9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58342654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62904461"
 ---
 Narzędzie Web Deploy 3.6 dla serwerów do hostingu udostępnia funkcje dodatkowe czynności konfiguracyjne, które umożliwiają tworzenie pliku ustawień publikowania w interfejsie użytkownika.
 

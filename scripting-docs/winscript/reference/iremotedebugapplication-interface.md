@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2a231818def210f7c88ab031059f8561c67b33d1
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58159156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944234"
 ---
 # <a name="iremotedebugapplication-interface"></a>Interfejs IRemoteDebugApplication
 Reprezentuje uruchomionej aplikacji. Nie musi odpowiadać do procesu systemu operacyjnego. Zazwyczaj debugera jest przeznaczony dla aplikacji do debugowania. Menedżer debugowania procesów zwykle implementuje obiektu aplikacji.  

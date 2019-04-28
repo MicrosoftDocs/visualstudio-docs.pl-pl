@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b51f26a4ea2dec50c5ee90c38f49412866b6f866
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961494"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Instrukcje: Zmiana rozmiaru formantów w komórkach arkusza
   Podczas zmiany rozmiaru kolumn lub wierszy w arkuszu, wszystkie kontrolki hosta w komórkach automatycznie Zmień rozmiar na wysokość lub szerokość komórki, który został zmieniony. Kontrolek formularzy Windows Forms nie rozmiar zmienia się automatycznie domyślnie.

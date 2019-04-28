@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1a866ba73669caba0c8d96647a134123f4ae753
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970047"
 ---
 # <a name="net-memory-data-views"></a>Widoki danych pamięci .NET
 Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów plików danych profilera, który zawiera dane profilowania pamięci platformy .NET.

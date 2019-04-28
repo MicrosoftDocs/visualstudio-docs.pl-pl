@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c285b699487bd761447e5fbdf6ccd77987a8c0a8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952896"
 ---
 # <a name="create-an-association-between-entities"></a>Tworzenie skojarzenia między jednostkami
   Możesz zdefiniować relacje między jednostkami w modelu łączności danych biznesowych (BDC) przez utworzenie skojarzenia. Program Visual Studio generuje metody udostępniające odbiorcy modelu informacje na temat każdego skojarzenia. Te metody mogą być używane przez składniki web Part programu SharePoint, list lub niestandardowych aplikacji do wyświetlania relacji między danymi w interfejsie użytkownika (UI).

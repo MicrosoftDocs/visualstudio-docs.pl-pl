@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3e89caded1b7388b79ea3232dc0a2809dc7b8222
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943475"
 ---
 # <a name="flowchart-activity-designer"></a>Flowchart, projektant działań
 <xref:System.Activities.Statements.Flowchart> To działanie służy do tworzenia przepływów pracy służących do definiowania i zarządzania kontrolek złożonych przepływów. A <xref:System.Activities.Statements.Flowchart> można tworzyć w kodzie lub za pomocą [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Ten temat dokumenty [!INCLUDE[wfd2](../includes/wfd2-md.md)] środowiska. [!INCLUDE[wfd1](../includes/wfd1-md.md)] Projektanta działań przepływu pracy umożliwia deweloperom tworzyć przepływy pracy w sposób naturalny.  

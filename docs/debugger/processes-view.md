@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99ba60021410f1965e05f7c5479231013d53cb71
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62904235"
 ---
 # <a name="processes-view"></a>Widok procesów
 Widok procesów przedstawia drzewo wszystkich aktywnych procesów w Twoim systemie. Nazwa procesu modułu i identyfikator są wyświetlane. Użyj widoku procesów, jeśli chcesz sprawdzić procesu określonym systemie zazwyczaj odnosi się do wykonywania programu. Procesy są identyfikowane przez nazwy modułów lub zostały one oznaczone "procesy systemowe".

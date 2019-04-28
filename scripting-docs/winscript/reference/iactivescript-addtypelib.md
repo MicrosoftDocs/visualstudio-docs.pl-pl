@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c4943d1305c2f25de4eec9e782949a66827de879
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58144878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955094"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
 Dodaje bibliotekę typów przestrzeń nazw dla skryptu. Jest to podobne do `#include` dyrektywy języka C/C++. Umożliwia zestaw wstępnie zdefiniowanych elementów, takich jak definicje klas `typedefs`i o nazwie stałych, które mają zostać dodane do środowiska wykonawczego dla skryptu.  

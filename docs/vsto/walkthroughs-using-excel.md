@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4d6c092daf02ccd6546621fbeff3422cd87fb0db
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947834"
 ---
 # <a name="walkthroughs-using-excel"></a>Wskazówki dotyczące za pomocą programu Excel
   Poniższe instruktaże przedstawiają sposoby używania dostosowań na poziomie dokumentu i dodatków narzędzi VSTO dla programów Automatyzacja programu Microsoft Office Excel i ich dostosowywania interfejsu użytkownika (UI).

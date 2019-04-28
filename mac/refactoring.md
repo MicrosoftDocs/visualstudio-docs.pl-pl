@@ -7,11 +7,11 @@ ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
 ms.openlocfilehash: 48e290fddd1c4b7c95ac5e76cb6cf5908247e6f6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58856518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62937927"
 ---
 # <a name="refactoring"></a>Refaktoryzacja
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 211b2cef552fb7d079ba7b403b9dafb266b400e2
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 7442eebcd566470616382367fbdaad5cce774155
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950339"
 ---
 # <a name="template-parameters"></a>Parametry szablonu
 
@@ -52,13 +52,13 @@ Poniższa tabela zawiera listę zastrzeżonych parametrów szablonu, które mog�
 |clrversion|Aktualna wersja środowiska uruchomieniowego języka wspólnego (CLR).|
 |ext_*|Dodaj `ext_` długości prefiksu do żadnych parametrów, aby odwołać się do zmiennych szablonu nadrzędnego. Na przykład `ext_safeprojectname`.|
 |Identyfikator GUID [1 – 10]|Identyfikator GUID służący do zamienienia identyfikatora GUID w pliku projektu. Można określić maksymalnie 10 unikatowych identyfikatorów GUID (na przykład `guid1`).|
-|Nazwa elementu|Nazwa podana przez użytkownika w **Dodaj nowy element** okno dialogowe.|
+|Nazwa elementu|Nazwa pliku, w którym jest używany parametr.|
 |NazwaKomputera|Bieżąca nazwa komputera (na przykład Computer01).|
 |projectname|Nazwa podana przez użytkownika podczas tworzenia projektu.|
 |registeredorganization|Wartość klucza rejestru z HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|Główna przestrzeń nazw bieżącego projektu. Ten parametr dotyczy tylko szablonów elementów.|
-|safeitemname|Nazwa podana przez użytkownika w **Dodaj nowy element** okno dialogowe, za pomocą wszystkich niebezpiecznych znaków i usunięte spacje.|
-|safeprojectname|Nazwa podana przez użytkownika, gdy projekt został utworzony, ale także wszystkich niebezpiecznych znaków i usunięte spacje.|
+|safeitemname|Taki sam jak `itemname` , ale z wszystkich niebezpiecznych znaków i usunięte spacje.|
+|safeprojectname|Nazwa podana przez użytkownika, gdy projekt został utworzony, ale wszystkich niebezpiecznych znaków i usunięte spacje.|
 |czas|Bieżący czas w formacie DD/MM/RRRR 00:00:00.|
 |SpecificSolutionName|Nazwa rozwiązania. W razie wybrania opcji „Utwórz katalog rozwiązania”, `SpecificSolutionName` ma nazwę rozwiązania. Jeżeli „Utwórz katalog rozwiązania” nie jest zaznaczone, `SpecificSolutionName` jest pusta.|
 |USERDOMAIN|Bieżąca domena użytkownika.|

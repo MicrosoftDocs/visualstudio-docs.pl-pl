@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: de486593c21813746c6c13fa835506d7b1703279
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62958228"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Krok 2. Tworzenie aplikacji Django przy użyciu widoków i szablonów stron
 

@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 31fb3f5bf88b0caf179a43d02358bb6a9f1a2831
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58149656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975791"
 ---
 # <a name="active-script-debugging-overview"></a>Przegląd debugowania aktywnego skryptu
 Interfejsy funkcji aktywnego debugowania skryptu zezwolenia na debugowanie niezależny od języka, niezależny od hosta, a także obsługuje wiele różnych środowisk deweloperskich.  

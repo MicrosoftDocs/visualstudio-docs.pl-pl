@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3cf8eb994a33ab3bbcce6bce38bf02677197780
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ee91134997dad5f5361de6b07af1a99dfc420f5e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401247"
 ---
 # <a name="idiasymbolgetissplitted"></a>IDiaSymbol::get_isSplitted
 Pobiera flagę określającą, czy symbol danych został podzielony na agregacji lub kolekcji innych symboli; Kompilator traktuje jako osobne jednostki, symbole, nawet jeśli są one naprawdę częścią symbol większe.
@@ -39,7 +39,7 @@ HRESULT get_isSplitted(
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
->  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
  [Idiasymbol::get_isaggregated —](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md) metoda zwraca `TRUE` dla wszystkich symboli, które należą do podziału symbolu.

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7e6bead46c52ed2bc33572e0eacc6f3f0219e72e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970099"
 ---
 # <a name="net-memory-allocations-view"></a>.NET Widok alokacji pamięci
 Widok alokacji zawiera typy, które zostały utworzone podczas uruchomienia profilowania. Każdy typ jest węzeł główny drzewa wywołań, który wyświetla ścieżki wykonywania funkcji, które spowodowały alokacji typu.

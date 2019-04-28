@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4179c23cefbf995242288c1e778f9e0413bfe28e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993257"
 ---
 # <a name="assign-activity-designer"></a>Assign, projektant działań
 

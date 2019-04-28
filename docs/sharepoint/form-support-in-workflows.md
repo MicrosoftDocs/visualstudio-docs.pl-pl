@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 704e08524bb9aaf014dbd29e7df7361a7e1bbefe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967412"
 ---
 # <a name="form-support-in-workflows"></a>Obsługa formularzy w przepływach pracy
   Cztery rodzaje formularzy może służyć w przepływie pracy: skojarzenie, inicjowania, zadania i modyfikacji. Tych typów formularza może opierać się na formularzu ASPX lub formularza programu InfoPath. Poziom pomocy technicznej, który [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] udostępnia dla danego formularza zależy od wielu czynników, które są opisane w poniższych tabelach. Aby uzyskać więcej informacji na temat typów formularza przepływu pracy, zobacz [Przegląd formularzy przepływu pracy](http://go.microsoft.com/fwlink/?LinkId=185228).

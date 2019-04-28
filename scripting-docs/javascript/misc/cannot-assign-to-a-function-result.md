@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 226056f139e45f432d757aff8f8774b013742de3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946605"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>Nie można przypisać do wyniku funkcji
 Nastąpiła próba przypisania wartości do wyniku funkcji. Wynik funkcji można przypisać do zmiennej, ale nie można użyć jako zmienną. Jeśli chcesz przypisać nową wartość do samej funkcji, należy pominąć nawiasów (operator wywołania funkcji). W poniższym przykładzie pokazano sytuację, w którym ten błąd jest generowany.  

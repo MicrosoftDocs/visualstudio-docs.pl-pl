@@ -27,12 +27,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 92718187fd8c83eb20ce8b39d323d60434f5f48f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2a55b78cfa962abe4a1eecf778be9cdc6de3aa6e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384063"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniki testowania MFC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -236,10 +236,10 @@ Total allocations: 67 bytes
  W programie MFC można użyć [CMemoryState::DumpAllObjectsSince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) do porzucenia opis wszystkich obiektów na stosie, które nie została wycofana. `DumpAllObjectsSince` Zrzuca wszystkich obiektach przydzielonych od momentu ostatniego [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a). Jeśli nie `Checkpoint` wywołanie miało miejsce, `DumpAllObjectsSince` Zrzuca wszystkie obiekty i nonobjects aktualnie w pamięci.  
   
 > [!NOTE]
->  Zanim użyjesz zrzucania obiektów MFC, należy najpierw [Włączanie śledzenia diagnostycznego](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics).  
+> Zanim użyjesz zrzucania obiektów MFC, należy najpierw [Włączanie śledzenia diagnostycznego](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics).  
   
 > [!NOTE]
->  MFC automatycznie zrzuty ujawnione wszystkie obiekty, gdy program kończy działanie, dzięki czemu nie trzeba tworzyć kodu, zrzut obiektów w tym momencie.  
+> MFC automatycznie zrzuty ujawnione wszystkie obiekty, gdy program kończy działanie, dzięki czemu nie trzeba tworzyć kodu, zrzut obiektów w tym momencie.  
   
  Poniższy kod sprawdza przeciek pamięci przez porównywanie dwa stany pamięci i zrzuca wszystkie obiekty w przypadku wykrycia przeciek.  
   

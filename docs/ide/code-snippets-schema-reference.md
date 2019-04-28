@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a57ff548aeb566605802a0e270534df727a7c0f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 034fd1f31b24dce2d8ecc3d805b78c35c8498d6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974985"
 ---
 # <a name="code-snippets-schema-reference"></a>Fragmenty kodu — informacje o schemacie
 
@@ -62,7 +62,7 @@ Określa nazwę autora fragmentu kodu. **Menedżera wstawek kodu** Wyświetla na
 
 Stanowi kontener dla krótkich bloków kodu.
 
-### <a name="keywords"></a>Słowa kluczowe
+### <a name="keywords"></a>słowa kluczowe
 
 Dwa słowa zastrzeżone są dostępne do użycia w tekście `Code` element: `$end$` i `$selected$`. `$end$` oznacza lokalizację, aby umieść kursor po wstawieniu fragmentu kodu. `$selected$` reprezentuje tekst zaznaczony w dokumencie, który ma zostać wstawiony do fragment kodu podczas jego wywoływania. Na przykład biorąc pod uwagę fragment kodu, który zawiera:
 
@@ -318,10 +318,7 @@ Wartość tekstowa jest wymagana. Ten tekst określa unikatowy identyfikator obi
 
 ## <a name="import-element"></a>Import — element
 
-Określa zaimportowaną przestrzeń nazw używaną przez fragment kodu IntelliSense.
-
-> [!NOTE]
-> `Import` Element jest obsługiwany tylko dla projektów języka Visual Basic.
+Określa zaimportowaną przestrzeń nazw używana przez fragment kodu IntelliSense.
 
 ```xml
 <Import>
@@ -340,9 +337,6 @@ Określa zaimportowaną przestrzeń nazw używaną przez fragment kodu IntelliSe
 ## <a name="imports-element"></a>Imports element
 
 Grupuje poszczególne `Import` elementów.
-
-> [!NOTE]
-> `Imports` Element jest obsługiwany tylko dla projektów języka Visual Basic.
 
 ```xml
 <Imports>
@@ -425,10 +419,7 @@ Literały i obiekty nie mogą zawierać **identyfikator** wybrany element o wart
 
 ## <a name="namespace-element"></a>Namespace — element
 
-Określa przestrzeń nazw, którą należy zaimportować, aby fragment kodu został skompilowany i działał. Przestrzeń nazw określona w `Namespace` element jest automatycznie dodawany do `Imports` instrukcji na początku kodu, jeśli jeszcze nie istnieje.
-
-> [!NOTE]
-> `Namespace` Element jest obsługiwany tylko dla projektów języka Visual Basic.
+Określa przestrzeń nazw, którą należy zaimportować, aby fragment kodu został skompilowany i działał. Przestrzeń nazw określona w `Namespace` element jest automatycznie dodawany do `using` dyrektywy lub `Imports` instrukcji na początku kodu, jeśli jeszcze nie istnieje.
 
 ```xml
 <Namespace>
@@ -515,7 +506,7 @@ Grupuje poszczególne `Reference` elementów.
 Określa tekst skrótu służący do wstawiania fragmentu kodu. Wartość tekstowa elementu `Shortcut` element może zawierać tylko znaki alfanumeryczne, łączniki (-) i podkreślenia (_).
 
 > [!CAUTION]
-> _ i — nie są obsługiwane znaki w skrótach do fragmentów kodu C++.
+> _ i — nie są obsługiwane znaki w C++ skrótach do fragmentów kodu.
 
 ```xml
 <Shortcut>
@@ -569,11 +560,11 @@ Określa, w jaki sposób program Visual Studio wstawia fragment kodu.
 
 Wartość tekstowa musi być jedną z następujących:
 
--   `SurroundsWith`: pozwala umieścić wokół zaznaczonej sekcji kodu fragment kodu.
+- `SurroundsWith`: pozwala umieścić wokół zaznaczonej sekcji kodu fragment kodu.
 
--   `Expansion`: pozwala fragment kodu, który ma zostać wstawiony przy kursorze.
+- `Expansion`: pozwala fragment kodu, który ma zostać wstawiony przy kursorze.
 
--   `Refactoring`: Określa, że fragment kodu jest używany podczas Refaktoryzacja języka C#. `Refactoring` Nie można używać w niestandardowych fragmentach kodu.
+- `Refactoring`: Określa, że fragment kodu jest używany podczas Refaktoryzacja języka C#. `Refactoring` Nie można używać w niestandardowych fragmentach kodu.
 
 ## <a name="snippettypes-element"></a>Snippettypes — element
 

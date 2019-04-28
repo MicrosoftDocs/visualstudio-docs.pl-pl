@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 291414e213c4037502aca43d99027594bb813493
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 38a41fc3fa03a530d3b8fd39c57bf744924f4a9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38941663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928868"
 ---
  Visual Studio Tools for Office Runtime 

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b618d09fb8b11f98077ab3bb49e32a28869e5b04
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955657"
 ---
 # <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Instrukcje: Programowe pobieranie nieprzeczytanych wiadomości ze skrzynki odbiorczej
   W tym przykładzie pobiera nieprzeczytanych wiadomości programu Outlook **skrzynki odbiorczej** i wyświetla liczbę elementów.

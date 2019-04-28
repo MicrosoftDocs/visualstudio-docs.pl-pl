@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 71e67ab41fd39563520370eb079fca1b7c82015e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952792"
 ---
 # <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>Tworzenie formantów wielokrotnych dla części sieciowych lub stron aplikacji
   W programie Visual Studio możesz utworzyć niestandardowe formanty wielokrotnego użytku, które mogą być wykorzystane przez strony aplikacji i składników Web Part, które są uruchamiane w programie SharePoint. Te kontrolki są nazywane kontrolki użytkownika. Formant użytkownika jest rodzajem złożonej kontrolki, która działa podobnie do strony sieci Web platformy ASP.NET — Dodawanie istniejących formantów serwera sieci Web i znaczników do formantu użytkownika i definiowanie właściwości i metody dla formantu. Następnie można osadzać na stronach sieci Web platformy ASP.NET, w których działają jako jednostka.

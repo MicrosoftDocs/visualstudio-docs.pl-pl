@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 37e8b8e47b306f8b99e378cf407c0faf0955c737
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62924869"
 ---
 # <a name="core-interfaces"></a>Interfejsy podstawowe
 Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomocą [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].

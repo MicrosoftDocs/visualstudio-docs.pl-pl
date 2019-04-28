@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5d752626f56c63c5d21777288340c921ec755867
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908945"
 ---
 # <a name="source-control-vspackage-features"></a>Funkcje pakietu VSPackage kontroli kodu źródłowego
 W tej sekcji opisano różne funkcje pakietu VSPackage kontroli źródła. Przedstawia rejestracji i wybór szczegóły pakietu VSPackage, a także w tym artykule omówiono trzy funkcje związane z kontroli źródła głównego: Obsługa zdarzeń zapytania Edytuj Zapisz zapytanie (QEQS), symbol zastępczy i niestandardowego interfejsu użytkownika (UI) dla kontroli źródła funkcje.

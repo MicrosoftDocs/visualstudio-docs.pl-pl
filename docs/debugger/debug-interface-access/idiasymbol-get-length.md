@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57aeb77b965cbb45ab282be728e164a2f472f49b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7b1a583a9afd2a43d48399d5e2787369ab9bef95
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400624"
 ---
 # <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
 Pobiera liczbę bitów lub bajty pamięci używane przez obiekt reprezentowany przez ten symbol.
@@ -39,7 +39,7 @@ HRESULT get_length ( 
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
 
 > [!NOTE]
->  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
  Jeśli [locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md) symbolu jest `LocIsBitField`, długość zwracanego przez tę metodę w bitach; w przeciwnym razie jest długość w bajtach dla wszystkich typów lokalizacji.

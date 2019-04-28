@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ed26f1522913c0a8b395a0c058f73f66843eb1df
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971280"
 ---
 # <a name="primitives-activity-designers"></a>Projektanci działań Primitives
 Projektanci działań primitives są używane do tworzenia i konfigurowania różnych działań w <xref:System.Activities.Statements> przestrzeni nazw, takich jak przypisywanie i opóźnienie. Tematy zawarte w tej sekcji zapewnić wskazówki dotyczące sposobu używania [!INCLUDE[wfd2](../includes/wfd2-md.md)] projektantów działań i szablonu.  

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2ae3965647416d7a8e11cf0ea5e24cef1e54a09b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967256"
 ---
 # <a name="how-to-add-a-project-output-reference"></a>Instrukcje: Dodawanie odwołania wyjścia projektu
   Aby wdrożyć zestawy projektu programu SharePoint (lub pliki XAP w projektach programu Silverlight) do programu SharePoint, należy dodać ich jako odwołania wyjścia projektu.

@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 62b0d04e37072af1f0053a6e395edcb856a115c1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939323"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Dane w pamięci podręcznej dostosowywane na poziomie dokumentu
   Podstawowym celem dostosowania poziomu dokumentu jest oddzielenie danych z widoku w dokumentach pakietu Office. Danych odnosi się do informacji, które są przechowywane w dokumencie, w tym liczby i tekst. Widok odwołuje się do interfejsu użytkownika i modelu obiektów programu Microsoft Office Word i Microsoft Office Excel.

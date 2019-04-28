@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f31ebeb18790ddf76c42585868aea8a04547bfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928410"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Instrukcje: Znak plików konfiguracji przy użyciu SignTool.exe (ClickOnce)
 Możesz użyć *SignTool.exe* się program instalacyjny (*setup.exe*). Ten proces pozwala upewnić się, że zmodyfikowany pliki nie są zainstalowane na komputerach użytkowników końcowych.

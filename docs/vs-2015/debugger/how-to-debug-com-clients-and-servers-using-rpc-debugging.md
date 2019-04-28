@@ -26,12 +26,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2b40e7814fb809298c71d0078e644c12bd5a9a9e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fda2a10cd559f940ab87e5cc8c26f5b47dbec194
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384037"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Instrukcje: Debugowanie klientów i serwerów za pomocą debugowania RPC COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,10 +49,10 @@ Debugowanie zdalnego wywołania (procedur RPC) procedury można użyć do debugo
 4. Wybierz **debugowania RPC** pole wyboru.  
   
     > [!NOTE]
-    >  Aby debugować wywołania RPC, musi mieć uprawnienia administratora lub użytkownik zaawansowany.  
+    > Aby debugować wywołania RPC, musi mieć uprawnienia administratora lub użytkownik zaawansowany.  
   
     > [!NOTE]
-    >  Przechodzenie do serwera zdalnego z systemem Microsoft Windows Vista RPC będzie działać tylko wtedy, gdy debuger natywny jest dołączony do serwera zdalnego. W przeciwnym razie wywołania RPC zakończy się niepowodzeniem bez komunikatu o błędzie. W przeciwnym razie wywołania RPC zostanie ukończone, ale wkroczenia do wywołania RPC nie będzie działać.  
+    > Przechodzenie do serwera zdalnego z systemem Microsoft Windows Vista RPC będzie działać tylko wtedy, gdy debuger natywny jest dołączony do serwera zdalnego. W przeciwnym razie wywołania RPC zakończy się niepowodzeniem bez komunikatu o błędzie. W przeciwnym razie wywołania RPC zostanie ukończone, ale wkroczenia do wywołania RPC nie będzie działać.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie kontenera i serwera COM](../debugger/com-server-and-container-debugging.md)   

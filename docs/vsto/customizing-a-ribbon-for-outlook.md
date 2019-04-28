@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 58735a36afd48132f919e370da5e27fd0c42a0f0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956159"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>Dostosowywanie wstążki do programu Outlook
   Podczas dostosowywania wstążki w programie Microsoft Outlook pakietu Office, należy rozważyć, gdzie Twoje niestandardowa Wstążka pojawią się w aplikacji. Program Outlook wyświetli wstążki w głównej aplikacji interfejsu użytkownika (UI), a w systemie windows, które otwierają, gdy użytkownicy wykonają pewnych zadań, takich jak tworzenie wiadomości e-mail. Tych aplikacji systemu windows są nazywane inspektorzy.

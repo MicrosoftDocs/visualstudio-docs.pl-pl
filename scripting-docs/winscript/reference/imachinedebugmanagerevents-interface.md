@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: fcfcc2aed0fedefdc149b83e911d33cd3b54cdef
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58153126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977633"
 ---
 # <a name="imachinedebugmanagerevents-interface"></a>Interfejs IMachineDebugManagerEvents
 Sygnalizuje zmiany uruchomione listy aplikacji obsługiwane przez Menedżer debugowania maszyny. Ten interfejs może służyć przez debuger IDE do wyświetlania listy dynamicznych aplikacji.  

@@ -9,11 +9,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d3ef8ecfefd1d614570b4d73808d3e5736d77230
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979344"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Instrukcje: Zastosuj rozkład do opóźnienia dla użytkownika w tempie model testu mieszanego do
 

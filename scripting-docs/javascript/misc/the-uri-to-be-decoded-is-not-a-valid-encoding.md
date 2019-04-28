@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8fd8add72d016bc3f2e815f41c29c735505c8817
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006224"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>Identyfikator URI, który ma być zdekodowany, nie jest poprawnie zakodowany
 Podjęto próbę zdekodowania niepoprawnie sformułowany identyfikator URI (Uniform Resource Identifier). Identyfikatory URI ma specjalnej składni; Większość znaki inne niż alfanumeryczne muszą zostać zakodowane, zanim będzie można ich użyć w identyfikatorze URI. Możesz użyć `encodeURI` i `encodeURIComponent` metody w celu utworzenia identyfikatora URI ze zwykłym [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ciągu.  

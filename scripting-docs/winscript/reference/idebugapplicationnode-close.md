@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c634fd154c2470b1a154e5d1c9e97419a2e2e2b4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58154835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990515"
 ---
 # <a name="idebugapplicationnodeclose"></a>IDebugApplicationNode::Close
 Powoduje, że ta aplikacja jest zwolnienie wszystkich odwołań, a następnie wprowadź nieaktywny.  

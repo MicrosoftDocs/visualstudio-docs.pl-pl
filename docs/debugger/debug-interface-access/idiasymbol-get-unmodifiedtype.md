@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fb271a03a8932989d6201329c441a21a226f559
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e609f59e0d72628be4233be52738ff244c6acca
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400177"
 ---
 # <a name="idiasymbolgetunmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
 Pobiera oryginalnego typu dla tego symbolu. Zastosowania [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) jest ustawiony do typu.
@@ -39,7 +39,7 @@ HRESULT get_unmodifiedType( 
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
 
 > [!NOTE]
->  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
  Bieżącym typem jest modyfikacji oryginalnego typu zwracanego. Oryginalny typ symbolu można określić najpierw wprowadzenie typ symbolu, a następnie odpytywanie, które zwróciło typ do oryginalnego typu. Należy pamiętać, że niektóre symbole nie ma zmodyfikowany typ oryginalnego typu.

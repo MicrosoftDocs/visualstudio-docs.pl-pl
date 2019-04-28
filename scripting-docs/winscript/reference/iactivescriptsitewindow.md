@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3691a874121c00dcccc69958eb5746a2c1d78122
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58149461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992024"
 ---
 # <a name="iactivescriptsitewindow"></a>IActiveScriptSiteWindow
 Ten interfejs jest implementowany przez hosty, które obsługują interfejs użytkownika na ten sam obiekt jako [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) . Hosty, które nie obsługują interfejs użytkownika, takich jak serwery, nie będzie implementować `IActiveScriptSiteWindow` interfejsu. Aparat skryptów uzyskuje dostęp do tego interfejsu, wywołując `QueryInterface` z `IActiveScriptSite`.  

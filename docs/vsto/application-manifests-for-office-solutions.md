@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 62ad6a8147fc11b8bed34605b6447a1fe8a62a97
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62942926"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Manifesty aplikacji dla rozwiązań pakietu Office
   Manifest aplikacji jest plikiem XML, który opisuje zestawów, które są ładowane do rozwiązania Microsoft Office. Użyj narzędzia Microsoft Office development w programie Visual Studio [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] schematu manifestu aplikacji zdefiniowane w [manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md) odwołania.

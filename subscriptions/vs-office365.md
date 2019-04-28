@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Więcej informacji na temat korzyści usługi Office 365, objęte niektóre subskrypcje programu Visual Studio.
 searchscope: VS Subscription
 ms.openlocfilehash: 9f3df6923101bf5b8b4a2592460e96b57416c1c8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947732"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Usługi Office 365 Pro Plus w subskrypcji programu Visual Studio
 

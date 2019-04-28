@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c063235d69a59caf2c41c0db0ddc566c97cc95be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3ac567677776c225008a581cc4d5de85ec2c882d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383965"
 ---
 # <a name="mip-map-generation-variant"></a>Wariant generowania mipmapy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
  Należy pamiętać, że jeśli podasz początkowej danych do `CreateTexture2D`, należy podać obiekt D3D11_SUBRESOURCE_DATA każdy poziom mip.  
   
 > [!NOTE]
->  Jeśli chcesz podać własne mip poziomu zawartość zamiast generować je automatycznie, musi utworzyć swoje tekstury za pomocą obrazu edytora obsługującego mapowane mip tekstury i następnie załaduj plik i poziomów mip, aby przekazać `CreateTexture2D`.  
+> Jeśli chcesz podać własne mip poziomu zawartość zamiast generować je automatycznie, musi utworzyć swoje tekstury za pomocą obrazu edytora obsługującego mapowane mip tekstury i następnie załaduj plik i poziomów mip, aby przekazać `CreateTexture2D`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wariant wymiarów jednej ósmej tekstury](../debugger/half-quarter-texture-dimensions-variant.md)

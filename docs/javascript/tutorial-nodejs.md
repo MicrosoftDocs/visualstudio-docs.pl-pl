@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 62f919551a13060bfd2b2d12726164902004d1bb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62995053"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Samouczek: Tworzenie środowiska Node.js i Express aplikacji w programie Visual Studio
 

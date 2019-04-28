@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f2dafb6938c40a1d14f805c6a6deff6f25d16d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 686239ed719a74cc91d9aec1412c81f38ecdd956
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387477"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Wzorce złożone dla programu Visual Studio
 Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfiguracjach. Oto niektóre z najważniejszych wzorce złożone w programie Visual Studio, w odniesieniu do spójności:
@@ -431,7 +431,7 @@ Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfigur
  Kluczową koncepcją w opcji wyboru z listy jest, że jest ona oparta na wierszu, co oznacza, że po dokonaniu wyboru cały wiersz został wybrany jako jednostka. Z drugiej strony siatki umożliwia komórki, aby wybrać bez wywierania wpływu na innych aspektów wiersza. Siatki mogą również zawierać hierarchia zagnieżdżonych wierszy (np. kontrolki TreeGrid) umożliwiające gałęzie całej hierarchii, które można wybrać i niezaznaczone przez interakcję z wierszy nadrzędnych. Wybór na listach jest wyświetlane przez kolor wyróżnienia prostego na cały wiersz danych. Fokus jest pokazywana przez jednopikselowego kropkowana obramowanie wokół bieżącego można edytować wiersza lub komórki (wiersz, jeśli wszystkie komórki są tylko do odczytu).
 
 > [!NOTE]
->  **Fokus** i **wybór** różne zagadnienia. *Fokus* wskazanie, które interfejsu użytkownika elementu jest przeznaczona dla danych wejściowych nie zostały jawnie skierowany przeciwko innego obiektu, podczas gdy *wybór* odwołuje się do stanu włączenia obiektu w zestawie obiektów, na którym kolejne operacje może mieć miejsce.
+> **Fokus** i **wybór** różne zagadnienia. *Fokus* wskazanie, które interfejsu użytkownika elementu jest przeznaczona dla danych wejściowych nie zostały jawnie skierowany przeciwko innego obiektu, podczas gdy *wybór* odwołuje się do stanu włączenia obiektu w zestawie obiektów, na którym kolejne operacje może mieć miejsce.
 
  Wybrane opcje na listach może być ciągłe, rozłączny, lub regionu. Gdy wiele zaznaczeń dozwolonych, ciągłym i wybór rozłączne powinna być zawsze obsługiwana, podczas obsługi opcji region (pole) jest opcjonalny. Opcje regionu są inicjowane za pomocą przeciągania biały treści listy.
 

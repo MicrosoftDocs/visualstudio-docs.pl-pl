@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20c449148b98c89f1eb64beb61588661f02ab74a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 21dc0cb7f02639ca6faa89ae4c067f21e083d6d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387501"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Odczytywanie modeli i diagramów w innych wersjach programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +31,14 @@ Po otwarciu modelu w wersji programu Visual Studio, który nie obsługuje tworze
  Z tego powodu jeśli chcesz odczytać diagramu UML lub diagramu warstwowego, musi również masz dostęp do projektu modelowania, w której został utworzony. Możesz to zrobić, uzyskując dostęp do projektu z [!INCLUDE[esprscc](../includes/esprscc-md.md)], lub przez uzyskanie kopii plików projektu.  
   
 > [!NOTE]
->  To nie ma zastosowania do kodu mapy i .NET klasy diagramy wygenerowane z kodu. Można wyświetlić tych diagramów, niezależnie od projektu modelowania.  
+> To nie ma zastosowania do kodu mapy i .NET klasy diagramy wygenerowane z kodu. Można wyświetlić tych diagramów, niezależnie od projektu modelowania.  
   
  Aby przeczytać diagramu UML lub diagramu warstwowego, minimalny zestaw plików, które są potrzebne jest następująca:  
   
 - Dwa pliki dla diagramu, który chcesz, aby dowiedzieć się, na przykład diagramu **MyDiagram.classdiagram i MyDiagram.classdiagram.layout**.  
   
     > [!NOTE]
-    >  Dla diagramów warstw powinien również mieć plik o nazwie _MyDiagram_**. layerdiagram.suppressions**.  
+    > Dla diagramów warstw powinien również mieć plik o nazwie _MyDiagram_**. layerdiagram.suppressions**.  
   
 - Pliku projektu modelowania (**MyModel.modelproj**)  
   

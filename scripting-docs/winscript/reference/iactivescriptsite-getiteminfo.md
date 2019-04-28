@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 997245f8e4fd43ac2162587f07e4c8711af7caac
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58148688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992724"
 ---
 # <a name="iactivescriptsitegetiteminfo"></a>IActiveScriptSite::GetItemInfo
 Umożliwia silnik wykonywania skryptów uzyskać informacje na temat elementu, który został dodany z [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) metody.  

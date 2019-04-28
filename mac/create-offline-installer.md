@@ -3,15 +3,15 @@ title: Utwórz Instalatora w trybie Offline programu Visual Studio dla komputer�
 description: ''
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 11/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 5CA4B8C1-2D01-46EA-A6B2-8573B324509B
-ms.openlocfilehash: a7fc7df1b2c9e1954701c258d507feb916cd395d
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
-ms.translationtype: HT
+ms.openlocfilehash: 12151a4aaaae1226678eb77ad029f1d4cf17ec1e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62983403"
 ---
 # <a name="create-an-offline-installer-for-visual-studio-for-mac"></a>Utwórz Instalatora w trybie Offline programu Visual Studio dla komputerów Mac
 

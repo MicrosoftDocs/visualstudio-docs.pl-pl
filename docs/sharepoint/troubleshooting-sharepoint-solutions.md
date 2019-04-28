@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bab7f45824def7a4b5a385381a4789b7adc276d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008091"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Rozwiązywanie problemów z rozwiązaniami SharePoint
   Następujące problemy lub alerty, mogą wystąpić podczas debugowania rozwiązań programu SharePoint przy użyciu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugera. Aby uzyskać więcej informacji, zobacz [debugowanie rozwiązania przepływu pracy programu SharePoint 2007](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).

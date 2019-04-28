@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6622285d985d75c547428163b0b6cdaa8f699fe0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897588"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Jak utworzyć i stosowanie zasobów
 Style i szablony dla elementów w Projektancie XAML są przechowywane w jednostkach wielokrotnego użytku, o nazwie zasoby. Style umożliwiają ustawianie właściwości elementu i ponownie użyć tych ustawień, aby uzyskać spójny wygląd między wieloma elementami. A [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) definiuje wygląd formantu i mogą być również stosowane jako zasób. Aby uzyskać więcej informacji, zobacz [Szybki Start: Style formantów](http://go.microsoft.com/fwlink/?LinkID=248239) i [Szybki Start: Kontrolowanie szablony](http://go.microsoft.com/fwlink/?LinkID=247982).

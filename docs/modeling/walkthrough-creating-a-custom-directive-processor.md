@@ -14,11 +14,11 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 661d8670f857240fdd4ed7714ca389c851d83601
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935363"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Przewodnik: Tworzenie niestandardowego procesora dyrektywy
 

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ff63e6cca9deebbfcfa5960b41d85f9425f7a73
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975504"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Instrukcje: Zmiana między notacją składowych i notacją skojarzeń w Projektancie klas
 

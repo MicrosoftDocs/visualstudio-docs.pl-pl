@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 24162efcc720d9c0073f8a5799c6278b8d3c8c62
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946358"
 ---
 # <a name="default-can-only-appear-once-in-a-switch-statement"></a>Element „default” może wystąpić tylko raz w instrukcji „switch”.
 Podjęto próbę użycia **domyślne** instrukcji więcej niż jeden raz w instrukcji switch. Przypadek domyślny jest zawsze ostatniej instrukcji case w instrukcji switch (jest przypadek fall poprzez).  

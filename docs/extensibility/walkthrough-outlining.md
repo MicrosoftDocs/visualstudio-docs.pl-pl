@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 908b2f2b7a0dc055065abd96df3eb4495ad30ce8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965057"
 ---
 # <a name="walkthrough-outlining"></a>Przewodnik: Tworzenie konspektu
 Konfigurowanie opartych na języku funkcje, takie jak tworzenie konspektu, definiując rodzaje regionów tekst, który chcesz rozwinąć lub zwinąć. Można zdefiniować regionów w kontekście usługi języka lub zdefiniować własny plik Nazwa rozszerzenia i zawartości typ i stosowanie definicji region tylko do tego typu lub zastosować definicje region do istniejącego typu zawartości (na przykład "text"). Ten poradnik pokazuje jak zdefiniować i wyświetlanie konspektu regionów.

@@ -20,16 +20,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c1207051fbd8a2c4857a277868145795e14224
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 27315682c26769ea5c529ceb21c99458c86f0220
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385814"
 ---
 # <a name="bscmake-task"></a>Bscmake — zadanie
 > [!IMPORTANT]
->  BscMake nie jest już używany przez program Visual Studio IDE. Od programu Visual Studio 2008, informacji o przeglądaniu znajduje się automatycznie w *.sdf* w pliku *rozwiązania* folderu.
+> BscMake nie jest już używany przez program Visual Studio IDE. Od programu Visual Studio 2008, informacji o przeglądaniu znajduje się automatycznie w *.sdf* w pliku *rozwiązania* folderu.
 
  Opakowuje Microsoft Przeglądaj informacje narzędzie konserwacji (*bscmake.exe*).  *Bscmake.exe* narzędzia do kompilacji pliku informacyjnego przeglądarki (*.bsc*) z pliki przeglądarki źródeł (*.sbr*) które są tworzone podczas kompilacji. Użyj **przeglądarki obiektów** do wyświetlania *.bsc* pliku. Aby uzyskać więcej informacji, zobacz [odwołanie BSCMAKE](/cpp/build/reference/bscmake-reference).
 

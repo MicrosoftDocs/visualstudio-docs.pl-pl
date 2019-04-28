@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a85062b2012f44e8a3d7ff2356f8c053bc28ef7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0016ca267b3eaf2535896aab1ee58a470a192c9a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399454"
 ---
 # <a name="idiasymbolgetoffset"></a>IDiaSymbol::get_offset
 Pobiera przesunięcie lokalizacji symboli. Zastosowania [locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md) jest `LocIsRegRel` lub `LocIsBitField`.
@@ -39,7 +39,7 @@ HRESULT get_offset ( 
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
 
 > [!NOTE]
->  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
  Przesunięcie jest w pewnym momencie znane wcześniej określana. Na przykład przesunięcie `LocIsBitField` typ lokalizacji jest zazwyczaj od samego początku zawierający klasy.

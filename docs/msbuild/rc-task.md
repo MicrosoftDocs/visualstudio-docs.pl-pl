@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a69649a7babacb0fe08b483380214f17f2e582f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974660"
 ---
 # <a name="rc-task"></a>RC — Zadanie
 Opakowuje narzędzie kompilatora zasobów systemu Microsoft Windows *rc.exe*. **RC** zadań kompiluje zasoby, takie jak kursorów, ikony, mapy bitowe, okna dialogowe i czcionek, do zasobu (*.res*) pliku. Aby uzyskać więcej informacji, zobacz [kompilator zasobów](https://docs.microsoft.com/windows/desktop/menurc/resource-compiler).

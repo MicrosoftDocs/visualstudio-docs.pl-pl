@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 101b4ad50777f796a3de82127f6ce3253b26ccaa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62930597"
 ---
 # <a name="spy-toolbar"></a>Spy++ — Pasek narzędzi
 Pasek narzędzi pojawi się w pasku menu w programie Spy ++. Aby wyświetlić lub ukryć pasek narzędzi, na **widoku** menu, kliknij przycisk **narzędzi**.

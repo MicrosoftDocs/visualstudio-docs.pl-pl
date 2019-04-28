@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ef2882fec8d213c38a2e125d4e3f0c3f22d1d581
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975167"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>Instrukcje: Wyświetlanie istniejących typów w Projektancie klas
 

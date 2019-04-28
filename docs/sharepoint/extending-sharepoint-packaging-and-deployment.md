@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4bb98e2b1c83ff06570a77dc84ce6a7bf690f81d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967468"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>Rozszerzanie pakowania i wdrażania SharePoint
   Możesz rozszerzyć pakowania i proces wdrażania dla projektów programu SharePoint.

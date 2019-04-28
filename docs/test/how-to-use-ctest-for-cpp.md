@@ -8,11 +8,11 @@ ms.workload:
 - cplusplus
 author: mikeblome
 ms.openlocfilehash: 6be079a5adfe52a7ac750f6713672dad50c7d2a4
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945385"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Jak używać narzędzia CTest dla języka C++ w programie Visual Studio
 

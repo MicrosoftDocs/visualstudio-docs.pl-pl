@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Informacje na temat pakietu Enterprise Mobility + Security korzyści zawarte w Twojej subskrypcji programu Visual Studio.
 searchscope: VS Subscription
 ms.openlocfilehash: d670db0d083c4b8f32f970c790859a7c82e5dff1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948922"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Pakiet Enterprise Mobility + Security (EMS) w subskrypcji programu Visual Studio
 
@@ -53,7 +53,7 @@ Aby korzystać z pakietu EMS, należy skonfigurować konto lub zaloguj się przy
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Tak          |
+| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Yes          |
 | Visual Studio Professional (Standard<sup>2</sup>) | VL, Azure, Retail                                       | Dostępne                                                            |  Tak          |
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  Brak          |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                              |  Brak          |

@@ -26,11 +26,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 489415eba929a73c25b8aea7262c3e930a5d90cd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898136"
 ---
 # <a name="product-and-package-schema-reference"></a>Odwołanie do schematu produktu i pakietu
 A *pliku produktu* jest manifestu XML opisujący wszystkie zależności zewnętrzne wymagane przez [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. Przykłady zależności zewnętrznych [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] i Microsoft Data Access Components (MDAC). Plik pakietu jest podobny do pliku produktu, ale jest używana do instalowania składników zależnych od kultury, zależności, takich jak zestawy zlokalizowane, umów licencyjnych i dokumentacji.
@@ -39,13 +39,13 @@ A *pliku produktu* jest manifestu XML opisujący wszystkie zależności zewnętr
 
 |Element|Opis|Atrybuty|
 |-------------|-----------------|----------------|
-|[\<Product> Element](../deployment/product-element-bootstrapper.md)|Wymagany element najwyższego poziomu dla plików produktu.|Brak|
-|[\<Package> Element](../deployment/package-element-bootstrapper.md)|Wymagany element najwyższego poziomu dla plików pakietu.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
+|[\<Product>, element](../deployment/product-element-bootstrapper.md)|Wymagany element najwyższego poziomu dla plików produktu.|Brak|
+|[\<Package>, element](../deployment/package-element-bootstrapper.md)|Wymagany element najwyższego poziomu dla plików pakietu.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
 |[\<RelatedProducts> Element](../deployment/relatedproducts-element-bootstrapper.md)|Opcjonalny element plików produktu. Inne produkty, które instaluje lub zależy od tego produktu.|Brak|
-|[\<InstallChecks> Element](../deployment/installchecks-element-bootstrapper.md)|Element wymagany. Listy zależności sprawdza do wykonania na komputerze lokalnym podczas instalacji.|Brak|
-|[\<Commands> Element](../deployment/commands-element-bootstrapper.md)|Element wymagany.  Wykonuje co najmniej jeden kontroli instalacji zgodnie z opisem w `InstallChecks`i wskazuje, które pakiety do zainstalowania powinien wyboru się nie powieść.|Brak|
+|[\<InstallChecks>, element](../deployment/installchecks-element-bootstrapper.md)|Element wymagany. Listy zależności sprawdza do wykonania na komputerze lokalnym podczas instalacji.|Brak|
+|[\<Commands>, element](../deployment/commands-element-bootstrapper.md)|Element wymagany.  Wykonuje co najmniej jeden kontroli instalacji zgodnie z opisem w `InstallChecks`i wskazuje, które pakiety do zainstalowania powinien wyboru się nie powieść.|Brak|
 |[\<PackageFiles> Element](../deployment/packagefiles-element-bootstrapper.md)|Element wymagany. Zawiera listę pakietów, które mogą być instalowane przez ten proces instalacji.|Brak|
-|[\<Ciągi > Element](../deployment/strings-element-bootstrapper.md)|Element wymagany. Magazyny zlokalizowane wersje produktu ciągów nazw i błędów.|Brak|
+|[\<Strings>, element](../deployment/strings-element-bootstrapper.md)|Element wymagany. Magazyny zlokalizowane wersje produktu ciągów nazw i błędów.|Brak|
 
 ## <a name="remarks"></a>Uwagi
  Schemat pakietu jest używane przez *Setup.exe*, skrótowy programu generowane przez program MS Build uruchamianie zadania, które zawiera niewielkie ustaloną logiki swój własny. Schemat dysków każdy aspekt procesu instalacji.

@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Dowiedz się, jak do aktywowania subskrypcji programu Visual Studio, które zostały zakupione w Microsoft Store.
 searchscope: VS Subscription
 ms.openlocfilehash: c6916e56e906df4e3d231f1942389e72ade4c9f3
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945892"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Jak aktywować subskrypcję zakupioną z Microsoft Store?
 Jeśli została zakupiona subskrypcji programu Visual Studio za pomocą Microsoft Store, procedurę aktywacji można zainicjować z płatności "Na stronie potwierdzenia" lub "Wiadomość E-mail z potwierdzeniem" otrzymany po zakupie.

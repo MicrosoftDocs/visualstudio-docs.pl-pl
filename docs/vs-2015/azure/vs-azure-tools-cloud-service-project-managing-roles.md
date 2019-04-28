@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: 391cddd0214abf1eea9e4dc20f2222a46fff6f08
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963861"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Zarządzanie rolami w usługach Azure cloud services z programem Visual Studio
 Po utworzeniu usługi w chmurze platformy Azure, możesz dodać nowe role do niego lub usuwać istniejące role. Można także zaimportować istniejący projekt i przekonwertować go do roli. Na przykład można zaimportować aplikację sieci web platformy ASP.NET i określić jako rola sieć web.
