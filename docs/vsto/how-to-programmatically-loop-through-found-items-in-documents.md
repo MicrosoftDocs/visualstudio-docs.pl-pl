@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 22f8035cc7c1b09e7fd54f3c10842237ee6273b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812416"
 ---
 # <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Instrukcje: Programowe przechodzenie w pętli poprzez znalezione elementy w dokumentach
   <xref:Microsoft.Office.Interop.Word.Find> Klasa ma <xref:Microsoft.Office.Interop.Word.Find.Found%2A> właściwość, która zwraca **true** zawsze, gdy zostanie znaleziony przeszukiwane dla elementu. Można pętli za pośrednictwem wszystkich wystąpień w <xref:Microsoft.Office.Interop.Word.Range> przy użyciu <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> metody.

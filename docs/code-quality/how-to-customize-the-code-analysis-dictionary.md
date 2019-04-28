@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cbc2d0f0863ae4b9083c0fb56873eb18b665c7c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816347"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Instrukcje: Dostosowywanie słownika analizy kodu
 Analiza kodu użyto słownika wbudowanego do sprawdzenia identyfikatorów w kodzie w poszukiwaniu błędów pisowni, gramatyki wielkości liter i innych konwencje nazewnictwa wytycznych programu .NET Framework. Można utworzyć słownika niestandardowego pliku Xml, aby dodać, usunąć lub zmodyfikować warunki, skróty i akronimów do wbudowanych słownika.

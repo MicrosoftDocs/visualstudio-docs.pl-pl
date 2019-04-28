@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 94e2562e86af36d935679916c2bfb9669be1758d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823491"
 ---
 # <a name="utilization-navigator"></a>Nawigator wykorzystania
 Nawigator wykorzystania w Wizualizatorze współbieżności służy do śledzenia Wybierz przedział czasu. Wizualizator współbieżności przedstawia użycie rdzeni procesora CPU przez proces docelowy wraz z upływem czasu. Umożliwia łatwiejsze zbadanie wzorcach użycia procesora CPU, a także umożliwia porównanie danych użycia i danych w innych widokach. Nawigator wykorzystania jest wyświetlana w górnej części każdego widoku w Wizualizatorze współbieżności. Poniższa ilustracja przedstawia Nawigator wykorzystania.

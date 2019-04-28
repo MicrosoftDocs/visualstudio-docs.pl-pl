@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f474adad6d1aaef728c59942fcae17595cd75032
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824246"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Instrukcje: Tworzenie i edytowanie konfiguracji
 

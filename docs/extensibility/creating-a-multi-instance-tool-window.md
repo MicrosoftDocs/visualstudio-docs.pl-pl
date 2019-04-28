@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 687d46136ad4ed0f043210839e95caf6071f87f2
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891085"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>Utworzenie okna narzędzia obejmujące wiele wystąpień
 Można programować okna narzędzi, tak, aby wiele wystąpień może być otwarty jednocześnie. Domyślnie narzędzie systemu windows może mieć tylko jedno wystąpienie, Otwórz.

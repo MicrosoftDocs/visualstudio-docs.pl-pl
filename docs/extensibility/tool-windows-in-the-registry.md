@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: adb79fec233171a0d20e817f9675aaab8e7228f8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798853"
 ---
 # <a name="tool-windows-in-the-registry"></a>Narzędzie Windows w rejestrze
 Należy zarejestrować pakietów VSPackage, zapewniające okien narzędzi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jako narzędzie dostawców okna. Narzędzie okien utworzone za pomocą szablonu pakietu Visual Studio w tym domyślnie. Dostarczających okno narzędzia ma klucze rejestru systemu, które określają atrybuty widoczności, takie jak domyślny rozmiar okna narzędzia i lokalizację, identyfikator GUID okna, które służy jako okienko narzędzi i styl dokowania.

@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Dowiedz się więcej na temat subskrypcji platformy Xamarin University szkolenia dołączone do wybranej subskrypcji programu Visual Studio.
 searchscope: VS Subscription
 ms.openlocfilehash: faddafcc9c1bbc77a6d6c91b72bdb2865552583a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810557"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Korzyści szkoleń Xamarin University w subskrypcji programu Visual Studio
 

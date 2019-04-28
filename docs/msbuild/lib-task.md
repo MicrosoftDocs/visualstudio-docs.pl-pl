@@ -26,11 +26,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 51534979a96e0fb924d164dd1cc8d2fcc7bab04a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817263"
 ---
 # <a name="lib-task"></a>LIB — Zadanie
 Opakowuje narzędzie Microsoft 32-bitowy Library Manager *lib.exe*. Menedżer biblioteki tworzy i zarządza Biblioteka plików obiektów Common Object File Format (COFF). Menedżer biblioteki można tworzyć pliki eksportu i Importuj biblioteki do definicji odwołanie, eksportowane. Aby uzyskać więcej informacji, zobacz [odwołanie do biblioteki LIB](/cpp/build/reference/lib-reference) i [uruchamianie LIB](/cpp/build/reference/running-lib).

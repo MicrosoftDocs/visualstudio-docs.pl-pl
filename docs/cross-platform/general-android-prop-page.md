@@ -23,11 +23,11 @@ f1_keywords:
 ms.workload:
 - xplat-cplusplus
 ms.openlocfilehash: 4bb6f26fe40b639b43cb803577a785fa9b48823d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818950"
 ---
 # <a name="general-project-properties-android-c"></a>Ogólne właściwości projektu (Android C++)
 
@@ -42,5 +42,5 @@ Plik dziennika kompilacji | Określa plik dziennika kompilacji do zapisu, gdy re
 Zestaw narzędzi platformy | Określa zestaw narzędzi, używana do tworzenia bieżącej konfiguracji; Jeśli nie jest używany zestaw, domyślny zestaw narzędzi
 Typ konfiguracji | Określa typ danych wyjściowych generowanych przez tę konfigurację. | **Biblioteka dynamiczna (SO)** — Biblioteka dynamiczna (*SO*)<br>**Biblioteka statyczna (.a)** — biblioteka statyczna (*.a*)<br>**Narzędzie** — narzędzie<br>**Plik reguł programu make** -pliku reguł programu make<br>
 Docelowy poziom interfejsu API | Android NDK docelowy poziom interfejsu API przez tę konfigurację.
-Użycie biblioteki STL | Określa, które standardowej biblioteki języka C++ do użycia dla tej konfiguracji. | **Minimalny Biblioteka środowiska uruchomieniowego języka C++ (system)**<br>**Biblioteka statyczna środowiska uruchomieniowego języka C++ (gabi ++ _static)**<br>**Biblioteka udostępniona środowiska uruchomieniowego języka C++ (gabi ++ _shared)**<br>**Biblioteka statyczna środowiska uruchomieniowego STLport (stlport_static)**<br>**Biblioteka udostępniona środowiska uruchomieniowego STLport (stlport_shared)**<br>**Biblioteka statyczna GNU STL (gnustl_static)**<br>**Biblioteka udostępniona GNU STL (gnustl_shared)**<br>**Biblioteka libc ++ LLVM statyczne (c ++ _static)**<br>**Biblioteka libc ++ LLVM udostępnionego (c ++ _shared)**<br>
+Użycie biblioteki STL | Określa, które standardowej biblioteki języka C++ do użycia dla tej konfiguracji. | **Minimalny Biblioteka środowiska uruchomieniowego języka C++ (system)**<br>**C++biblioteka statyczna środowiska uruchomieniowego (gabi ++ _static)**<br>**C++Biblioteka udostępniona środowiska uruchomieniowego (gabi ++ _shared)**<br>**Biblioteka statyczna środowiska uruchomieniowego STLport (stlport_static)**<br>**Biblioteka udostępniona środowiska uruchomieniowego STLport (stlport_shared)**<br>**Biblioteka statyczna GNU STL (gnustl_static)**<br>**Biblioteka udostępniona GNU STL (gnustl_shared)**<br>**Biblioteka libc ++ LLVM statyczne (c ++ _static)**<br>**Biblioteka libc ++ LLVM udostępnionego (c ++ _shared)**<br>
 Tryb Thumb | Generuj kod wykonujący dla mikroarchitektury thumb. Dotyczy tylko architektury arm. | **Thumb**<br>**ARM**<br>**Disabled (Wyłączone)**<br>

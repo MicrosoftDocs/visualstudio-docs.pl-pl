@@ -9,11 +9,11 @@ ms.topic: include
 ms.date: 05/21/2018
 ms.custom: include file
 ms.openlocfilehash: 09458cf2fa6e8600464732953443a71ac3ca2948
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58177766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819997"
 ---
 1. Wybierz z menu programu Visual Studio **Plik > Nowy > Projekt**.
 2. W obszarze **szablony** części **nowy projekt** okno dialogowe, wybierz opcję **Visual C# > sieci Web**.

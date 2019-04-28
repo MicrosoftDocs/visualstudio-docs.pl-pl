@@ -12,11 +12,11 @@ ms.workload: multiple
 ms.date: 10/13/2017
 ms.author: ghogen
 ms.openlocfilehash: dd27ff29d8e0d7581046d18457877532d4ce4c56
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819930"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Rozwiązywanie problemów związanych z opracowywaniem zwartości w programie Visual Studio przy użyciu platformy Docker
 

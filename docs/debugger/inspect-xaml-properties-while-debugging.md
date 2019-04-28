@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: d5b04a64ea75458d23e64e83a405a103ae70a100
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906073"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Sprawdzanie właściwości XAML podczas debugowania
 Możesz uzyskać wgląd w czasie rzeczywistym uruchamianie kodu XAML za pomocą **dynamiczne drzewo wizualne** i **Eksplorator właściwości na żywo**. Te narzędzia umożliwiają widok drzewa elementów interfejsu użytkownika w uruchomionej aplikacji XAML i dowiesz się, właściwości środowiska uruchomieniowego dowolnego elementu interfejsu użytkownika, którą wybierzesz.

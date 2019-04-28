@@ -14,11 +14,11 @@ manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b94bd5dc40102bce073e42302e92b737b4e8b0d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825230"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Określanie warunków pojawiania się adnotacji
 W przypadku warunkowego adnotacji może wymagać innych adnotacji, aby określić, że do analizatora.  Na przykład jeśli funkcja zawiera zmienną, która może być synchroniczna lub asynchroniczna, funkcja zachowuje się w następujący sposób: W przypadku synchroniczne go zawsze ostatecznie zakończy się pomyślnie, ale w przypadku asynchronicznej go zgłasza błąd, jeśli nie powiedzie się natychmiast. Gdy funkcja jest wywoływana synchronicznie, wartość wyniku sprawdzania zapewnia żadnej wartości, aby analizator kodu, ponieważ nie będzie mieć zwracane.  Jednak gdy funkcja jest wywoływana asynchronicznie, a wynik funkcji nie jest zaznaczone, może wystąpić po poważnym błędzie. W tym przykładzie pokazano sytuację, w której można użyć `_When_` adnotacji — opisane w dalszej części tego artykułu — Aby włączyć sprawdzanie.

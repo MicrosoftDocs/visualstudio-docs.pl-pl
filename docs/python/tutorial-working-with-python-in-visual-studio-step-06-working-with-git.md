@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 8d71f9e145d78d1d1bf7f6e9bb132e9fc084afd0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810506"
 ---
 # <a name="step-6-work-with-git"></a>Krok 6. Praca z usługą Git
 

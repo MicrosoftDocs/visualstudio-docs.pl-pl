@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c8bf20f43fcc8da48a6e1ec1dfd0f65b14f8ad86
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62836905"
 ---
 # <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
 Pobiera flagę wskazującą, czy symbol odnosi się do *definicji zakresu symbol* składnika tag zmiennej wskaźnikowej w kodzie skompilowanym dla akcelerator AMP C++. Symbol zakres definicji jest lokalizacja zmienną dla zakresu adresów.

@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ed1bd922b390d5b6e90c68b08683e1b9bdb46f32
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821251"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Instrukcje: Czas odpowiedzi strony sieci web widoku w teście obciążenia za pomocą analizatora testu obciążenia
 

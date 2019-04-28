@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 0263afa4eeb9094802fe6272380b6b53106da4a2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810199"
 ---
 # <a name="set-up-remote-workspaces"></a>Konfigurowanie zdalnych obszarów roboczych
 

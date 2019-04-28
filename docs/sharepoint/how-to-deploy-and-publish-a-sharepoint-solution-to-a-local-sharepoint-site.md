@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9537b3eef0d5da445d9456b414c89bbaac08ae87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813975"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Instrukcje: Wdrażanie oraz publikowanie rozwiązania SharePoint w lokalnej witrynie SharePoint
   Można wdrożyć i publikować rozwiązań programu SharePoint na lokalnym serwerze programu SharePoint na komputerze deweloperskim. Kopiuje procesu wdrażania *.wsp* pliku na serwerze programu SharePoint, instaluje rozwiązanie, a następnie aktywuje funkcje. Publikowanie przetwarzać tylko kopie *.wsp* pliku na serwerze programu SharePoint i instaluje je. Należy ręcznie aktywuj go, aby ją włączyć w programie SharePoint.

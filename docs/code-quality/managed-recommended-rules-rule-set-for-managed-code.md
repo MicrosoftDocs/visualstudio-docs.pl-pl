@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: c07471290756acc74289a552fcafde746c020e71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823546"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Zarządzane zalecane Reguły dla zarządzanego kodu
 Można użyć programu Microsoft zarządzany zalecany zestaw reguł skoncentrować się na najważniejszych problemów w kodzie zarządzanym, w tym potencjalnych luk w zabezpieczeniach, awarii aplikacji i inne istotne błędy logiki i projektowania. Należy dołączyć ten zestaw reguł w każdego niestandardowego zestawu reguł tworzonego dla projektów.

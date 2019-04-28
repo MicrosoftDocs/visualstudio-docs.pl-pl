@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - xamarin
 ms.openlocfilehash: 665eafb9a564ffc140e2784665b5f872eaf0eec9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818264"
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>Synchronizacja zmian między XCode i Visual Studio
 Języka Microsoft Visual C++ dla opracowywania aplikacji mobilnych składnika obejmuje funkcje zdalnego synchronizowania pracy między danym Komputerem a Twojego komputera Mac. Gdy są skojarzone maszyny i programu Visual Studio na komputerze Mac, nowe opcje są dostępne dla systemu iOS projektów aplikacji w programie Visual Studio można użyć, aby otworzyć projekt w programie XCode, Przenieś swój kod między XCode i Visual Studio i oczyścić katalog tymczasowy projektu XCode.

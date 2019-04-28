@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e35cb321772354de29b7b8466b6136c96cabf98d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798492"
 ---
 # <a name="layout-for-visual-studio"></a>Układ dla programu Visual Studio
 Większość okien dialogowych programu Visual Studio jest [układ okna dialogowego narzędzia](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), które są unthemed okien dialogowych standardzie postępuj zgodnie z [zasad układu okna dialogowego pulpitu Windows](/windows/desktop/uxguide/win-dialog-box). Przemieszcza się w programie Visual Studio można odświeżyć jego interfejsie użytkownika, niektóre ważniejszej okien dialogowych mają nowy projekt, który ustanawia je jak definiowanie produktu środowiska. Te [układ okna dialogowego motywem](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) ma wygląd kompozycji.

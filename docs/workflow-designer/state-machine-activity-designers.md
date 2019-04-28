@@ -9,11 +9,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: de928ff095c5700506060b9fceb609003f1b9ab1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809524"
 ---
 # <a name="state-machine-activity-designers"></a>Projektanci działań automatu stanów
 

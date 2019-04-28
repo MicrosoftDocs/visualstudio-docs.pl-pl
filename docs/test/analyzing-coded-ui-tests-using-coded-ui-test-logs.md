@@ -8,11 +8,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: a5ce4f298039d6d86f8c4855d1f139b6be1d1175
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822742"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analizowanie coded UI kodowanych testów przy użyciu dzienników testu interfejsu użytkownika
 

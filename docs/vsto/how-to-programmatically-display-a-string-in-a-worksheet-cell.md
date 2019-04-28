@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a9760d019fa80d4ecae63633c38ac9df60932202
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813026"
 ---
 # <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Instrukcje: Programowe wyświetlanie ciągu w komórce arkusza
   W tym przykładzie przedstawiono sposób wyświetlania tekstu w komórce programowo. Aby wyświetlić tekst w komórce, należy użyć <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu lub natywnego obiektu zakresu programu Excel.

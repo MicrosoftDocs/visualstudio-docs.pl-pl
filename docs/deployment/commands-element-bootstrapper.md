@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5f52c862adcdaf7a95de6a90c2c330c39edcea13
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900347"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Polecenia&gt; — element (program inicjujący)
 `Commands` Element implementuje badania opisane przez elementy poniżej `InstallChecks` elementu i oświadcza, które pakiety [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] należy zainstalować program inicjujący, jeśli test zakończy się niepowodzeniem.

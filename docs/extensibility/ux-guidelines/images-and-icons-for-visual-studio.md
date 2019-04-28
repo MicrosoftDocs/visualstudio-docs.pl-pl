@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d57c06cbc465537e0ac523c8133a718369b5ea69
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62802017"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Obrazy i ikony dla programu Visual Studio
 ## <a name="BKMK_ImageUseInVisualStudio"></a> Użyj obrazu w programie Visual Studio

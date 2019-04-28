@@ -31,11 +31,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 58691d5c6a7f44361d40a50898395ed1200a06c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817639"
 ---
 # <a name="link-task"></a>Link — Zadanie
 Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsolidatora łączy pliki obiektu Common Object File Format (COFF) i biblioteki, aby utworzyć plik wykonywalny (*.exe*) pliku lub biblioteki dołączanej (dynamicznie DLL). Aby uzyskać więcej informacji, zobacz [opcje konsolidatora](/cpp/build/reference/linker-options).

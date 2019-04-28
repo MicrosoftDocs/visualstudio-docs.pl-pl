@@ -33,13 +33,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a8854aee047fa961c4f0973397cfc2fe6ac6e6ad
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808174"
 ---
-# <a name="xml-tools-in-visual-studio"></a>Narzędzia XML w programie Visual Studio
+# <a name="xml-tools-in-visual-studio"></a>Narzędzia XML w Visual Studio
 
 *Język XML (Extensible Markup)* jest językiem znaczników, zapewniający format opisu danych. XML oddziela dane i jego prezentacji za pomocą skojarzonego arkuszy stylów, takich jak arkusz stylów języka XSL (Extensible) i kaskadowych arkuszy stylów (CSS). Visual Studio zawiera narzędzia i funkcje, dzięki którym łatwiej jest pracować z XML, XSLT i XML, schematy.
 

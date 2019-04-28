@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bc813868f3284ad81849e3a03d864de65d9f54ed
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59365930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896899"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Praca z okno interaktywne języka Python
 

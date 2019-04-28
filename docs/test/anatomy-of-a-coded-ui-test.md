@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ad2a26e7499758ec144c586f6526bfa33180961
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822673"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomia kodowanego testu interfejsu użytkownika
 
@@ -29,8 +29,8 @@ Podczas tworzenia kodowanych testów interfejsu użytkownika, **Konstruktor kodo
 |Plik|Spis treści|Można edytować?|
 |-|-|-|
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[Sekcja deklaracji](#UIMapDesignerFile)<br /><br /> [Klasa UIMap](#UIMapClass) (częściowych, wygenerowany automatycznie)<br /><br /> [Metody](#UIMapMethods)<br /><br /> [Właściwości](#UIMapProperties)|Nie|
-|[UIMap.cs](#UIMapCS)|[Klasa UIMap](#UIMapCS) (częściowa)|Tak|
-|[CodedUITest1.cs](#CodedUITestCS)|[Klasa CodedUITest1](#CodedUITestCS)<br /><br /> [Metody](#CodedUITestMethods)<br /><br /> [Właściwości](#CodedUITestProperties)|Yes|
+|[UIMap.cs](#UIMapCS)|[Klasa UIMap](#UIMapCS) (częściowa)|Yes|
+|[CodedUITest1.cs](#CodedUITestCS)|[Klasa CodedUITest1](#CodedUITestCS)<br /><br /> [Metody](#CodedUITestMethods)<br /><br /> [Właściwości](#CodedUITestProperties)|Tak|
 |[UIMap.uitest](#UIMapuitest)|Mapa XML w interfejsie użytkownika dla testu.|Nie|
 
 ### <a name="UIMapDesignerFile"></a> UIMap.Designer.cs

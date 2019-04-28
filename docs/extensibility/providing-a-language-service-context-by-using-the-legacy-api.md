@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 66e8da821657dc1aefd8563f3826891cb75e1792
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62805974"
 ---
 # <a name="provide-a-language-service-context-by-using-the-legacy-api"></a>Zapewnianie kontekstu usługi języka przy użyciu starszej wersji interfejsu API
 Dostępne są dwie opcje usługi języka zapewnić kontekst użytkownika za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podstawowy edytor: dostarczy w kontekście znacznika tekstu, lub wszystkie kontekstu użytkownika. Różnice między nimi opisano w tym miejscu.

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ae1b0f45d119b759d6618630a65353eff4415c78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62795998"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Przewodnik: Wyświetlanie parowanych nawiasów klamrowych
 Implementuje funkcje opartych na języku, np. parowanie nawiasów klamrowych, definiując nawiasy klamrowe, które chcesz dopasować i dodaniu tekstu znacznika do parowanych nawiasów klamrowych po karetce na jednym z nawiasami klamrowymi. Można zdefiniować nawiasy klamrowe w kontekście języka, zdefiniować własne rozszerzenia nazwy pliku i typu zawartości i zastosować znaczniki do dokładnie, wpisz lub zastosować znaczniki do istniejącego typu zawartości (na przykład "text"). Następujące instruktaż przedstawia sposób zastosowania parowanie nawiasów klamrowych tagów, aby typ zawartości "text".

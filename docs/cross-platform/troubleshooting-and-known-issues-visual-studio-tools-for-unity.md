@@ -11,11 +11,11 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58897702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815589"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Rozwiązywanie problemów i znane problemy (Visual Studio Tools for Unity)
 

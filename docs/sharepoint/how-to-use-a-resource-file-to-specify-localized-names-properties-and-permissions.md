@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2be88a29d3e9e3da9d1963aa1226ffca0a0a2bbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813052"
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Instrukcje: Korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości oraz uprawnień
   Za pomocą pliku zasobów, można podać zlokalizowanych nazw, zdefiniuj właściwości i stosować uprawnienia tor obiekty, które są zdefiniowane w modelu łączności danych biznesowych (BDC). Aby podać te informacje, należy dodać **zasobu łączności danych biznesowych** elementu do projektu, który zawiera **Model usługi łączności danych biznesowych** elementu. Następnie można określić nazwy, właściwości i uprawnienia, edytując XML pliku zasobu.

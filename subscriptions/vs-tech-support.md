@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Dowiedz się, jak aktywować korzyść pomocy technicznej dołączonej subskrypcji programu Visual Studio.
 searchscope: VS Subscription
 ms.openlocfilehash: 5464157d27833781edbcbe041d17ad5ecab5eebb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811535"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Uaktywnij i użyć korzyści z pomocy technicznej w ramach subskrypcji programu Visual Studio
 
@@ -111,8 +111,8 @@ Aby użyć swojej korzyści z pomocy technicznej subskrypcji programu Visual Stu
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | 4 zdarzenia       |  Tak|
 | Visual Studio Professional (Standard) | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>2</sup>                                        | zdarzenia 2                                                          |Tak         |
-| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | zdarzenia 2                                             |  Tak         |
-| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | zdarzenia 2                                               | Tak         |
+| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | zdarzenia 2                                             |  Yes         |
+| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | zdarzenia 2                                               | Yes         |
 | Visual Studio Dev Essentials | Nie dotyczy | Niedostępne |Nie dotyczy|
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
 

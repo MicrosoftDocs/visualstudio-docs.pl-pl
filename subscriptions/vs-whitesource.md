@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Dowiedz się, jak aktywować subskrypcję WhiteSource Bolt zawartych w ramach subskrypcji programu Visual Studio.
 searchscope: VS Subscription
 ms.openlocfilehash: ab373a21924aaac1a2a5660ed3032c69f04260e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811001"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Użyj narzędzia WhiteSource Bolt w subskrypcji programu Visual Studio
 
@@ -74,7 +74,7 @@ Kliknij zielony **zainstalować** przycisk, jeśli używasz usługi DevOps platf
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | 6 miesięcy       |  Tak          |
+| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | 6 miesięcy       |  Yes          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Nie jest dostępna                                                           |Nie dotyczy         |
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  Nie dotyczy         |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                              | Nie dotyczy         |

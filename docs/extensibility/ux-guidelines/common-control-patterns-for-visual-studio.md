@@ -8,80 +8,80 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cc9b917210acb92b5db436c54c777f9f55f663b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: c89babf7dc9f90b4042d917bf5843a0703628883
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62799476"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Typowe wzorce kontrolki dla programu Visual Studio
-##  <a name="BKMK_CommonControls"></a> Formanty standardowe
+## <a name="BKMK_CommonControls"></a> Formanty standardowe
 
 ### <a name="overview"></a>Omówienie
 Formanty standardowe tworzą większość interfejsu użytkownika w programie Visual Studio. Większość wspólnych kontrolek używanych w interfejsie programu Visual Studio należy stosować [wytycznych interakcji pulpitu Windows](/windows/desktop/uxguide/controls). Ten temat dotyczy programu Visual Studio i obejmuje szczególnych sytuacjach lub szczegółowe informacje, które polepszają tych wytycznych Windows.
 
 #### <a name="common-controls-in-this-topic"></a>Typowe kontrolki, w tym temacie
 
--   [Paski przewijania](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_Scrollbars)
+- [Paski przewijania](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_Scrollbars)
 
--   [Pól danych wejściowych](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_InputFields)
+- [Pól danych wejściowych](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_InputFields)
 
--   [Pola kombi i list rozwijanych](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ComboBoxesAndDropDowns)
+- [Pola kombi i list rozwijanych](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ComboBoxesAndDropDowns)
 
--   [Pola wyboru](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_CheckBoxes)
+- [Pola wyboru](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_CheckBoxes)
 
--   [Przyciski radiowe](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_RadioButtons)
+- [Przyciski radiowe](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_RadioButtons)
 
--   [Grupa ramek](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_GroupFrames)
+- [Grupa ramek](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_GroupFrames)
 
--   [Kontrolek tekstu](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TextControls)
+- [Kontrolek tekstu](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TextControls)
 
--   [Przyciski i hiperłączy](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ButtonsAndHyperlinks)
+- [Przyciski i hiperłączy](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ButtonsAndHyperlinks)
 
--   [Widok drzewa](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViews)
+- [Widok drzewa](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViews)
 
 #### <a name="visual-style"></a>Styl wizualny
 Przede wszystkim należy wziąć pod uwagę podczas style kontrolki jest, czy formanty będą używane w motywem interfejsu użytkownika. Formanty w standardowego interfejsu użytkownika są-motywem interfejsu użytkownika i należy wykonać [stylu normalnym pulpitu Windows](/windows/desktop/uxguide/controls), czyli nie są ponownie szablonem i powinno pojawić się w ich domyślny wygląd kontrolki.
 
--   **Standard (Narzędzia) w oknach dialogowych:** nie motywów. Nie należy ponownie szablon. Użyj domyślnych stylu kontrolki podstawowe.
+- **Standard (Narzędzia) w oknach dialogowych:** nie motywów. Nie należy ponownie szablon. Użyj domyślnych stylu kontrolki podstawowe.
 
--   **Okna narzędzi, edytory dokumentu, powierzchni projektowania i motywów okna dialogowe:** Użyj wyspecjalizowane wygląd kompozycji przy użyciu usługi kolorów.
+- **Okna narzędzi, edytory dokumentu, powierzchni projektowania i motywów okna dialogowe:** Użyj wyspecjalizowane wygląd kompozycji przy użyciu usługi kolorów.
 
-###  <a name="BKMK_Scrollbars"></a> Paski przewijania
+### <a name="BKMK_Scrollbars"></a> Paski przewijania
  Paski przewijania powinien być zgodny [paski przewijania typowe wzorce interakcji dla Windows](/windows/desktop/Controls/about-scroll-bars) , chyba że są one rozszerzone przy użyciu informacji o zawartości, jak pokazano w edytorze kodu.
 
-###  <a name="BKMK_InputFields"></a> Pól danych wejściowych
+### <a name="BKMK_InputFields"></a> Pól danych wejściowych
  Dla zachowania typowe interakcji, postępuj zgodnie z [pulpitu Windows wytyczne dotyczące pól tekstowych](/windows/desktop/uxguide/ctrl-text-boxes).
 
 #### <a name="visual-style"></a>Styl wizualny
 
--   Pola wejściowe nie powinny wstawiony w oknach dialogowych narzędzia. Użyć podstawowa stylu wewnętrznej do formantu.
+- Pola wejściowe nie powinny wstawiony w oknach dialogowych narzędzia. Użyć podstawowa stylu wewnętrznej do formantu.
 
--   Motywem pól wejściowych stosuje się tylko w motywem okien dialogowych i okna narzędzi.
+- Motywem pól wejściowych stosuje się tylko w motywem okien dialogowych i okna narzędzi.
 
 #### <a name="specialized-interactions"></a>Wyspecjalizowane interakcje
 
--   Pola tylko do odczytu mają tła szary (wyłączony), ale pierwszy plan domyślny (aktywny).
+- Pola tylko do odczytu mają tła szary (wyłączony), ale pierwszy plan domyślny (aktywny).
 
--   Wymagane pola powinny mieć  **\<wymagane >** jako znaki wodne w nich. Nie należy zmieniać kolor tła, z wyjątkiem sytuacji, w rzadkich sytuacjach.
+- Wymagane pola powinny mieć  **\<wymagane >** jako znaki wodne w nich. Nie należy zmieniać kolor tła, z wyjątkiem sytuacji, w rzadkich sytuacjach.
 
--   Błąd sprawdzania poprawności: Zobacz [powiadomienia i postęp dla programu Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
+- Błąd sprawdzania poprawności: Zobacz [powiadomienia i postęp dla programu Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
 
--   Pól danych wejściowych z tego względu celu dopasowania do zawartości, nie Dopasuj szerokość okna, w którym są wyświetlane, ani też arbitralnie jest zgodna z długością pola długie, takich jak ścieżki. Długość może to oznaczać użytkownikowi ograniczenia dotyczące liczby znaków są dozwolone w tym polu.
+- Pól danych wejściowych z tego względu celu dopasowania do zawartości, nie Dopasuj szerokość okna, w którym są wyświetlane, ani też arbitralnie jest zgodna z długością pola długie, takich jak ścieżki. Długość może to oznaczać użytkownikowi ograniczenia dotyczące liczby znaków są dozwolone w tym polu.
 
      ![Nieprawidłowe pole wejściowe, długość: jest mało prawdopodobne, że nazwa będzie długich. ](../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl")<br />Nieprawidłowe pole wejściowe, długość: jest mało prawdopodobne, że nazwa będzie długich.
 
      ![Popraw długość pola wejściowego: pola wejściowego jest uzasadnione szerokość oczekiwanej zawartości. ](../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl")<br />Popraw długość pola wejściowego: pola wejściowego jest uzasadnione szerokość oczekiwanej zawartości.
 
-###  <a name="BKMK_ComboBoxesAndDropDowns"></a> Pola kombi i list rozwijanych
+### <a name="BKMK_ComboBoxesAndDropDowns"></a> Pola kombi i list rozwijanych
 Dla zachowania typowe interakcji, postępuj zgodnie z [pulpitu Windows wskazówki dotyczące list rozwijanych i pól kombi](/windows/desktop/uxguide/ctrl-drop).
 
 #### <a name="visual-style"></a>Styl wizualny
 
--   W oknach dialogowych narzędzia nie re szablonu kontrolki. Użyć podstawowa stylu wewnętrznej do formantu.
+- W oknach dialogowych narzędzia nie re szablonu kontrolki. Użyć podstawowa stylu wewnętrznej do formantu.
 
--   Wykonaj standardowe motywy dla formantów w motywem interfejsu użytkownika, pola kombi i list rozwijanych.
+- Wykonaj standardowe motywy dla formantów w motywem interfejsu użytkownika, pola kombi i list rozwijanych.
 
 #### <a name="layout"></a>Układ
 Pola kombi i listy rozwijane z tego względu celu dopasowania do zawartości, nie Dopasuj szerokość okna, w którym są wyświetlane, ani też arbitralnie jest zgodna z długością pola długie, takich jak ścieżki.
@@ -90,26 +90,26 @@ Pola kombi i listy rozwijane z tego względu celu dopasowania do zawartości, ni
 
 ![Poprawne: z listy rozwijanej jest o rozmiarze do Zezwalaj na wzrost tłumaczenia, ale nie niepotrzebnie długie. ](../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707 04_CorrectDropDownLayout")<br />Poprawne: z listy rozwijanej jest o rozmiarze do Zezwalaj na wzrost tłumaczenia, ale nie niepotrzebnie długie.
 
-###  <a name="BKMK_CheckBoxes"></a> Pola wyboru
+### <a name="BKMK_CheckBoxes"></a> Pola wyboru
 Dla zachowania typowe interakcji, postępuj zgodnie z [pulpitu Windows wskazówki dotyczące wyboru](/windows/desktop/uxguide/ctrl-check-boxes).
 
 #### <a name="visual-style"></a>Styl wizualny
 
--   W oknach dialogowych narzędzia nie re szablonu kontrolki. Użyć podstawowa stylu wewnętrznej do formantu.
+- W oknach dialogowych narzędzia nie re szablonu kontrolki. Użyć podstawowa stylu wewnętrznej do formantu.
 
--   W interfejsie użytkownika motywów pola wyboru wykonaj standardowe motywy dla formantów.
+- W interfejsie użytkownika motywów pola wyboru wykonaj standardowe motywy dla formantów.
 
 #### <a name="specialized-interactions"></a>Wyspecjalizowane interakcje
 
--   Interakcja z polem wyboru nigdy nie należy pop okna dialogowego lub przejść do innego obszaru.
+- Interakcja z polem wyboru nigdy nie należy pop okna dialogowego lub przejść do innego obszaru.
 
--   Dostosowanie pól wyboru z linią bazową elementu pierwszego wiersza tekstu.
+- Dostosowanie pól wyboru z linią bazową elementu pierwszego wiersza tekstu.
 
      ![Niepoprawne: pole wyboru skupia się na tekst. ](../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign")<br />Niepoprawne: pole wyboru skupia się na tekst.
 
      ![Poprawne: pole wyboru jest powiązana z pierwszego wiersza tekstu. ](../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign")<br />Poprawne: pole wyboru jest powiązana z pierwszego wiersza tekstu.
 
-###  <a name="BKMK_RadioButtons"></a> Przyciski radiowe
+### <a name="BKMK_RadioButtons"></a> Przyciski radiowe
 Dla zachowania typowe interakcji, postępuj zgodnie z [pulpitu Windows wytyczne dotyczące przycisków radiowych](/windows/desktop/uxguide/ctrl-radio-buttons).
 
 #### <a name="visual-style"></a>Styl wizualny
@@ -118,7 +118,7 @@ W oknach dialogowych narzędzia czy nie style przycisków radiowych. Użyć pods
 #### <a name="specialized-interactions"></a>Wyspecjalizowane interakcje
 Nie jest konieczne użycie ramki grupy wybór opcji, należy ująć, o ile nie trzeba zachować rozróżnienia grupy w układzie ścisłej.
 
-###  <a name="BKMK_GroupFrames"></a> Grupa ramek
+### <a name="BKMK_GroupFrames"></a> Grupa ramek
 Dla zachowania typowe interakcji, postępuj zgodnie z [pulpitu Windows wytyczne dotyczące grupy ramek](/windows/desktop/uxguide/ctrl-group-boxes).
 
 #### <a name="visual-style"></a>Styl wizualny
@@ -126,13 +126,13 @@ W oknach dialogowych narzędzia nie stylu ramki grupy. Użyć podstawowa stylu w
 
 #### <a name="layout"></a>Układ
 
--   Nie jest konieczne użycie ramki grupy wybór opcji, należy ująć, o ile nie trzeba zachować rozróżnienia grupy w układzie ścisłej.
+- Nie jest konieczne użycie ramki grupy wybór opcji, należy ująć, o ile nie trzeba zachować rozróżnienia grupy w układzie ścisłej.
 
--   Nigdy nie używaj ramki grupy dla pojedynczego formantu.
+- Nigdy nie używaj ramki grupy dla pojedynczego formantu.
 
--   Czasami jest można użyć linii poziomej zamiast kontener ramki grupy.
+- Czasami jest można użyć linii poziomej zamiast kontener ramki grupy.
 
-##  <a name="BKMK_TextControls"></a> Kontrolek tekstu
+## <a name="BKMK_TextControls"></a> Kontrolek tekstu
 
 ### <a name="static-text-fields"></a>Statyczne pola tekstowe
 
@@ -160,19 +160,19 @@ Pole tekstowe mogą stać się aktywny (edytowalne), gdy użytkownik zmienia sko
 
 Kluczowe wytyczne dla tekstu w oknach dialogowych:
 
--   Etykiety pola tekstowe, pola listy i ramki w oknach dialogowych unthemed rozpoczynać zlecenie, ma początkową wielką tylko pierwszy wyraz i kończyć dwukropkiem.
+- Etykiety pola tekstowe, pola listy i ramki w oknach dialogowych unthemed rozpoczynać zlecenie, ma początkową wielką tylko pierwszy wyraz i kończyć dwukropkiem.
 
     > Postępuj zgodnie z kontrolek tekstu w oknach dialogowych motywem [wskazówki dotyczące interfejsu użytkownika pulpitu Windows](/windows/desktop/uxguide/top-violations) ale nie końcowych znaków interpunkcyjnych z wyjątkiem znaków zapytania w łącza pomocy.
 
--   Etykiety pola wyboru i przyciski opcji rozpoczynać czasownikiem początkową wielką tylko pierwszy wyraz i mieć bez końcowych znaków interpunkcyjnych.
+- Etykiety pola wyboru i przyciski opcji rozpoczynać czasownikiem początkową wielką tylko pierwszy wyraz i mieć bez końcowych znaków interpunkcyjnych.
 
--   Etykiety przyciski, menu, elementy menu i karty mają początkowych wielkich liter na poszczególnych wyrazów (tytuł wielkości liter).
+- Etykiety przyciski, menu, elementy menu i karty mają początkowych wielkich liter na poszczególnych wyrazów (tytuł wielkości liter).
 
--   Terminologia etykiety powinny być zgodne z podobnych etykiet w innych oknach dialogowych.
+- Terminologia etykiety powinny być zgodne z podobnych etykiet w innych oknach dialogowych.
 
--   Jeśli to możliwe ma składnik zapisywania i edytorem, zapisu lub zatwierdzić tekstu, zanim przejdzie do deweloperów dla implementacji.
+- Jeśli to możliwe ma składnik zapisywania i edytorem, zapisu lub zatwierdzić tekstu, zanim przejdzie do deweloperów dla implementacji.
 
--   Wszystkie kontrolki powinny mieć etykiety z wyjątkiem w szczególnych okolicznościach, w których klawiszem TAB jest wystarczająca.
+- Wszystkie kontrolki powinny mieć etykiety z wyjątkiem w szczególnych okolicznościach, w których klawiszem TAB jest wystarczająca.
 Użyj tekstu pomocy, gdy jest to konieczne.
 
 ### <a name="helper-text"></a>Tekst pomocy
@@ -181,13 +181,13 @@ Uwzględnione w oknach dialogowych, aby pomóc użytkownikowi zrozumieć celu w 
 
 Postępuj zgodnie z typowych lokalizacji pomocnika, tekstu i zachować ostrożność przy wprowadzaniu nowe obszary. Typowe scenariusze dotyczące tekstu pomocy są:
 
--   Tekst pomocy w oknach dialogowych, aby zapewnić dodatkowe kierunek o tym, jak wchodzić w interakcje z złożonych okna dialogowego.
+- Tekst pomocy w oknach dialogowych, aby zapewnić dodatkowe kierunek o tym, jak wchodzić w interakcje z złożonych okna dialogowego.
 
--   Tekst znaku wodnego okien narzędzi puste lub okien dialogowych, aby wyjaśnić, dlaczego jest widoczna żadna zawartość.
+- Tekst znaku wodnego okien narzędzi puste lub okien dialogowych, aby wyjaśnić, dlaczego jest widoczna żadna zawartość.
 
--   Okienko opisu, takich jak u dołu **okno właściwości**.
+- Okienko opisu, takich jak u dołu **okno właściwości**.
 
--   Znak wodny tekstu w edytorze puste, aby wyjaśnić, jaką akcję, użytkownik powinien wykonać, aby rozpocząć pracę.
+- Znak wodny tekstu w edytorze puste, aby wyjaśnić, jaką akcję, użytkownik powinien wykonać, aby rozpocząć pracę.
 
 ### <a name="dialog-helper-text"></a>Tekst pomocy w oknie dialogowym
 
@@ -197,9 +197,9 @@ Projektant środowisko użytkownika może pomóc określić, kiedy pomocnika, te
 
 Okna dialogowe korzystać z wytycznych nieco znaku wodnego. Ponieważ okno dialogowe może znajdować się zagęszczoną w przypadku wielu elementów interfejsu użytkownika (etykiety, tekst wskazówki, przyciski i inne kontrolki kontenera, z tekstem), szczególnie gdy one wyświetlone na czarno znaki wodne wyróżniały się lepiej w ciemnoszary (VSColor: `ButtonShadow`). Zwykle pojawia się znak wodny wewnątrz kontrolki, takie jak pola listy na białym tle (VSColor: `Window`).
 
--   Tekst jest wyświetlany w ciemnoszary (VSColor: `ButtonShadow`). Jednakże jeśli znak wodny, który jest wyświetlany w kolorze szarym lub inne kolorowe (VSColor: `ButtonFace`) w tle i ma dotyczyć o jego czytelność, zawsze pod ręką czarny tekst (VSColor: `WindowText`).
+- Tekst jest wyświetlany w ciemnoszary (VSColor: `ButtonShadow`). Jednakże jeśli znak wodny, który jest wyświetlany w kolorze szarym lub inne kolorowe (VSColor: `ButtonFace`) w tle i ma dotyczyć o jego czytelność, zawsze pod ręką czarny tekst (VSColor: `WindowText`).
 
--   Znaki wodne można wyśrodkowany lub wyrównany do lewej. Podczas podejmowania decyzji wyrównania jest stosowanie reguł standardowego projektu. Nie można wybrać znak wodny w tle.
+- Znaki wodne można wyśrodkowany lub wyrównany do lewej. Podczas podejmowania decyzji wyrównania jest stosowanie reguł standardowego projektu. Nie można wybrać znak wodny w tle.
 
 ![Przykład tekstu znaku wodnego](../../extensibility/ux-guidelines/media/WatermarkTextExample.gif)<br />Przykład tekstu znaku wodnego
 
@@ -207,13 +207,13 @@ Okna dialogowe korzystać z wytycznych nieco znaku wodnego. Ponieważ okno dialo
 
 Dynamiczny tekst może być używany jeden z dwóch sposobów, w oknie dialogowym lub niemodalne interfejsu użytkownika: albo jako dynamiczny etykiety lub zawartości dynamicznej.
 
--   Dynamiczne etykiety: typowym zastosowaniem dynamiczny tekst jest opisowy paneli, które oferują więcej informacji dla wybranego elementu, takie jak w oknie dialogowym, która zawiera listę elementów i właściwości dla tych elementów w siatce po prawej stronie. Etykiety siatki właściwości może być dynamiczny, tak aby wybranie elementu po lewej stronie siatki, po prawej stronie zawiera informacje dotyczące określonego elementu.
+- Dynamiczne etykiety: typowym zastosowaniem dynamiczny tekst jest opisowy paneli, które oferują więcej informacji dla wybranego elementu, takie jak w oknie dialogowym, która zawiera listę elementów i właściwości dla tych elementów w siatce po prawej stronie. Etykiety siatki właściwości może być dynamiczny, tak aby wybranie elementu po lewej stronie siatki, po prawej stronie zawiera informacje dotyczące określonego elementu.
 
--   Dynamiczny tekst: może być przydatne w przypadkach, gdy konieczne jest wyświetlenie szczegółowych informacji i nie ogólnych informacji w ten sposób, ale należy zwrócić uwagę, aby nie nadużywać.
+- Dynamiczny tekst: może być przydatne w przypadkach, gdy konieczne jest wyświetlenie szczegółowych informacji i nie ogólnych informacji w ten sposób, ale należy zwrócić uwagę, aby nie nadużywać.
 
 Jeśli chcesz, aby użytkownicy mieli możliwość kopiowania informacji, dynamiczne tekst powinien być w pole tekstowe tylko do odczytu.
 
-##  <a name="BKMK_ButtonsAndHyperlinks"></a> Przyciski i hiperłączy
+## <a name="BKMK_ButtonsAndHyperlinks"></a> Przyciski i hiperłączy
 
 ### <a name="overview"></a>Omówienie
 Formanty przycisków i łącze (hiperłącza) należy stosować [podstawowe wskazówki pulpitu Windows o hiperlinkach](/windows/desktop/uxguide/ctrl-links) do użycia, znaną terminologię, rozmiaru i odstępy.
@@ -223,25 +223,25 @@ Tradycyjnie przyciski były używane dla akcji i hiperłączy zostały zarezerwo
 
 Kiedy należy używać przycisków poleceń:
 
--   Podstawowe polecenia
+- Podstawowe polecenia
 
--   Wyświetlanie systemu windows używane do zbierania danych wejściowych i zapewnianiu, nawet jeśli leżą one dodatkowych poleceń
+- Wyświetlanie systemu windows używane do zbierania danych wejściowych i zapewnianiu, nawet jeśli leżą one dodatkowych poleceń
 
--   Akcje destrukcyjne lub nieodwracalne
+- Akcje destrukcyjne lub nieodwracalne
 
--   Przyciski zobowiązania w kreatorach i oknach przepływów stron
+- Przyciski zobowiązania w kreatorach i oknach przepływów stron
 
 Należy unikać przycisków poleceń w oknach narzędzi lub jeśli potrzebujesz więcej niż dwa wyrazy dla etykiety. Linki mogą mieć dłuższy etykiety.
 
  Kiedy należy używać linków:
 
--   Nawigacja do innego okna dokumentu lub strony sieci web
+- Nawigacja do innego okna dokumentu lub strony sieci web
 
--   Sytuacjach wymagających dłuższego etykiety lub krótkie zdanie opisujący przeznaczenie działania
+- Sytuacjach wymagających dłuższego etykiety lub krótkie zdanie opisujący przeznaczenie działania
 
--   Ścisła miejsca do magazynowania, którym przycisk będzie przeciąży interfejsu użytkownika, pod warunkiem, że akcja nie jest destrukcyjne lub nieodwracalne
+- Ścisła miejsca do magazynowania, którym przycisk będzie przeciąży interfejsu użytkownika, pod warunkiem, że akcja nie jest destrukcyjne lub nieodwracalne
 
--   Cofnięcia myślą dodatkowych poleceń w sytuacjach, w których istnieje wiele poleceń
+- Cofnięcia myślą dodatkowych poleceń w sytuacjach, w których istnieje wiele poleceń
 
 #### <a name="examples"></a>Przykłady
 ![Polecenie łącza używane na pasku informacyjnym następującego komunikatu o stanie](../../extensibility/ux-guidelines/media/070703-01_commandlinkinfobar.png "070703 01_CommandLinkInfobar")<br />Polecenie łącza używane na pasku informacyjnym następującego komunikatu o stanie
@@ -274,19 +274,19 @@ W niektórych przypadkach przyciski mogą być używane w interfejsie użytkowni
 
 Kiedy należy używać tylko do wielokropka krótki przycisk:
 
--   Jeśli istnieje więcej niż jednego długiego **[Przeglądaj …]**  przycisku w oknie dialogowym, takie jak kiedy kilka pól umożliwiają przeglądanie. Użyj krótkiej **[...]**  przycisku dla każdego uniknąć pomylenia klucze dostępu, utworzone przez tę sytuację (**& Przeglądaj** i **prz & eglądaj** w tym samym oknie dialogowym).
+- Jeśli istnieje więcej niż jednego długiego **[Przeglądaj …]**  przycisku w oknie dialogowym, takie jak kiedy kilka pól umożliwiają przeglądanie. Użyj krótkiej **[...]**  przycisku dla każdego uniknąć pomylenia klucze dostępu, utworzone przez tę sytuację (**& Przeglądaj** i **prz & eglądaj** w tym samym oknie dialogowym).
 
--   W oknie dialogowym ścisłej lub po nie uzasadnione miejsce do umieszczenia długie przycisku.
+- W oknie dialogowym ścisłej lub po nie uzasadnione miejsce do umieszczenia długie przycisku.
 
--   Jeśli przycisk pojawi się w formancie siatki.
+- Jeśli przycisk pojawi się w formancie siatki.
 
 Wytyczne dotyczące przy użyciu przycisku:
 
--   Nie należy używać klucza dostępu. Dostępu do niego za pomocą klawiatury, użytkownik musi kartę z sąsiadujących kontroli. Upewnij się, że kolejność tabulacji jest taka, że dowolnego przycisku Przeglądaj znajduje się natychmiast po wypełni pola. Nigdy nie używaj znaku podkreślenia poniżej pierwszego okresu.
+- Nie należy używać klucza dostępu. Dostępu do niego za pomocą klawiatury, użytkownik musi kartę z sąsiadujących kontroli. Upewnij się, że kolejność tabulacji jest taka, że dowolnego przycisku Przeglądaj znajduje się natychmiast po wypełni pola. Nigdy nie używaj znaku podkreślenia poniżej pierwszego okresu.
 
--   Ustaw Microsoft Active Accessibility (MSAA) **nazwa** właściwość **Przeglądaj...**  (z uwzględnieniem wielokropek), który ekran czytelnicy odczyta go jako "Przeglądaj" i "kropka kropka kropka" albo "okres czasu okres." Zarządzane formanty, oznacza to ustawienie **AccessibleName** właściwości.
+- Ustaw Microsoft Active Accessibility (MSAA) **nazwa** właściwość **Przeglądaj...**  (z uwzględnieniem wielokropek), który ekran czytelnicy odczyta go jako "Przeglądaj" i "kropka kropka kropka" albo "okres czasu okres." Zarządzane formanty, oznacza to ustawienie **AccessibleName** właściwości.
 
--   Nigdy nie używaj wielokropek **[...]**  przycisk końcówką akcji przeglądania. Na przykład, jeśli potrzebujesz **[nowa...]**  przycisk, ale nie ma wystarczająco dużo miejsca dla tekstu, a następnie w oknie dialogowym musi być zaprojektowane od nowa.
+- Nigdy nie używaj wielokropek **[...]**  przycisk końcówką akcji przeglądania. Na przykład, jeśli potrzebujesz **[nowa...]**  przycisk, ale nie ma wystarczająco dużo miejsca dla tekstu, a następnie w oknie dialogowym musi być zaprojektowane od nowa.
 
 ##### <a name="sizing-and-spacing"></a>Zmiana rozmiaru i odstępy
 ![Zmiany rozmiaru [Przeglądaj...] przyciski: standardowa wersja 75 x 23 pikseli, skróconej pikseli 26 x 23](../../extensibility/ux-guidelines/media/070703-06_browsesizing.png "070703 06_BrowseSizing")<br />Ustalanie rozmiaru przycisków [przeglądania...]
@@ -321,17 +321,17 @@ Postępuj zgodnie z [pulpitu Windows wskazówki dotyczące tekst interfejsu uży
 
 #### <a name="visual-style"></a>Styl wizualny
 
--   Zawsze należy używać hiperlinków [usługa VSColor](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService). Jeśli hiperlink nie ma zdefiniowanych poprawnie, pojawi się czerwony, gdy jest ona aktywna lub pokazuje inny kolor po odwiedzana.
+- Zawsze należy używać hiperlinków [usługa VSColor](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService). Jeśli hiperlink nie ma zdefiniowanych poprawnie, pojawi się czerwony, gdy jest ona aktywna lub pokazuje inny kolor po odwiedzana.
 
--   Nie dołączaj podkreślenia w kontroli przechowywany stan, chyba że łącze jest fragmentu zdanie w ramach pełnej zdania, podobnie jak w znaku wodnego.
+- Nie dołączaj podkreślenia w kontroli przechowywany stan, chyba że łącze jest fragmentu zdanie w ramach pełnej zdania, podobnie jak w znaku wodnego.
 
--   Podkreślenia nie są wyświetlane po najechaniu wskaźnikiem. Zamiast tego opinii do użytkownika, że łącze jest aktywne jest zmiana koloru niewielkie i kursor odpowiednie łącze.
+- Podkreślenia nie są wyświetlane po najechaniu wskaźnikiem. Zamiast tego opinii do użytkownika, że łącze jest aktywne jest zmiana koloru niewielkie i kursor odpowiednie łącze.
 
-##  <a name="BKMK_TreeViews"></a> Widok drzewa
+## <a name="BKMK_TreeViews"></a> Widok drzewa
 
 Widok drzewa udostępniają sposób organizowania złożony, który wyświetla listę w grupy nadrzędny podrzędny. Użytkownika można rozwinąć lub zwinąć grupy nadrzędne, aby pokazać lub ukryć podstawowych elementów podrzędnych. Każdy element w widoku drzewa można wybrać w celu udostępniania dodatkowych akcji.
 
-###  <a name="BKMK_TreeViewVisualStyle"></a> Styl wizualny widok drzewa
+### <a name="BKMK_TreeViewVisualStyle"></a> Styl wizualny widok drzewa
 
 #### <a name="expanders"></a>Ekspanderów znajdujących
 Kontrolki widoku drzewa powinna być zgodna projektowania ekspander używane przez Windows i programu Visual Studio. Każdy węzeł będzie używał kontrolki expander Wyświetl lub Ukryj podstawowe elementy. Za pomocą kontrolki expander zapewnia spójność dla użytkowników, którzy mogą występować w widokach innego drzewa w ramach Windows i programu Visual Studio.
@@ -355,7 +355,7 @@ Paski przewijania zawsze powinna być ukryta, jeśli zawartość mieści się w 
 
 ![Zarówno i poziome paski przewijania są wyświetlane, ponieważ zawartość przekroczenia limitów kontrolki widoku drzewa. ](../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />Zarówno i poziome paski przewijania są wyświetlane, ponieważ zawartość przekroczenia limitów kontrolki widoku drzewa.
 
-###  <a name="BKMK_TreeViewInteractions"></a> Interakcje widok drzewa
+### <a name="BKMK_TreeViewInteractions"></a> Interakcje widok drzewa
 
 #### <a name="context-menus"></a>Menu kontekstowe
 Węzeł drzewa widoku może ujawnić podmenu Opcje w menu kontekstowym. Zwykle dzieje się po użytkownik kliknął prawym przyciskiem myszy element lub naciśnięty klawisz Menu na klawiaturze Windows za pomocą wybranego elementu. Jest ważne, że węzeł uzyska fokus i jest zaznaczone. Dzięki temu użytkownikowi określić podmenu należy do elementu.
@@ -368,23 +368,23 @@ W widoku drzewa powinna zapewniają możliwość wybierz elementy i rozwijanie/z
 ##### <a name="tree-view-control"></a>Kontrolka widoku drzewa
 Kontrolki drzewa w usłudze Visual Studio, należy wykonać typowej nawigacji klawiatury:
 
--   **Strzałka: w górę** Wybierz elementy przez przeniesienie w górę drzewa
+- **Strzałka: w górę** Wybierz elementy przez przeniesienie w górę drzewa
 
--   **Strzałka: w dół** Wybierz elementy, przenosząc niżej na drzewie
+- **Strzałka: w dół** Wybierz elementy, przenosząc niżej na drzewie
 
--   **Strzałka w prawo:** Rozwiń węzeł w drzewie
+- **Strzałka w prawo:** Rozwiń węzeł w drzewie
 
--   **Strzałka w lewo:** Zwiń węzeł w drzewie
+- **Strzałka w lewo:** Zwiń węzeł w drzewie
 
--   **Wprowadź klucz:** Zainicjuj, obciążenia, należy wykonać wybranego elementu
+- **Wprowadź klucz:** Zainicjuj, obciążenia, należy wykonać wybranego elementu
 
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid (widok drzewa i siatki)
 Formant trid jest formant złożony, który zawiera widok drzewa w obrębie siatki. Rozwijanie, zwijanie i przechodząc drzewa należy przestrzegać tych samych poleceń klawiatury w widoku drzewa, z następującymi dodatkami:
 
--   **Strzałka w prawo:** Rozwiń węzeł. Po rozwinięciu węzła powinno być kontynuowane, przechodząc do najbliższej kolumnę po prawej stronie. Nawigacja ma zostać zatrzymana, na końcu wiersza.
+- **Strzałka w prawo:** Rozwiń węzeł. Po rozwinięciu węzła powinno być kontynuowane, przechodząc do najbliższej kolumnę po prawej stronie. Nawigacja ma zostać zatrzymana, na końcu wiersza.
 
--   **Karta:** Powoduje przejście do najbliższej komórce po prawej stronie.  Na końcu wiersza nawigacji w dalszym ciągu następnego wiersza.
+- **Karta:** Powoduje przejście do najbliższej komórce po prawej stronie.  Na końcu wiersza nawigacji w dalszym ciągu następnego wiersza.
 
--   **Shift + Tab:** Powoduje przejście do najbliższej komórki po lewej stronie.  Na początku wiersza, nawigacji w dalszym ciągu po prawej stronie komórki w poprzednim wierszu.
+- **Shift + Tab:** Powoduje przejście do najbliższej komórki po lewej stronie.  Na początku wiersza, nawigacji w dalszym ciągu po prawej stronie komórki w poprzednim wierszu.
 
 ![Formant trid w programie Visual Studio](../../extensibility/ux-guidelines/media/070705-6_trid.png "070705 6_Trid")<br />Formant trid w programie Visual Studio
