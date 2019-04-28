@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4c6b72c521b15c1087b71ddb7241268cf56d64c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ddd76bab4d007a9476dde75f46f3f2bc77be865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442529"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Krok 4. Określanie układu formularza przy użyciu kontrolki TableLayoutPanel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Grupa kontenerów
 TableLayoutPanel — formant  
   
     > [!NOTE]
-    >  Po dodaniu TableLayoutPanel, jeśli okno pojawia się wewnątrz formularza z tytułem **zadania formantu TableLayoutPanel**, wybierz dowolne miejsce wewnątrz formularza, aby je zamknąć. Więcej informacji na temat tego okna przedstawiono w dalszej części tego samouczka.  
+    > Po dodaniu TableLayoutPanel, jeśli okno pojawia się wewnątrz formularza z tytułem **zadania formantu TableLayoutPanel**, wybierz dowolne miejsce wewnątrz formularza, aby je zamknąć. Więcej informacji na temat tego okna przedstawiono w dalszej części tego samouczka.  
   
      Zwróć uwagę, jak Przybornik rozszerza się do objęcia formularza po wybraniu jego karty i zamyka się po wybierz dowolne miejsce poza nią. To jest funkcja Autoukrywanie IDE. Można włączyć tej funkcji dla każdego okna wybierając ikonę pinezki w prawym górnym rogu okna, aby przełączać automatyczne ukrywanie i blokowanie w miejscu. Ikona Pinezka wygląda następująco.  
   
@@ -62,7 +62,7 @@ Okno właściwości z zaznaczonym wypełnieniem
 7. Po ustawieniu TableLayoutPanel **Dock** właściwości **wypełnienia**, panel wypełnia cały formularz. Jeśli zmienisz rozmiar formularza ponownie, obiekt TableLayoutPanel pozostaje zadokowany i zmienia się, aby dopasować rozmiar.  
   
     > [!NOTE]
-    >  Element TableLayoutPanel działa jak tabela w programie Microsoft Office Word: Ma ona wierszy i kolumn i pojedyncze komórki może obejmować wiele wierszy i kolumn. Każda komórka może zawierać jeden formant (jak przycisk, pole wyboru lub etykietę). Twój TableLayoutPanel będzie miał `PictureBox` obejmujące cały górny wiersz, formant `CheckBox` kontrolki w jego lewej dolnej komórce i cztery `Button` kontrolki w jej dolnej prawej komórce.  
+    > Element TableLayoutPanel działa jak tabela w programie Microsoft Office Word: Ma ona wierszy i kolumn i pojedyncze komórki może obejmować wiele wierszy i kolumn. Każda komórka może zawierać jeden formant (jak przycisk, pole wyboru lub etykietę). Twój TableLayoutPanel będzie miał `PictureBox` obejmujące cały górny wiersz, formant `CheckBox` kontrolki w jego lewej dolnej komórce i cztery `Button` kontrolki w jej dolnej prawej komórce.  
   
 8. Obecnie TableLayoutPanel ma dwa równe rzędy wielkości i dwie kolumny równej wielkości. Musisz zmienić ich rozmiar, aby górny wiersz i prawa kolumna były znacznie większe. W programie Windows Forms Designer wybierz obiekt TableLayoutPanel. W prawym górnym rogu jest przycisk mały trójkąt czarny, który wygląda następująco.  
   

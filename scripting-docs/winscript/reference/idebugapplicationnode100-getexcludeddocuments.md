@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1120b85ded35dbbe9c8c038350080e4071b19cf8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: b8b1793fc1a3aacb27cc612bb5212dc33e7ab7dc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58152226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436048"
 ---
 # <a name="idebugapplicationnode100getexcludeddocuments"></a>IDebugApplicationNode100::GetExcludedDocuments
 Pobiera dokumenty tekstowe, ukryte przez określony filtr.  
   
 > [!IMPORTANT]
->  [Interfejs IDebugApplicationNode100](../../winscript/reference/idebugapplicationnode100-interface.md) jest implementowany przez program PDM 10.0 lub nowszym. Znajduje się w zestawie activdbg100.h.  
+> [Interfejs IDebugApplicationNode100](../../winscript/reference/idebugapplicationnode100-interface.md) jest implementowany przez program PDM 10.0 lub nowszym. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="syntax"></a>Składnia  
   

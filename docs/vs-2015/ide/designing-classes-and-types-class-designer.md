@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 032e5a33c7cf70d48913739459c619b5d0302dea
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ddd4ae3ed3a1a2a239c0efac0f25d04f589f8fa5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437537"
 ---
 # <a name="designing-classes-and-types-class-designer"></a>Projektowanie klas i typów (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,10 +25,10 @@ ms.locfileid: "54795515"
 Za pomocą **projektanta klas**, nie mogą tylko wizualizacji, klas i typów, ale je także projektowania. W następujących tematach opisano, jak to zrobić.  
   
 > [!NOTE]
->  Podczas pracy za pomocą projektanta klas, należy sprawdzić kod, który emituje przed wykonuje go, aby sprawdzić, czy kod jest odpowiedni dla kontekstu zabezpieczeń.  
+> Podczas pracy za pomocą projektanta klas, należy sprawdzić kod, który emituje przed wykonuje go, aby sprawdzić, czy kod jest odpowiedni dla kontekstu zabezpieczeń.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Instrukcje: Tworzenie typów za pomocą projektanta klas](../ide/how-to-create-types-by-using-class-designer.md)  
+ [Instrukcje: Tworzenie typów za pomocą Projektanta klas](../ide/how-to-create-types-by-using-class-designer.md)  
   
  W tym artykule opisano sposób używania diagramu klas do utworzenia typu.  
   
@@ -40,7 +40,7 @@ Za pomocą **projektanta klas**, nie mogą tylko wizualizacji, klas i typów, al
   
  W tym artykule opisano sposób definiowania skojarzeń na diagramie klasy.  
   
- [Instrukcje: Wizualizacja skojarzenia kolekcji (Projektant klas)](../ide/how-to-visualize-a-collection-association-class-designer.md)  
+ [Instrukcje: Wizualizacja skojarzeń kolekcji (Projektant klas)](../ide/how-to-visualize-a-collection-association-class-designer.md)  
   
  Wyjaśnia, jak zdefiniować skojarzenia kolekcji w Projektancie klas.  
   

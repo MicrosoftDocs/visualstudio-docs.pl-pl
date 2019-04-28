@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 673b6bda444fd097b2ce4f4eee87c9f558e64c08
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a5aa6edaaba54f9c08921a594b90ca1a7352e4da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433435"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Obliczone i niestandardowe właściwości przechowywania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą by
      Zostanie otwarty Dsl\GeneratedCode\DomainClasses.CS lub DomainRelationships.cs. Powyżej wywołanie metody wyróżnione komentarz wyświetli monit o podanie implementację Get*YourProperty*().  
   
     > [!NOTE]
-    >  Ten plik jest generowany na podstawie DslDefinition.dsl. Jeśli możesz edytować ten plik, zmiany zostaną utracone przy następnym kliknięciu **Przekształć wszystkie szablony**. Zamiast tego dodać wymaganej metody w oddzielnym pliku.  
+    > Ten plik jest generowany na podstawie DslDefinition.dsl. Jeśli możesz edytować ten plik, zmiany zostaną utracone przy następnym kliknięciu **Przekształć wszystkie szablony**. Zamiast tego dodać wymaganej metody w oddzielnym pliku.  
   
 6. Utwórz lub Otwórz plik klasy w oddzielnym folderze, na przykład atrybut CustomCode\\*YourDomainClass*. cs.  
   

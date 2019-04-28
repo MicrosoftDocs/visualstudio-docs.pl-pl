@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c374dc5cc616f58cb81a1191b095971561df9b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 37abc4862b12ab11239b2dd8a24b8c18acab2a51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446705"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Przewodnik: Generowanie kodu przy użyciu szablonów tekstowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Generowanie kodu można wygenerować kodu programu, która jest jednoznacznie ok
  W tym przykładowym projekcie szablon odczytuje przykładowy plik XML i generuje klasy, które odpowiadają każdy typ węzła. W kodzie odręcznej można użyć w ramach tych zajęć, przejdź do pliku XML. Aplikację można również uruchomić na innych plików, które korzystają z tych samych typów węzła. Celem przykładowy plik XML ma zawierają przykłady wszystkie typy węzłów, które mają do czynienia z aplikacji.  
   
 > [!NOTE]
->  Aplikacja [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), który jest dołączony do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], można wygenerować silnie typizowanych klas z plików XML. Szablon pokazany w tym miejscu jest dostarczany jako przykład.  
+> Aplikacja [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), który jest dołączony do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], można wygenerować silnie typizowanych klas z plików XML. Szablon pokazany w tym miejscu jest dostarczany jako przykład.  
   
  Poniżej przedstawiono przykładowy plik:  
   
@@ -142,7 +142,7 @@ namespace MyProject
 2. W **Dodaj nowy element** wybierz okno dialogowe **szablon tekstowy** z **szablony** okienka.  
   
    > [!NOTE]
-   >  Upewnij się, że dodano szablonu tekstu, a nie wstępnie przetworzony szablon tekstu.  
+   > Upewnij się, że dodano szablonu tekstu, a nie wstępnie przetworzony szablon tekstu.  
   
 3. W pliku, w dyrektywie szablonu, należy zmienić `hostspecific` atrybutu `true`.  
   

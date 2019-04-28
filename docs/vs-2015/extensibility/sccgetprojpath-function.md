@@ -12,12 +12,12 @@ ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4c7a4af5928f1d7b803e882c1826e451982389bc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 585402efbda165844f449e2477d5ca69722613a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446875"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath, funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ SCCRTN SccGetProjPath (
  Aby uzyskać `lpUser`, IDE może przekazać nazwę użytkownika lub jego może po prostu przekazać wskaźnik do pustego ciągu. W przypadku nazwy użytkownika, wtyczka do kontroli źródła należy używać go jako domyślny. Jednak jeśli przekazano żadnej nazwy lub jeśli logowanie nie powiodło się o podanej nazwie, wtyczka powinien zostać wyświetlony monit użytkownika o nazwę logowania i przekaż nazwę z powrotem w `lpUser` po odebraniu prawidłową nazwą logowania. Ponieważ wtyczki mogą zmienić ten ciąg, IDE będzie zawsze Przydziel bufor o rozmiarze (`SCC_USER_LEN`+ 1).  
   
 > [!NOTE]
->  Pierwszą akcją, który wykonuje IDE może być wywołania `SccOpenProject` funkcji lub `SccGetProjPath` funkcji. W związku z nich mają identyczne `lpUser` parametr, który umożliwia wtyczka do kontroli źródła do logowania użytkownika w dowolnym momencie. Nawet jeśli powrót z funkcji wskazuje błąd, wtyczkę należy podać ten ciąg z prawidłową nazwą logowania.  
+> Pierwszą akcją, który wykonuje IDE może być wywołania `SccOpenProject` funkcji lub `SccGetProjPath` funkcji. W związku z nich mają identyczne `lpUser` parametr, który umożliwia wtyczka do kontroli źródła do logowania użytkownika w dowolnym momencie. Nawet jeśli powrót z funkcji wskazuje błąd, wtyczkę należy podać ten ciąg z prawidłową nazwą logowania.  
   
  `lpLocalPath` jest to katalog, w którym użytkownik przechowuje projektu. Może być ciągiem pustym. Jeśli katalog nie jest obecnie zdefiniowany (jak w przypadku użytkowników, próby pobrania projektu z systemu kontroli źródła) i `bAllowChangePath` jest `TRUE`, wtyczka do kontroli źródła może monitować użytkownika o wprowadzenie danych lub użyj innej metody do umieszczenia jej ciąg do własnej `lpLocalPath`. Jeśli `bAllowChangePath` jest `FALSE`, wtyczka nie należy zmieniać ciągu, ponieważ użytkownik pracuje się już w określonym katalogu.  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aaca69818524df134aa9ad7514ee5e0227b6a812
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1dd1598d73cdbd77bc6fe0cb35e639c0fb484b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443422"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Przewodnik: Wcześniejsze testowanie obsługi przy użyciu użycia funkcji generowania na podstawie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Okno dialogowe Nowy projekt
 2. Znajdź w deklaracji klasy `UnitTest1` i zmień jej nazwę na `AutomobileTest`. W języku C# Jeśli `UnitTest1()` konstruktora, zmień jej nazwę na `AutomobileTest()`.  
   
     > [!NOTE]
-    >  Technologia IntelliSense zawiera teraz dwa warianty dla instrukcji IntelliSense: *trybem uzupełniania* i *trybem sugestii*. Tryb sugestii w sytuacjach, w których klas i składowych są wykorzystywane przed są zdefiniowane. Gdy okno technologii IntelliSense jest otwarty, możesz nacisnąć klawisze CTRL + ALT + SPACJA, aby przełączyć między trybem uzupełniania a trybem sugestii. Zobacz [za pomocą funkcji IntelliSense](../ide/using-intellisense.md) Aby uzyskać więcej informacji. Tryb sugestii pomoże podczas wpisywania `Automobile` w następnym kroku.  
+    > Technologia IntelliSense zawiera teraz dwa warianty dla instrukcji IntelliSense: *trybem uzupełniania* i *trybem sugestii*. Tryb sugestii w sytuacjach, w których klas i składowych są wykorzystywane przed są zdefiniowane. Gdy okno technologii IntelliSense jest otwarty, możesz nacisnąć klawisze CTRL + ALT + SPACJA, aby przełączyć między trybem uzupełniania a trybem sugestii. Zobacz [za pomocą funkcji IntelliSense](../ide/using-intellisense.md) Aby uzyskać więcej informacji. Tryb sugestii pomoże podczas wpisywania `Automobile` w następnym kroku.  
   
 3. Znajdź `TestMethod1()` metody i zmień jej nazwę na `DefaultAutomobileIsInitializedCorrectly()`. Tej metody, Utwórz nowe wystąpienie klasy o nazwie `Automobile`, jak pokazano na poniższych ilustracjach. Faliste podkreślenie pojawia się, co oznacza błąd w czasie kompilacji i tagów inteligentnych pojawia się pod nazwą typu. Dokładna lokalizacja tagu inteligentnego różni się w zależności od tego, czy używasz [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] lub [!INCLUDE[csprcs](../includes/csprcs-md.md)].  
   

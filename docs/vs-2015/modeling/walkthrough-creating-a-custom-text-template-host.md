@@ -12,12 +12,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 28f8cd324079a50a20312022ea6daaba843f8564
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1aaff1fa5d31fe22c8a0b079498ffc07a11b9a7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446746"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Przewodnik: Tworzenie niestandardowego hosta szablonu tekstu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ A *szablon tekstowy*<em>hosta</em> zapewnia środowisko, które umożliwia *apar
  Jeśli chcesz użyć można napisać niestandardowego hosta *przekształcenia szablonu tekstu* spoza [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lub jeśli chcesz zintegrować tę funkcjonalność z niestandardowymi narzędziami. Aby utworzyć niestandardowego hosta, należy utworzyć klasę, która dziedziczy po elemencie <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Dokumentacja poszczególnych metod, zobacz <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   
 > [!WARNING]
->  Jeśli piszesz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenie lub pakiet, należy rozważyć użycie usługi szablonów tekstowych zamiast tworzenia własnego hosta. Aby uzyskać więcej informacji, zobacz [wywoływanie transformacji tekstu w rozszerzeniu VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
+> Jeśli piszesz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenie lub pakiet, należy rozważyć użycie usługi szablonów tekstowych zamiast tworzenia własnego hosta. Aby uzyskać więcej informacji, zobacz [wywoływanie transformacji tekstu w rozszerzeniu VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
   
  Zadania przedstawione w niniejszym przewodniku to m.in.:  
   
@@ -732,7 +732,7 @@ A *szablon tekstowy*<em>hosta</em> zapewnia środowisko, które umożliwia *apar
 2. Dodaj następującą zawartość do pliku:  
   
     > [!NOTE]
-    >  Język programowania szablonu tekstu nie musi odpowiadać językowi niestandardowego hosta.  
+    > Język programowania szablonu tekstu nie musi odpowiadać językowi niestandardowego hosta.  
   
     ```csharp  
     Text Template Host Test  
@@ -785,7 +785,7 @@ A *szablon tekstowy*<em>hosta</em> zapewnia środowisko, które umożliwia *apar
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  Zamiast wpisywać adres, możesz przejść do pliku CustomHost.exe w **Eksplorator Windows** i przeciągnąć plik do okna wiersza polecenia.  
+    > Zamiast wpisywać adres, możesz przejść do pliku CustomHost.exe w **Eksplorator Windows** i przeciągnąć plik do okna wiersza polecenia.  
   
 3. Wpisz spację.  
   
@@ -796,7 +796,7 @@ A *szablon tekstowy*<em>hosta</em> zapewnia środowisko, które umożliwia *apar
      `C:\<YOUR PATH>TestTemplate.tt`  
   
     > [!NOTE]
-    >  Zamiast wpisywać adres, możesz przejść do pliku TestTemplate.tt w **Eksplorator Windows** i przeciągnąć plik do okna wiersza polecenia.  
+    > Zamiast wpisywać adres, możesz przejść do pliku TestTemplate.tt w **Eksplorator Windows** i przeciągnąć plik do okna wiersza polecenia.  
   
      Aplikacja niestandardowego hosta uruchamia się i wykonuje proces przekształcania szablonu tekstu.  
   

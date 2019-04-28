@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 911d80c0116664d93eebe431719a3e834eea6d8e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: 3b296ae403658f4d39558c28e11a425adee7650a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431122"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Interfejsy API profilera Visual Studio (Native)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54774831"
 Visual Studio Profiler API umożliwiają programistycznie sterować ilości zebranych danych i wstaw znaczniki zarówno sygnatura czasowa, jak i profilu podczas profilowania. Aby korzystać z natywnych interfejsów API, możesz uwzględnić plik nagłówka VSPerf.h i dodać VSPerf.lib w projekcie.  
   
 > [!NOTE]
->  Domyślnie VSPerf.h i VSPerf.lib znajdują się w \<dysku >: katalog Tools\PerfSDK narzędzia \Program Files\Microsoft 9\Team programu Visual Studio.  
+> Domyślnie VSPerf.h i VSPerf.lib znajdują się w \<dysku >: katalog Tools\PerfSDK narzędzia \Program Files\Microsoft 9\Team programu Visual Studio.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)  

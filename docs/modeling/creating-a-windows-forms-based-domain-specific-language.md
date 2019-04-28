@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5e5d1fec376a1f35a8b2214a7bde4834cc6bd9d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eb5f395952b17b6937dc264f8bec8021e6627d45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438179"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Tworzenie języka specyficznego dla domeny opartego na formularzach systemu Windows
 Windows Forms służy do wyświetlania stanu modelu języka specyficznego dla domeny (DSL), zamiast DSL diagram. Ten temat przeprowadzi Cię przez powiązanie formularza Windows DSL za pomocą Visual Studio Visualization i Modeling SDK.
@@ -80,7 +80,7 @@ Windows Forms służy do wyświetlania stanu modelu języka specyficznego dla do
      Wypróbuj dodatkowe właściwości o nazwie `Size` typu **Int32**, i `IsOrganic` typu **logiczna**.
 
     > [!NOTE]
-    >  Jeśli usuniesz klasy domeny katalogu głównego, a następnie utwórz nowy katalog główny, trzeba będzie zresetować właściwość klasy głównej edytora. W **Eksplorator DSL**, wybierz opcję **edytora**. Następnie w oknie właściwości ustaw **klasę główną** do `Farm`.
+    > Jeśli usuniesz klasy domeny katalogu głównego, a następnie utwórz nowy katalog główny, trzeba będzie zresetować właściwość klasy głównej edytora. W **Eksplorator DSL**, wybierz opcję **edytora**. Następnie w oknie właściwości ustaw **klasę główną** do `Farm`.
 
 4. Użyj **klasy domeny o nazwie** narzędzia do tworzenia następujących klas domeny:
 
@@ -105,7 +105,7 @@ Windows Forms służy do wyświetlania stanu modelu języka specyficznego dla do
 10. Tworzenie **Dsl** projektu.
 
     > [!NOTE]
-    >  Na tym etapie inne projekty nie zostanie skompilowany bez błędów. Jednakże chcemy kompilacji projektu Dsl, tak aby jej zestaw jest dostępne w Kreatorze źródła danych.
+    > Na tym etapie inne projekty nie zostanie skompilowany bez błędów. Jednakże chcemy kompilacji projektu Dsl, tak aby jej zestaw jest dostępne w Kreatorze źródła danych.
 
 ## <a name="updating-the-ui-project"></a>Aktualizowanie projektu interfejsu użytkownika
  Teraz można utworzyć nowej kontrolki użytkownika, który spowoduje wyświetlenie informacji, która jest przechowywana w modelu DSL. Najprostszym sposobem łączenia kontrolki użytkownika w modelu jest za pomocą powiązania danych. Typ adaptera o nazwie powiązania danych **ModelingBindingSource** specjalnie do łączenia z językami DSL VMSDK innych interfejsów.
@@ -149,7 +149,7 @@ Windows Forms służy do wyświetlania stanu modelu języka specyficznego dla do
 6. Korzystanie z przybornika, Utwórz dwa wystąpienia **DataGridView**i nazwij je `AnimalGridView` i `FieldGridView`.
 
    > [!NOTE]
-   >  Etap alternatywne jest przeciągnij zwierząt i pól elementów z okna źródeł danych w formancie. Ta akcja tworzy automatycznie siatek danych i powiązania między widokiem siatki i źródła danych. Jednak tego powiązania nie działa prawidłowo dla języków DSL. W związku z tym zaleca się tworzenie siatek danych i powiązania ręcznie.
+   > Etap alternatywne jest przeciągnij zwierząt i pól elementów z okna źródeł danych w formancie. Ta akcja tworzy automatycznie siatek danych i powiązania między widokiem siatki i źródła danych. Jednak tego powiązania nie działa prawidłowo dla języków DSL. W związku z tym zaleca się tworzenie siatek danych i powiązania ręcznie.
 
 7. Jeśli przybornik nie zawiera **ModelingBindingSource** narzędzia, dodaj ją. W menu skrótów **danych** kartę, wybrać **wybierz elementy**. W **wybierz elementy przybornika** okno dialogowe, wybierz opcję **ModelingBindingSource** z **.NET Framework kartę**.
 
@@ -221,7 +221,7 @@ Windows Forms służy do wyświetlania stanu modelu języka specyficznego dla do
      `Goat1` pojawia się w **zwierząt** widoku.
 
     > [!WARNING]
-    >  Musisz użyć menu skrótów na **farmy** węzła nie **zwierząt** węzła.
+    > Musisz użyć menu skrótów na **farmy** węzła nie **zwierząt** węzła.
 
 4. Wybierz **farmy** węzła głównego i wyświetlić jego właściwości.
 

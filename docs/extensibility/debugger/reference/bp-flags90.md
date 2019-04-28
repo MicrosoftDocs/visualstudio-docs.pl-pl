@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ef0844e4bf2c10128ee9c1a62669711e36eb401f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62889058"
 ---
 # <a name="bpflags90"></a>BP_FLAGS90
 Wylicza prawidłowe wartości dla flagi opcjonalne. Flagi opcjonalne może służyć do określania dodatkowe informacje, gdy ustawisz punkt przerwania. To wyliczenie rozszerza [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) wyliczenia.

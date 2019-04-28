@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4b5fd1be29a5c22bcae371faaf7be8c6b70c4e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c30289034c50cc6d754f54ccec3fafcd0f964d15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437404"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Reguły propagujące zmiany w modelu
 Można utworzyć regułę magazynu propagowanie zmian jeden element do innego w wizualizacji i modelowania SDK (VMSDK). W przypadku zmiany dowolnego elementu w Store, zasady są zaplanowane do wykonania, zwykle w przypadku, gdy najbardziej zewnętrznej transakcja została zatwierdzona. Istnieją różne typy reguł dla różnych rodzajów zdarzeń, takich jak elementu Dodawanie lub usuwanie go. Zasady można dołączyć do określonych typów elementów, kształty i diagramy. Wiele wbudowanych funkcji są definiowane przez reguły: na przykład zasady upewnij się, że diagram jest aktualizowana po zmianie modelu. Języka specyficznego dla domeny można dostosować, dodając własnych reguł.
@@ -68,7 +68,7 @@ namespace ExampleNamespace
 ```
 
 > [!NOTE]
->  Kod regułę, należy zmienić stan tylko elementy wewnątrz Store; oznacza to regułę, należy zmienić tylko elementy modelu, relacje, kształty, łączniki, diagramy lub ich właściwości. Propagowanie zmian do zasobów spoza sklepu, należy zdefiniować Store zdarzenia. Aby uzyskać więcej informacji, zobacz [obsługi propagowanie zmian poza Model zdarzeń](../modeling/event-handlers-propagate-changes-outside-the-model.md)
+> Kod regułę, należy zmienić stan tylko elementy wewnątrz Store; oznacza to regułę, należy zmienić tylko elementy modelu, relacje, kształty, łączniki, diagramy lub ich właściwości. Propagowanie zmian do zasobów spoza sklepu, należy zdefiniować Store zdarzenia. Aby uzyskać więcej informacji, zobacz [obsługi propagowanie zmian poza Model zdarzeń](../modeling/event-handlers-propagate-changes-outside-the-model.md)
 
 ### <a name="to-define-a-rule"></a>Aby zdefiniować regułę
 

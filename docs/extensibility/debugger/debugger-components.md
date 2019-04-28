@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 04865145afc5df7edc21611511878263021d4e37
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62890007"
 ---
 # <a name="debugger-components"></a>Składniki debugera
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugera jest zaimplementowany jako pakietu VSPackage i zarządza cały debugowanie. Sesja debugowania obejmuje następujące elementy:

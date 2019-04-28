@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49d253b63b682d81903003d6bdd148922989f274
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d804acd19d585bf9517ce9b8d771290a1f1c214a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435453"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Instrukcje: Tworzenie polecenia SharePoint
   Jeśli chcesz użyć modelu obiektów serwera w rozszerzenia narzędzi programu SharePoint, należy utworzyć niestandardowy *polecenia SharePoint* wywołać interfejs API. Polecenie programu SharePoint należy zdefiniować w zestawie, który można wywoływać bezpośrednio do modelu obiektów serwera.
@@ -33,7 +33,7 @@ ms.locfileid: "60082324"
     - Jest przeznaczony dla AnyCPU lub x64 platformy. Domyślnie platforma docelowa projekty bibliotek klas to AnyCPU. Aby uzyskać więcej informacji o wybieraniu platformę docelową, zobacz [jak: Konfigurowanie projektów pod kątem platform docelowych](../ide/how-to-configure-projects-to-target-platforms.md).
 
     > [!NOTE]
-    >  Nie można zaimplementować polecenia programu SharePoint w tym samym projekcie, który definiuje rozszerzenia narzędzi programu SharePoint, ponieważ poleceń programu SharePoint docelowych .NET Framework 3.5 i programu SharePoint narzędzia rozszerzeń element docelowy [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Należy zdefiniować żadnych poleceń programu SharePoint, które są używane przez rozszerzenie w osobnym projekcie. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+    > Nie można zaimplementować polecenia programu SharePoint w tym samym projekcie, który definiuje rozszerzenia narzędzi programu SharePoint, ponieważ poleceń programu SharePoint docelowych .NET Framework 3.5 i programu SharePoint narzędzia rozszerzeń element docelowy [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Należy zdefiniować żadnych poleceń programu SharePoint, które są używane przez rozszerzenie w osobnym projekcie. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 2. Dodaj odwołania do następujących zestawów:
 

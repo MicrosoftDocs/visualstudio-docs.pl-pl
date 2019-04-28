@@ -13,18 +13,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc6e892c00a2d86e784857f08772550897e1ec4e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: dccd9210908922951c20378868c33b3389cbed4f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58157189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432250"
 ---
 # <a name="idebugstackframesnifferex-interface"></a>Interfejs IDebugStackFrameSnifferEx
 Umożliwia wyliczenie ramek stosu logiczne, znane przez składnik. Aparaty skryptów zwykle implementują ten interfejs. Proces debugowania manager wykorzystuje to interfejs, aby znaleźć wszystkie ramki stosu skojarzone z danym wątku.  
   
 > [!NOTE]
->  Ten interfejs jest wywoływana z wewnątrz wątku zainteresowania. Implementacja interfejsu należy zidentyfikować bieżącego wątku i zwraca moduł wyliczający odpowiednie.  
+> Ten interfejs jest wywoływana z wewnątrz wątku zainteresowania. Implementacja interfejsu należy zidentyfikować bieżącego wątku i zwraca moduł wyliczający odpowiednie.  
   
  Oprócz metod odziedziczone `IDebugStackFrameSniffer`, `IDebugStackFrameSnifferEx` interfejsu udostępnia następujące metody.  
   

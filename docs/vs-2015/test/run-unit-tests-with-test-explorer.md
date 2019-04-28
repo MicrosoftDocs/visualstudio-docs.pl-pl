@@ -10,12 +10,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bfadcb962e63a38f4f8190c2dd9c02f4e2ac4643
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9541180ba8740cdc12a038f81c4ef74d47fcc1aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446234"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ Eksplorator testów umożliwia uruchamianie testów jednostkowych z Visual Studi
 ### <a name="BKMK_Run_tests_after_every_build"></a> Uruchamianie testów po każdej kompilacji  
   
 > [!WARNING]
->  Uruchamianie testów jednostek po każdej kompilacji jest obsługiwane w programie Visual Studio Enterprise.  
+> Uruchamianie testów jednostek po każdej kompilacji jest obsługiwane w programie Visual Studio Enterprise.  
   
 |||  
 |-|-|  
@@ -201,7 +201,7 @@ TEST_METHOD(Method1)
    ![Filtruje testy w Eksploratorze testów](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
   
 > [!NOTE]
->  Wyszukiwanie jest rozróżniana wielkość liter i jest zgodny z ciągiem określonym w dowolnej części wartości kryterium.  
+> Wyszukiwanie jest rozróżniana wielkość liter i jest zgodny z ciągiem określonym w dowolnej części wartości kryterium.  
   
 |Kwalifikator|Opis|  
 |---------------|-----------------|  
@@ -253,7 +253,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 1. W edytorze programu Visual Studio Ustaw punkt przerwania w metodach testów, które chcesz debugować.  
   
    > [!NOTE]
-   >  Ponieważ metody testowe można uruchomić w dowolnej kolejności, ustaw punkty przerwania w wszystkich metodach testowych, które chcesz debugować.  
+   > Ponieważ metody testowe można uruchomić w dowolnej kolejności, ustaw punkty przerwania w wszystkich metodach testowych, które chcesz debugować.  
   
 2. W Eksploratorze testów Wybierz metody badania, a następnie wybierz **Debuguj wybrane testy** w menu kontekstowym.  
   
@@ -267,7 +267,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 ### <a name="BKMK_Analyzeunit_test_code_coverage"></a> Analizuj pokrycie kodu testu jednostkowego  
   
 > [!NOTE]
->  Pokrycie kodu testu jednostkowego jest dostępna tylko w programie Visual Studio Enterprise.  
+> Pokrycie kodu testu jednostkowego jest dostępna tylko w programie Visual Studio Enterprise.  
   
  Można określić liczbę kodów produktu, który jest aktualnie testowany przez nasze testy jednostkowe za pomocą narzędzia pokrycia kodu programu Visual Studio. Można uruchomić pokrycie kodów w wybranych testach albo we wszystkich testach w rozwiązaniu.  
   

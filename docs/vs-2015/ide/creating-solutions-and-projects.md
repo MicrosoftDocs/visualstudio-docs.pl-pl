@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d91263dc0f66c048e308505e461c8b1536b77a06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7fd6d8c63d8b0b56af20ac1211802524336d06bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437581"
 ---
 # <a name="creating-solutions-and-projects"></a>Tworzenie rozwiązań i projektów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60109819"
 Projekty są kontenery logiczne dla wszystko, co jest potrzebne do budowania aplikacji. Po utworzeniu projektu, wybierając **pliku &#124; New &#124; projektu** z menu głównego [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tworzy rozwiązanie dla niej. Następnie można dodać więcej nowych lub istniejących projektów w rozwiązaniu, jeśli to konieczne. Możesz tworzyć projekty z istniejących plików kodu i utworzeniem projektów tymczasowych (tylko platforma .NET), zostaną usunięte po wykonaniu tych czynności z nimi.  
   
 > [!NOTE]
->  Opisy w tym temacie są oparte na wersji programu Visual Studio Community. Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w tym miejscu, w zależności od ustawień lub wersji programu Visual Studio. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Opisy w tym temacie są oparte na wersji programu Visual Studio Community. Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w tym miejscu, w zależności od ustawień lub wersji programu Visual Studio. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-project-from-an-installed-project-template"></a>Tworzenie projektu z szablonem projektu zainstalowane  
  **Plik &#124; New &#124; projektu** z menu głównego, aby wyświetlić okno dialogowe Nowy projekt. W okienku po lewej stronie w obszarze **Intalled &#124; szablony** Wybrany język programowania i platform lub technologii, a następnie wybierz spośród dostępnych szablonów w środkowym okienku.  
@@ -42,7 +42,7 @@ Projekty są kontenery logiczne dla wszystko, co jest potrzebne do budowania apl
  W przypadku kolekcji plików źródłowych nie będzie można łatwo utworzyć projekt, który je zawiera. Wybierz **pliku &#124; New &#124;projekt z istniejącego kodu** można uruchomić **Utwórz projekt z istniejących Kreatora plików kodu** i postępuj zgodnie z monitami.  
   
 > [!TIP]
->  Ta opcja jest najlepsza dla stosunkowo prostych kolekcji plików.  
+> Ta opcja jest najlepsza dla stosunkowo prostych kolekcji plików.  
   
 ## <a name="create-a-temporary-project-c-and-visual-basic"></a>Utwórz projekt tymczasowy (C# i Visual Basic)  
  Praca z projektów tymczasowych, można tworzyć i eksperymentować z projektem .NET bez określania lokalizacji na dysku. Podczas tworzenia projektu są po prostu zaznacz typ projektu i szablon i podaj nazwę w **nowy projekt** okno dialogowe. W dowolnym momencie podczas pracy z projektem tymczasowej, można go zapisać lub odrzucić je.  
@@ -83,7 +83,7 @@ Projekty są kontenery logiczne dla wszystko, co jest potrzebne do budowania apl
  Rozwiązanie można usunąć trwale, ale nie przy użyciu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Zanim usuniesz to rozwiązanie, Przenieś wszystkie projekty, które możesz chcieć użyć ponownie w innym rozwiązaniem. Następnie użyj Eksploratora plików, aby usunąć katalog zawierający pliki rozwiązania .sln i .suo.  
   
 > [!NOTE]
->  Plik .suo jest ukryty plik, który nie jest wyświetlany w obszarze domyślne ustawienia Eksploratora plików.  
+> Plik .suo jest ukryty plik, który nie jest wyświetlany w obszarze domyślne ustawienia Eksploratora plików.  
   
 ##### <a name="to-delete-a-solution"></a>Aby usunąć rozwiązanie  
   

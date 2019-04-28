@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ab1bb6d4bde8f6e75fdaeb4416372cdc236318
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: aebe1faf31d53fb44cf5efddbee154018e42a365
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847764"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Instrukcje: Uruchamianie procesu roboczego w ramach konta użytkownika
 Aby skonfigurować komputer, dzięki czemu możesz uruchomić [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] proces roboczy (aspnet_wp.exe lub w3wp.exe) w ramach konta użytkownika, wykonaj następujące kroki.
@@ -45,21 +45,22 @@ Aby skonfigurować komputer, dzięki czemu możesz uruchomić [!INCLUDE[vstecasp
 
 4. Na [!INCLUDE[winxpsvr](../debugger/includes/winxpsvr_md.md)], usług IIS 6.0 jest instalowany domyślnie. Odpowiedni proces roboczy jest w3wp.exe.To uruchamiania w trybie aspnet_wp.exe jako proces roboczy usług IIS 6.0, należy wykonać następujące czynności:
 
-   1.  Kliknij przycisk **Start**, kliknij przycisk **narzędzia administracyjne** , a następnie wybierz **Internetowe usługi informacyjne**.
+   1. Kliknij przycisk **Start**, kliknij przycisk **narzędzia administracyjne** , a następnie wybierz **Internetowe usługi informacyjne**.
 
-   2.  W **Internetowe usługi informacyjne** okno dialogowe, kliknij prawym przyciskiem myszy **witryn sieci Web** folder i wybierz polecenie **właściwości**.
+   2. W **Internetowe usługi informacyjne** okno dialogowe, kliknij prawym przyciskiem myszy **witryn sieci Web** folder i wybierz polecenie **właściwości**.
 
-   3.  W **właściwości witryn sieci Web** okna dialogowego wybierz **usługi**.
+   3. W **właściwości witryn sieci Web** okna dialogowego wybierz **usługi**.
 
-   4.  Wybierz **Uruchom usługę WWW w trybie izolacji IIS6.0**.
+   4. Wybierz **Uruchom usługę WWW w trybie izolacji IIS6.0**.
 
-   5.  Zamknij **właściwości** okno dialogowe i **Menedżera internetowych usług**.
+   5. Zamknij **właściwości** okno dialogowe i **Menedżera internetowych usług**.
 
 5. Otwórz wiersz polecenia programu Windows i zresetuj serwera, uruchamiając:
 
    ```cmd
    iisreset
    ```
+
    — lub —
 
    ```cmd

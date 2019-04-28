@@ -11,18 +11,18 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5b2152409c22d7a6e91a83bc85c6d6608386f3b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: fd9fe0b7177c95aec675faaaa85896c52b375084
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58152606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440555"
 ---
 # <a name="idebugapplicationthread110asynchronouscallintothread"></a>IDebugApplicationThread110::AsynchronousCallIntoThread
 Sprawia, że wywołanie asynchroniczne w wątku głównym.  
   
 > [!IMPORTANT]
->  [Interfejs IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md) jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
+> [Interfejs IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md) jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="syntax"></a>Składnia  
   

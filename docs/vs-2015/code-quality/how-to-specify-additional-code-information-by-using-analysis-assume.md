@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 96f4d628d32aec9a0f7eb2d091a017edfba3d8ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e130f2248ae6715b3248226c780bc162e1ff01ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426647"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Instrukcje: Określanie dodatkowych informacji o kodzie za pomocą funkcji __analysis_assume
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Możesz podać wskazówek, aby narzędzie do analizy kodu dla kodu C/C++, który
  Narzędzie do analizy kodu przyjęto założenie, że warunek, reprezentowane przez wyrażenie jest prawdziwe w punkt, gdzie funkcja pojawia się i pozostaje prawdziwy, do momentu wyrażenia zostanie zmieniona, na przykład przez przypisanie do zmiennej.  
   
 > [!NOTE]
->  `__analysis_assume` nie ma wpływu na optymalizacji kodu. Poza narzędzia analizy kodu `__analysis_assume` jest zdefiniowany jako pusta.  
+> `__analysis_assume` nie ma wpływu na optymalizacji kodu. Poza narzędzia analizy kodu `__analysis_assume` jest zdefiniowany jako pusta.  
   
 ## <a name="example"></a>Przykład  
  Poniższy kod używa `__analysis_assume` aby poprawić to ostrzeżenie analizy kodu [C6388](../code-quality/c6388.md):  

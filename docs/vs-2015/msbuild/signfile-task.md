@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc65715c2e0bc1e6e36e86c1ce8e3cd1b4c81058
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 081899efb202917f1ebeac97a58dd89cf5a04f53
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444387"
 ---
 # <a name="signfile-task"></a>SignFile — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Podpisuje określonego pliku przy użyciu określonego certyfikatu.
  Należy pamiętać, że certyfikaty algorytmu SHA-256 są dozwolone tylko na maszynach mających .NET 4.5 lub nowszy.  
   
 > [!WARNING]
->  Począwszy od programu Visual Studio 2013 Update 3 to zadanie ma nowy podpisu, który pozwala na określenie wersji platformy docelowej dla pliku. Jesteś, zaleca się stosowanie nowa sygnatura wszędzie tam, gdzie to możliwe, ponieważ proces MSBuild używa algorytmu SHA-256 skróty, tylko wtedy, gdy platforma docelowa jest .NET 4.5 lub nowszej. Jeśli platformę docelową jest program .NET 4.0 lub poniżej, nie można używać skrótu SHA-256.  
+> Począwszy od programu Visual Studio 2013 Update 3 to zadanie ma nowy podpisu, który pozwala na określenie wersji platformy docelowej dla pliku. Jesteś, zaleca się stosowanie nowa sygnatura wszędzie tam, gdzie to możliwe, ponieważ proces MSBuild używa algorytmu SHA-256 skróty, tylko wtedy, gdy platforma docelowa jest .NET 4.5 lub nowszej. Jeśli platformę docelową jest program .NET 4.0 lub poniżej, nie można używać skrótu SHA-256.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
@@ -70,7 +70,7 @@ Podpisuje określonego pliku przy użyciu określonego certyfikatu.
 ```  
   
 > [!NOTE]
->  Odcisk palca certyfikatu jest Skrót SHA-1 certyfikatu. Aby uzyskać więcej informacji, zobacz [uzyskać Skrót SHA-1 certyfikatu zaufanego głównego urzędu certyfikacji](http://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87).  
+> Odcisk palca certyfikatu jest Skrót SHA-1 certyfikatu. Aby uzyskać więcej informacji, zobacz [uzyskać Skrót SHA-1 certyfikatu zaufanego głównego urzędu certyfikacji](http://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87).  
   
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie użyto `Exec` zadania do podpisywania plików określonych w `FilesToSign` elementu kolekcji za pomocą certyfikatu określonego przez `Certificate` właściwości. Służy to do podpisywania plików Instalatora Windows podczas procesu kompilacji.  

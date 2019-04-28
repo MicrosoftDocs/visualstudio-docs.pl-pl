@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b19a301f7c170ee28d774ea0d96397dc2cfef312
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855288"
 ---
 # <a name="workflow-designer-ui-help"></a>Pomoc interfejsu użytkownika Projektanta przepływu pracy
 Ta sekcja zawiera tematy pomocy kontekstowej [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Podczas pracy w [!INCLUDE[vs2010](../includes/vs2010-md.md)], są dostępne następujące tematy interfejsu użytkownika, naciskając klawisz **F1** podczas [!INCLUDE[wfd2](../includes/wfd2-md.md)] jest otwarte okno dialogowe.  

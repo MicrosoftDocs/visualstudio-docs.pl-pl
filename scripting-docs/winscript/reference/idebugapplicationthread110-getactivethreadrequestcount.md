@@ -13,18 +13,18 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9bda0cc59560d90ebc0a382d858c881e7372c15
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3df2f0c44e42cf9e2c2aa846db4b88821fd73996
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58145073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440566"
 ---
 # <a name="idebugapplicationthread110getactivethreadrequestcount"></a>IDebugApplicationThread110::GetActiveThreadRequestCount
 Zwraca liczbę żądań wątku z wątku menedżerów PDM przełączanie mechanizmów, które są obecnie przetwarzane. Ta liczba jest zwykle 0 lub 1. Jednak liczba może być wyższy Jeśli jedno wywołanie wątek uruchamia przetwarzanie, ale wyzwala synchroniczne wywołanie z wątku, lub w przeciwnym razie wstrzymuje działanie wątku i zezwala na przychodzące wywołania on przetworzony ponownie (na przykład, wyzwalając [ Interfejs IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md) zdarzenie, które jest wystawiony w wątku debugera).  
   
 > [!IMPORTANT]
->  [Interfejs IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md) jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
+> [Interfejs IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md) jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="syntax"></a>Składnia  
   

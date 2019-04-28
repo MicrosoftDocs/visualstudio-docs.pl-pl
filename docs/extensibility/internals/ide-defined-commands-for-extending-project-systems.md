@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 26f5ee29a52546e7f2111189f54d64c160a94cea
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860349"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>Polecenia definiowane w środowisku IDE do rozszerzania systemów projektu
 Gdy chcesz rozszerzyć systemy projektu, można użyć poleceń i polecenia grupy udostępniane przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.

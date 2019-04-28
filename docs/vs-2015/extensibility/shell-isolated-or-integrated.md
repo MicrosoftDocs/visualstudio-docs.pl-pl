@@ -14,12 +14,12 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 17da1ff036227b50e507fd564618c4f53cf430c3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d570c181125a1f94108624e6f9b1ce23bdcca25a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447223"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (Isolated lub Integrated)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Można utworzyć własną aplikację na podstawie programu Visual Studio w trybi
  Powłoka programu Visual Studio w wersji redystrybucyjnej nie obejmuje programowania języków i funkcji, które obsługują swoich systemów odpowiednich projektu.  
   
 > [!NOTE]
->  Tryb zintegrowany programu Visual Studio shell można zainstalować razem z wszystkich wersji programu Visual Studio, z wyjątkiem wersji Express.  
+> Tryb zintegrowany programu Visual Studio shell można zainstalować razem z wszystkich wersji programu Visual Studio, z wyjątkiem wersji Express.  
   
  Aby uzyskać więcej informacji, zobacz [programu Visual Studio Shell (zintegrowany)](../extensibility/visual-studio-shell-integrated.md).  
   
@@ -47,12 +47,12 @@ Można utworzyć własną aplikację na podstawie programu Visual Studio w trybi
  Do dystrybucji własnej aplikacji zintegrowanych lub izolowane powłoki, należy dołączyć aplikację, specjalne lub odizolowane w zintegrowanym powłokę pakiet redystrybucyjny i program instalacyjny. Aby uzyskać więcej informacji na temat dystrybucją i instalacją, zobacz [dystrybucja aplikacje izolowane powłoki](../extensibility/distributing-isolated-shell-applications.md).  
   
 > [!IMPORTANT]
->  [Umowy licencyjnej użytkownika końcowego (EULA)](https://www.visualstudio.com/support/legal/mt171552) dla programu Visual Studio integrated i isolated powłoki zawiera sekcję zbierania danych (**sekcja 3. Dane**).  Opisano w nim dane użycia klienta, które mogą być zbierane przez firmę Microsoft od użytkowników albo zintegrowane lub izolowane powłoki oprogramowania, które umieszczenie w aplikacji. Aby uzyskać więcej informacji, zobacz [programu Microsoft Visual Studio zachowania poufności rodziny produktów](https://www.visualstudio.com/dn948229).  
+> [Umowy licencyjnej użytkownika końcowego (EULA)](https://www.visualstudio.com/support/legal/mt171552) dla programu Visual Studio integrated i isolated powłoki zawiera sekcję zbierania danych (**sekcja 3. Dane**).  Opisano w nim dane użycia klienta, które mogą być zbierane przez firmę Microsoft od użytkowników albo zintegrowane lub izolowane powłoki oprogramowania, które umieszczenie w aplikacji. Aby uzyskać więcej informacji, zobacz [programu Microsoft Visual Studio zachowania poufności rodziny produktów](https://www.visualstudio.com/dn948229).  
 > 
->  W przypadku zbierania danych użycia osobnych od klientów za pośrednictwem aplikacji, musisz podać odpowiednie powiadomienie użytkowników aplikacji można zebrać.  Podczas dystrybucji oprogramowania powłoki izolowanej i zintegrowanej jako część aplikacji, zgodnie z licencji programu Visual Studio Software Development Kit, musi zawierać jedną z następujących czynności:  
+> W przypadku zbierania danych użycia osobnych od klientów za pośrednictwem aplikacji, musisz podać odpowiednie powiadomienie użytkowników aplikacji można zebrać.  Podczas dystrybucji oprogramowania powłoki izolowanej i zintegrowanej jako część aplikacji, zgodnie z licencji programu Visual Studio Software Development Kit, musi zawierać jedną z następujących czynności:  
 > 
 > - Umowa licencyjna użytkownika w ramach licencji na aplikację  
->   - własne umowy licencyjnej, wymagającego klienci musieli się zgodzić na warunki, które chronią programu Visual Studio integrated lub isolated shell co najmniej taką ilość jako użytkownik końcowy postanowień licencyjnych firmy Microsoft oprogramowanie powłoki  
+> - własne umowy licencyjnej, wymagającego klienci musieli się zgodzić na warunki, które chronią programu Visual Studio integrated lub isolated shell co najmniej taką ilość jako użytkownik końcowy postanowień licencyjnych firmy Microsoft oprogramowanie powłoki  
   
 ## <a name="additional-resources"></a>Dodatkowe zasoby  
  Aby uzyskać więcej informacji na temat pakietów redystrybucyjnych zobacz [pobieranie Visual Studio Extensibility](http://go.microsoft.com/fwlink/?LinkID=119298) witryny sieci Web.  

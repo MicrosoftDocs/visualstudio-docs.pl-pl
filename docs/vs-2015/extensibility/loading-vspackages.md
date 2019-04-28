@@ -11,12 +11,12 @@ ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6c9de9c90840c01b37b99d813fbf23b7c2be3eea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e20caff476e116ad59430692719bdbbe22c4914c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439779"
 ---
 # <a name="loading-vspackages"></a>Ładowanie pakietów VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60066575"
 Pakietów VSPackage są ładowane do programu Visual Studio, tylko wtedy, gdy ich funkcjonalność jest wymagana. Na przykład pakietu VSPackage jest ładowany, gdy program Visual Studio używa w fabryce projektu lub usługi, która implementuje pakietu VSPackage. Ta funkcja jest nazywana opóźnionego ładowania, która jest używana zawsze, gdy jest to możliwe zwiększyć wydajność.  
   
 > [!NOTE]
->  Program Visual Studio można określić pewne informacje pakietu VSPackage, takich jak polecenia, które oferuje pakietu VSPackage, bez załadowania pakietu VSPackage.  
+> Program Visual Studio można określić pewne informacje pakietu VSPackage, takich jak polecenia, które oferuje pakietu VSPackage, bez załadowania pakietu VSPackage.  
   
  Pakietów VSPackage można ustawić na automatyczne ładowanie w kontekście interfejsu użytkownika, na przykład, gdy rozwiązanie jest otwarte. <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> Atrybut ustawia w tym kontekście.  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca10710d87777cdaeead42015d46cc6d489c907e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9d045957dde862d0552d8eeb4885f29957e420f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441414"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opcje, edytor tekstu, C/C++, zaawansowane
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Zmieniając tych opcji, możesz zmienić zachowanie związane z technologii Inte
  Dostępu do tej strony, w **opcje** rozwiń w lewym okienku w oknie dialogowym **edytora tekstów**, rozwiń węzeł **C/C++**, a następnie wybierz **zaawansowane**.  
   
 > [!NOTE]
->  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Zobacz [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Zobacz [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="browsingnavigation"></a>Przeglądanie nawigacji  
  Nigdy nie należy wybrać te opcje, z wyjątkiem w rzadkich przypadkach, gdy rozwiązanie jest tak duża, że działanie bazy danych wykorzystuje niedopuszczalne ilość zasobów systemowych.  

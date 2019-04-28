@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8773b9f80299c1a46b6a57506d09f9f4ca32b998
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d56a36693d995687a2dddede3d60ada44c8d32bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436202"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Debugowanie lub wyłączanie kodu projektu w Projektancie XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,12 +80,12 @@ W wielu przypadkach nieobsługiwanych wyjątków w Projektancie XAML może być 
      Można przełączać się przycisk ponownie, aby ponownie włączyć kod projektu.  
   
     > [!NOTE]
-    >  Dla projektów przeznaczonych dla ARM lub X64 procesorów, Visual Studio nie można uruchomić kod projektu w projektancie, więc **Wyłącz kod projektu** przycisk jest niedostępny w projektancie.  
+    > Dla projektów przeznaczonych dla ARM lub X64 procesorów, Visual Studio nie można uruchomić kod projektu w projektancie, więc **Wyłącz kod projektu** przycisk jest niedostępny w projektancie.  
   
 - Jedną z opcji spowoduje, że projektanta aby załadować ponownie, a następnie spowoduje wyłączenie cały kod dla skojarzonego projektu.  
   
     > [!NOTE]
-    >  Wyłączanie kodu projektu może prowadzić do utraty danych czasu projektowania. Alternatywą jest, aby debugować kod uruchomiony w projektancie.  
+    > Wyłączanie kodu projektu może prowadzić do utraty danych czasu projektowania. Alternatywą jest, aby debugować kod uruchomiony w projektancie.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Projektowanie XAML w programach Visual Studio i Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md)

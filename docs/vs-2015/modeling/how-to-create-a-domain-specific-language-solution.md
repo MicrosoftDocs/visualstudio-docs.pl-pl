@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 57c843b7c556ac409a63d5e6c01e2699da59958b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9afaa8fc74ef893b3b916c66907ae5d1a3af55f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441092"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Instrukcje: Tworzenie rozwiązania języka specyficznego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Języka specyficznego dla domeny (DSL) jest tworzony przy użyciu wyspecjalizowa
        **Kreator projektanta języka specyficznego dla domeny** pojawia się.  
   
       > [!NOTE]
-      >  Najlepiej możesz wpisać nazwę powinny być prawidłowym Visual C# identyfikatorem, ponieważ może służyć do generowania kodu.  
+      > Najlepiej możesz wpisać nazwę powinny być prawidłowym Visual C# identyfikatorem, ponieważ może służyć do generowania kodu.  
   
       ![Tworzenie okna dialogowego DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
@@ -76,7 +76,7 @@ Języka specyficznego dla domeny (DSL) jest tworzony przy użyciu wyspecjalizowa
     Kreator utworzy rozwiązanie, które ma dwa projekty, które noszą nazwy **Dsl** i **DslPackage**.  
   
    > [!NOTE]
-   >  Jeśli zobaczysz komunikat z ostrzeżeniem, nie można uruchomić szablony tekstowe ze źródeł niezaufanych, kliknij przycisk **OK**. Można ustawić ten komunikat, aby nie pojawiają się ponownie.  
+   > Jeśli zobaczysz komunikat z ostrzeżeniem, nie można uruchomić szablony tekstowe ze źródeł niezaufanych, kliknij przycisk **OK**. Można ustawić ten komunikat, aby nie pojawiają się ponownie.  
   
 ## <a name="settings"></a> Na stronach kreatora projektanta DSL  
  Możesz pozostawić kilka pól, bez zmian wartości domyślne. Jednak należy się upewnić, czy ustawić pola rozszerzenie pliku.  

@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70fe24a642ef1bb5dc872f2b4e48438a26aaea07
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 80233f0786018bf1b4b18dbfa990a143d298f559
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439510"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Powiązywanie kontrolek WPF z zestawem danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -175,7 +175,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera formanty powiązane 
 4. Kliknij menu rozwijane **thumbnailphoto usługa** a następnie wybierz węzeł **obraz**.  
   
     > [!NOTE]
-    >  Domyślnie elementów w **źródeł danych** okna, które reprezentują obrazy mają ich domyślny formant równa **Brak**. Jest to spowodowane obrazy są przechowywane jako tablice bajtów w bazach danych i tablice bajtów może zawierać wszystko, od prostej tablicy bajtów do pliku wykonywalnego dużych aplikacji.  
+    > Domyślnie elementów w **źródeł danych** okna, które reprezentują obrazy mają ich domyślny formant równa **Brak**. Jest to spowodowane obrazy są przechowywane jako tablice bajtów w bazach danych i tablice bajtów może zawierać wszystko, od prostej tablicy bajtów do pliku wykonywalnego dużych aplikacji.  
   
 5. Z **źródeł danych** okna, przeciągnij **produktu** węzeł, aby wiersz siatki w ramach wiersza, który zawiera przyciski.  
   
@@ -226,7 +226,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera formanty powiązane 
      [!code-vb[Data_WPFDATASET#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#4)]  
   
     > [!NOTE]
-    >  W tym przykładzie użyto `Save` metody `TableAdapter` Aby zapisać zmiany. Ta opcja jest odpowiednia w tym przewodniku, ponieważ tylko jeden danych tabeli został zmieniony. Jeśli potrzebujesz zapisać zmiany z wieloma tabelami danych, można też użyć `UpdateAll` metody `TableAdapterManager` generujący programu Visual Studio przy użyciu zestawu danych. Aby uzyskać więcej informacji, zobacz [TableAdapterManager — Przegląd](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
+    > W tym przykładzie użyto `Save` metody `TableAdapter` Aby zapisać zmiany. Ta opcja jest odpowiednia w tym przewodniku, ponieważ tylko jeden danych tabeli został zmieniony. Jeśli potrzebujesz zapisać zmiany z wieloma tabelami danych, można też użyć `UpdateAll` metody `TableAdapterManager` generujący programu Visual Studio przy użyciu zestawu danych. Aby uzyskać więcej informacji, zobacz [TableAdapterManager — Przegląd](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
   
 ## <a name="test-the-application"></a>Testowanie aplikacji  
  Skompiluj i uruchom aplikację. Sprawdź, czy można wyświetlać i aktualizować rekordy produktu.  

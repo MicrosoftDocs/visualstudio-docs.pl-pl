@@ -10,12 +10,12 @@ ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 04151a6fd3b934dd39e795cafc375974ac5a6b33
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4427931b079671a19e647860b263105ffdf52bd4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435540"
 ---
 # <a name="creating-a-settings-category"></a>Tworzenie kategorii ustawień
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ W tym przewodniku utworzysz kategorii ustawień programu Visual Studio i używa�
      Spowoduje to utworzenie zasobów tej nazwy kategorii "Moje Category", "Moje ustawienia obiektu" i opis kategorii "OptionInteger i OptionFloat".  
   
     > [!NOTE]
-    >  Z tych trzech nazwę kategorii nie są wyświetlane w kreatorze Import i eksport ustawień.  
+    > Z tych trzech nazwę kategorii nie są wyświetlane w kreatorze Import i eksport ustawień.  
   
 3. W MyToolsOptionsPackage.cs, Dodaj `float` właściwość o nazwie `OptionFloat` do `OptionPageGrid` klasy, jak pokazano w poniższym przykładzie.  
   
@@ -77,7 +77,7 @@ W tym przewodniku utworzysz kategorii ustawień programu Visual Studio i używa�
     ```  
   
     > [!NOTE]
-    >  `OptionPageGrid` Kategorii o nazwie "My Category" teraz składa się z dwóch właściwości `OptionInteger` i `OptionFloat`.  
+    > `OptionPageGrid` Kategorii o nazwie "My Category" teraz składa się z dwóch właściwości `OptionInteger` i `OptionFloat`.  
   
 4. Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> do `MyToolsOptionsPackage` klasy i nadać mu CategoryName "Moje Category", nadaj ObjectName "Moje ustawienia" i ustawić isToolsOptionPage na wartość true. Ustaw categoryResourceID objectNameResourceID i DescriptionResourceID do odpowiedniego zasobu ciągu, który identyfikatorów utworzonych wcześniej.  
   

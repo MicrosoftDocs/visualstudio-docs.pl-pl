@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5b109fd995f54ede3aa2c8a6381cb9e6296a6970
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847513"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Instrukcje: Określanie ustawień debugera
 W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], można określić różne ustawienia dla zachowania debugera, w tym, jak zmienne są wyświetlane, czy są prezentowane niektórych ostrzeżeń, jak ustawić punktów przerwania i wpływ podziału na uruchomione programy. Określanie ustawień debugera w **opcje** okno dialogowe.

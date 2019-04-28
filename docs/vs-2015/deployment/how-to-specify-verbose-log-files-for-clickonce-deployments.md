@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e200d0918e3d346f71da6ec2184e07e7d8433174
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 78fa278952004348e035a675a1e159b2164285b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441606"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Instrukcje: Określanie plików pełnego dziennika dla wdrożeń technologii ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60069773"
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] przechowuje pliki dziennika aktywności dla wszystkich wdrożeń. Te dzienniki dokumentu szczegóły dotyczące instalowanie, inicjowanie, aktualizowania i odinstalowywania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia. Aby zwiększyć szczegóły, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] zapisu do tych plików dziennika, użyj Edytora rejestru (**regedit.exe**) można określić poziom szczegółowości.  
   
 > [!CAUTION]
->  Jeśli korzystanie z Edytora rejestru może spowodować poważne problemy, które może być konieczna ponowna instalacja systemu operacyjnego. Użyj Edytora rejestru na własne ryzyko.  
+> Jeśli korzystanie z Edytora rejestru może spowodować poważne problemy, które może być konieczna ponowna instalacja systemu operacyjnego. Użyj Edytora rejestru na własne ryzyko.  
   
  Poniższa procedura opisuje sposób określić poziom szczegółowości dla [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pliki dziennika dla bieżącego użytkownika. Aby zmniejszyć poziom szczegółowości, Usuń tę wartość rejestru.  
   

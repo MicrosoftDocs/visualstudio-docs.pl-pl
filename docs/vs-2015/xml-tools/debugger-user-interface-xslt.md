@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1af3b47b2d7c897b36556f0ebac105088cdc9b75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f2920f73560e622c4336a1eedc23e5034fa8ff91
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417435"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfejs użytkownika debugera (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ W tym temacie opisano okien debugera i oknach dialogowych. Zostało omówione ty
  Lista zadań zawiera wszelkie błędy, które występują w blokach skryptu w pliku XSLT.  
   
 > [!NOTE]
->  Debuger XSLT nie zawiera ostrzeżeń, aby nigdy nie były widoczne na liście zadań.  
+> Debuger XSLT nie zawiera ostrzeżeń, aby nigdy nie były widoczne na liście zadań.  
   
 ## <a name="breakpoints-window"></a>Okno punktów przerwania  
  Okno punktów przerwania pokazuje wszystkie punkty przerwania ustawione w bieżącym projekcie. Jeśli punkt przerwania jest dodawany, gdy okno jest w widoku, okno jest automatycznie aktualizowany, aby wyświetlić nowy punkt przerwania.  

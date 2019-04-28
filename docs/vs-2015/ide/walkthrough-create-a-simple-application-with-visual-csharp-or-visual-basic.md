@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5286f79f55f2a09122fb551911162bd609ce3bb2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b278e05ec19bc550d8c8c8c1258514cf63cd5f9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436826"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Przewodnik: Tworzenie prostej aplikacji z wizualizacją C# lub Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Wykonując polecenia tego instruktażu, zapoznasz się z wieloma narzędziami, o
  [Debugowanie i testowanie aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
   
 > [!NOTE]
->  Ten instruktaż jest oparty na programie Visual Studio Professional. Oferuje on szablon aplikacji WPF, na którym będziesz tworzył projekt z tego instruktażu. Wersja Visual Studio Express for Windows Desktop również oferuje ten szablon, ale wersje Visual Studio Express for Windows i Visual Studio Express for Web go nie mają. Aby uzyskać wprowadzające informacje o sposobie używania programu Visual Studio Express for Windows, zobacz [Centrum rozwoju aplikacji Windows Store](http://msdn.microsoft.com/windows/apps/br229519). Aby uzyskać wprowadzające informacje o sposobie używania programu Visual Studio Express for Web, zobacz [wprowadzenie do programu ASP.NET](http://www.asp.net/get-started). Ponadto, wersja programu Visual Studio i ustawienia, których używasz, określają nazwy i lokalizacje niektórych elementów interfejsu użytkownika. Zobacz [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Ten instruktaż jest oparty na programie Visual Studio Professional. Oferuje on szablon aplikacji WPF, na którym będziesz tworzył projekt z tego instruktażu. Wersja Visual Studio Express for Windows Desktop również oferuje ten szablon, ale wersje Visual Studio Express for Windows i Visual Studio Express for Web go nie mają. Aby uzyskać wprowadzające informacje o sposobie używania programu Visual Studio Express for Windows, zobacz [Centrum rozwoju aplikacji Windows Store](http://msdn.microsoft.com/windows/apps/br229519). Aby uzyskać wprowadzające informacje o sposobie używania programu Visual Studio Express for Web, zobacz [wprowadzenie do programu ASP.NET](http://www.asp.net/get-started). Ponadto, wersja programu Visual Studio i ustawienia, których używasz, określają nazwy i lokalizacje niektórych elementów interfejsu użytkownika. Zobacz [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="BKMK_ConfigureIDE"></a> Konfigurowanie IDE  
  Po uruchomieniu programu Visual Studio po raz pierwszy, Visual Studio wyświetli monit do logowania się przy użyciu konta usługi Microsoft (MSA), [Zaloguj się do programu Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx). Nie trzeba logować się i można później.  
@@ -109,7 +109,7 @@ Wykonując polecenia tego instruktażu, zapoznasz się z wieloma narzędziami, o
     **Eksplorator rozwiązań** wskazują, że nazwa pliku to teraz Greetings.xaml, i po rozwinięciu węzła MainWindow.xaml (przez umieszczenie fokus w węźle, a następnie naciskając klawisz Strzałka w prawo), możesz zobaczyć nazwę tego pliku MainWindow.xaml.vb lub MainWindow.xaml.cs to teraz Greetings.XAML.VB lub Greetings.xaml.cs. Ten plik kodu jest zagnieżdżony w węźle plik .xaml, aby pokazać, że są one ściśle powiązane ze sobą.  
   
    > [!WARNING]
-   >  Ta zmiana powoduje wystąpienie błędu. Na dalszym etapie dowiesz się, jak go debugować i naprawiać.  
+   > Ta zmiana powoduje wystąpienie błędu. Na dalszym etapie dowiesz się, jak go debugować i naprawiać.  
   
 2. W **Eksploratora rozwiązań**, otwórz Greetings.xaml w widoku Projektanta (przez naciśnięcie klawisza Enter, gdy węzeł ma fokus) i wybierz pasek tytułu okna za pomocą myszy.  
   

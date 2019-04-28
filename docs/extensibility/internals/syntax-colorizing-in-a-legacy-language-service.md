@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6c2ee578b0462ef23f0a4c2fe33f817454967bd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: ab4cd40393efcf0e3b5f037d2f0818319b60c890
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429908"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Kolorowanie składni w starszej wersji usługi językowej
 Kolorowanie składni jest funkcją, która powoduje, że różne elementy języka programowania mają być wyświetlane w pliku źródłowego w różnych kolorach i stylów. Aby obsługiwać tę funkcję, musisz podać analizator i skaner identyfikujące typów elementy leksykalne lub tokenów w pliku. Wiele języków rozróżnia słowa kluczowe, ograniczniki (na przykład nawiasów zwykłych lub klamrowych) i komentarze, kolorowanie je na różne sposoby.
@@ -26,7 +26,7 @@ Kolorowanie składni jest funkcją, która powoduje, że różne elementy język
  Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej, zobacz [rozszerzanie usług edytora i języka](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
->  Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.
+> Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.
 
 ## <a name="implementation"></a>Implementacja
  Aby zapewnić obsługę kolorowania, środowiska pakietu zarządzanego (MPF) obejmuje <xref:Microsoft.VisualStudio.Package.Colorizer> klasy, która implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interfejsu. Ta klasa korzysta z <xref:Microsoft.VisualStudio.Package.IScanner> do określenia tokenu i kolorów. Aby uzyskać więcej informacji na temat skanerów, zobacz [starszej wersji języka usługi analizator i skaner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md). <xref:Microsoft.VisualStudio.Package.Colorizer> Klasy następnie oznacza każdy znak token z informacji o kolorze i zwraca te informacje do edytora wyświetlania pliku źródłowego.
@@ -37,10 +37,10 @@ Kolorowanie składni jest funkcją, która powoduje, że różne elementy język
  Aby przekazać własne niestandardowe elementy z możliwością kolorowania, konieczne jest przesłonięcie <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> i <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> metody <xref:Microsoft.VisualStudio.Package.LanguageService> klasy. Pierwsza metoda zwraca liczbę niestandardowych elementów z możliwością kolorowania, które obsługuje usługi języka, a druga pobiera niestandardowego elementu z możliwością kolorowania według indeksu. Możesz utworzyć domyślną listę elementów z możliwością kolorowania niestandardowych. W Konstruktorze usługi języka wszystko, co należy zrobić to podać każdego elementu z możliwością kolorowania o nazwie. Program Visual Studio automatycznie obsługuje przypadek, gdy użytkownik wybierze inny zbiór elementów z możliwością kolorowania. Ta nazwa jest wyświetlana w **czcionki i kolory** strony właściwości w **opcje** okno dialogowe (dostępne w programie Visual Studio **narzędzia** menu) i określa tę nazwę, która kolor przesłaniany przez użytkownika. Opcje użytkownika są przechowywane w pamięci podręcznej w rejestrze i uzyskują nazwę koloru. **Czcionki i kolory** strony właściwości wyświetla listę wszystkich nazw kolorów w kolejności alfabetycznej, dzięki czemu można grupować kolory niestandardowe, poprzedzając każda nazwa koloru z Twoją nazwą języka; na przykład "**TestLanguage - Comment**"i"**TestLanguage — słowo kluczowe**". Lub można grupować według typu, z możliwością kolorowania elementów "**komentarz (TestLanguage)**"i"**— słowo kluczowe (TestLanguage)**". Preferowane jest grupowanie według nazwy języka.
 
 > [!CAUTION]
->  Zdecydowanie zaleca się obejmują nazwę języka w nazwie elementu z możliwością kolorowania, aby uniknąć konfliktów z już istniejącymi nazwami elementów z możliwością kolorowania.
+> Zdecydowanie zaleca się obejmują nazwę języka w nazwie elementu z możliwością kolorowania, aby uniknąć konfliktów z już istniejącymi nazwami elementów z możliwością kolorowania.
 
 > [!NOTE]
->  Jeśli zmienisz nazwę jednego z kolorów podczas projektowania należy zresetować pamięć podręczną, która Visual Studio stworzył po raz pierwszy uzyskano kolorów. Możesz to zrobić, uruchamiając **resetowania eksperymentalne Hive** polecenia z menu programu Visual Studio SDK.
+> Jeśli zmienisz nazwę jednego z kolorów podczas projektowania należy zresetować pamięć podręczną, która Visual Studio stworzył po raz pierwszy uzyskano kolorów. Możesz to zrobić, uruchamiając **resetowania eksperymentalne Hive** polecenia z menu programu Visual Studio SDK.
 
  Należy pamiętać, że nigdy nie odwołuje się pierwszy element na liście elementów z możliwością kolorowania. Program Visual Studio zawsze dostarcza domyślne kolory tekstu i atrybuty dla tego elementu. Najprostszy sposób radzenia sobie z tym jest umożliwiają określanie wartości elementu z możliwością kolorowania symbolu zastępczego, jako pierwszy element.
 

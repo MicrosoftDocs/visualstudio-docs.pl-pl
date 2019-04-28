@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd1535841a01b6e188383d74ed3b6124b4a325f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0cd59df3b6056040445ac8de79e064a939aff145
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440065"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Instrukcje: Wykluczanie plików z kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ W pliku projektu można używać symboli wieloznacznych, aby uwzględnić wszyst
     ```  
   
     > [!NOTE]
-    >  Należy określić ścieżkę dla obu atrybutów. Jeśli używasz ścieżki bezwzględnej do określenia lokalizacji plików w `Include` atrybutu, należy również użyć ścieżką bezwzględną `Exclude` atrybutu; Jeśli używasz ścieżki względnej `Include` atrybutu, należy również użyć ścieżki względnej w `Exclude`atrybutu.  
+    > Należy określić ścieżkę dla obu atrybutów. Jeśli używasz ścieżki bezwzględnej do określenia lokalizacji plików w `Include` atrybutu, należy również użyć ścieżką bezwzględną `Exclude` atrybutu; Jeśli używasz ścieżki względnej `Include` atrybutu, należy również użyć ścieżki względnej w `Exclude`atrybutu.  
   
 ## <a name="using-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Za pomocą warunków do wykluczenia pliku lub katalogu z danych wejściowych dla kompilacji  
  W przypadku elementów, które mają zostać uwzględnione na przykład, w kompilacji debugowania, ale nie kompilację wydania, można użyć `Condition` atrybutu, aby określić warunki, w którym należy dołączyć element.  
@@ -127,4 +127,4 @@ W pliku projektu można używać symboli wieloznacznych, aby uwzględnić wszyst
   
 ## <a name="see-also"></a>Zobacz też  
  [Elementy](../msbuild/msbuild-items.md)   
- [Program MSBuild](msbuild.md) [jak: Wybieranie plików do kompilacji](../msbuild/how-to-select-the-files-to-build.md)
+ [Program MSBuild](msbuild.md) [jak: wybieranie plików do kompilacji](../msbuild/how-to-select-the-files-to-build.md)

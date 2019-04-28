@@ -12,26 +12,26 @@ ms.assetid: 6c3a79e8-1ba1-4863-97c3-0216c3d9f092
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 40f5a659617d8ca83ffd6f69282349f520ea92f2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b174af9e107c13c3d8a79f00493fe5dbdd180ec6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436393"
 ---
 # <a name="getting-local-properties"></a>Pobieranie właściwości lokalnych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacji dotyczących implementowania ewaluatory wyrażeń CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykładowe ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacji dotyczących implementowania ewaluatory wyrażeń CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykładowe ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Visual Studio wywołania [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) uzyskać [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) obiekt, który zapewnia dostęp do wszystkich zmiennych lokalnych mają być wyświetlane w **lokalne** okna. Program Visual Studio następnie wywołuje [dalej](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) Aby uzyskać informacje, które ma być wyświetlany dla każdej lokalnej. W tym przykładzie klasa `CEnumPropertyInfo` implementuje `IEnumDebugPropertyInfo2` interfejsu.  
   
  Ta implementacja `IEnumDebugPropertyInfo2::Next` wykonuje następujące zadania:  
   
-1.  Usuwa z tablicy, gdzie ma być przechowywane informacje.  
+1. Usuwa z tablicy, gdzie ma być przechowywane informacje.  
   
-2.  Wywołania [dalej](../../extensibility/debugger/reference/ienumdebugfields-next.md) dla każdego lokalnego przechowywania zwracanego [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) w tablicy do zwrócenia. [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) obiektu została dostarczona podczas to `CEnumPropertyInfo` wystąpienia klasy.  
+2. Wywołania [dalej](../../extensibility/debugger/reference/ienumdebugfields-next.md) dla każdego lokalnego przechowywania zwracanego [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) w tablicy do zwrócenia. [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) obiektu została dostarczona podczas to `CEnumPropertyInfo` wystąpienia klasy.  
   
 ## <a name="managed-code"></a>Kod zarządzany  
  Ten przykład pokazuje implementację `IEnumDebugPropertyInfo2::EnumChildren` dla lokalne metody w kodzie zarządzanym.  

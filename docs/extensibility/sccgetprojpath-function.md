@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3090048482d698c1678a80f2d3066569dcc243f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: abc7ecf0bb35f61785041d03f871409bbe499854
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434597"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath function
 Ta funkcja monituje użytkownika o ścieżkę projektu, który jest ciągiem, który ma znaczenie tylko do wtyczka do kontroli źródła. Jest ona wywoływana, gdy użytkownik jest:
 
--   Tworzenie nowego projektu
+- Tworzenie nowego projektu
 
--   Dodawanie istniejącego projektu do kontroli wersji
+- Dodawanie istniejącego projektu do kontroli wersji
 
--   Próby znalezienia istniejący projekt kontroli wersji
+- Próby znalezienia istniejący projekt kontroli wersji
 
 ## <a name="syntax"></a>Składnia
 
@@ -105,7 +105,7 @@ SCCRTN SccGetProjPath (
  Aby uzyskać `lpUser`, IDE może przekazać nazwę użytkownika lub jego może po prostu przekazać wskaźnik do pustego ciągu. W przypadku nazwy użytkownika, wtyczka do kontroli źródła należy używać go jako domyślny. Jednak jeśli przekazano żadnej nazwy lub jeśli logowanie nie powiodło się o podanej nazwie, wtyczka powinien zostać wyświetlony monit użytkownika o nazwę logowania i przekaż nazwę z powrotem w `lpUser` po odebraniu prawidłową nazwą logowania. Ponieważ wtyczki mogą zmienić ten ciąg, IDE będzie zawsze Przydziel bufor o rozmiarze (`SCC_USER_LEN`+ 1).
 
 > [!NOTE]
->  Pierwszą akcją, który wykonuje IDE może być wywołania `SccOpenProject` funkcji lub `SccGetProjPath` funkcji. W związku z nich mają identyczne `lpUser` parametr, który umożliwia wtyczka do kontroli źródła do logowania użytkownika w dowolnym momencie. Nawet jeśli powrót z funkcji wskazuje błąd, wtyczkę należy podać ten ciąg z prawidłową nazwą logowania.
+> Pierwszą akcją, który wykonuje IDE może być wywołania `SccOpenProject` funkcji lub `SccGetProjPath` funkcji. W związku z nich mają identyczne `lpUser` parametr, który umożliwia wtyczka do kontroli źródła do logowania użytkownika w dowolnym momencie. Nawet jeśli powrót z funkcji wskazuje błąd, wtyczkę należy podać ten ciąg z prawidłową nazwą logowania.
 
  `lpLocalPath` jest to katalog, w którym użytkownik przechowuje projektu. Może być ciągiem pustym. Jeśli katalog nie jest obecnie zdefiniowany (jak w przypadku użytkowników, próby pobrania projektu z systemu kontroli źródła) i `bAllowChangePath` jest `TRUE`, wtyczka do kontroli źródła może monitować użytkownika o wprowadzenie danych lub użyj innej metody do umieszczenia jej ciąg do własnej `lpLocalPath`. Jeśli `bAllowChangePath` jest `FALSE`, wtyczka nie należy zmieniać ciągu, ponieważ użytkownik pracuje się już w określonym katalogu.
 

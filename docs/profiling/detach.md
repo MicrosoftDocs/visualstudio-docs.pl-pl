@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c65f17d9c37cf885460be8a2c9c3560d12f64dd5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8a28551656c7cb47185713a6246479ef2bd96325
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446825"
 ---
 # <a name="detach"></a>Odłącz
 VSPerfCmd.exe **Odłącz** opcji rozłącza profiler określone procesy lub wszystkich procesów, jeśli żaden nie jest określony. Profilowanie musi zostać zainicjowany przy użyciu metody próbkowania.
@@ -23,7 +23,7 @@ VSPerfCmd.exe **Odłącz** opcji rozłącza profiler określone procesy lub wszy
  **Odłącz** nie zamknąć plik danych profilowania. Użyj **zamknięcia** opcję, aby zakończyć, profilowanie i zamknąć plik danych.
 
 > [!NOTE]
->  Jeśli **Start** została określona opcja **Crosssession** opcji wszelkie wywołania **VSPerfCmd /Attach** lub **VSPerfCmd/detach** musi również określić **Crosssession**.
+> Jeśli **Start** została określona opcja **Crosssession** opcji wszelkie wywołania **VSPerfCmd /Attach** lub **VSPerfCmd/detach** musi również określić **Crosssession**.
 
 ## <a name="syntax"></a>Składnia
 

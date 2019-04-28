@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 499eeefc4b5328d1ffe021cdf28483208d162471
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: 3dc0c42fe5dd5bc99e806ffbc20f42aa897d4c22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834891"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423241"
 ---
 # <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_liveRangeStartRelativeVirtualAddress ( 
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Względny adres wirtualny, zwracany jest początek zakresu, w którym symbol jest poprawna.  
   
 > [!NOTE]
->  Zwrócony kod błędu: oznacza, że symbol nie ma informacji o zakresie na żywo.  
+> Zwrócony kod błędu: oznacza, że symbol nie ma informacji o zakresie na żywo.  
   
 ## <a name="remarks"></a>Uwagi  
   

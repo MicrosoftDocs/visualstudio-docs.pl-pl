@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0150ed3f40d4e8fb61cc6054a37c30ae0ffc0d1a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 4ad7a7df2a536df0ac3e9bc391f08ef5d0fcd830
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444102"
 ---
-# <a name="da0023-high-gc-cpu-time"></a>DA0023: Wysokie wykorzystanie czasu GC CPU
+# <a name="da0023-high-gc-cpu-time"></a>DA0023: Duże zużycie czasu procesora przez odzyskiwanie pamięci
 
 |||
 |-|-|
@@ -42,7 +42,7 @@ ms.locfileid: "56608412"
  Ta reguła jest uruchamiana, gdy ilość czasu spędzonego w wyrzucania elementów bezużytecznych jest istotne w porównaniu z czasem przetwarzania kompletnej aplikacji.
 
 > [!NOTE]
->  Gdy część czasu spędzonego w wyrzucania elementów bezużytecznych jest nadmierne w porównaniu z czasu przetwarzania kompletnej aplikacji, [DA0024: Nadmierne zużycie czasu Procesora](../profiling/da0024-excessive-gc-cpu-time.md) generowane ostrzeżenie zamiast tej reguły.
+> Gdy część czasu spędzonego w wyrzucania elementów bezużytecznych jest nadmierne w porównaniu z czasu przetwarzania kompletnej aplikacji, [DA0024: Nadmierne zużycie czasu Procesora](../profiling/da0024-excessive-gc-cpu-time.md) generowane ostrzeżenie zamiast tej reguły.
 
 ## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie
  Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku znaczniki](../profiling/marks-view.md) danych profilowania. Znajdź **pamięć .NET CLR\\czas działania modułu GC (%)** kolumny. Określa, czy określone faz wykonywania programu gdzie obciążenie pamięci zarządzanej wyrzucania elementów bezużytecznych jest większe niż pozostałych faz. Porównaj wartości czas działania modułu GC (%) wartość ma zostać współczynnik operacji wyrzucania elementów bezużytecznych zgłoszone w **# pokolenia 0**, **# zbierania obiektów pokolenia 1**, **# zbierania obiektów pokolenia 2** wartości .

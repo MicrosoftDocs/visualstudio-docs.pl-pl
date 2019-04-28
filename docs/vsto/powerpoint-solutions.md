@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ae3d06b2f031ed2deede1a80bec356a0abd939e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ee1e5eddf89e60434a083293cdc08998dfe1b41d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445221"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint — rozwiązania
   Program Visual Studio udostępnia szablony projektów, służących do tworzenia dodatków narzędzi VSTO dla programu Microsoft PowerPoint pakietu Office. Za pomocą dodatków narzędzi VSTO dla programów Automatyzacja programu PowerPoint, Rozszerz funkcje programu PowerPoint lub dostosowywanie interfejsu użytkownika (UI) programu PowerPoint.
@@ -32,7 +32,7 @@ ms.locfileid: "60040237"
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]
 
 > [!NOTE]
->  Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.
+> Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.
 
  ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Tworzenie dodatku dla programu Microsoft PowerPoint? ](http://go.microsoft.com/fwlink/?LinkId=132767).
 

@@ -13,12 +13,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 81bb2392a4ea6d9860cdcf2beeadcfe4e6ec7940
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fd8732a914581b39566bac88fe73698850893f77
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434270"
 ---
 # <a name="performance-report-overview"></a>Raport dotyczący wydajności — omówienie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "60091619"
 Można wyświetlić danych profilowania w sesji pomiaru wydajności **raport dotyczący wydajności** okna programu Visual Studio Team System Development Edition zintegrowanego środowiska programistycznego (IDE). Profilowania dane są zapisywane w plikach .vsp i .vsps. Widok raportu w systemie windows umożliwiają można wyświetlać i analizować problemy z wydajnością aplikacji.  
   
 > [!CAUTION]
->  Plik danych profilowania zawiera poufne informacje, takie jak nazwa komputera, wersję systemu operacyjnego, ścieżki do plików, informacje o pamięci i innych informacji o instalacji na komputerze. Należy zachować ścisłą kontrolę nad dystrybucją danych, w formacie .vsp natywnych i podczas eksportowania do pliku CSV lub plik XML.  
+> Plik danych profilowania zawiera poufne informacje, takie jak nazwa komputera, wersję systemu operacyjnego, ścieżki do plików, informacje o pamięci i innych informacji o instalacji na komputerze. Należy zachować ścisłą kontrolę nad dystrybucją danych, w formacie .vsp natywnych i podczas eksportowania do pliku CSV lub plik XML.  
 >   
->  Jeśli dane śledzenia zdarzeń są zbierane w ramach sesji wydajności, dodatkowe informacje mogą być wyświetlane w zdarzeniu śledzenia plik dziennika (ETL). Te informacje obejmują nazwę domeny oraz nazwę użytkownika; w związku z tym należy zachować ścisłą kontrolę nad dystrybucją w pliku dziennika.  
+> Jeśli dane śledzenia zdarzeń są zbierane w ramach sesji wydajności, dodatkowe informacje mogą być wyświetlane w zdarzeniu śledzenia plik dziennika (ETL). Te informacje obejmują nazwę domeny oraz nazwę użytkownika; w związku z tym należy zachować ścisłą kontrolę nad dystrybucją w pliku dziennika.  
   
 ## <a name="performance-report-window"></a>Okno raportu wydajności  
  Okno Raport dotyczący wydajności jest oknem narzędzi, który służy do wyświetlania, zarządzanie i filtrować dane dotyczące wydajności, a także kontroli dostosowywalne zapytania.  

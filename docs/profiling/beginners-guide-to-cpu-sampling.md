@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60c1ef43854e3fd4a08851afadf4e1caf43334c8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 73e940f6d302d28713c0345f77d6c78c8223e363
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440279"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Przewodnik dla początkujących próbkowania Procesora
 Za pomocą programu Visual Studio profiling tools do analizowania problemów z wydajnością w aplikacji. Poniższa procedura przedstawia sposób użycia **próbkowania** danych.
 
 > [!NOTE]
->  Zalecane jest użycie [użycie procesora CPU](../profiling/beginners-guide-to-performance-profiling.md) narzędzi w oknie narzędzia diagnostyczne, zamiast starszej wersji narzędzia próbkowania Procesora, chyba że potrzebujesz specjalne funkcje, takie jak obsługa instrumentacji.
+> Zalecane jest użycie [użycie procesora CPU](../profiling/beginners-guide-to-performance-profiling.md) narzędzi w oknie narzędzia diagnostyczne, zamiast starszej wersji narzędzia próbkowania Procesora, chyba że potrzebujesz specjalne funkcje, takie jak obsługa instrumentacji.
 
  **Próbkowanie** jest statystyczną metodą profilowania, która pokazuje funkcje, które wykonują większość trybu użytkownika działają w aplikacji. Pobieranie próbek jest dobrym miejscem do rozpoczęcia wyszukiwania obszarów przyspieszania działania aplikacji.
 
@@ -35,7 +35,7 @@ Za pomocą programu Visual Studio profiling tools do analizowania problemów z w
  Jeśli **próbkowania** nie oferują danych, których potrzebują, innych metod profilowania kolekcji tools zapewniają różne rodzaje informacji, które mogą być pomocne dla użytkownika. Aby uzyskać więcej informacji o tych innych metodach, zobacz [jak: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md).
 
 > [!TIP]
->  Jeśli profilowany kod wywołuje funkcje Windows, należy upewnić się, że najbardziej aktualnej. *pdb* plików. Bez tych plików widok raportu wyświetli listę nazw funkcji Windows, które są tajemnicze i trudne do zrozumienia. Aby uzyskać więcej informacji na temat upewnij się, że pliki potrzebne Ci zobacz [jak: Odwoływać się do informacji o symbolach Windows](../profiling/how-to-reference-windows-symbol-information.md).
+> Jeśli profilowany kod wywołuje funkcje Windows, należy upewnić się, że najbardziej aktualnej. *pdb* plików. Bez tych plików widok raportu wyświetli listę nazw funkcji Windows, które są tajemnicze i trudne do zrozumienia. Aby uzyskać więcej informacji na temat upewnij się, że pliki potrzebne Ci zobacz [jak: Odwoływać się do informacji o symbolach Windows](../profiling/how-to-reference-windows-symbol-information.md).
 
 ## <a name="create-and-run-a-performance-session"></a>Tworzenie i uruchamianie sesji wydajności
  Aby uzyskać dane potrzebne do analizowania, należy najpierw utworzyć sesję wydajności, a następnie uruchom sesji. **Kreatora wydajności** pozwala wykonać obie czynności.
@@ -47,7 +47,7 @@ Za pomocą programu Visual Studio profiling tools do analizowania problemów z w
 1. Otwórz rozwiązanie w programie Visual Studio. Ustaw konfigurację do wydania. (Znajdź **konfiguracje rozwiązania** na pasku narzędzi, który jest ustawiony na **debugowania** domyślnie. Zmień ją na **wersji**.)
 
     > [!IMPORTANT]
-    >  Jeśli nie jesteś administratorem na komputerze, którego używasz, należy uruchamiać Visual Studio jako administrator, podczas korzystania z programu profilującego. (Kliknij prawym przyciskiem myszy ikonę aplikacji Visual Studio, a następnie kliknij przycisk **Uruchom jako administrator**.
+    > Jeśli nie jesteś administratorem na komputerze, którego używasz, należy uruchamiać Visual Studio jako administrator, podczas korzystania z programu profilującego. (Kliknij prawym przyciskiem myszy ikonę aplikacji Visual Studio, a następnie kliknij przycisk **Uruchom jako administrator**.
 
 2. Na **debugowania** menu, wybierz opcję **Profiler**, a następnie wybierz pozycję **Profiler wydajności**.
 

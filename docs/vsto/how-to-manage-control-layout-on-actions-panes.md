@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 94e3ccc30507ccd7995c4d4fad548fe5ff425365
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 264b7cd4d60ebc963d794e0ca06fc16fd5edc7d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445349"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Instrukcje: Zarządzanie układem formantu w okienkach akcji
   Okienka akcji jest zadokowany po prawej stronie dokument lub skoroszyt, domyślnie; jednak może być zadokowane po lewej stronie, w górę lub w dół. Jeśli używasz wielu kontrolek użytkownika, można napisać kod, aby prawidłowo stosu kontrolki użytkownika w okienku akcji. Aby uzyskać więcej informacji, zobacz [okienko akcji ― omówienie](../vsto/actions-pane-overview.md).
@@ -29,10 +29,10 @@ ms.locfileid: "60094615"
  Kolejność stosu formantów zależy od tego, czy w okienku Akcje jest zadokowany w pionie lub poziomie.
 
 > [!NOTE]
->  Jeśli użytkownik zmieni rozmiar okienka Akcje w czasie wykonywania, można ustawić formanty zmiany rozmiaru za pomocą okienka działań. Możesz użyć <xref:System.Windows.Forms.Control.Anchor%2A> właściwości formantu Windows Forms z kontrolkami zakotwiczenia w okienku Akcje. Aby uzyskać więcej informacji, zobacz [jak: Kotwiczenie formantów na formularzach Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).
+> Jeśli użytkownik zmieni rozmiar okienka Akcje w czasie wykonywania, można ustawić formanty zmiany rozmiaru za pomocą okienka działań. Możesz użyć <xref:System.Windows.Forms.Control.Anchor%2A> właściwości formantu Windows Forms z kontrolkami zakotwiczenia w okienku Akcje. Aby uzyskać więcej informacji, zobacz [jak: Kotwiczenie formantów na formularzach Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).
 
 > [!NOTE]
->  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>Aby ustawić kolejność stosu kontrolki okienka akcji
 

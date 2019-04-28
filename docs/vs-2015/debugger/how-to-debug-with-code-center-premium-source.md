@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88644f3bf768f1b3467467a31edbd83e8e5f151c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: db9a3e08e14e7fadca6df9e32361c0b042f565e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438334"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Instrukcje: Debugowanie przy użyciu źródła Code Center Premium
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,12 +56,12 @@ Za pomocą [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] debugera, 
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   >  Pamiętaj dołączyć końcowy ukośnik<strong>/</strong> na końcu ścieżki.  
+   > Pamiętaj dołączyć końcowy ukośnik<strong>/</strong> na końcu ścieżki.  
   
      Przenieś te lokalizacje na początku listy, aby upewnić się, że te symbole są najpierw ładowane.  
   
    > [!NOTE]
-   >  Te lokalizacje Code Center Premium musi być wymienione jako pierwsze, aby były pierwszy lokalizacje, które są ładowane. W programie Visual Studio 2010 nie można przenieść wszystkie serwery powyżej **serwery symboli firmy Microsoft** zapisu, dlatego należy wyczyścić pole wyboru.  
+   > Te lokalizacje Code Center Premium musi być wymienione jako pierwsze, aby były pierwszy lokalizacje, które są ładowane. W programie Visual Studio 2010 nie można przenieść wszystkie serwery powyżej **serwery symboli firmy Microsoft** zapisu, dlatego należy wyczyścić pole wyboru.  
    > 
    >  Aby załadować symbole z symboli firmy Microsoft podczas sesji debugowania, wykonaj następujące czynności:  
    > 
@@ -113,7 +113,7 @@ Za pomocą [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] debugera, 
     `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   >  Pamiętaj dołączyć końcowy ukośnik<strong>/</strong> na końcu ścieżki.  
+   > Pamiętaj dołączyć końcowy ukośnik<strong>/</strong> na końcu ścieżki.  
   
 4. Dla każdego zarządzanego projektu w rozwiązaniu wykonaj następujące czynności  
   

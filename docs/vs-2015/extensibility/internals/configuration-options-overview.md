@@ -11,12 +11,12 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 702cac3c224b958a4de37b03814ecea7390ae217
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0b37d93adbd2accb7a12fb176ab15aafc6914190
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441514"
 ---
 # <a name="configuration-options-overview"></a>Omówienie opcji konfiguracji
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Projekty w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] może obsługiwać wi
 |MyConfig|Brak|\<Ustawienia MyConfig Win64 >|  
   
 > [!NOTE]
->  Nie można utworzyć konfiguracji rozwiązania "MyConfig", który nie obejmuje to platforma "Win32", chyba, że docelowa projektu nie obsługuje systemu Win32.  
+> Nie można utworzyć konfiguracji rozwiązania "MyConfig", który nie obejmuje to platforma "Win32", chyba, że docelowa projektu nie obsługuje systemu Win32.  
   
  Zmiana aktywnej konfiguracji rozwiązania wybiera zestaw konfiguracje projektu, które są wbudowane, uruchamiania, debugowania lub wdrożone w ramach tego rozwiązania. Na przykład jeśli zmienisz konfigurację aktywngo rozwiązania z wersji do debugowania, wszystkie projekty w ramach tego rozwiązania automatycznie są tworzone za pomocą konfiguracji projektów wskazane w konfiguracji debugowania rozwiązania. Projektów są zwykle również konfiguracje debugowania o nazwie, chyba że użytkownik wprowadził ręczne zmiany w środowisku programu Configuration Manager.  
   

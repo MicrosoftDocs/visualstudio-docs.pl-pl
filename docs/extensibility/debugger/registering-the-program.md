@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29ee2b487299351b2d71a9b495257a939fb59f6c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 162f8df09b1f6ce9372a57728d653d5d3c20a551
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415721"
 ---
 # <a name="register-the-program"></a>Rejestrowanie programu
 Po aparat debugowania uzyskała portu, reprezentowane przez [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfejsu, następnym krokiem podczas włączania debugowania programu jest zarejestrowanie go za pomocą portu. Po zarejestrowaniu programu jest dostępna do debugowania za pomocą jednej z następujących sposobów:
@@ -38,7 +38,7 @@ Po aparat debugowania uzyskała portu, reprezentowane przez [IDebugPort2](../../
      Aparat debugowania, uruchamiając program i rejestrując ją za pomocą portu można znaleźć w poniższym przykładzie.
 
     > [!NOTE]
-    >  Ten przykładowy kod nie jest jedynym sposobem, aby uruchomić i wznowić procesu; Ten kod jest głównie przykładem rejestrowania programu z portem.
+    > Ten przykładowy kod nie jest jedynym sposobem, aby uruchomić i wznowić procesu; Ten kod jest głównie przykładem rejestrowania programu z portem.
 
     ```cpp
     // This is an IDebugEngineLaunch2 method.

@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e99ee6c9570f3bb73bc70f230f31e153a8a0da1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ace8b173eb20b6e628fbb7066ff9010624cca9e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441957"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Określenie niestandardowych zdarzeń kompilacji w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Określając to zdarzenie kompilacji niestandardowej, może automatycznie urucho
      Przykład: `for %I in (*.txt *.doc *.html) do copy %I c:\` *mydirectory*`\`
 
     > [!NOTE]
-    >  `%I` w powyższym kodzie powinno być `%%I` w skryptach wsadowych.
+    > `%I` w powyższym kodzie powinno być `%%I` w skryptach wsadowych.
 
 ## <a name="see-also"></a>Zobacz też
  [Kompilowanie i tworzenie](../ide/compiling-and-building-in-visual-studio.md) [wstępnie zdarzeń/po kompilacji — zdarzenia kompilacji wiersza polecenia okno dialogowe](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [znaki specjalne w programie MSBuild](../msbuild/msbuild-special-characters.md) [instruktażu: Kompilowanie aplikacji](../ide/walkthrough-building-an-application.md)

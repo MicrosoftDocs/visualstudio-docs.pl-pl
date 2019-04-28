@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6133ed465f786fa20fd26f32ae12ad11bd40d727
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9dac636beeab5188c7958232d46cf3fe4a4b5f32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439504"
 ---
 # <a name="how-to-choose-sampling-events"></a>Instrukcje: Wybieranie zdarzeń próbkowania
 Domyślnie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools zbiera dane dotyczące wydajności w odstępach czasu, który jest określony jako liczba cykli procesora, które są używane przez profilowany proces. Domyślna liczba cykli interwału jest 10 000 000, czyli około 0,01 sekund na 1 komputerze GH. Można zmienić liczbę cykli w interwale, i możesz zmienić zdarzenie próbkowania. Dostępne są następujące przykładowe zdarzenia:
@@ -37,7 +37,7 @@ Domyślnie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling T
 - Licznik wydajności - liczniki procesora CPU dla problemów z wydajnością niskiego poziomu.
 
 > [!IMPORTANT]
->  Przypadku zbierania danych pamięci .NET (alokacje czasów istnienia obiektów i/lub) przy użyciu metody próbkowania zdarzeń próbkowania wszystkie określone przez użytkownika są ignorowane i alokacje odpowiedniej ilości pamięci i/lub zdarzenia odzyskiwania pamięci, które są używane do zbierania danych.
+> Przypadku zbierania danych pamięci .NET (alokacje czasów istnienia obiektów i/lub) przy użyciu metody próbkowania zdarzeń próbkowania wszystkie określone przez użytkownika są ignorowane i alokacje odpowiedniej ilości pamięci i/lub zdarzenia odzyskiwania pamięci, które są używane do zbierania danych.
 
 ### <a name="to-select-a-sample-event"></a>Aby wybrać zdarzenie próbkowania
 
@@ -48,7 +48,7 @@ Domyślnie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling T
 3. Z **zdarzenie próbkowania** listy rozwijanej wybierz zdarzenie próbkowania, którego chcesz użyć do profilu aplikacji.
 
     > [!NOTE]
-    >  **Dostępnych liczników wydajności** są włączone tylko wtedy, gdy wybierzesz **licznika wydajności** z **zdarzenie próbkowania** listy rozwijanej.
+    > **Dostępnych liczników wydajności** są włączone tylko wtedy, gdy wybierzesz **licznika wydajności** z **zdarzenie próbkowania** listy rozwijanej.
 
 4. Jeśli wybierzesz **licznika wydajności**, Wybieranie określonego licznika Procesora z **dostępnych liczników wydajności** kontrolki widoku drzewa.
 

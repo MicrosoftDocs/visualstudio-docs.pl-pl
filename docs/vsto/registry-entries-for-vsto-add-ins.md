@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab8c437285a55013e2c0367865044ee12ba061ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: de101e33e94889a44fe9bc4e21db857763b1c9aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447028"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Wpisy rejestru dotyczące dodatków narzędzi VSTO
   W przypadku wdrażania dodatków narzędzi VSTO, które są tworzone za pomocą programu Visual Studio, należy utworzyć określony zbiór wpisów rejestru. Te wpisy rejestru Podaj informacje, które umożliwiają aplikacji Microsoft Office wykrycie i załadowanie dodatku narzędzi VSTO.
@@ -33,7 +33,7 @@ ms.locfileid: "60071811"
  Aby uzyskać więcej informacji na temat sposobu wpisy rejestru są używane podczas procesu ładowania dla dodatków narzędzi VSTO zobacz [architektury VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
 > [!NOTE]
->  W tym temacie, tekst *identyfikator dodatku* reprezentuje unikatowy identyfikator dla dodatku VSTO. Domyślnie identyfikator jest nazwy zestawu dodatku narzędzi VSTO.
+> W tym temacie, tekst *identyfikator dodatku* reprezentuje unikatowy identyfikator dla dodatku VSTO. Domyślnie identyfikator jest nazwy zestawu dodatku narzędzi VSTO.
 
 ## <a name="register-vsto-add-ins-for-the-current-user-vs-all-users"></a>Rejestrowanie dodatków narzędzi VSTO dla bieżącego użytkownika, a wszyscy użytkownicy
  Dodatek narzędzi VSTO dla programów jest zainstalowany, możesz go zarejestrować na dwa sposoby:

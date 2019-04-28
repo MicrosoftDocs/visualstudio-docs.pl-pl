@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e54d2dc388ca308e037fb8ff918f521ee16e9092
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7a00f3c58f917e7355a63ebca71c74127826a2e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429217"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Instrukcje: Dostosowywanie funkcji SharePoint
   Można tworzyć i dostosowywać funkcje programu SharePoint przy użyciu narzędzia Projektant funkcji w programie Visual Studio. Na przykład można ustawić zakres funkcji i dodać inne funkcje jako zależności. Domyślnie Projektant funkcji jest otwierany podczas dodawania nowej funkcji w Eksploratorze rozwiązań lub w Eksploratorze pakietu programu SharePoint.
@@ -49,7 +49,7 @@ ms.locfileid: "60067264"
 2. Rozwiń węzeł Funkcje, rozwiń pozycję NazwaFunkcji, rozwiń pozycję NazwaFunkcji.feature, a następnie otwórz plik  *\<Nazwa_funkcji >. Template.XML* .
 
     > [!NOTE]
-    >  Po otwarciu szablonu manifestu funkcji w formacie pliku XML pliki zostaną automatycznie sprawdzone i można zignorować ostrzeżenia, które są wyświetlane w oknie Lista błędów.
+    > Po otwarciu szablonu manifestu funkcji w formacie pliku XML pliki zostaną automatycznie sprawdzone i można zignorować ostrzeżenia, które są wyświetlane w oknie Lista błędów.
 
 ## <a name="change-the-manifest-template"></a>Zmiana szablonu manifestu
  Kod XML pliku manifestu funkcji można zmienić w edytorze XML programu Visual Studio lub w okienku szablonu manifestu. Wszelkie zmiany w kodzie XML są scalane do spakowanego pliku manifestu funkcji. Na przykład można zmienić szablon manifestu, aby dostosować właściwość funkcji.
@@ -70,7 +70,7 @@ ms.locfileid: "60067264"
  Można wyłączyć Projektanta funkcji i utworzyć plik *feature.xml* ręcznie. Podczas pierwszego wykonywania tej procedury bieżące ustawienia Projektanta funkcji są zapisywane do pliku XML szablonu funkcji. Następnie można zmodyfikować lub zastąpić ten kod XML.
 
 > [!NOTE]
->  Jeśli dodasz lub usuniesz elementy projektu SharePoint w pliku XML, gdy Projektant funkcji jest wyłączony, te elementy projektu nie zostaną spakowane.
+> Jeśli dodasz lub usuniesz elementy projektu SharePoint w pliku XML, gdy Projektant funkcji jest wyłączony, te elementy projektu nie zostaną spakowane.
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Aby zastąpić spakowany plik manifestu poprzez wyłączenie projektanta
 

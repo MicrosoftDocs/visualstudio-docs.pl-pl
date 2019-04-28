@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
 manager: jillfra
-ms.openlocfilehash: 2d5ba5a271cd7132d9750fc0569b801022aeb932
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7b963436e9d968dd5ba3829e97d0fd0c52e49641
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443008"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Instrukcje: Tworzenie. Plik Vsct z istniejącej. Plik CTC
 Można utworzyć pliku vsct oparty na składni XML z istniejącego pliku źródłowego .ctc tabeli poleceń. Dzięki temu możesz korzystać z zalet nowego opartego na języku XML [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] format kompilatora tabeli (VSCT) polecenia.  
@@ -42,7 +42,7 @@ Można utworzyć pliku vsct oparty na składni XML z istniejącego pliku źród�
      Spowoduje to utworzenie nowego vsct polecenia tabeli źródłowego pliku XML. Plik można kompilować przy użyciu Vsct.exe, kompilator VSCT, tak jak dowolnego innego pliku vsct.  
   
     > [!NOTE]
-    >  Można zwiększyć czytelność pliku vsct przez ponowne formatowanie komentarze XML.  
+    > Można zwiększyć czytelność pliku vsct przez ponowne formatowanie komentarze XML.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Instrukcje: Tworzenie. Pliku Vsct](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   

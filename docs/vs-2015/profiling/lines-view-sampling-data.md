@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ade498586f7d0a675ad2fe770a21435604ec57d5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: a2e5511e9e2e1c863db8f696a70195573d75429f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54752541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433871"
 ---
 # <a name="lines-view---sampling-data"></a>Widok linii — dane próbkowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54752541"
 Uruchom wiersze widok pobierania próbek danych zawiera dane o wydajności dla instrukcji, które były wykonywane w chwili przykłady zostały zebranych podczas profilowania.  
   
 > [!NOTE]
->  Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje Windows Store również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje Windows Store również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
  W pliku źródłowym instrukcji może obejmować więcej niż jeden wiersz w pliku źródłowym, a jeden wiersz może zawierać więcej niż jedną instrukcję. Instrukcja jest identyfikowane przez następujące elementy:  
   

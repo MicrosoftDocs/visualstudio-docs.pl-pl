@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 52a2d7c239c9a4f3508f4bdb2077928e44ff802a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 56e39a8ed17cfa99bd8141e2176d42dd7d3d6274
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424851"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Przewodnik: Tworzenie usługi danych programu WCF za pomocą struktur WPF i Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,12 +89,12 @@ W tym instruktażu przedstawiono sposób tworzenia prostej [!INCLUDE[ss_data_ser
 6. Jeśli baza danych wymaga hasła, wybierz opcję **tak, Dołącz dane poufne w parametrach połączenia** przycisk opcji, a następnie wybierz **dalej** przycisku.  
   
    > [!NOTE]
-   >  Jeśli pojawi się okno dialogowe, wybierz **tak** można zapisać pliku do projektu.  
+   > Jeśli pojawi się okno dialogowe, wybierz **tak** można zapisać pliku do projektu.  
   
 7. Na **wybierz wersję** wybierz **Entity Framework 5.0** przycisk opcji, a następnie wybierz **dalej** przycisku.  
   
    > [!NOTE]
-   >  Aby można było używać najnowszej wersji programu Entity Framework 6 za pomocą usługi WCF, należy zainstalować pakiet NuGet dostawcy Framework jednostki usługi danych WCF. Zobacz [przy użyciu programu WCF Data Services 5.6.0 z platformą Entity Framework 6](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx).  
+   > Aby można było używać najnowszej wersji programu Entity Framework 6 za pomocą usługi WCF, należy zainstalować pakiet NuGet dostawcy Framework jednostki usługi danych WCF. Zobacz [przy użyciu programu WCF Data Services 5.6.0 z platformą Entity Framework 6](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx).  
   
 8. Na **wybierz obiekty bazy danych** rozwiń **tabel** węzeł **klientów** pole wyboru, a następnie wybierz **Zakończ** przycisk.  
   
@@ -129,7 +129,7 @@ W tym instruktażu przedstawiono sposób tworzenia prostej [!INCLUDE[ss_data_ser
     Zostanie wyświetlona reprezentacja XML danych znajdujących się w tabeli Klienci.  
   
    > [!NOTE]
-   >  Czasami przeglądarka Internet Explorer błędnie interpretuje dane jako źródło danych RSS. Należy się upewnić, że opcja wyświetlania źródeł danych RSS jest wyłączona. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z odwołaniami usługi](../data-tools/troubleshooting-service-references.md).  
+   > Czasami przeglądarka Internet Explorer błędnie interpretuje dane jako źródło danych RSS. Należy się upewnić, że opcja wyświetlania źródeł danych RSS jest wyłączona. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z odwołaniami usługi](../data-tools/troubleshooting-service-references.md).  
   
 8. Zamknij okno przeglądarki.  
   

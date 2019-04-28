@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7e14086ea395ffe65a52f47d0bfaa320fb19bc8f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910088"
 ---
 # <a name="elements-of-a-project-model"></a>Elementy modelu projektu
 Interfejsy i implementacje wszystkich projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] udostępnianie podstawowa struktura: model projektu dla danego typu projektu. Model projektu, czyli pakietu VSPackage, tworzysz służy do tworzenia obiektów, które są zgodne z decyzji projektowych i współdziałały globalne funkcje udostępniane przez środowisko IDE. Chociaż możesz kontrolować, jak element projektu jest trwały, na przykład, możesz nie mają kontroli nad powiadomienia, plik musi zostać utrwalone. Gdy użytkownik Przełącza fokus na elemencie Otwórz projekt, a **Zapisz** na **pliku** menu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menu pasku kod typu projektu musi przechwytywać polecenie z poziomu środowiska IDE, utrwalanie plików, i Wyślij powiadomienie do środowiska IDE nie jest już zmiany pliku.

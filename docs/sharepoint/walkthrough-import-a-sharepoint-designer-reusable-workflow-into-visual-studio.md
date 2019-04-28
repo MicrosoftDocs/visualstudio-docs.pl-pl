@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 702c671922d8ea7a1552504be062b7b31de16a09
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7d1373339fac4768e2af1eda5770d5058ae8078
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446594"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Przewodnik: Importowanie przepływu pracy wielokrotnego użytku programu SharePoint Designer do Visual Studio
   W tym instruktażu przedstawiono sposób importowania przepływu pracy wielokrotnego użytku, utworzone w programie SharePoint Designer 2010 do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu przepływu pracy programu SharePoint.
@@ -124,7 +124,7 @@ ms.locfileid: "60053939"
  Ponieważ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] można importować tylko *.wsp* plików, należy zapisać przepływu pracy wielokrotnego użytku jako *.wsp* pliku, a następnie wdrożyć go w programie SharePoint, przed zaimportowaniem ich do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
 > [!IMPORTANT]
->  Jeśli zostanie wyświetlony błąd środowiska uruchomieniowego, wykonując następującą procedurę, musisz wykonać procedurę na komputerze, który ma dostęp do witryny programu SharePoint.
+> Jeśli zostanie wyświetlony błąd środowiska uruchomieniowego, wykonując następującą procedurę, musisz wykonać procedurę na komputerze, który ma dostęp do witryny programu SharePoint.
 
 #### <a name="to-save-and-deploy-the-reusable-workflow"></a>Aby zapisać i wdrożyć wielokrotny przepływ danych
 
@@ -170,7 +170,7 @@ ms.locfileid: "60053939"
 6. W **Określanie nowego źródła projektu** strony, przejdź do lokalizacji w systemie, w której został wcześniej zapisany *.wsp* pliku, otwórz plik, a następnie wybierz **dalej** przycisk.
 
    > [!NOTE]
-   >  Wybierz **Zakończ** przycisk, aby zaimportować wszystkie dostępne elementy w *.wsp* pliku.
+   > Wybierz **Zakończ** przycisk, aby zaimportować wszystkie dostępne elementy w *.wsp* pliku.
 
     Spowoduje to wyświetlenie listy przepływów danych wielokrotnego użytku, które są dostępne do importowania.
 
@@ -256,7 +256,7 @@ ms.locfileid: "60053939"
 12. W **uruchomić nowy przepływ pracy** sekcji, wybierz łącze **SPD przepływ pracy Test**, a następnie wybierz **Start** przycisk, aby zainicjować przepływ pracy.
 
     > [!NOTE]
-    >  Alternatywnie możesz można-skojarzenie automatyczne przepływu pracy z listą, uruchamiając Kreatora ustawień przepływu pracy i ustawienia przepływu pracy skojarzenie automatyczne.
+    > Alternatywnie możesz można-skojarzenie automatyczne przepływu pracy z listą, uruchamiając Kreatora ustawień przepływu pracy i ustawienia przepływu pracy skojarzenie automatyczne.
 
      Należy zauważyć, że dwie akcje są wykonywane przez przepływ pracy: Twoja nazwa pojawia się w zadania podrzędnego **przypisane do** kolumny i anonse zostaną wyświetlone w **anonsów** listy.
 

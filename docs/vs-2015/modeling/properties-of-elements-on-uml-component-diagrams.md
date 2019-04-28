@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5fc99de05ef040db8c4560f9f6623081018a556
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c7f3f30d08fb62defec5e783da286e968a6b17c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444429"
 ---
 # <a name="properties-of-elements-on-uml-component-diagrams"></a>Właściwości elementów na diagramach składników UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54784217"
 Na diagramie składników UML każdego elementu na diagramie ma właściwości. Aby wyświetlić właściwości elementu, kliknij prawym przyciskiem myszy element na diagramie lub w **Eksploratora modelu UML** a następnie kliknij przycisk **właściwości**. Właściwości są wyświetlane w **właściwości** okna.  
   
 > [!NOTE]
->  Ten temat dotyczy właściwości elementów w diagramach składników UML. Aby uzyskać więcej informacji o tym, jak odczytać diagramy składników UML, zobacz [diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md). Aby uzyskać więcej informacji na temat narysować diagramy składników UML, zobacz [diagramy składników UML: Wytyczne dotyczące](../modeling/uml-component-diagrams-guidelines.md).  
+> Ten temat dotyczy właściwości elementów w diagramach składników UML. Aby uzyskać więcej informacji o tym, jak odczytać diagramy składników UML, zobacz [diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md). Aby uzyskać więcej informacji na temat narysować diagramy składników UML, zobacz [diagramy składników UML: Wytyczne dotyczące](../modeling/uml-component-diagrams-guidelines.md).  
   
 ## <a name="properties-of-elements"></a>Właściwości elementów  
   
@@ -49,4 +49,4 @@ Na diagramie składników UML każdego elementu na diagramie ma właściwości. 
   
 ## <a name="see-also"></a>Zobacz też  
  [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md)
+ [Diagramy przypadków użycia UML: wskazówki](../modeling/uml-use-case-diagrams-guidelines.md)

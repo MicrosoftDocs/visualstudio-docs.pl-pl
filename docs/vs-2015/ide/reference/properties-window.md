@@ -21,12 +21,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: beb0296834986648f47357da50d4022c1f632823
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 582905042938d79a1885279bd19c18f48b49bb84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438030"
 ---
 # <a name="properties-window"></a>Okno Właściwości
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,25 +58,25 @@ To okno służy do wyświetlania i zmieniania właściwości projektowania oraz 
  Wyświetla zdarzenia dla obiektu.  
   
 > [!NOTE]
->  To **właściwości** formant paska narzędzi okna tylko jest dostępna, gdy formularz lub Projektant formantów jest aktywny w kontekście [!INCLUDE[csprcs](../../includes/csprcs-md.md)] projektu. Podczas edycji plików XAML, zdarzenia są wyświetlane na osobnej karcie okna właściwości.  
+> To **właściwości** formant paska narzędzi okna tylko jest dostępna, gdy formularz lub Projektant formantów jest aktywny w kontekście [!INCLUDE[csprcs](../../includes/csprcs-md.md)] projektu. Podczas edycji plików XAML, zdarzenia są wyświetlane na osobnej karcie okna właściwości.  
   
  Komunikaty  
  Wyświetla listę wszystkich komunikatów Windows. Umożliwia dodawanie lub usuwanie funkcji obsługi dla wiadomości przewidzianych dla wybranej klasy.  
   
 > [!NOTE]
->  To **właściwości** formant paska narzędzi okna jest dostępna tylko podczas **Widok klas** jest aktywnym oknem w kontekście [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projektu.  
+> To **właściwości** formant paska narzędzi okna jest dostępna tylko podczas **Widok klas** jest aktywnym oknem w kontekście [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projektu.  
   
  Overrides  
  Wyświetla listę wszystkich funkcji wirtualnych dla wybranej klasy i pozwala na dodawanie i usuwanie funkcji nadrzędnych.  
   
 > [!NOTE]
->  To **właściwości** formant paska narzędzi okna jest dostępna tylko podczas **Widok klas** jest aktywnym oknem w kontekście [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projektu.  
+> To **właściwości** formant paska narzędzi okna jest dostępna tylko podczas **Widok klas** jest aktywnym oknem w kontekście [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projektu.  
   
  Okienko opisu  
  Pokazuje typ właściwości i krótki opis właściwości. Możesz wyłączyć opis właściwości i Włącz za pomocą polecenia opis w menu skrótów.  
   
 > [!NOTE]
->  To **właściwości** formant paska narzędzi okna nie jest dostępna podczas edycji plików XAML w projektancie.  
+> To **właściwości** formant paska narzędzi okna nie jest dostępna podczas edycji plików XAML w projektancie.  
   
  Widok miniatur  
  Pokazuje graficzną reprezentację obecnie wybranego elementu podczas edycji plików XAML w projektancie.  

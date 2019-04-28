@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 048307c6c8117a77a57da6dc20f2615ae82feb0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e8a2bd058faa2c3ef9d17a82ad08dd3ad28842a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445638"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integracja z programem Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ```  
   
 > [!NOTE]
->  Niektóre nazwy typu elementu są charakterystyczne dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , ale nie są wymienione na tej liście rozwijanej.  
+> Niektóre nazwy typu elementu są charakterystyczne dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , ale nie są wymienione na tej liście rozwijanej.  
   
 ## <a name="in-process-compilers"></a>Kompilatory wewnątrz–procesowe  
  Jeśli to możliwe, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] spróbuje użyć wewnątrzprocesowej wersji z [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kompilatora w celu zwiększenia wydajności. (Nie dotyczy [!INCLUDE[csprcs](../includes/csprcs-md.md)].) Aby to działało poprawnie muszą być spełnione następujące warunki:  

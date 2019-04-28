@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 85dbe4917d37c8d39dd8348c32d88933032ede1b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900538"
 ---
 # <a name="clickonce-cache-overview"></a>Przegląd pamięci podręcznej w technologii ClickOnce
 Wszystkie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje, czy są one zainstalowane lokalnie, czy hostowanego w trybie online, są przechowywane na komputerze klienckim w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aplikacji *pamięci podręcznej*. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pamięci podręcznej to rodzina ukrytych katalogów w katalogu ustawienia lokalnego folderu Documents and Settings bieżącego użytkownika. Ta pamięć podręczna przechowuje pliki wszystkich aplikacji, w tym zestawy, pliki konfiguracji, aplikacji i ustawień użytkownika i katalog danych. Pamięć podręczna jest również odpowiedzialny za migracją katalog danych aplikacji do najnowszej wersji. Aby uzyskać więcej informacji na temat migracji danych, zobacz [Accessing Local and Remote Data in ClickOnce Applications](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).

@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8340867406e99fd6c6f84d1dc84d89a395a338fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61b5a5d04e9c59d9c4034cb97c8ec0fd79264d48
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437319"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Instrukcje: Debugowanie aplikacji częściowej relacji zaufania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Ma zastosowanie do Windows i aplikacji konsoli.
  Można później, przejdź wstecz i wyświetlić uprawnienia, które dodano podczas debugowania. Gdyby trzeba było dodać uprawnienia podczas debugowania, prawdopodobnie oznacza to, należy dodać użytkownika monitu wyrazić zgodę na tym etapie w kodzie.  
   
 > [!NOTE]
->  Wizualizatory debugera wymagają większe uprawnienia niż jest to dozwolone przez aplikację do częściowego zaufania. Wizualizatory nie zostanie załadowany, gdy zostały zatrzymane w kod z częściowej relacji zaufania. Aby debugować za pomocą wizualizatora, należy uruchomić kod z pełnym zaufaniem.  
+> Wizualizatory debugera wymagają większe uprawnienia niż jest to dozwolone przez aplikację do częściowego zaufania. Wizualizatory nie zostanie załadowany, gdy zostały zatrzymane w kod z częściowej relacji zaufania. Aby debugować za pomocą wizualizatora, należy uruchomić kod z pełnym zaufaniem.  
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>Aby wybrać strefy aplikacji częściowego zaufania  
   

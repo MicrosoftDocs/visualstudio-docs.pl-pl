@@ -9,12 +9,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 75780cf846b2f328dbe79481244901ad7662ab7d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 87c441271e72ef2aa67e0908e19473279f26ec53
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441947"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Krok 10. Pisanie kodu dla dodatkowych przycisków i pola wyboru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Teraz możesz przystąpić do wykonania czterech pozostałych metod. Możesz sko
  ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersja wideo tego tematu, zobacz [samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic – wideo 5](http://go.microsoft.com/fwlink/?LinkId=205216) lub [samouczek 1: Tworzenie przeglądarki obrazów w C# — wideo 5](http://go.microsoft.com/fwlink/?LinkId=205206). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
   
 > [!NOTE]
->  Najlepszym rozwiązaniem jest: Zawsze komentarz w kodzie. Komentarze są informacjami dla osoby, które można odczytać i poświęcić czas na zrozumienie kodu. Wszystko w wierszu komentarza jest ignorowane przez program. W języku Visual C# wiersz komentarza tworzy się przez wpisanie dwóch ukośników na początku (/ /), a w języku Visual Basic wiersz komentarza tworzy się, zaczynając od pojedynczego cudzysłowu (').  
+> Najlepszym rozwiązaniem jest: Zawsze komentarz w kodzie. Komentarze są informacjami dla osoby, które można odczytać i poświęcić czas na zrozumienie kodu. Wszystko w wierszu komentarza jest ignorowane przez program. W języku Visual C# wiersz komentarza tworzy się przez wpisanie dwóch ukośników na początku (/ /), a w języku Visual Basic wiersz komentarza tworzy się, zaczynając od pojedynczego cudzysłowu (').  
   
 ### <a name="to-write-code-for-additional-buttons-and-a-check-box"></a>Aby napisać kod dla dodatkowych przycisków i pola wyboru  
   

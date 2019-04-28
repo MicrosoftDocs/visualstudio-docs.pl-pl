@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 53b75732c636a551e3a000008d3ddcca2aa686cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 966a81f7863f71296bb7b6bd307a5e3a5241c783
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441039"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Instrukcje: Modyfikowanie standardowego polecenia menu w języku specyficznym dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Można zmodyfikować zachowanie niektóre standardowe polecenia, które są auto
    W tym temacie opisano tę procedurę.  
   
 > [!NOTE]
->  Jeśli chcesz utworzyć własne polecenia menu, zobacz [jak: Dodawanie polecenia do Menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+> Jeśli chcesz utworzyć własne polecenia menu, zobacz [jak: Dodawanie polecenia do Menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
 ## <a name="what"></a> Jakie polecenia mogą zmodyfikować?  
   
@@ -52,7 +52,7 @@ Można zmodyfikować zachowanie niektóre standardowe polecenia, które są auto
 5. Zamknij plik bez zapisywania zmian.  
   
     > [!NOTE]
-    >  Zazwyczaj nie należy edytować pliki, które zostały wygenerowane. Wszelkie zmiany zostaną utracone pliki są generowane przy następnym uruchomieniu.  
+    > Zazwyczaj nie należy edytować pliki, które zostały wygenerowane. Wszelkie zmiany zostaną utracone pliki są generowane przy następnym uruchomieniu.  
   
 ## <a name="extend"></a> Rozszerzenie klasy zestawu odpowiednie polecenie  
  Utwórz nowy plik, który zawiera deklarację częściowe klasy zestawu poleceń.  
@@ -90,7 +90,7 @@ Można zmodyfikować zachowanie niektóre standardowe polecenia, które są auto
  Poniższy przykład wyłącza usuwanie elementu menu, po użytkownik wybrał więcej niż jeden kształt.  
   
 > [!NOTE]
->  Ta metoda nie wpływa na czy polecenie jest dostępne poprzez naciśnięcie klawisza. Na przykład wyłączenie usuwanie elementu menu nie uniemożliwia polecenia są wywoływane za pośrednictwem klawisz Delete.  
+> Ta metoda nie wpływa na czy polecenie jest dostępne poprzez naciśnięcie klawisza. Na przykład wyłączenie usuwanie elementu menu nie uniemożliwia polecenia są wywoływane za pośrednictwem klawisz Delete.  
   
 ```  
 /// <summary>  

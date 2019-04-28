@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: beb51866fdce18c640e41cb90a5f357fda6e5190
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d2e47227f9da4e691575b7136011deff15db25db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438746"
 ---
 # <a name="visio-solutions"></a>Rozwiązania programu Visio
   Program Visual Studio udostępnia szablony projektów, służących do tworzenia dodatków narzędzi VSTO dla programu Microsoft Office Visio. Za pomocą dodatków narzędzi VSTO dla programów Automatyzacja programu Visio, Rozszerz funkcje programu Visio lub dostosowywanie interfejsu użytkownika (UI) programu Visio.
@@ -32,7 +32,7 @@ ms.locfileid: "56628900"
  **Dotyczy:** Informacje przedstawione w tym temacie dotyczą projektów dodatku VSTO dla programu Visio 2010. Aby uzyskać więcej informacji, zobacz [Dostępne funkcje uporządkowane według aplikacji pakietu Office i typu projektu](../vsto/features-available-by-office-application-and-project-type.md).
 
 > [!NOTE]
->  Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.
+> Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.
 
 ## <a name="automate-visio-by-using-the-visio-object-model"></a>Automatyzowanie programu Visio za pomocą modelu obiektów programu Visio
  Model obiektów programu Visio udostępnia wiele klas, które służą do automatyzowania programu Visio do tworzenia diagramów, schematy organizacyjne, blokowe, osi czasu projektów, diagramy sieciowe, miejsca do magazynowania pakietu office i innym. Interfejs API umożliwia pisanie kodu w celu wykonywania typowych zadań:

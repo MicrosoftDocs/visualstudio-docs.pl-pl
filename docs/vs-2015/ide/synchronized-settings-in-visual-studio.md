@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 416baf8988f8d17a336f9fbef1eb0f9d9a72046b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 54d7bac2db7b1fb2a0a9e8b830a13646acd5300d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428271"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Synchronizacja ustawień w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Korzystając z tego samego konta personalizacji zalogować się do programu Visu
  Ustawienia mogą być synchronizowane w dowolnej wersji programu Visual Studio 2015, łącznie z wersji Express i społeczności. Ustawienia są synchronizowane między rodziny produktów Visual Studio, takich jak Blend. Jednak każdy z tych produktów z rodziny mogą mieć własne ustawienia, które nie są współdzielone z programem Visual Studio. Na przykład udostępniane ustawienia specyficzne dla programu Blend, na komputerze A przy użyciu programu Blend, na komputerze B, ale nie za pomocą programu Visual Studio na komputerze A i B.
 
 > [!WARNING]
->  Ustawienia nie są zsynchronizowane między Visual Studio 2013 i Visual Studio 2015. Przy pierwszym otwarciu programu Visual Studio 2015, ustawienia usługi z programu Visual Studio 2013 są migrowane, ale nie mogą być migrowane do programu Visual Studio 2013 po tym.
+> Ustawienia nie są zsynchronizowane między Visual Studio 2013 i Visual Studio 2015. Przy pierwszym otwarciu programu Visual Studio 2015, ustawienia usługi z programu Visual Studio 2013 są migrowane, ale nie mogą być migrowane do programu Visual Studio 2013 po tym.
 
 ## <a name="see-also"></a>Zobacz też
  [Personalizowanie środowiska IDE](../ide/personalizing-the-visual-studio-ide.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bec6c539963d54bfa1d866ccc4811425bba9e3a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 807d2b7de34acda52dd05ff8263ae3303dca61c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441921"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Krok 1. Tworzenie projektu i dodawanie tabeli do formularza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Pierwszym krokiem w tworzeniu gry w dopasowanie jest stworzenie projektu i dodan
    1. Ustaw **BackColor** właściwości **CornflowerBlue**. Aby to zrobić, otwórz **BackColor** okno dialogowe, wybierając strzałkę listy rozwijanej obok **BackColor** właściwość **właściwości** okna.  Następnie wybierz **Web** karcie **BackColor** okno dialogowe, aby wyświetlić listę nazw dostępnych kolorów.  
   
       > [!NOTE]
-      >  Kolory nie są w kolejności alfabetycznej, a CornflowerBlue jest w dolnej części listy.  
+      > Kolory nie są w kolejności alfabetycznej, a CornflowerBlue jest w dolnej części listy.  
   
    2. Ustaw **Dock** właściwości **wypełnienia** wybierając przycisk listy rozwijanej obok właściwości, a następnie wybierając duży środkowy przycisk. Tabela się rozszerza i obejmuje cały formularz.  
   
@@ -77,12 +77,12 @@ Pierwszym krokiem w tworzeniu gry w dopasowanie jest stworzenie projektu i dodan
         Lewa górna komórka w TableLayoutPanel powinna teraz zawierać czarne pole wyśrodkowane na niebieskim tle.  
   
        > [!NOTE]
-       >  Czcionka Webdings to czcionka ikon, która jest dostarczana z systemem operacyjnym Windows. W grze w dopasowywanie, gracz musi dopasować pary ikon, więc ta czcionka jest używana do wyświetlania dopasowywanych ikon. Zamiast umieszczać **c** w **tekstu** właściwość, spróbuj wprowadzić różne litery, aby zobaczyć, jakie ikony są wyświetlane. Znak wykrzyknika to pająk, wielkie N to oko, a przecinek to papryczka chili.  
+       > Czcionka Webdings to czcionka ikon, która jest dostarczana z systemem operacyjnym Windows. W grze w dopasowywanie, gracz musi dopasować pary ikon, więc ta czcionka jest używana do wyświetlania dopasowywanych ikon. Zamiast umieszczać **c** w **tekstu** właściwość, spróbuj wprowadzić różne litery, aby zobaczyć, jakie ikony są wyświetlane. Znak wykrzyknika to pająk, wielkie N to oko, a przecinek to papryczka chili.  
   
 8. Wybierz formant etykiety i skopiuj go do następnej komórki w TableLayoutPanel. (Wybierz klawisze Ctrl + C lub na pasku menu wybierz **Edytuj**, **kopiowania**.) Następnie wklej go. (Wybierz klawisze Ctrl + V lub na pasku menu wybierz **Edytuj**, **Wklej**.) W drugiej komórce TableLayoutPanel pojawi się kopia pierwszej etykiety. Wklej ją ponownie, w trzeciej komórce pojawi się kolejna etykieta. Wklejaj `Label` kontroluje, aż wszystkie komórki zostaną wypełnione.  
   
    > [!NOTE]
-   >  Jeśli wkleisz zbyt wiele razy, IDE doda nowy wiersz do TableLayoutPanel, aby zrobić miejsce na dodanie nowego formantu etykiety. Można cofnąć tę operację. Aby usunąć nową komórkę, wybierz klawisze Ctrl + Z lub na pasku menu wybierz **Edytuj**, **Cofnij**.  
+   > Jeśli wkleisz zbyt wiele razy, IDE doda nowy wiersz do TableLayoutPanel, aby zrobić miejsce na dodanie nowego formantu etykiety. Można cofnąć tę operację. Aby usunąć nową komórkę, wybierz klawisze Ctrl + Z lub na pasku menu wybierz **Edytuj**, **Cofnij**.  
   
     Teraz formularz jest rozmieszczony. Powinien wyglądać tak, jak na poniższej ilustracji:  
   

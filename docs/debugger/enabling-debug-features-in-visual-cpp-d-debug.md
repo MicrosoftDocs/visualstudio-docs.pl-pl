@@ -25,11 +25,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 295bdc7b220f8977c85dd1b359f99af2f8d5d72a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850956"
 ---
 # <a name="enabling-debug-features-in-visual-c-ddebug"></a>Włączanie funkcji debugowania w programie Visual C++ (/D_DEBUG)
 W [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], funkcji debugowania, takie jak potwierdzenia są włączone, gdy kompilujesz program jest połączony z symbolem **_DEBUG** zdefiniowane. Można zdefiniować **_DEBUG** w jeden z dwóch sposobów:

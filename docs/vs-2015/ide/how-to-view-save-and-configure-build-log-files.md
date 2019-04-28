@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 496fcdf28f8ce9b0809988949d435c064734b508
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7bd8bae0213755b11c145c4bef9c312fe3990c4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432331"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Instrukcje: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Po skompilowaniu projektu w środowisku IDE programu Visual Studio można wyświ
      Aby uzyskać więcej informacji, zobacz [okno dialogowe Opcje, projekty i rozwiązania, kompilacji i uruchomienia](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) i <xref:Microsoft.Build.Framework.LoggerVerbosity>.  
   
     > [!IMPORTANT]
-    >  Należy przebudować projekt, aby zmiany zaczęły obowiązywać **dane wyjściowe** okna (wszystkie projekty) i *ProjectName*pliku txt (tylko dla projektów C++).  
+    > Należy przebudować projekt, aby zmiany zaczęły obowiązywać **dane wyjściowe** okna (wszystkie projekty) i *ProjectName*pliku txt (tylko dla projektów C++).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)   

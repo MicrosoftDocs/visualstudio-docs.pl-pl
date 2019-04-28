@@ -14,12 +14,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c0e8594014848bee103c65127b5edb7ad969284
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 80d4ebe992a3406a4e8c54b033cd4f526335231b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416975"
 ---
 # <a name="how-to-create-inheritance-between-types-class-designer"></a>Instrukcje: Tworzenie dziedziczenia między typami (Projektant klas) 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Aby utworzyć relację dziedziczenia między dwoma typami na diagramie klasy prz
 4. W przypadku typ pochodny od typu ogólnego, opcjonalnie kliknij przycisk linii dziedziczenia. W **właściwości** oknie **argumentów typu** właściwość będzie pasował do typu odpowiedniego dla typu ogólnego.  
   
     > [!NOTE]
-    >  Jeśli klasa abstrakcyjna nadrzędny zawiera co najmniej jedną abstrakcyjną składową, wszystkie abstrakcyjne składowe są zaimplementowane jako nieabstrakcyjne klasy dziedziczące.   
+    > Jeśli klasa abstrakcyjna nadrzędny zawiera co najmniej jedną abstrakcyjną składową, wszystkie abstrakcyjne składowe są zaimplementowane jako nieabstrakcyjne klasy dziedziczące.   
     >   
     >  Mimo że można wizualizować istniejące typy rodzajowe, nie można utworzyć nowych typów rodzajowych. Ponadto nie można zmienić parametrów typu dla istniejących typów rodzajowych.  
   

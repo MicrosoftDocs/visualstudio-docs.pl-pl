@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0530e5547fd17e1db84e7164039b507cb4583703
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 836788e0d9d44c7da5dda44ce80f76ab91642dda
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423965"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informacje o parametrach w starszej wersji usługi językowej
 Etykietki narzędzi IntelliSense Parameter Info zapewnia użytkownikom wskazówek na temat, gdzie się znajdują konstrukcją języka pierwszej klasy.
@@ -27,7 +27,7 @@ Etykietki narzędzi IntelliSense Parameter Info zapewnia użytkownikom wskazówe
  Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej, zobacz [rozszerzanie usług edytora i języka](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
->  Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.
+> Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.
 
 ## <a name="how-parameter-info-tooltips-work"></a>Jak działają parametr informacje w etykietkach narzędzi
  Po wpisaniu instrukcji w edytorze pakietu VSPackage Wyświetla okno etykiety narzędzi małych definicją instrukcji jego wpisywania. Na przykład, jeśli typ oświadczenia Microsoft Foundation Classes (MFC) (takich jak `pMainFrame ->UpdateWindow`) i naciśnij klawisz nawias otwierający, aby rozpocząć, lista parametrów, metody, pojawi się porada wyświetlanie definicji `UpdateWindow` metody.

@@ -17,12 +17,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fd47441a0e9b1c97851aa8a6acac712c51a4493a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c5897c6ffc2b4530ce74b29114c84cd3556f25cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437568"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Dostosowanie strony początkowej w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Można dostosować stronę początkową dla programu Visual Studio na kilka domy
     - Zainstaluj go z [Visual Studio Marketplace](https://marketplace.visualstudio.com/), innej witryny sieci Web lub strony w lokalnym intranecie.
 
         > [!NOTE]
-        >  Jeśli odpowiada ci strona przeznaczona dla starszej wersji Visual Studio, możesz ją uaktualnić przy użyciu Visual Studio SDK. Zobacz [jak: Uaktualnienie programu Visual Studio niestandardową stronę początkową](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).
+        > Jeśli odpowiada ci strona przeznaczona dla starszej wersji Visual Studio, możesz ją uaktualnić przy użyciu Visual Studio SDK. Zobacz [jak: Uaktualnienie programu Visual Studio niestandardową stronę początkową](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).
 
          Otwórz plik .vsix, zawierający niestandardową stronę początkową lub skopiuj i Wklej pliki strony początkowej do **% USERPROFILE % \My Studio 2015\StartPages** folderu na komputerze.
 
@@ -59,7 +59,7 @@ Można dostosować stronę początkową dla programu Visual Studio na kilka domy
 4. W **Dostosuj stronę początkową** listy, wybierz stronę, która ma.
 
 > [!NOTE]
->  Jeśli błąd na niestandardowej stronie początkowej powoduje, że Visual Studio ulega awarii, możesz uruchomić Visual Studio w trybie awaryjnym, a następnie ustawić go tak, aby używał domyślnej strony początkowej. Zobacz [/safemode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
+> Jeśli błąd na niestandardowej stronie początkowej powoduje, że Visual Studio ulega awarii, możesz uruchomić Visual Studio w trybie awaryjnym, a następnie ustawić go tak, aby używał domyślnej strony początkowej. Zobacz [/safemode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
 ## <a name="see-also"></a>Zobacz też
  [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [tworzenia własnego strony początkowej](../misc/creating-your-own-start-page.md)

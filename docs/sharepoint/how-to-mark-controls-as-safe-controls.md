@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d2dfe0da64abb9540724c05d13b84715a684af0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30bb597288c19328bb71ce7b5212200991d7181e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443073"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Instrukcje: Oznaczanie kontrolek pojęciem bezpiecznych kontrolek
   Dla bezpieczeństwa SharePoint oddzieli kontrolki sieci Web, które są chronione przed uruchomienie skryptu kontrolki sieci Web, które nie są. Chronione formantów, lub *bezpiecznych kontrolek*, może zostać oceniony przez niezaufanym użytkownikom. Możesz oznaczyć kontrolek jako bezpiecznych właściwości wpisy bezpiecznych kontrolek elementu projektu programu SharePoint lub w **projektancie pakietu** po dodaniu zestawu do pakietu. Aby uzyskać więcej informacji, zobacz artykuł
@@ -27,7 +27,7 @@ ms.locfileid: "60082038"
 - [plik Web.config zmiana ustawień](http://go.microsoft.com/fwlink/?LinkId=178965) i [rejestrowanie zestaw części sieci Web jako bezpiecznej kontrolki](http://go.microsoft.com/fwlink/?LinkId=171013).
 
 > [!IMPORTANT]
->  Te procedury są w celach ilustracyjnych. Oznaczanie kontrolek bezpieczne, tylko wtedy, gdy masz pewność, że są bezpieczne.
+> Te procedury są w celach ilustracyjnych. Oznaczanie kontrolek bezpieczne, tylko wtedy, gdy masz pewność, że są bezpieczne.
 
 ## <a name="marking-safe-controls-in-the-safe-control-entries-property"></a>Oznaczanie bezpiecznych kontrolek we właściwości wpisy kontroli bezpiecznego
 
@@ -94,7 +94,7 @@ ms.locfileid: "60082038"
     |Bezpieczne względem skryptu|Pozostaw **bezpieczne względem skryptu** wyczyść pole wyboru.|
 
     > [!NOTE]
-    >  **Nazwy zestawu** wartość dla zestawów dodane za pomocą **zaawansowane** karcie **projektancie pakietu** nie może być token, musi być silnej nazwy zestawu. Aby uzyskać więcej informacji, zobacz [tworzenie i zestawy Using Strong-Named](http://go.microsoft.com/fwlink/?LinkId=177513).
+    > **Nazwy zestawu** wartość dla zestawów dodane za pomocą **zaawansowane** karcie **projektancie pakietu** nie może być token, musi być silnej nazwy zestawu. Aby uzyskać więcej informacji, zobacz [tworzenie i zestawy Using Strong-Named](http://go.microsoft.com/fwlink/?LinkId=177513).
 
 13. Wybierz **kartę** klawisz, aby utworzyć inny wpis bezpiecznej kontrolki.
 

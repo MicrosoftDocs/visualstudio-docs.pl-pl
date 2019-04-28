@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2be0a0e62942c369d47947582bf746332e201577
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: fccd422a0f24a65532e648a1254aecedc484903e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425670"
 ---
 # <a name="registering-a-project-type"></a>Rejestrowanie typu projektu
 Gdy tworzysz nowy typ projektu, należy utworzyć wpisy rejestru, które umożliwiają [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rozpoznaje i pracować z danego typu projektu. Wpisy rejestru są zazwyczaj tworzone przy użyciu pliku skryptu (.rgs) z rejestru.
@@ -25,7 +25,7 @@ Gdy tworzysz nowy typ projektu, należy utworzyć wpisy rejestru, które umożli
  W poniższym przykładzie instrukcji z rejestru zapewnienia domyślnych ścieżek i danych w przypadku, gdy to stosowne, a następnie tabeli, która zawiera wpisy z rejestru skryptu dla każdej instrukcji. Tabele zawierają wpisy skryptu i dodatkowe informacje na temat oświadczeń.
 
 > [!NOTE]
->  Następujące informacje do rejestru jest przeznaczonych do przykładu i celów wpisów w skryptach rejestru, który będzie zapisywać do zarejestrowania typu projektu. Rzeczywiste wpisy i ich zastosowań mogą się różnić w zależności od określonych wymagań tego typu projektu. Należy przejrzeć przykłady można znaleźć taki, który przypomina typu projektu, które tworzysz, a następnie przejrzyj skrypt rejestru dla tego przykładu.
+> Następujące informacje do rejestru jest przeznaczonych do przykładu i celów wpisów w skryptach rejestru, który będzie zapisywać do zarejestrowania typu projektu. Rzeczywiste wpisy i ich zastosowań mogą się różnić w zależności od określonych wymagań tego typu projektu. Należy przejrzeć przykłady można znaleźć taki, który przypomina typu projektu, które tworzysz, a następnie przejrzyj skrypt rejestru dla tego przykładu.
 
  Poniższe przykłady pochodzą z HKEY_CLASSES_ROOT.
 
@@ -265,6 +265,6 @@ Gdy tworzysz nowy typ projektu, należy utworzyć wpisy rejestru, które umożli
  Oznacza to, że Jeśli dołączysz PROJECT_TYPE = EF wpisu w pliku .vsz znajduje środowiska .vsz swoje pliki w katalogu ProductDir określony wcześniej.
 
 ## <a name="see-also"></a>Zobacz też
-- [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Lista kontrolna: tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Elementy modelu projektu](../../extensibility/internals/elements-of-a-project-model.md)
 - [Tworzenie wystąpień projektów przy użyciu fabryk projektów](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

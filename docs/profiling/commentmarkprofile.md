@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e211d4a685abc9c4a4137ade443ea3e5b90acf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 897ff07f78301553812f6855f3aa4bdb556a650e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440193"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 `CommentMarkProfile` Funkcji wstawia znacznik liczbowych i ciąg tekstowy w. *Vsp* pliku. Dla tego znaku i komentarz do wstawienia, profilowania dla wątku, który zawiera `CommentMarkProfile` funkcja musi być włączone.
@@ -57,7 +57,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
  Znaczniki profilu są globalne w zakresie. Na przykład profilu znacznik wstawiony w jednym wątku może służyć do oznaczania początku lub końcu segmentu data w żadnym z wątków w. *vsp* pliku.
 
 > [!IMPORTANT]
->  Metoda CommentMarkProfile należy używać tylko z Instrumentacją.
+> Metoda CommentMarkProfile należy używać tylko z Instrumentacją.
 
 ## <a name="net-framework-equivalent"></a>Równoważne z .NET framework
  Microsoft.VisualStudio.Profiler.dll

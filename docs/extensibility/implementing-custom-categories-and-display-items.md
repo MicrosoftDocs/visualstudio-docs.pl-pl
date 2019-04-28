@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60ad63bd5a6fa3b8cca2a288e1c42b1a2ab326bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 124b1a1f5e6bbf0f07bf8533940820d4f5ca9247
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418839"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Implementowanie niestandardowych kategorii i wyświetlania elementów
 Pakietu VSPackage może zapewnić kontrolę nad czcionek i kolorów tekstu do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE) za pomocą niestandardowych kategorii i wyświetlenie elementów.
@@ -88,7 +88,7 @@ Pakietu VSPackage może zapewnić kontrolę nad czcionek i kolorów tekstu do [!
   - Wyświetlanie informacji dla każdego elementu członkowskiego **kategorii**.
 
   > [!NOTE]
-  >  Każdy **kategorii** musi zawierać co najmniej jeden **wyświetlanego elementu**.
+  > Każdy **kategorii** musi zawierać co najmniej jeden **wyświetlanego elementu**.
 
 - IDE używa <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> interfejs zdefiniowanie sumę kilka kategorii.
 
@@ -120,7 +120,7 @@ Pakietu VSPackage może zapewnić kontrolę nad czcionek i kolorów tekstu do [!
      Można to zrobić za pomocą systemu zaimplementowane <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu. Mimo że przede wszystkim do obsługi trwałości, <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> metoda może służyć do uzyskiwania informacji czcionek i kolorów dla **wyświetlania elementów**. Aby uzyskać więcej informacji, zobacz [dostępu przechowywane ustawienia czcionek i kolorów](../extensibility/accessing-stored-font-and-color-settings.md).
 
     > [!NOTE]
-    >  Aby upewnić się, że wyniki uzyskane za pomocą sondowania są poprawne, warto użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interfejs do ustalenia, czy potrzebne przed wywołaniem metody pobierania czyszczenie pamięci podręcznej i zaktualizuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu.
+    > Aby upewnić się, że wyniki uzyskane za pomocą sondowania są poprawne, warto użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interfejs do ustalenia, czy potrzebne przed wywołaniem metody pobierania czyszczenie pamięci podręcznej i zaktualizuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu.
 
 ## <a name="see-also"></a>Zobacz także
 

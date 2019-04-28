@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 262ada44-7689-44d8-bacb-9c6d33834d4e
 caps.latest.revision: 11
 manager: jillfra
-ms.openlocfilehash: dee3f9f906f217befe3a4b7b80c068de9d6e6136
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f9d930765a427d32836f464a424b5cd898090ac5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436532"
 ---
 # <a name="upgrading-custom-projects"></a>Uaktualnianie projektów niestandardowych
 W przypadku zmiany dane utrwalone w pliku projektu, między różnymi wersjami programu Visual Studio produktu, a następnie potrzeba do obsługi, uaktualnianie pliku projektu ze starej do nowej wersji. Do obsługi, uaktualniania z można uczestniczyć w **Kreator konwersji Visual Studio**, implementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interfejsu. Ten interfejs zawiera tylko mechanizm dostępne dla uaktualnienie kopii. W przypadku uaktualniania projektu odbywa się jako część rozwiązania zostanie otwarty. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> Interfejs jest implementowany przez fabrykę projektu lub powinien wynosić co najmniej możliwe do uzyskania z fabryki projektu.  
@@ -109,7 +109,7 @@ W przypadku zmiany dane utrwalone w pliku projektu, między różnymi wersjami p
   4. Wywołania środowiska `IVsProjectUpgrade::UpgradeProject` raz drugi w celu określenia, czy obiekt projektu powinny zostać uaktualnione. Jednak to wywołanie nowy, drugie wystąpienie projektu o nazwie Project2. Jest to projekt, który jest otwierany w rozwiązaniu.  
   
       > [!NOTE]
-      >  W przypadku pierwszego projektu projektu Project1, jest umieszczany w stan nieaktywny, a następnie musi zwracać <xref:Microsoft.VisualStudio.VSConstants.S_OK> z pierwszego wywołania usługi <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> implementacji. Zobacz [podstawowego projektu](http://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) dla implementacji `IVsProjectUpgrade::UpgradeProject`.  
+      > W przypadku pierwszego projektu projektu Project1, jest umieszczany w stan nieaktywny, a następnie musi zwracać <xref:Microsoft.VisualStudio.VSConstants.S_OK> z pierwszego wywołania usługi <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> implementacji. Zobacz [podstawowego projektu](http://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) dla implementacji `IVsProjectUpgrade::UpgradeProject`.  
   
   5. Należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> i przekaż wartość <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags> dla `rgfQueryEdit` parametru.  
   

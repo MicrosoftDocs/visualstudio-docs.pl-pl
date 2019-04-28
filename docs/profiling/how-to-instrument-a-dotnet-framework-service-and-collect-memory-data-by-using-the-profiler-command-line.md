@@ -8,23 +8,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2ef6761222f9dd2396d5a3f72bd2bef5ac47971f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: aa6d9416a6ce368a666d3f379e86752d82f00a91
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436744"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Instrukcje: Instrumentacja usługi .NET Framework i zbieranie danych pamięci przy użyciu wiersza polecenia profilera
 W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia narzędzi Profilujących do Instrumentacji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] usługi i zbierania danych użycia pamięci. Można zbierać dane alokacji pamięci lub zbierać zarówno alokacji pamięci, jak i danych o okresie istnienia obiektu.
 
 > [!NOTE]
->  Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 >
 > [!NOTE]
->  Nie można profilować usługi za pomocą metody instrumentacji, jeśli usługa nie można uruchomić ponownie po uruchomieniu komputera, usługa, która jest uruchamiana podczas uruchamiania systemu operacyjnego.
+> Nie można profilować usługi za pomocą metody instrumentacji, jeśli usługa nie można uruchomić ponownie po uruchomieniu komputera, usługa, która jest uruchamiana podczas uruchamiania systemu operacyjnego.
 >
->  Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie.
+> Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie.
 
 ## <a name="start-the-profiling-session"></a>Rozpocznij sesję profilowania
  Aby zbierać dane dotyczące wydajności z [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] usługi, użyj [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) narzędzia, aby zainicjować zmienne środowiskowe i [VSInstr.exe](../profiling/vsinstr.md) do utworzenia instrumentowanej kopia pliku binarnego usługi.
@@ -69,7 +69,7 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
      Można użyć dowolnego z następujących opcji z **/start:sample** opcji.
 
    > [!NOTE]
-   >  **/User** i **/crosssession** opcje są zazwyczaj wymagane dla usług.
+   > **/User** i **/crosssession** opcje są zazwyczaj wymagane dla usług.
 
    | Opcja | Opis |
    | - | - |

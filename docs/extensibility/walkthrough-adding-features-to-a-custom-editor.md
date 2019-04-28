@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 085e5ae408155227c1d60e312b7e9623be2e3897
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: afbde92cd666e0e67b1e70b0b4899c09d8b5b3e7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411072"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Przewodnik: Dodawanie funkcji do edytora niestandardowego
 Po utworzeniu niestandardowego edytora, możesz dodać więcej funkcji do niego.
@@ -49,7 +49,7 @@ Po utworzeniu niestandardowego edytora, możesz dodać więcej funkcji do niego.
     2. Aby reagować na zmiany pliku zewnętrznego, należy zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> na obiekt danych dokumentu w edytorze.
 
         > [!NOTE]
-        >  Wywołaj `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> uzyskać wskaźnik do `IVsFileChangeEx`.
+        > Wywołaj `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> uzyskać wskaźnik do `IVsFileChangeEx`.
 
 7. Koordynowanie zdarzeń edycji dokumentów kontroli kodu źródłowego. Wykonaj następujące kroki:
 
@@ -136,7 +136,7 @@ Po utworzeniu niestandardowego edytora, możesz dodać więcej funkcji do niego.
    <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>
 
   > [!NOTE]
-  >  `IOleInPlaceComponent` Interfejs jest używany w celu uniknięcia scalania menu OLE 2.
+  > `IOleInPlaceComponent` Interfejs jest używany w celu uniknięcia scalania menu OLE 2.
 
    Twoje `IOleCommandTarget` implementacja obsługuje poleceń, takich jak **Wytnij**, **kopiowania**, i **Wklej**. Podczas implementowania `IOleCommandTarget`, zdecyduj, czy edytor wymaga własnej *vsct* plik, aby zdefiniować własne polecenia menu struktury lub jeśli implementuje on standardowe polecenia definiowane przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Zazwyczaj edytory użyć rozszerzenia menu środowiska IDE i zdefiniować własne paski narzędzi. Często jest jednak niezbędne dla edytora zdefiniować własne odpowiednie polecenia, oprócz używania zestaw standardowych poleceń środowiska IDE. Edytor musi zadeklarować standardowe polecenia używa, a następnie zdefiniować nowe polecenia, menu kontekstowe, najwyższego poziomu menu i paski narzędzi w *vsct* pliku. Jeśli aktywacja w miejscu utworzyć edytor, zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> i zdefiniuj menu i paski narzędzi edytora w *vsct* zamiast za pomocą scalania menu OLE 2 pliku.
 

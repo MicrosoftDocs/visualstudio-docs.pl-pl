@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b7576faf84b564e1ea10ef9def69819e5c77fa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e0ef4264629e40380f12fb07623bb9274547713c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441583"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Instrukcje: Określanie plików publikowanych za pomocą technologii ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] plik
 4. W **pliki aplikacji** okno dialogowe, wybierz opcję **grupy** pola dla pliku, który chcesz dołączyć do nowej grupy.  
   
     > [!NOTE]
-    >  Pliki muszą mieć **Build Action** właściwością **zawartości** przed nazwami plików są wyświetlane w **pliki aplikacji** okno dialogowe.  
+    > Pliki muszą mieć **Build Action** właściwością **zawartości** przed nazwami plików są wyświetlane w **pliki aplikacji** okno dialogowe.  
   
 5. W **grupa pobierania** pól, zaznacz  **\<nowy... >** z listy rozwijanej.  
   
@@ -114,7 +114,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] plik
 5. W **grupa pobierania** wybierz grupę z listy rozwijanej.  
   
     > [!NOTE]
-    >  Nie można zmienić **grupa pobierania** dla plików, które są wymagane przez aplikację do uruchamiania.  
+    > Nie można zmienić **grupa pobierania** dla plików, które są wymagane przez aplikację do uruchamiania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   

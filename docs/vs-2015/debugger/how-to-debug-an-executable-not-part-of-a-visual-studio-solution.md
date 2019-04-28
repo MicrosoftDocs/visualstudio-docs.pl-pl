@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e913d67442d21cb1a0895721c22ede9b69363f53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d871d469fc71beaa5c3e3323aad08eda3f546729
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434479"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Instrukcje: Debugowanie pliku wykonywalnego nie jest częścią rozwiązania programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Czasami możesz chcieć debugowanie pliku wykonywalnego, który nie jest częśc
 5. Uruchom plik wykonywalny, wybierając polecenie wykonania, takie jak **Start**, z **debugowania** menu.  
   
     > [!NOTE]
-    >  Nie wszystkie języki programowania wspierają projekty EXE. Zainstaluj [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] Jeśli musisz korzystać z tej funkcji.  
+    > Nie wszystkie języki programowania wspierają projekty EXE. Zainstaluj [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] Jeśli musisz korzystać z tej funkcji.  
   
      Podczas debugowania pliku wykonywalnego bez kodu źródłowego, dostępne funkcje debugowania są ograniczone, czy dołączyć do uruchomionego pliku wykonywalnego lub dodać plik wykonywalny do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania. Jeśli plik wykonywalny został skompilowany bez informacji debugowania w zgodnym formacie, funkcje dostępne są dalej ograniczone. Jeśli masz kod źródłowy, najlepszym rozwiązaniem jest zaimportowanie kodu źródłowego do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i utworzenie kompilacja do debugowania pliku wykonywalnego w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dac4ae8357d62813abb3f4735ec6e1f8b552d324
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e70b83046c41b13cb51324eb63e81b26a118a81f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403500"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Hierarchia leksykalna typów symboli
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ W poniższej tabeli przedstawiono typy symbol w hierarchia leksykalna.
 |[UsingNameSpace](../../debugger/debug-interface-access/usingnamespace.md)|Określa `namespace`identyfikatora.|  
   
 > [!NOTE]
->  Właściwości dodatkowe symboli może znajdować się w zależności od typu symbolu. Te właściwości są podane w tematach pojedynczy symbol.  
+> Właściwości dodatkowe symboli może znajdować się w zależności od typu symbolu. Te właściwości są podane w tematach pojedynczy symbol.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Hierarchia klas typów symboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   

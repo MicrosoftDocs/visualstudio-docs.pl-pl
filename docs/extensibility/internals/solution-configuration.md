@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d8da1446682c36549440e9b9e38ce110e0b35ba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e2683c3a2ea80aad341b7fab4fb35d13ea5379c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429049"
 ---
 # <a name="solution-configuration"></a>Konfiguracja rozwiązania
 Konfiguracje rozwiązania przechowywania właściwości poziomie rozwiązania. Bezpośrednie ich zachowanie **Start** klucza (F5) i **kompilacji** poleceń. Domyślnie te polecenia kompilacji i uruchomić z konfiguracji debugowania. Oba polecenia są wykonywane w kontekście konfiguracji rozwiązania. Oznacza to, czy użytkownika można oczekiwać, że F5 do uruchamiania i kompilacji, niezależnie od aktywnego rozwiązania są konfigurowane za pomocą ustawień. Środowisko zaprojektowano pod kątem rozwiązań, a nie z projektów, jeśli chodzi o tworzenie i uruchamianie.
@@ -23,7 +23,7 @@ Konfiguracje rozwiązania przechowywania właściwości poziomie rozwiązania. B
  Standardowy pasek narzędzi programu Visual Studio zawiera przycisk Start i Konfiguracja rozwiązania listy rozwijanej z prawej strony przycisk Start. Ta lista pozwala użytkownikom wybrać konfigurację można uruchomić po naciśnięciu klawisza F5, tworzyć własne konfiguracje rozwiązań lub Edytuj istniejącą konfigurację.
 
 > [!NOTE]
->  Nie ma żadnych interfejsów rozszerzalności do tworzenia lub edytowania konfiguracje rozwiązania. Należy użyć `DTE.SolutionBuilder`. Istnieją jednak rozszerzalności interfejsów API do zarządzania budowanie rozwiązania. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.
+> Nie ma żadnych interfejsów rozszerzalności do tworzenia lub edytowania konfiguracje rozwiązania. Należy użyć `DTE.SolutionBuilder`. Istnieją jednak rozszerzalności interfejsów API do zarządzania budowanie rozwiązania. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.
 
  Poniżej przedstawiono, jak można implementować konfiguracje rozwiązania obsługiwany przez użytkownika typ projektu:
 

@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6cedb5e0b8dd80aadc3ee3a9507b2210811fb1bf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851858"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Przygotowanie debugowania: Typy projektów C#, F# i Visual Basic
 W tematach w tej sekcji opisano sposób debugowania C#, F#, i [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektu typów utworzonych przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablony projektów.

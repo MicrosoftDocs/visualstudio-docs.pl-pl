@@ -12,12 +12,12 @@ ms.assetid: 2f13e601-dadc-476e-a8ec-01c4515082e7
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 15320fc86eab15ff59229239b28721f6e926e794
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 74694c903040b278ed8864b46756cac66381405a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445009"
 ---
 # <a name="dbgattribflags"></a>DBG_ATTRIB_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -300,7 +300,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
 ## <a name="remarks"></a>Uwagi  
   
 > [!NOTE]
->  Wartości w tym wyliczeniu nie są faktycznie zdefiniowane w zestawie dla języka C#. Zamiast tego należy skopiować definicji do pliku źródłowego.  
+> Wartości w tym wyliczeniu nie są faktycznie zdefiniowane w zestawie dla języka C#. Zamiast tego należy skopiować definicji do pliku źródłowego.  
   
  Te flagi są również używane do filtrowania elementy podrzędne obiektu, na przykład, gdy jest przekazywany jako argument do [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md). Wartości mogą być łączone przy użyciu bitowego operatora `OR`.  
   

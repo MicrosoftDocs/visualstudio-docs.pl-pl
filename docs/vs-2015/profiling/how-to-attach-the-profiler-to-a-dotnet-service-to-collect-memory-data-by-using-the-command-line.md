@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91c993697103417eb3ba39e3c6d2929baee9311a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9a1601b855cfc895aa01c6b72cbbe36b59980bd5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432899"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Instrukcje: Dołącz Profiler do usługi .NET i zbieranie danych pamięci przy użyciu wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,10 +22,10 @@ ms.locfileid: "60046426"
 W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wiersza polecenia narzędzi Profilujących do dołączenia programu profilującego do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] usługi i zbierania danych pamięci. Możesz zbierać dane dotyczące liczby i rozmiaru alokacji pamięci i może również zbierać dane dotyczące okresu istnienia obiektów pamięci.  
 
 > [!NOTE]
->  Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje Windows Store również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje Windows Store również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
 
 > [!NOTE]
->  Narzędzia wiersza poleceń dla narzędzi profilowania znajdują się w podkatalogu \team tools\performance Tools [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] katalogu instalacyjnego. Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie. Aby uzyskać więcej informacji, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+> Narzędzia wiersza poleceń dla narzędzi profilowania znajdują się w podkatalogu \team tools\performance Tools [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] katalogu instalacyjnego. Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie. Aby uzyskać więcej informacji, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
 
  Zbieranie danych pamięci z [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] usługi, użyj [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) narzędzia do inicjowania odpowiednich zmiennych środowiskowych na komputerze, który hostuje usługę. Aby skonfigurować go na potrzeby profilowania, należy ponownie uruchomić komputer.  
 
@@ -72,7 +72,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md
      Można użyć co najmniej jeden z następujących opcji z **/start:sample** opcji.  
 
    > [!NOTE]
-   >  **/User** i **/crosssession** opcje są zazwyczaj wymagane dla usług.  
+   > **/User** i **/crosssession** opcje są zazwyczaj wymagane dla usług.  
 
    |                                 Opcja                                  |                                                                                                                                                   Opis                                                                                                                                                    |
    |-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

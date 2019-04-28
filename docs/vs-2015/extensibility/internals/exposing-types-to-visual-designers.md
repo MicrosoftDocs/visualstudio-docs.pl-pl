@@ -12,12 +12,12 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a50b298dfafe093e404c6575b16a074d106522ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2db026367e43c1092cf9744817449ce51556a4a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436312"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Udostępnianie typów dla projektantów wizualnych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60103436"
  System projektu zapewnia pełną obsługę śledzenia zmian do pliku danych wyjściowych niestandardowego narzędzia, pod warunkiem, że te zmiany są wynikiem uruchomić narzędzie niestandardowe. Każdorazowo, gdy niestandardowe narzędzie jest uruchamiane, jest generowany nowy tymczasowych i odpowiedniego powiadomienia są wysyłane do projektantów.  
   
 > [!NOTE]
->  Ponieważ plik wykonywalny Generowanie tymczasowego programu jest wykonywany w tle, nie błędy są zgłaszane dla użytkownika, jeśli kompilacja zakończy się niepowodzeniem.  
+> Ponieważ plik wykonywalny Generowanie tymczasowego programu jest wykonywany w tle, nie błędy są zgłaszane dla użytkownika, jeśli kompilacja zakończy się niepowodzeniem.  
   
  Narzędzia niestandardowe łączące korzystając z tymczasowego obsługi PE, należy wykonać następujące reguły:  
   

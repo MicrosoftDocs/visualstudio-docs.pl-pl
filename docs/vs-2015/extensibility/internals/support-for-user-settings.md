@@ -12,12 +12,12 @@ ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ab746bfd3e8854fddd83f3fdde49a5d0dda397ca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d83c90d7e94471374f0c882f3868d16c963e4490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440080"
 ---
 # <a name="support-for-user-settings"></a>Pomoc techniczna dotycząca ustawień użytkownika
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Pakietu VSPackage może zdefiniować co najmniej jednej kategorii ustawienia, kt
  Niestandardowe ustawienia punkty są tworzone we wpisie rejestru w następującej lokalizacji: HKLM\Software\Microsoft\VisualStudio\\*\<wersji >* \UserSettings\\`<CSPName>`, gdzie `<CSPName>` nazywa się punkt ustawienia niestandardowe obsługuje pakietu VSPackage i  *\<wersji >* jest wersją [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], na przykład 8.0.  
   
 > [!NOTE]
->  Ścieżka katalogu głównego HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >* może zostać zastąpiona przez alternatywne główne, kiedy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] jest zintegrowanym środowisku programistycznym (IDE) zainicjowane. Aby uzyskać więcej informacji, zobacz [przełączniki wiersza polecenia](../../extensibility/command-line-switches-visual-studio-sdk.md).  
+> Ścieżka katalogu głównego HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >* może zostać zastąpiona przez alternatywne główne, kiedy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] jest zintegrowanym środowisku programistycznym (IDE) zainicjowane. Aby uzyskać więcej informacji, zobacz [przełączniki wiersza polecenia](../../extensibility/command-line-switches-visual-studio-sdk.md).  
   
  Poniżej przedstawiono strukturę wpis rejestru:  
   

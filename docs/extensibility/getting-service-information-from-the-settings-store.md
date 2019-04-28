@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fe38bf84510ea247c737477e421db8dbb15f63c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863145"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>Uzyskaj informacje o usłudze z magazynu ustawień
 Można użyć magazynu ustawień, aby znaleźć wszystkie dostępne usługi lub aby określić, czy określona usługa jest zainstalowana. Musisz znać typ klasy usługi.

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a188116b09b846e81023c239d64d6386c7f2c6ae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861974"
 ---
 # <a name="inside-the-core-editor"></a>W edytorze podstawowych
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Edytorze podstawowych funkcji to zbiór kilka składników, które pozwalają na modyfikowanie i wykonywania zapytań względem informacji tekstowych. Jeśli dostosowano podstawowy edytor przy użyciu starszej wersji interfejsu API, można nadal używać tych dostosowania, które będą kierowane za pośrednictwem karty edytora. Jest to zalecane, jednak dostosować własne dostosowania do edytora nowego interfejsu API.

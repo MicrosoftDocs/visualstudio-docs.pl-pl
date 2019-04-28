@@ -20,11 +20,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3990d43ae11db3db8eb792883ba62a030cde3a2f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62548575"
 ---
 # <a name="uml-sequence-diagrams-reference"></a>Diagramy sekwencji UML: Tematy pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,4 +66,4 @@ W programie Visual Studio *diagram sekwencji* pokazuje interakcji, która reprez
  [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
  [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)   
  [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)   
- [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)
+ [Diagramy składników UML: informacje](../modeling/uml-component-diagrams-reference.md)

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dc0dc26a01cdddb4b26dfa65acab2c497618a76e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926900"
 ---
 # <a name="change-view-settings-by-using-the-legacy-api"></a>Zmienianie ustawień widoku przy użyciu starszej wersji interfejsu API
 Ustawienia podstawowe funkcje edytora, takie jak zawijanie wyrazów, margines zaznaczania i wirtualną przestrzenią, można zmienić przez użytkownika przez **opcje** okno dialogowe. Jednak istnieje również możliwość zmiany tych ustawień programowo.

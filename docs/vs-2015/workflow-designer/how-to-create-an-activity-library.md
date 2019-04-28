@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce02d639f6fcd3040566a2c279713c046f9c6ead
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f41b6332aab272baed17e9955687c34803003d0b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444568"
 ---
 # <a name="how-to-create-an-activity-library"></a>Instrukcje: Tworzenie biblioteki działań
 Działania niestandardowe są używane do modelowania procesów biznesowych w szczególności w przepływie pracy. Szablon Biblioteka działań w [!INCLUDE[vs2010](../includes/vs2010-md.md)] została przekazana do utworzenia takiego działania niestandardowe, które wizualnie za pomocą [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
@@ -38,14 +38,14 @@ Działania niestandardowe są używane do modelowania procesów biznesowych w sz
 7. W **rozwiązania** polu, wpisz nazwę opisową dla danego rozwiązania, a następnie kliknij przycisk **OK**.  
   
     > [!NOTE]
-    >  Jeśli chcesz dodać aplikację konsoli przepływu pracy do istniejącego rozwiązania, otwórz rozwiązanie w [!INCLUDE[vs2010](../includes/vs2010-md.md)], kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań**i wybierz **Dodaj**, następnie  **Nowy projekt...** Aby otworzyć **nowy projekt** okno dialogowe. Należy postępować zgodnie z powyższym opisem w tej procedurze.  
+    > Jeśli chcesz dodać aplikację konsoli przepływu pracy do istniejącego rozwiązania, otwórz rozwiązanie w [!INCLUDE[vs2010](../includes/vs2010-md.md)], kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań**i wybierz **Dodaj**, następnie  **Nowy projekt...** Aby otworzyć **nowy projekt** okno dialogowe. Należy postępować zgodnie z powyższym opisem w tej procedurze.  
   
 8. Szablon projektu umożliwia utworzenie definicji działania w XAML. [!INCLUDE[wfd1](../includes/wfd1-md.md)] Otwiera i wyświetla obszar roboczy dla działania niestandardowego.  
   
 9. Przeciągnij działanie z **przybornika** do powierzchni projektu, które mają zostać objęte działanie niestandardowe.  
   
     > [!CAUTION]
-    >  Tylko jeden element podrzędny działania są dozwolone w treści działanie niestandardowe; jednak działania podrzędne może być złożone działania, takie jak <xref:System.Activities.Statements.Sequence> działania lub <xref:System.Activities.Statements.Flowchart> działania.  
+    > Tylko jeden element podrzędny działania są dozwolone w treści działanie niestandardowe; jednak działania podrzędne może być złożone działania, takie jak <xref:System.Activities.Statements.Sequence> działania lub <xref:System.Activities.Statements.Flowchart> działania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Instrukcje: Utwórz działanie](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   

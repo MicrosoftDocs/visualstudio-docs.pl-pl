@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d5e3669ddaf9d8073038f0fa0c01c7e5a19a209d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f103a1239996e1f68fb6dae7a9f0a41f55ad858e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437099"
 ---
 # <a name="code-metrics-values"></a>Wartości metryk kodów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Metryki kodu to zestaw miar oprogramowania, które dostarczają deweloperowi lep
 - **Złożoność Cyklomatyczna** — mierzy strukturalnych złożoności kodu. Zostanie utworzony, obliczając liczbę różne ścieżki przepływu programu. Program, który zawiera przepływ sterowania złożonych będzie wymagać więcej testów do osiągnięcia pokrycia kodu dobre i będzie mniej łatwego w utrzymaniu.  
   
     > [!NOTE]
-    >  W niektórych przypadkach obliczenia złożoność cyklomatyczna metody w [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] różni się od wcześniejszych wersji. Aby uzyskać więcej informacji, zobacz "Zmiany w Visual Studio 2010 złożoność obliczeń sekcję kodu" z [Rozwiązywanie problemów metryki kodu](../code-quality/troubleshooting-code-metrics-issues.md).  
+    > W niektórych przypadkach obliczenia złożoność cyklomatyczna metody w [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] różni się od wcześniejszych wersji. Aby uzyskać więcej informacji, zobacz "Zmiany w Visual Studio 2010 złożoność obliczeń sekcję kodu" z [Rozwiązywanie problemów metryki kodu](../code-quality/troubleshooting-code-metrics-issues.md).  
   
 - **Głębokość dziedziczenia** — wskazuje liczbę definicji klasy, które rozszerzenia w katalogu głównym hierarchii klas. Głębiej hierarchii coraz trudniejszy do zrozumienia, gdzie są zdefiniowane określonej metody i pola może być lub / i zmieniony.  
   

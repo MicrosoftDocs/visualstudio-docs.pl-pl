@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1be553955abdc42c2a9b4d09ff857e9236b1a002
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6cac959fb4f9c52849e6e121943fd847deb923d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427397"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Instrukcje: Importowanie tematu lub strony wzorcowej
   Można nadać strony w witrynie programu SharePoint spójny wygląd, tworząc i za pomocą stron wzorcowych i motywów. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nie zapewnia szablony dla tych elementów, ale można je utworzyć w programie SharePoint Designer, a następnie zaimportować je do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [bloków konstrukcyjnych: Strony i interfejs użytkownika](http://go.microsoft.com/fwlink/?LinkID=182095) w witrynie internetowej firmy Microsoft.
@@ -48,7 +48,7 @@ ms.locfileid: "60081909"
 8. Jeśli dodano stronę wzorcową, zmienić jego **Rozwiązywanie konfliktów wdrażania** ustawienie **automatyczne** we właściwościach modułu.
 
     > [!NOTE]
-    >  Mogą wystąpić błędy, jeśli nazwa strony wzorcowej jest taka sama jak nazwa istniejącej strony głównej, która jest oznaczona jako domyślna strona wzorcowa lub niestandardowej strony wzorcowej. Aby uzyskać informacje o sposobie rozwiązania tego problemu, zobacz [instruktażu: Importowanie niestandardowej strony wzorcowej oraz strony witryny z obrazem](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).
+    > Mogą wystąpić błędy, jeśli nazwa strony wzorcowej jest taka sama jak nazwa istniejącej strony głównej, która jest oznaczona jako domyślna strona wzorcowa lub niestandardowej strony wzorcowej. Aby uzyskać informacje o sposobie rozwiązania tego problemu, zobacz [instruktażu: Importowanie niestandardowej strony wzorcowej oraz strony witryny z obrazem](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).
 
 9. W module, otwórz *Elements.xml*.
 
@@ -81,7 +81,7 @@ ms.locfileid: "60081909"
      Wartość **Web** oznacza, że strona główna ma zastosowanie tylko do witryny sieci Web, która jest obecnie określone w projekcie. Wartość **witryny** oznacza, że strona główna ma zastosowanie do bieżącej kolekcji witryny, w tym wszystkie lokacje podrzędne i internetowego poziomu głównego. Inne wartości nie mają zastosowania.
 
     > [!NOTE]
-    >  Ponieważ motywy można stosować tylko na poziomie zbioru witryn, zaleca się czy nie ustawisz zakres motyw do żadnego elementu innego niż **witryny**. Mogą wystąpić błędy, jeśli motyw jest używana w lokacji podrzędnej.
+    > Ponieważ motywy można stosować tylko na poziomie zbioru witryn, zaleca się czy nie ustawisz zakres motyw do żadnego elementu innego niż **witryny**. Mogą wystąpić błędy, jeśli motyw jest używana w lokacji podrzędnej.
 
 12. Na pasku menu wybierz **kompilacji** > **wdrożyć rozwiązanie**.
 

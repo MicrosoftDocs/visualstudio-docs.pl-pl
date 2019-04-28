@@ -11,16 +11,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf90a2c03112cb2d3a935a9721f455ec976803c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b5a6854911735c5bbc004a91c86d5d16305a928b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409919"
 ---
 # <a name="change-the-value-of-a-local"></a>Zmień wartość zmiennej lokalnej
 > [!IMPORTANT]
->  W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacje o implementowaniu ewaluatory wyrażeń CLR, zobacz [ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykładowe ewaluatora wyrażeń zarządzane](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacje o implementowaniu ewaluatory wyrażeń CLR, zobacz [ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykładowe ewaluatora wyrażeń zarządzane](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Po wpisaniu nową wartość w polu wartość **lokalne** oknie Debugowanie pakietu przekazuje ciąg, ponieważ wpisany Ewaluator wyrażeń (EE). EE daje w wyniku tego ciągu, który może zawierać proste wartość lub wyrażenie, a przechowuje wartość wynikową w lokalnej skojarzone.
 

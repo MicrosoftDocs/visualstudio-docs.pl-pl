@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0de5d5560c2e840fd2df7fdc5811c5eea0747da8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6b172ffbf481ea077d099288b3b79254b89b13a5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432740"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>Instrukcje: Tworzenie raportu ETW narzędzi profilowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60106504"
 Raport śledzenie zdarzeń dla Windows (ETW) zawiera listę zdarzeń funkcji ETW, które są rejestrowane w sesji pomiaru wydajności [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling Tools. Dane ETW są zbierane w pliku danych binarnych (ETL). Aby uzyskać więcej informacji na temat tego raportu, zobacz [raportu śledzenie zdarzeń dla Windows (ETW)](../profiling/event-tracing-for-windows-etw-report.md).  
   
 > [!NOTE]
->  Nie można wyświetlić raporty ETW w interfejsie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+> Nie można wyświetlić raporty ETW w interfejsie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 - Aby uzyskać informacje dotyczące zbierania danych ETW przy użyciu interfejsu dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zobacz [jak: Zbieranie zdarzeń śledzenia for Windows (ETW) — dane](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
   

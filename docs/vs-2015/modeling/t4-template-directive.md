@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71d7dc0fc208fa3c108019f6324c3d053673e918
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 252b554542df23e2d3197dfe28100546a6d25b32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411462"
 ---
 # <a name="t4-template-directive"></a>Dyrektywa T4 dotycząca szablonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -212,7 +212,7 @@ This is the common footer.
  Można również użyć zwykłej klasy odręcznej jako klasy bazowej. Klasa bazowa musi dostarczać metody stosowane w klasie pochodnej.  
   
 > [!WARNING]
->  Jeśli używasz `inherits` i `hostspecific` atrybuty razem, określ hostspecific = "trueFromBase" w klasie pochodnej i host = "true" w klasie bazowej. Pozwala to uniknąć podwójnej definicji `Host` właściwość w wygenerowanym kodzie.  
+> Jeśli używasz `inherits` i `hostspecific` atrybuty razem, określ hostspecific = "trueFromBase" w klasie pochodnej i host = "true" w klasie bazowej. Pozwala to uniknąć podwójnej definicji `Host` właściwość w wygenerowanym kodzie.  
   
 ### <a name="inheritance-in-a-design-time-text-template"></a>Dziedziczenie w szablonie tekstowym czasu projektowania  
  Szablon tekstowy czasu projektowania jest plikiem, dla którego **narzędzie niestandardowe** ustawiono **TextTemplatingFileGenerator**. Szablon generuje plik wyjściowy kodu lub tekstu, który stanowi część sieci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu. Aby wygenerować plik wyjściowy, szablon najpierw jest tłumaczony na plik kodu programu pośredniego, którego zwykle nie widać. `inherits` Atrybut określa klasę bazową dla tego kodu pośredniego.  

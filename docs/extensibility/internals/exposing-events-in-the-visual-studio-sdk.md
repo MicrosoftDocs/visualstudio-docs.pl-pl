@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3cc905e359d7bcb2946d627ebcb3c28067233fa0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910337"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Udostępnianie zdarzeń w Visual Studio SDK
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Umożliwia źródeł zdarzeń za pomocą automatyzacji. Zaleca się, że źródła zdarzeń dla projektów i elementów projektu.

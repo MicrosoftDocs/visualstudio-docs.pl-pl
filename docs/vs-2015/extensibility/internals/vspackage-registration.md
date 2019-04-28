@@ -11,12 +11,12 @@ ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ec9bb626b44365dc27d46a235a1ee4895f3eb5c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5dab1d68b9cf3e69c2f7a4a03d6e91a4fbab1907
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440807"
 ---
 # <a name="vspackage-registration"></a>Rejestracja pakietu VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,14 +24,14 @@ ms.locfileid: "60074561"
 Poinformowanie pakietów VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] są zainstalowane i powinny zostać załadowany. Ten proces odbywa się przez zapisywania informacji w rejestrze. To typowe zadanie Instalatora.  
   
 > [!NOTE]
->  Jest akceptowana praktyka podczas programowania pakietu VSPackage, aby użyć rejestracji automatycznej. Jednak [!INCLUDE[vsipprvsip](../../includes/vsipprvsip-md.md)] partnerów nie można wysłać ich produktów w ramach instalacji za pomocą rejestracji automatycznej.  
+> Jest akceptowana praktyka podczas programowania pakietu VSPackage, aby użyć rejestracji automatycznej. Jednak [!INCLUDE[vsipprvsip](../../includes/vsipprvsip-md.md)] partnerów nie można wysłać ich produktów w ramach instalacji za pomocą rejestracji automatycznej.  
   
  Rejestr w pakiet Instalatora Windows jest ogólnie wpisów w tabeli w rejestrze. Można również zarejestrować rozszerzeń plików, w tabeli w rejestrze. Jednak Instalator Windows udostępnia wbudowaną obsługę identyfikator programowy (ProgId), klasy, rozszerzenia i tabele zlecenie. Aby uzyskać więcej informacji, zobacz [tabel bazy danych](http://msdn.microsoft.com/library/aa368259\(VS.85\).aspx).  
   
  Pamiętaj, że wpisy rejestru są skojarzone ze składnikiem, który jest odpowiedni dla wybranej strategii side-by-side. Na przykład wpisy rejestru dla pliku udostępnionego, powinna być skojarzona z tego pliku Instalatora Windows składnika. Podobnie wpisy rejestru dla określonej wersji pliku powinna być skojarzona z tego pliku składnika. W przeciwnym razie Instalowanie lub odinstalowywanie Twojego pakietu VSPackage dla jednej wersji [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] może spowodować przerwanie usługi pakietu VSPackage w innych wersjach. Aby uzyskać więcej informacji, zobacz [obsługi wielu wersji programu Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)  
   
 > [!NOTE]
->  Najprostszym sposobem na Zarządzanie rejestracją jest używać tych samych danych w tych samych plików zarówno dla rejestracji dla deweloperów i rejestracji czas instalacji. Na przykład niektóre narzędzia do programowania Instalator może zużywać plik w formacie reg w czasie kompilacji. Jeśli deweloperzy przechowują pliki reg własne codziennych opracowywania i debugowania, tych samych plików mogą być zawarte w Instalatorze automatycznie. Jeśli nie można automatycznie udostępnić dane rejestracyjne, upewnij się, że Instalatora kopię danych rejestracji jest aktualna.  
+> Najprostszym sposobem na Zarządzanie rejestracją jest używać tych samych danych w tych samych plików zarówno dla rejestracji dla deweloperów i rejestracji czas instalacji. Na przykład niektóre narzędzia do programowania Instalator może zużywać plik w formacie reg w czasie kompilacji. Jeśli deweloperzy przechowują pliki reg własne codziennych opracowywania i debugowania, tych samych plików mogą być zawarte w Instalatorze automatycznie. Jeśli nie można automatycznie udostępnić dane rejestracyjne, upewnij się, że Instalatora kopię danych rejestracji jest aktualna.  
   
 ## <a name="registering-unmanaged-vspackages"></a>Rejestrowanie pakietów VSPackage niezarządzanych  
  Niezarządzane pakietów VSPackage (włącznie z wygenerowanymi przez szablon pakietu Visual Studio) umożliwia przechowywanie informacji o rejestracji plików .rgs ATL-style. Format pliku .rgs jest przeznaczony dla biblioteki ATL i zazwyczaj nie mogą być używane jako-polega na instalacji narzędzia do tworzenia treści. Informacje o rejestracji dla Instalatora pakietu VSPackage musi być obsługiwany osobno. Na przykład deweloperzy mogą synchronizowania plików w formacie reg za pomocą .rgs zmian w plikach. Plików reg można scalić z RegEdit prace deweloperskie lub używane przez Instalatora.  
@@ -40,7 +40,7 @@ Poinformowanie pakietów VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md
  Narzędzie RegPkg odczytuje atrybuty rejestracji z zarządzanego pakietu VSPackage i albo zapisywać informacje bezpośrednio do rejestru lub zapisu reg formatu plików, które mogą być używane przez Instalatora.  
   
 > [!NOTE]
->  Narzędzie RegPkg nie jest do dystrybucji i nie można zarejestrować pakietu VSPackage w systemie użytkownika.  
+> Narzędzie RegPkg nie jest do dystrybucji i nie można zarejestrować pakietu VSPackage w systemie użytkownika.  
   
 ## <a name="why-vspackages-should-not-self-register-at-install-time"></a>Dlaczego pakietów VSPackage nie powinno rejestrować samodzielnie w czasie instalacji  
  Twoje pliki instalacyjne pakietu VSPackage nie należy polegać na rejestracji automatycznej. Na pierwszy rzut oka pamiętając wartości rejestru pakietu VSPackage tylko pakietu VSPackage, sama prawdopodobnie dobrym pomysłem. Biorąc pod uwagę, że deweloperzy muszą dostępne wartości rejestru do wykonywania rutynowych pracy i testowania, dobrym pomysłem będzie uniknąć utrzymywanie oddzielną kopię danych rejestru w Instalatorze. Instalator może polegać na VSPackage można zapisać wartości rejestru.  

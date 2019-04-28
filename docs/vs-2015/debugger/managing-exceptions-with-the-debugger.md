@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a8bc2e1f4c78e32db6fa5e09ec50bdd182f4fa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6e50f19c4889e5f15c7dc3d458d1347912ecbc1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439175"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Zarządzanie wyjątkami za pomocą debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,10 +54,10 @@ Wyjątek jest wskazaniem stanu błędu, który występuje, gdy program jest wyko
 - Jeśli ustawiono [tylko mój kod](../debugger/just-my-code.md), a debuger jest ustawiona na przerwanie przy każdym wyjątku, który nie jest obsługiwany w kodzie użytkownika.  
   
 > [!NOTE]
->  Program ASP.NET ma program obsługi wyjątków najwyższego poziomu, pokazujący stron błędów, które w przeglądarce. Go nie Przerwij wykonywanie, chyba że **tylko mój kod** jest włączona. Aby uzyskać przykład, zobacz [ustawienia debugera, aby kontynuować na wyjątkach nieobsługiwanych przez użytkownika](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) poniżej.  
+> Program ASP.NET ma program obsługi wyjątków najwyższego poziomu, pokazujący stron błędów, które w przeglądarce. Go nie Przerwij wykonywanie, chyba że **tylko mój kod** jest włączona. Aby uzyskać przykład, zobacz [ustawienia debugera, aby kontynuować na wyjątkach nieobsługiwanych przez użytkownika](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) poniżej.  
   
 > [!NOTE]
->  W aplikacji Visual Basic debuger zarządza wszystkie błędy jako wyjątki, nawet jeśli jest używana w stylu błędu obsługi błędów.  
+> W aplikacji Visual Basic debuger zarządza wszystkie błędy jako wyjątki, nawet jeśli jest używana w stylu błędu obsługi błędów.  
   
 ## <a name="managing-exceptions-with-the-exception-settings-window"></a>Zarządzanie wyjątkami za pomocą okno ustawień wyjątków  
  Możesz użyć **ustawienia wyjątków** okna, aby określić wyjątki (lub zestawy wyjątki) spowoduje, że debuger przerywa, a w tym momencie chcesz przerwać. Dodawanie lub usuwanie wyjątków lub określić wyjątki, aby przerywał działanie w przypadku. Otwarcie tego okna, które rozwiązanie jest otwarte, klikając **debugowanie / Windows / Ustawienia wyjątków**.  
@@ -162,7 +162,7 @@ Wyjątek jest wskazaniem stanu błędu, który występuje, gdy program jest wyko
  Jeśli chcesz dodać wyjątek wyjątki dostępu do pamięci procesora GPU, wyjątki środowiska uruchomieniowego JavaScript lub kategorii wyjątki Win32, konieczne jest uwzględnienie kodu błędu, a także opis.  
   
 > [!TIP]
->  Sprawdź pisownię! **Ustawienia wyjątków** okna nie sprawdza istnienie dodano wyjątek. Tak, jeśli wpiszesz **Sytem.UriTemplateMatchException**, otrzymasz wpis dla tego wyjątku (a nie **System.UriTemplateMatchException**).  
+> Sprawdź pisownię! **Ustawienia wyjątków** okna nie sprawdza istnienie dodano wyjątek. Tak, jeśli wpiszesz **Sytem.UriTemplateMatchException**, otrzymasz wpis dla tego wyjątku (a nie **System.UriTemplateMatchException**).  
   
  Ustawienia wyjątków są utrwalane w pliku .suo rozwiązania, dzięki czemu mają one zastosowanie do danego rozwiązania. Nie można ponownie użyć ustawienia określonego wyjątku w rozwiązań. W tym momencie są utrwalane tylko wyjątków dodanych; Usunięto wyjątki nie są. Innymi słowy możesz dodać wyjątek, zamknij i ponownie otwórz rozwiązanie, a wyjątek będą nadal dostępne. Ale jeśli usuniesz wyjątek, a Zamknij i otwórz ponownie rozwiązanie, pojawi się wyjątek.  
   

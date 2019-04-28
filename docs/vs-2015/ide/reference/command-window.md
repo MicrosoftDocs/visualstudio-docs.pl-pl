@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c83ebc4b2a58976f8848f4576d8b30ad7778db2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 491d6c044b22a89e8ea61a78d5dd70e0a348b893
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441457"
 ---
 # <a name="command-window"></a>Okno polecenia
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "59650437"
 |Przewiń w dół okna.|Zawartość okna polecenia|Strzałka w dół lub CTRL + Strzałka w dół|  
   
 > [!TIP]
->  Możesz skopiować całość lub część poprzednie polecenie do wiersza danych wejściowych przewijanie do niego, wyróżnianie całość lub część jej i następnie naciśnij klawisz ENTER.  
+> Możesz skopiować całość lub część poprzednie polecenie do wiersza danych wejściowych przewijanie do niego, wyróżnianie całość lub część jej i następnie naciśnij klawisz ENTER.  
   
 ## <a name="mark-mode"></a>Tryb oznaczania  
  Po kliknięciu dowolnego poprzedniego wiersza w **polecenia** okna, nastąpi automatyczne przejście w tryb oznaczania. Dzięki temu można wybrać, edytować i skopiować tekst z poprzedniego polecenia, ponieważ w dowolnym edytorze tekstów i wkleić je do bieżącego wiersza.  
@@ -104,7 +104,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 - `var[1-3]+` i `oldpar` parametrów  
   
   > [!NOTE]
-  >  Polecenia, parametr, przełącznika lub wartość, która zawiera spacje, musi mieć podwójny cudzysłów po obu stronach.  
+  > Polecenia, parametr, przełącznika lub wartość, która zawiera spacje, musi mieć podwójny cudzysłów po obu stronach.  
   
   Pozycja przełączników i parametry mogą być stosowane zamiennie za darmo w wierszu polecenia, z wyjątkiem produktów [powłoki](../../ide/reference/shell-command.md) polecenia, które wymaga jej przełączniki i parametry w określonej kolejności.  
   

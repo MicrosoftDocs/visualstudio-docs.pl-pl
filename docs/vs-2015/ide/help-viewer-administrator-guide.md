@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 51dfdc95748690f43809244dc14ae2662d8aec39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b00f89b60c7e884bfaf71e971722530b44a78b4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445685"
 ---
 # <a name="help-viewer-administrator-guide"></a>Podręcznik administratora programu Podgląd Pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Podgląd Pomocy umożliwia zarządzanie lokalnymi instalacjami pomocy dla środo
 - Domyślnym źródłem pomocy będzie nadal Online.  
   
   > [!TIP]
-  >  Domyślne źródło pomocy można zmienić, modyfikując klucz rejestru HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Aby uzyskać więcej informacji, zobacz [przesłonięcia menedżera zawartości Pomocy](../ide/help-content-manager-overrides.md).  
+  > Domyślne źródło pomocy można zmienić, modyfikując klucz rejestru HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Aby uzyskać więcej informacji, zobacz [przesłonięcia menedżera zawartości Pomocy](../ide/help-content-manager-overrides.md).  
   
 - Klienci będą nadal się monit o zainstalowanie podstawowa zawartość pomocy przy pierwszym uruchomieniu programu Visual Studio. Możesz wyłączyć ten monit, modyfikując klucz rejestru HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection.  
   
@@ -78,7 +78,7 @@ Podgląd Pomocy umożliwia zarządzanie lokalnymi instalacjami pomocy dla środo
 - Użytkownicy muszą mieć uprawnienia administratora, aby zaktualizować, Dodaj lub usuń lokalną zawartość pomocy po zakończeniu instalacji.  
   
   > [!TIP]
-  >  Jeśli użytkownicy nie mają praw administratora, zalecane jest, aby wyłączyć kartę Zarządzaj zawartością w Podglądzie pomocy. Aby uzyskać więcej informacji, zobacz [przesłonięcia menedżera zawartości Pomocy](../ide/help-content-manager-overrides.md).  
+  > Jeśli użytkownicy nie mają praw administratora, zalecane jest, aby wyłączyć kartę Zarządzaj zawartością w Podglądzie pomocy. Aby uzyskać więcej informacji, zobacz [przesłonięcia menedżera zawartości Pomocy](../ide/help-content-manager-overrides.md).  
   
   Ostrzeżenia:  
   

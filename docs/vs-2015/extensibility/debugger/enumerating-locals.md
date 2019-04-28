@@ -11,18 +11,18 @@ ms.assetid: 254a88e7-d3a7-447a-bd0c-8985e73d85cf
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4da225417724f1de39f25a1527bdf980f3d369cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 31d158a0c8f52e6ca8fe496885a0a3d5b862a543
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440735"
 ---
 # <a name="enumerating-locals"></a>Wyliczanie zmiennych lokalnych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacji dotyczących implementowania ewaluatory wyrażeń CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykładowe ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacji dotyczących implementowania ewaluatory wyrażeń CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykładowe ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Gdy program Visual Studio jest gotowy do wypełniania **lokalne** oknie wywoływanych przez nią [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) na [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) obiekt zwracany z [ Metody GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) (zobacz [Implementowanie metody GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md)). `IDebugProperty2::EnumChildren` Zwraca [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) obiektu.  
   

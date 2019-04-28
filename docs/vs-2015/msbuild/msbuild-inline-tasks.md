@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33e9bafcba14c65f6f117319180dad7538414885
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: cea0d72488bbd18972b2a2f6d87f21dfb32481d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439361"
 ---
 # <a name="msbuild-inline-tasks"></a>Zadania wbudowane programu MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Zadania programu MSBuild są zwykle tworzone przez skompilowanie klasy, która i
   `Reference` i `Using` elementy są one niezależne od języka. Zadania wbudowane można pisać w jednym z obsługiwanych języków .NET CodeDom, na przykład Visual Basic lub Visual C#.  
   
 > [!NOTE]
->  Elementy zawarte w `Task` elementu są specyficzne dla fabryki zadań, w tym przypadku fabryki zadań kodu.  
+> Elementy zawarte w `Task` elementu są specyficzne dla fabryki zadań, w tym przypadku fabryki zadań kodu.  
   
 ### <a name="code-element"></a>Element Code  
  Ostatni element podrzędny, które mają być wyświetlane w `Task` element jest `Code` elementu. `Code` Element zawiera lub lokalizuje kod, który ma być skompilowane w ramach zadania. Umieść w `Code` element zależy od tego, jak chcesz napisać zadanie.  
@@ -87,7 +87,7 @@ Zadania programu MSBuild są zwykle tworzone przez skompilowanie klasy, która i
   Alternatywnie, można użyć `Source` atrybutu `Code` element, aby określić lokalizację pliku, który zawiera kod dla zadania. Kod w pliku źródłowym musi być typu, który jest określony przez `Type` atrybutu. Jeśli `Source` atrybut był obecny, wartość domyślna `Type` jest `Class`. Jeśli `Source` jest nieobecna, wartość domyślna to `Fragment`.  
   
 > [!NOTE]
->  Podczas definiowania klasy zadań w pliku źródłowym, nazwa klasy należy uzgodnić z `TaskName` atrybut odpowiadającego [UsingTask](../msbuild/usingtask-element-msbuild.md) elementu.  
+> Podczas definiowania klasy zadań w pliku źródłowym, nazwa klasy należy uzgodnić z `TaskName` atrybut odpowiadającego [UsingTask](../msbuild/usingtask-element-msbuild.md) elementu.  
   
 ## <a name="hello-world"></a>Witaj Świecie  
  Poniżej przedstawiono bardziej niezawodne zadania wbudowanego. Wyświetla zadania HelloWorld "Hello, world!" na domyślne urządzenie rejestrowania błędów, który jest zazwyczaj konsoli systemowej lub Visual Studio **dane wyjściowe** okna. `Reference` Elementu w przykładzie jest dołączony tylko do celów ilustracyjnych.  
@@ -193,4 +193,4 @@ File.WriteAllText(Path, content);
   
 ## <a name="see-also"></a>Zobacz też  
  [Zadania](../msbuild/msbuild-tasks.md)   
- [Przewodnik: Tworzenie zadania wbudowanego](../msbuild/walkthrough-creating-an-inline-task.md)
+ [Przewodnik: tworzenie zadania wbudowanego](../msbuild/walkthrough-creating-an-inline-task.md)

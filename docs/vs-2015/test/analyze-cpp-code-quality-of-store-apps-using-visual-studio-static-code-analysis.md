@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a8ea5d8a8120f8b78ec41ee7dbaf0221a549f15c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dc9b13ce1de0464db353fa5935d14ad8c8b328d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442844"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizowanie jakości kodu C++ w aplikacjach Store przy użyciu programu Visual Studio statycznej analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
  Po zrozumieniu problem można rozwiązać, w kodzie. Następnie uruchom ponownie analizę kodu, aby upewnić się, że ostrzeżenie nie jest już wyświetlany w oknie analizy kodu i rozwiązanie problemu nie został zgłoszony nowe ostrzeżenia.
 
 > [!TIP]
->  Możesz ponownie uruchomić analizę kodu w oknie analizy kodu. Wybierz **analizy** przycisk, a następnie wybierz zakres analizy. Możesz ponownie uruchomić analizy na całego rozwiązania lub wybranego projektu.
+> Możesz ponownie uruchomić analizę kodu w oknie analizy kodu. Wybierz **analizy** przycisk, a następnie wybierz zakres analizy. Możesz ponownie uruchomić analizy na całego rozwiązania lub wybranego projektu.
 
 ## <a name="BKMK_Suppress"></a> Pomijanie ostrzeżeń analizy kodu
  Istnieją terminy, gdy można zdecydować, Rezygnacja z naprawiania ostrzeżenie analizy kodu. Można zdecydować, rozpoznawanie ostrzeżenia wymaga zbyt dużo nagrywanie względem prawdopodobieństwo wystąpienia problemu w implementacji rzeczywistych swój kod. Lub może być uważa, że analizy, który jest używany w ostrzeżenia jest nieodpowiedni dla określonego kontekstu. Poszczególne ostrzeżenia można pominąć, tak aby nie były widoczne w oknie analizy kodu.

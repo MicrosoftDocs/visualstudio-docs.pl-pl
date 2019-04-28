@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 247780815af4357fb8a529946e901b41c5d4a83c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4defa140d7ec855a10ae1e921afce78e97d69702
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439245"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Instrukcje: Zmiana czcionek i kolorów w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60060621"
 Możesz dostosować kolor IDE ramki i narzędzi systemu windows w programie Visual Studio na kilka sposobów.
 
 > [!TIP]
->  Aby uzyskać informacje o zmienianiu kolorów w edytorze kodu, zobacz [jak: Zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+> Aby uzyskać informacje o zmienianiu kolorów w edytorze kodu, zobacz [jak: Zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ### <a name="change-the-color-theme-of-the-ide"></a>Zmiana koloru tematu IDE
 
@@ -36,7 +36,7 @@ Możesz dostosować kolor IDE ramki i narzędzi systemu windows w programie Visu
 3. W **motyw kolorów** listy, wybierz albo domyślne **niebieski** motywu **ciemny** lub **światła**.
 
     > [!IMPORTANT]
-    >  Kiedy zmieniasz motyw kolorów, tekst w IDE powraca do domyślnych lub wcześniej dostosowanych czcionek i rozmiarów.
+    > Kiedy zmieniasz motyw kolorów, tekst w IDE powraca do domyślnych lub wcześniej dostosowanych czcionek i rozmiarów.
     >
     >  Jeśli masz program Visual Studio Professional, Visual Studio Premium lub Visual Studio Ultimate, można zainstalować dodatkowe predefiniowane motywy i utworzyć własne, pobieranie i instalowanie [Edytor Visual Studio 2013 kolor motywu](http://visualstudiogallery.msdn.microsoft.com/9e08e5d3-6eb4-4e73-a045-6ea2a5cbdabe).
 
@@ -45,7 +45,7 @@ Możesz dostosować kolor IDE ramki i narzędzi systemu windows w programie Visu
 - Wybierz lewy Alt + lewy Shift + drukowanie ekranu kluczy.
 
     > [!WARNING]
-    >  Ta opcja ustawia wysoki kontrast dla wszystkich aplikacji i interfejsu użytkownika na bieżącym komputerze.
+    > Ta opcja ustawia wysoki kontrast dla wszystkich aplikacji i interfejsu użytkownika na bieżącym komputerze.
 
 ## <a name="change-ide-fonts"></a>Zmienianie czcionek IDE
  Można zmienić rozmiar czcionki i tekstu dla wszystkich okien i okien dialogowych w IDE. Można dostosować tylko niektórych okien i innych elementów tekstu.
@@ -59,7 +59,7 @@ Możesz dostosować kolor IDE ramki i narzędzi systemu windows w programie Visu
 3. W **Pokaż ustawienia dla** wybierz **czcionka środowiska**.
 
     > [!TIP]
-    >  Jeśli chcesz zmienić czcionkę tylko okna narzędzi w **Pokaż ustawienia dla** wybierz **[wszystkie tekstowe narzędzie Windows]**.
+    > Jeśli chcesz zmienić czcionkę tylko okna narzędzi w **Pokaż ustawienia dla** wybierz **[wszystkie tekstowe narzędzie Windows]**.
 
 4. W **czcionki** wybierz czcionkę.
 

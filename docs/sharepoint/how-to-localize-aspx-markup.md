@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25768f44ee51ee94d456d0652ab7575def3a259d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4cd3c17a9e771ad9a1aee7526f24e3a8282f208d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443108"
 ---
 # <a name="how-to-localize-aspx-markup"></a>Instrukcje: Lokalizowanie znacznika ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] (aspx) stron zazwyczaj używają ciągu ustalonych wartości. Aby zlokalizować te ciągi, należy zastąpić je za pomocą wyrażeń, które odwołują się zlokalizowanych zasobów.
@@ -36,7 +36,7 @@ ms.locfileid: "60057571"
     2. Aby dodać plik zasobów w **Eksploratora rozwiązań**, otwórz menu skrótów dla elementu projektu programu SharePoint, a następnie wybierz **Dodaj** > **nowy element**. W obszarze **języka Visual Basic** lub **Visual C#**  węzła, wybierz **plik zasobów** szablonu.
 
     > [!NOTE]
-    >  Pamiętaj dodać pliki zasobów do elementu projektu programu SharePoint, aby włączyć właściwość typu wdrożenia. Ta właściwość jest wymagana w dalszej części tej procedury. Jeśli rozwiązanie nie ma elementu projektu programu SharePoint, możesz dodać pusty projekt programu SharePoint i Usuń domyślny *Elements.xml* pliku.
+    > Pamiętaj dodać pliki zasobów do elementu projektu programu SharePoint, aby włączyć właściwość typu wdrożenia. Ta właściwość jest wymagana w dalszej części tej procedury. Jeśli rozwiązanie nie ma elementu projektu programu SharePoint, możesz dodać pusty projekt programu SharePoint i Usuń domyślny *Elements.xml* pliku.
 
 2. Nadaj plikowi zasobów języka domyślnego nazwę wybraną z dołączonym *resx* rozszerzenie, np. MyAppResources.resx. Użyj tej samej nazwie bazowej dla każdego zlokalizowanego pliku zasobów, ale Dodaj kulturę [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Na przykład, nazwij niemieckie zlokalizowane zasoby *MyAppResources.de-DE.resx*.
 

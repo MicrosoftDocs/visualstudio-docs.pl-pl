@@ -10,12 +10,12 @@ ms.assetid: 08319157-43fb-44a9-9a63-50b919fe1377
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4d2e6f5213f5b12c38ed5529551c47654231035c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 457e2daf3e52c23ba9733d09d3aeb94750b5fab9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446243"
 ---
 # <a name="sending-the-required-events"></a>Wysyłanie wymaganych zdarzeń
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Użyj tej procedury związane z przesyłaniem zdarzeń wymagane.
 5. Jeśli nie uruchomiono aplikacji przeznaczonej do debugowania, Wyślij [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) obiekt zdarzenia do SDM, gdy pierwsza instrukcja kodu w architekturze środowiska wykonawczego ma zostać wykonana. To zdarzenie jest zawsze zdarzeń zatrzymywania. Po przejściu do sesji debugowania, IDE zatrzymuje się na to zdarzenie.  
   
 > [!NOTE]
->  Wiele języków użycia inicjatorów globalnych lub zewnętrznymi, wstępnie skompilowanych funkcji (od biblioteki CRT lub _Main) na początku swój kod. Jeśli język programu debugowania zawierają dowolne z tych typów elementów przed punktu wejścia początkową, a następnie uruchamiać ten kod i jest wysyłane zdarzenie punktu wejścia po użytkownik punkt wejścia, takich jak **głównego** lub `WinMain`, zostanie osiągnięty.  
+> Wiele języków użycia inicjatorów globalnych lub zewnętrznymi, wstępnie skompilowanych funkcji (od biblioteki CRT lub _Main) na początku swój kod. Jeśli język programu debugowania zawierają dowolne z tych typów elementów przed punktu wejścia początkową, a następnie uruchamiać ten kod i jest wysyłane zdarzenie punktu wejścia po użytkownik punkt wejścia, takich jak **głównego** lub `WinMain`, zostanie osiągnięty.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Włączanie debugowania programu](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

@@ -11,12 +11,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0ef8bdb5f35ed727a207140dde6cf20f5645e5b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 736031f1de24144f7b5f68ed44710e0c894df41a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445726"
 ---
 # <a name="visual-studio-shell-integrated"></a>Program Visual Studio Shell (zintegrowany)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Powłoka programu Visual Studio obejmuje zintegrowanego środowiska programistyc
  Powłoka programu Visual Studio jest faktycznie kombinacji powłoki programu Visual Studio izolowane, a także dodatkowe instalacji, obejmujące określonych składników zintegrowane powłoki.  Shell zintegrowanych aplikacji powinien zawierać zarówno izolowanej powłoki pakietu redystrybucyjnego z [pakiet redystrybucyjny Microsoft Visual Studio Shell (Isolated)](http://go.microsoft.com/fwlink/?LinkId=616022) oraz pakiet redystrybucyjny zintegrowane shell z [programu Microsoft Visual Studio powłoki (Integrated) pakiet redystrybucyjny](http://go.microsoft.com/fwlink/?LinkId=616021).  
   
 > [!NOTE]
->  Aby uzyskać dostęp do pakietów redystrybucyjnych powłoki izolowanej i zintegrowanej, pojawi się prośba do wypełnienia ankiety klientów.  Po wypełnieniu ankiety, nastąpi przekierowanie do strony Visual Studio Connect zawierającej łącza pobierania pakietów redystrybucyjnych.  Łącza pobierania podczas kolejnych wizyt w witrynie Visual Studio Connect, w obszarze **programy &#124; VISUAL STUDIO 2015 ZINTEGROWANE i ISOLATED SHELL** kartę.  
+> Aby uzyskać dostęp do pakietów redystrybucyjnych powłoki izolowanej i zintegrowanej, pojawi się prośba do wypełnienia ankiety klientów.  Po wypełnieniu ankiety, nastąpi przekierowanie do strony Visual Studio Connect zawierającej łącza pobierania pakietów redystrybucyjnych.  Łącza pobierania podczas kolejnych wizyt w witrynie Visual Studio Connect, w obszarze **programy &#124; VISUAL STUDIO 2015 ZINTEGROWANE i ISOLATED SHELL** kartę.  
   
  Po zainstalowaniu aplikacji zintegrowanych powłoki na tym samym komputerze co pełną wersję programu Visual Studio, składniki aplikacji zostaną zintegrowane bezpośrednio do programu Visual Studio.  
   

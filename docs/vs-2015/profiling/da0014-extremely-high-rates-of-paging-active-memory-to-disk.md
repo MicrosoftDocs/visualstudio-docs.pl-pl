@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 124f640fd5bf049280638408b4b6101e24e8c58b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: dbf391f96cd21f0c473589d4992083963ff65d55
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440914"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: Skrajnie intensywne stronicowanie aktywnej pamięci na dysk
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Rule Id|DA0014|
  Często strony są dysku zapisu lub odczytu z dysku podczas operacji stronicowania zbiorczego. Na przykład jest często znacznie większa niż liczba zapisy stron/s, liczba stron wyjścia na sekundę. Ponieważ dane wyjściowe strony na sekundę obejmuje również stron zmienione dane z pamięci podręcznej systemu plików. Jednak nie zawsze jest proste ustalenie, który proces jest bezpośrednio odpowiedzialna za stronicowanie i dlaczego.  
   
 > [!NOTE]
->  Ta reguła jest uruchamiana, gdy stopień stronicowania aktywnej pamięci osiągną bardzo wysoki współczynnik. Reguły informacyjne, jeśli poziom stronicowania jest istotne, ale nie extreme [DA0017: Skrajnie intensywne stronicowanie aktywnej pamięci na dysk](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md) generowane w zamian.  
+> Ta reguła jest uruchamiana, gdy stopień stronicowania aktywnej pamięci osiągną bardzo wysoki współczynnik. Reguły informacyjne, jeśli poziom stronicowania jest istotne, ale nie extreme [DA0017: Skrajnie intensywne stronicowanie aktywnej pamięci na dysk](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md) generowane w zamian.  
   
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
  Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [znaczniki](../profiling/marks-view.md) widoku. Znajdź **Pamięć\Strony/s** kolumny. Określa, czy określone faz wykonywania programu stronicowania działanie we/wy w przypadku większych niż inne.  

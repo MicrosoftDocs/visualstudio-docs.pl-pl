@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84e9c6dadd9e553d456bfb46d054a7ae727aa087
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: a738a01df224051e3190d828f852fe1ccfa7e9da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434717"
 ---
 # <a name="sccadd-function"></a>Funkcja SccAdd
 Ta funkcja dodaje nowe pliki do systemu kontroli źródła.
@@ -85,7 +85,7 @@ SCCRTN SccAdd(
  Zwykle `fOptions` zastępuje się tutaj tablicy, `pfOptions`, za pomocą jednego `LONG` opcji specyfikacji każdego pliku. Jest to spowodowane typ pliku mogą się różnić między plikami.
 
 > [!NOTE]
->  Można określić zarówno `SCC_FILETYPE_TEXT` i `SCC_FILETYPE_BINARY` opcje dla tego samego pliku, ale jest prawidłowy do określenia żadnego z tych celów. Ustawienie nie jest taka sama jak ustawienie `SCC_FILETYPE_AUTO`, w którym to przypadku źródło sterowania wtyczka automatycznie wykrywa typ pliku.
+> Można określić zarówno `SCC_FILETYPE_TEXT` i `SCC_FILETYPE_BINARY` opcje dla tego samego pliku, ale jest prawidłowy do określenia żadnego z tych celów. Ustawienie nie jest taka sama jak ustawienie `SCC_FILETYPE_AUTO`, w którym to przypadku źródło sterowania wtyczka automatycznie wykrywa typ pliku.
 
  Poniżej znajduje się lista flagi używane do `pfOptions` tablicy:
 

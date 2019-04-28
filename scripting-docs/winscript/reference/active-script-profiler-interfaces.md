@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e85d511bfeec2ddda4b68b0297b18ac541949a4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: eeadf0de5563a4882c067960559414167e729173
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58160566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422235"
 ---
 # <a name="active-script-profiler-interfaces"></a>Interfejsy profilera aktywnego skryptu
 Aktywne interfejsy Profiler skryptu umożliwiają odbieranie zdarzeń profilowania z [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] aparatu.  
@@ -47,9 +47,9 @@ Aktywne interfejsy Profiler skryptu umożliwiają odbieranie zdarzeń profilowan
 - [Stałe, wyliczenia i struktury profilera aktywnego skryptu](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)  
   
 > [!NOTE]
->  Aktywne interfejsy Profiler skryptu pierwszy zostały wydane z programu Internet Explorer 8. `IActiveScriptProfilerControl2` i `IActiveScriptProfilerCallback2` interfejsów pierwszy zostały wydane z programu Internet Explorer 9. [Interfejs IActiveScriptProfilerControl3](../../winscript/reference/iactivescriptprofilercontrol3-interface.md), [interfejs IActiveScriptProfilerCallback3](../../winscript/reference/iactivescriptprofilercallback3-interface.md), i [interfejs IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) zostały interfejsów najpierw wydane w programie Internet Explorer 10. [IActiveScriptProfilerControl5, interfejs](../../winscript/reference/iactivescriptprofilercontrol5-interface.md) został pierwotnie wydany w programie Internet Explorer 11.  
+> Aktywne interfejsy Profiler skryptu pierwszy zostały wydane z programu Internet Explorer 8. `IActiveScriptProfilerControl2` i `IActiveScriptProfilerCallback2` interfejsów pierwszy zostały wydane z programu Internet Explorer 9. [Interfejs IActiveScriptProfilerControl3](../../winscript/reference/iactivescriptprofilercontrol3-interface.md), [interfejs IActiveScriptProfilerCallback3](../../winscript/reference/iactivescriptprofilercallback3-interface.md), i [interfejs IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) zostały interfejsów najpierw wydane w programie Internet Explorer 10. [IActiveScriptProfilerControl5, interfejs](../../winscript/reference/iactivescriptprofilercontrol5-interface.md) został pierwotnie wydany w programie Internet Explorer 11.  
 >   
->  W programie Internet Explorer 8 oraz programu Internet Explorer 9, tylko [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] tych interfejsów w języku jest używany do obsługi profilowania skryptu.  
+> W programie Internet Explorer 8 oraz programu Internet Explorer 9, tylko [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] tych interfejsów w języku jest używany do obsługi profilowania skryptu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dokumentacja interfejsów skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)

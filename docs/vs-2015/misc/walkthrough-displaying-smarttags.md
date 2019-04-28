@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
-ms.openlocfilehash: a14fcb8e81261962e8851347a54d7c8d52565d20
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 116f76324a2150413c0ae6d08bc99e114efcc50e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436512"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>Przewodnik: Wyświetlanie tagi inteligentne
 Tagi inteligentne są przestarzałe na rzecz żarówki. Zobacz [instruktażu: Wyświetlanie sugestie z żarówką](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
@@ -24,7 +24,7 @@ Tagi inteligentne są przestarzałe na rzecz żarówki. Zobacz [instruktażu: Wy
  Mimo że tagi inteligentne są częścią implementacji funkcji IntelliSense w edytorze, można zaimplementować tagów inteligentnych przez podklasy <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>, a następnie wdrażanie <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> interfejsu i <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> interfejsu.  
   
 > [!NOTE]
->  W podobny sposób można zaimplementować innych rodzajów tagów.  
+> W podobny sposób można zaimplementować innych rodzajów tagów.  
   
  Następujące instruktaż przedstawia sposób tworzenia tagu inteligentnego, pojawia się na bieżącego słowa, która ma dwa sugerowane akcje: **Konwertuj na wielkie litery** i **konwersji na małe litery**.  
   
@@ -183,4 +183,4 @@ Tagi inteligentne są przestarzałe na rzecz żarówki. Zobacz [instruktażu: Wy
 5. Po kliknięciu przycisku, powinny być wyświetlane dwie sugerowane akcje: **Konwertuj na wielkie litery** i **konwersji na małe litery**. Jeśli klikniesz pierwszą akcją, cały tekst w bieżącego słowa powinny być konwertowane na wielkie litery. Jeśli klikniesz drugiej akcji, cały tekst powinny być konwertowane na małe litery.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: Łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

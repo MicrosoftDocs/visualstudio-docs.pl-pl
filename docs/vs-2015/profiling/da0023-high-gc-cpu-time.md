@@ -13,14 +13,14 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: acfb3a5c88ba730960ac0f90a7b9263c2d02a204
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 931c753239345950f3a7db178a87007eab4da289
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440893"
 ---
-# <a name="da0023-high-gc-cpu-time"></a>DA0023: Wysokie wykorzystanie czasu GC CPU
+# <a name="da0023-high-gc-cpu-time"></a>DA0023: Duże zużycie czasu procesora przez odzyskiwanie pamięci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Rule Id|DA0023|  
@@ -42,7 +42,7 @@ Rule Id|DA0023|
  Ta reguła jest uruchamiana, gdy ilość czasu spędzonego w wyrzucania elementów bezużytecznych jest istotne w porównaniu z czasem przetwarzania kompletnej aplikacji.  
   
 > [!NOTE]
->  Gdy część czasu spędzonego w wyrzucania elementów bezużytecznych jest nadmierne w porównaniu z czasu przetwarzania kompletnej aplikacji, [DA0024: Nadmierne zużycie czasu Procesora](../profiling/da0024-excessive-gc-cpu-time.md) generowane ostrzeżenie zamiast tej reguły.  
+> Gdy część czasu spędzonego w wyrzucania elementów bezużytecznych jest nadmierne w porównaniu z czasu przetwarzania kompletnej aplikacji, [DA0024: Nadmierne zużycie czasu Procesora](../profiling/da0024-excessive-gc-cpu-time.md) generowane ostrzeżenie zamiast tej reguły.  
   
 ## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie  
  Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku znaczniki](../profiling/marks-view.md) danych profilowania. Znajdź **pamięć .NET CLR\\czas działania modułu GC (%)** kolumny. Określa, czy określone faz wykonywania programu gdzie obciążenie pamięci zarządzanej wyrzucania elementów bezużytecznych jest większe niż pozostałych faz. Porównaj wartości czas działania modułu GC (%) wartość ma zostać współczynnik operacji wyrzucania elementów bezużytecznych zgłoszone w **# pokolenia 0**, **# zbierania obiektów pokolenia 1**, **# zbierania obiektów pokolenia 2** wartości .  

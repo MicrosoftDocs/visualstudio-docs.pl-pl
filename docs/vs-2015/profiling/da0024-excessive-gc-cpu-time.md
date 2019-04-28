@@ -13,14 +13,14 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eae77a7685bbc9e8dc1613603baec9a5c93ad285
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d40377c28e0987ac902ab8aa5cf778715eb899cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435848"
 ---
-# <a name="da0024-excessive-gc-cpu-time"></a>DA0024: Nadmierne zużycie czasu Procesora
+# <a name="da0024-excessive-gc-cpu-time"></a>DA0024: Nadmierne zużycie czasu procesora przez odzyskiwanie pamięci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Rule Id|DA0024|  
@@ -42,7 +42,7 @@ Rule Id|DA0024|
  Ta reguła jest uruchamiana, gdy czas poświęcony na wyrzucanie elementów bezużytecznych jest zbyt wysoka w porównaniu z czasem przetwarzania kompletnej aplikacji.  
   
 > [!NOTE]
->  Gdy część czasu spędzonego w wyrzucania elementów bezużytecznych jest ważna, ale nie nadmierne w porównaniu z czasem przetwarzania kompletnej aplikacji [DA0023: Wysokie wykorzystanie czasu GC CPU](../profiling/da0023-high-gc-cpu-time.md) generowane ostrzeżenie zamiast tej reguły.  
+> Gdy część czasu spędzonego w wyrzucania elementów bezużytecznych jest ważna, ale nie nadmierne w porównaniu z czasem przetwarzania kompletnej aplikacji [DA0023: Wysokie wykorzystanie czasu GC CPU](../profiling/da0023-high-gc-cpu-time.md) generowane ostrzeżenie zamiast tej reguły.  
   
 ## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie  
  Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku znaczniki](../profiling/marks-view.md) danych profilowania. Znajdź **pamięć .NET CLR\\czas działania modułu GC (%)** kolumny. Określa, czy określone faz wykonywania programu gdzie obciążenie pamięci zarządzanej wyrzucania elementów bezużytecznych jest większe niż pozostałych faz. Porównaj wartości czas działania modułu GC (%) wartość ma zostać współczynnik operacji wyrzucania elementów bezużytecznych zgłoszone w **# pokolenia 0**, **# zbierania obiektów pokolenia 1**, **# zbierania obiektów pokolenia 2** wartości .  

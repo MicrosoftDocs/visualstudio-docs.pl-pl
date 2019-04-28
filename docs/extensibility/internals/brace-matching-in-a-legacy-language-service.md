@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de9e1a002bf31335131e741a8ce5adc0b2219dbc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d83a4c3d9c070f77a6a13b28da0a57dbe6c48be0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415358"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Parowanie nawiasów klamrowych w starszej wersji usługi językowej
 Parowanie nawiasów klamrowych pomaga dla deweloperów, śledzenie elementów języka, które muszą zostać wykonane ze sobą, takich jak nawiasy i nawiasy klamrowe. Gdy deweloper wprowadza zamykającego nawiasu klamrowego, jest wyróżniona otwierający nawias klamrowy.
@@ -26,7 +26,7 @@ Parowanie nawiasów klamrowych pomaga dla deweloperów, śledzenie elementów j�
  Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej na temat nowych sposobem realizowania parowanie nawiasów klamrowych, zobacz [instruktażu: Wyświetl pasujące nawiasy klamrowe](../../extensibility/walkthrough-displaying-matching-braces.md).
 
 > [!NOTE]
->  Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.
+> Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.
 
  <xref:Microsoft.VisualStudio.Package.AuthoringSink> Klasa obsługuje pary i triples z <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> i <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> metody.
 

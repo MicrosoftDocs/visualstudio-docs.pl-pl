@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6ad8a11e736595912b1b6c8757bd75dca1e53e6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e306f07f3c528c27c60e9b55675ff945413bf45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440866"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Przewodnik: Projektowanie regionów formularzy programu Outlook
   Regiony formularza niestandardowego rozszerzenie standardowych lub niestandardowych formularzy programu Microsoft Office Outlook. W tym przewodniku projektujesz region formularza niestandardowego, który jest wyświetlany jako nową stronę w oknie Inspektora, skontaktuj się z elementu. Ten region formularza jest wyświetlenie mapy każdego adresu, który znajduje się do kontaktu, wysyłając informacje o adresach do witryny Windows Live lokalnego wyszukiwania w przeglądarce. Aby uzyskać informacji na temat regionów formularzy, zobacz [regionach formularzy programu Outlook z tworzenia](../vsto/creating-outlook-form-regions.md).
@@ -37,7 +37,7 @@ ms.locfileid: "60097430"
 - Testowanie region formularza programu Outlook.
 
 > [!NOTE]
->  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:

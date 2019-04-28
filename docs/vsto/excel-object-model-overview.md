@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfee8d6183a8292f5c39140ada9d4787e4f027ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: df1045cd0b35a2c8d4afa765167693032c6d9936
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441820"
 ---
 # <a name="excel-object-model-overview"></a>Model obiektu Excel ― omówienie
   Do opracowywania rozwiązań korzystających z programu Microsoft Office Excel, możesz korzystać z obiektami dostarczonych przez model obiektów programu Excel. W tym temacie przedstawiono najważniejsze obiekty:
@@ -80,7 +80,7 @@ ms.locfileid: "60104554"
  Excel <xref:Microsoft.Office.Interop.Excel.Application> obiekt reprezentuje sama aplikacja programu Excel. <xref:Microsoft.Office.Interop.Excel.Application> Obiekt udostępnia wiele informacji na temat uruchomionej aplikacji, opcje zastosowane do tego wystąpienia, a następnie otwórz bieżące obiekty użytkownika, w ramach wystąpienia.
 
 > [!NOTE]
->  Nie należy ustawiać <xref:Microsoft.Office.Interop.Excel.ApplicationClass.EnableEvents%2A> właściwość <xref:Microsoft.Office.Interop.Excel.Application> obiektu w programie Excel, aby **false**. Ustawienie tej właściwości wartości false zapobiega podnoszenie żadnych wydarzeń, takich jak zdarzenia kontrolki hosta programu Excel.
+> Nie należy ustawiać <xref:Microsoft.Office.Interop.Excel.ApplicationClass.EnableEvents%2A> właściwość <xref:Microsoft.Office.Interop.Excel.Application> obiektu w programie Excel, aby **false**. Ustawienie tej właściwości wartości false zapobiega podnoszenie żadnych wydarzeń, takich jak zdarzenia kontrolki hosta programu Excel.
 
 ### <a name="workbook-object"></a>Obiekt skoroszytu
  <xref:Microsoft.Office.Interop.Excel.Workbook> Obiekt reprezentuje pojedynczy skoroszytu w aplikacji programu Excel.

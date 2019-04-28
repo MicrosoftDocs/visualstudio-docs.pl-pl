@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c49de0af6cbb02c441489cbfa7b1d8a7b3881df
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 54d2b83fab24aa3c9deabc979782d9b82ea5c482
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442474"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Krok 7. Dodawanie składników okna dialogowego do formularza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Aby umożliwić programowi otwieranie plików obrazów i Wybieranie koloru tła,
 1. Wybierz projektanta Windows Forms (Form1.cs [projekt] lub Form1.vb [projekt]), a następnie otwórz **okien dialogowych** grupy w przyborniku.  
   
     > [!NOTE]
-    >  **Okien dialogowych** grupa w przyborniku zawiera składniki, które otwierają wiele przydatnych okien dialogowych, które mogą służyć do otwierania i zapisywania plików, przeglądania folderów i wybierania czcionek i kolorów. Używasz dwóch elementów dialogu w tym projekcie: **OpenFileDialog** i **ColorDialog**.  
+    > **Okien dialogowych** grupa w przyborniku zawiera składniki, które otwierają wiele przydatnych okien dialogowych, które mogą służyć do otwierania i zapisywania plików, przeglądania folderów i wybierania czcionek i kolorów. Używasz dwóch elementów dialogu w tym projekcie: **OpenFileDialog** i **ColorDialog**.  
   
 2. Aby dodać składnik o nazwie **openFileDialog1** do formularza, kliknij dwukrotnie **OpenFileDialog**. Aby dodać składnik o nazwie **colorDialog1** do formularza, kliknij dwukrotnie **ColorDialog** w przyborniku. (Możesz użyć go w następnym kroku samouczka). Powinieneś widzieć obszar w dolnej części projektanta formularzy Windows (poniżej formularza Picture Viewer), który zawiera ikonę dla każdego z dwóch składników dialogu, które dodałeś, jak pokazano na poniższej ilustracji.  
   
@@ -50,7 +50,7 @@ Składniki okna dialogowego
          **Filtru** ustawienia właściwości określają rodzaje typów plików, które będą wyświetlane w **wybierz obraz** okno dialogowe pliku.  
   
     > [!NOTE]
-    >  Aby zobaczyć przykład **Otwórz plik** okno dialogowe w innej aplikacji, otwórz Notatnik lub Paint, a na pasku menu wybierz **pliku**, **Otwórz**. Zwróć uwagę, jak istnieje **pliki typu** listy rozwijanej u dołu. Użyłeś właśnie **filtru** właściwość **OpenFileDialog** składnik to skonfigurować. Zauważ również, jak **tytuł** i **filtru** właściwości są pogrubione w **właściwości** okna. IDE robi to, aby pokazać wszystkie właściwości, które zostały zmienione z wartościami domyślnymi.  
+    > Aby zobaczyć przykład **Otwórz plik** okno dialogowe w innej aplikacji, otwórz Notatnik lub Paint, a na pasku menu wybierz **pliku**, **Otwórz**. Zwróć uwagę, jak istnieje **pliki typu** listy rozwijanej u dołu. Użyłeś właśnie **filtru** właściwość **OpenFileDialog** składnik to skonfigurować. Zauważ również, jak **tytuł** i **filtru** właściwości są pogrubione w **właściwości** okna. IDE robi to, aby pokazać wszystkie właściwości, które zostały zmienione z wartościami domyślnymi.  
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   

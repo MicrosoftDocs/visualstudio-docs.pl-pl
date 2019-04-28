@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b1799ac2e7124f79d10dcc8860a994e2f182ea7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0ac8a47aeca8875dabe3fdf388e9a73d68ec514e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445207"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Instrukcje: Tworzenie rozwiązania języka specyficznego dla domeny
 Języka specyficznego dla domeny (DSL) jest tworzony przy użyciu specjalnych rozwiązania programu Visual Studio.
@@ -63,7 +63,7 @@ Przed rozpoczęciem tej procedury należy zainstalować następujące składniki
     Kreator utworzy rozwiązanie, które ma dwa projekty, które noszą nazwy **Dsl** i **DslPackage**.
 
    > [!NOTE]
-   >  Jeśli zobaczysz komunikat z ostrzeżeniem, nie można uruchomić szablony tekstowe ze źródeł niezaufanych, kliknij przycisk **OK**. Można ustawić ten komunikat, aby nie pojawiają się ponownie.
+   > Jeśli zobaczysz komunikat z ostrzeżeniem, nie można uruchomić szablony tekstowe ze źródeł niezaufanych, kliknij przycisk **OK**. Można ustawić ten komunikat, aby nie pojawiają się ponownie.
 
 ## <a name="settings"></a> Na stronach kreatora projektanta DSL
  Możesz pozostawić kilka pól, bez zmian wartości domyślne. Jednak należy się upewnić, czy ustawić pola rozszerzenie pliku.

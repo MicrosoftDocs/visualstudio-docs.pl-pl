@@ -9,14 +9,14 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc1f87ac6ce94a1ef474388f75b33aa963b19f8d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d54fdce78528f348e99436c3a58d15e1cbe861b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444268"
 ---
-# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Przewodnik: Brak obiektów spowodowany cieniowaniem wierzchołków
+# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Przewodnik: brak obiektów spowodowany cieniowaniem wierzchołków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] narzędziami diagnostyki grafiki do zbadania obiekt, który nie istnieje ze względu na błąd występujący podczas etapu programu do cieniowania wierzchołków.  
@@ -64,7 +64,7 @@ W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../includes/v
     W **etapy potoku grafiki** oknie **asemblera dane wejściowe** etapu pokazuje geometrii obiektu przed jego przekształcone i **program do cieniowania wierzchołków** etap zawiera takie same obiekt po jest przekształcane. W tym scenariuszu, wiesz, że Ci się znaleźć nieistniejącego obiektu pojawi się w **asemblera dane wejściowe** etapu i nic nie jest wyświetlana w **program do cieniowania wierzchołków** etapu.  
   
    > [!NOTE]
-   >  Jeśli inne etapy geometrii — na przykład, moduł cieniujący kadłuba, program do cieniowania domeny lub program do cieniowania geometrii etapy — przetworzyć obiektu, mogą one być przyczyną tego problemu. Zazwyczaj problem dotyczy najwcześniejszym etapie, w którym nie jest wyświetlany wynik, lub jest wyświetlany w nieoczekiwany sposób.  
+   > Jeśli inne etapy geometrii — na przykład, moduł cieniujący kadłuba, program do cieniowania domeny lub program do cieniowania geometrii etapy — przetworzyć obiektu, mogą one być przyczyną tego problemu. Zazwyczaj problem dotyczy najwcześniejszym etapie, w którym nie jest wyświetlany wynik, lub jest wyświetlany w nieoczekiwany sposób.  
   
 4. Zatrzymaj po przejściu do wywołania rysowania, która odnosi się do nieistniejącego obiektu. W tym scenariuszu **etapy potoku grafiki** okno wskazuje, czy geometrii został wydany do procesora GPU (wskazywanym przez miniaturę asemblera dane wejściowe), ale nie ma obiektu docelowego renderowania, ponieważ wystąpił błąd podczas etapu programu do cieniowania wierzchołków (wskazywanym przez miniaturę program do cieniowania wierzchołków):  
   
@@ -107,7 +107,7 @@ W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../includes/v
     ![Kod, który ustawia obiektu stałego buforu](../debugger/media/gfx-diag-demo-missing-object-shader-step-7.png "gfx_diag_demo_missing_object_shader_step_7")  
   
    > [!TIP]
-   >  Jeśli jednocześnie debugujesz aplikację, w tym miejscu można ustawić punktu przerwania i zostanie uruchomiona, podczas renderowania następnej ramki. Następnie można sprawdzić członkowie `m_marbleConstantBufferData` do upewnij się, że wartość `projection` elementu członkowskiego jest ustawiony na samych zer, jeśli stałego buforu.  
+   > Jeśli jednocześnie debugujesz aplikację, w tym miejscu można ustawić punktu przerwania i zostanie uruchomiona, podczas renderowania następnej ramki. Następnie można sprawdzić członkowie `m_marbleConstantBufferData` do upewnij się, że wartość `projection` elementu członkowskiego jest ustawiony na samych zer, jeśli stałego buforu.  
   
    Po znalezieniu lokalizacji, w którym zostanie wypełnione stały bufor i odnajdywanie, że jego wartości pochodzą ze zmiennych `m_marbleConstantBufferData`, następnym krokiem jest, aby dowiedzieć się, gdzie `m_marbleConstantBufferData.projection` element członkowski jest ustawiany na samych zer. Możesz użyć **Znajdź wszystkie odwołania** do szybkiego skanowania w poszukiwaniu kod, który zmienia wartość `m_marbleConstantBufferData.projection`.  
   

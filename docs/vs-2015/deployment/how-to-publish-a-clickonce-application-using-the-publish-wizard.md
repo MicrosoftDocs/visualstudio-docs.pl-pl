@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 48b5d8406f5b5c6d43afadf9e544914e6133090c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 430154b1f9b9f652052dc828c921d3ded16a3787
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442700"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Instrukcje: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Aby udostępnić aplikację ClickOnce użytkownikom, możesz opublikować go do 
  Przed uruchomieniem Kreatora publikowania należy odpowiednio ustawić właściwości publikacji. Na przykład, jeśli chcesz wyznaczyć klucz w celu podpisania aplikacji ClickOnce, możecie więc na **podpisywanie** strony **projektanta projektu**. Aby uzyskać więcej informacji, zobacz [zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md).  
   
 > [!NOTE]
->  Po zainstalowaniu więcej niż jedna wersja aplikacji przy użyciu technologii ClickOnce, instalacja przemieszcza inne wersje aplikacji do folderu o nazwie archiwum, w lokalizacji publikowania, który określisz. Archiwizowanie starszych w ten sposób utrzymuje katalogu instalacyjnyego folderów z wcześniejszych wersji.  
+> Po zainstalowaniu więcej niż jedna wersja aplikacji przy użyciu technologii ClickOnce, instalacja przemieszcza inne wersje aplikacji do folderu o nazwie archiwum, w lokalizacji publikowania, który określisz. Archiwizowanie starszych w ten sposób utrzymuje katalogu instalacyjnyego folderów z wcześniejszych wersji.  
   
 > [!NOTE]
->  Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, kliknij przycisk **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, kliknij przycisk **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-publish-to-a-file-share-or-path"></a>Aby opublikować do udziału plików lub ścieżki  
   
@@ -83,7 +83,7 @@ Aby udostępnić aplikację ClickOnce użytkownikom, możesz opublikować go do 
 4. Na **sposób będą użytkownicy instalować aplikację?** stronie, kliknij polecenie **dysku CD-ROM lub DVD-ROM**, a następnie kliknij przycisk **dalej**.  
   
    > [!NOTE]
-   >  Jeśli chcesz, aby instalacja do automatycznego uruchamiania podczas dysku CD-ROM jest wstawiany do stacji, otwórz **Publikuj** strony w **projektanta projektu** i kliknij przycisk **opcje** przycisk, a następnie w **opcji publikowania** kreatora wybierz **dla instalacji z dysku CD, automatycznie Rozpocznij instalację po włożeniu dysku CD**.  
+   > Jeśli chcesz, aby instalacja do automatycznego uruchamiania podczas dysku CD-ROM jest wstawiany do stacji, otwórz **Publikuj** strony w **projektanta projektu** i kliknij przycisk **opcje** przycisk, a następnie w **opcji publikowania** kreatora wybierz **dla instalacji z dysku CD, automatycznie Rozpocznij instalację po włożeniu dysku CD**.  
   
 5. Jeśli dystrybucji aplikacji na dysku CD-ROM, można dostarczać aktualizacje z witryny sieci Web. W **gdzie aplikacja będzie sprawdzać aktualizacje?** stronie, wybierz opcję aktualizacji:  
   
@@ -98,7 +98,7 @@ Aby udostępnić aplikację ClickOnce użytkownikom, możesz opublikować go do 
     Stan publikowania jest wyświetlany w obszarze powiadomień stanu.  
   
    > [!NOTE]
-   >  Po ukończeniu publikacji, należy użyć nagrywarki dysków CD lub nagrywarka DVD, aby skopiować pliki z lokalizacji określonej w kroku 3 do stacji CD-ROM lub DVD-ROM multimediów.  
+   > Po ukończeniu publikacji, należy użyć nagrywarki dysków CD lub nagrywarka DVD, aby skopiować pliki z lokalizacji określonej w kroku 3 do stacji CD-ROM lub DVD-ROM multimediów.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)   

@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14da091149f44d185d783c071f67294b7d2431e6
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MT
+ms.openlocfilehash: b9005b6cf7f23639481505a4727f8faa08241684
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433487"
 ---
 # <a name="javascript-in-visual-studio"></a>Język JavaScript w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ JavaScript jest językiem pierwszej klasy w programie Visual Studio. Podczas pis
 - Do tworzenia witryn sieci web i aplikacji sieci web, [można znaleźć w witrynie ASP.NET](http://www.asp.net/get-started/websites).
 
   > [!NOTE]
-  >  Można tworzyć pusta witryna sieci Web platformy ASP.Net i użyć jej do programowania HTML, CSS i JavaScript. Plik Webconfig dostarczanego przez platformę ASP.NET, który powoduje włączenie debugowania w programie Visual Studio (lub po uruchomieniu aplikacji, można użyć narzędzia F12).
+  > Można tworzyć pusta witryna sieci Web platformy ASP.Net i użyć jej do programowania HTML, CSS i JavaScript. Plik Webconfig dostarczanego przez platformę ASP.NET, który powoduje włączenie debugowania w programie Visual Studio (lub po uruchomieniu aplikacji, można użyć narzędzia F12).
 
   Edytor kodu JavaScript w programie Visual Studio zapewnia obsługę technologii IntelliSense. Aby uzyskać więcej informacji, zobacz [JavaScript IntelliSense](../ide/javascript-intellisense.md).
 

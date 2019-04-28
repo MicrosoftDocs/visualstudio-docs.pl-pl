@@ -12,12 +12,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b28a0d68c6e480c7b13a6ab3aa95b93838496383
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: dcfc73feb762ecc50412ca2dc67818e2fb60a64d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441724"
 ---
 # <a name="environment-options-dialog-box"></a>Środowisko, opcje — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "59650034"
 Możesz użyć stron w **środowiska** folderu w **opcje** okno dialogowe, aby ustawić sposób niektóre elementy zintegrowanego środowiska programistycznego (IDE) wyświetlane i się zachowują. Możesz uzyskać dostęp do stron środowisko, na pasku menu, wybierając **narzędzia**, **opcje**, a następnie wybierając **środowiska**.  
   
 > [!NOTE]
->  Okna dialogowe i polecenia menu, które są wyświetlane na komputerze, mogą się różnić od tych, które są opisane w pomocy, w zależności od aktywnych ustawień i używanej wersji Visual Studio. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu, które są wyświetlane na komputerze, mogą się różnić od tych, które są opisane w pomocy, w zależności od aktywnych ustawień i używanej wersji Visual Studio. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 |Oto źródła informacji na temat, jak|Zobacz|  
 |----------------------------------|---------|  

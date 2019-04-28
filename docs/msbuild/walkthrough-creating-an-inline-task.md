@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 967727fce010c38e2ef44a0b7e73ec10b257cce0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 322c8d4b766619a6404a315fb83298bf5416fba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445324"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Przewodnik: Tworzenie zadania wbudowanego
 Zadania programu MSBuild są zwykle tworzone przez skompilowanie klasy, która implementuje <xref:Microsoft.Build.Framework.ITask> interfejsu. Począwszy od programu .NET Framework w wersji 4, można utworzyć zadania wbudowane w pliku projektu. Nie trzeba utworzyć osobny zestaw do obsługi zadań. Aby uzyskać więcej informacji, zobacz [zadania wbudowane](../msbuild/msbuild-inline-tasks.md).
@@ -103,7 +103,7 @@ Aby utworzyć i uruchomić zadania, należy użyć programu Visual Studio i **ok
     `Hello, world!`
 
    > [!NOTE]
-   >  Jeśli nie widzisz wiadomości powitania, spróbuj ponownie zapisać w pliku projektu, a następnie uruchom zadanie Hello.
+   > Jeśli nie widzisz wiadomości powitania, spróbuj ponownie zapisać w pliku projektu, a następnie uruchom zadanie Hello.
 
    Przez przełączanie między Edytorem kodu a **okna wiersza polecenia**, można zmienić w pliku projektu i szybko wyświetlić wyniki.
 

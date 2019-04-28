@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86155da1a14516992841aa5e19de2606eb09fbd8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 123aa52b5062d8ac083f054074df2c65ba77f80d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431301"
 ---
 # <a name="resolvecomreference-task"></a>Resolvecomreference — zadanie
 Przyjmuje listę wpisz jeden lub więcej nazw bibliotek lub *.tlb* pliki i jest rozpoznawana jako tych bibliotek typów do lokalizacji na dysku.
@@ -70,7 +70,7 @@ Przyjmuje listę wpisz jeden lub więcej nazw bibliotek lub *.tlb* pliki i jest 
 |`WrapperTool`|Opcjonalny element metadanych.<br /><br /> Określa narzędzie otoki, który jest używany do generowania otoki zestawu dla tego typu biblioteki. Jeśli ten element metadanych nie jest określona, zadanie używa domyślnego narzędzia otoki "tlbimp". Dostępne są następujące opcje dostępności, bez uwzględniania wielkości liter typelibs:<br /><br /> -   `Primary`: To narzędzie otoki użyć już wygenerowany podstawowy zestaw międzyoperacyjny dla składnika COM. Korzystając z tego narzędzia otoki, nie należy określać katalog wyjściowy otoki ponieważ który spowoduje, że zadanie nie powiedzie się.<br />-   `TLBImp`: To narzędzie otoki wygenerować zestaw międzyoperacyjny dla składnika COM.<br />-   `AXImp`: To narzędzie otoki wygenerować zestaw międzyoperacyjny dla formantu ActiveX.|
 
 > [!NOTE]
->  Więcej informacji podasz do unikatowego identyfikowania bibliotekę typów, tym większa możliwość, że zadanie zostanie rozwiązany do prawidłowego pliku na dysku.
+> Więcej informacji podasz do unikatowego identyfikowania bibliotekę typów, tym większa możliwość, że zadanie zostanie rozwiązany do prawidłowego pliku na dysku.
 
 ## <a name="remarks"></a>Uwagi
  Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [zadań klasy bazowej](../msbuild/task-base-class.md).

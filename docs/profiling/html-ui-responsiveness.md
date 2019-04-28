@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 35249e13bce2a22853b8e04ed0f0e3e2be1cdd4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cc7c049e0b1c5962b831e9084685b205acda38fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433459"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizowanie czasu odpowiedzi interfejsu użytkownika HTML Universal Windows Apps
 W tym temacie opisano, jak można wyizolować problemy z wydajnością w aplikacjach przy użyciu Profiler czasu odpowiedzi interfejsu użytkownika, narzędzie wydajność, dostępne dla uniwersalnych aplikacji dla Windows.
@@ -85,7 +85,7 @@ W tym temacie opisano, jak można wyizolować problemy z wydajnością w aplikac
 4. Opcjonalnie możesz dodać znaczniki użytkownika do kodu za pomocą [oznaczyć kodu do analizy](#ProfileMark).
 
     > [!TIP]
-    >  Znaczniki użytkownika może pomóc w zidentyfikowaniu problemu czas odpowiedzi podczas przeglądania danych profilera. Na przykład można dodać znacznik użytkownika na początku i na końcu sekcji kodu, który powoduje problem z czasem odpowiedzi.
+    > Znaczniki użytkownika może pomóc w zidentyfikowaniu problemu czas odpowiedzi podczas przeglądania danych profilera. Na przykład można dodać znacznik użytkownika na początku i na końcu sekcji kodu, który powoduje problem z czasem odpowiedzi.
 
 5. Postępując zgodnie z instrukcjami w poprzedniej sekcji, aby uruchomić Profiler czas odpowiedzi interfejsu użytkownika.
 
@@ -122,7 +122,7 @@ W tym temacie opisano, jak można wyizolować problemy z wydajnością w aplikac
     - Inne zdarzenia, określone w [odwołanie do zdarzenia Profiler](#profiler-event-reference).
 
     > [!TIP]
-    >  Najbardziej użyteczne informacje w profilerze pojawia się na wykresie szczegółów osi czasu.
+    > Najbardziej użyteczne informacje w profilerze pojawia się na wykresie szczegółów osi czasu.
 
 12. Z obszarem wybranych w wykorzystanie procesora CPU lub wykres przepustowość wizualna (kl. / s), wybierz **powiększyć** (przycisk lub kontekst menu), aby uzyskać więcej szczegółowych informacji. Oś czasu dla zmian grafu pokazać tylko wybrany okres czasu.
 
@@ -148,7 +148,7 @@ if (performance && performance.mark) {
  Opis zdarzenia jest wyświetlany jako etykietka narzędzia, po umieszczeniu wskaźnika myszy nad znacznik użytkownika. Możesz dodać dowolną liczbę znaczniki użytkownika, ile potrzebujesz.
 
 > [!NOTE]
->  `console.timeStamp`, polecenia dla programu Chrome, są także przedstawione jako znacznik użytkownika.
+> `console.timeStamp`, polecenia dla programu Chrome, są także przedstawione jako znacznik użytkownika.
 
  Poniższa ilustracja przedstawia Linijka diagnostyki ze znakiem pojedynczego użytkownika i jego etykietek narzędzi.
 
@@ -193,7 +193,7 @@ if (performance.mark && performance.measure) {
  Wykres wykorzystania procesora CPU pokazuje ilość czasu poświęconego na wszystkich wątków aplikacji, łącząc wartości wykorzystanie procesora CPU dla jednego lub więcej procesorów CPU w pojedynczej wartości procentowej. Wartość wykorzystanie Procesora może przekroczyć 100 procent, gdy używany jest więcej niż jednego Procesora.
 
 > [!NOTE]
->  Użycie procesora GPU nie są wyświetlane na wykresie.
+> Użycie procesora GPU nie są wyświetlane na wykresie.
 
  Ten przykład pokazuje, jak wygląda Wykres wykorzystania procesora CPU:
 
@@ -238,7 +238,7 @@ if (performance.mark && performance.measure) {
  Na wykresie widać Praca wątku interfejsu użytkownika i na wątkach w tle, które może przyczynić się do wydłużenia aktualizacje programu visual. Wykres nie pokazuje pracy JavaScript JIT, asynchronicznego działanie procesora GPU, Praca wykonana poza procesem hosta (na przykład RuntimeBroker.exe i dwm.exe pracy) lub pracy dla obszarów środowiska wykonawczego Windows, które jeszcze nie został zinstrumentowany na potrzeby profilowania (np. We/Wy dysku).
 
 > [!TIP]
->  Gdy wystąpi zdarzenie w wątku tła, identyfikator wątku pojawia się w nawiasach obok nazwy zdarzenia.
+> Gdy wystąpi zdarzenie w wątku tła, identyfikator wątku pojawia się w nawiasach obok nazwy zdarzenia.
 
  Ten przykład pokazuje, jakie oś czasu wykresu szczegóły wygląda na to w przypadku odbiornik zdarzeń dla modelu DOM kliknij zdarzenie zostaje wybrany:
 
@@ -269,7 +269,7 @@ if (performance.mark && performance.measure) {
     - Czasomierze, detektorów zdarzeń (zdarzenia DOM), układ zdarzenia i wywołania zwrotne ramek animacji oznaczone kolorami podsumowanie wybranego zdarzenia i jego elementy podrzędne są wyświetlane w **podsumowanie całkowitego czasu** sekcji (pierścień oznaczone kolorami). Każdy wycinek oznaczone kolorami obrazu reprezentuje typ zdarzenia. Etykietki narzędzi, podaj nazwę typu zdarzenia.
 
     > [!TIP]
-    >  Wykres szczegóły osi czasu i **podsumowanie całkowitego czasu** może pomóc w identyfikacji obszarów do optymalizacji. Jeśli jedno z tych widoków zawiera dużą liczbę małych zadań, zdarzenie może być kandydatem do optymalizacji. Na przykład aplikacja może być odświeżanie elementów DOM często skutkuje dużą liczbą układ i analizuje zdarzenia w formacie HTML. Dzięki temu można zoptymalizować wydajność, przetwarzanie wsadowe tych prac.
+    > Wykres szczegóły osi czasu i **podsumowanie całkowitego czasu** może pomóc w identyfikacji obszarów do optymalizacji. Jeśli jedno z tych widoków zawiera dużą liczbę małych zadań, zdarzenie może być kandydatem do optymalizacji. Na przykład aplikacja może być odświeżanie elementów DOM często skutkuje dużą liczbą układ i analizuje zdarzenia w formacie HTML. Dzięki temu można zoptymalizować wydajność, przetwarzanie wsadowe tych prac.
 
 ### <a name="FilterTimelineDetails"></a> Szczegóły osi czasu filtru
  Wyświetl szczegóły osi czasu, aby konkretne zdarzenie można filtrować, wybierając **filtr, aby zdarzenia** z menu kontekstowego dla określonego zdarzenia. Po wybraniu tej opcji, widok osi czasu i siatki są ograniczone do wybranego zdarzenia. Wybór w wykres wykorzystania procesora CPU również zakresów do określonego zdarzenia.
@@ -288,7 +288,7 @@ if (performance.mark && performance.measure) {
  Aby odfiltrować aktywności wątku interfejsu użytkownika, wyczyść **działanie w interfejsie użytkownika** opcji.
 
 > [!TIP]
->  Usuń zaznaczenie tej opcji, a następnie wybierz opcję ruchu w sieci, aby zbadać problemy związane z opóźnieniem sieci.
+> Usuń zaznaczenie tej opcji, a następnie wybierz opcję ruchu w sieci, aby zbadać problemy związane z opóźnieniem sieci.
 
  Aby odfiltrować miary użytkownika, wyczyść **miary użytkownika** opcji. Miary użytkownika są zdarzenia najwyższego poziomu bez elementów podrzędnych.
 

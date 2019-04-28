@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8383e82091ec9cc62f5b08dcc89f1e1e74239030
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fd399bb0d18d4a12493530932705b938a5f6dd67
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414861"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Dostosowywanie i rozszerzanie języka specyficznego dla domeny
 Program Visual Studio do modelowania i zestaw SDK wizualizacji (VMSDK) zawiera kilka poziomów, w których można zdefiniować narzędzi do modelowania:
@@ -28,7 +28,7 @@ Program Visual Studio do modelowania i zestaw SDK wizualizacji (VMSDK) zawiera k
 3. Rozszerzanie narzędzi do modelowania przy użyciu kodu programu. VMSDK jest zaprojektowany specjalnie w celu ułatwiają integrowanie rozszerzeń z kodem, który jest generowany na podstawie definicji DSL.  Aby uzyskać więcej informacji, zobacz [pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 > [!NOTE]
->  Po zaktualizowaniu pliku definicji DSL, nie zapomnij kliknąć **Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań, przed ponowną kompilację rozwiązania.
+> Po zaktualizowaniu pliku definicji DSL, nie zapomnij kliknąć **Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań, przed ponowną kompilację rozwiązania.
 
 ## <a name="customShapes"></a> W tej sekcji
 

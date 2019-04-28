@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: eed341b5ae43f52e7df35d820012e760166e096f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd05f5ebad1a07e818e377b90aeb5e137f296cd9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443363"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Używanie rozszerzenia Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ W tej sekcji dowiesz się, jak używać programu Visual Studio Tools dla integra
      ![Ta ikona wskazuje, że w narzędziach VSTU jest podłączony do aparatu Unity. ](../cross-platform/media/vstu-connection-connected.png "vstu_connection_connected")  
   
 > [!TIP]
->  Jeśli ikona wtyczki zawiera znacznik wyboru, którym już nawiązano połączenie z wystąpieniem Unity.  
+> Jeśli ikona wtyczki zawiera znacznik wyboru, którym już nawiązano połączenie z wystąpieniem Unity.  
   
  **Wybór wystąpienia aparatu Unity** Wyświetla okno dialogowe niektóre informacje na temat każdego wystąpienia aparatu Unity, w którym można nawiązać połączenie.  
   
@@ -136,7 +136,7 @@ W tej sekcji dowiesz się, jak używać programu Visual Studio Tools dla integra
  Numer portu gniazda UDP, który tego wystąpienia aparatu Unity komunikuje się za pośrednictwem.  
   
 > [!IMPORTANT]
->  Ponieważ Visual Studio Tools for Unity i wystąpienia środowiska Unity komunikują się za pośrednictwem gniazd sieciowych UDP, Zapora może poprosić o nim. W takim przypadku musisz autoryzować połączenie, tak aby VSTU i Unity mogą komunikować się.  
+> Ponieważ Visual Studio Tools for Unity i wystąpienia środowiska Unity komunikują się za pośrednictwem gniazd sieciowych UDP, Zapora może poprosić o nim. W takim przypadku musisz autoryzować połączenie, tak aby VSTU i Unity mogą komunikować się.  
   
 ### <a name="debugging-your-project-in-a-unity-player"></a> Debugowanie projektu w odtwarzaczu aparatu Unity  
  Visual Studio Tools for Unity można połączyć bezpośrednio do aplikacji platformy Unity w autonomicznym odtwarzaczu, gdy nie jest uruchomiony Edytor platformy Unity lub do debugowania problemów, które są specyficzne dla tej platformy.  
@@ -154,7 +154,7 @@ W tej sekcji dowiesz się, jak używać programu Visual Studio Tools dla integra
 - W programie Unity Player sieci Web w menu kontekstowym wybierz **kanału wersji** i upewnij się, że **rozwoju** opcja jest włączona.  
   
   > [!IMPORTANT]
-  >  W Unity 4.2 i nowsze **kanału wersji** element menu kontekstowego jest dostępna tylko w menu kontekstowym odtwarzacz internetowy podczas **Alt** zostanie naciśnięty klawisz, ponieważ jest otwierane menu kontekstowe. Odtwarzacz internetowy działa w systemie Mac OS X, naciśnij klawisz **opcji** zamiast tego klucza.  
+  > W Unity 4.2 i nowsze **kanału wersji** element menu kontekstowego jest dostępna tylko w menu kontekstowym odtwarzacz internetowy podczas **Alt** zostanie naciśnięty klawisz, ponieważ jest otwierane menu kontekstowe. Odtwarzacz internetowy działa w systemie Mac OS X, naciśnij klawisz **opcji** zamiast tego klucza.  
   
   Na koniec upewnij się, że masz połączenie z wystąpieniem Unity, które chcesz debugować. Aby uzyskać informacje o tym, jak to zrobić, zobacz [łączenie programu Visual Studio Unity](#connecting-visual-studio-to-unity) sekcji.  
   
@@ -162,7 +162,7 @@ W tej sekcji dowiesz się, jak używać programu Visual Studio Tools dla integra
  Wielu deweloperów Unity piszesz kod składników jako zewnętrzne biblioteki DLL tak, aby funkcje, które opracowują można łatwo udostępniać z innymi projektami. Visual Studio Tools for Unity ułatwia debugowanie kodu w tych bibliotek DLL, które bezproblemowo z innym kodem w swoim projekcie aparatu Unity.  
   
 > [!NOTE]
->  W tej chwili Visual Studio Tools for Unity obsługuje tylko zarządzane biblioteki dll. Nie obsługuje debugowania kodu natywnej biblioteki dll, takich jak napisanego w języku C++.  
+> W tej chwili Visual Studio Tools for Unity obsługuje tylko zarządzane biblioteki dll. Nie obsługuje debugowania kodu natywnej biblioteki dll, takich jak napisanego w języku C++.  
   
  Należy pamiętać, że opisanym tutaj scenariuszu założono, że kod źródłowy — oznacza to, tworzysz lub ponowne wykorzystanie kodu firmy Microsoft lub masz źródło kodu do biblioteki innych firm i zamierzasz wdrożyć ją w swoim projekcie aparatu Unity jako biblioteki DLL. W tym scenariuszu nie opisano profilowanie DLL, dla której nie masz kodu źródłowego.  
   

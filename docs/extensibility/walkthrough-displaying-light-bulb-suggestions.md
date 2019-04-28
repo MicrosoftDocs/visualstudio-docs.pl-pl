@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0799bdff6957e811c365fe153a722d25e306366
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25365c5599d299189b07ec5c30124aac0004f390
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444944"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Przewodnik: Wyświetl sugestie z żarówką
 Ikony żarówek są ikony w edytorze programu Visual Studio, które rozwinąć w celu wyświetlenia zestawem akcji, na przykład poprawki dla problemów identyfikowane za pomocą analizatorów kodu wbudowanego lub refaktoryzacji kodu.
@@ -177,7 +177,7 @@ Ikony żarówek są ikony w edytorze programu Visual Studio, które rozwinąć w
 6. Implementowanie <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A> metody, która zwraca tablicę <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> obiektów, które zawierają różne <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> obiektów. Ta metoda jest wywoływana, gdy żarówki jest rozwinięty.
 
     > [!WARNING]
-    >  Upewnij się, że implementacje `HasSuggestedActionsAsync()` i `GetSuggestedActions()` są spójne; który jest, jeśli `HasSuggestedActionsAsync()` zwraca `true`, następnie `GetSuggestedActions()` powinny mieć pewne działania, aby wyświetlić. W wielu przypadkach `HasSuggestedActionsAsync()` jest wywoływana tuż przed `GetSuggestedActions()`, ale nie zawsze jest to wymagane. Na przykład, jeśli użytkownik wywoła akcje żarówki, naciskając klawisz (**CTRL +** .) tylko `GetSuggestedActions()` jest wywoływana.
+    > Upewnij się, że implementacje `HasSuggestedActionsAsync()` i `GetSuggestedActions()` są spójne; który jest, jeśli `HasSuggestedActionsAsync()` zwraca `true`, następnie `GetSuggestedActions()` powinny mieć pewne działania, aby wyświetlić. W wielu przypadkach `HasSuggestedActionsAsync()` jest wywoływana tuż przed `GetSuggestedActions()`, ale nie zawsze jest to wymagane. Na przykład, jeśli użytkownik wywoła akcje żarówki, naciskając klawisz (**CTRL +** .) tylko `GetSuggestedActions()` jest wywoływana.
 
     ```csharp
     public IEnumerable<SuggestedActionSet> GetSuggestedActions(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)
@@ -326,7 +326,7 @@ Ikony żarówek są ikony w edytorze programu Visual Studio, które rozwinąć w
     ```
 
     > [!WARNING]
-    >  Akcję żarówki **Invoke** metoda nie powinna się wyświetlić interfejs użytkownika. Jeśli akcji wyświetlić nowy interfejs użytkownika (na przykład (wersja zapoznawcza) lub wyboru okna dialogowego), nie są wyświetlane interfejsu użytkownika bezpośrednio z poziomu **Invoke** metody, ale zamiast tego zaplanować, aby wyświetlić interfejs użytkownika po powrocie z **Invoke**.
+    > Akcję żarówki **Invoke** metoda nie powinna się wyświetlić interfejs użytkownika. Jeśli akcji wyświetlić nowy interfejs użytkownika (na przykład (wersja zapoznawcza) lub wyboru okna dialogowego), nie są wyświetlane interfejsu użytkownika bezpośrednio z poziomu **Invoke** metody, ale zamiast tego zaplanować, aby wyświetlić interfejs użytkownika po powrocie z **Invoke**.
 
 10. Aby wykonać wdrożenia, należy dodać `Dispose()` i `TryGetTelemetryId()` metody.
 

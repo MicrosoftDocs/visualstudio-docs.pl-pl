@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - xplat-cplusplus
 ms.openlocfilehash: 1439e50eba4a0000a1bf78b3f24c74fb164c1faf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818143"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Visual C++ dla opracowywania aplikacji mobilnych dla wielu platform
 Możesz tworzyć aplikacje natywne w języku C++ dla systemów iOS, Android i Windows i udziału wspólny kod w bibliotekach skompilowany dla systemów iOS, Android i Windows przy użyciu języka Visual C++ for Cross-Platform Mobile Development. Ta opcja jest dostępna w Visual Studio 2015, który instaluje zestawy SDK i narzędzia potrzebne do tworzenia aplikacji dla wielu platform, biblioteki udostępnione i natywne aplikacje. Po zainstalowaniu, można użyć Visual C++ do pisania kodu, który jest uruchamiany w systemach iOS i urządzenia z systemem Android i platformy, oprócz Windows, Windows Phone i Xbox.

@@ -28,12 +28,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba950d55dcb4a4a0e1a06b40b1ed00ee3f58e54e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9f620cbf5d522b99965268f35c00ff8e874f1542
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440073"
 ---
 # <a name="format-specifiers-in-c"></a>Specyfikatory formatu w C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Można zmienić format wyświetlania wartości w **Obejrzyj** okna przy użyciu 
  Możesz również użyć specyfikatorów formatu w **bezpośrednie** oknie **polecenia** okna, a nawet w oknach źródłowych. Jeśli zatrzymasz się na wyrażeniu w tych oknach, wynik pojawi się w poradzie dotyczącej danych. Wyświetl etykietki danych odzwierciedla specyfikator formatu.  
   
 > [!NOTE]
->  Debuger macierzysty Visual Studio zmieniony na nowym aparacie debugowania. W ramach tej zmiany dodano pewnych nowych specyfikatorów formatu i niektórych starych zostały usunięte. Starszy debuger jest nadal używana podczas wykonywania interop (mieszane macierzyste i zarządzane) debugowanie za pomocą C++sposób niezamierzony. W poniższych sekcjach, w tym temacie opisano specyfikatory formatu dla każdego silnika debugowania.  
+> Debuger macierzysty Visual Studio zmieniony na nowym aparacie debugowania. W ramach tej zmiany dodano pewnych nowych specyfikatorów formatu i niektórych starych zostały usunięte. Starszy debuger jest nadal używana podczas wykonywania interop (mieszane macierzyste i zarządzane) debugowanie za pomocą C++sposób niezamierzony. W poniższych sekcjach, w tym temacie opisano specyfikatory formatu dla każdego silnika debugowania.  
 > 
 > - [Specyfikatory formatu](#BKMK_Visual_Studio_2012_format_specifiers) opisuje specyfikatory formatu w nowym aparacie debugowania.  
 >   - [Specyfikatory formatu dla debugowania międzyoperacyjnego przy użyciu C++sposób niezamierzony](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) opisuje specyfikatory formatu w starszym silniku debugowania.  
@@ -92,7 +92,7 @@ int main() {
 |!|format RAW, ignorowanie wszelkich dostosowań widoków typu danych|\<dostosowane reprezentacji >|4|  
   
 > [!NOTE]
->  Gdy **hv** specyfikatora formatu, debuger próbuje określić długość buforu i wyświetlić odpowiednią liczbę elementów. Ponieważ nie zawsze jest możliwe dla debugera znaleźć rozmiar buforu dokładnie tablicy, należy użyć Określ rozmiar specyfikatorów `(pBuffer,[bufferSize])` zawsze, gdy jest to możliwe. **Hv** specyfikator formatu jest przeznaczone dla scenariuszy, których rozmiar buforu nie jest jeszcze dostępna  
+> Gdy **hv** specyfikatora formatu, debuger próbuje określić długość buforu i wyświetlić odpowiednią liczbę elementów. Ponieważ nie zawsze jest możliwe dla debugera znaleźć rozmiar buforu dokładnie tablicy, należy użyć Określ rozmiar specyfikatorów `(pBuffer,[bufferSize])` zawsze, gdy jest to możliwe. **Hv** specyfikator formatu jest przeznaczone dla scenariuszy, których rozmiar buforu nie jest jeszcze dostępna  
   
 ### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Określ rozmiar specyfikatorów dla wskaźników jako tablice  
  Jeśli masz wskaźnik do obiektu, który chcesz wyświetlić jako tablicę, można użyć liczbą całkowitą lub wyrażenie, aby określić liczbę elementów tablicy:  

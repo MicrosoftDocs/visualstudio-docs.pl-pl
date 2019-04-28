@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a129e0a66399da1efe9bff4d7aef1a94602fa79
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: b07f018a35874e2ffc3f3be825abb227f2996aea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425472"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Rejestrowanie programów obsługi zestawu międzyoperacyjnego
 Należy zarejestrować pakietu VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tak, aby prawidłowo polecenia kieruje zintegrowanego środowiska programistycznego (IDE).
@@ -31,7 +31,7 @@ Należy zarejestrować pakietu VSPackage [!INCLUDE[vsprvs](../../code-quality/in
  Pakietu VSPackage działający jako procedura obsługi interfejsu użytkownika (UI)-na podstawie polecenia wymaga wpis rejestru o nazwie po pakietu VSPackage `GUID`. Ten wpis rejestru określa lokalizację pliku zasobów interfejsu użytkownika pakietu VSPackage i zasobu menu, w tym pliku. Wpis rejestru sam znajduje się w folderze HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<wersji >* \Menus, gdzie  *\<wersji >* jest wersją [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], na przykład 9.0.
 
 > [!NOTE]
->  Ścieżka katalogu głównego HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >* może zostać zastąpiona przez alternatywne główne, kiedy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] powłoki jest zainicjowany. Aby uzyskać więcej informacji o ścieżce katalogu głównego, zobacz [instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
+> Ścieżka katalogu głównego HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >* może zostać zastąpiona przez alternatywne główne, kiedy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] powłoki jest zainicjowany. Aby uzyskać więcej informacji o ścieżce katalogu głównego, zobacz [instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
 
 ### <a name="the-ctmenu-resource-registry-entry"></a>Wpis rejestru CTMENU zasobów
  Struktura wpisu rejestru to:

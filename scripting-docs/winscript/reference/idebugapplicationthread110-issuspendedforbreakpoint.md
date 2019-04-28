@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c8c539a24fdbd5f824b50cdd46783f5225cbe09f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 82b8957ae9f2b6674af7addf2239c745115e4e3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58149896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440525"
 ---
 # <a name="idebugapplicationthread110issuspendedforbreakpoint"></a>IDebugApplicationThread110::IsSuspendedForBreakPoint
 Określa, czy [IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md) została wywołana dla tego wątku i nie zostało jeszcze zakończone.  
   
 > [!IMPORTANT]
->  [Interfejs IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md) jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
+> [Interfejs IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md) jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="syntax"></a>Składnia  
   

@@ -17,18 +17,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 601f20c530ec5e275139d1e70d3df58fa88cd715
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 95489464128e706e755432bee991c5481f5af8bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58147634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425824"
 ---
 # <a name="iapplicationdebuggercreateinstanceatdebugger"></a>IApplicationDebugger::CreateInstanceAtDebugger
 Umożliwia tworzenie obiektów w procesie debugowania przez kod to znaczy poza procesem do debugera.  
   
 > [!IMPORTANT]
->  Ta metoda nie powinny być implementowane, ponieważ zezwala ona na niezaufanego kodu do tworzenia obiektów dowolnego wątku zaufanych debugera.  
+> Ta metoda nie powinny być implementowane, ponieważ zezwala ona na niezaufanego kodu do tworzenia obiektów dowolnego wątku zaufanych debugera.  
   
 ## <a name="syntax"></a>Składnia  
   

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b939640b0676ae34eedeed96c8a4b6b21a5a37e4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ea209b380948196ee20cc4e2085fa46fab76efc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441841"
 ---
 # <a name="design-and-create-office-solutions"></a>Projektowanie i tworzenie rozwiązań pakietu Office
 
@@ -54,7 +54,7 @@ Visual Studio udostępnia szablony projektów, których można utworzyć kilka r
   Jeśli program Visual Studio zmieni docelową aplikację .NET Framework dla projektu, a używasz ClickOnce do wdrażania rozwiązania, upewnij się, możesz również wybrać odpowiednią wersję programu .NET Framework w **wymagania wstępne** okno dialogowe. Zaznacz to pole wyboru nie zmienia się automatycznie, gdy zmienić platformę docelową dla projektu. Aby uzyskać więcej informacji, zobacz [jak: Instalowanie wymagań wstępnych na komputerach użytkowników końcowych do uruchamiania rozwiązań pakietu Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
 
 > [!NOTE]
->  Nie można skierowane do .NET Framework 3.5 lub wyżej w projektach pakietu Office, które tworzysz przy użyciu [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Projekty pakietu Office, które tworzysz przy użyciu [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] wymagają funkcji, które zostały najpierw wprowadzone w [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]
+> Nie można skierowane do .NET Framework 3.5 lub wyżej w projektach pakietu Office, które tworzysz przy użyciu [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Projekty pakietu Office, które tworzysz przy użyciu [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] wymagają funkcji, które zostały najpierw wprowadzone w [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]
 
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Zrozumieć, kiedy zestawy PIA pakietu Office są wymagane na komputerach użytkowników końcowych
  Domyślnie, podstawowe zestawy międzyoperacyjne (PIA) pakietu Office nie są zainstalowane na komputerach użytkowników końcowych, jeśli **Osadź typy współdziałania** każdego odwołania PIA pakietu Office w projekcie jest właściwością **True**, który jest wartością domyślną. W tym scenariuszu informacji o typie dla typów PIA, które są używane przez rozwiązania jest osadzony w zestawie rozwiązania podczas kompilowania projektu. W czasie wykonywania informacje o typie osadzony służy zamiast zestawów PIA do wywołania w modelu obiektów opartych na modelu COM aplikacji pakietu Office. Aby uzyskać więcej informacji na temat sposobu typów z zestawy PIA są osadzone w rozwiązaniu, zobacz [równoważność typów i osadzone typy międzyoperacyjne](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).

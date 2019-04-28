@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 943493273808afdb2dfb099ff1f44900028e4dd6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 36b821219b02fa77171d89214d8cf4813ce92303
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433391"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Wybieranie szablonu rozwiązania dotyczącego języka specyficznego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Aby utworzyć rozwiązanie języka dotyczącego określonej domeny, wybierz jedn
  Następujące szablony rozwiązań są dostępne w Kreatorze projektanta języka specyficznego dla domeny.  
   
 > [!NOTE]
->  Celem szablonów jest zapewnienie początkowy DSL. Szablony o nazwie diagramów klas i składników nie są pełne diagramów UML. Jeśli chcesz utworzyć UML model, należy wziąć pod uwagę modelowania narzędzia, które zapewniają zestaw diagramy, które są zintegrowane w jednym modelu UML. Są rozszerzalne i może zostać zintegrowany z DSL za pomocą ModelBus. Aby uzyskać więcej informacji, zobacz [tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md).  
+> Celem szablonów jest zapewnienie początkowy DSL. Szablony o nazwie diagramów klas i składników nie są pełne diagramów UML. Jeśli chcesz utworzyć UML model, należy wziąć pod uwagę modelowania narzędzia, które zapewniają zestaw diagramy, które są zintegrowane w jednym modelu UML. Są rozszerzalne i może zostać zintegrowany z DSL za pomocą ModelBus. Aby uzyskać więcej informacji, zobacz [tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md).  
   
 |Szablon|Funkcje|Opis|  
 |--------------|--------------|-----------------|  

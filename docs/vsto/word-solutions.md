@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bbe703e54c6023a4d14a8610168438acc5c0e953
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0c34ea0489801a563745047b920e38afe58aec1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445495"
 ---
 # <a name="word-solutions"></a>rozwiązania programu Word
   Program Visual Studio udostępnia szablony projektów, których można użyć do utworzenia dostosowań poziomu dokumentu i dodatków narzędzi VSTO dla programu Microsoft Office Word. Rozwiązania te można użyć do zautomatyzowania programu Word, Rozszerz funkcje programu Word i dostosowania interfejsu użytkownika (UI) programu Word. Aby uzyskać więcej informacji na temat różnic między dostosowań na poziomie dokumentu i dodatków narzędzi VSTO dla programów, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -39,7 +39,7 @@ ms.locfileid: "60085145"
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
 > [!NOTE]
->  Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.
+> Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.
 
  Ten temat zawiera następujące informacje:
 

@@ -33,12 +33,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ba05030a0f842d6905be384739a9d797634092f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 1cd368730ec4df91840984525bf0042963587e68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444710"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Dokumenty, środowisko, opcje — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "59652634"
 Ta strona **opcje** okno dialogowe, aby kontrolować wyświetlanie dokumentów w zintegrowanym środowisku programistycznym (IDE) i zarządzanie zmianami zewnętrzne dokumenty i pliki. To okno dialogowe można skorzystać, klikając **opcje** na **narzędzia** menu, a następnie wybierając **dokumenty** w **środowiska** węzła. Jeśli **dokumenty** nie ma na liście, wybierz opcję **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.  
   
 > [!NOTE]
->  Dostępne opcje w oknach dialogowych i nazwy i lokalizacje poleceń menu, który zostanie wyświetlony, mogą różnić się od opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dostępne opcje w oknach dialogowych i nazwy i lokalizacje poleceń menu, który zostanie wyświetlony, mogą różnić się od opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  **Użyj ponownie bieżące okno dokumentu, jeśli zapisane**  
  Po wybraniu powoduje zamknięcie bieżącego dokumentu, jeśli zostały zapisane i zostanie otwarty nowy dokument, w tym samym oknie. Jeśli nie został zapisany bieżącego dokumentu, pozostaje otwarty, a nowy dokument jest otwarty w osobnym oknie. Gdy ta opcja jest zaznaczona, nowe dokumenty zawsze Otwórz w oddzielnych okien.  
@@ -75,7 +75,7 @@ Ta strona **opcje** okno dialogowe, aby kontrolować wyświetlanie dokumentów w
  Wybierz tę opcję, aby wyświetlić **różne pliki** w węźle **Eksploratora rozwiązań**. Różne pliki to pliki, które nie są skojarzone z projektu lub rozwiązania, ale może być wyświetlany w **Eksploratora rozwiązań** dla Twojej wygody.  
   
 > [!NOTE]
->  Wybierz tę opcję, aby umożliwić **Pokaż w przeglądarce** polecenie **pliku** menu dla dokumentów sieci Web, które nie są uwzględnione w aktywnej aplikacji sieci Web.  
+> Wybierz tę opcję, aby umożliwić **Pokaż w przeglądarce** polecenie **pliku** menu dla dokumentów sieci Web, które nie są uwzględnione w aktywnej aplikacji sieci Web.  
   
  **\<** *n* **> Elementy zapisywane w projekcie plików pozostałych**  
  Określa liczbę plików, aby trwale w **MiscellaneousFiles** folderu **Eksploratora rozwiązań**. Te pliki są wyświetlane, nawet jeśli nie są już otwarty w edytorze. Można określić liczbę całkowitą z zakresu od 0 do 256. Wartość domyślna to 0.  

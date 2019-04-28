@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7397da630a5fd6f2c649d6f448627d7c77c55128
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9417c2116dde909bda948e7d9140d7f52b090d68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430475"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Przewodnik: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 1
   Możesz rozszerzyć systemu projektu programu SharePoint w programie Visual Studio, tworząc własny projekt typów elementów. W tym instruktażu utworzysz element projektu, który można dodać do projektu programu SharePoint w celu utworzenia akcji niestandardowej w witrynie programu SharePoint. Akcja niestandardowa dodaje element menu do **Akcje witryny** menu witryny programu SharePoint.
@@ -44,7 +44,7 @@ ms.locfileid: "60059126"
   Jest to przewodnik autonomicznej. Po ukończeniu tego przewodnika, można zwiększyć elementu projektu, dodając Kreatora szablonu elementu. Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
 > [!NOTE]
->  Możesz pobrać próbkę z [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) pokazujący sposób tworzenia działań niestandardowych do przepływu pracy.
+> Możesz pobrać próbkę z [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) pokazujący sposób tworzenia działań niestandardowych do przepływu pracy.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Potrzebne są następujące składniki na komputerze deweloperskim w celu przeprowadzenia tego instruktażu:
@@ -81,7 +81,7 @@ ms.locfileid: "60059126"
 4. W **nowy projekt** okna dialogowego rozwiń **Visual C#** lub **języka Visual Basic** węzłów, a następnie wybierz **rozszerzalności** węzła.
 
     > [!NOTE]
-    >  **Rozszerzalności** węzeł jest dostępny tylko w przypadku instalowania programu Visual Studio SDK. Aby uzyskać więcej informacji zobacz sekcję wymagania wstępne niniejszego tematu.
+    > **Rozszerzalności** węzeł jest dostępny tylko w przypadku instalowania programu Visual Studio SDK. Aby uzyskać więcej informacji zobacz sekcję wymagania wstępne niniejszego tematu.
 
 5. Wybierz **projekt VSIX** szablonu.
 
@@ -164,7 +164,7 @@ ms.locfileid: "60059126"
 2. Na liście elementów projektu, wybierz opcję **plik ikony** elementu.
 
     > [!NOTE]
-    >  W projektach języka Visual Basic, musisz wybrać **ogólne** węzeł, aby wyświetlić **plik ikony** elementu.
+    > W projektach języka Visual Basic, musisz wybrać **ogólne** węzeł, aby wyświetlić **plik ikony** elementu.
 
 3. W **nazwa** wprowadź **CustomAction_SolutionExplorer.ico**, a następnie wybierz **Dodaj** przycisku.
 
@@ -197,7 +197,7 @@ ms.locfileid: "60059126"
 3. Zastąp zawartość pliku następujący kod XML, a następnie zapisz i zamknij plik.
 
     > [!NOTE]
-    >  Następujący kod XML jest szablon elementu Visual C#. Jeśli tworzysz szablon elementu języka Visual Basic, zastąp wartość `ProjectType` element z `VisualBasic`.
+    > Następujący kod XML jest szablon elementu Visual C#. Jeśli tworzysz szablon elementu języka Visual Basic, zastąp wartość `ProjectType` element z `VisualBasic`.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -310,7 +310,7 @@ ms.locfileid: "60059126"
 6. W **typu** wybierz **Microsoft.VisualStudio.ItemTemplate**.
 
     > [!NOTE]
-    >  Ta wartość odpowiada `ItemTemplate` elementu w pliku extension.vsixmanifest. Ten element umożliwia określenie podfolderu w pakiecie VSIX, zawierający szablonu elementu projektu. Aby uzyskać więcej informacji, zobacz [elementów właściwości ItemTemplate (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
+    > Ta wartość odpowiada `ItemTemplate` elementu w pliku extension.vsixmanifest. Ten element umożliwia określenie podfolderu w pakiecie VSIX, zawierający szablonu elementu projektu. Aby uzyskać więcej informacji, zobacz [elementów właściwości ItemTemplate (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
 
 7. W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.
 
@@ -323,7 +323,7 @@ ms.locfileid: "60059126"
 10. W **typu** wybierz **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Ta wartość odpowiada `MefComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Ta wartość odpowiada `MefComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 11. W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.
 
@@ -425,7 +425,7 @@ ms.locfileid: "60059126"
      Akcja niestandardowa zostaje spakowany i wdrożyć w witrynie programu SharePoint, który jest określony w **adres URL witryny** właściwość projektu. Przeglądarka sieci web zostanie otwarta domyślna strona tej lokacji.
 
     > [!NOTE]
-    >  Jeśli **wyłączenia debugowania skryptu** pojawi się okno dialogowe, wybierz **tak** przycisk, aby kontynuować debugowanie projektu.
+    > Jeśli **wyłączenia debugowania skryptu** pojawi się okno dialogowe, wybierz **tak** przycisk, aby kontynuować debugowanie projektu.
 
 4. Na **Akcje witryny** menu, wybierz **Centrum deweloperów programu SharePoint**, sprawdź, czy witryny sieci Web zostanie otwarta przeglądarka https://docs.microsoft.com/sharepoint/dev/, a następnie zamknij przeglądarkę sieci web.
 

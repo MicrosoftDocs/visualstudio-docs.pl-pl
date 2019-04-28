@@ -10,12 +10,12 @@ ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 87a561ed3596b98f35e26e19e2c5851534aba564
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b6c2810a81ada06152faea06e86a27f7907a643
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430099"
 ---
 # <a name="using-the-settings-store"></a>Korzystanie z magazynu ustawień
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,6 +84,6 @@ Istnieją dwa rodzaje ustawień magazynów:
 2. Przejdź do HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.  
   
     > [!NOTE]
-    >  Upewnij się, że przeglądasz klucz, który zawiera \14.0Exp_Config\ i nie \14.0_Config\\. Po uruchomieniu doświadczalnym wystąpieniu programu Visual Studio, ustawienia konfiguracyjne znajdują się w gałęzi rejestru "14.0Exp_Config".  
+    > Upewnij się, że przeglądasz klucz, który zawiera \14.0Exp_Config\ i nie \14.0_Config\\. Po uruchomieniu doświadczalnym wystąpieniu programu Visual Studio, ustawienia konfiguracyjne znajdują się w gałęzi rejestru "14.0Exp_Config".  
   
 3. Rozwiń węzeł \Installed Products\. Jeśli komunikat w poprzednich krokach jest **zainstalowane narzędzia dla deweloperów do programu Microsoft Windows Phone: Wartość true,**, a następnie \Installed Products\ powinien zawierać węzeł Microsoft Windows Phone Developer Tools. Jeśli komunikat jest **zainstalowane narzędzia dla deweloperów do programu Microsoft Windows Phone: FALSE**, a następnie \Installed Products\ nie może zawierać węzeł Microsoft Windows Phone Developer Tools.

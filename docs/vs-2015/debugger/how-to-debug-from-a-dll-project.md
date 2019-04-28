@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 360384118f5c2d02801b63b8836800eca5e26d78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6496d38e753d2338966916d1d7855abca77ace34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438491"
 ---
 # <a name="how-to-debug-from-a-dll-project"></a>Instrukcje: Debugowanie z projektu DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Aby rozpocząć debugowanie z projektu DLL, należy określić aplikacji wywołu
  Jeśli zarządzana biblioteka DLL jest wywoływana przez kod macierzysty i chcesz debugować oba, należy to określić, we właściwościach projektu. Aby uzyskać więcej informacji, zobacz [jak: Debugowanie w trybie mieszanym](../debugger/how-to-debug-in-mixed-mode.md).  
   
 > [!NOTE]
->  Nie można określić zewnętrznej aplikacji wywołującej, w wersjach Express programu Visual Studio. Zamiast tego możesz należy dodać projekt wykonywalny do rozwiązania, jest ustawiony jako projekt startowy i wywoływać metody w bibliotece DLL z projektu pliku wykonywalnego.  
+> Nie można określić zewnętrznej aplikacji wywołującej, w wersjach Express programu Visual Studio. Zamiast tego możesz należy dodać projekt wykonywalny do rozwiązania, jest ustawiony jako projekt startowy i wywoływać metody w bibliotece DLL z projektu pliku wykonywalnego.  
   
 ### <a name="to-specify-the-calling-application-in-a-c-project"></a>Aby określić aplikacji wywołującej w projekcie C++.  
   

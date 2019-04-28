@@ -14,12 +14,12 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 59ecd079b7e95d86ab85eb9e5e36fcf938f99f58
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0309019cc36e9f81596061dbbede0f84b0b78a05
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403586"
 ---
 # <a name="visual-studio-isolated-shell"></a>Program Visual Studio Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ Powłoka programu Visual Studio, izolowany umożliwia tworzenie autonomicznych a
  Do tworzenia aplikacji isolated shell, Rozpocznij od projektu programu Visual Studio Shell izolowanym. Ten projekt zawiera wszystko, czego potrzebujesz do tworzenia i testowania aplikacji izolowanej powłoki. Gdy jesteś gotowy do zapisu w programu instalacyjnego, która wdraża aplikację, należy pobrać pakiet redystrybucyjny programu shell w trybie izolowanym z [pakiet redystrybucyjny Microsoft Visual Studio Shell (Isolated)](http://go.microsoft.com/fwlink/?LinkId=616022).  
   
 > [!NOTE]
->  Aby korzystać z pakietu redystrybucyjnego programu shell w trybie izolowanym, poprosimy Cię o ankiety klientów.  Po wypełnieniu ankiety, nastąpi przekierowanie do strony Visual Studio Connect zawierającej łącza pobierania pakietów redystrybucyjnych.  Łącza pobierania podczas kolejnych wizyt w witrynie Visual Studio Connect, w obszarze **programy &#124; VISUAL STUDIO 2015 ZINTEGROWANE i ISOLATED SHELL** kartę.  
+> Aby korzystać z pakietu redystrybucyjnego programu shell w trybie izolowanym, poprosimy Cię o ankiety klientów.  Po wypełnieniu ankiety, nastąpi przekierowanie do strony Visual Studio Connect zawierającej łącza pobierania pakietów redystrybucyjnych.  Łącza pobierania podczas kolejnych wizyt w witrynie Visual Studio Connect, w obszarze **programy &#124; VISUAL STUDIO 2015 ZINTEGROWANE i ISOLATED SHELL** kartę.  
   
 > [!NOTE]
->  Aby uzyskać więcej informacji o sposobie wdrażania aplikacji opartych na powłoce izolowanej zobacz [instruktażu: Tworzenie prostej Isolated Shell aplikacji](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+> Aby uzyskać więcej informacji o sposobie wdrażania aplikacji opartych na powłoce izolowanej zobacz [instruktażu: Tworzenie prostej Isolated Shell aplikacji](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="working-with-the-isolated-shell"></a>Praca z programu isolated shell  
  Aplikacji powłoki programu Visual Studio, izolowany ma pełny dostęp do usług Visual Studio i obsługuje specjalnego dostosowania, znakowania. Istnieje kilka sposobów, które można dostosować aplikacji isolated shell:  

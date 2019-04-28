@@ -10,12 +10,12 @@ ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 83bc344cf4c99efd426066a47c240b710ef455e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8dfc751b040bd775c3f55ff7db804c2a16d45d5f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414615"
 ---
 # <a name="inside-the-editor"></a>Wewnątrz edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ Edytor składa się z liczbą różne podsystemy, które pozwalają zapobiec edy
  Zawartość migawki tekstu można wyświetlić jako sekwencja znaków lub sekwencja wierszy. Znaki i wiersze są indeksowane zarówno, począwszy od zera. Migawka pusty tekst zawiera zero znaków i jeden pusty wiersz. Wiersz jest rozdzielany przez dowolne prawidłowe sekwencje znaków Unicode podział wiersza lub początek lub koniec buforu. Znaki końca wiersza są jawnie reprezentowane w migawce tekstu i podziały wierszy w migawce tekst nie wszystkie muszą być takie same.  
   
 > [!NOTE]
->  Aby uzyskać więcej informacji na temat znaki podziału wiersza w edytorze programu Visual Studio, zobacz [kodowania i podziały wierszy](../ide/encodings-and-line-breaks.md).  
+> Aby uzyskać więcej informacji na temat znaki podziału wiersza w edytorze programu Visual Studio, zobacz [kodowania i podziały wierszy](../ide/encodings-and-line-breaks.md).  
   
  Wiersz tekstu jest reprezentowany przez <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> obiektu, który można uzyskać z migawki tekst, numeru wiersza określonego lub stanowiska określonego znaku.  
   

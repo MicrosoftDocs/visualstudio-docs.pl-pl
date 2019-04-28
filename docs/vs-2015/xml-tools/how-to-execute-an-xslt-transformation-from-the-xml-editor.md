@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec546997d5c6ff75a3ccba1e60e9fe7a4b5b7c74
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8085864ebdb73e8233322a2f91a044dec95dc126
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431049"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Instrukcje: Wykonywanie transformacji XSLT w edytorze XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Edytor XML umożliwia kojarzenie arkusz stylów XSLT z dokumentu XML na przekszt
 3. Kliknij przycisk **dane wyjściowe ShowXSL** znajdujący się na **edytora XML** paska narzędzi.  
   
     > [!NOTE]
-    >  W przypadku arkusza stylów, nie skojarzonych z dokumentu XML, okno dialogowe monit zapewniają arkusza stylów do użycia.  
+    > W przypadku arkusza stylów, nie skojarzonych z dokumentu XML, okno dialogowe monit zapewniają arkusza stylów do użycia.  
     >   
     >  Dane wyjściowe z transformację XSLT jest wyświetlany w nowym oknie dokumentu.  
   
@@ -51,7 +51,7 @@ Edytor XML umożliwia kojarzenie arkusz stylów XSLT z dokumentu XML na przekszt
 2. Określ dokumentu XML w **dane wejściowe** pola dokumentu **właściwości** okna.  
   
     > [!NOTE]
-    >  Dokument XML jest dokument wejściowy używany do transformacji. Jeśli dokument nie jest określony, uruchamianiu przekształcenie XSLT **Otwieranie pliku** pojawi się okno dialogowe, a w tym czasie można określić dokument.  
+    > Dokument XML jest dokument wejściowy używany do transformacji. Jeśli dokument nie jest określony, uruchamianiu przekształcenie XSLT **Otwieranie pliku** pojawi się okno dialogowe, a w tym czasie można określić dokument.  
   
 3. Kliknij przycisk **dane wyjściowe ShowXSLT** znajdujący się na **edytora XML** paska narzędzi.  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 449e273659df1e3b6846ff8e7e3d8d6943ba69f4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a4d158e3c624a63863e5a8305dd0b9b4b5ef10ea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444219"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Dodawanie poleceń i gestów do diagramów warstw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Można zdefiniować polecenia w menu kontekstowym i elemencie obsługi gestu na 
  Jeśli chcesz, możesz zdefiniować kilka poleceń i elementów obsługi gestów w tym samym projekcie programu Visual Studio. Możesz również połączyć kilka takich projektów w jeden VSIX. Na przykład można zdefiniować pojedynczy VSIX, zawierający polecenia dotyczące warstwy, języka specyficznego dla domeny i poleceń do diagramów UML.  
   
 > [!NOTE]
->  Można również dostosować sprawdzanie poprawności architektury, w źródle użytkowników, których kod jest porównywane z diagramami warstwy. Sprawdzanie poprawności architektury należy zdefiniować w osobnym projekcie programu Visual Studio. Można go dodać do samego VSIX jako inne rozszerzenia. Aby uzyskać więcej informacji, zobacz [Dodawanie niestandardowej walidacji architektury do diagramów warstw](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
+> Można również dostosować sprawdzanie poprawności architektury, w źródle użytkowników, których kod jest porównywane z diagramami warstwy. Sprawdzanie poprawności architektury należy zdefiniować w osobnym projekcie programu Visual Studio. Można go dodać do samego VSIX jako inne rozszerzenia. Aby uzyskać więcej informacji, zobacz [Dodawanie niestandardowej walidacji architektury do diagramów warstw](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
   
 ## <a name="requirements"></a>Wymagania  
  Zobacz [wymagania](../modeling/extend-layer-diagrams.md#prereqs).  
@@ -65,7 +65,7 @@ Można zdefiniować polecenia w menu kontekstowym i elemencie obsługi gestu na 
 1. Utwórz projekt biblioteki klas w nowym lub istniejącym rozwiązaniu Visual Studio. W **nowy projekt** okno dialogowe, kliknij przycisk **Visual C#** a następnie kliknij przycisk **biblioteki klas**. Ten projekt będzie zawierać polecenia lub gest klasy programu obsługi.  
   
     > [!NOTE]
-    >  Można zdefiniować więcej niż jednej klasy programu obsługi polecenia lub gestu w jednej bibliotece klasy, ale należy zdefiniować warstwy sprawdzania poprawności klas w bibliotece osobnej klasy.  
+    > Można zdefiniować więcej niż jednej klasy programu obsługi polecenia lub gestu w jednej bibliotece klasy, ale należy zdefiniować warstwy sprawdzania poprawności klas w bibliotece osobnej klasy.  
   
 2. Identyfikowanie lub Utwórz projekt VSIX w rozwiązaniu. Projekt VSIX zawiera plik o nazwie **source.extension.vsixmanifest**. Aby dodać projekt VSIX:  
   

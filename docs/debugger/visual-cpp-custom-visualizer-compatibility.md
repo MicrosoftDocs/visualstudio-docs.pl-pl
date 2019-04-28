@@ -17,11 +17,11 @@ ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 32e38dd3bba8a1127d8756972b73e8b47a514f1b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901169"
 ---
 # <a name="visual-cc-custom-visualizer-compatibility"></a>Zgodność niestandardowego wizualizatora Visual C/C++
 

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39360019e798a5f76bfe5344aca6f02abbbfa6a3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 507bce496405f615343a9c109ff71196d814af08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438738"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools dla pakietu Office Runtime ― scenariusze instalacji
   Visual Studio 2010 Tools dla pakietu Office runtime można zainstalować na trzy sposoby:
@@ -37,16 +37,16 @@ ms.locfileid: "56638611"
 
 |Scenariusz instalacji środowiska uruchomieniowego|Modułu ładującego rozwiązania dla pakietu Office|Rozszerzenia pakietu Office dla programu .NET Framework 3.5|Rozszerzenia pakietu Office [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]|Rozszerzenia pakietu Office [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]|
 |-----------------------------------|----------------------------|--------------------------------------------------| - |---------------------------------------------------------------------------|
-|Za pomocą [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] lub nowszy|Tak|Tak, jeśli program .NET Framework 3.5 jest już zainstalowany.|Tak|Tak|
+|Za pomocą [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] lub nowszy|Tak|Tak, jeśli program .NET Framework 3.5 jest już zainstalowany.|Tak|Yes|
 |za pomocą [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Tak|Tak, jeśli program .NET Framework 3.5 jest już zainstalowany.|Nie|Nie|
 |Za pomocą dodatku Service Pack 1 (SP1) dla pakietu Office 2010 lub nowszy|Tak|Tak, jeśli program .NET Framework 3.5 jest już zainstalowany.|Tak, jeśli [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] jest już zainstalowana.|Nie|
-|Pakiet redystrybucyjny aparatu plików wykonywalnych|Tak|Tak, jeśli program .NET Framework 3.5 jest już zainstalowany.|Tak, jeśli [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] jest już zainstalowana.|Tak, jeśli [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] jest już zainstalowana.|
+|Pakiet redystrybucyjny aparatu plików wykonywalnych|Yes|Tak, jeśli program .NET Framework 3.5 jest już zainstalowany.|Tak, jeśli [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] jest już zainstalowana.|Tak, jeśli [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] jest już zainstalowana.|
 
 ### <a name="install-the-runtime-with-visual-studio-or-the-microsoft-office-developer-tools-for-visual-studio"></a>Instalowanie środowiska uruchomieniowego za pomocą programu Visual Studio lub Microsoft Office Developer Tools for Visual Studio
  Po zainstalowaniu narzędzia Office developer tools w programie Visual Studio i rozszerzeń pakietu Office dla [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] i [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] są zawsze instalowane na komputerze deweloperskim. Rozszerzenia pakietu Office dla programu .NET Framework 3.5 są instalowane tylko wtedy, gdy program .NET Framework 3.5 jest już obecny na komputerze deweloperskim. Jeśli program .NET Framework 3.5 należy zainstalować po zainstalowaniu [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], środowisko uruchomieniowe automatycznie zainstaluje rozszerzenia pakietu Office dla programu .NET Framework 3.5 podczas pierwszego tworzenia projektu pakietu Office, który jest przeznaczony dla .NET Framework 3.5.
 
 > [!WARNING]
->  Nie można utworzyć projektu pakietu Office, który jest przeznaczony dla .NET Framework 3.5 przy użyciu [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] lub nowszej.
+> Nie można utworzyć projektu pakietu Office, który jest przeznaczony dla .NET Framework 3.5 przy użyciu [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] lub nowszej.
 
  Aby uzyskać więcej informacji o sposobie instalowania narzędzi Office developer tools, zobacz [jak: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).
 

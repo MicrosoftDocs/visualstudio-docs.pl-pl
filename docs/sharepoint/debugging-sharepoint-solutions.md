@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cffed1a3905ca1a1aceb9d2cfdcf4abc89f83574
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60aa38d5042625393132ffceb3cc226f44e67645
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443488"
 ---
 # <a name="debug-sharepoint-solutions"></a>Debugowanie rozwiązań SharePoint
   Można debugować rozwiązania programu SharePoint przy użyciu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugera. Podczas uruchamiania debugowania, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wdraża pliki projektu na serwerze programu SharePoint, a następnie powoduje otwarcie witryny programu SharePoint w przeglądarce sieci Web. W poniższych sekcjach opisano sposób debugowania aplikacji programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -103,7 +103,7 @@ ms.locfileid: "60060803"
 8. W przypadku przepływów pracy, skojarzenie przepływu pracy z biblioteki programu SharePoint, listy lub witryny, które wybrano w **Kreator ustawień niestandardowych SharePoint**.
 
    > [!NOTE]
-   >  To skojarzenie występuje tylko wtedy, gdy wybrano **automatyczne kojarzenie przepływu pracy** w kreatorze.
+   > To skojarzenie występuje tylko wtedy, gdy wybrano **automatyczne kojarzenie przepływu pracy** w kreatorze.
 
 9. Uruchamia polecenia po wdrożeniu można dostosowywać.
 
@@ -126,7 +126,7 @@ ms.locfileid: "60060803"
  Podczas debugowania projektów przepływu pracy [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje szablon przepływu pracy (w zależności od typu), do biblioteki lub listy. Następnie należy uruchomić szablonu przepływu pracy, ręcznie lub przez dodanie lub zaktualizowanie elementu. Następnie można użyć [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugowanie przepływu pracy.
 
 > [!NOTE]
->  Po dodaniu odwołania do innych zestawów, upewnij się, że te zestawy są zainstalowane w globalnej pamięci podręcznej ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). W przeciwnym razie rozwiązaniu przepływ pracy zakończy się niepowodzeniem. Aby uzyskać informacje o sposobie instalowania zestawów, zobacz [ręcznie uruchomić przepływ pracy dla dokumentu lub elementu](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).
+> Po dodaniu odwołania do innych zestawów, upewnij się, że te zestawy są zainstalowane w globalnej pamięci podręcznej ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). W przeciwnym razie rozwiązaniu przepływ pracy zakończy się niepowodzeniem. Aby uzyskać informacje o sposobie instalowania zestawów, zobacz [ręcznie uruchomić przepływ pracy dla dokumentu lub elementu](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).
 
  Jednak proces wdrażania nie można uruchomić przepływu pracy. W witrynie sieci Web programu SharePoint, należy uruchomić przepływ pracy. Można również uruchomić przepływ pracy za pomocą aplikacji klienckiej, takich jak Microsoft Office Word 2010 lub przy użyciu osobnego kodu po stronie serwera. Użyj jednej z metod, określone w **Kreator ustawień niestandardowych SharePoint**.
 

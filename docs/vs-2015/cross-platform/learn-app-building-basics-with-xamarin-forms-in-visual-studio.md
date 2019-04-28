@@ -6,12 +6,12 @@ ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 96a4795d83c4ef4b5bad2d7dc2d5f06f2f3ab4cf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 18ea10e25117ee5bf52c6369e575d70a989435db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444520"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Podstawowe informacje dotyczące tworzenia aplikacji za pomocą platformy Xamarin.Forms w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Po wykonaniu kroków [Instalator i instalacja](../cross-platform/setup-and-insta
 - [Zakończ interfejsu użytkownika za pomocą natywnego wyglądu i działania na platformach](#finish)
 
 > [!TIP]
->  Możesz znaleźć pełnego kodu źródłowego dla tego projektu w [przykłady środowiska xamarin — formularze repozytorium w serwisie GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).
+> Możesz znaleźć pełnego kodu źródłowego dla tego projektu w [przykłady środowiska xamarin — formularze repozytorium w serwisie GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).
 
 ## <a name="solution"></a> Konfigurowanie rozwiązania programu
  Te kroki służą utworzeniu rozwiązanie Xamarin.Forms, zawierający PCL dla udostępnionego kodu i dwa dodano pakiety NuGet.
@@ -59,7 +59,7 @@ Po wykonaniu kroków [Instalator i instalacja](../cross-platform/setup-and-insta
     - **WeatherApp.WinPhone (Windows Phone 8.1)**: projekt, który zawiera kod macierzysty Windows Phone.
 
     > [!NOTE]
-    >  Możesz usunąć wszystkie projekty, które nie są przeznaczone dla platformy. Na potrzeby tego przewodnika firma Microsoft będzie odwoływać się do projektów systemów Android, iOS i Windows Phone 8.1. Praca z platformy uniwersalnej systemu Windows i Windows 8.1 projektów jest bardzo podobny do pracy z projektu Windows Phone 8.1.
+    > Możesz usunąć wszystkie projekty, które nie są przeznaczone dla platformy. Na potrzeby tego przewodnika firma Microsoft będzie odwoływać się do projektów systemów Android, iOS i Windows Phone 8.1. Praca z platformy uniwersalnej systemu Windows i Windows 8.1 projektów jest bardzo podobny do pracy z projektu Windows Phone 8.1.
 
      W ramach każdego natywnego projektu mają dostęp do natywnych projektanta dla odpowiednich platform i zaimplementować platformy określonymi ekranami i funkcjonalność, zgodnie z potrzebami.
 

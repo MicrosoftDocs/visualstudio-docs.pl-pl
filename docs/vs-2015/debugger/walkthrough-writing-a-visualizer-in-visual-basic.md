@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e297708d4e89bb1fdcef06366f2790254aeab812
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eba9efa9710a3dd439b1cd47e4df777a76d781aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444249"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Przewodnik: Pisanie wizualizatora w języku Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60050573"
 W tym przewodniku pokazano, jak pisanie prostego wizualizatora przy użyciu [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Wizualizator, która zostanie utworzona w tym przewodniku Wyświetla zawartość ciągu przy użyciu Windows Forms okno komunikatu. Ten Wizualizator prostego ciągu jest prosty przykład, aby pokazać, jak utworzyć wizualizatorów dla innych typów danych bardziej odpowiednie do swoich projektów.  
   
 > [!NOTE]
->  Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, przejdź do **narzędzia** menu i wybrać **importowanie i eksportowanie** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, przejdź do **narzędzia** menu i wybrać **importowanie i eksportowanie** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Wizualizator kodu muszą być umieszczone w pliku DLL, który będzie odczytywany przez debuger. Pierwszym krokiem jest, aby utworzyć projekt biblioteki klas dla biblioteki DLL.  
   
@@ -57,7 +57,7 @@ W tym przewodniku pokazano, jak pisanie prostego wizualizatora przy użyciu [!IN
 2. Zmień nazwę z Class1.vb na bardziej opisową nazwę, takich jak DebuggerSide.vb.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automatycznie zmienia deklaracji klasy w DebuggerSide.vb, aby dopasować nazwę nowego pliku.  
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automatycznie zmienia deklaracji klasy w DebuggerSide.vb, aby dopasować nazwę nowego pliku.  
   
 3. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Mój pierwszy Wizualizator**, a następnie w menu skrótów kliknij **Dodaj odwołanie**.  
   

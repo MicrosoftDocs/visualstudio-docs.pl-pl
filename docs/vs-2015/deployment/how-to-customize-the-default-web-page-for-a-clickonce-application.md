@@ -18,12 +18,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 275d3d0547d83e794801c45a7554d58e181d64e7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4ec63fe5ae4b99252321b86b44066c46842a0851
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433893"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Instrukcje: Dostosowywanie domyślnej strony internetowej dla aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +31,14 @@ ms.locfileid: "60107063"
 Podczas publikowania aplikacji ClickOnce w sieci Web, strony sieci Web jest automatycznie generowany i opublikowanych wraz z aplikacji. Domyślna strona zawiera nazwę aplikacji i linki do zainstalowania aplikacji, instalowanie wstępnie wymaganego oprogramowania lub dostępu do pomocy w witrynie MSDN.  
   
 > [!NOTE]
->  Rzeczywiste łącza, widocznych na stronie zależy od komputera, na którym wyświetlania strony i wymagania wstępne są włącznie.  
+> Rzeczywiste łącza, widocznych na stronie zależy od komputera, na którym wyświetlania strony i wymagania wstępne są włącznie.  
   
  Domyślna nazwa strony sieci Web to Publish.htm; Możesz zmienić nazwę w **projektanta projektu**. Aby uzyskać więcej informacji, zobacz [jak: Określanie strony publikowania dla aplikacji ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).  
   
  Strona sieci Publish.htm Web została opublikowana, tylko wtedy, gdy Wykryto nowszą wersję.  
   
 > [!NOTE]
->  Zmiany wprowadzone do usługi **Publikuj** ustawienia nie wpłynie na stronie Publish.htm z jednym wyjątkiem: Jeśli dodasz lub usuniesz wymagania wstępne po początkowym opublikowaniu, listę wymagań wstępnych nie będzie już dokładne. Należy edytować tekst łącza wymagań wstępnych odzwierciedlić zmiany.  
+> Zmiany wprowadzone do usługi **Publikuj** ustawienia nie wpłynie na stronie Publish.htm z jednym wyjątkiem: Jeśli dodasz lub usuniesz wymagania wstępne po początkowym opublikowaniu, listę wymagań wstępnych nie będzie już dokładne. Należy edytować tekst łącza wymagań wstępnych odzwierciedlić zmiany.  
   
 ### <a name="to-customize-the-publish-web-page"></a>Aby dostosować strony sieci Web publikowania  
   

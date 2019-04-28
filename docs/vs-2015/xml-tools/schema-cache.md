@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8667c55eed6de6b2b3c76af2ef45a5357a254516
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0ed32908212f158532e5553752ef5c0b70306fe6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435341"
 ---
 # <a name="schema-cache"></a>Pamięć podręczna schematów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Edytor XML udostępnia pamięci podręcznej schematów znajduje się w katalogu 
  Edytor ładuje katalog pamięci podręcznej schematu, gdy pakiet edytora XML jest ładowany i oczekuje na zmiany podczas uruchamiania. Dodano schemat jest automatycznie ładowany do indeksu w pamięci znanych schematów. Jeśli schemat został usunięty, zostanie on automatycznie usunięty z indeksu w pamięci. Jeśli schemat został zaktualizowany, automatycznie unieważnia w pamięci podręcznej tego schematu.  
 
 > [!NOTE]
->  Ponieważ katalog pamięci podręcznej schematu jest globalne do komputera, należy dodawać tylko w tym miejscu schematów, które są standardowe i przydatne dla wszystkich projektów programu Visual Studio, które może zostać utworzony na tym komputerze.  
+> Ponieważ katalog pamięci podręcznej schematu jest globalne do komputera, należy dodawać tylko w tym miejscu schematów, które są standardowe i przydatne dla wszystkich projektów programu Visual Studio, które może zostać utworzony na tym komputerze.  
 
  Edytor XML obsługuje również dowolną liczbę schematu katalogu plików w katalogu pamięci podręcznej schematu. Wykazów schematów można wskazać do innych lokalizacji dla schematów, które mają zawsze edytora, aby dowiedzieć się o. Plik catalog.xsd definiuje format pliku wykazu i znajduje się w katalogu pamięci podręcznej schematu. Plik catalog.xml jest domyślna i zawiera łącza do innych schematów w InstallDir %. Poniżej przedstawiono niektóre spośród pliku catalog.xml:  
 
@@ -105,7 +105,7 @@ Edytor XML udostępnia pamięci podręcznej schematów znajduje się w katalogu 
  Można dostosować lokalizację przy użyciu pamięci podręcznej schematu **różne** Strona opcji. W przypadku katalogu schematów ulubionego edytora można skonfigurować do zamiast tego użyj tych schematów.  
 
 > [!NOTE]
->  Ta zmiana dotyczy tylko bieżącego użytkownika programu Visual Studio.  
+> Ta zmiana dotyczy tylko bieżącego użytkownika programu Visual Studio.  
 
 #### <a name="to-change-the-schema-cache-location"></a>Aby zmienić lokalizację pamięci podręcznej schematu  
 

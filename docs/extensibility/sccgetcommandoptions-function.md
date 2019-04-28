@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f73eec788ee21c5e27514d373ad78b8dfc965fce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: c9685d96c14f3519653025ab1554f1e9e7587e0b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434643"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions function
 Ta funkcja monituje użytkownika o zaawansowane opcje dla podanego polecenia.
@@ -77,7 +77,7 @@ SCCRTN SccGetCommandOptions(
  Ponadto, kiedy użytkownik kliknie **OK** w środowisku IDE **uzyskać** okno dialogowe, wywołania IDE [SccGet](../extensibility/sccget-function.md), przekazywanie struktury zwracane w `ppvOptions` zawierający Opcje zaawansowane.
 
 > [!NOTE]
->  Polecenie `SCC_COMMAND_OPTIONS` jest używany, gdy środowisko IDE Wyświetla **opcje** okno dialogowe, w którym użytkownik może ustawić preferencje, które kontrolują, jak działa integracja. Jeśli wtyczka do kontroli źródła chce, aby podać własne okno dialogowe Preferencje, może on zawierać go z **zaawansowane** przycisku w okno dialogowe preferencji środowiska IDE. Wtyczka jest wyłączną odpowiedzialność za uzyskanie i przechowywanie te informacje; IDE nie używać go lub go zmodyfikować.
+> Polecenie `SCC_COMMAND_OPTIONS` jest używany, gdy środowisko IDE Wyświetla **opcje** okno dialogowe, w którym użytkownik może ustawić preferencje, które kontrolują, jak działa integracja. Jeśli wtyczka do kontroli źródła chce, aby podać własne okno dialogowe Preferencje, może on zawierać go z **zaawansowane** przycisku w okno dialogowe preferencji środowiska IDE. Wtyczka jest wyłączną odpowiedzialność za uzyskanie i przechowywanie te informacje; IDE nie używać go lub go zmodyfikować.
 
 ## <a name="see-also"></a>Zobacz także
 - [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)

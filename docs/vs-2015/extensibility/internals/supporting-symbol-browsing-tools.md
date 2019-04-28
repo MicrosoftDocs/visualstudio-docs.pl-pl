@@ -18,12 +18,12 @@ ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6ec67fd4746fbe935d93b58de0bf445c8a6d63e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5b85e8bf500364587af4c3891d7d39f069af9953
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441219"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Obsługa narzędzi do przeglądania symboli
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,9 +48,9 @@ ms.locfileid: "54799875"
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Obiekt Menedżera wywołań <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> metodę, aby ustalić, czy element danej listy można rozwijać i zawiera elementy podrzędne. Jeśli interfejs użytkownika wysyła żądanie, aby rozwinąć element, Menedżera obiektów żądania podrzędnego lista symboli, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> metody. Proces jest kontynuowany, za pomocą różnych częściach drzewa kompilowana na żądanie.  
   
 > [!NOTE]
->  Aby zaimplementować dostawcę symbolu kodu natywnego, należy użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfejsów.  
+> Aby zaimplementować dostawcę symbolu kodu natywnego, należy użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfejsów.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Instrukcje: Rejestrowanie biblioteki przy użyciu Menedżera obiektów](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
  [Instrukcje: Uwidacznianie listy symboli udostępnianych przez bibliotekę dla Menedżera obiektów](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)   
- [Instrukcje: Identyfikowanie symboli w bibliotece](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
+ [Instrukcje: identyfikowanie symboli w bibliotece](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

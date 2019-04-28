@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be3fb721fd058f127b4d361c769d4cdfdc1e4b92
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 392afc210798611442a12d5f51f150ddc79f85ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408361"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Przewodnik: Pisanie wizualizatora w języku Visual Basic
 W tym przewodniku pokazano, jak pisanie prostego wizualizatora przy użyciu [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Wizualizator, która zostanie utworzona w tym przewodniku Wyświetla zawartość ciągu przy użyciu Windows Forms okno komunikatu. Ten Wizualizator prostego ciągu jest prosty przykład, aby pokazać, jak utworzyć wizualizatorów dla innych typów danych bardziej odpowiednie do swoich projektów.
@@ -56,7 +56,7 @@ Wizualizator kodu muszą być umieszczone w pliku DLL, który będzie odczytywan
 2. Zmień nazwę z Class1.vb na bardziej opisową nazwę, takich jak DebuggerSide.vb.
 
    > [!NOTE]
-   >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie zmienia deklaracji klasy w DebuggerSide.vb, aby dopasować nazwę nowego pliku.
+   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie zmienia deklaracji klasy w DebuggerSide.vb, aby dopasować nazwę nowego pliku.
 
 3. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Mój pierwszy Wizualizator**, a następnie w menu skrótów kliknij **Dodaj odwołanie**.
 

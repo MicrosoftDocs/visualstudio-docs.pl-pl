@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e901e5b34fb807a17cfc5143decc3a63b75194d7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 9a85b8ef5dd99da6c82c9f63da31bec783a7c9a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438019"
 ---
 # <a name="shell-command"></a>Shell — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
  Wstępnie zdefiniowane alias `Shell` mogą być używane zamiast `Tools.Shell`.  
   
 > [!CAUTION]
->  Jeśli `path` argument dostarcza ścieżkę katalogu, a także nazwę pliku, całą nazwę ścieżki należy ująć w cudzysłów literału ("" "), jak w następujących czynności:  
+> Jeśli `path` argument dostarcza ścieżkę katalogu, a także nazwę pliku, całą nazwę ścieżki należy ująć w cudzysłów literału ("" "), jak w następujących czynności:  
   
 ```  
 Tools.Shell """C:\Program Files\SomeFile.exe"""  
@@ -73,7 +73,7 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 ```  
   
 > [!CAUTION]
->  Jeśli użytkownik nie należy umieszczać ciąg ścieżki w cudzysłowie literału ("" "), pierwszą przestrzeń Windows będzie można użyć tylko część ciągu. Na przykład jeśli ciąg ścieżki powyżej nie zostały podane prawidłowo, Windows będzie szukać pliku o nazwie "Program" znajdujący się w katalogu głównym C:\. Plik wykonywalny C:\Program.exe była rzeczywiście dostępne, nawet jeśli jest on instalowane przez nielegalnego naruszeniem Windows podejmował próbę wykonania tego programu, zamiast programu żądaną "c:\Program Files\SomeFile.exe".  
+> Jeśli użytkownik nie należy umieszczać ciąg ścieżki w cudzysłowie literału ("" "), pierwszą przestrzeń Windows będzie można użyć tylko część ciągu. Na przykład jeśli ciąg ścieżki powyżej nie zostały podane prawidłowo, Windows będzie szukać pliku o nazwie "Program" znajdujący się w katalogu głównym C:\. Plik wykonywalny C:\Program.exe była rzeczywiście dostępne, nawet jeśli jest on instalowane przez nielegalnego naruszeniem Windows podejmował próbę wykonania tego programu, zamiast programu żądaną "c:\Program Files\SomeFile.exe".  
   
 ## <a name="example"></a>Przykład  
  Następujące polecenie używa xcopy.exe można skopiować pliku `MyText.txt` do `Text` folderu. Dane wyjściowe z xcopy.exe jest wyświetlany w obu **okna polecenia** i **dane wyjściowe** okna.  

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87f600e3872de2211d893fa32b7cbcd2600825bd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 23c691730e50cc8d34eddbb60da6d7d671a85dfc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437852"
 ---
 # <a name="msbuild-task"></a>zadanie MSBuild
 Kompilacje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektów z innego [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu.
@@ -65,7 +65,7 @@ Kompilacje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbu
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, jednak zapewnia dwie nowe zarezerwowane elementów metadanych, właściwości i dodatkowe właściwości, które zapewniają elastyczny sposób w celu uwzględnienia różnych właściwości dla różnych projektów jest skompilowany przy użyciu [zadanie MSBuild](../msbuild/msbuild-task.md).
 
 > [!NOTE]
->  Te nowe elementy metadanych są stosowane tylko do pozycji przekazanych w atrybucie projektów [zadanie MSBuild](../msbuild/msbuild-task.md).
+> Te nowe elementy metadanych są stosowane tylko do pozycji przekazanych w atrybucie projektów [zadanie MSBuild](../msbuild/msbuild-task.md).
 
 ## <a name="multi-processor-build-benefits"></a>Korzyści kompilacji wieloprocesorowej
  Występuje jeden z głównych korzyści z używania tych nowych metadanych podczas kompilowania projektów równolegle na systemem wieloprocesorowym. Metadane umożliwia konsolidowanie wszystkie projekty w jednym [zadanie MSBuild](../msbuild/msbuild-task.md) wywołania bez konieczności wykonywania żadnych adapterów przetwarzania wsadowego i warunkowego [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zadania. Kiedy można wywołać tylko jeden [zadanie MSBuild](../msbuild/msbuild-task.md), wszystkie projekty wymienionych w atrybucie projektów zostanie skompilowany w sposób równoległy. (Tylko w przypadku jednak, jeśli `BuildInParallel=true` atrybut znajduje się w [zadanie MSBuild](../msbuild/msbuild-task.md).) Aby uzyskać więcej informacji, zobacz [kompilacji wielu projektów w sposób równoległy](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).
@@ -74,7 +74,7 @@ Kompilacje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbu
  Typowy scenariusz polega na w przypadku tworzenia wielu plików rozwiązania przy użyciu [zadanie MSBuild](../msbuild/msbuild-task.md), tylko przy użyciu innych konfiguracji kompilacji. Chcesz tworzyć a1 rozwiązania przy użyciu a2 konfiguracji i rozwiązanie debugowania przy użyciu konfiguracji wydania. W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0, ten plik projektu będzie wyglądać podobnie do poniższego:
 
 > [!NOTE]
->  W poniższym przykładzie "..." reprezentuje pliki dodatkowe rozwiązania.
+> W poniższym przykładzie "..." reprezentuje pliki dodatkowe rozwiązania.
 
 ### <a name="aproj"></a>a.proj
 

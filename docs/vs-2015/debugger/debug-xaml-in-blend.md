@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4e78caf838a6e121fbe2778e7bdee2c5c87019a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: beea8cd3ad6ac12bef284e0d5fda9e995a8613c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434098"
 ---
 # <a name="debug-xaml-in-blend"></a>Debugowanie XAML w Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Możesz użyć narzędzi dostępnych w [!INCLUDE[blend_first](../includes/blend-
  Błędy składni występują, jeśli pliki związane z kodem lub XAML nie wykonuj reguły formatowania języka. Opis błędu może pomóc Ci zrozumieć, jak go naprawić. Listy określa także nazwę pliku i numer wiersza, w którym występuje błąd. Błędy XAML są wyświetlane na **znaczników** karcie **wyniki** panelu.  
   
 > [!TIP]
->  XAML jest językiem znaczników oparty na składni XML i regułom składni XML.  
+> XAML jest językiem znaczników oparty na składni XML i regułom składni XML.  
   
  Niektóre typowe przyczyny są błędy składni XAML:  
   

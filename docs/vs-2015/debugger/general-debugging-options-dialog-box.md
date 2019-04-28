@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7efd2c988791d0de4f414a48e5c47bc70b05b784
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: cf4a3b699d3854ef2a502fb1bf1d7fb2d6204acb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446480"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Ogólne, debugowanie, okno dialogowe Opcje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ ms.locfileid: "54834903"
  Nakazuje debugerowi programu Visual Studio pobranie plików źródłowych z serwerów źródłowych, które implementują SrcSrv (`srcsrv.dll`) protokołu. Team Foundation Server i Debugging Tools for Windows to dwa serwery źródłowe implementujące ten protokół. Aby uzyskać więcej informacji o konfiguracji SrcSrv zobacz dokumentację Debugging Tools for Windows. Ponadto zobacz [Określ symboli (.pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
->  Ponieważ odczyt plików .pdb może wykonywać dowolny kod w plikach, upewnij się, że masz zaufanie do serwera.  
+> Ponieważ odczyt plików .pdb może wykonywać dowolny kod w plikach, upewnij się, że masz zaufanie do serwera.  
   
  **Drukowanie komunikatów diagnostycznych serwera źródłowego w oknie danych wyjściowych**  
  Po włączeniu obsługi serwera źródłowego, to ustawienie powoduje włączenie ekranu diagnostycznego.  
@@ -134,7 +134,7 @@ ms.locfileid: "54834903"
  **Użyj zarządzanego trybu zgodności**  
  Zastępuje domyślny aparat starszą wersją, aby włączyć te scenariusze debugowania:  
   
-- Używasz języka .NET Framework innego niż C#, VB, lub F# zapewniający własny Ewaluator wyrażeń (to obejmuje C + +/ CLI).  
+- Używasz języka .NET Framework innego niż C#, VB, lub F# zapewniający własny Ewaluator wyrażeń (dotyczy to również C++sposób niezamierzony).  
   
 - Chcesz włączyć Edytuj i Kontynuuj dla projektów C++ podczas debugowania w trybie mieszanym.  
   

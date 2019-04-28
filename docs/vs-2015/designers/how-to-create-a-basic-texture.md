@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a343cb508933b91f5400ff6bc17c285a54bd2e87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bd1a9a2a269c173ef9dcb47b39921073802fe1ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438408"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Instrukcje: Tworzenie tekstury podstawowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ W tym dokumencie pokazano, jak utworzyć teksturę podstawową za pomocą edytor
 5. Na pasku narzędzi edytora obrazów, wybierz **wypełnienia** narzędzia, a następnie naciśnij i przytrzymaj klawisz Shift i wybierz dowolny punkt na obrazie. Przy użyciu klawisza Shift powoduje, że wartość alfa odpowiadającą koloru wypełnienia zastąpić kolor obrazu. w przeciwnym razie wartość alfa odpowiadającą umożliwia mieszanie kolor wypełnienia wraz z kolorów na obrazie.  
   
    > [!IMPORTANT]
-   >  Ten krok, wraz z wybór koloru w poprzednim kroku gwarantuje, że podstawowy obraz jest gotowy do "bullseye" docelową teksturę będzie rysowania. Gdy obraz jest wypełniany przezroczysty czarny — i dlatego jest czarny, obramowania docelowy — nie będzie żadnych artefaktów wygładzania wokół obiektu docelowego.  
+   > Ten krok, wraz z wybór koloru w poprzednim kroku gwarantuje, że podstawowy obraz jest gotowy do "bullseye" docelową teksturę będzie rysowania. Gdy obraz jest wypełniany przezroczysty czarny — i dlatego jest czarny, obramowania docelowy — nie będzie żadnych artefaktów wygładzania wokół obiektu docelowego.  
   
 6. Na pasku narzędzi edytora obrazów, wybierz **elipsy** narzędzia.  
   
@@ -70,7 +70,7 @@ W tym dokumencie pokazano, jak utworzyć teksturę podstawową za pomocą edytor
 11. Za pomocą **elipsy** narzędzie, narysuj okręg z współrzędnych pikseli `(3, 3)` do współrzędnej pikseli `(508, 508)`. Rysowanie okręgów więcej łatwo możesz można naciśnij i przytrzymaj klawisz Shift podczas rysowania.  
   
     > [!NOTE]
-    >  Współrzędne bieżącej lokalizacji wskaźnika w pikselach są wyświetlane na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pasek stanu.  
+    > Współrzędne bieżącej lokalizacji wskaźnika w pikselach są wyświetlane na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pasek stanu.  
   
 12. Umożliwia zmianę koloru tła. Ustaw **R** do `44`, **G** do `165`, **B** do `211`, i **A** do `255`.  
   

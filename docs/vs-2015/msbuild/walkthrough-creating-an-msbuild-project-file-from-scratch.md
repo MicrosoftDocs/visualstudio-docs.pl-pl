@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5c2082e4f2c67696f057ea8fc779bfaf391e0af1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a77c390dd0934b0f02320080765765163a8afb93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445614"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Przewodnik: Tworzenie pliku projektu MSBuild od zera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -151,11 +151,11 @@ Języki programowania, które obsługują program .NET Framework używają plik�
  Zadania w lokalizacji docelowej kompilacji są wykonywane sekwencyjnie. W tym przypadku kompilator Visual C# `Csc` zadania jest jedynym zadaniem. Oczekuje listy plików źródłowych do kompilowania i jest określony przez wartość `Compile` elementu. `Compile` Element odwołuje się tylko do jednego pliku źródłowego Helloworld.cs.  
   
 > [!NOTE]
->  W pozycji elementu można użyć znaku wieloznacznego gwiazdki (*) można odwoływać się do wszystkich plików mających rozszerzenie nazwy pliku .cs, w następujący sposób:  
+> W pozycji elementu można użyć znaku wieloznacznego gwiazdki (*) można odwoływać się do wszystkich plików mających rozszerzenie nazwy pliku .cs, w następujący sposób:  
 >   
->  `<Compile Include="*.cs" />`  
+> `<Compile Include="*.cs" />`  
 >   
->  Jednak firma Microsoft nie zaleca się stosowania symboli wieloznacznych ponieważ sprawia, że debugowanie i selektywne ukierunkowanie jest trudniejsze, jeżeli pliki źródłowe są dodawane lub usuwane.  
+> Jednak firma Microsoft nie zaleca się stosowania symboli wieloznacznych ponieważ sprawia, że debugowanie i selektywne ukierunkowanie jest trudniejsze, jeżeli pliki źródłowe są dodawane lub usuwane.  
   
 ## <a name="extending-the-path-to-include-msbuild"></a>Rozszerzanie ścieżki, aby uwzględnić MSBuild  
  Aby korzystać z programu MSBuild, należy rozszerzyć zmienną środowiskową PATH, aby dołączyć folder .NET Framework.  
@@ -182,9 +182,9 @@ Języki programowania, które obsługują program .NET Framework używają plik�
      **Witaj, świecie!** powinien zostać wyświetlony komunikat.  
   
 > [!NOTE]
->  Więcej szczegółów na temat kompilacji można zobaczyć, zwiększając poziom szczegółowości. Aby ustawić poziom szczegółowości "szczegółowe", wpisz jedno z tych poleceń w wierszu polecenia:  
+> Więcej szczegółów na temat kompilacji można zobaczyć, zwiększając poziom szczegółowości. Aby ustawić poziom szczegółowości "szczegółowe", wpisz jedno z tych poleceń w wierszu polecenia:  
 >   
->  **Program MSBuild helloworld.csproj /t:Build /verbosity: szczegółowe**  
+> **Program MSBuild helloworld.csproj /t:Build /verbosity: szczegółowe**  
   
 ## <a name="adding-build-properties"></a>Dodawanie właściwości kompilacji  
  Można dodać właściwości kompilacji do pliku projektu, aby dalej kontrolować kompilację. Teraz dodaj następujące właściwości:  
@@ -243,17 +243,17 @@ Języki programowania, które obsługują program .NET Framework używają plik�
 ```  
   
 > [!NOTE]
->  Firma Microsoft zaleca dodanie ukośnik odwrotny (\\) separator ścieżki na końcu nazwy folderu, w przypadku określenia `OutputPath` elementu, zamiast dodawania go w `OutputAssembly` atrybutu `Csc` zadania. W związku z tym,  
+> Firma Microsoft zaleca dodanie ukośnik odwrotny (\\) separator ścieżki na końcu nazwy folderu, w przypadku określenia `OutputPath` elementu, zamiast dodawania go w `OutputAssembly` atrybutu `Csc` zadania. W związku z tym,  
 >   
->  `<OutputPath>Bin\</OutputPath>`  
+> `<OutputPath>Bin\</OutputPath>`  
 >   
->  `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`  
+> `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`  
 >   
->  jest lepsze niż  
+> jest lepsze niż  
 >   
->  `<OutputPath>Bin</OutputPath>`  
+> `<OutputPath>Bin</OutputPath>`  
 >   
->  `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`  
+> `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`  
   
 ## <a name="testing-the-build-properties"></a>Testowanie właściwości kompilacji  
  Teraz można skompilować aplikację przy użyciu pliku projektu użyto właściwości kompilacji do określenia nazwy folderu i aplikacji danych wyjściowych.  

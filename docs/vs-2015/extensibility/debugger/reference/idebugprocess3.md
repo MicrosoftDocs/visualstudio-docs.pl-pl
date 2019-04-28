@@ -12,12 +12,12 @@ ms.assetid: 7bd6b952-cf34-4e66-b8f6-d472dac3748f
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b0d453bae5d474dffdfdd8d6d18e09e47bf0f23b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 706feb470dc32992d9c0802f62182ca4eb1cabbf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444844"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54795209"
 Ten interfejs reprezentuje uruchomionego procesu i jego programów. Ten interfejs istnieje jako zamiennika dla kilku metod w [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfejsu. Zapewnia kontrolę nad wszystkie programy, w tym procesie.  
   
 > [!NOTE]
->  [Kontynuuj](../../../extensibility/debugger/reference/idebugprogram2-continue.md), [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), i [kroku](../../../extensibility/debugger/reference/idebugprogram2-step.md) metody są przestarzałe i nie powinna być używana. Użyj odpowiedniej metody na `IDebugProcess3` zamiast tego interfejsu.  
+> [Kontynuuj](../../../extensibility/debugger/reference/idebugprogram2-continue.md), [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), i [kroku](../../../extensibility/debugger/reference/idebugprogram2-step.md) metody są przestarzałe i nie powinna być używana. Użyj odpowiedniej metody na `IDebugProcess3` zamiast tego interfejsu.  
   
 ## <a name="syntax"></a>Składnia  
   

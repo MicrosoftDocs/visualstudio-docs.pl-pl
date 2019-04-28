@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98a7159f750a036ed588fd01761e20a2a23ee84e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 802ff20facead891f05ac4727d1c091d095c50a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442493"
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6. Nadawanie nazw kontrolkom przycisków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60059971"
 W formularzu istnieje tylko jeden element PictureBox. Po dodaniu, IDE automatycznie nadał mu **pictureBox1**. Istnieje tylko jedno pole wyboru, która nosi nazwę **checkBox1**. Wkrótce będzie pisanie kodu i ten kod będzie odnosić się do CheckBox i PictureBox. Ponieważ istnieje tylko jeden z tych kontrolek, będzie wiadomo, co oznacza wyświetlenie **pictureBox1** lub **checkBox1** w kodzie.  
   
 > [!NOTE]
->  W języku Visual Basic domyślną literą dowolnej nazwę formantu jest zakończenie początkowej, więc nazwy to **PictureBox1**, **CheckBox1**i tak dalej.  
+> W języku Visual Basic domyślną literą dowolnej nazwę formantu jest zakończenie początkowej, więc nazwy to **PictureBox1**, **CheckBox1**i tak dalej.  
   
  Dostępne są cztery przyciski w formularzu i IDE nadaje im **button1**, **button2**, **button3**, i **button4**. Patrząc tylko na ich aktualne nazwy, nie wiesz, który przycisk to **Zamknij** przycisk i który z nich jest **Pokaż obraz** przycisku. Dlatego właśnie nadawanie formantom przycisków bardziej czytelnych nazw jest pomocne.  
   
@@ -36,7 +36,7 @@ W formularzu istnieje tylko jeden element PictureBox. Po dodaniu, IDE automatycz
 Okno właściwości z nazwą closeButton  
   
     > [!NOTE]
-    >  Jeśli spróbujesz zmienić nazwę przycisku na **closeButton**, ze spacją między wyrazami przycisk i zamykania, środowisko IDE wyświetla komunikat o błędzie: "Wartość właściwości jest nieprawidłowa." Miejsca do magazynowania (i kilka innych znaków) są niedozwolone w nazwach formantów.  
+    > Jeśli spróbujesz zmienić nazwę przycisku na **closeButton**, ze spacją między wyrazami przycisk i zamykania, środowisko IDE wyświetla komunikat o błędzie: "Wartość właściwości jest nieprawidłowa." Miejsca do magazynowania (i kilka innych znaków) są niedozwolone w nazwach formantów.  
   
 2. Zmień nazwę inne trzy przyciski na **backgroundButton**, **clearButton**, i **showButton**. Możesz sprawdzić nazwy, wybierając przycisk listy rozwijanej selektora kontroli w **właściwości** okna. Pojawiają się nowe nazwy przycisków.  
   
@@ -53,14 +53,14 @@ Karta Form1.CS z kodem języka Visual C#
      Szukasz w kodzie o nazwie `showButton_Click()`. IDE dodane to do kodu formularza podczas otwierania pliku kodu dla **showButton** przycisku. W czasie projektowania podczas otwierania pliku kodu dla formantu w formularzu, kod jest generowany dla formantu, jeśli jeszcze nie istnieje. Ten kod, znany jako *metoda*, jest uruchamiany, gdy uruchamianie programu i wybraniu formantu - w takim przypadku **Pokaż obraz** przycisku.  
   
     > [!NOTE]
-    >  W tym samouczku został uproszczony kod języka Visual Basic, która jest generowana automatycznie przez usunięcie wszystkiego w nawiasach (). Zawsze, gdy ten problem wystąpi, możesz usunąć ten sam kod. Program będzie działać w obu kierunkach. Dla pozostałej części samouczków wszelki automatycznie wygenerowany kod jest uproszczony w miarę możliwości.  
+    > W tym samouczku został uproszczony kod języka Visual Basic, która jest generowana automatycznie przez usunięcie wszystkiego w nawiasach (). Zawsze, gdy ten problem wystąpi, możesz usunąć ten sam kod. Program będzie działać w obu kierunkach. Dla pozostałej części samouczków wszelki automatycznie wygenerowany kod jest uproszczony w miarę możliwości.  
   
 5. Ponownie wybierz kartę Windows Forms Designer (**Form1.cs [projekt]** w elemencie wizualnym C#, **Form1.vb [projekt]** w języku Visual Basic), a następnie otwórz plik kodu dla **Wyczyść obraz** przycisk, aby utworzyć metodę dla niego w kodzie formularza. Powtórz tę czynność dla pozostałych dwóch przycisków. Za każdym razem IDE dodaje nową metodę do pliku kodu formularza.  
   
 6. Aby dodać jedną metodę, otwórz plik kodu dla formantu CheckBox w Windows Forms Designer, aby sprawić, że IDE, Dodaj `checkBox1_CheckedChanged()` metody. Metoda ta jest wywoływana zawsze wtedy, gdy użytkownik zaznacza lub czyści pole wyboru.  
   
     > [!NOTE]
-    >  Podczas pracy z programem, często przechodzisz między Edytorem kodu a Windows Forms Designer. IDE ułatwia nawigowanie w projekcie. Użyj **Eksploratora rozwiązań** otworzyć Windows Forms Designer klikając dwukrotnie **Form1.cs** w języku Visual C# lub **Form1.vb** w języku Visual Basic lub na pasku menu wybierz **Widoku**, **projektanta**.  
+    > Podczas pracy z programem, często przechodzisz między Edytorem kodu a Windows Forms Designer. IDE ułatwia nawigowanie w projekcie. Użyj **Eksploratora rozwiązań** otworzyć Windows Forms Designer klikając dwukrotnie **Form1.cs** w języku Visual C# lub **Form1.vb** w języku Visual Basic lub na pasku menu wybierz **Widoku**, **projektanta**.  
   
      Poniżej przedstawiono nowy kod wyświetlany w edytorze kodu.  
   

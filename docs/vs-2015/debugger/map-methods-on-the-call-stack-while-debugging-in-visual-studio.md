@@ -28,14 +28,14 @@ helpviewer_keywords:
 ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
 caps.latest.revision: 43
 author: MikeJo5000
-ms.author: mikejo
+ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5afc30707a2bffdfe6286289e5e93ca9321a4957
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b55c677f4ba241260f1ebebc024a150dcd23eb19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432171"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Metody mapowania dla stosu wywołań podczas debugowania w programie Visual Studio.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
  ![Pokazywanie pól w metodzie na mapie kodu stosu wywołań](../debugger/media/debuggermap-showfields.png "DebuggerMap_ShowFields")
 
 > [!NOTE]
->  Domyślnie Dodawanie elementów do mapy dodaje również węzły nadrzędne grupy, takie jak klasy, przestrzeni nazw i zestawu. Gdy jest to przydatne, można zachować mapy prostego przez wyłączenie tej funkcji przy użyciu **obejmują elementy nadrzędne** przycisk na pasku narzędzi Mapa lub naciskając **CTRL** podczas dodawania elementów.
+> Domyślnie Dodawanie elementów do mapy dodaje również węzły nadrzędne grupy, takie jak klasy, przestrzeni nazw i zestawu. Gdy jest to przydatne, można zachować mapy prostego przez wyłączenie tej funkcji przy użyciu **obejmują elementy nadrzędne** przycisk na pasku narzędzi Mapa lub naciskając **CTRL** podczas dodawania elementów.
 
  ![Pola powiązane z metodę na mapie kodu stosu wywołań](../debugger/media/debuggermap-showedfields.png "DebuggerMap_ShowedFields")
 

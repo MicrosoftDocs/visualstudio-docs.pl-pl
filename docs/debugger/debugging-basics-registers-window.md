@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: df01776b5a7f2437c704c2b389c7d0929be5901c
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852269"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Informacje o oknie rejestrów w programie Visual Studio (C#, C++, Visual Basic F#)
 

@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b9b809750e658b6a5e496e2d90b7b396157f87a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e5de89bdeade136577e05c700ec242a956a03455
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425835"
 ---
 # <a name="program-vsto-add-ins"></a>Program dodatków narzędzi VSTO
   Podczas rozszerzania aplikacji pakietu Microsoft Office, tworzenia dodatku narzędzi VSTO dla programów, piszesz kod bezpośrednio przed `ThisAddIn` klasy w projekcie. Ta klasa służy do wykonywania zadań, takich jak uzyskiwanie dostępu do modelu obiektów programu Microsoft Office aplikacji hosta, dostosowywanie interfejsu użytkownika (UI), aplikacji i udostępnianie obiektów w dodatku narzędzi VSTO dla programów do innych rozwiązań pakietu Office.
@@ -54,7 +54,7 @@ ms.locfileid: "60079022"
  Istnieją dwie domyślne obsługi zdarzeń w `ThisAddIn` klasy. Aby uruchomić kod, gdy jest ładowany dodatku narzędzi VSTO dla programów, Dodaj kod, aby `ThisAddIn_Startup` programu obsługi zdarzeń. Aby uruchomić kod przed dodatku narzędzi VSTO zwolniony, Dodaj kod, aby `ThisAddIn_Shutdown` programu obsługi zdarzeń. Aby uzyskać więcej informacji na temat tych programów obsługi zdarzeń, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
 
 > [!NOTE]
->  W programie Outlook, domyślnie `ThisAddIn_Shutdown` program obsługi zdarzeń nie zawsze jest wywoływany podczas dodatku narzędzi VSTO jest zwalniana. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
+> W programie Outlook, domyślnie `ThisAddIn_Shutdown` program obsługi zdarzeń nie zawsze jest wywoływany podczas dodatku narzędzi VSTO jest zwalniana. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).
 
 ### <a name="access-the-object-model-of-the-host-application"></a>Dostęp do modelu obiektów w aplikacji hosta
  Aby uzyskać dostęp do modelu obiektów w aplikacji hosta, należy użyć `Application` pole `ThisAddIn` klasy. To pole zwraca obiekt reprezentujący bieżące wystąpienie aplikacji hosta. W poniższej tabeli przedstawiono typ wartości zwracanej przez `Application` pola w każdym projekcie dodatku narzędzi VSTO.

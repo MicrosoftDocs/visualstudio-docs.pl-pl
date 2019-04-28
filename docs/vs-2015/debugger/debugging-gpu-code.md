@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 07e3c15fad2758de965d0e13c2b64ac3ceebd2fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dc5a54b1dee2345f42abd3a00b39c11388185d03
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434875"
 ---
 # <a name="debugging-gpu-code"></a>Debugowanie kodu GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Można debugować kodu C++, który działa na jednostka przetwarzania grafiki (G
  Debugowanie jest obsługiwane w [!INCLUDE[win7](../includes/win7-md.md)], [!INCLUDE[win8](../includes/win8-md.md)], [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)], i [!INCLUDE[winserver8](../includes/winserver8-md.md)]. Do debugowania na emulatorze oprogramowania [!INCLUDE[win8](../includes/win8-md.md)], lub [!INCLUDE[winserver8](../includes/winserver8-md.md)] jest wymagana. Do debugowania na sprzęcie, należy zainstalować sterowniki dla karty graficznej. Nie wszyscy dostawcy sprzętu zaimplementuj wszystkie funkcje debugera. W dokumentacji dostawcy ograniczenia.  
   
 > [!NOTE]
->  Niezależnych dostawców sprzętu, którzy mają być obsługiwane debugowania GPU w programie Visual Studio, należy utworzyć bibliotekę DLL, która implementuje interfejs VSD3DDebug i elementy docelowe swoje własne sterowniki.  
+> Niezależnych dostawców sprzętu, którzy mają być obsługiwane debugowania GPU w programie Visual Studio, należy utworzyć bibliotekę DLL, która implementuje interfejs VSD3DDebug i elementy docelowe swoje własne sterowniki.  
   
 ## <a name="configuring-gpu-debugging"></a>Konfigurowanie debugowania GPU  
  Debuger nie można przerwać w kodzie procesora CPU i procesora GPU kodu w tym samym wykonywanie aplikacji. Domyślnie debuger przerywa na kodzie procesora CPU. Debugowanie kodu GPU, użyj jednej z tych dwóch kroków:  

@@ -12,12 +12,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc3890ee8392088592aef16dcc120637da74e285
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 19ba3b3ee9e68a7329c077567136697b3acbe502
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437475"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Sprawdzanie poprawności w języku specyficznym dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczenia sp
  Sprawdzanie poprawności jest szczególnie ważne, jeśli piszesz szablony tekstowe lub innych narzędzi, które przetwarzają modeli użytkowników. Sprawdzanie poprawności zapewnia, że modele spełniają warunki wstępne, zakłada, że za pomocą tych narzędzi.  
   
 > [!WARNING]
->  Można również zezwolić ograniczenia sprawdzania poprawności, należy zdefiniować w oddzielnym rozszerzenia DSL, wraz z rozszerzenia poleceń menu i program obsługi gestów. Użytkownicy mogą wybierać do zainstalowania tych rozszerzeń, oprócz DSL. Aby uzyskać więcej informacji, zobacz [rozszerzanie DSL za pomocą MEF](../modeling/extend-your-dsl-by-using-mef.md).  
+> Można również zezwolić ograniczenia sprawdzania poprawności, należy zdefiniować w oddzielnym rozszerzenia DSL, wraz z rozszerzenia poleceń menu i program obsługi gestów. Użytkownicy mogą wybierać do zainstalowania tych rozszerzeń, oprócz DSL. Aby uzyskać więcej informacji, zobacz [rozszerzanie DSL za pomocą MEF](../modeling/extend-your-dsl-by-using-mef.md).  
   
 ## <a name="running-validation"></a>Uruchamianie sprawdzania poprawności  
  Gdy użytkownik edytuje modelu, oznacza to, wystąpienie języka specyficznego dla domeny następujące akcje można uruchomić sprawdzania poprawności:  
@@ -52,7 +52,7 @@ Autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczenia sp
  Każda metoda sprawdzania poprawności zgłasza wszelkie błędy, które znajdzie.  
   
 > [!NOTE]
->  Metody sprawdzania poprawności raportowania błędów, ale nie należy zmieniać modelu. Jeśli chcesz dostosować lub uniemożliwić pewnych zmian, zobacz [alternatywy dla weryfikacji](#alternatives).  
+> Metody sprawdzania poprawności raportowania błędów, ale nie należy zmieniać modelu. Jeśli chcesz dostosować lub uniemożliwić pewnych zmian, zobacz [alternatywy dla weryfikacji](#alternatives).  
   
 #### <a name="to-define-a-validation-constraint"></a>Aby zdefiniować ograniczenie sprawdzania poprawności  
   
@@ -320,7 +320,7 @@ private void TestForCircularLinks(ValidationContext context)
 ```  
   
 > [!NOTE]
->  Można poprzedzić metodę z dowolnej liczby `[ValidationMethod()]` atrybuty jak chcesz. Możesz dodać metodę do standardowych i niestandardowych kategorii.  
+> Można poprzedzić metodę z dowolnej liczby `[ValidationMethod()]` atrybuty jak chcesz. Możesz dodać metodę do standardowych i niestandardowych kategorii.  
   
  Aby wywołać niestandardowego sprawdzania poprawności:  
   
@@ -342,7 +342,7 @@ validationController.ValidateCustom
  **Wycofaj tę transakcję próbie nieprawidłowe zmiany.** W tym celu można również zdefiniować regułę, ale w niektórych przypadkach istnieje możliwość zastąpienia obsługi właściwości **OnValueChanging()**, lub takie jak przesłonić metodę `OnDeleted().` można wycofać transakcji, należy użyć `this.Store.TransactionManager.CurrentTransaction.Rollback().` Aby uzyskać więcej informacji informacje, zobacz [Obsługa zmian wartości właściwości domeny](../modeling/domain-property-value-change-handlers.md).  
   
 > [!WARNING]
->  Upewnij się, że użytkownik wie, że zmiana została dostosowana lub wycofana. Na przykład użyć `System.Windows.Forms.MessageBox.Show("message").`  
+> Upewnij się, że użytkownik wie, że zmiana została dostosowana lub wycofana. Na przykład użyć `System.Windows.Forms.MessageBox.Show("message").`  
   
 ## <a name="see-also"></a>Zobacz też  
  [Nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md)   

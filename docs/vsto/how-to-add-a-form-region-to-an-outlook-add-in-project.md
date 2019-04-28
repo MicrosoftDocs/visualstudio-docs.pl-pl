@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 139cdb0314783c76352cc499256fb89610354843
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c742b4cbbda440ea84314efbc5281e54771fe60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427890"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Instrukcje: Dodawanie regionu formularza do projektu dodatku programu Outlook
   Tworzenie regionu formularza, aby rozszerzyć standardowy lub niestandardowy formularz programu Microsoft Office Outlook za pomocą **nowy Region formularza programu Outlook** kreatora. Możesz utworzyć nowy region formularza i projektowanie interfejsu użytkownika w programie Visual Studio lub można importować regionu formularza zaprojektowanego w programie Outlook i Dodaj języka Visual Basic lub C# kodu.
@@ -48,7 +48,7 @@ ms.locfileid: "60083949"
 6. Na **wybierz sposób tworzenia regionu formularza** wybierz, czy chcesz zaprojektować regionu formularza za pomocą przeciągania zarządzane formanty do projektanta wizualnego lub zaimportować regionu formularza zaprojektowanego w programie Outlook.
 
     > [!NOTE]
-    >  Jeśli decydujesz się zaimportować regionu formularza zaprojektowanego w programie Outlook, a następnie należy określić lokalizację magazynu formularzy programu Outlook (*OFS*) pliku. Nie można dodać zarządzane formanty do regionu formularza, który projektowania w programie Outlook; można dodać tylko kod związany z istniejącego interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [regionach formularzy programu Outlook z tworzenia](../vsto/creating-outlook-form-regions.md).
+    > Jeśli decydujesz się zaimportować regionu formularza zaprojektowanego w programie Outlook, a następnie należy określić lokalizację magazynu formularzy programu Outlook (*OFS*) pliku. Nie można dodać zarządzane formanty do regionu formularza, który projektowania w programie Outlook; można dodać tylko kod związany z istniejącego interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [regionach formularzy programu Outlook z tworzenia](../vsto/creating-outlook-form-regions.md).
 
 7. Na **wybierz typ regionu formularza chcesz utworzyć** strony, przejrzyj typów regionu formularza i wybierz jedną, a następnie kliknij **dalej**. Aby uzyskać więcej informacji na temat typów regionu formularza, zobacz [regionach formularzy programu Outlook z tworzenia](../vsto/creating-outlook-form-regions.md).
 

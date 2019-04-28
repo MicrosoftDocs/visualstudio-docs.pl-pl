@@ -8,12 +8,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8de4960548b363c99b9625553c47b2cbad2df2de
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d5e45c91e9dadb0f457e3a2ecfa2e5484fbe0e78
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412330"
 ---
 # <a name="managing-universal-windows-projects"></a>Zarządzanie uniwersalnymi projektami systemu Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -235,7 +235,7 @@ Universal Windows apps to aplikacje, przeznaczonych dla Windows 8.1 i Windows Ph
     ```  
   
     > [!IMPORTANT]
-    >  Jeśli użytkownik został otwarty projekt aplikacji Windows universal C++ w doświadczalnym wystąpieniu, powyższy kod zgłasza wyjątek. Jest to znany problem. Aby uniknąć wyjątek, należy zastąpić `foreach` block powyżej następującym kodem:  
+    > Jeśli użytkownik został otwarty projekt aplikacji Windows universal C++ w doświadczalnym wystąpieniu, powyższy kod zgłasza wyjątek. Jest to znany problem. Aby uniknąć wyjątek, należy zastąpić `foreach` block powyżej następującym kodem:  
   
     ```csharp  
     var importingProjects = sharedAssetsProject.EnumImportingProjects();  
@@ -525,7 +525,7 @@ Universal Windows apps to aplikacje, przeznaczonych dla Windows 8.1 i Windows Ph
 9. Modyfikowanie udostępnionego elementu. Nie można zmodyfikować udostępnione elementy w projekcie platformy; Zamiast tego należy je zmodyfikować w projekcie udostępnionym, który jest rzeczywista właścicielem tych elementów. Możesz pobrać odpowiedni identyfikator elementu w ramach projektu udostępnionego z <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>, nadając mu pełna ścieżka udostępnionego elementu. Następnie można zmodyfikować udostępniony element. Zmiana jest propagowana do projektów platformy.  
   
     > [!IMPORTANT]
-    >  Powinien znajdować się, czy element projektu udostępnionego elementu przed zmodyfikowaniem.  
+    > Powinien znajdować się, czy element projektu udostępnionego elementu przed zmodyfikowaniem.  
   
      Poniższa metoda modyfikuje nazwa pliku elementu projektu.  
   

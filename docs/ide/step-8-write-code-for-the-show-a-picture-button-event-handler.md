@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d548a3a6ad0c381d6119c06ba7d2cb56e6a9440e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8a2e67692daed4d00b841b7472e7d13ede0ca500
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420413"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8. Pisanie kodu dla programu obsługi zdarzeń przycisku obrazu
 
@@ -79,7 +79,7 @@ IDE ma potężne narzędzie o nazwie IntelliSense, które ułatwia pisanie kodu.
          Aby dowiedzieć się więcej na temat DialogResult, zobacz [DialogResult](<xref:System.Windows.Forms.DialogResult>).
 
         > [!NOTE]
-        >  Pierwszy wiersz kodu powinien być kompletny. Dla języka Visual C#, należy go poniżej.
+        > Pierwszy wiersz kodu powinien być kompletny. Dla języka Visual C#, należy go poniżej.
         >
         >  `if (openFileDialog1.ShowDialog() == DialogResult.OK)`
         >

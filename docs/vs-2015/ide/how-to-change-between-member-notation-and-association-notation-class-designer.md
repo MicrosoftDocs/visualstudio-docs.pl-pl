@@ -14,12 +14,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 864edc3666164ac05d8155fd001d83c5bf515a6d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2c0e691cd162a52dc598f9d3dc4d9a04e0f8f008
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439296"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>Instrukcje: Zmiana między notacją składowych i notacją skojarzeń (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60093296"
 W Projektancie klas możesz zmienić sposób diagram klas reprezentuje relacja skojarzenia między dwoma typami z notacją składowych notacją skojarzeń i na odwrót. Składowe wyświetlane jako linie asocjacji często zawierają użyteczne wizualizację jak typy są powiązane.  
   
 > [!NOTE]
->  Skojarzenie relacji może być reprezentowana jako właściwość składowej lub pola. Aby zmienić notacją składowych notacją skojarzeń, jeden typ musi mieć członkiem innego typu. Aby zmienić notacją skojarzeń notacją składowych, dwa typy muszą być podłączone przez linia skojarzenia. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie skojarzeń między typami (Projektant klas)](../ide/how-to-create-associations-between-types-class-designer.md). Jeśli projekt zawiera wiele diagramów klas, zmiany wprowadzone w sposób skojarzenia relacje są wyświetlane na diagramie wpływa na tylko tego diagramu. Aby zmienić sposób innego diagramu zawiera relacje skojarzenia, Otwórz lub wyświetlania tego diagramu i wykonaj następujące kroki.  
+> Skojarzenie relacji może być reprezentowana jako właściwość składowej lub pola. Aby zmienić notacją składowych notacją skojarzeń, jeden typ musi mieć członkiem innego typu. Aby zmienić notacją skojarzeń notacją składowych, dwa typy muszą być podłączone przez linia skojarzenia. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie skojarzeń między typami (Projektant klas)](../ide/how-to-create-associations-between-types-class-designer.md). Jeśli projekt zawiera wiele diagramów klas, zmiany wprowadzone w sposób skojarzenia relacje są wyświetlane na diagramie wpływa na tylko tego diagramu. Aby zmienić sposób innego diagramu zawiera relacje skojarzenia, Otwórz lub wyświetlania tego diagramu i wykonaj następujące kroki.  
   
 ### <a name="to-change-member-notation-to-association-notation"></a>Aby zmienić notacją składowych i notacją skojarzeń  
   
@@ -36,7 +36,7 @@ W Projektancie klas możesz zmienić sposób diagram klas reprezentuje relacja s
 2. Typ kształtu na diagramie klas, kliknij prawym przyciskiem myszy właściwość element członkowski lub pole reprezentujący skojarzenie, a następnie wybierz **wyświetlić jako skojarzenie**.  
   
     > [!TIP]
-    >  Jeśli nie właściwości lub pola są widoczne w kształcie typu, mogą być zwinięte przedziałów w kształcie. Aby rozwinąć kształt typu, kliknij dwukrotnie nazwę przedziału lub kliknij prawym przyciskiem myszy kształt typu, a wybierz **rozwiń**.  
+    > Jeśli nie właściwości lub pola są widoczne w kształcie typu, mogą być zwinięte przedziałów w kształcie. Aby rozwinąć kształt typu, kliknij dwukrotnie nazwę przedziału lub kliknij prawym przyciskiem myszy kształt typu, a wybierz **rozwiń**.  
   
      Element członkowski znika z przedziału w kształcie typu, a linia skojarzenia pojawi się połączyć z dwóch typów. Linia skojarzenia ma etykietę o nazwie właściwości lub pola.  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: deabd34896b327f7cbbb35c7af75f5810dcfbf17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 26e059d4fdc8eadd422924dd6bbda6f7c945ccfb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433060"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Instrukcje: Utworzyć i uruchomić nienadzorowaną instalację programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Można uruchomić aplikację instalacji dla [!INCLUDE[vsprvs](../includes/vsprvs
      Ścieżka sieciowa aplikacji instalacyjnej dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] przypomina \\ \\ *ServerName*\IDEinstall\\*produktu*.exe.
 
     > [!NOTE]
-    >  Instalacja może zakończyć się niepowodzeniem, jeśli wszystkie ścieżce kombinacja nazwy pliku przekracza 260 znaków. Maksymalna długość ścieżki w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] to 221 znaków.  Nazwa ścieżki lokalnej nie powinna przekraczać 70 znaków, a nazwa ścieżki sieciowej nie powinna przekraczać 39 znaków.
+    > Instalacja może zakończyć się niepowodzeniem, jeśli wszystkie ścieżce kombinacja nazwy pliku przekracza 260 znaków. Maksymalna długość ścieżki w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] to 221 znaków.  Nazwa ścieżki lokalnej nie powinna przekraczać 70 znaków, a nazwa ścieżki sieciowej nie powinna przekraczać 39 znaków.
 
      Instalację mogą zakończyć się niepowodzeniem, jeśli nazwy folderów w ścieżce zawierają spacje (na przykład "\\\\*ServerName*instalacji \IDE" lub \\ \\ *ServerName*\Visual studio\\).
 
@@ -46,16 +46,16 @@ Można uruchomić aplikację instalacji dla [!INCLUDE[vsprvs](../includes/vsprvs
  Aby wdrożyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w trybie nienadzorowanym, musisz zmodyfikować plik AdminDeployment.xml. Aby to zrobić, należy najpierw utworzyć plik AdminDeployment.xml przy użyciu `/CreateAdminFile`  *\<lokalizacja pliku >* parametru wiersza polecenia. Następnie można użyć tego pliku do wypychania wdrażanie programu Visual Studio z siecią lub wyciągniesz go do instalacji, jeśli umieścisz ten plik *dysku*: \IDEinstall\packages katalogu. Plik AdminDeployment.xml nie jest unikatowy dla systemu operacyjnego, architektury, wydanie programu Visual Studio lub języka systemu operacyjnego.
 
 > [!CAUTION]
->  Czasami elementów jako wybranego na liście plik AdminDeployment.xml nie zainstalowane. Aby rozwiązać ten problem, umieść elementy oznaczone jako "wybrane ="yes"" w **zakończenia** z plik AdminDeployment.xml.
+> Czasami elementów jako wybranego na liście plik AdminDeployment.xml nie zainstalowane. Aby rozwiązać ten problem, umieść elementy oznaczone jako "wybrane ="yes"" w **zakończenia** z plik AdminDeployment.xml.
 >
->  Jeśli nie chcesz zainstalować opcjonalne zależności elementu, musisz najpierw wybrać element nadrzędny i usuń zaznaczenie opcji opcjonalne zależności po nadrzędnego, jak pokazano na poniższym zrzucie ekranu:
+> Jeśli nie chcesz zainstalować opcjonalne zależności elementu, musisz najpierw wybrać element nadrzędny i usuń zaznaczenie opcji opcjonalne zależności po nadrzędnego, jak pokazano na poniższym zrzucie ekranu:
 >
->  ![Elementy wymagane do instalacji na końcu plik AdminDeployment.xml](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
+> ![Elementy wymagane do instalacji na końcu plik AdminDeployment.xml](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
 >
->  Innym sposobem, w tym celu jest po prostu pominąć opcjonalny element podrzędny elementu nadrzędnego — innymi słowy, nie zawierają żadnego "wybrane ="no"" elementów —, ale nadal należy umieścić wszystkie "wybrane ="yes"" elementy na końcu plik AdminDeployment.xml.
+> Innym sposobem, w tym celu jest po prostu pominąć opcjonalny element podrzędny elementu nadrzędnego — innymi słowy, nie zawierają żadnego "wybrane ="no"" elementów —, ale nadal należy umieścić wszystkie "wybrane ="yes"" elementy na końcu plik AdminDeployment.xml.
 
 > [!IMPORTANT]
->  Podczas instalacji komputer może automatycznie uruchomiony ponownie jeden lub więcej razy. Po ponownym uruchomieniu, należy zalogować się ponownie przy użyciu tego samego konta użytkownika, z którym użytkownik był zalogowany do przeprowadzenia instalacji przed ponownym uruchomieniem komputera. Możesz uniknąć automatycznego ponownego uruchamiania, instalując wstępnie wymagane składniki przed uruchomieniem instalacji nienadzorowanej. Aby uzyskać więcej informacji, zobacz sekcję zatytułowaną "Uniknąć ponownego uruchomienia podczas instalacji" w [Podręcznik administratora programu Visual Studio](../install/visual-studio-administrator-guide.md).
+> Podczas instalacji komputer może automatycznie uruchomiony ponownie jeden lub więcej razy. Po ponownym uruchomieniu, należy zalogować się ponownie przy użyciu tego samego konta użytkownika, z którym użytkownik był zalogowany do przeprowadzenia instalacji przed ponownym uruchomieniem komputera. Możesz uniknąć automatycznego ponownego uruchamiania, instalując wstępnie wymagane składniki przed uruchomieniem instalacji nienadzorowanej. Aby uzyskać więcej informacji, zobacz sekcję zatytułowaną "Uniknąć ponownego uruchomienia podczas instalacji" w [Podręcznik administratora programu Visual Studio](../install/visual-studio-administrator-guide.md).
 
  Schemat pliku AdminDeployment zawiera następujące elementy:
 
@@ -71,7 +71,7 @@ Można uruchomić aplikację instalacji dla [!INCLUDE[vsprvs](../includes/vsprvs
 |BundleCustomizations|NoCacheOnlyMode|tak&#124;domyślne|Zapobiega wstępnemu zapełnianiu pamięci podręcznej pakietu.|
 
 > [!WARNING]
->  Aplikacja instalacyjna będzie uwzględniać stan wybrany w SelectableItem, nawet jeśli jest on ukryty. Na przykład jeśli chcesz zawsze instalować element podlegający wyborowi, możesz oznaczyć go jako ukryty i wybrany.
+> Aplikacja instalacyjna będzie uwzględniać stan wybrany w SelectableItem, nawet jeśli jest on ukryty. Na przykład jeśli chcesz zawsze instalować element podlegający wyborowi, możesz oznaczyć go jako ukryty i wybrany.
 
 #### <a name="to-create-an-unattended-installation-of-visual-studio"></a>Aby utworzyć instalację nienadzorowaną programu Visual Studio
 
@@ -100,7 +100,7 @@ Można uruchomić aplikację instalacji dla [!INCLUDE[vsprvs](../includes/vsprvs
  Jeśli otworzysz **Panelu sterowania** i ponownie uruchom instalację aplikacji, można zmodyfikować funkcje programu Visual Studio, odinstalować języki programowania, a także naprawić lub odinstalować program Visual Studio.
 
 > [!NOTE]
->  Musi mieć poświadczenia administracyjne na komputerze lokalnym, aby używać trybu konserwacji.
+> Musi mieć poświadczenia administracyjne na komputerze lokalnym, aby używać trybu konserwacji.
 
 #### <a name="to-maintain-an-installation-on-a-client-computer"></a>Aby prowadzić instalację na komputerze klienckim
 

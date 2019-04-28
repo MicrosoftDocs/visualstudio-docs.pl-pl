@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d781358258457dc12a3657cf3ff76273315219c4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 4252ad81747576366c0873f2ad65646ee7af7f1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422939"
 ---
 # <a name="t4-parameter-directive"></a>Dyrektywa T4 dotycząca parametru
 
@@ -99,4 +99,4 @@ string resultText = t.TransformText();
 ## <a name="obtaining-arguments-from-texttemplateexe"></a>Uzyskiwanie argumenty z TextTemplate.exe
 
 > [!IMPORTANT]
->  `parameter` Dyrektywy nie pobrać wartości ustawione w `-a` parametru `TextTransform.exe` narzędzia. Aby uzyskać te wartości, należy ustawić `hostSpecific="true"` w `template` dyrektywy i użyj `this.Host.ResolveParameterValue("","","argName")`.
+> `parameter` Dyrektywy nie pobrać wartości ustawione w `-a` parametru `TextTransform.exe` narzędzia. Aby uzyskać te wartości, należy ustawić `hostSpecific="true"` w `template` dyrektywy i użyj `this.Host.ResolveParameterValue("","","argName")`.

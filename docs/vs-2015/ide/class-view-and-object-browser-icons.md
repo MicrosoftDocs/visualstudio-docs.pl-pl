@@ -18,12 +18,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7cb80c7ad81708724750660560d65cfef722af86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ef14396e681f77eca469f40b2253c8a64296423d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422846"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Widok klas i Przeglądarka obiektów ― Ikony
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Klasy widoku ** i **przeglądarki obiektów** wyświetlania ikon, które repreze
  Następujące ikony sygnałowe dotyczą wszystkich poprzednich ikon i wskazują ich dostępność.  
   
 > [!NOTE]
->  Jeśli projekt jest uwzględniona w bazie danych kontroli źródła, ikony sygnałowe dodatkowe może być wyświetlany wskazują stan kontroli źródła, takich jak zaewidencjonowany lub wyewidencjonowany.  
+> Jeśli projekt jest uwzględniona w bazie danych kontroli źródła, ikony sygnałowe dodatkowe może być wyświetlany wskazują stan kontroli źródła, takich jak zaewidencjonowany lub wyewidencjonowany.  
   
 |Ikona|Opis|  
 |----------|-----------------|  

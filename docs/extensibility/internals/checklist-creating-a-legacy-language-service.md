@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0af3634c2aeb851dab580922f8c282824f41626
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7037b49763d4fda844b7692052935a4eee7f7107
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420688"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>Lista kontrolna: Tworzenie starszej wersji usługi językowej
 Poniższa lista zawiera podsumowanie podstawowe kroki, które należy wykonać, aby można było utworzyć language service Pro [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] edytorze podstawowych funkcji. Aby zintegrować usługi w języka [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], należy utworzyć ewaluatora wyrażeń debugowania. Aby uzyskać więcej informacji, zobacz [pisanie ewaluatora wyrażeń CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) w [rozszerzalność debugera programu Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).
@@ -61,7 +61,7 @@ Poniższa lista zawiera podsumowanie podstawowe kroki, które należy wykonać, 
     Polecenia, które muszą być obsługiwane są zależne od usług, które są dostarczane. Aby uzyskać więcej informacji, zobacz [ważne polecenia dotyczące języka usługi filtry](../../extensibility/internals/important-commands-for-language-service-filters.md).
 
     > [!NOTE]
-    >  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> Interfejs musi zostać wdrożone na tym samym obiekcie jako <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu.
+    > <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> Interfejs musi zostać wdrożone na tym samym obiekcie jako <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu.
 
 - Uzupełnianie instrukcji
 

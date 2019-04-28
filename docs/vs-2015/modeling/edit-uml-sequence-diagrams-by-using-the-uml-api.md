@@ -11,12 +11,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c71becfb04115faefe88d5018c238ead38e4c88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c619ae6efd1de48319bf9c0398ee8ab4e3cd57ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442957"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Edytowanie diagramów sekwencji UML przy użyciu interfejsu API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ public class MySequenceDiagramCommand : ICommandExtension
  Istnieją dwa rodzaje diagramów sekwencji: te, które zostały ręcznie utworzone w projekcie modelowania UML i tych, które zostały wygenerowane z kodu programu. Użyj `UmlMode` właściwość, aby dowiedzieć się, jaka sekwencja diagramu można mieć.  
   
 > [!NOTE]
->  Ta właściwość zwraca wartość FAŁSZ tylko w przypadku diagramy sekwencji wygenerowane z kodu za pomocą programu Visual Studio 2013 i starszych. Obejmuje to sekwencję wygenerowany kod, diagramy migracji z 2013 i starszych wersji. Ta wersja programu Visual Studio nie obsługuje generowania nowych diagramów sekwencji.  
+> Ta właściwość zwraca wartość FAŁSZ tylko w przypadku diagramy sekwencji wygenerowane z kodu za pomocą programu Visual Studio 2013 i starszych. Obejmuje to sekwencję wygenerowany kod, diagramy migracji z 2013 i starszych wersji. Ta wersja programu Visual Studio nie obsługuje generowania nowych diagramów sekwencji.  
   
  Na przykład, jeśli chcesz utworzyć polecenie menu, która jest widoczna tylko na diagramach sekwencji UML a następnie `QueryStatus()` metoda może zawierać następującą instrukcję:  
   

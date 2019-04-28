@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d99ff4013b7cdb16cea8b8c3231709d2e5b0aff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 8dc28a64d42d2184734142c68aef95cbc3b1d245
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410123"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Powiąż skrótów klawiaturowych z elementami menu
 Aby powiązać polecenia niestandardowego menu skrótu klawiaturowego, wystarczy dodać wpis do *vsct* plik pakietu. W tym temacie opisano sposób mapowania skrótów klawiaturowych na niestandardowy przycisk, element menu lub paska narzędzi polecenia, a także jak zastosować Mapowanie klawiatury w edytorze domyślnej lub ograniczyć je do edytora niestandardowego.
@@ -42,7 +42,7 @@ Aby powiązać polecenia niestandardowego menu skrótu klawiaturowego, wystarczy
 4. Wypróbuj różne kombinacje klawiszy, dopóki nie znajdziesz taki, który nie jest zamapowany.
 
    > [!NOTE]
-   >  Skróty klawiaturowe, które używają **Alt** może otworzyć menu i nie są bezpośrednio wykonania polecenia. W związku z tym **skrót aktualnie używany przez** pole może być pusty podczas wpisywania tekstu skrót, który zawiera **Alt**. Możesz sprawdzić, czy skrót nie otwiera menu przez zamknięcie **opcje** okno dialogowe, a następnie naciskając klawisze.
+   > Skróty klawiaturowe, które używają **Alt** może otworzyć menu i nie są bezpośrednio wykonania polecenia. W związku z tym **skrót aktualnie używany przez** pole może być pusty podczas wpisywania tekstu skrót, który zawiera **Alt**. Możesz sprawdzić, czy skrót nie otwiera menu przez zamknięcie **opcje** okno dialogowe, a następnie naciskając klawisze.
 
    W poniższej procedurze przyjęto, że masz istniejących pakietów VSPackage przy użyciu polecenia menu. Jeśli potrzebujesz pomocy z tą operacją, Przyjrzyj się [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
@@ -53,7 +53,7 @@ Aby powiązać polecenia niestandardowego menu skrótu klawiaturowego, wystarczy
 2. Utwórz pustą `<KeyBindings>` sekcji po `<Commands>` Jeśli nie jest już obecny.
 
    > [!WARNING]
-   >  Aby uzyskać więcej informacji na temat powiązania klawiszy zobacz [powiązanie klawiszy](../extensibility/keybinding-element.md).
+   > Aby uzyskać więcej informacji na temat powiązania klawiszy zobacz [powiązanie klawiszy](../extensibility/keybinding-element.md).
 
     W `<KeyBindings>` sekcji, Utwórz `<KeyBinding>` wpisu.
 

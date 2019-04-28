@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c09e8eeed3ba5b7e2a348982444ad8faa0884e9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f5a3bed451775c7b6df1d4abb5e318d664cd803f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436893"
 ---
 # <a name="model-your-app39s-architecture"></a>Model aplikacji&#39;architektury s
 Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytkowników potrzebuje, możesz tworzyć modele w programie Visual Studio, jako część opisie ogólną strukturę i zachowanie systemu oprogramowania lub aplikacji. Przy użyciu modeli, może również opisywać wzorców, które są używane w całym projekcie. Modele te ułatwiają zrozumienie istniejącej architektury, omówiono zmiany i wyraźnie komunikacji zamiaru.
@@ -24,7 +24,7 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
  Cel modelu jest zmniejszenie niejasności, występujących w opisach języka naturalnego, ułatwienie Ty i Twoi współpracownicy wizualizacji projektu i w celu omówienia alternatywnych projektów. Model powinien być używany razem z innych dokumentów lub dyskusji. Przez siebie model nie reprezentuje pełną specyfikację architektury.
 
 > [!NOTE]
->  W tym temacie "system" oznacza, że oprogramowanie, które tworzysz. Może być duży zbiór wielu składników oprogramowania i sprzętu, lub pojedynczej aplikacji lub jej część aplikacji.
+> W tym temacie "system" oznacza, że oprogramowanie, które tworzysz. Może być duży zbiór wielu składników oprogramowania i sprzętu, lub pojedynczej aplikacji lub jej część aplikacji.
 
  Architektura systemu można podzielić na dwóch obszarach:
 

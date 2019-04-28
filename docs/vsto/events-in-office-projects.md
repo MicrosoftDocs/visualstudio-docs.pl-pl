@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6318108523f072beaae85c51604dbb45982a244f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0fdea53ec99c4f95fb4bb9526b3f154bea5b662b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441825"
 ---
 # <a name="events-in-office-projects"></a>Zdarzenia w projektach pakietu Office
   Każdy szablon projektu pakietu Office automatycznie generuje kilka programów obsługi zdarzeń. Programy obsługi zdarzeń w przypadku dostosowań na poziomie dokumentu są nieco inne niż dodatków narzędzi VSTO dla programów obsługi zdarzeń.
@@ -82,7 +82,7 @@ ms.locfileid: "60094856"
     - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
->  Nie usuwaj programowo kontrole podczas **zamknięcia** program obsługi zdarzeń dokumentu. Elementy interfejsu użytkownika w pliku nie są już dostępne podczas **zamknięcia** wystąpi zdarzenie. Jeśli chcesz usunąć kontrolki przed zamknięciem aplikacji, Dodaj kod do innego programu obsługi zdarzeń, takich jak **BeforeClose** lub **BeforeSave**.
+> Nie usuwaj programowo kontrole podczas **zamknięcia** program obsługi zdarzeń dokumentu. Elementy interfejsu użytkownika w pliku nie są już dostępne podczas **zamknięcia** wystąpi zdarzenie. Jeśli chcesz usunąć kontrolki przed zamknięciem aplikacji, Dodaj kod do innego programu obsługi zdarzeń, takich jak **BeforeClose** lub **BeforeSave**.
 
 ### <a name="event-handler-method-declarations"></a>Deklaracje metody obsługi zdarzeń
  Co deklaracja metody obsługi zdarzeń ma te same argumenty przekazywane do niej: *nadawcy* i *e*. W programie Excel *nadawcy* argument odwołuje się do arkusza, takich jak `Sheet1` lub `Sheet2`; w programie Word, *nadawcy* argument, który odwołuje się do dokumentu. *e* argument, który odwołuje się do standardowych argumenty dla zdarzenia, które nie są używane w tym przypadku.
@@ -95,7 +95,7 @@ ms.locfileid: "60094856"
  Poniższy przykład kodu pokazuje domyślne programy obsługi zdarzeń w projektach na poziomie dokumentu dla programu Excel.
 
 > [!NOTE]
->  Poniższy przykład kodu pokazuje obsługę zdarzeń w `Sheet1` klasy. Nazwy programów obsługi zdarzeń w innych klas elementów hosta odpowiadać Nazwa klasy. Na przykład w `Sheet2` klasy **uruchamiania** nosi nazwę programu obsługi zdarzeń `Sheet2_Startup`. W `ThisWorkbook` klasy **uruchamiania** nosi nazwę programu obsługi zdarzeń `ThisWorkbook_Startup`.
+> Poniższy przykład kodu pokazuje obsługę zdarzeń w `Sheet1` klasy. Nazwy programów obsługi zdarzeń w innych klas elementów hosta odpowiadać Nazwa klasy. Na przykład w `Sheet2` klasy **uruchamiania** nosi nazwę programu obsługi zdarzeń `Sheet2_Startup`. W `ThisWorkbook` klasy **uruchamiania** nosi nazwę programu obsługi zdarzeń `ThisWorkbook_Startup`.
 
  [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
  [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]
@@ -150,7 +150,7 @@ ms.locfileid: "60094856"
 - <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> Zdarzenia <xref:Microsoft.Office.Interop.Outlook.Explorer> obiektu.
 
 > [!NOTE]
->  Można wymusić programu Outlook w celu podniesienia <xref:Microsoft.Office.Tools.AddInBase.Shutdown> zdarzenie, kiedy wychodzi przez modyfikację rejestru. Jednak jeśli administrator przywraca ustawienie, dowolny kod dodasz do `ThisAddIn_Shutdown` metoda jest już uruchamiany, gdy kończy działanie programu Outlook. Aby uzyskać więcej informacji, zobacz [zamykania zmian dla programu Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).
+> Można wymusić programu Outlook w celu podniesienia <xref:Microsoft.Office.Tools.AddInBase.Shutdown> zdarzenie, kiedy wychodzi przez modyfikację rejestru. Jednak jeśli administrator przywraca ustawienie, dowolny kod dodasz do `ThisAddIn_Shutdown` metoda jest już uruchamiany, gdy kończy działanie programu Outlook. Aby uzyskać więcej informacji, zobacz [zamykania zmian dla programu Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).
 
 ## <a name="see-also"></a>Zobacz także
 - [Opracowywania rozwiązań pakietu Office](../vsto/developing-office-solutions.md)

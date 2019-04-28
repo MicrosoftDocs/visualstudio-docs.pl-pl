@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c757f2ee7dc69e53f492d4dfa37c2ca95b4af70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 304b2afd734527b80a465fc5074077bf8b0661fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411331"
 ---
 # <a name="create-a-settings-category"></a>Tworzenie kategorii ustawień
 
@@ -46,7 +46,7 @@ Aby uruchomić ten Instruktaż, najpierw musisz zakończyć w pierwszej sekcji [
      Spowoduje to utworzenie zasobów tej nazwy kategorii "Moje Category", "Moje ustawienia obiektu" i opis kategorii "OptionInteger i OptionFloat".
 
     > [!NOTE]
-    >  Z tych trzech nazwę kategorii nie ma **Import i eksport ustawień** kreatora.
+    > Z tych trzech nazwę kategorii nie ma **Import i eksport ustawień** kreatora.
 
 3. W *MyToolsOptionsPackage.cs*, Dodaj `float` właściwość o nazwie `OptionFloat` do `OptionPageGrid` klasy, jak pokazano w poniższym przykładzie.
 
@@ -76,7 +76,7 @@ Aby uruchomić ten Instruktaż, najpierw musisz zakończyć w pierwszej sekcji [
     ```
 
     > [!NOTE]
-    >  `OptionPageGrid` Kategorii o nazwie "My Category" teraz składa się z dwóch właściwości `OptionInteger` i `OptionFloat`.
+    > `OptionPageGrid` Kategorii o nazwie "My Category" teraz składa się z dwóch właściwości `OptionInteger` i `OptionFloat`.
 
 4. Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> do `MyToolsOptionsPackage` klasy i nadać mu CategoryName "Moje Category", nadaj ObjectName "Moje ustawienia" i ustawić isToolsOptionPage na wartość true. Ustaw categoryResourceID objectNameResourceID i DescriptionResourceID do odpowiedniego zasobu ciągu, który identyfikatorów utworzonych wcześniej.
 

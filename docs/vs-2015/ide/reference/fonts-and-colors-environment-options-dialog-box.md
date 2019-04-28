@@ -27,12 +27,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a1a66ae20065546d5a42b990d0ba0009d0657ed0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 1cd4b57e2dccbb26c3b6ceba1be51fa5022469cb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437163"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Czcionki i kolory, środowisko, opcje — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "59656029"
 **Czcionki i kolory** strony **opcje** okno dialogowe umożliwia ustanawianie niestandardowy schemat czcionek i kolorów dla różnych elementów interfejsu użytkownika w zintegrowanym środowisku programistycznym (IDE). To okno dialogowe można skorzystać, klikając **narzędzia / Opcje**, a następnie wybierając **środowisko / czcionki i kolory**. Jeśli ta strona nie jest wyświetlana na liście, wybierz opcję **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.  
   
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Kolor schemat zmiany wprowadzone podczas sesji, w której należy. Możesz ocenić zmiany kolorów, otwierając innego wystąpienia programu Visual Studio i tworzenie warunków, w których oczekujesz, że zmiany do zastosowania.  
   
@@ -56,7 +56,7 @@ ms.locfileid: "59656029"
    Zmiany styl czcionki, rozmiaru i wyświetlania kolorów dla drukarki na wygląd tekstu w dokumentach.  
   
   > [!NOTE]
-  >  W razie potrzeby można wybrać czcionkę różne domyślne związane z drukowaniem niż ten używany do wyświetlania w edytorze tekstów. Może to być przydatne podczas drukowania kodu, który zawiera znaków jednobajtowych i dwubajtowych.  
+  > W razie potrzeby można wybrać czcionkę różne domyślne związane z drukowaniem niż ten używany do wyświetlania w edytorze tekstów. Może to być przydatne podczas drukowania kodu, który zawiera znaków jednobajtowych i dwubajtowych.  
   
 - **Uzupełnianie instrukcji**  
   
@@ -75,7 +75,7 @@ ms.locfileid: "59656029"
    Zmiany styl czcionki, rozmiaru i koloru ustawienia wyświetlania na ten element wpływ wygląd tekstu w oknach narzędzi, których okienka danych wyjściowych w środowisku IDE. Na przykład okno danych wyjściowych, okno polecenia, okno bezpośrednie itp.  
   
   > [!NOTE]
-  >  Zmiany w tekście z **[wszystkie tekstowe narzędzie Windows]** elementy zostaną wprowadzone podczas sesji, w której należy. Możesz ocenić takie zmiany, otwierając innego wystąpienia programu Visual Studio.  
+  > Zmiany w tekście z **[wszystkie tekstowe narzędzie Windows]** elementy zostaną wprowadzone podczas sesji, w której należy. Możesz ocenić takie zmiany, otwierając innego wystąpienia programu Visual Studio.  
   
   **Użyj wartości domyślnych**  
   Powoduje zresetowanie wartości czcionkę i kolor elementu listy, który wybrano w **Pokaż ustawienia dla**. **Użyj** przycisk jest wyświetlany, gdy do wyboru dostępne są inne systemy wyświetlania. Na przykład można wybierać spośród dwóch systemów dla drukarki.  
@@ -90,7 +90,7 @@ ms.locfileid: "59656029"
   Wyświetla listę elementów, dla których można zmodyfikować kolor pierwszego planu i tła.  
   
 > [!NOTE]
->  **Zwykły tekst** elementu wyświetlana domyślna. W efekcie właściwości przypisane do **PlainText** zostaną zastąpione przez właściwości, przypisane do innych elementów wyświetlana. Na przykład, jeśli przypisujesz kolor niebieski na **PlainText** i kolor na zielony do **identyfikator**, wszystkie identyfikatory będą wyświetlane w kolorze zielonym. W tym przykładzie **identyfikator** zastąpienie właściwości **PlainText** właściwości.  
+> **Zwykły tekst** elementu wyświetlana domyślna. W efekcie właściwości przypisane do **PlainText** zostaną zastąpione przez właściwości, przypisane do innych elementów wyświetlana. Na przykład, jeśli przypisujesz kolor niebieski na **PlainText** i kolor na zielony do **identyfikator**, wszystkie identyfikatory będą wyświetlane w kolorze zielonym. W tym przykładzie **identyfikator** zastąpienie właściwości **PlainText** właściwości.  
   
  Wyświetl elementy, należą:  
   
@@ -214,7 +214,7 @@ ms.locfileid: "59656029"
  Wyświetla okno dialogowe kolorów do umożliwiają ustawianie koloru niestandardowego elementu wybranego na liście elementów ekranu.  
   
 > [!NOTE]
->  Możliwość definiowanie kolorów niestandardowych, może być ograniczona przez ustawienia kolorów dla tego ekranu komputera. Na przykład, jeśli komputer jest równa 256 kolorów, a następnie wybierz kolor niestandardowy z **kolor** okno dialogowe IDE wartością domyślną jest najbardziej dostępna **kolor podstawowy** i wyświetla kolor czarny w **Kolor** okno podglądu.  
+> Możliwość definiowanie kolorów niestandardowych, może być ograniczona przez ustawienia kolorów dla tego ekranu komputera. Na przykład, jeśli komputer jest równa 256 kolorów, a następnie wybierz kolor niestandardowy z **kolor** okno dialogowe IDE wartością domyślną jest najbardziej dostępna **kolor podstawowy** i wyświetla kolor czarny w **Kolor** okno podglądu.  
   
  **Tło elementu**  
  Udostępnia paletę kolorów, w którym można wybrać kolor tła dla elementu zaznaczonego w **wyświetlania elementów**. Ponieważ niektóre elementy są ze sobą powiązane i w związku z tym należy zachować schemat spójne wyświetlanie, zmiana koloru tła tekstu także zmianę wartości domyślne dla elementów, takich jak błąd kompilatora, słowo kluczowe lub Operator.  

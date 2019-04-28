@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d4cb6fcfac8e9f619ab99e1d96472824d6c98e51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e5ff4290d0cffa99a9f476c543626c5aa15be87a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436910"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Instrukcje: Określanie lokalizacji plików symboli z wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Aby wyświetlić informacje o symbolach, takich jak nazwy i numery wierszy, narz
   Można również użyć obu tych metod.  
   
 > [!NOTE]
->  Jeśli [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] jest zainstalowany na komputerze lokalnym, lokalizację, aby pliki symboli Windows prawdopodobnie określono już. Aby uzyskać więcej informacji, zobacz [jak: Informacje o symbolach Windows odwołanie](../profiling/how-to-reference-windows-symbol-information.md). Nadal należy skonfigurować VSPerfReport, aby użyć lokalizacji i serwera, zgodnie z opisem w dalszej części tego tematu.  
+> Jeśli [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] jest zainstalowany na komputerze lokalnym, lokalizację, aby pliki symboli Windows prawdopodobnie określono już. Aby uzyskać więcej informacji, zobacz [jak: Informacje o symbolach Windows odwołanie](../profiling/how-to-reference-windows-symbol-information.md). Nadal należy skonfigurować VSPerfReport, aby użyć lokalizacji i serwera, zgodnie z opisem w dalszej części tego tematu.  
   
 ## <a name="specifying-windows-symbol-files"></a>Określanie plików symboli Windows  
   

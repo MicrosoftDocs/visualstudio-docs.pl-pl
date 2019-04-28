@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9af0a3dc7c08a415f320ce3560cdfc23c462d4c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f539fd0a20bf852b04b5a41aff829cdcf0e52cf3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445928"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Aby określić, jaka część kodu projektu jest faktycznie testowana przez zako
 3. Jeśli wyniki wykażą niewielkie pokrycie, zbadaj części kodu, które nie są wykonywane, i napisz więcej testów, aby je pokryć. Zespoły deweloperów zazwyczaj dążą do około 80% pokrycia kodu. W niektórych sytuacjach dopuszczalne jest niższe zapotrzebowanie. Niższe zapotrzebowanie jest dopuszczalne np. tam, gdzie dany kod jest generowany na podstawie standardowego szablonu.  
   
 > [!TIP]
->  Aby uzyskać dokładne wyniki:  
+> Aby uzyskać dokładne wyniki:  
 > 
 > - Upewnij się, że optymalizacja kompilatora jest wyłączona.  
 > 
@@ -240,7 +240,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 - Wykluczenia muszą być skompilowane jako kod niezarządzany (natywny), przez ustawienie opcji kompilatora albo za pomocą `#pragma managed(off)`.  
   
 > [!NOTE]
->  Aby wyłączyć funkcje w C++sposób niezamierzony kodu, zastosuj atrybut `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` do funkcji. To jest tak samo jak w języku C#.  
+> Aby wyłączyć funkcje w C++sposób niezamierzony kodu, zastosuj atrybut `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` do funkcji. To jest tak samo jak w języku C#.  
   
 ### <a name="including-or-excluding-additional-elements"></a>Włączanie lub wyłączanie dodatkowych elementów  
  Analizy pokrycia kodu są wykonywane tylko na zestawach, które są ładowane i dla których plik .pdb jest dostępny w tym samym katalogu co plik .exe lub .dll. Dlatego w pewnych okolicznościach można rozszerzyć zbiór zestawów, włączony przez uzyskanie kopii odpowiednich plików .pdb.  

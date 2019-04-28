@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d4895da5247cbfba2263b3b298850086ed16c9b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: 243d5fada7342bc05d8768a7e33cca6f55e309ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54761446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442463"
 ---
 # <a name="pf"></a>PF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,9 +22,9 @@ ms.locfileid: "54761446"
 VSPerfCmd.exe **PF** opcja umożliwia ustawienie profilowania zdarzenia, które są próbkowane tak, błędów stron i opcjonalnie zmienia liczbę błędów stron w interwale próbkowania domyślna wartość wynosząca 10.  
   
 > [!NOTE]
->  Nie można PF w systemach 64-bitowych.  
+> Nie można PF w systemach 64-bitowych.  
   
- **Należy pamiętać, PF** nie jest obsługiwane na komputerach 64-bitowym.** PF** należy używać tylko w wierszu polecenia, który zawiera także **Uruchom** lub **Dołącz** opcji.  
+ **Należy pamiętać, PF** nie jest obsługiwane na komputerach 64-bitowym. **PF** należy używać tylko w wierszu polecenia, który zawiera także **Uruchom** lub **Dołącz** opcji.  
   
  Domyślnie ustawiono zdarzenie próbkowania cykli zegara procesora niewstrzymanych, a interwał próbkowania jest ustawiony na 10 000 000. **Czasomierza**, **PF**, **Sys**, i **licznika** opcje umożliwiają skonfigurowanie interwału próbkowania zdarzeń i pobieranie próbek. **GC** opcja służy do zbierania danych pamięci .NET na każde zdarzenie kolekcji alokacji i odzyskiwanie. W wierszu polecenia można określić tylko jeden z tych opcji.  
   

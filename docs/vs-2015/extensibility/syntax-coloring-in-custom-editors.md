@@ -10,12 +10,12 @@ ms.assetid: 74900b9a-baef-432a-8231-4568fb5e19ad
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e82c8b6268affc4fb473c799d973c66db69c111b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7a0233873ba5d6ea2fca746f8e12f4bf693b79da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444069"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Kolorowanie składni w edytorach niestandardowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Edytory wizualne zestawu SDK środowiska Studio, w tym podstawowy edytor używan
 3. Użyj dane kolorowania zwrócony przez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> repaint i wyświetlić jego tekstu.  
   
 > [!NOTE]
->  Oprócz używania usługi języka colorizer, pakietu VSPackage można użyć ogólnego przeznaczenia mechanizmu Kolorowanie tekstu Visual Studio SDK środowiska. Aby uzyskać więcej informacji na temat tego mechanizmu, zobacz [przy użyciu czcionki i kolory](../extensibility/using-fonts-and-colors.md).  
+> Oprócz używania usługi języka colorizer, pakietu VSPackage można użyć ogólnego przeznaczenia mechanizmu Kolorowanie tekstu Visual Studio SDK środowiska. Aby uzyskać więcej informacji na temat tego mechanizmu, zobacz [przy użyciu czcionki i kolory](../extensibility/using-fonts-and-colors.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Kolorowanie składni w starszej wersji usługi językowej](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   

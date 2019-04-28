@@ -15,12 +15,12 @@ ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cce7d5d8e3bff5a759fa0f63f5bb9524511c9df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d10549867c355018e301afa14cf2ba3a8f113e4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436307"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Identyfikatory GUID i identyfikatory menu programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -180,7 +180,7 @@ W tym temacie wylicza wartości Identyfikator GUID i identyfikator menu i grup n
  Następującej hierarchii zawiera podmenu, które są skojarzone z menu na pasku menu programu Visual Studio. Ponieważ tylko grupa może mieć menu jako klasy nadrzędnej, co podmenu musi jest elementem podrzędnym elementu z grupy menu, zamiast bezpośrednio z menu. Aby uzyskać więcej informacji na temat relacji między menu, grup i podmenu, zobacz [dodawanie podmenu do Menu](../../extensibility/adding-a-submenu-to-a-menu.md).
 
 > [!NOTE]
->  Nazwy menu na pasku menu programu Visual Studio nie są oddzielnie wyświetlane w tej hierarchii, ponieważ ich można wywnioskować na podstawie konwencji nazewnictwa dla grup w IDE, w następujący sposób: IDG_VS_*nazwy Menu*_*nazwę grupy*.
+> Nazwy menu na pasku menu programu Visual Studio nie są oddzielnie wyświetlane w tej hierarchii, ponieważ ich można wywnioskować na podstawie konwencji nazewnictwa dla grup w IDE, w następujący sposób: IDG_VS_*nazwy Menu*_*nazwę grupy*.
 
 |Grupa nadrzędna|Podmenu|Grupy podrzędne|
 |------------------|-------------|------------------|

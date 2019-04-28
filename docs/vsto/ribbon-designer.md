@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8cc47445f9d2024f5d8a83c8f376bc0299b8ea4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61c81cef552c18eab5aa737b3460d539abfbdcfc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446999"
 ---
 # <a name="ribbon-designer"></a>Projektant wstążki
   Projektant wstążki jest wizualną kanwą. Za pomocą projektanta wstążki można dodać niestandardowe karty, grupy i formanty do Wstążki aplikacji pakietu Microsoft Office.
@@ -47,7 +47,7 @@ ms.locfileid: "60103644"
 - [Dodawanie formantów do widoku Backstage](#CustomizingMicrosoftOfficeButton)
 
 > [!NOTE]
->  Istnieją pewne zadania, których nie można wykonać przy użyciu projektanta wstążki. Aby uzyskać więcej informacji na temat tych zadań i jak można je wykonać, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md).
+> Istnieją pewne zadania, których nie można wykonać przy użyciu projektanta wstążki. Aby uzyskać więcej informacji na temat tych zadań i jak można je wykonać, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md).
 
  ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Używać projektanta wstążki w celu dostosowania wstążki w programie Outlook? ](http://go.microsoft.com/fwlink/?LinkID=130312).
 

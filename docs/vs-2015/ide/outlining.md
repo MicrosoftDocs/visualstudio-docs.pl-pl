@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 82b0339bde0ffbfff77165f1626ec83767d45211
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: db33392deb16664e48c3b2d90df883294d5cfbaa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441163"
 ---
 # <a name="outlining"></a>Tworzenie konspektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Można ukryć jakiś kod w widoku, zwijając obszar kodu, aby była ona wyświet
  **Cofnij** i **wykonaj ponownie** polecenia na **Edytuj** menu mają wpływ na te akcje. **Kopiowania**, **Wytnij**, **Wklej**, i operacji przeciągania i upuszczania zachowywanie informacji konspektu, ale nie stan region zwijany. Na przykład podczas kopiowania region, który jest zwinięte, **Wklej** operacji będzie Wklej skopiowany tekst jako rozwinięty region.  
   
 > [!CAUTION]
->  Po zmianie konturu region konspekt mogą zostać utracone. Na przykład usunięcia lub operacji Znajdź i Zamień może wymazać koniec regionu.  
+> Po zmianie konturu region konspekt mogą zostać utracone. Na przykład usunięcia lub operacji Znajdź i Zamień może wymazać koniec regionu.  
   
  Następujące polecenia można znaleźć na **edycji/konspekt** podmenu.  
   

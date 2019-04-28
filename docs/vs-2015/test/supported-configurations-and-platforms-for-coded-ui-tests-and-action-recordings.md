@@ -10,12 +10,12 @@ ms.assetid: 544742b5-4ec1-4d51-b941-72b2f6ff17bc
 caps.latest.revision: 108
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3337aed321d642fac5ef065d78cfd8cb1191c3a8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 880f0096f33bf08d3415b79edfb8445143e18587
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446020"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60109066"
 W poniższej tabeli wymieniono obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkownika programu Visual Studio Enterprise. Te konfiguracje mają zastosowanie również do nagrań działań utworzonych za pomocą [!INCLUDE[MTRlong](../includes/mtrlong-md.md)].  
   
 > [!NOTE]
->  Proces kodowanego testu interfejsu użytkownika musi mieć takie same uprawnienia, jak aplikacja poddawana testom.  
+> Proces kodowanego testu interfejsu użytkownika musi mieć takie same uprawnienia, jak aplikacja poddawana testom.  
   
  **Wymagania**  
   
@@ -39,7 +39,7 @@ W poniższej tabeli wymieniono obsługiwane konfiguracje i platformy dla kodowan
 |.NET|.NET 2.0, 3.0, 3.5, 4 i 4.5. **Uwaga:** [!INCLUDE[TCMext](../includes/tcmext-md.md)] i programu Visual Studio będą wymagać .NET 4 do działania. Jednak aplikacje opracowane za pomocą wymienionych wersji środowiska .NET są obsługiwane.|  
   
 > [!NOTE]
->  *Interfejsu użytkownika Synchronization* jest funkcją, gdzie odtwarzanie jest weryfikowane w kolejce wiadomości każdego formantu. Jeśli formant nie odpowiedział na zdarzenie, które zostało do niego wysłane, zdarzenie jest wysyłane ponownie.  
+> *Interfejsu użytkownika Synchronization* jest funkcją, gdzie odtwarzanie jest weryfikowane w kolejce wiadomości każdego formantu. Jeśli formant nie odpowiedział na zdarzenie, które zostało do niego wysłane, zdarzenie jest wysyłane ponownie.  
   
 ## <a name="platform-support"></a>Obsługa platformy  
   

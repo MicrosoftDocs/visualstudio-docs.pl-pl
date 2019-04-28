@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea3f72a26938a50cddbb622565173be603436ba3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dc0f56331c11c6c33561774d38ef79e286a4133a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445572"
 ---
 # <a name="create-outlook-form-regions"></a>Tworzenie regionów formularzy programu Outlook
   Regiony formularzy służy do dostosowywania formularzy programu Microsoft Office Outlook. Visual Studio zapewnia zaawansowane narzędzia, które ułatwiają służących do projektowania, opracowywania i debugowania regionów formularza.
@@ -90,7 +90,7 @@ ms.locfileid: "60092763"
 - Magazynu formularzy programu Outlook (*OFS*) pliku.
 
     > [!NOTE]
-    >  Ten plik zostanie dodany do projektu tylko, Jeśli importujesz regionu formularza zaprojektowanego w programie Outlook.
+    > Ten plik zostanie dodany do projektu tylko, Jeśli importujesz regionu formularza zaprojektowanego w programie Outlook.
 
 #### <a name="form-region-factory-class"></a>Klasa fabryka regionów formularza
  Plik kodu regionu formularza zawiera częściową klasą, która implementuje <xref:Microsoft.Office.Tools.Outlook.IFormRegionFactory> interfejsu. Jest to klasa fabryka regionów formularza. Klasa fabryka regionów formularza jest odpowiedzialny za tworzenie nowych wystąpień regionu formularza.
@@ -110,7 +110,7 @@ ms.locfileid: "60092763"
  Projektanta regionów formularza ułatwia projektowanie układ i wygląd regionu formularza. Przeciągnij zarządzane formanty do powierzchni projektanta, kliknij dwukrotnie ikonę kontrolki, można otworzyć procedury obsługi zdarzeń i ustawianie właściwości w **właściwości** okna.
 
 > [!NOTE]
->  Można znaleźć właściwości, które wpływają na sposób wyświetlania regionu formularza programu Outlook pod **manifestu** w węźle **właściwości** okna.
+> Można znaleźć właściwości, które wpływają na sposób wyświetlania regionu formularza programu Outlook pod **manifestu** w węźle **właściwości** okna.
 
  Projektanta regionów formularza jest dostępna tylko w przypadku wybrania **projektowania nowy Region formularza** w **wybierz sposób tworzenia regionu formularza** strony **nowy Region formularza programu Outlook** Kreator.
 
@@ -138,7 +138,7 @@ ms.locfileid: "60092763"
  Można zmienić właściwości regionu formularza w `InitializeManifest` metody klasy fabryka regionów formularza.
 
 > [!NOTE]
->  Aby zaimportować regionu formularza, jest możliwe w projektach przeznaczonych tę samą wersję programu Outlook, który jest zainstalowany na komputerze deweloperskim. Na przykład, jeśli masz zainstalowany program Outlook 2010, importowanie formularza region będzie działają tylko w projekcie został utworzony przy użyciu **programu Outlook 2010 dodatków** szablonu projektu.
+> Aby zaimportować regionu formularza, jest możliwe w projektach przeznaczonych tę samą wersję programu Outlook, który jest zainstalowany na komputerze deweloperskim. Na przykład, jeśli masz zainstalowany program Outlook 2010, importowanie formularza region będzie działają tylko w projekcie został utworzony przy użyciu **programu Outlook 2010 dodatków** szablonu projektu.
 
 ### <a name="update-an-imported-form-regions-design"></a>Aktualizowanie projektu z regionu formularza zaimportowany
  Możesz dodać, usunąć ani zmienić formantów na region formularza. Zanim to zrobisz, Utwórz kopię zapasową jakiegokolwiek kodu, który został dodany do pliku kodu regionu formularza. Następnie otwórz *OFS* pliku w programie Outlook, zmodyfikuj regionu formularza, a następnie zapisz zmiany. Użyj **nowy Region formularza programu Outlook** kreatora do zaimportowania zmodyfikowanego *OFS* pliku. Następnie można wkleić kod do nowego pliku kodu regionu formularza.

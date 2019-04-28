@@ -12,12 +12,12 @@ ms.assetid: e4c2ffce-9810-4088-8162-eac9ef04f2a9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e2eec3fd22e41ce7fd49584bb65e2646428646a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0473cf7061cb18dad569910af5214742ba774a87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445781"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54782899"
 Wykonuje krok.  
   
 > [!NOTE]
->  Ta metoda jest przestarzała. Użyj [kroku](../../../extensibility/debugger/reference/idebugprocess3-step.md) metody zamiast tego.  
+> Ta metoda jest przestarzała. Użyj [kroku](../../../extensibility/debugger/reference/idebugprocess3-step.md) metody zamiast tego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -62,7 +62,7 @@ int Step( 
  W przypadku synchronizacji wątków ani komunikacji między wątkami, inne wątki w programie należy uruchomić, gdy przechodzenie krok po kroku określonego wątku.  
   
 > [!WARNING]
->  Nie wysyłaj zdarzeń zatrzymywania lub natychmiastowego zdarzenia (synchroniczne) w celu [zdarzeń](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) podczas obsługi tego wywołania; w przeciwnym razie debuger może się zawiesić.  
+> Nie wysyłaj zdarzeń zatrzymywania lub natychmiastowego zdarzenia (synchroniczne) w celu [zdarzeń](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) podczas obsługi tego wywołania; w przeciwnym razie debuger może się zawiesić.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

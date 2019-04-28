@@ -11,18 +11,18 @@ ms.assetid: abef18c0-8272-4451-b82a-b4624edaba7d
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f74dcee5e72221271e2756af37d3d9284841db5f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b780f2115400fd43e8915a5109c960cab99bf131
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430224"
 ---
 # <a name="implementing-type-visualizers-and-custom-viewers"></a>Implementowanie wizualizatorów typu i przeglądarek niestandardowych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacji dotyczących implementowania ewaluatory wyrażeń CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykładowe ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacji dotyczących implementowania ewaluatory wyrażeń CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykładowe ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Wizualizatorów typu i przeglądarek niestandardowych umożliwia użytkownikowi wyświetlanie danych określonego typu w sposób, który jest bardziej opisowe niż proste zrzut szesnastkowy liczb. Ewaluatora wyrażeń (EE) można skojarzyć przeglądarek niestandardowych za pomocą określonych rodzajów danych lub zmienne. Te przeglądarek niestandardowych są implementowane przez EE. EE może również obsługiwać wizualizatorów typu zewnętrznego, które mogą pochodzić z innego dostawcy lub nawet użytkownika końcowego.  
   

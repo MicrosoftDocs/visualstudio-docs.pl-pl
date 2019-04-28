@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f66613c5f5b8b6e48efda17330f66cdb87a06cf9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909919"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>Kontrola symboli (kontroli źródła pakietu VSPackage)
 Głęboka integracja dostępne dla pakietów VSPackage kontroli źródła jest możliwość wyświetlania własne symbole w celu wskazania stanu elementów pod kontrolą źródła.

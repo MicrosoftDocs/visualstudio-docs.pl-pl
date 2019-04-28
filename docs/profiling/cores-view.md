@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99b26b913a42a563e0226ff2697b947684dfec53
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553061"
 ---
 # <a name="cores-view"></a>Widok rdzeni
 **Widoku rdzeni** pokazuje, jak wykonanie wątku został zamapowany na rdzeni procesora logicznego (wybierz **analizy** > **Concurrency Visualizer** do uruchomienia Narzędzie CONCURRENCY visualizer). Jeśli piszesz aplikacje serwera, ten widok może pomóc w optymalizacji wydajności pamięci podręcznej przy użyciu przystawki Zarządzanie puli wątków koligacji lub wątku. Może również pomóc możesz sprawdzić przypadki, w którym korzystanie z koligacji wątku może mieć pogorszyła problem migracji między różnymi rdzeniami. Widok rdzeni ma dwie części, wykresu i legenda.

@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b7bda175575cf1d48e2f0970bf8202a8041fd16
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1fc518281880923f92caf5c517254dc424b49b5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415277"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2015
 Poniżej przedstawiono sposób uaktualnić Twoje rozszerzenie.
 
 > [!IMPORTANT]
->  Jeśli zamierzasz Obsługa wersji rozwiązania rozszerzenie dla starszej wersji programu Visual Studio, należy koniecznie Utwórz kopię przed przystąpieniem do uaktualniania. Może być trudne do zwrócenia uaktualnionej wersji do jego poprzedniego stanu.
+> Jeśli zamierzasz Obsługa wersji rozwiązania rozszerzenie dla starszej wersji programu Visual Studio, należy koniecznie Utwórz kopię przed przystąpieniem do uaktualniania. Może być trudne do zwrócenia uaktualnionej wersji do jego poprzedniego stanu.
 
 ### <a name="to-upgrade-an-extensibility-solution"></a>Aby uaktualnić to rozwiązanie rozszerzalności
 
@@ -52,4 +52,4 @@ Poniżej przedstawiono sposób uaktualnić Twoje rozszerzenie.
 5. Możesz również przełączyć się do korzystania z narzędzia do kompilacji zestawu SDK w wersji NuGet. Ten pakiet NuGet jest [Microsoft.VSSDK.BuildTools](http://www.nuget.org/packages/Microsoft.VSSDK.BuildTools) i raz dodane do projektu spowoduje zawierają niezbędne narzędzia i pliki, co pozwala tworzyć projekty rozszerzalności na komputerze bez zainstalowany zestaw SDK programu VS docelowe.
 
 > [!NOTE]
->  Nie jest wymagane zaktualizowanie istniejących projektów rozszerzalności do użycia narzędzia i zestawy odwołań NuGet.  Może nadal tworzyć zawartość przy użyciu zestawy referencyjne i narzędzia są zainstalowane przy użyciu zestawu SDK programu VS.
+> Nie jest wymagane zaktualizowanie istniejących projektów rozszerzalności do użycia narzędzia i zestawy odwołań NuGet.  Może nadal tworzyć zawartość przy użyciu zestawy referencyjne i narzędzia są zainstalowane przy użyciu zestawu SDK programu VS.

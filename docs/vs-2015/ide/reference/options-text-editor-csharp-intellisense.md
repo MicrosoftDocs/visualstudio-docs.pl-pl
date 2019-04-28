@@ -19,12 +19,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d1c5638745529a4c9abdf0a27e0c96d486fb9cf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 4e5ca0c60511ee9537041f3a41f44a0e1f55b5a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441363"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opcje, edytor tekstu, C#, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "59669162"
 Użyj **IntelliSense** stronie właściwości, aby zmodyfikować ustawienia, które wpływają na działanie technologii IntelliSense dla języka Visual C#. Możesz uzyskać dostęp **IntelliSense** strony właściwości, klikając **opcje** na **narzędzia** menu, klikając **C#** w **Edytora tekstów** folder, a następnie klikając **IntelliSense.**  
   
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  **IntelliSense** strona właściwości zawiera następujące właściwości:  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8337fa86173b62a6576be6d3abe8d76dbef427d7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 95f863a8b33f6cbff7e592b0a7a45e664494d826
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427247"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Uzyskiwanie dostępu do danych lokalnych i zdalnych w aplikacjach ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Większość aplikacji tworzą lub wykorzystują dane. [!INCLUDE[ndptecclick](..
  Katalog danych jest przeznaczona dla danych zarządzanych aplikacji, które to dane, które aplikacja jawnie zapisuje i przechowuje. Wszystkie statyczne nondependency pliki nie są oznaczone jako "dane" w manifeście aplikacji będzie zamiast tego znajdują się w katalogu aplikacji. Jest to katalog, gdzie znajdują się pliki wykonywalne (.exe) i zestawy aplikacji.  
   
 > [!NOTE]
->  Gdy [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] odinstalowania aplikacji, katalog danych zostaną również usunięte. Nie wolno używać katalogu danych do przechowywania danych, którymi zarządza — end użytkownika, takich jak dokumenty.  
+> Gdy [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] odinstalowania aplikacji, katalog danych zostaną również usunięte. Nie wolno używać katalogu danych do przechowywania danych, którymi zarządza — end użytkownika, takich jak dokumenty.  
   
 #### <a name="marking-data-files-in-a-clickonce-distribution"></a>Oznaczanie plików danych w dystrybucji ClickOnce  
  Aby przełączyć istniejącego pliku w katalogu danych, należy oznaczyć istniejący plik jako plik danych w Twojej [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pliku manifestu aplikacji aplikacji. Aby uzyskać więcej informacji, zobacz [jak: Uwzględnianie pliku danych w aplikacji ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
@@ -52,7 +52,7 @@ Większość aplikacji tworzą lub wykorzystują dane. [!INCLUDE[ndptecclick](..
  Odczytywanie ich z katalogu danych wymaga, aby Twoje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] żądanie aplikacji uprawnienia do odczytu; podobnie zapisu do katalogu wymaga uprawnień do zapisu. Aplikacja będzie automatycznie mają to uprawnienie, jeśli jest skonfigurowany do uruchamiania przy użyciu pełnego zaufania. Aby uzyskać więcej informacji na temat wzrasta uprawnień dla aplikacji przy użyciu zaufanego wdrożenia aplikacji lub podnoszenia poziomu uprawnień, zobacz [zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md).  
   
 > [!NOTE]
->  Jeśli Twoja organizacja nie korzysta z zaufanego wdrożenia aplikacji i została wyłączona podnoszenia poziomu uprawnień, Potwierdzanie uprawnienia zakończy się niepowodzeniem.  
+> Jeśli Twoja organizacja nie korzysta z zaufanego wdrożenia aplikacji i została wyłączona podnoszenia poziomu uprawnień, Potwierdzanie uprawnienia zakończy się niepowodzeniem.  
   
  Po aplikacja ma te uprawnienia, go uzyskać dostęp do katalogu danych za pomocą wywołań metod w klasach w ramach <xref:System.IO>. Możesz uzyskać ścieżkę katalogu danych w formularzach Windows [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikację za pomocą <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> właściwości zdefiniowane w <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> właściwość <xref:System.Deployment.Application.ApplicationDeployment>. Jest to wygodne i najbardziej zalecany sposób uzyskiwać dostęp do danych. Poniższy przykład kodu pokazuje, jak to zrobić w pliku tekstowym o nazwie CSV.txt, który zawarto w danym wdrożeniu, jak plik danych.  
   

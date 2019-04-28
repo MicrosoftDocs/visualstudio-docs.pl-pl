@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 52dd6114d3ec462f91f8bce5e76f73c5487746ed
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58147439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62558219"
 ---
 # <a name="ijsdebugframegetstackrange-method"></a>IJsDebugFrame::GetStackRange — Metoda
 Zwraca bezwzględny zakres adresów dla logicznej ramki stosu JavaScript.  

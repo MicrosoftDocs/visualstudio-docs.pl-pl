@@ -8,12 +8,12 @@ ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2a6d3b302825ca8ba33c9d0c44dbe18929c20ce2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 44b1083a9de4a5fe3e86ae37814f6df85f8c1e56
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435494"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Przewodnik: Tworzenie zestawu SDK przy użyciu języka C# lub Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matem
 8. W **konfiguracji** kolumny, upewnij się, że **SimpleMath** wiersza jest ustawiona na **wersji**, a następnie wybierz **Zamknij** przycisk, aby zaakceptować Zmiana.  
   
     > [!IMPORTANT]
-    >  Zestaw SDK dla składnika SimpleMath zawiera tylko jedną konfigurację. Ta konfiguracja musi być kompilacji wydania lub aplikacje, które używają składnika nie przekaże certyfikacji[!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].  
+    > Zestaw SDK dla składnika SimpleMath zawiera tylko jedną konfigurację. Ta konfiguracja musi być kompilacji wydania lub aplikacje, które używają składnika nie przekaże certyfikacji[!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].  
   
 9. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **SimpleMath** węzła projektu, a następnie wybierz **kompilacji**.  
   

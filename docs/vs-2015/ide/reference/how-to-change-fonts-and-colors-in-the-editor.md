@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7d57643661edec90f12a54a2482b59d83bbb3c8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fd4e61960616245d459140e351386ae7b55adc22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441715"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Instrukcje: Zmiana czcionek i kolorów w edytorze
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Zmień krój czcionki domyślnej, Dostosuj rozmiar czcionki i zmienić kolory pi
 - **Pierwszy plan elementu**, **tła elementu**, i **Bold** opcje można ustawić dla każdego typu elementu tekstu. Na przykład, jeśli zmiana kolorów i wybierz **Bold** dla **komentarz** i **zakładki**, inne rodzaje elementów tekstowych będzie to miało wpływu.  
   
 > [!NOTE]
->  Polecenia menu, zostanie wyświetlony i okien dialogowych mogą różnić się od tych opisanych w **pomocy** w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Polecenia menu, zostanie wyświetlony i okien dialogowych mogą różnić się od tych opisanych w **pomocy** w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-change-the-default-font-face-size-and-colors"></a>Aby zmienić domyślne krój czcionki, rozmiaru i kolory  
   
@@ -49,7 +49,7 @@ Zmień krój czcionki domyślnej, Dostosuj rozmiar czcionki i zmienić kolory pi
 4. Wybierz odpowiedni element w **wyświetlania elementów**, a następnie zmodyfikuj **pierwszy plan elementu** i **tła elementu** opcje.  
   
     > [!TIP]
-    >  Kliknij przycisk **Użyj ustawień domyślnych** Aby przywrócić ustawienia domyślne.  
+    > Kliknij przycisk **Użyj ustawień domyślnych** Aby przywrócić ustawienia domyślne.  
   
 5. Kliknij przycisk **OK**.  
   

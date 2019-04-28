@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 44a267b39ab630646803165a31f01b0bb4b45f47
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62865813"
 ---
 # <a name="ipropertyproxyprovidergetpropertyproxy"></a>IPropertyProxyProvider::GetPropertyProxy
 Pobiera właściwość interfejsu serwera proxy dla identyfikatora określonego serwera proxy.

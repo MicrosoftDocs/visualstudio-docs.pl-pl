@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bf1eb0001ca7c8b87fa44b5ea861df9d9fcba84d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f1e780a67ee419a8cae661570802e5d85081f1fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445809"
 ---
 # <a name="register-extensions-of-the-net-framework"></a>Rejestrowanie rozszerzeń środowiska .NET Framework
 Można opracować zestaw, który rozszerza określonej wersji programu .NET Framework. Aby włączyć zestawu są wyświetlane w programie Visual Studio **Add References** okno dialogowe, należy dodać folder, który zawiera go do rejestru systemowego.
@@ -27,7 +27,7 @@ Można opracować zestaw, który rozszerza określonej wersji programu .NET Fram
  Przy użyciu tego klucza, należy zarejestrować tego folderu: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\**. Należy podać klucz to wartość domyślna: **C:\TreyResearch\Extensions4**.
 
 > [!NOTE]
->  Numer kompilacji programu .NET Framework w wersji może się różnić.
+> Numer kompilacji programu .NET Framework w wersji może się różnić.
 
  Aby zarejestrować zestaw 32-bitowego na komputerze 64-bitowym, za pomocą węzła Wow6432, na przykład: **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\**.
 

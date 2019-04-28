@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e44e8166fb4f03f28d96203dc7efc09d3913224c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: daa4eba0949262e0bfbfa67c9b0ab3ee814558e4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440842"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Tworzenie niestandardowych widoków obiektów macierzystych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Struktura Natvis usługi Visual Studio pozwala dostosować sposób, w programie 
  Zastępuje Natvis **autoexp.dat —** pliku, który został użyty we wcześniejszych wersjach programu Visual Studio i oferuje składni XML lepszą diagnostykę, przechowywanie wersji i obsługę wielu plików.  
 
 > [!NOTE]
->  Nie można użyć struktury Natvis do wizualizacji po:  
+> Nie można użyć struktury Natvis do wizualizacji po:  
 > 
 > - Debugowania projektu pulpitu Windows C++ o typie debugera **mieszane**.  
 >   - Robią w aplikacji pulpitu Windows w trybie zgodności zarządzanego debugowania w trybie mieszanym (**narzędzia / Opcje / Debugowanie / ogólne / Użyj trybu zgodności zarządzanej**).  
@@ -304,7 +304,7 @@ Struktura Natvis usługi Visual Studio pozwala dostosować sposób, w programie 
  W `DisplayString` wyrażenie `x` i `y`, które są członkami `CPoint`, są umieszczone w nawiasach klamrowych i dlatego ich wartości są obliczane. Wyrażenie pokazuje również, jak można udosłownić nawias klamrowy za pomocą podwójnego nawiasu klamrowego ( `{{` lub `}}` ).  
 
 > [!NOTE]
->  `DisplayString` Element jest jedynym elementem, który akceptuje dowolne ciągi i składnię nawiasu klamrowego. Wszystkie inne elementy wizualizacji akceptują tylko wyrażenia, które są sprawdzane przez debugera.  
+> `DisplayString` Element jest jedynym elementem, który akceptuje dowolne ciągi i składnię nawiasu klamrowego. Wszystkie inne elementy wizualizacji akceptują tylko wyrażenia, które są sprawdzane przez debugera.  
 
 ### <a name="BKMK_StringView"></a> StringView  
  `StringView` Element definiuje wyrażenie, którego wartość ma być wysyłane do wbudowanego wizualizatora tekstu. Załóżmy, że mamy następującą wizualizację dla `ATL::CStringT` typu:  
@@ -336,7 +336,7 @@ Struktura Natvis usługi Visual Studio pozwala dostosować sposób, w programie 
  ![CStringT danych za pomocą wizualizatora StringView](../debugger/media/dbg-natvis-stringview-cstringt.png "DBG_NATVIS_StringView_CStringT")  
 
 > [!NOTE]
->  Należy pamiętać, że wyrażenie `{m_pszData,su}` specyfikator formatu języka C++ `su` Aby wyświetlić wartość jako ciąg Unicode. Zobacz [specyfikatory formatu w C++](../debugger/format-specifiers-in-cpp.md) Aby uzyskać więcej informacji.  
+> Należy pamiętać, że wyrażenie `{m_pszData,su}` specyfikator formatu języka C++ `su` Aby wyświetlić wartość jako ciąg Unicode. Zobacz [specyfikatory formatu w C++](../debugger/format-specifiers-in-cpp.md) Aby uzyskać więcej informacji.  
 
 ### <a name="BKMK_Expand"></a> Rozwiń węzeł  
  `Expand` Węzeł służy do dostosowywania elementów podrzędnych typu zwizualizowanego, gdy użytkownik rozwija go w oknach zmiennych. Przyjmuje listę węzłów podrzędnych, które definiują elementy podrzędne.  
@@ -368,7 +368,7 @@ Struktura Natvis usługi Visual Studio pozwala dostosować sposób, w programie 
  Wyrażenia określone w `Width` i `Height` elementy są obliczane i wyświetlane w kolumnie wartości. `[Raw View]` Węzła jest automatycznie tworzona przez debuger zawsze wtedy, gdy jest używane rozszerzenie niestandardowe. Jest on rozwinięty na zrzucie ekranu powyżej, aby pokazać, jak surowy widok tego obiektu jest inny niż jego wizualizacja. Domyślne rozszerzenie programu Visual Studio tworzy poddrzewo klasy podstawowej i wyświetla listę wszystkich elementów członkowskich danych klasy podstawowej jako elementy podrzędne.  
 
 > [!NOTE]
->  Jeśli wyrażenie elementu wskazuje typ złożony, `Item` sam węzeł jest rozwijany.  
+> Jeśli wyrażenie elementu wskazuje typ złożony, `Item` sam węzeł jest rozwijany.  
 
 #### <a name="BKMK_ArrayItems_expansion"></a> Rozszerzenie elementów arrayitems  
  Użyj `ArrayItems` węzeł, aby debuger programu Visual Studio interpretował typ jako tablicę i wyświetlał jego poszczególne elementy. Wizualizacja dla `std::vector` jest dobrym przykładem:  

@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39cdb98f14823b02c8d4d2b60575eddca6da0420
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 927451ed35ce4bbdfbff7531b2828b0571354f34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445369"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Formanty Windows Forms na przegląd dokumentów pakietu Office
   Kontrolek formularzy Windows Forms są obiekty, które użytkownicy mogą wchodzić w interakcje z wprowadzać ani wykonywać operacje na danych. W projektach na poziomie dokumentu dla programu Microsoft Office Excel i Microsoft Office Word dodaniem kontrolek formularzy Windows Forms do dokumentów lub skoroszytu w projekcie w czasie projektowania lub można programowo dodać tych formantów w czasie wykonywania. Programowe można dodać te formanty do dowolnego otwartego dokumentu lub arkusza w czasie wykonywania w dodatku narzędzi VSTO dla programu Excel lub Word.
@@ -109,7 +109,7 @@ W formularzu Windows.
 - **Wprowadź odstępy w pionie**
 
 > [!NOTE]
->  W projektach programu Word przyciski te są włączone tylko wtedy, gdy wybrane formanty nie są zgodne z tekstu. Formanty, które dodają do dokumentu w czasie projektowania są domyślnie tworzone są tekstu.
+> W projektach programu Word przyciski te są włączone tylko wtedy, gdy wybrane formanty nie są zgodne z tekstu. Formanty, które dodają do dokumentu w czasie projektowania są domyślnie tworzone są tekstu.
 
 ### <a name="prevent-old-data-from-appearing-in-excel-workbooks-during-loading"></a>Uniemożliwić stare dane w skoroszytach programu Excel podczas ładowania
  Po dodaniu kontrolek formularzy Windows Forms do dokumentów lub arkuszy w czasie projektowania formanty pozostają w dokumencie po użytkownik zamyka dokument. Dodane w czasie projektowania formanty są również nazywane *formantów statycznych*.

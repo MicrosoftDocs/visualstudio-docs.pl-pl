@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2d14077ff7547a1b8009ce6621c111174c582a5c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 55ef0a3528afca626c0a1cbf5c10735c9e83fcb4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443865"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,14 +137,14 @@ Visual Studio zapewnia narzędzia do pracy za pomocą programu Windows Communica
     ```
 
     > [!NOTE]
-    >  Zastąp *ServiceReference* z przestrzenią nazw dla odwołania do usługi i Zastąp *Service1Client* przy użyciu nazwy usługi.
+    > Zastąp *ServiceReference* z przestrzenią nazw dla odwołania do usługi i Zastąp *Service1Client* przy użyciu nazwy usługi.
 
 3. Zostanie wyświetlona lista IntelliSense za pomocą przeciążenia konstruktora. Wybierz `endpointConfigurationName As String` przeciążenia.
 
 4. Następujące przeciążenia, wpisz `=` *ConfigurationName*, gdzie *ConfigurationName* to nazwa punktu końcowego, który chcesz użyć.
 
     > [!NOTE]
-    >  Jeśli nie znasz nazwy dostępnych punktów końcowych, można je znaleźć w pliku app.config.
+    > Jeśli nie znasz nazwy dostępnych punktów końcowych, można je znaleźć w pliku app.config.
 
 #### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>Aby znaleźć dostępne punkty końcowe dla usługi WCF
 
@@ -164,7 +164,7 @@ Visual Studio zapewnia narzędzia do pracy za pomocą programu Windows Communica
  Domyślnie gdy odwołanie do usługi zostanie dodany do projektu go jest skonfigurowany do wywołania metod synchronicznie. Można zmienić to zachowanie asynchroniczne wywoływanie metod, zmieniając ustawienia w **Konfiguruj odwołanie do usługi** okno dialogowe.
 
 > [!NOTE]
->  Ta opcja jest ustawiona na podstawie za daną usługę. Jeśli jedna metoda usługi nosi nazwę asynchronicznej, wszystkie metody musi zostać wywołana asynchronicznie.
+> Ta opcja jest ustawiona na podstawie za daną usługę. Jeśli jedna metoda usługi nosi nazwę asynchronicznej, wszystkie metody musi zostać wywołana asynchronicznie.
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 

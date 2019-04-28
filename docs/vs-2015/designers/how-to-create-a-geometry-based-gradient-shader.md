@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8735931e761f7d511615b5be7e93e0198a6b1a45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eda8424aeb28231df0ae0355931989bec13a89b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436178"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Instrukcje: Tworzenie cieniowania gradientu geometrycznego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ W tym dokumencie przedstawiono sposób umożliwia tworzenie cieniowania gradient
    Poniższej ilustracji ukończone programu do cieniowania programu graph i wersję zapoznawczą programu do cieniowania zastosowane do kuli.  
   
 > [!NOTE]
->  Na tej ilustracji określono koloru pomarańczowego, aby lepiej pokazują wpływ programu do cieniowania, ale ponieważ kształtu (wersja zapoznawcza) nie ma żadnych pozycji w przestrzeni świata, programu do cieniowania nie pełni podglądu w projektancie programu do cieniowania. W rzeczywistych sceny w celu wykazania pełnego wpływu, można wyświetlić podglądu modułu cieniującego.  
+> Na tej ilustracji określono koloru pomarańczowego, aby lepiej pokazują wpływ programu do cieniowania, ale ponieważ kształtu (wersja zapoznawcza) nie ma żadnych pozycji w przestrzeni świata, programu do cieniowania nie pełni podglądu w projektancie programu do cieniowania. W rzeczywistych sceny w celu wykazania pełnego wpływu, można wyświetlić podglądu modułu cieniującego.  
   
  ![Wykres modułu cieniującego i podgląd efektów jej](../designers/media/digit-gradient-effect-graph.png "cyfry-gradientu — efekt-Graph")  
   

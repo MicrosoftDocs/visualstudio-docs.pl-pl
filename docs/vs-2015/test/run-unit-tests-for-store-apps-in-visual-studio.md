@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 309dbfcac8e5c4c38e65f8901c699dc2fa51c7a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bfcdb3906f405b9f7ba4650be13f4522ab559ee8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446223"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Uruchamianie testów jednostkowych dla aplikacji Store w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60104183"
 W tym temacie opisano sposób uruchamiania testów jednostkowych za pomocą Eksploratora testów w programie Microsoft Visual Studio
 
 > [!NOTE]
->  W tematach w tej sekcji opisano funkcje programu Visual Studio Express for Windows 8. Visual Studio Community, Professional i Enterprise zapewniają dodatkowe funkcje testów jednostkowych.
+> W tematach w tej sekcji opisano funkcje programu Visual Studio Express for Windows 8. Visual Studio Community, Professional i Enterprise zapewniają dodatkowe funkcje testów jednostkowych.
 >
 > - Użyj dowolnego środowiska testów jednostkowych innych firm lub otwartego źródła został utworzony karty dodatku dla programu Microsoft Test Explorer. Można również analizować i wyświetlanie informacji o pokryciu kodu dla swoich testów.
 >   - Uruchom testy po każdej kompilacji. Można również użyć Microsoft Fakes framework izolacji dla kodu zarządzanego skoncentrować się testy na własny kod, zastępując kod testu systemu i innych firm funkcjonalność.
@@ -118,7 +118,7 @@ W tym temacie opisano sposób uruchamiania testów jednostkowych za pomocą Eksp
 1. W edytorze programu Visual Studio Ustaw punkt przerwania w metodach testów, które chcesz debugować.
 
    > [!NOTE]
-   >  Ponieważ metody testowe można uruchomić w dowolnej kolejności, ustaw punkty przerwania w wszystkich metodach testowych, które chcesz debugować.
+   > Ponieważ metody testowe można uruchomić w dowolnej kolejności, ustaw punkty przerwania w wszystkich metodach testowych, które chcesz debugować.
 
 2. W Eksploratorze testów Wybierz metody badania, a następnie wybierz **Debuguj wybrane testy** w menu skrótów.
 

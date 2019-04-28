@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7161d8115f8cc99f830293cdf5f957a2264f5a0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8d7d4524f1839179ac253265d95f191caf1c50af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445675"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Instrukcje: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ Możesz użyć **Menadżer odwołań** okno dialogowe, aby dodać i zarządzać 
 - Dodawanie odwołań do pliku do danych wyjściowych innego projektu w tym samym rozwiązaniu, należy unikać, ponieważ w ten sposób może spowodować błędy kompilacji. Zamiast tego należy użyć **projektów** karcie **Dodaj odwołanie** okno dialogowe, aby utworzyć odwołania projekt projekt. Ułatwia to Projektowanie zespołowe poprzez umożliwienie lepszego zarządzania bibliotekami klas, utworzone w projekcie. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z odwołaniami uszkodzone](../ide/troubleshooting-broken-references.md).  
   
 - > [!NOTE]
-    >  W programie Visual Studio 2015 odwołanie pliku zamiast odwołania projektu jest tworzony, jeśli wersji docelowej programu .NET Framework jednego projektu jest wersja 4.5 i wersję docelową innego projektu jest w wersji 2, 3, 3.5 lub 4.0.  
+    > W programie Visual Studio 2015 odwołanie pliku zamiast odwołania projektu jest tworzony, jeśli wersji docelowej programu .NET Framework jednego projektu jest wersja 4.5 i wersję docelową innego projektu jest w wersji 2, 3, 3.5 lub 4.0.  
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>Aby wyświetlić zestaw w oknie dialogowym Dodawanie odwołania  
   
@@ -181,7 +181,7 @@ Możesz użyć **Menadżer odwołań** okno dialogowe, aby dodać i zarządzać 
  Zestaw SDK jest zbiorem plików, który program Visual Studio traktuje jako samodzielny składnik. Na karcie rozszerzenia, SDK, które są stosowane do projektu, z których **Menadżer odwołań** zostało wywołane okno dialogowe są wymienione jako pojedyncze wpisy. Po dodaniu do projektu, cała zawartość zestawu SDK jest wykorzystywana przez program Visual Studio, aby użytkownik nie musiał podejmować dalszych działań, aby wykorzystać zawartość zestawu SDK w technologii IntelliSense, przyborniku, projektantach, przeglądarce obiektów, kompilacji, wdrażaniu, debugowaniu i pakowaniu. Aby uzyskać informacje o wyświetlaniu SDK na karcie rozszerzenia, zobacz [tworzenia Software Development Kit](../extensibility/creating-a-software-development-kit.md).  
   
 > [!NOTE]
->  Jeśli projekt odwołuje się do zestawu SDK, który zależy od innego zestawu SDK, Visual Studio nie wykorzystuje drugiego zestawu SDK, chyba że użytkownik ręcznie doda odwołanie do drugiego zestawu SDK. Gdy użytkownik wybierze SDK na **rozszerzenia** karcie **Menadżer odwołań** okno dialogowe pomaga użytkownikowi określić zależności zestawu SDK przez wymienienie nie tylko nazwę i wersję zestawu SDK, ale także nazwy wszelkich zestawu SDK zależności w okienku szczegółów. Jeśli użytkownik nie zauważy zależności i doda tylko zestaw SDK, program MSBuild będzie monitował użytkownika, aby dodać zależności.  
+> Jeśli projekt odwołuje się do zestawu SDK, który zależy od innego zestawu SDK, Visual Studio nie wykorzystuje drugiego zestawu SDK, chyba że użytkownik ręcznie doda odwołanie do drugiego zestawu SDK. Gdy użytkownik wybierze SDK na **rozszerzenia** karcie **Menadżer odwołań** okno dialogowe pomaga użytkownikowi określić zależności zestawu SDK przez wymienienie nie tylko nazwę i wersję zestawu SDK, ale także nazwy wszelkich zestawu SDK zależności w okienku szczegółów. Jeśli użytkownik nie zauważy zależności i doda tylko zestaw SDK, program MSBuild będzie monitował użytkownika, aby dodać zależności.  
   
  Jeśli typ projektu nie obsługuje **rozszerzenia**, karta nie pojawi się w **Menadżer odwołań** okno dialogowe.  
   
@@ -207,7 +207,7 @@ Możesz użyć **Menadżer odwołań** okno dialogowe, aby dodać i zarządzać 
     ```  
   
     > [!NOTE]
-    >  Jeśli dodasz właściwość, kompilacja może być wolniejsza.  
+    > Jeśli dodasz właściwość, kompilacja może być wolniejsza.  
   
 ## <a name="recent"></a>Ostatnie  
  Każda z kart Zestawy, COM, Windows i Przeglądaj obsługuje kartę Najnowsze, która wylicza listę składników ostatnio dodanych do projektów.  

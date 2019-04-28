@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a8c5c2f7afd885e295e9c9f462f5effe016fc5e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: adad85955805aa9349a3655ec9b817e17fd3c712
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430756"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Krok 3. Przypisanie losowej ikony do każdej etykiety
 Jeśli ikony w każdej grze są wyświetlane w tych samych komórkach, gra nie należy do szczególnie trudnych. Aby tego uniknąć, przypisz ikony losowo do formantów etykiet w formularzu za pomocą `AssignIconsToSquares()` metody.
@@ -33,7 +33,7 @@ Jeśli ikony w każdej grze są wyświetlane w tych samych komórkach, gra nie n
      [!code-vb[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_2.vb)]
 
     > [!NOTE]
-    >  Używane są nazwy „iconLabel” (etykieta ikony) i „control” (formant), ponieważ są opisowe. Można zamiast nich użyć innych nazw, a kod zadziała dokładnie tak samo, o ile zmieni się nazwę w każdej instrukcji wewnątrz pętli.
+    > Używane są nazwy „iconLabel” (etykieta ikony) i „control” (formant), ponieważ są opisowe. Można zamiast nich użyć innych nazw, a kod zadziała dokładnie tak samo, o ile zmieni się nazwę w każdej instrukcji wewnątrz pętli.
 
      `AssignIconsToSquares()` Metoda iteruje przez każdy formant etykiety w TableLayoutPanel i wykonuje te same instrukcje dla każdego z nich. Te instrukcje pobierają losową ikonę z listy, dodanej w [krok 2: Dodawanie obiektu Random i listy ikon](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). (Dlatego dołączono dwie z każdej ikony na liście, aby istniała para ikon przypisanych do losowych formantów etykiet.)
 
@@ -67,7 +67,7 @@ Jeśli ikony w każdej grze są wyświetlane w tych samych komórkach, gra nie n
      Ikony są teraz widoczne, ponieważ nie zostały ukryte. Aby ukryć je przed graczem, możesz ustawić każdej etykiety **ForeColor** właściwość sam kolor jak kolor jego **BackColor** właściwości.
 
     > [!TIP]
-    >  Innym sposobem na ukrycie formantów, takich jak etykiety, jest ustalenie ich **Visible** właściwości **False**.
+    > Innym sposobem na ukrycie formantów, takich jak etykiety, jest ustalenie ich **Visible** właściwości **False**.
 
 6. Aby ukryć ikony, należy zatrzymać program i usunąć znaki komentarza dla zakomentowanego wiersza kodu wewnątrz `For Each` pętli.
 

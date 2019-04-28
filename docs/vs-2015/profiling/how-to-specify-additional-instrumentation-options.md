@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2440f31b6a6ac345644e20e14b4a82972967fab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d4bc6eeb208ab6d80168431f110f0f6169abbc82
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442134"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>Instrukcje: Określanie dodatkowych opcji Instrumentacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Możliwe jest instrumentowanie plików binarnych z [!INCLUDE[vs_current_short](.
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!IMPORTANT]
->  Każdy sondowania, który jest wstawiany modyfikuje zachowanie oryginalnej programu nieco. Ta modyfikacja spowoduje, że obciążenie w czasie analizy. Mimo że przybliżeniem to obciążenie jest odejmowany, nadal ma skutki subtelne chronometrażu dla aplikacji wielowątkowych. [VSInstr](../profiling/vsinstr.md) narzędzie Pomoc opcji sterowanie zbieraniem danych podczas profilowania.  
+> Każdy sondowania, który jest wstawiany modyfikuje zachowanie oryginalnej programu nieco. Ta modyfikacja spowoduje, że obciążenie w czasie analizy. Mimo że przybliżeniem to obciążenie jest odejmowany, nadal ma skutki subtelne chronometrażu dla aplikacji wielowątkowych. [VSInstr](../profiling/vsinstr.md) narzędzie Pomoc opcji sterowanie zbieraniem danych podczas profilowania.  
   
 ### <a name="to-specify-additional-instrumentation-option"></a>Aby określić opcję dodatkowe Instrumentacji  
   

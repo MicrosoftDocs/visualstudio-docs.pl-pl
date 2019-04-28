@@ -20,12 +20,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 10b4efd574dd5829e4717b168dc4e565476e9b52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4a6909bade36dce15bfae725fbaab60f24236451
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436996"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Łączenie z danymi w bazie danych programu Access (formularze Windows)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Bazy danych programu Access (plik mdf lub pliku accdb) można nawiązać za pomo
      ![Zmień dostawcą danych OLE DB](../data-tools/media/datachangedatasourceoledb.png "dataChangeDataSourceOLEDB")  
   
     > [!IMPORTANT]
-    >  Mimo, że źródło danych **plik bazy danych programu Microsoft Access (OLE DB)** może wydawać się właściwym wyborem, użyj tego typu źródła danych tylko dla plików bazy danych .mdb.  
+    > Mimo, że źródło danych **plik bazy danych programu Microsoft Access (OLE DB)** może wydawać się właściwym wyborem, użyj tego typu źródła danych tylko dla plików bazy danych .mdb.  
   
 8. W **dostawcy OLE DB**, wybierz opcję **Office 12.0 Access bazy danych aparatu dostawcy Microsoft OLE DB**.  
   
@@ -70,7 +70,7 @@ Bazy danych programu Access (plik mdf lub pliku accdb) można nawiązać za pomo
 9. W **nazwę serwera lub pliku**, określ ścieżkę i nazwę pliku accdb, z którą chcesz połączyć, a następnie wybierz **OK**.  
   
     > [!NOTE]
-    >  Jeśli plik bazy danych ma nazwę użytkownika i hasło, podaj je przed wybraniem **OK**.  
+    > Jeśli plik bazy danych ma nazwę użytkownika i hasło, podaj je przed wybraniem **OK**.  
   
 10. Wybierz **dalej** na **wybierz połączenie danych** strony.  
   

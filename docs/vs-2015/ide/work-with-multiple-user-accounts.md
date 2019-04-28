@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4f53d723ca9249386027264038df6c5895b7d03
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a60a44a20c06c24645583db4e16ce60cef166554
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441648"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Jeśli masz wiele kont Microsoft i/lub konta służbowego lub szkolnego, można 
 2. Kliknij prawym przyciskiem myszy węzeł projektu w Eksploratorze rozwiązań i wybierz polecenie **Dodaj > usługi połączonej**. Dodaj podłączoną usługę kreatora pojawia się i zostanie wyświetlony identyfikator listy usług na koncie platformy Azure, który jest skojarzony z identyfikatora logowania programu Visual Studio. Należy pamiętać, że nie trzeba osobno logowanie do platformy Azure. Jednakże należy zalogować się do innych kont spróbujesz uzyskać dostęp do zasobów z danego komputera po raz pierwszy.  
   
     > [!WARNING]
-    >  Jeśli po raz pierwszy tworzysz Store app w programie Visual Studio 2015 na określonym komputerze, zostanie wyświetlony monit Włącz urządzenie w trybie projektowania, przechodząc do **ustawienia &#124; . Aktualizacje i zabezpieczenia &#124; dla deweloperów** na tym komputerze. Aby uzyskać więcej informacji, zobacz [Włącz swoje urządzenie do tworzenia](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).  
+    > Jeśli po raz pierwszy tworzysz Store app w programie Visual Studio 2015 na określonym komputerze, zostanie wyświetlony monit Włącz urządzenie w trybie projektowania, przechodząc do **ustawienia &#124; . Aktualizacje i zabezpieczenia &#124; dla deweloperów** na tym komputerze. Aby uzyskać więcej informacji, zobacz [Włącz swoje urządzenie do tworzenia](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).  
   
 ### <a name="access_azure"></a> Dostęp do usługi Azure Active Directory w projekcie sieci Web  
  Usługa Azure AD umożliwia obsługę użytkownika końcowego logowania jednokrotnego w aplikacjach sieci web platformy ASP.NET MVC lub uwierzytelniania AD w usługach interfejsu API sieci Web. Uwierzytelnianie domeny różni się od uwierzytelniania konta użytkownika; Użytkownicy, którzy mają dostęp do domeny usługi Active Directory można użyć istniejących kont usługi Azure AD, połączyć się z aplikacji sieci web. Aplikacje usługi Office 365 można również użyć uwierzytelniania przez domenę. Aby to zobaczyć w działaniu, tworzenie aplikacji sieci web (**pliku > Nowy Projekt > C# > chmura > Aplikacja sieci Web ASP.NET**). W oknie dialogowym Nowy projekt ASP.NET wybierz **Zmień uwierzytelnianie**. Kreatora uwierzytelniania pojawia się i pozwala wybrać rodzaj uwierzytelniania do użycia w aplikacji.  

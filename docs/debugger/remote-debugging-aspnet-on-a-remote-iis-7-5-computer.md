@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: ba255d1d1e906e8fe7bacd05d1f4afd4b7bf413b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407843"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Zdalne debugowanie platformy ASP.NET na komputerze zdalnym usług IIS
 Do debugowania aplikacji ASP.NET, która została wdrożona w usługach IIS, zainstalować i uruchomić narzędzia zdalne na komputerze, w której została wdrożona aplikacja, a następnie dołącz do uruchomionej aplikacji w programie Visual Studio.

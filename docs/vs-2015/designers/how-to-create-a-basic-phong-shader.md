@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78ff2ecf77d3d8943601b8bd0779fa37811ec2d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7153c02f5cd3d494edb56b218512ba5de87f318a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438419"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Instrukcje: Tworzenie podstawowego modułu cieniowanie Phong
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ W tym dokumencie przedstawiono sposób umożliwia tworzenie oświetlenia modułu
    Poniższej ilustracji ukończone programu do cieniowania programu graph i wersję zapoznawczą programu do cieniowania, zastosowano do modelu czajniczek.  
   
 > [!NOTE]
->  Aby lepiej zaprezentować efekt programu cieniującego na tej ilustracji, została określona za pomocą koloru pomarańczowego **MaterialDiffuse** parametr programu do cieniowania i wyszukiwanie metal zakończenia została określona za pomocą **MaterialSpecular** i **MaterialSpecularPower** parametrów. Informacje o parametrach materiału sekcja Podgląd cieniowania w [Shader Designer](../designers/shader-designer.md).  
+> Aby lepiej zaprezentować efekt programu cieniującego na tej ilustracji, została określona za pomocą koloru pomarańczowego **MaterialDiffuse** parametr programu do cieniowania i wyszukiwanie metal zakończenia została określona za pomocą **MaterialSpecular** i **MaterialSpecularPower** parametrów. Informacje o parametrach materiału sekcja Podgląd cieniowania w [Shader Designer](../designers/shader-designer.md).  
   
  ![Wykres modułu cieniującego i podgląd efektów jej](../designers/media/digit-lighting-graph.png "cyfry-oświetlenia-Graph")  
   
@@ -62,9 +62,9 @@ W tym dokumencie przedstawiono sposób umożliwia tworzenie oświetlenia modułu
  Poniższa ilustracja przedstawia programu do cieniowania, który jest opisany w tym dokumencie zastosowano do modelu 3-D. **MaterialSpecular** właściwość jest ustawiona na (1,00 0,50, 0.20 lub nowszej, 0,00), a jego **MaterialSpecularPower** właściwość jest ustawiona na 16.  
   
 > [!NOTE]
->  **MaterialSpecular** właściwość określa jawnego zakończenia materiału powierzchni. Powierzchni połysku wysokiej, takich jak szkło lub plastiku zwykle odblasków kolor, który jest jasny cień bieli. Powierzchnia metalowych zwykle mają kolor odblasku, który znajduje się w pobliżu jej kolor rozpraszania. Powierzchnia satynowa Zakończ zwykle mają kolor odblasku ciemny odcień szarości.  
+> **MaterialSpecular** właściwość określa jawnego zakończenia materiału powierzchni. Powierzchni połysku wysokiej, takich jak szkło lub plastiku zwykle odblasków kolor, który jest jasny cień bieli. Powierzchnia metalowych zwykle mają kolor odblasku, który znajduje się w pobliżu jej kolor rozpraszania. Powierzchnia satynowa Zakończ zwykle mają kolor odblasku ciemny odcień szarości.  
 >   
->  **MaterialSpecularPower** właściwość określa, jak intensywne są światłem odbitym. Wysoka uprawnień odblasków symulować bardziej matowe, zlokalizowany więcej wyróżnia. Bardzo niskie uprawnień odblasków symulować intensywne, polegających na usuwaniu najważniejsze funkcje, które oversaturate i Ukryj kolor całej powierzchni.  
+> **MaterialSpecularPower** właściwość określa, jak intensywne są światłem odbitym. Wysoka uprawnień odblasków symulować bardziej matowe, zlokalizowany więcej wyróżnia. Bardzo niskie uprawnień odblasków symulować intensywne, polegających na usuwaniu najważniejsze funkcje, które oversaturate i Ukryj kolor całej powierzchni.  
   
  ![Oświetlenie Phong zastosowano do modelu](../designers/media/digit-lighting-model.png "cyfrę oświetlenia modelu")  
   

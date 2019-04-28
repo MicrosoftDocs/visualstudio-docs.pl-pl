@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c270ff9a31073835d8f907547cf0f532e237b1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7d74b731bd1857330c40a7929d84efe40a03201
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431248"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Instrukcje: Dodawanie jednostki do modelu
   Aby utworzyć jednostki, należy dodać kontrolkę typu jednostki z programu Visual Studio **przybornika** do projektanta łączności danych biznesowych (BDC).
@@ -40,7 +40,7 @@ ms.locfileid: "60089461"
      Nowy identyfikator pojawia się w jednostce.
 
     > [!NOTE]
-    >  Możesz zmienić nazwę jednostki i identyfikatora w **właściwości** okna.
+    > Możesz zmienić nazwę jednostki i identyfikatora w **właściwości** okna.
 
 4. Definiowanie pól jednostki w klasie. Możesz dodać nową klasę do projektu lub użyj istniejącej klasy utworzone przy użyciu innych narzędzi, takich jak Object Relational Designer (O/R Designer). Poniższy przykład przedstawia klasę jednostki o nazwie kontaktu.
 

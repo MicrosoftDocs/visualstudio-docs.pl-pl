@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 49dde1739b5c595c9327a208e383e6de03300415
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6dfa54e09baa3cec238eb892599a8e1bd5910e17
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430637"
 ---
 # <a name="idiasymbolgetaddressoffset"></a>IDiaSymbol::get_addressOffset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_addressOffset ( 
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
+> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="remarks"></a>Uwagi  
  Dla statycznych elementów członkowskich znajdujących się w zewnętrznej bibliotece DLL przesunięcie zwracanego przez tę metodę może mieć wartość 0, ponieważ ta metoda zależy od tego, uzyskiwanie adresu wirtualnego elementu członkowskiego. Wirtualne adresy są prawidłowe tylko wtedy, gdy [idiasession::put_loadaddress —](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) method in Class metoda [idiasession —](../../debugger/debug-interface-access/idiasession.md) interfejsu została wywołana z parametrem wartość różną od zera, określając adres obciążenia biblioteki dll.  

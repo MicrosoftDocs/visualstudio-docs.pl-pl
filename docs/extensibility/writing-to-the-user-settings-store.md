@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ea782140405b55a6c5a90b01fb466586f66cc38
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5741b286af454493f543b2c39c894341c87df1b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444911"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Zapisywanie w magazynie ustawień użytkownika
 Ustawienia użytkownika są zapisywalne ustawień, jak w powyższym **narzędzia / Opcje** okna dialogowego Właściwości systemu windows i niektórych innych oknach dialogowych. Rozszerzenia programu Visual Studio może użyć do przechowywania niewielkich ilości danych. W tym instruktażu przedstawiono sposób dodawania Notatnik w programie Visual Studio jako narzędzie zewnętrzne za odczytywanie z oraz zapisywanie w magazynie ustawień użytkownika.
@@ -27,7 +27,7 @@ Ustawienia użytkownika są zapisywalne ustawień, jak w powyższym **narzędzia
 3. Przejdź do pozycji narzędzia HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.
 
     > [!NOTE]
-    >  Upewnij się, że przeglądasz klucz, który zawiera \14.0Exp\ i nie \14.0\\. Po uruchomieniu doświadczalnym wystąpieniu programu Visual Studio, ustawień użytkownika znajdują się w gałęzi rejestru "14.0Exp".
+    > Upewnij się, że przeglądasz klucz, który zawiera \14.0Exp\ i nie \14.0\\. Po uruchomieniu doświadczalnym wystąpieniu programu Visual Studio, ustawień użytkownika znajdują się w gałęzi rejestru "14.0Exp".
 
 4. Kliknij prawym przyciskiem myszy podklucz \External Tools\, a następnie kliknij przycisk **wyeksportować**. Upewnij się, że **wybrana gałąź** jest zaznaczone.
 

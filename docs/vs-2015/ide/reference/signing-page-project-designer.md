@@ -20,12 +20,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 01bfaf5ee9143a3122f779ab8292210b90da771f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: dd4043b34cc809af92fc5bbd1c44e322261096e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437993"
 ---
 # <a name="signing-page-project-designer"></a>Strona podpisywania, Projektant projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ Użyj **podpisywanie** strony **projektanta projektu** do podpisywania manifest�
  Należy zauważyć, że opóźnienie podpisanego projektu nie będzie działać i nie można debugować. Można jednak użyć [Sn.exe (narzędzie silnych nazw)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) z `-Vr` opcję pomijania weryfikacji podczas programowania.  
   
 > [!NOTE]
->  Po podpisaniu zestawu nie zawsze masz dostęp do klucza prywatnego. Na przykład organizacja może być ściśle chronionej parę kluczy, deweloperzy nie mają dostępu do codziennie. Klucz publiczny mogą być dostępne, ale dostęp do klucza prywatnego jest ograniczony do kilku osób. W takim przypadku można użyć *opóźnione* lub *częściowe podpisywanie* można podać klucz publiczny, opóźnienie dodanie klucza prywatnego, dopóki nie jest przekazywane zestawu.  
+> Po podpisaniu zestawu nie zawsze masz dostęp do klucza prywatnego. Na przykład organizacja może być ściśle chronionej parę kluczy, deweloperzy nie mają dostępu do codziennie. Klucz publiczny mogą być dostępne, ale dostęp do klucza prywatnego jest ograniczony do kilku osób. W takim przypadku można użyć *opóźnione* lub *częściowe podpisywanie* można podać klucz publiczny, opóźnienie dodanie klucza prywatnego, dopóki nie jest przekazywane zestawu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do właściwości projektu](../../ide/reference/project-properties-reference.md)   

@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ded3910e74120433038132eb0135a869ea92d58d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a5f60338a8a856b4c6ef8fa913d6d7168ff67bb9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427038"
 ---
 # <a name="get-uml-model-elements-from-idataobject"></a>Pobieranie elementów modelu UML z elementu IDataObject
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54755101"
 Gdy użytkownik przeciągnie elementy z dowolnego źródła na diagramie, przeciągane elementy zostaną zakodowane w `System.Windows.Forms.IDataObject`. Kodowanie jest zależne od typu obiektu źródłowego. Poniższy fragment przedstawia sposób pobierania elementów, gdy źródłem jest UML diagram.  
   
 > [!NOTE]
->  Większość operacji, które należy wykonać na modelach UML można wykonać przy użyciu typów w zdefiniowanych zestawach **Microsoft.VisualStudio.Uml.Interfaces** i  **Microsoft.VisualStudio.ArchitectureTools.Extensibility**. Ale w tym celu należy użyć niektórych klas, które są częścią implementacji narzędzia do modelowania UML. Na przykład `ShapeElement` w tym fragmencie nie jest taki sam jak UML `IShape`. Aby zmniejszyć ryzyko wprowadzenia modelu UML i diagramów w niespójnym stanie, są lepiej unikać stosowania metod na tych klasach implementacji, poza przypadkami, gdy nie ma żadnej alternatywy.  
+> Większość operacji, które należy wykonać na modelach UML można wykonać przy użyciu typów w zdefiniowanych zestawach **Microsoft.VisualStudio.Uml.Interfaces** i  **Microsoft.VisualStudio.ArchitectureTools.Extensibility**. Ale w tym celu należy użyć niektórych klas, które są częścią implementacji narzędzia do modelowania UML. Na przykład `ShapeElement` w tym fragmencie nie jest taki sam jak UML `IShape`. Aby zmniejszyć ryzyko wprowadzenia modelu UML i diagramów w niespójnym stanie, są lepiej unikać stosowania metod na tych klasach implementacji, poza przypadkami, gdy nie ma żadnej alternatywy.  
   
 ## <a name="code-sample"></a>Przykładowy kod  
  Projekt musi odwoływać się do następujących [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] zestawów:  

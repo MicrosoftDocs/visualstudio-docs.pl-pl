@@ -11,12 +11,12 @@ ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
 caps.latest.revision: 53
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cc12854574f21c1d75f57bae592d6a504db9b189
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9099bc79a555f908ddda12dc9da83f015791fd86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444837"
 ---
 # <a name="adding-a-tool-window"></a>Dodawanie okna narzędzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ W tym przewodniku dowiesz się, jak tworzyć okna narzędzi i zintegrować ją z
 1. Utwórz projekt o nazwie **FirstToolWin** przy użyciu szablonu VSIX, a następnie dodaj niestandardowe narzędzie szablon elementu okno o nazwie **FirstToolWindow**.  
   
     > [!NOTE]
-    >  Aby uzyskać więcej informacji na temat tworzenia rozszerzenia za pomocą okna narzędzi, zobacz [Tworzenie rozszerzenia za pomocą okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).  
+    > Aby uzyskać więcej informacji na temat tworzenia rozszerzenia za pomocą okna narzędzi, zobacz [Tworzenie rozszerzenia za pomocą okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="add-a-control-to-the-tool-window"></a>Dodawanie formantu do okna narzędzi  
   
@@ -264,7 +264,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
      Pierwszy parametr o danej nazwie jest `Style` i jego wartość wynosi `Tabbed`, co oznacza, że okno będzie na karcie w istniejącym oknie. Pozycję dokowania jest określona przez `Window` parametr, n-tym przypadku identyfikator GUID **Eksploratora rozwiązań**.  
   
     > [!NOTE]
-    >  Aby uzyskać więcej informacji na temat typów okna w IDE, zobacz <xref:EnvDTE.vsWindowType>.  
+    > Aby uzyskać więcej informacji na temat typów okna w IDE, zobacz <xref:EnvDTE.vsWindowType>.  
   
 ## <a name="testing-the-tool-window"></a>Testowanie okna narzędzi  
   

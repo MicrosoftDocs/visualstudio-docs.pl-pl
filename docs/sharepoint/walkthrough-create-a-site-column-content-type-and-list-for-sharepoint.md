@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f2c79787317c3d759322e5bd7f7beed4a43892a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e39ea4041ab9806c7ca857680af5c5c04510eba9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430698"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Przewodnik: Tworzenie kolumny witryny, typu zawartości oraz list dla SharePoint
   Poniższe procedury przedstawiają sposób tworzenia kolumn niestandardowych witryny programu SharePoint — lub *pola*— a także typu zawartości, która korzysta z kolumny witryny. Pokazano również, jak utworzyć listę, która korzysta z nowego typu zawartości.
@@ -112,7 +112,7 @@ ms.locfileid: "60057735"
 6. Po typie zawartości pojawi się okno projektanta, w **kolumn** kartę, Dodaj trzy lokacji kolumn, które zostały wcześniej zdefiniowane: **Nazwa pacjentów**, **pacjentów identyfikator**, i **nazwa lekarzem**. Aby dodać te kolumny, wybierz na pierwszej liście, na liście kolumn witryn, w obszarze **nazwę wyświetlaną**, a następnie wybierz na liście jedną każdej kolumny witryny w danym momencie.
 
     > [!TIP]
-    >  Aby wybrać kolumny witryny szybciej, filtrować listę, wprowadzając kilka pierwszych liter nazwy kolumny.
+    > Aby wybrać kolumny witryny szybciej, filtrować listę, wprowadzając kilka pierwszych liter nazwy kolumny.
 
 7. Oprócz trzy kolumny niestandardowej witryny, należy dodać **komentarze** kolumny witryny, listy kolumny witryny.
 
@@ -164,7 +164,7 @@ ms.locfileid: "60057735"
      Kolumny listy niestandardowej ma zastosowanie tylko do tej listy. Po dodaniu niestandardowej listy kolumnę do listy nowy typ zawartości listy, w tym wszystkie kolumny, które są dodawane do listy, jest tworzone i Ustaw jako domyślną listę.
 
     > [!TIP]
-    >  Jeśli wybierzesz kolumny na liście kolumn witryn, istniejącą kolumnę witryny jest używany. Jednak jeśli zostanie wprowadzona wartość nazwy kolumny bez wybierania żadnej kolumny na liście, kolumna Niestandardowa lista zostanie utworzony, nawet jeśli kolumna o takiej samej nazwie już istnieje na liście.
+    > Jeśli wybierzesz kolumny na liście kolumn witryn, istniejącą kolumnę witryny jest używany. Jednak jeśli zostanie wprowadzona wartość nazwy kolumny bez wybierania żadnej kolumny na liście, kolumna Niestandardowa lista zostanie utworzony, nawet jeśli kolumna o takiej samej nazwie już istnieje na liście.
 
      Opcjonalnie zamiast ustawienie typu danych kolumny niestandardowej listy, aby **pojedynczy wiersz tekstu**, zamiast tego można ustawić typ danych dla tej kolumny do wyszukiwania i jego wartości będzie można pobrać z tabelą ani innej listy. Dla informacji o kolumnach wyszukiwania, zobacz [relacji listy w programie SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=224994) i [wyszukiwań i relacje listy](http://go.microsoft.com/fwlink/?LinkID=224995).
 

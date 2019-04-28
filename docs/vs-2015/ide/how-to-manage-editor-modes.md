@@ -25,12 +25,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 193afeddd553dfda54de568c92b4697e3f1a2a93
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7db5f2869c1118a04f1aa734e5067ece4b268833
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430529"
 ---
 # <a name="how-to-manage-editor-modes"></a>Instrukcje: Zarządzanie trybami edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60095545"
 Edytor kodu programu Visual Studio można wyświetlić w różnych trybów wyświetlania.  
   
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="enabling-full-screen-mode"></a>Włączenie trybu pełnego ekranu  
  Można wybrać ukryć wszystkie okna narzędzi i wyświetlić tylko okna dokumentu, należy włączyć **pełny ekran** trybu.  
@@ -63,7 +63,7 @@ Edytor kodu programu Visual Studio można wyświetlić w różnych trybów wyśw
 3. Wybierz **ogólne** opcje, a następnie w obszarze **ustawienia**, wybierz opcję **włączyć wirtualną przestrzenią**.  
   
     > [!NOTE]
-    >  **Wirtualna przestrzeń** jest włączone w **wybór kolumn** trybu. Gdy **wirtualną przestrzenią** nie jest włączony tryb punkt wstawiania przenoszony z końca jeden wiersz bezpośrednio do pierwszego znaku w następnym.  
+    > **Wirtualna przestrzeń** jest włączone w **wybór kolumn** trybu. Gdy **wirtualną przestrzenią** nie jest włączony tryb punkt wstawiania przenoszony z końca jeden wiersz bezpośrednio do pierwszego znaku w następnym.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dopasowywanie edytora](../ide/customizing-the-editor.md)   

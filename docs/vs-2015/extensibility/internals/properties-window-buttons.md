@@ -10,12 +10,12 @@ ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a18d82ecc0d5bbffa8fb0eb4799910f32a10784a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b66015ef2e2ab0c8105b6f84486fa890adbf8b1f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438394"
 ---
 # <a name="properties-window-buttons"></a>Przyciski okna właściwości
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ W zależności od języka programowania i typ produktu, domyślnie na pasku narz
  **Stron właściwości** przycisk jest niedostępny, jeśli `ISpecifyPropertyPages` nie został zaimplementowany dla wybranego obiektu. Strony właściwości wyświetlania właściwości zależne od konfiguracji, które są zwykle skojarzone z rozwiązaniami i projektami, ale mogą być również być skojarzone z elementami projektu (na przykład w programie Visual C++).  
   
 > [!NOTE]
->  Nie można dodać przyciski paska narzędzi na **właściwości** oknie za pomocą kodu niezarządzanego. Aby dodać przycisk paska narzędzi, należy utworzyć obiektu zarządzanego, która pochodzi od klasy <xref:System.Windows.Forms.Design.PropertyTab>.  
+> Nie można dodać przyciski paska narzędzi na **właściwości** oknie za pomocą kodu niezarządzanego. Aby dodać przycisk paska narzędzi, należy utworzyć obiektu zarządzanego, która pochodzi od klasy <xref:System.Windows.Forms.Design.PropertyTab>.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzanie właściwości](../../extensibility/internals/extending-properties.md)

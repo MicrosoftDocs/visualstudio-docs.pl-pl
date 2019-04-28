@@ -24,12 +24,12 @@ caps.latest.revision: 91
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b9744cf6d3ff8be30d06ffa877f96940fd20a24
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffb29ee31390c512802bfd16c7b94333d0c6c403
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433431"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Przeglądanie i rozmieszczanie map kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,7 +103,7 @@ Zmień kolejność elementów na mapach kodu, aby ułatwić ich do odczytywania 
 - Łącza zagregowanego reprezentuje wszystkie relacje, które wskazują, w tym samym kierunku, między dwiema grupami.  
   
 > [!TIP]
->  Domyślnie mapy zawiera łącza grupy współzależności tylko dla wybranych węzłów. Aby zmienić to zachowanie, aby pokazać lub ukryć agregowanych łącz między grupami, kliknij przycisk **układ** na kodzie mapy paska narzędzi i wybierz polecenie **zaawansowane**, następnie **Pokaż wszystkie łącza grupy współzależności** lub **Ukryj wszystkie łącza grupy współzależności**. Zobacz [ukrywanie lub pokazywanie węzłów i łączy](#HidingShowing) Aby uzyskać więcej informacji.  
+> Domyślnie mapy zawiera łącza grupy współzależności tylko dla wybranych węzłów. Aby zmienić to zachowanie, aby pokazać lub ukryć agregowanych łącz między grupami, kliknij przycisk **układ** na kodzie mapy paska narzędzi i wybierz polecenie **zaawansowane**, następnie **Pokaż wszystkie łącza grupy współzależności** lub **Ukryj wszystkie łącza grupy współzależności**. Zobacz [ukrywanie lub pokazywanie węzłów i łączy](#HidingShowing) Aby uzyskać więcej informacji.  
   
 |**To**|**Wykonaj następujące kroki**|  
 |------------|-----------------------------|  
@@ -118,7 +118,7 @@ Zmień kolejność elementów na mapach kodu, aby ułatwić ich do odczytywania 
  Ukrywanie węzłów wyklucza je z udziału w układzie algorytmów. Domyślnie łącza między grupami są ukryte. Łącza grupy współzależności są poszczególnymi łączami połączenia między grupami węzłów. Jeśli grupy są zwinięte, mapy agreguje wszystkie łącza grupy współzależności do pojedynczego łącza między grupami. Gdyby rozwinąć grupę i wybrać węzły wewnątrz grupy, łącza grupy współzależności pojawiają się i pokażą zależności w tej grupie.  
   
 > [!CAUTION]
->  Przed udostępnieniem map, który został utworzony w programie Visual Studio Enterprise z tymi, którzy korzystają z programu Visual Studio Professional, upewnij się odkryć wszystkie węzły lub łącza grupy współzależności, które powinni widzieć inni użytkownicy. W przeciwnym razie użytkownicy nie mogą odkryć tych elementów.  
+> Przed udostępnieniem map, który został utworzony w programie Visual Studio Enterprise z tymi, którzy korzystają z programu Visual Studio Professional, upewnij się odkryć wszystkie węzły lub łącza grupy współzależności, które powinni widzieć inni użytkownicy. W przeciwnym razie użytkownicy nie mogą odkryć tych elementów.  
   
 ### <a name="to-hide-or-show-nodes"></a>Aby ukryć lub pokazać węzły  
   
@@ -153,7 +153,7 @@ Zmień kolejność elementów na mapach kodu, aby ułatwić ich do odczytywania 
  Można wyświetlić więcej lub mniej elementów na mapie, aby przejść do szczegółów lub do uproszczenia mapy. Można również zmienić nazwy elementów i dodawanie komentarzy do elementów.  
   
 > [!CAUTION]
->  Przed udostępnieniem mapy, który został utworzony przy użyciu programu Visual Studio Enterprise użytkownikom korzystającym z programu Visual Professional, upewnij się, że wszystkie elementy kodu, które powinni widzieć inni użytkownicy są widoczne na mapie. W przeciwnym razie użytkownicy ci nie będzie można pobrać elementów usuniętych kodu.  
+> Przed udostępnieniem mapy, który został utworzony przy użyciu programu Visual Studio Enterprise użytkownikom korzystającym z programu Visual Professional, upewnij się, że wszystkie elementy kodu, które powinni widzieć inni użytkownicy są widoczne na mapie. W przeciwnym razie użytkownicy ci nie będzie można pobrać elementów usuniętych kodu.  
   
 ### <a name="add-a-node-for-a-code-element"></a>Dodaj węzeł dla elementu kodu  
   
@@ -267,7 +267,7 @@ Zmień kolejność elementów na mapach kodu, aby ułatwić ich do odczytywania 
 3. Jeżeli lista nie zawiera kategorii lub właściwości, wybierz **+** w **legendy** polu, a następnie wybierz **właściwość węzła**, **kategoria węzła** , **Właściwość łącza**, lub **Link kategorii**. Wybierz właściwość lub kategorię. Kategoria lub właściwość pojawi się w **legendy** pole.  
   
     > [!NOTE]
-    >  Aby utworzyć i przypisać kategorię lub właściwość do elementu kodu, należy edytować plik .dgml mapy; zobacz [mapy Dostosuj kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+    > Aby utworzyć i przypisać kategorię lub właściwość do elementu kodu, należy edytować plik .dgml mapy; zobacz [mapy Dostosuj kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
 4. W **legendy** pole, kliknij ikonę obok kategorii lub właściwości, które dodano lub chcesz zmienić.  
   
@@ -290,7 +290,7 @@ Zmień kolejność elementów na mapach kodu, aby ułatwić ich do odczytywania 
     |Określony kolor lub ikonę|Otwórz listę wartości kategorii lub właściwości. Wybierz kolor lub ikonę.|  
   
     > [!NOTE]
-    >  Można ponownie rozmieścić, usunąć lub tymczasowo dezaktywować style w **legendy** pole. Zobacz [Edytuj pole legendy](#ModifyLegend).  
+    > Można ponownie rozmieścić, usunąć lub tymczasowo dezaktywować style w **legendy** pole. Zobacz [Edytuj pole legendy](#ModifyLegend).  
   
 ## <a name="ModifyLegend"></a> Edytuj pole legendy  
  Można ponownie rozmieścić, usunąć lub tymczasowo dezaktywować style w **legendy** pola:  

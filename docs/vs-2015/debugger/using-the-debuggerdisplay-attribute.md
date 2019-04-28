@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 729639c99747ce7f7358ad3c4b0b6374bd64d010
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 04a941ae7aab30825c66ac5d3d81ac12d4b7c7db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437741"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Korzystanie z atrybutu DebuggerDisplay
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "54789204"
  Czy tym niejawne ocenia debuger `ToString()` wywołanie zależy od ustawień użytkownika w **narzędzia / Opcje / Debugowanie** okno dialogowe. Visual Basic nie implementuje tym niejawne `ToString()` oceny.  
   
 > [!IMPORTANT]
->  Jeśli **pokazywanie nieprzetworzonej struktury obiektów w oknach zmiennych** zaznaczono pole wyboru w **narzędzia/Opcje / Debugowanie** okno dialogowe, a następnie `DebuggerDisplay` atrybut jest ignorowany.  
+> Jeśli **pokazywanie nieprzetworzonej struktury obiektów w oknach zmiennych** zaznaczono pole wyboru w **narzędzia/Opcje / Debugowanie** okno dialogowe, a następnie `DebuggerDisplay` atrybut jest ignorowany.  
   
  W poniższej tabeli przedstawiono niektóre możliwości wykorzystania `DebuggerDisplay` atrybutu i przykładowe dane wyjściowe.  
   

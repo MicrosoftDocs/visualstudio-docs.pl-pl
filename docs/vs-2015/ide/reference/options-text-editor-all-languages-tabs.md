@@ -21,12 +21,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4d94aa2f9445104ab6d645d057e68186e917d12
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 42fb2e9e91698c276e2b14b3acff9068581a1e9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432055"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Opcje, edytor tekstu, wszystkie języki, karty
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,12 +34,12 @@ ms.locfileid: "59658243"
 To okno dialogowe pozwala zmienić domyślne zachowanie edytora kodu. Te ustawienia mają zastosowanie również do innych edytorów oparte na kod edytora, takiego jak widok źródła w Projektancie HTML. Aby wyświetlić te opcje, wybierz **opcje** z **narzędzia** menu. W ramach **edytora tekstów** rozwiń folder **wszystkie języki** podfolder, a następnie wybierz **karty**.  
   
 > [!CAUTION]
->  Ta strona ustawia domyślne opcje dla wszystkich języków programowania. Należy pamiętać, że zresetowanie opcji, w tym oknie dialogowym przywróci Opcje kart we wszystkich językach niezależnie od opcji wybranych są w tym miejscu. Aby zmienić opcje edytora tekstowego dla tylko jednego języka, rozwiń podfolder dla danego języka, a następnie wybierz jego stron opcji.  
+> Ta strona ustawia domyślne opcje dla wszystkich języków programowania. Należy pamiętać, że zresetowanie opcji, w tym oknie dialogowym przywróci Opcje kart we wszystkich językach niezależnie od opcji wybranych są w tym miejscu. Aby zmienić opcje edytora tekstowego dla tylko jednego języka, rozwiń podfolder dla danego języka, a następnie wybierz jego stron opcji.  
   
  W przypadku różnych ustawień na stronach opcji karty dla określonych języków programowania, a następnie komunikat "Ustawienia wcięć dla pojedynczych tekstu formatów będących w konflikcie ze sobą" jest wyświetlana dla różniących się **Indenting**opcje; i wyświetlany jest komunikat "Ustawienia tabulacji dla pojedynczych tekstu formatów będących w konflikcie ze sobą," dla różniących się **kartę** opcje. Na przykład tego monitu jest wyświetlana, jeśli **inteligentnego wcięcia** opcja jest zaznaczona dla języka Visual Basic, ale **Block wcięcia** został wybrany do Visual C++.  
   
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="indenting"></a>Wcięcia  
  Brak  

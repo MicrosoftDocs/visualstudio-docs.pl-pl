@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d61814c9d47ea5c8b42e8a0b2f72a3797b6ec291
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c67dfa80ec7b194f7014f77de1cdd589bf7130e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58897767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446343"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji Node.js i React w programie Visual Studio
 
@@ -376,8 +376,10 @@ W poprzedniej sekcji debuger jest dołączony do kodu w języku Node.js po stron
     Spowoduje to uruchomienie przeglądarki Chrome z włączonym debugowaniem.
 
     ::: moniker range=">=vs-2019"
+
     > [!NOTE]
     > Można również ustawić `--remote-debugging-port` flagę podczas uruchamiania przeglądarki, wybierając **przeglądanie za pomocą...**  > z **debugowania** narzędzi, wybierając **Dodaj**, a następnie ustawienie flagi **argumenty** pola. Użyj innej nazwy przyjazne przeglądarki, takich jak **dla programu Chrome przy użyciu debugowania**. Aby uzyskać więcej informacji, zobacz [wersji](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+
     ::: moniker-end
 
 3. Przełącz się do programu Visual Studio i ustaw punkt przerwania *bundle.js aplikacji* możesz pisać kod w `render()` funkcji, jak pokazano na poniższej ilustracji:

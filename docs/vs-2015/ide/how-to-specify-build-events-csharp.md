@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae43b6b1cdc5a3c94e6eb14d0aaa398c320c6274
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f77a6b9b655cc7dfbf0639a81d7d350b904ce82a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435224"
 ---
 # <a name="how-to-specify-build-events-c"></a>Instrukcje: Określanie zdarzeń kompilacji (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,17 +44,17 @@ Korzystanie ze zdarzeń kompilacji określić polecenia, które są uruchamiane 
 4. W **wiersz polecenia zdarzenia sprzed kompilacji** Określ składnia zdarzenia kompilacji.  
   
     > [!NOTE]
-    >  Jeśli projekt jest aktualny, a nie kompilacja zostaje wyzwolona, nie należy uruchamiać zdarzenia prekompilacyjnego.  
+    > Jeśli projekt jest aktualny, a nie kompilacja zostaje wyzwolona, nie należy uruchamiać zdarzenia prekompilacyjnego.  
   
 5. W **wiersz polecenia zdarzenia po kompilacji** Określ składnia zdarzenia kompilacji.  
   
     > [!NOTE]
-    >  Dodaj `call` instrukcję przed polecenia wszystkich wykonywanych po kompilacji, które uruchamiają pliki bat. Na przykład `call C:\MyFile.bat` lub `call C:\MyFile.bat call C:\MyFile2.bat`.  
+    > Dodaj `call` instrukcję przed polecenia wszystkich wykonywanych po kompilacji, które uruchamiają pliki bat. Na przykład `call C:\MyFile.bat` lub `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
 6. W **Uruchom zdarzenie po kompilacji** należy określić, na jakich warunkach, aby uruchomić zdarzenie mające miejsce po kompilacji.  
   
     > [!NOTE]
-    >  Aby dodać długiej składni lub wybrać dowolne makra z kompilacji [prekompilacji zdarzeń/po kompilacji — zdarzenie wiersza polecenia okno dialogowe](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), kliknij przycisk oznaczony wielokropkiem (**...** ) do wyświetlenia w polu edycji.  
+    > Aby dodać długiej składni lub wybrać dowolne makra z kompilacji [prekompilacji zdarzeń/po kompilacji — zdarzenie wiersza polecenia okno dialogowe](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), kliknij przycisk oznaczony wielokropkiem (**...** ) do wyświetlenia w polu edycji.  
   
      Składnia zdarzenia kompilacji mogą zawierać dowolne polecenie, które jest prawidłowa, w wierszu polecenia lub w pliku .bat. Nazwa pliku wsadowego powinien być poprzedzony `call` aby upewnić się, że wszystkie kolejne polecenia są wykonywane.  
   

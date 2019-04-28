@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0b98fa4b3182db71567d61569cddf4cfae33ec1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d95708f940bfb12f67903f41d9f030a77877008d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442608"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Krok 3. Dodawanie czasomierza odliczającego w dół
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60094826"
 W trzeciej części tego samouczka dodasz licznik czasu, aby śledzić liczbę sekund, które pozostają uczestnikowi quizu do zakończenia.  
   
 > [!NOTE]
->  Ten temat jest częścią serii samouczków na temat podstawowych pojęć kodowania. Aby uzyskać omówienie samouczka, zobacz [samouczek 2: Utwórz Quiz matematyczny](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+> Ten temat jest częścią serii samouczków na temat podstawowych pojęć kodowania. Aby uzyskać omówienie samouczka, zobacz [samouczek 2: Utwórz Quiz matematyczny](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-add-a-countdown-timer"></a>Aby dodać minutnik  
   
@@ -57,7 +57,7 @@ W trzeciej części tego samouczka dodasz licznik czasu, aby śledzić liczbę s
      Właśnie dodałeś `if else` instrukcję, która wskazuje, jak sprawdzić programy do podejmowania decyzji. `if else` Instrukcji wygląda podobnie do następującej.  
   
     > [!NOTE]
-    >  Poniższy przykład jest wyłącznie do celów informacyjnych – nie dodawaj go do projektu.  
+    > Poniższy przykład jest wyłącznie do celów informacyjnych – nie dodawaj go do projektu.  
   
     ```vb  
     If (something that your program will check) Then  

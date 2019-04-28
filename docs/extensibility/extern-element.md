@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1d62d52d490994889f7e9186fb74ea148cb52a06
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911898"
 ---
 # <a name="extern-element"></a>Extern, element
 Extern, element odwołuje się do dowolnego nagłówka zewnętrznego (*.h*) pliki do scalania z *vsct* plik w czasie kompilacji. Pliki do scalenia muszą znajdować się w ścieżce Include podane do kompilatora VSCT lub jest przywoływany przez [Include element](../extensibility/include-element.md). Pliki mogą być inne *vsct* pliki lub pliki nagłówkowe C++.

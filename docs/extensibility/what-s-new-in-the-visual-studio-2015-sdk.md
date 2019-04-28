@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a67b2e1d9cbbad4a9b3426d264e6fecf8623e5a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4d0136c1e2f27e3053733b32d536e86684f62c39
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444933"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Co&#39;s nowego w programie Visual Studio 2015 SDK
 Visual Studio SDK ma następujące nowe i zaktualizowane funkcje programu Visual Studio 2015, Visual Studio 2015, aktualizowane i programu Visual Studio 2017.
@@ -57,9 +57,9 @@ Visual Studio SDK ma następujące nowe i zaktualizowane funkcje programu Visual
  Szablony elementów zestawu SDK NuGet na użytek odniesień do nich i narzędzia kompilacji, dzięki czemu uzyskujesz zalety NuGet domyślnie.
 
 > [!NOTE]
->  Można kontynuować używania zestawów referencyjnych zainstalowany zestaw SDK w PORÓWNANIU z projektami (znajdujący się w \<Visual Studio lokalizacja instalacji > \ VSSDK\VisualStudioIntegration\Common\Assemblies) i nie trzeba być istniejące projekty rozszerzalności uaktualniony do korzystania z pakietów NuGet.  Projekt **odwołuje się / Dodaj odwołanie** okna dialogowego w dalszym ciągu używać zestawów odwołań zainstalowany zestaw SDK programu VS.
+> Można kontynuować używania zestawów referencyjnych zainstalowany zestaw SDK w PORÓWNANIU z projektami (znajdujący się w \<Visual Studio lokalizacja instalacji > \ VSSDK\VisualStudioIntegration\Common\Assemblies) i nie trzeba być istniejące projekty rozszerzalności uaktualniony do korzystania z pakietów NuGet.  Projekt **odwołuje się / Dodaj odwołanie** okna dialogowego w dalszym ciągu używać zestawów odwołań zainstalowany zestaw SDK programu VS.
 >
->  Jeśli chcesz zmodyfikować istniejących projektów można użyć NuGet, zobacz [jak: Migrowanie pakietów VSPackage do programu Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) mającego sekcję na temat aktualizowania rozszerzalności projektów do pakietów NuGet.
+> Jeśli chcesz zmodyfikować istniejących projektów można użyć NuGet, zobacz [jak: Migrowanie pakietów VSPackage do programu Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) mającego sekcję na temat aktualizowania rozszerzalności projektów do pakietów NuGet.
 
 ## <a name="light-bulbs"></a>Żarówki
  Jedną z najbardziej atrakcyjnych nowych sposobów pisania kodu rozszerzenia jest zapewniana przez projekt Roslyn. Aby uzyskać więcej informacji, zobacz [Roslyn](https://github.com/dotnet/Roslyn).

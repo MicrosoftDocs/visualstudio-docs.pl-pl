@@ -14,12 +14,12 @@ ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 16a4fca95380ad00338b2708f48f13f105a86da0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3296613ffbe3148caa04989dfc9d609334b4c200
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435992"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Pomocnicy zestawu SDK do debugowania
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54764586"
 Te funkcje i deklaracji są funkcje pomocnicze globalnego dotyczące implementowania silniki debugowania, ewaluatory wyrażeń i dostawców symboli w języku C++.  
   
 > [!NOTE]
->  W tej chwili istnieje nie zarządzanych wersje tych funkcji i deklaracji.  
+> W tej chwili istnieje nie zarządzanych wersje tych funkcji i deklaracji.  
   
 ## <a name="overview"></a>Omówienie  
  Aby silniki debugowania, ewaluatory wyrażeń i dostawców symbol ma być używany przez program Visual Studio musi zostać zarejestrowany. Jest to realizowane przez ustawienie podklucze i wpisy, znanych także jako "ustawienie metryki". Następujące funkcje globalne są przeznaczone do jej obsługi ułatwiają realizację procesu aktualizacji tych metryk. Zobacz sekcję dotyczącą lokalizacji rejestru, aby dowiedzieć się, układ każdej podklucza rejestru, która jest aktualizowana przez te funkcje.  
@@ -239,7 +239,7 @@ HRESULT EnumMetricSections(
  Metryki są odczytywane i zapisywane w rejestrze, w szczególności w `VisualStudio` podklucza.  
   
 > [!NOTE]
->  W większości przypadków, metryki będą zapisywane w kluczu HKEY_LOCAL_MACHINE. Jednak czasami HKEY_CURRENT_USER będzie klucz miejsca docelowego. Dbgmetric.lib obsługuje oba klucze. Podczas pobierania metrykę, przeszukuje HKEY_CURRENT_USER pierwszy, a następnie HKEY_LOCAL_MACHINE. Podczas metrykę, parametr określa, które klucz najwyższego poziomu do użycia.  
+> W większości przypadków, metryki będą zapisywane w kluczu HKEY_LOCAL_MACHINE. Jednak czasami HKEY_CURRENT_USER będzie klucz miejsca docelowego. Dbgmetric.lib obsługuje oba klucze. Podczas pobierania metrykę, przeszukuje HKEY_CURRENT_USER pierwszy, a następnie HKEY_LOCAL_MACHINE. Podczas metrykę, parametr określa, które klucz najwyższego poziomu do użycia.  
   
  *[klucz rejestru]*\  
   
@@ -271,7 +271,7 @@ HRESULT EnumMetricSections(
 |*[wartość metryki]*|Wartość przypisana do metrykę. Metryka zależy od typu wartości powinny mieć (ciąg, liczba itp.).|  
   
 > [!NOTE]
->  Wszystkie identyfikatory GUID są przechowywane w formacie `{GUID}`. Na przykład `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
+> Wszystkie identyfikatory GUID są przechowywane w formacie `{GUID}`. Na przykład `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
   
 ### <a name="debug-engines"></a>Aparaty debugowania  
  Poniżej znajduje się organizacja metryki aparaty debugowania w rejestrze. `Engine` jest to nazwa typu metryki dla aparatu debugowania i odpowiada *[type metryki]* w zainstalowanym poddrzewie rejestru powyżej.  
@@ -350,7 +350,7 @@ HRESULT EnumMetricSections(
  Poniżej znajduje się organizacja metryki ewaluatora wyrażeń w rejestrze. `ExpressionEvaluator` jest to nazwa typu metryki dla Ewaluator wyrażeń i odpowiada *[type metryki]*.  
   
 > [!NOTE]
->  Typ metryki `ExpressionEvaluator` nie jest zdefiniowany w dbgmetric.h, ponieważ zakłada się, że wszystkie zmiany metryki dla ewaluatory wyrażeń zostanie wysłany za pomocą funkcji metryki ewaluatora wyrażeń odpowiednie (układ `ExpressionEvaluator` podklucz jest nieco skomplikowane, dzięki czemu szczegółowe informacje są ukryte wewnątrz dbgmetric.lib).  
+> Typ metryki `ExpressionEvaluator` nie jest zdefiniowany w dbgmetric.h, ponieważ zakłada się, że wszystkie zmiany metryki dla ewaluatory wyrażeń zostanie wysłany za pomocą funkcji metryki ewaluatora wyrażeń odpowiednie (układ `ExpressionEvaluator` podklucz jest nieco skomplikowane, dzięki czemu szczegółowe informacje są ukryte wewnątrz dbgmetric.lib).  
   
  `ExpressionEvaluator`\  
   

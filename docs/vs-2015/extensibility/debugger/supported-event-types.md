@@ -10,12 +10,12 @@ ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d82bce8546d4c63a82f4850097ca92c804399a66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f671e8d0128bee2c52dc1191b33edb889c92d2e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446442"
 ---
 # <a name="supported-event-types"></a>Obsługiwane typy zdarzeń
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Debugowanie programu Visual Studio obsługuje obecnie następujące typy zdarze�
     Interfejsy [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) i [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) podano przykłady zatrzymywanie zdarzeń.  
   
   > [!NOTE]
-  >  Zatrzymywanie asynchronicznego zdarzenia nie są obsługiwane. Jest to błąd, wysłać Zdarzenie asynchroniczne zatrzymywania.  
+  > Zatrzymywanie asynchronicznego zdarzenia nie są obsługiwane. Jest to błąd, wysłać Zdarzenie asynchroniczne zatrzymywania.  
   
 ## <a name="discussion"></a>Dyskusja  
  Rzeczywiste wdrożenie zdarzeń zależy od projektu usługi DE. Typ każde zdarzenie przesłane jest określany przez jego atrybuty, które są ustawiane podczas projektowania DE. Na przykład może wysyłać jedną DE [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) jako zdarzenie asynchroniczne, podczas gdy inny może wysłać zdarzenie zatrzymywania.  
@@ -53,7 +53,7 @@ Debugowanie programu Visual Studio obsługuje obecnie następujące typy zdarze�
  W poniższej tabeli określono, które program i wątku parametry są wymagane dla których zdarzenia, a także typy zdarzeń. Dowolne zdarzenie, może być synchroniczne. Żadne zdarzenie musi być synchroniczne.  
   
 > [!NOTE]
->  [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) interfejs jest wymagany dla wszystkich zdarzeń.  
+> [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) interfejs jest wymagany dla wszystkich zdarzeń.  
   
 |Zdarzenie|IDebugProgram2|IDebugThread2|Zatrzymywanie wydarzeń|  
 |-----------|--------------------|-------------------|---------------------|  
@@ -66,7 +66,7 @@ Debugowanie programu Visual Studio obsługuje obecnie następujące typy zdarze�
 |[IDebugCanStopEvent2](../../extensibility/debugger/reference/idebugcanstopevent2.md)|Wymagane|Wymagane|Nie|  
 |[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|Niedozwolone|Niedozwolone|Nie|  
 |[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|Niedozwolone|Niedozwolone|Nie|  
-|[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)|Wymagane|Wymagane|Tak|  
+|[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)|Wymagane|Wymagane|Yes|  
 |[IDebugErrorEvent2](../../extensibility/debugger/reference/idebugerrorevent2.md)|Może, ale nie jest wymagane|Może, ale nie jest wymagane|Może być|  
 |[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)|Wymagane|Wymagane|Tak|  
 |[IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|Może, ale nie jest wymagane|Może, ale nie jest wymagane|Może być|  
@@ -81,7 +81,7 @@ Debugowanie programu Visual Studio obsługuje obecnie następujące typy zdarze�
 |[IDebugPropertyDestroyEvent2](../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)|Wymagane|Może, ale nie jest wymagane|Nie|  
 |[IDebugReturnValueEvent2](../../extensibility/debugger/reference/idebugreturnvalueevent2.md)|Może, ale nie jest wymagane|Może, ale nie jest wymagane|Nie|  
 |IDebugStopCompleteEvent2|Wymagane|Wymagane|Tak|  
-|[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)|Wymagane|Wymagane|Tak|  
+|[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)|Wymagane|Wymagane|Yes|  
 |[IDebugSymbolSearchEvent2](../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)|Może, ale nie jest wymagane|Może, ale nie jest wymagane|Nie|  
 |[IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|Wymagane|Wymagane|Nie|  
 |[IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|Wymagane|Wymagane|Nie|  

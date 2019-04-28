@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f7218324e643355e7c6554f3a1cf6c74e8349d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 11171cf619e77508852178ee442ce6e26f9b573f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437244"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania
   Dodatku narzędzi VSTO służy do dostosowywania dokumentów programu Word i skoroszytów programu Excel w następujący sposób:
@@ -89,7 +89,7 @@ ms.locfileid: "60049473"
  Można dodać kontrolek formularzy Windows Forms lub *hostowania kontrolek*. Kontrolki hosta jest formantem, dostarczone przez [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] to opakowuje odpowiedni formant w programie Word lub Excel podstawowego zestawu międzyoperacyjnego. Kontrolki hosta uwidacznia wszystkie zachowania obiektu bazowego natywnych pakietu Office. Ponadto wywołuje zdarzenia i może być powiązana z danymi za pomocą modelu powiązanie danych formularzy Windows. Aby uzyskać więcej informacji, zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md).
 
 > [!NOTE]
->  Nie można dodać <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> kontrolki w arkuszu lub <xref:Microsoft.Office.Tools.Word.XMLNode> lub <xref:Microsoft.Office.Tools.Word.XMLNodes> kontrolki do dokumentu, za pomocą dodatku narzędzi VSTO. Te kontrolki hosta nie można dodać programowo. Aby uzyskać więcej informacji, zobacz [ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+> Nie można dodać <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> kontrolki w arkuszu lub <xref:Microsoft.Office.Tools.Word.XMLNode> lub <xref:Microsoft.Office.Tools.Word.XMLNodes> kontrolki do dokumentu, za pomocą dodatku narzędzi VSTO. Te kontrolki hosta nie można dodać programowo. Aby uzyskać więcej informacji, zobacz [ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
 ### <a name="persist-and-remove-controls"></a>Zostaną zachowane, a usuwanie kontrolek
  Po dodaniu zarządzane formanty w dokumencie lub arkuszu formanty nie są zachowywane po zapisaniu dokumentu i następnie zamknięty. Wszystkie formanty hosta zostaną usunięte, tak aby tylko podstawowy natywnych obiektów pakietu Office są pozostawione. Na przykład <xref:Microsoft.Office.Tools.Excel.ListObject> staje się <xref:Microsoft.Office.Interop.Excel.ListObject>. Wszystkie kontrolki Windows Forms są również usuwane, ale otoki ActiveX dla formantów są pozostawione w dokumencie. Należy dołączyć kod dodatku narzędzi VSTO dla programów wyczyścić kontrolki lub ponownie utworzyć formanty przy następnym otwarciu dokumentu. Aby uzyskać więcej informacji, zobacz [kontrolek dynamicznych w dokumentach pakietu Office utrwalenia](../vsto/persisting-dynamic-controls-in-office-documents.md).

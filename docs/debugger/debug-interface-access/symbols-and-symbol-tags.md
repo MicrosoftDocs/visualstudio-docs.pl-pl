@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6affc24a84ef4d008ece5f95e45a11eb70f33b4e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62854707"
 ---
-# <a name="symbols-and-symbol-tags"></a>Symbole i tagi symboli
+# <a name="symbols-and-symbol-tags"></a>Symbole i znaczniki symboli
 Informacje debugowania dotyczące skompilowany program znajduje się w pliku bazy danych (PDB) programu jako symbole, które są dostępne przy użyciu interfejsów API zestawu SDK debugowania interfejsu dostępu (DIA). Wszystkie symbole mają [idiasymbol::get_symtag —](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) i [idiasymbol::get_symindexid —](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) właściwości. `symTag` Właściwość wskazuje rodzaj symbolu, zgodnie z definicją [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) wyliczenia. `symIndexId` Właściwość `DWORD` wartość, która zawiera unikatowy identyfikator dla każdego wystąpienia symbolu.
 
  Symbole również mieć właściwości, które można określić dodatkowe informacje na temat symboli, a także odwołania do innych symboli, w większości przypadków [idiasymbol::get_lexicalparent —](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md) lub [idiasymbol::get_classparent —](../../debugger/debug-interface-access/idiasymbol-get-classparent.md). Kiedy wykonujesz zapytanie właściwość, która zawiera odwołanie, odwołanie, jest zwracana jako [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiektu. Takie właściwości są zawsze skojarzone z innej właściwości o tej samej nazwie, ale sufiksami za pomocą "Id", na przykład [idiasymbol::get_lexicalparentid —](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md) i [idiasymbol::get_classparentid —](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md). Tabele w [lokalizacje symboli](../../debugger/debug-interface-access/symbol-locations.md), [leksykalne hierarchii typów symboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md), i [symboli typów klasy hierarchii](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md) opisują właściwości dla każdego z różnego rodzaju programu symbole. Te właściwości mogą mieć istotne informacje dotyczące lub odwołania do innych symboli. Ponieważ `*Id` właściwości są po prostu liczbowych porządkowe identyfikatory ich powiązane właściwości, pominięto więcej dyskusji. Są one określone tylko wtedy, gdy jest to wymagane dla parametru wyjaśnienia.

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc428d70e036da311d2cf3050cec9e94a13782e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 47d53ad2579ce24f6d5fde2503a0acc98b4f7f5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444132"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Instrukcje: Ustawianie punktów przerwania w przepływach pracy
 Kiedy używasz [!INCLUDE[wfd1](../includes/wfd1-md.md)], możesz ustawić punkty przerwania na graficzny przepływów pracy, tak jak w kodzie języka Visual Basic lub C#. Zgodnie z oczekiwaniami, zatrzyma wykonywanie przepływu pracy, w każdym punkcie przerwania, który został ustawiony.  
@@ -22,13 +22,13 @@ Kiedy używasz [!INCLUDE[wfd1](../includes/wfd1-md.md)], możesz ustawić punkty
  Punkt przerwania ma trzy stany: *Oczekujące*, *powiązany*, i *błąd*. Po ustawieniu punktu przerwania jest oczekujące i jest reprezentowana przez stałe czerwoną ikonę. Po załadowaniu szablonu przepływu pracy środowiska uruchomieniowego staje się powiązany. Jeśli określisz ma niewłaściwy format dla punktu przerwania, takich jak nazwa działania, który nie jest prawidłowy, pojawi się okno błędu. Punkt przerwania nadal jest dodawany do okna punkt przerwania, ale jest oznaczony za pomocą małych "x".  
   
 > [!NOTE]
->  Ustawianie punktów przerwania w przepływach pracy, wywoływane jest nieobsługiwana.  
+> Ustawianie punktów przerwania w przepływach pracy, wywoływane jest nieobsługiwana.  
 > 
 > [!WARNING]
->  Upewnij się, że wybrano opcję **Włącz tylko mój kod (tylko zarządzany)** z **narzędzia**, **opcje**, **debugowanie** menu przed debugowanie. Jeśli masz dwie sekwencje zagnieżdżone w obrębie innej sekwencji, a następnie ustaw punkt przerwania w pierwszej sekwencji wewnętrzny, naciskając klawisz **F11** nie będzie debugowania do drugiej sekwencji wewnętrzny, jeśli <strong>Włącz tylko mój kod (tylko zarządzany)</strong>nie wybrano opcji.  
+> Upewnij się, że wybrano opcję **Włącz tylko mój kod (tylko zarządzany)** z **narzędzia**, **opcje**, **debugowanie** menu przed debugowanie. Jeśli masz dwie sekwencje zagnieżdżone w obrębie innej sekwencji, a następnie ustaw punkt przerwania w pierwszej sekwencji wewnętrzny, naciskając klawisz **F11** nie będzie debugowania do drugiej sekwencji wewnętrzny, jeśli <strong>Włącz tylko mój kod (tylko zarządzany)</strong>nie wybrano opcji.  
 > 
 > [!WARNING]
->  Punkty przerwania w przepływie pracy nie zostanie pobieranie odwołań, jeśli Pełna ścieżka do właściwości pliku XAML nie jest dokładne. Pełna ścieżka do pliku XAML nie jest dokładne po przeniesieniu projektu/rozwiązania do innego folderu lub innego komputera. Wybierz klawisze Ctrl + S, aby zapisać i zaktualizować właściwość pełną ścieżkę.  
+> Punkty przerwania w przepływie pracy nie zostanie pobieranie odwołań, jeśli Pełna ścieżka do właściwości pliku XAML nie jest dokładne. Pełna ścieżka do pliku XAML nie jest dokładne po przeniesieniu projektu/rozwiązania do innego folderu lub innego komputera. Wybierz klawisze Ctrl + S, aby zapisać i zaktualizować właściwość pełną ścieżkę.  
   
 ### <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>Aby ustawić punkt przerwania w działaniu w widoku projektu  
   

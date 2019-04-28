@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77f57eeda2f193170f4cd4f8b09d92989962e7fd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ad081a4d6954d402aa295a94edae3f5bdf50ef4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445619"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Przewodnik: Tworzenie zadania wbudowanego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,7 +104,7 @@ Zadania programu MSBuild są zwykle tworzone przez skompilowanie klasy, która i
     `Hello, world!`  
   
    > [!NOTE]
-   >  Jeśli nie widzisz wiadomości powitania, spróbuj ponownie zapisać w pliku projektu, a następnie uruchom zadanie Hello.  
+   > Jeśli nie widzisz wiadomości powitania, spróbuj ponownie zapisać w pliku projektu, a następnie uruchom zadanie Hello.  
   
    Przez przełączanie między Edytorem kodu a **okna wiersza polecenia**, można zmienić w pliku projektu i szybko wyświetlić wyniki.  
   

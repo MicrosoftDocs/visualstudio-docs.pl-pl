@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 88a2aaf448362c8e35156f39d86236e66deed571
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931330"
 ---
 # <a name="msbuild-command-line-reference"></a>Dokumentacja wiersza polecenia programu MSBuild
 Kiedy używasz *MSBuild.exe* do tworzenia pliku projektu lub rozwiązania, mogą obejmować kilka przełączników, aby określić różne aspekty procesu.

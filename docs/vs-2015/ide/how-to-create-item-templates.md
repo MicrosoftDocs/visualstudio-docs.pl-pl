@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 587d0a3fb571a0cb5934f56fca1ffa0ad34d3086
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4484ec75cf44fc60c72091fb17cce510efdb9cd4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417023"
 ---
 # <a name="how-to-create-item-templates"></a>Instrukcje: Tworzenie szablonów elementu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Kroki opisane w [pierwszej procedury](#to-add-a-custom-project-item-template-to-
      Pliki szablonu są dodawane do pliku .zip i kopiowane do katalogu, niezależnie od określonej w oknie dialogowym. Domyślna lokalizacja to **... \Users\\< nazwa_użytkownika\>\Documents\Visual Studio \<wersji > \My wyeksportowane szablony\\**  folderu.  
   
     > [!WARNING]
-    >  We wcześniejszych wersjach programu Visual Studio, domyślna lokalizacja to **... \Users\\< nazwa_użytkownika\>\Documents\Visual Studio \<wersji > \Templates\ItemTemplates**.  
+    > We wcześniejszych wersjach programu Visual Studio, domyślna lokalizacja to **... \Users\\< nazwa_użytkownika\>\Documents\Visual Studio \<wersji > \Templates\ItemTemplates**.  
   
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>Aby włączyć szablon elementu, który ma być używany w projekcie magazynu  
   

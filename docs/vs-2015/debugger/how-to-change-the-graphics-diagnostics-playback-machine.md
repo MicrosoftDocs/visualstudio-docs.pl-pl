@@ -9,14 +9,14 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c8c846c6f17c1fde0ef57855f4a557625fba80ad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cb14fb4017ea1df6659b9a1a0ac093cd7cf7e0b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444816"
 ---
-# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Instrukcje: Zmiana maszyny odtwarzania diagnostyki grafiki
+# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Instrukcje: zmiana maszyny odtwarzania diagnostyki grafiki
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Można odtwarzać informacji graficznych przy użyciu komputera lokalnego lub za pomocą zdalnym komputerze lub urządzeniu.  
@@ -49,7 +49,7 @@ Można odtwarzać informacji graficznych przy użyciu komputera lokalnego lub za
 4. Wybierz **wybierz** przycisku.  
   
 > [!NOTE]
->  **Połączenia zdalnego debugera** okno dialogowe mogą być również wyświetlane obiekty docelowe debugowania zdalnego, które są podłączone bezpośrednio do komputera deweloperskiego lub znajdują się w tej samej podsieci. Można użyć jednej z tych celów zdalnego debugowania jako maszyny odtwarzania diagnostyki grafiki bez ręcznej konfiguracji. W **połączenia zdalnego debugera** okna dialogowego Wybierz element docelowy ma, a następnie wybierz **wybierz** przycisku.  
+> **Połączenia zdalnego debugera** okno dialogowe mogą być również wyświetlane obiekty docelowe debugowania zdalnego, które są podłączone bezpośrednio do komputera deweloperskiego lub znajdują się w tej samej podsieci. Można użyć jednej z tych celów zdalnego debugowania jako maszyny odtwarzania diagnostyki grafiki bez ręcznej konfiguracji. W **połączenia zdalnego debugera** okna dialogowego Wybierz element docelowy ma, a następnie wybierz **wybierz** przycisku.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dokument dziennika grafiki](../debugger/graphics-log-document.md)

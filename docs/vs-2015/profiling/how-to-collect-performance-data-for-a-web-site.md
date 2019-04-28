@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4391f4cf989b51a49b874e6eccdcceb28f609003
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3307b5372852d6f3e269264a02fa2c90cb1acd22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432796"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Instrukcje: Zbieranie danych dotyczących wydajności dla witryny sieci Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60060557"
 Możesz użyć **kreatora wydajności** do zbierania danych wydajności dla [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji sieci Web. Można profilować aplikację internetową, która jest otwarta w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], lub można profilować [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] witryny sieci Web, który jest zlokalizowany na komputerze lokalnym i nie jest otwarty w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.  
   
 > [!NOTE]
->  **Kreatora wydajności** umożliwia dodawanie danych interakcji (TIP) i/lub JScript danych wydajności zebranych danych profilowania. Opcja Porada zbiera dane z procesów po stronie serwera. Profilowanie JScript zbiera dane ze skryptów, które są uruchomione na lokalnych lub zdalnych witryny sieci Web. W większości przypadków należy wybrać tylko jedną z opcji.  
+> **Kreatora wydajności** umożliwia dodawanie danych interakcji (TIP) i/lub JScript danych wydajności zebranych danych profilowania. Opcja Porada zbiera dane z procesów po stronie serwera. Profilowanie JScript zbiera dane ze skryptów, które są uruchomione na lokalnych lub zdalnych witryny sieci Web. W większości przypadków należy wybrać tylko jedną z opcji.  
   
  W zależności od ustawień uprawnień dostępu użytkowników, które administrator udostępnił użytkownik może być lub może nie mieć uprawnień do utworzenia sesji profilera na komputerze, który jest hostem procesu ASP.NET. Poniższe przykłady ilustrują możliwe różnice między użytkowników:  
   

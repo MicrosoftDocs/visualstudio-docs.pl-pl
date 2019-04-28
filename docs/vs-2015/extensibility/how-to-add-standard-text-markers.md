@@ -10,12 +10,12 @@ ms.assetid: a39fca69-0014-474c-933f-51f0e9b9617e
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3bd7b31a609117a59a5110cdb4460e5c36395ede
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 912d5d7a225520fc825d832bf73f5cfc733a9486
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436017"
 ---
 # <a name="how-to-add-standard-text-markers"></a>Instrukcje: Dodaj znaczniki standardowy tekst
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Poniższa procedura umożliwia utworzenie jednej z domyślnych typów znacznika 
      W tym wywołaniu metody, określ typ znacznika, zakres tekstu do tworzenia znacznika i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfejsu. Ta metoda zwraca wskaźnik do znacznika nowo utworzony tekstu. Typy znacznika są pobierane z <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> wyliczenia. Określ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfejsu, jeśli ma być powiadamiany o znacznika zdarzenia.  
   
     > [!NOTE]
-    >  Utwórz znaczników tekstu w głównym wątku interfejsu użytkownika tylko. Podstawowy edytor, który opiera się na zawartość bufor tekstowy do utworzenia znaczników tekstu i bufor tekstowy nie jest bezpieczny dla wątków.  
+    > Utwórz znaczników tekstu w głównym wątku interfejsu użytkownika tylko. Podstawowy edytor, który opiera się na zawartość bufor tekstowy do utworzenia znaczników tekstu i bufor tekstowy nie jest bezpieczny dla wątków.  
   
 ## <a name="adding-a-custom-command"></a>Dodawanie polecenia niestandardowego  
  Implementowanie `IVsTextMarkerClient` interfejsu i zapewnianie wskaźnika z znacznik poprawia zachowanie znacznik na kilka sposobów. Po pierwsze dzięki temu można zapewnić porady dla Twojej znacznika oraz do wykonywania poleceń. To umożliwia także otrzymywać powiadomienia o zdarzeniach dla poszczególnych znaczników oraz aby utworzyć menu kontekstowego za pośrednictwem znacznika. Poniższa procedura umożliwia dodawanie polecenia niestandardowego do menu kontekstowego znacznika.  
@@ -52,4 +52,4 @@ Poniższa procedura umożliwia utworzenie jednej z domyślnych typów znacznika 
  [Znaczniki tekstu przy użyciu starszej wersji interfejsu API](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Instrukcje: Implementowanie znaczniki błędów](../extensibility/how-to-implement-error-markers.md)   
  [Instrukcje: Tworzenie niestandardowego tekstu znaczników](../extensibility/how-to-create-custom-text-markers.md)   
- [Instrukcje: Korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md)
+ [Instrukcje: korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md)

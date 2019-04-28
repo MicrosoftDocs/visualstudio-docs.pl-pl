@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f9f381fbd9c6cb3f4f2128adc3910516be42962
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: ed96b7c893ba3ececb33be5dda55093b70c28659
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434690"
 ---
 # <a name="sccdiff-function"></a>Funkcja SccDiff
 Ta funkcja zawiera (lub opcjonalnie tylko sprawdza, czy) system kontroli różnice między bieżącego pliku (na dysku lokalnym) i jego ostatniej wersji w źródle.
@@ -77,7 +77,7 @@ SCCRTN SccDiff(
  Jak zoptymalizować wydajność, wtyczka do kontroli źródła może użyć zamiast na podstawie sumy kontrolnej lub sygnatury czasowej zamiast porównania bajt po bajcie, wymagane przez `SCC_DIFF_CONTENTS`: te rodzaje porównania są oczywiście szybsze, ale mniej niezawodne. Nie wszystkie systemów kontroli źródła może obsługiwać te metody porównania alternatywny, a wtyczka może być konieczne wracać do porównania zawartości. Wtyczek kontroli wszystkie źródła muszą co najmniej obsługiwać porównania zawartości.
 
 > [!NOTE]
->  Flagi szybkiego różnica wzajemnie się wykluczają. Jest on prawidłowy do przekazania bez flag, ale nie jest prawidłową jednocześnie przekazać więcej niż jeden. `SCC_DIFF_QUICK_DIFF`, która jest maską, który łączy wszystkie flagi mogą służyć do testowania, ale nigdy nie powinien być przekazywany jako parametr.
+> Flagi szybkiego różnica wzajemnie się wykluczają. Jest on prawidłowy do przekazania bez flag, ale nie jest prawidłową jednocześnie przekazać więcej niż jeden. `SCC_DIFF_QUICK_DIFF`, która jest maską, który łączy wszystkie flagi mogą służyć do testowania, ale nigdy nie powinien być przekazywany jako parametr.
 
 |`fOption`|Znaczenie|
 |---------------|-------------|

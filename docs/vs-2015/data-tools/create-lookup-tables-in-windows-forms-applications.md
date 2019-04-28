@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 76c55d45e279a3fcf6579c77bf7d226c7baf13d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: adea3666c3f8b8d78c37b32a1a42f7f8b270369c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431170"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Tworzenie tabel wyszukiwania w aplikacjach Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Termin *tabeli odnośników* dotyczy kontrolek, które są powiązane z dwoma po
 2. Rozwiń węzły w **źródeł danych** okna, aż zobaczysz tabelę nadrzędną i wszystkie jej kolumny oraz pokrewną tabelę podrzędną i jej wszystkie kolumny.  
   
     > [!NOTE]
-    >  Węzłem tabeli podrzędnej jest węzeł pokazywany jako rozwijany węzeł podrzędny tabeli nadrzędnej.  
+    > Węzłem tabeli podrzędnej jest węzeł pokazywany jako rozwijany węzeł podrzędny tabeli nadrzędnej.  
   
 3. Zmień upuszczany typ tabeli podrzędnej na **szczegóły** , wybierając **szczegóły** na liście kontrolek w węźle tabeli podrzędnej. Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   

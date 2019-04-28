@@ -11,12 +11,12 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3e5808d23f34c6d9cfa5c355092e0fd55b5f4270
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9a8c6d236f9f11f53e79e4239868815c7bbe9137
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436931"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Odwołanie do schematu 2.0 rozszerzenia VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60048662"
 Plik manifestu VSIX wdrożenia w tym artykule opisano zawartość pakietu VSIX. Format pliku jest regulowane przez schemat. W wersji 2.0 tego schematu obsługuje dodawanie niestandardowych typów i atrybutów.  Schematu manifestu jest rozszerzalny. Moduł ładujący manifestu ignoruje elementów XML oraz atrybuty, które go nie rozumie.  
   
 > [!IMPORTANT]
->  Program Visual Studio 2015 można ładować plików VSIX w formatach programu Visual Studio 2010, Visual Studio 2012 lub Visual Studio 2013.  
+> Program Visual Studio 2015 można ładować plików VSIX w formatach programu Visual Studio 2010, Visual Studio 2012 lub Visual Studio 2013.  
   
 ## <a name="package-manifest-schema"></a>Schematu manifestu pakietu  
  Element główny pliku manifestu XML jest `<PackageManifest>`, o jeden atrybut `Version`, która jest wersją format manifestu. W przypadku istotnych zmian do formatu, zostanie zmieniony format wersji. W tym temacie opisano format manifestu w wersji 2.0, określany w manifeście, ustawiając `Version` atrybutu, wartość wersji = "w wersji 2.0".  
@@ -129,7 +129,7 @@ Plik manifestu VSIX wdrożenia w tym artykule opisano zawartość pakietu VSIX. 
         - Jednej wersji # - określonej wersji.  
   
         > [!IMPORTANT]
-        >  Wersja 2.0 schematu VSIX został wprowadzony w programie Visual Studio 2012. Aby użyć tego schematu jest posiadanie programu Visual Studio 2012 lub później zainstalowane na komputerze i używać VSIXInstaller.exe należącego do tego produktu. Można wskazać wcześniejszych wersji programu Visual Studio za pomocą programu Visual Studio 2012 lub nowszym Instalator VSIX, ale tylko przy użyciu nowszej wersji Instalatora.  
+        > Wersja 2.0 schematu VSIX został wprowadzony w programie Visual Studio 2012. Aby użyć tego schematu jest posiadanie programu Visual Studio 2012 lub później zainstalowane na komputerze i używać VSIXInstaller.exe należącego do tego produktu. Można wskazać wcześniejszych wersji programu Visual Studio za pomocą programu Visual Studio 2012 lub nowszym Instalator VSIX, ale tylko przy użyciu nowszej wersji Instalatora.  
   
     - `AnyAttribute*` — `<InstallationTarget>` Elementu umożliwia nieograniczony zbiór atrybutów, które będą dostępne w czasie wykonywania jako słownik par nazwa wartość.  
   

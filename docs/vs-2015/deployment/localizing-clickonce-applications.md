@@ -22,12 +22,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c22989b48c05884bc92eeb017f3a5e124fbc1fec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1b57f3de72272e8d1ecc567b150d073cd8d69611
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443775"
 ---
 # <a name="localizing-clickonce-applications"></a>Lokalizowanie aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Lokalizacja jest procesem tworzenia aplikacji odpowiednie dla określonej kultur
  Zaletą tego podejścia jest tworzy pojedyncze wdrożenie i upraszcza swoją historię wdrożenia zlokalizowane. W czasie wykonywania zestawu satelickiego odpowiednie będzie używany, w zależności od kultury domyślnej systemów operacyjnych Windows przez użytkownika. Wadą tego podejścia jest to, że pobiera wszystkie zestawy satelickie, zawsze wtedy, gdy aplikacja jest zainstalowane lub zaktualizowane na komputerze klienckim. Jeśli aplikacja ma dużą liczbę ciągów lub klienci mają wolne połączenie sieciowe, ten proces może wpłynąć na wydajność podczas aktualizacji aplikacji.  
   
 > [!NOTE]
->  To podejście przyjęto założenie, że aplikacja Dopasowuje wysokość, szerokość i położenie kontrolki automatycznie w celu uwzględnienia rozmiarów ciąg tekstu różne w różnych kulturach. Windows Forms zawiera szereg kontroli i technologie, które pozwalają na projektowanie formularza umożliwiają łatwe możliwych do zlokalizowania, w tym <xref:System.Windows.Forms.FlowLayoutPanel> i <xref:System.Windows.Forms.TableLayoutPanel> formantów, jak również <xref:System.Windows.Forms.Control.AutoSize%2A> właściwości.  Zobacz też [jak: Obsługiwanie lokalizacji na Windows Forms przy użyciu AutoSize i TableLayoutPanel](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
+> To podejście przyjęto założenie, że aplikacja Dopasowuje wysokość, szerokość i położenie kontrolki automatycznie w celu uwzględnienia rozmiarów ciąg tekstu różne w różnych kulturach. Windows Forms zawiera szereg kontroli i technologie, które pozwalają na projektowanie formularza umożliwiają łatwe możliwych do zlokalizowania, w tym <xref:System.Windows.Forms.FlowLayoutPanel> i <xref:System.Windows.Forms.TableLayoutPanel> formantów, jak również <xref:System.Windows.Forms.Control.AutoSize%2A> właściwości.  Zobacz też [jak: Obsługiwanie lokalizacji na Windows Forms przy użyciu AutoSize i TableLayoutPanel](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
   
 ## <a name="generate-one-deployment-for-each-culture"></a>Generowanie jednego wdrożenia dla każdej kultury  
  W tej strategii wdrażania możesz wygenerować wiele wdrożeń. W każdym wdrożeniu obejmują tylko zestawu satelickiego potrzebne dla określonej kultury i oznacz wdrożenia jako specyficzne dla tej kultury.  

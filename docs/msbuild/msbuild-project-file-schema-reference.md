@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c49c2198a4ecc40a40e3f5f6414bfd4af47279b8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842295"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Odwołanie do schematu pliku projektu MSBuild
 Zawiera spis wszystkich [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] elementów schematu XML z ich dostępne atrybuty i elementy podrzędne.

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 99a254798ad3e222401a8346df454a70699c7feb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ad20d4678c24458582f80cc819e6f6a651fb2790
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443022"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Dziennik zmian (Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -401,7 +401,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 - Naprawiono obsługę części kompozycji programu Visual Studio.
 
 > [!IMPORTANT]
->  C# jest dominujący języka należący do ekosystemu platformy Unity — nowe zasoby próbki są w języku C#, będą domyślnie dokumentacja aparatu Unity C# — usunęliśmy naszych podstawowa pomoc techniczna dla UnityScript i coś lepiej skoncentrować się na środowisko C#. W wyniku VSTU rozwiązania są teraz C# tylko i szybciej, aby załadować.
+> C# jest dominujący języka należący do ekosystemu platformy Unity — nowe zasoby próbki są w języku C#, będą domyślnie dokumentacja aparatu Unity C# — usunęliśmy naszych podstawowa pomoc techniczna dla UnityScript i coś lepiej skoncentrować się na środowisko C#. W wyniku VSTU rozwiązania są teraz C# tylko i szybciej, aby załadować.
 
 ## <a name="182"></a>1.8.2
  Wydana 2014 01-07-
@@ -740,7 +740,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 - Stałe tłumaczenia symbole .pdb do 4 aparatu Unity.
 
 > [!IMPORTANT]
->  Ze względu na obsługę programu Visual Studio 2012 mieliśmy kilka plików i innych poruszać. Pakiet UnityVS do zaimportowania Unity ma teraz nazwę UnityVS 2010 lub UnityVS 2012 odpowiednio programu Visual Studio 2010 i Visual Studio 2012. Ta wersja wymaga również, że UnityVS pliki projektu są generowane.
+> Ze względu na obsługę programu Visual Studio 2012 mieliśmy kilka plików i innych poruszać. Pakiet UnityVS do zaimportowania Unity ma teraz nazwę UnityVS 2010 lub UnityVS 2012 odpowiednio programu Visual Studio 2010 i Visual Studio 2012. Ta wersja wymaga również, że UnityVS pliki projektu są generowane.
 
 ## <a name="106---internal-build"></a>1.0.6 — wewnętrzne kompilacji
  Wydana 2012-09-12

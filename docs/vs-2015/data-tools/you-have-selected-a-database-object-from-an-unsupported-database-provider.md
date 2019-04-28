@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8ecec386030299be7b6c9571218dec0c3396440
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d8b4f47894f4aaf12c724153d45378dcb9e8510b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433438"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Wybrano obiekt bazy danych od nieobsługiwanego dostawcy bazy danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60073595"
 [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) Obsługuje tylko .NET Framework Data Provider for SQL Server (<xref:System.Data.SqlClient>). Chociaż możesz kliknąć pozycję **OK** i kontynuować pracę z obiektami od dostawców nieobsługiwanej bazy danych, może wystąpić nieoczekiwane zachowanie w czasie wykonywania.  
   
 > [!NOTE]
->  Obsługiwane są tylko połączenia danych korzystających z .NET Framework Data Provider for SQL Server.  
+> Obsługiwane są tylko połączenia danych korzystających z .NET Framework Data Provider for SQL Server.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   

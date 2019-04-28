@@ -10,12 +10,12 @@ ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8448b00085ab7e7a151c935eee4d8a8b1423bd1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 158119759f8e90161e1f3b5267be498dfc1c9b38
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441523"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Polecenia, które należy uruchomić po instalacji
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "54794818"
 Jeśli rozszerzenie zostanie wdrożony przy użyciu pliku msi, musisz uruchomić `devenv /setup` jako część instalacji w kolejności dla programu Visual Studio odnaleźć rozszerzeń.  
   
 > [!NOTE]
->  Informacje przedstawione w tym temacie dotyczą znajdowanie DevEnv za pomocą programu Visual Studio 2008 i starszych wersji. Aby uzyskać informacje o tym, jak odnaleźć DevEnv przy użyciu nowszej wersji programu Visual Studio, zobacz [wykrywanie wymagań systemowych](../../extensibility/internals/detecting-system-requirements.md).  
+> Informacje przedstawione w tym temacie dotyczą znajdowanie DevEnv za pomocą programu Visual Studio 2008 i starszych wersji. Aby uzyskać informacje o tym, jak odnaleźć DevEnv przy użyciu nowszej wersji programu Visual Studio, zobacz [wykrywanie wymagań systemowych](../../extensibility/internals/detecting-system-requirements.md).  
   
 ## <a name="finding-devenvexe"></a>Znajdowanie devenv.exe  
  Możesz znaleźć, każda wersja devenv.exe z rejestru wartości [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zapisu pliki instalacyjne, za pomocą tabeli RegLocator i AppSearch powoduje niepoprawne obcięcie tabeli do przechowywania wartości rejestru jako właściwości. Aby uzyskać więcej informacji, zobacz [wykrywanie wymagań systemowych](../../extensibility/internals/detecting-system-requirements.md).  
@@ -59,7 +59,7 @@ Jeśli rozszerzenie zostanie wdrożony przy użyciu pliku msi, musisz uruchomić
   
 ### <a name="customaction-table-rows-to-run-devenvexe"></a>Akcja niestandardowa wiersze tabeli, aby uruchomić devenv.exe  
   
-|Akcja|Typ|Źródło|Cel|  
+|Akcja|Typ|Source|Cel|  
 |------------|----------|------------|------------|  
 |CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|  
 |CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|  
@@ -69,7 +69,7 @@ Jeśli rozszerzenie zostanie wdrożony przy użyciu pliku msi, musisz uruchomić
  Akcje niestandardowe musi zostać utworzona do tabeli InstallExecuteSequence, aby zaplanować ich wykonanie w trakcie instalacji. Zapobiegaj akcji niestandardowej z są uruchamiane, czy za pomocą odpowiednich właściwości w każdym wierszu w kolumnie warunek wersję [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nie jest zainstalowany w systemie.  
   
 > [!NOTE]
->  `Null` właściwości oceny do `False` przypadku użycia w warunkach.  
+> `Null` właściwości oceny do `False` przypadku użycia w warunkach.  
   
  Wartość kolumny sekwencji dla każdej akcji niestandardowej jest zależny od innych wartości sekwencji do pakietu Instalatora Windows. Sekwencja wartości powinny być akcje niestandardowe devenv.exe, Uruchom jako najbliżej bezpośrednio przed działań standardowych InstallFinalize.  
   

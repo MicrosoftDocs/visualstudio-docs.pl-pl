@@ -15,12 +15,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c0af1f7270cca341b713c5036b2c457f5964c0bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 117e26fca367c8cf00604bebe01a00f4df58a0ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437396"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Nie ignoruj wyników metod
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ ms.locfileid: "54785418"
  Poniższy przykład przedstawia metodę, która nie korzysta z obiektu, który tworzy.  
   
 > [!NOTE]
->  Nie można odtworzyć to naruszenie w języku Visual Basic.  
+> Nie można odtworzyć to naruszenie w języku Visual Basic.  
   
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults3/cpp/FxCop.Usage.DoNotIgnoreMethodResults3.cpp#1)]
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults3/cs/FxCop.Usage.DoNotIgnoreMethodResults3.cs#1)]

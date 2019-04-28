@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 3ebe328970b34a9fdc6cc7f3717a6aec28b560ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6caca91849727fa21fec0401c776e4c80f9a6b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439528"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Instrukcje: Dołącz profiler do aplikacji sieci web ASP.NET do zbierania danych pamięci przy użyciu wiersza polecenia
 W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia narzędzi Profilujących do dołączenia programu profilującego do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sieci Web, aplikacji i zbieranie danych dotyczących liczby i rozmiaru alokacji pamięci .NET Framework. Może również zbierać dane dotyczące okresu istnienia obiektów pamięci .NET Framework.
 
 > [!NOTE]
->  Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie.
+> Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie.
 
  Aby zbierać dane dotyczące wydajności z [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web, należy użyć [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) narzędzia do inicjowania odpowiednich zmiennych środowiskowych na komputerze, który jest hostem [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web. Należy ponownie uruchomić komputer, aby skonfigurować serwer sieci Web do profilowania.
 
@@ -64,7 +64,7 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
      Można użyć dowolnego z następujących opcji z **/start:sample** opcji.
 
    > [!NOTE]
-   >  **/User** i **/crosssession** opcje są zazwyczaj wymagane dla aplikacji ASP.NET.
+   > **/User** i **/crosssession** opcje są zazwyczaj wymagane dla aplikacji ASP.NET.
 
    | Opcja | Opis |
    | - | - |

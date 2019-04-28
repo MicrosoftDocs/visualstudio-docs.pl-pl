@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70d438107b7cbe05b0a1c0049dff8e26c286de89
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 08c30f723c6dbdb7359b1fd1d7648a38e71ab161
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428816"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Obsługa fragmentów kodu w starszej wersji usługi językowej
 Fragment kodu jest fragmentem kodu, który jest wstawiany do pliku źródłowego. Fragmentem jest oparty na składni XML szablonu przy użyciu zestawu pól. Te pola są wyróżnione po tym fragmencie kodu jest wstawiany i mogą mieć różne wartości w zależności od kontekstu, w którym wstawieniu fragmentu kodu. Po wstawieniu fragmentu kodu, usługa językowa można sformatować fragment kodu.
@@ -27,7 +27,7 @@ Fragment kodu jest fragmentem kodu, który jest wstawiany do pliku źródłowego
  Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej, zobacz [instruktażu: Implementowanie fragmentów kodu](../../extensibility/walkthrough-implementing-code-snippets.md).
 
 > [!NOTE]
->  Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.
+> Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.
 
 ## <a name="managed-package-framework-support-for-code-snippets"></a>Obsługa fragmentów kodu w ramach pakietu zarządzane
  Środowiska pakietu zarządzanego (MPF) obsługuje większość funkcji fragment kodu, na podstawie odczytu szablon do wstawiania fragmentu kodu i włączeniu specjalne trybu edycji. Obsługa odbywa się za pośrednictwem <xref:Microsoft.VisualStudio.Package.ExpansionProvider> klasy.
@@ -392,4 +392,4 @@ namespace TestLanguagePackage
 - [Funkcje starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-features1.md)
 - [Rejestrowanie starszej wersji usługi językowej](../../extensibility/internals/registering-a-legacy-language-service1.md)
 - [Fragmenty kodu](../../ide/code-snippets.md)
-- [Przewodnik: Pobieranie listy zainstalowanych fragmentów kodu (starsza wersja implementacji)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+- [Przewodnik: pobieranie listy zainstalowanych fragmentów kodu (starsza wersja implementacji)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

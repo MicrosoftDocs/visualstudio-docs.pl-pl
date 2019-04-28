@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3a67dc121790acff1f5e39a82a1711317616fc2d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855046"
 ---
 # <a name="querying-the-pdb-file"></a>Używanie zapytań dotyczących pliku .Pdb
 Plik bazy danych programu (z rozszerzeniem .pdb) to plik binarny, który zawiera typ i symboliczne informacje debugowania, zbierane w miarę upływu kompilowanie i łączenie projektu. Tworzony jest plik PDB podczas kompilowania programu C/C++ przy użyciu **/zi** lub **/zi** lub [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], lub [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] programowanie z **/debug** Opcja. Pliki obiektów zawierają odwołania do pliku .pdb, aby uzyskać informacje o debugowaniu. Aby uzyskać więcej informacji na temat plików pdb, zobacz [plików PDB](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100)). Aplikacja DIA służy następujące ogólne kroki do uzyskania szczegółowych informacji dotyczących różnych symboli, obiektów i danych elementów w obrębie obrazu wykonywalnego.

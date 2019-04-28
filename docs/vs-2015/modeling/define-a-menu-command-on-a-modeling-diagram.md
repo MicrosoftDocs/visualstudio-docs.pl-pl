@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5805483b78798aabc3641c6aa17379370c6a199
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cab72753016c49b4d959d2224dbfd99f8a0c07bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433146"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definiowanie polecenia menu w diagramie modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skr
 3. Dodaj plik klasy do projektu i ustawi jego zawartość do następującego kodu.  
 
    > [!NOTE]
-   >  Zmień przestrzeń nazw, nazwę klasy i wartość zwracana przez `Text` zgodnie z preferencjami.  
+   > Zmień przestrzeń nazw, nazwę klasy i wartość zwracana przez `Text` zgodnie z preferencjami.  
    >   
    >  W przypadku zdefiniowania wielu poleceń, pojawiają się w menu w kolejności alfabetycznej według nazw klas.  
 

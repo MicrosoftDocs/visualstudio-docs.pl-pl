@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b13931746cc9668ea18ead71babd5140e971818
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 90fb5b1c9a388d64e191915bbcbbe3de65f6aa99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437625"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>Tworzenie komentarzy dokumentacji XML dla JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "60079282"
  Ten temat zawiera podstawowe samouczek na temat korzystania z komentarze dokumentacji XML. Informacji o używaniu inne elementy, takie jak [ \<var >](../ide/var-javascript.md) i [ \<wartość >](../ide/value-javascript.md)i dla dodatkowych przykładów kodu, zobacz [komentarze dokumentacji XML ](../ide/xml-documentation-comments-javascript.md). Na temat informacji IntelliSense dla asynchroniczne wywołanie zwrotne takie jak informacji `Promise`, zobacz [ \<zwraca >](../ide/returns-javascript.md).  
   
 > [!NOTE]
->  Komentarze dokumentacji XML są dostępne tylko z odnośnych plików, zestawów i usług.  
+> Komentarze dokumentacji XML są dostępne tylko z odnośnych plików, zestawów i usług.  
   
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-function"></a>Aby utworzyć komentarze dokumentacji XML dla funkcji języka JavaScript  
   
 - W funkcji, należy dodać [ \<podsumowania >](../ide/summary-javascript.md), [ \<param >](../ide/param-javascript.md), i [ \<zwraca >](../ide/returns-javascript.md) elementów, a poprzedzać każdy element z trzema ukośnikami (/ / /).  
   
     > [!NOTE]
-    >  Każdy element musi być w jednym wierszu.  
+    > Każdy element musi być w jednym wierszu.  
   
      Funkcja języka JavaScript można znaleźć w poniższym przykładzie.  
   
@@ -118,7 +118,7 @@ ms.locfileid: "60079282"
 1. Utwórz plik XML, który zawiera komentarze dokumentacji w formacie OpenAjax MessageBundle.  
   
     > [!IMPORTANT]
-    >  MessageBundle jest zalecanym formatem. Ten format nie jest obsługiwany w Microsoft Ajax lub pliki .winmd. Dla informacji o korzystaniu z alternatywnym `VSDoc` formatowania, zobacz [ \<lokalizacja >](../ide/loc-javascript.md).  
+    > MessageBundle jest zalecanym formatem. Ten format nie jest obsługiwany w Microsoft Ajax lub pliki .winmd. Dla informacji o korzystaniu z alternatywnym `VSDoc` formatowania, zobacz [ \<lokalizacja >](../ide/loc-javascript.md).  
   
      Poniższy przykład pokazuje zawartość w pliku sidecar, który zawiera zlokalizowane informacje funkcji IntelliSense. Jest to plik XML, który znajduje się w folderze specyficzne dla kultury, takie jak Japonia. Folder musi być w tej samej lokalizacji co plik .js, który zawiera `<loc>` elementu. Nazwa pliku w pliku XML musi być zgodna `filename` określony w parametrze `<loc>` elementu.  
   

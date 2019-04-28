@@ -7,12 +7,12 @@ ms.date: 12/11/2017
 ms.topic: conceptual
 description: Jak przypisać subskrypcje programu Visual Studio do użytkowników końcowych, dla partnerów MPN.
 searchscope: VS Subscription
-ms.openlocfilehash: 1cd8e25a0ba1eaddf6f0ab5096e366f577f510e6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 8a0a0f3b6b093c023a8a0129c34d16aa75fffdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412401"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Zarządzanie subskrypcjami programu Visual Studio oferowane za pośrednictwem programu Microsoft Partner Network (MPN)
 
@@ -65,7 +65,7 @@ Microsoft Action Pack subskrybenta i subskrypcji programu Visual Studio
 
 > [!NOTE]
 > Technical Preview rola Osoba kontaktowa ds jest wymagana dla subskrypcji programu Visual Studio
->     - PG 8 — przypisywanie subskrypcji Visual Studio dla partnerów z kompetencją
+> - PG 8 — przypisywanie subskrypcji Visual Studio dla partnerów z kompetencją
 
 ## <a name="need-help"></a>Czy potrzebujesz pomocy?
 Subskrybenci i Administratorzy programu powinny współpracować bezpośrednio z zespołem pomocy technicznej Microsoft Partner Network, rozwiązać wszelkie problemy z subskrybentów, uzyskiwanie dostępu do subskrypcji. Odwiedź stronę [pomoc techniczna dla partnerów](https://partner.microsoft.com/support) strony, aby uzyskać pomoc. (Poświadczenia logowania MPN będą wymagane).

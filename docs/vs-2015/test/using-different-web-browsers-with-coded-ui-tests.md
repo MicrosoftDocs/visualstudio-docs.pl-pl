@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5289804eb85b9af4fff090f98cc97f8d2c9ec676
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d3854f4844fba3b3c1a0a519f06d59d31c4f7072
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445884"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Korzystanie z różnych przeglądarek sieci Web do przeprowadzania kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
  **Rejestrowanie:** Konstruktor kodowanego testu IU należy użyć, aby nagrać test aplikacji sieci web za pomocą programu Internet Explorer. Można opcjonalnie dodać sprawdzanie poprawności i niestandardowy kod dla formantów testowanych przy użyciu wstępnie zdefiniowanego zestawu właściwości, jak zwykle w przypadku kodowanych testów interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [Użyj interfejsu użytkownika do testów Your kodu automatyzacji](../test/use-ui-automation-to-test-your-code.md).  
   
 > [!NOTE]
->  Nie można zarejestrować zakodowanych testów interfejsu użytkownika przy użyciu przeglądarek Google Chrome i Mozilla Firefox.  
+> Nie można zarejestrować zakodowanych testów interfejsu użytkownika przy użyciu przeglądarek Google Chrome i Mozilla Firefox.  
   
  **Odtwarzanie z programem Internet Explorer:** Przeglądarka nie jest jawnie określona, testy będą uruchamiane w programie Internet Explorer domyślnie. Można jawnie określać przeglądarki, który będzie używany przez ustawienie **BrowserWindow.CurrentBrowser** właściwości w kodzie testowym. Dla programu Internet Explorer ta właściwość powinna być równa **IE** lub **programu Internet Explorer**.  
   
@@ -76,7 +76,7 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
 3. Zaznacz rozszerzenie i wybierz polecenie **Pobierz**.  
   
    > [!TIP]
-   >  Możesz również pobrać narzędzie Selenium components for Coded UI Cross Browser Testing z [tutaj](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
+   > Możesz również pobrać narzędzie Selenium components for Coded UI Cross Browser Testing z [tutaj](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
    Aby uzyskać więcej informacji na temat tworzenia i używania kodowanego interfejsu użytkownika, testów, zobacz [tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
   

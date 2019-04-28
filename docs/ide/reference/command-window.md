@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3c38701ce222090f14b6880489eea4d22f053d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d7f9edfb6b0c10a37aade6a9d37a5689e587890d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438104"
 ---
 # <a name="command-window"></a>Okno polecenia
 **Polecenia** okna jest używana do wykonywania poleceń ani aliasów bezpośrednio w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE). Można wykonać polecenia menu i poleceń, które nie są wyświetlane w żadnym menu. Aby wyświetlić **polecenia** okna, wybierz **Windows inne** z **widoku** menu, a następnie wybierz **okna polecenia**.
@@ -89,7 +89,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 - `var[1-3]+` i `oldpar` parametrów
 
     > [!NOTE]
-    >  Polecenia, parametr, przełącznika lub wartość, która zawiera spacje, musi mieć podwójny cudzysłów po obu stronach.
+    > Polecenia, parametr, przełącznika lub wartość, która zawiera spacje, musi mieć podwójny cudzysłów po obu stronach.
 
 Pozycja przełączników i parametry mogą być stosowane zamiennie za darmo w wierszu polecenia, z wyjątkiem produktów [powłoki](../../ide/reference/shell-command.md) polecenia, które wymaga jej przełączniki i parametry w określonej kolejności.
 

@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 229893e13da06253398da32cfef4a85402a4787a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4929464f04ecb630f4c6898f7b2cc1ce132a79a9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445979"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,19 +39,19 @@ ms.locfileid: "60094557"
  ![Składniki web Part programu SharePoint](../test/media/cuit-sharepoint.png "CUIT_SharePoint")  
   
 > [!NOTE]
->  W przypadku rejestrowania akcji, sprawdź poprawność działania przed wygenerowaniem kodu. Ponieważ różne zachowania skojarzone z myszy po wskazaniu wskaźnikiem, jest ona włączona domyślnie. Uważaj usunąć nadmiarowe ruchów z kodowanych testów interfejsu użytkownika. Można to zrobić, edytując kod dla testu lub za pomocą [edytora testu interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
+> W przypadku rejestrowania akcji, sprawdź poprawność działania przed wygenerowaniem kodu. Ponieważ różne zachowania skojarzone z myszy po wskazaniu wskaźnikiem, jest ona włączona domyślnie. Uważaj usunąć nadmiarowe ruchów z kodowanych testów interfejsu użytkownika. Można to zrobić, edytując kod dla testu lub za pomocą [edytora testu interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
   
 ## <a name="including-testing-of-office-2010-controls-within-your-sharepoint-app"></a>W tym testowanie pakietu Office 2010 formantów w aplikacji programu SharePoint  
  Aby włączyć automatyzacji dla niektórych pakietu office 2010 składników web Part w aplikacji programu SharePoint, masz wprowadzenie pewnych zmian kodu.  
   
 > [!WARNING]
->  Obsługa kontrolek Visio i PowerPoint 2010 nie jest obsługiwane.  
+> Obsługa kontrolek Visio i PowerPoint 2010 nie jest obsługiwane.  
   
 ### <a name="excel-2010-cell-controls"></a>Formanty komórki programu Excel 2010  
  Aby dołączyć kontrolki komórki programu Excel, należy wprowadzić pewne zmiany w kodzie kodowanego testu interfejsu użytkownika.  
   
 > [!WARNING]
->  Wprowadzanie tekstu w dowolnej komórki programu Excel, a następnie akcję klawiszy Strzałka w nie rejestruje poprawnie. Zaznacz komórki za pomocą myszy.  
+> Wprowadzanie tekstu w dowolnej komórki programu Excel, a następnie akcję klawiszy Strzałka w nie rejestruje poprawnie. Zaznacz komórki za pomocą myszy.  
   
  W przypadku rejestrowania akcji w pustej komórce, należy zmodyfikować kod przez podwójne kliknięcie komórki, a następnie wykonuje operację tekstu. Jest to niezbędne, ponieważ aktywuje kliknij w komórce, następuje dowolną akcję klawiatury `textarea` w komórce. Po prostu rejestrowanie `setvalue` w pustej komórce będzie wyszukiwać `editbox` które nie są stosowane, dopóki kliknął komórki. Na przykład:  
   

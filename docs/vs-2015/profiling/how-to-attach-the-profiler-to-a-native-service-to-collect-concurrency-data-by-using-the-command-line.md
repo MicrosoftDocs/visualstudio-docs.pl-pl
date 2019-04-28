@@ -9,12 +9,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b9c46631fcd3ada0946748b515366b4f1b3362a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ab6e56d6b2d9a953b5549d59ea85049be8cc0306
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432887"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Instrukcje: Dołącz Profiler do usługi natywnej i zbieranie danych współbieżności przy użyciu wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,10 +22,10 @@ ms.locfileid: "60070566"
 W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wiersza polecenia narzędzi Profilujących do dołączenia programu profilującego do macierzystej (C/C++) usługi i zbierania danych współbieżności procesu i wątku, przy użyciu metody próbkowania.  
 
 > [!NOTE]
->  Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje Windows Store również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje Windows Store również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
 
 > [!NOTE]
->  Narzędzia wiersza poleceń dla narzędzi profilowania znajdują się w podkatalogu \team tools\performance Tools katalogu instalacyjnego programu Visual Studio. Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć programu profilującego w wierszu polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH **polecenia** oknie lub do niej samo polecenie. Aby uzyskać więcej informacji, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+> Narzędzia wiersza poleceń dla narzędzi profilowania znajdują się w podkatalogu \team tools\performance Tools katalogu instalacyjnego programu Visual Studio. Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć programu profilującego w wierszu polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH **polecenia** oknie lub do niej samo polecenie. Aby uzyskać więcej informacji, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
 
  Gdy profiler jest dołączony do usługi, można wstrzymywać i wznawiać zbieranie danych. Aby zakończyć sesję profilowania, Profiler nie może być dołączony do usługi, a Profiler musi być jawnie zamknięty.  
 
@@ -45,7 +45,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md
      Można użyć dowolnej opcji z poniższej tabeli z **/start** opcji.  
 
    > [!NOTE]
-   >  Większość usług wymaga **/User** i **/crosssession** opcji.  
+   > Większość usług wymaga **/User** i **/crosssession** opcji.  
 
    |                               Opcja                               |                                                                     Opis                                                                      |
    |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|

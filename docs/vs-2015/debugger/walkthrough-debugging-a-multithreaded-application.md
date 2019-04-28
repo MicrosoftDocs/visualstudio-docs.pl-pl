@@ -17,12 +17,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aa74d6ca668203f7b13f11307ac59ef5270aac9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7d598cc245421aafb05cbf91fe2b7a95e39564a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444324"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>Przewodnik: Debugowanie aplikacji wielowątkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,7 +124,7 @@ Thread::Sleep(3000);
 2. Przejdź do **debugowania lokalizacji** paska narzędzi i kliknij przycisk **wątku** listy.  
   
     > [!NOTE]
-    >  Możesz rozpoznać tego paska narzędzi przez trzy wyraźną listy: **Proces**, **wątku**, i **ramki stosu**.  
+    > Możesz rozpoznać tego paska narzędzi przez trzy wyraźną listy: **Proces**, **wątku**, i **ramki stosu**.  
   
 3. Zwróć uwagę, jak wiele wątków, są wyświetlane na liście.  
   

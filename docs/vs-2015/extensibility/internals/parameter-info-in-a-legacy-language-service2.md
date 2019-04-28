@@ -12,12 +12,12 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 986a392dc381b972c9e4d4bfa6dda06fe1aa878e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d1fddc99c40e2472688a25ade121c2c762ade5da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437932"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informacje o parametrach w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Informacje o parametrach funkcji IntelliSense jest znak (zazwyczaj nawias otwier
  Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej, zobacz [rozszerzanie usług edytora i języka](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.  
+> Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.  
   
 ## <a name="implementation"></a>Implementacja  
  Analizator należy określić wartość wyzwalacza <xref:Microsoft.VisualStudio.Package.TokenTriggers> jest ustawiona, gdy znajdzie znaku początkowego listy parametrów (często nawias otwierający). Powinny one ustawione <xref:Microsoft.VisualStudio.Package.TokenTriggers> wyzwalania, gdy znajdzie parametr separatora (często przecinkami). To powoduje, że informacje o parametrach etykietkę narzędzia do zaktualizowania i Pokaż następny parametr pogrubioną czcionką. Analizator należy określić wartość wyzwalacza <xref:Microsoft.VisualStudio.Package.TokenTriggers> podczas jeśli znajdzie znak końcowy listy parametrów (często nawiasu zamykającego).  
@@ -37,7 +37,7 @@ Informacje o parametrach funkcji IntelliSense jest znak (zazwyczaj nawias otwier
  <xref:Microsoft.VisualStudio.Package.TokenTriggers> Wartość wyzwalacza inicjuje wywołanie <xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A> metody, która z kolei wywołuje <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> analizatora metoda przyczynę analizy <xref:Microsoft.VisualStudio.Package.ParseReason>. Jeżeli analizator Określa, czy identyfikator przed znak początkowy listy parametrów jest nazwę metody rozpoznany, zwraca listę zgodnych podpisy metod w <xref:Microsoft.VisualStudio.Package.AuthoringScope> obiektu. Jeśli znaleziono żadnych podpisów metody, informacje o parametrach zostanie wyświetlony podpisem pierwszy na liście. Ta etykietka narzędzia jest następnie aktualizowany jako jeden podpis jest wpisane. Po wpisaniu znaku zakończenia listy parametrów Parameter Info etykietki narzędzia jest usuwany z widoku.  
   
 > [!NOTE]
->  Aby upewnić się, że informacje o parametrach etykietki narzędzia jest poprawnie sformatowana, konieczne jest przesłonięcie właściwości na <xref:Microsoft.VisualStudio.Package.Methods> klasy, aby podać odpowiednie znaki. Podstawa <xref:Microsoft.VisualStudio.Package.Methods> klasa działa według założenia C# — styl podpis metody. Zobacz <xref:Microsoft.VisualStudio.Package.Methods> klasy, aby uzyskać szczegółowe informacje, w jaki sposób można to zrobić.  
+> Aby upewnić się, że informacje o parametrach etykietki narzędzia jest poprawnie sformatowana, konieczne jest przesłonięcie właściwości na <xref:Microsoft.VisualStudio.Package.Methods> klasy, aby podać odpowiednie znaki. Podstawa <xref:Microsoft.VisualStudio.Package.Methods> klasa działa według założenia C# — styl podpis metody. Zobacz <xref:Microsoft.VisualStudio.Package.Methods> klasy, aby uzyskać szczegółowe informacje, w jaki sposób można to zrobić.  
   
 ## <a name="enabling-support-for-the-parameter-info"></a>Włączanie obsługi, aby uzyskać informacje o parametrach  
  Aby zapewnić obsługę etykietek narzędzi Parameter Info, należy ustawić `ShowCompletion` o nazwie parametru <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> do `true`. Usługa językowa odczytuje wartość tego wpisu rejestru z <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> właściwości.  

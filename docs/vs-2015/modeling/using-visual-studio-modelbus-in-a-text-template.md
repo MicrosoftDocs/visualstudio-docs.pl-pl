@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9ed19a280f791fa857ffbf00ba25aa18c490aa65
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 58a7d726d08b80600e3351b6324733d6ffdcf611
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444649"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Użycie programu Visual Studio ModelBus w szablonie tekstu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Jeśli piszesz szablony tekstowe, które odczytują modelu, który zawiera [!INC
 - Szablon musi dziedziczyć <xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>.
 
 > [!NOTE]
->  Jeśli chcesz odczytać DSL modeli, które nie zawierają odwołań ModelBus, można użyć procesorów dyrektyw, które są generowane w projektach języka DSL. Aby uzyskać więcej informacji, zobacz [uzyskiwania dostępu do modeli z poziomu szablonów tekstu](../modeling/accessing-models-from-text-templates.md).
+> Jeśli chcesz odczytać DSL modeli, które nie zawierają odwołań ModelBus, można użyć procesorów dyrektyw, które są generowane w projektach języka DSL. Aby uzyskać więcej informacji, zobacz [uzyskiwania dostępu do modeli z poziomu szablonów tekstu](../modeling/accessing-models-from-text-templates.md).
 
  Aby uzyskać więcej informacji na temat szablonów tekstowych, zobacz [generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 

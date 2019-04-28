@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 213237037225b18128ab149f384466e5fab0d668
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd50f4c80e5e67f6fb7582dc2bc22963151b42fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433117"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definiowanie procedury obsługi łącza elementu roboczego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,7 +152,7 @@ namespace WorkItems
  Do celów testowych wykonaj procedurę obsługi łącza w trybie debugowania.  
   
 > [!WARNING]
->  Możesz musi już być podłączony do TFS źródła kodu kontrolki (SCC) można utworzyć lub połączyć elementu roboczego. Jeśli próbujesz nawiązać połączenie z inną SCC TFS, Visual Studio powoduje zamknięcie bieżącego rozwiązania automatycznie. Upewnij się, że jesteś podłączony do odpowiednich SCC przed przystąpieniem do tworzenia lub łącze do elementu roboczego. W kolejnych wersjach programu Visual Studio polecenia menu nie są dostępne, jeśli nie są połączone SCC.  
+> Możesz musi już być podłączony do TFS źródła kodu kontrolki (SCC) można utworzyć lub połączyć elementu roboczego. Jeśli próbujesz nawiązać połączenie z inną SCC TFS, Visual Studio powoduje zamknięcie bieżącego rozwiązania automatycznie. Upewnij się, że jesteś podłączony do odpowiednich SCC przed przystąpieniem do tworzenia lub łącze do elementu roboczego. W kolejnych wersjach programu Visual Studio polecenia menu nie są dostępne, jeśli nie są połączone SCC.  
   
 #### <a name="to-test-the-link-handler"></a>Testowanie obsługi łącza  
   
@@ -221,7 +221,7 @@ public void OnWorkItemLinked
 ```  
   
 > [!NOTE]
->  Aby ten przykład działał, należy dodać odwołanie projektu do `System.Drawing.dll`i zaimportuj przestrzeń nazw `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`. Jednak te dodatki nie są wymagane dla innych implementacji `OnWorkItemLinked`.  
+> Aby ten przykład działał, należy dodać odwołanie projektu do `System.Drawing.dll`i zaimportuj przestrzeń nazw `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`. Jednak te dodatki nie są wymagane dla innych implementacji `OnWorkItemLinked`.  
   
 ### <a name="listening-for-link-removal"></a>Nasłuchiwanie usuwania łącza  
  `OnWorkItemRemoved` jest wywoływana, gdy tuż przed każdym łączem do elementu roboczego, który jest skreślony. Jeśli element modelu zostanie usunięty, wszystkie jego łącza zostaną usunięte.  

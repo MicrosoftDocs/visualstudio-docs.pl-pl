@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78026f091d9ed61d38d5cf9bd98ec16d85e193c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c9e41b99e7f2dd9349bc04bd4988dbf103095c94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441632"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Dostosowanie map kodu przez edycję plików DGML
 
@@ -117,7 +117,7 @@ Edytuj plik .dgml mapy kodu w edytorze tekstu lub edytorze XML. Jeśli mapa jest
 - Grupy elementów kodu i linków na podstawie określonych warunków
 
 > [!TIP]
->  Jeśli masz powtarzające się style w wielu elementów kodu lub łączy, można rozważyć zastosowanie kategorii do tych elementów kodu lub łącza, a następnie zastosowanie stylu do tej kategorii. Aby uzyskać więcej informacji, zobacz [Przypisz kategorie do elementów kodu i linków](#AssignCategories) i [przypisz właściwości do elementów kodu i linków](#AssignProperties).
+> Jeśli masz powtarzające się style w wielu elementów kodu lub łączy, można rozważyć zastosowanie kategorii do tych elementów kodu lub łącza, a następnie zastosowanie stylu do tej kategorii. Aby uzyskać więcej informacji, zobacz [Przypisz kategorie do elementów kodu i linków](#AssignCategories) i [przypisz właściwości do elementów kodu i linków](#AssignProperties).
 
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>Aby zastosować styl niestandardowy do pojedynczego elementu kodu
 
@@ -555,7 +555,7 @@ Edytuj plik .dgml mapy kodu w edytorze tekstu lub edytorze XML. Jeśli mapa jest
  Możesz połączyć dokumenty lub adresy URL do elementów kodu lub łącza, edytując plik .dgml mapy i dodawanie `Reference` atrybutu `<Node/>` elementu dla elementu kodu lub `<Link/>` dla łącza. Następnie można otworzyć i wyświetlić tę zawartość z elementu kodu lub łącza. `Reference` Atrybut określa ścieżkę tej zawartości. Może to być ścieżka względem lokalizacji pliku .dgml lub ścieżka bezwzględna.
 
 > [!CAUTION]
->  Jeśli używane są ścieżki względne, a plik .dgml zostanie przeniesiony do innej lokalizacji, ścieżki te nie zostaną rozpoznane. Podczas próby otwarcia i wyświetlenia połączonej zawartości pojawi się komunikat o błędzie z informacją, że nie można wyświetlić zawartości.
+> Jeśli używane są ścieżki względne, a plik .dgml zostanie przeniesiony do innej lokalizacji, ścieżki te nie zostaną rozpoznane. Podczas próby otwarcia i wyświetlenia połączonej zawartości pojawi się komunikat o błędzie z informacją, że nie można wyświetlić zawartości.
 
  Na przykład można połączyć następujące elementy kodu:
 
@@ -580,7 +580,7 @@ Edytuj plik .dgml mapy kodu w edytorze tekstu lub edytorze XML. Jeśli mapa jest
    - W `<Node/>` lub `<Link/>` elementu Dodawanie `Reference` atrybutu, aby określić lokalizację elementu kodu.
 
      > [!NOTE]
-     >  Może mieć tylko jeden `Reference` atrybutu dla każdego elementu.
+     > Może mieć tylko jeden `Reference` atrybutu dla każdego elementu.
 
      Na przykład:
 

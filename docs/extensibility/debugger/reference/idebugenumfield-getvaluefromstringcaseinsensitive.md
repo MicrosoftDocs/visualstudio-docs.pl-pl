@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: db1efb094694863f4deda8a7c2f380077f952a1a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62874775"
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
 Ta metoda używa wyszukiwanie bez uwzględniania wielkości liter w celu zwrócenia wartości skojarzone z nazwą stała wyliczenia.

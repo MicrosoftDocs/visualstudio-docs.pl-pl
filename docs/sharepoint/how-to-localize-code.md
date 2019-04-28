@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbcf07b462e280f522741b8329d34c2907f5b454
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8b848bdb4d0b71f5762601204195f0e81a1c2733
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443092"
 ---
 # <a name="how-to-localize-code"></a>Instrukcje: Lokalizowanie kodu
   Niezlokalizowany kod używa ciągu ustalonych wartości. Aby zlokalizowania ciągi kodów, zastąp je wywołaniami do <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, czyli metody, która odwołuje się do zlokalizowanych zasobów.
@@ -32,7 +32,7 @@ ms.locfileid: "60066289"
      Wybierz **plik zasobów** szablonu.
 
     > [!NOTE]
-    >  Pamiętaj dodać plik zasobów do elementu projektu programu SharePoint, tak aby właściwość typu wdrażania była dostępna. Ta właściwość jest wymagana w dalszej części tej procedury.
+    > Pamiętaj dodać plik zasobów do elementu projektu programu SharePoint, tak aby właściwość typu wdrażania była dostępna. Ta właściwość jest wymagana w dalszej części tej procedury.
 
 2. Nadaj plikowi zasobów języka domyślnego nazwę wybraną z dołączonym *resx* rozszerzenia, takie jak *MyAppResources.resx*.
 

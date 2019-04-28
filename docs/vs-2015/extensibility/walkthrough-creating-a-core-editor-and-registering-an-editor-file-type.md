@@ -10,12 +10,12 @@ ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9e900fa7d7bb65d5f55faab00c779247114278eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c791d991f797a9ccc581fa6d79b0400c17c84e0e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442273"
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Przewodnik: Tworzenie edytorze podstawowych i rejestrowanie typu pliku w edytorze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,25 +28,25 @@ W tym instruktażu przedstawiono sposób tworzenia pakietu VSPackage, który roz
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Lokalizacje szablonów projektu pakietu programu Visual Studio  
  Szablon projektu pakietu Visual Studio można znaleźć w trzech różnych miejscach w **nowy projekt** okno dialogowe:  
   
-1.  W obszarze rozszerzalności programu Visual Basic. Domyślny język projektu jest języka Visual Basic.  
+1. W obszarze rozszerzalności programu Visual Basic. Domyślny język projektu jest języka Visual Basic.  
   
-2.  W języku C# rozszerzalności. Domyślny język projektu jest C#.  
+2. W języku C# rozszerzalności. Domyślny język projektu jest C#.  
   
-3.  W obszarze inne rozszerzalności typów projektów. Domyślny język projektu jest w języku C++.  
+3. W obszarze inne rozszerzalności typów projektów. Domyślny język projektu jest w języku C++.  
   
 ### <a name="to-create-the-vspackage"></a>Do utworzenia pakietu VSPackage  
   
--   Rozpocznij [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i utworzyć [!INCLUDE[csprcs](../includes/csprcs-md.md)] pakietu VSPackage o nazwie `MyPackage`, zgodnie z opisem w [instruktażu: Tworzenie pakietu VSPackage polecenia Menu](http://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32).  
+- Rozpocznij [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i utworzyć [!INCLUDE[csprcs](../includes/csprcs-md.md)] pakietu VSPackage o nazwie `MyPackage`, zgodnie z opisem w [instruktażu: Tworzenie pakietu VSPackage polecenia Menu](http://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32).  
   
 ### <a name="to-add-the-editor-factory"></a>Aby dodać fabryka edytorów  
   
-1.  Kliknij prawym przyciskiem myszy **MyPackage** projekt, wskaż opcję **Dodaj** a następnie kliknij przycisk **klasy**.  
+1. Kliknij prawym przyciskiem myszy **MyPackage** projekt, wskaż opcję **Dodaj** a następnie kliknij przycisk **klasy**.  
   
-2.  W **Dodaj nowy element** okna dialogowego pole, upewnij się, **klasy** zaznaczony jest szablon, typ `EditorFactory.cs` nazwę, a następnie kliknij przycisk **Dodaj** Aby dodać klasę do projektu.  
+2. W **Dodaj nowy element** okna dialogowego pole, upewnij się, **klasy** zaznaczony jest szablon, typ `EditorFactory.cs` nazwę, a następnie kliknij przycisk **Dodaj** Aby dodać klasę do projektu.  
   
      Plik EditorFactory.cs powinien zostać automatycznie otwarty.  
   
-3.  Odwołuje się do następujących zestawów w kodzie.  
+3. Odwołuje się do następujących zestawów w kodzie.  
   
     ```vb  
     Imports System.Runtime.InteropServices  
@@ -69,7 +69,7 @@ W tym instruktażu przedstawiono sposób tworzenia pakietu VSPackage, który roz
   
     ```  
   
-4.  Dodaj identyfikator GUID, `EditorFactory` klasy, dodając `Guid` atrybut bezpośrednio przed deklaracją klasy.  
+4. Dodaj identyfikator GUID, `EditorFactory` klasy, dodając `Guid` atrybut bezpośrednio przed deklaracją klasy.  
   
      Nowy identyfikator GUID można wygenerować za pomocą programu guidgen.exe w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wierszu polecenia, lub przez kliknięcie przycisku **Utwórz GUID** na **narzędzia** menu. Identyfikator GUID używany w tym miejscu jest tylko przykładem; nie należy używać go w projekcie.  
   
@@ -81,7 +81,7 @@ W tym instruktażu przedstawiono sposób tworzenia pakietu VSPackage, który roz
     [Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")]   
     ```  
   
-5.  W definicji klasy Dodaj dwie zmienne prywatne pakietu podrzędnego i dostawcy usług.  
+5. W definicji klasy Dodaj dwie zmienne prywatne pakietu podrzędnego i dostawcy usług.  
   
     ```vb  
     Class EditorFactory  
@@ -98,7 +98,7 @@ W tym instruktażu przedstawiono sposób tworzenia pakietu VSPackage, który roz
   
     ```  
   
-6.  Dodaj Konstruktor klasę publiczną, która przyjmuje jeden parametr typu <xref:Microsoft.VisualStudio.Shell.Package>:  
+6. Dodaj Konstruktor klasę publiczną, która przyjmuje jeden parametr typu <xref:Microsoft.VisualStudio.Shell.Package>:  
   
     ```vb  
     Public Sub New(ByVal parentPackage As Package)  
@@ -113,7 +113,7 @@ W tym instruktażu przedstawiono sposób tworzenia pakietu VSPackage, który roz
     }  
     ```  
   
-7.  Modyfikowanie `EditorFactory` deklaracji pochodzić od klasy <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfejsu.  
+7. Modyfikowanie `EditorFactory` deklaracji pochodzić od klasy <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfejsu.  
   
     ```vb  
     Class EditorFactory Implements IVsEditorFacto  
@@ -124,7 +124,7 @@ W tym instruktażu przedstawiono sposób tworzenia pakietu VSPackage, który roz
   
     ```  
   
-8.  Kliknij prawym przyciskiem myszy <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>, kliknij przycisk **implementuj interfejs**, a następnie kliknij przycisk **implementuj interfejs jawnie**.  
+8. Kliknij prawym przyciskiem myszy <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>, kliknij przycisk **implementuj interfejs**, a następnie kliknij przycisk **implementuj interfejs jawnie**.  
   
      Spowoduje to dodanie czterech metod, które muszą zostać zaimplementowane w <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfejsu.  
   
@@ -320,20 +320,20 @@ W tym instruktażu przedstawiono sposób tworzenia pakietu VSPackage, który roz
   
 ### <a name="to-register-the-editor-factory"></a>Aby zarejestrować fabryki edytora  
   
-1.  W **Eksploratora rozwiązań**, kliknij dwukrotnie plik Resources.resx, aby otworzyć go do tabeli ciągów, w którym wpis **ciąg1 jest** wybrane.  
+1. W **Eksploratora rozwiązań**, kliknij dwukrotnie plik Resources.resx, aby otworzyć go do tabeli ciągów, w którym wpis **ciąg1 jest** wybrane.  
   
-2.  Zmień nazwę identyfikator ma `IDS_EDITORNAME` i tekst, który ma **MyPackage edytora.** Ten ciąg pojawi się jako nazwa edytora.  
+2. Zmień nazwę identyfikator ma `IDS_EDITORNAME` i tekst, który ma **MyPackage edytora.** Ten ciąg pojawi się jako nazwa edytora.  
   
-3.  Otwórz plik VSPackage.resx i Dodaj nowy ciąg, ustaw nazwę na **101** i wartości do `IDS_EDITORNAME`. Zapewnia to pakiet o identyfikatorze zasobu, aby dostęp do ciągu, który został utworzony.  
+3. Otwórz plik VSPackage.resx i Dodaj nowy ciąg, ustaw nazwę na **101** i wartości do `IDS_EDITORNAME`. Zapewnia to pakiet o identyfikatorze zasobu, aby dostęp do ciągu, który został utworzony.  
   
     > [!NOTE]
-    >  Jeśli plik VSPackage.resx zawiera inny ciąg, który `name` ustawioną wartość atrybutu **101**, zastąpić inną wartość liczbową, unikatową, w tym miejscu i w poniższych krokach.  
+    > Jeśli plik VSPackage.resx zawiera inny ciąg, który `name` ustawioną wartość atrybutu **101**, zastąpić inną wartość liczbową, unikatową, w tym miejscu i w poniższych krokach.  
   
-4.  W **Eksploratora rozwiązań**, otwórz plik MyPackagePackage.cs.  
+4. W **Eksploratora rozwiązań**, otwórz plik MyPackagePackage.cs.  
   
      To jest plik pakietu głównego.  
   
-5.  Dodaj następujące atrybuty użytkownika tuż przed `Guid` atrybutu.  
+5. Dodaj następujące atrybuty użytkownika tuż przed `Guid` atrybutu.  
   
     ```vb  
     <ProvideEditorFactoryAttribute(GetType(EditorFactory), 101)> _  
@@ -349,7 +349,7 @@ W tym instruktażu przedstawiono sposób tworzenia pakietu VSPackage, który roz
   
      <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> Atrybut kojarzy rozszerzenie pliku .myext z fabryką edytora, aby w dowolnym momencie pliku, który ma, że rozszerzenie jest ładowany, fabryką edytora jest wywoływana.  
   
-6.  Dodaj zmienną prywatną do `MyPackage` klasy tuż przed konstruktora i przypisz do niego typ `EditorFactory`.  
+6. Dodaj zmienną prywatną do `MyPackage` klasy tuż przed konstruktora i przypisz do niego typ `EditorFactory`.  
   
     ```vb  
     Private editorFactory As EditorFactory  
@@ -359,7 +359,7 @@ W tym instruktażu przedstawiono sposób tworzenia pakietu VSPackage, który roz
     private EditorFactory editorFactory;  
     ```  
   
-7.  Znajdź `Initialize` — metoda (może być konieczne otwarcie `Package Members` ukryty region) i Dodaj następujący kod po wywołaniu `base.Initialize()`.  
+7. Znajdź `Initialize` — metoda (może być konieczne otwarcie `Package Members` ukryty region) i Dodaj następujący kod po wywołaniu `base.Initialize()`.  
   
     ```vb  
     'Create our editor factory and register it.   
@@ -374,7 +374,7 @@ W tym instruktażu przedstawiono sposób tworzenia pakietu VSPackage, który roz
   
     ```  
   
-8.  Skompiluj program i upewnij się, że nie ma żadnych błędów.  
+8. Skompiluj program i upewnij się, że nie ma żadnych błędów.  
   
      W tym kroku rejestruje fabryka edytora w gałęzi rejestru eksperymentalne dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Jeśli zostanie wyświetlony monit, aby zastąpić ten plik resource.h, kliknij przycisk **OK**.  
   

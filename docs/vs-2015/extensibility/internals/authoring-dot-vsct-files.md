@@ -10,12 +10,12 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 853a3f8db3623156e000c9360981933091ef9afd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 85e466e7ebb6294a77e89040260c16fe0043e372
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437667"
 ---
 # <a name="authoring-vsct-files"></a>Tworzenie. Pliki Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ W tym dokumencie przedstawiono sposób tworzenie pliku vsct, aby dodać elementy
     Ustaw `guid` i `id` atrybuty `Menu` elementu, a następnie ustaw `type` atrybutu rodzaj elementu menu, które chcesz. Możesz też ustawić opcję `priority` atrybutu, aby ustanowić względne położenie menu w grupie nadrzędnej.  
   
    > [!NOTE]
-   >  `priority` Atrybut nie ma zastosowania do pasków narzędzi i menu kontekstowego.  
+   > `priority` Atrybut nie ma zastosowania do pasków narzędzi i menu kontekstowego.  
   
 2. Wszystkie polecenia w środowisku IDE programu Visual Studio musi być hostowany przez polecenie grup, które są bezpośrednimi elementami podrzędnymi menu i paski narzędzi. Jeśli dodajesz nowe menu i paski narzędzi do środowiska IDE programu zawierają one nowe grupy polecenia. Może również dodać grup poleceń do istniejącego menu i paski narzędzi, dzięki czemu można pogrupować poleceń.  
   
@@ -99,14 +99,14 @@ W tym dokumencie przedstawiono sposób tworzenie pliku vsct, aby dodać elementy
    1. Ustaw `guid` i `id` atrybuty każdego `Button` elementu, a następnie ustaw `type` atrybutu z rodzajem przycisku. Możesz też ustawić opcję `priority` atrybutu, aby ustanowić względne położenie polecenia w grupie nadrzędnej.  
   
       > [!NOTE]
-      >  Użyj `type="button"` polecenia standardowe menu i przycisków na paskach narzędzi.  
+      > Użyj `type="button"` polecenia standardowe menu i przycisków na paskach narzędzi.  
   
    2. W `Button` elementu Dodawanie [ciągi](../../extensibility/strings-element.md) element, który zawiera [ButtonText](../../extensibility/buttontext-element.md) elementu i [CommandName](../../extensibility/commandname-element.md) elementu. `ButtonText` Element udostępnia etykietę tekstową dla elementu menu lub etykietkę narzędzia dla przycisku paska narzędzi. `CommandName` Element zawiera nazwę polecenia można również użyć w poleceniu.  
   
    3. Jeśli polecenie będzie miał ikony, należy utworzyć [ikonę](../../extensibility/icon-element.md) elementu w `Button` elementu, a następnie ustaw jego `guid` i `id` atrybuty do `Bitmap` element ikony.  
   
       > [!NOTE]
-      >  Przyciski paska narzędzi muszą mieć ikon.  
+      > Przyciski paska narzędzi muszą mieć ikon.  
   
       Aby uzyskać więcej informacji, zobacz [MenuCommands programu Vs. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md).  
   

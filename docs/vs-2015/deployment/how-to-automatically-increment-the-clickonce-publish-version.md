@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ab2dc62add13db9af1186a8974ffe5694a98e62e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e82d8019a55af9909b4b623622ac8ff52c565dfb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442186"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Instrukcje: Automatyczne zwiększanie wersji publikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] apli
  To zachowanie można wyłączyć na **Publikuj** strony **projektanta projektu**.  
   
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-disable-automatically-incrementing-the-publish-version"></a>Aby wyłączyć automatyczne zwiększenie wersji publikowania  
   

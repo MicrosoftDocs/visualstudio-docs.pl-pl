@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cfaa260b32deb2cb91b27dfcaa910e950ee00752
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffa7923bbe7e8a7b44fec280a5528ab023feed37
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444697"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Instrukcje: Edytowanie konfiguracji wdrażania SharePoint
   Można utworzyć konfiguracji wdrożenia lub Modyfikuj istniejącą konfigurację wdrożenia. Na przykład możesz uruchomić jednym kroku lub zmiana kolejności kroków w procesie wdrażania. Można tworzyć lub modyfikować konfiguracje wdrożenia, ponieważ nie można zmienić konfiguracji programowo dodanych i wbudowane.
@@ -39,7 +39,7 @@ ms.locfileid: "60093712"
 4. W **dostępne kroki związane z wdrażaniem** okienku wybierz kroki, które chcesz dodać do konfiguracji wdrożenia, wybierz (**>**) przycisk, a następnie wybierz **OK** przycisku.
 
     > [!NOTE]
-    >  Po skonfigurowaniu polecenia przed wdrożeniem lub polecenia po wdrożeniu te kroki uruchamiane tylko wtedy, gdy należy dodać je do konfiguracji wdrożenia dostosowane.
+    > Po skonfigurowaniu polecenia przed wdrożeniem lub polecenia po wdrożeniu te kroki uruchamiane tylko wtedy, gdy należy dodać je do konfiguracji wdrożenia dostosowane.
 
 ## <a name="change-the-active-deployment-configuration"></a>Zmiana konfiguracji aktywnego wdrożenia
 

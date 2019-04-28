@@ -24,12 +24,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e971271d17c88780ec543ffc12ed4c6ebcc48f23
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a4864d37cb5930075b292ee765bce9b288794019
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444991"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Zabezpieczenia, przechowywanie wersji i problemy z manifestami we wdrożeniach ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +88,7 @@ Istnieją różne problemy z [!INCLUDE[ndptecclick](../includes/ndptecclick-md.m
  Jeśli chcesz przenieść lub kopiowania aplikacji, należy również zaktualizować `deploymentProvider` ścieżki, tak aby rzeczywiście instalacji klienta z nowej lokalizacji. Aktualizacja ta ścieżka jest przede wszystkim istotna, po zainstalowaniu aplikacji. Dla aplikacji online, które są zawsze uruchamiany za pośrednictwem oryginalny adres URL, ustawienie `deploymentProvider` jest opcjonalne. Jeśli `deploymentProvider` jest ustawiony, będą honorowane; w przeciwnym razie adres URL używany do uruchamiania aplikacji będzie służyć jako podstawowy adres URL do pobierania plików aplikacji.  
   
 > [!NOTE]
->  Każdym zaktualizowanie manifestu należy również podpisać go ponownie.  
+> Każdym zaktualizowanie manifestu należy również podpisać go ponownie.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozwiązywanie problemów z wdrożeniami ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   

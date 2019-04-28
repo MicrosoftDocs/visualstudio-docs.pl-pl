@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e329631f0bdeb79a068e4a791158f94cec3904ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d2ad5a5424844896541e46d2afbc158320c7e5a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442397"
 ---
 # <a name="outlook-object-model-overview"></a>Model obiektu Outlook ― omówienie
   Tworzenie dodatków narzędzi VSTO dla programu Microsoft Office Outlook, możesz korzystać z obiektami, które są dostarczane przez model obiektów programu Outlook. Model obiektu Outlook zawiera klasy i interfejsy, które reprezentują elementy interfejsu użytkownika. Na przykład <xref:Microsoft.Office.Interop.Outlook.Application> obiekt reprezentuje całej aplikacji, <xref:Microsoft.Office.Interop.Outlook.Folder> obiekt reprezentuje folder, który zawiera wiadomości e-mail lub innych elementów i <xref:Microsoft.Office.Interop.Outlook.MailItem> obiekt reprezentuje wiadomości e-mail.
@@ -65,7 +65,7 @@ ms.locfileid: "60061934"
   Aby pobrać wystąpienie obiektu <xref:Microsoft.Office.Interop.Outlook.Application> obiektu, należy użyć aplikacji zakresie `ThisAddIn` klasy w projekcie. Aby uzyskać więcej informacji, zobacz [dodatków narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md).
 
 > [!NOTE]
->  Aby uniknąć wyświetlania ostrzeżenia o zabezpieczeniach podczas korzystania z właściwości i metod, które są blokowane przez strażnik modelu obiektów programu Outlook, uzyskiwanie obiektów programu Outlook w polu aplikacji `ThisAddIn` klasy. Aby uzyskać więcej informacji, zobacz [zagadnienia dotyczące zabezpieczeń określone dla rozwiązań pakietu Office](../vsto/specific-security-considerations-for-office-solutions.md).
+> Aby uniknąć wyświetlania ostrzeżenia o zabezpieczeniach podczas korzystania z właściwości i metod, które są blokowane przez strażnik modelu obiektów programu Outlook, uzyskiwanie obiektów programu Outlook w polu aplikacji `ThisAddIn` klasy. Aby uzyskać więcej informacji, zobacz [zagadnienia dotyczące zabezpieczeń określone dla rozwiązań pakietu Office](../vsto/specific-security-considerations-for-office-solutions.md).
 
 ### <a name="explorer-object"></a>Eksplorator obiektów
  <xref:Microsoft.Office.Interop.Outlook.Explorer> Obiekt reprezentuje okno które wyświetla zawartość folderu, który zawiera elementy, takie jak wiadomości e-mail, zadania lub terminy. <xref:Microsoft.Office.Interop.Outlook.Explorer> Obiekt zawiera metody i właściwości, które służy do modyfikowania okna i zdarzenia, które są wywoływane, gdy zmieni się okna.

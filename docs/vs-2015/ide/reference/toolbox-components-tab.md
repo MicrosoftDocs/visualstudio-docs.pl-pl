@@ -11,12 +11,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ebbf8a0492537ee40062fb17bb338d46c228a9a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: b4e7cb0a1a55402ee457204227bad540a6120dfc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419679"
 ---
 # <a name="toolbox-components-tab"></a>Przybornik, karta Składniki
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Wyświetla składniki, które można dodać do [!INCLUDE[vbprvb](../../includes/
  Tworzy <xref:System.Windows.Forms.Timer> wystąpienie składnika można użyć, aby dodać funkcje oparte na czasie do aplikacji z systemem Windows. Aby uzyskać więcej informacji, zobacz [składnika Timer formularzy](http://msdn.microsoft.com/library/6700e534-6382-43d5-98ed-14205435fff7).  
   
 > [!NOTE]
->  Istnieje również opartych na systemie <xref:System.Timers.Timer> , można dodać do **przybornika** to <xref:System.Timers.Timer> jest zoptymalizowany dla aplikacji serwerowych i formularze Windows <xref:System.Windows.Forms.Timer> najlepiej nadaje się do użycia w formularzach Windows Forms.  
+> Istnieje również opartych na systemie <xref:System.Timers.Timer> , można dodać do **przybornika** to <xref:System.Timers.Timer> jest zoptymalizowany dla aplikacji serwerowych i formularze Windows <xref:System.Windows.Forms.Timer> najlepiej nadaje się do użycia w formularzach Windows Forms.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Programowanie przy użyciu składników](http://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)   

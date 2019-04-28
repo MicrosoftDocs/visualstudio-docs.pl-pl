@@ -8,11 +8,11 @@ ms.author: gregvanl
 ms.workload:
 - vssdk
 ms.openlocfilehash: 99b23c223d91678f03a52910ed4516be0839a338
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862573"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Instrukcje: Używanie klasy AsyncPackage do ładowania pakietów VSPackages w tle
 Ładowanie i Inicjowanie pakietu programu VS może spowodować We/Wy dysku. W przypadku takich operacji We/Wy na wątek interfejsu użytkownika, może to prowadzić do problemów z czasem odpowiedzi. Aby rozwiązać ten problem, Visual Studio 2015 wprowadzono <xref:Microsoft.VisualStudio.Shell.AsyncPackage> klasy, który umożliwia ładowanie pakiet w wątku tła.

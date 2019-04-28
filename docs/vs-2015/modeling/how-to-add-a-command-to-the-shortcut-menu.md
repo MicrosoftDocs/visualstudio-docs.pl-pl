@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7692e418c3e01b89a8dcf775350c062600351ac3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bcb562d89ee68320c48cc778be3294a2af5c719
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426947"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Instrukcje: Dodawanie polecenia do menu skrótów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Polecenia menu można dodać do języka specyficznego dla domeny (DSL), dzięki 
    Aby uzyskać przykłady, zobacz [wizualizacji i modelowania SDK witryny sieci Web](http://go.microsoft.com/fwlink/?LinkID=185579).  
   
 > [!NOTE]
->  Można również zmodyfikować zachowanie niektórych istniejących poleceń, takich jak Wytnij, Wklej, zaznacz wszystko i drukowania, poprzez zastąpienie metody CommandSet.cs. Aby uzyskać więcej informacji, zobacz [jak: Modyfikowanie standardowego polecenia Menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
+> Można również zmodyfikować zachowanie niektórych istniejących poleceń, takich jak Wytnij, Wklej, zaznacz wszystko i drukowania, poprzez zastąpienie metody CommandSet.cs. Aby uzyskać więcej informacji, zobacz [jak: Modyfikowanie standardowego polecenia Menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
   
 ## <a name="defining-a-command-using-mef"></a>Definiowanie polecenia, za pomocą MEF  
  Zarządzane rozszerzenia Framework (MEF) zapewnia alternatywny sposób definiowania polecenia menu w menu diagramu. Ich głównym celem jest umożliwiające DSL być rozszerzony przez Ciebie lub innych stron. Użytkowników można wybrać opcję zainstalowania tylko DSL lub zainstalować DSL i rozszerzeń. MEF zmniejsza również pracy Definiowanie polecenia menu skrótów, po początkowej pracy, aby umożliwić MEF na język DSL.  
@@ -90,7 +90,7 @@ Polecenia menu można dodać do języka specyficznego dla domeny (DSL), dzięki 
     ```  
   
     > [!NOTE]
-    >  Każdy przycisk lub grupa jest identyfikowana przez identyfikator GUID i liczby całkowitej. Można utworzyć kilka grup i przyciski, za pomocą tego samego identyfikatora GUID. Jednak musi mieć różne identyfikatory. Do nazw identyfikator GUID i identyfikator są tłumaczone na rzeczywistych identyfikatorów GUID i identyfikatory numeryczne w `<Symbols>` węzła.  
+    > Każdy przycisk lub grupa jest identyfikowana przez identyfikator GUID i liczby całkowitej. Można utworzyć kilka grup i przyciski, za pomocą tego samego identyfikatora GUID. Jednak musi mieć różne identyfikatory. Do nazw identyfikator GUID i identyfikator są tłumaczone na rzeczywistych identyfikatorów GUID i identyfikatory numeryczne w `<Symbols>` węzła.  
   
 3. Dodaj ograniczenie widoczności dla polecenia, więc, że jest załadowany tylko w kontekście języka specyficznego dla domeny. Aby uzyskać więcej informacji, zobacz [VisibilityConstraints, Element](../extensibility/visibilityconstraints-element.md).  
   
@@ -120,7 +120,7 @@ Polecenia menu można dodać do języka specyficznego dla domeny (DSL), dzięki 
 5. Zastąp `{000...000}` o identyfikatorze GUID, który identyfikuje elementy menu i grupy. Aby uzyskać nowy identyfikator GUID, użyj **Utwórz GUID** narzędzie **narzędzia** menu.  
   
     > [!NOTE]
-    >  Jeśli dodasz więcej grup lub elementy menu, można użyć tego samego identyfikatora GUID. Jednakże, należy użyć nowych wartości dla `IDSymbols`.  
+    > Jeśli dodasz więcej grup lub elementy menu, można użyć tego samego identyfikatora GUID. Jednakże, należy użyć nowych wartości dla `IDSymbols`.  
   
 6. W kodzie skopiowanych z tej procedury Zastąp każde wystąpienie następujących ciągów własne ciągi:  
   
@@ -298,7 +298,7 @@ private const int cmdidMyContextMenuCommand = 1;
  Użyj tej samej wartości identyfikatora GUID jako wstawione w **Commands.vsct**.  
   
 > [!NOTE]
->  Jeśli zmienisz symbole części pliku VSCT, należy także zmienić te deklaracje do dopasowania. Należy również zwiększenie numeru wersji Package.tt  
+> Jeśli zmienisz symbole części pliku VSCT, należy także zmienić te deklaracje do dopasowania. Należy również zwiększenie numeru wersji Package.tt  
   
  Zarejestruj poleceń menu jako część tego zestawu poleceń. `GetMenuCommands()` jest wywoływana, gdy po zainicjowaniu diagramu:  
   

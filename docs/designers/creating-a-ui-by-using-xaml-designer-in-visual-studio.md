@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 3cd26f35111fc2e79290b30e7ae488b268e558d0
-ms.sourcegitcommit: f17e3afa5c324595afccf15a8a69df8c33b873d5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58658869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899430"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Tworzenie interfejsu użytkownika przy użyciu projektanta XAML w programie Visual Studio
 
@@ -156,4 +156,4 @@ Po prawej stronie każdej właściwości jest wartość *znacznik właściwości
 
 - [Praca z elementami w projektancie XAML](../designers/working-with-elements-in-xaml-designer.md)
 - [Tworzenie i stosowanie zasobów](../designers/how-to-create-and-apply-a-resource.md)
-- [Przewodnik: Powiązanie z danymi w Projektancie XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+- [Przewodnik: wiązanie z danymi w projektancie XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

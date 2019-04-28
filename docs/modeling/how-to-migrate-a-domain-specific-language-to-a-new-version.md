@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8ca2366111e0e87e8e95db66f9bdb146016adb8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 63d313534fab789c5e4e79fb644111314e054250
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445153"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Instrukcje: Migracja języka specyficznego dla domeny do nowej wersji
 Projekty definiowanie i korzystanie z języka specyficznego dla domeny, które można migrować [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] z wersji [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] który zostało rozpowszechniać za pomocą [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
@@ -53,7 +53,7 @@ Projekty definiowanie i korzystanie z języka specyficznego dla domeny, które m
    - Wybierz projekt lub rozwiązanie, aby wyświetlić listę zmian, które spowoduje, że narzędzie.
 
        > [!NOTE]
-       >  Pola wyboru, które pojawiają się obok nazwy folderów nie mają wpływu. Należy rozwinąć foldery, aby sprawdzić, projekty i rozwiązania.
+       > Pola wyboru, które pojawiają się obok nazwy folderów nie mają wpływu. Należy rozwinąć foldery, aby sprawdzić, projekty i rozwiązania.
 
 4. Konwertowanie projektów.
 
@@ -74,7 +74,7 @@ Projekty definiowanie i korzystanie z języka specyficznego dla domeny, które m
    2. Kliknij przycisk **Przekształć wszystkie szablony** przycisku w nagłówku Eksploratora rozwiązań.
 
        > [!NOTE]
-       >  Ten krok można wprowadzić niepotrzebne. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
+       > Ten krok można wprowadzić niepotrzebne. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
 6. Zaktualizuj niestandardowy kod w projektach przekonwertowana.
 

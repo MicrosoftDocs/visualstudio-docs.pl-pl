@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2d5fdd068894434c170c2525499a41c7c14b4e2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bfd585a3185d83981d24c8dc77e62193c1363d4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442540"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60095844"
 Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagane istotne zmiany w Visual Studio tools wydajności sposób zbierania danych na tych platformach. Aplikacje Windows Store również wymagają nowych technik zbierania. W tym temacie opisano zmiany dotyczące narzędzia do oceny wydajności na platformach systemu Windows 8 i Windows Server 2012.  
   
 > [!NOTE]
->  Narzędzia do oceny wydajności dla innych obsługiwanych wersji systemu Windows (Windows 7, Windows Server 2008 R2) nie uległy zmianie.  
+> Narzędzia do oceny wydajności dla innych obsługiwanych wersji systemu Windows (Windows 7, Windows Server 2008 R2) nie uległy zmianie.  
   
 ## <a name="BKMK_In_this_topic"></a> W tym temacie  
  [Zbieranie danych w aplikacji Windows Store z poziomu środowiska IDE programu Visual Studio](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
@@ -105,7 +105,7 @@ Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymag
 - Kopiowanie i uruchom program instalacyjny narzędzia autonomicznego profilera z komputera programu Visual Studio. Programy instalacyjne znajdują się w *VSInstallDir %* **tools\performance Tools\Setups** folderu. Wybierz Instalatora systemu operacyjnego — x86/x64 64 komputera zdalnego.  
   
 > [!NOTE]
->  Aby zbierać Porada danych profilowania, należy zainstalować autonomicznego profilera z poziomu Twojej maszyny programu Visual Studio na komputerze zdalnym.  
+> Aby zbierać Porada danych profilowania, należy zainstalować autonomicznego profilera z poziomu Twojej maszyny programu Visual Studio na komputerze zdalnym.  
   
  Te profilowania funkcji i opcji nie są obsługiwane, gdy profilowanie aplikacji Windows 8 i Windows Server 2012 w wierszu polecenia:  
   

@@ -12,12 +12,12 @@ ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a1fb236a4ce3b88f97dd94867b8ff5b7403db328
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 93182d61b6ecf5bf22ea7117bf8ccfd17e2acd1a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437911"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Uzupełnianie składowych w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Uzupełnianie składowych IntelliSense jest etykietka narzędzia, która zawiera
  Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej, zobacz [rozszerzanie usług edytora i języka](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.  
+> Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.  
   
 ## <a name="how-it-works"></a>Jak to działa  
  Poniżej przedstawiono dwa sposoby, w których lista składowych jest wyświetlana przy użyciu klas MPF:  

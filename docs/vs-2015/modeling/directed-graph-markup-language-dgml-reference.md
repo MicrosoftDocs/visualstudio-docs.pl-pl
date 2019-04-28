@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9330a41d0888532640774891386011f6b8dbfc24
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0de96057326a9e4b6a64865ef34972d5542aff30
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442998"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Dokumentacja języka DGML (Directed Graph Markup Language)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Przekierowanie Graph Markup Language (DGML) opisano informacje używane do wizua
  Należy pamiętać, że niektóre wersje programu Visual Studio obsługuje tylko podzestaw możliwości DGML, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  Podczas edycji pliku .dgml technologia IntelliSense pomaga identyfikować atrybuty, które są dostępne dla każdego elementu i ich wartości. Aby określić kolor w atrybucie, użyj nazw dla pospolitych kolorów, takich jak „Niebieski” lub wartości szesnastkowych ARGB, takich jak „#ffa0b1c3”. DGML używa małego podzbioru formatów definicji koloru Windows Presentation Foundation (WPF). Aby uzyskać więcej informacji, zobacz [klasa kolory](http://go.microsoft.com/fwlink/?LinkId=182345).  
+> Podczas edycji pliku .dgml technologia IntelliSense pomaga identyfikować atrybuty, które są dostępne dla każdego elementu i ich wartości. Aby określić kolor w atrybucie, użyj nazw dla pospolitych kolorów, takich jak „Niebieski” lub wartości szesnastkowych ARGB, takich jak „#ffa0b1c3”. DGML używa małego podzbioru formatów definicji koloru Windows Presentation Foundation (WPF). Aby uzyskać więcej informacji, zobacz [klasa kolory](http://go.microsoft.com/fwlink/?LinkId=182345).  
   
 ## <a name="DGML"></a> Składnia DGML  
  W poniższej tabeli opisano rodzaje elementów, które są używane w DGML:  
@@ -70,7 +70,7 @@ Przekierowanie Graph Markup Language (DGML) opisano informacje używane do wizua
    Ten opcjonalny element zawiera listę `<Node/>` elementów, które definiują węzły na mapie. Aby uzyskać więcej informacji, zobacz `<Node/>` elementu.  
   
   > [!NOTE]
-  >  Podczas odwoływania się do niezdefiniowanego węzła w `<Link/>` element, tworzy mapę `<Node/>` elementu automatycznie.  
+  > Podczas odwoływania się do niezdefiniowanego węzła w `<Link/>` element, tworzy mapę `<Node/>` elementu automatycznie.  
   
    Przykład:  
   
@@ -151,7 +151,7 @@ Przekierowanie Graph Markup Language (DGML) opisano informacje używane do wizua
    Element ten określa pojedyncze łącze, które łączy węzeł źródłowy z węzłem docelowym. Wygląda na to, w ramach `<Links></Links>` elementu listy.  
   
   > [!NOTE]
-  >  Jeśli ten element odwołuje się do niezdefiniowanego węzła, dokument mapy automatycznie tworzy węzeł, który ma określone atrybuty, jeśli istnieje.  
+  > Jeśli ten element odwołuje się do niezdefiniowanego węzła, dokument mapy automatycznie tworzy węzeł, który ma określone atrybuty, jeśli istnieje.  
   
    Element ten musi zawierać następujące atrybuty:  
   

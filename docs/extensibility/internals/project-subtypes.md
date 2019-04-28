@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 027dc559c33b5b8f10a4555985e8b2a5a5a416c5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 73cf7fe43dcbe15bdeedf6822c9172533e6d420b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423066"
 ---
 # <a name="project-subtypes"></a>Podtypy projektów
 Podtypy projektów pozwalają dostosować lub flavor zachowanie systemów projektu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Możliwe modyfikacje obejmują zapisywanie dodatkowe dane w pliku projektu, dodawanie lub filtrowanie elementów w **Dodaj nowy element** okno dialogowe, kontrolowanie jak debugować zestawy i wdrożona i rozszerzanie projektu **właściwości Strony** okno dialogowe. Pakietów VSPackage zaimplementować podtypy projektów za pomocą modelu COM agregacji.
 
 > [!NOTE]
->  System projektów języka Visual C++ nie obsługuje podtypy projektów. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] podtypy projektów sam używa do implementacji projektów programu SQL Server i urządzenia przenośne.
+> System projektów języka Visual C++ nie obsługuje podtypy projektów. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] podtypy projektów sam używa do implementacji projektów programu SQL Server i urządzenia przenośne.
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [Projektowanie podtypów projektów](../../extensibility/internals/project-subtypes-design.md)

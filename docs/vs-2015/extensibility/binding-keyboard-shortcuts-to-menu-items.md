@@ -14,12 +14,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c799d2733c4deca07cdcbe087b1b694f9d1725e6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: fb85bc64164acc09aef6464b69e72b7c6cf46d77
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405641"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Wiązanie skrótów klawiaturowych z elementami menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Aby powiązać polecenia niestandardowego menu skrótu klawiaturowego, Dodaj odp
 4. Wypróbuj różne kombinacje klawiszy, dopóki nie znajdziesz taki, który nie jest zamapowany.  
   
    > [!NOTE]
-   >  Skróty klawiaturowe, które używają ALT może otworzyć menu i nie są bezpośrednio wykonania polecenia. W związku z tym **skrót aktualnie używany przez** pole może być pusty podczas wpisywania tekstu skrót, który zawiera ALT. Możesz sprawdzić, czy skrót nie otwiera menu przez zamknięcie **opcje** okno dialogowe, a następnie naciskając klawisze.  
+   > Skróty klawiaturowe, które używają ALT może otworzyć menu i nie są bezpośrednio wykonania polecenia. W związku z tym **skrót aktualnie używany przez** pole może być pusty podczas wpisywania tekstu skrót, który zawiera ALT. Możesz sprawdzić, czy skrót nie otwiera menu przez zamknięcie **opcje** okno dialogowe, a następnie naciskając klawisze.  
   
    W poniższej procedurze przyjęto, że masz istniejących pakietów VSPackage przy użyciu polecenia menu. Jeśli potrzebujesz pomocy z tą operacją, Przyjrzyj się [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
@@ -55,7 +55,7 @@ Aby powiązać polecenia niestandardowego menu skrótu klawiaturowego, Dodaj odp
 2. Utwórz pustą `<KeyBindings>` sekcji po `<Commands>` Jeśli nie jest już obecny.  
   
    > [!WARNING]
-   >  Aby uzyskać więcej informacji na temat powiązania klawiszy zobacz [powiązanie klawiszy](../extensibility/keybinding-element.md).  
+   > Aby uzyskać więcej informacji na temat powiązania klawiszy zobacz [powiązanie klawiszy](../extensibility/keybinding-element.md).  
   
     W `<KeyBindings>` sekcji, Utwórz `<KeyBinding>` wpisu.  
   

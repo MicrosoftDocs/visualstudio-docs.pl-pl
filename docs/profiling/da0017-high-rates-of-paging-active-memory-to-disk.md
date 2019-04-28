@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc304a90f9d51611ad2455c130e589aa0204cdc5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 5499ff9451d3068cdef0e32dee45a6f6c7f63c71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425471"
 ---
-# <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: Skrajnie intensywne stronicowanie aktywnej pamięci na dysk
+# <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: Intensywne stronicowanie aktywnej pamięci na dysk
 
 |||
 |-|-|
@@ -37,7 +37,7 @@ ms.locfileid: "56620489"
 ## <a name="rule-description"></a>Opis reguły
 
 > [!NOTE]
->  Ta reguła informacyjny jest uruchamiana, gdy stopień stronicowania aktywnej pamięci osiągną znaczną ilość. Gdy wystąpi bardzo wysoki stopień stronicowania, zasada ostrzeżenia [DA0014: Skrajnie intensywne stronicowanie aktywnej pamięci na dysk](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) generowane w zamian.
+> Ta reguła informacyjny jest uruchamiana, gdy stopień stronicowania aktywnej pamięci osiągną znaczną ilość. Gdy wystąpi bardzo wysoki stopień stronicowania, zasada ostrzeżenia [DA0014: Skrajnie intensywne stronicowanie aktywnej pamięci na dysk](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) generowane w zamian.
 
  Nadmierne stronicowania na dysku może być spowodowany brakiem pamięci fizycznej. Jeśli operacja stronicowania dominują użycie dysku fizycznego, w którym znajduje się plik stronicowania, mogą one spowolnić inne operacje dysk korzystający z aplikacji na tym samym dysku.
 

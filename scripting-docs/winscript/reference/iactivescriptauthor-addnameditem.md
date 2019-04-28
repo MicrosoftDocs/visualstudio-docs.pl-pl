@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 95bc529db8129c4e9af1ed9f9dc3d91de9686223
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58145658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411392"
 ---
 # <a name="iactivescriptauthoraddnameditem"></a>IActiveScriptAuthor::AddNamedItem
 Dodaje nazwę elementu głównego poziomu do skryptu tworzenia przestrzeni nazw aparatu. A *elementu poziomu głównego* jest obiektem, który może zawierać właściwości i metody, a, mogą również zawierać źródło zdarzeń.  

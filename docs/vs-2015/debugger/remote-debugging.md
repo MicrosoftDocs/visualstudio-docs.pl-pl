@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6fe3d3f144b192ef14ff52c942c75d9edd1be85
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 41b3e662668967d07e2a304d589d498dd2c7b51d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446105"
 ---
 # <a name="remote-debugging"></a>Debugowanie zdalne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Możesz albo pobierania, które narzędzia zdalnej bezpośrednio na urządzeniu 
 2. Na stronie pobierania wybierz wersję narzędzi, który pasuje do systemu operacyjnego (x 86, x64 lub wersji ARM), a następnie Pobierz narzędzia remote tools.
   
     > [!IMPORTANT]
-    >  Zaleca się, że możesz zainstalować najnowszą wersję narzędzi remote tools, który odpowiada używanej wersji programu Visual Studio. Niezgodność wersji nie jest zalecane.  
+    > Zaleca się, że możesz zainstalować najnowszą wersję narzędzi remote tools, który odpowiada używanej wersji programu Visual Studio. Niezgodność wersji nie jest zalecane.  
     >   
     >  Ponadto należy zainstalować narzędzi zdalnych, które mają taką samą architekturę co system operacyjny, na którym chcesz go zainstalować. Innymi słowy Jeśli chcesz debugować 32-bitowej aplikacji na komputerze zdalnym z systemem 64-bitowym systemie operacyjnym, należy zainstalować 64-bitowej wersji narzędzi zdalnych na komputerze zdalnym.  
   
@@ -145,7 +145,7 @@ Można znaleźć zdalnego debugera (**msvsmon.exe**) na komputerze przy użyciu 
    Lista numerów portów, używany domyślnie znajduje się [zdalnego przypisania portów debugera](../debugger/remote-debugger-port-assignments.md).  
   
    > [!WARNING]
-  >  Istnieje możliwość uruchomienia narzędzi zdalnych w trybie Bez uwierzytelnienia, ale używanie tego trybu jest zdecydowanie odradzane. Po uruchomieniu w tym trybie nie ma zabezpieczeń sieci. Wybierz tryb bez uwierzytelniania tylko wtedy, gdy masz pewność, że sieć nie jest zagrożone przez złośliwe lub wrogie działania.
+  > Istnieje możliwość uruchomienia narzędzi zdalnych w trybie Bez uwierzytelnienia, ale używanie tego trybu jest zdecydowanie odradzane. Po uruchomieniu w tym trybie nie ma zabezpieczeń sieci. Wybierz tryb bez uwierzytelniania tylko wtedy, gdy masz pewność, że sieć nie jest zagrożone przez złośliwe lub wrogie działania.
 
 ## <a name="bkmk_configureService"></a> (Opcjonalnie) Konfigurowanie debugera zdalnego jako usługi
  Do debugowania na platformie ASP.NET i innych środowisk serwera, należy uruchomić zdalny debuger jako Administrator lub, będzie zawsze działać, należy uruchomić debugera zdalnego jako usługi.
@@ -221,7 +221,7 @@ Można znaleźć zdalnego debugera (**msvsmon.exe**) na komputerze przy użyciu 
 11. Na komputerze programu Visual Studio powinien zostać wyświetlony, że wykonanie zostanie zatrzymana w punkcie przerwania.  
   
     > [!TIP]
-    >  Alternatywnie można rozłożyć pliki w osobnym kroku. W **Eksploratora rozwiązań** kliknij prawym przyciskiem myszy **mymfc** węzeł, a następnie wybierz **Wdróż**.  
+    > Alternatywnie można rozłożyć pliki w osobnym kroku. W **Eksploratora rozwiązań** kliknij prawym przyciskiem myszy **mymfc** węzeł, a następnie wybierz **Wdróż**.  
   
     Jeśli masz pliki niezawierające kodu, które będzie używane przez aplikację, należy je uwzględnić w projekcie programu Visual Studio. Utworzenie folderu projektu do dodatkowych plików (w **Eksploratora rozwiązań**, kliknij przycisk **Add / nowy Folder**.) Następnie dodaj pliki do folderu (w **Eksploratora rozwiązań**, kliknij przycisk **dodawania / istniejącego elementu**, następnie wybierz pliki.). Na **właściwości** strony dla każdego pliku, należy ustawić **Kopiuj do katalogu wyjściowego** do **zawsze Kopiuj**.  
   
@@ -253,7 +253,7 @@ Można znaleźć zdalnego debugera (**msvsmon.exe**) na komputerze przy użyciu 
 10. Skopiuj plik wykonywalny, który właśnie zbudowany z komputera programu Visual Studio do nowo utworzonego folderu na komputerze zdalnym.
   
     > [!CAUTION]
-    >  Nie należy wprowadzać zmian w kodzie lub ponownej kompilacji lub należy powtórzyć ten krok. Plik wykonywalny, który został skopiowany na komputerze zdalnym musi dokładnie odpowiadać, lokalne źródła i symboli.
+    > Nie należy wprowadzać zmian w kodzie lub ponownej kompilacji lub należy powtórzyć ten krok. Plik wykonywalny, który został skopiowany na komputerze zdalnym musi dokładnie odpowiadać, lokalne źródła i symboli.
 
     Można ręcznie skopiować projektu, użyj polecenia Xcopy, Robocopy, programu Powershell lub innych opcji.
   

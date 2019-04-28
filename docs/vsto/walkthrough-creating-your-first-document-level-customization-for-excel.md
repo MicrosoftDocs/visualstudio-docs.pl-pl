@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81020496c1e80718d1aa0995791762d55ef70a76
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9cc23e140f0bfa2654cef1c3faeb805620a683b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438525"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel
   Ten Przewodnik wprowadzający dowiesz się, jak utworzyć dostosowywania poziomie dokumentu dla programu Microsoft Office Excel. Funkcje, które tworzysz w tego rodzaju rozwiązania są dostępne tylko wtedy, gdy wybrany skoroszyt jest otwarty. Nie możesz użyć dostosowywania poziomie dokumentu do zmiany całej aplikacji, na przykład wyświetlanie Nowa karta wstążki, gdy dowolny skoroszyt jest otwarty.
@@ -106,7 +106,7 @@ ms.locfileid: "60104502"
      **Ten tekst został dodany za pomocą projektanta.**
 
 > [!WARNING]
->  Jeśli dodasz ten wiersz tekstu do komórki **A2**, zostanie on zastąpiony przez inny kod, w tym przykładzie.
+> Jeśli dodasz ten wiersz tekstu do komórki **A2**, zostanie on zastąpiony przez inny kod, w tym przykładzie.
 
 ## <a name="add-text-to-a-worksheet-programmatically"></a>Programowe Dodawanie tekstu do arkusza
  Następnie dodaj kod do pliku kodu Arkusz1. Nowy kod używa modelu obiektów programu Excel, można dodać drugi wiersz tekstu w skoroszycie. Domyślnie plik kodu Arkusz1 zawiera następujące wygenerowanego kodu:

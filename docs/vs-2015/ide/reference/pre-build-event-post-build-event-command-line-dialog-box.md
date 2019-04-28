@@ -34,12 +34,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 938f0c9ce735ddfbca07bb9f2448fa71d243b634
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 213535d983f95f304b8e0fba3241fa502577f0f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438055"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Wiersz polecenia zdarzenia sprzed kompilacji/zdarzenia po kompilacji — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,14 +47,14 @@ ms.locfileid: "59658036"
 Możesz wpisać zdarzenia przed lub po kompilacji dla [zdarzenia Stroka kompilacji, Projektant projektu (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) bezpośrednio w edycji pola, użytkownik może wybrać makra przed i po kompilacji z listy dostępnych makr.  
   
 > [!NOTE]
->  Jeśli projekt jest aktualny, a nie kompilacja zostaje wyzwolona, nie należy uruchamiać zdarzenia prekompilacyjnego.  
+> Jeśli projekt jest aktualny, a nie kompilacja zostaje wyzwolona, nie należy uruchamiać zdarzenia prekompilacyjnego.  
   
 ## <a name="ui-element-list"></a>Lista elementów interfejsu użytkownika  
  **Pole edycji wiersza polecenia**  
  Zawiera zdarzenia do uruchomienia kompilacji przed lub po kompilacji.  
   
 > [!NOTE]
->  Dodaj `call` instrukcję przed polecenia wszystkich wykonywanych po kompilacji, które uruchamiają pliki bat. Na przykład `call C:\MyFile.bat` lub `call C:\MyFile.bat call C:\MyFile2.bat`.  
+> Dodaj `call` instrukcję przed polecenia wszystkich wykonywanych po kompilacji, które uruchamiają pliki bat. Na przykład `call C:\MyFile.bat` lub `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
  **Makra**  
  Rozwijane pole edycji, aby wyświetlić listę makra do wstawienia w polu edycji wiersza polecenia.  

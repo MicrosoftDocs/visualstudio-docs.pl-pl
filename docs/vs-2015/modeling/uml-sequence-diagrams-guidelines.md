@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6f112224bdb2f94bdb6c4242a5ea0d273db23ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7ebb3108ce7a1ee43d1355494a82cc4aee37dbc7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445658"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>Diagramy sekwencji UML: Wytyczne dotyczące
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +83,7 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
  Aby uzyskać pełną listę elementów na diagramach sekwencji, zobacz [UML Sequence Diagrams: Odwołanie](../modeling/uml-sequence-diagrams-reference.md).  
   
 > [!NOTE]
->  Szczegółowe informacje na temat sposobu tworzenia dowolnego diagramu modelowania zawiera są opisane w [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
+> Szczegółowe informacje na temat sposobu tworzenia dowolnego diagramu modelowania zawiera są opisane w [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-sequence-diagram"></a>Aby utworzyć diagram sekwencji  
   
@@ -104,7 +104,7 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
 1. Przeciągnij **linii życia** (1) z **przybornika** na niego przeciągnięte do reprezentowania wystąpień klas, składników, aktorów lub urządzeń.  
   
     > [!NOTE]
-    >  Możesz również utworzyć linię życia, przeciągając istniejącej klasy, interfejsu aktora lub składnika z **Eksploratora modelu UML** na diagram. Spowoduje to utworzenie linii życia, reprezentujący wystąpienie wybranego typu.  
+    > Możesz również utworzyć linię życia, przeciągając istniejącej klasy, interfejsu aktora lub składnika z **Eksploratora modelu UML** na diagram. Spowoduje to utworzenie linii życia, reprezentujący wystąpienie wybranego typu.  
   
 2. Narysuj wiadomości, aby pokazać, jak linie życia współpracują w celu osiągnięcia określonego celu.  
   
@@ -115,7 +115,7 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
 3. Aby wyświetlić komunikat, który pochodzi z nieznanego źródła zdarzenia (9) lub emituje do nieznanego odbiorcy (10), narysuj komunikatów asynchronicznych z lub do pustego obszaru na diagramie. Komunikaty te są nazywane *znalezione wiadomości* (9) i *utracone wiadomości* (10).  
   
     > [!NOTE]
-    >  Aby przenieść grupę linii życia zawierającą utracone lub znalezione wiadomość, wykonaj następujące kroki, aby wybrać linie życia, przed przeniesieniem ich: Narysuj prostokąt wokół tych linii życia, lub naciśnij i przytrzymaj klawisz **CTRL** klucza podczas klikania każda linia życia. Jeśli używasz **Zaznacz wszystko** lub **CTRL**+**A** do zaznaczenia wszystkich linii życia, a następnie przenieś je, wszystkie utracone i znalezione wiadomości dołączone do tych linii życia, nie zostaną przeniesione. Jeśli wystąpi taka sytuacja, te wiadomości można przenosić oddzielnie.  
+    > Aby przenieść grupę linii życia zawierającą utracone lub znalezione wiadomość, wykonaj następujące kroki, aby wybrać linie życia, przed przeniesieniem ich: Narysuj prostokąt wokół tych linii życia, lub naciśnij i przytrzymaj klawisz **CTRL** klucza podczas klikania każda linia życia. Jeśli używasz **Zaznacz wszystko** lub **CTRL**+**A** do zaznaczenia wszystkich linii życia, a następnie przenieś je, wszystkie utracone i znalezione wiadomości dołączone do tych linii życia, nie zostaną przeniesione. Jeśli wystąpi taka sytuacja, te wiadomości można przenosić oddzielnie.  
   
 4. Narysuj diagramy sekwencji dla każdego komunikatu głównych do tego samego składnika lub systemu.  
   
@@ -136,7 +136,7 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
      Kopię wiadomości i jego uzupełniające wiadomości zostanie dodany na końcu wystąpienie wykonywania lub na końcu linii życia.  
   
     > [!NOTE]
-    >  Wklejony zawsze pojawi się na końcu wystąpienie wykonywania lub linii życia. Po wklejeniu go przeciągnąć go do wcześniej pozycji.  
+    > Wklejony zawsze pojawi się na końcu wystąpienie wykonywania lub linii życia. Po wklejeniu go przeciągnąć go do wcześniej pozycji.  
   
 #### <a name="to-display-and-edit-the-signature-text-for-a-message"></a>Aby wyświetlić i edytować tekst podpisu dla wiadomości  
   
@@ -161,7 +161,7 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
 1. W **Eksploratora modelu UML**, Znajdź interakcji, które są wyświetlane na diagramie sekwencji.  
   
     > [!NOTE]
-    >  Interakcja nie będą widoczne w **Eksploratora modelu UML** do momentu dodania pierwszej linii życia do diagramu sekwencji.  
+    > Interakcja nie będą widoczne w **Eksploratora modelu UML** do momentu dodania pierwszej linii życia do diagramu sekwencji.  
   
 2. Przeciągnij interakcję do pakietu.  
   
@@ -193,7 +193,7 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
  Za pomocą **łącza do komentarzy**, możesz połączyć komentarz z linii życia, liczba wykonań, zastosowania interakcji i fragmenty.  
   
 > [!CAUTION]
->  Jeśli chcesz dołączyć komentarz do określonego punktu w sekwencji, połączyć wystąpienie wykonywania wykorzystanie interakcji lub fragmentu. Nie odsyłaj go do linii życia, ponieważ w takim przypadku on być dołączone w momencie poprawne w sekwencji.  
+> Jeśli chcesz dołączyć komentarz do określonego punktu w sekwencji, połączyć wystąpienie wykonywania wykorzystanie interakcji lub fragmentu. Nie odsyłaj go do linii życia, ponieważ w takim przypadku on być dołączone w momencie poprawne w sekwencji.  
   
  Użyj komentarz:  
   
@@ -268,7 +268,7 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
  Możesz utworzyć nowe linie życia z klas, które zostały już zdefiniowane, na przykład na diagramie klasy.  
   
 > [!NOTE]
->  Upewnij się, że masz istniejący diagram sekwencji, przed uruchomieniem tego zadania.  
+> Upewnij się, że masz istniejący diagram sekwencji, przed uruchomieniem tego zadania.  
   
 ##### <a name="to-create-a-lifeline-from-an-existing-type"></a>Aby utworzyć linię życia z istniejącego typu  
   
@@ -283,7 +283,7 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
      Nowe wystąpienia o nazwie linii życia pojawi się, którego typem jest typ, który został przeciągnięty.  
   
   > [!NOTE]
-  >  Możesz powtórzyć tę akcję dowolną liczbę razy. Spowoduje to utworzenie linii życia przy użyciu innej nazwy.  
+  > Możesz powtórzyć tę akcję dowolną liczbę razy. Spowoduje to utworzenie linii życia przy użyciu innej nazwy.  
   
 ##### <a name="to-change-the-type-of-a-lifeline"></a>Aby zmienić typ linii życia  
   
@@ -313,7 +313,7 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
          Jeśli wiadomość zawiera parametry w formie "(parameter: type)", pojawią się one na liście parametrów nową operację.  
   
         > [!NOTE]
-        >  Ten krok należy powtórzyć po dodaniu nowych komunikatów w diagramie sekwencji.  
+        > Ten krok należy powtórzyć po dodaniu nowych komunikatów w diagramie sekwencji.  
   
 3. Aby wyświetlić szczegóły nowej klasy lub interfejsu, należy go dodać do diagramu klasy lub składnika.  
   
@@ -366,7 +366,7 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
      W rozwiązaniu pojawia się nowy diagram sekwencji. Zawiera ona linie życia, które zostało użyte do utworzenia wykorzystanie interakcji.  
   
     > [!NOTE]
-    >  Tylko linii życia, który został użyty do utworzenia wykorzystanie interakcji zostaną dołączone. Nowy diagram nie obejmuje linii życia, które zostały utworzone po interakcji korzystać, nawet wtedy, gdy ich obejmuje teraz wykorzystanie interakcji.  
+    > Tylko linii życia, który został użyty do utworzenia wykorzystanie interakcji zostaną dołączone. Nowy diagram nie obejmuje linii życia, które zostały utworzone po interakcji korzystać, nawet wtedy, gdy ich obejmuje teraz wykorzystanie interakcji.  
   
 #### <a name="to-create-a-reusable-sequence-from-existing-messages"></a>Aby utworzyć sekwencję wielokrotnego użytku z istniejących wiadomości  
   
@@ -407,14 +407,14 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
 3. Aby zmienić nazwę grupy, kliknij nazwę.  
   
     > [!NOTE]
-    >  Nazwa grupy zostaną utracone po rozwinięciu grupy.  
+    > Nazwa grupy zostaną utracone po rozwinięciu grupy.  
   
 #### <a name="to-expand-a-collapsed-group"></a>Aby rozwinąć zwinięte grupy  
   
 - Kliknij prawym przyciskiem myszy zwinięty linii życia, a następnie kliknij przycisk **rozwiń**.  
   
     > [!NOTE]
-    >  Nazwa grupy będą zostać utracone, oraz wszelkie linki z grupy na komentarze lub elementów roboczych.  
+    > Nazwa grupy będą zostać utracone, oraz wszelkie linki z grupy na komentarze lub elementów roboczych.  
   
 ## <a name="Fragments"></a> Opisujące struktury sterujące przy użyciu fragmentów  
  Połączonego fragmentu (13) służy do definiowania pętle i gałęzie równoczesne przetwarzanie w diagramie sekwencji. Można również rozważyć użycie zamiast niego diagramie aktywności. Diagram aktywności jest bardzo przydatne w pokazujący wiadomości między uczestnikami, ale w niektórych przypadkach lepiej jest w pętli, gałęzie i współbieżności.  
@@ -426,7 +426,7 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
 1. Wybierz komunikat lub sekwencję wiadomości wszystko już na tym samym wystąpieniu wykonywania lub linii życia.  
   
     > [!NOTE]
-    >  Wybierz strzałki wiadomość, a nie wystąpienia wykonywania, które wskazują komunikaty.  
+    > Wybierz strzałki wiadomość, a nie wystąpienia wykonywania, które wskazują komunikaty.  
   
 2. Kliknij prawym przyciskiem myszy jeden z komunikatów, wskaż opcję **Otocz**, a następnie kliknij typ fragmentu, która jest wymagana.  
   

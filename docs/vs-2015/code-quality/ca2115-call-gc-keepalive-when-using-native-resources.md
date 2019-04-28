@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 46a9b8ce099146b6bae853557404c7bfabbbfb6a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0eadff91e8762349ec95c2d9f3bf5717bfecaa4a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435033"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: Wywołaj funkcję GC.KeepAlive w przypadku korzystania z zasobów natywnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "54792244"
  W poniższym przykładzie `BadMethod` nie zawiera wywołanie `GC.KeepAlive` i dlatego narusza regułę. `GoodMethod` zawiera kod poprawiony.
 
 > [!NOTE]
->  W tym przykładzie jest pseudo-kodu, mimo że kod kompiluje i uruchamia, ostrzeżenie nie jest uruchamiany, ponieważ niezarządzany zasób zostanie utworzony lub nie zwolniona.
+> W tym przykładzie jest pseudo-kodu, mimo że kod kompiluje i uruchamia, ostrzeżenie nie jest uruchamiany, ponieważ niezarządzany zasób zostanie utworzony lub nie zwolniona.
 
  [!code-csharp[FxCop.Security.IntptrAndFinalize#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.IntptrAndFinalize/cs/FxCop.Security.IntptrAndFinalize.cs#1)]
 

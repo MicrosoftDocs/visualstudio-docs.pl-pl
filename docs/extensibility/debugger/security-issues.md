@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5f68db1a4c6fb3ea2a7f9542c1a9d2d313359554
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62913111"
 ---
 # <a name="security-issues"></a>Problemy z zabezpieczeniami
 Aby debugować programu przy użyciu programu Visual Studio, tylko wymagane uprawnienia są same dewelopera wymaga, aby uruchomić program. W tym zdalnego debugowania w większości sytuacji. Czasami obejmujące innych usług, takich jak Internet Information Services mogą wymagać wyższego poziomu uprawnień.

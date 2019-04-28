@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f813c2f9affdfa6715655afba5954b664ead74ca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f74eaa8618ce497a760754d084f390a4d1b8c1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436090"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Przewodnik: Wyświetlanie tekstu w polu tekstowym w arkuszu za pomocą przycisku
   W tym instruktażu przedstawiono podstawy używania przycisków i pola tekstowe w arkuszach programu Microsoft Office Excel i jak tworzyć projekty programu Excel przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio. Aby wyświetlić wynik, jako przykład ukończone, zobacz przykład formanty programu Excel w [Office development ― przykłady i wskazówki dotyczące](../vsto/office-development-samples-and-walkthroughs.md).
@@ -36,7 +36,7 @@ ms.locfileid: "60110405"
 - Testowanie projektu.
 
 > [!NOTE]
->  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:

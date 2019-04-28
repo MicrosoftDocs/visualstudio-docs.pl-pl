@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1dc742b62fd30c4d5d3e012b2237edcfabd8ed0a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1e806b5600c0199c1f131ebc3008cc9f8ee1c68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441995"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Krok 1. Tworzenie projektu aplikacji Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Okno dialogowe Nowy projekt
 4. Poniższa ilustracja przedstawia, co powinien zostać wyświetlony w interfejsie programu Visual Studio.  
   
     > [!NOTE]
-    >  Twój układ okna może nie wyglądać dokładnie tak samo jak na ilustracji. Dokładny układ okna zależy od wersji programu Visual Studio, język programowania, którego używasz i innych czynników. Należy jednak sprawdzić, czy są wyświetlane wszystkie trzy okna.  
+    > Twój układ okna może nie wyglądać dokładnie tak samo jak na ilustracji. Dokładny układ okna zależy od wersji programu Visual Studio, język programowania, którego używasz i innych czynników. Należy jednak sprawdzić, czy są wyświetlane wszystkie trzy okna.  
   
      ![Okno IDE](../ide/media/express-ideoverview-visio.png "Express_IDEOverview_Visio")  
 Okno IDE  
@@ -57,7 +57,7 @@ Okno IDE
     - **Okno właściwości** w tym oknie można zmienić właściwości elementów, które wybrano w innych oknach. Na przykład, jeśli wybierzesz Form1, możesz zmienić jego tytuł przez ustawienie **tekstu** właściwości, na które można zmienić kolor tła, ustawiając **Backcolor** właściwości.  
   
     > [!NOTE]
-    >  W pierwszym wierszu **Eksploratora rozwiązań** pokazuje **rozwiązanie "PictureViewer" (1 projekt)**, co oznacza, że tworzone rozwiązanie programu Visual Studio. To rozwiązanie może zawierać więcej niż jeden projekt, ale na razie będziesz pracować z rozwiązaniami, które zawierają tylko jeden projekt.  
+    > W pierwszym wierszu **Eksploratora rozwiązań** pokazuje **rozwiązanie "PictureViewer" (1 projekt)**, co oznacza, że tworzone rozwiązanie programu Visual Studio. To rozwiązanie może zawierać więcej niż jeden projekt, ale na razie będziesz pracować z rozwiązaniami, które zawierają tylko jeden projekt.  
   
 6. Na pasku menu wybierz **pliku**, **Zapisz wszystko**.  
   

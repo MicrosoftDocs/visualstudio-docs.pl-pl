@@ -14,18 +14,18 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b6ee9413a2394d0477cd1c7b1a0caf83dd6ad6d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d6cb4a3beb12d2b33b8b13441df66116fe449d09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431158"
 ---
 # <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>Tworzenie i zarządzanie bazami danych i aplikacji warstwy danych w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [WAŻNE]
->  Projekty baz danych, które występowały we wcześniejszych wersjach programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] znajdują się teraz w [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] narzędzia. Aby uzyskać więcej informacji, zobacz [narzędzia dla deweloperów programu SQL Server](http://go.microsoft.com/fwlink/?LinkId=228126).
+> Projekty baz danych, które występowały we wcześniejszych wersjach programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] znajdują się teraz w [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] narzędzia. Aby uzyskać więcej informacji, zobacz [narzędzia dla deweloperów programu SQL Server](http://go.microsoft.com/fwlink/?LinkId=228126).
 
  Projekty baz danych można użyć do tworzenia nowych baz danych, nowe aplikacje warstwy danych (DAC) i aktualizowanie istniejących baz danych i aplikacji warstwy danych. Projekty bazy danych i projektami DAC umożliwiają zastosowanie technik zarządzania projekt i kontroli wersji do swoich wysiłków programistycznych bazy danych w podobny sposób zastosowania tych technik do kodu zarządzanego lub natywnego. Możesz pomóc zespołowi zarządzania zmianami z bazami danych i serwery baz danych, tworząc *projektu aplikacji DAC*, *projekt bazy danych*, lub *Projekt serwera* i umieszczając go w systemie kontroli wersji. Członkowie zespołu mogą zapoznać się z pliki, aby wprowadzić, tworzenie i testowanie zmian w *izolowane środowisko pracy*, lub piaskownicy przed udostępnieniem ich zespołowi. Aby zapewnić jakość kodu, Twój zespół może zakończenie i przetestowanie wszystkich zmian dla konkretnej wersji bazy danych w środowisku przejściowym, przed wdrożeniem zmian w środowisku produkcyjnym.
 

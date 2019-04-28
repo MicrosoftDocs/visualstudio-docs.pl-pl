@@ -19,12 +19,12 @@ caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3dd58013cb26e8533a5b898a0e5cd1df3be1b262
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: e0352f98fe4d053f8c90d1b2c8f910e73cde23a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441500"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Strona kompilowania, Projektant projektu (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Użyj **skompilować** strony projektanta projektu, aby określić instrukcje ko
  Następujące ustawienia pozwalają wybrać konfigurację i platformę do wyświetlenia lub zmodyfikowania.  
   
 > [!NOTE]
->  Za pomocą uproszczonych konfiguracjach kompilacji system projektu określa, czy do kompilacji debugowania lub wydania wersji. W związku z tym **konfiguracji** i **platformy** listy nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+> Za pomocą uproszczonych konfiguracjach kompilacji system projektu określa, czy do kompilacji debugowania lub wydania wersji. W związku z tym **konfiguracji** i **platformy** listy nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Konfiguracja**  
  Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia są **debugowania** (ustawienie domyślne), **wersji**, lub **wszystkie konfiguracje**. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) i [jak: Tworzenie i edytowanie konfiguracji](../../ide/how-to-create-and-edit-configurations.md).  

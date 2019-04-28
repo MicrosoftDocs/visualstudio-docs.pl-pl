@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f16385452fa0fa0f4e706da1856185355aa95a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3d5d9e4cd0baa2343a68a3d86a96110c97b6cbb7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426813"
 ---
 # <a name="registering-single-file-generators"></a>Rejestrowanie generatorów jednoplikowych
 Aby udostępnić niestandardowego narzędzia w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], musisz się zarejestrować go tak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tworzenia jego instancji i kojarzy ją z określonego typu projektu.
@@ -51,7 +51,7 @@ Aby udostępnić niestandardowego narzędzia w [!INCLUDE[vsprvs](../../code-qual
         Wymagana. Wskazuje, czy typy plikom, które są generowane przez niestandardowe narzędzie były dostępne dla projektantów wizualnych. Wartość tego parametru musi być 0 (zero) typy nie są dostępne do projektantów wizualnych lub 1 (co) dla typów dostępnych projektantów wizualnych.
 
    > [!NOTE]
-   >  Należy zarejestrować niestandardowe narzędzie osobno dla każdego języka, dla którego chcesz narzędzie niestandardowe, które mają być dostępne.
+   > Należy zarejestrować niestandardowe narzędzie osobno dla każdego języka, dla którego chcesz narzędzie niestandardowe, które mają być dostępne.
 
     Na przykład MSDataSetGenerator rejestruje się jeden raz dla każdego języka:
 

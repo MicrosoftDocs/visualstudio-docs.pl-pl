@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebc8e008152936da9d1d8fee86e99e54d15ce09c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f441cb5e6f8febf374a9ea024db9bec95960e11b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444858"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Bardzo wysoka liczba rywalizacji blokad
 
@@ -46,7 +46,7 @@ ms.locfileid: "56639027"
  Ta reguła jest uruchamiana, gdy pomiarów dokonanych podczas uruchomienia profilowania wskazuje jest zbyt wysoki stopień Rywalizacja o blokady. Rywalizacji blokad opóźnienie wykonania wątków, które oczekują na blokadę. Należy zbadać nawet stosunkowo małe ilości Rywalizacja o blokady w testach jednostkowych lub w testach obciążenia uruchomione na dolnej sprzętowych zakończenia.
 
 > [!NOTE]
->  Gdy liczba rywalizacji blokad zgłoszone w danych profilowania jest istotne, ale nie nadmierne [DA0038: Wysoki współczynnik rywalizacji blokad](../profiling/da0038-high-rate-of-lock-contentions.md) komunikat z informacjami o wyzwoleniu zamiast ten komunikat ostrzegawczy.
+> Gdy liczba rywalizacji blokad zgłoszone w danych profilowania jest istotne, ale nie nadmierne [DA0038: Wysoki współczynnik rywalizacji blokad](../profiling/da0038-high-rate-of-lock-contentions.md) komunikat z informacjami o wyzwoleniu zamiast ten komunikat ostrzegawczy.
 
 ## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie
  Kliknij dwukrotnie komunikat, aby przejść do [znaczniki](../profiling/marks-view.md) widoku danych profilowania.  Znajdź **.NET CLR LocksAndThreads\Contention szybkość / sec** kolumny. Określa, czy określone faz wykonywania programu Rywalizacja o blokady w przypadku większych niż pozostałych faz.

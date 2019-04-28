@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 318caec1f96bc0b69a6fe9540231608a8636e107
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 07e5c91038013f51199212a3215490bbfdf34257
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442625"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Krok 2. Tworzenie zadania z dodawaniem losowych liczb
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60099503"
 W drugiej części tego samouczka należy quiz trudne, dodając zagadnienia matematyczne oparte na liczbach losowych. Możesz również utworzyć metodę, która nosi nazwę `StartTheQuiz()` i który wypełnia ona problemy i uruchamia minutnik. W dalszej części tego samouczka dodasz odejmowania, mnożenia i dzielenia problemów.  
   
 > [!NOTE]
->  Ten temat jest częścią serii samouczków na temat podstawowych pojęć kodowania. Aby uzyskać omówienie samouczka, zobacz [samouczek 2: Utwórz Quiz matematyczny](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+> Ten temat jest częścią serii samouczków na temat podstawowych pojęć kodowania. Aby uzyskać omówienie samouczka, zobacz [samouczek 2: Utwórz Quiz matematyczny](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-create-a-random-addition-problem"></a>Aby utworzyć losowy problem dodawania  
   
@@ -46,7 +46,7 @@ W drugiej części tego samouczka należy quiz trudne, dodając zagadnienia mate
 4. Dodaj dwie zmienne liczby całkowitej do formularza i nazwij je **addend1** i **addend2**.  
   
     > [!NOTE]
-    >  Zmienną całkowitą jest znana jako int w języku C# lub liczba całkowita w języku Visual Basic. Tego typu zmienna przechowuje liczbę dodatnią lub ujemną od -2147483648 do 2147483647 i może przechowywać jedynie liczby całkowite, nie miejsca po przecinku.  
+    > Zmienną całkowitą jest znana jako int w języku C# lub liczba całkowita w języku Visual Basic. Tego typu zmienna przechowuje liczbę dodatnią lub ujemną od -2147483648 do 2147483647 i może przechowywać jedynie liczby całkowite, nie miejsca po przecinku.  
   
      Użyj podobnej składni, aby dodać zmienną całkowitą, jak dodać `Random` obiektu, co ilustruje poniższy kod.  
   
@@ -66,7 +66,7 @@ Next — metoda
      Po wprowadzeniu kropkę po obiekcie, IntelliSense pokazuje listę członków obiektu, takie jak właściwości, metody i zdarzenia.  
   
     > [!NOTE]
-    >  Kiedy używasz `Next()` metody z `Random` obiektu, na przykład gdy wywołujesz `randomizer.Next(50)`, otrzymujesz losową liczbę, która jest mniejsza niż 50 (od 0 do 49). W tym przykładzie jest wywoływana `randomizer.Next(51)`. Użyto 51 zamiast 50, aby dwie liczby losowe spowoduje dodanie do odpowiedzi, który jest z zakresu od 0 do 100. W przypadku przekazania 50 do `Next()` metody, wybiera ona numer od 0 do 49, więc najwyższa możliwa odpowiedź to 98, a nie 100. Po uruchomieniu pierwszych dwóch instrukcji w metodzie, wszystkich zmiennych dwie liczby całkowitej, `addend1` i `addend2`, zawiera losową liczbę z zakresu od 0 do 50. Ten zrzut ekranu pokazuje kod Visual C#, ale technologia IntelliSense działa tak samo dla języka Visual Basic.  
+    > Kiedy używasz `Next()` metody z `Random` obiektu, na przykład gdy wywołujesz `randomizer.Next(50)`, otrzymujesz losową liczbę, która jest mniejsza niż 50 (od 0 do 49). W tym przykładzie jest wywoływana `randomizer.Next(51)`. Użyto 51 zamiast 50, aby dwie liczby losowe spowoduje dodanie do odpowiedzi, który jest z zakresu od 0 do 100. W przypadku przekazania 50 do `Next()` metody, wybiera ona numer od 0 do 49, więc najwyższa możliwa odpowiedź to 98, a nie 100. Po uruchomieniu pierwszych dwóch instrukcji w metodzie, wszystkich zmiennych dwie liczby całkowitej, `addend1` i `addend2`, zawiera losową liczbę z zakresu od 0 do 50. Ten zrzut ekranu pokazuje kod Visual C#, ale technologia IntelliSense działa tak samo dla języka Visual Basic.  
   
      Przyjrzyj się bliżej tych instrukcji.  
   

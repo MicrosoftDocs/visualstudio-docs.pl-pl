@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1f2f4dc5eb4c285b99a72a58836e5f81b3ef30f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9ee1e1bc8762ae21ea69db5215d4dc472858d720
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442452"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modyfikowanie stylu obiektów w programie Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,11 +86,11 @@ Najprostszym sposobem dostosować obiekt jest do ustawiania właściwości **wł
   ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
   
 > [!NOTE]
->  Nie można utworzyć style lub szablony dla każdego typu formantu. Jeśli ich nie obsługuje formant, przycisk nawigacji nie pojawi się powyżej obszaru kompozycji.  
+> Nie można utworzyć style lub szablony dla każdego typu formantu. Jeśli ich nie obsługuje formant, przycisk nawigacji nie pojawi się powyżej obszaru kompozycji.  
 >   
->  Aby powrócić do zakresu edycji dokumentu głównego, kliknij przycisk **Zwróć zakres do** ![](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png "55844eb3-ed98-4f20-aa66-a6f5b23eeb2b").  
+> Aby powrócić do zakresu edycji dokumentu głównego, kliknij przycisk **Zwróć zakres do** ![](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png "55844eb3-ed98-4f20-aa66-a6f5b23eeb2b").  
 >   
->  ![](../designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
+> ![](../designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
   
  **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Tworzenie stylu](https://www.youtube.com/watch?v=W8YdXDPeKdc).  
   

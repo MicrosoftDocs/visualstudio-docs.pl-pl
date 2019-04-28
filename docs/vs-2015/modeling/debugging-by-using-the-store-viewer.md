@@ -12,12 +12,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 62425e6144e11f32d6933f134291fab01a15e6c3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1a76cd9b726e534271937cb67a8d3f946d4eb477
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433197"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Debugowanie za pomocą przeglądarki sklepu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
 ```  
   
 > [!NOTE]
->  Należy zastąpić `mystore` nazwą wystąpienia usługi magazynu. Ponadto jeśli dodasz przestrzeni nazw w kodzie, należy wpisać polecenia do wyświetlania podglądu Store bez w pełni kwalifikowaną przestrzeń nazw:  
+> Należy zastąpić `mystore` nazwą wystąpienia usługi magazynu. Ponadto jeśli dodasz przestrzeni nazw w kodzie, należy wpisać polecenia do wyświetlania podglądu Store bez w pełni kwalifikowaną przestrzeń nazw:  
 >   
->  `using Microsoft.VisualStudio.Modeling.Diagnostics;`  
+> `using Microsoft.VisualStudio.Modeling.Diagnostics;`  
 >   
->  `…`  
+> `…`  
 >   
->  `StoreViewer.Show(mystore);`  
+> `StoreViewer.Show(mystore);`  
   
  `Show` Metoda ma kilka przeciążeń. Wystąpienie magazynie lub partycji można określić jako parametr.  
   

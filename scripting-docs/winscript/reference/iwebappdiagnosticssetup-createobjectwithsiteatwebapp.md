@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26403a168268e817644637544d64d4205c398b75
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 42f92cfe9245a5e3a6342c31fc996ae2db50ef70
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58157662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443699"
 ---
 # <a name="iwebappdiagnosticssetupcreateobjectwithsiteatwebapp"></a>IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp
 Ta metoda tworzy wspólnej klasy o identyfikatorze przekazywania przy użyciu `rclsid` przy użyciu `dwClsContext`. Jest to w sposób podobny do [IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md) działa, chyba że w przypadku właściwości `CreateObjectWithSiteAtWebApp` asynchronicznie tworzenia obiektu w wątku interfejsu użytkownika aplikacji sieci web. Obiekt określony przez identyfikator klasy należy zaimplementować [interfejs IWebAppDiagnosticsObjectInitialization](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md). Po utworzeniu obiektu [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) jest wywoływana z odwołaniem do menedżerów PDM debugowania aplikacji i `hPassToObject` parametru `CreateObjectWithSiteAtWebApp`. Ta metoda służy do przekazania do niej dojścia do potoku anonimowego, które zostały skopiowane, za pomocą [DuplicateHandle](http://go.microsoft.com/fwlink/?LinkId=232450).  
   
 > [!IMPORTANT]
->  [Interfejs IWebAppDiagnosticsSetup](../../winscript/reference/iwebappdiagnosticssetup-interface.md) jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
+> [Interfejs IWebAppDiagnosticsSetup](../../winscript/reference/iwebappdiagnosticssetup-interface.md) jest implementowany przez program PDM w wersji 11.0 i nowszych. Znajduje się w zestawie activdbg100.h.  
   
 ## <a name="syntax"></a>Składnia  
   

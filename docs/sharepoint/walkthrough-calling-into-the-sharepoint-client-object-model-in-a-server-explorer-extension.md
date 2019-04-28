@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13ea06abff2237c0b9262ba01dcb243afe6c3c3a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4881604c4fe2ab85f4c32361eddb5f5bb228b3cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430454"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Przewodnik: Wywoływanie modelu obiektu klienta SharePoint w rozszerzeniu Eksploratora serwera
   W tym instruktażu pokazano, jak wywołać modelu obiektu klienta SharePoint z rozszerzeniem dla **połączeń SharePoint** w węźle **Eksploratora serwera**. Aby uzyskać więcej informacji o sposobie używania modelu obiektu klienta SharePoint, zobacz [wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -36,7 +36,7 @@ ms.locfileid: "60063117"
 - Debugowanie i testowanie rozszerzenia.
 
 > [!NOTE]
->  Rozszerzenie, które tworzysz w tym przewodniku przypomina rozszerzenia, który zostanie utworzony w [instruktażu: Rozszerzanie Eksploratora serwera na potrzeby wyświetlania składników web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). Ten przewodnik korzysta z modelu obiektów serwera SharePoint, ale w tym przewodniku wykonuje te same zadania przy użyciu client object model.
+> Rozszerzenie, które tworzysz w tym przewodniku przypomina rozszerzenia, który zostanie utworzony w [instruktażu: Rozszerzanie Eksploratora serwera na potrzeby wyświetlania składników web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). Ten przewodnik korzysta z modelu obiektów serwera SharePoint, ale w tym przewodniku wykonuje te same zadania przy użyciu client object model.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Potrzebne są następujące składniki na komputerze deweloperskim w celu przeprowadzenia tego instruktażu:
@@ -69,7 +69,7 @@ Znajomość następujących pojęć jest przydatna, ale nie jest to wymagane, ab
 3. W **nowy projekt** okna dialogowego rozwiń **Visual C#** lub **języka Visual Basic** węzłów, a następnie wybierz **rozszerzalności**.
 
     > [!NOTE]
-    >  **Rozszerzalności** węzeł jest dostępny tylko w przypadku instalowania programu Visual Studio SDK. Aby uzyskać więcej informacji zobacz sekcję wymagania wstępne niniejszego tematu.
+    > **Rozszerzalności** węzeł jest dostępny tylko w przypadku instalowania programu Visual Studio SDK. Aby uzyskać więcej informacji zobacz sekcję wymagania wstępne niniejszego tematu.
 
 4. W górnej części okna dialogowego wybierz **.NET Framework 4.5** na liście wersji programu .NET Framework.
 
@@ -161,7 +161,7 @@ Znajomość następujących pojęć jest przydatna, ale nie jest to wymagane, ab
 1. Wklej następujący kod do **SiteNodeExtension** plik kodu dla **WebPartNodeExtension** projektu.
 
     > [!NOTE]
-    >  Po dodaniu tego kodu, projekt będzie miał pewne błędy kompilacji. Te błędy znikną po dodaniu kodu w dalszych krokach.
+    > Po dodaniu tego kodu, projekt będzie miał pewne błędy kompilacji. Te błędy znikną po dodaniu kodu w dalszych krokach.
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs#1)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
@@ -205,7 +205,7 @@ Znajomość następujących pojęć jest przydatna, ale nie jest to wymagane, ab
 6. W **Dodaj nowy zasób** dialogowym **typu** wybierz **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Ta wartość odpowiada `MefComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Ta wartość odpowiada `MefComponent` elementu w pliku extension.vsixmanifest. Ten element Określa nazwę zestawu rozszerzeń w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MEFComponent — Element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.
 
