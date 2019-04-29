@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ceaae323c974a1f41b6f5bd2a3ca093ef7c0b2d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007513"
 ---
 # <a name="javascript-object-expected"></a>JavaScript oczekiwany obiekt
 Próba przekazania innej niż[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] obiekt do wbudowanych funkcji, która oczekuje [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] obiektu. Różne funkcje wbudowane wymagają obiekty zdefiniowane w [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (a nie obiekty zdefiniowane przez lub składników zewnętrznych, takich jak kontrolki hosta).  

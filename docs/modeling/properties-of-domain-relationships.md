@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2693994c9ead711f3bb536d0e37f485bc00047b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998908"
 ---
 # <a name="properties-of-domain-relationships"></a>Właściwości relacji domeny
 W poniższej tabeli przedstawiono właściwości są skojarzone z relacją domeny. Aby uzyskać informacji na temat relacji domeny, zobacz [objaśnienie modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md). Aby uzyskać więcej informacji o tym, jak korzystać z tych właściwości, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).

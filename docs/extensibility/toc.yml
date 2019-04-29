@@ -114,7 +114,7 @@
   items:
     - name: Tworzenie rozszerzenia za pomocą szablonu elementu edytora
       href: creating-an-extension-with-an-editor-item-template.md
-    - name: Rozszerzanie usług edytora i językowych
+    - name: Rozszerzanie usług edytora i języka
       href: extending-the-editor-and-language-services.md
       items:
         - name: Wprowadzenie do rozszerzeń usługi językowej i edytora
@@ -191,6 +191,8 @@
               href: how-to-open-standard-editors.md
             - name: Otwieranie edytorów dla otwartych dokumentów
               href: how-to-open-editors-for-open-documents.md
+        - name: Przewodnik migracji rozszerzalności projektanta XAML
+          href: xaml-designer-extensibility-migration.md
 - name: Rozszerzanie projektów
   href: extending-projects.md
   items:
@@ -425,11 +427,11 @@
       href: ux-guidelines/evaluation-tools-for-visual-studio.md
     - name: Obsługa rozpoznawania monitorów
       href: ux-guidelines/per-monitor-awareness-extenders.md
-- name: Rozwiązywanie problemów z technologią DPI
+- name: Rozwiązywanie problemów z DPI
   href: addressing-dpi-issues2.md
 - name: Usługa obrazów i katalog obrazów
   href: image-service-and-catalog.md
-- name: Korzystanie z usług i dostarczanie ich
+- name: Używanie i dostarczanie usług
   href: using-and-providing-services.md
   items:
     - name: Uzyskiwanie usługi

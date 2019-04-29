@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f5226903112d06d5efa362c61db938124eed8e68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897321"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Instrukcje: Eksportowanie tekstury zawierającej mipmapy
 
