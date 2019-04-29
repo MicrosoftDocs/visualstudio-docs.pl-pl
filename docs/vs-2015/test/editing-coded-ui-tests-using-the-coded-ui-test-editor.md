@@ -12,12 +12,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 21acd0970415db23da330ece46131cde72cd706a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2cb53bfc500edbf46f277dd86e2c035461d9f9af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416501"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Edycja zakodowanych testów interfejsu użytkownika za pomocą edytora kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Edytor kodowanego testu interfejsu użytkownika umożliwia łatwe modyfikowanie 
  W Eksploratorze rozwiązań Otwórz menu skrótów dla **UIMap.uitest** i wybierz polecenie **Otwórz**. Kodowany test interfejsu użytkownika jest wyświetlany w Edytorze kodowanego testu interfejsu użytkownika. Można teraz wyświetlać i edytować, zarejestrowane metody, działania i odpowiednie metody kontroli w kodowanym teście interfejsu użytkownika.  
   
 > [!TIP]
->  Po wybraniu akcji interfejsu użytkownika, który znajduje się w metodzie, w **akcji UI** zostanie wyróżniona w okienku odpowiedni formant. Można również zmodyfikować właściwości formantów lub działania interfejsu użytkownika.  
+> Po wybraniu akcji interfejsu użytkownika, który znajduje się w metodzie, w **akcji UI** zostanie wyróżniona w okienku odpowiedni formant. Można również zmodyfikować właściwości formantów lub działania interfejsu użytkownika.  
   
  *Nie widzę* edytora kodowanego testu interfejsu użytkownika.  
  Być może używasz wersji programu Visual Studio Enterprise wcześniejszych niż 2012. Edytor kodowanego testu interfejsu użytkownika było również dostępne w Visual Studio 2010 Feature Pack 2 z subskrypcją MSDN. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Microsoft Visual Studio 2010 Feature Pack 2](http://go.microsoft.com/fwlink/?LinkID=204119).  
@@ -220,4 +220,4 @@ Edycja właściwości kontrolki
  [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Tworzenie na podstawie danych kodowanego testu interfejsu użytkownika](../test/creating-a-data-driven-coded-ui-test.md)   
  [Generowanie kodowanego testu interfejsu użytkownika na podstawie dotychczasowego rejestrowania akcji](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
- [Przewodnik: Tworzenia, edytowania i utrzymywania kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+ [Przewodnik: tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

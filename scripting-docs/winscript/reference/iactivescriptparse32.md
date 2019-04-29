@@ -11,11 +11,11 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 9f44239b4e423588b8455b93b87e4084a9c7d1c4
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009325"
 ---
 # <a name="iactivescriptparse32"></a>IActiveScriptParse32
 Jeśli skrypt Windows aparat pozwala nieprzetworzony tekst skryptlety kodu do dodania do skryptu lub zezwala na tekst wyrażenie oceniane w czasie wykonywania, implementuje `IActiveScriptParse32` interfejsu. Dla interpretowanych języków skryptów, które mają nie niezależnych środowisko tworzenia, np. VBScript, zapewnia to alternatywny mechanizm (inne niż `IPersist*`) pobierać kod skryptu do silnika wykonywania skryptów i Dołącz fragmenty skryptu do różnych obiektów zdarzenia.  
