@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 25f8db1f6d14692538fe7f61ed2f9dbd37e0bd29
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57871809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977308"
 ---
 # <a name="control-flow-activity-designers"></a>Projektanci działań przepływu sterowania
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] zawiera liczbę działań dostarczane przez system, które można użyć podczas tworzenia przepływów pracy. Ta sekcja zawiera działania dostarczane przez system, używane do kontrolowania przepływu w przepływie pracy. Poniższe tematy opisują te działania i wytyczne dotyczące sposobu ich używania.  
@@ -23,7 +23,7 @@ ms.locfileid: "57871809"
  [DoWhile](../workflow-designer/dowhile-activity-designer.md)  
  Wykonuje działanie zawarte w jej treści co najmniej raz, aż określony warunek ma **true**.  
   
- [Instrukcja ForEach\<T >](foreach-t-activity-designer.md)  
+ [ForEach\<T>](foreach-t-activity-designer.md)  
  Wykonuje działania zawarte w jej treści dla każdego elementu w określonej kolekcji.  
   
  [If](../workflow-designer/if-activity-designer.md)  
@@ -44,7 +44,7 @@ ms.locfileid: "57871809"
  [Sequence](../workflow-designer/sequence-activity-designer.md)  
  Zawiera uporządkowany zbiór działania podrzędne, które wykonuje się w kolejności.  
   
- [Przełącznik\<T >](switch-t-activity-designer.md)  
+ [Switch\<T>](switch-t-activity-designer.md)  
  Oblicza określone wyrażenie i wykonuje działania z kolekcji działań, w których skojarzony klucz pasuje do wartości uzyskanej z oceny.  
   
  [While](../workflow-designer/while-activity-designer.md)  

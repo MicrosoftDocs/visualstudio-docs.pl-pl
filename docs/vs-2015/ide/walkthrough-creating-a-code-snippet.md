@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee4e0c6fd686398ae89b5c079d6efc1297a19f5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b23640abec76f04199abe6e64888c641940e7a3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388344"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Przewodnik: Tworzenie wstawek kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60109812"
 Fragment kodu można utworzyć za pomocą tylko kilku krokach. To wszystko, co należy zrobić, Utwórz plik XML, wypełnij odpowiednie elementy i Dodaj swój kod do niego. Możesz również dodać parametry odwołań i zastąpień w kodzie. Można dodać fragment kodu do instalacji programu Visual Studio za pomocą przycisku Importuj w Menedżerze fragmentów kodu (**narzędzia/Manager wstawek kodu**).  
   
 > [!TIP]
->  Aby uzyskać informacje o tym, jak łatwiej napisać wstawki kodu, wyszukiwanie witrynie CodePlex narzędzi społecznościowe, takiego jak [Edytor wstawek](http://go.microsoft.com/fwlink/?LinkId=251033).  
+> Aby uzyskać informacje o tym, jak łatwiej napisać wstawki kodu, wyszukiwanie witrynie CodePlex narzędzi społecznościowe, takiego jak [Edytor wstawek](http://go.microsoft.com/fwlink/?LinkId=251033).  
   
 ## <a name="snippet-template"></a>Szablon fragmentu kodu  
  Oto podstawowy szablon fragmentu kodu:  
