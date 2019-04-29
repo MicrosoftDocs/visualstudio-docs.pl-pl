@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0a56b05c572ec5d91914dd046bfdfa39224a07de
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58157740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823611"
 ---
 # <a name="profilerheapobjectoptionalinfotype-enumeration"></a>Wyliczenie PROFILER_HEAP_OBJECT_OPTIONAL_INFO_TYPE
 Reprezentuje różne rodzaje informacji opcjonalnych. Używane w [struktura PROFILER_HEAP_OBJECT_OPTIONAL_INFO](../../winscript/reference/profiler-heap-object-optional-info-structure.md).  

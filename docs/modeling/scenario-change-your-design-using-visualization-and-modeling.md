@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d0a24301f7571225ed1002ce4e331f29fd4d77c
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824184"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scenariusz: Zmienianie projektu przy użyciu wizualizacji i modelowania
 
@@ -81,8 +81,8 @@ W poniższej tabeli opisano role, które mogą pełnić te narzędzia wielu i r�
 
 ||**Modelowanie wymagań użytkowników**|**Modelowanie procesów biznesowych**|**Architektura i projektowanie**|**Kod — Wizualizacja i eksploracja**|**Weryfikacja**|
 |------|-|-|-|-|-|
-|Diagram języka specyficznego dla domeny (DSL)|Tak|Yes|Tak|||
-|Diagram zależności, sprawdzanie poprawności warstwy|||Tak|Yes|Tak|
+|Diagram języka specyficznego dla domeny (DSL)|Yes|Yes|Tak|||
+|Diagram zależności, sprawdzanie poprawności warstwy|||Tak|Yes|Yes|
 |Mapy kodu|||Tak|Yes|Tak|
 |Projektant klasy (oparty na kodzie)||||Tak||
 
@@ -95,7 +95,7 @@ Zobacz:
 
 - [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)
 
-- [Instrukcje: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
+- [Instrukcje: Dodawanie diagramów klasy do projektu (Projektant klas)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 - [Modelowanie SDK dla Visual Studio — języki specyficzne dla domeny](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
@@ -383,7 +383,7 @@ Diagram klas ma następujące cechy główne:
 
 Jako punktu wyjścia do badania i omawiania istniejących klas można użyć projektanta klas do tworzenia diagramów klas z kodu.
 
-- [Instrukcje: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
+- [Instrukcje: Dodawanie diagramów klasy do projektu (Projektant klas)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 #### <a name="summary-strengths-of-class-diagrams"></a>Podsumowanie: Zalety diagramów klas
  Diagramy klas pomagają określić:

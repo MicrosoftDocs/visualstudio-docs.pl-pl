@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 7c50bb7bf6c61a8061b3817c53027a3dd6e5b29f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cb4defa206d176e57804e6d2473262568cd5edbf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102630"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434214"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Uaktualnianie niestandardowych szablonów projektów i elementów dla programu Visual Studio 2017
 
@@ -53,7 +53,7 @@ Do innych lokalizacji (niezwiązanych z użytkownikiem) musi zawierać plik mani
     3. Otwórz ponownie program Visual Studio. Szablon powinien znajdować się w oczekiwanej lokalizacji.
 
     > [!NOTE]
-    >  Szablony projektów Visual Studio Extensibility nie są dostępne, gdy klucz rejestru jest obecny. Należy usunąć klucz rejestru (i ponownie uruchom **devenv/installvstemplates**) z nich korzystać.
+    > Szablony projektów Visual Studio Extensibility nie są dostępne, gdy klucz rejestru jest obecny. Należy usunąć klucz rejestru (i ponownie uruchom **devenv/installvstemplates**) z nich korzystać.
 
 ## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>Inne zalecenia dotyczące wdrażania szablonów projektów i elementów
 

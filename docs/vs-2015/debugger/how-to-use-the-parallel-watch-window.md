@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 66e9e5a3f0a46f54346c71d85bad03846c12f937
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b588168b62a9219d0de703a5deb6dbe153df6305
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445089"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Instrukcje: Korzystanie z okna równoległego wyrażenia kontrolnego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ W oknie czujki równoległej może jednocześnie wyświetlać wartości, które 
 - Konfigurowalna kolumna, która może wyświetlać maszynę, proces, kafelków, zadania i wątku.  
   
   > [!TIP]
-  >  Należy otworzyć **zadanie równoległe** okno, aby wyświetlić informacje o zadaniu w **równoległego wyrażenia kontrolnego** okna.  
+  > Należy otworzyć **zadanie równoległe** okno, aby wyświetlić informacje o zadaniu w **równoległego wyrażenia kontrolnego** okna.  
   
 -  **\<Dodaj wyrażenie kontrolne >** kolumny, w którym należy wprowadzić wyrażenia, aby obejrzeć.  
   
@@ -90,4 +90,4 @@ W oknie czujki równoległej może jednocześnie wyświetlać wartości, które 
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Instrukcje: Korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
- [Przewodnik: Debugowanie aplikacji C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
+ [Przewodnik: debugowanie aplikacji C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
