@@ -2,7 +2,7 @@
 title: Importowanie lub eksportowanie konfiguracji instalacji
 titleSuffix: ''
 description: Dowiedz się, jak korzystać z funkcji konfiguracji importu/eksportu w programie Visual Studio
-ms.date: 04/15/2019
+ms.date: 04/19/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ed380f2f83f3f64d7bd6bc4c19338dc3725d63a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd932b1748d5c400c6ab64a56b16d1b6a1458c71
+ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118301"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346761"
 ---
 # <a name="import-or-export-installation-configurations"></a>Importowanie lub eksportowanie konfiguracji instalacji
 
@@ -46,7 +46,9 @@ Możesz wyeksportować plik konfiguracji instalacji z uprzednio zainstalowanego 
 
 1. Na karcie produktu wybierz **więcej** przycisk, a następnie wybierz **konfiguracji eksportu**.
 
-1. Wyszukaj lub wpisz lokalizację, w którym chcesz zapisać plik .vconfig, a następnie wybierz **Przejrzyj szczegóły**.
+   ![Eksportowanie konfiguracji z karty produktu w Instalatorze programu Visual Studio](../install/media/vs-2019/vs-installer-export-config.png)
+
+1. Wyszukaj lub wpisz lokalizację, w którym chcesz zapisać plik .vsconfig, a następnie wybierz **Przejrzyj szczegóły**.
 
    ![Eksportowanie konfiguracji z poziomu Instalatora programu Visual Studio](../install/media/vs-2019/export-configuration-confirmation.png)
 
@@ -54,13 +56,13 @@ Możesz wyeksportować plik konfiguracji instalacji z uprzednio zainstalowanego 
 
 ## <a name="import-a-configuration"></a>Importowanie konfiguracji
 
-Kiedy wszystko będzie gotowe do zaimportowania pliku konfiguracji instalacji
+Gdy wszystko będzie gotowe do zaimportowania pliku konfiguracji instalacji, wykonaj następujące kroki.
 
 1. Otwórz Instalatora programu Visual Studio.
 
 1. Na karcie produktu wybierz **więcej** przycisk, a następnie wybierz **Konfiguracja importu**.
 
-1. Znajdź, którą chcesz zaimportować, a następnie wybierz plik .vconfig **Przejrzyj szczegóły**.
+1. Znajdź, którą chcesz zaimportować, a następnie wybierz plik .vsconfig **Przejrzyj szczegóły**.
 
 1. Upewnij się, masz obciążenia i składniki, które chcesz, a następnie wybierz **Zamknij**.
 
@@ -72,7 +74,7 @@ Kiedy wszystko będzie gotowe do zaimportowania pliku konfiguracji instalacji
 
 ![Eksplorator rozwiązań sugeruje dodatkowych składników](../install/media/vs-2019/solution-explorer-config-file.png)
 
-Można również wygenerować plik .vsconfig bezpośrednio z Eksploratora rozwiązań. Poniżej przedstawiono sposób.
+Można również wygenerować plik .vsconfig bezpośrednio z Eksploratora rozwiązań.
 
 1. Kliknij prawym przyciskiem myszy na plik rozwiązania.
 
