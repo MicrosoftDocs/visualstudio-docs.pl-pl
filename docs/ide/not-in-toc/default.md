@@ -9,16 +9,16 @@ f1_keywords:
 manager: jillfra
 author: gewarren
 ms.author: gewarren
-ms.openlocfilehash: 7b4f78bb2249ef60121cfc1557bf06e696e585b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 8a256d878339ddbfc1e37662e829d752f1be7bd6
+ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912053"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346775"
 ---
 # <a name="f1-help"></a>F1 Pomoc
 
-Prawdopodobnie nie możemy znaleźć, czego szukasz, a Przepraszamy. Proszę [Pomóż nam w usprawnianiu](#help-us-improve-f1).
+Prawdopodobnie nie możemy znaleźć, czego szukasz, a Przepraszamy. Możesz pomóc nam w usprawnianiu Wystaw opinię za pomocą przycisków w dolnej części tej strony.
 
 ## <a name="cursor-position"></a>Pozycja kursora
 
@@ -33,7 +33,3 @@ Jeśli szukasz pomocy F1 — słowo kluczowe lub nazwa interfejsu API należy ku
 - Aby uzyskać F# pomocy, zobacz [ F# przewodnik](/dotnet/fsharp/).
 - Aby uzyskać pomoc w języku Python, zobacz [języka Python w programie Visual Studio](../../python/overview-of-python-tools-for-visual-studio.md).
 - Aby uzyskać pomoc w języku C++, zobacz [C++ w programie Visual Studio](/cpp/visual-cpp-in-visual-studio).
-
-## <a name="help-us-improve-f1"></a>Pomóż nam w usprawnianiu F1
-
-Pomóż nam ulepszyć środowisko pomocy F1. Zaloguj problem z produktem pomocy, klikając **Prześlij opinię o produkcie** przycisk poniżej. Obejmują poszukiwany Aby uzyskać pomoc dotyczącą po naciśnięciu **F1**, na przykład, jakie symboli lub kursor znajdował się w oknie. Dziękuję!

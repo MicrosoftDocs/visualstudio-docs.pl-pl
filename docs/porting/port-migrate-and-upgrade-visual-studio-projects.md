@@ -19,14 +19,14 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: e2c51174f14cbfd550bde32192f9db52b1744365
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
-ms.translationtype: MT
+ms.openlocfilehash: 6d82cd5403b38fd4bbc7c5becef447255b01196f
+ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584587"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346909"
 ---
-# <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Odwołanie do migracji i uaktualniania projektu dla programu Visual Studio 
+# <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Odwołanie do migracji i uaktualniania projektu dla programu Visual Studio
 
 ::: moniker range="vs-2017"
 
@@ -43,7 +43,7 @@ W tym artykule istnieje zawiera szczegółowe informacje, tylko dla typów proje
 
 Na poniższej liście opisano obsługę projektów, które zostały utworzone we wcześniejszych wersjach programu Visual Studio 2017.
 
-Jeśli nie widzisz projektu lub typ pliku tutaj wymieniony, powinny być, zapoznaj się z [wersji programu Visual Studio 2015 w tym artykule](https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015) i użyj opcji "Przekaż opinię dotyczącą dokumentacji" u dołu tej strony, aby podać szczegóły projektu. (Jeśli chcesz odpowiedzi użyć opinii dotyczących dokumentacji, zamiast anonimowego "czy ta strona jest przydatne?" control.)
+Jeśli nie widzisz projektu lub typ pliku tutaj wymieniony, powinny być, zapoznaj się z [wersji programu Visual Studio 2015 w tym artykule](https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015) i użyj **wysłać opinię dotyczącą** > **tę stronę**  znajdujący się u dołu tej strony, aby podać szczegóły projektu. (Jeśli używasz anonimowy "Czy ta strona jest pomocna?" kontrolki, nie możemy odpowiadać na Twoją opinię.)
 
 | Typ projektu | Obsługa |
 | --- | --- |
@@ -125,7 +125,7 @@ Ten artykuł zawiera szczegółowe informacje dla typów projektów, które moż
 
 Na poniższej liście opisano obsługę projektów, które zostały utworzone we wcześniejszych wersjach w programie Visual Studio 2019 r.
 
-Jeśli nie widzisz projektu lub typ pliku tutaj wymieniony, powinny być, zapoznaj się z [Visual Studio 2017 wersja tego artykułu](port-migrate-and-upgrade-visual-studio-projects.md) a następnie za pomocą opcji "Przekaż opinię dotyczącą dokumentacji" u dołu tej strony zawierają szczegółowe informacje o projekcie. (Jeśli chcesz odpowiedzi użyć opinii dotyczących dokumentacji, zamiast anonimowego "czy ta strona jest przydatne?" control.)
+Jeśli nie widzisz projektu lub typ pliku tutaj wymieniony, powinny być, zapoznaj się z [Visual Studio 2017 wersja tego artykułu](port-migrate-and-upgrade-visual-studio-projects.md) , a następnie użyj **wysłać opinię dotyczącą** > **tę stronę**  znajdujący się u dołu tej strony, aby podać szczegóły projektu. (Jeśli używasz anonimowy "Czy ta strona jest pomocna?" kontrolki, nie możemy odpowiadać na Twoją opinię.)
 
 | Typ projektu | Obsługa |
 | --- | --- |
