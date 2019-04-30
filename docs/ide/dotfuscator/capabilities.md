@@ -52,7 +52,7 @@ System Dotfuscator może wprowadzać [zachowanie zapobieganie debugowania][debug
 Oprócz ochrony kodu źródłowego, jest również ważne, aby upewnić się, że Twoja aplikacja jest używana zgodnie z założeniami.
 Osoby atakujące mogą próbować przejąć kontrolę nad aplikację w celu obejścia zasad licencjonowania (czyli piractwa), wykradać lub wykonywać operacje na danych poufnych, obsługiwane przez aplikację lub zmienić sposób działania aplikacji.
 
-System Dotfuscator Community może wprowadzać [kod sprawdzania poprawności aplikacji] [ checks] do zestawów, w tym [zapobieganie odporne][tamper], [zapobieganie debugowania][debug], i [zapobiegających odblokowanym dostępem] [ root] miary.
+System Dotfuscator Community może wprowadzać [kod sprawdzania poprawności aplikacji][checks] do zestawów, w tym [zapobieganie odporne][tamper], [zapobieganie debugowania][debug], i [zapobiegających odblokowanym dostępem][root] miary.
 Po wykryciu stanu aplikacji nieprawidłowy kod sprawdzania poprawności można [zapraszać kod aplikacji, aby rozwiązać tę sytuację w odpowiedni sposób][check-app].
 Lub, jeśli nie chcesz napisać kod, aby nieprawidłowe dojście korzysta z aplikacji, system Dotfuscator może również wprowadzać [odpowiedzi][check-action] zachowań, bez żadnych modyfikacji kodu źródłowego.
 
