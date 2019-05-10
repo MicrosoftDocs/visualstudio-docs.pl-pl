@@ -39,21 +39,25 @@
     - name: Nawigowanie po kodzie za pomocą debugera
       href: navigating-through-code-with-the-debugger.md
     - name: Używanie punktów przerwania
-      href: using-breakpoints.md
       items:
+        - name: Używanie punktów przerwania
+          href: using-breakpoints.md
         - name: Rozwiązywanie problemów z punktami przerwania
           href: troubleshooting-breakpoints.md
     - name: Sprawdzanie danych
-      href: debugger-windows.md
       items:
+        - name: Sprawdzanie danych
+          href: debugger-windows.md
         - name: Sprawdzanie zmiennych
           href: autos-and-locals-windows.md
         - name: Ustawianie wyrażenia kontrolnego na zmiennych
-          href: watch-and-quickwatch-windows.md
           items:
+            - name: Ustawianie wyrażenia kontrolnego na zmiennych
+              href: watch-and-quickwatch-windows.md
             - name: Wyrażenia w debugerze
-              href: expressions-in-the-debugger.md
               items:
+                - name: Wyrażenia w debugerze
+                  href: expressions-in-the-debugger.md
                 - name: Specyfikatory formatu w języku C++
                   href: format-specifiers-in-cpp.md
                 - name: Operator kontekstu (C++)
@@ -67,13 +71,15 @@
         - name: Wyświetlanie wartości ciągu w wizualizatorze
           href: view-strings-visualizer.md
         - name: Wyświetlanie kodu dezasemblacji
-          href: how-to-use-the-disassembly-window.md
           items:
+            - name: Wyświetlanie kodu dezasemblacji
+              href: how-to-use-the-disassembly-window.md
             - name: Stronicowanie w górę lub w dół w pamięci
               href: how-to-page-up-or-down-in-memory.md
         - name: Wyświetlanie wartości rejestru
-          href: how-to-use-the-registers-window.md
           items:
+            - name: Wyświetlanie wartości rejestru
+              href: how-to-use-the-registers-window.md
             - name: Informacje o oknie rejestrów
               href: debugging-basics-registers-window.md
             - name: Wyświetlanie i ukrywanie grup rejestru
@@ -85,34 +91,39 @@
         - name: Sprawdzanie właściwości XAML podczas debugowania
           href: inspect-xaml-properties-while-debugging.md
     - name: Przeglądanie stosu wywołań
-      href: how-to-use-the-call-stack-window.md
       items:
+        - name: Przeglądanie stosu wywołań
+          href: how-to-use-the-call-stack-window.md
         - name: Tworzenie wizualnej mapy stosu wywołań
           href: map-methods-on-the-call-stack-while-debugging-in-visual-studio.md
         - name: Kod mieszany i brakujące informacje w oknie stosu wywołań
           href: mixed-code-and-missing-information-in-the-call-stack-window.md
     - name: Edytowanie kodu i kontynuowanie debugowania
-      href: edit-and-continue.md
       items:
+        - name: Edytowanie kodu i kontynuowanie debugowania
+          href: edit-and-continue.md
         - name: Włączanie i wyłączanie funkcji Edytuj i kontynuuj
           href: how-to-enable-and-disable-edit-and-continue.md
         - name: Zatrzymywanie zmian kodu
           href: how-to-stop-code-changes.md
         - name: Edytuj i kontynuuj (Visual C++)
-          href: edit-and-continue-visual-cpp.md
           items:
+            - name: Edytuj i kontynuuj (Visual C++)
+              href: edit-and-continue-visual-cpp.md
             - name: Obsługiwane zmiany kodu (C++)
               href: supported-code-changes-cpp.md
         - name: 'Edytuj i kontynuuj (Visual C#)'
-          href: edit-and-continue-visual-csharp.md
           items:
+            - name: 'Edytuj i kontynuuj (Visual C#)'
+              href: edit-and-continue-visual-csharp.md
             - name: 'Korzystanie z funkcji Edytuj i kontynuuj [C#]'
               href: how-to-use-edit-and-continue-csharp.md
             - name: Obsługiwane zmiany kodu
               href: supported-code-changes-csharp.md
         - name: Edytuj i kontynuuj (Visual Basic)
-          href: edit-and-continue-visual-basic.md
           items:
+            - name: Edytuj i kontynuuj (Visual Basic)
+              href: edit-and-continue-visual-basic.md
             - name: Stosowanie edycji w trybie przerwania za pomocą funkcji Edytuj i kontynuuj
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
         - name: Pisanie i debugowanie uruchomionego kodu XAML
@@ -122,36 +133,41 @@
     - name: Wyświetlanie danych debugera
       items:
         - name: Wyświetlanie modułów
-          href: how-to-use-the-modules-window.md
           items:
+            - name: Wyświetlanie modułów
+              href: how-to-use-the-modules-window.md
             - name: 'Odnajdywanie biblioteki DLL, w której nastąpiła awaria programu'
               href: how-to-find-which-dll-your-program-crashed-in.md
         - name: Wyświetlanie dokumentów skryptu
           href: how-to-view-script-documents.md
     - name: Porady i wskazówki dotyczące debugera
-      href: debugger-tips-and-tricks.md
       items:
+        - name: Porady i wskazówki dotyczące debugera
+          href: debugger-tips-and-tricks.md
         - name: Dołączanie do uruchomionych procesów za pomocą debugera
           href: attach-to-running-processes-with-the-visual-studio-debugger.md
         - name: Debugowanie w czasie projektowania
           href: walkthrough-debugging-at-design-time.md
         - name: Debugowanie za pomocą debugera just in time
-          href: debug-using-the-just-in-time-debugger.md
           items:
+            - name: Debugowanie za pomocą debugera just in time
+              href: debug-using-the-just-in-time-debugger.md
             - name: Wyłączanie debugera just in time
               href: just-in-time-debugging-in-visual-studio.md
     - name: Konfigurowanie debugowania
       items:
         - name: Zarządzanie wyjątkami za pomocą debugera
-          href: managing-exceptions-with-the-debugger.md
           items:
+            - name: Zarządzanie wyjątkami za pomocą debugera
+              href: managing-exceptions-with-the-debugger.md
             - name: Kontynuowanie wykonania po wystąpieniu wyjątku
               href: continuing-execution-after-an-exception.md
             - name: Badanie kodu systemu po wystąpieniu wyjątku
               href: how-to-examine-system-code-after-an-exception.md
             - name: Korzystanie z macierzystego sprawdzania w trakcie wykonywania
-              href: how-to-use-native-run-time-checks.md
               items:
+                - name: Korzystanie z macierzystego sprawdzania w trakcie wykonywania
+                  href: how-to-use-native-run-time-checks.md
                 - name: Dostosowywanie macierzystego sprawdzania w trakcie wykonywania
                   href: native-run-time-checks-customization.md
                 - name: Pisanie funkcji raportowania błędów czasu wykonywania
@@ -163,18 +179,21 @@
         - name: Debugowanie kodu użytkownika
           href: just-my-code.md
         - name: Ustawienia debugera i przygotowanie
-          href: debugger-settings-and-preparation.md
           items:
+            - name: Ustawienia debugera i przygotowanie
+              href: debugger-settings-and-preparation.md
             - name: Ustawienia projektu debugera
-              href: debugger-project-settings.md
               items:
+                - name: Ustawienia projektu debugera
+                  href: debugger-project-settings.md
                 - name: Określanie ustawień debugera
                   href: how-to-specify-debugger-settings.md
                 - name: Ustawienia konfiguracji Debug i Release
                   href: how-to-set-debug-and-release-configurations.md
                 - name: Ustawienia projektu dla konfiguracji debugowania w języku C++
-                  href: project-settings-for-a-cpp-debug-configuration.md
                   items:
+                    - name: Ustawienia projektu dla konfiguracji debugowania w języku C++
+                      href: project-settings-for-a-cpp-debug-configuration.md
                     - name: Włączanie funkcji debugowania w programie Visual C++ (-D_DEBUG)
                       href: enabling-debug-features-in-visual-cpp-d-debug.md
                 - name: Ustawienia stron właściwości dla projektów internetowych
@@ -184,8 +203,9 @@
                 - name: Ustawienia projektu dla konfiguracji debugowania w języku Visual Basic
                   href: project-settings-for-a-visual-basic-debug-configuration.md
             - name: Debugowanie projektów DLL
-              href: debugging-dll-projects.md
               items:
+                - name: Debugowanie projektów DLL
+                  href: debugging-dll-projects.md
                 - name: Debugowanie z projektu DLL
                   href: how-to-debug-from-a-dll-project.md
                 - name: Debugowanie w trybie mieszanym
@@ -199,23 +219,27 @@
             - name: Określanie wersji programu .NET Framework do debugowania
               href: how-to-specify-a-dotnet-framework-version-for-debugging.md
         - name: Tworzenie niestandardowych widoków danych
-          href: viewing-data-in-the-debugger.md
           items:
+            - name: Tworzenie niestandardowych widoków danych
+              href: viewing-data-in-the-debugger.md
             - name: Tworzenie niestandardowych widoków obiektów C++
-              href: create-custom-views-of-native-objects.md
               items:
+                - name: Tworzenie niestandardowych widoków obiektów C++
+                  href: create-custom-views-of-native-objects.md
                 - name: Zgodność niestandardowego wizualizatora języka Visual C++
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: Tworzenie niestandardowych widoków obiektów zarządzanych
-              href: create-custom-views-of-dot-managed-objects.md
               items:
+                - name: Tworzenie niestandardowych widoków obiektów zarządzanych
+                  href: create-custom-views-of-dot-managed-objects.md
                 - name: Określanie zawartości do wyświetlenia w debugerze
                   href: using-the-debuggerdisplay-attribute.md
                 - name: Określanie typu do wyświetlenia w debugerze
                   href: using-debuggertypeproxy-attribute.md
             - name: Tworzenie niestandardowych wizualizatorów danych
-              href: create-custom-visualizers-of-data.md
               items:
+                - name: Tworzenie niestandardowych wizualizatorów danych
+                  href: create-custom-visualizers-of-data.md
                 - name: Architektura wizualizatora
                   href: visualizer-architecture.md
                 - name: 'Przewodnik: Pisanie wizualizatora w języku C#'
@@ -233,8 +257,9 @@
         - name: Przywracanie ukrytych poleceń debugera
           href: how-to-restore-hidden-debugger-commands.md
     - name: Debugowanie zdalne
-      href: remote-debugging.md
       items:
+        - name: Debugowanie zdalne
+          href: remote-debugging.md
         - name: Platforma ASP.NET Core debugowania zdalnego na komputerze IIS
           href: remote-debugging-aspnet-on-a-remote-iis-computer.md
         - name: Platforma ASP.NET debugowania zdalnego na komputerze IIS
@@ -252,8 +277,9 @@
         - name: Odblokowywanie pobierania w systemie Windows Server
           href: remote-debugging-unblock-file-download.md
         - name: Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów
-          href: remote-debugging-errors-and-troubleshooting.md
           items:
+            - name: Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów
+              href: remote-debugging-errors-and-troubleshooting.md
             - name: Monitor zdalnego debugowania programu Microsoft Visual Studio na komputerze zdalnym nie ma uprawnień do połączenia z tym komputerem
               href: error-the-microsoft-visual-studio-remote-debugging-monitor-no-permission.md
             - name: Wystąpił błąd modelu DCOM podczas próby skontaktowania się z komputerem zdalnym. Odmowa dostępu.
@@ -299,13 +325,15 @@
             - name: Maszyna zdalna nie jest wyświetlana w oknie dialogowym połączeń zdalnych
               href: error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md
     - name: Debugowanie aplikacji wielowątkowych
-      href: debug-multithreaded-applications-in-visual-studio.md
       items:
+        - name: Debugowanie aplikacji wielowątkowych
+          href: debug-multithreaded-applications-in-visual-studio.md
         - name: Rozpoczynanie debugowania aplikacji wielowątkowych
           href: get-started-debugging-multithreaded-apps.md
         - name: Narzędzia do debugowania wątków i procesów
-          href: debug-threads-and-processes.md
           items:
+            - name: Narzędzia do debugowania wątków i procesów
+              href: debug-threads-and-processes.md
             - name: Korzystanie z okna stosów równoległych
               href: using-the-parallel-stacks-window.md
             - name: Korzystanie z okna równoległego wyrażenia kontrolnego
@@ -335,8 +363,9 @@
         - name: Ustawianie nazw wątków w kodzie zarządzanym
           href: how-to-set-a-thread-name-in-managed-code.md
     - name: IntelliTrace
-      href: intellitrace.md
       items:
+        - name: IntelliTrace
+          href: intellitrace.md
         - name: Wyświetlanie migawek za pomocą funkcji IntelliTrace
           href: view-snapshots-with-intellitrace.md
         - name: Wyświetlanie zdarzeń za pomocą funkcji IntelliTrace
@@ -348,8 +377,9 @@
         - name: Sprawdzanie aplikacji za pomocą debugowania historycznego
           href: historical-debugging-inspect-app.md
         - name: Diagnozowanie problemów po wdrożeniu
-          href: diagnose-problems-after-deployment.md
           items:
+            - name: Diagnozowanie problemów po wdrożeniu
+              href: diagnose-problems-after-deployment.md
             - name: Korzystanie z autonomicznego modułu zbierającego funkcji IntelliTrace
               href: using-the-intellitrace-stand-alone-collector.md
             - name: Korzystanie z programu Microsoft Monitoring Agent
@@ -359,8 +389,9 @@
         - name: Odwołanie API rozszerzalności IntelliTrace
           href: api-reference-for-intellitrace-extensibility.md
     - name: Debugowanie usług platformy Azure
-      href: debug-azure-apps.md
       items:
+        - name: Debugowanie usług platformy Azure
+          href: debug-azure-apps.md
         - name: Debugowanie działającej aplikacji platformy Azure
           href: debug-live-azure-applications.md
         - name: Debugowanie działającej aplikacji maszyny wirtualnej platformy Azure
@@ -374,16 +405,19 @@
         - name: Debugowanie przechodzenia w czasie na żywo — aplikacja maszyny wirtualnej platformy Azure
           href: debug-live-azure-virtual-machines-time-travel-debugging.md
     - name: Debugowanie aplikacji o określonych typach
-      href: debugging-applications.md
       items:
+        - name: Debugowanie aplikacji o określonych typach
+          href: debugging-applications.md
         - name: Debugowanie aplikacji 64-bitowych
           href: debug-64-bit-applications.md
         - name: Debugowanie aplikacji platformy UWP
-          href: debugging-windows-store-and-windows-universal-apps.md
           items:
+            - name: Debugowanie aplikacji platformy UWP
+              href: debugging-windows-store-and-windows-universal-apps.md
             - name: Rozpoczynanie sesji debugowania aplikacji platformy UWP
-              href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
               items:
+                - name: Rozpoczynanie sesji debugowania aplikacji platformy UWP
+                  href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
                 - name: Debugowanie aplikacji platformy UWP na maszynie zdalnej
                   href: run-windows-store-apps-on-a-remote-machine.md
                 - name: Uruchamianie aplikacji platformy UWP w symulatorze
@@ -395,8 +429,9 @@
             - name: Debugowanie XAML w Blend
               href: debug-xaml-in-blend.md
             - name: Debugowanie kodu HTML i CSS
-              href: quickstart-debug-html-and-css.md
               items:
+                - name: Debugowanie kodu HTML i CSS
+                  href: quickstart-debug-html-and-css.md
                 - name: Odświeżanie aplikacji (JavaScript)
                   href: refresh-an-app-javascript.md
                 - name: Debugowanie kontrolki WebView
@@ -410,11 +445,13 @@
             - name: Pobieranie z wyprzedzeniem zawartości aplikacji ze sklepu Microsoft Store
               href: prefetch-content-for-windows-store-apps.md
         - name: Debugowanie kodu zarządzanego
-          href: debugging-managed-code.md
           items:
+            - name: Debugowanie kodu zarządzanego
+              href: debugging-managed-code.md
             - name: 'Przygotowywanie debugowania: Typy projektów C#, F# i Visual Basic'
-              href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
               items:
+                - name: 'Przygotowywanie debugowania: Typy projektów C#, F# i Visual Basic'
+                  href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
                 - name: 'Debugowanie zarządzane: Zalecane ustawienia właściwości'
                   href: managed-debugging-recommended-property-settings.md
                 - name: 'Przygotowywanie debugowania: aplikacje Formularzy systemu Windows'
@@ -442,8 +479,9 @@
             - name: Debugowanie źródła programu .NET Framework
               href: how-to-debug-dotnet-framework-source.md
             - name: Debugowanie platformy WPF
-              href: debugging-wpf.md
               items:
+                - name: Debugowanie platformy WPF
+                  href: debugging-wpf.md
                 - name: Korzystanie z wizualizatora drzewa platformy WPF
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: Wyświetlanie informacji o śledzeniu platformy WPF
@@ -451,8 +489,9 @@
             - name: 'Debugowanie języka F#'
               href: debugging-f-hash.md
         - name: Debugowanie kodu natywnego
-          href: debugging-native-code.md
           items:
+            - name: Debugowanie kodu natywnego
+              href: debugging-native-code.md
             - name: 'Przygotowywanie debugowania: Typy projektów Visual C++'
               href: debugging-preparation-visual-cpp-project-types.md
             - name: Debugowanie zoptymalizowanego kodu
@@ -466,8 +505,9 @@
             - name: Techniki debugowania MFC
               href: mfc-debugging-techniques.md
             - name: Techniki debugowania CRT
-              href: crt-debugging-techniques.md
               items:
+                - name: Techniki debugowania CRT
+                  href: crt-debugging-techniques.md
                 - name: Korzystanie z biblioteki debugowania CRT
                   href: crt-debug-library-use.md
                 - name: Makra raportowania
@@ -477,13 +517,15 @@
                 - name: Szczegóły dotyczące sterty debugowania CRT
                   href: crt-debug-heap-details.md
                 - name: Pisanie funkcji debugowania punktów zaczepienia
-                  href: debug-hook-function-writing.md
                   items:
+                    - name: Pisanie funkcji debugowania punktów zaczepienia
+                      href: debug-hook-function-writing.md
                     - name: Funkcje punktu zaczepienia bloku klienta
                       href: client-block-hook-functions.md
                     - name: Funkcje punktu zaczepienia alokacji
-                      href: allocation-hook-functions.md
                       items:
+                        - name: Funkcje punktu zaczepienia alokacji
+                          href: allocation-hook-functions.md
                         - name: Punkty zaczepienia alokacji i wykonawcze alokacje pamięci języka C
                           href: allocation-hooks-and-c-run-time-memory-allocations.md
                     - name: Raportowanie funkcji punktów zaczepienia
@@ -491,8 +533,9 @@
                 - name: Znajdowanie przecieków pamięci za pomocą biblioteki CRT
                   href: finding-memory-leaks-using-the-crt-library.md
             - name: Debugowanie kodu natywnego — często zadawane pytania
-              href: debugging-native-code-faqs.md
               items:
+                - name: Debugowanie kodu natywnego — często zadawane pytania
+                  href: debugging-native-code-faqs.md
                 - name: Jak można debugować naruszenia zasad dostępu?
                   href: how-can-i-debug-an-access-violation-q.md
                 - name: W jaki sposób można debugować naruszenia zasad dostępu przy uruchamianiu programu poza debugerem?
@@ -514,16 +557,19 @@
                 - name: 'Powracanie do funkcji, która wywołała MFC przy zatrzymaniu'
                   href: how-to-get-back-to-the-function-that-called-mfc-if-halted.md
             - name: Debugowanie aplikacji COM i kontrolek ActiveX
-              href: com-and-activex-debugging.md
               items:
+                - name: Debugowanie aplikacji COM i kontrolek ActiveX
+                  href: com-and-activex-debugging.md
                 - name: Debugowanie kontenera i serwera COM
-                  href: com-server-and-container-debugging.md
                   items:
+                    - name: Debugowanie kontenera i serwera COM
+                      href: com-server-and-container-debugging.md
                     - name: Debugowanie klientów i serwerów COM za pomocą debugowania RPC
                       href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
                 - name: Debugowanie kontrolki ActiveX
-                  href: how-to-debug-an-activex-control.md
                   items:
+                    - name: Debugowanie kontrolki ActiveX
+                      href: how-to-debug-an-activex-control.md
                     - name: Debugowanie kontrolki ActiveX powiązanej z danymi
                       href: debugging-a-data-bound-activex-control.md
                 - name: Narzędzia debugowania COM
@@ -535,8 +581,9 @@
         - name: Diagnostyka grafiki
           href: graphics/toc.yml
         - name: Debugowanie aplikacji ASP.NET
-          href: how-to-enable-debugging-for-aspnet-applications.md
           items:
+            - name: Debugowanie aplikacji ASP.NET
+              href: how-to-enable-debugging-for-aspnet-applications.md
             - name: 'Debugowanie ASP.NET: wymagania systemowe'
               href: aspnet-debugging-system-requirements.md
             - name: Uruchamianie procesu roboczego z konta użytkownika
@@ -550,11 +597,13 @@
             - name: Debugowanie wyjątków ASP.NET
               href: how-to-debug-aspnet-exceptions.md
             - name: 'Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów'
-              href: debugging-web-applications-errors-and-troubleshooting.md
               items:
+                - name: 'Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów'
+                  href: debugging-web-applications-errors-and-troubleshooting.md
                 - name: 'Debugowanie aplikacji internetowych: Rozwiązywanie problemów'
-                  href: debugging-web-applications-troubleshooting.md
                   items:
+                    - name: 'Debugowanie aplikacji internetowych: Rozwiązywanie problemów'
+                      href: debugging-web-applications-troubleshooting.md
                     - name: Weryfikowanie właściwości ustawień usług IIS
                       href: how-to-verify-iis-property-settings.md
                 - name: Witryna korzysta z adresu IP
@@ -570,32 +619,37 @@
                 - name: Przekroczono limit czasu podczas debugowania usług internetowych
                   href: error-timeout-while-debugging-web-services.md
                 - name: Nie można rozpocząć debugowania na serwerze internetowym
-                  href: error-unable-to-start-debugging-on-the-web-server.md
                   items:
+                    - name: Nie można rozpocząć debugowania na serwerze internetowym
+                      href: error-unable-to-start-debugging-on-the-web-server.md
                     - name: Serwer internetowy nie może znaleźć żądanego zasobu
                       href: error-the-web-server-could-not-find-the-requested-resource.md
                     - name: Serwer internetowy nie został poprawnie skonfigurowany
                       href: error-the-web-server-is-not-configured-correctly.md
         - name: Debugowanie aplikacji internetowych
-          href: debugging-web-applications.md
           items:
+            - name: Debugowanie aplikacji internetowych
+              href: debugging-web-applications.md
             - name: Polecenia konsoli JavaScript
               href: javascript-console-commands.md
             - name: Skróty klawiaturowe (HTML i JavaScript)
               href: keyboard-shortcuts-html-and-javascript.md
             - name: Debugowanie skryptu po stronie klienta
-              href: client-side-script-debugging.md
               items:
+                - name: Debugowanie skryptu po stronie klienta
+                  href: client-side-script-debugging.md
                 - name: Ograniczenia dotyczące debugowania skryptu
                   href: limitations-on-script-debugging.md
                 - name: Dołączanie do skryptu
-                  href: how-to-attach-to-script.md
                   items:
+                    - name: Dołączanie do skryptu
+                      href: how-to-attach-to-script.md
                     - name: 'Ostrzeżenie: Debugowanie skryptów wyłączone'
                       href: warning-script-debugging-disabled.md
         - name: Debugowanie usług WCF
-          href: debugging-wcf-services.md
           items:
+            - name: Debugowanie usług WCF
+              href: debugging-wcf-services.md
             - name: Ograniczenia dotyczące debugowania usług WCF
               href: limitations-on-wcf-debugging.md
             - name: Przechodzenie do usług WCF
@@ -603,8 +657,9 @@
             - name: Debugowanie obsługiwanej samodzielnie usługi WCF
               href: how-to-debug-a-self-hosted-wcf-service.md
     - name: Używanie plików zrzutu
-      href: using-dump-files.md
       items:
+        - name: Używanie plików zrzutu
+          href: using-dump-files.md
         - name: API rozszerzalności pliku podsumowania zrzutu
           href: dump-file-summary-extensibility-api.md
     - name: Zabezpieczenia debugera
@@ -612,15 +667,17 @@
 - name: Tematy pomocy
   items:
     - name: Debugowanie odwołań do interfejsu użytkownika
-      href: debugging-user-interface-reference.md
       items:
+        - name: Debugowanie odwołań do interfejsu użytkownika
+          href: debugging-user-interface-reference.md
         - name: Wybierz punkty przerwania — Okno dialogowe
           href: choose-breakpoints-dialog-box.md
         - name: Konfigurowanie zapory do zdalnego debugowania — Okno dialogowe
           href: configure-firewall-for-remote-debugging-dialog-box.md
         - name: 'Debugowanie, Opcje, okno dialogowe'
-          href: debugging-options-dialog-box.md
           items:
+            - name: 'Debugowanie, Opcje, okno dialogowe'
+              href: debugging-options-dialog-box.md
             - name: 'Ogólne, Debugowanie, Opcje, okno dialogowe'
               href: general-debugging-options-dialog-box.md
             - name: 'Just-In-Time, Debugowanie, Opcje, okno dialogowe'
@@ -644,8 +701,9 @@
         - name: 'Gdy punkt przerwania zostaje trafiony, okno dialogowe'
           href: when-breakpoint-is-hit-dialog-box.md
         - name: 'Błędy i ostrzeżenia dotyczące debugowania, okno dialogowe'
-          href: debugging-errors-and-warning-dialog-boxes.md
           items:
+            - name: 'Błędy i ostrzeżenia dotyczące debugowania, okno dialogowe'
+              href: debugging-errors-and-warning-dialog-boxes.md
             - name: okno dialogowe błędów potwierdzenia
               href: assertion-failed-dialog-box.md
             - name: Nie można zmienić wartości — Okno dialogowe
@@ -699,11 +757,13 @@
     - name: Zestaw SDK dostępu do interfejsu debugowania
       href: debug-interface-access/debug-interface-access-sdk.md
     - name: Pomoc dotycząca programu Spy++
-      href: spy-increment-help.md
       items:
+        - name: Pomoc dotycząca programu Spy++
+          href: spy-increment-help.md
         - name: Korzystanie z programu Spy++
-          href: using-spy-increment.md
           items:
+            - name: Korzystanie z programu Spy++
+              href: using-spy-increment.md
             - name: Wprowadzenie programu Spy++
               href: introducing-spy-increment.md
             - name: Uruchamianie programu Spy++
@@ -719,11 +779,13 @@
             - name: Rozwijanie i zwijanie drzew w programie Spy++
               href: how-to-expand-and-collapse-spy-increment-trees.md
         - name: Spy++ — Widoki
-          href: spy-increment-views.md
           items:
+            - name: Spy++ — Widoki
+              href: spy-increment-views.md
             - name: Widok okien
-              href: windows-view.md
               items:
+                - name: Widok okien
+                  href: windows-view.md
                 - name: Korzystanie z narzędzia wyszukiwania
                   href: how-to-use-the-finder-tool.md
                 - name: Wyszukiwanie okna w widoku okien
@@ -731,8 +793,9 @@
                 - name: Wyświetlanie właściwości okna
                   href: how-to-display-window-properties.md
             - name: Widok komunikatów
-              href: messages-view.md
               items:
+                - name: Widok komunikatów
+                  href: messages-view.md
                 - name: Kontrolowanie widoku komunikatów
                   href: how-to-control-messages-view.md
                 - name: Otwieranie widoku komunikatów z poziomu okna Znajdowanie
@@ -746,25 +809,29 @@
                 - name: Wyświetlanie właściwości komunikatu
                   href: how-to-display-message-properties.md
             - name: Widok procesów
-              href: processes-view.md
               items:
+                - name: Widok procesów
+                  href: processes-view.md
                 - name: Wyszukiwanie procesu w widoku procesów
                   href: how-to-search-for-a-process-in-processes-view.md
                 - name: Wyświetlanie właściwości procesu
                   href: how-to-display-process-properties.md
             - name: Widok wątków
-              href: threads-view.md
               items:
+                - name: Widok wątków
+                  href: threads-view.md
                 - name: Wyszukiwanie wątku w widoku wątków
                   href: how-to-search-for-a-thread-in-threads-view.md
                 - name: Wyświetlanie właściwości wątku
                   href: how-to-display-thread-properties.md
         - name: Spy++ — Odwołanie
-          href: spy-increment-reference.md
           items:
+            - name: Spy++ — Odwołanie
+              href: spy-increment-reference.md
             - name: Polecenia menu
-              href: menu-commands.md
               items:
+                - name: Polecenia menu
+                  href: menu-commands.md
                 - name: Polecenia w menu Spy
                   href: spy-menu-commands.md
                 - name: Polecenia menu Drzewo
@@ -782,8 +849,9 @@
             - name: 'Czcionka, okno dialogowe (Pomoc programu Microsoft Spy++)'
               href: font-dialog-box-microsoft-spy-increment-help.md
             - name: Narzędzia wyszukiwania dotyczące widoków programu Spy++
-              href: search-tools-for-spy-increment-views.md
               items:
+                - name: Narzędzia wyszukiwania dotyczące widoków programu Spy++
+                  href: search-tools-for-spy-increment-views.md
                 - name: Okno dialogowe Znajdź okno
                   href: find-window-dialog-box.md
                 - name: 'Wyszukiwanie okien, okno dialogowe'
@@ -795,8 +863,9 @@
                 - name: 'Wyszukiwanie wątków, okno dialogowe'
                   href: thread-search-dialog-box.md
             - name: Okno dialogowe właściwości okna
-              href: window-properties-dialog-box.md
               items:
+                - name: Okno dialogowe właściwości okna
+                  href: window-properties-dialog-box.md
                 - name: 'Ogólne, karta, Właściwości okna, okno dialogowe'
                   href: general-tab-window-properties-dialog-box.md
                 - name: 'Style, karta, Właściwości okna, okno dialogowe'
@@ -808,8 +877,9 @@
                 - name: 'Proces, karta, Właściwości okna, okno dialogowe'
                   href: process-tab-window-properties-dialog-box.md
             - name: 'Opcje komunikatów, okno dialogowe'
-              href: message-options-dialog-box.md
               items:
+                - name: 'Opcje komunikatów, okno dialogowe'
+                  href: message-options-dialog-box.md
                 - name: 'Okna, karta, Opcje komunikatów, okno dialogowe'
                   href: windows-tab-message-options-dialog-box.md
                 - name: 'Komunikaty, karta, Opcje komunikatów, okno dialogowe'
@@ -819,8 +889,9 @@
             - name: 'Właściwości komunikatu, okno dialogowe'
               href: message-properties-dialog-box.md
             - name: 'Właściwości procesu, okno dialogowe'
-              href: process-properties-dialog-box.md
               items:
+                - name: 'Właściwości procesu, okno dialogowe'
+                  href: process-properties-dialog-box.md
                 - name: 'Ogólne, karta, Właściwości procesu, okno dialogowe'
                   href: general-tab-process-properties-dialog-box.md
                 - name: 'Pamięć, karta, Właściwości procesu, okno dialogowe'
@@ -830,13 +901,15 @@
                 - name: 'Karta Przestrzeń, okno dialogowe Właściwości procesu'
                   href: space-tab-process-properties-dialog-box.md
             - name: 'Właściwości wątku, okno dialogowe'
-              href: thread-properties-dialog-box.md
               items:
+                - name: 'Właściwości wątku, okno dialogowe'
+                  href: thread-properties-dialog-box.md
                 - name: 'Ogólne, karta, Właściwości wątku, okno dialogowe'
                   href: general-tab-thread-properties-dialog-box.md
             - name: Inne okna dialogowe
-              href: other-dialog-boxes.md
               items:
+                - name: Inne okna dialogowe
+                  href: other-dialog-boxes.md
                 - name: Informacje o Microsoft Spy++
                   href: about-microsoft-spy-increment.md
                 - name: Informacja o prawach autorskich dotyczących pomocy programu Spy++

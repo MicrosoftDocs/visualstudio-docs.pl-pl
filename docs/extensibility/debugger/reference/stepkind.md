@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb0ece36eba11b61f760552fe0559de46c1ce732
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fa9c1805c7eaba480cd46ebc6e73ee370e3cbb22
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864792"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460775"
 ---
 # <a name="stepkind"></a>STEPKIND
 Określa rodzaj kroku przechodzenie krok po kroku.
@@ -43,14 +46,18 @@ public enum enum_STEPKIND { 
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
- Kroki STEP_INTO do funkcji.
+## <a name="fields"></a>Pola
+ `STEP_INTO`\
+ Kroki do funkcji.
 
- Kroki STEP_OVER funkcji.
+ `STEP_OVER`\
+ Pomija funkcji.
 
- Kroki STEP_OUT z funkcji.
+ `STEP_OUT`\
+ Kroki z funkcji.
 
- Kroki STEP_BACKWARDS wstecz do funkcji.
+ `STEP_BACKWARDS`\
+ Kroki wstecz do funkcji.
 
 ## <a name="remarks"></a>Uwagi
  Przekazywany jako argument do [kroku](../../../extensibility/debugger/reference/idebugprocess3-step.md) metody.
@@ -62,6 +69,6 @@ public enum enum_STEPKIND { 
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)

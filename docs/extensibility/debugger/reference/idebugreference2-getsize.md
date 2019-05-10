@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 681cede68a2d649cd9f072b6c10e8476a9625f6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9b414983121454a7e3fb7c1e631815bc830f51be
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869076"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458693"
 ---
 # <a name="idebugreference2getsize"></a>IDebugReference2::GetSize
 Pobiera rozmiar w bajtach wartości odwołania. Zarezerwowane do użytku w przyszłości.
@@ -36,13 +39,13 @@ int GetSize ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pdwSize`
+## <a name="parameters"></a>Parametry
+ `pdwSize`\
 
  [out] Zwraca rozmiar w bajtach wartości odwołania.
 
 ## <a name="return-value"></a>Wartość zwracana
  Zawsze zwraca `E_NOTIMPL`.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

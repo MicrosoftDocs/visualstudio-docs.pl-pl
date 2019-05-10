@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: abff655b41dbc55735b7dea2934f7d396aae5f4c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9248ad59a564207befb0b0a3ff1c229840ee336b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916612"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457717"
 ---
 # <a name="idebugproperty2getreference"></a>IDebugProperty2::GetReference
 Zwraca odwołanie do wartości właściwości.
@@ -36,14 +39,14 @@ int GetReference(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppRererence`
+## <a name="parameters"></a>Parametry
+ `ppRererence`\
 
  [out] Zwraca [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) obiekt reprezentujący odwołania do wartości właściwości.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu, zwykle `E_NOTIMPL` lub `E_GETREFERENCE_NO_REFERENCE`.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

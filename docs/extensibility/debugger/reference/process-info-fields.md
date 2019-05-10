@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 835509048e888e13b91c53d9e35bd03d7aebdfed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 28af715c307ebede5fa264c46cd42b85e8868674
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913504"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457956"
 ---
 # <a name="processinfofields"></a>PROCESS_INFO_FIELDS
 Określić, jakiego rodzaju informacje należy pobrać dla procesu.
@@ -53,24 +56,33 @@ public enum enum_PROCESS_INFO_FIELDS { 
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
- PIF_FILE_NAME zainicjować bądź użyj `bstrFileName` pole [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) struktury.
+## <a name="fields"></a>Pola
+ `PIF_FILE_NAME`\
+ Inicjowanie bądź użyj `bstrFileName` pole [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) struktury.
 
- PIF_BASE_NAME zainicjować bądź użyj `bstrBaseName` pole `PROCESS_INFO` struktury.
+ `PIF_BASE_NAME`\
+ Inicjowanie bądź użyj `bstrBaseName` pole `PROCESS_INFO` struktury.
 
- PIF_TITLE zainicjować bądź użyj `bstrTitle` pole `PROCESS_INFO` struktury.
+ `PIF_TITLE`\
+ Inicjowanie bądź użyj `bstrTitle` pole `PROCESS_INFO` struktury.
 
- PIF_PROCESS_ID zainicjować bądź użyj `ProcessId` pole `PROCESS_INFO` struktury.
+ `PIF_PROCESS_ID`\
+ Inicjowanie bądź użyj `ProcessId` pole `PROCESS_INFO` struktury.
 
- PIF_SESSION_ID zainicjować bądź użyj `dwSessionId` pole `PROCESS_INFO` struktury.
+ `PIF_SESSION_ID`\
+ Inicjowanie bądź użyj `dwSessionId` pole `PROCESS_INFO` struktury.
 
- PIF_ATTACHED_SESSION_NAME zainicjować bądź użyj `bstrAttachedSessionName` pole `PROCESS_INFO` struktury.
+ `PIF_ATTACHED_SESSION_NAME`\
+ Inicjowanie bądź użyj `bstrAttachedSessionName` pole `PROCESS_INFO` struktury.
 
- PIF_CREATION_TIME zainicjować bądź użyj `CreationTime` pole `PROCESS_INFO` struktury.
+ `PIF_CREATION_TIME`\
+ Inicjowanie bądź użyj `CreationTime` pole `PROCESS_INFO` struktury.
 
- PIF_FLAGS zainicjować bądź użyj `Flags` pole `PROCESS_INFO` struktury.
+ `PIF_FLAGS`\
+ Inicjowanie bądź użyj `Flags` pole `PROCESS_INFO` struktury.
 
- PIF_ALL wypełnia wszystkie pola.
+ `PIF_ALL`\
+ Wypełnia wszystkie pola.
 
 ## <a name="remarks"></a>Uwagi
  Przekazany do [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) metodę, aby wskazać, które pola [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) struktury, które mają zostać zainicjowane.
@@ -86,6 +98,6 @@ public enum enum_PROCESS_INFO_FIELDS { 
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

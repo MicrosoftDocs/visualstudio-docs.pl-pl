@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e3a11e368b6260d00f3f6ed0b19d94aa26bd31a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 58531e64c88c89a92b5eee7f2eac7067cf42775f
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865469"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458005"
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
 W tym artykule opisano konkretnego modułu (DLL, EXE lub zestawu).
@@ -59,29 +62,41 @@ public struct MODULE_INFO { 
 ```
 
 ## <a name="members"></a>Elementy członkowskie
- dwValidFields A kombinacja flag z [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) wyliczenia, która określa pola, które są wypełnione.
+ `dwValidFields`\
+ Kombinacja flag z [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) wyliczenia, która określa pola, które są wypełnione.
 
- m_bstrName nazwy modułu.
+ `m_bstrName`\
+ Nazwa modułu.
 
- m_bstrUrl URL modułu.
+ `m_bstrUrl`\
+ Adres URL modułu.
 
- m_bstrVersion wersji modułu.
+ `m_bstrVersion`\
+ Wersja modułu.
 
- m_bstrDebugMessage opcjonalną wiadomość, informacje o module, na przykład "nie można załadować symboli."
+ `m_bstrDebugMessage`\
+ Opcjonalną wiadomość, informacje o module, na przykład "nie można załadować symboli."
 
- m_addrLoadAddress adresem ładowania modułu.
+ `m_addrLoadAddress`\
+ Adresem ładowania modułu.
 
- m_addrPreferredLoadAddress adres preferowanego ładowania modułu.
+ `m_addrPreferredLoadAddress`\
+ Adres preferowanego ładowania modułu.
 
- m_dwSize rozmiar modułu.
+ `m_dwSize`\
+ Rozmiar modułu.
 
- m_dwLoadOrder kolejność ładowania modułu.
+ `m_dwLoadOrder`\
+ Kolejność ładowania modułu.
 
- m_TimeStamp czas ostatniej modyfikacji pliku symboli.
+ `m_TimeStamp`\
+ Czas ostatniej modyfikacji pliku symboli.
 
- m_bstrUrlSymbolLocation lokalizację pliku symboli (na przykład ".\\") określona w module. Używane jako lokalizację początkową można znaleźć symboli dla modułu.
+ `m_bstrUrlSymbolLocation`\
+ Lokalizacja pliku symboli (na przykład ".\\") określona w module. Używane jako lokalizację początkową można znaleźć symboli dla modułu.
 
- m_dwModuleFlags A kombinacja flag z [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) wyliczenie opisujące modułu.
+ `m_dwModuleFlags`\
+ Kombinacja flag z [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) wyliczenie opisujące modułu.
 
 ## <a name="remarks"></a>Uwagi
  Ta struktura jest przekazywany do [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) metody, gdzie jest wypełnione.
@@ -95,7 +110,7 @@ public struct MODULE_INFO { 
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)
 - [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)
