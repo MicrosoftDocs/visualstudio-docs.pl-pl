@@ -4,8 +4,6 @@ description: Dowiedz się, jak pracować z plikami konfiguracji usługi konfigur
 author: ghogen
 manager: jillfra
 assetId: 7da8c551-fb06-4057-b5c7-c77f4b39d803
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
@@ -33,28 +31,28 @@ Możesz również otworzyć **Zarządzanie konfiguracjami** okno dialogowe ze st
 
 ### <a name="to-add-a-service-configuration"></a>Aby dodać konfigurację usługi
 1. W Eksploratorze rozwiązań Otwórz menu skrótów dla projektu platformy Azure, a następnie wybierz pozycję **Zarządzanie konfiguracjami**.
-   
+
     **Konfiguracje usługi Zarządzanie** pojawi się okno dialogowe.
 2. Aby dodać konfigurację usługi, należy utworzyć kopię istniejącej konfiguracji. Aby to zrobić, wybierz konfigurację, którą chcesz skopiować z listy nazw, a następnie wybierz pozycję **Utwórz kopię**.
 3. (Opcjonalnie) Aby konfiguracja usługi inną nazwę, wybierz nową konfigurację usługi z listy nazw, a następnie wybierz **Zmień nazwę**. W **nazwa** tekstu wpisz nazwę, która ma być używana dla tej konfiguracji usługi, a następnie wybierz pozycję **OK**.
-   
+
     Nowy plik konfiguracji usługi o nazwie ServiceConfiguration. [Nazwa nowego] .cscfg jest dodawany do projektu platformy Azure w Eksploratorze rozwiązań.
 
 ### <a name="to-delete-a-service-configuration"></a>Aby usunąć konfigurację usługi
 1. W Eksploratorze rozwiązań Otwórz menu skrótów dla projektu platformy Azure, a następnie wybierz pozycję **Zarządzanie konfiguracjami**.
-   
+
     **Konfiguracje usługi Zarządzanie** pojawi się okno dialogowe.
 2. Aby usunąć konfigurację usługi, wybierz konfigurację, którą chcesz usunąć z **nazwa** listy, a następnie wybierz pozycję **Usuń**. Aby sprawdzić, czy chcesz usunąć tę konfigurację, pojawi się okno dialogowe.
 3. Wybierz pozycję **Usuń**.
-   
+
      Plik konfiguracji usługi zostanie usunięty z projektu platformy Azure w Eksploratorze rozwiązań.
 
 ### <a name="to-rename-a-service-configuration"></a>Aby zmienić konfigurację usługi
 1. W Eksploratorze rozwiązań Otwórz menu skrótów dla projektu platformy Azure, a następnie wybierz **Zarządzanie konfiguracjami**.
-   
+
     **Konfiguracje usługi Zarządzanie** pojawi się okno dialogowe.
 2. Aby zmienić nazwę konfiguracji usługi, wybierz nową konfigurację usługi z **nazwa** listy, a następnie wybierz **Zmień nazwę**. W **nazwa** tekstu wpisz nazwę, która ma być używana dla tej konfiguracji usługi, a następnie wybierz **OK**.
-   
+
     Nazwa pliku konfiguracji usługi jest zmieniona w projekcie platformy Azure w Eksploratorze rozwiązań.
 
 ### <a name="to-change-a-service-configuration"></a>Aby zmienić konfigurację usługi
@@ -68,16 +66,16 @@ Po uruchomieniu kreatora po raz pierwszy, tworzony jest profil domyślny. Progra
 ### <a name="to-add-a-profile"></a>Aby dodać profil
 1. Otwórz menu skrótów dla projektu platformy Azure, a następnie wybierz **Publikuj**.
 2. Obok pozycji **docelowy profil** listy wybierz **Zapisz profil** przycisku, jak pokazano na następującym rysunku. Spowoduje to utworzenie profilu dla Ciebie.
-   
+
     ![Utwórz nowy profil](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/create-new-profile.png)
 3. Po utworzeniu profilu wybierz **< Zarządzaj >** w **docelowy profil** listy.
-   
+
     **Spravovat profily** pojawi się okno dialogowe, jak pokazano na następującym rysunku.
-   
+
     ![Zarządzanie profilami okna dialogowego](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-profiles.png)
 4. W **nazwa** listy, wybierz profil, a następnie wybierz **Utwórz kopię**.
 5. Wybierz **Zamknij** przycisku.
-   
+
     Nowy profil zostanie wyświetlony na liście profilów docelowej.
 6. W **docelowy profil** , wybierz profil, który został utworzony na liście. Ustawienia kreatora Publikowanie są wypełniane wybór z wybranego profilu.
 7. Wybierz **Wstecz** i **dalej** przycisków, aby wyświetlić każdą stronę w Kreatorze publikacji, a następnie dostosować ustawienia dla tego profilu. Zobacz [Kreator publikowania aplikacji Azure](http://go.microsoft.com/fwlink/p/?LinkID=623085) informacji.

@@ -1,18 +1,14 @@
 ---
 title: Konstruowanie ciągi filtrów dla projektanta tabel | Dokumentacja firmy Microsoft
 description: Konstruowanie ciągi filtrów dla projektanta tabel
-services: visual-studio-online
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
-ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-origin.date: 11/18/2016
-ms.date: 09/10/2018
-ms.author: v-junlch
+ms.date: 11/18/2016
+ms.author: ghogen
 ms.openlocfilehash: d19084e9cfc9813434f5e68829345440763df7e8
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
@@ -43,9 +39,9 @@ Następujące operatory logiczne są obsługiwane dla wszystkich typów właści
 
 Podczas tworzenia ciągu filtru, następujące reguły są ważne:
 
-- Użyj operatorów logicznych, aby porównać właściwość z wartością. Należy pamiętać, że nie jest możliwe porównać właściwość z wartością dynamiczną; po jednej stronie wyrażenia musi być stałą.
-- Wszystkie części ciągu filtru jest rozróżniana wielkość liter.
-- Wartość stała muszą być tego samego typu danych co właściwość Aby filtr zwracał prawidłowe wyniki. Aby uzyskać więcej informacji na temat obsługiwanych typów właściwości, zobacz [opis modelu danych usługi Table Service](http://go.microsoft.com/fwlink/p/?LinkId=400448).
+* Użyj operatorów logicznych, aby porównać właściwość z wartością. Należy pamiętać, że nie jest możliwe porównać właściwość z wartością dynamiczną; po jednej stronie wyrażenia musi być stałą.
+* Wszystkie części ciągu filtru jest rozróżniana wielkość liter.
+* Wartość stała muszą być tego samego typu danych co właściwość Aby filtr zwracał prawidłowe wyniki. Aby uzyskać więcej informacji na temat obsługiwanych typów właściwości, zobacz [opis modelu danych usługi Table Service](http://go.microsoft.com/fwlink/p/?LinkId=400448).
 
 ## <a name="filtering-on-string-properties"></a>Filtrowanie według właściwości ciągu
 Podczas filtrowania właściwości ciągu stała typu string należy ją ująć w znaki pojedynczego cudzysłowu.
@@ -94,5 +90,3 @@ Aby filtrować wartości daty/godziny, należy określić **daty/godziny** — s
 Poniższy przykład zwraca jednostki, w którym właściwość CustomerSince jest równa 10 lipca 2008:
 
     CustomerSince eq datetime'2008-07-10T00:00:00Z'
-
-<!-- Update_Description: update metedata properties -->

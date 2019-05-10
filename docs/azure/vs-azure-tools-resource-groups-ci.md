@@ -4,7 +4,7 @@ description: W tym artykule opisano sposób konfigurowania ciągłej integracji 
 author: mlearned
 manager: jillfra
 ms.assetid: b81c172a-be87-4adc-861e-d20b94be9e38
-ms.topic: article
+ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned

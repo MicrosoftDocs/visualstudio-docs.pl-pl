@@ -30,7 +30,7 @@ VSCEIP jest domyślnie włączona. Można ją wyłączyć lub ponowne zalogowani
 
     ![Wybierz przycisk radiowy, zgodnie ze swoimi preferencjami uczestnictwa](media/visual-studio-experience-improvement-program-image1.png)
 
-[!INCLUDE [GDPR-related guidance](../../docs/misc/includes/gdpr-hybrid-note.md)]
+[!INCLUDE [GDPR-related guidance](../docs/misc/includes/gdpr-hybrid-note.md)]
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -4,9 +4,7 @@ description: Dowiedz się, jak dodawanie i usuwanie ról w usługach Azure cloud
 author: ghogen
 manager: jillfra
 assetId: 5ec9ae2e-8579-4e5d-999e-8ae05b629bd1
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
@@ -30,7 +28,7 @@ Poniższe kroki prowadzą przez proces dodawania roli sieć web lub procesu robo
 
 1. Kliknij prawym przyciskiem myszy **role** węzeł, aby wyświetlić menu kontekstowe. Z menu kontekstowego wybierz **Dodaj**, a następnie wybierz istniejącej roli Internet lub roli procesu roboczego z bieżącego rozwiązania, lub Utwórz projekt roli sieci web lub proces roboczy. Można również wybrać odpowiedni projekt, na przykład projektu aplikacji sieci web programu ASP.NET i skojarzyć go z projektu roli.
 
-    ![Opcje menu, aby dodać rolę do projektu usługi w chmurze platformy Azure](./media/vs-azure-tools-cloud-service-project-managing-roles/add-role.png)
+   ![Opcje menu, aby dodać rolę do projektu usługi w chmurze platformy Azure](./media/vs-azure-tools-cloud-service-project-managing-roles/add-role.png)
 
 ## <a name="removing-a-role-from-an-azure-cloud-service"></a>Usuwanie roli usługi w chmurze platformy Azure
 Poniższe kroki prowadzą przez usunięcie roli sieci web lub proces roboczy z projektu usługi w chmurze platformy Azure w programie Visual Studio.
@@ -43,7 +41,7 @@ Poniższe kroki prowadzą przez usunięcie roli sieci web lub proces roboczy z p
 
 1. Kliknij prawym przyciskiem myszy węzeł, aby usunąć i z menu kontekstowego wybierz **Usuń**.
 
-    ![Opcje menu, aby dodać rolę w usłudze w chmurze platformy Azure](./media/vs-azure-tools-cloud-service-project-managing-roles/remove-role.png)
+   ![Opcje menu, aby dodać rolę w usłudze w chmurze platformy Azure](./media/vs-azure-tools-cloud-service-project-managing-roles/remove-role.png)
 
 ## <a name="readding-a-role-to-an-azure-cloud-service-project"></a>Ponownie dodać roli do projektu usługi w chmurze platformy Azure
 Jeśli usunąć rolę z projektu usługi w chmurze, ale później zdecydujesz dodać rolę do projektu, tylko deklaracji ról i podstawowych atrybutów, takich jak punkty końcowe i informacji diagnostycznych, zostaną dodane. Nie dodatkowych zasobów lub odwołania są dodawane do `ServiceDefinition.csdef` pliku lub `ServiceConfiguration.cscfg` pliku. Jeśli chcesz dodać te informacje, należy ręcznie dodać do tych plików.

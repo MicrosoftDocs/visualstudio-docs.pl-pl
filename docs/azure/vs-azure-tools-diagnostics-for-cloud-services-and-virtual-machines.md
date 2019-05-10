@@ -1,15 +1,13 @@
 ---
 title: Konfigurowanie diagnostyki dla usług Azure Cloud Services i virtual machines | Dokumentacja firmy Microsoft
 description: Dowiedz się, jak skonfigurować diagnostykę dla debugowania usług Azure cloud services i maszyn wirtualnych (VM) w programie Visual Studio.
-author: mikejo5000
+author: ghogen
 manager: jillfra
 ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.openlocfilehash: 45e0eca12ecde6c6ede2e290f109ef04ce2035ff
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT

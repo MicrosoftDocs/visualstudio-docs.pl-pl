@@ -4,9 +4,7 @@ description: Informacje o sposobie instalowania i konfigurowania ról dla usług
 author: ghogen
 manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
@@ -50,8 +48,6 @@ W programie Visual Studio, można skonfigurować usługi w chmurze platformy Azu
 
     > [!IMPORTANT]
     > Jeśli wybierzesz konfigurację określonej usługi, niektóre właściwości są wyłączone, ponieważ ich można ustawić tylko w przypadku wszystkich konfiguracji. Aby edytować te właściwości, należy wybrać **wszystkie konfiguracje**.
-    >
-    >
 
     ![Lista konfiguracji usługi dla usługi w chmurze platformy Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
 

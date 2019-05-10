@@ -13,7 +13,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f54dc683aa4287145a27e22d49397241b395f69f
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60093309"

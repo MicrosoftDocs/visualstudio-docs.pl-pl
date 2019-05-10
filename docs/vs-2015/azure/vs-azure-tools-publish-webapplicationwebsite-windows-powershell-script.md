@@ -1,18 +1,16 @@
 ---
 title: Publikowanie WebApplicationWebSite (skrypt programu Windows PowerShell) | Dokumentacja firmy Microsoft
 description: Dowiedz się, jak opublikować projekt sieci web do witryny sieci Web platformy Azure. Ten skrypt tworzy wymagane zasoby w subskrypcji platformy Azure, jeśli nie istnieją.
-services: visual-studio-online
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 63cfaa2d-f04d-40dc-8677-345385c278d5
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-origin.date: 11/11/2016
-ms.date: 09/10/2018
-ms.author: v-junlch
+ms.date: 11/11/2016
+ms.author: ghogen
 ms.openlocfilehash: 6953d8944bb8619560ade4c7b3924dc9e89d3b11
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
@@ -25,13 +23,12 @@ ms.locfileid: "62830527"
 Publikuje projektu sieci web do witryny sieci Web platformy Azure. Skrypt tworzy wymagane zasoby w subskrypcji platformy Azure, jeśli nie istnieją.
 
     Publish-WebApplicationWebSite
-    -Configuration <configuration>
+    –Configuration <configuration>
     -SubscriptionName <subscriptionName>
     -WebDeployPackage <packageName>
     -DatabaseServerPassword @{Name = "name"; Password = "password"}
     -SendHostMessagesToOutput
     -Verbose
-
 
 ## <a name="configuration"></a>Konfiguracja
 Ścieżka do pliku konfiguracji JSON opisujące szczegóły wdrożenia.
@@ -102,7 +99,7 @@ Plik konfiguracji JSON określa szczegóły co ma zostać wdrożony. Zawiera inf
         "environmentSettings": {
             "webSite": {
                 "name": "WebApplication10554",
-                "location": "China North"
+                "location": "West US"
             },
             "databases": [
                 {
@@ -114,7 +111,7 @@ Plik konfiguracji JSON określa szczegóły co ma zostać wdrożony. Zawiera inf
                     "edition": "",
                     "size": "",
                     "collation": "",
-                    "location": "China North"
+                    "location": "West US"
                 }
             ]
         }
@@ -124,6 +121,3 @@ Można edytować plik JSON konfiguracji do zmiany, co jest wdrażana. Sekcja wit
 
 ## <a name="next-steps"></a>Następne kroki
 Aby uzyskać więcej informacji, zobacz [Publish-WebApplicationVM (skrypt programu Windows PowerShell)](vs-azure-tools-publish-webapplicationvm.md)
-
-
-<!-- Update_Description: update metedata properties -->

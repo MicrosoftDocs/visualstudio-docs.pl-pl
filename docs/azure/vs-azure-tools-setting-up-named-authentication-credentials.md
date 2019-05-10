@@ -4,8 +4,6 @@ description: Dowiedz się, jak Podaj poświadczenia, które Visual Studio może 
 author: ghogen
 manager: jillfra
 assetId: 61570907-42a1-40e8-bcd6-952b21a55786
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
@@ -40,6 +38,6 @@ Jeśli chcesz samodzielnie utworzyć certyfikat, mogą odwoływać się do instr
 ## <a name="next-steps"></a>Następne kroki
 
 - [Ogólne omówienie aplikacji sieci Web](https://docs.microsoft.com/azure/app-service/)
-- [Wdrażanie aplikacji w usłudze Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git) 
+- [Wdrażanie aplikacji w usłudze Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git)
 - [Wdrażanie zadań Webjob za pomocą programu Visual Studio](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
 - [Tworzenie i wdrażanie usługi w chmurze](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)

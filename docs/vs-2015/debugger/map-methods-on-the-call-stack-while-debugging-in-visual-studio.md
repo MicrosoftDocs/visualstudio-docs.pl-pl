@@ -28,7 +28,7 @@ helpviewer_keywords:
 ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
 caps.latest.revision: 43
 author: MikeJo5000
-ms.author: gewarren
+ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b55c677f4ba241260f1ebebc024a150dcd23eb19
 ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356

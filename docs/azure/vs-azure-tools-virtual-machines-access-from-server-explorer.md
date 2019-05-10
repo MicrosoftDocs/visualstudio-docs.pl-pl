@@ -4,8 +4,6 @@ description: Pobierz omówienie sposobu wyświetlania tworzenie i zarządzanie n
 author: ghogen
 manager: jillfra
 assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
@@ -35,7 +33,7 @@ W przypadku maszyn wirtualnych hostowanych na platformie Azure można uzyskiwać
    | Stan |Wartości obejmują uruchamianie, uruchomiono, zatrzymywania, zatrzymane i pobierania stanu. Jeśli pojawi się stan pobierania, bieżący stan jest nieznany. Wartości dla tej właściwości różnią się od wartości, które są używane na [witryny Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040). |
    | Identyfikator subskrypcji |Identyfikator subskrypcji dla Twojego konta platformy Azure. Te informacje można wyświetlić na [witryny Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040) , wyświetlając właściwości dla subskrypcji. |
 2. Wybierz węzeł punktu końcowego, a następnie wyświetlić **właściwości** okna.
-3. W poniższej tabeli opisano dostępne właściwości punktów końcowych, ale są one tylko do odczytu. Aby dodać lub edytować punkty końcowe dla maszyny wirtualnej, należy użyć [witryny Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040). 
+3. W poniższej tabeli opisano dostępne właściwości punktów końcowych, ale są one tylko do odczytu. Aby dodać lub edytować punkty końcowe dla maszyny wirtualnej, należy użyć [witryny Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040).
 
    | Właściwość | Opis |
    | --- | --- |
