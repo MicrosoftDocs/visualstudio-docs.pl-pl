@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67c055c1cf9fffde227d4e52a9764b2559a2342b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 838a7dc0024e69335bf5c49c664bd491a6949d08
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864800"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460918"
 ---
 # <a name="providerfields"></a>PROVIDER_FIELDS
 Określa właściwości skojarzone z dostawcą programu.
@@ -39,10 +42,12 @@ public enum enum_PROVIDER_FIELDS {
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
- PFIELD_PROGRAM_NODES `ProgramNodes` pole jest prawidłowe.
+## <a name="fields"></a>Pola
+ `PFIELD_PROGRAM_NODES`\
+ `ProgramNodes` Pole jest prawidłowe.
 
- PFIELD_IS_DEBUGGER_PRESENT `fIsDebuggerPresent` pole jest prawidłowe.
+ `PFIELD_IS_DEBUGGER_PRESENT`\
+ `fIsDebuggerPresent` Pole jest prawidłowe.
 
 ## <a name="remarks"></a>Uwagi
  Te wartości są zwracane w `Fields` członkiem [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) struktury, aby wskazać, pola, które struktury jawnie zostały wypełnione.
@@ -56,6 +61,6 @@ public enum enum_PROVIDER_FIELDS {
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)

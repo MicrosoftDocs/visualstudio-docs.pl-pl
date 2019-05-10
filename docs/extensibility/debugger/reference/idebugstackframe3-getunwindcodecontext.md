@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb0fc6511def34c1f15f91fca22fa9903daa08a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0ee90dfdcb38c938d87ed35aadca07540af34539
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915949"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458269"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
 Zwraca kontekst kodu reprezentujący lokalizację, w przypadku operacji rozwijania stosu wystąpił.
@@ -36,8 +39,8 @@ int GetUnwindCodeContext(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppCodeContext`
+## <a name="parameters"></a>Parametry
+ `ppCodeContext`\
 
  [out] Zwraca [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiekt, który reprezentuje lokalizacji kontekst kodu, jeśli wystąpił podczas odwijania stosu.
 
@@ -47,6 +50,6 @@ int GetUnwindCodeContext(
 ## <a name="remarks"></a>Uwagi
  Mimo że ta metoda może zwrócić kontekst kodu w lokalizacji po odwijania stosu, go nie musi oznaczać, że odwijania stosu faktycznie mogą występować w bieżącej ramki stosu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

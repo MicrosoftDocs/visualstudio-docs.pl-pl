@@ -9,38 +9,37 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd399bb0d18d4a12493530932705b938a5f6dd67
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ebbb18e37356c1ef6ccc47f18afe4736a418c0c3
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414861"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476582"
 ---
-# <a name="customizing-and-extending-a-domain-specific-language"></a>Dostosowywanie i rozszerzanie języka specyficznego dla domeny
+# <a name="customize-and-extend-a-domain-specific-language"></a>Dostosowywanie i rozszerzanie języka specyficznego dla domeny
+
 Program Visual Studio do modelowania i zestaw SDK wizualizacji (VMSDK) zawiera kilka poziomów, w których można zdefiniować narzędzi do modelowania:
 
-1. Definiowanie języka właściwego dla domeny (DSL), za pomocą diagramem definicji DSL. Możesz szybko utworzyć DSL za pomocą notacji diagramowy, czytelny formularza XML i podstawowe narzędzia, które są wymagane do generowania kodu i innych artefaktów.
-
-     Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md).
+1. Definiowanie języka właściwego dla domeny (DSL), za pomocą diagramem definicji DSL. Możesz szybko utworzyć DSL za pomocą notacji diagramowy, czytelny formularza XML i podstawowe narzędzia, które są wymagane do generowania kodu i innych artefaktów. Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md).
 
 2. Dostosuj język DSL za pomocą bardziej zaawansowanych funkcji w definicji DSL. Na przykład można wprowadzić dodatkowe linki, które są wyświetlane, gdy użytkownik tworzy element. Te techniki najczęściej są wykonywane w definicji DSL, a niektóre wymagają kilku wierszy kodu programu.
 
-3. Rozszerzanie narzędzi do modelowania przy użyciu kodu programu. VMSDK jest zaprojektowany specjalnie w celu ułatwiają integrowanie rozszerzeń z kodem, który jest generowany na podstawie definicji DSL.  Aby uzyskać więcej informacji, zobacz [pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+3. Rozszerzanie narzędzi do modelowania przy użyciu kodu programu. VMSDK jest zaprojektowany specjalnie w celu ułatwiają integrowanie rozszerzeń z kodem, który jest generowany na podstawie definicji DSL. Aby uzyskać więcej informacji, zobacz [pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 > [!NOTE]
-> Po zaktualizowaniu pliku definicji DSL, nie zapomnij kliknąć **Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań, przed ponowną kompilację rozwiązania.
+> Po zaktualizowaniu pliku definicji DSL, nie zapomnij kliknąć **Przekształć wszystkie szablony** na pasku narzędzi **Eksploratora rozwiązań** przed ponowną kompilację rozwiązania.
 
-## <a name="customShapes"></a> W tej sekcji
+## <a name="article-reference"></a>Odwołania do artykułu
 
 |Aby uzyskać ten efekt|Można znaleźć w tym temacie|
 |-|-|
-|Zezwalaj użytkownikowi na Ustawianie kolorów i styl właściwości kształtu.|Kliknij prawym przyciskiem myszy klasę kształtu lub połączenia, wskaż opcję **Dodaj udostępniane**i kliknij element.<br /><br /> Zobacz [Dostosowywanie prezentacji na diagramie](../modeling/customizing-presentation-on-the-diagram.md).|
+|Zezwalaj użytkownikowi na Ustawianie kolorów i styl właściwości kształtu.|Kliknij prawym przyciskiem myszy klasę kształtu lub połączenia, wskaż opcję **Dodaj udostępniane**i kliknij element.|
 |Różne rodzaje elementu modelu podobne na diagramie, udostępnianie właściwości, takie jak początkowa wysokość i szerokość, kolory, etykietki narzędzi.|Za pomocą dziedziczenia między kształty lub klas łącznika. Mapowania między pochodnej kształty i klasy pochodnej domeny dziedziczą szczegóły mapowania elementów nadrzędnych.<br /><br /> Lub mapowania klas innej domeny w tej samej klasie kształtu.|
 |Klasa elementu modelu jest wyświetlana w kontekstach różne kształty.|Więcej niż jedną klasę kształtu są mapowane na tej samej klasy domeny. W przypadku tworzenia rozwiązania, postępuj zgodnie z raportu o błędach i podaj żądany kod, aby zdecydować, jaki kształt do użycia.|
 |Kolor kształtu lub inne funkcje, takie jak czcionki wskazuje bieżący stan.|Zobacz [aktualizowanie kształtów i łączników, aby odzwierciedlały Model](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Utwórz regułę, która aktualizuje właściwości narażone. Zobacz [reguły propagujące zmiany w modelu](../modeling/rules-propagate-changes-within-the-model.md).<br /><br /> Możesz też użyć OnAssociatedPropertyChanged() można zaktualizować — dostępne funkcje, takie jak czcionki lub link strzałki.|
 |Ikona na zmiany kształtu do wskazywania stanu.|Ustaw widoczność mapowanie dekoratora w oknie Szczegóły języka DSL. Znajdź kilka dekoratory obrazu na tym samym położeniu. Zobacz [aktualizowanie kształtów i łączników, aby odzwierciedlały Model](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Lub Zastąp `ImageField.GetDisplayImage()`. Zobacz przykład w <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|
-|Ustawienie obrazu tła na żaden kształt|Zastąpienie InitializeInstanceResources(), aby dodać zakotwiczonej ImageField. Zobacz [Dostosowywanie prezentacji na diagramie](../modeling/customizing-presentation-on-the-diagram.md).|
-|Zagnieżdżanie kształtów na dowolnym poziomie|Skonfiguruj cykliczne, osadzanie drzewa. Zdefiniuj boundsrules — zawiera kształty. Zobacz [Dostosowywanie prezentacji na diagramie](../modeling/customizing-presentation-on-the-diagram.md).|
+|Ustawienie obrazu tła na żaden kształt|Zastąpienie InitializeInstanceResources(), aby dodać zakotwiczonej ImageField.|
+|Zagnieżdżanie kształtów na dowolnym poziomie|Skonfiguruj cykliczne, osadzanie drzewa. Zdefiniuj boundsrules — zawiera kształty.|
 |Dołącz łączników w stałym punktach na krawędzi elementu.|Zdefiniuj osadzone elementy terminala, reprezentowane przez małe porty na diagramie. Boundsrules — umożliwiają rozwiązywanie porty w miejscu. Zobacz przykład schemat w [wizualizacji i modelowania SDK](http://go.microsoft.com/fwlink/?LinkID=186128).|
 |Pole tekstowe wyświetla wartość pochodzi od innych wartości.|Mapowanie dekoratora tekstu do właściwości domeny obliczeniowe lub magazynu niestandardowego. Aby uzyskać więcej informacji, zobacz [obliczeniowe i niestandardowe właściwości przechowywania](../modeling/calculated-and-custom-storage-properties.md).|
 |Propagowanie zmian między elementami modelu lub między kształtami|Zobacz [weryfikacji języka specyficznego dla domeny](../modeling/validation-in-a-domain-specific-language.md).|

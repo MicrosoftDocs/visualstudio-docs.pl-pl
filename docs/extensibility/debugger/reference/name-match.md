@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50ae796a4662b51c186e6e9d69bf41771d040c8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 381219b592ad7ed676ff940dd594450123e5d037
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865693"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457997"
 ---
 # <a name="namematch"></a>NAME_MATCH
 Wybierze case opcję do dopasowania nazwy.
@@ -40,12 +43,15 @@ public enum NameMatchOptions { 
 }
 ```
 
-## <a name="members"></a>Elementy członkowskie
- nmNone, których nie określono opcji.
+## <a name="fields"></a>Pola
+ `nmNone`\
+ Nie określono opcji.
 
- Wskazuje, że nazwy mają być dopasowywane nmCaseSensitive jest rozróżniana wielkość liter.
+ `nmCaseSensitive`\
+ Wskazuje, że nazwy do dopasowania jest rozróżniana wielkość liter.
 
- Wskazuje, że nazwy mają być dopasowywane nmCaseInsensitive nie jest rozróżniana wielkość liter.
+ `nmCaseInsensitive`\
+ Wskazuje, czy nazwy, które mają być dopasowywane nie jest rozróżniana wielkość liter.
 
 ## <a name="remarks"></a>Uwagi
  Przekazywany jako argument do następujących metod:
@@ -65,7 +71,7 @@ public enum NameMatchOptions { 
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)
 - [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)

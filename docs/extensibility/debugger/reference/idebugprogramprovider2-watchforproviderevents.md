@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e76baf1330ec63d1032b69fa6cfddce4776742a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9048dc633dd9cc74a9d27c54ff9b0fba16cc7ac1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869805"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458982"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 Umożliwia procesu otrzymywać powiadomienia o zdarzeniach portu.
@@ -46,8 +49,8 @@ int WatchForProviderEvents(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `Flags`
+## <a name="parameters"></a>Parametry
+ `Flags`\
 
  [in] Kombinacja flag z [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) wyliczenia. Następujące flagi są typowe dla tego wywołania:
 
@@ -58,23 +61,23 @@ int WatchForProviderEvents(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Dołączony do obiektu wywołującego, ale nie jest uruchomiona przez debuger.|
 |`PFLAG_REASON_WATCH`|Obiekt wywołujący chce obejrzeć dla zdarzeń. Jeśli ta flaga nie jest ustawiona. następnie zdarzeń wywołania zwrotnego jest usuwany, a obiekt wywołujący nie będzie już otrzymywać powiadomień.|
 
- `pPort`
+ `pPort`\
 
  [in] Port procesu wywołującego jest uruchomiona na.
 
- `processId`
+ `processId`\
 
  [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktury zawierający identyfikator procesu, który zawiera program zagrożona.
 
- `EngineFilter`
+ `EngineFilter`\
 
  [in] Tablica identyfikatorów GUID aparaty debugowania skojarzonego z procesem.
 
- `guidLaunchingEngine`
+ `guidLaunchingEngine`\
 
  [in] Identyfikator GUID aparatu debugowania, który uruchomił ten proces (jeśli istnieje).
 
- `pEventCallback`
+ `pEventCallback`\
 
  [in] [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) obiekt, który otrzymuje powiadomienia o zdarzeniach.
 
@@ -213,7 +216,7 @@ STDMETHODIMP CDebugEngine::WatchForProviderEvents(
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)
 - [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)
 - [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

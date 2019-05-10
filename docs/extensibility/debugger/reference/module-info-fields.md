@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4302a911e58a23bdcd58bb054c1fc90c389fed6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dba231f173f3828243e284a7d68a877204df1bd0
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865456"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458023"
 ---
 # <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
 Określa flagi dla informacji debugowania w module.
@@ -61,32 +64,45 @@ public enum enum_MODULE_INFO_FIELDS { 
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
- MIF_NONE inicjowania lub używać żadnego z pól w strukturze.
+## <a name="fields"></a>Pola
+ `MIF_NONE`\
+ Inicjowanie/użycie żadnego z pól w strukturze.
 
- MIF_NAME zainicjować bądź użyj `m_bstrName` pole [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) struktury.
+ `MIF_NAME`\
+ Inicjowanie bądź użyj `m_bstrName` pole [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) struktury.
 
- MIF_URL zainicjować bądź użyj `m_bstrUrl` pole `MODULE_INFO` struktury.
+ `MIF_URL`\
+ Inicjowanie bądź użyj `m_bstrUrl` pole `MODULE_INFO` struktury.
 
- MIF_VERSION zainicjować bądź użyj `m_bstrVersion` pole `MODULE_INFO` struktury.
+ `MIF_VERSION`\
+ Inicjowanie bądź użyj `m_bstrVersion` pole `MODULE_INFO` struktury.
 
- MIF_DEBUGMESSAGE zainicjować bądź użyj `m_bstrDebugMessage` pole `MODULE_INFO` struktury.
+ `MIF_DEBUGMESSAGE`\
+ Inicjowanie bądź użyj `m_bstrDebugMessage` pole `MODULE_INFO` struktury.
 
- MIF_LOADADDRESS zainicjować bądź użyj `m_addrLoadAddress` pole `MODULE_INFO` struktury.
+ `MIF_LOADADDRESS`\
+ Inicjowanie bądź użyj `m_addrLoadAddress` pole `MODULE_INFO` struktury.
 
- MIF_PREFFEREDADDRESS zainicjować bądź użyj `m_addrPreferredLoadAddress` pole `MODULE_INFO` struktury.
+ `MIF_PREFFEREDADDRESS`\
+ Inicjowanie bądź użyj `m_addrPreferredLoadAddress` pole `MODULE_INFO` struktury.
 
- MIF_SIZE zainicjować bądź użyj `m_dwSize` pole `MODULE_INFO` struktury.
+ `MIF_SIZE`\
+ Inicjowanie bądź użyj `m_dwSize` pole `MODULE_INFO` struktury.
 
- MIF_LOADORDER zainicjować bądź użyj `m_dwLoadOrder` pole `MODULE_INFO` struktury.
+ `MIF_LOADORDER`\
+ Inicjowanie bądź użyj `m_dwLoadOrder` pole `MODULE_INFO` struktury.
 
- MIF_TIMESTAMP zainicjować bądź użyj `m_TimeStamp` pole `MODULE_INFO` struktury.
+ `MIF_TIMESTAMP`\
+ Inicjowanie bądź użyj `m_TimeStamp` pole `MODULE_INFO` struktury.
 
- MIF_URLSYMBOLLOCATION zainicjować bądź użyj `m_bstrUrlSymbolLocation` pole `MODULE_INFO` struktury.
+ `MIF_URLSYMBOLLOCATION`\
+ Inicjowanie bądź użyj `m_bstrUrlSymbolLocation` pole `MODULE_INFO` struktury.
 
- MIF_FLAGS zainicjować bądź użyj `m_dwModuleFlags` pole `MODULE_INFO` struktury.
+ `MIF_FLAGS`\
+ Inicjowanie bądź użyj `m_dwModuleFlags` pole `MODULE_INFO` struktury.
 
- MIF_ALLFIELDS zainicjować bądź Użyj wszystkich pól w `MODULE_INFO` struktury.
+ `MIF_ALLFIELDS`\
+ Inicjowanie bądź Użyj wszystkich pól w `MODULE_INFO` struktury.
 
 ## <a name="remarks"></a>Uwagi
  Te wartości są przekazywane jako argument do [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) metodę, aby wskazać, które pola [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) struktury, które mają zostać zainicjowane.
@@ -102,7 +118,7 @@ public enum enum_MODULE_INFO_FIELDS { 
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)
 - [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

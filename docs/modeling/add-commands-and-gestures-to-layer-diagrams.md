@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce8bc44bf506cf315420aad4108832f7461f1c70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea106d98dbd18f224e7f2a9d95734eff591dfc2b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822836"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476656"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Dodawanie poleceń i gestów do diagramów zależności
 
@@ -28,7 +28,7 @@ Jeśli chcesz, możesz zdefiniować kilka poleceń i elementów obsługi gestów
 
 ## <a name="requirements"></a>Wymagania
 
-Zobacz [wymagania](../modeling/extend-layer-diagrams.md#prereqs).
+Zobacz [wymagania](../modeling/extend-layer-diagrams.md#requirements).
 
 ## <a name="define-a-command-or-gesture-in-a-new-vsix"></a>Definiowanie polecenia lub gestu w nowym VSIX
 

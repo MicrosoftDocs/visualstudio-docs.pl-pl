@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56ba1933d1b63f9af863b115972f3ecf1dfc4346
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e5d298add846a7f3b7baf566f3c31e16c68b8dc5
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913719"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460845"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 Określa, jak można przeanalizować wyrażenia.
@@ -41,12 +44,15 @@ public enum enum_PARSEFLAGS { 
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
- PARSE_EXPRESSION wskazuje, czy wyrażenie nie jest instrukcja.
+## <a name="fields"></a>Pola
+ `PARSE_EXPRESSION`\
+ Wskazuje, czy wyrażenie nie jest instrukcja.
 
- PARSE_FUNCTION_AS_ADDRESS wskazuje, że wyrażenie jest analizowany (i później oceniane) jako adres.
+ `PARSE_FUNCTION_AS_ADDRESS`\
+ Wskazuje, czy wyrażenie jest analizowany (i później oceniane) jako adres.
 
- PARSE_DESIGN_TIME_EXPR_EVAL wskazuje, czy wyrażenie jest analizowana w czasie projektowania (oznacza to, gdy projektant jest otwarty).
+ `PARSE_DESIGN_TIME_EXPR_EVAL`\
+ Wskazuje, czy wyrażenie jest analizowana w czasie projektowania (oznacza to, gdy projektant jest otwarty).
 
 ## <a name="remarks"></a>Uwagi
  Przekazany jako parametr do [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) i [przeanalizować](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) metody.
@@ -58,7 +64,7 @@ public enum enum_PARSEFLAGS { 
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)
 - [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)

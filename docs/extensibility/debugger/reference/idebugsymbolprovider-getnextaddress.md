@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 574111db390388ee1d0c572a3a8825c3a2ae9469
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8ea45e3aa1f59353e0a395a61b0309144b413227
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915673"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223993"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 Pobiera adres debugowania, występującego z adresu podanego debugowania w metodzie.
@@ -40,21 +43,21 @@ int GetNextAddress( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pAddress`
+## <a name="parameters"></a>Parametry
+ `pAddress`\
 
  [in] Podany adres debugowania.
 
- `fStatementOnly`
+ `fStatementOnly`\
 
  [in] W przypadku opcji TRUE ogranicza adresy debugowania do pojedynczej instrukcji.
 
- `ppAddress`
+ `ppAddress`\
 
  [out] Zwraca następny adres debugowania.
 
 ## <a name="return-value"></a>Wartość zwracana
  Zwraca prawidłową `HRESULT`, zazwyczaj S_OK.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

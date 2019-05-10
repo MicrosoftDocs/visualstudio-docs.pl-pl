@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7614b0633f6490e8c3bb6837ed89fda67575c71e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e51944c2a7b0ad72e2c03b54a61e90bb1883177d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913706"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457978"
 ---
 # <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
 Określa flagi stan oczekujący punkt przerwania.
@@ -39,10 +42,10 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
- PBPSF_NONE Placeholder.
+## <a name="fields"></a>Pola
+ `PBPSF_NONE` Symbol zastępczy.
 
- PBPSF_VIRTUALIZED określa zwirtualizowanych oczekujących punktów przerwania, który ma zostać powiązany za każdym razem, gdy nowy kod jest ładowany.
+ `PBPSF_VIRTUALIZED` Określa zwirtualizowanych oczekujących punktów przerwania, który ma zostać powiązany za każdym razem, gdy nowy kod jest ładowany.
 
 ## <a name="remarks"></a>Uwagi
  Używany do `flags` członkiem [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) struktury.
@@ -54,6 +57,6 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)

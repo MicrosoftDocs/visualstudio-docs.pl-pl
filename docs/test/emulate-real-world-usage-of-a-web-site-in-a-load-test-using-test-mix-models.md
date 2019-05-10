@@ -9,16 +9,16 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87161a4d58411f5f1bbe0347d093a39f17742bd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c946fa81c46af38daac469e0de7a00abafb3394
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785739"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461581"
 ---
-# <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Emulowanie oczekiwanego wykorzystania rzeczywistych witryny sieci Web lub aplikacji w teście obciążenia przy użyciu modelu testu mieszanego
+# <a name="test-mix-models-overview"></a>Testu mieszanego modeli — omówienie
 
-Załaduj opcje modelowania umożliwia bardziej dokładnie przewidzieć oczekiwane wykorzystanie w świecie rzeczywistym witryny sieci Web lub aplikacji, które obciążenia testujesz. Należy to zrobić, ponieważ test obciążenia, który nie jest oparty na dokładne ładowanie modelu można wygenerować wyświetlenie nieprawdziwych wyników.
+Opcje modelowania obciążenia umożliwiają bardziej precyzyjne przewidywanie oczekiwane wykorzystanie w świecie rzeczywistym z witryny sieci Web lub aplikację, którą należy załadować testów. Należy to zrobić, ponieważ test obciążenia, który nie jest oparty na dokładne ładowanie modelu można wygenerować wyświetlenie nieprawdziwych wyników.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -40,7 +40,8 @@ Można określić jedną z następujących opcji model testu mieszanego, dla sce
 - **Oparte na kolejności:** Każdy wirtualny użytkownik uruchamia testy wydajności lub jednostki sieci web, w kolejności, że testy są zdefiniowane w tym scenariuszu. Wirtualny użytkownik kontynuuje, okrągło testów w następującej kolejności do czasu ukończenia testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [kolejności sekwencyjnej](#SequentialOrder).
 
 ### <a name="BasedOnTestsStarted"></a> Procent opartych na rozpoczętych testów
- Dla każdego testu w zestawie można określić wartość procentową, która określa, jak często testu jest wybrany jako następny test do uruchomienia. Na przykład można przypisać następujące wartości procentowe do trzech testów:
+
+Dla każdego testu w zestawie można określić wartość procentową, która określa, jak często testu jest wybrany jako następny test do uruchomienia. Na przykład można przypisać następujące wartości procentowe do trzech testów:
 
 - TestA (50%)
 
@@ -48,13 +49,14 @@ Można określić jedną z następujących opcji model testu mieszanego, dla sce
 
 - TestC (15%)
 
-  Jeśli używasz tego ustawienia, Następny test, aby rozpocząć opiera się na przypisane wartości procentowe. W tym nie biorąc pod uwagę liczbę wirtualnych użytkowników, którzy są aktualnie uruchomione każdego testu.
+Jeśli używasz tego ustawienia, Następny test, aby rozpocząć opiera się na przypisane wartości procentowe. W tym nie biorąc pod uwagę liczbę wirtualnych użytkowników, którzy są aktualnie uruchomione każdego testu.
 
 ### <a name="PercentageBasedonVirtualUsers"></a> Wartość procentową na podstawie liczby użytkowników wirtualnych
  Ten model testu mieszanego Określa procent wirtualnych użytkowników, którzy uruchomią określonego testu. Jeśli używasz tego modelu testu mieszanego, Następny test, aby rozpocząć opiera się nie tylko na przypisane wartości procentowych, ale także na procent wirtualnych użytkowników, którzy są aktualnie uruchomione określonego testu. W dowolnym momencie testu obciążeniowego liczbę użytkowników, którzy uruchomili określonego testu możliwie najdokładniej pasuje do przypisanego rozkładu.
 
 ### <a name="PacingTestMix"></a> Tempo testu mieszanego
- Jeśli określisz pacing mieszanki testów, możesz ustawić wskaźnik wykonania testu dla każdego wirtualnego użytkownika dla każdego testu w teście mieszanym. Dla każdego testu ten kurs jest wyrażona jako testy na wirtualnego użytkownika na godzinę. Na przykład może przypisywać pacing się test mieszany, do następujących testów:
+
+Jeśli określisz pacing mieszanki testów, możesz ustawić wskaźnik wykonania testu dla każdego wirtualnego użytkownika dla każdego testu w teście mieszanym. Dla każdego testu ten kurs jest wyrażona jako testy na wirtualnego użytkownika na godzinę. Na przykład może przypisywać pacing się test mieszany, do następujących testów:
 
 - TestA: 4 testy na użytkownika na godzinę
 
@@ -62,9 +64,9 @@ Można określić jedną z następujących opcji model testu mieszanego, dla sce
 
 - TestC: 0,125 testy na użytkownika na godzinę
 
-  Jeśli używasz pacing model testu mieszanego, aparat środowiska uruchomieniowego testu obciążenia gwarantuje, że rzeczywista szybkość uruchamiania testów jest mniejsza lub równa określonej szybkości. Jeśli testy są uruchamiane zbyt długo dla przypisany numer należy wykonać, jest zwracany błąd.
+Jeśli używasz pacing model testu mieszanego, aparat środowiska uruchomieniowego testu obciążenia gwarantuje, że rzeczywista szybkość uruchamiania testów jest mniejsza lub równa określonej szybkości. Jeśli testy są uruchamiane zbyt długo dla przypisany numer należy wykonać, jest zwracany błąd.
 
-  **Traktować czas między iteracjami testu** ustawienie nie ma zastosowania, gdy używasz pacing testu mieszanego.
+**Traktować czas między iteracjami testu** ustawienie nie ma zastosowania, gdy używasz pacing testu mieszanego.
 
 #### <a name="apply-distribution-to-pacing-delay"></a>Zastosuj rozkład do opóźnienia do
  Wartość **dystrybucji Zastosuj rozkład do opóźnienia** właściwość w scenariuszu testu obciążenia można ustawić na wartość true lub false:

@@ -8,18 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6dde8eee0c21f41cb21acf97fb68961dd0beee7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1350523b347d0dfb87831947b4fd1d9206521ca
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933675"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461333"
 ---
-# <a name="xml-schema-designer-workspace"></a>Obszar roboczy projektanta schematu XML
+# <a name="xml-schema-designer-workspace-views"></a>Widoki obszar roboczy Projektanta schematu XML
 
-Projektant schematu XML (XSD Designer) jest graficznego narzędzia, które ułatwia Eksplorowanie schematów XML. Oprócz [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md), co pozwala na przeglądanie, przejdź w drzewie schematu XML i wyszukuj, Projektant XSD zawiera trzy widoki, które umożliwiają poznawanie schematu XSD bardziej szczegółowo. Widoku startowego to doskonała platforma dla Projektant XSD; z widoku startowego możesz przejść z innymi widokami Projektant XSD i wyświetlić szczegóły zestawu schematów. Widok wykresu umożliwia Zobacz Omówienie zestawu schematu i relacje między węzłami schematu. Widok modelu zawartości zapewnia graficzną reprezentację szczegóły węzłów lokalne i globalne schematu, w tym proste i złożone typy, elementy, grup, atrybuty i grupy atrybutów.
+Projektant schematu XML (XSD Designer) jest graficznego narzędzia, które ułatwia Eksplorowanie schematów XML. Oprócz [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md), co pozwala na przeglądanie, przejdź w drzewie schematu XML i wyszukuj, Projektant XSD zawiera trzy widoki, w którym możesz zapoznać się z bardziej szczegółowo schematu XSD.
 
-Aby rozpocząć eksplorowanie węzły, które Cię interesuje, możesz dodać je do obszaru roboczego. Obszar roboczy jest współużytkowana przez wszystkie widoki.
+- **Widoku Start** to doskonała Projektant XSD; z widoku startowego możesz przejść z innymi widokami Projektant XSD i Szczegóły zestawu schematów.
+- **Widoku wykresu** umożliwia wyświetlenie Omówienie zestawu schematu i relacje między węzłami schematu.
+- **Widoku modelu zawartości** zawiera graficzną reprezentację szczegóły węzłów lokalne i globalne schematu, w tym proste i złożone typy, elementy, grup, atrybuty i grupy atrybutów.
+
+Aby rozpocząć eksplorowanie węzły, które interesują Cię, należy dodać je do obszaru roboczego. Obszar roboczy jest współużytkowana przez wszystkie widoki.
 
 ## <a name="add-nodes-to-the-workspace"></a>Dodawanie węzłów do obszaru roboczego
 

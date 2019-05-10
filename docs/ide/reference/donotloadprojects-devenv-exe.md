@@ -1,6 +1,6 @@
 ---
 title: -DoNotLoadProjects (devenv.exe)
-ms.date: 03/11/2019
+ms.date: 04/30/2019
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /DoNotLoadProjects switch
@@ -11,14 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de757e7022339b11f6d7c04ea7315abf685da24c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a414fde4dee401016e997fa5d6890da2ae8d9d53
+ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428042"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65083932"
 ---
 # <a name="donotloadprojects-devenvexe"></a>/DoNotLoadProjects (devenv.exe)
+
+**Nowość w Visual Studio 2019 wersji 16.1**
 
 Otwiera określone rozwiązanie bez ładowania jakiegokolwiek projektu. Aby uzyskać więcej informacji, zobacz [filtrowane rozwiązań w programie Visual Studio](../filtered-solutions.md).
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86c20e7c6828cfbf3ec31ba5dcbec9c7ee8478df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 887002086b50198ba192bde3f19390d3267a5c9d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869363"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457352"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 Pobiera określonego interfejsu, granice procesu.
@@ -38,12 +41,12 @@ int UnmarshalDebuggeeInterface(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `riid`
+## <a name="parameters"></a>Parametry
+ `riid`\
 
  [in] Identyfikator GUID interfejsu do uzyskania.
 
- `ppvObject`
+ `ppvObject`\
 
  [out] Zwraca obiekt implementujący żądanego interfejsu. [C++] to może być rzutowany bezpośrednio typ żądanego interfejsu. [C#] Użyj <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> metodę umożliwiającą uzyskanie żądanego interfejsu.
 
@@ -53,5 +56,5 @@ int UnmarshalDebuggeeInterface(
 ## <a name="remarks"></a>Uwagi
  Ta metoda jest używana, gdy aparat debugowania jest uruchomiony w [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] przestrzeni procesu, a program poddawany działa w jego własnej przestrzeni procesu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)

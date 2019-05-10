@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2bffa499d24bc38008982c990efd19205e95f6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 75d934b4896614655a2043e1f6ba549d72f99e2d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869034"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457475"
 ---
 # <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
 Pobiera unikatowy identyfikator dla metryki ewaluatora wyrażeń nadać jej nazwę.
@@ -40,25 +43,25 @@ HRESULT GetEEMetricGuid(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `guidLang`
+## <a name="parameters"></a>Parametry
+ `guidLang`\
 
  [in] Unikatowy identyfikator języka programowania.
 
- `guidVendor`
+ `guidVendor`\
 
  [in] Unikatowy identyfikator dostawcy.
 
- `pszMetric`
+ `pszMetric`\
 
  [in] Nazwa metryki.
 
- `pguidValue`
+ `pguidValue`\
 
  [out] Zwraca unikatowy identyfikator metryki.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

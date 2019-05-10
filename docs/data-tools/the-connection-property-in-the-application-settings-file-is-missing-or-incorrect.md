@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1a2b06d16c3761c1f2d82197c82d195b67845989
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: becbc5032c05af1edf5361a54fd0a80b4a0ff412
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566013"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458307"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Brakuje właściwości połączenia w pliku ustawień aplikacji lub jest ona niepoprawna
 
@@ -25,5 +25,4 @@ Aby odpowiedzieć na tę wiadomość, wybierz **OK**. Informacje o połączeniu,
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Komunikaty narzędzia Object Relational Designer](../data-tools/o-r-designer-messages.md)
 - [Narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 930f3d7ec2500adaaf9b499e4e327aedabaf8d52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 424f8a8f51e714dab35f542974b6f25e5ecf3841
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916014"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457580"
 ---
 # <a name="idebugstackframe2getdebugproperty"></a>IDebugStackFrame2::GetDebugProperty
 Pobiera opis właściwości ramki stosu.
@@ -36,8 +39,8 @@ int GetDebugProperty ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppDebugProp`
+## <a name="parameters"></a>Parametry
+ `ppDebugProp`\
 
  [out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który opisuje właściwości tej ramki stosu.
 
@@ -47,6 +50,6 @@ int GetDebugProperty ( 
 ## <a name="remarks"></a>Uwagi
  Wywoływanie [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) metody z odpowiednie filtry może pobrać zmienne lokalne, parametry metody, rejestrów i "to" wskaźnik ramki stosu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

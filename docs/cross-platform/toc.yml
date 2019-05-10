@@ -6,8 +6,9 @@
 - name: Visual Studio Tools for Apache Cordova
   href: /visualstudio/cross-platform/tools-for-cordova/
 - name: Narzędzia Visual Studio Tools for Unity
-  href: visual-studio-tools-for-unity.md
   items:
+    - name: Narzędzia Visual Studio Tools for Unity
+      href: visual-studio-tools-for-unity.md
     - name: Wprowadzenie do narzędzi Visual Studio Tools for Unity
       href: getting-started-with-visual-studio-tools-for-unity.md
     - name: Korzystanie z narzędzi Visual Studio Tools for Unity
@@ -15,8 +16,9 @@
     - name: Używanie platformy .NET 4.x w środowisku Unity
       href: unity-scripting-upgrade.md
     - name: Programowanie za pomocą narzędzi Visual Studio Tools for Unity
-      href: programming-visual-studio-tools-for-unity.md
       items:
+        - name: Programowanie za pomocą narzędzi Visual Studio Tools for Unity
+          href: programming-visual-studio-tools-for-unity.md
         - name: Dostosowywanie plików projektu utworzonych za pomocą rozszerzenia VSTU
           href: customize-project-files-created-by-vstu.md
         - name: Udostępnianie wywołania zwrotnego dziennika środowiska Unity za pomocą rozszerzenia VSTU
@@ -32,11 +34,13 @@
     - name: Metodyka DevOps z użyciem aplikacji Unity
       href: application-lifecycle-management-alm-with-unity-apps.md
 - name: Język Visual C++ dla opracowywania aplikacji mobilnych na wiele platform
-  href: visual-cpp-for-cross-platform-mobile-development.md
   items:
+    - name: Język Visual C++ dla opracowywania aplikacji mobilnych na wiele platform
+      href: visual-cpp-for-cross-platform-mobile-development.md
     - name: Instalowanie języka Visual C++ dla opracowywania aplikacji mobilnych na wiele platform
-      href: install-visual-cpp-for-cross-platform-mobile-development.md
       items:
+        - name: Instalowanie języka Visual C++ dla opracowywania aplikacji mobilnych na wiele platform
+          href: install-visual-cpp-for-cross-platform-mobile-development.md
         - name: Instalowanie i konfigurowanie narzędzi do kompilacji przy użyciu systemu iOS
           href: install-and-configure-tools-to-build-using-ios.md
     - name: Tworzenie aplikacji systemu Android działania natywnego
@@ -50,8 +54,9 @@
     - name: Przykłady programowania międzyplatformowych aplikacji mobilnych
       href: cross-platform-mobile-development-examples.md
     - name: Właściwości międzyplatformowego projektu w języku C++
-      href: cross-platform-prop-pages.md
       items:
+        - name: Właściwości międzyplatformowego projektu w języku C++
+          href: cross-platform-prop-pages.md
         - name: Ogólne właściwości projektu (Android C++)
           href: general-android-prop-page.md
         - name: Właściwości debugera systemu Android
@@ -67,8 +72,9 @@
 - name: Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)
   href: develop-apps-for-the-universal-windows-platform-uwp.md
 - name: Emulator programu Visual Studio dla systemu Android
-  href: visual-studio-emulator-for-android.md
   items:
+    - name: Emulator programu Visual Studio dla systemu Android
+      href: visual-studio-emulator-for-android.md
     - name: Wymagania systemowe dotyczące emulatora programu Visual Studio dla systemu Android
       href: system-requirements-for-the-visual-studio-emulator-for-android.md
     - name: Rozwiązywanie problemów z narzędziem Visual Studio Emulator for Android

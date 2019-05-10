@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: b56d7d97ec49bf4c83f2d26a38648cd22cdcfe6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4031b4358e77b5b3e66a6052a37724966621d608
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983002"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222789"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Install Visual Studio 2019 for Mac
 
@@ -55,7 +55,7 @@ Jeśli masz problemy z siecią podczas instalowania w środowisku firmowym, zapo
 Dowiedz się więcej o zmianach w [informacje o wersji](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes).
 
 > [!NOTE]
-> Wybranego nie zainstalują platformy lub narzędzia podczas oryginalnej instalacji (cofając go w kroku #6), należy uruchomić Instalatora ponownie w razie potrzeby można później dodać składniki.
+> Jeśli nie wybrano zainstalowanie platformy lub narzędzia podczas oryginalnej instalacji (cofając go w kroku #6), należy uruchomić Instalatora ponownie Jeśli chcesz dodać składniki później.
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Zainstaluj program Visual Studio dla komputerów Mac za serwerem zapory lub serwera proxy
 

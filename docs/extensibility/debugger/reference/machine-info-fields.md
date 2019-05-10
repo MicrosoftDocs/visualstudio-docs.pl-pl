@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61a22a1868a47fd4b54b19cf224f995897775b4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 00f1e8ea5487a4eecb6dc9fa1f2b16d18ec3fa07
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865787"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458056"
 ---
 # <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
 Określa, jakiego rodzaju informacje należy pobrać dla określonego komputera.
@@ -41,12 +44,15 @@ public enum enum_MACHINE_INFO_FIELDS { 
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
- MCIF_NAME zainicjować bądź użyj `bstrName` pole w strukturze.
+## <a name="fields"></a>Pola
+ `MCIF_NAME`\
+ Inicjowanie bądź użyj `bstrName` pole w strukturze.
 
- MCIF_FLAGS zainicjować bądź użyj `Flags` pole w strukturze.
+ `MCIF_FLAGS`\
+ Inicjowanie bądź użyj `Flags` pole w strukturze.
 
- MIF_ALL zainicjować bądź użyj wszystkie pola w strukturze.
+ `MIF_ALL`\
+ Inicjowanie bądź użyj wszystkie pola w strukturze.
 
 ## <a name="remarks"></a>Uwagi
  Te wartości są przekazywane do [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) metodę, aby wskazać, którzy członkowie [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) struktury, które mają zostać zainicjowane.
@@ -62,7 +68,7 @@ public enum enum_MACHINE_INFO_FIELDS { 
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)
 - [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)

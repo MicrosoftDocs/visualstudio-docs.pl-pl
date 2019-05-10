@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6db802fba0d6cd6b6f9b91dd40f6046491fb1f2b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b9f08422ae106e7d97341d3909ed5470a83d815e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913877"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460938"
 ---
 # <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
 Określa stan symboli dla modułu.
@@ -37,8 +40,9 @@ public enum enum_MODULE_INFO_FLAGS {
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
- MIF_SYMBOLS_LOADED na co najmniej jeden zestaw symboli został załadowany przez moduł (w przeciwnym razie symboli nie zostały załadowane).
+## <a name="fields"></a>Pola
+ `MIF_SYMBOLS_LOADED`\
+ Co najmniej jeden zestaw symboli został załadowany przez moduł (w przeciwnym razie symboli nie zostały załadowane).
 
 ## <a name="remarks"></a>Uwagi
  Ta wartość jest zwracana przez [getsymbolsearchinfo —](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) metody.
@@ -50,6 +54,6 @@ public enum enum_MODULE_INFO_FLAGS {
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)

@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8373f13d3a7fc4280b383c534d0adba0b02a53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0116a8c4fa6326a1176c132aef59a789daabffca
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979653"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461531"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 
@@ -67,6 +67,8 @@ Program Visual Studio używa dwóch typów plików (*.sln* i *.suo*) do przechow
 Najprostszym sposobem utworzenia nowego projektu jest Rozpocznij od szablonu projektu dla danego typu aplikacji lub witryny sieci Web. Szablon projektu składa się z podstawowego zestawu wstępnie wygenerowanego kodu pliki, pliki konfiguracji, zasobów i ustawień. Te szablony są dostępne w oknie dialogowym, w której utworzono nowy projekt (**pliku** > **New** > **projektu**). Aby uzyskać więcej informacji, zobacz [tworzenia rozwiązań i projektów](../ide/creating-solutions-and-projects.md).
 
 Można również utworzyć niestandardowe szablony projektów i elementów. Aby uzyskać więcej informacji, zobacz [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md).
+
+Podczas tworzenia nowego projektu jest zapisywane domyślnie w *%USERPROFILE%\source\repos*. Można dostosować tę lokalizację w **projektów lokalizacji** w obszarze **narzędzia** > **opcje** > **projekty i Rozwiązania** > **lokalizacje**. Aby uzyskać więcej informacji, zobacz [strony Projekty i rozwiązania, okno dialogowe Opcje](../ide/reference/projects-and-solutions-options-dialog-box.md).
 
 ## <a name="manage-projects-in-solution-explorer"></a>Zarządzaj projektami w Eksploratorze rozwiązań
 

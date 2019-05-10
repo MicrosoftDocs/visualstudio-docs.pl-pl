@@ -1,46 +1,47 @@
 ---
 title: IEnumDebugErrorBreakpoints2::Reset | Dokumentacja firmy Microsoft
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IEnumDebugErrorBreakpoints2::Reset
 helpviewer_keywords:
 - IEnumDebugErrorBreakpoints2::Reset
 ms.assetid: d5b04bba-a8b9-4141-94fb-250c77f0534c
-caps.latest.revision: 10
+author: gregvanl
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 787aefa90370993ba7da470d318d8735aa18eb49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5ea2b06d9629c629dcc7085da690e2dd387a9683
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914813"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225871"
 ---
 # <a name="ienumdebugerrorbreakpoints2reset"></a>IEnumDebugErrorBreakpoints2::Reset
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Resetuje wyliczenia do pierwszego elementu.
 
-Resetuje wyliczenia do pierwszego elementu.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp#  
-HRESULT Reset(  
-   void  
-);  
-```  
-  
-```csharp  
-int Reset();  
-```  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="remarks"></a>Uwagi  
- Po ta metoda jest wywoływana, następnym wywołaniu [dalej](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md) metoda zwraca pierwszy element wyliczenia.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT Reset(
+   void
+);
+```
+
+```csharp
+int Reset();
+```
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="remarks"></a>Uwagi
+ Po ta metoda jest wywoływana, następnym wywołaniu [dalej](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md) metoda zwraca pierwszy element wyliczenia.
+
+## <a name="see-also"></a>Zobacz także
+- [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)

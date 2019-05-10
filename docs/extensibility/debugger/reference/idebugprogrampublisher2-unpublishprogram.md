@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f633b7cd41a9e19179ba5daf22fdd66e9749ad5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 90d56149d4e942c8fe5206fad3ce740f510a451d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916820"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458944"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
 Sprawia, że program jest niedostępny do debugowania.
@@ -36,8 +39,8 @@ int UnpublishProgram(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pDebuggeeInterface`
+## <a name="parameters"></a>Parametry
+ `pDebuggeeInterface`\
 
  [in] `IUnknown` Interfejsu do programu. To jest taka sama wartość przekazana do [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) metody i jednoznacznie identyfikuje programu usuwany (oznacza to, że jest ona używana jako plik cookie).
 
@@ -47,6 +50,6 @@ int UnpublishProgram(
 ## <a name="remarks"></a>Uwagi
  Aby udostępnić program aparaty debugowania i Menedżer debugowania sesji, należy użyć [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) metody.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)

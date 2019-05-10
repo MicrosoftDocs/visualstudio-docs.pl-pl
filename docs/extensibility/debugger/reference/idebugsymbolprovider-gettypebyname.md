@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98ba8c20be22a6f6a9a990f9de042ac2dab4c72a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b1bf9ac39628ff9615e158511a8a1afa0af46c3c
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868506"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226383"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
 Ta metoda mapuje nazwę na symbol typ symbolu.
@@ -40,16 +43,16 @@ int GetTypeByName(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pszClassName`
+## <a name="parameters"></a>Parametry
+ `pszClassName`\
 
  [in] Nazwa symbolu.
 
- `nameMatch`
+ `nameMatch`\
 
  [in] Wybiera typ dopasowania, na przykład wielkość liter. Wartość z zakresu od [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) wyliczenia.
 
- `ppField`
+ `ppField`\
 
  [out] Zwraca typ symbolu jako [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektu.
 
@@ -59,7 +62,7 @@ int GetTypeByName(
 ## <a name="remarks"></a>Uwagi
  Ta metoda jest ogólna wersja [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)

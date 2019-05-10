@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c159cd6fbd4f2fbfff414688e2ec865bcc8ddb4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f9d514178e4b899ca727e17ead260719697b562
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002712"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476647"
 ---
-# <a name="creating-custom-t4-text-template-directive-processors"></a>Tworzenie niestandardowych procesorów dyrektywy T4 dotyczącej szablonu tekstowego
+# <a name="create-custom-t4-text-template-directive-processors"></a>Tworzenie niestandardowych procesorów dyrektyw szablonów tekstowych T4
 
 *Proces przekształcania szablonu tekstowego* przyjmuje *szablon tekstowy* pliku jako dane wejściowe i tworzy plik tekstowy jako dane wyjściowe. *Aparatu przekształceń szablonu tekstu* kontroli procesu i aparat współdziała z hosta przekształcania szablonu tekstu i co najmniej jeden szablon tekstowy *procesorów dyrektyw* do ukończenia proces. Aby uzyskać więcej informacji, zobacz [proces przekształcania szablonu tekstowego](../modeling/the-text-template-transformation-process.md).
 

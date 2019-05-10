@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript'
+title: Eksportowanie tekstury do aplikacji Direct2D i języka JavaScript
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 803129ea758a6648c0caa8303e1d191c0e8a74f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c878d898aa12644cc7a53ee9f12b351cd54c9d8d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844387"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459205"
 ---
-# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Instrukcje: Eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript
+# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Instrukcje: Eksportowanie tekstury do użycia z Direct2D lub JavaScript aplikacji
 
 Potok zawartości obrazu może generować tekstury, które są zgodne z konwencjami renderowania wewnętrznego w Direct2D. Tekstury tego rodzaju są odpowiednie do użycia w aplikacjach, które używają Direct2D oraz w aplikacjach platformy uniwersalnej systemu Windows utworzone przy użyciu języka JavaScript.
 
@@ -39,11 +39,11 @@ Tekstury, które są używane w kontekście Direct2D muszą spełniać te wewnę
 
 - Tekstury muszą być dostarczane w *.dds* format przy użyciu jednej z tych formatów kompresji blokowej:
 
-    - Kompresja bc1_unorm
+   - Kompresja bc1_unorm
 
-    - Kompresja bc2_unorm
+   - Kompresja bc2_unorm
 
-    - Kompresja bc3_unorm
+   - Kompresja bc3_unorm
 
 - Mipmapy nie są obsługiwane.
 

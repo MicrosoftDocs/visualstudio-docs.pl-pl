@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d0f5c17fc0dd12cf8ecb184b667880462548877
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 87cdfcaa59fabb983d85d154bca48a381ebf8819
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868906"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457548"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 Pobiera język skojarzone z tą ramką stosu.
@@ -38,29 +41,29 @@ int GetLanguageInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pbstrLanguage`
+## <a name="parameters"></a>Parametry
+ `pbstrLanguage`\
 
  [out] Zwraca nazwę języka, który implementuje metodę skojarzoną z tą ramką stosu.
 
- `pguidLanguage`
+ `pguidLanguage`\
 
  [out] Zwraca `GUID` języka. Aby uzyskać [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] języków, na przykład, następujące mogą zostać zwrócone:
 
-- `guidVBScriptLang`
+-   `guidVBScriptLang`\
 
-- `guidJScriptLang`
+-   `guidJScriptLang`\
 
-- `guidCPPLang`
+-   `guidCPPLang`\
 
-- `guidVBLang`
+-   `guidVBLang`\
 
-- `guidSQLLang`
+-   `guidSQLLang`\
 
-- `guidScriptLang`
+-   `guidScriptLang`\
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2621b88622e99ac95533e388197e483f2925f897
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5d6f416d284c1712f8e52b2655a74e08f6f9cfe1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420827"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458332"
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
 Określa rodzaj informacji o symbolach w celu pobrania.
@@ -42,10 +45,12 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ```
 
-## <a name="members"></a>Elementy członkowskie
- SSIF_NONE wskazuje nie flagi
+## <a name="fields"></a>Pola
+ `SSIF_NONE`\
+ Wskazuje nie flagi
 
- SSIF_VERBOSE_SEARCH_INFO zwróci wszystkie wyszukiwania ścieżki używany do wyszukiwania symboli
+ `SSIF_VERBOSE_SEARCH_INFO`\
+ Zwraca wszystkie wyszukiwania ścieżki używany do wyszukiwania symboli
 
 ## <a name="remarks"></a>Uwagi
  Te flagi są przekazywane jako parametr do [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) zwracany przez metodę, aby określić ilość informacji.
@@ -60,6 +65,6 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)

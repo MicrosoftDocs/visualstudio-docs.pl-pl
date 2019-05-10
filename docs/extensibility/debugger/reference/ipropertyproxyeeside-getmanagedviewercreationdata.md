@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd92f8a93427264966bb44bbf44d5e519cb9459a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 09d86fb259cb4fe04b55211acbd60833e6362855
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914208"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458152"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 Pobiera informacje o viewer dla tego typu właściwości, aby utworzyć wystąpienia tego podglądu.
@@ -46,28 +49,28 @@ int GetManagedViewerCreationData(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `assemName`
+## <a name="parameters"></a>Parametry
+ `assemName`\
 
  [out] Zwraca nazwę zestawu, zawierający ten obiekt.
 
- `assemBytes`
+ `assemBytes`\
 
  [out] Zwraca [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) obiekt zawierający ten obiekt (jest to wartość null Jeśli bajty nie są dostępne), w bajtach zestawu.
 
- `assemPdb`
+ `assemPdb`\
 
  [out] Zwraca `IEEDataStorage` obiekt, który zawiera symbol przechowywania informacji dla tego obiektu (jest to wartość null, jeśli nie symboli sklep jest dostępny).
 
- `className`
+ `className`\
 
  [out] Zwraca nazwę klasy zawierające ten obiekt.
 
- `alr`
+ `alr`\
 
  [out] Zwraca wartość z zakresu od [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) Wyliczenie wskazujące lokalizacji zestawu.
 
- `replacementOk`
+ `replacementOk`\
 
  [out] Zwraca wartość różną od zera (`TRUE`) Jeśli wartość tego obiektu może zostać zmieniona; wartość zero (`FALSE`) Jeśli obiekt jest tylko do odczytu.
 
@@ -77,7 +80,7 @@ int GetManagedViewerCreationData(
 ## <a name="remarks"></a>Uwagi
  Ta metoda jest używana przez wizualizatorów typu tworzenia wystąpienia zarządzanego podglądu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

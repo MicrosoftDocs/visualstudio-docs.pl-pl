@@ -5,13 +5,15 @@
 - name: Przykłady debugowania w programie Visual Studio
   href: visual-studio-debugging-samples.md
 - name: Tworzenie niestandardowego aparatu debugowania
-  href: creating-a-custom-debug-engine.md
   items:
+    - name: Tworzenie niestandardowego aparatu debugowania
+      href: creating-a-custom-debug-engine.md
     - name: Rejestrowanie niestandardowego aparatu debugowania
       href: registering-a-custom-debug-engine.md
     - name: Włączanie debugowania programu
-      href: enabling-a-program-to-be-debugged.md
       items:
+        - name: Włączanie debugowania programu
+          href: enabling-a-program-to-be-debugged.md
         - name: Pobieranie portu
           href: getting-a-port.md
         - name: Rejestrowanie programu
@@ -23,8 +25,9 @@
         - name: Wysyłanie wymaganych zdarzeń
           href: sending-the-required-events.md
     - name: Kontrola wykonywania i ocena stanu
-      href: execution-control-and-state-evaluation.md
       items:
+        - name: Kontrola wykonywania i ocena stanu
+          href: execution-control-and-state-evaluation.md
         - name: Kontrola programu
           href: program-control.md
         - name: Metody dotyczące punktu przerwania
@@ -36,8 +39,9 @@
         - name: Zdarzenia kontrolki
           href: control-events.md
     - name: Wysyłanie zdarzeń
-      href: sending-events.md
       items:
+        - name: Wysyłanie zdarzeń
+          href: sending-events.md
         - name: Źródła zdarzeń (zestaw SDK programu Visual Studio)
           href: event-sources-visual-studio-sdk.md
         - name: Obsługiwane typy zdarzeń
@@ -47,8 +51,9 @@
     - name: Kończenie i odłączanie
       href: termination-and-detaching.md
     - name: Wywoływanie zdarzeń debugera
-      href: calling-debugger-events.md
       items:
+        - name: Wywoływanie zdarzeń debugera
+          href: calling-debugger-events.md
         - name: Dołączanie do programu i odłączanie od niego
           href: attaching-and-detaching-to-a-program.md
         - name: Uruchamianie debugera
@@ -76,13 +81,15 @@
     - name: 'Instrukcje: debugowanie niestandardowego aparatu debugowania'
       href: how-to-debug-a-custom-debug-engine.md
 - name: Wprowadzenie do rozszerzalności debugera
-  href: getting-started-with-debugger-extensibility.md
   items:
+    - name: Wprowadzenie do rozszerzalności debugera
+      href: getting-started-with-debugger-extensibility.md
     - name: Plan rozwoju rozszerzania debugera
       href: roadmap-for-extending-the-debugger.md
     - name: Składniki debugera
-      href: debugger-components.md
       items:
+        - name: Składniki debugera
+          href: debugger-components.md
         - name: Pakiet debugowania
           href: debug-package.md
         - name: Menedżer debugowania procesów
@@ -100,8 +107,9 @@
         - name: Wizualizator typów i przeglądarka niestandardowa
           href: type-visualizer-and-custom-viewer.md
     - name: Pojęcia dotyczące debugera
-      href: debugger-concepts.md
       items:
+        - name: Pojęcia dotyczące debugera
+          href: debugger-concepts.md
         - name: Sesja debugowania
           href: debug-session.md
         - name: Serwery (zestaw SDK programu Visual Studio)
@@ -125,8 +133,9 @@
         - name: Punkty przerwania (zestaw SDK programu Visual Studio)
           href: breakpoints-visual-studio-sdk.md
     - name: Konteksty debugera
-      href: debugger-contexts.md
       items:
+        - name: Konteksty debugera
+          href: debugger-contexts.md
         - name: Kontekst kodu
           href: code-context.md
         - name: Położenie dokumentu
@@ -136,13 +145,15 @@
         - name: Kontekst oceny wyrażeń
           href: expression-evaluation-context.md
     - name: Zadania debugowania
-      href: debugging-tasks.md
       items:
+        - name: Zadania debugowania
+          href: debugging-tasks.md
         - name: Problemy dotyczące zabezpieczeń
           href: security-issues.md
         - name: Uruchamianie programu
-          href: launching-a-program.md
           items:
+            - name: Uruchamianie programu
+              href: launching-a-program.md
             - name: Powiadamianie portu
               href: notifying-the-port.md
             - name: Dołączanie po uruchomieniu
@@ -160,13 +171,15 @@
         - name: Wizualizacja i wyświetlanie danych
           href: visualizing-and-viewing-data.md
 - name: Pisanie ewaluatora wyrażeń środowiska uruchomieniowego języka wspólnego
-  href: writing-a-common-language-runtime-expression-evaluator.md
   items:
+    - name: Pisanie ewaluatora wyrażeń środowiska uruchomieniowego języka wspólnego
+      href: writing-a-common-language-runtime-expression-evaluator.md
     - name: Środowisko uruchomieniowe języka wspólnego i ocenianie wyrażeń
       href: common-language-runtime-and-expression-evaluation.md
     - name: Architektura ewaluatora wyrażeń
-      href: expression-evaluator-architecture.md
       items:
+        - name: Architektura ewaluatora wyrażeń
+          href: expression-evaluator-architecture.md
         - name: Kontekst oceny
           href: evaluation-context.md
         - name: Interfejsy ewaluatora wyrażeń klucza
@@ -174,16 +187,19 @@
     - name: Rejestrowanie ewaluatora wyrażeń
       href: registering-an-expression-evaluator.md
     - name: Implementowanie ewaluatora wyrażeń
-      href: implementing-an-expression-evaluator.md
       items:
+        - name: Implementowanie ewaluatora wyrażeń
+          href: implementing-an-expression-evaluator.md
         - name: Strategia implementacji ewaluatora wyrażeń
           href: expression-evaluator-implementation-strategy.md
     - name: Wyświetlanie zmiennych lokalnych
-      href: displaying-locals.md
       items:
+        - name: Wyświetlanie zmiennych lokalnych
+          href: displaying-locals.md
         - name: Przykłady implementacji zmiennych lokalnych
-          href: sample-implementation-of-locals.md
           items:
+            - name: Przykłady implementacji zmiennych lokalnych
+              href: sample-implementation-of-locals.md
             - name: Implementowanie metody GetMethodProperty
               href: implementing-getmethodproperty.md
             - name: Wyliczanie zmiennych lokalnych
@@ -195,32 +211,37 @@
             - name: Ocenianie zmiennych lokalnych
               href: evaluating-locals.md
     - name: Ocenianie wyrażenia okna wyrażeń kontrolnych
-      href: evaluating-a-watch-window-expression.md
       items:
+        - name: Ocenianie wyrażenia okna wyrażeń kontrolnych
+          href: evaluating-a-watch-window-expression.md
         - name: Przykład implementacji oceny wyrażenia
           href: sample-implementation-of-expression-evaluation.md
         - name: Ocenianie wyrażenia kontrolnego
           href: evaluating-a-watch-expression.md
     - name: Zmienianie wartości zmiennej lokalnej
-      href: changing-the-value-of-a-local.md
       items:
+        - name: Zmienianie wartości zmiennej lokalnej
+          href: changing-the-value-of-a-local.md
         - name: Przykład implementacji zmieniania wartości
           href: sample-implementation-of-changing-values.md
     - name: Implementowanie wizualizatorów typu i przeglądarek niestandardowych
       href: implementing-type-visualizers-and-custom-viewers.md
 - name: Implementowanie dostawcy portu
-  href: implementing-a-port-supplier.md
   items:
+    - name: Implementowanie dostawcy portu
+      href: implementing-a-port-supplier.md
     - name: Implementowanie i rejestrowanie dostawcy portu
       href: implementing-and-registering-a-port-supplier.md
     - name: Wymagane interfejsy dostawcy portów
       href: required-port-supplier-interfaces.md
 - name: Równoległe elementy wewnętrzne rozszerzeń dla programu .NET Framework
-  href: parallel-extension-internals-for-the-dotnet-framework.md
   items:
+    - name: Równoległe elementy wewnętrzne rozszerzeń dla programu .NET Framework
+      href: parallel-extension-internals-for-the-dotnet-framework.md
     - name: 'Task, klasa — składowe wewnętrzne'
-      href: task-class-internal-members.md
       items:
+        - name: 'Task, klasa — składowe wewnętrzne'
+          href: task-class-internal-members.md
         - name: 'm_action, pole'
           href: m-action-field.md
         - name: 'm_contingentProperties, pole'
@@ -250,34 +271,39 @@
         - name: 'NotifyDebuggerOfWaitCompletion, metoda'
           href: notifydebuggerofwaitcompletion-method.md
     - name: 'TaskScheduler, klasa — składowe wewnętrzne'
-      href: taskscheduler-class-internal-members.md
       items:
+        - name: 'TaskScheduler, klasa — składowe wewnętrzne'
+          href: taskscheduler-class-internal-members.md
         - name: 'GetScheduledTasksForDebugger, metoda'
           href: getscheduledtasksfordebugger-method.md
         - name: 'GetTaskSchedulersForDebugger, metoda'
           href: gettaskschedulersfordebugger-method.md
     - name: 'ContingentProperties, klasa — składowe wewnętrzne'
-      href: contingentproperties-class-internal-members.md
       items:
+        - name: 'ContingentProperties, klasa — składowe wewnętrzne'
+          href: contingentproperties-class-internal-members.md
         - name: 'm_children, pole'
           href: m-children-field.md
     - name: 'AsyncTaskMethodBuilder, struktura — składowe wewnętrzne'
-      href: asynctaskmethodbuilder-structure-internal-members.md
       items:
+        - name: 'AsyncTaskMethodBuilder, struktura — składowe wewnętrzne'
+          href: asynctaskmethodbuilder-structure-internal-members.md
         - name: 'AsyncTaskMethodBuilder.ObjectIdForDebugger, właściwość'
           href: asynctaskmethodbuilder-objectidfordebugger-property.md
         - name: 'AsyncTaskMethodBuilder.m_builder, pole'
           href: asynctaskmethodbuilder-m-builder-field.md
     - name: 'AsyncTaskMethodBuilder<TResult>, struktura — składowe wewnętrzne'
-      href: asynctaskmethodbuilder-tresult-structure-internal-members.md
       items:
+        - name: 'AsyncTaskMethodBuilder<TResult>, struktura — składowe wewnętrzne'
+          href: asynctaskmethodbuilder-tresult-structure-internal-members.md
         - name: 'AsyncTaskMethodBuilder<TResult>.ObjectIdForDebugger, właściwość'
           href: asynctaskmethodbuilder-tresult-objectidfordebugger-property.md
         - name: 'AsyncTaskMethodBuilder<TResult>.m_task, pole'
           href: asynctaskmethodbuilder-tresult-m-task-field.md
     - name: 'AsyncVoidMethodBuilder, struktura — składowe wewnętrzne'
-      href: asyncvoidmethodbuilder-structure-internal-members.md
       items:
+        - name: 'AsyncVoidMethodBuilder, struktura — składowe wewnętrzne'
+          href: asyncvoidmethodbuilder-structure-internal-members.md
         - name: 'AsyncVoidMethodBuilder.ObjectIdForDebugger, właściwość'
           href: asyncvoidmethodbuilder-objectidfordebugger-property.md
         - name: 'AsyncVoidMethodBuilder.m_objectIdForDebugger, pole'

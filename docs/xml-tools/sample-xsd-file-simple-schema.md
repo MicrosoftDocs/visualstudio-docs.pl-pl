@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f7a4cd8e01f0538e2551b4b7c1c3ad67a221667
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0228ab75da15099aad3a6f60feca3d71f644b4ff
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955582"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65455090"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>Przykładowy plik XSD: Prosty schemat
 
@@ -45,3 +45,6 @@ Następujący plik XSD jest używany w różne przykłady w dokumentacji projekt
  </xsd:complexType>
 </xsd:schema>
 ```
+
+> [!NOTE]
+> Przykładowe firmy, organizacje, produkty, nazwy domen, adresy e-mail, logo, osoby, miejsca i zdarzenia wymienione w niniejszym dokumencie są fikcyjne. Wszelkie rzeczywistą firmą, organizacji, produktu, nazwy domeny, adres e-mail, logo, osoby, miejsca lub zdarzeń jest przeznaczone i powinno być wnioskowane.

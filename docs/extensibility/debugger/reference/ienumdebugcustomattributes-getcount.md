@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8890e4260d59239a19328804d09518dd081337f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 567e53d92ded6b6ba37c149ff48c8473c98fcc34
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914878"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225835"
 ---
 # <a name="ienumdebugcustomattributesgetcount"></a>IEnumDebugCustomAttributes::GetCount
 Pobiera moduł wyliczający liczba atrybutów niestandardowych.
@@ -36,8 +39,8 @@ int GetCount(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pcelt`
+## <a name="parameters"></a>Parametry
+ `pcelt`\
 
  [out] Zwraca liczbę elementów w wyliczeniu.
 
@@ -47,5 +50,5 @@ int GetCount(
 ## <a name="remarks"></a>Uwagi
  Ta metoda nie jest częścią zwyczajowego interfejs wyliczanie modelu COM, który określa, że tylko `Next`, `Clone`, `Skip`, i `Reset` muszą zostać zaimplementowane.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

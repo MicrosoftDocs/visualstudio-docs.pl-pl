@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3a799337c098a8ce04bbb5dff0eb3eb046b04f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bea23307c5d35e997f41e4ec9cbfd41fa41bdee
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810583"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65455113"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>Przykładowy plik XSD: Schemat zamówienia zakupu
 
@@ -86,3 +86,6 @@ Następujący plik XSD jest używany w różne przykłady w dokumentacji projekt
   </xsd:complexType>
 </xsd:schema>
 ```
+
+> [!NOTE]
+> Przykładowe firmy, organizacje, produkty, nazwy domen, adresy e-mail, logo, osoby, miejsca i zdarzenia wymienione w niniejszym dokumencie są fikcyjne. Wszelkie rzeczywistą firmą, organizacji, produktu, nazwy domeny, adres e-mail, logo, osoby, miejsca lub zdarzeń jest przeznaczone i powinno być wnioskowane.

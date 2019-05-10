@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2091cd052923fe375bf9ba90ffdad50c993f5b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 58132d73cd532acd0c89ad5258c6ba4a59b905fa
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868949"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458618"
 ---
 # <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
 Pobiera ciąg wartość metryki ewaluatora wyrażeń nadać jej nazwę.
@@ -40,25 +43,25 @@ private int GetEEMetricString(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `guidLang`
+## <a name="parameters"></a>Parametry
+ `guidLang`\
 
  [in] Unikatowy identyfikator języka programowania.
 
- `guidVendor`
+ `guidVendor`\
 
  [in] Unikatowy identyfikator dostawcy.
 
- `pszMetric`
+ `pszMetric`\
 
  [in] Nazwa metryki.
 
- `pbstrValue`
+ `pbstrValue`\
 
  [out] Zwraca ciąg wartość metryki.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

@@ -21,8 +21,9 @@
 - name: Samouczki
   items:
     - name: Git
-      href: /azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
       items:
+        - name: Git
+          href: /azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
         - name: Tworzenie nowego repozytorium
           href: /azure/devops/repos/git/creatingrepo?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
         - name: Klonowanie istniejącego repozytorium

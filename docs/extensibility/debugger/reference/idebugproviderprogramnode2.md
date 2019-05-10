@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb717363266b95397ea749e7465b07df75f60da2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f9e0756c3cb9e92d0899020383d536b83892046
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916425"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458754"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 Ten interfejs kieruje związane z interfejsów granice procesu.
@@ -51,6 +51,6 @@ IDebugProviderProgramNode2 : IUnknown
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

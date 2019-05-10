@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6d6ad6fdb995c80043a831bd08aa1294f0fb33e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 43d8bd1a32328c47cd463fc6232466df5bdbd857
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913913"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461024"
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 Ta struktura reprezentuje adres metody klasy.
@@ -40,18 +43,18 @@ public struct METADATA_ADDRESS_METHOD {
 }
 ```
 
-## <a name="terms"></a>Warunki
- tokMethod
+## <a name="members"></a>Elementy członkowskie
+ `tokMethod`\
 
  Identyfikator metody.
 
  [C++] `_mdToken` jest `typedef` dla 32-bitowych `int`.
 
- dwOffset
+ `dwOffset`\
 
  Przesunięcie od początku klasy do tej metody (może reprezentować przesunięcie w vtable).
 
- Źródła
+ `dwVersion`\
 
  Wersja metody (Ta wartość jest unikatowa dla dostawcy symbol).
 
@@ -65,7 +68,7 @@ public struct METADATA_ADDRESS_METHOD {
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ab1e9345cf599c4336b202d32fb71a9097fe629
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7dd77065791d36e89c43b51dd8e1494d8e69a369
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913613"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458377"
 ---
 # <a name="pendingbpstate"></a>PENDING_BP_STATE
 Określa stan oczekujący punkt przerwania (punkt przerwania, która nie została jeszcze powiązana).
@@ -43,14 +46,18 @@ public enum enum_PENDING_BP_STATE { 
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
- PBPS_NONE symbol zastępczy zera. Nigdy nie zostanie zwrócona ta wartość.
+## <a name="fields"></a>Pola
+ `PBPS_NONE`\
+ Symbol zastępczy zera. Nigdy nie zostanie zwrócona ta wartość.
 
- PBPS_DELETED wskazuje, że oczekujący punkt przerwania został usunięty.
+ `PBPS_DELETED`\
+ Wskazuje, że oczekujący punkt przerwania został usunięty.
 
- PBPS_DISABLED wskazuje, czy oczekujący punkt przerwania jest wyłączona.
+ `PBPS_DISABLED`\
+ Wskazuje, czy oczekujący punkt przerwania jest wyłączona.
 
- PBPS_ENABLED wskazuje, że oczekujący punkt przerwania jest włączony.
+ `PBPS_ENABLED`\
+ Wskazuje, że oczekujący punkt przerwania jest włączony.
 
 ## <a name="remarks"></a>Uwagi
  Użyj jako `state` członkiem [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) struktury.
@@ -62,6 +69,6 @@ public enum enum_PENDING_BP_STATE { 
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)

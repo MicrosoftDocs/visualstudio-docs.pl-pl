@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c250cdfdef37a1c6eddfb266909deca1cc515f1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9f088bcfeebb570be911fbc8e37bed5995767ac9
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869517"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457736"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
 Pobiera [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) strukturę, która opisuje właściwość, która.
@@ -46,35 +49,35 @@ int GetPropertyInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `dwFields`
+## <a name="parameters"></a>Parametry
+ `dwFields`\
 
  [in] Kombinacja wartości z [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) wyliczenie, które określa pola, które są wypełniane w `pPropertyInfo` struktury.
 
- `nRadix`
+ `nRadix`\
 
  [in] Podstawy ma być używany w formatowaniu wszelkie dane liczbowe.
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in] Określa maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj `INFINITE` czekanie w nieskończoność.
 
- `rgpArgs`
+ `rgpArgs`\
 
  [out w] Zarezerwowane dla przyszłego użytku; Ustaw wartość null.
 
- `dwArgCount`
+ `dwArgCount`\
 
  [in] Zarezerwowane dla przyszłego użytku; ustawić na zero.
 
- `pPropertyInfo`
+ `pPropertyInfo`\
 
  [out] A [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) strukturę, która jest wypełniane opis właściwości.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

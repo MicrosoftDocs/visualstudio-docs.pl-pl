@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb6b6d7969742f4cd1c155e800464a6f645649d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c595f4c8f344cfb9e8678d8f9c425a564baa9e4b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892908"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459115"
 ---
-# <a name="use-3d-assets-in-your-game-or-app"></a>Korzystanie z zasobów 3D w grach i aplikacjach
+# <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Instrukcje: Korzystanie z zasobów 3D w grach i aplikacjach
 
 W tym artykule opisano, jak można użyć programu Visual Studio do przetwarzania zasobów 3D i zawierania ich w kompilacji.
 
@@ -34,7 +34,9 @@ Przed wdrożeniem 3D zasobów jako część kompilacji programu Visual Studio mu
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>Aby dodać dostosowania kompilacji do projektu
 
-1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **zależności kompilacji** > **dostosowania kompilacji**. **Pliki z dostosowywania kompilacji Visual C++** pojawi się okno dialogowe.
+1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **zależności kompilacji** > **dostosowania kompilacji**.
+
+   **Pliki z dostosowywania kompilacji Visual C++** pojawi się okno dialogowe.
 
 2. W obszarze **dostępne pliki dostosowania kompilacji**, zaznacz pole wyboru, które odpowiadają typom zasobów, które chcesz użyć w projekcie, zgodnie z opisem w poniższej tabeli:
 
@@ -47,11 +49,14 @@ Przed wdrożeniem 3D zasobów jako część kompilacji programu Visual Studio mu
 3. Wybierz **OK** przycisku.
 
 ## <a name="include-assets-in-your-build"></a>Objęte zasoby kompilacji
- Teraz, gdy projektu wie o różnych rodzajów zasobów 3D, które chcesz użyć, następnym krokiem jest stwierdzenie, które pliki są zasobami 3D i jakie typy zasobów są.
+
+Teraz, gdy projektu wie o różnych rodzajów zasobów 3D, które chcesz użyć, następnym krokiem jest stwierdzenie, które pliki są zasobami 3D i jakiego rodzaju zasobów są.
 
 ### <a name="to-add-an-asset-to-your-build"></a>Aby dodać składnik aktywów do kompilacji
 
-1. W **Eksploratora rozwiązań**w swoim projekcie Otwórz menu skrótów elementu zawartości, a następnie wybierz **właściwości**. Zasób **strona właściwości** pojawi się okno dialogowe.
+1. W **Eksploratora rozwiązań**w swoim projekcie Otwórz menu skrótów elementu zawartości, a następnie wybierz **właściwości**.
+
+   Zasób **strona właściwości** pojawi się okno dialogowe.
 
 2. Upewnij się, że **konfiguracji** i **platformy** właściwości są ustawiane na wartości, do których mają zostać zastosowane zmiany.
 
@@ -76,11 +81,13 @@ Można ustawić właściwości potoku zawartości każdego pliku zasobów, dzię
 
 ### <a name="to-configure-content-pipeline-properties"></a>Aby skonfigurować właściwości potoku zawartości
 
-1. W **Eksploratora rozwiązań**w swoim projekcie Otwórz menu skrótów dla pliku zasobów, a następnie wybierz **właściwości**. Zasób **strona właściwości** pojawi się okno dialogowe.
+1. W **Eksploratora rozwiązań**w swoim projekcie Otwórz menu skrótów dla pliku zasobów, a następnie wybierz **właściwości**.
+
+   Zasób **strona właściwości** pojawi się okno dialogowe.
 
 2. Upewnij się, że **konfiguracji** i **platformy** właściwości są ustawione na wartości, które mają zostać zastosowane do zmiany.
 
-3. W obszarze **właściwości konfiguracji**, wybierz węzeł potoku zawartości — na przykład **potok zawartości obrazu** dla tekstur i obrazów — a następnie w siatce właściwości ustaw właściwości odpowiednie wartości. Na przykład, aby wygenerować mapy MIP dla trwałego tekstura w czasie kompilacji, należy ustawić **Generuj Mips** właściwości **tak**.
+3. W obszarze **właściwości konfiguracji**, wybierz węzeł potoku zawartości (na przykład **potok zawartości obrazu** dla tekstur i obrazów), a następnie w siatce właściwości ustaw właściwości odpowiednie wartości. Na przykład, aby wygenerować mapy MIP dla trwałego tekstura w czasie kompilacji, należy ustawić **Generuj Mips** właściwości **tak**.
 
 4. Wybierz **OK** przycisku.
 
@@ -208,6 +215,6 @@ cbuffer MiscVars : register(b3)
 |-----------|-----------------|
 |[Instrukcje: Eksportowanie tekstury zawierającej mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Informacje dotyczące używania potoku zawartości obrazu do wyeksportowania tekstury, które zawierają wstępnie obliczone mipmapy.|
 |[Instrukcje: Eksportowanie tekstury wykorzystującej ma wstępnie przemnożony kanał alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Informacje dotyczące używania potoku zawartości obrazu do eksportowania tekstur, które zawierają wstępnie przemnożone wartości alfa.|
-|[Instrukcje: Eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Informacje dotyczące używania potoku zawartości obrazu do wyeksportowania tekstury, które mogą być używane w aplikacji Direct2D lub JavaScript.|
+|[Instrukcje: Eksportowanie tekstury do użycia z Direct2D lub JavaScript aplikacji](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Informacje dotyczące używania potoku zawartości obrazu do wyeksportowania tekstury, które mogą być używane w aplikacji Direct2D lub JavaScript.|
 |[Praca z zasobami 3D dla gier i aplikacji](../designers/working-with-3-d-assets-for-games-and-apps.md)|Opisuje narzędzia edycji programu Visual Studio oferuje do tworzenia i manipulowania zasobami 3D, które obejmują tekstury i obrazy, modele 3D i cieniowania.|
 |[Instrukcje: Eksport cieniowania](../designers/how-to-export-a-shader.md)|Opisuje sposób eksportowania modułu cieniującego od projektanta modułu cieniującego.|

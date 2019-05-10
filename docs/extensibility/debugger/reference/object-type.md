@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f0aafc5b41d9020c80cd2b86c9048db1d333bfd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 08d50e3d3ddda55a7ff0f3fea333c5408b02878a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865443"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461031"
 ---
 # <a name="objecttype"></a>OBJECT_TYPE
 Określa typ obiektu z Ewaluator wyrażeń.
@@ -65,36 +68,51 @@ public enum enum_OBJECT_TYPE { 
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
- OBJECT_TYPE_BOOLEAN wskazuje, że obiekt jest wartością logiczną.
+## <a name="fields"></a>Pola
+ `OBJECT_TYPE_BOOLEAN`\
+ Wskazuje, że obiekt jest wartością logiczną.
 
- OBJECT_TYPE_CHAR wskazuje, że obiekt jest znakiem.
+ `OBJECT_TYPE_CHAR`\
+ Wskazuje, że obiekt jest znakiem.
 
- OBJECT_TYPE_I1 wskazuje, że obiekt jest liczba całkowita ze znakiem jednobajtowych.
+ `OBJECT_TYPE_I1`\
+ Wskazuje, że obiekt jest liczba całkowita ze znakiem jednobajtowych.
 
- OBJECT_TYPE_U1 wskazuje, że obiekt jest liczba całkowita bez znaku jednobajtowych.
+ `OBJECT_TYPE_U1`\
+ Wskazuje, że obiekt jest liczba całkowita bez znaku jednobajtowych.
 
- OBJECT_TYPE_I2 wskazuje, że obiekt jest liczba całkowita ze znakiem dwóch bajtów.
+ `OBJECT_TYPE_I2`\
+ Wskazuje, że obiekt jest liczba całkowita ze znakiem dwóch bajtów.
 
- OBJECT_TYPE_U2 wskazuje, że obiekt jest liczba całkowita bez znaku dwubajtowego.
+ `OBJECT_TYPE_U2`\
+ Wskazuje, że obiekt jest liczba całkowita bez znaku dwubajtowego.
 
- OBJECT_TYPE_I4 wskazuje, że obiekt jest całkowita czwartego bajtu.
+ `OBJECT_TYPE_I4`\
+ Wskazuje, że obiekt jest całkowita czwartego bajtu.
 
- OBJECT_TYPE_U4 wskazuje, że obiekt jest liczba całkowita bez znaku czwartego bajtu.
+ `OBJECT_TYPE_U4`\
+ Wskazuje, że obiekt jest liczba całkowita bez znaku czwartego bajtu.
 
- OBJECT_TYPE_I8 wskazuje, że obiekt jest całkowita 8 bajtową.
+ `OBJECT_TYPE_I8`\
+ Wskazuje, że obiekt jest całkowita 8 bajtową.
 
- OBJECT_TYPE_U8 wskazuje, że obiekt jest liczbą całkowitą bez znaku ośmiu bajtów.
+ `OBJECT_TYPE_U8`\
+ Wskazuje, że obiekt jest liczbą całkowitą bez znaku ośmiu bajtów.
 
- OBJECT_TYPE_R4 wskazuje, że obiekt jest czterobajtową liczbą zmiennoprzecinkową.
+ `OBJECT_TYPE_R4`\
+ Wskazuje, że obiekt jest czterobajtową liczbą zmiennoprzecinkową.
 
- OBJECT_TYPE_R8 wskazuje, że obiekt jest 8 bajtowa liczba zmiennoprzecinkowa.
+ `OBJECT_TYPE_R8`\
+ Wskazuje, że obiekt jest 8 bajtowa liczba zmiennoprzecinkowa.
 
- OBJECT_TYPE_OBJECT wskazuje, że obiekt jest obiektem.
+ `OBJECT_TYPE_OBJECT`\
+ Wskazuje, że obiekt jest obiektem.
 
- OBJECT_TYPE_NULL wskazuje, czy obiekt ma wartość NULL.
+ `OBJECT_TYPE_NULL`\
+ Wskazuje, czy obiekt ma wartość NULL.
 
- OBJECT_TYPE_CLASS wskazuje, że obiekt jest klasą.
+ `OBJECT_TYPE_CLASS`\
+ Wskazuje, że obiekt jest klasą.
 
 ## <a name="remarks"></a>Uwagi
  Przekazywany jako argument do [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) i [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) metody.
@@ -106,7 +124,7 @@ public enum enum_OBJECT_TYPE { 
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)
 - [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)

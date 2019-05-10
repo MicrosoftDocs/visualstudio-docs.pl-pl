@@ -7,14 +7,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fca2436b99f97e18801f8adffdc27fd348fc8123
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 889195101123e98207b0b25f05b0aa24355abc95
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783960"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461616"
 ---
-# <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Konfigurowanie agentów testowych i kontrolerów do prowadzenia testów obciążeniowych testów
+# <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Omówienie agentów testowych i kontrolerów testów do uruchamiania testów obciążenia
 
 Program Visual Studio może generować symulowane obciążenia aplikacji za pomocą fizycznych lub maszyn wirtualnych. Te maszyny należy skonfigurować jako jednego kontrolera testów oraz jednego lub więcej agentów testowych. Agentów testowych i kontrolera testów służy do generowania obciążenia więcej niż jednym komputerze można wygenerować samodzielnie.
 

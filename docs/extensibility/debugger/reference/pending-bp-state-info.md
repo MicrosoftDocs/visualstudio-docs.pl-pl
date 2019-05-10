@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4c19bed895a04e372f930d347a7caa761d34a56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5d08e2ec34f153e984ea158eaca4ca282652e67e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865367"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460894"
 ---
 # <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
 Zawiera informacje o stanie punktu przerwania, który jest gotowy do powiązania do lokalizacji kodu.
@@ -39,9 +42,11 @@ public struct PENDING_BP_STATE_INFO { 
 ```
 
 ## <a name="members"></a>Elementy członkowskie
- Stan: wartość z zakresu od [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md) wyliczenie, który określa stan oczekujący punkt przerwania.
+ `state`\
+ Wartość z zakresu od [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md) wyliczenie, który określa stan oczekujący punkt przerwania.
 
- kombinacja flag z flag [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md) wyliczenia, która określa, czy punkt przerwania zostaje zwirtualizowany.
+ `flags`\
+ Kombinacja flag z [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md) wyliczenia, która określa, czy punkt przerwania zostaje zwirtualizowany.
 
 ## <a name="remarks"></a>Uwagi
  Ta struktura jest przekazywany do [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) metody, gdzie jest wypełnione.
@@ -53,7 +58,7 @@ public struct PENDING_BP_STATE_INFO { 
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)
 - [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md)

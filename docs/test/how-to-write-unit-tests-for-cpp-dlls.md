@@ -1,18 +1,18 @@
 ---
 title: Pisanie testów jednostkowych dla bibliotek DLL języka C++
-ms.date: 11/04/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7606f9f9b521d4bc752b99ad70237ef4ac6bc30e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ecd26aeae5e0a236bf776477ab3dca0e528e8200
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821054"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226068"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Pisanie testów jednostkowych dla bibliotek DLL C++ w programie Visual Studio
 
@@ -56,7 +56,17 @@ ms.locfileid: "62821054"
 
   1. Utwórz natywny projekt testów jednostkowych.
 
-      1. Na **pliku** menu, wybierz **New** > **projektu** > **Visual C++**  >  **Testu** > **projekt testu jednostkowego w języku C++**.
+      ::: moniker range="vs-2019"
+
+      1. Na **pliku** menu, wybierz **New** > **projektu**. W **Dodaj nowy projekt** okno dialogowe, zestaw **języka** do C++ i wpisz "test", w polu wyszukiwania. Następnie wybierz **natywny projekt testów jednostkowych**.
+
+      ::: moniker-end
+
+      ::: moniker range="vs-2017"
+
+      1. Na **pliku** menu, wybierz **New** > **projektu** > **Visual C++**  >  **Test** >  **C++ projektu testu jednostkowego**.
+
+      ::: moniker-end
 
   2. W **Eksploratora rozwiązań**, w menu skrótów projektu testów wybierz **odwołania**. Projekt **właściwości** zostanie otwarte okno.
 
@@ -80,7 +90,17 @@ ms.locfileid: "62821054"
 
   1. Utwórz natywny projekt testów jednostkowych.
 
-      1. Na **pliku** menu, wybierz **New** > **projektu** > **Visual C++**  >  **Testu** > **natywny projekt testów jednostkowych**.
+      ::: moniker range="vs-2019"
+
+      1. Na **pliku** menu, wybierz **New** > **projektu**. W **Dodaj nowy projekt** okno dialogowe, zestaw **języka** do C++ i wpisz "test", w polu wyszukiwania. Następnie wybierz **natywny projekt testów jednostkowych**.
+
+      ::: moniker-end
+      
+      ::: moniker range="vs-2017"
+
+      1. Na **pliku** menu, wybierz **New** > **projektu** > **Visual C++**  >  **Test** >  **C++ projektu testu jednostkowego**.
+
+      ::: moniker-end
 
   2. W **Eksploratora rozwiązań**, w menu skrótów projektu testów wybierz **właściwości**.
 

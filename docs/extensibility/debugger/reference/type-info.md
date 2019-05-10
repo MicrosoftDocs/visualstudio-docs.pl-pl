@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9af633c49538a2b74163647d537526b35f2aa048
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bbb64acfd71a6208fde3a5c3f84d6c5886ece72f
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415801"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460738"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 Ta struktura określa różne rodzaje informacji na temat typu pola.
@@ -43,26 +46,29 @@ public struct TYPE_INFO {
 };
 ```
 
-#### <a name="parameters"></a>Parametry
- wartość dwKind A [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) wyliczenie, które określa, jak interpretować Unii.
+## <a name="members"></a>Elementy członkowskie
+ `dwKind`\
+ Wartość z zakresu od [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) wyliczenie, które określa, jak interpretować Unii.
 
- type.typeMeta
+ `type.typeMeta`\
 
  [C++ tylko] Zawiera [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) struktury, jeśli `dwKind` jest `TYPE_KIND_METADATA`.
 
- type.typePdb
+ `type.typePdb`\
 
  [C++ tylko] Zawiera [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) struktury, jeśli `dwKind` jest `TYPE_KIND_PDB`.
 
- type.typeBuilt
+ `type.typeBuilt`\
 
  [C++ tylko] Zawiera [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) struktury, jeśli `dwKind` jest `TYPE_KIND_BUILT`.
 
- Dopełnienie nieużywane Type.unused.
+ `type.unused`\
+ Dopełnienie nieużywane.
 
- Wpisz nazwę Unii.
+ `type`\
+ Nazwa Unii.
 
- unionmember
+ `unionmember`\
 
  [C# tylko] To typ odpowiednią strukturą ustalane na podstawie Marshal `dwKind`.
 
@@ -111,7 +117,7 @@ namespace MyPackage
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)
 - [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)

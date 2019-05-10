@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9d2bf87a804295a5ea8f6750ee9cd93643c53bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a2ba039164c43ccc99b3305bb29bc4f1c98f68f7
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913013"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460647"
 ---
 # <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 Ta struktura reprezentuje adres który będzie względne `this` wskaźnika (`Me` w języku Visual Basic).
@@ -40,12 +43,15 @@ public struct UNMANAGED_THIS_RELATIVE {
 }
 ```
 
-## <a name="terms"></a>Warunki
- dwOffset przesunięcie bajtu od pozycji bazowej (na przykład początek vtable klasy).
+## <a name="members"></a>Elementy członkowskie
+ `dwOffset`\
+ Przesunięcie bajtu od pozycji bazowej (na przykład początek vtable klasy).
 
- dwBitOffset przesunięcie w bitach od pozycji bazowej (zawsze 0, chyba że odwołujące się do pola bitowego).
+ `dwBitOffset`\
+ Przesunięcie w bitach od pozycji bazowej (zawsze 0, chyba że odwołujące się do pola bitowego).
 
- dwBitLength liczbę bitów reprezentująca adres (zawsze 0, chyba że odwołujące się do pola bitowego).
+ `dwBitLength`\
+ Liczba bitów reprezentująca adres (zawsze 0, chyba że odwołujące się do pola bitowego).
 
 ## <a name="remarks"></a>Uwagi
  Ta struktura jest częścią Unii w [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struktury, kiedy `dwKind` pole `DEBUG_ADDRESS_UNION` struktury jest ustawiona na `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (wartość z zakresu od [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Wyliczenie).
@@ -57,6 +63,6 @@ public struct UNMANAGED_THIS_RELATIVE {
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

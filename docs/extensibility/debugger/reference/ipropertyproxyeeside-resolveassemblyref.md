@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3294c19455b5ddf36ebecff52dab4908be84afab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 87b72f7bf9d91f7e59bd5550149ed7cf09f8827d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865800"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458114"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 Określa lokalizację odwołanie do określonego zestawu zarządzanego.
@@ -44,24 +47,24 @@ int ResolveAssemblyRef(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `assemName`
+## <a name="parameters"></a>Parametry
+ `assemName`\
 
  [in] Nazwa zestawu, aby rozwiązać.
 
- `assemBytes`
+ `assemBytes`\
 
  [out] Zwraca [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) obiekt zawierający bajtów zestawu skojarzonej z odwołaniem.
 
- `assemPdb`
+ `assemPdb`\
 
  [out] Zwraca `IEEDataStorage` obiekt, który zawiera symbol są przechowywane dane skojarzone z tym odwołaniem.
 
- `assemLocation`
+ `assemLocation`\
 
  [out] Zwraca ścieżkę lokalizacji tego odwołania.
 
- `alr`
+ `alr`\
 
  [out] Zwraca wartość z zakresu od [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) Wyliczenie wskazujące lokalizację to odwołanie do zestawu.
 
@@ -71,7 +74,7 @@ int ResolveAssemblyRef(
 ## <a name="remarks"></a>Uwagi
  Ta metoda nie jest zwykle implementowany przez ewaluatora wyrażeń niestandardowych.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 - [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)

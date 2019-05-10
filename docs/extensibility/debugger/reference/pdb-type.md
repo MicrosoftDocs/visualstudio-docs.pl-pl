@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5972a6da9422917ef61fb07c9124edca24032ee2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f14537a7543528be7ab026e7d24b9a1e9d964d0b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865432"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460851"
 ---
 # <a name="pdbtype"></a>PDB_TYPE
 
@@ -41,17 +44,17 @@ public struct PDB_TYPE {
 };
 ```
 
-## <a name="parameters"></a>Parametry
+## <a name="members"></a>Elementy członkowskie
 
-`ulAppDomainID`
+`ulAppDomainID`\
 
 Identyfikator aplikacji, z którego pochodzą symbolu. Służy do jednoznacznego identyfikowania wystąpienia aplikacji.
 
-`guidModule`
+`guidModule`\
 
 Identyfikator GUID moduł, który zawiera tego pola.
 
-`symid`
+`symid`\
 
 Identyfikator symbol, który odnosi się do tego pola.
 

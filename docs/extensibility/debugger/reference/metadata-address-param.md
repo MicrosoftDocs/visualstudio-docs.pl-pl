@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec1012ef689750dcd16679763baa942be55f1805
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d978f8108d35ab999c8ac2aea6fc068d889d3a95
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865602"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460986"
 ---
 # <a name="metadataaddressparam"></a>METADATA_ADDRESS_PARAM
 Ta struktura reprezentuje parametr metody lub funkcji.
@@ -40,12 +43,15 @@ public struct METADATA_ADDRESS_PARAM {
 }
 ```
 
-## <a name="terms"></a>Warunki
- tokMethod identyfikator parametr metody jest częścią.
+## <a name="members"></a>Elementy członkowskie
+ `tokMethod`\
+ ID metody parametru jest częścią.
 
- Identyfikator parametru tokParam.
+ `tokParam`\
+ Identyfikator parametru.
 
- dwIndex indeks parametru na liście parametrów.
+ `dwIndex`\
+ Indeks parametru na liście parametrów.
 
 ## <a name="remarks"></a>Uwagi
  Ta struktura jest częścią Unii w [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struktury, kiedy `dwKind` pole `DEBUG_ADDRESS_UNION` struktury jest ustawiona na `ADDRESS_KIND_PARAM` (wartość z zakresu od [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Wyliczenie).
@@ -57,7 +63,7 @@ public struct METADATA_ADDRESS_PARAM {
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

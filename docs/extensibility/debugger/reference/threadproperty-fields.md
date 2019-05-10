@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 641687dbcfa6bf50ba9e848de589662d282d0c7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1c908658662d96d5c1ad5f3b16e9dcce2e4f7235
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864576"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458485"
 ---
 # <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
 Określa, jakie informacje o wątku do pobrania.
@@ -49,20 +52,27 @@ public enum enum_THREADPROPERTY_FIELDS { 
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
- TPF_ID zainicjować bądź użyj `dwThreadId` pole [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) struktury.
+## <a name="fields"></a>Pola
+ `TPF_ID`\
+ Inicjowanie bądź użyj `dwThreadId` pole [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) struktury.
 
- TPF_SUSPENDCOUNT zainicjować bądź użyj `dwSuspendCount` pole `THREADPROPERTIE`Struktura.
+ `TPF_SUSPENDCOUNT`\
+ Inicjowanie bądź użyj `dwSuspendCount` pole `THREADPROPERTIE`Struktura.
 
- TPF_STATE zainicjować bądź użyj `dwThreadState` pole `THREADPROPERTIE`Struktura.
+ `TPF_STATE`\
+ Inicjowanie bądź użyj `dwThreadState` pole `THREADPROPERTIE`Struktura.
 
- TPF_PRIORITY zainicjować bądź użyj `bstrPriority` pole `THREADPROPERTIE`Struktura.
+ `TPF_PRIORITY`\
+ Inicjowanie bądź użyj `bstrPriority` pole `THREADPROPERTIE`Struktura.
 
- TPF_NAME zainicjować bądź użyj `bstrName` pole `THREADPROPERTIE`Struktura.
+ `TPF_NAME`\
+ Inicjowanie bądź użyj `bstrName` pole `THREADPROPERTIE`Struktura.
 
- TPF_LOCATION zainicjować bądź użyj `bstrLocation` pole `THREADPROPERTIE`Struktura.
+ `TPF_LOCATION`\
+ Inicjowanie bądź użyj `bstrLocation` pole `THREADPROPERTIE`Struktura.
 
- TPF_ALLFIELDS określa wszystkie pola.
+ `TPF_ALLFIELDS`\
+ Określa wszystkie pola.
 
 ## <a name="remarks"></a>Uwagi
  Te wartości są przekazywane jako argument do [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) metodę, aby wskazać, które pola [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) struktury, które mają zostać zainicjowane.
@@ -78,7 +88,7 @@ public enum enum_THREADPROPERTY_FIELDS { 
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)
 - [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)

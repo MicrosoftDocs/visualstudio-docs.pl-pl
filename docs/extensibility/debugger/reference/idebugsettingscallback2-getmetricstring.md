@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c92709afbc5341a7507c89dc948daeae1f798b4e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d3fdfd604f28f6657b27ef0e81ca4ce5855d97df
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916222"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457288"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
 Pobiera ciąg wartość metryki nadać jej nazwę.
@@ -41,25 +44,25 @@ private int GetMetricString(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pszType`
+## <a name="parameters"></a>Parametry
+ `pszType`\
 
  [in] Typ metryki.
 
- `guidSection`
+ `guidSection`\
 
  [in] Unikatowy identyfikator sekcji.
 
- `pszMetric`
+ `pszMetric`\
 
  [in] Nazwa metryki.
 
- `pbstrValue`
+ `pbstrValue`\
 
  [out] Zwraca ciąg wartość metryki.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

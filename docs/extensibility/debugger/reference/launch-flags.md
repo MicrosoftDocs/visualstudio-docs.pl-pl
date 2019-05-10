@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302c44b3d4947baa95554966246f15175841257d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7ffdf2359b719be0fa3cf0a17ae4ed70bc36b673
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913926"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461060"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 Określa flagi uruchamiania debugowania.
@@ -43,14 +46,18 @@ public enum enum_LAUNCH_FLAGS {
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
-LAUNCH_DEBUG uruchamia proces debugowania.
+## <a name="fields"></a>Pola
+`LAUNCH_DEBUG`\
+Uruchamia proces debugowania.
 
-LAUNCH_NODEBUG uruchamia proces, bez debugowania go.
+`LAUNCH_NODEBUG`\
+Uruchamia proces bez debugowania go.
 
-PRZESTARZAŁE LAUNCH_ENABLE_ENC, NIE NALEŻY UŻYWAĆ.
+`LAUNCH_ENABLE_ENC`\
+PRZESTARZAŁE, NIE NALEŻY UŻYWAĆ.
 
-LAUNCH_MERGE_ENV uruchamia proces i scala środowiska za pomocą uruchamiania hosta.
+`LAUNCH_MERGE_ENV`\
+Uruchamia proces i scala środowiska za pomocą uruchamiania hosta.
 
 ## <a name="remarks"></a>Uwagi
 Te wartości są przekazywane jako argument do [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) metody.
@@ -64,6 +71,6 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

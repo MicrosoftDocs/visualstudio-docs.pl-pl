@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2a4cfb78c7ccf24a79c5326f7f263a1b78302a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4db91b1495484adff076e959021b4791f1e62a29
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868473"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458223"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
 Pobiera informacje o grupie symbol dostawca symboli jest elementem członkowskim.
@@ -37,12 +40,12 @@ int GetCurrentModulesState(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pState`
+## <a name="parameters"></a>Parametry
+ `pState`\
 
  [out] Stan grupy dostawcy symboli.
 
- `count`
+ `count`\
 
  [out] Liczba modułów w grupie.
 
@@ -52,5 +55,5 @@ int GetCurrentModulesState(
 ## <a name="remarks"></a>Uwagi
  Stan jest zmieniany, gdy moduł jest dodane lub usunięte z grupy symboli. W związku z tym metoda ta może służyć do wykrywania, jeśli grupa symbol został zmodyfikowany.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

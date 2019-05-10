@@ -9,8 +9,9 @@
     - name: Obciążenie dla aplikacji analizy i przetwarzania danych
       href: data-science-and-analytical-applications-workload.md
 - name: Instalacja
-  href: installing-python-support-in-visual-studio.md
   items:
+    - name: Instalacja
+      href: installing-python-support-in-visual-studio.md
     - name: Instalowanie interpreterów języka Python
       href: installing-python-interpreters.md
 - name: Przewodniki Szybki Start
@@ -75,8 +76,9 @@
 - name: Pojęcia
   items:
     - name: Projekty Python
-      href: managing-python-projects-in-visual-studio.md
       items:
+        - name: Projekty Python
+          href: managing-python-projects-in-visual-studio.md
         - name: Szablony projektów internetowych
           href: python-web-application-project-templates.md
         - name: Szablon projektów internetowych Django
@@ -88,8 +90,9 @@
 - name: Przewodniki z instrukcjami
   items:
     - name: Zarządzanie środowiskami języka Python
-      href: managing-python-environments-in-visual-studio.md
       items:
+        - name: Zarządzanie środowiskami języka Python
+          href: managing-python-environments-in-visual-studio.md
         - name: Wybieranie interpretera dla projektu
           href: selecting-a-python-environment-for-a-project.md
         - name: Używanie pliku requirements.txt dla zależności
@@ -101,8 +104,9 @@
         - name: Konfigurowanie aplikacji internetowych pod kątem usług IIS
           href: configure-web-apps-for-iis-windows.md
     - name: Edytowanie kodu w języku Python
-      href: editing-python-code-in-visual-studio.md
       items:
+        - name: Edytowanie kodu w języku Python
+          href: editing-python-code-in-visual-studio.md
         - name: Formatowanie kodu
           href: formatting-python-code.md
         - name: Refaktoryzacja kodu
@@ -112,13 +116,15 @@
     - name: Definiowanie niestandardowych poleceń menu
       href: defining-custom-python-project-commands.md
     - name: Środowisko Interactive Python (REPL)
-      href: python-interactive-repl-in-visual-studio.md
       items:
+        - name: Środowisko Interactive Python (REPL)
+          href: python-interactive-repl-in-visual-studio.md
         - name: Używanie środowiska IPython REPL
           href: interactive-repl-ipython.md
     - name: Debugowanie
-      href: debugging-python-in-visual-studio.md
       items:
+        - name: Debugowanie
+          href: debugging-python-in-visual-studio.md
         - name: Debugowanie kodu na komputerach zdalnych z systemem Linux
           href: debugging-python-code-on-remote-linux-machines.md
     - name: Publikowanie w usłudze Azure App Service w systemie Linux

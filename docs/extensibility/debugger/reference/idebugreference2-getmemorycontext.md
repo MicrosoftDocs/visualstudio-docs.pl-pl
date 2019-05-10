@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd4494b21d4b5b3aa3f73cbabed771f2fac7280c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f439928d253aa5e8b500a489ca1a2d184ecbd507
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869010"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457700"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
 Pobiera kontekst odwołania do pamięci. Zarezerwowane do użytku w przyszłości.
@@ -36,14 +39,14 @@ int GetMemoryContext ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppMemory`
+## <a name="parameters"></a>Parametry
+ `ppMemory`\
 
  [out] Zwraca [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) obiekt, który reprezentuje pamięć skojarzone z wartością odwołania.
 
 ## <a name="return-value"></a>Wartość zwracana
  Zawsze zwraca `E_NOTIMPL`.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

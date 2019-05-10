@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb1553070f9afecf6ce60ac51b94ecb3f05d0eb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 04c63a2a18f04301e16dd0e8137ab8ba4b824c57
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869723"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457862"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 Ta metoda powoduje, że program jest dostępny dla silniki debugowania (DEs) i Menedżer debugowania sesji.
@@ -40,16 +43,16 @@ int PublishProgram(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `Engines`
+## <a name="parameters"></a>Parametry
+ `Engines`\
 
  [in] Tablica identyfikatorów GUID do obsługi szyfrowania DEs, które można uruchomić lub dołączyć do tego programu.
 
- `szFriendlyName`
+ `szFriendlyName`\
 
  [in] Przyjazna nazwa dla programu (pojawia się w menu i okien dialogowych, użytkownik widzi).
 
- `pDebuggeeInterface`
+ `pDebuggeeInterface`\
 
  [in] `IUnknown` interfejsu programu (Ta wartość jest używana jako plik cookie do unikatowego identyfikowania program; ta sama wartość służy do "cofnąć publikację" program)
 
@@ -59,6 +62,6 @@ int PublishProgram(
 ## <a name="remarks"></a>Uwagi
  Aby napisać program, który nie jest już dostępna do debugowania, należy wywołać [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)

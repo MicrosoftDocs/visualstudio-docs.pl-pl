@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1227cb697dc78a8833e304d775fb4b1af85a2a69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e4c109906ca586d58753c6471f20ed05adc08de4
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916635"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457746"
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
 Pobiera właściwość najbardziej pochodnej właściwości.
@@ -36,8 +39,8 @@ int GetDerivedMostProperty ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppDerivedMost`
+## <a name="parameters"></a>Parametry
+ `ppDerivedMost`\
 
  [out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który reprezentuje właściwość najbardziej pochodnej.
 
@@ -47,5 +50,5 @@ int GetDerivedMostProperty ( 
 ## <a name="remarks"></a>Uwagi
  Na przykład, jeśli ta właściwość opisuje obiekt, który implementuje `ClassRoot` , ale która jest faktycznie wystąpienia `ClassDerived` która pochodzi od `ClassRoot`, wówczas ta metoda zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiektu opisujące `ClassDerived` obiektu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

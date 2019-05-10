@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d10c265ba8b77dc8cc434fd8a9c688f1c7188a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ba770dec92054f68c3cb95433d2a2c83bdb37bce
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869200"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457492"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
 Pobiera odniesienie najbardziej pochodnej odwołania. Zarezerwowane do użytku w przyszłości.
@@ -36,8 +39,8 @@ int GetDerivedMostReference( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppDerivedMost`
+## <a name="parameters"></a>Parametry
+ `ppDerivedMost`\
 
  [out] Zwraca [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) obiekt, który reprezentuje właściwość najbardziej pochodnej.
 
@@ -47,5 +50,5 @@ int GetDerivedMostReference( 
 ## <a name="remarks"></a>Uwagi
  Na przykład, jeśli ta właściwość opisuje obiekt, który implementuje `ClassRoot` , ale która jest faktycznie wystąpienia `ClassDerived` która pochodzi od `ClassRoot`, wówczas ta metoda zwraca [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) obiektu reprezentuje odwołanie do `ClassDerived` obiektu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

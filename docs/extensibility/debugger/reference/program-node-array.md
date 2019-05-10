@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9af33dd296c222a6ab187097437e3774d2bbdbd4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ac5a891912d84a719a8bf475724f0b1cb7d685d4
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913448"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457946"
 ---
 # <a name="programnodearray"></a>PROGRAM_NODE_ARRAY
 Zawiera tablicę obiektów, które opisują interesujące programy.
@@ -39,9 +42,11 @@ public struct tagPROGRAM_NODE_ARRAY {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
- dwCount liczbę obiektów w `Members` tablicy.
+ `dwCount`\
+ Liczba obiektów w `Members` tablicy.
 
- Elementy członkowskie na tablicę [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) obiekty opisujące programy wymagane.
+ `Members`\
+ Tablica [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) obiekty opisujące programy wymagane.
 
 ## <a name="remarks"></a>Uwagi
  Ta struktura jest częścią [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) strukturę, która z kolei jest wypełniane przez wywołanie [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) metody.
@@ -53,7 +58,7 @@ public struct tagPROGRAM_NODE_ARRAY {
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

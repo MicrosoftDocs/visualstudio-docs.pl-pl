@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63f3b7363a6852dd54033d89828f8af9b0eb76fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8e31682de4c625e40baaac6daff4687c713abda9
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913890"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460976"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 Ta struktura reprezentuje wartość zwracana z metody lub funkcji.
@@ -42,14 +45,18 @@ public struct METADATA_ADDRESS_RETVAL {
 }
 ```
 
-## <a name="terms"></a>Warunki
- tokMethod identyfikator jest to wartość zwracana dla metody.
+## <a name="members"></a>Elementy członkowskie
+ `tokMethod`\
+ Metody to wartość zwracana jest przeznaczony.
 
- dwCorType podstawowy typ zwracanej wartości. Jest to wartość z zakresu od `CorElementType` wyliczenie zdefiniowane w [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] pliku sekcję corhdr.h zestawu SDK.
+ `dwCorType`\
+ Podstawowy typ wartości zwracanej. Jest to wartość z zakresu od `CorElementType` wyliczenie zdefiniowane w [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] pliku sekcję corhdr.h zestawu SDK.
 
- dwSigSize rozmiar podpisu zwracanej wartości (przechowywanej w `rgSig`).
+ `dwSigSize`\
+ Rozmiar podpisu zwracanej wartości (przechowywanej w `rgSig`).
 
- rgSig tablicę bajtów tworzących podpis wartość zwracaną.
+ `rgSig`\
+ Tablica bajtów tworzących podpis wartość zwracaną.
 
 ## <a name="remarks"></a>Uwagi
  Ta struktura jest częścią Unii w [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struktury, kiedy `dwKind` pole `DEBUG_ADDRESS_UNION` struktury jest ustawiona na `ADDRESS_KIND_RETVAL` (wartość z zakresu od [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Wyliczenie).
@@ -61,7 +68,7 @@ public struct METADATA_ADDRESS_RETVAL {
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

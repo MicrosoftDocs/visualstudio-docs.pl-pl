@@ -1,6 +1,7 @@
 - name: Samouczki języka Visual Basic
-  href: index.yml
   items:
+    - name: Samouczki języka Visual Basic
+      href: index.yml
     - name: Omówienie
       items:
         - name: Informacje o programie Visual Studio

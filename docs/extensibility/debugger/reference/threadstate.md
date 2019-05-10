@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96eb95d39c60952c48e62c0e2e61edefeaa59783
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3019671b98d3eb17c92d97c368f2f7338ee55a1d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913343"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460713"
 ---
 # <a name="threadstate"></a>THREADSTATE
 Określa stan wątku.
@@ -45,16 +48,21 @@ public enum enum_THREADSTATE { 
 };
 ```
 
-## <a name="members"></a>Elementy członkowskie
- THREADSTATE_RUNNING wskazuje, że wątek jest uruchomiony.
+## <a name="fields"></a>Pola
+ `THREADSTATE_RUNNING`\
+ Wskazuje, że wątek jest uruchomiony.
 
- THREADSTATE_STOPPED wskazuje, że wątek został zatrzymany ze względu na punkt przerwania.
+ `THREADSTATE_STOPPED`\
+ Wskazuje, że wątek został zatrzymany ze względu na punkt przerwania.
 
- THREADSTATE_FRESH wskazuje, że wątek został utworzony, ale nie jest jeszcze uruchomiony kod.
+ `THREADSTATE_FRESH`\
+ Wskazuje, że wątek został utworzony, ale nie jest jeszcze uruchomiony kod.
 
- THREADSTATE_DEAD wskazuje, że wątek jest nieaktywny.
+ `THREADSTATE_DEAD`\
+ Wskazuje, że wątek jest nieaktywny.
 
- THREADSTATE_FROZEN wskazuje, że wątek jest zablokowane (mogą być wykonywane nie wykonywania).
+ `THREADSTATE_FROZEN`\
+ Wskazuje, że wątek jest zablokowane (mogą być wykonywane nie wykonywania).
 
 ## <a name="remarks"></a>Uwagi
  Używany do `dwThreadState` pole [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) struktury.
